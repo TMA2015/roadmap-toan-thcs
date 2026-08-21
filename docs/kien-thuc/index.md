@@ -3,7 +3,7 @@
 Trang này là mục lục trung tâm của toàn bộ phần **Kiến thức**. Các chuyên đề được tổ chức theo mạch để học sinh dễ nhìn toàn cảnh và đi theo lộ trình phù hợp.
 
 !!! info "Trạng thái biên soạn"
-    Các chuyên đề **04, 05, 06, 07, 08, 09, 10, 11 và 12** đã có nội dung chi tiết. Các chuyên đề còn lại đã được tạo **khung chuẩn** để bảo đảm URL, menu và cấu trúc thống nhất trước khi biên soạn sâu.
+    Các chuyên đề **02, 03, 04, 05, 06, 07, 08, 09, 10, 11 và 12** đã có nội dung chi tiết. Các chuyên đề còn lại đã được tạo **khung chuẩn** để bảo đảm URL, menu và cấu trúc thống nhất trước khi biên soạn sâu.
 
 ## Tổng quan
 
