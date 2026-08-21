@@ -1,0 +1,47 @@
+﻿site_name: Roadmap Toán THCS
+site_description: Hệ thống kiến thức Toán THCS lớp 6 đến lớp 9 và chuẩn bị thi vào lớp 10
+site_author: Roadmap Toán THCS
+
+theme:
+  name: material
+  language: vi
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Trang chủ: index.md
+
+  - Roadmap:
+      - Bản đồ chương trình: roadmap/index.md
+      - Blueprint 25 chuyên đề: roadmap/blueprint-25-chuyen-de.md
+      - Ma trận kiến thức: roadmap/ma-tran-kien-thuc.md
+
+  - Hướng dẫn:
+      - Lộ trình tự học: huong-dan/lo-trinh-tu-hoc.md
+      - Cấu trúc chuyên đề: huong-dan/cau-truc-chuyen-de.md
+
+  - Kiến thức:
+      - 04. Biểu thức đại số: kien-thuc/04-bieu-thuc-dai-so/index.md
+      - 08. Phương trình – Bất phương trình: kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+
+plugins:
+  - search
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

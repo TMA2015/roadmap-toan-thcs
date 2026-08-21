@@ -18,4 +18,4 @@ Bộ tài liệu được xây dựng để giúp học sinh:
 
 **Nếu đang học một chuyên đề:** bắt đầu từ infographic, học kiến thức cốt lõi, xem ví dụ và làm bài tập theo mức độ.
 
-**Nếu đang ôn thi lớp 9:** chuyển sang khu vực [Ôn thi vào 10](on-thi-vao-10/index.md).
+**Nếu đang ôn thi lớp 9:** khu vực ôn thi vào lớp 10 sẽ được bổ sung trong giai đoạn tiếp theo.

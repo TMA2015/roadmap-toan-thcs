@@ -325,11 +325,11 @@ Với bài có nhiều biến đổi, nên thu gọn trước rồi mới thay g
 
 ### Liên kết trực tiếp
 
-- ← [03. Tỉ lệ – Tỉ lệ thức](../03-ti-le-ti-le-thuc/)
-- → [05. 7 Hằng đẳng thức đáng nhớ](../05-7-hang-dang-thuc/)
-- → [06. Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/)
-- → [07. Phân thức đại số](../07-phan-thuc-dai-so/)
-- → [08. Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/)
+- ← 03. Tỉ lệ – Tỉ lệ thức
+- → 05. 7 Hằng đẳng thức đáng nhớ
+- → 06. Phân tích đa thức thành nhân tử
+- → 07. Phân thức đại số
+- → [08. Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md)
 
 > Các liên kết tới 05–07 sẽ trở thành liên kết hợp lệ khi các chuyên đề tương ứng được xây dựng.
 

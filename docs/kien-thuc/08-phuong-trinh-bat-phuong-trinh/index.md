@@ -2,8 +2,8 @@
 
 > **Vai trò:** Chuyên đề trọng tâm của Đại số THCS, kết nối trực tiếp với hệ phương trình, hàm số và bài toán thực tế.
 
-**Lớp trọng tâm:** 8–9  
-**Mức độ ưu tiên:** ⭐⭐⭐⭐⭐  
+**Lớp trọng tâm:** 8–9
+**Mức độ ưu tiên:** ⭐⭐⭐⭐⭐
 **Mục tiêu:** Nắm chắc các kỹ thuật giải phương trình, bất phương trình và biết nhận dạng dạng bài trước khi chọn phương pháp.
 
 ---
@@ -252,15 +252,15 @@ Một đề chuyên đề 45–60 phút, trộn các dạng quan trọng.
 
 ## 11. 🔄 Liên kết Roadmap
 
-**← Trước:** [06. Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/)  
-**Tiếp theo:** [09. Hệ phương trình bậc nhất hai ẩn](../09-he-phuong-trinh/)
+**← Trước:** 06. Phân tích đa thức thành nhân tử
+**Tiếp theo:** 09. Hệ phương trình bậc nhất hai ẩn
 
 **Liên hệ gần:**
 
-- [04. Biểu thức và biến đổi đại số](../04-bieu-thuc-dai-so/)
-- [07. Phân thức đại số](../07-phan-thuc-dai-so/)
-- [10. Hàm số và đồ thị](../10-ham-so-do-thi/)
-- [24. Bài toán thực tế và mô hình hóa](../../kien-thuc/24-bai-toan-thuc-te/)
+- [04. Biểu thức và biến đổi đại số](../04-bieu-thuc-dai-so/index.md)
+- 07. Phân thức đại số
+- 10. Hàm số và đồ thị
+- 24. Bài toán thực tế và mô hình hóa
 
 ---
 
