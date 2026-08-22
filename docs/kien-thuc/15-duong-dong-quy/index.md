@@ -14,6 +14,98 @@ Bản đồ kiến thức chi tiết của chuyên đề sẽ được bổ sung
 
 ---
 
+## Minh họa trực quan
+
+### 1. Trung tuyến và trọng tâm
+
+<p align="center">
+  <img src="../../assets/geometry/15/15-trong-tam.svg"
+       alt="Minh họa ba đường trung tuyến và trọng tâm của tam giác"
+       width="500">
+</p>
+
+> Ba đường trung tuyến của một tam giác đồng quy tại một điểm gọi là **trọng tâm**, thường ký hiệu là `G`.
+
+Một tính chất rất quan trọng:
+
+> Trọng tâm chia mỗi đường trung tuyến theo tỉ số `2 : 1`, tính từ đỉnh.
+
+Ví dụ, nếu `AM` là trung tuyến và `G` là trọng tâm thì:
+
+`AG = 2GM`
+
+---
+
+### 2. Đường cao và trực tâm
+
+<p align="center">
+  <img src="../../assets/geometry/15/15-truc-tam.svg"
+       alt="Minh họa ba đường cao và trực tâm của tam giác"
+       width="500">
+</p>
+
+> Ba đường cao của một tam giác đồng quy tại một điểm gọi là **trực tâm**, thường ký hiệu là `H`.
+
+Vị trí của trực tâm phụ thuộc vào loại tam giác:
+
+- tam giác nhọn: `H` nằm bên trong tam giác;
+- tam giác vuông: `H` chính là đỉnh góc vuông;
+- tam giác tù: `H` nằm bên ngoài tam giác.
+
+---
+
+### 3. Phân giác và tâm nội tiếp
+
+<p align="center">
+  <img src="../../assets/geometry/15/15-tam-noi-tiep.svg"
+       alt="Minh họa ba đường phân giác và tâm nội tiếp của tam giác"
+       width="500">
+</p>
+
+> Ba đường phân giác trong của tam giác đồng quy tại một điểm gọi là **tâm nội tiếp**, thường ký hiệu là `I`.
+
+Điểm `I` cách đều ba cạnh của tam giác.
+
+Vì vậy, `I` là tâm của đường tròn tiếp xúc với cả ba cạnh của tam giác.
+
+---
+
+### 4. Trung trực và tâm ngoại tiếp
+
+<p align="center">
+  <img src="../../assets/geometry/15/15-tam-ngoai-tiep.svg"
+       alt="Minh họa các đường trung trực và tâm ngoại tiếp của tam giác"
+       width="500">
+</p>
+
+> Ba đường trung trực của ba cạnh tam giác đồng quy tại một điểm gọi là **tâm ngoại tiếp**, thường ký hiệu là `O`.
+
+Điểm `O` cách đều ba đỉnh:
+
+`OA = OB = OC`
+
+Do đó, `O` là tâm của đường tròn đi qua ba đỉnh của tam giác.
+
+---
+
+### Bảng phân biệt bốn tâm quan trọng
+
+| Loại đường | Điểm đồng quy | Ký hiệu | Tính chất nổi bật |
+|---|---|---|---|
+| Trung tuyến | Trọng tâm | `G` | Chia trung tuyến theo tỉ số `2 : 1` |
+| Đường cao | Trực tâm | `H` | Giao điểm của ba đường cao |
+| Phân giác | Tâm nội tiếp | `I` | Cách đều ba cạnh |
+| Trung trực | Tâm ngoại tiếp | `O` | Cách đều ba đỉnh |
+
+### Mẹo ghi nhớ
+
+- `G` → trọng tâm → trung tuyến.
+- `H` → trực tâm → đường cao.
+- `I` → nội tiếp → đường tròn nằm trong tam giác.
+- `O` → ngoại tiếp → đường tròn đi qua ba đỉnh.
+
+---
+
 ## 🎯 2. Mục tiêu cần đạt
 
 Sau khi hoàn thành chuyên đề, học sinh cần:
