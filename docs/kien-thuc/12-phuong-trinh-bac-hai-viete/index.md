@@ -1,10 +1,14 @@
 # Chuyên đề 12 – Phương trình bậc hai & Viète – chuẩn bị THPT
 
+
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+>
+> **Lớp trọng tâm:** 9
+> **Mạch kiến thức:** Đại số
+> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
 > **Vai trò trong Roadmap:** chuyên đề tổng hợp Đại số lớp 9, kết nối phương trình, hàm số, căn thức và chuẩn bị trực tiếp cho Toán THPT.
 >
-> **Lớp trọng tâm:** 9  
-> **Mạch kiến thức:** Đại số  
-> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
 
@@ -498,45 +502,45 @@ Nếu `a` chứa tham số, phải loại trường hợp `a = 0` trước khi d
 
 **Câu 1.** Với `x² - 5x + 6 = 0`, `Δ` bằng bao nhiêu?
 
-A. `1`  
-B. `5`  
-C. `25`  
+A. `1`
+B. `5`
+C. `25`
 D. `49`
 
 **Câu 2.** Nếu phương trình bậc hai có `Δ = 0` thì:
 
-A. vô nghiệm  
-B. có một nghiệm kép  
-C. có hai nghiệm phân biệt  
+A. vô nghiệm
+B. có một nghiệm kép
+C. có hai nghiệm phân biệt
 D. luôn có nghiệm `0`
 
 **Câu 3.** Nếu `x₁, x₂` là nghiệm của `2x² - 3x - 5 = 0` thì `x₁ + x₂` bằng:
 
-A. `-3/2`  
-B. `3/2`  
-C. `-5/2`  
+A. `-3/2`
+B. `3/2`
+C. `-5/2`
 D. `5/2`
 
 **Câu 4.** Nếu `x₁x₂ < 0` thì hai nghiệm thực:
 
-A. cùng dương  
-B. cùng âm  
-C. trái dấu  
+A. cùng dương
+B. cùng âm
+C. trái dấu
 D. bằng nhau
 
 **Câu 5.** Phương trình có hai nghiệm tổng `S`, tích `P` có thể viết dạng:
 
-A. `x² + Sx + P = 0`  
-B. `x² - Sx + P = 0`  
-C. `x² + Px - S = 0`  
+A. `x² + Sx + P = 0`
+B. `x² - Sx + P = 0`
+C. `x² + Px - S = 0`
 D. `x² - Px + S = 0`
 
 ### Đáp án
 
-1. A  
-2. B  
-3. B  
-4. C  
+1. A
+2. B
+3. B
+4. C
 5. B
 
 ### Checklist tự đánh giá

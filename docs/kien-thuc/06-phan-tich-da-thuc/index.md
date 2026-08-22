@@ -1,10 +1,14 @@
 # Chuyên đề 06 – Phân tích đa thức thành nhân tử
 
+
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+>
+> **Lớp trọng tâm:** 8
+> **Mạch kiến thức:** Đại số
+> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
 > **Vai trò trong Roadmap:** cầu nối trực tiếp từ biến đổi đại số và hằng đẳng thức sang phân thức, phương trình và nhiều bài toán tổng hợp.
 >
-> **Lớp trọng tâm:** 8  
-> **Mạch kiến thức:** Đại số  
-> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
 
@@ -595,37 +599,37 @@ Sau khi có kết quả dạng tích, hãy nhân nhanh trở lại để kiểm 
 
 **Câu 1.** Nhân tử chung lớn nhất của `12x³y²` và `18x²y³` là gì?
 
-A. `2xy`  
-B. `3x²y²`  
-C. `6x²y²`  
+A. `2xy`
+B. `3x²y²`
+C. `6x²y²`
 D. `6x³y³`
 
 **Câu 2.** Kết quả đúng của `x² - 49` là:
 
-A. `(x - 7)²`  
-B. `(x - 7)(x + 7)`  
-C. `(x + 7)²`  
+A. `(x - 7)²`
+B. `(x - 7)(x + 7)`
+C. `(x + 7)²`
 D. Không phân tích được
 
 **Câu 3.** `x² + 6x + 9` bằng:
 
-A. `(x + 9)(x + 1)`  
-B. `(x + 3)²`  
-C. `(x - 3)²`  
+A. `(x + 9)(x + 1)`
+B. `(x + 3)²`
+C. `(x - 3)²`
 D. `x(x + 6) + 9`
 
 **Câu 4.** Bước đầu hợp lý nhất với `4x³ - 36x` là:
 
-A. Dùng tổng hai lập phương  
-B. Đặt `4x` làm nhân tử chung  
-C. Nhóm hạng tử  
+A. Dùng tổng hai lập phương
+B. Đặt `4x` làm nhân tử chung
+C. Nhóm hạng tử
 D. Không cần biến đổi
 
 **Câu 5.** Sau khi có `2x(x² - 25)`, nếu yêu cầu phân tích hoàn toàn thì kết quả là:
 
-A. `2x(x - 5)`  
-B. `2x(x + 5)`  
-C. `2x(x - 5)(x + 5)`  
+A. `2x(x - 5)`
+B. `2x(x + 5)`
+C. `2x(x - 5)(x + 5)`
 D. `2x(x² - 25)`
 
 ### Đáp án

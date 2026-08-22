@@ -1,10 +1,14 @@
 # Chuyên đề 05 – 7 Hằng đẳng thức đáng nhớ
 
+
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+>
+> **Lớp trọng tâm:** 8
+> **Mạch kiến thức:** Đại số
+> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
 > **Vai trò trong Roadmap:** cầu nối trực tiếp từ phép nhân đa thức sang phân tích đa thức thành nhân tử, rút gọn biểu thức và giải phương trình.
 >
-> **Lớp trọng tâm:** 8  
-> **Mạch kiến thức:** Đại số  
-> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
 
@@ -194,7 +198,7 @@ $$
 
 ---
 
-## 🔎 4. Hiểu bản chất và kiến thức liên quan
+## 🔗 4. Kiến thức liên quan
 
 ### 4.1. Vì sao `(A+B)²` có hạng tử `2AB`?
 
@@ -562,7 +566,7 @@ $$
 
 ---
 
-## 📝 8. Luyện tập theo 4 mức
+## 📝 8. Luyện tập
 
 ### Mức 1 – Nhận biết
 
@@ -617,23 +621,23 @@ Hãy đánh dấu khi bạn có thể làm độc lập:
 
 **Câu 1.** Kết quả của `(x-5)²` là gì?
 
-A. `x²-25`  
-B. `x²-10x+25`  
-C. `x²+10x+25`  
+A. `x²-25`
+B. `x²-10x+25`
+C. `x²+10x+25`
 D. `x²-10x-25`
 
 **Câu 2.** `9x²-16` bằng:
 
-A. `(3x-4)²`  
-B. `(3x-4)(3x+4)`  
-C. `(9x-4)(x+4)`  
+A. `(3x-4)²`
+B. `(3x-4)(3x+4)`
+C. `(9x-4)(x+4)`
 D. Không phân tích được
 
 **Câu 3.** `x³+27` bằng:
 
-A. `(x+3)(x²+3x+9)`  
-B. `(x+3)(x²-3x+9)`  
-C. `(x-3)(x²+3x+9)`  
+A. `(x+3)(x²+3x+9)`
+B. `(x+3)(x²-3x+9)`
+C. `(x-3)(x²+3x+9)`
 D. `(x+3)³`
 
 **Câu 4.** Nếu `a+b=8`, `ab=15` thì `a²+b²` bằng bao nhiêu?

@@ -1,10 +1,14 @@
 # Chuyên đề 02 – Số và phép tính
 
+
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+>
+> **Lớp trọng tâm:** 6–9
+> **Mạch kiến thức:** Số
+> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
 > **Vai trò trong Roadmap:** nền tảng số học xuyên suốt THCS, làm cơ sở cho tỉ lệ, biểu thức đại số, căn thức, xác suất và các bài toán thực tế.
 >
-> **Lớp trọng tâm:** 6–9  
-> **Mạch kiến thức:** Số  
-> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
 
@@ -463,7 +467,7 @@ Kết quả chính xác phải xấp xỉ 100. Nếu máy tính cho 10 hoặc 10
 
 ---
 
-## 🚀 6. Dạng bài liên quan thi vào lớp 10
+## 🚀 6. Dạng bài thi vào lớp 10
 
 Chuyên đề số học thường không đứng riêng thành một câu lớn nhưng xuất hiện xuyên suốt trong mọi phần tính toán.
 
@@ -556,7 +560,7 @@ Còn phương trình `x² = 25` mới có hai nghiệm `x = ±5`.
 
 ---
 
-## 📝 8. Luyện tập theo 4 mức
+## 📝 8. Luyện tập
 
 ### Mức 1 – Nhận biết
 

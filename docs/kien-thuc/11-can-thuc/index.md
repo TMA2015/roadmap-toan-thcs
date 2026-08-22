@@ -1,10 +1,14 @@
 # Chuyên đề 11 – Căn thức và biến đổi căn thức
 
+
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+>
+> **Lớp trọng tâm:** 9
+> **Mạch kiến thức:** Đại số
+> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
 > **Vai trò trong Roadmap:** cầu nối từ biến đổi đại số sang phương trình bậc hai, bài toán rút gọn biểu thức và các dạng thi vào lớp 10.
 >
-> **Lớp trọng tâm:** 9  
-> **Mạch kiến thức:** Đại số  
-> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
 
@@ -359,37 +363,37 @@ Bình phương có thể làm xuất hiện nghiệm ngoại lai. Luôn đối c
 
 **Câu 1.** `√(x²)` bằng:
 
-A. `x`  
-B. `-x`  
-C. `|x|`  
+A. `x`
+B. `-x`
+C. `|x|`
 D. `±x`
 
 **Câu 2.** Điều kiện của `√(3x - 6)` là:
 
-A. `x > 2`  
-B. `x ≥ 2`  
-C. `x ≤ 2`  
+A. `x > 2`
+B. `x ≥ 2`
+C. `x ≤ 2`
 D. mọi `x`
 
 **Câu 3.** `√50` rút gọn thành:
 
-A. `25√2`  
-B. `5√2`  
-C. `10√5`  
+A. `25√2`
+B. `5√2`
+C. `10√5`
 D. `2√25`
 
 **Câu 4.** `√8 + √18` bằng:
 
-A. `√26`  
-B. `5√2`  
-C. `2√26`  
+A. `√26`
+B. `5√2`
+C. `2√26`
 D. `13√2`
 
 **Câu 5.** Liên hợp của `√5 + 2` là:
 
-A. `√5 - 2`  
-B. `-√5 + 2`  
-C. `√5 + 2`  
+A. `√5 - 2`
+B. `-√5 + 2`
+C. `√5 + 2`
 D. `5 - 4`
 
 ### Đáp án

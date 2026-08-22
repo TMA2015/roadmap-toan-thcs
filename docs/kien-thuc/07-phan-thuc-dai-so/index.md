@@ -1,10 +1,14 @@
 # Chuyên đề 07 – Phân thức đại số
 
+
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+>
+> **Lớp trọng tâm:** 8
+> **Mạch kiến thức:** Đại số
+> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
 > **Vai trò trong Roadmap:** cầu nối trực tiếp từ phân tích đa thức thành nhân tử sang phương trình chứa ẩn ở mẫu và các phép biến đổi đại số phức tạp.
 >
-> **Lớp trọng tâm:** 8  
-> **Mạch kiến thức:** Đại số  
-> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
 

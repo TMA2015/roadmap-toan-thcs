@@ -1,5 +1,12 @@
 # Chuyên đề 04 – Biểu thức và biến đổi đại số
 
+
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+>
+> **Lớp trọng tâm:** 7–8
+> **Mạch kiến thức:** Đại số
+> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
 > **Vai trò trong Roadmap:** nền tảng trực tiếp cho Chuyên đề 05 → 06 → 07 → 08.
 >
 > **Mục tiêu:** học sinh không chỉ biết thực hiện phép biến đổi mà phải hiểu **vì sao biến đổi được**, biết điều kiện xác định và biết chọn phương pháp phù hợp.
@@ -37,7 +44,7 @@ BIỂU THỨC VÀ BIẾN ĐỔI ĐẠI SỐ
 
 ---
 
-## 🎯 2. Chuẩn đầu ra
+## 🎯 2. Mục tiêu cần đạt
 
 Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
@@ -51,9 +58,9 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 ---
 
-# 📖 3. Kiến thức cốt lõi
+## 📖 3. Kiến thức cốt lõi
 
-## 3.1. Đơn thức
+### 3.1. Đơn thức
 
 Đơn thức là biểu thức đại số chỉ gồm một tích của một số với các biến có số mũ nguyên không âm.
 
@@ -63,7 +70,7 @@ Ví dụ:
 - `-5xy³`
 - `7`
 
-### Hệ số và phần biến
+#### Hệ số và phần biến
 
 Với `-5x²y`, ta có:
 
@@ -73,7 +80,7 @@ Với `-5x²y`, ta có:
 
 ---
 
-## 3.2. Đa thức
+### 3.2. Đa thức
 
 Đa thức là tổng của các đơn thức.
 
@@ -81,7 +88,7 @@ Ví dụ:
 
 `P(x) = 3x³ - 2x² + 5x - 7`
 
-### Bậc của đa thức
+#### Bậc của đa thức
 
 Bậc của đa thức khác 0 là bậc lớn nhất của các hạng tử sau khi đã thu gọn.
 
@@ -89,9 +96,9 @@ Bậc của đa thức khác 0 là bậc lớn nhất của các hạng tử sau
 
 ---
 
-# ✏️ 4. Các phép biến đổi quan trọng
+### 3.3. Các phép biến đổi quan trọng
 
-## 4.1. Thu gọn đơn thức
+#### Thu gọn đơn thức
 
 Gộp các thừa số số với nhau và các lũy thừa cùng biến.
 
@@ -101,7 +108,7 @@ Ví dụ:
 
 ---
 
-## 4.2. Thu gọn đa thức
+#### Thu gọn đa thức
 
 Chỉ cộng hoặc trừ được **các hạng tử đồng dạng**.
 
@@ -109,7 +116,7 @@ Ví dụ:
 
 `3x² + 5x - 2x² + 7 = x² + 5x + 7`
 
-### Quy tắc vàng
+##### Quy tắc vàng
 
 > **Đồng dạng mới được gộp.**
 
@@ -117,7 +124,7 @@ Ví dụ:
 
 ---
 
-## 4.3. Cộng – trừ đa thức
+#### Cộng – trừ đa thức
 
 Thực hiện theo hai bước:
 
@@ -136,7 +143,7 @@ Ví dụ:
 
 ---
 
-## 4.4. Nhân đơn thức với đa thức
+#### Nhân đơn thức với đa thức
 
 Dùng tính phân phối:
 
@@ -148,7 +155,7 @@ Ví dụ:
 
 ---
 
-## 4.5. Nhân đa thức với đa thức
+#### Nhân đa thức với đa thức
 
 Mỗi hạng tử của đa thức thứ nhất phải nhân với **từng hạng tử** của đa thức thứ hai.
 
@@ -164,7 +171,7 @@ Ví dụ:
 
 ---
 
-# 🔎 5. Điều kiện xác định và giá trị biểu thức
+### 3.4. Điều kiện xác định và giá trị biểu thức
 
 Khi biểu thức có mẫu chứa biến, cần tìm điều kiện để mẫu khác 0 **trước khi biến đổi**.
 
@@ -180,9 +187,9 @@ Ví dụ:
 
 ---
 
-# 💡 6. Ví dụ mẫu
+### 3.5. Ví dụ mẫu
 
-## Ví dụ 1 – Thu gọn
+#### Ví dụ 1 – Thu gọn
 
 Rút gọn:
 
@@ -196,7 +203,7 @@ Rút gọn:
 
 ---
 
-## Ví dụ 2 – Nhân và thu gọn
+#### Ví dụ 2 – Nhân và thu gọn
 
 Rút gọn:
 
@@ -208,7 +215,7 @@ Rút gọn:
 
 ---
 
-## Ví dụ 3 – Tính giá trị
+#### Ví dụ 3 – Tính giá trị
 
 Cho:
 
@@ -220,87 +227,7 @@ Tính `P` tại `x = 2`.
 
 ---
 
-# 🧩 7. Các dạng bài cần thành thạo
-
-| Dạng bài | Mức độ | Tần suất |
-|---|:---:|:---:|
-| Nhận biết đơn thức, đa thức | ⭐ | ⭐⭐⭐⭐ |
-| Xác định hệ số, phần biến, bậc | ⭐ | ⭐⭐⭐⭐ |
-| Thu gọn đơn thức | ⭐ | ⭐⭐⭐⭐⭐ |
-| Thu gọn đa thức | ⭐ | ⭐⭐⭐⭐⭐ |
-| Cộng – trừ đa thức | ⭐⭐ | ⭐⭐⭐⭐⭐ |
-| Nhân đơn thức với đa thức | ⭐⭐ | ⭐⭐⭐⭐⭐ |
-| Nhân đa thức với đa thức | ⭐⭐ | ⭐⭐⭐⭐⭐ |
-| Tính giá trị biểu thức | ⭐⭐ | ⭐⭐⭐⭐⭐ |
-| Biểu thức có điều kiện xác định | ⭐⭐ | ⭐⭐⭐⭐ |
-| Biến đổi nhiều bước | ⭐⭐⭐ | ⭐⭐⭐⭐ |
-| Nhận dạng cấu trúc để đưa về dạng tích | ⭐⭐⭐ | ⭐⭐⭐⭐ |
-
----
-
-# 🚀 8. Dạng bài nâng cao và chuẩn bị THCS cuối cấp
-
-## Dạng 1 – Biến đổi nhiều lớp
-
-Học sinh phải kết hợp:
-
-`bỏ ngoặc → nhân → thu gọn → nhóm hạng tử`
-
-Mục tiêu không phải tính thật nhanh mà là **kiểm soát dấu và cấu trúc**.
-
-## Dạng 2 – Tìm giá trị của tham số
-
-Ví dụ dạng:
-
-> Cho biểu thức `P(x)`. Tìm `m` để hệ số của `x²` bằng một giá trị cho trước.
-
-## Dạng 3 – Nhìn cấu trúc để chuẩn bị phân tích nhân tử
-
-Ví dụ:
-
-`ax + ay = a(x + y)`
-
-Đây là cầu nối trực tiếp sang **Chuyên đề 06 – Phân tích đa thức thành nhân tử**.
-
----
-
-# ⚠️ 9. Lỗi sai thường gặp
-
-### ❌ Lỗi 1: Gộp hạng tử không đồng dạng
-
-Sai:
-
-`2x + 3x² = 5x³`
-
-Đúng:
-
-`2x + 3x²` đã ở dạng thu gọn.
-
-### ❌ Lỗi 2: Quên đổi dấu khi bỏ ngoặc
-
-Sai:
-
-`5 - (2x - 3) = 5 - 2x - 3`
-
-Đúng:
-
-`5 - (2x - 3) = 5 - 2x + 3`
-
-### ❌ Lỗi 3: Nhân thiếu hạng tử
-
-Khi tính `(x + 2)(x + 3)`, không được bỏ sót `2·x` hoặc `2·3`.
-
-### ❌ Lỗi 4: Quên điều kiện xác định
-
-Với phân thức, phải kiểm tra mẫu khác 0 trước khi kết luận.
-
-### ❌ Lỗi 5: Thay số quá sớm
-
-Với bài có nhiều biến đổi, nên thu gọn trước rồi mới thay giá trị nếu cách đó giúp giảm sai sót.
-
----
-
-# 🔗 10. Liên hệ với các chuyên đề khác
+## 🔗 4. Kiến thức liên quan
 
 ```text
 03. Tỉ lệ – Tỉ lệ thức
@@ -323,7 +250,7 @@ Với bài có nhiều biến đổi, nên thu gọn trước rồi mới thay g
     HPT    Hàm số
 ```
 
-### Liên kết trực tiếp
+#### Liên kết trực tiếp
 
 - ← 03. Tỉ lệ – Tỉ lệ thức
 - → 05. 7 Hằng đẳng thức đáng nhớ
@@ -335,27 +262,107 @@ Với bài có nhiều biến đổi, nên thu gọn trước rồi mới thay g
 
 ---
 
-# 📝 11. Luyện tập theo 4 mức
+## 🧩 5. Các dạng bài cần nắm vững
 
-## Mức 1 – Nhận biết
+| Dạng bài | Mức độ | Tần suất |
+|---|:---:|:---:|
+| Nhận biết đơn thức, đa thức | ⭐ | ⭐⭐⭐⭐ |
+| Xác định hệ số, phần biến, bậc | ⭐ | ⭐⭐⭐⭐ |
+| Thu gọn đơn thức | ⭐ | ⭐⭐⭐⭐⭐ |
+| Thu gọn đa thức | ⭐ | ⭐⭐⭐⭐⭐ |
+| Cộng – trừ đa thức | ⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Nhân đơn thức với đa thức | ⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Nhân đa thức với đa thức | ⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Tính giá trị biểu thức | ⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Biểu thức có điều kiện xác định | ⭐⭐ | ⭐⭐⭐⭐ |
+| Biến đổi nhiều bước | ⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Nhận dạng cấu trúc để đưa về dạng tích | ⭐⭐⭐ | ⭐⭐⭐⭐ |
+
+---
+
+## 🚀 6. Dạng bài thi vào lớp 10
+
+### Dạng 1 – Biến đổi nhiều lớp
+
+Học sinh phải kết hợp:
+
+`bỏ ngoặc → nhân → thu gọn → nhóm hạng tử`
+
+Mục tiêu không phải tính thật nhanh mà là **kiểm soát dấu và cấu trúc**.
+
+### Dạng 2 – Tìm giá trị của tham số
+
+Ví dụ dạng:
+
+> Cho biểu thức `P(x)`. Tìm `m` để hệ số của `x²` bằng một giá trị cho trước.
+
+### Dạng 3 – Nhìn cấu trúc để chuẩn bị phân tích nhân tử
+
+Ví dụ:
+
+`ax + ay = a(x + y)`
+
+Đây là cầu nối trực tiếp sang **Chuyên đề 06 – Phân tích đa thức thành nhân tử**.
+
+---
+
+## ⚠️ 7. Lỗi sai thường gặp
+
+#### ❌ Lỗi 1: Gộp hạng tử không đồng dạng
+
+Sai:
+
+`2x + 3x² = 5x³`
+
+Đúng:
+
+`2x + 3x²` đã ở dạng thu gọn.
+
+#### ❌ Lỗi 2: Quên đổi dấu khi bỏ ngoặc
+
+Sai:
+
+`5 - (2x - 3) = 5 - 2x - 3`
+
+Đúng:
+
+`5 - (2x - 3) = 5 - 2x + 3`
+
+#### ❌ Lỗi 3: Nhân thiếu hạng tử
+
+Khi tính `(x + 2)(x + 3)`, không được bỏ sót `2·x` hoặc `2·3`.
+
+#### ❌ Lỗi 4: Quên điều kiện xác định
+
+Với phân thức, phải kiểm tra mẫu khác 0 trước khi kết luận.
+
+#### ❌ Lỗi 5: Thay số quá sớm
+
+Với bài có nhiều biến đổi, nên thu gọn trước rồi mới thay giá trị nếu cách đó giúp giảm sai sót.
+
+---
+
+## 📝 8. Luyện tập
+
+### Mức 1 – Nhận biết
 
 1. Xác định hệ số và bậc của `-4x³y²`.
 2. Thu gọn `3x + 5x - 2x`.
 3. Xác định các hạng tử đồng dạng trong `2x² + 3x - 5x² + 7`.
 
-## Mức 2 – Thông hiểu
+### Mức 2 – Thông hiểu
 
 1. Thu gọn `(3x² - 2x + 1) - (x² + 4x - 3)`.
 2. Thực hiện `(2x - 3)(x + 5)`.
 3. Tính giá trị của `P = 2x² - 3x + 1` tại `x = -2`.
 
-## Mức 3 – Vận dụng
+### Mức 3 – Vận dụng
 
 1. Rút gọn biểu thức có nhiều ngoặc rồi tính giá trị tại một giá trị cho trước.
 2. Tìm tham số để một hệ số của đa thức bằng 0.
 3. Biến đổi biểu thức về dạng thuận lợi để giải phương trình.
 
-## Mức 4 – Vận dụng cao
+### Mức 4 – Vận dụng cao
 
 1. Tìm tham số để biểu thức có tính chất cho trước với mọi `x`.
 2. Nhận dạng cấu trúc và lựa chọn biến đổi phù hợp trước khi thực hiện phép tính.
@@ -363,7 +370,7 @@ Với bài có nhiều biến đổi, nên thu gọn trước rồi mới thay g
 
 ---
 
-# 🧠 12. Tự kiểm tra trước khi chuyển chuyên đề
+## ✅ 9. Tự kiểm tra
 
 Học sinh chỉ nên chuyển sang Chuyên đề 05 khi có thể trả lời **Có** cho hầu hết các câu sau:
 
@@ -380,7 +387,7 @@ Học sinh chỉ nên chuyển sang Chuyên đề 05 khi có thể trả lời *
 
 ---
 
-# 🏁 13. Vị trí của chuyên đề trong Roadmap
+## 🔄 10. Liên kết Roadmap
 
 **Trước:**
 
@@ -394,8 +401,20 @@ Học sinh chỉ nên chuyển sang Chuyên đề 05 khi có thể trả lời *
 
 `05 – 7 Hằng đẳng thức đáng nhớ`
 
-### ⭐ Mức độ ưu tiên
+#### ⭐ Mức độ ưu tiên
 
 **⭐⭐⭐⭐⭐ – Nền tảng rất quan trọng**
 
 Chuyên đề này xuất hiện dưới dạng kỹ năng nền trong rất nhiều bài Đại số THCS và là tiền đề trực tiếp cho các chuyên đề 05–12.
+
+---
+
+## 🏁 11. Điều kiện hoàn thành
+
+Học sinh được xem là hoàn thành chuyên đề khi:
+
+- [ ] Nhận diện và thu gọn đúng đơn thức, đa thức.
+- [ ] Thực hiện chắc các phép cộng, trừ, nhân biểu thức cơ bản.
+- [ ] Biết kiểm tra điều kiện xác định khi biểu thức có mẫu chứa biến.
+- [ ] Giải thích được các bước biến đổi, không chỉ ghi kết quả.
+- [ ] Đạt mức hoàn thành khuyến nghị đã nêu trong phần tự kiểm tra trước khi chuyển chuyên đề.

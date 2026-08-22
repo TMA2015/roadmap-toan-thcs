@@ -1,5 +1,12 @@
 # 08. Phương trình và bất phương trình
 
+
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+>
+> **Lớp trọng tâm:** 8–9
+> **Mạch kiến thức:** Đại số
+> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
 > **Vai trò:** Chuyên đề trọng tâm của Đại số THCS, kết nối trực tiếp với hệ phương trình, hàm số và bài toán thực tế.
 
 **Lớp trọng tâm:** 8–9
@@ -8,7 +15,7 @@
 
 ---
 
-## 1. 🗺️ Bản đồ kiến thức
+## 🧭 1. Bản đồ kiến thức
 
 ```text
 PHƯƠNG TRÌNH & BẤT PHƯƠNG TRÌNH
@@ -38,7 +45,7 @@ PHƯƠNG TRÌNH & BẤT PHƯƠNG TRÌNH
     └── Lập bất phương trình
 ```
 
-## 2. 🎯 Mục tiêu cần đạt
+## 🎯 2. Mục tiêu cần đạt
 
 ### Bắt buộc
 
@@ -59,7 +66,7 @@ PHƯƠNG TRÌNH & BẤT PHƯƠNG TRÌNH
 
 ---
 
-## 3. 📚 Kiến thức cốt lõi
+## 📖 3. Kiến thức cốt lõi
 
 ### 3.1. Phương trình bậc nhất
 
@@ -109,7 +116,7 @@ Giải từng bất phương trình rồi lấy **giao** các tập nghiệm.
 
 ---
 
-## 4. 🔗 Kiến thức liên quan
+## 🔗 4. Kiến thức liên quan
 
 **Cần nắm trước:**
 
@@ -131,7 +138,7 @@ Giải từng bất phương trình rồi lấy **giao** các tập nghiệm.
 
 ---
 
-## 5. ✏️ Các dạng bài cần nắm vững
+## 🧩 5. Các dạng bài cần nắm vững
 
 === "Mức 1 — Nhận biết"
 
@@ -164,7 +171,31 @@ Giải từng bất phương trình rồi lấy **giao** các tập nghiệm.
 
 ---
 
-## 6. 🎯 Dạng bài phục vụ thi vào 10
+### Ví dụ mẫu
+
+#### Ví dụ 1 — Phương trình bậc nhất
+
+$$3x-5=10$$
+
+$$3x=15\Rightarrow x=5.$$
+
+#### Ví dụ 2 — Phương trình tích
+
+$$x(x-3)=0$$
+
+$$x=0\quad\text{hoặc}\quad x=3.$$
+
+#### Ví dụ 3 — Bất phương trình
+
+$$-2x+4>0$$
+
+$$-2x>-4\Rightarrow x<2.$$
+
+> Khi nhân/chia với số âm, **đổi chiều**.
+
+---
+
+## 🚀 6. Dạng bài thi vào lớp 10
 
 | Dạng | Ưu tiên | Kỹ năng cần đạt |
 |---|---:|---|
@@ -180,7 +211,7 @@ Giải từng bất phương trình rồi lấy **giao** các tập nghiệm.
 
 ---
 
-## 7. ⚠️ Lỗi sai thường gặp
+## ⚠️ 7. Lỗi sai thường gặp
 
 !!! warning "5 lỗi cần kiểm tra trước khi nộp bài"
 
@@ -192,45 +223,21 @@ Giải từng bất phương trình rồi lấy **giao** các tập nghiệm.
 
 ---
 
-## 8. 🧩 Ví dụ mẫu
+## 📝 8. Luyện tập
 
-### Ví dụ 1 — Phương trình bậc nhất
-
-$$3x-5=10$$
-
-$$3x=15\Rightarrow x=5.$$
-
-### Ví dụ 2 — Phương trình tích
-
-$$x(x-3)=0$$
-
-$$x=0\quad\text{hoặc}\quad x=3.$$
-
-### Ví dụ 3 — Bất phương trình
-
-$$-2x+4>0$$
-
-$$-2x>-4\Rightarrow x<2.$$
-
-> Khi nhân/chia với số âm, **đổi chiều**.
-
----
-
-## 9. 📝 Luyện tập
-
-### Bộ A — Củng cố
+### Mức 1 – Nhận biết / củng cố
 
 10–15 bài giải trực tiếp, tập trung vào độ chính xác.
 
-### Bộ B — Thành thạo dạng bài
+### Mức 2 – Thông hiểu / thành thạo dạng bài
 
 15–20 bài phân loại theo phương trình bậc nhất, tích, chứa mẫu và bất phương trình.
 
-### Bộ C — Vận dụng
+### Mức 3 – Vận dụng
 
 10–15 bài lập phương trình/bất phương trình và bài tổng hợp.
 
-### Bộ D — Thi vào 10
+### Mức 4 – Nâng cao / thi vào 10
 
 Một đề chuyên đề 45–60 phút, trộn các dạng quan trọng.
 
@@ -238,7 +245,7 @@ Một đề chuyên đề 45–60 phút, trộn các dạng quan trọng.
 
 ---
 
-## 10. 🧠 Tự kiểm tra
+## ✅ 9. Tự kiểm tra
 
 - [ ] Tôi giải được phương trình bậc nhất mà không cần nhìn mẫu.
 - [ ] Tôi nhận ra khi nào nên phân tích thành tích.
@@ -250,7 +257,7 @@ Một đề chuyên đề 45–60 phút, trộn các dạng quan trọng.
 
 ---
 
-## 11. 🔄 Liên kết Roadmap
+## 🔄 10. Liên kết Roadmap
 
 **← Trước:** 06. Phân tích đa thức thành nhân tử
 **Tiếp theo:** 09. Hệ phương trình bậc nhất hai ẩn
@@ -264,7 +271,7 @@ Một đề chuyên đề 45–60 phút, trộn các dạng quan trọng.
 
 ---
 
-## 12. ✅ Điều kiện hoàn thành
+## 🏁 11. Điều kiện hoàn thành
 
 Học sinh được xem là **nắm vững chuyên đề** khi có thể:
 

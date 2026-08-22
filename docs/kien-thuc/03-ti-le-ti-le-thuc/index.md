@@ -1,10 +1,14 @@
 # Chuyên đề 03 – Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ
 
+
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+>
+> **Lớp trọng tâm:** 6–7
+> **Mạch kiến thức:** Số / Đại số
+> **Mức ưu tiên:** ⭐⭐⭐⭐
+
 > **Vai trò trong Roadmap:** cầu nối từ số học sang đại số và bài toán thực tế; là nền cho hàm số, mô hình hóa, phần trăm, chuyển động và các bài toán năng suất.
 >
-> **Lớp trọng tâm:** 6–7  
-> **Mạch kiến thức:** Số/Đại số  
-> **Mức ưu tiên:** ⭐⭐⭐⭐
 
 ---
 
@@ -493,7 +497,7 @@ Thời gian mới:
 
 ---
 
-## 🚀 6. Dạng bài liên quan thi vào lớp 10
+## 🚀 6. Dạng bài thi vào lớp 10
 
 ### Trọng tâm 1 – Bài toán thực tế ⭐⭐⭐⭐⭐
 
@@ -590,7 +594,7 @@ Nếu số công nhân tăng mà kết quả lại cho thời gian tăng trong m
 
 ---
 
-## 📝 8. Luyện tập theo 4 mức
+## 📝 8. Luyện tập
 
 ### Mức 1 – Nhận biết
 

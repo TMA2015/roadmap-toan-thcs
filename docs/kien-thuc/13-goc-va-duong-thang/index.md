@@ -1,10 +1,14 @@
 # Chuyên đề 13 – Góc và quan hệ giữa các đường thẳng
 
+
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+>
+> **Lớp trọng tâm:** 6–7
+> **Mạch kiến thức:** Hình học
+> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
 > **Vai trò trong Roadmap:** nền tảng của toàn bộ mạch Hình học THCS. Chuyên đề này chuẩn hóa ngôn ngữ về điểm, đường thẳng, tia, góc, song song, vuông góc và cách suy luận hình học trước khi học tam giác, tứ giác, Thales và đường tròn.
 >
-> **Lớp trọng tâm:** 6–7  
-> **Mạch kiến thức:** Hình học  
-> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
 
@@ -98,7 +102,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 ---
 
-# 📖 3. Kiến thức cốt lõi
+## 📖 3. Kiến thức cốt lõi
 
 ## 3.1. Điểm, đường thẳng, tia và đoạn thẳng
 
@@ -340,7 +344,7 @@ Hai tính chất này được dùng rất nhiều trong chứng minh tam giác,
 
 ---
 
-# 🔗 4. Kiến thức liên quan
+## 🔗 4. Kiến thức liên quan
 
 ## Kiến thức nên biết trước
 
@@ -358,7 +362,7 @@ Hai tính chất này được dùng rất nhiều trong chứng minh tam giác,
 
 ---
 
-# 🧩 5. Các dạng bài cần nắm vững
+## 🧩 5. Các dạng bài cần nắm vững
 
 ## Dạng 1 – Tính góc kề bù
 
@@ -532,7 +536,7 @@ kết luận hình học
 
 ---
 
-# 🚀 6. Dạng bài thi vào lớp 10
+## 🚀 6. Dạng bài thi vào lớp 10
 
 Chuyên đề này ít khi xuất hiện độc lập thành một câu lớn, nhưng là **nền tảng bắt buộc** cho hầu hết bài chứng minh hình học.
 
@@ -561,7 +565,7 @@ Thường xuất hiện dưới dạng bước trung gian trong hình học tổ
 
 ---
 
-# ⚠️ 7. Lỗi sai thường gặp
+## ⚠️ 7. Lỗi sai thường gặp
 
 ## ❌ Lỗi 1: Thấy hai góc bằng nhau là kết luận song song
 
@@ -625,9 +629,9 @@ Nên viết:
 
 ---
 
-# 📝 8. Luyện tập
+## 📝 8. Luyện tập
 
-## Mức 1 – Nhận biết
+### Mức 1 – Nhận biết
 
 1. Phân loại các góc: `35°`, `90°`, `125°`, `180°`.
 2. Hai góc phụ nhau, một góc bằng `38°`. Tìm góc còn lại.
@@ -637,7 +641,7 @@ Nên viết:
 
 ---
 
-## Mức 2 – Thông hiểu
+### Mức 2 – Thông hiểu
 
 1. Hai góc kề bù có số đo `3x + 10` và `2x + 20`. Tìm `x`.
 2. Hai góc đối đỉnh có số đo `4x - 5` và `3x + 15`. Tìm `x`.
@@ -647,7 +651,7 @@ Nên viết:
 
 ---
 
-## Mức 3 – Vận dụng
+### Mức 3 – Vận dụng
 
 1. Cho hai đường thẳng cắt nhau. Một tia phân giác của một góc được vẽ. Tính các góc còn lại từ một số đo đã cho.
 2. Cho `a ∥ b`, đường `c` cắt cả hai. Một góc có số đo `3x + 15`, góc tương ứng có số đo `5x - 25`. Tìm `x` và toàn bộ các góc khác.
@@ -657,7 +661,7 @@ Nên viết:
 
 ---
 
-## Mức 4 – Nâng cao / tổng hợp
+### Mức 4 – Nâng cao / tổng hợp
 
 1. Một đường gấp khúc cắt hai đường thẳng song song. Hãy dùng góc phụ để tính góc tạo bởi hai đoạn của đường gấp khúc.
 2. Cho ba đường thẳng tạo nhiều giao điểm. Chứng minh hai đường song song bằng cách tạo một cặp góc trung gian bằng nhau.
@@ -667,17 +671,17 @@ Nên viết:
 
 ---
 
-# ✅ 9. Tự kiểm tra
+## ✅ 9. Tự kiểm tra
 
-## Mini quiz
+### Mini quiz
 
 ### Câu 1
 
 Hai góc đối đỉnh có tính chất gì?
 
-A. Tổng bằng `90°`  
-B. Tổng bằng `180°`  
-C. Bằng nhau  
+A. Tổng bằng `90°`
+B. Tổng bằng `180°`
+C. Bằng nhau
 D. Luôn là góc vuông
 
 **Đáp án:** C
@@ -688,9 +692,9 @@ D. Luôn là góc vuông
 
 Nếu `a ∥ b` và một đường cắt tạo hai góc trong cùng phía thì tổng hai góc đó bằng:
 
-A. `45°`  
-B. `90°`  
-C. `180°`  
+A. `45°`
+B. `90°`
+C. `180°`
 D. `360°`
 
 **Đáp án:** C
@@ -701,9 +705,9 @@ D. `360°`
 
 Nếu `a ⟂ c` và `b ⟂ c` thì:
 
-A. `a ⟂ b`  
-B. `a ∥ b`  
-C. `a` trùng `b`  
+A. `a ⟂ b`
+B. `a ∥ b`
+C. `a` trùng `b`
 D. Không kết luận được
 
 **Đáp án:** B
@@ -714,9 +718,9 @@ D. Không kết luận được
 
 `Oz` là tia phân giác của góc `xOy = 100°`. Khi đó `∠xOz` bằng:
 
-A. `25°`  
-B. `50°`  
-C. `100°`  
+A. `25°`
+B. `50°`
+C. `100°`
 D. `200°`
 
 **Đáp án:** B
@@ -727,16 +731,16 @@ D. `200°`
 
 Muốn chứng minh hai đường thẳng song song bằng góc so le trong, cần chứng minh hai góc đó:
 
-A. phụ nhau  
-B. bù nhau  
-C. bằng nhau  
+A. phụ nhau
+B. bù nhau
+C. bằng nhau
 D. đều nhọn
 
 **Đáp án:** C
 
 ---
 
-## Checklist tự đánh giá
+### Checklist tự đánh giá
 
 - [ ] Tôi phân biệt được góc nhọn, vuông, tù, bẹt.
 - [ ] Tôi tính được góc kề bù và góc đối đỉnh.
@@ -749,7 +753,7 @@ D. đều nhọn
 
 ---
 
-# 🔄 10. Liên kết Roadmap
+## 🔄 10. Liên kết Roadmap
 
 ```text
 01. Bản đồ chương trình
@@ -778,7 +782,7 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ---
 
-# 🏁 11. Điều kiện hoàn thành
+## 🏁 11. Điều kiện hoàn thành
 
 Chuyên đề được xem là hoàn thành khi học sinh:
 

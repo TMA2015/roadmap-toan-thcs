@@ -1,8 +1,12 @@
 # Chuyên đề 09 – Hệ phương trình bậc nhất hai ẩn
 
-> **Lớp trọng tâm:** 9  
-> **Mạch kiến thức:** Đại số  
-> **Mức ưu tiên:** ⭐⭐⭐⭐⭐  
+
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+>
+> **Lớp trọng tâm:** 9
+> **Mạch kiến thức:** Đại số
+> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
 > **Vai trò trong Roadmap:** kết nối trực tiếp từ phương trình một ẩn sang bài toán có hai đại lượng chưa biết; là nền tảng cho bài toán thực tế, hàm số và ôn thi vào lớp 10.
 
 ---
@@ -131,9 +135,9 @@ Vì vậy:
 
 ---
 
-## 🛠 4. Hai phương pháp giải cơ bản
+### 3.4. Hai phương pháp giải cơ bản
 
-### 4.1. Phương pháp thế
+#### Phương pháp thế
 
 Quy trình:
 
@@ -185,7 +189,7 @@ Vậy hệ có nghiệm:
 
 ---
 
-### 4.2. Phương pháp cộng đại số
+#### Phương pháp cộng đại số
 
 Mục tiêu là làm cho hệ số của một ẩn trở thành hai số đối nhau hoặc bằng nhau để khử ẩn đó.
 
@@ -221,7 +225,7 @@ Vậy:
 
 ---
 
-### 4.3. Chọn phương pháp nhanh
+#### Chọn phương pháp nhanh
 
 | Dấu hiệu | Phương pháp nên ưu tiên |
 |---|---|
@@ -235,7 +239,7 @@ Không có quy định bắt buộc phải dùng một phương pháp cố đị
 
 ---
 
-## 🔎 5. Số nghiệm của hệ
+### 3.5. Số nghiệm của hệ
 
 Xét hệ:
 
@@ -248,7 +252,7 @@ a_2x+b_2y=c_2
 
 Ở mức THCS, có thể nhận biết qua biến đổi hoặc qua vị trí tương đối của hai đường thẳng.
 
-### Một nghiệm
+#### Một nghiệm
 
 Ví dụ:
 
@@ -261,7 +265,7 @@ x-y=1
 
 Hai phương trình độc lập và hệ giải được một cặp duy nhất.
 
-### Vô nghiệm
+#### Vô nghiệm
 
 Ví dụ:
 
@@ -282,7 +286,7 @@ mâu thuẫn với `2x+2y=5`.
 
 Vậy hệ vô nghiệm.
 
-### Vô số nghiệm
+#### Vô số nghiệm
 
 Ví dụ:
 
@@ -299,7 +303,7 @@ Vì vậy hai phương trình tương đương và hệ có vô số nghiệm.
 
 ---
 
-## 🔗 6. Kiến thức liên quan
+## 🔗 4. Kiến thức liên quan
 
 - **Cần nắm trước:** [08. Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md).
 - **Hỗ trợ biến đổi:** [04. Biểu thức đại số](../04-bieu-thuc-dai-so/index.md), [06. Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/index.md), [07. Phân thức đại số](../07-phan-thuc-dai-so/index.md).
@@ -307,7 +311,7 @@ Vì vậy hai phương trình tương đương và hệ có vô số nghiệm.
 
 ---
 
-## 🧩 7. Các dạng bài cần nắm vững
+## 🧩 5. Các dạng bài cần nắm vững
 
 ### Dạng 1 – Kiểm tra một cặp số có là nghiệm không
 
@@ -439,9 +443,9 @@ Quy trình 5 bước:
 
 ---
 
-## 🚀 8. Dạng bài thi vào lớp 10
+## 🚀 6. Dạng bài thi vào lớp 10
 
-### 8.1. Giải hệ trực tiếp – ⭐⭐⭐⭐⭐
+### Giải hệ trực tiếp – ⭐⭐⭐⭐⭐
 
 Đây là kỹ năng nền tảng, thường xuất hiện độc lập hoặc nằm bên trong bài toán lớn hơn.
 
@@ -452,7 +456,7 @@ Học sinh cần thành thạo:
 - hệ có phân số đơn giản;
 - hệ cần biến đổi trước.
 
-### 8.2. Hệ có tham số – ⭐⭐⭐⭐
+### Hệ có tham số – ⭐⭐⭐⭐
 
 Thường yêu cầu:
 
@@ -460,7 +464,7 @@ Thường yêu cầu:
 - tìm `m` để nghiệm có quan hệ như `x+y=k`, `x>0`, `x=y`, ...;
 - xác định số nghiệm của hệ.
 
-### 8.3. Lập hệ từ bài toán thực tế – ⭐⭐⭐⭐⭐
+### Lập hệ từ bài toán thực tế – ⭐⭐⭐⭐⭐
 
 Các nhóm quen thuộc:
 
@@ -472,13 +476,13 @@ Các nhóm quen thuộc:
 - hình học;
 - bài toán hai đại lượng có tổng và quan hệ khác.
 
-### 8.4. Kết hợp hệ phương trình với hàm số – ⭐⭐⭐⭐
+### Kết hợp hệ phương trình với hàm số – ⭐⭐⭐⭐
 
 Nghiệm của hệ có thể được hiểu là giao điểm của hai đường thẳng. Đây là mối nối trực tiếp sang Chuyên đề 10.
 
 ---
 
-## ⚠️ 9. Lỗi sai thường gặp
+## ⚠️ 7. Lỗi sai thường gặp
 
 ### ❌ Lỗi 1 – Chỉ kiểm tra một phương trình
 
@@ -514,7 +518,7 @@ Thay nghiệm vào hệ ban đầu là cách phát hiện rất nhanh lỗi tín
 
 ---
 
-## 📝 10. Luyện tập theo 4 mức
+## 📝 8. Luyện tập
 
 ### Mức 1 – Nhận biết
 
@@ -604,22 +608,22 @@ x+y=m+2\\
 
 ---
 
-## ✅ 11. Tự kiểm tra
+## ✅ 9. Tự kiểm tra
 
 ### Mini quiz
 
 **Câu 1.** Nghiệm của hệ là gì?
 
-A. Một giá trị của `x`  
-B. Một giá trị của `y`  
-C. Một cặp `(x;y)` thỏa cả hai phương trình  
+A. Một giá trị của `x`
+B. Một giá trị của `y`
+C. Một cặp `(x;y)` thỏa cả hai phương trình
 D. Bất kỳ cặp số nào
 
 **Câu 2.** Hệ nào thích hợp nhất để dùng cộng đại số ngay?
 
-A. `x+y=3` và `2x+5y=7`  
-B. `2x+3y=4` và `5x-3y=8`  
-C. `x=2y+1` và `3x-y=4`  
+A. `x+y=3` và `2x+5y=7`
+B. `2x+3y=4` và `5x-3y=8`
+C. `x=2y+1` và `3x-y=4`
 D. `x-y=0` và `x+y=2`
 
 **Câu 3.** Hệ
@@ -633,28 +637,28 @@ x+y=2\\
 
 có bao nhiêu nghiệm?
 
-A. Một  
-B. Hai  
-C. Vô nghiệm  
+A. Một
+B. Hai
+C. Vô nghiệm
 D. Vô số nghiệm
 
 **Câu 4.** Khi lập hệ từ bài toán thực tế, bước nào không được bỏ qua?
 
-A. Chọn ẩn  
-B. Ghi điều kiện của ẩn  
-C. Đối chiếu nghiệm với thực tế  
+A. Chọn ẩn
+B. Ghi điều kiện của ẩn
+C. Đối chiếu nghiệm với thực tế
 D. Cả A, B, C
 
 ### Đáp án
 
-1. C  
-2. B  
-3. C  
+1. C
+2. B
+3. C
 4. D
 
 ---
 
-## 🔄 12. Liên kết Roadmap
+## 🔄 10. Liên kết Roadmap
 
 - **← Trước:** [08. Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md)
 - **→ Tiếp theo:** [10. Hàm số và đồ thị](../10-ham-so-do-thi/index.md)
@@ -665,7 +669,7 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ---
 
-## 🏁 13. Điều kiện hoàn thành
+## 🏁 11. Điều kiện hoàn thành
 
 Chuyên đề được xem là hoàn thành khi học sinh:
 

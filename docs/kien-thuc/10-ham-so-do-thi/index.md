@@ -1,10 +1,14 @@
 # Chuyên đề 10 – Hàm số và đồ thị
 
+
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+>
+> **Lớp trọng tâm:** 7–9
+> **Mạch kiến thức:** Đại số
+> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
 > **Vai trò trong Roadmap:** cầu nối giữa đại số và hình học tọa độ; giúp học sinh hiểu quan hệ giữa công thức, bảng giá trị, điểm trên mặt phẳng và hình dạng đồ thị.
 >
-> **Lớp trọng tâm:** 7–9  
-> **Mạch kiến thức:** Đại số  
-> **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
 
@@ -66,7 +70,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 ## 📖 3. Kiến thức cốt lõi
 
-## 3.1. Khái niệm hàm số
+### 3.1. Khái niệm hàm số
 
 Nếu đại lượng `y` phụ thuộc vào đại lượng `x` sao cho với mỗi giá trị của `x` ta xác định được **duy nhất một giá trị của `y`**, thì `y` được gọi là hàm số của `x`.
 
@@ -92,7 +96,7 @@ Khi đó:
 
 ---
 
-## 3.2. Bảng giá trị
+### 3.2. Bảng giá trị
 
 Với hàm số:
 
@@ -108,7 +112,7 @@ Bảng giá trị giúp chuyển từ **công thức đại số** sang **các �
 
 ---
 
-## 3.3. Mặt phẳng tọa độ
+### 3.3. Mặt phẳng tọa độ
 
 Mặt phẳng tọa độ gồm hai trục vuông góc:
 
@@ -135,7 +139,7 @@ Ví dụ:
 
 ---
 
-## 3.4. Điểm thuộc đồ thị
+### 3.4. Điểm thuộc đồ thị
 
 Điểm `M(x₀; y₀)` thuộc đồ thị của hàm số `y = f(x)` khi và chỉ khi:
 
@@ -155,9 +159,9 @@ Xét `y = 2x + 1`.
 
 ---
 
-# 📈 4. Hàm số bậc nhất
+### 3.5. Hàm số bậc nhất
 
-## 4.1. Dạng tổng quát
+#### Dạng tổng quát
 
 Hàm số bậc nhất có dạng:
 
@@ -172,7 +176,7 @@ Trong đó:
 
 ---
 
-## 4.2. Trường hợp đặc biệt `y = ax`
+#### Trường hợp đặc biệt `y = ax`
 
 Khi `b = 0`:
 
@@ -193,13 +197,13 @@ Nối hai điểm ta được đồ thị.
 
 ---
 
-## 4.3. Cách vẽ đồ thị `y = ax + b`
+#### Cách vẽ đồ thị `y = ax + b`
 
 Vì đồ thị là đường thẳng, chỉ cần xác định **hai điểm phân biệt**.
 
 Cách thường dùng:
 
-### Cách 1 – Cho `x = 0`
+##### Cách 1 – Cho `x = 0`
 
 Ta được:
 
@@ -209,7 +213,7 @@ Ta được:
 
 `A(0; b)`
 
-### Cách 2 – Cho `y = 0`
+##### Cách 2 – Cho `y = 0`
 
 Giải:
 
@@ -223,7 +227,7 @@ Giải:
 
 Sau đó nối `A` và `B`.
 
-### Ví dụ
+##### Ví dụ
 
 Vẽ đồ thị:
 
@@ -245,7 +249,7 @@ Ta có `B(2; 0)`.
 
 ---
 
-## 4.4. Ý nghĩa của hệ số góc `a`
+#### Ý nghĩa của hệ số góc `a`
 
 Trong `y = ax + b`:
 
@@ -264,7 +268,7 @@ Ví dụ:
 
 ---
 
-## 4.5. Ý nghĩa của `b`
+#### Ý nghĩa của `b`
 
 Trong `y = ax + b`, khi `x = 0`:
 
@@ -282,7 +286,7 @@ cắt `Oy` tại `(0; -5)`.
 
 ---
 
-# 🔀 5. Vị trí tương đối của hai đường thẳng
+### 3.6. Vị trí tương đối của hai đường thẳng
 
 Xét:
 
@@ -290,7 +294,7 @@ Xét:
 
 `d₂: y = a₂x + b₂`
 
-## 5.1. Hai đường thẳng cắt nhau
+#### Hai đường thẳng cắt nhau
 
 Nếu:
 
@@ -300,7 +304,7 @@ thì hai đường thẳng cắt nhau tại đúng một điểm.
 
 ---
 
-## 5.2. Hai đường thẳng song song
+#### Hai đường thẳng song song
 
 Nếu:
 
@@ -314,7 +318,7 @@ thì hai đường thẳng song song.
 
 ---
 
-## 5.3. Hai đường thẳng trùng nhau
+#### Hai đường thẳng trùng nhau
 
 Nếu:
 
@@ -326,7 +330,7 @@ và:
 
 thì hai đường thẳng trùng nhau.
 
-### Bảng ghi nhớ
+##### Bảng ghi nhớ
 
 | Quan hệ | Điều kiện |
 |---|---|
@@ -336,7 +340,7 @@ thì hai đường thẳng trùng nhau.
 
 ---
 
-# 🎯 6. Giao điểm của hai đồ thị
+### 3.7. Giao điểm của hai đồ thị
 
 Giả sử:
 
@@ -362,7 +366,7 @@ Vậy giao điểm là:
 
 `I(1; 3)`
 
-### Liên hệ với hệ phương trình
+##### Liên hệ với hệ phương trình
 
 Giao điểm trên chính là nghiệm của hệ:
 
@@ -377,163 +381,7 @@ Hay viết dưới dạng chuẩn của hệ hai phương trình bậc nhất ha
 
 ---
 
-# 🧠 7. Các dạng bài cần nắm vững
-
-## Dạng 1 – Tính giá trị hàm số
-
-### Dấu hiệu
-
-Đề cho công thức `y = f(x)` và yêu cầu tính `f(a)`.
-
-### Phương pháp
-
-Thay `x = a` vào công thức.
-
-### Ví dụ
-
-Cho `f(x) = 3x - 2`.
-
-Tính `f(4)`.
-
-`f(4) = 3·4 - 2 = 10`.
-
----
-
-## Dạng 2 – Kiểm tra điểm thuộc đồ thị
-
-### Dấu hiệu
-
-Đề cho điểm `M(x₀; y₀)` và hàm số.
-
-### Phương pháp
-
-Tính `f(x₀)` rồi so sánh với `y₀`.
-
-### Ví dụ
-
-Điểm `A(2; 7)` có thuộc `y = 3x + 1` không?
-
-`3·2 + 1 = 7`.
-
-Vậy có.
-
----
-
-## Dạng 3 – Tìm tham số để điểm thuộc đồ thị
-
-Ví dụ:
-
-Điểm `A(2; 5)` thuộc đường thẳng:
-
-`y = mx + 1`
-
-Ta có:
-
-`5 = 2m + 1`
-
-`2m = 4`
-
-`m = 2`.
-
----
-
-## Dạng 4 – Vẽ đồ thị hàm số bậc nhất
-
-### Quy trình
-
-1. Chọn hai giá trị `x` thuận tiện.
-2. Tính `y` tương ứng.
-3. Xác định hai điểm.
-4. Nối hai điểm bằng đường thẳng.
-
-> Khi có thể, ưu tiên hai giao điểm với các trục tọa độ.
-
----
-
-## Dạng 5 – Tìm giao điểm với các trục
-
-Với:
-
-`y = ax + b`
-
-### Giao với `Oy`
-
-Cho `x = 0`.
-
-### Giao với `Ox`
-
-Cho `y = 0`.
-
----
-
-## Dạng 6 – Xét đồng biến, nghịch biến
-
-Với `y = ax + b`:
-
-- `a > 0` → đồng biến
-- `a < 0` → nghịch biến
-
----
-
-## Dạng 7 – Xét vị trí hai đường thẳng
-
-So sánh `a₁, a₂` và `b₁, b₂`.
-
-Không cần vẽ hình nếu đề chỉ hỏi quan hệ song song/cắt nhau/trùng nhau.
-
----
-
-## Dạng 8 – Tìm giao điểm hai đường thẳng
-
-Giải phương trình:
-
-`a₁x + b₁ = a₂x + b₂`
-
-Sau đó tính `y`.
-
----
-
-## Dạng 9 – Tìm tham số để hai đường thẳng song song
-
-Ví dụ:
-
-`d₁: y = (m + 1)x + 2`
-
-`d₂: y = 3x - 5`
-
-Để song song:
-
-`m + 1 = 3`
-
-`m = 2`
-
-và hai tung độ gốc phải khác nhau, ở đây `2 ≠ -5`, nên thỏa mãn.
-
----
-
-## Dạng 10 – Tìm tham số để hai đường thẳng cắt nhau
-
-Điều kiện:
-
-`a₁ ≠ a₂`
-
-Ví dụ:
-
-`y = (m - 2)x + 1`
-
-và:
-
-`y = 3x + 4`
-
-Cắt nhau khi:
-
-`m - 2 ≠ 3`
-
-`m ≠ 5`.
-
----
-
-# 🟣 8. Mở rộng – Đồ thị `y = ax²`
+### 3.8. Mở rộng – Đồ thị `y = ax²`
 
 Với `a ≠ 0`, hàm số:
 
@@ -541,7 +389,7 @@ Với `a ≠ 0`, hàm số:
 
 có đồ thị là một **parabol**.
 
-## 8.1. Một số tính chất quan trọng
+#### Một số tính chất quan trọng
 
 - đi qua gốc tọa độ `O(0; 0)`
 - nhận trục `Oy` làm trục đối xứng
@@ -564,7 +412,170 @@ Ta thấy các giá trị tại `x` và `-x` bằng nhau.
 
 ---
 
-# 🚀 9. Dạng bài thi vào lớp 10
+
+## 🔗 4. Kiến thức liên quan
+
+- **Cần nắm trước:** [03 – Tỉ lệ, tỉ lệ thức](../03-ti-le-ti-le-thuc/index.md), [08 – Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md), [09 – Hệ phương trình](../09-he-phuong-trinh/index.md).
+- **Liên hệ mạnh:** mặt phẳng tọa độ, quan hệ giữa hai đại lượng và ý nghĩa hình học của nghiệm hệ phương trình.
+- **Sử dụng tiếp:** [12 – Phương trình bậc hai và Viète](../12-phuong-trinh-bac-hai-viete/index.md), [24 – Bài toán thực tế và mô hình hóa](../24-bai-toan-thuc-te/index.md).
+
+## 🧩 5. Các dạng bài cần nắm vững
+
+### Dạng 1 – Tính giá trị hàm số
+
+#### Dấu hiệu
+
+Đề cho công thức `y = f(x)` và yêu cầu tính `f(a)`.
+
+#### Phương pháp
+
+Thay `x = a` vào công thức.
+
+#### Ví dụ
+
+Cho `f(x) = 3x - 2`.
+
+Tính `f(4)`.
+
+`f(4) = 3·4 - 2 = 10`.
+
+---
+
+### Dạng 2 – Kiểm tra điểm thuộc đồ thị
+
+#### Dấu hiệu
+
+Đề cho điểm `M(x₀; y₀)` và hàm số.
+
+#### Phương pháp
+
+Tính `f(x₀)` rồi so sánh với `y₀`.
+
+#### Ví dụ
+
+Điểm `A(2; 7)` có thuộc `y = 3x + 1` không?
+
+`3·2 + 1 = 7`.
+
+Vậy có.
+
+---
+
+### Dạng 3 – Tìm tham số để điểm thuộc đồ thị
+
+Ví dụ:
+
+Điểm `A(2; 5)` thuộc đường thẳng:
+
+`y = mx + 1`
+
+Ta có:
+
+`5 = 2m + 1`
+
+`2m = 4`
+
+`m = 2`.
+
+---
+
+### Dạng 4 – Vẽ đồ thị hàm số bậc nhất
+
+#### Quy trình
+
+1. Chọn hai giá trị `x` thuận tiện.
+2. Tính `y` tương ứng.
+3. Xác định hai điểm.
+4. Nối hai điểm bằng đường thẳng.
+
+> Khi có thể, ưu tiên hai giao điểm với các trục tọa độ.
+
+---
+
+### Dạng 5 – Tìm giao điểm với các trục
+
+Với:
+
+`y = ax + b`
+
+#### Giao với `Oy`
+
+Cho `x = 0`.
+
+#### Giao với `Ox`
+
+Cho `y = 0`.
+
+---
+
+### Dạng 6 – Xét đồng biến, nghịch biến
+
+Với `y = ax + b`:
+
+- `a > 0` → đồng biến
+- `a < 0` → nghịch biến
+
+---
+
+### Dạng 7 – Xét vị trí hai đường thẳng
+
+So sánh `a₁, a₂` và `b₁, b₂`.
+
+Không cần vẽ hình nếu đề chỉ hỏi quan hệ song song/cắt nhau/trùng nhau.
+
+---
+
+### Dạng 8 – Tìm giao điểm hai đường thẳng
+
+Giải phương trình:
+
+`a₁x + b₁ = a₂x + b₂`
+
+Sau đó tính `y`.
+
+---
+
+### Dạng 9 – Tìm tham số để hai đường thẳng song song
+
+Ví dụ:
+
+`d₁: y = (m + 1)x + 2`
+
+`d₂: y = 3x - 5`
+
+Để song song:
+
+`m + 1 = 3`
+
+`m = 2`
+
+và hai tung độ gốc phải khác nhau, ở đây `2 ≠ -5`, nên thỏa mãn.
+
+---
+
+### Dạng 10 – Tìm tham số để hai đường thẳng cắt nhau
+
+Điều kiện:
+
+`a₁ ≠ a₂`
+
+Ví dụ:
+
+`y = (m - 2)x + 1`
+
+và:
+
+`y = 3x + 4`
+
+Cắt nhau khi:
+
+`m - 2 ≠ 3`
+
+`m ≠ 5`.
+
+---
+
+## 🚀 6. Dạng bài thi vào lớp 10
 
 | Dạng bài | Mức ưu tiên |
 |---|:---:|
@@ -583,9 +594,9 @@ Ta thấy các giá trị tại `x` và `-x` bằng nhau.
 
 ---
 
-# ⚠️ 10. Lỗi sai thường gặp
+## ⚠️ 7. Lỗi sai thường gặp
 
-## ❌ Lỗi 1 – Đảo tọa độ
+### ❌ Lỗi 1 – Đảo tọa độ
 
 Điểm `A(2; -3)` không phải `A(-3; 2)`.
 
@@ -595,7 +606,7 @@ Luôn nhớ:
 
 ---
 
-## ❌ Lỗi 2 – Vẽ đường thẳng chỉ bằng một điểm
+### ❌ Lỗi 2 – Vẽ đường thẳng chỉ bằng một điểm
 
 Một điểm chưa xác định duy nhất một đường thẳng.
 
@@ -603,7 +614,7 @@ Cần ít nhất **hai điểm phân biệt**.
 
 ---
 
-## ❌ Lỗi 3 – Quên rằng `a ≠ 0`
+### ❌ Lỗi 3 – Quên rằng `a ≠ 0`
 
 Trong hàm bậc nhất:
 
@@ -617,7 +628,7 @@ Nếu `a = 0` thì `y = b` là hàm hằng.
 
 ---
 
-## ❌ Lỗi 4 – Nhầm điều kiện song song
+### ❌ Lỗi 4 – Nhầm điều kiện song song
 
 Chỉ `a₁ = a₂` chưa đủ để kết luận song song.
 
@@ -625,7 +636,7 @@ Nếu thêm `b₁ = b₂`, hai đường thẳng trùng nhau.
 
 ---
 
-## ❌ Lỗi 5 – Tìm giao điểm nhưng chỉ tìm `x`
+### ❌ Lỗi 5 – Tìm giao điểm nhưng chỉ tìm `x`
 
 Giao điểm phải có dạng:
 
@@ -635,7 +646,7 @@ Sau khi tìm `x`, phải tính tiếp `y`.
 
 ---
 
-## ❌ Lỗi 6 – Thay tọa độ sai vị trí
+### ❌ Lỗi 6 – Thay tọa độ sai vị trí
 
 Với điểm `M(x₀; y₀)` thuộc `y = ax + b`, phải thay:
 
@@ -643,7 +654,7 @@ Với điểm `M(x₀; y₀)` thuộc `y = ax + b`, phải thay:
 
 ---
 
-## ❌ Lỗi 7 – Nhầm đồng biến và nghịch biến
+### ❌ Lỗi 7 – Nhầm đồng biến và nghịch biến
 
 Dấu của `a` quyết định:
 
@@ -654,9 +665,9 @@ Không dùng dấu của `b` để kết luận.
 
 ---
 
-# 📝 11. Luyện tập theo 4 mức
+## 📝 8. Luyện tập
 
-## Mức 1 – Nhận biết
+### Mức 1 – Nhận biết
 
 1. Tính `f(2)` với `f(x) = 3x - 1`.
 2. Điểm `A(1; 4)` có thuộc `y = 3x + 1` không?
@@ -666,7 +677,7 @@ Không dùng dấu của `b` để kết luận.
 
 ---
 
-## Mức 2 – Thông hiểu
+### Mức 2 – Thông hiểu
 
 1. Vẽ đồ thị `y = 2x - 2`.
 2. Tìm giao điểm với hai trục của `y = -x + 3`.
@@ -676,7 +687,7 @@ Không dùng dấu của `b` để kết luận.
 
 ---
 
-## Mức 3 – Vận dụng
+### Mức 3 – Vận dụng
 
 1. Tìm `m` để hai đường thẳng `y = (m - 1)x + 2` và `y = 3x - 4` song song.
 2. Tìm `m` để hai đường thẳng trên cắt nhau.
@@ -686,7 +697,7 @@ Không dùng dấu của `b` để kết luận.
 
 ---
 
-## Mức 4 – Nâng cao / tổng hợp
+### Mức 4 – Nâng cao / tổng hợp
 
 1. Cho `d: y = (m + 1)x + 2m`. Tìm `m` để `d` đi qua điểm `A(1; 5)`.
 2. Tìm `m` để `d₁: y = (2m - 1)x + 3` song song với `d₂: y = 5x - 2`.
@@ -696,37 +707,37 @@ Không dùng dấu của `b` để kết luận.
 
 ---
 
-# ✅ 12. Tự kiểm tra
+## ✅ 9. Tự kiểm tra
 
-## Mini quiz
+### Mini quiz
 
-### Câu 1
+#### Câu 1
 
 Hệ số góc của `y = -3x + 2` là:
 
-A. `2`  
-B. `-3`  
-C. `3`  
+A. `2`
+B. `-3`
+C. `3`
 D. `-2`
 
-### Câu 2
+#### Câu 2
 
 Hai đường thẳng `y = 2x + 1` và `y = 2x - 5`:
 
-A. cắt nhau  
-B. song song  
-C. trùng nhau  
+A. cắt nhau
+B. song song
+C. trùng nhau
 D. vuông góc
 
-### Câu 3
+#### Câu 3
 
 Điểm `A(2; 7)` có thuộc `y = 3x + 1` không?
 
-### Câu 4
+#### Câu 4
 
 Hàm số `y = -4x + 5` là đồng biến hay nghịch biến?
 
-### Câu 5
+#### Câu 5
 
 Tìm giao điểm của:
 
@@ -736,7 +747,7 @@ và:
 
 `y = -x + 4`.
 
-### Đáp án
+#### Đáp án
 
 1. B
 2. B
@@ -744,7 +755,7 @@ và:
 4. Nghịch biến
 5. `I(1; 3)`
 
-### Tự đánh giá
+#### Tự đánh giá
 
 - 5/5: nắm chắc nền tảng
 - 4/5: tốt, nên kiểm tra lại lỗi nhỏ
@@ -753,7 +764,7 @@ và:
 
 ---
 
-## 🔄 13. Liên kết Roadmap
+## 🔄 10. Liên kết Roadmap
 
 ### Kiến thức nên ôn trước
 
@@ -784,7 +795,7 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ---
 
-## 🏁 14. Điều kiện hoàn thành
+## 🏁 11. Điều kiện hoàn thành
 
 Chuyên đề được xem là hoàn thành khi học sinh:
 
