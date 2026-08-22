@@ -14,6 +14,138 @@ Bản đồ kiến thức chi tiết của chuyên đề sẽ được bổ sung
 
 ---
 
+## Minh họa trực quan
+
+### 1. Hình thang
+
+<p align="center">
+  <img src="../../assets/geometry/16/16-hinh-thang.svg"
+       alt="Minh họa hình thang"
+       width="430">
+</p>
+
+> Hình thang là tứ giác có **một cặp cạnh đối song song**.
+
+Hai cạnh song song được gọi là **hai đáy**; hai cạnh còn lại là **hai cạnh bên**.
+
+---
+
+### 2. Hình bình hành
+
+<p align="center">
+  <img src="../../assets/geometry/16/16-hinh-binh-hanh.svg"
+       alt="Minh họa hình bình hành"
+       width="430">
+</p>
+
+> Hình bình hành là tứ giác có **hai cặp cạnh đối song song**.
+
+Các tính chất quan trọng:
+
+- các cạnh đối bằng nhau;
+- các góc đối bằng nhau;
+- hai đường chéo cắt nhau tại trung điểm của mỗi đường.
+
+---
+
+### 3. Hình chữ nhật
+
+<p align="center">
+  <img src="../../assets/geometry/16/16-hinh-chu-nhat.svg"
+       alt="Minh họa hình chữ nhật"
+       width="430">
+</p>
+
+> Hình chữ nhật là hình bình hành có **bốn góc vuông**.
+
+Ngoài các tính chất của hình bình hành, hình chữ nhật còn có:
+
+- hai đường chéo bằng nhau;
+- hai đường chéo cắt nhau tại trung điểm của mỗi đường.
+
+---
+
+### 4. Hình thoi
+
+<p align="center">
+  <img src="../../assets/geometry/16/16-hinh-thoi.svg"
+       alt="Minh họa hình thoi"
+       width="430">
+</p>
+
+> Hình thoi là hình bình hành có **bốn cạnh bằng nhau**.
+
+Các tính chất nổi bật:
+
+- hai đường chéo vuông góc với nhau;
+- mỗi đường chéo là phân giác của các góc mà nó đi qua;
+- hai đường chéo cắt nhau tại trung điểm của mỗi đường.
+
+---
+
+### 5. Hình vuông
+
+<p align="center">
+  <img src="../../assets/geometry/16/16-hinh-vuong.svg"
+       alt="Minh họa hình vuông"
+       width="400">
+</p>
+
+> Hình vuông vừa là **hình chữ nhật**, vừa là **hình thoi**.
+
+Vì vậy hình vuông có đồng thời:
+
+- bốn cạnh bằng nhau;
+- bốn góc vuông;
+- hai đường chéo bằng nhau;
+- hai đường chéo vuông góc;
+- hai đường chéo cắt nhau tại trung điểm;
+- hai đường chéo là các đường phân giác của góc.
+
+---
+
+### Quan hệ giữa các tứ giác đặc biệt
+
+```text
+                    HÌNH VUÔNG
+                   /          \
+          HÌNH CHỮ NHẬT      HÌNH THOI
+                   \          /
+                 HÌNH BÌNH HÀNH
+                        |
+                      TỨ GIÁC
+
+HÌNH THANG ───────────────────┘
+```
+
+Điểm cần nhớ:
+
+> Một hình vuông luôn là hình chữ nhật và hình thoi, nhưng một hình chữ nhật hoặc hình thoi chưa chắc là hình vuông.
+
+---
+
+### Bảng so sánh nhanh
+
+| Hình | Cạnh đối song song | Cạnh bằng nhau | Góc vuông | Đường chéo |
+|---|---|---|---|---|
+| Hình thang | 1 cặp | Không nhất thiết | Không nhất thiết | Không có tính chất chung đặc biệt |
+| Hình bình hành | 2 cặp | Các cạnh đối bằng nhau | Không nhất thiết | Cắt nhau tại trung điểm |
+| Hình chữ nhật | 2 cặp | Các cạnh đối bằng nhau | 4 góc | Bằng nhau và cắt nhau tại trung điểm |
+| Hình thoi | 2 cặp | 4 cạnh bằng nhau | Không nhất thiết | Vuông góc, cắt nhau tại trung điểm |
+| Hình vuông | 2 cặp | 4 cạnh bằng nhau | 4 góc | Bằng nhau, vuông góc, cắt nhau tại trung điểm |
+
+---
+
+### Mẹo nhận dạng
+
+- Có **một cặp cạnh đối song song** → nghĩ đến hình thang.
+- Có **hai cặp cạnh đối song song** → nghĩ đến hình bình hành.
+- Hình bình hành + **4 góc vuông** → hình chữ nhật.
+- Hình bình hành + **4 cạnh bằng nhau** → hình thoi.
+- Có cả **4 góc vuông + 4 cạnh bằng nhau** → hình vuông.
+
+---
+
 ## 🎯 2. Mục tiêu cần đạt
 
 Sau khi hoàn thành chuyên đề, học sinh cần:

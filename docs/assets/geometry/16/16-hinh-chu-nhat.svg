@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="120px" height="90px">
+<g stroke="black" stroke-width="1" fill="none">
+	<path id="a" d="M15,5 15,15 5,15" />
+	<use xlink:href="#a" transform="translate(110,0) rotate(90,5,5)"/>
+	<use xlink:href="#a" transform="translate(0,80) rotate(-90,5,5)"/>
+	<use xlink:href="#a" transform="translate(110,80) rotate(180,5,5)"/>
+</g>
+<g stroke-width="3">
+	<path d="M5,5 H116 M4,85 H115" stroke="red" />
+	<path d="M5,3.5 V86.5 M115,3.5 V86.5" stroke="green" />
+</g>
+</svg>
