@@ -238,9 +238,9 @@ Từ điểm `P` ngoài đường tròn, tiếp tuyến `PT` và cát tuyến `P
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** [14 – Tam giác](../14-tam-giac/), [17 – Thales và đồng dạng](../17-thales-dong-dang/), [18 – Hệ thức lượng](../18-he-thuc-luong/)
+- **Kiến thức nên ôn trước:** [14 – Tam giác](../14-tam-giac/index.md), [17 – Thales và đồng dạng](../17-thales-dong-dang/index.md), [18 – Hệ thức lượng](../18-he-thuc-luong/index.md)
 - **Liên hệ mạnh:** vuông góc, đồng dạng, góc, tam giác vuông.
-- **Chuyên đề sử dụng tiếp:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/), [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/)
+- **Chuyên đề sử dụng tiếp:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md), [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
 ---
 
@@ -358,9 +358,9 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [14 – Tam giác](../14-tam-giac/), [17 – Thales và đồng dạng](../17-thales-dong-dang/), [18 – Hệ thức lượng](../18-he-thuc-luong/)
-- **→ Tiếp theo:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/)
-- **→ Liên hệ:** [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/)
+- **← Trước:** [14 – Tam giác](../14-tam-giac/index.md), [17 – Thales và đồng dạng](../17-thales-dong-dang/index.md), [18 – Hệ thức lượng](../18-he-thuc-luong/index.md)
+- **→ Tiếp theo:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
+- **→ Liên hệ:** [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 

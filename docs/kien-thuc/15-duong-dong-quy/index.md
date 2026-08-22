@@ -207,9 +207,9 @@ Vị trí của `O`:
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** [14 – Tam giác](../14-tam-giac/)
+- **Kiến thức nên ôn trước:** [14 – Tam giác](../14-tam-giac/index.md)
 - **Liên hệ mạnh:** đường trung trực, phân giác, trung điểm, vuông góc.
-- **Chuyên đề sử dụng tiếp:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/), [19 – Đường tròn](../19-duong-tron/).
+- **Chuyên đề sử dụng tiếp:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md), [19 – Đường tròn](../19-duong-tron/index.md).
 
 ---
 
@@ -315,9 +315,9 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [14 – Tam giác](../14-tam-giac/)
-- **→ Tiếp theo:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/)
-- **→ Liên hệ:** [19 – Đường tròn](../19-duong-tron/)
+- **← Trước:** [14 – Tam giác](../14-tam-giac/index.md)
+- **→ Tiếp theo:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md)
+- **→ Liên hệ:** [19 – Đường tròn](../19-duong-tron/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 

@@ -395,7 +395,7 @@ Mục tiêu không chỉ là tăng điểm mà còn là **giảm lỗi lặp l�
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** toàn bộ hệ thống từ [01 – Bản đồ chương trình](../01-ban-do-chuong-trinh/) đến [24 – Bài toán thực tế](../24-bai-toan-thuc-te/)
+- **Kiến thức nên ôn trước:** toàn bộ hệ thống từ [01 – Bản đồ chương trình](../01-ban-do-chuong-trinh/index.md) đến [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
 - **Vai trò:** tổng hợp, kết nối và chuyển toàn bộ kiến thức thành chiến lược ôn thi.
 - **Chuyên đề sử dụng tiếp:** không có; đây là chuyên đề kết thúc Roadmap.
 
@@ -534,7 +534,7 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Hệ thống kiến thức:** [01 – Bản đồ chương trình](../01-ban-do-chuong-trinh/) → [24 – Bài toán thực tế](../24-bai-toan-thuc-te/)
+- **← Hệ thống kiến thức:** [01 – Bản đồ chương trình](../01-ban-do-chuong-trinh/index.md) → [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
 - **→ Tiếp theo:** quay lại các chuyên đề được xếp nhóm ưu tiên A/B theo kết quả luyện đề.
 - **🏁 Kết thúc Roadmap:** dùng chuyên đề này như bảng điều khiển ôn tập.
 

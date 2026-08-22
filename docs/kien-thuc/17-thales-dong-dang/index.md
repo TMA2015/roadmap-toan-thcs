@@ -252,9 +252,9 @@ Ba cặp cạnh tương ứng tỉ lệ.
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** [14 – Tam giác](../14-tam-giac/), [16 – Tứ giác](../16-tu-giac/)
+- **Kiến thức nên ôn trước:** [14 – Tam giác](../14-tam-giac/index.md), [16 – Tứ giác](../16-tu-giac/index.md)
 - **Liên hệ mạnh:** góc so le trong, đồng vị, song song, trung điểm.
-- **Chuyên đề sử dụng tiếp:** [18 – Hệ thức lượng](../18-he-thuc-luong/), [19 – Đường tròn](../19-duong-tron/), [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/)
+- **Chuyên đề sử dụng tiếp:** [18 – Hệ thức lượng](../18-he-thuc-luong/index.md), [19 – Đường tròn](../19-duong-tron/index.md), [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
 
 ---
 
@@ -364,9 +364,9 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [14 – Tam giác](../14-tam-giac/), [16 – Tứ giác](../16-tu-giac/)
-- **→ Tiếp theo:** [18 – Hệ thức lượng](../18-he-thuc-luong/)
-- **→ Liên hệ:** [19 – Đường tròn](../19-duong-tron/), [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/)
+- **← Trước:** [14 – Tam giác](../14-tam-giac/index.md), [16 – Tứ giác](../16-tu-giac/index.md)
+- **→ Tiếp theo:** [18 – Hệ thức lượng](../18-he-thuc-luong/index.md)
+- **→ Liên hệ:** [19 – Đường tròn](../19-duong-tron/index.md), [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 

@@ -234,9 +234,9 @@ Nếu điểm quan sát cao hơn mặt đất, cần cộng hoặc trừ chiều
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** [14 – Tam giác](../14-tam-giac/), [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/)
+- **Kiến thức nên ôn trước:** [14 – Tam giác](../14-tam-giac/index.md), [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md)
 - **Liên hệ mạnh:** tam giác vuông, Pythagore, đồng dạng.
-- **Chuyên đề sử dụng tiếp:** [19 – Đường tròn](../19-duong-tron/), [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/), [24 – Bài toán thực tế](../24-bai-toan-thuc-te/)
+- **Chuyên đề sử dụng tiếp:** [19 – Đường tròn](../19-duong-tron/index.md), [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md), [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
 
 ---
 
@@ -341,9 +341,9 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [14 – Tam giác](../14-tam-giac/), [17 – Thales và đồng dạng](../17-thales-dong-dang/)
-- **→ Tiếp theo:** [19 – Đường tròn](../19-duong-tron/)
-- **→ Liên hệ:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/), [24 – Bài toán thực tế](../24-bai-toan-thuc-te/)
+- **← Trước:** [14 – Tam giác](../14-tam-giac/index.md), [17 – Thales và đồng dạng](../17-thales-dong-dang/index.md)
+- **→ Tiếp theo:** [19 – Đường tròn](../19-duong-tron/index.md)
+- **→ Liên hệ:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md), [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 

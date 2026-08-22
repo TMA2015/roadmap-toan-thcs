@@ -278,9 +278,9 @@ Dấu hiệu nhận biết:
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** [13 – Góc và quan hệ giữa các đường thẳng](../13-goc-va-duong-thang/), [14 – Tam giác](../14-tam-giac/)
+- **Kiến thức nên ôn trước:** [13 – Góc và quan hệ giữa các đường thẳng](../13-goc-va-duong-thang/index.md), [14 – Tam giác](../14-tam-giac/index.md)
 - **Liên hệ mạnh:** song song, vuông góc, trung điểm, phân giác.
-- **Chuyên đề sử dụng tiếp:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/), [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/)
+- **Chuyên đề sử dụng tiếp:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md), [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
 
 ---
 
@@ -398,9 +398,9 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [13 – Góc và đường thẳng](../13-goc-va-duong-thang/), [14 – Tam giác](../14-tam-giac/)
-- **→ Tiếp theo:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/)
-- **→ Liên hệ:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/)
+- **← Trước:** [13 – Góc và đường thẳng](../13-goc-va-duong-thang/index.md), [14 – Tam giác](../14-tam-giac/index.md)
+- **→ Tiếp theo:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md)
+- **→ Liên hệ:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 

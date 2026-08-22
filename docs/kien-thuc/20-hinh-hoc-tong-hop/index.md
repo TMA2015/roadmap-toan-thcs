@@ -322,8 +322,8 @@ Khi giải bài thực tế, luôn ghi đơn vị diện tích hoặc thể tíc
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** [14 – Tam giác](../14-tam-giac/), [15 – Các đường đồng quy](../15-duong-dong-quy/), [16 – Tứ giác](../16-tu-giac/), [17 – Thales và đồng dạng](../17-thales-dong-dang/), [18 – Hệ thức lượng](../18-he-thuc-luong/), [19 – Đường tròn](../19-duong-tron/)
-- **Chuyên đề sử dụng tiếp:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/), [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/)
+- **Kiến thức nên ôn trước:** [14 – Tam giác](../14-tam-giac/index.md), [15 – Các đường đồng quy](../15-duong-dong-quy/index.md), [16 – Tứ giác](../16-tu-giac/index.md), [17 – Thales và đồng dạng](../17-thales-dong-dang/index.md), [18 – Hệ thức lượng](../18-he-thuc-luong/index.md), [19 – Đường tròn](../19-duong-tron/index.md)
+- **Chuyên đề sử dụng tiếp:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md), [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
 ---
 
@@ -440,9 +440,9 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [14 – Tam giác](../14-tam-giac/) → [19 – Đường tròn](../19-duong-tron/)
-- **→ Tiếp theo:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/)
-- **→ Tổng hợp cuối:** [25 – Ôn thi vào 10](../25-tong-hop-on-thi-10/)
+- **← Trước:** [14 – Tam giác](../14-tam-giac/index.md) → [19 – Đường tròn](../19-duong-tron/index.md)
+- **→ Tiếp theo:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
+- **→ Tổng hợp cuối:** [25 – Ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 

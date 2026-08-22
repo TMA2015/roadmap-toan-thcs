@@ -253,9 +253,9 @@ Dữ liệu tốt cần:
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** [01 – Bản đồ chương trình](../01-ban-do-chuong-trinh/)
+- **Kiến thức nên ôn trước:** [01 – Bản đồ chương trình](../01-ban-do-chuong-trinh/index.md)
 - **Liên hệ mạnh:** tỉ số, phần trăm, đọc bảng và biểu đồ.
-- **Chuyên đề sử dụng tiếp:** [22 – Các đại lượng đặc trưng của dữ liệu](../22-dai-luong-dac-trung/), [24 – Bài toán thực tế](../24-bai-toan-thuc-te/)
+- **Chuyên đề sử dụng tiếp:** [22 – Các đại lượng đặc trưng của dữ liệu](../22-dai-luong-dac-trung/index.md), [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
 
 ---
 
@@ -367,9 +367,9 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [01 – Bản đồ chương trình](../01-ban-do-chuong-trinh/)
-- **→ Tiếp theo:** [22 – Các đại lượng đặc trưng](../22-dai-luong-dac-trung/)
-- **→ Liên hệ:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/)
+- **← Trước:** [01 – Bản đồ chương trình](../01-ban-do-chuong-trinh/index.md)
+- **→ Tiếp theo:** [22 – Các đại lượng đặc trưng](../22-dai-luong-dac-trung/index.md)
+- **→ Liên hệ:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 

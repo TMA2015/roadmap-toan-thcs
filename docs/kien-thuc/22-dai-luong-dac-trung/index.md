@@ -272,9 +272,9 @@ Không nên chỉ tính toán; cần giải thích vì sao đại lượng đó 
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** [21 – Thống kê và thu thập dữ liệu](../21-thong-ke/)
+- **Kiến thức nên ôn trước:** [21 – Thống kê và thu thập dữ liệu](../21-thong-ke/index.md)
 - **Liên hệ mạnh:** bảng tần số, tần suất, phần trăm.
-- **Chuyên đề sử dụng tiếp:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/), [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/)
+- **Chuyên đề sử dụng tiếp:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md), [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
 ---
 
@@ -390,9 +390,9 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [21 – Thống kê và thu thập dữ liệu](../21-thong-ke/)
-- **→ Tiếp theo:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/)
-- **→ Tổng hợp:** [25 – Ôn thi vào 10](../25-tong-hop-on-thi-10/)
+- **← Trước:** [21 – Thống kê và thu thập dữ liệu](../21-thong-ke/index.md)
+- **→ Tiếp theo:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
+- **→ Tổng hợp:** [25 – Ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 

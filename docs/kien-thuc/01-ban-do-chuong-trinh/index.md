@@ -188,7 +188,7 @@ Nguyên tắc:
 ## 🔗 4. Kiến thức liên quan
 
 - **Kiến thức nên ôn trước:** không yêu cầu; đây là điểm bắt đầu của hệ thống.
-- **Chuyên đề sử dụng tiếp:** bắt đầu từ [02 – Số và phép tính](../02-so-hoc/), sau đó đi theo mạch phù hợp trong [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
+- **Chuyên đề sử dụng tiếp:** bắt đầu từ [02 – Số và phép tính](../02-so-va-phep-tinh/index.md), sau đó đi theo mạch phù hợp trong [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
 
@@ -235,7 +235,7 @@ Khi ôn vào 10, dùng bản đồ này để:
 1. xác định câu sai thuộc chuyên đề nào;
 2. tìm kiến thức tiên quyết cần ôn lại;
 3. tránh học dàn trải;
-4. kết nối với [Chuyên đề 25 – Chiến lược ôn thi](../25-tong-hop-on-thi-10/).
+4. kết nối với [Chuyên đề 25 – Chiến lược ôn thi](../25-tong-hop-on-thi-10/index.md).
 
 Mức ưu tiên: **⭐⭐⭐⭐⭐** vì đây là bản đồ điều hướng toàn bộ hệ thống.
 
@@ -302,9 +302,9 @@ Hãy tự trả lời không nhìn tài liệu:
 ## 🔄 10. Liên kết Roadmap
 
 - **← Trước:** không có; đây là điểm bắt đầu.
-- **→ Bắt đầu học:** [02 – Số và phép tính](../02-so-hoc/)
+- **→ Bắt đầu học:** [02 – Số và phép tính](../02-so-va-phep-tinh/index.md)
 - **→ Bản thiết kế đầy đủ:** [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md)
-- **→ Điểm kết thúc:** [25 – Tổng hợp & chiến lược ôn thi vào 10](../25-tong-hop-on-thi-10/)
+- **→ Điểm kết thúc:** [25 – Tổng hợp & chiến lược ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 

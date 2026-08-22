@@ -389,9 +389,9 @@ Sau khi có đáp số, cần kiểm tra:
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** các chuyên đề nền từ [02 – Số và phép tính](../02-so-hoc/) đến [23 – Xác suất](../23-xac-suat/)
+- **Kiến thức nên ôn trước:** các chuyên đề nền từ [02 – Số và phép tính](../02-so-va-phep-tinh/index.md) đến [23 – Xác suất](../23-xac-suat/index.md)
 - **Liên hệ mạnh:** phương trình, hệ phương trình, phần trăm, lượng giác, thống kê, xác suất.
-- **Chuyên đề sử dụng tiếp:** [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/)
+- **Chuyên đề sử dụng tiếp:** [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
 ---
 
@@ -512,8 +512,8 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [02 – Số và phép tính](../02-so-hoc/) → [23 – Xác suất](../23-xac-suat/)
-- **→ Tiếp theo:** [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/)
+- **← Trước:** [02 – Số và phép tính](../02-so-va-phep-tinh/index.md) → [23 – Xác suất](../23-xac-suat/index.md)
+- **→ Tiếp theo:** [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
