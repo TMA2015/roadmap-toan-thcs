@@ -1,0 +1,2758 @@
+
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Hệ thống kiến thức Toán THCS lớp 6 đến lớp 9 và chuẩn bị thi vào lớp 10">
+      
+      
+        <meta name="author" content="Roadmap Toán THCS">
+      
+      
+      
+        <link rel="prev" href="../07-phan-thuc-dai-so/">
+      
+      
+        <link rel="next" href="../09-he-phuong-trinh/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>08. Phương trình – Bất phương trình - Roadmap Toán THCS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#08-phuong-trinh-va-bat-phuong-trinh" class="md-skip">
+          Bỏ qua
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Đầu trang">
+    <a href="../.." title="Roadmap Toán THCS" class="md-header__button md-logo" aria-label="Roadmap Toán THCS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Roadmap Toán THCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              08. Phương trình – Bất phương trình
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Tìm kiếm" placeholder="Tìm kiếm" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Tìm kiếm">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Xoá" aria-label="Xoá" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Trang chủ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../roadmap/" class="md-tabs__link">
+          
+  
+  
+  Roadmap
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../huong-dan/lo-trinh-tu-hoc/" class="md-tabs__link">
+          
+  
+  
+  Hướng dẫn
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Kiến thức
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Thanh điều hướng" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Roadmap Toán THCS" class="md-nav__button md-logo" aria-label="Roadmap Toán THCS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Roadmap Toán THCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trang chủ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Roadmap
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bản đồ chương trình
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/blueprint-25-chuyen-de/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blueprint 25 chuyên đề
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/ma-tran-kien-thuc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ma trận kiến thức
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hướng dẫn
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hướng dẫn
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/lo-trinh-tu-hoc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lộ trình tự học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/cau-truc-chuyen-de/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cấu trúc chuyên đề
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kiến thức
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Kiến thức
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tổng quan 25 chuyên đề
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tổng quan
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tổng quan
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-ban-do-chuong-trinh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Bản đồ chương trình Toán THCS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Số và Đại số
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Số và Đại số
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-so-va-phep-tinh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Số và phép tính
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-ti-le-ti-le-thuc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Tỉ lệ – Tỉ lệ thức
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-bieu-thuc-dai-so/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Biểu thức đại số
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-7-hang-dang-thuc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. 7 Hằng đẳng thức
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-phan-tich-da-thuc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Phân tích đa thức
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-phan-thuc-dai-so/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Phân thức đại số
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Phương trình – Bất phương trình
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Phương trình – Bất phương trình
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Mục lục
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-ban-o-kien-thuc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧭 1. Bản đồ kiến thức
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-muc-tieu-can-at" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 2. Mục tiêu cần đạt
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 2. Mục tiêu cần đạt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bat-buoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bắt buộc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#van-dung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vận dụng
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-kien-thuc-cot-loi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📖 3. Kiến thức cốt lõi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📖 3. Kiến thức cốt lõi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-phuong-trinh-bac-nhat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Phương trình bậc nhất
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-phuong-trinh-tich" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Phương trình tích
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-phuong-trinh-chua-an-o-mau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Phương trình chứa ẩn ở mẫu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-bat-phuong-trinh-bac-nhat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4. Bất phương trình bậc nhất
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-he-bat-phuong-trinh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5. Hệ bất phương trình
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-kien-thuc-lien-quan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 4. Kiến thức liên quan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-cac-dang-bai-can-nam-vung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 5. Các dạng bài cần nắm vững
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 5. Các dạng bài cần nắm vững">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vi-du-mau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ví dụ mẫu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ví dụ mẫu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vi-du-1-phuong-trinh-bac-nhat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ví dụ 1 — Phương trình bậc nhất
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-du-2-phuong-trinh-tich" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ví dụ 2 — Phương trình tích
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-du-3-bat-phuong-trinh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ví dụ 3 — Bất phương trình
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-dang-bai-thi-vao-lop-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 6. Dạng bài thi vào lớp 10
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-loi-sai-thuong-gap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 7. Lỗi sai thường gặp
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-luyen-tap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 8. Luyện tập
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 8. Luyện tập">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#muc-1-nhan-biet-cung-co" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mức 1 – Nhận biết / củng cố
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muc-2-thong-hieu-thanh-thao-dang-bai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mức 2 – Thông hiểu / thành thạo dạng bài
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muc-3-van-dung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mức 3 – Vận dụng
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muc-4-nang-cao-thi-vao-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mức 4 – Nâng cao / thi vào 10
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-tu-kiem-tra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 9. Tự kiểm tra
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-lien-ket-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔄 10. Liên kết Roadmap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-ieu-kien-hoan-thanh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏁 11. Điều kiện hoàn thành
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-he-phuong-trinh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Hệ phương trình
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-ham-so-do-thi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Hàm số và đồ thị
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-can-thuc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Căn thức
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-phuong-trinh-bac-hai-viete/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Phương trình bậc hai & Viète
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hình học
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hình học
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-goc-va-duong-thang/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Góc và đường thẳng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-tam-giac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Tam giác
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-duong-dong-quy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. Các đường đồng quy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-tu-giac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. Tứ giác
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-thales-dong-dang/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17. Thales và đồng dạng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-he-thuc-luong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18. Hệ thức lượng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-duong-tron/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    19. Đường tròn
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-hinh-hoc-tong-hop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20. Hình học tổng hợp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thống kê – Xác suất
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Thống kê – Xác suất
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-thong-ke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    21. Thống kê
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-dai-luong-dac-trung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    22. Đại lượng đặc trưng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-xac-suat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    23. Xác suất
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tổng hợp – Ứng dụng
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tổng hợp – Ứng dụng
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-bai-toan-thuc-te/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    24. Bài toán thực tế
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-tong-hop-on-thi-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    25. Tổng hợp & ôn thi vào 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Mục lục
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-ban-o-kien-thuc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧭 1. Bản đồ kiến thức
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-muc-tieu-can-at" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 2. Mục tiêu cần đạt
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 2. Mục tiêu cần đạt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bat-buoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bắt buộc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#van-dung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vận dụng
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-kien-thuc-cot-loi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📖 3. Kiến thức cốt lõi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📖 3. Kiến thức cốt lõi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-phuong-trinh-bac-nhat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Phương trình bậc nhất
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-phuong-trinh-tich" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Phương trình tích
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-phuong-trinh-chua-an-o-mau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Phương trình chứa ẩn ở mẫu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-bat-phuong-trinh-bac-nhat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4. Bất phương trình bậc nhất
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-he-bat-phuong-trinh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5. Hệ bất phương trình
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-kien-thuc-lien-quan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 4. Kiến thức liên quan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-cac-dang-bai-can-nam-vung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 5. Các dạng bài cần nắm vững
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 5. Các dạng bài cần nắm vững">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vi-du-mau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ví dụ mẫu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ví dụ mẫu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vi-du-1-phuong-trinh-bac-nhat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ví dụ 1 — Phương trình bậc nhất
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-du-2-phuong-trinh-tich" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ví dụ 2 — Phương trình tích
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vi-du-3-bat-phuong-trinh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ví dụ 3 — Bất phương trình
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-dang-bai-thi-vao-lop-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 6. Dạng bài thi vào lớp 10
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-loi-sai-thuong-gap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 7. Lỗi sai thường gặp
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-luyen-tap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 8. Luyện tập
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 8. Luyện tập">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#muc-1-nhan-biet-cung-co" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mức 1 – Nhận biết / củng cố
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muc-2-thong-hieu-thanh-thao-dang-bai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mức 2 – Thông hiểu / thành thạo dạng bài
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muc-3-van-dung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mức 3 – Vận dụng
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muc-4-nang-cao-thi-vao-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mức 4 – Nâng cao / thi vào 10
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-tu-kiem-tra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 9. Tự kiểm tra
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-lien-ket-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔄 10. Liên kết Roadmap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-ieu-kien-hoan-thanh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏁 11. Điều kiện hoàn thành
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="08-phuong-trinh-va-bat-phuong-trinh">08. Phương trình và bất phương trình</h1>
+<blockquote>
+<p><strong>Trạng thái:</strong> Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.</p>
+<p><strong>Lớp trọng tâm:</strong> 8–9
+<strong>Mạch kiến thức:</strong> Đại số
+<strong>Mức ưu tiên:</strong> ⭐⭐⭐⭐⭐</p>
+<p><strong>Vai trò:</strong> Chuyên đề trọng tâm của Đại số THCS, kết nối trực tiếp với hệ phương trình, hàm số và bài toán thực tế.</p>
+</blockquote>
+<p><strong>Lớp trọng tâm:</strong> 8–9
+<strong>Mức độ ưu tiên:</strong> ⭐⭐⭐⭐⭐
+<strong>Mục tiêu:</strong> Nắm chắc các kỹ thuật giải phương trình, bất phương trình và biết nhận dạng dạng bài trước khi chọn phương pháp.</p>
+<hr />
+<h2 id="1-ban-o-kien-thuc">🧭 1. Bản đồ kiến thức</h2>
+<div class="highlight"><pre><span></span><code>PHƯƠNG TRÌNH &amp; BẤT PHƯƠNG TRÌNH
+│
+├── Phương trình bậc nhất
+│   ├── Quy tắc biến đổi
+│   └── Biện luận nghiệm cơ bản
+│
+├── Phương trình tích
+│   ├── Đưa về dạng tích
+│   └── Dùng tính chất tích bằng 0
+│
+├── Phương trình chứa ẩn ở mẫu
+│   ├── Điều kiện xác định
+│   ├── Quy đồng / khử mẫu
+│   └── Đối chiếu điều kiện
+│
+├── Bất phương trình bậc nhất
+│   ├── Quy tắc biến đổi
+│   └── Đổi chiều khi nhân/chia số âm
+│
+├── Hệ bất phương trình
+│   └── Giao các tập nghiệm
+│
+└── Bài toán thực tế
+    ├── Lập phương trình
+    └── Lập bất phương trình
+</code></pre></div>
+<h2 id="2-muc-tieu-can-at">🎯 2. Mục tiêu cần đạt</h2>
+<h3 id="bat-buoc">Bắt buộc</h3>
+<ul>
+<li>Hiểu nghiệm của phương trình và bất phương trình.</li>
+<li>Biết các phép biến đổi tương đương cơ bản.</li>
+<li>Giải thành thạo phương trình bậc nhất một ẩn.</li>
+<li>Nhận dạng và giải phương trình tích.</li>
+<li>Giải phương trình chứa ẩn ở mẫu đúng quy trình.</li>
+<li>Giải bất phương trình bậc nhất.</li>
+<li>Biết biểu diễn tập nghiệm trên trục số.</li>
+</ul>
+<h3 id="van-dung">Vận dụng</h3>
+<ul>
+<li>Kết hợp nhiều phép biến đổi.</li>
+<li>Giải bài toán bằng cách lập phương trình/bất phương trình.</li>
+<li>Kiểm tra điều kiện và loại nghiệm không phù hợp.</li>
+<li>Chuyển đổi linh hoạt giữa biểu thức, phương trình và bài toán thực tế.</li>
+</ul>
+<hr />
+<h2 id="3-kien-thuc-cot-loi">📖 3. Kiến thức cốt lõi</h2>
+<h3 id="31-phuong-trinh-bac-nhat">3.1. Phương trình bậc nhất</h3>
+<p>Dạng tổng quát:</p>
+<div class="arithmatex">\[ax+b=0,\quad a\ne0\]</div>
+<p>Nghiệm:</p>
+<div class="arithmatex">\[x=-\frac ba\]</div>
+<p><strong>Quy trình:</strong> thu gọn → chuyển vế → chia hệ số của <span class="arithmatex">\(x\)</span> → kiểm tra nếu cần.</p>
+<h3 id="32-phuong-trinh-tich">3.2. Phương trình tích</h3>
+<p>Nếu:</p>
+<div class="arithmatex">\[A(x)B(x)=0\]</div>
+<p>thì:</p>
+<div class="arithmatex">\[A(x)=0\quad\text{hoặc}\quad B(x)=0.\]</div>
+<p>Điểm quan trọng là phải <strong>đưa phương trình về dạng tích</strong> trước khi áp dụng tính chất.</p>
+<h3 id="33-phuong-trinh-chua-an-o-mau">3.3. Phương trình chứa ẩn ở mẫu</h3>
+<p>Quy trình bắt buộc:</p>
+<ol>
+<li>Tìm <strong>điều kiện xác định</strong>.</li>
+<li>Quy đồng hoặc nhân hai vế với mẫu chung phù hợp.</li>
+<li>Giải phương trình sau khi khử mẫu.</li>
+<li>Đối chiếu nghiệm với điều kiện xác định.</li>
+<li>Kết luận.</li>
+</ol>
+<h3 id="34-bat-phuong-trinh-bac-nhat">3.4. Bất phương trình bậc nhất</h3>
+<p>Khi nhân hoặc chia hai vế với <strong>số âm</strong>, phải <strong>đổi chiều bất phương trình</strong>.</p>
+<p>Ví dụ:</p>
+<div class="arithmatex">\[-2x&gt;6\Rightarrow x&lt;-3.\]</div>
+<h3 id="35-he-bat-phuong-trinh">3.5. Hệ bất phương trình</h3>
+<p>Giải từng bất phương trình rồi lấy <strong>giao</strong> các tập nghiệm.</p>
+<hr />
+<h2 id="4-kien-thuc-lien-quan">🔗 4. Kiến thức liên quan</h2>
+<p><strong>Cần nắm trước:</strong></p>
+<ul>
+<li>Biểu thức đại số</li>
+<li>Phân tích đa thức thành nhân tử</li>
+<li>Phân thức đại số</li>
+<li>Biến đổi và rút gọn biểu thức</li>
+</ul>
+<p><strong>Học tiếp / liên hệ:</strong></p>
+<ul>
+<li>Hệ phương trình bậc nhất hai ẩn</li>
+<li>Hàm số và đồ thị</li>
+<li>Phương trình bậc hai</li>
+<li>Bài toán thực tế và mô hình hóa</li>
+</ul>
+<p><strong>Mạch kiến thức:</strong></p>
+<p><code>04 Biểu thức</code> → <code>06 Phân tích đa thức</code> → <strong><code>08 Phương trình &amp; bất phương trình</code></strong> → <code>09 Hệ phương trình</code> / <code>10 Hàm số</code> → <code>24 Mô hình hóa</code>.</p>
+<hr />
+<h2 id="5-cac-dang-bai-can-nam-vung">🧩 5. Các dạng bài cần nắm vững</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Mức 1 — Nhận biết</label><label for="__tabbed_1_2">Mức 2 — Thông hiểu</label><label for="__tabbed_1_3">Mức 3 — Vận dụng</label><label for="__tabbed_1_4">Mức 4 — Nâng cao</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Giải phương trình bậc nhất.</li>
+<li>Nhận dạng phương trình tích.</li>
+<li>Tìm điều kiện xác định.</li>
+<li>Giải bất phương trình đơn giản.</li>
+<li>Biểu diễn tập nghiệm trên trục số.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Phương trình cần thu gọn nhiều bước.</li>
+<li>Phương trình tích sau khi phân tích nhân tử.</li>
+<li>Phương trình chứa ẩn ở mẫu.</li>
+<li>Hệ bất phương trình.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Phương trình kết hợp nhiều kỹ thuật.</li>
+<li>Bài toán lập phương trình.</li>
+<li>Bài toán lập bất phương trình.</li>
+<li>Bài toán có điều kiện nghiệm.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Phương trình có tham số.</li>
+<li>Bài toán biện luận nghiệm.</li>
+<li>Kết hợp phương trình với điều kiện thực tế.</li>
+<li>Bài toán liên hệ với hàm số hoặc đồ thị.</li>
+</ul>
+</div>
+</div>
+</div>
+<hr />
+<h3 id="vi-du-mau">Ví dụ mẫu</h3>
+<h4 id="vi-du-1-phuong-trinh-bac-nhat">Ví dụ 1 — Phương trình bậc nhất</h4>
+<div class="arithmatex">\[3x-5=10\]</div>
+<div class="arithmatex">\[3x=15\Rightarrow x=5.\]</div>
+<h4 id="vi-du-2-phuong-trinh-tich">Ví dụ 2 — Phương trình tích</h4>
+<div class="arithmatex">\[x(x-3)=0\]</div>
+<div class="arithmatex">\[x=0\quad\text{hoặc}\quad x=3.\]</div>
+<h4 id="vi-du-3-bat-phuong-trinh">Ví dụ 3 — Bất phương trình</h4>
+<div class="arithmatex">\[-2x+4&gt;0\]</div>
+<div class="arithmatex">\[-2x&gt;-4\Rightarrow x&lt;2.\]</div>
+<blockquote>
+<p>Khi nhân/chia với số âm, <strong>đổi chiều</strong>.</p>
+</blockquote>
+<hr />
+<h2 id="6-dang-bai-thi-vao-lop-10">🚀 6. Dạng bài thi vào lớp 10</h2>
+<table>
+<thead>
+<tr>
+<th>Dạng</th>
+<th style="text-align: right;">Ưu tiên</th>
+<th>Kỹ năng cần đạt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phương trình cơ bản</td>
+<td style="text-align: right;">⭐⭐⭐⭐⭐</td>
+<td>Giải nhanh, chính xác</td>
+</tr>
+<tr>
+<td>Phương trình tích</td>
+<td style="text-align: right;">⭐⭐⭐⭐</td>
+<td>Phân tích và giải đúng</td>
+</tr>
+<tr>
+<td>Phương trình chứa ẩn ở mẫu</td>
+<td style="text-align: right;">⭐⭐⭐⭐⭐</td>
+<td>ĐKXĐ + khử mẫu + đối chiếu</td>
+</tr>
+<tr>
+<td>Bất phương trình</td>
+<td style="text-align: right;">⭐⭐⭐⭐</td>
+<td>Biến đổi và biểu diễn nghiệm</td>
+</tr>
+<tr>
+<td>Hệ bất phương trình</td>
+<td style="text-align: right;">⭐⭐⭐</td>
+<td>Lấy giao tập nghiệm</td>
+</tr>
+<tr>
+<td>Lập phương trình từ bài toán</td>
+<td style="text-align: right;">⭐⭐⭐⭐⭐</td>
+<td>Mô hình hóa</td>
+</tr>
+<tr>
+<td>Bài toán tham số/nâng cao</td>
+<td style="text-align: right;">⭐⭐⭐</td>
+<td>Biện luận</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⭐ là <strong>mức độ ưu tiên ôn tập của Roadmap</strong>, không phải cam kết dạng bài sẽ xuất hiện trong mọi đề thi địa phương.</p>
+</blockquote>
+<hr />
+<h2 id="7-loi-sai-thuong-gap">⚠️ 7. Lỗi sai thường gặp</h2>
+<div class="admonition warning">
+<p class="admonition-title">5 lỗi cần kiểm tra trước khi nộp bài</p>
+<ol>
+<li>Quên điều kiện xác định khi mẫu chứa ẩn.</li>
+<li>Khử mẫu nhưng không kiểm tra nghiệm với điều kiện xác định.</li>
+<li>Quên đổi chiều bất phương trình khi nhân/chia với số âm.</li>
+<li>Phân tích tích sai dấu hoặc bỏ sót nghiệm.</li>
+<li>Lập phương trình đúng nhưng kết luận không phù hợp với điều kiện thực tế.</li>
+</ol>
+</div>
+<hr />
+<h2 id="8-luyen-tap">📝 8. Luyện tập</h2>
+<h3 id="muc-1-nhan-biet-cung-co">Mức 1 – Nhận biết / củng cố</h3>
+<p>10–15 bài giải trực tiếp, tập trung vào độ chính xác.</p>
+<h3 id="muc-2-thong-hieu-thanh-thao-dang-bai">Mức 2 – Thông hiểu / thành thạo dạng bài</h3>
+<p>15–20 bài phân loại theo phương trình bậc nhất, tích, chứa mẫu và bất phương trình.</p>
+<h3 id="muc-3-van-dung">Mức 3 – Vận dụng</h3>
+<p>10–15 bài lập phương trình/bất phương trình và bài tổng hợp.</p>
+<h3 id="muc-4-nang-cao-thi-vao-10">Mức 4 – Nâng cao / thi vào 10</h3>
+<p>Một đề chuyên đề 45–60 phút, trộn các dạng quan trọng.</p>
+<blockquote>
+<p><strong>Nguyên tắc:</strong> học sinh nên đạt ít nhất 80% ở Bộ A và B trước khi chuyển trọng tâm sang Bộ C/D.</p>
+</blockquote>
+<hr />
+<h2 id="9-tu-kiem-tra">✅ 9. Tự kiểm tra</h2>
+<ul>
+<li>[ ] Tôi giải được phương trình bậc nhất mà không cần nhìn mẫu.</li>
+<li>[ ] Tôi nhận ra khi nào nên phân tích thành tích.</li>
+<li>[ ] Tôi luôn viết điều kiện xác định trước khi khử mẫu.</li>
+<li>[ ] Tôi nhớ đổi chiều khi nhân/chia với số âm.</li>
+<li>[ ] Tôi biểu diễn được tập nghiệm trên trục số.</li>
+<li>[ ] Tôi lập được phương trình từ một bài toán thực tế đơn giản.</li>
+<li>[ ] Tôi kiểm tra và kết luận nghiệm đúng ngữ cảnh.</li>
+</ul>
+<hr />
+<h2 id="10-lien-ket-roadmap">🔄 10. Liên kết Roadmap</h2>
+<p><strong>← Trước:</strong> 06. Phân tích đa thức thành nhân tử
+<strong>Tiếp theo:</strong> 09. Hệ phương trình bậc nhất hai ẩn</p>
+<p><strong>Liên hệ gần:</strong></p>
+<ul>
+<li><a href="../04-bieu-thuc-dai-so/">04. Biểu thức và biến đổi đại số</a></li>
+<li>
+<ol>
+<li>Phân thức đại số</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Hàm số và đồ thị</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Bài toán thực tế và mô hình hóa</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h2 id="11-ieu-kien-hoan-thanh">🏁 11. Điều kiện hoàn thành</h2>
+<p>Học sinh được xem là <strong>nắm vững chuyên đề</strong> khi có thể:</p>
+<ol>
+<li>Tự giải chính xác các bài cơ bản.</li>
+<li>Nhận dạng đúng dạng bài trước khi giải.</li>
+<li>Không mắc các lỗi điều kiện, dấu và kết luận.</li>
+<li>Giải được bài vận dụng phù hợp với chương trình đang học.</li>
+<li>Biết kiến thức này liên hệ thế nào với <strong>hệ phương trình, hàm số và bài toán thực tế</strong>.</li>
+<li>Đạt tối thiểu <strong>80% bài luyện cốt lõi</strong> trước khi chuyển sang chuyên đề kế tiếp.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Trở lại mục lục
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0110\u00e3 sao ch\u00e9p", "clipboard.copy": "Sao ch\u00e9p v\u00e0o b\u1ed9 nh\u1edb t\u1ea1m", "search.result.more.one": "1 t\u1eeb kh\u00e1c trong trang", "search.result.more.other": "# t\u1eeb kh\u00e1c trong trang", "search.result.none": "Kh\u00f4ng t\u00ecm th\u1ea5y t\u00e0i li\u1ec7u li\u00ean quan", "search.result.one": "1 t\u00e0i li\u1ec7u li\u00ean quan", "search.result.other": "# t\u00e0i li\u1ec7u li\u00ean quan", "search.result.placeholder": "Nh\u1eadp \u0111\u1ec3 b\u1eaft \u0111\u1ea7u t\u00ecm ki\u1ebfm", "search.result.term.missing": "Kh\u00f4ng", "select.version": "Ch\u1ecdn phi\u00ean b\u1ea3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
