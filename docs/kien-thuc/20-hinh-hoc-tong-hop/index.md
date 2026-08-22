@@ -1,6 +1,6 @@
 # Chuyên đề 20 – Hình học tổng hợp, đo lường và hình khối
 
-> **Trạng thái:** Khung chuẩn đã được tạo. Nội dung chi tiết sẽ được hoàn thiện theo thứ tự ưu tiên của Roadmap.
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
 >
 > **Lớp trọng tâm:** 6–9  
 > **Mạch kiến thức:** Hình học/Đo lường  
@@ -10,7 +10,33 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
-Bản đồ kiến thức chi tiết của chuyên đề sẽ được bổ sung trong giai đoạn biên soạn nội dung.
+```text
+HÌNH HỌC TỔNG HỢP
+│
+├── Góc và đường thẳng
+│   └── song song • vuông góc • góc bằng nhau
+│
+├── Tam giác
+│   ├── bằng nhau
+│   ├── đồng dạng
+│   └── đường đặc biệt
+│
+├── Tứ giác
+│   └── bình hành • chữ nhật • thoi • vuông • nội tiếp
+│
+├── Tam giác vuông
+│   └── Pythagore • hệ thức lượng • lượng giác
+│
+├── Đường tròn
+│   └── góc nội tiếp • tiếp tuyến • hệ thức tích
+│
+└── Hình khối & đo lường
+    └── diện tích • thể tích • bài toán thực tế
+```
+
+Mạch tư duy trọng tâm:
+
+**đọc giả thiết → đánh dấu quan hệ → tìm cấu hình quen thuộc → tạo kết quả trung gian → nối các kết quả thành chuỗi chứng minh.**
 
 ---
 
@@ -162,66 +188,261 @@ Chứng minh hệ thức cần tìm
 
 Sau khi hoàn thành chuyên đề, học sinh cần:
 
-- [ ] Nắm được các khái niệm và tính chất cốt lõi.
-- [ ] Nhận dạng được các dạng bài cơ bản và trọng tâm.
-- [ ] Biết lựa chọn phương pháp giải phù hợp.
-- [ ] Trình bày lời giải rõ ràng và kiểm tra được kết quả.
-- [ ] Biết liên hệ kiến thức với các chuyên đề trước và sau.
+- [ ] Nhận ra được cấu hình hình học quen thuộc trong một bài tổng hợp.
+- [ ] Biết chọn công cụ phù hợp giữa đồng dạng, nội tiếp, tiếp tuyến, Thales và hệ thức lượng.
+- [ ] Xây dựng được chuỗi suy luận gồm nhiều bước trung gian.
+- [ ] Chứng minh được quan hệ góc, song song, vuông góc, đồng dạng, nội tiếp.
+- [ ] Chứng minh và tính được các hệ thức độ dài.
+- [ ] Giải được bài đo lường và hình khối cơ bản.
+- [ ] Trình bày bài chứng minh có lý do rõ ràng ở từng bước.
 
 ---
 
 ## 📖 3. Kiến thức cốt lõi
 
-Nội dung cốt lõi sẽ được biên soạn theo chương trình Toán THCS và chuẩn cấu trúc của Roadmap.
+### 3.1. Nguyên tắc giải bài hình học tổng hợp
+
+Một bài tổng hợp thường không dùng một định lý duy nhất. Cần ghép nhiều mảnh kiến thức.
+
+Quy trình nên dùng:
+
+1. Đọc kỹ giả thiết và kết luận.
+2. Đánh dấu song song, vuông góc, trung điểm, tiếp tuyến, đường kính.
+3. Tìm tam giác có khả năng đồng dạng.
+4. Kiểm tra khả năng xuất hiện tứ giác nội tiếp.
+5. Tìm các tỉ số hoặc hệ thức trung gian.
+6. Chỉ sau đó mới hướng tới kết luận cuối.
+
+### 3.2. Các “cầu nối” thường gặp
+
+**Từ song song đến đồng dạng**
+
+`DE ∥ BC`
+
+→ góc tương ứng bằng nhau
+
+→ hai tam giác đồng dạng
+
+→ suy ra tỉ số cạnh.
+
+**Từ hai góc vuông đến nội tiếp**
+
+Nếu:
+
+`∠AEB = ∠AFB = 90°`
+
+thì `E`, `F` cùng nằm trên đường tròn đường kính `AB`.
+
+**Từ đồng dạng đến hệ thức tích**
+
+Nếu:
+
+`AB/AC = AD/AE`
+
+thì có thể biến đổi thành:
+
+`AB × AE = AC × AD`
+
+### 3.3. Chiến lược chứng minh tứ giác nội tiếp
+
+Các dấu hiệu ưu tiên:
+
+- tổng hai góc đối bằng `180°`;
+- hai góc bằng nhau cùng chắn một đoạn;
+- hai góc vuông cùng nhìn một đoạn;
+- bốn điểm cùng nằm trên đường tròn có đường kính xác định.
+
+### 3.4. Chiến lược chứng minh tiếp tuyến
+
+Muốn chứng minh đường thẳng `d` là tiếp tuyến tại `A`, thường chứng minh:
+
+`OA ⟂ d`
+
+với `A` thuộc đường tròn tâm `O`.
+
+Trong bài khó, quan hệ vuông góc này thường được suy ra từ:
+- góc nội tiếp;
+- tam giác đồng dạng;
+- tổng góc;
+- tứ giác nội tiếp.
+
+### 3.5. Chiến lược chứng minh hệ thức độ dài
+
+Nếu cần chứng minh dạng:
+
+`AB × CD = EF × GH`
+
+hãy thử:
+
+1. biến thành một tỉ lệ;
+2. tìm hai tam giác đồng dạng tạo ra tỉ lệ đó;
+3. hoặc kiểm tra cấu hình hai dây cắt nhau / tiếp tuyến – cát tuyến.
+
+### 3.6. Đo lường và hình khối
+
+Một số công thức cần nhớ:
+
+**Hình chữ nhật**
+
+`S = a × b`
+
+**Tam giác**
+
+`S = 1/2 × a × h`
+
+**Hình tròn**
+
+`S = πr²`
+
+`C = 2πr`
+
+**Lăng trụ đứng**
+
+`V = S_đáy × h`
+
+**Hình hộp chữ nhật**
+
+`V = a × b × c`
+
+Khi giải bài thực tế, luôn ghi đơn vị diện tích hoặc thể tích.
+
+### 3.7. Bảng chọn chiến lược
+
+| Mục tiêu | Hướng ưu tiên |
+|---|---|
+| Chứng minh hai góc bằng nhau | Nội tiếp, đồng dạng |
+| Chứng minh song song | Góc so le trong, Thales đảo |
+| Chứng minh vuông góc | Góc 90°, bán kính – tiếp tuyến |
+| Chứng minh nội tiếp | Hai góc đối bù / hai góc bằng nhau |
+| Chứng minh hệ thức tích | Đồng dạng / hai dây / tiếp tuyến–cát tuyến |
+| Tính độ dài | Đồng dạng / Pythagore / lượng giác |
+| Tính diện tích, thể tích | Chọn đúng công thức và đơn vị |
 
 ---
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** 14–19
-- **Chuyên đề sử dụng tiếp:** 24, 25
+- **Kiến thức nên ôn trước:** [14 – Tam giác](../14-tam-giac/), [15 – Các đường đồng quy](../15-duong-dong-quy/), [16 – Tứ giác](../16-tu-giac/), [17 – Thales và đồng dạng](../17-thales-dong-dang/), [18 – Hệ thức lượng](../18-he-thuc-luong/), [19 – Đường tròn](../19-duong-tron/)
+- **Chuyên đề sử dụng tiếp:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/), [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/)
 
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
 
-Danh mục dạng bài sẽ được bổ sung khi chuyên đề được biên soạn đầy đủ.
+### Dạng 1. Chứng minh tứ giác nội tiếp
+
+Tìm hai góc đối bù, hai góc bằng nhau hoặc hai góc vuông.
+
+### Dạng 2. Chứng minh hai tam giác đồng dạng
+
+Thường xuất hiện sau khi đã có các góc bằng nhau từ nội tiếp hoặc song song.
+
+### Dạng 3. Chứng minh tiếp tuyến
+
+Đưa bài toán về chứng minh vuông góc với bán kính tại tiếp điểm.
+
+### Dạng 4. Chứng minh hệ thức tích
+
+Đưa tích về tỉ số và tìm cặp tam giác đồng dạng.
+
+### Dạng 5. Chứng minh song song / vuông góc
+
+Dùng góc bằng nhau, Thales đảo, tính chất tiếp tuyến hoặc nội tiếp.
+
+### Dạng 6. Tính độ dài và góc
+
+Kết hợp đồng dạng, Pythagore, lượng giác, hệ thức đường tròn.
+
+### Dạng 7. Đo lường và hình khối
+
+Tính diện tích, chu vi, thể tích và đổi đơn vị.
+
+### Dạng 8. Bài hình tổng hợp nhiều ý
+
+Mỗi ý thường tạo dữ kiện cho ý sau. Cần tận dụng kết quả đã chứng minh thay vì làm lại từ đầu.
 
 ---
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Các dạng bài liên quan đến thi vào lớp 10 sẽ được đánh dấu theo mức độ ưu tiên và liên kết sang khu vực ôn thi khi hoàn thiện.
+Đây là chuyên đề tổng hợp trực tiếp cho phần hình học thi vào 10.
+
+Các nhóm kỹ năng thường xuất hiện:
+1. Chứng minh tứ giác nội tiếp.
+2. Chứng minh hai tam giác đồng dạng.
+3. Chứng minh tiếp tuyến.
+4. Chứng minh một hệ thức tích.
+5. Tính độ dài, góc hoặc diện tích.
+6. Câu cuối phân hóa cần nối nhiều kết quả trung gian.
+
+Mức ưu tiên ôn thi: **⭐⭐⭐⭐⭐**.
 
 ---
 
 ## ⚠️ 7. Lỗi sai thường gặp
 
-Mục này sẽ tổng hợp các lỗi sai điển hình, nguyên nhân và cách tự kiểm tra.
+| Lỗi sai | Cách tránh |
+|---|---|
+| Lao ngay vào kết luận cuối | Tìm các kết quả trung gian trước |
+| Viết tam giác đồng dạng sai thứ tự | Đánh dấu đỉnh tương ứng |
+| Dùng kết quả chưa chứng minh | Mỗi bước cần lý do |
+| Thấy hai góc vuông nhưng không nghĩ đến nội tiếp | Kiểm tra đường tròn đường kính chung |
+| Chứng minh tiếp tuyến thiếu điều kiện điểm thuộc đường tròn | Phải đủ cả hai điều kiện |
+| Biến đổi hệ thức tích không nhất quán | Viết về một tỉ lệ rõ ràng trước |
+| Sai đơn vị diện tích / thể tích | Ghi `cm²`, `m²`, `cm³`, `m³` đúng loại |
 
 ---
 
 ## 📝 8. Luyện tập
 
-Bài tập sẽ được chia theo 4 mức:
+### Mức 1 – Nhận biết
 
-1. Nhận biết
-2. Thông hiểu
-3. Vận dụng
-4. Vận dụng cao / tổng hợp
+1. Hai góc vuông cùng nhìn đoạn `AB` gợi đến kết luận gì?
+2. Muốn chứng minh tiếp tuyến tại `A`, thường cần chứng minh quan hệ nào?
+3. Một hệ thức tích có thể chuyển về dạng gì để tìm tam giác đồng dạng?
+
+### Mức 2 – Thông hiểu
+
+4. Cho `∠ACB = ∠ADB`. Nêu một hướng để chứng minh bốn điểm `A, B, C, D` nội tiếp.
+5. Hai tam giác đã đồng dạng. Hãy nêu cách suy ra một hệ thức tích từ tỉ số cạnh.
+6. Một hình hộp chữ nhật có kích thước `3 cm`, `4 cm`, `5 cm`. Tính thể tích.
+
+### Mức 3 – Vận dụng
+
+7. Chứng minh một tứ giác nội tiếp rồi dùng các góc nội tiếp để chứng minh hai tam giác đồng dạng.
+8. Từ hai tam giác đồng dạng, suy ra một hệ thức tích đoạn thẳng.
+9. Chứng minh một đường thẳng là tiếp tuyến sau khi đã có một tứ giác nội tiếp.
+
+### Mức 4 – Tổng hợp
+
+10. Giải một bài gồm chuỗi: nội tiếp → đồng dạng → hệ thức tích.
+11. Giải một bài gồm chuỗi: đồng dạng → vuông góc → tiếp tuyến.
+12. Một bài toán thực tế yêu cầu tính diện tích hoặc thể tích sau khi tìm một độ dài bằng lượng giác.
 
 ---
 
 ## ✅ 9. Tự kiểm tra
 
-Bộ câu hỏi tự kiểm tra và tiêu chí đạt sẽ được bổ sung cùng nội dung chi tiết.
+Hãy tự trả lời không nhìn tài liệu:
+
+1. Hai góc vuông cùng nhìn một đoạn gợi đến định lý nào?
+2. Khi cần chứng minh hệ thức tích, nên thử chuyển về dạng gì?
+3. Muốn chứng minh tiếp tuyến, thường cần chứng minh gì?
+4. Khi thấy nhiều góc bằng nhau, nên nghĩ tới công cụ nào?
+5. Khi thấy song song trong tam giác, nên nghĩ tới gì?
+6. Khi thấy hai góc đối bù nhau, nên nghĩ tới gì?
+7. Một bài hình nhiều ý có nên dùng lại kết quả ý trước không?
+8. Diện tích và thể tích khác nhau về đơn vị như thế nào?
+
+**Tiêu chí đạt:** đúng ít nhất `7/8` câu và giải được một bài tổng hợp có ít nhất ba bước suy luận.
 
 ---
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** 14–19
-- **→ Tiếp theo:** 24, 25
+- **← Trước:** [14 – Tam giác](../14-tam-giac/) → [19 – Đường tròn](../19-duong-tron/)
+- **→ Tiếp theo:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/)
+- **→ Tổng hợp cuối:** [25 – Ôn thi vào 10](../25-tong-hop-on-thi-10/)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
@@ -231,8 +452,10 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 Chuyên đề được xem là hoàn thành khi học sinh:
 
-- [ ] Hiểu kiến thức cốt lõi.
-- [ ] Làm chắc các dạng bài nền tảng.
-- [ ] Nhận diện và tránh được lỗi sai thường gặp.
-- [ ] Đạt yêu cầu phần tự kiểm tra.
-- [ ] Biết chuyên đề này kết nối với kiến thức nào trong Roadmap.
+- [ ] Nhận diện được cấu hình cần dùng trong bài tổng hợp.
+- [ ] Xây dựng được chuỗi suy luận ít nhất ba bước.
+- [ ] Chứng minh được nội tiếp, đồng dạng và tiếp tuyến.
+- [ ] Chứng minh được một hệ thức tích.
+- [ ] Tính đúng độ dài, diện tích hoặc thể tích khi bài yêu cầu.
+- [ ] Trình bày mỗi kết luận kèm lý do.
+- [ ] Đạt ít nhất `7/8` câu tự kiểm tra.
