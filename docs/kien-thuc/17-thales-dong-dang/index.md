@@ -14,6 +14,124 @@ Bản đồ kiến thức chi tiết của chuyên đề sẽ được bổ sung
 
 ---
 
+## Minh họa trực quan
+
+### 1. Định lý Thales trong tam giác
+
+<p align="center">
+  <img src="../../assets/geometry/17/17-thales.svg"
+       alt="Minh họa định lý Thales trong tam giác"
+       width="500">
+</p>
+
+> Nếu một đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại, thì nó tạo ra các đoạn thẳng tương ứng tỉ lệ.
+
+Với `DE ∥ BC` trong tam giác `ABC`:
+
+`AD/AB = AE/AC = DE/BC`
+
+Ngoài ra:
+
+`AD/DB = AE/EC`
+
+---
+
+### 2. Đường trung bình trong tam giác
+
+<p align="center">
+  <img src="../../assets/geometry/17/17-duong-trung-binh.svg"
+       alt="Minh họa đường trung bình trong tam giác"
+       width="500">
+</p>
+
+> Đường trung bình của tam giác là đoạn thẳng nối trung điểm của hai cạnh.
+
+Nếu `M`, `N` lần lượt là trung điểm của `AB`, `AC` thì:
+
+`MN ∥ BC`
+
+và:
+
+`MN = 1/2 BC`
+
+Đây có thể xem là một hệ quả rất quan trọng của định lý Thales.
+
+---
+
+### 3. Tam giác đồng dạng
+
+<p align="center">
+  <img src="../../assets/geometry/17/17-tam-giac-dong-dang.svg"
+       alt="Minh họa hai tam giác đồng dạng"
+       width="520">
+</p>
+
+> Hai tam giác đồng dạng có các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ.
+
+Nếu:
+
+`△ABC ∼ △A'B'C'`
+
+thì:
+
+`AB/A'B' = BC/B'C' = AC/A'C'`
+
+và:
+
+`∠A = ∠A'`, `∠B = ∠B'`, `∠C = ∠C'`
+
+---
+
+### Ba trường hợp đồng dạng cần nhớ
+
+| Trường hợp | Điều kiện nhận biết | Viết tắt |
+|---|---|---|
+| Góc – góc | Hai góc của tam giác này bằng hai góc tương ứng của tam giác kia | `g-g` |
+| Cạnh – góc – cạnh | Hai cặp cạnh tương ứng tỉ lệ và góc xen giữa bằng nhau | `c-g-c` |
+| Cạnh – cạnh – cạnh | Ba cặp cạnh tương ứng tỉ lệ | `c-c-c` |
+
+---
+
+### Mối liên hệ giữa Thales và đồng dạng
+
+Một cách nhìn rất quan trọng:
+
+```text
+DE ∥ BC
+   ↓
+Các góc tương ứng bằng nhau
+   ↓
+△ADE ∼ △ABC
+   ↓
+Các cạnh tương ứng tỉ lệ
+   ↓
+Định lý Thales
+```
+
+Vì vậy, khi gặp bài toán có **đường thẳng song song trong tam giác**, nên nghĩ ngay đến hai hướng:
+
+- dùng định lý Thales;
+- chứng minh hai tam giác đồng dạng.
+
+---
+
+### Mẹo giải bài
+
+- Thấy `∥` → nghĩ đến **Thales** hoặc **góc bằng nhau**.
+- Thấy nhiều tỉ số cạnh → nghĩ đến **tam giác đồng dạng**.
+- Thấy trung điểm hai cạnh → nghĩ đến **đường trung bình**.
+- Khi viết đồng dạng, phải ghi **đúng thứ tự các đỉnh tương ứng**.
+
+Ví dụ:
+
+`△ABC ∼ △DEF`
+
+thì phải hiểu:
+
+`A ↔ D`, `B ↔ E`, `C ↔ F`.
+
+---
+
 ## 🎯 2. Mục tiêu cần đạt
 
 Sau khi hoàn thành chuyên đề, học sinh cần:
