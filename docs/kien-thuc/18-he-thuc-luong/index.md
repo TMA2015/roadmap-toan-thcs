@@ -14,6 +14,103 @@ Bản đồ kiến thức chi tiết của chuyên đề sẽ được bổ sung
 
 ---
 
+## Minh họa trực quan
+
+### 1. Đường cao trong tam giác vuông
+
+<p align="center">
+  <img src="../../assets/geometry/18/18-duong-cao-canh-huyen.svg"
+       alt="Minh họa đường cao trong tam giác vuông"
+       width="500">
+</p>
+
+Xét tam giác vuông `ABC`, vuông tại `A`, đường cao `AH` hạ xuống cạnh huyền `BC`.
+
+Các hệ thức quan trọng:
+
+`AB² = BH × BC`
+
+`AC² = CH × BC`
+
+`AH² = BH × CH`
+
+`AB × AC = AH × BC`
+
+> Khi bài toán có tam giác vuông và đường cao xuống cạnh huyền, nên nghĩ ngay đến nhóm hệ thức này.
+
+---
+
+### 2. Tỉ số lượng giác của góc nhọn
+
+<p align="center">
+  <img src="../../assets/geometry/18/18-ti-so-luong-giac.svg"
+       alt="Minh họa các tỉ số lượng giác trong tam giác vuông"
+       width="520">
+</p>
+
+Với một góc nhọn `α` trong tam giác vuông:
+
+| Tỉ số | Công thức |
+|---|---|
+| Sin | `sin α = cạnh đối / cạnh huyền` |
+| Cos | `cos α = cạnh kề / cạnh huyền` |
+| Tan | `tan α = cạnh đối / cạnh kề` |
+
+Mẹo nhớ:
+
+- `sin` → đối / huyền;
+- `cos` → kề / huyền;
+- `tan` → đối / kề.
+
+---
+
+### 3. Góc nâng và góc hạ
+
+<p align="center">
+  <img src="../../assets/geometry/18/18-goc-nang-goc-ha.svg"
+       alt="Minh họa góc nâng và góc hạ"
+       width="520">
+</p>
+
+> Góc nâng là góc tạo bởi tia nhìn lên và phương ngang. Góc hạ là góc tạo bởi tia nhìn xuống và phương ngang.
+
+Dạng bài thường gặp:
+
+- tính chiều cao của tòa nhà, cây, cột;
+- tính khoảng cách từ người quan sát đến vật;
+- tính độ cao khi biết góc nâng và khoảng cách ngang.
+
+Ví dụ, nếu khoảng cách ngang đến chân tòa nhà là `d`, chiều cao cần tìm là `h`, góc nâng là `α` thì:
+
+`tan α = h / d`
+
+suy ra:
+
+`h = d × tan α`
+
+---
+
+### Bảng chọn công cụ nhanh
+
+| Dấu hiệu trong đề | Công cụ nên nghĩ tới |
+|---|---|
+| Tam giác vuông có đường cao xuống cạnh huyền | Các hệ thức lượng |
+| Biết góc và một cạnh, tìm cạnh khác | `sin`, `cos`, `tan` |
+| Biết hai cạnh của tam giác vuông | Pythagore |
+| Bài toán chiều cao / khoảng cách | Góc nâng, góc hạ + lượng giác |
+
+---
+
+### Mẹo giải bài
+
+- Vẽ hình trước khi thay số.
+- Xác định rõ cạnh nào là **đối**, **kề**, **huyền** so với góc đang xét.
+- Không dùng nhầm cạnh kề với cạnh huyền.
+- Kiểm tra máy tính đang ở chế độ **DEG** khi góc cho theo độ.
+- Với bài thực tế, nhớ cộng hoặc trừ chiều cao mắt người quan sát nếu đề có cho.
+
+---
+
 ## 🎯 2. Mục tiêu cần đạt
 
 Sau khi hoàn thành chuyên đề, học sinh cần:
