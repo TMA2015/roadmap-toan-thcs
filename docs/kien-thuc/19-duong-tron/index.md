@@ -1,6 +1,6 @@
 # Chuyên đề 19 – Đường tròn
 
-> **Trạng thái:** Khung chuẩn đã được tạo. Nội dung chi tiết sẽ được hoàn thiện theo thứ tự ưu tiên của Roadmap.
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
 >
 > **Lớp trọng tâm:** 9  
 > **Mạch kiến thức:** Hình học  
@@ -10,7 +10,33 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
-Bản đồ kiến thức chi tiết của chuyên đề sẽ được bổ sung trong giai đoạn biên soạn nội dung.
+```text
+ĐƯỜNG TRÒN
+│
+├── Góc và cung
+│   ├── Góc ở tâm
+│   ├── Góc nội tiếp
+│   └── Góc nội tiếp chắn nửa đường tròn = 90°
+│
+├── Dây và khoảng cách đến tâm
+│   ├── Dây bằng nhau ↔ cách tâm bằng nhau
+│   └── Đường kính vuông góc dây → đi qua trung điểm dây
+│
+├── Tiếp tuyến
+│   ├── Bán kính ⟂ tiếp tuyến tại tiếp điểm
+│   └── Hai tiếp tuyến từ một điểm ngoài bằng nhau
+│
+├── Tứ giác nội tiếp
+│   └── Tổng hai góc đối = 180°
+│
+└── Hệ thức độ dài
+    ├── Hai dây cắt nhau
+    └── Tiếp tuyến – cát tuyến
+```
+
+Mạch tư duy trọng tâm:
+
+**nhận dạng cấu hình đường tròn → xác định cung/góc/tiếp tuyến → chọn định lý phù hợp → suy ra góc, độ dài hoặc chứng minh hình học.**
 
 ---
 
@@ -121,66 +147,220 @@ Dạng bài này thường xuất hiện khi đề cho nhiều đoạn thẳng t
 
 Sau khi hoàn thành chuyên đề, học sinh cần:
 
-- [ ] Nắm được các khái niệm và tính chất cốt lõi.
-- [ ] Nhận dạng được các dạng bài cơ bản và trọng tâm.
-- [ ] Biết lựa chọn phương pháp giải phù hợp.
-- [ ] Trình bày lời giải rõ ràng và kiểm tra được kết quả.
-- [ ] Biết liên hệ kiến thức với các chuyên đề trước và sau.
+- [ ] Phân biệt được góc ở tâm, góc nội tiếp và cung bị chắn.
+- [ ] Vận dụng được định lý góc nội tiếp bằng nửa góc ở tâm cùng chắn cung.
+- [ ] Nhận biết và chứng minh được tiếp tuyến.
+- [ ] Sử dụng được tính chất hai tiếp tuyến xuất phát từ một điểm ngoài.
+- [ ] Nhận biết và chứng minh được tứ giác nội tiếp.
+- [ ] Dùng được hệ thức hai dây cắt nhau và tiếp tuyến – cát tuyến.
+- [ ] Kết hợp được đường tròn với tam giác đồng dạng và hệ thức lượng.
 
 ---
 
 ## 📖 3. Kiến thức cốt lõi
 
-Nội dung cốt lõi sẽ được biên soạn theo chương trình Toán THCS và chuẩn cấu trúc của Roadmap.
+### 3.1. Góc ở tâm và góc nội tiếp
+
+Nếu `∠AOB` là góc ở tâm và `∠ACB` là góc nội tiếp cùng chắn cung `AB`, thì:
+
+`∠ACB = 1/2 ∠AOB`
+
+Hệ quả rất quan trọng:
+
+> Góc nội tiếp chắn nửa đường tròn bằng `90°`.
+
+### 3.2. Quan hệ giữa dây và tâm
+
+Trong một đường tròn:
+
+- hai dây bằng nhau thì cách tâm bằng nhau;
+- hai dây cách tâm bằng nhau thì bằng nhau;
+- đường kính vuông góc với một dây thì đi qua trung điểm của dây đó;
+- đường kính đi qua trung điểm của một dây không đi qua tâm thì vuông góc với dây đó.
+
+### 3.3. Tiếp tuyến
+
+Nếu `d` là tiếp tuyến tại `A` của đường tròn tâm `O` thì:
+
+`OA ⟂ d`
+
+Dấu hiệu nhận biết:
+
+> Một đường thẳng đi qua điểm `A` thuộc đường tròn và vuông góc với bán kính `OA` thì là tiếp tuyến tại `A`.
+
+Nếu từ điểm `P` ngoài đường tròn kẻ hai tiếp tuyến `PA`, `PB`, thì:
+
+`PA = PB`
+
+và đường nối `OP` thường là trục đối xứng của cấu hình.
+
+### 3.4. Tứ giác nội tiếp
+
+Một tứ giác nội tiếp là tứ giác có bốn đỉnh cùng thuộc một đường tròn.
+
+Tính chất quan trọng:
+
+`∠A + ∠C = 180°`
+
+`∠B + ∠D = 180°`
+
+Một số dấu hiệu thường dùng để chứng minh tứ giác nội tiếp:
+
+- tổng hai góc đối bằng `180°`;
+- hai góc cùng nhìn một đoạn thẳng dưới một góc bằng nhau;
+- hai góc vuông cùng chắn một đường kính.
+
+### 3.5. Hai dây cắt nhau
+
+Nếu hai dây `AB`, `CD` cắt nhau tại `I` bên trong đường tròn:
+
+`IA × IB = IC × ID`
+
+### 3.6. Tiếp tuyến – cát tuyến
+
+Từ điểm `P` ngoài đường tròn, tiếp tuyến `PT` và cát tuyến `PAB` cho:
+
+`PT² = PA × PB`
+
+### 3.7. Bảng chọn công cụ
+
+| Dấu hiệu | Nên nghĩ tới |
+|---|---|
+| Góc có đỉnh trên đường tròn | Góc nội tiếp |
+| Góc có đỉnh tại tâm | Góc ở tâm |
+| Cần chứng minh tiếp tuyến | Bán kính vuông góc |
+| Hai tiếp tuyến từ một điểm | Hai đoạn tiếp tuyến bằng nhau |
+| Bốn điểm cần chứng minh cùng thuộc một đường tròn | Tứ giác nội tiếp |
+| Hai dây cắt nhau | Tích các đoạn dây |
+| Tiếp tuyến + cát tuyến | `PT² = PA × PB` |
 
 ---
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** 14, 17, 18
-- **Chuyên đề sử dụng tiếp:** 20, 25
+- **Kiến thức nên ôn trước:** [14 – Tam giác](../14-tam-giac/), [17 – Thales và đồng dạng](../17-thales-dong-dang/), [18 – Hệ thức lượng](../18-he-thuc-luong/)
+- **Liên hệ mạnh:** vuông góc, đồng dạng, góc, tam giác vuông.
+- **Chuyên đề sử dụng tiếp:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/), [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/)
 
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
 
-Danh mục dạng bài sẽ được bổ sung khi chuyên đề được biên soạn đầy đủ.
+### Dạng 1. Tính góc trong đường tròn
+
+Dùng quan hệ góc ở tâm – góc nội tiếp và các góc cùng chắn một cung.
+
+### Dạng 2. Chứng minh tiếp tuyến
+
+Chứng minh bán kính vuông góc với đường thẳng tại điểm thuộc đường tròn.
+
+### Dạng 3. Hai tiếp tuyến từ một điểm ngoài
+
+Dùng `PA = PB` và khai thác tam giác cân hoặc đối xứng.
+
+### Dạng 4. Chứng minh tứ giác nội tiếp
+
+Ưu tiên các dấu hiệu:
+- tổng hai góc đối bằng `180°`;
+- hai góc bằng nhau cùng chắn một đoạn;
+- hai góc vuông.
+
+### Dạng 5. Tính độ dài bằng hai dây cắt nhau
+
+Dùng:
+
+`IA × IB = IC × ID`
+
+### Dạng 6. Tính độ dài bằng tiếp tuyến – cát tuyến
+
+Dùng:
+
+`PT² = PA × PB`
+
+### Dạng 7. Bài tổng hợp đường tròn
+
+Kết hợp tiếp tuyến, nội tiếp, đồng dạng, hệ thức tích và lượng giác.
 
 ---
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Các dạng bài liên quan đến thi vào lớp 10 sẽ được đánh dấu theo mức độ ưu tiên và liên kết sang khu vực ôn thi khi hoàn thiện.
+Đây là một trong những chuyên đề quan trọng nhất của hình học thi vào 10.
+
+Các kỹ năng thường gặp:
+1. Chứng minh tứ giác nội tiếp.
+2. Chứng minh tiếp tuyến.
+3. Chứng minh hai tam giác đồng dạng trong cấu hình đường tròn.
+4. Chứng minh hệ thức tích đoạn thẳng.
+5. Tính góc, độ dài hoặc bán kính.
+6. Kết hợp nhiều bước để giải bài hình tổng hợp.
+
+Mức ưu tiên ôn thi: **⭐⭐⭐⭐⭐**.
 
 ---
 
 ## ⚠️ 7. Lỗi sai thường gặp
 
-Mục này sẽ tổng hợp các lỗi sai điển hình, nguyên nhân và cách tự kiểm tra.
+| Lỗi sai | Cách tránh |
+|---|---|
+| Nhầm góc nội tiếp với góc ở tâm | Kiểm tra vị trí đỉnh của góc |
+| Không xác định đúng cung bị chắn | Đánh dấu hai đầu mút cung trước |
+| Chứng minh tiếp tuyến nhưng quên điểm thuộc đường tròn | Cần đủ: điểm trên đường tròn + vuông góc bán kính |
+| Dùng sai định lý hai dây cắt nhau | Điểm giao phải nằm bên trong đường tròn |
+| Dùng sai tiếp tuyến – cát tuyến | Điểm xuất phát phải ở ngoài đường tròn |
+| Kết luận nội tiếp khi mới có một góc vuông | Cần tạo được hai góc cùng chắn một đường kính hoặc dấu hiệu đầy đủ |
 
 ---
 
 ## 📝 8. Luyện tập
 
-Bài tập sẽ được chia theo 4 mức:
+### Mức 1 – Nhận biết
 
-1. Nhận biết
-2. Thông hiểu
-3. Vận dụng
-4. Vận dụng cao / tổng hợp
+1. Góc nội tiếp chắn nửa đường tròn bằng bao nhiêu độ?
+2. Tiếp tuyến vuông góc với đoạn nào tại tiếp điểm?
+3. Hai tiếp tuyến từ cùng một điểm ngoài có độ dài như thế nào?
+
+### Mức 2 – Thông hiểu
+
+4. Góc ở tâm chắn cung `AB` bằng `120°`. Tính góc nội tiếp cùng chắn cung đó.
+5. Hai dây cắt nhau tại `I`, biết `IA = 3`, `IB = 8`, `IC = 4`. Tính `ID`.
+6. Từ `P` ngoài đường tròn, `PT` là tiếp tuyến, cát tuyến cắt tại `A`, `B`. Biết `PA = 4`, `PB = 9`. Tính `PT`.
+
+### Mức 3 – Vận dụng
+
+7. Chứng minh một tứ giác nội tiếp bằng cách chứng minh tổng hai góc đối bằng `180°`.
+8. Chứng minh một đường thẳng là tiếp tuyến bằng cách chứng minh vuông góc với bán kính tại tiếp điểm.
+9. Từ hai tiếp tuyến `PA`, `PB`, hãy khai thác `PA = PB` để chứng minh một tam giác cân.
+
+### Mức 4 – Tổng hợp
+
+10. Trong một cấu hình có tiếp tuyến và dây cung, hãy chứng minh hai tam giác đồng dạng rồi suy ra một hệ thức tích.
+11. Cho bốn điểm tạo thành hai góc vuông. Hãy chứng minh chúng cùng thuộc một đường tròn và tiếp tục tính một góc liên quan.
 
 ---
 
 ## ✅ 9. Tự kiểm tra
 
-Bộ câu hỏi tự kiểm tra và tiêu chí đạt sẽ được bổ sung cùng nội dung chi tiết.
+Hãy tự trả lời không nhìn tài liệu:
+
+1. Góc nội tiếp bằng bao nhiêu lần góc ở tâm cùng chắn cung?
+2. Góc nội tiếp chắn đường kính bằng bao nhiêu độ?
+3. Điều kiện nhận biết một tiếp tuyến tại điểm `A` là gì?
+4. Hai tiếp tuyến từ một điểm ngoài có tính chất gì?
+5. Nêu một dấu hiệu chứng minh tứ giác nội tiếp.
+6. Hệ thức hai dây cắt nhau là gì?
+7. Hệ thức tiếp tuyến – cát tuyến là gì?
+8. Khi thấy nhiều góc bằng nhau trong đường tròn, nên kiểm tra điều gì?
+
+**Tiêu chí đạt:** đúng ít nhất `7/8` câu và giải được một bài chứng minh nội tiếp hoặc tiếp tuyến.
 
 ---
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** 14, 17, 18
-- **→ Tiếp theo:** 20, 25
+- **← Trước:** [14 – Tam giác](../14-tam-giac/), [17 – Thales và đồng dạng](../17-thales-dong-dang/), [18 – Hệ thức lượng](../18-he-thuc-luong/)
+- **→ Tiếp theo:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/)
+- **→ Liên hệ:** [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
@@ -190,8 +370,10 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 Chuyên đề được xem là hoàn thành khi học sinh:
 
-- [ ] Hiểu kiến thức cốt lõi.
-- [ ] Làm chắc các dạng bài nền tảng.
-- [ ] Nhận diện và tránh được lỗi sai thường gặp.
-- [ ] Đạt yêu cầu phần tự kiểm tra.
-- [ ] Biết chuyên đề này kết nối với kiến thức nào trong Roadmap.
+- [ ] Phân biệt đúng góc ở tâm và góc nội tiếp.
+- [ ] Chứng minh được một tiếp tuyến.
+- [ ] Chứng minh được một tứ giác nội tiếp.
+- [ ] Dùng đúng hai hệ thức tích đoạn thẳng.
+- [ ] Kết hợp được đường tròn với đồng dạng.
+- [ ] Giải được ít nhất một bài hình tổng hợp có đường tròn.
+- [ ] Đạt ít nhất `7/8` câu tự kiểm tra.
