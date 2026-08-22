@@ -1,6 +1,6 @@
 # Chuyên đề 23 – Xác suất
 
-> **Trạng thái:** Khung chuẩn đã được tạo. Nội dung chi tiết sẽ được hoàn thiện theo thứ tự ưu tiên của Roadmap.
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
 >
 > **Lớp trọng tâm:** 6–9  
 > **Mạch kiến thức:** Xác suất  
@@ -10,7 +10,31 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
-Bản đồ kiến thức chi tiết của chuyên đề sẽ được bổ sung trong giai đoạn biên soạn nội dung.
+```text
+XÁC SUẤT
+│
+├── Phép thử ngẫu nhiên
+│   └── kết quả không biết trước
+│
+├── Không gian mẫu Ω
+│   └── tập hợp mọi kết quả có thể
+│
+├── Biến cố
+│   ├── biến cố chắc chắn
+│   ├── biến cố không thể
+│   └── biến cố ngẫu nhiên
+│
+├── Xác suất cổ điển
+│   └── P(A) = n(A) / n(Ω)
+│
+└── Thí nghiệm nhiều bước
+    ├── bảng liệt kê
+    └── sơ đồ cây
+```
+
+Mạch tư duy trọng tâm:
+
+**xác định phép thử → liệt kê đúng không gian mẫu → mô tả biến cố → đếm kết quả thuận lợi → tính xác suất → kiểm tra kết quả nằm trong `[0,1]`.**
 
 ---
 
@@ -168,66 +192,237 @@ Kết luận
 
 Sau khi hoàn thành chuyên đề, học sinh cần:
 
-- [ ] Nắm được các khái niệm và tính chất cốt lõi.
-- [ ] Nhận dạng được các dạng bài cơ bản và trọng tâm.
-- [ ] Biết lựa chọn phương pháp giải phù hợp.
-- [ ] Trình bày lời giải rõ ràng và kiểm tra được kết quả.
-- [ ] Biết liên hệ kiến thức với các chuyên đề trước và sau.
+- [ ] Phân biệt được phép thử ngẫu nhiên, không gian mẫu và biến cố.
+- [ ] Lập đúng không gian mẫu trong các phép thử đơn giản.
+- [ ] Tính được xác suất cổ điển khi các kết quả đồng khả năng.
+- [ ] Nhận biết biến cố chắc chắn và biến cố không thể.
+- [ ] Dùng được bảng hoặc sơ đồ cây cho thí nghiệm nhiều bước.
+- [ ] Giải được các bài “ít nhất một”, “đúng một”, “cả hai”.
+- [ ] Biết kiểm tra tính hợp lý của kết quả xác suất.
 
 ---
 
 ## 📖 3. Kiến thức cốt lõi
 
-Nội dung cốt lõi sẽ được biên soạn theo chương trình Toán THCS và chuẩn cấu trúc của Roadmap.
+### 3.1. Phép thử ngẫu nhiên
+
+Phép thử ngẫu nhiên là một thao tác mà ta biết các kết quả có thể xảy ra nhưng **không biết chắc kết quả nào sẽ xuất hiện trước khi thực hiện**.
+
+Ví dụ:
+- tung đồng xu;
+- gieo xúc xắc;
+- rút một thẻ từ hộp.
+
+### 3.2. Không gian mẫu
+
+Không gian mẫu, ký hiệu `Ω`, là tập hợp tất cả các kết quả có thể xảy ra.
+
+Ví dụ gieo một xúc xắc:
+
+`Ω = {1, 2, 3, 4, 5, 6}`
+
+Do đó:
+
+`n(Ω) = 6`
+
+### 3.3. Biến cố
+
+Biến cố là một tập con của không gian mẫu.
+
+Ví dụ:
+- `A`: “ra số chẵn”
+- `A = {2, 4, 6}`
+
+Có:
+- biến cố chắc chắn: luôn xảy ra;
+- biến cố không thể: không thể xảy ra;
+- biến cố ngẫu nhiên: có thể xảy ra hoặc không.
+
+### 3.4. Xác suất cổ điển
+
+Khi các kết quả trong không gian mẫu **đồng khả năng**:
+
+`P(A) = n(A) / n(Ω)`
+
+Trong đó:
+- `n(A)` là số kết quả thuận lợi;
+- `n(Ω)` là tổng số kết quả có thể.
+
+Luôn có:
+
+`0 ≤ P(A) ≤ 1`
+
+### 3.5. Biến cố đối
+
+Nếu `A` là một biến cố thì biến cố đối của `A` là biến cố “A không xảy ra”.
+
+Khi đó:
+
+`P(không A) = 1 - P(A)`
+
+Công thức này đặc biệt hữu ích với các bài “ít nhất một”.
+
+Ví dụ:
+
+`P(ít nhất một lần ngửa) = 1 - P(không có lần nào ngửa)`
+
+### 3.6. Thí nghiệm nhiều bước
+
+Với nhiều bước liên tiếp, có thể dùng:
+- bảng liệt kê;
+- sơ đồ cây.
+
+Ví dụ tung đồng xu hai lần:
+
+`Ω = {NN, NS, SN, SS}`
+
+Nếu đồng xu cân đối thì mỗi kết quả có xác suất `1/4`.
+
+### 3.7. Quy tắc nhân trên sơ đồ cây
+
+Nếu đi theo một nhánh qua nhiều bước độc lập, ta nhân các xác suất trên nhánh đó.
+
+Ví dụ:
+
+`P(NN) = 1/2 × 1/2 = 1/4`
+
+### 3.8. Bảng chọn chiến lược
+
+| Dạng câu hỏi | Hướng xử lý |
+|---|---|
+| Một phép thử đơn giản | Liệt kê không gian mẫu |
+| Các kết quả đồng khả năng | Dùng `P(A)=n(A)/n(Ω)` |
+| Hai hoặc nhiều bước | Dùng bảng hoặc sơ đồ cây |
+| “Ít nhất một” | Cân nhắc dùng biến cố đối |
+| “Đúng một” | Liệt kê các trường hợp phù hợp |
+| “Cả hai” | Xét nhánh thỏa đồng thời hai điều kiện |
 
 ---
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** 02, 21
-- **Chuyên đề sử dụng tiếp:** 24, 25
+- **Kiến thức nên ôn trước:** [02 – Số và phép tính](../02-so-hoc/), [21 – Thống kê](../21-thong-ke/)
+- **Liên hệ mạnh:** phân số, tỉ lệ, đếm trường hợp.
+- **Chuyên đề sử dụng tiếp:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/), [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/)
 
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
 
-Danh mục dạng bài sẽ được bổ sung khi chuyên đề được biên soạn đầy đủ.
+### Dạng 1. Lập không gian mẫu
+
+Liệt kê đầy đủ, không bỏ sót và không trùng.
+
+### Dạng 2. Tính xác suất một biến cố đơn giản
+
+Dùng:
+
+`P(A) = n(A)/n(Ω)`
+
+khi các kết quả đồng khả năng.
+
+### Dạng 3. Biến cố chắc chắn và không thể
+
+Nhận biết nhanh qua điều kiện của phép thử.
+
+### Dạng 4. Tung đồng xu / gieo xúc xắc nhiều lần
+
+Dùng bảng hoặc sơ đồ cây để liệt kê kết quả.
+
+### Dạng 5. Bài “ít nhất một”
+
+Thường nhanh hơn nếu dùng:
+
+`1 - P(không xảy ra lần nào)`
+
+### Dạng 6. Bài “đúng một”
+
+Liệt kê các trường hợp thỏa đúng một điều kiện.
+
+### Dạng 7. Bài toán thực tế
+
+Mô hình hóa tình huống thành phép thử, không gian mẫu và biến cố.
 
 ---
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Các dạng bài liên quan đến thi vào lớp 10 sẽ được đánh dấu theo mức độ ưu tiên và liên kết sang khu vực ôn thi khi hoàn thiện.
+Xác suất thường xuất hiện ở mức cơ bản đến vận dụng vừa và có thể kết hợp với thống kê hoặc bài toán thực tế.
+
+Các kỹ năng cần chắc:
+1. Lập đúng không gian mẫu.
+2. Đếm đúng số kết quả thuận lợi.
+3. Dùng xác suất cổ điển đúng điều kiện.
+4. Dùng sơ đồ cây cho nhiều bước.
+5. Xử lý các câu “ít nhất một”, “đúng một”.
+6. Viết kết luận phù hợp ngữ cảnh.
+
+Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 
 ---
 
 ## ⚠️ 7. Lỗi sai thường gặp
 
-Mục này sẽ tổng hợp các lỗi sai điển hình, nguyên nhân và cách tự kiểm tra.
+| Lỗi sai | Cách tránh |
+|---|---|
+| Bỏ sót kết quả trong không gian mẫu | Liệt kê có hệ thống |
+| Đếm trùng một kết quả | Dùng ký hiệu rõ từng bước |
+| Dùng `n(A)/n(Ω)` khi kết quả không đồng khả năng | Kiểm tra điều kiện trước |
+| Nhầm “ít nhất một” với “đúng một” | Viết lại bằng lời đơn giản |
+| Quên kiểm tra `0 ≤ P ≤ 1` | Kiểm tra sau khi tính |
+| Sơ đồ cây thiếu một nhánh | Mỗi nút phải có đủ khả năng xảy ra |
 
 ---
 
 ## 📝 8. Luyện tập
 
-Bài tập sẽ được chia theo 4 mức:
+### Mức 1 – Nhận biết
 
-1. Nhận biết
-2. Thông hiểu
-3. Vận dụng
-4. Vận dụng cao / tổng hợp
+1. Gieo một xúc xắc. Viết không gian mẫu.
+2. Tung một đồng xu. Nêu biến cố chắc chắn và một biến cố không thể.
+3. Xác suất của một biến cố luôn nằm trong khoảng nào?
+
+### Mức 2 – Thông hiểu
+
+4. Gieo xúc xắc một lần. Tính xác suất ra số lớn hơn `4`.
+5. Tung đồng xu hai lần. Liệt kê không gian mẫu.
+6. Tung đồng xu hai lần. Tính xác suất có đúng một lần ngửa.
+
+### Mức 3 – Vận dụng
+
+7. Gieo hai xúc xắc. Tính xác suất tổng bằng `7`.
+8. Tung đồng xu ba lần. Tính xác suất có ít nhất một lần ngửa.
+9. Một hộp có các thẻ đánh số `1` đến `10`. Rút ngẫu nhiên một thẻ. Tính xác suất rút được số chia hết cho `3`.
+
+### Mức 4 – Tổng hợp
+
+10. Một phép thử gồm tung đồng xu rồi gieo xúc xắc. Lập không gian mẫu và tính xác suất đồng xu ngửa, xúc xắc ra số chẵn.
+11. Một trò chơi gồm hai bước độc lập. Hãy vẽ sơ đồ cây và tính xác suất đạt đúng một lần thành công.
 
 ---
 
 ## ✅ 9. Tự kiểm tra
 
-Bộ câu hỏi tự kiểm tra và tiêu chí đạt sẽ được bổ sung cùng nội dung chi tiết.
+Hãy tự trả lời không nhìn tài liệu:
+
+1. Không gian mẫu là gì?
+2. Biến cố là gì?
+3. Khi nào dùng được `P(A)=n(A)/n(Ω)`?
+4. Biến cố chắc chắn có xác suất bằng bao nhiêu?
+5. Biến cố không thể có xác suất bằng bao nhiêu?
+6. Công thức xác suất của biến cố đối là gì?
+7. Khi nào nên dùng sơ đồ cây?
+8. Với câu “ít nhất một”, chiến lược nào thường ngắn hơn?
+
+**Tiêu chí đạt:** đúng ít nhất `7/8` câu và giải được một bài xác suất nhiều bước.
 
 ---
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** 02, 21
-- **→ Tiếp theo:** 24, 25
+- **← Trước:** [02 – Số và phép tính](../02-so-hoc/), [21 – Thống kê](../21-thong-ke/)
+- **→ Tiếp theo:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/)
+- **→ Tổng hợp:** [25 – Ôn thi vào 10](../25-tong-hop-on-thi-10/)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
@@ -237,8 +432,10 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 Chuyên đề được xem là hoàn thành khi học sinh:
 
-- [ ] Hiểu kiến thức cốt lõi.
-- [ ] Làm chắc các dạng bài nền tảng.
-- [ ] Nhận diện và tránh được lỗi sai thường gặp.
-- [ ] Đạt yêu cầu phần tự kiểm tra.
-- [ ] Biết chuyên đề này kết nối với kiến thức nào trong Roadmap.
+- [ ] Lập đúng không gian mẫu.
+- [ ] Xác định đúng biến cố.
+- [ ] Dùng đúng công thức xác suất cổ điển.
+- [ ] Giải được bài nhiều bước bằng bảng hoặc sơ đồ cây.
+- [ ] Dùng được biến cố đối cho bài “ít nhất một”.
+- [ ] Kiểm tra được tính hợp lý của kết quả.
+- [ ] Đạt ít nhất `7/8` câu tự kiểm tra.
