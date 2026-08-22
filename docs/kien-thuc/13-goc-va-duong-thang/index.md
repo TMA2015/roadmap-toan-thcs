@@ -46,6 +46,41 @@ GÓC VÀ QUAN HỆ GIỮA CÁC ĐƯỜNG THẲNG
 
 ---
 
+## Minh họa trực quan
+
+### 1. Góc đối đỉnh
+
+<p align="center">
+  <img src="../../assets/geometry/13/13-goc-doi-dinh.svg"
+       alt="Minh họa góc đối đỉnh"
+       width="520">
+</p>
+
+> Khi hai đường thẳng cắt nhau, hai góc đối đỉnh bằng nhau.
+
+### 2. Hai đường thẳng song song và một đường cắt
+
+<p align="center">
+  <img src="../../assets/geometry/13/13-hai-duong-song-song-duong-cat.svg"
+       alt="Hai đường thẳng song song cắt bởi một đường thẳng"
+       width="520">
+</p>
+
+> Hình này giúp nhận biết cấu hình cơ bản gồm hai đường thẳng song song và một đường thẳng cắt chúng.
+
+### 3. Góc so le trong
+
+<p align="center">
+  <img src="../../assets/geometry/13/13-goc-so-le-trong.svg"
+       alt="Minh họa góc so le trong"
+       width="520">
+</p>
+
+> Khi hai đường thẳng song song bị cắt bởi một đường thẳng, các cặp góc so le trong bằng nhau.
+
+
+---
+
 ## 🎯 2. Mục tiêu cần đạt
 
 Sau khi hoàn thành chuyên đề, học sinh cần có thể:

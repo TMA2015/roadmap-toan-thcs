@@ -42,6 +42,26 @@ TAM GIÁC
 
 ---
 
+## Minh họa trực quan
+
+### 1. Tam giác cân
+
+<p align="center">
+  <img src="../../assets/geometry/14/14-tam-giac-can.svg" alt="Minh họa tam giác cân" width="520">
+</p>
+
+> Trong tam giác cân, hai cạnh bên bằng nhau thì hai góc ở đáy bằng nhau. Đường từ đỉnh xuống đáy đồng thời là đường cao, trung tuyến và phân giác.
+
+### 2. Định lý Pythagore
+
+<p align="center">
+  <img src="../../assets/geometry/14/14-pythagore.svg" alt="Minh họa định lý Pythagore" width="540">
+</p>
+
+> Với tam giác vuông, bình phương cạnh huyền bằng tổng bình phương hai cạnh góc vuông: `BC² = AB² + AC²`.
+
+---
+
 ## 🎯 2. Mục tiêu cần đạt
 
 Sau khi hoàn thành chuyên đề, học sinh cần:
