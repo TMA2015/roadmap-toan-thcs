@@ -1,6 +1,6 @@
 # Chuyên đề 24 – Bài toán thực tế và mô hình hóa
 
-> **Trạng thái:** Khung chuẩn đã được tạo. Nội dung chi tiết sẽ được hoàn thiện theo thứ tự ưu tiên của Roadmap.
+> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
 >
 > **Lớp trọng tâm:** 6–9  
 > **Mạch kiến thức:** Liên môn/tổng hợp  
@@ -10,7 +10,35 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
-Bản đồ kiến thức chi tiết của chuyên đề sẽ được bổ sung trong giai đoạn biên soạn nội dung.
+```text
+BÀI TOÁN THỰC TẾ & MÔ HÌNH HÓA
+│
+├── Đọc và phân tích đề
+│   ├── đại lượng đã biết
+│   ├── đại lượng cần tìm
+│   └── đơn vị / điều kiện
+│
+├── Chọn mô hình
+│   ├── công thức
+│   ├── phương trình / hệ phương trình
+│   ├── lượng giác / hình học
+│   └── thống kê / xác suất
+│
+├── Giải mô hình
+│   └── biến đổi và tính toán
+│
+├── Kiểm tra
+│   ├── điều kiện nghiệm
+│   ├── đơn vị
+│   └── tính hợp lý
+│
+└── Diễn giải kết quả
+    └── trả lời đúng ngữ cảnh thực tế
+```
+
+Mạch tư duy trọng tâm:
+
+**tình huống thực tế → mô hình toán học → lời giải → kiểm tra → kết luận thực tế.**
 
 ---
 
@@ -215,66 +243,277 @@ Hoặc gạch chân:
 
 Sau khi hoàn thành chuyên đề, học sinh cần:
 
-- [ ] Nắm được các khái niệm và tính chất cốt lõi.
-- [ ] Nhận dạng được các dạng bài cơ bản và trọng tâm.
-- [ ] Biết lựa chọn phương pháp giải phù hợp.
-- [ ] Trình bày lời giải rõ ràng và kiểm tra được kết quả.
-- [ ] Biết liên hệ kiến thức với các chuyên đề trước và sau.
+- [ ] Tách được dữ kiện, đại lượng cần tìm và quan hệ trong một đề thực tế.
+- [ ] Đặt ẩn đúng, có điều kiện và đơn vị.
+- [ ] Chọn được mô hình phù hợp: công thức, phương trình, hệ, lượng giác, thống kê hoặc xác suất.
+- [ ] Lập và giải được mô hình toán học.
+- [ ] Kiểm tra nghiệm theo điều kiện và bối cảnh thực tế.
+- [ ] Đổi đơn vị và làm tròn đúng yêu cầu.
+- [ ] Viết câu trả lời cuối cùng đúng đại lượng đề hỏi.
 
 ---
 
 ## 📖 3. Kiến thức cốt lõi
 
-Nội dung cốt lõi sẽ được biên soạn theo chương trình Toán THCS và chuẩn cấu trúc của Roadmap.
+### 3.1. Mô hình hóa toán học
+
+Mô hình hóa là quá trình biến một tình huống thực tế thành ngôn ngữ toán học.
+
+Một lời giải đầy đủ thường có 4 lớp:
+
+1. **Tình huống thực tế**
+2. **Mô hình toán học**
+3. **Giải mô hình**
+4. **Diễn giải kết quả**
+
+### 3.2. Đọc đề theo đại lượng
+
+Với đề nhiều chữ, hãy lập bảng:
+
+| Đại lượng | Đã biết | Chưa biết | Đơn vị |
+|---|---:|---:|---|
+| Quãng đường | ... | ... | km |
+| Vận tốc | ... | ... | km/h |
+| Thời gian | ... | ... | h |
+
+Cách này giúp tránh bỏ sót dữ kiện.
+
+### 3.3. Đặt ẩn
+
+Một cách đặt ẩn tốt cần có:
+- đại lượng rõ ràng;
+- đơn vị;
+- điều kiện.
+
+Ví dụ:
+
+`Gọi x (km/h) là vận tốc của xe, x > 0.`
+
+### 3.4. Bài toán chuyển động
+
+Ba công thức cơ bản:
+
+`S = v × t`
+
+`v = S/t`
+
+`t = S/v`
+
+Luôn đổi đơn vị trước khi lập phương trình.
+
+### 3.5. Bài toán năng suất
+
+Mô hình cơ bản:
+
+`Công việc = năng suất × thời gian`
+
+Nếu hoàn thành toàn bộ công việc thì có thể quy ước:
+
+`Công việc = 1`
+
+Ví dụ một người làm một mình hết `a` giờ thì năng suất là:
+
+`1/a`
+
+### 3.6. Bài toán phần trăm
+
+Nếu tăng `p%`:
+
+`giá mới = giá cũ × (1 + p%)`
+
+Nếu giảm `p%`:
+
+`giá mới = giá cũ × (1 - p%)`
+
+Cần đặc biệt chú ý **giá trị gốc** mà phần trăm được tính trên đó.
+
+### 3.7. Bài toán lập phương trình / hệ
+
+Dùng phương trình khi có một đại lượng chưa biết chính.
+
+Dùng hệ phương trình khi có hai đại lượng chưa biết liên hệ với nhau.
+
+Quy trình:
+1. đặt ẩn;
+2. lập quan hệ;
+3. giải;
+4. kiểm tra điều kiện;
+5. kết luận.
+
+### 3.8. Bài toán hình học thực tế
+
+Các công cụ thường dùng:
+- diện tích;
+- thể tích;
+- Pythagore;
+- lượng giác;
+- đồng dạng.
+
+Ví dụ tính chiều cao:
+
+`h = d × tan α`
+
+### 3.9. Bài toán dữ liệu
+
+Có thể cần:
+- đọc bảng / biểu đồ;
+- tính trung bình;
+- tính phần trăm;
+- so sánh dữ liệu;
+- đưa ra nhận xét.
+
+### 3.10. Kiểm tra kết quả
+
+Sau khi có đáp số, cần kiểm tra:
+- có đúng đơn vị không;
+- có thỏa điều kiện của ẩn không;
+- có hợp lý về độ lớn không;
+- có cần làm tròn không;
+- câu trả lời có đúng đại lượng đề hỏi không.
+
+### 3.11. Bảng chọn mô hình
+
+| Dấu hiệu trong đề | Mô hình nên dùng |
+|---|---|
+| quãng đường – vận tốc – thời gian | `S = vt` |
+| năng suất – thời gian | `A = nt` |
+| tăng/giảm giá | phần trăm |
+| một đại lượng chưa biết | phương trình |
+| hai đại lượng chưa biết | hệ phương trình |
+| chiều cao – khoảng cách – góc | lượng giác |
+| diện tích – thể tích | công thức hình học |
+| bảng / biểu đồ / số liệu | thống kê |
+| khả năng xảy ra | xác suất |
 
 ---
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** 02–23
-- **Chuyên đề sử dụng tiếp:** 25
+- **Kiến thức nên ôn trước:** các chuyên đề nền từ [02 – Số và phép tính](../02-so-hoc/) đến [23 – Xác suất](../23-xac-suat/)
+- **Liên hệ mạnh:** phương trình, hệ phương trình, phần trăm, lượng giác, thống kê, xác suất.
+- **Chuyên đề sử dụng tiếp:** [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/)
 
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
 
-Danh mục dạng bài sẽ được bổ sung khi chuyên đề được biên soạn đầy đủ.
+### Dạng 1. Chuyển động
+
+Dùng `S = vt`, lập phương trình từ thời gian hoặc quãng đường.
+
+### Dạng 2. Năng suất – công việc
+
+Dùng `công việc = năng suất × thời gian`.
+
+### Dạng 3. Phần trăm – tăng giảm giá
+
+Xác định đúng giá trị gốc rồi áp dụng tỉ lệ phần trăm.
+
+### Dạng 4. Tuổi – số lượng – quan hệ đại lượng
+
+Đặt ẩn rồi lập phương trình hoặc hệ.
+
+### Dạng 5. Hình học thực tế
+
+Tính chiều cao, khoảng cách, diện tích, thể tích bằng công thức phù hợp.
+
+### Dạng 6. Dữ liệu thực tế
+
+Đọc bảng, biểu đồ, tính trung bình hoặc phần trăm và rút ra kết luận.
+
+### Dạng 7. Xác suất thực tế
+
+Xác định phép thử, không gian mẫu và biến cố.
+
+### Dạng 8. Bài tổng hợp nhiều bước
+
+Kết hợp nhiều chuyên đề, ví dụ:
+- phần trăm + phương trình;
+- lượng giác + hình học;
+- thống kê + phần trăm.
 
 ---
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Các dạng bài liên quan đến thi vào lớp 10 sẽ được đánh dấu theo mức độ ưu tiên và liên kết sang khu vực ôn thi khi hoàn thiện.
+Đây là nhóm bài có mức độ xuất hiện cao trong đề thi vào 10 vì kiểm tra khả năng vận dụng toán học vào tình huống thực tế.
+
+Các kỹ năng cần chắc:
+1. Đọc đề dài và tóm tắt dữ kiện.
+2. Đặt ẩn có điều kiện.
+3. Lập đúng phương trình hoặc hệ.
+4. Chọn đúng công thức hình học / lượng giác.
+5. Xử lý phần trăm và đơn vị.
+6. Kiểm tra nghiệm và trả lời theo ngữ cảnh.
+
+Mức ưu tiên ôn thi: **⭐⭐⭐⭐⭐**.
 
 ---
 
 ## ⚠️ 7. Lỗi sai thường gặp
 
-Mục này sẽ tổng hợp các lỗi sai điển hình, nguyên nhân và cách tự kiểm tra.
+| Lỗi sai | Cách tránh |
+|---|---|
+| Không đổi đơn vị trước khi tính | Đưa tất cả về cùng hệ đơn vị |
+| Đặt ẩn không có điều kiện | Ghi điều kiện ngay khi đặt |
+| Lập phương trình đúng nhưng giải sai đại lượng đề hỏi | Đọc lại câu hỏi cuối |
+| Tính phần trăm trên sai giá trị gốc | Xác định rõ “phần trăm của cái gì” |
+| Nhận nghiệm không phù hợp thực tế | Thế lại điều kiện |
+| Làm tròn quá sớm | Chỉ làm tròn ở bước cuối |
+| Quên đơn vị ở đáp số | Ghi đơn vị trong kết luận |
+| Có kết quả nhưng không viết câu trả lời | Luôn kết thúc bằng một câu theo ngữ cảnh |
 
 ---
 
 ## 📝 8. Luyện tập
 
-Bài tập sẽ được chia theo 4 mức:
+### Mức 1 – Nhận biết
 
-1. Nhận biết
-2. Thông hiểu
-3. Vận dụng
-4. Vận dụng cao / tổng hợp
+1. Viết ba công thức liên hệ `S, v, t`.
+2. Một sản phẩm giảm `20%`. Viết công thức tính giá mới từ giá cũ.
+3. Khi đặt ẩn cho vận tốc, cần ghi điều kiện gì?
+
+### Mức 2 – Thông hiểu
+
+4. Một xe đi `150 km` với vận tốc `50 km/h`. Tính thời gian.
+5. Một sản phẩm giá `800.000 đồng`, giảm `15%`. Tính giá phải trả.
+6. Một công việc làm một mình hết `5 giờ`. Năng suất mỗi giờ là bao nhiêu phần công việc?
+
+### Mức 3 – Vận dụng
+
+7. Một xe đi nhanh hơn xe khác `10 km/h` và đến sớm hơn trong cùng quãng đường. Hãy đặt ẩn và lập phương trình.
+8. Một tòa nhà được nhìn từ điểm cách chân `30 m` dưới góc nâng `40°`. Lập biểu thức tính chiều cao.
+9. Hai loại vé có tổng số vé và tổng doanh thu đã biết. Hãy đặt hai ẩn và lập hệ phương trình.
+
+### Mức 4 – Tổng hợp
+
+10. Một cửa hàng giảm giá rồi tiếp tục giảm thêm một tỉ lệ khác. Tính giá cuối và giải thích vì sao không cộng trực tiếp hai tỉ lệ.
+11. Một bài chuyển động có hai giai đoạn với vận tốc khác nhau. Hãy lập mô hình và tính thời gian tổng.
+12. Một bài thực tế yêu cầu dùng lượng giác để tìm độ dài rồi dùng công thức diện tích để tính chi phí.
 
 ---
 
 ## ✅ 9. Tự kiểm tra
 
-Bộ câu hỏi tự kiểm tra và tiêu chí đạt sẽ được bổ sung cùng nội dung chi tiết.
+Hãy tự trả lời không nhìn tài liệu:
+
+1. Mô hình hóa toán học gồm những bước chính nào?
+2. Khi nào nên dùng phương trình? Khi nào nên dùng hệ?
+3. Vì sao phải ghi điều kiện của ẩn?
+4. Công thức cơ bản của bài chuyển động là gì?
+5. Công thức cơ bản của bài năng suất là gì?
+6. Khi tính phần trăm, cần xác định điều gì trước?
+7. Sau khi giải xong, cần kiểm tra những gì?
+8. Vì sao câu trả lời cuối cùng phải quay lại ngữ cảnh thực tế?
+
+**Tiêu chí đạt:** đúng ít nhất `7/8` câu và giải được một bài thực tế có đầy đủ đặt ẩn – lập mô hình – kiểm tra – kết luận.
 
 ---
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** 02–23
-- **→ Tiếp theo:** 25
+- **← Trước:** [02 – Số và phép tính](../02-so-hoc/) → [23 – Xác suất](../23-xac-suat/)
+- **→ Tiếp theo:** [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
@@ -284,8 +523,10 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 Chuyên đề được xem là hoàn thành khi học sinh:
 
-- [ ] Hiểu kiến thức cốt lõi.
-- [ ] Làm chắc các dạng bài nền tảng.
-- [ ] Nhận diện và tránh được lỗi sai thường gặp.
-- [ ] Đạt yêu cầu phần tự kiểm tra.
-- [ ] Biết chuyên đề này kết nối với kiến thức nào trong Roadmap.
+- [ ] Đọc và tóm tắt đúng dữ kiện.
+- [ ] Đặt ẩn có điều kiện và đơn vị.
+- [ ] Chọn đúng mô hình toán học.
+- [ ] Giải và kiểm tra được nghiệm.
+- [ ] Đổi đơn vị và làm tròn đúng yêu cầu.
+- [ ] Viết được câu kết luận đúng ngữ cảnh.
+- [ ] Đạt ít nhất `7/8` câu tự kiểm tra.
