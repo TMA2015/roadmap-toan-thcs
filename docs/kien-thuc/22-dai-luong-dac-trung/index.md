@@ -14,6 +14,122 @@ Bản đồ kiến thức chi tiết của chuyên đề sẽ được bổ sung
 
 ---
 
+## Minh họa trực quan
+
+### 1. Số trung bình cộng
+
+<p align="center">
+  <img src="../../assets/statistics/22/22-trung-binh.svg"
+       alt="Minh họa số trung bình cộng"
+       width="560">
+</p>
+
+> Số trung bình cộng cho biết mức “trung bình” của một bộ dữ liệu.
+
+Công thức:
+
+`Số trung bình = tổng các giá trị / số lượng giá trị`
+
+Ví dụ trong hình:
+
+- tổng các giá trị là `56`;
+- có `7` giá trị;
+- nên số trung bình là `56 / 7 = 8`.
+
+---
+
+### 2. Trung vị và mốt
+
+<p align="center">
+  <img src="../../assets/statistics/22/22-trung-vi-mot.svg"
+       alt="Minh họa trung vị và mốt"
+       width="560">
+</p>
+
+> **Trung vị** là giá trị đứng giữa sau khi dữ liệu đã được sắp xếp theo thứ tự.
+
+> **Mốt** là giá trị xuất hiện nhiều nhất trong bộ dữ liệu.
+
+Trong ví dụ:
+
+- dữ liệu đã sắp xếp là `5, 6, 7, 7, 7, 8, 10`;
+- giá trị ở giữa là `7` nên **trung vị = 7**;
+- giá trị xuất hiện nhiều nhất cũng là `7` nên **mốt = 7**.
+
+Lưu ý:
+
+- muốn tìm trung vị, luôn phải **sắp xếp dữ liệu trước**;
+- một bộ dữ liệu có thể có **một mốt, nhiều mốt hoặc không có mốt rõ ràng**.
+
+---
+
+### 3. Ảnh hưởng của giá trị ngoại lai
+
+<p align="center">
+  <img src="../../assets/statistics/22/22-ngoai-lai.svg"
+       alt="Minh họa ảnh hưởng của giá trị ngoại lai"
+       width="560">
+</p>
+
+> **Giá trị ngoại lai** là một giá trị quá lớn hoặc quá nhỏ so với phần còn lại của dữ liệu.
+
+Trong hình:
+
+- Bộ A: `7, 8, 8, 9, 9` có trung bình `8,2` và trung vị `8`;
+- Bộ B: `7, 8, 8, 9, 30` có trung bình `12,4` nhưng trung vị vẫn là `8`.
+
+Nhận xét quan trọng:
+
+> Giá trị ngoại lai có thể làm **số trung bình thay đổi mạnh**, nhưng thường **ít ảnh hưởng hơn đến trung vị**.
+
+---
+
+### Khi nào nên dùng đại lượng nào?
+
+| Đại lượng | Ý nghĩa | Phù hợp khi nào? |
+|---|---|---|
+| Số trung bình cộng | Giá trị trung bình chung | Dữ liệu khá ổn định, không có ngoại lai quá lớn |
+| Trung vị | Giá trị đứng giữa | Dữ liệu có ngoại lai hoặc cần mức “điển hình” |
+| Mốt | Giá trị xuất hiện nhiều nhất | Cần biết giá trị phổ biến nhất |
+
+---
+
+### Bảng so sánh nhanh
+
+| Đại lượng | Cách tìm | Ưu điểm | Hạn chế |
+|---|---|---|---|
+| Trung bình | Cộng tất cả rồi chia cho số phần tử | Dễ tính, dùng nhiều | Nhạy với ngoại lai |
+| Trung vị | Sắp xếp rồi lấy giá trị giữa | Ít bị ảnh hưởng bởi ngoại lai | Không phản ánh hết mọi giá trị |
+| Mốt | Tìm giá trị xuất hiện nhiều nhất | Dễ hiểu, trực quan | Có thể có nhiều mốt |
+
+---
+
+### Mẹo làm bài
+
+- Với **trung bình**, nhớ tính đúng tổng rồi chia đúng số phần tử.
+- Với **trung vị**, phải sắp xếp dữ liệu trước.
+- Với **mốt**, kiểm tra giá trị nào lặp lại nhiều nhất.
+- Khi đề bài có một giá trị quá lớn hoặc quá nhỏ, hãy nghĩ ngay đến **ngoại lai**.
+- Nếu đề yêu cầu “giá trị đại diện hợp lý hơn”, nhiều khi **trung vị** là lựa chọn tốt hơn trung bình.
+
+---
+
+### Quy trình xử lý dữ liệu trong bài toán thực tế
+
+```text
+Thu thập dữ liệu
+      ↓
+Sắp xếp dữ liệu
+      ↓
+Tính trung bình / tìm trung vị / tìm mốt
+      ↓
+So sánh các kết quả
+      ↓
+Chọn đại lượng phù hợp để nhận xét
+```
+
+---
+
 ## 🎯 2. Mục tiêu cần đạt
 
 Sau khi hoàn thành chuyên đề, học sinh cần:
