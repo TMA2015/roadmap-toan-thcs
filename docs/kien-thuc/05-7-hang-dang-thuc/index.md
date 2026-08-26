@@ -1,7 +1,7 @@
 # Chuyên đề 05 – 7 Hằng đẳng thức đáng nhớ
 
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
 > **Lớp trọng tâm:** 8
 > **Mạch kiến thức:** Đại số
@@ -62,13 +62,15 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 ## 📖 3. Kiến thức cốt lõi
 
+> **Ghi nhớ:** hằng đẳng thức là đẳng thức đúng với mọi giá trị của các biến làm cho hai vế có nghĩa. Trong các công thức dưới đây, `A` và `B` có thể là số, đơn thức hoặc biểu thức đại số.
+
 ### 3.1. Bình phương của một tổng
 
 $$
 (A+B)^2=A^2+2AB+B^2
 $$
 
-**Cách đọc:** bình phương số thứ nhất + hai lần tích hai số + bình phương số thứ hai.
+**Cách đọc:** bình phương biểu thức thứ nhất + hai lần tích hai biểu thức + bình phương biểu thức thứ hai.
 
 Ví dụ:
 
@@ -404,7 +406,9 @@ $$
 
 ### Dạng 7 – Chứng minh đẳng thức
 
-**Nguyên tắc:** biến đổi một vế về vế còn lại, hoặc biến đổi cả hai vế về cùng một biểu thức.
+**Nguyên tắc:** biến đổi một vế về vế còn lại, hoặc biến đổi cả hai vế về cùng một biểu thức bằng các phép biến đổi tương đương.
+
+> Cần phân biệt **hằng đẳng thức** với **phương trình**: hằng đẳng thức đúng với mọi giá trị thích hợp của biến, còn phương trình chỉ đúng với những giá trị thỏa mãn nó.
 
 Ví dụ, chứng minh:
 
@@ -455,7 +459,7 @@ $$
 | Khai triển và thu gọn | ⭐⭐⭐⭐ | Kỹ năng nền |
 | Phân tích bằng hiệu hai bình phương | ⭐⭐⭐⭐⭐ | Rất quan trọng cho biến đổi đại số |
 | Nhận dạng bình phương hoàn chỉnh | ⭐⭐⭐⭐⭐ | Dùng trong rút gọn, phương trình, bất đẳng thức |
-| Tổng/hiệu hai lập phương | ⭐⭐⭐⭐ | Thường xuất hiện trong phân tích đa thức |
+| Tổng/hiệu hai lập phương | ⭐⭐⭐⭐ | Công cụ quan trọng khi phân tích đa thức |
 | Rút gọn biểu thức nhiều bước | ⭐⭐⭐⭐⭐ | Kết nối với phân thức và căn thức |
 | Tính nhanh / biến đổi thông minh | ⭐⭐⭐ | Rèn nhận dạng cấu trúc |
 | Chứng minh đẳng thức | ⭐⭐⭐⭐ | Kiểm tra năng lực biến đổi |
