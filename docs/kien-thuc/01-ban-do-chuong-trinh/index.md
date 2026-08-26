@@ -2,8 +2,8 @@
 
 > **Trạng thái:** Bản đồ tổng thể của chương trình Toán THCS đã hoàn thiện theo cấu trúc Roadmap.
 >
-> **Lớp trọng tâm:** 6–9  
-> **Mạch kiến thức:** Tổng hợp  
+> **Lớp trọng tâm:** 6–9
+> **Mạch kiến thức:** Tổng hợp
 > **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
@@ -15,26 +15,26 @@ TOÁN THCS – BẢN ĐỒ 25 CHUYÊN ĐỀ
 │
 ├── A. SỐ & ĐẠI SỐ
 │   ├── 02. Số và phép tính
-│   ├── 03. Phân số – tỉ số – phần trăm
-│   ├── 04. Biểu thức đại số
-│   ├── 05. Hằng đẳng thức
+│   ├── 03. Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ
+│   ├── 04. Biểu thức và biến đổi đại số
+│   ├── 05. 7 Hằng đẳng thức đáng nhớ
 │   ├── 06. Phân tích đa thức thành nhân tử
 │   ├── 07. Phân thức đại số
-│   ├── 08. Phương trình – bất phương trình
-│   ├── 09. Hệ phương trình
+│   ├── 08. Phương trình và bất phương trình
+│   ├── 09. Hệ phương trình bậc nhất hai ẩn
 │   ├── 10. Hàm số và đồ thị
-│   ├── 11. Căn thức
-│   └── 12. Hàm số bậc hai – phương trình bậc hai – Viète
+│   ├── 11. Căn thức và biến đổi căn thức
+│   └── 12. Phương trình bậc hai & Viète – chuẩn bị THPT
 │
 ├── B. HÌNH HỌC
 │   ├── 13. Góc và quan hệ giữa các đường thẳng
 │   ├── 14. Tam giác
-│   ├── 15. Các đường đặc biệt và đồng quy trong tam giác
+│   ├── 15. Các đường đồng quy trong tam giác
 │   ├── 16. Tứ giác và các hình đặc biệt
-│   ├── 17. Thales và tam giác đồng dạng
+│   ├── 17. Định lý Thales và tam giác đồng dạng
 │   ├── 18. Hệ thức lượng trong tam giác vuông
 │   ├── 19. Đường tròn
-│   └── 20. Hình học tổng hợp – đo lường – hình khối
+│   └── 20. Hình học tổng hợp, đo lường và hình khối
 │
 ├── C. THỐNG KÊ & XÁC SUẤT
 │   ├── 21. Thống kê và thu thập dữ liệu
