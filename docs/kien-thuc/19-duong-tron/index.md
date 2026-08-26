@@ -1,9 +1,9 @@
 # Chuyên đề 19 – Đường tròn
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
-> **Lớp trọng tâm:** 9  
-> **Mạch kiến thức:** Hình học  
+> **Lớp trọng tâm:** 9
+> **Mạch kiến thức:** Hình học
 > **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
@@ -188,11 +188,11 @@ Dấu hiệu nhận biết:
 
 > Một đường thẳng đi qua điểm `A` thuộc đường tròn và vuông góc với bán kính `OA` thì là tiếp tuyến tại `A`.
 
-Nếu từ điểm `P` ngoài đường tròn kẻ hai tiếp tuyến `PA`, `PB`, thì:
+Nếu từ điểm `P` ngoài đường tròn kẻ hai tiếp tuyến `PA`, `PB` tại `A`, `B`, thì:
 
 `PA = PB`
 
-và đường nối `OP` thường là trục đối xứng của cấu hình.
+Ngoài ra, `OP` là đường trung trực của `AB` và là phân giác của `∠APB`. Đây là các tính chất rất hữu ích khi khai thác cấu hình hai tiếp tuyến.
 
 ### 3.4. Tứ giác nội tiếp
 
@@ -207,8 +207,8 @@ Tính chất quan trọng:
 Một số dấu hiệu thường dùng để chứng minh tứ giác nội tiếp:
 
 - tổng hai góc đối bằng `180°`;
-- hai góc cùng nhìn một đoạn thẳng dưới một góc bằng nhau;
-- hai góc vuông cùng chắn một đường kính.
+- nếu hai điểm `C`, `D` nằm cùng phía đối với đường thẳng `AB` và `∠ACB = ∠ADB`, thì bốn điểm `A, B, C, D` cùng thuộc một đường tròn;
+- nếu `∠AMB = ∠ANB = 90°` thì `A, M, B, N` cùng thuộc đường tròn có đường kính `AB`.
 
 ### 3.5. Hai dây cắt nhau
 
@@ -262,8 +262,8 @@ Dùng `PA = PB` và khai thác tam giác cân hoặc đối xứng.
 
 Ưu tiên các dấu hiệu:
 - tổng hai góc đối bằng `180°`;
-- hai góc bằng nhau cùng chắn một đoạn;
-- hai góc vuông.
+- hai góc bằng nhau cùng nhìn một đoạn thẳng, với hai đỉnh góc nằm cùng phía đối với đường thẳng chứa đoạn đó;
+- hai góc vuông cùng nhìn một đoạn thẳng, từ đó nhận ra đường tròn có đường kính là đoạn ấy.
 
 ### Dạng 5. Tính độ dài bằng hai dây cắt nhau
 
@@ -285,9 +285,9 @@ Kết hợp tiếp tuyến, nội tiếp, đồng dạng, hệ thức tích và 
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Đây là một trong những chuyên đề quan trọng nhất của hình học thi vào 10.
+Trong Roadmap ôn thi vào lớp 10, đây là chuyên đề có mức ưu tiên rất cao.
 
-Các kỹ năng thường gặp:
+Các kỹ năng cần chắc:
 1. Chứng minh tứ giác nội tiếp.
 2. Chứng minh tiếp tuyến.
 3. Chứng minh hai tam giác đồng dạng trong cấu hình đường tròn.
@@ -308,7 +308,7 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐⭐**.
 | Chứng minh tiếp tuyến nhưng quên điểm thuộc đường tròn | Cần đủ: điểm trên đường tròn + vuông góc bán kính |
 | Dùng sai định lý hai dây cắt nhau | Điểm giao phải nằm bên trong đường tròn |
 | Dùng sai tiếp tuyến – cát tuyến | Điểm xuất phát phải ở ngoài đường tròn |
-| Kết luận nội tiếp khi mới có một góc vuông | Cần tạo được hai góc cùng chắn một đường kính hoặc dấu hiệu đầy đủ |
+| Kết luận nội tiếp khi mới có một góc vuông | Một góc vuông chỉ cho biết một điểm nằm trên đường tròn có đường kính xác định; cần thêm điều kiện cho điểm còn lại hoặc dùng một dấu hiệu nội tiếp đầy đủ |
 
 ---
 
