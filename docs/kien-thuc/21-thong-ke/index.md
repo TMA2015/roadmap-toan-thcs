@@ -1,6 +1,6 @@
 # Chuyên đề 21 – Thống kê và thu thập dữ liệu
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 6–9
 > **Mạch kiến thức:** Thống kê
@@ -375,6 +375,9 @@ Hãy tự trả lời không nhìn tài liệu:
 - **→ Kiến thức nền liên hệ:** [03 – Tỉ lệ và tỉ lệ thức](../03-ti-le-ti-le-thuc/index.md)
 - **→ Liên hệ:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 21](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 21](tu-kiem-tra.md)
+
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
@@ -389,4 +392,4 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Đọc chính xác biểu đồ cột và đoạn thẳng.
 - [ ] Chọn đúng dạng biểu diễn dữ liệu.
 - [ ] Viết được nhận xét có căn cứ.
-- [ ] Đạt ít nhất `7/8` câu tự kiểm tra.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 22.
