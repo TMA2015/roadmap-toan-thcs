@@ -1,7 +1,7 @@
 # Chuyên đề 02 – Số và phép tính
 
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
 > **Lớp trọng tâm:** 6–9
 > **Mạch kiến thức:** Số
@@ -59,7 +59,7 @@ SỐ VÀ PHÉP TÍNH
 Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 - [ ] Phân biệt được các tập hợp số thường gặp trong THCS.
-- [ ] Thực hiện đúng các phép tính với số nguyên, phân số, số hữu tỉ và số thực.
+- [ ] Thực hiện đúng các phép tính với số nguyên, phân số và số hữu tỉ; nhận biết, so sánh và ước lượng số thực ở mức nền tảng.
 - [ ] Vận dụng đúng thứ tự thực hiện phép tính.
 - [ ] Sử dụng thành thạo dấu hiệu chia hết, ƯCLN và BCNN.
 - [ ] Rút gọn, quy đồng và so sánh phân số chính xác.
@@ -164,13 +164,24 @@ Ví dụ:
 
 ### 3.5. Lũy thừa
 
-Với `a ≠ 0`:
+Với số mũ tự nhiên, các quy tắc cơ bản:
 
 ```text
 a^m · a^n = a^(m+n)
-a^m : a^n = a^(m-n)  (m ≥ n)
 (a^m)^n = a^(mn)
 (ab)^n = a^n b^n
+```
+
+Riêng phép chia cần `a ≠ 0`; khi `m ≥ n`:
+
+```text
+a^m : a^n = a^(m-n)
+```
+
+Ngoài ra, với `a ≠ 0`:
+
+```text
+a^0 = 1
 ```
 
 Cần đặc biệt phân biệt:
@@ -443,6 +454,8 @@ x = 7/10 - 6/10 = 1/10
 
 ### Dạng 9 – Giá trị tuyệt đối
 
+> **Mức mở rộng:** bài toán tìm `x` từ biểu thức giá trị tuyệt đối dùng để rèn tư duy và chuẩn bị cho đại số; không nên hiểu là yêu cầu cốt lõi của mọi lớp THCS.
+
 Ví dụ:
 
 ```text
@@ -481,7 +494,7 @@ Thường xuất hiện trong bài toán thực tế, thống kê và mô hình 
 
 ### Trọng tâm 3 – Giá trị tuyệt đối và căn bậc hai ⭐⭐⭐⭐
 
-Là nền cho biểu thức căn và phương trình chứa căn ở lớp 9.
+Là nền cho số thực ở lớp 7 và căn thức ở lớp 9.
 
 ### Trọng tâm 4 – Chia hết, số nguyên ⭐⭐⭐
 
