@@ -1,6 +1,6 @@
 # Chuyên đề 25 – Bản đồ tổng hợp & chiến lược ôn thi vào 10
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật và chiến lược ôn tập.
+> **Trạng thái:** Đã kiểm định nội dung học thuật và chiến lược ôn tập; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 9
 > **Mạch kiến thức:** Tổng hợp/Thi vào 10
@@ -540,6 +540,9 @@ Hãy tự trả lời không nhìn tài liệu:
 - **→ Tiếp theo:** quay lại các chuyên đề được xếp nhóm ưu tiên A/B theo kết quả luyện đề.
 - **🏁 Kết thúc Roadmap:** dùng chuyên đề này như bảng điều khiển ôn tập.
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 25](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 25](tu-kiem-tra.md)
+
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
@@ -554,5 +557,5 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Có sổ lỗi sai và quy trình chữa đề.
 - [ ] Biết phân loại lỗi kiến thức – kỹ năng – cẩu thả.
 - [ ] Biết điều chỉnh chiến lược theo cấu trúc đề địa phương.
-- [ ] Đạt ít nhất `7/8` câu tự kiểm tra.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai.
 - [ ] Hoàn thành được một đề có bấm giờ và phân tích lại đầy đủ.
