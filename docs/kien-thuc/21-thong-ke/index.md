@@ -1,9 +1,9 @@
 # Chuyên đề 21 – Thống kê và thu thập dữ liệu
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
-> **Lớp trọng tâm:** 6–9  
-> **Mạch kiến thức:** Thống kê  
+> **Lớp trọng tâm:** 6–9
+> **Mạch kiến thức:** Thống kê
 > **Mức ưu tiên:** ⭐⭐⭐⭐
 
 ---
@@ -55,7 +55,7 @@ Mạch tư duy trọng tâm:
 Các khái niệm cần nhớ:
 
 - **Dữ liệu**: các số liệu hoặc thông tin thu thập được;
-- **Giá trị của dấu hiệu**: các giá trị cụ thể xuất hiện trong dữ liệu;
+- **Giá trị dữ liệu**: các giá trị cụ thể xuất hiện trong bộ dữ liệu;
 - **Tần số**: số lần một giá trị xuất hiện;
 - **Tần suất**: tỉ lệ giữa tần số và tổng số quan sát.
 
@@ -233,12 +233,15 @@ Cần quan sát:
 
 ### 3.7. Chất lượng dữ liệu
 
-Dữ liệu tốt cần:
-- đúng đối tượng;
-- đủ số lượng quan sát;
-- ghi chép nhất quán;
-- không nhầm đơn vị;
-- không bỏ sót hoặc đếm trùng.
+Khi đánh giá dữ liệu cần xem xét:
+- dữ liệu có đúng đối tượng và đúng mục tiêu khảo sát hay không;
+- cách chọn đối tượng có hợp lý, tránh thiên lệch rõ ràng hay không;
+- số lượng quan sát có phù hợp với mục tiêu mô tả hay không;
+- cách đo, hỏi và ghi chép có nhất quán hay không;
+- đơn vị có thống nhất hay không;
+- có bỏ sót, đếm trùng hoặc ghi sai dữ liệu hay không.
+
+> Một bảng số liệu được ghi đúng chưa chắc đã đại diện tốt cho toàn bộ nhóm cần nghiên cứu nếu cách chọn mẫu bị thiên lệch.
 
 ### 3.8. Bảng chọn cách biểu diễn
 
@@ -253,8 +256,8 @@ Dữ liệu tốt cần:
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** [01 – Bản đồ chương trình](../01-ban-do-chuong-trinh/index.md)
-- **Liên hệ mạnh:** tỉ số, phần trăm, đọc bảng và biểu đồ.
+- **Kiến thức nên ôn trước:** tỉ số, phần trăm và kỹ năng đọc bảng số liệu; có thể xem lại [03 – Tỉ lệ và tỉ lệ thức](../03-ti-le-ti-le-thuc/index.md).
+- **Liên hệ mạnh:** phần trăm, đọc bảng, biểu đồ và diễn giải dữ liệu.
 - **Chuyên đề sử dụng tiếp:** [22 – Các đại lượng đặc trưng của dữ liệu](../22-dai-luong-dac-trung/index.md), [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
 
 ---
@@ -295,7 +298,7 @@ Từ bảng → vẽ biểu đồ, hoặc từ biểu đồ → lập lại bả
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Trong đề thi vào 10, thống kê thường xuất hiện ở mức cơ bản đến vận dụng vừa.
+Trong Roadmap ôn thi vào lớp 10, thống kê được xếp ở mức ưu tiên cao vừa phải và cần chắc kỹ năng đọc, tính toán và diễn giải dữ liệu.
 
 Các kỹ năng cần chắc:
 1. Đọc đúng bảng hoặc biểu đồ.
@@ -367,8 +370,9 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [01 – Bản đồ chương trình](../01-ban-do-chuong-trinh/index.md)
+- **← Trước:** [20 – Hình học tổng hợp, đo lường và hình khối](../20-hinh-hoc-tong-hop/index.md)
 - **→ Tiếp theo:** [22 – Các đại lượng đặc trưng](../22-dai-luong-dac-trung/index.md)
+- **→ Kiến thức nền liên hệ:** [03 – Tỉ lệ và tỉ lệ thức](../03-ti-le-ti-le-thuc/index.md)
 - **→ Liên hệ:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
