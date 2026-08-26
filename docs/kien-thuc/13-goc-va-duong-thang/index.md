@@ -1,7 +1,7 @@
 # Chuyên đề 13 – Góc và quan hệ giữa các đường thẳng
 
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 6–7
 > **Mạch kiến thức:** Hình học
@@ -780,6 +780,9 @@ Tam giác Tứ giác   Thales
 - **→ Liên hệ:** [16. Tứ giác và các hình đặc biệt](../16-tu-giac/index.md)
 - **→ Liên hệ:** [17. Định lý Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md)
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 13](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 13](tu-kiem-tra.md)
+
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
@@ -794,6 +797,6 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Sử dụng được quan hệ giữa song song và vuông góc.
 - [ ] Không dùng hình vẽ làm căn cứ thay cho giả thiết hoặc định lý.
 - [ ] Viết được lời giải hình học có căn cứ sau mỗi bước suy luận.
-- [ ] Hoàn thành mini quiz với ít nhất 4/5 câu đúng.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra, chữa xong các câu sai trước khi chuyển sang Chuyên đề 14.
 
 > Khi đạt các yêu cầu trên, học sinh đã có nền tảng cần thiết để chuyển sang **Chuyên đề 14 – Tam giác**.

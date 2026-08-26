@@ -1,7 +1,7 @@
 # Chuyên đề 14 – Tam giác
 
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 7
 > **Mạch kiến thức:** Hình học
@@ -667,6 +667,9 @@ D. không tồn tại
 - **→ Liên hệ mạnh:** [17. Định lý Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md)
 - **→ Liên hệ mạnh:** [18. Hệ thức lượng trong tam giác vuông](../18-he-thuc-luong/index.md)
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 14](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 14](tu-kiem-tra.md)
+
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
@@ -675,7 +678,7 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 Chuyên đề được xem là hoàn thành khi học sinh:
 
-- [ ] Đạt ít nhất 4/5 câu mini quiz.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra, chữa xong các câu sai trước khi chuyển sang Chuyên đề 15.
 - [ ] Làm chắc bài tính góc và bất đẳng thức tam giác.
 - [ ] Nhận dạng đúng tam giác cân, đều và vuông.
 - [ ] Giải được bài Pythagore cơ bản mà không nhầm cạnh huyền.
