@@ -157,25 +157,31 @@ Hãy thiết kế sơ đồ cây cho một phép thử hai bước có các xác
 
 ## 23-M3-01
 Có 36 cặp có thứ tự đồng khả năng. Tổng bằng 7 ở:
-\[
+
+$$
 (1,6),(2,5),(3,4),(4,3),(5,2),(6,1).
-\]
+$$
+
 Vậy:
-\[
+
+$$
 P=\frac6{36}=\frac16.
-\]
+$$
 
 ## 23-M4-05
 Gọi \(A\): đồng xu ngửa, \(B\): xúc xắc ra 6. Hai biến cố độc lập nên:
-\[
+
+$$
 P(A\cap B)=\frac12\cdot\frac16=\frac1{12}.
-\]
+$$
+
 Do đó:
-\[
+
+$$
 P(A\cup B)=P(A)+P(B)-P(A\cap B)
 =\frac12+\frac16-\frac1{12}
 =\frac7{12}.
-\]
+$$
 
 # Theo dõi tiến độ
 
