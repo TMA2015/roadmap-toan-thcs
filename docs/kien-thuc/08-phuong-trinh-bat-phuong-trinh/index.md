@@ -1,7 +1,7 @@
 # Chuyên đề 08 – Phương trình và bất phương trình
 
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 8–9
 > **Mạch kiến thức:** Đại số
@@ -289,4 +289,4 @@ Học sinh được xem là **nắm vững chuyên đề** khi có thể:
 3. Không mắc các lỗi điều kiện, dấu và kết luận.
 4. Giải được bài vận dụng phù hợp với chương trình đang học.
 5. Biết kiến thức này liên hệ thế nào với **hệ phương trình, hàm số và bài toán thực tế**.
-6. Đạt tối thiểu **80% bài luyện cốt lõi** trước khi chuyển sang chuyên đề kế tiếp.
+6. Đạt tối thiểu **80% bài luyện cốt lõi** và **7/10** ở bài Tự kiểm tra; chữa xong các câu sai trước khi chuyển sang chuyên đề kế tiếp.
