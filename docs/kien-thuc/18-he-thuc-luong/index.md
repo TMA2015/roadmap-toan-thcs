@@ -1,9 +1,9 @@
 # Chuyên đề 18 – Hệ thức lượng trong tam giác vuông
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
-> **Lớp trọng tâm:** 9  
-> **Mạch kiến thức:** Hình học/Đo lường  
+> **Lớp trọng tâm:** 9
+> **Mạch kiến thức:** Hình học/Đo lường
 > **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
@@ -154,11 +154,11 @@ Trong tam giác vuông có hai cạnh góc vuông `a`, `b` và cạnh huyền `c
 
 `a² + b² = c²`
 
-Đảo lại, nếu một tam giác có:
+Định lý Pythagore đảo: nếu một tam giác có ba cạnh `a`, `b`, `c`, trong đó `c` là cạnh lớn nhất, và:
 
 `a² + b² = c²`
 
-thì tam giác đó vuông.
+thì tam giác đó vuông, với `c` là cạnh huyền.
 
 ### 3.2. Hệ thức với đường cao xuống cạnh huyền
 
@@ -227,7 +227,7 @@ Nếu điểm quan sát cao hơn mặt đất, cần cộng hoặc trừ chiều
 | Biết 2 cạnh tam giác vuông | Pythagore |
 | Có đường cao xuống cạnh huyền | Nhóm hệ thức lượng |
 | Biết góc + 1 cạnh | `sin`, `cos`, `tan` |
-| Biết 2 cạnh, cần tìm góc | Tỉ số lượng giác ngược |
+| Biết 2 cạnh, cần tìm góc | Lập tỉ số lượng giác rồi dùng phím nghịch đảo (`sin⁻¹`, `cos⁻¹`, `tan⁻¹`) trên máy tính |
 | Bài chiều cao / khoảng cách | Góc nâng, góc hạ + lượng giác |
 
 ---
@@ -254,7 +254,9 @@ Chọn tỉ số chứa đúng cạnh đã biết và cạnh cần tìm.
 
 ### Dạng 4. Tìm góc
 
-Lập một tỉ số lượng giác rồi dùng máy tính ở chế độ DEG.
+Lập tỉ số lượng giác phù hợp, sau đó dùng phím nghịch đảo tương ứng (`sin⁻¹`, `cos⁻¹` hoặc `tan⁻¹`) trên máy tính ở chế độ DEG.
+
+> Ký hiệu `sin⁻¹`, `cos⁻¹`, `tan⁻¹` ở đây chỉ **hàm lượng giác ngược**, không phải nghịch đảo theo nghĩa `1/sin`, `1/cos`, `1/tan`.
 
 ### Dạng 5. Bài góc nâng – góc hạ
 
@@ -268,7 +270,7 @@ Kết hợp Pythagore, đồng dạng và lượng giác để tìm nhiều đ�
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Đây là chuyên đề có mức độ xuất hiện cao trong bài hình và bài toán thực tế.
+Trong Roadmap ôn thi vào lớp 10, đây là chuyên đề có mức ưu tiên rất cao cho cả hình học và các bài toán thực tế có mô hình tam giác vuông.
 
 Các kỹ năng cần chắc:
 1. Nhận diện đúng tam giác vuông và cạnh huyền.
@@ -331,7 +333,7 @@ Hãy tự trả lời không nhìn tài liệu:
 3. `sin α` là tỉ số nào?
 4. `tan α` có dùng cạnh huyền không?
 5. Khi biết góc và cạnh huyền, muốn tìm cạnh đối nên dùng gì?
-6. Khi biết cạnh đối và cạnh kề, muốn tìm góc nên dùng gì?
+6. Khi biết cạnh đối và cạnh kề, muốn tìm góc nên lập tỉ số nào và dùng phím nào trên máy tính?
 7. Máy tính cần ở chế độ nào khi góc tính theo độ?
 8. Bài chiều cao có thể cần điều chỉnh thêm đại lượng nào ngoài tam giác vuông?
 
