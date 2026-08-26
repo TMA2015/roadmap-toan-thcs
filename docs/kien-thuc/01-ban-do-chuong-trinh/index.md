@@ -1,6 +1,6 @@
 # Chuyên đề 01 – Bản đồ chương trình Toán THCS
 
-> **Trạng thái:** Bản đồ tổng thể của chương trình Toán THCS đã hoàn thiện theo cấu trúc Roadmap.
+> **Trạng thái:** Roadmap 25/25 chuyên đề đã hoàn tất kiểm định học thuật và tổng kiểm cấu trúc.
 >
 > **Lớp trọng tâm:** 6–9
 > **Mạch kiến thức:** Tổng hợp
