@@ -1,7 +1,7 @@
 # Tự kiểm tra – Chuyên đề 08: Phương trình và bất phương trình
 
-> **Thời gian gợi ý:** 45 phút  
-> **Thang điểm:** 10 điểm  
+> **Thời gian gợi ý:** 45 phút
+> **Thang điểm:** 10 điểm
 > **Mục tiêu:** kiểm tra khả năng tự nhận dạng dạng bài, biến đổi chính xác, xử lý điều kiện xác định, dấu bất phương trình và mô hình hóa bài toán thực tế.
 >
 > Không nên xem lại bài học hoặc đáp án trong khi làm bài. Chỉ đối chiếu sau khi hoàn thành toàn bộ bài kiểm tra.
