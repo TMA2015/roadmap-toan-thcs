@@ -1,7 +1,7 @@
 # Chuyên đề 10 – Hàm số và đồ thị
 
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 7–9
 > **Mạch kiến thức:** Đại số
@@ -795,6 +795,9 @@ và:
 25. Tổng hợp ôn thi vào 10
 ```
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 10](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 10](tu-kiem-tra.md)
+
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
@@ -812,4 +815,4 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Hiểu giao điểm đồ thị chính là nghiệm chung của hai phương trình.
 - [ ] Giải được bài tham số cơ bản về điểm thuộc đồ thị và vị trí hai đường thẳng.
 - [ ] Nhận biết được parabol `y = ax²` ở mức chuẩn bị cho phương trình bậc hai.
-- [ ] Đạt ít nhất 4/5 câu mini quiz và làm độc lập phần bài tập Mức 2.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra, chữa xong các câu sai và làm chắc bài tập Mức 1–2.
