@@ -1,7 +1,7 @@
 # Chuyên đề 06 – Phân tích đa thức thành nhân tử
 
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
 > **Lớp trọng tâm:** 8
 > **Mạch kiến thức:** Đại số
@@ -74,7 +74,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 - [ ] Phối hợp nhiều phương pháp trong một bài.
 - [ ] Kiểm tra được kết quả bằng cách nhân trở lại.
 - [ ] Dùng dạng tích để rút gọn, tính nhanh và giải phương trình đơn giản.
-- [ ] Nhận biết khi nào một biểu thức đã phân tích hết trong phạm vi THCS.
+- [ ] Nhận biết khi nào đa thức còn có thể tiếp tục phân tích bằng các phương pháp đã học trong phạm vi THCS.
 
 ---
 
@@ -82,7 +82,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 ### 3.1. Phân tích đa thức thành nhân tử là gì?
 
-Ta biến đa thức thành tích của hai hay nhiều biểu thức.
+Phân tích đa thức thành nhân tử là biến đổi đa thức thành một tích của các nhân tử đa thức có giá trị bằng đa thức ban đầu.
 
 Ví dụ:
 
@@ -265,7 +265,7 @@ Dùng hiệu hai bình phương:
 
 `= 2x(x - 3)(x + 3)`
 
-Không nên dừng ở `2x(x² - 9)` nếu đề yêu cầu phân tích hoàn toàn.
+Không nên dừng ở `2x(x² - 9)` nếu đề yêu cầu tiếp tục phân tích bằng các phương pháp đã học.
 
 ---
 
@@ -435,6 +435,8 @@ Hai số nguyên liên tiếp `n` và `n - 1` luôn có một số chẵn, nên 
 
 ### Dạng 10 – Dùng phân tích nhân tử để tìm x
 
+> Đây là phần kết nối sang Chuyên đề 08. Sau khi đưa phương trình về dạng tích bằng 0, dùng tính chất: nếu `A·B = 0` thì `A = 0` hoặc `B = 0`.
+
 Ví dụ:
 
 `x² - 7x = 0`
@@ -465,7 +467,7 @@ Mức sao dưới đây thể hiện **mức ưu tiên ôn tập của Roadmap**
 
 ### Kỹ năng cần ưu tiên
 
-Trong bài thi tổng hợp, phân tích nhân tử thường không đứng riêng mà xuất hiện như **một bước trung gian**.
+Trong bài thi tổng hợp, phân tích nhân tử có thể xuất hiện như **một bước trung gian** trong quá trình biến đổi biểu thức hoặc giải phương trình.
 
 Ví dụ mạch bài:
 
@@ -495,9 +497,9 @@ Viết:
 
 `= 2x(6x - 9)`
 
-không sai, nhưng chưa tối ưu.
+là đúng, nhưng còn có thể tiếp tục đặt nhân tử chung.
 
-Nên viết:
+Dạng gọn hơn:
 
 `= 6x(2x - 3)`
 
