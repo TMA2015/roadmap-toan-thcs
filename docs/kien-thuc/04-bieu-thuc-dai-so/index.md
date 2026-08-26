@@ -1,7 +1,7 @@
 # Chuyên đề 04 – Biểu thức và biến đổi đại số
 
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
 > **Lớp trọng tâm:** 7–8
 > **Mạch kiến thức:** Đại số
@@ -92,7 +92,7 @@ Ví dụ:
 
 Bậc của đa thức khác 0 là bậc lớn nhất của các hạng tử sau khi đã thu gọn.
 
-> ⚠️ **Lưu ý:** phải thu gọn trước khi xác định bậc nếu các hạng tử đồng dạng có thể triệt tiêu nhau.
+> ⚠️ **Lưu ý:** phải thu gọn trước khi xác định bậc nếu các hạng tử đồng dạng có thể triệt tiêu nhau. Đa thức `0` không có bậc theo quy ước dùng trong chương trình phổ thông.
 
 ---
 
@@ -173,7 +173,7 @@ Ví dụ:
 
 ### 3.4. Điều kiện xác định và giá trị biểu thức
 
-Khi biểu thức có mẫu chứa biến, cần tìm điều kiện để mẫu khác 0 **trước khi biến đổi**.
+Ở mức kết nối sang Chuyên đề 07, khi biểu thức có mẫu chứa biến, cần tìm điều kiện để mẫu khác 0 **trước khi biến đổi**.
 
 Ví dụ:
 
@@ -252,19 +252,17 @@ Tính `P` tại `x = 2`.
 
 #### Liên kết trực tiếp
 
-- ← 03. Tỉ lệ – Tỉ lệ thức
-- → 05. 7 Hằng đẳng thức đáng nhớ
-- → 06. Phân tích đa thức thành nhân tử
-- → 07. Phân thức đại số
+- ← [03. Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ](../03-ti-le-ti-le-thuc/index.md)
+- → [05. 7 Hằng đẳng thức đáng nhớ](../05-7-hang-dang-thuc/index.md)
+- → [06. Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/index.md)
+- → [07. Phân thức đại số](../07-phan-thuc-dai-so/index.md)
 - → [08. Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md)
-
-> Các liên kết tới 05–07 sẽ trở thành liên kết hợp lệ khi các chuyên đề tương ứng được xây dựng.
 
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
 
-| Dạng bài | Mức độ | Tần suất |
+| Dạng bài | Mức độ | Ưu tiên luyện |
 |---|:---:|:---:|
 | Nhận biết đơn thức, đa thức | ⭐ | ⭐⭐⭐⭐ |
 | Xác định hệ số, phần biến, bậc | ⭐ | ⭐⭐⭐⭐ |
@@ -290,9 +288,11 @@ Học sinh phải kết hợp:
 
 Mục tiêu không phải tính thật nhanh mà là **kiểm soát dấu và cấu trúc**.
 
-### Dạng 2 – Tìm giá trị của tham số
+### Dạng 2 – Bài toán có tham số
 
-Ví dụ dạng:
+Một dạng luyện nền có thể gặp trong các bài tổng hợp là xác định tham số từ điều kiện của biểu thức.
+
+Ví dụ:
 
 > Cho biểu thức `P(x)`. Tìm `m` để hệ số của `x²` bằng một giá trị cho trước.
 
