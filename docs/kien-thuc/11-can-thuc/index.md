@@ -1,7 +1,7 @@
 # Chuyên đề 11 – Căn thức và biến đổi căn thức
 
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 9
 > **Mạch kiến thức:** Đại số
@@ -445,6 +445,9 @@ D. `5 - 4`
 - **→ Ứng dụng:** [08. Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md)
 - **→ Tiếp theo:** [12. Phương trình bậc hai & Viète](../12-phuong-trinh-bac-hai-viete/index.md)
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 11](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 11](tu-kiem-tra.md)
+
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
@@ -458,5 +461,5 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Trục căn thức ở mẫu đúng ở các dạng chuẩn.
 - [ ] Giải độc lập được bài rút gọn nhiều bước.
 - [ ] Không còn nhầm `√(A²)` với `A` khi chưa xét dấu.
-- [ ] Đạt ít nhất 4/5 câu mini quiz.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai.
 - [ ] Biết khi nào kiến thức căn thức được dùng trong phương trình và phương trình bậc hai.

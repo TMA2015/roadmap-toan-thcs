@@ -1,7 +1,7 @@
 # Chuyên đề 12 – Phương trình bậc hai & Viète – chuẩn bị THPT
 
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 9
 > **Mạch kiến thức:** Đại số
@@ -589,6 +589,9 @@ D. `x² - Px + S = 0`
 - **← Liên hệ:** [11. Căn thức và biến đổi căn thức](../11-can-thuc/index.md)
 - **→ Tổng hợp cuối:** [25. Tổng hợp & chiến lược ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 12](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 12](tu-kiem-tra.md)
+
 Xem toàn bộ kiến trúc tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
@@ -603,7 +606,7 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Làm được bài tính biểu thức theo nghiệm mà không cần giải nghiệm cụ thể.
 - [ ] Xử lý được bài tham số về số nghiệm và dấu nghiệm.
 - [ ] Lập được phương trình mới từ tổng và tích nghiệm.
-- [ ] Đạt tối thiểu 4/5 câu mini quiz.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai.
 - [ ] Làm độc lập được phần luyện tập Mức 2 và phần lớn Mức 3.
 
 > 🎯 **Đích cuối:** không học công thức nghiệm và Viète như hai mảng rời rạc. Hãy nhìn chúng như hai công cụ bổ sung nhau: **Δ cho biết phương trình có bao nhiêu nghiệm; Viète cho biết các nghiệm liên hệ với hệ số như thế nào**.
