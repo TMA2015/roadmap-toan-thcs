@@ -1,7 +1,7 @@
 # Chuyên đề 09 – Hệ phương trình bậc nhất hai ẩn
 
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 9
 > **Mạch kiến thức:** Đại số
@@ -688,6 +688,8 @@ D. Cả A, B, C
 - **→ Tiếp theo:** [10. Hàm số và đồ thị](../10-ham-so-do-thi/index.md)
 - **Ứng dụng mạnh:** [24. Bài toán thực tế và mô hình hóa](../24-bai-toan-thuc-te/index.md)
 - **Nền tảng biến đổi:** [04. Biểu thức đại số](../04-bieu-thuc-dai-so/index.md), [06. Phân tích đa thức](../06-phan-tich-da-thuc/index.md), [07. Phân thức đại số](../07-phan-thuc-dai-so/index.md)
+
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 09](bai-tap.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
