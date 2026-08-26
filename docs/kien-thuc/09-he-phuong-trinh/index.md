@@ -1,7 +1,7 @@
 # Chuyên đề 09 – Hệ phương trình bậc nhất hai ẩn
 
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
 > **Lớp trọng tâm:** 9
 > **Mạch kiến thức:** Đại số
@@ -31,7 +31,7 @@ HỆ PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN
 │   ├── Cộng đại số
 │   └── Chọn phương pháp phù hợp
 │
-├── 4. Biện luận và tham số
+├── 4. Vận dụng: số nghiệm và tham số
 │   ├── Nhận biết số nghiệm
 │   ├── Điều kiện để có nghiệm đặc biệt
 │   └── Tìm tham số
@@ -57,7 +57,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 - [ ] Kiểm tra nghiệm bằng cách thay ngược vào hệ ban đầu.
 - [ ] Nhận biết trường hợp hệ có một nghiệm, vô nghiệm hoặc vô số nghiệm.
 - [ ] Lập được hệ từ bài toán thực tế đơn giản và trung bình.
-- [ ] Xử lý được bài toán có tham số ở mức THCS.
+- [ ] Xử lý được bài toán có tham số ở mức vận dụng phù hợp với THCS.
 
 ---
 
@@ -91,7 +91,7 @@ có nghiệm `(2;1)` vì:
 2\cdot2 + 1 = 5.
 \]
 
-Một phương trình bậc nhất hai ẩn thường có vô số nghiệm.
+Trên tập số thực, một phương trình bậc nhất hai ẩn có **vô số nghiệm**.
 
 ---
 
@@ -348,7 +348,17 @@ Thế vào phương trình hai:
 7y=8 \Rightarrow y=\frac87.
 \]
 
-Sau đó tìm `x`.
+Suy ra:
+
+\[
+x=1+2\cdot\frac87=\frac{23}{7}.
+\]
+
+Vậy:
+
+\[
+(x;y)=\left(\frac{23}{7};\frac87\right).
+\]
 
 ---
 
@@ -367,6 +377,18 @@ Cộng hai phương trình:
 
 \[
 5x=15 \Rightarrow x=3.
+\]
+
+Thế `x=3` vào phương trình đầu:
+
+\[
+6+5y=1 \Rightarrow y=-1.
+\]
+
+Vậy:
+
+\[
+(x;y)=(3;-1).
 \]
 
 ---
@@ -395,16 +417,16 @@ Suy ra hệ vô nghiệm.
 
 ---
 
-### Dạng 5 – Hệ có phân số
+### Dạng 5 – Hệ có hệ số phân số hoặc biểu thức cần khử mẫu
 
-Nguyên tắc:
+Với hệ bậc nhất hai ẩn có **hệ số phân số**, có thể:
 
-1. Tìm mẫu chung.
-2. Nhân để khử mẫu.
+1. Tìm mẫu chung của các hệ số.
+2. Nhân hai vế của từng phương trình với một số khác `0` thích hợp để khử mẫu.
 3. Thu gọn thành hệ quen thuộc.
 4. Giải hệ.
 
-Luôn kiểm tra xem có điều kiện xác định hay không nếu mẫu chứa biến.
+> Nếu mẫu **chứa biến**, bài toán có thể không còn là hệ phương trình bậc nhất hai ẩn. Khi đó phải tìm điều kiện xác định và xem đây là nội dung kết nối/mở rộng, không áp dụng máy móc quy trình của hệ bậc nhất.
 
 ---
 
@@ -421,7 +443,9 @@ Phương pháp:
 
 ### Dạng 7 – Tìm tham số để hệ có một nghiệm, vô nghiệm hoặc vô số nghiệm
 
-Cách làm thường dùng ở THCS:
+> **Mức vận dụng:** cần xét cẩn thận các giá trị tham số làm thay đổi hệ số hoặc làm một phương trình suy biến.
+
+Cách làm phù hợp ở THCS:
 
 1. Biến đổi hai phương trình về dạng đơn giản.
 2. So sánh các hệ số hoặc đưa về hai phương trình tương đương/mâu thuẫn.
@@ -447,7 +471,7 @@ Quy trình 5 bước:
 
 ### Giải hệ trực tiếp – ⭐⭐⭐⭐⭐
 
-Đây là kỹ năng nền tảng, thường xuất hiện độc lập hoặc nằm bên trong bài toán lớn hơn.
+Đây là kỹ năng nền tảng và có thể xuất hiện độc lập hoặc được dùng như một bước trong bài toán lớn hơn.
 
 Học sinh cần thành thạo:
 
@@ -458,7 +482,7 @@ Học sinh cần thành thạo:
 
 ### Hệ có tham số – ⭐⭐⭐⭐
 
-Thường yêu cầu:
+Các yêu cầu luyện tập có thể gồm:
 
 - tìm `m` để hệ có nghiệm thỏa điều kiện;
 - tìm `m` để nghiệm có quan hệ như `x+y=k`, `x>0`, `x=y`, ...;
