@@ -276,6 +276,7 @@ Một đề chuyên đề 45–60 phút, trộn các dạng quan trọng.
 - [24. Bài toán thực tế và mô hình hóa](../24-bai-toan-thuc-te/index.md)
 
 - **✏️ Luyện tập:** [Bài tập Chuyên đề 08](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 08](tu-kiem-tra.md)
 
 ---
 

@@ -978,4 +978,6 @@ Vậy:
 - **← Chuyên đề trước:** [07 – Phân thức đại số](../07-phan-thuc-dai-so/index.md)
 - **→ Chuyên đề tiếp theo:** [09 – Hệ phương trình bậc nhất hai ẩn](../09-he-phuong-trinh/index.md)
 
-> Trang **Tự kiểm tra Chuyên đề 08** sẽ được xây dựng ở bước tiếp theo. Sau khi hoàn thành trang đó, học sinh nên dùng kết quả kiểm tra để quyết định chuyển sang Chuyên đề 09 hay quay lại dạng bài còn yếu.
+- **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 08](tu-kiem-tra.md)
+
+> Sau khi hoàn thành bài tự kiểm tra, hãy dùng **Bảng truy nguyên lỗi** để quyết định chuyển sang Chuyên đề 09 hay quay lại dạng bài còn yếu.
