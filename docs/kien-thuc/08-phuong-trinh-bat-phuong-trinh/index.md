@@ -275,6 +275,8 @@ Một đề chuyên đề 45–60 phút, trộn các dạng quan trọng.
 - [10. Hàm số và đồ thị](../10-ham-so-do-thi/index.md)
 - [24. Bài toán thực tế và mô hình hóa](../24-bai-toan-thuc-te/index.md)
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 08](bai-tap.md)
+
 ---
 
 ## 🏁 11. Điều kiện hoàn thành
