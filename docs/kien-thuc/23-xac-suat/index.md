@@ -1,9 +1,9 @@
 # Chuyên đề 23 – Xác suất
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
-> **Lớp trọng tâm:** 6–9  
-> **Mạch kiến thức:** Xác suất  
+> **Lớp trọng tâm:** 6–9
+> **Mạch kiến thức:** Xác suất
 > **Mức ưu tiên:** ⭐⭐⭐⭐
 
 ---
@@ -117,7 +117,7 @@ Ví dụ:
 - `NN` nghĩa là lần 1 ngửa, lần 2 ngửa;
 - `NS` nghĩa là lần 1 ngửa, lần 2 sấp.
 
-Khi đi theo một nhánh trong sơ đồ cây, ta **nhân các xác suất trên đường đi**.
+Khi đi theo một nhánh trong sơ đồ cây, ta nhân các xác suất của từng bước trên nhánh đó. Với các bước độc lập, có thể nhân trực tiếp các xác suất riêng của từng bước; nếu các bước phụ thuộc nhau thì phải dùng xác suất phù hợp với điều kiện đã xảy ra trước đó.
 
 ---
 
@@ -240,7 +240,7 @@ Có:
 
 ### 3.4. Xác suất cổ điển
 
-Khi các kết quả trong không gian mẫu **đồng khả năng**:
+Khi không gian mẫu hữu hạn và các kết quả trong không gian mẫu **đồng khả năng**:
 
 `P(A) = n(A) / n(Ω)`
 
@@ -280,9 +280,12 @@ Nếu đồng xu cân đối thì mỗi kết quả có xác suất `1/4`.
 
 ### 3.7. Quy tắc nhân trên sơ đồ cây
 
-Nếu đi theo một nhánh qua nhiều bước độc lập, ta nhân các xác suất trên nhánh đó.
+Xác suất của một nhánh nhiều bước được tính bằng tích các xác suất tương ứng trên đường đi.
 
-Ví dụ:
+- Nếu các bước **độc lập**, dùng trực tiếp xác suất của từng bước.
+- Nếu bước sau **phụ thuộc** vào kết quả trước, xác suất ở bước sau phải là xác suất ứng với điều kiện đã xảy ra.
+
+Ví dụ, khi tung một đồng xu cân đối hai lần độc lập:
 
 `P(NN) = 1/2 × 1/2 = 1/4`
 
@@ -301,7 +304,7 @@ Ví dụ:
 
 ## 🔗 4. Kiến thức liên quan
 
-- **Kiến thức nên ôn trước:** [02 – Số và phép tính](../02-so-va-phep-tinh/index.md), [21 – Thống kê](../21-thong-ke/index.md)
+- **Kiến thức nên ôn trước:** [22 – Các đại lượng đặc trưng của dữ liệu](../22-dai-luong-dac-trung/index.md); đồng thời cần chắc phân số, tỉ lệ và kỹ năng đếm trường hợp từ [02 – Số và phép tính](../02-so-va-phep-tinh/index.md).
 - **Liên hệ mạnh:** phân số, tỉ lệ, đếm trường hợp.
 - **Chuyên đề sử dụng tiếp:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md), [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
@@ -347,7 +350,7 @@ Mô hình hóa tình huống thành phép thử, không gian mẫu và biến c�
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Xác suất thường xuất hiện ở mức cơ bản đến vận dụng vừa và có thể kết hợp với thống kê hoặc bài toán thực tế.
+Trong Roadmap ôn thi vào lớp 10, xác suất được xếp ở mức ưu tiên cao vừa phải và nên luyện cùng các bài đếm trường hợp, sơ đồ cây và tình huống thực tế.
 
 Các kỹ năng cần chắc:
 1. Lập đúng không gian mẫu.
@@ -420,8 +423,9 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [02 – Số và phép tính](../02-so-va-phep-tinh/index.md), [21 – Thống kê](../21-thong-ke/index.md)
+- **← Trước:** [22 – Các đại lượng đặc trưng của dữ liệu](../22-dai-luong-dac-trung/index.md)
 - **→ Tiếp theo:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
+- **→ Kiến thức nền liên hệ:** [02 – Số và phép tính](../02-so-va-phep-tinh/index.md), [21 – Thống kê](../21-thong-ke/index.md)
 - **→ Tổng hợp:** [25 – Ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
