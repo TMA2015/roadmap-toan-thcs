@@ -1,6 +1,6 @@
 # Chuyên đề 16 – Tứ giác và các hình đặc biệt
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 8
 > **Mạch kiến thức:** Hình học
@@ -134,21 +134,30 @@ Vì vậy hình vuông có đồng thời:
 
 ### Quan hệ giữa các tứ giác đặc biệt
 
-```text
-                    HÌNH VUÔNG
-                   /          \
-          HÌNH CHỮ NHẬT      HÌNH THOI
-                   \          /
-                 HÌNH BÌNH HÀNH
-                        |
-                      TỨ GIÁC
+Theo quy ước của Roadmap, **hình thang là tứ giác có ít nhất một cặp cạnh đối song song**. Vì vậy hình bình hành là một trường hợp đặc biệt của hình thang.
 
-HÌNH THANG ───────────────────┘
+```text
+TỨ GIÁC
+   |
+   v
+HÌNH THANG
+   |
+   v
+HÌNH BÌNH HÀNH
+   |          \
+   v           v
+HÌNH CHỮ NHẬT  HÌNH THOI
+        \       /
+         \     /
+          v   v
+        HÌNH VUÔNG
 ```
 
 Điểm cần nhớ:
 
-> Một hình vuông luôn là hình chữ nhật và hình thoi, nhưng một hình chữ nhật hoặc hình thoi chưa chắc là hình vuông.
+- Mọi hình bình hành đều là hình thang theo định nghĩa “ít nhất một cặp cạnh đối song song”.
+- Một hình vuông luôn là hình chữ nhật và hình thoi.
+- Một hình chữ nhật hoặc hình thoi chưa chắc là hình vuông.
 
 ---
 
@@ -406,6 +415,9 @@ Hãy tự trả lời không nhìn tài liệu:
 - **→ Tiếp theo:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md)
 - **→ Liên hệ:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 16](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 16](tu-kiem-tra.md)
+
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
@@ -419,5 +431,5 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Thuộc các dấu hiệu nhận biết quan trọng.
 - [ ] Chứng minh được hình bình hành, chữ nhật, thoi, vuông.
 - [ ] Không nhầm tính chất đường chéo giữa hình chữ nhật và hình thoi.
-- [ ] Đạt ít nhất `7/8` câu tự kiểm tra.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 17.
 - [ ] Giải được ít nhất một bài tổng hợp chứng minh tứ giác đặc biệt.

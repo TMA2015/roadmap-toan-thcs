@@ -1,6 +1,6 @@
 # Chuyên đề 17 – Định lý Thales và tam giác đồng dạng
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 8
 > **Mạch kiến thức:** Hình học
@@ -371,6 +371,9 @@ Hãy tự trả lời không nhìn tài liệu:
 - **→ Tiếp theo:** [18 – Hệ thức lượng](../18-he-thuc-luong/index.md)
 - **→ Liên hệ:** [19 – Đường tròn](../19-duong-tron/index.md), [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 17](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 17](tu-kiem-tra.md)
+
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
@@ -385,4 +388,4 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Viết đúng thứ tự các đỉnh tương ứng.
 - [ ] Tính được độ dài bằng Thales và đồng dạng.
 - [ ] Chứng minh được một hệ thức tích bằng đồng dạng.
-- [ ] Đạt ít nhất `7/8` câu tự kiểm tra.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 18.
