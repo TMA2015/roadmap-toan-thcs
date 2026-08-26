@@ -119,9 +119,11 @@ Hai tam giác đồng dạng có tỉ số chu vi \(3:5\). Một cạnh của ta
 
 ### 17-M4-04
 \(\triangle ABC\sim\triangle DEF\) và
-\[
+
+$$
 \frac{DE}{AB}=\frac{EF}{BC}=\frac{DF}{AC}=2.
-\]
+$$
+
 Nếu diện tích \(\triangle ABC=18\), tính diện tích \(\triangle DEF\). Ghi rõ đây là tính chất mở rộng.
 
 ### 17-M4-05
@@ -193,44 +195,57 @@ Một bài yêu cầu chứng minh \(AB\cdot CD=AD\cdot BC\). Hãy nêu chiến 
 
 ## 17-M3-01
 Theo Thales:
-\[
+
+$$
 \frac{AD}{DB}=\frac{AE}{EC}.
-\]
+$$
+
 Suy ra:
-\[
+
+$$
 \frac{4}{6}=\frac{6}{EC}\Rightarrow EC=9.
-\]
+$$
 
 ## 17-M3-07
 Tỉ số:
-\[
+
+$$
 \frac{DE}{AB}=\frac{10}{4}=\frac52.
-\]
+$$
+
 Nên:
-\[
+
+$$
 EF=6\cdot\frac52=15,\quad DF=8\cdot\frac52=20.
-\]
+$$
 
 ## 17-M4-04
 Diện tích hai tam giác đồng dạng tỉ lệ với bình phương tỉ số các cạnh tương ứng. Vì
-\[
+
+$$
 \frac{DE}{AB}=\frac{EF}{BC}=\frac{DF}{AC}=2,
-\]
+$$
+
 nên:
-\[
+
+$$
 \frac{S_{DEF}}{S_{ABC}}=2^2=4.
-\]
+$$
+
 Do đó:
-\[
+
+$$
 S_{DEF}=4\cdot18=72.
-\]
+$$
+
 > **Mở rộng:** nếu lớp chưa học tỉ số diện tích, không tính bài này vào ngưỡng bắt buộc.
 
 ## 17-M4-05
 \(\triangle AMN\sim\triangle ABC\) với tỉ số \(1:2\), nên tỉ số diện tích \(1:4\). Do đó:
-\[
+
+$$
 S_{AMN}=10.
-\]
+$$
 
 # Theo dõi tiến độ
 
