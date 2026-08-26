@@ -1,4 +1,4 @@
-# 08. Phương trình và bất phương trình
+# Chuyên đề 08 – Phương trình và bất phương trình
 
 
 > **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.

@@ -439,8 +439,10 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [14 – Tam giác](../14-tam-giac/index.md) → [19 – Đường tròn](../19-duong-tron/index.md)
-- **→ Tiếp theo:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
+- **→ Tiếp theo:** [21 – Thống kê và thu thập dữ liệu](../21-thong-ke/index.md)
+
+- **← Kiến thức nền:** [14 – Tam giác](../14-tam-giac/index.md) → [19 – Đường tròn](../19-duong-tron/index.md)
+- **→ Ứng dụng tiếp:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
 - **→ Tổng hợp cuối:** [25 – Ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).

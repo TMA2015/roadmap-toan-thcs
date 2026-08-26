@@ -768,6 +768,8 @@ và:
 
 ## 🔄 10. Liên kết Roadmap
 
+- **→ Tiếp theo:** [11 – Căn thức và biến đổi căn thức](../11-can-thuc/index.md)
+
 ### Kiến thức nên ôn trước
 
 - [03. Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ](../03-ti-le-ti-le-thuc/index.md)

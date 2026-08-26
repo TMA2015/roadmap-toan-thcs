@@ -389,17 +389,14 @@ Học sinh chỉ nên chuyển sang Chuyên đề 05 khi có thể trả lời *
 
 ## 🔄 10. Liên kết Roadmap
 
-**Trước:**
+- **← Trước:** [03 – Tỉ lệ, tỉ lệ thức, đại lượng tỉ lệ](../03-ti-le-ti-le-thuc/index.md)
+- **→ Tiếp theo:** [05 – 7 Hằng đẳng thức đáng nhớ](../05-7-hang-dang-thuc/index.md)
+
+**Mạch nội dung:**
 
 `03 – Tỉ lệ, tỉ lệ thức, đại lượng tỉ lệ`
-
-**Hiện tại:**
-
-`04 – Biểu thức và biến đổi đại số`
-
-**Tiếp theo:**
-
-`05 – 7 Hằng đẳng thức đáng nhớ`
+→ `04 – Biểu thức và biến đổi đại số`
+→ `05 – 7 Hằng đẳng thức đáng nhớ`
 
 #### ⭐ Mức độ ưu tiên
 

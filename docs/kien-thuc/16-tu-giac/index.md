@@ -400,7 +400,9 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [13 – Góc và đường thẳng](../13-goc-va-duong-thang/index.md), [14 – Tam giác](../14-tam-giac/index.md)
+- **← Trước:** [15 – Các đường đồng quy trong tam giác](../15-duong-dong-quy/index.md)
+
+- **← Kiến thức nền:** [13 – Góc và đường thẳng](../13-goc-va-duong-thang/index.md), [14 – Tam giác](../14-tam-giac/index.md)
 - **→ Tiếp theo:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md)
 - **→ Liên hệ:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
 

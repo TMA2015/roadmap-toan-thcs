@@ -755,6 +755,8 @@ D. đều nhọn
 
 ## 🔄 10. Liên kết Roadmap
 
+- **← Trước:** [12 – Phương trình bậc hai & Viète](../12-phuong-trinh-bac-hai-viete/index.md)
+
 ```text
 01. Bản đồ chương trình
           │

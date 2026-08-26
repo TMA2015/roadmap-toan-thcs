@@ -425,6 +425,8 @@ D. `5 - 4`
 
 ## 🔄 10. Liên kết Roadmap
 
+- **← Trước:** [10 – Hàm số và đồ thị](../10-ham-so-do-thi/index.md)
+
 ```text
 02. Số và phép tính
         │

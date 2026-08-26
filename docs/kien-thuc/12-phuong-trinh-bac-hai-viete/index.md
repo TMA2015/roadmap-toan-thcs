@@ -564,6 +564,8 @@ D. `x² - Px + S = 0`
 
 ## 🔄 10. Liên kết Roadmap
 
+- **→ Tiếp theo:** [13 – Góc và quan hệ đường thẳng](../13-goc-va-duong-thang/index.md)
+
 ```text
 08. Phương trình
        │
@@ -585,7 +587,7 @@ D. `x² - Px + S = 0`
 - **← Ôn lại:** [08. Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md)
 - **← Liên hệ:** [10. Hàm số và đồ thị](../10-ham-so-do-thi/index.md)
 - **← Liên hệ:** [11. Căn thức và biến đổi căn thức](../11-can-thuc/index.md)
-- **→ Tiếp theo:** [25. Tổng hợp & chiến lược ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
+- **→ Tổng hợp cuối:** [25. Tổng hợp & chiến lược ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
 Xem toàn bộ kiến trúc tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
