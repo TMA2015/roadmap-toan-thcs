@@ -690,6 +690,7 @@ D. Cả A, B, C
 - **Nền tảng biến đổi:** [04. Biểu thức đại số](../04-bieu-thuc-dai-so/index.md), [06. Phân tích đa thức](../06-phan-tich-da-thuc/index.md), [07. Phân thức đại số](../07-phan-thuc-dai-so/index.md)
 
 - **✏️ Luyện tập:** [Bài tập Chuyên đề 09](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 09](tu-kiem-tra.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
@@ -705,4 +706,4 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Biết kiểm tra nghiệm bằng cách thay ngược.
 - [ ] Lập được hệ từ bài toán thực tế cơ bản.
 - [ ] Làm được bài có tham số ở mức THCS.
-- [ ] Đạt tối thiểu 3/4 câu mini quiz và làm chắc bài tập Mức 1–2.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra, chữa xong các câu sai và làm chắc bài tập Mức 1–2.

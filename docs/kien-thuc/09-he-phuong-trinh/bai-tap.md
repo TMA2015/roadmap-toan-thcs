@@ -995,4 +995,6 @@ Vậy khi \(m\ne1\), hệ có nghiệm duy nhất:
 - **← Chuyên đề trước:** [08 – Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md)
 - **→ Chuyên đề tiếp theo:** [10 – Hàm số và đồ thị](../10-ham-so-do-thi/index.md)
 
-> Trang **Tự kiểm tra Chuyên đề 09** sẽ được xây dựng sau khi bộ bài tập này được kiểm định. Khi hoàn thành bài tự kiểm tra, hãy dùng bảng truy nguyên lỗi để quyết định chuyển tiếp hay quay lại Chuyên đề 04, 07, 08 hoặc đúng dạng bài còn yếu.
+- **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 09](tu-kiem-tra.md)
+
+> Sau khi hoàn thành bài tự kiểm tra, hãy dùng **Bảng truy nguyên lỗi** để quyết định chuyển sang Chuyên đề 10 hay quay lại Chuyên đề 04, 07, 08 hoặc đúng dạng bài còn yếu.
