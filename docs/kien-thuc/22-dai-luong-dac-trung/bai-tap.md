@@ -148,24 +148,31 @@ Hãy xây dựng một quy trình ngắn để chọn đại lượng đại di�
 # Hướng dẫn chọn lọc
 
 ## 22-M3-04
-\[
+
+$$
 \bar x=\frac{5\cdot1+6\cdot2+7\cdot3+8\cdot4}{1+2+3+4}
 =\frac{70}{10}=7.
-\]
+$$
 
 ## 22-M4-01
 Dữ liệu tương ứng là:
-\[
+
+$$
 6,6,7,7,7,8,8,8,8,8.
-\]
+$$
+
 Do đó:
-\[
+
+$$
 \bar x=\frac{73}{10}=7,3.
-\]
+$$
+
 Hai vị trí giữa là vị trí 5 và 6, lần lượt là 7 và 8, nên:
-\[
+
+$$
 \text{trung vị}=\frac{7+8}{2}=7,5.
-\]
+$$
+
 Mốt là 8.
 
 # Theo dõi tiến độ
