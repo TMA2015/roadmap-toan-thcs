@@ -1,9 +1,9 @@
 # Chuyên đề 20 – Hình học tổng hợp, đo lường và hình khối
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
-> **Lớp trọng tâm:** 6–9  
-> **Mạch kiến thức:** Hình học/Đo lường  
+> **Lớp trọng tâm:** 6–9
+> **Mạch kiến thức:** Hình học/Đo lường
 > **Mức ưu tiên:** ⭐⭐⭐⭐
 
 ---
@@ -61,9 +61,8 @@ Tính chất rất quan trọng:
 Các dấu hiệu thường dùng để chứng minh một tứ giác nội tiếp:
 
 - tổng hai góc đối bằng `180°`;
-- hai đỉnh cùng nhìn một đoạn thẳng dưới hai góc bằng nhau;
-- hai góc cùng chắn một đoạn thẳng bằng nhau;
-- xuất hiện hai góc vuông cùng nhìn một đoạn thẳng.
+- nếu hai đỉnh nằm cùng phía đối với đường thẳng chứa một đoạn và cùng nhìn đoạn đó dưới hai góc bằng nhau, thì bốn điểm tương ứng cùng thuộc một đường tròn;
+- nếu hai góc cùng bằng `90°` và cùng nhìn một đoạn thẳng, thì các đỉnh của hai góc nằm trên đường tròn có đường kính là đoạn ấy.
 
 ---
 
@@ -158,7 +157,7 @@ Hoàn thành chứng minh hoặc tính toán
 2. Khi chứng minh hai tam giác đồng dạng, ghi đúng thứ tự các đỉnh tương ứng.
 3. Không viết tỉ số trước khi xác định đúng cặp cạnh tương ứng.
 4. Nếu cần chứng minh một tích đoạn thẳng, thử biến đổi về tỉ số rồi tìm tam giác đồng dạng.
-5. Nếu cần chứng minh bốn điểm cùng thuộc một đường tròn, ưu tiên tìm một cặp góc bằng nhau hoặc hai góc đối bù nhau.
+5. Nếu cần chứng minh bốn điểm cùng thuộc một đường tròn, ưu tiên tìm hai góc đối bù nhau; hoặc tìm hai góc bằng nhau cùng nhìn một đoạn với điều kiện vị trí phù hợp.
 
 ---
 
@@ -248,9 +247,9 @@ thì có thể biến đổi thành:
 Các dấu hiệu ưu tiên:
 
 - tổng hai góc đối bằng `180°`;
-- hai góc bằng nhau cùng chắn một đoạn;
-- hai góc vuông cùng nhìn một đoạn;
-- bốn điểm cùng nằm trên đường tròn có đường kính xác định.
+- hai góc bằng nhau cùng nhìn một đoạn, với hai đỉnh góc nằm cùng phía đối với đường thẳng chứa đoạn đó;
+- hai góc vuông cùng nhìn một đoạn, từ đó nhận ra đường tròn có đường kính là đoạn ấy;
+- bốn điểm cùng nằm trên một đường tròn đã xác định.
 
 ### 3.4. Chiến lược chứng minh tiếp tuyến
 
@@ -313,7 +312,7 @@ Khi giải bài thực tế, luôn ghi đơn vị diện tích hoặc thể tíc
 | Chứng minh hai góc bằng nhau | Nội tiếp, đồng dạng |
 | Chứng minh song song | Góc so le trong, Thales đảo |
 | Chứng minh vuông góc | Góc 90°, bán kính – tiếp tuyến |
-| Chứng minh nội tiếp | Hai góc đối bù / hai góc bằng nhau |
+| Chứng minh nội tiếp | Hai góc đối bù / hai góc bằng nhau cùng nhìn một đoạn với điều kiện vị trí phù hợp |
 | Chứng minh hệ thức tích | Đồng dạng / hai dây / tiếp tuyến–cát tuyến |
 | Tính độ dài | Đồng dạng / Pythagore / lượng giác |
 | Tính diện tích, thể tích | Chọn đúng công thức và đơn vị |
@@ -331,7 +330,7 @@ Khi giải bài thực tế, luôn ghi đơn vị diện tích hoặc thể tíc
 
 ### Dạng 1. Chứng minh tứ giác nội tiếp
 
-Tìm hai góc đối bù, hai góc bằng nhau hoặc hai góc vuông.
+Tìm hai góc đối bù; hoặc hai góc bằng nhau cùng nhìn một đoạn với điều kiện vị trí phù hợp; hoặc hai góc vuông cùng nhìn một đoạn để nhận ra đường tròn có đường kính chung.
 
 ### Dạng 2. Chứng minh hai tam giác đồng dạng
 
@@ -365,9 +364,9 @@ Mỗi ý thường tạo dữ kiện cho ý sau. Cần tận dụng kết quả 
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Đây là chuyên đề tổng hợp trực tiếp cho phần hình học thi vào 10.
+Trong Roadmap ôn thi vào lớp 10, đây là chuyên đề tổng hợp giúp kết nối các công cụ hình học đã học.
 
-Các nhóm kỹ năng thường xuất hiện:
+Các nhóm kỹ năng cần chắc:
 1. Chứng minh tứ giác nội tiếp.
 2. Chứng minh hai tam giác đồng dạng.
 3. Chứng minh tiếp tuyến.
@@ -375,7 +374,7 @@ Các nhóm kỹ năng thường xuất hiện:
 5. Tính độ dài, góc hoặc diện tích.
 6. Câu cuối phân hóa cần nối nhiều kết quả trung gian.
 
-Mức ưu tiên ôn thi: **⭐⭐⭐⭐⭐**.
+Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 
 ---
 
@@ -403,7 +402,7 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐⭐**.
 
 ### Mức 2 – Thông hiểu
 
-4. Cho `∠ACB = ∠ADB`. Nêu một hướng để chứng minh bốn điểm `A, B, C, D` nội tiếp.
+4. Cho `C`, `D` nằm cùng phía đối với đường thẳng `AB` và `∠ACB = ∠ADB`. Nêu một hướng để chứng minh bốn điểm `A, B, C, D` nội tiếp.
 5. Hai tam giác đã đồng dạng. Hãy nêu cách suy ra một hệ thức tích từ tỉ số cạnh.
 6. Một hình hộp chữ nhật có kích thước `3 cm`, `4 cm`, `5 cm`. Tính thể tích.
 
