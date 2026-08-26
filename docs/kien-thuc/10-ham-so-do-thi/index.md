@@ -1,7 +1,7 @@
 # Chuyên đề 10 – Hàm số và đồ thị
 
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
 > **Lớp trọng tâm:** 7–9
 > **Mạch kiến thức:** Đại số
@@ -72,7 +72,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 ### 3.1. Khái niệm hàm số
 
-Nếu đại lượng `y` phụ thuộc vào đại lượng `x` sao cho với mỗi giá trị của `x` ta xác định được **duy nhất một giá trị của `y`**, thì `y` được gọi là hàm số của `x`.
+Nếu với mỗi giá trị `x` thuộc tập xác định ta xác định được **duy nhất một giá trị tương ứng của `y`**, thì `y` được gọi là hàm số của `x`.
 
 Ví dụ:
 
@@ -92,7 +92,7 @@ Khi đó:
 
 `f(1) = 5`
 
-> **Điểm cốt lõi:** một giá trị `x` không được cho ra hai giá trị `y` khác nhau trong cùng một hàm số.
+> **Điểm cốt lõi:** với mỗi `x` thuộc tập xác định, hàm số chỉ gán **một** giá trị `y` tương ứng.
 
 ---
 
@@ -141,7 +141,7 @@ Ví dụ:
 
 ### 3.4. Điểm thuộc đồ thị
 
-Điểm `M(x₀; y₀)` thuộc đồ thị của hàm số `y = f(x)` khi và chỉ khi:
+Điểm `M(x₀; y₀)` thuộc đồ thị của hàm số `y = f(x)` khi và chỉ khi `x₀` thuộc tập xác định của hàm số và:
 
 `y₀ = f(x₀)`
 
@@ -256,10 +256,10 @@ Trong `y = ax + b`:
 - nếu `a > 0`: hàm số đồng biến
 - nếu `a < 0`: hàm số nghịch biến
 
-Có thể hiểu trực quan:
+Trên cùng một hệ trục tọa độ và cùng tỉ lệ đơn vị, có thể hiểu trực quan:
 
-- `a` càng dương lớn → đường thẳng càng dốc lên
-- `a` càng âm lớn về độ lớn → đường thẳng càng dốc xuống
+- với `a > 0`, `a` càng lớn thì đường thẳng càng dốc lên;
+- với `a < 0`, `|a|` càng lớn thì đường thẳng càng dốc xuống.
 
 Ví dụ:
 
@@ -391,10 +391,10 @@ có đồ thị là một **parabol**.
 
 #### Một số tính chất quan trọng
 
-- đi qua gốc tọa độ `O(0; 0)`
-- nhận trục `Oy` làm trục đối xứng
-- nếu `a > 0`, parabol mở lên
-- nếu `a < 0`, parabol mở xuống
+- có đỉnh tại `O(0; 0)`;
+- nhận trục `Oy` làm trục đối xứng;
+- nếu `a > 0`, parabol mở lên;
+- nếu `a < 0`, parabol mở xuống.
 
 Ví dụ:
 
@@ -462,6 +462,8 @@ Vậy có.
 ---
 
 ### Dạng 3 – Tìm tham số để điểm thuộc đồ thị
+
+> Khi tham số xuất hiện trong hệ số của `x`, sau khi tìm được tham số cần kiểm tra điều kiện của dạng hàm đang xét, chẳng hạn `a ≠ 0` nếu đề yêu cầu hàm số bậc nhất.
 
 Ví dụ:
 
@@ -555,7 +557,7 @@ và hai tung độ gốc phải khác nhau, ở đây `2 ≠ -5`, nên thỏa m�
 
 ### Dạng 10 – Tìm tham số để hai đường thẳng cắt nhau
 
-Điều kiện:
+Với hai đường thẳng viết dưới dạng `y = a₁x + b₁` và `y = a₂x + b₂`, điều kiện để chúng cắt nhau tại đúng một điểm là:
 
 `a₁ ≠ a₂`
 
