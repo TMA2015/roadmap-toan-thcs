@@ -159,13 +159,15 @@ Tổng \(1+2+4+2+1=10\), đúng bằng số quan sát.
 
 ## 21-M4-01
 Tổng số quan sát là 12. Tần suất:
-\[
+
+$$
 \frac1{12}\approx8,3\%,\quad
 \frac2{12}\approx16,7\%,\quad
 \frac3{12}=25\%,\quad
 \frac4{12}\approx33,3\%,\quad
 \frac2{12}\approx16,7\%.
-\]
+$$
+
 Tổng phần trăm có thể lệch rất nhỏ so với \(100\%\) do làm tròn.
 
 # Theo dõi tiến độ
