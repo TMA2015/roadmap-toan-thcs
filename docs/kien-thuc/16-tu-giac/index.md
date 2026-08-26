@@ -1,9 +1,9 @@
 # Chuyên đề 16 – Tứ giác và các hình đặc biệt
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
-> **Lớp trọng tâm:** 8  
-> **Mạch kiến thức:** Hình học  
+> **Lớp trọng tâm:** 8
+> **Mạch kiến thức:** Hình học
 > **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
@@ -53,6 +53,8 @@ Mạch tư duy trọng tâm:
 > Hình thang là tứ giác có **một cặp cạnh đối song song**.
 
 Hai cạnh song song được gọi là **hai đáy**; hai cạnh còn lại là **hai cạnh bên**.
+
+> Theo cách hiểu “có một cặp cạnh đối song song”, điều kiện này không loại trừ trường hợp tứ giác còn có thêm một cặp cạnh đối song song. Trong Roadmap, hình bình hành vẫn được tách thành mục riêng để học các tính chất và dấu hiệu đặc trưng.
 
 ---
 
@@ -154,17 +156,17 @@ HÌNH THANG ───────────────────┘
 
 | Hình | Cạnh đối song song | Cạnh bằng nhau | Góc vuông | Đường chéo |
 |---|---|---|---|---|
-| Hình thang | 1 cặp | Không nhất thiết | Không nhất thiết | Không có tính chất chung đặc biệt |
+| Hình thang | Ít nhất 1 cặp | Không nhất thiết | Không nhất thiết | Không có tính chất chung đặc biệt |
 | Hình bình hành | 2 cặp | Các cạnh đối bằng nhau | Không nhất thiết | Cắt nhau tại trung điểm |
 | Hình chữ nhật | 2 cặp | Các cạnh đối bằng nhau | 4 góc | Bằng nhau và cắt nhau tại trung điểm |
-| Hình thoi | 2 cặp | 4 cạnh bằng nhau | Không nhất thiết | Vuông góc, cắt nhau tại trung điểm |
+| Hình thoi | 2 cặp | 4 cạnh bằng nhau | Không nhất thiết | Vuông góc, cắt nhau tại trung điểm; mỗi đường chéo phân giác hai góc đối |
 | Hình vuông | 2 cặp | 4 cạnh bằng nhau | 4 góc | Bằng nhau, vuông góc, cắt nhau tại trung điểm |
 
 ---
 
 ### Mẹo nhận dạng
 
-- Có **một cặp cạnh đối song song** → nghĩ đến hình thang.
+- Có **ít nhất một cặp cạnh đối song song** → nghĩ đến hình thang.
 - Có **hai cặp cạnh đối song song** → nghĩ đến hình bình hành.
 - Hình bình hành + **4 góc vuông** → hình chữ nhật.
 - Hình bình hành + **4 cạnh bằng nhau** → hình thoi.
@@ -248,7 +250,7 @@ Dấu hiệu nhận biết:
 
 Tính chất:
 - hai đường chéo vuông góc;
-- hai đường chéo là phân giác các góc;
+- mỗi đường chéo là phân giác của hai góc đối mà nó đi qua;
 - hai đường chéo cắt nhau tại trung điểm.
 
 ### 3.6. Hình vuông
@@ -265,7 +267,7 @@ Dấu hiệu nhận biết:
 
 | Dấu hiệu | Hình nên nghĩ tới |
 |---|---|
-| 1 cặp cạnh đối song song | Hình thang |
+| Có ít nhất một cặp cạnh đối song song | Hình thang |
 | 2 cặp cạnh đối song song | Hình bình hành |
 | Hình bình hành + góc vuông | Hình chữ nhật |
 | Hình bình hành + hai cạnh kề bằng nhau | Hình thoi |
@@ -326,7 +328,7 @@ Kết hợp trung điểm, song song, tam giác bằng nhau, Thales hoặc đồ
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Tứ giác đặc biệt thường xuất hiện trong **bài hình học tổng hợp**, nhất là dưới dạng một bước trung gian.
+Trong Roadmap ôn thi vào lớp 10, các tính chất và dấu hiệu của tứ giác đặc biệt được xem là **công cụ nền cho nhiều bài hình học tổng hợp**, thường được dùng như một bước trung gian trong chuỗi chứng minh.
 
 Các kỹ năng cần chắc:
 1. Chứng minh hình bình hành từ trung điểm hoặc song song.
