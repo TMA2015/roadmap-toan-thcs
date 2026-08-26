@@ -1,7 +1,7 @@
 # Chuyên đề 07 – Phân thức đại số
 
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
 > **Lớp trọng tâm:** 8
 > **Mạch kiến thức:** Đại số
@@ -73,14 +73,16 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 ### 3.1. Phân thức đại số là gì?
 
-Phân thức đại số là biểu thức có dạng:
+Phân thức đại số có dạng:
 
 `A/B`
 
-trong đó `A`, `B` là các đa thức và `B ≠ 0`.
+trong đó `A`, `B` là các đa thức và `B` là **đa thức khác đa thức 0**.
 
 - `A` gọi là **tử thức**.
 - `B` gọi là **mẫu thức**.
+
+Khi thay biến bằng một giá trị cụ thể, còn phải bảo đảm **giá trị của mẫu thức khác 0**.
 
 Ví dụ:
 
@@ -94,7 +96,7 @@ Một đa thức cũng có thể xem là một phân thức có mẫu bằng `1`
 
 ### 3.2. Điều kiện xác định
 
-Phân thức chỉ có nghĩa khi mẫu khác `0`.
+Với một giá trị cụ thể của biến, phân thức xác định khi giá trị của mẫu thức khác `0`.
 
 Ví dụ:
 
@@ -141,13 +143,17 @@ trên miền xác định `x ≠ 2`.
 
 ### 3.4. Tính chất cơ bản của phân thức
 
-Nếu `M ≠ 0` thì:
+Với `M` là một đa thức khác đa thức `0`:
 
 `A/B = (A·M)/(B·M)`
 
-Nếu `N` là nhân tử chung khác `0` của cả tử và mẫu thì:
+Khi xét giá trị của biểu thức, cần giữ các điều kiện để cả hai mẫu thức đều khác `0`.
 
-`(A·N)/(B·N) = A/B`.
+Nếu `N` là nhân tử chung khác đa thức `0` của cả tử và mẫu thì có thể rút gọn:
+
+`(A·N)/(B·N) = A/B`
+
+trên các giá trị của biến mà phân thức ban đầu xác định.
 
 Đây là cơ sở của hai thao tác quan trọng:
 
@@ -358,13 +364,25 @@ Nên **phân tích thành nhân tử và rút gọn trước khi nhân khai tri�
 
 `A = (x² - 4)/(x² - x - 2) · (x - 2)/(x + 2)`
 
+Điều kiện xác định:
+
+`x ≠ 2`, `x ≠ -1`, `x ≠ -2`.
+
 Phân tích:
 
 `x² - 4 = (x - 2)(x + 2)`
 
 `x² - x - 2 = (x - 2)(x + 1)`
 
-Sau rút gọn thích hợp, biểu thức trở nên đơn giản hơn nhiều so với việc khai triển ngay từ đầu.
+Do đó:
+
+`A = [(x - 2)(x + 2)]/[(x - 2)(x + 1)] · (x - 2)/(x + 2)`
+
+`= (x - 2)/(x + 1)`
+
+với điều kiện ban đầu `x ≠ 2`, `x ≠ -1`, `x ≠ -2`.
+
+Ví dụ này cho thấy nên phân tích và rút gọn nhân tử trước khi nghĩ đến khai triển.
 
 ---
 
@@ -435,7 +453,9 @@ Không được tính tại `x = 2`, dù biểu thức rút gọn `x + 2` có ng
 
 ### Dạng 10 – Tìm giá trị nguyên của biểu thức
 
-Một hướng thường gặp là biến đổi biểu thức về dạng:
+> **Mức vận dụng:** dạng này dùng để kết nối phân thức với tính chia hết và không phải là yêu cầu cơ bản của mọi bài về phân thức.
+
+Một hướng xử lý là biến đổi biểu thức về dạng:
 
 `A = k + m/(x - a)`
 
@@ -453,7 +473,7 @@ Nếu `x` nguyên và `A` nguyên thì `x - 1` phải là ước nguyên của `
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Phân thức đại số thường không đứng riêng lẻ mà xuất hiện trong **bài rút gọn biểu thức**, **tính giá trị**, **tìm điều kiện**, hoặc **giải phương trình chứa ẩn ở mẫu**.
+Trong bài toán tổng hợp, kiến thức phân thức đại số có thể được dùng trong **rút gọn biểu thức**, **tính giá trị**, **tìm điều kiện xác định** hoặc làm nền cho **phương trình chứa ẩn ở mẫu**.
 
 | Nhóm kỹ năng | Mức ưu tiên Roadmap |
 |---|:---:|
