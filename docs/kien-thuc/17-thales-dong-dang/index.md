@@ -1,9 +1,9 @@
 # Chuyên đề 17 – Định lý Thales và tam giác đồng dạng
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
-> **Lớp trọng tâm:** 8  
-> **Mạch kiến thức:** Hình học  
+> **Lớp trọng tâm:** 8
+> **Mạch kiến thức:** Hình học
 > **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
@@ -115,7 +115,7 @@ và:
 
 ### Mối liên hệ giữa Thales và đồng dạng
 
-Một cách nhìn rất quan trọng:
+Một cách nhìn rất quan trọng là Thales và tam giác đồng dạng **liên hệ chặt chẽ** qua cấu hình đường thẳng song song:
 
 ```text
 DE ∥ BC
@@ -125,9 +125,9 @@ Các góc tương ứng bằng nhau
 △ADE ∼ △ABC
    ↓
 Các cạnh tương ứng tỉ lệ
-   ↓
-Định lý Thales
 ```
+
+Trong Roadmap, sơ đồ trên dùng để kết nối hai công cụ; không nhằm thay thế cách phát biểu hay chứng minh riêng của định lý Thales.
 
 Vì vậy, khi gặp bài toán có **đường thẳng song song trong tam giác**, nên nghĩ ngay đến hai hướng:
 
@@ -182,13 +182,15 @@ Từ đây có thể tính một đoạn chưa biết khi biết các đoạn c�
 
 ### 3.2. Định lý Thales đảo
 
-Nếu `D ∈ AB`, `E ∈ AC` và các đoạn tương ứng tỉ lệ phù hợp, ví dụ:
+Trong tam giác `ABC`, nếu `D` nằm trên cạnh `AB`, `E` nằm trên cạnh `AC` và:
 
 `AD/DB = AE/EC`
 
-thì có thể suy ra:
+thì:
 
 `DE ∥ BC`
+
+Ở đây đang xét cấu hình các điểm nằm **trên hai cạnh của tam giác**, nên các độ dài đều là độ dài đoạn thẳng dương.
 
 Đây là công cụ rất mạnh để **chứng minh hai đường thẳng song song**.
 
@@ -202,8 +204,9 @@ và:
 
 `MN = 1/2 BC`
 
-Định lý đảo thường dùng:
-- một đường đi qua trung điểm của một cạnh và song song với cạnh thứ hai thì đi qua trung điểm cạnh thứ ba.
+Một dạng đảo thường dùng:
+
+- nếu một đường thẳng đi qua trung điểm của một cạnh của tam giác, song song với cạnh thứ hai và cắt cạnh còn lại, thì giao điểm đó là trung điểm của cạnh còn lại.
 
 ### 3.4. Tam giác đồng dạng
 
@@ -292,9 +295,9 @@ Kết hợp song song → góc bằng nhau → đồng dạng → tỉ lệ → 
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Đây là một trong những chuyên đề nền tảng nhất của hình học thi vào 10.
+Trong Roadmap ôn thi vào lớp 10, đây là một chuyên đề nền tảng có mức ưu tiên rất cao.
 
-Các kỹ năng thường xuất hiện:
+Các kỹ năng cần chắc:
 1. Chứng minh hai tam giác đồng dạng.
 2. Tính hoặc chứng minh tỉ số đoạn thẳng.
 3. Chứng minh một hệ thức tích.
