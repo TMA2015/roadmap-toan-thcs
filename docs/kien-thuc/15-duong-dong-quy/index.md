@@ -1,9 +1,9 @@
 # Chuyên đề 15 – Các đường đồng quy trong tam giác
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
-> **Lớp trọng tâm:** 7  
-> **Mạch kiến thức:** Hình học  
+> **Lớp trọng tâm:** 7
+> **Mạch kiến thức:** Hình học
 > **Mức ưu tiên:** ⭐⭐⭐⭐
 
 ---
@@ -198,7 +198,7 @@ Vị trí của `O`:
 | Trung điểm một cạnh | Trung tuyến |
 | Tỉ số `2 : 1` trên trung tuyến | Trọng tâm |
 | Vuông góc từ đỉnh | Đường cao / trực tâm |
-| Cách đều các cạnh | Tâm nội tiếp |
+| Điểm nằm trong tam giác và cách đều ba cạnh | Tâm nội tiếp |
 | Cách đều các đỉnh | Tâm ngoại tiếp |
 | Điểm nằm trên phân giác | Khoảng cách tới hai cạnh của góc |
 | Điểm nằm trên trung trực | Cách đều hai đầu đoạn thẳng |
@@ -225,7 +225,7 @@ Ví dụ: biết `AM = 12 cm`, `G` là trọng tâm:
 
 ### Dạng 3. Chứng minh một điểm là tâm nội tiếp
 
-Dùng hai phân giác hoặc tính chất cách đều ba cạnh.
+Có thể chứng minh điểm đó là giao của hai đường phân giác trong. Nếu dùng tính chất cách đều, cần biết điểm **nằm trong tam giác** và cách đều ba cạnh; khi đó điểm nằm trên các phân giác trong và là tâm nội tiếp.
 
 ### Dạng 4. Chứng minh một điểm là tâm ngoại tiếp
 
@@ -243,7 +243,7 @@ Kết hợp trung điểm, vuông góc, phân giác, đường tròn hoặc đ�
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Chuyên đề này thường là **kiến thức nền của bài hình học tổng hợp**.
+Trong Roadmap ôn thi vào lớp 10, chuyên đề này được xem là **kiến thức nền của nhiều bài hình học tổng hợp**.
 
 Các kỹ năng cần chắc:
 1. Nhận ra trung điểm → trung tuyến.
@@ -286,13 +286,13 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 
 ### Mức 3 – Vận dụng
 
-8. `I` nằm trên phân giác góc `A` và phân giác góc `B`. Chứng minh `I` là tâm nội tiếp.
+8. `I` nằm trong tam giác và nằm trên phân giác trong của góc `A` và góc `B`. Chứng minh `I` là tâm nội tiếp.
 9. `O` thỏa mãn `OA = OB = OC`. Giải thích vì sao `O` là tâm ngoại tiếp.
 
 ### Mức 4 – Tổng hợp
 
 10. Hai trung tuyến `AM`, `BN` cắt nhau tại `G`. Biết `AG = 8 cm`. Tính `AM`.
-11. Một điểm `P` cách đều ba cạnh tam giác. Xác định vai trò của `P` và đường tròn tương ứng.
+11. Một điểm `P` nằm trong tam giác và cách đều ba cạnh. Xác định vai trò của `P` và đường tròn tương ứng.
 
 ---
 
@@ -316,7 +316,8 @@ Hãy tự trả lời không nhìn tài liệu:
 ## 🔄 10. Liên kết Roadmap
 
 - **← Trước:** [14 – Tam giác](../14-tam-giac/index.md)
-- **→ Tiếp theo:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md)
+- **→ Tiếp theo:** [16 – Tứ giác và các hình đặc biệt](../16-tu-giac/index.md)
+- **→ Liên hệ:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md)
 - **→ Liên hệ:** [19 – Đường tròn](../19-duong-tron/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
