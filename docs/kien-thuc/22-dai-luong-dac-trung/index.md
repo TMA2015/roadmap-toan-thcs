@@ -1,9 +1,9 @@
 # Chuyên đề 22 – Các đại lượng đặc trưng của dữ liệu
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
-> **Lớp trọng tâm:** 7–9  
-> **Mạch kiến thức:** Thống kê  
+> **Lớp trọng tâm:** 7–9
+> **Mạch kiến thức:** Thống kê
 > **Mức ưu tiên:** ⭐⭐⭐⭐
 
 ---
@@ -84,7 +84,7 @@ Trong ví dụ:
 Lưu ý:
 
 - muốn tìm trung vị, luôn phải **sắp xếp dữ liệu trước**;
-- một bộ dữ liệu có thể có **một mốt, nhiều mốt hoặc không có mốt rõ ràng**.
+- một bộ dữ liệu có thể có **một hoặc nhiều mốt**; nếu nhiều giá trị cùng đạt tần số lớn nhất thì tất cả các giá trị đó đều là mốt. Khi các tần số bằng nhau, mốt thường không giúp phân biệt giá trị nào là phổ biến hơn.
 
 ---
 
@@ -96,7 +96,7 @@ Lưu ý:
        width="560">
 </p>
 
-> **Giá trị ngoại lai** là một giá trị quá lớn hoặc quá nhỏ so với phần còn lại của dữ liệu.
+> Trong Roadmap, **giá trị ngoại lai** được hiểu ở mức trực quan là một giá trị khác biệt rõ rệt so với phần lớn các giá trị còn lại. Việc xác định ngoại lai bằng tiêu chí định lượng cụ thể sẽ được xem là nội dung mở rộng.
 
 Trong hình:
 
@@ -222,12 +222,12 @@ Với:
 
 ### 3.4. Mốt
 
-Mốt là giá trị xuất hiện nhiều nhất.
+Mốt là giá trị có **tần số lớn nhất** trong bộ dữ liệu.
 
 Một bộ dữ liệu:
 - có thể có một mốt;
-- có thể có nhiều mốt;
-- có thể không có mốt nếu không có giá trị nào nổi bật về tần số.
+- có thể có nhiều mốt nếu nhiều giá trị cùng có tần số lớn nhất;
+- khi mọi giá trị có cùng tần số, mốt không tạo ra một giá trị nổi bật để đại diện cho mức phổ biến.
 
 ### 3.5. Khoảng biến thiên
 
@@ -247,7 +247,7 @@ có:
 
 ### 3.6. Giá trị ngoại lai
 
-Một giá trị quá lớn hoặc quá nhỏ so với phần còn lại có thể làm số trung bình thay đổi mạnh.
+Ở mức trực quan, một giá trị khác biệt rõ rệt so với phần lớn dữ liệu có thể được xem là giá trị ngoại lai. Giá trị như vậy có thể làm số trung bình thay đổi mạnh.
 
 Ví dụ:
 
@@ -314,7 +314,7 @@ So sánh trung bình, trung vị, mốt hoặc khoảng biến thiên tùy câu 
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Trong đề thi vào 10, nhóm bài này thường ở mức cơ bản đến vận dụng vừa và có thể gắn với bảng hoặc biểu đồ.
+Trong Roadmap ôn thi vào lớp 10, nhóm kiến thức này được xếp ở mức ưu tiên cao vừa phải và nên luyện cùng bảng, biểu đồ và bài toán dữ liệu thực tế.
 
 Các kỹ năng cần chắc:
 1. Tính số trung bình từ dữ liệu hoặc bảng tần số.
@@ -391,7 +391,8 @@ Hãy tự trả lời không nhìn tài liệu:
 ## 🔄 10. Liên kết Roadmap
 
 - **← Trước:** [21 – Thống kê và thu thập dữ liệu](../21-thong-ke/index.md)
-- **→ Tiếp theo:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
+- **→ Tiếp theo:** [23 – Xác suất](../23-xac-suat/index.md)
+- **→ Liên hệ:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
 - **→ Tổng hợp:** [25 – Ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
