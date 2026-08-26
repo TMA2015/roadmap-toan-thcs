@@ -189,30 +189,38 @@ Một học sinh tính góc bằng máy tính nhưng để chế độ RAD. Hãy
 
 ## 18-M3-02
 \(BC=9+16=25\).
-\[
+
+$$
 AB^2=BH\cdot BC=9\cdot25=225\Rightarrow AB=15.
-\]
-\[
+$$
+
+$$
 AC^2=CH\cdot BC=16\cdot25=400\Rightarrow AC=20.
-\]
+$$
 
 ## 18-M4-02
-\[
+
+$$
 BC=\sqrt{12^2+16^2}=20.
-\]
+$$
+
 Từ diện tích:
-\[
+
+$$
 AH=\frac{AB\cdot AC}{BC}=\frac{12\cdot16}{20}=9,6.
-\]
-\[
+$$
+
+$$
 BH=\frac{AB^2}{BC}=7,2,\qquad CH=\frac{AC^2}{BC}=12,8.
-\]
+$$
 
 ## 18-M4-07
 Diện tích tam giác:
-\[
+
+$$
 S=\frac12 AB\cdot AC=\frac12 AH\cdot BC.
-\]
+$$
+
 Suy ra \(AB\cdot AC=AH\cdot BC\).
 
 # Theo dõi tiến độ
