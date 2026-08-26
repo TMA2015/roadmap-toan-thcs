@@ -1,7 +1,7 @@
 # Chuyên đề 14 – Tam giác
 
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
 > **Lớp trọng tâm:** 7
 > **Mạch kiến thức:** Hình học
@@ -54,7 +54,7 @@ TAM GIÁC
   <img src="../../assets/geometry/14/14-tam-giac-can.svg" alt="Minh họa tam giác cân" width="520">
 </p>
 
-> Trong tam giác cân, hai cạnh bên bằng nhau thì hai góc ở đáy bằng nhau. Đường từ đỉnh xuống đáy đồng thời là đường cao, trung tuyến và phân giác.
+> Trong tam giác cân, hai góc ở đáy bằng nhau. Đặc biệt, **đường trung tuyến kẻ từ đỉnh cân xuống đáy** đồng thời là đường cao và đường phân giác của góc ở đỉnh.
 
 #### 2. Định lý Pythagore
 
@@ -62,7 +62,7 @@ TAM GIÁC
   <img src="../../assets/geometry/14/14-pythagore.svg" alt="Minh họa định lý Pythagore" width="540">
 </p>
 
-> Với tam giác vuông, bình phương cạnh huyền bằng tổng bình phương hai cạnh góc vuông: `BC² = AB² + AC²`.
+> Với tam giác `ABC` vuông tại `A`, cạnh huyền là `BC` và định lý Pythagore cho: `BC² = AB² + AC²`.
 
 ---
 
@@ -203,6 +203,14 @@ Tam giác `ABC` cân tại `A` nếu:
 Khi đó:
 
 `∠B = ∠C`
+
+Nếu `M` là trung điểm của đáy `BC` thì trong tam giác cân tại `A`, đường trung tuyến `AM` đồng thời là đường cao và đường phân giác:
+
+`AM ⟂ BC`
+
+và:
+
+`∠BAM = ∠MAC`
 
 ##### Dấu hiệu nhận biết
 
@@ -497,7 +505,7 @@ Thường dùng hai tam giác bằng nhau để suy ra:
 | Kết hợp tam giác với đường tròn | ⭐⭐⭐⭐⭐ |
 | Kết hợp tam giác với đồng dạng | ⭐⭐⭐⭐⭐ |
 
-Trong đề thi vào lớp 10, kiến thức tam giác thường không đứng một mình mà là nền tảng cho chuỗi chứng minh dài hơn.
+Trong Roadmap ôn thi vào lớp 10, kiến thức tam giác được xem là nền tảng để xử lý nhiều chuỗi chứng minh kết hợp với các chuyên đề hình học khác.
 
 ---
 
