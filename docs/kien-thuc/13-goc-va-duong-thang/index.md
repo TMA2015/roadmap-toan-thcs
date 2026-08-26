@@ -1,7 +1,7 @@
 # Chuyên đề 13 – Góc và quan hệ giữa các đường thẳng
 
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
 > **Lớp trọng tâm:** 6–7
 > **Mạch kiến thức:** Hình học
@@ -240,7 +240,7 @@ Nếu `∠1 = 70°` thì góc đối đỉnh với nó cũng bằng `70°`; hai 
 
 ## 3.6. Hai đường thẳng vuông góc
 
-Hai đường thẳng `a` và `b` vuông góc nếu chúng cắt nhau tạo thành một góc vuông.
+Hai đường thẳng `a` và `b` vuông góc nếu chúng cắt nhau và tạo thành một góc vuông.
 
 Ký hiệu:
 
@@ -322,7 +322,7 @@ a ∥ b
 
 ### Tính chất 1
 
-Nếu:
+Nếu hai đường thẳng phân biệt `a`, `b` cùng vuông góc với đường thẳng `c`:
 
 `a ⟂ c` và `b ⟂ c`
 
@@ -457,7 +457,7 @@ Góc kề bù với nó bằng:
 - So le trong bằng nhau.
 - Đồng vị bằng nhau.
 - Trong cùng phía bù nhau.
-- Hai đường thẳng cùng vuông góc với đường thẳng thứ ba.
+- Hai đường thẳng phân biệt cùng vuông góc với đường thẳng thứ ba.
 
 ### Cách trình bày mẫu
 
@@ -471,9 +471,9 @@ Phần quan trọng không chỉ là hai góc bằng nhau mà còn phải **nêu
 
 Có thể dùng một trong các hướng:
 
-- chứng minh góc tạo bởi hai đường thẳng bằng `90°`;
+- chứng minh một góc tạo bởi hai đường thẳng bằng `90°`;
 - dùng quan hệ song song với một đường đã biết vuông góc;
-- dùng tổng hai góc phụ nhau trong cấu hình phù hợp.
+- từ các quan hệ góc đã biết, tính được góc tạo bởi hai đường thẳng bằng `90°`.
 
 ---
 
