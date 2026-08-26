@@ -1,7 +1,7 @@
 # Chuyên đề 12 – Phương trình bậc hai & Viète – chuẩn bị THPT
 
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
 > **Lớp trọng tâm:** 9
 > **Mạch kiến thức:** Đại số
@@ -40,7 +40,7 @@ PHƯƠNG TRÌNH BẬC HAI & VIÈTE
 │   ├── Tìm tham số
 │   └── Lập phương trình khi biết nghiệm
 │
-└── 6. Liên hệ đồ thị
+└── 6. Mở rộng / cầu nối đồ thị
     ├── y = ax² + bx + c
     └── Nghiệm là hoành độ giao điểm với trục Ox
 ```
@@ -59,7 +59,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 - [ ] Tính các biểu thức đối xứng theo hai nghiệm mà không cần giải phương trình.
 - [ ] Xử lý bài toán có tham số về số nghiệm, dấu nghiệm và quan hệ giữa hai nghiệm.
 - [ ] Lập phương trình bậc hai khi biết tổng và tích hai nghiệm.
-- [ ] Liên hệ nghiệm phương trình với giao điểm của đồ thị parabol và trục hoành.
+- [ ] Hiểu ở mức mở rộng mối liên hệ giữa nghiệm phương trình và giao điểm của đồ thị bậc hai với trục hoành.
 
 ---
 
@@ -148,9 +148,13 @@ Nếu `b = 2b'`, ta có thể dùng:
 
 `Δ' = b'² - ac`
 
-Khi `Δ' ≥ 0`:
+Khi đó:
 
-`x = (-b' ± √Δ')/a`
+- `Δ' > 0`: phương trình có hai nghiệm phân biệt:
+  `x₁ = (-b' + √Δ')/a`, `x₂ = (-b' - √Δ')/a`;
+- `Δ' = 0`: phương trình có nghiệm kép:
+  `x₁ = x₂ = -b'/a`;
+- `Δ' < 0`: phương trình vô nghiệm trong tập số thực.
 
 Ví dụ:
 
@@ -258,7 +262,7 @@ Nếu phương trình:
 
 `ax² + bx + c = 0`, `a ≠ 0`
 
-có hai nghiệm `x₁, x₂`, thì:
+có các nghiệm thực `x₁, x₂` (có thể trùng nhau), thì:
 
 `x₁ + x₂ = -b/a`
 
@@ -378,13 +382,15 @@ Sau đó lập:
 
 ---
 
-### Dạng 10 – Liên hệ với đồ thị
+### Dạng 10 – Mở rộng / cầu nối với đồ thị
+
+> Phần này dùng để kết nối sang tư duy hàm số bậc hai; không xem là trọng tâm cốt lõi ngang với công thức nghiệm và hệ thức Viète ở THCS.
 
 Phương trình:
 
 `ax² + bx + c = 0`
 
-chính là bài toán tìm hoành độ giao điểm của đồ thị:
+có thể được hiểu là bài toán tìm hoành độ giao điểm của đồ thị:
 
 `y = ax² + bx + c`
 
@@ -409,7 +415,7 @@ với trục `Ox`.
 | Điều kiện hai nghiệm dương/âm/trái dấu | ⭐⭐⭐⭐⭐ |
 | Lập phương trình từ tổng và tích nghiệm | ⭐⭐⭐⭐ |
 | Biến đổi nghiệm | ⭐⭐⭐⭐ |
-| Liên hệ đồ thị parabol | ⭐⭐⭐⭐ |
+| Liên hệ đồ thị bậc hai (mở rộng) | ⭐⭐⭐⭐ |
 
 ### Chiến lược làm bài
 
@@ -552,7 +558,7 @@ D. `x² - Px + S = 0`
 - [ ] Tôi tính được biểu thức đối xứng theo hai nghiệm mà không cần giải phương trình.
 - [ ] Tôi biết xử lý bài tham số về số nghiệm và dấu nghiệm.
 - [ ] Tôi biết lập phương trình khi biết tổng và tích nghiệm.
-- [ ] Tôi hiểu mối liên hệ giữa nghiệm phương trình và giao điểm của parabol với trục `Ox`.
+- [ ] Tôi hiểu ở mức mở rộng mối liên hệ giữa nghiệm phương trình và giao điểm của đồ thị bậc hai với trục `Ox`.
 
 ---
 
