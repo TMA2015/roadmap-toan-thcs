@@ -1,9 +1,9 @@
 # Chuyên đề 25 – Bản đồ tổng hợp & chiến lược ôn thi vào 10
 
-> **Trạng thái:** Nội dung tổng hợp và chiến lược ôn thi đã hoàn thiện theo cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật và chiến lược ôn tập.
 >
-> **Lớp trọng tâm:** 9  
-> **Mạch kiến thức:** Tổng hợp/Thi vào 10  
+> **Lớp trọng tâm:** 9
+> **Mạch kiến thức:** Tổng hợp/Thi vào 10
 > **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
@@ -92,7 +92,7 @@ Nhóm cũng rất quan trọng:
 
 Lưu ý:
 
-> Ưu tiên cao không có nghĩa là bỏ qua phần còn lại. Ý nghĩa của ma trận là giúp ta biết nên dành **nhiều thời gian hơn** cho những phần thường xuất hiện và dễ quyết định điểm số.
+> Ưu tiên cao không có nghĩa là bỏ qua phần còn lại. Ý nghĩa của ma trận là giúp phân bổ **nhiều thời gian hơn** cho những phần được đặt trọng số cao trong cấu trúc đề địa phương hoặc những phần học sinh còn yếu.
 
 ---
 
@@ -142,9 +142,9 @@ Một kế hoạch ôn tập hiệu quả thường có 4 trục:
 
 ### Phân bổ thời gian ôn tập gợi ý
 
-Nếu đang ở giai đoạn ôn tập tổng lực, có thể tham khảo:
+Nếu đang ở giai đoạn ôn tập tổng lực, có thể dùng một **ví dụ phân bổ tham khảo** như sau:
 
-| Mảng nội dung | Tỉ lệ thời gian gợi ý |
+| Mảng nội dung | Tỉ lệ thời gian minh họa |
 |---|---:|
 | Đại số trọng tâm | 30% |
 | Hình học trọng tâm | 30% |
@@ -152,7 +152,7 @@ Nếu đang ở giai đoạn ôn tập tổng lực, có thể tham khảo:
 | Thống kê và xác suất | 10% |
 | Rà soát lỗi, chữa đề | 10% |
 
-Tỉ lệ này có thể điều chỉnh theo điểm mạnh – yếu cá nhân.
+Đây không phải tỉ lệ chuẩn dùng cho mọi học sinh. Cần điều chỉnh theo điểm mạnh – yếu cá nhân, thời gian còn lại và cấu trúc đề của địa phương dự thi.
 
 ---
 
@@ -317,17 +317,17 @@ Có thể phân loại:
 
 | Nhóm | Ý nghĩa | Hành động |
 |---|---|---|
-| A | Hay thi + đang yếu | Ưu tiên cao nhất |
-| B | Hay thi + đang khá | Luyện duy trì |
-| C | Ít thi hơn + đang yếu | Bổ sung có chọn lọc |
-| D | Ít thi hơn + đang chắc | Ôn rà soát |
+| A | Ưu tiên cao theo đề địa phương + đang yếu | Ưu tiên cao nhất |
+| B | Ưu tiên cao theo đề địa phương + đang khá | Luyện duy trì |
+| C | Ưu tiên thấp hơn theo đề địa phương + đang yếu | Bổ sung có chọn lọc |
+| D | Ưu tiên thấp hơn theo đề địa phương + đang chắc | Ôn rà soát |
 
 Ma trận trên chỉ là khung. Cần điều chỉnh theo cấu trúc đề chính thức của địa phương.
 
 ### 3.4. Quy trình luyện một đề
 
 1. Làm đề đúng thời gian quy định.
-2. Chấm điểm khách quan.
+2. Chấm theo đáp án, hướng dẫn chấm hoặc thang điểm đáng tin cậy nếu có.
 3. Phân loại lỗi.
 4. Tìm chuyên đề gốc gây ra lỗi.
 5. Ôn lại kiến thức liên quan.
@@ -452,12 +452,14 @@ Không dừng ở việc xem đáp án. Phải:
 
 Toàn bộ chuyên đề này hướng trực tiếp tới thi vào lớp 10.
 
-Nhóm thường có vai trò lớn:
+Các nhóm cần rà soát đầy đủ:
 1. Đại số nền và phương trình/hệ.
 2. Hàm số – đồ thị.
 3. Bài toán thực tế.
 4. Hình học tổng hợp và đường tròn.
 5. Thống kê và xác suất.
+
+Thứ tự ưu tiên giữa các nhóm trên không nên mặc định giống nhau cho mọi địa phương.
 
 Tuy nhiên:
 
@@ -498,7 +500,7 @@ Mức ưu tiên tổng thể của chuyên đề: **⭐⭐⭐⭐⭐**.
 ### Mức 2 – Thông hiểu
 
 4. Một học sinh hay sai dấu nhưng nhớ đúng kiến thức. Đây là loại lỗi nào? Cách sửa?
-5. Một học sinh yếu hình học tổng hợp nhưng đề địa phương thường có phần này lớn. Nên xếp vào nhóm ưu tiên nào?
+5. Một học sinh yếu hình học tổng hợp và cấu trúc đề địa phương đặt trọng số cao cho phần này. Nên xếp vào nhóm ưu tiên nào?
 6. Vì sao không nên chỉ làm đề mà không chữa đề?
 
 ### Mức 3 – Vận dụng
