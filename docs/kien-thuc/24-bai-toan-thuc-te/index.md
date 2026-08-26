@@ -1,9 +1,9 @@
 # Chuyên đề 24 – Bài toán thực tế và mô hình hóa
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện theo cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
-> **Lớp trọng tâm:** 6–9  
-> **Mạch kiến thức:** Liên môn/tổng hợp  
+> **Lớp trọng tâm:** 6–9
+> **Mạch kiến thức:** Liên môn/tổng hợp
 > **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 ---
@@ -303,7 +303,7 @@ Luôn đổi đơn vị trước khi lập phương trình.
 
 ### 3.5. Bài toán năng suất
 
-Mô hình cơ bản:
+Trong mô hình năng suất **không đổi**, ta dùng:
 
 `Công việc = năng suất × thời gian`
 
@@ -311,7 +311,7 @@ Nếu hoàn thành toàn bộ công việc thì có thể quy ước:
 
 `Công việc = 1`
 
-Ví dụ một người làm một mình hết `a` giờ thì năng suất là:
+Ví dụ, nếu một người làm việc với năng suất không đổi và một mình hoàn thành công việc trong `a` giờ (`a > 0`) thì năng suất mỗi giờ là:
 
 `1/a`
 
@@ -329,9 +329,9 @@ Cần đặc biệt chú ý **giá trị gốc** mà phần trăm được tính
 
 ### 3.7. Bài toán lập phương trình / hệ
 
-Dùng phương trình khi có một đại lượng chưa biết chính.
+Dùng phương trình khi có thể chọn một ẩn chính và thiết lập được một quan hệ đủ để xác định ẩn đó.
 
-Dùng hệ phương trình khi có hai đại lượng chưa biết liên hệ với nhau.
+Dùng hệ phương trình khi cần dùng từ hai ẩn trở lên và có đủ các quan hệ độc lập để xác định các ẩn. Số đại lượng chưa biết tự nó **không quyết định** phải dùng phương trình hay hệ phương trình; điều quan trọng là cách chọn ẩn và số quan hệ độc lập có thể lập được.
 
 Quy trình:
 1. đặt ẩn;
@@ -378,8 +378,8 @@ Sau khi có đáp số, cần kiểm tra:
 | quãng đường – vận tốc – thời gian | `S = vt` |
 | năng suất – thời gian | `A = nt` |
 | tăng/giảm giá | phần trăm |
-| một đại lượng chưa biết | phương trình |
-| hai đại lượng chưa biết | hệ phương trình |
+| một ẩn chính + một quan hệ đủ để xác định | phương trình |
+| hai ẩn + hai quan hệ độc lập phù hợp | hệ phương trình |
 | chiều cao – khoảng cách – góc | lượng giác |
 | diện tích – thể tích | công thức hình học |
 | bảng / biểu đồ / số liệu | thống kê |
@@ -436,7 +436,7 @@ Kết hợp nhiều chuyên đề, ví dụ:
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 
-Đây là nhóm bài có mức độ xuất hiện cao trong đề thi vào 10 vì kiểm tra khả năng vận dụng toán học vào tình huống thực tế.
+Trong Roadmap ôn thi vào lớp 10, đây là nhóm bài có mức ưu tiên rất cao vì yêu cầu học sinh chuyển đổi linh hoạt giữa ngữ cảnh thực tế và mô hình toán học.
 
 Các kỹ năng cần chắc:
 1. Đọc đề dài và tóm tắt dữ kiện.
@@ -512,8 +512,9 @@ Hãy tự trả lời không nhìn tài liệu:
 
 ## 🔄 10. Liên kết Roadmap
 
-- **← Trước:** [02 – Số và phép tính](../02-so-va-phep-tinh/index.md) → [23 – Xác suất](../23-xac-suat/index.md)
+- **← Trước:** [23 – Xác suất](../23-xac-suat/index.md)
 - **→ Tiếp theo:** [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
+- **→ Kiến thức nền liên hệ:** các chuyên đề từ [02 – Số và phép tính](../02-so-va-phep-tinh/index.md) đến [22 – Các đại lượng đặc trưng của dữ liệu](../22-dai-luong-dac-trung/index.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
