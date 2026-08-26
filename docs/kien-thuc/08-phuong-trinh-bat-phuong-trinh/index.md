@@ -1,17 +1,13 @@
 # 08. Phương trình và bất phương trình
 
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
 > **Lớp trọng tâm:** 8–9
 > **Mạch kiến thức:** Đại số
 > **Mức ưu tiên:** ⭐⭐⭐⭐⭐
 
 > **Vai trò:** Chuyên đề trọng tâm của Đại số THCS, kết nối trực tiếp với hệ phương trình, hàm số và bài toán thực tế.
-
-**Lớp trọng tâm:** 8–9
-**Mức độ ưu tiên:** ⭐⭐⭐⭐⭐
-**Mục tiêu:** Nắm chắc các kỹ thuật giải phương trình, bất phương trình và biết nhận dạng dạng bài trước khi chọn phương pháp.
 
 ---
 
@@ -37,7 +33,7 @@ PHƯƠNG TRÌNH & BẤT PHƯƠNG TRÌNH
 │   ├── Quy tắc biến đổi
 │   └── Đổi chiều khi nhân/chia số âm
 │
-├── Hệ bất phương trình
+├── Mở rộng: nhiều bất phương trình cùng điều kiện
 │   └── Giao các tập nghiệm
 │
 └── Bài toán thực tế
@@ -50,11 +46,11 @@ PHƯƠNG TRÌNH & BẤT PHƯƠNG TRÌNH
 ### Bắt buộc
 
 - Hiểu nghiệm của phương trình và bất phương trình.
-- Biết các phép biến đổi tương đương cơ bản.
+- Biết các phép biến đổi tương đương cơ bản và điều kiện để phép biến đổi giữ nguyên tập nghiệm.
 - Giải thành thạo phương trình bậc nhất một ẩn.
 - Nhận dạng và giải phương trình tích.
 - Giải phương trình chứa ẩn ở mẫu đúng quy trình.
-- Giải bất phương trình bậc nhất.
+- Giải bất phương trình bậc nhất một ẩn.
 - Biết biểu diễn tập nghiệm trên trục số.
 
 ### Vận dụng
@@ -68,7 +64,7 @@ PHƯƠNG TRÌNH & BẤT PHƯƠNG TRÌNH
 
 ## 📖 3. Kiến thức cốt lõi
 
-### 3.1. Phương trình bậc nhất
+### 3.1. Phương trình bậc nhất một ẩn
 
 Dạng tổng quát:
 
@@ -78,7 +74,14 @@ Nghiệm:
 
 $$x=-\frac ba$$
 
-**Quy trình:** thu gọn → chuyển vế → chia hệ số của $x$ → kiểm tra nếu cần.
+Các phép biến đổi tương đương thường dùng:
+
+- cộng hoặc trừ cùng một biểu thức vào hai vế;
+- nhân hoặc chia hai vế cho cùng một **số khác 0**.
+
+**Quy trình:** thu gọn → chuyển vế → chia cho hệ số khác 0 của $x$ → kiểm tra nếu cần.
+
+> Nếu xuất hiện tham số làm hệ số của $x$ có thể bằng `0`, phải xét riêng trường hợp đó; không được chia ngay cho một biểu thức chưa biết có khác `0` hay không.
 
 ### 3.2. Phương trình tích
 
@@ -102,17 +105,19 @@ Quy trình bắt buộc:
 4. Đối chiếu nghiệm với điều kiện xác định.
 5. Kết luận.
 
-### 3.4. Bất phương trình bậc nhất
+### 3.4. Bất phương trình bậc nhất một ẩn
 
-Khi nhân hoặc chia hai vế với **số âm**, phải **đổi chiều bất phương trình**.
+Khi cộng hoặc trừ cùng một biểu thức vào hai vế, chiều bất phương trình được giữ nguyên. Khi nhân hoặc chia hai vế với một **số dương**, chiều được giữ nguyên; với một **số âm**, phải **đổi chiều bất phương trình**.
 
 Ví dụ:
 
 $$-2x>6\Rightarrow x<-3.$$
 
-### 3.5. Hệ bất phương trình
+### 3.5. Mở rộng – nhiều bất phương trình cùng điều kiện
 
-Giải từng bất phương trình rồi lấy **giao** các tập nghiệm.
+Khi cần tìm các giá trị thỏa mãn đồng thời nhiều bất phương trình một ẩn, giải từng bất phương trình rồi lấy **giao** các tập nghiệm.
+
+> Phần này dùng để rèn tư duy về giao tập nghiệm và hỗ trợ bài toán có nhiều điều kiện; không xem là trọng tâm cốt lõi ngang với phương trình và bất phương trình bậc nhất một ẩn.
 
 ---
 
@@ -120,17 +125,17 @@ Giải từng bất phương trình rồi lấy **giao** các tập nghiệm.
 
 **Cần nắm trước:**
 
-- Biểu thức đại số
-- Phân tích đa thức thành nhân tử
-- Phân thức đại số
+- [04. Biểu thức và biến đổi đại số](../04-bieu-thuc-dai-so/index.md)
+- [06. Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/index.md)
+- [07. Phân thức đại số](../07-phan-thuc-dai-so/index.md)
 - Biến đổi và rút gọn biểu thức
 
 **Học tiếp / liên hệ:**
 
-- Hệ phương trình bậc nhất hai ẩn
-- Hàm số và đồ thị
-- Phương trình bậc hai
-- Bài toán thực tế và mô hình hóa
+- [09. Hệ phương trình bậc nhất hai ẩn](../09-he-phuong-trinh/index.md)
+- [10. Hàm số và đồ thị](../10-ham-so-do-thi/index.md)
+- [12. Phương trình bậc hai & Viète](../12-phuong-trinh-bac-hai-viete/index.md)
+- [24. Bài toán thực tế và mô hình hóa](../24-bai-toan-thuc-te/index.md)
 
 **Mạch kiến thức:**
 
@@ -153,7 +158,7 @@ Giải từng bất phương trình rồi lấy **giao** các tập nghiệm.
     - Phương trình cần thu gọn nhiều bước.
     - Phương trình tích sau khi phân tích nhân tử.
     - Phương trình chứa ẩn ở mẫu.
-    - Hệ bất phương trình.
+    - Bài toán nhiều điều kiện, lấy giao các tập nghiệm (mở rộng).
 
 === "Mức 3 — Vận dụng"
 
@@ -203,7 +208,7 @@ $$-2x>-4\Rightarrow x<2.$$
 | Phương trình tích | ⭐⭐⭐⭐ | Phân tích và giải đúng |
 | Phương trình chứa ẩn ở mẫu | ⭐⭐⭐⭐⭐ | ĐKXĐ + khử mẫu + đối chiếu |
 | Bất phương trình | ⭐⭐⭐⭐ | Biến đổi và biểu diễn nghiệm |
-| Hệ bất phương trình | ⭐⭐⭐ | Lấy giao tập nghiệm |
+| Nhiều bất phương trình cùng điều kiện (mở rộng) | ⭐⭐⭐ | Lấy giao tập nghiệm |
 | Lập phương trình từ bài toán | ⭐⭐⭐⭐⭐ | Mô hình hóa |
 | Bài toán tham số/nâng cao | ⭐⭐⭐ | Biện luận |
 
@@ -259,15 +264,16 @@ Một đề chuyên đề 45–60 phút, trộn các dạng quan trọng.
 
 ## 🔄 10. Liên kết Roadmap
 
-**← Trước:** 06. Phân tích đa thức thành nhân tử
-**Tiếp theo:** 09. Hệ phương trình bậc nhất hai ẩn
+**← Trước:** [07. Phân thức đại số](../07-phan-thuc-dai-so/index.md)
+
+**→ Tiếp theo:** [09. Hệ phương trình bậc nhất hai ẩn](../09-he-phuong-trinh/index.md)
 
 **Liên hệ gần:**
 
 - [04. Biểu thức và biến đổi đại số](../04-bieu-thuc-dai-so/index.md)
-- 07. Phân thức đại số
-- 10. Hàm số và đồ thị
-- 24. Bài toán thực tế và mô hình hóa
+- [06. Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/index.md)
+- [10. Hàm số và đồ thị](../10-ham-so-do-thi/index.md)
+- [24. Bài toán thực tế và mô hình hóa](../24-bai-toan-thuc-te/index.md)
 
 ---
 
