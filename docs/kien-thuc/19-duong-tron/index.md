@@ -1,6 +1,6 @@
 # Chuyên đề 19 – Đường tròn
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 9
 > **Mạch kiến thức:** Hình học
@@ -362,6 +362,9 @@ Hãy tự trả lời không nhìn tài liệu:
 - **→ Tiếp theo:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
 - **→ Liên hệ:** [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 19](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 19](tu-kiem-tra.md)
+
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
@@ -376,4 +379,4 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Dùng đúng hai hệ thức tích đoạn thẳng.
 - [ ] Kết hợp được đường tròn với đồng dạng.
 - [ ] Giải được ít nhất một bài hình tổng hợp có đường tròn.
-- [ ] Đạt ít nhất `7/8` câu tự kiểm tra.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 20.

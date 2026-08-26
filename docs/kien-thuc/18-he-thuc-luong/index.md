@@ -1,6 +1,6 @@
 # Chuyên đề 18 – Hệ thức lượng trong tam giác vuông
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 9
 > **Mạch kiến thức:** Hình học/Đo lường
@@ -347,6 +347,9 @@ Hãy tự trả lời không nhìn tài liệu:
 - **→ Tiếp theo:** [19 – Đường tròn](../19-duong-tron/index.md)
 - **→ Liên hệ:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md), [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 18](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 18](tu-kiem-tra.md)
+
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
@@ -361,4 +364,4 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Biết tìm cạnh và góc bằng máy tính.
 - [ ] Giải được bài góc nâng / góc hạ.
 - [ ] Không quên điều kiện đơn vị và chế độ DEG.
-- [ ] Đạt ít nhất `7/8` câu tự kiểm tra.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 19.
