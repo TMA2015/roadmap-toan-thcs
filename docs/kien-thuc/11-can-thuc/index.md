@@ -1,7 +1,7 @@
 # Chuyên đề 11 – Căn thức và biến đổi căn thức
 
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
 > **Lớp trọng tâm:** 9
 > **Mạch kiến thức:** Đại số
@@ -95,6 +95,8 @@ Ví dụ:
 
 ### 3.3. Công thức quan trọng nhất
 
+Với mọi giá trị thực của `A`:
+
 `√(A²) = |A|`
 
 Không được viết tùy ý `√(A²) = A`.
@@ -145,6 +147,8 @@ Ví dụ:
 
 `3√5 = √45`
 
+> Nếu thừa số đứng ngoài căn âm, phải giữ dấu âm ở ngoài. Chẳng hạn `-3√5 = -√45`, không viết `-3√5 = √45`.
+
 ---
 
 ## 🔗 4. Kiến thức liên quan
@@ -153,7 +157,7 @@ Ví dụ:
 - [04. Biểu thức và biến đổi đại số](../04-bieu-thuc-dai-so/index.md): thu gọn, điều kiện xác định, biến đổi biểu thức.
 - [05. 7 Hằng đẳng thức đáng nhớ](../05-7-hang-dang-thuc/index.md): liên hợp và biến đổi mẫu.
 - [06. Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/index.md): phân tích trước khi rút gọn.
-- [08. Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md): giải phương trình có căn ở mức phù hợp.
+- [08. Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md): nền tảng về phương trình và phép biến đổi; phương trình chứa căn được xem là phần vận dụng/kết nối.
 - [12. Phương trình bậc hai & Viète](../12-phuong-trinh-bac-hai-viete/index.md): biểu thức căn xuất hiện trong nghiệm và biến đổi liên quan.
 
 ---
@@ -244,6 +248,8 @@ Sau khi rút gọn mới thay giá trị, nếu điều này làm lời giải n
 
 ### Dạng 9 – Tìm x
 
+> **Mức vận dụng/kết nối:** phương trình chứa căn cần kiểm soát điều kiện và kiểm tra nghiệm sau các phép biến đổi có thể làm xuất hiện nghiệm ngoại lai.
+
 Ví dụ:
 
 `√(x + 1) = 3`
@@ -257,6 +263,8 @@ Bình phương hai vế:
 Kiểm tra lại: đúng.
 
 ### Dạng 10 – Tìm giá trị nguyên / tham số
+
+> **Mức vận dụng:** đây là dạng tổng hợp, không phải yêu cầu cơ bản của mọi bài về căn thức.
 
 Sau khi rút gọn, đưa biểu thức về dạng thuận lợi để xét tính nguyên, dấu hoặc điều kiện tham số.
 
@@ -317,7 +325,7 @@ Với `a + √b`, liên hợp là `a - √b`, không phải đổi dấu từng 
 
 ### ❌ Lỗi 6: Bình phương hai vế nhưng không kiểm tra nghiệm
 
-Bình phương có thể làm xuất hiện nghiệm ngoại lai. Luôn đối chiếu nghiệm với phương trình ban đầu.
+Từ một đẳng thức đúng có thể suy ra đẳng thức sau khi bình phương, nhưng chiều ngược lại không phải lúc nào cũng đúng. Vì vậy bình phương trong quá trình giải phương trình có thể làm xuất hiện nghiệm ngoại lai; luôn đối chiếu nghiệm với phương trình ban đầu.
 
 ---
 
