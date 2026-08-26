@@ -1,7 +1,7 @@
 # Chuyên đề 03 – Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ
 
 
-> **Trạng thái:** Nội dung cốt lõi đã hoàn thiện; đang chuẩn hóa cấu trúc Roadmap.
+> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
 >
 > **Lớp trọng tâm:** 6–7
 > **Mạch kiến thức:** Số / Đại số
@@ -9,6 +9,7 @@
 
 > **Vai trò trong Roadmap:** cầu nối từ số học sang đại số và bài toán thực tế; là nền cho hàm số, mô hình hóa, phần trăm, chuyển động và các bài toán năng suất.
 >
+> **Phạm vi học:** kiến thức cốt lõi tập trung ở lớp 6–7; các ví dụ chuyển động, năng suất, đồng dạng và mô hình hóa được dùng để kết nối với những chuyên đề học sau.
 
 ---
 
@@ -52,7 +53,7 @@ TỈ LỆ – TỈ LỆ THỨC – ĐẠI LƯỢNG TỈ LỆ
 
 Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
-- [ ] Hiểu tỉ số là cách so sánh hai đại lượng cùng loại.
+- [ ] Hiểu tỉ số của hai số; khi dùng tỉ số để so sánh hai đại lượng cùng loại thì biết đưa về cùng đơn vị trước khi tính.
 - [ ] Lập và biến đổi đúng tỉ lệ thức.
 - [ ] Sử dụng tính chất `ad = bc` để tìm số chưa biết.
 - [ ] Vận dụng dãy tỉ số bằng nhau để giải bài toán chia theo tỉ lệ.
@@ -144,7 +145,7 @@ Quy tắc quan trọng: luôn kiểm tra mẫu khác 0 trước khi nhân chéo.
 
 ### 3.4. Dãy tỉ số bằng nhau
 
-Nếu:
+Với `a, b, c ≠ 0`, nếu:
 
 ```text
 x/a = y/b = z/c = k
@@ -242,13 +243,11 @@ Hai đại lượng `x` và `y` tỉ lệ nghịch nếu:
 xy = a
 ```
 
-hay:
+với `a ≠ 0`. Khi `x ≠ 0`, có thể viết tương đương:
 
 ```text
 y = a/x
 ```
-
-với `a ≠ 0`.
 
 Khi `x` tăng gấp `m` lần thì `y` giảm `m` lần.
 
@@ -415,7 +414,9 @@ Giá 1 m:
 
 ### Dạng 5 – Đại lượng tỉ lệ nghịch
 
-Ví dụ: 6 máy làm xong việc trong 15 giờ. Nếu 10 máy cùng năng suất thì cần bao lâu?
+> Chỉ mô hình hóa tỉ lệ nghịch khi **khối lượng công việc không đổi** và các máy có **cùng năng suất**.
+
+Ví dụ: 6 máy làm xong cùng một công việc trong 15 giờ. Nếu 10 máy cùng năng suất thì cần bao lâu?
 
 ```text
 6·15 = 10·t
@@ -501,7 +502,7 @@ Thời gian mới:
 
 ### Trọng tâm 1 – Bài toán thực tế ⭐⭐⭐⭐⭐
 
-Tỉ lệ xuất hiện trong các bài:
+Tư duy tỉ lệ là công cụ thường dùng trong các bài:
 
 - chuyển động;
 - năng suất;
