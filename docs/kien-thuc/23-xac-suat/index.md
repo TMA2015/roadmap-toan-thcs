@@ -1,6 +1,6 @@
 # Chuyên đề 23 – Xác suất
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 6–9
 > **Mạch kiến thức:** Xác suất
@@ -428,6 +428,9 @@ Hãy tự trả lời không nhìn tài liệu:
 - **→ Kiến thức nền liên hệ:** [02 – Số và phép tính](../02-so-va-phep-tinh/index.md), [21 – Thống kê](../21-thong-ke/index.md)
 - **→ Tổng hợp:** [25 – Ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 23](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 23](tu-kiem-tra.md)
+
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
@@ -442,4 +445,4 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Giải được bài nhiều bước bằng bảng hoặc sơ đồ cây.
 - [ ] Dùng được biến cố đối cho bài “ít nhất một”.
 - [ ] Kiểm tra được tính hợp lý của kết quả.
-- [ ] Đạt ít nhất `7/8` câu tự kiểm tra.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 24.

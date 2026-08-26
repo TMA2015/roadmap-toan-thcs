@@ -1,6 +1,6 @@
 # Chuyên đề 22 – Các đại lượng đặc trưng của dữ liệu
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 7–9
 > **Mạch kiến thức:** Thống kê
@@ -395,6 +395,9 @@ Hãy tự trả lời không nhìn tài liệu:
 - **→ Liên hệ:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
 - **→ Tổng hợp:** [25 – Ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)
 
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 22](bai-tap.md)
+- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 22](tu-kiem-tra.md)
+
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
 ---
@@ -409,4 +412,4 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Tính được khoảng biến thiên.
 - [ ] Nhận biết được ảnh hưởng của ngoại lai.
 - [ ] Chọn được đại lượng đại diện phù hợp và giải thích được lý do.
-- [ ] Đạt ít nhất `7/8` câu tự kiểm tra.
+- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 23.
