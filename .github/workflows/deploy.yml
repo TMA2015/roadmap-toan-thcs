@@ -27,6 +27,9 @@ jobs:
       - name: Run Roadmap dependency and link QA
         run: python check_roadmap_dependencies.py
 
+      - name: Audit practice quality
+        run: python audit_practice_quality.py
+
       - name: Build documentation
         run: mkdocs build --strict
 
