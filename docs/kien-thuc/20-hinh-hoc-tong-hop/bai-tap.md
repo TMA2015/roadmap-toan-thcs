@@ -157,28 +157,28 @@ Hãy viết một lời giải mẫu ngắn gồm ít nhất năm bước, trong
 
 ## 20-M3-04
 Ta có \(\angle AHB=\angle A=90^\circ\) và \(\angle ABH=\angle ABC\), nên:
-\[
+$$
 \triangle ABH\sim\triangle CBA.
-\]
+$$
 Suy ra:
-\[
+$$
 \frac{AB}{BC}=\frac{BH}{AB}
 \Rightarrow AB^2=BH\cdot BC.
-\]
+$$
 
 ## 20-M4-03
 Tương tự:
-\[
+$$
 \triangle ABH\sim\triangle CBA.
-\]
+$$
 Theo thứ tự tương ứng \(A\leftrightarrow C,\ B\leftrightarrow B,\ H\leftrightarrow A\):
-\[
+$$
 \frac{AB}{BC}=\frac{BH}{BA}.
-\]
+$$
 Do đó:
-\[
+$$
 AB^2=BH\cdot BC.
-\]
+$$
 
 # Theo dõi tiến độ
 

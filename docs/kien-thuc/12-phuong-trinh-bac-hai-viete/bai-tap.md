@@ -197,60 +197,60 @@ Xét phương trình \(x^2-4x+m=0\). Tìm \(m\) để đồ thị \(y=x^2-4x+m\)
 
 ## 12-M3-06
 Ta có \(S=m+2,\ P=2m\), và
-\[
+$$
 \Delta=(m+2)^2-8m=(m-2)^2.
-\]
+$$
 Hai nghiệm dương phân biệt cần \(P>0,\ S>0,\ \Delta>0\), suy ra \(m>0,\ m\ne2\).
 
 ## 12-M3-11
 Điều kiện bậc hai: \(m\ne2\).
-\[
+$$
 \Delta=(-2)^2-4(m-2)=12-4m.
-\]
+$$
 Nghiệm kép khi \(\Delta=0\Rightarrow m=3\).
 Vậy đáp án đúng là \(m=3\).
 
 ## 12-M4-01
 Theo Viète \(S=m+1,\ P=m-2\).
-\[
+$$
 x_1^2+x_2^2=S^2-2P=(m+1)^2-2(m-2)=m^2+5.
-\]
+$$
 Điều kiện bằng \(13\):
-\[
+$$
 m^2=8.
-\]
+$$
 Do đó \(m=\pm2\sqrt2\). Cần kiểm tra phương trình có nghiệm thực.
 
 ## 12-M4-02
-\[
+$$
 \Delta=4(m+1)^2-4m^2=4(2m+1).
-\]
+$$
 Hai nghiệm dương phân biệt cần \(\Delta>0,\ S=2(m+1)>0,\ P=m^2>0\).
 Suy ra \(m>-\frac12,\ m\ne0\).
 
 ## 12-M4-03
 Điều kiện \(m\ne1\).
-\[
+$$
 \Delta=4m^2-4(m-1)(m+1)=4.
-\]
+$$
 Không có \(m\) nào để phương trình bậc hai có nghiệm kép.
 
 
 ## 12-M3-10
 Thay \(x=2\) vào phương trình:
-\[
+$$
 4-2(m+3)+2m=0.
-\]
+$$
 Vế trái rút gọn thành:
-\[
+$$
 4-2m-6+2m=-2.
-\]
+$$
 Ta thu được \(-2=0\), vô lý và không phụ thuộc vào \(m\).
 
 Vậy:
-\[
+$$
 \boxed{\text{không có giá trị }m}.
-\]
+$$
 ---
 
 # Theo dõi tiến độ

@@ -22,33 +22,33 @@ Rút gọn \(\sqrt{45}+\sqrt{20}-\sqrt5\).
 
 ## Câu 6 — 1,0 điểm
 Trục căn thức ở mẫu:
-\[
+$$
 \frac2{\sqrt5+1}.
-\]
+$$
 
 ## Câu 7 — 1,25 điểm
 Giải:
-\[
+$$
 \sqrt{x+4}=x.
-\]
+$$
 
 ## Câu 8 — 1,25 điểm
 Với \(x\ge0\), rút gọn:
-\[
+$$
 A=\sqrt{18x^2}+x\sqrt2.
-\]
+$$
 
 ## Câu 9 — 1,25 điểm
 Giải:
-\[
+$$
 \sqrt{x+1}=x-1.
-\]
+$$
 
 ## Câu 10 — 1,5 điểm
 Tìm điều kiện xác định và rút gọn:
-\[
+$$
 B=\frac{\sqrt x-3}{x-9}.
-\]
+$$
 
 ---
 

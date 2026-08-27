@@ -181,13 +181,13 @@ Một lời giải dùng tính chất “hai đường chéo bằng nhau” đ�
 
 ## 16-M3-12
 Trong hình thoi, hai đường chéo cắt nhau tại trung điểm và vuông góc:
-\[
+$$
 AO=6,\quad BO=8.
-\]
+$$
 Tam giác \(AOB\) vuông tại \(O\), nên:
-\[
+$$
 AB=\sqrt{6^2+8^2}=10.
-\]
+$$
 
 ## 16-M4-01
 Hai đường chéo cắt nhau tại trung điểm \(\Rightarrow\) tứ giác là hình bình hành. Hình bình hành có hai đường chéo bằng nhau \(\Rightarrow\) hình chữ nhật.

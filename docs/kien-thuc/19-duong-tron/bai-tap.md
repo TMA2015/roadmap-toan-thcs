@@ -202,21 +202,21 @@ Vì \(PA,PB\) là các tiếp tuyến nên \(OA\perp PA\), \(OB\perp PB\). Hai t
 Vì \(PA,PB\) là các tiếp tuyến nên \(OA\perp PA\), \(OB\perp PB\). Hai tam giác vuông \(OAP,OBP\) có cạnh huyền \(OP\) chung và \(OA=OB\), nên bằng nhau theo trường hợp cạnh huyền – cạnh góc vuông.
 
 Suy ra:
-\[
+$$
 PA=PB
-\]
+$$
 và \(OP\) là phân giác của \(\angle APB\).
 
 Mặt khác, \(OA=OB\) và vừa chứng minh được \(PA=PB\), nên cả \(O\) và \(P\) đều cách đều \(A,B\). Vì vậy đường thẳng \(OP\) là đường trung trực của \(AB\), suy ra:
-\[
+$$
 OP\perp AB.
-\]
+$$
 
 ## 19-M4-08
 Tứ giác nội tiếp:
-\[
+$$
 \angle A+\angle C=180^\circ.
-\]
+$$
 Với \(\angle A=2\angle C\), suy ra \(3\angle C=180^\circ\), nên \(\angle C=60^\circ,\angle A=120^\circ\).
 
 > **Mở rộng:** bài 19-M4-07 yêu cầu giải thích hướng chứng minh định lý tiếp tuyến–cát tuyến bằng đồng dạng; không tính vào ngưỡng bắt buộc nếu lớp chỉ yêu cầu vận dụng định lý.

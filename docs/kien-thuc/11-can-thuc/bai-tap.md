@@ -112,15 +112,15 @@ Tìm \(x\ge0\) để \(\sqrt x=4\).
 
 ### 11-M4-01
 Tìm điều kiện xác định và rút gọn
-\[
+$$
 A=\frac{\sqrt{x}-2}{x-4},\qquad x\ge0.
-\]
+$$
 
 ### 11-M4-02
 Rút gọn
-\[
+$$
 B=\frac1{\sqrt x-1}-\frac1{\sqrt x+1}
-\]
+$$
 với điều kiện thích hợp.
 
 ### 11-M4-03
@@ -134,21 +134,21 @@ Tìm số nguyên \(x\ge0\) để \(\sqrt x\) là số nguyên và \(x<30\).
 
 ### 11-M4-06
 Chứng minh
-\[
+$$
 \frac1{\sqrt3-1}-\frac1{\sqrt3+1} = 1.
-\]
+$$
 
 ### 11-M4-07
 Rút gọn
-\[
+$$
 C=(\sqrt3+\sqrt2)^2-2\sqrt6.
-\]
+$$
 
 ### 11-M4-08
 Rút gọn
-\[
+$$
 D=\frac{\sqrt{12}+\sqrt{27}-\sqrt{75}}{\sqrt3}.
-\]
+$$
 
 ### 11-M4-09
 Giải \(\sqrt{x+9}-\sqrt x=1\), với \(x\ge0\).
@@ -210,57 +210,57 @@ Tìm \(x\) để \(\sqrt{(x-1)^2}=3\).
 # Hướng dẫn chọn lọc
 
 ## 11-M2-03
-\[
+$$
 \sqrt{48x^2}=4\sqrt3\sqrt{x^2}=4\sqrt3|x|.
-\]
+$$
 
 ## 11-M2-06
 Nhân liên hợp:
-\[
+$$
 \frac1{\sqrt3+1}\cdot\frac{\sqrt3-1}{\sqrt3-1}
 =\frac{\sqrt3-1}{2}.
-\]
+$$
 
 ## 11-M3-06
 Điều kiện \(x\ge0\). Bình phương:
-\[
+$$
 x+4=x^2\Rightarrow x^2-x-4=0.
-\]
+$$
 Nghiệm phù hợp:
-\[
+$$
 x=\frac{1+\sqrt{17}}2.
-\]
+$$
 
 ## 11-M3-11
 Điều kiện \(x\ge1\). Bình phương:
-\[
+$$
 x+1=(x-1)^2\Rightarrow x^2-3x=0.
-\]
+$$
 Ứng viên \(x=0,3\); chỉ \(x=3\) thỏa điều kiện.
 
 ## 11-M4-01
 Vì \(x-4=(\sqrt x-2)(\sqrt x+2)\):
-\[
+$$
 A=\frac1{\sqrt x+2},
-\]
+$$
 với \(x\ge0,\ x\ne4\).
 
 ## 11-M4-04
 Điều kiện \(x\ge1\). Bình phương:
-\[
+$$
 2x-1=(x-1)^2
 \Rightarrow x^2-4x+2=0.
-\]
+$$
 Hai nghiệm \(2\pm\sqrt2\), nhưng chỉ \(2+\sqrt2\ge1\) thỏa.
 
 ## 11-M4-09
-\[
+$$
 \sqrt{x+9}=\sqrt x+1.
-\]
+$$
 Bình phương:
-\[
+$$
 x+9=x+1+2\sqrt x\Rightarrow \sqrt x=4\Rightarrow x=16.
-\]
+$$
 
 ---
 

@@ -24,12 +24,12 @@
 
 Cho hệ:
 
-\[
+$$
 \begin{cases}
 x+2y=7\\
 3x-y=7
 \end{cases}
-\]
+$$
 
 Cặp số \((3;2)\) có là nghiệm của hệ hay không? Giải thích ngắn gọn.
 
@@ -37,51 +37,51 @@ Cặp số \((3;2)\) có là nghiệm của hệ hay không? Giải thích ngắ
 
 Giải hệ:
 
-\[
+$$
 \begin{cases}
 x+y=6\\
 2x-y=3
 \end{cases}
-\]
+$$
 
 ## Câu 3 – Hệ có hệ số phân số — 1,0 điểm
 
 Giải hệ:
 
-\[
+$$
 \begin{cases}
 \dfrac{x}{2}+\dfrac{y}{3}=3\\[4pt]
 \dfrac{x}{3}-\dfrac{y}{2}=-\dfrac16
 \end{cases}
-\]
+$$
 
 ## Câu 4 – Số nghiệm của hệ — 0,75 điểm
 
 Không cần tìm cụ thể \(x,y\). Hãy cho biết hệ sau có bao nhiêu nghiệm và giải thích:
 
-\[
+$$
 \begin{cases}
 x+2y=5\\
 2x+4y=10
 \end{cases}
-\]
+$$
 
 ## Câu 5 – Phát hiện lỗi sai — 0,75 điểm
 
 Một học sinh giải hệ:
 
-\[
+$$
 \begin{cases}
 x+y=5\\
 2x-y=4
 \end{cases}
-\]
+$$
 
 bằng cách cộng hai phương trình và viết:
 
-\[
+$$
 3x=1.
-\]
+$$
 
 Hãy chỉ ra lỗi sai và viết bước biến đổi đúng.
 
@@ -89,12 +89,12 @@ Hãy chỉ ra lỗi sai và viết bước biến đổi đúng.
 
 Tìm \(m\) để cặp số \((2;2)\) là nghiệm của hệ:
 
-\[
+$$
 \begin{cases}
 mx+y=8\\
 x+(m-1)y=6
 \end{cases}
-\]
+$$
 
 ## Câu 7 – Bài toán số — 1,25 điểm
 
@@ -112,18 +112,18 @@ Tính vận tốc mỗi xe.
 
 Cho hệ:
 
-\[
+$$
 \begin{cases}
 x+y=7\\
 mx-y=5
 \end{cases}
-\]
+$$
 
 Tìm \(m\) để nghiệm \((x;y)\) của hệ đồng thời thỏa mãn:
 
-\[
+$$
 x-y=1.
-\]
+$$
 
 ## Câu 10 – Bài toán số có hai chữ số — 1,25 điểm
 
@@ -139,165 +139,165 @@ Tìm số ban đầu.
 
 Thay \((x;y)=(3;2)\):
 
-\[
+$$
 3+2\cdot2=7,
-\]
+$$
 
 nhưng:
 
-\[
+$$
 3\cdot3-2=7.
-\]
+$$
 
 Cả hai phương trình đều đúng.
 
 Vậy:
 
-\[
+$$
 \boxed{(3;2)\text{ là nghiệm của hệ}.}
-\]
+$$
 
 ## Câu 2 — 0,75 điểm
 
 Cộng hai phương trình:
 
-\[
+$$
 3x=9
-\]
+$$
 
 nên:
 
-\[
+$$
 x=3.
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 y=3.
-\]
+$$
 
 Vậy:
 
-\[
+$$
 \boxed{(x;y)=(3;3)}.
-\]
+$$
 
 ## Câu 3 — 1,0 điểm
 
 Nhân cả hai phương trình với \(6\):
 
-\[
+$$
 \begin{cases}
 3x+2y=18\\
 2x-3y=-1
 \end{cases}
-\]
+$$
 
 Nhân phương trình đầu với \(3\), phương trình hai với \(2\):
 
-\[
+$$
 \begin{cases}
 9x+6y=54\\
 4x-6y=-2
 \end{cases}
-\]
+$$
 
 Cộng hai phương trình:
 
-\[
+$$
 13x=52
-\]
+$$
 
 nên:
 
-\[
+$$
 x=4.
-\]
+$$
 
 Thế vào:
 
-\[
+$$
 3x+2y=18
-\]
+$$
 
 ta được:
 
-\[
+$$
 12+2y=18 \Rightarrow y=3.
-\]
+$$
 
 Vậy:
 
-\[
+$$
 \boxed{(x;y)=(4;3)}.
-\]
+$$
 
 ## Câu 4 — 0,75 điểm
 
 Phương trình thứ hai chính là \(2\) lần phương trình thứ nhất:
 
-\[
+$$
 2(x+2y)=10.
-\]
+$$
 
 Hai phương trình tương đương.
 
 Vậy hệ có:
 
-\[
+$$
 \boxed{\text{vô số nghiệm}.}
-\]
+$$
 
 ## Câu 5 — 0,75 điểm
 
 Khi cộng hai phương trình:
 
-\[
+$$
 (x+y)+(2x-y)=5+4.
-\]
+$$
 
 Do đó:
 
-\[
+$$
 3x=9,
-\]
+$$
 
 không phải \(3x=1\).
 
 Nếu tiếp tục:
 
-\[
+$$
 x=3,\qquad y=2.
-\]
+$$
 
 ## Câu 6 — 1,0 điểm
 
 Thay \((x;y)=(2;2)\) vào phương trình đầu:
 
-\[
+$$
 2m+2=8
-\]
+$$
 
 nên:
 
-\[
+$$
 m=3.
-\]
+$$
 
 Kiểm tra phương trình hai:
 
-\[
+$$
 2+(3-1)\cdot2=6,
-\]
+$$
 
 đúng.
 
 Vậy:
 
-\[
+$$
 \boxed{m=3}.
-\]
+$$
 
 ## Câu 7 — 1,25 điểm
 
@@ -305,136 +305,136 @@ Gọi số lớn là \(x\), số bé là \(y\).
 
 Ta có:
 
-\[
+$$
 \begin{cases}
 x+y=46\\
 x-y=12
 \end{cases}
-\]
+$$
 
 Cộng hai phương trình:
 
-\[
+$$
 2x=58
-\]
+$$
 
 nên:
 
-\[
+$$
 x=29.
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 y=17.
-\]
+$$
 
 Vậy hai số là:
 
-\[
+$$
 \boxed{29\text{ và }17}.
-\]
+$$
 
 ## Câu 8 — 1,5 điểm
 
 Gọi vận tốc hai xe lần lượt là \(x\) và \(y\) km/h, với:
 
-\[
+$$
 x>y>0.
-\]
+$$
 
 Sau \(2\) giờ, tổng quãng đường hai xe đi được là \(240\) km:
 
-\[
+$$
 2x+2y=240
-\]
+$$
 
 hay:
 
-\[
+$$
 x+y=120.
-\]
+$$
 
 Xe thứ nhất nhanh hơn xe thứ hai \(20\) km/h:
 
-\[
+$$
 x-y=20.
-\]
+$$
 
 Ta có:
 
-\[
+$$
 \begin{cases}
 x+y=120\\
 x-y=20
 \end{cases}
-\]
+$$
 
 Cộng hai phương trình:
 
-\[
+$$
 2x=140
-\]
+$$
 
 nên:
 
-\[
+$$
 x=70.
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 y=50.
-\]
+$$
 
 Vậy vận tốc hai xe là:
 
-\[
+$$
 \boxed{70\text{ km/h và }50\text{ km/h}.}
-\]
+$$
 
 ## Câu 9 — 1,25 điểm
 
 Từ:
 
-\[
+$$
 \begin{cases}
 x+y=7\\
 x-y=1
 \end{cases}
-\]
+$$
 
 suy ra:
 
-\[
+$$
 x=4,\qquad y=3.
-\]
+$$
 
 Thay vào phương trình:
 
-\[
+$$
 mx-y=5
-\]
+$$
 
 ta được:
 
-\[
+$$
 4m-3=5.
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 m=2.
-\]
+$$
 
 Vậy:
 
-\[
+$$
 \boxed{m=2}.
-\]
+$$
 
 ## Câu 10 — 1,25 điểm
 
@@ -442,68 +442,68 @@ Gọi chữ số hàng chục là \(x\), chữ số hàng đơn vị là \(y\).
 
 Điều kiện:
 
-\[
+$$
 1\le x\le9,\qquad 0\le y\le9,
-\]
+$$
 
 và \(x,y\) là số nguyên.
 
 Theo đề:
 
-\[
+$$
 x+y=10.
-\]
+$$
 
 Số ban đầu là:
 
-\[
+$$
 10x+y.
-\]
+$$
 
 Số sau khi đổi chỗ là:
 
-\[
+$$
 10y+x.
-\]
+$$
 
 Số mới nhỏ hơn số ban đầu \(36\):
 
-\[
+$$
 (10x+y)-(10y+x)=36.
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 9x-9y=36
-\]
+$$
 
 hay:
 
-\[
+$$
 x-y=4.
-\]
+$$
 
 Ta có hệ:
 
-\[
+$$
 \begin{cases}
 x+y=10\\
 x-y=4
 \end{cases}
-\]
+$$
 
 suy ra:
 
-\[
+$$
 x=7,\qquad y=3.
-\]
+$$
 
 Vậy số ban đầu là:
 
-\[
+$$
 \boxed{73}.
-\]
+$$
 
 ---
 

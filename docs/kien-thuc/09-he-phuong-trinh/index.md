@@ -67,29 +67,29 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 Phương trình bậc nhất hai ẩn có dạng:
 
-\[
+$$
 ax + by = c
-\]
+$$
 
 trong đó `a`, `b` không đồng thời bằng 0.
 
 Một cặp số `(x_0; y_0)` là nghiệm nếu:
 
-\[
+$$
 a x_0 + b y_0 = c.
-\]
+$$
 
 Ví dụ:
 
-\[
+$$
 2x + y = 5
-\]
+$$
 
 có nghiệm `(2;1)` vì:
 
-\[
+$$
 2\cdot2 + 1 = 5.
-\]
+$$
 
 Trên tập số thực, một phương trình bậc nhất hai ẩn có **vô số nghiệm**.
 
@@ -99,23 +99,23 @@ Trên tập số thực, một phương trình bậc nhất hai ẩn có **vô s
 
 Hệ có dạng:
 
-\[
+$$
 \begin{cases}
 a_1x+b_1y=c_1\\
 a_2x+b_2y=c_2
 \end{cases}
-\]
+$$
 
 Nghiệm của hệ là cặp `(x;y)` thỏa mãn **đồng thời cả hai phương trình**.
 
 Ví dụ:
 
-\[
+$$
 \begin{cases}
 x+y=5\\
 x-y=1
 \end{cases}
-\]
+$$
 
 có nghiệm `(3;2)`.
 
@@ -149,40 +149,40 @@ Quy trình:
 
 Ví dụ:
 
-\[
+$$
 \begin{cases}
 x+y=5\\
 2x-y=4
 \end{cases}
-\]
+$$
 
 Từ phương trình đầu:
 
-\[
+$$
 y=5-x.
-\]
+$$
 
 Thế vào phương trình hai:
 
-\[
+$$
 2x-(5-x)=4
-\]
+$$
 
-\[
+$$
 3x=9 \Rightarrow x=3.
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 y=2.
-\]
+$$
 
 Vậy hệ có nghiệm:
 
-\[
+$$
 (x;y)=(3;2).
-\]
+$$
 
 !!! tip "Khi nào nên dùng thế?"
     Ưu tiên phương pháp thế khi một phương trình đã có hệ số `1` hoặc `-1` ở một ẩn, hoặc có thể dễ dàng rút một ẩn.
@@ -195,30 +195,30 @@ Mục tiêu là làm cho hệ số của một ẩn trở thành hai số đối
 
 Ví dụ:
 
-\[
+$$
 \begin{cases}
 2x+3y=7\\
 3x-3y=8
 \end{cases}
-\]
+$$
 
 Cộng hai phương trình:
 
-\[
+$$
 5x=15 \Rightarrow x=3.
-\]
+$$
 
 Thế vào phương trình đầu:
 
-\[
+$$
 6+3y=7 \Rightarrow y=\frac13.
-\]
+$$
 
 Vậy:
 
-\[
+$$
 (x;y)=\left(3;\frac13\right).
-\]
+$$
 
 !!! tip "Khi nào nên dùng cộng đại số?"
     Ưu tiên khi hệ số của một ẩn đã đối nhau, bằng nhau, hoặc chỉ cần nhân một phương trình với số nhỏ để khử ẩn.
@@ -243,12 +243,12 @@ Không có quy định bắt buộc phải dùng một phương pháp cố đị
 
 Xét hệ:
 
-\[
+$$
 \begin{cases}
 a_1x+b_1y=c_1\\
 a_2x+b_2y=c_2
 \end{cases}
-\]
+$$
 
 Ở mức THCS, có thể nhận biết qua biến đổi hoặc qua vị trí tương đối của hai đường thẳng.
 
@@ -256,12 +256,12 @@ a_2x+b_2y=c_2
 
 Ví dụ:
 
-\[
+$$
 \begin{cases}
 x+y=3\\
 x-y=1
 \end{cases}
-\]
+$$
 
 Hai phương trình độc lập và hệ giải được một cặp duy nhất.
 
@@ -269,18 +269,18 @@ Hai phương trình độc lập và hệ giải được một cặp duy nhất
 
 Ví dụ:
 
-\[
+$$
 \begin{cases}
 x+y=2\\
 2x+2y=5
 \end{cases}
-\]
+$$
 
 Nhân phương trình đầu với 2 được:
 
-\[
+$$
 2x+2y=4,
-\]
+$$
 
 mâu thuẫn với `2x+2y=5`.
 
@@ -290,12 +290,12 @@ Vậy hệ vô nghiệm.
 
 Ví dụ:
 
-\[
+$$
 \begin{cases}
 x+y=2\\
 2x+2y=4
 \end{cases}
-\]
+$$
 
 Phương trình thứ hai chính là hai lần phương trình thứ nhất.
 
@@ -325,40 +325,40 @@ Nếu thỏa mãn **cả hai** thì là nghiệm của hệ.
 
 Ví dụ:
 
-\[
+$$
 \begin{cases}
 x-2y=1\\
 3x+y=11
 \end{cases}
-\]
+$$
 
 Từ phương trình đầu:
 
-\[
+$$
 x=1+2y.
-\]
+$$
 
 Thế vào phương trình hai:
 
-\[
+$$
 3(1+2y)+y=11
-\]
+$$
 
-\[
+$$
 7y=8 \Rightarrow y=\frac87.
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 x=1+2\cdot\frac87=\frac{23}{7}.
-\]
+$$
 
 Vậy:
 
-\[
+$$
 (x;y)=\left(\frac{23}{7};\frac87\right).
-\]
+$$
 
 ---
 
@@ -366,30 +366,30 @@ Vậy:
 
 Ví dụ:
 
-\[
+$$
 \begin{cases}
 2x+5y=1\\
 3x-5y=14
 \end{cases}
-\]
+$$
 
 Cộng hai phương trình:
 
-\[
+$$
 5x=15 \Rightarrow x=3.
-\]
+$$
 
 Thế `x=3` vào phương trình đầu:
 
-\[
+$$
 6+5y=1 \Rightarrow y=-1.
-\]
+$$
 
 Vậy:
 
-\[
+$$
 (x;y)=(3;-1).
-\]
+$$
 
 ---
 
@@ -397,21 +397,21 @@ Vậy:
 
 Ví dụ:
 
-\[
+$$
 \begin{cases}
 2(x+y)-y=5\\
 3x-(x-y)=7
 \end{cases}
-\]
+$$
 
 Phải bỏ ngoặc và thu gọn trước:
 
-\[
+$$
 \begin{cases}
 2x+y=5\\
 2x+y=7
 \end{cases}
-\]
+$$
 
 Suy ra hệ vô nghiệm.
 
@@ -528,9 +528,9 @@ Chỉ khử được khi hệ số của ẩn cần khử là hai số đối nh
 
 Không chỉ viết `x=...` và `y=...`; nên kết luận:
 
-\[
+$$
 (x;y)=(...;...).
-\]
+$$
 
 ### ❌ Lỗi 6 – Lập hệ nhưng quên điều kiện của ẩn
 
@@ -549,70 +549,70 @@ Thay nghiệm vào hệ ban đầu là cách phát hiện rất nhanh lỗi tín
 1. Kiểm tra `(2;1)` có là nghiệm của `3x-y=5` hay không.
 2. Kiểm tra `(1;2)` có là nghiệm của hệ
 
-   \[
+   $$
    \begin{cases}
 x+y=3\\
 2x-y=0
    \end{cases}
-   \]
+   $$
 
 3. Cho biết hệ sau nên ưu tiên phương pháp nào:
 
-   \[
+   $$
    \begin{cases}
 x+3y=7\\
 2x-y=4
    \end{cases}
-   \]
+   $$
 
 ### Mức 2 – Thông hiểu
 
 1. Giải bằng phương pháp thế:
 
-   \[
+   $$
    \begin{cases}
 x+y=8\\
 2x-y=1
    \end{cases}
-   \]
+   $$
 
 2. Giải bằng cộng đại số:
 
-   \[
+   $$
    \begin{cases}
 3x+2y=7\\
 5x-2y=9
    \end{cases}
-   \]
+   $$
 
 3. Xác định hệ có một nghiệm, vô nghiệm hay vô số nghiệm:
 
-   \[
+   $$
    \begin{cases}
 x+2y=3\\
 2x+4y=6
    \end{cases}
-   \]
+   $$
 
 ### Mức 3 – Vận dụng
 
 1. Giải hệ:
 
-   \[
+   $$
    \begin{cases}
 2(x+y)-3y=4\\
 3x-(x-y)=8
    \end{cases}
-   \]
+   $$
 
 2. Tìm `m` để `(1;2)` là nghiệm của:
 
-   \[
+   $$
    \begin{cases}
 x+y=3\\
 mx-y=2
    \end{cases}
-   \]
+   $$
 
 3. Tổng của hai số là 45, hiệu của chúng là 9. Lập hệ và tìm hai số.
 
@@ -620,12 +620,12 @@ mx-y=2
 
 1. Tìm `m` để nghiệm `(x;y)` của hệ thỏa `x+y=5`:
 
-   \[
+   $$
    \begin{cases}
 x+y=m+2\\
 2x-y=4
    \end{cases}
-   \]
+   $$
 
 2. Một ô tô đi quãng đường gồm hai đoạn với hai vận tốc khác nhau. Từ tổng thời gian và tổng quãng đường, lập hệ để tìm độ dài từng đoạn.
 3. Tìm điều kiện của tham số để hai đường thẳng tương ứng với hai phương trình của hệ cắt nhau tại một điểm thuộc trục hoành.
@@ -652,12 +652,12 @@ D. `x-y=0` và `x+y=2`
 
 **Câu 3.** Hệ
 
-\[
+$$
 \begin{cases}
 x+y=2\\
 2x+2y=5
 \end{cases}
-\]
+$$
 
 có bao nhiêu nghiệm?
 

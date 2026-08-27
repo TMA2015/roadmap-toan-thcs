@@ -25,41 +25,41 @@
 
 Giải phương trình:
 
-\[
+$$
 3x-7=11.
-\]
+$$
 
 ### 08-M1-02
 
 Giải phương trình:
 
-\[
+$$
 5x+2=3x+10.
-\]
+$$
 
 ### 08-M1-03
 
 Giải phương trình:
 
-\[
+$$
 2(x-3)=10.
-\]
+$$
 
 ### 08-M1-04
 
 Giải phương trình:
 
-\[
+$$
 x(x-5)=0.
-\]
+$$
 
 ### 08-M1-05
 
 Giải phương trình:
 
-\[
+$$
 (2x+1)(x-3)=0.
-\]
+$$
 
 ## B. Bất phương trình bậc nhất
 
@@ -67,25 +67,25 @@ Giải phương trình:
 
 Giải bất phương trình:
 
-\[
+$$
 3x-4>8.
-\]
+$$
 
 ### 08-M1-07
 
 Giải bất phương trình:
 
-\[
+$$
 -2x+5\le 1.
-\]
+$$
 
 ### 08-M1-08
 
 Biểu diễn tập nghiệm của bất phương trình
 
-\[
+$$
 x>-2
-\]
+$$
 
 trên trục số. Nêu rõ điểm \(-2\) có thuộc tập nghiệm hay không.
 
@@ -95,9 +95,9 @@ trên trục số. Nêu rõ điểm \(-2\) có thuộc tập nghiệm hay không
 
 Giải phương trình:
 
-\[
+$$
 \frac{x+1}{x-2}=0.
-\]
+$$
 
 Phải ghi điều kiện xác định trước khi giải.
 
@@ -105,9 +105,9 @@ Phải ghi điều kiện xác định trước khi giải.
 
 Giải phương trình:
 
-\[
+$$
 \frac{2}{x+1}=1.
-\]
+$$
 
 ---
 
@@ -119,33 +119,33 @@ Giải phương trình:
 
 Giải phương trình:
 
-\[
+$$
 3(x-2)-2(x+1)=5.
-\]
+$$
 
 ### 08-M2-02
 
 Giải phương trình:
 
-\[
+$$
 4x-7=2x+9.
-\]
+$$
 
 ### 08-M2-03
 
 Giải phương trình bằng cách đưa về dạng tích:
 
-\[
+$$
 x^2-5x=0.
-\]
+$$
 
 ### 08-M2-04
 
 Giải phương trình:
 
-\[
+$$
 x^2-9=0.
-\]
+$$
 
 Không dùng công thức nghiệm phương trình bậc hai; hãy đưa về tích.
 
@@ -155,17 +155,17 @@ Không dùng công thức nghiệm phương trình bậc hai; hãy đưa về t�
 
 Giải phương trình:
 
-\[
+$$
 \frac{1}{x-1}=2.
-\]
+$$
 
 ### 08-M2-06
 
 Giải phương trình:
 
-\[
+$$
 \frac{x+2}{x-2}=2.
-\]
+$$
 
 ## C. Bất phương trình và kiểm tra sai lầm
 
@@ -173,31 +173,31 @@ Giải phương trình:
 
 Giải bất phương trình:
 
-\[
+$$
 5-3x>11.
-\]
+$$
 
 ### 08-M2-08
 
 Giải bất phương trình:
 
-\[
+$$
 2(x-1)\le x+4.
-\]
+$$
 
 ### 08-M2-09
 
 Tìm các giá trị của \(x\) đồng thời thỏa mãn:
 
-\[
+$$
 x>1
-\]
+$$
 
 và
 
-\[
+$$
 x\le 5.
-\]
+$$
 
 Viết tập nghiệm dưới dạng một bất đẳng thức kép.
 
@@ -205,15 +205,15 @@ Viết tập nghiệm dưới dạng một bất đẳng thức kép.
 
 Một học sinh giải:
 
-\[
+$$
 -4x>8
-\]
+$$
 
 như sau:
 
-\[
+$$
 x>-2.
-\]
+$$
 
 Hãy chỉ ra sai lầm và viết nghiệm đúng.
 
@@ -227,25 +227,25 @@ Hãy chỉ ra sai lầm và viết nghiệm đúng.
 
 Giải phương trình:
 
-\[
+$$
 2(3x-1)-4(x+2)=5.
-\]
+$$
 
 ### 08-M3-02
 
 Giải phương trình bằng cách phân tích thành nhân tử:
 
-\[
+$$
 x^2-7x+12=0.
-\]
+$$
 
 ### 08-M3-03
 
 Giải phương trình:
 
-\[
+$$
 \frac{1}{x-1}+\frac{1}{x+1}=\frac34.
-\]
+$$
 
 **Kỹ năng trọng tâm:** tìm điều kiện xác định, quy đồng, giải và đối chiếu nghiệm.
 
@@ -253,9 +253,9 @@ Giải phương trình:
 
 Giải phương trình:
 
-\[
+$$
 \frac{x+1}{x-2}=\frac{x-1}{x+2}.
-\]
+$$
 
 **Kỹ năng trọng tâm:** giữ điều kiện xác định ban đầu sau khi khử mẫu.
 
@@ -265,23 +265,23 @@ Giải phương trình:
 
 Giải bất phương trình:
 
-\[
+$$
 3(2x-1)>2(x+5).
-\]
+$$
 
 ### 08-M3-06
 
 Tìm các giá trị của \(x\) đồng thời thỏa mãn:
 
-\[
+$$
 2x-1>3
-\]
+$$
 
 và
 
-\[
+$$
 x+4\le 10.
-\]
+$$
 
 **Kỹ năng trọng tâm:** giải từng bất phương trình rồi lấy giao hai tập nghiệm.
 
@@ -303,9 +303,9 @@ Tính vận tốc lúc đi.
 
 **Kỹ năng trọng tâm:** dùng quan hệ
 
-\[
+$$
 \text{thời gian}=\frac{\text{quãng đường}}{\text{vận tốc}}
-\]
+$$
 
 và đặt điều kiện vận tốc dương.
 
@@ -335,9 +335,9 @@ Minh mua được nhiều nhất bao nhiêu vé nếu không được chi quá s
 
 Xét phương trình:
 
-\[
+$$
 (m-1)x=2m+3.
-\]
+$$
 
 Hãy biện luận số nghiệm của phương trình theo \(m\), và tìm nghiệm khi phương trình có nghiệm duy nhất.
 
@@ -345,9 +345,9 @@ Hãy biện luận số nghiệm của phương trình theo \(m\), và tìm nghi
 
 Tìm \(m\) để phương trình
 
-\[
+$$
 (m-2)x=m+1
-\]
+$$
 
 vô nghiệm. Với các giá trị \(m\) còn lại, hãy viết nghiệm của phương trình theo \(m\).
 
@@ -355,9 +355,9 @@ vô nghiệm. Với các giá trị \(m\) còn lại, hãy viết nghiệm của
 
 Giải phương trình:
 
-\[
+$$
 \frac{2}{x-1}-\frac{3}{x+1}=\frac{1}{x^2-1}.
-\]
+$$
 
 **Kỹ năng trọng tâm:** nhận ra điều kiện xác định chung và chọn mẫu thức chung hợp lý.
 
@@ -365,9 +365,9 @@ Giải phương trình:
 
 Giải bất phương trình theo tham số \(m\):
 
-\[
+$$
 (m-2)x>3.
-\]
+$$
 
 Xét đầy đủ các trường hợp \(m>2\), \(m<2\), \(m=2\).
 
@@ -393,9 +393,9 @@ Tính \(v\).
 
 Giải phương trình:
 
-\[
+$$
 \frac{x^2-4}{x-2}=4.
-\]
+$$
 
 Hãy đặc biệt chú ý điều kiện xác định trước khi rút gọn.
 
@@ -403,9 +403,9 @@ Hãy đặc biệt chú ý điều kiện xác định trước khi rút gọn.
 
 Cho
 
-\[
+$$
 A=\frac{x+1}{x-2}.
-\]
+$$
 
 1. Tìm điều kiện xác định của \(A\).
 2. Tìm \(x\) để \(A=2\).
@@ -483,21 +483,21 @@ A=\frac{x+1}{x-2}.
 
 Ta có:
 
-\[
+$$
 -2x+5\le1.
-\]
+$$
 
 Chuyển \(5\) sang vế phải:
 
-\[
+$$
 -2x\le-4.
-\]
+$$
 
 Chia hai vế cho \(-2\). Vì chia cho một số âm nên phải **đổi chiều bất phương trình**:
 
-\[
+$$
 x\ge2.
-\]
+$$
 
 > Điểm cần nhớ: nhân hoặc chia hai vế của bất phương trình với một số âm thì phải đổi chiều.
 
@@ -507,35 +507,35 @@ x\ge2.
 
 Phương trình:
 
-\[
+$$
 \frac{x+1}{x-2}=0.
-\]
+$$
 
 Điều kiện xác định:
 
-\[
+$$
 x\ne2.
-\]
+$$
 
 Một phân thức bằng \(0\) khi tử số bằng \(0\) và mẫu số khác \(0\):
 
-\[
+$$
 x+1=0
-\]
+$$
 
 nên
 
-\[
+$$
 x=-1.
-\]
+$$
 
 Giá trị này thỏa mãn điều kiện \(x\ne2\).
 
 Vậy nghiệm là:
 
-\[
+$$
 \boxed{x=-1}.
-\]
+$$
 
 ---
 
@@ -543,27 +543,27 @@ Vậy nghiệm là:
 
 Ta dùng hằng đẳng thức hiệu hai bình phương:
 
-\[
+$$
 x^2-9=x^2-3^2=(x-3)(x+3).
-\]
+$$
 
 Do đó:
 
-\[
+$$
 (x-3)(x+3)=0.
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 x=3
-\]
+$$
 
 hoặc
 
-\[
+$$
 x=-3.
-\]
+$$
 
 ---
 
@@ -571,35 +571,35 @@ x=-3.
 
 Điều kiện xác định:
 
-\[
+$$
 x\ne1.
-\]
+$$
 
 Ta có:
 
-\[
+$$
 \frac1{x-1}=2.
-\]
+$$
 
 Vì \(x-1\ne0\), nhân hai vế với \(x-1\):
 
-\[
+$$
 1=2(x-1).
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 1=2x-2,
-\]
+$$
 
-\[
+$$
 2x=3,
-\]
+$$
 
-\[
+$$
 x=\frac32.
-\]
+$$
 
 Giá trị này thỏa mãn điều kiện xác định.
 
@@ -609,15 +609,15 @@ Giá trị này thỏa mãn điều kiện xác định.
 
 Bất phương trình:
 
-\[
+$$
 -4x>8.
-\]
+$$
 
 Nếu chia hai vế cho \(-4\), vì \(-4<0\), chiều bất phương trình phải đổi:
 
-\[
+$$
 x<-2.
-\]
+$$
 
 Lời giải \(x>-2\) là sai vì đã quên quy tắc đổi chiều khi chia cho số âm.
 
@@ -627,65 +627,65 @@ Lời giải \(x>-2\) là sai vì đã quên quy tắc đổi chiều khi chia c
 
 Điều kiện xác định:
 
-\[
+$$
 x\ne1,\qquad x\ne-1.
-\]
+$$
 
 Ta có:
 
-\[
+$$
 \frac{1}{x-1}+\frac{1}{x+1}=\frac34.
-\]
+$$
 
 Quy đồng vế trái:
 
-\[
+$$
 \frac{(x+1)+(x-1)}{(x-1)(x+1)}=\frac34.
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 \frac{2x}{x^2-1}=\frac34.
-\]
+$$
 
 Nhân chéo:
 
-\[
+$$
 8x=3(x^2-1).
-\]
+$$
 
 Hay:
 
-\[
+$$
 3x^2-8x-3=0.
-\]
+$$
 
 Phân tích:
 
-\[
+$$
 3x^2-8x-3=(3x+1)(x-3).
-\]
+$$
 
 Do đó:
 
-\[
+$$
 x=-\frac13
-\]
+$$
 
 hoặc
 
-\[
+$$
 x=3.
-\]
+$$
 
 Cả hai giá trị đều thỏa mãn điều kiện xác định.
 
 Vậy:
 
-\[
+$$
 \boxed{x=-\frac13\ \text{hoặc}\ x=3}.
-\]
+$$
 
 ---
 
@@ -693,63 +693,63 @@ Vậy:
 
 Gọi vận tốc lúc đi là \(x\) km/h, điều kiện:
 
-\[
+$$
 x>0.
-\]
+$$
 
 Vận tốc lúc về là:
 
-\[
+$$
 x+5.
-\]
+$$
 
 Thời gian lúc đi:
 
-\[
+$$
 \frac{60}{x}.
-\]
+$$
 
 Thời gian lúc về:
 
-\[
+$$
 \frac{60}{x+5}.
-\]
+$$
 
 Theo đề bài, thời gian về ít hơn thời gian đi \(1\) giờ:
 
-\[
+$$
 \frac{60}{x}-\frac{60}{x+5}=1.
-\]
+$$
 
 Nhân với \(x(x+5)\):
 
-\[
+$$
 60(x+5)-60x=x(x+5).
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 300=x^2+5x,
-\]
+$$
 
-\[
+$$
 x^2+5x-300=0.
-\]
+$$
 
 Phân tích:
 
-\[
+$$
 (x-15)(x+20)=0.
-\]
+$$
 
 Ta có \(x=15\) hoặc \(x=-20\). Do \(x>0\), loại \(x=-20\).
 
 Vậy vận tốc lúc đi là:
 
-\[
+$$
 \boxed{15\text{ km/h}}.
-\]
+$$
 
 ---
 
@@ -757,63 +757,63 @@ Vậy vận tốc lúc đi là:
 
 Gọi năng suất dự định là \(x\) sản phẩm/giờ, điều kiện:
 
-\[
+$$
 x>0.
-\]
+$$
 
 Thời gian dự định:
 
-\[
+$$
 \frac{120}{x}.
-\]
+$$
 
 Năng suất thực tế:
 
-\[
+$$
 x+5.
-\]
+$$
 
 Thời gian thực tế:
 
-\[
+$$
 \frac{120}{x+5}.
-\]
+$$
 
 Thực tế hoàn thành sớm hơn \(2\) giờ:
 
-\[
+$$
 \frac{120}{x}-\frac{120}{x+5}=2.
-\]
+$$
 
 Nhân với \(x(x+5)\):
 
-\[
+$$
 120(x+5)-120x=2x(x+5).
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 600=2x^2+10x.
-\]
+$$
 
 Chia \(2\):
 
-\[
+$$
 x^2+5x-300=0.
-\]
+$$
 
 Phân tích:
 
-\[
+$$
 (x-15)(x+20)=0.
-\]
+$$
 
 Do \(x>0\), nhận:
 
-\[
+$$
 \boxed{x=15}.
-\]
+$$
 
 Vậy năng suất dự định là \(15\) sản phẩm/giờ.
 
@@ -823,9 +823,9 @@ Vậy năng suất dự định là \(15\) sản phẩm/giờ.
 
 Xét:
 
-\[
+$$
 (m-2)x>3.
-\]
+$$
 
 Không thể chia ngay cho \(m-2\), vì dấu của \(m-2\) phụ thuộc vào \(m\).
 
@@ -833,43 +833,43 @@ Không thể chia ngay cho \(m-2\), vì dấu của \(m-2\) phụ thuộc vào \
 
 Khi đó:
 
-\[
+$$
 m-2>0.
-\]
+$$
 
 Chia hai vế cho \(m-2\), chiều giữ nguyên:
 
-\[
+$$
 x>\frac3{m-2}.
-\]
+$$
 
 ### Trường hợp 2: \(m<2\)
 
 Khi đó:
 
-\[
+$$
 m-2<0.
-\]
+$$
 
 Chia hai vế cho \(m-2\), phải đổi chiều:
 
-\[
+$$
 x<\frac3{m-2}.
-\]
+$$
 
 ### Trường hợp 3: \(m=2\)
 
 Bất phương trình trở thành:
 
-\[
+$$
 0\cdot x>3,
-\]
+$$
 
 hay:
 
-\[
+$$
 0>3,
-\]
+$$
 
 điều này sai với mọi \(x\).
 
@@ -881,83 +881,83 @@ Vậy trường hợp \(m=2\) vô nghiệm.
 
 Cho:
 
-\[
+$$
 A=\frac{x+1}{x-2}.
-\]
+$$
 
 ### Câu 1
 
 Điều kiện xác định:
 
-\[
+$$
 x-2\ne0
-\]
+$$
 
 nên:
 
-\[
+$$
 \boxed{x\ne2}.
-\]
+$$
 
 ### Câu 2
 
 Ta giải:
 
-\[
+$$
 \frac{x+1}{x-2}=2.
-\]
+$$
 
 Với \(x\ne2\):
 
-\[
+$$
 x+1=2(x-2).
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 x+1=2x-4,
-\]
+$$
 
-\[
+$$
 x=5.
-\]
+$$
 
 Vậy:
 
-\[
+$$
 \boxed{x=5}.
-\]
+$$
 
 ### Câu 3
 
 Biến đổi:
 
-\[
+$$
 A=\frac{x+1}{x-2}
 =\frac{x-2+3}{x-2}
 =1+\frac3{x-2}.
-\]
+$$
 
 Với \(x\) nguyên, để \(A\) nguyên thì \(x-2\) phải là một ước khác \(0\) của \(3\):
 
-\[
+$$
 x-2\in\{-3,-1,1,3\}.
-\]
+$$
 
 Suy ra:
 
-\[
+$$
 x\in\{-1,1,3,5\}.
-\]
+$$
 
 Tất cả các giá trị này đều khác \(2\).
 
 Vậy:
 
-\[
+$$
 \boxed{x\in\{-1,1,3,5\}}.
-\]
+$$
 
 ---
 

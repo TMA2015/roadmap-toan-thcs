@@ -187,22 +187,22 @@ Một lời giải viết: “\(\angle A=\angle B\), suy ra \(a\parallel b\)”.
 
 ## 13-M3-01
 Hai góc kề nhau tại giao điểm là kề bù:
-\[
+$$
 (3x+10)+(5x-6)=180.
-\]
+$$
 Suy ra \(8x+4=180\), nên \(x=22\). Hai loại góc là \(76^\circ\) và \(104^\circ\).
 
 ## 13-M3-04
 Để hai đường song song theo dấu hiệu so le trong:
-\[
+$$
 4x-7=3x+18\Rightarrow x=25.
-\]
+$$
 
 ## 13-M3-07
 Đặt \(\angle zOy=t\), thì \(\angle xOz=2t\). Vì hai tia \(Ox,Oy\) đối nhau:
-\[
+$$
 2t+t=180^\circ\Rightarrow t=60^\circ.
-\]
+$$
 
 ## 13-M4-04
 Từ \(d\perp a\) và \(c\perp a\), với \(c,d\) phân biệt, suy ra \(d\parallel c\).

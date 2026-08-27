@@ -197,9 +197,9 @@ Cho \(\triangle ABC\) cân tại \(A\). Lấy \(D\in AC\), \(E\in AB\) sao cho \
 
 ## 14-M3-01
 Xét \(\triangle ABM,\triangle ACM\):
-\[
+$$
 AB=AC,\quad AM\text{ chung},\quad \angle BAM=\angle MAC.
-\]
+$$
 Suy ra hai tam giác bằng nhau theo c.g.c, nên \(MB=MC\).
 
 ## 14-M3-07
@@ -212,19 +212,19 @@ Suy ra \(\triangle AMB=\triangle DMC\) theo c.g.c, nên \(AB=CD\). Tương tự 
 
 ## 14-M4-04
 Cạnh lớn nhất là \(x+2\). Điều kiện vuông:
-\[
+$$
 x^2+(x+1)^2=(x+2)^2
-\]
-\[
+$$
+$$
 x^2-2x-3=0\Rightarrow x=3\text{ hoặc }x=-1.
-\]
+$$
 Nhận \(x=3\).
 
 ## 14-M4-05
 Điều kiện:
-\[
+$$
 5<x<21.
-\]
+$$
 Với \(x\) nguyên: \(6,7,\ldots,20\), có \(15\) giá trị.
 
 > **Mở rộng:** bài 14-M4-06 dùng tính chất trung điểm cạnh huyền trong tam giác vuông; nếu lớp chưa học thì không tính vào ngưỡng bắt buộc.
