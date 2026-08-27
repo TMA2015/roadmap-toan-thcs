@@ -13,6 +13,10 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+### Infographic tổng quan
+
+![Infographic tổng quan Chuyên đề 09 – Hệ phương trình bậc nhất hai ẩn](../../assets/infographics/09/09-01-tong-quan.svg)
+
 ```text
 HỆ PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN
 │
@@ -62,6 +66,10 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 ---
 
 ## 📖 3. Kiến thức cốt lõi
+
+### Infographic – Phương pháp thế và cộng đại số
+
+![Infographic phương pháp thế và cộng đại số Chuyên đề 09](../../assets/infographics/09/09-02-the-va-cong-dai-so.svg)
 
 ### 3.1. Phương trình bậc nhất hai ẩn
 
@@ -312,6 +320,10 @@ Vì vậy hai phương trình tương đương và hệ có vô số nghiệm.
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic – Bài toán thực tế và lỗi sai
+
+![Infographic bài toán thực tế và lỗi sai Chuyên đề 09](../../assets/infographics/09/09-03-bai-toan-thuc-te-loi-sai.svg)
 
 ### Dạng 1 – Kiểm tra một cặp số có là nghiệm không
 
