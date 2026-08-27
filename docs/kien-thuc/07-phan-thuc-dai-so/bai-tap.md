@@ -36,9 +36,9 @@ Cho \(A=\frac{x+1}{x-2}\). Tìm các giá trị nguyên của \(x\) để \(A\) 
 Giải thích vì sao khi rút gọn \(\frac{x^2-4}{x-2}=x+2\) vẫn phải giữ điều kiện \(x\ne2\).
 
 # Đáp án nhanh
-- M1-01: \(x\ne2\); M1-02: \(2/(3x), x\ne0\); M1-03: mẫu chung \(x(x+1)\).
-- M2-01: \(x+3, x\ne3\); M2-02: \(7/(2x)\); M2-03: 1, \(x\ne1\).
-- M3-01: \((x+2)/x\), \(x\ne0,2\); M3-02: \(x-1\), \(x\ne0,-1\); M3-03: 1, \(x\ne-1,1\).
-- M4-01: 1, \(x\ne\pm1\); M4-02: vì \(A=1+3/(x-2)\), nên \(x-2\in\{\pm1,\pm3\}\), suy ra \(x\in\{1,3,-1,5\}\); M4-03: vì biểu thức ban đầu không xác định tại 2.
+- 07-M1-01: \(x\ne2\); 07-M1-02: \(2/(3x), x\ne0\); 07-M1-03: mẫu chung \(x(x+1)\).
+- 07-M2-01: \(x+3, x\ne3\); 07-M2-02: \(7/(2x)\); 07-M2-03: 1, \(x\ne1\).
+- 07-M3-01: \((x+2)/x\), \(x\ne0,2\); 07-M3-02: \(x-1\), \(x\ne0,-1\); 07-M3-03: 1, \(x\ne-1,1\).
+- 07-M4-01: 1, \(x\ne\pm1\); 07-M4-02: vì \(A=1+3/(x-2)\), nên \(x-2\in\{\pm1,\pm3\}\), suy ra \(x\in\{1,3,-1,5\}\); 07-M4-03: vì biểu thức ban đầu không xác định tại 2.
 
 [← Học bài](index.md) · [Tự kiểm tra →](tu-kiem-tra.md)
