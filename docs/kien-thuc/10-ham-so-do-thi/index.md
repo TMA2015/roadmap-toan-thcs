@@ -14,6 +14,10 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+### Infographic tổng quan
+
+![Infographic tổng quan Chuyên đề 10 – Hàm số và đồ thị](../../assets/infographics/10/10-01-tong-quan.svg)
+
 ```text
 HÀM SỐ VÀ ĐỒ THỊ
 │
@@ -69,6 +73,10 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 ---
 
 ## 📖 3. Kiến thức cốt lõi
+
+### Infographic – Tọa độ và hàm số
+
+![Infographic tọa độ và hàm số](../../assets/infographics/10/10-02-toa-do-ham-so.svg)
 
 ### 3.1. Khái niệm hàm số
 
@@ -158,6 +166,10 @@ Xét `y = 2x + 1`.
 `2·2 + 1 ≠ 4`
 
 ---
+
+### Infographic – Hàm số bậc nhất và đường thẳng
+
+![Infographic hàm số bậc nhất và đường thẳng](../../assets/infographics/10/10-03-ham-bac-nhat-duong-thang.svg)
 
 ### 3.5. Hàm số bậc nhất
 
@@ -420,6 +432,10 @@ Ta thấy các giá trị tại `x` và `-x` bằng nhau.
 - **Sử dụng tiếp:** [12 – Phương trình bậc hai và Viète](../12-phuong-trinh-bac-hai-viete/index.md), [24 – Bài toán thực tế và mô hình hóa](../24-bai-toan-thuc-te/index.md).
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic – Giao điểm, parabol và lỗi sai
+
+![Infographic giao điểm, parabol và lỗi sai](../../assets/infographics/10/10-04-giao-diem-parabol-loi-sai.svg)
 
 ### Dạng 1 – Tính giá trị hàm số
 
