@@ -14,6 +14,10 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+### Infographic 1 – Tổng quan chuyên đề
+
+![Infographic tổng quan Chuyên đề 07](../../assets/infographics/07/07-01-tong-quan.svg)
+
 ```text
 PHÂN THỨC ĐẠI SỐ
 │
@@ -70,6 +74,14 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 ---
 
 ## 📖 3. Kiến thức cốt lõi
+
+### Infographic 2 – Điều kiện xác định và rút gọn
+
+![Infographic điều kiện xác định và rút gọn phân thức](../../assets/infographics/07/07-02-dieu-kien-rut-gon.svg)
+
+### Infographic 3 – Quy đồng và các phép tính
+
+![Infographic quy đồng và các phép tính phân thức](../../assets/infographics/07/07-03-quy-dong-phep-tinh.svg)
 
 ### 3.1. Phân thức đại số là gì?
 
@@ -213,6 +225,10 @@ Chuỗi kiến thức chính:
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic 4 – Dạng bài trọng tâm và lỗi sai
+
+![Infographic dạng bài và lỗi sai Chuyên đề 07](../../assets/infographics/07/07-04-dang-bai-loi-sai.svg)
 
 ### Dạng 1 – Tìm điều kiện xác định
 
