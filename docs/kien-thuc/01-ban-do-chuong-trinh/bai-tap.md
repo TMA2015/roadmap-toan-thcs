@@ -41,9 +41,17 @@ Thiết kế một “đường quay lại” khi tự kiểm tra một chuyên 
 So sánh hai chiến lược: học đúng số thứ tự 01→25 và học theo dependency. Khi nào mỗi cách phù hợp?
 
 # Đáp án nhanh / tiêu chí
-- M1-01: Số & Đại số; Hình học; Thống kê–Xác suất; Tổng hợp–Ứng dụng.
-- M1-02: 09 đại số; 14 hình học; 21 thống kê; 24 ứng dụng.
-- M1-03: 06 là nền trực tiếp; 05 hỗ trợ mạnh cho 06.
-- M2–M4: đạt khi chỉ đúng quan hệ trước–sau, có lý do và kế hoạch khả thi.
+- 01-M1-01: Số & Đại số; Hình học; Thống kê–Xác suất; Tổng hợp–Ứng dụng.
+- 01-M1-02: 09 đại số; 14 hình học; 21 thống kê; 24 ứng dụng.
+- 01-M1-03: 06 là nền trực tiếp; 05 hỗ trợ mạnh cho 06.
+- 01-M2-01: đạt khi giải thích được các chuyên đề có quan hệ trước–sau và kiến thức mới thường dùng lại kiến thức nền.
+- 01-M2-02: nên củng cố 05 trước, sau đó 06, rồi kiểm tra lại nền trước khi học 12.
+- 01-M2-03: chấp nhận các cặp kiến thức tiên quyết hợp lý nếu giải thích được quan hệ với chuyên đề đã chọn.
+- 01-M3-01: lộ trình hợp lý phải có ôn 06 → củng cố 07 → tự kiểm tra 07 → chuyển sang 08.
+- 01-M3-02: bảng đạt khi ba cột phân biệt rõ kiến thức nền, nội dung trọng tâm và ứng dụng về sau.
+- 01-M3-03: kế hoạch đạt khi có thời lượng khả thi cho học bài, luyện tập, sửa lỗi và tự kiểm tra.
+- 01-M4-01: ưu tiên vá nền hình học theo dependency, nhưng vẫn duy trì ôn đại số; cần nêu được lý do phân bổ thời gian.
+- 01-M4-02: cần có chu trình phân loại lỗi → quay lại mục kiến thức liên quan → làm bài mức thấp hơn → làm lại bài sai → tự kiểm tra lại.
+- 01-M4-03: học theo số thứ tự phù hợp khi bắt đầu từ đầu; học theo dependency phù hợp khi cần vá lỗ hổng hoặc có mục tiêu cụ thể.
 
 [← Học bài](index.md) · [Tự kiểm tra →](tu-kiem-tra.md)
