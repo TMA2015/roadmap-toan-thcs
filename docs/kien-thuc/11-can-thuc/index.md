@@ -14,6 +14,8 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+![Infographic tổng quan Chuyên đề 11 – Căn thức và biến đổi căn thức](../../assets/infographics/11/11-01-tong-quan.svg)
+
 ```text
 CĂN THỨC VÀ BIẾN ĐỔI CĂN THỨC
 │
@@ -65,6 +67,8 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 
 ## 📖 3. Kiến thức cốt lõi
 
+![Infographic căn bậc hai, điều kiện xác định và giá trị tuyệt đối](../../assets/infographics/11/11-02-can-bac-hai-dieu-kien.svg)
+
 ### 3.1. Căn bậc hai số học
 
 Với `a ≥ 0`, căn bậc hai số học của `a` là số không âm có bình phương bằng `a`, ký hiệu `√a`.
@@ -106,6 +110,8 @@ Ví dụ:
 `√((x - 3)²) = |x - 3|`
 
 Nếu biết thêm `x ≥ 3` thì mới kết luận `|x - 3| = x - 3`.
+
+![Infographic biến đổi và rút gọn căn thức](../../assets/infographics/11/11-03-bien-doi-rut-gon.svg)
 
 ### 3.4. Khai phương một tích
 
@@ -163,6 +169,8 @@ Ví dụ:
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+![Infographic trục căn thức, dạng bài trọng tâm và lỗi sai](../../assets/infographics/11/11-04-truc-can-dang-bai-loi-sai.svg)
 
 ### Dạng 1 – Tìm điều kiện xác định
 
