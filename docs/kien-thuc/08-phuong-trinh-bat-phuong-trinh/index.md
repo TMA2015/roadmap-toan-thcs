@@ -13,6 +13,10 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+### Infographic – Tổng quan chuyên đề
+
+![Tổng quan Chuyên đề 08 – Phương trình và bất phương trình](../../assets/infographics/08/08-01-tong-quan.svg)
+
 ```text
 PHƯƠNG TRÌNH & BẤT PHƯƠNG TRÌNH
 │
@@ -63,6 +67,14 @@ PHƯƠNG TRÌNH & BẤT PHƯƠNG TRÌNH
 ---
 
 ## 📖 3. Kiến thức cốt lõi
+
+### Infographic – Phương trình
+
+![Phương trình bậc nhất, phương trình tích và phương trình chứa ẩn ở mẫu](../../assets/infographics/08/08-02-phuong-trinh.svg)
+
+### Infographic – Bất phương trình
+
+![Bất phương trình, tập nghiệm và trục số](../../assets/infographics/08/08-03-bat-phuong-trinh.svg)
 
 ### 3.1. Phương trình bậc nhất một ẩn
 
@@ -144,6 +156,10 @@ Khi cần tìm các giá trị thỏa mãn đồng thời nhiều bất phương
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic – Dạng bài và lỗi sai
+
+![Dạng bài trọng tâm và lỗi sai Chuyên đề 08](../../assets/infographics/08/08-04-dang-bai-loi-sai.svg)
 
 === "Mức 1 — Nhận biết"
 
