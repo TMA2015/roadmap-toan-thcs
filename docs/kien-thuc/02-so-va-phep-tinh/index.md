@@ -1,7 +1,7 @@
 # Chuyên đề 02 – Số và phép tính
 
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 6–9
 > **Mạch kiến thức:** Số

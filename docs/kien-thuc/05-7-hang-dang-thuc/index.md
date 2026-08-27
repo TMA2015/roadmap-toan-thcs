@@ -1,7 +1,7 @@
 # Chuyên đề 05 – 7 Hằng đẳng thức đáng nhớ
 
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 8
 > **Mạch kiến thức:** Đại số

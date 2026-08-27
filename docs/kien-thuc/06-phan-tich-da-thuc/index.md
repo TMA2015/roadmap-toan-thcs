@@ -1,7 +1,7 @@
 # Chuyên đề 06 – Phân tích đa thức thành nhân tử
 
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 8
 > **Mạch kiến thức:** Đại số

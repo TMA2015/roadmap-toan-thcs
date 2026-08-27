@@ -1,7 +1,7 @@
 # Chuyên đề 03 – Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ
 
 
-> **Trạng thái:** Cấu trúc Roadmap đã chuẩn hóa; đang kiểm định nội dung học thuật.
+> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
 > **Lớp trọng tâm:** 6–7
 > **Mạch kiến thức:** Số / Đại số
