@@ -17,6 +17,10 @@
 6. Kiểm tra và ghi lại lỗi sai.
 7. Ôn lại các kiến thức liên quan ở lớp trước và kiến thức nền cho lớp sau.
 
+[Xem hướng dẫn chi tiết: Nguyên tắc học mỗi chuyên đề](nguyen-tac-hoc-moi-chuyen-de.md)
+
 ## Quy tắc chuyển sang chuyên đề mới
 
 Chỉ chuyển sang phần tiếp theo khi học sinh có thể tự giải các dạng bài cốt lõi và giải thích được vì sao áp dụng phương pháp đó.
+
+[Xem hướng dẫn chi tiết: Quy tắc chuyển sang chuyên đề mới](quy-tac-chuyen-chuyen-de.md)
