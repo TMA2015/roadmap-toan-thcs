@@ -14,6 +14,10 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+### Infographic 1 – Tổng quan chuyên đề
+
+![Infographic tổng quan Chuyên đề 05 – 7 Hằng đẳng thức đáng nhớ](../../assets/infographics/05/05-01-tong-quan.svg)
+
 ```text
 7 HẰNG ĐẲNG THỨC ĐÁNG NHỚ
 │
@@ -63,6 +67,10 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 ## 📖 3. Kiến thức cốt lõi
 
 > **Ghi nhớ:** hằng đẳng thức là đẳng thức đúng với mọi giá trị của các biến làm cho hai vế có nghĩa. Trong các công thức dưới đây, `A` và `B` có thể là số, đơn thức hoặc biểu thức đại số.
+
+### Infographic 2 – Nhóm bình phương
+
+![Infographic nhóm bình phương](../../assets/infographics/05/05-02-nhom-binh-phuong.svg)
 
 ### 3.1. Bình phương của một tổng
 
@@ -117,6 +125,10 @@ $$
 Đây là một trong những công thức quan trọng nhất khi học **phân tích đa thức thành nhân tử**.
 
 ---
+
+### Infographic 3 – Nhóm lập phương
+
+![Infographic nhóm lập phương](../../assets/infographics/05/05-03-nhom-lap-phuong.svg)
 
 ### 3.4. Lập phương của một tổng
 
@@ -274,6 +286,10 @@ Hằng đẳng thức là công cụ trực tiếp cho:
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic 4 – Dạng bài trọng tâm & lỗi sai
+
+![Infographic dạng bài trọng tâm và lỗi sai](../../assets/infographics/05/05-04-dang-bai-loi-sai.svg)
 
 ### Dạng 1 – Khai triển bằng hằng đẳng thức
 
