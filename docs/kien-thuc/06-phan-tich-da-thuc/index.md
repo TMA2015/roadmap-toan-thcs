@@ -14,6 +14,10 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+### Infographic 1 – Tổng quan chuyên đề
+
+![Infographic tổng quan Chuyên đề 06 – Phân tích đa thức thành nhân tử](../../assets/infographics/06/06-01-tong-quan.svg)
+
 ```text
 PHÂN TÍCH ĐA THỨC THÀNH NHÂN TỬ
 │
@@ -79,6 +83,10 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 ---
 
 ## 📖 3. Kiến thức cốt lõi
+
+### Infographic 2 – Sơ đồ chọn phương pháp
+
+![Infographic sơ đồ chọn phương pháp phân tích đa thức](../../assets/infographics/06/06-02-so-do-chon-phuong-phap.svg)
 
 ### 3.1. Phân tích đa thức thành nhân tử là gì?
 
@@ -298,6 +306,10 @@ Không nên dừng ở `2x(x² - 9)` nếu đề yêu cầu tiếp tục phân t
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic 3 – Dạng bài trọng tâm & lỗi sai
+
+![Infographic dạng bài trọng tâm và lỗi sai Chuyên đề 06](../../assets/infographics/06/06-03-dang-bai-loi-sai.svg)
 
 ### Dạng 1 – Đặt nhân tử chung trực tiếp
 
