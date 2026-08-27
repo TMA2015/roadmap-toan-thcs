@@ -14,6 +14,10 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+![Infographic tổng quan Chuyên đề 14](../../assets/infographics/14/14-01-tong-quan.svg)
+
+> **Xem nhanh:** dùng infographic để nhìn toàn cảnh các mạch góc, cạnh, tam giác đặc biệt và hai tam giác bằng nhau trước khi học chi tiết.
+
 ```text
 TAM GIÁC
 │
@@ -82,6 +86,10 @@ Sau khi hoàn thành chuyên đề, học sinh cần:
 ---
 
 ## 📖 3. Kiến thức cốt lõi
+
+![Infographic góc, cạnh và bất đẳng thức tam giác](../../assets/infographics/14/14-02-goc-canh-bat-dang-thuc.svg)
+
+> Infographic này tóm tắt ba công cụ nền: tổng góc, quan hệ cạnh–góc đối diện và điều kiện tồn tại tam giác.
 
 ### 3.1. Tam giác và ký hiệu
 
@@ -192,6 +200,10 @@ Ba đoạn `3 cm, 4 cm, 8 cm` không lập thành tam giác vì:
 
 ---
 
+![Infographic tam giác đặc biệt và Pythagore](../../assets/infographics/14/14-03-tam-giac-dac-biet-pythagore.svg)
+
+> Dùng bản này để phân biệt nhanh tam giác cân, đều, vuông và hai chiều của định lý Pythagore.
+
 ### 3.7. Tam giác đặc biệt
 
 #### Tam giác cân
@@ -270,6 +282,10 @@ Tam giác có các cạnh `3, 4, 5` là tam giác vuông vì:
 `3² + 4² = 5²`
 
 ---
+
+![Infographic hai tam giác bằng nhau](../../assets/infographics/14/14-04-hai-tam-giac-bang-nhau.svg)
+
+> Trước khi chứng minh, hãy xác định cặp tam giác chứa hai yếu tố cần so sánh rồi chọn đúng trường hợp bằng nhau.
 
 ### 3.8. Hai tam giác bằng nhau
 
