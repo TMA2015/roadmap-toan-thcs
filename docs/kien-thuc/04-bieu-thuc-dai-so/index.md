@@ -15,6 +15,10 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+### Infographic 1 – Tổng quan chuyên đề
+
+![Infographic tổng quan Chuyên đề 04 – Biểu thức đại số](../../assets/infographics/04/04-01-tong-quan.svg)
+
 ```text
 BIỂU THỨC VÀ BIẾN ĐỔI ĐẠI SỐ
 │
@@ -59,6 +63,10 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 ---
 
 ## 📖 3. Kiến thức cốt lõi
+
+### Infographic 2 – Kiến thức cốt lõi
+
+![Infographic kiến thức cốt lõi Chuyên đề 04 – Biểu thức đại số](../../assets/infographics/04/04-02-kien-thuc-cot-loi.svg)
 
 ### 3.1. Đơn thức
 
@@ -261,6 +269,10 @@ Tính `P` tại `x = 2`.
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic 3 – Dạng bài trọng tâm
+
+![Infographic dạng bài trọng tâm Chuyên đề 04 – Biểu thức đại số](../../assets/infographics/04/04-03-dang-bai-trong-tam.svg)
 
 | Dạng bài | Mức độ | Ưu tiên luyện |
 |---|:---:|:---:|
