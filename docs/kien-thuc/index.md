@@ -2,8 +2,8 @@
 
 Trang này là mục lục trung tâm của toàn bộ phần **Kiến thức**. Các chuyên đề được tổ chức theo mạch để học sinh dễ nhìn toàn cảnh và đi theo lộ trình phù hợp.
 
-!!! info "Trạng thái biên soạn"
-    Các chuyên đề **02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13 và 14** đã có nội dung chi tiết. Các chuyên đề còn lại đã được tạo **khung chuẩn** để bảo đảm URL, menu và cấu trúc thống nhất trước khi biên soạn sâu.
+!!! success "Trạng thái Roadmap"
+    **25/25 chuyên đề** đã có nội dung và được chuẩn hóa theo cấu trúc 11 mục. Roadmap đã hoàn tất vòng kiểm định nội dung học thuật và tổng kiểm cấu trúc; giai đoạn tiếp theo tập trung vào trải nghiệm học tập và hệ thống luyện tập.
 
 ## Tổng quan
 
