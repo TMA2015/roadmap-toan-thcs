@@ -15,6 +15,10 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+![Infographic tổng quan Chuyên đề 03](../../assets/infographics/03/03-01-tong-quan.svg)
+
+> **Xem nhanh:** infographic trên giúp xác định các nhánh chính và phân biệt sớm tỉ lệ thuận với tỉ lệ nghịch. Phần bên dưới giữ vai trò bản đồ chữ chi tiết để tra cứu.
+
 ```text
 TỈ LỆ – TỈ LỆ THỨC – ĐẠI LƯỢNG TỈ LỆ
 │
@@ -65,6 +69,10 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 ---
 
 ## 📖 3. Kiến thức cốt lõi
+
+![Infographic kiến thức cốt lõi Chuyên đề 03](../../assets/infographics/03/03-02-kien-thuc-cot-loi.svg)
+
+> Dùng infographic này để ôn nhanh công thức và dấu hiệu nhận biết. Khi chưa hiểu bản chất, đọc tiếp từng mục 3.1–3.11 bên dưới.
 
 ### 3.1. Tỉ số
 
@@ -347,6 +355,10 @@ Tư duy tỉ lệ cũng xuất hiện trong:
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+![Infographic dạng bài trọng tâm Chuyên đề 03](../../assets/infographics/03/03-03-dang-bai-trong-tam.svg)
+
+> Trước khi tính, hãy xác định bài thuộc **tỉ lệ thức**, **chia theo tỉ lệ**, **tỉ lệ thuận** hay **tỉ lệ nghịch**. Nhận đúng mô hình thường quan trọng hơn thao tác tính toán.
 
 ### Dạng 1 – Lập và kiểm tra tỉ lệ thức
 
