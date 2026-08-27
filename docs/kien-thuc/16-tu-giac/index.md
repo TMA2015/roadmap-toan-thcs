@@ -38,6 +38,10 @@ Mạch tư duy trọng tâm:
 
 **nhận dạng dấu hiệu → gọi đúng tên hình → dùng tính chất → suy ra cạnh, góc, đường chéo hoặc chứng minh hình đặc biệt.**
 
+### Infographic 1 – Tổng quan chuyên đề
+
+![Infographic tổng quan Chuyên đề 16 – Tứ giác và các hình đặc biệt](../../assets/infographics/16/16-01-tong-quan.svg)
+
 ---
 
 ## Minh họa trực quan
@@ -234,6 +238,10 @@ Tính chất:
 - hai góc kề bù nhau;
 - hai đường chéo cắt nhau tại trung điểm.
 
+### Infographic 2 – Hình thang và hình bình hành
+
+![Infographic hình thang và hình bình hành – Chuyên đề 16](../../assets/infographics/16/16-02-hinh-thang-binh-hanh.svg)
+
 ### 3.4. Hình chữ nhật
 
 Hình chữ nhật là hình bình hành có bốn góc vuông.
@@ -272,6 +280,10 @@ Dấu hiệu nhận biết:
 - hình thoi có một góc vuông;
 - hình thoi có hai đường chéo bằng nhau.
 
+### Infographic 3 – Hình chữ nhật, hình thoi và hình vuông
+
+![Infographic hình chữ nhật, hình thoi và hình vuông – Chuyên đề 16](../../assets/infographics/16/16-03-chu-nhat-thoi-vuong.svg)
+
 ### 3.7. Bảng chọn tính chất nhanh
 
 | Dấu hiệu | Hình nên nghĩ tới |
@@ -296,6 +308,10 @@ Dấu hiệu nhận biết:
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic 4 – Chứng minh, dạng bài và lỗi sai
+
+![Infographic chiến lược chứng minh, dạng bài và lỗi sai – Chuyên đề 16](../../assets/infographics/16/16-04-chung-minh-dang-bai-loi-sai.svg)
 
 ### Dạng 1. Tính góc trong tứ giác
 
