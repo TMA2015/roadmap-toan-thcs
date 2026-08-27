@@ -307,7 +307,17 @@ for num in range(1, 26):
         if not re.search(r"Thang điểm", text, re.IGNORECASE):
             issues.append(f"{num:02d}: tu-kiem-tra.md thiếu thang điểm")
 
-        if not re.search(r"^#+\s+Câu\s+\d+", text, re.MULTILINE | re.IGNORECASE):
+        has_heading_questions = re.search(
+            r"^#+\s+Câu\s+\d+",
+            text,
+            re.MULTILINE | re.IGNORECASE,
+        )
+        has_numbered_questions = re.search(
+            r"^\s*\d+\.\s+\S",
+            text,
+            re.MULTILINE,
+        )
+        if not (has_heading_questions or has_numbered_questions):
             issues.append(f"{num:02d}: tu-kiem-tra.md không đọc được câu hỏi")
 
         if not re.search(
