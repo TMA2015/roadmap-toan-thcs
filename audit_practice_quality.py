@@ -10,15 +10,6 @@ def topic_folder(num):
     return folders[0] if len(folders) == 1 else None
 
 
-def section_between_levels(text, level):
-    m = re.search(
-        rf"^#+\s+Mức\s+{level}\b.*?$(.*?)(?=^#+\s+Mức\s+{level + 1}\b|^#+\s+.*Đáp án|\Z)",
-        text,
-        re.MULTILINE | re.IGNORECASE | re.DOTALL,
-    )
-    return m.group(1) if m else ""
-
-
 def exercise_codes(text, num, level=None):
     if level is None:
         pattern = rf"\b{num:02d}-M[1-4]-\d{{2}}\b"
@@ -28,12 +19,12 @@ def exercise_codes(text, num, level=None):
 
 
 def answer_section(text):
-    m = re.search(
-        r"^#+\s+.*Đáp án.*?$(.*)\Z",
-        text,
-        re.MULTILINE | re.IGNORECASE | re.DOTALL,
-    )
-    return m.group(1) if m else ""
+    """Lấy phần từ heading có chữ Đáp án tới cuối file."""
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
+        if re.match(r"^#+\s+.*Đáp án", line, re.IGNORECASE):
+            return "\n".join(lines[i + 1 :])
+    return ""
 
 
 def normalized_problem_blocks(text, num):
@@ -79,15 +70,9 @@ for num in range(1, 26):
         continue
 
     text = path.read_text(encoding="utf-8")
-    counts = []
     all_codes = exercise_codes(text, num)
-
-    for level in range(1, 5):
-        section = section_between_levels(text, level)
-        codes = exercise_codes(section, num, level)
-        counts.append(len(codes))
-
-    total = sum(counts)
+    counts = [len(exercise_codes(text, num, level)) for level in range(1, 5)]
+    total = len(all_codes)
     answered = count_answered_codes(text, all_codes)
 
     # Cờ định lượng thận trọng: chỉ dùng để chọn Topic cần đọc kỹ, không kết luận chất lượng.
