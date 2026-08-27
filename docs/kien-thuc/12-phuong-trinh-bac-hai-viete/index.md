@@ -45,6 +45,12 @@ PHƯƠNG TRÌNH BẬC HAI & VIÈTE
     └── Nghiệm là hoành độ giao điểm với trục Ox
 ```
 
+### Infographic 1 – Tổng quan chuyên đề
+
+![Infographic tổng quan Chuyên đề 12 – Phương trình bậc hai và Viète](../../assets/infographics/12/12-01-tong-quan.svg)
+
+> Dùng infographic này để nhìn nhanh **cấu trúc chuyên đề, vai trò của Δ và Viète, cùng mạch liên hệ giữa phương trình – nghiệm – hệ số – đồ thị**.
+
 ---
 
 ## 🎯 2. Mục tiêu cần đạt
@@ -64,6 +70,12 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 ---
 
 ## 📖 3. Kiến thức cốt lõi
+
+### Infographic 2 – Δ và công thức nghiệm
+
+![Infographic Δ và công thức nghiệm Chuyên đề 12](../../assets/infographics/12/12-02-delta-cong-thuc-nghiem.svg)
+
+> Dùng infographic này để ôn nhanh **cách xác định a, b, c; tính Δ/Δ'; kết luận số nghiệm và chọn đúng công thức nghiệm**.
 
 ### 3.1. Phương trình bậc hai một ẩn
 
@@ -256,6 +268,12 @@ Ta có:
 
 ---
 
+### Infographic 3 – Viète và biểu thức theo nghiệm
+
+![Infographic Viète và biểu thức theo nghiệm Chuyên đề 12](../../assets/infographics/12/12-03-viete-bieu-thuc-nghiem.svg)
+
+> Dùng infographic này khi bài toán hỏi **tổng – tích nghiệm, biểu thức đối xứng hoặc lập phương trình mới** mà không cần tính riêng từng nghiệm.
+
 ### Dạng 4 – Hệ thức Viète
 
 Nếu phương trình:
@@ -327,6 +345,12 @@ nên `m = 4`.
 Sau đó phải kiểm tra phương trình ứng với `m = 4` có nghiệm phù hợp với yêu cầu đề bài.
 
 ---
+
+### Infographic 4 – Tham số, dấu nghiệm và lỗi sai
+
+![Infographic tham số, dấu nghiệm và lỗi sai Chuyên đề 12](../../assets/infographics/12/12-04-tham-so-dau-nghiem-loi-sai.svg)
+
+> Dùng infographic này cho các bài **tham số, điều kiện hai nghiệm và lựa chọn nhanh giữa Δ – công thức nghiệm – Viète**, đồng thời kiểm tra các lỗi dễ mắc trước khi kết luận.
 
 ### Dạng 7 – Xét dấu của hai nghiệm
 
