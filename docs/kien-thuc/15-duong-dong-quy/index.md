@@ -29,6 +29,10 @@ Các đường đặc biệt trong tam giác
         └── O cách đều ba đỉnh
 ```
 
+### Infographic 1 – Tổng quan bốn đường đặc biệt
+
+![Infographic tổng quan Chuyên đề 15 – Các đường đồng quy trong tam giác](../../assets/infographics/15/15-01-tong-quan.svg)
+
 Mạch tư duy trọng tâm của chuyên đề:
 
 **nhận dạng đường đặc biệt → xác định tâm tương ứng → dùng tính chất đặc trưng → suy ra độ dài, khoảng cách hoặc quan hệ hình học.**
@@ -170,6 +174,10 @@ Vị trí của `H`:
 - tam giác vuông: tại đỉnh góc vuông;
 - tam giác tù: nằm ngoài tam giác.
 
+### Infographic 2 – Trọng tâm và trực tâm
+
+![Infographic trọng tâm và trực tâm Chuyên đề 15](../../assets/infographics/15/15-02-trong-tam-truc-tam.svg)
+
 ### 3.3. Phân giác và tâm nội tiếp
 
 Ba đường phân giác trong đồng quy tại **tâm nội tiếp** `I`.
@@ -190,6 +198,10 @@ Vị trí của `O`:
 - tam giác nhọn: trong tam giác;
 - tam giác vuông: trung điểm cạnh huyền;
 - tam giác tù: ngoài tam giác.
+
+### Infographic 3 – Tâm nội tiếp và tâm ngoại tiếp
+
+![Infographic tâm nội tiếp và tâm ngoại tiếp Chuyên đề 15](../../assets/infographics/15/15-03-tam-noi-tiep-ngoai-tiep.svg)
 
 ### 3.5. Cách chọn đúng tính chất
 
@@ -214,6 +226,10 @@ Vị trí của `O`:
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic 4 – Nhận dạng, dạng bài và lỗi sai
+
+![Infographic nhận dạng, dạng bài và lỗi sai Chuyên đề 15](../../assets/infographics/15/15-04-nhan-dang-dang-bai-loi-sai.svg)
 
 ### Dạng 1. Nhận dạng đường đặc biệt và tâm
 
