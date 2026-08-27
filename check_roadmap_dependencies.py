@@ -77,7 +77,6 @@ def markdown_link_targets(text):
         if target.startswith("<") and ">" in target:
             target = target[1:target.index(">")]
         else:
-            # Loại phần title dạng: path.md "Tiêu đề"
             target = re.split(r"\s+[\"']", target, maxsplit=1)[0]
 
         if target:
@@ -99,7 +98,6 @@ def split_internal_target(source, target):
     path_part = unquote(path_part).strip()
     fragment = unquote(fragment).strip() if sep else ""
 
-    # #anchor = anchor trong chính file hiện tại.
     if not path_part:
         if fragment:
             return source.resolve(), fragment
@@ -158,10 +156,15 @@ def markdown_anchors(path):
     return anchors
 
 
+def topic_folder(num):
+    folders = sorted(TOPICS.glob(f"{num:02d}-*"))
+    return folders[0] if len(folders) == 1 else None
+
+
 bp = parse_blueprint()
 issues = []
 
-print("=== QA DEPENDENCY & LINK ROADMAP ===")
+print("=== QA ROADMAP & LEARNING STRUCTURE ===")
 print()
 
 
@@ -177,14 +180,10 @@ for num, info in bp.items():
 # 2. Không tự tham chiếu
 for num, info in bp.items():
     if num in info["before"]:
-        issues.append(
-            f"{num:02d}: tự tham chiếu trong cột Trước"
-        )
+        issues.append(f"{num:02d}: tự tham chiếu trong cột Trước")
 
     if num in info["after"]:
-        issues.append(
-            f"{num:02d}: tự tham chiếu trong cột Sau"
-        )
+        issues.append(f"{num:02d}: tự tham chiếu trong cột Sau")
 
 
 # 3. Phát hiện vòng tiên quyết trực tiếp
@@ -192,10 +191,7 @@ for a, info in bp.items():
     for b in info["before"]:
         if b in bp and a in bp[b]["before"]:
             pair = tuple(sorted((a, b)))
-            msg = (
-                f"Vòng tiên quyết trực tiếp: "
-                f"{pair[0]:02d} ↔ {pair[1]:02d}"
-            )
+            msg = f"Vòng tiên quyết trực tiếp: {pair[0]:02d} ↔ {pair[1]:02d}"
             if msg not in issues:
                 issues.append(msg)
 
@@ -206,15 +202,13 @@ link_re = re.compile(
 )
 
 for num in range(1, 26):
-    folders = sorted(TOPICS.glob(f"{num:02d}-*"))
+    folder = topic_folder(num)
 
-    if len(folders) != 1:
-        issues.append(
-            f"{num:02d}: không xác định duy nhất thư mục Topic"
-        )
+    if folder is None:
+        issues.append(f"{num:02d}: không xác định duy nhất thư mục Topic")
         continue
 
-    path = folders[0] / "index.md"
+    path = folder / "index.md"
 
     if not path.exists():
         issues.append(f"{num:02d}: thiếu index.md")
@@ -231,20 +225,13 @@ for num in range(1, 26):
     )
 
     if not m:
-        issues.append(
-            f"{num:02d}: không đọc được mục 10"
-        )
+        issues.append(f"{num:02d}: không đọc được mục 10")
         continue
 
-    section = m.group(1)
-
-    for rel in link_re.findall(section):
+    for rel in link_re.findall(m.group(1)):
         target = (path.parent / rel).resolve()
-
         if not target.exists():
-            issues.append(
-                f"{num:02d}: link hỏng trong mục 10 -> {rel}"
-            )
+            issues.append(f"{num:02d}: link hỏng trong mục 10 -> {rel}")
 
 
 # 5. Kiểm tra toàn bộ link Markdown nội bộ và anchor trong docs/
@@ -262,35 +249,73 @@ for source in sorted(ROOT.rglob("*.md")):
 
         target, fragment = resolved
 
-        # Link nội bộ không được thoát khỏi thư mục docs/.
         try:
             target.relative_to(docs_root)
         except ValueError:
-            issues.append(
-                f"{source.as_posix()}: link ra ngoài docs -> {raw_target}"
-            )
+            issues.append(f"{source.as_posix()}: link ra ngoài docs -> {raw_target}")
             continue
 
-        # Cho phép link tới thư mục nếu thư mục có index.md.
-        target_file = target
-        if target.is_dir():
-            target_file = target / "index.md"
+        target_file = target / "index.md" if target.is_dir() else target
 
         if not target_file.exists():
-            issues.append(
-                f"{source.as_posix()}: link nội bộ hỏng -> {raw_target}"
-            )
+            issues.append(f"{source.as_posix()}: link nội bộ hỏng -> {raw_target}")
             continue
 
-        # Chỉ kiểm tra fragment trên trang Markdown.
         if fragment and target_file.suffix.lower() == ".md":
             if target_file not in anchor_cache:
                 anchor_cache[target_file] = markdown_anchors(target_file)
 
             if fragment not in anchor_cache[target_file]:
-                issues.append(
-                    f"{source.as_posix()}: anchor không tồn tại -> {raw_target}"
-                )
+                issues.append(f"{source.as_posix()}: anchor không tồn tại -> {raw_target}")
+
+
+# 6. Kiểm tra chuẩn trải nghiệm học tập của toàn bộ 25 Topic
+#    Bài tập: đủ Mức 1-4, có mã bài theo từng mức, có phần đáp án.
+#    Tự kiểm tra: có thời gian, thang điểm, câu hỏi và đáp án/hướng dẫn chấm.
+for num in range(1, 26):
+    folder = topic_folder(num)
+    if folder is None:
+        continue
+
+    practice = folder / "bai-tap.md"
+    self_check = folder / "tu-kiem-tra.md"
+
+    if not practice.exists():
+        issues.append(f"{num:02d}: thiếu bai-tap.md")
+    else:
+        text = practice.read_text(encoding="utf-8")
+
+        for level in range(1, 5):
+            if not re.search(rf"^#+\s+Mức\s+{level}\b", text, re.MULTILINE | re.IGNORECASE):
+                issues.append(f"{num:02d}: bai-tap.md thiếu Mức {level}")
+
+            code_re = rf"\b{num:02d}-M{level}-\d{{2}}\b"
+            if not re.search(code_re, text):
+                issues.append(f"{num:02d}: bai-tap.md thiếu mã bài Mức {level}")
+
+        if not re.search(r"^#+\s+.*Đáp án", text, re.MULTILINE | re.IGNORECASE):
+            issues.append(f"{num:02d}: bai-tap.md thiếu phần Đáp án")
+
+    if not self_check.exists():
+        issues.append(f"{num:02d}: thiếu tu-kiem-tra.md")
+    else:
+        text = self_check.read_text(encoding="utf-8")
+
+        if not re.search(r"Thời gian", text, re.IGNORECASE):
+            issues.append(f"{num:02d}: tu-kiem-tra.md thiếu thời gian")
+
+        if not re.search(r"Thang điểm", text, re.IGNORECASE):
+            issues.append(f"{num:02d}: tu-kiem-tra.md thiếu thang điểm")
+
+        if not re.search(r"^#+\s+Câu\s+\d+", text, re.MULTILINE | re.IGNORECASE):
+            issues.append(f"{num:02d}: tu-kiem-tra.md không đọc được câu hỏi")
+
+        if not re.search(
+            r"^#+\s+.*(?:Đáp án|Hướng dẫn chấm)",
+            text,
+            re.MULTILINE | re.IGNORECASE,
+        ):
+            issues.append(f"{num:02d}: tu-kiem-tra.md thiếu đáp án/hướng dẫn chấm")
 
 
 if issues:
@@ -304,6 +329,6 @@ if issues:
     print("Script chỉ đọc dữ liệu, không sửa file.")
     raise SystemExit(1)
 
-print("PASS: dependency, link Markdown nội bộ và anchor đều hợp lệ.")
+print("PASS: dependency, link, anchor và cấu trúc học tập đều hợp lệ.")
 print()
 print("Script chỉ đọc dữ liệu, không sửa file.")
