@@ -14,6 +14,10 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+### Infographic 1 – Tổng quan chuyên đề
+
+![Infographic tổng quan Chuyên đề 13 – Góc và quan hệ giữa các đường thẳng](../../assets/infographics/13/13-01-tong-quan.svg)
+
 ```text
 GÓC VÀ QUAN HỆ GIỮA CÁC ĐƯỜNG THẲNG
 │
@@ -103,6 +107,10 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 ---
 
 ## 📖 3. Kiến thức cốt lõi
+
+### Infographic 2 – Góc, song song và vuông góc
+
+![Infographic quan hệ góc, song song và vuông góc Chuyên đề 13](../../assets/infographics/13/13-02-goc-song-song-vuong-goc.svg)
 
 ## 3.1. Điểm, đường thẳng, tia và đoạn thẳng
 
@@ -363,6 +371,10 @@ Hai tính chất này được dùng rất nhiều trong chứng minh tam giác,
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic 3 – Dạng bài và chuỗi suy luận
+
+![Infographic dạng bài và chuỗi suy luận Chuyên đề 13](../../assets/infographics/13/13-03-dang-bai-chuoi-suy-luan.svg)
 
 ## Dạng 1 – Tính góc kề bù
 
