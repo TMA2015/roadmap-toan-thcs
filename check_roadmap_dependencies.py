@@ -1,5 +1,7 @@
 from pathlib import Path
+import html
 import re
+import unicodedata
 from urllib.parse import unquote
 
 ROOT = Path("docs")
@@ -82,22 +84,25 @@ def markdown_link_targets(text):
             yield target
 
 
-def resolve_internal_target(source, target):
-    """Trả về Path của link nội bộ; None nếu không phải link file nội bộ."""
+def split_internal_target(source, target):
+    """Tách link nội bộ thành (Path, fragment); None nếu là link ngoài."""
     lower = target.lower()
 
     if (
-        target.startswith("#")
-        or lower.startswith(("http://", "https://", "mailto:", "tel:", "data:", "javascript:"))
+        lower.startswith(("http://", "https://", "mailto:", "tel:", "data:", "javascript:"))
         or target.startswith("//")
     ):
         return None
 
-    # Bỏ query và fragment; decode %20... nếu có.
-    path_part = target.split("#", 1)[0].split("?", 1)[0]
+    without_query = target.split("?", 1)[0]
+    path_part, sep, fragment = without_query.partition("#")
     path_part = unquote(path_part).strip()
+    fragment = unquote(fragment).strip() if sep else ""
 
+    # #anchor = anchor trong chính file hiện tại.
     if not path_part:
+        if fragment:
+            return source.resolve(), fragment
         return None
 
     if path_part.startswith("/"):
@@ -105,7 +110,52 @@ def resolve_internal_target(source, target):
     else:
         candidate = source.parent / path_part
 
-    return candidate.resolve()
+    return candidate.resolve(), fragment
+
+
+def strip_fenced_code(text):
+    """Bỏ fenced code để các dòng # trong code không bị coi là heading."""
+    return re.sub(
+        r"^\s*(```|~~~).*?^\s*\1\s*$",
+        "",
+        text,
+        flags=re.MULTILINE | re.DOTALL,
+    )
+
+
+def heading_slug(value):
+    """Mô phỏng slugify mặc định của Python-Markdown TOC/MkDocs."""
+    value = html.unescape(value)
+    value = re.sub(r"<[^>]+>", "", value)
+    value = re.sub(r"!?\[([^\]]*)\]\([^)]*\)", r"\1", value)
+    value = re.sub(r"[`*_~]", "", value)
+    value = unicodedata.normalize("NFKD", value)
+    value = value.encode("ascii", "ignore").decode("ascii")
+    value = re.sub(r"[^\w\s-]", "", value.lower())
+    return re.sub(r"[-\s]+", "-", value).strip("-")
+
+
+def markdown_anchors(path):
+    """Trả về tập anchor được sinh từ heading Markdown trong một file."""
+    text = strip_fenced_code(path.read_text(encoding="utf-8"))
+    anchors = set()
+    used = {}
+
+    for line in text.splitlines():
+        m = re.match(r"^\s{0,3}#{1,6}\s+(.+?)\s*#*\s*$", line)
+        if not m:
+            continue
+
+        base = heading_slug(m.group(1))
+        if not base:
+            continue
+
+        count = used.get(base, 0)
+        anchor = base if count == 0 else f"{base}_{count}"
+        used[base] = count + 1
+        anchors.add(anchor)
+
+    return anchors
 
 
 bp = parse_blueprint()
@@ -197,17 +247,20 @@ for num in range(1, 26):
             )
 
 
-# 5. Kiểm tra toàn bộ link Markdown nội bộ trong docs/
+# 5. Kiểm tra toàn bộ link Markdown nội bộ và anchor trong docs/
 docs_root = ROOT.resolve()
+anchor_cache = {}
 
 for source in sorted(ROOT.rglob("*.md")):
     text = source.read_text(encoding="utf-8")
 
     for raw_target in markdown_link_targets(text):
-        target = resolve_internal_target(source, raw_target)
+        resolved = split_internal_target(source, raw_target)
 
-        if target is None:
+        if resolved is None:
             continue
+
+        target, fragment = resolved
 
         # Link nội bộ không được thoát khỏi thư mục docs/.
         try:
@@ -219,14 +272,25 @@ for source in sorted(ROOT.rglob("*.md")):
             continue
 
         # Cho phép link tới thư mục nếu thư mục có index.md.
-        valid = target.exists()
+        target_file = target
         if target.is_dir():
-            valid = (target / "index.md").exists()
+            target_file = target / "index.md"
 
-        if not valid:
+        if not target_file.exists():
             issues.append(
                 f"{source.as_posix()}: link nội bộ hỏng -> {raw_target}"
             )
+            continue
+
+        # Chỉ kiểm tra fragment trên trang Markdown.
+        if fragment and target_file.suffix.lower() == ".md":
+            if target_file not in anchor_cache:
+                anchor_cache[target_file] = markdown_anchors(target_file)
+
+            if fragment not in anchor_cache[target_file]:
+                issues.append(
+                    f"{source.as_posix()}: anchor không tồn tại -> {raw_target}"
+                )
 
 
 if issues:
@@ -240,6 +304,6 @@ if issues:
     print("Script chỉ đọc dữ liệu, không sửa file.")
     raise SystemExit(1)
 
-print("PASS: dependency và toàn bộ link Markdown nội bộ đều hợp lệ.")
+print("PASS: dependency, link Markdown nội bộ và anchor đều hợp lệ.")
 print()
 print("Script chỉ đọc dữ liệu, không sửa file.")
