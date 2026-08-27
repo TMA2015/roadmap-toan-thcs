@@ -1,34 +1,28 @@
 # Tự kiểm tra – Chuyên đề 02: Số và phép tính
 
-> **Thời gian gợi ý:** 30 phút  
+> **Thời gian:** 40 phút  
 > **Thang điểm:** 10 điểm
 
-## Đề tự kiểm tra
+# Đề
+1. **1 điểm:** Tính \(-18+35-27\).
+2. **1 điểm:** Tính \(\frac56-\frac7{12}\).
+3. **1 điểm:** Viết \(180\) dưới dạng tích các thừa số nguyên tố.
+4. **1 điểm:** Tìm ƯCLN(72,120).
+5. **1 điểm:** Tìm BCNN(18,24).
+6. **1,5 điểm:** Tính hợp lý \(125\cdot32-25\cdot60\).
+7. **1,5 điểm:** Một lớp có 42 nam, 56 nữ; chia nhiều nhóm nhất sao cho mỗi nhóm có số nam và số nữ bằng nhau. Tìm số nhóm.
+8. **2 điểm:** Giá một món hàng tăng 20% rồi giảm 20%. Giá cuối bằng bao nhiêu phần trăm giá đầu?
 
-1. Tính \(-18+35-27\). **(1 điểm)**
-2. Tính \(\frac78-\frac5{12}\). **(1 điểm)**
-3. Rút gọn \(3^4\cdot3^2:3^3\). **(1 điểm)**
-4. Phân tích 180 ra thừa số nguyên tố. **(1 điểm)**
-5. Tìm ƯCLN và BCNN của 72 và 120. **(1,5 điểm)**
-6. Tính hợp lý \(125\cdot32\). **(1 điểm)**
-7. Một lớp có 30 nam và 42 nữ. Chia thành nhiều nhất bao nhiêu nhóm để mỗi nhóm có số nam bằng nhau và số nữ bằng nhau? **(1,5 điểm)**
-8. Một món hàng giảm 20% từ 500.000 đồng. Tính giá sau giảm. **(1 điểm)**
-
-## Đáp án
-
+# Đáp án và chấm
 1. \(-10\).
-2. \(\frac{11}{24}\).
-3. \(3^3=27\).
-4. \(180=2^2\cdot3^2\cdot5\).
-5. ƯCLN = 24; BCNN = 360.
-6. \(4000\).
-7. 6 nhóm.
-8. 400.000 đồng.
+2. \(1/4\).
+3. \(2^2\cdot3^2\cdot5\).
+4. 24.
+5. 72.
+6. 2500.
+7. 14 nhóm.
+8. \(1,2\cdot0,8=0,96\): còn 96%, giảm thực 4%.
 
-## Tự đánh giá
-
-- **8–10 điểm:** nền số học tốt, có thể chuyển tiếp.
-- **6–7,5 điểm:** cần luyện thêm phân số hoặc ước–bội.
-- **Dưới 6 điểm:** nên quay lại bài học và làm lại Mức 1–2.
+**Mốc đạt:** 8/10. Sai ở ước–bội hoặc phân số nên quay lại Mức 1–2.
 
 [← Luyện tập](bai-tap.md) · [Học bài](index.md)

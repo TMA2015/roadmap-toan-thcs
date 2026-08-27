@@ -1,30 +1,44 @@
-# Bài tập – Chuyên đề 04: Biểu thức và biến đổi đại số
+# Bài tập – Chuyên đề 04: Biểu thức đại số
 
-> **Mục tiêu:** luyện thu gọn, tính giá trị, sử dụng tính chất phân phối và biến đổi biểu thức.
+> **Mục tiêu:** rút gọn, thay giá trị, biến đổi và nhận dạng cấu trúc biểu thức.
+> **Quy ước:** `04-Mx-yy`.
 
-## Mức 1
-1. Thu gọn: \(3x+5x-2\).
-2. Tính \(A=2x^2-3x+1\) tại \(x=2\).
-3. Khai triển: \(4(x-3)\).
+# Mức 1 – Nhận biết
+### 04-M1-01
+Thu gọn \(3x+5x-2\).
+### 04-M1-02
+Tính \(2x^2-3x+1\) tại \(x=2\).
+### 04-M1-03
+Xác định hệ số của \(x^2\) trong \(5x^2-3x+7\).
 
-## Mức 2
-4. Thu gọn: \(2(3x-1)-4(x+2)\).
-5. Thu gọn: \(3a^2b-5ab+2a^2b+ab\).
-6. Tính nhanh \(49\cdot21+49\cdot79\) bằng tính chất phân phối.
+# Mức 2 – Thông hiểu
+### 04-M2-01
+Rút gọn \(2(x-3)+3(x+1)\).
+### 04-M2-02
+Rút gọn \(4a-2b-(a-5b)\).
+### 04-M2-03
+Cho \(A=2x+3\), \(B=x-5\). Tính \(A-2B\).
 
-## Mức 3
-7. Cho \(A=2x+3\), \(B=x-5\). Tính \(2A-3B\).
-8. Chứng minh \(5(x-2)+3(x+4)=8x+2\).
-9. Tìm \(x\) biết \(3(x+2)-2x=11\).
+# Mức 3 – Vận dụng
+### 04-M3-01
+Rút gọn rồi tính \(A=3x(x-2)-x(3x-5)\) tại \(x=4\).
+### 04-M3-02
+Chứng minh \((x+2)+(2x-1)-(3x+1)=0\).
+### 04-M3-03
+Viết biểu thức biểu diễn chu vi hình chữ nhật có chiều dài \(2x+3\), chiều rộng \(x-1\).
 
-## Đáp án nhanh
-1. \(8x-2\).
-2. 3.
-3. \(4x-12\).
-4. \(2x-10\).
-5. \(5a^2b-4ab\).
-6. 4900.
-7. \(x+21\).
-9. \(x=5\).
+# Mức 4 – Tổng hợp
+### 04-M4-01
+Tìm \(x\) để \(2(x-1)+3(x+2)=19\).
+### 04-M4-02
+Rút gọn \(A=(x+1)(x+2)-x(x+3)\). Nhận xét về giá trị của A.
+### 04-M4-03
+Một số có hai chữ số, chữ số hàng chục là \(a\), hàng đơn vị là \(b\). Viết biểu thức cho số đó và số đảo chữ số; tính hiệu hai số.
+
+# Đáp án nhanh
+- M1-01: \(8x-2\); M1-02: 3; M1-03: 5.
+- M2-01: \(5x-3\); M2-02: \(3a+3b\); M2-03: 13.
+- M3-01: \(-4\); M3-02: 0; M3-03: \(6x+4\).
+- M4-01: 3; M4-02: 2; M4-03: \(10a+b\), \(10b+a\), hiệu \(9(a-b)\).
 
 [← Học bài](index.md) · [Tự kiểm tra →](tu-kiem-tra.md)

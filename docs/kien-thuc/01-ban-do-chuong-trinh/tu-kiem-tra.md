@@ -1,28 +1,29 @@
 # Tự kiểm tra – Chuyên đề 01: Bản đồ chương trình Toán THCS
 
-> **Thời gian gợi ý:** 20 phút  
-> **Thang điểm:** 10 điểm
+> **Thời gian gợi ý:** 30 phút  
+> **Thang điểm:** 10 điểm  
+> Không xem Roadmap khi làm.
 
-## Đề tự kiểm tra
+# Đề tự kiểm tra
+1. **1 điểm:** Kể tên bốn mạch kiến thức chính.
+2. **1 điểm:** Xếp 08, 15, 23, 25 vào đúng mạch.
+3. **1 điểm:** Nêu hai chuyên đề nên chắc trước khi học 07.
+4. **1 điểm:** Vì sao cần kiểm tra kiến thức tiên quyết trước khi học bài mới?
+5. **1,5 điểm:** Muốn học 12 nhưng yếu 05–06, lập lộ trình ôn ngắn.
+6. **1,5 điểm:** Chọn Topic 19 và nêu ít nhất hai kiến thức hình học nên có trước.
+7. **1,5 điểm:** Một học sinh tự kiểm tra Topic 08 được 5,5/10. Hãy đề xuất chu trình học lại.
+8. **1,5 điểm:** Lập kế hoạch 1 tuần cho một chuyên đề gồm học bài, luyện tập, sửa lỗi và kiểm tra.
 
-1. Kể tên bốn mạch kiến thức chính của Roadmap. **(2 điểm)**
-2. Nêu một ví dụ về quan hệ kiến thức trước–sau giữa hai chuyên đề. **(2 điểm)**
-3. Một học sinh muốn học Chuyên đề 07 nhưng chưa chắc Chuyên đề 06. Em khuyên bạn ấy làm gì? Vì sao? **(2 điểm)**
-4. Chọn một chuyên đề bất kỳ và nêu: kiến thức cần biết trước, nội dung chính, nơi kiến thức đó được dùng lại. **(2 điểm)**
-5. Viết ngắn gọn quy trình học một chuyên đề theo Roadmap. **(2 điểm)**
+# Đáp án / hướng dẫn chấm
+1. Đủ bốn mạch: 1 điểm.
+2. 08 đại số; 15 hình học; 23 xác suất; 25 tổng hợp: 1 điểm.
+3. 05 và 06, đặc biệt 06: 1 điểm.
+4. Nêu được tránh hổng nền, hiểu bài mới tốt hơn: 1 điểm.
+5. Có thứ tự hợp lý 05→06→kiểm tra nền→12: 1,5 điểm.
+6. Chấp nhận các nền phù hợp như 13, 14, 17, 18 tùy giải thích: 1,5 điểm.
+7. Có phân loại lỗi, quay lại bài học/bài tập mức thấp, làm lại kiểm tra: 1,5 điểm.
+8. Có đủ 4 pha và thời lượng khả thi: 1,5 điểm.
 
-## Hướng dẫn chấm
-
-- Câu 1: nhận đúng các nhóm lớn: Số & Đại số; Hình học; Thống kê & Xác suất; Vận dụng/Tổng hợp.
-- Câu 2: ví dụ hợp lý, thể hiện được kiến thức nền và kiến thức kế tiếp.
-- Câu 3: nên củng cố phân tích đa thức trước khi học sâu phân thức đại số.
-- Câu 4: chấm theo tính hợp lý và khả năng giải thích.
-- Câu 5: nên có chu trình: xác định nền → học bài → luyện tập → tự kiểm tra → vá lỗ hổng/chuyển tiếp.
-
-## Tự đánh giá
-
-- **8–10 điểm:** có thể dùng Roadmap để tự lập lộ trình học.
-- **6–7,5 điểm:** hiểu tổng thể nhưng cần xem lại quan hệ trước–sau.
-- **Dưới 6 điểm:** nên đọc lại bài học và làm lại phần luyện tập.
+**Mốc đạt:** từ 8/10 và giải thích được quan hệ trước–sau.
 
 [← Luyện tập](bai-tap.md) · [Học bài](index.md)

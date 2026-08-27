@@ -1,49 +1,44 @@
-# Bài tập – Chuyên đề 03: Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ
+# Bài tập – Chuyên đề 03: Tỉ lệ – Tỉ lệ thức
 
-> **Mục tiêu:** rèn tỉ số, tỉ lệ thức, đại lượng tỉ lệ thuận/nghịch và bài toán chia theo tỉ lệ.
+> **Mục tiêu:** nhận biết tỉ lệ thức, đại lượng tỉ lệ thuận/nghịch và giải bài toán thực tế.
+> **Quy ước:** `03-Mx-yy`.
 
-## Mức 1 – Nhận biết
-
+# Mức 1 – Nhận biết
 ### 03-M1-01
-Rút gọn tỉ số \(18:24\).
-
+Lập tỉ lệ thức từ \(3\cdot20=4\cdot15\).
 ### 03-M1-02
-Tìm \(x\): \(\frac{x}{12}=\frac{5}{6}\).
-
+Tìm \(x\): \(\frac{x}{12}=\frac{5}{8}\).
 ### 03-M1-03
-Hai đại lượng \(x,y\) tỉ lệ thuận và \(y=15\) khi \(x=6\). Tìm hệ số tỉ lệ.
+Cho \(y=4x\). Tính \(y\) khi \(x=7\).
 
-## Mức 2 – Thông hiểu
-
+# Mức 2 – Thông hiểu
 ### 03-M2-01
-Chia 84 thành hai phần tỉ lệ với 3 và 4.
-
+Chia 84 theo tỉ lệ 2:5.
 ### 03-M2-02
-Một ô tô đi 180 km trong 3 giờ với vận tốc không đổi. Hỏi trong 5 giờ đi được bao nhiêu km?
-
+Nếu 6 quyển vở giá 54.000đ, 10 quyển cùng loại giá bao nhiêu?
 ### 03-M2-03
-12 công nhân hoàn thành một công việc trong 15 ngày. Giả sử năng suất như nhau, 20 công nhân cần bao nhiêu ngày?
+4 người làm xong việc trong 15 ngày. Giả sử năng suất như nhau, 6 người cần bao nhiêu ngày?
 
-## Mức 3 – Vận dụng
-
+# Mức 3 – Vận dụng
 ### 03-M3-01
-Một bản đồ có tỉ lệ 1:50000. Hai điểm cách nhau 7,2 cm trên bản đồ. Tính khoảng cách thực tế.
-
+Bản đồ tỉ lệ 1:50.000. Hai điểm cách 7,2 cm trên bản đồ. Khoảng cách thật bao nhiêu km?
 ### 03-M3-02
-Ba lớp trồng cây theo tỉ lệ số học sinh 4:5:6. Tổng số cây là 150. Tính số cây mỗi lớp.
-
+Một công thức dùng bột và đường theo tỉ lệ 5:2. Có 750 g bột thì cần bao nhiêu gam đường?
 ### 03-M3-03
-Một công việc dự kiến 18 người làm trong 20 ngày. Sau 5 ngày có thêm 6 người, năng suất mỗi người không đổi. Tính số ngày còn lại.
+12 máy làm 1 lô hàng trong 8 giờ. Với cùng năng suất, 16 máy cần bao lâu?
 
-## Đáp án nhanh
+# Mức 4 – Tổng hợp
+### 03-M4-01
+Ba lớp quyên góp theo tỉ lệ 3:4:5, tổng 1.440 quyển. Tính số của từng lớp.
+### 03-M4-02
+Một xe đi 180 km với vận tốc 60 km/h. Muốn rút ngắn thời gian 30 phút, vận tốc mới phải là bao nhiêu?
+### 03-M4-03
+Giải thích vì sao “tăng 20% rồi giảm 20%” không đưa đại lượng về giá trị ban đầu.
 
-- 03-M1-01: \(3:4\).
-- 03-M1-02: \(x=10\).
-- 03-M1-03: \(k=\frac{15}{6}=2,5\).
-- 03-M2-01: 36 và 48.
-- 03-M2-02: 300 km.
-- 03-M2-03: 9 ngày.
-- 03-M3-01: 3,6 km.
-- 03-M3-02: 40; 50; 60 cây.
+# Đáp án nhanh
+- M1-01: \(3/4=15/20\); M1-02: \(x=7,5\); M1-03: 28.
+- M2-01: 24 và 60; M2-02: 90.000đ; M2-03: 10 ngày.
+- M3-01: 3,6 km; M3-02: 300 g; M3-03: 6 giờ.
+- M4-01: 360; 480; 600. M4-02: 72 km/h. M4-03: hệ số \(1,2\cdot0,8=0,96\).
 
 [← Học bài](index.md) · [Tự kiểm tra →](tu-kiem-tra.md)
