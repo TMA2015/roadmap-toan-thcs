@@ -205,8 +205,19 @@ $$
 $$
 
 ## 13-M4-04
-Từ \(d\perp a\) và \(c\perp a\), với \(c,d\) phân biệt, suy ra \(d\parallel c\).
-Mặt khác \(a\parallel b\), nên đường \(d\perp a\) cũng vuông góc với \(b\) chỉ khi \(d\) là đường vuông góc với cả hai đường song song. Trong cấu hình đã cho, đúng là \(d\perp b\). Vì vậy kết luận \(d\perp b\) là đúng.
+Từ \(d\perp a\) và \(c\perp a\), với \(c,d\) phân biệt, suy ra:
+
+$$
+d\parallel c.
+$$
+
+Mặt khác, \(a\parallel b\) và \(d\perp a\), nên:
+
+$$
+d\perp b.
+$$
+
+Vậy \(d\parallel c\) và \(d\perp b\).
 
 > **Lưu ý:** bài này buộc học sinh kiểm tra từng kết luận bằng định lý, không dựa vào hình vẽ.
 

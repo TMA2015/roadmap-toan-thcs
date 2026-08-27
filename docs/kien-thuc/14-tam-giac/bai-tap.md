@@ -182,7 +182,7 @@ Cho \(\triangle ABC\) cân tại \(A\). Lấy \(D\in AC\), \(E\in AB\) sao cho \
 | 14-M3-12 | Ba góc đều \(60^\circ\) |
 | 14-M3-13 | \(56^\circ,84^\circ\) |
 | 14-M3-14 | Cạnh còn lại \(8\), tồn tại |
-| 14-M4-01 | Hai tam giác vuông thích hợp bằng nhau \(\Rightarrow BD=CE\) |
+| 14-M4-01 | \(\triangle ABD=\triangle ACE\) theo cạnh huyền – góc nhọn \(\Rightarrow BD=CE\) |
 | 14-M4-02 | \(\triangle AMB=\triangle DMC\), \(\triangle AMC=\triangle DMB\) |
 | 14-M4-03 | \(\triangle ABD=\triangle ACD\) |
 | 14-M4-04 | \(x=3\) |

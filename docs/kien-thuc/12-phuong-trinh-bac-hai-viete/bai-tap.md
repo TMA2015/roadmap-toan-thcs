@@ -219,7 +219,27 @@ $$
 $$
 m^2=8.
 $$
-Do đó \(m=\pm2\sqrt2\). Cần kiểm tra phương trình có nghiệm thực.
+Do đó:
+
+$$
+m=\pm2\sqrt2.
+$$
+
+Kiểm tra điều kiện có nghiệm thực:
+
+$$
+\Delta=(m+1)^2-4(m-2)
+      =m^2-2m+9
+      =(m-1)^2+8>0
+$$
+
+với mọi \(m\).
+
+Vậy:
+
+$$
+\boxed{m=\pm2\sqrt2}.
+$$
 
 ## 12-M4-02
 $$
