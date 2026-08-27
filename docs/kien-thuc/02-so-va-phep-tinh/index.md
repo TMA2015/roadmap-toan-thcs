@@ -14,6 +14,12 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+### Infographic 1 – Tổng quan chuyên đề
+
+![Infographic tổng quan Chuyên đề 02 – Số và phép tính](../../assets/infographics/02/02-01-tong-quan.svg)
+
+> Dùng infographic này để nhìn nhanh **chuyên đề học gì, nằm ở đâu trong Roadmap, kiến thức nào cần nhớ nhất và lỗi nào cần tránh**.
+
 ```text
 SỐ VÀ PHÉP TÍNH
 │
@@ -70,6 +76,12 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 ---
 
 ## 📖 3. Kiến thức cốt lõi
+
+### Infographic 2 – Kiến thức cốt lõi
+
+![Infographic kiến thức cốt lõi Chuyên đề 02 – Số và phép tính](../../assets/infographics/02/02-02-kien-thuc-cot-loi.svg)
+
+> Dùng infographic này để ôn nhanh **loại số, thứ tự phép tính, quy tắc dấu, phân số, ước–bội, ƯCLN–BCNN và phần trăm** trước khi làm bài.
 
 ### 3.1. Các tập hợp số
 
@@ -345,6 +357,12 @@ Không viết `√25 = ±5`; kí hiệu `√25` chỉ giá trị không âm.
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic 3 – Dạng bài trọng tâm
+
+![Infographic dạng bài trọng tâm Chuyên đề 02 – Số và phép tính](../../assets/infographics/02/02-03-dang-bai-trong-tam.svg)
+
+> Dùng infographic này trước khi luyện tập để nhận dạng nhanh **dạng bài → quy tắc cần dùng → lỗi cần kiểm tra**.
 
 ### Dạng 1 – Thực hiện phép tính
 
