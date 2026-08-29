@@ -38,6 +38,10 @@ Mạch tư duy trọng tâm:
 
 **đọc giả thiết → đánh dấu quan hệ → tìm cấu hình quen thuộc → tạo kết quả trung gian → nối các kết quả thành chuỗi chứng minh.**
 
+### Infographic tổng quan
+
+![Infographic tổng quan Chuyên đề 20 – Hình học tổng hợp](../../assets/infographics/20/20-01-tong-quan.svg)
+
 ---
 
 ## Minh họa trực quan
@@ -212,6 +216,10 @@ Quy trình nên dùng:
 5. Tìm các tỉ số hoặc hệ thức trung gian.
 6. Chỉ sau đó mới hướng tới kết luận cuối.
 
+### Infographic – Chọn chiến lược
+
+![Infographic chọn chiến lược giải hình học tổng hợp](../../assets/infographics/20/20-02-chon-chien-luoc.svg)
+
 ### 3.2. Các “cầu nối” thường gặp
 
 **Từ song song đến đồng dạng**
@@ -277,6 +285,10 @@ hãy thử:
 2. tìm hai tam giác đồng dạng tạo ra tỉ lệ đó;
 3. hoặc kiểm tra cấu hình hai dây cắt nhau / tiếp tuyến – cát tuyến.
 
+### Infographic – Chuỗi suy luận
+
+![Infographic các chuỗi suy luận mẫu trong hình học tổng hợp](../../assets/infographics/20/20-03-chuoi-suy-luan.svg)
+
 ### 3.6. Đo lường và hình khối
 
 Một số công thức cần nhớ:
@@ -327,6 +339,10 @@ Khi giải bài thực tế, luôn ghi đơn vị diện tích hoặc thể tíc
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic – Đo lường, trình bày và lỗi sai
+
+![Infographic đo lường, trình bày và lỗi sai Chuyên đề 20](../../assets/infographics/20/20-04-do-luong-trinh-bay-loi-sai.svg)
 
 ### Dạng 1. Chứng minh tứ giác nội tiếp
 
