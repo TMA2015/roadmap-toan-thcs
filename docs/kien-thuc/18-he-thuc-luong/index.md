@@ -34,6 +34,10 @@ Mạch tư duy trọng tâm:
 
 **nhận ra tam giác vuông → chọn hệ thức phù hợp → lập công thức đúng → kiểm tra đơn vị và tính hợp lý.**
 
+### Infographic – Tổng quan chuyên đề
+
+![Tổng quan Chuyên đề 18 – Hệ thức lượng trong tam giác vuông](../../assets/infographics/18/18-01-tong-quan.svg)
+
 ---
 
 ## Minh họa trực quan
@@ -180,6 +184,10 @@ Ngoài ra:
 
 Đây là nhóm công thức cần thuộc và nhận ra nhanh.
 
+### Infographic – Hệ thức đường cao
+
+![Hệ thức đường cao trong tam giác vuông](../../assets/infographics/18/18-02-he-thuc-duong-cao.svg)
+
 ### 3.3. Tỉ số lượng giác của góc nhọn
 
 Với góc nhọn `α`:
@@ -203,6 +211,10 @@ Với góc nhọn `α`:
 và khi `cos α ≠ 0`:
 
 `tan α = sin α / cos α`
+
+### Infographic – Tỉ số lượng giác
+
+![Tỉ số lượng giác trong tam giác vuông](../../assets/infographics/18/18-03-ti-so-luong-giac.svg)
 
 ### 3.5. Góc nâng và góc hạ
 
@@ -241,6 +253,10 @@ Nếu điểm quan sát cao hơn mặt đất, cần cộng hoặc trừ chiều
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic – Bài toán thực tế và lỗi sai
+
+![Bài toán thực tế và lỗi sai Chuyên đề 18](../../assets/infographics/18/18-04-bai-toan-thuc-te-loi-sai.svg)
 
 ### Dạng 1. Tính cạnh bằng Pythagore
 
