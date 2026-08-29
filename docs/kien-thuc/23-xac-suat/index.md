@@ -36,6 +36,8 @@ Mạch tư duy trọng tâm:
 
 **xác định phép thử → liệt kê đúng không gian mẫu → mô tả biến cố → đếm kết quả thuận lợi → tính xác suất → kiểm tra kết quả nằm trong `[0,1]`.**
 
+![Infographic tổng quan Chuyên đề 23](../../assets/infographics/23/23-01-tong-quan.svg)
+
 ---
 
 ## Minh họa trực quan
@@ -252,6 +254,8 @@ Luôn có:
 
 `0 ≤ P(A) ≤ 1`
 
+![Infographic không gian mẫu, biến cố và xác suất cổ điển](../../assets/infographics/23/23-02-khong-gian-mau-bien-co.svg)
+
 ### 3.5. Biến cố đối
 
 Nếu `A` là một biến cố thì biến cố đối của `A` là biến cố “A không xảy ra”.
@@ -311,6 +315,8 @@ Ví dụ, khi tung một đồng xu cân đối hai lần độc lập:
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+![Infographic sơ đồ cây, biến cố đối và lỗi sai](../../assets/infographics/23/23-03-so-do-cay-bien-co-doi-loi-sai.svg)
 
 ### Dạng 1. Lập không gian mẫu
 
@@ -400,7 +406,7 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 ### Mức 4 – Tổng hợp
 
 10. Một phép thử gồm tung đồng xu rồi gieo xúc xắc. Lập không gian mẫu và tính xác suất đồng xu ngửa, xúc xắc ra số chẵn.
-11. Một trò chơi gồm hai bước độc lập. Hãy vẽ sơ đồ cây và tính xác suất đạt đúng một lần thành công.
+11. Một thí nghiệm gồm hai bước độc lập. Hãy vẽ sơ đồ cây và tính xác suất đạt đúng một lần thành công.
 
 ---
 
