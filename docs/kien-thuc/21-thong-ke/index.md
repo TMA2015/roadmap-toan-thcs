@@ -10,6 +10,10 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+### Infographic tổng quan
+
+![Infographic tổng quan Chuyên đề 21 – Thống kê và thu thập dữ liệu](../../assets/infographics/21/21-01-tong-quan.svg)
+
 ```text
 THỐNG KÊ & THU THẬP DỮ LIỆU
 │
@@ -207,6 +211,10 @@ Quy trình:
 3. kiểm tra tổng tần số;
 4. nếu cần, tính tần suất.
 
+### Infographic – Tần số và tần suất
+
+![Infographic tần số và tần suất Chuyên đề 21](../../assets/infographics/21/21-02-tan-so-tan-suat.svg)
+
 ### 3.5. Biểu đồ cột
 
 Phù hợp khi cần:
@@ -263,6 +271,10 @@ Khi đánh giá dữ liệu cần xem xét:
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic – Biểu đồ, chất lượng dữ liệu và lỗi sai
+
+![Infographic biểu đồ, chất lượng dữ liệu và lỗi sai Chuyên đề 21](../../assets/infographics/21/21-03-bieu-do-chat-luong-loi-sai.svg)
 
 ### Dạng 1. Đọc bảng dữ liệu
 
