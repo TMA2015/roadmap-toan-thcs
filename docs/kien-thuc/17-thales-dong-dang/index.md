@@ -33,6 +33,10 @@ Mạch tư duy trọng tâm:
 
 **song song ↔ tỉ lệ → đồng dạng → suy ra góc, độ dài và các hệ thức hình học.**
 
+### Infographic – Tổng quan chuyên đề
+
+![Tổng quan Chuyên đề 17 – Thales và tam giác đồng dạng](../../assets/infographics/17/17-01-tong-quan.svg)
+
 ---
 
 ## Minh họa trực quan
@@ -208,6 +212,10 @@ Một dạng đảo thường dùng:
 
 - nếu một đường thẳng đi qua trung điểm của một cạnh của tam giác, song song với cạnh thứ hai và cắt cạnh còn lại, thì giao điểm đó là trung điểm của cạnh còn lại.
 
+### Infographic – Thales và đường trung bình
+
+![Định lý Thales và đường trung bình trong tam giác](../../assets/infographics/17/17-02-thales-duong-trung-binh.svg)
+
 ### 3.4. Tam giác đồng dạng
 
 Nếu `△ABC ∼ △DEF` thì:
@@ -240,6 +248,10 @@ Hai cặp cạnh tương ứng tỉ lệ và góc xen giữa bằng nhau.
 
 Ba cặp cạnh tương ứng tỉ lệ.
 
+### Infographic – Tam giác đồng dạng
+
+![Ba trường hợp đồng dạng và thứ tự đỉnh tương ứng](../../assets/infographics/17/17-03-tam-giac-dong-dang.svg)
+
 ### 3.6. Quy trình chọn công cụ
 
 | Dấu hiệu | Nên nghĩ tới |
@@ -262,6 +274,10 @@ Ba cặp cạnh tương ứng tỉ lệ.
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic – Dạng bài, hệ thức và lỗi sai
+
+![Dạng bài trọng tâm, hệ thức tích và lỗi sai Chuyên đề 17](../../assets/infographics/17/17-04-dang-bai-he-thuc-loi-sai.svg)
 
 ### Dạng 1. Tính độ dài bằng định lý Thales
 
