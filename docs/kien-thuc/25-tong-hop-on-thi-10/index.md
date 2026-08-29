@@ -42,6 +42,8 @@ Mạch tư duy trọng tâm:
 
 > **Lưu ý:** Cấu trúc đề, thang điểm và mức độ ưu tiên có thể khác theo tỉnh/thành và từng năm. Khi ôn giai đoạn cuối, luôn lấy **đề minh họa hoặc đề chính thức mới nhất của địa phương dự thi** làm căn cứ ưu tiên cuối cùng.
 
+![Infographic tổng quan Chuyên đề 25 – Bản đồ tổng hợp và chiến lược ôn thi vào 10](../../assets/infographics/25/25-01-tong-quan.svg)
+
 ---
 
 ## Minh họa trực quan
@@ -324,6 +326,8 @@ Có thể phân loại:
 
 Ma trận trên chỉ là khung. Cần điều chỉnh theo cấu trúc đề chính thức của địa phương.
 
+![Infographic ba giai đoạn ôn thi và ma trận ưu tiên A B C D – Chuyên đề 25](../../assets/infographics/25/25-02-giai-doan-ma-tran-uu-tien.svg)
+
 ### 3.4. Quy trình luyện một đề
 
 1. Làm đề đúng thời gian quy định.
@@ -356,6 +360,8 @@ Ba nhóm quan trọng:
 - quên đơn vị.
 
 Mỗi loại lỗi cần một cách sửa khác nhau.
+
+![Infographic chu trình luyện đề và sổ lỗi sai – Chuyên đề 25](../../assets/infographics/25/25-03-luyen-de-so-loi.svg)
 
 ### 3.6. Chiến lược làm bài
 
@@ -390,6 +396,8 @@ Sau mỗi tuần có thể theo dõi:
 | Thời gian hoàn thành | So với thời gian quy định |
 
 Mục tiêu không chỉ là tăng điểm mà còn là **giảm lỗi lặp lại**.
+
+![Infographic chiến lược phòng thi và theo dõi tiến bộ – Chuyên đề 25](../../assets/infographics/25/25-04-phong-thi-theo-doi-tien-bo.svg)
 
 ---
 
