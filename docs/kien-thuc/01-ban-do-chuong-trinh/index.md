@@ -68,6 +68,10 @@ Tổng hợp ôn thi vào 10
 
 > Chuyên đề 01 là **bản đồ định hướng**. Khi chưa rõ nên học gì tiếp theo, hãy quay lại đây để xác định vị trí hiện tại trong toàn bộ hệ thống.
 
+### Infographic – Tổng quan Roadmap Toán THCS
+
+![Infographic tổng quan Chuyên đề 01 – Bản đồ chương trình Toán THCS](../../assets/infographics/01/01-overview.svg)
+
 ---
 
 ## 🎯 2. Mục tiêu cần đạt
