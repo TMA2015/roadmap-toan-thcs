@@ -38,6 +38,10 @@ Mạch tư duy trọng tâm:
 
 **nhận dạng cấu hình đường tròn → xác định cung/góc/tiếp tuyến → chọn định lý phù hợp → suy ra góc, độ dài hoặc chứng minh hình học.**
 
+### Infographic – Tổng quan chuyên đề
+
+![Infographic tổng quan Chuyên đề 19 – Đường tròn](../../assets/infographics/19/19-01-tong-quan.svg)
+
 ---
 
 ## Minh họa trực quan
@@ -194,6 +198,10 @@ Nếu từ điểm `P` ngoài đường tròn kẻ hai tiếp tuyến `PA`, `PB`
 
 Ngoài ra, `OP` là đường trung trực của `AB` và là phân giác của `∠APB`. Đây là các tính chất rất hữu ích khi khai thác cấu hình hai tiếp tuyến.
 
+### Infographic – Tiếp tuyến
+
+![Infographic tiếp tuyến Chuyên đề 19](../../assets/infographics/19/19-03-tiep-tuyen.svg)
+
 ### 3.4. Tứ giác nội tiếp
 
 Một tứ giác nội tiếp là tứ giác có bốn đỉnh cùng thuộc một đường tròn.
@@ -209,6 +217,10 @@ Một số dấu hiệu thường dùng để chứng minh tứ giác nội ti�
 - tổng hai góc đối bằng `180°`;
 - nếu hai điểm `C`, `D` nằm cùng phía đối với đường thẳng `AB` và `∠ACB = ∠ADB`, thì bốn điểm `A, B, C, D` cùng thuộc một đường tròn;
 - nếu `∠AMB = ∠ANB = 90°` thì `A, M, B, N` cùng thuộc đường tròn có đường kính `AB`.
+
+### Infographic – Góc, cung và tứ giác nội tiếp
+
+![Infographic góc, cung và tứ giác nội tiếp Chuyên đề 19](../../assets/infographics/19/19-02-goc-cung-noi-tiep.svg)
 
 ### 3.5. Hai dây cắt nhau
 
@@ -245,6 +257,10 @@ Từ điểm `P` ngoài đường tròn, tiếp tuyến `PT` và cát tuyến `P
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic – Hệ thức độ dài và lỗi sai
+
+![Infographic hệ thức độ dài và lỗi sai Chuyên đề 19](../../assets/infographics/19/19-04-he-thuc-do-dai-loi-sai.svg)
 
 ### Dạng 1. Tính góc trong đường tròn
 
