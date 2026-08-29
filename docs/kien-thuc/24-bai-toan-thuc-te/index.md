@@ -40,6 +40,8 @@ Mạch tư duy trọng tâm:
 
 **tình huống thực tế → mô hình toán học → lời giải → kiểm tra → kết luận thực tế.**
 
+![Infographic tổng quan Chuyên đề 24](../../assets/infographics/24/24-01-tong-quan.svg)
+
 ---
 
 ## Minh họa trực quan
@@ -327,6 +329,8 @@ Nếu giảm `p%`:
 
 Cần đặc biệt chú ý **giá trị gốc** mà phần trăm được tính trên đó.
 
+![Infographic chuyển động, năng suất và phần trăm](../../assets/infographics/24/24-02-chuyen-dong-nang-suat-phan-tram.svg)
+
 ### 3.7. Bài toán lập phương trình / hệ
 
 Dùng phương trình khi có thể chọn một ẩn chính và thiết lập được một quan hệ đủ để xác định ẩn đó.
@@ -385,6 +389,8 @@ Sau khi có đáp số, cần kiểm tra:
 | bảng / biểu đồ / số liệu | thống kê |
 | khả năng xảy ra | xác suất |
 
+![Infographic chọn mô hình toán học](../../assets/infographics/24/24-03-chon-mo-hinh.svg)
+
 ---
 
 ## 🔗 4. Kiến thức liên quan
@@ -396,6 +402,8 @@ Sau khi có đáp số, cần kiểm tra:
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+![Infographic kiểm tra, trình bày và lỗi sai](../../assets/infographics/24/24-04-kiem-tra-trinh-bay-loi-sai.svg)
 
 ### Dạng 1. Chuyển động
 
