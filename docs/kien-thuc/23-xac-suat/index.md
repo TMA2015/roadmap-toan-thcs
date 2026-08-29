@@ -406,7 +406,7 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 ### Mức 4 – Tổng hợp
 
 10. Một phép thử gồm tung đồng xu rồi gieo xúc xắc. Lập không gian mẫu và tính xác suất đồng xu ngửa, xúc xắc ra số chẵn.
-11. Một thí nghiệm gồm hai bước độc lập. Hãy vẽ sơ đồ cây và tính xác suất đạt đúng một lần thành công.
+11. Một trò chơi gồm hai bước độc lập. Hãy vẽ sơ đồ cây và tính xác suất đạt đúng một lần thành công.
 
 ---
 
