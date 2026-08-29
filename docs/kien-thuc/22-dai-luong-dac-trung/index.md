@@ -10,6 +10,8 @@
 
 ## 🧭 1. Bản đồ kiến thức
 
+![Infographic tổng quan Chuyên đề 22 – Các đại lượng đặc trưng của dữ liệu](../../assets/infographics/22/22-01-tong-quan.svg)
+
 ```text
 ĐẠI LƯỢNG ĐẶC TRƯNG CỦA DỮ LIỆU
 │
@@ -229,6 +231,8 @@ Một bộ dữ liệu:
 - có thể có nhiều mốt nếu nhiều giá trị cùng có tần số lớn nhất;
 - khi mọi giá trị có cùng tần số, mốt không tạo ra một giá trị nổi bật để đại diện cho mức phổ biến.
 
+![Infographic trung bình, trung vị và mốt](../../assets/infographics/22/22-02-trung-binh-trung-vi-mot.svg)
+
 ### 3.5. Khoảng biến thiên
 
 Một cách đơn giản để mô tả độ phân tán của dữ liệu là:
@@ -279,6 +283,8 @@ Không nên chỉ tính toán; cần giải thích vì sao đại lượng đó 
 ---
 
 ## 🧩 5. Các dạng bài cần nắm vững
+
+![Infographic phân tán, ngoại lai, chọn đại lượng và lỗi sai](../../assets/infographics/22/22-03-phan-tan-ngoai-lai-loi-sai.svg)
 
 ### Dạng 1. Tính số trung bình của dữ liệu thô
 
