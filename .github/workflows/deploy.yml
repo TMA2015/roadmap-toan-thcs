@@ -27,6 +27,9 @@ jobs:
       - name: Run Roadmap dependency and link QA
         run: python check_roadmap_dependencies.py
 
+      - name: Check SVG integrity
+        run: python check_svg_integrity.py
+
       - name: Audit practice quality
         run: python audit_practice_quality.py
 
