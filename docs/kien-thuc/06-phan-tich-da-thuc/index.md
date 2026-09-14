@@ -74,7 +74,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 - [ ] Hiểu đúng ý nghĩa của việc phân tích đa thức thành nhân tử.
 - [ ] Nhận ra và đặt được nhân tử chung lớn nhất hợp lý.
 - [ ] Nhận dạng được các hằng đẳng thức thường dùng khi phân tích.
-- [ ] Biết nhóm hạng tử để tạo nhân tử chung hoặc hằng đẳng thức.
+- [ ] Biết nhóm hạng tử để tạo nhân tử chung hoặc hằng đẳng thức; ở mức vận dụng, biết tách một hạng tử phù hợp để tạo nhóm.
 - [ ] Phối hợp nhiều phương pháp trong một bài.
 - [ ] Kiểm tra được kết quả bằng cách nhân trở lại.
 - [ ] Dùng dạng tích để rút gọn, tính nhanh và giải phương trình đơn giản.
@@ -245,7 +245,45 @@ Ví dụ:
 
 ---
 
-### 3.6. Phương pháp 4 – Phối hợp nhiều phương pháp
+### 3.6. Mở rộng – Tách hạng tử để tạo nhóm
+
+Đây là kỹ thuật **vận dụng**, hữu ích với một số tam thức bậc hai chưa xuất hiện nhân tử chung hay hằng đẳng thức ngay lập tức.
+
+Với biểu thức dạng:
+
+```text
+x^2 + bx + c
+```
+
+nếu tìm được hai số `p`, `q` sao cho:
+
+```text
+p + q = b
+pq = c
+```
+
+thì có thể tách:
+
+```text
+bx = px + qx
+```
+
+rồi nhóm hạng tử.
+
+Ví dụ:
+
+```text
+x^2 - 5x + 6
+= x^2 - 2x - 3x + 6
+= x(x - 2) - 3(x - 2)
+= (x - 2)(x - 3)
+```
+
+vì `-2 + (-3) = -5` và `(-2)(-3) = 6`.
+
+> Không nên thử cặp số một cách máy móc trong mọi bài. Kỹ thuật này chỉ nên dùng khi cặp `p, q` dễ nhận ra; sau khi phân tích phải nhân trở lại để kiểm tra.
+
+### 3.7. Phương pháp 4 – Phối hợp nhiều phương pháp
 
 Nhiều bài không thể giải chỉ bằng một bước.
 

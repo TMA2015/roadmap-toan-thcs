@@ -179,6 +179,27 @@ Ví dụ:
 
 ---
 
+#### Chia đơn thức và đa thức trong trường hợp chia hết
+
+Với đơn thức, phép chia thực hiện được trong phạm vi đa thức khi phần biến của số bị chia chứa đủ các lũy thừa của phần biến ở số chia.
+
+Ví dụ:
+
+```text
+12x^5y^3 : 3x^2y = 4x^3y^2
+```
+
+Với đa thức chia cho đơn thức, nếu **mỗi hạng tử** đều chia hết cho đơn thức đó thì chia từng hạng tử rồi cộng các thương:
+
+```text
+(6x^3 - 9x^2 + 3x) : 3x
+= 2x^2 - 3x + 1
+```
+
+Ở đây `3x` được hiểu là một đơn thức khác đa thức `0`. Nếu biểu thức được viết dưới dạng phân thức và thay một giá trị cụ thể cho `x`, vẫn phải giữ điều kiện mẫu khác `0`.
+
+> Không được “chia/rút gọn” xuyên qua dấu cộng hoặc trừ. Chẳng hạn `(x + 2)/x` không thể rút `x` với riêng hạng tử `x` ở tử. Đây là cầu nối quan trọng sang Chuyên đề 07.
+
 ### 3.4. Điều kiện xác định và giá trị biểu thức
 
 Ở mức kết nối sang Chuyên đề 07, khi biểu thức có mẫu chứa biến, cần tìm điều kiện để mẫu khác 0 **trước khi biến đổi**.

@@ -71,7 +71,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 - [ ] Rút gọn, quy đồng và so sánh phân số chính xác.
 - [ ] Chuyển đổi linh hoạt giữa phân số, số thập phân và phần trăm.
 - [ ] Hiểu ý nghĩa của giá trị tuyệt đối trên trục số.
-- [ ] Biết ước lượng và kiểm tra tính hợp lí của kết quả.
+- [ ] Biết làm tròn, ước lượng và kiểm tra tính hợp lí của kết quả.
 
 ---
 
@@ -299,6 +299,37 @@ Ví dụ:
 0,25 = 1/4
 0,333... = 1/3
 ```
+
+#### Số vô tỉ và số thực
+
+Ngoài số hữu tỉ còn có **số vô tỉ**: các số không viết được dưới dạng `a/b` với `a, b ∈ Z`, `b ≠ 0`.
+
+Ví dụ:
+
+```text
+√2, √3, π
+```
+
+Dạng thập phân của một số vô tỉ là **vô hạn không tuần hoàn**. Tập hợp số thực `R` gồm toàn bộ số hữu tỉ và số vô tỉ.
+
+Trên trục số, mỗi số thực tương ứng với một điểm; vì vậy có thể dùng vị trí trên trục số để so sánh và ước lượng các số thực.
+
+> Không được kết luận một số là vô tỉ chỉ vì phần thập phân viết ra rất dài; cần dựa vào bản chất hoặc dữ kiện đã biết của số đó.
+
+#### Làm tròn và giá trị gần đúng
+
+Trong đo lường và bài toán thực tế, kết quả thường cần làm tròn đến một hàng xác định.
+
+Ví dụ:
+
+```text
+3,146 ≈ 3,15  (làm tròn đến hàng phần trăm)
+7,84  ≈ 7,8   (làm tròn đến hàng phần mười)
+```
+
+Quy tắc cơ bản: nhìn chữ số ngay bên phải hàng cần làm tròn; nếu chữ số đó từ `5` trở lên thì tăng chữ số ở hàng làm tròn thêm `1`, nếu nhỏ hơn `5` thì giữ nguyên.
+
+Khi dùng số gần đúng, cần phân biệt **giá trị chính xác** với **giá trị đã làm tròn**, và không nên làm tròn quá sớm trong một phép tính nhiều bước vì sai số có thể tích lũy.
 
 ### 3.11. Phần trăm
 

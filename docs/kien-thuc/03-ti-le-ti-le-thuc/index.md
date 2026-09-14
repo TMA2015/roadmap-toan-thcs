@@ -173,6 +173,20 @@ Và khi `a + b + c ≠ 0`:
 x/a = y/b = z/c = (x+y+z)/(a+b+c)
 ```
 
+Ngoài công thức cộng, có thể dùng dạng hiệu khi mẫu mới khác `0`. Chẳng hạn nếu
+
+```text
+x/a = y/b = k
+```
+
+thì, với `a - b ≠ 0`:
+
+```text
+(x - y)/(a - b) = k
+```
+
+Điểm quan trọng là các phép cộng/trừ ở tử và mẫu phải được thực hiện **tương ứng** và mẫu mới không được bằng `0`.
+
 Ví dụ: chia 120 thành ba phần tỉ lệ `2:3:5`.
 
 Đặt:
@@ -216,17 +230,19 @@ Khối lượng tăng gấp đôi thì số tiền cũng tăng gấp đôi.
 
 ### 3.6. Tính chất tỉ lệ thuận
 
-Nếu `y = kx`, thì với các cặp giá trị tương ứng:
+Nếu `y = kx`, thì với các cặp giá trị tương ứng có `x1 ≠ 0`, `x2 ≠ 0`:
 
 ```text
 y1/x1 = y2/x2 = k
 ```
 
-và:
+và khi các tỉ số có nghĩa:
 
 ```text
 y1/y2 = x1/x2
 ```
+
+Trường hợp `x = 0` vẫn thuộc quan hệ `y = kx` và khi đó `y = 0`; chỉ là không được viết tỉ số `y/x` vì mẫu bằng `0`.
 
 Ví dụ:
 
@@ -258,6 +274,8 @@ y = a/x
 ```
 
 Khi `x` tăng gấp `m` lần thì `y` giảm `m` lần.
+
+> **Kiểm tra mô hình:** không phải cứ một đại lượng tăng còn đại lượng kia giảm thì chúng tỉ lệ nghịch. Muốn kết luận tỉ lệ nghịch, tích `xy` phải giữ nguyên bằng một hằng số khác `0` trên các cặp giá trị đang xét.
 
 Ví dụ: cùng một quãng đường, vận tốc và thời gian tỉ lệ nghịch:
 
