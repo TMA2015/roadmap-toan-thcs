@@ -9,6 +9,10 @@
     "10-ham-so-do-thi": "10-ham-so-do-thi-v1.manifest.json",
     "11-can-thuc": "11-can-thuc-v1.manifest.json",
     "12-phuong-trinh-bac-hai-viete": "12-phuong-trinh-bac-hai-viete-v1.manifest.json",
+    "13-goc-va-duong-thang": "13-goc-va-duong-thang-v1.manifest.json",
+    "14-tam-giac": "14-tam-giac-v1.manifest.json",
+    "15-duong-dong-quy": "15-duong-dong-quy-v1.manifest.json",
+    "16-tu-giac": "16-tu-giac-v1.manifest.json",
   };
 
   const ensureStyles = (siteRoot) => {
