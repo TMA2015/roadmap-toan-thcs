@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "EQ08-V1",
+  "topic": {
+    "id": "08-phuong-trinh-bat-phuong-trinh",
+    "title": "Phương trình và bất phương trình"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "nghiem-phuong-trinh": "Khái niệm nghiệm phương trình",
+    "pt-bac-nhat": "Phương trình bậc nhất",
+    "bien-doi-pt-nhieu-buoc": "Biến đổi phương trình nhiều bước",
+    "pt-tich": "Phương trình tích",
+    "dkxd-phuong-trinh-mau": "Điều kiện xác định phương trình chứa mẫu",
+    "khu-mau-phuong-trinh": "Khử mẫu và giải phương trình",
+    "doi-chieu-nghiem": "Đối chiếu nghiệm với điều kiện",
+    "bpt-bac-nhat": "Bất phương trình bậc nhất",
+    "doi-chieu-bpt": "Đổi chiều bất phương trình",
+    "bieu-dien-tap-nghiem": "Biểu diễn tập nghiệm",
+    "giao-tap-nghiem": "Giao các tập nghiệm",
+    "lap-phuong-trinh": "Lập phương trình từ bài toán",
+    "lap-bat-phuong-trinh": "Lập bất phương trình từ bài toán",
+    "tham-so-co-ban": "Biện luận tham số cơ bản"
+  },
+  "skill_groups": [
+    {
+      "id": "A",
+      "label": "A. Phương trình cơ bản và phương trình tích",
+      "skills": [
+        "nghiem-phuong-trinh",
+        "pt-bac-nhat",
+        "bien-doi-pt-nhieu-buoc",
+        "pt-tich"
+      ]
+    },
+    {
+      "id": "B",
+      "label": "B. Phương trình chứa ẩn ở mẫu",
+      "skills": [
+        "dkxd-phuong-trinh-mau",
+        "khu-mau-phuong-trinh",
+        "doi-chieu-nghiem"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "C. Bất phương trình và tập nghiệm",
+      "skills": [
+        "bpt-bac-nhat",
+        "doi-chieu-bpt",
+        "bieu-dien-tap-nghiem",
+        "giao-tap-nghiem"
+      ]
+    },
+    {
+      "id": "D",
+      "label": "D. Mô hình hóa và tham số",
+      "skills": [
+        "lap-phuong-trinh",
+        "lap-bat-phuong-trinh",
+        "tham-so-co-ban"
+      ]
+    }
+  ],
+  "sources": [
+    "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+    "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+    "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+    "08-phuong-trinh-bat-phuong-trinh-v1-04.json"
+  ]
+}
