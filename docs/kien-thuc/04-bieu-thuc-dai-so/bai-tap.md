@@ -1,5 +1,8 @@
 # Bài tập – Chuyên đề 04: Biểu thức đại số
 
+<link rel="stylesheet" href="../../../assets/stylesheets/practice-engine.css">
+<script src="../../../assets/javascripts/practice-engine.js" defer></script>
+
 > **Mục tiêu:** rút gọn, thay giá trị, biến đổi và nhận dạng cấu trúc biểu thức.
 > **Quy ước:** `04-Mx-yy`.
 
