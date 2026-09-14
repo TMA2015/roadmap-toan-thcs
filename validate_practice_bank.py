@@ -229,6 +229,28 @@ def validate_manifest(manifest_path: Path) -> tuple[int, set[str]]:
 
     question_ids = {str(qid) for qid in ids if qid}
 
+    content_signatures: list[tuple[str, tuple[str, ...], str]] = []
+    for question, _ in questions:
+        prompt = str(question.get("question", "")).strip()
+        options = question.get("options")
+        if prompt and isinstance(options, list) and len(options) == 4:
+            content_signatures.append(
+                (prompt, tuple(map(str, options)), str(question.get("id", "(missing)")))
+            )
+
+    signature_counts = Counter((prompt, options) for prompt, options, _ in content_signatures)
+    for (prompt, options), count in signature_counts.items():
+        if count <= 1:
+            continue
+        duplicate_qids = [
+            qid
+            for item_prompt, item_options, qid in content_signatures
+            if item_prompt == prompt and item_options == options
+        ]
+        errors.append(
+            "Câu hỏi trùng nội dung và phương án: " + ", ".join(duplicate_qids)
+        )
+
     expected_count = manifest.get("question_count")
     if expected_count != len(questions):
         errors.append(f"question_count={expected_count}, nhưng thực tế tải được {len(questions)} câu")
