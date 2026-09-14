@@ -20,7 +20,7 @@ Bảng **Tiến độ theo kỹ năng** được sắp cố định theo lộ tr
 
 ## Bài tập tự luận bổ sung
 
-Các bài dưới đây vẫn được giữ lại để học sinh luyện cách trình bày lời giải đầy đủ sau phần trắc nghiệm tương tác.
+Các bài dưới đây được **chọn lọc** để học sinh luyện cách trình bày và suy luận sau phần trắc nghiệm tương tác. Không cần làm lặp nhiều bài cùng dạng nếu đã đạt tốt trong Practice Bank.
 
 # Mức 1 – Nhận biết
 ### 02-M1-01
@@ -60,4 +60,70 @@ Tìm số tự nhiên nhỏ nhất có đúng ba thừa số nguyên tố khác 
 - 02-M3-01: 12 nhóm; 02-M3-02: \(9/20\); 02-M3-03: \(43/4\).
 - 02-M4-01: 113; 02-M4-02: 23,5%; 02-M4-03: 30.
 
-[← Học bài](index.md) · [Tự kiểm tra →](tu-kiem-tra.md)
+---
+
+# Hướng dẫn chọn lọc
+
+## 02-M3-01 – Chia thành nhiều nhóm nhất
+
+Số nhóm phải là ước chung của cả 36 và 48. Vì cần **nhiều nhóm nhất**, ta tìm:
+
+\[
+\operatorname{ƯCLN}(36,48)=12.
+\]
+
+Vậy chia được **12 nhóm**; mỗi nhóm có 3 nam và 4 nữ.
+
+**Điểm cần nhớ:** gặp cụm “chia thành nhiều nhóm nhất, mỗi nhóm như nhau” thường nghĩ tới **ƯCLN**.
+
+## 02-M4-01 – Hai phép chia cùng số dư
+
+Nếu số cần tìm là \(n\), thì \(n-5\) chia hết cho cả 12 và 18. Do đó \(n-5\) là bội của:
+
+\[
+\operatorname{BCNN}(12,18)=36.
+\]
+
+Ta cần \(n>100\), tức \(36k+5>100\). Giá trị nhỏ nhất phù hợp là \(k=3\), nên:
+
+\[
+n=36\cdot3+5=113.
+\]
+
+**Điểm cần nhớ:** khi nhiều phép chia có **cùng số dư**, hãy trừ số dư trước rồi xét BCNN.
+
+## 02-M4-02 – Giảm giá liên tiếp
+
+Sau khi giảm 15%, giá còn \(85\%=0,85\) giá ban đầu. Giảm tiếp 10% trên giá mới thì còn:
+
+\[
+0,85\cdot0,90=0,765.
+\]
+
+Giá cuối bằng 76,5% giá đầu, nên tổng mức giảm là:
+
+\[
+100\%-76,5\%=23,5\%.
+\]
+
+**Điểm cần nhớ:** phần trăm thay đổi liên tiếp phải **nhân các hệ số**, không cộng/trừ trực tiếp các tỉ lệ.
+
+---
+
+# Theo dõi tiến độ
+
+- [ ] Mức 1: tôi thực hiện đúng phép tính và quy tắc cơ bản.
+- [ ] Mức 2: tôi biết chọn ƯCLN/BCNN và so sánh số đúng cách.
+- [ ] Mức 3: tôi chuyển được bài toán thực tế về phép tính phù hợp.
+- [ ] Mức 4: tôi giải thích được vì sao chọn phương pháp, không chỉ ghi kết quả.
+- [ ] Tôi đã làm lại các bài sai mà không nhìn đáp án.
+- [ ] Tôi biết lỗi của mình thuộc nhóm: phép tính / dấu / phân số / ước–bội / phần trăm.
+
+---
+
+# Liên kết Roadmap
+
+- **← Học kiến thức:** [Chuyên đề 02 – Số và phép tính](index.md)
+- **← Chuyên đề trước:** [01 – Bản đồ chương trình Toán THCS](../01-ban-do-chuong-trinh/index.md)
+- **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 02](tu-kiem-tra.md)
+- **→ Chuyên đề tiếp theo:** [03 – Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ](../03-ti-le-ti-le-thuc/index.md)
