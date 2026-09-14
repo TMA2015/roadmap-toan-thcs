@@ -56,6 +56,14 @@
       if (!Number.isInteger(question.answer) || question.answer < 0 || question.answer >= question.options.length) {
         throw new Error(`Câu ${question.id} có answer không hợp lệ`);
       }
+      if (question.diagram !== undefined) {
+        if (!question.diagram || typeof question.diagram !== "object" || Array.isArray(question.diagram)) {
+          throw new Error(`Câu ${question.id} có diagram không hợp lệ`);
+        }
+        if (!String(question.diagram.src || "").trim() || !String(question.diagram.alt || "").trim()) {
+          throw new Error(`Câu ${question.id} có diagram nhưng thiếu src/alt`);
+        }
+      }
     }
   };
 
@@ -65,12 +73,23 @@
     return response.json();
   };
 
+  const normalizeQuestion = (question, baseUrl) => {
+    if (!question?.diagram?.src) return question;
+    return {
+      ...question,
+      diagram: {
+        ...question.diagram,
+        resolvedSrc: new URL(question.diagram.src, baseUrl).href
+      }
+    };
+  };
+
   const loadBank = async (source) => {
     const manifestUrl = new URL(source, document.baseURI);
     const data = await fetchJson(manifestUrl);
 
     if (data.schema !== "practice-bank-manifest-v1") {
-      const questions = data.questions || [];
+      const questions = (data.questions || []).map((question) => normalizeQuestion(question, manifestUrl));
       validateQuestions(questions);
       return { ...data, questions };
     }
@@ -82,7 +101,9 @@
     const chunks = await Promise.all(
       data.sources.map((relativePath) => fetchJson(new URL(relativePath, manifestUrl)))
     );
-    const questions = chunks.flatMap((chunk) => chunk.questions || []);
+    const questions = chunks
+      .flatMap((chunk) => chunk.questions || [])
+      .map((question) => normalizeQuestion(question, manifestUrl));
     validateQuestions(questions);
 
     if (data.question_count && questions.length !== data.question_count) {
@@ -230,6 +251,7 @@
         <div class="practice-card">
           <div class="practice-meta"></div>
           <div class="practice-question"></div>
+          <div class="practice-diagram" hidden></div>
           <div class="practice-options"></div>
           <div class="practice-feedback" hidden></div>
           <div class="practice-actions"></div>
@@ -247,6 +269,7 @@
       this.cardEl = this.root.querySelector(".practice-card");
       this.metaEl = this.root.querySelector(".practice-meta");
       this.questionEl = this.root.querySelector(".practice-question");
+      this.diagramEl = this.root.querySelector(".practice-diagram");
       this.optionsEl = this.root.querySelector(".practice-options");
       this.feedbackEl = this.root.querySelector(".practice-feedback");
       this.actionsEl = this.root.querySelector(".practice-actions");
@@ -326,6 +349,34 @@
       return this.session[this.index];
     }
 
+    renderDiagram(question) {
+      this.diagramEl.hidden = true;
+      this.diagramEl.innerHTML = "";
+      const diagram = question?.diagram;
+      if (!diagram?.resolvedSrc) return;
+
+      const figure = document.createElement("figure");
+      figure.className = "practice-diagram-figure";
+      const img = document.createElement("img");
+      img.src = diagram.resolvedSrc;
+      img.alt = diagram.alt || "Hình minh họa cho câu hỏi";
+      img.loading = "lazy";
+      img.decoding = "async";
+      img.addEventListener("error", () => {
+        this.diagramEl.hidden = true;
+      });
+      figure.appendChild(img);
+
+      if (String(diagram.caption || "").trim()) {
+        const caption = document.createElement("figcaption");
+        caption.textContent = diagram.caption;
+        figure.appendChild(caption);
+      }
+
+      this.diagramEl.appendChild(figure);
+      this.diagramEl.hidden = false;
+    }
+
     renderQuestion() {
       if (!this.session.length) {
         this.cardEl.innerHTML = "<p>Chưa có câu hỏi phù hợp trong ngân hàng.</p>";
@@ -341,6 +392,7 @@
       this.progressEl.textContent = `Câu ${this.index + 1}/${this.session.length} · Đúng ${this.score}`;
       this.metaEl.textContent = `${this.difficultyLabel(question.difficulty)} · ${this.skillLabel(question)}`;
       this.questionEl.textContent = question.question;
+      this.renderDiagram(question);
       this.optionsEl.innerHTML = "";
       this.feedbackEl.hidden = true;
       this.feedbackEl.className = "practice-feedback";
@@ -489,6 +541,8 @@
       else if (this.mode === "skill") this.metaEl.textContent = `Kết quả luyện riêng · ${this.prettyTag(this.focusSkills[0])}`;
       else this.metaEl.textContent = "Kết quả lượt luyện tập";
       this.questionEl.textContent = `Bạn đạt ${percent}%.`;
+      this.diagramEl.hidden = true;
+      this.diagramEl.innerHTML = "";
       this.optionsEl.innerHTML = "";
       this.feedbackEl.hidden = false;
       this.feedbackEl.className = `practice-feedback ${percent >= 80 ? "is-correct" : "is-wrong"}`;
