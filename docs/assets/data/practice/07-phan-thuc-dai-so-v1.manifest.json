@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "RAT07-V1",
+  "topic": {"id": "07-phan-thuc-dai-so", "title": "Phân thức đại số"},
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "nhan-biet-phan-thuc": "Nhận biết phân thức",
+    "dieu-kien-xac-dinh": "Điều kiện xác định",
+    "hai-phan-thuc-bang-nhau": "Hai phân thức bằng nhau",
+    "doi-dau-phan-thuc": "Đổi dấu phân thức",
+    "phan-tich-tu-mau": "Phân tích tử và mẫu",
+    "rut-gon-phan-thuc": "Rút gọn phân thức",
+    "giu-dieu-kien-ban-dau": "Giữ điều kiện xác định ban đầu",
+    "quy-dong-mau-thuc": "Quy đồng mẫu thức",
+    "cong-tru-phan-thuc": "Cộng – trừ phân thức",
+    "nhan-phan-thuc": "Nhân phân thức",
+    "chia-phan-thuc": "Chia phân thức",
+    "bieu-thuc-nhieu-phep-tinh": "Biểu thức hữu tỉ nhiều phép tính",
+    "tinh-gia-tri-phan-thuc": "Tính giá trị phân thức",
+    "tim-gia-tri-nguyen": "Tìm giá trị nguyên"
+  },
+  "skill_groups": [
+    {"id": "A", "label": "A. Khái niệm và điều kiện xác định", "skills": ["nhan-biet-phan-thuc", "dieu-kien-xac-dinh", "hai-phan-thuc-bang-nhau", "doi-dau-phan-thuc"]},
+    {"id": "B", "label": "B. Rút gọn phân thức", "skills": ["phan-tich-tu-mau", "rut-gon-phan-thuc", "giu-dieu-kien-ban-dau"]},
+    {"id": "C", "label": "C. Quy đồng và phép tính", "skills": ["quy-dong-mau-thuc", "cong-tru-phan-thuc", "nhan-phan-thuc", "chia-phan-thuc"]},
+    {"id": "D", "label": "D. Biểu thức hữu tỉ và vận dụng", "skills": ["bieu-thuc-nhieu-phep-tinh", "tinh-gia-tri-phan-thuc", "tim-gia-tri-nguyen"]}
+  ],
+  "sources": ["07-phan-thuc-dai-so-v1-all.json"]
+}
