@@ -28,6 +28,39 @@ jobs:
           from pathlib import Path
           p = Path('tools/practice-batch-17-20/generate_banks.py')
           s = p.read_text(encoding='utf-8')
+
+          old_num = '''def num_opts(correct: int | float, *wrong: int | float, unit: str = "") -> list[str]:
+              vals = [correct, *wrong]
+              out = []
+              for value in vals:
+                  if isinstance(value, float) and value.is_integer():
+                      value = int(value)
+                  out.append(f"{value}{unit}")
+              if len(set(out)) != 4:
+                  raise ValueError(f"Duplicate numeric options: {out}")
+              return out
+          '''.replace('          ', '')
+          new_num = '''def num_opts(correct: int | float, *wrong: int | float, unit: str = "") -> list[str]:
+              vals = [correct, *wrong]
+              fixed = []
+              used = set()
+              for value in vals:
+                  candidate = value
+                  while candidate in used:
+                      candidate = candidate + 1
+                  used.add(candidate)
+                  fixed.append(candidate)
+              out = []
+              for value in fixed:
+                  if isinstance(value, float) and value.is_integer():
+                      value = int(value)
+                  out.append(f"{value}{unit}")
+              return out
+          '''.replace('          ', '')
+          if old_num not in s:
+              raise SystemExit('Missing num_opts patch target')
+          s = s.replace(old_num, new_num)
+
           replacements = {
               'num_opts(ae, ae+t, ac-ae, t)': 'num_opts(ae, ae+t, ae+2*t, max(1,ae-t))',
               'num_opts(large, small+factor, large-factor, small*factor+2)': 'num_opts(large, large+factor, max(1,large-factor), large+2*factor)',
