@@ -175,10 +175,11 @@
       this.feedbackEl.innerHTML = "";
       this.actionsEl.innerHTML = "";
 
-      q.options.forEach((option, optionIndex) => {
-        const button = createButton(option, "practice-option");
-        button.dataset.index = String(optionIndex);
-        button.addEventListener("click", () => this.answer(optionIndex));
+      const displayOptions = shuffle(q.options.map((text, originalIndex) => ({ text, originalIndex })));
+      displayOptions.forEach(({ text, originalIndex }) => {
+        const button = createButton(text, "practice-option");
+        button.dataset.originalIndex = String(originalIndex);
+        button.addEventListener("click", () => this.answer(originalIndex));
         this.optionsEl.appendChild(button);
       });
       typeset(this.cardEl);
@@ -193,10 +194,11 @@
 
       this.record(q, correct);
       const optionButtons = [...this.optionsEl.querySelectorAll(".practice-option")];
-      optionButtons.forEach((button, index) => {
+      optionButtons.forEach((button) => {
+        const originalIndex = Number(button.dataset.originalIndex);
         button.disabled = true;
-        if (index === q.answer) button.classList.add("is-correct");
-        if (index === selectedIndex && !correct) button.classList.add("is-wrong");
+        if (originalIndex === q.answer) button.classList.add("is-correct");
+        if (originalIndex === selectedIndex && !correct) button.classList.add("is-wrong");
       });
 
       this.feedbackEl.hidden = false;
