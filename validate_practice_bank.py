@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Any
 
 ALLOWED_DIFFICULTIES = {"basic", "intermediate", "advanced"}
+DEFAULT_GLOB = "docs/assets/data/practice/*.manifest.json"
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -21,7 +22,11 @@ def load_json(path: Path) -> dict[str, Any]:
         raise ValueError(f"JSON lỗi tại {path}:{exc.lineno}:{exc.colno}: {exc.msg}") from exc
 
 
-def validate_question(question: dict[str, Any], source: Path, skill_labels: set[str]) -> list[str]:
+def validate_question(
+    question: dict[str, Any],
+    source: Path,
+    skill_labels: set[str],
+) -> list[str]:
     errors: list[str] = []
     qid = question.get("id", "(không có id)")
 
@@ -70,17 +75,40 @@ def validate_question(question: dict[str, Any], source: Path, skill_labels: set[
     return errors
 
 
-def validate_manifest(manifest_path: Path) -> int:
+def validate_manifest(manifest_path: Path) -> tuple[int, set[str]]:
     errors: list[str] = []
-    manifest = load_json(manifest_path)
+    question_ids: set[str] = set()
+
+    try:
+        manifest = load_json(manifest_path)
+    except ValueError as exc:
+        print(f"\nManifest : {manifest_path}")
+        print("\n❌ KHÔNG ĐẠT")
+        print(f"  - {exc}")
+        return 1, question_ids
 
     if manifest.get("schema") != "practice-bank-manifest-v1":
         errors.append("Manifest phải có schema = practice-bank-manifest-v1")
+
+    bank_id = manifest.get("bank_id")
+    if not isinstance(bank_id, str) or not bank_id.strip():
+        errors.append("Manifest phải có bank_id không rỗng")
+
+    topic = manifest.get("topic")
+    if not isinstance(topic, dict) or not topic.get("id") or not topic.get("title"):
+        errors.append("Manifest phải có topic.id và topic.title")
+
+    session_size = manifest.get("session_size")
+    if not isinstance(session_size, int) or session_size <= 0:
+        errors.append("session_size phải là số nguyên dương")
 
     sources = manifest.get("sources")
     if not isinstance(sources, list) or not sources:
         errors.append("Manifest phải có danh sách sources không rỗng")
         sources = []
+
+    if len(sources) != len(set(map(str, sources))):
+        errors.append("Manifest có source bị trùng")
 
     skill_labels_obj = manifest.get("skill_labels")
     if not isinstance(skill_labels_obj, dict) or not skill_labels_obj:
@@ -89,8 +117,11 @@ def validate_manifest(manifest_path: Path) -> int:
     skill_labels = set(skill_labels_obj)
 
     questions: list[tuple[dict[str, Any], Path]] = []
+    chunk_ids: list[str] = []
+    manifest_topic_id = topic.get("id") if isinstance(topic, dict) else None
+
     for source_name in sources:
-        source_path = manifest_path.parent / source_name
+        source_path = manifest_path.parent / str(source_name)
         try:
             chunk = load_json(source_path)
         except ValueError as exc:
@@ -100,16 +131,45 @@ def validate_manifest(manifest_path: Path) -> int:
         if chunk.get("schema") != "practice-question-chunk-v1":
             errors.append(f"{source_path.name}: schema phải là practice-question-chunk-v1")
 
+        chunk_id = chunk.get("bank_id")
+        if not isinstance(chunk_id, str) or not chunk_id.strip():
+            errors.append(f"{source_path.name}: thiếu bank_id")
+        else:
+            chunk_ids.append(chunk_id)
+
+        chunk_topic = chunk.get("topic")
+        if (
+            manifest_topic_id
+            and isinstance(chunk_topic, dict)
+            and chunk_topic.get("id")
+            and chunk_topic.get("id") != manifest_topic_id
+        ):
+            errors.append(
+                f"{source_path.name}: topic.id `{chunk_topic.get('id')}` "
+                f"không khớp manifest `{manifest_topic_id}`"
+            )
+
         chunk_questions = chunk.get("questions")
         if not isinstance(chunk_questions, list):
             errors.append(f"{source_path.name}: questions phải là danh sách")
             continue
-        questions.extend((question, source_path) for question in chunk_questions if isinstance(question, dict))
+
+        for question in chunk_questions:
+            if not isinstance(question, dict):
+                errors.append(f"{source_path.name}: có phần tử question không phải object")
+                continue
+            questions.append((question, source_path))
+
+    duplicate_chunk_ids = [cid for cid, count in Counter(chunk_ids).items() if cid and count > 1]
+    for cid in duplicate_chunk_ids:
+        errors.append(f"Chunk bank_id bị trùng: {cid}")
 
     ids = [question.get("id") for question, _ in questions]
     duplicate_ids = [qid for qid, count in Counter(ids).items() if qid and count > 1]
     for qid in duplicate_ids:
         errors.append(f"ID bị trùng trong ngân hàng: {qid}")
+
+    question_ids = {str(qid) for qid in ids if qid}
 
     expected_count = manifest.get("question_count")
     if expected_count != len(questions):
@@ -125,7 +185,11 @@ def validate_manifest(manifest_path: Path) -> int:
             skill_counts[skill] += 1
         difficulty_counts[question.get("difficulty", "(missing)")] += 1
 
-    print(f"Manifest : {manifest_path}")
+    unused_skills = sorted(skill_labels - set(skill_counts))
+    for skill in unused_skills:
+        errors.append(f"skill_labels có skill chưa được câu nào sử dụng: `{skill}`")
+
+    print(f"\nManifest : {manifest_path}")
     print(f"Bank ID  : {manifest.get('bank_id', '(missing)')}")
     print(f"Số chunk : {len(sources)}")
     print(f"Số câu   : {len(questions)}")
@@ -138,22 +202,62 @@ def validate_manifest(manifest_path: Path) -> int:
         print("\n❌ KHÔNG ĐẠT")
         for error in errors:
             print(f"  - {error}")
-        return 1
+        return 1, question_ids
 
     print("\n✅ Practice Bank hợp lệ.")
-    return 0
+    return 0, question_ids
+
+
+def discover_manifests() -> list[Path]:
+    return sorted(Path(".").glob(DEFAULT_GLOB))
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Validate Practice Bank manifest")
+    parser = argparse.ArgumentParser(
+        description="Validate one or all Roadmap Toán THCS Practice Bank manifests"
+    )
     parser.add_argument(
-        "manifest",
-        nargs="?",
-        default="docs/assets/data/practice/04-bieu-thuc-dai-so-v2.manifest.json",
-        help="Đường dẫn đến manifest JSON",
+        "manifests",
+        nargs="*",
+        help=(
+            "Đường dẫn manifest JSON. Nếu bỏ trống, chương trình tự kiểm tra "
+            f"tất cả manifest khớp `{DEFAULT_GLOB}`."
+        ),
     )
     args = parser.parse_args()
-    return validate_manifest(Path(args.manifest))
+
+    manifest_paths = [Path(item) for item in args.manifests] if args.manifests else discover_manifests()
+    if not manifest_paths:
+        print(f"❌ Không tìm thấy manifest nào theo `{DEFAULT_GLOB}`.")
+        return 1
+
+    failed = 0
+    seen_ids: dict[str, Path] = {}
+    cross_bank_duplicates: list[tuple[str, Path, Path]] = []
+
+    for manifest_path in manifest_paths:
+        result, ids = validate_manifest(manifest_path)
+        failed += result
+        for qid in ids:
+            previous = seen_ids.get(qid)
+            if previous and previous != manifest_path:
+                cross_bank_duplicates.append((qid, previous, manifest_path))
+            else:
+                seen_ids[qid] = manifest_path
+
+    if cross_bank_duplicates:
+        print("\n❌ ID câu hỏi bị trùng giữa các ngân hàng:")
+        for qid, first, second in cross_bank_duplicates:
+            print(f"  - {qid}: {first} ↔ {second}")
+        failed += 1
+
+    print("\n" + "=" * 64)
+    if failed:
+        print(f"❌ Có {failed} nhóm lỗi. Chưa nên phát hành Practice Bank.")
+        return 1
+
+    print(f"✅ Tất cả {len(manifest_paths)} Practice Bank đều hợp lệ.")
+    return 0
 
 
 if __name__ == "__main__":
