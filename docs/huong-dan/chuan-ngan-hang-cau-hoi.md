@@ -190,6 +190,9 @@ Quy tắc:
 6. Hình không được vô tình cho biết đáp án bằng cách vẽ đúng tỉ lệ khi đề chỉ cung cấp quan hệ định tính.
 7. Nhãn điểm, góc, đường phải rõ trên màn hình nhỏ; tránh trang trí không phục vụ việc đọc đề.
 8. Với câu phức tạp, hình được hiển thị ngay dưới đề và trước các phương án.
+9. **“Không nhất thiết theo tỉ lệ” chỉ cho phép sai khác về tỉ lệ độ dài hoặc kích thước; không cho phép sai quan hệ hình học cốt lõi.** Nếu đề cho hoặc hình ký hiệu vuông góc, song song, thẳng hàng, tiếp tuyến, điểm thuộc đường tròn, trung điểm, thứ tự điểm hay các quan hệ tương tự thì hình phải thể hiện đúng quan hệ đó về mặt hình học.
+10. Không được dùng ký hiệu (ví dụ ô vuông góc) để “che” một hình thực tế vẽ sai quan hệ. Ký hiệu và tọa độ/đường nét của SVG phải nhất quán với nhau.
+11. Với các cấu hình nhạy cảm như tiếp tuyến–bán kính, đường cao tam giác vuông, tứ giác nội tiếp, dây/cát tuyến, Thales/đồng dạng, cần có QA hình học riêng trước khi phát hành.
 
 ## 7. Quy tắc ID
 
@@ -288,7 +291,8 @@ Mỗi ngân hàng phải được kiểm tra:
 - câu hỏi và lời giải không mâu thuẫn;
 - đáp án nhiễu có ý nghĩa;
 - phân bố câu hỏi không quá lệch về một kỹ năng;
-- nếu có `diagram`: file tồn tại, đường dẫn local hợp lệ, có `alt`, và hình không làm lộ đáp án.
+- nếu có `diagram`: file tồn tại, đường dẫn local hợp lệ, có `alt`, hình không làm lộ đáp án, và **mọi quan hệ hình học cốt lõi trong hình phải đúng với đề bài/giả thiết**;
+- với một đợt bổ sung nhiều hình, nên có gallery QA để rà trực quan toàn bộ diagram và semantic check cho các họ hình nhạy cảm.
 
 ## 13. Mục tiêu quy mô
 
