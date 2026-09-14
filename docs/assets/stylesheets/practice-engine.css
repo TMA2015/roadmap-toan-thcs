@@ -60,11 +60,41 @@
 
 .practice-stats-panel { border-top: 1px solid var(--practice-border); padding: 0.8rem 1.1rem 1rem; }
 .practice-stats-panel > summary { cursor: pointer; font-weight: 600; }
-.practice-stats { margin-top: 0.8rem; display: grid; gap: 0.7rem; }
+.practice-stats-hint { margin-top: 0.45rem; font-size: 0.74rem; opacity: 0.68; }
+.practice-stats { margin-top: 0.65rem; display: grid; gap: 0.45rem; }
+.practice-stat-row {
+  appearance: none;
+  display: block;
+  width: 100%;
+  padding: 0.45rem 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.45rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.16s ease, border-color 0.16s ease, transform 0.08s ease;
+}
 .practice-stat-row > div { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.82rem; }
 .practice-stat-row span { opacity: 0.72; white-space: nowrap; }
-.practice-stat-row progress { width: 100%; height: 0.55rem; accent-color: var(--md-primary-fg-color); }
+.practice-stat-row progress { width: 100%; height: 0.55rem; accent-color: var(--md-primary-fg-color); pointer-events: none; }
+.practice-stat-row:hover { background: var(--practice-soft); border-color: var(--practice-border); transform: translateY(-1px); }
+.practice-stat-row:focus-visible { outline: 2px solid var(--md-primary-fg-color); outline-offset: 2px; }
+.practice-stat-row.is-focused { border-color: color-mix(in srgb, var(--md-primary-fg-color) 45%, transparent); background: var(--practice-soft); }
+.practice-stat-row.is-updated { animation: practice-stat-flash 1.05s ease; }
+
+@keyframes practice-stat-flash {
+  0% { background: color-mix(in srgb, var(--md-primary-fg-color) 22%, transparent); }
+  100% { background: transparent; }
+}
+
 .practice-load-error { padding: 1rem; border-color: #c62828; }
+
+@media (prefers-reduced-motion: reduce) {
+  .practice-stat-row, .practice-btn { transition: none; }
+  .practice-stat-row.is-updated { animation: none; border-color: var(--md-primary-fg-color); }
+}
 
 @media (max-width: 700px) {
   .practice-toolbar { flex-direction: column; }
