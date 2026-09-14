@@ -1,0 +1,74 @@
+name: Generate Practice Banks 17-20 with diagrams
+
+on:
+  push:
+    branches:
+      - feature/topics17-20-diagrams-v1
+    paths:
+      - tools/practice-batch-17-20/generate_banks.py
+      - .github/workflows/generate-practice-17-20.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/topics17-20-diagrams-v1
+          fetch-depth: 0
+
+      - name: Patch generator QA edge cases
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('tools/practice-batch-17-20/generate_banks.py')
+          s = p.read_text(encoding='utf-8')
+          replacements = {
+              'num_opts(ae, ae+t, ac-ae, t)': 'num_opts(ae, ae+t, ae+2*t, max(1,ae-t))',
+              'num_opts(cen,ins,180-ins,cen+10,unit="°")': 'num_opts(cen,ins,cen+10,max(5,cen-20),unit="°")',
+              'num_opts(ins,cen,180-ins,ins+10,unit="°")': 'num_opts(ins,cen,ins+10,max(5,ins-10),unit="°")',
+              'num_opts(c,a,180-c,c+10,unit="°")': 'num_opts(c,a,c+10,max(5,c-10),unit="°")',
+              'num_opts(dval,dval+2,max(1,dval-2),prod)': 'num_opts(dval,dval+1,dval+2,dval+3)',
+              'num_opts(angle,2*angle,180-angle,angle+10,unit="°")': 'num_opts(angle,angle+10,angle+20,max(5,angle-10),unit="°")',
+              'a=3+k%4; b=4+k%5; c=2; dval=a*b//c if (a*b)%2==0 else a*b\n        if (a*b)%2:\n            c=1': 'a=4+2*(k%4); b=3+k%5; c=2; dval=a*b//c',
+          }
+          for old, new in replacements.items():
+              if old not in s:
+                  raise SystemExit(f'Missing patch target: {old}')
+              s = s.replace(old, new)
+          p.write_text(s, encoding='utf-8')
+          PY
+
+      - name: Syntax checks
+        run: |
+          python -m py_compile tools/practice-batch-17-20/generate_banks.py
+          python -m py_compile validate_practice_bank.py
+          node --check docs/assets/javascripts/practice-engine-v2.js
+
+      - name: Generate static Practice Banks and SVG diagrams
+        run: python tools/practice-batch-17-20/generate_banks.py
+
+      - name: Validate all Practice Banks
+        run: python validate_practice_bank.py
+
+      - name: Report diagram count
+        run: |
+          echo "Practice SVG count: $(find docs/assets/diagrams/practice -type f -name '*.svg' | wc -l)"
+
+      - name: Commit generated files
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/assets/data/practice docs/assets/diagrams/practice
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git commit -m "Sinh 480 câu Practice Bank 17-20 và diagram hình học"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
