@@ -354,15 +354,22 @@ Sau đó phải kiểm tra phương trình ứng với `m = 4` có nghiệm phù
 
 ### Dạng 7 – Xét dấu của hai nghiệm
 
-Giả sử phương trình có hai nghiệm thực.
+Với phương trình bậc hai thực sự (`a ≠ 0`), đặt `S = x₁ + x₂`, `P = x₁x₂`.
 
-Theo Viète:
+Các điều kiện thường dùng:
 
-- `P < 0` → hai nghiệm trái dấu.
-- `P > 0` và `S > 0` → hai nghiệm cùng dương.
-- `P > 0` và `S < 0` → hai nghiệm cùng âm.
+| Yêu cầu về nghiệm | Điều kiện |
+|---|---|
+| Hai nghiệm thực cùng dương | `Δ ≥ 0`, `P > 0`, `S > 0` |
+| Hai nghiệm thực cùng âm | `Δ ≥ 0`, `P > 0`, `S < 0` |
+| Hai nghiệm trái dấu | `P < 0` (khi đó tự động có hai nghiệm thực phân biệt) |
+| Có một nghiệm bằng `0` | `P = 0` |
 
-> Điều kiện về dấu chỉ có ý nghĩa sau khi bảo đảm phương trình có nghiệm thực phù hợp.
+Nếu đề yêu cầu **hai nghiệm phân biệt**, phải thay `Δ ≥ 0` bằng `Δ > 0` ở các trường hợp cùng dấu.
+
+Khi `P = 0`, không được xếp vào “hai nghiệm dương” hoặc “hai nghiệm âm”: một nghiệm bằng `0`, nghiệm còn lại bằng `S` (có thể cũng bằng `0` nếu là nghiệm kép).
+
+> Đây là bộ điều kiện đầy đủ hơn cho bài tham số. Không nên chỉ nhìn `P` rồi kết luận dấu của từng nghiệm.
 
 ---
 

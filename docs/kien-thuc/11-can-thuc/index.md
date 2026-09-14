@@ -111,6 +111,34 @@ Ví dụ:
 
 Nếu biết thêm `x ≥ 3` thì mới kết luận `|x - 3| = x - 3`.
 
+### 3.3A. Bình phương hai vế và phương trình chứa căn
+
+Bình phương hai vế **không phải lúc nào cũng là phép biến đổi tương đương**. Từ `U = V` có thể suy ra `U² = V²`, nhưng chiều ngược lại còn có khả năng `U = -V`.
+
+Với dạng quan trọng:
+
+```text
+√A = B
+```
+
+trên tập số thực, có thể dùng tương đương:
+
+```text
+√A = B  ⇔  B ≥ 0 và A = B²
+```
+
+(với các biểu thức ban đầu có nghĩa). Nếu `B < 0` thì phương trình không thể có nghiệm vì căn bậc hai số học luôn không âm.
+
+Tương tự:
+
+```text
+√A = √B  ⇔  A = B
+```
+
+nhưng phải kèm điều kiện `A ≥ 0`, `B ≥ 0`.
+
+> Khi giải bằng cách bình phương, cách an toàn nhất vẫn là ghi điều kiện, biến đổi, rồi **thay nghiệm trở lại phương trình ban đầu** để loại nghiệm ngoại lai.
+
 ![Infographic biến đổi và rút gọn căn thức](../../assets/infographics/11/11-03-bien-doi-rut-gon.svg)
 
 ### 3.4. Khai phương một tích

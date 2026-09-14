@@ -95,6 +95,22 @@ Các phép biến đổi tương đương thường dùng:
 
 > Nếu xuất hiện tham số làm hệ số của $x$ có thể bằng `0`, phải xét riêng trường hợp đó; không được chia ngay cho một biểu thức chưa biết có khác `0` hay không.
 
+#### Khi hệ số của ẩn có thể bằng 0
+
+Trong bài có tham số, sau khi thu gọn thường xuất hiện dạng:
+
+```text
+A x + B = 0
+```
+
+trong đó `A`, `B` có thể phụ thuộc tham số. Phải xét đủ ba trường hợp:
+
+- `A ≠ 0` → có đúng một nghiệm `x = -B/A`;
+- `A = 0` và `B = 0` → phương trình trở thành `0 = 0`, có vô số nghiệm;
+- `A = 0` và `B ≠ 0` → phương trình trở thành một mệnh đề sai như `0 = 3`, nên vô nghiệm.
+
+> Đây là nguyên tắc nền khi biện luận phương trình có tham số; không được dùng công thức `x = -B/A` trước khi biết `A ≠ 0`.
+
 ### 3.2. Phương trình tích
 
 Nếu:
@@ -117,6 +133,9 @@ Quy trình bắt buộc:
 4. Đối chiếu nghiệm với điều kiện xác định.
 5. Kết luận.
 
+!!! warning "Khử mẫu chỉ tương đương trên miền xác định"
+    Khi nhân hai vế với mẫu chung, phép biến đổi chỉ được hiểu trên các giá trị đã thỏa **điều kiện xác định**. Vì vậy giá trị bị loại từ đầu không được lấy lại dù sau khi khử mẫu biểu thức mới có nghĩa tại giá trị đó.
+
 ### 3.4. Bất phương trình bậc nhất một ẩn
 
 Khi cộng hoặc trừ cùng một biểu thức vào hai vế, chiều bất phương trình được giữ nguyên. Khi nhân hoặc chia hai vế với một **số dương**, chiều được giữ nguyên; với một **số âm**, phải **đổi chiều bất phương trình**.
@@ -124,6 +143,8 @@ Khi cộng hoặc trừ cùng một biểu thức vào hai vế, chiều bất p
 Ví dụ:
 
 $$-2x>6\Rightarrow x<-3.$$
+
+> Nếu nhân hoặc chia hai vế cho một **biểu thức chứa ẩn hoặc tham số** mà chưa biết dấu, không được tự động giữ hay đổi chiều. Trước hết phải xác định dấu của biểu thức đó hoặc chia bài toán thành các trường hợp. Ở mức cốt lõi, chỉ nên nhân/chia bất phương trình với số đã biết dấu.
 
 ### 3.5. Mở rộng – nhiều bất phương trình cùng điều kiện
 
