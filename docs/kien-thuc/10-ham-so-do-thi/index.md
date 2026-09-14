@@ -165,6 +165,12 @@ Xét `y = 2x + 1`.
 
 `2·2 + 1 ≠ 4`
 
+#### Trực quan – điểm thuộc và không thuộc đồ thị
+
+![Mặt phẳng tọa độ và ví dụ điểm thuộc, không thuộc đường thẳng](../../assets/infographics/10/10-05-mat-phang-toa-do-diem.svg)
+
+Điểm nằm “gần” đường thẳng chưa đủ. Muốn kết luận một điểm thuộc đồ thị, tọa độ của nó phải thỏa **đúng phương trình** của đồ thị.
+
 ---
 
 ### Infographic – Hàm số bậc nhất và đường thẳng
@@ -296,6 +302,17 @@ Ví dụ:
 
 cắt `Oy` tại `(0; -5)`.
 
+#### Trực quan – vai trò của `a` và `b`
+
+![So sánh ảnh hưởng của hệ số a và b trong hàm số y=ax+b](../../assets/infographics/10/10-06-he-so-a-b.svg)
+
+Đọc hình theo hai câu hỏi:
+
+1. **Giữ `b` cố định, đổi `a`:** các đường thẳng vẫn đi qua cùng điểm trên `Oy`, nhưng độ dốc và chiều tăng/giảm thay đổi.
+2. **Giữ `a` cố định, đổi `b`:** các đường thẳng song song với nhau và chỉ dịch lên/xuống.
+
+Cách nhìn này giúp tránh học thuộc rời rạc “`a` là hệ số góc, `b` là tung độ gốc”.
+
 ---
 
 ### 3.6. Vị trí tương đối của hai đường thẳng
@@ -391,6 +408,17 @@ Hay viết dưới dạng chuẩn của hệ hai phương trình bậc nhất ha
 
 > Đây là cầu nối trực tiếp với [Chuyên đề 09 – Hệ phương trình bậc nhất hai ẩn](../09-he-phuong-trinh/index.md).
 
+#### Trực quan – nghiệm hệ là giao điểm đồ thị
+
+![Hai đường thẳng y=2x+1 và y=-x+4 cắt nhau tại I(1;3)](../../assets/infographics/10/10-07-giao-diem-hai-duong-thang.svg)
+
+Hình cho thấy cùng một kết quả theo hai ngôn ngữ:
+
+- **đại số:** giải `2x + 1 = -x + 4` được `x = 1`, rồi `y = 3`;
+- **hình học:** hai đường thẳng gặp nhau tại `I(1; 3)`.
+
+Vì vậy, giải hệ và tìm giao điểm thực chất là hai cách mô tả cùng một bài toán.
+
 ---
 
 ### 3.8. Mở rộng – Đồ thị `y = ax²`
@@ -407,6 +435,16 @@ có đồ thị là một **parabol**.
 - nhận trục `Oy` làm trục đối xứng;
 - nếu `a > 0`, parabol mở lên;
 - nếu `a < 0`, parabol mở xuống.
+
+#### Trực quan – dấu và độ lớn của `a`
+
+![So sánh các parabol y=ax² khi thay đổi dấu và độ lớn của a](../../assets/infographics/10/10-08-parabol-y-ax2.svg)
+
+Với dạng đặc biệt `y = ax²`:
+
+- dấu của `a` quyết định parabol mở **lên** hay **xuống**;
+- với cùng dấu, `|a|` lớn hơn làm parabol **hẹp hơn**;
+- mọi đồ thị dạng này đều đi qua `O(0;0)` và đối xứng qua `Oy`.
 
 Ví dụ:
 
@@ -636,6 +674,16 @@ x² = x + 2
 nên có hai giao điểm ứng với `x = 2` và `x = -1`.
 
 Đây là cầu nối trực tiếp giữa **đồ thị** và **phương trình bậc hai**, không phải một kỹ thuật tách rời.
+
+#### Trực quan – đường thẳng và parabol
+
+![Đường thẳng y=x+2 cắt parabol y=x² tại hai điểm](../../assets/infographics/10/10-09-duong-thang-parabol.svg)
+
+Ở ví dụ trên, hai giao điểm xuất hiện đúng tại hai nghiệm của:
+
+`x² = x + 2`.
+
+Do đó, số nghiệm thực của phương trình thu được sau khi cho hai biểu thức bằng nhau chính là số giao điểm của hai đồ thị. Đây là cầu nối quan trọng sang Chuyên đề 12.
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 

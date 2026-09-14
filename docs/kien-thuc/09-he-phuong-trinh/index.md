@@ -139,6 +139,20 @@ Vì vậy:
 - Hai đường thẳng song song → hệ **vô nghiệm**.
 - Hai đường thẳng trùng nhau → hệ có **vô số nghiệm**.
 
+#### Trực quan – số nghiệm của hệ
+
+![Ba trường hợp hình học của hệ phương trình: cắt nhau, song song và trùng nhau](../../assets/infographics/09/09-04-y-nghia-hinh-hoc-he.svg)
+
+Có thể đọc hình theo một quy tắc duy nhất:
+
+**số nghiệm của hệ = số điểm chung của hai đường thẳng**.
+
+- cắt nhau tại một điểm → một nghiệm;
+- không có điểm chung → vô nghiệm;
+- trùng nhau → mọi điểm trên đường thẳng đều là điểm chung, nên có vô số nghiệm.
+
+> Đây không phải một quy tắc mới tách biệt với đại số: nó là cách nhìn hình học của chính điều kiện “một cặp `(x; y)` phải thỏa đồng thời cả hai phương trình”.
+
 Đây là cầu nối quan trọng sang [Chuyên đề 10 – Hàm số và đồ thị](../10-ham-so-do-thi/index.md).
 
 ---
