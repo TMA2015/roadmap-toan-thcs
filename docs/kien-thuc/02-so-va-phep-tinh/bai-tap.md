@@ -1,7 +1,26 @@
 # Bài tập – Chuyên đề 02: Số và phép tính
 
+<link rel="stylesheet" href="../../../assets/stylesheets/practice-engine.css">
+<script src="../../../assets/javascripts/practice-engine-v2.js" defer></script>
+
 > **Mục tiêu:** củng cố số nguyên, phân số, lũy thừa, ước–bội, tỉ số phần trăm.
 > **Quy ước:** `02-Mx-yy`.
+
+## 🎯 Luyện tập tương tác
+
+Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng **120 câu**. Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ có lời giải ngắn và nút **Làm câu tương tự**.
+
+Bảng **Tiến độ theo kỹ năng** được sắp cố định theo lộ trình kiến thức nền → kiến thức sau. Học sinh có thể bấm trực tiếp vào một kỹ năng để luyện riêng; chế độ **Luyện điểm yếu** sẽ ưu tiên tối đa hai kỹ năng đủ dữ liệu nhưng có độ chính xác thấp nhất.
+
+<div data-practice-bank-v2="../../../assets/data/practice/02-so-va-phep-tinh-v1.manifest.json" data-session-size="10"></div>
+
+> **Lưu ý:** tiến độ hiện được lưu bằng `localStorage`, vì vậy dữ liệu chưa tự đồng bộ giữa các thiết bị hoặc trình duyệt khác nhau.
+
+---
+
+## Bài tập tự luận bổ sung
+
+Các bài dưới đây vẫn được giữ lại để học sinh luyện cách trình bày lời giải đầy đủ sau phần trắc nghiệm tương tác.
 
 # Mức 1 – Nhận biết
 ### 02-M1-01

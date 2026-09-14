@@ -10,7 +10,7 @@
 
 Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng **120 câu**. Ngân hàng bao phủ các kỹ năng chính của chuyên đề từ nhận biết đơn thức – đa thức, hạng tử đồng dạng, thu gọn, cộng – trừ, bỏ ngoặc, nhân biểu thức, thay số, điều kiện xác định, biến đổi nhiều bước đến bài toán thực tế.
 
-Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ có lời giải ngắn và nút **Làm câu tương tự**. Câu chưa làm và câu từng làm sai được ưu tiên xuất hiện lại. Kết quả được lưu theo từng kỹ năng để phục vụ chế độ **Luyện điểm yếu**.
+Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ có lời giải ngắn và nút **Làm câu tương tự**. Bảng **Tiến độ theo kỹ năng** được sắp cố định theo lộ trình học; học sinh có thể bấm trực tiếp vào một kỹ năng để luyện riêng. Chế độ **Luyện điểm yếu** ưu tiên tối đa hai kỹ năng đủ dữ liệu nhưng có độ chính xác thấp nhất.
 
 <div data-practice-bank-v2="../../../assets/data/practice/04-bieu-thuc-dai-so-v2.manifest.json" data-session-size="10"></div>
 
