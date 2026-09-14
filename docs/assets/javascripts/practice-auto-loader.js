@@ -17,6 +17,11 @@
     "18-he-thuc-luong": "18-he-thuc-luong-v1.manifest.json",
     "19-duong-tron": "19-duong-tron-v1.manifest.json",
     "20-hinh-hoc-tong-hop": "20-hinh-hoc-tong-hop-v1.manifest.json",
+    "21-thong-ke": "21-thong-ke-v1.manifest.json",
+    "22-dai-luong-dac-trung": "22-dai-luong-dac-trung-v1.manifest.json",
+    "23-xac-suat": "23-xac-suat-v1.manifest.json",
+    "24-bai-toan-thuc-te": "24-bai-toan-thuc-te-v1.manifest.json",
+    "25-tong-hop-on-thi-10": "25-tong-hop-on-thi-10-v1.manifest.json",
   };
 
   const ensureStyles = (siteRoot) => {

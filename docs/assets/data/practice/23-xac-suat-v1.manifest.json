@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "PRO23-V1",
+  "topic": {
+    "id": "23-xac-suat",
+    "title": "Xác suất"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "phep-thu-ngau-nhien": "Phép thử ngẫu nhiên",
+    "khong-gian-mau": "Không gian mẫu",
+    "bien-co": "Biến cố",
+    "bien-co-chac-chan-khong-the": "Biến cố chắc chắn và không thể",
+    "xac-suat-co-dien": "Xác suất cổ điển",
+    "bien-co-doi": "Biến cố đối",
+    "dong-xu-nhieu-lan": "Đồng xu nhiều lần",
+    "xuc-xac-hai-lan": "Hai xúc xắc",
+    "so-do-cay": "Sơ đồ cây",
+    "nhieu-buoc-doc-lap": "Thí nghiệm nhiều bước độc lập",
+    "khong-hoan-lai": "Rút không hoàn lại",
+    "kiem-tra-xac-suat": "Kiểm tra tính hợp lý của xác suất"
+  },
+  "skill_groups": [
+    {
+      "id": "nen-tang-xac-suat",
+      "label": "A. Phép thử, không gian mẫu và biến cố",
+      "skills": [
+        "phep-thu-ngau-nhien",
+        "khong-gian-mau",
+        "bien-co",
+        "bien-co-chac-chan-khong-the"
+      ]
+    },
+    {
+      "id": "xac-suat-co-dien",
+      "label": "B. Xác suất cổ điển và biến cố đối",
+      "skills": [
+        "xac-suat-co-dien",
+        "bien-co-doi"
+      ]
+    },
+    {
+      "id": "thi-nghiem-nhieu-buoc",
+      "label": "C. Thí nghiệm nhiều bước",
+      "skills": [
+        "dong-xu-nhieu-lan",
+        "xuc-xac-hai-lan",
+        "so-do-cay",
+        "nhieu-buoc-doc-lap",
+        "khong-hoan-lai"
+      ]
+    },
+    {
+      "id": "kiem-tra-xac-suat",
+      "label": "D. Kiểm tra kết quả",
+      "skills": [
+        "kiem-tra-xac-suat"
+      ]
+    }
+  ],
+  "sources": [
+    "23-xac-suat-v1-01.json",
+    "23-xac-suat-v1-02.json",
+    "23-xac-suat-v1-03.json",
+    "23-xac-suat-v1-04.json"
+  ]
+}
