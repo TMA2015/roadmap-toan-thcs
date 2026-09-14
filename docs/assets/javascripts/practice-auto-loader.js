@@ -13,6 +13,10 @@
     "14-tam-giac": "14-tam-giac-v1.manifest.json",
     "15-duong-dong-quy": "15-duong-dong-quy-v1.manifest.json",
     "16-tu-giac": "16-tu-giac-v1.manifest.json",
+    "17-thales-dong-dang": "17-thales-dong-dang-v1.manifest.json",
+    "18-he-thuc-luong": "18-he-thuc-luong-v1.manifest.json",
+    "19-duong-tron": "19-duong-tron-v1.manifest.json",
+    "20-hinh-hoc-tong-hop": "20-hinh-hoc-tong-hop-v1.manifest.json",
   };
 
   const ensureStyles = (siteRoot) => {

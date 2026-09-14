@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Any
 
 ALLOWED_DIFFICULTIES = {"basic", "intermediate", "advanced"}
+ALLOWED_DIAGRAM_SUFFIXES = {".svg", ".png", ".jpg", ".jpeg", ".webp"}
 DEFAULT_GLOB = "docs/assets/data/practice/*.manifest.json"
 
 
@@ -71,6 +72,42 @@ def validate_question(
         errors.append(f"{source.name} · {qid}: nội dung câu hỏi rỗng")
     if not str(question.get("explanation", "")).strip():
         errors.append(f"{source.name} · {qid}: explanation rỗng")
+
+    diagram = question.get("diagram")
+    if diagram is not None:
+        if not isinstance(diagram, dict):
+            errors.append(f"{source.name} · {qid}: `diagram` phải là object")
+        else:
+            src = diagram.get("src")
+            alt = diagram.get("alt")
+            caption = diagram.get("caption")
+
+            if not isinstance(src, str) or not src.strip():
+                errors.append(f"{source.name} · {qid}: diagram.src phải là chuỗi không rỗng")
+            else:
+                src = src.strip()
+                if src.startswith(("http://", "https://", "//", "data:")) or Path(src).is_absolute():
+                    errors.append(f"{source.name} · {qid}: diagram.src phải là đường dẫn local tương đối")
+                else:
+                    resolved = (source.parent / src).resolve()
+                    docs_root = Path("docs").resolve()
+                    try:
+                        resolved.relative_to(docs_root)
+                    except ValueError:
+                        errors.append(f"{source.name} · {qid}: diagram.src phải nằm bên trong thư mục docs/")
+                    else:
+                        if resolved.suffix.lower() not in ALLOWED_DIAGRAM_SUFFIXES:
+                            errors.append(
+                                f"{source.name} · {qid}: diagram chỉ hỗ trợ "
+                                + ", ".join(sorted(ALLOWED_DIAGRAM_SUFFIXES))
+                            )
+                        if not resolved.is_file():
+                            errors.append(f"{source.name} · {qid}: không tìm thấy diagram `{src}`")
+
+            if not isinstance(alt, str) or not alt.strip():
+                errors.append(f"{source.name} · {qid}: diagram.alt phải là chuỗi không rỗng")
+            if caption is not None and not isinstance(caption, str):
+                errors.append(f"{source.name} · {qid}: diagram.caption phải là chuỗi nếu được khai báo")
 
     return errors
 
@@ -260,10 +297,13 @@ def validate_manifest(manifest_path: Path) -> tuple[int, set[str]]:
 
     skill_counts: Counter[str] = Counter()
     difficulty_counts: Counter[str] = Counter()
+    diagram_count = 0
     for question, _ in questions:
         for skill in question.get("tags", {}).get("skill", []):
             skill_counts[skill] += 1
         difficulty_counts[question.get("difficulty", "(missing)")] += 1
+        if question.get("diagram") is not None:
+            diagram_count += 1
 
     unused_skills = sorted(skill_labels - set(skill_counts))
     for skill in unused_skills:
@@ -273,6 +313,7 @@ def validate_manifest(manifest_path: Path) -> tuple[int, set[str]]:
     print(f"Bank ID  : {manifest.get('bank_id', '(missing)')}")
     print(f"Số chunk : {len(sources)}")
     print(f"Số câu   : {len(questions)}")
+    print(f"Có hình  : {diagram_count}")
     print("Độ khó   : " + ", ".join(f"{key}={value}" for key, value in sorted(difficulty_counts.items())))
     print("Kỹ năng theo lộ trình:")
     print_order = ordered_skills or sorted(skill_counts)
