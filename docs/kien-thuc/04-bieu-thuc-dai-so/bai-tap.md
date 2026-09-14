@@ -20,7 +20,7 @@ Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ 
 
 ## Bài tập tự luận bổ sung
 
-Các bài dưới đây vẫn được giữ lại để học sinh luyện cách trình bày lời giải đầy đủ sau phần trắc nghiệm tương tác.
+Các bài dưới đây được chọn lọc để luyện trình bày biến đổi đại số, kiểm soát dấu ngoặc và mô hình hóa bằng biểu thức.
 
 # Mức 1 – Nhận biết
 ### 04-M1-01
@@ -60,4 +60,60 @@ Một số có hai chữ số, chữ số hàng chục là \(a\), hàng đơn v�
 - 04-M3-01: \(-4\); 04-M3-02: 0; 04-M3-03: \(6x+4\).
 - 04-M4-01: 3; 04-M4-02: 2; 04-M4-03: \(10a+b\), \(10b+a\), hiệu \(9(a-b)\).
 
-[← Học bài](index.md) · [Tự kiểm tra →](tu-kiem-tra.md)
+---
+
+# Hướng dẫn chọn lọc
+
+## 04-M2-02 – Bỏ ngoặc có dấu trừ
+
+\[
+4a-2b-(a-5b)=4a-2b-a+5b=3a+3b.
+\]
+
+**Điểm cần nhớ:** dấu “−” trước ngoặc làm **đổi dấu mọi hạng tử** trong ngoặc.
+
+## 04-M3-01 – Rút gọn trước, thay số sau
+
+\[
+A=3x^2-6x-3x^2+5x=-x.
+\]
+
+Sau đó mới thay \(x=4\), được \(A=-4\).
+
+**Điểm cần nhớ:** rút gọn biểu thức trước thường giảm đáng kể số phép tính và nguy cơ sai.
+
+## 04-M4-03 – Biểu diễn số bằng chữ số
+
+Số có hàng chục là \(a\), hàng đơn vị là \(b\) được viết:
+
+\[
+10a+b.
+\]
+
+Số đảo chữ số là \(10b+a\). Hiệu là:
+
+\[
+(10a+b)-(10b+a)=9(a-b).
+\]
+
+**Điểm cần nhớ:** chữ số ở hàng chục có giá trị gấp 10 lần chữ số đó.
+
+---
+
+# Theo dõi tiến độ
+
+- [ ] Tôi nhận biết đúng hạng tử đồng dạng, hệ số và bậc.
+- [ ] Tôi bỏ ngoặc đúng dấu và thu gọn chính xác.
+- [ ] Tôi biết rút gọn trước khi thay giá trị khi có lợi.
+- [ ] Tôi lập được biểu thức từ bài toán bằng lời.
+- [ ] Tôi đã làm lại các bài sai mà không nhìn đáp án.
+- [ ] Tôi biết mình thường sai ở dấu, phép nhân hay bước mô hình hóa.
+
+---
+
+# Liên kết Roadmap
+
+- **← Học kiến thức:** [Chuyên đề 04 – Biểu thức và biến đổi đại số](index.md)
+- **← Chuyên đề trước:** [03 – Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ](../03-ti-le-ti-le-thuc/index.md)
+- **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 04](tu-kiem-tra.md)
+- **→ Chuyên đề tiếp theo:** [05 – 7 Hằng đẳng thức đáng nhớ](../05-7-hang-dang-thuc/index.md)

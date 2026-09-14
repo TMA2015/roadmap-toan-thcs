@@ -20,7 +20,7 @@ Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ 
 
 ## Bài tập tự luận bổ sung
 
-Các bài dưới đây được giữ lại để học sinh luyện cách trình bày lời giải đầy đủ sau phần trắc nghiệm tương tác.
+Các bài dưới đây được chọn lọc để luyện nhận dạng công thức theo cả hai chiều, trình bày biến đổi và chọn hằng đẳng thức phù hợp.
 
 # Mức 1 – Nhận biết
 ### 05-M1-01
@@ -60,4 +60,60 @@ Chứng minh \((x+y)^3+(x-y)^3=2x(x^2+3y^2)\).
 - 05-M3-01: 10201; 05-M3-02: \(4x\); 05-M3-03: khai triển hai vế.
 - 05-M4-01: \(x=5\); 05-M4-02: \((x-2)(x^2+2x+4)\), tại 3 bằng 19; 05-M4-03: khai triển và thu gọn.
 
-[← Học bài](index.md) · [Tự kiểm tra →](tu-kiem-tra.md)
+---
+
+# Hướng dẫn chọn lọc
+
+## 05-M3-01 – Tính nhanh bằng bình phương một tổng
+
+\[
+101^2=(100+1)^2=100^2+2\cdot100\cdot1+1=10201.
+\]
+
+**Điểm cần nhớ:** trước khi nhân dài, hãy xem số có gần một mốc tròn như 10, 100, 1000 hay không.
+
+## 05-M4-01 – Nhận ra hiệu hai bình phương
+
+Có thể khai triển, nhưng nhanh hơn là dùng:
+
+\[
+A^2-B^2=(A-B)(A+B).
+\]
+
+Với \(A=x+1\), \(B=x-1\):
+
+\[
+(x+1)^2-(x-1)^2=2\cdot2x=4x.
+\]
+
+Do đó \(4x=20\Rightarrow x=5\).
+
+## 05-M4-02 – Dùng hằng đẳng thức theo chiều phân tích
+
+\[
+x^3-8=x^3-2^3=(x-2)(x^2+2x+4).
+\]
+
+Tại \(x=3\), giá trị bằng \(1\cdot19=19\).
+
+**Điểm cần nhớ:** phải sử dụng hằng đẳng thức theo cả chiều **khai triển** và **phân tích thành nhân tử**.
+
+---
+
+# Theo dõi tiến độ
+
+- [ ] Tôi nhớ đúng 7 hằng đẳng thức và dấu của từng công thức.
+- [ ] Tôi nhận dạng được công thức theo chiều thuận và chiều ngược.
+- [ ] Tôi biết khi nào dùng hằng đẳng thức để tính nhanh.
+- [ ] Tôi trình bày được bài chứng minh bằng khai triển và thu gọn.
+- [ ] Tôi đã làm lại các bài sai mà không nhìn đáp án.
+- [ ] Tôi biết mình thường nhầm ở hệ số giữa, dấu hay nhận dạng cấu trúc.
+
+---
+
+# Liên kết Roadmap
+
+- **← Học kiến thức:** [Chuyên đề 05 – 7 Hằng đẳng thức đáng nhớ](index.md)
+- **← Chuyên đề trước:** [04 – Biểu thức và biến đổi đại số](../04-bieu-thuc-dai-so/index.md)
+- **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 05](tu-kiem-tra.md)
+- **→ Chuyên đề tiếp theo:** [06 – Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/index.md)
