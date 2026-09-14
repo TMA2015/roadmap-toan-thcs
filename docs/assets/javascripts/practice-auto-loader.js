@@ -5,6 +5,10 @@
     "06-phan-tich-da-thuc": "06-phan-tich-da-thuc-v1.manifest.json",
     "07-phan-thuc-dai-so": "07-phan-thuc-dai-so-v1.manifest.json",
     "08-phuong-trinh-bat-phuong-trinh": "08-phuong-trinh-bat-phuong-trinh-v1.manifest.json",
+    "09-he-phuong-trinh": "09-he-phuong-trinh-v1.manifest.json",
+    "10-ham-so-do-thi": "10-ham-so-do-thi-v1.manifest.json",
+    "11-can-thuc": "11-can-thuc-v1.manifest.json",
+    "12-phuong-trinh-bac-hai-viete": "12-phuong-trinh-bac-hai-viete-v1.manifest.json",
   };
 
   const ensureStyles = (siteRoot) => {
