@@ -20,7 +20,12 @@ jobs:
       - name: Restore generated Practice Banks
         shell: bash
         run: |
-          cat .tmp/topics21-25.payload.01 .tmp/topics21-25.payload.02 | tr -d '\r\n' > /tmp/topics21-25.b64
+          cat .tmp/topics21-25.payload.01a \
+              .tmp/topics21-25.payload.01b \
+              .tmp/topics21-25.payload.01c \
+              .tmp/topics21-25.payload.01d \
+              .tmp/topics21-25.payload.02 \
+            | tr -d '\r\n' > /tmp/topics21-25.b64
           echo "1dd448d8b3f051dfcae75e198157eb0bf57db3a624378b2e17c82e2f2c565c03  /tmp/topics21-25.b64" | sha256sum -c -
           base64 -d /tmp/topics21-25.b64 > /tmp/topics21-25.tgz
           tar -xzf /tmp/topics21-25.tgz -C .
