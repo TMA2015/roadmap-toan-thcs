@@ -24,6 +24,52 @@
     "lap-bieu-thuc": "Lập biểu thức",
     "bai-toan-thuc-te": "Bài toán thực tế"
   },
+  "skill_groups": [
+    {
+      "id": "nhan-biet-cau-truc",
+      "label": "A. Nhận biết cấu trúc",
+      "skills": [
+        "nhan-biet-don-thuc",
+        "nhan-biet-da-thuc",
+        "he-so-bac",
+        "hang-tu-dong-dang"
+      ]
+    },
+    {
+      "id": "bien-doi-co-ban",
+      "label": "B. Biến đổi cơ bản",
+      "skills": [
+        "thu-gon-da-thuc",
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ]
+    },
+    {
+      "id": "nhan-phan-phoi",
+      "label": "C. Nhân và phân phối",
+      "skills": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ]
+    },
+    {
+      "id": "gia-tri-dieu-kien",
+      "label": "D. Giá trị và điều kiện",
+      "skills": [
+        "tinh-gia-tri-bieu-thuc",
+        "dieu-kien-xac-dinh"
+      ]
+    },
+    {
+      "id": "tong-hop-ung-dung",
+      "label": "E. Tổng hợp và ứng dụng",
+      "skills": [
+        "bien-doi-nhieu-buoc",
+        "lap-bieu-thuc",
+        "bai-toan-thuc-te"
+      ]
+    }
+  ],
   "sources": [
     "04-bieu-thuc-dai-so-v2-01.json",
     "04-bieu-thuc-dai-so-v2-02.json",
