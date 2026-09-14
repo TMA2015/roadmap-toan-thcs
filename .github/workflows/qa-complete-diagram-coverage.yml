@@ -1,0 +1,117 @@
+name: Complete Practice diagram QA coverage
+
+on:
+  push:
+    branches:
+      - feature/topics17-20-diagrams-v1
+
+permissions:
+  contents: write
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/topics17-20-diagrams-v1
+          fetch-depth: 0
+
+      - name: Verify 128/128 referenced diagrams and legacy samples
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+
+          practice = Path('docs/assets/data/practice')
+          diagrams = Path('docs/assets/diagrams/practice')
+          questions = []
+          for mp in sorted(practice.glob('*.manifest.json')):
+              manifest = json.loads(mp.read_text(encoding='utf-8'))
+              for src in manifest.get('sources', []):
+                  data = json.loads((mp.parent / src).read_text(encoding='utf-8'))
+                  questions.extend(data.get('questions', []))
+
+          refs = []
+          for q in questions:
+              d = q.get('diagram')
+              if not isinstance(d, dict) or not d.get('src'):
+                  continue
+              m = re.search(r'/practice/(\d+)/', d['src'])
+              if not m:
+                  raise SystemExit(f"Cannot derive topic from diagram src: {q.get('id')} {d['src']}")
+              topic = int(m.group(1))
+              path = diagrams / str(topic) / f"{q['id']}.svg"
+              if not path.exists():
+                  raise SystemExit(f"Missing diagram: {path}")
+              refs.append((topic, q, path))
+
+          if len(refs) != 128:
+              raise SystemExit(f"Expected 128 referenced diagrams, found {len(refs)}")
+
+          # Correct the representative Topic 15 centroid sample exactly: AG:GM = 2:1.
+          median = diagrams / '15' / 'CTR15V1_017.svg'
+          if median.exists():
+              text = median.read_text(encoding='utf-8')
+              text = text.replace('cx="220" cy="162" r="4"', 'cx="220" cy="161.667" r="4"')
+              median.write_text(text, encoding='utf-8')
+
+          expected = {
+              (13,'GEO13V1_075'): ['M55 85 L385 85 M55 205 L385 205', 'a ∥ b'],
+              (14,'TRI14V1_075'): ['M80 225 L80 55 L370 225 Z', 'M80 207 L98 207 L98 225'],
+              (15,'CTR15V1_017'): ['cy="161.667"', 'AG = 2GM'],
+              (16,'QUAD16V1_115'): ['M105 65 L340 65 L285 220 L50 220 Z', 'cx="195" cy="142.5"'],
+          }
+          for (topic,qid), signatures in expected.items():
+              path = diagrams / str(topic) / f'{qid}.svg'
+              text = path.read_text(encoding='utf-8')
+              for sig in signatures:
+                  if sig not in text:
+                      raise SystemExit(f'Legacy sample QA failed: {qid} missing {sig}')
+
+          # Semantic signatures for corrected families. These checks complement the structural validator.
+          family_checks = {
+              'tiep-tuyen-ban-kinh': ['M170 140 L258 140 M258 48 L258 222', 'tiếp tuyến PT'],
+              'tiep-tuyen-cat-tuyen': ['M340 150 L220 80.718 M340 150 L100 150', 'PAB cát tuyến'],
+              'chung-minh-tiep-tuyen': ['OA ⟂ d'],
+              'hai-day-cat-nhau': ['M136 77 L304 77 M157 224 L283 56'],
+              'tam-giac-vuong-dong-dang': ['M170 105 L170 225', 'AH ⟂ BC'],
+              'he-thuc-canh': ['M170 105 L170 225', 'AH ⟂ BC'],
+              'he-thuc-duong-cao': ['M170 105 L170 225', 'AH ⟂ BC'],
+              'ket-hop-he-thuc': ['M170 105 L170 225', 'AH ⟂ BC'],
+              'hai-goc-vuong-noi-tiep': ['AB là đường kính', '>E<', '>F<'],
+              'dong-dang-gg': ['M150 45 L60 215 L240 215 Z', 'M340 95 L281.5 205.5 L398.5 205.5 Z'],
+          }
+
+          checked = 0
+          for topic, q, path in refs:
+              skills = q.get('tags', {}).get('skill', []) or []
+              skill = skills[0] if skills else ''
+              if skill not in family_checks:
+                  continue
+              text = path.read_text(encoding='utf-8')
+              for sig in family_checks[skill]:
+                  if sig not in text:
+                      raise SystemExit(f'Semantic diagram QA failed: {q["id"]} ({skill}) missing {sig}')
+              checked += 1
+
+          print(f'Referenced diagrams checked: {len(refs)}/128')
+          print(f'Semantic family checks passed: {checked}')
+          PY
+
+      - name: Validate Practice Banks
+        run: python validate_practice_bank.py
+
+      - name: Commit legacy sample correction if needed
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/assets/diagrams/practice/15/CTR15V1_017.svg
+          if git diff --cached --quiet; then
+            echo "No legacy sample changes to commit."
+            exit 0
+          fi
+          git commit -m "QA hình học: chuẩn hóa hình mẫu trọng tâm"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
