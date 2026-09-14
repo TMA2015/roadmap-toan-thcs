@@ -1,0 +1,50 @@
+name: Build Practice Banks 21-25
+
+on:
+  push:
+    branches:
+      - feature/topics21-25-practice-banks-v1
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/topics21-25-practice-banks-v1
+          fetch-depth: 0
+
+      - name: Restore generated Practice Banks
+        shell: bash
+        run: |
+          cat .tmp/topics21-25.payload.01 .tmp/topics21-25.payload.02 | tr -d '\r\n' > /tmp/topics21-25.b64
+          echo "1dd448d8b3f051dfcae75e198157eb0bf57db3a624378b2e17c82e2f2c565c03  /tmp/topics21-25.b64" | sha256sum -c -
+          base64 -d /tmp/topics21-25.b64 > /tmp/topics21-25.tgz
+          tar -xzf /tmp/topics21-25.tgz -C .
+
+      - name: Validate all Practice Banks
+        run: python validate_practice_bank.py
+
+      - name: Check auto-loader JavaScript
+        run: node --check docs/assets/javascripts/practice-auto-loader.js
+
+      - name: Commit generated files
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/assets/data/practice/21-* \
+                  docs/assets/data/practice/22-* \
+                  docs/assets/data/practice/23-* \
+                  docs/assets/data/practice/24-* \
+                  docs/assets/data/practice/25-* \
+                  docs/assets/javascripts/practice-auto-loader.js
+          if git diff --cached --quiet; then
+            echo "No product changes to commit."
+            exit 0
+          fi
+          git commit -m "Practice Bank 120 câu cho Chuyên đề 21-25"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
