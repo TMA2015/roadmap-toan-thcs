@@ -26,20 +26,11 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
+
           p = Path('tools/practice-batch-17-20/generate_banks.py')
           s = p.read_text(encoding='utf-8')
 
-          old_num = '''def num_opts(correct: int | float, *wrong: int | float, unit: str = "") -> list[str]:
-              vals = [correct, *wrong]
-              out = []
-              for value in vals:
-                  if isinstance(value, float) and value.is_integer():
-                      value = int(value)
-                  out.append(f"{value}{unit}")
-              if len(set(out)) != 4:
-                  raise ValueError(f"Duplicate numeric options: {out}")
-              return out
-          '''.replace('          ', '')
           new_num = '''def num_opts(correct: int | float, *wrong: int | float, unit: str = "") -> list[str]:
               vals = [correct, *wrong]
               fixed = []
@@ -56,10 +47,12 @@ jobs:
                       value = int(value)
                   out.append(f"{value}{unit}")
               return out
-          '''.replace('          ', '')
-          if old_num not in s:
-              raise SystemExit('Missing num_opts patch target')
-          s = s.replace(old_num, new_num)
+          '''
+          new_num = '\n'.join(line[10:] if line.startswith('          ') else line for line in new_num.splitlines()) + '\n'
+          pattern = r'def num_opts\(correct: int \| float, \*wrong: int \| float, unit: str = ""\) -> list\[str\]:\n.*?^    return out\n'
+          s, count = re.subn(pattern, new_num, s, count=1, flags=re.M | re.S)
+          if count != 1:
+              raise SystemExit(f'Expected one num_opts function, replaced {count}')
 
           replacements = {
               'num_opts(ae, ae+t, ac-ae, t)': 'num_opts(ae, ae+t, ae+2*t, max(1,ae-t))',
