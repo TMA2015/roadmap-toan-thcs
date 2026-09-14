@@ -8,12 +8,12 @@
 | # | Chuyên đề | Index | Tự luận M1/M2/M3/M4 | Tự kiểm tra | Truy nguyên lỗi | Trạng thái |
 |---:|---|---:|---|---:|:---:|---|
 | 01 | Chuyên đề 01 – Bản đồ chương trình Toán THCS | 11/11 | 3/3/3/3 | — | — | Tổng quan – audit riêng |
-| 02 | Chuyên đề 02 – Số và phép tính | 11/11 | 3/3/3/3 | 8 câu · 10đ | ❌ | 🟠 Cần chuẩn hóa |
-| 03 | Chuyên đề 03 – Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ | 11/11 | 3/3/3/3 | 8 câu · 10đ | ❌ | 🟠 Cần chuẩn hóa |
-| 04 | Chuyên đề 04 – Biểu thức và biến đổi đại số | 11/11 | 3/3/3/3 | 8 câu · 10đ | ❌ | 🟠 Cần chuẩn hóa |
-| 05 | Chuyên đề 05 – 7 Hằng đẳng thức đáng nhớ | 11/11 | 3/3/3/3 | 8 câu · 10đ | ❌ | 🟠 Cần chuẩn hóa |
-| 06 | Chuyên đề 06 – Phân tích đa thức thành nhân tử | 11/11 | 3/3/3/3 | 8 câu · 10đ | ❌ | 🟠 Cần chuẩn hóa |
-| 07 | Chuyên đề 07 – Phân thức đại số | 11/11 | 3/3/3/3 | 8 câu · 10đ | ❌ | 🟠 Cần chuẩn hóa |
+| 02 | Chuyên đề 02 – Số và phép tính | 11/11 | 3/3/3/3 | 8 câu · 10đ | ✅ | 🟢 Tốt |
+| 03 | Chuyên đề 03 – Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ | 11/11 | 3/3/3/3 | 8 câu · 10đ | ✅ | 🟢 Tốt |
+| 04 | Chuyên đề 04 – Biểu thức và biến đổi đại số | 11/11 | 3/3/3/3 | 8 câu · 10đ | ✅ | 🟢 Tốt |
+| 05 | Chuyên đề 05 – 7 Hằng đẳng thức đáng nhớ | 11/11 | 3/3/3/3 | 8 câu · 10đ | ✅ | 🟢 Tốt |
+| 06 | Chuyên đề 06 – Phân tích đa thức thành nhân tử | 11/11 | 3/3/3/3 | 8 câu · 10đ | ✅ | 🟢 Tốt |
+| 07 | Chuyên đề 07 – Phân thức đại số | 11/11 | 3/3/3/3 | 8 câu · 10đ | ✅ | 🟢 Tốt |
 | 08 | Chuyên đề 08 – Phương trình và bất phương trình | 11/11 | 10/10/10/8 | 10 câu · 10đ | ✅ | 🟢 Tốt |
 | 09 | Chuyên đề 09 – Hệ phương trình bậc nhất hai ẩn | 11/11 | 10/10/10/6 | 10 câu · 10đ | ✅ | 🟢 Tốt |
 | 10 | Chuyên đề 10 – Hàm số và đồ thị | 11/11 | 10/10/12/8 | 10 câu · 10đ | ✅ | 🟢 Tốt |
@@ -36,12 +36,12 @@
 ## Vấn đề phát hiện theo chuyên đề
 
 - **01:** trang tổng quan; không áp dụng cùng tiêu chí Practice Bank như 02–25.
-- **02:** thiếu hướng dẫn chọn lọc; thiếu theo dõi tiến độ; thiếu thang tự đánh giá; thiếu bảng truy nguyên lỗi; thiếu checklist sau chấm.
-- **03:** thiếu hướng dẫn chọn lọc; thiếu theo dõi tiến độ; thiếu thang tự đánh giá; thiếu bảng truy nguyên lỗi; thiếu checklist sau chấm.
-- **04:** thiếu hướng dẫn chọn lọc; thiếu theo dõi tiến độ; thiếu thang tự đánh giá; thiếu bảng truy nguyên lỗi; thiếu checklist sau chấm.
-- **05:** thiếu hướng dẫn chọn lọc; thiếu theo dõi tiến độ; thiếu thang tự đánh giá; thiếu bảng truy nguyên lỗi; thiếu checklist sau chấm.
-- **06:** thiếu hướng dẫn chọn lọc; thiếu theo dõi tiến độ; thiếu thang tự đánh giá; thiếu bảng truy nguyên lỗi; thiếu checklist sau chấm.
-- **07:** thiếu hướng dẫn chọn lọc; thiếu theo dõi tiến độ; thiếu thang tự đánh giá; thiếu bảng truy nguyên lỗi; thiếu checklist sau chấm.
+- **02:** không phát hiện thiếu cấu trúc theo bộ tiêu chí tự động.
+- **03:** không phát hiện thiếu cấu trúc theo bộ tiêu chí tự động.
+- **04:** không phát hiện thiếu cấu trúc theo bộ tiêu chí tự động.
+- **05:** không phát hiện thiếu cấu trúc theo bộ tiêu chí tự động.
+- **06:** không phát hiện thiếu cấu trúc theo bộ tiêu chí tự động.
+- **07:** không phát hiện thiếu cấu trúc theo bộ tiêu chí tự động.
 - **08:** không phát hiện thiếu cấu trúc theo bộ tiêu chí tự động.
 - **09:** không phát hiện thiếu cấu trúc theo bộ tiêu chí tự động.
 - **10:** không phát hiện thiếu cấu trúc theo bộ tiêu chí tự động.
