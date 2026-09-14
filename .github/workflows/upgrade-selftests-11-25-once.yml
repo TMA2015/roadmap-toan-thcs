@@ -1,0 +1,53 @@
+name: Upgrade self-tests 11-25 once
+
+on:
+  push:
+    branches:
+      - content-audit-25-topics-v1
+
+permissions:
+  contents: write
+
+jobs:
+  upgrade:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: content-audit-25-topics-v1
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Upgrade self-tests
+        run: python upgrade_selftests_11_25_temp.py
+
+      - name: Refresh content audit
+        run: python audit_content_structure.py --write
+
+      - name: Validate Practice Banks
+        run: python validate_practice_bank.py
+
+      - name: Roadmap dependency and link QA
+        run: python check_roadmap_dependencies.py
+
+      - name: Install MkDocs
+        run: pip install mkdocs-material
+
+      - name: Strict MkDocs build
+        run: mkdocs build --strict
+
+      - name: Commit product changes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/kien-thuc/*/tu-kiem-tra.md docs/roadmap/audit-noi-dung-25-chuyen-de.md
+          if git diff --cached --quiet; then
+            echo "No product changes."
+            exit 0
+          fi
+          git commit -m "Chuẩn hóa thang tự đánh giá và checklist 11-25"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
