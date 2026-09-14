@@ -1,0 +1,104 @@
+name: QA all Practice Bank duplicates
+
+on:
+  push:
+    branches:
+      - feature/topics06-08-practice-banks-v1
+    paths:
+      - .github/workflows/qa-practice-duplicates-all.yml
+
+permissions:
+  contents: write
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Ensure no exact duplicates in all banks
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from collections import defaultdict
+          from pathlib import Path
+
+          total = 0
+          for manifest_path in sorted(Path('docs/assets/data/practice').glob('*.manifest.json')):
+              manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+              by_content = defaultdict(list)
+              for source in manifest.get('sources', []):
+                  chunk = json.loads((manifest_path.parent / source).read_text(encoding='utf-8'))
+                  for q in chunk.get('questions', []):
+                      key = (str(q.get('question', '')).strip(), tuple(map(str, q.get('options', []))))
+                      by_content[key].append(str(q.get('id', '(missing)')))
+              duplicate_groups = [ids for ids in by_content.values() if len(ids) > 1]
+              count = sum(len(ids) - 1 for ids in duplicate_groups)
+              total += count
+              print(f'{manifest_path.name}: {count} exact duplicate occurrences')
+              for ids in duplicate_groups:
+                  print('  - ' + ', '.join(ids))
+          if total:
+              raise SystemExit(f'Found {total} exact duplicate occurrences across current banks')
+          print('No exact duplicate questions in all current Practice Banks.')
+          PY
+
+      - name: Add duplicate-content validation to validator
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('validate_practice_bank.py')
+          text = path.read_text(encoding='utf-8')
+          marker = '    question_ids = {str(qid) for qid in ids if qid}\n\n'
+          addition = '''    content_signatures: list[tuple[str, tuple[str, ...], str]] = []
+          for question, _ in questions:
+              prompt = str(question.get("question", "")).strip()
+              options = question.get("options")
+              if prompt and isinstance(options, list) and len(options) == 4:
+                  content_signatures.append(
+                      (prompt, tuple(map(str, options)), str(question.get("id", "(missing)")))
+                  )
+
+          signature_counts = Counter((prompt, options) for prompt, options, _ in content_signatures)
+          for (prompt, options), count in signature_counts.items():
+              if count <= 1:
+                  continue
+              duplicate_qids = [
+                  qid
+                  for item_prompt, item_options, qid in content_signatures
+                  if item_prompt == prompt and item_options == options
+              ]
+              errors.append(
+                  "Câu hỏi trùng nội dung và phương án: " + ", ".join(duplicate_qids)
+              )
+
+          '''
+          if 'Câu hỏi trùng nội dung và phương án:' not in text:
+              if marker not in text:
+                  raise SystemExit('Không tìm thấy vị trí chèn duplicate validation')
+              text = text.replace(marker, marker + addition, 1)
+              path.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Validate all Practice Banks with upgraded validator
+        run: python validate_practice_bank.py
+
+      - name: Commit upgraded validator
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add validate_practice_bank.py
+          if git diff --cached --quiet; then
+            echo "Validator already up to date."
+            exit 0
+          fi
+          git commit -m "Bổ sung kiểm tra câu hỏi trùng vào Practice Bank validator"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
