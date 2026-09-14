@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "STAT22-V1",
+  "topic": {
+    "id": "22-dai-luong-dac-trung",
+    "title": "Các đại lượng đặc trưng của dữ liệu"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "trung-binh-tho": "Số trung bình từ dữ liệu thô",
+    "trung-binh-tan-so": "Số trung bình từ bảng tần số",
+    "trung-vi": "Trung vị",
+    "mot": "Mốt",
+    "nhieu-mot": "Nhiều mốt và không có mốt nổi bật",
+    "khoang-bien-thien": "Khoảng biến thiên",
+    "ngoai-lai": "Ảnh hưởng của giá trị ngoại lai",
+    "so-sanh-trung-binh-trung-vi": "So sánh trung bình và trung vị",
+    "chon-dai-luong": "Chọn đại lượng đại diện",
+    "so-sanh-hai-bo": "So sánh hai bộ dữ liệu"
+  },
+  "skill_groups": [
+    {
+      "id": "trung-binh",
+      "label": "A. Số trung bình",
+      "skills": [
+        "trung-binh-tho",
+        "trung-binh-tan-so"
+      ]
+    },
+    {
+      "id": "trung-vi-mot",
+      "label": "B. Trung vị và mốt",
+      "skills": [
+        "trung-vi",
+        "mot",
+        "nhieu-mot"
+      ]
+    },
+    {
+      "id": "phan-tan-ngoai-lai",
+      "label": "C. Phân tán và ngoại lai",
+      "skills": [
+        "khoang-bien-thien",
+        "ngoai-lai",
+        "so-sanh-trung-binh-trung-vi"
+      ]
+    },
+    {
+      "id": "lua-chon-so-sanh",
+      "label": "D. Chọn đại lượng và so sánh",
+      "skills": [
+        "chon-dai-luong",
+        "so-sanh-hai-bo"
+      ]
+    }
+  ],
+  "sources": [
+    "22-dai-luong-dac-trung-v1-01.json",
+    "22-dai-luong-dac-trung-v1-02.json",
+    "22-dai-luong-dac-trung-v1-03.json",
+    "22-dai-luong-dac-trung-v1-04.json"
+  ]
+}
