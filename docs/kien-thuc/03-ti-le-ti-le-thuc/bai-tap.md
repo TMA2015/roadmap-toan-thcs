@@ -1,7 +1,26 @@
 # Bài tập – Chuyên đề 03: Tỉ lệ – Tỉ lệ thức
 
-> **Mục tiêu:** nhận biết tỉ lệ thức, đại lượng tỉ lệ thuận/nghịch và giải bài toán thực tế.
+<link rel="stylesheet" href="../../../assets/stylesheets/practice-engine.css">
+<script src="../../../assets/javascripts/practice-engine-v2.js" defer></script>
+
+> **Mục tiêu:** nhận biết tỉ số, tỉ lệ thức, đại lượng tỉ lệ thuận/nghịch và giải bài toán thực tế.
 > **Quy ước:** `03-Mx-yy`.
+
+## 🎯 Luyện tập tương tác
+
+Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng **120 câu**. Ngân hàng được tổ chức theo mini-roadmap kỹ năng: **Tỉ số và tỉ lệ thức → Dãy tỉ số và chia theo tỉ lệ → Đại lượng tỉ lệ → Ứng dụng và mô hình hóa**.
+
+Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ có lời giải ngắn và nút **Làm câu tương tự**. Bảng tiến độ hiển thị kỹ năng theo trình tự học cố định; có thể bấm trực tiếp một kỹ năng để luyện riêng hoặc dùng **Luyện điểm yếu** để ưu tiên tối đa hai kỹ năng yếu nhất.
+
+<div data-practice-bank-v2="../../../assets/data/practice/03-ti-le-ti-le-thuc-v1.manifest.json" data-session-size="10"></div>
+
+> **Lưu ý:** tiến độ hiện được lưu bằng `localStorage`, vì vậy dữ liệu chưa tự đồng bộ giữa các thiết bị hoặc trình duyệt khác nhau.
+
+---
+
+## Bài tập tự luận bổ sung
+
+Các bài dưới đây được giữ lại để học sinh luyện cách trình bày lời giải đầy đủ sau phần trắc nghiệm tương tác.
 
 # Mức 1 – Nhận biết
 ### 03-M1-01
