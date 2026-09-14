@@ -20,6 +20,15 @@ jobs:
       - name: Restore rewritten Practice Banks
         shell: bash
         run: |
+          echo "e466dc0c266f2d2bc151904bf86181f50debfed1aab7a1eaaa788af8b0773d8e  .tmp/rewrite21-25.payload.01" | sha256sum -c -
+          echo "a8de4b4fc0f62c8aac4c86cd7dde05556f3f13a8a15d3ffcae72b2d5ac7db2dc  .tmp/rewrite21-25.payload.02" | sha256sum -c -
+          echo "8ce722aa7b8ee375ffddadca41aa761303aaaf7c8d75353316ab472e40cce8ad  .tmp/rewrite21-25.payload.03" | sha256sum -c -
+          echo "fe680b8376a6b63cf3a2f082b795035674a04ef2dd0cd47921d4125368e4a1d2  .tmp/rewrite21-25.payload.04" | sha256sum -c -
+          echo "681c291490291d72cf283f71e3d69f1b9557a53c205a0d9a3b4093957b774b00  .tmp/rewrite21-25.payload.05" | sha256sum -c -
+          echo "10f4c04b722ce596fa375c6969c8965ee6af9cd8d22685152e9a5ec6dcacb867  .tmp/rewrite21-25.payload.06" | sha256sum -c -
+          echo "7a7c9aef9b2b56b25b4636cf6513ec5e4885986bd6028d1da21764954dc5f23f  .tmp/rewrite21-25.payload.07" | sha256sum -c -
+          echo "eccc0925e9060eba50c85c19fdeac38d872b5abc97c9da1b4167f2a44130735c  .tmp/rewrite21-25.payload.08" | sha256sum -c -
+          echo "2e5d19320061d3ed29f98ba0009c9f0779792b10a90a6afe43b6a253dc855a96  .tmp/rewrite21-25.payload.09" | sha256sum -c -
           cat .tmp/rewrite21-25.payload.01 \
               .tmp/rewrite21-25.payload.02 \
               .tmp/rewrite21-25.payload.03 \
