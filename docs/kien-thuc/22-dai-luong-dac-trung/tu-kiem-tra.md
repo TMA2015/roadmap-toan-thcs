@@ -58,12 +58,27 @@ Nêu cách chọn giữa trung bình, trung vị và mốt trong ba tình huốn
 | 6, 9 | Khoảng biến thiên |
 | 8, 10 | Chọn đại lượng đại diện |
 
-# Tự đánh giá
+# Thang tự đánh giá
 
-- 9–10: hoàn thành tốt.
-- 7–8,75: đạt.
-- 5–6,75: quay lại M2–M3.
-- Dưới 5: học lại phần cốt lõi.
+| Điểm | Mức | Hành động đề xuất |
+|---:|---|---|
+| 9,0–10 | Hoàn thành tốt | Có thể tiếp tục lộ trình; vẫn chữa mọi câu chưa chắc |
+| 7,0–8,75 | Đạt | Chữa toàn bộ câu sai rồi chuyển tiếp |
+| 5,0–6,75 | Chưa chắc | Quay lại đúng dạng bài còn yếu và luyện thêm M2–M3 |
+| Dưới 5,0 | Cần củng cố | Học lại kiến thức cốt lõi và làm lại M1–M2 |
+
+> Điểm số chỉ là một tín hiệu. Quan trọng hơn là xác định **loại lỗi** và sửa đúng phần kiến thức gốc.
+
+---
+
+# Checklist sau khi chấm
+
+- [ ] Tôi đã ghi lại điểm số.
+- [ ] Tôi đã đối chiếu từng câu sai với **Bảng truy nguyên lỗi**.
+- [ ] Tôi đã xác định lỗi thuộc nhóm kiến thức / biến đổi / dấu / điều kiện / mô hình hóa / kết luận / trình bày.
+- [ ] Tôi đã làm lại từng câu sai mà không nhìn đáp án.
+- [ ] Tôi đã luyện lại kỹ năng yếu trong Practice Bank nếu cần.
+- [ ] Nếu đạt từ 7 điểm trở lên, tôi đã chữa xong các câu sai trước khi chuyển tiếp.
 
 # Liên kết Roadmap
 
