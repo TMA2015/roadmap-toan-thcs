@@ -1,0 +1,44 @@
+name: Generate Practice Banks 13-16
+
+on:
+  push:
+    branches:
+      - feature/topics13-16-practice-banks-v1
+    paths:
+      - tools/practice-batch-13-16/**
+      - .github/workflows/generate-practice-13-16.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Generate static Practice Banks
+        run: python tools/practice-batch-13-16/generate_banks.py
+
+      - name: Validate all Practice Banks
+        run: python validate_practice_bank.py
+
+      - name: Commit generated files
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/assets/data/practice/13-goc-va-duong-thang-v1*.json
+          git add docs/assets/data/practice/14-tam-giac-v1*.json
+          git add docs/assets/data/practice/15-duong-dong-quy-v1*.json
+          git add docs/assets/data/practice/16-tu-giac-v1*.json
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git commit -m "Sinh 480 câu Practice Bank cho Chuyên đề 13-16"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
