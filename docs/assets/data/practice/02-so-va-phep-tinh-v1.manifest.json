@@ -26,6 +26,48 @@
     "phan-tram": "Phần trăm",
     "can-bac-hai": "Căn bậc hai nền tảng"
   },
+  "skill_groups": [
+    {
+      "id": "nen-tang-so",
+      "label": "A. Nền tảng số",
+      "skills": [
+        "tap-hop-so",
+        "so-nguyen-phep-tinh",
+        "gia-tri-tuyet-doi",
+        "thu-tu-phep-tinh",
+        "luy-thua"
+      ]
+    },
+    {
+      "id": "chia-het-so-nguyen-to",
+      "label": "B. Chia hết và số nguyên tố",
+      "skills": [
+        "dau-hieu-chia-het",
+        "so-nguyen-to",
+        "phan-tich-thua-so-nguyen-to",
+        "ucln",
+        "bcnn"
+      ]
+    },
+    {
+      "id": "phan-so-huu-ti",
+      "label": "C. Phân số và số hữu tỉ",
+      "skills": [
+        "rut-gon-phan-so",
+        "quy-dong-so-sanh-phan-so",
+        "phep-tinh-phan-so",
+        "so-huu-ti-thap-phan"
+      ]
+    },
+    {
+      "id": "ung-dung-mo-rong",
+      "label": "D. Ứng dụng mở rộng",
+      "skills": [
+        "phan-tram",
+        "can-bac-hai"
+      ]
+    }
+  ],
   "sources": [
     "02-so-va-phep-tinh-v1-01.json",
     "02-so-va-phep-tinh-v1-02.json",
