@@ -2,7 +2,10 @@
   "version": 2,
   "schema": "practice-bank-manifest-v1",
   "bank_id": "RAT07-V1",
-  "topic": {"id": "07-phan-thuc-dai-so", "title": "Phân thức đại số"},
+  "topic": {
+    "id": "07-phan-thuc-dai-so",
+    "title": "Phân thức đại số"
+  },
   "session_size": 10,
   "question_count": 120,
   "skill_labels": {
@@ -22,10 +25,49 @@
     "tim-gia-tri-nguyen": "Tìm giá trị nguyên"
   },
   "skill_groups": [
-    {"id": "A", "label": "A. Khái niệm và điều kiện xác định", "skills": ["nhan-biet-phan-thuc", "dieu-kien-xac-dinh", "hai-phan-thuc-bang-nhau", "doi-dau-phan-thuc"]},
-    {"id": "B", "label": "B. Rút gọn phân thức", "skills": ["phan-tich-tu-mau", "rut-gon-phan-thuc", "giu-dieu-kien-ban-dau"]},
-    {"id": "C", "label": "C. Quy đồng và phép tính", "skills": ["quy-dong-mau-thuc", "cong-tru-phan-thuc", "nhan-phan-thuc", "chia-phan-thuc"]},
-    {"id": "D", "label": "D. Biểu thức hữu tỉ và vận dụng", "skills": ["bieu-thuc-nhieu-phep-tinh", "tinh-gia-tri-phan-thuc", "tim-gia-tri-nguyen"]}
+    {
+      "id": "A",
+      "label": "A. Khái niệm và điều kiện xác định",
+      "skills": [
+        "nhan-biet-phan-thuc",
+        "dieu-kien-xac-dinh",
+        "hai-phan-thuc-bang-nhau",
+        "doi-dau-phan-thuc"
+      ]
+    },
+    {
+      "id": "B",
+      "label": "B. Rút gọn phân thức",
+      "skills": [
+        "phan-tich-tu-mau",
+        "rut-gon-phan-thuc",
+        "giu-dieu-kien-ban-dau"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "C. Quy đồng và phép tính",
+      "skills": [
+        "quy-dong-mau-thuc",
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc",
+        "chia-phan-thuc"
+      ]
+    },
+    {
+      "id": "D",
+      "label": "D. Biểu thức hữu tỉ và vận dụng",
+      "skills": [
+        "bieu-thuc-nhieu-phep-tinh",
+        "tinh-gia-tri-phan-thuc",
+        "tim-gia-tri-nguyen"
+      ]
+    }
   ],
-  "sources": ["07-phan-thuc-dai-so-v1-all.json"]
+  "sources": [
+    "07-phan-thuc-dai-so-v1-01.json",
+    "07-phan-thuc-dai-so-v1-02.json",
+    "07-phan-thuc-dai-so-v1-03.json",
+    "07-phan-thuc-dai-so-v1-04.json"
+  ]
 }
