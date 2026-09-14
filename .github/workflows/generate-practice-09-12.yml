@@ -21,6 +21,33 @@ jobs:
           ref: ${{ github.ref_name }}
           fetch-depth: 0
 
+      - name: Diagnose compressed payloads
+        shell: bash
+        run: |
+          python - <<'PY'
+          import base64, gzip, hashlib
+          from pathlib import Path
+
+          root = Path('tools/practice-batch-09-12')
+          expected_lengths = {'09': 6432, '10': 5940, '11': 6404, '12': 6084}
+          expected_sha = {'09': 'a5ec4da11253', '10': 'd0aae5c54db8', '11': 'ba2a4834e405', '12': 'effc432a235e'}
+          failed = False
+          for topic in ('09', '10', '11', '12'):
+              text = (root / f'{topic}.json.gz.b64').read_text(encoding='utf-8').strip()
+              print(f'{topic}: base64_len={len(text)} expected={expected_lengths[topic]}')
+              try:
+                  raw = gzip.decompress(base64.b64decode(text, validate=True))
+                  digest = hashlib.sha256(raw).hexdigest()[:12]
+                  print(f'{topic}: raw_len={len(raw)} sha256={digest} expected_sha={expected_sha[topic]}')
+                  if digest != expected_sha[topic]:
+                      failed = True
+              except Exception as exc:
+                  failed = True
+                  print(f'{topic}: DECODE ERROR: {type(exc).__name__}: {exc}')
+          if failed:
+              raise SystemExit('One or more payloads do not match the intended source.')
+          PY
+
       - name: Generate static Practice Banks
         run: python tools/practice-batch-09-12/generate_banks.py
 
