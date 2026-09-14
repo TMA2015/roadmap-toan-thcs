@@ -422,6 +422,8 @@ Ta thấy các giá trị tại `x` và `-x` bằng nhau.
 
 > Phần này là bước chuẩn bị trực tiếp cho [Chuyên đề 12 – Phương trình bậc hai & Viète](../12-phuong-trinh-bac-hai-viete/index.md).
 
+> **Phạm vi:** các tính chất “đỉnh tại `O`” và “trục đối xứng là `Oy`” ở trên chỉ áp dụng cho dạng đặc biệt `y = ax²`. Không được suy rộng chúng cho mọi hàm bậc hai `y = ax² + bx + c`; dạng tổng quát được dùng như nội dung kết nối ở Chuyên đề 12 và sẽ học sâu hơn ở THPT.
+
 ---
 
 
@@ -592,6 +594,48 @@ Cắt nhau khi:
 `m ≠ 5`.
 
 ---
+
+### Dạng 11 – Mở rộng: giao điểm đường thẳng và parabol `y = ax²`
+
+> Nên quay lại dạng này sau khi đã học Chuyên đề 12 về phương trình bậc hai.
+
+Giả sử cần tìm giao điểm của:
+
+```text
+(P): y = ax²      (a ≠ 0)
+(d): y = mx + n
+```
+
+Tại giao điểm, hai giá trị `y` bằng nhau nên:
+
+```text
+ax² = mx + n
+```
+
+hay:
+
+```text
+ax² - mx - n = 0
+```
+
+Vì vậy:
+
+- mỗi nghiệm thực `x` cho một giao điểm;
+- phương trình có hai nghiệm phân biệt → đường thẳng cắt parabol tại hai điểm;
+- có nghiệm kép → đường thẳng tiếp xúc parabol tại một điểm;
+- vô nghiệm thực → hai đồ thị không có điểm chung.
+
+Ví dụ với `y = x²` và `y = x + 2`:
+
+```text
+x² = x + 2
+⇔ x² - x - 2 = 0
+⇔ (x - 2)(x + 1) = 0
+```
+
+nên có hai giao điểm ứng với `x = 2` và `x = -1`.
+
+Đây là cầu nối trực tiếp giữa **đồ thị** và **phương trình bậc hai**, không phải một kỹ thuật tách rời.
 
 ## 🚀 6. Dạng bài thi vào lớp 10
 

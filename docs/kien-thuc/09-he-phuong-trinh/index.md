@@ -143,6 +143,18 @@ Vì vậy:
 
 ---
 
+### 3.3A. Các phép biến đổi tương đương của hệ
+
+Những thao tác sau giữ nguyên tập nghiệm của hệ:
+
+1. đổi thứ tự hai phương trình;
+2. nhân **cả hai vế của một phương trình** với cùng một số khác `0`;
+3. thay một phương trình bằng tổng của chính phương trình đó với một bội của phương trình còn lại.
+
+Phương pháp cộng đại số dựa trực tiếp vào thao tác thứ ba. Ví dụ, nếu cộng hai phương trình để khử `y`, ta không tạo ra nghiệm mới và cũng không làm mất nghiệm cũ, miễn là các phép biến đổi được thực hiện trên toàn bộ hai vế.
+
+> Không được chỉ cộng/trừ riêng các hạng tử thuận mắt hoặc nhân một vế mà quên vế còn lại.
+
 ### 3.4. Hai phương pháp giải cơ bản
 
 #### Phương pháp thế
@@ -308,6 +320,27 @@ $$
 Phương trình thứ hai chính là hai lần phương trình thứ nhất.
 
 Vì vậy hai phương trình tương đương và hệ có vô số nghiệm.
+
+#### Mở rộng – kiểm tra nhanh số nghiệm mà không cần chia hệ số
+
+Với hệ
+
+```text
+a1 x + b1 y = c1
+a2 x + b2 y = c2
+```
+
+trong đó mỗi phương trình thực sự là phương trình bậc nhất hai ẩn, đặt:
+
+```text
+D = a1*b2 - a2*b1
+```
+
+- `D ≠ 0` → hai đường thẳng cắt nhau, hệ có đúng một nghiệm;
+- `D = 0`, đồng thời `a1*c2 - a2*c1 = 0` và `b1*c2 - b2*c1 = 0` → hai phương trình biểu diễn cùng một đường thẳng, hệ có vô số nghiệm;
+- `D = 0` nhưng ít nhất một trong hai biểu thức còn lại khác `0` → hai đường thẳng song song phân biệt, hệ vô nghiệm.
+
+Cách viết này đặc biệt hữu ích khi một số hệ số bằng `0`, vì tránh việc chia cho một hệ số có thể bằng `0`. Đây là **công cụ kiểm tra/mở rộng**, không bắt buộc phải dùng thay cho thế hoặc cộng đại số.
 
 ---
 
