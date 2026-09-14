@@ -1,11 +1,15 @@
-name: QA Practice Banks 06-08
+name: QA and Fix Practice Banks 06-08
 
 on:
   push:
     branches:
       - feature/topics06-08-practice-banks-v1
     paths:
+      - tools/practice-batch-06-08/fix_topic06_duplicates.py
       - .github/workflows/generate-practice-06-08.yml
+
+permissions:
+  contents: write
 
 jobs:
   qa:
@@ -15,8 +19,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
+          fetch-depth: 0
 
-      - name: Report exact duplicate questions
+      - name: Replace exact duplicates in Topic 06
+        run: python tools/practice-batch-06-08/fix_topic06_duplicates.py
+
+      - name: Validate all Practice Banks
+        run: python validate_practice_bank.py
+
+      - name: Ensure no exact duplicates in Topics 06-08
         shell: bash
         run: |
           python - <<'PY'
@@ -33,17 +44,25 @@ jobs:
                   chunk = json.loads((root / source).read_text(encoding='utf-8'))
                   for q in chunk['questions']:
                       key = (q['question'], tuple(q['options']))
-                      by_content[key].append((q['id'], q.get('tags', {}).get('skill', [])))
-              dup = {key: rows for key, rows in by_content.items() if len(rows) > 1}
-              count = sum(len(v)-1 for v in dup.values())
+                      by_content[key].append(q['id'])
+              dup = {key: ids for key, ids in by_content.items() if len(ids) > 1}
+              count = sum(len(ids)-1 for ids in dup.values())
               total_exact += count
-              print(f'\n{slug}: {count} exact duplicate occurrences')
-              for (question, options), rows in dup.items():
-                  print(json.dumps({'question': question, 'options': options, 'rows': rows}, ensure_ascii=False))
+              print(f'{slug}: {count} exact duplicate occurrences')
           if total_exact:
               raise SystemExit(f'Found {total_exact} exact duplicate occurrences')
-          print('\nNo exact duplicate questions in Topics 06-08.')
+          print('No exact duplicate questions in Topics 06-08.')
           PY
 
-      - name: Validate all Practice Banks
-        run: python validate_practice_bank.py
+      - name: Commit corrected Topic 06 chunks
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/assets/data/practice/06-phan-tich-da-thuc-v1-*.json
+          if git diff --cached --quiet; then
+            echo "No corrections to commit."
+            exit 0
+          fi
+          git commit -m "Loại câu trùng trong Practice Bank Chuyên đề 06"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
