@@ -137,13 +137,15 @@ nên:
 
 ### 3.3. Hai phân thức bằng nhau
 
-Với `B ≠ 0`, `D ≠ 0`:
+Với `B`, `D` là các đa thức khác đa thức `0`, hai phân thức
 
-`A/B = C/D`
+`A/B` và `C/D`
 
-khi và chỉ khi:
+bằng nhau khi:
 
-`A·D = B·C`.
+`A·D = B·C`
+
+như một đẳng thức đa thức. Khi thay biến bằng giá trị cụ thể, chỉ được so sánh trên **miền xác định chung**, tức là các giá trị làm cả `B` và `D` khác `0`.
 
 Ví dụ:
 
@@ -173,6 +175,9 @@ trên các giá trị của biến mà phân thức ban đầu xác định.
 - **rút gọn**: chia đi nhân tử chung.
 
 ---
+
+!!! warning "Miền xác định không tự mở rộng"
+    Khi nhân cả tử và mẫu với một đa thức `M`, biểu thức mới có thể thêm các giá trị bị loại tại nghiệm của `M`. Ngược lại, khi rút gọn một nhân tử chung, không được lấy lại các giá trị đã bị loại ở phân thức ban đầu. Vì vậy mọi đẳng thức biến đổi phân thức phải được hiểu trên **miền xác định chung** của các biểu thức đang so sánh.
 
 ### 3.5. Quy tắc đổi dấu
 
