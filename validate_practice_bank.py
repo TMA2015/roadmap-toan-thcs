@@ -75,6 +75,61 @@ def validate_question(
     return errors
 
 
+def validate_skill_groups(
+    skill_groups: Any,
+    skill_labels: set[str],
+) -> tuple[list[str], list[str]]:
+    errors: list[str] = []
+    ordered_skills: list[str] = []
+
+    if not isinstance(skill_groups, list) or not skill_groups:
+        return ["Manifest phải có skill_groups không rỗng để xác định lộ trình kỹ năng"], ordered_skills
+
+    group_ids: list[str] = []
+    seen_skills: set[str] = set()
+
+    for index, group in enumerate(skill_groups, start=1):
+        if not isinstance(group, dict):
+            errors.append(f"skill_groups[{index}] phải là object")
+            continue
+
+        group_id = group.get("id")
+        group_label = group.get("label")
+        skills = group.get("skills")
+
+        if not isinstance(group_id, str) or not group_id.strip():
+            errors.append(f"skill_groups[{index}] thiếu id hợp lệ")
+        else:
+            group_ids.append(group_id)
+
+        if not isinstance(group_label, str) or not group_label.strip():
+            errors.append(f"skill_groups[{index}] thiếu label hợp lệ")
+
+        if not isinstance(skills, list) or not skills:
+            errors.append(f"skill_groups[{index}].skills phải là danh sách không rỗng")
+            continue
+
+        for skill in skills:
+            if skill not in skill_labels:
+                errors.append(f"skill_groups[{index}] chứa skill lạ `{skill}`")
+                continue
+            if skill in seen_skills:
+                errors.append(f"skill `{skill}` xuất hiện ở nhiều skill_groups")
+                continue
+            seen_skills.add(skill)
+            ordered_skills.append(skill)
+
+    for group_id, count in Counter(group_ids).items():
+        if count > 1:
+            errors.append(f"skill_groups có id bị trùng: `{group_id}`")
+
+    missing = sorted(skill_labels - seen_skills)
+    for skill in missing:
+        errors.append(f"skill_labels có skill chưa được xếp vào skill_groups: `{skill}`")
+
+    return errors, ordered_skills
+
+
 def validate_manifest(manifest_path: Path) -> tuple[int, set[str]]:
     errors: list[str] = []
     question_ids: set[str] = set()
@@ -115,6 +170,9 @@ def validate_manifest(manifest_path: Path) -> tuple[int, set[str]]:
         errors.append("Manifest phải có skill_labels không rỗng")
         skill_labels_obj = {}
     skill_labels = set(skill_labels_obj)
+
+    group_errors, ordered_skills = validate_skill_groups(manifest.get("skill_groups"), skill_labels)
+    errors.extend(group_errors)
 
     questions: list[tuple[dict[str, Any], Path]] = []
     chunk_ids: list[str] = []
@@ -194,9 +252,10 @@ def validate_manifest(manifest_path: Path) -> tuple[int, set[str]]:
     print(f"Số chunk : {len(sources)}")
     print(f"Số câu   : {len(questions)}")
     print("Độ khó   : " + ", ".join(f"{key}={value}" for key, value in sorted(difficulty_counts.items())))
-    print("Kỹ năng  :")
-    for skill, count in sorted(skill_counts.items()):
-        print(f"  - {skill}: {count}")
+    print("Kỹ năng theo lộ trình:")
+    print_order = ordered_skills or sorted(skill_counts)
+    for skill in print_order:
+        print(f"  - {skill}: {skill_counts.get(skill, 0)}")
 
     if errors:
         print("\n❌ KHÔNG ĐẠT")
