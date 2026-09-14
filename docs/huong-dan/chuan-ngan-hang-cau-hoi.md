@@ -11,6 +11,7 @@ Ngân hàng câu hỏi phải:
 - theo dõi kết quả theo **kỹ năng**, không chỉ theo chương;
 - cho phép ưu tiên câu chưa làm, câu từng làm sai và kỹ năng yếu;
 - hiển thị kỹ năng theo một **lộ trình cố định, dễ hình dung**;
+- hỗ trợ **hình minh họa tùy chọn** cho những câu hình học cần đọc cấu hình;
 - dễ kiểm định, sửa lỗi và chia nhỏ để nhiều người có thể biên soạn độc lập.
 
 ## 2. Cấu trúc thư mục
@@ -27,6 +28,14 @@ docs/assets/data/practice/
 ```
 
 Không nên để quá nhiều câu trong một tệp. Khuyến nghị **25–50 câu/chunk**.
+
+Hình minh họa của bài tập nên đặt tách khỏi dữ liệu:
+
+```text
+docs/assets/diagrams/practice/<chuyen-de>/
+```
+
+Ưu tiên SVG cho hình học đường nét vì nhẹ, rõ trên màn hình retina và co giãn tốt.
 
 ## 3. Manifest
 
@@ -153,6 +162,35 @@ Nhờ đó bảng tiến độ không bị đảo vị trí liên tục nhưng h
 }
 ```
 
+### 6.1. Hình minh họa tùy chọn (`diagram`)
+
+Chỉ thêm hình khi việc đọc cấu hình bằng chữ có nguy cơ gây nhầm hoặc hình là một phần tự nhiên của kỹ năng cần luyện. Các câu nhận biết đơn giản không cần hình.
+
+Ví dụ:
+
+```json
+{
+  "id": "GEO17V1_041",
+  "question": "Trong hình, DE song song với BC. Biết AD = 4, DB = 6, AE = 5. Tính EC.",
+  "diagram": {
+    "src": "../../diagrams/practice/17/GEO17V1_041.svg",
+    "alt": "Tam giác ABC có D trên AB, E trên AC và DE song song BC",
+    "caption": "Hình minh họa, không nhất thiết theo tỉ lệ."
+  }
+}
+```
+
+Quy tắc:
+
+1. `diagram` là **tùy chọn**; câu không có trường này hoạt động như trước.
+2. `src` phải là đường dẫn local tương đối từ thư mục chứa manifest/chunk; không dùng URL ngoài hoặc `data:` URI.
+3. `alt` bắt buộc, mô tả đúng cấu hình hình học cho khả năng truy cập.
+4. `caption` tùy chọn; nếu hình không vẽ theo tỉ lệ nên ghi rõ “Hình minh họa, không nhất thiết theo tỉ lệ.”
+5. Chấp nhận `.svg`, `.png`, `.jpg`, `.jpeg`, `.webp`; ưu tiên SVG cho hình học.
+6. Hình không được vô tình cho biết đáp án bằng cách vẽ đúng tỉ lệ khi đề chỉ cung cấp quan hệ định tính.
+7. Nhãn điểm, góc, đường phải rõ trên màn hình nhỏ; tránh trang trí không phục vụ việc đọc đề.
+8. Với câu phức tạp, hình được hiển thị ngay dưới đề và trước các phương án.
+
 ## 7. Quy tắc ID
 
 Mẫu khuyến nghị:
@@ -249,7 +287,8 @@ Mỗi ngân hàng phải được kiểm tra:
 - công thức MathJax hiển thị đúng;
 - câu hỏi và lời giải không mâu thuẫn;
 - đáp án nhiễu có ý nghĩa;
-- phân bố câu hỏi không quá lệch về một kỹ năng.
+- phân bố câu hỏi không quá lệch về một kỹ năng;
+- nếu có `diagram`: file tồn tại, đường dẫn local hợp lệ, có `alt`, và hình không làm lộ đáp án.
 
 ## 13. Mục tiêu quy mô
 
@@ -258,5 +297,3 @@ Trong giai đoạn hiện tại:
 - chuyên đề nền tảng: khoảng **80–150 câu**;
 - chuyên đề trọng tâm thi vào 10: có thể **150–300 câu**;
 - mỗi lượt học sinh chỉ làm khoảng **10 câu**, được lấy thích nghi từ ngân hàng lớn.
-
-Như vậy quy mô ngân hàng có thể tăng mà giao diện học sinh vẫn đơn giản, còn bảng tiến độ vẫn giữ được một lộ trình kỹ năng ổn định.
