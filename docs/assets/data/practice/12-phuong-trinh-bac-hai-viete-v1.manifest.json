@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "QUA12-V1",
+  "topic": {
+    "id": "12-phuong-trinh-bac-hai-viete",
+    "title": "Phương trình bậc hai & Viète"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "nhan-dang-pt-bac-hai": "Nhận dạng phương trình bậc hai",
+    "he-so-abc": "Xác định hệ số a, b, c",
+    "tinh-delta": "Tính biệt thức Δ",
+    "so-nghiem-delta": "Số nghiệm theo Δ",
+    "cong-thuc-nghiem": "Công thức nghiệm",
+    "delta-phay": "Công thức nghiệm thu gọn Δ'",
+    "giai-pt-bac-hai": "Giải phương trình bậc hai",
+    "nham-nghiem": "Nhẩm nghiệm",
+    "tham-so-so-nghiem": "Tham số và số nghiệm",
+    "tong-tich-nghiem": "Tổng – tích nghiệm theo Viète",
+    "bieu-thuc-doi-xung": "Biểu thức đối xứng theo nghiệm",
+    "lap-pt-tu-nghiem": "Lập phương trình từ nghiệm",
+    "dau-nghiem": "Xét dấu hai nghiệm",
+    "lien-he-do-thi": "Liên hệ nghiệm với đồ thị"
+  },
+  "skill_groups": [
+    {
+      "id": "A",
+      "label": "A. Phương trình bậc hai và Δ",
+      "skills": [
+        "nhan-dang-pt-bac-hai",
+        "he-so-abc",
+        "tinh-delta",
+        "so-nghiem-delta",
+        "cong-thuc-nghiem",
+        "delta-phay"
+      ]
+    },
+    {
+      "id": "B",
+      "label": "B. Giải phương trình và tham số",
+      "skills": [
+        "giai-pt-bac-hai",
+        "nham-nghiem",
+        "tham-so-so-nghiem"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "C. Hệ thức Viète",
+      "skills": [
+        "tong-tich-nghiem",
+        "bieu-thuc-doi-xung",
+        "lap-pt-tu-nghiem"
+      ]
+    },
+    {
+      "id": "D",
+      "label": "D. Dấu nghiệm và liên hệ đồ thị",
+      "skills": [
+        "dau-nghiem",
+        "lien-he-do-thi"
+      ]
+    }
+  ],
+  "sources": [
+    "12-phuong-trinh-bac-hai-viete-v1-01.json",
+    "12-phuong-trinh-bac-hai-viete-v1-02.json",
+    "12-phuong-trinh-bac-hai-viete-v1-03.json",
+    "12-phuong-trinh-bac-hai-viete-v1-04.json"
+  ]
+}
