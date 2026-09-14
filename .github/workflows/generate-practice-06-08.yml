@@ -1,0 +1,44 @@
+name: Generate Practice Banks 06-08
+
+on:
+  push:
+    branches:
+      - feature/topics06-08-practice-banks-v1
+    paths:
+      - tools/practice-batch-06-08/payload.json.gz.b64
+      - tools/practice-batch-06-08/generate_banks.py
+      - .github/workflows/generate-practice-06-08.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Generate static question banks
+        run: python tools/practice-batch-06-08/generate_banks.py
+
+      - name: Validate all Practice Banks
+        run: python validate_practice_bank.py
+
+      - name: Commit generated JSON
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/assets/data/practice/06-phan-tich-da-thuc-v1*.json
+          git add docs/assets/data/practice/07-phan-thuc-dai-so-v1*.json
+          git add docs/assets/data/practice/08-phuong-trinh-bat-phuong-trinh-v1*.json
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git commit -m "Sinh 360 câu Practice Bank cho Chuyên đề 06-08"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
