@@ -1,13 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280" role="img">
 <style>
   .g{fill:none;stroke:#222;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
-  .thin{fill:none;stroke:#555;stroke-width:1.6;stroke-linecap:round}
+  .thin{fill:none;stroke:#555;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
   .dash{fill:none;stroke:#666;stroke-width:1.6;stroke-dasharray:6 5}
   .pt{fill:#222}
   .txt{font:16px system-ui,sans-serif;fill:#222}
   .small{font:14px system-ui,sans-serif;fill:#444}
 </style>
-<path class="g" d="M45 220 L150 45 L235 220 Z"/><path class="g" d="M275 220 L345 105 L405 220 Z"/>
-<text class="txt" x="145" y="36">A</text><text class="txt" x="28" y="240">B</text><text class="txt" x="235" y="240">C</text>
-<text class="txt" x="340" y="96">D</text><text class="txt" x="260" y="240">E</text><text class="txt" x="405" y="240">F</text>
-<text class="small" x="151" y="266">hai tam giác có các yếu tố tương ứng</text></svg>
+
+<path class="g" d="M150 45 L60 215 L240 215 Z"/>
+<path class="g" d="M340 95 L281.5 205.5 L398.5 205.5 Z"/>
+<text class="txt" x="145" y="36">A</text><text class="txt" x="43" y="235">B</text><text class="txt" x="244" y="235">C</text>
+<text class="txt" x="335" y="86">D</text><text class="txt" x="266" y="226">E</text><text class="txt" x="401" y="226">F</text>
+<text class="small" x="117" y="256">Hai tam giác được vẽ đồng dạng; kích thước có thể khác nhau.</text>
+</svg>

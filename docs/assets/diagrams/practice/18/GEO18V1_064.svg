@@ -1,14 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280" role="img">
 <style>
   .g{fill:none;stroke:#222;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
-  .thin{fill:none;stroke:#555;stroke-width:1.6;stroke-linecap:round}
+  .thin{fill:none;stroke:#555;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
   .dash{fill:none;stroke:#666;stroke-width:1.6;stroke-dasharray:6 5}
   .pt{fill:#222}
   .txt{font:16px system-ui,sans-serif;fill:#222}
   .small{font:14px system-ui,sans-serif;fill:#444}
 </style>
-<path class="g" d="M80 225 L80 45 L385 225 Z"/><path class="g" d="M80 45 L176 225"/>
-<path class="thin" d="M80 207 L98 207 L98 225"/><path class="thin" d="M159 225 L163 205 L183 209"/>
-<text class="txt" x="60" y="38">A</text><text class="txt" x="55" y="247">B</text><text class="txt" x="390" y="247">C</text><text class="txt" x="174" y="247">H</text>
-<text class="small" x="107" y="239">9</text><text class="small" x="275" y="239">16</text>
-<text class="small" x="95" y="130"></text><text class="small" x="258" y="126"></text></svg>
+
+<path class="g" d="M170 105 L80 225 L330 225 Z"/>
+<path class="g" d="M170 105 L170 225"/>
+<path class="thin" d="M158 121 L174 133 L186 117"/>
+<path class="thin" d="M170 205 L190 205 L190 225"/>
+<circle class="pt" cx="170" cy="225" r="4"/>
+<text class="txt" x="163" y="93">A</text><text class="txt" x="62" y="245">B</text><text class="txt" x="336" y="245">C</text><text class="txt" x="176" y="245">H</text>
+<text class="small" x="198" y="190">AH ⟂ BC</text>
+</svg>
