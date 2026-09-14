@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "RAT03-V1",
+  "topic": {
+    "id": "03-ti-le-ti-le-thuc",
+    "title": "Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "ti-so": "Tỉ số",
+    "doi-don-vi-ti-so": "Đổi đơn vị khi lập tỉ số",
+    "ti-le-thuc": "Tỉ lệ thức",
+    "tim-x-ti-le-thuc": "Tìm số chưa biết trong tỉ lệ thức",
+    "day-ti-so-bang-nhau": "Dãy tỉ số bằng nhau",
+    "chia-theo-ti-le": "Chia theo tỉ lệ",
+    "ti-le-thuan": "Đại lượng tỉ lệ thuận",
+    "he-so-ti-le-thuan": "Hệ số tỉ lệ thuận",
+    "ti-le-nghich": "Đại lượng tỉ lệ nghịch",
+    "he-so-ti-le-nghich": "Hệ số tỉ lệ nghịch",
+    "phan-biet-thuan-nghich": "Phân biệt tỉ lệ thuận – nghịch",
+    "ti-le-ban-do": "Tỉ lệ bản đồ",
+    "ti-so-phan-tram": "Tỉ số phần trăm",
+    "chuyen-dong-ti-le": "Tỉ lệ trong bài toán chuyển động",
+    "nang-suat-ti-le": "Tỉ lệ trong bài toán năng suất",
+    "mo-hinh-ti-le": "Mô hình hóa bằng tỉ lệ"
+  },
+  "skill_groups": [
+    {
+      "id": "A",
+      "title": "A. Tỉ số và tỉ lệ thức",
+      "skills": ["ti-so", "doi-don-vi-ti-so", "ti-le-thuc", "tim-x-ti-le-thuc"]
+    },
+    {
+      "id": "B",
+      "title": "B. Dãy tỉ số và chia theo tỉ lệ",
+      "skills": ["day-ti-so-bang-nhau", "chia-theo-ti-le"]
+    },
+    {
+      "id": "C",
+      "title": "C. Đại lượng tỉ lệ",
+      "skills": ["ti-le-thuan", "he-so-ti-le-thuan", "ti-le-nghich", "he-so-ti-le-nghich", "phan-biet-thuan-nghich"]
+    },
+    {
+      "id": "D",
+      "title": "D. Ứng dụng và mô hình hóa",
+      "skills": ["ti-le-ban-do", "ti-so-phan-tram", "chuyen-dong-ti-le", "nang-suat-ti-le", "mo-hinh-ti-le"]
+    }
+  ],
+  "sources": [
+    "03-ti-le-ti-le-thuc-v1-01.json",
+    "03-ti-le-ti-le-thuc-v1-02.json",
+    "03-ti-le-ti-le-thuc-v1-03.json",
+    "03-ti-le-ti-le-thuc-v1-04.json"
+  ]
+}
