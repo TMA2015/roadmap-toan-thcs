@@ -116,6 +116,22 @@ Số nghiệm thực phụ thuộc vào dấu của `Δ`:
 | `Δ = 0` | Có một nghiệm kép |
 | `Δ < 0` | Vô nghiệm trong tập số thực |
 
+### Trực quan – vì sao dấu của `Δ` quyết định số nghiệm?
+
+![Ba trường hợp Δ dương, bằng 0 và âm qua số giao điểm của parabol với trục Ox](../../assets/infographics/12/12-05-delta-va-giao-ox.svg)
+
+Nếu đặt `y = ax² + bx + c`, thì nghiệm của phương trình
+
+`ax² + bx + c = 0`
+
+chính là **hoành độ các giao điểm của parabol với trục `Ox`**. Vì thế:
+
+- `Δ > 0` → cắt `Ox` tại hai điểm → hai nghiệm phân biệt;
+- `Δ = 0` → tiếp xúc `Ox` tại một điểm → nghiệm kép;
+- `Δ < 0` → không cắt `Ox` → không có nghiệm thực.
+
+> Đây là cách nhìn hình học của cùng một kết luận đại số, không phải một quy tắc khác cần học thuộc thêm.
+
 ---
 
 ### 3.3. Công thức nghiệm

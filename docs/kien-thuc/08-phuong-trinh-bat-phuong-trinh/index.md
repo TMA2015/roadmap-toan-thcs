@@ -146,11 +146,33 @@ $$-2x>6\Rightarrow x<-3.$$
 
 > Nếu nhân hoặc chia hai vế cho một **biểu thức chứa ẩn hoặc tham số** mà chưa biết dấu, không được tự động giữ hay đổi chiều. Trước hết phải xác định dấu của biểu thức đó hoặc chia bài toán thành các trường hợp. Ở mức cốt lõi, chỉ nên nhân/chia bất phương trình với số đã biết dấu.
 
+#### Trực quan – biểu diễn tập nghiệm trên trục số
+
+![Minh họa bất phương trình trên trục số: điểm rỗng, điểm đặc và hướng của tập nghiệm](../../assets/infographics/08/08-05-truc-so-bat-phuong-trinh.svg)
+
+Hình trên giúp phân biệt nhanh:
+
+- dấu `<`, `>` → **không lấy mốc** nên dùng điểm rỗng;
+- dấu `≤`, `≥` → **có lấy mốc** nên dùng điểm đặc;
+- phần tô về phía nào cho biết các giá trị được nhận về phía đó.
+
+> Khi biểu diễn trên trục số, cần kiểm tra đồng thời **mốc biên** và **hướng của tập nghiệm**; chỉ đúng một trong hai vẫn là sai.
+
 ### 3.5. Mở rộng – nhiều bất phương trình cùng điều kiện
 
 Khi cần tìm các giá trị thỏa mãn đồng thời nhiều bất phương trình một ẩn, giải từng bất phương trình rồi lấy **giao** các tập nghiệm.
 
 > Phần này dùng để rèn tư duy về giao tập nghiệm và hỗ trợ bài toán có nhiều điều kiện; không xem là trọng tâm cốt lõi ngang với phương trình và bất phương trình bậc nhất một ẩn.
+
+#### Trực quan – giao các tập nghiệm
+
+![Minh họa giao của hai tập nghiệm trên trục số](../../assets/infographics/08/08-06-giao-tap-nghiem.svg)
+
+Nếu bài toán yêu cầu nhiều điều kiện phải đúng **đồng thời**, ta chỉ giữ phần nằm trong **tất cả** các tập nghiệm. Ví dụ trên:
+
+`x > -2` và `x ≤ 3`  →  `-2 < x ≤ 3`.
+
+Đây chính là ý nghĩa trực quan của phép **giao** các tập nghiệm.
 
 ---
 
