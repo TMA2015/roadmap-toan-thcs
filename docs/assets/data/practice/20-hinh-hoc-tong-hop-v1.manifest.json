@@ -1,0 +1,71 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "SYN20-V1",
+  "topic": {
+    "id": "20-hinh-hoc-tong-hop",
+    "title": "Hình học tổng hợp, đo lường và hình khối"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "nhan-dang-cong-cu": "Nhận dạng công cụ",
+    "song-song-dong-dang": "Song song → đồng dạng",
+    "hai-goc-vuong-noi-tiep": "Hai góc vuông → nội tiếp",
+    "noi-tiep-dong-dang": "Nội tiếp → đồng dạng",
+    "dong-dang-he-thuc-tich": "Đồng dạng → hệ thức tích",
+    "tam-giac-vuong-dong-dang": "Đồng dạng trong tam giác vuông",
+    "tiep-tuyen-chung-minh": "Chứng minh tiếp tuyến",
+    "chuoi-suy-luan": "Chuỗi suy luận hình học",
+    "the-tich-hop-chu-nhat": "Thể tích hình hộp chữ nhật",
+    "the-tich-lang-tru": "Thể tích lăng trụ đứng",
+    "dien-tich-day": "Diện tích đáy",
+    "doi-don-vi-do-luong": "Đổi đơn vị đo lường",
+    "bai-toan-tong-hop": "Bài toán tổng hợp"
+  },
+  "skill_groups": [
+    {
+      "id": "nhan-dang",
+      "label": "A. Nhận dạng cấu hình và công cụ",
+      "skills": [
+        "nhan-dang-cong-cu",
+        "song-song-dong-dang",
+        "hai-goc-vuong-noi-tiep"
+      ]
+    },
+    {
+      "id": "cau-noi",
+      "label": "B. Các cầu nối suy luận",
+      "skills": [
+        "noi-tiep-dong-dang",
+        "dong-dang-he-thuc-tich",
+        "tam-giac-vuong-dong-dang",
+        "tiep-tuyen-chung-minh"
+      ]
+    },
+    {
+      "id": "chien-luoc",
+      "label": "C. Chuỗi suy luận tổng hợp",
+      "skills": [
+        "chuoi-suy-luan",
+        "bai-toan-tong-hop"
+      ]
+    },
+    {
+      "id": "do-luong",
+      "label": "D. Đo lường và hình khối",
+      "skills": [
+        "the-tich-hop-chu-nhat",
+        "the-tich-lang-tru",
+        "dien-tich-day",
+        "doi-don-vi-do-luong"
+      ]
+    }
+  ],
+  "sources": [
+    "20-hinh-hoc-tong-hop-v1-01.json",
+    "20-hinh-hoc-tong-hop-v1-02.json",
+    "20-hinh-hoc-tong-hop-v1-03.json",
+    "20-hinh-hoc-tong-hop-v1-04.json"
+  ]
+}
