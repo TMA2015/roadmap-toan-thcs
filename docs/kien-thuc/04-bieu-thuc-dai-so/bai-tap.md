@@ -1,16 +1,18 @@
 # Bài tập – Chuyên đề 04: Biểu thức đại số
 
 <link rel="stylesheet" href="../../../assets/stylesheets/practice-engine.css">
-<script src="../../../assets/javascripts/practice-engine.js" defer></script>
+<script src="../../../assets/javascripts/practice-engine-v2.js" defer></script>
 
 > **Mục tiêu:** rút gọn, thay giá trị, biến đổi và nhận dạng cấu trúc biểu thức.
 > **Quy ước:** `04-Mx-yy`.
 
 ## 🎯 Luyện tập tương tác
 
-Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng 50 câu. Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ có lời giải ngắn và nút **Làm câu tương tự**. Kết quả được lưu trên trình duyệt hiện tại theo từng kỹ năng để phục vụ chế độ **Luyện điểm yếu**.
+Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng **120 câu**. Ngân hàng bao phủ các kỹ năng chính của chuyên đề từ nhận biết đơn thức – đa thức, hạng tử đồng dạng, thu gọn, cộng – trừ, bỏ ngoặc, nhân biểu thức, thay số, điều kiện xác định, biến đổi nhiều bước đến bài toán thực tế.
 
-<div data-practice-bank="../../../assets/data/practice/04-bieu-thuc-dai-so.json" data-session-size="10"></div>
+Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ có lời giải ngắn và nút **Làm câu tương tự**. Câu chưa làm và câu từng làm sai được ưu tiên xuất hiện lại. Kết quả được lưu theo từng kỹ năng để phục vụ chế độ **Luyện điểm yếu**.
+
+<div data-practice-bank-v2="../../../assets/data/practice/04-bieu-thuc-dai-so-v2.manifest.json" data-session-size="10"></div>
 
 > **Lưu ý:** tiến độ hiện được lưu bằng `localStorage`, vì vậy dữ liệu chưa tự đồng bộ giữa các thiết bị hoặc trình duyệt khác nhau.
 
