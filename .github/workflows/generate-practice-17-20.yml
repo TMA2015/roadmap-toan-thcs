@@ -48,7 +48,6 @@ jobs:
                   out.append(f"{value}{unit}")
               return out
           '''
-          new_num = '\n'.join(line[10:] if line.startswith('          ') else line for line in new_num.splitlines()) + '\n'
           pattern = r'def num_opts\(correct: int \| float, \*wrong: int \| float, unit: str = ""\) -> list\[str\]:\n.*?^    return out\n'
           s, count = re.subn(pattern, new_num, s, count=1, flags=re.M | re.S)
           if count != 1:
