@@ -16,7 +16,7 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
 
-      - name: Report duplicate question prompts
+      - name: Report exact duplicate questions
         shell: bash
         run: |
           python - <<'PY'
@@ -25,17 +25,24 @@ jobs:
           from pathlib import Path
 
           root = Path('docs/assets/data/practice')
+          total_exact = 0
           for slug in ('06-phan-tich-da-thuc', '07-phan-thuc-dai-so', '08-phuong-trinh-bat-phuong-trinh'):
               manifest = json.loads((root / f'{slug}-v1.manifest.json').read_text(encoding='utf-8'))
-              by_text = defaultdict(list)
+              by_content = defaultdict(list)
               for source in manifest['sources']:
                   chunk = json.loads((root / source).read_text(encoding='utf-8'))
                   for q in chunk['questions']:
-                      by_text[q['question']].append((q['id'], q.get('tags', {}).get('skill', [])))
-              dup = {text: rows for text, rows in by_text.items() if len(rows) > 1}
-              print(f'\n{slug}: {sum(len(v)-1 for v in dup.values())} duplicate occurrences')
-              for text, rows in dup.items():
-                  print(json.dumps({'question': text, 'rows': rows}, ensure_ascii=False))
+                      key = (q['question'], tuple(q['options']))
+                      by_content[key].append((q['id'], q.get('tags', {}).get('skill', [])))
+              dup = {key: rows for key, rows in by_content.items() if len(rows) > 1}
+              count = sum(len(v)-1 for v in dup.values())
+              total_exact += count
+              print(f'\n{slug}: {count} exact duplicate occurrences')
+              for (question, options), rows in dup.items():
+                  print(json.dumps({'question': question, 'options': options, 'rows': rows}, ensure_ascii=False))
+          if total_exact:
+              raise SystemExit(f'Found {total_exact} exact duplicate occurrences')
+          print('\nNo exact duplicate questions in Topics 06-08.')
           PY
 
       - name: Validate all Practice Banks
