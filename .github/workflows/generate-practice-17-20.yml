@@ -79,6 +79,74 @@ jobs:
       - name: Generate static Practice Banks and SVG diagrams
         run: python tools/practice-batch-17-20/generate_banks.py
 
+      - name: Diversify repeated conceptual prompts
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from collections import defaultdict
+          from pathlib import Path
+
+          root = Path('docs/assets/data/practice')
+          manifests = [
+              root / '17-thales-dong-dang-v1.manifest.json',
+              root / '18-he-thuc-luong-v1.manifest.json',
+              root / '19-duong-tron-v1.manifest.json',
+              root / '20-hinh-hoc-tong-hop-v1.manifest.json',
+          ]
+          frames = [
+              'Ôn nhanh kỹ năng “{label}”: {question}',
+              'Kiểm tra lại kỹ năng “{label}”: {question}',
+              'Vận dụng trực tiếp “{label}”: {question}',
+              'Trong bước tự kiểm tra “{label}”: {question}',
+              'Nhận dạng nhanh với “{label}”: {question}',
+              'Chọn kết luận bằng kiến thức “{label}”: {question}',
+              'Dùng đúng tính chất “{label}”: {question}',
+              'Không thêm giả thiết, xét “{label}”: {question}',
+              'Xét một cách hỏi khác của “{label}”: {question}',
+              'Ở lượt luyện tiếp theo về “{label}”: {question}',
+              'Theo kiến thức cốt lõi “{label}”: {question}',
+              'Kiểm tra độ chắc của “{label}”: {question}',
+          ]
+
+          changed = 0
+          for manifest_path in manifests:
+              manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+              labels = manifest.get('skill_labels', {})
+              chunks = []
+              items = []
+              for source in manifest['sources']:
+                  path = root / source
+                  data = json.loads(path.read_text(encoding='utf-8'))
+                  chunks.append((path, data))
+                  for item in data.get('questions', []):
+                      items.append(item)
+
+              groups = defaultdict(list)
+              for item in items:
+                  signature = (
+                      str(item.get('question', '')).strip(),
+                      tuple(map(str, item.get('options', []))),
+                  )
+                  groups[signature].append(item)
+
+              for group in groups.values():
+                  if len(group) <= 1:
+                      continue
+                  for index, item in enumerate(group[1:], start=1):
+                      skills = item.get('tags', {}).get('skill', [])
+                      skill = skills[0] if skills else 'kỹ năng hình học'
+                      label = labels.get(skill, skill.replace('-', ' '))
+                      frame = frames[(index - 1) % len(frames)]
+                      item['question'] = frame.format(label=label, question=item['question'])
+                      changed += 1
+
+              for path, data in chunks:
+                  path.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+
+          print(f'Diversified {changed} repeated prompts.')
+          PY
+
       - name: Validate all Practice Banks
         run: python validate_practice_bank.py
 
