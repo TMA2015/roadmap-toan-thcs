@@ -1,44 +1,42 @@
-name: Generate Practice Banks 06-08
+name: QA Practice Banks 06-08
 
 on:
   push:
     branches:
       - feature/topics06-08-practice-banks-v1
     paths:
-      - tools/practice-batch-06-08/payload.json.gz.b64
-      - tools/practice-batch-06-08/generate_banks.py
       - .github/workflows/generate-practice-06-08.yml
 
-permissions:
-  contents: write
-
 jobs:
-  generate:
+  qa:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout feature branch
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
-          fetch-depth: 0
 
-      - name: Generate static question banks
-        run: python tools/practice-batch-06-08/generate_banks.py
+      - name: Report duplicate question prompts
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from collections import defaultdict
+          from pathlib import Path
+
+          root = Path('docs/assets/data/practice')
+          for slug in ('06-phan-tich-da-thuc', '07-phan-thuc-dai-so', '08-phuong-trinh-bat-phuong-trinh'):
+              manifest = json.loads((root / f'{slug}-v1.manifest.json').read_text(encoding='utf-8'))
+              by_text = defaultdict(list)
+              for source in manifest['sources']:
+                  chunk = json.loads((root / source).read_text(encoding='utf-8'))
+                  for q in chunk['questions']:
+                      by_text[q['question']].append((q['id'], q.get('tags', {}).get('skill', [])))
+              dup = {text: rows for text, rows in by_text.items() if len(rows) > 1}
+              print(f'\n{slug}: {sum(len(v)-1 for v in dup.values())} duplicate occurrences')
+              for text, rows in dup.items():
+                  print(json.dumps({'question': text, 'rows': rows}, ensure_ascii=False))
+          PY
 
       - name: Validate all Practice Banks
         run: python validate_practice_bank.py
-
-      - name: Commit generated JSON
-        shell: bash
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/assets/data/practice/06-phan-tich-da-thuc-v1*.json
-          git add docs/assets/data/practice/07-phan-thuc-dai-so-v1*.json
-          git add docs/assets/data/practice/08-phuong-trinh-bat-phuong-trinh-v1*.json
-          if git diff --cached --quiet; then
-            echo "No generated changes to commit."
-            exit 0
-          fi
-          git commit -m "Cập nhật 360 câu Practice Bank cho Chuyên đề 06-08"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
