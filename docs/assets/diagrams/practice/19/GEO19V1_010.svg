@@ -8,12 +8,21 @@
   .small{font:14px system-ui,sans-serif;fill:#444}
 </style>
 
-<circle class="g" cx="180" cy="150" r="80"/><circle class="pt" cx="180" cy="150" r="4"/>
-<circle class="pt" cx="220" cy="80.718" r="4"/><circle class="pt" cx="340" cy="150" r="4"/>
-<circle class="pt" cx="260" cy="150" r="4"/><circle class="pt" cx="100" cy="150" r="4"/>
-<path class="g" d="M340 150 L220 80.718 M340 150 L100 150"/>
-<path class="thin" d="M228.66 95.72 L213.66 104.38 L205 89.38"/>
-<text class="txt" x="160" y="171">O</text><text class="txt" x="209" y="70">T</text><text class="txt" x="347" y="155">P</text>
-<text class="txt" x="264" y="171">A</text><text class="txt" x="87" y="171">B</text>
-<text class="small" x="256" y="102">PT tiếp tuyến</text><text class="small" x="271" y="139">PAB cát tuyến</text>
+<circle class="g" cx="180" cy="150" r="80"/>
+<circle class="pt" cx="180" cy="150" r="4"/>
+<circle class="pt" cx="220" cy="80.718" r="4"/>
+<circle class="pt" cx="340" cy="150" r="4"/>
+<circle class="pt" cx="260" cy="150" r="4"/>
+<circle class="pt" cx="100" cy="150" r="4"/>
+<!-- OT là bán kính đến tiếp điểm T; PT là tiếp tuyến nên OT vuông góc PT. -->
+<path class="g" d="M180 150 L220 80.718 M340 150 L220 80.718 M340 150 L100 150"/>
+<!-- Ký hiệu góc vuông đặt đúng tại T, giữa hai tia TO và TP. -->
+<path class="thin" d="M212 94.574 L225.856 102.574 L233.856 88.718"/>
+<text class="txt" x="160" y="171">O</text>
+<text class="txt" x="209" y="70">T</text>
+<text class="txt" x="347" y="155">P</text>
+<text class="txt" x="264" y="171">A</text>
+<text class="txt" x="87" y="171">B</text>
+<text class="small" x="252" y="96">PT tiếp tuyến</text>
+<text class="small" x="271" y="139">PAB cát tuyến</text>
 </svg>
