@@ -3,6 +3,20 @@
 > **Mục tiêu:** rút gọn, thay giá trị, biến đổi và nhận dạng cấu trúc biểu thức.
 > **Quy ước:** `04-Mx-yy`.
 
+## 🎯 Luyện tập tương tác
+
+Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng 50 câu. Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ có lời giải ngắn và nút **Làm câu tương tự**. Kết quả được lưu trên trình duyệt hiện tại theo từng kỹ năng để phục vụ chế độ **Luyện điểm yếu**.
+
+<div data-practice-bank="../../../assets/data/practice/04-bieu-thuc-dai-so.json" data-session-size="10"></div>
+
+> **Lưu ý:** tiến độ hiện được lưu bằng `localStorage`, vì vậy dữ liệu chưa tự đồng bộ giữa các thiết bị hoặc trình duyệt khác nhau.
+
+---
+
+## Bài tập tự luận bổ sung
+
+Các bài dưới đây vẫn được giữ lại để học sinh luyện cách trình bày lời giải đầy đủ sau phần trắc nghiệm tương tác.
+
 # Mức 1 – Nhận biết
 ### 04-M1-01
 Thu gọn \(3x+5x-2\).
