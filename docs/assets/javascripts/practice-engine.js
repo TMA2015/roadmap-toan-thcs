@@ -13,10 +13,17 @@
 
   const saveStats = (stats) => localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
 
+  const normalizeList = (value) => {
+    if (!value) return [];
+    return Array.isArray(value) ? value.filter(Boolean) : [value];
+  };
+
   const flatTags = (question) => {
     const tags = question.tags || {};
     return Object.values(tags).flat().filter(Boolean);
   };
+
+  const skillTags = (question) => normalizeList(question.tags?.skill);
 
   const accuracy = (record) => record && record.attempted ? record.correct / record.attempted : null;
 
@@ -30,13 +37,14 @@
   };
 
   const weightedPool = (questions, stats, weakOnly = false) => {
-    const weakTags = Object.entries(stats.tags)
-      .filter(([, rec]) => rec.attempted >= 3 && accuracy(rec) < 0.75)
+    const skillsInBank = new Set(questions.flatMap(skillTags));
+    const weakSkills = Object.entries(stats.tags)
+      .filter(([tag, rec]) => skillsInBank.has(tag) && rec.attempted >= 3 && accuracy(rec) < 0.75)
       .map(([tag]) => tag);
 
     let source = questions;
-    if (weakOnly && weakTags.length) {
-      const weakQuestions = questions.filter((q) => flatTags(q).some((tag) => weakTags.includes(tag)));
+    if (weakOnly && weakSkills.length) {
+      const weakQuestions = questions.filter((q) => skillTags(q).some((tag) => weakSkills.includes(tag)));
       if (weakQuestions.length >= 5) source = weakQuestions;
     }
 
@@ -144,7 +152,7 @@
       this.score = 0;
       this.answered = false;
       this.subtitleEl.textContent = weakOnly
-        ? "Ưu tiên câu thuộc các kỹ năng có độ chính xác dưới 75%. Nếu chưa đủ dữ liệu, hệ thống dùng bộ câu hỗn hợp."
+        ? "Ưu tiên các kỹ năng có độ chính xác dưới 75%. Nếu chưa đủ dữ liệu, hệ thống dùng bộ câu hỗn hợp."
         : "Mỗi lượt gồm 10 câu; câu chưa làm và câu từng làm sai được ưu tiên xuất hiện lại.";
       this.renderQuestion();
       this.renderStats();
@@ -210,12 +218,14 @@
       explanation.textContent = q.explanation;
       this.feedbackEl.append(heading, explanation);
 
-      if (!correct) {
+      const hasNext = this.index < this.session.length - 1;
+      if (!correct && hasNext && this.hasSimilarQuestion(q)) {
         const similarBtn = createButton("Làm câu tương tự", "practice-btn-primary");
-        similarBtn.addEventListener("click", () => this.insertSimilarQuestion(q));
+        similarBtn.addEventListener("click", () => this.goToSimilarQuestion(q));
         this.actionsEl.appendChild(similarBtn);
       }
-      const nextBtn = createButton(this.index === this.session.length - 1 ? "Xem kết quả" : "Câu tiếp theo", "practice-btn-primary");
+
+      const nextBtn = createButton(hasNext ? "Câu tiếp theo" : "Xem kết quả", "practice-btn-primary");
       nextBtn.addEventListener("click", () => {
         this.index += 1;
         this.renderQuestion();
@@ -226,16 +236,35 @@
       typeset(this.cardEl);
     }
 
-    insertSimilarQuestion(question) {
-      const currentTags = new Set(flatTags(question));
-      const candidates = this.questions.filter((candidate) =>
-        candidate.id !== question.id && flatTags(candidate).some((tag) => currentTags.has(tag))
+    similarCandidates(question) {
+      const currentSkills = new Set(skillTags(question));
+      return this.questions.filter((candidate) =>
+        candidate.id !== question.id && skillTags(candidate).some((tag) => currentSkills.has(tag))
       );
+    }
+
+    hasSimilarQuestion(question) {
+      return this.similarCandidates(question).length > 0;
+    }
+
+    goToSimilarQuestion(question) {
+      if (this.index >= this.session.length - 1) return;
+      const candidates = shuffle(this.similarCandidates(question));
       if (!candidates.length) return;
-      const candidate = shuffle(candidates)[0];
-      const alreadyLater = this.session.slice(this.index + 1).some((q) => q.id === candidate.id);
-      if (!alreadyLater) this.session.splice(this.index + 1, 0, candidate);
-      this.index += 1;
+
+      const candidate = candidates[0];
+      const nextIndex = this.index + 1;
+      const existingIndex = this.session.findIndex((item, idx) => idx > this.index && item.id === candidate.id);
+
+      if (existingIndex >= 0) {
+        const nextQuestion = this.session[nextIndex];
+        this.session[nextIndex] = this.session[existingIndex];
+        this.session[existingIndex] = nextQuestion;
+      } else {
+        this.session[nextIndex] = candidate;
+      }
+
+      this.index = nextIndex;
       this.renderQuestion();
     }
 
@@ -255,13 +284,8 @@
     }
 
     renderStats() {
-      const skillTags = [
-        "nhan-biet-don-thuc", "nhan-biet-da-thuc", "he-so-bac", "hang-tu-dong-dang",
-        "thu-gon-da-thuc", "cong-tru-da-thuc", "bo-ngoac-dau", "nhan-bieu-thuc",
-        "tinh-phan-phoi", "tinh-gia-tri-bieu-thuc", "dieu-kien-xac-dinh",
-        "bien-doi-nhieu-buoc", "lap-bieu-thuc", "bai-toan-thuc-te"
-      ];
-      const rows = skillTags
+      const knownSkills = [...new Set(this.questions.flatMap(skillTags))];
+      const rows = knownSkills
         .map((tag) => [tag, this.stats.tags[tag]])
         .filter(([, rec]) => rec?.attempted)
         .sort((a, b) => (accuracy(a[1]) ?? 1) - (accuracy(b[1]) ?? 1));
@@ -309,8 +333,7 @@
     }
 
     skillLabel(question) {
-      const skills = Array.isArray(question.tags?.skill) ? question.tags.skill : [question.tags?.skill].filter(Boolean);
-      return skills.slice(0, 2).map((tag) => this.prettyTag(tag)).join(" · ");
+      return skillTags(question).slice(0, 2).map((tag) => this.prettyTag(tag)).join(" · ");
     }
 
     prettyTag(tag) {
