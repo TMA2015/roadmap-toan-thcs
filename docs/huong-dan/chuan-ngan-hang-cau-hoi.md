@@ -10,6 +10,7 @@ Ngân hàng câu hỏi phải:
 - mở rộng được lên hàng trăm câu cho mỗi chuyên đề;
 - theo dõi kết quả theo **kỹ năng**, không chỉ theo chương;
 - cho phép ưu tiên câu chưa làm, câu từng làm sai và kỹ năng yếu;
+- hiển thị kỹ năng theo một **lộ trình cố định, dễ hình dung**;
 - dễ kiểm định, sửa lỗi và chia nhỏ để nhiều người có thể biên soạn độc lập.
 
 ## 2. Cấu trúc thư mục
@@ -46,6 +47,16 @@ Ví dụ:
     "thu-gon-da-thuc": "Thu gọn đa thức",
     "bo-ngoac-dau": "Bỏ ngoặc và dấu"
   },
+  "skill_groups": [
+    {
+      "id": "bien-doi-co-ban",
+      "label": "B. Biến đổi cơ bản",
+      "skills": [
+        "thu-gon-da-thuc",
+        "bo-ngoac-dau"
+      ]
+    }
+  ],
   "sources": [
     "04-bieu-thuc-dai-so-v2-01.json",
     "04-bieu-thuc-dai-so-v2-02.json"
@@ -64,9 +75,44 @@ Ví dụ:
 | `session_size` | Số câu mặc định mỗi lượt |
 | `question_count` | Tổng số câu dự kiến |
 | `skill_labels` | Tên hiển thị của từng skill tag |
+| `skill_groups` | Nhóm + thứ tự kỹ năng theo lộ trình học |
 | `sources` | Danh sách các chunk JSON |
 
-## 4. Question chunk
+## 4. `skill_groups` – mini-roadmap kỹ năng
+
+`skill_groups` xác định **thứ tự hiển thị cố định** của bảng tiến độ. Thứ tự này không thay đổi theo điểm số.
+
+Nguyên tắc:
+
+1. Sắp theo **quan hệ kiến thức nền → kiến thức sau**.
+2. Trong cùng một nhóm, ưu tiên **dễ/cơ bản → phức tạp/vận dụng**.
+3. Không dùng bảng chữ cái làm nguyên tắc chính.
+4. Mỗi skill trong `skill_labels` phải xuất hiện **đúng một lần** trong `skill_groups`.
+5. Tên nhóm nên giúp học sinh hình dung mạch học, ví dụ:
+   - A. Nền tảng số
+   - B. Chia hết và số nguyên tố
+   - C. Phân số và số hữu tỉ
+   - D. Ứng dụng mở rộng
+
+Practice Engine dùng cấu trúc này để hiển thị **mini-roadmap** trong bảng tiến độ.
+
+### Phân biệt hai loại thứ tự
+
+- **Thứ tự hiển thị:** cố định theo `skill_groups`.
+- **Thứ tự luyện điểm yếu:** động theo kết quả học tập.
+
+Quy tắc hiện tại của **Luyện điểm yếu**:
+
+1. chỉ xét skill có ít nhất 3 lượt làm;
+2. accuracy dưới 75%;
+3. accuracy thấp nhất được ưu tiên trước;
+4. nếu bằng accuracy, skill có nhiều lượt làm hơn được ưu tiên;
+5. mỗi lượt tập trung tối đa 2 skill yếu nhất;
+6. nếu có 2 skill, số câu được chia gần đều giữa hai skill.
+
+Nhờ đó bảng tiến độ không bị đảo vị trí liên tục nhưng hệ thống vẫn thích nghi với điểm yếu thực tế.
+
+## 5. Question chunk
 
 ```json
 {
@@ -81,7 +127,7 @@ Ví dụ:
 }
 ```
 
-## 5. Chuẩn một câu hỏi
+## 6. Chuẩn một câu hỏi
 
 ```json
 {
@@ -107,7 +153,7 @@ Ví dụ:
 }
 ```
 
-## 6. Quy tắc ID
+## 7. Quy tắc ID
 
 Mẫu khuyến nghị:
 
@@ -125,7 +171,7 @@ GEO14V1_001
 
 ID phải **duy nhất và không đổi** sau khi câu hỏi đã được phát hành. Nếu thay đổi bản chất câu hỏi, nên tạo ID mới.
 
-## 7. Tag
+## 8. Tag
 
 Mỗi câu phải có tối thiểu ba lớp tag:
 
@@ -154,9 +200,9 @@ bieu-thuc
 lop-8
 ```
 
-Practice Engine dùng `skill` để tính tỉ lệ đúng và xác định **Luyện điểm yếu**.
+Practice Engine dùng `skill` để tính tỉ lệ đúng, cho phép bấm luyện riêng và xác định **Luyện điểm yếu**.
 
-## 8. Độ khó
+## 9. Độ khó
 
 Chỉ dùng ba mức:
 
@@ -168,7 +214,7 @@ Chỉ dùng ba mức:
 
 Độ khó là thuộc tính của **câu hỏi**, không phải của toàn bộ kỹ năng.
 
-## 9. Phương án nhiễu
+## 10. Phương án nhiễu
 
 Một câu trắc nghiệm chuẩn nên có 4 phương án. Phương án sai không được tạo ngẫu nhiên vô nghĩa mà nên phản ánh **lỗi sai thật của học sinh**, ví dụ:
 
@@ -180,7 +226,7 @@ Một câu trắc nghiệm chuẩn nên có 4 phương án. Phương án sai kh�
 
 Nhờ đó, một câu sai vẫn cung cấp thông tin học tập có ích.
 
-## 10. Lời giải
+## 11. Lời giải
 
 `explanation` phải:
 
@@ -189,7 +235,7 @@ Nhờ đó, một câu sai vẫn cung cấp thông tin học tập có ích.
 - đủ để học sinh tự sửa lỗi;
 - không chỉ ghi lại đáp án đúng.
 
-## 11. Quy tắc chất lượng trước khi phát hành
+## 12. Quy tắc chất lượng trước khi phát hành
 
 Mỗi ngân hàng phải được kiểm tra:
 
@@ -197,13 +243,15 @@ Mỗi ngân hàng phải được kiểm tra:
 - đủ 4 phương án và không trùng phương án;
 - `answer` nằm trong phạm vi phương án;
 - mọi `skill` đều có trong `skill_labels` của manifest;
+- mọi skill được xếp đúng một lần trong `skill_groups`;
+- không trùng `skill_groups.id`;
 - `question_count` đúng với tổng số câu từ các chunk;
 - công thức MathJax hiển thị đúng;
 - câu hỏi và lời giải không mâu thuẫn;
 - đáp án nhiễu có ý nghĩa;
 - phân bố câu hỏi không quá lệch về một kỹ năng.
 
-## 12. Mục tiêu quy mô
+## 13. Mục tiêu quy mô
 
 Trong giai đoạn hiện tại:
 
@@ -211,4 +259,4 @@ Trong giai đoạn hiện tại:
 - chuyên đề trọng tâm thi vào 10: có thể **150–300 câu**;
 - mỗi lượt học sinh chỉ làm khoảng **10 câu**, được lấy thích nghi từ ngân hàng lớn.
 
-Như vậy quy mô ngân hàng có thể tăng mà giao diện học sinh vẫn đơn giản.
+Như vậy quy mô ngân hàng có thể tăng mà giao diện học sinh vẫn đơn giản, còn bảng tiến độ vẫn giữ được một lộ trình kỹ năng ổn định.
