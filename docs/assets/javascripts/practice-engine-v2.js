@@ -46,9 +46,13 @@
   const validateQuestions = (questions) => {
     const ids = new Set();
     for (const question of questions) {
-      if (!question?.id || ids.has(question.id)) throw new Error(`ID câu hỏi không hợp lệ hoặc bị trùng: ${question?.id || "(trống)"}`);
+      if (!question?.id || ids.has(question.id)) {
+        throw new Error(`ID câu hỏi không hợp lệ hoặc bị trùng: ${question?.id || "(trống)"}`);
+      }
       ids.add(question.id);
-      if (!Array.isArray(question.options) || question.options.length < 2) throw new Error(`Câu ${question.id} thiếu phương án`);
+      if (!Array.isArray(question.options) || question.options.length < 2) {
+        throw new Error(`Câu ${question.id} thiếu phương án`);
+      }
       if (!Number.isInteger(question.answer) || question.answer < 0 || question.answer >= question.options.length) {
         throw new Error(`Câu ${question.id} có answer không hợp lệ`);
       }
@@ -71,7 +75,10 @@
       return { ...data, questions };
     }
 
-    if (!Array.isArray(data.sources) || !data.sources.length) throw new Error("Manifest chưa khai báo sources");
+    if (!Array.isArray(data.sources) || !data.sources.length) {
+      throw new Error("Manifest chưa khai báo sources");
+    }
+
     const chunks = await Promise.all(
       data.sources.map((relativePath) => fetchJson(new URL(relativePath, manifestUrl)))
     );
@@ -85,7 +92,7 @@
     return { ...data, questions };
   };
 
-  const weightedPool = (questions, stats) => {
+  const weightedQuestionPool = (questions, stats) => {
     const expanded = [];
     questions.forEach((question) => {
       const record = stats.questions[question.id];
@@ -108,16 +115,81 @@
     return picked;
   };
 
-  const rankWeakSkills = (stats, bankSkills) => {
-    const allowedSkills = new Set(bankSkills);
+  const buildSkillGroups = (bank, bankSkills) => {
+    const configured = Array.isArray(bank.skill_groups) ? bank.skill_groups : [];
+    const groups = [];
+    const seen = new Set();
+
+    configured.forEach((group, index) => {
+      if (!group || !Array.isArray(group.skills)) return;
+      const skills = group.skills.filter((skill) => bankSkills.includes(skill) && !seen.has(skill));
+      if (!skills.length) return;
+      skills.forEach((skill) => seen.add(skill));
+      groups.push({
+        id: group.id || `group-${index + 1}`,
+        label: group.label || `Nhóm ${index + 1}`,
+        skills
+      });
+    });
+
+    const leftovers = bankSkills.filter((skill) => !seen.has(skill));
+    if (leftovers.length) groups.push({ id: "other", label: "Kỹ năng khác", skills: leftovers });
+    if (!groups.length) groups.push({ id: "skills", label: "Kỹ năng", skills: [...bankSkills] });
+    return groups;
+  };
+
+  const rankWeakSkills = (stats, bankSkills, skillOrder) => {
+    const allowed = new Set(bankSkills);
+    const order = new Map(skillOrder.map((skill, index) => [skill, index]));
     return Object.entries(stats.tags)
-      .filter(([tag, record]) => allowedSkills.has(tag) && record.attempted >= 3 && accuracy(record) < 0.75)
+      .filter(([skill, record]) => allowed.has(skill) && record.attempted >= 3 && accuracy(record) < 0.75)
       .sort((a, b) => {
         const accuracyDiff = (accuracy(a[1]) ?? 1) - (accuracy(b[1]) ?? 1);
-        if (accuracyDiff !== 0) return accuracyDiff;
-        return b[1].attempted - a[1].attempted;
+        if (Math.abs(accuracyDiff) > 1e-9) return accuracyDiff;
+        const attemptsDiff = b[1].attempted - a[1].attempted;
+        if (attemptsDiff) return attemptsDiff;
+        return (order.get(a[0]) ?? 999) - (order.get(b[0]) ?? 999);
       })
-      .map(([tag]) => tag);
+      .map(([skill]) => skill);
+  };
+
+  const pickFromPool = (pool, count, used) => {
+    const result = [];
+    for (const question of pool) {
+      if (used.has(question.id)) continue;
+      result.push(question);
+      used.add(question.id);
+      if (result.length >= count) break;
+    }
+    return result;
+  };
+
+  const buildFocusedSession = (questions, stats, skills, sessionSize) => {
+    const focus = skills.filter(Boolean).slice(0, 2);
+    if (!focus.length) return [];
+
+    const used = new Set();
+    const selected = [];
+    const firstQuota = focus.length === 2 ? Math.ceil(sessionSize / 2) : sessionSize;
+    const quotas = focus.length === 2 ? [firstQuota, sessionSize - firstQuota] : [sessionSize];
+
+    focus.forEach((skill, index) => {
+      const subset = questions.filter((question) => questionSkills(question).includes(skill));
+      const pool = weightedQuestionPool(subset, stats);
+      selected.push(...pickFromPool(pool, quotas[index], used));
+    });
+
+    if (selected.length < sessionSize) {
+      const focusSet = new Set(focus);
+      const union = questions.filter((question) => questionSkills(question).some((skill) => focusSet.has(skill)));
+      selected.push(...pickFromPool(weightedQuestionPool(union, stats), sessionSize - selected.length, used));
+    }
+
+    if (selected.length < sessionSize) {
+      selected.push(...pickFromPool(weightedQuestionPool(questions, stats), sessionSize - selected.length, used));
+    }
+
+    return shuffle(selected).slice(0, sessionSize);
   };
 
   class PracticeEngineV2 {
@@ -131,6 +203,8 @@
       if (!this.bankSkills.length) {
         this.bankSkills = [...new Set(this.questions.flatMap(questionSkills))];
       }
+      this.skillGroups = buildSkillGroups(bank, this.bankSkills);
+      this.skillOrder = this.skillGroups.flatMap((group) => group.skills);
       this.stats = loadStats();
       this.session = [];
       this.index = 0;
@@ -138,10 +212,8 @@
       this.answered = false;
       this.mode = "normal";
       this.focusSkills = [];
-      this.lastUpdatedSkills = new Set();
-      this.statsFlashTimer = null;
       this.renderShell();
-      this.startSession(false);
+      this.startNormalSession();
     }
 
     renderShell() {
@@ -164,7 +236,7 @@
         </div>
         <details class="practice-stats-panel">
           <summary>📊 Xem tiến độ theo kỹ năng</summary>
-          <div class="practice-stats-hint">Bấm vào một kỹ năng để luyện riêng kỹ năng đó.</div>
+          <div class="practice-stats-note">Thứ tự kỹ năng cố định theo lộ trình học. Bấm vào một kỹ năng để luyện riêng.</div>
           <div class="practice-stats"></div>
         </details>
       `;
@@ -181,89 +253,72 @@
       this.statsEl = this.root.querySelector(".practice-stats");
 
       const normalBtn = createButton("Bộ 10 câu mới", "practice-btn-secondary");
-      normalBtn.addEventListener("click", () => this.startSession(false));
+      normalBtn.addEventListener("click", () => this.startNormalSession());
       const weakBtn = createButton("Luyện điểm yếu", "practice-btn-secondary");
-      weakBtn.addEventListener("click", () => this.startSession(true));
+      weakBtn.addEventListener("click", () => this.startWeakSession());
       this.toolbarActionsEl.append(normalBtn, weakBtn);
     }
 
-    buildFocusedSession(skills) {
-      const uniqueSkills = [...new Set(skills)].filter(Boolean);
-      if (!uniqueSkills.length) return [];
-
-      const pools = uniqueSkills.map((skill) => weightedPool(
-        this.questions.filter((question) => questionSkills(question).includes(skill)),
-        this.stats
-      ));
-      const cursors = pools.map(() => 0);
-      const session = [];
-      const used = new Set();
-
-      while (session.length < this.sessionSize) {
-        let addedThisRound = false;
-        for (let poolIndex = 0; poolIndex < pools.length && session.length < this.sessionSize; poolIndex += 1) {
-          const pool = pools[poolIndex];
-          while (cursors[poolIndex] < pool.length && used.has(pool[cursors[poolIndex]].id)) {
-            cursors[poolIndex] += 1;
-          }
-          if (cursors[poolIndex] < pool.length) {
-            const question = pool[cursors[poolIndex]];
-            cursors[poolIndex] += 1;
-            session.push(question);
-            used.add(question.id);
-            addedThisRound = true;
-          }
-        }
-        if (!addedThisRound) break;
-      }
-
-      return session;
-    }
-
-    startSession(weakOnly) {
-      this.stats = loadStats();
+    setSession(session, mode, focusSkills, subtitle) {
+      this.session = session;
+      this.mode = mode;
+      this.focusSkills = focusSkills;
       this.index = 0;
       this.score = 0;
       this.answered = false;
-      this.focusSkills = [];
-      const total = this.questions.length;
-
-      if (weakOnly) {
-        const ranked = rankWeakSkills(this.stats, this.bankSkills);
-        this.focusSkills = ranked.slice(0, 2);
-        if (this.focusSkills.length) {
-          this.mode = "weak";
-          this.session = this.buildFocusedSession(this.focusSkills);
-          const labels = this.focusSkills.map((tag) => this.prettyTag(tag)).join(" + ");
-          this.subtitleEl.textContent = `Luyện điểm yếu: ${labels}. Ưu tiên kỹ năng có độ chính xác thấp nhất; tối đa 2 kỹ năng/lượt và chia gần đều số câu.`;
-        } else {
-          this.mode = "normal";
-          const pool = weightedPool(this.questions, this.stats);
-          this.session = pool.slice(0, Math.min(this.sessionSize, pool.length));
-          this.subtitleEl.textContent = `Chưa có kỹ năng nào đủ ít nhất 3 lượt và dưới 75%. Hệ thống dùng bộ hỗn hợp từ ngân hàng ${total} câu.`;
-        }
-      } else {
-        this.mode = "normal";
-        const pool = weightedPool(this.questions, this.stats);
-        this.session = pool.slice(0, Math.min(this.sessionSize, pool.length));
-        this.subtitleEl.textContent = `Ngân hàng ${total} câu · mỗi lượt ${this.session.length} câu; câu chưa làm và câu từng làm sai được ưu tiên xuất hiện lại.`;
-      }
-
+      this.subtitleEl.textContent = subtitle;
       this.renderQuestion();
       this.renderStats();
+    }
+
+    startNormalSession() {
+      this.stats = loadStats();
+      const pool = weightedQuestionPool(this.questions, this.stats);
+      const session = pool.slice(0, Math.min(this.sessionSize, pool.length));
+      this.setSession(
+        session,
+        "normal",
+        [],
+        `Ngân hàng ${this.questions.length} câu · mỗi lượt ${session.length} câu; câu chưa làm và câu từng làm sai được ưu tiên xuất hiện lại.`
+      );
+    }
+
+    startWeakSession() {
+      this.stats = loadStats();
+      const weakSkills = rankWeakSkills(this.stats, this.bankSkills, this.skillOrder).slice(0, 2);
+      if (!weakSkills.length) {
+        const pool = weightedQuestionPool(this.questions, this.stats);
+        const session = pool.slice(0, Math.min(this.sessionSize, pool.length));
+        this.setSession(
+          session,
+          "weak",
+          [],
+          `Chưa có kỹ năng đủ ít nhất 3 lượt và dưới 75%. Hệ thống tạm dùng bộ hỗn hợp để thu thập thêm dữ liệu.`
+        );
+        return;
+      }
+
+      const session = buildFocusedSession(this.questions, this.stats, weakSkills, this.sessionSize);
+      const labels = weakSkills.map((skill) => this.prettyTag(skill));
+      this.setSession(
+        session,
+        "weak",
+        weakSkills,
+        `Luyện điểm yếu · ưu tiên ${labels.join(" + ")} theo thứ tự độ chính xác thấp nhất.`
+      );
     }
 
     startSkillSession(skill) {
       this.stats = loadStats();
-      this.mode = "skill";
-      this.focusSkills = [skill];
-      this.session = this.buildFocusedSession([skill]);
-      this.index = 0;
-      this.score = 0;
-      this.answered = false;
-      this.subtitleEl.textContent = `Luyện riêng: ${this.prettyTag(skill)} · ${this.session.length} câu được ưu tiên từ đúng kỹ năng này.`;
-      this.renderQuestion();
-      this.renderStats();
+      const subset = this.questions.filter((question) => questionSkills(question).includes(skill));
+      const pool = weightedQuestionPool(subset, this.stats);
+      const session = pool.slice(0, Math.min(this.sessionSize, pool.length));
+      this.setSession(
+        session,
+        "skill",
+        [skill],
+        `Luyện riêng: ${this.prettyTag(skill)} · ${session.length} câu được ưu tiên theo lịch sử làm bài của bạn.`
+      );
       this.root.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
@@ -273,7 +328,7 @@
 
     renderQuestion() {
       if (!this.session.length) {
-        this.cardEl.innerHTML = "<p>Chưa có đủ câu hỏi cho kỹ năng đã chọn.</p>";
+        this.cardEl.innerHTML = "<p>Chưa có câu hỏi phù hợp trong ngân hàng.</p>";
         return;
       }
       if (this.index >= this.session.length) {
@@ -309,7 +364,6 @@
       const correct = selectedIndex === question.answer;
       if (correct) this.score += 1;
       this.record(question, correct);
-      this.lastUpdatedSkills = new Set(questionSkills(question));
 
       const optionButtons = [...this.optionsEl.querySelectorAll(".practice-option")];
       optionButtons.forEach((button) => {
@@ -341,7 +395,7 @@
       });
       this.actionsEl.appendChild(nextBtn);
       this.progressEl.textContent = `Câu ${this.index + 1}/${this.session.length} · Đúng ${this.score}`;
-      this.renderStats();
+      this.renderStats(questionSkills(question));
       typeset(this.cardEl);
     }
 
@@ -352,11 +406,11 @@
       let candidates = this.questions.filter((candidate) =>
         candidate.id !== question.id &&
         !protectedIds.has(candidate.id) &&
-        questionSkills(candidate).some((tag) => wanted.has(tag))
+        questionSkills(candidate).some((skill) => wanted.has(skill))
       );
       if (!candidates.length) {
         candidates = this.questions.filter((candidate) =>
-          candidate.id !== question.id && questionSkills(candidate).some((tag) => wanted.has(tag))
+          candidate.id !== question.id && questionSkills(candidate).some((skill) => wanted.has(skill))
         );
       }
       if (candidates.length) this.session[this.index + 1] = shuffle(candidates)[0];
@@ -370,74 +424,83 @@
       if (correct) questionRecord.correct += 1;
       this.stats.questions[question.id] = questionRecord;
 
-      questionSkills(question).forEach((tag) => {
-        const record = this.stats.tags[tag] || { attempted: 0, correct: 0 };
+      questionSkills(question).forEach((skill) => {
+        const record = this.stats.tags[skill] || { attempted: 0, correct: 0 };
         record.attempted += 1;
         if (correct) record.correct += 1;
-        this.stats.tags[tag] = record;
+        this.stats.tags[skill] = record;
       });
       saveStats(this.stats);
     }
 
-    renderStats() {
-      const rows = this.bankSkills
-        .map((tag) => [tag, this.stats.tags[tag]])
-        .filter(([, record]) => record?.attempted)
-        .sort((a, b) => {
-          const accuracyDiff = (accuracy(a[1]) ?? 1) - (accuracy(b[1]) ?? 1);
-          if (accuracyDiff !== 0) return accuracyDiff;
-          return b[1].attempted - a[1].attempted;
+    renderStats(updatedSkills = []) {
+      const updated = new Set(updatedSkills);
+      const weak = new Set(rankWeakSkills(this.stats, this.bankSkills, this.skillOrder));
+      this.statsEl.innerHTML = "";
+
+      this.skillGroups.forEach((group) => {
+        const groupEl = document.createElement("section");
+        groupEl.className = "practice-skill-group";
+
+        const heading = document.createElement("div");
+        heading.className = "practice-skill-group-title";
+        heading.textContent = group.label;
+        groupEl.appendChild(heading);
+
+        group.skills.forEach((skill) => {
+          const record = this.stats.tags[skill] || { attempted: 0, correct: 0 };
+          const percent = record.attempted ? Math.round((record.correct / record.attempted) * 100) : 0;
+          const status = record.attempted
+            ? `${record.correct}/${record.attempted} · ${percent}%`
+            : "Chưa luyện";
+          const note = weak.has(skill)
+            ? "⚠ Cần luyện thêm"
+            : record.attempted < 3 && record.attempted > 0
+              ? "Đang thu thập dữ liệu"
+              : "";
+
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "practice-skill-row";
+          if (weak.has(skill)) button.classList.add("is-weak");
+          if (updated.has(skill)) button.classList.add("is-updated");
+          if (this.focusSkills.includes(skill)) button.classList.add("is-focus");
+          button.setAttribute("aria-label", `Luyện kỹ năng ${this.prettyTag(skill)}. Kết quả ${status}`);
+          button.innerHTML = `
+            <span class="practice-skill-main">
+              <strong>${this.prettyTag(skill)}</strong>
+              <span>${status}</span>
+            </span>
+            <span class="practice-skill-note">${note || "Bấm để luyện riêng kỹ năng này"}</span>
+            <progress max="100" value="${percent}">${percent}%</progress>
+          `;
+          button.addEventListener("click", () => this.startSkillSession(skill));
+          groupEl.appendChild(button);
         });
 
-      if (!rows.length) {
-        this.statsEl.innerHTML = "<p>Chưa có dữ liệu. Hãy làm vài câu để hệ thống bắt đầu theo dõi kỹ năng.</p>";
-        return;
-      }
-
-      this.statsEl.innerHTML = "";
-      rows.forEach(([tag, record]) => {
-        const percent = Math.round((record.correct / record.attempted) * 100);
-        const row = document.createElement("button");
-        row.type = "button";
-        row.className = "practice-stat-row";
-        row.title = `Luyện riêng kỹ năng ${this.prettyTag(tag)}`;
-        if (this.lastUpdatedSkills.has(tag)) row.classList.add("is-updated");
-        if (this.focusSkills.includes(tag)) row.classList.add("is-focused");
-        row.innerHTML = `
-          <div><strong>${this.prettyTag(tag)}</strong><span>${record.correct}/${record.attempted} · ${percent}%</span></div>
-          <progress max="100" value="${percent}">${percent}%</progress>
-        `;
-        row.addEventListener("click", () => this.startSkillSession(tag));
-        this.statsEl.appendChild(row);
+        this.statsEl.appendChild(groupEl);
       });
-
-      if (this.lastUpdatedSkills.size) {
-        if (this.statsFlashTimer) window.clearTimeout(this.statsFlashTimer);
-        this.statsFlashTimer = window.setTimeout(() => {
-          this.statsEl.querySelectorAll(".practice-stat-row.is-updated").forEach((row) => row.classList.remove("is-updated"));
-          this.lastUpdatedSkills.clear();
-        }, 1100);
-      }
     }
 
     renderSummary() {
       const percent = Math.round((this.score / this.session.length) * 100);
       this.progressEl.textContent = `Hoàn thành · ${this.score}/${this.session.length} câu đúng`;
       if (this.mode === "weak") this.metaEl.textContent = "Kết quả lượt luyện điểm yếu";
-      else if (this.mode === "skill") this.metaEl.textContent = `Kết quả luyện riêng: ${this.prettyTag(this.focusSkills[0])}`;
+      else if (this.mode === "skill") this.metaEl.textContent = `Kết quả luyện riêng · ${this.prettyTag(this.focusSkills[0])}`;
       else this.metaEl.textContent = "Kết quả lượt luyện tập";
       this.questionEl.textContent = `Bạn đạt ${percent}%.`;
       this.optionsEl.innerHTML = "";
       this.feedbackEl.hidden = false;
       this.feedbackEl.className = `practice-feedback ${percent >= 80 ? "is-correct" : "is-wrong"}`;
       this.feedbackEl.textContent = percent >= 80
-        ? "Nền tảng khá chắc. Có thể làm một bộ mới để tăng độ ổn định."
-        : "Hãy mở bảng tiến độ, chọn trực tiếp kỹ năng cần luyện hoặc dùng “Luyện điểm yếu”.";
+        ? "Nền tảng khá chắc. Có thể làm một bộ mới hoặc chọn kỹ năng khác trong bảng tiến độ."
+        : "Hãy xem bảng tiến độ, chọn kỹ năng cần luyện hoặc dùng “Luyện điểm yếu”.";
       this.actionsEl.innerHTML = "";
+
       const restartBtn = createButton("Làm bộ 10 câu mới", "practice-btn-primary");
-      restartBtn.addEventListener("click", () => this.startSession(false));
+      restartBtn.addEventListener("click", () => this.startNormalSession());
       const weakBtn = createButton("Luyện điểm yếu", "practice-btn-secondary");
-      weakBtn.addEventListener("click", () => this.startSession(true));
+      weakBtn.addEventListener("click", () => this.startWeakSession());
       this.actionsEl.append(restartBtn, weakBtn);
       this.renderStats();
     }
@@ -447,11 +510,11 @@
     }
 
     skillLabel(question) {
-      return questionSkills(question).slice(0, 2).map((tag) => this.prettyTag(tag)).join(" · ");
+      return questionSkills(question).slice(0, 3).map((skill) => this.prettyTag(skill)).join(" · ");
     }
 
-    prettyTag(tag) {
-      return this.skillLabels[tag] || tag.replaceAll("-", " ");
+    prettyTag(skill) {
+      return this.skillLabels[skill] || skill.replaceAll("-", " ");
     }
   }
 
