@@ -1,0 +1,89 @@
+name: Graph enhancement 08-12 once
+
+on:
+  push:
+    branches:
+      - graph-enhancement-08-12-v1
+
+permissions:
+  contents: write
+
+jobs:
+  apply-and-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: graph-enhancement-08-12-v1
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Apply graph enhancement to lesson pages
+        run: python graph_enhancement_08_12_apply_temp.py
+
+      - name: Validate new SVG files
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          files = [
+              'docs/assets/infographics/08/08-05-truc-so-bat-phuong-trinh.svg',
+              'docs/assets/infographics/08/08-06-giao-tap-nghiem.svg',
+              'docs/assets/infographics/09/09-04-y-nghia-hinh-hoc-he.svg',
+              'docs/assets/infographics/10/10-05-mat-phang-toa-do-diem.svg',
+              'docs/assets/infographics/10/10-06-he-so-a-b.svg',
+              'docs/assets/infographics/10/10-07-giao-diem-hai-duong-thang.svg',
+              'docs/assets/infographics/10/10-08-parabol-y-ax2.svg',
+              'docs/assets/infographics/10/10-09-duong-thang-parabol.svg',
+              'docs/assets/infographics/12/12-05-delta-va-giao-ox.svg',
+          ]
+          for f in files:
+              p = Path(f)
+              if not p.exists():
+                  raise SystemExit(f'Missing SVG: {f}')
+              ET.parse(p)
+              text = p.read_text(encoding='utf-8')
+              if '<title' not in text or '<desc' not in text:
+                  raise SystemExit(f'Missing accessibility title/desc: {f}')
+          print(f'OK: {len(files)} SVG files are valid XML with title/desc.')
+          PY
+
+      - name: Audit structure
+        run: python audit_content_structure.py --write
+
+      - name: Validate Practice Banks
+        run: python validate_practice_bank.py
+
+      - name: Roadmap dependency and link QA
+        run: python check_roadmap_dependencies.py
+
+      - name: Audit Practice quality
+        run: python audit_practice_quality.py
+
+      - name: Install MkDocs
+        run: pip install mkdocs-material
+
+      - name: Strict MkDocs build
+        run: mkdocs build --strict
+
+      - name: Commit lesson-page integration
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            docs/kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md \
+            docs/kien-thuc/09-he-phuong-trinh/index.md \
+            docs/kien-thuc/10-ham-so-do-thi/index.md \
+            docs/kien-thuc/12-phuong-trinh-bac-hai-viete/index.md \
+            docs/roadmap/audit-noi-dung-25-chuyen-de.md
+          if git diff --cached --quiet; then
+            echo "No content changes to commit."
+            exit 0
+          fi
+          git commit -m "Graph enhancement 08-12: gắn đồ thị trực quan vào bài học"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
