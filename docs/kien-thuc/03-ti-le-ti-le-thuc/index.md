@@ -345,6 +345,10 @@ Ví dụ: 18 học sinh đạt loại tốt trong 30 học sinh:
 
 ### 3.11. Phân biệt tỉ lệ thuận và tỉ lệ nghịch
 
+![So sánh trực quan tỉ lệ thuận y = 2x và tỉ lệ nghịch xy = 8](../../assets/infographics/03/03-04-ti-le-thuan-nghich.svg)
+
+> Nhìn nhanh: nếu `x` gấp đôi mà `y` cũng gấp đôi thì nghĩ đến **tỉ lệ thuận**; nếu `x` gấp đôi mà `y` còn một nửa thì nghĩ đến **tỉ lệ nghịch**. Sau đó vẫn phải kiểm tra đại lượng bất biến: `y/x` hoặc `xy`.
+
 | Dấu hiệu | Tỉ lệ thuận | Tỉ lệ nghịch |
 |---|---|---|
 | Công thức | `y = kx` | `xy = a` |
