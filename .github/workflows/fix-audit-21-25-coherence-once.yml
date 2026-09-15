@@ -1,0 +1,64 @@
+name: Fix audit 21-25 coherence once
+
+on:
+  push:
+    branches:
+      - content-manual-audit-21-25-v1
+
+permissions:
+  contents: write
+
+jobs:
+  fix-and-qa:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: content-manual-audit-21-25-v1
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Apply coherence fixes
+        run: python fix_audit_21_25_coherence_temp.py
+
+      - name: Verify coherence
+        shell: bash
+        run: |
+          grep -q "Bảng/biểu đồ ghép nhóm" docs/kien-thuc/21-thong-ke/index.md
+          grep -q "Biểu đồ hình quạt tròn" docs/kien-thuc/21-thong-ke/index.md
+          grep -q "bảng tần số/tần số tương đối" docs/kien-thuc/25-tong-hop-on-thi-10/index.md
+
+      - name: Audit structure
+        run: python audit_content_structure.py --write
+
+      - name: Validate Practice Banks
+        run: python validate_practice_bank.py
+
+      - name: Roadmap dependency and link QA
+        run: python check_roadmap_dependencies.py
+
+      - name: Audit Practice quality
+        run: python audit_practice_quality.py
+
+      - name: Install MkDocs
+        run: pip install mkdocs-material
+
+      - name: Strict MkDocs build
+        run: mkdocs build --strict
+
+      - name: Commit coherence fixes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/kien-thuc/21-thong-ke/index.md docs/kien-thuc/25-tong-hop-on-thi-10/index.md
+          if git diff --cached --quiet; then
+            echo "No product changes."
+            exit 0
+          fi
+          git commit -m "Đồng bộ bảng biểu và bản đồ tổng hợp 21-25"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
