@@ -1,0 +1,79 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "ALG04-V2",
+  "topic": {
+    "id": "04-bieu-thuc-dai-so",
+    "title": "Biểu thức đại số"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "nhan-biet-don-thuc": "Nhận biết đơn thức",
+    "nhan-biet-da-thuc": "Nhận biết đa thức",
+    "he-so-bac": "Hệ số và bậc",
+    "hang-tu-dong-dang": "Hạng tử đồng dạng",
+    "thu-gon-da-thuc": "Thu gọn đa thức",
+    "cong-tru-da-thuc": "Cộng – trừ đa thức",
+    "bo-ngoac-dau": "Bỏ ngoặc và dấu",
+    "nhan-bieu-thuc": "Nhân biểu thức",
+    "tinh-phan-phoi": "Tính phân phối",
+    "tinh-gia-tri-bieu-thuc": "Tính giá trị biểu thức",
+    "dieu-kien-xac-dinh": "Điều kiện xác định",
+    "bien-doi-nhieu-buoc": "Biến đổi nhiều bước",
+    "lap-bieu-thuc": "Lập biểu thức",
+    "bai-toan-thuc-te": "Bài toán thực tế"
+  },
+  "skill_groups": [
+    {
+      "id": "nhan-biet-cau-truc",
+      "label": "A. Nhận biết cấu trúc",
+      "skills": [
+        "nhan-biet-don-thuc",
+        "nhan-biet-da-thuc",
+        "he-so-bac",
+        "hang-tu-dong-dang"
+      ]
+    },
+    {
+      "id": "bien-doi-co-ban",
+      "label": "B. Biến đổi cơ bản",
+      "skills": [
+        "thu-gon-da-thuc",
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ]
+    },
+    {
+      "id": "nhan-phan-phoi",
+      "label": "C. Nhân và phân phối",
+      "skills": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ]
+    },
+    {
+      "id": "gia-tri-dieu-kien",
+      "label": "D. Giá trị và điều kiện",
+      "skills": [
+        "tinh-gia-tri-bieu-thuc",
+        "dieu-kien-xac-dinh"
+      ]
+    },
+    {
+      "id": "tong-hop-ung-dung",
+      "label": "E. Tổng hợp và ứng dụng",
+      "skills": [
+        "bien-doi-nhieu-buoc",
+        "lap-bieu-thuc",
+        "bai-toan-thuc-te"
+      ]
+    }
+  ],
+  "sources": [
+    "04-bieu-thuc-dai-so-v2-01.json",
+    "04-bieu-thuc-dai-so-v2-02.json",
+    "04-bieu-thuc-dai-so-v2-03.json",
+    "04-bieu-thuc-dai-so-v2-04.json"
+  ]
+}

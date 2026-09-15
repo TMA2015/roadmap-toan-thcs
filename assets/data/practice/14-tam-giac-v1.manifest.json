@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "TRI14-V1",
+  "topic": {
+    "id": "14-tam-giac",
+    "title": "Tam giác"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "phan-loai-tam-giac": "Phân loại tam giác",
+    "chu-vi-dien-tich": "Chu vi – diện tích tam giác",
+    "tong-goc-tam-giac": "Tổng ba góc trong tam giác",
+    "goc-ngoai": "Góc ngoài của tam giác",
+    "so-sanh-canh-goc": "Quan hệ cạnh – góc đối diện",
+    "bat-dang-thuc-tam-giac": "Bất đẳng thức tam giác",
+    "tam-giac-can": "Tam giác cân",
+    "tam-giac-deu": "Tam giác đều",
+    "pythagore": "Định lý Pythagore",
+    "pythagore-dao": "Định lý Pythagore đảo",
+    "bang-nhau-ccc": "Hai tam giác bằng nhau c.c.c",
+    "bang-nhau-cgc": "Hai tam giác bằng nhau c.g.c",
+    "bang-nhau-gcg": "Hai tam giác bằng nhau g.c.g",
+    "bang-nhau-tam-giac-vuong": "Bằng nhau của hai tam giác vuông"
+  },
+  "skill_groups": [
+    {
+      "id": "A",
+      "label": "A. Thành phần – góc – cạnh",
+      "skills": [
+        "phan-loai-tam-giac",
+        "chu-vi-dien-tich",
+        "tong-goc-tam-giac",
+        "goc-ngoai",
+        "so-sanh-canh-goc",
+        "bat-dang-thuc-tam-giac"
+      ]
+    },
+    {
+      "id": "B",
+      "label": "B. Tam giác đặc biệt",
+      "skills": [
+        "tam-giac-can",
+        "tam-giac-deu",
+        "pythagore",
+        "pythagore-dao"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "C. Hai tam giác bằng nhau",
+      "skills": [
+        "bang-nhau-ccc",
+        "bang-nhau-cgc",
+        "bang-nhau-gcg",
+        "bang-nhau-tam-giac-vuong"
+      ]
+    }
+  ],
+  "sources": [
+    "14-tam-giac-v1-01.json",
+    "14-tam-giac-v1-02.json",
+    "14-tam-giac-v1-03.json",
+    "14-tam-giac-v1-04.json"
+  ]
+}

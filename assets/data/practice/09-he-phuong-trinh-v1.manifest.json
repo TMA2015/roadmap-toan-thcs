@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "SYS09-V1",
+  "topic": {
+    "id": "09-he-phuong-trinh",
+    "title": "Hệ phương trình bậc nhất hai ẩn"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "nghiem-pt-hai-an": "Nghiệm của phương trình bậc nhất hai ẩn",
+    "nghiem-he": "Nghiệm của hệ phương trình",
+    "so-nghiem-he": "Số nghiệm của hệ",
+    "y-nghia-hinh-hoc": "Ý nghĩa hình học của hệ",
+    "giai-he-the": "Giải hệ bằng phương pháp thế",
+    "giai-he-cong": "Giải hệ bằng cộng đại số",
+    "chon-phuong-phap": "Chọn phương pháp giải phù hợp",
+    "bien-doi-truoc-giai": "Biến đổi hệ trước khi giải",
+    "kiem-tra-nghiem-he": "Kiểm tra nghiệm của hệ",
+    "tham-so-he": "Hệ phương trình có tham số",
+    "lap-he-bai-toan": "Lập hệ từ bài toán",
+    "bai-toan-so": "Bài toán về số",
+    "chuyen-dong-he": "Bài toán chuyển động",
+    "nang-suat-he": "Bài toán năng suất – giá trị"
+  },
+  "skill_groups": [
+    {
+      "id": "A",
+      "label": "A. Nền tảng về hệ",
+      "skills": [
+        "nghiem-pt-hai-an",
+        "nghiem-he",
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ]
+    },
+    {
+      "id": "B",
+      "label": "B. Phương pháp giải hệ",
+      "skills": [
+        "giai-he-the",
+        "giai-he-cong",
+        "chon-phuong-phap",
+        "bien-doi-truoc-giai"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "C. Kiểm tra và tham số",
+      "skills": [
+        "kiem-tra-nghiem-he",
+        "tham-so-he"
+      ]
+    },
+    {
+      "id": "D",
+      "label": "D. Lập hệ và bài toán thực tế",
+      "skills": [
+        "lap-he-bai-toan",
+        "bai-toan-so",
+        "chuyen-dong-he",
+        "nang-suat-he"
+      ]
+    }
+  ],
+  "sources": [
+    "09-he-phuong-trinh-v1-01.json",
+    "09-he-phuong-trinh-v1-02.json",
+    "09-he-phuong-trinh-v1-03.json",
+    "09-he-phuong-trinh-v1-04.json"
+  ]
+}

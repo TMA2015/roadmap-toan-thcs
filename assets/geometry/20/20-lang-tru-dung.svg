@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Lăng trụ đứng với diện tích đáy, chu vi đáy và chiều cao</title>
+  <desc id="desc">Lăng trụ đứng tam giác, hai đáy song song, các cạnh bên vuông góc với đáy; ký hiệu S đáy, P đáy và chiều cao h.</desc>
+  <rect width="640" height="420" fill="white"/>
+  <g stroke="#1f2937" stroke-width="4" stroke-linejoin="round" fill="#eef4fb">
+    <polygon points="170,115 315,65 420,135"/>
+    <polygon points="170,285 315,235 420,305"/>
+    <polygon points="170,115 315,65 315,235 170,285" fill="#f8fafc"/>
+    <polygon points="315,65 420,135 420,305 315,235" fill="#dbeafe"/>
+  </g>
+  <g stroke="#1f2937" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M170 115 L170 285 M315 65 L315 235 M420 135 L420 305"/>
+  </g>
+  <g stroke="#c2410c" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M465 135 L465 305"/>
+    <path d="M455 135 L475 135 M455 305 L475 305"/>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#111827">
+    <text x="267" y="155" font-size="26" font-weight="700">S_đáy</text>
+    <text x="245" y="330" font-size="24" font-weight="700">P_đáy</text>
+    <text x="483" y="230" font-size="30" font-weight="700">h</text>
+  </g>
+</svg>

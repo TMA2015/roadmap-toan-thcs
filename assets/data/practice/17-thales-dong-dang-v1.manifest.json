@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "SIM17-V1",
+  "topic": {
+    "id": "17-thales-dong-dang",
+    "title": "Định lý Thales và tam giác đồng dạng"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "thales-thuan": "Thales thuận",
+    "thales-dao": "Thales đảo",
+    "ti-le-doan-thang": "Tỉ lệ các đoạn thẳng",
+    "duong-trung-binh": "Đường trung bình tam giác",
+    "nhan-biet-dong-dang": "Nhận biết tam giác đồng dạng",
+    "dong-dang-gg": "Đồng dạng g-g",
+    "dong-dang-cgc": "Đồng dạng c-g-c",
+    "dong-dang-ccc": "Đồng dạng c-c-c",
+    "thu-tu-tuong-ung": "Thứ tự đỉnh tương ứng",
+    "tinh-do-dai-dong-dang": "Tính độ dài bằng đồng dạng",
+    "ti-so-chu-vi": "Tỉ số chu vi",
+    "ti-so-dien-tich": "Tỉ số diện tích",
+    "he-thuc-tich": "Hệ thức tích từ đồng dạng",
+    "ket-hop-song-song-dong-dang": "Kết hợp song song – đồng dạng"
+  },
+  "skill_groups": [
+    {
+      "id": "thales",
+      "label": "A. Thales và đường trung bình",
+      "skills": [
+        "thales-thuan",
+        "thales-dao",
+        "ti-le-doan-thang",
+        "duong-trung-binh"
+      ]
+    },
+    {
+      "id": "dong-dang",
+      "label": "B. Nhận biết tam giác đồng dạng",
+      "skills": [
+        "nhan-biet-dong-dang",
+        "dong-dang-gg",
+        "dong-dang-cgc",
+        "dong-dang-ccc",
+        "thu-tu-tuong-ung"
+      ]
+    },
+    {
+      "id": "van-dung",
+      "label": "C. Vận dụng đồng dạng",
+      "skills": [
+        "tinh-do-dai-dong-dang",
+        "ti-so-chu-vi",
+        "ti-so-dien-tich",
+        "he-thuc-tich",
+        "ket-hop-song-song-dong-dang"
+      ]
+    }
+  ],
+  "sources": [
+    "17-thales-dong-dang-v1-01.json",
+    "17-thales-dong-dang-v1-02.json",
+    "17-thales-dong-dang-v1-03.json",
+    "17-thales-dong-dang-v1-04.json"
+  ]
+}

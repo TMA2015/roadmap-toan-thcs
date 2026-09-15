@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "FUN10-V1",
+  "topic": {
+    "id": "10-ham-so-do-thi",
+    "title": "Hàm số và đồ thị"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "khai-niem-ham-so": "Khái niệm hàm số",
+    "tinh-gia-tri-ham": "Tính giá trị hàm số",
+    "bang-gia-tri": "Bảng giá trị",
+    "toa-do-diem": "Tọa độ điểm",
+    "diem-thuoc-do-thi": "Điểm thuộc đồ thị",
+    "nhan-biet-ham-bac-nhat": "Nhận biết hàm số bậc nhất",
+    "he-so-goc": "Hệ số góc",
+    "tung-do-goc": "Tung độ gốc",
+    "dong-nghich-bien": "Đồng biến – nghịch biến",
+    "ve-do-thi-ham-bac-nhat": "Vẽ đồ thị hàm số bậc nhất",
+    "vi-tri-hai-duong-thang": "Vị trí tương đối hai đường thẳng",
+    "giao-diem-do-thi": "Giao điểm hai đồ thị",
+    "lien-he-he-phuong-trinh": "Liên hệ với hệ phương trình",
+    "ham-y-ax2": "Hàm số y = ax²",
+    "doi-xung-parabol": "Tính đối xứng và hướng mở parabol",
+    "diem-thuoc-parabol": "Điểm thuộc parabol"
+  },
+  "skill_groups": [
+    {
+      "id": "A",
+      "label": "A. Hàm số và tọa độ",
+      "skills": [
+        "khai-niem-ham-so",
+        "tinh-gia-tri-ham",
+        "bang-gia-tri",
+        "toa-do-diem",
+        "diem-thuoc-do-thi"
+      ]
+    },
+    {
+      "id": "B",
+      "label": "B. Hàm số bậc nhất",
+      "skills": [
+        "nhan-biet-ham-bac-nhat",
+        "he-so-goc",
+        "tung-do-goc",
+        "dong-nghich-bien",
+        "ve-do-thi-ham-bac-nhat"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "C. Hai đường thẳng và giao điểm",
+      "skills": [
+        "vi-tri-hai-duong-thang",
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ]
+    },
+    {
+      "id": "D",
+      "label": "D. Mở rộng parabol",
+      "skills": [
+        "ham-y-ax2",
+        "doi-xung-parabol",
+        "diem-thuoc-parabol"
+      ]
+    }
+  ],
+  "sources": [
+    "10-ham-so-do-thi-v1-01.json",
+    "10-ham-so-do-thi-v1-02.json",
+    "10-ham-so-do-thi-v1-03.json",
+    "10-ham-so-do-thi-v1-04.json"
+  ]
+}

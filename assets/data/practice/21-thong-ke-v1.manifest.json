@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "STA21-V1",
+  "topic": {
+    "id": "21-thong-ke",
+    "title": "Thống kê và thu thập dữ liệu"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "du-lieu-phan-loai": "Dữ liệu và phân loại dữ liệu",
+    "thu-thap-du-lieu": "Thu thập dữ liệu",
+    "kiem-tra-chat-luong": "Kiểm tra chất lượng dữ liệu",
+    "mau-thien-lech": "Nhận biết mẫu thiên lệch",
+    "bang-tan-so": "Bảng tần số",
+    "tan-suat": "Tần suất và phần trăm",
+    "doc-bieu-do-cot": "Đọc biểu đồ cột",
+    "doc-bieu-do-doan-thang": "Đọc biểu đồ đoạn thẳng",
+    "chon-bieu-do": "Chọn dạng biểu diễn",
+    "chuyen-bang-bieu-do": "Chuyển đổi bảng – biểu đồ",
+    "nhan-xet-du-lieu": "Nhận xét và kết luận từ dữ liệu",
+    "don-vi-thang-do": "Đơn vị và thang đo",
+    "doc-bieu-do-cot-kep": "Đọc và so sánh biểu đồ cột kép",
+    "bieu-do-quat-tron": "Biểu đồ hình quạt tròn",
+    "du-lieu-ghep-nhom": "Dữ liệu và tần số ghép nhóm"
+  },
+  "skill_groups": [
+    {
+      "id": "du-lieu-thu-thap",
+      "label": "A. Dữ liệu và thu thập",
+      "skills": [
+        "du-lieu-phan-loai",
+        "thu-thap-du-lieu",
+        "kiem-tra-chat-luong",
+        "mau-thien-lech"
+      ]
+    },
+    {
+      "id": "to-chuc-du-lieu",
+      "label": "B. Tổ chức dữ liệu",
+      "skills": [
+        "bang-tan-so",
+        "tan-suat",
+        "du-lieu-ghep-nhom"
+      ]
+    },
+    {
+      "id": "bieu-dien-du-lieu",
+      "label": "C. Biểu diễn dữ liệu",
+      "skills": [
+        "doc-bieu-do-cot",
+        "doc-bieu-do-doan-thang",
+        "doc-bieu-do-cot-kep",
+        "bieu-do-quat-tron",
+        "chon-bieu-do",
+        "chuyen-bang-bieu-do"
+      ]
+    },
+    {
+      "id": "phan-tich-du-lieu",
+      "label": "D. Phân tích và kết luận",
+      "skills": [
+        "nhan-xet-du-lieu",
+        "don-vi-thang-do"
+      ]
+    }
+  ],
+  "sources": [
+    "21-thong-ke-v1-01.json",
+    "21-thong-ke-v1-02.json",
+    "21-thong-ke-v1-03.json",
+    "21-thong-ke-v1-04.json"
+  ]
+}

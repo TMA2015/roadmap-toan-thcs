@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "ANG13-V1",
+  "topic": {
+    "id": "13-goc-va-duong-thang",
+    "title": "Góc và quan hệ giữa các đường thẳng"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "diem-thuoc-duong": "Điểm thuộc / không thuộc đường thẳng",
+    "tia-doi": "Hai tia đối nhau",
+    "trung-diem": "Trung điểm đoạn thẳng",
+    "phan-loai-goc": "Phân loại góc",
+    "goc-phu-bu": "Góc phụ nhau – bù nhau",
+    "tia-phan-giac": "Tia phân giác",
+    "goc-doi-dinh": "Góc đối đỉnh",
+    "duong-vuong-goc": "Hai đường thẳng vuông góc",
+    "goc-so-le-trong": "Góc so le trong",
+    "goc-dong-vi": "Góc đồng vị",
+    "goc-trong-cung-phia": "Góc trong cùng phía",
+    "tinh-chat-song-song": "Tính chất hai đường thẳng song song",
+    "dau-hieu-song-song": "Dấu hiệu nhận biết song song",
+    "vuong-goc-song-song": "Quan hệ vuông góc – song song"
+  },
+  "skill_groups": [
+    {
+      "id": "A",
+      "label": "A. Điểm – tia – đoạn thẳng",
+      "skills": [
+        "diem-thuoc-duong",
+        "tia-doi",
+        "trung-diem"
+      ]
+    },
+    {
+      "id": "B",
+      "label": "B. Góc và quan hệ góc",
+      "skills": [
+        "phan-loai-goc",
+        "goc-phu-bu",
+        "tia-phan-giac",
+        "goc-doi-dinh",
+        "duong-vuong-goc"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "C. Hai đường thẳng song song",
+      "skills": [
+        "goc-so-le-trong",
+        "goc-dong-vi",
+        "goc-trong-cung-phia",
+        "tinh-chat-song-song",
+        "dau-hieu-song-song"
+      ]
+    },
+    {
+      "id": "D",
+      "label": "D. Vuông góc – song song",
+      "skills": [
+        "vuong-goc-song-song"
+      ]
+    }
+  ],
+  "sources": [
+    "13-goc-va-duong-thang-v1-01.json",
+    "13-goc-va-duong-thang-v1-02.json",
+    "13-goc-va-duong-thang-v1-03.json",
+    "13-goc-va-duong-thang-v1-04.json"
+  ]
+}

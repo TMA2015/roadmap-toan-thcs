@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "TRIG18-V1",
+  "topic": {
+    "id": "18-he-thuc-luong",
+    "title": "Hệ thức lượng trong tam giác vuông"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "pythagore": "Định lý Pythagore",
+    "pythagore-dao": "Pythagore đảo",
+    "canh-huyen": "Cạnh huyền – cạnh góc vuông",
+    "he-thuc-canh": "Hệ thức cạnh góc vuông",
+    "he-thuc-duong-cao": "Hệ thức đường cao",
+    "dien-tich-duong-cao": "Diện tích và đường cao",
+    "doi-ke-huyen": "Nhận biết cạnh đối – kề – huyền",
+    "sin": "Tỉ số sin",
+    "cos": "Tỉ số cos",
+    "tan": "Tỉ số tan",
+    "tim-canh-luong-giac": "Tìm cạnh bằng lượng giác",
+    "tim-goc-luong-giac": "Tìm góc bằng lượng giác",
+    "goc-nang-ha": "Góc nâng – góc hạ",
+    "chieu-cao-khoang-cach": "Chiều cao – khoảng cách",
+    "ket-hop-he-thuc": "Kết hợp hệ thức lượng"
+  },
+  "skill_groups": [
+    {
+      "id": "vuong",
+      "label": "A. Tam giác vuông và Pythagore",
+      "skills": [
+        "pythagore",
+        "pythagore-dao",
+        "canh-huyen"
+      ]
+    },
+    {
+      "id": "duong-cao",
+      "label": "B. Hệ thức đường cao xuống cạnh huyền",
+      "skills": [
+        "he-thuc-canh",
+        "he-thuc-duong-cao",
+        "dien-tich-duong-cao"
+      ]
+    },
+    {
+      "id": "luong-giac",
+      "label": "C. Tỉ số lượng giác",
+      "skills": [
+        "doi-ke-huyen",
+        "sin",
+        "cos",
+        "tan",
+        "tim-canh-luong-giac",
+        "tim-goc-luong-giac"
+      ]
+    },
+    {
+      "id": "thuc-te",
+      "label": "D. Ứng dụng và bài toán thực tế",
+      "skills": [
+        "goc-nang-ha",
+        "chieu-cao-khoang-cach",
+        "ket-hop-he-thuc"
+      ]
+    }
+  ],
+  "sources": [
+    "18-he-thuc-luong-v1-01.json",
+    "18-he-thuc-luong-v1-02.json",
+    "18-he-thuc-luong-v1-03.json",
+    "18-he-thuc-luong-v1-04.json"
+  ]
+}

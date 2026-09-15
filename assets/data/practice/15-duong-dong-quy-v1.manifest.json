@@ -1,0 +1,79 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "CTR15-V1",
+  "topic": {
+    "id": "15-duong-dong-quy",
+    "title": "Các đường đồng quy trong tam giác"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "nhan-biet-trung-tuyen": "Nhận biết đường trung tuyến",
+    "trong-tam": "Trọng tâm",
+    "ti-so-trong-tam": "Tỉ số trọng tâm 2 : 1",
+    "nhan-biet-duong-cao": "Nhận biết đường cao",
+    "truc-tam": "Trực tâm",
+    "vi-tri-truc-tam": "Vị trí trực tâm",
+    "nhan-biet-phan-giac": "Nhận biết đường phân giác",
+    "tam-noi-tiep": "Tâm nội tiếp",
+    "cach-deu-canh": "Tính chất cách đều ba cạnh",
+    "nhan-biet-trung-truc": "Nhận biết đường trung trực",
+    "tam-ngoai-tiep": "Tâm ngoại tiếp",
+    "cach-deu-dinh": "Tính chất cách đều ba đỉnh",
+    "vi-tri-tam-ngoai-tiep": "Vị trí tâm ngoại tiếp",
+    "phan-biet-bon-tam": "Phân biệt G – H – I – O"
+  },
+  "skill_groups": [
+    {
+      "id": "A",
+      "label": "A. Trung tuyến – trọng tâm",
+      "skills": [
+        "nhan-biet-trung-tuyen",
+        "trong-tam",
+        "ti-so-trong-tam"
+      ]
+    },
+    {
+      "id": "B",
+      "label": "B. Đường cao – trực tâm",
+      "skills": [
+        "nhan-biet-duong-cao",
+        "truc-tam",
+        "vi-tri-truc-tam"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "C. Phân giác – tâm nội tiếp",
+      "skills": [
+        "nhan-biet-phan-giac",
+        "tam-noi-tiep",
+        "cach-deu-canh"
+      ]
+    },
+    {
+      "id": "D",
+      "label": "D. Trung trực – tâm ngoại tiếp",
+      "skills": [
+        "nhan-biet-trung-truc",
+        "tam-ngoai-tiep",
+        "cach-deu-dinh",
+        "vi-tri-tam-ngoai-tiep"
+      ]
+    },
+    {
+      "id": "E",
+      "label": "E. Phân biệt bốn tâm",
+      "skills": [
+        "phan-biet-bon-tam"
+      ]
+    }
+  ],
+  "sources": [
+    "15-duong-dong-quy-v1-01.json",
+    "15-duong-dong-quy-v1-02.json",
+    "15-duong-dong-quy-v1-03.json",
+    "15-duong-dong-quy-v1-04.json"
+  ]
+}
