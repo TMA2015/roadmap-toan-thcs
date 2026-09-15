@@ -1,0 +1,96 @@
+/* UX toàn site: mobile + print. Giữ thay đổi tối thiểu, không thay theme Material. */
+
+/* Hình minh họa phải co theo chiều rộng màn hình, kể cả khi Markdown/HTML đặt width cố định. */
+.md-typeset img,
+.md-typeset svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Công thức dạng display có thể rộng hơn màn hình trên điện thoại. */
+.md-typeset mjx-container[display="true"] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.15rem;
+}
+
+@media (max-width: 700px) {
+  /* Bảng rộng được cuộn ngang thay vì làm tràn toàn trang. */
+  .md-typeset table:not([class]) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Vùng bấm trong Practice dễ thao tác hơn bằng ngón tay. */
+  .practice-btn {
+    min-height: 2.6rem;
+  }
+
+  .practice-toolbar-actions,
+  .practice-actions {
+    width: 100%;
+  }
+}
+
+@media print {
+  @page {
+    margin: 14mm;
+  }
+
+  /* Chỉ in nội dung học; bỏ các thành phần điều hướng của website. */
+  .md-header,
+  .md-tabs,
+  .md-sidebar,
+  .md-footer,
+  .md-top {
+    display: none !important;
+  }
+
+  .md-main__inner,
+  .md-content,
+  .md-content__inner {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+  }
+
+  /* Tránh cắt hình/bảng/khối kiến thức giữa hai trang khi có thể. */
+  .md-typeset img,
+  .md-typeset svg,
+  .md-typeset table,
+  .md-typeset pre,
+  .md-typeset blockquote,
+  .md-typeset .admonition,
+  .practice-engine {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .md-typeset h1,
+  .md-typeset h2,
+  .md-typeset h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* Practice tương tác: giữ nội dung câu hỏi nhưng bỏ nút bấm và bảng tiến độ khi in. */
+  .practice-toolbar-actions,
+  .practice-actions,
+  .practice-stats-panel {
+    display: none !important;
+  }
+
+  .practice-engine {
+    box-shadow: none !important;
+  }
+
+  /* Liên kết trên giấy vẫn dễ đọc, không phụ thuộc màu màn hình. */
+  .md-typeset a {
+    color: inherit !important;
+    text-decoration: underline;
+  }
+}
