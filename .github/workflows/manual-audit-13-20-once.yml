@@ -1,0 +1,74 @@
+name: Manual academic audit 13-20 once
+
+on:
+  push:
+    branches:
+      - content-manual-audit-13-20-v1
+
+permissions:
+  contents: write
+
+jobs:
+  apply-and-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: content-manual-audit-13-20-v1
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Apply manual audit changes
+        run: python manual_audit_13_20_apply_temp.py
+
+      - name: Verify new academic coverage
+        shell: bash
+        run: |
+          grep -q "Đường trung bình của hình thang" docs/kien-thuc/16-tu-giac/index.md
+          grep -q "Tỉ số đồng dạng và các hệ quả đo lường" docs/kien-thuc/17-thales-dong-dang/index.md
+          grep -q "cot α" docs/kien-thuc/18-he-thuc-luong/index.md
+          grep -q "Góc tạo bởi tiếp tuyến và dây cung" docs/kien-thuc/19-duong-tron/index.md
+          grep -q "Hình trụ" docs/kien-thuc/20-hinh-hoc-tong-hop/index.md
+          grep -q "Hình cầu" docs/kien-thuc/20-hinh-hoc-tong-hop/index.md
+
+      - name: Audit structure
+        run: python audit_content_structure.py --write
+
+      - name: Validate Practice Banks
+        run: python validate_practice_bank.py
+
+      - name: Roadmap dependency and link QA
+        run: python check_roadmap_dependencies.py
+
+      - name: Audit Practice quality
+        run: python audit_practice_quality.py
+
+      - name: Install MkDocs
+        run: pip install mkdocs-material
+
+      - name: Strict MkDocs build
+        run: mkdocs build --strict
+
+      - name: Commit audited content
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            docs/kien-thuc/15-duong-dong-quy/index.md \
+            docs/kien-thuc/16-tu-giac/index.md \
+            docs/kien-thuc/17-thales-dong-dang/index.md \
+            docs/kien-thuc/18-he-thuc-luong/index.md \
+            docs/kien-thuc/19-duong-tron/index.md \
+            docs/kien-thuc/20-hinh-hoc-tong-hop/index.md \
+            docs/roadmap/audit-hoc-thuat-13-20-v1.md \
+            docs/roadmap/audit-noi-dung-25-chuyen-de.md
+          if git diff --cached --quiet; then
+            echo "No product changes."
+            exit 0
+          fi
+          git commit -m "Audit học thuật 13-20: hoàn thiện Hình học và hình khối"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
