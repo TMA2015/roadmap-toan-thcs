@@ -62,8 +62,8 @@ Bốn mạch lớn cần nắm:
 
 - **Số và Đại số**: biểu thức, hằng đẳng thức, phương trình, hệ phương trình, hàm số;
 - **Hình học**: góc, tam giác, tứ giác, đường tròn, hệ thức lượng, bài hình tổng hợp;
-- **Thống kê**: bảng số liệu, biểu đồ, số trung bình, trung vị, mốt;
-- **Xác suất và bài toán thực tế**: không gian mẫu, biến cố, mô hình hóa.
+- **Thống kê**: bảng tần số/tần số tương đối, biểu đồ, dữ liệu ghép nhóm, số trung bình, trung vị, mốt;
+- **Xác suất và bài toán thực tế**: xác suất thực nghiệm, không gian mẫu, biến cố, xác suất theo mô hình và mô hình hóa.
 
 Mục tiêu cuối cùng không phải chỉ “học hết từng chuyên đề”, mà là:
 

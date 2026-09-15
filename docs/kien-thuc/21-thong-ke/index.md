@@ -127,7 +127,10 @@ Trong ví dụ:
 |---|---|---|
 | Bảng tần số | Cần thống kê dữ liệu gốc | Gọn, dễ tính toán |
 | Biểu đồ cột | Cần so sánh các nhóm | Dễ nhìn, trực quan |
+| Biểu đồ cột kép | Cần so sánh hai dãy số liệu theo cùng các nhóm | Thấy chênh lệch giữa hai đối tượng |
 | Biểu đồ đoạn thẳng | Cần theo dõi sự thay đổi theo thời gian | Thể hiện xu hướng rõ |
+| Biểu đồ hình quạt tròn | Cần mô tả cơ cấu các phần trong một tổng thể | Thấy nhanh tỉ trọng của từng phần |
+| Bảng/biểu đồ ghép nhóm | Có nhiều số liệu số cần gom theo khoảng | Gọn và dễ nhìn phân bố theo nhóm |
 
 ---
 
@@ -299,8 +302,11 @@ Khi đánh giá dữ liệu cần xem xét:
 |---|---|
 | Đếm số lần xuất hiện | Bảng tần số |
 | So sánh các nhóm | Biểu đồ cột |
+| So sánh hai dãy trên cùng nhóm | Biểu đồ cột kép |
 | Theo dõi theo thời gian | Biểu đồ đoạn thẳng |
-| So sánh theo tỉ lệ | Bảng tần suất / phần trăm |
+| Mô tả cơ cấu trong một tổng thể | Biểu đồ hình quạt tròn |
+| Nhiều số liệu số cần gom theo khoảng | Bảng/biểu đồ tần số ghép nhóm |
+| So sánh theo tỉ lệ | Bảng tần suất / tần số tương đối / phần trăm |
 
 ---
 
