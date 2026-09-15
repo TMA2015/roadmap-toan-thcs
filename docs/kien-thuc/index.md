@@ -33,12 +33,16 @@ Trang này là mục lục trung tâm của toàn bộ phần **Kiến thức**.
 - [24. Bài toán thực tế và mô hình hóa](24-bai-toan-thuc-te/index.md)
 - [25. Bản đồ tổng hợp & chiến lược ôn thi vào 10](25-tong-hop-on-thi-10/index.md)
 
-## Thứ tự biên soạn ưu tiên
+## Lộ trình học gợi ý
 
-1. **Đại số:** 04 → 05 → 06 → 07 → 08 → 09 → 10 → 11 → 12
-2. **Số và nền tảng:** 02 → 03
-3. **Hình học:** 13 → 14 → 15 → 16 → 17 → 18 → 19 → 20
-4. **Thống kê – Xác suất – Mô hình hóa:** 21 → 22 → 23 → 24
-5. **Tổng hợp:** 01 → 25
+Không nhất thiết phải học cả 25 chuyên đề theo một đường thẳng. Hãy dùng [01. Bản đồ chương trình Toán THCS](01-ban-do-chuong-trinh/index.md) để xác định vị trí hiện tại, rồi đi theo mạch phù hợp:
+
+1. **Nền tảng số và tỉ lệ:** 02 → 03.
+2. **Đại số:** 04 → 05 → 06 → 07 → 08 → 09 → 10 → 11 → 12.
+3. **Hình học:** 13 → 14 → 15 → 16 → 17 → 18 → 19 → 20.
+4. **Thống kê – Xác suất – Mô hình hóa:** 21 → 22 → 23 → 24.
+5. **Tổng hợp:** dùng 25 sau khi đã có đủ kiến thức nền cần thiết để luyện liên chuyên đề và chuẩn bị thi vào lớp 10.
+
+Nếu đang học theo chương trình trên lớp, ưu tiên chuyên đề đang học và dùng phần **Kiến thức liên quan** / **Liên kết Roadmap** trong từng bài để quay lại đúng lỗ hổng trước đó.
 
 Xem chi tiết kiến trúc tại [Blueprint 25 chuyên đề](../roadmap/blueprint-25-chuyen-de.md).
