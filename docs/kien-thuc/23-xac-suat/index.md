@@ -277,6 +277,14 @@ Cần phân biệt:
 
 Khi một thí nghiệm ổn định được lặp lại nhiều lần, tần số tương đối của biến cố thường có xu hướng ổn định quanh xác suất của biến cố trong mô hình. Tuy nhiên, với một số lần thử hữu hạn, hai giá trị **không bắt buộc bằng nhau**.
 
+<p align="center">
+  <img src="../../assets/probability/23/23-xac-suat-thuc-nghiem-on-dinh.svg"
+       alt="Đồ thị tần số tương đối của mặt Ngửa dao động và dần ổn định quanh xác suất 0,5 khi số lần tung đồng xu tăng"
+       width="820">
+</p>
+
+> Hình trên nhấn mạnh một điểm quan trọng: xác suất thực nghiệm **không cần tiến về 0,5 theo một chiều**. Nó có thể lúc cao hơn, lúc thấp hơn; điều đáng chú ý là khi số lần thử lớn, mức dao động thường nhỏ hơn và giá trị có xu hướng ổn định quanh xác suất của mô hình.
+
 ![Infographic không gian mẫu, biến cố và xác suất cổ điển](../../assets/infographics/23/23-02-khong-gian-mau-bien-co.svg)
 
 ### 3.5. Biến cố đối
