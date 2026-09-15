@@ -114,6 +114,26 @@ Dạng bài này thường xuất hiện khi đề cho nhiều đoạn thẳng t
 
 `PT² = PA × PB`
 
+### 3.6A. Độ dài cung, diện tích hình quạt và hình vành khuyên
+
+Với đường tròn bán kính `R`, cung có số đo `n°`:
+
+`l = n/360 · 2πR = nπR/180`
+
+Diện tích hình quạt tương ứng:
+
+`S_quạt = n/360 · πR²`
+
+Nếu biết độ dài cung `l` thì cũng có:
+
+`S_quạt = lR/2`
+
+Với hình vành khuyên tạo bởi hai đường tròn đồng tâm bán kính `R > r`:
+
+`S_vành = π(R² - r²)`
+
+> Cả độ dài cung và diện tích hình quạt đều tỉ lệ với số đo cung `n°`; đây là cách kiểm tra nhanh tính hợp lý của kết quả.
+
 Đây là hệ thức rất quan trọng trong bài toán độ dài liên quan đến tiếp tuyến.
 
 ---
@@ -197,6 +217,16 @@ Nếu từ điểm `P` ngoài đường tròn kẻ hai tiếp tuyến `PA`, `PB`
 `PA = PB`
 
 Ngoài ra, `OP` là đường trung trực của `AB` và là phân giác của `∠APB`. Đây là các tính chất rất hữu ích khi khai thác cấu hình hai tiếp tuyến.
+
+### 3.3A. Góc tạo bởi tiếp tuyến và dây cung
+
+Góc tạo bởi tiếp tuyến tại `A` và dây `AB` có số đo bằng **một nửa số đo cung bị chắn `AB`**. Vì vậy nó bằng góc nội tiếp cùng chắn cung `AB`.
+
+Đây là cầu nối rất quan trọng:
+
+`tiếp tuyến + dây cung → góc bằng góc nội tiếp → đồng dạng / nội tiếp`
+
+> Khi áp dụng phải xác định đúng cung nằm trong góc đang xét; không chỉ nhìn hai đầu mút của dây rồi chọn tùy ý cung lớn hay cung nhỏ.
 
 ### Infographic – Tiếp tuyến
 

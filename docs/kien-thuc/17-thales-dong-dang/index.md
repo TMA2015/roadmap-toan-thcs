@@ -248,6 +248,26 @@ Hai cặp cạnh tương ứng tỉ lệ và góc xen giữa bằng nhau.
 
 Ba cặp cạnh tương ứng tỉ lệ.
 
+### 3.5A. Tỉ số đồng dạng và các hệ quả đo lường
+
+Nếu `△ABC ∼ △DEF` và:
+
+`AB/DE = BC/EF = CA/FD = k`
+
+thì `k` gọi là **tỉ số đồng dạng** của tam giác `ABC` đối với tam giác `DEF`. Khi đó:
+
+- tỉ số chu vi bằng `k`;
+- tỉ số các đường cao tương ứng bằng `k`;
+- tỉ số các trung tuyến tương ứng bằng `k`;
+- tỉ số các đường phân giác tương ứng bằng `k`;
+- tỉ số diện tích bằng `k²`.
+
+Đặc biệt:
+
+`S_ABC / S_DEF = k²`
+
+> Lỗi hay gặp: hai tam giác có tỉ số cạnh bằng `k` **không** có tỉ số diện tích bằng `k`; diện tích thay đổi theo bình phương tỉ số đồng dạng.
+
 ### Infographic – Tam giác đồng dạng
 
 ![Ba trường hợp đồng dạng và thứ tự đỉnh tương ứng](../../assets/infographics/17/17-03-tam-giac-dong-dang.svg)

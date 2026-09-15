@@ -214,7 +214,7 @@ Nếu biết ba góc, có thể tính góc còn lại bằng:
 
 ### 3.2. Hình thang
 
-Hình thang là tứ giác có một cặp cạnh đối song song.
+Hình thang là tứ giác có **ít nhất một cặp cạnh đối song song**.
 
 Nếu `AB ∥ CD`, thì `ABCD` là hình thang.
 
@@ -223,6 +223,18 @@ Nếu `AB ∥ CD`, thì `ABCD` là hình thang.
 Tính chất quan trọng của hình thang cân:
 - hai cạnh bên bằng nhau;
 - hai đường chéo bằng nhau.
+
+### 3.2A. Đường trung bình của hình thang
+
+Cho hình thang `ABCD` với `AB ∥ CD`. Nếu `M`, `N` lần lượt là trung điểm của hai cạnh bên `AD`, `BC` thì `MN` là đường trung bình của hình thang và:
+
+`MN ∥ AB ∥ CD`
+
+`MN = (AB + CD)/2`
+
+Hệ quả này đặc biệt hữu ích khi đề cho trung điểm hai cạnh bên hoặc cần tính tổng hai đáy.
+
+> Không nhầm với đường trung bình của tam giác: trong tam giác độ dài bằng **một nửa cạnh thứ ba**, còn trong hình thang bằng **nửa tổng hai đáy**.
 
 ### 3.3. Hình bình hành
 
