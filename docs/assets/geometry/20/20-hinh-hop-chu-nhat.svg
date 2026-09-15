@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Hình hộp chữ nhật với ba kích thước a, b, c</title>
+  <desc id="desc">Hình hộp chữ nhật phối cảnh, cạnh đáy trước ký hiệu a, cạnh chiều sâu ký hiệu b và cạnh đứng ký hiệu c.</desc>
+  <rect width="640" height="420" fill="white"/>
+  <g fill="#eef4fb" stroke="#1f2937" stroke-width="4" stroke-linejoin="round">
+    <polygon points="155,145 410,145 505,85 250,85"/>
+    <polygon points="410,145 410,315 505,255 505,85" fill="#dbeafe"/>
+    <polygon points="155,145 410,145 410,315 155,315" fill="#f8fafc"/>
+  </g>
+  <g fill="none" stroke="#1f2937" stroke-width="4" stroke-linecap="round">
+    <path d="M155 145 L250 85 L505 85 L505 255 L410 315 L155 315 Z"/>
+    <path d="M250 85 L250 255 L505 255" stroke-dasharray="9 8"/>
+    <path d="M250 255 L155 315" stroke-dasharray="9 8"/>
+  </g>
+  <g stroke="#2563eb" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M165 350 L400 350"/>
+    <path d="M450 325 L525 275"/>
+    <path d="M535 95 L535 245"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">
+    <text x="275" y="385">a</text>
+    <text x="500" y="325">b</text>
+    <text x="550" y="180">c</text>
+  </g>
+</svg>
