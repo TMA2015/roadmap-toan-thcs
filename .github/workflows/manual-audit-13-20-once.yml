@@ -21,8 +21,17 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Apply manual audit changes
-        run: python manual_audit_13_20_apply_temp.py
+      - name: Fix one source marker and apply manual audit changes
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('manual_audit_13_20_apply_temp.py')
+          s = p.read_text(encoding='utf-8')
+          s = s.replace('"│   ├── tan = đối / kề\\n",', '"│   └── tan = đối / kề\\n",', 1)
+          p.write_text(s, encoding='utf-8')
+          PY
+          python manual_audit_13_20_apply_temp.py
 
       - name: Verify new academic coverage
         shell: bash
