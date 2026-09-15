@@ -236,6 +236,14 @@ Khi đọc biểu đồ cột phải kiểm tra:
 - đơn vị;
 - thang chia.
 
+<p align="center">
+  <img src="../../assets/statistics/21/21-bieu-do-cot-cau-truc.svg"
+       alt="Cấu trúc biểu đồ cột với trục ngang, trục dọc, thang chia và chiều cao cột"
+       width="650">
+</p>
+
+> Khi đọc một cột, hãy dóng chiều cao của cột sang **thang chia trên trục dọc** thay vì ước lượng bằng mắt.
+
 ### 3.6. Biểu đồ đoạn thẳng
 
 Phù hợp khi dữ liệu thay đổi theo thời gian.
@@ -246,16 +254,37 @@ Cần quan sát:
 - điểm cao nhất, thấp nhất;
 - đoạn thay đổi mạnh.
 
+<p align="center">
+  <img src="../../assets/statistics/21/21-bieu-do-doan-thang-xu-huong.svg"
+       alt="Biểu đồ đoạn thẳng minh họa đoạn tăng, đoạn giảm và điểm cao nhất"
+       width="650">
+</p>
+
+> Không chỉ đọc từng điểm riêng lẻ; mục tiêu chính của biểu đồ đoạn thẳng là nhìn được **xu hướng thay đổi theo thời gian**.
 
 ### 3.6A. Biểu đồ cột kép và biểu đồ hình quạt tròn
 
 **Biểu đồ cột kép** phù hợp khi cần so sánh **hai dãy số liệu theo cùng các nhóm**. Khi đọc phải đối chiếu đúng chú giải, vì hai cột đứng cạnh nhau nhưng biểu diễn hai đối tượng khác nhau.
+
+<p align="center">
+  <img src="../../assets/statistics/21/21-bieu-do-cot-kep.svg"
+       alt="Biểu đồ cột kép so sánh hai dãy số liệu theo cùng các nhóm và có chú giải"
+       width="650">
+</p>
+
+> Với mỗi nhóm, hãy so sánh **hai cột cùng vị trí** và luôn đọc chú giải trước khi kết luận.
 
 **Biểu đồ hình quạt tròn** phù hợp khi cần mô tả **cơ cấu các phần trong một tổng thể**. Toàn bộ hình tròn tương ứng `100%` hay `360°`.
 
 Nếu một nhóm chiếm `p%` thì góc ở tâm của hình quạt tương ứng là:
 
 `góc = p/100 × 360° = 3,6p°`
+
+<p align="center">
+  <img src="../../assets/statistics/21/21-bieu-do-quat-tron.svg"
+       alt="Biểu đồ quạt tròn minh họa các tỉ lệ phần trăm và góc ở tâm tương ứng"
+       width="650">
+</p>
 
 > Chỉ dùng biểu đồ quạt tròn khi các phần thuộc cùng một tổng thể. Tổng các tỉ lệ phải bằng `100%` (sai khác rất nhỏ có thể xuất hiện do làm tròn).
 
@@ -281,6 +310,12 @@ và:
 Khi cần biểu diễn dữ liệu ghép nhóm bằng biểu đồ đoạn thẳng, có thể dùng **giá trị đại diện của nhóm**, thường là trung điểm của khoảng:
 
 `xᵢ = (aᵢ + aᵢ₊₁)/2`
+
+<p align="center">
+  <img src="../../assets/statistics/21/21-du-lieu-ghep-nhom.svg"
+       alt="Dữ liệu chiều cao được chia thành các khoảng không chồng lấn với bảng tần số ghép nhóm"
+       width="690">
+</p>
 
 > Các nhóm phải bao phủ toàn bộ dữ liệu và quy ước đầu mút phải nhất quán; nếu nhóm bị chồng lấn, một giá trị ở biên có thể bị đếm hai lần.
 
