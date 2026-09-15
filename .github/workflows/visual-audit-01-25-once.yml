@@ -1,0 +1,74 @@
+name: Visual audit 01-25 once
+
+on:
+  push:
+    branches:
+      - visual-audit-01-25-v1
+    paths:
+      - .github/workflows/visual-audit-01-25-once.yml
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: visual-audit-01-25-v1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Inventory lesson visuals and practice diagrams
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json,re
+          from pathlib import Path
+
+          root=Path('docs/kien-thuc')
+          practice=Path('docs/assets/data/practice')
+          md_img=re.compile(r'!\[([^\]]*)\]\(([^)]+)\)')
+          html_img=re.compile(r'<img\b[^>]*\bsrc=["\']([^"\']+)["\'][^>]*>',re.I)
+          heading=re.compile(r'^(#{2,4})\s+(.+)$',re.M)
+
+          print('TOPIC | LESSON_IMAGES | EMPTY_ALT | PRACTICE_DIAGRAMS | HEADINGS')
+          print('------|---------------|-----------|-------------------|---------')
+          for num in range(1,26):
+              folders=sorted(root.glob(f'{num:02d}-*'))
+              if len(folders)!=1:
+                  print(f'{num:02d} | ? | ? | ? | folder={len(folders)}')
+                  continue
+              folder=folders[0]
+              p=folder/'index.md'
+              text=p.read_text(encoding='utf-8') if p.exists() else ''
+              imgs=md_img.findall(text)
+              htmls=html_img.findall(text)
+              empty=sum(1 for alt,_ in imgs if not alt.strip())
+              # Count practice diagrams for manifest whose topic id matches folder name.
+              dcount=0
+              manifests=list(practice.glob(f'{folder.name}-v*.manifest.json'))
+              for mp in manifests:
+                  m=json.loads(mp.read_text(encoding='utf-8'))
+                  for src in m.get('sources',[]):
+                      cp=practice/src
+                      if not cp.exists(): continue
+                      c=json.loads(cp.read_text(encoding='utf-8'))
+                      dcount += sum(1 for q in c.get('questions',[]) if q.get('diagram'))
+              hs=[h.strip() for _,h in heading.findall(text)]
+              print(f'{num:02d} | {len(imgs)+len(htmls)} | {empty} | {dcount} | ' + ' ; '.join(hs[:14]))
+
+          # Also inventory all visual files under docs/assets, excluding css/js/data.
+          exts={'.svg','.png','.jpg','.jpeg','.webp','.gif'}
+          files=[]
+          for p in Path('docs/assets').rglob('*'):
+              if p.is_file() and p.suffix.lower() in exts:
+                  files.append(p)
+          print('\nTOTAL_VISUAL_ASSETS',len(files))
+          by_top={}
+          for p in files:
+              key=p.parts[2] if len(p.parts)>2 else 'assets'
+              by_top[key]=by_top.get(key,0)+1
+          for k in sorted(by_top): print('ASSET_DIR',k,by_top[k])
+          PY
