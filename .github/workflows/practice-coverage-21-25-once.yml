@@ -1,0 +1,111 @@
+name: Practice coverage 21-25 once
+
+on:
+  push:
+    branches:
+      - practice-bank-coverage-21-25-v1
+    paths:
+      - .github/workflows/practice-coverage-21-25-once.yml
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: practice-bank-coverage-21-25-v1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Audit coverage 21-25
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, re, unicodedata
+          from pathlib import Path
+          from collections import Counter, defaultdict
+
+          BASE = Path('docs/assets/data/practice')
+          topics = {
+              '21-thong-ke': '21-thong-ke-v1',
+              '22-dai-luong-dac-trung': '22-dai-luong-dac-trung-v1',
+              '23-xac-suat': '23-xac-suat-v1',
+              '24-bai-toan-thuc-te': '24-bai-toan-thuc-te-v1',
+              '25-tong-hop-on-thi-10': '25-tong-hop-on-thi-10-v1',
+          }
+
+          def norm(s):
+              s = unicodedata.normalize('NFD', s.lower())
+              return ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+
+          def load(prefix):
+              qs=[]
+              for i in range(1,5):
+                  p=BASE/f'{prefix}-{i:02d}.json'
+                  data=json.loads(p.read_text(encoding='utf-8'))
+                  qs.extend(data['questions'])
+              return qs
+
+          concepts = {
+              '21-thong-ke': {
+                  'cot_kep': ['cột kép','cot kep'],
+                  'quat_tron': ['quạt tròn','quat tron','360°','360 độ','góc ở tâm','goc o tam'],
+                  'ghep_nhom': ['ghép nhóm','ghep nhom','tần số nhóm','tan so nhom','trung điểm của khoảng','trung diem cua khoang','điểm biên','diem bien'],
+                  'tan_suat': ['tần suất','tan suat','tần số tương đối','tan so tuong doi'],
+              },
+              '23-xac-suat': {
+                  'xac_suat_thuc_nghiem': ['xác suất thực nghiệm','xac suat thuc nghiem','tần số tương đối','tan so tuong doi','lần thử','lan thu'],
+                  'khong_hoan_lai': ['không hoàn lại','khong hoan lai'],
+                  'phu_thuoc': ['phụ thuộc','phu thuoc','còn lại','con lai'],
+              },
+              '24-bai-toan-thuc-te': {
+                  'gia_dinh_mo_hinh': ['giả định','gia dinh','xấp xỉ','xap xi','mô hình','mo hinh'],
+                  'van_toc_trung_binh': ['vận tốc trung bình','van toc trung binh','tổng quãng đường','tong quang duong','tổng thời gian','tong thoi gian'],
+                  'phan_tram_lien_tiep': ['liên tiếp','lien tiep','tăng 10% rồi giảm 10%','tang 10% roi giam 10%','hệ số thay đổi','he so thay doi'],
+                  'lam_tron': ['làm tròn','lam tron'],
+              },
+              '25-tong-hop-on-thi-10': {
+                  'thong_ke_moi': ['ghép nhóm','ghep nhom','quạt tròn','quat tron','cột kép','cot kep'],
+                  'xac_suat_thuc_nghiem': ['thực nghiệm','thuc nghiem'],
+                  'uu_tien_bang_chung': ['3–5','3-5','tỉ lệ câu','ti le cau','lỗi lặp lại','loi lap lai','bằng chứng','bang chung'],
+              },
+          }
+
+          all_questions=[]
+          for topic,prefix in topics.items():
+              qs=load(prefix); all_questions += qs
+              print('\n'+'='*80)
+              print(topic, 'questions=', len(qs))
+              skill=Counter()
+              diff=Counter()
+              types=Counter()
+              for q in qs:
+                  for s in q.get('tags',{}).get('skill',[]): skill[s]+=1
+                  diff[q.get('difficulty')]+=1
+                  types[q.get('tags',{}).get('type')]+=1
+              print('DIFFICULTY', dict(diff))
+              print('SKILLS')
+              for k,v in skill.most_common(): print(f'  {k}: {v}')
+              print('TOP TYPES')
+              for k,v in types.most_common(20): print(f'  {k}: {v}')
+
+              if topic in concepts:
+                  print('CONCEPT HITS')
+                  for cname,terms in concepts[topic].items():
+                      hits=[]
+                      for q in qs:
+                          blob=' '.join([q.get('question',''), q.get('explanation','')] + [str(x) for x in q.get('options',[])])
+                          nb=norm(blob)
+                          if any(norm(t) in nb for t in terms): hits.append(q['id'])
+                      print(f'  {cname}: {len(hits)} -> {hits[:20]}')
+
+          prompts=[norm(q.get('question','')).strip() for q in all_questions]
+          dup=[(p,c) for p,c in Counter(prompts).items() if c>1]
+          print('\n'+'='*80)
+          print('TOTAL QUESTIONS', len(all_questions))
+          print('UNIQUE PROMPTS', len(set(prompts)))
+          print('DUPLICATE PROMPT GROUPS', len(dup))
+          PY
