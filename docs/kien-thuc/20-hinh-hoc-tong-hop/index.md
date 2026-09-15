@@ -307,7 +307,27 @@ Phần hình khối cần được học như một mạch xuyên suốt lớp 6
 
 `C = 2πr`
 
+#### Hình hộp chữ nhật
+
+<p align="center">
+  <img src="../../assets/geometry/20/20-hinh-hop-chu-nhat.svg"
+       alt="Hình hộp chữ nhật với ba kích thước a, b, c"
+       width="520">
+</p>
+
+Nếu ba kích thước của hình hộp chữ nhật là `a`, `b`, `c` thì:
+
+`V = a × b × c`
+
+> Ba kích thước phải được đổi về **cùng đơn vị độ dài** trước khi tính thể tích.
+
 #### Lăng trụ đứng
+
+<p align="center">
+  <img src="../../assets/geometry/20/20-lang-tru-dung.svg"
+       alt="Lăng trụ đứng với chu vi đáy P_đáy, diện tích đáy S_đáy và chiều cao h"
+       width="520">
+</p>
 
 Với chu vi đáy `P_đáy`, diện tích đáy `S_đáy`, chiều cao `h`:
 
@@ -315,9 +335,15 @@ Với chu vi đáy `P_đáy`, diện tích đáy `S_đáy`, chiều cao `h`:
 
 `V = S_đáy × h`
 
-Hình hộp chữ nhật là một trường hợp quen thuộc; nếu kích thước là `a, b, c` thì `V = abc`.
+> Hình hộp chữ nhật là một trường hợp của lăng trụ đứng; công thức `V = S_đáy × h` vẫn áp dụng.
 
 #### Hình chóp tam giác đều và hình chóp tứ giác đều
+
+<p align="center">
+  <img src="../../assets/geometry/20/20-hinh-chop-deu.svg"
+       alt="Hình chóp đều với nửa chu vi đáy p, diện tích đáy S_đáy, chiều cao h và trung đoạn d"
+       width="520">
+</p>
 
 Với `p` là **nửa chu vi đáy**, `d` là trung đoạn của hình chóp đều, `h` là chiều cao:
 
@@ -329,6 +355,12 @@ Với `p` là **nửa chu vi đáy**, `d` là trung đoạn của hình chóp đ
 
 #### Hình trụ
 
+<p align="center">
+  <img src="../../assets/geometry/20/20-hinh-tru.svg"
+       alt="Hình trụ với bán kính đáy r và chiều cao h"
+       width="500">
+</p>
+
 Với bán kính đáy `r`, chiều cao `h`:
 
 `S_xq = 2πrh`
@@ -338,6 +370,12 @@ Với bán kính đáy `r`, chiều cao `h`:
 `V = πr²h`
 
 #### Hình nón
+
+<p align="center">
+  <img src="../../assets/geometry/20/20-hinh-non.svg"
+       alt="Hình nón với bán kính đáy r, chiều cao h và đường sinh l"
+       width="500">
+</p>
 
 Với bán kính đáy `r`, chiều cao `h`, đường sinh `l`:
 
@@ -350,6 +388,12 @@ Với bán kính đáy `r`, chiều cao `h`, đường sinh `l`:
 Trong hình nón tròn xoay vuông, `l² = r² + h²`.
 
 #### Hình cầu
+
+<p align="center">
+  <img src="../../assets/geometry/20/20-hinh-cau.svg"
+       alt="Hình cầu tâm O với bán kính r"
+       width="480">
+</p>
 
 Với bán kính `r`:
 
