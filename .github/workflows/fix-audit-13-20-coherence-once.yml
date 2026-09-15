@@ -1,0 +1,86 @@
+name: Fix audit 13-20 coherence once
+
+on:
+  push:
+    branches:
+      - content-manual-audit-13-20-v1
+
+permissions:
+  contents: write
+
+jobs:
+  fix-and-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: content-manual-audit-13-20-v1
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Apply coherence fixes
+        run: python fix_audit_13_20_coherence_temp.py
+
+      - name: Verify placement and coverage
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('docs/kien-thuc/19-duong-tron/index.md')
+          s = p.read_text(encoding='utf-8')
+          core = s.index('## 📖 3. Kiến thức cốt lõi')
+          sec36 = s.index('### 3.6. Tiếp tuyến – cát tuyến', core)
+          sec36a = s.index('### 3.6A. Độ dài cung, diện tích hình quạt và hình vành khuyên', core)
+          sec37 = s.index('### 3.7. Bảng chọn công cụ', core)
+          assert core < sec36 < sec36a < sec37
+          assert s.count('### 3.6A. Độ dài cung, diện tích hình quạt và hình vành khuyên') == 1
+          checks = {
+              'docs/kien-thuc/16-tu-giac/index.md': 'đường trung bình hình thang',
+              'docs/kien-thuc/17-thales-dong-dang/index.md': 'tỉ số chu vi, diện tích',
+              'docs/kien-thuc/18-he-thuc-luong/index.md': '`sin`, `cos`, `tan`, `cot`',
+              'docs/kien-thuc/19-duong-tron/index.md': '### Dạng 7. Độ dài cung, diện tích quạt tròn và vành khuyên',
+          }
+          for path, needle in checks.items():
+              text = Path(path).read_text(encoding='utf-8')
+              assert needle in text, (path, needle)
+          print('Coherence placement and coverage: PASS')
+          PY
+
+      - name: Audit structure
+        run: python audit_content_structure.py --write
+
+      - name: Validate Practice Banks
+        run: python validate_practice_bank.py
+
+      - name: Roadmap dependency and link QA
+        run: python check_roadmap_dependencies.py
+
+      - name: Audit Practice quality
+        run: python audit_practice_quality.py
+
+      - name: Install MkDocs
+        run: pip install mkdocs-material
+
+      - name: Strict MkDocs build
+        run: mkdocs build --strict
+
+      - name: Commit coherence fixes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            docs/kien-thuc/16-tu-giac/index.md \
+            docs/kien-thuc/17-thales-dong-dang/index.md \
+            docs/kien-thuc/18-he-thuc-luong/index.md \
+            docs/kien-thuc/19-duong-tron/index.md \
+            docs/roadmap/audit-noi-dung-25-chuyen-de.md
+          if git diff --cached --quiet; then
+            echo "No coherence changes."
+            exit 0
+          fi
+          git commit -m "Hoàn thiện độ nhất quán audit Hình học 13-20"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
