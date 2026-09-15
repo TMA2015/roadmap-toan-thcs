@@ -1,12 +1,12 @@
-# QA hình minh họa Practice
+# Thư viện hình & QA Practice
 
-> Trang này phục vụ **kiểm tra chất lượng nội bộ** cho hình minh họa trong Practice Bank. Đây không phải nội dung bài học dành cho học sinh.
+> Trang này là **thư viện QA nội bộ** cho hình minh họa trong Practice Bank. Đây không phải nội dung bài học dành cho học sinh. Ở giai đoạn hiện tại gallery tập trung vào diagram của Practice; hình trong các trang bài học sẽ được mở rộng vào gallery ở giai đoạn sau.
 
 Nguyên tắc bắt buộc: **“Hình minh họa, không nhất thiết theo tỉ lệ” chỉ cho phép sai khác về tỉ lệ độ dài/kích thước; không cho phép sai quan hệ hình học cốt lõi** như vuông góc, song song, thẳng hàng, điểm thuộc đường tròn, tiếp tuyến, trung điểm hoặc thứ tự điểm.
 
 <div class="diagram-qa-toolbar">
   <label>Chuyên đề
-    <select id="diagram-qa-topic"><option value="all">Tất cả 13–20</option></select>
+    <select id="diagram-qa-topic"><option value="all">Tất cả 13–25</option></select>
   </label>
   <label>Tìm ID / kỹ năng / nội dung
     <input id="diagram-qa-search" type="search" placeholder="Ví dụ: tiếp tuyến, GEO19V1_005">
@@ -35,7 +35,12 @@ Nguyên tắc bắt buộc: **“Hình minh họa, không nhất thiết theo t�
     '17-thales-dong-dang-v1.manifest.json',
     '18-he-thuc-luong-v1.manifest.json',
     '19-duong-tron-v1.manifest.json',
-    '20-hinh-hoc-tong-hop-v1.manifest.json'
+    '20-hinh-hoc-tong-hop-v1.manifest.json',
+    '21-thong-ke-v1.manifest.json',
+    '22-dai-luong-dac-trung-v1.manifest.json',
+    '23-xac-suat-v1.manifest.json',
+    '24-bai-toan-thuc-te-v1.manifest.json',
+    '25-tong-hop-on-thi-10-v1.manifest.json'
   ];
   const cards = [];
   try {
