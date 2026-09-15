@@ -194,7 +194,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần:
 - [ ] Phân biệt được hình thang, hình bình hành, hình chữ nhật, hình thoi, hình vuông.
 - [ ] Nắm được các tính chất về cạnh, góc và đường chéo của từng hình.
 - [ ] Nhận biết được các dấu hiệu để chứng minh một tứ giác là hình đặc biệt.
-- [ ] Vận dụng được tính chất đường chéo để tính độ dài và chứng minh.
+- [ ] Vận dụng được đường trung bình hình thang và tính chất đường chéo để tính độ dài, chứng minh.
 - [ ] Biết dùng quan hệ bao hàm giữa các hình để suy luận nhanh.
 - [ ] Giải được các bài chứng minh tứ giác đặc biệt trong hình học tổng hợp.
 

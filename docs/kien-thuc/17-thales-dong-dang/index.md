@@ -165,7 +165,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần:
 - [ ] Nhận biết và sử dụng được đường trung bình trong tam giác.
 - [ ] Nắm chắc ba trường hợp đồng dạng `g-g`, `c-g-c`, `c-c-c`.
 - [ ] Viết đúng thứ tự các đỉnh tương ứng khi lập hai tam giác đồng dạng.
-- [ ] Dùng đồng dạng để tính độ dài, chứng minh tỉ số và chứng minh hệ thức.
+- [ ] Dùng đồng dạng để tính độ dài, chứng minh tỉ số/hệ thức và xử lý tỉ số chu vi, diện tích.
 - [ ] Biết chuyển đổi linh hoạt giữa song song, góc bằng nhau và tỉ lệ cạnh.
 
 ---

@@ -114,26 +114,6 @@ Dạng bài này thường xuất hiện khi đề cho nhiều đoạn thẳng t
 
 `PT² = PA × PB`
 
-### 3.6A. Độ dài cung, diện tích hình quạt và hình vành khuyên
-
-Với đường tròn bán kính `R`, cung có số đo `n°`:
-
-`l = n/360 · 2πR = nπR/180`
-
-Diện tích hình quạt tương ứng:
-
-`S_quạt = n/360 · πR²`
-
-Nếu biết độ dài cung `l` thì cũng có:
-
-`S_quạt = lR/2`
-
-Với hình vành khuyên tạo bởi hai đường tròn đồng tâm bán kính `R > r`:
-
-`S_vành = π(R² - r²)`
-
-> Cả độ dài cung và diện tích hình quạt đều tỉ lệ với số đo cung `n°`; đây là cách kiểm tra nhanh tính hợp lý của kết quả.
-
 Đây là hệ thức rất quan trọng trong bài toán độ dài liên quan đến tiếp tuyến.
 
 ---
@@ -172,11 +152,11 @@ Với hình vành khuyên tạo bởi hai đường tròn đồng tâm bán kín
 Sau khi hoàn thành chuyên đề, học sinh cần:
 
 - [ ] Phân biệt được góc ở tâm, góc nội tiếp và cung bị chắn.
-- [ ] Vận dụng được định lý góc nội tiếp bằng nửa góc ở tâm cùng chắn cung.
+- [ ] Vận dụng được góc nội tiếp, góc tạo bởi tiếp tuyến và dây cung, cùng quan hệ với cung bị chắn.
 - [ ] Nhận biết và chứng minh được tiếp tuyến.
 - [ ] Sử dụng được tính chất hai tiếp tuyến xuất phát từ một điểm ngoài.
 - [ ] Nhận biết và chứng minh được tứ giác nội tiếp.
-- [ ] Dùng được hệ thức hai dây cắt nhau và tiếp tuyến – cát tuyến.
+- [ ] Dùng được hệ thức hai dây cắt nhau, tiếp tuyến – cát tuyến và các công thức độ dài cung, diện tích quạt/vành khuyên.
 - [ ] Kết hợp được đường tròn với tam giác đồng dạng và hệ thức lượng.
 
 ---
@@ -264,6 +244,26 @@ Từ điểm `P` ngoài đường tròn, tiếp tuyến `PT` và cát tuyến `P
 
 `PT² = PA × PB`
 
+### 3.6A. Độ dài cung, diện tích hình quạt và hình vành khuyên
+
+Với đường tròn bán kính `R`, cung có số đo `n°`:
+
+`l = n/360 · 2πR = nπR/180`
+
+Diện tích hình quạt tương ứng:
+
+`S_quạt = n/360 · πR²`
+
+Nếu biết độ dài cung `l` thì cũng có:
+
+`S_quạt = lR/2`
+
+Với hình vành khuyên tạo bởi hai đường tròn đồng tâm bán kính `R > r`:
+
+`S_vành = π(R² - r²)`
+
+> Cả độ dài cung và diện tích hình quạt đều tỉ lệ với số đo cung `n°`; đây là cách kiểm tra nhanh tính hợp lý của kết quả.
+
 ### 3.7. Bảng chọn công cụ
 
 | Dấu hiệu | Nên nghĩ tới |
@@ -323,9 +323,13 @@ Dùng:
 
 `PT² = PA × PB`
 
-### Dạng 7. Bài tổng hợp đường tròn
+### Dạng 7. Độ dài cung, diện tích quạt tròn và vành khuyên
 
-Kết hợp tiếp tuyến, nội tiếp, đồng dạng, hệ thức tích và lượng giác.
+Xác định đúng bán kính và số đo cung trước khi dùng `l = nπR/180`, `S_quạt = nπR²/360`; với vành khuyên dùng hiệu diện tích hai hình tròn đồng tâm.
+
+### Dạng 8. Bài tổng hợp đường tròn
+
+Kết hợp tiếp tuyến, nội tiếp, đồng dạng, hệ thức tích, lượng giác và đo lường đường tròn.
 
 ---
 

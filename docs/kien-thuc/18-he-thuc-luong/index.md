@@ -146,7 +146,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần:
 
 - [ ] Nhớ và vận dụng được các hệ thức trong tam giác vuông có đường cao xuống cạnh huyền.
 - [ ] Phân biệt đúng cạnh đối, cạnh kề, cạnh huyền theo góc đang xét.
-- [ ] Dùng đúng `sin`, `cos`, `tan` để tìm cạnh hoặc góc.
+- [ ] Dùng đúng `sin`, `cos`, `tan`, `cot` và quan hệ hai góc phụ nhau để tìm cạnh hoặc góc.
 - [ ] Kết hợp Pythagore và lượng giác trong cùng một bài.
 - [ ] Giải được bài toán chiều cao, khoảng cách, góc nâng và góc hạ.
 - [ ] Biết kiểm tra đơn vị và chế độ DEG trên máy tính.
