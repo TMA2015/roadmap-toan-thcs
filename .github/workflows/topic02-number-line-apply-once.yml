@@ -1,0 +1,54 @@
+name: Topic 02 number line apply once
+
+on:
+  push:
+    branches:
+      - topic02-number-line-visual-v1
+    paths:
+      - topic02_number_line_apply_temp.py
+      - .github/workflows/topic02-number-line-apply-once.yml
+
+permissions:
+  contents: write
+
+jobs:
+  apply-and-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: topic02-number-line-visual-v1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Apply Topic 02 number-line embed
+        run: python topic02_number_line_apply_temp.py
+      - name: Validate Practice Banks
+        run: python validate_practice_bank.py
+      - name: Audit content structure
+        run: python audit_content_structure.py --write
+      - name: Roadmap dependency and link QA
+        run: python check_roadmap_dependencies.py
+      - name: SVG integrity QA
+        run: python check_svg_integrity.py
+      - name: Visual coverage audit
+        run: python audit_visual_coverage.py
+      - name: Audit curated Practice quality
+        run: python audit_practice_quality.py
+      - name: Install MkDocs
+        run: pip install 'mkdocs==1.6.1' 'mkdocs-material==9.7.7'
+      - name: Strict MkDocs build
+        run: python -m mkdocs build --strict
+      - name: Diff check
+        run: git diff --check
+      - name: Commit product changes
+        run: |
+          git config user.name 'TMA2015'
+          git config user.email '143519853+TMA2015@users.noreply.github.com'
+          git add docs/kien-thuc/02-so-va-phep-tinh/index.md docs/roadmap/audit-noi-dung-25-chuyen-de.md
+          if git diff --cached --quiet; then
+            echo 'No product changes to commit.'
+          else
+            git commit -m 'Gắn hình trục số vào Chuyên đề 02'
+            git push origin HEAD:topic02-number-line-visual-v1
+          fi
