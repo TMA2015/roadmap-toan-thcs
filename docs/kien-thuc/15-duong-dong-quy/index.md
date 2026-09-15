@@ -186,6 +186,12 @@ Ba đường phân giác trong đồng quy tại **tâm nội tiếp** `I`.
 
 Do đó `I` là tâm đường tròn nội tiếp tam giác.
 
+#### Dấu hiệu qua khoảng cách đến hai cạnh của một góc
+
+Nếu một điểm nằm **bên trong một góc** và cách đều hai cạnh của góc thì điểm đó nằm trên tia phân giác của góc. Ngược lại, mọi điểm nằm trên tia phân giác và ở bên trong góc đều cách đều hai cạnh.
+
+> Khi dùng khoảng cách từ điểm đến cạnh của góc, khoảng cách được hiểu là độ dài đoạn vuông góc từ điểm đến **đường thẳng chứa cạnh**.
+
 ### 3.4. Trung trực và tâm ngoại tiếp
 
 Ba đường trung trực của ba cạnh tam giác đồng quy tại **tâm ngoại tiếp** `O`.
@@ -193,6 +199,12 @@ Ba đường trung trực của ba cạnh tam giác đồng quy tại **tâm ngo
 `OA = OB = OC`
 
 Do đó `O` là tâm đường tròn ngoại tiếp tam giác `ABC`.
+
+#### Dấu hiệu qua khoảng cách đến hai đầu đoạn thẳng
+
+Một điểm nằm trên đường trung trực của đoạn `AB` thì cách đều `A`, `B`. Ngược lại, nếu `MA = MB` thì `M` nằm trên đường trung trực của `AB`.
+
+Dấu hiệu đảo này thường giúp chuyển một đẳng thức độ dài thành kết luận về vị trí của điểm.
 
 Vị trí của `O`:
 - tam giác nhọn: trong tam giác;

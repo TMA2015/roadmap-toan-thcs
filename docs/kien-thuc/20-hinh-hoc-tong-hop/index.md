@@ -196,7 +196,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần:
 - [ ] Xây dựng được chuỗi suy luận gồm nhiều bước trung gian.
 - [ ] Chứng minh được quan hệ góc, song song, vuông góc, đồng dạng, nội tiếp.
 - [ ] Chứng minh và tính được các hệ thức độ dài.
-- [ ] Giải được bài đo lường và hình khối cơ bản.
+- [ ] Giải được bài đo lường và hình khối cơ bản, gồm lăng trụ đứng, hình chóp đều, hình trụ, hình nón và hình cầu.
 - [ ] Trình bày bài chứng minh có lý do rõ ràng ở từng bước.
 
 ---
@@ -291,7 +291,7 @@ hãy thử:
 
 ### 3.6. Đo lường và hình khối
 
-Một số công thức cần nhớ:
+Phần hình khối cần được học như một mạch xuyên suốt lớp 6–9, không chỉ là một công thức thể tích.
 
 **Hình chữ nhật**
 
@@ -307,15 +307,63 @@ Một số công thức cần nhớ:
 
 `C = 2πr`
 
-**Lăng trụ đứng**
+#### Lăng trụ đứng
+
+Với chu vi đáy `P_đáy`, diện tích đáy `S_đáy`, chiều cao `h`:
+
+`S_xq = P_đáy × h`
 
 `V = S_đáy × h`
 
-**Hình hộp chữ nhật**
+Hình hộp chữ nhật là một trường hợp quen thuộc; nếu kích thước là `a, b, c` thì `V = abc`.
 
-`V = a × b × c`
+#### Hình chóp tam giác đều và hình chóp tứ giác đều
 
-Khi giải bài thực tế, luôn ghi đơn vị diện tích hoặc thể tích.
+Với `p` là **nửa chu vi đáy**, `d` là trung đoạn của hình chóp đều, `h` là chiều cao:
+
+`S_xq = p × d`
+
+`V = 1/3 × S_đáy × h`
+
+> Không nhầm `d` (trung đoạn nằm trên mặt bên) với `h` (đường cao vuông góc với mặt đáy).
+
+#### Hình trụ
+
+Với bán kính đáy `r`, chiều cao `h`:
+
+`S_xq = 2πrh`
+
+`S_tp = 2πrh + 2πr² = 2πr(h + r)`
+
+`V = πr²h`
+
+#### Hình nón
+
+Với bán kính đáy `r`, chiều cao `h`, đường sinh `l`:
+
+`S_xq = πrl`
+
+`S_tp = πrl + πr² = πr(l + r)`
+
+`V = 1/3 πr²h`
+
+Trong hình nón tròn xoay vuông, `l² = r² + h²`.
+
+#### Hình cầu
+
+Với bán kính `r`:
+
+`S_mặt cầu = 4πr²`
+
+`V_hình cầu = 4/3 πr³`
+
+#### Kiểm tra đơn vị
+
+- độ dài: `cm`, `m`, ...;
+- diện tích: `cm²`, `m²`, ...;
+- thể tích: `cm³`, `m³`, ... .
+
+Khi bài cho nhiều đơn vị khác nhau, phải đổi về cùng một đơn vị **trước khi** thay vào công thức.
 
 ### 3.7. Bảng chọn chiến lược
 
@@ -370,7 +418,7 @@ Kết hợp đồng dạng, Pythagore, lượng giác, hệ thức đường tr�
 
 ### Dạng 7. Đo lường và hình khối
 
-Tính diện tích, chu vi, thể tích và đổi đơn vị.
+Tính diện tích xung quanh, diện tích toàn phần, thể tích và đổi đơn vị cho lăng trụ đứng, hình chóp đều, hình trụ, hình nón và hình cầu. Với hình ghép, tách vật thể thành các khối quen thuộc rồi cộng/trừ thể tích hoặc diện tích phù hợp.
 
 ### Dạng 8. Bài hình tổng hợp nhiều ý
 

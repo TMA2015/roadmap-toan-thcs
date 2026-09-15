@@ -24,7 +24,8 @@ HỆ THỨC LƯỢNG TRONG TAM GIÁC VUÔNG
 ├── Tỉ số lượng giác
 │   ├── sin = đối / huyền
 │   ├── cos = kề / huyền
-│   └── tan = đối / kề
+│   ├── tan = đối / kề
+│   └── cot = kề / đối
 │
 └── Bài toán thực tế
     └── góc nâng, góc hạ, chiều cao, khoảng cách
@@ -81,12 +82,14 @@ Với một góc nhọn `α` trong tam giác vuông:
 | Sin | `sin α = cạnh đối / cạnh huyền` |
 | Cos | `cos α = cạnh kề / cạnh huyền` |
 | Tan | `tan α = cạnh đối / cạnh kề` |
+| Cot | `cot α = cạnh kề / cạnh đối` |
 
 Mẹo nhớ:
 
 - `sin` → đối / huyền;
 - `cos` → kề / huyền;
-- `tan` → đối / kề.
+- `tan` → đối / kề;
+- `cot` → kề / đối.
 
 ---
 
@@ -143,7 +146,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần:
 
 - [ ] Nhớ và vận dụng được các hệ thức trong tam giác vuông có đường cao xuống cạnh huyền.
 - [ ] Phân biệt đúng cạnh đối, cạnh kề, cạnh huyền theo góc đang xét.
-- [ ] Dùng đúng `sin`, `cos`, `tan` để tìm cạnh hoặc góc.
+- [ ] Dùng đúng `sin`, `cos`, `tan`, `cot` và quan hệ hai góc phụ nhau để tìm cạnh hoặc góc.
 - [ ] Kết hợp Pythagore và lượng giác trong cùng một bài.
 - [ ] Giải được bài toán chiều cao, khoảng cách, góc nâng và góc hạ.
 - [ ] Biết kiểm tra đơn vị và chế độ DEG trên máy tính.
@@ -211,6 +214,25 @@ Với góc nhọn `α`:
 và khi `cos α ≠ 0`:
 
 `tan α = sin α / cos α`
+
+`cot α = cos α / sin α`
+
+`tan α · cot α = 1`
+
+Nếu `α + β = 90°` thì:
+
+- `sin α = cos β`, `cos α = sin β`;
+- `tan α = cot β`, `cot α = tan β`.
+
+### 3.4A. Giá trị lượng giác của các góc đặc biệt
+
+| Góc | `sin` | `cos` | `tan` | `cot` |
+|---:|---:|---:|---:|---:|
+| `30°` | `1/2` | `√3/2` | `√3/3` | `√3` |
+| `45°` | `√2/2` | `√2/2` | `1` | `1` |
+| `60°` | `√3/2` | `1/2` | `√3` | `√3/3` |
+
+Không nhất thiết học bảng như bốn dòng công thức rời rạc: dùng quan hệ hai góc phụ nhau để kiểm tra chéo `sin ↔ cos` và `tan ↔ cot`.
 
 ### Infographic – Tỉ số lượng giác
 
