@@ -28,9 +28,9 @@ TỔNG HỢP ÔN THI VÀO 10
 │   └── hình học tổng hợp
 │
 ├── Thống kê & xác suất
-│   ├── bảng – biểu đồ
+│   ├── bảng – biểu đồ – dữ liệu ghép nhóm
 │   ├── đại lượng đặc trưng
-│   └── xác suất
+│   └── xác suất thực nghiệm & xác suất theo mô hình
 │
 └── Bài toán thực tế
     └── mô hình hóa – kiểm tra – kết luận
@@ -273,9 +273,9 @@ Tập trung vào:
 **Thống kê – xác suất**
 
 Tập trung vào:
-- bảng và biểu đồ;
-- trung bình, trung vị, mốt;
-- xác suất đơn giản và nhiều bước.
+- bảng tần số, tần số tương đối, biểu đồ và dữ liệu ghép nhóm;
+- trung bình, trung vị, mốt và khoảng biến thiên;
+- xác suất thực nghiệm, xác suất theo mô hình đồng khả năng và bài nhiều bước.
 
 **Bài toán thực tế**
 
@@ -325,6 +325,8 @@ Có thể phân loại:
 | D | Ưu tiên thấp hơn theo đề địa phương + đang chắc | Ôn rà soát |
 
 Ma trận trên chỉ là khung. Cần điều chỉnh theo cấu trúc đề chính thức của địa phương.
+
+Khi xếp chuyên đề vào A–B–C–D, nên dựa trên **bằng chứng học tập** như kết quả 3–5 bài gần nhất, tỉ lệ câu đúng theo kỹ năng, thời gian làm và lỗi lặp lại; không nên chỉ dựa vào cảm giác “mình mạnh/yếu”.
 
 ![Infographic ba giai đoạn ôn thi và ma trận ưu tiên A B C D – Chuyên đề 25](../../assets/infographics/25/25-02-giai-doan-ma-tran-uu-tien.svg)
 
@@ -432,7 +434,7 @@ Kết hợp nội tiếp, đồng dạng, tiếp tuyến, hệ thức lượng v
 
 ### Dạng 5. Thống kê – xác suất
 
-Đọc bảng/biểu đồ, tính đại lượng đặc trưng hoặc xác suất.
+Đọc bảng/biểu đồ và dữ liệu ghép nhóm; tính đại lượng đặc trưng; phân biệt xác suất thực nghiệm với xác suất theo mô hình và giải các bài xác suất phù hợp.
 
 ### Dạng 6. Bài toán thực tế
 

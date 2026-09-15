@@ -25,12 +25,14 @@ THỐNG KÊ & THU THẬP DỮ LIỆU
 ├── Tổ chức dữ liệu
 │   ├── bảng dữ liệu
 │   ├── bảng tần số
-│   └── bảng tần suất
+│   ├── bảng tần suất / tần số tương đối
+│   └── bảng tần số ghép nhóm
 │
 ├── Biểu diễn dữ liệu
-│   ├── biểu đồ cột
+│   ├── biểu đồ cột / cột kép
 │   ├── biểu đồ đoạn thẳng
-│   └── biểu đồ phù hợp theo mục tiêu
+│   ├── biểu đồ hình quạt tròn
+│   └── biểu đồ cho dữ liệu ghép nhóm
 │
 └── Đọc và phân tích
     ├── lớn nhất / nhỏ nhất
@@ -162,6 +164,8 @@ Sau khi hoàn thành chuyên đề, học sinh cần:
 - [ ] Phân biệt được dữ liệu, giá trị, tần số và tần suất.
 - [ ] Biết thu thập và kiểm tra dữ liệu cơ bản.
 - [ ] Lập được bảng tần số và tần suất.
+- [ ] Đọc và lập được biểu đồ cột kép, biểu đồ hình quạt tròn trong tình huống phù hợp.
+- [ ] Nhận biết được dữ liệu ghép nhóm; lập được bảng tần số và tần số tương đối ghép nhóm ở mức THCS.
 - [ ] Đọc chính xác biểu đồ cột và biểu đồ đoạn thẳng.
 - [ ] Chọn được dạng biểu diễn phù hợp với mục tiêu.
 - [ ] Nhận xét được xu hướng, giá trị lớn nhất, nhỏ nhất và chênh lệch.
@@ -193,9 +197,9 @@ Nếu giá trị `8` xuất hiện `5` lần thì tần số của `8` là:
 
 Tổng các tần số phải bằng tổng số quan sát.
 
-### 3.3. Tần suất
+### 3.3. Tần suất (tần số tương đối)
 
-Tần suất cho biết một giá trị chiếm bao nhiêu phần trong toàn bộ dữ liệu:
+Tần suất, hay **tần số tương đối**, cho biết một giá trị chiếm bao nhiêu phần trong toàn bộ dữ liệu:
 
 `tần suất = tần số / tổng số quan sát`
 
@@ -238,6 +242,44 @@ Cần quan sát:
 - xu hướng giảm;
 - điểm cao nhất, thấp nhất;
 - đoạn thay đổi mạnh.
+
+
+### 3.6A. Biểu đồ cột kép và biểu đồ hình quạt tròn
+
+**Biểu đồ cột kép** phù hợp khi cần so sánh **hai dãy số liệu theo cùng các nhóm**. Khi đọc phải đối chiếu đúng chú giải, vì hai cột đứng cạnh nhau nhưng biểu diễn hai đối tượng khác nhau.
+
+**Biểu đồ hình quạt tròn** phù hợp khi cần mô tả **cơ cấu các phần trong một tổng thể**. Toàn bộ hình tròn tương ứng `100%` hay `360°`.
+
+Nếu một nhóm chiếm `p%` thì góc ở tâm của hình quạt tương ứng là:
+
+`góc = p/100 × 360° = 3,6p°`
+
+> Chỉ dùng biểu đồ quạt tròn khi các phần thuộc cùng một tổng thể. Tổng các tỉ lệ phải bằng `100%` (sai khác rất nhỏ có thể xuất hiện do làm tròn).
+
+### 3.6B. Dữ liệu ghép nhóm, tần số và tần số tương đối ghép nhóm
+
+Khi có nhiều số liệu số và cần trình bày gọn, có thể chia dữ liệu thành các **nhóm không chồng lấn** như:
+
+`[a₁; a₂), [a₂; a₃), ..., [aₖ; aₖ₊₁)`
+
+Mỗi giá trị chỉ được thuộc **một** nhóm.
+
+- **Tần số của một nhóm**: số giá trị nằm trong nhóm đó.
+- **Tần số tương đối của một nhóm**: `tần số nhóm / cỡ mẫu`.
+
+Luôn kiểm tra:
+
+`∑ tần số nhóm = N`
+
+và:
+
+`∑ tần số tương đối = 1` (hoặc `100%`).
+
+Khi cần biểu diễn dữ liệu ghép nhóm bằng biểu đồ đoạn thẳng, có thể dùng **giá trị đại diện của nhóm**, thường là trung điểm của khoảng:
+
+`xᵢ = (aᵢ + aᵢ₊₁)/2`
+
+> Các nhóm phải bao phủ toàn bộ dữ liệu và quy ước đầu mút phải nhất quán; nếu nhóm bị chồng lấn, một giá trị ở biên có thể bị đếm hai lần.
 
 ### 3.7. Chất lượng dữ liệu
 
@@ -302,6 +344,14 @@ Mô tả xu hướng theo thời gian và xác định các giai đoạn tăng/g
 
 Từ bảng → vẽ biểu đồ, hoặc từ biểu đồ → lập lại bảng.
 
+### Dạng 6A. Biểu đồ cột kép và biểu đồ hình quạt tròn
+
+So sánh đúng hai dãy số liệu trên cột kép; với quạt tròn, kiểm tra tổng tỉ lệ và đổi `p% ↔ 3,6p°` khi cần.
+
+### Dạng 6B. Dữ liệu ghép nhóm
+
+Chọn các khoảng nhóm không chồng lấn, đếm tần số từng nhóm, tính tần số tương đối và đọc/vẽ biểu đồ tương ứng.
+
 ### Dạng 7. Bài toán thực tế từ dữ liệu
 
 Đọc dữ liệu, tính toán rồi viết kết luận phù hợp với ngữ cảnh.
@@ -314,9 +364,9 @@ Trong Roadmap ôn thi vào lớp 10, thống kê được xếp ở mức ưu ti
 
 Các kỹ năng cần chắc:
 1. Đọc đúng bảng hoặc biểu đồ.
-2. Tính tần số, tần suất, phần trăm.
-3. So sánh hai nhóm dữ liệu.
-4. Nhận xét xu hướng.
+2. Tính tần số, tần suất/tần số tương đối, phần trăm.
+3. Đọc biểu đồ cột kép, quạt tròn và dữ liệu ghép nhóm khi xuất hiện.
+4. So sánh hai nhóm dữ liệu và nhận xét xu hướng.
 5. Kết hợp với số trung bình, trung vị ở Chuyên đề 22.
 
 Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
@@ -332,6 +382,9 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 | Quên nhân `100%` khi tính tần suất phần trăm | Phân biệt tần suất dạng số và dạng % |
 | Đọc sai trục biểu đồ | Xem kỹ đơn vị và thang chia |
 | Nhầm biểu đồ cột với biểu đồ theo thời gian | Xác định mục tiêu dữ liệu trước |
+| Đọc cột kép nhưng quên chú giải | Xác định rõ mỗi màu/cột thuộc dãy số liệu nào |
+| Chia nhóm bị chồng lấn hoặc bỏ hở | Dùng các khoảng liên tiếp và thống nhất quy ước đầu mút |
+| Biểu đồ quạt tròn có tổng tỉ lệ khác xa `100%` | Kiểm tra lại phần trăm trước khi vẽ/đọc |
 | Chỉ nêu số mà không kết luận | Viết một câu nhận xét theo ngữ cảnh |
 
 ---
@@ -401,7 +454,8 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Phân biệt đúng dữ liệu, tần số và tần suất.
 - [ ] Lập đúng bảng tần số.
 - [ ] Tính đúng tần suất và phần trăm.
-- [ ] Đọc chính xác biểu đồ cột và đoạn thẳng.
+- [ ] Đọc chính xác biểu đồ cột, cột kép, đoạn thẳng và hình quạt tròn.
+- [ ] Lập được bảng tần số/tần số tương đối ghép nhóm cơ bản.
 - [ ] Chọn đúng dạng biểu diễn dữ liệu.
 - [ ] Viết được nhận xét có căn cứ.
 - [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 22.

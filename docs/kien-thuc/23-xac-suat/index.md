@@ -24,8 +24,11 @@ XÁC SUẤT
 │   ├── biến cố không thể
 │   └── biến cố ngẫu nhiên
 │
+├── Xác suất thực nghiệm
+│   └── số lần A xảy ra / số lần thử
+│
 ├── Xác suất cổ điển
-│   └── P(A) = n(A) / n(Ω)
+│   └── P(A) = n(A) / n(Ω) khi đồng khả năng
 │
 └── Thí nghiệm nhiều bước
     ├── bảng liệt kê
@@ -197,6 +200,8 @@ Sau khi hoàn thành chuyên đề, học sinh cần:
 - [ ] Phân biệt được phép thử ngẫu nhiên, không gian mẫu và biến cố.
 - [ ] Lập đúng không gian mẫu trong các phép thử đơn giản.
 - [ ] Tính được xác suất cổ điển khi các kết quả đồng khả năng.
+- [ ] Tính và diễn giải được xác suất thực nghiệm từ một thí nghiệm lặp lại.
+- [ ] Phân biệt được xác suất thực nghiệm với xác suất theo mô hình đồng khả năng.
 - [ ] Nhận biết biến cố chắc chắn và biến cố không thể.
 - [ ] Dùng được bảng hoặc sơ đồ cây cho thí nghiệm nhiều bước.
 - [ ] Giải được các bài “ít nhất một”, “đúng một”, “cả hai”.
@@ -254,6 +259,24 @@ Luôn có:
 
 `0 ≤ P(A) ≤ 1`
 
+
+### 3.4A. Xác suất thực nghiệm
+
+Thực hiện cùng một phép thử `n` lần. Nếu biến cố `A` xảy ra `m` lần thì **xác suất thực nghiệm** của `A` trong loạt thử đó là:
+
+`P_thực nghiệm(A) = m/n`
+
+Ví dụ, gieo một đồng xu `50` lần và quan sát được `27` lần ngửa thì:
+
+`P_thực nghiệm(Ngửa) = 27/50 = 0,54`
+
+Cần phân biệt:
+
+- `m/n` được tính từ **kết quả quan sát thực tế**;
+- `n(A)/n(Ω)` là xác suất theo **mô hình có các kết quả đồng khả năng**.
+
+Khi một thí nghiệm ổn định được lặp lại nhiều lần, tần số tương đối của biến cố thường có xu hướng ổn định quanh xác suất của biến cố trong mô hình. Tuy nhiên, với một số lần thử hữu hạn, hai giá trị **không bắt buộc bằng nhau**.
+
 ![Infographic không gian mẫu, biến cố và xác suất cổ điển](../../assets/infographics/23/23-02-khong-gian-mau-bien-co.svg)
 
 ### 3.5. Biến cố đối
@@ -289,6 +312,8 @@ Xác suất của một nhánh nhiều bước được tính bằng tích các 
 - Nếu các bước **độc lập**, dùng trực tiếp xác suất của từng bước.
 - Nếu bước sau **phụ thuộc** vào kết quả trước, xác suất ở bước sau phải là xác suất ứng với điều kiện đã xảy ra.
 
+> Ví dụ khi rút vật **không hoàn lại**, thành phần còn lại trong hộp đã thay đổi. Vì vậy không được tự động dùng lại xác suất ban đầu ở bước sau; phải cập nhật số trường hợp còn lại trên từng nhánh.
+
 Ví dụ, khi tung một đồng xu cân đối hai lần độc lập:
 
 `P(NN) = 1/2 × 1/2 = 1/4`
@@ -299,6 +324,7 @@ Ví dụ, khi tung một đồng xu cân đối hai lần độc lập:
 |---|---|
 | Một phép thử đơn giản | Liệt kê không gian mẫu |
 | Các kết quả đồng khả năng | Dùng `P(A)=n(A)/n(Ω)` |
+| Có số liệu từ nhiều lần thử thực tế | Dùng `P_thực nghiệm(A)=m/n` |
 | Hai hoặc nhiều bước | Dùng bảng hoặc sơ đồ cây |
 | “Ít nhất một” | Cân nhắc dùng biến cố đối |
 | “Đúng một” | Liệt kê các trường hợp phù hợp |
@@ -329,6 +355,10 @@ Dùng:
 `P(A) = n(A)/n(Ω)`
 
 khi các kết quả đồng khả năng.
+
+### Dạng 2A. Xác suất thực nghiệm
+
+Từ số lần biến cố xảy ra trong `n` lần thử, tính `m/n` và diễn giải kết quả theo đúng loạt thí nghiệm đã thực hiện.
 
 ### Dạng 3. Biến cố chắc chắn và không thể
 
@@ -361,10 +391,11 @@ Trong Roadmap ôn thi vào lớp 10, xác suất được xếp ở mức ưu ti
 Các kỹ năng cần chắc:
 1. Lập đúng không gian mẫu.
 2. Đếm đúng số kết quả thuận lợi.
-3. Dùng xác suất cổ điển đúng điều kiện.
-4. Dùng sơ đồ cây cho nhiều bước.
-5. Xử lý các câu “ít nhất một”, “đúng một”.
-6. Viết kết luận phù hợp ngữ cảnh.
+3. Phân biệt xác suất thực nghiệm với xác suất theo mô hình đồng khả năng.
+4. Dùng xác suất cổ điển đúng điều kiện.
+5. Dùng sơ đồ cây cho nhiều bước và cập nhật đúng khi bước sau phụ thuộc bước trước.
+6. Xử lý các câu “ít nhất một”, “đúng một”.
+7. Viết kết luận phù hợp ngữ cảnh.
 
 Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 
@@ -377,6 +408,8 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 | Bỏ sót kết quả trong không gian mẫu | Liệt kê có hệ thống |
 | Đếm trùng một kết quả | Dùng ký hiệu rõ từng bước |
 | Dùng `n(A)/n(Ω)` khi kết quả không đồng khả năng | Kiểm tra điều kiện trước |
+| Nhầm xác suất thực nghiệm với xác suất lý thuyết | Xác định giá trị đang đến từ dữ liệu quan sát hay từ mô hình |
+| Rút không hoàn lại nhưng vẫn dùng xác suất ban đầu ở bước sau | Cập nhật số phần tử còn lại trên từng nhánh |
 | Nhầm “ít nhất một” với “đúng một” | Viết lại bằng lời đơn giản |
 | Quên kiểm tra `0 ≤ P ≤ 1` | Kiểm tra sau khi tính |
 | Sơ đồ cây thiếu một nhánh | Mỗi nút phải có đủ khả năng xảy ra |
@@ -422,8 +455,9 @@ Hãy tự trả lời không nhìn tài liệu:
 6. Công thức xác suất của biến cố đối là gì?
 7. Khi nào nên dùng sơ đồ cây?
 8. Với câu “ít nhất một”, chiến lược nào thường ngắn hơn?
+9. Xác suất thực nghiệm được tính như thế nào và vì sao không nhất thiết bằng đúng xác suất của mô hình sau một số hữu hạn lần thử?
 
-**Tiêu chí đạt:** đúng ít nhất `7/8` câu và giải được một bài xác suất nhiều bước.
+**Tiêu chí đạt:** đúng ít nhất `8/9` câu và giải được một bài xác suất nhiều bước.
 
 ---
 
@@ -448,6 +482,7 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Lập đúng không gian mẫu.
 - [ ] Xác định đúng biến cố.
 - [ ] Dùng đúng công thức xác suất cổ điển.
+- [ ] Tính và phân biệt được xác suất thực nghiệm.
 - [ ] Giải được bài nhiều bước bằng bảng hoặc sơ đồ cây.
 - [ ] Dùng được biến cố đối cho bài “ít nhất một”.
 - [ ] Kiểm tra được tính hợp lý của kết quả.

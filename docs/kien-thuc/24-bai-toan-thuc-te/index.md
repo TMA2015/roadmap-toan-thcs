@@ -249,6 +249,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần:
 - [ ] Đặt ẩn đúng, có điều kiện và đơn vị.
 - [ ] Chọn được mô hình phù hợp: công thức, phương trình, hệ, lượng giác, thống kê hoặc xác suất.
 - [ ] Lập và giải được mô hình toán học.
+- [ ] Nêu được các giả định quan trọng của mô hình và nhận biết khi kết quả chỉ là xấp xỉ.
 - [ ] Kiểm tra nghiệm theo điều kiện và bối cảnh thực tế.
 - [ ] Đổi đơn vị và làm tròn đúng yêu cầu.
 - [ ] Viết câu trả lời cuối cùng đúng đại lượng đề hỏi.
@@ -267,6 +268,23 @@ Một lời giải đầy đủ thường có 4 lớp:
 2. **Mô hình toán học**
 3. **Giải mô hình**
 4. **Diễn giải kết quả**
+
+
+### 3.1A. Giả định và giới hạn của mô hình
+
+Mô hình toán học thường **đơn giản hóa thực tế**. Trước khi lập công thức hoặc phương trình, nên xác định các giả định đang dùng, chẳng hạn:
+
+- vận tốc được coi là không đổi trên một chặng;
+- năng suất được coi là không đổi;
+- vật thể được coi là hình khối lý tưởng;
+- tỉ lệ, giá hoặc lãi suất được coi là không đổi trong khoảng đang xét.
+
+Nếu giả định thay đổi thì kết quả có thể thay đổi. Vì vậy cần phân biệt:
+
+- **kết quả chính xác trong mô hình**;
+- **giá trị xấp xỉ trong thực tế** sau đo đạc, làm tròn hoặc đơn giản hóa.
+
+> Không nên làm tròn quá sớm ở các bước trung gian; giữ đủ chữ số rồi làm tròn ở kết quả cuối theo yêu cầu của đề.
 
 ### 3.2. Đọc đề theo đại lượng
 
@@ -293,7 +311,7 @@ Ví dụ:
 
 ### 3.4. Bài toán chuyển động
 
-Ba công thức cơ bản:
+Trong **chuyển động đều**, hoặc khi `v` là vận tốc trung bình phù hợp trên toàn quãng đường đang xét, dùng:
 
 `S = v × t`
 
@@ -302,6 +320,8 @@ Ba công thức cơ bản:
 `t = S/v`
 
 Luôn đổi đơn vị trước khi lập phương trình.
+
+> Không lấy trung bình cộng các vận tốc một cách máy móc. Nếu đi các chặng với vận tốc khác nhau, hãy tính **tổng quãng đường / tổng thời gian** để tìm vận tốc trung bình, trừ khi đề có điều kiện đặc biệt cho phép cách khác.
 
 ### 3.5. Bài toán năng suất
 
@@ -328,6 +348,17 @@ Nếu giảm `p%`:
 `giá mới = giá cũ × (1 - p%)`
 
 Cần đặc biệt chú ý **giá trị gốc** mà phần trăm được tính trên đó.
+
+
+### 3.6A. Thay đổi phần trăm liên tiếp
+
+Khi một đại lượng thay đổi nhiều lần, phải nhân các **hệ số thay đổi** theo thứ tự, không cộng/trừ các phần trăm một cách máy móc.
+
+Ví dụ tăng `10%` rồi giảm `10%`:
+
+`giá cuối = giá đầu × 1,10 × 0,90 = 0,99 × giá đầu`
+
+Vì vậy giá cuối thấp hơn giá đầu `1%`, không trở lại đúng giá ban đầu.
 
 ![Infographic chuyển động, năng suất và phần trăm](../../assets/infographics/24/24-02-chuyen-dong-nang-suat-phan-tram.svg)
 
@@ -415,7 +446,7 @@ Dùng `công việc = năng suất × thời gian`.
 
 ### Dạng 3. Phần trăm – tăng giảm giá
 
-Xác định đúng giá trị gốc rồi áp dụng tỉ lệ phần trăm.
+Xác định đúng giá trị gốc rồi áp dụng tỉ lệ phần trăm. Với nhiều lần tăng/giảm liên tiếp, nhân các hệ số `(1 ± p%)` theo đúng thứ tự.
 
 ### Dạng 4. Tuổi – số lượng – quan hệ đại lượng
 
