@@ -36,7 +36,7 @@ Dùng cùng kiến thức Core nhưng tăng mức tổng hợp và ưu tiên cá
 
 Phần mở rộng cho học sinh khá giỏi. Nội dung này **không phải điều kiện bắt buộc** để hoàn thành KNTT Core hoặc chuyển tiếp trong Roadmap chính.
 
-[Xem nguyên tắc tầng Chuyên / Challenge](roadmap/chuan-kntt-va-cac-tang-hoc.md#chuyen-challenge)
+[Xem nguyên tắc tầng Chuyên / Challenge](roadmap/chuan-kntt-va-cac-tang-hoc.md)
 
 ## Bắt đầu từ đâu?
 
