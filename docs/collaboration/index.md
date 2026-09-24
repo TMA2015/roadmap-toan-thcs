@@ -169,9 +169,22 @@ Bạn không cần sửa Markdown, JSON hoặc GitHub thủ công.
 - [Thư viện hình & QA](../huong-dan/qa-diagram-practice.md)
 
 
+## Khi Gemini không mở được URL
+
+Đây là tình huống được hỗ trợ chính thức, không phải lỗi workflow.
+
+Dùng **Offline Relay Packet**: một file/khối văn bản tự chứa context tối thiểu + task + output format. Người dùng chỉ cần upload hoặc copy **một packet duy nhất**.
+
+- [Hướng dẫn Offline Relay](offline-relay.md)
+- [Relay Packet KNTT-MAP-G6-001](relay-packets/KNTT-MAP-G6-001.md)
+
+Không yêu cầu người dùng copy lại cả lịch sử trò chuyện hoặc toàn bộ Hub.
+
 ## Công cụ cộng tác
 
 - [Handoff Protocol](handoff-protocol.md)
+- [Offline Relay](offline-relay.md)
+- [Capability Profile JSON](../assets/data/collaboration/capability-profile.json)
 - [Capability Benchmark](capability-benchmark.md)
 - [Collaboration Task Board](task-board.md)
 - [Review Packet Template](review-packet.md)
