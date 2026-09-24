@@ -29,8 +29,10 @@ nav:
       - Blueprint 25 chuyên đề: roadmap/blueprint-25-chuyen-de.md
       - Ma trận kiến thức: roadmap/ma-tran-kien-thuc.md
 
-  - AI Tutor:\n      - AI Tutor Core Contract: ai/ai-tutor-core-contract.md
-      - Tutor Context & Provider Adapter: ai/tutor-context-adapter.md\n  - Hướng dẫn:
+  - AI Tutor:
+      - AI Tutor Core Contract: ai/ai-tutor-core-contract.md
+      - Tutor Context & Provider Adapter: ai/tutor-context-adapter.md
+  - Hướng dẫn:
       - Lộ trình tự học: huong-dan/lo-trinh-tu-hoc.md
       - Nguyên tắc học mỗi chuyên đề: huong-dan/nguyen-tac-hoc-moi-chuyen-de.md
       - Quy tắc chuyển sang chuyên đề mới: huong-dan/quy-tac-chuyen-chuyen-de.md
@@ -166,4 +168,5 @@ plugins:
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - assets/javascripts/tutor-runtime-v1.js
   - assets/javascripts/practice-auto-loader.js
