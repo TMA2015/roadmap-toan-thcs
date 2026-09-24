@@ -75,6 +75,23 @@
 .practice-option.is-correct { border-color: #2e7d32; background: rgba(46, 125, 50, 0.1); }
 .practice-option.is-wrong { border-color: #c62828; background: rgba(198, 40, 40, 0.1); }
 
+.practice-hints {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.8rem;
+}
+.practice-hints[hidden] { display: none; }
+.practice-hint {
+  padding: 0.7rem 0.8rem;
+  border: 1px solid color-mix(in srgb, #c47f00 38%, transparent);
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, #c47f00 8%, transparent);
+}
+.practice-hint > strong {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
 .practice-feedback {
   margin-top: 1rem;
   padding: 0.8rem 0.9rem;

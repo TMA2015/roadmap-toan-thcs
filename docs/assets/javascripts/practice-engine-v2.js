@@ -64,6 +64,11 @@
           throw new Error(`Câu ${question.id} có diagram nhưng thiếu src/alt`);
         }
       }
+      if (question.hints !== undefined) {
+        if (!Array.isArray(question.hints) || !question.hints.length || question.hints.some((hint) => !String(hint || "").trim())) {
+          throw new Error(`Câu ${question.id} có hints không hợp lệ`);
+        }
+      }
     }
   };
 
@@ -231,6 +236,7 @@
       this.index = 0;
       this.score = 0;
       this.answered = false;
+      this.hintLevel = 0;
       this.mode = "normal";
       this.focusSkills = [];
       this.renderShell();
@@ -253,6 +259,7 @@
           <div class="practice-question"></div>
           <div class="practice-diagram" hidden></div>
           <div class="practice-options"></div>
+          <div class="practice-hints" hidden></div>
           <div class="practice-feedback" hidden></div>
           <div class="practice-actions"></div>
         </div>
@@ -271,6 +278,7 @@
       this.questionEl = this.root.querySelector(".practice-question");
       this.diagramEl = this.root.querySelector(".practice-diagram");
       this.optionsEl = this.root.querySelector(".practice-options");
+      this.hintsEl = this.root.querySelector(".practice-hints");
       this.feedbackEl = this.root.querySelector(".practice-feedback");
       this.actionsEl = this.root.querySelector(".practice-actions");
       this.statsEl = this.root.querySelector(".practice-stats");
@@ -389,11 +397,14 @@
 
       const question = this.currentQuestion();
       this.answered = false;
+      this.hintLevel = 0;
       this.progressEl.textContent = `Câu ${this.index + 1}/${this.session.length} · Đúng ${this.score}`;
       this.metaEl.textContent = `${this.difficultyLabel(question.difficulty)} · ${this.skillLabel(question)}`;
       this.questionEl.textContent = question.question;
       this.renderDiagram(question);
       this.optionsEl.innerHTML = "";
+      this.hintsEl.hidden = true;
+      this.hintsEl.innerHTML = "";
       this.feedbackEl.hidden = true;
       this.feedbackEl.className = "practice-feedback";
       this.feedbackEl.innerHTML = "";
@@ -406,7 +417,38 @@
         button.addEventListener("click", () => this.answer(originalIndex));
         this.optionsEl.appendChild(button);
       });
+
+      if (Array.isArray(question.hints) && question.hints.length) {
+        const hintBtn = createButton("💡 Xem gợi ý", "practice-btn-secondary");
+        hintBtn.addEventListener("click", () => this.showNextHint(question, hintBtn));
+        this.actionsEl.appendChild(hintBtn);
+      }
+
       typeset(this.cardEl);
+    }
+
+    showNextHint(question, button) {
+      if (this.answered || !Array.isArray(question.hints) || this.hintLevel >= question.hints.length) return;
+
+      this.hintLevel += 1;
+      this.hintsEl.hidden = false;
+
+      const hint = document.createElement("div");
+      hint.className = "practice-hint";
+      const label = document.createElement("strong");
+      label.textContent = `Gợi ý ${this.hintLevel}`;
+      const body = document.createElement("div");
+      body.textContent = question.hints[this.hintLevel - 1];
+      hint.append(label, body);
+      this.hintsEl.appendChild(hint);
+
+      if (this.hintLevel >= question.hints.length) {
+        button.textContent = "Đã xem hết gợi ý";
+        button.disabled = true;
+      } else {
+        button.textContent = `💡 Gợi ý tiếp (${this.hintLevel + 1}/${question.hints.length})`;
+      }
+      typeset(this.hintsEl);
     }
 
     answer(selectedIndex) {
@@ -415,7 +457,7 @@
       const question = this.currentQuestion();
       const correct = selectedIndex === question.answer;
       if (correct) this.score += 1;
-      this.record(question, correct);
+      this.record(question, correct, this.hintLevel);
 
       const optionButtons = [...this.optionsEl.querySelectorAll(".practice-option")];
       optionButtons.forEach((button) => {
@@ -433,6 +475,7 @@
       explanation.className = "practice-explanation";
       explanation.textContent = question.explanation;
       this.feedbackEl.append(heading, explanation);
+      this.actionsEl.innerHTML = "";
 
       if (!correct && this.index < this.session.length - 1) {
         const similarBtn = createButton("Làm câu tương tự", "practice-btn-primary");
@@ -470,16 +513,32 @@
       this.renderQuestion();
     }
 
-    record(question, correct) {
+    record(question, correct, hintsUsed = 0) {
       const questionRecord = this.stats.questions[question.id] || { attempted: 0, correct: 0 };
       questionRecord.attempted += 1;
       if (correct) questionRecord.correct += 1;
+      if (hintsUsed > 0) {
+        questionRecord.hinted_attempts = (questionRecord.hinted_attempts || 0) + 1;
+        questionRecord.hints_used = (questionRecord.hints_used || 0) + hintsUsed;
+      }
+      if (correct) {
+        if (hintsUsed > 0) questionRecord.correct_with_hint = (questionRecord.correct_with_hint || 0) + 1;
+        else questionRecord.correct_without_hint = (questionRecord.correct_without_hint || 0) + 1;
+      }
       this.stats.questions[question.id] = questionRecord;
 
       questionSkills(question).forEach((skill) => {
         const record = this.stats.tags[skill] || { attempted: 0, correct: 0 };
         record.attempted += 1;
         if (correct) record.correct += 1;
+        if (hintsUsed > 0) {
+          record.hinted_attempts = (record.hinted_attempts || 0) + 1;
+          record.hints_used = (record.hints_used || 0) + hintsUsed;
+        }
+        if (correct) {
+          if (hintsUsed > 0) record.correct_with_hint = (record.correct_with_hint || 0) + 1;
+          else record.correct_without_hint = (record.correct_without_hint || 0) + 1;
+        }
         this.stats.tags[skill] = record;
       });
       saveStats(this.stats);
@@ -543,6 +602,8 @@
       this.questionEl.textContent = `Bạn đạt ${percent}%.`;
       this.diagramEl.hidden = true;
       this.diagramEl.innerHTML = "";
+      this.hintsEl.hidden = true;
+      this.hintsEl.innerHTML = "";
       this.optionsEl.innerHTML = "";
       this.feedbackEl.hidden = false;
       this.feedbackEl.className = `practice-feedback ${percent >= 80 ? "is-correct" : "is-wrong"}`;

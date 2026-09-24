@@ -301,3 +301,87 @@ Trong giai đoạn hiện tại:
 - chuyên đề nền tảng: khoảng **80–150 câu**;
 - chuyên đề trọng tâm thi vào 10: có thể **150–300 câu**;
 - mỗi lượt học sinh chỉ làm khoảng **10 câu**, được lấy thích nghi từ ngân hàng lớn.
+
+
+## 14. Metadata chương trình và mục tiêu học tập
+
+Từ phiên bản mở rộng 2026, ngân hàng câu hỏi phân biệt rõ **kiến thức cốt lõi theo SGK Kết nối tri thức**, **ôn thi vào 10** và **mở rộng thi chuyên**. Ba lớp này không được trộn thành một mức độ khó duy nhất.
+
+Các trường dưới đây là **tùy chọn** để tương thích ngược với toàn bộ ngân hàng hiện có:
+
+```json
+{
+  "curriculum": {
+    "book": "KNTT",
+    "grades": [7, 8],
+    "level": "core"
+  },
+  "exam": {
+    "entrance10": "foundation",
+    "specialized": "none"
+  }
+}
+```
+
+### 14.1. `curriculum.level`
+
+Chỉ dùng:
+
+| Giá trị | Ý nghĩa |
+|---|---|
+| `core` | Kiến thức/kỹ năng cốt lõi theo Kết nối tri thức |
+| `extension` | Mở rộng từ kiến thức cốt lõi, không bắt buộc với mọi học sinh |
+
+### 14.2. `exam.entrance10`
+
+Khuyến nghị dùng:
+
+- `none`: không có mục tiêu trực tiếp cho thi vào 10;
+- `foundation`: kiến thức nền thường được dùng trong bài thi;
+- `direct`: dạng bài có liên hệ trực tiếp với ôn thi vào 10.
+
+### 14.3. `exam.specialized`
+
+Khuyến nghị dùng:
+
+- `none`: không phải nội dung thi chuyên;
+- `foundation`: kiến thức nền phục vụ bài chuyên;
+- `challenge`: bài mở rộng/toán chuyên.
+
+**Nguyên tắc:** `specialized: challenge` không được hiểu là kiến thức cốt lõi của KNTT và không được dùng để chặn tiến độ học chương trình chính.
+
+## 15. Gợi ý nhiều tầng (`hints`)
+
+Một câu hỏi có thể khai báo danh sách gợi ý theo thứ tự từ ít tiết lộ đến cụ thể hơn:
+
+```json
+{
+  "question": "Thu gọn \\(3x^2+4x+1-x^2-2x\\).",
+  "hints": [
+    "Nhóm riêng các hạng tử chứa x^2, các hạng tử chứa x và hằng số.",
+    "Ta có 3x^2-x^2=2x^2 và 4x-2x=2x."
+  ]
+}
+```
+
+Quy tắc biên soạn:
+
+1. Gợi ý 1 chỉ nhắc hướng hoặc kiến thức cần dùng, không cho đáp án.
+2. Gợi ý 2 có thể cụ thể hơn nhưng vẫn ưu tiên để học sinh tự hoàn thành bước cuối.
+3. Không sao chép nguyên `explanation` vào `hints`.
+4. Không bắt buộc mọi câu đều có gợi ý; ưu tiên câu nhiều bước, câu dễ mắc lỗi hoặc câu vận dụng.
+5. Practice Engine ghi lại số gợi ý đã xem cho từng lần làm để sau này có thể phân biệt:
+   - đúng không cần gợi ý;
+   - đúng sau gợi ý;
+   - sai dù đã dùng gợi ý.
+6. Accuracy hiện tại vẫn giữ cách tính cũ để không làm thay đổi đột ngột dữ liệu người học; dữ liệu hint là lớp thông tin bổ sung cho Mastery Model sau này.
+
+## 16. Nguyên tắc ba tầng nội dung
+
+Khi xây câu hỏi mới, luôn xác định câu hỏi thuộc một trong ba mục tiêu:
+
+1. **KNTT Core** – ưu tiên cao nhất, phải phủ đủ yêu cầu cốt lõi.
+2. **Vào 10** – luyện dạng bài và kỹ năng tổng hợp dựa trên kiến thức core.
+3. **Chuyên / Challenge** – mở rộng cho học sinh khá giỏi; tuyệt đối không biến thành điều kiện bắt buộc để hoàn thành Roadmap.
+
+Một câu có thể vừa là KNTT Core vừa có giá trị cho Vào 10. Tuy nhiên **Toán chuyên luôn là lớp mở rộng**, không được gộp vào Core chỉ vì cùng sử dụng kiến thức nền.
