@@ -28,7 +28,7 @@
       "id": "KNTT-MAP-G6-001",
       "title": "Mapping Toán 6 KNTT → 25 chuyên đề/skill",
       "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
-      "status": "OPEN",
+      "status": "DONE",
       "public_task_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G6-001/",
       "context_version": "1.0.1",
       "relay_packet_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
@@ -36,7 +36,10 @@
         "online-url",
         "offline-copy",
         "file-upload"
-      ]
+      ],
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/kntt-grade6-map.json",
+      "review_notes": "Gemini covered most knowledge clusters, but chapter numbering/structure and repository topic IDs required correction; several missing KNTT items were restored."
     },
     {
       "id": "CONTENT-PILOT-001",
