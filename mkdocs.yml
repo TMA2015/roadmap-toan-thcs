@@ -166,7 +166,12 @@ markdown_extensions:
 plugins:
   - search
 
+extra_css:
+  - assets/stylesheets/practice-engine.css
+  - assets/stylesheets/topic-workspace.css
+
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - assets/javascripts/topic-workspace-v1.js
   - assets/javascripts/tutor-runtime-v1.js
   - assets/javascripts/practice-auto-loader.js
