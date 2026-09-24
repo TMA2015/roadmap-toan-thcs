@@ -1,5 +1,5 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.7",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -52,6 +52,10 @@
     {
       "name": "Mapping KNTT lớp 9 đã review",
       "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-9-mapping/"
+    },
+    {
+      "name": "Knowledge Graph v1",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/knowledge-graph/"
     }
   ],
   "curriculum": {
@@ -92,7 +96,12 @@
       "data_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/vertical-spine.json",
       "rule": "Grade/book mappings are overlays on the same knowledge graph, not separate hierarchies."
     },
-    "mastery_policy": "soft mastery: diagnose weak prerequisites, recommend remediation, allow continued learning, and use accuracy + hint usage + history; no absolute 100% hard gate."
+    "mastery_policy": "soft mastery: diagnose weak prerequisites, recommend remediation, allow continued learning, and use accuracy + hint usage + history; no absolute 100% hard gate.",
+    "knowledge_graph": {
+      "version": 1,
+      "data_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/knowledge-graph-v1.json",
+      "policy": "high-confidence active prerequisites; uncertain relations stay review_required; remediation is advisory"
+    }
   },
   "roles": {
     "project_owner": {
@@ -158,12 +167,13 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Consolidate reviewed Grades 6-9 overlays into a prerequisite/unlock knowledge graph with Core/Entrance10/Challenge layering and learner evidence.",
+    "next_priority": "Validate Knowledge Graph v1 with independent pedagogical review, then connect remediation recommendations to Practice Engine learner evidence.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade9_mapping": "reviewed and integrated as final KNTT grade overlay",
-    "kntt_grade_mapping": "Grades 6-9 complete"
+    "kntt_grade_mapping": "Grades 6-9 complete",
+    "knowledge_graph": "v1 foundation integrated"
   },
   "handoff_required_fields": [
     "TASK_ID",
@@ -191,7 +201,7 @@
     "offline_relay_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/offline-relay/",
     "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
     "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
-    "next_public_task": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G9-001/",
+    "next_public_task": "KG-REVIEW-001",
     "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G9-001/"
   }
 }
