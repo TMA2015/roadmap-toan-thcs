@@ -1,5 +1,5 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -48,6 +48,10 @@
     {
       "name": "Mapping KNTT lớp 8 đã review",
       "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-8-mapping/"
+    },
+    {
+      "name": "Mapping KNTT lớp 9 đã review",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-9-mapping/"
     }
   ],
   "curriculum": {
@@ -154,10 +158,12 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Run KNTT Grade 9 mapping + Vertical Spine audit, then consolidate Grades 6-9 into the first prerequisite/unlock knowledge graph.",
+    "next_priority": "Consolidate reviewed Grades 6-9 overlays into a prerequisite/unlock knowledge graph with Core/Entrance10/Challenge layering and learner evidence.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
-    "grade8_mapping": "reviewed and integrated as Vertical Spine overlay"
+    "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
+    "grade9_mapping": "reviewed and integrated as final KNTT grade overlay",
+    "kntt_grade_mapping": "Grades 6-9 complete"
   },
   "handoff_required_fields": [
     "TASK_ID",
