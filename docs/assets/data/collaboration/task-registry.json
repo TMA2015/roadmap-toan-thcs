@@ -57,7 +57,20 @@
       "task_design": "source-verified-toc+valid-topic-id-whitelist+vertical-spine-traceability",
       "review_verdict": "PASS-WITH-CHANGES",
       "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/kntt-grade7-map.json",
-      "review_notes": "Coverage and topic IDs improved; corrected Chapter 10 PRIMARY mapping to topic 20, normalized many already-existing skills, and added Vertical Spine upstream/downstream metadata."
+      "review_notes": "Coverage and topic IDs improved; corrected Chapter 10 PRIMARY mapping to topic 20, normalized many already-existing skills, and added Vertical Spine upstream/downstream metadata.",
+      "resubmission": {
+        "context_version": "1.0.3",
+        "outcome": "NO_REINTEGRATION_NEEDED",
+        "improvements": [
+          "vertical-spine-columns-present",
+          "continuity-narrative-improved"
+        ],
+        "persistent_issues": [
+          "chapter10-topic24-primary",
+          "existing-skills-marked-proposed"
+        ],
+        "feedback_artifact": "content-staging/reviews/KNTT-MAP-G7-001-resubmission-feedback.md"
+      }
     },
     {
       "id": "KNTT-MAP-G8-001",
