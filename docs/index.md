@@ -12,6 +12,32 @@ Bộ tài liệu được xây dựng để giúp học sinh:
 - Luyện các dạng bài quan trọng cho kiểm tra và thi học kỳ.
 - Chuẩn bị xuyên suốt cho kỳ thi vào lớp 10.
 
+## Chọn cách học
+
+### 📘 Học theo Kết nối tri thức
+
+Ưu tiên **KNTT Core**: kiến thức và kỹ năng cốt lõi lớp 6–9. Roadmap đang chuẩn hóa mapping lớp/chương/bài để học sinh có thể đi theo SGK nhưng vẫn dùng chung kho kiến thức và bài luyện.
+
+[Xem chuẩn KNTT và các tầng học tập](roadmap/chuan-kntt-va-cac-tang-hoc.md)
+
+### 🧭 Học theo Roadmap 25 chuyên đề
+
+Đi theo quan hệ kiến thức nền → chuyên đề hiện tại → kiến thức tiếp nối. Phù hợp khi muốn học có hệ thống hoặc vá lỗ hổng.
+
+[Xem Roadmap](roadmap/index.md)
+
+### 🎯 Ôn thi vào 10
+
+Dùng cùng kiến thức Core nhưng tăng mức tổng hợp và ưu tiên các dạng bài dựa trên đề thi thật. Không dùng khẳng định tuyệt đối về tần suất nếu chưa có dữ liệu theo năm/địa phương.
+
+[Xem Tổng hợp & chiến lược ôn thi vào 10](kien-thuc/25-tong-hop-on-thi-10/index.md)
+
+### 🔥 Chuyên / Challenge
+
+Phần mở rộng cho học sinh khá giỏi. Nội dung này **không phải điều kiện bắt buộc** để hoàn thành KNTT Core hoặc chuyển tiếp trong Roadmap chính.
+
+[Xem nguyên tắc tầng Chuyên / Challenge](roadmap/chuan-kntt-va-cac-tang-hoc.md#chuyen-challenge)
+
 ## Bắt đầu từ đâu?
 
 ### 1. Mới bắt đầu
