@@ -21,6 +21,7 @@
 | KNTT-MAP-G6-001 | Mapping Toán 6 KNTT → 25 chuyên đề/skill | GEMINI_LEAD + CHATGPT_INTEGRATE | DONE (PASS-WITH-CHANGES) |
 | KNTT-MAP-G7-001 | Mapping Toán 7 KNTT → 25 chuyên đề/skill | GEMINI_LEAD + CHATGPT_INTEGRATE | DONE (PASS-WITH-CHANGES) |
 | KNTT-MAP-G8-001 | Mapping Toán 8 KNTT → Vertical Spine/skill | GEMINI_LEAD + CHATGPT_INTEGRATE | DONE (PASS-WITH-CHANGES) |
+| KNTT-MAP-G9-001 | Mapping Toán 9 KNTT → Vertical Spine/skill + audit | GEMINI_LEAD + CHATGPT_INTEGRATE | OPEN |
 | CONTENT-PILOT-001 | Tạo batch nội dung mẫu Core/Vào10/Challenge để thử pipeline | GEMINI_LEAD + CHATGPT_REVIEW | OPEN |
 | BENCH-CAP-001 | Chạy benchmark năng lực Gemini/ChatGPT theo nhóm task | DUAL / CATEGORY-BASED | OPEN |
 | GEO-LIB-001 | Chuẩn hóa dần thư viện hình SVG, giảm hình Internet | CHATGPT_LEAD + DUAL_QA_FOR_HARD_GEOMETRY | OPEN |
