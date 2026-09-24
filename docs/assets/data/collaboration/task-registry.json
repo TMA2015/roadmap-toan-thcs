@@ -160,6 +160,21 @@
       "status": "DONE",
       "review_verdict": "QA-READY",
       "review_notes": "Six-question targeted sessions; cross-topic focus navigation; regression cases cover insufficient evidence, healthy prerequisite, weak prerequisite, weakest candidate, and threshold boundary."
+    },
+    {
+      "id": "RECOVERY-MEASURE-001",
+      "title": "Measure remediation recovery and target recheck",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "QA-READY"
+    },
+    {
+      "id": "AI-TUTOR-CONTRACT-001",
+      "title": "Provider-neutral AI Tutor pedagogical contract",
+      "routing": "CHATGPT_LEAD+GEMINI_REVIEW",
+      "status": "DONE",
+      "review_verdict": "REVIEW-READY",
+      "review_notes": "Soft mastery, evidence-first diagnosis, Core/Challenge boundary, growth language, hint ladder, no fabricated learner evidence, graph-discipline."
     }
   ]
 }
