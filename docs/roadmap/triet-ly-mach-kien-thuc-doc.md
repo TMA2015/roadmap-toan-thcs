@@ -192,7 +192,21 @@ quay về skill ban đầu
 
 Hint usage, accuracy và learner history là dữ liệu để quyết định học sinh **đang thiếu skill hiện tại hay thiếu nền phía dưới**.
 
-## 7. Thi vào 10 là đích sử dụng, không phải một chương trình tách biệt
+## 7. Mastery là chỉ dẫn, không phải cánh cổng tuyệt đối
+
+Roadmap không dùng quy tắc kiểu **“chưa đạt 100% thì khóa chương sau”**.
+
+Thay vào đó:
+
+- cảnh báo khi prerequisite yếu;
+- ưu tiên bài luyện bù lỗ hổng;
+- phân biệt đúng độc lập với đúng sau khi xem hint;
+- cho phép học sinh tiếp tục học và quay lại remediation;
+- dùng lịch sử nhiều lần làm để đánh giá ổn định hơn một bài test duy nhất.
+
+Mục tiêu là **truy nguyên và sửa lỗ hổng**, không phải gắn nhãn “mất gốc” hay chặn tiến độ.
+
+## 8. Thi vào 10 là đích sử dụng, không phải một chương trình tách biệt
 
 Ôn thi vào 10 không tạo một “roadmap thứ hai”.
 
@@ -205,7 +219,7 @@ Hint usage, accuracy và learner history là dữ liệu để quyết định h
 
 Vì vậy metadata thi cử nên gắn **trên skill/topic hiện hữu**.
 
-## 8. Challenge/Thi chuyên là nhánh mở rộng
+## 9. Challenge/Thi chuyên là nhánh mở rộng
 
 Challenge có thể mở ra từ một node Core:
 
@@ -217,7 +231,7 @@ Core skill
 
 Challenge không được chèn vào giữa một prerequisite chain bắt buộc của Core.
 
-## 9. Hai cách học, một nguồn dữ liệu
+## 10. Hai cách học, một nguồn dữ liệu
 
 ### Học theo Roadmap
 Dùng khi:
@@ -234,7 +248,7 @@ Dùng khi:
 
 Cả hai phải trỏ đến **cùng skill/content/practice data**.
 
-## 10. Tiêu chí cho mọi thay đổi sau này
+## 11. Tiêu chí cho mọi thay đổi sau này
 
 Một thay đổi chỉ phù hợp triết lý Roadmap nếu không làm mất:
 
