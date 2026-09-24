@@ -1,6 +1,10 @@
 # 🗺️ Roadmap Toán THCS
 
-Đây là **bản đồ tổng thể 25 chuyên đề Toán THCS**, tổ chức theo các mạch kiến thức để học sinh nhìn được toàn cảnh, xác định kiến thức tiên quyết và lựa chọn lộ trình học phù hợp.
+Đây là **một mạch kiến thức dọc xuyên suốt từ lớp 6 đến lớp 9**, dùng 25 chuyên đề làm khung xương sống để học sinh nhìn được toàn cảnh, truy nguyên kiến thức tiên quyết, học tiếp theo quan hệ trước → sau và tái sử dụng cùng nền tảng khi ôn tuyển sinh vào lớp 10.
+
+> **Lớp 6/7/8/9 và các chương Kết nối tri thức là lớp định vị trên cùng Roadmap, không phải bốn cây kiến thức tách rời.**
+
+[Xem triết lý mạch kiến thức dọc](triet-ly-mach-kien-thuc-doc.md)
 
 ## 25 chuyên đề
 
