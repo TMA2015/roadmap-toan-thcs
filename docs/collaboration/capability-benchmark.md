@@ -1,5 +1,15 @@
 # Capability Benchmark – Phân công Gemini & ChatGPT theo dữ liệu
 
+## 0. Mức bằng chứng
+
+Mọi nhận định về thế mạnh phải gắn mức bằng chứng:
+
+- `SELF_REPORTED`: AI tự mô tả thế mạnh; chỉ dùng làm giả thuyết routing ban đầu.
+- `OBSERVED`: đã có một số quan sát thực tế trong dự án nhưng sample còn ít.
+- `BENCHMARKED`: đã có bộ task đủ đại diện và tiêu chí chấm ổn định.
+
+Ví dụ hiện tại, Gemini tự mô tả thế mạnh ở sư phạm hóa nội dung, luyện thi CLC/top-school, infographic print-friendly và xây bài tập theo mô-đun. Các điểm này được lưu là `SELF_REPORTED` cho tới khi benchmark xác nhận.
+
 ## Mục tiêu
 
 Không tìm một “AI tốt nhất” cho toàn dự án.
