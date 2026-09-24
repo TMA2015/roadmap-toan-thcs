@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "schema": "roadmap-vertical-spine-v1",
+  "status": "foundation",
+  "philosophy": "25 topics form the stable vertical spine; grade/book mappings are overlays, not replacement hierarchies.",
+  "relation_types": [
+    "PREREQUISITE",
+    "UNLOCKS",
+    "CROSS_LINK",
+    "APPLICATION",
+    "EXAM_REUSE",
+    "CHALLENGE_EXTENSION"
+  ],
+  "strands": {
+    "number_algebra": {
+      "label": "Số và Đại số",
+      "sequence": [
+        "02-so-va-phep-tinh",
+        "03-ti-le-ti-le-thuc",
+        "04-bieu-thuc-dai-so",
+        "05-7-hang-dang-thuc",
+        "06-phan-tich-da-thuc",
+        "07-phan-thuc-dai-so",
+        "08-phuong-trinh-bat-phuong-trinh",
+        "09-he-phuong-trinh",
+        "10-ham-so-do-thi",
+        "11-can-thuc",
+        "12-phuong-trinh-bac-hai-viete"
+      ]
+    },
+    "geometry": {
+      "label": "Hình học và Đo lường",
+      "sequence": [
+        "13-goc-va-duong-thang",
+        "14-tam-giac",
+        "15-duong-dong-quy",
+        "16-tu-giac",
+        "17-thales-dong-dang",
+        "18-he-thuc-luong",
+        "19-duong-tron",
+        "20-hinh-hoc-tong-hop"
+      ]
+    },
+    "statistics_probability": {
+      "label": "Thống kê và Xác suất",
+      "sequence": [
+        "21-thong-ke",
+        "22-dai-luong-dac-trung",
+        "23-xac-suat",
+        "24-bai-toan-thuc-te"
+      ]
+    }
+  },
+  "global_nodes": {
+    "01-ban-do-chuong-trinh": {
+      "role": "orientation"
+    },
+    "24-bai-toan-thuc-te": {
+      "role": "application_hub"
+    },
+    "25-tong-hop-on-thi-10": {
+      "role": "exam_integration"
+    }
+  },
+  "rules": [
+    "Grade mappings annotate nodes/skills; they do not create separate content trees.",
+    "Every new skill should eventually declare prerequisites and unlocks when meaningful.",
+    "Entrance-exam relevance is metadata on existing skills/topics.",
+    "Challenge is an optional extension branch, never a Core prerequisite."
+  ]
+}
