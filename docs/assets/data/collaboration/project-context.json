@@ -1,5 +1,5 @@
 {
-  "version": "1.0.4",
+  "version": "1.0.5",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -44,6 +44,10 @@
     {
       "name": "Mapping KNTT lớp 7 đã review",
       "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-7-mapping/"
+    },
+    {
+      "name": "Mapping KNTT lớp 8 đã review",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-8-mapping/"
     }
   ],
   "curriculum": {
@@ -83,7 +87,8 @@
       "topics": 25,
       "data_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/vertical-spine.json",
       "rule": "Grade/book mappings are overlays on the same knowledge graph, not separate hierarchies."
-    }
+    },
+    "mastery_policy": "soft mastery: diagnose weak prerequisites, recommend remediation, allow continued learning, and use accuracy + hint usage + history; no absolute 100% hard gate."
   },
   "roles": {
     "project_owner": {
@@ -149,9 +154,10 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Run KNTT Grade 8 mapping with verified TOC + existing skill inventory; review/integrate as Vertical Spine overlay.",
+    "next_priority": "Prepare KNTT Grade 9 task with verified TOC + relevant existing skill inventory, then review/integrate as the final grade overlay.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
-    "grade7_mapping": "reviewed and integrated as Vertical Spine overlay"
+    "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
+    "grade8_mapping": "reviewed and integrated as Vertical Spine overlay"
   },
   "handoff_required_fields": [
     "TASK_ID",
