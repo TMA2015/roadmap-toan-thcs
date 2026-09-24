@@ -42,6 +42,21 @@
       "review_notes": "Gemini covered most knowledge clusters, but chapter numbering/structure and repository topic IDs required correction; several missing KNTT items were restored."
     },
     {
+      "id": "KNTT-MAP-G7-001",
+      "title": "Mapping Toán 7 KNTT → 25 chuyên đề/skill",
+      "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
+      "status": "OPEN",
+      "context_version": "1.0.2",
+      "public_task_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G7-001/",
+      "relay_packet_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G7-001/",
+      "delivery_modes": [
+        "online-url",
+        "offline-copy",
+        "file-upload"
+      ],
+      "task_design": "source-verified-toc+valid-topic-id-whitelist"
+    },
+    {
       "id": "CONTENT-PILOT-001",
       "title": "Tạo batch nội dung mẫu Core/Vào10/Challenge để thử pipeline",
       "routing": "GEMINI_LEAD+CHATGPT_REVIEW",
