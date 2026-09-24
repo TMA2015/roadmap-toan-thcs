@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -40,6 +40,10 @@
     {
       "name": "Mapping KNTT lớp 6 đã review",
       "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-6-mapping/"
+    },
+    {
+      "name": "Mapping KNTT lớp 7 đã review",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-7-mapping/"
     }
   ],
   "curriculum": {
@@ -145,8 +149,9 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Complete KNTT Grade 7 mapping as an overlay on the Vertical Spine; then enrich skill prerequisite/unlock metadata before Grades 8-9.",
-    "grade6_mapping": "reviewed and integrated as curriculum metadata"
+    "next_priority": "Prepare KNTT Grade 8 task with verified TOC plus relevant existing skill inventory, then review/integrate as Vertical Spine overlay.",
+    "grade6_mapping": "reviewed and integrated as curriculum metadata",
+    "grade7_mapping": "reviewed and integrated as Vertical Spine overlay"
   },
   "handoff_required_fields": [
     "TASK_ID",
