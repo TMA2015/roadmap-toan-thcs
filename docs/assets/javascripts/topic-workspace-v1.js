@@ -39,7 +39,7 @@ const wrapSection=(heading,id,index)=>{
  }
 };
 const init=()=>{
- if(!location.pathname.includes(PATH))return;
+ if(!location.pathname.includes(PATH) || /\/bai-tap\/?$|\/tu-kiem-tra\/?$/.test(location.pathname))return;
  const content=document.querySelector(".md-content__inner");if(!content)return;
  const h1=content.querySelector("h1");if(!h1)return;
  const pct=progress();
