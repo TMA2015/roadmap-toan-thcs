@@ -167,3 +167,12 @@ Bạn không cần sửa Markdown, JSON hoặc GitHub thủ công.
 - [Quy trình biên soạn & QA](../huong-dan/quy-trinh-bien-soan-noi-dung.md)
 - [Chuẩn ngân hàng câu hỏi](../huong-dan/chuan-ngan-hang-cau-hoi.md)
 - [Thư viện hình & QA](../huong-dan/qa-diagram-practice.md)
+
+
+## Công cụ cộng tác
+
+- [Handoff Protocol](handoff-protocol.md)
+- [Capability Benchmark](capability-benchmark.md)
+- [Collaboration Task Board](task-board.md)
+- [Review Packet Template](review-packet.md)
+- [Task KNTT-MAP-G6-001](tasks/KNTT-MAP-G6-001.md)
