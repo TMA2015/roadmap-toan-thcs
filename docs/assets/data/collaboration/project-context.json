@@ -1,5 +1,5 @@
 {
-  "version": "1.0.7",
+  "version": "1.0.8",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -98,9 +98,9 @@
     },
     "mastery_policy": "soft mastery: diagnose weak prerequisites, recommend remediation, allow continued learning, and use accuracy + hint usage + history; no absolute 100% hard gate.",
     "knowledge_graph": {
-      "version": 1,
+      "version": 1.1,
       "data_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/knowledge-graph-v1.json",
-      "policy": "high-confidence active prerequisites; uncertain relations stay review_required; remediation is advisory"
+      "policy": "independently reviewed; PREREQUISITE separated from SEQUENCE/CROSS_LINK/REMEDIATION; soft mastery only"
     }
   },
   "roles": {
@@ -167,13 +167,13 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Validate Knowledge Graph v1 with independent pedagogical review, then connect remediation recommendations to Practice Engine learner evidence.",
+    "next_priority": "Connect Knowledge Graph v1.1 to Practice Engine learner evidence through a non-blocking remediation recommender.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade9_mapping": "reviewed and integrated as final KNTT grade overlay",
     "kntt_grade_mapping": "Grades 6-9 complete",
-    "knowledge_graph": "v1 foundation integrated"
+    "knowledge_graph": "v1.1 independently reviewed"
   },
   "handoff_required_fields": [
     "TASK_ID",
