@@ -20,7 +20,19 @@ Rà soát **Toán 6 – Kết nối tri thức** và lập mapping vào **25 chu
 - Không tự thêm nội dung ngoài KNTT rồi gọi đó là Core.
 - Không giả định cấu trúc repository ngoài những gì Collaboration Hub/Project Context cung cấp.
 
-## 2. Đọc trước khi làm
+## 2. Nếu không mở được URL
+
+Dùng packet tự chứa:
+
+`docs/collaboration/relay-packets/KNTT-MAP-G6-001.md`
+
+Bản public sau deploy:
+
+https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/
+
+Packet đã chứa context tối thiểu + toàn bộ task, nên không cần yêu cầu người dùng copy thêm Hub.
+
+## 3. Đọc trước khi làm
 
 1. Collaboration Hub:  
    https://tma2015.github.io/roadmap-toan-thcs/collaboration/
@@ -34,7 +46,7 @@ Rà soát **Toán 6 – Kết nối tri thức** và lập mapping vào **25 chu
 4. Ma trận kiến thức:  
    https://tma2015.github.io/roadmap-toan-thcs/roadmap/ma-tran-kien-thuc/
 
-## 3. Nhiệm vụ cụ thể
+## 4. Nhiệm vụ cụ thể
 
 Với **Toán 6 Kết nối tri thức**, hãy lập bảng gồm:
 
@@ -53,7 +65,7 @@ Với **Toán 6 Kết nối tri thức**, hãy lập bảng gồm:
   - đặt nội dung ở chuyên đề chưa tối ưu;
   - cần liên kết chéo.
 
-## 4. Yêu cầu học thuật
+## 5. Yêu cầu học thuật
 
 - Bám **Kết nối tri thức**, không dựa vào mục lục của bộ sách khác.
 - Nếu tên chương/bài hoặc phạm vi có điểm bạn không chắc, ghi `UNCERTAIN`.
@@ -63,7 +75,7 @@ Với **Toán 6 Kết nối tri thức**, hãy lập bảng gồm:
   - phần mở rộng.
 - Không đưa kỹ thuật thi chuyên vào mapping Core.
 
-## 5. Yêu cầu skill
+## 6. Yêu cầu skill
 
 Skill phải đủ nhỏ để Practice Engine có giá trị chẩn đoán.
 
@@ -81,13 +93,13 @@ Không dùng skill quá rộng như:
 
 Nếu skill đã có trong Roadmap, ưu tiên tái sử dụng tên/khái niệm hiện có khi biết chắc.
 
-## 6. Output format
+## 7. Output format
 
 Trả lời theo format:
 
 ```text
 TASK_ID: KNTT-MAP-G6-001
-CONTEXT_VERSION: 1.0.0
+CONTEXT_VERSION: 1.0.1
 ROLE: author/reviewer
 LAYER: KNTT-Core
 TOPIC: Grade 6 mapping
@@ -119,7 +131,7 @@ F. RECOMMENDED NEXT STEP
 ...
 ```
 
-## 7. Tiêu chí hoàn thành
+## 8. Tiêu chí hoàn thành
 
 Task đạt yêu cầu khi:
 
@@ -130,7 +142,7 @@ Task đạt yêu cầu khi:
 - có chỉ ra gap/overreach nếu thấy;
 - không biến nhận xét thi cử thành nội dung Core.
 
-## 8. Sau khi Gemini trả lời
+## 9. Sau khi Gemini trả lời
 
 Người dùng copy output sang ChatGPT.
 
