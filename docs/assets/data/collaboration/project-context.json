@@ -1,5 +1,5 @@
 {
-  "version": "1.0.10",
+  "version": "1.0.11",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -87,7 +87,9 @@
       "localStorage progress",
       "multi-level hints",
       "hint-usage tracking",
-      "knowledge-graph remediation recommender"
+      "knowledge-graph remediation recommender",
+      "remediation recovery events",
+      "post-remediation target recheck"
     ],
     "content_pipeline": "content-staging -> academic QA -> technical QA -> visual QA -> approved -> published",
     "geometry_policy": "SVG-first from verified diagram spec; semantic QA required for core geometric relations.",
@@ -102,6 +104,12 @@
       "version": 1.1,
       "data_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/knowledge-graph-v1.json",
       "policy": "independently reviewed; PREREQUISITE separated from SEQUENCE/CROSS_LINK/REMEDIATION; soft mastery only"
+    },
+    "ai_tutor": {
+      "policy_version": "1.0",
+      "provider_neutral": true,
+      "policy_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/ai/tutor-policy-v1.json",
+      "rule": "LLM explains/guides; curriculum layer, learner evidence, reviewed graph and remediation engine remain source of truth."
     }
   },
   "roles": {
@@ -168,7 +176,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Run browser/device QA after deploy; then measure remediation recovery by comparing pre-remediation and post-remediation evidence before adding AI explanations.",
+    "next_priority": "QA recovery events in browser, then define the provider adapter/context builder that can feed the same Tutor Contract to GPT, Gemini or local models.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -176,7 +184,9 @@
     "kntt_grade_mapping": "Grades 6-9 complete",
     "knowledge_graph": "v1.1 independently reviewed",
     "remediation_recommender": "MVP implemented locally from learner evidence + Knowledge Graph v1.1; minimum-evidence safeguards enabled",
-    "remediation_loop": "targeted remediation sessions implemented: 6-question local session or cross-topic focus navigation"
+    "remediation_loop": "targeted remediation sessions implemented: 6-question local session or cross-topic focus navigation",
+    "recovery_measurement": "tracks prerequisite before/after remediation and later target-skill recheck without claiming causality from one session",
+    "ai_tutor_contract": "v1 provider-neutral policy defined; not yet connected to an AI provider"
   },
   "handoff_required_fields": [
     "TASK_ID",

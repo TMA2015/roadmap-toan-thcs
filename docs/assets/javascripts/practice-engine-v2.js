@@ -6,6 +6,7 @@
   const DIAGNOSIS_MIN_ATTEMPTS = 3;
   const DIAGNOSIS_WEAK_ACCURACY = 0.75;
   const REMEDIATION_SESSION_SIZE = 6;
+  const RECOVERY_KEY = "toan-thcs-remediation-v1";
   let knowledgeGraphPromise = null;
 
   const loadStats = () => {
@@ -17,6 +18,15 @@
   };
 
   const saveStats = (stats) => localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
+  const loadRecovery = () => {
+    try { return JSON.parse(localStorage.getItem(RECOVERY_KEY)) || { events: [] }; }
+    catch (_) { return { events: [] }; }
+  };
+  const saveRecovery = (data) => localStorage.setItem(RECOVERY_KEY, JSON.stringify(data));
+  const snapshotSkill = (stats, skill) => {
+    const record = stats?.tags?.[skill] || { attempted: 0, correct: 0 };
+    return { attempted: record.attempted || 0, correct: record.correct || 0, accuracy: accuracy(record) };
+  };
   const accuracy = (record) => record && record.attempted ? record.correct / record.attempted : null;
 
   const questionSkills = (question) => {
@@ -608,6 +618,7 @@
         this.stats.tags[skill] = record;
       });
       saveStats(this.stats);
+      questionSkills(question).forEach((skill) => this.closePendingRecoveryOnTarget(skill));
     }
 
     renderRemediation(updatedSkills = []) {
@@ -630,6 +641,7 @@
         return;
       }
 
+      this.lastDiagnosisTarget = diagnosis.target.skill;
       const targetLabel = this.prettyTag(diagnosis.target.skill);
       const weakLabels = diagnosis.candidates.map((item) =>
         `${this.prettyTag(item.skill)} (${Math.round(item.accuracy * 100)}%, ${item.attempted} lượt)`
@@ -652,6 +664,19 @@
 
     startRemediation(skill, topic) {
       if (!skill || !topic) return;
+      const recovery = loadRecovery();
+      recovery.events.push({
+        id: `rem-${Date.now()}-${skill}`,
+        remediation_skill: skill,
+        source_skill: this.lastDiagnosisTarget || null,
+        source_before: this.lastDiagnosisTarget ? snapshotSkill(this.stats, this.lastDiagnosisTarget) : null,
+        topic,
+        started_at: new Date().toISOString(),
+        before: snapshotSkill(this.stats, skill),
+        status: "started"
+      });
+      recovery.events = recovery.events.slice(-100);
+      saveRecovery(recovery);
       if (this.bankSkills.includes(skill)) {
         const subset = this.questions.filter((question) => questionSkills(question).includes(skill));
         const pool = weightedQuestionPool(subset, this.stats);
@@ -730,7 +755,36 @@
       });
     }
 
+    closePendingRecoveryOnTarget(skill) {
+      if (!skill) return;
+      const recovery = loadRecovery();
+      const event = [...recovery.events].reverse().find((item) => item.source_skill === skill && item.status === "completed" && !item.target_recheck);
+      if (!event) return;
+      const current = snapshotSkill(this.stats, skill);
+      if (!event.source_before || current.attempted <= event.source_before.attempted) return;
+      event.target_recheck = { at: new Date().toISOString(), evidence: current };
+      event.target_accuracy_change = event.source_before.accuracy === null || current.accuracy === null ? null : current.accuracy - event.source_before.accuracy;
+      saveRecovery(recovery);
+    }
+
+    recordRecoveryResult() {
+      if (this.mode !== "remediation" || !this.focusSkills[0]) return null;
+      const skill = this.focusSkills[0];
+      const recovery = loadRecovery();
+      const event = [...recovery.events].reverse().find((item) => item.remediation_skill === skill && item.status === "started");
+      if (!event) return null;
+      const after = snapshotSkill(this.stats, skill);
+      event.after = after;
+      event.completed_at = new Date().toISOString();
+      event.status = "completed";
+      event.session_score = { correct: this.score, attempted: this.session.length };
+      event.accuracy_change = event.before.accuracy === null || after.accuracy === null ? null : after.accuracy - event.before.accuracy;
+      saveRecovery(recovery);
+      return event;
+    }
+
     renderSummary() {
+      const recoveryEvent = this.recordRecoveryResult();
       const percent = Math.round((this.score / this.session.length) * 100);
       this.progressEl.textContent = `Hoàn thành · ${this.score}/${this.session.length} câu đúng`;
       if (this.mode === "remediation") this.metaEl.textContent = `Kết quả ôn nền tảng · ${this.prettyTag(this.focusSkills[0])}`;
