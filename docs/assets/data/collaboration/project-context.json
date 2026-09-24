@@ -1,5 +1,5 @@
 {
-  "version": "1.0.11",
+  "version": "1.0.12",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -109,7 +109,10 @@
       "policy_version": "1.0",
       "provider_neutral": true,
       "policy_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/ai/tutor-policy-v1.json",
-      "rule": "LLM explains/guides; curriculum layer, learner evidence, reviewed graph and remediation engine remain source of truth."
+      "rule": "LLM explains/guides; curriculum layer, learner evidence, reviewed graph and remediation engine remain source of truth.",
+      "context_schema": "roadmap-tutor-context-v1",
+      "runtime": "Tutor Context Builder + provider adapter v1; mock enabled; real providers disabled pending runtime credentials",
+      "privacy": "minimum relevant evidence only; no full localStorage/provider memory"
     }
   },
   "roles": {
@@ -176,7 +179,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "QA recovery events in browser, then define the provider adapter/context builder that can feed the same Tutor Contract to GPT, Gemini or local models.",
+    "next_priority": "Integrate mock Tutor Runtime into Practice Engine UI for end-to-end student-facing QA, then design secure runtime transport for optional real providers.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -186,7 +189,8 @@
     "remediation_recommender": "MVP implemented locally from learner evidence + Knowledge Graph v1.1; minimum-evidence safeguards enabled",
     "remediation_loop": "targeted remediation sessions implemented: 6-question local session or cross-topic focus navigation",
     "recovery_measurement": "tracks prerequisite before/after remediation and later target-skill recheck without claiming causality from one session",
-    "ai_tutor_contract": "v1 provider-neutral policy defined; not yet connected to an AI provider"
+    "ai_tutor_contract": "v1 provider-neutral policy defined; not yet connected to an AI provider",
+    "ai_tutor_adapter": "v1 implemented with mock/local QA adapter and disabled Gemini/OpenAI-compatible transport sockets"
   },
   "handoff_required_fields": [
     "TASK_ID",
