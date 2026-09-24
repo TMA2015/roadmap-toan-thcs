@@ -126,6 +126,15 @@
       "title": "Chuẩn hóa thư viện hình SVG và giảm hình Internet",
       "routing": "CHATGPT_LEAD+DUAL_QA_FOR_HARD_GEOMETRY",
       "status": "OPEN"
+    },
+    {
+      "id": "KG-V1-001",
+      "title": "Hợp nhất KNTT G6-G9 thành prerequisite/unlock knowledge graph v1",
+      "routing": "CHATGPT_LEAD+GEMINI_REVIEW",
+      "status": "DONE",
+      "review_verdict": "FOUNDATION-READY",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/knowledge-graph-v1.json",
+      "review_notes": "Activated only high-confidence dependencies; uncertain associations remain in review_queue. Includes soft remediation rules and no hard gates."
     }
   ]
 }

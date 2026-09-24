@@ -25,6 +25,7 @@
 | CONTENT-PILOT-001 | Tạo batch nội dung mẫu Core/Vào10/Challenge để thử pipeline | GEMINI_LEAD + CHATGPT_REVIEW | OPEN |
 | BENCH-CAP-001 | Chạy benchmark năng lực Gemini/ChatGPT theo nhóm task | DUAL / CATEGORY-BASED | OPEN |
 | GEO-LIB-001 | Chuẩn hóa dần thư viện hình SVG, giảm hình Internet | CHATGPT_LEAD + DUAL_QA_FOR_HARD_GEOMETRY | OPEN |
+| KG-V1-001 | Hợp nhất G6-G9 thành Knowledge Graph v1 | CHATGPT_LEAD + GEMINI_REVIEW | DONE (FOUNDATION-READY) |
 
 ## Task ID tiếp theo
 

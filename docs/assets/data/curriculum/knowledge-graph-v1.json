@@ -1,0 +1,530 @@
+{
+  "version": 1,
+  "schema": "roadmap-knowledge-graph-v1",
+  "status": "foundation-reviewed",
+  "purpose": "Skill-level prerequisite/unlock graph across the 25-topic Vertical Spine. Grade mappings are overlays; remediation is advisory.",
+  "policies": {
+    "prerequisite": "A prerequisite is knowledge materially required to execute the target skill, not merely a related earlier topic.",
+    "cross_link": "Pedagogically useful associations that are not required dependencies stay outside prerequisite edges.",
+    "mastery": "soft",
+    "remediation": "recommend-only; never hard-lock progression",
+    "challenge": "Specialized-Challenge nodes must never be Core prerequisites.",
+    "confidence": "Only high-confidence edges are active in v1; uncertain edges require review."
+  },
+  "edge_types": [
+    "PREREQUISITE",
+    "UNLOCKS",
+    "REMEDIATION"
+  ],
+  "nodes": {
+    "nhan-tu-chung": {
+      "topic": "06-phan-tich-da-thuc",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "hieu-hai-binh-phuong": {
+      "topic": "06-phan-tich-da-thuc",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "phan-tich-tu-mau": {
+      "topic": "07-phan-thuc-dai-so",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "rut-gon-phan-thuc": {
+      "topic": "07-phan-thuc-dai-so",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "quy-dong-mau-thuc": {
+      "topic": "07-phan-thuc-dai-so",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "dkxd-phuong-trinh-mau": {
+      "topic": "08-phuong-trinh-bat-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "khu-mau-phuong-trinh": {
+      "topic": "08-phuong-trinh-bat-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "doi-chieu-nghiem": {
+      "topic": "08-phuong-trinh-bat-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "pt-bac-nhat": {
+      "topic": "08-phuong-trinh-bat-phuong-trinh",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "bien-doi-pt-nhieu-buoc": {
+      "topic": "08-phuong-trinh-bat-phuong-trinh",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "nghiem-pt-hai-an": {
+      "topic": "09-he-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "giai-he-the": {
+      "topic": "09-he-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "giai-he-cong": {
+      "topic": "09-he-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "lap-he-bai-toan": {
+      "topic": "09-he-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "khai-niem-ham-so": {
+      "topic": "10-ham-so-do-thi",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "ve-do-thi-ham-bac-nhat": {
+      "topic": "10-ham-so-do-thi",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "ham-y-ax2": {
+      "topic": "10-ham-so-do-thi",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "can-bac-hai-so-hoc": {
+      "topic": "11-can-thuc",
+      "grades": [
+        7,
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "dkxd-can": {
+      "topic": "11-can-thuc",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "tinh-delta": {
+      "topic": "12-phuong-trinh-bac-hai-viete",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "cong-thuc-nghiem": {
+      "topic": "12-phuong-trinh-bac-hai-viete",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "tong-tich-nghiem": {
+      "topic": "12-phuong-trinh-bac-hai-viete",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "thales-thuan": {
+      "topic": "17-thales-dong-dang",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "dong-dang-gg": {
+      "topic": "17-thales-dong-dang",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "tinh-do-dai-dong-dang": {
+      "topic": "17-thales-dong-dang",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "pythagore": {
+      "topic": "18-he-thuc-luong",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "sin": {
+      "topic": "18-he-thuc-luong",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "cos": {
+      "topic": "18-he-thuc-luong",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "tan": {
+      "topic": "18-he-thuc-luong",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "tim-canh-luong-giac": {
+      "topic": "18-he-thuc-luong",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "goc-noi-tiep": {
+      "topic": "19-duong-tron",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "tu-giac-noi-tiep": {
+      "topic": "19-duong-tron",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "xac-suat-thuc-nghiem": {
+      "topic": "23-xac-suat",
+      "grades": [
+        6,
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "bien-co": {
+      "topic": "23-xac-suat",
+      "grades": [
+        8,
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "xac-suat-co-dien": {
+      "topic": "23-xac-suat",
+      "grades": [
+        8,
+        9
+      ],
+      "layer": "KNTT-Core"
+    }
+  },
+  "edges": [
+    {
+      "from": "nhan-tu-chung",
+      "to": "phan-tich-tu-mau",
+      "type": "PREREQUISITE",
+      "confidence": "high",
+      "reason": "Factoring numerator/denominator requires recognizing common factors."
+    },
+    {
+      "from": "hieu-hai-binh-phuong",
+      "to": "phan-tich-tu-mau",
+      "type": "PREREQUISITE",
+      "confidence": "high",
+      "reason": "Difference-of-squares is a core factorization pattern used in rational expressions."
+    },
+    {
+      "from": "phan-tich-tu-mau",
+      "to": "rut-gon-phan-thuc",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "phan-tich-tu-mau",
+      "to": "quy-dong-mau-thuc",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "rut-gon-phan-thuc",
+      "to": "khu-mau-phuong-trinh",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "quy-dong-mau-thuc",
+      "to": "khu-mau-phuong-trinh",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "dkxd-phuong-trinh-mau",
+      "to": "khu-mau-phuong-trinh",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "khu-mau-phuong-trinh",
+      "to": "doi-chieu-nghiem",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "pt-bac-nhat",
+      "to": "bien-doi-pt-nhieu-buoc",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "pt-bac-nhat",
+      "to": "giai-he-the",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "pt-bac-nhat",
+      "to": "giai-he-cong",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "nghiem-pt-hai-an",
+      "to": "giai-he-the",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "nghiem-pt-hai-an",
+      "to": "giai-he-cong",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "giai-he-the",
+      "to": "lap-he-bai-toan",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "giai-he-cong",
+      "to": "lap-he-bai-toan",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "khai-niem-ham-so",
+      "to": "ve-do-thi-ham-bac-nhat",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "khai-niem-ham-so",
+      "to": "ham-y-ax2",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "can-bac-hai-so-hoc",
+      "to": "dkxd-can",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "can-bac-hai-so-hoc",
+      "to": "tinh-delta",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "tinh-delta",
+      "to": "cong-thuc-nghiem",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "cong-thuc-nghiem",
+      "to": "tong-tich-nghiem",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "thales-thuan",
+      "to": "dong-dang-gg",
+      "type": "PREREQUISITE",
+      "confidence": "high",
+      "note": "Curricular/pedagogical dependency in the KNTT progression; not a claim that GG logically derives from Thales."
+    },
+    {
+      "from": "dong-dang-gg",
+      "to": "tinh-do-dai-dong-dang",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "pythagore",
+      "to": "tim-canh-luong-giac",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "sin",
+      "to": "tim-canh-luong-giac",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "cos",
+      "to": "tim-canh-luong-giac",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "tan",
+      "to": "tim-canh-luong-giac",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "goc-noi-tiep",
+      "to": "tu-giac-noi-tiep",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "bien-co",
+      "to": "xac-suat-co-dien",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "xac-suat-thuc-nghiem",
+      "to": "xac-suat-co-dien",
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Useful conceptual bridge; not a logical prerequisite."
+    }
+  ],
+  "remediation_rules": [
+    {
+      "when": {
+        "skill": "khu-mau-phuong-trinh",
+        "signal": "repeated_errors"
+      },
+      "recommend": [
+        "quy-dong-mau-thuc",
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "message": "Có vẻ bạn đang gặp khó khăn với Phân thức đại số. Hãy ôn nhanh các bước phân tích, rút gọn và quy đồng mẫu thức."
+    },
+    {
+      "when": {
+        "skill": "rut-gon-phan-thuc",
+        "signal": "repeated_errors"
+      },
+      "recommend": [
+        "phan-tich-tu-mau",
+        "nhan-tu-chung",
+        "hieu-hai-binh-phuong"
+      ],
+      "message": "Hãy kiểm tra lại kỹ năng phân tích đa thức trước khi tiếp tục rút gọn phân thức."
+    },
+    {
+      "when": {
+        "skill": "lap-he-bai-toan",
+        "signal": "repeated_errors"
+      },
+      "recommend": [
+        "giai-he-the",
+        "giai-he-cong",
+        "pt-bac-nhat"
+      ],
+      "message": "Hãy ôn cách giải hệ và phương trình bậc nhất trước khi tập trung vào bước mô hình hóa."
+    },
+    {
+      "when": {
+        "skill": "tim-canh-luong-giac",
+        "signal": "repeated_errors"
+      },
+      "recommend": [
+        "sin",
+        "cos",
+        "tan",
+        "pythagore"
+      ],
+      "message": "Hãy ôn tỉ số lượng giác và Pythagore trong tam giác vuông."
+    }
+  ],
+  "review_queue": [
+    {
+      "candidate": [
+        "thales-thuan",
+        "dong-dang-gg"
+      ],
+      "question": "Keep as curricular prerequisite or downgrade to pedagogical sequence/cross-link?"
+    },
+    {
+      "candidate": [
+        "dong-dang-gg",
+        "goc-noi-tiep"
+      ],
+      "question": "Common geometric reuse, but not an unconditional prerequisite; do not activate without item-level evidence."
+    },
+    {
+      "candidate": [
+        "ve-do-thi-ham-bac-nhat",
+        "nghiem-pt-hai-an"
+      ],
+      "question": "Conceptually linked through line graphs; review exact direction before activation."
+    }
+  ]
+}
