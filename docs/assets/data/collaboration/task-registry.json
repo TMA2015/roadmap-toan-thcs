@@ -144,6 +144,14 @@
       "source_verdict": "PASS",
       "review_verdict": "PASS-WITH-CHANGES",
       "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/knowledge-graph-v1.json"
+    },
+    {
+      "id": "REMEDIATION-MVP-001",
+      "title": "Connect Practice Engine learner evidence to Knowledge Graph remediation",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "MVP-READY",
+      "review_notes": "Local/offline recommender. Target and prerequisite require >=3 attempts; weak threshold <75%; recommendation-only; no AI/API dependency."
     }
   ]
 }

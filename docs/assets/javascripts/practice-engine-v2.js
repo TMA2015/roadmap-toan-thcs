@@ -2,6 +2,10 @@
   "use strict";
 
   const STORAGE_KEY = "toan-thcs-practice-v1";
+  const KNOWLEDGE_GRAPH_PATH = "assets/data/curriculum/knowledge-graph-v1.json";
+  const DIAGNOSIS_MIN_ATTEMPTS = 3;
+  const DIAGNOSIS_WEAK_ACCURACY = 0.75;
+  let knowledgeGraphPromise = null;
 
   const loadStats = () => {
     try {
@@ -76,6 +80,59 @@
     const response = await fetch(url);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return response.json();
+  };
+
+  const siteRootFromPath = () => {
+    const marker = "/kien-thuc/";
+    const pathname = window.location.pathname;
+    return pathname.includes(marker) ? (pathname.split(marker)[0] || "") : "";
+  };
+
+  const loadKnowledgeGraph = () => {
+    if (!knowledgeGraphPromise) {
+      const siteRoot = siteRootFromPath();
+      knowledgeGraphPromise = fetchJson(`${siteRoot}/${KNOWLEDGE_GRAPH_PATH}`).catch(() => null);
+    }
+    return knowledgeGraphPromise;
+  };
+
+  const evidenceForSkill = (stats, skill) => {
+    const record = stats?.tags?.[skill];
+    if (!record?.attempted) return { skill, attempted: 0, correct: 0, accuracy: null, hintedRate: null, sufficient: false };
+    return {
+      skill,
+      attempted: record.attempted,
+      correct: record.correct || 0,
+      accuracy: accuracy(record),
+      hintedRate: record.hinted_attempts ? record.hinted_attempts / record.attempted : 0,
+      sufficient: record.attempted >= DIAGNOSIS_MIN_ATTEMPTS
+    };
+  };
+
+  const diagnoseRemediation = (graph, stats, targetSkill) => {
+    if (!graph || !targetSkill) return null;
+    const target = evidenceForSkill(stats, targetSkill);
+    if (!target.sufficient || target.accuracy >= DIAGNOSIS_WEAK_ACCURACY) return null;
+
+    const rule = (graph.remediation_rules || []).find((item) => item?.when?.skill === targetSkill);
+    const directPrereqs = (graph.edges || [])
+      .filter((edge) => edge.to === targetSkill && edge.type === "PREREQUISITE" && edge.confidence === "high")
+      .map((edge) => edge.from);
+    const candidates = [...new Set([...(rule?.recommend || []), ...directPrereqs])]
+      .map((skill) => evidenceForSkill(stats, skill));
+
+    const evidencedWeak = candidates
+      .filter((item) => item.sufficient && item.accuracy < DIAGNOSIS_WEAK_ACCURACY)
+      .sort((a, b) => (a.accuracy - b.accuracy) || (b.attempted - a.attempted));
+    const needsEvidence = candidates.filter((item) => !item.sufficient);
+
+    if (evidencedWeak.length) {
+      return { target, kind: "evidenced", candidates: evidencedWeak.slice(0, 3), message: rule?.message || "" };
+    }
+    if (needsEvidence.length) {
+      return { target, kind: "needs-evidence", candidates: needsEvidence.slice(0, 3), message: "" };
+    }
+    return { target, kind: "target-only", candidates: [], message: "" };
   };
 
   const normalizeQuestion = (question, baseUrl) => {
@@ -232,6 +289,7 @@
       this.skillGroups = buildSkillGroups(bank, this.bankSkills);
       this.skillOrder = this.skillGroups.flatMap((group) => group.skills);
       this.stats = loadStats();
+      this.knowledgeGraph = null;
       this.session = [];
       this.index = 0;
       this.score = 0;
@@ -240,6 +298,10 @@
       this.mode = "normal";
       this.focusSkills = [];
       this.renderShell();
+      loadKnowledgeGraph().then((graph) => {
+        this.knowledgeGraph = graph;
+        this.renderRemediation();
+      });
       this.startNormalSession();
     }
 
@@ -263,6 +325,7 @@
           <div class="practice-feedback" hidden></div>
           <div class="practice-actions"></div>
         </div>
+        <div class="practice-remediation" hidden aria-live="polite"></div>
         <details class="practice-stats-panel">
           <summary>📊 Xem tiến độ theo kỹ năng</summary>
           <div class="practice-stats-note">Thứ tự kỹ năng cố định theo lộ trình học. Bấm vào một kỹ năng để luyện riêng.</div>
@@ -282,6 +345,7 @@
       this.feedbackEl = this.root.querySelector(".practice-feedback");
       this.actionsEl = this.root.querySelector(".practice-actions");
       this.statsEl = this.root.querySelector(".practice-stats");
+      this.remediationEl = this.root.querySelector(".practice-remediation");
 
       const normalBtn = createButton("Bộ 10 câu mới", "practice-btn-secondary");
       normalBtn.addEventListener("click", () => this.startNormalSession());
@@ -491,6 +555,7 @@
       this.actionsEl.appendChild(nextBtn);
       this.progressEl.textContent = `Câu ${this.index + 1}/${this.session.length} · Đúng ${this.score}`;
       this.renderStats(questionSkills(question));
+      this.renderRemediation(questionSkills(question));
       typeset(this.cardEl);
     }
 
@@ -542,6 +607,38 @@
         this.stats.tags[skill] = record;
       });
       saveStats(this.stats);
+    }
+
+    renderRemediation(updatedSkills = []) {
+      if (!this.remediationEl || !this.knowledgeGraph) return;
+      const candidateTargets = [...new Set([
+        ...updatedSkills,
+        ...rankWeakSkills(this.stats, Object.keys(this.knowledgeGraph.nodes || {}), Object.keys(this.knowledgeGraph.nodes || {}))
+      ])];
+
+      let diagnosis = null;
+      for (const skill of candidateTargets) {
+        diagnosis = diagnoseRemediation(this.knowledgeGraph, this.stats, skill);
+        if (diagnosis?.kind === "evidenced") break;
+        if (!diagnosis) continue;
+      }
+
+      if (!diagnosis || diagnosis.kind !== "evidenced") {
+        this.remediationEl.hidden = true;
+        this.remediationEl.innerHTML = "";
+        return;
+      }
+
+      const targetLabel = this.prettyTag(diagnosis.target.skill);
+      const weakLabels = diagnosis.candidates.map((item) =>
+        `${this.prettyTag(item.skill)} (${Math.round(item.accuracy * 100)}%, ${item.attempted} lượt)`
+      );
+      this.remediationEl.innerHTML = `
+        <strong>🧭 Gợi ý ôn nền tảng</strong>
+        <div>Bạn đang gặp khó khăn ở <strong>${targetLabel}</strong>. Dữ liệu hiện tại cho thấy nên ưu tiên ôn: <strong>${weakLabels.join(" → ")}</strong>.</div>
+        <div class="practice-remediation-note">Đây là gợi ý dựa trên lịch sử làm bài, không phải điều kiện bắt buộc. Bạn vẫn có thể tiếp tục học bình thường.</div>
+      `;
+      this.remediationEl.hidden = false;
     }
 
     renderStats(updatedSkills = []) {
@@ -618,6 +715,7 @@
       weakBtn.addEventListener("click", () => this.startWeakSession());
       this.actionsEl.append(restartBtn, weakBtn);
       this.renderStats();
+      this.renderRemediation(this.focusSkills);
     }
 
     difficultyLabel(level) {

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.8",
+  "version": "1.0.9",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -86,7 +86,8 @@
       "weak-skill practice",
       "localStorage progress",
       "multi-level hints",
-      "hint-usage tracking"
+      "hint-usage tracking",
+      "knowledge-graph remediation recommender"
     ],
     "content_pipeline": "content-staging -> academic QA -> technical QA -> visual QA -> approved -> published",
     "geometry_policy": "SVG-first from verified diagram spec; semantic QA required for core geometric relations.",
@@ -167,13 +168,14 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Connect Knowledge Graph v1.1 to Practice Engine learner evidence through a non-blocking remediation recommender.",
+    "next_priority": "QA the evidence-based remediation recommender on real cross-topic learner histories, then add one-click targeted remediation sessions without hard gating.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade9_mapping": "reviewed and integrated as final KNTT grade overlay",
     "kntt_grade_mapping": "Grades 6-9 complete",
-    "knowledge_graph": "v1.1 independently reviewed"
+    "knowledge_graph": "v1.1 independently reviewed",
+    "remediation_recommender": "MVP implemented locally from learner evidence + Knowledge Graph v1.1; minimum-evidence safeguards enabled"
   },
   "handoff_required_fields": [
     "TASK_ID",
