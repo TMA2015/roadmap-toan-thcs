@@ -189,3 +189,4 @@ Không yêu cầu người dùng copy lại cả lịch sử trò chuyện hoặ
 - [Collaboration Task Board](task-board.md)
 - [Review Packet Template](review-packet.md)
 - [Task KNTT-MAP-G6-001](tasks/KNTT-MAP-G6-001.md)
+- [Task KNTT-MAP-G7-001](tasks/KNTT-MAP-G7-001.md)
