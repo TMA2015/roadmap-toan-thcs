@@ -152,6 +152,14 @@
       "status": "DONE",
       "review_verdict": "MVP-READY",
       "review_notes": "Local/offline recommender. Target and prerequisite require >=3 attempts; weak threshold <75%; recommendation-only; no AI/API dependency."
+    },
+    {
+      "id": "REMEDIATION-LOOP-001",
+      "title": "Close adaptive remediation loop with targeted practice",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "QA-READY",
+      "review_notes": "Six-question targeted sessions; cross-topic focus navigation; regression cases cover insufficient evidence, healthy prerequisite, weak prerequisite, weakest candidate, and threshold boundary."
     }
   ]
 }
