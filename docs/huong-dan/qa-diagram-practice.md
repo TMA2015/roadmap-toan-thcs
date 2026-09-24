@@ -4,6 +4,40 @@
 
 Nguyên tắc bắt buộc: **“Hình minh họa, không nhất thiết theo tỉ lệ” chỉ cho phép sai khác về tỉ lệ độ dài/kích thước; không cho phép sai quan hệ hình học cốt lõi** như vuông góc, song song, thẳng hàng, điểm thuộc đường tròn, tiếp tuyến, trung điểm hoặc thứ tự điểm.
 
+
+## Chuẩn mới cho hình học từ 2026
+
+Từ giai đoạn này, mọi hình học mới nên đi theo quy trình:
+
+`đề bài → diagram spec → kiểm tra quan hệ → dựng SVG → semantic QA → xuất bản`
+
+### Thứ tự ưu tiên nguồn hình
+
+1. **SVG tự dựng theo spec đã kiểm định** – mặc định cho hình học tĩnh.
+2. **GeoGebra** – khi thao tác kéo/thả giúp hiểu bản chất.
+3. **Hình nguồn ngoài** – chỉ là giải pháp tạm nếu chưa thể dựng chính xác.
+
+Mục tiêu là giảm dần hình Internet để toàn bộ Roadmap có phong cách đồng nhất.
+
+### Không chấp nhận các lỗi sau
+
+- vẽ gần vuông góc rồi gắn ký hiệu vuông góc;
+- vẽ gần tiếp tuyến nhưng đường thực tế cắt đường tròn;
+- điểm được ghi là thuộc đường tròn nhưng tọa độ không nằm trên đường tròn;
+- ba điểm được giả thiết thẳng hàng nhưng SVG không thẳng hàng;
+- đổi thứ tự điểm trên đoạn/tia;
+- hình vô tình thể hiện thêm một quan hệ mà đề không cho và chưa chứng minh;
+- đặt nhãn che giao điểm hoặc làm học sinh hiểu sai cấu hình.
+
+### Kiểm tra kép với bài hình học khó
+
+Với bài vận dụng cao/thi chuyên, hình và lời giải là hai đối tượng QA riêng:
+
+- **Lời giải:** cần một kiểm tra độc lập thứ hai khi khả thi.
+- **Hình:** cần kiểm tra semantic dựa trên diagram spec, không dựa vào lời giải hoặc cảm giác thị giác.
+
+Mẫu spec dùng tại `content-staging/templates/geometry-item.md`; SVG khởi tạo thống nhất nằm tại `docs/assets/diagrams/_template/geometry-diagram-template.svg`.
+
 <div class="diagram-qa-toolbar">
   <label>Chuyên đề
     <select id="diagram-qa-topic"><option value="all">Tất cả 13–25</option></select>
