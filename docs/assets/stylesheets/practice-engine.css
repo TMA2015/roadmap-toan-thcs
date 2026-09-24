@@ -185,3 +185,28 @@
   gap: 0.5rem;
   margin-top: 0.65rem;
 }
+
+
+/* Local Tutor QA panel */
+.practice-tutor {
+  margin: 1rem 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.5rem;
+  background: var(--md-code-bg-color);
+}
+.practice-tutor > strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+.practice-tutor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+.practice-tutor-note {
+  margin-top: 0.5rem;
+  font-size: 0.85em;
+  opacity: 0.78;
+}

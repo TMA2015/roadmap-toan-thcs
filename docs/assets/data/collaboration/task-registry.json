@@ -183,6 +183,14 @@
       "status": "DONE",
       "review_verdict": "QA-READY",
       "review_notes": "Mock/local adapter enabled; Gemini and OpenAI-compatible transports intentionally disabled until secure runtime credentials exist; context is minimized and schema-validated."
+    },
+    {
+      "id": "AI-TUTOR-UI-001",
+      "title": "Integrate mock Tutor into Practice Engine UI",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "QA-READY",
+      "review_notes": "Student-facing local mock Tutor supports HINT/REMEDIATE/CONTINUE; preserves question-bank hints and soft mastery; no network/provider calls."
     }
   ]
 }
