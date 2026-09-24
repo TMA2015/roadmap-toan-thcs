@@ -618,6 +618,7 @@
         this.stats.tags[skill] = record;
       });
       saveStats(this.stats);
+      questionSkills(question).forEach((skill) => this.closePendingRecoveryOnTarget(skill));
     }
 
     renderRemediation(updatedSkills = []) {
@@ -668,6 +669,7 @@
         id: `rem-${Date.now()}-${skill}`,
         remediation_skill: skill,
         source_skill: this.lastDiagnosisTarget || null,
+        source_before: this.lastDiagnosisTarget ? snapshotSkill(this.stats, this.lastDiagnosisTarget) : null,
         topic,
         started_at: new Date().toISOString(),
         before: snapshotSkill(this.stats, skill),
@@ -751,6 +753,18 @@
 
         this.statsEl.appendChild(groupEl);
       });
+    }
+
+    closePendingRecoveryOnTarget(skill) {
+      if (!skill) return;
+      const recovery = loadRecovery();
+      const event = [...recovery.events].reverse().find((item) => item.source_skill === skill && item.status === "completed" && !item.target_recheck);
+      if (!event) return;
+      const current = snapshotSkill(this.stats, skill);
+      if (!event.source_before || current.attempted <= event.source_before.attempted) return;
+      event.target_recheck = { at: new Date().toISOString(), evidence: current };
+      event.target_accuracy_change = event.source_before.accuracy === null || current.accuracy === null ? null : current.accuracy - event.source_before.accuracy;
+      saveRecovery(recovery);
     }
 
     recordRecoveryResult() {
