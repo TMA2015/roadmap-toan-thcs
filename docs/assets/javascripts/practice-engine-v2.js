@@ -336,6 +336,7 @@
           <div class="practice-feedback" hidden></div>
           <div class="practice-actions"></div>
         </div>
+        <div class="practice-tutor" hidden aria-live="polite"></div>
         <div class="practice-remediation" hidden aria-live="polite"></div>
         <details class="practice-stats-panel">
           <summary>📊 Xem tiến độ theo kỹ năng</summary>
@@ -357,6 +358,7 @@
       this.actionsEl = this.root.querySelector(".practice-actions");
       this.statsEl = this.root.querySelector(".practice-stats");
       this.remediationEl = this.root.querySelector(".practice-remediation");
+      this.tutorEl = this.root.querySelector(".practice-tutor");
 
       const normalBtn = createButton("Bộ 10 câu mới", "practice-btn-secondary");
       normalBtn.addEventListener("click", () => this.startNormalSession());
@@ -481,6 +483,7 @@
       this.hintsEl.hidden = true;
       this.hintsEl.innerHTML = "";
       this.feedbackEl.hidden = true;
+      if (this.tutorEl) { this.tutorEl.hidden = true; this.tutorEl.innerHTML = ""; }
       this.feedbackEl.className = "practice-feedback";
       this.feedbackEl.innerHTML = "";
       this.actionsEl.innerHTML = "";
@@ -493,6 +496,10 @@
         this.optionsEl.appendChild(button);
       });
 
+      const tutorBtn = createButton("🤖 Hỏi gia sư", "practice-btn-secondary");
+      tutorBtn.addEventListener("click", () => this.askTutor(question, tutorBtn));
+      this.actionsEl.appendChild(tutorBtn);
+
       if (Array.isArray(question.hints) && question.hints.length) {
         const hintBtn = createButton("💡 Xem gợi ý", "practice-btn-secondary");
         hintBtn.addEventListener("click", () => this.showNextHint(question, hintBtn));
@@ -500,6 +507,75 @@
       }
 
       typeset(this.cardEl);
+    }
+
+    async askTutor(question, button) {
+      if (!window.RoadmapTutor) return;
+      const skills = questionSkills(question);
+      const skill = skills[0];
+      if (!skill) return;
+      button.disabled = true;
+      const oldLabel = button.textContent;
+      button.textContent = "Gia sư đang xem dữ liệu…";
+      try {
+        const context = window.RoadmapTutor.buildContext({
+          projectContextVersion: "1.0.13",
+          layer: question?.tags?.layer || "KNTT-Core",
+          gradeOverlay: question?.tags?.grade || null,
+          skill,
+          question,
+          hintLevel: this.hintLevel,
+          stats: this.stats,
+          graph: this.knowledgeGraph,
+          recovery: loadRecovery()
+        });
+        const response = await window.RoadmapTutor.run({ provider: "mock", context });
+        this.renderTutorResponse(response, question);
+      } catch (_) {
+        this.tutorEl.innerHTML = "<strong>🤖 Gia sư</strong><div>Chưa thể mở trợ giúp lúc này. Bạn vẫn có thể dùng gợi ý của câu hỏi hoặc tiếp tục làm bài.</div>";
+        this.tutorEl.hidden = false;
+      } finally {
+        button.disabled = false;
+        button.textContent = oldLabel;
+      }
+    }
+
+    renderTutorResponse(response, question) {
+      this.tutorEl.innerHTML = "";
+      const title = document.createElement("strong");
+      title.textContent = "🤖 Gia sư · bản QA local";
+      const message = document.createElement("div");
+      message.textContent = response.message;
+      this.tutorEl.append(title, message);
+
+      const actions = document.createElement("div");
+      actions.className = "practice-tutor-actions";
+      if (response.action_type === "HINT" && Array.isArray(question.hints) && question.hints.length && this.hintLevel < question.hints.length) {
+        const hintBtn = createButton("Cho tôi một gợi ý nhỏ", "practice-btn-secondary");
+        hintBtn.addEventListener("click", () => {
+          const existing = [...this.actionsEl.querySelectorAll("button")].find((item) => item.textContent.includes("gợi ý"));
+          if (existing) existing.click();
+        });
+        actions.appendChild(hintBtn);
+      }
+      if (response.action_type === "REMEDIATE" && response.target_skill) {
+        const node = this.knowledgeGraph?.nodes?.[response.target_skill];
+        const remediateBtn = createButton(`Ôn ngay: ${this.prettyTag(response.target_skill)}`, "practice-btn-secondary");
+        remediateBtn.addEventListener("click", () => this.startRemediation(response.target_skill, node?.topic));
+        actions.appendChild(remediateBtn);
+      }
+      const continueBtn = createButton("Tiếp tục câu này", "practice-btn-secondary");
+      continueBtn.addEventListener("click", () => { this.tutorEl.hidden = true; });
+      actions.appendChild(continueBtn);
+      this.tutorEl.appendChild(actions);
+
+      const note = document.createElement("div");
+      note.className = "practice-tutor-note";
+      note.textContent = response.confidence === "evidenced"
+        ? "Gợi ý này dựa trên learner evidence đã có; không phải điều kiện bắt buộc."
+        : "Chưa đủ evidence để xác định một điểm nghẽn nền tảng cụ thể.";
+      this.tutorEl.appendChild(note);
+      this.tutorEl.hidden = false;
     }
 
     showNextHint(question, button) {
