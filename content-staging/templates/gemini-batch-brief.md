@@ -1,3 +1,14 @@
+# Trước khi biên soạn
+
+Đọc **AI Collaboration Hub** và **Project Context** mới nhất:
+
+- https://tma2015.github.io/roadmap-toan-thcs/collaboration/
+- https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/project-context.json
+
+Khi có Task Packet riêng, Task Packet có ưu tiên cao hơn brief tổng quát này.
+
+---
+
 # Brief chuẩn gửi Gemini – Roadmap Toán THCS
 
 Dùng mẫu này khi yêu cầu Gemini biên soạn một batch nội dung để sau đó đưa sang ChatGPT kiểm định và tích hợp.

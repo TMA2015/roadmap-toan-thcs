@@ -1,0 +1,159 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-09-25",
+  "schema": "roadmap-ai-collaboration-context-v1",
+  "project": {
+    "name": "Roadmap Toán THCS",
+    "public_site": "https://tma2015.github.io/roadmap-toan-thcs/",
+    "repository": "TMA2015/roadmap-toan-thcs",
+    "purpose": "Hệ thống tự học Toán THCS lớp 6-9, bám Kết nối tri thức, hỗ trợ luyện tập, ôn thi vào 10 và mở rộng Challenge/thi chuyên."
+  },
+  "source_of_truth": [
+    {
+      "name": "Blueprint 25 chuyên đề",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/blueprint-25-chuyen-de/"
+    },
+    {
+      "name": "Ma trận kiến thức",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/ma-tran-kien-thuc/"
+    },
+    {
+      "name": "Chuẩn KNTT và các tầng học",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/chuan-kntt-va-cac-tang-hoc/"
+    },
+    {
+      "name": "Quy trình biên soạn và QA",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/quy-trinh-bien-soan-noi-dung/"
+    },
+    {
+      "name": "Chuẩn ngân hàng câu hỏi",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/chuan-ngan-hang-cau-hoi/"
+    },
+    {
+      "name": "Thư viện hình và QA",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/qa-diagram-practice/"
+    }
+  ],
+  "curriculum": {
+    "primary_textbook": "Kết nối tri thức",
+    "layers": [
+      {
+        "id": "KNTT-Core",
+        "required": true,
+        "description": "Kiến thức và kỹ năng cốt lõi."
+      },
+      {
+        "id": "Entrance10",
+        "required": false,
+        "description": "Ôn thi vào 10 dựa trên Core và dữ liệu đề thật."
+      },
+      {
+        "id": "Specialized-Challenge",
+        "required": false,
+        "description": "Mở rộng cho học sinh khá giỏi/thi chuyên; không dùng để khóa Core."
+      }
+    ]
+  },
+  "architecture": {
+    "roadmap_topics": 25,
+    "practice_engine": "v2",
+    "adaptive_features": [
+      "skill tags",
+      "weak-skill practice",
+      "localStorage progress",
+      "multi-level hints",
+      "hint-usage tracking"
+    ],
+    "content_pipeline": "content-staging -> academic QA -> technical QA -> visual QA -> approved -> published",
+    "geometry_policy": "SVG-first from verified diagram spec; semantic QA required for core geometric relations."
+  },
+  "roles": {
+    "project_owner": {
+      "lead_on": [
+        "product priorities",
+        "learning experience goals",
+        "final product direction"
+      ],
+      "not_expected_to_do": [
+        "technical QA",
+        "manual GitHub integration",
+        "mathematical cross-checking between AIs"
+      ]
+    },
+    "gemini": {
+      "lead_on": [
+        "pedagogical critique",
+        "academic drafting",
+        "examples and exercise generation",
+        "independent solution of difficult math problems"
+      ],
+      "review_on": [
+        "curriculum mapping",
+        "geometry reasoning",
+        "student-facing explanations"
+      ],
+      "constraints": [
+        "Do not assume repository state that is not in context.",
+        "Do not mix Specialized-Challenge into KNTT-Core.",
+        "Mark uncertainty explicitly."
+      ]
+    },
+    "chatgpt": {
+      "lead_on": [
+        "repository architecture",
+        "GitHub integration",
+        "schemas and metadata",
+        "technical QA",
+        "practice engine",
+        "SVG generation from verified specs",
+        "release and deploy"
+      ],
+      "review_on": [
+        "academic correctness",
+        "pedagogical consistency",
+        "hard-problem independent verification"
+      ],
+      "constraints": [
+        "Do not self-certify high-risk geometry or advanced proofs without an independent check when feasible.",
+        "Preserve backward compatibility unless migration is deliberate."
+      ]
+    }
+  },
+  "dual_review_required_for": [
+    "multi-step geometry proofs",
+    "specialized/high-achievement problems",
+    "solutions with non-obvious theorem use",
+    "canonical answer keys reused across the bank",
+    "areas where prior AI answers were unstable or conflicting"
+  ],
+  "current_state": {
+    "roadmap": "25/25 topic pages exist",
+    "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
+    "content_staging": "available",
+    "geometry_qa": "available with benchmark and SVG-first policy",
+    "next_priority": "Build stable AI collaboration handoff, then map KNTT/skills and expand reviewed content batches."
+  },
+  "handoff_required_fields": [
+    "TASK_ID",
+    "CONTEXT_VERSION",
+    "ROLE",
+    "LAYER",
+    "TOPIC",
+    "RESULT",
+    "UNCERTAINTIES"
+  ],
+  "do_not_assume": [
+    "An AI-generated draft is not source of truth.",
+    "Difficulty is not the same as curriculum layer.",
+    "A visually plausible geometry diagram is not necessarily geometrically valid.",
+    "Exam frequency claims require evidence from an exam corpus."
+  ],
+  "collaboration": {
+    "hub_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/",
+    "handoff_protocol_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/handoff-protocol/",
+    "capability_benchmark_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/capability-benchmark/",
+    "task_board_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/task-board/",
+    "task_registry_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/task-registry.json",
+    "first_public_task": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G6-001/"
+  }
+}

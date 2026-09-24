@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "schema": "roadmap-collaboration-task-registry-v1",
+  "updated": "2026-09-25",
+  "statuses": [
+    "OPEN",
+    "GEMINI-DRAFT",
+    "CHATGPT-REVIEW",
+    "DUAL-CHECK",
+    "BLOCKED-ACADEMIC",
+    "READY",
+    "DONE"
+  ],
+  "tasks": [
+    {
+      "id": "COLLAB-SYSTEM-001",
+      "title": "Xây AI Collaboration Hub + context + protocol",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE"
+    },
+    {
+      "id": "KNTT-MAP-001",
+      "title": "Chuẩn hóa mapping KNTT → 25 chuyên đề → skill",
+      "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
+      "status": "OPEN"
+    },
+    {
+      "id": "KNTT-MAP-G6-001",
+      "title": "Mapping Toán 6 KNTT → 25 chuyên đề/skill",
+      "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
+      "status": "OPEN",
+      "public_task_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G6-001/"
+    },
+    {
+      "id": "CONTENT-PILOT-001",
+      "title": "Tạo batch nội dung mẫu Core/Vào10/Challenge để thử pipeline",
+      "routing": "GEMINI_LEAD+CHATGPT_REVIEW",
+      "status": "OPEN"
+    },
+    {
+      "id": "BENCH-CAP-001",
+      "title": "Benchmark năng lực theo nhóm task",
+      "routing": "CATEGORY_BASED_DUAL",
+      "status": "OPEN"
+    },
+    {
+      "id": "GEO-LIB-001",
+      "title": "Chuẩn hóa thư viện hình SVG và giảm hình Internet",
+      "routing": "CHATGPT_LEAD+DUAL_QA_FOR_HARD_GEOMETRY",
+      "status": "OPEN"
+    }
+  ]
+}
