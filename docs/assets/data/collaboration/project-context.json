@@ -1,5 +1,5 @@
 {
-  "version": "1.0.9",
+  "version": "1.0.10",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -168,14 +168,15 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "QA the evidence-based remediation recommender on real cross-topic learner histories, then add one-click targeted remediation sessions without hard gating.",
+    "next_priority": "Run browser/device QA after deploy; then measure remediation recovery by comparing pre-remediation and post-remediation evidence before adding AI explanations.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade9_mapping": "reviewed and integrated as final KNTT grade overlay",
     "kntt_grade_mapping": "Grades 6-9 complete",
     "knowledge_graph": "v1.1 independently reviewed",
-    "remediation_recommender": "MVP implemented locally from learner evidence + Knowledge Graph v1.1; minimum-evidence safeguards enabled"
+    "remediation_recommender": "MVP implemented locally from learner evidence + Knowledge Graph v1.1; minimum-evidence safeguards enabled",
+    "remediation_loop": "targeted remediation sessions implemented: 6-question local session or cross-topic focus navigation"
   },
   "handoff_required_fields": [
     "TASK_ID",
