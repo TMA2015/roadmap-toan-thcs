@@ -175,6 +175,14 @@
       "status": "DONE",
       "review_verdict": "REVIEW-READY",
       "review_notes": "Soft mastery, evidence-first diagnosis, Core/Challenge boundary, growth language, hint ladder, no fabricated learner evidence, graph-discipline."
+    },
+    {
+      "id": "AI-TUTOR-ADAPTER-001",
+      "title": "Tutor Context Builder and provider-neutral adapter",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "QA-READY",
+      "review_notes": "Mock/local adapter enabled; Gemini and OpenAI-compatible transports intentionally disabled until secure runtime credentials exist; context is minimized and schema-validated."
     }
   ]
 }
