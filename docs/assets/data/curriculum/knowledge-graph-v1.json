@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "version": 1.1,
   "schema": "roadmap-knowledge-graph-v1",
-  "status": "foundation-reviewed",
+  "status": "independently-reviewed",
   "purpose": "Skill-level prerequisite/unlock graph across the 25-topic Vertical Spine. Grade mappings are overlays; remediation is advisory.",
   "policies": {
     "prerequisite": "A prerequisite is knowledge materially required to execute the target skill, not merely a related earlier topic.",
@@ -13,7 +13,8 @@
   },
   "edge_types": [
     "PREREQUISITE",
-    "UNLOCKS",
+    "SEQUENCE",
+    "CROSS_LINK",
     "REMEDIATION"
   ],
   "nodes": {
@@ -265,6 +266,52 @@
         9
       ],
       "layer": "KNTT-Core"
+    },
+    "ti-le-thuc": {
+      "topic": "03-ti-le-ti-le-thuc",
+      "grades": [
+        7
+      ],
+      "layer": "KNTT-Core"
+    },
+    "hang-tu-dong-dang": {
+      "topic": "04-bieu-thuc-dai-so",
+      "grades": [
+        7,
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "thu-gon-da-thuc": {
+      "topic": "04-bieu-thuc-dai-so",
+      "grades": [
+        7,
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "bo-ngoac-dau": {
+      "topic": "04-bieu-thuc-dai-so",
+      "grades": [
+        7,
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "cong-tru-da-thuc": {
+      "topic": "04-bieu-thuc-dai-so",
+      "grades": [
+        7,
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "cong-tru-phan-thuc": {
+      "topic": "07-phan-thuc-dai-so",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
     }
   },
   "edges": [
@@ -379,12 +426,6 @@
       "confidence": "high"
     },
     {
-      "from": "can-bac-hai-so-hoc",
-      "to": "tinh-delta",
-      "type": "PREREQUISITE",
-      "confidence": "high"
-    },
-    {
       "from": "tinh-delta",
       "to": "cong-thuc-nghiem",
       "type": "PREREQUISITE",
@@ -395,13 +436,6 @@
       "to": "tong-tich-nghiem",
       "type": "PREREQUISITE",
       "confidence": "high"
-    },
-    {
-      "from": "thales-thuan",
-      "to": "dong-dang-gg",
-      "type": "PREREQUISITE",
-      "confidence": "high",
-      "note": "Curricular/pedagogical dependency in the KNTT progression; not a claim that GG logically derives from Thales."
     },
     {
       "from": "dong-dang-gg",
@@ -451,6 +485,52 @@
       "type": "REMEDIATION",
       "confidence": "high",
       "reason": "Useful conceptual bridge; not a logical prerequisite."
+    },
+    {
+      "from": "can-bac-hai-so-hoc",
+      "to": "cong-thuc-nghiem",
+      "type": "PREREQUISITE",
+      "confidence": "high",
+      "reason": "Using the real quadratic formula requires evaluating sqrt(Delta); computing Delta itself does not."
+    },
+    {
+      "from": "thales-thuan",
+      "to": "dong-dang-gg",
+      "type": "SEQUENCE",
+      "confidence": "high",
+      "reason": "Useful KNTT learning sequence, but Thales is not a logical prerequisite for executing angle-angle similarity."
+    },
+    {
+      "from": "hang-tu-dong-dang",
+      "to": "thu-gon-da-thuc",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "bo-ngoac-dau",
+      "to": "cong-tru-da-thuc",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "quy-dong-mau-thuc",
+      "to": "cong-tru-phan-thuc",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "ti-le-thuc",
+      "to": "thales-thuan",
+      "type": "PREREQUISITE",
+      "confidence": "high",
+      "reason": "Using Thales numerically requires proportional relationships."
+    },
+    {
+      "from": "ti-le-thuc",
+      "to": "tinh-do-dai-dong-dang",
+      "type": "PREREQUISITE",
+      "confidence": "high",
+      "reason": "Computing corresponding lengths in similar triangles uses proportions."
     }
   ],
   "remediation_rules": [
@@ -507,13 +587,6 @@
   "review_queue": [
     {
       "candidate": [
-        "thales-thuan",
-        "dong-dang-gg"
-      ],
-      "question": "Keep as curricular prerequisite or downgrade to pedagogical sequence/cross-link?"
-    },
-    {
-      "candidate": [
         "dong-dang-gg",
         "goc-noi-tiep"
       ],
@@ -525,6 +598,44 @@
         "nghiem-pt-hai-an"
       ],
       "question": "Conceptually linked through line graphs; review exact direction before activation."
+    },
+    {
+      "candidate": [
+        "bo-ngoac-dau",
+        "cong-tru-phan-thuc"
+      ],
+      "question": "Likely remediation/cross-topic support, but not universal prerequisite because many rational-expression items contain no leading negative parentheses."
+    },
+    {
+      "candidate": [
+        "hang-tu-dong-dang",
+        "tinh-delta"
+      ],
+      "question": "Do not activate globally. Relevant mainly when coefficients/parameters first require algebraic simplification."
+    },
+    {
+      "candidate": [
+        "bien-doi-pt-nhieu-buoc",
+        "lap-phuong-trinh"
+      ],
+      "question": "Model construction and equation solving are separable learner abilities; evaluate as remediation evidence rather than a universal prerequisite."
     }
-  ]
+  ],
+  "review_evidence": {
+    "task": "KG-REVIEW-001",
+    "verdict": "PASS",
+    "integrated_as": "PASS-WITH-CHANGES",
+    "accepted": [
+      "Downgrade Thales→GG to SEQUENCE",
+      "Keep experimental→classical probability as REMEDIATION bridge",
+      "Add ratio/proportion dependencies for Thales/similarity length",
+      "Add polynomial sign/like-term foundation edges"
+    ],
+    "rejected_or_qualified": [
+      "No unsupported 80%/90% error-rate claims",
+      "hang-tu-dong-dang→tinh-delta is not global Core prerequisite",
+      "Pythagoras is not made a prerequisite for sin/cos/tan definitions; it remains prerequisite/remediation for many solve-for-side workflows"
+    ],
+    "reviewer_note": "Independent review is advisory; repository integration applies item-scope and logical-dependency QA."
+  }
 }
