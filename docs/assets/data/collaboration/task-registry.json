@@ -22,7 +22,8 @@
       "id": "KNTT-MAP-001",
       "title": "Chuẩn hóa mapping KNTT → 25 chuyên đề → skill",
       "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
-      "status": "OPEN"
+      "status": "DONE",
+      "review_notes": "Grades 6-9 KNTT overlays reviewed and integrated; next phase is consolidated prerequisite/unlock knowledge graph."
     },
     {
       "id": "KNTT-MAP-G6-001",
@@ -94,7 +95,7 @@
       "id": "KNTT-MAP-G9-001",
       "title": "Mapping Toán 9 KNTT → Vertical Spine/skill + audit",
       "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
-      "status": "OPEN",
+      "status": "DONE",
       "context_version": "1.0.5",
       "public_task_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G9-001/",
       "relay_packet_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G9-001/",
@@ -103,7 +104,10 @@
         "offline-copy",
         "file-upload"
       ],
-      "task_design": "verified-toc+valid-topic-ids+existing-skill-inventory+vertical-spine-audit+soft-mastery"
+      "task_design": "verified-toc+valid-topic-ids+existing-skill-inventory+vertical-spine-audit+soft-mastery",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/kntt-grade9-map.json",
+      "review_notes": "Strong final grade mapping. Corrected over-exclusion of system-solution geometry/count, broadened Viète Core pending item-level QA, added cot and inequality-property gaps, and kept Topic 22 conclusion limited to the Grade 9 overlay."
     },
     {
       "id": "CONTENT-PILOT-001",
