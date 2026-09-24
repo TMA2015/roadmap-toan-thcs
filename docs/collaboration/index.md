@@ -199,3 +199,8 @@ Không yêu cầu người dùng copy lại cả lịch sử trò chuyện hoặ
 - [Task KNTT-MAP-G6-001](tasks/KNTT-MAP-G6-001.md)
 - [Task KNTT-MAP-G7-001](tasks/KNTT-MAP-G7-001.md)
 - [Task KNTT-MAP-G8-001](tasks/KNTT-MAP-G8-001.md)
+
+
+## Feedback packets
+
+- [KNTT-MAP-G7-001 feedback](feedback/KNTT-MAP-G7-001.md) — phản hồi sau hai lượt Grade 7, dùng để cải thiện task Grade 8 và các vòng sau.
