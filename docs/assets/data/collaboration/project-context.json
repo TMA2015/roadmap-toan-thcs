@@ -1,5 +1,5 @@
 {
-  "version": "1.0.12",
+  "version": "1.0.13",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -179,7 +179,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Integrate mock Tutor Runtime into Practice Engine UI for end-to-end student-facing QA, then design secure runtime transport for optional real providers.",
+    "next_priority": "Deploy and browser-QA mock Tutor UX on real practice pages; then add a controlled learner question box and secure optional provider transport.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -190,7 +190,8 @@
     "remediation_loop": "targeted remediation sessions implemented: 6-question local session or cross-topic focus navigation",
     "recovery_measurement": "tracks prerequisite before/after remediation and later target-skill recheck without claiming causality from one session",
     "ai_tutor_contract": "v1 provider-neutral policy defined; not yet connected to an AI provider",
-    "ai_tutor_adapter": "v1 implemented with mock/local QA adapter and disabled Gemini/OpenAI-compatible transport sockets"
+    "ai_tutor_adapter": "v1 implemented with mock/local QA adapter and disabled Gemini/OpenAI-compatible transport sockets",
+    "ai_tutor_ui": "mock/local Tutor integrated into Practice Engine with HINT/REMEDIATE/CONTINUE student actions; no external AI calls"
   },
   "handoff_required_fields": [
     "TASK_ID",
