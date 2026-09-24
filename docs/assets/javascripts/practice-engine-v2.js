@@ -5,6 +5,7 @@
   const KNOWLEDGE_GRAPH_PATH = "assets/data/curriculum/knowledge-graph-v1.json";
   const DIAGNOSIS_MIN_ATTEMPTS = 3;
   const DIAGNOSIS_WEAK_ACCURACY = 0.75;
+  const REMEDIATION_SESSION_SIZE = 6;
   let knowledgeGraphPromise = null;
 
   const loadStats = () => {
@@ -302,7 +303,7 @@
         this.knowledgeGraph = graph;
         this.renderRemediation();
       });
-      this.startNormalSession();
+      if (!this.applyRequestedFocus()) this.startNormalSession();
     }
 
     renderShell() {
@@ -636,9 +637,48 @@
       this.remediationEl.innerHTML = `
         <strong>🧭 Gợi ý ôn nền tảng</strong>
         <div>Bạn đang gặp khó khăn ở <strong>${targetLabel}</strong>. Dữ liệu hiện tại cho thấy nên ưu tiên ôn: <strong>${weakLabels.join(" → ")}</strong>.</div>
+        <div class="practice-remediation-actions"></div>
         <div class="practice-remediation-note">Đây là gợi ý dựa trên lịch sử làm bài, không phải điều kiện bắt buộc. Bạn vẫn có thể tiếp tục học bình thường.</div>
       `;
+      const actions = this.remediationEl.querySelector(".practice-remediation-actions");
+      diagnosis.candidates.forEach((item) => {
+        const node = this.knowledgeGraph.nodes?.[item.skill];
+        const button = createButton(`Ôn ngay: ${this.prettyTag(item.skill)}`, "practice-btn-secondary");
+        button.addEventListener("click", () => this.startRemediation(item.skill, node?.topic));
+        actions.appendChild(button);
+      });
       this.remediationEl.hidden = false;
+    }
+
+    startRemediation(skill, topic) {
+      if (!skill || !topic) return;
+      if (this.bankSkills.includes(skill)) {
+        const subset = this.questions.filter((question) => questionSkills(question).includes(skill));
+        const pool = weightedQuestionPool(subset, this.stats);
+        const session = pool.slice(0, Math.min(REMEDIATION_SESSION_SIZE, pool.length));
+        if (session.length) {
+          this.setSession(session, "remediation", [skill], `Ôn nền tảng: ${this.prettyTag(skill)} · ${session.length} câu.`);
+          this.root.scrollIntoView({ behavior: "smooth", block: "start" });
+          return;
+        }
+      }
+
+      const siteRoot = siteRootFromPath();
+      const destination = `${siteRoot}/kien-thuc/${topic}/bai-tap/?focus=${encodeURIComponent(skill)}&mode=remediation`;
+      window.location.assign(destination);
+    }
+
+    applyRequestedFocus() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("mode") !== "remediation") return false;
+      const skill = params.get("focus");
+      if (!skill || !this.bankSkills.includes(skill)) return false;
+      const subset = this.questions.filter((question) => questionSkills(question).includes(skill));
+      if (!subset.length) return false;
+      const pool = weightedQuestionPool(subset, this.stats);
+      const session = pool.slice(0, Math.min(REMEDIATION_SESSION_SIZE, pool.length));
+      this.setSession(session, "remediation", [skill], `Ôn nền tảng: ${this.prettyTag(skill)} · ${session.length} câu.`);
+      return true;
     }
 
     renderStats(updatedSkills = []) {
@@ -693,7 +733,8 @@
     renderSummary() {
       const percent = Math.round((this.score / this.session.length) * 100);
       this.progressEl.textContent = `Hoàn thành · ${this.score}/${this.session.length} câu đúng`;
-      if (this.mode === "weak") this.metaEl.textContent = "Kết quả lượt luyện điểm yếu";
+      if (this.mode === "remediation") this.metaEl.textContent = `Kết quả ôn nền tảng · ${this.prettyTag(this.focusSkills[0])}`;
+      else if (this.mode === "weak") this.metaEl.textContent = "Kết quả lượt luyện điểm yếu";
       else if (this.mode === "skill") this.metaEl.textContent = `Kết quả luyện riêng · ${this.prettyTag(this.focusSkills[0])}`;
       else this.metaEl.textContent = "Kết quả lượt luyện tập";
       this.questionEl.textContent = `Bạn đạt ${percent}%.`;
