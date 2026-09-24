@@ -160,3 +160,21 @@
   .practice-diagram-figure { padding: 0.45rem; }
   .practice-diagram-figure img { max-height: 18rem; }
 }
+
+/* Evidence-based remediation recommender */
+.practice-remediation {
+  margin: 1rem 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.5rem;
+  background: var(--md-code-bg-color);
+}
+.practice-remediation > strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+.practice-remediation-note {
+  margin-top: 0.4rem;
+  font-size: 0.85em;
+  opacity: 0.78;
+}
