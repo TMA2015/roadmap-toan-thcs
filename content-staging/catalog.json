@@ -10,5 +10,21 @@
     "published",
     "rejected"
   ],
-  "items": []
+  "items": [
+    {
+      "id": "BENCH-GEO-001",
+      "status": "approved",
+      "kind": "geometry-benchmark",
+      "title": "Hình chữ nhật, trung điểm và giao điểm",
+      "source": "user-example",
+      "files": [
+        "content-staging/benchmarks/geometry-001-rectangle-midpoints.md",
+        "content-staging/benchmarks/geometry-001-rectangle-midpoints.svg"
+      ],
+      "expected": {
+        "area_BMEN": 32
+      },
+      "note": "Benchmark QA nội bộ; chưa mặc định xuất bản vào chương trình."
+    }
+  ]
 }
