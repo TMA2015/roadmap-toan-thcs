@@ -199,6 +199,7 @@ Không yêu cầu người dùng copy lại cả lịch sử trò chuyện hoặ
 - [Task KNTT-MAP-G6-001](tasks/KNTT-MAP-G6-001.md)
 - [Task KNTT-MAP-G7-001](tasks/KNTT-MAP-G7-001.md)
 - [Task KNTT-MAP-G8-001](tasks/KNTT-MAP-G8-001.md)
+- [Task KNTT-MAP-G9-001](tasks/KNTT-MAP-G9-001.md)
 
 
 ## Feedback packets
