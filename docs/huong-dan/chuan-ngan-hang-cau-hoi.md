@@ -385,3 +385,17 @@ Khi xây câu hỏi mới, luôn xác định câu hỏi thuộc một trong ba 
 3. **Chuyên / Challenge** – mở rộng cho học sinh khá giỏi; tuyệt đối không biến thành điều kiện bắt buộc để hoàn thành Roadmap.
 
 Một câu có thể vừa là KNTT Core vừa có giá trị cho Vào 10. Tuy nhiên **Toán chuyên luôn là lớp mở rộng**, không được gộp vào Core chỉ vì cùng sử dụng kiến thức nền.
+
+
+## 17. Learner Evidence → Remediation
+
+Practice Engine có thể dùng Knowledge Graph để đề nghị ôn kiến thức nền, nhưng phải tuân thủ:
+
+1. Không chẩn đoán từ một câu sai đơn lẻ.
+2. Skill đích chỉ được xem là yếu khi có ít nhất **3 lượt** và accuracy dưới **75%**.
+3. Chỉ gọi một prerequisite là điểm yếu khi prerequisite đó cũng có ít nhất **3 lượt** evidence.
+4. Nếu prerequisite chưa đủ evidence, hệ thống không được khẳng định đó là nguyên nhân.
+5. Hint usage là evidence bổ sung; accuracy vẫn giữ tương thích với dữ liệu cũ.
+6. Recommendation không phải hard gate: học sinh luôn có thể tiếp tục.
+7. Chỉ edge `PREREQUISITE` confidence cao và remediation rule đã review mới được dùng cho chẩn đoán tự động; `SEQUENCE`/`CROSS_LINK` không được coi là nguyên nhân mặc định.
+8. Chẩn đoán chạy local, không yêu cầu AI/API.
