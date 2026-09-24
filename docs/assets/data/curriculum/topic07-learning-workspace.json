@@ -1,0 +1,192 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "07-phan-thuc-dai-so",
+  "title": "Phân thức đại số",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only five Core cards contribute to KNTT Grade 8 Core completion. Entrance10 and Challenge never gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "pt07-core-1",
+      "order": 1,
+      "title": "Khái niệm & điều kiện xác định",
+      "kntt_lessons": [
+        "Bài 21"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "khai-niem-phan-thuc",
+        "dieu-kien-xac-dinh"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "nhan-biet-phan-thuc",
+        "dkxd-hang-dang-thuc",
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "misconceptions": [
+        "dkxd-sai-doi-tuong"
+      ]
+    },
+    {
+      "id": "pt07-core-2",
+      "order": 2,
+      "title": "Tính chất cơ bản & rút gọn",
+      "kntt_lessons": [
+        "Bài 22"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "doi-dau-phan-thuc",
+        "phan-tich-tu-mau",
+        "rut-gon-phan-thuc"
+      ],
+      "prerequisites": [
+        "nhan-tu-chung",
+        "hieu-hai-binh-phuong"
+      ],
+      "micro_practice": [
+        "rut-gon-don-thuc",
+        "rut-gon-hang-dang-thuc",
+        "doi-dau-mau"
+      ],
+      "misconceptions": [
+        "triet-tieu-hang-tu",
+        "doi-dau-khong-day-du"
+      ]
+    },
+    {
+      "id": "pt07-core-3",
+      "order": 3,
+      "title": "Quy đồng mẫu thức",
+      "kntt_lessons": [
+        "Bài 22"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "prerequisites": [
+        "phan-tich-tu-mau"
+      ],
+      "micro_practice": [
+        "chon-mtc",
+        "tim-nhan-tu-phu",
+        "quy-dong"
+      ],
+      "misconceptions": [
+        "mtc-chua-toi-uu",
+        "quen-nhan-tu-phu"
+      ]
+    },
+    {
+      "id": "pt07-core-4",
+      "order": 4,
+      "title": "Phép cộng & phép trừ",
+      "kntt_lessons": [
+        "Bài 23"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "cong-tru-phan-thuc"
+      ],
+      "prerequisites": [
+        "quy-dong-mau-thuc",
+        "bo-ngoac-dau",
+        "cong-tru-da-thuc"
+      ],
+      "micro_practice": [
+        "cong-cung-mau",
+        "tru-khac-mau",
+        "rut-gon-sau-cong-tru"
+      ],
+      "misconceptions": [
+        "tru-khong-doi-dau-tu-thuc"
+      ]
+    },
+    {
+      "id": "pt07-core-5",
+      "order": 5,
+      "title": "Phép nhân & phép chia",
+      "kntt_lessons": [
+        "Bài 24"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-chia-phan-thuc"
+      ],
+      "prerequisites": [
+        "phan-tich-tu-mau",
+        "rut-gon-phan-thuc"
+      ],
+      "micro_practice": [
+        "nhan-phan-thuc",
+        "chia-phan-thuc",
+        "rut-gon-tich-thuong"
+      ],
+      "misconceptions": [
+        "chia-khong-nghich-dao",
+        "quen-dieu-kien-so-chia"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "pt07-ent10-1",
+      "layer": "Entrance10",
+      "title": "Biểu thức hữu tỉ nhiều bước",
+      "gates_core": false
+    },
+    {
+      "id": "pt07-ent10-2",
+      "layer": "Entrance10",
+      "title": "Tính giá trị sau rút gọn & bài toán tổng hợp",
+      "gates_core": false
+    },
+    {
+      "id": "pt07-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Giá trị nguyên / chia có dư",
+      "gates_core": false
+    },
+    {
+      "id": "pt07-challenge-2",
+      "layer": "Specialized-Challenge",
+      "title": "GTLN / GTNN phân thức khi phù hợp",
+      "gates_core": false
+    }
+  ],
+  "misconception_registry": {
+    "triet-tieu-hang-tu": {
+      "symptom": "Triệt tiêu hạng tử qua dấu cộng/trừ thay vì nhân tử.",
+      "remediation": [
+        "nhan-tu-chung"
+      ]
+    },
+    "tru-khong-doi-dau-tu-thuc": {
+      "symptom": "Dấu trừ trước phân thức/ngoặc không đổi dấu toàn bộ tử thức.",
+      "remediation": [
+        "bo-ngoac-dau"
+      ]
+    },
+    "dkxd-sai-doi-tuong": {
+      "symptom": "Cho tử bằng 0 hoặc bỏ sót mẫu thức khi tìm điều kiện xác định.",
+      "remediation": [
+        "dieu-kien-xac-dinh"
+      ]
+    },
+    "doi-dau-khong-day-du": {
+      "symptom": "Đổi dấu mẫu nhưng không đổi dấu tương ứng của tử/phân thức.",
+      "remediation": [
+        "doi-dau-phan-thuc"
+      ]
+    }
+  },
+  "qa_notes": [
+    "KNTT Bài 21 includes value of a rational expression at an allowed variable value.",
+    "KNTT Bài 23 includes addition/subtraction of multiple rational expressions and use of addition properties / bracket rule.",
+    "KNTT Bài 24 includes multiplication properties in addition to multiplication/division rules.",
+    "Do not encode every pedagogical sequence as a causal Knowledge Graph prerequisite."
+  ]
+}

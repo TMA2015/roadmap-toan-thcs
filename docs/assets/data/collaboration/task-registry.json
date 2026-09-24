@@ -191,6 +191,14 @@
       "status": "DONE",
       "review_verdict": "QA-READY",
       "review_notes": "Student-facing local mock Tutor supports HINT/REMEDIATE/CONTINUE; preserves question-bank hints and soft mastery; no network/provider calls."
+    },
+    {
+      "id": "TOPIC07-CORE-CARDS-001",
+      "title": "Refine CĐ07 into five KNTT Core learning cards",
+      "routing": "CHATGPT_LEAD_GEMINI_REVIEW",
+      "status": "DONE",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "review_notes": "Accepted five-card Core structure and misconception metadata. Qualified overly absolute dependency language; preserved KNTT B21 value evaluation, B23 multi-expression addition/subtraction, and B24 multiplication properties. Extension does not gate Core."
     }
   ]
 }
