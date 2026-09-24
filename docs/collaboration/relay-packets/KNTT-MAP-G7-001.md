@@ -5,7 +5,7 @@
 ## PROJECT CONTEXT
 
 - Project: Roadmap Toán THCS
-- Context version: 1.0.2
+- Context version: 1.0.3
 - Primary textbook: Kết nối tri thức
 - Architecture: 25 chuyên đề cố định
 - Layers:
@@ -15,6 +15,14 @@
 - Gemini role: pedagogical/academic lead for drafting and review
 - ChatGPT role: repository/schema/technical integration + cross-check
 - High-risk geometry/specialized problems: dual independent review
+
+## VERTICAL SPINE — PRIMARY ARCHITECTURE
+
+- 25 chuyên đề là mạch kiến thức dọc xuyên suốt lớp 6-9.
+- Mapping lớp 7 chỉ là **overlay/index** để đồng bộ với SGK.
+- Không tạo cây kiến thức lớp 7 riêng.
+- Với mỗi nhóm bài, cố gắng xác định: prerequisite từ trước → skill hiện tại → downstream use.
+- Học sinh phải có khả năng lần ngược lỗ hổng và nhìn thấy kiến thức sẽ dùng tiếp ở đâu.
 
 ## HARD RULES
 
@@ -262,7 +270,7 @@ Với từng bài/nhóm bài trong mục lục đã cho, hãy xác định:
 
 ```text
 TASK_ID: KNTT-MAP-G7-001
-CONTEXT_VERSION: 1.0.2
+CONTEXT_VERSION: 1.0.3
 ROLE: author
 LAYER: KNTT-Core
 TOPIC: Grade 7 mapping
@@ -271,7 +279,7 @@ VERDICT:
 PASS / PASS-WITH-CHANGES / BLOCKED
 
 A. COVERAGE TABLE
-| KNTT chapter | Lesson/group | Core knowledge | Roadmap topic ID(s) | Relation | Proposed skills | Existing/proposed | Notes |
+| KNTT chapter | Lesson/group | Core knowledge | Roadmap topic ID(s) | Relation | Proposed skills | Existing/proposed | Upstream prerequisites | Downstream use | Notes |
 
 B. POSSIBLE GAPS
 1. ...

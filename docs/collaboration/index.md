@@ -2,6 +2,14 @@
 
 > Trang này là **điểm giao tiếp chung** cho dự án Roadmap Toán THCS khi phối hợp giữa phụ huynh/người quản lý dự án, Gemini và ChatGPT.
 
+## Triết lý kiến trúc
+
+**25 chuyên đề là Vertical Spine xuyên suốt lớp 6–9.** KNTT theo lớp/chương/bài chỉ là lớp mapping để định vị cùng một skill trên mạch kiến thức. Mọi task curriculum phải giữ được khả năng truy nguyên:
+
+`prerequisite → skill hiện tại → downstream use`
+
+[Xem triết lý mạch kiến thức dọc](../roadmap/triet-ly-mach-kien-thuc-doc.md)
+
 ## Mục tiêu
 
 Dự án không dùng một AI như “nguồn chân lý duy nhất”. Mỗi thành viên có một vai trò khác nhau:

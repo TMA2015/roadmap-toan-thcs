@@ -1,14 +1,18 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
     "name": "Roadmap Toán THCS",
     "public_site": "https://tma2015.github.io/roadmap-toan-thcs/",
     "repository": "TMA2015/roadmap-toan-thcs",
-    "purpose": "Hệ thống tự học Toán THCS lớp 6-9, bám Kết nối tri thức, hỗ trợ luyện tập, ôn thi vào 10 và mở rộng Challenge/thi chuyên."
+    "purpose": "Hệ thống tự học Toán THCS theo mạch kiến thức dọc xuyên suốt lớp 6-9; 25 chuyên đề là Vertical Spine, KNTT là lớp mapping/định vị, đồng thời hỗ trợ luyện tập, ôn thi vào 10 và mở rộng Challenge/thi chuyên."
   },
   "source_of_truth": [
+    {
+      "name": "Triết lý mạch kiến thức dọc",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/triet-ly-mach-kien-thuc-doc/"
+    },
     {
       "name": "Blueprint 25 chuyên đề",
       "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/blueprint-25-chuyen-de/"
@@ -69,7 +73,13 @@
       "hint-usage tracking"
     ],
     "content_pipeline": "content-staging -> academic QA -> technical QA -> visual QA -> approved -> published",
-    "geometry_policy": "SVG-first from verified diagram spec; semantic QA required for core geometric relations."
+    "geometry_policy": "SVG-first from verified diagram spec; semantic QA required for core geometric relations.",
+    "vertical_spine": {
+      "primary": true,
+      "topics": 25,
+      "data_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/vertical-spine.json",
+      "rule": "Grade/book mappings are overlays on the same knowledge graph, not separate hierarchies."
+    }
   },
   "roles": {
     "project_owner": {
@@ -135,7 +145,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Run source-verified KNTT Grade 7 mapping, then review/integrate before preparing Grades 8–9.",
+    "next_priority": "Complete KNTT Grade 7 mapping as an overlay on the Vertical Spine; then enrich skill prerequisite/unlock metadata before Grades 8-9.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata"
   },
   "handoff_required_fields": [
@@ -151,7 +161,8 @@
     "An AI-generated draft is not source of truth.",
     "Difficulty is not the same as curriculum layer.",
     "A visually plausible geometry diagram is not necessarily geometrically valid.",
-    "Exam frequency claims require evidence from an exam corpus."
+    "Exam frequency claims require evidence from an exam corpus.",
+    "A grade mapping is an index over the Vertical Spine, not a separate curriculum tree."
   ],
   "collaboration": {
     "hub_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/",

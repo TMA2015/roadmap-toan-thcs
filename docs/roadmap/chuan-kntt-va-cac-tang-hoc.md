@@ -2,11 +2,17 @@
 
 > Tài liệu này quy định cách Roadmap Toán THCS tổ chức nội dung từ năm học 2026–2027: **Kết nối tri thức** là bộ sách giáo khoa chuẩn chính; ôn thi vào 10 và thi chuyên là các tầng mục tiêu được xây trên cùng nền kiến thức nhưng không trộn lẫn.
 
-## 1. Ba tầng nội dung
+## 1. Vertical Spine trước, metadata sau
+
+Roadmap không ưu tiên một **khối lớp** làm cấu trúc chính. Xương sống là mạch kiến thức dọc của 25 chuyên đề.
+
+KNTT, Vào 10 và Chuyên/Challenge là các **lớp metadata/mục tiêu** đặt lên cùng hệ thống kiến thức để học sinh có thể nhìn nội dung theo tiến độ trường học, mục tiêu thi cử hoặc mở rộng.
+
+[Xem triết lý mạch kiến thức dọc](triet-ly-mach-kien-thuc-doc.md)
 
 ### 📘 KNTT Core
 
-Đây là tầng bắt buộc và được ưu tiên cao nhất.
+Đây là lớp metadata xác nhận kiến thức/kỹ năng cốt lõi theo Kết nối tri thức.
 
 - Bám kiến thức và yêu cầu học tập của bộ **Kết nối tri thức**.
 - Dùng để xây nền Toán THCS lớp 6–9.
@@ -32,14 +38,14 @@
 
 ## 2. Bốn lối học trên website
 
-Roadmap hướng tới bốn cách truy cập cùng một kho kiến thức:
+Roadmap hướng tới bốn cách truy cập **cùng một đồ thị kiến thức**:
 
-1. **Học theo KNTT** – đi theo lớp/chương/bài và yêu cầu cốt lõi.
-2. **Học theo Roadmap 25 chuyên đề** – đi theo quan hệ kiến thức trước → sau.
-3. **Ôn thi vào 10** – lọc theo dạng bài, trọng số và đề tổng hợp.
-4. **Chuyên / Challenge** – chỉ hiện khi người học chủ động chọn phần mở rộng.
+1. **Học theo Roadmap 25 chuyên đề** – đi theo quan hệ prerequisite → skill hiện tại → knowledge-next.
+2. **Học theo KNTT** – định vị cùng skill theo lớp/chương/bài đang học ở trường.
+3. **Ôn thi vào 10** – lọc các skill/topic hiện hữu theo mức liên quan thi cử và dạng bài.
+4. **Chuyên / Challenge** – mở nhánh tự chọn từ Core.
 
-Các lối học không tạo bốn bộ nội dung tách rời; chúng chỉ là bốn cách nhìn vào cùng hệ thống dữ liệu.
+Không lối nào tạo một bộ nội dung riêng. KNTT mapping đặc biệt chỉ là **index/overlay**, không kéo kiến trúc website về bốn cây lớp 6–9.
 
 ## 3. Quy tắc dữ liệu câu hỏi
 
