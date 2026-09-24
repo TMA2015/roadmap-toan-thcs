@@ -135,6 +135,15 @@
       "review_verdict": "FOUNDATION-READY",
       "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/knowledge-graph-v1.json",
       "review_notes": "Activated only high-confidence dependencies; uncertain associations remain in review_queue. Includes soft remediation rules and no hard gates."
+    },
+    {
+      "id": "KG-REVIEW-001",
+      "title": "Independent prerequisite/remediation audit",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "source_verdict": "PASS",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/knowledge-graph-v1.json"
     }
   ]
 }
