@@ -2,6 +2,7 @@
 "use strict";
 const PATH="/kien-thuc/07-phan-thuc-dai-so/";
 const STORAGE="toan-thcs-practice-v1";
+const CARD_DATA="assets/data/curriculum/topic07-learning-workspace.json";
 const sections=[
  ["map","🗺️ Bản đồ","1. Bản đồ kiến thức"],
  ["goals","🎯 Mục tiêu","2. Mục tiêu cần đạt"],
@@ -38,6 +39,26 @@ const wrapSection=(heading,id,index)=>{
    const next=node.nextSibling;body.appendChild(node);node=next;
  }
 };
+const renderCoreCards=async(hero)=>{
+ try{
+  const url=new URL(CARD_DATA,document.baseURI);
+  const res=await fetch(url);if(!res.ok)return;
+  const data=await res.json();
+  const host=document.createElement("section");host.className="topic-core-journey";host.id="core-journey";
+  host.innerHTML='<div class="topic-core-journey-head"><div><span class="topic-workspace-kicker">KNTT Core · 5 chặng học</span><h2>Học theo chặng, không theo trang dài</h2></div><span class="topic-chip">Core độc lập Extension</span></div>';
+  const grid=document.createElement("div");grid.className="topic-core-card-grid";
+  data.cards.forEach((card,i)=>{
+    const el=document.createElement("article");el.className="topic-core-card";
+    const pre=card.prerequisites.length?`<div class="topic-core-prereq">Nền tảng: ${card.prerequisites.map(x=>x.replaceAll("-"," ")).join(" · ")}</div>`:"";
+    el.innerHTML=`<div class="topic-core-card-number">${i+1}</div><div><div class="topic-core-card-lesson">${card.kntt_lessons.join(" · ")}</div><h3>${card.title}</h3>${pre}<div class="topic-core-card-meta">${card.skills.length} skill · 3 micro-practice · ${card.misconceptions.length} bẫy sai</div></div>`;
+    grid.appendChild(el);
+  });
+  host.appendChild(grid);
+  const ext=document.createElement("details");ext.className="topic-extension-zone";ext.innerHTML='<summary>🚀 Entrance10 / Challenge <span>không tính vào hoàn thành KNTT Core</span></summary><div class="topic-extension-list">'+data.extensions.map(x=>`<span class="topic-chip">${x.layer}: ${x.title}</span>`).join("")+"</div>";
+  host.appendChild(ext);hero.after(host);
+ }catch(_){}
+};
+
 const init=()=>{
  if(!location.pathname.includes(PATH) || /\/bai-tap\/?$|\/tu-kiem-tra\/?$/.test(location.pathname))return;
  const content=document.querySelector(".md-content__inner");if(!content)return;
@@ -48,6 +69,7 @@ const init=()=>{
  h1.replaceWith(hero);
  const nav=document.createElement("nav");nav.className="topic-workspace-nav";nav.innerHTML='<div class="topic-workspace-nav-title">Đi nhanh trong chuyên đề</div><div class="topic-workspace-nav-list">'+sections.map(([id,label])=>`<a href="#${id}">${label}</a>`).join("")+"</div>";
  hero.after(nav);
+ renderCoreCards(hero);
  sections.forEach(([id,,label],i)=>{const h=findHeading(label);if(h)wrapSection(h,id,i)});
  const links=[...nav.querySelectorAll("a")];
  const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle("is-active",a.getAttribute("href")==="#"+e.target.id))}}),{rootMargin:"-25% 0px -65% 0px"});
