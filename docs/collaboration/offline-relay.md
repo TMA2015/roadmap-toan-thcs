@@ -25,6 +25,7 @@ Hai chế độ phải cho cùng một task ID và cùng output contract.
 ## Packet hiện có
 
 - [KNTT-MAP-G6-001](relay-packets/KNTT-MAP-G6-001.md)
+- [KNTT-MAP-G7-001](relay-packets/KNTT-MAP-G7-001.md)
 
 ## Nguyên tắc kích thước
 
