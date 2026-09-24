@@ -130,7 +130,7 @@
 **Integrator/Reviewer:** ChatGPT  
 **Layer:** KNTT-Core  
 **Scope:** Toán 7 – Kết nối tri thức  
-**Context version:** 1.0.2
+**Context version:** 1.0.3
 
 ## 1. Mục tiêu
 
@@ -138,7 +138,21 @@ Rà soát **Toán 7 – Kết nối tri thức** và lập mapping vào **25 chu
 
 Đây là task **mapping/audit**, không phải task thiết kế lại Roadmap.
 
-## 2. Bài học từ task lớp 6
+## 2. Nguyên tắc Vertical Spine
+
+Task này chỉ tạo **mapping/index cho lớp 7 trên cùng mạch kiến thức dọc 25 chuyên đề**.
+
+Không được:
+- tạo một cây kiến thức lớp 7 độc lập;
+- coi ranh giới lớp 7 là ranh giới của một chuyên đề;
+- làm mất liên kết prerequisite từ lớp trước hoặc knowledge-next sang lớp sau.
+
+Với mỗi nhóm bài, ngoài mapping theo lớp, hãy cố gắng chỉ ra:
+- kiến thức nền đã có từ lớp trước;
+- skill được mở rộng ở đây;
+- skill/chuyên đề nào sẽ dùng tiếp sau này.
+
+## 3. Bài học từ task lớp 6
 
 Ở task lớp 6, coverage theo nhóm kiến thức khá tốt nhưng có hai lỗi hệ thống:
 - nhớ sai số/tên chương;
@@ -209,7 +223,7 @@ Task lớp 7 loại bỏ hai nguồn lỗi đó bằng cách:
 
 **Hoạt động trải nghiệm đáng chú ý:** GeoGebra; Dân số và cơ cấu dân số Việt Nam; Đại lượng tỉ lệ trong đời sống; Hộp quà và chân đế lịch để bàn.
 
-## 3. Topic ID hợp lệ
+## 4. Topic ID hợp lệ
 
 Chỉ dùng một hoặc nhiều ID sau. **Không tự tạo ID mới**:
 
@@ -241,7 +255,7 @@ Chỉ dùng một hoặc nhiều ID sau. **Không tự tạo ID mới**:
 25-tong-hop-on-thi-10
 ```
 
-## 4. Nhiệm vụ
+## 5. Nhiệm vụ
 
 Với từng bài/nhóm bài trong mục lục đã cho, hãy xác định:
 
@@ -257,7 +271,7 @@ Với từng bài/nhóm bài trong mục lục đã cho, hãy xác định:
 - overreach nếu một bank có nội dung lớp sau nhưng dễ bị hiểu nhầm là Grade 7 Core;
 - cross-link cần thêm.
 
-## 5. Quy tắc học thuật
+## 6. Quy tắc học thuật
 
 - Mục lục ở trên là **input đã xác minh**, không sửa số chương/tên bài trừ khi phát hiện mâu thuẫn và ghi rõ bằng chứng.
 - Không trộn thi chuyên vào Core.
@@ -266,7 +280,7 @@ Với từng bài/nhóm bài trong mục lục đã cho, hãy xác định:
 - Với xác suất, dùng đúng mức khái niệm của lớp 7; không tự kéo nội dung lớp sau vào.
 - Với hình học, phân biệt kiến thức định nghĩa/tính chất với kỹ năng chứng minh.
 
-## 6. Output format
+## 7. Output format
 
 ```text
 TASK_ID: KNTT-MAP-G7-001
@@ -302,7 +316,7 @@ G. RECOMMENDED NEXT STEP
 ...
 ```
 
-## 7. Tiêu chí hoàn thành
+## 8. Tiêu chí hoàn thành
 
 - phủ đủ 10 chương;
 - chỉ dùng topic ID hợp lệ;
@@ -312,7 +326,7 @@ G. RECOMMENDED NEXT STEP
 - nêu gap/overreach/cross-link;
 - mọi điểm không chắc phải ghi rõ.
 
-## 8. Sau khi Gemini trả lời
+## 9. Sau khi Gemini trả lời
 
 ChatGPT sẽ:
 1. đối chiếu repository;
