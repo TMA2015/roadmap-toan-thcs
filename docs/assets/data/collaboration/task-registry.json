@@ -45,7 +45,7 @@
       "id": "KNTT-MAP-G7-001",
       "title": "Mapping Toán 7 KNTT → 25 chuyên đề/skill",
       "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
-      "status": "OPEN",
+      "status": "DONE",
       "context_version": "1.0.3",
       "public_task_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G7-001/",
       "relay_packet_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G7-001/",
@@ -54,7 +54,10 @@
         "offline-copy",
         "file-upload"
       ],
-      "task_design": "source-verified-toc+valid-topic-id-whitelist+vertical-spine-traceability"
+      "task_design": "source-verified-toc+valid-topic-id-whitelist+vertical-spine-traceability",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/kntt-grade7-map.json",
+      "review_notes": "Coverage and topic IDs improved; corrected Chapter 10 PRIMARY mapping to topic 20, normalized many already-existing skills, and added Vertical Spine upstream/downstream metadata."
     },
     {
       "id": "CONTENT-PILOT-001",
