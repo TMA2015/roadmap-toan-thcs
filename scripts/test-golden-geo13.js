@@ -11,7 +11,7 @@ if(w.cards?.length!==5)errors.push("CĐ13: expected 5 cards");
 if(m.question_count!==15||m.questions?.length!==15)errors.push("CĐ13: expected 15 micro");
 const by=new Map(m.questions.map(q=>[q.id,q]));
 for(const c of w.cards){const qs=c.micro_practice.map(id=>by.get(id)).filter(Boolean);if(qs.length!==3||qs.map(q=>q.micro_role).join(",")!=="base,trap,apply")errors.push(c.id+": micro roles");}
-for(const q of m.questions){if(q.tags?.skill?.length!==1)errors.push(q.id+": exactly one skill");if(q.options?.length!==4||new Set(q.options).size!==4||!q.explanation||(q.hints||[]).length<2)errors.push(q.id+": micro quality");}
+for(const q of m.questions){if(q.tags?.skill?.length!==1)errors.push(q.id+": exactly one skill");if(q.options?.length!==4||new Set(q.options).size!==4||!q.explanation||(q.hints||[]).length<2)errors.push(q.id+": micro quality");for(const [i] of Object.entries(q.option_evidence||{}))if(Number(i)===q.answer)errors.push(q.id+": signal attached to correct option");}
 if(a.items?.length!==10||a.items.some(q=>q.type!=="mcq"||q.options?.length!==4||new Set(q.options).size!==4))errors.push("CĐ13: readiness");
 if(a.policy?.feedback!=="after_submit"||a.policy?.hints!==false||a.policy?.tutor!==false||a.policy?.hard_gate!==false)errors.push("CĐ13: readiness policy");
 if((p.match(/^####\s+13-WR-\d+/gm)||[]).length<8||!/Core-Support/.test(p)||!/Entrance10/.test(p)||!/Challenge/.test(p)||!/\?\?\?\s+example\s+"Xem lời giải"/.test(p))errors.push("CĐ13: Practice Room structure");
