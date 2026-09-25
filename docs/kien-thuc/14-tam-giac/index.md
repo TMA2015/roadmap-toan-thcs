@@ -55,7 +55,7 @@ TAM GIÁC
 #### 1. Tam giác cân
 
 <p align="center">
-  <img src="../../assets/geometry/14/14-tam-giac-can.svg" alt="Minh họa tam giác cân" width="520">
+  <img src="../../assets/geometry/14/14-tam-giac-can-v1.svg" alt="Minh họa tam giác cân" width="520">
 </p>
 
 > Trong tam giác cân, hai góc ở đáy bằng nhau. Đặc biệt, **đường trung tuyến kẻ từ đỉnh cân xuống đáy** đồng thời là đường cao và đường phân giác của góc ở đỉnh.
@@ -63,7 +63,7 @@ TAM GIÁC
 #### 2. Định lý Pythagore
 
 <p align="center">
-  <img src="../../assets/geometry/14/14-pythagore.svg" alt="Minh họa định lý Pythagore" width="540">
+  <img src="../../assets/geometry/14/14-pythagore-v1.svg" alt="Minh họa định lý Pythagore" width="540">
 </p>
 
 > Với tam giác `ABC` vuông tại `A`, cạnh huyền là `BC` và định lý Pythagore cho: `BC² = AB² + AC²`.

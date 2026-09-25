@@ -44,7 +44,7 @@ Mạch tư duy trọng tâm:
 ### 1. Định lý Thales trong tam giác
 
 <p align="center">
-  <img src="../../assets/geometry/17/17-thales.svg"
+  <img src="../../assets/geometry/17/17-thales-v1.svg"
        alt="Minh họa định lý Thales trong tam giác"
        width="500">
 </p>
@@ -64,7 +64,7 @@ Ngoài ra:
 ### 2. Đường trung bình trong tam giác
 
 <p align="center">
-  <img src="../../assets/geometry/17/17-duong-trung-binh.svg"
+  <img src="../../assets/geometry/17/17-duong-trung-binh-v1.svg"
        alt="Minh họa đường trung bình trong tam giác"
        width="500">
 </p>
@@ -86,7 +86,7 @@ và:
 ### 3. Tam giác đồng dạng
 
 <p align="center">
-  <img src="../../assets/geometry/17/17-tam-giac-dong-dang.svg"
+  <img src="../../assets/geometry/17/17-tam-giac-dong-dang-v1.svg"
        alt="Minh họa hai tam giác đồng dạng"
        width="520">
 </p>
