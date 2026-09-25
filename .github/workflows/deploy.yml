@@ -51,6 +51,9 @@ jobs:
       - name: Run Golden Geometry CĐ13 QA
         run: node scripts/test-golden-geo13.js
 
+      - name: Build CĐ13 Gemini review bundle
+        run: node scripts/build-gemini-geo13-review.js docs/assets/data/collaboration/exports/gemini-geo13-review.json
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 
