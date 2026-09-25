@@ -290,3 +290,23 @@ body{letter-spacing:-.008em}
 .lesson-reading-bar span{display:block;background:linear-gradient(90deg,#25b7a0,#385bc5);height:100%;width:0;transition:width .12s linear}
 @media(max-width:40rem){.lesson-switcher-top{padding:.47rem .58rem}.lesson-switcher-steps a{font-size:.59rem;min-height:2rem;padding:.3rem .12rem}.library-search-row{flex-wrap:wrap}.library-search-row>span{margin-left:auto}}
 @media(prefers-reduced-motion:reduce){.lesson-reading-bar span{transition:none}}
+
+
+/* Optional desktop reading focus: the site-wide menu remains visible and one button restores both sidebars. */
+.lesson-switcher-controls{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:.55rem}
+.lesson-focus-toggle{appearance:none;min-height:1.65rem;padding:.28rem .55rem;border:1px solid var(--roadmap-line);border-radius:.45rem;background:var(--roadmap-surface);font:inherit;font-weight:760;font-size:.61rem;line-height:1.3;color:var(--roadmap-indigo);cursor:pointer;white-space:nowrap}
+.lesson-focus-toggle:hover{border-color:var(--roadmap-indigo)}
+.lesson-focus-toggle[aria-pressed="true"]{background:var(--roadmap-indigo);border-color:var(--roadmap-indigo);color:var(--roadmap-surface)}
+.lesson-focus-toggle:focus-visible{outline:3px solid #5270db;outline-offset:2px}
+.lesson-progress-note{display:inline-flex;gap:.3rem;align-items:center;color:var(--roadmap-muted);font-size:.64rem;margin:.3rem 0 .5rem}
+@media(min-width:76.25rem){
+  body.roadmap-focus-mode .md-sidebar--primary,
+  body.roadmap-focus-mode .md-sidebar--secondary{display:none!important}
+  body.roadmap-focus-mode .md-main__inner{max-width:88rem}
+  body.roadmap-focus-mode .md-content{flex:1 1 auto;min-width:0;width:100%;max-width:69rem;margin:0 auto}
+  body.roadmap-focus-mode .md-content__inner{max-width:66rem;margin:0 auto}
+  body.roadmap-focus-mode .topic-workspace-hero{padding:1.45rem 1.6rem}
+  body.roadmap-focus-mode .md-content__inner>.md-typeset{line-height:1.8}
+}
+@media(max-width:76.24rem){.lesson-focus-toggle{display:none}}
+@media(max-width:29rem){.lesson-switcher-controls{gap:.25rem}.lesson-switcher-topic{font-size:.55rem}}

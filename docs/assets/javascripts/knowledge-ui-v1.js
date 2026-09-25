@@ -59,7 +59,32 @@
     const topic = document.createElement("span");
     topic.className = "lesson-switcher-topic";
     topic.textContent = "CHUYÊN ĐỀ " + m[1].slice(0, 2) + " / 25";
-    headingRow.append(back, topic);
+    const controls = document.createElement("div");
+    controls.className = "lesson-switcher-controls";
+    controls.appendChild(topic);
+    const focusButton = document.createElement("button");
+    focusButton.type = "button";
+    focusButton.className = "lesson-focus-toggle";
+    focusButton.setAttribute("aria-label", "Bật chế độ đọc tập trung, ẩn hai cột mục lục");
+    const focusKey = "roadmap.ui.focus.v1";
+    const readFocus = () => { try { return localStorage.getItem(focusKey) === "1"; } catch (_) { return false; } };
+    const storeFocus = (enabled) => { try { localStorage.setItem(focusKey, enabled ? "1" : "0"); } catch (_) { /* Browsing without storage remains usable. */ } };
+    const updateFocus = (enabled) => {
+      document.body.classList.toggle("roadmap-focus-mode", enabled);
+      focusButton.setAttribute("aria-pressed", String(enabled));
+      focusButton.textContent = enabled ? "↩ Hiện mục lục" : "⛶ Đọc tập trung";
+      focusButton.setAttribute("aria-label", enabled
+        ? "Thoát chế độ đọc tập trung và hiện hai cột mục lục"
+        : "Bật chế độ đọc tập trung, ẩn hai cột mục lục");
+    };
+    focusButton.addEventListener("click", () => {
+      const next = !document.body.classList.contains("roadmap-focus-mode");
+      updateFocus(next);
+      storeFocus(next);
+    });
+    updateFocus(readFocus());
+    controls.appendChild(focusButton);
+    headingRow.append(back, controls);
     const nav = document.createElement("nav");
     nav.className = "lesson-switcher-steps";
     nav.setAttribute("aria-label", "Chuyển giữa bài học, luyện tập và tự kiểm tra");
@@ -102,7 +127,11 @@
     const first = host.querySelector(".topic-workspace-hero, h1");
     host.insertBefore(block, first);
   };
-  const init = () => { setupLibrary(); setupLesson(); };
+  const init = () => {
+    if (!/\\/kien-thuc\\/\\d{2}-[^/]+\\//.test(location.pathname)) document.body.classList.remove("roadmap-focus-mode");
+    setupLibrary();
+    setupLesson();
+  };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
   if (typeof document$ !== "undefined") document$.subscribe(init);

@@ -11,4 +11,6 @@ assert(script.includes('setupLibrary()')&&script.includes('setupLesson()'),"page
 assert(css.includes(".library-search")&&css.includes(".lesson-switcher-steps"),"visual styles");
 assert(yml.includes("knowledge-ui-v1.js"),"script loaded");
 assert((library.match(/class="library-topic-tile"/g)||[]).length===25,"all 25 directory destinations preserved");
+assert(script.includes("roadmap.ui.focus.v1")&&script.includes("aria-pressed")&&script.includes("updateFocus(readFocus())"),"focus persistence and state");
+assert(css.includes("body.roadmap-focus-mode .md-sidebar--primary")&&css.includes("body.roadmap-focus-mode .md-sidebar--secondary"),"focus sidebars");
 console.log("PASS: 25-topic finder, shared lesson route, scroll-position bar, no learning-data writes.");
