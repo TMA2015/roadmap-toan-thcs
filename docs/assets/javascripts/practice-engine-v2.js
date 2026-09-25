@@ -312,6 +312,7 @@
       this.hintLevel = 0;
       this.fullSolutionViewed = false;
       this.hintButton = null;
+      this.geminiPending = false;
       this.mode = "normal";
       this.focusSkills = [];
       this.renderShell();
@@ -663,11 +664,10 @@
       if (!window.RoadmapGemini?.isConfigured() || !window.RoadmapTutor || this.currentQuestion()?.id !== question?.id) return;
       const skills = questionSkills(question), skill = skills[0];
       if (!skill) return;
-      // Every pre-answer AI help counts as assisted; a complete solution is separately recorded.
-      if (!this.answered) {
-        this.hintLevel = Math.max(1, this.hintLevel);
-        if (mode === "FULL_SOLUTION") this.fullSolutionViewed = true;
-      }
+      // Count AI help only if an answer is actually delivered before submission.
+      // A network/quota error must not turn an independent attempt into assisted evidence.
+      if (this.geminiPending) return;
+      this.geminiPending = true;
       button.disabled = true;
       const original = button.textContent;
       button.textContent = "Gemini đang giảng bài…";
@@ -689,6 +689,10 @@
         });
         const response = await window.RoadmapTutor.run({ provider: "gemini", context });
         if (this.currentQuestion()?.id !== question?.id) return;
+        if (!this.answered) {
+          this.hintLevel = Math.max(1, this.hintLevel);
+          if (mode === "FULL_SOLUTION") this.fullSolutionViewed = true;
+        }
         this.renderGeminiResponse(response, question, mode);
       } catch (error) {
         if (this.currentQuestion()?.id !== question?.id) return;
@@ -698,6 +702,7 @@
         this.tutorEl.appendChild(note);
         this.tutorEl.hidden = false;
       } finally {
+        this.geminiPending = false;
         button.disabled = false;
         button.textContent = original;
       }
