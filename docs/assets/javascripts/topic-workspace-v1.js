@@ -4,6 +4,8 @@ const PATH="/kien-thuc/07-phan-thuc-dai-so/";
 const STORAGE="toan-thcs-practice-v1";
 const CARD_DATA="assets/data/curriculum/topic07-learning-workspace.json";
 const KG_DATA="assets/data/curriculum/knowledge-graph-v1.json";
+const siteRoot=()=>{const marker="/kien-thuc/";const p=window.location.pathname;return p.includes(marker)?(p.split(marker)[0]||""):""};
+const siteAsset=rel=>`${siteRoot()}/${String(rel||"").replace(/^\\/+/, "")}`;
 const sections=[
  ["map","🗺️ Bản đồ","1. Bản đồ kiến thức"],["goals","🎯 Mục tiêu","2. Mục tiêu cần đạt"],["core","📖 Cốt lõi","3. Kiến thức cốt lõi"],["links","🔗 Liên quan","4. Kiến thức liên quan"],["types","🧩 Dạng bài","5. Các dạng bài cần nắm vững"],["exam","🚀 Thi vào 10","6. Dạng bài thi vào lớp 10"],["errors","⚠️ Lỗi sai","7. Lỗi sai thường gặp"],["practice","📝 Luyện tập","8. Luyện tập"],["check","✅ Tự kiểm tra","9. Tự kiểm tra"],["roadmap","🔄 Roadmap","10. Liên kết Roadmap"],["finish","🏁 Hoàn thành","11. Điều kiện hoàn thành"]
 ];
@@ -29,7 +31,7 @@ const renderTutor=async(panel,question,selectedText,graph)=>{
   const context=window.RoadmapTutor.buildContext({projectContextVersion:"1.0.17",layer:"KNTT-Core",gradeOverlay:8,skill,question,learnerAnswer:selectedText,hintLevel:0,stats,graph,recovery:{events:[]}});
   const response=await window.RoadmapTutor.run({provider:"mock",context});
   panel.innerHTML=`<strong>🤖 Gia sư · QA local</strong><div>${response.message}</div><div class="topic-micro-note">${response.confidence==="evidenced"?"Dựa trên learner evidence đủ ngưỡng.":"Observed signal chỉ là gợi ý, không phải chẩn đoán điểm yếu."}</div>`;
-  if(response.action_type==="REMEDIATE"&&response.target_skill){const topic=graph?.nodes?.[response.target_skill]?.topic;if(topic){const a=document.createElement("a");a.className="md-button";a.textContent=`Ôn ngay: ${response.target_skill.replaceAll("-"," ")}`;a.href=`../${topic}/bai-tap/?focus=${encodeURIComponent(response.target_skill)}&mode=remediation`;panel.appendChild(a)}}
+  if(response.action_type==="REMEDIATE"&&response.target_skill){const topic=graph?.nodes?.[response.target_skill]?.topic;if(topic){const a=document.createElement("a");a.className="md-button";a.textContent=`Ôn ngay: ${response.target_skill.replaceAll("-"," ")}`;a.href=`${siteRoot()}/kien-thuc/${topic}/bai-tap/?focus=${encodeURIComponent(response.target_skill)}&mode=remediation`;panel.appendChild(a)}}
  }catch(_){panel.innerHTML="<strong>🤖 Gia sư</strong><div>Chưa thể mở trợ giúp lúc này.</div>"}
 };
 const mountMicro=(host,card,questions,graph)=>{
@@ -58,8 +60,8 @@ const mountMicro=(host,card,questions,graph)=>{
 };
 const renderCoreCards=async hero=>{
  try{
-  const cardUrl=new URL(CARD_DATA,document.baseURI);const cardRes=await fetch(cardUrl);if(!cardRes.ok)return;const data=await cardRes.json();
-  const [microRes,graphRes]=await Promise.all([fetch(new URL(data.micro_practice_bank,document.baseURI)),fetch(new URL(KG_DATA,document.baseURI))]);
+  const cardRes=await fetch(siteAsset(CARD_DATA));if(!cardRes.ok)return;const data=await cardRes.json();
+  const [microRes,graphRes]=await Promise.all([fetch(siteAsset(data.micro_practice_bank)),fetch(siteAsset(KG_DATA))]);
   const micro=microRes.ok?await microRes.json():{questions:[]};const graph=graphRes.ok?await graphRes.json():null;const byId=new Map((micro.questions||[]).map(q=>[q.id,q]));
   const host=document.createElement("section");host.className="topic-core-journey";host.id="core-journey";
   host.innerHTML='<div class="topic-core-journey-head"><div><span class="topic-workspace-kicker">KNTT Core · 5 chặng học</span><h2>Học theo chặng, kiểm tra ngay</h2></div><span class="topic-chip">15 câu diagnostic micro-practice</span></div>';
