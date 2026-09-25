@@ -235,7 +235,15 @@ const mountMicro=(host,card,questions,graph)=>{
    confirm.onclick=()=>{fullSolutionViewed=true;hintsUsed=Math.max(1,hintsUsed);showMicroLearning(tutor,card,q,true,false)};
    tutor.append(notice,confirm);
   };
-  host.append(meta,prompt,opts,hint,learning,reveal,feedback,tutor);typeset(host);
+  const live=document.createElement("button");live.type="button";live.className="practice-btn topic-micro-gemini";
+  live.textContent="✨ Hỏi Gemini trực tuyến";live.hidden=true;
+  if(window.RoadmapGemini)window.RoadmapGemini.available().then(enabled=>{live.hidden=!enabled});
+  live.onclick=()=>window.RoadmapGemini?.open({
+    panel:tutor,question:q,activity:"practice",submitted:Boolean(opts.dataset.answered),
+    onReveal:()=>{if(!opts.dataset.answered){fullSolutionViewed=true;hintsUsed=Math.max(1,hintsUsed)}},
+    onHint:()=>{if(!opts.dataset.answered)hintsUsed=Math.max(1,hintsUsed)}
+  });
+  host.append(meta,prompt,opts,hint,learning,reveal,live,feedback,tutor);typeset(host);
  };render();
 };
 

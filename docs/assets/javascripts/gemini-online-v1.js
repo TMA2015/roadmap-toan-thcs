@@ -72,7 +72,7 @@ const open=async({panel,question,activity="practice",submitted=false,onReveal=()
      if(typeof data.message!=="string"||!data.message.trim()||data.provider!=="gemini"||data.mode!==mode)throw new Error("Phản hồi từ máy chủ không hợp lệ.");
      if(!submitted){
       if(mode==="FULL_SOLUTION")onReveal();
-      else if(mode!=="HINT")onHint();
+      else onHint();
      }
      wrap.innerHTML="";
      const label=document.createElement("strong");label.textContent="✨ Gemini · nội dung AI tạo, chưa phản biện độc lập";

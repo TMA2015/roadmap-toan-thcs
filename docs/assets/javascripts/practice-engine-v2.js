@@ -546,6 +546,25 @@
       const diagnosis = createButton("🧭 Gợi ý theo tiến độ · QA offline", "practice-btn-secondary");
       diagnosis.addEventListener("click", () => this.askTutor(question, diagnosis));
       panel.append(title, note, choices, diagnosis);
+      if (window.RoadmapGemini) {
+        window.RoadmapGemini.available().then(enabled => {
+          if (!enabled || !panel.isConnected || !choices.isConnected || this.currentQuestion()?.id !== question.id) return;
+          const live = createButton("✨ Gia sư Gemini trực tuyến", "practice-btn-primary");
+          live.addEventListener("click", () => window.RoadmapGemini.open({
+            panel, question, activity: "practice", submitted: this.answered,
+            onReveal: () => {
+              if (this.currentQuestion()?.id === question.id && !this.answered) {
+                this.fullSolutionViewed = true;
+                this.hintLevel = Math.max(1, this.hintLevel);
+              }
+            },
+            onHint: () => {
+              if (this.currentQuestion()?.id === question.id && !this.answered) this.hintLevel = Math.max(1, this.hintLevel);
+            }
+          }));
+          choices.after(live);
+        });
+      }
     }
 
     showHelpMode(question, mode) {
