@@ -134,3 +134,14 @@ body{letter-spacing:-.008em}
 @media(max-width:52rem){.study-scene{max-width:27rem;width:100%}}
 @media(max-width:35rem){.study-scene{max-width:24rem}.study-scene-hint{font-size:.6rem}.study-wake-caption{font-size:.69rem}}
 @media(prefers-reduced-motion:reduce){.study-zzz{animation:none}.study-wake-button,.study-kid-head,.study-kid-arm,.study-sleep-face,.study-awake-face,.study-lamp-glow,.study-lamp-ray,.study-sparkles{transition:none!important}.study-wake-button:hover{transform:none}}
+
+/* On phones the friendly study action is discoverable before the long copy and CTA. */
+@media(max-width:35rem){
+  .home-hero-copy{display:contents}
+  .home-hero .home-eyebrow{order:1;position:relative;z-index:1}
+  .home-hero h1{order:2;position:relative;z-index:1;margin:.1rem 0}
+  .home-hero .study-scene{order:3;position:relative;z-index:1}
+  .home-hero .home-hero-copy>p{order:4;position:relative;z-index:1}
+  .home-hero .home-hero-actions{order:5;position:relative;z-index:1;margin-top:.4rem}
+  .home-hero .home-hero-note{order:6;position:relative;z-index:1;margin-top:.3rem}
+}
