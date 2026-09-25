@@ -42,6 +42,12 @@ jobs:
       - name: Build source-locked Gemini review bundle
         run: node scripts/build-gemini-review-bundle-04-11.js docs/assets/data/collaboration/exports/gemini-review-04-11.json
 
+      - name: Run Geometry Architecture v1 QA
+        run: node scripts/test-geometry-architecture-v1.js
+
+      - name: Build Geometry Architecture review bundle
+        run: node scripts/build-gemini-geometry-architecture-review.js docs/assets/data/collaboration/exports/gemini-geometry-architecture-v1.json
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 

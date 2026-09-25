@@ -1,0 +1,235 @@
+{
+  "schema": "roadmap-geometry-architecture-v1",
+  "version": "1.0",
+  "status": "REVIEW_READY",
+  "frozen": false,
+  "scope": {
+    "topics": [
+      "13-goc-va-duong-thang",
+      "14-tam-giac",
+      "15-duong-dong-quy",
+      "16-tu-giac",
+      "17-thales-dong-dang",
+      "18-he-thuc-luong",
+      "19-duong-tron",
+      "20-hinh-hoc-tong-hop"
+    ],
+    "grades": [
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "source_of_truth": [
+    "docs/assets/data/curriculum/kntt-grade6-map.json",
+    "docs/assets/data/curriculum/kntt-grade7-map.json",
+    "docs/assets/data/curriculum/kntt-grade8-map.json",
+    "docs/assets/data/curriculum/kntt-grade9-map.json",
+    "docs/assets/data/curriculum/golden-template-v1.json",
+    "docs/assets/data/curriculum/geometry-core-coverage-v1.json"
+  ],
+  "principles": [
+    "A diagram is not a proof and visual appearance never creates a mathematical fact.",
+    "Every scored Core item has exactly one assessed skill; supporting skills do not receive automatic mastery credit.",
+    "KNTT Core is determined by reviewed curriculum mappings, not by Entrance10 frequency or legacy bank membership.",
+    "Geometry statements separate givens, constructions, targets and derived relations.",
+    "Proof steps use claim + reason; theorem converses may be used only when their hypotheses are satisfied.",
+    "SVG is the preferred diagram format; coordinates come from a diagram spec or verified construction, not eyeballing.",
+    "Formative practice evidence and Core Readiness evidence remain separate; Soft Mastery only."
+  ],
+  "layers": {
+    "KNTT-Core": "Curriculum skills from reviewed PRIMARY mappings, including reviewed proposed skills.",
+    "Core-Support": "Prerequisite/representation skill taught to make Core understandable but not independently gated unless source-mapped.",
+    "Entrance10": "Exam-oriented geometry methods/results outside the mapped Core.",
+    "Specialized-Challenge": "High-complexity proof or enrichment; never gates Core."
+  },
+  "learning_flow": {
+    "pattern": [
+      "LEARN",
+      "PRACTICE",
+      "READINESS"
+    ],
+    "recommended_core_cards_per_topic": 5,
+    "micro_per_card": [
+      "base",
+      "trap",
+      "apply"
+    ],
+    "practice": "Interactive bank + written proof/construction practice with collapsed hints/solutions.",
+    "readiness": {
+      "layer": "KNTT-Core",
+      "feedback": "after_submit",
+      "hints": false,
+      "tutor": false,
+      "hard_gate": false,
+      "diagram_allowed": true
+    }
+  },
+  "statement_contract": {
+    "required": [
+      "givens",
+      "target"
+    ],
+    "optional": [
+      "construction",
+      "diagram_spec",
+      "allowed_tools"
+    ],
+    "rule": "No relation may appear as a given merely because the drawing looks that way.",
+    "normalized_relation_types": [
+      "collinear",
+      "between",
+      "ray",
+      "parallel",
+      "perpendicular",
+      "midpoint",
+      "equal_length",
+      "equal_angle",
+      "point_on_circle",
+      "tangent",
+      "intersection",
+      "cyclic",
+      "similar",
+      "congruent"
+    ]
+  },
+  "proof_contract": {
+    "required_for_proof_items": [
+      "givens",
+      "target",
+      "steps"
+    ],
+    "step_shape": {
+      "claim": "mathematical statement",
+      "reason": "definition / given / theorem / previously established claim",
+      "depends_on": "prior step IDs when nontrivial"
+    },
+    "forbidden": [
+      "using a diagram as the reason for equality, parallelism, perpendicularity, tangency or cyclicity",
+      "using a theorem converse without checking its hypotheses",
+      "assuming a point lies between two others from visual placement alone",
+      "claiming corresponding vertices in congruent/similar triangles without explicit correspondence"
+    ],
+    "dual_review_required": [
+      "multi-step proofs",
+      "non-obvious auxiliary constructions",
+      "circle proofs with tangent/cyclic transitions",
+      "Specialized-Challenge geometry",
+      "canonical proof templates reused across the bank"
+    ]
+  },
+  "diagram_contract": {
+    "schema": "docs/assets/data/curriculum/geometry-diagram-spec-v1.schema.json",
+    "roles": [
+      "supporting",
+      "essential"
+    ],
+    "scale_modes": [
+      "topological_only",
+      "not_to_scale",
+      "metric_exact",
+      "angle_exact"
+    ],
+    "essential_rule": "New or materially rewritten items with an essential diagram require a machine-readable diagram spec.",
+    "supporting_rule": "Supporting diagrams must not encode an unstated relation by markers, labels or exact-looking placement.",
+    "svg_requirements": [
+      "viewBox",
+      "role=img",
+      "title",
+      "desc",
+      "readable labels",
+      "no external raster dependency"
+    ],
+    "semantic_checks": [
+      "point membership",
+      "collinearity/order",
+      "parallelism",
+      "perpendicularity",
+      "midpoint",
+      "intersection",
+      "tangency",
+      "cyclicity",
+      "correspondence markers"
+    ],
+    "accessibility": [
+      "alt text describes mathematical configuration, not decorative appearance",
+      "caption states not-to-scale when metric appearance is non-authoritative"
+    ]
+  },
+  "item_contract": {
+    "required": [
+      "id",
+      "question",
+      "options",
+      "answer",
+      "tags.skill",
+      "difficulty",
+      "explanation"
+    ],
+    "geometry_additions": [
+      "geometry_role",
+      "givens",
+      "target"
+    ],
+    "assessed_skill_rule": "Exactly one assessed skill for scored Core micro/readiness items.",
+    "distractor_rule": "Wrong options should correspond to plausible geometry misconceptions; no option may be made correct only by reading the drawing to scale.",
+    "diagram_rule": "If diagram is essential, the question must still state all logical givens needed for the intended proof/calculation."
+  },
+  "coverage_policy": {
+    "matrix": "docs/assets/data/curriculum/geometry-core-coverage-v1.json",
+    "exact_id_gap_rule": "Treat exact ID gaps as authoring candidates only after semantic reuse review.",
+    "migration_order": [
+      "verify semantic reuse",
+      "add missing Core coverage",
+      "layer legacy extras",
+      "build Learning Cards",
+      "build Core Readiness",
+      "then expand Entrance10/Challenge"
+    ],
+    "core_readiness_rule": "Only mapped Core skills can contribute to readiness."
+  },
+  "rollout_batches": [
+    {
+      "id": "GEO-BATCH-13-15-001",
+      "topics": [
+        "13-goc-va-duong-thang",
+        "14-tam-giac",
+        "15-duong-dong-quy"
+      ],
+      "risk": "medium",
+      "reason": "foundational proof language and triangle-center semantics"
+    },
+    {
+      "id": "GEO-BATCH-16-18-001",
+      "topics": [
+        "16-tu-giac",
+        "17-thales-dong-dang",
+        "18-he-thuc-luong"
+      ],
+      "risk": "medium-high",
+      "reason": "property/converse reasoning, ratios and trigonometry"
+    },
+    {
+      "id": "GEO-BATCH-19-20-001",
+      "topics": [
+        "19-duong-tron",
+        "20-hinh-hoc-tong-hop"
+      ],
+      "risk": "high",
+      "reason": "circle proof transitions plus the largest Core coverage gap and 3D measurement"
+    }
+  ],
+  "benchmark_policy": {
+    "regression_benchmark": "content-staging/benchmarks/geometry-001-rectangle-midpoints.json",
+    "minimum_independent_checks_for_high_risk": 2,
+    "rule": "Architecture or diagram-generation changes must preserve BENCH-GEO-001 and future approved geometry benchmarks."
+  },
+  "freeze_gate": [
+    "Gemini independent architecture/pedagogy review completed with source-aligned evidence.",
+    "Coverage matrix exact-ID calculations pass automated QA.",
+    "BENCH-GEO-001 coordinate/area checks pass.",
+    "Diagram schema and authoring template pass QA.",
+    "At least one migrated geometry topic passes desktop/mobile/iPad Learn→Practice→Readiness flow."
+  ]
+}
