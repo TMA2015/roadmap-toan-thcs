@@ -1,5 +1,5 @@
 {
-  "version": "1.0.41",
+  "version": "1.0.42",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -208,7 +208,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Receive source-locked Gemini STA21-LEARN-GEMINI-AUTHOR-001-RESULT: 5 KNTT Core Learning Cards + 15 micro checks (base/trap/apply). Review source alignment and integrate before separate CĐ21 Readiness batch.",
+    "next_priority": "Next CĐ21 Golden Template: author and integrate a source-locked, Core-only interactive Readiness Check (10–12 MCQs, feedback after submit, no hints/Tutor, soft mastery). Practice Bank 132 and Learn 5 cards/15 micro are complete.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -231,9 +231,10 @@
     "statistics_rollout": {
       "topic": "21-thong-ke",
       "practice_bank_count": 132,
-      "integration": "STA21-CHATGPT-INTEGRATION-001",
-      "next": "CĐ21 Learn and micro-practice",
-      "learn_task": "STA21-LEARN-001"
+      "learn_card_count": 5,
+      "micro_practice_count": 15,
+      "learn_integration": "STA21-LEARN-CHATGPT-INTEGRATION-001",
+      "readiness": "PENDING"
     }
   },
   "handoff_required_fields": [
@@ -262,7 +263,7 @@
     "offline_relay_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/offline-relay/",
     "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
     "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
-    "next_public_task": "STA21-LEARN-001",
+    "next_public_task": "STA21-READY-001",
     "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-learn-gemini-author-001.json",
     "protocol_version": "2.0",
     "relay_v2": "Main-lesson image refresh checkpoint stored; return to small Gemini-led authoring batches. CĐ13–20 legacy image replacements are not a completed automatic geometry renderer."

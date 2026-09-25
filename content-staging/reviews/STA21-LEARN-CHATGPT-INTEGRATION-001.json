@@ -1,0 +1,56 @@
+{
+  "packet_id": "STA21-LEARN-CHATGPT-INTEGRATION-001",
+  "source_packet_id": "STA21-LEARN-GEMINI-AUTHOR-001-RESULT",
+  "task_id": "STA21-LEARN-001",
+  "verdict": "ACCEPT_WITH_EDITORIAL_AND_SCHEMA_FIXES",
+  "source_card_count": 5,
+  "source_micro_count": 15,
+  "integrated_assets": [
+    "docs/assets/data/curriculum/topic21-learning-workspace.json",
+    "docs/assets/data/practice/21-thong-ke-micro-v1.json"
+  ],
+  "applied_corrections": [
+    {
+      "id": "STA21MICRO_001",
+      "note": "Provide actual observed values, not merely variable names."
+    },
+    {
+      "id": "STA21MICRO_002",
+      "note": "Replace ambiguous bus-route count with route identifier."
+    },
+    {
+      "id": "STA21MICRO_004/005",
+      "note": "Declare data transcribed from hypothetical chart; no absent image dependency."
+    },
+    {
+      "id": "STA21MICRO_006",
+      "note": "Count subject-wise achievement events, not unique students; one learner may appear twice."
+    },
+    {
+      "id": "STA21MICRO_007/008/009/010/013",
+      "note": "Explicit hypothetical sample and mutually exclusive choices/denominator where needed."
+    },
+    {
+      "id": "STA21MICRO_014",
+      "note": "Correct product category and count-versus-revenue terminology."
+    }
+  ],
+  "schema_normalization": [
+    "Workspace follows existing topic-workspace schema and adds optional teaching_copy for five cards.",
+    "Micro items use exact one assessed skill, KNTT grade tags, curriculum.book/grades/level and standard exam fields.",
+    "Three clearly non-gating extension zones; no KNTT Grade 9 Core mapping was invented."
+  ],
+  "qa_math": [
+    "005 A=135, B=145; month 2 difference 10",
+    "006 subject-wise event ratio 25/20=5/4",
+    "008 40% of 300=120; 40% of 360°=144°",
+    "009 200*(45%-15%-10%)=40",
+    "012 180/30=6; 013 16/40=40%; 015 35/40=87.5%, 32/40=80%"
+  ],
+  "design_notes": [
+    "Optional teaching copy is rendered via textContent and preserves existing cards for other topics.",
+    "CĐ21 original 132-question Practice Bank and learner evidence unchanged.",
+    "Legacy self-test remains a written exercise, NOT yet an interactive readiness check; subsequent task must create a separate Core Readiness assessment.",
+    "Device visual QA remains owner-pending for new teaching copy UI."
+  ]
+}

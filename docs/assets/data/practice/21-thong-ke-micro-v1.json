@@ -1,0 +1,627 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "STA21-MICRO-V1",
+  "topic": {
+    "id": "21-thong-ke",
+    "title": "Thống kê và thu thập dữ liệu"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "STA21MICRO_001",
+      "card_id": "sta21-core-1",
+      "micro_role": "base",
+      "question": "Trong một đợt khảo sát thông tin cá nhân của các bạn trong câu lạc bộ Toán học, dữ liệu thu được gồm các dãy thông tin: (1) Chiều cao (cm): 145, 150, 152; (2) Màu sắc yêu thích: xanh, đỏ, vàng; (3) Số sách đã đọc: 2, 4, 3; (4) Trình độ tiếng Anh: Sơ cấp, Trung cấp, Cao cấp. Có bao nhiêu dãy dữ liệu thuộc loại dữ liệu số?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "du-lieu-phan-loai"
+        ],
+        "type": "phan-loai-du-lieu",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Dữ liệu số là dữ liệu được biểu diễn bằng các con số định lượng (đo đạc hoặc đếm). Trong các dãy dữ liệu trên: (1) Chiều cao và (3) Số lượng sách đã đọc là dữ liệu số. Dãy (2) Màu sắc và (4) Trình độ tiếng Anh biểu diễn bằng chữ/nhóm phân loại nên là dữ liệu phân loại. Vậy có 2 dãy dữ liệu số.",
+      "hints": [
+        "Xem xét dãy dữ liệu nào biểu diễn giá trị đo/đếm bằng con số cụ thể, dãy nào biểu diễn tên nhóm hoặc loại.",
+        "Chiều cao và Số lượng sách là số đo/đếm; Màu sắc và Trình độ tiếng Anh là các nhóm phân loại."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 38"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "du-lieu-phan-loai"
+    },
+    {
+      "id": "STA21MICRO_002",
+      "card_id": "sta21-core-1",
+      "micro_role": "trap",
+      "question": "Bạn Minh ghi chép các thông tin sau từ 5 bạn học sinh: (1) Mã số học sinh: 101, 102, 103, 104, 105; (2) Điểm kiểm tra Toán: 8; 9; 7; 10; 8,5; (3) Mã tuyến xe buýt đi học: tuyến 01, tuyến 02, tuyến 08, tuyến 12, tuyến 01; (4) Số lần đi thư viện trong tuần: 2, 0, 3, 1, 5. Khẳng định nào sau đây là ĐÚNG khi phân loại các dãy dữ liệu trên?",
+      "options": [
+        "Cả 4 dãy dữ liệu trên đều là dữ liệu số vì đều chứa các con số.",
+        "Có 2 dãy là dữ liệu số ((2), (4)) và 2 dãy là dữ liệu phân loại ((1), (3)).",
+        "Có 3 dãy là dữ liệu số ((1), (2), (4)) và 1 dãy là dữ liệu phân loại ((3)).",
+        "Chỉ có dãy (2) là dữ liệu số, ba dãy còn lại đều là dữ liệu phân loại."
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "du-lieu-phan-loai"
+        ],
+        "type": "phan-loai-du-lieu",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Bẫy thường gặp: Nhầm lẫn con số đóng vai trò nhãn/tên gọi định danh là dữ liệu số. Dãy (1) Mã số học sinh và (3) Số tuyến xe buýt tuy chứa con số nhưng chỉ dùng để định danh/phân loại, không có ý nghĩa tính toán số học (không tính được trung bình hay cộng trừ) nên là dữ liệu phân loại. Dãy (2) Điểm kiểm tra và (4) Số lần đi thư viện là dữ liệu số định lượng.",
+      "hints": [
+        "Con số dùng để làm nhãn định danh (như mã số, số xe) không phải là dữ liệu số định lượng.",
+        "Thử xem con số đó có thể thực hiện các phép tính cộng, trừ, trung bình có ý nghĩa hay không."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 17"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "du-lieu-phan-loai"
+    },
+    {
+      "id": "STA21MICRO_003",
+      "card_id": "sta21-core-1",
+      "micro_role": "apply",
+      "question": "Để chuẩn bị cho hội thao cấp trường, ban tổ chức cần lập danh sách kích cỡ áo thể thao (S, M, L, XL) của 30 thành viên đội bóng đá và ghi nhận nhiệt độ sân bãi lúc 8:00 sáng mỗi ngày trong 1 tuần diễn ra hội thao. Phương pháp thu thập dữ liệu phù hợp nhất cho hai mục tiêu trên lần lượt là:",
+      "options": [
+        "Quan sát trực tiếp và đo đạc định kỳ.",
+        "Lập phiếu khảo sát/bảng hỏi trực tiếp thành viên và sử dụng nhiệt kế đo, ghi chép định kỳ.",
+        "Sử dụng dữ liệu thống kê có sẵn trên mạng và ước lượng bằng cảm tính.",
+        "Phỏng vấn người qua đường và thu thập số liệu nhiệt độ năm ngoái."
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "thu-thap-du-lieu"
+        ],
+        "type": "chon-cach-thu-thap",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Kích cỡ áo thể thao là nhu cầu/thông tin cá nhân của từng thành viên, nên chọn phương pháp lập phiếu khảo sát hoặc thu thập ý kiến trực tiếp. Nhiệt độ sân bãi là đại lượng vật lý cần theo dõi thực tế, nên dùng công cụ đo (nhiệt kế) để ghi chép định kỳ đúng thời điểm.",
+      "hints": [
+        "Cần phân biệt thông tin về nhu cầu/đặc điểm cá nhân người học với số liệu tự nhiên cần đo bằng dụng cụ.",
+        "Khảo sát/bảng hỏi phù hợp cho thông tin cá nhân; dụng cụ đo phù hợp cho đại lượng vật lý theo thời gian."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 17"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "thu-thap-du-lieu"
+    },
+    {
+      "id": "STA21MICRO_004",
+      "card_id": "sta21-core-2",
+      "micro_role": "base",
+      "question": "Trong ví dụ giả định, dữ liệu từ biểu đồ cột về số bài kiểm tra đạt điểm 10 môn Toán của bốn tổ lớp 6A được chép lại như sau: Tổ 1 có 12 điểm 10; Tổ 2 có 15 điểm 10; Tổ 3 có 8 điểm 10; Tổ 4 có 10 điểm 10. Chênh lệch giữa tổ có nhiều điểm 10 nhất và tổ có ít điểm 10 nhất là bao nhiêu?",
+      "options": [
+        "3 điểm 10",
+        "5 điểm 10",
+        "7 điểm 10",
+        "15 điểm 10"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "doc-bieu-do-cot"
+        ],
+        "type": "doc-cot",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Tổ có nhiều điểm 10 nhất là Tổ 2 với 15 điểm 10. Tổ có ít điểm 10 nhất là Tổ 3 với 8 điểm 10. Chênh lệch giữa hai tổ là: 15 - 8 = 7 (điểm 10).",
+      "hints": [
+        "Xác định giá trị lớn nhất và nhỏ nhất trong bảng số liệu.",
+        "Thực hiện phép trừ lấy giá trị lớn nhất trừ đi giá trị nhỏ nhất."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 39"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "doc-bieu-do-cot"
+    },
+    {
+      "id": "STA21MICRO_005",
+      "card_id": "sta21-core-2",
+      "micro_role": "trap",
+      "question": "Trong ví dụ giả định, dữ liệu được chép lại từ biểu đồ cột kép so sánh số lượng máy tính bán được của hai cửa hàng A và B trong 3 tháng đầu năm (đơn vị: chiếc): Tháng 1: A = 40, B = 30; Tháng 2: A = 50, B = 60; Tháng 3: A = 45, B = 55. Khẳng định nào sau đây là ĐÚNG?",
+      "options": [
+        "Cửa hàng A bán được nhiều máy tính hơn cửa hàng B trong cả quý I.",
+        "Trong tháng 2, cửa hàng A bán ít hơn cửa hàng B là 10 chiếc máy tính.",
+        "Tổng số máy tính cửa hàng A bán được trong 3 tháng là 145 chiếc.",
+        "Cửa hàng B luôn có số lượng bán ra cao hơn cửa hàng A ở tất cả các tháng."
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "doc-bieu-do-cot-kep"
+        ],
+        "type": "doc-cot-kep",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trong tháng 2: Cửa hàng A bán được 50 chiếc, cửa hàng B bán được 60 chiếc. Do đó cửa hàng A bán ít hơn cửa hàng B là 60 - 50 = 10 chiếc máy tính (Khẳng định B đúng). Khẳng định A sai vì tổng B (145) > tổng A (135); Khẳng định C sai vì tổng A = 40 + 50 + 45 = 135; Khẳng định D sai vì tháng 1 A > B.",
+      "hints": [
+        "Đối chiếu cẩn thận từng mốc thời gian và từng đối tượng A, B.",
+        "Tính cụ thể giá trị tháng 2 của A và B để xem chênh lệch."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "lesson": "Bài 18"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "doc-bieu-do-cot-kep"
+    },
+    {
+      "id": "STA21MICRO_006",
+      "card_id": "sta21-core-2",
+      "micro_role": "apply",
+      "question": "Trong ví dụ giả định, dữ liệu từ biểu đồ cột kép ghi số lượt đạt loại Giỏi ở hai môn Ngữ văn và Lịch sử: lớp 8A có 12 lượt Giỏi Ngữ văn, 8 lượt Giỏi Lịch sử; lớp 8B có 10 lượt Giỏi Ngữ văn, 15 lượt Giỏi Lịch sử. Một học sinh có thể được tính ở cả hai môn. Tỉ số giữa tổng số lượt đạt Giỏi của lớp 8B so với lớp 8A là:",
+      "options": [
+        "4/5",
+        "5/4",
+        "3/2",
+        "1/1"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "doc-bieu-do-cot-kep"
+        ],
+        "type": "doc-cot-kep",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "advanced",
+      "explanation": "Tổng số lượt đạt Giỏi ở hai môn của lớp 8A là 12 + 8 = 20 lượt, của lớp 8B là 10 + 15 = 25 lượt. Tỉ số cần tìm là 25/20 = 5/4. Đây là số lượt, không phải số học sinh khác nhau vì một em có thể đạt Giỏi ở cả hai môn.",
+      "hints": [
+        "Cộng số lượt ở hai môn cho từng lớp, không suy ra số học sinh khác nhau.",
+        "Lấy tổng lượt của lớp 8B chia tổng lượt của lớp 8A rồi rút gọn."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "lesson": "Bài 18"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "doc-bieu-do-cot-kep"
+    },
+    {
+      "id": "STA21MICRO_007",
+      "card_id": "sta21-core-3",
+      "micro_role": "base",
+      "question": "Trong ví dụ giả định, dữ liệu theo dõi nhiệt độ (đơn vị: °C) tại Hà Nội từ 6:00 đến 12:00 trưa một ngày thu được như sau: 6:00 là 22°C; 8:00 là 25°C; 10:00 là 28°C; 12:00 là 31°C. Phát biểu nào sau đây đúng về sự thay đổi nhiệt độ?",
+      "options": [
+        "Từ 6:00 đến 8:00 nhiệt độ tăng nhiều nhất.",
+        "Từ 8:00 đến 10:00 nhiệt độ tăng nhiều nhất.",
+        "Từ 10:00 đến 12:00 nhiệt độ tăng nhiều nhất.",
+        "Mức tăng nhiệt độ ở cả ba khoảng thời gian trên là bằng nhau (mỗi khoảng tăng 3°C)."
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "doc-bieu-do-doan-thang"
+        ],
+        "type": "doc-xu-huong",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Mức tăng từ 6:00 đến 8:00 là: 25 - 22 = 3°C. Mức tăng từ 8:00 đến 10:00 là: 28 - 25 = 3°C. Mức tăng từ 10:00 đến 12:00 là: 31 - 28 = 3°C. Như vậy mức tăng nhiệt độ ở cả 3 khoảng thời gian đều bằng nhau.",
+      "hints": [
+        "Tính chênh lệch nhiệt độ ở từng khoảng thời gian 2 tiếng liên tiếp.",
+        "So sánh các mức tăng thu được."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 18"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "doc-bieu-do-doan-thang"
+    },
+    {
+      "id": "STA21MICRO_008",
+      "card_id": "sta21-core-3",
+      "micro_role": "trap",
+      "question": "Biểu đồ hình quạt tròn biểu diễn tỉ lệ học sinh tham gia các câu lạc bộ thể thao của 300 học sinh; mỗi em chọn đúng một câu lạc bộ: Bóng đá chiếm 40%, Cầu lông chiếm 30%, Bơi lội chiếm 20%, Cờ vua chiếm 10%. Số học sinh tham gia câu lạc bộ Bóng đá và số đo góc ở tâm biểu diễn phần Bóng đá lần lượt là:",
+      "options": [
+        "120 học sinh và 144°",
+        "120 học sinh và 40°",
+        "40 học sinh và 144°",
+        "300 học sinh và 144°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "bieu-do-quat-tron"
+        ],
+        "type": "doi-phan-tram-goc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Bẫy thường gặp: Nhầm tỉ lệ phần trăm (40%) trực tiếp thành số đo góc (40°) hoặc nhầm phần trăm thành số học sinh (40 em). Tính đúng: Số học sinh tham gia Bóng đá = 40% x 300 = 120 học sinh. Số đo góc ở tâm ứng với phần Bóng đá = 40% x 360° = 144°.",
+      "hints": [
+        "Số học sinh = Tỉ lệ phần trăm x Tổng số học sinh.",
+        "Số đo góc ở tâm = Tỉ lệ phần trăm x 360°."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 19"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "bieu-do-quat-tron"
+    },
+    {
+      "id": "STA21MICRO_009",
+      "card_id": "sta21-core-3",
+      "micro_role": "apply",
+      "question": "Trong ví dụ giả định, 200 học sinh mỗi em chọn một loại nước uống yêu thích. Kết quả khảo sát được biểu diễn bằng biểu đồ quạt tròn: Trà sữa chiếm 45%, Nước ép trái cây chiếm 30%, Nước khoáng chiếm 15%, Nước ngọt có ga chiếm 10%. Số học sinh thích Trà sữa nhiều hơn tổng số học sinh thích Nước khoáng và Nước ngọt có ga bao nhiêu em?",
+      "options": [
+        "20 em",
+        "30 em",
+        "40 em",
+        "50 em"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "bieu-do-quat-tron"
+        ],
+        "type": "doc-quat-tron",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "advanced",
+      "explanation": "Tổng tỉ lệ học sinh thích Nước khoáng và Nước ngọt có ga là: 15% + 10% = 25%. Chênh lệch tỉ lệ phần trăm giữa nhóm Trà sữa và nhóm trên là: 45% - 25% = 20%. Số học sinh chênh lệch tương ứng là: 20% x 200 = 40 (em).",
+      "hints": [
+        "Tính tổng tỉ lệ phần trăm của hai nhóm Nước khoáng và Nước ngọt có ga trước.",
+        "Lấy tỉ lệ Trà sữa trừ đi tổng tỉ lệ vừa tính, sau đó nhân với tổng số 200 học sinh."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "lesson": "Bài 19"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "bieu-do-quat-tron"
+    },
+    {
+      "id": "STA21MICRO_010",
+      "card_id": "sta21-core-4",
+      "micro_role": "base",
+      "question": "Khi muốn biểu diễn tỉ lệ phần trăm đóng góp của các mặt hàng trong tổng doanh thu của một cửa hàng sách trong một năm giả định, dạng biểu đồ nào dưới đây là phù hợp nhất?",
+      "options": [
+        "Biểu đồ cột đơn",
+        "Biểu đồ đoạn thẳng",
+        "Biểu đồ hình quạt tròn",
+        "Biểu đồ cột kép"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "chon-bieu-do"
+        ],
+        "type": "chon-bieu-do",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Để biểu diễn cơ cấu hoặc tỉ lệ phần trăm của các phần trong một tổng thể (tương ứng với 100%), biểu đồ hình quạt tròn là dạng biểu diễn phù hợp và trực quan nhất.",
+      "hints": [
+        "Xem xét mục tiêu biểu diễn là so sánh số lượng, theo dõi xu hướng hay thể hiện cơ cấu phần trăm của tổng thể.",
+        "Biểu đồ quạt tròn chuyên dùng biểu diễn tỉ lệ các phần trong tổng 100%."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 19"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "chon-bieu-do"
+    },
+    {
+      "id": "STA21MICRO_011",
+      "card_id": "sta21-core-4",
+      "micro_role": "trap",
+      "question": "Một giáo viên muốn theo dõi sự thay đổi (tăng, giảm) về chiều cao trung bình của học sinh một lớp học qua các năm từ lớp 6, lớp 7 đến lớp 8. Một bạn đề xuất dùng biểu đồ hình quạt tròn. Nhận xét nào sau đây là ĐÚNG NHẤT về đề xuất này?",
+      "options": [
+        "Đề xuất này đúng vì biểu đồ quạt tròn dễ vẽ và trực quan.",
+        "Đề xuất này chưa hợp lý vì biểu đồ quạt tròn dùng thể hiện tỉ lệ phần trăm các phần trong tổng thể, còn theo dõi sự thay đổi/xu hướng theo thời gian nên chọn biểu đồ đoạn thẳng.",
+        "Đề xuất này chưa hợp lý vì bắt buộc phải dùng biểu đồ cột kép.",
+        "Đề xuất này đúng vì tổng chiều cao của 3 năm cộng lại bằng 100%."
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "chon-bieu-do"
+        ],
+        "type": "chon-bieu-do",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Bẫy chọn sai loại biểu đồ: Dữ liệu chiều cao qua các năm diễn tả diễn biến theo chuỗi thời gian, không phải các thành phần đóng góp vào một tổng thể 100%. Do đó dùng biểu đồ quạt tròn là sai bản chất; cần dùng biểu đồ đoạn thẳng để thấy rõ xu hướng tăng/giảm.",
+      "hints": [
+        "Xác định bản chất dữ liệu là chuỗi thời gian liên tiếp hay các phần của một tổng thể.",
+        "Biểu đồ đoạn thẳng là lựa chọn tối ưu nhất để theo dõi sự thay đổi theo thời gian."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "lesson": "Bài 20"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "chon-bieu-do"
+    },
+    {
+      "id": "STA21MICRO_012",
+      "card_id": "sta21-core-4",
+      "micro_role": "apply",
+      "question": "Cho bảng thống kê số lượng sách tham khảo mượn từ thư viện trong một tuần: Khối 6 có 120 cuốn; Khối 7 có 150 cuốn; Khối 8 có 180 cuốn; Khối 9 có 150 cuốn. Nếu chuyển bảng số liệu này sang biểu đồ cột với trục đứng bắt đầu từ 0 và mỗi vạch chia ứng với 30 cuốn sách, thì cột của Khối 8 sẽ cao bằng bao nhiêu vạch chia?",
+      "options": [
+        "4 vạch chia",
+        "5 vạch chia",
+        "6 vạch chia",
+        "8 vạch chia"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "chuyen-bang-bieu-do"
+        ],
+        "type": "chuyen-doi",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Khối 8 mượn 180 cuốn sách. Thang đo trên trục đứng chia mỗi vạch ứng với 30 cuốn sách. Số vạch chia biểu diễn chiều cao cột Khối 8 là: 180 / 30 = 6 (vạch chia).",
+      "hints": [
+        "Lấy số lượng sách của Khối 8 chia cho số lượng sách tương ứng với mỗi vạch chia trên trục đứng.",
+        "Phép tính: 180 : 30."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "lesson": "Bài 20"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "chuyen-bang-bieu-do"
+    },
+    {
+      "id": "STA21MICRO_013",
+      "card_id": "sta21-core-5",
+      "micro_role": "base",
+      "question": "Cho bảng số liệu về số học sinh đăng ký các môn thể thao tự chọn của lớp 6B (40 học sinh, mỗi em đăng ký đúng một môn): Cầu lông có 16 em; Bóng rổ có 12 em; Bơi lội có 8 em; Cờ vua có 4 em. Kết luận nào sau đây là CHẮC CHẮN ĐÚNG dựa trực tiếp vào bảng số liệu?",
+      "options": [
+        "Môn Cầu lông được đăng ký nhiều nhất, chiếm 40% tổng số học sinh cả lớp.",
+        "Học sinh lớp 6B thi đấu môn Cầu lông giỏi hơn môn Cờ vua.",
+        "Tất cả học sinh lớp 6B đều biết bơi thành thạo.",
+        "Trong các tháng tới, số em đăng ký Cờ vua chắc chắn sẽ tăng gấp đôi."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "nhan-xet-du-lieu"
+        ],
+        "type": "nhan-xet",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Số em đăng ký Cầu lông là 16 em (lớn nhất trong các môn). Tỉ lệ là 16 / 40 = 40%. Nhận xét A đúng trực tiếp từ số liệu. Các nhận xét B, C, D đều là suy diễn cảm tính hoặc dự đoán không có cơ sở.",
+      "hints": [
+        "Chỉ chọn nhận xét có số liệu toán học kiểm chứng trực tiếp từ bảng.",
+        "Tính tỉ lệ 16 / 40 để kiểm tra phần trăm."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 41"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "nhan-xet-du-lieu"
+    },
+    {
+      "id": "STA21MICRO_014",
+      "card_id": "sta21-core-5",
+      "micro_role": "trap",
+      "question": "Trong ví dụ giả định, số lượng tivi và tủ lạnh bán được trong hai tháng ở một cửa hàng điện máy là: Tháng 1: Tivi bán 20 chiếc, Tủ lạnh bán 40 chiếc; Tháng 2: Tivi bán 30 chiếc, Tủ lạnh bán 50 chiếc. Nhận xét nào sau đây là SUY DIỄN KHÔNG CÓ CĂN CỨ từ dữ liệu?",
+      "options": [
+        "Doanh số Tivi ở Tháng 2 tăng 10 chiếc so với Tháng 1.",
+        "Tổng số lượng bán ra cả Tivi và Tủ lạnh ở Tháng 2 tăng 20 chiếc so với Tháng 1.",
+        "Khách hàng mua Tivi ở Tháng 2 hài lòng hơn Tháng 1 nên số lượng bán ra mới tăng.",
+        "Ở cả hai tháng, số lượng Tủ lạnh bán ra đều nhiều hơn Tivi."
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "nhan-xet-du-lieu"
+        ],
+        "type": "nhan-xet",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Số liệu chỉ cho biết số lượng bán ra: tivi tăng 10 chiếc; tổng hai mặt hàng tăng (30 + 50) − (20 + 40) = 20 chiếc; tủ lạnh bán nhiều hơn tivi ở cả hai tháng. Không có dữ liệu về mức độ hài lòng hay nguyên nhân mua hàng, nên phương án C là suy diễn không có căn cứ.",
+      "hints": [
+        "Phân biệt điều số liệu ghi nhận với giả thuyết về nguyên nhân.",
+        "Kiểm tra những nhận xét dùng dữ liệu về số lượng; bảng không đo mức độ hài lòng."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 18"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "nhan-xet-du-lieu"
+    },
+    {
+      "id": "STA21MICRO_015",
+      "card_id": "sta21-core-5",
+      "micro_role": "apply",
+      "question": "Thống kê kết quả thi giữa kỳ môn Toán của hai lớp 8A và 8B (mỗi lớp có sĩ số 40 học sinh): Lớp 8A có 15 em đạt Giỏi, 20 em Khá, 5 em Trung bình; Lớp 8B có 20 em đạt Giỏi, 12 em Khá, 8 em Trung bình. Khẳng định nào sau đây là đúng đắn và chính xác nhất?",
+      "options": [
+        "Tỉ lệ học sinh đạt từ điểm Khá trở lên của Lớp 8A (87,5%) cao hơn Lớp 8B (80%).",
+        "Tất cả học sinh Lớp 8B đều học giỏi hơn học sinh Lớp 8A.",
+        "Lớp 8A có số học sinh đạt điểm Giỏi nhiều hơn Lớp 8B.",
+        "Số học sinh đạt điểm Trung bình của Lớp 8A nhiều hơn Lớp 8B là 3 em."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "nhan-xet-du-lieu"
+        ],
+        "type": "nhan-xet",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "advanced",
+      "explanation": "Số em từ Khá trở lên lớp 8A = 15 + 20 = 35 em -> Tỉ lệ = 35 / 40 = 87,5%. Số em từ Khá trở lên lớp 8B = 20 + 12 = 32 em -> Tỉ lệ = 32 / 40 = 80%. Khẳng định A hoàn toàn chính xác. B suy diễn quy chụp; C sai vì 15 < 20; D sai vì Trung bình 8A (5) ít hơn 8B (8).",
+      "hints": [
+        "Cần tính tổng số học sinh đạt từ Khá trở lên (Giỏi + Khá) cho từng lớp.",
+        "Lấy tổng số đó chia cho sĩ số 40 để tính tỉ lệ phần trăm rồi so sánh."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "lesson": "Bài 20"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "nhan-xet-du-lieu"
+    }
+  ]
+}
