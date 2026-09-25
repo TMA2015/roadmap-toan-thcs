@@ -258,3 +258,42 @@
 .practice-gemini-message .ai-math-display mjx-container{min-width:0!important}
 .practice-gemini-message mjx-container{max-width:100%}
 @media(max-width:38rem){.practice-gemini-message{font-size:.83rem;padding:.7rem}.practice-gemini-message .ai-math-display{font-size:.96em}}
+
+/* Contextual floating AI tutor for lesson-reading pages. */
+.floating-ai{position:fixed;right:max(1rem,env(safe-area-inset-right));bottom:max(1rem,env(safe-area-inset-bottom));z-index:38;display:flex;flex-direction:column;align-items:flex-end;gap:.65rem;pointer-events:none}
+.floating-ai>*{pointer-events:auto}
+.floating-ai-launcher{width:3.35rem;height:3.35rem;border-radius:999px;border:1px solid rgba(255,255,255,.65);background:linear-gradient(145deg,#3558d5,#223783);color:#fff;font-size:1.42rem;box-shadow:0 .65rem 1.6rem rgba(27,48,110,.28);display:grid;place-items:center;padding:0;cursor:pointer}
+.floating-ai-launcher:hover{transform:translateY(-1px);box-shadow:0 .8rem 1.8rem rgba(27,48,110,.34)}
+.floating-ai-launcher:focus-visible,.floating-ai button:focus-visible,.floating-ai textarea:focus-visible{outline:3px solid #82b5ff;outline-offset:2px}
+.floating-ai-panel{width:min(25rem,calc(100vw - 2rem));max-height:min(72vh,42rem);overflow:auto;border:1px solid var(--practice-border);border-radius:.85rem;background:var(--md-default-bg-color);box-shadow:0 1rem 3rem rgba(19,38,91,.24);padding:.85rem}
+.floating-ai-panel[hidden]{display:none!important}
+.floating-ai-head{display:flex;align-items:flex-start;justify-content:space-between;gap:.7rem;padding-bottom:.65rem;border-bottom:1px solid var(--practice-border)}
+.floating-ai-head>div{min-width:0}
+.floating-ai-head strong{display:block;font-size:.88rem;color:var(--md-default-fg-color)}
+.floating-ai-head small{display:block;margin-top:.2rem;font-size:.67rem;line-height:1.4;color:var(--md-default-fg-color--light);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:19rem}
+.floating-ai-close{border:0;background:transparent;color:var(--md-default-fg-color--light);font-size:1.35rem;line-height:1;padding:.15rem .35rem;cursor:pointer}
+.floating-ai-quick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.42rem;margin:.75rem 0}
+.floating-ai-chip,.floating-ai-send{border:1px solid var(--practice-border);border-radius:.5rem;font:inherit;cursor:pointer}
+.floating-ai-chip{min-height:2.35rem;padding:.42rem .55rem;background:var(--practice-soft);color:var(--md-default-fg-color);font-size:.68rem;font-weight:700;line-height:1.35;text-align:left}
+.floating-ai-chip:hover{border-color:#7195da;background:color-mix(in srgb,#7195da 10%,var(--md-default-bg-color))}
+.floating-ai-answer{margin:.65rem 0;padding:.72rem .78rem;border:1px solid var(--practice-border);border-radius:.62rem;background:color-mix(in srgb,var(--roadmap-soft,#eef4ff) 56%,var(--md-default-bg-color));font-size:.76rem;line-height:1.7;overflow-wrap:anywhere}
+.floating-ai-answer p{margin:0 0 .65em}
+.floating-ai-answer p:last-child{margin-bottom:0}
+.floating-ai-answer ul,.floating-ai-answer ol{padding-left:1.35rem;margin:.35rem 0 .7rem}
+.floating-ai-answer li{margin:.25rem 0}
+.floating-ai-answer .ai-math-display{overflow-x:auto;text-align:center;padding:.25rem 0}
+.floating-ai-answer .ai-math-inline{display:inline-block;max-width:100%;overflow-x:auto;vertical-align:middle}
+.floating-ai-input{box-sizing:border-box;width:100%;resize:vertical;min-height:4.3rem;border:1px solid var(--practice-border);border-radius:.55rem;background:var(--md-default-bg-color);color:var(--md-default-fg-color);font:inherit;font-size:.74rem;line-height:1.5;padding:.65rem .7rem}
+.floating-ai-send{display:block;margin:.52rem 0 0 auto;padding:.5rem .85rem;background:#3558d5;color:#fff;border-color:#3558d5;font-size:.72rem;font-weight:750}
+.floating-ai button:disabled{opacity:.55;cursor:wait}
+.floating-ai-note{display:block;margin-top:.65rem;color:var(--md-default-fg-color--light);font-size:.62rem;line-height:1.45}
+.floating-ai-error{color:#a22b2b}.floating-ai-waiting{opacity:.75}
+@media(max-width:44rem){
+ .floating-ai{right:.7rem;bottom:max(.75rem,env(safe-area-inset-bottom))}
+ .floating-ai-launcher{width:3.1rem;height:3.1rem}
+ .floating-ai.is-open{left:.55rem;right:.55rem;bottom:max(.55rem,env(safe-area-inset-bottom));align-items:stretch}
+ .floating-ai.is-open .floating-ai-launcher{display:none}
+ .floating-ai-panel{width:auto;max-height:min(76vh,39rem);border-radius:.8rem;padding:.8rem}
+ .floating-ai-head small{max-width:calc(100vw - 7rem)}
+ .floating-ai-quick{grid-template-columns:1fr 1fr}
+}
