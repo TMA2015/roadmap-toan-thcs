@@ -310,3 +310,41 @@ body{letter-spacing:-.008em}
 }
 @media(max-width:76.24rem){.lesson-focus-toggle{display:none}}
 @media(max-width:29rem){.lesson-switcher-controls{gap:.25rem}.lesson-switcher-topic{font-size:.55rem}}
+
+
+/* KNTT student entry point; map chapters to shared topic Core cards instead of architecture docs. */
+.class-hub{color:var(--roadmap-ink);margin:-.25rem 0 2rem}.class-hub *{box-sizing:border-box}
+.class-hub-hero{padding:clamp(1rem,3.8vw,2.4rem);border:1px solid #d6e2fb;border-radius:1.1rem;background:linear-gradient(118deg,#ecf3ff,#eaf8fb 62%,#eff0ff);color:#172b59}
+.class-hub-eyebrow,.class-grade-tag,.class-chapter-kicker{font-size:.65rem;letter-spacing:.08em;font-weight:850;color:#3a58bd}
+.class-hub-hero h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:.3rem 0 .5rem;color:#172b59}
+.class-hub-hero p{font-size:.8rem;line-height:1.65;max-width:40rem;margin:0 0 1.25rem;color:#465874}
+.class-grade-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.55rem;max-width:36rem}
+.class-grade-tabs button{min-height:2.5rem;border-radius:.6rem;border:1px solid #c5d2ed;font:inherit;font-size:.8rem;font-weight:850;color:#344e9c;background:#fff;cursor:pointer}
+.class-grade-tabs button[aria-pressed="true"]{background:#3152c2;color:white;border-color:#3152c2;box-shadow:0 8px 20px rgba(49,82,194,.19)}
+.class-grade-tabs button:focus-visible,.class-topic-link:focus-visible,.class-chapter-lessons summary:focus-visible{outline:3px solid #5075dd;outline-offset:3px}
+.class-hub-note{margin:.85rem 0 1.25rem;border-left:.2rem solid #21aa9b;padding:.7rem 1rem;border-radius:0 .55rem .55rem 0;background:var(--roadmap-soft);color:var(--roadmap-ink);font-size:.7rem;line-height:1.7}
+.class-grade-panel[hidden]{display:none!important}.class-grade-intro{margin:1.2rem 0 .8rem}.class-grade-intro h2{margin:.3rem 0;color:var(--roadmap-ink)}.class-grade-intro p{font-size:.7rem;max-width:39rem;color:var(--roadmap-muted);margin:0}
+.class-chapter-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;align-items:start}
+.class-chapter{min-width:0;padding:.9rem;border:1px solid var(--roadmap-line);border-radius:.85rem;background:var(--roadmap-surface);box-shadow:var(--roadmap-shadow)}
+.class-chapter-heading{display:flex;gap:.6rem;align-items:flex-start}.class-chapter-number{display:grid;place-items:center;flex:none;width:2.05rem;height:2.05rem;border-radius:.55rem;background:#e9edff;color:#3450b8;font-size:.7rem;font-weight:850}
+.class-chapter h3{font-size:.9rem;line-height:1.4;margin:.1rem 0 .65rem;color:var(--roadmap-ink)}
+.class-chapter-lessons{border:1px solid var(--roadmap-line);border-radius:.5rem;background:var(--roadmap-soft);margin:.6rem 0}
+.class-chapter-lessons summary{display:flex;justify-content:space-between;gap:.6rem;list-style:none;cursor:pointer;padding:.5rem .65rem;font-weight:750;font-size:.65rem;color:var(--roadmap-ink)}.class-chapter-lessons summary::-webkit-details-marker{display:none}
+.class-chapter-lessons ul{list-style:none;margin:0!important;padding:.4rem .65rem .65rem!important;display:grid;gap:.35rem}
+.class-chapter-lessons li{display:flex;flex-direction:column;border-top:1px solid var(--roadmap-line);padding-top:.4rem;font-size:.62rem;line-height:1.45}
+.class-chapter-lessons li span{color:var(--roadmap-indigo);font-weight:800}.class-chapter-lessons li strong{font-weight:550;color:var(--roadmap-ink)}
+.class-topic-links{display:grid;gap:.43rem;margin-top:.55rem}
+.class-topic-link{display:flex;align-items:center;gap:.55rem;padding:.55rem .6rem;border:1px solid var(--roadmap-line);background:var(--roadmap-soft);border-radius:.55rem;color:var(--roadmap-ink)!important;text-decoration:none!important}
+.class-topic-link:hover{border-color:var(--roadmap-indigo);background:var(--roadmap-surface)}.class-topic-code{display:grid;place-items:center;width:1.75rem;height:1.75rem;flex:none;border-radius:.45rem;background:#e4edff;color:#3251b8;font-weight:850;font-size:.65rem}
+.class-topic-info{flex:1;min-width:0;display:flex;flex-direction:column;gap:.1rem}.class-topic-info strong{font-size:.72rem;font-weight:830;line-height:1.3}.class-topic-info small{font-size:.58rem;color:var(--roadmap-muted);line-height:1.45}
+.class-topic-arrow{color:var(--roadmap-indigo);font-size:1.1rem}.class-topic-support{display:block;margin-top:.5rem;font-size:.61rem;font-weight:750;color:var(--roadmap-indigo)!important}
+.class-hub-footer{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem;margin:1.5rem 0;padding:1rem;border:1px solid var(--roadmap-line);border-radius:.7rem;background:var(--roadmap-soft);font-size:.7rem}
+.class-hub-footer strong{width:100%}
+.class-hub-footer a{color:var(--roadmap-indigo)!important;font-weight:800}
+#core-journey{scroll-margin-top:6.5rem}
+@media(max-width:52rem){.class-chapter-grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:31rem){.class-grade-tabs{gap:.3rem}.class-grade-tabs button{font-size:.73rem;min-height:2.2rem}.class-chapter{padding:.7rem}.class-hub-hero{padding:1rem}.class-hub-hero h1{font-size:1.8rem}}
+[data-md-color-scheme="slate"] .class-hub-hero{background:linear-gradient(110deg,#263d64,#1f444b);color:#f3f7ff;border-color:#4b5d78}
+[data-md-color-scheme="slate"] .class-hub-hero h1,[data-md-color-scheme="slate"] .class-hub-hero p,[data-md-color-scheme="slate"] .class-hub-eyebrow{color:#edf3ff}
+[data-md-color-scheme="slate"] .class-grade-tabs button{background:#243554;color:#edf3ff;border-color:#435575}
+[data-md-color-scheme="slate"] .class-grade-tabs button[aria-pressed="true"]{background:#5977df;color:#fff}
