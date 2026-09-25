@@ -270,6 +270,46 @@ for source in sorted(ROOT.rglob("*.md")):
                 issues.append(f"{source.as_posix()}: anchor không tồn tại -> {raw_target}")
 
 
+def is_academic_capstone(practice_text, self_text):
+    return (
+        "roadmap-academic-capstone-v2" in practice_text
+        and "roadmap-academic-capstone-v2" in self_text
+    )
+
+
+def check_academic_capstone(num, folder, lesson_text, practice_text, self_text):
+    required_practice = [
+        "## A. Đại số",
+        "## B. Phương trình, hệ và Viète",
+        "## C. Hàm số và mô hình hóa",
+        "## D. Thống kê và xác suất",
+        "## E. Hình học",
+        "## F. Vận dụng tổng hợp",
+    ]
+    for marker in required_practice:
+        if marker not in practice_text:
+            issues.append(f"{num:02d}: Academic Capstone thiếu mạch luyện -> {marker}")
+
+    if "Đề luyện hoàn chỉnh" not in lesson_text or "Bài toán kinh điển" not in lesson_text:
+        issues.append(f"{num:02d}: Academic Capstone thiếu gateway đề luyện/bài kinh điển")
+
+    if "Tự đánh giá kỹ năng làm bài" not in lesson_text:
+        issues.append(f"{num:02d}: Academic Capstone chưa tách kỹ năng thi")
+
+    if not re.search(r"^#+\s+Câu\s+1\b", self_text, re.MULTILINE | re.IGNORECASE):
+        issues.append(f"{num:02d}: Academic Capstone self-check thiếu câu hỏi học thuật")
+
+    if "Đáp án và hướng dẫn chấm" not in self_text:
+        issues.append(f"{num:02d}: Academic Capstone self-check thiếu đáp án/hướng dẫn chấm")
+
+    if "Điểm này chỉ đo bài Toán hiện tại" not in self_text:
+        issues.append(f"{num:02d}: Academic Capstone chưa tách điểm học thuật khỏi kỹ năng thi")
+
+    for filename in ["bai-toan-kinh-dien.md", "de-luyen-01.md", "tu-danh-gia-ky-nang-thi.md"]:
+        if not (folder / filename).exists():
+            issues.append(f"{num:02d}: Academic Capstone thiếu {filename}")
+
+
 # 6. Kiểm tra chuẩn trải nghiệm học tập của toàn bộ 25 Topic
 #
 # Có hai cấu trúc hợp lệ:
@@ -412,6 +452,11 @@ for num in range(1, 26):
     # Golden Template được nhận diện bằng marker Readiness Engine.
     if readiness_source(self_text):
         check_golden_template(num, folder, lesson_text, practice_text, self_text)
+        continue
+
+    # Academic Capstone dùng cho Topic tổng hợp/thi: nội dung học thuật và kỹ năng thi tách riêng.
+    if is_academic_capstone(practice_text, self_text):
+        check_academic_capstone(num, folder, lesson_text, practice_text, self_text)
         continue
 
     # Legacy topics vẫn giữ QA cũ cho đến khi được migrate theo batch.
