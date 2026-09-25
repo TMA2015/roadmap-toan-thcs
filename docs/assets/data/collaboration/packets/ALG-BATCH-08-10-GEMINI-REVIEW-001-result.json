@@ -1,0 +1,32 @@
+{
+  "packet_id": "ALG-BATCH-08-10-GEMINI-REVIEW-001-RESULT",
+  "task_id": "ALG-BATCH-08-10-001",
+  "verdict": "REVISIONS_REQUIRED",
+  "source": "user-provided Gemini review",
+  "corrections": [
+    {
+      "item_id": "08-PT-MCQ-045",
+      "type": "MATH_ERROR"
+    },
+    {
+      "item_id": "08-PT-WR-010",
+      "type": "SOLUTION_LOGIC"
+    },
+    {
+      "item_id": "09-HPT-MCQ-012",
+      "type": "DISTRACTOR_QUALITY"
+    },
+    {
+      "item_id": "09-HPT-WR-005",
+      "type": "WORDING"
+    },
+    {
+      "item_id": "10-HS-MCQ-022",
+      "type": "MISCONCEPTION_COVERAGE"
+    },
+    {
+      "item_id": "10-HS-WR-008",
+      "type": "MATH_ERROR"
+    }
+  ]
+}

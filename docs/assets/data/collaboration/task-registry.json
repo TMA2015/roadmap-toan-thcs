@@ -249,10 +249,10 @@
       "id": "ALG-BATCH-08-10-001",
       "title": "Golden Template batch production CĐ08–CĐ10",
       "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_PEDAGOGICAL_REVIEW",
-      "status": "DUAL-CHECK",
-      "context_version": "1.0.27",
-      "review_verdict": "DEPLOYED-AWAITING-PEDAGOGICAL-REVIEW",
-      "review_notes": "Complete Golden batch deployed successfully in PR #64. CI, dedicated batch validator, strict MkDocs build and gh-pages smoke check PASS. Gemini review is now issue-level pedagogy/math QA only; source scope and schema remain ChatGPT-controlled."
+      "status": "READY",
+      "context_version": "1.0.28",
+      "review_verdict": "GEMINI-REVIEW-SOURCE-MISMATCH",
+      "review_notes": "Gemini issue packet used six non-existent IDs and mismatched prompts, so no correction was integrated. Independent QA discovered corrupted LaTeX escaping in CĐ08-CĐ10 Practice Room Markdown; fixed and added CI scan for control characters/unescaped TeX."
     }
   ]
 }
