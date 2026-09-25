@@ -4,7 +4,7 @@ const fs=require("fs"),path=require("path"),vm=require("vm"),root=path.resolve(_
 const read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const ok=(v,label)=>{if(!v)throw Error(label);};
 const config=read("docs/assets/javascripts/firebase-gemini-config.js"),adapter=read("docs/assets/javascripts/firebase-gemini-v1.js"),runtime=read("docs/assets/javascripts/tutor-runtime-v1.js"),practice=read("docs/assets/javascripts/practice-engine-v2.js"),mk=read("mkdocs.yml");
-ok(config.includes("enabled: false")&&config.includes('recaptchaEnterpriseSiteKey: ""'),"live transport remains gated until key & testing");
+ok(config.includes("enabled: false")&&/recaptchaEnterpriseSiteKey: "6L[A-Za-z0-9_-]{15,}"/.test(config),"live transport remains gated pending real App Check/Gemini verification");
 ok(!adapter.includes("AIzaSy"),"transport has no embedded project config/API key");
 ok(adapter.includes("ReCaptchaEnterpriseProvider")&&adapter.includes("getToken(appCheck)")&&adapter.includes("GoogleAIBackend"),"Firebase App Check precedes inference");
 ok(adapter.includes("firebase-ai.js")&&adapter.includes("firebase-app-check.js"),"official same-version CDN SDKs");
