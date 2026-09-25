@@ -76,6 +76,14 @@ Các tính chất vị trí H/O và cách đều cạnh/đỉnh vẫn được l
 
 Khai thác các tâm trong bài tổng hợp chỉ sau khi nhận dạng đúng họ đường và tâm tương ứng.
 
+### Challenge
+
+#### 15-CH-01 · Bốn tâm có luôn khác nhau?
+Xét câu “G, H, I, O luôn là bốn điểm phân biệt”. Câu này đúng hay sai?
+
+??? example "Xem lời giải"
+    Sai. Trong tam giác đều, bốn tâm trùng nhau. Vì vậy phải phân biệt phát biểu tổng quát với trường hợp đặc biệt.
+
 ## Liên kết Roadmap
 - **← Học:** [Chuyên đề 15](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
