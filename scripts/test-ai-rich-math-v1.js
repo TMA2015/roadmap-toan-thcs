@@ -28,7 +28,7 @@ const example=[
 ].join("\n");
 const box=document.createElement("div");
 render(example,box);
-ok(nodes(box,"OL").length===1 && nodes(box,"LI").length===4,"numbered and bullet steps should be structured");
+ok(nodes(box,"OL").length===2 && nodes(box,"UL").length===1 && nodes(box,"LI").length===4,"numbered and bullet steps should be structured");
 ok(nodes(box,"STRONG").length===2,"Markdown emphasis should be formatted");
 ok(nodes(box,"SPAN").filter(n=>n.className==="ai-math-inline").length>=4,"inline TeX delimiters");
 ok(nodes(box,"DIV").some(n=>n.className==="ai-math-display" && n.textContent.includes("\\frac")),"display math");
