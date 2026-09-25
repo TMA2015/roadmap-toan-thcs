@@ -5,7 +5,7 @@ const ui=read("docs/assets/javascripts/floating-ai-tutor-v1.js");
 const prompt=read("docs/assets/javascripts/firebase-gemini-v1.js");
 const mk=read("mkdocs.yml");
 const ok=(v,m)=>{if(!v)throw Error(m)};
-ok(ui.includes("isLessonPage")&&ui.includes('/roadmap-toan-thcs\\/kien-thuc'),"lesson-only route gate");
+ok(ui.includes("isLessonPage")&&ui.includes("(?:roadmap-toan-thcs\\/)?kien-thuc"),"lesson-only route gate");
 ok(ui.includes('activity: "learning"')&&ui.includes('helpMode: "TEACH_FROM_START"'),"learning context, not assessment/practice");
 ok(ui.includes("selectedText(root)")&&ui.includes("sectionText(root, heading)"),"selection or active section context");
 ok(ui.includes("Giải thích dễ hơn")&&ui.includes("Cho ví dụ khác")&&ui.includes("Vì sao lại đúng?")&&ui.includes("Em cần nhớ gì?"),"four reading quick actions");
