@@ -1,0 +1,29 @@
+{
+  "name": "roadmap-thcs-gemini-tutor",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "vars": {
+    "ALLOWED_ORIGIN": "https://tma2015.github.io",
+    "TURNSTILE_HOSTNAME": "tma2015.github.io",
+    "GEMINI_MODEL": "gemini-3.8-flash"
+  },
+  "ratelimits": [
+    {
+      "name": "USER_RATE_LIMITER",
+      "namespace_id": "25101",
+      "simple": {
+        "limit": 6,
+        "period": 60
+      }
+    },
+    {
+      "name": "SITE_RATE_LIMITER",
+      "namespace_id": "25102",
+      "simple": {
+        "limit": 30,
+        "period": 60
+      }
+    }
+  ]
+}
