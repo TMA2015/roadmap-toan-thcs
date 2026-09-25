@@ -14,7 +14,9 @@ const eqSet=(a,b)=>a.length===b.length && a.every(x=>b.includes(x));
 const controlChars=(s,p)=>{for(let i=0;i<s.length;i++){const c=s.charCodeAt(i);if(c<32&&![9,10,13].includes(c))errors.push(`${p}: control char U+${c.toString(16).padStart(4,"0")}`)}};
 
 if(ARCH.schema!=="roadmap-geometry-architecture-v1"||ARCH.version!=="1.0") errors.push("geometry architecture metadata");
-if(ARCH.status!=="REVIEW_READY"||ARCH.frozen!==false) errors.push("architecture must remain REVIEW_READY and unfrozen before independent review");
+if(ARCH.status!=="FROZEN-V1"||ARCH.frozen!==true) errors.push("geometry architecture freeze metadata");
+const FREEZE=JSON.parse(fs.readFileSync(path.join(ROOT,"content-staging/reviews/GEO-ARCH-V1-FREEZE-AUDIT-001.json"),"utf8"));
+if(FREEZE.verdict!=="FROZEN-V1"||FREEZE.blockers?.length||FREEZE.evidence?.length!==5||FREEZE.evidence.some(e=>!["PASS","OWNER_ACCEPTANCE_PASS"].includes(e.status))) errors.push("geometry architecture freeze evidence incomplete");
 if(COVER.schema!=="roadmap-geometry-core-coverage-v1"||COVER.topics?.length!==8) errors.push("coverage matrix metadata");
 
 let totalCore=0,totalPresent=0,totalMissing=0;

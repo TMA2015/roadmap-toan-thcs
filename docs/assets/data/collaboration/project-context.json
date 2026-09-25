@@ -1,5 +1,5 @@
 {
-  "version": "1.0.36",
+  "version": "1.0.37",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -136,6 +136,12 @@
       "pilot": "07-phan-thuc-dai-so",
       "evidence": "automated QA + successful deploy + real iPad UX validation",
       "maintenance_revision": "1.0.1"
+    },
+    "geometry_architecture": {
+      "version": "1.0",
+      "status": "FROZEN-V1",
+      "contract": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/geometry-architecture-v1.json",
+      "freeze_evidence": "content-staging/reviews/GEO-ARCH-V1-FREEZE-AUDIT-001.json"
     }
   },
   "roles": {
@@ -202,7 +208,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Record desktop/mobile/iPad Learn→Practice→Readiness QA for one migrated geometry topic. Then, if pass, freeze Geometry Architecture v1 and update status-dependent validator in same small PR. Meanwhile prepare only a small Gemini-authored CĐ21 exercise handoff.",
+    "next_priority": "Begin CĐ21 in a small Gemini-led exercise authoring batch with source-locked skill whitelist/schema, ChatGPT review and integration; separately pilot GEO-LIB-001 in small steps.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -219,7 +225,7 @@
     "micro_practice_evidence": "Observed signals are stored separately from attempted/correct counters. signal_weight 1–2 is salience only and cannot independently create weak-skill/remediation conclusions.",
     "golden_template": "Frozen v1.0 with maintenance hardening v1.0.1: MathJax details re-typeset, touch-safe targets, bottom CTAs and JSON control-character QA. Frozen invariants unchanged.",
     "golden_rollout": "CĐ04–CĐ12 DEPLOYED-PASS under Golden Template. CĐ11 adds source-mapped căn bậc ba with 12 real Practice Bank items (120→132); CĐ12 keeps parameter/extended Viète applications outside Core readiness pending item-level review. CI, strict MkDocs build and Pages deploy pass.",
-    "geometry_architecture": "v1 REVIEW_READY, frozen=false; Gemini architecture-specific review PASS with no corrections/unresolved questions; Core coverage 124/124 and BENCH PASS. Device flow evidence still pending.",
+    "geometry_architecture": "v1 FROZEN after Gemini architecture PASS, coverage 124/124, BENCH PASS, successful CI and owner-reported cross-device geometry flow acceptance (explicit iPhone/iPad). Automatic geometry renderer remains separate scope.",
     "geometry_rollout": "CĐ13–CĐ20 DEPLOYED-PASS; CĐ19–CĐ20 Gemini batch review PASS with corrections []. Geometry exact-ID coverage 124/124, 0 gaps; CĐ19 bank 147 and CĐ20 bank 195."
   },
   "handoff_required_fields": [
@@ -248,9 +254,9 @@
     "offline_relay_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/offline-relay/",
     "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
     "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
-    "next_public_task": "GEO-ARCH-V1-001",
+    "next_public_task": "CONTENT-PILOT-001",
     "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geometry-architecture-v1.json",
     "protocol_version": "2.0",
-    "relay_v2": "Gemini architecture review result PASS, corrections [], unresolved_questions []; retained in content-staging/reviews. Device QA remains the only recorded freeze blocker."
+    "relay_v2": "Geometry Architecture v1 frozen based on recorded five-gate audit; source evidence and owner-reported mobile/iPad acceptance retained. Future batches remain small and Gemini-led for exercise drafting."
   }
 }
