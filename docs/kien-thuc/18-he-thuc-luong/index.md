@@ -100,8 +100,8 @@ Mẹo nhớ:
 ![Góc nâng so với phương ngang, với khoảng cách ngang d và chiều cao h](../../assets/geometry/18/18-goc-nang-v1.svg)
 
 <p align="center">
-  <img src="../../assets/geometry/18/18-goc-nang-goc-ha.svg"
-       alt="Hình tham khảo góc nâng và góc hạ (ảnh cũ, sẽ được thay ở batch tiếp theo)"
+  <img src="../../assets/geometry/18/18-goc-nang-goc-ha-v1.svg"
+       alt="Từ O, góc nâng α giữa phương ngang và tia nhìn lên OA; góc hạ β giữa phương ngang và tia nhìn xuống OB"
        width="520">
 </p>
 
@@ -243,6 +243,8 @@ Không nhất thiết học bảng như bốn dòng công thức rời rạc: d�
 ![Tỉ số lượng giác trong tam giác vuông](../../assets/infographics/18/18-03-ti-so-luong-giac.svg)
 
 ### 3.5. Góc nâng và góc hạ
+
+![Góc hạ β được đo tại người quan sát O so với phương ngang](../../assets/geometry/18/18-goc-ha-v1.svg)
 
 Trong bài toán thực tế:
 - góc nâng: tia nhìn hướng lên so với phương ngang;

@@ -17,5 +17,17 @@ for(const f of data.figures){const P=f.points;const svg=fs.readFileSync(path.joi
 }
 const lesson=fs.readFileSync(path.join(ROOT,"docs/kien-thuc/18-he-thuc-luong/index.md"),"utf8");
 for(const f of data.figures)assert(lesson.includes(f.id+".svg"),f.id+": not linked in lesson");
-assert(lesson.includes("18-goc-nang-goc-ha.svg"),"legacy angle depression reference lost");
+for(const name of ["18-goc-nang-goc-ha-v1.svg","18-goc-ha-v1.svg"])assert(lesson.includes(name),name+": missing lesson reference");
+assert(!lesson.includes('18-goc-nang-goc-ha.svg'),"legacy combined graphic still referenced");
+for(const name of ["18-goc-nang-goc-ha-v1.svg","18-goc-ha-v1.svg"]){
+ const s=fs.readFileSync(path.join(ROOT,"docs/assets/geometry/18",name),"utf8");
+ for(const required of ['viewBox="0 0 640 420"','role="img"','<title id="title">','<desc id="desc">','Phương ngang'])assert(s.includes(required),name+": missing SVG contract");
+ assert(!/<image\\b|<script\\b|\\bhref\\s*=|\\bonload\\s*=/i.test(s),name+": external reference or script");
+ assert(!/height="100%"|width="100%"/.test(s),name+": forced dimensions");
+ assert(s.includes("arc-down"),name+": missing depression arc");
+}
+const geoDep={O:[110,122],P:[492,304],H:[492,122]};
+assert(near(geoDep.O[1],geoDep.H[1])&&near(geoDep.H[0],geoDep.P[0])&&geoDep.P[1]>geoDep.O[1],"depression baseline or below-horizontal invariant failed");
+const geoBoth={O:[108,210],A:[475,80],B:[475,345]};
+assert(geoBoth.A[1]<geoBoth.O[1]&&geoBoth.B[1]>geoBoth.O[1],"combined elevation/depression invariant failed");
 if(errors.length){console.error(errors.join("\\n"));process.exit(1)}console.log("PASS: CĐ18 four pilot SVG coordinate/semantic and source-link checks.");
