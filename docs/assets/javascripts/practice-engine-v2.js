@@ -480,7 +480,7 @@
       this.answered = false;
       this.hintLevel = 0;
       this.progressEl.textContent = `Câu ${this.index + 1}/${this.session.length} · Đúng ${this.score}`;
-      this.metaEl.textContent = `${this.difficultyLabel(question.difficulty)} · ${this.skillLabel(question)}`;
+      this.metaEl.textContent = [question?.tags?.layer && question.tags.layer !== "KNTT-Core" ? question.tags.layer : null, this.difficultyLabel(question.difficulty), this.skillLabel(question)].filter(Boolean).join(" · ");
       this.questionEl.textContent = question.question;
       this.renderDiagram(question);
       this.optionsEl.innerHTML = "";
