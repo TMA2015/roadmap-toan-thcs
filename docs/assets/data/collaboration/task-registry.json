@@ -253,6 +253,32 @@
       "context_version": "1.0.29",
       "review_verdict": "DEPLOYED-PASS",
       "review_notes": "PR #64 production plus PR #66 LaTeX maintenance both deployed successfully. Dedicated batch validator, Markdown math regression QA, strict MkDocs build and gh-pages smoke check PASS. Gemini review corrections were not applied because all six IDs/prompts were source-misaligned."
+    },
+    {
+      "id": "ALG-BATCH-11-12-001",
+      "title": "Golden Template batch production CĐ11–CĐ12",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_PEDAGOGICAL_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.30",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_notes": "PR #68 merged and production deploy passed. Both topics have 5 Core Learning Cards, 15 micro-practice and 10 MCQ Core Readiness items. CĐ11 adds can-bac-ba theory + 12 real bank items (120→132). CĐ12 keeps tham-so-so-nghiem and item-review Viète extensions outside Core readiness."
+    },
+    {
+      "id": "ALG-REVIEW-04-11-GEMINI-001",
+      "title": "Source-locked pedagogical review CĐ04–CĐ11",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "READY",
+      "context_version": "1.0.30",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-review-04-11.json",
+      "review_notes": "Single-file 48-source bundle generated during deploy. Corrections are admissible only with exact existing ID + exact prompt quote; prose requires source_path + heading + exact quote."
+    },
+    {
+      "id": "GEO-ARCH-V1-001",
+      "title": "Geometry Architecture v1 before CĐ13–CĐ20 rollout",
+      "routing": "CHATGPT_ARCHITECTURE_LEAD+GEMINI_GEOMETRY_REVIEW",
+      "status": "OPEN",
+      "context_version": "1.0.30",
+      "review_notes": "Define theorem/figure/proof/diagram contracts, Core-vs-Extension boundaries, SVG-first geometry QA, and reusable Golden Template mapping before migrating geometry topics."
     }
   ]
 }
