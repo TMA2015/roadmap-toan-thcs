@@ -222,10 +222,19 @@
       "id": "GOLDEN-TEMPLATE-001",
       "title": "Golden Template Learn → Practice → Core Readiness",
       "routing": "GEMINI_PEDAGOGY+CHATGPT_ARCHITECTURE_QA",
-      "status": "READY",
-      "context_version": "1.0.19",
-      "review_verdict": "DUAL-CONFIRMED-QA-READY",
-      "review_notes": "CĐ07 Golden Template implementation from PR #53 has independent Gemini pedagogical/architecture confirmation. Learn/Practice/Readiness separation, evidence-store separation, Practice Engine retention and Soft Mastery are all confirmed. Only deployed desktop/iPad/mobile QA remains before schema/UI freeze."
+      "status": "DONE",
+      "context_version": "1.0.20",
+      "review_verdict": "FROZEN-V1",
+      "review_notes": "CĐ07 passed automated/deploy QA and real iPad UX verification. Golden Template v1 invariants frozen in assets/data/curriculum/golden-template-v1.json."
+    },
+    {
+      "id": "ALG-BATCH-04-06-001",
+      "title": "Golden Template batch production CĐ04–CĐ06",
+      "routing": "GEMINI_AUTHOR_REVIEW+CHATGPT_INTEGRATE_QA",
+      "status": "GEMINI-DRAFT",
+      "context_version": "1.0.20",
+      "review_verdict": "AUTHOR-PACKET-READY",
+      "review_notes": "One batch covering CĐ04, CĐ05, CĐ06. Reuse existing 120-question banks; author Learning Cards/micro-practice/written Practice/Readiness content against frozen Golden Template v1. CĐ06 tach-hang-tu-giua is non-Core."
     }
   ]
 }

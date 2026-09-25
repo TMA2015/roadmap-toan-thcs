@@ -1,5 +1,9 @@
 # Golden Template – Học → Luyện → Tự kiểm tra
 
+> **Trạng thái:** **Frozen v1.0** từ 25/09/2026 sau khi CĐ07 vượt qua curriculum/schema/deploy QA và kiểm tra luồng thực tế trên iPad.
+>
+> Các batch sau phải giữ các invariant trong `assets/data/curriculum/golden-template-v1.json`. Thay đổi phá vỡ invariant cần một phiên bản Golden Template mới, không được sửa ngầm trong từng chuyên đề.
+
 Golden Template chuẩn hóa ba không gian học tập của mỗi chuyên đề để tránh trùng lặp và giữ learner evidence đúng ý nghĩa.
 
 ## 1. Học / Learning Workspace
@@ -127,7 +131,7 @@ Tutor có thể đọc evidence cần thiết từ cả hai nguồn ở phase sa
 
 ## 8. Rollout gate
 
-Golden Template chỉ được freeze sau khi pilot CĐ07 đạt:
+Golden Template v1 đã được freeze sau khi pilot CĐ07 đạt:
 
 1. curriculum/content QA;
 2. schema/JS validation;
@@ -137,4 +141,4 @@ Golden Template chỉ được freeze sau khi pilot CĐ07 đạt:
 6. Readiness submit/result/retry QA;
 7. Core/Extension boundary QA.
 
-Sau khi PASS, rollout theo batch chuyên đề; không quay lại triển khai card-by-card.
+**Kết quả:** PASS. Từ đây rollout theo batch chuyên đề; không quay lại triển khai card-by-card.
