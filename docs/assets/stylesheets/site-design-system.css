@@ -253,3 +253,15 @@ body{letter-spacing:-.008em}
 .library-topic-link{color:var(--roadmap-indigo);font-weight:800}
 @media(max-width:49rem){.library-topic-grid{grid-template-columns:1fr}.library-cluster-counter{display:none}.home-reveal-card summary{min-height:7rem}}
 @media(prefers-reduced-motion:reduce){.home-reveal-body{animation:none}.home-reveal-indicator,.library-cluster-arrow,.library-topic-tile{transition:none}}
+
+/* Topic lesson reading polish: existing Markdown and math remain untouched. */
+.md-typeset>h1{padding:.15rem 0 .85rem;border-bottom:1px solid var(--roadmap-line);margin-bottom:1.15rem}
+.md-typeset>h2{display:flex;align-items:baseline;gap:.5rem;margin-top:2.3rem;padding:.72rem .9rem;background:linear-gradient(95deg,var(--roadmap-soft),transparent);border-left:.22rem solid var(--roadmap-indigo);border-radius:.55rem;font-size:1.3rem;scroll-margin-top:6.3rem}
+.md-typeset>h3{margin-top:1.5rem;padding-bottom:.35rem;border-bottom:1px solid var(--roadmap-line);scroll-margin-top:6.3rem}
+.md-typeset>blockquote{border-left:.2rem solid #7195da;background:var(--roadmap-soft);border-radius:0 .6rem .6rem 0;padding:.7rem .9rem;margin:1rem 0;color:var(--roadmap-ink)}
+.md-typeset>blockquote p{margin:.3rem 0;line-height:1.65}
+.md-typeset>hr{border-color:var(--roadmap-line);margin:1.65rem auto}
+.md-typeset>p>img,.md-typeset>p[align="center"] img{display:block;max-width:100%;height:auto;margin:1rem auto;box-shadow:0 7px 23px rgba(28,58,104,.07);border:1px solid var(--roadmap-line);background:var(--roadmap-surface);padding:.25rem}
+.md-typeset>pre{border-radius:.65rem;overflow:auto}
+.md-typeset>ul li::marker,.md-typeset>ol li::marker{color:var(--roadmap-indigo)}
+@media(max-width:44rem){.md-typeset>h2{font-size:1.13rem;padding:.6rem .7rem}.md-typeset>blockquote{padding:.5rem .7rem}}
