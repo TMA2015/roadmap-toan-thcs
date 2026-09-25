@@ -6,7 +6,7 @@
     "id": "05-7-hang-dang-thuc",
     "title": "7 Hằng đẳng thức đáng nhớ"
   },
-  "question_count": 5,
+  "question_count": 10,
   "questions": [
     {
       "id": "ID05MICRO_001",
@@ -228,6 +228,233 @@
           "signal": "nham-hieu-binh-phuong-voi-binh-phuong-hieu",
           "signal_weight": 2,
           "feedback_hint": "Hiệu hai bình phương tạo hai nhân tử đối dấu."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_006",
+      "card_id": "id05-core-2",
+      "micro_role": "apply",
+      "question": "Tính nhanh \\(101\\cdot99\\).",
+      "options": [
+        "9999",
+        "10000",
+        "9801",
+        "10201"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "tinh-nhanh-hdt"
+        ],
+        "type": "tinh-nhanh-hdt",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(101\\cdot99=(100+1)(100-1)=100^2-1=9999\\).",
+      "hints": [
+        "Hai thừa số đối xứng quanh 100.",
+        "Dùng (a+b)(a-b)=a^2-b^2."
+      ],
+      "supporting_skills": [
+        "hieu-hai-binh-phuong"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_007",
+      "card_id": "id05-core-3",
+      "micro_role": "base",
+      "question": "Khai triển \\((x+1)^3\\).",
+      "options": [
+        "\\(x^3+3x^2+3x+1\\)",
+        "\\(x^3+x^2+x+1\\)",
+        "\\(x^3+3x+1\\)",
+        "\\(x^3+1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "lap-phuong-tong"
+        ],
+        "type": "lap-phuong-tong",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "\\((a+b)^3=a^3+3a^2b+3ab^2+b^3\\).",
+      "hints": [
+        "Có bốn hạng tử.",
+        "Hai hạng tử giữa đều có hệ số 3."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "lap-phuong-thieu-he-so-3",
+          "signal_weight": 2,
+          "feedback_hint": "Hai hạng tử giữa đều cần hệ số 3."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_008",
+      "card_id": "id05-core-3",
+      "micro_role": "trap",
+      "question": "Khai triển \\((x-2)^3\\).",
+      "options": [
+        "\\(x^3-6x^2+12x-8\\)",
+        "\\(x^3-6x^2-12x-8\\)",
+        "\\(x^3-6x^2+6x-8\\)",
+        "\\(x^3-2x^2+4x-8\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "lap-phuong-hieu"
+        ],
+        "type": "lap-phuong-hieu",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\((x-2)^3=x^3-6x^2+12x-8\\).",
+      "hints": [
+        "Dấu lần lượt là +, −, +, −.",
+        "Hạng tử thứ ba là 3ab^2 nên có 2^2."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "lap-phuong-hieu-sai-dau",
+          "signal_weight": 2,
+          "feedback_hint": "Dấu của hạng tử 3ab^2 phải dương."
+        },
+        "2": {
+          "signal": "lap-phuong-sai-he-so-3ab2",
+          "signal_weight": 2,
+          "feedback_hint": "Hạng tử 3ab^2 cần bình phương của 2."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_009",
+      "card_id": "id05-core-3",
+      "micro_role": "apply",
+      "question": "Đa thức \\(x^3-6x^2+12x-8\\) bằng:",
+      "options": [
+        "\\((x-2)^3\\)",
+        "\\((x+2)^3\\)",
+        "\\((x-4)^3\\)",
+        "\\(x^3-2^3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "nhan-dang-lap-phuong"
+        ],
+        "type": "nhan-dang-lap-phuong",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "So sánh với lập phương một hiệu với b=2.",
+      "hints": [
+        "Hạng tử tự do -8 gợi ý b=2.",
+        "Kiểm tra hạng tử -3x^2b."
+      ],
+      "supporting_skills": [
+        "lap-phuong-hieu"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_010",
+      "card_id": "id05-core-4",
+      "micro_role": "base",
+      "question": "Phân tích \\(x^3+8\\) thành tích.",
+      "options": [
+        "\\((x+2)(x^2-2x+4)\\)",
+        "\\((x+2)(x^2+2x+4)\\)",
+        "\\((x-2)(x^2+2x+4)\\)",
+        "\\((x+2)^3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "tong-hai-lap-phuong"
+        ],
+        "type": "tong-hai-lap-phuong",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "\\(x^3+2^3=(x+2)(x^2-2x+4)\\).",
+      "hints": [
+        "Nhân tử đầu là tổng.",
+        "Trong nhân tử bậc hai, hạng tử giữa mang dấu âm."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "tong-lap-phuong-sai-dau",
+          "signal_weight": 2,
+          "feedback_hint": "Tổng hai lập phương có hạng tử giữa âm trong nhân tử bậc hai."
         }
       },
       "curriculum": {
