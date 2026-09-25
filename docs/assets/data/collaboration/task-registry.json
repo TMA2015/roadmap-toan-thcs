@@ -125,7 +125,8 @@
       "id": "GEO-LIB-001",
       "title": "Chuẩn hóa thư viện hình SVG và giảm hình Internet",
       "routing": "CHATGPT_LEAD+DUAL_QA_FOR_HARD_GEOMETRY",
-      "status": "OPEN"
+      "status": "OPEN",
+      "review_notes": "Main-lesson legacy SVG replacement completed separately as GEO-LIB-VISUAL-REFRESH-001. Keep this umbrella OPEN for reusable spec-driven JSON→SVG renderer, semantic geometry validation, and optional further library QA; do not conflate with image replacement."
     },
     {
       "id": "KG-V1-001",
@@ -370,6 +371,16 @@
       "corrections_count": 0,
       "unresolved_questions_count": 0,
       "result_artifact": "content-staging/reviews/GEO-ARCH-V1-GEMINI-REVIEW-001-RESULT.json"
+    },
+    {
+      "id": "GEO-LIB-VISUAL-REFRESH-001",
+      "title": "Replace legacy lesson diagrams with original visual-standard SVGs",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "context_version": "1.0.38",
+      "review_verdict": "DEPLOYED-CI-PASS",
+      "integrated_artifact": "content-staging/reviews/GEO-LIB-VISUAL-REFRESH-001.json",
+      "review_notes": "33 original SVGs across CĐ13–20 in PRs #79–84; full-path link regression repaired and deployed. CĐ01–12 no non-infographic main-lesson figures; CĐ21–25 already use internal visualization assets. Device visual QA for new CĐ13–17/19–20 group remains owner-pending; JSON-to-SVG engine remains separate GEO-LIB-001 task."
     }
   ]
 }

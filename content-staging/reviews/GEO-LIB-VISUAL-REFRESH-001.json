@@ -1,0 +1,40 @@
+{
+  "schema": "roadmap-geometry-visual-refresh-summary-v1",
+  "date": "2026-09-25",
+  "scope": "Topic main lessons CĐ01–CĐ25; legacy figure replacements concentrated in CĐ13–CĐ20",
+  "status": "CODE_DEPLOYED_CI_PASS_OWNER_VISUAL_QA_PENDING_FOR_NEW_BATCH",
+  "completed_prs": [
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+  ],
+  "ci_evidence": [
+    "https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/36104750711",
+    "https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/36104920809",
+    "https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/36105090022"
+  ],
+  "new_svg_counts": {
+    "topic_13_to_17": 17,
+    "topic_18": 9,
+    "topic_19_to_20": 7,
+    "total": 33
+  },
+  "scope_notes": [
+    "CĐ01–CĐ12 main index pages have no non-infographic image references.",
+    "CĐ13–CĐ17: 17 legacy main-lesson SVG references replaced by original consistent SVGs.",
+    "CĐ18: 8 planned pilot figures plus combined elevation/depression figure added and referenced, owner accepted initial CĐ18 SVG presentation.",
+    "CĐ19–CĐ20: 7 legacy planar lesson SVG references replaced, folder-path regression corrected in PR #84; existing original solid diagrams in CĐ20 retained.",
+    "CĐ21–CĐ25 main lesson diagrams are existing in-repository native SVGs (statistics/probability/modeling/review), not replaced indiscriminately.",
+    "Legacy sources deliberately retained for rollback; separate infographic assets preserved.",
+    "Scope is a main-lesson visual standardization, not an exhaustive re-authoring of all images embedded in every exercise/infographic or a completed JSON-to-SVG renderer."
+  ],
+  "qa_notes": [
+    "CI passes strict MkDocs build, SVG XML integrity and focused filename/path validators; this does not constitute a comprehensive visual or semantic diagram audit.",
+    "The first version of CĐ19–CĐ20 link validator checked filename only and incorrectly passed missing folder paths; PR #84 corrected the paths and validator, CI passed.",
+    "User visual acceptance for newly replaced CĐ13–17/19–20 diagrams not yet collected. Do not label those visuals owner accepted."
+  ],
+  "next_priority": "Resume Golden Template CĐ21–CĐ25 as small Gemini-authored exercise batches, ChatGPT reviews/integrates. Keep GEO-LIB-001 open for reusable JSON-to-SVG engine later."
+}
