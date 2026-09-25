@@ -10,6 +10,8 @@
 
 ## Bắt đầu ôn thi đúng mục tiêu
 
+**Learning Journey Entrance10** vẫn giữ 5 thẻ kiến thức và 15 câu micro-practice hiện có, không khóa KNTT Core.
+
 **CĐ25 gồm hai mạch riêng**: (A) giải Toán – kiểm tra học thuật; (B) kỹ năng ôn, làm và chữa đề. Đừng dùng điểm bài kỹ năng để kết luận đã vững Toán.
 
 <div class="topic25-entry-grid">
