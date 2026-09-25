@@ -42,7 +42,7 @@
 .topic-core-prereq{font-size:.61rem;line-height:1.3;opacity:.67;min-height:1.6rem}
 .topic-core-prereq-compact{display:none}
 .topic-core-prereq-empty{opacity:.45}
-.topic-micro-start{width:100%;margin-top:.1rem;min-height:2.2rem;font-size:.69rem;padding:.38rem .4rem}
+.topic-micro-start{width:100%;margin-top:.1rem;min-height:44px;font-size:.69rem;padding:.38rem .4rem}
 .topic-extension-zone{margin-top:.65rem;padding:.65rem .8rem;border:1px dashed var(--md-default-fg-color--lighter);border-radius:.7rem}
 .topic-extension-zone summary{cursor:pointer;font-weight:700;font-size:.78rem}
 .topic-extension-zone summary span{font-weight:400;opacity:.65;margin-left:.35rem}
@@ -63,15 +63,15 @@
   .topic-core-prereq{font-size:.56rem;min-height:1.45rem}
   .topic-core-card-meta{gap:.18rem}
   .topic-core-card-meta span{font-size:.54rem;padding:.12rem .28rem}
-  .topic-micro-start{font-size:.64rem;min-height:2rem}
+  .topic-micro-start{font-size:.64rem;min-height:44px}
 }
 @container corejourney (max-width:23.99rem){
   .topic-core-journey-head{align-items:flex-start;flex-direction:column}
 }
-.topic-core-card.is-active{grid-column:1/-1;display:grid;grid-template-columns:auto minmax(12rem,18rem) 1fr;align-items:start}
+.topic-core-card.is-active{grid-column:1/-1;display:grid;grid-template-columns:minmax(11rem,16rem) 1fr;gap:.75rem;align-items:start}
 .topic-micro-start{margin-top:.65rem;font-size:.72rem}
 .topic-micro-mount:empty{display:none}
-.topic-micro-panel{grid-column:3;padding:.2rem 0 .2rem .7rem;border-left:1px solid var(--md-default-fg-color--lightest)}
+.topic-micro-panel{grid-column:2;padding:.2rem 0 .2rem .7rem;border-left:1px solid var(--md-default-fg-color--lightest)}
 .topic-micro-meta{font-size:.7rem;font-weight:750;opacity:.65;margin-bottom:.35rem}
 .topic-micro-question{font-weight:700;margin-bottom:.7rem}
 .topic-micro-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem}
