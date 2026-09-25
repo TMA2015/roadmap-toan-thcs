@@ -1,3 +1,4 @@
+<!-- roadmap-academic-capstone-v2 -->
 # Tự kiểm tra học thuật – Chuyên đề 25
 
 > **Thời gian gợi ý:** 60 phút  
