@@ -1,5 +1,5 @@
 {
-  "version": "1.0.24",
+  "version": "1.0.25",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -202,7 +202,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Merge and deploy ALG-BATCH-04-06-001. If CI/deploy passes, close the batch and select the next coherent topic group.",
+    "next_priority": "Produce CĐ08–CĐ10 as the next Golden Template batch from source-locked scope. ChatGPT leads production/schema/source integration; Gemini reviews pedagogy after a complete draft exists.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -218,7 +218,7 @@
     "ui_ux_pilot": "CĐ07 responsive Learning Card grid fixed to size from available content width rather than viewport width; learner-facing technical labels simplified.",
     "micro_practice_evidence": "Observed signals are stored separately from attempted/correct counters. signal_weight 1–2 is salience only and cannot independently create weak-skill/remediation conclusions.",
     "golden_template": "Frozen v1.0 with maintenance hardening v1.0.1: MathJax details re-typeset, touch-safe targets, bottom CTAs and JSON control-character QA. Frozen invariants unchanged.",
-    "golden_rollout": "CĐ04–CĐ06 Golden Template batch authored/integrated from repository source-of-truth after Gemini revision remained blocked. Includes 45 micro items, 30 Core Readiness items, 30 Core written exercises, separated Extension/Challenge, and CĐ04 division-bank coverage."
+    "golden_rollout": "CĐ04–CĐ06 Golden Template batch deployed successfully: CI, strict MkDocs build, Pages deploy and gh-pages smoke checks PASS. CĐ04 Practice Bank now 132 questions with division-by-monomial coverage."
   },
   "handoff_required_fields": [
     "TASK_ID",
@@ -249,6 +249,6 @@
     "next_public_task": "KG-REVIEW-001",
     "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G9-001/",
     "protocol_version": "2.0",
-    "relay_v2": "ALG-BATCH-04-06 production integration prepared by ChatGPT after two blocked Gemini revisions. Accepted pedagogical ideas were retained; rejected Core/schema violations were excluded."
+    "relay_v2": "Routing adjusted after two blocked Gemini authoring revisions: for ALG-BATCH-08-10-001, ChatGPT is production lead and Gemini is downstream pedagogical reviewer."
   }
 }
