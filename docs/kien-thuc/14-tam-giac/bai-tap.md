@@ -1,245 +1,91 @@
-# Bài tập – Chuyên đề 14: Tam giác
+# Practice Room – Chuyên đề 14: Tam giác
 
-> **Mục tiêu:** luyện góc, bất đẳng thức tam giác, tam giác đặc biệt, Pythagore và hai tam giác bằng nhau.
+> **Mục tiêu:** luyện KNTT Core về góc–cạnh, bất đẳng thức, đường vuông góc/đường xiên, đường trung trực và các trường hợp hai tam giác bằng nhau.
 >
-> **Quy ước mã bài:** `14-Mx-yy`.
+> **Geometry rule:** không suy quan hệ từ hình vẽ nếu đề chưa cho hoặc chưa chứng minh.
 
-# Mức 1 – Nhận biết
+## B. ✍️ Luyện tự luận & trình bày
 
-### 14-M1-01
-Tam giác có hai góc \(45^\circ,65^\circ\). Tính góc còn lại.
+### Core KNTT
 
-### 14-M1-02
-Ba đoạn \(4,5,6\) có lập thành tam giác không?
+#### 14-WR-01 · Tổng góc
+Tam giác ABC có \(\angle A=52^\circ,\angle B=68^\circ\). Tính \(\angle C\).
 
-### 14-M1-03
-Ba đoạn \(2,3,6\) có lập thành tam giác không?
+??? example "Xem lời giải"
+    \(\angle C=180^\circ-52^\circ-68^\circ=60^\circ\).
 
-### 14-M1-04
-Tam giác cân có đặc điểm gì về cạnh?
+#### 14-WR-02 · Bất đẳng thức tam giác
+Kiểm tra ba đoạn 4, 7, 12 có tạo thành tam giác không.
 
-### 14-M1-05
-Mỗi góc của tam giác đều bằng bao nhiêu?
+??? example "Xem lời giải"
+    Không, vì \(4+7=11<12\).
 
-### 14-M1-06
-Tam giác vuông tại \(A\). Cạnh huyền là cạnh nào?
+#### 14-WR-03 · Đường vuông góc – đường xiên
+A ngoài d, AH⊥d, B∈d, B≠H. Giải thích vì sao AH<AB.
 
-### 14-M1-07
-Trong \(\triangle ABC\), cạnh đối diện \(\angle A\) là cạnh nào?
+??? example "Xem lời giải"
+    AH là đoạn vuông góc từ A đến d nên ngắn hơn mọi đường xiên từ A tới d.
 
-### 14-M1-08
-Nếu \(AB=AC\), so sánh \(\angle B,\angle C\).
+#### 14-WR-04 · Tam giác cân
+ABC cân tại A và \(\angle A=40^\circ\). Tính hai góc đáy.
 
-### 14-M1-09
-Nêu ba trường hợp bằng nhau cơ bản c.c.c, c.g.c, g.c.g.
+??? example "Xem lời giải"
+    Hai góc đáy bằng nhau và có tổng 140°, nên mỗi góc 70°.
 
-### 14-M1-10
-Tam giác có ba cạnh \(3,4,5\) là tam giác gì?
+#### 14-WR-05 · Đường trung trực
+P nằm trên trung trực AB. Chứng minh PA=PB.
 
-# Mức 2 – Thông hiểu
+??? example "Xem lời giải"
+    Theo tính chất đường trung trực, mọi điểm trên trung trực đoạn AB cách đều A và B.
 
-### 14-M2-01
-\(\triangle ABC\) cân tại \(A\), \(\angle A=40^\circ\). Tính \(\angle B,\angle C\).
+#### 14-WR-06 · Dấu hiệu trung trực
+Biết PA=PB. Kết luận vị trí của P đối với AB.
 
-### 14-M2-02
-Hai cạnh của tam giác dài \(6,9\). Tìm khoảng giá trị của cạnh thứ ba \(x\).
+??? example "Xem lời giải"
+    Theo mệnh đề đảo, P nằm trên đường trung trực AB.
 
-### 14-M2-03
-Tam giác có ba cạnh \(6,8,10\). Chứng minh tam giác vuông.
+#### 14-WR-07 · Tương ứng
+Biết \(\triangle ABC=\triangle MNP\). Liệt kê ba cặp cạnh và ba cặp góc tương ứng.
 
-### 14-M2-04
-Trong \(\triangle ABC\), \(AB>AC\). So sánh \(\angle C,\angle B\).
+??? example "Xem lời giải"
+    A↔M, B↔N, C↔P; AB↔MN, BC↔NP, CA↔PM.
 
-### 14-M2-05
-Nếu \(\triangle ABC=\triangle MNP\), nêu các cặp đỉnh tương ứng.
+#### 14-WR-08 · c.c.c
+AB=DE, BC=EF, CA=FD. Kết luận và ghi đúng thứ tự hai tam giác.
 
-### 14-M2-06
-Tam giác cân tại \(A\) có góc đáy \(70^\circ\). Tính góc đỉnh.
+??? example "Xem lời giải"
+    \(\triangle ABC=\triangle DEF\) theo c.c.c.
 
-### 14-M2-07
-Góc ngoài tại \(C\) của tam giác bằng \(125^\circ\), \(\angle A=55^\circ\). Tính \(\angle B\).
+#### 14-WR-09 · c.g.c
+AB=DE, AC=DF, \(\angle A=\angle D\). Chứng minh hai tam giác bằng nhau.
 
-### 14-M2-08
-Một tam giác có hai cạnh \(5,8\). Với \(x\) nguyên, cạnh thứ ba có thể nhận những giá trị nào?
+??? example "Xem lời giải"
+    Góc A,D là góc xen giữa hai cặp cạnh đã biết, nên \(\triangle ABC=\triangle DEF\) theo c.g.c nếu B↔E,C↔F.
 
-### 14-M2-09
-Tam giác vuông có hai cạnh góc vuông \(5,12\). Tính cạnh huyền.
+#### 14-WR-10 · Tam giác vuông
+Hai tam giác vuông có cạnh huyền và một cạnh góc vuông tương ứng bằng nhau. Nêu kết luận.
 
-### 14-M2-10
-Một học sinh dùng c.g.c nhưng góc được cho không xen giữa hai cạnh. Hãy giải thích lỗi.
+??? example "Xem lời giải"
+    Hai tam giác bằng nhau theo trường hợp cạnh huyền–cạnh góc vuông.
 
-# Mức 3 – Vận dụng
+### Core-Support / kết nối
 
-### 14-M3-01
-\(\triangle ABC\) cân tại \(A\), phân giác \(AM\) của \(\angle A\) cắt \(BC\). Chứng minh \(MB=MC\).
+#### 14-SUP-01 · Pythagore
+Pythagore được giữ như nội dung kết nối sang CĐ18, không tính vào Core Readiness CĐ14.
 
-### 14-M3-02
-Trong \(\triangle ABC\), \(AB=AC\). Trên \(AB,AC\) lấy \(M,N\) sao cho \(AM=AN\). Chứng minh \(BN=CM\).
+### Entrance10 / Extension
 
-### 14-M3-03
-Tam giác vuông \(ABC\) tại \(A\), \(AB=6,AC=8\). Tính \(BC\).
+#### 14-ENT-01 · Chứng minh bằng tam giác bằng nhau
+Chọn hai tam giác phù hợp để suy ra hai đoạn cần chứng minh bằng nhau; luôn ghi đúng thứ tự tương ứng.
 
-### 14-M3-04
-Tam giác có cạnh \(7,24,25\). Chứng minh tam giác vuông.
+## Theo dõi sau khi luyện
+- [ ] Tôi ghép đúng cạnh–góc đối diện.
+- [ ] Tôi hiểu đường vuông góc ngắn hơn đường xiên.
+- [ ] Tôi dùng đúng hai chiều của tính chất đường trung trực.
+- [ ] Tôi viết đúng thứ tự hai tam giác bằng nhau.
+- [ ] Tôi không dùng c.g.c với góc không xen giữa.
 
-### 14-M3-05
-\(\triangle ABC\) có \(\angle A=2\angle B,\angle C=60^\circ\). Tính ba góc.
-
-### 14-M3-06
-Ba cạnh của một tam giác là \(x,7,10\), \(x\) nguyên. Tìm tất cả \(x\).
-
-### 14-M3-07
-\(\triangle ABC\) cân tại \(A\), \(M\) là trung điểm \(BC\). Chứng minh \(AM\perp BC\).
-
-### 14-M3-08
-\(\triangle ABC\) cân tại \(A\), \(M\) là trung điểm \(BC\). Chứng minh \(AM\) là phân giác \(\angle A\).
-
-### 14-M3-09
-Hai tam giác có \(AB=DE, AC=DF,\angle A=\angle D\). Nêu điều kiện để áp dụng c.g.c và kết luận.
-
-### 14-M3-10
-Hai tam giác vuông có cạnh huyền lần lượt bằng nhau và một cạnh góc vuông tương ứng bằng nhau. Kết luận gì?
-
-### 14-M3-11
-Trong \(\triangle ABC\), \(\angle A>\angle B>\angle C\). Sắp xếp các cạnh theo thứ tự tăng dần.
-
-### 14-M3-12
-Tam giác cân có một góc \(60^\circ\). Chứng minh tam giác đều.
-
-### 14-M3-13
-Góc ngoài tại \(A\) bằng \(140^\circ\), hai góc trong không kề có tỉ lệ \(2:3\). Tính hai góc đó.
-
-### 14-M3-14
-Một tam giác có chu vi \(24\), hai cạnh là \(7,9\). Tính cạnh còn lại và kiểm tra điều kiện tồn tại.
-
-# Mức 4 – Tổng hợp / ôn thi
-
-### 14-M4-01
-\(\triangle ABC\) cân tại \(A\), kẻ \(BD\perp AC\), \(CE\perp AB\). Chứng minh \(BD=CE\).
-
-### 14-M4-02
-Trong \(\triangle ABC\), \(M\) là trung điểm \(BC\). Trên tia đối của \(MA\) lấy \(D\) sao cho \(MD=MA\). Chứng minh \(AB=CD\) và \(AC=BD\).
-
-### 14-M4-03
-\(\triangle ABC\) có \(AB=AC\). Điểm \(D\) thuộc \(BC\) và \(\angle BAD=\angle DAC\). Chứng minh \(BD=DC\).
-
-### 14-M4-04
-Tam giác có ba cạnh \(x,x+1,x+2\), \(x>0\). Tìm \(x\) để tam giác vuông.
-
-### 14-M4-05
-Một tam giác có hai cạnh \(8,13\), cạnh thứ ba là số nguyên. Tìm số giá trị có thể có của cạnh thứ ba.
-
-### 14-M4-06
-\(\triangle ABC\) vuông tại \(A\), \(M\) là trung điểm cạnh huyền \(BC\). Biết \(BC=10\). Tính \(MA\) (dùng tính chất trung điểm cạnh huyền nếu đã học; nếu chưa, xem là bài mở rộng).
-
-### 14-M4-07
-\(\triangle ABC\) cân tại \(A\), \(M\in BC\), \(MB=MC\). Chứng minh \(AM\) vừa là đường cao vừa là phân giác.
-
-### 14-M4-08
-Cho hai tam giác bằng nhau \(\triangle ABC=\triangle DEF\). Nếu \(AB=5,BC=7,\angle C=50^\circ\), tìm các yếu tố tương ứng của tam giác \(DEF\).
-
-### 14-M4-09
-Một lời giải kết luận \(M\) là trung điểm \(AB\) chỉ từ \(MA=MB\). Hãy sửa lời giải bằng cách nêu điều kiện còn thiếu.
-
-### 14-M4-10
-Cho \(\triangle ABC\) cân tại \(A\). Lấy \(D\in AC\), \(E\in AB\) sao cho \(AD=AE\). Nối \(BD,CE\). Chứng minh \(\triangle ABD=\triangle ACE\), rồi suy ra \(BD=CE\).
-
-# Đáp án nhanh
-
-| Mã | Đáp án |
-|---|---|
-| 14-M1-01 | \(70^\circ\) |
-| 14-M1-02 | Có |
-| 14-M1-03 | Không |
-| 14-M1-04 | Có hai cạnh bằng nhau |
-| 14-M1-05 | \(60^\circ\) |
-| 14-M1-06 | \(BC\) |
-| 14-M1-07 | \(BC\) |
-| 14-M1-08 | \(\angle B=\angle C\) |
-| 14-M1-09 | c.c.c; c.g.c; g.c.g |
-| 14-M1-10 | Vuông |
-| 14-M2-01 | \(70^\circ,70^\circ\) |
-| 14-M2-02 | \(3<x<15\) |
-| 14-M2-03 | \(6^2+8^2=10^2\) |
-| 14-M2-04 | \(\angle C>\angle B\) |
-| 14-M2-05 | \(A\leftrightarrow M,B\leftrightarrow N,C\leftrightarrow P\) |
-| 14-M2-06 | \(40^\circ\) |
-| 14-M2-07 | \(70^\circ\) |
-| 14-M2-08 | \(x=4,5,\ldots,12\) |
-| 14-M2-09 | \(13\) |
-| 14-M2-10 | Góc phải là góc xen giữa hai cạnh đã biết |
-| 14-M3-01 | \(\triangle ABM=\triangle ACM\) theo c.g.c \(\Rightarrow MB=MC\) |
-| 14-M3-02 | \(\triangle ABN=\triangle ACM\) theo c.g.c |
-| 14-M3-03 | \(10\) |
-| 14-M3-04 | \(7^2+24^2=25^2\) |
-| 14-M3-05 | \(80^\circ,40^\circ,60^\circ\) |
-| 14-M3-06 | \(x=4,5,\ldots,16\) |
-| 14-M3-07 | Hai tam giác \(ABM,ACM\) bằng nhau \(\Rightarrow\) hai góc kề bù tại \(M\) bằng nhau nên đều \(90^\circ\) |
-| 14-M3-08 | Hai tam giác \(ABM,ACM\) bằng nhau |
-| 14-M3-09 | Góc \(A,D\) phải xen giữa hai cặp cạnh tương ứng; hai tam giác bằng nhau |
-| 14-M3-10 | Hai tam giác bằng nhau |
-| 14-M3-11 | \(AB<AC<BC\) |
-| 14-M3-12 | Ba góc đều \(60^\circ\) |
-| 14-M3-13 | \(56^\circ,84^\circ\) |
-| 14-M3-14 | Cạnh còn lại \(8\), tồn tại |
-| 14-M4-01 | \(\triangle ABD=\triangle ACE\) theo cạnh huyền – góc nhọn \(\Rightarrow BD=CE\) |
-| 14-M4-02 | \(\triangle AMB=\triangle DMC\), \(\triangle AMC=\triangle DMB\) |
-| 14-M4-03 | \(\triangle ABD=\triangle ACD\) |
-| 14-M4-04 | \(x=3\) |
-| 14-M4-05 | \(15\) giá trị |
-| 14-M4-06 | \(MA=5\) |
-| 14-M4-07 | Hai tam giác \(ABM,ACM\) bằng nhau |
-| 14-M4-08 | \(DE=5,EF=7,\angle F=50^\circ\) |
-| 14-M4-09 | Cần thêm \(M\in AB\) |
-| 14-M4-10 | \(\triangle ABD=\triangle ACE\) theo c.g.c \(\Rightarrow BD=CE\) |
-
-# Hướng dẫn chọn lọc
-
-## 14-M3-01
-Xét \(\triangle ABM,\triangle ACM\):
-$$
-AB=AC,\quad AM\text{ chung},\quad \angle BAM=\angle MAC.
-$$
-Suy ra hai tam giác bằng nhau theo c.g.c, nên \(MB=MC\).
-
-## 14-M3-07
-Vì \(AB=AC\), \(MB=MC\), \(AM\) chung nên \(\triangle ABM=\triangle ACM\) theo c.c.c.
-Suy ra \(\angle BMA=\angle AMC\). Hai góc này kề bù nên mỗi góc \(90^\circ\).
-
-## 14-M4-02
-Do \(M\) là trung điểm \(BC\), \(MB=MC\). Lại có \(MA=MD\) và \(\angle AMB=\angle DMC\) đối đỉnh.
-Suy ra \(\triangle AMB=\triangle DMC\) theo c.g.c, nên \(AB=CD\). Tương tự suy ra \(AC=BD\).
-
-## 14-M4-04
-Cạnh lớn nhất là \(x+2\). Điều kiện vuông:
-$$
-x^2+(x+1)^2=(x+2)^2
-$$
-$$
-x^2-2x-3=0\Rightarrow x=3\text{ hoặc }x=-1.
-$$
-Nhận \(x=3\).
-
-## 14-M4-05
-Điều kiện:
-$$
-5<x<21.
-$$
-Với \(x\) nguyên: \(6,7,\ldots,20\), có \(15\) giá trị.
-
-> **Mở rộng:** bài 14-M4-06 dùng tính chất trung điểm cạnh huyền trong tam giác vuông; nếu lớp chưa học thì không tính vào ngưỡng bắt buộc.
-
-# Theo dõi tiến độ
-
-- [ ] M1 đạt ít nhất 8/10.
-- [ ] M2 đạt ít nhất 8/10.
-- [ ] M3 đạt ít nhất 10/14.
-- [ ] M4 đã thử ít nhất 5/10.
-- [ ] Tôi không suy luận từ hình vẽ nếu chưa có giả thiết/định lý.
-
-# Liên kết Roadmap
-
-- **← Bài học:** [Chuyên đề 14 – Tam giác](index.md)
-- **← Chuyên đề trước:** [13 – Góc và đường thẳng](../13-goc-va-duong-thang/index.md)
-- **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 14](tu-kiem-tra.md)
-- **→ Chuyên đề tiếp theo:** [15 – Các đường đồng quy](../15-duong-dong-quy/index.md)
+## Liên kết Roadmap
+- **← Học:** [Chuyên đề 14](index.md)
+- **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
+- **→ Tiếp theo:** [15 – Các đường đồng quy](../15-duong-dong-quy/index.md)
