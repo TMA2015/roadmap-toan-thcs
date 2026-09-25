@@ -1,5 +1,5 @@
 {
-  "version": "1.0.30",
+  "version": "1.0.31",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -202,7 +202,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Build Geometry Architecture v1 before Golden Template rollout for CĐ13–CĐ20. Algebra CĐ04–CĐ12 is deployed; Gemini CĐ04–CĐ11 review now uses a source-locked single-file bundle with exact-ID + exact-prompt-quote requirements.",
+    "next_priority": "Continue GEO-BATCH-13-15-001 with CĐ14–CĐ15 after CĐ13 DEPLOYED-PASS. Geometry Architecture v1 is deployed as REVIEW_READY, not frozen, pending independent Gemini review.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -218,7 +218,9 @@
     "ui_ux_pilot": "CĐ07 responsive Learning Card grid fixed to size from available content width rather than viewport width; learner-facing technical labels simplified.",
     "micro_practice_evidence": "Observed signals are stored separately from attempted/correct counters. signal_weight 1–2 is salience only and cannot independently create weak-skill/remediation conclusions.",
     "golden_template": "Frozen v1.0 with maintenance hardening v1.0.1: MathJax details re-typeset, touch-safe targets, bottom CTAs and JSON control-character QA. Frozen invariants unchanged.",
-    "golden_rollout": "CĐ04–CĐ12 DEPLOYED-PASS under Golden Template. CĐ11 adds source-mapped căn bậc ba with 12 real Practice Bank items (120→132); CĐ12 keeps parameter/extended Viète applications outside Core readiness pending item-level review. CI, strict MkDocs build and Pages deploy pass."
+    "golden_rollout": "CĐ04–CĐ12 DEPLOYED-PASS under Golden Template. CĐ11 adds source-mapped căn bậc ba with 12 real Practice Bank items (120→132); CĐ12 keeps parameter/extended Viète applications outside Core readiness pending item-level review. CI, strict MkDocs build and Pages deploy pass.",
+    "geometry_architecture": "v1 REVIEW_READY deployed: proof/statement/diagram contracts, 8-topic Core coverage matrix, benchmark BENCH-GEO-001 and source-locked Gemini architecture review bundle.",
+    "geometry_rollout": "CĐ13 DEPLOYED-PASS: 21/21 mapped Core skill IDs covered; Practice Bank 120→156 with 36 gap-fill items; 5 Learning Cards, 15 micro, 10 Readiness; no visual-inference rule enforced."
   },
   "handoff_required_fields": [
     "TASK_ID",
@@ -246,9 +248,9 @@
     "offline_relay_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/offline-relay/",
     "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
     "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
-    "next_public_task": "GEO-ARCH-V1-001",
-    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-review-04-11.json",
+    "next_public_task": "GEO13-GEMINI-REVIEW-001",
+    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo13-review.json",
     "protocol_version": "2.0",
-    "relay_v2": "External review is now source-locked: CI publishes one CĐ04–CĐ11 JSON bundle; Gemini corrections require an existing source ID plus exact current prompt quote, or source_path + heading + exact quote for prose."
+    "relay_v2": "Geometry reviews are source-locked. Architecture bundle and CĐ13 bundle require exact source quote + exact existing ID for item corrections; diagram appearance cannot establish a mathematical fact."
   }
 }

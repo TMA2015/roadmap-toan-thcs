@@ -276,9 +276,40 @@
       "id": "GEO-ARCH-V1-001",
       "title": "Geometry Architecture v1 before CĐ13–CĐ20 rollout",
       "routing": "CHATGPT_ARCHITECTURE_LEAD+GEMINI_GEOMETRY_REVIEW",
-      "status": "OPEN",
-      "context_version": "1.0.30",
-      "review_notes": "Define theorem/figure/proof/diagram contracts, Core-vs-Extension boundaries, SVG-first geometry QA, and reusable Golden Template mapping before migrating geometry topics."
+      "status": "REVIEW_READY",
+      "context_version": "1.0.31",
+      "review_notes": "PR #69 deployed successfully. Geometry QA, coverage drift checks, BENCH-GEO-001, review-bundle build, strict MkDocs and Pages deploy pass. Architecture remains unfrozen pending independent review.",
+      "review_verdict": "DEPLOYED-REVIEW-READY",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/geometry-architecture-v1.json",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geometry-architecture-v1.json"
+    },
+    {
+      "id": "GEO13-GOLDEN-001",
+      "title": "Golden Geometry rollout CĐ13 – Góc và đường thẳng",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_GEOMETRY_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.31",
+      "review_verdict": "DEPLOYED-PASS",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/kien-thuc/13-goc-va-duong-thang/",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo13-review.json",
+      "review_notes": "PR #70 deployed successfully. CĐ13 has 21/21 mapped Core exact IDs, 156 Practice Bank items, 5 Learning Cards, 15 micro-practice, 10 Readiness MCQ and proof-language/Euclid coverage."
+    },
+    {
+      "id": "GEO13-GEMINI-REVIEW-001",
+      "title": "Independent source-locked pedagogical/math review CĐ13",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "READY",
+      "context_version": "1.0.31",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo13-review.json",
+      "review_notes": "Review must cite exact existing item ID + exact current prompt quote; prose issues use source_path + heading + exact quote; no visual inference."
+    },
+    {
+      "id": "GEO-BATCH-13-15-001",
+      "title": "Golden Geometry foundational batch CĐ13–CĐ15",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_GEOMETRY_REVIEW",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.31",
+      "review_notes": "CĐ13 DEPLOYED-PASS. Next: resolve CĐ14 semantic/cross-topic Core gaps and CĐ15 dong-quy-bon-duong-dac-biet gap, then migrate CĐ14–CĐ15."
     }
   ]
 }
