@@ -39,7 +39,7 @@ check(q[5].question.includes("số lượt")&&!q[5].question.includes("tổng s�
 check(q[13].question.includes("tivi và tủ lạnh")&&!q[13].question.includes("bán máy tính"),"014 scope wording");
 check(40+50+45===135&&30+60+55===145&&60-50===10,"005 double-bar values");
 check((10+15)/(12+8)===1.25&&q[5].options[q[5].answer]==="5/4","006 ratio");
-check(300*0.4===120&&360*0.4===144&&200*(0.45-0.15-0.10)===40,"008/009 pie data");
+check(300*0.4===120&&360*0.4===144&&Math.abs(200*(0.45-0.15-0.10)-40)<1e-9,"008/009 pie data");
 check(180/30===6&&16/40===0.4&&35/40===0.875&&32/40===0.8,"012/013/015 arithmetic");
 check((30+50)-(20+40)===20,"014 aggregation");
 const js=fs.readFileSync(path.join(root,"docs/assets/javascripts/topic-workspace-v1.js"),"utf8");
