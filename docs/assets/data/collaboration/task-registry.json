@@ -249,10 +249,10 @@
       "id": "ALG-BATCH-08-10-001",
       "title": "Golden Template batch production CĐ08–CĐ10",
       "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_PEDAGOGICAL_REVIEW",
-      "status": "READY",
-      "context_version": "1.0.26",
-      "review_verdict": "QA-READY",
-      "review_notes": "Complete ChatGPT-produced Golden batch ready for deploy QA: 5 cards + 15 micro + 10 Core Readiness + 10 written Core per topic. CĐ08 bank expanded 120→132 for bat-dang-thuc and order properties. CĐ09 excludes tham-so-he. CĐ10 excludes layer-review line-intersection/system-link skills from Core."
+      "status": "DUAL-CHECK",
+      "context_version": "1.0.27",
+      "review_verdict": "DEPLOYED-AWAITING-PEDAGOGICAL-REVIEW",
+      "review_notes": "Complete Golden batch deployed successfully in PR #64. CI, dedicated batch validator, strict MkDocs build and gh-pages smoke check PASS. Gemini review is now issue-level pedagogy/math QA only; source scope and schema remain ChatGPT-controlled."
     }
   ]
 }
