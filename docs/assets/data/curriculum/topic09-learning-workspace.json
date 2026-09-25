@@ -1,0 +1,149 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "09-he-phuong-trinh",
+  "title": "Hệ phương trình bậc nhất hai ẩn",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only Core cards contribute to readiness. Entrance10 and Challenge never gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "sys09-core-1",
+      "order": 1,
+      "title": "Phương trình hai ẩn & nghiệm hệ",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nghiem-pt-hai-an",
+        "nghiem-he",
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_001",
+        "SYS09MICRO_002",
+        "SYS09MICRO_003"
+      ]
+    },
+    {
+      "id": "sys09-core-2",
+      "order": 2,
+      "title": "Giải hệ bằng phương pháp thế",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "giai-he-the"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_004",
+        "SYS09MICRO_005",
+        "SYS09MICRO_006"
+      ]
+    },
+    {
+      "id": "sys09-core-3",
+      "order": 3,
+      "title": "Cộng đại số & biến đổi trước giải",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "giai-he-cong",
+        "bien-doi-truoc-giai"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_007",
+        "SYS09MICRO_008",
+        "SYS09MICRO_009"
+      ]
+    },
+    {
+      "id": "sys09-core-4",
+      "order": 4,
+      "title": "Chọn phương pháp & kiểm tra nghiệm",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "chon-phuong-phap",
+        "kiem-tra-nghiem-he"
+      ],
+      "prerequisites": [
+        "giai-he-the",
+        "giai-he-cong"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_010",
+        "SYS09MICRO_011",
+        "SYS09MICRO_012"
+      ]
+    },
+    {
+      "id": "sys09-core-5",
+      "order": 5,
+      "title": "Lập hệ từ bài toán",
+      "kntt_lessons": [
+        "Ứng dụng Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "lap-he-bai-toan",
+        "bai-toan-so",
+        "chuyen-dong-he",
+        "nang-suat-he"
+      ],
+      "prerequisites": [
+        "giai-he-the",
+        "giai-he-cong"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_013",
+        "SYS09MICRO_014",
+        "SYS09MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "sys09-ent10-1",
+      "layer": "Entrance10",
+      "title": "Hệ có tham số",
+      "gates_core": false
+    },
+    {
+      "id": "sys09-ent10-2",
+      "layer": "Entrance10",
+      "title": "Bài toán thực tế nhiều bước",
+      "gates_core": false
+    },
+    {
+      "id": "sys09-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Hệ biến đổi cấu trúc nâng cao",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/09-he-phuong-trinh-micro-v1.json",
+  "observed_signal_policy": {
+    "rule": "Signals are observations only; they never create causal remediation without sufficient learner evidence and a reviewed rule."
+  },
+  "qa_notes": [
+    "tham-so-he is excluded from Core readiness.",
+    "Geometric interpretation of a system is kept as Core Grade 9 knowledge."
+  ]
+}

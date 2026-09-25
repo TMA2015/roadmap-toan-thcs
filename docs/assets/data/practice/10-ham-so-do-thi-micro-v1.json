@@ -1,0 +1,647 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "FUN10-MICRO-V1",
+  "topic": {
+    "id": "10-ham-so-do-thi",
+    "title": "Hàm số và đồ thị"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "FUN10MICRO_001",
+      "card_id": "fun10-core-1",
+      "micro_role": "base",
+      "question": "Quan hệ nào mô tả một hàm số y của x?",
+      "options": [
+        "Mỗi x xác định duy nhất một y.",
+        "Một x có thể có hai y khác nhau.",
+        "Mỗi y phải xác định duy nhất một x.",
+        "x và y phải luôn bằng nhau."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "khai-niem-ham-so"
+        ],
+        "type": "khai-niem-ham-so",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Định nghĩa hàm số yêu cầu mỗi x trong tập xác định ứng với duy nhất một y.",
+      "hints": [
+        "Tập trung vào số giá trị y ứng với một x.",
+        "Một x không được có hai đầu ra khác nhau."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_002",
+      "card_id": "fun10-core-1",
+      "micro_role": "trap",
+      "question": "Cho \\(f(x)=2x-3\\). \\(f(-2)=\\)",
+      "options": [
+        "-7",
+        "1",
+        "-1",
+        "7"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "tinh-gia-tri-ham"
+        ],
+        "type": "tinh-gia-tri-ham",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "2·(-2)-3=-4-3=-7.",
+      "hints": [
+        "Thay x=-2 có ngoặc.",
+        "2(-2)=-4."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "thay-so-am-sai-dau",
+          "signal_weight": 2,
+          "feedback_hint": "Khi thay số âm, hãy giữ ngoặc và thực hiện phép nhân trước."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_003",
+      "card_id": "fun10-core-1",
+      "micro_role": "apply",
+      "question": "Với \\(y=x+2\\), cặp giá trị đúng khi \\(x=3\\) là:",
+      "options": [
+        "\\((3;5)\\)",
+        "\\((3;1)\\)",
+        "\\((5;3)\\)",
+        "\\((2;5)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "bang-gia-tri"
+        ],
+        "type": "bang-gia-tri",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "x=3 thì y=5.",
+      "hints": [
+        "Thay 3 vào công thức.",
+        "Cặp viết theo thứ tự (x;y)."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_004",
+      "card_id": "fun10-core-2",
+      "micro_role": "base",
+      "question": "Điểm \\(A(-2;3)\\) có hoành độ là:",
+      "options": [
+        "-2",
+        "3",
+        "2",
+        "-3"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "toa-do-diem"
+        ],
+        "type": "toa-do-diem",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Tọa độ điểm viết theo thứ tự (x;y); hoành độ là số thứ nhất.",
+      "hints": [
+        "Hoành độ đứng trước.",
+        "Đọc cặp (x;y)."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_005",
+      "card_id": "fun10-core-2",
+      "micro_role": "trap",
+      "question": "Điểm nào thuộc đồ thị \\(y=2x+1\\)?",
+      "options": [
+        "\\((2;5)\\)",
+        "\\((2;4)\\)",
+        "\\((1;1)\\)",
+        "\\((0;0)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "diem-thuoc-do-thi"
+        ],
+        "type": "diem-thuoc-do-thi",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Với x=2, y=2·2+1=5.",
+      "hints": [
+        "Thay hoành độ vào công thức.",
+        "So sánh kết quả với tung độ."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "diem-thuoc-do-thi-khong-thay-du",
+          "signal_weight": 2,
+          "feedback_hint": "Cần kiểm tra chính xác y=f(x), không chỉ nhìn điểm gần đúng."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_006",
+      "card_id": "fun10-core-2",
+      "micro_role": "apply",
+      "question": "Điểm có hoành độ 4 và tung độ -1 được viết là:",
+      "options": [
+        "\\((4;-1)\\)",
+        "\\((-1;4)\\)",
+        "\\((4;1)\\)",
+        "\\((-4;1)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "toa-do-diem"
+        ],
+        "type": "toa-do-diem",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tọa độ viết (hoành độ;tung độ).",
+      "hints": [
+        "x đứng trước y.",
+        "Giữ nguyên dấu của từng tọa độ."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_007",
+      "card_id": "fun10-core-3",
+      "micro_role": "base",
+      "question": "Hàm số nào là hàm bậc nhất?",
+      "options": [
+        "\\(y=2x-3\\)",
+        "\\(y=x^2+1\\)",
+        "\\(y=5\\)",
+        "\\(y=1/x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "nhan-biet-ham-bac-nhat"
+        ],
+        "type": "nhan-biet-ham-bac-nhat",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Hàm bậc nhất có dạng y=ax+b với a≠0.",
+      "hints": [
+        "Tìm dạng ax+b.",
+        "Hệ số a phải khác 0."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_008",
+      "card_id": "fun10-core-3",
+      "micro_role": "trap",
+      "question": "Hệ số góc của \\(y=-3x+5\\) là:",
+      "options": [
+        "-3",
+        "5",
+        "3",
+        "-5"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "he-so-goc"
+        ],
+        "type": "he-so-goc",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trong y=ax+b, hệ số góc là a.",
+      "hints": [
+        "Nhìn hệ số đứng trước x.",
+        "Đừng nhầm với tung độ gốc b."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "nham-he-so-goc-voi-tung-do-goc",
+          "signal_weight": 2,
+          "feedback_hint": "Hệ số góc là hệ số của x, không phải hằng số b."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_009",
+      "card_id": "fun10-core-3",
+      "micro_role": "apply",
+      "question": "Đồ thị \\(y=4x-2\\) cắt trục Oy tại:",
+      "options": [
+        "\\((0;-2)\\)",
+        "\\((-2;0)\\)",
+        "\\((0;4)\\)",
+        "\\((4;0)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "tung-do-goc"
+        ],
+        "type": "tung-do-goc",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trên Oy, x=0 nên y=-2.",
+      "hints": [
+        "Cho x=0.",
+        "Điểm cắt Oy có hoành độ 0."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_010",
+      "card_id": "fun10-core-4",
+      "micro_role": "base",
+      "question": "Hàm \\(y=-2x+1\\) là:",
+      "options": [
+        "Nghịch biến",
+        "Đồng biến",
+        "Hàm hằng",
+        "Không xác định"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "dong-nghich-bien"
+        ],
+        "type": "dong-nghich-bien",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Hệ số góc -2<0 nên hàm nghịch biến.",
+      "hints": [
+        "Xét dấu của a.",
+        "a<0 → nghịch biến."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_011",
+      "card_id": "fun10-core-4",
+      "micro_role": "trap",
+      "question": "Để vẽ đường thẳng \\(y=2x+1\\), tối thiểu cần xác định:",
+      "options": [
+        "Hai điểm phân biệt thuộc đồ thị.",
+        "Một điểm bất kỳ.",
+        "Ba điểm bắt buộc.",
+        "Chỉ tung độ gốc."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "ve-do-thi-ham-bac-nhat"
+        ],
+        "type": "ve-do-thi-ham-bac-nhat",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Một đường thẳng được xác định bởi hai điểm phân biệt.",
+      "hints": [
+        "Một điểm chưa đủ xác định duy nhất đường thẳng.",
+        "Chọn hai giá trị x thuận tiện."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "ve-duong-thang-mot-diem",
+          "signal_weight": 2,
+          "feedback_hint": "Một điểm không xác định duy nhất một đường thẳng."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_012",
+      "card_id": "fun10-core-4",
+      "micro_role": "apply",
+      "question": "Hai điểm thuận tiện để vẽ \\(y=x-2\\) là:",
+      "options": [
+        "\\((0;-2)\\), \\((2;0)\\)",
+        "\\((0;2)\\), \\((2;0)\\)",
+        "\\((0;-2)\\), \\((-2;0)\\)",
+        "\\((1;2)\\), \\((2;1)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "ve-do-thi-ham-bac-nhat"
+        ],
+        "type": "ve-do-thi-ham-bac-nhat",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Cho x=0 được (0,-2); cho y=0 được (2,0).",
+      "hints": [
+        "Dùng giao với hai trục.",
+        "Cho x=0 và y=0."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_013",
+      "card_id": "fun10-core-5",
+      "micro_role": "base",
+      "question": "Với \\(y=2x^2\\), khi \\(x=-3\\) thì \\(y=\\)",
+      "options": [
+        "18",
+        "-18",
+        "12",
+        "6"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "ham-y-ax2"
+        ],
+        "type": "ham-y-ax2",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "y=2·(-3)^2=18.",
+      "hints": [
+        "Bình phương trước.",
+        "(-3)^2=9."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_014",
+      "card_id": "fun10-core-5",
+      "micro_role": "trap",
+      "question": "Đồ thị \\(y=-x^2\\) có đặc điểm đúng là:",
+      "options": [
+        "Đối xứng qua Oy và mở xuống.",
+        "Đối xứng qua Ox và mở xuống.",
+        "Đối xứng qua Oy và mở lên.",
+        "Không có trục đối xứng."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "doi-xung-parabol"
+        ],
+        "type": "doi-xung-parabol",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dạng y=ax² đối xứng qua Oy; a<0 nên mở xuống.",
+      "hints": [
+        "Dạng đặc biệt y=ax² có trục đối xứng Oy.",
+        "Dấu của a quyết định hướng mở."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "nham-truc-doi-xung-parabol",
+          "signal_weight": 2,
+          "feedback_hint": "Với y=ax², trục đối xứng là Oy, không phải Ox."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FUN10MICRO_015",
+      "card_id": "fun10-core-5",
+      "micro_role": "apply",
+      "question": "Điểm nào thuộc \\(y=x^2\\)?",
+      "options": [
+        "\\((-2;4)\\)",
+        "\\((-2;-4)\\)",
+        "\\((2;2)\\)",
+        "\\((1;-1)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "ham-so-do-thi",
+        "skill": [
+          "diem-thuoc-parabol"
+        ],
+        "type": "diem-thuoc-parabol",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "(-2)^2=4.",
+      "hints": [
+        "Thay hoành độ vào x².",
+        "Bình phương luôn không âm."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

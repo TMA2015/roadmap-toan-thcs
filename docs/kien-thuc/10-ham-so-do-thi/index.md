@@ -315,7 +315,7 @@ Cách nhìn này giúp tránh học thuộc rời rạc “`a` là hệ số gó
 
 ---
 
-### 3.6. Vị trí tương đối của hai đường thẳng
+### 3.6. Mở rộng / Entrance10 – Vị trí tương đối của hai đường thẳng
 
 Xét:
 
@@ -369,7 +369,7 @@ thì hai đường thẳng trùng nhau.
 
 ---
 
-### 3.7. Giao điểm của hai đồ thị
+### 3.7. Mở rộng / Entrance10 – Giao điểm của hai đồ thị
 
 Giả sử:
 
@@ -775,102 +775,37 @@ Không dùng dấu của `b` để kết luận.
 
 ---
 
-## 📝 8. Luyện tập
+## 📝 8. Luyện tập tiếp theo
 
-### Mức 1 – Nhận biết
+Micro-practice trong các Learning Cards dùng để kiểm tra nhanh ngay sau khi học. Khi muốn luyện sâu hơn, luyện từng skill hoặc làm bài tự luận, hãy chuyển sang **Practice Room**.
 
-1. Tính `f(2)` với `f(x) = 3x - 1`.
-2. Điểm `A(1; 4)` có thuộc `y = 3x + 1` không?
-3. Xác định hệ số góc và tung độ gốc của `y = -2x + 5`.
-4. Hàm số `y = 4x - 3` đồng biến hay nghịch biến?
-5. Xác định giao điểm của `y = 2x + 4` với trục `Oy`.
+[🎯 Mở Practice Room – Chuyên đề 10](bai-tap.md){ .md-button .md-button--primary }
 
----
+Trong Practice Room:
 
-### Mức 2 – Thông hiểu
+- **Luyện nhanh tương tác:** Practice Engine chọn câu từ ngân hàng lớn, có feedback, gợi ý và Tutor.
+- **Luyện tự luận & trình bày:** tự giải trên giấy/vở rồi mở gợi ý hoặc lời giải để tự đối chiếu.
+- Core / Entrance10 / Challenge được tách rõ.
 
-1. Vẽ đồ thị `y = 2x - 2`.
-2. Tìm giao điểm với hai trục của `y = -x + 3`.
-3. Xét vị trí hai đường thẳng `y = 2x + 1` và `y = 2x - 4`.
-4. Tìm `m` để điểm `A(2; 7)` thuộc `y = mx + 1`.
-5. Tìm giao điểm của `y = x + 1` và `y = -x + 5`.
+!!! info "Phân biệt mục đích"
+    Micro-practice kiểm tra hiểu ngay; Practice Room dùng để **rèn kỹ năng**. Kết quả luyện tập là formative evidence, không phải điểm kiểm tra cuối chuyên đề.
 
 ---
 
-### Mức 3 – Vận dụng
+## ✅ 9. Tự kiểm tra mức độ sẵn sàng
 
-1. Tìm `m` để hai đường thẳng `y = (m - 1)x + 2` và `y = 3x - 4` song song.
-2. Tìm `m` để hai đường thẳng trên cắt nhau.
-3. Viết phương trình đường thẳng có hệ số góc `2` và đi qua `A(1; 5)`.
-4. Viết phương trình đường thẳng đi qua hai điểm `A(0; 2)` và `B(2; 6)`.
-5. Tìm tọa độ giao điểm và kiểm tra lại bằng cách thay vào cả hai phương trình.
+Khi đã luyện tương đối chắc, hãy làm **Core Readiness Check**.
 
----
+[✅ Bắt đầu Core Readiness Check](tu-kiem-tra.md){ .md-button .md-button--primary }
 
-### Mức 4 – Nâng cao / tổng hợp
+Trong Readiness Check:
 
-1. Cho `d: y = (m + 1)x + 2m`. Tìm `m` để `d` đi qua điểm `A(1; 5)`.
-2. Tìm `m` để `d₁: y = (2m - 1)x + 3` song song với `d₂: y = 5x - 2`.
-3. Cho hai đường thẳng phụ thuộc tham số. Xác định số nghiệm của hệ dựa trên vị trí tương đối của hai đồ thị.
-4. Tìm tham số để giao điểm của hai đường thẳng nằm trên trục `Ox`.
-5. Xét giao điểm của đường thẳng và parabol trong trường hợp đơn giản, từ đó liên hệ số giao điểm với số nghiệm phương trình.
-
----
-
-## ✅ 9. Tự kiểm tra
-
-### Mini quiz
-
-#### Câu 1
-
-Hệ số góc của `y = -3x + 2` là:
-
-A. `2`
-B. `-3`
-C. `3`
-D. `-2`
-
-#### Câu 2
-
-Hai đường thẳng `y = 2x + 1` và `y = 2x - 5`:
-
-A. cắt nhau
-B. song song
-C. trùng nhau
-D. vuông góc
-
-#### Câu 3
-
-Điểm `A(2; 7)` có thuộc `y = 3x + 1` không?
-
-#### Câu 4
-
-Hàm số `y = -4x + 5` là đồng biến hay nghịch biến?
-
-#### Câu 5
-
-Tìm giao điểm của:
-
-`y = x + 2`
-
-và:
-
-`y = -x + 4`.
-
-#### Đáp án
-
-1. B
-2. B
-3. Có, vì `3·2 + 1 = 7`
-4. Nghịch biến
-5. `I(1; 3)`
-
-#### Tự đánh giá
-
-- 5/5: nắm chắc nền tảng
-- 4/5: tốt, nên kiểm tra lại lỗi nhỏ
-- 3/5: cần luyện thêm phần đồ thị và giao điểm
-- dưới 3/5: nên học lại phần kiến thức cốt lõi trước khi sang bài tham số
+- không hint và không Tutor khi đang làm;
+- không báo đúng/sai từng câu;
+- chỉ chấm sau khi bấm **Nộp bài**;
+- kết quả phân tích theo assessed skill;
+- là **Soft Mastery**: không khóa chuyên đề tiếp theo;
+- Entrance10 / Challenge không tính vào Core readiness.
 
 ---
 
@@ -912,15 +847,30 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi học sinh có phần lớn các bằng chứng sau:
 
-- [ ] Tính đúng giá trị hàm số.
-- [ ] Kiểm tra đúng một điểm có thuộc đồ thị hay không.
-- [ ] Vẽ được đường thẳng từ hai điểm.
-- [ ] Xác định đúng hệ số góc và tung độ gốc.
-- [ ] Phân biệt được cắt nhau, song song và trùng nhau.
-- [ ] Tìm được giao điểm hai đường thẳng bằng đại số.
-- [ ] Hiểu giao điểm đồ thị chính là nghiệm chung của hai phương trình.
-- [ ] Giải được bài tham số cơ bản về điểm thuộc đồ thị và vị trí hai đường thẳng.
-- [ ] Nhận biết được parabol `y = ax²` ở mức chuẩn bị cho phương trình bậc hai.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra, chữa xong các câu sai và làm chắc bài tập Mức 1–2.
+- [ ] Hiểu và giải thích được các quy tắc Core của chuyên đề.
+- [ ] Làm tương đối ổn định các skill Core trong Practice Room.
+- [ ] Không lặp lại ổn định cùng một lỗi nền tảng sau khi đã được chữa.
+- [ ] Core Readiness Check đạt khoảng **80%** hoặc học sinh đã hiểu và chữa được các lỗi còn lại.
+- [ ] Có thể trình bày ít nhất một số bài tự luận Core mà không mở lời giải trước.
+
+!!! note "Soft Mastery"
+    Không cần đạt 100% mới được học tiếp. Nếu Readiness Check cho thấy một vài kỹ năng còn yếu, hệ thống khuyến nghị luyện lại đúng kỹ năng đó; học sinh vẫn có thể chuyển sang chuyên đề tiếp theo.
+
+!!! warning "Core độc lập Extension"
+    Entrance10 và Specialized-Challenge không phải điều kiện để hoàn thành KNTT Core.
+
+---
+
+## ➡️ Tiếp tục học
+
+<div class="topic-workspace-actions" markdown>
+
+[🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
+
+[✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
+
+[→ 11 – Căn thức và biến đổi căn thức](../11-can-thuc/index.md){ .md-button }
+
+</div>

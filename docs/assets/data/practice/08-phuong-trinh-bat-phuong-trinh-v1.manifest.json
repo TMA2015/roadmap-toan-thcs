@@ -7,7 +7,7 @@
     "title": "Phương trình và bất phương trình"
   },
   "session_size": 10,
-  "question_count": 120,
+  "question_count": 132,
   "skill_labels": {
     "nghiem-phuong-trinh": "Khái niệm nghiệm phương trình",
     "pt-bac-nhat": "Phương trình bậc nhất",
@@ -22,7 +22,10 @@
     "giao-tap-nghiem": "Giao các tập nghiệm",
     "lap-phuong-trinh": "Lập phương trình từ bài toán",
     "lap-bat-phuong-trinh": "Lập bất phương trình từ bài toán",
-    "tham-so-co-ban": "Biện luận tham số cơ bản"
+    "tham-so-co-ban": "Biện luận tham số cơ bản",
+    "bat-dang-thuc": "Khái niệm bất đẳng thức",
+    "tinh-chat-thu-tu-phep-cong": "Tính chất thứ tự với phép cộng",
+    "tinh-chat-thu-tu-phep-nhan": "Tính chất thứ tự với phép nhân"
   },
   "skill_groups": [
     {
@@ -48,6 +51,9 @@
       "id": "C",
       "label": "C. Bất phương trình và tập nghiệm",
       "skills": [
+        "tinh-chat-thu-tu-phep-nhan",
+        "tinh-chat-thu-tu-phep-cong",
+        "bat-dang-thuc",
         "bpt-bac-nhat",
         "doi-chieu-bpt",
         "bieu-dien-tap-nghiem",
@@ -68,6 +74,7 @@
     "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
     "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
     "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
-    "08-phuong-trinh-bat-phuong-trinh-v1-04.json"
+    "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+    "08-phuong-trinh-bat-phuong-trinh-v1-05.json"
   ]
 }

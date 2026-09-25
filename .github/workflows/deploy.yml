@@ -33,6 +33,9 @@ jobs:
       - name: Run Learning Card micro-practice QA
         run: node scripts/test-learning-card-micro-practice.js
 
+      - name: Run Golden batch CĐ08-CĐ10 QA
+        run: node scripts/test-golden-batch-08-10.js
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 

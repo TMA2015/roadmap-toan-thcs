@@ -29,6 +29,27 @@ const TOPICS={
    description:"Cầu nối từ phân tích đa thức đến phương trình chứa ẩn ở mẫu.",
    chips:["KNTT Core","Lớp 8","Đại số","⭐⭐⭐⭐⭐"],
    progressSkills:["nhan-biet-phan-thuc","dieu-kien-xac-dinh","rut-gon-phan-thuc","quy-dong-mau-thuc","cong-tru-phan-thuc","nhan-phan-thuc","chia-phan-thuc"]
+ } ,
+ "08-phuong-trinh-bat-phuong-trinh":{
+   number:"08",
+   data:"assets/data/curriculum/topic08-learning-workspace.json",
+   description:"Từ phương trình bậc nhất đến phương trình tích, chứa mẫu và bất phương trình theo mạch lớp 8–9.",
+   chips:["KNTT Core","Lớp 8–9","Đại số","⭐⭐⭐⭐⭐"],
+   progressSkills:["nghiem-phuong-trinh","pt-bac-nhat","bien-doi-pt-nhieu-buoc","pt-tich","dkxd-phuong-trinh-mau","khu-mau-phuong-trinh","doi-chieu-nghiem","bat-dang-thuc","tinh-chat-thu-tu-phep-cong","tinh-chat-thu-tu-phep-nhan","bpt-bac-nhat","doi-chieu-bpt","bieu-dien-tap-nghiem","lap-phuong-trinh"]
+ },
+ "09-he-phuong-trinh":{
+   number:"09",
+   data:"assets/data/curriculum/topic09-learning-workspace.json",
+   description:"Từ phương trình hai ẩn đến nghiệm hệ, phương pháp thế/cộng đại số và mô hình hóa bài toán.",
+   chips:["KNTT Core","Lớp 9","Đại số","⭐⭐⭐⭐⭐"],
+   progressSkills:["nghiem-pt-hai-an","nghiem-he","so-nghiem-he","y-nghia-hinh-hoc","giai-he-the","giai-he-cong","chon-phuong-phap","bien-doi-truoc-giai","kiem-tra-nghiem-he","lap-he-bai-toan","bai-toan-so","chuyen-dong-he","nang-suat-he"]
+ },
+ "10-ham-so-do-thi":{
+   number:"10",
+   data:"assets/data/curriculum/topic10-learning-workspace.json",
+   description:"Kết nối công thức, bảng giá trị, tọa độ, đường thẳng và parabol y=ax².",
+   chips:["KNTT Core","Lớp 8–9","Đại số","⭐⭐⭐⭐⭐"],
+   progressSkills:["khai-niem-ham-so","tinh-gia-tri-ham","bang-gia-tri","toa-do-diem","diem-thuoc-do-thi","nhan-biet-ham-bac-nhat","he-so-goc","tung-do-goc","dong-nghich-bien","ve-do-thi-ham-bac-nhat","ham-y-ax2","doi-xung-parabol","diem-thuoc-parabol"]
  }
 };
 
@@ -54,7 +75,12 @@ const SKILL_LABELS={
  "lap-phuong-tong":"lập phương tổng",
  "lap-phuong-hieu":"lập phương hiệu",
  "nhom-hang-tu":"nhóm hạng tử",
- "phoi-hop-phuong-phap":"phối hợp phương pháp"
+ "phoi-hop-phuong-phap":"phối hợp phương pháp",
+  "mat-phang-toa-do":"mặt phẳng tọa độ",
+  "bieu-thuc-dai-so":"biểu thức đại số",
+  "phep-tinh-so-huu-ti":"phép tính số hữu tỉ",
+  "phan-thuc-dai-so":"phân thức đại số",
+  "phan-tich-da-thuc":"phân tích đa thức"
 };
 const skillLabel=id=>SKILL_LABELS[id]||String(id||"").replaceAll("-"," ");
 
@@ -91,7 +117,7 @@ const renderTutor=async(panel,question,selectedText,graph)=>{
  panel.hidden=false;panel.innerHTML="<strong>🤖 Gia sư đang xem evidence…</strong>";
  try{
   const skill=(question.tags?.skill||[])[0];const stats=loadStats();
-  const context=window.RoadmapTutor.buildContext({projectContextVersion:"1.0.24",layer:"KNTT-Core",gradeOverlay:questionGrade(question),skill,question,learnerAnswer:selectedText,hintLevel:0,stats,graph,recovery:{events:[]}});
+  const context=window.RoadmapTutor.buildContext({projectContextVersion:"1.0.26",layer:"KNTT-Core",gradeOverlay:questionGrade(question),skill,question,learnerAnswer:selectedText,hintLevel:0,stats,graph,recovery:{events:[]}});
   const response=await window.RoadmapTutor.run({provider:"mock",context});
   panel.innerHTML=`<strong>🤖 Gia sư · QA local</strong><div>${response.message}</div><div class="topic-micro-note">${response.confidence==="evidenced"?"Dựa trên learner evidence đủ ngưỡng.":"Tín hiệu sai chỉ là gợi ý, chưa phải kết luận điểm yếu."}</div>`;
   if(response.action_type==="REMEDIATE"&&response.target_skill){const topic=graph?.nodes?.[response.target_skill]?.topic;if(topic){const a=document.createElement("a");a.className="md-button";a.textContent=`Ôn ngay: ${skillLabel(response.target_skill)}`;a.href=`${siteRoot()}/kien-thuc/${topic}/bai-tap/?focus=${encodeURIComponent(response.target_skill)}&mode=remediation`;panel.appendChild(a)}}
