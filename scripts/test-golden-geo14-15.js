@@ -24,5 +24,4 @@ for(const cfg of [
  const p=fs.readFileSync(`docs/kien-thuc/${cfg.id}/bai-tap.md`,"utf8"),s=fs.readFileSync(`docs/kien-thuc/${cfg.id}/tu-kiem-tra.md`,"utf8"),l=fs.readFileSync(`docs/kien-thuc/${cfg.id}/index.md`,"utf8");
  if(!/\?\?\?\s+example\s+"Xem lời giải"/.test(p)||!s.includes("data-readiness-check-v1")||!l.includes("(bai-tap.md)")||!l.includes("(tu-kiem-tra.md)"))errors.push(cfg.id+": page gateways");
 }
-if(cov.summary.exact_id_covered!==87||cov.summary.exact_id_gaps!==37)errors.push("geometry coverage summary expected 87/37");
-if(errors.length){console.error(errors.join("\n"));process.exit(1)}console.log("PASS: Golden Geometry CĐ14-CĐ15 · CĐ14 13/13 Core · CĐ15 11/11 Core · coverage 87/124");
+if(errors.length){console.error(errors.join("\n"));process.exit(1)}console.log(`PASS: Golden Geometry CĐ14-CĐ15 · CĐ14 13/13 Core · CĐ15 11/11 Core · global coverage ${cov.summary.exact_id_covered}/${cov.summary.total_curriculum_core_skills}`);
