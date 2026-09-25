@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "GEO17-MICRO-V1",
+  "topic": {
+    "id": "17-thales-dong-dang",
+    "title": "Thales và tam giác đồng dạng"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "GEO17MICRO_001",
+      "card_id": "geo17-core-1",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "thales-thuan",
+      "question": "Trong ΔABC, D∈AB, E∈AC và DE∥BC. Hệ thức đúng:",
+      "options": [
+        "AD/AB=AE/AC",
+        "AD/DB=AC/AE",
+        "AB/DB=AE/EC",
+        "AD/AB=EC/AC"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "thales-thuan"
+        ],
+        "type": "thales-thuan",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Thales thuận cho các tỉ số tương ứng.",
+      "hints": [
+        "Giữ đúng đoạn tương ứng.",
+        "DE song song BC."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_002",
+      "card_id": "geo17-core-1",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "thales-dao",
+      "question": "D∈AB,E∈AC. Nếu AD/AB=AE/AC thì:",
+      "options": [
+        "DE∥BC",
+        "DE⊥BC",
+        "AD=AE",
+        "AB=AC"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "thales-dao"
+        ],
+        "type": "thales-dao",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dùng Thales đảo.",
+      "hints": [
+        "Đây là chiều đảo.",
+        "Kết luận song song."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_003",
+      "card_id": "geo17-core-1",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "ti-le-doan-thang",
+      "question": "DE∥BC, AD=3, AB=5, AC=10. AE bằng:",
+      "options": [
+        "6",
+        "5",
+        "8",
+        "15"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "ti-le-doan-thang"
+        ],
+        "type": "ti-le-doan-thang",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "3/5=AE/10 nên AE=6.",
+      "hints": [
+        "Lập tỉ số tương ứng.",
+        "Nhân 10×3/5."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_004",
+      "card_id": "geo17-core-2",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "duong-trung-binh",
+      "question": "M,N là trung điểm AB,AC. Khi đó:",
+      "options": [
+        "MN∥BC và MN=BC/2",
+        "MN⊥BC",
+        "MN=BC",
+        "MN là phân giác"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "duong-trung-binh"
+        ],
+        "type": "duong-trung-binh",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Định lý đường trung bình.",
+      "hints": [
+        "Nối hai trung điểm.",
+        "Nhớ cả song song và độ dài."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_005",
+      "card_id": "geo17-core-2",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tinh-chat-duong-phan-giac",
+      "question": "AD là phân giác góc A, D∈BC. Hệ thức:",
+      "options": [
+        "BD/DC=AB/AC",
+        "BD/DC=AC/AB",
+        "BD/BC=AB/AC",
+        "AD/DC=AB/AC"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "tinh-chat-duong-phan-giac"
+        ],
+        "type": "tinh-chat-duong-phan-giac",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Phân giác chia cạnh đối theo tỉ lệ hai cạnh kề.",
+      "hints": [
+        "Cạnh đối là BC.",
+        "Ghép BD với AB."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_006",
+      "card_id": "geo17-core-2",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tinh-chat-duong-phan-giac",
+      "question": "AB=6, AC=9, AD phân giác. BD:DC=",
+      "options": [
+        "2:3",
+        "3:2",
+        "3:5",
+        "2:5"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "tinh-chat-duong-phan-giac"
+        ],
+        "type": "tinh-chat-duong-phan-giac",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "BD/DC=6/9=2/3.",
+      "hints": [
+        "Dùng định lý phân giác.",
+        "Rút gọn tỉ số."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_007",
+      "card_id": "geo17-core-3",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-dong-dang",
+      "question": "Hai tam giác đồng dạng thì:",
+      "options": [
+        "Góc tương ứng bằng và cạnh tương ứng tỉ lệ",
+        "Cạnh tương ứng bằng nhau",
+        "Diện tích luôn bằng nhau",
+        "Chu vi luôn bằng nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "nhan-biet-dong-dang"
+        ],
+        "type": "nhan-biet-dong-dang",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Đồng dạng bảo toàn góc và tỉ lệ độ dài.",
+      "hints": [
+        "Không nhầm với bằng nhau.",
+        "Tỉ số có thể khác 1."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_008",
+      "card_id": "geo17-core-3",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "thu-tu-tuong-ung",
+      "question": "Nếu ΔABC∼ΔDEF thì cạnh tương ứng AC là:",
+      "options": [
+        "DF",
+        "DE",
+        "EF",
+        "ED"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "thu-tu-tuong-ung"
+        ],
+        "type": "thu-tu-tuong-ung",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "A↔D, C↔F nên AC↔DF.",
+      "hints": [
+        "Đọc thứ tự đỉnh.",
+        "Ghép A-D, C-F."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_009",
+      "card_id": "geo17-core-3",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "thu-tu-tuong-ung",
+      "question": "A↔M, B↔N, C↔P. Viết đúng:",
+      "options": [
+        "ΔABC∼ΔMNP",
+        "ΔABC∼ΔMPN",
+        "ΔACB∼ΔMNP",
+        "ΔBAC∼ΔMNP"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "thu-tu-tuong-ung"
+        ],
+        "type": "thu-tu-tuong-ung",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Thứ tự đỉnh phải bảo toàn tương ứng.",
+      "hints": [
+        "Mỗi cặp cùng vị trí.",
+        "A-M, B-N, C-P."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_010",
+      "card_id": "geo17-core-4",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dong-dang-gg",
+      "question": "Hai tam giác có hai góc tương ứng bằng nhau đồng dạng theo:",
+      "options": [
+        "g-g",
+        "c-g-c",
+        "c-c-c",
+        "c.g.c bằng nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "dong-dang-gg"
+        ],
+        "type": "dong-dang-gg",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Trường hợp góc-góc.",
+      "hints": [
+        "Chỉ cần hai góc.",
+        "Góc thứ ba tự bằng nhau."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_011",
+      "card_id": "geo17-core-4",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dong-dang-cgc",
+      "question": "Trong c-g-c đồng dạng, góc phải là:",
+      "options": [
+        "Góc xen giữa hai cạnh tỉ lệ",
+        "Bất kỳ góc nào",
+        "Góc ngoài",
+        "Không cần góc"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "dong-dang-cgc"
+        ],
+        "type": "dong-dang-cgc",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Phải dùng góc xen giữa.",
+      "hints": [
+        "Từ khóa: xen giữa.",
+        "Không dùng góc bất kỳ."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_012",
+      "card_id": "geo17-core-4",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dong-dang-ccc",
+      "question": "Ba cặp cạnh tương ứng cùng tỉ lệ 2:3 thì:",
+      "options": [
+        "Đồng dạng theo c-c-c",
+        "Bằng nhau",
+        "Không đủ",
+        "Chỉ khi vuông"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "dong-dang-ccc"
+        ],
+        "type": "dong-dang-ccc",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Ba cặp cạnh cùng tỉ lệ cho c-c-c.",
+      "hints": [
+        "Cùng một tỉ số.",
+        "Không cần bằng tuyệt đối."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_013",
+      "card_id": "geo17-core-5",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tinh-do-dai-dong-dang",
+      "question": "AB/DE=2/3, BC=8 và BC↔EF. EF=",
+      "options": [
+        "12",
+        "16/3",
+        "6",
+        "10"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "tinh-do-dai-dong-dang"
+        ],
+        "type": "tinh-do-dai-dong-dang",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "8/EF=2/3 nên EF=12.",
+      "hints": [
+        "Dùng đúng cạnh tương ứng.",
+        "Nhân 8×3/2."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_014",
+      "card_id": "geo17-core-5",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "hinh-dong-dang",
+      "question": "Hai hình đồng dạng:",
+      "options": [
+        "Cùng hình dạng; độ dài tương ứng theo cùng một tỉ số",
+        "Luôn cùng kích thước",
+        "Luôn cùng diện tích",
+        "Mọi cạnh bằng nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "hinh-dong-dang"
+        ],
+        "type": "hinh-dong-dang",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đồng dạng không bắt buộc cùng kích thước.",
+      "hints": [
+        "Phân biệt đồng dạng và bằng nhau.",
+        "Tỉ số có thể khác 1."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO17MICRO_015",
+      "card_id": "geo17-core-5",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "hinh-dong-dang",
+      "question": "Bản vẽ tỉ lệ 1:100, đoạn 3 cm biểu diễn:",
+      "options": [
+        "3 m",
+        "30 cm",
+        "300 m",
+        "0,3 m"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "thales-dong-dang",
+        "skill": [
+          "hinh-dong-dang"
+        ],
+        "type": "hinh-dong-dang",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "3×100=300 cm=3 m.",
+      "hints": [
+        "Nhân với 100.",
+        "Đổi cm sang m."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "18-he-thuc-luong",
+  "title": "Hệ thức lượng trong tam giác vuông",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only mapped Core cards contribute to readiness; support/extension content never gates Core."
+  },
+  "cards": [
+    {
+      "id": "geo18-core-1",
+      "order": 1,
+      "title": "Pythagore và nhận biết tam giác vuông",
+      "kntt_lessons": [
+        "Lớp 8–9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "pythagore",
+        "pythagore-dao",
+        "canh-huyen"
+      ],
+      "prerequisites": [
+        "can-bac-hai-so-hoc"
+      ],
+      "micro_practice": [
+        "GEO18MICRO_001",
+        "GEO18MICRO_002",
+        "GEO18MICRO_003"
+      ]
+    },
+    {
+      "id": "geo18-core-2",
+      "order": 2,
+      "title": "Sin và cos",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "sin",
+        "cos"
+      ],
+      "prerequisites": [
+        "ti-le-doan-thang"
+      ],
+      "micro_practice": [
+        "GEO18MICRO_004",
+        "GEO18MICRO_005",
+        "GEO18MICRO_006"
+      ]
+    },
+    {
+      "id": "geo18-core-3",
+      "order": 3,
+      "title": "Tan và cot",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tan",
+        "cot"
+      ],
+      "prerequisites": [
+        "sin",
+        "cos"
+      ],
+      "micro_practice": [
+        "GEO18MICRO_007",
+        "GEO18MICRO_008",
+        "GEO18MICRO_009"
+      ]
+    },
+    {
+      "id": "geo18-core-4",
+      "order": 4,
+      "title": "Tìm cạnh và tìm góc",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tim-canh-luong-giac",
+        "tim-goc-luong-giac"
+      ],
+      "prerequisites": [
+        "sin",
+        "cos",
+        "tan",
+        "cot"
+      ],
+      "micro_practice": [
+        "GEO18MICRO_010",
+        "GEO18MICRO_011",
+        "GEO18MICRO_012"
+      ]
+    },
+    {
+      "id": "geo18-core-5",
+      "order": 5,
+      "title": "Góc nâng, góc hạ và đo khoảng cách",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "goc-nang-ha",
+        "chieu-cao-khoang-cach"
+      ],
+      "prerequisites": [
+        "tim-canh-luong-giac"
+      ],
+      "micro_practice": [
+        "GEO18MICRO_013",
+        "GEO18MICRO_014",
+        "GEO18MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "geo18-ext-1",
+      "layer": "Core-Support",
+      "title": "Cạnh đối – kề – huyền như kỹ năng hỗ trợ",
+      "gates_core": false
+    },
+    {
+      "id": "geo18-ext-2",
+      "layer": "Entrance10",
+      "title": "Hệ thức đường cao xuống cạnh huyền",
+      "gates_core": false
+    },
+    {
+      "id": "geo18-ext-3",
+      "layer": "Challenge",
+      "title": "Bài thực tế nhiều bước và mô hình hóa",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/18-he-thuc-luong-micro-v1.json",
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json"
+}

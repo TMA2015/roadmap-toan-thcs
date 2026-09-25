@@ -1,0 +1,141 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "17-thales-dong-dang",
+  "title": "Thales và tam giác đồng dạng",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only mapped Core cards contribute to readiness; support/extension content never gates Core."
+  },
+  "cards": [
+    {
+      "id": "geo17-core-1",
+      "order": 1,
+      "title": "Thales thuận, đảo và tỉ lệ",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "thales-thuan",
+        "thales-dao",
+        "ti-le-doan-thang"
+      ],
+      "prerequisites": [
+        "tinh-chat-song-song"
+      ],
+      "micro_practice": [
+        "GEO17MICRO_001",
+        "GEO17MICRO_002",
+        "GEO17MICRO_003"
+      ]
+    },
+    {
+      "id": "geo17-core-2",
+      "order": 2,
+      "title": "Đường trung bình và phân giác",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "duong-trung-binh",
+        "tinh-chat-duong-phan-giac"
+      ],
+      "prerequisites": [
+        "trung-diem",
+        "ti-le-doan-thang"
+      ],
+      "micro_practice": [
+        "GEO17MICRO_004",
+        "GEO17MICRO_005",
+        "GEO17MICRO_006"
+      ]
+    },
+    {
+      "id": "geo17-core-3",
+      "order": 3,
+      "title": "Nhận biết và thứ tự tương ứng",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-dong-dang",
+        "thu-tu-tuong-ung"
+      ],
+      "prerequisites": [
+        "viet-tuong-ung-tam-giac-bang-nhau"
+      ],
+      "micro_practice": [
+        "GEO17MICRO_007",
+        "GEO17MICRO_008",
+        "GEO17MICRO_009"
+      ]
+    },
+    {
+      "id": "geo17-core-4",
+      "order": 4,
+      "title": "Ba trường hợp đồng dạng",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "dong-dang-gg",
+        "dong-dang-cgc",
+        "dong-dang-ccc"
+      ],
+      "prerequisites": [
+        "thu-tu-tuong-ung"
+      ],
+      "micro_practice": [
+        "GEO17MICRO_010",
+        "GEO17MICRO_011",
+        "GEO17MICRO_012"
+      ]
+    },
+    {
+      "id": "geo17-core-5",
+      "order": 5,
+      "title": "Tính độ dài và hình đồng dạng",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tinh-do-dai-dong-dang",
+        "hinh-dong-dang"
+      ],
+      "prerequisites": [
+        "nhan-biet-dong-dang"
+      ],
+      "micro_practice": [
+        "GEO17MICRO_013",
+        "GEO17MICRO_014",
+        "GEO17MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "geo17-ext-1",
+      "layer": "Core-Support",
+      "title": "Tỉ số chu vi, diện tích và hệ thức tích",
+      "gates_core": false
+    },
+    {
+      "id": "geo17-ext-2",
+      "layer": "Entrance10",
+      "title": "Kết hợp song song – đồng dạng trong chứng minh",
+      "gates_core": false
+    },
+    {
+      "id": "geo17-ext-3",
+      "layer": "Challenge",
+      "title": "Chuỗi đồng dạng nhiều bước",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/17-thales-dong-dang-micro-v1.json",
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json"
+}
