@@ -23,15 +23,17 @@
     return Array.isArray(value) ? value.filter(Boolean) : [value].filter(Boolean);
   };
 
-  const recordCounters = (record, correct, hintsUsed) => {
+  const recordCounters = (record, correct, hintsUsed, fullSolutionViewed = false) => {
     record.attempted = Number(record.attempted || 0) + 1;
     if (correct) record.correct = Number(record.correct || 0) + 1;
-    if (hintsUsed > 0) {
+    if (fullSolutionViewed) record.full_solution_views = Number(record.full_solution_views || 0) + 1;
+    if (hintsUsed > 0 || fullSolutionViewed) {
       record.hinted_attempts = Number(record.hinted_attempts || 0) + 1;
-      record.hints_used = Number(record.hints_used || 0) + hintsUsed;
+      record.hints_used = Number(record.hints_used || 0) + Math.max(hintsUsed, Number(fullSolutionViewed));
     }
     if (correct) {
-      if (hintsUsed > 0) record.correct_with_hint = Number(record.correct_with_hint || 0) + 1;
+      if (fullSolutionViewed) record.correct_after_full_solution = Number(record.correct_after_full_solution || 0) + 1;
+      if (hintsUsed > 0 || fullSolutionViewed) record.correct_with_hint = Number(record.correct_with_hint || 0) + 1;
       else record.correct_without_hint = Number(record.correct_without_hint || 0) + 1;
     }
   };
@@ -47,16 +49,16 @@
     };
   };
 
-  const recordAnswer = ({ question, correct, hintsUsed = 0, selectedIndex = null, stats = null }) => {
+  const recordAnswer = ({ question, correct, hintsUsed = 0, fullSolutionViewed = false, selectedIndex = null, stats = null }) => {
     const data = stats ? normalize(stats) : load();
     const qRecord = data.questions[question.id] || { attempted: 0, correct: 0 };
-    recordCounters(qRecord, correct, hintsUsed);
+    recordCounters(qRecord, correct, hintsUsed, fullSolutionViewed);
     data.questions[question.id] = qRecord;
 
     const skills = questionSkills(question);
     skills.forEach((skill) => {
       const skillRecord = data.tags[skill] || { attempted: 0, correct: 0 };
-      recordCounters(skillRecord, correct, hintsUsed);
+      recordCounters(skillRecord, correct, hintsUsed, fullSolutionViewed);
       data.tags[skill] = skillRecord;
     });
 
