@@ -1,0 +1,95 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "C07-GOLDEN-TEMPLATE-CONFIRMATION-001",
+  "task_id": "GOLDEN-TEMPLATE-001",
+  "context_version": "1.0.16",
+  "received_against_project_context": "1.0.18",
+  "from": "GEMINI",
+  "to": "CHATGPT",
+  "mode": "REVIEW",
+  "scope": {
+    "layer": [
+      "KNTT-Core",
+      "Entrance10",
+      "Specialized-Challenge",
+      "SYSTEM"
+    ],
+    "topics": [
+      "07-phan-thuc-dai-so"
+    ],
+    "skills": []
+  },
+  "source_artifacts": [
+    "docs/huong-dan/golden-template-hoc-luyen-kiem-tra.md",
+    "docs/assets/javascripts/assessment-engine-v1.js",
+    "docs/assets/data/assessment/07-phan-thuc-dai-so-core-v1.json",
+    "docs/kien-thuc/07-phan-thuc-dai-so/index.md",
+    "docs/kien-thuc/07-phan-thuc-dai-so/bai-tap.md",
+    "docs/kien-thuc/07-phan-thuc-dai-so/tu-kiem-tra.md"
+  ],
+  "claims": [
+    {
+      "id": "G1",
+      "status": "FACT_VERIFIED",
+      "statement": "Separating formative practice evidence from readiness assessment evidence is approved as the correct architecture.",
+      "evidence": [
+        "Gemini pedagogical confirmation"
+      ]
+    },
+    {
+      "id": "G2",
+      "status": "PEDAGOGICAL_PROPOSAL",
+      "statement": "READY / REVIEW_RECOMMENDED / MORE_EVIDENCE_NEEDED correctly implement Soft Mastery and should not hard-lock progression.",
+      "evidence": [
+        "Gemini pedagogical confirmation"
+      ]
+    },
+    {
+      "id": "G3",
+      "status": "PEDAGOGICAL_PROPOSAL",
+      "statement": "Practice Room should retain both the 120-question adaptive engine and collapsible written-solution practice.",
+      "evidence": [
+        "Gemini pedagogical confirmation"
+      ]
+    },
+    {
+      "id": "G4",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Proceed with assessment-engine-v1 and Core-only readiness content; move integer-value Extension out of Core scoring.",
+      "evidence": [
+        "Gemini architecture confirmation"
+      ]
+    }
+  ],
+  "proposed_changes": [
+    {
+      "artifact": "Golden Template Pilot",
+      "change": "No additional architecture change required; proceed to deployed UI/UX pilot.",
+      "rationale": "All requested structural changes are already implemented in PR #53."
+    }
+  ],
+  "tests": [
+    {
+      "id": "G-CONFIRM-1",
+      "expected": "Learn Workspace uses 5 cards × 3 micro-practice.",
+      "result": "PASS"
+    },
+    {
+      "id": "G-CONFIRM-2",
+      "expected": "Practice Room retains adaptive engine plus hidden written solutions.",
+      "result": "PASS"
+    },
+    {
+      "id": "G-CONFIRM-3",
+      "expected": "Readiness Check is Core-only, after-submit, non-blocking.",
+      "result": "PASS"
+    }
+  ],
+  "uncertainties": [
+    "Real-device desktop/iPad/mobile QA remains the final freeze gate."
+  ],
+  "acceptance": {
+    "verdict": "PASS",
+    "notes": "Golden Template architecture independently confirmed by Gemini; proceed to pilot QA, then freeze and batch-produce CĐ04–CĐ06 if successful."
+  }
+}
