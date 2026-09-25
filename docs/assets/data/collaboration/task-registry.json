@@ -378,9 +378,19 @@
       "routing": "CHATGPT_LEAD",
       "status": "DONE",
       "context_version": "1.0.38",
-      "review_verdict": "DEPLOYED-CI-PASS",
+      "review_verdict": "DEPLOYED-CI-PASS-OWNER-ACCEPTED",
       "integrated_artifact": "content-staging/reviews/GEO-LIB-VISUAL-REFRESH-001.json",
-      "review_notes": "33 original SVGs across CĐ13–20 in PRs #79–84; full-path link regression repaired and deployed. CĐ01–12 no non-infographic main-lesson figures; CĐ21–25 already use internal visualization assets. Device visual QA for new CĐ13–17/19–20 group remains owner-pending; JSON-to-SVG engine remains separate GEO-LIB-001 task."
+      "review_notes": "33 original SVGs across CĐ13–20 in PRs #79–84; full-path link regression repaired and deployed. CĐ01–12 no non-infographic main-lesson figures; CĐ21–25 already use internal visualization assets. Device visual QA for new CĐ13–17/19–20 group remains owner-pending; JSON-to-SVG engine remains separate GEO-LIB-001 task. User confirmed new diagram quality acceptable after deployment; owner-reported visual acceptance recorded 2026-09-25."
+    },
+    {
+      "id": "STA21-AUTHOR-001",
+      "title": "Gemini-authored first twelve CĐ21 Core Practice Bank items",
+      "routing": "GEMINI_AUTHOR+CHATGPT_QA_INTEGRATE",
+      "status": "READY",
+      "context_version": "1.0.39",
+      "packet": "docs/assets/data/collaboration/packets/STA21-GEMINI-AUTHOR-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-gemini-author-001.json",
+      "review_notes": "Small first authoring batch only: 12 non-duplicate items across du-lieu-phan-loai, thu-thap-du-lieu, doc-bieu-do-cot. No readiness or bank changes until response passes QA."
     }
   ]
 }

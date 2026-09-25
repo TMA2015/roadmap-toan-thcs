@@ -81,6 +81,9 @@ jobs:
       - name: Build CĐ19-CĐ20 Gemini review bundle
         run: node scripts/build-gemini-geo19-20-review.js docs/assets/data/collaboration/exports/gemini-geo19-20-review.json
 
+      - name: Build source-locked CĐ21 Gemini author bundle
+        run: node scripts/build-sta21-author-bundle.js docs/assets/data/collaboration/exports/sta21-gemini-author-001.json
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 
