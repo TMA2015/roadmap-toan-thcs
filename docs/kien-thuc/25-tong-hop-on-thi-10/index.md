@@ -1,6 +1,6 @@
 # Chuyên đề 25 – Bản đồ tổng hợp & chiến lược ôn thi vào 10
 
-> **Trạng thái:** Đã kiểm định nội dung học thuật và chiến lược ôn tập; cấu trúc Roadmap chuẩn 11 mục.
+> **Trạng thái:** Nội dung và đề luyện tự biên soạn; đã qua kiểm tra cấu trúc/phép tính cơ bản. Bộ đề đang chờ phản biện học thuật độc lập trước khi coi là ngân hàng chuẩn.
 >
 > **Lớp trọng tâm:** 9
 > **Mạch kiến thức:** Tổng hợp/Thi vào 10
