@@ -4,6 +4,24 @@
 >
 > **Quy ước mã bài:** `23-Mx-yy`.
 
+## B. Luyện tự luận / trình bày
+
+Bên cạnh Practice Room tương tác, học sinh có thể [mở bộ tự luận 10 câu và hướng dẫn chấm](tu-kiem-tra-tu-luan.md) để luyện lập luận bằng lời, trình bày phép tính và giải thích kết quả. Bộ tự luận có nội dung mở rộng nên **không tính vào Core Readiness**.
+
+**Ví dụ trình bày Core:** Một đồng xu được tung 20 lần, xuất hiện 13 lần ngửa. Tính xác suất thực nghiệm của mặt ngửa.
+
+??? example "Xem lời giải"
+    Gọi A là sự kiện “xuất hiện mặt ngửa”. Trong 20 lần tung, A xảy ra 13 lần. Vậy xác suất thực nghiệm trong loạt thử là \\(\\frac{13}{20}\\). Đây là tỉ lệ quan sát của loạt thử, không khẳng định rằng lần tung tiếp theo sẽ ra ngửa.
+
+### Chọn đúng tầng học
+
+- **KNTT-Core:** luyện theo lớp và kỹ năng đã học, gồm kết quả có thể, biến cố đơn giản, xác suất theo tỉ số và thực nghiệm.
+- **Core-Support:** luyện bổ trợ, chẳng hạn biến cố đối hoặc không gian mẫu nhiều bước; không khóa Core.
+- **Entrance10:** bài mở rộng như sơ đồ cây, hai xúc xắc hoặc rút thẻ không hoàn lại; không dùng để chấm Core.
+- **Specialized-Challenge:** tầng Challenge được dành riêng cho phần phát triển sau; chưa coi là nội dung bắt buộc trong ngân hàng 120 câu hiện tại.
+
+---
+
 # Mức 1 – Nhận biết
 
 ### 23-M1-01
