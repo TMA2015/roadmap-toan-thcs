@@ -52,9 +52,10 @@ with sync_playwright() as p:
     # Smoke-check all 25 topic pages, including the 01–03 lessons without micro-workspace.
     # Keep the audit as a downloadable JSON artifact for repeatable review.
     import json
-    from urllib.parse import urljoin
+    from urllib.parse import urlparse
+    from urllib.request import urlopen
     destinations = page.locator(".library-topic-tile").evaluate_all(
-        "(nodes) => nodes.map(n => ({title:n.innerText.trim(),url:n.href}))")
+        "(nodes) => nodes.map(n => ({title:n.querySelector('.library-topic-name').textContent.trim(),url:n.href}))")
     audit = []
     check(len(destinations) == 25, "25 unique topic destinations")
     check(len({row["url"] for row in destinations}) == 25, "topic links not duplicated")
@@ -70,14 +71,19 @@ with sync_playwright() as p:
         check(links.nth(2).get_attribute("href").endswith("/tu-kiem-tra/"), "self-check route " + row["url"])
         title = topic_page.locator(".topic-workspace-hero h1, .md-content__inner h1").first.inner_text()
         check(bool(title.strip()), "readable title for " + row["url"])
-        audit.append({"topic":row["title"],"url":row["url"],"heading":title.strip(),
-                      "lesson":True,"practice_url":links.nth(1).get_attribute("href"),
-                      "self_check_url":links.nth(2).get_attribute("href")})
+        practice_url = links.nth(1).get_attribute("href")
+        self_check_url = links.nth(2).get_attribute("href")
+        for subpath in (practice_url, self_check_url):
+            with urlopen(BASE.rstrip("/") + subpath, timeout=10) as route:
+                check(route.status == 200, "built route available: " + subpath)
+        audit.append({"topic":row["title"],"path":urlparse(row["url"]).path,"heading":title.strip(),
+                      "lesson":True,"practice_url":practice_url,
+                      "self_check_url":self_check_url,"all_three_routes_available":True})
         topic_page.close()
     (OUT / "all-25-topic-pages-audit.json").write_text(
-        json.dumps({"topic_count":len(audit),"checked":audit},ensure_ascii=False,indent=2),
+        json.dumps({"topic_count":len(audit),"checked_routes":len(audit)*3,"checked":audit},ensure_ascii=False,indent=2),
         encoding="utf-8")
-    print("PASS: all 25 topic pages and their lesson/practice/self-check navigation.", flush=True)
+    print("PASS: all 75 built topic routes (25 x lesson/practice/self-check) and lesson controls.", flush=True)
     page.locator("#library-local-search").fill("tam giac")
     matches = page.locator(".library-topic-tile:visible")
     check(matches.count() >= 1 and matches.count() < 25, "accent-insensitive filter works")
