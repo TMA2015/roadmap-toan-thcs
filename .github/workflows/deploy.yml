@@ -106,6 +106,9 @@ jobs:
       - name: Build source-locked CĐ22 curriculum boundary review bundle
         run: node scripts/build-stat22-map-review-bundle.js docs/assets/data/collaboration/exports/stat22-map-gemini-review-001.json
 
+      - name: Verify CĐ22 Bridge classification and non-gating lessons
+        run: node scripts/test-stat22-layer-001.js
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 

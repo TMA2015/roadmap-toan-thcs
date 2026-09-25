@@ -432,11 +432,13 @@
       "id": "STAT22-MAP-001",
       "title": "Audit CĐ22 skill-to-grade KNTT Core boundaries before Golden rollout",
       "routing": "GEMINI_REVIEW+CHATGPT_SOURCE_QA",
-      "status": "READY",
-      "context_version": "1.0.46",
+      "status": "DONE",
+      "context_version": "1.0.47",
       "packet": "docs/assets/data/collaboration/packets/STAT22-MAP-GEMINI-REVIEW-001.json",
       "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/stat22-map-gemini-review-001.json",
-      "review_notes": "CĐ22 existing 120 items, no grade 6–9 PRIMARY map references; Grade 9 exclusion notes require cross-grade verification. Request item-level school-grade evidence before any KNTT Core Readiness or scored learning-card authoring."
+      "review_notes": "Gemini's 10-skill formal Grade10 classification accepted as topic THPT-Bridge; corrected overgeneralization about mean (basic arithmetic in Grade4), mode conventions and outlier formal criteria. All 120 practice items retain IDs/answers but explicitly tagged Bridge to avoid engine Core fallback. Removed static hard grade gate; no new readiness.",
+      "review_verdict": "ACCEPT_WITH_CORRECTIONS",
+      "integrated_artifact": "docs/assets/data/curriculum/topic22-layer-audit-v1.json"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.46",
+  "version": "1.0.47",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -208,7 +208,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "CĐ21 owner confirmed Core Readiness PC+iPhone functional. CĐ22: source-locked skill/grade layer audit STAT22-MAP-001 first; no Core item generation until review; prepare tiny Learn batch after source decision.",
+    "next_priority": "CĐ22 Bridge layer source review integrated (10 skills / 120 practice items) without Core gating. Continue 25-topic Golden Template by checking CĐ23 KNTT Core mapping first, then use source-locked Gemini small Learn+micro batch. Optional CĐ22 Bridge Learn is separate, no THCS Core readiness.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -245,10 +245,13 @@
     },
     "statistics_topic22": {
       "bank_count": 120,
-      "primary_kntt_map_refs_grade6_to9": 0,
-      "grade9_overlay_exclusion": true,
-      "next_task": "STAT22-MAP-001",
-      "layer_status": "AUDIT_REQUIRED"
+      "primary_layer": "THPT-Bridge",
+      "grade4_average_prerequisite": true,
+      "grade6_9_primary_map_refs": 0,
+      "readiness_eligible": false,
+      "source_review": "STAT22-MAP-CHATGPT-REVIEW-001",
+      "progression_hard_gate": false,
+      "optional_learning": "PENDING_SEPARATE_BRIDGE_CARDS"
     }
   },
   "handoff_required_fields": [
@@ -277,8 +280,8 @@
     "offline_relay_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/offline-relay/",
     "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
     "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
-    "next_public_task": "STAT22-MAP-001",
-    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/stat22-map-gemini-review-001.json",
+    "next_public_task": "PROB23-MAP-001",
+    "next_relay_packet": null,
     "protocol_version": "2.0",
     "relay_v2": "All new author/reviewer batches MUST apply docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md: direct language, explicit units/population, never infer data or leave absent chart. Golden Template frozen."
   }
