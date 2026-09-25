@@ -45,7 +45,7 @@ check((30+50)-(20+40)===20,"014 aggregation");
 const js=fs.readFileSync(path.join(root,"docs/assets/javascripts/topic-workspace-v1.js"),"utf8");
 const index=fs.readFileSync(path.join(root,"docs/kien-thuc/21-thong-ke/index.md"),"utf8");
 check(js.includes('"21-thong-ke":{number:"21"')&&js.includes("if(card.teaching_copy)")&&js.includes("copy.worked_example?.solution"),"Learn renderer / source");
-check(index.includes("Learning Cards")&&index.includes("Core Readiness tương tác được bổ sung ở batch riêng."),"lesson gateway status");
+check(index.includes("Learning Cards")&&index.includes("[Làm Core Readiness CĐ21](tu-kiem-tra.md)"),"lesson gateway status");
 check(!index.includes("Đạt tối thiểu **7/10**"),"legacy hard gate still present");
 if(errors.length){console.error(errors.join("\n"));process.exit(1)}
 console.log("PASS: CĐ21 5 Learning Cards, 15 micro (Base/Trap/Apply), grade-map skill alignment, safe teaching copy and arithmetic; bank 132 unchanged.");

@@ -1,86 +1,31 @@
-# Tự kiểm tra – Chuyên đề 21: Thống kê và thu thập dữ liệu
+# Core Readiness Check – Chuyên đề 21 – Thống kê
 
-> **Thời gian gợi ý:** 40 phút
-> **Thang điểm:** 10 điểm
+> **Phạm vi:** bài kiểm tra tổng hợp KNTT Core của CĐ21, gồm kỹ năng theo chương trình lớp 6–8. Chỉ làm những phần phù hợp sau khi đã học các chặng liên quan.
+>
+> **Cách làm:** 12 câu trắc nghiệm · khoảng 20 phút · không gợi ý/Tutor · không báo đúng sai từng câu · chấm sau khi **Nộp bài**.
 
-# Đề tự kiểm tra
-
-## Câu 1 — 0,5 điểm
-Phân biệt tần số và tần suất.
-
-## Câu 2 — 0,5 điểm
-Tổng các tần số phải bằng gì?
-
-## Câu 3 — 0,75 điểm
-Dữ liệu \(6,7,8,8,9,8,7\). Tần số của 8 là bao nhiêu?
-
-## Câu 4 — 0,75 điểm
-Trong 20 học sinh có 6 học sinh chọn A. Tần suất phần trăm là bao nhiêu?
-
-## Câu 5 — 1,0 điểm
-Một bộ dữ liệu theo thời gian nên ưu tiên biểu diễn bằng loại biểu đồ nào? Giải thích.
-
-## Câu 6 — 1,0 điểm
-Một bảng tần số có các tần số \(2,5,4,3\). Tổng số quan sát là bao nhiêu?
-
-## Câu 7 — 1,25 điểm
-Một khảo sát chỉ hỏi thành viên của câu lạc bộ đọc sách để kết luận về toàn trường. Nêu vấn đề về mẫu.
-
-## Câu 8 — 1,25 điểm
-Dữ liệu \(5,5,6,6,6,7,8,8\). Lập bảng tần số.
-
-## Câu 9 — 1,5 điểm
-Một biểu đồ cột có trục dọc bị cắt ngắn làm chênh lệch trông lớn hơn. Nêu cách đọc và diễn giải an toàn.
-
-## Câu 10 — 1,5 điểm
-Nêu quy trình từ dữ liệu thô đến kết luận có căn cứ.
-
-# Đáp án và hướng dẫn chấm
-
-1. Tần số là số lần xuất hiện; tần suất là tần số chia tổng quan sát.
-2. Tổng số quan sát.
-3. 3.
-4. \(30\%\).
-5. Biểu đồ đoạn thẳng, vì phù hợp theo dõi biến đổi theo thời gian.
-6. 14.
-7. Mẫu thiên lệch, khó đại diện toàn trường.
-8. 5:2; 6:3; 7:1; 8:2.
-9. Đọc đúng thang trục, không đánh giá chỉ bằng độ cao trực quan, nêu số cụ thể.
-10. Kiểm tra/làm sạch dữ liệu → tổ chức bảng → tính tần số/tần suất → chọn biểu đồ → nhận xét/kết luận.
-
-# Bảng truy nguyên lỗi
-
-| Sai câu | Nên quay lại |
-|---|---|
-| 1–4, 6, 8 | Tần số – tần suất |
-| 5, 9 | Biểu đồ |
-| 7 | Chất lượng dữ liệu |
-| 10 | Quy trình xử lý dữ liệu |
-
-# Thang tự đánh giá
-
-| Điểm | Mức | Hành động đề xuất |
-|---:|---|---|
-| 9,0–10 | Hoàn thành tốt | Có thể tiếp tục lộ trình; vẫn chữa mọi câu chưa chắc |
-| 7,0–8,75 | Đạt | Chữa toàn bộ câu sai rồi chuyển tiếp |
-| 5,0–6,75 | Chưa chắc | Quay lại đúng dạng bài còn yếu và luyện thêm M2–M3 |
-| Dưới 5,0 | Cần củng cố | Học lại kiến thức cốt lõi và làm lại M1–M2 |
-
-> Điểm số chỉ là một tín hiệu. Quan trọng hơn là xác định **loại lỗi** và sửa đúng phần kiến thức gốc.
+<div data-readiness-check-v1="assets/data/assessment/21-thong-ke-core-v1.json"></div>
 
 ---
 
-# Checklist sau khi chấm
+## Hiểu kết quả
 
-- [ ] Tôi đã ghi lại điểm số.
-- [ ] Tôi đã đối chiếu từng câu sai với **Bảng truy nguyên lỗi**.
-- [ ] Tôi đã xác định lỗi thuộc nhóm kiến thức / biến đổi / dấu / điều kiện / mô hình hóa / kết luận / trình bày.
-- [ ] Tôi đã làm lại từng câu sai mà không nhìn đáp án.
-- [ ] Tôi đã luyện lại kỹ năng yếu trong Practice Bank nếu cần.
-- [ ] Nếu đạt từ 7 điểm trở lên, tôi đã chữa xong các câu sai trước khi chuyển tiếp.
+- **Sẵn sàng học tiếp:** đạt khoảng 80% trở lên khi đã trả lời đủ số câu tối thiểu.
+- **Nên củng cố:** xem câu sai sau khi nộp và luyện lại theo kỹ năng.
+- **Chưa đủ dữ liệu:** còn quá nhiều câu chưa trả lời để kết luận mức sẵn sàng.
 
-# Liên kết Roadmap
+!!! note "Soft Mastery"
+    Điểm bài này không khóa quyền học tiếp. Một câu sai chưa đủ để khẳng định học sinh yếu cả kỹ năng; hãy dùng kết quả để chọn bài cần ôn.
 
-- **← Bài học:** [Chuyên đề 21](index.md)
-- **← Luyện tập:** [Bài tập Chuyên đề 21](bai-tap.md)
-- **→ Nếu đạt:** [22 – Đại lượng đặc trưng](../22-dai-luong-dac-trung/index.md)
+!!! warning "Phạm vi theo lớp"
+    Đây là bài kiểm tra **toàn chuyên đề**, gồm nội dung lớp 6–8; không dùng kết quả toàn bài để đánh giá riêng năng lực lớp 6 của học sinh chưa học nội dung lớp 7–8.
+
+## Bài tự luận trước đây
+
+Bài tự luận 10 câu được [giữ riêng để tự luyện](tu-kiem-tra-tu-luan.md). Bài đó chứa cả phần bổ trợ/mở rộng theo lớp, **không tính vào Core Readiness**.
+
+## Liên kết Roadmap
+
+- **← Học:** [Chuyên đề 21 – Thống kê](index.md)
+- **← Luyện:** [Practice Room](bai-tap.md)
+- **→ Học tiếp:** [22 – Các đại lượng đặc trưng](../22-dai-luong-dac-trung/index.md)

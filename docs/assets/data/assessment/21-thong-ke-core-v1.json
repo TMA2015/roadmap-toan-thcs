@@ -1,0 +1,310 @@
+{
+  "version": 1,
+  "schema": "roadmap-readiness-assessment-v1",
+  "assessment_id": "STA21-CORE-READY-V1",
+  "title": "Core Readiness Check – Chuyên đề 21 – Thống kê",
+  "topic": {
+    "id": "21-thong-ke",
+    "title": "Chuyên đề 21 – Thống kê và thu thập dữ liệu"
+  },
+  "layer": "KNTT-Core",
+  "skill_labels": {
+    "du-lieu-phan-loai": "Dữ liệu và phân loại dữ liệu",
+    "thu-thap-du-lieu": "Thu thập dữ liệu",
+    "doc-bieu-do-cot": "Đọc biểu đồ cột",
+    "doc-bieu-do-cot-kep": "Đọc và so sánh biểu đồ cột kép",
+    "doc-bieu-do-doan-thang": "Đọc biểu đồ đoạn thẳng",
+    "bieu-do-quat-tron": "Biểu đồ hình quạt tròn",
+    "chon-bieu-do": "Chọn dạng biểu diễn",
+    "chuyen-bang-bieu-do": "Chuyển đổi bảng – biểu đồ",
+    "nhan-xet-du-lieu": "Nhận xét và kết luận từ dữ liệu"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "STA21READY_001",
+      "type": "mcq",
+      "skill": "du-lieu-phan-loai",
+      "points": 1,
+      "question": "Khảo sát giả định ghi cân nặng của ba người lần lượt là 42 kg, 51 kg và 63 kg. Dãy giá trị cân nặng thuộc loại dữ liệu nào?",
+      "options": [
+        "Dữ liệu số",
+        "Dữ liệu phân loại",
+        "Mã định danh",
+        "Dữ liệu không thể đo"
+      ],
+      "answer": 0,
+      "explanation": "Cân nặng là đại lượng đo được bằng số, có đơn vị kg. Vì vậy dãy 42, 51, 63 là dữ liệu số.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "STA21READY_002",
+      "type": "mcq",
+      "skill": "du-lieu-phan-loai",
+      "points": 1,
+      "question": "Bảng ghi mã phòng học 601, 602, 701 để nhận diện từng phòng. Dãy mã phòng thuộc loại dữ liệu nào?",
+      "options": [
+        "Dữ liệu số vì viết bằng chữ số",
+        "Dữ liệu đếm số lượng phòng",
+        "Dữ liệu phân loại vì các số là mã định danh",
+        "Dữ liệu đo đạc liên tục"
+      ],
+      "answer": 2,
+      "explanation": "Mã phòng là nhãn nhận diện; phép cộng hoặc tính trung bình các mã không có ý nghĩa về phòng học. Vì vậy đây là dữ liệu phân loại.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "STA21READY_003",
+      "type": "mcq",
+      "skill": "thu-thap-du-lieu",
+      "points": 1,
+      "question": "Thư viện muốn biết số lượt mượn sách mỗi ngày trong tuần. Cách thu thập dữ liệu nào phù hợp nhất?",
+      "options": [
+        "Đếm số sách đang có trên giá vào cuối tuần",
+        "Dùng sổ mượn trả, ghi số lượt theo ngày",
+        "Hỏi vài học sinh dự đoán lượt mượn",
+        "Dùng số lượt mượn của năm trước"
+      ],
+      "answer": 1,
+      "explanation": "Sổ mượn trả ghi từng lượt cùng ngày mượn, nên có thể đếm số lượt trong mỗi ngày. Các cách khác không cho dữ liệu thực tế theo ngày trong tuần đang xét.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "STA21READY_004",
+      "type": "mcq",
+      "skill": "doc-bieu-do-cot",
+      "points": 1,
+      "question": "Trong ví dụ giả định, số sách từ biểu đồ cột được chép lại: khối 6: 148 cuốn; khối 7: 126; khối 8: 154; khối 9: 92. Khối 8 nhiều hơn khối 7 bao nhiêu cuốn?",
+      "options": [
+        "62 cuốn",
+        "18 cuốn",
+        "34 cuốn",
+        "28 cuốn"
+      ],
+      "answer": 3,
+      "explanation": "Khối 8 có 154 cuốn, khối 7 có 126 cuốn. Chênh lệch là 154 − 126 = 28 cuốn.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "STA21READY_005",
+      "type": "mcq",
+      "skill": "doc-bieu-do-cot",
+      "points": 1,
+      "question": "Dữ liệu giả định từ biểu đồ cột ghi doanh thu: chi nhánh A là 500 triệu đồng, B là 400 triệu đồng. Doanh thu A bằng bao nhiêu phần trăm doanh thu B?",
+      "options": [
+        "80%",
+        "125%",
+        "150%",
+        "25%"
+      ],
+      "answer": 1,
+      "explanation": "Lấy doanh thu A chia B rồi nhân 100%: 500 : 400 × 100% = 125%.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "STA21READY_006",
+      "type": "mcq",
+      "skill": "doc-bieu-do-cot-kep",
+      "points": 1,
+      "question": "Dữ liệu giả định từ biểu đồ cột kép: chú giải cột xanh là nam, cột vàng là nữ. Ở câu lạc bộ Cờ vua, cột xanh ghi 18 học sinh, cột vàng ghi 12 học sinh. Nhận xét nào đúng?",
+      "options": [
+        "Có 18 học sinh nữ",
+        "Tổng số học sinh là 12",
+        "Số học sinh nam nhiều hơn nữ 6 em",
+        "Số học sinh nam ít hơn nữ"
+      ],
+      "answer": 2,
+      "explanation": "Theo chú giải, nam 18 em và nữ 12 em. Nam nhiều hơn nữ 18 − 12 = 6 em.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "STA21READY_007",
+      "type": "mcq",
+      "skill": "doc-bieu-do-doan-thang",
+      "points": 1,
+      "question": "Dữ liệu giả định từ biểu đồ đoạn thẳng ghi nhiệt độ lúc 12 giờ: thứ Tư 34°C, thứ Năm 29°C. Nhiệt độ thay đổi thế nào từ thứ Tư sang thứ Năm?",
+      "options": [
+        "Tăng 5°C",
+        "Giảm 3°C",
+        "Tăng 3°C",
+        "Giảm 5°C"
+      ],
+      "answer": 3,
+      "explanation": "Nhiệt độ giảm từ 34°C xuống 29°C, tức giảm 34 − 29 = 5°C.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "STA21READY_008",
+      "type": "mcq",
+      "skill": "bieu-do-quat-tron",
+      "points": 1,
+      "question": "Trong biểu đồ quạt tròn giả định, ăn uống chiếm 45% tổng chi tiêu, đi lại chiếm 25%. Góc ở tâm của phần ăn uống lớn hơn góc của phần đi lại bao nhiêu độ?",
+      "options": [
+        "162°",
+        "72°",
+        "90°",
+        "20°"
+      ],
+      "answer": 1,
+      "explanation": "Chênh lệch là 45% − 25% = 20% toàn hình tròn. Góc chênh lệch bằng 20% × 360° = 72°.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "STA21READY_009",
+      "type": "mcq",
+      "skill": "chon-bieu-do",
+      "points": 1,
+      "question": "Muốn biểu diễn tỉ lệ khối lượng rác nhựa, giấy, hữu cơ và kim loại trong tổng lượng rác thu gom, nên chọn loại biểu đồ nào?",
+      "options": [
+        "Biểu đồ cột",
+        "Biểu đồ quạt tròn",
+        "Biểu đồ đoạn thẳng",
+        "Biểu đồ cột kép"
+      ],
+      "answer": 1,
+      "explanation": "Biểu đồ quạt tròn thể hiện mỗi nhóm chiếm bao nhiêu phần của tổng 100%.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "STA21READY_010",
+      "type": "mcq",
+      "skill": "chuyen-bang-bieu-do",
+      "points": 1,
+      "question": "Bảng ghi lượng mưa theo từng tháng, đơn vị mm. Khi chuyển thành biểu đồ cột đứng, hai trục cần ghi gì?",
+      "options": [
+        "Trục ngang: lượng mưa (mm); trục đứng: tháng",
+        "Trục ngang: tháng; trục đứng: số ngày mưa",
+        "Trục ngang: tháng; trục đứng: lượng mưa (mm)",
+        "Cả hai trục đều ghi lượng mưa (mm)"
+      ],
+      "answer": 2,
+      "explanation": "Ở biểu đồ cột đứng, trục ngang ghi các tháng; trục đứng ghi giá trị lượng mưa và đơn vị mm.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "STA21READY_011",
+      "type": "mcq",
+      "skill": "nhan-xet-du-lieu",
+      "points": 1,
+      "question": "Cửa hàng bán 40 xe đạp trong tháng 1 và 60 xe trong tháng 2. Kết luận nào được số liệu trực tiếp hỗ trợ?",
+      "options": [
+        "Tháng 2 bán nhiều hơn tháng 1 là 20 chiếc",
+        "Tháng 2 bán nhiều hơn do thời tiết đẹp",
+        "Xe tháng 2 có chất lượng tốt hơn",
+        "Số bán tăng do cửa hàng giảm giá"
+      ],
+      "answer": 0,
+      "explanation": "Số xe tăng 60 − 40 = 20 chiếc. Số liệu không cho biết thời tiết, chất lượng hay chương trình giảm giá.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "STA21READY_012",
+      "type": "mcq",
+      "skill": "nhan-xet-du-lieu",
+      "points": 1,
+      "question": "Trong ví dụ giả định, lớp 8A có 40 học sinh, trong đó 10 em đạt loại Giỏi; lớp 8B có 60 học sinh, trong đó 12 em đạt loại Giỏi. Nhận xét nào đúng về tỉ lệ đạt Giỏi?",
+      "options": [
+        "8B có tỉ lệ cao hơn vì có 12 em đạt Giỏi",
+        "Hai lớp có tỉ lệ đạt Giỏi bằng nhau",
+        "Tỉ lệ đạt Giỏi của 8A là 20%",
+        "8A đạt 25%, 8B đạt 20%; tỉ lệ của 8A cao hơn 5 điểm phần trăm"
+      ],
+      "answer": 3,
+      "explanation": "Lớp 8A: 10 : 40 = 25%. Lớp 8B: 12 : 60 = 20%. Tỉ lệ Giỏi của 8A cao hơn 5 điểm phần trăm. Chỉ số này không đủ để đánh giá toàn diện chất lượng học tập của hai lớp.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      }
+    }
+  ],
+  "next_topic": {
+    "id": "22-dai-luong-dac-trung",
+    "title": "Chuyên đề 22 – Các đại lượng đặc trưng"
+  }
+}

@@ -442,9 +442,10 @@ Thực hiện 15 câu **micro-practice** trong 5 Learning Cards (Base → Trap �
 
 ## ✅ 9. Tự kiểm tra
 
-Bài **tự kiểm tra tự luận hiện có** giúp luyện trình bày và đối chiếu lời giải. Core Readiness tương tác theo Golden Template được triển khai ở batch riêng, chỉ kiểm tra KNTT Core, không dùng hint và không khóa chuyên đề tiếp theo.
+**Core Readiness tương tác** gồm 12 câu trắc nghiệm theo các kỹ năng nền tảng lớp 6–8. Không gợi ý/Tutor; chỉ chấm sau khi nộp và không khóa tiến độ. Học sinh chưa học phần lớp 7–8 không dùng điểm toàn bài để đánh giá riêng mức độ lớp 6.
 
-- **→ [Mở bài tự kiểm tra hiện có](tu-kiem-tra.md)**
+- **→ [Làm Core Readiness CĐ21](tu-kiem-tra.md)**
+- [Bài tự luận cũ (luyện bổ sung, không tính vào Core Readiness)](tu-kiem-tra-tu-luan.md)
 
 ---
 
@@ -467,7 +468,7 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 - [ ] Học đủ năm chặng KNTT Core đúng lớp đã học; đọc ví dụ và chữa lại câu micro-practice sai.
 - [ ] Làm Practice Room và ôn lại đúng skill còn yếu.
 - [ ] Đọc đúng dữ liệu, đơn vị, chú giải; viết nhận xét có căn cứ trong phạm vi khảo sát.
-- [ ] Làm bài tự kiểm tra phù hợp; Core Readiness tương tác được bổ sung ở batch riêng.
+- [ ] Làm Core Readiness sau khi học phần lớp 6–8 tương ứng; chữa các câu sai nhưng vẫn có thể học tiếp.
 
 !!! note "Soft Mastery"
     Không lấy bài mở rộng hoặc điểm tự luận làm cổng khóa tiến độ. Kết quả là tín hiệu để học sinh lựa chọn nội dung cần củng cố.

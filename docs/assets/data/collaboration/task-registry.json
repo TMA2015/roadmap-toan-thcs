@@ -420,11 +420,13 @@
       "id": "STA21-READY-001",
       "title": "Gemini CĐ21 Core-only 12-item interactive Readiness authoring",
       "routing": "GEMINI_AUTHOR+CHATGPT_INDEPENDENT_QA_INTEGRATE",
-      "status": "READY",
-      "context_version": "1.0.44",
+      "status": "DONE",
+      "context_version": "1.0.45",
       "packet": "docs/assets/data/collaboration/packets/STA21-READY-GEMINI-AUTHOR-001.json",
       "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-ready-gemini-author-001.json",
-      "review_notes": "Full-topic grade 6–8 Core check, 12 MCQs/9 scored skills, 20 minutes, after-submit only; explicit direct-language editorial guide; no hints or Tutor, no hard gates, no student data mutation before independent QA."
+      "review_notes": "12 independent checked Core MCQs / 9 skill IDs; corrects duplicate-like drills, ambiguity of overall class quality in 012, chart data visibility; post-submit no hints/Tutor/soft gate. Original self-test preserved as supplement; 132 bank and 15 micro unchanged. CI / device QA separate.",
+      "review_verdict": "ACCEPT_WITH_EDITORIAL_AND_ACADEMIC_FIXES",
+      "integrated_artifact": "docs/assets/data/assessment/21-thong-ke-core-v1.json"
     }
   ]
 }
