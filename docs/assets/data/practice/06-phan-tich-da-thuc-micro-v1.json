@@ -6,7 +6,7 @@
     "id": "06-phan-tich-da-thuc",
     "title": "Phân tích đa thức thành nhân tử"
   },
-  "question_count": 8,
+  "question_count": 15,
   "questions": [
     {
       "id": "FAC06MICRO_001",
@@ -349,6 +349,323 @@
           "signal": "nhom-hang-tu-sai-dau",
           "signal_weight": 2,
           "feedback_hint": "Khi đặt -2 ở nhóm thứ hai, dấu trong ngoặc phải đổi phù hợp."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_009",
+      "card_id": "fac06-core-3",
+      "micro_role": "apply",
+      "question": "Phân tích \\(ax-ay+bx-by\\) thành nhân tử.",
+      "options": [
+        "\\((a+b)(x-y)\\)",
+        "\\((a-b)(x+y)\\)",
+        "\\((a+b)(x+y)\\)",
+        "\\((a-b)(x-y)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "nhom-hang-tu"
+        ],
+        "type": "nhom-hang-tu",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Nhóm a(x-y)+b(x-y)=(a+b)(x-y).",
+      "hints": [
+        "Nhóm theo hệ số a và b.",
+        "Cả hai nhóm cần tạo cùng nhân tử x-y."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_010",
+      "card_id": "fac06-core-4",
+      "micro_role": "base",
+      "question": "Phân tích hoàn toàn \\(2x^3-8x\\).",
+      "options": [
+        "\\(2x(x-2)(x+2)\\)",
+        "\\(2x(x^2-4)\\)",
+        "\\(2x(x-2)^2\\)",
+        "\\(x(2x-4)(x+2)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "phoi-hop-phuong-phap"
+        ],
+        "type": "phoi-hop-phuong-phap",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đặt 2x chung được 2x(x^2-4), rồi tiếp tục dùng hiệu hai bình phương.",
+      "hints": [
+        "Luôn kiểm tra nhân tử chung trước.",
+        "Sau khi đặt 2x, x^2-4 vẫn phân tích tiếp được."
+      ],
+      "supporting_skills": [
+        "nhan-tu-chung",
+        "hieu-hai-binh-phuong"
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "phan-tich-chua-hoan-toan",
+          "signal_weight": 1,
+          "feedback_hint": "Kết quả này đúng nhưng chưa hoàn toàn vì x^2-4 còn phân tích tiếp được."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_011",
+      "card_id": "fac06-core-4",
+      "micro_role": "trap",
+      "question": "Phân tích hoàn toàn \\(x^3-2x^2+x\\).",
+      "options": [
+        "\\(x(x-1)^2\\)",
+        "\\(x(x+1)^2\\)",
+        "\\(x(x-1)(x+1)\\)",
+        "\\(x^2(x-2)+x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "phoi-hop-phuong-phap"
+        ],
+        "type": "phoi-hop-phuong-phap",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đặt x chung: x(x^2-2x+1), rồi nhận ra bình phương hoàn chỉnh (x-1)^2.",
+      "hints": [
+        "Đặt nhân tử chung trước.",
+        "Trong ngoặc là x^2-2x+1."
+      ],
+      "supporting_skills": [
+        "nhan-tu-chung",
+        "binh-phuong-hoan-chinh"
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "nham-binh-phuong-hoan-chinh",
+          "signal_weight": 2,
+          "feedback_hint": "x^2-2x+1 là (x-1)^2, không phải (x+1)^2."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_012",
+      "card_id": "fac06-core-4",
+      "micro_role": "apply",
+      "question": "Phân tích hoàn toàn \\(3x^3-12x\\).",
+      "options": [
+        "\\(3x(x-2)(x+2)\\)",
+        "\\(3x(x^2-4)\\)",
+        "\\(3x(x-2)^2\\)",
+        "\\(x(3x-6)(x+2)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "phoi-hop-phuong-phap"
+        ],
+        "type": "phoi-hop-phuong-phap",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đặt 3x chung, sau đó phân tích x^2-4 bằng hiệu hai bình phương.",
+      "hints": [
+        "Bước 1: đặt 3x.",
+        "Bước 2: tiếp tục phân tích x^2-4."
+      ],
+      "supporting_skills": [
+        "nhan-tu-chung",
+        "hieu-hai-binh-phuong"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_013",
+      "card_id": "fac06-core-5",
+      "micro_role": "base",
+      "question": "Nhân trở lại \\((x-2)(x+3)\\) ta được đa thức nào?",
+      "options": [
+        "\\(x^2+x-6\\)",
+        "\\(x^2+5x-6\\)",
+        "\\(x^2-x-6\\)",
+        "\\(x^2+x+6\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "kiem-tra-phan-tich"
+        ],
+        "type": "kiem-tra-phan-tich",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Nhân phân phối: x^2+3x-2x-6=x^2+x-6.",
+      "hints": [
+        "Dùng phép nhân hai đa thức để kiểm tra.",
+        "Thu gọn 3x-2x."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_014",
+      "card_id": "fac06-core-5",
+      "micro_role": "trap",
+      "question": "Với \\(4x^3-36x\\), bước đầu hợp lý nhất là:",
+      "options": [
+        "Đặt \\(4x\\) làm nhân tử chung.",
+        "Nhóm hai hạng tử thành hai nhóm.",
+        "Dùng tổng hai lập phương.",
+        "Tách hạng tử giữa."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "phoi-hop-phuong-phap"
+        ],
+        "type": "phoi-hop-phuong-phap",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Mọi hạng tử đều có nhân tử chung 4x; đây là bước đơn giản và làm lộ x^2-9.",
+      "hints": [
+        "Theo thứ tự ưu tiên, hãy kiểm tra nhân tử chung trước.",
+        "Sau khi đặt 4x, phần còn lại là x^2-9."
+      ],
+      "option_evidence": {
+        "3": {
+          "signal": "chon-phuong-phap-khong-can-thiet",
+          "signal_weight": 2,
+          "feedback_hint": "Không cần tách hạng tử giữa khi đã có nhân tử chung rõ ràng."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_015",
+      "card_id": "fac06-core-5",
+      "micro_role": "apply",
+      "question": "Phân tích hoàn toàn \\(x^4-16\\) trong phạm vi THCS là:",
+      "options": [
+        "\\((x-2)(x+2)(x^2+4)\\)",
+        "\\((x^2-4)(x^2+4)\\)",
+        "\\((x-4)(x+4)\\)",
+        "\\((x-2)^2(x+2)^2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "kiem-tra-phan-tich"
+        ],
+        "type": "kiem-tra-phan-tich",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(x^4-16=(x^2-4)(x^2+4)=(x-2)(x+2)(x^2+4)\\).",
+      "hints": [
+        "Dùng hiệu hai bình phương lần thứ nhất.",
+        "Kiểm tra xem x^2-4 còn phân tích tiếp được không."
+      ],
+      "supporting_skills": [
+        "hieu-hai-binh-phuong",
+        "phoi-hop-phuong-phap"
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "phan-tich-chua-hoan-toan",
+          "signal_weight": 1,
+          "feedback_hint": "x^2-4 vẫn còn phân tích tiếp bằng hiệu hai bình phương."
         }
       },
       "curriculum": {
