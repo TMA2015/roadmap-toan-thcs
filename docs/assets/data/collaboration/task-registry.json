@@ -249,10 +249,10 @@
       "id": "ALG-BATCH-08-10-001",
       "title": "Golden Template batch production CĐ08–CĐ10",
       "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_PEDAGOGICAL_REVIEW",
-      "status": "READY",
-      "context_version": "1.0.28",
-      "review_verdict": "GEMINI-REVIEW-SOURCE-MISMATCH",
-      "review_notes": "Gemini issue packet used six non-existent IDs and mismatched prompts, so no correction was integrated. Independent QA discovered corrupted LaTeX escaping in CĐ08-CĐ10 Practice Room Markdown; fixed and added CI scan for control characters/unescaped TeX."
+      "status": "DONE",
+      "context_version": "1.0.29",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_notes": "PR #64 production plus PR #66 LaTeX maintenance both deployed successfully. Dedicated batch validator, Markdown math regression QA, strict MkDocs build and gh-pages smoke check PASS. Gemini review corrections were not applied because all six IDs/prompts were source-misaligned."
     }
   ]
 }
