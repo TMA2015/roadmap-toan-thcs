@@ -1,5 +1,5 @@
 {
-  "version": "1.0.15",
+  "version": "1.0.16",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -179,7 +179,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "QA the five-card CĐ07 pilot on deployed desktop/iPad; then connect each card to authored 3-question micro-practice and misconception-trigger evidence.",
+    "next_priority": "Run one closed-loop CĐ07 15-item micro-practice collaboration packet through Gemini review -> ChatGPT integration/QA. If PASS, freeze schemas and switch to batch rollout instead of incremental item-level changes.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -221,6 +221,8 @@
     "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
     "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
     "next_public_task": "KG-REVIEW-001",
-    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G9-001/"
+    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G9-001/",
+    "protocol_version": "2.0",
+    "relay_v2": "Batch-first machine-readable collaboration packets; GitHub artifacts preferred transport; shared workspace optional when both sides have connector access."
   }
 }
