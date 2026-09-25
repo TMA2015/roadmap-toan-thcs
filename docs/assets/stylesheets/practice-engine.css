@@ -297,3 +297,18 @@
  .floating-ai-head small{max-width:calc(100vw - 7rem)}
  .floating-ai-quick{grid-template-columns:1fr 1fr}
 }
+
+/* Approved smiling study-girl avatar: the same artwork family as the sleeping homepage kid. */
+.floating-ai-launcher{
+ background:#fff url("../images/ai-girl-awake-avatar.webp") center/cover no-repeat;
+ border:2px solid #fff;
+ box-shadow:0 .2rem 0 #e4c8fc,0 .65rem 1.6rem rgba(27,48,110,.29);
+ transition:transform .18s ease,box-shadow .18s ease;
+}
+.floating-ai-launcher:hover{transform:translateY(-2px) rotate(-3deg);box-shadow:0 .2rem 0 #e4c8fc,0 .82rem 1.7rem rgba(27,48,110,.32)}
+.floating-ai-head::before{
+ content:"";display:block;flex:none;width:2rem;height:2rem;border-radius:50%;
+ background:#fff url("../images/ai-girl-awake-avatar.webp") center/cover no-repeat;
+ box-shadow:0 0 0 1px var(--practice-border);
+}
+@media(prefers-reduced-motion:reduce){.floating-ai-launcher{transition:none}.floating-ai-launcher:hover{transform:none}}
