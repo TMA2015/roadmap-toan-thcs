@@ -37,16 +37,12 @@ HÀM SỐ VÀ ĐỒ THỊ
 │   ├── Tung độ gốc b
 │   └── Đồ thị là đường thẳng
 │
-├── 4. Quan hệ hai đường thẳng
-│   ├── Cắt nhau
-│   ├── Song song
-│   └── Trùng nhau
+├── Cross-link / Entrance10
+│   ├── Vị trí hai đường thẳng
+│   ├── Giao điểm đồ thị
+│   └── Liên hệ hệ phương trình
 │
-├── 5. Giao điểm đồ thị
-│   ├── Giải hệ phương trình
-│   └── Ý nghĩa hình học
-│
-└── 6. Mở rộng lớp 9
+└── 5. Lớp 9 Core
     ├── y = ax² (a ≠ 0)
     ├── Parabol
     └── Chuẩn bị cho phương trình bậc hai
@@ -65,10 +61,8 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 - [ ] Nhận biết hàm số bậc nhất `y = ax + b` với `a ≠ 0`.
 - [ ] Vẽ được đồ thị hàm số bậc nhất bằng hai điểm phù hợp.
 - [ ] Hiểu ý nghĩa của hệ số góc `a` và tung độ gốc `b`.
-- [ ] Nhận biết hai đường thẳng cắt nhau, song song hoặc trùng nhau từ hệ số.
-- [ ] Tìm giao điểm của hai đồ thị bằng phương pháp đại số.
-- [ ] Hiểu sự liên hệ giữa giao điểm đồ thị và nghiệm của hệ phương trình.
-- [ ] Nhận biết đồ thị `y = ax²` và hình dạng parabol ở mức chuẩn bị cho lớp 9.
+- [ ] Nhận biết đồ thị \(y=ax^2\), trục đối xứng và kiểm tra điểm thuộc parabol ở lớp 9.
+- [ ] **Cross-link / Entrance10:** nhận biết vị trí hai đường thẳng, tìm giao điểm và liên hệ với hệ phương trình.
 
 ---
 
@@ -315,7 +309,7 @@ Cách nhìn này giúp tránh học thuộc rời rạc “`a` là hệ số gó
 
 ---
 
-### 3.6. Vị trí tương đối của hai đường thẳng
+### 3.6. Cross-link / Entrance10 – Vị trí tương đối của hai đường thẳng
 
 Xét:
 
@@ -369,7 +363,7 @@ thì hai đường thẳng trùng nhau.
 
 ---
 
-### 3.7. Giao điểm của hai đồ thị
+### 3.7. Cross-link / Entrance10 – Giao điểm của hai đồ thị
 
 Giả sử:
 
@@ -421,7 +415,7 @@ Vì vậy, giải hệ và tìm giao điểm thực chất là hai cách mô t�
 
 ---
 
-### 3.8. Mở rộng – Đồ thị `y = ax²`
+### 3.8. Lớp 9 Core – Đồ thị `y = ax²`
 
 Với `a ≠ 0`, hàm số:
 
