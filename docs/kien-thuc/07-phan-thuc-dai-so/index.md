@@ -592,85 +592,37 @@ Với biểu thức dài, thay số quá sớm thường làm phép tính nặng
 
 ---
 
-## 📝 8. Luyện tập
+## 📝 8. Luyện tập tiếp theo
 
-### Mức 1 – Nhận biết
+Phần **micro-practice** trong 5 Learning Cards dùng để kiểm tra nhanh ngay sau khi học. Khi muốn luyện sâu hơn và lặp lại theo kỹ năng, hãy chuyển sang **Practice Room**.
 
-1. Xác định tử thức và mẫu thức của `(2x - 1)/(x + 3)`.
-2. Tìm điều kiện xác định của `1/(x - 5)`.
-3. Tìm điều kiện xác định của `(x + 1)/(x² - 4)`.
-4. Viết `1/(3 - x)` dưới dạng có mẫu `x - 3`.
-5. Rút gọn `(3x)/(6x)` với điều kiện thích hợp.
+[🎯 Mở Practice Room – Chuyên đề 07](bai-tap.md){ .md-button .md-button--primary }
 
-### Mức 2 – Thông hiểu
+Trong Practice Room có hai chế độ:
 
-1. Rút gọn `(x² - 4)/(x² + 2x)`.
-2. Rút gọn `(x² - 5x)/(x² - 25)`.
-3. Quy đồng `1/x` và `1/(x + 2)`.
-4. Tính `1/x + 1/(x + 1)`.
-5. Tính `2/(x - 1) - 1/(x + 1)`.
-6. Thực hiện `(x² - 1)/(x² + x) · x/(x - 1)`.
+- **Luyện nhanh tương tác:** Practice Engine chọn câu từ ngân hàng lớn, có feedback, gợi ý, Tutor và luyện điểm yếu.
+- **Luyện tự luận & trình bày:** tự giải trên giấy/vở rồi mở gợi ý hoặc lời giải để tự đối chiếu từng bước.
 
-### Mức 3 – Vận dụng
-
-1. Rút gọn biểu thức:
-
-   `A = (x² - 4)/(x² - x - 2) - 1/(x + 1)`.
-
-2. Rút gọn rồi tính giá trị tại `x = 3`:
-
-   `B = (x² - 1)/(x - 1)`.
-
-3. Thực hiện:
-
-   `C = [1/(x - 1) + 1/(x + 1)] : [2x/(x² - 1)]`.
-
-4. Chứng minh một biểu thức hữu tỉ sau rút gọn không phụ thuộc vào `x` trên miền xác định.
-
-### Mức 4 – Vận dụng cao / tổng hợp
-
-1. Cho biểu thức sau khi rút gọn có dạng `A = 2 + 6/(x - 1)`. Tìm các giá trị nguyên của `x` để `A` nguyên.
-2. Tìm giá trị của tham số để hai phân thức bằng nhau trên miền xác định.
-3. Rút gọn biểu thức có ba mẫu thức, trong đó một mẫu phải đổi dấu trước khi quy đồng.
-4. Kết hợp phân tích đa thức, hằng đẳng thức và phân thức để biến đổi một biểu thức hữu tỉ nhiều tầng.
+!!! info "Phân biệt mục đích"
+    Micro-practice dùng để kiểm tra hiểu ngay khi học; Practice Room dùng để **rèn kỹ năng**. Kết quả luyện tập là learner evidence dạng formative, không phải một bài thi cuối chuyên đề.
 
 ---
 
-## ✅ 9. Tự kiểm tra
+## ✅ 9. Tự kiểm tra mức độ sẵn sàng
 
-### Mini quiz
+Khi đã luyện tương đối chắc, hãy làm **Core Readiness Check** để xem mình có thể giải độc lập đến đâu.
 
-**Câu 1.** Điều kiện xác định của `(x + 2)/(x² - 9)` là gì?
+[✅ Bắt đầu Core Readiness Check](tu-kiem-tra.md){ .md-button .md-button--primary }
 
-**Câu 2.** Rút gọn:
+Trong Readiness Check:
 
-`(x² - 9)/(x - 3)`.
+- không có gợi ý và không có Tutor khi đang làm;
+- không báo đúng/sai từng câu;
+- chỉ chấm sau khi bấm **Nộp bài**;
+- kết quả được phân tích theo kỹ năng;
+- đây là **soft mastery**: kết quả thấp sẽ gợi ý ôn đúng phần yếu, nhưng không khóa chuyên đề tiếp theo.
 
-**Câu 3.** Viết `1/(2 - x)` theo mẫu `x - 2`.
-
-**Câu 4.** Tính:
-
-`1/x + 1/(x + 1)`.
-
-**Câu 5.** Khi chia hai phân thức, ngoài điều kiện mẫu khác `0`, còn phải chú ý điều gì?
-
-### Đáp án ngắn
-
-1. `x ≠ 3`, `x ≠ -3`.
-2. `x + 3`, với `x ≠ 3`.
-3. `-1/(x - 2)`.
-4. `(2x + 1)/[x(x + 1)]`, với `x ≠ 0`, `x ≠ -1`.
-5. Phân thức đứng sau dấu chia phải khác `0`.
-
-### Tự đánh giá
-
-- [ ] Tôi luôn tìm điều kiện xác định trước khi biến đổi.
-- [ ] Tôi biết phân biệt **nhân tử** với **hạng tử** khi rút gọn.
-- [ ] Tôi rút gọn được phân thức có hằng đẳng thức và phân tích nhân tử.
-- [ ] Tôi quy đồng đúng các mẫu thức đã phân tích.
-- [ ] Tôi làm đúng cộng, trừ, nhân, chia phân thức.
-- [ ] Tôi giữ lại điều kiện xác định ban đầu sau khi rút gọn.
-- [ ] Tôi có thể xử lý biểu thức nhiều phép tính mà không nhảy bước.
+Phần **Entrance10 / Challenge** không tính vào kết quả hoàn thành KNTT Core.
 
 ---
 
@@ -692,13 +644,19 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi học sinh có phần lớn các bằng chứng sau:
 
-- [ ] Tìm đúng điều kiện xác định trong các bài cơ bản và tổng hợp.
-- [ ] Rút gọn đúng ít nhất 8/10 bài phân thức cơ bản.
-- [ ] Quy đồng và thực hiện đúng cộng – trừ phân thức.
-- [ ] Thực hiện đúng nhân – chia và biết kiểm tra điều kiện của số chia.
-- [ ] Giải được biểu thức nhiều bước có kết hợp hằng đẳng thức và phân tích đa thức.
-- [ ] Làm đúng ít nhất 4/5 câu mini quiz mà không xem lời giải.
-- [ ] Giải thích được vì sao điều kiện xác định ban đầu vẫn phải giữ sau khi rút gọn.
-- [ ] Sẵn sàng chuyển sang phương trình chứa ẩn ở mẫu trong Chuyên đề 08.
+- [ ] Hiểu và giải thích được các quy tắc Core của phân thức đại số.
+- [ ] Tìm đúng điều kiện xác định trong các bài Core.
+- [ ] Rút gọn, quy đồng và thực hiện được cộng – trừ – nhân – chia phân thức cơ bản.
+- [ ] Không lặp lại ổn định cùng một lỗi sai nền tảng sau khi đã được chữa.
+- [ ] Practice evidence cho thấy các kỹ năng Core đang tương đối ổn định.
+- [ ] Core Readiness Check đạt khoảng **80%** hoặc học sinh đã hiểu và chữa được các lỗi còn lại.
+
+!!! note "Soft Mastery"
+    Không cần đạt 100% mới được học tiếp. Nếu Readiness Check cho thấy một vài kỹ năng còn yếu, hệ thống sẽ khuyến nghị luyện lại đúng kỹ năng đó; học sinh vẫn có thể chuyển sang chuyên đề tiếp theo.
+
+!!! warning "Core độc lập Extension"
+    Bài Entrance10 hoặc Specialized-Challenge không phải điều kiện để hoàn thành KNTT Core của chuyên đề.
+
+---
