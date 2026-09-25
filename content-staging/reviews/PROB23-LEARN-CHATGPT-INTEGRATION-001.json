@@ -1,0 +1,25 @@
+{
+  "packet_id": "PROB23-LEARN-CHATGPT-INTEGRATION-001",
+  "source_packet_id": "PROB23-LEARN-GEMINI-AUTHOR-001-RESULT",
+  "task_id": "PROB23-LEARN-001",
+  "verdict": "ACCEPT_WITH_EDITORIAL_AND_SCHEMA_FIXES",
+  "integrated": {
+    "cards": 5,
+    "micro": 15,
+    "grades": [
+      6,
+      7,
+      8
+    ]
+  },
+  "source_corrections": [
+    "Original curriculum.level='layer', exam=null and target=null normalized to existing Core micro schema.",
+    "Item 004 had one hint; supplied a second.",
+    "Near-duplicate historical drills revised: 001–002, 005–009, 011–013; no original 120-question IDs or answers changed.",
+    "Item 015 replaced estimated future successes with observed two-batch experimental proportion and model comparison; checks without an unwarranted outcome promise.",
+    "Equal-likelihood premises explicitly stated where a classical probability ratio is used; unique choices independently checked.",
+    "Five teaching examples separated into problem and solution for existing optional copy renderer."
+  ],
+  "scope": "KNTT Core grade6–8 only; 120-item practice unchanged; Readiness pending; no attempt-history mutation.",
+  "qa": "Generic 5/15 cards-and-role contract plus topic-specific grade-map, schema, answer and math check in CI. On-device visual/interaction owner QA pending."
+}

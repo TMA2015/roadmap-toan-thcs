@@ -1,0 +1,627 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "PROB23-MICRO-V1",
+  "topic": {
+    "id": "23-xac-suat",
+    "title": "Xác suất"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "PRO23MICRO_001",
+      "card_id": "prob23-core-1",
+      "micro_role": "base",
+      "question": "Trong 48 lần quay một vòng quay, kim chỉ ô đỏ 18 lần. Xác suất thực nghiệm của ô đỏ bằng bao nhiêu?",
+      "options": [
+        "3/8",
+        "1/4",
+        "18",
+        "1/3"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "xac-suat-thuc-nghiem"
+        ],
+        "type": "tinh-xac-suat-thuc-nghiem",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "18 lần ô đỏ trong 48 lần quay, nên tỉ số là 18/48 = 3/8.",
+      "hints": [
+        "Lấy số lần ô đỏ xuất hiện chia cho tổng lần quay.",
+        "Lập tỉ số 18/48 và rút gọn."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 42–43"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "xac-suat-thuc-nghiem"
+    },
+    {
+      "id": "PRO23MICRO_002",
+      "card_id": "prob23-core-1",
+      "micro_role": "trap",
+      "question": "Vòng quay chỉ có hai loại ô A và B. Sau 40 lần quay, kim chỉ ô A 18 lần, còn lại chỉ ô B. Xác suất thực nghiệm của B bằng bao nhiêu?",
+      "options": [
+        "9/20",
+        "11/20",
+        "9/11",
+        "1/2"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "xac-suat-thuc-nghiem"
+        ],
+        "type": "tinh-xac-suat-thuc-nghiem",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Có 40 − 18 = 22 lần chỉ B, nên xác suất thực nghiệm là 22/40 = 11/20.",
+      "hints": [
+        "Tính số lần kim chỉ ô B.",
+        "Lấy 40 trừ 18 rồi chia kết quả cho 40."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 42–43"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "xac-suat-thuc-nghiem"
+    },
+    {
+      "id": "PRO23MICRO_003",
+      "card_id": "prob23-core-1",
+      "micro_role": "apply",
+      "question": "Một hộp có một số viên bi. Mai lấy ngẫu nhiên một viên bi ra xem màu rồi trả lại vào hộp. Sau 50 lần thực hiện, Mai ghi nhận được 15 lần lấy được bi xanh, 20 lần bi đỏ và 15 lần bi vàng. Xác suất thực nghiệm của sự kiện \"Mai không lấy được bi xanh\" là bao nhiêu?",
+      "options": [
+        "3/10",
+        "2/5",
+        "7/10",
+        "1/3"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "xac-suat-thuc-nghiem"
+        ],
+        "type": "tinh-xac-suat-thuc-nghiem",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "advanced",
+      "explanation": "Số lần Mai không lấy được bi xanh bằng tổng số lần lấy được bi đỏ và bi vàng: 20 + 15 = 35 lần (hoặc 50 - 15 = 35). Xác suất thực nghiệm là 35 / 50 = 7/10.",
+      "hints": [
+        "Tính số lần sự kiện 'không lấy được bi xanh' xảy ra thực tế.",
+        "Đó chính là tổng số lần lấy được bi đỏ và bi vàng."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 42–43"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "xac-suat-thuc-nghiem"
+    },
+    {
+      "id": "PRO23MICRO_004",
+      "card_id": "prob23-core-2",
+      "micro_role": "base",
+      "question": "Phép thử: Rút ngẫu nhiên một thẻ từ hộp gồm 5 thẻ giống hệt nhau được đánh số 1, 2, 3, 4, 5. Biến cố \"Rút được thẻ ghi số chẵn\" gồm tập hợp các kết quả thuận lợi nào sau đây?",
+      "options": [
+        "{1; 3; 5}",
+        "{2}",
+        "{4}",
+        "{2; 4}"
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "bien-co"
+        ],
+        "type": "mo-ta-bien-co",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Trong các số 1, 2, 3, 4, 5 thì 2 và 4 là các số chẵn. Do đó kết quả thuận lợi là {2; 4}.",
+      "hints": [
+        "Liệt kê các số chẵn trong năm số được ghi.",
+        "Kết quả thuận lợi gồm cả hai số 2 và 4."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 29"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "bien-co"
+    },
+    {
+      "id": "PRO23MICRO_005",
+      "card_id": "prob23-core-2",
+      "micro_role": "trap",
+      "question": "Một vòng quay có bốn ô ghi các số 2, 3, 5, 7. Biến cố “dừng ở ô ghi số chia hết cho 4” thuộc loại nào?",
+      "options": [
+        "Biến cố ngẫu nhiên",
+        "Biến cố không thể",
+        "Biến cố chắc chắn",
+        "Không thể xác định vì các ô chưa biết kích thước"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "bien-co-chac-chan-khong-the"
+        ],
+        "type": "phan-loai-bien-co",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Không số nào trong 2, 3, 5, 7 chia hết cho 4, nên biến cố không thể xảy ra.",
+      "hints": [
+        "Kiểm tra từng số trên vòng quay.",
+        "Có số nào là bội của 4 không?"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 29"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "bien-co-chac-chan-khong-the"
+    },
+    {
+      "id": "PRO23MICRO_006",
+      "card_id": "prob23-core-2",
+      "micro_role": "apply",
+      "question": "Hộp chỉ có 2 viên bi đỏ và 3 viên bi xanh. Lấy một viên bi. Biến cố “lấy bi đỏ hoặc bi xanh” thuộc loại nào?",
+      "options": [
+        "Biến cố ngẫu nhiên",
+        "Biến cố không thể",
+        "Biến cố chắc chắn",
+        "Biến cố đối"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "bien-co-chac-chan-khong-the"
+        ],
+        "type": "phan-loai-bien-co",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "advanced",
+      "explanation": "Hộp chỉ có hai màu đỏ và xanh. Lấy bất kỳ viên nào cũng thỏa mãn biến cố, nên đó là biến cố chắc chắn.",
+      "hints": [
+        "Liệt kê những màu bi trong hộp.",
+        "Có kết quả nào không thuộc hai màu đỏ và xanh không?"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 29"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "bien-co-chac-chan-khong-the"
+    },
+    {
+      "id": "PRO23MICRO_007",
+      "card_id": "prob23-core-3",
+      "micro_role": "base",
+      "question": "Vòng quay gồm sáu ô bằng nhau ghi các số 2, 4, 6, 8, 10, 12. Mỗi ô đồng khả năng. Xác suất dừng ở ô ghi số lớn hơn 8 là bao nhiêu?",
+      "options": [
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "xac-suat-co-dien"
+        ],
+        "type": "tinh-xac-suat-co-dien",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Hai ô ghi 10 và 12 là thuận lợi. Xác suất bằng 2/6 = 1/3.",
+      "hints": [
+        "Liệt kê các số lớn hơn 8.",
+        "Chia số ô thuận lợi cho tổng sáu ô."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 30"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "xac-suat-co-dien"
+    },
+    {
+      "id": "PRO23MICRO_008",
+      "card_id": "prob23-core-3",
+      "micro_role": "trap",
+      "question": "Vòng quay chia thành sáu ô bằng nhau, ghi lần lượt 1, 1, 2, 3, 3, 3. Mỗi ô đồng khả năng. Xác suất dừng ở ô ghi số 3 là bao nhiêu?",
+      "options": [
+        "1/3",
+        "1/6",
+        "2/3",
+        "1/2"
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "xac-suat-co-dien"
+        ],
+        "type": "tinh-xac-suat-co-dien",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Có ba ô ghi số 3 trong sáu ô đồng khả năng, nên xác suất là 3/6 = 1/2. Đếm số ô, không đếm số giá trị khác nhau.",
+      "hints": [
+        "Số 3 xuất hiện ở mấy ô?",
+        "Lấy số ô ghi 3 chia cho tổng sáu ô."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 30"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "xac-suat-co-dien"
+    },
+    {
+      "id": "PRO23MICRO_009",
+      "card_id": "prob23-core-3",
+      "micro_role": "apply",
+      "question": "Có 12 thẻ cùng kích thước và khối lượng: 4 thẻ ghi “vuông”, 5 thẻ ghi “tam giác”, 3 thẻ ghi “tròn”. Trộn đều, rút ngẫu nhiên một thẻ; mỗi thẻ đồng khả năng. Xác suất rút thẻ “vuông” hoặc “tròn” là bao nhiêu?",
+      "options": [
+        "7/12",
+        "4/12",
+        "3/12",
+        "5/12"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "xac-suat-co-dien"
+        ],
+        "type": "tinh-xac-suat-co-dien",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "advanced",
+      "explanation": "Có 4 + 3 = 7 thẻ thuận lợi trong tổng 12 thẻ, nên xác suất bằng 7/12.",
+      "hints": [
+        "Hai nhóm thẻ được hỏi không giao nhau.",
+        "Cộng số thẻ vuông và tròn, rồi chia cho 12."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 30"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "xac-suat-co-dien"
+    },
+    {
+      "id": "PRO23MICRO_010",
+      "card_id": "prob23-core-4",
+      "micro_role": "base",
+      "question": "Thao tác nào sau đây là một phép thử ngẫu nhiên?",
+      "options": [
+        "Tính 15 + 7",
+        "Đọc số trang của một cuốn sách xác định",
+        "Bốc kín một phong bì trong hộp có ba phong bì ghi ba số khác nhau rồi đọc số bên trong",
+        "Đọc số ngày của tháng 4 trên lịch"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "phep-thu-ngau-nhien"
+        ],
+        "type": "nhan-biet-phep-thu",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Khi bốc kín một phong bì, chưa biết trước chắc chắn số nào sẽ được chọn. Ba thao tác còn lại có kết quả xác định trước.",
+      "hints": [
+        "Phép thử ngẫu nhiên có kết quả chưa biết chắc trước khi thực hiện.",
+        "Phân biệt việc bốc kín với tính toán hoặc tra một giá trị xác định."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "lesson": "Bài 30"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "phep-thu-ngau-nhien"
+    },
+    {
+      "id": "PRO23MICRO_011",
+      "card_id": "prob23-core-4",
+      "micro_role": "trap",
+      "question": "Có tám thẻ ghi các số từ 1 đến 8. Chọn ngẫu nhiên một thẻ. Biến cố A: “số ghi trên thẻ lớn hơn 4 và là số chẵn”. Kết quả thuận lợi gồm những số nào?",
+      "options": [
+        "{4; 6; 8}",
+        "{6; 8}",
+        "{5; 6; 7; 8}",
+        "{2; 4; 6; 8}"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "bien-co"
+        ],
+        "type": "mo-ta-bien-co",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai điều kiện phải cùng đúng. Chỉ có 6 và 8 vừa lớn hơn 4 vừa chẵn.",
+      "hints": [
+        "Lọc các số lớn hơn 4.",
+        "Trong những số còn lại, giữ các số chẵn."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "lesson": "Bài 30"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "bien-co"
+    },
+    {
+      "id": "PRO23MICRO_012",
+      "card_id": "prob23-core-4",
+      "micro_role": "apply",
+      "question": "Vòng quay có 12 ô ghi các số từ 1 đến 12. Biến cố A: “số ghi ở ô dừng chia hết cho 3 nhưng không chia hết cho 2”. A có bao nhiêu kết quả thuận lợi?",
+      "options": [
+        "4",
+        "3",
+        "6",
+        "2"
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "bien-co"
+        ],
+        "type": "mo-ta-bien-co",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "advanced",
+      "explanation": "Các bội của 3 là 3, 6, 9, 12. Loại 6 và 12 vì chia hết cho 2; còn 3 và 9. Có hai kết quả.",
+      "hints": [
+        "Liệt kê các bội của 3.",
+        "Loại các số chẵn rồi đếm số còn lại."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "lesson": "Bài 30"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "bien-co"
+    },
+    {
+      "id": "PRO23MICRO_013",
+      "card_id": "prob23-core-5",
+      "micro_role": "base",
+      "question": "Vòng quay có bốn ô bằng nhau: một ô ghi A, ba ô ghi B. Mỗi ô đồng khả năng. Sau 20 lần quay, ô A xuất hiện 7 lần. Nhận xét nào đúng?",
+      "options": [
+        "Xác suất theo mô hình của A là 1/4; xác suất thực nghiệm là 7/20, không bắt buộc bằng nhau",
+        "Xác suất thực nghiệm bắt buộc bằng 1/4",
+        "Xác suất theo mô hình của A bằng 7/20",
+        "Vòng quay chắc chắn hỏng vì hai giá trị khác nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "kiem-tra-xac-suat"
+        ],
+        "type": "so-sanh-thuc-nghiem-ly-thuyet",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Theo cấu tạo vòng quay, xác suất của A là 1/4. Theo 20 lần quay, xác suất thực nghiệm là 7/20. Hai giá trị có thể khác nhau trong mẫu hữu hạn.",
+      "hints": [
+        "Phân biệt tỉ số theo mô hình với tỉ số quan sát.",
+        "Mô hình có một ô A trong bốn ô; thực tế quan sát được bảy lần A."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "lesson": "Bài 31–32"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "kiem-tra-xac-suat"
+    },
+    {
+      "id": "PRO23MICRO_014",
+      "card_id": "prob23-core-5",
+      "micro_role": "trap",
+      "question": "Vòng quay có năm ô bằng nhau: hai ô ghi A và ba ô ghi B. Sau 30 lần quay, kim dừng ở A 18 lần. Xác suất thực nghiệm của B bằng bao nhiêu?",
+      "options": [
+        "0,6",
+        "0,5",
+        "0,4",
+        "0,2"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "xac-suat-thuc-nghiem"
+        ],
+        "type": "tinh-xac-suat-thuc-nghiem",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Có 30 − 18 = 12 lần dừng ở B. Xác suất thực nghiệm là 12/30 = 0,4; có thể khác xác suất mô hình của B là 3/5.",
+      "hints": [
+        "Tính số lần thực tế kim dừng ở B.",
+        "Lấy 30 trừ 18 rồi chia cho 30."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "lesson": "Bài 31–32"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "xac-suat-thuc-nghiem"
+    },
+    {
+      "id": "PRO23MICRO_015",
+      "card_id": "prob23-core-5",
+      "micro_role": "apply",
+      "question": "Tung một đồng xu cân đối trong hai đợt. Đợt 1: 20 lần có 8 lần ngửa; đợt 2: 30 lần có 21 lần ngửa. Nhận xét nào đúng về xác suất thực nghiệm chung của mặt ngửa?",
+      "options": [
+        "Bằng 8/20 vì chỉ dùng đợt đầu",
+        "Bằng 29/50 = 0,58; không bắt buộc bằng xác suất mô hình 0,5",
+        "Luôn bằng 0,5 vì đồng xu cân đối",
+        "Bằng trung bình không trọng số của 8/20 và 21/30"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [
+          "kiem-tra-xac-suat"
+        ],
+        "type": "ung-dung-xac-suat",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "advanced",
+      "explanation": "Tổng số lần ngửa là 8 + 21 = 29, tổng lần tung là 20 + 30 = 50. Xác suất thực nghiệm chung bằng 29/50 = 0,58, không bắt buộc bằng 0,5 của mô hình cân đối.",
+      "hints": [
+        "Gộp số lần ngửa và tổng lần tung của hai đợt.",
+        "Lấy (8 + 21) chia cho (20 + 30), không lấy trung bình đơn giản của hai tỉ lệ."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "lesson": "Bài 31–32"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "kiem-tra-xac-suat"
+    }
+  ]
+}

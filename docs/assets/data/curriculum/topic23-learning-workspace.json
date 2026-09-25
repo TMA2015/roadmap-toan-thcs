@@ -1,0 +1,166 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "23-xac-suat",
+  "title": "Xác suất",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only five grade-mapped Core cards; Core-Support and Entrance10 never gate Core."
+  },
+  "cards": [
+    {
+      "id": "prob23-core-1",
+      "order": 1,
+      "title": "Kết quả có thể và xác suất thực nghiệm",
+      "kntt_lessons": [
+        "Lớp 6: Bài 42–43"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "xac-suat-thuc-nghiem"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "PRO23MICRO_001",
+        "PRO23MICRO_002",
+        "PRO23MICRO_003"
+      ],
+      "teaching_copy": {
+        "key_idea": "Xác suất thực nghiệm (tần số tương đối) của một sự kiện là tỉ số giữa số lần sự kiện đó xảy ra và tổng số lần thực hiện phép thử.",
+        "worked_example": {
+          "problem": "Tung một đồng xu 20 lần, mặt ngửa xuất hiện 12 lần. Xác suất thực nghiệm của mặt ngửa bằng bao nhiêu?",
+          "solution": "Có 12 lần ngửa trên 20 lần thử. Xác suất thực nghiệm là 12/20 = 3/5."
+        },
+        "misconception": "Học sinh thường lấy nhầm số lần sự kiện 'không xảy ra' để chia, hoặc chia cho số lần của kết quả khác thay vì tổng số lần thử.",
+        "summary": "Để tính xác suất thực nghiệm, ta đếm số lần kết quả thuận lợi xuất hiện trên thực tế rồi chia cho tổng số lần đã thực hiện thí nghiệm."
+      }
+    },
+    {
+      "id": "prob23-core-2",
+      "order": 2,
+      "title": "Biến cố và các loại biến cố",
+      "kntt_lessons": [
+        "Lớp 7: Bài 29"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "bien-co",
+        "bien-co-chac-chan-khong-the"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "PRO23MICRO_004",
+        "PRO23MICRO_005",
+        "PRO23MICRO_006"
+      ],
+      "teaching_copy": {
+        "key_idea": "Biến cố là hiện tượng có thể hoặc không thể xảy ra dựa trên một phép thử. Biến cố chắc chắn luôn xảy ra, còn biến cố không thể không bao giờ xảy ra.",
+        "worked_example": {
+          "problem": "Gieo xúc xắc sáu mặt. Phân loại các biến cố: số chấm lớn hơn 0; số chấm bằng 7; số chấm lẻ.",
+          "solution": "Lớn hơn 0 là chắc chắn; bằng 7 là không thể; số chấm lẻ là ngẫu nhiên."
+        },
+        "misconception": "Đôi khi học sinh nhầm lẫn giữa một biến cố ngẫu nhiên có xác suất thấp với biến cố không thể.",
+        "summary": "Liệt kê chính xác không gian các kết quả có thể của phép thử sẽ giúp ta phân loại đúng tính chất của biến cố."
+      }
+    },
+    {
+      "id": "prob23-core-3",
+      "order": 3,
+      "title": "Xác suất của biến cố đơn giản",
+      "kntt_lessons": [
+        "Lớp 7: Bài 30"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "PRO23MICRO_007",
+        "PRO23MICRO_008",
+        "PRO23MICRO_009"
+      ],
+      "teaching_copy": {
+        "key_idea": "Trong một phép thử có các kết quả đồng khả năng, xác suất của một biến cố bằng số kết quả thuận lợi cho biến cố đó chia cho tổng số kết quả có thể xảy ra.",
+        "worked_example": {
+          "problem": "Có 10 thẻ giống nhau, đánh số từ 1 đến 10, trộn đều rồi rút một thẻ. Xác suất rút số chia hết cho 5 bằng bao nhiêu?",
+          "solution": "Hai thẻ ghi 5 và 10 thuận lợi trong 10 thẻ đồng khả năng. Xác suất bằng 2/10 = 1/5."
+        },
+        "misconception": "Học sinh áp dụng công thức tỉ số ngay cả khi các kết quả không đồng khả năng (ví dụ: vòng quay có các ô to nhỏ khác nhau).",
+        "summary": "Xác định rõ điều kiện đồng khả năng, đếm chính xác số kết quả thuận lợi, rồi lập tỉ số để tìm xác suất cổ điển."
+      }
+    },
+    {
+      "id": "prob23-core-4",
+      "order": 4,
+      "title": "Phép thử và kết quả thuận lợi",
+      "kntt_lessons": [
+        "Lớp 8: Bài 30"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "phep-thu-ngau-nhien",
+        "bien-co"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "PRO23MICRO_010",
+        "PRO23MICRO_011",
+        "PRO23MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Phép thử ngẫu nhiên là hành động mà ta không biết trước chắc chắn kết quả. Kết quả thuận lợi là kết quả cụ thể khiến cho một biến cố xảy ra.",
+        "worked_example": {
+          "problem": "Một vòng quay có năm ô ghi 1, 2, 3, 4, 5. Biến cố A là dừng ở ô ghi số chẵn. Các kết quả thuận lợi của A là gì?",
+          "solution": "Các số chẵn trên vòng quay là 2 và 4, nên kết quả thuận lợi là {2; 4}."
+        },
+        "misconception": "Liệt kê thừa kết quả thuận lợi do hiểu sai định nghĩa toán học (ví dụ: nhầm số 1 là số nguyên tố).",
+        "summary": "Cần đọc kỹ cả yêu cầu của phép thử ngẫu nhiên và điều kiện mô tả biến cố để tìm chính xác tập kết quả thuận lợi."
+      }
+    },
+    {
+      "id": "prob23-core-5",
+      "order": 5,
+      "title": "Xác suất theo tỉ số và đối chiếu thực nghiệm",
+      "kntt_lessons": [
+        "Lớp 8: Bài 31–32"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat",
+        "xac-suat-thuc-nghiem"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "PRO23MICRO_013",
+        "PRO23MICRO_014",
+        "PRO23MICRO_015"
+      ],
+      "teaching_copy": {
+        "key_idea": "Xác suất thực nghiệm là tỉ số tính từ thực tế quan sát được. Với số lần thử lớn, nó thường tiến gần đến xác suất lý thuyết (cổ điển), nhưng với mẫu hữu hạn, hai giá trị này có thể khác biệt.",
+        "worked_example": {
+          "problem": "Xác suất theo mô hình của một cú ném trúng là 0,5. Trong 10 lần ném có 6 lần trúng. Xác suất thực nghiệm bằng bao nhiêu?",
+          "solution": "Số lần trúng là 6 trong 10 lần ném, nên xác suất thực nghiệm là 6/10 = 0,6. Với số lần thử hữu hạn, hai giá trị không bắt buộc bằng nhau."
+        },
+        "misconception": "Lầm tưởng xác suất lý thuyết 1/2 nghĩa là hễ cứ thực hiện 2 lần thì chắc chắn 1 lần thành công.",
+        "summary": "Xác suất mô hình giúp ta ước lượng xu hướng dài hạn, trong khi kết quả thực nghiệm phản ánh cụ thể những gì đã xảy ra ngẫu nhiên."
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "id": "prob23-ext-1",
+      "layer": "Core-Support",
+      "title": "Không gian mẫu, biến cố đối và đồng xu nhiều lần – không chấm Core",
+      "gates_core": false
+    },
+    {
+      "id": "prob23-ext-2",
+      "layer": "Entrance10",
+      "title": "Hai xúc xắc, sơ đồ cây và bài toán nhiều bước – không chấm Core",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/23-xac-suat-micro-v1.json"
+}

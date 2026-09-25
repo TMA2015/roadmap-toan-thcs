@@ -429,46 +429,18 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
-### Mức 1 – Nhận biết
+Học **5 Learning Cards KNTT Core** theo thứ tự lớp 6–8; mỗi thẻ gồm kiến thức, ví dụ mẫu và ba câu kiểm tra nhanh **Base → Trap → Apply**. Làm sai sẽ có giải thích và gợi ý để thử lại.
 
-1. Gieo một xúc xắc. Viết không gian mẫu.
-2. Tung một đồng xu. Nêu biến cố chắc chắn và một biến cố không thể.
-3. Xác suất của một biến cố luôn nằm trong khoảng nào?
-
-### Mức 2 – Thông hiểu
-
-4. Gieo xúc xắc một lần. Tính xác suất ra số lớn hơn `4`.
-5. Tung đồng xu hai lần. Liệt kê không gian mẫu.
-6. Tung đồng xu hai lần. Tính xác suất có đúng một lần ngửa.
-
-### Mức 3 – Vận dụng
-
-7. Gieo hai xúc xắc. Tính xác suất tổng bằng `7`.
-8. Tung đồng xu ba lần. Tính xác suất có ít nhất một lần ngửa.
-9. Một hộp có các thẻ đánh số `1` đến `10`. Rút ngẫu nhiên một thẻ. Tính xác suất rút được số chia hết cho `3`.
-
-### Mức 4 – Tổng hợp
-
-10. Một phép thử gồm tung đồng xu rồi gieo xúc xắc. Lập không gian mẫu và tính xác suất đồng xu ngửa, xúc xắc ra số chẵn.
-11. Một trò chơi gồm hai bước độc lập. Hãy vẽ sơ đồ cây và tính xác suất đạt đúng một lần thành công.
+- **→ [Mở Practice Room CĐ23](bai-tap.md)** để luyện ngân hàng 120 câu; hệ thống hiện nhãn tầng Core / Core-Support / Entrance10.
+- Các câu về biến cố đối, sơ đồ cây, hai xúc xắc và rút không hoàn lại là nội dung bổ trợ/mở rộng, không tính vào Core Readiness.
 
 ---
 
 ## ✅ 9. Tự kiểm tra
 
-Hãy tự trả lời không nhìn tài liệu:
+Bài tự luận hiện có gồm cả câu về thí nghiệm nhiều bước, được giữ để **tự luyện bổ sung**, không phải bài kiểm tra Core Readiness tương tác. Phần Readiness Core sẽ được biên soạn và kiểm định ở batch riêng.
 
-1. Không gian mẫu là gì?
-2. Biến cố là gì?
-3. Khi nào dùng được `P(A)=n(A)/n(Ω)`?
-4. Biến cố chắc chắn có xác suất bằng bao nhiêu?
-5. Biến cố không thể có xác suất bằng bao nhiêu?
-6. Công thức xác suất của biến cố đối là gì?
-7. Khi nào nên dùng sơ đồ cây?
-8. Với câu “ít nhất một”, chiến lược nào thường ngắn hơn?
-9. Xác suất thực nghiệm được tính như thế nào và vì sao không nhất thiết bằng đúng xác suất của mô hình sau một số hữu hạn lần thử?
-
-**Tự đánh giá:** bài 9 câu này gồm cả phần nâng cao; dùng để chọn kỹ năng cần ôn, không tính như Core Readiness. Bài Core Readiness tương tác sẽ làm trong batch riêng.
+- **→ [Mở bài tự kiểm tra tự luận hiện có](tu-kiem-tra.md)**
 
 ---
 
@@ -488,13 +460,13 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+Tự theo dõi tiến độ theo nội dung từng lớp:
 
 - [ ] Lập đúng không gian mẫu.
 - [ ] Xác định đúng biến cố.
 - [ ] Dùng đúng công thức xác suất cổ điển.
 - [ ] Tính và phân biệt được xác suất thực nghiệm.
-- [ ] Giải được bài nhiều bước bằng bảng hoặc sơ đồ cây.
-- [ ] Dùng được biến cố đối cho bài “ít nhất một”.
+- [ ] Nếu học mở rộng, thử bài nhiều bước và sơ đồ cây; không tính vào KNTT Core.
+- [ ] Nếu học mở rộng, tìm hiểu biến cố đối; không tính vào KNTT Core.
 - [ ] Kiểm tra được tính hợp lý của kết quả.
-- [ ] Chữa câu sai; có thể học tiếp CĐ24 bất kể điểm bài tự luận. Core Readiness tương tác được triển khai ở batch riêng.
+- [ ] Chữa lại câu micro-practice sai; có thể học tiếp CĐ24 bất kể điểm bài tự luận. Core Readiness tương tác sẽ được thực hiện ở batch riêng.
