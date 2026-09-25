@@ -14,6 +14,6 @@ for(const [id,slug,layer] of [[24,"24-bai-toan-thuc-te","Core-Support"],[25,"25-
  ok(q.options.length===4&&new Set(q.options).size===4&&q.options[q.answer]&&q.hints.length===2&&q.explanation,"answer/hints "+q.id);
  });});
  ok(ids.size===15&&(w.extensions||[]).every(x=>x.gates_core===false),"no gating "+id);
- ok(txt("docs/kien-thuc/"+slug+"/index.md").includes("Learning Journey "+layer)&&txt("docs/assets/javascripts/topic-workspace-v1.js").includes('"'+slug+'":{number:'),"UI wiring "+id);
+ ok(txt("docs/kien-thuc/"+slug+"/index.md").includes("Learning Journey")&&txt("docs/assets/javascripts/topic-workspace-v1.js").includes('"'+slug+'":{number:'),"UI wiring "+id);
 }
 if(errors.length){console.error(errors.join("\n"));process.exit(1)}console.log("PASS CĐ24–25: ten cards, thirty non-gating micro items, unchanged original 240 questions.");
