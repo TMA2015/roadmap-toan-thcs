@@ -64,5 +64,12 @@
     "docs/assets/data/practice/07-phan-thuc-dai-so-micro-v1.json",
     "docs/assets/data/assessment/07-phan-thuc-dai-so-core-v1.json"
   ],
-  "rollout_policy": "Apply by topic/strand batch. Do not create per-card rollout PRs unless fixing a verified defect."
+  "rollout_policy": "Apply by topic/strand batch. Do not create per-card rollout PRs unless fixing a verified defect.",
+  "maintenance_revision": "1.0.1",
+  "maintenance_notes": [
+    "MathJax is re-typeset when collapsible details open.",
+    "Micro-practice and Readiness choices enforce touch-safe 44px targets; micro option gap is at least 8px.",
+    "Learning page exposes bottom Practice/Readiness CTAs.",
+    "CI rejects hidden JSON control characters and validates micro-practice before deploy."
+  ]
 }
