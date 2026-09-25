@@ -1,89 +1,192 @@
-# Tự kiểm tra – Chuyên đề 25: Tổng hợp & ôn thi vào 10
+# Tự kiểm tra học thuật – Chuyên đề 25
 
-> **Thời gian gợi ý:** 45 phút
-> **Thang điểm:** 10 điểm
+> **Thời gian gợi ý:** 60 phút  
+> **Thang điểm:** 10 điểm  
+> **Mục tiêu:** kiểm tra năng lực giải Toán tổng hợp. Kỹ năng phòng thi và chữa đề được đánh giá riêng, không cộng vào điểm này.
 
-# Đề tự kiểm tra
+## Đề bài
 
-## Câu 1 — 0,5 điểm
-Nêu bốn mạch kiến thức lớn của Roadmap Toán THCS.
+### Câu 1 – Đại số (2,0 điểm)
 
-## Câu 2 — 0,5 điểm
-Một bài yêu cầu tìm giao điểm hai đồ thị và giải hệ phương trình tương ứng liên quan đến những chuyên đề nào?
+1. Rút gọn
+[
+A=\sqrt{98}-\sqrt8.
+]
 
-## Câu 3 — 0,75 điểm
-Vì sao không nên ôn tất cả chuyên đề với thời lượng bằng nhau?
+2. Giải phương trình
+[
+\frac{2}{x-1}=\frac13.
+]
 
-## Câu 4 — 0,75 điểm
-Phân biệt lỗi kiến thức với lỗi cẩu thả bằng một ví dụ ngắn.
+### Câu 2 – Viète và hệ phương trình (2,0 điểm)
 
-## Câu 5 — 1,0 điểm
-Một học sinh thường sai điều kiện xác định khi rút gọn biểu thức chứa căn. Hãy nêu quy trình 3 bước để hạn chế lỗi này.
+1. Cho phương trình
+[
+x^2-7x+10=0
+]
+có hai nghiệm (x_1,x_2). Không giải phương trình, tính
+[
+x_1^2+x_2^2.
+]
 
-## Câu 6 — 1,0 điểm
-Một đề thi 120 phút có nhiều câu. Hãy nêu nguyên tắc phân bổ thời gian để tránh mắc kẹt quá lâu ở một câu khó.
+2. Giải hệ
+[
+\begin{cases}
+x+y=13,\\
+x-y=3.
+\end{cases}
+]
 
-## Câu 7 — 1,25 điểm
-Sau ba đề thử, học sinh mất điểm nhiều nhất ở đường tròn, bài toán thực tế và sai dấu phương trình. Hãy đề xuất cách dùng sổ lỗi để lập kế hoạch tuần tiếp theo.
+### Câu 3 – Thống kê và xác suất (2,0 điểm)
 
-## Câu 8 — 1,25 điểm
-Một câu hình yêu cầu chứng minh tứ giác nội tiếp rồi suy ra hai góc bằng nhau. Hãy nêu chuỗi kiến thức cần huy động và cách kiểm tra logic lời giải.
+Cho dãy số liệu
+[
+5, 6, 7, 7, 8, 9.
+]
 
-## Câu 9 — 1,5 điểm
-Một học sinh đạt 7,5 điểm nhưng mất 1 điểm do quên điều kiện nghiệm và 0,5 điểm do thiếu đơn vị. Hãy phân loại lỗi và đề xuất biện pháp sửa mang tính hệ thống.
+1. Tính số trung bình cộng.
+2. Tìm trung vị và mốt.
+3. Rút ngẫu nhiên một thẻ ghi số từ 1 đến 10. Tính xác suất rút được số chia hết cho 3.
 
-## Câu 10 — 1,5 điểm
-Thiết kế chu kỳ ôn 2 tuần cuối theo quy trình: làm đề → chấm → phân loại lỗi → ôn chuyên đề → làm lại → kiểm tra bằng đề mới. Giải thích mục đích của từng bước.
+### Câu 4 – Hình học (3,0 điểm)
+
+Tam giác (ABC) vuông tại (A), (AB=6), (AC=8), đường cao (AH) xuống (BC).
+
+1. Tính (BC).
+2. Tính (AH).
+3. Tính (BH) và (CH).
+
+### Câu 5 – Vận dụng (1,0 điểm)
+
+Cho (x,y>0), (x+y=12). Tìm giá trị lớn nhất của (P=xy), chỉ rõ khi nào đạt dấu bằng.
 
 # Đáp án và hướng dẫn chấm
 
-1. Số & Đại số; Hình học; Thống kê – Xác suất; Bài toán thực tế.
-2. Hàm số – đồ thị và hệ phương trình.
-3. Vì mức độ yếu, tần suất xuất hiện và trọng số trong đề không giống nhau giữa các chuyên đề.
-4. Lỗi kiến thức: không biết/nhớ sai định lý hoặc công thức. Lỗi cẩu thả: hiểu đúng nhưng chép sai dấu, sai số, bỏ đơn vị...
-5. Ghi điều kiện xác định → giải/rút gọn → đối chiếu kết quả với điều kiện trước khi kết luận.
-6. Ưu tiên câu chắc chắn lấy điểm trước; đặt giới hạn thời gian hợp lý cho câu khó; quay lại sau khi đã xử lý phần còn lại.
-7. Thống kê số lần và số điểm mất theo từng lỗi; ưu tiên lỗi lặp lại nhiều/mất nhiều điểm; ôn đúng chuyên đề rồi làm lại câu sai.
-8. Nhận diện điều kiện nội tiếp → chứng minh nội tiếp → dùng tính chất góc cùng chắn cung/hệ quả phù hợp; kiểm tra mỗi kết luận có căn cứ trực tiếp từ giả thiết hoặc kết quả trước.
-9. Đây chủ yếu là lỗi quy trình/trình bày. Dùng checklist bắt buộc trước khi nộp: điều kiện → nghiệm hợp lệ → đơn vị → câu kết luận.
-10. Cần đủ sáu bước và giải thích: đề mới đo năng lực; chấm để xác định sai; phân loại để tìm nguyên nhân; ôn đúng chỗ; làm lại để kiểm chứng sửa lỗi; đề mới để kiểm tra khả năng chuyển giao.
+## Câu 1
+
+1.
+[
+A=7\sqrt2-2\sqrt2=5\sqrt2.
+]
+
+2. Điều kiện (x\ne1).
+[
+\frac{2}{x-1}=\frac13
+\Rightarrow x-1=6
+\Rightarrow x=7.
+]
+
+## Câu 2
+
+1. Theo Viète:
+[
+x_1+x_2=7,qquad x_1x_2=10.
+]
+Do đó
+[
+x_1^2+x_2^2=49-20=29.
+]
+
+2. Cộng hai phương trình:
+[
+2x=16\Rightarrow x=8,qquad y=5.
+]
+
+## Câu 3
+
+Tổng dữ liệu bằng (42), nên số trung bình là
+[
+\overline x=7.
+]
+
+Trung vị:
+[
+\frac{7+7}{2}=7.
+]
+
+Mốt là (7).
+
+Các số chia hết cho 3 trong (1,2,ldots,10) là (3,6,9), nên
+[
+P=\frac3{10}.
+]
+
+## Câu 4
+
+Theo Pythagore:
+[
+BC=\sqrt{6^2+8^2}=10.
+]
+
+Từ diện tích:
+[
+\frac12 AB\cdot AC=\frac12 BC\cdot AH
+]
+nên
+[
+AH=\frac{6\cdot8}{10}=\frac{24}{5}.
+]
+
+Dùng hệ thức lượng:
+[
+AB^2=BH\cdot BC
+\Rightarrow BH=\frac{36}{10}=\frac{18}{5},
+]
+[
+AC^2=CH\cdot BC
+\Rightarrow CH=\frac{64}{10}=\frac{32}{5}.
+]
+
+Kiểm tra:
+[
+BH+CH=\frac{50}{5}=10=BC.
+]
+
+## Câu 5
+
+Từ
+[
+(x-y)^2\ge0
+]
+suy ra
+[
+(x+y)^2\ge4xy.
+]
+Do (x+y=12):
+[
+144\ge4xy\Rightarrow xy\le36.
+]
+Dấu bằng xảy ra khi (x=y=6).
+
+Vậy
+[
+P_{\max}=36.
+]
 
 # Bảng truy nguyên lỗi
 
 | Sai câu | Nên quay lại |
 |---|---|
-| 1–3 | Bản đồ tổng hợp và ma trận ưu tiên |
-| 4–5 | Phân loại lỗi và điều kiện bài toán |
-| 6 | Chiến lược thời gian phòng thi |
-| 7 | Sổ lỗi và kế hoạch ôn tập |
-| 8 | Hình học tổng hợp / đường tròn |
-| 9–10 | Quy trình chữa đề và chu kỳ cải thiện |
+| 1 | Căn thức, điều kiện xác định, phương trình |
+| 2 | Phương trình bậc hai – Viète; hệ phương trình |
+| 3 | Thống kê và xác suất |
+| 4 | Tam giác vuông, đồng dạng, hệ thức lượng |
+| 5 | Biến đổi đại số và tối ưu |
 
-# Thang tự đánh giá
+# Cách hiểu kết quả
 
-| Điểm | Mức | Hành động đề xuất |
-|---:|---|---|
-| 9,0–10 | Hoàn thành tốt | Có thể tiếp tục lộ trình; vẫn chữa mọi câu chưa chắc |
-| 7,0–8,75 | Đạt | Chữa toàn bộ câu sai rồi chuyển tiếp |
-| 5,0–6,75 | Chưa chắc | Quay lại đúng dạng bài còn yếu và luyện thêm M2–M3 |
-| Dưới 5,0 | Cần củng cố | Học lại kiến thức cốt lõi và làm lại M1–M2 |
+| Điểm | Hành động |
+|---:|---|
+| 8,5–10 | Chuyển sang đề luyện hoàn chỉnh; vẫn chữa câu chưa chắc |
+| 7,0–8,25 | Chữa kỹ câu sai rồi luyện lại đúng chuyên đề |
+| 5,0–6,75 | Quay lại 2–3 mạch yếu nhất trước khi làm đề hoàn chỉnh |
+| Dưới 5,0 | Chưa nên dùng luyện đề làm hoạt động chính; củng cố kiến thức nền trước |
 
-> Điểm số chỉ là một tín hiệu. Quan trọng hơn là xác định **loại lỗi** và sửa đúng phần kiến thức gốc.
+> Điểm này chỉ đo bài Toán hiện tại. Không cộng/trừ điểm vì tốc độ làm bài, sổ lỗi hay chiến lược phòng thi.
 
----
-
-# Checklist sau khi chấm
-
-- [ ] Tôi đã ghi lại điểm số.
-- [ ] Tôi đã đối chiếu từng câu sai với **Bảng truy nguyên lỗi**.
-- [ ] Tôi đã xác định lỗi thuộc nhóm kiến thức / biến đổi / dấu / điều kiện / mô hình hóa / kết luận / trình bày.
-- [ ] Tôi đã làm lại từng câu sai mà không nhìn đáp án.
-- [ ] Tôi đã luyện lại kỹ năng yếu trong Practice Bank nếu cần.
-- [ ] Nếu đạt từ 7 điểm trở lên, tôi đã chữa xong các câu sai trước khi chuyển tiếp.
-
-# Liên kết Roadmap
+# Liên kết
 
 - **← Bài học:** [Chuyên đề 25](index.md)
-- **← Luyện tập:** [Bài tập Chuyên đề 25](bai-tap.md)
-- **← Chuyên đề trước:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
-- **→ Blueprint:** [25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md)
+- **← Bài tập học thuật:** [Bài tập](bai-tap.md)
+- **→ Đề luyện hoàn chỉnh:** [Đề số 1 – 120 phút](de-luyen-01.md)
+- **→ Kỹ năng thi riêng:** [Tự đánh giá kỹ năng làm bài](tu-danh-gia-ky-nang-thi.md)
