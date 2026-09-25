@@ -1,5 +1,5 @@
 {
-  "version": "1.0.33",
+  "version": "1.0.34",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -202,7 +202,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Run independent source-locked review GEO-BATCH-19-20-GEMINI-REVIEW-001, integrate admissible corrections, then freeze Geometry Architecture v1 if no unresolved high-risk issues. After that, continue Golden Template production with CĐ21–CĐ25.",
+    "next_priority": "Audit Geometry Architecture v1 freeze gate separately (architecture review, diagram schema/template, benchmark, desktop/mobile/iPad evidence). Keep it REVIEW_READY until supported; prepare a small CĐ21 authoring handoff to Gemini with exact skills/schema.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -220,7 +220,7 @@
     "golden_template": "Frozen v1.0 with maintenance hardening v1.0.1: MathJax details re-typeset, touch-safe targets, bottom CTAs and JSON control-character QA. Frozen invariants unchanged.",
     "golden_rollout": "CĐ04–CĐ12 DEPLOYED-PASS under Golden Template. CĐ11 adds source-mapped căn bậc ba with 12 real Practice Bank items (120→132); CĐ12 keeps parameter/extended Viète applications outside Core readiness pending item-level review. CI, strict MkDocs build and Pages deploy pass.",
     "geometry_architecture": "v1 REVIEW_READY deployed: proof/statement/diagram contracts, 8-topic Core coverage matrix, benchmark BENCH-GEO-001 and source-locked Gemini architecture review bundle.",
-    "geometry_rollout": "CĐ13–CĐ18 DEPLOYED-PASS. CĐ19–CĐ20 DEPLOYED-REVIEW-READY pending independent high-risk review. Geometry exact-ID coverage is now 124/124 with 0 gaps; CĐ19 bank 147 and CĐ20 bank 195."
+    "geometry_rollout": "CĐ13–CĐ20 DEPLOYED-PASS; CĐ19–CĐ20 Gemini batch review PASS with corrections []. Geometry exact-ID coverage 124/124, 0 gaps; CĐ19 bank 147 and CĐ20 bank 195."
   },
   "handoff_required_fields": [
     "TASK_ID",
@@ -248,9 +248,9 @@
     "offline_relay_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/offline-relay/",
     "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
     "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
-    "next_public_task": "GEO-BATCH-19-20-GEMINI-REVIEW-001",
-    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo19-20-review.json",
+    "next_public_task": "GEO-ARCH-V1-001",
+    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geometry-architecture-v1.json",
     "protocol_version": "2.0",
-    "relay_v2": "Final geometry batch CĐ19–CĐ20 is deployed but intentionally not self-certified. Use the high-risk source-locked review bundle; exact item ID + exact prompt quote are mandatory for corrections, and visual appearance cannot establish facts."
+    "relay_v2": "CĐ19–CĐ20 independent batch review PASS (zero corrections), stored as GEO-BATCH-19-20-GEMINI-REVIEW-001-RESULT. Geometry architecture freeze is independently gated. Future authoring batches: Gemini small source-locked exercise batch, ChatGPT validation/integration."
   }
 }
