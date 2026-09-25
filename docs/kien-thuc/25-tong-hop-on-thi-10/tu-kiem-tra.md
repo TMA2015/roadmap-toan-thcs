@@ -65,6 +65,6 @@ Một hộp chứa 5 thẻ ghi số \(1,2,3,4,5\), các thẻ cùng khả năng 
 
 ## Chữa bài và học lại
 
-Đừng chỉ ghi điểm tổng. Với từng câu sai, tìm công cụ cần ôn: C1 → [căn thức](../11-can-thuc/) / [phân thức](../07-phan-thuc-dai-so/); C2 → [phương trình bậc hai và Viète](../12-phuong-trinh-bac-hai-viete/); C3 → [hệ phương trình](../09-he-phuong-trinh/); C4 → [tam giác](../14-tam-giac/) / [hệ thức lượng](../18-he-thuc-luong/); C5 → [xác suất](../23-xac-suat/).
+Đừng chỉ ghi điểm tổng. Với từng câu sai, tìm công cụ cần ôn: C1 → [căn thức](../11-can-thuc/index.md) / [phân thức](../07-phan-thuc-dai-so/index.md); C2 → [phương trình bậc hai và Viète](../12-phuong-trinh-bac-hai-viete/index.md); C3 → [hệ phương trình](../09-he-phuong-trinh/index.md); C4 → [tam giác](../14-tam-giac/index.md) / [hệ thức lượng](../18-he-thuc-luong/index.md); C5 → [xác suất](../23-xac-suat/index.md).
 
 [Đề tổng hợp 120 phút số 01](de-thi-tong-hop-01.md) · [Bài toán mẫu kinh điển](bai-toan-kinh-dien.md) · [Tự kiểm tra kỹ năng làm đề](tu-kiem-tra-ky-nang.md)
