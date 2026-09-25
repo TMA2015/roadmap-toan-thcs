@@ -1,195 +1,146 @@
-# Bài tập – Chuyên đề 25: Tổng hợp & ôn thi vào 10
+<!-- roadmap-academic-capstone-v2 -->
+# Bài tập học thuật – Chuyên đề 25: Tổng hợp & ôn thi vào 10
 
-> **Mục tiêu:** hệ thống hóa toàn bộ Roadmap, nhận diện nhanh dạng bài, lựa chọn chiến lược giải và rèn quy trình làm đề – chữa lỗi.
->
-> **Quy ước mã bài:** `25-Mx-yy`.
+> **Mục tiêu:** luyện trực tiếp năng lực Toán ở các mạch lớn. Kỹ năng quản lý thời gian, chữa đề và sổ lỗi được tách sang [Tự đánh giá kỹ năng làm bài](tu-danh-gia-ky-nang-thi.md).
 
-# Mức 1 – Nhận biết
+## A. Đại số và biểu thức
 
-### 25-M1-01
-Nêu bốn mạch kiến thức lớn của Roadmap Toán THCS.
+### 25-A1
+Rút gọn
+[
+\sqrt{75}-\sqrt{12}+2\sqrt3.
+]
 
-### 25-M1-02
-Một bài yêu cầu giải hệ hai phương trình bậc nhất hai ẩn thuộc mạch kiến thức nào?
+### 25-A2
+Giải phương trình
+[
+\frac{2x-1}{x+2}=3.
+]
 
-### 25-M1-03
-Một bài cho bảng số liệu và yêu cầu tính trung vị thuộc nhóm chuyên đề nào?
+### 25-A3
+Cho
+[
+A=\frac{\sqrt{x}-1}{\sqrt{x}+2},\qquad x\ge0.
+]
+Tính (A) khi (x=16), sau đó giải (A=\frac12).
 
-### 25-M1-04
-Một bài yêu cầu chứng minh hai tam giác đồng dạng thuộc mạch kiến thức nào?
+## B. Phương trình, hệ và Viète
 
-### 25-M1-05
-Khi gặp bài toán thực tế có đại lượng chưa biết, bước đầu tiên sau khi đọc đề là gì?
+### 25-B1
+Cho phương trình
+[
+x^2-7x+10=0
+]
+có hai nghiệm (x_1,x_2). Không giải phương trình, tính
+[
+x_1^2+x_2^2.
+]
 
-### 25-M1-06
-Sau khi làm xong một đề thi thử, bước nào giúp cải thiện nhanh nhất ở lần sau?
+### 25-B2
+Giải hệ
+[
+\begin{cases}
+x+y=11,\\
+2x-y=4.
+\end{cases}
+]
 
-### 25-M1-07
-Trong phòng thi, vì sao nên làm trước các câu chắc chắn lấy điểm?
+### 25-B3
+Một cửa hàng bán 30 quyển sách gồm loại A giá 60 nghìn đồng và loại B giá 40 nghìn đồng, thu được 1,5 triệu đồng. Tính số sách mỗi loại.
 
-### 25-M1-08
-Sổ lỗi sai nên ghi ít nhất ba thông tin nào?
+## C. Hàm số và mô hình hóa
 
-# Mức 2 – Thông hiểu
+### 25-C1
+Cho đường thẳng (y=2x-1). Kiểm tra điểm (M(3;5)) có thuộc đường thẳng không.
 
-### 25-M2-01
-Cho bài: “Rút gọn biểu thức chứa căn và tìm điều kiện xác định”. Hãy chỉ ra các chuyên đề cần huy động.
+### 25-C2
+Hai đường thẳng
+[
+y=x+2,qquad y=-x+6
+]
+cắt nhau tại điểm nào?
 
-### 25-M2-02
-Cho bài: “Tìm giao điểm của hai đồ thị rồi giải hệ phương trình tương ứng”. Hãy nêu hai mạch kiến thức liên quan.
+### 25-C3
+Một bể đang có 120 lít nước và được bơm thêm đều 15 lít mỗi phút. Viết công thức lượng nước (V) theo thời gian (t) phút và tính (V) sau 8 phút.
 
-### 25-M2-03
-Một học sinh làm đề 120 phút nhưng dành 45 phút cho một câu khó 1 điểm. Hãy chỉ ra vấn đề về chiến lược thời gian.
+## D. Thống kê và xác suất
 
-### 25-M2-04
-Vì sao không nên ôn tất cả chuyên đề với cùng một thời lượng?
+### 25-D1
+Dữ liệu:
+[
+5, 6, 7, 7, 8, 9, 9, 9.
+]
+Tính số trung bình, trung vị và mốt.
 
-### 25-M2-05
-Phân biệt lỗi kiến thức và lỗi cẩu thả bằng một ví dụ cho mỗi loại.
+### 25-D2
+Rút ngẫu nhiên một thẻ ghi số từ 1 đến 12. Tính xác suất nhận được:
+1. số chẵn;
+2. số chia hết cho 3;
+3. số vừa chẵn vừa chia hết cho 3.
 
-### 25-M2-06
-Một học sinh thường sai dấu khi biến đổi phương trình. Nên quay lại chuyên đề nào và cần luyện theo cách nào?
+## E. Hình học
 
-### 25-M2-07
-Vì sao đề chính thức hoặc đề minh họa mới nhất của địa phương cần được dùng để điều chỉnh ưu tiên ôn tập?
+### 25-E1
+Tam giác (ABC) vuông tại (A), (AB=6), (AC=8). Tính (BC) và diện tích tam giác.
 
-### 25-M2-08
-Nêu lợi ích của việc làm lại câu sai sau khi đã xem lời giải.
+### 25-E2
+Tam giác (ABC) vuông tại (A), đường cao (AH) xuống (BC). Biết (BH=9), (CH=16). Tính (BC, AH, AB, AC).
 
-# Mức 3 – Vận dụng
+### 25-E3
+Trong một đường tròn, hai góc nội tiếp cùng chắn một cung. Chứng minh hai góc đó bằng nhau và nêu điều kiện để áp dụng kết luận này.
 
-### 25-M3-01
-Một học sinh có điểm mạnh Đại số, yếu Hình học và còn 8 tuần trước kỳ thi. Hãy đề xuất nguyên tắc phân bổ thời gian ôn hợp lý.
+## F. Vận dụng tổng hợp
 
-### 25-M3-02
-Một đề có 10 câu. Sau 60% thời gian, học sinh mới hoàn thành 4 câu dễ. Hãy đề xuất cách điều chỉnh cho phần thời gian còn lại.
+### 25-F1
+Cho (x,y>0), (x+y=12). Tìm giá trị lớn nhất của (xy).
 
-### 25-M3-03
-Một câu đại số gồm rút gọn biểu thức rồi giải phương trình. Hãy mô tả quy trình kiểm tra để tránh mất điểm do điều kiện xác định.
+### 25-F2
+Một học sinh giải bài toán thực tế ra nghiệm âm cho một đại lượng “số sản phẩm”. Hãy chỉ ra vì sao nghiệm đó phải bị loại và nêu bước kiểm tra cuối cùng cần viết trong lời giải.
 
-### 25-M3-04
-Một bài hình yêu cầu chứng minh tứ giác nội tiếp rồi suy ra hai góc bằng nhau. Hãy chỉ ra chuỗi kiến thức cần huy động.
-
-### 25-M3-05
-Một bài thực tế yêu cầu lập hệ phương trình từ hai loại vé và doanh thu. Hãy mô tả các bước từ đọc đề đến kết luận.
-
-### 25-M3-06
-Một bài xác suất nhiều bước có thể giải bằng liệt kê hoặc sơ đồ cây. Hãy nêu tiêu chí chọn cách trình bày.
-
-### 25-M3-07
-Một học sinh liên tục sai các câu tính toán dù hiểu phương pháp. Hãy thiết kế một quy trình tự kiểm tra 3 bước trước khi nộp bài.
-
-### 25-M3-08
-Sau ba đề thử, các lỗi lần lượt tập trung ở phương trình, đường tròn và bài toán thực tế. Hãy đề xuất cách dùng sổ lỗi để lập kế hoạch tuần tiếp theo.
-
-### 25-M3-09
-Một câu khó chiếm 0,5 điểm nhưng cần nhiều biến đổi. Trong phòng thi, nên xử lý thế nào nếu còn nhiều câu dễ chưa làm?
-
-### 25-M3-10
-Hãy lập checklist 5 mục dùng trong 5 phút cuối giờ thi.
-
-# Mức 4 – Tổng hợp / mô phỏng thi
-
-### 25-M4-01
-Lập kế hoạch làm một đề 120 phút theo ba pha: lấy điểm chắc chắn, xử lý câu trung bình, quay lại câu khó. Nêu nguyên tắc phân bổ thời gian thay vì một con số cứng nhắc.
-
-### 25-M4-02
-Một học sinh làm đề được 7,5 điểm nhưng mất 1 điểm do quên điều kiện nghiệm và 0,5 điểm do thiếu đơn vị. Hãy phân loại lỗi và đề xuất biện pháp sửa hệ thống.
-
-### 25-M4-03
-Thiết kế một bảng theo dõi 5 đề thử gồm: điểm tổng, thời gian hoàn thành, số lỗi kiến thức, số lỗi kỹ năng, số lỗi cẩu thả và chuyên đề cần ôn lại.
-
-### 25-M4-04
-Một tuần trước kỳ thi, học sinh phát hiện còn yếu 3 chuyên đề. Hãy nêu tiêu chí chọn thứ tự ưu tiên giữa các chuyên đề đó.
-
-### 25-M4-05
-Cho tình huống: câu 1 đại số cơ bản, câu 2 hệ phương trình, câu 3 thống kê, câu 4 bài toán thực tế, câu 5 hình tổng hợp. Hãy đề xuất thứ tự làm bài dựa trên mức độ chắc chắn cá nhân.
-
-### 25-M4-06
-Hãy mô tả quy trình chữa một đề thi thử sao cho mỗi câu sai đều dẫn tới một hành động ôn tập cụ thể.
-
-### 25-M4-07
-Một học sinh đạt điểm dao động 6,5 → 7,8 → 7,0 → 8,0. Hãy nêu những dữ liệu bổ sung cần xem trước khi kết luận năng lực đang tăng ổn định.
-
-### 25-M4-08
-Thiết kế “chu kỳ cải thiện” cho 2 tuần cuối: làm đề → chấm → phân loại lỗi → ôn đúng chuyên đề → làm lại → kiểm tra lại bằng đề mới.
+---
 
 # Đáp án nhanh
 
-| Mã | Gợi ý đáp án |
+| Bài | Kết quả |
 |---|---|
-| 25-M1-01 | Số & Đại số; Hình học; Thống kê – Xác suất; Bài toán thực tế |
-| 25-M1-02 | Số & Đại số – Hệ phương trình |
-| 25-M1-03 | Thống kê – Đại lượng đặc trưng |
-| 25-M1-04 | Hình học – Tam giác/Thales/đồng dạng |
-| 25-M1-05 | Xác định dữ kiện, đại lượng cần tìm và mô hình phù hợp |
-| 25-M1-06 | Phân tích lỗi và ôn lại đúng chuyên đề yếu |
-| 25-M1-07 | Bảo toàn điểm chắc chắn và kiểm soát thời gian |
-| 25-M1-08 | Câu sai/chuyên đề, nguyên nhân, cách sửa |
-| 25-M2-01 | Căn thức + biểu thức đại số + điều kiện xác định |
-| 25-M2-02 | Hàm số – đồ thị + hệ phương trình |
-| 25-M2-03 | Dùng quá nhiều thời gian cho một câu có trọng số thấp |
-| 25-M2-04 | Mức độ yếu và cấu trúc đề không giống nhau giữa các chuyên đề |
-| 25-M2-05 | Ví dụ hợp lý và phân loại đúng nguyên nhân |
-| 25-M2-06 | Phương trình; luyện biến đổi chậm, kiểm tra từng dòng và làm lại câu sai |
-| 25-M2-07 | Vì cấu trúc và trọng số đề có thể thay đổi theo địa phương/năm |
-| 25-M2-08 | Kiểm tra xem đã sửa được nguyên nhân chứ không chỉ nhớ lời giải |
-| 25-M3-01 | Tăng thời gian cho Hình học nhưng vẫn duy trì Đại số và luyện đề |
-| 25-M3-02 | Ưu tiên câu chắc chắn còn lại, đặt giới hạn thời gian cho câu khó |
-| 25-M3-03 | Ghi ĐKXĐ → biến đổi → đối chiếu nghiệm với điều kiện |
-| 25-M3-04 | Góc/đường tròn → tứ giác nội tiếp → tính chất góc cùng chắn cung hoặc hệ quả tương ứng |
-| 25-M3-05 | Tóm tắt → đặt ẩn → lập hệ → giải → kiểm tra → kết luận |
-| 25-M3-06 | Liệt kê khi ít trường hợp; sơ đồ cây khi nhiều bước/nhánh |
-| 25-M3-07 | Soát dấu → thế/ước lượng kiểm tra → kiểm tra yêu cầu và đơn vị |
-| 25-M3-08 | Đếm tần suất lỗi, ưu tiên lỗi lặp lại nhiều hoặc mất nhiều điểm |
-| 25-M3-09 | Tạm bỏ, lấy điểm dễ trước rồi quay lại nếu còn thời gian |
-| 25-M3-10 | Điều kiện; dấu; đơn vị; câu bỏ trống; kết luận/trình bày |
-| 25-M4-01 | Có ba pha rõ ràng và ưu tiên theo độ chắc chắn/trọng số |
-| 25-M4-02 | Lỗi kỹ năng/trình bày; dùng checklist điều kiện và đơn vị |
-| 25-M4-03 | Bảng có đủ 6 cột và dùng được để theo dõi xu hướng |
-| 25-M4-04 | Tần suất xuất hiện, số điểm mất, mức độ yếu, thời gian còn lại |
-| 25-M4-05 | Thứ tự cá nhân hóa theo độ chắc chắn, không nhất thiết theo số câu |
-| 25-M4-06 | Mỗi lỗi phải gắn chuyên đề + nguyên nhân + bài luyện lại |
-| 25-M4-07 | Độ khó đề, lỗi, thời gian, số câu bỏ, phân bố điểm theo mạch |
-| 25-M4-08 | Chu kỳ lặp có bước kiểm tra lại bằng đề mới |
+| 25-A1 | (5\sqrt3-2\sqrt3+2\sqrt3=5\sqrt3) |
+| 25-A2 | (x=-7), với (x\ne-2) |
+| 25-A3 | (A=\frac12) khi (x=16); phương trình cho (\sqrt{x}=4\Rightarrow x=16) |
+| 25-B1 | (x_1^2+x_2^2=29) |
+| 25-B2 | ((x,y)=(5,6)) |
+| 25-B3 | 15 quyển loại A và 15 quyển loại B |
+| 25-C1 | Có, vì (2\cdot3-1=5) |
+| 25-C2 | ((2,4)) |
+| 25-C3 | (V=120+15t); sau 8 phút: 240 lít |
+| 25-D1 | Trung bình (7{,}5); trung vị (7{,}5); mốt (9) |
+| 25-D2 | (1/2; 1/3; 1/6) |
+| 25-E1 | (BC=10), diện tích (24) |
+| 25-E2 | (BC=25, AH=12, AB=15, AC=20) |
+| 25-E3 | Hai góc nội tiếp cùng chắn một cung bằng nhau |
+| 25-F1 | (36), đạt khi (x=y=6) |
+| 25-F2 | Nghiệm không thỏa ý nghĩa thực tế; phải đối chiếu điều kiện và kết luận bằng lời |
 
-# Hướng dẫn chọn lọc
+---
 
-## 25-M3-03
-Với bài có điều kiện xác định, nên viết quy trình ngắn:
+## Bốn bài nên học thật kỹ
 
-1. Ghi điều kiện trước khi biến đổi.
-2. Giải bài toán đại số.
-3. Đối chiếu từng nghiệm với điều kiện ban đầu.
-4. Chỉ kết luận các nghiệm hợp lệ.
+Nếu chỉ chọn một số bài để hiểu phương pháp, hãy ưu tiên:
 
-Điểm dễ mất nhất thường không nằm ở kỹ thuật giải mà ở việc quên bước 1 hoặc 3.
+1. **25-A3** — điều kiện + đổi biến với căn.
+2. **25-B1** — Viète thay cho giải phương trình.
+3. **25-B3** — lập mô hình bằng hệ.
+4. **25-E2** — đồng dạng sinh ra hệ thức lượng.
 
-## 25-M4-02
-Phân loại lỗi:
+Sau đó mở [Bài toán kinh điển](bai-toan-kinh-dien.md) để xem cách phân tích sâu hơn.
 
-- quên điều kiện nghiệm: lỗi quy trình/trình bày;
-- thiếu đơn vị: lỗi hoàn thiện đáp án.
+## Luyện đề
 
-Biện pháp sửa không nên chỉ là “cẩn thận hơn”, mà dùng checklist cố định trước khi nộp:
+Khi đã làm tương đối chắc các bài trên, chuyển sang [Đề luyện hoàn chỉnh số 1 – 120 phút](de-luyen-01.md).
 
-- [ ] điều kiện;
-- [ ] nghiệm hợp lệ;
-- [ ] đơn vị;
-- [ ] câu kết luận.
+## Liên kết
 
-# Theo dõi tiến độ
-
-- [ ] M1 đạt ít nhất 6/8.
-- [ ] M2 đạt ít nhất 6/8.
-- [ ] M3 đạt ít nhất 7/10.
-- [ ] M4 đã thực hiện ít nhất 4/8.
-- [ ] Tôi có sổ lỗi và đã dùng nó để điều chỉnh kế hoạch ôn.
-- [ ] Tôi đã làm ít nhất một đề hoàn chỉnh có bấm giờ và chữa lại toàn bộ câu sai.
-
-# Liên kết Roadmap
-
-- **← Bài học:** [Chuyên đề 25 – Tổng hợp & ôn thi vào 10](index.md)
-- **← Chuyên đề trước:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
-- **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 25](tu-kiem-tra.md)
-- **→ Blueprint:** [25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md)
+- **← Bài học:** [Chuyên đề 25](index.md)
+- **→ Bài toán kinh điển:** [Mở bộ bài mẫu](bai-toan-kinh-dien.md)
+- **→ Đề luyện hoàn chỉnh:** [Đề số 1](de-luyen-01.md)
+- **→ Tự kiểm tra học thuật:** [Tự kiểm tra](tu-kiem-tra.md)
+- **→ Kỹ năng thi:** [Tự đánh giá kỹ năng làm bài](tu-danh-gia-ky-nang-thi.md)

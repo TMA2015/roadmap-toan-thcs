@@ -348,3 +348,10 @@ body{letter-spacing:-.008em}
 [data-md-color-scheme="slate"] .class-hub-hero h1,[data-md-color-scheme="slate"] .class-hub-hero p,[data-md-color-scheme="slate"] .class-hub-eyebrow{color:#edf3ff}
 [data-md-color-scheme="slate"] .class-grade-tabs button{background:#243554;color:#edf3ff;border-color:#435575}
 [data-md-color-scheme="slate"] .class-grade-tabs button[aria-pressed="true"]{background:#5977df;color:#fff}
+
+/* Desktop reading scale: preserve comfortable iPad/phone typography but reduce oversized document headings on wide screens. */
+@media(min-width:77rem){
+  .md-typeset>h1{font-size:1.72rem;line-height:1.18}
+  .md-typeset>h2{font-size:1.16rem;line-height:1.28}
+  .md-typeset>h3{font-size:.94rem;line-height:1.35}
+}

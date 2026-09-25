@@ -25,6 +25,7 @@ jobs:
           node --check docs/assets/javascripts/topic-workspace-v1.js
           node scripts/test-prob23-ready-001.js
           node scripts/test-cross-topic-learning-24-25.js
+          node scripts/test-topic25-academic-exam-v2.js
           node scripts/test-prob23-learn-001.js
           node scripts/test-prob23-layer-001.js
           node scripts/test-learning-card-micro-practice.js docs/assets/data/curriculum/topic23-learning-workspace.json docs/assets/data/practice/23-xac-suat-micro-v1.json
