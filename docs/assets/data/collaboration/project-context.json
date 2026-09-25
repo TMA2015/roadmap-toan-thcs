@@ -1,5 +1,5 @@
 {
-  "version": "1.0.40",
+  "version": "1.0.41",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -208,7 +208,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "CĐ21 Golden Template Learn workspace and micro-practice in a small Gemini-led source-locked batch; Practice Bank is 132 questions.",
+    "next_priority": "Receive source-locked Gemini STA21-LEARN-GEMINI-AUTHOR-001-RESULT: 5 KNTT Core Learning Cards + 15 micro checks (base/trap/apply). Review source alignment and integrate before separate CĐ21 Readiness batch.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -232,7 +232,8 @@
       "topic": "21-thong-ke",
       "practice_bank_count": 132,
       "integration": "STA21-CHATGPT-INTEGRATION-001",
-      "next": "CĐ21 Learn and micro-practice"
+      "next": "CĐ21 Learn and micro-practice",
+      "learn_task": "STA21-LEARN-001"
     }
   },
   "handoff_required_fields": [
@@ -262,7 +263,7 @@
     "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
     "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
     "next_public_task": "STA21-LEARN-001",
-    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-gemini-author-001.json",
+    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-learn-gemini-author-001.json",
     "protocol_version": "2.0",
     "relay_v2": "Main-lesson image refresh checkpoint stored; return to small Gemini-led authoring batches. CĐ13–20 legacy image replacements are not a completed automatic geometry renderer."
   }
