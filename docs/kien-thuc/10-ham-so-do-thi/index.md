@@ -315,7 +315,7 @@ Cách nhìn này giúp tránh học thuộc rời rạc “`a` là hệ số gó
 
 ---
 
-### 3.6. Vị trí tương đối của hai đường thẳng
+### 3.6. Mở rộng / Entrance10 – Vị trí tương đối của hai đường thẳng
 
 Xét:
 
@@ -369,7 +369,7 @@ thì hai đường thẳng trùng nhau.
 
 ---
 
-### 3.7. Giao điểm của hai đồ thị
+### 3.7. Mở rộng / Entrance10 – Giao điểm của hai đồ thị
 
 Giả sử:
 
