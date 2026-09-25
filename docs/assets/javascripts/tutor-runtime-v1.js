@@ -4,6 +4,7 @@
   const TUTOR_POLICY_VERSION = "1.0";
   const CONTEXT_SCHEMA = "roadmap-tutor-context-v1";
   const MAX_REMEDIATION_EVENTS = 5;
+  const MAX_OBSERVED_SIGNALS = 5;
 
   const clampEvidence = (record, skill) => ({
     skill,
@@ -49,6 +50,9 @@
     const relevantEvents = (recovery?.events || [])
       .filter((event) => event.source_skill === skill || relevantSkills.includes(event.remediation_skill))
       .slice(-MAX_REMEDIATION_EVENTS);
+    const relevantSignals = window.RoadmapLearnerEvidence?.recentSignalsForSkill
+      ? window.RoadmapLearnerEvidence.recentSignalsForSkill(stats, skill, MAX_OBSERVED_SIGNALS)
+      : (stats?.observed_signals || []).filter((event) => event?.skill === skill).slice(-MAX_OBSERVED_SIGNALS);
 
     return {
       schema: CONTEXT_SCHEMA,
@@ -66,6 +70,7 @@
       learner_evidence: {
         target: clampEvidence(stats?.tags?.[skill], skill),
         prerequisites: relevantSkills.map((item) => clampEvidence(stats?.tags?.[item], item)),
+        observed_signals: relevantSignals,
         remediation_history: relevantEvents
       },
       graph_context: {
@@ -105,6 +110,18 @@
         evidence_basis: { attempted: weakPrereq.attempted, accuracy: weakPrereq.accuracy }
       });
     }
+
+    const latestSignal = context.learner_evidence.observed_signals?.slice(-1)[0];
+    if (latestSignal) {
+      return validateTutorResponse({
+        message: `${latestSignal.feedback_hint || "Lựa chọn gần đây khớp với một bẫy sai thường gặp."} Đây mới là một tín hiệu quan sát, chưa đủ để kết luận em yếu một kỹ năng nền cụ thể.`,
+        action_type: "HINT",
+        target_skill: context.current_task.skill,
+        confidence: "pedagogical_suggestion",
+        evidence_basis: { signal: latestSignal.code, signal_weight: latestSignal.signal_weight || 1 }
+      });
+    }
+
     return validateTutorResponse({
       message: "Chưa có đủ bằng chứng để quy lỗi cho một kiến thức nền cụ thể. Hãy thử thêm một bước hoặc dùng một gợi ý nhỏ.",
       action_type: "HINT",
