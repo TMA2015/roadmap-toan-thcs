@@ -38,7 +38,7 @@
     const ai = aiSdk.getAI(app, { backend: new aiSdk.GoogleAIBackend() });
     return aiSdk.getGenerativeModel(ai, {
       model: c.model,
-      generationConfig: { temperature: 0.2, maxOutputTokens: 1800 }
+      generationConfig: { temperature: 0.2, maxOutputTokens: 3072 }
     });
   };
 
