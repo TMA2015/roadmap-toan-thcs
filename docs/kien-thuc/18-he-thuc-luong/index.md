@@ -191,11 +191,15 @@ Ngoài ra:
 
 Đây là nhóm công thức cần thuộc và nhận ra nhanh.
 
+![Hệ thức giữa mỗi cạnh góc vuông và hình chiếu của nó trên cạnh huyền](../../assets/geometry/18/18-he-thuc-canh-hinh-chieu-v1.svg)
+
 ### Infographic – Hệ thức đường cao
 
 ![Hệ thức đường cao trong tam giác vuông](../../assets/infographics/18/18-02-he-thuc-duong-cao.svg)
 
 ### 3.3. Tỉ số lượng giác của góc nhọn
+
+![Phân biệt cạnh đối, kề, huyền trong sin và cos tại góc C](../../assets/geometry/18/18-ti-so-sin-cos-v1.svg)
 
 Với góc nhọn `α`:
 
@@ -210,6 +214,8 @@ Từ đó có thể:
 - biết hai cạnh → tìm góc.
 
 ### 3.4. Quan hệ giữa các tỉ số
+
+![Tan và cot theo cạnh đối, kề của góc C](../../assets/geometry/18/18-ti-so-tan-cot-v1.svg)
 
 Với góc nhọn `α`:
 

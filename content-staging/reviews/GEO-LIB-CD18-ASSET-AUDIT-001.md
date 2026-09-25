@@ -29,7 +29,7 @@ Không tìm thấy tham chiếu `diagram`/SVG riêng trong `topic18-learning-wor
 | 7 | `18-goc-nang-v1.svg` | Phương ngang, tia nhìn lên, góc α, khoảng cách ngang d và độ cao h; mục Minh họa 3, 3.5 | P1 |
 | 8 | `18-goc-ha-v1.svg` | Phương ngang và tia nhìn xuống từ điểm quan sát, góc hạ; mục Minh họa 3, 3.5 | P2 |
 
-**Lượt sản xuất đầu chỉ 3–4 hình:** #1, #2, #6, #7. Không tạo cả 8 và thay ngay trong cùng một commit.
+**Đã triển khai theo batch:** #1, #2, #6, #7 ở PR #79; #8 cùng hình tổng hợp góc nâng/góc hạ bổ sung ở PR #80; #3, #4, #5 ở batch hoàn thiện. Tổng cộng tám hình theo danh mục cộng một hình tổng hợp bổ sung, giữ lại toàn bộ asset legacy để rollback.
 
 ## III. Quy tắc tích hợp và QA
 
