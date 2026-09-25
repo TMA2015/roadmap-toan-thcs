@@ -139,7 +139,7 @@ with sync_playwright() as p:
     micro_page.goto(BASE + "kien-thuc/04-bieu-thuc-dai-so/", wait_until="networkidle")
     micro_page.locator("#core-journey .topic-micro-start").first.click()
     micro_page.locator(".topic-micro-teach").first.click()
-    check(micro_page.locator(".topic-micro-tutor").first.get_by_text("Ví dụ mẫu").is_visible(), "first-time reteaching uses authored card")
+    check(micro_page.locator(".topic-micro-tutor").first.get_by_text("Mở kiến thức cốt lõi của chuyên đề").is_visible(), "missing card copy falls back to full lesson")
     check(micro_page.locator(".topic-micro-tutor").first.get_by_text("Đáp án trong ngân hàng").count() == 0, "reteaching does not reveal current question answer")
     micro_page.locator(".topic-micro-reveal").first.click()
     micro_page.locator(".topic-micro-tutor button").filter(has_text="Tôi muốn xem lời giải ngay").first.click()
