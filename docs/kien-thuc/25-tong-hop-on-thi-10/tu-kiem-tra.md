@@ -1,6 +1,6 @@
 # Tự kiểm tra Toán học – Chuyên đề 25
 
-> **Đây là bài tự kiểm tra học thuật**, không phải bài hỏi kinh nghiệm ôn thi. Làm độc lập trong khoảng **45–60 phút**, thang điểm 10. Không sử dụng gia sư/gợi ý trước khi hoàn tất; tự đối chiếu đáp án sau khi đã làm.
+> **Đây là bài tự kiểm tra học thuật**, không phải bài hỏi kinh nghiệm ôn thi. **Thời gian:** 45–60 phút. **Thang điểm:** 10 điểm. Làm độc lập. Không sử dụng gia sư/gợi ý trước khi hoàn tất; tự đối chiếu đáp án sau khi đã làm.
 >
 > Bài do Roadmap tự biên soạn để tự học, **không phải đề thi chính thức Hà Nội** và đang chờ một lượt phản biện toán học độc lập. Điểm không khóa quyền học tiếp.
 
@@ -39,6 +39,10 @@ c) Tính \(CH\) bằng hai cách: diện tích tam giác và hệ thức lượn
 ### Câu 5. Thống kê và xác suất – 1 điểm
 
 Một hộp chứa 5 thẻ ghi số \(1,2,3,4,5\), các thẻ cùng khả năng được lấy. Lấy ngẫu nhiên một thẻ. Tính xác suất ghi số nguyên tố; giải thích mẫu số và tử số.
+
+## Đáp án và hướng dẫn chấm
+
+Chỉ mở lời giải khi đã hoàn thành đề. Không xem trước trong buổi tự kiểm tra.
 
 ??? success "Đã làm xong — mở đáp án và hướng dẫn chấm"
 
