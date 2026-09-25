@@ -59,12 +59,12 @@
       ]
     }
   },
-  "classification_rule": "Whitelist at skill-level conservatively, keep advanced / multi-stage in separate non-gating layers. Existing item wording and mathematics require independent QA before Core readiness selection; this audit is not a full per-item academic review.",
+  "classification_rule": "Whitelist at skill-level conservatively, keep advanced / multi-stage in separate non-gating layers. Existing item wording and mathematics require independent QA before Core readiness selection; this audit is not a full per-item academic review. Manual exceptions move repeated-coin outcomes, complement check, and union/intersection checks outside scored Core even when their broad skill is otherwise Core.",
   "legacy_bank_count": 120,
   "counts": {
-    "KNTT-Core": 56,
-    "Core-Support": 27,
-    "Entrance10": 37
+    "KNTT-Core": 52,
+    "Core-Support": 30,
+    "Entrance10": 38
   },
   "by_skill": {
     "phep-thu-ngau-nhien": 9,
@@ -91,5 +91,18 @@
       "url": "https://sgkvn.com/lop-7-10/ket-noi-tri-thuc-voi-cuoc-song-3/toan-7-tap-2-892.html"
     }
   ],
-  "next": "Golden Learn: 5 cards / 15 micro; only mapped grades, one scored skill per micro. Non-Core items remain practice only and never gate Core."
+  "next": "Golden Learn: 5 cards / 15 micro; only mapped grades, one scored skill per micro. Non-Core items remain practice only and never gate Core.",
+  "item_layer_overrides": {
+    "PRO23V1__024": "Core-Support",
+    "PRO23V1__025": "Core-Support",
+    "PRO23V1__114": "Core-Support",
+    "PRO23V1__119": "Entrance10"
+  },
+  "item_wording_fixes": [
+    "PRO23V1__043",
+    "PRO23V1__046",
+    "PRO23V1__047",
+    "PRO23V1__049",
+    "PRO23V1__050"
+  ]
 }
