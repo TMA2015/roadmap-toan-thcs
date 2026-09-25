@@ -1,0 +1,68 @@
+{
+  "schema": "roadmap-golden-template-v1",
+  "version": "1.0",
+  "status": "FROZEN",
+  "frozen_on": "2026-09-25",
+  "pilot_topic": "07-phan-thuc-dai-so",
+  "freeze_evidence": [
+    "curriculum/content QA passed",
+    "schema and JavaScript QA passed",
+    "GitHub Actions deploy QA passed",
+    "MkDocs strict build passed",
+    "GitHub Pages deploy passed",
+    "iPad real-device Learn -> Practice -> Readiness flow passed"
+  ],
+  "invariants": {
+    "learning_flow": [
+      "LEARN",
+      "PRACTICE",
+      "READINESS"
+    ],
+    "learn": {
+      "learning_cards": true,
+      "micro_practice": "short formative checks with immediate feedback",
+      "duplicate_static_practice_blocks": false,
+      "sections_8_9": "gateways only"
+    },
+    "practice": {
+      "interactive_engine": true,
+      "written_practice": true,
+      "collapsed_solutions": true,
+      "layer_separation": [
+        "KNTT-Core",
+        "Entrance10",
+        "Specialized-Challenge"
+      ]
+    },
+    "readiness": {
+      "feedback": "after_submit",
+      "hints": false,
+      "tutor": false,
+      "hard_gate": false,
+      "states": [
+        "READY",
+        "REVIEW_RECOMMENDED",
+        "MORE_EVIDENCE_NEEDED"
+      ],
+      "evidence_store": "toan-thcs-assessment-v1"
+    },
+    "practice_evidence_store": "toan-thcs-practice-v1",
+    "evidence_rule": "Formative practice and readiness assessment evidence remain separate; do not mechanically merge them into one mastery score.",
+    "assessed_skill_rule": "Each scored item has one assessed skill. supporting_skills do not automatically receive attempted/correct updates.",
+    "core_rule": "Entrance10 and Specialized-Challenge never contribute to KNTT Core readiness or gate Core progression.",
+    "soft_mastery": "Readiness recommends next action; it never blocks the next topic."
+  },
+  "reusable_assets": [
+    "docs/assets/javascripts/assessment-engine-v1.js",
+    "docs/assets/stylesheets/assessment-engine.css",
+    "docs/assets/data/assessment/readiness-assessment-v1.schema.json",
+    "docs/assets/javascripts/learner-evidence-v1.js",
+    "docs/assets/javascripts/practice-engine-v2.js"
+  ],
+  "pilot_assets": [
+    "docs/assets/data/curriculum/topic07-learning-workspace.json",
+    "docs/assets/data/practice/07-phan-thuc-dai-so-micro-v1.json",
+    "docs/assets/data/assessment/07-phan-thuc-dai-so-core-v1.json"
+  ],
+  "rollout_policy": "Apply by topic/strand batch. Do not create per-card rollout PRs unless fixing a verified defect."
+}
