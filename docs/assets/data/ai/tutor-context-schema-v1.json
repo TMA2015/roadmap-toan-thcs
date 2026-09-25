@@ -24,7 +24,8 @@
     "learner_evidence": {
       "target": "evidence snapshot",
       "prerequisites": "array of evidence snapshots",
-      "remediation_history": "bounded recent events"
+      "remediation_history": "bounded recent events",
+      "observed_signals": "up to 5 recent option-level misconception signals for the current skill; observed evidence only, never a diagnosis by itself"
     },
     "graph_context": {
       "reviewed_prerequisites": "high-confidence PREREQUISITE only",
@@ -33,7 +34,7 @@
     },
     "learner_request": "optional free text",
     "privacy": {
-      "rule": "Send only minimum context needed for the current tutoring turn; do not send full localStorage or unrelated learner history."
+      "rule": "Send only minimum context needed for the current tutoring turn; observed signals are bounded to the current skill; do not send full localStorage or unrelated learner history."
     }
   }
 }

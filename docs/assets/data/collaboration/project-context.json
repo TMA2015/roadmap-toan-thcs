@@ -1,5 +1,5 @@
 {
-  "version": "1.0.16",
+  "version": "1.0.17",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -179,7 +179,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Run one closed-loop CĐ07 15-item micro-practice collaboration packet through Gemini review -> ChatGPT integration/QA. If PASS, freeze schemas and switch to batch rollout instead of incremental item-level changes.",
+    "next_priority": "Deploy/browser QA CĐ07 on desktop and iPad/mobile. If no blocking UX/evidence defects, freeze Learning Card + observed-signal schema and batch-produce CĐ04–CĐ06 together.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -192,7 +192,8 @@
     "ai_tutor_contract": "v1 provider-neutral policy defined; not yet connected to an AI provider",
     "ai_tutor_adapter": "v1 implemented with mock/local QA adapter and disabled Gemini/OpenAI-compatible transport sockets",
     "ai_tutor_ui": "mock/local Tutor integrated into Practice Engine with HINT/REMEDIATE/CONTINUE student actions; no external AI calls",
-    "ui_ux_pilot": "CĐ07 Learning Workspace refined to five metadata-driven KNTT Core learning cards; Entrance10/Challenge visibly separate and never gate Core."
+    "ui_ux_pilot": "CĐ07 five-card Learning Workspace now includes a complete 15-item inline Core micro-practice loop with shared learner evidence, option-level observed signals and mock Tutor feedback.",
+    "micro_practice_evidence": "Observed signals are stored separately from attempted/correct counters. signal_weight 1–2 is salience only and cannot independently create weak-skill/remediation conclusions."
   },
   "handoff_required_fields": [
     "TASK_ID",
@@ -223,6 +224,6 @@
     "next_public_task": "KG-REVIEW-001",
     "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G9-001/",
     "protocol_version": "2.0",
-    "relay_v2": "Batch-first machine-readable collaboration packets; GitHub artifacts preferred transport; shared workspace optional when both sides have connector access."
+    "relay_v2": "Closed-loop pilot completed through Gemini response -> ChatGPT integration packet. Batch-first protocol is operational; only real-device QA remains before template freeze."
   }
 }

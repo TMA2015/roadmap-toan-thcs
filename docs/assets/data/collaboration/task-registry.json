@@ -204,18 +204,19 @@
       "id": "COLLAB-RELAY-V2-001",
       "title": "Batch-first ChatGPT ↔ Gemini collaboration protocol",
       "routing": "CHATGPT_LEAD+GEMINI_PILOT",
-      "status": "READY",
+      "status": "DONE",
       "context_version": "1.0.16",
-      "review_verdict": "PILOT-READY",
-      "review_notes": "Machine-readable packet schema + closed-loop acceptance gate. First pilot packet is C07-MICRO15-GEMINI-REVIEW-001. After PASS, switch to topic/strand batches."
+      "review_verdict": "PROTOCOL-VALIDATED",
+      "review_notes": "First complete Relay v2 loop executed: ChatGPT packet -> Gemini batch response -> normalized response packet -> ChatGPT integration decision."
     },
     {
       "id": "C07-MICRO15-001",
       "title": "CĐ07 complete 15-item diagnostic micro-practice pilot",
       "routing": "GEMINI_AUTHOR_REVIEW+CHATGPT_INTEGRATE",
-      "status": "OPEN",
+      "status": "READY",
       "context_version": "1.0.16",
-      "review_notes": "One complete batch only; option-level misconception signals are not causal diagnoses."
+      "review_notes": "15 Core micro-practice questions integrated inline across five Learning Cards. Shared evidence + observed signals + mock Tutor wired. Structural/math QA passed; deployed desktop/iPad/mobile QA still pending before template freeze.",
+      "review_verdict": "QA-READY"
     }
   ]
 }

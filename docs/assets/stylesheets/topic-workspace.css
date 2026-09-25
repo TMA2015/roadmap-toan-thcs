@@ -43,3 +43,24 @@
 .topic-extension-list{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.65rem}
 @media(max-width:1000px){.topic-core-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.topic-core-journey-head{align-items:flex-start;flex-direction:column}.topic-core-card-grid{grid-template-columns:1fr}.topic-core-card{min-height:0}}
+
+.topic-core-card-main{min-width:0}
+.topic-core-card.is-active{grid-column:1/-1;display:grid;grid-template-columns:auto minmax(12rem,18rem) 1fr;align-items:start}
+.topic-micro-start{margin-top:.65rem;font-size:.72rem}
+.topic-micro-mount:empty{display:none}
+.topic-micro-panel{grid-column:3;padding:.2rem 0 .2rem .7rem;border-left:1px solid var(--md-default-fg-color--lightest)}
+.topic-micro-meta{font-size:.7rem;font-weight:750;opacity:.65;margin-bottom:.35rem}
+.topic-micro-question{font-weight:700;margin-bottom:.7rem}
+.topic-micro-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem}
+.topic-micro-option{text-align:left}
+.topic-micro-option.is-correct{border-color:#2e7d32;background:rgba(46,125,50,.1)}
+.topic-micro-option.is-wrong{border-color:#c62828;background:rgba(198,40,40,.1)}
+.topic-micro-hint{margin-top:.55rem}
+.topic-micro-feedback,.topic-micro-tutor,.topic-micro-summary{margin-top:.7rem;padding:.7rem .8rem;border-radius:.55rem;background:var(--md-code-bg-color)}
+.topic-micro-feedback.is-correct{border-left:.18rem solid #2e7d32}
+.topic-micro-feedback.is-wrong{border-left:.18rem solid #c62828}
+.topic-micro-signal{margin-top:.45rem;padding-top:.4rem;border-top:1px solid var(--md-default-fg-color--lightest);font-size:.78rem}
+.topic-micro-actions{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.65rem}
+.topic-micro-note{margin-top:.4rem;font-size:.75rem;opacity:.72}
+@media(max-width:1000px){.topic-core-card.is-active{grid-template-columns:auto 1fr}.topic-micro-panel{grid-column:1/-1;border-left:0;border-top:1px solid var(--md-default-fg-color--lightest);padding:.75rem 0 0}}
+@media(max-width:600px){.topic-micro-options{grid-template-columns:1fr}}

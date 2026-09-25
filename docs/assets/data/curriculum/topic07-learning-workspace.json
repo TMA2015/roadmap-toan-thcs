@@ -16,14 +16,15 @@
       ],
       "layer": "KNTT-Core",
       "skills": [
-        "khai-niem-phan-thuc",
-        "dieu-kien-xac-dinh"
+        "nhan-biet-phan-thuc",
+        "dieu-kien-xac-dinh",
+        "tinh-gia-tri-phan-thuc"
       ],
       "prerequisites": [],
       "micro_practice": [
-        "nhan-biet-phan-thuc",
-        "dkxd-hang-dang-thuc",
-        "tinh-gia-tri-phan-thuc"
+        "RAT07MICRO_001",
+        "RAT07MICRO_002",
+        "RAT07MICRO_003"
       ],
       "misconceptions": [
         "dkxd-sai-doi-tuong"
@@ -47,9 +48,9 @@
         "hieu-hai-binh-phuong"
       ],
       "micro_practice": [
-        "rut-gon-don-thuc",
-        "rut-gon-hang-dang-thuc",
-        "doi-dau-mau"
+        "RAT07MICRO_004",
+        "RAT07MICRO_005",
+        "RAT07MICRO_006"
       ],
       "misconceptions": [
         "triet-tieu-hang-tu",
@@ -71,9 +72,9 @@
         "phan-tich-tu-mau"
       ],
       "micro_practice": [
-        "chon-mtc",
-        "tim-nhan-tu-phu",
-        "quy-dong"
+        "RAT07MICRO_007",
+        "RAT07MICRO_008",
+        "RAT07MICRO_009"
       ],
       "misconceptions": [
         "mtc-chua-toi-uu",
@@ -97,9 +98,9 @@
         "cong-tru-da-thuc"
       ],
       "micro_practice": [
-        "cong-cung-mau",
-        "tru-khac-mau",
-        "rut-gon-sau-cong-tru"
+        "RAT07MICRO_010",
+        "RAT07MICRO_011",
+        "RAT07MICRO_012"
       ],
       "misconceptions": [
         "tru-khong-doi-dau-tu-thuc"
@@ -114,16 +115,17 @@
       ],
       "layer": "KNTT-Core",
       "skills": [
-        "nhan-chia-phan-thuc"
+        "nhan-phan-thuc",
+        "chia-phan-thuc"
       ],
       "prerequisites": [
         "phan-tich-tu-mau",
         "rut-gon-phan-thuc"
       ],
       "micro_practice": [
-        "nhan-phan-thuc",
-        "chia-phan-thuc",
-        "rut-gon-tich-thuong"
+        "RAT07MICRO_013",
+        "RAT07MICRO_014",
+        "RAT07MICRO_015"
       ],
       "misconceptions": [
         "chia-khong-nghich-dao",
@@ -187,6 +189,13 @@
     "KNTT Bài 21 includes value of a rational expression at an allowed variable value.",
     "KNTT Bài 23 includes addition/subtraction of multiple rational expressions and use of addition properties / bracket rule.",
     "KNTT Bài 24 includes multiplication properties in addition to multiplication/division rules.",
-    "Do not encode every pedagogical sequence as a causal Knowledge Graph prerequisite."
-  ]
+    "Do not encode every pedagogical sequence as a causal Knowledge Graph prerequisite.",
+    "Learning-card skill IDs are aligned with the existing CĐ07 Practice Bank manifest.",
+    "Micro-practice IDs are stable authored items in RAT07-MICRO-V1; Extension never contributes to Core completion."
+  ],
+  "micro_practice_bank": "assets/data/practice/07-phan-thuc-dai-so-micro-v1.json",
+  "observed_signal_policy": {
+    "rule": "Option-level misconception signals are observations, not diagnoses. A signal may guide local feedback/Tutor context but must not create causal remediation without sufficient learner evidence and a reviewed Knowledge Graph/rule.",
+    "signal_weight": "Optional 1–2 salience value for ranking/feedback only; never added to accuracy and never used alone to mark a skill weak."
+  }
 }
