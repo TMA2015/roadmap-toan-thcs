@@ -30,6 +30,9 @@ jobs:
       - name: Run Golden Template pilot QA
         run: node scripts/test-golden-template.js
 
+      - name: Run Learning Card micro-practice QA
+        run: node scripts/test-learning-card-micro-practice.js
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 
