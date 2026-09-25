@@ -217,6 +217,7 @@ const renderCoreCards=async(hero,config)=>{
   host.appendChild(grid);
   if((data.extensions||[]).length){const ext=document.createElement("details");ext.className="topic-extension-zone";ext.innerHTML='<summary>🚀 Entrance10 / Challenge <span>không tính vào hoàn thành KNTT Core</span></summary><div class="topic-extension-list">'+(data.extensions||[]).map(x=>`<span class="topic-chip">${x.layer}: ${x.title}</span>`).join("")+"</div>";host.appendChild(ext);}
   hero.after(host);
+  if(location.hash==="#core-journey")requestAnimationFrame(()=>host.scrollIntoView({block:"start",behavior:"auto"}));
  }catch(_){}
 };
 
