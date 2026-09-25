@@ -1,8 +1,8 @@
 {
   "schema": "roadmap-geometry-architecture-v1",
   "version": "1.0",
-  "status": "REVIEW_READY",
-  "frozen": false,
+  "status": "FROZEN-V1",
+  "frozen": true,
   "scope": {
     "topics": [
       "13-goc-va-duong-thang",
@@ -231,5 +231,7 @@
     "BENCH-GEO-001 coordinate/area checks pass.",
     "Diagram schema and authoring template pass QA.",
     "At least one migrated geometry topic passes desktop/mobile/iPad Learn→Practice→Readiness flow."
-  ]
+  ],
+  "freeze_evidence": "content-staging/reviews/GEO-ARCH-V1-FREEZE-AUDIT-001.json",
+  "frozen_date": "2026-09-25"
 }

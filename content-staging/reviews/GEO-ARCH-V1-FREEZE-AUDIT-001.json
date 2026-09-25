@@ -3,7 +3,7 @@
   "audit_id": "GEO-ARCH-V1-FREEZE-AUDIT-001",
   "date": "2026-09-25",
   "architecture_path": "docs/assets/data/curriculum/geometry-architecture-v1.json",
-  "verdict": "NOT_YET_FROZEN",
+  "verdict": "FROZEN-V1",
   "evidence": [
     {
       "gate": "Independent Gemini architecture/pedagogy review",
@@ -22,21 +22,19 @@
     },
     {
       "gate": "Diagram schema and authoring template",
-      "status": "STRUCTURAL_PASS",
-      "evidence": "geometry-diagram-spec-v1.schema.json and content-staging/templates/geometry-item.md exist; architecture validator verifies source presence. A full semantic/renderer pilot remains distinct work."
+      "status": "PASS",
+      "evidence": "Schema and authoring template present and checked by CI; source-locked independent architecture/pedagogy review returned PASS without corrections. This freeze covers the current contract, not a future automatic diagram renderer."
     },
     {
       "gate": "Desktop/mobile/iPad migrated geometry Learn→Practice→Readiness",
-      "status": "PENDING_MANUAL_EVIDENCE",
-      "evidence": "CI and strict MkDocs pass, but no recorded geometry-topic device-flow verification was found in current task registry. CĐ07 iPad Golden Template pilot is not a substitute."
+      "status": "OWNER_ACCEPTANCE_PASS",
+      "evidence": "Owner responded to requested desktop/mobile/iPad geometry Learn→Practice→Readiness smoke-check with 'có vẻ ổn, đã test cả trên iphone và ipad'. Record as owner-reported acceptance of the requested flow, with explicit iPhone and iPad checks; no automated device lab, comprehensive accessibility audit, or exhaustive viewport testing claimed."
     }
   ],
-  "blockers": [
-    "Recorded geometry-topic desktop/mobile/iPad flow check"
-  ],
-  "decision": "Keep REVIEW_READY, frozen=false. Do not infer freeze from batch PASS or CI success.",
-  "next_step": "Record one migrated geometry-topic Learn→Practice→Readiness smoke test across desktop/mobile/iPad, re-evaluate freeze gates and update validator that currently requires REVIEW_READY/frozen=false before attempting freeze.",
+  "blockers": [],
+  "decision": "Freeze Geometry Architecture v1 contract on source-locked Gemini PASS, 124/124 exact Core coverage, BENCH-GEO-001 PASS, schema/template QA, and owner's cross-device acceptance. Future renderer/library remains separate, incremental development.",
+  "next_step": "Begin small Gemini-led CĐ21 exercise authoring batch; preserve freeze invariants. Independently pilot automated geometry renderer under GEO-LIB-001.",
   "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geometry-architecture-v1.json",
-  "ci_run": "https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/36101494893",
+  "ci_run": "https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/36101704564",
   "review_result": "content-staging/reviews/GEO-ARCH-V1-GEMINI-REVIEW-001-RESULT.json"
 }
