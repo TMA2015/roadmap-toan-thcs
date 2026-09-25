@@ -290,7 +290,7 @@ def check_academic_capstone(num, folder, lesson_text, practice_text, self_text):
         if marker not in practice_text:
             issues.append(f"{num:02d}: Academic Capstone thiếu mạch luyện -> {marker}")
 
-    if "Đề luyện hoàn chỉnh" not in lesson_text or "Bài toán kinh điển" not in lesson_text:
+    if "bo-de-luyen.md" not in lesson_text or "bai-toan-kinh-dien.md" not in lesson_text:
         issues.append(f"{num:02d}: Academic Capstone thiếu gateway đề luyện/bài kinh điển")
 
     if "Tự đánh giá kỹ năng làm bài" not in lesson_text:
