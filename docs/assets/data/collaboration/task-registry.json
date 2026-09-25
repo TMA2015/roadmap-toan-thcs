@@ -439,6 +439,26 @@
       "review_notes": "Gemini's 10-skill formal Grade10 classification accepted as topic THPT-Bridge; corrected overgeneralization about mean (basic arithmetic in Grade4), mode conventions and outlier formal criteria. All 120 practice items retain IDs/answers but explicitly tagged Bridge to avoid engine Core fallback. Removed static hard grade gate; no new readiness.",
       "review_verdict": "ACCEPT_WITH_CORRECTIONS",
       "integrated_artifact": "docs/assets/data/curriculum/topic22-layer-audit-v1.json"
+    },
+    {
+      "id": "PROB23-MAP-001",
+      "title": "Audit grade6–8 KNTT probability Core/extension",
+      "routing": "CHATGPT_SOURCE_QA",
+      "status": "DONE",
+      "context_version": "1.0.48",
+      "integrated_artifact": "docs/assets/data/curriculum/topic23-layer-audit-v1.json",
+      "review_verdict": "REVIEWED_WITH_ITEM_EXCEPTIONS",
+      "review_notes": "Grade6 B42–43, Grade7 B29–30, Grade8 B30–32; existing 120 questions: 52 Core/30 Core-Support/38 Entrance10, four conservative overrides and five equal-likelihood wording fixes. Current grade9 overlay has no PRIMARY topic23."
+    },
+    {
+      "id": "PROB23-LEARN-001",
+      "title": "Author five CĐ23 Core Learning Cards and fifteen micro checks",
+      "routing": "GEMINI_AUTHOR+CHATGPT_INDEPENDENT_QA",
+      "status": "READY",
+      "context_version": "1.0.48",
+      "packet": "docs/assets/data/collaboration/packets/PROB23-LEARN-GEMINI-AUTHOR-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/prob23-learn-gemini-author-001.json",
+      "review_notes": "Source-locked 120-item bank, reviewed mappings and editorial guide. Five grade-safe cards/15 micro only; Grade6 proposed skills unscored; no readiness or learner evidence changed."
     }
   ]
 }

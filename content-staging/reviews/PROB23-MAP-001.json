@@ -1,0 +1,29 @@
+{
+  "task_id": "PROB23-MAP-001",
+  "verdict": "REVIEWED_WITH_ITEM_EXCEPTIONS",
+  "grade_scope": "Existing PRIMARY map references in Grade6 B42–43, Grade7 B29–30, Grade8 B30–32; current Grade9 map none.",
+  "layers": {
+    "KNTT-Core": 52,
+    "Core-Support": 30,
+    "Entrance10": 38
+  },
+  "manual_item_overrides": [
+    "PRO23V1__024",
+    "PRO23V1__025",
+    "PRO23V1__114",
+    "PRO23V1__119"
+  ],
+  "wording_fixes": [
+    "PRO23V1__043",
+    "PRO23V1__046",
+    "PRO23V1__047",
+    "PRO23V1__049",
+    "PRO23V1__050"
+  ],
+  "notes": [
+    "Bank item IDs and answer indices preserved; explicitly mark all 120 layers to prevent engine default Core.",
+    "Grade6 proposed skill IDs are unscored until formally approved.",
+    "Practice Engine metadata now displays non-Core layer including THPT-Bridge for CĐ22.",
+    "Core readiness and learner evidence untouched."
+  ]
+}
