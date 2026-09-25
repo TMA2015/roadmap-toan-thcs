@@ -199,6 +199,23 @@
       "status": "DONE",
       "review_verdict": "PASS-WITH-CHANGES",
       "review_notes": "Accepted five-card Core structure and misconception metadata. Qualified overly absolute dependency language; preserved KNTT B21 value evaluation, B23 multi-expression addition/subtraction, and B24 multiplication properties. Extension does not gate Core."
+    },
+    {
+      "id": "COLLAB-RELAY-V2-001",
+      "title": "Batch-first ChatGPT ↔ Gemini collaboration protocol",
+      "routing": "CHATGPT_LEAD+GEMINI_PILOT",
+      "status": "READY",
+      "context_version": "1.0.16",
+      "review_verdict": "PILOT-READY",
+      "review_notes": "Machine-readable packet schema + closed-loop acceptance gate. First pilot packet is C07-MICRO15-GEMINI-REVIEW-001. After PASS, switch to topic/strand batches."
+    },
+    {
+      "id": "C07-MICRO15-001",
+      "title": "CĐ07 complete 15-item diagnostic micro-practice pilot",
+      "routing": "GEMINI_AUTHOR_REVIEW+CHATGPT_INTEGRATE",
+      "status": "OPEN",
+      "context_version": "1.0.16",
+      "review_notes": "One complete batch only; option-level misconception signals are not causal diagnoses."
     }
   ]
 }
