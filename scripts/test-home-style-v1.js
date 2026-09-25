@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+"use strict";
+const fs=require("fs"),path=require("path"),vm=require("vm"),root=path.resolve(__dirname,"..");
+const load=p=>fs.readFileSync(path.join(root,p),"utf8");
+const html=load("docs/index.md"),css=load("docs/assets/stylesheets/site-design-system.css"),js=load("docs/assets/javascripts/study-scene-v1.js"),config=load("mkdocs.yml");
+const ok=(x,msg)=>{if(!x)throw Error(msg)};
+for(const mark of ['data-home-mode="standard"','data-home-mode="playful"','data-home-dialog hidden','data-home-select="standard"','data-home-select="playful"','data-study-wake','data-study-gateway hidden'])ok(html.includes(mark),mark);
+ok(html.includes('class="home-hero-art"')&&html.includes('class="study-art-image"'),"both illustrations");
+ok(html.includes('href="kien-thuc/"')&&html.includes('href="roadmap/"'),"links");
+ok(css.includes("prefers-reduced-motion:reduce")&&css.includes(".home-style-card-playful"),"accessibility and style");
+ok(config.includes("study-scene-v1.js"),"loaded script");
+ok(js.includes("roadmap.home.style.v1")&&js.includes("localStorage.setItem")&&js.includes('gateway.hidden = false'),"preference and wake interaction");
+const image=path.join(root,"docs/assets/images/study-kid-sleeping.webp");
+ok(fs.existsSync(image)&&fs.statSync(image).size>10000,"approved illustration bundled locally");
+const classes=new Set(),events={},attrs={};const gateway={hidden:true};
+const wake={addEventListener:(t,fn)=>events.wake=fn,setAttribute:(k,v)=>attrs[k]=v};
+const scene={hidden:true,classList:{contains:v=>classes.has(v),add:v=>classes.add(v)},querySelector:s=>s==="[data-study-wake]"?wake:s==="[data-study-gateway]"?gateway:null};
+const standard={hidden:false};
+const choices={standard:{dataset:{homeSelect:"standard"},setAttribute:(k,v)=>attrs.standard=v,addEventListener:(t,fn)=>events.standard=fn},playful:{dataset:{homeSelect:"playful"},setAttribute:(k,v)=>attrs.playful=v,addEventListener:(t,fn)=>events.playful=fn}};
+const panel={focus:()=>{}}, dialog={hidden:true,querySelector:s=>s===".home-style-panel"?panel:null,addEventListener:(t,fn)=>events[t]=fn,querySelectorAll:()=>[]};
+const bar={appendChild:()=>{}}, doc={readyState:"complete",querySelectorAll:()=>[portal],createElement:()=>({addEventListener:()=>{}})};
+const portal={dataset:{},querySelector:s=>s==="[data-home-dialog]"?dialog:s==="[data-study-scene]"?scene:s==='[data-home-mode="standard"]'?standard:null,querySelectorAll:s=>s==="[data-home-select]"?[choices.standard,choices.playful]:s==="[data-home-dismiss]"?[]:s==="[data-home-style-bar]"?[bar]:[],};
+vm.runInNewContext(js,{document:doc,localStorage:{getItem:()=>null,setItem:(k,v)=>attrs.saved=v}});
+ok(!dialog.hidden&&standard.hidden===false&&scene.hidden===true,"first visit chooser and stable default");
+events.playful();ok(dialog.hidden&&scene.hidden===false&&standard.hidden&&attrs.saved==="playful","switch and save");
+events.wake();ok(!gateway.hidden&&classes.has("is-awake"),"wake reveals navigation");
+events.standard();ok(scene.hidden&& !standard.hidden&&attrs.saved==="standard","switch back preserves standard portal");
+console.log("PASS: two styles, first visit chooser, state persistence, visual asset, wake links, safe fallback.");

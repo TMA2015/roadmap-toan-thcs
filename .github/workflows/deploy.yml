@@ -123,6 +123,14 @@ jobs:
           node scripts/test-learning-card-micro-practice.js docs/assets/data/curriculum/topic23-learning-workspace.json docs/assets/data/practice/23-xac-suat-micro-v1.json
           node scripts/test-prob23-learn-001.js
 
+      - name: Verify CĐ23 grade-mapped Core Readiness
+        run: node scripts/test-prob23-ready-001.js
+
+      - name: Verify CĐ24–25 non-gating learning journeys
+        run: |
+          node --check docs/assets/javascripts/topic-workspace-v1.js
+          node scripts/test-cross-topic-learning-24-25.js
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 

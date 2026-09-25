@@ -501,6 +501,9 @@ Mức ưu tiên tổng thể của chuyên đề: **⭐⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
+**Learning Journey Entrance10:** 5 thẻ học, mỗi thẻ có kiến thức ngắn, ví dụ, lỗi thường gặp và 3 câu kiểm tra nhanh. Tất cả đều là luyện tập bổ trợ, **không khóa KNTT Core** và không thay thế bài tự luận.
+
+
 ### Mức 1 – Nhận biết
 
 1. Liệt kê bốn mạch kiến thức lớn của Roadmap.

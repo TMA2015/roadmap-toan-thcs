@@ -5,9 +5,25 @@ site_author: Roadmap Toán THCS
 theme:
   name: material
   language: vi
+  icon:
+    logo: material/school
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Chuyển sang giao diện tối
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Chuyển sang giao diện sáng
 
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
     - search.suggest
@@ -147,6 +163,7 @@ nav:
               - Bài học: kien-thuc/23-xac-suat/index.md
               - Luyện tập: kien-thuc/23-xac-suat/bai-tap.md
               - Tự kiểm tra: kien-thuc/23-xac-suat/tu-kiem-tra.md
+              - Tự luận bổ sung: kien-thuc/23-xac-suat/tu-kiem-tra-tu-luan.md
       - Tổng hợp – Ứng dụng:
           - 24. Bài toán thực tế:
               - Bài học: kien-thuc/24-bai-toan-thuc-te/index.md
@@ -170,6 +187,7 @@ plugins:
   - search
 
 extra_css:
+  - assets/stylesheets/site-design-system.css
   - assets/stylesheets/practice-engine.css
   - assets/stylesheets/topic-workspace.css
   - assets/stylesheets/assessment-engine.css
@@ -182,3 +200,6 @@ extra_javascript:
   - assets/javascripts/topic-workspace-v1.js
   - assets/javascripts/assessment-engine-v1.js
   - assets/javascripts/practice-auto-loader.js
+  - assets/javascripts/study-scene-v1.js
+  - assets/javascripts/sticky-nav-v1.js
+  - assets/javascripts/knowledge-ui-v1.js

@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+"use strict";
+const fs=require("fs"),path=require("path"),R=path.resolve(__dirname,"..");
+const read=p=>JSON.parse(fs.readFileSync(path.join(R,p),"utf8"));
+const txt=p=>fs.readFileSync(path.join(R,p),"utf8");
+const a=read("docs/assets/data/assessment/23-xac-suat-core-v1.json"),scope=read("docs/assets/data/curriculum/topic23-layer-audit-v1.json"),legacy=read("docs/assets/data/practice/23-xac-suat-v1.manifest.json");
+const errors=[],ok=(c,s)=>{if(!c)errors.push(s)};
+ok(a.schema==="roadmap-readiness-assessment-v1"&&a.assessment_id==="PROB23-CORE-READY-V1"&&a.topic.id==="23-xac-suat"&&a.layer==="KNTT-Core","identity");
+ok(a.items.length===12&&a.policy.feedback==="after_submit"&&!a.policy.hints&&!a.policy.tutor&&!a.policy.hard_gate&&!a.readiness.hard_gate,"soft policy");
+ok(a.readiness.ready_threshold===0.8&&a.readiness.minimum_answered_ratio===0.8,"thresholds");
+ok(legacy.question_count===120&&scope.counts["KNTT-Core"]===52&&scope.counts["Core-Support"]===30&&scope.counts.Entrance10===38,"legacy source counts");
+const answers=["3/10","13/20","0,3","Xác suất thực nghiệm của ngửa bằng 12/30","Chắc chắn","Không thể","1/4","1/2","Rút một thẻ từ hộp kín ghi số 1 đến 5 mà không nhìn","3/8","Xác suất thực nghiệm bằng 11/20, khác giá trị mô hình 1/2","Không hợp lệ vì xác suất luôn từ 0 đến 1"];
+const seen=new Set(),grades={6:0,7:0,8:0};
+a.items.forEach((q,i)=>{const g=q.curriculum?.grades?.[0];grades[g]=(grades[g]||0)+1;
+ ok(q.id==="PRO23READY_"+String(i+1).padStart(3,"0")&&!seen.has(q.id),"ID "+q.id);seen.add(q.id);
+ ok(q.type==="mcq"&&q.points===1&&q.options.length===4&&new Set(q.options).size===4&&Number.isInteger(q.answer),"options "+q.id);
+ ok(q.options[q.answer]===answers[i]&&q.explanation.length>20,"independent arithmetic/answer "+q.id);
+ ok(q.curriculum.book==="KNTT"&&q.curriculum.level==="core"&&q.curriculum.grades.length===1&&scope.grade_boundaries[String(g)]?.scored.includes(q.skill),"grade-scoped skill "+q.id);
+ ok(!q.hints&&!q.tutor&&a.skill_labels[q.skill],"no hints and labels "+q.id);
+});
+ok(JSON.stringify(grades)===JSON.stringify({6:4,7:4,8:4}),"grade balance");
+ok(txt("docs/kien-thuc/23-xac-suat/tu-kiem-tra.md").includes('data-readiness-check-v1="assets/data/assessment/23-xac-suat-core-v1.json"'),"interactive marker");
+ok(txt("docs/kien-thuc/23-xac-suat/tu-kiem-tra-tu-luan.md").includes("# Đáp án và hướng dẫn chấm"),"essay preserved");
+ok(txt("mkdocs.yml").includes("kien-thuc/23-xac-suat/tu-kiem-tra-tu-luan.md"),"nav");
+if(errors.length){console.error(errors.join("\n"));process.exit(1)}console.log("PASS CĐ23 readiness: 12 grade-scoped answers, 120-item practice untouched, soft mastery, essay preserved.");

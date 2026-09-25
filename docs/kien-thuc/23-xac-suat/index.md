@@ -438,9 +438,10 @@ Học **5 Learning Cards KNTT Core** theo thứ tự lớp 6–8; mỗi thẻ g�
 
 ## ✅ 9. Tự kiểm tra
 
-Bài tự luận hiện có gồm cả câu về thí nghiệm nhiều bước, được giữ để **tự luyện bổ sung**, không phải bài kiểm tra Core Readiness tương tác. Phần Readiness Core sẽ được biên soạn và kiểm định ở batch riêng.
+Bài tự luận hiện có gồm cả câu về thí nghiệm nhiều bước, được giữ để **tự luyện bổ sung**, không phải bài kiểm tra Core Readiness tương tác. Bài Core Readiness 12 câu được tách riêng và chỉ chấm khi nộp, không khóa chuyên đề tiếp theo.
 
-- **→ [Mở bài tự kiểm tra tự luận hiện có](tu-kiem-tra.md)**
+- **→ [Mở Core Readiness tương tác](tu-kiem-tra.md)** (12 câu, chấm sau khi nộp).
+- **→ [Mở bài tự luận bổ sung](tu-kiem-tra-tu-luan.md)** (có nội dung mở rộng).
 
 ---
 
@@ -469,4 +470,4 @@ Tự theo dõi tiến độ theo nội dung từng lớp:
 - [ ] Nếu học mở rộng, thử bài nhiều bước và sơ đồ cây; không tính vào KNTT Core.
 - [ ] Nếu học mở rộng, tìm hiểu biến cố đối; không tính vào KNTT Core.
 - [ ] Kiểm tra được tính hợp lý của kết quả.
-- [ ] Chữa lại câu micro-practice sai; có thể học tiếp CĐ24 bất kể điểm bài tự luận. Core Readiness tương tác sẽ được thực hiện ở batch riêng.
+- [ ] Chữa lại câu micro-practice sai; có thể học tiếp CĐ24 bất kể điểm bài tự luận. Core Readiness tương tác là tín hiệu ôn tập mềm, không khóa việc học tiếp.

@@ -92,6 +92,8 @@ const TOPICS={
  "19-duong-tron":{number:"19",data:"assets/data/curriculum/topic19-learning-workspace.json",description:"Cung–dây, vị trí tương đối, góc nội tiếp, nội/ngoại tiếp và đo lường đường tròn.",chips:["KNTT Core","Lớp 9","Hình học","⭐⭐⭐⭐⭐"],progressSkills:["day-va-tam","cung-va-day","do-dai-duong-tron","do-dai-cung","vi-tri-tuong-doi-duong-thang-duong-tron","vi-tri-tuong-doi-hai-duong-tron","goc-noi-tiep","tu-giac-noi-tiep","dau-hieu-noi-tiep","duong-tron-ngoai-tiep-tam-giac","duong-tron-noi-tiep-tam-giac","da-giac-deu","dien-tich-quat-tron","dien-tich-vanh-khuyen"]},
  "20-hinh-hoc-tong-hop":{number:"20",data:"assets/data/curriculum/topic20-learning-workspace.json",description:"Hình phẳng, đối xứng, đo lường và các hình khối xuyên suốt lớp 6–9.",chips:["KNTT Core","Lớp 6–9","Hình học","⭐⭐⭐⭐⭐"],progressSkills:["nhan-biet-tam-giac-deu","nhan-biet-hinh-vuong","nhan-biet-luc-giac-deu","nhan-biet-tu-giac-dac-biet","chu-vi-tu-giac","dien-tich-tu-giac","do-luong-thuc-te","truc-doi-xung","tam-doi-xung","the-tich-hop-chu-nhat","dien-tich-day","doi-don-vi-do-luong","nhan-biet-hinh-hop-lap-phuong","dien-tich-xung-quanh-hop-chu-nhat","the-tich-lang-tru","nhan-biet-lang-tru-dung","dien-tich-xung-quanh-lang-tru","nhan-biet-hinh-chop-deu","dien-tich-xung-quanh-hinh-chop","the-tich-hinh-chop","nhan-biet-hinh-tru","dien-tich-xung-quanh-hinh-tru","the-tich-hinh-tru","nhan-biet-hinh-non","dien-tich-xung-quanh-hinh-non","the-tich-hinh-non","nhan-biet-hinh-cau","dien-tich-mat-cau","the-tich-hinh-cau"]},
  "21-thong-ke":{number:"21",data:"assets/data/curriculum/topic21-learning-workspace.json",description:"Từ thu thập và phân loại đến biểu đồ, chọn cách biểu diễn và kết luận có căn cứ.",chips:["KNTT Core","Lớp 6–8","Thống kê","⭐⭐⭐⭐"],progressSkills:["du-lieu-phan-loai","thu-thap-du-lieu","doc-bieu-do-cot","doc-bieu-do-cot-kep","doc-bieu-do-doan-thang","bieu-do-quat-tron","chon-bieu-do","chuyen-bang-bieu-do","nhan-xet-du-lieu"]},
+ "24-bai-toan-thuc-te":{number:"24",data:"assets/data/curriculum/topic24-learning-workspace.json",description:"Đọc dữ kiện, chọn mô hình, tính toán rồi kiểm tra đáp án trong thực tế.",chips:["Ứng dụng xuyên lớp","Lớp 6–9","Mô hình hóa","⭐⭐⭐⭐⭐"],progressSkills:["doc-de-du-kien","doi-don-vi","phan-tram","lap-phuong-trinh","lap-he","kiem-tra-ket-luan"]},
+ "25-tong-hop-on-thi-10":{number:"25",data:"assets/data/curriculum/topic25-learning-workspace.json",description:"Nhận dạng dạng bài, ôn liên mạch và xây chu trình làm đề – chữa lỗi.",chips:["Entrance10","Ôn tập lớp 9","Tổng hợp","⭐⭐⭐⭐⭐"],progressSkills:["nhan-dien-chuyen-de","on-thi-bieu-thuc-can","on-thi-phuong-trinh","on-thi-he","on-thi-ham-so","on-thi-hinh-hoc","on-thi-thong-ke","on-thi-xac-suat","phan-loai-loi","checklist-chua-de"]},
  "23-xac-suat":{number:"23",data:"assets/data/curriculum/topic23-learning-workspace.json",description:"Từ phép thử, biến cố đến xác suất đơn giản và xác suất thực nghiệm theo lớp 6–8.",chips:["KNTT Core","Lớp 6–8","Xác suất","⭐⭐⭐⭐"],progressSkills:["xac-suat-thuc-nghiem","bien-co","bien-co-chac-chan-khong-the","xac-suat-co-dien","kiem-tra-xac-suat","phep-thu-ngau-nhien"]}
 };
 
@@ -159,7 +161,7 @@ const renderTutor=async(panel,question,selectedText,graph)=>{
  panel.hidden=false;panel.innerHTML="<strong>🤖 Gia sư đang xem evidence…</strong>";
  try{
   const skill=(question.tags?.skill||[])[0];const stats=loadStats();
-  const context=window.RoadmapTutor.buildContext({projectContextVersion:"1.0.26",layer:"KNTT-Core",gradeOverlay:questionGrade(question),skill,question,learnerAnswer:selectedText,hintLevel:0,stats,graph,recovery:{events:[]}});
+  const context=window.RoadmapTutor.buildContext({projectContextVersion:"1.0.26",layer:question.tags?.layer||"KNTT-Core",gradeOverlay:questionGrade(question),skill,question,learnerAnswer:selectedText,hintLevel:0,stats,graph,recovery:{events:[]}});
   const response=await window.RoadmapTutor.run({provider:"mock",context});
   panel.innerHTML=`<strong>🤖 Gia sư · QA local</strong><div>${response.message}</div><div class="topic-micro-note">${response.confidence==="evidenced"?"Dựa trên learner evidence đủ ngưỡng.":"Tín hiệu sai chỉ là gợi ý, chưa phải kết luận điểm yếu."}</div>`;
   if(response.action_type==="REMEDIATE"&&response.target_skill){const topic=graph?.nodes?.[response.target_skill]?.topic;if(topic){const a=document.createElement("a");a.className="md-button";a.textContent=`Ôn ngay: ${skillLabel(response.target_skill)}`;a.href=`${siteRoot()}/kien-thuc/${topic}/bai-tap/?focus=${encodeURIComponent(response.target_skill)}&mode=remediation`;panel.appendChild(a)}}
@@ -171,7 +173,7 @@ const mountMicro=(host,card,questions,graph)=>{
  const render=()=>{
   host.innerHTML="";if(index>=questions.length){host.innerHTML=`<div class="topic-micro-summary"><strong>Hoàn thành 3 câu: ${score}/3</strong><div>Kết quả đã được ghi vào learner evidence của Practice Engine. Đây không phải hard gate.</div></div>`;return}
   const q=questions[index];hintsUsed=0;
-  const meta=document.createElement("div");meta.className="topic-micro-meta";meta.textContent=`Câu ${index+1}/3 · ${q.micro_role==="base"?"Nền tảng":q.micro_role==="trap"?"Bẫy sai điển hình":"Vận dụng Core"}`;
+  const meta=document.createElement("div");meta.className="topic-micro-meta";meta.textContent=`Câu ${index+1}/3 · ${q.micro_role==="base"?"Nền tảng":q.micro_role==="trap"?"Bẫy sai điển hình":"Vận dụng"}`;
   const prompt=document.createElement("div");prompt.className="topic-micro-question";prompt.textContent=q.question;
   const opts=document.createElement("div");opts.className="topic-micro-options";
   const feedback=document.createElement("div");feedback.className="topic-micro-feedback";feedback.hidden=true;
@@ -183,7 +185,7 @@ const mountMicro=(host,card,questions,graph)=>{
     feedback.hidden=false;feedback.classList.add(correct?"is-correct":"is-wrong");
     feedback.innerHTML=`<strong>${correct?"✓ Chính xác":"✗ Chưa đúng"}</strong><div>${q.explanation}</div>${result.signal?.feedback_hint?`<div class="topic-micro-signal">🔎 Gợi ý từ lựa chọn vừa rồi: ${result.signal.feedback_hint}</div>`:""}`;
     const actions=document.createElement("div");actions.className="topic-micro-actions";
-    if(!correct&&window.RoadmapTutor){const t=document.createElement("button");t.type="button";t.className="practice-btn";t.textContent="🤖 Hỏi gia sư";t.onclick=()=>renderTutor(tutor,q,text,graph);actions.appendChild(t)}
+    if(!correct&&window.RoadmapTutor&&q.tags?.layer==="KNTT-Core"){const t=document.createElement("button");t.type="button";t.className="practice-btn";t.textContent="🤖 Hỏi gia sư";t.onclick=()=>renderTutor(tutor,q,text,graph);actions.appendChild(t)}
     const next=document.createElement("button");next.type="button";next.className="practice-btn practice-btn-primary";next.textContent=index===2?"Xem kết quả":"Câu tiếp theo";next.onclick=()=>{index++;render()};actions.appendChild(next);feedback.appendChild(actions);typeset(host);
   };opts.appendChild(b)});
   const hint=document.createElement("button");hint.type="button";hint.className="practice-btn topic-micro-hint";hint.textContent="💡 Gợi ý";hint.onclick=()=>{if(hintsUsed>=q.hints.length)return;const d=document.createElement("div");d.className="practice-hint";d.textContent=q.hints[hintsUsed++];host.insertBefore(d,feedback);if(hintsUsed>=q.hints.length)hint.disabled=true;typeset(host)};
@@ -197,7 +199,7 @@ const renderCoreCards=async(hero,config)=>{
   const [microRes,graphRes]=await Promise.all([fetch(siteAsset(data.micro_practice_bank)),fetch(siteAsset(KG_DATA))]);
   const micro=microRes.ok?await microRes.json():{questions:[]};const graph=graphRes.ok?await graphRes.json():null;const byId=new Map((micro.questions||[]).map(q=>[q.id,q]));
   const host=document.createElement("section");host.className="topic-core-journey";host.id="core-journey";
-  host.innerHTML=`<div class="topic-core-journey-head"><div><span class="topic-workspace-kicker">KNTT Core · ${data.cards.length} chặng học</span><h2>Học theo chặng, kiểm tra ngay</h2></div><span class="topic-chip">${data.cards.length*3} câu kiểm tra nhanh</span></div>`;
+  host.innerHTML=`<div class="topic-core-journey-head"><div><span class="topic-workspace-kicker">${data.learning_layer_label||"KNTT Core"} · ${data.cards.length} chặng học</span><h2>Học theo chặng, kiểm tra ngay</h2></div><span class="topic-chip">${data.cards.length*3} câu kiểm tra nhanh</span></div>`;
   const grid=document.createElement("div");grid.className="topic-core-card-grid";
   data.cards.forEach((card,i)=>{const el=document.createElement("article");el.className="topic-core-card";el.dataset.cardId=card.id;
     const prereqNames=(card.prerequisites||[]).map(skillLabel);
@@ -213,7 +215,7 @@ const renderCoreCards=async(hero,config)=>{
     const btn=el.querySelector(".topic-micro-start");const mount=el.querySelector(".topic-micro-mount");btn.onclick=()=>{const open=el.classList.toggle("is-active");btn.textContent=open?"Đóng":"✏️ Thử 3 câu";if(open&&!mount.dataset.loaded){const qs=(card.micro_practice||[]).map(id=>byId.get(id)).filter(Boolean);mount.dataset.loaded="1";mountMicro(mount,card,qs,graph)}};
     grid.appendChild(el)});
   host.appendChild(grid);
-  const ext=document.createElement("details");ext.className="topic-extension-zone";ext.innerHTML='<summary>🚀 Entrance10 / Challenge <span>không tính vào hoàn thành KNTT Core</span></summary><div class="topic-extension-list">'+(data.extensions||[]).map(x=>`<span class="topic-chip">${x.layer}: ${x.title}</span>`).join("")+"</div>";host.appendChild(ext);
+  if((data.extensions||[]).length){const ext=document.createElement("details");ext.className="topic-extension-zone";ext.innerHTML='<summary>🚀 Entrance10 / Challenge <span>không tính vào hoàn thành KNTT Core</span></summary><div class="topic-extension-list">'+(data.extensions||[]).map(x=>`<span class="topic-chip">${x.layer}: ${x.title}</span>`).join("")+"</div>";host.appendChild(ext);}
   hero.after(host);
  }catch(_){}
 };
@@ -229,8 +231,9 @@ const init=()=>{
  if(/\/bai-tap\/?$|\/tu-kiem-tra\/?$/.test(location.pathname))return;
  const content=document.querySelector(".md-content__inner");if(!content)return;const h1=content.querySelector("h1");if(!h1)return;
  const pct=progress(config.progressSkills);
+ const observed=config.progressSkills.some(s=>{const rec=loadStats().tags?.[s];return Boolean(rec?.attempted);});
  const hero=document.createElement("section");hero.className="topic-workspace-hero";
- hero.innerHTML=`<div class="topic-workspace-kicker">Roadmap 25 · Chuyên đề ${config.number}</div><h1>${h1.textContent.trim()}</h1><div>${config.description}</div><div class="topic-workspace-meta">${config.chips.map(x=>`<span class="topic-chip">${x}</span>`).join("")}</div><div class="topic-progress-wrap"><span>Tiến độ evidence hiện có</span><strong>${pct}%</strong><progress max="100" value="${pct}"></progress></div><div class="topic-workspace-actions"><a href="#core-journey">🧩 Các chặng Core</a><a href="bai-tap/">🎯 Luyện tập lớn</a><a href="#map">🗺️ Bản đồ</a><a href="#errors">⚠️ Lỗi thường gặp</a></div>`;
+ hero.innerHTML=`<div class="topic-workspace-kicker">Roadmap 25 · Chuyên đề ${config.number}</div><h1>${h1.textContent.trim()}</h1><div>${config.description}</div><div class="topic-workspace-meta">${config.chips.map(x=>`<span class="topic-chip">${x}</span>`).join("")}</div><div class="topic-progress-wrap"><span>${observed?"Kết quả đã ghi nhận qua luyện tập":"Chưa có kết quả luyện tập được ghi nhận"}</span><strong>${observed?pct+"%":"—"}</strong><progress max="100" value="${pct}" aria-label="Mức độ ghi nhận theo kỹ năng" ></progress></div><div class="topic-workspace-actions"><a href="#core-journey">🧩 Các chặng học</a><a href="bai-tap/">🎯 Luyện tập lớn</a><a href="#map">🗺️ Bản đồ</a><a href="#errors">⚠️ Lỗi thường gặp</a></div>`;
  h1.replaceWith(hero);
  const nav=document.createElement("nav");nav.className="topic-workspace-nav";nav.innerHTML='<div class="topic-workspace-nav-title">Đi nhanh trong chuyên đề</div><div class="topic-workspace-nav-list">'+sections.map(([id,label])=>`<a href="#${id}">${label}</a>`).join("")+"</div>";hero.after(nav);renderCoreCards(hero,config);
  sections.forEach(([id,,label],i)=>{const h=findHeading(label);if(h)wrapSection(h,id,i)});

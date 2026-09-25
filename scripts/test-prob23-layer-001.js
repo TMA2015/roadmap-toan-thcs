@@ -15,7 +15,7 @@ ok(packet.scope.card_plan.length===5&&packet.scope.card_plan.every(c=>c.micro_id
 ok(packet.scope.card_plan[0].skills.join(",")==="xac-suat-thuc-nghiem"&&packet.scope.proposed_unscored.includes("ket-qua-co-the"),"grade6 boundary");
 const lesson=txt("docs/kien-thuc/23-xac-suat/index.md"),practice=txt("docs/kien-thuc/23-xac-suat/bai-tap.md"),self=txt("docs/kien-thuc/23-xac-suat/tu-kiem-tra.md");
 ok(lesson.includes("lớp 6–8")&&lesson.includes("không tự động tính vào KNTT Core Readiness")&&!lesson.includes("Đạt tối thiểu **7/10**"),"lesson boundary");
-ok(practice.includes("Core-Support/Entrance10")&&self.includes("không phải Core Readiness")&&!self.includes("→ Nếu đạt:"),"practice/self gate");
+ok(practice.includes("Core-Support/Entrance10")&&self.includes('data-readiness-check-v1')&&self.includes("không gồm sơ đồ cây")&&!self.includes("→ Nếu đạt:"),"practice/self gate");
 const engine=txt("docs/assets/javascripts/practice-engine-v2.js");
 ok(engine.includes('question.tags.layer !== "KNTT-Core"')&&engine.includes('this.difficultyLabel(question.difficulty)')&&engine.includes('.filter(Boolean).join(" · ")'),"practice non-Core label");
 ok(read("docs/assets/data/practice/22-dai-luong-dac-trung-v1.manifest.json").primary_layer==="THPT-Bridge","CĐ22 label source");
