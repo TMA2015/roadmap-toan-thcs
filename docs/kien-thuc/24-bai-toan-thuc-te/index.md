@@ -506,6 +506,9 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
+**Learning Journey Ứng dụng xuyên lớp:** 5 thẻ học, mỗi thẻ có kiến thức ngắn, ví dụ, lỗi thường gặp và 3 câu kiểm tra nhanh. Tất cả đều là luyện tập bổ trợ, **không khóa KNTT Core** và không thay thế bài tự luận.
+
+
 ### Mức 1 – Nhận biết
 
 1. Viết ba công thức liên hệ `S, v, t`.
@@ -572,4 +575,4 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Giải và kiểm tra được nghiệm.
 - [ ] Đổi đơn vị và làm tròn đúng yêu cầu.
 - [ ] Viết được câu kết luận đúng ngữ cảnh.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 25.
+- [ ] Làm bài tự kiểm tra, chữa mọi câu sai; kết quả không khóa quyền chuyển sang Chuyên đề 25.
