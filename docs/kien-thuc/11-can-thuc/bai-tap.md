@@ -1,283 +1,173 @@
-# Bài tập – Chuyên đề 11: Căn thức và biến đổi căn thức
+# Practice Room – Chuyên đề 11: Căn thức và biến đổi căn thức
 
-> **Mục tiêu:** luyện điều kiện xác định, \(\sqrt{A^2}=|A|\), rút gọn căn, trục căn thức ở mẫu, phương trình chứa căn và bài tổng hợp.
+> **Mục tiêu:** luyện chắc KNTT Core về căn bậc hai, biến đổi căn thức, trục căn thức ở mẫu và căn bậc ba.
 >
-> **Quy ước mã bài:** `11-Mx-yy`.
+> **Core mặc định:** phương trình chứa căn, so sánh căn và bài tham số/giá trị nguyên được tách sang Entrance10 / Challenge trong batch này.
 
----
+## B. ✍️ Luyện tự luận & trình bày
 
-# Mức 1 – Nhận biết
+### Core KNTT
 
-### 11-M1-01
-Tính \(\sqrt{81}\).
+#### 11-WR-01 · Điều kiện xác định
+Tìm điều kiện xác định của \(\sqrt{3x-6}\).
 
-### 11-M1-02
-Tìm điều kiện xác định của \(\sqrt{x-3}\).
+??? tip "Gợi ý"
+    Biểu thức dưới căn bậc hai phải không âm.
 
-### 11-M1-03
-Tìm điều kiện xác định của \(\dfrac1{\sqrt{x+2}}\).
+??? example "Xem lời giải"
+    \[
+    3x-6\ge0\Rightarrow x\ge2.
+    \]
 
-### 11-M1-04
-Rút gọn \(\sqrt{50}\).
+#### 11-WR-02 · Căn của bình phương
+Rút gọn \(\sqrt{(2x-1)^2}\).
 
-### 11-M1-05
-Rút gọn \(\sqrt{72}\).
+??? tip "Gợi ý"
+    Dùng \(\sqrt{A^2}=|A|\).
 
-### 11-M1-06
-Viết đúng dạng của \(\sqrt{(x-4)^2}\).
+??? example "Xem lời giải"
+    \[
+    \sqrt{(2x-1)^2}=|2x-1|.
+    \]
 
-### 11-M1-07
-Tính \(3\sqrt2+5\sqrt2-\sqrt2\).
+#### 11-WR-03 · Khai phương tích
+Rút gọn \(\sqrt{108}\).
 
-### 11-M1-08
-Tính \(\sqrt{12}\cdot\sqrt3\).
+??? tip "Gợi ý"
+    Tách một thừa số chính phương lớn.
 
-### 11-M1-09
-Tính \(\dfrac{\sqrt{75}}{\sqrt3}\).
+??? example "Xem lời giải"
+    \[
+    \sqrt{108}=\sqrt{36\cdot3}=6\sqrt3.
+    \]
 
-### 11-M1-10
-Trục căn thức ở mẫu: \(\dfrac1{\sqrt5}\).
+#### 11-WR-04 · Khai phương thương
+Tính \(\dfrac{\sqrt{147}}{\sqrt3}\).
 
-# Mức 2 – Thông hiểu
+??? tip "Gợi ý"
+    Gộp thành căn của thương.
 
-### 11-M2-01
-Rút gọn \(\sqrt{45}+\sqrt{20}\).
+??? example "Xem lời giải"
+    \[
+    \frac{\sqrt{147}}{\sqrt3}=\sqrt{49}=7.
+    \]
 
-### 11-M2-02
-Rút gọn \(\sqrt{75}-2\sqrt{12}\).
+#### 11-WR-05 · Đưa thừa số ra ngoài
+Với \(x\in\mathbb R\), rút gọn \(\sqrt{32x^2}\).
 
-### 11-M2-03
-Rút gọn \(\sqrt{48x^2}\) với \(x\in\mathbb R\).
+??? tip "Gợi ý"
+    Nhớ \(\sqrt{x^2}=|x|\).
 
-### 11-M2-04
-Rút gọn \(\sqrt{27a^2}\) biết \(a\ge0\).
+??? example "Xem lời giải"
+    \[
+    \sqrt{32x^2}=4\sqrt2|x|.
+    \]
 
-### 11-M2-05
-Trục căn thức ở mẫu \(\dfrac3{\sqrt6}\).
+#### 11-WR-06 · Căn đồng dạng
+Rút gọn \(\sqrt{48}+\sqrt{27}-\sqrt3\).
 
-### 11-M2-06
-Trục căn thức ở mẫu \(\dfrac1{\sqrt3+1}\).
+??? tip "Gợi ý"
+    Rút gọn từng căn về bội của \(\sqrt3\).
 
-### 11-M2-07
-Rút gọn \(\dfrac{\sqrt{12}+\sqrt{27}}{\sqrt3}\).
+??? example "Xem lời giải"
+    \[
+    4\sqrt3+3\sqrt3-\sqrt3=6\sqrt3.
+    \]
 
-### 11-M2-08
-Tìm điều kiện xác định của \(\sqrt{2x-1}+\dfrac1{\sqrt{x+3}}\).
+#### 11-WR-07 · Nhân căn
+Tính \(\sqrt{10}\cdot\sqrt{40}\).
 
-### 11-M2-09
-Một học sinh viết \(\sqrt{x^2}=x\) với mọi \(x\). Hãy chỉ ra lỗi và sửa.
+??? tip "Gợi ý"
+    Gộp tích dưới một dấu căn.
 
-### 11-M2-10
-Một học sinh viết \(\sqrt{9+16}=3+4\). Hãy giải thích vì sao sai.
+??? example "Xem lời giải"
+    \[
+    \sqrt{10}\sqrt{40}=\sqrt{400}=20.
+    \]
 
-# Mức 3 – Vận dụng
+#### 11-WR-08 · Trục căn mẫu đơn
+Trục căn thức ở mẫu \(\dfrac{5}{\sqrt{10}}\).
 
-### 11-M3-01
-Rút gọn \(\sqrt{18}+\sqrt8-\sqrt{50}\).
+??? tip "Gợi ý"
+    Nhân tử và mẫu với \(\sqrt{10}\), rồi rút gọn.
 
-### 11-M3-02
-Rút gọn \((\sqrt5+\sqrt3)(\sqrt5-\sqrt3)\).
+??? example "Xem lời giải"
+    \[
+    \frac5{\sqrt{10}}=\frac{5\sqrt{10}}{10}=\frac{\sqrt{10}}2.
+    \]
 
-### 11-M3-03
-Trục căn thức ở mẫu \(\dfrac2{\sqrt5-1}\).
+#### 11-WR-09 · Trục căn bằng liên hợp
+Trục căn thức ở mẫu \(\dfrac1{\sqrt5+1}\).
 
-### 11-M3-04
-Trục căn thức ở mẫu \(\dfrac1{\sqrt7+\sqrt5}\).
+??? tip "Gợi ý"
+    Nhân với liên hợp \(\sqrt5-1\).
 
-### 11-M3-05
-Giải \(\sqrt{2x+3}=5\).
+??? example "Xem lời giải"
+    \[
+    \frac1{\sqrt5+1}=\frac{\sqrt5-1}{5-1}=\frac{\sqrt5-1}{4}.
+    \]
 
-### 11-M3-06
-Giải \(\sqrt{x+4}=x\).
+#### 11-WR-10 · Căn bậc ba
+Tính \(\sqrt[3]{-216}\) và rút gọn \(\sqrt[3]{8x^3}\) với \(x\in\mathbb R\).
 
-### 11-M3-07
-Rút gọn \(A=\sqrt{(x-2)^2}\) khi \(x<2\).
+??? tip "Gợi ý"
+    Căn bậc ba của số âm vẫn xác định; \(\sqrt[3]{x^3}=x\).
 
-### 11-M3-08
-Với \(x\ge0\), rút gọn \(B=\sqrt{8x^2}+x\sqrt2\).
+??? example "Xem lời giải"
+    \[
+    \sqrt[3]{-216}=-6,\qquad \sqrt[3]{8x^3}=2x.
+    \]
 
-### 11-M3-09
-So sánh \(3\sqrt5\) và \(2\sqrt{11}\).
+### Entrance10 / Extension
 
-### 11-M3-10
-Tính \(A=\dfrac1{\sqrt5-2}+\dfrac1{\sqrt5+2}\).
-
-### 11-M3-11
+#### 11-ENT-01 · Phương trình chứa căn
 Giải \(\sqrt{x+1}=x-1\).
 
-### 11-M3-12
-Tìm \(x\ge0\) để \(\sqrt x=4\).
+??? tip "Gợi ý"
+    Vế phải phải không âm trước khi bình phương.
 
-# Mức 4 – Tổng hợp / ôn thi
+??? example "Xem lời giải"
+    Điều kiện \(x\ge1\). Bình phương:
+    \[
+    x+1=(x-1)^2\Rightarrow x(x-3)=0.
+    \]
+    Chỉ \(x=3\) thỏa.
 
-### 11-M4-01
-Tìm điều kiện xác định và rút gọn
-$$
-A=\frac{\sqrt{x}-2}{x-4},\qquad x\ge0.
-$$
+#### 11-ENT-02 · So sánh căn
+So sánh \(3\sqrt5\) và \(2\sqrt{11}\).
 
-### 11-M4-02
-Rút gọn
-$$
-B=\frac1{\sqrt x-1}-\frac1{\sqrt x+1}
-$$
-với điều kiện thích hợp.
+??? tip "Gợi ý"
+    Hai số đều không âm nên có thể so sánh bình phương.
 
-### 11-M4-03
-Giải \(\sqrt{x+6}=x\).
+??? example "Xem lời giải"
+    \[
+    45>44,
+    \]
+    nên \(3\sqrt5>2\sqrt{11}\).
 
-### 11-M4-04
-Giải \(\sqrt{2x-1}=x-1\).
+### Challenge
 
-### 11-M4-05
-Tìm số nguyên \(x\ge0\) để \(\sqrt x\) là số nguyên và \(x<30\).
+#### 11-CH-01 · Giá trị nguyên
+Tìm các số nguyên \(x\ge0\), \(x<50\) sao cho \(\sqrt x\) là số nguyên.
 
-### 11-M4-06
-Chứng minh
-$$
-\frac1{\sqrt3-1}-\frac1{\sqrt3+1} = 1.
-$$
+??? tip "Gợi ý"
+    x phải là số chính phương.
 
-### 11-M4-07
-Rút gọn
-$$
-C=(\sqrt3+\sqrt2)^2-2\sqrt6.
-$$
-
-### 11-M4-08
-Rút gọn
-$$
-D=\frac{\sqrt{12}+\sqrt{27}-\sqrt{75}}{\sqrt3}.
-$$
-
-### 11-M4-09
-Giải \(\sqrt{x+9}-\sqrt x=1\), với \(x\ge0\).
-
-### 11-M4-10
-Tìm \(x\) để \(\sqrt{(x-1)^2}=3\).
+??? example "Xem lời giải"
+    \[
+    x\in\{0,1,4,9,16,25,36,49\}.
+    \]
 
 ---
 
-# Đáp án nhanh
+## Theo dõi sau khi luyện
+- [ ] Tôi luôn kiểm tra điều kiện căn bậc hai.
+- [ ] Tôi không quên giá trị tuyệt đối trong \(\sqrt{A^2}\).
+- [ ] Tôi biến đổi và trục căn thức đúng.
+- [ ] Tôi phân biệt căn bậc hai với căn bậc ba.
+- [ ] Khi tương đối chắc, tôi chuyển sang [✅ Core Readiness Check](tu-kiem-tra.md).
 
-| Mã | Đáp án |
-|---|---|
-| 11-M1-01 | \(9\) |
-| 11-M1-02 | \(x\ge3\) |
-| 11-M1-03 | \(x>-2\) |
-| 11-M1-04 | \(5\sqrt2\) |
-| 11-M1-05 | \(6\sqrt2\) |
-| 11-M1-06 | \(|x-4|\) |
-| 11-M1-07 | \(7\sqrt2\) |
-| 11-M1-08 | \(6\) |
-| 11-M1-09 | \(5\) |
-| 11-M1-10 | \(\frac{\sqrt5}{5}\) |
-| 11-M2-01 | \(5\sqrt5\) |
-| 11-M2-02 | \(\sqrt3\) |
-| 11-M2-03 | \(4\sqrt3|x|\) |
-| 11-M2-04 | \(3a\sqrt3\) |
-| 11-M2-05 | \(\frac{\sqrt6}{2}\) |
-| 11-M2-06 | \(\frac{\sqrt3-1}{2}\) |
-| 11-M2-07 | \(5\) |
-| 11-M2-08 | \(x\ge\frac12\) |
-| 11-M2-09 | Đúng là \(\sqrt{x^2}=|x|\) |
-| 11-M2-10 | \(\sqrt{a+b}\ne\sqrt a+\sqrt b\) nói chung; ở đây \(5\ne7\) |
-| 11-M3-01 | \(0\) |
-| 11-M3-02 | \(2\) |
-| 11-M3-03 | \(\frac{\sqrt5+1}{2}\) |
-| 11-M3-04 | \(\frac{\sqrt7-\sqrt5}{2}\) |
-| 11-M3-05 | \(x=11\) |
-| 11-M3-06 | \(x=\frac{1+\sqrt{17}}2\) |
-| 11-M3-07 | \(2-x\) |
-| 11-M3-08 | \(3x\sqrt2\) |
-| 11-M3-09 | \(3\sqrt5>2\sqrt{11}\) |
-| 11-M3-10 | \(2\sqrt5\) |
-| 11-M3-11 | \(x=3\) |
-| 11-M3-12 | \(x=16\) |
-| 11-M4-01 | \(x\ge0,\ x\ne4;\ A=\frac1{\sqrt x+2}\) |
-| 11-M4-02 | \(x\ge0,\ x\ne1;\ B=\frac2{x-1}\) |
-| 11-M4-03 | \(x=3\) |
-| 11-M4-04 | \(x=2+\sqrt2\) |
-| 11-M4-05 | \(x\in\{0,1,4,9,16,25\}\) |
-| 11-M4-06 | \(1\) |
-| 11-M4-07 | \(5\) |
-| 11-M4-08 | \(0\) |
-| 11-M4-09 | \(x=16\) |
-| 11-M4-10 | \(x=-2\) hoặc \(x=4\) |
-
----
-
-# Hướng dẫn chọn lọc
-
-## 11-M2-03
-$$
-\sqrt{48x^2}=4\sqrt3\sqrt{x^2}=4\sqrt3|x|.
-$$
-
-## 11-M2-06
-Nhân liên hợp:
-$$
-\frac1{\sqrt3+1}\cdot\frac{\sqrt3-1}{\sqrt3-1}
-=\frac{\sqrt3-1}{2}.
-$$
-
-## 11-M3-06
-Điều kiện \(x\ge0\). Bình phương:
-$$
-x+4=x^2\Rightarrow x^2-x-4=0.
-$$
-Nghiệm phù hợp:
-$$
-x=\frac{1+\sqrt{17}}2.
-$$
-
-## 11-M3-11
-Điều kiện \(x\ge1\). Bình phương:
-$$
-x+1=(x-1)^2\Rightarrow x^2-3x=0.
-$$
-Ứng viên \(x=0,3\); chỉ \(x=3\) thỏa điều kiện.
-
-## 11-M4-01
-Vì \(x-4=(\sqrt x-2)(\sqrt x+2)\):
-$$
-A=\frac1{\sqrt x+2},
-$$
-với \(x\ge0,\ x\ne4\).
-
-## 11-M4-04
-Điều kiện \(x\ge1\). Bình phương:
-$$
-2x-1=(x-1)^2
-\Rightarrow x^2-4x+2=0.
-$$
-Hai nghiệm \(2\pm\sqrt2\), nhưng chỉ \(2+\sqrt2\ge1\) thỏa.
-
-## 11-M4-09
-$$
-\sqrt{x+9}=\sqrt x+1.
-$$
-Bình phương:
-$$
-x+9=x+1+2\sqrt x\Rightarrow \sqrt x=4\Rightarrow x=16.
-$$
-
----
-
-# Theo dõi tiến độ
-
-- [ ] M1 đạt ít nhất 8/10.
-- [ ] M2 đạt ít nhất 8/10.
-- [ ] M3 đạt ít nhất 8/12.
-- [ ] M4 đã thử ít nhất 5/10.
-- [ ] Tôi luôn ghi điều kiện xác định.
-- [ ] Tôi luôn kiểm tra nghiệm sau khi bình phương.
-
----
-
-# Liên kết Roadmap
-
-- **← Bài học:** [Chuyên đề 11 – Căn thức](index.md)
-- **← Chuyên đề trước:** [10 – Hàm số và đồ thị](../10-ham-so-do-thi/index.md)
-- **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 11](tu-kiem-tra.md)
-- **→ Chuyên đề tiếp theo:** [12 – Phương trình bậc hai & Viète](../12-phuong-trinh-bac-hai-viete/index.md)
+## Liên kết Roadmap
+- **← Học:** [Chuyên đề 11](index.md)
+- **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
+- **→ Tiếp theo:** [12 – Phương trình bậc hai & Viète](../12-phuong-trinh-bac-hai-viete/index.md)

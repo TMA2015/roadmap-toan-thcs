@@ -1,0 +1,146 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "12-phuong-trinh-bac-hai-viete",
+  "title": "Phương trình bậc hai & Viète",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only Core cards contribute to readiness. Entrance10 and Challenge never gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "qua12-core-1",
+      "order": 1,
+      "title": "Nhận dạng & hệ số",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 6"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-dang-pt-bac-hai",
+        "he-so-abc"
+      ],
+      "prerequisites": [
+        "thu-gon-da-thuc"
+      ],
+      "micro_practice": [
+        "QUA12MICRO_001",
+        "QUA12MICRO_002",
+        "QUA12MICRO_003"
+      ]
+    },
+    {
+      "id": "qua12-core-2",
+      "order": 2,
+      "title": "Biệt thức & số nghiệm",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 6"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tinh-delta",
+        "so-nghiem-delta",
+        "delta-phay"
+      ],
+      "prerequisites": [
+        "he-so-abc"
+      ],
+      "micro_practice": [
+        "QUA12MICRO_004",
+        "QUA12MICRO_005",
+        "QUA12MICRO_006"
+      ]
+    },
+    {
+      "id": "qua12-core-3",
+      "order": 3,
+      "title": "Công thức nghiệm & giải",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 6"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "cong-thuc-nghiem",
+        "giai-pt-bac-hai"
+      ],
+      "prerequisites": [
+        "tinh-delta",
+        "can-bac-hai-so-hoc"
+      ],
+      "micro_practice": [
+        "QUA12MICRO_007",
+        "QUA12MICRO_008",
+        "QUA12MICRO_009"
+      ]
+    },
+    {
+      "id": "qua12-core-4",
+      "order": 4,
+      "title": "Nhẩm nghiệm có cấu trúc",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 6"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nham-nghiem"
+      ],
+      "prerequisites": [
+        "phan-tich-da-thuc"
+      ],
+      "micro_practice": [
+        "QUA12MICRO_010",
+        "QUA12MICRO_011",
+        "QUA12MICRO_012"
+      ]
+    },
+    {
+      "id": "qua12-core-5",
+      "order": 5,
+      "title": "Viète & lập phương trình",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 6"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tong-tich-nghiem",
+        "lap-pt-tu-nghiem"
+      ],
+      "prerequisites": [
+        "giai-pt-bac-hai"
+      ],
+      "micro_practice": [
+        "QUA12MICRO_013",
+        "QUA12MICRO_014",
+        "QUA12MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "qua12-ent10-1",
+      "layer": "Entrance10",
+      "title": "Biểu thức đối xứng theo nghiệm",
+      "gates_core": false
+    },
+    {
+      "id": "qua12-ent10-2",
+      "layer": "Entrance10",
+      "title": "Dấu nghiệm & liên hệ đồ thị",
+      "gates_core": false
+    },
+    {
+      "id": "qua12-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Tham số và điều kiện số nghiệm",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/12-phuong-trinh-bac-hai-viete-micro-v1.json",
+  "observed_signal_policy": {
+    "rule": "Signals are observations only; they never create causal remediation without sufficient learner evidence and a reviewed rule."
+  },
+  "qa_notes": [
+    "tham-so-so-nghiem is excluded from Grade 9 Core in the reviewed map.",
+    "bieu-thuc-doi-xung, dau-nghiem and lien-he-do-thi stay outside Core readiness pending item-level source review.",
+    "lap-pt-tu-nghiem is retained in Core per the reviewed Grade 9 correction."
+  ]
+}

@@ -50,6 +50,20 @@ const TOPICS={
    description:"Kết nối công thức, bảng giá trị, tọa độ, đường thẳng và parabol y=ax².",
    chips:["KNTT Core","Lớp 8–9","Đại số","⭐⭐⭐⭐⭐"],
    progressSkills:["khai-niem-ham-so","tinh-gia-tri-ham","bang-gia-tri","toa-do-diem","diem-thuoc-do-thi","nhan-biet-ham-bac-nhat","he-so-goc","tung-do-goc","dong-nghich-bien","ve-do-thi-ham-bac-nhat","ham-y-ax2","doi-xung-parabol","diem-thuoc-parabol"]
+ },
+ "11-can-thuc":{
+   number:"11",
+   data:"assets/data/curriculum/topic11-learning-workspace.json",
+   description:"Từ căn bậc hai, biến đổi căn thức đến căn bậc ba theo mạch KNTT lớp 9.",
+   chips:["KNTT Core","Lớp 9","Đại số","⭐⭐⭐⭐⭐"],
+   progressSkills:["can-bac-hai-so-hoc","dkxd-can","can-binh-phuong","khai-phuong-tich","khai-phuong-thuong","dua-thua-so-ra","dua-thua-so-vao","can-dong-dang","nhan-chia-can","truc-can-mau-don","truc-can-lien-hop","can-bac-ba"]
+ },
+ "12-phuong-trinh-bac-hai-viete":{
+   number:"12",
+   data:"assets/data/curriculum/topic12-learning-workspace.json",
+   description:"Phương trình bậc hai, biệt thức, công thức nghiệm và Viète theo KNTT lớp 9.",
+   chips:["KNTT Core","Lớp 9","Đại số","⭐⭐⭐⭐⭐"],
+   progressSkills:["nhan-dang-pt-bac-hai","he-so-abc","tinh-delta","so-nghiem-delta","cong-thuc-nghiem","delta-phay","giai-pt-bac-hai","nham-nghiem","tong-tich-nghiem","lap-pt-tu-nghiem"]
  }
 };
 
