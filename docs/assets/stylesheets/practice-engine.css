@@ -226,3 +226,12 @@
 .practice-help-steps li{margin:.3rem 0;white-space:pre-wrap}
 .practice-tutor-note{line-height:1.5}
 @media(max-width:38rem){.practice-tutor-choices{grid-template-columns:1fr}.practice-help-choice{min-height:2.25rem}}
+
+/* Written self-checks reveal solutions only after a deliberate learner action; MCQ readiness retains its own submission gate. */
+.written-self-check-solution{margin:1rem 0;border:1px solid var(--practice-border);border-radius:.65rem;background:var(--md-default-bg-color);overflow:hidden}
+.written-self-check-solution>summary{cursor:pointer;list-style:none;padding:.85rem 1rem;background:var(--practice-soft);color:var(--md-default-fg-color);font-weight:800;font-size:.9rem}
+.written-self-check-solution>summary::-webkit-details-marker{display:none}
+.written-self-check-solution>summary:focus-visible{outline:3px solid var(--md-accent-fg-color);outline-offset:-3px}
+.written-self-check-solution>.written-self-check-note{padding:.6rem 1rem;font-size:.76rem;line-height:1.55;margin:0;color:var(--md-default-fg-color--light)}
+.written-self-check-solution>h1,.written-self-check-solution>h2{padding:0 1rem}
+.written-self-check-solution>ol,.written-self-check-solution>ul,.written-self-check-solution>p{margin-left:1rem;margin-right:1rem}
