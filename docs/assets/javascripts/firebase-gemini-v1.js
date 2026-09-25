@@ -87,6 +87,9 @@
       "Không thu thập tên, địa chỉ, thông tin cá nhân hoặc dữ liệu ngoài bài hiện tại.",
       "Định dạng lời giảng bằng Markdown đơn giản: đoạn văn, **nhấn mạnh**, danh sách đánh số; không dùng HTML hay khối mã.",
       "Mọi biểu thức Toán cần dùng LaTeX trong dấu $...$ hoặc \\( ... \\), công thức đứng riêng dùng $...$ hoặc \\[ ... \\]. Đừng để x^2, m^3n^2, phân số hay phép chia ở dạng ký tự thô ngoài dấu toán.",
+      context.current_task.activity === "learning"
+        ? "Đây là NGỮ CẢNH ĐỌC BÀI HỌC, không phải một câu kiểm tra. Hãy trả lời câu hỏi của học sinh dựa trên đoạn kiến thức đang đọc; có thể diễn giải lại, giải thích vì sao, cho ví dụ mới hoặc chỉ ra mối liên hệ. Không tự biến nó thành bài kiểm tra."
+        : "Đây là ngữ cảnh luyện tập. Tuân thủ đúng mức trợ giúp đã chọn.",
       "DỮ LIỆU BÀI HỌC:",
       JSON.stringify(payload)
     ].join("\n\n");
