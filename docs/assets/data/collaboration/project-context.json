@@ -1,5 +1,5 @@
 {
-  "version": "1.0.48",
+  "version": "1.0.49",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -208,7 +208,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Await Gemini PROB23-LEARN-GEMINI-AUTHOR-001-RESULT: five grade-safe Core cards and 15 micro. Independently audit math/wording/schema, integrate, then separate readiness batch.",
+    "next_priority": "CĐ23 Golden Learn 5 cards/15 formative micro integrated; verify CI/owner display and proceed with separate 12-item Core Readiness source-locked batch, grade6–8 map and exact assessed skill IDs. Original bank 120 unchanged.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -267,10 +267,13 @@
         "Entrance10": 38
       },
       "layer_audit": "docs/assets/data/curriculum/topic23-layer-audit-v1.json",
-      "learning_cards": "AUTHOR_PACKET_READY",
+      "learning_cards": "INTEGRATED_DEPLOY_PENDING",
       "micro_count_target": 15,
       "readiness": "PENDING_SEPARATE_BATCH",
-      "grade9_mapping": "NO_PRIMARY_REF_CURRENT_OVERLAY"
+      "grade9_mapping": "NO_PRIMARY_REF_CURRENT_OVERLAY",
+      "learning_card_count": 5,
+      "micro_count": 15,
+      "learn_review": "PROB23-LEARN-CHATGPT-INTEGRATION-001"
     }
   },
   "handoff_required_fields": [
@@ -299,7 +302,7 @@
     "offline_relay_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/offline-relay/",
     "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
     "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
-    "next_public_task": "PROB23-LEARN-001",
+    "next_public_task": "PROB23-READY-001",
     "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/prob23-learn-gemini-author-001.json",
     "protocol_version": "2.0",
     "relay_v2": "All new author/reviewer batches MUST apply docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md: direct language, explicit units/population, never infer data or leave absent chart. Golden Template frozen."

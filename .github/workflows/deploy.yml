@@ -117,6 +117,12 @@ jobs:
       - name: Build source-locked CĐ23 Gemini Learn author bundle
         run: node scripts/build-prob23-learn-bundle.js docs/assets/data/collaboration/exports/prob23-learn-gemini-author-001.json
 
+      - name: Verify CĐ23 Learning Cards and micro-practice
+        run: |
+          node --check docs/assets/javascripts/topic-workspace-v1.js
+          node scripts/test-learning-card-micro-practice.js docs/assets/data/curriculum/topic23-learning-workspace.json docs/assets/data/practice/23-xac-suat-micro-v1.json
+          node scripts/test-prob23-learn-001.js
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 
