@@ -50,20 +50,17 @@ jobs:
           node scripts/test-knowledge-ui-v1.js
       - name: Build strict static site
         run: mkdocs build --strict
-      - name: Capture visual previews
+      - name: Browser interaction QA and visual previews
         run: |
+          python -m pip install playwright
           mkdir -p previews
           python -m http.server 8765 --directory site >/tmp/roadmap-preview.log 2>&1 &
           for i in {1..25}; do curl --fail --silent http://127.0.0.1:8765/ >/dev/null && break; sleep 0.2; done
-          CHROME="$(command -v google-chrome || command -v chromium)"
-          "$CHROME" --headless --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=3000 --window-size=1440,1000 --screenshot=previews/home-desktop.png http://127.0.0.1:8765/
-          "$CHROME" --headless --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=3000 --window-size=820,1080 --screenshot=previews/home-tablet.png http://127.0.0.1:8765/
-          "$CHROME" --headless --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=3000 --window-size=390,844 --screenshot=previews/home-phone.png http://127.0.0.1:8765/
-          test -s previews/home-desktop.png && test -s previews/home-tablet.png && test -s previews/home-phone.png
+          python scripts/capture-ui-previews.py
       - name: Upload visual preview screenshots
         uses: actions/upload-artifact@v4
         with:
-          name: roadmap-pr-100-homepage-desktop-tablet-phone
-          path: previews/home-*.png
+          name: roadmap-pr-100-interactive-ui-qa
+          path: previews/*.png
           if-no-files-found: error
 

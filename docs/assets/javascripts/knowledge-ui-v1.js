@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const normalize = (value) => String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").toLowerCase().trim();
+  const normalize = (value) => String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/đ/g, "d").trim();
   const setupLibrary = () => {
     const clusters = document.querySelector(".library-clusters");
     if (!clusters || clusters.dataset.libraryReady === "1") return;
@@ -53,7 +53,7 @@
     const headingRow = document.createElement("div");
     headingRow.className = "lesson-switcher-top";
     const back = document.createElement("a");
-    back.href = "../../";
+    back.href = root.replace(/[^/]+\\/$/, "");
     back.className = "lesson-switcher-back";
     back.textContent = "← Thư viện 25 chuyên đề";
     const topic = document.createElement("span");
