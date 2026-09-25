@@ -366,3 +366,14 @@ body{letter-spacing:-.008em}
   }
   .md-content__inner > .md-typeset{line-height:1.68}
 }
+
+/* Topic 25 is an academic-first capstone; strategy is a separate lane. */
+.topic25-entry-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem;margin:1rem 0 1.2rem}
+.topic25-entry-grid a{display:flex;flex-direction:column;gap:.33rem;min-width:0;padding:.85rem .85rem .95rem;border:1px solid var(--roadmap-line);border-radius:.7rem;background:var(--roadmap-surface);box-shadow:0 .35rem 1.15rem rgba(23,43,89,.04);color:var(--roadmap-ink)!important;text-decoration:none!important;transition:transform .15s,border-color .15s}
+.topic25-entry-grid a:hover{border-color:var(--roadmap-indigo);transform:translateY(-2px)}
+.topic25-entry-grid a span{font-size:.6rem;letter-spacing:.07em;font-weight:800;color:var(--roadmap-indigo)}
+.topic25-entry-grid a strong{font-size:.79rem;line-height:1.35}
+.topic25-entry-grid a small{font-size:.63rem;line-height:1.5;color:var(--roadmap-muted)}
+@media(max-width:65rem){.topic25-entry-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:34rem){.topic25-entry-grid{grid-template-columns:minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){.topic25-entry-grid a{transition:none}.topic25-entry-grid a:hover{transform:none}}
