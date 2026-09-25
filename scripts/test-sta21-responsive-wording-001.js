@@ -14,7 +14,7 @@ ok(q.id==="STA21MICRO_"+String(i+1).padStart(3,"0"),"ID "+i);
 ok(q.options.length===4&&new Set(q.options).size===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<=3,"MCQ shape "+q.id);
 ok(!/ĐÚNG NHẤT|đúng đắn và chính xác nhất|CHẮC CHẮN ĐÚNG|doanh số.{0,30}chiếc|bán máy tính trong 2 tháng.*tivi/i.test(body),"ambiguous wording "+q.id);
 ok(!/biểu đồ sau|hình bên dưới/i.test(q.question),"requires absent illustration "+q.id)}
-ok(items[2].options[1].includes("Hỏi từng cầu thủ")&&items[2].question.includes("đúng"),"collecting method item drift");
+ok(items[2].options[1].includes("Hỏi từng cầu thủ")&&items[2].question.includes("lúc 8 giờ sáng"),"collecting method item drift");
 ok(items[5].question.includes("số lượt")&&!items[5].question.includes("số học sinh giỏi cả hai"),"unique-vs-events ambiguity");
 ok(items[13].options[0].includes("10 chiếc tivi")&&items[13].answer===2,"count/revenue mismatch");
 ok(items[14].question.includes("40 học sinh")&&items[14].answer===0,"sample and answer mismatch");
