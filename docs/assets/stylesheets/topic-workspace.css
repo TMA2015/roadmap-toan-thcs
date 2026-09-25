@@ -54,16 +54,16 @@
 @container corejourney (min-width:34rem){
   .topic-core-card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
-@container corejourney (min-width:38rem){
+@container corejourney (min-width:32rem){
   .topic-core-card-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:.42rem}
-  .topic-core-card{padding:.52rem}
-  .topic-core-card h3{font-size:.74rem;min-height:3.7em}
+  .topic-core-card{padding:.46rem}
+  .topic-core-card h3{font-size:.72rem;min-height:3.35em;line-height:1.18}
   .topic-core-prereq-full{display:none}
   .topic-core-prereq-compact{display:block}
-  .topic-core-prereq{font-size:.56rem;min-height:1.45rem}
+  .topic-core-prereq{font-size:.55rem;min-height:1.25rem}
   .topic-core-card-meta{gap:.18rem}
-  .topic-core-card-meta span{font-size:.54rem;padding:.12rem .28rem}
-  .topic-micro-start{font-size:.64rem;min-height:44px}
+  .topic-core-card-meta span{font-size:.53rem;padding:.1rem .24rem}
+  .topic-micro-start{font-size:.62rem;min-height:40px;padding:.32rem .35rem}
 }
 @container corejourney (max-width:23.99rem){
   .topic-core-journey-head{align-items:flex-start;flex-direction:column}
@@ -92,3 +92,11 @@
 .topic-micro-options{gap:.5rem}
 .topic-micro-option{min-height:44px;min-width:0;overflow-wrap:anywhere}
 .topic-micro-option mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
+
+/* Compact five-card row refinement */
+@container corejourney (min-width:32rem){
+  .topic-core-card-grid{align-items:stretch}
+  .topic-core-card-main{grid-template-rows:auto auto auto auto auto}
+  .topic-core-card-top{min-height:1.65rem}
+  .topic-core-card-meta{margin-top:auto}
+}
