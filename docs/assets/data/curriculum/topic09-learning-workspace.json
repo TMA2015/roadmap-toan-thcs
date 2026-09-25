@@ -1,0 +1,140 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "09-he-phuong-trinh",
+  "title": "Hệ phương trình bậc nhất hai ẩn",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Grade 9 Core only; tham-so-he is Extension and never gates Core."
+  },
+  "cards": [
+    {
+      "id": "sys09-core-1",
+      "order": 1,
+      "title": "Phương trình hai ẩn & nghiệm hệ",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nghiem-pt-hai-an",
+        "nghiem-he",
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat",
+        "toa-do-diem"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_001",
+        "SYS09MICRO_002",
+        "SYS09MICRO_003"
+      ]
+    },
+    {
+      "id": "sys09-core-2",
+      "order": 2,
+      "title": "Giải hệ bằng phương pháp thế",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "giai-he-the"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_004",
+        "SYS09MICRO_005",
+        "SYS09MICRO_006"
+      ]
+    },
+    {
+      "id": "sys09-core-3",
+      "order": 3,
+      "title": "Cộng đại số & chọn phương pháp",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "giai-he-cong",
+        "chon-phuong-phap",
+        "bien-doi-truoc-giai",
+        "kiem-tra-nghiem-he"
+      ],
+      "prerequisites": [
+        "giai-he-the"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_007",
+        "SYS09MICRO_008",
+        "SYS09MICRO_009"
+      ]
+    },
+    {
+      "id": "sys09-core-4",
+      "order": 4,
+      "title": "Lập hệ từ bài toán về số",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "prerequisites": [
+        "giai-he-cong",
+        "giai-he-the"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_010",
+        "SYS09MICRO_011",
+        "SYS09MICRO_012"
+      ]
+    },
+    {
+      "id": "sys09-core-5",
+      "order": 5,
+      "title": "Bài toán chuyển động & năng suất",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "chuyen-dong-he",
+        "nang-suat-he"
+      ],
+      "prerequisites": [
+        "lap-he-bai-toan"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_013",
+        "SYS09MICRO_014",
+        "SYS09MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "sys09-ext-1",
+      "layer": "Entrance10",
+      "title": "Hệ có tham số",
+      "gates_core": false
+    },
+    {
+      "id": "sys09-ch-1",
+      "layer": "Specialized-Challenge",
+      "title": "Hệ và điều kiện phụ nâng cao",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/09-he-phuong-trinh-micro-v1.json",
+  "qa_notes": [
+    "tham-so-he is explicitly excluded from Grade 9 Core.",
+    "so-nghiem-he and y-nghia-hinh-hoc remain Core per reviewed Grade 9 correction."
+  ]
+}
