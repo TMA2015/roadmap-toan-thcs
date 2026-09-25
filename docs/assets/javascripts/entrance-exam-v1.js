@@ -162,6 +162,7 @@
         feedback.textContent = "Đang làm bài. Đáp án bị thu gọn cho tới khi nộp hoặc hết giờ.";
         if (remaining <= 0) { finish("time"); return; }
       }
+      if (isDone && interval) { clearInterval(interval); interval = null; }
       setRubric();
     };
     start.addEventListener("click", () => {
