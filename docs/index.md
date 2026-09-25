@@ -17,13 +17,91 @@ hide:
     </div>
     <div class="home-hero-note">Luyện tập có giải thích · Theo dõi tiến độ theo kỹ năng · Không khóa quyền học tiếp</div>
   </div>
-  <div class="home-hero-art" aria-label="Minh họa hành trình học từ số học, đại số, hình học đến vận dụng" role="img">
-    <div class="home-art-orbit home-art-orbit-one"></div><div class="home-art-orbit home-art-orbit-two"></div>
-    <div class="home-art-center"><span class="home-art-tiny">HÀNH TRÌNH</span><strong>25</strong><span>chuyên đề</span></div>
-    <div class="home-art-node home-art-node-a"><span>01</span><strong>Số học</strong><small>Khởi đầu</small></div>
-    <div class="home-art-node home-art-node-b"><span>02</span><strong>Đại số</strong><small>Phát triển</small></div>
-    <div class="home-art-node home-art-node-c"><span>03</span><strong>Hình học</strong><small>Trực quan</small></div>
-    <div class="home-art-node home-art-node-d"><span>04</span><strong>Vận dụng</strong><small>Kết nối</small></div>
+  <div class="study-scene" data-study-scene>
+    <div class="study-scene-heading"><span>GÓC HỌC TẬP</span><span class="study-scene-tag">Một chút phép màu ✦</span></div>
+    <button type="button" class="study-wake-button" data-study-wake aria-label="Đánh thức bạn nhỏ đang ngủ gật để bắt đầu học">
+      <svg class="study-illustration" viewBox="0 0 460 316" role="img" aria-labelledby="study-art-title study-art-description" xmlns="http://www.w3.org/2000/svg">
+        <title id="study-art-title">Bạn nhỏ đang ngủ gật trên bàn học</title>
+        <desc id="study-art-description">Chạm vào hình để bạn nhỏ tỉnh dậy, đèn học bật sáng và lớp học mở ra.</desc>
+        <defs>
+          <linearGradient id="study-room" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e1edff"/><stop offset="1" stop-color="#d7f1ed"/></linearGradient>
+          <linearGradient id="study-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#da9e67"/><stop offset="1" stop-color="#ac704b"/></linearGradient>
+          <radialGradient id="study-glow"><stop stop-color="#ffe7a0" stop-opacity=".9"/><stop offset="1" stop-color="#ffecaa" stop-opacity="0"/></radialGradient>
+        </defs>
+        <rect width="460" height="316" rx="24" fill="url(#study-room)"/>
+        <path d="M0 232Q110 211 214 230T460 221V316H0Z" fill="#c6dfd9" opacity=".55"/>
+        <rect x="276" y="37" width="145" height="91" rx="8" fill="#6d98b9" opacity=".21"/>
+        <rect x="283" y="44" width="131" height="77" rx="5" fill="#f7fbff"/>
+        <path d="M348 44v77M283 82h131" stroke="#bfd6e9" stroke-width="5"/>
+        <circle cx="386" cy="61" r="12" fill="#ffcf6f"/>
+        <path d="M299 109q17-19 36-1t39-4 40 7" fill="none" stroke="#a7d8cd" stroke-width="5"/>
+        <rect x="25" y="54" width="106" height="72" rx="8" fill="#fff" opacity=".8"/>
+        <path d="M42 70h72M42 85h51M42 100h64" stroke="#c9d8e8" stroke-width="5" stroke-linecap="round"/>
+        <g class="study-blackboard">
+          <rect x="153" y="30" width="115" height="66" rx="7" fill="#c18e5e"/>
+          <rect x="159" y="36" width="103" height="54" rx="4" fill="#346b71"/>
+          <text x="211" y="61" text-anchor="middle" fill="#f8e9bc" font-size="12" font-weight="750">TOÁN VUI</text>
+          <text x="211" y="78" text-anchor="middle" fill="#e0f5e6" font-size="14">x² + △ = ?</text>
+        </g>
+        <g class="study-lamp-glow"><ellipse cx="111" cy="177" rx="106" ry="91" fill="url(#study-glow)"/></g>
+        <g class="study-lamp" stroke="#526b9b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M67 212h72M103 211l-5-73 45-45" fill="none"/>
+          <circle cx="98" cy="138" r="7" fill="#f6f9ff" stroke-width="4"/>
+          <path d="M143 84q27 3 32 29l-50 15q-8-28 18-44Z" fill="#7189c9"/>
+          <path d="M126 128l48-14" stroke="#465b8d" stroke-width="3"/>
+        </g>
+        <g class="study-lamp-ray"><path d="M140 132l-31 70 94-3-37-73Z" fill="#ffe9a7" opacity=".39"/></g>
+        <g class="study-books">
+          <rect x="332" y="192" width="83" height="13" rx="4" fill="#6f7fc0"/>
+          <rect x="336" y="179" width="72" height="13" rx="4" fill="#e3a47d"/>
+          <rect x="344" y="166" width="62" height="13" rx="4" fill="#84bdb1"/>
+        </g>
+        <g class="study-kid">
+          <path class="study-kid-body" d="M170 210q3-46 42-54h37q39 9 43 54Z" fill="#6591d5"/>
+          <path d="M210 162l18 24 19-24" fill="#f8dba8"/>
+          <path d="M210 158v15q18 18 37 0v-15" fill="#f4b98b"/>
+          <path class="study-kid-arm study-kid-arm-left" d="M189 194q-16 4-25 22l-17 10q-4 7 3 10h42l25-28" fill="#f5bd91"/>
+          <path class="study-kid-arm study-kid-arm-right" d="M269 194q17 4 25 22l15 9q6 8-3 11h-41l-25-28" fill="#f5bd91"/>
+          <g class="study-kid-head">
+            <circle cx="180" cy="139" r="10" fill="#ecab83"/><circle cx="277" cy="139" r="10" fill="#ecab83"/>
+            <ellipse cx="229" cy="135" rx="49" ry="53" fill="#f7c397"/>
+            <path d="M179 137q-7-40 24-54 18-22 49-7 32 2 28 55l-13-22q-8 3-17-15-24 23-63 24Z" fill="#37365f"/>
+            <path d="M197 89q-7-13-16-8M251 82q20-9 24 8" stroke="#37365f" stroke-width="12" stroke-linecap="round" fill="none"/>
+            <circle cx="194" cy="149" r="6" fill="#efa38e" opacity=".65"/><circle cx="264" cy="149" r="6" fill="#efa38e" opacity=".65"/>
+            <g class="study-sleep-face" stroke="#49394d" stroke-width="2.8" stroke-linecap="round" fill="none">
+              <path d="M203 132q8 8 17 0M238 132q8 8 17 0"/>
+              <path d="M224 153q6 4 12 0"/>
+            </g>
+            <g class="study-awake-face">
+              <ellipse cx="211" cy="133" rx="6" ry="8" fill="#37365f"/><ellipse cx="247" cy="133" rx="6" ry="8" fill="#37365f"/>
+              <circle cx="213" cy="130" r="2" fill="#fff"/><circle cx="249" cy="130" r="2" fill="#fff"/>
+              <path d="M222 151q8 10 17 0" stroke="#a65559" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+            </g>
+          </g>
+        </g>
+        <g class="study-notebook">
+          <path d="M171 229q32-10 58 1 27-11 60-1v38q-30-8-60 2-28-10-58-2Z" fill="#fffdf4" stroke="#8e9bc0" stroke-width="2.5"/>
+          <path d="M230 231v37" stroke="#b0b5d2" stroke-width="2"/>
+          <path d="M182 240h35M182 248h35M242 240h34M242 248h34" stroke="#cbd7e8" stroke-width="2" stroke-linecap="round"/>
+        </g>
+        <g class="study-desk-group">
+          <rect x="62" y="214" width="336" height="16" rx="6" fill="url(#study-desk)"/>
+          <path d="M76 229h15l-6 67H71ZM370 229h15l5 67h-14Z" fill="#aa7658"/>
+          <path d="M66 215h326" stroke="#f3c08b" stroke-width="4" stroke-linecap="round"/>
+        </g>
+        <g class="study-pencil"><path d="M306 239l27-15 4 6-27 15-8 2Z" fill="#efbd53"/><path d="M306 239l-4 8 8-2Z" fill="#594a68"/></g>
+        <g class="study-zzz" fill="#6475b0" font-family="sans-serif" font-weight="850"><text x="304" y="133" font-size="24">Z</text><text x="326" y="114" font-size="17">z</text><text x="344" y="98" font-size="12">z</text></g>
+        <g class="study-sparkles" fill="#efad55"><path d="M305 102l5 12 12 4-12 5-5 12-5-12-12-5 12-4Z"/><path d="M167 68l3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/></g>
+      </svg>
+      <span class="study-wake-caption"><span class="study-wake-caption-sleep">Suỵt… bạn ấy ngủ gật rồi! <strong>Chạm để đánh thức ✨</strong></span><span class="study-wake-caption-awake">Bạn ấy tỉnh rồi! Cùng bắt đầu học nào ✨</span></span>
+    </button>
+    <div class="study-scene-gateway" data-study-gateway hidden>
+      <div class="study-gateway-heading" data-study-status role="status" aria-live="polite">Chào mừng vào lớp học!</div>
+      <div class="study-gateway-links">
+        <a href="kien-thuc/">📘 Vào học</a><a href="roadmap/">🧭 Xem Roadmap</a><a href="kien-thuc/23-xac-suat/bai-tap/">✏️ Luyện tập</a>
+      </div>
+    </div>
+    <div class="study-scene-hint">Không thích hoạt hình? Dùng nút <strong>Khám phá 25 chuyên đề</strong> để vào thẳng.</div>
   </div>
 </section>
 

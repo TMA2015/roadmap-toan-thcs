@@ -28,6 +28,10 @@ jobs:
           node scripts/test-prob23-learn-001.js
           node scripts/test-prob23-layer-001.js
           node scripts/test-learning-card-micro-practice.js docs/assets/data/curriculum/topic23-learning-workspace.json docs/assets/data/practice/23-xac-suat-micro-v1.json
+      - name: Validate study scene interaction
+        run: |
+          node --check docs/assets/javascripts/study-scene-v1.js
+          node scripts/test-study-scene-v1.js
       - name: Validate existing learner workflows
         run: |
           node scripts/test-sta21-ready-001.js
