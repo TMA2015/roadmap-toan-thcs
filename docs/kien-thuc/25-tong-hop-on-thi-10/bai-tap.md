@@ -1,3 +1,4 @@
+<!-- roadmap-academic-capstone-v2 -->
 # Bài tập học thuật – Chuyên đề 25: Tổng hợp & ôn thi vào 10
 
 > **Mục tiêu:** luyện trực tiếp năng lực Toán ở các mạch lớn. Kỹ năng quản lý thời gian, chữa đề và sổ lỗi được tách sang [Tự đánh giá kỹ năng làm bài](tu-danh-gia-ky-nang-thi.md).
