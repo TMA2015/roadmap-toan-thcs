@@ -715,7 +715,8 @@
       title.textContent = "🤖 Gemini · " + (window.RoadmapGemini?.model() || "AI Tutor");
       const message = document.createElement("div");
       message.className = "practice-gemini-message";
-      message.textContent = response.message;
+      if (window.RoadmapRichMath?.render) window.RoadmapRichMath.render(response.message, message);
+      else message.textContent = response.message;
       const caution = document.createElement("p");
       caution.className = "practice-tutor-note";
       caution.textContent = "Nội dung do AI tạo có thể sai. Hãy so sánh với bài giảng/lời giải đã biên soạn; nếu chưa hiểu, hỏi tiếp bước cụ thể.";
