@@ -438,3 +438,14 @@ Pilot CĐ07 chuẩn hóa mỗi Core card thành 3 câu:
 - Core application.
 
 Micro-practice ghi vào cùng evidence store với Practice Engine. Kết quả 3 câu không phải hard gate và Extension/Challenge không được tính vào hoàn thành KNTT Core.
+
+Mỗi micro-question nên có **một assessed skill chính** trong `tags.skill`. Nếu câu cần kiến thức nền khác để giải, khai báo riêng:
+
+```json
+{
+  "tags": { "skill": ["cong-tru-phan-thuc"] },
+  "supporting_skills": ["bo-ngoac-dau"]
+}
+```
+
+`supporting_skills` không được tự động cộng attempted/correct. Nếu distractor cho thấy lỗi bỏ ngoặc, hãy ghi observed signal; chỉ learner evidence độc lập của `bo-ngoac-dau` mới được dùng để gọi skill đó yếu.
