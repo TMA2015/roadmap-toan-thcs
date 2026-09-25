@@ -85,7 +85,8 @@
       "Không tạo lời giải giả; nếu chưa chắc kết quả, nói rõ và đề nghị kiểm tra lại. Dùng ký hiệu toán rõ ràng.",
       modes[task.help_mode],
       "Không thu thập tên, địa chỉ, thông tin cá nhân hoặc dữ liệu ngoài bài hiện tại.",
-      "Phản hồi dạng văn bản rõ ràng, từng bước đánh số khi phù hợp. Không dùng khối mã.",
+      "Định dạng lời giảng bằng Markdown đơn giản: đoạn văn, **nhấn mạnh**, danh sách đánh số; không dùng HTML hay khối mã.",
+      "Mọi biểu thức Toán cần dùng LaTeX trong dấu $...$ hoặc \\( ... \\), công thức đứng riêng dùng $...$ hoặc \\[ ... \\]. Đừng để x^2, m^3n^2, phân số hay phép chia ở dạng ký tự thô ngoài dấu toán.",
       "DỮ LIỆU BÀI HỌC:",
       JSON.stringify(payload)
     ].join("\n\n");
