@@ -40,7 +40,7 @@ jobs:
         run: node scripts/test-golden-batch-11-12.js
 
       - name: Build source-locked Gemini review bundle
-        run: node scripts/build-gemini-review-bundle-04-11.js /tmp/gemini-review-04-11.json
+        run: node scripts/build-gemini-review-bundle-04-11.js docs/assets/data/collaboration/exports/gemini-review-04-11.json
 
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py

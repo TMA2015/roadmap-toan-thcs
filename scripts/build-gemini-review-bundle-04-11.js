@@ -79,6 +79,7 @@ if (missing.length) {
   process.exit(1);
 }
 
+fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });
 fs.writeFileSync(OUTPUT, JSON.stringify(bundle, null, 2) + "\n", "utf8");
 console.log(`Wrote ${OUTPUT}`);
 console.log(`Topics: ${bundle.topics.length}; embedded sources: ${bundle.topics.reduce((n,t)=>n+t.sources.length,0)}`);
