@@ -1,119 +1,194 @@
-# Bài tập – Chuyên đề 05: 7 Hằng đẳng thức đáng nhớ
+# Practice Room – Chuyên đề 05: 7 Hằng đẳng thức đáng nhớ
 
-<link rel="stylesheet" href="../../../assets/stylesheets/practice-engine.css">
-<script src="../../../assets/javascripts/practice-engine-v2.js" defer></script>
+> **Mục tiêu:** nhận dạng đúng cấu trúc, biến đổi theo hai chiều và vận dụng hằng đẳng thức mà không nhầm dấu/hệ số.
+>
+> **Core mặc định:** Entrance10 / Challenge tách riêng và không ảnh hưởng Core readiness.
 
-> **Mục tiêu:** nhận dạng, khai triển, rút gọn và vận dụng hằng đẳng thức.
-> **Quy ước:** `05-Mx-yy`.
+## B. ✍️ Luyện tự luận & trình bày
 
-## 🎯 Luyện tập tương tác
+### Core KNTT
 
-Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng **120 câu**. Ngân hàng được tổ chức theo mini-roadmap kỹ năng: **Nhóm bình phương → Nhóm lập phương → Nhận dạng hai chiều → Vận dụng hằng đẳng thức**.
+#### 05-WR-01 · Bình phương một tổng
 
-Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ có lời giải ngắn và nút **Làm câu tương tự**. Bảng tiến độ hiển thị kỹ năng theo trình tự học cố định; có thể bấm trực tiếp một kỹ năng để luyện riêng hoặc dùng **Luyện điểm yếu** để ưu tiên tối đa hai kỹ năng yếu nhất.
-
-<div data-practice-bank-v2="../../../assets/data/practice/05-7-hang-dang-thuc-v1.manifest.json" data-session-size="10"></div>
-
-> **Lưu ý:** tiến độ hiện được lưu bằng `localStorage`, vì vậy dữ liệu chưa tự đồng bộ giữa các thiết bị hoặc trình duyệt khác nhau.
-
----
-
-## Bài tập tự luận bổ sung
-
-Các bài dưới đây được chọn lọc để luyện nhận dạng công thức theo cả hai chiều, trình bày biến đổi và chọn hằng đẳng thức phù hợp.
-
-# Mức 1 – Nhận biết
-### 05-M1-01
 Khai triển \((x+3)^2\).
-### 05-M1-02
+
+??? tip "Gợi ý"
+    Dùng \(a^2+2ab+b^2\).
+
+??? example "Xem lời giải"
+    \[
+    (x+3)^2=x^2+6x+9.
+    \]
+
+#### 05-WR-02 · Bình phương một hiệu
+
 Khai triển \((2x-5)^2\).
-### 05-M1-03
-Viết \(x^2-16\) thành tích.
 
-# Mức 2 – Thông hiểu
-### 05-M2-01
-Rút gọn \((x+2)^2-(x-2)^2\).
-### 05-M2-02
-Viết \(x^2+6x+9\) dưới dạng bình phương.
-### 05-M2-03
-Khai triển \((x+1)^3\).
+??? tip "Gợi ý"
+    Chú ý bình phương hệ số 2 và dấu âm ở hạng tử giữa.
 
-# Mức 3 – Vận dụng
-### 05-M3-01
+??? example "Xem lời giải"
+    \[
+    (2x-5)^2=4x^2-20x+25.
+    \]
+
+#### 05-WR-03 · Bình phương hoàn chỉnh
+
+Viết \(x^2+8x+16\) dưới dạng bình phương.
+
+??? tip "Gợi ý"
+    \(16=4^2\) và \(8x=2\cdot x\cdot4\).
+
+??? example "Xem lời giải"
+    \[
+    x^2+8x+16=(x+4)^2.
+    \]
+
+#### 05-WR-04 · Hiệu hai bình phương
+
+Phân tích \(25x^2-9y^2\) thành tích.
+
+??? tip "Gợi ý"
+    \(25x^2=(5x)^2\), \(9y^2=(3y)^2\).
+
+??? example "Xem lời giải"
+    \[
+    25x^2-9y^2=(5x-3y)(5x+3y).
+    \]
+
+#### 05-WR-05 · Lập phương một tổng
+
+Khai triển \((x+2)^3\).
+
+??? tip "Gợi ý"
+    Dùng bốn hạng tử của công thức lập phương một tổng.
+
+??? example "Xem lời giải"
+    \[
+    (x+2)^3=x^3+6x^2+12x+8.
+    \]
+
+#### 05-WR-06 · Lập phương một hiệu
+
+Khai triển \((x-3)^3\).
+
+??? tip "Gợi ý"
+    Dấu lần lượt là \(+,-,+,-\).
+
+??? example "Xem lời giải"
+    \[
+    (x-3)^3=x^3-9x^2+27x-27.
+    \]
+
+#### 05-WR-07 · Tổng hai lập phương
+
+Phân tích \(x^3+64\).
+
+??? tip "Gợi ý"
+    \(64=4^3\).
+
+??? example "Xem lời giải"
+    \[
+    x^3+64=(x+4)(x^2-4x+16).
+    \]
+
+#### 05-WR-08 · Hiệu hai lập phương
+
+Phân tích \(8x^3-27\).
+
+??? tip "Gợi ý"
+    \(8x^3=(2x)^3\), \(27=3^3\).
+
+??? example "Xem lời giải"
+    \[
+    8x^3-27=(2x-3)(4x^2+6x+9).
+    \]
+
+#### 05-WR-09 · Tính nhanh
+
 Tính nhanh \(101^2\).
-### 05-M3-02
-Rút gọn \((2x+1)^2-(4x^2+1)\).
-### 05-M3-03
-Chứng minh \((a+b)^2+(a-b)^2=2(a^2+b^2)\).
 
-# Mức 4 – Tổng hợp
-### 05-M4-01
-Tìm \(x\): \((x+1)^2-(x-1)^2=20\).
-### 05-M4-02
-Phân tích \(x^3-8\) thành nhân tử rồi tính tại \(x=3\).
-### 05-M4-03
-Chứng minh \((x+y)^3+(x-y)^3=2x(x^2+3y^2)\).
+??? tip "Gợi ý"
+    Viết \(101=100+1\).
 
-# Đáp án nhanh
-- 05-M1-01: \(x^2+6x+9\); 05-M1-02: \(4x^2-20x+25\); 05-M1-03: \((x-4)(x+4)\).
-- 05-M2-01: \(8x\); 05-M2-02: \((x+3)^2\); 05-M2-03: \(x^3+3x^2+3x+1\).
-- 05-M3-01: 10201; 05-M3-02: \(4x\); 05-M3-03: khai triển hai vế.
-- 05-M4-01: \(x=5\); 05-M4-02: \((x-2)(x^2+2x+4)\), tại 3 bằng 19; 05-M4-03: khai triển và thu gọn.
+??? example "Xem lời giải"
+    \[
+    101^2=10000+200+1=10201.
+    \]
+
+#### 05-WR-10 · Rút gọn bằng cấu trúc
+
+Rút gọn \((x+3)^2-(x-3)^2\).
+
+??? tip "Gợi ý"
+    Xem hai bình phương như \(A^2-B^2\).
+
+??? example "Xem lời giải"
+    \[
+    [(x+3)-(x-3)]\,[(x+3)+(x-3)]=6\cdot2x=12x.
+    \]
+
+### Entrance10 / Extension
+
+#### 05-ENT-01 · Biểu thức không phụ thuộc biến
+
+Chứng minh
+\[
+A=(x-1)^3-(x+1)^3+6(x-1)(x+1)
+\]
+không phụ thuộc vào \(x\).
+
+??? tip "Gợi ý"
+    Khai triển ba hằng đẳng thức rồi thu gọn.
+
+??? example "Xem lời giải"
+    \[
+    (x-1)^3-(x+1)^3=-6x^2-2,
+    \]
+    \[
+    6(x-1)(x+1)=6x^2-6.
+    \]
+    Do đó \(A=-8\).
+
+#### 05-ENT-02 · Dùng dữ kiện tổng và tích
+
+Cho \(x+y=10\), \(xy=21\). Tính \(x^2+y^2\).
+
+??? tip "Gợi ý"
+    Dùng \((x+y)^2=x^2+2xy+y^2\).
+
+??? example "Xem lời giải"
+    \[
+    x^2+y^2=10^2-2\cdot21=58.
+    \]
+
+### Challenge
+
+#### 05-CH-01 · Đẳng thức ba biến
+
+Biết \(a+b+c=0\). Chứng minh \(a^3+b^3+c^3=3abc\).
+
+??? tip "Gợi ý"
+    Thay \(c=-(a+b)\) rồi khai triển.
+
+??? example "Xem lời giải"
+    \[
+    a^3+b^3-(a+b)^3=-3ab(a+b)=3abc
+    \]
+    vì \(c=-(a+b)\).
 
 ---
 
-# Hướng dẫn chọn lọc
+## Theo dõi sau khi luyện
 
-## 05-M3-01 – Tính nhanh bằng bình phương một tổng
+- [ ] Tôi viết đúng 7 HĐT và nhận dạng được theo hai chiều.
+- [ ] Tôi đã làm một lượt Practice Engine không dùng hint.
+- [ ] Tôi đã tự giải ít nhất 3 bài Core trước khi mở lời giải.
+- [ ] Tôi biết mình thường nhầm ở dấu hay hệ số nào.
+- [ ] Khi tương đối chắc, tôi chuyển sang [✅ Core Readiness Check](tu-kiem-tra.md).
 
-\[
-101^2=(100+1)^2=100^2+2\cdot100\cdot1+1=10201.
-\]
+## Liên kết Roadmap
 
-**Điểm cần nhớ:** trước khi nhân dài, hãy xem số có gần một mốc tròn như 10, 100, 1000 hay không.
-
-## 05-M4-01 – Nhận ra hiệu hai bình phương
-
-Có thể khai triển, nhưng nhanh hơn là dùng:
-
-\[
-A^2-B^2=(A-B)(A+B).
-\]
-
-Với \(A=x+1\), \(B=x-1\):
-
-\[
-(x+1)^2-(x-1)^2=2\cdot2x=4x.
-\]
-
-Do đó \(4x=20\Rightarrow x=5\).
-
-## 05-M4-02 – Dùng hằng đẳng thức theo chiều phân tích
-
-\[
-x^3-8=x^3-2^3=(x-2)(x^2+2x+4).
-\]
-
-Tại \(x=3\), giá trị bằng \(1\cdot19=19\).
-
-**Điểm cần nhớ:** phải sử dụng hằng đẳng thức theo cả chiều **khai triển** và **phân tích thành nhân tử**.
-
----
-
-# Theo dõi tiến độ
-
-- [ ] Tôi nhớ đúng 7 hằng đẳng thức và dấu của từng công thức.
-- [ ] Tôi nhận dạng được công thức theo chiều thuận và chiều ngược.
-- [ ] Tôi biết khi nào dùng hằng đẳng thức để tính nhanh.
-- [ ] Tôi trình bày được bài chứng minh bằng khai triển và thu gọn.
-- [ ] Tôi đã làm lại các bài sai mà không nhìn đáp án.
-- [ ] Tôi biết mình thường nhầm ở hệ số giữa, dấu hay nhận dạng cấu trúc.
-
----
-
-# Liên kết Roadmap
-
-- **← Học kiến thức:** [Chuyên đề 05 – 7 Hằng đẳng thức đáng nhớ](index.md)
-- **← Chuyên đề trước:** [04 – Biểu thức và biến đổi đại số](../04-bieu-thuc-dai-so/index.md)
-- **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 05](tu-kiem-tra.md)
-- **→ Chuyên đề tiếp theo:** [06 – Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/index.md)
+- **← Học:** [Chuyên đề 05](index.md)
+- **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
+- **→ Tiếp theo:** [06 – Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/index.md)

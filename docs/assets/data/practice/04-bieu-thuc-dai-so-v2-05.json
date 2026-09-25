@@ -1,0 +1,299 @@
+{
+  "version": 2,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "ALG04-V2-05",
+  "topic": {
+    "id": "04-bieu-thuc-dai-so",
+    "title": "Biểu thức đại số"
+  },
+  "questions": [
+    {
+      "id": "ALG04V2_121",
+      "question": "Thực hiện \\((6x^3-3x^2):3x\\), với \\(x\\ne0\\).",
+      "options": [
+        "\\(2x^2-x\\)",
+        "\\(2x^2-1\\)",
+        "\\(3x^2-x\\)",
+        "\\(2x-x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc"
+      },
+      "difficulty": "basic",
+      "explanation": "Chia từng hạng tử cho 3x: 6x^3:3x=2x^2 và -3x^2:3x=-x.",
+      "hints": [
+        "Chia từng hạng tử của đa thức cho đơn thức.",
+        "Chia hệ số rồi trừ số mũ của các biến cùng cơ số."
+      ]
+    },
+    {
+      "id": "ALG04V2_122",
+      "question": "Thực hiện \\((8x^2+4x):4x\\), với \\(x\\ne0\\).",
+      "options": [
+        "\\(2x+1\\)",
+        "\\(2x+4\\)",
+        "\\(4x+1\\)",
+        "\\(2x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc"
+      },
+      "difficulty": "basic",
+      "explanation": "8x^2:4x=2x và 4x:4x=1.",
+      "hints": [
+        "Chia từng hạng tử của đa thức cho đơn thức.",
+        "Chia hệ số rồi trừ số mũ của các biến cùng cơ số."
+      ]
+    },
+    {
+      "id": "ALG04V2_123",
+      "question": "Thực hiện \\((12x^3y-6x^2y^2+3xy):(3xy)\\).",
+      "options": [
+        "\\(4x^2-2xy+1\\)",
+        "\\(4x^2-2xy\\)",
+        "\\(4x^2+2xy+1\\)",
+        "\\(4x-2y+1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Chia đủ ba hạng tử cho 3xy; hạng tử cuối cho 1.",
+      "hints": [
+        "Chia từng hạng tử của đa thức cho đơn thức.",
+        "Chia hệ số rồi trừ số mũ của các biến cùng cơ số."
+      ]
+    },
+    {
+      "id": "ALG04V2_124",
+      "question": "Thực hiện \\((-6x^3+9x^2):(-3x^2)\\), với \\(x\\ne0\\).",
+      "options": [
+        "\\(2x-3\\)",
+        "\\(-2x+3\\)",
+        "\\(2x+3\\)",
+        "\\(-2x-3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Âm chia âm cho dương: -6x^3:-3x^2=2x; 9x^2:-3x^2=-3.",
+      "hints": [
+        "Chia từng hạng tử của đa thức cho đơn thức.",
+        "Chia hệ số rồi trừ số mũ của các biến cùng cơ số."
+      ]
+    },
+    {
+      "id": "ALG04V2_125",
+      "question": "Thực hiện \\((15a^2b-10ab^2):(5ab)\\).",
+      "options": [
+        "\\(3a-2b\\)",
+        "\\(3a+2b\\)",
+        "\\(5a-5b\\)",
+        "\\(3a^2-2b^2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc"
+      },
+      "difficulty": "basic",
+      "explanation": "15a^2b:5ab=3a và -10ab^2:5ab=-2b.",
+      "hints": [
+        "Chia từng hạng tử của đa thức cho đơn thức.",
+        "Chia hệ số rồi trừ số mũ của các biến cùng cơ số."
+      ]
+    },
+    {
+      "id": "ALG04V2_126",
+      "question": "Thực hiện \\((x^3+x^2):x^2\\), với \\(x\\ne0\\).",
+      "options": [
+        "\\(x+1\\)",
+        "\\(x^2+1\\)",
+        "\\(x\\)",
+        "\\(2x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc"
+      },
+      "difficulty": "basic",
+      "explanation": "x^3:x^2=x và x^2:x^2=1.",
+      "hints": [
+        "Chia từng hạng tử của đa thức cho đơn thức.",
+        "Chia hệ số rồi trừ số mũ của các biến cùng cơ số."
+      ]
+    },
+    {
+      "id": "ALG04V2_127",
+      "question": "Thực hiện \\((4x^4-8x^2):(4x^2)\\), với \\(x\\ne0\\).",
+      "options": [
+        "\\(x^2-2\\)",
+        "\\(x^2-8\\)",
+        "\\(x^2-2x\\)",
+        "\\(x-2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc"
+      },
+      "difficulty": "basic",
+      "explanation": "4x^4:4x^2=x^2 và -8x^2:4x^2=-2.",
+      "hints": [
+        "Chia từng hạng tử của đa thức cho đơn thức.",
+        "Chia hệ số rồi trừ số mũ của các biến cùng cơ số."
+      ]
+    },
+    {
+      "id": "ALG04V2_128",
+      "question": "Thực hiện \\((9m^3n^2+3m^2n):(3m^2n)\\).",
+      "options": [
+        "\\(3mn+1\\)",
+        "\\(3mn+n\\)",
+        "\\(3m+1\\)",
+        "\\(9mn+1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc"
+      },
+      "difficulty": "intermediate",
+      "explanation": "9m^3n^2:3m^2n=3mn; 3m^2n:3m^2n=1.",
+      "hints": [
+        "Chia từng hạng tử của đa thức cho đơn thức.",
+        "Chia hệ số rồi trừ số mũ của các biến cùng cơ số."
+      ]
+    },
+    {
+      "id": "ALG04V2_129",
+      "question": "Thực hiện \\((2x^2y+4xy^2):(2xy)\\).",
+      "options": [
+        "\\(x+2y\\)",
+        "\\(x+4y\\)",
+        "\\(2x+2y\\)",
+        "\\(x^2+2y^2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc"
+      },
+      "difficulty": "basic",
+      "explanation": "2x^2y:2xy=x và 4xy^2:2xy=2y.",
+      "hints": [
+        "Chia từng hạng tử của đa thức cho đơn thức.",
+        "Chia hệ số rồi trừ số mũ của các biến cùng cơ số."
+      ]
+    },
+    {
+      "id": "ALG04V2_130",
+      "question": "Thực hiện \\((a^3b^2-a^2b^3):(a^2b^2)\\).",
+      "options": [
+        "\\(a-b\\)",
+        "\\(a+b\\)",
+        "\\(ab\\)",
+        "\\(a^2-b^2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc"
+      },
+      "difficulty": "intermediate",
+      "explanation": "a^3b^2:a^2b^2=a; a^2b^3:a^2b^2=b.",
+      "hints": [
+        "Chia từng hạng tử của đa thức cho đơn thức.",
+        "Chia hệ số rồi trừ số mũ của các biến cùng cơ số."
+      ]
+    },
+    {
+      "id": "ALG04V2_131",
+      "question": "Thực hiện \\((6x^3-12x^2+18x):(6x)\\), với \\(x\\ne0\\).",
+      "options": [
+        "\\(x^2-2x+3\\)",
+        "\\(x^2-2x\\)",
+        "\\(x^2+2x+3\\)",
+        "\\(6x^2-12x+18\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Chia từng hạng tử cho 6x được x^2, -2x và 3.",
+      "hints": [
+        "Chia từng hạng tử của đa thức cho đơn thức.",
+        "Chia hệ số rồi trừ số mũ của các biến cùng cơ số."
+      ]
+    },
+    {
+      "id": "ALG04V2_132",
+      "question": "Thực hiện \\((x^3-4x):x\\), với \\(x\\ne0\\).",
+      "options": [
+        "\\(x^2-4\\)",
+        "\\(x^2-4x\\)",
+        "\\(x^2-4/x\\)",
+        "\\(x-4\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc"
+      },
+      "difficulty": "intermediate",
+      "explanation": "x^3:x=x^2 và -4x:x=-4.",
+      "hints": [
+        "Chia từng hạng tử của đa thức cho đơn thức.",
+        "Chia hệ số rồi trừ số mũ của các biến cùng cơ số."
+      ]
+    }
+  ]
+}

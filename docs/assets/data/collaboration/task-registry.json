@@ -231,10 +231,10 @@
       "id": "ALG-BATCH-04-06-001",
       "title": "Golden Template batch production CĐ04–CĐ06",
       "routing": "GEMINI_AUTHOR_REVIEW+CHATGPT_INTEGRATE_QA",
-      "status": "BLOCKED-ACADEMIC",
-      "context_version": "1.0.23",
-      "review_verdict": "REVISION-2-BLOCKED",
-      "review_notes": "Gemini revision 2 is still not production-ready: CĐ06 still includes tach-hang-tu-giua and factorization-equation solving in Core; CĐ05 still includes equation solving via HĐT; Practice Room/Readiness sections are templates not complete topic deliverables; integer_input is unsupported in assessment v1; MORE_EVIDENCE_NEEDED semantics and KG IDs conflict with frozen architecture; several MCQs are ambiguous/duplicate-correct. Final correction packet requested."
+      "status": "READY",
+      "context_version": "1.0.24",
+      "review_verdict": "INTEGRATION-QA-READY",
+      "review_notes": "ChatGPT completed the full batch from source-of-truth after Gemini revision 2 remained blocked. 45 micro items + 30 Readiness MCQs + 30 Core written exercises integrated; CĐ04 division skill gets 12 real Practice Bank items; CĐ05/CĐ06 forbidden Core skills excluded. CI/deploy still pending."
     },
     {
       "id": "C07-GOLDEN-HARDENING-001",

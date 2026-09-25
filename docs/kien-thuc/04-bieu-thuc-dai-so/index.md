@@ -375,48 +375,37 @@ Với bài có nhiều biến đổi, nên thu gọn trước rồi mới thay g
 
 ---
 
-## 📝 8. Luyện tập
+## 📝 8. Luyện tập tiếp theo
 
-### Mức 1 – Nhận biết
+Micro-practice trong các Learning Cards dùng để kiểm tra nhanh ngay sau khi học. Khi muốn luyện sâu hơn, luyện từng skill hoặc làm bài tự luận, hãy chuyển sang **Practice Room**.
 
-1. Xác định hệ số và bậc của `-4x³y²`.
-2. Thu gọn `3x + 5x - 2x`.
-3. Xác định các hạng tử đồng dạng trong `2x² + 3x - 5x² + 7`.
+[🎯 Mở Practice Room – Chuyên đề 04](bai-tap.md){ .md-button .md-button--primary }
 
-### Mức 2 – Thông hiểu
+Trong Practice Room:
 
-1. Thu gọn `(3x² - 2x + 1) - (x² + 4x - 3)`.
-2. Thực hiện `(2x - 3)(x + 5)`.
-3. Tính giá trị của `P = 2x² - 3x + 1` tại `x = -2`.
+- **Luyện nhanh tương tác:** Practice Engine chọn câu từ ngân hàng lớn, có feedback, gợi ý và Tutor.
+- **Luyện tự luận & trình bày:** tự giải trên giấy/vở rồi mở gợi ý hoặc lời giải để tự đối chiếu.
+- Core / Entrance10 / Challenge được tách rõ.
 
-### Mức 3 – Vận dụng
-
-1. Rút gọn biểu thức có nhiều ngoặc rồi tính giá trị tại một giá trị cho trước.
-2. Tìm tham số để một hệ số của đa thức bằng 0.
-3. Biến đổi biểu thức về dạng thuận lợi để giải phương trình.
-
-### Mức 4 – Vận dụng cao
-
-1. Tìm tham số để biểu thức có tính chất cho trước với mọi `x`.
-2. Nhận dạng cấu trúc và lựa chọn biến đổi phù hợp trước khi thực hiện phép tính.
-3. Kết hợp nhiều kỹ thuật đại số để đưa một biểu thức phức tạp về dạng tích.
+!!! info "Phân biệt mục đích"
+    Micro-practice kiểm tra hiểu ngay; Practice Room dùng để **rèn kỹ năng**. Kết quả luyện tập là formative evidence, không phải điểm kiểm tra cuối chuyên đề.
 
 ---
 
-## ✅ 9. Tự kiểm tra
+## ✅ 9. Tự kiểm tra mức độ sẵn sàng
 
-Học sinh chỉ nên chuyển sang Chuyên đề 05 khi có thể trả lời **Có** cho hầu hết các câu sau:
+Khi đã luyện tương đối chắc, hãy làm **Core Readiness Check**.
 
-- [ ] Em phân biệt được đơn thức và đa thức.
-- [ ] Em xác định được bậc của đa thức sau khi thu gọn.
-- [ ] Em không nhầm các hạng tử không đồng dạng.
-- [ ] Em bỏ ngoặc đúng dấu.
-- [ ] Em nhân đơn thức với đa thức không bỏ sót hạng tử.
-- [ ] Em nhân hai đa thức đúng và thu gọn được kết quả.
-- [ ] Em biết kiểm tra điều kiện xác định khi có mẫu chứa biến.
-- [ ] Em có thể giải thích từng bước biến đổi thay vì chỉ ghi kết quả.
+[✅ Bắt đầu Core Readiness Check](tu-kiem-tra.md){ .md-button .md-button--primary }
 
-**Mức hoàn thành khuyến nghị:** ≥ 80% bài cơ bản và ≥ 60% bài vận dụng.
+Trong Readiness Check:
+
+- không hint và không Tutor khi đang làm;
+- không báo đúng/sai từng câu;
+- chỉ chấm sau khi bấm **Nộp bài**;
+- kết quả phân tích theo assessed skill;
+- là **Soft Mastery**: không khóa chuyên đề tiếp theo;
+- Entrance10 / Challenge không tính vào Core readiness.
 
 ---
 
@@ -441,10 +430,30 @@ Chuyên đề này xuất hiện dưới dạng kỹ năng nền trong rất nhi
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Học sinh được xem là hoàn thành chuyên đề khi:
+Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi học sinh có phần lớn các bằng chứng sau:
 
-- [ ] Nhận diện và thu gọn đúng đơn thức, đa thức.
-- [ ] Thực hiện chắc các phép cộng, trừ, nhân biểu thức cơ bản.
-- [ ] Biết kiểm tra điều kiện xác định khi biểu thức có mẫu chứa biến.
-- [ ] Giải thích được các bước biến đổi, không chỉ ghi kết quả.
-- [ ] Đạt mức hoàn thành khuyến nghị đã nêu trong phần tự kiểm tra trước khi chuyển chuyên đề.
+- [ ] Hiểu và giải thích được các quy tắc Core của chuyên đề.
+- [ ] Làm tương đối ổn định các skill Core trong Practice Room.
+- [ ] Không lặp lại ổn định cùng một lỗi nền tảng sau khi đã được chữa.
+- [ ] Core Readiness Check đạt khoảng **80%** hoặc học sinh đã hiểu và chữa được các lỗi còn lại.
+- [ ] Có thể trình bày ít nhất một số bài tự luận Core mà không mở lời giải trước.
+
+!!! note "Soft Mastery"
+    Không cần đạt 100% mới được học tiếp. Nếu Readiness Check cho thấy một vài kỹ năng còn yếu, hệ thống khuyến nghị luyện lại đúng kỹ năng đó; học sinh vẫn có thể chuyển sang chuyên đề tiếp theo.
+
+!!! warning "Core độc lập Extension"
+    Entrance10 và Specialized-Challenge không phải điều kiện để hoàn thành KNTT Core.
+
+---
+
+## ➡️ Tiếp tục học
+
+<div class="topic-workspace-actions" markdown>
+
+[🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
+
+[✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
+
+[→ 05 – 7 Hằng đẳng thức đáng nhớ](../05-7-hang-dang-thuc/index.md){ .md-button }
+
+</div>
