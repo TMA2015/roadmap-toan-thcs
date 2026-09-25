@@ -1,0 +1,284 @@
+{
+  "schema": "entrance10-exams-v1",
+  "version": 1,
+  "notes": "Original self-marked written mocks. Exam scores are separate from independent question mastery; no official-exam equivalence claimed.",
+  "exams": [
+    {
+      "id": "ENTRANCE10-001",
+      "slug": "de-luyen-01",
+      "title": "Đề 1 · Củng cố nền tảng",
+      "level": "foundation",
+      "rubric": [
+        {
+          "id": "I-1",
+          "points": 1,
+          "label": "I.1 – Rút gọn căn thức",
+          "anchor_reference": "CLASSIC_ALG_001",
+          "skill": "can-thuc"
+        },
+        {
+          "id": "I-2",
+          "points": 1,
+          "label": "I.2 – Phương trình có điều kiện",
+          "anchor_reference": "CLASSIC_ALG_001",
+          "skill": "phuong-trinh"
+        },
+        {
+          "id": "II-1",
+          "points": 1,
+          "label": "II.1 – Viète, tổng bình phương",
+          "anchor_reference": "CLASSIC_ALG_002",
+          "skill": "viete"
+        },
+        {
+          "id": "II-2",
+          "points": 1,
+          "label": "II.2 – Bài toán bằng hệ",
+          "anchor_reference": "CLASSIC_REAL_001",
+          "skill": "mo-hinh-hoa"
+        },
+        {
+          "id": "III-1",
+          "points": 0.9,
+          "label": "III.1 – Trung bình, trung vị, mốt",
+          "anchor_reference": "CD21",
+          "skill": "thong-ke"
+        },
+        {
+          "id": "III-2",
+          "points": 0.6,
+          "label": "III.2 – Xác suất đơn giản",
+          "anchor_reference": "CD23",
+          "skill": "xac-suat"
+        },
+        {
+          "id": "IV-1",
+          "points": 1,
+          "label": "IV.1 – Chứng minh đồng dạng đúng thứ tự",
+          "anchor_reference": "CD17",
+          "skill": "dong-dang"
+        },
+        {
+          "id": "IV-2",
+          "points": 0.75,
+          "label": "IV.2 – Suy ra hệ thức lượng",
+          "anchor_reference": "CD18",
+          "skill": "he-thuc-luong"
+        },
+        {
+          "id": "IV-3",
+          "points": 1,
+          "label": "IV.3 – Tính bốn độ dài",
+          "anchor_reference": "CD18",
+          "skill": "he-thuc-luong"
+        },
+        {
+          "id": "IV-4",
+          "points": 0.75,
+          "label": "IV.4 – Diện tích và đơn vị",
+          "anchor_reference": "CD18",
+          "skill": "dien-tich"
+        },
+        {
+          "id": "V",
+          "points": 1,
+          "label": "V – Tối ưu và điều kiện dấu bằng",
+          "anchor_reference": "CLASSIC_INEQ_001",
+          "skill": "bat-dang-thuc"
+        }
+      ],
+      "duration_minutes": 120,
+      "max_points": 10,
+      "source": "original",
+      "curriculum_layer": "Entrance10",
+      "allow_ai_during_exam": false
+    },
+    {
+      "id": "ENTRANCE10-002",
+      "slug": "de-luyen-02",
+      "title": "Đề 2 · Liên kết kiến thức",
+      "level": "standard",
+      "rubric": [
+        {
+          "id": "I-1",
+          "points": 0.75,
+          "label": "I.1 – Rút gọn căn thức",
+          "anchor_reference": "CLASSIC_ALG_001",
+          "skill": "can-thuc"
+        },
+        {
+          "id": "I-2a",
+          "points": 0.25,
+          "label": "I.2a – Điều kiện xác định",
+          "anchor_reference": "CLASSIC_ALG_001",
+          "skill": "dieu-kien"
+        },
+        {
+          "id": "I-2b",
+          "points": 0.4,
+          "label": "I.2b – Thay giá trị",
+          "anchor_reference": "CLASSIC_ALG_001",
+          "skill": "tinh-gia-tri"
+        },
+        {
+          "id": "I-2c",
+          "points": 0.6,
+          "label": "I.2c – Giải biểu thức bằng 2, đối chiếu",
+          "anchor_reference": "CLASSIC_ALG_001",
+          "skill": "giai-phuong-trinh"
+        },
+        {
+          "id": "II-1",
+          "points": 1,
+          "label": "II.1 – Lập phương trình năng suất và loại nghiệm",
+          "anchor_reference": "CLASSIC_REAL_001",
+          "skill": "mo-hinh-hoa"
+        },
+        {
+          "id": "II-2",
+          "points": 1,
+          "label": "II.2 – Viète",
+          "anchor_reference": "CLASSIC_ALG_002",
+          "skill": "viete"
+        },
+        {
+          "id": "III-1",
+          "points": 0.9,
+          "label": "III.1 – Thống kê",
+          "anchor_reference": "CD21",
+          "skill": "thong-ke"
+        },
+        {
+          "id": "III-2",
+          "points": 0.6,
+          "label": "III.2 – Xác suất",
+          "anchor_reference": "CD23",
+          "skill": "xac-suat"
+        },
+        {
+          "id": "IV-1",
+          "points": 1,
+          "label": "IV.1 – Nội tiếp bằng góc vuông",
+          "anchor_reference": "CLASSIC_GEO_001",
+          "skill": "noi-tiep"
+        },
+        {
+          "id": "IV-2",
+          "points": 1.5,
+          "label": "IV.2 – Đồng dạng và tích đoạn",
+          "anchor_reference": "CLASSIC_GEO_001",
+          "skill": "tiep-tuyen-cat-tuyen"
+        },
+        {
+          "id": "IV-3",
+          "points": 1,
+          "label": "IV.3 – Hai độ dài AE, DE",
+          "anchor_reference": "CLASSIC_GEO_001",
+          "skill": "do-dai"
+        },
+        {
+          "id": "V",
+          "points": 1,
+          "label": "V – Cận dưới và dấu bằng",
+          "anchor_reference": "CLASSIC_INEQ_001",
+          "skill": "bat-dang-thuc"
+        }
+      ],
+      "duration_minutes": 120,
+      "max_points": 10,
+      "source": "original",
+      "curriculum_layer": "Entrance10",
+      "allow_ai_during_exam": false
+    },
+    {
+      "id": "ENTRANCE10-003",
+      "slug": "de-luyen-03",
+      "title": "Đề 3 · Vận dụng và chứng minh",
+      "level": "extension",
+      "rubric": [
+        {
+          "id": "I-1",
+          "points": 1,
+          "label": "I.1 – Rút gọn căn thức",
+          "anchor_reference": "CLASSIC_ALG_001",
+          "skill": "can-thuc"
+        },
+        {
+          "id": "I-2",
+          "points": 1,
+          "label": "I.2 – Phương trình và điều kiện",
+          "anchor_reference": "CLASSIC_ALG_001",
+          "skill": "phuong-trinh"
+        },
+        {
+          "id": "II-1",
+          "points": 1,
+          "label": "II.1 – Tương giao parabol/đường thẳng",
+          "anchor_reference": "CLASSIC_ALG_002",
+          "skill": "giao-diem"
+        },
+        {
+          "id": "II-2",
+          "points": 1,
+          "label": "II.2 – Biệt thức và Viète tham số",
+          "anchor_reference": "CLASSIC_ALG_002",
+          "skill": "viete"
+        },
+        {
+          "id": "III-1",
+          "points": 1,
+          "label": "III.1 – ƯCLN và chia nhóm",
+          "anchor_reference": "CD02",
+          "skill": "bai-toan-thuc-te"
+        },
+        {
+          "id": "III-2",
+          "points": 0.5,
+          "label": "III.2 – Xác suất hợp biến cố",
+          "anchor_reference": "CD23",
+          "skill": "xac-suat"
+        },
+        {
+          "id": "IV-1",
+          "points": 1,
+          "label": "IV.1 – BFEC nội tiếp",
+          "anchor_reference": "CLASSIC_GEO_002",
+          "skill": "noi-tiep"
+        },
+        {
+          "id": "IV-2",
+          "points": 1,
+          "label": "IV.2 – AEHF nội tiếp",
+          "anchor_reference": "CLASSIC_GEO_002",
+          "skill": "noi-tiep"
+        },
+        {
+          "id": "IV-3",
+          "points": 1,
+          "label": "IV.3 – Song song tiếp tuyến",
+          "anchor_reference": "CLASSIC_GEO_002",
+          "skill": "goc-duong-tron"
+        },
+        {
+          "id": "IV-4",
+          "points": 0.5,
+          "label": "IV.4 – Bán kính vuông góc",
+          "anchor_reference": "CLASSIC_GEO_002",
+          "skill": "vuong-goc"
+        },
+        {
+          "id": "V",
+          "points": 1,
+          "label": "V – GTNN và điểm rơi",
+          "anchor_reference": "CLASSIC_INEQ_001",
+          "skill": "bat-dang-thuc"
+        }
+      ],
+      "duration_minutes": 120,
+      "max_points": 10,
+      "source": "original",
+      "curriculum_layer": "Entrance10",
+      "allow_ai_during_exam": false
+    }
+  ]
+}
