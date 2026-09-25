@@ -660,3 +660,13 @@ Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi họ
     Bài Entrance10 hoặc Specialized-Challenge không phải điều kiện để hoàn thành KNTT Core của chuyên đề.
 
 ---
+
+## ➡️ Tiếp tục học
+
+<div class="topic-workspace-actions" markdown>
+
+[🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
+
+[✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
+
+</div>
