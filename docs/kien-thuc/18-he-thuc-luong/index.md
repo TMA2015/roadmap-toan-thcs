@@ -337,45 +337,17 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
-### Mức 1 – Nhận biết
+Phần luyện tập chính đã chuyển sang **Practice Room** để tách rõ Core với Entrance10/Challenge và ghi learner evidence theo skill.
 
-1. Viết định lý Pythagore.
-2. Nêu công thức `sin`, `cos`, `tan`.
-3. Trong tam giác vuông, cạnh nào luôn đối diện góc vuông?
-
-### Mức 2 – Thông hiểu
-
-4. Tam giác vuông có hai cạnh góc vuông `6 cm`, `8 cm`. Tính cạnh huyền.
-5. `AH ⟂ BC`, `BH = 4`, `CH = 9`. Tính `AH`.
-6. Với `α = 30°`, cạnh huyền bằng `10 cm`. Tính cạnh đối diện `α`.
-
-### Mức 3 – Vận dụng
-
-7. Biết cạnh kề một góc và góc đó, hãy lập công thức tìm cạnh đối.
-8. Một cột cao tạo với điểm quan sát cách chân cột `20 m` góc nâng `35°`. Lập biểu thức tính chiều cao.
-9. Dùng hệ thức lượng để tính một cạnh góc vuông khi biết cạnh huyền và hình chiếu tương ứng.
-
-### Mức 4 – Tổng hợp
-
-10. Một tam giác vuông có đường cao xuống cạnh huyền. Từ dữ kiện hai đoạn trên cạnh huyền, tính lần lượt đường cao và hai cạnh góc vuông.
-11. Giải một bài thực tế trong đó cần cộng thêm chiều cao mắt người quan sát vào kết quả lượng giác.
+- **→ [Mở Practice Room](bai-tap.md)**
 
 ---
 
 ## ✅ 9. Tự kiểm tra
 
-Hãy tự trả lời không nhìn tài liệu:
+Sau khi luyện, làm **Core Readiness Check** 10 câu. Kết quả là **soft mastery**: dùng để gợi ý ôn lại, không khóa lộ trình.
 
-1. Pythagore dùng trong tam giác nào?
-2. `AH²` bằng tích của hai đoạn nào trên cạnh huyền?
-3. `sin α` là tỉ số nào?
-4. `tan α` có dùng cạnh huyền không?
-5. Khi biết góc và cạnh huyền, muốn tìm cạnh đối nên dùng gì?
-6. Khi biết cạnh đối và cạnh kề, muốn tìm góc nên lập tỉ số nào và dùng phím nào trên máy tính?
-7. Máy tính cần ở chế độ nào khi góc tính theo độ?
-8. Bài chiều cao có thể cần điều chỉnh thêm đại lượng nào ngoài tam giác vuông?
-
-**Tiêu chí đạt:** đúng ít nhất `7/8` câu và giải được một bài lượng giác thực tế.
+- **→ [Mở Core Readiness Check](tu-kiem-tra.md)**
 
 ---
 
@@ -394,12 +366,10 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+- [ ] Đã học đủ 5 chặng KNTT Core ở đầu trang.
+- [ ] Đã luyện Practice Room và chữa lại các câu sai.
+- [ ] Đã làm Core Readiness Check; khoảng 80% trở lên là tín hiệu sẵn sàng.
+- [ ] Mọi kết luận hình học dựa trên giả thiết/định lí, không dựa vào hình vẽ.
 
-- [ ] Thuộc các hệ thức lượng quan trọng.
-- [ ] Phân biệt đúng đối – kề – huyền.
-- [ ] Dùng đúng `sin`, `cos`, `tan`.
-- [ ] Biết tìm cạnh và góc bằng máy tính.
-- [ ] Giải được bài góc nâng / góc hạ.
-- [ ] Không quên điều kiện đơn vị và chế độ DEG.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 19.
+!!! note "Soft Mastery"
+    Kết quả không khóa chuyên đề tiếp theo; evidence yếu chỉ tạo gợi ý ôn đúng skill.

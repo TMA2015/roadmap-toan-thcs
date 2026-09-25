@@ -85,7 +85,10 @@ const TOPICS={
    description:"Bốn họ đường đặc biệt, bốn tâm G–H–I–O và các định lí đồng quy.",
    chips:["KNTT Core","Lớp 7","Hình học","⭐⭐⭐⭐"],
    progressSkills:["nhan-biet-trung-tuyen","trong-tam","ti-so-trong-tam","nhan-biet-phan-giac","nhan-biet-trung-truc","nhan-biet-duong-cao","truc-tam","tam-noi-tiep","tam-ngoai-tiep","phan-biet-bon-tam","dong-quy-bon-duong-dac-biet"]
- }
+ },
+ "16-tu-giac":{number:"16",data:"assets/data/curriculum/topic16-learning-workspace.json",description:"Tứ giác, các hình đặc biệt và suy luận bằng tính chất/dấu hiệu đường chéo.",chips:["KNTT Core","Lớp 8","Hình học","⭐⭐⭐⭐⭐"],progressSkills:["tong-goc-tu-giac","hinh-thang","hinh-thang-can","hbh-tinh-chat","hbh-dau-hieu","hcn-tinh-chat","hcn-dau-hieu","hthoi-tinh-chat","hthoi-dau-hieu","hvuong-tinh-chat","hvuong-dau-hieu","quan-he-bao-ham","duong-cheo-suy-luan"]},
+ "17-thales-dong-dang":{number:"17",data:"assets/data/curriculum/topic17-learning-workspace.json",description:"Thales, đường phân giác, đồng dạng và ghép đúng đại lượng tương ứng.",chips:["KNTT Core","Lớp 8","Hình học","⭐⭐⭐⭐⭐"],progressSkills:["thales-thuan","thales-dao","ti-le-doan-thang","duong-trung-binh","tinh-chat-duong-phan-giac","nhan-biet-dong-dang","thu-tu-tuong-ung","dong-dang-gg","dong-dang-cgc","dong-dang-ccc","tinh-do-dai-dong-dang","hinh-dong-dang"]},
+ "18-he-thuc-luong":{number:"18",data:"assets/data/curriculum/topic18-learning-workspace.json",description:"Pythagore, sin–cos–tan–cot và mô hình hóa chiều cao, khoảng cách.",chips:["KNTT Core","Lớp 8–9","Hình học","⭐⭐⭐⭐⭐"],progressSkills:["pythagore","pythagore-dao","canh-huyen","sin","cos","tan","cot","tim-canh-luong-giac","tim-goc-luong-giac","goc-nang-ha","chieu-cao-khoang-cach"]}
 };
 
 const STORAGE="toan-thcs-practice-v1";

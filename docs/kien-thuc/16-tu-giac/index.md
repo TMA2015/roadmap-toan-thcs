@@ -392,46 +392,17 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
-### Mức 1 – Nhận biết
+Phần luyện tập chính đã chuyển sang **Practice Room** để tách rõ Core với Entrance10/Challenge và ghi learner evidence theo skill.
 
-1. Tổng bốn góc của một tứ giác bằng bao nhiêu?
-2. Hình bình hành có tính chất gì về hai đường chéo?
-3. Hình chữ nhật có tính chất gì thêm về hai đường chéo?
-4. Hình thoi có tính chất gì thêm về hai đường chéo?
-
-### Mức 2 – Thông hiểu
-
-5. Tứ giác có ba góc lần lượt `80°`, `100°`, `90°`. Tính góc còn lại.
-6. Hình bình hành `ABCD` có `AB = 6 cm`, `BC = 4 cm`. Tính `CD`, `AD`.
-7. Hình chữ nhật có hai đường chéo cắt nhau tại `O`, `AC = 10 cm`. Tính `AO`.
-
-### Mức 3 – Vận dụng
-
-8. Chứng minh một hình bình hành có một góc vuông là hình chữ nhật.
-9. Chứng minh một hình bình hành có hai cạnh kề bằng nhau là hình thoi.
-10. Chứng minh hình chữ nhật có hai cạnh kề bằng nhau là hình vuông.
-
-### Mức 4 – Tổng hợp
-
-11. Cho tứ giác có hai đường chéo cắt nhau tại trung điểm của mỗi đường và bằng nhau. Chứng minh đó là hình chữ nhật.
-12. Cho hình bình hành có hai đường chéo vừa bằng nhau vừa vuông góc. Chứng minh đó là hình vuông.
+- **→ [Mở Practice Room](bai-tap.md)**
 
 ---
 
 ## ✅ 9. Tự kiểm tra
 
-Hãy tự trả lời không nhìn tài liệu:
+Sau khi luyện, làm **Core Readiness Check** 10 câu. Kết quả là **soft mastery**: dùng để gợi ý ôn lại, không khóa lộ trình.
 
-1. Tổng các góc trong tứ giác bằng bao nhiêu?
-2. Nêu hai dấu hiệu nhận biết hình bình hành.
-3. Hình chữ nhật có đường chéo như thế nào?
-4. Hình thoi có đường chéo như thế nào?
-5. Một hình bình hành có một góc vuông là hình gì?
-6. Một hình bình hành có hai cạnh kề bằng nhau là hình gì?
-7. Một hình vừa là hình chữ nhật vừa là hình thoi là hình gì?
-8. Hai đường chéo cắt nhau tại trung điểm gợi đến hình gì?
-
-**Tiêu chí đạt:** đúng ít nhất `7/8` câu và giải được một bài chứng minh hình đặc biệt.
+- **→ [Mở Core Readiness Check](tu-kiem-tra.md)**
 
 ---
 
@@ -452,12 +423,10 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+- [ ] Đã học đủ 5 chặng KNTT Core ở đầu trang.
+- [ ] Đã luyện Practice Room và chữa lại các câu sai.
+- [ ] Đã làm Core Readiness Check; khoảng 80% trở lên là tín hiệu sẵn sàng.
+- [ ] Mọi kết luận hình học dựa trên giả thiết/định lí, không dựa vào hình vẽ.
 
-- [ ] Phân biệt đúng 5 loại tứ giác đặc biệt.
-- [ ] Nhớ các tính chất cạnh, góc, đường chéo.
-- [ ] Thuộc các dấu hiệu nhận biết quan trọng.
-- [ ] Chứng minh được hình bình hành, chữ nhật, thoi, vuông.
-- [ ] Không nhầm tính chất đường chéo giữa hình chữ nhật và hình thoi.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 17.
-- [ ] Giải được ít nhất một bài tổng hợp chứng minh tứ giác đặc biệt.
+!!! note "Soft Mastery"
+    Kết quả không khóa chuyên đề tiếp theo; evidence yếu chỉ tạo gợi ý ôn đúng skill.

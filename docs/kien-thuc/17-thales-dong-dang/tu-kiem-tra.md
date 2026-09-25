@@ -1,86 +1,25 @@
-# Tự kiểm tra – Chuyên đề 17: Thales và tam giác đồng dạng
+# Core Readiness Check – Chuyên đề 17 – Thales và tam giác đồng dạng
 
-> **Thời gian gợi ý:** 45 phút
-> **Thang điểm:** 10 điểm
+> **Mục tiêu:** kiểm tra khả năng giải độc lập phần **KNTT Core**.
+>
+> **Nguyên tắc:** không gợi ý, không Tutor và không báo đúng/sai từng câu; chỉ chấm sau khi **Nộp bài**.
 
-# Đề tự kiểm tra
-
-## Câu 1 — 0,5 điểm
-Nêu điều kiện dùng Thales thuận.
-
-## Câu 2 — 0,5 điểm
-Nêu ba trường hợp đồng dạng.
-
-## Câu 3 — 0,75 điểm
-\(M,N\) là trung điểm của \(AB,AC\). Nêu hai kết luận về \(MN\).
-
-## Câu 4 — 0,75 điểm
-Trong \(\triangle ABC\), \(DE\parallel BC\), \(AD=3,AB=5,AC=10\). Tính \(AE\).
-
-## Câu 5 — 1,0 điểm
-\(D\in AB,E\in AC\), \(AD=2,DB=3,AE=4,EC=6\). Chứng minh \(DE\parallel BC\).
-
-## Câu 6 — 1,0 điểm
-\(\triangle ABC\sim\triangle DEF\), \(AB=4,DE=10,BC=6\). Tính \(EF\).
-
-## Câu 7 — 1,25 điểm
-Chứng minh \(\triangle ADE\sim\triangle ABC\) khi \(DE\parallel BC\).
-
-## Câu 8 — 1,25 điểm
-Từ \(\triangle ABC\sim\triangle DEF\), chứng minh \(AB\cdot EF=BC\cdot DE\).
-
-## Câu 9 — 1,5 điểm
-\(D\in AB,E\in AC\), \(AD=6,AB=10,AE=9,AC=15\). Chứng minh \(DE\parallel BC\).
-
-## Câu 10 — 1,5 điểm
-Một học sinh viết sai tỉ lệ sau khi có \(\triangle ABC\sim\triangle DEF\): \(AB/DE=AC/EF\). Hãy sửa và giải thích quy tắc ghép cạnh.
-
-# Đáp án và hướng dẫn chấm
-
-1. Một đường thẳng song song với một cạnh tam giác và cắt hai cạnh còn lại.
-2. g-g; c-g-c; c-c-c.
-3. \(MN\parallel BC,\ MN=BC/2\).
-4. \(AE=6\).
-5. \(AD/DB=AE/EC=2/3\Rightarrow DE\parallel BC\).
-6. \(EF=15\).
-7. Hai cặp góc tương ứng bằng nhau do song song \(\Rightarrow\) g-g.
-8. \(AB/DE=BC/EF\Rightarrow AB\cdot EF=BC\cdot DE\).
-9. \(AD/AB=AE/AC=3/5\Rightarrow DE\parallel BC\).
-10. Đúng là \(AB/DE=AC/DF\); phải ghép cạnh theo thứ tự đỉnh tương ứng.
-
-# Bảng truy nguyên lỗi
-
-| Sai câu | Nên quay lại |
-|---|---|
-| 1, 4 | Thales thuận |
-| 2, 6–8, 10 | Đồng dạng |
-| 3 | Đường trung bình |
-| 5, 9 | Thales đảo |
-
-# Thang tự đánh giá
-
-| Điểm | Mức | Hành động đề xuất |
-|---:|---|---|
-| 9,0–10 | Hoàn thành tốt | Có thể tiếp tục lộ trình; vẫn chữa mọi câu chưa chắc |
-| 7,0–8,75 | Đạt | Chữa toàn bộ câu sai rồi chuyển tiếp |
-| 5,0–6,75 | Chưa chắc | Quay lại đúng dạng bài còn yếu và luyện thêm M2–M3 |
-| Dưới 5,0 | Cần củng cố | Học lại kiến thức cốt lõi và làm lại M1–M2 |
-
-> Điểm số chỉ là một tín hiệu. Quan trọng hơn là xác định **loại lỗi** và sửa đúng phần kiến thức gốc.
+<div data-readiness-check-v1="assets/data/assessment/17-thales-dong-dang-core-v1.json"></div>
 
 ---
 
-# Checklist sau khi chấm
+## Cách hiểu kết quả
+- **Sẵn sàng học tiếp:** khoảng 80% trở lên.
+- **Nên củng cố thêm:** quay lại Practice Room đúng skill còn sai.
+- **Chưa đủ evidence:** còn quá nhiều câu chưa trả lời.
 
-- [ ] Tôi đã ghi lại điểm số.
-- [ ] Tôi đã đối chiếu từng câu sai với **Bảng truy nguyên lỗi**.
-- [ ] Tôi đã xác định lỗi thuộc nhóm kiến thức / biến đổi / dấu / điều kiện / mô hình hóa / kết luận / trình bày.
-- [ ] Tôi đã làm lại từng câu sai mà không nhìn đáp án.
-- [ ] Tôi đã luyện lại kỹ năng yếu trong Practice Bank nếu cần.
-- [ ] Nếu đạt từ 7 điểm trở lên, tôi đã chữa xong các câu sai trước khi chuyển tiếp.
+!!! note "Soft Mastery"
+    Đây không phải cổng khóa.
 
-# Liên kết Roadmap
+!!! warning "Geometry Architecture"
+    Hình vẽ không tạo thêm giả thiết; chỉ dùng dữ kiện đã cho hoặc đã chứng minh.
 
-- **← Bài học:** [Chuyên đề 17](index.md)
-- **← Luyện tập:** [Bài tập Chuyên đề 17](bai-tap.md)
-- **→ Nếu đạt:** [18 – Hệ thức lượng](../18-he-thuc-luong/index.md)
+## Liên kết Roadmap
+- **← Học:** [Chuyên đề 17 – Thales và tam giác đồng dạng](index.md)
+- **← Luyện tập:** [Practice Room](bai-tap.md)
+- **→ Học tiếp:** [18 – Hệ thức lượng trong tam giác vuông](../18-he-thuc-luong/index.md)

@@ -1,0 +1,138 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "16-tu-giac",
+  "title": "Tứ giác và các hình đặc biệt",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only mapped Core cards contribute to readiness; support/extension content never gates Core."
+  },
+  "cards": [
+    {
+      "id": "geo16-core-1",
+      "order": 1,
+      "title": "Tứ giác, hình thang và hình thang cân",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tong-goc-tu-giac",
+        "hinh-thang",
+        "hinh-thang-can"
+      ],
+      "prerequisites": [
+        "tinh-chat-song-song"
+      ],
+      "micro_practice": [
+        "GEO16MICRO_001",
+        "GEO16MICRO_002",
+        "GEO16MICRO_003"
+      ]
+    },
+    {
+      "id": "geo16-core-2",
+      "order": 2,
+      "title": "Hình bình hành",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "hbh-tinh-chat",
+        "hbh-dau-hieu"
+      ],
+      "prerequisites": [
+        "trung-diem"
+      ],
+      "micro_practice": [
+        "GEO16MICRO_004",
+        "GEO16MICRO_005",
+        "GEO16MICRO_006"
+      ]
+    },
+    {
+      "id": "geo16-core-3",
+      "order": 3,
+      "title": "Hình chữ nhật",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "hcn-tinh-chat",
+        "hcn-dau-hieu"
+      ],
+      "prerequisites": [
+        "hbh-dau-hieu",
+        "duong-vuong-goc"
+      ],
+      "micro_practice": [
+        "GEO16MICRO_007",
+        "GEO16MICRO_008",
+        "GEO16MICRO_009"
+      ]
+    },
+    {
+      "id": "geo16-core-4",
+      "order": 4,
+      "title": "Hình thoi",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "hthoi-tinh-chat",
+        "hthoi-dau-hieu"
+      ],
+      "prerequisites": [
+        "hbh-dau-hieu",
+        "tia-phan-giac"
+      ],
+      "micro_practice": [
+        "GEO16MICRO_010",
+        "GEO16MICRO_011",
+        "GEO16MICRO_012"
+      ]
+    },
+    {
+      "id": "geo16-core-5",
+      "order": 5,
+      "title": "Hình vuông và quan hệ bao hàm",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "hvuong-tinh-chat",
+        "hvuong-dau-hieu",
+        "quan-he-bao-ham",
+        "duong-cheo-suy-luan"
+      ],
+      "prerequisites": [
+        "hcn-tinh-chat",
+        "hthoi-tinh-chat"
+      ],
+      "micro_practice": [
+        "GEO16MICRO_013",
+        "GEO16MICRO_014",
+        "GEO16MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "geo16-ext-1",
+      "layer": "Entrance10",
+      "title": "Chuỗi chứng minh nâng cấp tứ giác đặc biệt",
+      "gates_core": false
+    },
+    {
+      "id": "geo16-ext-2",
+      "layer": "Challenge",
+      "title": "Bài hình tổng hợp khai thác đường chéo",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/16-tu-giac-micro-v1.json",
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json"
+}

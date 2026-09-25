@@ -359,45 +359,17 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
-### Mức 1 – Nhận biết
+Phần luyện tập chính đã chuyển sang **Practice Room** để tách rõ Core với Entrance10/Challenge và ghi learner evidence theo skill.
 
-1. Trong `△ABC`, `DE ∥ BC`. Viết một tỉ lệ theo định lý Thales.
-2. Nêu ba trường hợp đồng dạng của hai tam giác.
-3. Nếu `M`, `N` là trung điểm của `AB`, `AC`, hãy nêu hai kết luận về `MN`.
-
-### Mức 2 – Thông hiểu
-
-4. Trong `△ABC`, `DE ∥ BC`, biết `AD = 3`, `AB = 5`, `AC = 10`. Tính `AE`.
-5. Hai tam giác có hai góc tương ứng bằng nhau. Chúng đồng dạng theo trường hợp nào?
-6. `MN` là đường trung bình và `BC = 12 cm`. Tính `MN`.
-
-### Mức 3 – Vận dụng
-
-7. Chứng minh hai tam giác đồng dạng từ một cặp góc đối đỉnh và một cặp góc so le trong.
-8. Dùng Thales đảo để chứng minh một đoạn thẳng song song với cạnh của tam giác.
-9. Từ hai tam giác đồng dạng, chứng minh một hệ thức tích đoạn thẳng.
-
-### Mức 4 – Tổng hợp
-
-10. Trong tam giác có nhiều điểm trên cạnh và một đường song song, hãy tìm chuỗi đồng dạng cần dùng để tính một đoạn chưa biết.
-11. Cho một cấu hình có hai tam giác đồng dạng lồng nhau. Hãy chứng minh thêm một cặp đường thẳng song song.
+- **→ [Mở Practice Room](bai-tap.md)**
 
 ---
 
 ## ✅ 9. Tự kiểm tra
 
-Hãy tự trả lời không nhìn tài liệu:
+Sau khi luyện, làm **Core Readiness Check** 10 câu. Kết quả là **soft mastery**: dùng để gợi ý ôn lại, không khóa lộ trình.
 
-1. Khi nào dùng được định lý Thales thuận?
-2. Thales đảo thường dùng để chứng minh điều gì?
-3. Đường trung bình của tam giác có hai tính chất nào?
-4. Nêu ba trường hợp đồng dạng.
-5. Vì sao thứ tự đỉnh trong ký hiệu đồng dạng quan trọng?
-6. Khi có `DE ∥ BC`, ngoài Thales còn có thể nghĩ tới công cụ nào?
-7. Muốn chứng minh hệ thức tích, có thể biến đổi về dạng gì?
-8. Trong `c-g-c`, góc bằng nhau phải là góc nào?
-
-**Tiêu chí đạt:** đúng ít nhất `7/8` câu và giải được một bài tính độ dài bằng đồng dạng.
+- **→ [Mở Core Readiness Check](tu-kiem-tra.md)**
 
 ---
 
@@ -416,12 +388,10 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+- [ ] Đã học đủ 5 chặng KNTT Core ở đầu trang.
+- [ ] Đã luyện Practice Room và chữa lại các câu sai.
+- [ ] Đã làm Core Readiness Check; khoảng 80% trở lên là tín hiệu sẵn sàng.
+- [ ] Mọi kết luận hình học dựa trên giả thiết/định lí, không dựa vào hình vẽ.
 
-- [ ] Phát biểu đúng Thales thuận và đảo.
-- [ ] Dùng thành thạo đường trung bình.
-- [ ] Nhận diện đúng ba trường hợp đồng dạng.
-- [ ] Viết đúng thứ tự các đỉnh tương ứng.
-- [ ] Tính được độ dài bằng Thales và đồng dạng.
-- [ ] Chứng minh được một hệ thức tích bằng đồng dạng.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 18.
+!!! note "Soft Mastery"
+    Kết quả không khóa chuyên đề tiếp theo; evidence yếu chỉ tạo gợi ý ôn đúng skill.
