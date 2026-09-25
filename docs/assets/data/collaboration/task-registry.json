@@ -231,10 +231,10 @@
       "id": "ALG-BATCH-04-06-001",
       "title": "Golden Template batch production CĐ04–CĐ06",
       "routing": "GEMINI_AUTHOR_REVIEW+CHATGPT_INTEGRATE_QA",
-      "status": "READY",
-      "context_version": "1.0.24",
-      "review_verdict": "INTEGRATION-QA-READY",
-      "review_notes": "ChatGPT completed the full batch from source-of-truth after Gemini revision 2 remained blocked. 45 micro items + 30 Readiness MCQs + 30 Core written exercises integrated; CĐ04 division skill gets 12 real Practice Bank items; CĐ05/CĐ06 forbidden Core skills excluded. CI/deploy still pending."
+      "status": "DONE",
+      "context_version": "1.0.25",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_notes": "Full CĐ04–CĐ06 Golden Template batch merged in PR #61 and passed dependency/link QA, Golden validator, micro-practice QA, practice audit, strict MkDocs build, Pages deploy and gh-pages smoke check. CĐ04 expanded to 132 Practice Bank questions with 12 division-by-monomial items."
     },
     {
       "id": "C07-GOLDEN-HARDENING-001",
@@ -244,6 +244,15 @@
       "context_version": "1.0.21",
       "review_verdict": "PASS-WITH-CHANGES",
       "review_notes": "Accepted MathJax details re-typeset, touch targets, bottom CTAs and JSON control-character QA. Rejected low-score => MORE_EVIDENCE_NEEDED because low performance is not insufficient evidence."
+    },
+    {
+      "id": "ALG-BATCH-08-10-001",
+      "title": "Golden Template batch production CĐ08–CĐ10",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_PEDAGOGICAL_REVIEW",
+      "status": "OPEN",
+      "context_version": "1.0.25",
+      "review_verdict": "SOURCE-SCOPE-READY",
+      "review_notes": "Source-locked batch scope in assets/data/curriculum/algebra-batch-08-10-scope.json. CĐ08 spans Grade8→9 and needs explicit new Core coverage for inequality/order-property skills before rollout; CĐ09 excludes tham-so-he; CĐ10 layer-review skills are not Core until verified."
     }
   ]
 }
