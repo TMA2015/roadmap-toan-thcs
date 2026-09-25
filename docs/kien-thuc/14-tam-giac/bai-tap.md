@@ -78,6 +78,14 @@ Pythagore được giữ như nội dung kết nối sang CĐ18, không tính v�
 #### 14-ENT-01 · Chứng minh bằng tam giác bằng nhau
 Chọn hai tam giác phù hợp để suy ra hai đoạn cần chứng minh bằng nhau; luôn ghi đúng thứ tự tương ứng.
 
+### Challenge
+
+#### 14-CH-01 · Kiểm tra giả thiết ẩn
+Một hình vẽ cho hai tam giác trông bằng nhau nhưng đề chưa cho đủ các yếu tố tương ứng. Có được kết luận hai tam giác bằng nhau không? Giải thích.
+
+??? example "Xem lời giải"
+    Không. Phải chứng minh đủ điều kiện của một trường hợp bằng nhau hợp lệ; hình vẽ không phải căn cứ.
+
 ## Theo dõi sau khi luyện
 - [ ] Tôi ghép đúng cạnh–góc đối diện.
 - [ ] Tôi hiểu đường vuông góc ngắn hơn đường xiên.
