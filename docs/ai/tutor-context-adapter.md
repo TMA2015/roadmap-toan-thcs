@@ -40,3 +40,11 @@ Mọi provider phải trả về:
 - `evidence_basis`
 
 Output sai schema phải bị adapter từ chối thay vì đưa thẳng cho học sinh.
+
+## Tutoring depth and provider boundaries (v1.1)
+
+`help_mode` is one of `HINT`, `STEP_BY_STEP`, `FULL_SOLUTION`, `TEACH_FROM_START`; `activity` is `learning`, `practice`, `self_check`, or `timed_assessment`. `submitted` is the submission state of an assessment, not a normal practice answer. The context builder includes the correct answer / authored reference explanation only when FULL_SOLUTION is explicitly requested in a permitted activity. The runtime independently refuses a pre-submission assessment solution.
+
+`mock` is not Gemini and must not invent a worked solution. On the static site, show only the authored bank explanation or teaching card and label a short explanation honestly. Gemini and GPT transports are not yet configured. Never embed a private provider API key in a GitHub Pages JavaScript bundle; a real live adapter needs an appropriate secure credential path.
+
+Use the existing `toan-thcs-practice-v1` learner evidence store, not a duplicate stats store. Record `full_solution_views` on attempts after a full solution was disclosed; any such correct attempt is assisted (`correct_with_hint` and `correct_after_full_solution`), never `correct_without_hint`. Reading the explanation **after** submission does not change that attempt's counters.
