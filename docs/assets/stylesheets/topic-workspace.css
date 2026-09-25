@@ -28,14 +28,14 @@
 @media(prefers-reduced-motion:reduce){.topic-workspace-nav{scroll-behavior:auto}}
 
 .topic-core-journey{margin:1rem 0 1.2rem;container-type:inline-size;container-name:corejourney}
-.topic-core-journey-head{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;margin-bottom:.7rem}
+.topic-core-journey-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:.7rem;min-width:0}
 .topic-core-journey-head h2{margin:.15rem 0 0}
 .topic-core-card-grid{display:grid;grid-template-columns:1fr;gap:.55rem}
 .topic-core-card{position:relative;display:block;padding:.62rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:.75rem;background:var(--md-default-bg-color);min-width:0;min-height:0}
 .topic-core-card-main{display:grid;grid-template-rows:auto auto minmax(1.7rem,auto) auto auto;gap:.35rem;min-width:0;height:100%}
-.topic-core-card-top{display:flex;align-items:center;gap:.38rem;min-width:0}
+.topic-core-card-top{display:grid;grid-template-columns:1.65rem minmax(0,1fr);align-items:start;gap:.38rem;min-width:0;min-height:0}
 .topic-core-card-number{display:grid;place-items:center;flex:0 0 1.65rem;width:1.65rem;height:1.65rem;border-radius:50%;background:color-mix(in srgb,var(--md-primary-fg-color) 13%,transparent);font-weight:800;font-size:.72rem}
-.topic-core-card-lesson{font-size:.62rem;font-weight:750;opacity:.62;white-space:nowrap}
+.topic-core-card-lesson{display:block;min-width:0;max-width:100%;font-size:.62rem;font-weight:750;opacity:.68;white-space:normal;overflow-wrap:break-word;word-break:normal;line-height:1.35}
 .topic-core-card h3{font-size:.8rem;margin:0;line-height:1.25;min-height:2em;overflow-wrap:normal;word-break:normal;hyphens:none}
 .topic-core-card-meta{display:flex;flex-wrap:wrap;gap:.25rem;align-items:center}
 .topic-core-card-meta span{display:inline-flex;align-items:center;min-height:1.35rem;padding:.14rem .35rem;border-radius:999px;background:color-mix(in srgb,var(--md-primary-fg-color) 7%,transparent);font-size:.58rem;line-height:1.15;white-space:nowrap}
@@ -54,8 +54,11 @@
 @container corejourney (min-width:34rem){
   .topic-core-card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
-@container corejourney (min-width:32rem){
-  .topic-core-card-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:.42rem}
+@container corejourney (min-width:48rem){
+  .topic-core-card-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:.55rem}
+}
+@container corejourney (min-width:64rem){
+  .topic-core-card-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:.55rem}
   .topic-core-card{padding:.46rem}
   .topic-core-card h3{font-size:.72rem;min-height:3.35em;line-height:1.18}
   .topic-core-prereq-full{display:none}
@@ -94,10 +97,10 @@
 .topic-micro-option mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
 
 /* Compact five-card row refinement */
-@container corejourney (min-width:32rem){
+@container corejourney (min-width:64rem){
   .topic-core-card-grid{align-items:stretch}
   .topic-core-card-main{grid-template-rows:auto auto auto auto auto}
-  .topic-core-card-top{min-height:1.65rem}
+  .topic-core-card-top{min-height:0}
   .topic-core-card-meta{margin-top:auto}
 }
 
@@ -107,3 +110,9 @@
 .topic-card-learn-field{margin:.45rem 0;overflow-wrap:anywhere}
 .topic-card-learn-field strong{font-size:.68rem}
 .topic-card-learn-field p{margin:.15rem 0;white-space:pre-line}
+
+/* Responsive lesson captions: no horizontal overflow on PC, iPad or iPhone. */
+.topic-core-card-main,.topic-core-card-top,.topic-core-card-lesson,.topic-card-learn-copy{max-width:100%;min-width:0}
+.topic-core-card h3,.topic-core-card-lesson{overflow-wrap:break-word}
+.topic-core-card-top .topic-core-card-number{flex-shrink:0}
+@container corejourney (max-width:23.99rem){.topic-core-card-lesson{font-size:.72rem;line-height:1.4}}
