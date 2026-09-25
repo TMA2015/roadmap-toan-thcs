@@ -86,7 +86,8 @@ with sync_playwright() as p:
     # Route links are verified from actual static content.
     first_phone.locator('.lesson-switcher-steps a').nth(1).click()
     check("/bai-tap/" in first_phone.url, "topic practice route")
-    check(first_phone.locator('.lesson-switcher-steps [aria-current="page"]').count() == 1, "practice stage selected")
+    first_phone.locator('.lesson-switcher-steps a[aria-current="page"]').wait_for(state="visible", timeout=10000)
+    check(first_phone.locator('.lesson-switcher-steps a[aria-current="page"]').count() == 1, "practice stage selected")
     shot(first_phone, "practice-23-phone.png")
     browser.close()
 
