@@ -5,6 +5,8 @@
 > **Lớp trọng tâm:** 6–9
 > **Mạch kiến thức:** Thống kê
 > **Mức ưu tiên:** ⭐⭐⭐⭐
+>
+> **Lưu ý tầng học:** Năm Learning Cards KNTT Core ở đầu trang là lộ trình nền tảng lớp 6–8. Các mục tổng hợp, tần suất và dữ liệu ghép nhóm bên dưới cần học đúng bài/lớp phù hợp; không tự động tính vào Core Readiness.
 
 ---
 
@@ -432,45 +434,17 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
-### Mức 1 – Nhận biết
+Thực hiện 15 câu **micro-practice** trong 5 Learning Cards (Base → Trap → Apply) để nhận phản hồi ngay. Sau đó mở Practice Room để luyện sâu và theo dõi lượt làm theo skill. Practice là **formative evidence**, không gộp cơ học với Core Readiness.
 
-1. Tần số là gì?
-2. Tần suất được tính như thế nào?
-3. Biểu đồ đoạn thẳng phù hợp nhất với loại dữ liệu nào?
-
-### Mức 2 – Thông hiểu
-
-4. Dữ liệu: `6, 7, 8, 8, 9, 8, 7`. Hãy lập bảng tần số.
-5. Trong 20 học sinh có 6 học sinh chọn phương án A. Tính tần suất phần trăm.
-6. Một biểu đồ cột có các giá trị `12, 18, 15, 20`. Xác định lớn nhất và nhỏ nhất.
-
-### Mức 3 – Vận dụng
-
-7. Từ một bảng tần số, hãy chọn dạng biểu đồ phù hợp và giải thích lựa chọn.
-8. Một biểu đồ nhiệt độ theo 7 ngày có xu hướng tăng rồi giảm. Hãy mô tả bằng lời.
-9. Từ biểu đồ cột, tính chênh lệch giữa hai nhóm.
-
-### Mức 4 – Tổng hợp
-
-10. Cho dữ liệu khảo sát của một lớp. Hãy lập bảng tần số, tính tần suất, chọn biểu đồ và viết hai nhận xét.
-11. Phát hiện một bảng thống kê có tổng tần số không khớp tổng quan sát và nêu cách kiểm tra.
+- **→ [Mở Practice Room CĐ21](bai-tap.md)**
 
 ---
 
 ## ✅ 9. Tự kiểm tra
 
-Hãy tự trả lời không nhìn tài liệu:
+Bài **tự kiểm tra tự luận hiện có** giúp luyện trình bày và đối chiếu lời giải. Core Readiness tương tác theo Golden Template được triển khai ở batch riêng, chỉ kiểm tra KNTT Core, không dùng hint và không khóa chuyên đề tiếp theo.
 
-1. Tần số khác tần suất ở điểm nào?
-2. Tổng tần số phải bằng đại lượng nào?
-3. Công thức tính tần suất phần trăm là gì?
-4. Khi nào nên dùng biểu đồ cột?
-5. Khi nào nên dùng biểu đồ đoạn thẳng?
-6. Khi đọc biểu đồ cần kiểm tra những thành phần nào?
-7. Dữ liệu có thể sai do những nguyên nhân nào?
-8. Sau khi đọc dữ liệu có nên viết kết luận bằng lời không?
-
-**Tiêu chí đạt:** đúng ít nhất `7/8` câu và hoàn thành được một bài từ dữ liệu thô đến bảng/biểu đồ.
+- **→ [Mở bài tự kiểm tra hiện có](tu-kiem-tra.md)**
 
 ---
 
@@ -490,13 +464,10 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+- [ ] Học đủ năm chặng KNTT Core đúng lớp đã học; đọc ví dụ và chữa lại câu micro-practice sai.
+- [ ] Làm Practice Room và ôn lại đúng skill còn yếu.
+- [ ] Đọc đúng dữ liệu, đơn vị, chú giải; viết nhận xét có căn cứ trong phạm vi khảo sát.
+- [ ] Làm bài tự kiểm tra phù hợp; Core Readiness tương tác được bổ sung ở batch riêng.
 
-- [ ] Phân biệt đúng dữ liệu, tần số và tần suất.
-- [ ] Lập đúng bảng tần số.
-- [ ] Tính đúng tần suất và phần trăm.
-- [ ] Đọc chính xác biểu đồ cột, cột kép, đoạn thẳng và hình quạt tròn.
-- [ ] Lập được bảng tần số/tần số tương đối ghép nhóm cơ bản.
-- [ ] Chọn đúng dạng biểu diễn dữ liệu.
-- [ ] Viết được nhận xét có căn cứ.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 22.
+!!! note "Soft Mastery"
+    Không lấy bài mở rộng hoặc điểm tự luận làm cổng khóa tiến độ. Kết quả là tín hiệu để học sinh lựa chọn nội dung cần củng cố.

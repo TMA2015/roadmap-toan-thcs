@@ -100,3 +100,10 @@
   .topic-core-card-top{min-height:1.65rem}
   .topic-core-card-meta{margin-top:auto}
 }
+
+/* Optional CĐ21 teaching copy; other Golden cards preserve their previous layout. */
+.topic-card-learn-copy{font-size:.72rem;line-height:1.45;border-top:1px solid var(--md-default-fg-color--lightest);padding-top:.36rem;min-width:0}
+.topic-card-learn-copy summary{cursor:pointer;font-weight:750;color:var(--md-primary-fg-color);padding:.2rem 0}
+.topic-card-learn-field{margin:.45rem 0;overflow-wrap:anywhere}
+.topic-card-learn-field strong{font-size:.68rem}
+.topic-card-learn-field p{margin:.15rem 0;white-space:pre-line}
