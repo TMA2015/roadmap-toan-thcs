@@ -18,7 +18,7 @@ for(const kind of ["academic","strategy"]){
 }
 const home=read("docs/kien-thuc/25-tong-hop-on-thi-10/index.md"),self=read("docs/kien-thuc/25-tong-hop-on-thi-10/tu-kiem-tra.md"),exam=read("docs/kien-thuc/25-tong-hop-on-thi-10/de-thi-tong-hop-01.md"),classic=read("docs/kien-thuc/25-tong-hop-on-thi-10/bai-toan-kinh-dien.md");
 ok(home.includes("80 câu")&&home.includes("40 câu")&&home.includes("Bắt đầu ôn thi đúng mục tiêu"),"academic and skills visible on landing");
-ok(exam.includes("120 phút")&&exam.includes("10 điểm")&&(exam.match(/^## [I-V]\./gm)||[]).length===5,"full five-part 120-min academic exam");
+ok(exam.includes("120 phút")&&exam.includes("10 điểm")&&(exam.match(/^## (?:I|II|III|IV|V)\./gm)||[]).length===5,"full five-part 120-min academic exam");
 ok((classic.match(/^### Mẫu /gm)||[]).length===7,"seven classic worked studies");
 ok(self.includes("45–60 phút")&&self.includes("## Đề bài")&&self.includes("Đáp án và hướng dẫn chấm"),"academic self-check not strategy quiz");
 ok(read("docs/kien-thuc/25-tong-hop-on-thi-10/tu-kiem-tra-ky-nang.md").includes("không"),"strategy retained separately");
