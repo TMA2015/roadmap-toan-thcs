@@ -249,10 +249,10 @@
       "id": "ALG-BATCH-08-10-001",
       "title": "Golden Template batch production CĐ08–CĐ10",
       "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_PEDAGOGICAL_REVIEW",
-      "status": "OPEN",
-      "context_version": "1.0.25",
-      "review_verdict": "SOURCE-SCOPE-READY",
-      "review_notes": "Source-locked batch scope in assets/data/curriculum/algebra-batch-08-10-scope.json. CĐ08 spans Grade8→9 and needs explicit new Core coverage for inequality/order-property skills before rollout; CĐ09 excludes tham-so-he; CĐ10 layer-review skills are not Core until verified."
+      "status": "READY",
+      "context_version": "1.0.26",
+      "review_verdict": "QA-READY",
+      "review_notes": "Complete ChatGPT-produced Golden batch ready for deploy QA: 5 cards + 15 micro + 10 Core Readiness + 10 written Core per topic. CĐ08 bank expanded 120→132 for bat-dang-thuc and order properties. CĐ09 excludes tham-so-he. CĐ10 excludes layer-review line-intersection/system-link skills from Core."
     }
   ]
 }
