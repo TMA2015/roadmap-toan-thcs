@@ -1,6 +1,6 @@
 # Phòng luyện đề – Toán vào lớp 10
 
-> **Ba đề tự biên soạn, mỗi đề 120 phút và 10 điểm.** Đây là tài liệu rèn năng lực và quy trình tự học, **không phải đề chính thức hay dự đoán đề thi**. Đề các địa phương có thể khác nhau; khi gần kỳ thi, luôn đối chiếu đề minh họa mới nhất của nơi dự thi.
+> **Ba đề tự biên soạn, mỗi đề 120 phút và 10 điểm.** Đây là tài liệu rèn năng lực và quy trình tự học, **Không phải đề chính thức hay dự đoán đề thi**. Đề các địa phương có thể khác nhau; khi gần kỳ thi, luôn đối chiếu đề minh họa mới nhất của nơi dự thi.
 
 <div class="exam-directory">
   <a href="../de-luyen-01/"><strong>01 · Củng cố nền tảng</strong><small>Căn thức · Viète · hệ thực tế · thống kê · hệ thức lượng · tối ưu cơ bản.</small><span>Vào đề →</span></a>
