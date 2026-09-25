@@ -217,6 +217,15 @@
       "context_version": "1.0.16",
       "review_notes": "15 Core micro-practice questions integrated inline across five Learning Cards. Shared evidence + observed signals + mock Tutor wired. Structural/math QA passed; deployed desktop/iPad/mobile QA still pending before template freeze.",
       "review_verdict": "QA-READY"
+    },
+    {
+      "id": "GOLDEN-TEMPLATE-001",
+      "title": "Golden Template Learn → Practice → Core Readiness",
+      "routing": "GEMINI_PEDAGOGY+CHATGPT_ARCHITECTURE_QA",
+      "status": "READY",
+      "context_version": "1.0.18",
+      "review_verdict": "QA-READY",
+      "review_notes": "CĐ07 structural refactor complete. Practice Engine retained; written solutions collapsed; 10-item Core Readiness Check scores only after submit; assessment evidence separated from practice; no hard gate. Real deployed desktop/iPad/mobile QA required before freeze."
     }
   ]
 }

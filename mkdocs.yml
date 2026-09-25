@@ -44,6 +44,7 @@ nav:
           - Handoff Protocol: collaboration/handoff-protocol.md
           - Quy trình biên soạn & QA: huong-dan/quy-trinh-bien-soan-noi-dung.md
           - Chuẩn ngân hàng câu hỏi: huong-dan/chuan-ngan-hang-cau-hoi.md
+          - Golden Template Học – Luyện – Tự kiểm tra: huong-dan/golden-template-hoc-luyen-kiem-tra.md
           - Thư viện hình & QA: huong-dan/qa-diagram-practice.md
 
   - Kiến thức:
@@ -169,10 +170,12 @@ plugins:
 extra_css:
   - assets/stylesheets/practice-engine.css
   - assets/stylesheets/topic-workspace.css
+  - assets/stylesheets/assessment-engine.css
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - assets/javascripts/learner-evidence-v1.js
   - assets/javascripts/tutor-runtime-v1.js
   - assets/javascripts/topic-workspace-v1.js
+  - assets/javascripts/assessment-engine-v1.js
   - assets/javascripts/practice-auto-loader.js
