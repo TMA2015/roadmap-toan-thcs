@@ -174,7 +174,12 @@ const showMicroLearning=(panel,card,q,showAnswer=false,submitted=false)=>{
  const row=(label,value)=>{if(!value)return;const wrap=document.createElement("div");wrap.className="topic-micro-learn-row";const heading=document.createElement("strong");heading.textContent=label;const body=document.createElement("p");body.textContent=value;wrap.append(heading,body);panel.appendChild(wrap)};
  const copy=card.teaching_copy;
  if(copy){row("Kiến thức cốt lõi",copy.key_idea);row("Ví dụ mẫu",copy.worked_example?.problem);row("Vì sao giải như vậy?",copy.worked_example?.solution);row("Lỗi dễ mắc",copy.misconception);row("Ghi nhớ",copy.summary)}
- else row("Gợi ý học","Chuyên đề này chưa có ví dụ mẫu trong thẻ. Em có thể xem phần bài giảng và bài tập phía dưới.");
+ else {
+  row("Gợi ý học","Thẻ này chưa có ví dụ mẫu riêng. Em có thể đọc phần kiến thức cốt lõi trong bài giảng đầy đủ.");
+  const link=document.createElement("a");link.className="practice-btn practice-btn-secondary";
+  link.href="#core";link.textContent="Mở kiến thức cốt lõi của chuyên đề ↗";
+  panel.appendChild(link);
+ }
  if(showAnswer){
   row("Đáp án trong ngân hàng",Array.isArray(q.options)?q.options[q.answer]:null);
   const steps=Array.isArray(q.solution_steps)?q.solution_steps.filter(v=>typeof v==="string"&&v.trim()):[];
