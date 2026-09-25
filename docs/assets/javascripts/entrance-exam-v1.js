@@ -22,7 +22,7 @@
     interval = null;
     const match = pathMatch();
     if (!match) return;
-    const root = document.querySelector(".md-content__inner .md-typeset");
+    const root = document.querySelector(".md-content__inner.md-typeset") || document.querySelector(".md-content__inner .md-typeset") || document.querySelector(".md-content__inner");
     if (!root || root.dataset.examUiMounted === match[1]) return;
     const script = document.querySelector('script[src*="entrance-exam-v1.js"]');
     if (!script) return;
