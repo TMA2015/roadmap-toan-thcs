@@ -3,7 +3,7 @@
 
   const isLessonPage = () => {
     const path = location.pathname.replace(/\/index\.html$/, "/");
-    return /^\/roadmap-toan-thcs\/kien-thuc\/[^/]+\/$/.test(path);
+    return /^\/(?:roadmap-toan-thcs\/)?kien-thuc\/[^/]+\/$/.test(path);
   };
   const contentRoot = () => document.querySelector(".md-content__inner .md-typeset") || document.querySelector(".md-content__inner");
   const topicSlug = () => {
