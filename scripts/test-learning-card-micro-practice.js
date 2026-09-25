@@ -9,6 +9,25 @@ const byId = new Map(bank.questions.map(q => [q.id, q]));
 const errors = [];
 const ids = new Set();
 
+const rejectControlChars = (value, path = "root") => {
+  if (typeof value === "string") {
+    for (const ch of value) {
+      const code = ch.charCodeAt(0);
+      if (code < 32 && ![9, 10, 13].includes(code)) {
+        errors.push(`${path}: unexpected control character U+${code.toString(16).padStart(4, "0")}`);
+      }
+    }
+    return;
+  }
+  if (Array.isArray(value)) return value.forEach((item, i) => rejectControlChars(item, `${path}[${i}]`));
+  if (value && typeof value === "object") {
+    for (const [key, item] of Object.entries(value)) rejectControlChars(item, `${path}.${key}`);
+  }
+};
+
+rejectControlChars(bank, "bank");
+
+
 for (const q of bank.questions) {
   if (ids.has(q.id)) errors.push(`duplicate id: ${q.id}`);
   ids.add(q.id);

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.20",
+  "version": "1.0.21",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -134,7 +134,8 @@
       "status": "FROZEN",
       "contract": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/golden-template-v1.json",
       "pilot": "07-phan-thuc-dai-so",
-      "evidence": "automated QA + successful deploy + real iPad UX validation"
+      "evidence": "automated QA + successful deploy + real iPad UX validation",
+      "maintenance_revision": "1.0.1"
     }
   },
   "roles": {
@@ -201,7 +202,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Batch production CĐ04–CĐ06. Await one complete Gemini AUTHOR/REVIEW packet, then ChatGPT integrates the whole batch with reusable Golden Template assets and regression QA.",
+    "next_priority": "Await Gemini complete AUTHOR packet for ALG-BATCH-04-06-001, then integrate CĐ04–CĐ06 as one batch against Golden Template v1 invariants.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -216,7 +217,7 @@
     "ai_tutor_ui": "mock/local Tutor integrated into Practice Engine with HINT/REMEDIATE/CONTINUE student actions; no external AI calls",
     "ui_ux_pilot": "CĐ07 five-card Learning Workspace now includes a complete 15-item inline Core micro-practice loop with shared learner evidence, option-level observed signals and mock Tutor feedback.",
     "micro_practice_evidence": "Observed signals are stored separately from attempted/correct counters. signal_weight 1–2 is salience only and cannot independently create weak-skill/remediation conclusions.",
-    "golden_template": "Frozen v1.0 after CĐ07 passed automated QA, successful GitHub Pages deploy, and real iPad Learn → Practice → Readiness verification."
+    "golden_template": "Frozen v1.0 with maintenance hardening v1.0.1: MathJax details re-typeset, touch-safe targets, bottom CTAs and JSON control-character QA. Frozen invariants unchanged."
   },
   "handoff_required_fields": [
     "TASK_ID",
@@ -247,6 +248,6 @@
     "next_public_task": "KG-REVIEW-001",
     "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G9-001/",
     "protocol_version": "2.0",
-    "relay_v2": "Next production packet: ALG-BATCH-04-06-GEMINI-AUTHOR-001. One complete response required for all three topics; no card-by-card partial handoff."
+    "relay_v2": "C07-GOLDEN-TEMPLATE-DEEP-REVIEW-001 integrated as PASS-WITH-CHANGES. Technical hardening accepted; MORE_EVIDENCE_NEEDED remains evidence-sufficiency semantics, not a low-score band."
   }
 }

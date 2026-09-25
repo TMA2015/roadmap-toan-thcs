@@ -2,6 +2,8 @@
 
 > **Trạng thái:** **Frozen v1.0** từ 25/09/2026 sau khi CĐ07 vượt qua curriculum/schema/deploy QA và kiểm tra luồng thực tế trên iPad.
 >
+> **Maintenance v1.0.1:** hardening MathJax trong `details`, touch target 44px, CTA cuối trang và JSON control-character QA; không thay đổi invariant hay schema.
+>
 > Các batch sau phải giữ các invariant trong `assets/data/curriculum/golden-template-v1.json`. Thay đổi phá vỡ invariant cần một phiên bản Golden Template mới, không được sửa ngầm trong từng chuyên đề.
 
 Golden Template chuẩn hóa ba không gian học tập của mỗi chuyên đề để tránh trùng lặp và giữ learner evidence đúng ý nghĩa.
