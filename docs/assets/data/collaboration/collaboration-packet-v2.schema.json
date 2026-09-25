@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "roadmap-collaboration-packet-v2",
+  "title": "Roadmap Collaboration Packet v2",
+  "type": "object",
+  "required": [
+    "protocol_version",
+    "packet_id",
+    "task_id",
+    "context_version",
+    "from",
+    "to",
+    "mode",
+    "scope",
+    "claims",
+    "proposed_changes",
+    "tests",
+    "uncertainties",
+    "acceptance"
+  ],
+  "properties": {
+    "protocol_version": {
+      "const": "2.0"
+    },
+    "packet_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "context_version": {
+      "type": "string"
+    },
+    "from": {
+      "enum": [
+        "CHATGPT",
+        "GEMINI"
+      ]
+    },
+    "to": {
+      "enum": [
+        "CHATGPT",
+        "GEMINI"
+      ]
+    },
+    "mode": {
+      "enum": [
+        "AUTHOR",
+        "REVIEW",
+        "INDEPENDENT_CHECK",
+        "INTEGRATION_DECISION"
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "layer",
+        "topics"
+      ],
+      "properties": {
+        "layer": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "KNTT-Core",
+              "Entrance10",
+              "Specialized-Challenge",
+              "SYSTEM"
+            ]
+          }
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "source_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "statement"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "FACT_VERIFIED",
+              "PEDAGOGICAL_PROPOSAL",
+              "TECHNICAL_PROPOSAL",
+              "HYPOTHESIS",
+              "DISAGREEMENT"
+            ]
+          },
+          "statement": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "proposed_changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "artifact",
+          "change"
+        ],
+        "properties": {
+          "artifact": {
+            "type": "string"
+          },
+          "change": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "expected"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "expected": {
+            "type": "string"
+          },
+          "result": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "NOT_RUN"
+            ]
+          }
+        }
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "acceptance": {
+      "type": "object",
+      "required": [
+        "verdict"
+      ],
+      "properties": {
+        "verdict": {
+          "enum": [
+            "PASS",
+            "PASS-WITH-CHANGES",
+            "BLOCKED",
+            "PENDING"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
