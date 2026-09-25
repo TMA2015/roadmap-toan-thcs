@@ -49,6 +49,35 @@ with sync_playwright() as p:
     check(page.locator(".library-topic-tile").count() == 25, "all 25 topic tiles present")
     check(page.locator(".library-cluster").count() == 4, "four learning groups")
     shot(page, "library-desktop.png")
+    # Smoke-check all 25 topic pages, including the 01–03 lessons without micro-workspace.
+    # Keep the audit as a downloadable JSON artifact for repeatable review.
+    import json
+    from urllib.parse import urljoin
+    destinations = page.locator(".library-topic-tile").evaluate_all(
+        "(nodes) => nodes.map(n => ({title:n.innerText.trim(),url:n.href}))")
+    audit = []
+    check(len(destinations) == 25, "25 unique topic destinations")
+    check(len({row["url"] for row in destinations}) == 25, "topic links not duplicated")
+    for row in destinations:
+        topic_page = desktop.new_page()
+        response = topic_page.goto(row["url"], wait_until="domcontentloaded")
+        check(response is not None and response.status == 200, "topic page reachable: " + row["url"])
+        topic_page.locator(".lesson-switcher-steps a").first.wait_for(state="visible", timeout=12000)
+        links = topic_page.locator(".lesson-switcher-steps a")
+        check(links.count() == 3, "three steps for " + row["url"])
+        check(links.nth(0).get_attribute("aria-current") == "page", "lesson selected " + row["url"])
+        check(links.nth(1).get_attribute("href").endswith("/bai-tap/"), "practice route " + row["url"])
+        check(links.nth(2).get_attribute("href").endswith("/tu-kiem-tra/"), "self-check route " + row["url"])
+        title = topic_page.locator(".topic-workspace-hero h1, .md-content__inner h1").first.inner_text()
+        check(bool(title.strip()), "readable title for " + row["url"])
+        audit.append({"topic":row["title"],"url":row["url"],"heading":title.strip(),
+                      "lesson":True,"practice_url":links.nth(1).get_attribute("href"),
+                      "self_check_url":links.nth(2).get_attribute("href")})
+        topic_page.close()
+    (OUT / "all-25-topic-pages-audit.json").write_text(
+        json.dumps({"topic_count":len(audit),"checked":audit},ensure_ascii=False,indent=2),
+        encoding="utf-8")
+    print("PASS: all 25 topic pages and their lesson/practice/self-check navigation.", flush=True)
     page.locator("#library-local-search").fill("tam giac")
     matches = page.locator(".library-topic-tile:visible")
     check(matches.count() >= 1 and matches.count() < 25, "accent-insensitive filter works")

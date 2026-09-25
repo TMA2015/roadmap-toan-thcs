@@ -61,6 +61,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: roadmap-pr-100-interactive-ui-qa
-          path: previews/*.png
+          path: |
+            previews/*.png
+            previews/*.json
           if-no-files-found: error
 
