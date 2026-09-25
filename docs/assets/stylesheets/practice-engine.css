@@ -235,3 +235,9 @@
 .written-self-check-solution>.written-self-check-note{padding:.6rem 1rem;font-size:.76rem;line-height:1.55;margin:0;color:var(--md-default-fg-color--light)}
 .written-self-check-solution>h1,.written-self-check-solution>h2{padding:0 1rem}
 .written-self-check-solution>ol,.written-self-check-solution>ul,.written-self-check-solution>p{margin-left:1rem;margin-right:1rem}
+
+/* Remote answers remain visually separate from authored curriculum. */
+.practice-gemini-message{padding:.75rem .85rem;margin:.65rem 0;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.75;border-radius:.55rem;border:1px solid var(--practice-border);background:var(--md-default-bg-color)}
+.practice-gemini-followup{display:block;box-sizing:border-box;width:100%;min-height:3.25rem;resize:vertical;padding:.65rem .75rem;border:1px solid var(--practice-border);border-radius:.45rem;background:var(--md-default-bg-color);color:var(--md-default-fg-color);font:inherit;font-size:.76rem;line-height:1.5;margin:.6rem 0}
+.practice-gemini-followup:focus-visible{outline:2px solid var(--md-accent-fg-color);outline-offset:2px}
+.practice-gemini-ask{margin:.45rem 0 .55rem}
