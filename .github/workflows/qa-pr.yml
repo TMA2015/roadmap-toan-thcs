@@ -32,6 +32,7 @@ jobs:
         run: |
           node --check docs/assets/javascripts/study-scene-v1.js
           node scripts/test-study-scene-v1.js
+          node scripts/test-home-style-v1.js
       - name: Validate existing learner workflows
         run: |
           node scripts/test-sta21-ready-001.js
