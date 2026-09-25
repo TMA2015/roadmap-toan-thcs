@@ -2,6 +2,8 @@
   "use strict";
 
   const BANKS = {
+    "04-bieu-thuc-dai-so": "04-bieu-thuc-dai-so-v2.manifest.json",
+    "05-7-hang-dang-thuc": "05-7-hang-dang-thuc-v1.manifest.json",
     "06-phan-tich-da-thuc": "06-phan-tich-da-thuc-v1.manifest.json",
     "07-phan-thuc-dai-so": "07-phan-thuc-dai-so-v1.manifest.json",
     "08-phuong-trinh-bat-phuong-trinh": "08-phuong-trinh-bat-phuong-trinh-v1.manifest.json",
