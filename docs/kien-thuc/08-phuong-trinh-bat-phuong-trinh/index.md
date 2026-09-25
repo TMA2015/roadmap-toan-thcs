@@ -50,6 +50,7 @@ PHƯƠNG TRÌNH & BẤT PHƯƠNG TRÌNH
 ### Bắt buộc
 
 - Hiểu nghiệm của phương trình và bất phương trình.
+- Hiểu khái niệm bất đẳng thức và các tính chất thứ tự khi cộng/trừ, nhân/chia với số đã biết dấu.
 - Biết các phép biến đổi tương đương cơ bản và điều kiện để phép biến đổi giữ nguyên tập nghiệm.
 - Giải thành thạo phương trình bậc nhất một ẩn.
 - Nhận dạng và giải phương trình tích.
@@ -95,7 +96,7 @@ Các phép biến đổi tương đương thường dùng:
 
 > Nếu xuất hiện tham số làm hệ số của $x$ có thể bằng `0`, phải xét riêng trường hợp đó; không được chia ngay cho một biểu thức chưa biết có khác `0` hay không.
 
-#### Khi hệ số của ẩn có thể bằng 0
+#### Mở rộng / Entrance10 – Khi hệ số của ẩn có thể bằng 0
 
 Trong bài có tham số, sau khi thu gọn thường xuất hiện dạng:
 
@@ -109,7 +110,7 @@ trong đó `A`, `B` có thể phụ thuộc tham số. Phải xét đủ ba trư
 - `A = 0` và `B = 0` → phương trình trở thành `0 = 0`, có vô số nghiệm;
 - `A = 0` và `B ≠ 0` → phương trình trở thành một mệnh đề sai như `0 = 3`, nên vô nghiệm.
 
-> Đây là nguyên tắc nền khi biện luận phương trình có tham số; không được dùng công thức `x = -B/A` trước khi biết `A ≠ 0`.
+> **Không tính vào KNTT Core readiness của CĐ08.** Đây là nguyên tắc dùng trong bài biện luận có tham số; không được dùng công thức `x = -B/A` trước khi biết `A ≠ 0`.
 
 ### 3.2. Phương trình tích
 
@@ -136,7 +137,19 @@ Quy trình bắt buộc:
 !!! warning "Khử mẫu chỉ tương đương trên miền xác định"
     Khi nhân hai vế với mẫu chung, phép biến đổi chỉ được hiểu trên các giá trị đã thỏa **điều kiện xác định**. Vì vậy giá trị bị loại từ đầu không được lấy lại dù sau khi khử mẫu biểu thức mới có nghĩa tại giá trị đó.
 
-### 3.4. Bất phương trình bậc nhất một ẩn
+### 3.4. Bất đẳng thức và tính chất thứ tự
+
+Một bất đẳng thức so sánh hai biểu thức bằng các dấu \(<,>,\le,\ge\).
+
+Các tính chất Core cần nắm:
+
+- nếu \(a<b\) thì \(a+c<b+c\) với mọi số \(c\);
+- nếu \(a<b\) và \(c>0\) thì \(ac<bc\);
+- nếu \(a<b\) và \(c<0\) thì \(ac>bc\).
+
+Tương tự với các dấu \(>,\le,\ge\). Đây là nền trực tiếp để hiểu vì sao khi giải bất phương trình, nhân/chia với số âm phải đổi chiều.
+
+### 3.5. Bất phương trình bậc nhất một ẩn
 
 Khi cộng hoặc trừ cùng một biểu thức vào hai vế, chiều bất phương trình được giữ nguyên. Khi nhân hoặc chia hai vế với một **số dương**, chiều được giữ nguyên; với một **số âm**, phải **đổi chiều bất phương trình**.
 
@@ -158,7 +171,7 @@ Hình trên giúp phân biệt nhanh:
 
 > Khi biểu diễn trên trục số, cần kiểm tra đồng thời **mốc biên** và **hướng của tập nghiệm**; chỉ đúng một trong hai vẫn là sai.
 
-### 3.5. Mở rộng – nhiều bất phương trình cùng điều kiện
+### 3.6. Mở rộng – nhiều bất phương trình cùng điều kiện
 
 Khi cần tìm các giá trị thỏa mãn đồng thời nhiều bất phương trình một ẩn, giải từng bất phương trình rồi lấy **giao** các tập nghiệm.
 
