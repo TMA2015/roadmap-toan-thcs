@@ -53,7 +53,7 @@
     const headingRow = document.createElement("div");
     headingRow.className = "lesson-switcher-top";
     const back = document.createElement("a");
-    back.href = root.replace(/[^/]+\\/$/, "");
+    back.href = root.slice(0, root.lastIndexOf("/", root.length - 2) + 1);
     back.className = "lesson-switcher-back";
     back.textContent = "← Thư viện 25 chuyên đề";
     const topic = document.createElement("span");
