@@ -1,0 +1,150 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "08-phuong-trinh-bat-phuong-trinh",
+  "title": "Phương trình và bất phương trình",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only Core cards contribute to readiness. Entrance10 and Challenge never gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "eq08-core-1",
+      "order": 1,
+      "title": "Nghiệm & phương trình bậc nhất",
+      "kntt_lessons": [
+        "Lớp 8 → 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nghiem-phuong-trinh",
+        "pt-bac-nhat",
+        "bien-doi-pt-nhieu-buoc"
+      ],
+      "prerequisites": [
+        "thu-gon-da-thuc"
+      ],
+      "micro_practice": [
+        "EQ08MICRO_001",
+        "EQ08MICRO_002",
+        "EQ08MICRO_003"
+      ]
+    },
+    {
+      "id": "eq08-core-2",
+      "order": 2,
+      "title": "Phương trình tích & chứa mẫu",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "pt-tich",
+        "dkxd-phuong-trinh-mau",
+        "khu-mau-phuong-trinh",
+        "doi-chieu-nghiem"
+      ],
+      "prerequisites": [
+        "phan-tich-da-thuc",
+        "phan-thuc-dai-so"
+      ],
+      "micro_practice": [
+        "EQ08MICRO_004",
+        "EQ08MICRO_005",
+        "EQ08MICRO_006"
+      ]
+    },
+    {
+      "id": "eq08-core-3",
+      "order": 3,
+      "title": "Bất đẳng thức & tính chất thứ tự",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "bat-dang-thuc",
+        "tinh-chat-thu-tu-phep-cong",
+        "tinh-chat-thu-tu-phep-nhan"
+      ],
+      "prerequisites": [
+        "phep-tinh-so-huu-ti"
+      ],
+      "micro_practice": [
+        "EQ08MICRO_007",
+        "EQ08MICRO_008",
+        "EQ08MICRO_009"
+      ]
+    },
+    {
+      "id": "eq08-core-4",
+      "order": 4,
+      "title": "Bất phương trình & tập nghiệm",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "bpt-bac-nhat",
+        "doi-chieu-bpt",
+        "bieu-dien-tap-nghiem"
+      ],
+      "prerequisites": [
+        "tinh-chat-thu-tu-phep-nhan"
+      ],
+      "micro_practice": [
+        "EQ08MICRO_010",
+        "EQ08MICRO_011",
+        "EQ08MICRO_012"
+      ]
+    },
+    {
+      "id": "eq08-core-5",
+      "order": 5,
+      "title": "Lập phương trình từ bài toán",
+      "kntt_lessons": [
+        "Ứng dụng Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "lap-phuong-trinh"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat"
+      ],
+      "micro_practice": [
+        "EQ08MICRO_013",
+        "EQ08MICRO_014",
+        "EQ08MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "eq08-ent10-1",
+      "layer": "Entrance10",
+      "title": "Lập bất phương trình từ bài toán",
+      "gates_core": false
+    },
+    {
+      "id": "eq08-ent10-2",
+      "layer": "Entrance10",
+      "title": "Giao nhiều tập nghiệm",
+      "gates_core": false
+    },
+    {
+      "id": "eq08-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Tham số trong phương trình/bất phương trình",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/08-phuong-trinh-bat-phuong-trinh-micro-v1.json",
+  "observed_signal_policy": {
+    "rule": "Signals are observations only; they never create causal remediation without sufficient learner evidence and a reviewed rule."
+  },
+  "qa_notes": [
+    "CĐ08 preserves Grade 8 → Grade 9 Vertical Spine.",
+    "bat-dang-thuc, tinh-chat-thu-tu-phep-cong and tinh-chat-thu-tu-phep-nhan have real Practice Bank coverage before Golden rollout.",
+    "tham-so-co-ban and giao-tap-nghiem are excluded from Core readiness; lap-bat-phuong-trinh remains Extension pending explicit source promotion."
+  ]
+}
