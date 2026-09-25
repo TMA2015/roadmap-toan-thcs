@@ -97,6 +97,9 @@ jobs:
           node scripts/test-sta21-learn-001.js
           node scripts/test-sta21-responsive-wording-001.js
 
+      - name: Build source-locked CĐ21 Readiness Gemini author bundle
+        run: node scripts/build-sta21-ready-bundle.js docs/assets/data/collaboration/exports/sta21-ready-gemini-author-001.json
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 
