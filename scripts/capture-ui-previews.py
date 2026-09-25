@@ -37,7 +37,7 @@ with sync_playwright() as p:
     page.locator('.home-style-bar [data-home-select="playful"]').click()
     check(page.locator('[data-home-mode="playful"]').is_visible(), "playful artwork must be visible")
     img = page.locator(".study-art-image")
-    check(img.evaluate("(node) => node.complete && node.naturalWidth > 100"), "approved artwork loaded")
+    check(img.evaluate("(node) => node.complete && node.naturalWidth >= 480 && node.naturalWidth / node.naturalHeight > 1.7"), "approved artwork loaded")
     shot(page, "home-playful-desktop.png")
     page.locator("[data-study-wake]").click()
     check(page.locator("[data-study-gateway]").is_visible(), "wake reveals learning routes")

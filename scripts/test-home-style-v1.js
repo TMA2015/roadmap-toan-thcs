@@ -11,7 +11,7 @@ ok(css.includes("prefers-reduced-motion:reduce")&&css.includes(".home-style-card
 ok(config.includes("study-scene-v1.js"),"loaded script");
 ok(js.includes("roadmap.home.style.v1")&&js.includes("localStorage.setItem")&&js.includes('gateway.hidden = false'),"preference and wake interaction");
 const image=path.join(root,"docs/assets/images/study-kid-sleeping.webp");
-ok(fs.existsSync(image)&&fs.statSync(image).size>1000,"approved illustration bundled locally");
+ok(fs.existsSync(image)&&fs.statSync(image).size>10000,"approved illustration bundled locally");
 const classes=new Set(),events={},attrs={};const gateway={hidden:true};
 const wake={addEventListener:(t,fn)=>events.wake=fn,setAttribute:(k,v)=>attrs[k]=v};
 const scene={hidden:true,classList:{contains:v=>classes.has(v),add:v=>classes.add(v)},querySelector:s=>s==="[data-study-wake]"?wake:s==="[data-study-gateway]"?gateway:null};
