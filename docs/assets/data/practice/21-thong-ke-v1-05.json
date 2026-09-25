@@ -1,0 +1,443 @@
+{
+  "version": 2,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "STA21-V1-05",
+  "topic": {
+    "id": "21-thong-ke",
+    "title": "Thống kê và thu thập dữ liệu"
+  },
+  "questions": [
+    {
+      "id": "STA21NEW_001",
+      "question": "Trong một cuộc điều tra thống kê về sở thích thể thao của học sinh, người ta ghi nhận lại danh sách các môn thể thao được chọn gồm: \"Bóng đá, Cầu lông, Bơi lội, Bóng rổ\". Khẳng định nào sau đây diễn đạt đúng về dãy dữ liệu này?",
+      "options": [
+        "Đây là tên của tiêu chí thống kê chứ không phải dữ liệu thống kê.",
+        "Đây là dữ liệu số vì có 4 môn thể thao được đếm.",
+        "Dãy dữ liệu này vừa là dữ liệu số vừa là dữ liệu phân loại.",
+        "Đây là tập hợp các giá trị dữ liệu phân loại (dữ liệu không là số) thu được từ khảo sát."
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "du-lieu-phan-loai"
+        ],
+        "type": "phan-loai-khai-niem",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "basic",
+      "explanation": "Danh sách \"Bóng đá, Cầu lông, Bơi lội, Bóng rổ\" là các tên môn thể thao thu được từ câu trả lời của người được hỏi, biểu thị đặc tính (loại) chứ không phải con số đo đếm, nên đây là dữ liệu phân loại (dữ liệu không là số).",
+      "hints": [
+        "Xác định xem các câu trả lời thu được có dạng từ ngữ hay con số.",
+        "Dữ liệu biểu thị các danh mục, thể loại là dữ liệu phân loại."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "STA21NEW_002",
+      "question": "Trong các dãy dữ liệu thu thập được dưới đây, dãy nào đại diện cho dữ liệu số (định lượng)?",
+      "options": [
+        "Biển số xe của các giáo viên trong trường: 29A-12345, 30F-67890, 31B-24680.",
+        "Xếp loại học lực của học sinh lớp 6A: Tốt, Khá, Đạt, Tốt, Khá.",
+        "Size áo đồng phục của các thành viên đội văn nghệ: S, M, L, XL, M.",
+        "Số bài kiểm tra đạt điểm 10 của các tổ trong Tháng 9: 5, 8, 4, 7."
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "du-lieu-phan-loai"
+        ],
+        "type": "nhan-biet-du-lieu-so",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dãy 5, 8, 4, 7 thu được từ việc đếm số bài điểm 10 của các tổ, mang ý nghĩa số lượng thực tế nên là dữ liệu số. Biển số xe tuy có chữ số nhưng dùng làm mã định danh; xếp loại học lực và size áo là dữ liệu phân loại.",
+      "hints": [
+        "Lưu ý phân biệt con số dùng để đếm/đo lường thực tế với con số chỉ dùng làm mã định danh hay nhãn phân loại.",
+        "Dữ liệu số thể hiện số lượng hoặc số đo tính toán được."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "STA21NEW_003",
+      "question": "Trong các dãy dữ liệu thu thập được dưới đây, dãy dữ liệu nào thuộc loại dữ liệu phân loại (dữ liệu không là số)?",
+      "options": [
+        "Chiều cao (tính theo cm) của 4 học sinh: 150, 155, 152, 160.",
+        "Số thành viên trong gia đình của các bạn trong tổ 1: 4, 5, 3, 4.",
+        "Mức độ hài lòng của khách hàng về dịch vụ: Rất hài lòng, Hài lòng, Bình thường, Không hài lòng.",
+        "Nhiệt độ trung bình các ngày trong tuần (tính theo °C): 28, 30, 29, 31."
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "du-lieu-phan-loai"
+        ],
+        "type": "nhan-biet-du-lieu-phan-loai",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "basic",
+      "explanation": "Dãy \"Rất hài lòng, Hài lòng, Bình thường, Không hài lòng\" biểu thị thái độ/mức độ cảm nhận dưới dạng từ ngữ (dữ liệu không là số), do đó thuộc loại dữ liệu phân loại. Các dãy còn lại đều biểu diễn số đo hoặc số lượng đếm được nên là dữ liệu số.",
+      "hints": [
+        "Dữ liệu phân loại là dữ liệu không phải là số, biểu thị tên, thuộc tính hoặc mức độ đánh giá.",
+        "Quan sát các phương án để tìm dãy dữ liệu biểu diễn bằng từ ngữ thay vì con số."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "STA21NEW_004",
+      "question": "Giáo viên ghi lên bảng tiêu đề khảo sát: \"Thời gian tự học ở nhà mỗi ngày (tính theo phút)\". Phát biểu nào sau đây phân biệt đúng giữa tiêu chí khảo sát và dữ liệu thu thập?",
+      "options": [
+        "\"Thời gian tự học ở nhà mỗi ngày (tính theo phút)\" là tiêu chí khảo sát (tên biến), còn các số 30, 45, 60 thu được từ học sinh là các giá trị dữ liệu số.",
+        "\"Thời gian tự học ở nhà mỗi ngày (tính theo phút)\" là dữ liệu số, còn các số 30, 45, 60 thu được là tiêu chí khảo sát.",
+        "Cả tiêu đề và các số 30, 45, 60 đều là tiêu chí khảo sát.",
+        "Dữ liệu thu thập bắt buộc phải là dạng chữ, còn tiêu chí khảo sát bắt buộc phải là dạng số."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "du-lieu-phan-loai"
+        ],
+        "type": "phan-biet-khai-niem",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "advanced",
+      "explanation": "Tiêu đề \"Thời gian tự học ở nhà mỗi ngày (tính theo phút)\" là tên đối tượng/tiêu chí cần quan sát (biến khảo sát). Còn các số liệu 30, 45, 60 ghi nhận được từ từng học sinh mới là các giá trị dữ liệu số cụ thể.",
+      "hints": [
+        "Phân biệt giữa tên tiêu chí cần điều tra và kết quả thực tế thu được từ người trả lời.",
+        "Kết quả thu được dạng số là dữ liệu số."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "STA21NEW_005",
+      "question": "Ban cán sự lớp muốn tìm hiểu về mức độ hài lòng của học sinh toàn trường đối với thực đơn bữa trưa bán trú để đề xuất nhà trường điều chỉnh. Phương pháp thu thập dữ liệu nào sau đây là phù hợp và đảm bảo tính đại diện nhất?",
+      "options": [
+        "Phát phiếu khảo sát (hoặc biểu mẫu trực tuyến) ngẫu nhiên cho đại diện học sinh ở tất cả các lớp có ăn bán trú.",
+        "Chỉ phỏng vấn trực tiếp các bạn học sinh trong câu lạc bộ Nấu ăn của trường.",
+        "Tự quan sát số lượng khay thức ăn còn thừa trong 1 ngày duy nhất ở góc nhà ăn.",
+        "Gửi câu hỏi phỏng vấn cho các thầy cô giáo chủ nhiệm trong giờ họp giao ban."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "thu-thap-du-lieu"
+        ],
+        "type": "phuong-phap-khao-sat",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "basic",
+      "explanation": "Để có dữ liệu đại diện cho học sinh toàn trường ăn bán trú, cách tốt nhất là khảo sát ngẫu nhiên đại diện học sinh bán trú từ tất cả các lớp. Phỏng vấn CLB Nấu ăn hay giáo viên không phản ánh đúng ý kiến chung của học sinh bán trú.",
+      "hints": [
+        "Xác định đúng đối tượng thụ hưởng dịch vụ bữa trưa bán trú.",
+        "Chọn mẫu khảo sát bao phủ toàn bộ khối lớp để tránh thiên lệch."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "STA21NEW_006",
+      "question": "Để nghiên cứu sự biến thiên nhiệt độ không khí trong ngày tại vườn trường, nhóm sinh học muốn theo dõi nhiệt độ bằng số đo định kỳ từ 6 giờ sáng đến 6 giờ tối. Cách thu thập nào phù hợp nhất trong các phương án sau?",
+      "options": [
+        "Ước lượng nhiệt độ cảm nhận được ở 3 thời điểm sáng, trưa, chiều rồi ghi vào sổ.",
+        "Tra cứu dự báo thời tiết của toàn thành phố trên mạng internet rồi lấy trung bình cộng.",
+        "Dùng nhiệt kế đo trực tiếp tại cùng một vị trí cố định trong vườn trường, ghi chép số liệu đều đặn mỗi giờ một lần.",
+        "Chỉ đo một lần duy nhất lúc 12 giờ trưa rồi trừ đi 5°C cho buổi sáng và buổi tối."
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "thu-thap-du-lieu"
+        ],
+        "type": "phuong-phap-quan-sat",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đo trực tiếp bằng nhiệt kế tại vị trí nghiên cứu cố định và ghi nhận số liệu định kỳ mỗi giờ giúp thu được dãy số đo định kỳ, phù hợp để theo dõi sự thay đổi nhiệt độ cho vườn trường.",
+      "hints": [
+        "Dữ liệu nhiệt độ môi trường cụ thể cần phương pháp đo trực tiếp bằng dụng cụ.",
+        "Việc ghi nhận định kỳ mỗi giờ giúp theo dõi đầy đủ sự biến thiên trong ngày."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "STA21NEW_007",
+      "question": "Một học sinh lớp 8 muốn thu thập dữ liệu về dân số và diện tích của các tỉnh/thành phố thuộc khu vực Đồng bằng sông Hồng trong 5 năm qua để làm dự án môn Địa lí. Nguồn thu thập dữ liệu nào sau đây phù hợp và đáng tin cậy nhất trong các phương án sau?",
+      "options": [
+        "Tự thiết kế phiếu hỏi và đi phỏng vấn người dân đang sinh sống tại các tỉnh đó.",
+        "Đếm số lượng nhà ở trên bản đồ vệ tinh rồi nhân với số người trung bình mỗi nhà.",
+        "Lấy số liệu từ bài đăng chia sẻ trên các trang mạng xã hội cá nhân.",
+        "Tra cứu niên giám hoặc bộ dữ liệu thống kê chính thức đã công bố, đối chiếu đúng năm và địa bàn."
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "thu-thap-du-lieu"
+        ],
+        "type": "nguon-du-lieu-thu-cap",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "advanced",
+      "explanation": "Nên tra cứu niên giám hoặc bộ dữ liệu thống kê chính thức đã công bố, ghi rõ năm và đơn vị hành chính để đối chiếu. Hỏi một số người hoặc ước lượng số nhà không cung cấp được bộ số liệu dân số và diện tích cần tìm.",
+      "hints": [
+        "Phân biệt dữ liệu sơ cấp (tự điều tra) và dữ liệu thứ cấp (trích xuất từ cơ quan chính thức).",
+        "Thông tin vĩ mô cấp tỉnh nên lấy từ ấn phẩm thống kê nhà nước."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "STA21NEW_008",
+      "question": "Để thu thập dữ liệu về số giờ sử dụng máy tính/điện thoại mỗi ngày của học sinh khối 7 mà không gây mơ hồ cho người trả lời, câu hỏi nào trong phiếu khảo sát được thiết kế rõ ràng và chính xác nhất?",
+      "options": [
+        "\"Bạn có dùng thiết bị điện tử nhiều không? (Rất nhiều / Bình thường / Ít)\"",
+        "\"Trung bình mỗi ngày bạn sử dụng máy tính/điện thoại khoảng bao nhiêu giờ? (Dưới 1 giờ / Từ 1 đến dưới 2 giờ / Từ 2 đến dưới 3 giờ / Từ 3 giờ trở lên)\"",
+        "\"Bạn nghĩ dùng điện thoại có hại cho mắt không?\"",
+        "\"Có phải bạn luôn dùng máy tính cả ngày đúng không?\""
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "thu-thap-du-lieu"
+        ],
+        "type": "thiet-ke-phieu-hoi",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Câu hỏi ở phương án B đưa ra khoảng thời gian định lượng rõ ràng, các phương án trả lời phân chia thành các khoảng không đè lên nhau, giúp dữ liệu thu được nhất quán và dễ thống kê.",
+      "hints": [
+        "Câu hỏi khảo sát chất lượng cần tránh từ ngữ mơ hồ như 'nhiều', 'ít' hoặc câu hỏi dẫn dắt.",
+        "Các khoảng lựa chọn phải phân biệt rõ ràng và phủ hết các trường hợp."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "STA21NEW_009",
+      "question": "Trong ví dụ giả định, dữ liệu từ biểu đồ cột về số sách quyên góp của bốn lớp được chép lại như sau:\n- Lớp 6A: 45 quyển\n- Lớp 6B: 50 quyển\n- Lớp 6C: 38 quyển\n- Lớp 6D: 52 quyển\nHỏi tổng số sách quyên góp được của hai lớp có số lượng sách nhiều nhất nhiều hơn tổng số sách quyên góp được của hai lớp có số lượng sách ít nhất là bao nhiêu quyển?",
+      "options": [
+        "14 quyển",
+        "19 quyển",
+        "29 quyển",
+        "102 quyển"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "doc-bieu-do-cot"
+        ],
+        "type": "doc-bieu-do-cot-tong-hop",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "basic",
+      "explanation": "Hai lớp quyên góp nhiều sách nhất là Lớp 6D (52 quyển) và Lớp 6B (50 quyển), tổng cộng: 52 + 50 = 102 (quyển). Hai lớp quyên góp ít sách nhất là Lớp 6C (38 quyển) và Lớp 6A (45 quyển), tổng cộng: 38 + 45 = 83 (quyển). Chênh lệch là: 102 - 83 = 19 (quyển).",
+      "hints": [
+        "Sắp xếp số lượng sách của 4 lớp theo thứ tự tăng dần.",
+        "Tính tổng hai số lớn nhất, tổng hai số nhỏ nhất rồi trừ cho nhau."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "STA21NEW_010",
+      "question": "Trong ví dụ giả định, lượng mưa ghi nhận từng tháng tại một trạm khí tượng được chép lại từ biểu đồ cột như sau:\n- Tháng 6: 220 mm\n- Tháng 7: 280 mm\n- Tháng 8: 340 mm\n- Tháng 9: 160 mm\nHỏi lượng mưa tháng 8 chiếm bao nhiêu phần trăm so với tổng lượng mưa của cả 4 tháng?",
+      "options": [
+        "34%",
+        "32%",
+        "28%",
+        "40%"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "doc-bieu-do-cot"
+        ],
+        "type": "doc-bieu-do-cot-phan-tram",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tổng lượng mưa của cả 4 tháng là: 220 + 280 + 340 + 160 = 1000 (mm). Tỉ lệ phần trăm lượng mưa tháng 8 so với cả 4 tháng là: (340 / 1000) * 100% = 34%.",
+      "hints": [
+        "Tính tổng lượng mưa của 4 tháng.",
+        "Lấy lượng mưa tháng 8 chia cho tổng lượng mưa rồi nhân 100%."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "STA21NEW_011",
+      "question": "Một cửa hàng văn phòng phẩm ghi nhận số lượng bút máy bán được trong 5 ngày làm việc (từ Thứ Hai đến Thứ Sáu) trong một ví dụ giả định. Dữ liệu từ biểu đồ cột được chép lại như sau:\n- Thứ Hai: 25 chiếc\n- Thứ Ba: 18 chiếc\n- Thứ Tư: 32 chiếc\n- Thứ Năm: 20 chiếc\n- Thứ Sáu: 45 chiếc\nBiết mỗi chiếc bút máy có giá 30 000 đồng. Tổng doanh thu bán bút máy trong hai ngày có số lượng bán nhiều nhất  là bao nhiêu đồng?",
+      "options": [
+        "1 350 000 đồng",
+        "2 100 000 đồng",
+        "2 310 000 đồng",
+        "4 200 000 đồng"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "doc-bieu-do-cot"
+        ],
+        "type": "doc-bieu-do-cot-doanh-thu",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Số lượng bút máy bán được trong hai ngày nhiều nhất (Thứ Sáu và Thứ Tư) lần lượt là 45 chiếc và 32 chiếc. Tổng số bút bán trong 2 ngày này là: 45 + 32 = 77 (chiếc). Tổng doanh thu tương ứng là: 77 * 30 000 = 2 310 000 (đồng).",
+      "hints": [
+        "Xác định đúng hai ngày có cột cao nhất (Thứ Sáu 45 chiếc, Thứ Tư 32 chiếc).",
+        "Tính tổng số bút của 2 ngày rồi nhân với đơn giá 30 000 đồng."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "STA21NEW_012",
+      "question": "Trong ví dụ giả định, dữ liệu điện năng tiêu thụ trong tháng 8 của bốn hộ được chép lại từ biểu đồ cột (đơn vị: kWh):\n- Hộ A: 180 kWh\n- Hộ B: 240 kWh\n- Hộ C: 150 kWh\n- Hộ D: 300 kWh\nNgười ta đưa ra nhận xét: \"Điện năng tiêu thụ của Hộ D gấp 2 lần điện năng tiêu thụ của Hộ C và nhiều hơn Hộ A là 120 kWh\". Nhận xét trên đúng hay sai, vì sao?",
+      "options": [
+        "Sai, vì Hộ D chỉ gấp 1,5 lần Hộ C.",
+        "Sai, vì Hộ D nhiều hơn Hộ A là 150 kWh.",
+        "Đúng, vì 300 = 2 × 150 kWh và 300 - 180 = 120 kWh.",
+        "Sai, vì hộ D và hộ C chỉ chênh nhau 120 kWh."
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "doc-bieu-do-cot"
+        ],
+        "type": "doc-bieu-do-cot-nhan-xet",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "advanced",
+      "explanation": "Ta có: Điện năng của Hộ D là 300 kWh, Hộ C là 150 kWh, Hộ A là 180 kWh. Ta xét từng ý của nhận xét:\n1) Tỉ số giữa Hộ D và Hộ C: 300 / 150 = 2 (lần) → đúng.\n2) Chênh lệch giữa Hộ D và Hộ A: 300 - 180 = 120 (kWh) → đúng.\nDo đó nhận xét trên hoàn toàn đúng.",
+      "hints": [
+        "Tính tỉ số 300 / 150 để kiểm tra số lần gấp.",
+        "Tính hiệu 300 - 180 để kiểm tra mức chênh lệch điện năng."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

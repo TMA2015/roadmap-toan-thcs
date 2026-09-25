@@ -1,0 +1,40 @@
+{
+  "packet_id": "STA21-CHATGPT-INTEGRATION-001",
+  "source_packet_id": "STA21-GEMINI-AUTHOR-001-RESULT-REV2",
+  "verdict": "ACCEPT_WITH_EDITORIAL_FIXES",
+  "change_log": [
+    {
+      "id": "STA21NEW_003",
+      "type": "REVISED_QUESTION_AND_SKILL_ALIGNMENT",
+      "description": "Chỉnh sửa nội dung câu hỏi STA21NEW_003 để đánh giá trực tiếp kĩ năng 'du-lieu-phan-loai' (nhận biết dãy dữ liệu không là số/dữ liệu phân loại) thay vì bài toán phát hiện giá trị bất hợp lý trong dữ liệu định lượng. Cập nhật các phương án lựa chọn, đáp án (Index 2), hướng dẫn giải và author_check."
+    }
+  ],
+  "editorial_fixes": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "before": 120,
+  "after": 132,
+  "skill_counts": {
+    "du-lieu-phan-loai": 4,
+    "thu-thap-du-lieu": 4,
+    "doc-bieu-do-cot": 4
+  },
+  "arithmetic": {
+    "q009": 19,
+    "q010": "34%",
+    "q011": 2310000,
+    "q012": "ratio 2; difference 120 kWh"
+  },
+  "notes": [
+    "REV2 changed 003; ChatGPT applied remaining changes from review #87.",
+    "Student-facing chunk strips author_check.",
+    "Chart data are explicitly hypothetical transcriptions; no graphic is falsely implied.",
+    "Old four question chunks untouched; readiness unchanged; original source bundle remains locked to the 120-question snapshot."
+  ]
+}
