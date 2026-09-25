@@ -399,3 +399,42 @@ Practice Engine có thể dùng Knowledge Graph để đề nghị ôn kiến th
 6. Recommendation không phải hard gate: học sinh luôn có thể tiếp tục.
 7. Chỉ edge `PREREQUISITE` confidence cao và remediation rule đã review mới được dùng cho chẩn đoán tự động; `SEQUENCE`/`CROSS_LINK` không được coi là nguyên nhân mặc định.
 8. Chẩn đoán chạy local, không yêu cầu AI/API.
+
+
+## 18. Option-level observed signals
+
+Câu trắc nghiệm có thể khai báo `option_evidence` để ghi nhận một **tín hiệu quan sát** khi học sinh chọn một distractor có chủ đích.
+
+```json
+{
+  "option_evidence": {
+    "1": {
+      "signal": "bo-ngoac-dau-tru-tu-thuc",
+      "signal_weight": 2,
+      "feedback_hint": "Dấu trừ trước ngoặc phải đổi dấu mọi hạng tử."
+    }
+  }
+}
+```
+
+Quy tắc:
+
+1. Key là **original option index**; Practice Engine có thể xáo trộn hiển thị nhưng vẫn ghi đúng phương án gốc.
+2. `signal` là mã ổn định của lỗi quan sát được.
+3. `signal_weight` là tùy chọn, chỉ nhận 1–2 và chỉ biểu thị **độ đặc hiệu/salience của distractor** để ưu tiên feedback hoặc Tutor context.
+4. Tuyệt đối không cộng `signal_weight` vào accuracy, không dùng một signal để kết luận học sinh yếu skill, và không tự tạo causal remediation.
+5. Một distractor chỉ nên mang tối đa một primary signal. Nếu không chắc nguyên nhân, không gắn signal.
+6. `feedback_hint` giải thích bước cần kiểm tra, không gắn nhãn năng lực học sinh.
+7. Observed signal được lưu cùng learner evidence nhưng tách khỏi counters `attempted/correct`.
+8. Tutor chỉ nhận tối đa một số signal gần đây của **current skill**; signal vẫn phải được mô tả là quan sát, không phải diagnosis.
+9. Remediation causal vẫn phải tuân thủ mục 17: đủ evidence + reviewed high-confidence PREREQUISITE/remediation rule.
+
+### Micro-practice trong Learning Card
+
+Pilot CĐ07 chuẩn hóa mỗi Core card thành 3 câu:
+
+- Base knowledge;
+- Misconception trap;
+- Core application.
+
+Micro-practice ghi vào cùng evidence store với Practice Engine. Kết quả 3 câu không phải hard gate và Extension/Challenge không được tính vào hoàn thành KNTT Core.
