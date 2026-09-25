@@ -415,6 +415,16 @@
       "integrated_artifact": "docs/assets/stylesheets/topic-workspace.css",
       "review_verdict": "CODE_READY_AWAITING_DEPLOY_QA",
       "review_notes": "Removed forced lesson nowrap and early 5-column layout; 1/2/3/4/5 responsive columns by container width, full labels retained. Rewrote all 15 CĐ21 micro question stems for direct language; answers and scored skill IDs preserved. Added editorial standard + CI. Owner PC/iPad/iPhone screenshot shows prior overflow; owner visual recheck after deployment pending."
+    },
+    {
+      "id": "STA21-READY-001",
+      "title": "Gemini CĐ21 Core-only 12-item interactive Readiness authoring",
+      "routing": "GEMINI_AUTHOR+CHATGPT_INDEPENDENT_QA_INTEGRATE",
+      "status": "READY",
+      "context_version": "1.0.44",
+      "packet": "docs/assets/data/collaboration/packets/STA21-READY-GEMINI-AUTHOR-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-ready-gemini-author-001.json",
+      "review_notes": "Full-topic grade 6–8 Core check, 12 MCQs/9 scored skills, 20 minutes, after-submit only; explicit direct-language editorial guide; no hints or Tutor, no hard gates, no student data mutation before independent QA."
     }
   ]
 }
