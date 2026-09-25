@@ -68,6 +68,25 @@ if(Math.abs(area-BENCH.target.expected)>BENCH.target.tolerance) errors.push(`BEN
 
 const benchMd=fs.readFileSync(path.join(ROOT,"content-staging/benchmarks/geometry-001-rectangle-midpoints.md"),"utf8");
 controlChars(benchMd,"BENCH-GEO-001 markdown");
+const benchSvg=path.join(ROOT,BENCH.svg_path||"");
+if(!BENCH.svg_path||!fs.existsSync(benchSvg)) errors.push("BENCH-GEO-001: benchmark SVG missing");
+
+const reviewSources=[
+ "docs/assets/data/curriculum/geometry-architecture-v1.json",
+ "docs/assets/data/curriculum/geometry-core-coverage-v1.json",
+ "docs/assets/data/curriculum/geometry-diagram-spec-v1.schema.json",
+ "docs/assets/data/curriculum/golden-template-v1.json",
+ "docs/assets/data/curriculum/kntt-grade6-map.json",
+ "docs/assets/data/curriculum/kntt-grade7-map.json",
+ "docs/assets/data/curriculum/kntt-grade8-map.json",
+ "docs/assets/data/curriculum/kntt-grade9-map.json",
+ "docs/roadmap/audit-hoc-thuat-13-20-v1.md",
+ "content-staging/templates/geometry-item.md",
+ "content-staging/benchmarks/geometry-001-rectangle-midpoints.md",
+ "content-staging/benchmarks/geometry-001-rectangle-midpoints.json",
+ "docs/assets/data/collaboration/packets/GEO-ARCH-V1-GEMINI-REVIEW-001.json"
+];
+for(const rel of reviewSources) if(!fs.existsSync(path.join(ROOT,rel))) errors.push(`review bundle source missing: ${rel}`);
 
 if(errors.length){console.error(errors.join("\n"));process.exit(1)}
 console.log(`PASS: Geometry Architecture v1 · 8 topics · ${totalCore} Core skill IDs · ${totalPresent} exact covered · ${totalMissing} exact-ID gaps · BENCH-GEO-001 area=${area}`);
