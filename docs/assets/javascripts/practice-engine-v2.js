@@ -523,7 +523,7 @@
       button.textContent = "Gia sư đang xem dữ liệu…";
       try {
         const context = window.RoadmapTutor.buildContext({
-          projectContextVersion: "1.0.13",
+          projectContextVersion: "1.0.17",
           layer: question?.tags?.layer || "KNTT-Core",
           gradeOverlay: question?.tags?.grade || null,
           skill,
