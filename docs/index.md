@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 <div class="home-portal" markdown="1">
 
 <section class="home-hero" aria-labelledby="home-title">
