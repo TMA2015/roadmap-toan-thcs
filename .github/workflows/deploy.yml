@@ -27,6 +27,9 @@ jobs:
       - name: Run Roadmap dependency and link QA
         run: python check_roadmap_dependencies.py
 
+      - name: Run Golden Template pilot QA
+        run: node scripts/test-golden-template.js
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 
