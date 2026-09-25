@@ -49,7 +49,7 @@ Mạch tư duy trọng tâm:
 ### 1. Hình thang
 
 <p align="center">
-  <img src="../../assets/geometry/16/16-hinh-thang.svg"
+  <img src="../../assets/geometry/16/16-hinh-thang-v1.svg"
        alt="Minh họa hình thang"
        width="430">
 </p>
@@ -65,7 +65,7 @@ Hai cạnh song song được gọi là **hai đáy**; hai cạnh còn lại là
 ### 2. Hình bình hành
 
 <p align="center">
-  <img src="../../assets/geometry/16/16-hinh-binh-hanh.svg"
+  <img src="../../assets/geometry/16/16-hinh-binh-hanh-v1.svg"
        alt="Minh họa hình bình hành"
        width="430">
 </p>
@@ -83,7 +83,7 @@ Các tính chất quan trọng:
 ### 3. Hình chữ nhật
 
 <p align="center">
-  <img src="../../assets/geometry/16/16-hinh-chu-nhat.svg"
+  <img src="../../assets/geometry/16/16-hinh-chu-nhat-v1.svg"
        alt="Minh họa hình chữ nhật"
        width="430">
 </p>
@@ -100,7 +100,7 @@ Ngoài các tính chất của hình bình hành, hình chữ nhật còn có:
 ### 4. Hình thoi
 
 <p align="center">
-  <img src="../../assets/geometry/16/16-hinh-thoi.svg"
+  <img src="../../assets/geometry/16/16-hinh-thoi-v1.svg"
        alt="Minh họa hình thoi"
        width="430">
 </p>
@@ -118,7 +118,7 @@ Các tính chất nổi bật:
 ### 5. Hình vuông
 
 <p align="center">
-  <img src="../../assets/geometry/16/16-hinh-vuong.svg"
+  <img src="../../assets/geometry/16/16-hinh-vuong-v1.svg"
        alt="Minh họa hình vuông"
        width="400">
 </p>

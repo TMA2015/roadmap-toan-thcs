@@ -44,7 +44,7 @@ Mạch tư duy trọng tâm của chuyên đề:
 ### 1. Trung tuyến và trọng tâm
 
 <p align="center">
-  <img src="../../assets/geometry/15/15-trong-tam.svg"
+  <img src="../../assets/geometry/15/15-trong-tam-v1.svg"
        alt="Minh họa ba đường trung tuyến và trọng tâm của tam giác"
        width="500">
 </p>
@@ -64,7 +64,7 @@ Ví dụ, nếu `AM` là trung tuyến và `G` là trọng tâm thì:
 ### 2. Đường cao và trực tâm
 
 <p align="center">
-  <img src="../../assets/geometry/15/15-truc-tam.svg"
+  <img src="../../assets/geometry/15/15-truc-tam-v1.svg"
        alt="Minh họa ba đường cao và trực tâm của tam giác"
        width="500">
 </p>
@@ -82,7 +82,7 @@ Vị trí của trực tâm phụ thuộc vào loại tam giác:
 ### 3. Phân giác và tâm nội tiếp
 
 <p align="center">
-  <img src="../../assets/geometry/15/15-tam-noi-tiep.svg"
+  <img src="../../assets/geometry/15/15-tam-noi-tiep-v1.svg"
        alt="Minh họa ba đường phân giác và tâm nội tiếp của tam giác"
        width="500">
 </p>
@@ -98,7 +98,7 @@ Vì vậy, `I` là tâm của đường tròn tiếp xúc với cả ba cạnh c
 ### 4. Trung trực và tâm ngoại tiếp
 
 <p align="center">
-  <img src="../../assets/geometry/15/15-tam-ngoai-tiep.svg"
+  <img src="../../assets/geometry/15/15-tam-ngoai-tiep-v1.svg"
        alt="Minh họa các đường trung trực và tâm ngoại tiếp của tam giác"
        width="500">
 </p>

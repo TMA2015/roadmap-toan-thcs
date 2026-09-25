@@ -59,7 +59,7 @@ GÓC VÀ QUAN HỆ GIỮA CÁC ĐƯỜNG THẲNG
 ### 1. Góc đối đỉnh
 
 <p align="center">
-  <img src="../../assets/geometry/13/13-goc-doi-dinh.svg"
+  <img src="../../assets/geometry/13/13-goc-doi-dinh-v1.svg"
        alt="Minh họa góc đối đỉnh"
        width="520">
 </p>
@@ -69,7 +69,7 @@ GÓC VÀ QUAN HỆ GIỮA CÁC ĐƯỜNG THẲNG
 ### 2. Hai đường thẳng song song và một đường cắt
 
 <p align="center">
-  <img src="../../assets/geometry/13/13-hai-duong-song-song-duong-cat.svg"
+  <img src="../../assets/geometry/13/13-hai-duong-song-song-duong-cat-v1.svg"
        alt="Hai đường thẳng song song cắt bởi một đường thẳng"
        width="520">
 </p>
@@ -79,7 +79,7 @@ GÓC VÀ QUAN HỆ GIỮA CÁC ĐƯỜNG THẲNG
 ### 3. Góc so le trong
 
 <p align="center">
-  <img src="../../assets/geometry/13/13-goc-so-le-trong.svg"
+  <img src="../../assets/geometry/13/13-goc-so-le-trong-v1.svg"
        alt="Minh họa góc so le trong"
        width="520">
 </p>
