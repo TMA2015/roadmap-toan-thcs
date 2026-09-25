@@ -67,5 +67,29 @@
     "23-xac-suat-v1-02.json",
     "23-xac-suat-v1-03.json",
     "23-xac-suat-v1-04.json"
-  ]
+  ],
+  "primary_layer": "mixed-by-skill",
+  "layer_policy": {
+    "core_skills": [
+      "phep-thu-ngau-nhien",
+      "bien-co",
+      "bien-co-chac-chan-khong-the",
+      "xac-suat-co-dien",
+      "kiem-tra-xac-suat",
+      "xac-suat-thuc-nghiem"
+    ],
+    "core_support_skills": [
+      "khong-gian-mau",
+      "bien-co-doi",
+      "dong-xu-nhieu-lan"
+    ],
+    "entrance10_skills": [
+      "xuc-xac-hai-lan",
+      "so-do-cay",
+      "nhieu-buoc-doc-lap",
+      "khong-hoan-lai"
+    ],
+    "readiness_policy": "Only KNTT-Core item.skills independently verified by grade mapping may appear in readiness; no automatic all-120 Core scoring."
+  },
+  "layer_audit": "assets/data/curriculum/topic23-layer-audit-v1.json"
 }
