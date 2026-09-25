@@ -1,7 +1,7 @@
 {
   "schema": "roadmap-geometry-core-coverage-v1",
-  "version": "1.0",
-  "status": "REVIEW_READY",
+  "version": "1.0.1",
+  "status": "ACTIVE_ROLLOUT",
   "generated_from": [
     "kntt-grade6-map.json",
     "kntt-grade7-map.json",
@@ -18,8 +18,8 @@
   "summary": {
     "topics": 8,
     "total_curriculum_core_skills": 124,
-    "exact_id_covered": 72,
-    "exact_id_gaps": 52
+    "exact_id_covered": 81,
+    "exact_id_gaps": 43
   },
   "topics": [
     {
@@ -54,29 +54,28 @@
       ],
       "bank_exact_id_coverage": [
         "diem-thuoc-duong",
+        "diem-nam-giua",
+        "tia",
         "tia-doi",
+        "doan-thang-do-dai",
         "trung-diem",
+        "khai-niem-goc",
+        "do-goc",
         "phan-loai-goc",
         "goc-phu-bu",
         "goc-doi-dinh",
         "tia-phan-giac",
+        "nhan-dang-goc-dac-biet",
         "goc-so-le-trong",
         "goc-dong-vi",
         "goc-trong-cung-phia",
         "tinh-chat-song-song",
-        "dau-hieu-song-song"
-      ],
-      "missing_by_exact_skill_id": [
-        "diem-nam-giua",
-        "tia",
-        "doan-thang-do-dai",
-        "khai-niem-goc",
-        "do-goc",
-        "nhan-dang-goc-dac-biet",
+        "dau-hieu-song-song",
         "tien-de-euclid",
         "gia-thiet-ket-luan",
         "lap-luan-chung-minh-ngan"
       ],
+      "missing_by_exact_skill_id": [],
       "bank_skills_not_core_by_current_map": [
         "duong-vuong-goc",
         "vuong-goc-song-song"
@@ -150,8 +149,8 @@
       ],
       "counts": {
         "core": 21,
-        "exact_present": 12,
-        "exact_missing": 9,
+        "exact_present": 21,
+        "exact_missing": 0,
         "bank_extra": 2
       }
     },

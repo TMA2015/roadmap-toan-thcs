@@ -64,6 +64,13 @@ const TOPICS={
    description:"Phương trình bậc hai, biệt thức, công thức nghiệm và Viète theo KNTT lớp 9.",
    chips:["KNTT Core","Lớp 9","Đại số","⭐⭐⭐⭐⭐"],
    progressSkills:["nhan-dang-pt-bac-hai","he-so-abc","tinh-delta","so-nghiem-delta","cong-thuc-nghiem","delta-phay","giai-pt-bac-hai","nham-nghiem","tong-tich-nghiem","lap-pt-tu-nghiem"]
+ },
+ "13-goc-va-duong-thang":{
+   number:"13",
+   data:"assets/data/curriculum/topic13-learning-workspace.json",
+   description:"Nền tảng Hình học THCS: điểm–tia–đoạn–góc, song song và bước đầu chứng minh.",
+   chips:["KNTT Core","Lớp 6–7","Hình học","⭐⭐⭐⭐⭐"],
+   progressSkills:["diem-thuoc-duong","diem-nam-giua","tia","tia-doi","doan-thang-do-dai","trung-diem","khai-niem-goc","do-goc","phan-loai-goc","goc-phu-bu","goc-doi-dinh","tia-phan-giac","nhan-dang-goc-dac-biet","goc-so-le-trong","goc-dong-vi","goc-trong-cung-phia","tinh-chat-song-song","dau-hieu-song-song","tien-de-euclid","gia-thiet-ket-luan","lap-luan-chung-minh-ngan"]
  }
 };
 
