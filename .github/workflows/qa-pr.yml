@@ -1,0 +1,41 @@
+name: Roadmap PR Quality
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install MkDocs
+        run: pip install mkdocs-material
+      - name: Validate curriculum dependencies
+        run: python check_roadmap_dependencies.py
+      - name: Validate new CĐ23 readiness and CĐ24–25 learning
+        run: |
+          node --check docs/assets/javascripts/topic-workspace-v1.js
+          node scripts/test-prob23-ready-001.js
+          node scripts/test-cross-topic-learning-24-25.js
+          node scripts/test-prob23-learn-001.js
+          node scripts/test-prob23-layer-001.js
+          node scripts/test-learning-card-micro-practice.js docs/assets/data/curriculum/topic23-learning-workspace.json docs/assets/data/practice/23-xac-suat-micro-v1.json
+      - name: Validate existing learner workflows
+        run: |
+          node scripts/test-sta21-ready-001.js
+          node scripts/test-golden-template.js
+          node scripts/test-learning-card-micro-practice.js
+      - name: Validate assets and practice
+        run: |
+          python check_svg_integrity.py
+          python audit_practice_quality.py
+      - name: Build strict static site
+        run: mkdocs build --strict

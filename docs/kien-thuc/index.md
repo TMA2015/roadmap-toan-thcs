@@ -1,9 +1,9 @@
 # Hệ thống 25 chuyên đề Toán THCS
 
-Trang này là mục lục trung tâm của toàn bộ phần **Kiến thức**. Các chuyên đề được tổ chức theo mạch để học sinh dễ nhìn toàn cảnh và đi theo lộ trình phù hợp.
+<div class="topic-directory-intro"><span>THƯ VIỆN KIẾN THỨC · TOÁN 6–9</span><h2>Học theo chuyên đề, không lạc giữa các trang.</h2><p>Tất cả bài học, luyện tập và tự kiểm tra được nhóm theo mạch kiến thức. Chọn chuyên đề đang cần hoặc quay về bản đồ tổng quan.</p><a href="../roadmap/">Xem Roadmap 25 chuyên đề →</a></div>
 
 !!! success "Trạng thái Roadmap"
-    **25/25 chuyên đề** đã có nội dung và được chuẩn hóa theo cấu trúc 11 mục. Roadmap đã hoàn tất vòng kiểm định nội dung học thuật và tổng kiểm cấu trúc; giai đoạn tiếp theo tập trung vào trải nghiệm học tập và hệ thống luyện tập.
+    **25/25 chuyên đề** có nội dung theo cấu trúc 11 mục. Các công cụ luyện tập tương tác và kiểm tra theo kỹ năng đang được hoàn thiện theo từng chuyên đề; không nên coi số lượng bài là chứng nhận mọi câu đã được kiểm tra độc lập.
 
 ## Tổng quan
 

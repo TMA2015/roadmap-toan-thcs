@@ -5,9 +5,24 @@ site_author: Roadmap Toán THCS
 theme:
   name: material
   language: vi
+  logo: material/school
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Chuyển sang giao diện tối
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Chuyển sang giao diện sáng
 
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
     - search.suggest
@@ -171,6 +186,7 @@ plugins:
   - search
 
 extra_css:
+  - assets/stylesheets/site-design-system.css
   - assets/stylesheets/practice-engine.css
   - assets/stylesheets/topic-workspace.css
   - assets/stylesheets/assessment-engine.css

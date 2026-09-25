@@ -1,69 +1,62 @@
-# Roadmap Toán THCS
+<div class="home-portal" markdown="1">
 
-## Học có hệ thống – Hiểu bản chất – Luyện đúng trọng tâm – Sẵn sàng vào lớp 10
+<section class="home-hero" aria-labelledby="home-title">
+  <div class="home-hero-copy">
+    <span class="home-eyebrow"><span class="home-eyebrow-dot" aria-hidden="true"></span> ROADMAP TOÁN · LỚP 6–9</span>
+    <h1 id="home-title">Hiểu bản chất.<br><span>Tiến bộ từng chặng.</span></h1>
+    <p>Một không gian học Toán từ nền tảng đến ôn thi vào lớp 10: học qua hình ảnh, luyện đúng kỹ năng và biết cần ôn lại điều gì sau mỗi lần làm bài.</p>
+    <div class="home-hero-actions">
+      <a class="home-button home-button-primary" href="kien-thuc/">Khám phá 25 chuyên đề <span aria-hidden="true">↗</span></a>
+      <a class="home-button home-button-ghost" href="roadmap/">Xem lộ trình học <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="home-hero-note">Luyện tập có giải thích · Theo dõi tiến độ theo kỹ năng · Không khóa quyền học tiếp</div>
+  </div>
+  <div class="home-hero-art" aria-label="Minh họa hành trình học từ số học, đại số, hình học đến vận dụng" role="img">
+    <div class="home-art-orbit home-art-orbit-one"></div><div class="home-art-orbit home-art-orbit-two"></div>
+    <div class="home-art-center"><span class="home-art-tiny">HÀNH TRÌNH</span><strong>25</strong><span>chuyên đề</span></div>
+    <div class="home-art-node home-art-node-a"><span>01</span><strong>Số học</strong><small>Khởi đầu</small></div>
+    <div class="home-art-node home-art-node-b"><span>02</span><strong>Đại số</strong><small>Phát triển</small></div>
+    <div class="home-art-node home-art-node-c"><span>03</span><strong>Hình học</strong><small>Trực quan</small></div>
+    <div class="home-art-node home-art-node-d"><span>04</span><strong>Vận dụng</strong><small>Kết nối</small></div>
+  </div>
+</section>
 
-Chào mừng bạn đến với **Roadmap Toán THCS**.
+<div class="home-stat-strip" aria-label="Tổng quan nội dung">
+  <div><strong>25</strong><span>chuyên đề có nội dung</span></div>
+  <div><strong>4</strong><span>mạch kiến thức</span></div>
+  <div><strong>6–9</strong><span>lộ trình theo lớp</span></div>
+  <div><strong>3</strong><span>bước học – luyện – kiểm tra</span></div>
+</div>
 
-Bộ tài liệu được xây dựng để giúp học sinh:
+<section class="home-section" aria-labelledby="home-paths">
+  <div class="home-section-intro"><div><span class="home-section-kicker">BẮT ĐẦU TỪ ĐÂU?</span><h2 id="home-paths">Chọn con đường phù hợp</h2><p>Dù đang học theo chương trình lớp hay cần lấp lỗ hổng, bạn đều có thể bắt đầu từ một chặng rõ ràng.</p></div></div>
+  <div class="home-path-grid">
+    <a class="home-path-card home-path-indigo" href="roadmap/chuan-kntt-va-cac-tang-hoc/"><span class="home-path-icon" aria-hidden="true">◈</span><span class="home-card-label">HỌC THEO LỚP</span><strong>Kết nối tri thức</strong><span>Học Core theo đúng chặng lớp 6–9; phần mở rộng được phân tầng riêng.</span><em>Khám phá chương trình <span aria-hidden="true">↗</span></em></a>
+    <a class="home-path-card home-path-cyan" href="roadmap/"><span class="home-path-icon" aria-hidden="true">⌁</span><span class="home-card-label">HỌC CÓ HỆ THỐNG</span><strong>Roadmap 25 chuyên đề</strong><span>Đi từ kiến thức nền đến ứng dụng; thấy được quan hệ giữa các chủ đề.</span><em>Mở bản đồ học tập <span aria-hidden="true">↗</span></em></a>
+    <a class="home-path-card home-path-violet" href="kien-thuc/23-xac-suat/bai-tap/"><span class="home-path-icon" aria-hidden="true">✳</span><span class="home-card-label">THỰC HÀNH NGAY</span><strong>Luyện tập có phản hồi</strong><span>Thử bài theo kỹ năng, xem giải thích khi sai và ghi nhận kết quả theo tag.</span><em>Thử Practice Room <span aria-hidden="true">↗</span></em></a>
+    <a class="home-path-card home-path-amber" href="kien-thuc/25-tong-hop-on-thi-10/"><span class="home-path-icon" aria-hidden="true">◎</span><span class="home-card-label">ĐÍCH ĐẾN</span><strong>Sẵn sàng vào lớp 10</strong><span>Ôn tổng hợp, luyện đề và sửa lỗi theo yêu cầu thực tế của từng địa phương.</span><em>Xem lộ trình ôn thi <span aria-hidden="true">↗</span></em></a>
+  </div>
+</section>
 
-- Nhìn thấy toàn cảnh chương trình Toán THCS.
-- Nắm chắc kiến thức cốt lõi theo từng chuyên đề.
-- Nhận biết mối liên hệ giữa kiến thức lớp 6, 7, 8 và 9.
-- Luyện các dạng bài quan trọng cho kiểm tra và thi học kỳ.
-- Chuẩn bị xuyên suốt cho kỳ thi vào lớp 10.
+<section class="home-section home-feature-panel" aria-labelledby="home-process">
+  <div class="home-section-intro"><div><span class="home-section-kicker">PHƯƠNG PHÁP HỌC</span><h2 id="home-process">Mỗi chuyên đề là một hành trình nhỏ</h2><p>Không chỉ đọc bài rồi chuyển trang: mỗi bước đều có mục đích rõ ràng.</p></div><a class="home-text-link" href="huong-dan/nguyen-tac-hoc-moi-chuyen-de/">Xem hướng dẫn học <span aria-hidden="true">↗</span></a></div>
+  <div class="home-step-grid">
+    <div class="home-step"><span class="home-step-number">01</span><span class="home-step-icon" aria-hidden="true">▤</span><h3>Học để hiểu</h3><p>Kiến thức cốt lõi, hình minh họa, ví dụ mẫu và lỗi thường gặp.</p></div>
+    <div class="home-step"><span class="home-step-number">02</span><span class="home-step-icon" aria-hidden="true">✎</span><h3>Luyện có phản hồi</h3><p>Trả lời câu hỏi, xem hướng dẫn khi sai và luyện lại đúng kỹ năng.</p></div>
+    <div class="home-step"><span class="home-step-number">03</span><span class="home-step-icon" aria-hidden="true">✓</span><h3>Tự kiểm tra</h3><p>Đối chiếu kết quả, chữa lỗi và chủ động quyết định chặng tiếp theo.</p></div>
+  </div>
+</section>
 
-## Chọn cách học
+<section class="home-section" aria-labelledby="home-subjects">
+  <div class="home-section-intro"><div><span class="home-section-kicker">KHÁM PHÁ NỘI DUNG</span><h2 id="home-subjects">Bốn mạch kiến thức, một bức tranh thống nhất</h2><p>Chọn mạch đang học hoặc mở toàn bộ danh mục để xem 25 chuyên đề.</p></div><a class="home-text-link" href="kien-thuc/">Toàn bộ chuyên đề <span aria-hidden="true">↗</span></a></div>
+  <div class="home-subject-grid">
+    <div class="home-subject-card"><span class="home-subject-mark" aria-hidden="true">x²</span><h3>Số & Đại số</h3><p>Từ số và phép tính đến hàm số, căn thức và phương trình.</p><a href="kien-thuc/04-bieu-thuc-dai-so/">Biểu thức đại số ↗</a><a href="kien-thuc/08-phuong-trinh-bat-phuong-trinh/">Phương trình ↗</a></div>
+    <div class="home-subject-card"><span class="home-subject-mark" aria-hidden="true">△</span><h3>Hình học</h3><p>Góc, tam giác, tứ giác, đồng dạng và đường tròn.</p><a href="kien-thuc/14-tam-giac/">Tam giác ↗</a><a href="kien-thuc/19-duong-tron/">Đường tròn ↗</a></div>
+    <div class="home-subject-card"><span class="home-subject-mark" aria-hidden="true">%</span><h3>Thống kê & Xác suất</h3><p>Đọc dữ liệu, diễn giải biểu đồ và hiểu phép thử ngẫu nhiên.</p><a href="kien-thuc/21-thong-ke/">Thống kê ↗</a><a href="kien-thuc/23-xac-suat/">Xác suất ↗</a></div>
+    <div class="home-subject-card"><span class="home-subject-mark" aria-hidden="true">→</span><h3>Ứng dụng & Tổng hợp</h3><p>Mô hình hóa tình huống và luyện liên chuyên đề.</p><a href="kien-thuc/24-bai-toan-thuc-te/">Bài toán thực tế ↗</a><a href="kien-thuc/25-tong-hop-on-thi-10/">Ôn thi vào 10 ↗</a></div>
+  </div>
+</section>
 
-### 📘 Học theo Kết nối tri thức
+<section class="home-bottom-cta"><div><span class="home-section-kicker">SẴN SÀNG BẮT ĐẦU?</span><h2>Không cần học tất cả cùng lúc.</h2><p>Bắt đầu từ kiến thức đang cần, học chắc một bước rồi tiếp tục bước tiếp theo.</p></div><div><a class="home-button home-button-primary" href="kien-thuc/">Mở danh mục 25 chuyên đề →</a><a class="home-bottom-secondary" href="huong-dan/lo-trinh-tu-hoc/">Hướng dẫn tự học</a></div></section>
 
-Ưu tiên **KNTT Core**: kiến thức và kỹ năng cốt lõi lớp 6–9. Roadmap đang chuẩn hóa mapping lớp/chương/bài để học sinh có thể đi theo SGK nhưng vẫn dùng chung kho kiến thức và bài luyện.
-
-[Xem chuẩn KNTT và các tầng học tập](roadmap/chuan-kntt-va-cac-tang-hoc.md)
-
-### 🧭 Học theo Roadmap 25 chuyên đề
-
-Đi theo quan hệ kiến thức nền → chuyên đề hiện tại → kiến thức tiếp nối. Phù hợp khi muốn học có hệ thống hoặc vá lỗ hổng.
-
-[Xem Roadmap](roadmap/index.md)
-
-### 🎯 Ôn thi vào 10
-
-Dùng cùng kiến thức Core nhưng tăng mức tổng hợp và ưu tiên các dạng bài dựa trên đề thi thật. Không dùng khẳng định tuyệt đối về tần suất nếu chưa có dữ liệu theo năm/địa phương.
-
-[Xem Tổng hợp & chiến lược ôn thi vào 10](kien-thuc/25-tong-hop-on-thi-10/index.md)
-
-### 🔥 Chuyên / Challenge
-
-Phần mở rộng cho học sinh khá giỏi. Nội dung này **không phải điều kiện bắt buộc** để hoàn thành KNTT Core hoặc chuyển tiếp trong Roadmap chính.
-
-[Xem nguyên tắc tầng Chuyên / Challenge](roadmap/chuan-kntt-va-cac-tang-hoc.md)
-
-## Bắt đầu từ đâu?
-
-### 1. Mới bắt đầu
-
-Nếu bạn chưa biết nên học từ đâu, hãy đi theo thứ tự:
-
-1. [Xem Bản đồ chương trình](roadmap/index.md) để nhìn toàn cảnh 25 chuyên đề.
-2. [Đọc Lộ trình tự học](huong-dan/lo-trinh-tu-hoc.md) để biết cách tổ chức việc học theo từng giai đoạn.
-
-### 2. Bắt đầu học một chuyên đề
-
-Nếu bạn đã sẵn sàng học, hãy:
-
-1. [Mở Tổng quan 25 chuyên đề](kien-thuc/index.md).
-2. Chọn chuyên đề phù hợp với kiến thức hiện tại.
-3. Học theo thứ tự: infographic → kiến thức cốt lõi → ví dụ → luyện tập → tự kiểm tra.
-
-### 3. Học đúng phương pháp
-
-Trước khi học sâu, nên đọc hai hướng dẫn:
-
-- [Nguyên tắc học mỗi chuyên đề](huong-dan/nguyen-tac-hoc-moi-chuyen-de.md)
-- [Quy tắc chuyển sang chuyên đề mới](huong-dan/quy-tac-chuyen-chuyen-de.md)
-
-Hai hướng dẫn này giúp bạn biết khi nào nên tiếp tục luyện, khi nào cần quay lại lỗ hổng kiến thức và khi nào đã đủ điều kiện chuyển sang chuyên đề tiếp theo.
-
-### 4. Nếu đang ôn thi lớp 9
-
-Hãy ưu tiên các chuyên đề trọng tâm, luyện dạng bài tổng hợp và theo dõi phần [Tổng hợp & chiến lược ôn thi vào 10](kien-thuc/25-tong-hop-on-thi-10/index.md).
+</div>
