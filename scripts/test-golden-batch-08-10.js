@@ -36,6 +36,20 @@ const topics = [
 
 const errors = [];
 
+const rejectMarkdownMath = (text, path) => {
+  for (let i = 0; i < text.length; i += 1) {
+    const code = text.charCodeAt(i);
+    if (code < 32 && ![9,10,13].includes(code)) {
+      errors.push(`${path}: unexpected control character U+${code.toString(16).padStart(4,"0")}`);
+    }
+  }
+  const suspicious = /(^|[^\\A-Za-z])(Rightarrow|cdot|qquad|text\{|frac(?=[{0-9A-Za-z(])|begin\{cases\}|end\{cases\})/g;
+  let match;
+  while ((match = suspicious.exec(text))) {
+    errors.push(`${path}: suspicious unescaped TeX token '${match[2]}' near offset ${match.index}`);
+  }
+};
+
 const rejectControlChars = (value, path = "root") => {
   if (typeof value === "string") {
     for (const ch of value) {
@@ -63,6 +77,7 @@ for (const topic of topics) {
   rejectControlChars(workspace, `${topic.slug}.workspace`);
   rejectControlChars(micro, `${topic.slug}.micro`);
   rejectControlChars(assessment, `${topic.slug}.assessment`);
+  rejectMarkdownMath(practice, `${topic.slug}.practice-markdown`);
 
   if (workspace.topic !== topic.slug) errors.push(`${topic.slug}: workspace topic mismatch`);
   if (!Array.isArray(workspace.cards) || workspace.cards.length !== 5) errors.push(`${topic.slug}: expected 5 Core cards`);
