@@ -350,6 +350,33 @@ thì:
 
 Hai tính chất này được dùng rất nhiều trong chứng minh tam giác, tứ giác và hình học tổng hợp.
 
+## 3.11. Tiên đề Euclid về đường thẳng song song
+
+Qua một điểm \(M\) nằm ngoài đường thẳng \(a\), có **một và chỉ một** đường thẳng đi qua \(M\) và song song với \(a\).
+
+Điểm cần nhớ là **tính duy nhất**: nếu hai đường \(b,c\) cùng đi qua \(M\) và đều song song với \(a\), thì \(b\) và \(c\) phải là cùng một đường thẳng.
+
+## 3.12. Định lí – giả thiết – kết luận – bước đầu chứng minh
+
+Một định lí thường có thể đọc dưới dạng:
+
+\[
+\text{Nếu P thì Q}.
+\]
+
+- **Giả thiết (GT):** P – những dữ kiện được cho.
+- **Kết luận (KL):** Q – điều cần suy ra.
+
+Khi chứng minh, mỗi bước nên viết theo cấu trúc:
+
+\[
+\text{mệnh đề} \quad (\text{căn cứ}).
+\]
+
+Căn cứ có thể là giả thiết, định nghĩa, tính chất/định lí đã học hoặc một kết quả đã chứng minh ở bước trước.
+
+> ⚠️ Không dùng “nhìn hình thấy” làm căn cứ. Hình vẽ không tạo thêm giả thiết.
+
 ---
 
 ## 🔗 4. Kiến thức liên quan
@@ -641,129 +668,24 @@ Nên viết:
 
 ---
 
-## 📝 8. Luyện tập
+## 📝 8. Luyện tập tiếp theo
 
-### Mức 1 – Nhận biết
+Micro-practice trong các Learning Cards dùng để kiểm tra nhanh ngay sau khi học. Khi muốn luyện sâu hơn, hãy chuyển sang **Practice Room**.
 
-1. Phân loại các góc: `35°`, `90°`, `125°`, `180°`.
-2. Hai góc phụ nhau, một góc bằng `38°`. Tìm góc còn lại.
-3. Hai góc bù nhau, một góc bằng `117°`. Tìm góc còn lại.
-4. Hai đường thẳng cắt nhau tạo một góc `64°`. Tìm ba góc còn lại.
-5. `Oz` là tia phân giác của góc `xOy = 86°`. Tính hai góc nhỏ.
+[🎯 Mở Practice Room](bai-tap.md){ .md-button .md-button--primary }
 
----
+Practice Room gồm bài tương tác và bài tự luận; Core / Core-Support / Entrance10 / Challenge được tách rõ.
 
-### Mức 2 – Thông hiểu
+!!! info "Geometry Architecture v1"
+    Với bài hình học, hình vẽ không bổ sung giả thiết. Mọi quan hệ dùng trong lời giải phải đến từ đề bài, dựng hình hợp lệ hoặc bước đã chứng minh.
 
-1. Hai góc kề bù có số đo `3x + 10` và `2x + 20`. Tìm `x`.
-2. Hai góc đối đỉnh có số đo `4x - 5` và `3x + 15`. Tìm `x`.
-3. Cho `a ∥ b`, một góc đồng vị bằng `73°`. Tìm các góc còn lại trong hình tạo bởi một đường cắt.
-4. Một cặp góc trong cùng phía có số đo `2x + 30` và `4x - 6`. Biết hai đường song song. Tìm `x`.
-5. Chứng minh hai đường thẳng song song khi có một cặp góc so le trong bằng nhau.
+## ✅ 9. Tự kiểm tra mức độ sẵn sàng
 
----
+Khi đã luyện tương đối chắc, hãy làm **Core Readiness Check**.
 
-### Mức 3 – Vận dụng
+[✅ Bắt đầu Core Readiness Check](tu-kiem-tra.md){ .md-button .md-button--primary }
 
-1. Cho hai đường thẳng cắt nhau. Một tia phân giác của một góc được vẽ. Tính các góc còn lại từ một số đo đã cho.
-2. Cho `a ∥ b`, đường `c` cắt cả hai. Một góc có số đo `3x + 15`, góc tương ứng có số đo `5x - 25`. Tìm `x` và toàn bộ các góc khác.
-3. Chứng minh `m ∥ n` khi `m ⟂ d` và `n ⟂ d`.
-4. Cho `a ∥ b` và `c ⟂ a`. Chứng minh `c ⟂ b`.
-5. Trong một cấu hình có hai đường song song và một tia phân giác, tính góc chưa biết.
-
----
-
-### Mức 4 – Nâng cao / tổng hợp
-
-1. Một đường gấp khúc cắt hai đường thẳng song song. Hãy dùng góc phụ để tính góc tạo bởi hai đoạn của đường gấp khúc.
-2. Cho ba đường thẳng tạo nhiều giao điểm. Chứng minh hai đường song song bằng cách tạo một cặp góc trung gian bằng nhau.
-3. Kết hợp hai cặp đường thẳng song song để chứng minh hai góc bằng nhau.
-4. Tìm tham số `m` để hai đường thẳng được xác định từ các quan hệ góc trở thành song song.
-5. Một bài chứng minh yêu cầu chỉ ra hai đường vuông góc sau khi đã chứng minh được một cặp đường song song. Trình bày chuỗi suy luận đầy đủ.
-
----
-
-## ✅ 9. Tự kiểm tra
-
-### Mini quiz
-
-### Câu 1
-
-Hai góc đối đỉnh có tính chất gì?
-
-A. Tổng bằng `90°`
-B. Tổng bằng `180°`
-C. Bằng nhau
-D. Luôn là góc vuông
-
-**Đáp án:** C
-
----
-
-### Câu 2
-
-Nếu `a ∥ b` và một đường cắt tạo hai góc trong cùng phía thì tổng hai góc đó bằng:
-
-A. `45°`
-B. `90°`
-C. `180°`
-D. `360°`
-
-**Đáp án:** C
-
----
-
-### Câu 3
-
-Nếu `a ⟂ c` và `b ⟂ c` thì:
-
-A. `a ⟂ b`
-B. `a ∥ b`
-C. `a` trùng `b`
-D. Không kết luận được
-
-**Đáp án:** B
-
----
-
-### Câu 4
-
-`Oz` là tia phân giác của góc `xOy = 100°`. Khi đó `∠xOz` bằng:
-
-A. `25°`
-B. `50°`
-C. `100°`
-D. `200°`
-
-**Đáp án:** B
-
----
-
-### Câu 5
-
-Muốn chứng minh hai đường thẳng song song bằng góc so le trong, cần chứng minh hai góc đó:
-
-A. phụ nhau
-B. bù nhau
-C. bằng nhau
-D. đều nhọn
-
-**Đáp án:** C
-
----
-
-### Checklist tự đánh giá
-
-- [ ] Tôi phân biệt được góc nhọn, vuông, tù, bẹt.
-- [ ] Tôi tính được góc kề bù và góc đối đỉnh.
-- [ ] Tôi sử dụng đúng khái niệm tia phân giác.
-- [ ] Tôi nhận dạng đúng góc so le trong, đồng vị và trong cùng phía.
-- [ ] Tôi biết từ song song suy ra quan hệ góc.
-- [ ] Tôi biết từ quan hệ góc chứng minh song song.
-- [ ] Tôi biết dùng quan hệ vuông góc – song song.
-- [ ] Tôi trình bày được căn cứ ở từng bước suy luận.
-
----
+Readiness chỉ kiểm tra KNTT Core, chấm sau khi nộp và không dùng hard gate.
 
 ## 🔄 10. Liên kết Roadmap
 
@@ -801,14 +723,29 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+- [ ] Đọc đúng điểm, tia, đoạn thẳng, góc và quan hệ nằm giữa/trung điểm.
+- [ ] Nhận dạng đúng các cặp góc và dùng đúng tính chất/dấu hiệu song song.
+- [ ] Hiểu tiên đề Euclid ở mức tính duy nhất đường song song.
+- [ ] Viết được GT/KL và một chuỗi chứng minh ngắn theo dạng mệnh đề + căn cứ.
+- [ ] Không dùng hình vẽ làm giả thiết.
+- [ ] Core Readiness đạt khoảng **80%** hoặc đã chữa hiểu các lỗi còn lại.
 
-- [ ] Tính đúng ít nhất 8/10 bài góc cơ bản.
-- [ ] Nhận dạng chính xác các cặp góc tạo bởi một đường cắt hai đường thẳng.
-- [ ] Chứng minh được hai đường thẳng song song bằng ít nhất hai dấu hiệu khác nhau.
-- [ ] Sử dụng được quan hệ giữa song song và vuông góc.
-- [ ] Không dùng hình vẽ làm căn cứ thay cho giả thiết hoặc định lý.
-- [ ] Viết được lời giải hình học có căn cứ sau mỗi bước suy luận.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra, chữa xong các câu sai trước khi chuyển sang Chuyên đề 14.
+!!! note "Soft Mastery"
+    Không cần đạt 100% mới được học tiếp.
 
-> Khi đạt các yêu cầu trên, học sinh đã có nền tảng cần thiết để chuyển sang **Chuyên đề 14 – Tam giác**.
+!!! warning "Core độc lập Extension"
+    Core-Support, Entrance10 và Specialized-Challenge không phải điều kiện hoàn thành KNTT Core.
+
+---
+
+## ➡️ Tiếp tục học
+
+<div class="topic-workspace-actions" markdown>
+
+[🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
+
+[✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
+
+[→ 14 – Tam giác](../14-tam-giac/index.md){ .md-button }
+
+</div>

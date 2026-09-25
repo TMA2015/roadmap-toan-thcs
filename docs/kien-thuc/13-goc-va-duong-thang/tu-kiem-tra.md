@@ -1,88 +1,26 @@
-# Tự kiểm tra – Chuyên đề 13: Góc và quan hệ giữa các đường thẳng
+# Core Readiness Check – Chuyên đề 13: Góc và quan hệ giữa các đường thẳng
 
-> **Thời gian gợi ý:** 45 phút
-> **Thang điểm:** 10 điểm
+> **Mục tiêu:** kiểm tra khả năng giải độc lập phần **KNTT Core** lớp 6–7.
+>
+> **Nguyên tắc:** không gợi ý, không Tutor, không báo đúng/sai từng câu; chỉ chấm sau khi bấm **Nộp bài**.
 
-# Đề tự kiểm tra
-
-## Câu 1 — 0,5 điểm
-Hai góc bù nhau, một góc bằng \(68^\circ\). Tìm góc còn lại.
-
-## Câu 2 — 0,75 điểm
-Hai đường thẳng cắt nhau tạo một góc \(72^\circ\). Tìm ba góc còn lại.
-
-## Câu 3 — 0,75 điểm
-Tia \(Oz\) là phân giác của \(\angle xOy=110^\circ\). Tính hai góc thành phần.
-
-## Câu 4 — 0,75 điểm
-Nếu \(a\perp c\), \(b\perp c\), \(a,b\) phân biệt, kết luận gì?
-
-## Câu 5 — 1,0 điểm
-Hai góc kề bù có số đo \(3x+15\) và \(2x+15\) độ. Tìm \(x\).
-
-## Câu 6 — 1,0 điểm
-Cho \(a\parallel b\), một góc tạo bởi đường cắt bằng \(65^\circ\). Nêu hai số đo góc xuất hiện trong cấu hình.
-
-## Câu 7 — 1,25 điểm
-Một cặp góc so le trong có số đo \(4x-10\) và \(3x+15\) độ. Tìm \(x\) để hai đường thẳng song song.
-
-## Câu 8 — 1,25 điểm
-Cho \(a\parallel b\), \(c\perp a\). Chứng minh \(c\perp b\).
-
-## Câu 9 — 1,25 điểm
-Hai tia \(Ox,Oy\) đối nhau. \(Oz\) nằm giữa chúng và \(\angle xOz=3\angle zOy\). Tính hai góc.
-
-## Câu 10 — 1,5 điểm
-Một học sinh viết “hai góc bằng nhau nên hai đường thẳng song song”. Hãy sửa thành một lập luận đầy đủ, dùng dấu hiệu góc đồng vị hoặc so le trong.
-
-# Đáp án và hướng dẫn chấm
-
-1. \(112^\circ\).
-2. \(108^\circ,72^\circ,108^\circ\).
-3. \(55^\circ,55^\circ\).
-4. \(a\parallel b\).
-5. \(x=30\).
-6. \(65^\circ\) và \(115^\circ\).
-7. \(x=25\).
-8. Đường cắt tạo góc \(90^\circ\) với \(a\); do \(a\parallel b\), góc đồng vị với nó tại \(b\) cũng \(90^\circ\), nên \(c\perp b\).
-9. \(135^\circ\) và \(45^\circ\).
-10. Phải nêu hai góc được tạo bởi cùng một đường cắt và ở vị trí đồng vị/so le trong; nếu chúng bằng nhau thì suy ra hai đường thẳng song song.
-
-# Bảng truy nguyên lỗi
-
-| Sai câu | Nên quay lại |
-|---|---|
-| 1–3 | Góc bù, đối đỉnh, phân giác |
-| 4, 8 | Vuông góc – song song |
-| 5, 7 | Góc có tham số |
-| 6 | Tính chất đường song song |
-| 9 | Góc bẹt + tỉ lệ |
-| 10 | Dấu hiệu nhận biết song song |
-
-# Thang tự đánh giá
-
-| Điểm | Mức | Hành động đề xuất |
-|---:|---|---|
-| 9,0–10 | Hoàn thành tốt | Có thể tiếp tục lộ trình; vẫn chữa mọi câu chưa chắc |
-| 7,0–8,75 | Đạt | Chữa toàn bộ câu sai rồi chuyển tiếp |
-| 5,0–6,75 | Chưa chắc | Quay lại đúng dạng bài còn yếu và luyện thêm M2–M3 |
-| Dưới 5,0 | Cần củng cố | Học lại kiến thức cốt lõi và làm lại M1–M2 |
-
-> Điểm số chỉ là một tín hiệu. Quan trọng hơn là xác định **loại lỗi** và sửa đúng phần kiến thức gốc.
+<div data-readiness-check-v1="assets/data/assessment/13-goc-va-duong-thang-core-v1.json"></div>
 
 ---
 
-# Checklist sau khi chấm
+## Cách hiểu kết quả
 
-- [ ] Tôi đã ghi lại điểm số.
-- [ ] Tôi đã đối chiếu từng câu sai với **Bảng truy nguyên lỗi**.
-- [ ] Tôi đã xác định lỗi thuộc nhóm kiến thức / biến đổi / dấu / điều kiện / mô hình hóa / kết luận / trình bày.
-- [ ] Tôi đã làm lại từng câu sai mà không nhìn đáp án.
-- [ ] Tôi đã luyện lại kỹ năng yếu trong Practice Bank nếu cần.
-- [ ] Nếu đạt từ 7 điểm trở lên, tôi đã chữa xong các câu sai trước khi chuyển tiếp.
+- **Sẵn sàng học tiếp:** khoảng 80% trở lên.
+- **Nên củng cố thêm:** quay lại Practice Room đúng skill còn sai.
+- **Chưa đủ evidence:** còn quá nhiều câu chưa trả lời.
 
-# Liên kết Roadmap
+!!! note "Soft Mastery"
+    Đây không phải cổng khóa. Học sinh vẫn có thể học tiếp và quay lại củng cố.
 
-- **← Bài học:** [Chuyên đề 13](index.md)
-- **← Luyện tập:** [Bài tập Chuyên đề 13](bai-tap.md)
-- **→ Nếu đạt:** [14 – Tam giác](../14-tam-giac/index.md)
+!!! warning "Không suy từ hình vẽ"
+    Nếu một câu có hình, chỉ dùng những quan hệ đã được đề bài cho hoặc đã chứng minh; không đọc độ dài/góc theo tỉ lệ hình.
+
+## Liên kết Roadmap
+- **← Học:** [Chuyên đề 13](index.md)
+- **← Luyện tập:** [Practice Room](bai-tap.md)
+- **→ Học tiếp:** [14 – Tam giác](../14-tam-giac/index.md)

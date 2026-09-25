@@ -1,0 +1,238 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "GEO13-CORE-READY-V1",
+  "topic": {
+    "id": "13-goc-va-duong-thang",
+    "title": "Chuyên đề 13 – Góc và quan hệ giữa các đường thẳng"
+  },
+  "layer": "KNTT-Core",
+  "title": "Core Readiness Check – Chuyên đề 13",
+  "skill_labels": {
+    "diem-thuoc-duong": "Điểm thuộc / không thuộc đường thẳng",
+    "tia-doi": "Hai tia đối nhau",
+    "trung-diem": "Trung điểm đoạn thẳng",
+    "phan-loai-goc": "Phân loại góc",
+    "goc-phu-bu": "Góc phụ nhau – bù nhau",
+    "tia-phan-giac": "Tia phân giác",
+    "goc-doi-dinh": "Góc đối đỉnh",
+    "goc-so-le-trong": "Góc so le trong",
+    "goc-dong-vi": "Góc đồng vị",
+    "goc-trong-cung-phia": "Góc trong cùng phía",
+    "tinh-chat-song-song": "Tính chất hai đường thẳng song song",
+    "dau-hieu-song-song": "Dấu hiệu nhận biết song song",
+    "diem-nam-giua": "Điểm nằm giữa hai điểm",
+    "tia": "Khái niệm tia",
+    "doan-thang-do-dai": "Đoạn thẳng và độ dài",
+    "khai-niem-goc": "Khái niệm góc",
+    "do-goc": "Số đo góc",
+    "nhan-dang-goc-dac-biet": "Nhận dạng góc ở vị trí đặc biệt",
+    "tien-de-euclid": "Tiên đề Euclid",
+    "gia-thiet-ket-luan": "Giả thiết – kết luận",
+    "lap-luan-chung-minh-ngan": "Lập luận chứng minh ngắn"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "GEO13READY_001",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "diem-nam-giua",
+      "skill": "diem-nam-giua",
+      "points": 1,
+      "question": "M nằm giữa A,B; AM=4, MB=6. AB=",
+      "options": [
+        "10",
+        "2",
+        "24",
+        "6"
+      ],
+      "answer": 0,
+      "explanation": "AB=AM+MB=10."
+    },
+    {
+      "id": "GEO13READY_002",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "trung-diem",
+      "skill": "trung-diem",
+      "points": 1,
+      "question": "Điều kiện đầy đủ để M là trung điểm AB:",
+      "options": [
+        "M nằm giữa A,B và MA=MB",
+        "MA=MB",
+        "M thuộc AB",
+        "AM+MB=AB"
+      ],
+      "answer": 0,
+      "explanation": "Cần đồng thời hai điều kiện."
+    },
+    {
+      "id": "GEO13READY_003",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "khai-niem-goc",
+      "skill": "khai-niem-goc",
+      "points": 1,
+      "question": "Hai cạnh của góc xOy là:",
+      "options": [
+        "Tia Ox và Oy",
+        "Đoạn Ox và Oy",
+        "Đường xO và yO",
+        "Hai điểm x,y"
+      ],
+      "answer": 0,
+      "explanation": "Cạnh góc là hai tia chung gốc."
+    },
+    {
+      "id": "GEO13READY_004",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "goc-doi-dinh",
+      "skill": "goc-doi-dinh",
+      "points": 1,
+      "question": "Một góc bằng 67°. Góc đối đỉnh với nó bằng:",
+      "options": [
+        "67°",
+        "113°",
+        "90°",
+        "33°"
+      ],
+      "answer": 0,
+      "explanation": "Góc đối đỉnh bằng nhau."
+    },
+    {
+      "id": "GEO13READY_005",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tia-phan-giac",
+      "skill": "tia-phan-giac",
+      "points": 1,
+      "question": "Oz phân giác góc 120°. Mỗi góc nhỏ bằng:",
+      "options": [
+        "60°",
+        "120°",
+        "30°",
+        "180°"
+      ],
+      "answer": 0,
+      "explanation": "120/2=60."
+    },
+    {
+      "id": "GEO13READY_006",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "goc-so-le-trong",
+      "skill": "goc-so-le-trong",
+      "points": 1,
+      "question": "Cặp góc so le trong được nhận dạng bởi:",
+      "options": [
+        "Nằm giữa hai đường và khác phía đường cắt",
+        "Cùng phía và ngoài",
+        "Có cùng số đo",
+        "Có cùng đỉnh"
+      ],
+      "answer": 0,
+      "explanation": "Tên vị trí không phụ thuộc số đo."
+    },
+    {
+      "id": "GEO13READY_007",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dau-hieu-song-song",
+      "skill": "dau-hieu-song-song",
+      "points": 1,
+      "question": "Một cặp góc đồng vị bằng nhau khi c cắt a,b cho phép kết luận:",
+      "options": [
+        "a∥b",
+        "a⊥b",
+        "a=b",
+        "Không có kết luận"
+      ],
+      "answer": 0,
+      "explanation": "Đây là dấu hiệu song song."
+    },
+    {
+      "id": "GEO13READY_008",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tien-de-euclid",
+      "skill": "tien-de-euclid",
+      "points": 1,
+      "question": "Qua một điểm ngoài đường thẳng có bao nhiêu đường song song với đường đó?",
+      "options": [
+        "Đúng một",
+        "Không có",
+        "Hai",
+        "Vô số"
+      ],
+      "answer": 0,
+      "explanation": "Tiên đề Euclid."
+    },
+    {
+      "id": "GEO13READY_009",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "gia-thiet-ket-luan",
+      "skill": "gia-thiet-ket-luan",
+      "points": 1,
+      "question": "Trong “Nếu P thì Q”, kết luận là:",
+      "options": [
+        "Q",
+        "P",
+        "P và Q",
+        "Không có"
+      ],
+      "answer": 0,
+      "explanation": "Q là điều phải suy ra."
+    },
+    {
+      "id": "GEO13READY_010",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "lap-luan-chung-minh-ngan",
+      "skill": "lap-luan-chung-minh-ngan",
+      "points": 1,
+      "question": "Căn cứ nào không được dùng độc lập để chứng minh?",
+      "options": [
+        "Hình vẽ trông có vẻ đúng",
+        "Giả thiết",
+        "Định nghĩa",
+        "Định lí đã đủ điều kiện"
+      ],
+      "answer": 0,
+      "explanation": "Không suy luận từ hình vẽ theo tỉ lệ."
+    }
+  ],
+  "next_topic": {
+    "id": "14-tam-giac",
+    "title": "Chuyên đề 14 – Tam giác"
+  }
+}

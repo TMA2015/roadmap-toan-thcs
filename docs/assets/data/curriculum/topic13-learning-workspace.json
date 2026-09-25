@@ -1,0 +1,158 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "13-goc-va-duong-thang",
+  "title": "Góc và quan hệ giữa các đường thẳng",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only mapped Core cards contribute to readiness. Core-Support and Entrance10/Challenge never gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "geo13-core-1",
+      "order": 1,
+      "title": "Điểm, tia, đoạn thẳng",
+      "kntt_lessons": [
+        "Lớp 6 · Bài 32–35"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "diem-thuoc-duong",
+        "diem-nam-giua",
+        "tia",
+        "tia-doi",
+        "doan-thang-do-dai",
+        "trung-diem"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "GEO13MICRO_001",
+        "GEO13MICRO_002",
+        "GEO13MICRO_003"
+      ]
+    },
+    {
+      "id": "geo13-core-2",
+      "order": 2,
+      "title": "Góc và các quan hệ góc",
+      "kntt_lessons": [
+        "Lớp 6 · Bài 36–37",
+        "Lớp 7 · Bài 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "khai-niem-goc",
+        "do-goc",
+        "phan-loai-goc",
+        "goc-phu-bu",
+        "goc-doi-dinh",
+        "tia-phan-giac",
+        "nhan-dang-goc-dac-biet"
+      ],
+      "prerequisites": [
+        "tia"
+      ],
+      "micro_practice": [
+        "GEO13MICRO_004",
+        "GEO13MICRO_005",
+        "GEO13MICRO_006"
+      ]
+    },
+    {
+      "id": "geo13-core-3",
+      "order": 3,
+      "title": "Góc tạo bởi một đường cắt",
+      "kntt_lessons": [
+        "Lớp 7 · Bài 9–10"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "goc-so-le-trong",
+        "goc-dong-vi",
+        "goc-trong-cung-phia"
+      ],
+      "prerequisites": [
+        "nhan-dang-goc-dac-biet"
+      ],
+      "micro_practice": [
+        "GEO13MICRO_007",
+        "GEO13MICRO_008",
+        "GEO13MICRO_009"
+      ]
+    },
+    {
+      "id": "geo13-core-4",
+      "order": 4,
+      "title": "Song song và tiên đề Euclid",
+      "kntt_lessons": [
+        "Lớp 7 · Bài 9–10"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tinh-chat-song-song",
+        "dau-hieu-song-song",
+        "tien-de-euclid"
+      ],
+      "prerequisites": [
+        "goc-so-le-trong",
+        "goc-dong-vi"
+      ],
+      "micro_practice": [
+        "GEO13MICRO_010",
+        "GEO13MICRO_011",
+        "GEO13MICRO_012"
+      ]
+    },
+    {
+      "id": "geo13-core-5",
+      "order": 5,
+      "title": "Định lí, giả thiết và kết luận",
+      "kntt_lessons": [
+        "Lớp 7 · Bài 11"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "gia-thiet-ket-luan",
+        "lap-luan-chung-minh-ngan"
+      ],
+      "prerequisites": [
+        "tinh-chat-song-song",
+        "dau-hieu-song-song"
+      ],
+      "micro_practice": [
+        "GEO13MICRO_013",
+        "GEO13MICRO_014",
+        "GEO13MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "geo13-support-1",
+      "layer": "Core-Support",
+      "title": "Vuông góc – song song như công cụ hỗ trợ",
+      "gates_core": false
+    },
+    {
+      "id": "geo13-ent10-1",
+      "layer": "Entrance10",
+      "title": "Chuỗi suy luận góc nhiều bước trong hình tổng hợp",
+      "gates_core": false
+    },
+    {
+      "id": "geo13-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Bài tham số và cấu hình suy luận phức hợp",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/13-goc-va-duong-thang-micro-v1.json",
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json",
+  "observed_signal_policy": {
+    "rule": "Signals are observations only; they never create causal remediation without sufficient learner evidence and a reviewed rule."
+  },
+  "qa_notes": [
+    "All 21 mapped Core skill IDs are represented across cards.",
+    "Text-first micro items avoid scale-dependent visual inference.",
+    "duong-vuong-goc and vuong-goc-song-song remain Core-Support in the current coverage matrix."
+  ]
+}
