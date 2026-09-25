@@ -10,14 +10,18 @@
   let knowledgeGraphPromise = null;
 
   const loadStats = () => {
+    if (window.RoadmapLearnerEvidence?.load) return window.RoadmapLearnerEvidence.load();
     try {
-      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || { questions: {}, tags: {} };
+      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || { questions: {}, tags: {}, observed_signals: [] };
     } catch (_) {
-      return { questions: {}, tags: {} };
+      return { questions: {}, tags: {}, observed_signals: [] };
     }
   };
 
-  const saveStats = (stats) => localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
+  const saveStats = (stats) => {
+    if (window.RoadmapLearnerEvidence?.save) window.RoadmapLearnerEvidence.save(stats);
+    else localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
+  };
   const loadRecovery = () => {
     try { return JSON.parse(localStorage.getItem(RECOVERY_KEY)) || { events: [] }; }
     catch (_) { return { events: [] }; }
@@ -608,7 +612,7 @@
       const question = this.currentQuestion();
       const correct = selectedIndex === question.answer;
       if (correct) this.score += 1;
-      this.record(question, correct, this.hintLevel);
+      this.record(question, correct, this.hintLevel, selectedIndex);
 
       const optionButtons = [...this.optionsEl.querySelectorAll(".practice-option")];
       optionButtons.forEach((button) => {
@@ -665,35 +669,46 @@
       this.renderQuestion();
     }
 
-    record(question, correct, hintsUsed = 0) {
-      const questionRecord = this.stats.questions[question.id] || { attempted: 0, correct: 0 };
-      questionRecord.attempted += 1;
-      if (correct) questionRecord.correct += 1;
-      if (hintsUsed > 0) {
-        questionRecord.hinted_attempts = (questionRecord.hinted_attempts || 0) + 1;
-        questionRecord.hints_used = (questionRecord.hints_used || 0) + hintsUsed;
-      }
-      if (correct) {
-        if (hintsUsed > 0) questionRecord.correct_with_hint = (questionRecord.correct_with_hint || 0) + 1;
-        else questionRecord.correct_without_hint = (questionRecord.correct_without_hint || 0) + 1;
-      }
-      this.stats.questions[question.id] = questionRecord;
-
-      questionSkills(question).forEach((skill) => {
-        const record = this.stats.tags[skill] || { attempted: 0, correct: 0 };
-        record.attempted += 1;
-        if (correct) record.correct += 1;
+    record(question, correct, hintsUsed = 0, selectedIndex = null) {
+      if (window.RoadmapLearnerEvidence?.recordAnswer) {
+        const result = window.RoadmapLearnerEvidence.recordAnswer({
+          question,
+          correct,
+          hintsUsed,
+          selectedIndex,
+          stats: this.stats
+        });
+        this.stats = result.stats;
+      } else {
+        const questionRecord = this.stats.questions[question.id] || { attempted: 0, correct: 0 };
+        questionRecord.attempted += 1;
+        if (correct) questionRecord.correct += 1;
         if (hintsUsed > 0) {
-          record.hinted_attempts = (record.hinted_attempts || 0) + 1;
-          record.hints_used = (record.hints_used || 0) + hintsUsed;
+          questionRecord.hinted_attempts = (questionRecord.hinted_attempts || 0) + 1;
+          questionRecord.hints_used = (questionRecord.hints_used || 0) + hintsUsed;
         }
         if (correct) {
-          if (hintsUsed > 0) record.correct_with_hint = (record.correct_with_hint || 0) + 1;
-          else record.correct_without_hint = (record.correct_without_hint || 0) + 1;
+          if (hintsUsed > 0) questionRecord.correct_with_hint = (questionRecord.correct_with_hint || 0) + 1;
+          else questionRecord.correct_without_hint = (questionRecord.correct_without_hint || 0) + 1;
         }
-        this.stats.tags[skill] = record;
-      });
-      saveStats(this.stats);
+        this.stats.questions[question.id] = questionRecord;
+
+        questionSkills(question).forEach((skill) => {
+          const record = this.stats.tags[skill] || { attempted: 0, correct: 0 };
+          record.attempted += 1;
+          if (correct) record.correct += 1;
+          if (hintsUsed > 0) {
+            record.hinted_attempts = (record.hinted_attempts || 0) + 1;
+            record.hints_used = (record.hints_used || 0) + hintsUsed;
+          }
+          if (correct) {
+            if (hintsUsed > 0) record.correct_with_hint = (record.correct_with_hint || 0) + 1;
+            else record.correct_without_hint = (record.correct_without_hint || 0) + 1;
+          }
+          this.stats.tags[skill] = record;
+        });
+        saveStats(this.stats);
+      }
       questionSkills(question).forEach((skill) => this.closePendingRecoveryOnTarget(skill));
     }
 
