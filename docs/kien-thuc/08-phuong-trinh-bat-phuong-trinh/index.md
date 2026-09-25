@@ -287,37 +287,37 @@ $$-2x>-4\Rightarrow x<2.$$
 
 ---
 
-## 📝 8. Luyện tập
+## 📝 8. Luyện tập tiếp theo
 
-### Mức 1 – Nhận biết / củng cố
+Micro-practice trong các Learning Cards dùng để kiểm tra nhanh ngay sau khi học. Khi muốn luyện sâu hơn, luyện từng skill hoặc làm bài tự luận, hãy chuyển sang **Practice Room**.
 
-10–15 bài giải trực tiếp, tập trung vào độ chính xác.
+[🎯 Mở Practice Room – Chuyên đề 08](bai-tap.md){ .md-button .md-button--primary }
 
-### Mức 2 – Thông hiểu / thành thạo dạng bài
+Trong Practice Room:
 
-15–20 bài phân loại theo phương trình bậc nhất, tích, chứa mẫu và bất phương trình.
+- **Luyện nhanh tương tác:** Practice Engine chọn câu từ ngân hàng lớn, có feedback, gợi ý và Tutor.
+- **Luyện tự luận & trình bày:** tự giải trên giấy/vở rồi mở gợi ý hoặc lời giải để tự đối chiếu.
+- Core / Entrance10 / Cross-link / Challenge được tách rõ.
 
-### Mức 3 – Vận dụng
-
-10–15 bài lập phương trình/bất phương trình và bài tổng hợp.
-
-### Mức 4 – Nâng cao / thi vào 10
-
-Một đề chuyên đề 45–60 phút, trộn các dạng quan trọng.
-
-> **Nguyên tắc:** học sinh nên đạt ít nhất 80% ở Bộ A và B trước khi chuyển trọng tâm sang Bộ C/D.
+!!! info "Phân biệt mục đích"
+    Micro-practice kiểm tra hiểu ngay; Practice Room dùng để **rèn kỹ năng**. Kết quả luyện tập là formative evidence, không phải điểm kiểm tra cuối chuyên đề.
 
 ---
 
-## ✅ 9. Tự kiểm tra
+## ✅ 9. Tự kiểm tra mức độ sẵn sàng
 
-- [ ] Tôi giải được phương trình bậc nhất mà không cần nhìn mẫu.
-- [ ] Tôi nhận ra khi nào nên phân tích thành tích.
-- [ ] Tôi luôn viết điều kiện xác định trước khi khử mẫu.
-- [ ] Tôi nhớ đổi chiều khi nhân/chia với số âm.
-- [ ] Tôi biểu diễn được tập nghiệm trên trục số.
-- [ ] Tôi lập được phương trình từ một bài toán thực tế đơn giản.
-- [ ] Tôi kiểm tra và kết luận nghiệm đúng ngữ cảnh.
+Khi đã luyện tương đối chắc, hãy làm **Core Readiness Check**.
+
+[✅ Bắt đầu Core Readiness Check](tu-kiem-tra.md){ .md-button .md-button--primary }
+
+Trong Readiness Check:
+
+- không hint và không Tutor khi đang làm;
+- không báo đúng/sai từng câu;
+- chỉ chấm sau khi bấm **Nộp bài**;
+- kết quả phân tích theo assessed skill;
+- là **Soft Mastery**: không khóa chuyên đề tiếp theo;
+- Entrance10 / Cross-link / Challenge không tính vào Core readiness.
 
 ---
 
@@ -341,11 +341,30 @@ Một đề chuyên đề 45–60 phút, trộn các dạng quan trọng.
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Học sinh được xem là **nắm vững chuyên đề** khi có thể:
+Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi học sinh có phần lớn các bằng chứng sau:
 
-1. Tự giải chính xác các bài cơ bản.
-2. Nhận dạng đúng dạng bài trước khi giải.
-3. Không mắc các lỗi điều kiện, dấu và kết luận.
-4. Giải được bài vận dụng phù hợp với chương trình đang học.
-5. Biết kiến thức này liên hệ thế nào với **hệ phương trình, hàm số và bài toán thực tế**.
-6. Đạt tối thiểu **80% bài luyện cốt lõi** và **7/10** ở bài Tự kiểm tra; chữa xong các câu sai trước khi chuyển sang chuyên đề kế tiếp.
+- [ ] Hiểu và giải thích được các quy tắc Core của chuyên đề.
+- [ ] Làm tương đối ổn định các skill Core trong Practice Room.
+- [ ] Không lặp lại ổn định cùng một lỗi nền tảng sau khi đã được chữa.
+- [ ] Core Readiness Check đạt khoảng **80%** hoặc học sinh đã hiểu và chữa được các lỗi còn lại.
+- [ ] Có thể trình bày ít nhất một số bài tự luận Core mà không mở lời giải trước.
+
+!!! note "Soft Mastery"
+    Không cần đạt 100% mới được học tiếp. Nếu Readiness Check cho thấy một vài kỹ năng còn yếu, hệ thống khuyến nghị luyện lại đúng kỹ năng đó; học sinh vẫn có thể chuyển sang chuyên đề tiếp theo.
+
+!!! warning "Core độc lập Extension"
+    Entrance10, Cross-link và Specialized-Challenge không phải điều kiện để hoàn thành KNTT Core.
+
+---
+
+## ➡️ Tiếp tục học
+
+<div class="topic-workspace-actions" markdown>
+
+[🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
+
+[✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
+
+[→ 09 – Hệ phương trình bậc nhất hai ẩn](../09-he-phuong-trinh/index.md){ .md-button }
+
+</div>
