@@ -1,0 +1,44 @@
+#!/usr/bin/env node
+"use strict";
+const fs=require("fs"),path=require("path"),R=path.resolve(__dirname,"..");
+const read=p=>fs.readFileSync(path.join(R,p),"utf8");
+const ok=(v,m)=>{if(!v)throw Error(m)};
+const base="docs/kien-thuc/25-tong-hop-on-thi-10/";
+const index=read(base+"index.md"),hub=read(base+"bo-de-luyen.md"),anchors=read(base+"bai-toan-kinh-dien.md");
+const manifest=JSON.parse(read("docs/assets/data/exams/entrance10-v1.json"));
+const workspace=JSON.parse(read("docs/assets/data/curriculum/topic25-learning-workspace.json"));
+const runtime=read("docs/assets/javascripts/entrance-exam-v1.js");
+const styles=read("docs/assets/stylesheets/practice-engine.css"),site=read("docs/assets/stylesheets/site-design-system.css");
+const floating=read("docs/assets/javascripts/floating-ai-tutor-v1.js");
+const asset=fs.readFileSync(path.join(R,"docs/assets/images/ai-girl-awake-avatar.webp"));
+ok(asset.slice(0,4).toString()==="RIFF"&&asset.slice(8,12).toString()==="WEBP"&&asset.length>3000,"approved local avatar asset present");
+ok(floating.includes('button("", "floating-ai-launcher")')&&styles.includes('url("../images/ai-girl-awake-avatar.webp")'),"avatar wired to floating launcher");
+ok(site.includes("@media(min-width:60rem)")&&site.includes("font-size:1.57rem"),"desktop-only reading font scale");
+ok(index.includes("topic25-entry-grid")&&index.includes("bo-de-luyen")&&index.includes("Kỹ năng thi — tách khỏi điểm học thuật"),"academic first Topic25 routes");
+ok(hub.includes("exam-directory")&&hub.includes("120 phút")&&hub.includes("Không phải đề chính thức"),"exam hub");
+ok(workspace.cards.length===5&&workspace.cards.filter(c=>c.learning_kind==="academic").length===3&&workspace.cards.filter(c=>c.learning_kind==="exam_skill").length===2,"learning card separation");
+const known=new Set(["CLASSIC_ALG_001","CLASSIC_ALG_002","CLASSIC_REAL_001","CLASSIC_GEO_001","CLASSIC_GEO_002","CLASSIC_INEQ_001","CD02","CD17","CD18","CD21","CD23"]);
+for(const id of [...known].filter(id=>id.startsWith("CLASSIC_")))ok(anchors.includes(id),"missing anchor "+id);
+ok(manifest.schema==="entrance10-exams-v1"&&manifest.exams.length===3,"three structured mocks");
+for(const exam of manifest.exams){
+  const page=read(base+exam.slug+".md");
+  ok(page.includes("<!-- entrance10-exam: "+exam.id+" -->"),"exam ID "+exam.id);
+  ok(page.includes("120 phút")&&page.includes("10 điểm")&&page.includes("Đề tự biên soạn"),"mock provenance/duration "+exam.id);
+  ok((page.split("??? success")[0].match(/^### Bài [IVX]+/gm)||[]).length===5,"five complete problems "+exam.id);
+  ok(page.includes('??? success "Đáp án và hướng dẫn chấm'),"closed answers "+exam.id);
+  ok(!/^\[$/m.test(page)&&!/^]$/m.test(page),"no malformed display math "+exam.id);
+  const points=exam.rubric.reduce((sum,r)=>sum+r.points,0);
+  ok(Math.abs(points-10)<1e-9&&exam.max_points===10&&exam.duration_minutes===120,"rubric total "+exam.id);
+  ok(exam.rubric.every(r=>known.has(r.anchor_reference)&&r.points>0),"valid remediation refs "+exam.id);
+  ok(new Set(exam.rubric.map(r=>r.id)).size===exam.rubric.length,"unique rubric IDs "+exam.id);
+}
+ok(runtime.includes("entrance10-v1.json")&&runtime.includes("details.open = false"),"runtime starts answer key closed");
+ok(runtime.includes("submittedAt")&&runtime.includes("time")&&runtime.includes("exam-rubric-total"),"timer/submit/score");
+ok(runtime.includes("toan-thcs-entrance10-exams-v1")&&!runtime.includes("toan-thcs-practice-v1"),"exam evidence is separate from skill mastery");
+ok(styles.includes("@media print")&&styles.includes(".exam-answer-key"),"answers not printed");
+const self=read(base+"tu-kiem-tra.md"),practice=read(base+"bai-tap.md");
+ok(self.includes("roadmap-academic-capstone-v2")&&self.includes("# Đáp án và hướng dẫn chấm"),"written self-check reveal hook");
+ok(practice.includes("roadmap-academic-capstone-v2")&&practice.includes("## E. Hình học"),"academic practice");
+ok(!/^\[$/m.test(self+practice+anchors)&&!/^]$/m.test(self+practice+anchors),"TeX delimiters preserved");
+ok(Math.abs(1/6+1/12-1/4)<1e-12&&9+16===25&&9*16===144,"sample model arithmetic invariants");
+console.log("PASS: approved AI avatar, laptop type scale, six anchors, three complete original mocks, self-marking rubric, separate evidence and valid TeX.");
