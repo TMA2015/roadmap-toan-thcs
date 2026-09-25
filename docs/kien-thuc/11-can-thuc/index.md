@@ -365,99 +365,24 @@ Từ một đẳng thức đúng có thể suy ra đẳng thức sau khi bình p
 
 ---
 
-## 📝 8. Luyện tập
+## 📝 8. Luyện tập tiếp theo
 
-### Mức 1 – Nhận biết
+Micro-practice trong các Learning Cards dùng để kiểm tra nhanh ngay sau khi học. Khi muốn luyện sâu hơn, hãy chuyển sang **Practice Room**.
 
-1. Tìm điều kiện xác định của `√(x - 5)`.
-2. Rút gọn `√20`.
-3. Tính `√49`.
-4. Viết đúng dạng của `√((x + 2)²)`.
-5. Rút gọn `3√2 + 4√2 - √2`.
+[🎯 Mở Practice Room](bai-tap.md){ .md-button .md-button--primary }
 
-### Mức 2 – Thông hiểu
+Trong Practice Room, luyện tương tác và bài tự luận được tách theo Core / Entrance10 / Challenge.
 
-1. Rút gọn `√45 + √20`.
-2. Rút gọn `√75 - 2√12`.
-3. Trục căn thức ở mẫu `3/√6`.
-4. Tìm điều kiện xác định của `1/√(2x - 1)`.
-5. Tính `√18 · √8`.
+!!! info "Phân biệt mục đích"
+    Micro-practice kiểm tra hiểu ngay; Practice Room dùng để **rèn kỹ năng**. Kết quả luyện tập là formative evidence, không phải điểm kiểm tra cuối chuyên đề.
 
-### Mức 3 – Vận dụng
+## ✅ 9. Tự kiểm tra mức độ sẵn sàng
 
-1. Rút gọn `(√12 + √27)/√3`.
-2. Trục căn thức ở mẫu `1/(√3 + 1)`.
-3. Giải `√(2x + 3) = 5`.
-4. Rút gọn biểu thức chứa nhiều căn rồi tính tại một giá trị cho trước.
-5. So sánh hai biểu thức căn bằng cách biến đổi về dạng đơn giản.
+Khi đã luyện tương đối chắc, hãy làm **Core Readiness Check**.
 
-### Mức 4 – Nâng cao / tổng hợp
+[✅ Bắt đầu Core Readiness Check](tu-kiem-tra.md){ .md-button .md-button--primary }
 
-1. Rút gọn biểu thức chứa tham số và xác định điều kiện để biểu thức có nghĩa.
-2. Tìm `x` để một biểu thức chứa căn nhận giá trị nguyên.
-3. Chứng minh một biểu thức căn không phụ thuộc vào biến sau khi rút gọn.
-4. Kết hợp liên hợp, phân tích nhân tử và điều kiện xác định trong một bài nhiều bước.
-5. Bài tổng hợp theo cấu trúc đề thi vào lớp 10.
-
----
-
-## ✅ 9. Tự kiểm tra
-
-### Mini quiz
-
-**Câu 1.** `√(x²)` bằng:
-
-A. `x`
-B. `-x`
-C. `|x|`
-D. `±x`
-
-**Câu 2.** Điều kiện của `√(3x - 6)` là:
-
-A. `x > 2`
-B. `x ≥ 2`
-C. `x ≤ 2`
-D. mọi `x`
-
-**Câu 3.** `√50` rút gọn thành:
-
-A. `25√2`
-B. `5√2`
-C. `10√5`
-D. `2√25`
-
-**Câu 4.** `√8 + √18` bằng:
-
-A. `√26`
-B. `5√2`
-C. `2√26`
-D. `13√2`
-
-**Câu 5.** Liên hợp của `√5 + 2` là:
-
-A. `√5 - 2`
-B. `-√5 + 2`
-C. `√5 + 2`
-D. `5 - 4`
-
-### Đáp án
-
-1. C
-2. B
-3. B
-4. B
-5. A
-
-### Checklist tự đánh giá
-
-- [ ] Tôi luôn tìm điều kiện xác định trước khi biến đổi.
-- [ ] Tôi nhớ `√(A²) = |A|`.
-- [ ] Tôi phân biệt được căn đồng dạng và không đồng dạng.
-- [ ] Tôi rút gọn được căn số và căn có biến.
-- [ ] Tôi trục căn thức ở mẫu đúng bằng liên hợp.
-- [ ] Tôi kiểm tra nghiệm sau khi bình phương phương trình.
-
----
+Readiness Check không hint/Tutor, không báo đúng sai từng câu, chỉ chấm sau khi nộp và không khóa chuyên đề tiếp theo.
 
 ## 🔄 10. Liên kết Roadmap
 
@@ -490,12 +415,28 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+- [ ] Nắm chắc các skill KNTT Core và điều kiện xác định.
+- [ ] Không nhầm \(\sqrt{A^2}\) với A khi chưa xét dấu.
+- [ ] Biến đổi/trục căn thức ổn định.
+- [ ] Phân biệt chắc căn bậc hai và căn bậc ba.
+- [ ] Core Readiness đạt khoảng **80%** hoặc đã chữa hiểu các lỗi còn lại.
 
-- [ ] Tìm đúng điều kiện xác định trong ít nhất 9/10 bài cơ bản.
-- [ ] Rút gọn đúng các căn thức cơ bản và căn đồng dạng.
-- [ ] Trục căn thức ở mẫu đúng ở các dạng chuẩn.
-- [ ] Giải độc lập được bài rút gọn nhiều bước.
-- [ ] Không còn nhầm `√(A²)` với `A` khi chưa xét dấu.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai.
-- [ ] Biết khi nào kiến thức căn thức được dùng trong phương trình và phương trình bậc hai.
+!!! note "Soft Mastery"
+    Không cần đạt 100% mới được học tiếp.
+
+!!! warning "Core độc lập Extension"
+    Entrance10 và Specialized-Challenge không phải điều kiện để hoàn thành Core.
+
+---
+
+## ➡️ Tiếp tục học
+
+<div class="topic-workspace-actions" markdown>
+
+[🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
+
+[✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
+
+[→ 12 – Phương trình bậc hai & Viète](../12-phuong-trinh-bac-hai-viete/index.md){ .md-button }
+
+</div>

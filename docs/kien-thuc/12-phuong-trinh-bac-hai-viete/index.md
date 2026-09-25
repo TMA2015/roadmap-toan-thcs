@@ -517,97 +517,24 @@ Nếu `a` chứa tham số, phải loại trường hợp `a = 0` trước khi d
 
 ---
 
-## 📝 8. Luyện tập
+## 📝 8. Luyện tập tiếp theo
 
-### Mức 1 – Nhận biết
+Micro-practice trong các Learning Cards dùng để kiểm tra nhanh ngay sau khi học. Khi muốn luyện sâu hơn, hãy chuyển sang **Practice Room**.
 
-1. Xác định `a, b, c` của `3x² - 7x + 2 = 0`.
-2. Tính `Δ` của `x² - 4x + 3 = 0`.
-3. Giải `x² - 9 = 0`.
-4. Giải `x² - 6x + 9 = 0`.
+[🎯 Mở Practice Room](bai-tap.md){ .md-button .md-button--primary }
 
-### Mức 2 – Thông hiểu
+Trong Practice Room, luyện tương tác và bài tự luận được tách theo Core / Entrance10 / Challenge.
 
-1. Giải `2x² - 5x + 2 = 0`.
-2. Giải `3x² + 2x - 1 = 0`.
-3. Với `x² - 7x + 10 = 0`, tính tổng và tích hai nghiệm.
-4. Cho hai nghiệm của `x² - 4x + 1 = 0`. Tính `x₁² + x₂²`.
+!!! info "Phân biệt mục đích"
+    Micro-practice kiểm tra hiểu ngay; Practice Room dùng để **rèn kỹ năng**. Kết quả luyện tập là formative evidence, không phải điểm kiểm tra cuối chuyên đề.
 
-### Mức 3 – Vận dụng
+## ✅ 9. Tự kiểm tra mức độ sẵn sàng
 
-1. Tìm `m` để `x² - 2x + m = 0` có hai nghiệm phân biệt.
-2. Tìm `m` để `x² - (m + 2)x + 2m = 0` có hai nghiệm dương.
-3. Cho `x₁, x₂` là nghiệm của `x² - 5x + 2 = 0`. Tính `x₁³ + x₂³`.
-4. Lập phương trình bậc hai có hai nghiệm là `3` và `-2`.
+Khi đã luyện tương đối chắc, hãy làm **Core Readiness Check**.
 
-### Mức 4 – Nâng cao / tổng hợp
+[✅ Bắt đầu Core Readiness Check](tu-kiem-tra.md){ .md-button .md-button--primary }
 
-1. Cho `x₁, x₂` là hai nghiệm của `x² - (m + 1)x + m - 2 = 0`. Tìm `m` để `x₁² + x₂² = 13`.
-2. Tìm `m` để phương trình `x² - 2(m + 1)x + m² = 0` có hai nghiệm dương phân biệt.
-3. Cho `x₁, x₂` là nghiệm của `x² - 3x - 1 = 0`. Lập phương trình có hai nghiệm `x₁ + 1` và `x₂ + 1`.
-4. Chứng minh một biểu thức đối xứng theo hai nghiệm không phụ thuộc vào việc tính riêng từng nghiệm.
-
----
-
-## ✅ 9. Tự kiểm tra
-
-### Mini quiz
-
-**Câu 1.** Với `x² - 5x + 6 = 0`, `Δ` bằng bao nhiêu?
-
-A. `1`
-B. `5`
-C. `25`
-D. `49`
-
-**Câu 2.** Nếu phương trình bậc hai có `Δ = 0` thì:
-
-A. vô nghiệm
-B. có một nghiệm kép
-C. có hai nghiệm phân biệt
-D. luôn có nghiệm `0`
-
-**Câu 3.** Nếu `x₁, x₂` là nghiệm của `2x² - 3x - 5 = 0` thì `x₁ + x₂` bằng:
-
-A. `-3/2`
-B. `3/2`
-C. `-5/2`
-D. `5/2`
-
-**Câu 4.** Nếu `x₁x₂ < 0` thì hai nghiệm thực:
-
-A. cùng dương
-B. cùng âm
-C. trái dấu
-D. bằng nhau
-
-**Câu 5.** Phương trình có hai nghiệm tổng `S`, tích `P` có thể viết dạng:
-
-A. `x² + Sx + P = 0`
-B. `x² - Sx + P = 0`
-C. `x² + Px - S = 0`
-D. `x² - Px + S = 0`
-
-### Đáp án
-
-1. A
-2. B
-3. B
-4. C
-5. B
-
-### Checklist tự đánh giá
-
-- [ ] Tôi xác định đúng `a, b, c` kể cả khi hệ số âm.
-- [ ] Tôi tính đúng `Δ` và kết luận đúng số nghiệm.
-- [ ] Tôi dùng được công thức nghiệm và công thức thu gọn.
-- [ ] Tôi nhớ đúng hai hệ thức Viète.
-- [ ] Tôi tính được biểu thức đối xứng theo hai nghiệm mà không cần giải phương trình.
-- [ ] Tôi biết xử lý bài tham số về số nghiệm và dấu nghiệm.
-- [ ] Tôi biết lập phương trình khi biết tổng và tích nghiệm.
-- [ ] Tôi hiểu ở mức mở rộng mối liên hệ giữa nghiệm phương trình và giao điểm của đồ thị bậc hai với trục `Ox`.
-
----
+Readiness Check không hint/Tutor, không báo đúng sai từng câu, chỉ chấm sau khi nộp và không khóa chuyên đề tiếp theo.
 
 ## 🔄 10. Liên kết Roadmap
 
@@ -645,15 +572,28 @@ Xem toàn bộ kiến trúc tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+- [ ] Nhận dạng đúng phương trình bậc hai và hệ số.
+- [ ] Tính Δ/Δ' và giải phương trình ổn định.
+- [ ] Nhẩm nghiệm khi cấu trúc phù hợp.
+- [ ] Dùng Viète đúng và lập được phương trình từ nghiệm.
+- [ ] Core Readiness đạt khoảng **80%** hoặc đã chữa hiểu các lỗi còn lại.
 
-- [ ] Giải chính xác các phương trình bậc hai cơ bản.
-- [ ] Phân biệt được ba trường hợp của `Δ`.
-- [ ] Sử dụng Viète thành thạo theo cả hai chiều.
-- [ ] Làm được bài tính biểu thức theo nghiệm mà không cần giải nghiệm cụ thể.
-- [ ] Xử lý được bài tham số về số nghiệm và dấu nghiệm.
-- [ ] Lập được phương trình mới từ tổng và tích nghiệm.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai.
-- [ ] Làm độc lập được phần luyện tập Mức 2 và phần lớn Mức 3.
+!!! note "Soft Mastery"
+    Không cần đạt 100% mới được học tiếp.
 
-> 🎯 **Đích cuối:** không học công thức nghiệm và Viète như hai mảng rời rạc. Hãy nhìn chúng như hai công cụ bổ sung nhau: **Δ cho biết phương trình có bao nhiêu nghiệm; Viète cho biết các nghiệm liên hệ với hệ số như thế nào**.
+!!! warning "Core độc lập Extension"
+    Tham số, Entrance10 và Specialized-Challenge không phải điều kiện để hoàn thành Core.
+
+---
+
+## ➡️ Tiếp tục học
+
+<div class="topic-workspace-actions" markdown>
+
+[🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
+
+[✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
+
+[→ 13 – Góc và đường thẳng](../13-goc-va-duong-thang/index.md){ .md-button }
+
+</div>

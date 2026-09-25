@@ -1,111 +1,29 @@
-# Tự kiểm tra – Chuyên đề 11: Căn thức
+# Core Readiness Check – Chuyên đề 11 – Căn thức và biến đổi căn thức
 
-> **Thời gian gợi ý:** 45 phút
-> **Thang điểm:** 10 điểm
+> **Mục tiêu:** kiểm tra khả năng giải độc lập phần **KNTT Core** sau khi đã học và luyện tập.
+>
+> **Nguyên tắc:** không gợi ý, không Tutor và không báo đúng/sai từng câu trong lúc làm. Kết quả chỉ xuất hiện sau khi bấm **Nộp bài**.
 
----
-
-## Câu 1 — 0,5 điểm
-Tính \(\sqrt{121}\).
-
-## Câu 2 — 0,75 điểm
-Tìm điều kiện xác định của \(\dfrac1{\sqrt{2x-3}}\).
-
-## Câu 3 — 0,75 điểm
-Rút gọn \(\sqrt{98}\).
-
-## Câu 4 — 0,75 điểm
-Rút gọn \(\sqrt{(x-2)^2}\).
-
-## Câu 5 — 1,0 điểm
-Rút gọn \(\sqrt{45}+\sqrt{20}-\sqrt5\).
-
-## Câu 6 — 1,0 điểm
-Trục căn thức ở mẫu:
-$$
-\frac2{\sqrt5+1}.
-$$
-
-## Câu 7 — 1,25 điểm
-Giải:
-$$
-\sqrt{x+4}=x.
-$$
-
-## Câu 8 — 1,25 điểm
-Với \(x\ge0\), rút gọn:
-$$
-A=\sqrt{18x^2}+x\sqrt2.
-$$
-
-## Câu 9 — 1,25 điểm
-Giải:
-$$
-\sqrt{x+1}=x-1.
-$$
-
-## Câu 10 — 1,5 điểm
-Tìm điều kiện xác định và rút gọn:
-$$
-B=\frac{\sqrt x-3}{x-9}.
-$$
+<div data-readiness-check-v1="assets/data/assessment/11-can-thuc-core-v1.json"></div>
 
 ---
 
-# Đáp án
+## Cách hiểu kết quả
 
-1. \(11\).
-2. \(x>\frac32\).
-3. \(7\sqrt2\).
-4. \(|x-2|\).
-5. \(4\sqrt5\).
-6. \(\frac{\sqrt5-1}{2}\).
-7. \(x=\frac{1+\sqrt{17}}2\).
-8. \(4x\sqrt2\).
-9. \(x=3\).
-10. \(x\ge0,\ x\ne9\), và \(B=\frac1{\sqrt x+3}\).
+- **Sẵn sàng học tiếp:** kết quả Core hiện tại đạt khoảng 80% trở lên.
+- **Nên củng cố thêm:** hệ thống chỉ ra các kỹ năng còn sai để quay lại Practice Room.
+- **Chưa đủ evidence:** xảy ra khi nộp bài trong lúc còn quá nhiều câu chưa trả lời.
 
----
+!!! note "Soft Mastery"
+    Đây không phải cổng khóa. Dù kết quả ở mức nào, học sinh vẫn có thể học tiếp và quay lại củng cố sau.
 
-# Bảng truy nguyên lỗi
-
-| Sai câu | Nên quay lại |
-|---|---|
-| 1 | Căn bậc hai số học |
-| 2 | Điều kiện xác định |
-| 3, 5 | Rút gọn căn đồng dạng |
-| 4 | \(\sqrt{A^2}=|A|\) |
-| 6 | Liên hợp |
-| 7, 9 | Phương trình chứa căn + kiểm tra nghiệm |
-| 8 | Đưa thừa số ra ngoài căn |
-| 10 | Phân tích nhân tử + điều kiện |
+!!! warning "Không trộn Extension vào Core"
+    Entrance10 / Challenge không tính vào Readiness Check này.
 
 ---
 
-# Thang tự đánh giá
+## Liên kết Roadmap
 
-| Điểm | Mức | Hành động đề xuất |
-|---:|---|---|
-| 9,0–10 | Hoàn thành tốt | Có thể tiếp tục lộ trình; vẫn chữa mọi câu chưa chắc |
-| 7,0–8,75 | Đạt | Chữa toàn bộ câu sai rồi chuyển tiếp |
-| 5,0–6,75 | Chưa chắc | Quay lại đúng dạng bài còn yếu và luyện thêm M2–M3 |
-| Dưới 5,0 | Cần củng cố | Học lại kiến thức cốt lõi và làm lại M1–M2 |
-
-> Điểm số chỉ là một tín hiệu. Quan trọng hơn là xác định **loại lỗi** và sửa đúng phần kiến thức gốc.
-
----
-
-# Checklist sau khi chấm
-
-- [ ] Tôi đã ghi lại điểm số.
-- [ ] Tôi đã đối chiếu từng câu sai với **Bảng truy nguyên lỗi**.
-- [ ] Tôi đã xác định lỗi thuộc nhóm kiến thức / biến đổi / dấu / điều kiện / mô hình hóa / kết luận / trình bày.
-- [ ] Tôi đã làm lại từng câu sai mà không nhìn đáp án.
-- [ ] Tôi đã luyện lại kỹ năng yếu trong Practice Bank nếu cần.
-- [ ] Nếu đạt từ 7 điểm trở lên, tôi đã chữa xong các câu sai trước khi chuyển tiếp.
-
-# Liên kết Roadmap
-
-- **← Bài học:** [Chuyên đề 11 – Căn thức](index.md)
-- **← Luyện tập:** [Bài tập Chuyên đề 11](bai-tap.md)
-- **→ Nếu đạt:** [12 – Phương trình bậc hai & Viète](../12-phuong-trinh-bac-hai-viete/index.md)
+- **← Học:** [Chuyên đề 11 – Căn thức và biến đổi căn thức](index.md)
+- **← Luyện tập:** [Practice Room](bai-tap.md)
+- **→ Học tiếp:** [12 – Phương trình bậc hai & Viète](../12-phuong-trinh-bac-hai-viete/index.md)
