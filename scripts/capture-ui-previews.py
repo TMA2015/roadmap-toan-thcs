@@ -114,6 +114,28 @@ with sync_playwright() as p:
     check(page.locator("body").evaluate("(el) => el.classList.contains('roadmap-focus-mode')"), "focus mode applied to body")
     check(not page.locator(".md-sidebar--primary").is_visible() and not page.locator(".md-sidebar--secondary").is_visible(), "focus hides both desktop sidebars")
     shot(page, "lesson-04-focus-desktop.png")
+    # Real browser check for explicit full-solution disclosure in normal practice.
+    help_page = desktop.new_page()
+    help_page.goto(BASE + "kien-thuc/04-bieu-thuc-dai-so/bai-tap/", wait_until="networkidle")
+    helper = help_page.locator(".practice-actions button").filter(has_text="Chọn cách được giúp").first
+    helper.click()
+    check(help_page.locator(".practice-tutor-choices button").count() == 4, "four explicit help modes")
+    help_page.locator(".practice-tutor-choices button").filter(has_text="Xem lời giải hiện có").click()
+    check(help_page.locator(".practice-tutor").get_by_text("không tính là tự làm độc lập").is_visible(), "pre-answer evidence disclosure")
+    help_page.locator(".practice-tutor button").filter(has_text="Tôi muốn mở lời giải ngay").click()
+    check(help_page.locator(".practice-help-answer").first.is_visible(), "offline bank solution displayed")
+    shot(help_page, "practice-help-full-solution-desktop.png")
+    help_page.locator(".practice-options button").first.click()
+    saved = help_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1'))""")
+    records = [row for row in saved["questions"].values() if row.get("full_solution_views", 0) > 0]
+    check(len(records) == 1 and records[0].get("correct_without_hint",0) == 0, "viewed answer cannot count as independent attempt")
+    check(help_page.locator(".practice-help-assisted").is_visible(), "assisted status shown")
+    help_page.locator(".practice-actions button").filter(has_text="Xem hướng dẫn / lời giải").click()
+    help_page.locator(".practice-tutor-choices button").filter(has_text="Xem lời giải hiện có").click()
+    saved_after = help_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1'))""")
+    check(saved == saved_after, "reading explanation after submission does not alter original attempt")
+    help_page.close()
+
     page.reload(wait_until="networkidle")
     check(page.locator(".lesson-focus-toggle").get_attribute("aria-pressed") == "true", "focus choice persists across reload")
     check(not page.locator(".md-sidebar--primary").is_visible(), "focus layout persists across reload")
