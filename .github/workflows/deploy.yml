@@ -36,6 +36,12 @@ jobs:
       - name: Run Golden batch CĐ08-CĐ10 QA
         run: node scripts/test-golden-batch-08-10.js
 
+      - name: Run Golden batch CĐ11-CĐ12 QA
+        run: node scripts/test-golden-batch-11-12.js
+
+      - name: Build source-locked Gemini review bundle
+        run: node scripts/build-gemini-review-bundle-04-11.js /tmp/gemini-review-04-11.json
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 
