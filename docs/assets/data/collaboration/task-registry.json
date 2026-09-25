@@ -398,11 +398,13 @@
       "id": "STA21-LEARN-001",
       "title": "CĐ21 Golden Template five Learning Cards and fifteen micro-practice items",
       "routing": "GEMINI_AUTHOR+CHATGPT_QA_INTEGRATE",
-      "status": "READY",
-      "context_version": "1.0.41",
+      "status": "DONE",
+      "context_version": "1.0.42",
       "packet": "docs/assets/data/collaboration/packets/STA21-LEARN-GEMINI-AUTHOR-001.json",
       "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-learn-gemini-author-001.json",
-      "review_notes": "Do not integrate Gemini draft until QA; no Readiness or bank mutation in this author packet."
+      "review_notes": "Five KNTT Core cards with optional teaching copy and 15 micro-practice checks integrated in dedicated files, QA and CI; 132-question Practice Bank preserved. Interactive Readiness pending.",
+      "review_verdict": "ACCEPT_WITH_EDITORIAL_AND_SCHEMA_FIXES",
+      "integrated_artifact": "docs/assets/data/curriculum/topic21-learning-workspace.json"
     }
   ]
 }
