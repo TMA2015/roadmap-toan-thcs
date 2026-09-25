@@ -103,6 +103,9 @@ jobs:
       - name: Verify CĐ21 Core Readiness academic and schema QA
         run: node scripts/test-sta21-ready-001.js
 
+      - name: Build source-locked CĐ22 curriculum boundary review bundle
+        run: node scripts/build-stat22-map-review-bundle.js docs/assets/data/collaboration/exports/stat22-map-gemini-review-001.json
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 

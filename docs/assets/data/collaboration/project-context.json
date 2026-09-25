@@ -1,5 +1,5 @@
 {
-  "version": "1.0.45",
+  "version": "1.0.46",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -208,7 +208,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "CĐ21 Core Readiness content integrated; verify deploy and owner on-device submit/retry QA; then continue Golden Template CĐ22 in small source-locked batches using new math-language guide.",
+    "next_priority": "CĐ21 owner confirmed Core Readiness PC+iPhone functional. CĐ22: source-locked skill/grade layer audit STAT22-MAP-001 first; no Core item generation until review; prepare tiny Learn batch after source decision.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -234,13 +234,21 @@
       "learn_card_count": 5,
       "micro_practice_count": 15,
       "learn_integration": "STA21-LEARN-CHATGPT-INTEGRATION-001",
-      "readiness": "INTEGRATED_DEPLOY_PENDING",
+      "readiness": "DEPLOYED_CI_PASS_OWNER_PC_IPHONE_ACCEPTED",
       "language_standard": "docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md",
       "responsive_fix": "STA21-UX-LANGUAGE-001",
       "readiness_item_count": 12,
       "readiness_skill_count": 9,
       "readiness_id": "STA21-CORE-READY-V1",
-      "readiness_review": "STA21-READY-CHATGPT-INTEGRATION-001"
+      "readiness_review": "STA21-READY-CHATGPT-INTEGRATION-001",
+      "owner_device_qa": "PC and iPhone confirmed by user 2026-09-25"
+    },
+    "statistics_topic22": {
+      "bank_count": 120,
+      "primary_kntt_map_refs_grade6_to9": 0,
+      "grade9_overlay_exclusion": true,
+      "next_task": "STAT22-MAP-001",
+      "layer_status": "AUDIT_REQUIRED"
     }
   },
   "handoff_required_fields": [
@@ -269,8 +277,8 @@
     "offline_relay_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/offline-relay/",
     "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
     "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
-    "next_public_task": "STA22-LEARN-PILOT",
-    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-ready-gemini-author-001.json",
+    "next_public_task": "STAT22-MAP-001",
+    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/stat22-map-gemini-review-001.json",
     "protocol_version": "2.0",
     "relay_v2": "All new author/reviewer batches MUST apply docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md: direct language, explicit units/population, never infer data or leave absent chart. Golden Template frozen."
   }
