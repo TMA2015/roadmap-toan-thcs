@@ -49,7 +49,7 @@ Mạch tư duy trọng tâm:
 ### 1. Góc ở tâm và góc nội tiếp
 
 <p align="center">
-  <img src="../../assets/geometry/19-goc-noi-tiep-goc-o-tam-v1.svg"
+  <img src="../../assets/geometry/19/19-goc-noi-tiep-goc-o-tam-v1.svg"
        alt="Minh họa góc ở tâm và góc nội tiếp cùng chắn một cung"
        width="520">
 </p>
@@ -67,7 +67,7 @@ Nếu góc ở tâm là `∠AOB` và góc nội tiếp là `∠ACB`, cùng chắ
 ### 2. Tiếp tuyến và bán kính
 
 <p align="center">
-  <img src="../../assets/geometry/19-tiep-tuyen-v1.svg"
+  <img src="../../assets/geometry/19/19-tiep-tuyen-v1.svg"
        alt="Minh họa tiếp tuyến của đường tròn"
        width="500">
 </p>
@@ -87,7 +87,7 @@ Dấu hiệu đảo cũng rất hay dùng:
 ### 3. Hai dây cắt nhau trong đường tròn
 
 <p align="center">
-  <img src="../../assets/geometry/19-hai-day-cat-nhau-v1.svg"
+  <img src="../../assets/geometry/19/19-hai-day-cat-nhau-v1.svg"
        alt="Minh họa định lý hai dây cắt nhau trong đường tròn"
        width="500">
 </p>
@@ -105,7 +105,7 @@ Dạng bài này thường xuất hiện khi đề cho nhiều đoạn thẳng t
 ### 4. Tiếp tuyến – cát tuyến
 
 <p align="center">
-  <img src="../../assets/geometry/19-tiep-tuyen-cat-tuyen-v1.svg"
+  <img src="../../assets/geometry/19/19-tiep-tuyen-cat-tuyen-v1.svg"
        alt="Minh họa định lý tiếp tuyến và cát tuyến"
        width="500">
 </p>
