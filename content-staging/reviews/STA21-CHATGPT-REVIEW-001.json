@@ -1,0 +1,63 @@
+{
+  "packet_id": "STA21-CHATGPT-REVIEW-001",
+  "source_packet_id": "STA21-GEMINI-AUTHOR-001-RESULT",
+  "task_id": "STA21-AUTHOR-001",
+  "verdict": "REVISIONS_REQUIRED",
+  "summary": "12/12 items present, exact 4/4/4 skill allocation and unique IDs; arithmetic on STA21NEW_009-012 verified. Revise semantic skill alignment and pedagogical wording before bank integration. Keep existing bank 120 unchanged.",
+  "corrections": [
+    {
+      "id": "STA21NEW_003",
+      "severity": "BLOCKER",
+      "issue": "Question asks whether 'Rất nhiều' is invalid against a weight measurement criterion, assessing kiem-tra-chat-luong instead of whitelisted du-lieu-phan-loai. This is outside batch scope.",
+      "required": "Rewrite to ask classification of the actual values as numerical versus categorical (or replace entirely with a clear numerical/categorical distinction). Keep assessed skill du-lieu-phan-loai, and do not require the separate quality-control skill."
+    },
+    {
+      "id": "STA21NEW_006",
+      "severity": "WORDING",
+      "issue": "Question calls hourly observations continuous, but measurements once each hour are periodic discrete observations.",
+      "required": "Replace 'ghi nhận dữ liệu liên tục' with 'theo dõi bằng số đo định kỳ' and remove 'liên tục' from explanation. Do not promise the true maximum accuracy absent the instrument/sampling specification; use 'phù hợp nhất trong các phương án'."
+    },
+    {
+      "id": "STA21NEW_007",
+      "severity": "WORDING",
+      "issue": "Institution-specific official body name and claim 'chính xác nhất' are not needed to test source-selection; publication period, geography and official release matter.",
+      "required": "Refer generically to official published statistical yearbooks or datasets with year and geography clearly recorded; avoid asserting exact current organizational name or infallibility. Do not invent actual figures."
+    },
+    {
+      "id": "STA21NEW_009",
+      "severity": "PEDAGOGY",
+      "issue": "Advertised as a bar chart but only categorical-value list is given. The item exercises aggregation after reading stated data, not necessarily visual chart-reading.",
+      "required": "State explicitly 'Dữ liệu từ biểu đồ cột được chép lại dưới đây' and make the source of values clear; label all numbers hypothetical. Do not claim a displayed visual exists."
+    },
+    {
+      "id": "STA21NEW_010",
+      "severity": "WORDING",
+      "issue": "'Lượng mưa trung bình trong 4 tháng' is misleading for summation to total 1000 mm if the numbers refer to monthly means.",
+      "required": "Use 'lượng mưa ghi nhận từng tháng trong ví dụ giả định' and keep 220,280,340,160 mm, sum 1000 mm, correct 34%."
+    },
+    {
+      "id": "STA21NEW_011",
+      "severity": "PEDAGOGY",
+      "issue": "Question blends chart reading and price revenue, and explicitly names the two highest days in the stem (removing recognition).",
+      "required": "Remove parenthetical 'Thứ Tư và Thứ Sáu' from stem so student selects them. Keep 77 pens × 30000 = 2310000 đồng. Clarify that bar values are transcribed instead of implying a graphic is displayed."
+    },
+    {
+      "id": "STA21NEW_012",
+      "severity": "PEDAGOGY",
+      "issue": "Distractor 'Đúng, nhưng D gấp 3 lần C' is internally contradictory and not a defensible misconception.",
+      "required": "Replace with coherent unique incorrect comparison; keep true ratio 300/150=2 and difference 300-180=120 kWh. State chart data is transcribed."
+    }
+  ],
+  "must_preserve": [
+    "Exactly 12 questions, 4 each of du-lieu-phan-loai / thu-thap-du-lieu / doc-bieu-do-cot, same IDs unless replacement is essential.",
+    "Questions 001,002,004,005,008 math/semantics accepted; may adjust tiny wording only.",
+    "Four explicit answer calculations: NEW_009 19 books; NEW_010 34%; NEW_011 2,310,000 VND; NEW_012 statement true.",
+    "No new skill tags or readiness bank and do not mutate existing 120 questions.",
+    "Four non-identical answer choices per question, unique correct answer and immediate practice explanation. Avoid asking source-free chart interpretation without numeric values."
+  ],
+  "acceptance": {
+    "state": "WAITING_REVISED_AUTHOR_RESULT",
+    "required_result_packet_id": "STA21-GEMINI-AUTHOR-001-RESULT-REV2",
+    "output": "Full corrected 12-question JSON object in same schema. Include change_log listing changed IDs and brief explanations."
+  }
+}
