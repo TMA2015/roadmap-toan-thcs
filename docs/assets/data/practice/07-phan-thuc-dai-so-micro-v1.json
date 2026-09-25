@@ -119,7 +119,6 @@
       "tags": {
         "topic": "phan-thuc-dai-so",
         "skill": [
-          "dieu-kien-xac-dinh",
           "tinh-gia-tri-phan-thuc"
         ],
         "type": "tinh-gia-tri-co-dkxd",
@@ -149,7 +148,10 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
-      }
+      },
+      "supporting_skills": [
+        "dieu-kien-xac-dinh"
+      ]
     },
     {
       "id": "RAT07MICRO_004",
@@ -206,7 +208,6 @@
       "tags": {
         "topic": "phan-thuc-dai-so",
         "skill": [
-          "phan-tich-tu-mau",
           "rut-gon-phan-thuc"
         ],
         "type": "rut-gon-hieu-hai-binh-phuong",
@@ -241,7 +242,11 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
-      }
+      },
+      "supporting_skills": [
+        "phan-tich-tu-mau",
+        "hieu-hai-binh-phuong"
+      ]
     },
     {
       "id": "RAT07MICRO_006",
@@ -258,8 +263,7 @@
       "tags": {
         "topic": "phan-thuc-dai-so",
         "skill": [
-          "doi-dau-phan-thuc",
-          "rut-gon-phan-thuc"
+          "doi-dau-phan-thuc"
         ],
         "type": "doi-dau-mau",
         "layer": "KNTT-Core",
@@ -288,7 +292,10 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
-      }
+      },
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ]
     },
     {
       "id": "RAT07MICRO_007",
@@ -417,7 +424,6 @@
       "tags": {
         "topic": "phan-thuc-dai-so",
         "skill": [
-          "phan-tich-tu-mau",
           "quy-dong-mau-thuc"
         ],
         "type": "quy-dong-sau-phan-tich",
@@ -447,7 +453,11 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
-      }
+      },
+      "supporting_skills": [
+        "phan-tich-tu-mau",
+        "hieu-hai-binh-phuong"
+      ]
     },
     {
       "id": "RAT07MICRO_010",
@@ -504,7 +514,6 @@
       "tags": {
         "topic": "phan-thuc-dai-so",
         "skill": [
-          "bo-ngoac-dau",
           "cong-tru-phan-thuc"
         ],
         "type": "tru-cung-mau-bo-ngoac",
@@ -534,7 +543,10 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
-      }
+      },
+      "supporting_skills": [
+        "bo-ngoac-dau"
+      ]
     },
     {
       "id": "RAT07MICRO_012",
@@ -551,7 +563,6 @@
       "tags": {
         "topic": "phan-thuc-dai-so",
         "skill": [
-          "quy-dong-mau-thuc",
           "cong-tru-phan-thuc"
         ],
         "type": "tru-khac-mau",
@@ -586,7 +597,10 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
-      }
+      },
+      "supporting_skills": [
+        "quy-dong-mau-thuc"
+      ]
     },
     {
       "id": "RAT07MICRO_013",
@@ -694,9 +708,7 @@
       "tags": {
         "topic": "phan-thuc-dai-so",
         "skill": [
-          "phan-tich-tu-mau",
-          "chia-phan-thuc",
-          "rut-gon-phan-thuc"
+          "chia-phan-thuc"
         ],
         "type": "chia-ket-hop-rut-gon",
         "layer": "KNTT-Core",
@@ -719,7 +731,11 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
-      }
+      },
+      "supporting_skills": [
+        "phan-tich-tu-mau",
+        "rut-gon-phan-thuc"
+      ]
     }
   ]
 }
