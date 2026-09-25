@@ -346,7 +346,7 @@
         <div class="practice-remediation" hidden aria-live="polite"></div>
         <details class="practice-stats-panel">
           <summary>📊 Xem tiến độ theo kỹ năng</summary>
-          <div class="practice-stats-note">Thứ tự kỹ năng cố định theo lộ trình học. Bấm vào một kỹ năng để luyện riêng.</div>
+          <div class="practice-stats-note">Tỉ lệ đúng gồm cả lượt có trợ giúp. Mục “tự làm” tách riêng lượt làm đúng không xem gợi ý/lời giải; dữ liệu cũ chưa phân loại sẽ được ghi rõ. Bấm kỹ năng để luyện riêng.</div>
           <div class="practice-stats"></div>
         </details>
       `;
@@ -964,8 +964,13 @@
         group.skills.forEach((skill) => {
           const record = this.stats.tags[skill] || { attempted: 0, correct: 0 };
           const percent = record.attempted ? Math.round((record.correct / record.attempted) * 100) : 0;
+          const independent = Number.isFinite(record.correct_without_hint)
+            ? Number(record.correct_without_hint)
+            : Number.isFinite(record.correct_with_hint)
+              ? Math.max(0, Number(record.correct || 0) - Number(record.correct_with_hint))
+              : null;
           const status = record.attempted
-            ? `${record.correct}/${record.attempted} · ${percent}%`
+            ? `${record.correct}/${record.attempted} · ${percent}% đúng · tự làm: ${independent === null ? "chưa phân loại" : independent}`
             : "Chưa luyện";
           const note = weak.has(skill)
             ? "⚠ Cần luyện thêm"
