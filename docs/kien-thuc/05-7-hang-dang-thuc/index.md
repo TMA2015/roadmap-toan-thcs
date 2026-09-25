@@ -586,91 +586,37 @@ $$
 
 ---
 
-## 📝 8. Luyện tập
+## 📝 8. Luyện tập tiếp theo
 
-### Mức 1 – Nhận biết
+Micro-practice trong các Learning Cards dùng để kiểm tra nhanh ngay sau khi học. Khi muốn luyện sâu hơn, luyện từng skill hoặc làm bài tự luận, hãy chuyển sang **Practice Room**.
 
-1. Khai triển `(x + 4)²`.
-2. Khai triển `(2x - 3)²`.
-3. Phân tích `x² - 49` thành nhân tử.
-4. Viết `8x³ + 27` dưới dạng tích.
-5. Điền hạng tử còn thiếu: `x² + … + 16 = (x + 4)²`.
+[🎯 Mở Practice Room – Chuyên đề 05](bai-tap.md){ .md-button .md-button--primary }
 
-### Mức 2 – Thông hiểu
+Trong Practice Room:
 
-1. Rút gọn `(x + 5)² - 10x`.
-2. Phân tích `25x² - 4y²` thành nhân tử.
-3. Phân tích `x³ - 64` thành nhân tử.
-4. Chứng minh `(a+b)²-(a-b)²=4ab`.
-5. Tính nhanh `98²`.
+- **Luyện nhanh tương tác:** Practice Engine chọn câu từ ngân hàng lớn, có feedback, gợi ý và Tutor.
+- **Luyện tự luận & trình bày:** tự giải trên giấy/vở rồi mở gợi ý hoặc lời giải để tự đối chiếu.
+- Core / Entrance10 / Challenge được tách rõ.
 
-### Mức 3 – Vận dụng
-
-1. Rút gọn `A=(2x+1)²-(2x-1)²`.
-2. Cho `x+y=12`, `xy=20`. Tính `x²+y²`.
-3. Cho `a-b=5`, `ab=6`. Tính `a²+b²`.
-4. Phân tích `16x⁴-81` thành nhân tử tối đa bằng các kiến thức đã học.
-5. Tính nhanh `1003·997`.
-
-### Mức 4 – Vận dụng cao / tổng hợp
-
-1. Chứng minh `x⁴+4=(x²-2x+2)(x²+2x+2)`.
-2. Rút gọn `B=(x+y)³+(x-y)³`.
-3. Biết `x+y=7`, `x²+y²=29`. Tính `xy` và `x³+y³`.
-4. Tìm `x` nếu `(x+3)²-(x-3)²=36`.
-5. Chứng minh rằng nếu `a+b+c=0` thì `a³+b³+c³=3abc`.
+!!! info "Phân biệt mục đích"
+    Micro-practice kiểm tra hiểu ngay; Practice Room dùng để **rèn kỹ năng**. Kết quả luyện tập là formative evidence, không phải điểm kiểm tra cuối chuyên đề.
 
 ---
 
-## ✅ 9. Tự kiểm tra
+## ✅ 9. Tự kiểm tra mức độ sẵn sàng
 
-### Checklist
+Khi đã luyện tương đối chắc, hãy làm **Core Readiness Check**.
 
-Hãy đánh dấu khi bạn có thể làm độc lập:
+[✅ Bắt đầu Core Readiness Check](tu-kiem-tra.md){ .md-button .md-button--primary }
 
-- [ ] Viết đúng 7 hằng đẳng thức không nhìn tài liệu.
-- [ ] Giải thích được vì sao `(A+B)²` có `2AB`.
-- [ ] Nhận dạng được bình phương hoàn chỉnh.
-- [ ] Phân tích được hiệu hai bình phương.
-- [ ] Phân biệt đúng tổng và hiệu hai lập phương.
-- [ ] Dùng hằng đẳng thức để tính nhanh.
-- [ ] Rút gọn được biểu thức có nhiều hằng đẳng thức.
-- [ ] Kiểm tra được kết quả bằng cách nhân ngược hoặc khai triển ngược.
+Trong Readiness Check:
 
-### Mini quiz
-
-**Câu 1.** Kết quả của `(x-5)²` là gì?
-
-A. `x²-25`
-B. `x²-10x+25`
-C. `x²+10x+25`
-D. `x²-10x-25`
-
-**Câu 2.** `9x²-16` bằng:
-
-A. `(3x-4)²`
-B. `(3x-4)(3x+4)`
-C. `(9x-4)(x+4)`
-D. Không phân tích được
-
-**Câu 3.** `x³+27` bằng:
-
-A. `(x+3)(x²+3x+9)`
-B. `(x+3)(x²-3x+9)`
-C. `(x-3)(x²+3x+9)`
-D. `(x+3)³`
-
-**Câu 4.** Nếu `a+b=8`, `ab=15` thì `a²+b²` bằng bao nhiêu?
-
-**Câu 5.** Rút gọn `(x+2)²-(x-2)²`.
-
-### Đáp án nhanh
-
-1. B
-2. B
-3. B
-4. `34`
-5. `8x`
+- không hint và không Tutor khi đang làm;
+- không báo đúng/sai từng câu;
+- chỉ chấm sau khi bấm **Nộp bài**;
+- kết quả phân tích theo assessed skill;
+- là **Soft Mastery**: không khóa chuyên đề tiếp theo;
+- Entrance10 / Challenge không tính vào Core readiness.
 
 ---
 
@@ -702,12 +648,30 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề 05 được xem là hoàn thành khi học sinh:
+Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi học sinh có phần lớn các bằng chứng sau:
 
-- [ ] Viết chính xác 7 hằng đẳng thức theo cả hai chiều.
-- [ ] Đạt ít nhất **8/10** bài cơ bản và thông hiểu mà không xem công thức.
-- [ ] Làm được ít nhất **3/5** bài vận dụng.
-- [ ] Đạt ít nhất **4/5** câu mini quiz.
-- [ ] Tự phát hiện được lỗi dấu khi kiểm tra lời giải.
-- [ ] Nhận dạng được khi nào nên dùng hằng đẳng thức thay vì nhân trực tiếp.
-- [ ] Sẵn sàng chuyển sang Chuyên đề 06 – Phân tích đa thức thành nhân tử.
+- [ ] Hiểu và giải thích được các quy tắc Core của chuyên đề.
+- [ ] Làm tương đối ổn định các skill Core trong Practice Room.
+- [ ] Không lặp lại ổn định cùng một lỗi nền tảng sau khi đã được chữa.
+- [ ] Core Readiness Check đạt khoảng **80%** hoặc học sinh đã hiểu và chữa được các lỗi còn lại.
+- [ ] Có thể trình bày ít nhất một số bài tự luận Core mà không mở lời giải trước.
+
+!!! note "Soft Mastery"
+    Không cần đạt 100% mới được học tiếp. Nếu Readiness Check cho thấy một vài kỹ năng còn yếu, hệ thống khuyến nghị luyện lại đúng kỹ năng đó; học sinh vẫn có thể chuyển sang chuyên đề tiếp theo.
+
+!!! warning "Core độc lập Extension"
+    Entrance10 và Specialized-Challenge không phải điều kiện để hoàn thành KNTT Core.
+
+---
+
+## ➡️ Tiếp tục học
+
+<div class="topic-workspace-actions" markdown>
+
+[🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
+
+[✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
+
+[→ 06 – Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/index.md){ .md-button }
+
+</div>
