@@ -77,7 +77,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 - [ ] Biết nhóm hạng tử để tạo nhân tử chung hoặc hằng đẳng thức; ở mức vận dụng, biết tách một hạng tử phù hợp để tạo nhóm.
 - [ ] Phối hợp nhiều phương pháp trong một bài.
 - [ ] Kiểm tra được kết quả bằng cách nhân trở lại.
-- [ ] Dùng dạng tích để rút gọn, tính nhanh và giải phương trình đơn giản.
+- [ ] Dùng dạng tích để rút gọn và tính nhanh; nhận biết **giải phương trình bằng nhân tử** là ứng dụng kết nối sang Entrance10 / Chuyên đề 08.
 - [ ] Nhận biết khi nào đa thức còn có thể tiếp tục phân tích bằng các phương pháp đã học trong phạm vi THCS.
 
 ---
@@ -483,9 +483,9 @@ Hai số nguyên liên tiếp `n` và `n - 1` luôn có một số chẵn, nên 
 
 ---
 
-### Dạng 10 – Dùng phân tích nhân tử để tìm x
+### Dạng 10 – Kết nối Entrance10: Dùng phân tích nhân tử để tìm x
 
-> Đây là phần kết nối sang Chuyên đề 08. Sau khi đưa phương trình về dạng tích bằng 0, dùng tính chất: nếu `A·B = 0` thì `A = 0` hoặc `B = 0`.
+> **Không tính vào KNTT Core readiness của CĐ06.** Đây là phần kết nối sang Chuyên đề 08. Sau khi đưa phương trình về dạng tích bằng 0, dùng tính chất: nếu `A·B = 0` thì `A = 0` hoặc `B = 0`.
 
 Ví dụ:
 
