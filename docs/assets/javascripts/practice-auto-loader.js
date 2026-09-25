@@ -69,13 +69,11 @@
     const section = document.createElement("section");
     section.className = "practice-auto-section";
     section.innerHTML = `
-      <h2 id="luyen-tap-tuong-tac">🎯 Luyện tập tương tác</h2>
-      <p>Mỗi lượt hệ thống chọn <strong>10 câu</strong> từ ngân hàng <strong>120 câu</strong>. Bảng tiến độ được sắp theo mini-roadmap kỹ năng cố định; có thể bấm trực tiếp một kỹ năng để luyện riêng hoặc dùng <strong>Luyện điểm yếu</strong> để ưu tiên tối đa hai kỹ năng yếu nhất.</p>
+      <h2 id="luyen-tap-tuong-tac">A. 🎯 Luyện nhanh tương tác</h2>
+      <p>Mỗi lượt hệ thống chọn một bộ câu từ ngân hàng lớn của chuyên đề. Có thể luyện hỗn hợp, bấm trực tiếp một kỹ năng để luyện riêng hoặc dùng <strong>Luyện điểm yếu</strong>. Phần này có feedback, gợi ý và Tutor nên được xem là <strong>formative practice</strong>, không phải bài kiểm tra cuối chuyên đề.</p>
       <div data-practice-bank-v2="${siteRoot}/assets/data/practice/${manifest}" data-session-size="10"></div>
       <p><em>Lưu ý: tiến độ hiện được lưu trên trình duyệt này bằng localStorage và chưa tự đồng bộ giữa các thiết bị.</em></p>
       <hr>
-      <h2>Bài tập tự luận bổ sung</h2>
-      <p>Các bài bên dưới được giữ lại để luyện cách trình bày lời giải đầy đủ sau phần trắc nghiệm tương tác.</p>
     `;
 
     const firstBlockquote = article.querySelector("blockquote");
