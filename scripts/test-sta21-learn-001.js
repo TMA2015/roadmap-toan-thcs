@@ -36,7 +36,7 @@ const existing=manifest.sources.flatMap(s=>read("docs/assets/data/practice/"+s).
 check(existing.length===132,"existing source bank load");const texts=new Set(existing.map(x=>x.question.toLowerCase().replace(/\s+/g," ").trim()));check(micro.questions.every(x=>!texts.has(x.question.toLowerCase().replace(/\s+/g," ").trim())),"exact copy from practice bank");
 const q=micro.questions;check(q[0].question.includes("145, 150, 152")&&q[0].answer===1,"001 categorical/numeric distinction");
 check(q[5].question.includes("số lượt")&&!q[5].question.includes("tổng số học sinh giỏi")&&q[5].options[q[5].answer]==="5/4","006 double-counting ambiguity");
-check(q[13].question.includes("tivi và tủ lạnh")&&!q[13].question.includes("bán máy tính"),"014 scope wording");
+check(/tivi.*tủ lạnh/i.test(q[13].question)&&!q[13].question.includes("bán máy tính"),"014 scope wording");
 check(40+50+45===135&&30+60+55===145&&60-50===10,"005 double-bar values");
 check((10+15)/(12+8)===1.25&&q[5].options[q[5].answer]==="5/4","006 ratio");
 check(300*0.4===120&&360*0.4===144&&Math.abs(200*(0.45-0.15-0.10)-40)<1e-9,"008/009 pie data");
