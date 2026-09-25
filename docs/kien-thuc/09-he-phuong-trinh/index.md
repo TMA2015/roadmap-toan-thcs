@@ -601,143 +601,37 @@ Thay nghiệm vào hệ ban đầu là cách phát hiện rất nhanh lỗi tín
 
 ---
 
-## 📝 8. Luyện tập
+## 📝 8. Luyện tập tiếp theo
 
-### Mức 1 – Nhận biết
+Micro-practice trong các Learning Cards dùng để kiểm tra nhanh ngay sau khi học. Khi muốn luyện sâu hơn, luyện từng skill hoặc làm bài tự luận, hãy chuyển sang **Practice Room**.
 
-1. Kiểm tra `(2;1)` có là nghiệm của `3x-y=5` hay không.
-2. Kiểm tra `(1;2)` có là nghiệm của hệ
+[🎯 Mở Practice Room – Chuyên đề 09](bai-tap.md){ .md-button .md-button--primary }
 
-   $$
-   \begin{cases}
-x+y=3\\
-2x-y=0
-   \end{cases}
-   $$
+Trong Practice Room:
 
-3. Cho biết hệ sau nên ưu tiên phương pháp nào:
+- **Luyện nhanh tương tác:** Practice Engine chọn câu từ ngân hàng lớn, có feedback, gợi ý và Tutor.
+- **Luyện tự luận & trình bày:** tự giải trên giấy/vở rồi mở gợi ý hoặc lời giải để tự đối chiếu.
+- Core / Entrance10 / Challenge được tách rõ.
 
-   $$
-   \begin{cases}
-x+3y=7\\
-2x-y=4
-   \end{cases}
-   $$
-
-### Mức 2 – Thông hiểu
-
-1. Giải bằng phương pháp thế:
-
-   $$
-   \begin{cases}
-x+y=8\\
-2x-y=1
-   \end{cases}
-   $$
-
-2. Giải bằng cộng đại số:
-
-   $$
-   \begin{cases}
-3x+2y=7\\
-5x-2y=9
-   \end{cases}
-   $$
-
-3. Xác định hệ có một nghiệm, vô nghiệm hay vô số nghiệm:
-
-   $$
-   \begin{cases}
-x+2y=3\\
-2x+4y=6
-   \end{cases}
-   $$
-
-### Mức 3 – Vận dụng
-
-1. Giải hệ:
-
-   $$
-   \begin{cases}
-2(x+y)-3y=4\\
-3x-(x-y)=8
-   \end{cases}
-   $$
-
-2. Tìm `m` để `(1;2)` là nghiệm của:
-
-   $$
-   \begin{cases}
-x+y=3\\
-mx-y=2
-   \end{cases}
-   $$
-
-3. Tổng của hai số là 45, hiệu của chúng là 9. Lập hệ và tìm hai số.
-
-### Mức 4 – Vận dụng cao / tổng hợp
-
-1. Tìm `m` để nghiệm `(x;y)` của hệ thỏa `x+y=5`:
-
-   $$
-   \begin{cases}
-x+y=m+2\\
-2x-y=4
-   \end{cases}
-   $$
-
-2. Một ô tô đi quãng đường gồm hai đoạn với hai vận tốc khác nhau. Từ tổng thời gian và tổng quãng đường, lập hệ để tìm độ dài từng đoạn.
-3. Tìm điều kiện của tham số để hai đường thẳng tương ứng với hai phương trình của hệ cắt nhau tại một điểm thuộc trục hoành.
+!!! info "Phân biệt mục đích"
+    Micro-practice kiểm tra hiểu ngay; Practice Room dùng để **rèn kỹ năng**. Kết quả luyện tập là formative evidence, không phải điểm kiểm tra cuối chuyên đề.
 
 ---
 
-## ✅ 9. Tự kiểm tra
+## ✅ 9. Tự kiểm tra mức độ sẵn sàng
 
-### Mini quiz
+Khi đã luyện tương đối chắc, hãy làm **Core Readiness Check**.
 
-**Câu 1.** Nghiệm của hệ là gì?
+[✅ Bắt đầu Core Readiness Check](tu-kiem-tra.md){ .md-button .md-button--primary }
 
-A. Một giá trị của `x`
-B. Một giá trị của `y`
-C. Một cặp `(x;y)` thỏa cả hai phương trình
-D. Bất kỳ cặp số nào
+Trong Readiness Check:
 
-**Câu 2.** Hệ nào thích hợp nhất để dùng cộng đại số ngay?
-
-A. `x+y=3` và `2x+5y=7`
-B. `2x+3y=4` và `5x-3y=8`
-C. `x=2y+1` và `3x-y=4`
-D. `x-y=0` và `x+y=2`
-
-**Câu 3.** Hệ
-
-$$
-\begin{cases}
-x+y=2\\
-2x+2y=5
-\end{cases}
-$$
-
-có bao nhiêu nghiệm?
-
-A. Một
-B. Hai
-C. Vô nghiệm
-D. Vô số nghiệm
-
-**Câu 4.** Khi lập hệ từ bài toán thực tế, bước nào không được bỏ qua?
-
-A. Chọn ẩn
-B. Ghi điều kiện của ẩn
-C. Đối chiếu nghiệm với thực tế
-D. Cả A, B, C
-
-### Đáp án
-
-1. C
-2. B
-3. C
-4. D
+- không hint và không Tutor khi đang làm;
+- không báo đúng/sai từng câu;
+- chỉ chấm sau khi bấm **Nộp bài**;
+- kết quả phân tích theo assessed skill;
+- là **Soft Mastery**: không khóa chuyên đề tiếp theo;
+- Entrance10 / Challenge không tính vào Core readiness.
 
 ---
 
@@ -757,12 +651,30 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi học sinh có phần lớn các bằng chứng sau:
 
-- [ ] Giải đúng các hệ cơ bản bằng cả hai phương pháp.
-- [ ] Tự chọn được phương pháp giải phù hợp.
-- [ ] Phân biệt được một nghiệm, vô nghiệm và vô số nghiệm.
-- [ ] Biết kiểm tra nghiệm bằng cách thay ngược.
-- [ ] Lập được hệ từ bài toán thực tế cơ bản.
-- [ ] Làm được bài có tham số ở mức THCS.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra, chữa xong các câu sai và làm chắc bài tập Mức 1–2.
+- [ ] Hiểu và giải thích được các quy tắc Core của chuyên đề.
+- [ ] Làm tương đối ổn định các skill Core trong Practice Room.
+- [ ] Không lặp lại ổn định cùng một lỗi nền tảng sau khi đã được chữa.
+- [ ] Core Readiness Check đạt khoảng **80%** hoặc học sinh đã hiểu và chữa được các lỗi còn lại.
+- [ ] Có thể trình bày ít nhất một số bài tự luận Core mà không mở lời giải trước.
+
+!!! note "Soft Mastery"
+    Không cần đạt 100% mới được học tiếp. Nếu Readiness Check cho thấy một vài kỹ năng còn yếu, hệ thống khuyến nghị luyện lại đúng kỹ năng đó; học sinh vẫn có thể chuyển sang chuyên đề tiếp theo.
+
+!!! warning "Core độc lập Extension"
+    Entrance10 và Specialized-Challenge không phải điều kiện để hoàn thành KNTT Core.
+
+---
+
+## ➡️ Tiếp tục học
+
+<div class="topic-workspace-actions" markdown>
+
+[🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
+
+[✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
+
+[→ 10 – Hàm số và đồ thị](../10-ham-so-do-thi/index.md){ .md-button }
+
+</div>
