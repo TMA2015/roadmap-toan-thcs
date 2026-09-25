@@ -18,6 +18,7 @@
       "skills": [
         "nhan-biet-phan-thuc",
         "dieu-kien-xac-dinh",
+        "hai-phan-thuc-bang-nhau",
         "tinh-gia-tri-phan-thuc"
       ],
       "prerequisites": [],
@@ -162,25 +163,29 @@
   "misconception_registry": {
     "triet-tieu-hang-tu": {
       "symptom": "Triệt tiêu hạng tử qua dấu cộng/trừ thay vì nhân tử.",
-      "remediation": [
+      "causal_remediation": false,
+      "review_context_only": [
         "nhan-tu-chung"
       ]
     },
     "tru-khong-doi-dau-tu-thuc": {
       "symptom": "Dấu trừ trước phân thức/ngoặc không đổi dấu toàn bộ tử thức.",
-      "remediation": [
+      "causal_remediation": false,
+      "review_context_only": [
         "bo-ngoac-dau"
       ]
     },
     "dkxd-sai-doi-tuong": {
       "symptom": "Cho tử bằng 0 hoặc bỏ sót mẫu thức khi tìm điều kiện xác định.",
-      "remediation": [
+      "causal_remediation": false,
+      "review_context_only": [
         "dieu-kien-xac-dinh"
       ]
     },
     "doi-dau-khong-day-du": {
       "symptom": "Đổi dấu mẫu nhưng không đổi dấu tương ứng của tử/phân thức.",
-      "remediation": [
+      "causal_remediation": false,
+      "review_context_only": [
         "doi-dau-phan-thuc"
       ]
     }
@@ -191,7 +196,9 @@
     "KNTT Bài 24 includes multiplication properties in addition to multiplication/division rules.",
     "Do not encode every pedagogical sequence as a causal Knowledge Graph prerequisite.",
     "Learning-card skill IDs are aligned with the existing CĐ07 Practice Bank manifest.",
-    "Micro-practice IDs are stable authored items in RAT07-MICRO-V1; Extension never contributes to Core completion."
+    "Micro-practice IDs are stable authored items in RAT07-MICRO-V1; Extension never contributes to Core completion.",
+    "Card 1 includes hai-phan-thuc-bang-nhau as KNTT Core metadata even though the 3-item micro set samples only part of the card.",
+    "misconception_registry is descriptive only; review_context_only must never be treated as causal remediation without independent learner evidence + reviewed graph/rule."
   ],
   "micro_practice_bank": "assets/data/practice/07-phan-thuc-dai-so-micro-v1.json",
   "observed_signal_policy": {
