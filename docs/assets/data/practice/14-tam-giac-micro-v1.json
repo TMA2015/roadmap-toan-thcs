@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "TRI14-MICRO-V1",
+  "topic": {
+    "id": "14-tam-giac",
+    "title": "Tam giác"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "GEO14MICRO_001",
+      "card_id": "geo14-core-1",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tong-goc-tam-giac",
+      "question": "Tam giác có hai góc 50° và 60°. Góc còn lại là:",
+      "options": [
+        "70°",
+        "110°",
+        "80°",
+        "60°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "tong-goc-tam-giac"
+        ],
+        "type": "tong-goc-tam-giac",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Tổng ba góc là 180°.",
+      "hints": [
+        "Lấy 180° trừ hai góc đã biết.",
+        "180-50-60."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_002",
+      "card_id": "geo14-core-1",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "bat-dang-thuc-tam-giac",
+      "question": "Ba đoạn 2, 3, 6 có tạo thành tam giác không?",
+      "options": [
+        "Không",
+        "Có",
+        "Chỉ khi vuông",
+        "Không đủ dữ kiện"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "bat-dang-thuc-tam-giac"
+        ],
+        "type": "bat-dang-thuc-tam-giac",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "2+3≤6 nên không thỏa bất đẳng thức tam giác.",
+      "hints": [
+        "Kiểm tra tổng hai cạnh nhỏ.",
+        "Tổng phải lớn hơn cạnh lớn nhất."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_003",
+      "card_id": "geo14-core-1",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "duong-vuong-goc-duong-xien",
+      "question": "Từ A ngoài d, AH⊥d, B∈d và B≠H. Quan hệ đúng:",
+      "options": [
+        "AH<AB",
+        "AH=AB",
+        "AH>AB",
+        "Không so sánh được"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "duong-vuong-goc-duong-xien"
+        ],
+        "type": "duong-vuong-goc-duong-xien",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đoạn vuông góc ngắn hơn mọi đường xiên.",
+      "hints": [
+        "AH là khoảng cách từ A đến d.",
+        "Đường xiên dài hơn đoạn vuông góc."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_004",
+      "card_id": "geo14-core-2",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tam-giac-can",
+      "question": "ABC cân tại A thì:",
+      "options": [
+        "\\(\\angle B=\\angle C\\)",
+        "\\(\\angle A=90^\\circ\\)",
+        "AB=BC",
+        "Ba góc bằng nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "tam-giac-can"
+        ],
+        "type": "tam-giac-can",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Hai góc đáy của tam giác cân bằng nhau.",
+      "hints": [
+        "Đỉnh cân là A.",
+        "Đáy là BC."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_005",
+      "card_id": "geo14-core-2",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-trung-truc",
+      "question": "Đường trung trực AB phải:",
+      "options": [
+        "Vuông góc AB tại trung điểm AB",
+        "Chỉ đi qua trung điểm AB",
+        "Chỉ vuông góc AB",
+        "Đi qua A"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "nhan-biet-trung-truc"
+        ],
+        "type": "nhan-biet-trung-truc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Cần đồng thời vuông góc và qua trung điểm.",
+      "hints": [
+        "Có hai điều kiện.",
+        "Vuông góc thôi chưa đủ."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_006",
+      "card_id": "geo14-core-2",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tinh-chat-duong-trung-truc",
+      "question": "Nếu PA=PB thì:",
+      "options": [
+        "P nằm trên trung trực AB",
+        "P là trung điểm AB",
+        "P nằm giữa A,B",
+        "P∈AB bắt buộc"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "tinh-chat-duong-trung-truc"
+        ],
+        "type": "tinh-chat-duong-trung-truc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đây là mệnh đề đảo của tính chất đường trung trực.",
+      "hints": [
+        "Tập hợp điểm cách đều A,B.",
+        "Dùng dấu hiệu đường trung trực."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_007",
+      "card_id": "geo14-core-3",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "viet-tuong-ung-tam-giac-bang-nhau",
+      "question": "Nếu A↔D, B↔E, C↔F thì viết:",
+      "options": [
+        "\\(\\triangle ABC=\\triangle DEF\\)",
+        "\\(\\triangle ABC=\\triangle DFE\\)",
+        "\\(\\triangle ACB=\\triangle DEF\\)",
+        "\\(\\triangle BAC=\\triangle DEF\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "viet-tuong-ung-tam-giac-bang-nhau"
+        ],
+        "type": "viet-tuong-ung-tam-giac-bang-nhau",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Thứ tự đỉnh phải giữ đúng tương ứng.",
+      "hints": [
+        "Ghép A-D, B-E, C-F.",
+        "Đọc cùng thứ tự."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_008",
+      "card_id": "geo14-core-3",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "bang-nhau-ccc",
+      "question": "Hai tam giác có ba cặp cạnh tương ứng bằng nhau thì bằng nhau theo:",
+      "options": [
+        "c.c.c",
+        "c.g.c",
+        "g.c.g",
+        "Không đủ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "bang-nhau-ccc"
+        ],
+        "type": "bang-nhau-ccc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đây là trường hợp cạnh-cạnh-cạnh.",
+      "hints": [
+        "Ba cạnh.",
+        "Không cần góc."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_009",
+      "card_id": "geo14-core-3",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "viet-tuong-ung-tam-giac-bang-nhau",
+      "question": "Nếu \\(\\triangle ABC=\\triangle MNP\\), cạnh tương ứng với BC là:",
+      "options": [
+        "NP",
+        "MN",
+        "MP",
+        "PM"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "viet-tuong-ung-tam-giac-bang-nhau"
+        ],
+        "type": "viet-tuong-ung-tam-giac-bang-nhau",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "B↔N, C↔P.",
+      "hints": [
+        "Theo thứ tự đỉnh.",
+        "Ghép B-N và C-P."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_010",
+      "card_id": "geo14-core-4",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "bang-nhau-cgc",
+      "question": "Trong c.g.c, góc được dùng phải là:",
+      "options": [
+        "Góc xen giữa hai cạnh đã biết",
+        "Bất kỳ góc nào",
+        "Góc lớn nhất",
+        "Góc ngoài"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "bang-nhau-cgc"
+        ],
+        "type": "bang-nhau-cgc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Tiêu chuẩn c.g.c yêu cầu góc xen giữa.",
+      "hints": [
+        "Hai cạnh kẹp góc nào?",
+        "Từ khóa: xen giữa."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_011",
+      "card_id": "geo14-core-4",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "bang-nhau-gcg",
+      "question": "g.c.g dùng:",
+      "options": [
+        "Một cạnh và hai góc kề cạnh ấy",
+        "Ba góc",
+        "Hai cạnh và một góc bất kỳ",
+        "Ba cạnh"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "bang-nhau-gcg"
+        ],
+        "type": "bang-nhau-gcg",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Một cạnh và hai góc kề cạnh tương ứng.",
+      "hints": [
+        "Không nhầm với g.g.g.",
+        "Cần một cạnh."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_012",
+      "card_id": "geo14-core-4",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "bang-nhau-cgc",
+      "question": "AB=DE, AC=DF và \\(\\angle A=\\angle D\\). Có thể dùng:",
+      "options": [
+        "c.g.c",
+        "c.c.c",
+        "g.c.g",
+        "Không tiêu chuẩn nào"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "bang-nhau-cgc"
+        ],
+        "type": "bang-nhau-cgc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "A,D là các góc xen giữa hai cặp cạnh đã biết.",
+      "hints": [
+        "Kiểm tra góc xen giữa.",
+        "AB,AC gặp nhau tại A."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_013",
+      "card_id": "geo14-core-5",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "bang-nhau-tam-giac-vuong",
+      "question": "Hai tam giác vuông có cạnh huyền và một cạnh góc vuông tương ứng bằng nhau thì:",
+      "options": [
+        "Bằng nhau",
+        "Chỉ đồng dạng",
+        "Không so sánh được",
+        "Luôn là tam giác cân"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "bang-nhau-tam-giac-vuong"
+        ],
+        "type": "bang-nhau-tam-giac-vuong",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Đây là trường hợp bằng nhau của tam giác vuông.",
+      "hints": [
+        "Cả hai đều vuông.",
+        "Cạnh huyền + một cạnh góc vuông."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_014",
+      "card_id": "geo14-core-5",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "bang-nhau-tam-giac-vuong",
+      "question": "Muốn dùng trường hợp cạnh huyền–cạnh góc vuông, trước hết phải biết:",
+      "options": [
+        "Cả hai tam giác đều vuông",
+        "Hai tam giác đều cân",
+        "Có ba góc bằng nhau",
+        "Hai cạnh huyền song song"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "bang-nhau-tam-giac-vuong"
+        ],
+        "type": "bang-nhau-tam-giac-vuong",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tiêu chuẩn này chỉ áp dụng cho tam giác vuông.",
+      "hints": [
+        "Kiểm tra loại tam giác.",
+        "Không suy vuông từ hình vẽ."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_015",
+      "card_id": "geo14-core-5",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "bang-nhau-tam-giac-vuong",
+      "question": "Hai tam giác vuông có cạnh huyền bằng 10 và một cạnh góc vuông cùng bằng 6. Kết luận:",
+      "options": [
+        "Hai tam giác bằng nhau",
+        "Chỉ chu vi bằng nhau",
+        "Chỉ diện tích bằng nhau",
+        "Không đủ dữ kiện"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "bang-nhau-tam-giac-vuong"
+        ],
+        "type": "bang-nhau-tam-giac-vuong",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đủ điều kiện cạnh huyền–cạnh góc vuông.",
+      "hints": [
+        "Đã cho cả hai vuông.",
+        "Ghép hai yếu tố tương ứng."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

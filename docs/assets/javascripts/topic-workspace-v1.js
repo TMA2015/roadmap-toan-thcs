@@ -71,6 +71,20 @@ const TOPICS={
    description:"Nền tảng Hình học THCS: điểm–tia–đoạn–góc, song song và bước đầu chứng minh.",
    chips:["KNTT Core","Lớp 6–7","Hình học","⭐⭐⭐⭐⭐"],
    progressSkills:["diem-thuoc-duong","diem-nam-giua","tia","tia-doi","doan-thang-do-dai","trung-diem","khai-niem-goc","do-goc","phan-loai-goc","goc-phu-bu","goc-doi-dinh","tia-phan-giac","nhan-dang-goc-dac-biet","goc-so-le-trong","goc-dong-vi","goc-trong-cung-phia","tinh-chat-song-song","dau-hieu-song-song","tien-de-euclid","gia-thiet-ket-luan","lap-luan-chung-minh-ngan"]
+ },
+ "14-tam-giac":{
+   number:"14",
+   data:"assets/data/curriculum/topic14-learning-workspace.json",
+   description:"Góc–cạnh, đường trung trực và các trường hợp hai tam giác bằng nhau.",
+   chips:["KNTT Core","Lớp 7","Hình học","⭐⭐⭐⭐⭐"],
+   progressSkills:["tong-goc-tam-giac","bang-nhau-ccc","bang-nhau-cgc","bang-nhau-gcg","bang-nhau-tam-giac-vuong","viet-tuong-ung-tam-giac-bang-nhau","tam-giac-can","nhan-biet-trung-truc","cach-deu-dinh","tinh-chat-duong-trung-truc","so-sanh-canh-goc","bat-dang-thuc-tam-giac","duong-vuong-goc-duong-xien"]
+ },
+ "15-duong-dong-quy":{
+   number:"15",
+   data:"assets/data/curriculum/topic15-learning-workspace.json",
+   description:"Bốn họ đường đặc biệt, bốn tâm G–H–I–O và các định lí đồng quy.",
+   chips:["KNTT Core","Lớp 7","Hình học","⭐⭐⭐⭐"],
+   progressSkills:["nhan-biet-trung-tuyen","trong-tam","ti-so-trong-tam","nhan-biet-phan-giac","nhan-biet-trung-truc","nhan-biet-duong-cao","truc-tam","tam-noi-tiep","tam-ngoai-tiep","phan-biet-bon-tam","dong-quy-bon-duong-dac-biet"]
  }
 };
 

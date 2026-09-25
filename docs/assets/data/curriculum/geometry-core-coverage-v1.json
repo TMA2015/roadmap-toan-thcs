@@ -1,6 +1,6 @@
 {
   "schema": "roadmap-geometry-core-coverage-v1",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "status": "ACTIVE_ROLLOUT",
   "generated_from": [
     "kntt-grade6-map.json",
@@ -18,8 +18,8 @@
   "summary": {
     "topics": 8,
     "total_curriculum_core_skills": 124,
-    "exact_id_covered": 81,
-    "exact_id_gaps": 43
+    "exact_id_covered": 87,
+    "exact_id_gaps": 37
   },
   "topics": [
     {
@@ -181,17 +181,16 @@
         "bang-nhau-cgc",
         "bang-nhau-gcg",
         "bang-nhau-tam-giac-vuong",
-        "tam-giac-can",
-        "so-sanh-canh-goc",
-        "bat-dang-thuc-tam-giac"
-      ],
-      "missing_by_exact_skill_id": [
         "viet-tuong-ung-tam-giac-bang-nhau",
+        "tam-giac-can",
         "nhan-biet-trung-truc",
         "cach-deu-dinh",
         "tinh-chat-duong-trung-truc",
+        "so-sanh-canh-goc",
+        "bat-dang-thuc-tam-giac",
         "duong-vuong-goc-duong-xien"
       ],
+      "missing_by_exact_skill_id": [],
       "bank_skills_not_core_by_current_map": [
         "phan-loai-tam-giac",
         "chu-vi-dien-tich",
@@ -269,8 +268,8 @@
       ],
       "counts": {
         "core": 13,
-        "exact_present": 8,
-        "exact_missing": 5,
+        "exact_present": 13,
+        "exact_missing": 0,
         "bank_extra": 6
       }
     },
@@ -303,11 +302,10 @@
         "truc-tam",
         "tam-noi-tiep",
         "tam-ngoai-tiep",
-        "phan-biet-bon-tam"
-      ],
-      "missing_by_exact_skill_id": [
+        "phan-biet-bon-tam",
         "dong-quy-bon-duong-dac-biet"
       ],
+      "missing_by_exact_skill_id": [],
       "bank_skills_not_core_by_current_map": [
         "vi-tri-truc-tam",
         "cach-deu-canh",
@@ -367,8 +365,8 @@
       ],
       "counts": {
         "core": 11,
-        "exact_present": 10,
-        "exact_missing": 1,
+        "exact_present": 11,
+        "exact_missing": 0,
         "bank_extra": 4
       }
     },

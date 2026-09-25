@@ -229,6 +229,17 @@ Vị trí của `O`:
 
 ---
 
+### 3.6A. Bốn định lí đồng quy – hiểu đúng
+
+Trong một tam giác:
+
+- ba **trung tuyến** đồng quy tại trọng tâm \(G\);
+- ba **đường cao** đồng quy tại trực tâm \(H\);
+- ba **phân giác trong** đồng quy tại tâm nội tiếp \(I\);
+- ba **đường trung trực** của các cạnh đồng quy tại tâm ngoại tiếp \(O\).
+
+> ⚠️ Đây là **bốn họ đường riêng biệt**. Không được hiểu rằng cả mười hai đường luôn đi qua một điểm. Nói chung \(G,H,I,O\) là bốn điểm khác nhau. Trong các tam giác đặc biệt có thể có sự trùng nhau; với tam giác đều, bốn tâm trùng nhau.
+
 ## 🔗 4. Kiến thức liên quan
 
 - **Kiến thức nên ôn trước:** [14 – Tam giác](../14-tam-giac/index.md)
@@ -297,49 +308,20 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 
 ---
 
-## 📝 8. Luyện tập
+## 📝 8. Luyện tập tiếp theo
 
-### Mức 1 – Nhận biết
+Micro-practice trong Learning Cards kiểm tra nhanh ngay sau khi học. Luyện sâu tại **Practice Room**.
 
-1. Trong tam giác `ABC`, `M` là trung điểm `BC`. `AM` là đường gì?
-2. Ba đường cao đồng quy tại điểm nào?
-3. Điểm nào cách đều ba cạnh của tam giác?
-4. Điểm nào cách đều ba đỉnh của tam giác?
+[🎯 Mở Practice Room](bai-tap.md){ .md-button .md-button--primary }
 
-### Mức 2 – Thông hiểu
+!!! info "Geometry Architecture v1"
+    Hình vẽ chỉ minh họa; mọi quan hệ dùng trong lời giải phải đến từ giả thiết, dựng hình hợp lệ hoặc bước đã chứng minh.
 
-5. `AM = 15 cm`, `G` là trọng tâm. Tính `AG`, `GM`.
-6. Tam giác vuông tại `A`. Xác định trực tâm.
-7. Tam giác vuông tại `A`, cạnh huyền `BC`. Tâm ngoại tiếp nằm ở đâu?
+## ✅ 9. Tự kiểm tra mức độ sẵn sàng
 
-### Mức 3 – Vận dụng
+[✅ Bắt đầu Core Readiness Check](tu-kiem-tra.md){ .md-button .md-button--primary }
 
-8. `I` nằm trong tam giác và nằm trên phân giác trong của góc `A` và góc `B`. Chứng minh `I` là tâm nội tiếp.
-9. `O` thỏa mãn `OA = OB = OC`. Giải thích vì sao `O` là tâm ngoại tiếp.
-
-### Mức 4 – Tổng hợp
-
-10. Hai trung tuyến `AM`, `BN` cắt nhau tại `G`. Biết `AG = 8 cm`. Tính `AM`.
-11. Một điểm `P` nằm trong tam giác và cách đều ba cạnh. Xác định vai trò của `P` và đường tròn tương ứng.
-
----
-
-## ✅ 9. Tự kiểm tra
-
-Hãy tự trả lời không nhìn tài liệu:
-
-1. Trung tuyến khác trung trực ở điểm nào?
-2. Trọng tâm chia trung tuyến theo tỉ số nào?
-3. Trực tâm của tam giác vuông nằm ở đâu?
-4. Tâm nội tiếp cách đều những đối tượng nào?
-5. Tâm ngoại tiếp cách đều những đối tượng nào?
-6. Tâm ngoại tiếp tam giác vuông nằm ở đâu?
-7. Điểm cách đều ba cạnh gợi đến tâm nào?
-8. Điểm cách đều ba đỉnh gợi đến tâm nào?
-
-**Tiêu chí đạt:** đúng ít nhất `7/8` câu và giải được bài trọng tâm ở phần luyện tập.
-
----
+Readiness chỉ tính KNTT Core, chấm sau khi nộp và dùng Soft Mastery.
 
 ## 🔄 10. Liên kết Roadmap
 
@@ -357,12 +339,16 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+- [ ] Phân biệt đúng trung tuyến, đường cao, phân giác trong và trung trực.
+- [ ] Nhớ đúng G, H, I, O.
+- [ ] Dùng đúng tỉ số trọng tâm 2:1.
+- [ ] Hiểu đúng: mỗi họ ba đường đồng quy tại một tâm riêng.
+- [ ] Không nói “mười hai đường luôn đồng quy tại một điểm”.
+- [ ] Core Readiness đạt khoảng **80%** hoặc đã chữa hiểu các lỗi còn lại.
 
-- [ ] Phân biệt đúng bốn loại đường đặc biệt.
-- [ ] Nhớ đúng bốn tâm `G, H, I, O`.
-- [ ] Dùng thành thạo tỉ số `2 : 1` của trọng tâm.
-- [ ] Vận dụng được tính chất cách đều của `I` và `O`.
-- [ ] Xác định đúng vị trí `H`, `O` theo loại tam giác.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra, chữa xong các câu sai trước khi chuyển sang Chuyên đề 16.
-- [ ] Giải được tối thiểu một bài tổng hợp có sử dụng tâm tam giác.
+!!! note "Soft Mastery"
+    Không cần đạt 100% mới được học tiếp.
+
+[🎯 Practice Room](bai-tap.md){ .md-button .md-button--primary }
+[✅ Core Readiness](tu-kiem-tra.md){ .md-button }
+[→ 16 – Tứ giác](../16-tu-giac/index.md){ .md-button }

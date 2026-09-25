@@ -1,0 +1,142 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "14-tam-giac",
+  "title": "Tam giác",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only mapped Core cards contribute to readiness; support/forward connections never gate Core."
+  },
+  "cards": [
+    {
+      "id": "geo14-core-1",
+      "order": 1,
+      "title": "Góc, cạnh và bất đẳng thức",
+      "kntt_lessons": [
+        "Lớp 7"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tong-goc-tam-giac",
+        "so-sanh-canh-goc",
+        "bat-dang-thuc-tam-giac",
+        "duong-vuong-goc-duong-xien"
+      ],
+      "prerequisites": [
+        "do-goc"
+      ],
+      "micro_practice": [
+        "GEO14MICRO_001",
+        "GEO14MICRO_002",
+        "GEO14MICRO_003"
+      ]
+    },
+    {
+      "id": "geo14-core-2",
+      "order": 2,
+      "title": "Tam giác cân và đường trung trực",
+      "kntt_lessons": [
+        "Lớp 7"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tam-giac-can",
+        "nhan-biet-trung-truc",
+        "cach-deu-dinh",
+        "tinh-chat-duong-trung-truc"
+      ],
+      "prerequisites": [
+        "trung-diem",
+        "duong-vuong-goc"
+      ],
+      "micro_practice": [
+        "GEO14MICRO_004",
+        "GEO14MICRO_005",
+        "GEO14MICRO_006"
+      ]
+    },
+    {
+      "id": "geo14-core-3",
+      "order": 3,
+      "title": "Tương ứng và bằng nhau c.c.c",
+      "kntt_lessons": [
+        "Lớp 7"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "viet-tuong-ung-tam-giac-bang-nhau",
+        "bang-nhau-ccc"
+      ],
+      "prerequisites": [
+        "gia-thiet-ket-luan"
+      ],
+      "micro_practice": [
+        "GEO14MICRO_007",
+        "GEO14MICRO_008",
+        "GEO14MICRO_009"
+      ]
+    },
+    {
+      "id": "geo14-core-4",
+      "order": 4,
+      "title": "Bằng nhau c.g.c và g.c.g",
+      "kntt_lessons": [
+        "Lớp 7"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "bang-nhau-cgc",
+        "bang-nhau-gcg"
+      ],
+      "prerequisites": [
+        "viet-tuong-ung-tam-giac-bang-nhau"
+      ],
+      "micro_practice": [
+        "GEO14MICRO_010",
+        "GEO14MICRO_011",
+        "GEO14MICRO_012"
+      ]
+    },
+    {
+      "id": "geo14-core-5",
+      "order": 5,
+      "title": "Bằng nhau của tam giác vuông",
+      "kntt_lessons": [
+        "Lớp 7"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "bang-nhau-tam-giac-vuong"
+      ],
+      "prerequisites": [
+        "duong-vuong-goc"
+      ],
+      "micro_practice": [
+        "GEO14MICRO_013",
+        "GEO14MICRO_014",
+        "GEO14MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "geo14-support-1",
+      "layer": "Core-Support",
+      "title": "Phân loại, góc ngoài và tam giác đều",
+      "gates_core": false
+    },
+    {
+      "id": "geo14-forward-1",
+      "layer": "Core-Support",
+      "title": "Pythagore – kết nối sang CĐ18",
+      "gates_core": false
+    },
+    {
+      "id": "geo14-ent10-1",
+      "layer": "Entrance10",
+      "title": "Chứng minh đoạn/góc bằng nhau bằng tam giác bằng nhau",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/14-tam-giac-micro-v1.json",
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json"
+}

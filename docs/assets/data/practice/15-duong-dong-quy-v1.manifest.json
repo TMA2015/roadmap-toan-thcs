@@ -7,7 +7,7 @@
     "title": "Các đường đồng quy trong tam giác"
   },
   "session_size": 10,
-  "question_count": 120,
+  "question_count": 124,
   "skill_labels": {
     "nhan-biet-trung-tuyen": "Nhận biết đường trung tuyến",
     "trong-tam": "Trọng tâm",
@@ -22,7 +22,8 @@
     "tam-ngoai-tiep": "Tâm ngoại tiếp",
     "cach-deu-dinh": "Tính chất cách đều ba đỉnh",
     "vi-tri-tam-ngoai-tiep": "Vị trí tâm ngoại tiếp",
-    "phan-biet-bon-tam": "Phân biệt G – H – I – O"
+    "phan-biet-bon-tam": "Phân biệt G – H – I – O",
+    "dong-quy-bon-duong-dac-biet": "Tính đồng quy của bốn họ đường đặc biệt"
   },
   "skill_groups": [
     {
@@ -39,8 +40,7 @@
       "label": "B. Đường cao – trực tâm",
       "skills": [
         "nhan-biet-duong-cao",
-        "truc-tam",
-        "vi-tri-truc-tam"
+        "truc-tam"
       ]
     },
     {
@@ -48,8 +48,7 @@
       "label": "C. Phân giác – tâm nội tiếp",
       "skills": [
         "nhan-biet-phan-giac",
-        "tam-noi-tiep",
-        "cach-deu-canh"
+        "tam-noi-tiep"
       ]
     },
     {
@@ -57,16 +56,25 @@
       "label": "D. Trung trực – tâm ngoại tiếp",
       "skills": [
         "nhan-biet-trung-truc",
-        "tam-ngoai-tiep",
-        "cach-deu-dinh",
-        "vi-tri-tam-ngoai-tiep"
+        "tam-ngoai-tiep"
       ]
     },
     {
       "id": "E",
-      "label": "E. Phân biệt bốn tâm",
+      "label": "E. Bốn tâm và đồng quy",
       "skills": [
-        "phan-biet-bon-tam"
+        "phan-biet-bon-tam",
+        "dong-quy-bon-duong-dac-biet"
+      ]
+    },
+    {
+      "id": "S",
+      "label": "Core-Support",
+      "skills": [
+        "vi-tri-truc-tam",
+        "cach-deu-canh",
+        "cach-deu-dinh",
+        "vi-tri-tam-ngoai-tiep"
       ]
     }
   ],
@@ -74,6 +82,7 @@
     "15-duong-dong-quy-v1-01.json",
     "15-duong-dong-quy-v1-02.json",
     "15-duong-dong-quy-v1-03.json",
-    "15-duong-dong-quy-v1-04.json"
+    "15-duong-dong-quy-v1-04.json",
+    "15-duong-dong-quy-v1-05.json"
   ]
 }

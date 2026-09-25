@@ -200,6 +200,25 @@ Ba đoạn `3 cm, 4 cm, 8 cm` không lập thành tam giác vì:
 
 ---
 
+### 3.6A. Đường vuông góc, đường xiên và đường trung trực
+
+Từ điểm \(A\) ngoài đường thẳng \(d\), nếu \(AH\perp d\) và \(B\in d, B\ne H\), thì:
+
+\[
+AH<AB.
+\]
+
+Nói cách khác, đoạn vuông góc là đoạn ngắn nhất từ một điểm đến một đường thẳng.
+
+**Đường trung trực** của đoạn \(AB\) là đường thẳng vuông góc với \(AB\) tại trung điểm của \(AB\).
+
+Tính chất hai chiều:
+
+- nếu \(P\) nằm trên trung trực \(AB\) thì \(PA=PB\);
+- nếu \(PA=PB\) thì \(P\) nằm trên trung trực \(AB\).
+
+> Đây là Core lớp 7; không được thay bằng việc nhìn hình thấy hai đoạn “có vẻ bằng nhau”.
+
 ![Infographic tam giác đặc biệt và Pythagore](../../assets/infographics/14/14-03-tam-giac-dac-biet-pythagore.svg)
 
 > Dùng bản này để phân biệt nhanh tam giác cân, đều, vuông và hai chiều của định lý Pythagore.
@@ -261,6 +280,8 @@ Nếu `∠A = 90°` thì:
 - `BC` là cạnh huyền.
 - `AB`, `AC` là hai cạnh góc vuông.
 
+> **Core-Support / kết nối CĐ18:** Pythagore được giữ trên trang này như kiến thức liên hệ, nhưng không tính vào Core Readiness CĐ14 theo mapping KNTT hiện tại.
+
 ##### Định lý Pythagore
 
 Trong tam giác vuông:
@@ -302,6 +323,16 @@ thì thứ tự chữ cái phải thể hiện đúng sự tương ứng:
 - `C ↔ F`
 
 ---
+
+### 3.8A. Thứ tự đỉnh tương ứng
+
+Khi viết \(\triangle ABC=\triangle DEF\), thứ tự chữ phải biểu diễn đúng:
+
+\[
+A\leftrightarrow D,\quad B\leftrightarrow E,\quad C\leftrightarrow F.
+\]
+
+Từ đó mới suy ra đúng các cạnh/góc tương ứng. Viết sai thứ tự có thể làm toàn bộ phần suy luận sau sai dù tiêu chuẩn bằng nhau được chọn đúng.
 
 #### Trường hợp cạnh – cạnh – cạnh (c.c.c)
 
@@ -571,110 +602,20 @@ Thứ tự sai sẽ dẫn đến suy luận cạnh/góc tương ứng sai.
 
 ---
 
-## 📝 8. Luyện tập
+## 📝 8. Luyện tập tiếp theo
 
-### Mức 1 – Nhận biết
+Micro-practice trong Learning Cards kiểm tra nhanh ngay sau khi học. Luyện sâu tại **Practice Room**.
 
-1. Tính góc còn lại của tam giác có hai góc `45°` và `65°`.
-2. Ba đoạn `4, 5, 6` có lập thành tam giác không?
-3. Tam giác có hai cạnh bằng nhau gọi là gì?
-4. Tam giác đều có mỗi góc bằng bao nhiêu độ?
-5. Xác định cạnh huyền của tam giác vuông tại `A`.
+[🎯 Mở Practice Room](bai-tap.md){ .md-button .md-button--primary }
 
-### Mức 2 – Thông hiểu
+!!! info "Geometry Architecture v1"
+    Hình vẽ chỉ minh họa; mọi quan hệ dùng trong lời giải phải đến từ giả thiết, dựng hình hợp lệ hoặc bước đã chứng minh.
 
-1. Tam giác `ABC` cân tại `A`, `∠A = 40°`. Tính `∠B`, `∠C`.
-2. Hai cạnh của một tam giác dài `6` và `9`. Tìm khoảng giá trị của cạnh còn lại.
-3. Tam giác có ba cạnh `6, 8, 10`. Chứng minh tam giác vuông.
-4. Trong `ΔABC`, biết `AB > AC`. So sánh `∠C` và `∠B`.
-5. Viết các cặp cạnh, góc tương ứng nếu `ΔABC = ΔMNP`.
+## ✅ 9. Tự kiểm tra mức độ sẵn sàng
 
-### Mức 3 – Vận dụng
+[✅ Bắt đầu Core Readiness Check](tu-kiem-tra.md){ .md-button .md-button--primary }
 
-1. Cho `ΔABC` cân tại `A`. Tia phân giác của `∠A` cắt `BC` tại `M`. Chứng minh `MB = MC`.
-2. Cho `ΔABC`, `AB = AC`. Trên `AB`, `AC` lấy `M`, `N` sao cho `AM = AN`. Chứng minh `BN = CM`.
-3. Cho tam giác vuông `ABC` tại `A`, `AB = 6`, `AC = 8`. Tính `BC`.
-4. Chứng minh một đường thẳng là trung trực bằng cách sử dụng hai tam giác bằng nhau.
-
-### Mức 4 – Tổng hợp
-
-1. Cho `ΔABC` cân tại `A`, kẻ `BD ⟂ AC` và `CE ⟂ AB`. Chứng minh `BD = CE`.
-2. Cho tam giác `ABC`, `M` là trung điểm của `BC`. Trên tia đối của `MA` lấy `D` sao cho `MD = MA`. Chứng minh `AB = CD` và `AC = BD`.
-3. Một bài tổng hợp có song song, tam giác cân và hai tam giác bằng nhau: hãy chỉ rõ mỗi bước dùng định lý nào.
-
----
-
-## ✅ 9. Tự kiểm tra
-
-### Mini quiz
-
-#### Câu 1
-
-Tổng ba góc của một tam giác bằng:
-
-A. `90°`
-B. `180°`
-C. `270°`
-D. `360°`
-
-#### Câu 2
-
-Ba độ dài nào **không** tạo thành tam giác?
-
-A. `3, 4, 5`
-B. `4, 4, 7`
-C. `2, 3, 6`
-D. `5, 6, 8`
-
-#### Câu 3
-
-Tam giác cân có:
-
-A. ba cạnh bằng nhau
-B. hai cạnh bằng nhau
-C. một góc vuông
-D. ba góc nhọn bắt buộc
-
-#### Câu 4
-
-Nếu hai tam giác có ba cạnh tương ứng bằng nhau thì chúng bằng nhau theo:
-
-A. c.c.c
-B. c.g.c
-C. g.c.g
-D. Pythagore
-
-#### Câu 5
-
-Tam giác có cạnh `5, 12, 13` là:
-
-A. tam giác cân
-B. tam giác đều
-C. tam giác vuông
-D. không tồn tại
-
-#### Đáp án
-
-1. B
-2. C
-3. B
-4. A
-5. C
-
----
-
-### Checklist tự đánh giá
-
-- [ ] Tôi tính được góc trong và góc ngoài của tam giác.
-- [ ] Tôi kiểm tra được điều kiện tồn tại tam giác.
-- [ ] Tôi so sánh đúng cạnh và góc đối diện.
-- [ ] Tôi nhận biết được tam giác cân, đều, vuông.
-- [ ] Tôi sử dụng được định lý Pythagore và định lý đảo.
-- [ ] Tôi phân biệt được c.c.c, c.g.c và g.c.g.
-- [ ] Tôi viết đúng thứ tự hai tam giác bằng nhau.
-- [ ] Tôi biết dùng hai tam giác bằng nhau để chứng minh cạnh hoặc góc bằng nhau.
-
----
+Readiness chỉ tính KNTT Core, chấm sau khi nộp và dùng Soft Mastery.
 
 ## 🔄 10. Liên kết Roadmap
 
@@ -692,14 +633,16 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+- [ ] Nắm chắc tổng góc, cạnh–góc và bất đẳng thức tam giác.
+- [ ] Biết đường vuông góc ngắn hơn đường xiên.
+- [ ] Dùng đúng hai chiều của tính chất đường trung trực.
+- [ ] Viết đúng thứ tự đỉnh tương ứng khi chứng minh hai tam giác bằng nhau.
+- [ ] Dùng đúng c.c.c, c.g.c, g.c.g và trường hợp tam giác vuông.
+- [ ] Core Readiness đạt khoảng **80%** hoặc đã chữa hiểu các lỗi còn lại.
 
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra, chữa xong các câu sai trước khi chuyển sang Chuyên đề 15.
-- [ ] Làm chắc bài tính góc và bất đẳng thức tam giác.
-- [ ] Nhận dạng đúng tam giác cân, đều và vuông.
-- [ ] Giải được bài Pythagore cơ bản mà không nhầm cạnh huyền.
-- [ ] Chứng minh được hai tam giác bằng nhau bằng ít nhất ba trường hợp cơ bản.
-- [ ] Dùng được kết quả hai tam giác bằng nhau để chứng minh cạnh/góc tương ứng.
-- [ ] Trình bày được một bài chứng minh hình học đầy đủ và có căn cứ.
+!!! note "Soft Mastery"
+    Không cần đạt 100% mới được học tiếp.
 
-> **Mục tiêu cuối:** không học tam giác như một tập hợp công thức rời rạc. Hãy xem tam giác là “đơn vị cơ bản” của chứng minh hình học; phần lớn hình phức tạp đều có thể được tách thành các tam giác để phân tích.
+[🎯 Practice Room](bai-tap.md){ .md-button .md-button--primary }
+[✅ Core Readiness](tu-kiem-tra.md){ .md-button }
+[→ 15 – Các đường đồng quy](../15-duong-dong-quy/index.md){ .md-button }
