@@ -40,7 +40,11 @@ CĂN THỨC VÀ BIẾN ĐỔI CĂN THỨC
 │   ├── Mẫu dạng a + √b
 │   └── Mẫu dạng √a + √b
 │
-└── 5. Ứng dụng
+├── 5. Căn bậc ba
+│   ├── Căn bậc ba của số dương, số 0 và số âm
+│   └── ∛(A³) = A với mọi A thực
+│
+└── 6. Ứng dụng
     ├── Rút gọn biểu thức
     ├── Tính giá trị
     ├── So sánh
@@ -59,9 +63,10 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 - [ ] Biến đổi căn thức bằng các quy tắc tích, thương và đưa thừa số ra/vào dấu căn.
 - [ ] Nhận diện và cộng trừ được các căn thức đồng dạng.
 - [ ] Trục căn thức ở mẫu trong các dạng cơ bản.
+- [ ] Hiểu căn bậc ba, tính được các căn bậc ba cơ bản và nhớ \(\sqrt[3]{A^3}=A\) với mọi số thực \(A\).
 - [ ] Rút gọn biểu thức chứa căn theo trình tự hợp lý.
-- [ ] Giải các bài tính giá trị, tìm x, so sánh và tìm giá trị nguyên.
 - [ ] Kiểm soát điều kiện xác định trong toàn bộ lời giải.
+- [ ] **Entrance10 / mở rộng:** vận dụng vào phương trình chứa căn, so sánh và bài giá trị nguyên sau khi Core đã chắc.
 
 ---
 
@@ -111,7 +116,7 @@ Ví dụ:
 
 Nếu biết thêm `x ≥ 3` thì mới kết luận `|x - 3| = x - 3`.
 
-### 3.3A. Bình phương hai vế và phương trình chứa căn
+### 3.3A. Mở rộng / Entrance10 – Bình phương hai vế và phương trình chứa căn
 
 Bình phương hai vế **không phải lúc nào cũng là phép biến đổi tương đương**. Từ `U = V` có thể suy ra `U² = V²`, nhưng chiều ngược lại còn có khả năng `U = -V`.
 
@@ -182,6 +187,28 @@ Ví dụ:
 `3√5 = √45`
 
 > Nếu thừa số đứng ngoài căn âm, phải giữ dấu âm ở ngoài. Chẳng hạn `-3√5 = -√45`, không viết `-3√5 = √45`.
+
+### 3.8. Căn bậc ba
+
+Căn bậc ba của số thực `a` là số thực `b` sao cho `b³ = a`, ký hiệu `∛a`.
+
+Khác với căn bậc hai, **căn bậc ba của số âm vẫn xác định trong tập số thực**.
+
+Ví dụ:
+
+- `∛27 = 3` vì `3³ = 27`;
+- `∛0 = 0`;
+- `∛(-64) = -4` vì `(-4)³ = -64`.
+
+Với mọi số thực `A`:
+
+`∛(A³) = A`
+
+Ở đây **không cần giá trị tuyệt đối**. Chẳng hạn:
+
+`∛((-5)³) = -5`
+
+> ⚠️ So sánh hai quy tắc dễ nhầm: `√(A²) = |A|`, còn `∛(A³) = A`.
 
 ---
 
