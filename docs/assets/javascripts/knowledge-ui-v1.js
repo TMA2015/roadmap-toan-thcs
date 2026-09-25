@@ -128,7 +128,7 @@
     host.insertBefore(block, first);
   };
   const init = () => {
-    if (!/\\/kien-thuc\\/\\d{2}-[^/]+\\//.test(location.pathname)) document.body.classList.remove("roadmap-focus-mode");
+    if (!location.pathname.includes("/kien-thuc/") || !location.pathname.match(/\/[0-9][0-9]-[^/]+\//)) document.body.classList.remove("roadmap-focus-mode");
     setupLibrary();
     setupLesson();
   };
