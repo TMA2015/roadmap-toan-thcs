@@ -501,49 +501,40 @@ Mức ưu tiên tổng thể của chuyên đề: **⭐⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
-**Learning Journey Entrance10:** 5 thẻ học, mỗi thẻ có kiến thức ngắn, ví dụ, lỗi thường gặp và 3 câu kiểm tra nhanh. Tất cả đều là luyện tập bổ trợ, **không khóa KNTT Core** và không thay thế bài tự luận.
+Chuyên đề 25 từ nay tách rõ **ba đường luyện khác nhau** để không trộn “biết Toán” với “biết làm bài thi”:
 
+### A. Luyện học thuật
 
-### Mức 1 – Nhận biết
+[**Bộ bài tập học thuật tổng hợp**](bai-tap.md) gồm các bài Đại số, hàm số – Viète, bài toán thực tế, Thống kê – Xác suất và Hình học. Đây là nơi kiểm tra trực tiếp năng lực Toán.
 
-1. Liệt kê bốn mạch kiến thức lớn của Roadmap.
-2. Nêu ba giai đoạn ôn thi.
-3. Nêu ba nhóm lỗi sau khi làm đề.
+### B. Học bài mẫu kinh điển
 
-### Mức 2 – Thông hiểu
+[**Bài toán kinh điển**](bai-toan-kinh-dien.md) tập trung vào những mẫu có giá trị dạy phương pháp: biểu thức căn có điều kiện, Viète, bài toán lập hệ, hệ thức lượng từ đồng dạng và tối ưu bằng bình phương không âm.
 
-4. Một học sinh hay sai dấu nhưng nhớ đúng kiến thức. Đây là loại lỗi nào? Cách sửa?
-5. Một học sinh yếu hình học tổng hợp và cấu trúc đề địa phương đặt trọng số cao cho phần này. Nên xếp vào nhóm ưu tiên nào?
-6. Vì sao không nên chỉ làm đề mà không chữa đề?
+Mỗi bài yêu cầu học sinh nhận ra:
+**dấu hiệu → công cụ → chuỗi suy luận → cách biến đổi bài**.
 
-### Mức 3 – Vận dụng
+### C. Luyện đề hoàn chỉnh
 
-7. Lập ma trận A–B–C–D cho 8 chuyên đề dựa trên kết quả cá nhân.
-8. Sau một đề thi thử, hãy phân loại 5 câu sai thành lỗi kiến thức, kỹ năng hoặc cẩu thả.
-9. Lập kế hoạch 7 ngày gồm ôn chuyên đề, luyện đề và chữa lỗi.
+[**Đề luyện hoàn chỉnh số 1 – 120 phút**](de-luyen-01.md) là đề tự biên soạn để luyện toàn bộ quy trình phòng thi và chữa đề.
 
-### Mức 4 – Tổng hợp
+Đề này **không sao chép đề chính thức**. Cấu trúc được dùng như một bài mô phỏng dựa trên xu hướng kỳ thi Hà Nội theo chương trình mới. Đề Toán vào lớp 10 Hà Nội năm 2025 gồm 5 bài trong 120 phút; Sở GD&ĐT Hà Nội đã công bố đề và đáp án chính thức sau kỳ thi.
 
-10. Chọn một đề thi hoàn chỉnh, bấm giờ, chấm điểm và tạo báo cáo gồm: điểm, thời gian, lỗi, chuyên đề yếu, hành động sửa.
-11. Sau 3 đề liên tiếp, so sánh các chỉ số và điều chỉnh kế hoạch tuần tiếp theo.
-12. Dựa vào đề minh họa địa phương, điều chỉnh lại ma trận ưu tiên cá nhân.
+### D. Kỹ năng thi — tách khỏi điểm học thuật
+
+[**Tự đánh giá kỹ năng làm bài**](tu-danh-gia-ky-nang-thi.md) gồm quản lý thời gian, phân loại lỗi, sổ lỗi và quy trình chữa đề.
+
+> Kỹ năng thi giúp bảo toàn điểm số; nó **không thay thế kiến thức Toán** và không được trộn vào điểm tự kiểm tra học thuật.
 
 ---
 
 ## ✅ 9. Tự kiểm tra
 
-Hãy tự trả lời không nhìn tài liệu:
+[Tự kiểm tra Chuyên đề 25](tu-kiem-tra.md) giờ là **bài Toán học thuật**: Đại số, Viète, Thống kê – Xác suất, Hình học và vận dụng.
 
-1. Bốn mạch kiến thức lớn là gì?
-2. Ba giai đoạn ôn thi là gì?
-3. Sau mỗi đề cần phân loại những nhóm lỗi nào?
-4. Vì sao cần sổ lỗi sai?
-5. Nhóm A trong ma trận ưu tiên có đặc điểm gì?
-6. Tỉ lệ thời gian gợi ý có phải cố định không?
-7. Căn cứ nào nên dùng để điều chỉnh chiến lược theo địa phương?
-8. Sau khi xem lời giải câu sai, bước tiếp theo quan trọng nhất là gì?
+Phần hỏi về chiến lược phòng thi đã được chuyển sang [Tự đánh giá kỹ năng làm bài](tu-danh-gia-ky-nang-thi.md).
 
-**Tiêu chí đạt:** đúng ít nhất `7/8` câu, có một ma trận ưu tiên cá nhân và hoàn thành ít nhất một chu trình `làm đề → chữa → làm lại → ghi lỗi`.
+**Nguyên tắc:** điểm tự kiểm tra phản ánh khả năng giải Toán; kỹ năng thi được theo dõi riêng bằng checklist và sổ lỗi.
 
 ---
 
