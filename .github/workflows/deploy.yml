@@ -69,6 +69,9 @@ jobs:
       - name: Run Golden Geometry CĐ19-CĐ20 QA
         run: node scripts/test-golden-geo19-20.js
 
+      - name: Check CĐ18 SVG pilot geometry and links
+        run: node scripts/test-geo18-svg-pilot.js
+
       - name: Build CĐ19-CĐ20 Gemini review bundle
         run: node scripts/build-gemini-geo19-20-review.js docs/assets/data/collaboration/exports/gemini-geo19-20-review.json
 

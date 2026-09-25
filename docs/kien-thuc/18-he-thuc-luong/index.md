@@ -46,8 +46,8 @@ Mạch tư duy trọng tâm:
 ### 1. Đường cao trong tam giác vuông
 
 <p align="center">
-  <img src="../../assets/geometry/18/18-duong-cao-canh-huyen.svg"
-       alt="Minh họa đường cao trong tam giác vuông"
+  <img src="../../assets/geometry/18/18-duong-cao-canh-huyen-v1.svg"
+       alt="Tam giác ABC vuông tại A, AH vuông góc BC tại H; BH=p, HC=q, AH=h"
        width="500">
 </p>
 
@@ -65,13 +65,15 @@ Các hệ thức quan trọng:
 
 > Khi bài toán có tam giác vuông và đường cao xuống cạnh huyền, nên nghĩ ngay đến nhóm hệ thức này.
 
+![Minh họa hệ thức AH² = BH × HC](../../assets/geometry/18/18-he-thuc-duong-cao-pq-v1.svg)
+
 ---
 
 ### 2. Tỉ số lượng giác của góc nhọn
 
 <p align="center">
-  <img src="../../assets/geometry/18/18-ti-so-luong-giac.svg"
-       alt="Minh họa các tỉ số lượng giác trong tam giác vuông"
+  <img src="../../assets/geometry/18/18-tam-giac-vuong-doi-ke-huyen-v1.svg"
+       alt="Tam giác ABC vuông tại A, xét góc alpha ở C: AB đối, AC kề, BC huyền"
        width="520">
 </p>
 
@@ -95,9 +97,11 @@ Mẹo nhớ:
 
 ### 3. Góc nâng và góc hạ
 
+![Góc nâng so với phương ngang, với khoảng cách ngang d và chiều cao h](../../assets/geometry/18/18-goc-nang-v1.svg)
+
 <p align="center">
   <img src="../../assets/geometry/18/18-goc-nang-goc-ha.svg"
-       alt="Minh họa góc nâng và góc hạ"
+       alt="Hình tham khảo góc nâng và góc hạ (ảnh cũ, sẽ được thay ở batch tiếp theo)"
        width="520">
 </p>
 
