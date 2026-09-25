@@ -1,0 +1,17 @@
+{
+  "task_id": "STA21-UX-LANGUAGE-001",
+  "issue": "Owner screenshots show CĐ21 lesson labels escape card bounds on desktop, tablet and phone; compact 5-column CSS at >=32rem conflicts with readable card widths. Owner requested direct math language.",
+  "fixes": [
+    "CSS card-top grid with minmax(0,1fr), multiline caption; responsive breakpoints 24/34/48/64rem for 2/3/4/5 columns, single-column mobile retained.",
+    "All 15 CĐ21 micro stems rewritten to be concise, with exact labels and units; four options and original answer indices unchanged.",
+    "Disambiguated per-student clothing collection, counts vs revenue, unique people vs subject-wise achievement events, hypothetical chart transcriptions.",
+    "New documented mandatory editorial style + collaborator handoff reference + CI regression checks."
+  ],
+  "scope": [
+    "UI CSS is shared across topic cards: existing pages benefit from caption wrapping; no JS engine or evidence store changes.",
+    "CĐ21 only: 15 micro question text/options/explanations improved, assessed skill and learner data unchanged.",
+    "New guideline controls future Gemini/ChatGPT drafts; it does not rewrite every old question bank automatically."
+  ],
+  "verification": "Dedicated CI checks CSS and JSON wording contracts, existing Golden Template micro test, strict MkDocs build; device visual owner QA required.",
+  "next": "CĐ21 Readiness authoring after deployed UI fix."
+}

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.42",
+  "version": "1.0.43",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -208,7 +208,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Next CĐ21 Golden Template: author and integrate a source-locked, Core-only interactive Readiness Check (10–12 MCQs, feedback after submit, no hints/Tutor, soft mastery). Practice Bank 132 and Learn 5 cards/15 micro are complete.",
+    "next_priority": "After responsive/wording patch deploy, request owner visual QA on iPhone portrait and iPad/PC. Then source-lock Gemini CĐ21 Core Readiness (separate evidence, after-submit grading, no hints/Tutor, soft mastery).",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -234,7 +234,9 @@
       "learn_card_count": 5,
       "micro_practice_count": 15,
       "learn_integration": "STA21-LEARN-CHATGPT-INTEGRATION-001",
-      "readiness": "PENDING"
+      "readiness": "PENDING",
+      "language_standard": "docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md",
+      "responsive_fix": "STA21-UX-LANGUAGE-001"
     }
   },
   "handoff_required_fields": [
@@ -266,6 +268,6 @@
     "next_public_task": "STA21-READY-001",
     "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-learn-gemini-author-001.json",
     "protocol_version": "2.0",
-    "relay_v2": "Main-lesson image refresh checkpoint stored; return to small Gemini-led authoring batches. CĐ13–20 legacy image replacements are not a completed automatic geometry renderer."
+    "relay_v2": "All new author/reviewer batches MUST apply docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md: direct language, explicit units/population, never infer data or leave absent chart. Golden Template frozen."
   }
 }

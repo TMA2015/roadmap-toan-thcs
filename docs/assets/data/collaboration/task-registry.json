@@ -405,6 +405,16 @@
       "review_notes": "Five KNTT Core cards with optional teaching copy and 15 micro-practice checks integrated in dedicated files, QA and CI; 132-question Practice Bank preserved. Interactive Readiness pending.",
       "review_verdict": "ACCEPT_WITH_EDITORIAL_AND_SCHEMA_FIXES",
       "integrated_artifact": "docs/assets/data/curriculum/topic21-learning-workspace.json"
+    },
+    {
+      "id": "STA21-UX-LANGUAGE-001",
+      "title": "Fix CĐ21 responsive Learning Card captions and apply plain-language math editorial style",
+      "routing": "CHATGPT_IMPLEMENT_QA",
+      "status": "DONE",
+      "context_version": "1.0.43",
+      "integrated_artifact": "docs/assets/stylesheets/topic-workspace.css",
+      "review_verdict": "CODE_READY_AWAITING_DEPLOY_QA",
+      "review_notes": "Removed forced lesson nowrap and early 5-column layout; 1/2/3/4/5 responsive columns by container width, full labels retained. Rewrote all 15 CĐ21 micro question stems for direct language; answers and scored skill IDs preserved. Added editorial standard + CI. Owner PC/iPad/iPhone screenshot shows prior overflow; owner visual recheck after deployment pending."
     }
   ]
 }
