@@ -1,0 +1,367 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "FAC06-MICRO-V1",
+  "topic": {
+    "id": "06-phan-tich-da-thuc",
+    "title": "Phân tích đa thức thành nhân tử"
+  },
+  "question_count": 8,
+  "questions": [
+    {
+      "id": "FAC06MICRO_001",
+      "card_id": "fac06-core-1",
+      "micro_role": "base",
+      "question": "Đặt nhân tử chung lớn nhất của \\(6x^2+9x\\). Kết quả là:",
+      "options": [
+        "\\(3x(2x+3)\\)",
+        "\\(3(2x^2+3x)\\)",
+        "\\(x(6x+9)\\)",
+        "\\(9x(\\frac23x+1)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "nhan-tu-chung"
+        ],
+        "type": "nhan-tu-chung",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "ƯCLN của 6 và 9 là 3, phần biến chung lớn nhất là x, nên nhân tử chung lớn nhất là 3x.",
+      "hints": [
+        "Tìm ƯCLN của các hệ số.",
+        "Chọn lũy thừa thấp nhất của x xuất hiện ở mọi hạng tử."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "nhan-tu-chung-chua-toi-da",
+          "signal_weight": 1,
+          "feedback_hint": "Kết quả này có dạng tích nhưng chưa lấy hết nhân tử chung x."
+        },
+        "2": {
+          "signal": "nhan-tu-chung-chua-toi-da",
+          "signal_weight": 1,
+          "feedback_hint": "Có thể lấy thêm hệ số chung 3."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_002",
+      "card_id": "fac06-core-1",
+      "micro_role": "trap",
+      "question": "Phân tích \\(2x(x-y)+4(y-x)\\) thành nhân tử.",
+      "options": [
+        "\\(2(x-y)(x-2)\\)",
+        "\\(2(x-y)(x+2)\\)",
+        "\\(2(x+y)(x-2)\\)",
+        "\\((x-y)(2x+4)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "doi-dau-nhan-tu-chung"
+        ],
+        "type": "doi-dau-nhan-tu-chung",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Vì \\(y-x=-(x-y)\\), ta có \\(2x(x-y)-4(x-y)=2(x-y)(x-2)\\).",
+      "hints": [
+        "Đổi y-x thành -(x-y) trước.",
+        "Sau đó đặt 2(x-y) làm nhân tử chung."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "doi-dau-nhan-tu-chung-sai",
+          "signal_weight": 2,
+          "feedback_hint": "Khi đổi y-x thành -(x-y), hạng tử 4(y-x) đổi dấu."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_003",
+      "card_id": "fac06-core-1",
+      "micro_role": "apply",
+      "question": "Nhân tử chung lớn nhất của \\(12x^3y^2\\) và \\(18x^2y^3\\) là:",
+      "options": [
+        "\\(6x^2y^2\\)",
+        "\\(6x^3y^3\\)",
+        "\\(3x^2y^2\\)",
+        "\\(6xy\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "nhan-tu-chung"
+        ],
+        "type": "nhan-tu-chung",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "ƯCLN(12,18)=6; lấy số mũ nhỏ nhất của x là 2 và của y là 2.",
+      "hints": [
+        "Tách phần hệ số và phần biến.",
+        "Với biến chung, lấy số mũ nhỏ nhất."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_004",
+      "card_id": "fac06-core-2",
+      "micro_role": "base",
+      "question": "Phân tích \\(x^2-25\\) thành nhân tử.",
+      "options": [
+        "\\((x-5)(x+5)\\)",
+        "\\((x-5)^2\\)",
+        "\\((x-25)(x+25)\\)",
+        "\\((x+5)^2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "hieu-hai-binh-phuong"
+        ],
+        "type": "hieu-hai-binh-phuong",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "\\(x^2-25=x^2-5^2=(x-5)(x+5)\\).",
+      "hints": [
+        "Nhận dạng hiệu hai bình phương.",
+        "25=5^2."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_005",
+      "card_id": "fac06-core-2",
+      "micro_role": "trap",
+      "question": "Phân tích \\((x-2)^2-y^2\\) thành nhân tử.",
+      "options": [
+        "\\((x-2-y)(x-2+y)\\)",
+        "\\((x-2-y)^2\\)",
+        "\\((x-y-2)(x-y+2)\\)",
+        "\\((x-2)^2-y\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "binh-phuong-hoan-chinh"
+        ],
+        "type": "binh-phuong-hoan-chinh",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đây là hiệu hai bình phương với A=x-2 và B=y, nên bằng (A-B)(A+B).",
+      "hints": [
+        "Coi x-2 là một khối A.",
+        "Áp dụng A^2-B^2=(A-B)(A+B)."
+      ],
+      "supporting_skills": [
+        "hieu-hai-binh-phuong"
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "nham-hieu-hai-binh-phuong",
+          "signal_weight": 2,
+          "feedback_hint": "Hiệu hai bình phương tạo hai nhân tử liên hợp, không phải một bình phương."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_006",
+      "card_id": "fac06-core-2",
+      "micro_role": "apply",
+      "question": "Phân tích \\(1-8x^3\\) thành nhân tử.",
+      "options": [
+        "\\((1-2x)(1+2x+4x^2)\\)",
+        "\\((1-2x)(1-2x+4x^2)\\)",
+        "\\((1-2x)(1+4x^2)\\)",
+        "\\((1-8x)(1+8x+64x^2)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "tong-hieu-lap-phuong"
+        ],
+        "type": "tong-hieu-lap-phuong",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(1-8x^3=1^3-(2x)^3=(1-2x)(1+2x+4x^2)\\).",
+      "hints": [
+        "Nhận ra 8x^3=(2x)^3.",
+        "Hiệu hai lập phương có nhân tử bậc hai a^2+ab+b^2."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "hieu-lap-phuong-sai-dau",
+          "signal_weight": 2,
+          "feedback_hint": "Nhân tử bậc hai của hiệu hai lập phương có hạng tử giữa dương."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_007",
+      "card_id": "fac06-core-3",
+      "micro_role": "base",
+      "question": "Phân tích \\(xy+3x+y+3\\) thành nhân tử.",
+      "options": [
+        "\\((x+1)(y+3)\\)",
+        "\\((x+3)(y+1)\\)",
+        "\\((x-1)(y+3)\\)",
+        "\\((x+1)(y-3)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "nhom-hang-tu"
+        ],
+        "type": "nhom-hang-tu",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Nhóm x(y+3)+(y+3)=(x+1)(y+3).",
+      "hints": [
+        "Nhóm hai hạng tử đầu và hai hạng tử cuối.",
+        "Mục tiêu là tạo cùng nhân tử y+3."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "FAC06MICRO_008",
+      "card_id": "fac06-core-3",
+      "micro_role": "trap",
+      "question": "Phân tích \\(x^2-xy-2x+2y\\) thành nhân tử.",
+      "options": [
+        "\\((x-2)(x-y)\\)",
+        "\\((x-2)(x+y)\\)",
+        "\\((x+2)(x-y)\\)",
+        "\\((x+2)(x+y)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-tich-da-thuc",
+        "skill": [
+          "nhom-hang-tu"
+        ],
+        "type": "nhom-hang-tu",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Nhóm x(x-y)-2(x-y)=(x-2)(x-y).",
+      "hints": [
+        "Nhóm x^2-xy và -2x+2y.",
+        "Ở nhóm thứ hai, đặt -2 để xuất hiện x-y."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "nhom-hang-tu-sai-dau",
+          "signal_weight": 2,
+          "feedback_hint": "Khi đặt -2 ở nhóm thứ hai, dấu trong ngoặc phải đổi phù hợp."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}
