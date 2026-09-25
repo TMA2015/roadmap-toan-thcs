@@ -1,0 +1,40 @@
+{
+  "packet_id": "STAT22-MAP-CHATGPT-REVIEW-001",
+  "source_packet_id": "STAT22-MAP-GEMINI-REVIEW-001-RESULT",
+  "verdict": "ACCEPT_WITH_CORRECTIONS",
+  "accepted": [
+    "Topic 22 statistical treatment belongs to Grade-10 KNTT Chapter V, Lessons 13–14; current Grade-6–9 project maps have no PRIMARY Topic-22 link.",
+    "Retain all 120 existing practice questions in optional THPT-Bridge, outside THCS Core Readiness.",
+    "Remove old 7/10 hard progression requirement and misleading 'grades 7–9 core' banner."
+  ],
+  "corrections": [
+    {
+      "skill": "trung-binh-tho",
+      "issue": "Gemini said all 10 skills begin formally in Grade 10. Basic arithmetic mean is already taught in Grade 4 KNTT Bài 46.",
+      "resolution": "Tag the CĐ22 statistical indicator application THPT-Bridge; record elementary average as prior knowledge/Core-Support separately, not a new Grade-10 prerequisite."
+    },
+    {
+      "skill": "nhieu-mot",
+      "issue": "The 'no mode if frequencies equal' phrase is textbook convention and not universal across statistics definitions.",
+      "resolution": "Retain current explicit 'no unique standout mode' wording and avoid claiming an unqualified universal rule."
+    },
+    {
+      "skill": "ngoai-lai",
+      "issue": "Informal conspicuous values and a formal outlier threshold must not be conflated.",
+      "resolution": "Keep informal recognition as preparatory and hold formal quantitative criteria until separately sourced and reviewed."
+    },
+    {
+      "skill": "all",
+      "issue": "Each cited book location is a secondary item pointer rather than an exact verified direct-publisher page extract.",
+      "resolution": "Book-index cross-check verifies chapter/lesson placement; do not overstate complete source coverage of each item or promote to school curriculum core without actual course mapping."
+    }
+  ],
+  "evidence": {
+    "grade4_mean": "Toán 4 KNTT Bài 46",
+    "grade10_chapter": "Toán 10 KNTT Chương V Bài 13–14",
+    "grade9_frequency": "Toán 9 KNTT frequency/relative-frequency chapter",
+    "repo": "No primary Topic22 across current 6–9 maps; Grade9 explicit exclusion and caution."
+  },
+  "integration": "Set per-item tags.layer THPT-Bridge in all 120 Practice questions because Practice Engine v2 previously defaults absent layer to KNTT-Core; preserve IDs, correct answer, data, and evidence counters.",
+  "next": "Optional bridge Learn cards, not THCS Core Readiness. Continue CĐ23 THCS Core after independently checking its grade mapping."
+}

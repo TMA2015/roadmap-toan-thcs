@@ -1,10 +1,10 @@
 # Bài tập – Chuyên đề 22: Các đại lượng đặc trưng của dữ liệu
 
-> **Mục tiêu:** luyện số trung bình, trung vị, mốt, khoảng biến thiên và lựa chọn đại lượng đại diện phù hợp.
+> **Phân tầng:** THPT-Bridge, tự chọn để chuẩn bị Toán 10. Trung bình cộng cơ bản đã học từ Toán 4; các dạng phân tích thống kê ở đây không tính vào Core Readiness THCS.
 >
 > **Quy ước mã bài:** `22-Mx-yy`.
 
-# Mức 1 – Nhận biết
+## Mức 1 – Nhận biết
 
 ### 22-M1-01
 Nêu công thức tính số trung bình cộng của \(n\) giá trị.
@@ -30,7 +30,7 @@ Khoảng biến thiên được tính theo công thức nào?
 ### 22-M1-08
 Một bộ dữ liệu có thể có nhiều mốt không?
 
-# Mức 2 – Thông hiểu
+## Mức 2 – Thông hiểu
 
 ### 22-M2-01
 Tính trung bình của \(6,7,8,8,9\).
@@ -56,7 +56,7 @@ Với bảng trên, viết tử số dùng để tính số trung bình.
 ### 22-M2-08
 Dữ liệu \(7,8,8,9,30\) có một giá trị khác biệt rõ rệt. Nêu đại lượng nào thường phù hợp hơn để mô tả mức điển hình và vì sao.
 
-# Mức 3 – Vận dụng
+## Mức 3 – Vận dụng
 
 ### 22-M3-01
 Tính trung bình của \(5,6,7,8,9,10\).
@@ -88,7 +88,7 @@ Dữ liệu \(4,4,5,5,6,6\). Hãy nhận xét về mốt theo quy ước của R
 ### 22-M3-10
 Một giá trị rất lớn bị nhập nhầm vào dữ liệu. Nêu đại lượng nào trong trung bình, trung vị, khoảng biến thiên sẽ bị ảnh hưởng rõ rệt nhất và giải thích.
 
-# Mức 4 – Tổng hợp / ôn thi
+## Mức 4 – Tổng hợp / chuyển tiếp Toán 10
 
 ### 22-M4-01
 Lớp A có điểm \(6,7,8\) với tần số \(2,3,5\). Tính trung bình, trung vị và mốt.
@@ -177,15 +177,15 @@ Mốt là 8.
 
 # Theo dõi tiến độ
 
-- [ ] M1 đạt ít nhất 6/8.
-- [ ] M2 đạt ít nhất 6/8.
-- [ ] M3 đạt ít nhất 7/10.
-- [ ] M4 đã thử ít nhất 3/6.
+- [ ] M1: chữa các câu chưa chắc; điểm chỉ để tự ôn.
+- [ ] M2: chữa các câu chưa chắc; điểm chỉ để tự ôn.
+- [ ] M3: chọn bài cần củng cố theo kỹ năng.
+- [ ] M4: thử bài nhiều bước khi đã sẵn sàng.
 - [ ] Tôi luôn sắp xếp dữ liệu trước khi tìm trung vị.
 
 # Liên kết Roadmap
 
 - **← Bài học:** [Chuyên đề 22 – Đại lượng đặc trưng](index.md)
 - **← Chuyên đề trước:** [21 – Thống kê](../21-thong-ke/index.md)
-- **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 22](tu-kiem-tra.md)
+- **→ Tự kiểm tra tự chọn:** [Bài tự luận chuyển tiếp Toán 10](tu-kiem-tra.md)
 - **→ Chuyên đề tiếp theo:** [23 – Xác suất](../23-xac-suat/index.md)

@@ -1,5 +1,7 @@
-# Tự kiểm tra – Chuyên đề 22: Các đại lượng đặc trưng của dữ liệu
+# Tự kiểm tra tự chọn – Chuyên đề 22: Cầu nối Toán 10
 
+> **Phạm vi:** THPT-Bridge, tự chọn, không phải Core Readiness Toán THCS và không là điều kiện mở CĐ23.
+>
 > **Thời gian gợi ý:** 40 phút
 > **Thang điểm:** 10 điểm
 
@@ -63,7 +65,7 @@ Nêu cách chọn giữa trung bình, trung vị và mốt trong ba tình huốn
 | Điểm | Mức | Hành động đề xuất |
 |---:|---|---|
 | 9,0–10 | Hoàn thành tốt | Có thể tiếp tục lộ trình; vẫn chữa mọi câu chưa chắc |
-| 7,0–8,75 | Đạt | Chữa toàn bộ câu sai rồi chuyển tiếp |
+| 7,0–8,75 | Đạt mức luyện tập tự chọn | Chữa câu sai; học tiếp bất kỳ khi nào phù hợp |
 | 5,0–6,75 | Chưa chắc | Quay lại đúng dạng bài còn yếu và luyện thêm M2–M3 |
 | Dưới 5,0 | Cần củng cố | Học lại kiến thức cốt lõi và làm lại M1–M2 |
 
@@ -78,10 +80,10 @@ Nêu cách chọn giữa trung bình, trung vị và mốt trong ba tình huốn
 - [ ] Tôi đã xác định lỗi thuộc nhóm kiến thức / biến đổi / dấu / điều kiện / mô hình hóa / kết luận / trình bày.
 - [ ] Tôi đã làm lại từng câu sai mà không nhìn đáp án.
 - [ ] Tôi đã luyện lại kỹ năng yếu trong Practice Bank nếu cần.
-- [ ] Nếu đạt từ 7 điểm trở lên, tôi đã chữa xong các câu sai trước khi chuyển tiếp.
+- [ ] Tôi đã tự xem lại câu sai; điểm không khóa quyền học chuyên đề tiếp theo.
 
 # Liên kết Roadmap
 
 - **← Bài học:** [Chuyên đề 22](index.md)
 - **← Luyện tập:** [Bài tập Chuyên đề 22](bai-tap.md)
-- **→ Nếu đạt:** [23 – Xác suất](../23-xac-suat/index.md)
+- **→ Học tiếp không cần điểm đạt:** [23 – Xác suất](../23-xac-suat/index.md)

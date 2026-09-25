@@ -1,12 +1,17 @@
 # Chuyên đề 22 – Các đại lượng đặc trưng của dữ liệu
 
-> **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
+> **Vai trò:** THPT-Bridge – kiến thức chuyển tiếp lên Toán 10, tự chọn sau khi vững CĐ21.
 >
-> **Lớp trọng tâm:** 7–9
-> **Mạch kiến thức:** Thống kê
-> **Mức ưu tiên:** ⭐⭐⭐⭐
+> **Nền tảng đã học:** trung bình cộng cơ bản từ Toán 4; tần số và biểu đồ được học theo phần KNTT tương ứng. Toán 10 KNTT Chương V, Bài 13–14 hệ thống hóa các số đặc trưng thống kê.
+>
+> **Phân tầng:** không thuộc Core Readiness bắt buộc của Toán THCS; không khóa tiến độ tới CĐ23.
+>
+> **Mạch kiến thức:** Thống kê · Chuyển tiếp THPT
 
 ---
+
+!!! info "Không nhầm kiến thức nền với chương thống kê lớp 10"
+    Trung bình cộng cơ bản được học từ Toán 4 KNTT (Bài 46). Tại CĐ22, ta sử dụng số trung bình cùng trung vị, mốt và khoảng biến thiên để phân tích mẫu dữ liệu theo định hướng Toán 10 KNTT (Chương V, Bài 13–14). Không suy từ việc đã học phép tính trung bình cộng rằng cả CĐ22 là nội dung bắt buộc của THCS.
 
 ## 🧭 1. Bản đồ kiến thức
 
@@ -171,7 +176,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần:
 
 ---
 
-## 📖 3. Kiến thức cốt lõi
+## 📖 3. Kiến thức chuyển tiếp Toán 10
 
 ### 3.1. Số trung bình cộng
 
@@ -318,7 +323,7 @@ So sánh trung bình, trung vị, mốt hoặc khoảng biến thiên tùy câu 
 
 ---
 
-## 🚀 6. Dạng bài thi vào lớp 10
+## 🚀 6. Bài tập chuyển tiếp lên Toán 10
 
 Trong Roadmap ôn thi vào lớp 10, nhóm kiến thức này được xếp ở mức ưu tiên cao vừa phải và nên luyện cùng bảng, biểu đồ và bài toán dữ liệu thực tế.
 
@@ -330,7 +335,7 @@ Các kỹ năng cần chắc:
 5. Giải thích ảnh hưởng của ngoại lai.
 6. Chọn đại lượng đại diện phù hợp với ngữ cảnh.
 
-Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
+**Phạm vi:** học mở rộng/chuẩn bị Toán 10; không coi các dạng này là yêu cầu bắt buộc của bài thi vào 10.
 
 ---
 
@@ -390,7 +395,7 @@ Hãy tự trả lời không nhìn tài liệu:
 7. Khi nào trung vị có thể phù hợp hơn trung bình?
 8. Một bộ dữ liệu có thể có nhiều mốt không?
 
-**Tiêu chí đạt:** đúng ít nhất `7/8` câu và giải được một bài so sánh hai bộ dữ liệu.
+**Tự đánh giá:** nếu còn sai, xem lại ví dụ và luyện thêm; kết quả không tính vào Core Readiness THCS.
 
 ---
 
@@ -410,7 +415,7 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+**Checklist tự chọn cho người học cầu nối Toán 10:**
 
 - [ ] Tính đúng trung bình từ dữ liệu thô và bảng tần số.
 - [ ] Tìm đúng trung vị với cả số phần tử lẻ và chẵn.
@@ -418,4 +423,4 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Tính được khoảng biến thiên.
 - [ ] Nhận biết được ảnh hưởng của ngoại lai.
 - [ ] Chọn được đại lượng đại diện phù hợp và giải thích được lý do.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 23.
+- [ ] Chữa lại câu còn sai; có thể chuyển sang Chuyên đề 23 bất kể kết quả tại đây, vì CĐ22 là nhánh chuyển tiếp không bắt buộc.
