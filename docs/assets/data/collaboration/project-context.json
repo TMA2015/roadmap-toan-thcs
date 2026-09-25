@@ -1,5 +1,5 @@
 {
-  "version": "1.0.31",
+  "version": "1.0.32",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -202,7 +202,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Continue GEO-BATCH-13-15-001 with CĐ14–CĐ15 after CĐ13 DEPLOYED-PASS. Geometry Architecture v1 is deployed as REVIEW_READY, not frozen, pending independent Gemini review.",
+    "next_priority": "Start GEO-BATCH-19-20-001. CĐ13–CĐ18 are DEPLOYED-PASS under Golden Geometry; CĐ19–CĐ20 is the final and highest-risk geometry batch. Independent source-locked CĐ16–CĐ18 review bundle is ready in parallel.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -220,7 +220,7 @@
     "golden_template": "Frozen v1.0 with maintenance hardening v1.0.1: MathJax details re-typeset, touch-safe targets, bottom CTAs and JSON control-character QA. Frozen invariants unchanged.",
     "golden_rollout": "CĐ04–CĐ12 DEPLOYED-PASS under Golden Template. CĐ11 adds source-mapped căn bậc ba with 12 real Practice Bank items (120→132); CĐ12 keeps parameter/extended Viète applications outside Core readiness pending item-level review. CI, strict MkDocs build and Pages deploy pass.",
     "geometry_architecture": "v1 REVIEW_READY deployed: proof/statement/diagram contracts, 8-topic Core coverage matrix, benchmark BENCH-GEO-001 and source-locked Gemini architecture review bundle.",
-    "geometry_rollout": "CĐ13 DEPLOYED-PASS: 21/21 mapped Core skill IDs covered; Practice Bank 120→156 with 36 gap-fill items; 5 Learning Cards, 15 micro, 10 Readiness; no visual-inference rule enforced."
+    "geometry_rollout": "CĐ13–CĐ18 DEPLOYED-PASS. Exact mapped Core coverage: CĐ13 21/21, CĐ14 13/13, CĐ15 11/11, CĐ16 13/13, CĐ17 12/12, CĐ18 11/11. Global geometry exact-ID coverage is 90/124; remaining gaps are concentrated in CĐ19–CĐ20."
   },
   "handoff_required_fields": [
     "TASK_ID",
@@ -248,9 +248,9 @@
     "offline_relay_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/offline-relay/",
     "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
     "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
-    "next_public_task": "GEO13-GEMINI-REVIEW-001",
-    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo13-review.json",
+    "next_public_task": "GEO-BATCH-16-18-GEMINI-REVIEW-001",
+    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo16-18-review.json",
     "protocol_version": "2.0",
-    "relay_v2": "Geometry reviews are source-locked. Architecture bundle and CĐ13 bundle require exact source quote + exact existing ID for item corrections; diagram appearance cannot establish a mathematical fact."
+    "relay_v2": "Geometry reviews are source-locked. CĐ16–CĐ18 review bundle is ready; item corrections require exact existing ID + exact current prompt quote, and diagram appearance cannot establish a mathematical fact. Production priority continues to high-risk CĐ19–CĐ20."
   }
 }

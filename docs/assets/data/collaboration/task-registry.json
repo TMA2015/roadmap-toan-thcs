@@ -307,9 +307,38 @@
       "id": "GEO-BATCH-13-15-001",
       "title": "Golden Geometry foundational batch CĐ13–CĐ15",
       "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_GEOMETRY_REVIEW",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.31",
-      "review_notes": "CĐ13 DEPLOYED-PASS. Next: resolve CĐ14 semantic/cross-topic Core gaps and CĐ15 dong-quy-bon-duong-dac-biet gap, then migrate CĐ14–CĐ15."
+      "status": "DONE",
+      "context_version": "1.0.32",
+      "review_notes": "CĐ13–CĐ15 all DEPLOYED-PASS. CĐ13 21/21, CĐ14 13/13 and CĐ15 11/11 mapped Core exact coverage; Golden Geometry Learn→Practice→Readiness, strict MkDocs and Pages deploy passed.",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo14-15-review.json"
+    },
+    {
+      "id": "GEO-BATCH-16-18-001",
+      "title": "Golden Geometry batch CĐ16–CĐ18",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_GEOMETRY_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.32",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_notes": "PR #72 merged; follow-up QA fix decoupled batch validators from mutable global coverage totals. Production run 36096886141 passed all geometry validators, review-bundle builders, SVG integrity, practice audit, strict MkDocs and Pages deploy. CĐ16 13/13, CĐ17 12/12, CĐ18 11/11 Core exact coverage; global geometry coverage 90/124.",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo16-18-review.json"
+    },
+    {
+      "id": "GEO-BATCH-16-18-GEMINI-REVIEW-001",
+      "title": "Independent source-locked geometry review CĐ16–CĐ18",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "READY",
+      "context_version": "1.0.32",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo16-18-review.json",
+      "review_notes": "Review theorem hypotheses/converses, corresponding-order logic, diagram-independent reasoning, distractors, pedagogy and Markdown/LaTeX. Corrections require exact current ID + exact prompt quote; prose requires source_path + heading + exact quote."
+    },
+    {
+      "id": "GEO-BATCH-19-20-001",
+      "title": "Golden Geometry high-risk batch CĐ19–CĐ20",
+      "routing": "CHATGPT_PRODUCTION_LEAD+DUAL_GEOMETRY_QA",
+      "status": "OPEN",
+      "context_version": "1.0.32",
+      "review_notes": "Next production batch. High-risk: circle theorem transitions, integrated geometry and large remaining Core coverage gap; preserve SVG-first/no-visual-inference policy and require independent review for non-obvious proofs."
     }
   ]
 }
