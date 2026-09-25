@@ -1,5 +1,7 @@
 # Tự kiểm tra – Chuyên đề 23: Xác suất
 
+> **Phạm vi:** bài tự luận tổng hợp cũ có cả nội dung mở rộng; không phải Core Readiness KNTT và không là điều kiện học CĐ24.
+>
 > **Thời gian gợi ý:** 40 phút
 > **Thang điểm:** 10 điểm
 
@@ -77,10 +79,10 @@ Nêu quy trình giải một bài xác suất nhiều bước bằng sơ đồ c
 - [ ] Tôi đã xác định lỗi thuộc nhóm kiến thức / biến đổi / dấu / điều kiện / mô hình hóa / kết luận / trình bày.
 - [ ] Tôi đã làm lại từng câu sai mà không nhìn đáp án.
 - [ ] Tôi đã luyện lại kỹ năng yếu trong Practice Bank nếu cần.
-- [ ] Nếu đạt từ 7 điểm trở lên, tôi đã chữa xong các câu sai trước khi chuyển tiếp.
+- [ ] Tôi đã tự chữa câu sai; điểm không khóa chuyên đề tiếp theo.
 
 # Liên kết Roadmap
 
 - **← Bài học:** [Chuyên đề 23](index.md)
 - **← Luyện tập:** [Bài tập Chuyên đề 23](bai-tap.md)
-- **→ Nếu đạt:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
+- **→ Học tiếp không cần điều kiện điểm:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
