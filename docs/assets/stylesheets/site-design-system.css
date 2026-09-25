@@ -187,3 +187,21 @@ body{letter-spacing:-.008em}
 .study-art-image{transition:filter .5s}
 @media(max-width:42rem){.home-style-cards{grid-template-columns:minmax(0,1fr)}.home-style-preview{height:7.5rem}.home-style-panel{max-height:93vh;padding:1rem}.home-style-bar{justify-content:center}.home-style-bar>span{width:100%;text-align:center}}
 @media(prefers-reduced-motion:reduce){.study-art-image,.study-art-light,.study-art-wakeup{transition:none!important}}
+
+/* Keep both chooser actions visible without excessive scrolling on a phone. */
+@media(max-width:42rem){
+  .home-style-dialog{padding:.45rem}
+  .home-style-panel{padding:.7rem;max-height:calc(100dvh - .9rem);border-radius:.85rem}
+  .home-style-icon{font-size:1.2rem}
+  .home-style-panel h2{font-size:1.05rem;margin:.12rem 1.7rem .15rem}
+  .home-style-panel>p{font-size:.62rem;line-height:1.35;margin:.15rem auto .45rem}
+  .home-style-cards{gap:.38rem}
+  .home-style-card{padding:.42rem;gap:.16rem}
+  .home-style-card strong{font-size:.7rem}
+  .home-style-card small{font-size:.59rem;min-height:0;line-height:1.35}
+  .home-style-preview{height:5.25rem}
+  .home-style-preview-title{font-size:.6rem}
+  .home-style-preview-orbit{width:2.4rem;height:2.4rem;font-size:1.2rem}
+  .home-style-cta{padding:.27rem;font-size:.62rem}
+  .home-style-panel .home-style-footer{margin:.4rem 0 0;font-size:.53rem}
+}
