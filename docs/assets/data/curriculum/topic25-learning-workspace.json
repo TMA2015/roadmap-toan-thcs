@@ -6,39 +6,12 @@
     "layer": "Entrance10",
     "rule": "This is a non-gating cross-topic learning layer; never scored as grade-specific KNTT Core."
   },
-  "learning_layer_label": "Ôn thi vào lớp 10",
+  "learning_layer_label": "Ôn thi vào lớp 10 · Học thuật trước, kỹ năng thi sau",
   "cards": [
     {
-      "id": "topic25-journey-1",
-      "order": 1,
-      "title": "Nhận dạng đúng chuyên đề",
-      "kntt_lessons": [
-        "Luyện tổng hợp lớp 9"
-      ],
-      "layer": "Entrance10",
-      "skills": [
-        "nhan-dien-chuyen-de"
-      ],
-      "prerequisites": [],
-      "micro_practice": [
-        "REV25MICRO_001",
-        "REV25MICRO_002",
-        "REV25MICRO_003"
-      ],
-      "teaching_copy": {
-        "key_idea": "Đọc câu hỏi để nhận ra nhóm kiến thức cần dùng trước khi tính.",
-        "worked_example": {
-          "problem": "Một câu yêu cầu tìm giao điểm hai đường thẳng và nghiệm hệ. Dùng những chuyên đề nào?",
-          "solution": "Kết nối hàm số – đồ thị và hệ phương trình."
-        },
-        "misconception": "Lao vào tính mà không nhận ra bài đang kiểm tra kỹ năng nào.",
-        "summary": "Chọn công cụ theo dấu hiệu đề, không chọn theo thói quen."
-      }
-    },
-    {
       "id": "topic25-journey-2",
-      "order": 2,
-      "title": "Biểu thức căn và phương trình",
+      "order": 1,
+      "title": "Học thuật · Biểu thức căn và phương trình",
       "kntt_lessons": [
         "Luyện tổng hợp lớp 9"
       ],
@@ -61,12 +34,13 @@
         },
         "misconception": "Nhầm √(a+b) với √a + √b hoặc bỏ điều kiện xác định.",
         "summary": "Viết điều kiện, biến đổi, thay kiểm tra."
-      }
+      },
+      "learning_kind": "academic"
     },
     {
       "id": "topic25-journey-3",
-      "order": 3,
-      "title": "Hệ phương trình và hàm số",
+      "order": 2,
+      "title": "Học thuật · Hệ phương trình và hàm số",
       "kntt_lessons": [
         "Luyện tổng hợp lớp 9"
       ],
@@ -89,12 +63,13 @@
         },
         "misconception": "Nhầm tọa độ (x,y), hoặc quên thế nghiệm vào hệ gốc.",
         "summary": "Kiểm tra cả hai phương trình trước khi kết luận."
-      }
+      },
+      "learning_kind": "academic"
     },
     {
       "id": "topic25-journey-4",
-      "order": 4,
-      "title": "Kết nối hình học, dữ liệu và xác suất",
+      "order": 3,
+      "title": "Học thuật · Hình học, thống kê và xác suất",
       "kntt_lessons": [
         "Luyện tổng hợp lớp 9"
       ],
@@ -118,12 +93,41 @@
         },
         "misconception": "Dùng công thức theo hình vẽ ước lượng thay vì giả thiết.",
         "summary": "Đọc kỹ giả thiết rồi chọn đúng định lý/công thức."
-      }
+      },
+      "learning_kind": "academic"
+    },
+    {
+      "id": "topic25-journey-1",
+      "order": 4,
+      "title": "Kỹ năng thi · Nhận dạng dạng bài và chọn công cụ",
+      "kntt_lessons": [
+        "Luyện tổng hợp lớp 9"
+      ],
+      "layer": "Entrance10",
+      "skills": [
+        "nhan-dien-chuyen-de"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "REV25MICRO_001",
+        "REV25MICRO_002",
+        "REV25MICRO_003"
+      ],
+      "teaching_copy": {
+        "key_idea": "Đọc câu hỏi để nhận ra nhóm kiến thức cần dùng trước khi tính.",
+        "worked_example": {
+          "problem": "Một câu yêu cầu tìm giao điểm hai đường thẳng và nghiệm hệ. Dùng những chuyên đề nào?",
+          "solution": "Kết nối hàm số – đồ thị và hệ phương trình."
+        },
+        "misconception": "Lao vào tính mà không nhận ra bài đang kiểm tra kỹ năng nào.",
+        "summary": "Chọn công cụ theo dấu hiệu đề, không chọn theo thói quen."
+      },
+      "learning_kind": "exam_skill"
     },
     {
       "id": "topic25-journey-5",
       "order": 5,
-      "title": "Phân loại lỗi và chữa đề",
+      "title": "Kỹ năng thi · Phân loại lỗi và chữa đề",
       "kntt_lessons": [
         "Luyện tổng hợp lớp 9"
       ],
@@ -146,7 +150,8 @@
         },
         "misconception": "Chỉ xem đáp án rồi coi như đã sửa lỗi.",
         "summary": "Ghi lỗi theo câu/chuyên đề/nguyên nhân/cách sửa và làm lại không nhìn lời giải."
-      }
+      },
+      "learning_kind": "exam_skill"
     }
   ],
   "extensions": [],
