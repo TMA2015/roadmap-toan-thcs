@@ -1,5 +1,5 @@
 {
-  "version": "1.0.27",
+  "version": "1.0.28",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -202,7 +202,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Gemini pedagogical review of the deployed CĐ08–CĐ10 batch using ALG-BATCH-08-10-GEMINI-REVIEW-001. Only issue-level corrections should return; schema/source scope remains frozen.",
+    "next_priority": "Deploy the CĐ08–CĐ10 Markdown math fix. Gemini review result ALG-BATCH-08-10-GEMINI-REVIEW-001-RESULT is rejected for source mismatch; future review must use exact production IDs and quote current prompt text.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -218,7 +218,7 @@
     "ui_ux_pilot": "CĐ07 responsive Learning Card grid fixed to size from available content width rather than viewport width; learner-facing technical labels simplified.",
     "micro_practice_evidence": "Observed signals are stored separately from attempted/correct counters. signal_weight 1–2 is salience only and cannot independently create weak-skill/remediation conclusions.",
     "golden_template": "Frozen v1.0 with maintenance hardening v1.0.1: MathJax details re-typeset, touch-safe targets, bottom CTAs and JSON control-character QA. Frozen invariants unchanged.",
-    "golden_rollout": "CĐ04–CĐ06 deployed PASS. CĐ08–CĐ10 deployed PASS: 45 micro-practice, 30 Core Readiness MCQs, 30 written Core exercises; CĐ08 Practice Bank expanded to 132 for order-property coverage."
+    "golden_rollout": "CĐ08–CĐ10 deployed, with verified Practice Room Markdown LaTeX escaping defect now fixed in maintenance QA. JSON micro/readiness data remained valid."
   },
   "handoff_required_fields": [
     "TASK_ID",
@@ -249,6 +249,6 @@
     "next_public_task": "KG-REVIEW-001",
     "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G9-001/",
     "protocol_version": "2.0",
-    "relay_v2": "ALG-BATCH-08-10-001 production/deploy is complete. Routing now enters downstream Gemini pedagogical review with exact item IDs; no full-batch rewriting or schema/source redesign."
+    "relay_v2": "Gemini CĐ08–CĐ10 review failed source alignment: all six reported IDs were non-existent and descriptions did not match current items. No proposed correction was applied. Independent QA found and fixed real Markdown LaTeX escaping defects."
   }
 }
