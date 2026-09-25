@@ -53,7 +53,7 @@ Use the existing `toan-thcs-practice-v1` learner evidence store, not a duplicate
 
 A separate `firebase-gemini-v1.js` adapter lazily loads **Firebase JS SDK 12.19.0** from Google's pinned CDN only after an explicit user request. It initializes App Check with a reCAPTCHA Enterprise provider **before** creating the Gemini Developer API model. The Gemini Developer API key is held by Firebase's proxy, never embedded in the web site.
 
-The public `firebase-gemini-config.js` includes the standard non-secret Firebase Web App config. The **exact** reCAPTCHA Enterprise site key must match the registered Firebase Web app; this is a public site identifier, not a private Gemini API key. Until that value has been copied exactly and a real App Check/Gemini request has been verified, `enabled: false` is mandatory. No provider fallback silently represents mock output as Gemini output.
+The public `firebase-gemini-config.js` includes the standard non-secret Firebase Web App config. The **exact** reCAPTCHA Enterprise site key must match the registered Firebase Web app; this is a public site identifier, not a private Gemini API key. The site key was copied exactly and a learner-triggered App Check + Gemini 3.5 Flash-Lite inference was verified on the production origin (2+3=5). The integration is now enabled for normal practice. Inference remains opt-in per button click. No provider fallback silently represents mock output as Gemini output.
 
 The transport sends the current question, skill, grade/layer and (ONLY for explicit FULL_SOLUTION) an authored reference answer. It does **not** transmit the complete learner evidence store. Any pre-answer Gemini request marks an attempt as assisted; full-solution generation marks full-solution reveal before the request. The self-check and timed-assessment protections are still checked at both the context-builder and provider boundary. This is a client-side practice aid, not a server-side examination security system.
 
@@ -65,4 +65,4 @@ Operational checklist before enabling:
 5. Check usage/quota and that local `localhost` is not given production App Check privileges. Use a separately registered debug token only for local tests and keep it private.
 6. Only then enable the button on the public site; retain the offline authored answer on network/quota errors.
 
-Current stage: integration code prepared but intentionally **disabled** pending exact site key and live test.
+Current stage: App Check registered/enforced and real one-request Flash-Lite verification succeeded; the normal practice adapter is enabled. More difficult mathematics must still be compared with authored solutions.
