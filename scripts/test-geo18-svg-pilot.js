@@ -7,7 +7,7 @@ const assert=(x,msg)=>{if(!x)errors.push(msg)};
 assert(data.figures.length===4,"expected exactly four pilot figures");
 for(const f of data.figures){const P=f.points;const svg=fs.readFileSync(path.join(ROOT,"docs/assets/geometry/18/"+f.id+".svg"),"utf8");
  for(const str of ['viewBox="0 0 640 420"','role="img"','<title id="title">','<desc id="desc">'])assert(svg.includes(str),f.id+": missing SVG accessibility/responsive contract");
- assert(!/<image\\b|<script\\b|https?:\\/\\//i.test(svg),f.id+": external image/script/reference");
+ assert(!/<image\b|<script\b|\bhref\s*=|\bonload\s*=/i.test(svg),f.id+": external image/script/reference");
  assert(!/width="100%"|height="100%"/.test(svg),f.id+": intrinsic full-size dimensions");
  if(P.H){assert(near(dot(vec(P.A,P.B),vec(P.A,P.C)),0),f.id+": not right at A");assert(near(dot(vec(P.H,P.A),vec(P.B,P.C)),0),f.id+": altitude not perpendicular");
  assert(near(P.H[1],P.B[1])&&P.H[0]>P.B[0]&&P.H[0]<P.C[0],f.id+": H not between B and C");
