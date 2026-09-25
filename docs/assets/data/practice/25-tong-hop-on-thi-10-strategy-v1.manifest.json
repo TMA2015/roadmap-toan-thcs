@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "REV25-STRATEGY-V1",
+  "topic": {
+    "id": "25-tong-hop-on-thi-10",
+    "title": "Tổng hợp và ôn thi vào 10"
+  },
+  "session_size": 10,
+  "question_count": 40,
+  "skill_labels": {
+    "nhan-dien-chuyen-de": "Nhận diện chuyên đề và công cụ",
+    "quan-ly-thoi-gian": "Quản lý thời gian làm bài",
+    "phan-loai-loi": "Phân loại và sửa lỗi",
+    "checklist-chua-de": "Checklist chữa đề và kế hoạch ôn"
+  },
+  "skill_groups": [
+    {
+      "id": "strategy",
+      "label": "Kỹ năng: nhận dạng, quản lý thời gian, chữa đề",
+      "skills": [
+        "nhan-dien-chuyen-de",
+        "quan-ly-thoi-gian",
+        "phan-loai-loi",
+        "checklist-chua-de"
+      ]
+    }
+  ],
+  "sources": [
+    "25-tong-hop-on-thi-10-strategy-v1.json"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "REV25-ACADEMIC-V1",
+  "topic": {
+    "id": "25-tong-hop-on-thi-10",
+    "title": "Tổng hợp và ôn thi vào 10"
+  },
+  "session_size": 10,
+  "question_count": 80,
+  "skill_labels": {
+    "on-thi-bieu-thuc-can": "Ôn biểu thức và căn thức",
+    "on-thi-phuong-trinh": "Ôn phương trình và bất phương trình",
+    "on-thi-he": "Ôn hệ phương trình",
+    "on-thi-ham-so": "Ôn hàm số và đồ thị",
+    "on-thi-hinh-hoc": "Ôn hình học trọng tâm",
+    "on-thi-thong-ke": "Ôn thống kê",
+    "on-thi-xac-suat": "Ôn xác suất",
+    "on-thi-mo-hinh-hoa": "Ôn bài toán thực tế"
+  },
+  "skill_groups": [
+    {
+      "id": "academic",
+      "label": "Toán học: giải bài theo mạch kiến thức",
+      "skills": [
+        "on-thi-bieu-thuc-can",
+        "on-thi-phuong-trinh",
+        "on-thi-he",
+        "on-thi-ham-so",
+        "on-thi-hinh-hoc",
+        "on-thi-thong-ke",
+        "on-thi-xac-suat",
+        "on-thi-mo-hinh-hoa"
+      ]
+    }
+  ],
+  "sources": [
+    "25-tong-hop-on-thi-10-academic-v1.json"
+  ]
+}
