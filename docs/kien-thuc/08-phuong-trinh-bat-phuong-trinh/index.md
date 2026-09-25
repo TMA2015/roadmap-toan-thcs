@@ -95,7 +95,7 @@ Các phép biến đổi tương đương thường dùng:
 
 > Nếu xuất hiện tham số làm hệ số của $x$ có thể bằng `0`, phải xét riêng trường hợp đó; không được chia ngay cho một biểu thức chưa biết có khác `0` hay không.
 
-#### Khi hệ số của ẩn có thể bằng 0
+#### Mở rộng / Entrance10 – Khi hệ số của ẩn có thể bằng 0
 
 Trong bài có tham số, sau khi thu gọn thường xuất hiện dạng:
 
@@ -109,6 +109,8 @@ trong đó `A`, `B` có thể phụ thuộc tham số. Phải xét đủ ba trư
 - `A = 0` và `B = 0` → phương trình trở thành `0 = 0`, có vô số nghiệm;
 - `A = 0` và `B ≠ 0` → phương trình trở thành một mệnh đề sai như `0 = 3`, nên vô nghiệm.
 
+> **Phân tầng:** biện luận tham số là nội dung Entrance10/Extension trong Golden Template hiện tại, không tính vào Core Readiness. Nguyên tắc dưới đây được giữ làm tài liệu tham khảo.
+>
 > Đây là nguyên tắc nền khi biện luận phương trình có tham số; không được dùng công thức `x = -B/A` trước khi biết `A ≠ 0`.
 
 ### 3.2. Phương trình tích
