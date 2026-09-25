@@ -241,3 +241,20 @@
 .practice-gemini-followup{display:block;box-sizing:border-box;width:100%;min-height:3.25rem;resize:vertical;padding:.65rem .75rem;border:1px solid var(--practice-border);border-radius:.45rem;background:var(--md-default-bg-color);color:var(--md-default-fg-color);font:inherit;font-size:.76rem;line-height:1.5;margin:.6rem 0}
 .practice-gemini-followup:focus-visible{outline:2px solid var(--md-accent-fg-color);outline-offset:2px}
 .practice-gemini-ask{margin:.45rem 0 .55rem}
+
+/* Structured AI explanation: readable paragraphs, numbered steps and scrollable math. */
+.practice-gemini-message{white-space:normal;font-size:.81rem;line-height:1.72;overflow-wrap:anywhere}
+.practice-gemini-message p{margin:0 0 .72em;line-height:1.72}
+.practice-gemini-message p:last-child{margin-bottom:0}
+.practice-gemini-message h3,.practice-gemini-message h4,.practice-gemini-message h5,.practice-gemini-message h6{font-size:.94rem;line-height:1.4;margin:1em 0 .45em;color:var(--md-default-fg-color);font-weight:780}
+.practice-gemini-message ul,.practice-gemini-message ol{margin:.35em 0 .9em;padding-left:1.5em;line-height:1.75}
+.practice-gemini-message li{margin:.3em 0;padding-left:.12em}
+.practice-gemini-message strong{font-weight:760}
+.practice-gemini-message code{font-size:.89em;background:var(--md-code-bg-color);border-radius:.25em;padding:.08em .25em}
+.practice-gemini-message pre{overflow-x:auto;max-width:100%;padding:.7em .8em;border:1px solid var(--practice-border);border-radius:.45em;background:var(--md-code-bg-color)}
+.practice-gemini-message pre code{padding:0;white-space:pre}
+.practice-gemini-message .ai-math-inline{display:inline-block;max-width:100%;vertical-align:middle;overflow-x:auto;overflow-y:hidden}
+.practice-gemini-message .ai-math-display{overflow-x:auto;overflow-y:hidden;max-width:100%;padding:.3em 0;text-align:center}
+.practice-gemini-message .ai-math-display mjx-container{min-width:0!important}
+.practice-gemini-message mjx-container{max-width:100%}
+@media(max-width:38rem){.practice-gemini-message{font-size:.83rem;padding:.7rem}.practice-gemini-message .ai-math-display{font-size:.96em}}

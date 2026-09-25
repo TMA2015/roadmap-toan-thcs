@@ -133,6 +133,35 @@ with sync_playwright() as p:
     help_page.locator(".practice-tutor button").filter(has_text="Tôi muốn mở lời giải ngay").click()
     check(help_page.locator(".practice-help-answer").first.is_visible(), "offline bank solution displayed")
     shot(help_page, "practice-help-full-solution-desktop.png")
+    # Gemini text is rendered by a safe Markdown/MathJax DOM layer; no live request
+    # occurs during CI and the authored question result stays untouched.
+    sample = r"""1. **Điều kiện:** \(x^2 + 3x\).
+2. Ví dụ: $A=x^2+3x+3$.
+- Bước **đúng**: $2x^2-x^2=x^2$.
+
+$$
+\frac{9m^3n^2}{3m^2n}=3mn
+$$
+<img src=x onerror=alert(1)>"""
+    report = help_page.evaluate("""text => {
+      const panel = document.createElement("div");
+      panel.className = "practice-gemini-message";
+      document.body.appendChild(panel);
+      window.RoadmapRichMath.render(text, panel);
+      return {
+        strong: panel.querySelectorAll("strong").length,
+        lists: panel.querySelectorAll("ol, ul").length,
+        inline: panel.querySelectorAll(".ai-math-inline").length,
+        display: panel.querySelectorAll(".ai-math-display").length,
+        injectedImages: panel.querySelectorAll("img").length,
+        literalHtml: panel.textContent.includes("<img src=x"),
+        rawDollar: panel.textContent.includes("$A=")
+      };
+    }""", sample)
+    print("AI RICH MATH BROWSER REPORT", report, flush=True)
+    check(report["strong"] >= 2 and report["lists"] == 2 and report["inline"] >= 3, "AI Markdown and inline TeX formatting")
+    check(report["display"] == 1 and report["injectedImages"] == 0 and report["literalHtml"] and not report["rawDollar"], "display math and safe plain-text HTML")
+
     help_page.locator(".practice-options button").first.click()
     saved = help_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1'))""")
     records = [row for row in saved["questions"].values() if row.get("full_solution_views", 0) > 0]
