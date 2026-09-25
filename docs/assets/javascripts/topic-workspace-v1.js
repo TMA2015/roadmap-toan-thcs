@@ -5,7 +5,7 @@ const STORAGE="toan-thcs-practice-v1";
 const CARD_DATA="assets/data/curriculum/topic07-learning-workspace.json";
 const KG_DATA="assets/data/curriculum/knowledge-graph-v1.json";
 const siteRoot=()=>{const marker="/kien-thuc/";const p=window.location.pathname;return p.includes(marker)?(p.split(marker)[0]||""):""};
-const siteAsset=rel=>`${siteRoot()}/${String(rel||"").replace(/^\\/+/, "")}`;
+const siteAsset=rel=>`${siteRoot()}/${String(rel||"").replace(/^\/+/,"")}`;
 const sections=[
  ["map","🗺️ Bản đồ","1. Bản đồ kiến thức"],["goals","🎯 Mục tiêu","2. Mục tiêu cần đạt"],["core","📖 Cốt lõi","3. Kiến thức cốt lõi"],["links","🔗 Liên quan","4. Kiến thức liên quan"],["types","🧩 Dạng bài","5. Các dạng bài cần nắm vững"],["exam","🚀 Thi vào 10","6. Dạng bài thi vào lớp 10"],["errors","⚠️ Lỗi sai","7. Lỗi sai thường gặp"],["practice","📝 Luyện tập","8. Luyện tập"],["check","✅ Tự kiểm tra","9. Tự kiểm tra"],["roadmap","🔄 Roadmap","10. Liên kết Roadmap"],["finish","🏁 Hoàn thành","11. Điều kiện hoàn thành"]
 ];
