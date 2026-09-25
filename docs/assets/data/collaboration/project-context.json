@@ -1,5 +1,5 @@
 {
-  "version": "1.0.21",
+  "version": "1.0.22",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -202,7 +202,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Await Gemini complete AUTHOR packet for ALG-BATCH-04-06-001, then integrate CĐ04–CĐ06 as one batch against Golden Template v1 invariants.",
+    "next_priority": "Send ALG-BATCH-04-06-CHATGPT-REVIEW-001 to Gemini and await one revised COMPLETE CĐ04–CĐ06 packet. Do not integrate the current micro-practice-only draft.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -215,7 +215,7 @@
     "ai_tutor_contract": "v1 provider-neutral policy defined; not yet connected to an AI provider",
     "ai_tutor_adapter": "v1 implemented with mock/local QA adapter and disabled Gemini/OpenAI-compatible transport sockets",
     "ai_tutor_ui": "mock/local Tutor integrated into Practice Engine with HINT/REMEDIATE/CONTINUE student actions; no external AI calls",
-    "ui_ux_pilot": "CĐ07 five-card Learning Workspace now includes a complete 15-item inline Core micro-practice loop with shared learner evidence, option-level observed signals and mock Tutor feedback.",
+    "ui_ux_pilot": "CĐ07 responsive Learning Card grid fixed to size from available content width rather than viewport width; learner-facing technical labels simplified.",
     "micro_practice_evidence": "Observed signals are stored separately from attempted/correct counters. signal_weight 1–2 is salience only and cannot independently create weak-skill/remediation conclusions.",
     "golden_template": "Frozen v1.0 with maintenance hardening v1.0.1: MathJax details re-typeset, touch-safe targets, bottom CTAs and JSON control-character QA. Frozen invariants unchanged."
   },
@@ -248,6 +248,6 @@
     "next_public_task": "KG-REVIEW-001",
     "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G9-001/",
     "protocol_version": "2.0",
-    "relay_v2": "C07-GOLDEN-TEMPLATE-DEEP-REVIEW-001 integrated as PASS-WITH-CHANGES. Technical hardening accepted; MORE_EVIDENCE_NEEDED remains evidence-sufficiency semantics, not a low-score band."
+    "relay_v2": "ALG-BATCH-04-06 Gemini draft reviewed. Strong micro-practice ideas retained, but overall batch is BLOCKED pending completion and Core-scope corrections (especially CĐ06 tach-hang-tu-giua/equation-solving and CĐ05 equation-solving)."
   }
 }
