@@ -609,95 +609,37 @@ Sau khi có kết quả dạng tích, hãy nhân nhanh trở lại để kiểm 
 
 ---
 
-## 📝 8. Luyện tập
+## 📝 8. Luyện tập tiếp theo
 
-### Mức 1 – Nhận biết
+Micro-practice trong các Learning Cards dùng để kiểm tra nhanh ngay sau khi học. Khi muốn luyện sâu hơn, luyện từng skill hoặc làm bài tự luận, hãy chuyển sang **Practice Room**.
 
-1. Phân tích `6x + 12` thành nhân tử.
-2. Phân tích `5x² - 10x` thành nhân tử.
-3. Phân tích `x² - 16` thành nhân tử.
-4. Phân tích `x² + 8x + 16` thành nhân tử.
-5. Phân tích `9x² - 25y²` thành nhân tử.
+[🎯 Mở Practice Room – Chuyên đề 06](bai-tap.md){ .md-button .md-button--primary }
 
-### Mức 2 – Thông hiểu
+Trong Practice Room:
 
-1. Phân tích `12x³y - 18x²y²`.
-2. Phân tích `x² + 5x + 2x + 10`.
-3. Phân tích `4x² - 12x + 9`.
-4. Phân tích `2x³ - 8x`.
-5. Phân tích `3x(x - 2) + 5(2 - x)`.
+- **Luyện nhanh tương tác:** Practice Engine chọn câu từ ngân hàng lớn, có feedback, gợi ý và Tutor.
+- **Luyện tự luận & trình bày:** tự giải trên giấy/vở rồi mở gợi ý hoặc lời giải để tự đối chiếu.
+- Core / Entrance10 / Challenge được tách rõ.
 
-### Mức 3 – Vận dụng
-
-1. Phân tích `x³ + x² - 9x - 9`.
-2. Phân tích `2x³ + 4x² - 18x - 36`.
-3. Tính nhanh `1001² - 1`.
-4. Giải `x² - 11x = 0`.
-5. Chứng minh `n² + n` luôn chia hết cho `2` với mọi số nguyên `n`.
-
-### Mức 4 – Vận dụng cao / tổng hợp
-
-1. Phân tích hoàn toàn `x⁴ - 16`.
-2. Phân tích `x³ - 3x² - 4x + 12`.
-3. Phân tích `a²(b - c) + b²(c - a) + c²(a - b)` nếu tìm được hướng nhóm phù hợp.
-4. Tìm các giá trị nguyên của `x` thỏa mãn một phương trình sau khi đưa hai vế về dạng tích.
-5. Chứng minh một biểu thức chứa tích của ba số nguyên liên tiếp chia hết cho `6`.
+!!! info "Phân biệt mục đích"
+    Micro-practice kiểm tra hiểu ngay; Practice Room dùng để **rèn kỹ năng**. Kết quả luyện tập là formative evidence, không phải điểm kiểm tra cuối chuyên đề.
 
 ---
 
-## ✅ 9. Tự kiểm tra
+## ✅ 9. Tự kiểm tra mức độ sẵn sàng
 
-### Mini quiz
+Khi đã luyện tương đối chắc, hãy làm **Core Readiness Check**.
 
-**Câu 1.** Nhân tử chung lớn nhất của `12x³y²` và `18x²y³` là gì?
+[✅ Bắt đầu Core Readiness Check](tu-kiem-tra.md){ .md-button .md-button--primary }
 
-A. `2xy`
-B. `3x²y²`
-C. `6x²y²`
-D. `6x³y³`
+Trong Readiness Check:
 
-**Câu 2.** Kết quả đúng của `x² - 49` là:
-
-A. `(x - 7)²`
-B. `(x - 7)(x + 7)`
-C. `(x + 7)²`
-D. Không phân tích được
-
-**Câu 3.** `x² + 6x + 9` bằng:
-
-A. `(x + 9)(x + 1)`
-B. `(x + 3)²`
-C. `(x - 3)²`
-D. `x(x + 6) + 9`
-
-**Câu 4.** Bước đầu hợp lý nhất với `4x³ - 36x` là:
-
-A. Dùng tổng hai lập phương
-B. Đặt `4x` làm nhân tử chung
-C. Nhóm hạng tử
-D. Không cần biến đổi
-
-**Câu 5.** Sau khi có `2x(x² - 25)`, nếu yêu cầu phân tích hoàn toàn thì kết quả là:
-
-A. `2x(x - 5)`
-B. `2x(x + 5)`
-C. `2x(x - 5)(x + 5)`
-D. `2x(x² - 25)`
-
-### Đáp án
-
-1. C
-2. B
-3. B
-4. B
-5. C
-
-### Tự đánh giá
-
-- **5/5:** có thể chuyển sang bài phối hợp và ứng dụng.
-- **4/5:** khá chắc, nên xem lại câu sai.
-- **3/5:** cần luyện thêm nhận dạng phương pháp.
-- **0–2/5:** nên ôn lại Chuyên đề 05 và ba phương pháp cơ bản của chuyên đề này.
+- không hint và không Tutor khi đang làm;
+- không báo đúng/sai từng câu;
+- chỉ chấm sau khi bấm **Nộp bài**;
+- kết quả phân tích theo assessed skill;
+- là **Soft Mastery**: không khóa chuyên đề tiếp theo;
+- Entrance10 / Challenge không tính vào Core readiness.
 
 ---
 
@@ -714,15 +656,30 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi học sinh có phần lớn các bằng chứng sau:
 
-- [ ] Tự tìm được nhân tử chung hợp lý trong đa số bài cơ bản.
-- [ ] Nhận ra đúng các hằng đẳng thức thường dùng để phân tích.
-- [ ] Nhóm được hạng tử trong các bài 4 hạng tử quen thuộc.
-- [ ] Phối hợp ít nhất hai phương pháp trong cùng một bài.
-- [ ] Biết tiếp tục phân tích nếu kết quả chưa hoàn toàn.
-- [ ] Kiểm tra kết quả bằng phép nhân ngược.
-- [ ] Giải được phương trình đơn giản bằng cách đưa về tích.
-- [ ] Đạt ít nhất **4/5** ở phần tự kiểm tra.
+- [ ] Hiểu và giải thích được các quy tắc Core của chuyên đề.
+- [ ] Làm tương đối ổn định các skill Core trong Practice Room.
+- [ ] Không lặp lại ổn định cùng một lỗi nền tảng sau khi đã được chữa.
+- [ ] Core Readiness Check đạt khoảng **80%** hoặc học sinh đã hiểu và chữa được các lỗi còn lại.
+- [ ] Có thể trình bày ít nhất một số bài tự luận Core mà không mở lời giải trước.
 
-> **Gợi ý học tiếp:** Sau khi làm chắc chuyên đề này, chuyển sang **Chuyên đề 07 – Phân thức đại số**. Khi đó, phân tích nhân tử sẽ được dùng trực tiếp để tìm điều kiện, rút gọn tử và mẫu, và quy đồng biểu thức.
+!!! note "Soft Mastery"
+    Không cần đạt 100% mới được học tiếp. Nếu Readiness Check cho thấy một vài kỹ năng còn yếu, hệ thống khuyến nghị luyện lại đúng kỹ năng đó; học sinh vẫn có thể chuyển sang chuyên đề tiếp theo.
+
+!!! warning "Core độc lập Extension"
+    Entrance10 và Specialized-Challenge không phải điều kiện để hoàn thành KNTT Core.
+
+---
+
+## ➡️ Tiếp tục học
+
+<div class="topic-workspace-actions" markdown>
+
+[🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
+
+[✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
+
+[→ 07 – Phân thức đại số](../07-phan-thuc-dai-so/index.md){ .md-button }
+
+</div>
