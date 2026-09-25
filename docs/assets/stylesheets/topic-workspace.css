@@ -116,3 +116,12 @@
 .topic-core-card h3,.topic-core-card-lesson{overflow-wrap:break-word}
 .topic-core-card-top .topic-core-card-number{flex-shrink:0}
 @container corejourney (max-width:23.99rem){.topic-core-card-lesson{font-size:.72rem;line-height:1.4}}
+
+
+/* Compact coaching controls inside each 3-question learning card. */
+.topic-micro-teach,.topic-micro-reveal{margin:.5rem .35rem .2rem 0}
+.topic-micro-tutor .topic-micro-learn-row{border-top:1px solid var(--md-default-fg-color--lightest);padding:.45rem 0}
+.topic-micro-tutor .topic-micro-learn-row strong{display:block;margin-bottom:.2rem}
+.topic-micro-tutor .topic-micro-learn-row p{white-space:pre-wrap;line-height:1.7;margin:.2rem 0}
+.topic-micro-tutor .practice-help-assisted{margin:.5rem 0}
+.topic-micro-tutor[hidden]{display:none!important}

@@ -1,7 +1,10 @@
 (() => {
   "use strict";
 
-  const TUTOR_POLICY_VERSION = "1.0";
+  const TUTOR_POLICY_VERSION = "1.1";
+  const HELP_MODES = new Set(["HINT", "STEP_BY_STEP", "FULL_SOLUTION", "TEACH_FROM_START"]);
+  const ACTIVITIES = new Set(["learning", "practice", "self_check", "timed_assessment"]);
+  const assessmentUnsubmitted = (activity, submitted) => ["self_check", "timed_assessment"].includes(activity) && !submitted;
   const CONTEXT_SCHEMA = "roadmap-tutor-context-v1";
   const MAX_REMEDIATION_EVENTS = 5;
   const MAX_OBSERVED_SIGNALS = 5;
@@ -39,11 +42,20 @@
     learnerAnswer = null,
     hintLevel = 0,
     learnerRequest = "",
+    helpMode = "HINT",
+    activity = "practice",
+    submitted = false,
     stats = { tags: {} },
     graph = null,
     recovery = { events: [] }
   }) => {
     if (!skill) throw new Error("Tutor Context requires a current skill.");
+    if (!HELP_MODES.has(helpMode)) throw new Error("Unknown tutor help mode.");
+    if (!ACTIVITIES.has(activity)) throw new Error("Unknown tutor activity.");
+    if (assessmentUnsubmitted(activity, submitted) && helpMode !== "HINT") {
+      throw new Error("Assessment answer-revealing help is unavailable before submission.");
+    }
+    const revealReference = helpMode === "FULL_SOLUTION" && !assessmentUnsubmitted(activity, submitted);
 
     const prereqs = reviewedPrerequisites(graph, skill);
     const relevantSkills = [...new Set([...prereqs, ...remediationCandidates(graph, skill)])];
@@ -65,7 +77,15 @@
         question_id: question?.id || null,
         question_text: question?.question || null,
         learner_answer: learnerAnswer,
-        hint_level: Number(hintLevel || 0)
+        hint_level: Number(hintLevel || 0),
+        help_mode: helpMode,
+        activity,
+        submitted: Boolean(submitted),
+        reference_solution: revealReference && question ? {
+          answer_text: Array.isArray(question.options) && Number.isInteger(question.answer) ? question.options[question.answer] ?? null : null,
+          explanation: typeof question.explanation === "string" ? question.explanation : null,
+          steps: Array.isArray(question.solution_steps) ? question.solution_steps.filter(step => typeof step === "string") : []
+        } : null
       },
       learner_evidence: {
         target: clampEvidence(stats?.tags?.[skill], skill),
@@ -96,6 +116,18 @@
   };
 
   const mockAdapter = async ({ context }) => {
+    const mode = context.current_task.help_mode || "HINT";
+    if (mode !== "HINT") {
+      const messages = {
+        STEP_BY_STEP: "Bản trợ giúp offline chỉ có thể trình bày các gợi ý đã biên soạn theo thứ tự; chưa có gia sư AI tương tác.",
+        FULL_SOLUTION: "Bản trợ giúp offline chỉ cung cấp lời giải đã có trong ngân hàng câu hỏi. Nếu chưa có các bước giải được biên soạn, không được gọi phần giải thích ngắn là lời giải chi tiết.",
+        TEACH_FROM_START: "Hãy mở bài giảng và thẻ kiến thức của chuyên đề để học lại nền tảng. Gemini hiện chưa được kết nối."
+      };
+      return validateTutorResponse({
+        message: messages[mode], action_type: "EXPLAIN", target_skill: context.current_task.skill,
+        confidence: "pedagogical_suggestion", evidence_basis: null
+      });
+    }
     const target = context.learner_evidence.target;
     const weakPrereq = context.learner_evidence.prerequisites
       .filter((item) => item.attempted >= 3 && item.accuracy !== null && item.accuracy < 0.75)
@@ -138,6 +170,11 @@
   };
 
   const runTutor = async ({ provider = "mock", context, policy }) => {
+    if (!context || !HELP_MODES.has(context.current_task?.help_mode || "HINT")) throw new Error("Invalid tutor context.");
+    if (assessmentUnsubmitted(context.current_task?.activity, context.current_task?.submitted) &&
+        (context.current_task?.help_mode !== "HINT" || context.current_task?.reference_solution !== null)) {
+      throw new Error("Assessment answer disclosure blocked.");
+    }
     const adapter = adapters[provider];
     if (!adapter) throw new Error(`Unknown tutor provider: ${provider}`);
     return adapter({ context, policy });
@@ -147,6 +184,7 @@
     buildContext: buildTutorContext,
     run: runTutor,
     validateResponse: validateTutorResponse,
-    policyVersion: TUTOR_POLICY_VERSION
+    policyVersion: TUTOR_POLICY_VERSION,
+    helpModes: Object.freeze([...HELP_MODES])
   });
 })();

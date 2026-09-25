@@ -310,6 +310,8 @@
       this.score = 0;
       this.answered = false;
       this.hintLevel = 0;
+      this.fullSolutionViewed = false;
+      this.hintButton = null;
       this.mode = "normal";
       this.focusSkills = [];
       this.renderShell();
@@ -344,7 +346,7 @@
         <div class="practice-remediation" hidden aria-live="polite"></div>
         <details class="practice-stats-panel">
           <summary>📊 Xem tiến độ theo kỹ năng</summary>
-          <div class="practice-stats-note">Thứ tự kỹ năng cố định theo lộ trình học. Bấm vào một kỹ năng để luyện riêng.</div>
+          <div class="practice-stats-note">Tỉ lệ đúng gồm cả lượt có trợ giúp. Mục “tự làm” tách riêng lượt làm đúng không xem gợi ý/lời giải; dữ liệu cũ chưa phân loại sẽ được ghi rõ. Bấm kỹ năng để luyện riêng.</div>
           <div class="practice-stats"></div>
         </details>
       `;
@@ -479,6 +481,8 @@
       const question = this.currentQuestion();
       this.answered = false;
       this.hintLevel = 0;
+      this.fullSolutionViewed = false;
+      this.hintButton = null;
       this.progressEl.textContent = `Câu ${this.index + 1}/${this.session.length} · Đúng ${this.score}`;
       this.metaEl.textContent = [question?.tags?.layer && question.tags.layer !== "KNTT-Core" ? question.tags.layer : null, this.difficultyLabel(question.difficulty), this.skillLabel(question)].filter(Boolean).join(" · ");
       this.questionEl.textContent = question.question;
@@ -500,17 +504,149 @@
         this.optionsEl.appendChild(button);
       });
 
-      const tutorBtn = createButton("🤖 Hỏi gia sư", "practice-btn-secondary");
-      tutorBtn.addEventListener("click", () => this.askTutor(question, tutorBtn));
+      const tutorBtn = createButton("🤖 Chọn cách được giúp", "practice-btn-secondary");
+      tutorBtn.addEventListener("click", () => this.openTutorMenu(question));
       this.actionsEl.appendChild(tutorBtn);
 
       if (Array.isArray(question.hints) && question.hints.length) {
         const hintBtn = createButton("💡 Xem gợi ý", "practice-btn-secondary");
         hintBtn.addEventListener("click", () => this.showNextHint(question, hintBtn));
         this.actionsEl.appendChild(hintBtn);
+        this.hintButton = hintBtn;
       }
 
       typeset(this.cardEl);
+    }
+
+
+    openTutorMenu(question) {
+      if (this.currentQuestion()?.id !== question?.id) return;
+      const panel = this.tutorEl;
+      panel.hidden = false;
+      panel.innerHTML = "";
+      const title = document.createElement("strong");
+      title.textContent = "📘 Em muốn được hỗ trợ thế nào?";
+      const note = document.createElement("p");
+      note.className = "practice-tutor-note";
+      note.textContent = "Bản offline dùng lời giải và gợi ý có trong ngân hàng, không phải Gemini đang trả lời trực tiếp.";
+      const choices = document.createElement("div");
+      choices.className = "practice-tutor-choices";
+      const modes = [
+        ["HINT", "💡 Gợi ý nhỏ", "Chỉ gợi hướng để em tự thử."],
+        ["STEP_BY_STEP", "🪜 Hướng dẫn từng bước", "Xem lần lượt các gợi ý hiện có."],
+        ["FULL_SOLUTION", "📖 Xem lời giải hiện có", "Có thể mở ngay, không phải dùng hết gợi ý."],
+        ["TEACH_FROM_START", "🎓 Giảng lại từ đầu", "Trở về bài học và ví dụ mẫu." ]
+      ];
+      modes.forEach(([mode, label, description]) => {
+        const button = createButton(label, "practice-btn-secondary practice-help-choice");
+        button.setAttribute("aria-label", label + ". " + description);
+        button.addEventListener("click", () => this.showHelpMode(question, mode));
+        choices.appendChild(button);
+      });
+      const diagnosis = createButton("🧭 Gợi ý theo tiến độ · QA offline", "practice-btn-secondary");
+      diagnosis.addEventListener("click", () => this.askTutor(question, diagnosis));
+      panel.append(title, note, choices, diagnosis);
+    }
+
+    showHelpMode(question, mode) {
+      if (this.currentQuestion()?.id !== question?.id) return;
+      if (!window.RoadmapTutor?.helpModes?.includes(mode)) return;
+      const panel = this.tutorEl;
+      panel.hidden = false;
+      panel.innerHTML = "";
+      const title = document.createElement("strong");
+      title.textContent = ({
+        HINT: "💡 Gợi ý nhỏ",
+        STEP_BY_STEP: "🪜 Hướng dẫn từng bước",
+        FULL_SOLUTION: "📖 Lời giải từ ngân hàng",
+        TEACH_FROM_START: "🎓 Học lại từ đầu"
+      })[mode];
+      panel.appendChild(title);
+      const info = document.createElement("p");
+      info.className = "practice-tutor-note";
+      panel.appendChild(info);
+      const addBack = () => {
+        const back = createButton("← Chọn cách khác", "practice-btn-secondary");
+        back.addEventListener("click", () => this.openTutorMenu(question));
+        panel.appendChild(back);
+      };
+      if (mode === "HINT" || mode === "STEP_BY_STEP") {
+        const count = (question.hints || []).length;
+        info.textContent = count
+          ? "Chỉ dùng các gợi ý do người biên soạn cung cấp; chưa tiết lộ đáp án."
+          : "Câu này chưa có gợi ý từng bước trong ngân hàng. Em có thể xem bài giảng hoặc yêu cầu lời giải hiện có.";
+        const next = createButton(mode === "HINT" ? "Xem gợi ý" : "Xem bước tiếp", "practice-btn-primary");
+        const advance = () => {
+          if (this.answered || !this.hintButton || this.hintLevel >= count) {
+            next.disabled = true;
+            next.textContent = this.answered ? "Đã nộp câu trả lời" : "Đã hết gợi ý";
+            return;
+          }
+          this.showNextHint(question, this.hintButton);
+          if (this.hintLevel >= count) {
+            next.disabled = true;
+            next.textContent = "Đã hết gợi ý";
+          }
+        };
+        next.addEventListener("click", advance);
+        if (!count || this.answered) next.disabled = true;
+        panel.appendChild(next);
+        addBack();
+        return;
+      }
+      if (mode === "TEACH_FROM_START") {
+        info.textContent = "Hãy mở bài học, xem kiến thức cốt lõi, ví dụ mẫu và lỗi thường gặp. Nếu cần chính đáp án của câu này, chọn mục lời giải riêng.";
+        const link = document.createElement("a");
+        link.className = "practice-btn practice-btn-primary";
+        link.href = "../#core-journey";
+        link.textContent = "Mở bài giảng và các thẻ học (nếu có) ↗";
+        panel.appendChild(link);
+        addBack();
+        return;
+      }
+      if (!this.answered && !this.fullSolutionViewed) {
+        info.textContent = "Nếu xem đáp án trước khi nộp, lần làm câu này sẽ được ghi là có trợ giúp, không tính là tự làm độc lập.";
+        const confirm = createButton("Tôi muốn mở lời giải ngay", "practice-btn-primary");
+        confirm.addEventListener("click", () => {
+          this.fullSolutionViewed = true;
+          this.hintLevel = Math.max(1, this.hintLevel);
+          this.showHelpMode(question, "FULL_SOLUTION");
+        });
+        panel.appendChild(confirm);
+        addBack();
+        return;
+      }
+      info.textContent = this.answered
+        ? "Lời giải được xem sau khi đã trả lời; không thay đổi kết quả đã lưu."
+        : "Đã mở đáp án trước khi nộp: kết quả câu này sẽ được ghi nhận là có trợ giúp.";
+      const answer = document.createElement("div");
+      answer.className = "practice-help-answer";
+      const answerLabel = document.createElement("strong");
+      answerLabel.textContent = "Đáp án trong ngân hàng:";
+      const answerText = document.createElement("p");
+      answerText.textContent = Array.isArray(question.options) ? question.options[question.answer] || "Chưa có đáp án được biên soạn." : "Chưa có đáp án được biên soạn.";
+      answer.append(answerLabel, answerText);
+      panel.appendChild(answer);
+      const steps = Array.isArray(question.solution_steps) ? question.solution_steps.filter(step => typeof step === "string" && step.trim()) : [];
+      if (steps.length) {
+        const list = document.createElement("ol");
+        list.className = "practice-help-steps";
+        steps.forEach(step => { const item = document.createElement("li"); item.textContent = step; list.appendChild(item); });
+        panel.appendChild(list);
+      } else {
+        const brief = document.createElement("div");
+        brief.className = "practice-help-answer";
+        const label = document.createElement("strong");
+        label.textContent = "Giải thích hiện có:";
+        const body = document.createElement("p");
+        body.textContent = String(question.explanation || "Chưa có phần giải thích được biên soạn.");
+        const caveat = document.createElement("small");
+        caveat.textContent = "Ngân hàng câu này chưa có lời giải từng bước được kiểm duyệt; phần trên là giải thích ngắn, không phải lời giải AI chi tiết.";
+        brief.append(label, body, caveat);
+        panel.appendChild(brief);
+      }
+      addBack();
+      typeset(panel);
     }
 
     async askTutor(question, button) {
@@ -612,7 +748,7 @@
       const question = this.currentQuestion();
       const correct = selectedIndex === question.answer;
       if (correct) this.score += 1;
-      this.record(question, correct, this.hintLevel, selectedIndex);
+      this.record(question, correct, this.hintLevel, selectedIndex, this.fullSolutionViewed);
 
       const optionButtons = [...this.optionsEl.querySelectorAll(".practice-option")];
       optionButtons.forEach((button) => {
@@ -630,7 +766,16 @@
       explanation.className = "practice-explanation";
       explanation.textContent = question.explanation;
       this.feedbackEl.append(heading, explanation);
+      if (this.fullSolutionViewed) {
+        const assisted = document.createElement("div");
+        assisted.className = "practice-help-assisted";
+        assisted.textContent = "Đã xem lời giải trước khi trả lời · ghi nhận là có trợ giúp, không tính tự làm độc lập.";
+        this.feedbackEl.appendChild(assisted);
+      }
       this.actionsEl.innerHTML = "";
+      const reviewBtn = createButton("📘 Xem hướng dẫn / lời giải", "practice-btn-secondary");
+      reviewBtn.addEventListener("click", () => this.openTutorMenu(question));
+      this.actionsEl.appendChild(reviewBtn);
 
       if (!correct && this.index < this.session.length - 1) {
         const similarBtn = createButton("Làm câu tương tự", "practice-btn-primary");
@@ -669,12 +814,13 @@
       this.renderQuestion();
     }
 
-    record(question, correct, hintsUsed = 0, selectedIndex = null) {
+    record(question, correct, hintsUsed = 0, selectedIndex = null, fullSolutionViewed = false) {
       if (window.RoadmapLearnerEvidence?.recordAnswer) {
         const result = window.RoadmapLearnerEvidence.recordAnswer({
           question,
           correct,
           hintsUsed,
+          fullSolutionViewed,
           selectedIndex,
           stats: this.stats
         });
@@ -682,13 +828,15 @@
       } else {
         const questionRecord = this.stats.questions[question.id] || { attempted: 0, correct: 0 };
         questionRecord.attempted += 1;
+        if (fullSolutionViewed) questionRecord.full_solution_views = (questionRecord.full_solution_views || 0) + 1;
         if (correct) questionRecord.correct += 1;
-        if (hintsUsed > 0) {
+        if (hintsUsed > 0 || fullSolutionViewed) {
           questionRecord.hinted_attempts = (questionRecord.hinted_attempts || 0) + 1;
-          questionRecord.hints_used = (questionRecord.hints_used || 0) + hintsUsed;
+          questionRecord.hints_used = (questionRecord.hints_used || 0) + Math.max(hintsUsed, Number(fullSolutionViewed));
         }
         if (correct) {
-          if (hintsUsed > 0) questionRecord.correct_with_hint = (questionRecord.correct_with_hint || 0) + 1;
+          if (fullSolutionViewed) questionRecord.correct_after_full_solution = (questionRecord.correct_after_full_solution || 0) + 1;
+          if (hintsUsed > 0 || fullSolutionViewed) questionRecord.correct_with_hint = (questionRecord.correct_with_hint || 0) + 1;
           else questionRecord.correct_without_hint = (questionRecord.correct_without_hint || 0) + 1;
         }
         this.stats.questions[question.id] = questionRecord;
@@ -696,13 +844,15 @@
         questionSkills(question).forEach((skill) => {
           const record = this.stats.tags[skill] || { attempted: 0, correct: 0 };
           record.attempted += 1;
+          if (fullSolutionViewed) record.full_solution_views = (record.full_solution_views || 0) + 1;
           if (correct) record.correct += 1;
-          if (hintsUsed > 0) {
+          if (hintsUsed > 0 || fullSolutionViewed) {
             record.hinted_attempts = (record.hinted_attempts || 0) + 1;
-            record.hints_used = (record.hints_used || 0) + hintsUsed;
+            record.hints_used = (record.hints_used || 0) + Math.max(hintsUsed, Number(fullSolutionViewed));
           }
           if (correct) {
-            if (hintsUsed > 0) record.correct_with_hint = (record.correct_with_hint || 0) + 1;
+            if (fullSolutionViewed) record.correct_after_full_solution = (record.correct_after_full_solution || 0) + 1;
+            if (hintsUsed > 0 || fullSolutionViewed) record.correct_with_hint = (record.correct_with_hint || 0) + 1;
             else record.correct_without_hint = (record.correct_without_hint || 0) + 1;
           }
           this.stats.tags[skill] = record;
@@ -814,8 +964,13 @@
         group.skills.forEach((skill) => {
           const record = this.stats.tags[skill] || { attempted: 0, correct: 0 };
           const percent = record.attempted ? Math.round((record.correct / record.attempted) * 100) : 0;
+          const independent = Number.isFinite(record.correct_without_hint)
+            ? Number(record.correct_without_hint)
+            : Number.isFinite(record.correct_with_hint)
+              ? Math.max(0, Number(record.correct || 0) - Number(record.correct_with_hint))
+              : null;
           const status = record.attempted
-            ? `${record.correct}/${record.attempted} · ${percent}%`
+            ? `${record.correct}/${record.attempted} · ${percent}% đúng · tự làm: ${independent === null ? "chưa phân loại" : independent}`
             : "Chưa luyện";
           const note = weak.has(skill)
             ? "⚠ Cần luyện thêm"
