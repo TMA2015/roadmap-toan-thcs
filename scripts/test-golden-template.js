@@ -29,6 +29,27 @@ const configs = [
     workspace:"docs/assets/data/curriculum/topic07-learning-workspace.json",
     micro:"docs/assets/data/practice/07-phan-thuc-dai-so-micro-v1.json",
     forbidden:[]
+  },
+  {
+    num:"08", slug:"08-phuong-trinh-bat-phuong-trinh",
+    assessment:"docs/assets/data/assessment/08-phuong-trinh-bat-phuong-trinh-core-v1.json",
+    workspace:"docs/assets/data/curriculum/topic08-learning-workspace.json",
+    micro:"docs/assets/data/practice/08-phuong-trinh-bat-phuong-trinh-micro-v1.json",
+    forbidden:["tham-so-co-ban","giao-tap-nghiem","lap-bat-phuong-trinh"]
+  },
+  {
+    num:"09", slug:"09-he-phuong-trinh",
+    assessment:"docs/assets/data/assessment/09-he-phuong-trinh-core-v1.json",
+    workspace:"docs/assets/data/curriculum/topic09-learning-workspace.json",
+    micro:"docs/assets/data/practice/09-he-phuong-trinh-micro-v1.json",
+    forbidden:["tham-so-he"]
+  },
+  {
+    num:"10", slug:"10-ham-so-do-thi",
+    assessment:"docs/assets/data/assessment/10-ham-so-do-thi-core-v1.json",
+    workspace:"docs/assets/data/curriculum/topic10-learning-workspace.json",
+    micro:"docs/assets/data/practice/10-ham-so-do-thi-micro-v1.json",
+    forbidden:["vi-tri-hai-duong-thang","giao-diem-do-thi","lien-he-he-phuong-trinh"]
   }
 ];
 
@@ -122,4 +143,4 @@ if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
-console.log("PASS: Golden Template CĐ04–CĐ07 · Learn/Practice/Readiness + Core boundaries valid");
+console.log("PASS: Golden Template CĐ04–CĐ10 · Learn/Practice/Readiness + Core boundaries valid");
