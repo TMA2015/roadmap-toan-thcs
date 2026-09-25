@@ -149,7 +149,7 @@ with sync_playwright() as p:
 
     bg = ai_launcher.evaluate("(el) => getComputedStyle(el).backgroundImage")
     check("ai-girl-awake-avatar.webp" in bg, "approved girl portrait replaces emoji launcher")
-    heading_px = page.locator(".md-content__inner .md-typeset > h1").first.evaluate(
+    heading_px = page.locator(".md-content__inner.md-typeset > h1, .md-content__inner > .md-typeset > h1").first.evaluate(
         "(el) => parseFloat(getComputedStyle(el).fontSize)")
     check(heading_px <= 34, "desktop article headings reduced without shrinking formula body")
     ai_panel.locator(".floating-ai-close").click()
