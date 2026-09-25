@@ -34,5 +34,5 @@ ok(!b.questions[14].question.includes("dự kiến sẽ ném")&&b.questions[14].
 ok(w.cards[0].skills.join(",")==="xac-suat-thuc-nghiem"&&!b.questions.slice(0,3).some(x=>x.target==="ket-qua-co-the"),"unapproved grade6 skills");
 const js=txt("docs/assets/javascripts/topic-workspace-v1.js"),lesson=txt("docs/kien-thuc/23-xac-suat/index.md");
 ok(js.includes('"23-xac-suat":{number:"23"')&&js.includes("if(card.teaching_copy)"),"UI mount missing");
-ok(lesson.includes("5 Learning Cards KNTT Core")&&lesson.includes("Readiness Core sẽ được biên soạn")&&!lesson.includes("Đạt tối thiểu **7/10**"),"lesson gateway");
+ok(lesson.includes("5 Learning Cards KNTT Core")&&lesson.includes("Core Readiness 12 câu")&&lesson.includes("tu-kiem-tra-tu-luan.md")&&!lesson.includes("Đạt tối thiểu **7/10**"),"lesson gateway");
 console.log("PASS: CĐ23 five grade-mapped Learning Cards, 15 micro items, independent math and direct-language checks, 120 Practice Bank intact. Roles Base/Trap/Apply.");
