@@ -67,7 +67,7 @@ const bundle = {
       read(`docs/assets/data/assessment/${slug}-core-v1.json`),
       read(`docs/kien-thuc/${slug}/bai-tap.md`),
       read(`docs/kien-thuc/${slug}/index.md`),
-      read(`docs/assets/data/practice/${slug}-v1.manifest.json`)
+      read(num === "04" ? "docs/assets/data/practice/04-bieu-thuc-dai-so-v2.manifest.json" : `docs/assets/data/practice/${slug}-v1.manifest.json`)
     ]
   }))
 };
