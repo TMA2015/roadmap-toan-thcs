@@ -100,6 +100,9 @@ jobs:
       - name: Build source-locked CĐ21 Readiness Gemini author bundle
         run: node scripts/build-sta21-ready-bundle.js docs/assets/data/collaboration/exports/sta21-ready-gemini-author-001.json
 
+      - name: Verify CĐ21 Core Readiness academic and schema QA
+        run: node scripts/test-sta21-ready-001.js
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 
