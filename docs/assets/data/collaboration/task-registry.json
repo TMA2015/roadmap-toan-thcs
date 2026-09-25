@@ -386,11 +386,13 @@
       "id": "STA21-AUTHOR-001",
       "title": "Gemini-authored first twelve CĐ21 Core Practice Bank items",
       "routing": "GEMINI_AUTHOR+CHATGPT_QA_INTEGRATE",
-      "status": "READY",
-      "context_version": "1.0.39",
+      "status": "DONE",
+      "context_version": "1.0.40",
       "packet": "docs/assets/data/collaboration/packets/STA21-GEMINI-AUTHOR-001.json",
       "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-gemini-author-001.json",
-      "review_notes": "Small first authoring batch only: 12 non-duplicate items across du-lieu-phan-loai, thu-thap-du-lieu, doc-bieu-do-cot. No readiness or bank changes until response passes QA."
+      "review_notes": "REV2 aligned 003, ChatGPT applied remaining #87 corrections, 12 new items in chunk 05, manifest 132, original 120 preserved.",
+      "review_verdict": "ACCEPT_WITH_EDITORIAL_FIXES",
+      "integrated_artifact": "docs/assets/data/practice/21-thong-ke-v1-05.json"
     }
   ]
 }

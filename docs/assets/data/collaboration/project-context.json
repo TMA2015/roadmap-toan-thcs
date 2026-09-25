@@ -1,5 +1,5 @@
 {
-  "version": "1.0.39",
+  "version": "1.0.40",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -208,7 +208,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Await Gemini STA21-GEMINI-AUTHOR-001-RESULT for 12 new CĐ21 Practice Bank questions; ChatGPT source-lock QA then integrate one small chunk. Later complete CĐ21 Golden Template Learn/Readiness in separate batches.",
+    "next_priority": "CĐ21 Golden Template Learn workspace and micro-practice in a small Gemini-led source-locked batch; Practice Bank is 132 questions.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -227,7 +227,13 @@
     "golden_rollout": "CĐ04–CĐ12 DEPLOYED-PASS under Golden Template. CĐ11 adds source-mapped căn bậc ba with 12 real Practice Bank items (120→132); CĐ12 keeps parameter/extended Viète applications outside Core readiness pending item-level review. CI, strict MkDocs build and Pages deploy pass.",
     "geometry_architecture": "v1 FROZEN after Gemini architecture PASS, coverage 124/124, BENCH PASS, successful CI and owner-reported cross-device geometry flow acceptance (explicit iPhone/iPad). Automatic geometry renderer remains separate scope.",
     "geometry_rollout": "CĐ13–CĐ20 DEPLOYED-PASS; CĐ19–CĐ20 Gemini batch review PASS with corrections []. Geometry exact-ID coverage 124/124, 0 gaps; CĐ19 bank 147 and CĐ20 bank 195.",
-    "geometry_visuals": "Main-lesson SVG refresh CĐ13–20 delivered: 33 internal diagrams; CĐ19–20 folder-path repair PR #84 and CI run 36105090022 PASS. Older diagrams retained for rollback; CĐ21–25 internal diagrams retained. Owner device visual QA of new CĐ13–17/19–20 pending; reusable renderer still open. Owner accepted updated figures on 2026-09-25."
+    "geometry_visuals": "Main-lesson SVG refresh CĐ13–20 delivered: 33 internal diagrams; CĐ19–20 folder-path repair PR #84 and CI run 36105090022 PASS. Older diagrams retained for rollback; CĐ21–25 internal diagrams retained. Owner device visual QA of new CĐ13–17/19–20 pending; reusable renderer still open. Owner accepted updated figures on 2026-09-25.",
+    "statistics_rollout": {
+      "topic": "21-thong-ke",
+      "practice_bank_count": 132,
+      "integration": "STA21-CHATGPT-INTEGRATION-001",
+      "next": "CĐ21 Learn and micro-practice"
+    }
   },
   "handoff_required_fields": [
     "TASK_ID",
@@ -255,7 +261,7 @@
     "offline_relay_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/offline-relay/",
     "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
     "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
-    "next_public_task": "STA21-AUTHOR-001",
+    "next_public_task": "STA21-LEARN-001",
     "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-gemini-author-001.json",
     "protocol_version": "2.0",
     "relay_v2": "Main-lesson image refresh checkpoint stored; return to small Gemini-led authoring batches. CĐ13–20 legacy image replacements are not a completed automatic geometry renderer."

@@ -84,6 +84,9 @@ jobs:
       - name: Build source-locked CĐ21 Gemini author bundle
         run: node scripts/build-sta21-author-bundle.js docs/assets/data/collaboration/exports/sta21-gemini-author-001.json
 
+      - name: Check CĐ21 Practice Bank integration
+        run: node scripts/test-sta21-batch-001.js
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 
