@@ -58,6 +58,14 @@ jobs:
           node scripts/test-class-learning-entry.js
           node --check docs/assets/javascripts/knowledge-ui-v1.js
           node scripts/test-knowledge-ui-v1.js
+      - name: Validate Topic 25 academic split and optional Gemini gateway
+        run: |
+          node --check docs/assets/javascripts/practice-auto-loader.js
+          node --check docs/assets/javascripts/gemini-online-v1.js
+          node --check docs/assets/javascripts/topic-workspace-v1.js
+          node --check docs/assets/javascripts/practice-engine-v2.js
+          node scripts/test-topic25-academic-v1.js
+          node scripts/test-gemini-gateway-v1.js
       - name: Build strict static site
         run: mkdocs build --strict
       - name: Browser interaction QA and visual previews

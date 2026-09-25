@@ -1,89 +1,74 @@
-# Tự kiểm tra – Chuyên đề 25: Tổng hợp & ôn thi vào 10
+# Tự kiểm tra Toán học – Chuyên đề 25
 
-> **Thời gian gợi ý:** 45 phút
-> **Thang điểm:** 10 điểm
+> **Đây là bài tự kiểm tra học thuật**, không phải bài hỏi kinh nghiệm ôn thi. **Thời gian:** 45–60 phút. **Thang điểm:** 10 điểm. Làm độc lập. Không sử dụng gia sư/gợi ý trước khi hoàn tất; tự đối chiếu đáp án sau khi đã làm.
+>
+> Bài do Roadmap tự biên soạn để tự học, **không phải đề thi chính thức Hà Nội** và đang chờ một lượt phản biện toán học độc lập. Điểm không khóa quyền học tiếp.
 
-# Đề tự kiểm tra
+## Đề bài
 
-## Câu 1 — 0,5 điểm
-Nêu bốn mạch kiến thức lớn của Roadmap Toán THCS.
+### Câu 1. Biểu thức căn – 2 điểm
 
-## Câu 2 — 0,5 điểm
-Một bài yêu cầu tìm giao điểm hai đồ thị và giải hệ phương trình tương ứng liên quan đến những chuyên đề nào?
+Cho \(x\geq 0,\ x\ne 1\). Rút gọn
+\[
+A=\frac{\sqrt{x}+1}{\sqrt{x}-1}-\frac{\sqrt{x}-1}{\sqrt{x}+1}.
+\]
+Tìm \(x\) sao cho \(A=\dfrac83\).
 
-## Câu 3 — 0,75 điểm
-Vì sao không nên ôn tất cả chuyên đề với thời lượng bằng nhau?
+### Câu 2. Phương trình bậc hai – 2 điểm
 
-## Câu 4 — 0,75 điểm
-Phân biệt lỗi kiến thức với lỗi cẩu thả bằng một ví dụ ngắn.
+Cho \(x_1,x_2\) là hai nghiệm của \(x^2-5x+6=0\).
 
-## Câu 5 — 1,0 điểm
-Một học sinh thường sai điều kiện xác định khi rút gọn biểu thức chứa căn. Hãy nêu quy trình 3 bước để hạn chế lỗi này.
+a) Tính \(x_1+x_2\), \(x_1x_2\).
 
-## Câu 6 — 1,0 điểm
-Một đề thi 120 phút có nhiều câu. Hãy nêu nguyên tắc phân bổ thời gian để tránh mắc kẹt quá lâu ở một câu khó.
+b) Không tính riêng từng nghiệm, hãy tính \(x_1^2+x_2^2\) và \(\dfrac1{x_1}+\dfrac1{x_2}\).
 
-## Câu 7 — 1,25 điểm
-Sau ba đề thử, học sinh mất điểm nhiều nhất ở đường tròn, bài toán thực tế và sai dấu phương trình. Hãy đề xuất cách dùng sổ lỗi để lập kế hoạch tuần tiếp theo.
+### Câu 3. Mô hình hóa – 2 điểm
 
-## Câu 8 — 1,25 điểm
-Một câu hình yêu cầu chứng minh tứ giác nội tiếp rồi suy ra hai góc bằng nhau. Hãy nêu chuỗi kiến thức cần huy động và cách kiểm tra logic lời giải.
+Một buổi biểu diễn bán 30 vé gồm vé học sinh giá 25 nghìn đồng và vé người lớn giá 40 nghìn đồng, thu 990 nghìn đồng. Tìm số vé mỗi loại. Nêu điều kiện của ẩn và đối chiếu số tiền sau khi giải.
 
-## Câu 9 — 1,5 điểm
-Một học sinh đạt 7,5 điểm nhưng mất 1 điểm do quên điều kiện nghiệm và 0,5 điểm do thiếu đơn vị. Hãy phân loại lỗi và đề xuất biện pháp sửa mang tính hệ thống.
+### Câu 4. Hình học tổng hợp – 3 điểm
 
-## Câu 10 — 1,5 điểm
-Thiết kế chu kỳ ôn 2 tuần cuối theo quy trình: làm đề → chấm → phân loại lỗi → ôn chuyên đề → làm lại → kiểm tra bằng đề mới. Giải thích mục đích của từng bước.
+Cho đường tròn đường kính \(AB=10\) cm và điểm \(C\) khác \(A,B\) nằm trên đường tròn, \(AC=6\) cm. Gọi \(H\) là chân đường vuông góc từ \(C\) xuống \(AB\).
 
-# Đáp án và hướng dẫn chấm
+a) Giải thích vì sao tam giác \(ABC\) vuông tại \(C\) và tính \(BC\).
 
-1. Số & Đại số; Hình học; Thống kê – Xác suất; Bài toán thực tế.
-2. Hàm số – đồ thị và hệ phương trình.
-3. Vì mức độ yếu, tần suất xuất hiện và trọng số trong đề không giống nhau giữa các chuyên đề.
-4. Lỗi kiến thức: không biết/nhớ sai định lý hoặc công thức. Lỗi cẩu thả: hiểu đúng nhưng chép sai dấu, sai số, bỏ đơn vị...
-5. Ghi điều kiện xác định → giải/rút gọn → đối chiếu kết quả với điều kiện trước khi kết luận.
-6. Ưu tiên câu chắc chắn lấy điểm trước; đặt giới hạn thời gian hợp lý cho câu khó; quay lại sau khi đã xử lý phần còn lại.
-7. Thống kê số lần và số điểm mất theo từng lỗi; ưu tiên lỗi lặp lại nhiều/mất nhiều điểm; ôn đúng chuyên đề rồi làm lại câu sai.
-8. Nhận diện điều kiện nội tiếp → chứng minh nội tiếp → dùng tính chất góc cùng chắn cung/hệ quả phù hợp; kiểm tra mỗi kết luận có căn cứ trực tiếp từ giả thiết hoặc kết quả trước.
-9. Đây chủ yếu là lỗi quy trình/trình bày. Dùng checklist bắt buộc trước khi nộp: điều kiện → nghiệm hợp lệ → đơn vị → câu kết luận.
-10. Cần đủ sáu bước và giải thích: đề mới đo năng lực; chấm để xác định sai; phân loại để tìm nguyên nhân; ôn đúng chỗ; làm lại để kiểm chứng sửa lỗi; đề mới để kiểm tra khả năng chuyển giao.
+b) Chứng minh \(AC^2=AH\cdot AB\), suy ra \(AH\).
 
-# Bảng truy nguyên lỗi
+c) Tính \(CH\) bằng hai cách: diện tích tam giác và hệ thức lượng.
 
-| Sai câu | Nên quay lại |
-|---|---|
-| 1–3 | Bản đồ tổng hợp và ma trận ưu tiên |
-| 4–5 | Phân loại lỗi và điều kiện bài toán |
-| 6 | Chiến lược thời gian phòng thi |
-| 7 | Sổ lỗi và kế hoạch ôn tập |
-| 8 | Hình học tổng hợp / đường tròn |
-| 9–10 | Quy trình chữa đề và chu kỳ cải thiện |
+### Câu 5. Thống kê và xác suất – 1 điểm
 
-# Thang tự đánh giá
+Một hộp chứa 5 thẻ ghi số \(1,2,3,4,5\), các thẻ cùng khả năng được lấy. Lấy ngẫu nhiên một thẻ. Tính xác suất ghi số nguyên tố; giải thích mẫu số và tử số.
 
-| Điểm | Mức | Hành động đề xuất |
-|---:|---|---|
-| 9,0–10 | Hoàn thành tốt | Có thể tiếp tục lộ trình; vẫn chữa mọi câu chưa chắc |
-| 7,0–8,75 | Đạt | Chữa toàn bộ câu sai rồi chuyển tiếp |
-| 5,0–6,75 | Chưa chắc | Quay lại đúng dạng bài còn yếu và luyện thêm M2–M3 |
-| Dưới 5,0 | Cần củng cố | Học lại kiến thức cốt lõi và làm lại M1–M2 |
+## Đáp án và hướng dẫn chấm
 
-> Điểm số chỉ là một tín hiệu. Quan trọng hơn là xác định **loại lỗi** và sửa đúng phần kiến thức gốc.
+Chỉ mở lời giải khi đã hoàn thành đề. Không xem trước trong buổi tự kiểm tra.
 
----
+??? success "Đã làm xong — mở đáp án và hướng dẫn chấm"
 
-# Checklist sau khi chấm
+    **Câu 1 (2 điểm).** Đặt \(t=\sqrt{x}\), nên \(t\geq0,\ t\ne1\). Khi đó:
+    \[
+    A=\frac{(t+1)^2-(t-1)^2}{(t-1)(t+1)}
+     =\frac{4t}{t^2-1}=\frac{4\sqrt{x}}{x-1}.
+    \]
+    Từ \(A=8/3\) suy ra \(12t=8(t^2-1)\), hay \(2t^2-3t-2=0\). Phân tích \((2t+1)(t-2)=0\); vì \(t\geq0\), chỉ nhận \(t=2\), do đó **\(x=4\)**, hợp điều kiện. (Rút gọn 1 điểm; giải và kiểm tra 1 điểm.)
 
-- [ ] Tôi đã ghi lại điểm số.
-- [ ] Tôi đã đối chiếu từng câu sai với **Bảng truy nguyên lỗi**.
-- [ ] Tôi đã xác định lỗi thuộc nhóm kiến thức / biến đổi / dấu / điều kiện / mô hình hóa / kết luận / trình bày.
-- [ ] Tôi đã làm lại từng câu sai mà không nhìn đáp án.
-- [ ] Tôi đã luyện lại kỹ năng yếu trong Practice Bank nếu cần.
-- [ ] Nếu đạt từ 7 điểm trở lên, tôi đã chữa xong các câu sai trước khi chuyển tiếp.
+    **Câu 2 (2 điểm).** Theo Viète, tổng bằng \(5\), tích bằng \(6\). Do đó
+    \[
+    x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=25-12=13,
+    \quad
+    \frac1{x_1}+\frac1{x_2}=\frac{x_1+x_2}{x_1x_2}=\frac56.
+    \]
+    Được phép lấy nghịch đảo vì tích \(x_1x_2=6\ne0\). (Viète 1 điểm; hai biểu thức và điều kiện 1 điểm.)
 
-# Liên kết Roadmap
+    **Câu 3 (2 điểm).** Đặt \(h,n\) lần lượt là số vé học sinh/người lớn, là các số nguyên không âm. Ta có \(h+n=30,\ 25h+40n=990\) (đơn vị nghìn đồng). Thay \(h=30-n\): \(750-25n+40n=990\), suy ra \(n=16\), \(h=14\). Kiểm tra \(14+16=30\), \(14\cdot25+16\cdot40=990\). (Lập hệ và điều kiện 1 điểm; giải, đối chiếu, kết luận 1 điểm.)
 
-- **← Bài học:** [Chuyên đề 25](index.md)
-- **← Luyện tập:** [Bài tập Chuyên đề 25](bai-tap.md)
-- **← Chuyên đề trước:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
-- **→ Blueprint:** [25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md)
+    **Câu 4 (3 điểm).** Góc nội tiếp chắn đường kính \(AB\) bằng \(90^\circ\), vậy tam giác \(ABC\) vuông tại \(C\). Theo Pythagore, \(BC=\sqrt{10^2-6^2}=8\) cm (0,75 điểm). Vì \(CH\perp AB\), hai tam giác \(ACH\) và \(ABC\) đồng dạng (góc \(A\) chung, cùng có góc vuông). Suy ra \(AC/AB=AH/AC\), hay \(AC^2=AH\cdot AB\); \(AH=36/10=3,6\) cm (1,0 điểm). Khi đó \(BH=10-3,6=6,4\) cm. Cách 1: diện tích \(ABC\) tính theo hai cặp đáy–cao là \(AC\cdot BC/2=AB\cdot CH/2\), nên \(CH=6\cdot8/10=4,8\) cm. Cách 2: hệ thức lượng \(CH^2=AH\cdot BH=3,6\cdot6,4=23,04\), nên \(CH=4,8\) cm (1,25 điểm).
+
+    **Câu 5 (1 điểm).** Không gian mẫu có 5 kết quả đồng khả năng. Các số nguyên tố trong đó là \(2,3,5\), gồm 3 kết quả, nên \(P=3/5\). (Liệt kê đúng 0,5 điểm; xác suất và giải thích 0,5 điểm.)
+
+## Chữa bài và học lại
+
+Đừng chỉ ghi điểm tổng. Với từng câu sai, tìm công cụ cần ôn: C1 → [căn thức](../11-can-thuc/index.md) / [phân thức](../07-phan-thuc-dai-so/index.md); C2 → [phương trình bậc hai và Viète](../12-phuong-trinh-bac-hai-viete/index.md); C3 → [hệ phương trình](../09-he-phuong-trinh/index.md); C4 → [tam giác](../14-tam-giac/index.md) / [hệ thức lượng](../18-he-thuc-luong/index.md); C5 → [xác suất](../23-xac-suat/index.md).
+
+[Đề tổng hợp 120 phút số 01](de-thi-tong-hop-01.md) · [Bài toán mẫu kinh điển](bai-toan-kinh-dien.md) · [Tự kiểm tra kỹ năng làm đề](tu-kiem-tra-ky-nang.md)

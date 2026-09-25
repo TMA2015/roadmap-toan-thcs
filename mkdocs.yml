@@ -49,6 +49,7 @@ nav:
   - AI Tutor:
       - AI Tutor Core Contract: ai/ai-tutor-core-contract.md
       - Tutor Context & Provider Adapter: ai/tutor-context-adapter.md
+      - Kết nối Gemini an toàn: ai/gemini-connection-guide.md
   - Hướng dẫn:
       - Lộ trình tự học: huong-dan/lo-trinh-tu-hoc.md
       - Nguyên tắc học mỗi chuyên đề: huong-dan/nguyen-tac-hoc-moi-chuyen-de.md
@@ -173,7 +174,10 @@ nav:
           - 25. Tổng hợp & ôn thi vào 10:
               - Bài học: kien-thuc/25-tong-hop-on-thi-10/index.md
               - Luyện tập: kien-thuc/25-tong-hop-on-thi-10/bai-tap.md
-              - Tự kiểm tra: kien-thuc/25-tong-hop-on-thi-10/tu-kiem-tra.md
+              - Bài toán kinh điển: kien-thuc/25-tong-hop-on-thi-10/bai-toan-kinh-dien.md
+              - Đề tổng hợp 120 phút: kien-thuc/25-tong-hop-on-thi-10/de-thi-tong-hop-01.md
+              - Tự kiểm tra Toán học: kien-thuc/25-tong-hop-on-thi-10/tu-kiem-tra.md
+              - Kiểm tra kỹ năng làm đề: kien-thuc/25-tong-hop-on-thi-10/tu-kiem-tra-ky-nang.md
 
 markdown_extensions:
   - admonition
@@ -198,6 +202,7 @@ extra_javascript:
   - assets/javascripts/math-details-v1.js
   - assets/javascripts/learner-evidence-v1.js
   - assets/javascripts/tutor-runtime-v1.js
+  - assets/javascripts/gemini-online-v1.js
   - assets/javascripts/topic-workspace-v1.js
   - assets/javascripts/assessment-engine-v1.js
   - assets/javascripts/practice-auto-loader.js

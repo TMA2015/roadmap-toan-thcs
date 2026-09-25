@@ -1,0 +1,1632 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "REV25-ACADEMIC-V1",
+  "topic": {
+    "id": "25-tong-hop-on-thi-10",
+    "title": "Tổng hợp và ôn thi vào 10"
+  },
+  "question_count": 80,
+  "questions": [
+    {
+      "id": "REV25V1_011",
+      "question": "Rút gọn \\(\\sqrt{50}\\).",
+      "options": [
+        "\\(5\\sqrt2\\)",
+        "\\(25\\sqrt2\\)",
+        "\\(10\\sqrt5\\)",
+        "\\(2\\sqrt5\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-bieu-thuc-can"
+        ],
+        "type": "rut-gon-can"
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(\\sqrt{50}=\\sqrt{25\\cdot2}=5\\sqrt2\\)."
+    },
+    {
+      "id": "REV25V1_012",
+      "question": "Rút gọn \\(\\sqrt{12}+\\sqrt{27}\\).",
+      "options": [
+        "\\(5\\sqrt3\\)",
+        "\\(3\\sqrt3\\)",
+        "\\(\\sqrt{39}\\)",
+        "\\(9\\sqrt3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-bieu-thuc-can"
+        ],
+        "type": "cong-can"
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(\\sqrt{12}=2\\sqrt3,\\ \\sqrt{27}=3\\sqrt3\\), nên tổng là \\(5\\sqrt3\\)."
+    },
+    {
+      "id": "REV25V1_013",
+      "question": "Trục căn thức ở mẫu: \\(\\dfrac{3}{\\sqrt3}\\) bằng:",
+      "options": [
+        "\\(\\sqrt3\\)",
+        "\\(3\\sqrt3\\)",
+        "\\(1/\\sqrt3\\)",
+        "\\(3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-bieu-thuc-can"
+        ],
+        "type": "truc-can"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Nhân cả tử và mẫu với \\(\\sqrt3\\): \\(3\\sqrt3/3=\\sqrt3\\)."
+    },
+    {
+      "id": "REV25V1_014",
+      "question": "Điều kiện để \\(\\sqrt{x-2}\\) xác định là:",
+      "options": [
+        "\\(x\\ge2\\)",
+        "\\(x>2\\)",
+        "\\(x\\ne2\\)",
+        "\\(x\\le2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-bieu-thuc-can"
+        ],
+        "type": "dkxd-can"
+      },
+      "difficulty": "basic",
+      "explanation": "Biểu thức dưới căn bậc hai phải không âm: \\(x-2\\ge0\\)."
+    },
+    {
+      "id": "REV25V1_015",
+      "question": "Điều kiện để \\(\\dfrac1{\\sqrt{x+1}}\\) xác định là:",
+      "options": [
+        "\\(x>-1\\)",
+        "\\(x\\ge-1\\)",
+        "\\(x\\ne-1\\)",
+        "\\(x<-1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-bieu-thuc-can"
+        ],
+        "type": "dkxd-can-mau"
+      },
+      "difficulty": "advanced",
+      "explanation": "Mẫu \\(\\sqrt{x+1}\\) vừa phải xác định vừa khác 0, nên \\(x+1>0\\)."
+    },
+    {
+      "id": "REV25V1_016",
+      "question": "Tính \\((\\sqrt5-2)(\\sqrt5+2)\\).",
+      "options": [
+        "1",
+        "9",
+        "\\(\\sqrt5\\)",
+        "-1"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-bieu-thuc-can"
+        ],
+        "type": "hang-dang-thuc-can"
+      },
+      "difficulty": "basic",
+      "explanation": "Dùng hằng đẳng thức hiệu hai bình phương: \\(5-4=1\\)."
+    },
+    {
+      "id": "REV25V1_017",
+      "question": "Với \\(x>0, x\\ne1\\), rút gọn \\(\\dfrac{\\sqrt{x}-1}{x-1}\\).",
+      "options": [
+        "\\(\\dfrac1{\\sqrt{x}+1}\\)",
+        "\\(\\sqrt{x}+1\\)",
+        "\\(\\dfrac1{x+1}\\)",
+        "1"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-bieu-thuc-can"
+        ],
+        "type": "rut-gon-bieu-thuc"
+      },
+      "difficulty": "advanced",
+      "explanation": "Vì \\(x-1=(\\sqrt{x}-1)(\\sqrt{x}+1)\\), rút gọn được \\(1/(\\sqrt{x}+1)\\)."
+    },
+    {
+      "id": "REV25V1_018",
+      "question": "Với \\(a<0\\), \\(\\sqrt{9a^2}\\) bằng:",
+      "options": [
+        "\\(-3a\\)",
+        "\\(3a\\)",
+        "\\(9a\\)",
+        "\\(-9a\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-bieu-thuc-can"
+        ],
+        "type": "can-binh-phuong"
+      },
+      "difficulty": "advanced",
+      "explanation": "\\(\\sqrt{9a^2}=3|a|=-3a\\) vì \\(a<0\\)."
+    },
+    {
+      "id": "REV25V1_019",
+      "question": "So sánh \\(\\sqrt7\\) và \\(2{,}6\\).",
+      "options": [
+        "\\(\\sqrt7>2{,}6\\)",
+        "\\(\\sqrt7<2{,}6\\)",
+        "Bằng nhau",
+        "Không so sánh được"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-bieu-thuc-can"
+        ],
+        "type": "so-sanh-can"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Vì \\(2{,}6^2=6{,}76<7\\), nên \\(2{,}6<\\sqrt7\\)."
+    },
+    {
+      "id": "REV25V1_020",
+      "question": "Giải \\(\\sqrt{x+1}=3\\).",
+      "options": [
+        "\\(x=8\\)",
+        "\\(x=2\\)",
+        "\\(x=10\\)",
+        "\\(x=9\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-bieu-thuc-can"
+        ],
+        "type": "phuong-trinh-can"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Bình phương hai vế: \\(x+1=9\\), nên \\(x=8\\)."
+    },
+    {
+      "id": "REV25V1_021",
+      "question": "Giải \\(3x-5=10\\).",
+      "options": [
+        "\\(x=5\\)",
+        "\\(x=3\\)",
+        "\\(x=15\\)",
+        "\\(x=-5\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-phuong-trinh"
+        ],
+        "type": "pt-bac-nhat"
+      },
+      "difficulty": "basic",
+      "explanation": "Chuyển vế được \\(3x=15\\), nên \\(x=5\\)."
+    },
+    {
+      "id": "REV25V1_022",
+      "question": "Nghiệm của \\((x-1)(x+4)=0\\) là:",
+      "options": [
+        "\\(x=1\\) hoặc \\(x=-4\\)",
+        "\\(x=1\\)",
+        "\\(x=-4\\)",
+        "\\(x=4\\) hoặc \\(x=-1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-phuong-trinh"
+        ],
+        "type": "pt-tich"
+      },
+      "difficulty": "basic",
+      "explanation": "Tích bằng 0 khi ít nhất một thừa số bằng 0."
+    },
+    {
+      "id": "REV25V1_023",
+      "question": "Giải \\(x^2-5x+6=0\\).",
+      "options": [
+        "\\(x=2,3\\)",
+        "\\(x=-2,-3\\)",
+        "\\(x=1,6\\)",
+        "Vô nghiệm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-phuong-trinh"
+        ],
+        "type": "pt-bac-hai"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Phân tích \\(x^2-5x+6=(x-2)(x-3)\\)."
+    },
+    {
+      "id": "REV25V1_024",
+      "question": "Giải \\(\\dfrac{x}{x-2}=3\\).",
+      "options": [
+        "\\(x=3\\)",
+        "\\(x=6\\)",
+        "\\(x=2\\)",
+        "Vô nghiệm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-phuong-trinh"
+        ],
+        "type": "pt-phan-thuc"
+      },
+      "difficulty": "advanced",
+      "explanation": "ĐK \\(x\\ne2\\). Ta có \\(x=3x-6\\Rightarrow x=3\\), thỏa điều kiện."
+    },
+    {
+      "id": "REV25V1_025",
+      "question": "Phương trình \\(\\dfrac{x+1}{x-1}=1\\) có:",
+      "options": [
+        "Vô nghiệm",
+        "Nghiệm \\(x=0\\)",
+        "Nghiệm \\(x=1\\)",
+        "Mọi \\(x\\ne1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-phuong-trinh"
+        ],
+        "type": "pt-phan-thuc"
+      },
+      "difficulty": "advanced",
+      "explanation": "ĐK \\(x\\ne1\\). Nhân chéo cho \\(x+1=x-1\\), mâu thuẫn."
+    },
+    {
+      "id": "REV25V1_026",
+      "question": "Giải bất phương trình \\(2x-3>5\\).",
+      "options": [
+        "\\(x>4\\)",
+        "\\(x<4\\)",
+        "\\(x\\ge4\\)",
+        "\\(x>1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-phuong-trinh"
+        ],
+        "type": "bpt-bac-nhat"
+      },
+      "difficulty": "basic",
+      "explanation": "\\(2x>8\\Rightarrow x>4\\)."
+    },
+    {
+      "id": "REV25V1_027",
+      "question": "Giải \\(-3x\\le6\\).",
+      "options": [
+        "\\(x\\ge-2\\)",
+        "\\(x\\le-2\\)",
+        "\\(x\\ge2\\)",
+        "\\(x\\le2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-phuong-trinh"
+        ],
+        "type": "bpt-doi-chieu"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Chia hai vế cho số âm -3 phải đổi chiều bất phương trình."
+    },
+    {
+      "id": "REV25V1_028",
+      "question": "Giải \\(x^2=16\\).",
+      "options": [
+        "\\(x=\\pm4\\)",
+        "\\(x=4\\)",
+        "\\(x=-4\\)",
+        "\\(x=8\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-phuong-trinh"
+        ],
+        "type": "pt-bac-hai"
+      },
+      "difficulty": "basic",
+      "explanation": "Hai số 4 và -4 đều có bình phương bằng 16."
+    },
+    {
+      "id": "REV25V1_029",
+      "question": "Trong tập số thực, \\(x^2+1=0\\) có:",
+      "options": [
+        "Vô nghiệm",
+        "Một nghiệm \\(x=-1\\)",
+        "Hai nghiệm \\(\\pm1\\)",
+        "Một nghiệm \\(x=0\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-phuong-trinh"
+        ],
+        "type": "kiem-tra-nghiem"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Vì \\(x^2\\ge0\\), nên \\(x^2+1>0\\) với mọi số thực."
+    },
+    {
+      "id": "REV25V1_030",
+      "question": "Phương trình \\((m-2)x=4\\) có nghiệm duy nhất khi:",
+      "options": [
+        "\\(m\\ne2\\)",
+        "\\(m=2\\)",
+        "\\(m>2\\)",
+        "\\(m<2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-phuong-trinh"
+        ],
+        "type": "tham-so"
+      },
+      "difficulty": "advanced",
+      "explanation": "Hệ số của \\(x\\) phải khác 0, tức \\(m-2\\ne0\\)."
+    },
+    {
+      "id": "REV25V1_031",
+      "question": "Giải hệ \\(x+y=7,\\ x-y=1\\).",
+      "options": [
+        "\\((4,3)\\)",
+        "\\((3,4)\\)",
+        "\\((7,1)\\)",
+        "\\((2,5)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-he"
+        ],
+        "type": "giai-he"
+      },
+      "difficulty": "basic",
+      "explanation": "Cộng hai phương trình: \\(2x=8\\Rightarrow x=4\\), rồi \\(y=3\\)."
+    },
+    {
+      "id": "REV25V1_032",
+      "question": "Giải hệ \\(2x+y=7,\\ x-y=2\\).",
+      "options": [
+        "\\((3,1)\\)",
+        "\\((2,3)\\)",
+        "\\((1,5)\\)",
+        "\\((4,-1)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-he"
+        ],
+        "type": "giai-he"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Cộng hai phương trình được \\(3x=9\\), nên \\(x=3,y=1\\)."
+    },
+    {
+      "id": "REV25V1_033",
+      "question": "Giải hệ \\(x+2y=8,\\ 3x-y=3\\).",
+      "options": [
+        "\\((2,3)\\)",
+        "\\((3,2)\\)",
+        "\\((1,4)\\)",
+        "\\((4,2)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-he"
+        ],
+        "type": "giai-he-the"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Từ phương trình hai: \\(y=3x-3\\). Thế vào phương trình một được \\(x=2,y=3\\)."
+    },
+    {
+      "id": "REV25V1_034",
+      "question": "Hệ \\(x+y=5,\\ 2x+2y=10\\) có:",
+      "options": [
+        "Vô số nghiệm",
+        "Một nghiệm",
+        "Vô nghiệm",
+        "Đúng hai nghiệm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-he"
+        ],
+        "type": "so-nghiem-he"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai phương trình tương đương nên biểu diễn cùng một đường thẳng."
+    },
+    {
+      "id": "REV25V1_035",
+      "question": "Hệ \\(x+y=5,\\ x+y=7\\) có:",
+      "options": [
+        "Vô nghiệm",
+        "Một nghiệm",
+        "Vô số nghiệm",
+        "Hai nghiệm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-he"
+        ],
+        "type": "so-nghiem-he"
+      },
+      "difficulty": "basic",
+      "explanation": "Cùng vế trái nhưng hai hằng số khác nhau nên mâu thuẫn."
+    },
+    {
+      "id": "REV25V1_036",
+      "question": "Rạp bán 20 vé gồm vé 50 nghìn và 30 nghìn, thu 780 nghìn. Số vé 50 nghìn là:",
+      "options": [
+        "9",
+        "11",
+        "10",
+        "12"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-he"
+        ],
+        "type": "bai-toan-he"
+      },
+      "difficulty": "advanced",
+      "explanation": "Gọi x là số vé 50 nghìn: \\(50x+30(20-x)=780\\Rightarrow x=9\\)."
+    },
+    {
+      "id": "REV25V1_037",
+      "question": "Tổng tuổi hai anh em là 34, anh hơn em 6 tuổi. Tuổi anh là:",
+      "options": [
+        "20",
+        "14",
+        "17",
+        "28"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-he"
+        ],
+        "type": "bai-toan-he"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Giải hệ \\(x+y=34, x-y=6\\) được \\(x=20,y=14\\)."
+    },
+    {
+      "id": "REV25V1_038",
+      "question": "Hệ \\(x+y=2,\\ x+my=3\\) có nghiệm duy nhất khi:",
+      "options": [
+        "\\(m\\ne1\\)",
+        "\\(m=1\\)",
+        "\\(m=0\\)",
+        "Mọi \\(m\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-he"
+        ],
+        "type": "tham-so-he"
+      },
+      "difficulty": "advanced",
+      "explanation": "Hai phương trình có hệ số không tỉ lệ khi \\(m\\ne1\\)."
+    },
+    {
+      "id": "REV25V1_039",
+      "question": "Cặp \\((2,1)\\) có là nghiệm của hệ \\(2x+y=5,\\ x-y=1\\) không?",
+      "options": [
+        "Có",
+        "Không, sai phương trình thứ nhất",
+        "Không, sai phương trình thứ hai",
+        "Không thể kiểm tra"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-he"
+        ],
+        "type": "kiem-tra-nghiem-he"
+      },
+      "difficulty": "basic",
+      "explanation": "Thế \\((2,1)\\): cả hai phương trình đều đúng."
+    },
+    {
+      "id": "REV25V1_040",
+      "question": "Với hệ \\(2x+3y=7,\\ -2x+y=1\\), phương pháp thuận tiện nhất để bắt đầu là:",
+      "options": [
+        "Cộng hai phương trình để khử x",
+        "Thế x từ phương trình đầu ngay",
+        "Bình phương hai phương trình",
+        "Dùng Viète"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-he"
+        ],
+        "type": "chon-phuong-phap"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai hệ số của x đối nhau nên phép cộng khử x ngay."
+    },
+    {
+      "id": "REV25V1_041",
+      "question": "Với \\(y=2x-3\\), khi \\(x=4\\) thì \\(y\\) bằng:",
+      "options": [
+        "5",
+        "8",
+        "11",
+        "-5"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-ham-so"
+        ],
+        "type": "tinh-gia-tri-ham"
+      },
+      "difficulty": "basic",
+      "explanation": "Thay \\(x=4\\): \\(y=8-3=5\\)."
+    },
+    {
+      "id": "REV25V1_042",
+      "question": "Điểm \\((2,5)\\) có thuộc đường thẳng \\(y=2x+1\\) không?",
+      "options": [
+        "Có",
+        "Không",
+        "Chỉ khi x>0",
+        "Không đủ dữ kiện"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-ham-so"
+        ],
+        "type": "diem-thuoc-do-thi"
+      },
+      "difficulty": "basic",
+      "explanation": "Thay \\(x=2\\) được \\(y=5\\), đúng tung độ của điểm."
+    },
+    {
+      "id": "REV25V1_043",
+      "question": "Hệ số góc của đường thẳng \\(y=-3x+2\\) là:",
+      "options": [
+        "-3",
+        "2",
+        "3",
+        "-2"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-ham-so"
+        ],
+        "type": "he-so-goc"
+      },
+      "difficulty": "basic",
+      "explanation": "Trong \\(y=ax+b\\), hệ số góc là a."
+    },
+    {
+      "id": "REV25V1_044",
+      "question": "Đường thẳng nào song song với \\(y=2x+1\\)?",
+      "options": [
+        "\\(y=2x-4\\)",
+        "\\(y=-2x+1\\)",
+        "\\(y=x+2\\)",
+        "\\(y=4x+2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-ham-so"
+        ],
+        "type": "vi-tri-duong-thang"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai đường thẳng song song có cùng hệ số góc và tung độ gốc khác nhau."
+    },
+    {
+      "id": "REV25V1_045",
+      "question": "Giao điểm của \\(y=x+1\\) và \\(y=-x+5\\) là:",
+      "options": [
+        "\\((2,3)\\)",
+        "\\((3,2)\\)",
+        "\\((1,4)\\)",
+        "\\((2,4)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-ham-so"
+        ],
+        "type": "giao-diem"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Giải \\(x+1=-x+5\\Rightarrow x=2,y=3\\)."
+    },
+    {
+      "id": "REV25V1_046",
+      "question": "Đường thẳng đi qua \\((0,-2)\\) và \\((1,1)\\) có hệ số góc:",
+      "options": [
+        "3",
+        "-3",
+        "1",
+        "2"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-ham-so"
+        ],
+        "type": "he-so-goc"
+      },
+      "difficulty": "advanced",
+      "explanation": "\\(a=(1-(-2))/(1-0)=3\\)."
+    },
+    {
+      "id": "REV25V1_047",
+      "question": "Hàm số \\(y=-2x+4\\) là:",
+      "options": [
+        "Nghịch biến trên R",
+        "Đồng biến trên R",
+        "Hằng số",
+        "Không xác định"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-ham-so"
+        ],
+        "type": "dong-nghich-bien"
+      },
+      "difficulty": "basic",
+      "explanation": "Hệ số góc -2<0 nên hàm bậc nhất nghịch biến."
+    },
+    {
+      "id": "REV25V1_048",
+      "question": "Với \\(y=x^2\\), khi \\(x=-3\\) thì \\(y=\\)",
+      "options": [
+        "9",
+        "-9",
+        "6",
+        "3"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-ham-so"
+        ],
+        "type": "parabol"
+      },
+      "difficulty": "basic",
+      "explanation": "\\((-3)^2=9\\)."
+    },
+    {
+      "id": "REV25V1_049",
+      "question": "Điểm nào thuộc parabol \\(y=x^2\\)?",
+      "options": [
+        "\\((2,4)\\)",
+        "\\((2,2)\\)",
+        "\\((-2,-4)\\)",
+        "\\((3,6)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-ham-so"
+        ],
+        "type": "diem-thuoc-parabol"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Với x=2, ta có y=4."
+    },
+    {
+      "id": "REV25V1_050",
+      "question": "Giao điểm của \\(y=x^2\\) và \\(y=4\\) có hoành độ:",
+      "options": [
+        "\\(x=\\pm2\\)",
+        "\\(x=2\\)",
+        "\\(x=4\\)",
+        "\\(x=\\pm4\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-ham-so"
+        ],
+        "type": "giao-diem-parabol"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Giải \\(x^2=4\\) được \\(x=\\pm2\\)."
+    },
+    {
+      "id": "REV25V1_051",
+      "question": "Tam giác vuông có hai cạnh góc vuông 6 và 8. Cạnh huyền bằng:",
+      "options": [
+        "10",
+        "14",
+        "7",
+        "12"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-hinh-hoc"
+        ],
+        "type": "pythagore"
+      },
+      "difficulty": "basic",
+      "explanation": "Theo Pythagore: \\(c=\\sqrt{6^2+8^2}=10\\)."
+    },
+    {
+      "id": "REV25V1_052",
+      "question": "Hai tam giác đồng dạng theo tỉ số 2. Nếu cạnh tương ứng của tam giác nhỏ dài 5 cm thì cạnh của tam giác lớn dài:",
+      "options": [
+        "10 cm",
+        "7 cm",
+        "2,5 cm",
+        "25 cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-hinh-hoc"
+        ],
+        "type": "dong-dang"
+      },
+      "difficulty": "basic",
+      "explanation": "Độ dài các cạnh tương ứng tỉ lệ theo tỉ số đồng dạng."
+    },
+    {
+      "id": "REV25V1_053",
+      "question": "Trong \\(\\triangle ABC\\), \\(DE\\parallel BC\\), \\(D\\in AB,E\\in AC\\). Biết \\(AD/AB=2/3\\), \\(AC=12\\). Khi đó \\(AE=\\)",
+      "options": [
+        "8",
+        "6",
+        "9",
+        "18"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-hinh-hoc"
+        ],
+        "type": "thales"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Theo Thales, \\(AE/AC=AD/AB=2/3\\), nên \\(AE=8\\)."
+    },
+    {
+      "id": "REV25V1_054",
+      "question": "Góc ở tâm chắn một cung bằng \\(100^\\circ\\). Góc nội tiếp cùng chắn cung đó bằng:",
+      "options": [
+        "\\(50^\\circ\\)",
+        "\\(100^\\circ\\)",
+        "\\(200^\\circ\\)",
+        "\\(80^\\circ\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-hinh-hoc"
+        ],
+        "type": "goc-noi-tiep"
+      },
+      "difficulty": "basic",
+      "explanation": "Góc nội tiếp bằng nửa góc ở tâm cùng chắn một cung."
+    },
+    {
+      "id": "REV25V1_055",
+      "question": "Nếu PT là tiếp tuyến của đường tròn tâm O tại T thì:",
+      "options": [
+        "\\(OT\\perp PT\\)",
+        "\\(OT\\parallel PT\\)",
+        "\\(OT=PT\\)",
+        "O,T,P thẳng hàng"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-hinh-hoc"
+        ],
+        "type": "tiep-tuyen"
+      },
+      "difficulty": "basic",
+      "explanation": "Bán kính đi qua tiếp điểm vuông góc với tiếp tuyến."
+    },
+    {
+      "id": "REV25V1_056",
+      "question": "Tứ giác nội tiếp có hai góc đối diện lần lượt là \\(110^\\circ\\) và:",
+      "options": [
+        "\\(70^\\circ\\)",
+        "\\(110^\\circ\\)",
+        "\\(90^\\circ\\)",
+        "\\(55^\\circ\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-hinh-hoc"
+        ],
+        "type": "tu-giac-noi-tiep"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai góc đối của tứ giác nội tiếp bù nhau."
+    },
+    {
+      "id": "REV25V1_057",
+      "question": "Từ P ngoài đường tròn, PT là tiếp tuyến, PAB là cát tuyến. Biết PA=4, PB=9. PT bằng:",
+      "options": [
+        "6",
+        "13",
+        "\\(\\sqrt{13}\\)",
+        "36"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-hinh-hoc"
+        ],
+        "type": "tiep-tuyen-cat-tuyen"
+      },
+      "difficulty": "advanced",
+      "explanation": "Định lý tiếp tuyến–cát tuyến: \\(PT^2=PA\\cdot PB=36\\)."
+    },
+    {
+      "id": "REV25V1_058",
+      "question": "Trong tam giác vuông, đường cao từ góc vuông chia cạnh huyền thành hai đoạn 4 và 9. Độ dài đường cao là:",
+      "options": [
+        "6",
+        "13",
+        "\\(\\sqrt{13}\\)",
+        "5"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-hinh-hoc"
+        ],
+        "type": "he-thuc-luong"
+      },
+      "difficulty": "advanced",
+      "explanation": "Hệ thức đường cao: \\(h^2=4\\cdot9=36\\), nên h=6."
+    },
+    {
+      "id": "REV25V1_059",
+      "question": "Trong tam giác vuông, \\(\\tan\\alpha=3/4\\). Nếu cạnh kề góc \\(\\alpha\\) dài 8 thì cạnh đối dài:",
+      "options": [
+        "6",
+        "12",
+        "\\(32/3\\)",
+        "4"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-hinh-hoc"
+        ],
+        "type": "luong-giac"
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(\\tan\\alpha=đối/kề=3/4\\), nên cạnh đối = 8·3/4=6."
+    },
+    {
+      "id": "REV25V1_060",
+      "question": "Từ điểm P ngoài đường tròn kẻ hai tiếp tuyến PA, PB. Quan hệ luôn đúng là:",
+      "options": [
+        "PA=PB",
+        "PA⊥PB",
+        "AB là đường kính",
+        "OP=PA"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-hinh-hoc"
+        ],
+        "type": "hai-tiep-tuyen"
+      },
+      "difficulty": "basic",
+      "explanation": "Hai tiếp tuyến kẻ từ cùng một điểm ngoài đường tròn có độ dài bằng nhau."
+    },
+    {
+      "id": "REV25V1_061",
+      "question": "Số trung bình của 6, 7, 8, 9, 10 là:",
+      "options": [
+        "8",
+        "7",
+        "9",
+        "40"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-thong-ke"
+        ],
+        "type": "trung-binh"
+      },
+      "difficulty": "basic",
+      "explanation": "Tổng 40 chia 5 bằng 8."
+    },
+    {
+      "id": "REV25V1_062",
+      "question": "Trung vị của dãy đã sắp xếp 2, 4, 7, 9, 11, 13 là:",
+      "options": [
+        "8",
+        "7",
+        "9",
+        "7,5"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-thong-ke"
+        ],
+        "type": "trung-vi"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Có 6 số nên trung vị là trung bình của số thứ 3 và 4: (7+9)/2=8."
+    },
+    {
+      "id": "REV25V1_063",
+      "question": "Mốt của 4, 5, 5, 6, 6, 6, 7 là:",
+      "options": [
+        "6",
+        "5",
+        "7",
+        "Không có mốt"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-thong-ke"
+        ],
+        "type": "mot"
+      },
+      "difficulty": "basic",
+      "explanation": "6 xuất hiện 3 lần, nhiều nhất."
+    },
+    {
+      "id": "REV25V1_064",
+      "question": "Khoảng biến thiên của 12, 17, 15, 21 là:",
+      "options": [
+        "9",
+        "6",
+        "21",
+        "12"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-thong-ke"
+        ],
+        "type": "khoang-bien-thien"
+      },
+      "difficulty": "basic",
+      "explanation": "R=max-min=21-12=9."
+    },
+    {
+      "id": "REV25V1_065",
+      "question": "Bảng giá trị 6,7,8 có tần số 2,3,5. Số trung bình là:",
+      "options": [
+        "7,3",
+        "7",
+        "7,5",
+        "8"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-thong-ke"
+        ],
+        "type": "trung-binh-tan-so"
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\((6·2+7·3+8·5)/10=73/10=7,3\\)."
+    },
+    {
+      "id": "REV25V1_066",
+      "question": "Dữ liệu 7,8,8,9,30 có một ngoại lai lớn. Đại lượng phù hợp hơn để mô tả mức điển hình là:",
+      "options": [
+        "Trung vị",
+        "Trung bình",
+        "Khoảng biến thiên",
+        "Tổng"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-thong-ke"
+        ],
+        "type": "ngoai-lai"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trung vị ít bị kéo lệch bởi giá trị 30 hơn trung bình."
+    },
+    {
+      "id": "REV25V1_074",
+      "question": "Tung đồng xu cân đối 3 lần. Xác suất có đúng 2 lần ngửa là:",
+      "options": [
+        "3/8",
+        "1/8",
+        "1/2",
+        "5/8"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-xac-suat"
+        ],
+        "type": "dong-xu-nhieu-lan"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Có 3 kết quả thuận lợi NNS, NSN, SNN trong 8 kết quả."
+    },
+    {
+      "id": "REV25V1_075",
+      "question": "Rút ngẫu nhiên một thẻ ghi số từ 1 đến 10. Xác suất số chia hết cho 3 là:",
+      "options": [
+        "3/10",
+        "1/3",
+        "2/5",
+        "1/10"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-xac-suat"
+        ],
+        "type": "xac-suat-co-dien"
+      },
+      "difficulty": "basic",
+      "explanation": "Các số thuận lợi là 3,6,9: có 3 trong 10 thẻ."
+    },
+    {
+      "id": "REV25V1_076",
+      "question": "Nếu \\(P(A)=0{,}35\\) thì xác suất biến cố đối là:",
+      "options": [
+        "0,65",
+        "0,35",
+        "1,35",
+        "0,75"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-xac-suat"
+        ],
+        "type": "bien-co-doi"
+      },
+      "difficulty": "basic",
+      "explanation": "\\(P(\\overline A)=1-P(A)=0,65\\)."
+    },
+    {
+      "id": "REV25V1_077",
+      "question": "Hộp có 4 thẻ đỏ, 6 thẻ xanh. Rút hai lần có hoàn lại. Xác suất cả hai lần đỏ là:",
+      "options": [
+        "4/25",
+        "2/15",
+        "2/5",
+        "8/25"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-xac-suat"
+        ],
+        "type": "co-hoan-lai"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Mỗi lần xác suất đỏ 4/10, nên tích là 16/100=4/25."
+    },
+    {
+      "id": "REV25V1_078",
+      "question": "Cùng hộp 4 đỏ, 6 xanh nhưng rút hai lần không hoàn lại. Xác suất cả hai lần đỏ là:",
+      "options": [
+        "2/15",
+        "4/25",
+        "1/5",
+        "3/10"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-xac-suat"
+        ],
+        "type": "khong-hoan-lai"
+      },
+      "difficulty": "advanced",
+      "explanation": "\\((4/10)(3/9)=12/90=2/15\\)."
+    },
+    {
+      "id": "REV25V1_079",
+      "question": "Tung đồng xu rồi gieo xúc xắc, độc lập. Xác suất đồng xu ngửa và xúc xắc ra số lớn hơn 4 là:",
+      "options": [
+        "1/6",
+        "1/3",
+        "1/4",
+        "2/3"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-xac-suat"
+        ],
+        "type": "nhieu-buoc"
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\((1/2)(2/6)=1/6\\)."
+    },
+    {
+      "id": "REV25V1_080",
+      "question": "Một học sinh tính được xác suất bằng 1,2. Kết luận đúng là:",
+      "options": [
+        "Chắc chắn sai vì xác suất phải thuộc [0,1]",
+        "Có thể đúng nếu nhiều bước",
+        "Đúng nếu có hoàn lại",
+        "Chỉ sai khi gieo xúc xắc"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-xac-suat"
+        ],
+        "type": "kiem-tra-xac-suat"
+      },
+      "difficulty": "basic",
+      "explanation": "Mọi xác suất đều nằm từ 0 đến 1."
+    },
+    {
+      "id": "REV25V1_081",
+      "question": "Một xe đi 150 km với vận tốc 50 km/h. Thời gian đi là:",
+      "options": [
+        "3 giờ",
+        "2 giờ",
+        "7,5 giờ",
+        "100 phút"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-mo-hinh-hoa"
+        ],
+        "type": "chuyen-dong"
+      },
+      "difficulty": "basic",
+      "explanation": "\\(t=S/v=150/50=3\\) giờ."
+    },
+    {
+      "id": "REV25V1_082",
+      "question": "Sản phẩm giá 800.000 đồng giảm 15%. Giá phải trả là:",
+      "options": [
+        "680.000 đồng",
+        "120.000 đồng",
+        "920.000 đồng",
+        "700.000 đồng"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-mo-hinh-hoa"
+        ],
+        "type": "phan-tram"
+      },
+      "difficulty": "basic",
+      "explanation": "Giá sau giảm = 800.000×0,85=680.000 đồng."
+    },
+    {
+      "id": "REV25V1_083",
+      "question": "Một giá tăng 10% rồi giảm 10% trên giá mới. Giá cuối bằng:",
+      "options": [
+        "99% giá ban đầu",
+        "100% giá ban đầu",
+        "90% giá ban đầu",
+        "101% giá ban đầu"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-mo-hinh-hoa"
+        ],
+        "type": "phan-tram-lien-tiep"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hệ số thay đổi là 1,1×0,9=0,99."
+    },
+    {
+      "id": "REV25V1_084",
+      "question": "A làm một mình 6 giờ, B làm một mình 4 giờ. Cùng làm với năng suất không đổi thì thời gian hoàn thành là:",
+      "options": [
+        "12/5 giờ",
+        "5 giờ",
+        "10 giờ",
+        "24/5 giờ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-mo-hinh-hoa"
+        ],
+        "type": "nang-suat"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Năng suất chung \\(1/6+1/4=5/12\\), thời gian là \\(12/5\\) giờ."
+    },
+    {
+      "id": "REV25V1_085",
+      "question": "Đi 120 km với vận tốc dự định x. Tăng thêm 10 km/h thì đến sớm 36 phút. Phương trình đúng là:",
+      "options": [
+        "\\(120/x-120/(x+10)=0{,}6\\)",
+        "\\(120/x+120/(x+10)=0{,}6\\)",
+        "\\(x/120-(x+10)/120=36\\)",
+        "\\(120(x+10)-120x=0{,}6\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-mo-hinh-hoa"
+        ],
+        "type": "lap-phuong-trinh"
+      },
+      "difficulty": "advanced",
+      "explanation": "36 phút = 0,6 giờ; hiệu hai thời gian bằng 0,6."
+    },
+    {
+      "id": "REV25V1_086",
+      "question": "Bán 120 vé: người lớn 80 nghìn, trẻ em 50 nghìn, thu 8,1 triệu. Nếu x,y là số vé hai loại, hệ đúng là:",
+      "options": [
+        "\\(x+y=120;\\ 80x+50y=8100\\)",
+        "\\(x-y=120;\\ 80x+50y=8100\\)",
+        "\\(x+y=8100;\\ 80x+50y=120\\)",
+        "\\(80x+50y=120\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-mo-hinh-hoa"
+        ],
+        "type": "lap-he"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Một phương trình cho tổng số vé, một phương trình cho tổng doanh thu theo đơn vị nghìn đồng."
+    },
+    {
+      "id": "REV25V1_087",
+      "question": "Từ điểm cách chân tháp 40 m, góc nâng 35°, mắt cao 1,6 m. Biểu thức chiều cao tháp là:",
+      "options": [
+        "\\(40\\tan35^\\circ+1{,}6\\)",
+        "\\(40\\sin35^\\circ\\)",
+        "\\(40/\\tan35^\\circ+1{,}6\\)",
+        "\\(40\\cos35^\\circ+1{,}6\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-mo-hinh-hoa"
+        ],
+        "type": "luong-giac-thuc-te"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Phần cao hơn tầm mắt là 40·tan35°, sau đó cộng chiều cao mắt."
+    },
+    {
+      "id": "REV25V1_088",
+      "question": "Phòng 6 m × 4 m, dự kiến hao hụt gạch 5%. Diện tích gạch tối thiểu cần mua là:",
+      "options": [
+        "25,2 m²",
+        "24 m²",
+        "29 m²",
+        "22,8 m²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-mo-hinh-hoa"
+        ],
+        "type": "hinh-hoc-do-luong"
+      },
+      "difficulty": "basic",
+      "explanation": "Diện tích sàn 24 m²; kể hao hụt: 24×1,05=25,2 m²."
+    },
+    {
+      "id": "REV25V1_089",
+      "question": "Có 300 sản phẩm. Tuần 1 bán 40%; tuần 2 bán 50% số còn lại. Số sản phẩm còn là:",
+      "options": [
+        "90",
+        "30",
+        "150",
+        "120"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-mo-hinh-hoa"
+        ],
+        "type": "phan-tram-thuc-te"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Sau tuần 1 còn 180; tuần 2 bán 90, nên còn 90."
+    },
+    {
+      "id": "REV25V1_090",
+      "question": "Nghiệm toán học của bài toán là -5 và 12, trong đó ẩn là số sản phẩm. Kết luận đúng là:",
+      "options": [
+        "Loại -5, nhận 12 sản phẩm",
+        "Nhận cả hai nghiệm",
+        "Chỉ nhận -5",
+        "Bài toán vô nghiệm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-mo-hinh-hoa"
+        ],
+        "type": "kiem-tra-ket-luan"
+      },
+      "difficulty": "basic",
+      "explanation": "Số sản phẩm không thể âm; chỉ nghiệm 12 phù hợp bối cảnh."
+    },
+    {
+      "id": "REV25V1_121",
+      "question": "Một biểu đồ quạt tròn cho một nhóm chiếm 25% tổng thể. Góc ở tâm của phần đó là:",
+      "options": [
+        "72°",
+        "90°",
+        "100°",
+        "120°"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-thong-ke"
+        ],
+        "type": "on-thi-quat-tron"
+      },
+      "difficulty": "basic",
+      "explanation": "25% × 360° = 90°.",
+      "diagram": {
+        "src": "../../statistics/21/21-bieu-do-quat-tron.svg",
+        "alt": "Biểu đồ quạt tròn gồm 40%, 30%, 20% và 10%",
+        "caption": "Toàn bộ hình tròn tương ứng 100% = 360°."
+      }
+    },
+    {
+      "id": "REV25V1_122",
+      "question": "Khi ghép nhóm theo [150;160), [160;170), giá trị 160 được xếp vào nhóm nào?",
+      "options": [
+        "[150;160)",
+        "[160;170)",
+        "Cả hai",
+        "Không nhóm nào"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-thong-ke"
+        ],
+        "type": "on-thi-ghep-nhom"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Khoảng [150;160) không chứa đầu mút phải 160; 160 thuộc [160;170).",
+      "diagram": {
+        "src": "../../statistics/21/21-du-lieu-ghep-nhom.svg",
+        "alt": "Dữ liệu chiều cao ghép nhóm theo các khoảng [140;150), [150;160), [160;170), [170;180)",
+        "caption": "Các khoảng dùng quy ước đầu mút trái đóng, đầu mút phải mở."
+      }
+    },
+    {
+      "id": "REV25V1_123",
+      "question": "Theo biểu đồ cột kép, lớp C tăng bao nhiêu đơn vị từ Kỳ 1 sang Kỳ 2?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-thong-ke"
+        ],
+        "type": "on-thi-cot-kep"
+      },
+      "difficulty": "basic",
+      "explanation": "Lớp C tăng từ 7 lên 8, nên tăng 1 đơn vị.",
+      "diagram": {
+        "src": "../../statistics/21/21-bieu-do-cot-kep.svg",
+        "alt": "Biểu đồ cột kép so sánh Kỳ 1 và Kỳ 2 của các lớp A, B, C",
+        "caption": "Đọc chú giải Kỳ 1/Kỳ 2 trước khi so sánh các cột."
+      }
+    },
+    {
+      "id": "REV25V1_124",
+      "question": "Giá trị đại diện theo trung điểm của nhóm [170;180) là:",
+      "options": [
+        "170",
+        "172,5",
+        "175",
+        "180"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-thong-ke"
+        ],
+        "type": "on-thi-ghep-nhom"
+      },
+      "difficulty": "intermediate",
+      "explanation": "(170 + 180)/2 = 175.",
+      "diagram": {
+        "src": "../../statistics/21/21-du-lieu-ghep-nhom.svg",
+        "alt": "Dữ liệu chiều cao ghép nhóm theo các khoảng [140;150), [150;160), [160;170), [170;180)",
+        "caption": "Các khoảng dùng quy ước đầu mút trái đóng, đầu mút phải mở."
+      }
+    },
+    {
+      "id": "REV25V1_125",
+      "question": "Một biến cố xảy ra 22 lần trong 80 lần thử. Xác suất thực nghiệm là:",
+      "options": [
+        "0,225",
+        "0,25",
+        "0,275",
+        "0,36"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-xac-suat"
+        ],
+        "type": "on-thi-xac-suat-thuc-nghiem"
+      },
+      "difficulty": "basic",
+      "explanation": "22/80 = 0,275."
+    },
+    {
+      "id": "REV25V1_126",
+      "question": "Trong ôn xác suất, phát biểu nào đúng?",
+      "options": [
+        "Xác suất thực nghiệm m/n luôn bằng xác suất lý thuyết",
+        "Xác suất thực nghiệm dựa trên số liệu quan sát; xác suất cổ điển n(A)/n(Ω) cần các kết quả đồng khả năng",
+        "Nếu m = 0 thì biến cố chắc chắn không thể",
+        "Chỉ xác suất thực nghiệm mới nằm trong [0;1]"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-xac-suat"
+        ],
+        "type": "on-thi-phan-biet-xac-suat"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai khái niệm có nguồn gốc khác nhau; mẫu hữu hạn không bắt buộc cho tần số tương đối đúng bằng xác suất lý thuyết."
+    },
+    {
+      "id": "REV25V1_127",
+      "question": "Tung đồng xu cân đối 200 lần được 104 lần ngửa. Nhận xét phù hợp nhất là:",
+      "options": [
+        "Xác suất thực nghiệm là 0,52; kết quả này không mâu thuẫn với xác suất lý thuyết 0,5",
+        "Xác suất lý thuyết đã đổi thành 0,52",
+        "Đồng xu chắc chắn không cân đối",
+        "Xác suất thực nghiệm phải đúng 0,5"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "25-tong-hop-on-thi-10",
+        "skill": [
+          "on-thi-xac-suat"
+        ],
+        "type": "on-thi-dien-giai-thuc-nghiem"
+      },
+      "difficulty": "advanced",
+      "explanation": "104/200 = 0,52. Tần số tương đối của một mẫu hữu hạn có thể lệch nhẹ so với 0,5."
+    }
+  ]
+}
