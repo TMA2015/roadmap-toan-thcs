@@ -7,8 +7,8 @@
   "evidence": [
     {
       "gate": "Independent Gemini architecture/pedagogy review",
-      "status": "PENDING",
-      "evidence": "Architecture packet GEO-ARCH-V1-GEMINI-REVIEW-001 exists; no architecture-specific result supplied. CĐ19–CĐ20 batch review PASS does not fulfill architecture review."
+      "status": "PASS",
+      "evidence": "User relayed architecture-specific Gemini packet GEO-ARCH-V1-GEMINI-REVIEW-001-RESULT: PASS, corrections [], unresolved_questions []. Source response preserved verbatim."
     },
     {
       "gate": "Core coverage exact-ID QA",
@@ -32,11 +32,11 @@
     }
   ],
   "blockers": [
-    "Architecture-specific independent Gemini review result",
     "Recorded geometry-topic desktop/mobile/iPad flow check"
   ],
   "decision": "Keep REVIEW_READY, frozen=false. Do not infer freeze from batch PASS or CI success.",
-  "next_step": "Obtain GEO-ARCH-V1-GEMINI-REVIEW-001-RESULT from published architecture bundle; record one topic device QA, then re-evaluate freeze gates.",
+  "next_step": "Record one migrated geometry-topic Learn→Practice→Readiness smoke test across desktop/mobile/iPad, re-evaluate freeze gates and update validator that currently requires REVIEW_READY/frozen=false before attempting freeze.",
   "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geometry-architecture-v1.json",
-  "ci_run": "https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/36101264164"
+  "ci_run": "https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/36101494893",
+  "review_result": "content-staging/reviews/GEO-ARCH-V1-GEMINI-REVIEW-001-RESULT.json"
 }
