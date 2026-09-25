@@ -45,6 +45,8 @@ jobs:
           node scripts/test-firebase-gemini-stage.js
           node --check docs/assets/javascripts/math-rich-text-v1.js
           node scripts/test-ai-rich-math-v1.js
+          node --check docs/assets/javascripts/floating-ai-tutor-v1.js
+          node scripts/test-floating-ai-tutor-v1.js
           node --check docs/assets/javascripts/written-self-check-v1.js
       - name: Validate existing learner workflows
         run: |
