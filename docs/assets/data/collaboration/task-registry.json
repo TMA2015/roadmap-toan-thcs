@@ -427,6 +427,16 @@
       "review_notes": "12 independent checked Core MCQs / 9 skill IDs; corrects duplicate-like drills, ambiguity of overall class quality in 012, chart data visibility; post-submit no hints/Tutor/soft gate. Original self-test preserved as supplement; 132 bank and 15 micro unchanged. CI / device QA separate.",
       "review_verdict": "ACCEPT_WITH_EDITORIAL_AND_ACADEMIC_FIXES",
       "integrated_artifact": "docs/assets/data/assessment/21-thong-ke-core-v1.json"
+    },
+    {
+      "id": "STAT22-MAP-001",
+      "title": "Audit CĐ22 skill-to-grade KNTT Core boundaries before Golden rollout",
+      "routing": "GEMINI_REVIEW+CHATGPT_SOURCE_QA",
+      "status": "READY",
+      "context_version": "1.0.46",
+      "packet": "docs/assets/data/collaboration/packets/STAT22-MAP-GEMINI-REVIEW-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/stat22-map-gemini-review-001.json",
+      "review_notes": "CĐ22 existing 120 items, no grade 6–9 PRIMARY map references; Grade 9 exclusion notes require cross-grade verification. Request item-level school-grade evidence before any KNTT Core Readiness or scored learning-card authoring."
     }
   ]
 }
