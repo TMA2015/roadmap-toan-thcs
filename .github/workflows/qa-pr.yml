@@ -42,6 +42,10 @@ jobs:
         run: |
           python check_svg_integrity.py
           python audit_practice_quality.py
+      - name: Validate navigation and library cards
+        run: |
+          node --check docs/assets/javascripts/sticky-nav-v1.js
+          node scripts/test-site-navigation-v1.js
       - name: Build strict static site
         run: mkdocs build --strict
       - name: Capture visual previews

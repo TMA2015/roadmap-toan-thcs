@@ -209,3 +209,47 @@ body{letter-spacing:-.008em}
 @media(max-width:35rem){
   .home-hero .home-art-mode{order:3;position:relative;z-index:1}
 }
+
+
+/* Stable desktop navigation: tabs are cloned into an independent sticky dock because Material may hide them after scroll. */
+.roadmap-nav-dock{position:fixed;top:2.4rem;left:0;right:0;z-index:9;display:none;background:#192f69;color:#fff;box-shadow:0 7px 16px rgba(14,28,66,.18);padding:.34rem max(1rem,calc((100vw - 88rem)/2));gap:.25rem}
+.roadmap-nav-dock a{display:inline-flex;align-items:center;min-height:1.8rem;padding:.2rem .7rem;color:#fff!important;font-weight:700;font-size:.67rem;text-decoration:none;border-radius:.35rem}
+.roadmap-nav-dock a:hover,.roadmap-nav-dock a:focus-visible{background:#405a9b;outline-offset:2px}
+.roadmap-nav-dock.is-visible{display:flex}
+@media(max-width:76.24rem){.roadmap-nav-dock{display:none!important}}
+/* Compact cards on the home page: summary first, expand description only on demand. */
+.home-reveal-card{display:block;min-height:0;padding:0;overflow:hidden}
+.home-reveal-card summary{list-style:none;cursor:pointer;display:flex;flex-direction:column;align-items:flex-start;min-height:9.5rem;gap:.4rem;padding:1rem;position:relative}
+.home-reveal-card summary::-webkit-details-marker{display:none}
+.home-reveal-card summary strong{padding-right:1.5rem;font-weight:850;line-height:1.27}
+.home-reveal-indicator{position:absolute;right:.7rem;top:.8rem;display:grid;place-items:center;width:1.35rem;height:1.35rem;border-radius:50%;background:var(--roadmap-soft);color:var(--roadmap-indigo);font-weight:850;transition:transform .18s ease}
+.home-reveal-card[open] .home-reveal-indicator{transform:rotate(45deg)}
+.home-reveal-card summary:focus-visible{outline:3px solid #557ce3;outline-offset:-4px}
+.home-reveal-body{padding:0 1rem 1rem;animation:home-reveal .22s ease}
+.home-reveal-body p{font-size:.68rem;line-height:1.55;color:var(--roadmap-muted);margin:0 0 .7rem}
+.home-reveal-body a{display:inline-flex;color:var(--roadmap-indigo)!important;font-size:.66rem;font-weight:850;border:1px solid var(--roadmap-line);background:var(--roadmap-soft);border-radius:.4rem;padding:.45rem .55rem}
+@keyframes home-reveal{from{opacity:.45;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+/* Knowledge library: real destinations preserved, but no wall of 25 bullet links. */
+.library-clusters{display:grid;gap:.7rem;margin:1.2rem 0 2rem}
+.library-cluster{background:var(--roadmap-surface);border:1px solid var(--roadmap-line);border-radius:.85rem;overflow:hidden;box-shadow:var(--roadmap-shadow)}
+.library-cluster>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:.75rem;padding:.9rem 1rem}
+.library-cluster>summary::-webkit-details-marker{display:none}
+.library-cluster>summary:focus-visible{outline:3px solid #557ce3;outline-offset:-3px}
+.library-cluster-icon{flex:none;display:grid;place-items:center;width:2.25rem;height:2.25rem;border-radius:.65rem;background:#e8edff;color:#334fc5;font-size:1.1rem;font-weight:900}
+.library-cluster:nth-child(2) .library-cluster-icon{background:#dcf5f4;color:#087c82}
+.library-cluster:nth-child(3) .library-cluster-icon{background:#f3eaff;color:#8153b8}
+.library-cluster:nth-child(4) .library-cluster-icon{background:#fff0da;color:#b66f19}
+.library-cluster-info{display:flex;flex:1;min-width:0;flex-direction:column;gap:.2rem}
+.library-cluster-info strong{font-size:.85rem;color:var(--roadmap-ink)}
+.library-cluster-info small{font-size:.65rem;color:var(--roadmap-muted);line-height:1.35}
+.library-cluster-counter{flex:none;font-size:.6rem;font-weight:750;color:var(--roadmap-indigo);background:var(--roadmap-soft);border-radius:2rem;padding:.25rem .55rem}
+.library-cluster-arrow{color:var(--roadmap-indigo);font-size:1.1rem;transition:transform .2s}
+.library-cluster[open] .library-cluster-arrow{transform:rotate(180deg)}
+.library-topic-grid{border-top:1px solid var(--roadmap-line);padding:.65rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem;background:var(--roadmap-soft)}
+.library-topic-tile{display:flex;align-items:center;gap:.55rem;min-height:2.5rem;border:1px solid var(--roadmap-line);background:var(--roadmap-surface);border-radius:.55rem;padding:.45rem .6rem;text-decoration:none!important;transition:border-color .16s,transform .16s}
+.library-topic-tile:hover{border-color:var(--roadmap-indigo);transform:translateY(-2px)}
+.library-topic-number{display:grid;place-items:center;flex:none;width:1.65rem;height:1.65rem;border-radius:.45rem;background:#e9efff;color:#3049b5;font-size:.6rem;font-weight:850}
+.library-topic-name{flex:1;min-width:0;font-size:.7rem;line-height:1.4;font-weight:700;color:var(--roadmap-ink)}
+.library-topic-link{color:var(--roadmap-indigo);font-weight:800}
+@media(max-width:49rem){.library-topic-grid{grid-template-columns:1fr}.library-cluster-counter{display:none}.home-reveal-card summary{min-height:7rem}}
+@media(prefers-reduced-motion:reduce){.home-reveal-body{animation:none}.home-reveal-indicator,.library-cluster-arrow,.library-topic-tile{transition:none}}
