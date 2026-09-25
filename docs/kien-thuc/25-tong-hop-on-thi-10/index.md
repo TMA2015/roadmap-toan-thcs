@@ -1,10 +1,26 @@
 # Chuyên đề 25 – Bản đồ tổng hợp & chiến lược ôn thi vào 10
 
-> **Trạng thái:** Đã kiểm định nội dung học thuật và chiến lược ôn tập; cấu trúc Roadmap chuẩn 11 mục.
+> **Trạng thái:** Bộ kiến thức và chiến lược hiện hữu được giữ lại; đề tự biên soạn và bài mẫu bổ sung đang chờ phản biện học thuật độc lập.
 >
 > **Lớp trọng tâm:** 9
 > **Mạch kiến thức:** Tổng hợp/Thi vào 10
 > **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
+---
+
+## Bắt đầu ôn thi đúng mục tiêu
+
+**CĐ25 gồm hai mạch riêng**: (A) giải Toán – kiểm tra học thuật; (B) kỹ năng ôn, làm và chữa đề. Đừng dùng điểm bài kỹ năng để kết luận đã vững Toán.
+
+<div class="topic25-entry-grid">
+  <a href="bai-toan-kinh-dien/" class="topic25-entry"><strong>🧠 7 bài toán kinh điển</strong><span>Học vì sao chọn công cụ, chứng minh và biến đổi từng bước.</span></a>
+  <a href="bai-tap/" class="topic25-entry"><strong>✍️ Luyện tập tách 2 ngân hàng</strong><span>80 câu học thuật · 40 câu kỹ năng; giữ nguyên 120 câu gốc.</span></a>
+  <a href="tu-kiem-tra/" class="topic25-entry"><strong>✅ Tự kiểm tra Toán học</strong><span>Bài học thuật 45–60 phút, 10 điểm, lời giải mở sau khi làm.</span></a>
+  <a href="de-thi-tong-hop-01/" class="topic25-entry"><strong>📝 Đề tổng hợp 120 phút</strong><span>5 bài tự luận đầy đủ, chấm theo từng ý; bản tự biên soạn, không phải đề chính thức.</span></a>
+  <a href="tu-kiem-tra-ky-nang/" class="topic25-entry"><strong>🧭 Kỹ năng làm và chữa đề</strong><span>Chiến lược thời gian, nhận diện lỗi, lập lịch ôn riêng.</span></a>
+</div>
+
+**Nguồn tham khảo định dạng đề thực tế:** [Sở GD&ĐT Hà Nội 2026–2027](https://www.hanoi.edu.vn/phong-quan-ly-thi-va-kdcl/ha-noi-cong-bo-de-thi-va-dap-an-cac-mon-toan-ngu-van-ngoai-ngu-khong-chuyen-ky/ctfull/552/16984) và [2025–2026](https://www.hanoi.edu.vn/phong-quan-ly-thi-va-kdcl/ha-noi-cong-bo-de-thi-va-dap-an-cac-mon-toan-ngu-van-ngoai-ngu-khong-chuyen-ky/ctmb/552/16329). Đề mẫu ở đây được biên soạn độc lập, không sao chép và không gắn nhãn đề chính thức.
 
 ---
 
@@ -501,49 +517,21 @@ Mức ưu tiên tổng thể của chuyên đề: **⭐⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
-**Learning Journey Entrance10:** 5 thẻ học, mỗi thẻ có kiến thức ngắn, ví dụ, lỗi thường gặp và 3 câu kiểm tra nhanh. Tất cả đều là luyện tập bổ trợ, **không khóa KNTT Core** và không thay thế bài tự luận.
+**Mạch A – Toán học:** [Luyện nhanh 80 câu được tách từ ngân hàng hiện hữu](bai-tap.md), sau đó học [7 bài mẫu kinh điển](bai-toan-kinh-dien.md), rồi làm [đề tự luận tổng hợp 120 phút](de-thi-tong-hop-01.md).
 
+**Mạch B – Kỹ năng làm đề:** 40 câu về nhận diện dạng, quản lý thời gian, phân loại và chữa lỗi; xem phần riêng trong [Luyện tập](bai-tap.md). Điểm kỹ năng không thay cho bằng chứng năng lực toán học.
 
-### Mức 1 – Nhận biết
-
-1. Liệt kê bốn mạch kiến thức lớn của Roadmap.
-2. Nêu ba giai đoạn ôn thi.
-3. Nêu ba nhóm lỗi sau khi làm đề.
-
-### Mức 2 – Thông hiểu
-
-4. Một học sinh hay sai dấu nhưng nhớ đúng kiến thức. Đây là loại lỗi nào? Cách sửa?
-5. Một học sinh yếu hình học tổng hợp và cấu trúc đề địa phương đặt trọng số cao cho phần này. Nên xếp vào nhóm ưu tiên nào?
-6. Vì sao không nên chỉ làm đề mà không chữa đề?
-
-### Mức 3 – Vận dụng
-
-7. Lập ma trận A–B–C–D cho 8 chuyên đề dựa trên kết quả cá nhân.
-8. Sau một đề thi thử, hãy phân loại 5 câu sai thành lỗi kiến thức, kỹ năng hoặc cẩu thả.
-9. Lập kế hoạch 7 ngày gồm ôn chuyên đề, luyện đề và chữa lỗi.
-
-### Mức 4 – Tổng hợp
-
-10. Chọn một đề thi hoàn chỉnh, bấm giờ, chấm điểm và tạo báo cáo gồm: điểm, thời gian, lỗi, chuyên đề yếu, hành động sửa.
-11. Sau 3 đề liên tiếp, so sánh các chỉ số và điều chỉnh kế hoạch tuần tiếp theo.
-12. Dựa vào đề minh họa địa phương, điều chỉnh lại ma trận ưu tiên cá nhân.
+**Lưu ý:** 80 câu hiện tại là ngân hàng trắc nghiệm luyện nhanh; đề hoàn chỉnh và bài chứng minh tự luận là những hoạt động **riêng**, không quy đổi một cách cơ học thành cùng một chỉ số thành thạo.
 
 ---
 
 ## ✅ 9. Tự kiểm tra
 
-Hãy tự trả lời không nhìn tài liệu:
+1. [Tự kiểm tra học thuật 45–60 phút, 10 điểm](tu-kiem-tra.md): bài đại số, phương trình, hình học, xác suất và mô hình hóa.
+2. [Đề số 01, 120 phút, 10 điểm](de-thi-tong-hop-01.md): một buổi mô phỏng trọn vẹn, chấm tự luận theo từng ý.
+3. [Bài kiểm tra kỹ năng làm đề](tu-kiem-tra-ky-nang.md): chỉ đánh giá phương pháp ôn và chữa đề, **không kết luận học sinh vững Toán**.
 
-1. Bốn mạch kiến thức lớn là gì?
-2. Ba giai đoạn ôn thi là gì?
-3. Sau mỗi đề cần phân loại những nhóm lỗi nào?
-4. Vì sao cần sổ lỗi sai?
-5. Nhóm A trong ma trận ưu tiên có đặc điểm gì?
-6. Tỉ lệ thời gian gợi ý có phải cố định không?
-7. Căn cứ nào nên dùng để điều chỉnh chiến lược theo địa phương?
-8. Sau khi xem lời giải câu sai, bước tiếp theo quan trọng nhất là gì?
-
-**Tiêu chí đạt:** đúng ít nhất `7/8` câu, có một ma trận ưu tiên cá nhân và hoàn thành ít nhất một chu trình `làm đề → chữa → làm lại → ghi lỗi`.
+Đáp án tự luận được giữ kín dưới mục mở thủ công; đây là cam kết tự học, không phải khóa kiểm tra có giám thị.
 
 ---
 
@@ -553,8 +541,11 @@ Hãy tự trả lời không nhìn tài liệu:
 - **→ Tiếp theo:** quay lại các chuyên đề được xếp nhóm ưu tiên A/B theo kết quả luyện đề.
 - **🏁 Kết thúc Roadmap:** dùng chuyên đề này như bảng điều khiển ôn tập.
 
-- **✏️ Luyện tập:** [Bài tập Chuyên đề 25](bai-tap.md)
-- **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 25](tu-kiem-tra.md)
+- **✏️ Luyện tập học thuật và chiến lược:** [Luyện tập Chuyên đề 25](bai-tap.md)
+- **✅ Tự kiểm tra học thuật:** [Bài tự kiểm tra](tu-kiem-tra.md)
+- **📘 Bài mẫu chứng minh/giải chi tiết:** [Bài toán kinh điển](bai-toan-kinh-dien.md)
+- **📝 Thi thử trọn đề:** [Đề số 01](de-thi-tong-hop-01.md)
+- **🧭 Tự kiểm tra kỹ năng:** [Bài riêng](tu-kiem-tra-ky-nang.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
 
@@ -570,5 +561,5 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Có sổ lỗi sai và quy trình chữa đề.
 - [ ] Biết phân loại lỗi kiến thức – kỹ năng – cẩu thả.
 - [ ] Biết điều chỉnh chiến lược theo cấu trúc đề địa phương.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai.
+- [ ] Hoàn thành bài tự kiểm tra **học thuật** (10 điểm) và chữa từng câu sai; điểm kỹ năng làm đề không tính thay thế.
 - [ ] Hoàn thành được một đề có bấm giờ và phân tích lại đầy đủ.

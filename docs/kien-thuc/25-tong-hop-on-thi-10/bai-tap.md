@@ -1,8 +1,14 @@
 # Bài tập – Chuyên đề 25: Tổng hợp & ôn thi vào 10
 
-> **Mục tiêu:** hệ thống hóa toàn bộ Roadmap, nhận diện nhanh dạng bài, lựa chọn chiến lược giải và rèn quy trình làm đề – chữa lỗi.
+> **Hai luồng độc lập:** (A) luyện Toán qua 80 câu học thuật; (B) 40 câu chiến lược học và chữa đề. Ngân hàng 120 câu gốc vẫn được lưu, không xóa dữ liệu làm bài cũ.
+>
+> **Bài học thuật tự luận có hướng dẫn:** [Bài toán kinh điển](bai-toan-kinh-dien.md) · **Đề đủ 120 phút:** [Đề tổng hợp số 01](de-thi-tong-hop-01.md) · **Tự kiểm tra 10 điểm:** [Bài học thuật](tu-kiem-tra.md).
 >
 > **Quy ước mã bài:** `25-Mx-yy`.
+
+## B. Bài tự luận bổ sung về nhận diện và kỹ năng làm đề
+
+Các câu M1–M4 dưới đây chủ yếu yêu cầu **nhận diện chuyên đề, kế hoạch ôn, phân bổ thời gian và chữa lỗi**. Chúng không phải đề thi học thuật trọn vẹn; dùng song song với ngân hàng Toán A và đề mô phỏng.
 
 # Mức 1 – Nhận biết
 
@@ -114,7 +120,7 @@ Một học sinh đạt điểm dao động 6,5 → 7,8 → 7,0 → 8,0. Hãy n�
 ### 25-M4-08
 Thiết kế “chu kỳ cải thiện” cho 2 tuần cuối: làm đề → chấm → phân loại lỗi → ôn đúng chuyên đề → làm lại → kiểm tra lại bằng đề mới.
 
-# Đáp án nhanh
+# Đáp án nhanh cho phần kỹ năng
 
 | Mã | Gợi ý đáp án |
 |---|---|
@@ -178,7 +184,7 @@ Biện pháp sửa không nên chỉ là “cẩn thận hơn”, mà dùng chec
 - [ ] đơn vị;
 - [ ] câu kết luận.
 
-# Theo dõi tiến độ
+# Theo dõi tiến độ kỹ năng (không thay điểm Toán)
 
 - [ ] M1 đạt ít nhất 6/8.
 - [ ] M2 đạt ít nhất 6/8.
@@ -191,5 +197,7 @@ Biện pháp sửa không nên chỉ là “cẩn thận hơn”, mà dùng chec
 
 - **← Bài học:** [Chuyên đề 25 – Tổng hợp & ôn thi vào 10](index.md)
 - **← Chuyên đề trước:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
-- **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 25](tu-kiem-tra.md)
+- **→ Tự kiểm tra học thuật:** [Tự kiểm tra Chuyên đề 25](tu-kiem-tra.md)
+- **→ Đề hoàn chỉnh:** [Đề số 01](de-thi-tong-hop-01.md)
+- **→ Tự kiểm tra kỹ năng:** [Kỹ năng làm đề](tu-kiem-tra-ky-nang.md)
 - **→ Blueprint:** [25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md)

@@ -59,13 +59,37 @@
     const manifest = BANKS[slug];
     if (!manifest) return;
 
+    const siteRoot = pathname.split(marker)[0] || "";
+    // CĐ25: keep academic problem-solving and exam strategy in separate, independent rooms.
+    if (slug === "25-tong-hop-on-thi-10") {
+      const article = document.querySelector(".md-content__inner");
+      if (!article) return;
+      if (!article.querySelector("[data-practice-bank-v2]")) {
+        const section = document.createElement("section");
+        section.className = "practice-auto-section topic25-practice-split";
+        section.innerHTML = `
+          <h2 id="luyen-toan-hoc">A. 🧮 Luyện Toán học theo mạch kiến thức</h2>
+          <p><strong>80 câu học thuật</strong> tách từ ngân hàng hiện hữu: căn thức/biểu thức, phương trình, hệ, hàm số, hình học, dữ liệu, xác suất, mô hình hóa. Luyện nhanh theo tag; bài tự luận và đề hoàn chỉnh nằm ở các trang riêng.</p>
+          <div data-practice-bank-v2="${siteRoot}/assets/data/practice/25-tong-hop-on-thi-10-academic-v1.manifest.json" data-session-size="10"></div>
+          <h2 id="ky-nang-lam-de">B. 🧭 Luyện kỹ năng làm đề</h2>
+          <p><strong>40 câu</strong> về nhận diện chuyên đề, phân bổ thời gian và chữa lỗi. Kết quả nhóm này không thay thế kết quả giải Toán độc lập.</p>
+          <div data-practice-bank-v2="${siteRoot}/assets/data/practice/25-tong-hop-on-thi-10-strategy-v1.manifest.json" data-session-size="10"></div>
+          <p><em>Tiến độ giữ nguyên trong trình duyệt theo ID câu hỏi gốc. Không tự đồng bộ giữa thiết bị.</em></p><hr>
+        `;
+        const anchor = article.querySelector("blockquote") || article.querySelector("h1");
+        if (anchor) anchor.insertAdjacentElement("afterend", section);
+        else article.prepend(section);
+      }
+      ensureStyles(siteRoot);
+      ensureEngine(siteRoot);
+      return;
+    }
     // Các chuyên đề cũ đã gắn engine trực tiếp trong Markdown thì giữ nguyên.
     if (document.querySelector("[data-practice-bank-v2]")) return;
 
     const article = document.querySelector(".md-content__inner");
     if (!article) return;
 
-    const siteRoot = pathname.split(marker)[0] || "";
     ensureStyles(siteRoot);
 
     const section = document.createElement("section");
