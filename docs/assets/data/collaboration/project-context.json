@@ -1,5 +1,5 @@
 {
-  "version": "1.0.37",
+  "version": "1.0.38",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -208,7 +208,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Begin CĐ21 in a small Gemini-led exercise authoring batch with source-locked skill whitelist/schema, ChatGPT review and integration; separately pilot GEO-LIB-001 in small steps.",
+    "next_priority": "Return to Golden Template production CĐ21–CĐ25, starting with one small Gemini-authored, source-locked CĐ21 exercise batch; ChatGPT performs item QA/integration and deploy. Keep future geometry renderer GEO-LIB-001 separate.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -226,7 +226,8 @@
     "golden_template": "Frozen v1.0 with maintenance hardening v1.0.1: MathJax details re-typeset, touch-safe targets, bottom CTAs and JSON control-character QA. Frozen invariants unchanged.",
     "golden_rollout": "CĐ04–CĐ12 DEPLOYED-PASS under Golden Template. CĐ11 adds source-mapped căn bậc ba with 12 real Practice Bank items (120→132); CĐ12 keeps parameter/extended Viète applications outside Core readiness pending item-level review. CI, strict MkDocs build and Pages deploy pass.",
     "geometry_architecture": "v1 FROZEN after Gemini architecture PASS, coverage 124/124, BENCH PASS, successful CI and owner-reported cross-device geometry flow acceptance (explicit iPhone/iPad). Automatic geometry renderer remains separate scope.",
-    "geometry_rollout": "CĐ13–CĐ20 DEPLOYED-PASS; CĐ19–CĐ20 Gemini batch review PASS with corrections []. Geometry exact-ID coverage 124/124, 0 gaps; CĐ19 bank 147 and CĐ20 bank 195."
+    "geometry_rollout": "CĐ13–CĐ20 DEPLOYED-PASS; CĐ19–CĐ20 Gemini batch review PASS with corrections []. Geometry exact-ID coverage 124/124, 0 gaps; CĐ19 bank 147 and CĐ20 bank 195.",
+    "geometry_visuals": "Main-lesson SVG refresh CĐ13–20 delivered: 33 internal diagrams; CĐ19–20 folder-path repair PR #84 and CI run 36105090022 PASS. Older diagrams retained for rollback; CĐ21–25 internal diagrams retained. Owner device visual QA of new CĐ13–17/19–20 pending; reusable renderer still open."
   },
   "handoff_required_fields": [
     "TASK_ID",
@@ -257,6 +258,6 @@
     "next_public_task": "CONTENT-PILOT-001",
     "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geometry-architecture-v1.json",
     "protocol_version": "2.0",
-    "relay_v2": "Geometry Architecture v1 frozen based on recorded five-gate audit; source evidence and owner-reported mobile/iPad acceptance retained. Future batches remain small and Gemini-led for exercise drafting."
+    "relay_v2": "Main-lesson image refresh checkpoint stored; return to small Gemini-led authoring batches. CĐ13–20 legacy image replacements are not a completed automatic geometry renderer."
   }
 }
