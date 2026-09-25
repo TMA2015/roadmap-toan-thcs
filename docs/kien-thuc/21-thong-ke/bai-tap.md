@@ -1,10 +1,30 @@
 # Bài tập – Chuyên đề 21: Thống kê và thu thập dữ liệu
 
-> **Mục tiêu:** luyện thu thập, tổ chức, biểu diễn và đọc dữ liệu; tính tần số, tần suất và đánh giá chất lượng dữ liệu.
+> **Phân tầng:** luyện Core trước; Core-Support / Entrance10 / Challenge nằm ở kho bổ sung bên dưới.
 >
 > **Quy ước mã bài:** `21-Mx-yy`.
 
-# Mức 1 – Nhận biết
+## B. ✍️ Luyện tự luận & trình bày – KNTT Core
+
+### 21-WR-01 · Dữ liệu và phân loại
+
+Mã lớp 6A, 6B là dữ liệu gì? Số sách mượn 2, 4, 3 là dữ liệu gì?
+
+??? example "Xem lời giải"
+    Mã lớp là dữ liệu phân loại; số sách mượn là dữ liệu số.
+
+### 21-WR-02 · Đọc dữ liệu
+
+Dữ liệu giả định từ biểu đồ cột: tổ A 14 cuốn, tổ B 20 cuốn. Chênh lệch là bao nhiêu?
+
+??? example "Xem lời giải"
+    20 − 14 = 6 cuốn.
+
+## C. Kho bổ sung: Core-Support / Entrance10 / Challenge
+
+Các bài M1–M4 cũ có cả nội dung bổ trợ và ôn thi. Học đúng bài/lớp tương ứng; không tính vào Core Readiness.
+
+### Mức 1 – Nhận biết
 
 ### 21-M1-01
 Tần số của một giá trị là gì?
