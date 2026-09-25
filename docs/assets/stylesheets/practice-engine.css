@@ -297,3 +297,57 @@
  .floating-ai-head small{max-width:calc(100vw - 7rem)}
  .floating-ai-quick{grid-template-columns:1fr 1fr}
 }
+
+/* Approved smiling study-girl avatar: the same artwork family as the sleeping homepage kid. */
+.floating-ai-launcher{
+ background:#fff url("../images/ai-girl-awake-avatar.webp") center/cover no-repeat;
+ border:2px solid #fff;
+ box-shadow:0 .2rem 0 #e4c8fc,0 .65rem 1.6rem rgba(27,48,110,.29);
+ transition:transform .18s ease,box-shadow .18s ease;
+}
+.floating-ai-launcher:hover{transform:translateY(-2px) rotate(-3deg);box-shadow:0 .2rem 0 #e4c8fc,0 .82rem 1.7rem rgba(27,48,110,.32)}
+.floating-ai-head::before{
+ content:"";display:block;flex:none;width:2rem;height:2rem;border-radius:50%;
+ background:#fff url("../images/ai-girl-awake-avatar.webp") center/cover no-repeat;
+ box-shadow:0 0 0 1px var(--practice-border);
+}
+@media(prefers-reduced-motion:reduce){.floating-ai-launcher{transition:none}.floating-ai-launcher:hover{transform:none}}
+
+/* Entrance10 written-exam workspace: scores never pollute independent practice evidence. */
+.exam-workspace{padding:1rem 1.1rem;margin:1rem 0 1.5rem;border:1px solid var(--practice-border);border-radius:.75rem;background:var(--md-default-bg-color);box-shadow:0 .4rem 1.4rem rgba(40,63,123,.06)}
+.exam-workspace-heading{font-weight:800;font-size:.92rem;color:var(--md-default-fg-color);margin-bottom:.35rem}
+.exam-workspace-note{font-size:.68rem;line-height:1.55;color:var(--md-default-fg-color--light);margin-bottom:.8rem}
+.exam-workspace-timer{font-variant-numeric:tabular-nums;font-size:1.35rem;font-weight:850;letter-spacing:.03em;color:#3558c4;margin:.65rem 0}
+.exam-workspace-controls{display:flex;flex-wrap:wrap;gap:.45rem}
+.exam-btn{padding:.52rem .75rem;border:1px solid var(--practice-border);border-radius:.5rem;background:var(--md-default-bg-color);color:var(--md-default-fg-color);font:inherit;font-size:.71rem;line-height:1.3;font-weight:700;cursor:pointer}
+.exam-btn-primary{background:#3453bf;color:#fff;border-color:#3453bf}
+.exam-btn:hover{filter:brightness(.95)}.exam-btn:focus-visible{outline:3px solid #82b5ff;outline-offset:2px}
+.exam-btn[hidden],.exam-self-mark[hidden]{display:none!important}
+.exam-workspace-feedback{font-size:.69rem;line-height:1.5;margin-top:.75rem;color:var(--md-default-fg-color--light)}
+.exam-answer-key{border:1px solid #adc2e4;border-radius:.65rem;overflow:hidden}
+.exam-answer-key>summary{cursor:pointer;font-weight:780;background:var(--practice-soft);padding:.7rem .85rem}
+.exam-self-mark{margin-top:1.1rem;padding-top:.75rem;border-top:1px solid var(--practice-border)}
+.exam-self-mark h3{font-size:.85rem;margin:.25rem 0 .45rem}
+.exam-self-mark h4{font-size:.73rem;margin:.75rem 0 .35rem}
+.exam-self-mark p{font-size:.67rem;line-height:1.55}
+.exam-rubric-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.3rem .65rem}
+.exam-rubric-item{display:flex;align-items:flex-start;gap:.48rem;font-size:.68rem;line-height:1.45;padding:.35rem;border:1px solid var(--practice-border);border-radius:.35rem;cursor:pointer}
+.exam-rubric-item input{flex:none;margin-top:.14rem;accent-color:#3558c4}
+.exam-rubric-total{padding:.65rem .8rem;background:var(--practice-soft);font-size:.82rem;font-weight:850;margin-top:.65rem;border-radius:.4rem;color:var(--md-default-fg-color)}
+.exam-gap-links{display:grid;gap:.25rem;font-size:.68rem}
+.exam-gap-links a{font-weight:700}
+.exam-directory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;margin:1rem 0 1.5rem}
+.exam-directory a{display:flex;flex-direction:column;gap:.25rem;padding:.9rem;border:1px solid var(--practice-border);background:var(--md-default-bg-color);border-radius:.7rem;text-decoration:none!important;color:var(--md-default-fg-color)!important}
+.exam-directory a:hover{border-color:#4c65cf;box-shadow:0 .35rem 1rem rgba(49,72,159,.1)}
+.exam-directory strong{font-size:.83rem}.exam-directory small{font-size:.68rem;line-height:1.45;color:var(--md-default-fg-color--light)}
+@media(max-width:58rem){.exam-directory{grid-template-columns:1fr 1fr}}
+@media(max-width:38rem){.exam-directory,.exam-rubric-list{grid-template-columns:1fr}.exam-workspace{padding:.8rem}.exam-btn{flex:1 1 9rem}}
+@media print{
+ .exam-workspace,.exam-answer-key,.exam-self-mark,.exam-gap-links,.floating-ai{display:none!important}
+ .md-header,.md-sidebar,.md-tabs,.md-footer,.md-top,.md-search,.md-nav{display:none!important}
+ .md-content{margin:0!important}.md-main__inner{margin:0!important}
+ .md-typeset{font-size:10.5pt!important;color:#000!important}
+ .md-typeset h1{font-size:16pt!important}.md-typeset h2{font-size:12pt!important}
+ .md-typeset h3{font-size:11pt!important;break-after:avoid}
+ .md-typeset table{break-inside:avoid}
+}

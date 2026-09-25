@@ -1,10 +1,20 @@
 # Chuyên đề 25 – Bản đồ tổng hợp & chiến lược ôn thi vào 10
 
-> **Trạng thái:** Đã kiểm định nội dung học thuật và chiến lược ôn tập; cấu trúc Roadmap chuẩn 11 mục.
+> **Trạng thái:** Nội dung và đề luyện tự biên soạn; đã qua kiểm tra cấu trúc/phép tính cơ bản. Bộ đề đang chờ phản biện học thuật độc lập trước khi coi là ngân hàng chuẩn.
 >
 > **Lớp trọng tâm:** 9
 > **Mạch kiến thức:** Tổng hợp/Thi vào 10
 > **Mức ưu tiên:** ⭐⭐⭐⭐⭐
+
+
+<div class="topic25-entry-grid">
+  <a href="./bai-tap/"><span>01 · TOÁN HỌC</span><strong>Luyện theo mạch kiến thức</strong><small>Đại số, phương trình, hàm số, hình học, thống kê và xác suất.</small></a>
+  <a href="./bai-toan-kinh-dien/"><span>02 · HIỂU SÂU</span><strong>Sáu bài toán mỏ neo</strong><small>Nhận dạng → ý tưởng → lời giải kiểm duyệt → bài biến thể.</small></a>
+  <a href="./bo-de-luyen/"><span>03 · LUYỆN THI</span><strong>Ba đề hoàn chỉnh 120 phút</strong><small>Đồng hồ · lời giải sau nộp · checklist tự chấm và vá lỗ hổng.</small></a>
+  <a href="./tu-kiem-tra/"><span>04 · TỰ ĐÁNH GIÁ</span><strong>Bài Toán học thuật 60 phút</strong><small>10 điểm Toán; không chấm điểm kiến thức bằng câu hỏi chiến lược.</small></a>
+</div>
+
+> **Lộ trình nên đi:** học kiến thức → bài mỏ neo → bài tập học thuật → đề đủ giờ → chữa theo bài mỏ neo. [Kỹ năng làm bài, quản lý thời gian và sổ lỗi được tách riêng tại đây.](tu-danh-gia-ky-nang-thi.md)
 
 ---
 
@@ -520,9 +530,9 @@ Mỗi bài yêu cầu học sinh nhận ra:
 
 ### C. Luyện đề hoàn chỉnh
 
-[**Đề luyện hoàn chỉnh số 1 – 120 phút**](de-luyen-01.md) là đề tự biên soạn để luyện toàn bộ quy trình phòng thi và chữa đề.
+[**Phòng luyện ba đề hoàn chỉnh – 120 phút**](bo-de-luyen.md) cung cấp ba đề tự biên soạn tăng dần yêu cầu, mỗi đề có đáp án, thang tự chấm và liên kết chữa lỗi.
 
-Đề này **không sao chép đề chính thức**. Cấu trúc được dùng như một bài mô phỏng dựa trên xu hướng kỳ thi Hà Nội theo chương trình mới. Đề Toán vào lớp 10 Hà Nội năm 2025 gồm 5 bài trong 120 phút; Sở GD&ĐT Hà Nội đã công bố đề và đáp án chính thức sau kỳ thi.
+Các đề **không sao chép đề chính thức**. Cấu trúc được dùng như một bài mô phỏng dựa trên xu hướng kỳ thi Hà Nội theo chương trình mới. Đề Toán vào lớp 10 Hà Nội năm 2025 gồm 5 bài trong 120 phút; Sở GD&ĐT Hà Nội đã công bố đề và đáp án chính thức sau kỳ thi.
 
 ### D. Kỹ năng thi — tách khỏi điểm học thuật
 
@@ -548,7 +558,7 @@ Phần hỏi về chiến lược phòng thi đã được chuyển sang [Tự �
 - **→ Tiếp theo:** quay lại các chuyên đề được xếp nhóm ưu tiên A/B theo kết quả luyện đề.
 - **🏁 Kết thúc Roadmap:** dùng chuyên đề này như bảng điều khiển ôn tập.
 
-- **✏️ Luyện tập:** [Bài tập Chuyên đề 25](bai-tap.md)
+- **✏️ Luyện tập:** [Bài tập học thuật](bai-tap.md) · [Bài toán mỏ neo](bai-toan-kinh-dien.md) · [Bộ đề hoàn chỉnh](bo-de-luyen.md)
 - **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 25](tu-kiem-tra.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
@@ -566,4 +576,5 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Biết phân loại lỗi kiến thức – kỹ năng – cẩu thả.
 - [ ] Biết điều chỉnh chiến lược theo cấu trúc đề địa phương.
 - [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai.
-- [ ] Hoàn thành được một đề có bấm giờ và phân tích lại đầy đủ.
+- [ ] Hoàn thành tối thiểu một đề 120 phút và tự chấm bằng rubric.
+- [ ] Làm lại ít nhất một bài biến thể cho mỗi dạng đã sai, không xem lời giải.

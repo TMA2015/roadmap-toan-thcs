@@ -86,7 +86,7 @@
     shell.className = "floating-ai";
     shell.dataset.floatingAi = "1";
 
-    const launcher = button("🤖", "floating-ai-launcher");
+    const launcher = button("", "floating-ai-launcher");
     launcher.setAttribute("aria-label", "Mở AI Tutor để hỏi về bài học");
     launcher.setAttribute("aria-expanded", "false");
 
@@ -99,7 +99,7 @@
     head.className = "floating-ai-head";
     const titleWrap = document.createElement("div");
     const title = document.createElement("strong");
-    title.textContent = "🤖 Hỏi AI về bài đang đọc";
+    title.textContent = "Hỏi cô gia sư về bài đang đọc";
     const contextLabel = document.createElement("small");
     titleWrap.append(title, contextLabel);
     const close = button("×", "floating-ai-close");

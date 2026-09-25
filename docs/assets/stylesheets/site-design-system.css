@@ -349,9 +349,31 @@ body{letter-spacing:-.008em}
 [data-md-color-scheme="slate"] .class-grade-tabs button{background:#243554;color:#edf3ff;border-color:#435575}
 [data-md-color-scheme="slate"] .class-grade-tabs button[aria-pressed="true"]{background:#5977df;color:#fff}
 
-/* Desktop reading scale: preserve comfortable iPad/phone typography but reduce oversized document headings on wide screens. */
-@media(min-width:77rem){
-  .md-typeset>h1{font-size:1.72rem;line-height:1.18}
-  .md-typeset>h2{font-size:1.16rem;line-height:1.28}
-  .md-typeset>h3{font-size:.94rem;line-height:1.35}
+/* Desktop lesson typography: the prior 77rem breakpoint missed 1366–1440px laptops.
+   Target only article headings; homepage/hero typography and mobile stay unchanged. */
+@media(min-width:60rem){
+  .md-content__inner.md-typeset > h1, .md-content__inner > .md-typeset > h1{
+    font-size:1.57rem;line-height:1.24;letter-spacing:-.022em;font-weight:790;
+    margin-top:.65rem;margin-bottom:1rem;padding-bottom:.6rem;
+  }
+  .md-content__inner.md-typeset > h2, .md-content__inner > .md-typeset > h2{
+    font-size:1.12rem;line-height:1.36;letter-spacing:-.017em;
+    font-weight:760;margin-top:1.65rem;padding:.55rem .72rem;
+  }
+  .md-content__inner.md-typeset > h3, .md-content__inner > .md-typeset > h3{
+    font-size:.97rem;line-height:1.42;letter-spacing:-.008em;font-weight:720;
+    margin-top:1.2rem;
+  }
+  .md-content__inner.md-typeset, .md-content__inner > .md-typeset{line-height:1.68}
 }
+
+/* Topic 25 is an academic-first capstone; strategy is a separate lane. */
+.topic25-entry-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem;margin:1rem 0 1.2rem}
+.topic25-entry-grid a{display:flex;flex-direction:column;gap:.33rem;min-width:0;padding:.85rem .85rem .95rem;border:1px solid var(--roadmap-line);border-radius:.7rem;background:var(--roadmap-surface);box-shadow:0 .35rem 1.15rem rgba(23,43,89,.04);color:var(--roadmap-ink)!important;text-decoration:none!important;transition:transform .15s,border-color .15s}
+.topic25-entry-grid a:hover{border-color:var(--roadmap-indigo);transform:translateY(-2px)}
+.topic25-entry-grid a span{font-size:.6rem;letter-spacing:.07em;font-weight:800;color:var(--roadmap-indigo)}
+.topic25-entry-grid a strong{font-size:.79rem;line-height:1.35}
+.topic25-entry-grid a small{font-size:.63rem;line-height:1.5;color:var(--roadmap-muted)}
+@media(max-width:65rem){.topic25-entry-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:34rem){.topic25-entry-grid{grid-template-columns:minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){.topic25-entry-grid a{transition:none}.topic25-entry-grid a:hover{transform:none}}

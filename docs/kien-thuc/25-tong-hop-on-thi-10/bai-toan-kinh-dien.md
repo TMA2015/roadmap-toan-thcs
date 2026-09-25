@@ -1,213 +1,197 @@
-# Bài toán kinh điển – Chuyên đề 25
+# Bộ bài toán mỏ neo – Toán vào lớp 10
 
-> **Mục tiêu:** học những bài có cấu trúc điển hình, không phải để học thuộc lời giải mà để nhận ra **dấu hiệu → công cụ → chuỗi suy luận**. Mỗi mẫu dưới đây đều nên được làm lại với số liệu khác sau khi đã hiểu lời giải.
+> **Học bằng cấu trúc, không học thuộc đáp án.** Sáu bài tự biên soạn nối đại số, bài toán thực tế, hình học và tối ưu. Hãy tự làm rồi mới mở phần giải; sau đó thử biến thể.
 
-## 1. Biểu thức căn: điều kiện trước, biến đổi sau
-
-**Bài mẫu**
-
-Cho
-[
-A=\frac{\sqrt{x}-2}{\sqrt{x}+1},\qquad x\ge 0.
-]
-
-1. Tìm điều kiện để biểu thức có nghĩa.
-2. Tính (A) khi (x=9).
-3. Giải phương trình (A=\frac14).
-
-**Cách nghĩ**
-
-- Nhìn thấy (sqrt{x}): kiểm tra (x\ge0).
-- Mẫu (sqrt{x}+1>0) với mọi (x\ge0), nên không phát sinh điều kiện loại thêm.
-- Khi giải phương trình, có thể đặt (t=\sqrt{x}\ge0) để nhìn cấu trúc rõ hơn.
-
-**Lời giải**
-
-Với (x\ge0), biểu thức xác định.
-
-Khi (x=9):
-[
-A=\frac{3-2}{3+1}=\frac14.
-]
-
-Giải (A=\frac14). Đặt (t=\sqrt{x}\ge0):
-[
-\frac{t-2}{t+1}=\frac14
-\Rightarrow 4t-8=t+1
-\Rightarrow 3t=9
-\Rightarrow t=3.
-]
-Suy ra (x=9).
-
-**Điều cần rút ra**
-
-Không bắt đầu bằng biến đổi dài. Hãy tìm điều kiện và đổi biến nếu cấu trúc căn lặp lại.
+| Mã | Dạng bài | Dấu hiệu → công cụ |
+|---|---|---|
+| CLASSIC_ALG_001 | Biểu thức căn và số nguyên | Điều kiện → tách phần nguyên → xét ước |
+| CLASSIC_ALG_002 | Parabol, tham số, Viète | Phương trình giao điểm → biệt thức → Viète |
+| CLASSIC_REAL_001 | Làm chung – làm riêng | Công việc/giờ → cộng năng suất |
+| CLASSIC_GEO_001 | Tiếp tuyến và cát tuyến | Góc nội tiếp → tam giác đồng dạng |
+| CLASSIC_GEO_002 | Trực tâm – tứ giác nội tiếp | Hai góc vuông → đường tròn phụ |
+| CLASSIC_INEQ_001 | Bất đẳng thức điểm rơi | Tổng không đổi → dấu bằng đồng thời |
 
 ---
 
-## 2. Viète: không cần giải phương trình nếu chỉ hỏi biểu thức đối xứng
+## 1. CLASSIC_ALG_001 – Căn thức, điều kiện và bài toán số nguyên
 
-**Bài mẫu**
+**Bài gốc.** Cho
+\[
+P=\frac{\sqrt{x}+2}{\sqrt{x}-1}.
+\]
+a) Tìm điều kiện xác định và tách phần nguyên. b) Tính \(P\) khi \(x=4\). c) Với \(x\) là **số chính phương không âm**, tìm \(x\) để \(P\) nguyên.
 
-Cho phương trình
-[
-x^2-5x+3=0
-]
-có hai nghiệm (x_1,x_2). Không giải phương trình, tính
-[
-S=x_1^2+x_2^2.
-]
+??? tip "Gợi ý nhỏ"
+    Viết \(\sqrt{x}+2=(\sqrt{x}-1)+3\), rồi xét khi nào \(\frac3{\sqrt{x}-1}\) nguyên.
 
-**Cách nghĩ**
+??? success "Lời giải và lỗi cần tránh"
+    Điều kiện: \(x\ge0,\ x\ne1\). Khi đó
+    \[
+    P=1+\frac3{\sqrt{x}-1}.
+    \]
+    Với \(x=4\), \(P=4\).
 
-Từ Viète:
-[
-x_1+x_2=5,qquad x_1x_2=3.
-]
+    Đặt \(t=\sqrt{x}\) là số nguyên không âm, \(t\ne1\). Muốn \(P\) nguyên, phải có
+    \[
+    t-1\in\{-3,-1,1,3\}.
+    \]
+    Do \(t\ge0\), suy ra \(t\in\{0,2,4\}\). Kết luận
+    \[
+    \boxed{x\in\{0,4,16\}}.
+    \]
+    Điều kiện “\(x\) chính phương” chỉ áp dụng ở ý c); không được quên loại \(x=1\).
 
-Biểu thức cần tính là đối xứng theo hai nghiệm:
-[
-x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2.
-]
+**Biến thể:** thay số \(2\) ở tử bằng \(4\), giữ điều kiện ý c). Tìm \(x\).
 
-**Lời giải**
-
-[
-S=5^2-2\cdot3=19.
-]
-
-**Điều cần rút ra**
-
-Khi đề chỉ hỏi tổng, tích hoặc biểu thức đối xứng của hai nghiệm, hãy kiểm tra Viète trước khi dùng công thức nghiệm.
+??? success "Đáp số biến thể"
+    \(P=1+\frac5{t-1}\Rightarrow t-1\in\{-5,-1,1,5\}\). Giá trị thỏa \(t\ge0\) là \(t=0,2,6\), nên \(x=0,4,36\).
 
 ---
 
-## 3. Bài toán thực tế bằng hệ phương trình: đặt ẩn phải gắn đơn vị
+## 2. CLASSIC_ALG_002 – Parabol và Viète có tham số
 
-**Bài mẫu**
+**Bài gốc.** Tìm giao điểm của \(y=x^2\) và đường thẳng \(d_m:y=2(m+1)x-2m\). Chứng minh luôn có hai giao điểm phân biệt; tìm \(m\) để bình phương hai hoành độ giao điểm có tổng bằng \(12\).
 
-Một buổi biểu diễn bán 40 vé gồm vé người lớn giá 80 nghìn đồng và vé học sinh giá 50 nghìn đồng. Tổng tiền thu được là 2,42 triệu đồng. Tính số vé mỗi loại.
+??? tip "Gợi ý nhỏ"
+    Phương trình hoành độ là \(x^2-2(m+1)x+2m=0\). Hãy tính \(\Delta'\), rồi dùng \(x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2\).
 
-**Cách nghĩ**
+??? success "Lời giải đầy đủ"
+    \[
+    \Delta'=(m+1)^2-2m=m^2+1>0
+    \]
+    với mọi \(m\). Do đó hai giao điểm luôn phân biệt.
 
-- Chọn ẩn đúng đại lượng bài hỏi.
-- Viết điều kiện nguyên không âm.
-- Một phương trình từ tổng số vé; một phương trình từ tổng tiền.
+    Theo Viète,
+    \[
+    x_1+x_2=2(m+1),\qquad x_1x_2=2m.
+    \]
+    \[
+    x_1^2+x_2^2=4(m+1)^2-4m=4(m^2+m+1).
+    \]
+    Yêu cầu bài cho \(m^2+m-2=0\), suy ra
+    \[
+    \boxed{m=1\text{ hoặc }m=-2}.
+    \]
+    Cả hai giá trị đều thỏa \(\Delta'>0\). Không áp dụng điều kiện “hai nghiệm phân biệt” mà bỏ qua bước xét biệt thức.
 
-**Lời giải**
-
-Gọi (x) là số vé người lớn, (y) là số vé học sinh. Điều kiện (x,y\in\mathbb N).
-
-[
-\begin{cases}
-x+y=40,\\
-80x+50y=2420.
-\end{cases}
-]
-
-Từ (y=40-x):
-[
-80x+50(40-x)=2420
-\Rightarrow30x=420
-\Rightarrow x=14.
-]
-Suy ra (y=26).
-
-Vậy có **14 vé người lớn và 26 vé học sinh**.
-
-**Điều cần rút ra**
-
-Một bài hệ thực tế tốt luôn có bước: đặt ẩn có đơn vị → lập mô hình → giải → kiểm tra điều kiện → trả lời bằng lời.
+**Biến thể:** thay \(12\) bằng \(4\). Đáp số \(m=0\) hoặc \(m=-1\).
 
 ---
 
-## 4. Hình học kinh điển: đường cao trong tam giác vuông
+## 3. CLASSIC_REAL_001 – Chỉ cộng năng suất, không cộng thời gian
 
-**Bài mẫu**
+**Bài gốc.** Hai đội làm chung một công việc hết 4 giờ. Đội A làm một mình nhanh hơn đội B 6 giờ. Hỏi thời gian mỗi đội làm riêng?
 
-Tam giác (ABC) vuông tại (A), đường cao (AH) xuống cạnh huyền (BC). Biết (BH=9), (CH=16).
+| Đại lượng | Đội A | Đội B |
+|---|---:|---:|
+| Thời gian một mình | \(x\) giờ | \(x+6\) giờ |
+| Công việc trong 1 giờ | \(1/x\) | \(1/(x+6)\) |
 
-1. Tính (BC).
-2. Tính (AH).
-3. Tính (AB) và (AC).
+??? tip "Gợi ý nhỏ"
+    Trong một giờ hai đội làm \(\frac14\) công việc.
 
-**Ý tưởng cốt lõi**
+??? success "Lời giải từng bước"
+    Gọi \(x>0\) là thời gian đội A làm riêng. Phương trình:
+    \[
+    \frac1x+\frac1{x+6}=\frac14
+    \iff 4(2x+6)=x(x+6)
+    \iff (x-6)(x+4)=0.
+    \]
+    Loại \(x=-4\). Vậy A làm \(6\) giờ và B làm \(12\) giờ. Kiểm tra \(\frac16+\frac1{12}=\frac14\).
 
-Ba tam giác (ABH), (AHC), (ABC) đồng dạng. Từ đó có các hệ thức:
-[
-AH^2=BH\cdot CH,
-]
-[
-AB^2=BH\cdot BC,\qquad AC^2=CH\cdot BC.
-]
+    **Bẫy:** không được cộng các thời gian \(x+(x+6)\) để bằng 4; phương trình mô hình phải cộng **phần công việc hoàn thành trong một giờ**.
 
-**Lời giải**
-
-[
-BC=BH+CH=25.
-]
-
-[
-AH^2=9\cdot16=144\Rightarrow AH=12.
-]
-
-[
-AB^2=9\cdot25=225\Rightarrow AB=15.
-]
-
-[
-AC^2=16\cdot25=400\Rightarrow AC=20.
-]
-
-**Điều cần rút ra**
-
-Bài này không quan trọng ở bộ số (9,16,25). Giá trị nằm ở việc hiểu rằng **đồng dạng tạo ra hệ thức lượng**, và từ một cặp đoạn trên cạnh huyền có thể suy ra toàn bộ tam giác.
+**Biến thể:** làm chung 6 giờ; A nhanh hơn B 9 giờ. Đáp số: A làm \(9\) giờ, B làm \(18\) giờ.
 
 ---
 
-## 5. Tối ưu đại số: biến điều kiện thành bình phương không âm
+## 4. CLASSIC_GEO_001 – Tiếp tuyến và cát tuyến
 
-**Bài mẫu**
+**Bài gốc.** Từ \(A\) ngoài đường tròn \((O)\), kẻ hai tiếp tuyến \(AB,AC\) tại \(B,C\); cát tuyến \(ADE\), \(D,E\) thuộc đường tròn và \(D\) nằm giữa \(A,E\). Biết \(AB=6,\ AD=4\).
 
-Cho (x,y>0) và (x+y=10). Tìm giá trị lớn nhất của (P=xy).
+a) Chứng minh \(ABOC\) nội tiếp. b) Chứng minh \(AB^2=AD\cdot AE\). c) Tính \(AE,DE\).
 
-**Lời giải**
+??? tip "Gợi ý nhỏ"
+    Hai bán kính vuông góc với tiếp tuyến. So sánh \(\triangle ABD\) và \(\triangle AEB\) bằng định lý góc tạo bởi tiếp tuyến và dây.
 
-Từ
-[
-(x-y)^2\ge0
-]
-suy ra
-[
-(x+y)^2\ge4xy.
-]
+??? success "Lời giải"
+    \(\angle ABO=\angle ACO=90^\circ\), nên tứ giác \(ABOC\) nội tiếp.
 
-Do (x+y=10):
-[
-100\ge4xy\Rightarrow xy\le25.
-]
+    Từ định lý góc tạo bởi tiếp tuyến và dây:
+    \[
+    \angle ABD=\angle BED=\angle AEB.
+    \]
+    Lại có \(\angle BAD=\angle EAB\), vì \(A,D,E\) thẳng hàng. Suy ra
+    \[
+    \triangle ABD\sim\triangle AEB,\quad
+    \frac{AB}{AE}=\frac{AD}{AB}
+    \Rightarrow AB^2=AD\cdot AE.
+    \]
+    Do đó \(36=4AE\Rightarrow AE=9\); và \(DE=AE-AD=5\).
 
-Dấu bằng xảy ra khi (x=y=5).
+    **Bẫy:** ghi đúng thứ tự tam giác tương ứng; đừng nhầm toàn đoạn \(AE\) với đoạn trong đường tròn \(DE\).
 
-Vậy
-[
-P_{\max}=25.
-]
-
-**Điều cần rút ra**
-
-Khi tổng cố định và cần tối ưu tích, hãy nghĩ tới ((x-y)^2\ge0) hoặc bất đẳng thức tương đương trước khi thử số.
+**Biến thể:** \(AB=8,\ AD=4\). Đáp số: \(AE=16,\ DE=12\).
 
 ---
 
-## Cách dùng bộ bài kinh điển
+## 5. CLASSIC_GEO_002 – Trực tâm, đường tròn phụ và góc
 
-Với mỗi bài:
+**Bài gốc.** Tam giác \(ABC\) nhọn; đường cao \(AD,BE,CF\) cắt nhau tại \(H\), với \(D\in BC,\ E\in AC,\ F\in AB\). Gọi \(O\) là tâm đường tròn ngoại tiếp \(ABC\).
 
-1. Tự làm ít nhất 10–15 phút.
-2. Nếu chưa ra, xem **ý tưởng cốt lõi** trước, chưa xem lời giải.
-3. Đóng lời giải và tự viết lại toàn bộ.
-4. Đổi số liệu hoặc điều kiện nhỏ rồi làm lại.
-5. Ghi một dòng: **“Dấu hiệu nào giúp tôi nhận ra công cụ?”**
+a) Chứng minh \(B,E,F,C\) nội tiếp. b) Chứng minh \(A,E,H,F\) nội tiếp. c) Chứng minh \(EF\) song song với tiếp tuyến tại \(A\) của đường tròn \((ABC)\); từ đó \(OA\perp EF\).
 
-> Một bài chỉ thực sự trở thành kiến thức của mình khi có thể giải lại với dữ kiện khác, không phải khi đọc lời giải và thấy “có vẻ hiểu”.
+??? tip "Gợi ý nhỏ"
+    Hãy tìm các góc vuông. Với ý c), từ \(BFEC\) nội tiếp, dùng \(\angle BFE=\angle BCE=\angle BCA\).
+
+??? success "Lời giải có chuỗi suy luận"
+    Do \(BE\perp AC\) và \(CF\perp AB\):
+    \[
+    \angle BEC=\angle BFC=90^\circ.
+    \]
+    Suy ra \(B,E,F,C\) cùng thuộc đường tròn đường kính \(BC\).
+
+    Tương tự \(\angle AEH=\angle AFH=90^\circ\), nên \(A,E,H,F\) cùng thuộc đường tròn đường kính \(AH\).
+
+    Vì \(BFEC\) nội tiếp:
+    \[
+    \angle BFE=\angle BCE=\angle BCA.
+    \]
+    Theo định lý góc tạo bởi tiếp tuyến và dây \(AB\), tiếp tuyến tại \(A\) cũng tạo với đường thẳng \(AB\) một góc bằng góc \(BCA\). Do \(BF\) nằm trên \(AB\), hai đường thẳng \(EF\) và tiếp tuyến tại \(A\) song song. Bán kính \(OA\) vuông góc tiếp tuyến, suy ra \(\boxed{OA\perp EF}\).
+
+    **Bẫy:** khi dùng góc giữa hai đường thẳng, cần để ý góc kề bù do đổi chiều tia.
+
+**Biến thể:** tự liệt kê các cặp góc vuông và xác định đường kính của hai đường tròn phụ mà không xem lời giải.
+
+---
+
+## 6. CLASSIC_INEQ_001 – Dự đoán điểm rơi và xét dấu bằng
+
+**Bài gốc.** Cho \(x,y>0,\ x+y=4\). Tìm GTNN của
+\[
+Q=x^2+y^2+\frac4{xy}.
+\]
+
+??? tip "Gợi ý nhỏ"
+    Từ \((x-y)^2\ge0\), suy ra \(x^2+y^2\ge8\) và \(xy\le4\).
+
+??? success "Lời giải và dấu bằng"
+    \[
+    x^2+y^2\ge\frac{(x+y)^2}{2}=8,\quad
+    xy\le\frac{(x+y)^2}{4}=4.
+    \]
+    Vì \(xy>0\), nên \(4/(xy)\ge1\). Do đó \(Q\ge9\). Dấu bằng xảy ra đồng thời khi \(x=y=2\). Vậy GTNN bằng \(\boxed9\).
+
+    **Bẫy:** chứng minh một cận dưới chưa đủ; phải kiểm tra có giá trị thỏa **tất cả** điều kiện dấu bằng.
+
+**Biến thể:** \(x+y=6\), tìm GTNN của \(x^2+y^2+\dfrac9{xy}\). Đáp số \(19\) tại \(x=y=3\).
+
+---
+
+## Vòng luyện tập đúng cách
+
+**Bài gốc → thử biến thể không xem lời giải → làm đề hoàn chỉnh → phân loại câu sai → quay về bài mỏ neo và chuyên đề gốc.** Xem đáp án trước khi giải là một lượt *học có trợ giúp*, không phải bằng chứng đã tự làm được.
+
+[Đi tới bộ đề hoàn chỉnh](bo-de-luyen.md) · [Bài tập học thuật](bai-tap.md) · [Tự kiểm tra Toán](tu-kiem-tra.md)
+
+*Các bài và biến thể được biên soạn mới cho website; không gắn nhãn là đề chính thức.*
