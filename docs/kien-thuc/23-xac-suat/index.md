@@ -2,11 +2,14 @@
 
 > **Trạng thái:** Đã kiểm định nội dung học thuật; cấu trúc Roadmap chuẩn 11 mục.
 >
-> **Lớp trọng tâm:** 6–9
+> **Core theo mapping hiện có:** lớp 6–8, học đúng chặng theo lớp; phần nhiều bước là mở rộng không bắt buộc.
 > **Mạch kiến thức:** Xác suất
 > **Mức ưu tiên:** ⭐⭐⭐⭐
 
 ---
+
+!!! info "Ranh giới Core / bài mở rộng"
+    Toán 6 KNTT Bài 42–43: kết quả có thể, sự kiện và xác suất thực nghiệm. Toán 7 Bài 29–30: biến cố và xác suất đơn giản. Toán 8 Bài 30–32: phép thử và tỉ số xác suất. Các bài nhiều xúc xắc, sơ đồ cây nâng cao, biến cố đối và rút không hoàn lại được luyện bổ sung, **không tự động tính vào KNTT Core Readiness**. Mapping lớp 9 hiện chưa có liên kết PRIMARY tới CĐ23; không suy ra mọi nội dung xác suất lớp 9 đều nằm ngoài chương trình.
 
 ## 🧭 1. Bản đồ kiến thức
 
@@ -465,7 +468,7 @@ Hãy tự trả lời không nhìn tài liệu:
 8. Với câu “ít nhất một”, chiến lược nào thường ngắn hơn?
 9. Xác suất thực nghiệm được tính như thế nào và vì sao không nhất thiết bằng đúng xác suất của mô hình sau một số hữu hạn lần thử?
 
-**Tiêu chí đạt:** đúng ít nhất `8/9` câu và giải được một bài xác suất nhiều bước.
+**Tự đánh giá:** bài 9 câu này gồm cả phần nâng cao; dùng để chọn kỹ năng cần ôn, không tính như Core Readiness. Bài Core Readiness tương tác sẽ làm trong batch riêng.
 
 ---
 
@@ -494,4 +497,4 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Giải được bài nhiều bước bằng bảng hoặc sơ đồ cây.
 - [ ] Dùng được biến cố đối cho bài “ít nhất một”.
 - [ ] Kiểm tra được tính hợp lý của kết quả.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 24.
+- [ ] Chữa câu sai; có thể học tiếp CĐ24 bất kể điểm bài tự luận. Core Readiness tương tác được triển khai ở batch riêng.

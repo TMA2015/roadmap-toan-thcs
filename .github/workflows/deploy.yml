@@ -109,6 +109,14 @@ jobs:
       - name: Verify CĐ22 Bridge classification and non-gating lessons
         run: node scripts/test-stat22-layer-001.js
 
+      - name: Verify CĐ23 boundaries and practice layer labels
+        run: |
+          node --check docs/assets/javascripts/practice-engine-v2.js
+          node scripts/test-prob23-layer-001.js
+
+      - name: Build source-locked CĐ23 Gemini Learn author bundle
+        run: node scripts/build-prob23-learn-bundle.js docs/assets/data/collaboration/exports/prob23-learn-gemini-author-001.json
+
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
 

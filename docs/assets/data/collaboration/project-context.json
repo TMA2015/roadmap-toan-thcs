@@ -1,5 +1,5 @@
 {
-  "version": "1.0.47",
+  "version": "1.0.48",
   "updated": "2026-09-25",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -208,7 +208,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "CĐ22 Bridge layer source review integrated (10 skills / 120 practice items) without Core gating. Continue 25-topic Golden Template by checking CĐ23 KNTT Core mapping first, then use source-locked Gemini small Learn+micro batch. Optional CĐ22 Bridge Learn is separate, no THCS Core readiness.",
+    "next_priority": "Await Gemini PROB23-LEARN-GEMINI-AUTHOR-001-RESULT: five grade-safe Core cards and 15 micro. Independently audit math/wording/schema, integrate, then separate readiness batch.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -251,7 +251,26 @@
       "readiness_eligible": false,
       "source_review": "STAT22-MAP-CHATGPT-REVIEW-001",
       "progression_hard_gate": false,
-      "optional_learning": "PENDING_SEPARATE_BRIDGE_CARDS"
+      "optional_learning": "PENDING_SEPARATE_BRIDGE_CARDS",
+      "question_meta_layer_label": "SHOW_THPT_BRIDGE"
+    },
+    "probability_topic23": {
+      "primary_grade_scope": [
+        6,
+        7,
+        8
+      ],
+      "existing_bank_count": 120,
+      "practice_layer_counts": {
+        "KNTT-Core": 52,
+        "Core-Support": 30,
+        "Entrance10": 38
+      },
+      "layer_audit": "docs/assets/data/curriculum/topic23-layer-audit-v1.json",
+      "learning_cards": "AUTHOR_PACKET_READY",
+      "micro_count_target": 15,
+      "readiness": "PENDING_SEPARATE_BATCH",
+      "grade9_mapping": "NO_PRIMARY_REF_CURRENT_OVERLAY"
     }
   },
   "handoff_required_fields": [
@@ -280,8 +299,8 @@
     "offline_relay_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/offline-relay/",
     "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
     "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
-    "next_public_task": "PROB23-MAP-001",
-    "next_relay_packet": null,
+    "next_public_task": "PROB23-LEARN-001",
+    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/prob23-learn-gemini-author-001.json",
     "protocol_version": "2.0",
     "relay_v2": "All new author/reviewer batches MUST apply docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md: direct language, explicit units/population, never infer data or leave absent chart. Golden Template frozen."
   }

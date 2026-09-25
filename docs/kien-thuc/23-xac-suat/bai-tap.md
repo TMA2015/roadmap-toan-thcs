@@ -1,6 +1,6 @@
 # Bài tập – Chuyên đề 23: Xác suất
 
-> **Mục tiêu:** luyện không gian mẫu, biến cố, xác suất cổ điển, biến cố đối và sơ đồ cây.
+> **Phân tầng:** luyện Core theo KNTT lớp 6–8 trước; các bài sơ đồ cây, biến cố đối, nhiều bước và rút không hoàn lại nằm ở Core-Support/Entrance10. Kết quả phần mở rộng không khóa Core Readiness.
 >
 > **Quy ước mã bài:** `23-Mx-yy`.
 
