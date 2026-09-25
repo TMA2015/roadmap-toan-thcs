@@ -112,3 +112,7 @@ Nếu hai AI khác đáp án:
 - chỉ publish sau khi resolve.
 
 Nếu chưa resolve được: `BLOCKED-ACADEMIC`.
+
+## 8. Quy chuẩn ngôn ngữ đề Toán
+
+Tất cả batch AUTHOR / REVIEWER phải tuân theo [Chuẩn biên tập đề Toán – ngắn, rõ, đúng bản chất](../huong-dan/chuan-ngon-ngu-de-toan-v1.md). Cần kiểm tra từng đại lượng, đơn vị, tập đối tượng và cách đặt câu hỏi; số liệu giả định phải được ghi rõ. Lỗi nhập nhằng có thể chặn publish dù đáp án số học đúng.

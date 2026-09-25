@@ -95,6 +95,7 @@ jobs:
           node --check docs/assets/javascripts/topic-workspace-v1.js
           node scripts/test-learning-card-micro-practice.js docs/assets/data/curriculum/topic21-learning-workspace.json docs/assets/data/practice/21-thong-ke-micro-v1.json
           node scripts/test-sta21-learn-001.js
+          node scripts/test-sta21-responsive-wording-001.js
 
       - name: Normalize SVG viewBox
         run: python normalize_svg_viewbox.py
