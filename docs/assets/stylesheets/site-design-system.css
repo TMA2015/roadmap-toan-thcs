@@ -205,3 +205,7 @@ body{letter-spacing:-.008em}
   .home-style-cta{padding:.27rem;font-size:.62rem}
   .home-style-panel .home-style-footer{margin:.4rem 0 0;font-size:.53rem}
 }
+
+@media(max-width:35rem){
+  .home-hero .home-art-mode{order:3;position:relative;z-index:1}
+}
