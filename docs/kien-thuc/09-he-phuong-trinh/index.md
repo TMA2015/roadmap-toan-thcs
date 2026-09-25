@@ -35,10 +35,12 @@ HỆ PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN
 │   ├── Cộng đại số
 │   └── Chọn phương pháp phù hợp
 │
-├── 4. Vận dụng: số nghiệm và tham số
+├── 4. Core: số nghiệm và ý nghĩa hình học
 │   ├── Nhận biết số nghiệm
-│   ├── Điều kiện để có nghiệm đặc biệt
-│   └── Tìm tham số
+│   └── Một nghiệm / vô nghiệm / vô số nghiệm
+│
+├── Mở rộng Entrance10
+│   └── Hệ có tham số
 │
 └── 5. Bài toán thực tế
     ├── Chọn ẩn
@@ -61,7 +63,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 - [ ] Kiểm tra nghiệm bằng cách thay ngược vào hệ ban đầu.
 - [ ] Nhận biết trường hợp hệ có một nghiệm, vô nghiệm hoặc vô số nghiệm.
 - [ ] Lập được hệ từ bài toán thực tế đơn giản và trung bình.
-- [ ] Xử lý được bài toán có tham số ở mức vận dụng phù hợp với THCS.
+- [ ] **Mở rộng Entrance10:** xử lý được một số bài hệ có tham số sau khi đã chắc Core.
 
 ---
 
@@ -489,7 +491,7 @@ Với hệ bậc nhất hai ẩn có **hệ số phân số**, có thể:
 
 ---
 
-### Dạng 6 – Tìm tham số để hệ có nghiệm cho trước
+### Dạng 6 – Entrance10 / Extension: Tìm tham số để hệ có nghiệm cho trước
 
 Ví dụ: tìm `m` để `(2;1)` là nghiệm của hệ.
 
@@ -500,7 +502,7 @@ Phương pháp:
 
 ---
 
-### Dạng 7 – Tìm tham số để hệ có một nghiệm, vô nghiệm hoặc vô số nghiệm
+### Dạng 7 – Entrance10 / Extension: Tìm tham số để hệ có một nghiệm, vô nghiệm hoặc vô số nghiệm
 
 > **Mức vận dụng:** cần xét cẩn thận các giá trị tham số làm thay đổi hệ số hoặc làm một phương trình suy biến.
 
@@ -539,7 +541,7 @@ Học sinh cần thành thạo:
 - hệ có phân số đơn giản;
 - hệ cần biến đổi trước.
 
-### Hệ có tham số – ⭐⭐⭐⭐
+### Entrance10 / Extension – Hệ có tham số – ⭐⭐⭐⭐
 
 Các yêu cầu luyện tập có thể gồm:
 
