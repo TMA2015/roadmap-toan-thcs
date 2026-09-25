@@ -11,7 +11,7 @@ Bên cạnh Practice Room tương tác, học sinh có thể [mở bộ tự lu�
 **Ví dụ trình bày Core:** Một đồng xu được tung 20 lần, xuất hiện 13 lần ngửa. Tính xác suất thực nghiệm của mặt ngửa.
 
 ??? example "Xem lời giải"
-    Gọi A là sự kiện “xuất hiện mặt ngửa”. Trong 20 lần tung, A xảy ra 13 lần. Vậy xác suất thực nghiệm trong loạt thử là \\(\\frac{13}{20}\\). Đây là tỉ lệ quan sát của loạt thử, không khẳng định rằng lần tung tiếp theo sẽ ra ngửa.
+    Gọi A là sự kiện “xuất hiện mặt ngửa”. Trong 20 lần tung, A xảy ra 13 lần. Vậy xác suất thực nghiệm trong loạt thử là \(\frac{13}{20}\). Đây là tỉ lệ quan sát của loạt thử, không khẳng định rằng lần tung tiếp theo sẽ ra ngửa.
 
 ### Chọn đúng tầng học
 
