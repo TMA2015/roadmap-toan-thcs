@@ -1,0 +1,203 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "EQ08-CORE-READY-V1",
+  "topic": {
+    "id": "08-phuong-trinh-bat-phuong-trinh",
+    "title": "Chuyên đề 08 – Phương trình và bất phương trình"
+  },
+  "layer": "KNTT-Core",
+  "title": "Core Readiness Check – Chuyên đề 08 – Phương trình và bất phương trình",
+  "skill_labels": {
+    "bien-doi-pt-nhieu-buoc": "Biến đổi phương trình nhiều bước",
+    "lap-phuong-trinh": "Lập phương trình",
+    "pt-tich": "Phương trình tích",
+    "dkxd-phuong-trinh-mau": "ĐKXĐ phương trình chứa mẫu",
+    "khu-mau-phuong-trinh": "Khử mẫu và giải",
+    "bat-dang-thuc": "Bất đẳng thức",
+    "tinh-chat-thu-tu-phep-cong": "Thứ tự với phép cộng",
+    "tinh-chat-thu-tu-phep-nhan": "Thứ tự với phép nhân",
+    "bpt-bac-nhat": "Bất phương trình bậc nhất",
+    "bieu-dien-tap-nghiem": "Biểu diễn tập nghiệm"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "EQ08READY_001",
+      "type": "mcq",
+      "skill": "bien-doi-pt-nhieu-buoc",
+      "points": 1,
+      "question": "Giải \\(2(x-1)+3=x+6\\).",
+      "options": [
+        "\\(x=5\\)",
+        "\\(x=1\\)",
+        "\\(x=7\\)",
+        "\\(x=-5\\)"
+      ],
+      "answer": 0,
+      "explanation": "Khai triển: 2x+1=x+6 nên x=5.",
+      "supporting_skills": [
+        "pt-bac-nhat"
+      ]
+    },
+    {
+      "id": "EQ08READY_002",
+      "type": "mcq",
+      "skill": "lap-phuong-trinh",
+      "points": 1,
+      "question": "Một số cộng 8 bằng 21. Phương trình đúng là:",
+      "options": [
+        "\\(x+8=21\\)",
+        "\\(8x=21\\)",
+        "\\(x-8=21\\)",
+        "\\(21+x=8\\)"
+      ],
+      "answer": 0,
+      "explanation": "Gọi số là x thì quan hệ đúng là x+8=21."
+    },
+    {
+      "id": "EQ08READY_003",
+      "type": "mcq",
+      "skill": "pt-tich",
+      "points": 1,
+      "question": "Giải \\((x-2)(x+3)=0\\).",
+      "options": [
+        "\\(x=2\\) hoặc \\(x=-3\\)",
+        "\\(x=-2\\) hoặc \\(x=3\\)",
+        "\\(x=2\\)",
+        "\\(x=-3\\)"
+      ],
+      "answer": 0,
+      "explanation": "Cho từng nhân tử bằng 0."
+    },
+    {
+      "id": "EQ08READY_004",
+      "type": "mcq",
+      "skill": "dkxd-phuong-trinh-mau",
+      "points": 1,
+      "question": "ĐKXĐ của \\(\\frac{x+1}{x-4}=2\\) là:",
+      "options": [
+        "\\(x\\ne4\\)",
+        "\\(x\\ne-1\\)",
+        "\\(x\\ne2\\)",
+        "Mọi x"
+      ],
+      "answer": 0,
+      "explanation": "Mẫu x-4 phải khác 0."
+    },
+    {
+      "id": "EQ08READY_005",
+      "type": "mcq",
+      "skill": "khu-mau-phuong-trinh",
+      "points": 1,
+      "question": "Giải \\(\\frac{x}{2}=3\\).",
+      "options": [
+        "\\(x=6\\)",
+        "\\(x=\\frac32\\)",
+        "\\(x=1\\)",
+        "\\(x=-6\\)"
+      ],
+      "answer": 0,
+      "explanation": "Nhân hai vế với 2 được x=6."
+    },
+    {
+      "id": "EQ08READY_006",
+      "type": "mcq",
+      "skill": "bat-dang-thuc",
+      "points": 1,
+      "question": "Khẳng định nào đúng?",
+      "options": [
+        "\\(-3<2\\)",
+        "\\(5<1\\)",
+        "\\(4\\le3\\)",
+        "\\(-1>0\\)"
+      ],
+      "answer": 0,
+      "explanation": "-3 nhỏ hơn 2."
+    },
+    {
+      "id": "EQ08READY_007",
+      "type": "mcq",
+      "skill": "tinh-chat-thu-tu-phep-cong",
+      "points": 1,
+      "question": "Biết \\(a<b\\). Khẳng định luôn đúng là:",
+      "options": [
+        "\\(a-5<b-5\\)",
+        "\\(a-5>b-5\\)",
+        "\\(a+5>b+5\\)",
+        "\\(-a<-b\\)"
+      ],
+      "answer": 0,
+      "explanation": "Cộng/trừ cùng một số giữ nguyên chiều."
+    },
+    {
+      "id": "EQ08READY_008",
+      "type": "mcq",
+      "skill": "tinh-chat-thu-tu-phep-nhan",
+      "points": 1,
+      "question": "Biết \\(a<b\\). Nhân hai vế với -2 được:",
+      "options": [
+        "\\(-2a>-2b\\)",
+        "\\(-2a<-2b\\)",
+        "\\(2a>2b\\)",
+        "\\(-2a=-2b\\)"
+      ],
+      "answer": 0,
+      "explanation": "Nhân với số âm làm đổi chiều."
+    },
+    {
+      "id": "EQ08READY_009",
+      "type": "mcq",
+      "skill": "bpt-bac-nhat",
+      "points": 1,
+      "question": "Giải \\(-2x+4>0\\).",
+      "options": [
+        "\\(x<2\\)",
+        "\\(x>2\\)",
+        "\\(x<-2\\)",
+        "\\(x>-2\\)"
+      ],
+      "answer": 0,
+      "explanation": "-2x>-4, chia -2 đổi chiều nên x<2.",
+      "supporting_skills": [
+        "doi-chieu-bpt"
+      ]
+    },
+    {
+      "id": "EQ08READY_010",
+      "type": "mcq",
+      "skill": "bieu-dien-tap-nghiem",
+      "points": 1,
+      "question": "Tập nghiệm \\(x>1\\) được biểu diễn:",
+      "options": [
+        "Điểm rỗng tại 1, tô về bên phải",
+        "Điểm đặc tại 1, tô về bên phải",
+        "Điểm rỗng tại 1, tô về bên trái",
+        "Điểm đặc tại 1, tô về bên trái"
+      ],
+      "answer": 0,
+      "explanation": "Dấu > không lấy mốc và các số lớn hơn nằm bên phải."
+    }
+  ],
+  "next_topic": {
+    "id": "09-he-phuong-trinh",
+    "title": "Chuyên đề 09 – Hệ phương trình bậc nhất hai ẩn"
+  }
+}
