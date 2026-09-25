@@ -312,6 +312,7 @@
       this.hintLevel = 0;
       this.fullSolutionViewed = false;
       this.hintButton = null;
+      this.geminiPending = false;
       this.mode = "normal";
       this.focusSkills = [];
       this.renderShell();
@@ -528,7 +529,7 @@
       title.textContent = "📘 Em muốn được hỗ trợ thế nào?";
       const note = document.createElement("p");
       note.className = "practice-tutor-note";
-      note.textContent = "Bản offline dùng lời giải và gợi ý có trong ngân hàng, không phải Gemini đang trả lời trực tiếp.";
+      note.textContent = window.RoadmapGemini?.isConfigured() ? "Lời giải có sẵn và Gemini là hai nguồn khác nhau. Gemini chỉ gửi bài hiện tại sau khi em chủ động bấm hỏi." : "Bản offline dùng lời giải và gợi ý có trong ngân hàng; Gemini đang chờ hoàn thiện cấu hình.";
       const choices = document.createElement("div");
       choices.className = "practice-tutor-choices";
       const modes = [
@@ -570,6 +571,13 @@
         back.addEventListener("click", () => this.openTutorMenu(question));
         panel.appendChild(back);
       };
+      const addGemini = () => {
+        if (!window.RoadmapGemini?.isConfigured()) return;
+        const labels = { HINT: "🤖 Gemini gợi ý", STEP_BY_STEP: "🤖 Gemini hướng dẫn từng bước", FULL_SOLUTION: "🤖 Gemini giải chi tiết", TEACH_FROM_START: "🤖 Gemini giảng lại từ đầu" };
+        const ask = createButton(labels[mode], "practice-btn-primary practice-gemini-ask");
+        ask.addEventListener("click", () => this.askGemini(question, ask, mode));
+        panel.appendChild(ask);
+      };
       if (mode === "HINT" || mode === "STEP_BY_STEP") {
         const count = (question.hints || []).length;
         info.textContent = count
@@ -591,6 +599,7 @@
         next.addEventListener("click", advance);
         if (!count || this.answered) next.disabled = true;
         panel.appendChild(next);
+        addGemini();
         addBack();
         return;
       }
@@ -601,6 +610,7 @@
         link.href = "../#core-journey";
         link.textContent = "Mở bài giảng và các thẻ học (nếu có) ↗";
         panel.appendChild(link);
+        addGemini();
         addBack();
         return;
       }
@@ -645,7 +655,85 @@
         brief.append(label, body, caveat);
         panel.appendChild(brief);
       }
+      addGemini();
       addBack();
+      typeset(panel);
+    }
+
+    async askGemini(question, button, mode, learnerRequest = "") {
+      if (!window.RoadmapGemini?.isConfigured() || !window.RoadmapTutor || this.currentQuestion()?.id !== question?.id) return;
+      const skills = questionSkills(question), skill = skills[0];
+      if (!skill) return;
+      // Count AI help only if an answer is actually delivered before submission.
+      // A network/quota error must not turn an independent attempt into assisted evidence.
+      if (this.geminiPending) return;
+      this.geminiPending = true;
+      button.disabled = true;
+      const original = button.textContent;
+      button.textContent = "Gemini đang giảng bài…";
+      try {
+        const context = window.RoadmapTutor.buildContext({
+          projectContextVersion: "1.0.17",
+          layer: question?.tags?.layer || "KNTT-Core",
+          gradeOverlay: question?.tags?.grade || null,
+          skill,
+          question,
+          learnerRequest,
+          helpMode: mode,
+          activity: "practice",
+          submitted: this.answered,
+          hintLevel: this.hintLevel,
+          stats: this.stats,
+          graph: this.knowledgeGraph,
+          recovery: loadRecovery()
+        });
+        const response = await window.RoadmapTutor.run({ provider: "gemini", context });
+        if (this.currentQuestion()?.id !== question?.id) return;
+        if (!this.answered) {
+          this.hintLevel = Math.max(1, this.hintLevel);
+          if (mode === "FULL_SOLUTION") this.fullSolutionViewed = true;
+        }
+        this.renderGeminiResponse(response, question, mode);
+      } catch (error) {
+        if (this.currentQuestion()?.id !== question?.id) return;
+        const note = document.createElement("p");
+        note.className = "practice-tutor-note";
+        note.textContent = "Chưa kết nối được Gemini (" + (error?.message || "lỗi kết nối") + "). Em vẫn có thể xem lời giải có sẵn hoặc học tiếp.";
+        this.tutorEl.appendChild(note);
+        this.tutorEl.hidden = false;
+      } finally {
+        this.geminiPending = false;
+        button.disabled = false;
+        button.textContent = original;
+      }
+    }
+
+    renderGeminiResponse(response, question, mode) {
+      const panel = this.tutorEl;
+      panel.innerHTML = "";
+      const title = document.createElement("strong");
+      title.textContent = "🤖 Gemini · " + (window.RoadmapGemini?.model() || "AI Tutor");
+      const message = document.createElement("div");
+      message.className = "practice-gemini-message";
+      message.textContent = response.message;
+      const caution = document.createElement("p");
+      caution.className = "practice-tutor-note";
+      caution.textContent = "Nội dung do AI tạo có thể sai. Hãy so sánh với bài giảng/lời giải đã biên soạn; nếu chưa hiểu, hỏi tiếp bước cụ thể.";
+      const followup = document.createElement("textarea");
+      followup.className = "practice-gemini-followup";
+      followup.rows = 2;
+      followup.maxLength = 300;
+      followup.placeholder = "Em chưa hiểu bước nào? (không nhập thông tin cá nhân)";
+      followup.setAttribute("aria-label", "Câu hỏi tiếp theo cho Gemini");
+      const ask = createButton("Hỏi tiếp", "practice-btn-secondary");
+      ask.addEventListener("click", () => {
+        const questionText = followup.value.trim();
+        if (questionText) this.askGemini(question, ask, mode, questionText);
+      });
+      const back = createButton("← Các mức trợ giúp", "practice-btn-secondary");
+      back.addEventListener("click", () => this.openTutorMenu(question));
+      panel.append(title, message, caution, followup, ask, back);
+      panel.hidden = false;
       typeset(panel);
     }
 

@@ -166,7 +166,11 @@
   const adapters = {
     mock: mockAdapter,
     "openai-compatible": async () => { throw new Error("OpenAI-compatible transport is not configured. Runtime credentials are required."); },
-    gemini: async () => { throw new Error("Gemini transport is not configured. Runtime credentials are required."); }
+    gemini: async ({ context }) => {
+      if (!window.RoadmapGemini?.isConfigured()) throw new Error("Gemini chưa được cấu hình và kiểm thử.");
+      const result = await window.RoadmapGemini.generate(context);
+      return validateTutorResponse(result);
+    }
   };
 
   const runTutor = async ({ provider = "mock", context, policy }) => {
