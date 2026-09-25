@@ -135,13 +135,13 @@ with sync_playwright() as p:
     shot(help_page, "practice-help-full-solution-desktop.png")
     # Gemini text is rendered by a safe Markdown/MathJax DOM layer; no live request
     # occurs during CI and the authored question result stays untouched.
-    sample = r"""1. **Điều kiện:** \\(x^2 + 3x\\).
+    sample = r"""1. **Điều kiện:** \(x^2 + 3x\).
 2. Ví dụ: $A=x^2+3x+3$.
 - Bước **đúng**: $2x^2-x^2=x^2$.
 
-$
-\\frac{9m^3n^2}{3m^2n}=3mn
-$
+$$
+\frac{9m^3n^2}{3m^2n}=3mn
+$$
 <img src=x onerror=alert(1)>"""
     report = help_page.evaluate("""text => {
       const panel = document.createElement("div");
