@@ -210,3 +210,19 @@
   font-size: 0.85em;
   opacity: 0.78;
 }
+
+
+/* Explicit, learner-directed support modes; no remote AI is represented in the static build. */
+.practice-tutor-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.48rem;margin:.65rem 0}
+.practice-help-choice{min-height:2.6rem;justify-content:flex-start;text-align:left;white-space:normal}
+.practice-tutor p{margin:.4rem 0 .7rem;line-height:1.6}
+.practice-tutor .practice-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;white-space:normal}
+.practice-help-confirm,.practice-help-assisted{border-left:.2rem solid #cf963a;border-radius:0 .4rem .4rem 0;padding:.6rem .7rem;background:color-mix(in srgb,#e9b65e 11%,var(--md-default-bg-color));font-size:.8rem;line-height:1.55;margin:.55rem 0}
+.practice-help-answer{margin:.5rem 0;padding:.7rem .8rem;border:1px solid var(--practice-border);border-radius:.5rem;background:var(--md-default-bg-color)}
+.practice-help-answer strong{display:block;color:var(--md-default-fg-color);margin:0 0 .25rem}
+.practice-help-answer p{margin:.2rem 0 .4rem;white-space:pre-wrap;line-height:1.7}
+.practice-help-answer small{display:block;line-height:1.55;opacity:.8}
+.practice-help-steps{margin:.5rem 0 1rem!important;padding-left:1.5rem!important}
+.practice-help-steps li{margin:.3rem 0;white-space:pre-wrap}
+.practice-tutor-note{line-height:1.5}
+@media(max-width:38rem){.practice-tutor-choices{grid-template-columns:1fr}.practice-help-choice{min-height:2.25rem}}
