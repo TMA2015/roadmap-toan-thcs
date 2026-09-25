@@ -49,7 +49,7 @@ Mạch tư duy trọng tâm:
 ### 1. Tứ giác nội tiếp
 
 <p align="center">
-  <img src="../../assets/geometry/20/20-tu-giac-noi-tiep.svg"
+  <img src="../../assets/geometry/20-tu-giac-noi-tiep-v1.svg"
        alt="Minh họa tứ giác nội tiếp"
        width="500">
 </p>
@@ -73,7 +73,7 @@ Các dấu hiệu thường dùng để chứng minh một tứ giác nội ti�
 ### 2. Tam giác đồng dạng trong bài toán tổng hợp
 
 <p align="center">
-  <img src="../../assets/geometry/20/20-tam-giac-dong-dang.svg"
+  <img src="../../assets/geometry/20-tam-giac-dong-dang-v1.svg"
        alt="Minh họa hai tam giác đồng dạng"
        width="540">
 </p>
@@ -102,7 +102,7 @@ Trong bài hình học tổng hợp, đồng dạng thường được dùng đ�
 ### 3. Đồng dạng trong tam giác vuông
 
 <p align="center">
-  <img src="../../assets/geometry/20/20-dong-dang-tam-giac-vuong.svg"
+  <img src="../../assets/geometry/20-dong-dang-tam-giac-vuong-v1.svg"
        alt="Minh họa các tam giác đồng dạng trong tam giác vuông"
        width="520">
 </p>
