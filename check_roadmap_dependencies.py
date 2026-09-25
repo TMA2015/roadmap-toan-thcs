@@ -1,5 +1,6 @@
 from pathlib import Path
 import html
+import json
 import re
 import unicodedata
 from urllib.parse import unquote
@@ -270,62 +271,186 @@ for source in sorted(ROOT.rglob("*.md")):
 
 
 # 6. Kiểm tra chuẩn trải nghiệm học tập của toàn bộ 25 Topic
-#    Bài tập: đủ Mức 1-4, có mã bài theo từng mức, có phần đáp án.
-#    Tự kiểm tra: có thời gian, thang điểm, câu hỏi và đáp án/hướng dẫn chấm.
+#
+# Có hai cấu trúc hợp lệ:
+# - Legacy: bai-tap.md có Mức 1-4 + đáp án; tu-kiem-tra.md có đề + hướng dẫn chấm.
+# - Golden Template: Learn -> Practice Room -> Core Readiness Check.
+#   Topic opt-in khi tu-kiem-tra.md có data-readiness-check-v1.
+#
+# Golden Template KHÔNG được ép quay lại cấu trúc đề/đáp án tĩnh cũ; thay vào đó
+# QA phải kiểm đúng feedback timing, Core boundary và assessment data.
+
+
+def readiness_source(text):
+    m = re.search(r'data-readiness-check-v1\s*=\s*["\']([^"\']+)["\']', text)
+    return m.group(1).strip() if m else None
+
+
+def check_golden_template(num, folder, lesson_text, practice_text, self_text):
+    # Learn page: mục 8/9 chỉ làm gateway sang hai không gian riêng.
+    if "(bai-tap.md)" not in lesson_text:
+        issues.append(f"{num:02d}: Golden Template thiếu gateway từ Bài học sang Practice Room")
+    if "(tu-kiem-tra.md)" not in lesson_text:
+        issues.append(f"{num:02d}: Golden Template thiếu gateway từ Bài học sang Readiness Check")
+
+    # Practice Room: giữ luyện tương tác + tự luận với lời giải đóng mặc định.
+    if not re.search(r"Luyện\s+tự\s+luận.*trình\s+bày", practice_text, re.IGNORECASE):
+        issues.append(f"{num:02d}: Practice Room thiếu chế độ luyện tự luận/trình bày")
+    if not re.search(r'^\?\?\?\s+example\s+["\']Xem lời giải["\']', practice_text, re.MULTILINE | re.IGNORECASE):
+        issues.append(f"{num:02d}: Practice Room thiếu lời giải ẩn dạng details")
+    if "Entrance10" not in practice_text or "Challenge" not in practice_text:
+        issues.append(f"{num:02d}: Practice Room chưa tách rõ Core / Entrance10 / Challenge")
+
+    # Readiness page: chỉ là shell; không lộ đáp án tĩnh trước Submit.
+    source = readiness_source(self_text)
+    if not source:
+        issues.append(f"{num:02d}: Readiness Check thiếu data-readiness-check-v1")
+        return
+
+    if re.search(r"^#+\s+.*(?:Đáp án|Hướng dẫn chấm)", self_text, re.MULTILINE | re.IGNORECASE):
+        issues.append(f"{num:02d}: Readiness Check còn lộ đáp án/hướng dẫn chấm tĩnh")
+
+    clean_source = source.split("?", 1)[0].split("#", 1)[0].lstrip("/")
+    assessment_path = (ROOT / clean_source).resolve()
+
+    try:
+        assessment_path.relative_to(ROOT.resolve())
+    except ValueError:
+        issues.append(f"{num:02d}: assessment data nằm ngoài docs -> {source}")
+        return
+
+    if not assessment_path.exists():
+        issues.append(f"{num:02d}: thiếu assessment data -> {source}")
+        return
+
+    try:
+        data = json.loads(assessment_path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        issues.append(f"{num:02d}: assessment JSON không đọc được -> {exc}")
+        return
+
+    if data.get("schema") != "roadmap-readiness-assessment-v1":
+        issues.append(f"{num:02d}: assessment schema không phải roadmap-readiness-assessment-v1")
+    if data.get("layer") != "KNTT-Core":
+        issues.append(f"{num:02d}: Core Readiness phải dùng layer KNTT-Core")
+
+    policy = data.get("policy") or {}
+    if policy.get("feedback") != "after_submit":
+        issues.append(f"{num:02d}: Readiness phải feedback sau Submit")
+    if policy.get("hints") is not False:
+        issues.append(f"{num:02d}: Readiness phải tắt hints")
+    if policy.get("tutor") is not False:
+        issues.append(f"{num:02d}: Readiness phải tắt Tutor")
+    if policy.get("hard_gate") is not False:
+        issues.append(f"{num:02d}: Readiness không được hard gate")
+    if not isinstance(policy.get("target_minutes"), (int, float)) or policy.get("target_minutes", 0) <= 0:
+        issues.append(f"{num:02d}: Readiness thiếu target_minutes hợp lệ")
+
+    readiness = data.get("readiness") or {}
+    if readiness.get("hard_gate") is not False:
+        issues.append(f"{num:02d}: readiness policy không được hard gate")
+    threshold = readiness.get("ready_threshold")
+    if not isinstance(threshold, (int, float)) or not 0 < threshold <= 1:
+        issues.append(f"{num:02d}: ready_threshold không hợp lệ")
+
+    items = data.get("items")
+    if not isinstance(items, list) or not items:
+        issues.append(f"{num:02d}: assessment thiếu câu hỏi")
+        return
+
+    ids = set()
+    total_points = 0
+    for item in items:
+        item_id = item.get("id")
+        if not item_id or item_id in ids:
+            issues.append(f"{num:02d}: assessment có ID câu trống/trùng -> {item_id or '(trống)'}")
+            continue
+        ids.add(item_id)
+
+        if item.get("type") != "mcq":
+            issues.append(f"{num:02d}: Readiness v1 hiện chỉ hỗ trợ mcq -> {item_id}")
+        if not item.get("skill"):
+            issues.append(f"{num:02d}: assessment item thiếu assessed skill -> {item_id}")
+
+        options = item.get("options")
+        answer = item.get("answer")
+        if not isinstance(options, list) or len(options) < 2:
+            issues.append(f"{num:02d}: assessment item thiếu phương án -> {item_id}")
+        elif not isinstance(answer, int) or not 0 <= answer < len(options):
+            issues.append(f"{num:02d}: assessment item có answer không hợp lệ -> {item_id}")
+
+        points = item.get("points", 0)
+        if not isinstance(points, (int, float)) or points <= 0:
+            issues.append(f"{num:02d}: assessment item có points không hợp lệ -> {item_id}")
+        else:
+            total_points += points
+
+    if total_points <= 0:
+        issues.append(f"{num:02d}: assessment không có thang điểm hợp lệ")
+
+
 for num in range(1, 26):
     folder = topic_folder(num)
     if folder is None:
         continue
 
+    lesson = folder / "index.md"
     practice = folder / "bai-tap.md"
     self_check = folder / "tu-kiem-tra.md"
 
     if not practice.exists():
         issues.append(f"{num:02d}: thiếu bai-tap.md")
-    else:
-        text = practice.read_text(encoding="utf-8")
-
-        for level in range(1, 5):
-            if not re.search(rf"^#+\s+Mức\s+{level}\b", text, re.MULTILINE | re.IGNORECASE):
-                issues.append(f"{num:02d}: bai-tap.md thiếu Mức {level}")
-
-            code_re = rf"\b{num:02d}-M{level}-\d{{2}}\b"
-            if not re.search(code_re, text):
-                issues.append(f"{num:02d}: bai-tap.md thiếu mã bài Mức {level}")
-
-        if not re.search(r"^#+\s+.*Đáp án", text, re.MULTILINE | re.IGNORECASE):
-            issues.append(f"{num:02d}: bai-tap.md thiếu phần Đáp án")
-
+        continue
     if not self_check.exists():
         issues.append(f"{num:02d}: thiếu tu-kiem-tra.md")
-    else:
-        text = self_check.read_text(encoding="utf-8")
+        continue
 
-        if not re.search(r"Thời gian", text, re.IGNORECASE):
-            issues.append(f"{num:02d}: tu-kiem-tra.md thiếu thời gian")
+    lesson_text = lesson.read_text(encoding="utf-8") if lesson.exists() else ""
+    practice_text = practice.read_text(encoding="utf-8")
+    self_text = self_check.read_text(encoding="utf-8")
 
-        if not re.search(r"Thang điểm", text, re.IGNORECASE):
-            issues.append(f"{num:02d}: tu-kiem-tra.md thiếu thang điểm")
+    # Golden Template được nhận diện bằng marker Readiness Engine.
+    if readiness_source(self_text):
+        check_golden_template(num, folder, lesson_text, practice_text, self_text)
+        continue
 
-        has_heading_questions = re.search(
-            r"^#+\s+Câu\s+\d+",
-            text,
-            re.MULTILINE | re.IGNORECASE,
-        )
-        has_numbered_questions = re.search(
-            r"^\s*\d+\.\s+\S",
-            text,
-            re.MULTILINE,
-        )
-        if not (has_heading_questions or has_numbered_questions):
-            issues.append(f"{num:02d}: tu-kiem-tra.md không đọc được câu hỏi")
+    # Legacy topics vẫn giữ QA cũ cho đến khi được migrate theo batch.
+    for level in range(1, 5):
+        if not re.search(rf"^#+\s+Mức\s+{level}\b", practice_text, re.MULTILINE | re.IGNORECASE):
+            issues.append(f"{num:02d}: bai-tap.md thiếu Mức {level}")
 
-        if not re.search(
-            r"^#+\s+.*(?:Đáp án|Hướng dẫn chấm)",
-            text,
-            re.MULTILINE | re.IGNORECASE,
-        ):
-            issues.append(f"{num:02d}: tu-kiem-tra.md thiếu đáp án/hướng dẫn chấm")
+        code_re = rf"\b{num:02d}-M{level}-\d{{2}}\b"
+        if not re.search(code_re, practice_text):
+            issues.append(f"{num:02d}: bai-tap.md thiếu mã bài Mức {level}")
+
+    if not re.search(r"^#+\s+.*Đáp án", practice_text, re.MULTILINE | re.IGNORECASE):
+        issues.append(f"{num:02d}: bai-tap.md thiếu phần Đáp án")
+
+    if not re.search(r"Thời gian", self_text, re.IGNORECASE):
+        issues.append(f"{num:02d}: tu-kiem-tra.md thiếu thời gian")
+
+    if not re.search(r"Thang điểm", self_text, re.IGNORECASE):
+        issues.append(f"{num:02d}: tu-kiem-tra.md thiếu thang điểm")
+
+    has_heading_questions = re.search(
+        r"^#+\s+Câu\s+\d+",
+        self_text,
+        re.MULTILINE | re.IGNORECASE,
+    )
+    has_numbered_questions = re.search(
+        r"^\s*\d+\.\s+\S",
+        self_text,
+        re.MULTILINE,
+    )
+    if not (has_heading_questions or has_numbered_questions):
+        issues.append(f"{num:02d}: tu-kiem-tra.md không đọc được câu hỏi")
+
+    if not re.search(
+        r"^#+\s+.*(?:Đáp án|Hướng dẫn chấm)",
+        self_text,
+        re.MULTILINE | re.IGNORECASE,
+    ):
+        issues.append(f"{num:02d}: tu-kiem-tra.md thiếu đáp án/hướng dẫn chấm")
 
 
 if issues:
