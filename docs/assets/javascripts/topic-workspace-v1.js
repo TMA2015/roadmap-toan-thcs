@@ -6,6 +6,16 @@ const CARD_DATA="assets/data/curriculum/topic07-learning-workspace.json";
 const KG_DATA="assets/data/curriculum/knowledge-graph-v1.json";
 const siteRoot=()=>{const marker="/kien-thuc/";const p=window.location.pathname;return p.includes(marker)?(p.split(marker)[0]||""):""};
 const siteAsset=rel=>`${siteRoot()}/${String(rel||"").replace(/^\/+/,"")}`;
+const SKILL_LABELS={
+ "nhan-tu-chung":"nhân tử chung",
+ "hieu-hai-binh-phuong":"hiệu hai bình phương",
+ "phan-tich-tu-mau":"phân tích tử/mẫu",
+ "quy-dong-mau-thuc":"quy đồng mẫu",
+ "bo-ngoac-dau":"bỏ ngoặc",
+ "cong-tru-da-thuc":"cộng/trừ đa thức",
+ "rut-gon-phan-thuc":"rút gọn phân thức"
+};
+const skillLabel=id=>SKILL_LABELS[id]||String(id||"").replaceAll("-"," ");
 const sections=[
  ["map","🗺️ Bản đồ","1. Bản đồ kiến thức"],["goals","🎯 Mục tiêu","2. Mục tiêu cần đạt"],["core","📖 Cốt lõi","3. Kiến thức cốt lõi"],["links","🔗 Liên quan","4. Kiến thức liên quan"],["types","🧩 Dạng bài","5. Các dạng bài cần nắm vững"],["exam","🚀 Thi vào 10","6. Dạng bài thi vào lớp 10"],["errors","⚠️ Lỗi sai","7. Lỗi sai thường gặp"],["practice","📝 Luyện tập","8. Luyện tập"],["check","✅ Tự kiểm tra","9. Tự kiểm tra"],["roadmap","🔄 Roadmap","10. Liên kết Roadmap"],["finish","🏁 Hoàn thành","11. Điều kiện hoàn thành"]
 ];
@@ -67,9 +77,10 @@ const renderCoreCards=async hero=>{
   host.innerHTML='<div class="topic-core-journey-head"><div><span class="topic-workspace-kicker">KNTT Core · 5 chặng học</span><h2>Học theo chặng, kiểm tra ngay</h2></div><span class="topic-chip">15 câu kiểm tra nhanh</span></div>';
   const grid=document.createElement("div");grid.className="topic-core-card-grid";
   data.cards.forEach((card,i)=>{const el=document.createElement("article");el.className="topic-core-card";el.dataset.cardId=card.id;
-    const pre=card.prerequisites.length?`<div class="topic-core-prereq">Nền tảng: ${card.prerequisites.map(x=>x.replaceAll("-"," ")).join(" · ")}</div>`:"";
-    el.innerHTML=`<div class="topic-core-card-number">${i+1}</div><div class="topic-core-card-main"><div class="topic-core-card-lesson">${card.kntt_lessons.join(" · ")}</div><h3>${card.title}</h3>${pre}<div class="topic-core-card-meta">${card.skills.length} kỹ năng · 3 câu kiểm tra nhanh</div><button type="button" class="practice-btn topic-micro-start">✏️ Thử 3 câu</button></div><div class="topic-micro-mount"></div>`;
-    const btn=el.querySelector(".topic-micro-start");const mount=el.querySelector(".topic-micro-mount");btn.onclick=()=>{const open=el.classList.toggle("is-active");btn.textContent=open?"Đóng micro-practice":"✏️ Thử 3 câu";if(open&&!mount.dataset.loaded){const qs=card.micro_practice.map(id=>byId.get(id)).filter(Boolean);mount.dataset.loaded="1";mountMicro(mount,card,qs,graph)}};
+    const prereqNames=card.prerequisites.map(skillLabel);
+    const pre=prereqNames.length?`<div class="topic-core-prereq topic-core-prereq-full">Nền tảng: ${prereqNames.join(" · ")}</div><div class="topic-core-prereq topic-core-prereq-compact" title="Nền tảng: ${prereqNames.join(" · ")}">Nền tảng: ${prereqNames.length} kỹ năng</div>`:"<div class=\"topic-core-prereq topic-core-prereq-empty\">Nền tảng: —</div>";
+    el.innerHTML=`<div class="topic-core-card-main"><div class="topic-core-card-top"><span class="topic-core-card-number">${i+1}</span><span class="topic-core-card-lesson">${card.kntt_lessons.join(" · ")}</span></div><h3>${card.title}</h3>${pre}<div class="topic-core-card-meta"><span>${card.skills.length} kỹ năng</span><span>3 câu nhanh</span></div><button type="button" class="practice-btn topic-micro-start">✏️ Thử 3 câu</button></div><div class="topic-micro-mount"></div>`;
+    const btn=el.querySelector(".topic-micro-start");const mount=el.querySelector(".topic-micro-mount");btn.onclick=()=>{const open=el.classList.toggle("is-active");btn.textContent=open?"Đóng":"✏️ Thử 3 câu";if(open&&!mount.dataset.loaded){const qs=card.micro_practice.map(id=>byId.get(id)).filter(Boolean);mount.dataset.loaded="1";mountMicro(mount,card,qs,graph)}};
     grid.appendChild(el)});
   host.appendChild(grid);const ext=document.createElement("details");ext.className="topic-extension-zone";ext.innerHTML='<summary>🚀 Entrance10 / Challenge <span>không tính vào hoàn thành KNTT Core</span></summary><div class="topic-extension-list">'+data.extensions.map(x=>`<span class="topic-chip">${x.layer}: ${x.title}</span>`).join("")+"</div>";host.appendChild(ext);hero.after(host);
  }catch(_){}
