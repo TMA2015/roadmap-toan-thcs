@@ -13,7 +13,7 @@ const floating=read("docs/assets/javascripts/floating-ai-tutor-v1.js");
 const asset=fs.readFileSync(path.join(R,"docs/assets/images/ai-girl-awake-avatar.webp"));
 ok(asset.slice(0,4).toString()==="RIFF"&&asset.slice(8,12).toString()==="WEBP"&&asset.length>3000,"approved local avatar asset present");
 ok(floating.includes('button("", "floating-ai-launcher")')&&styles.includes('url("../images/ai-girl-awake-avatar.webp")'),"avatar wired to floating launcher");
-ok(site.includes("@media(min-width:60rem)")&&site.includes("font-size:1.57rem"),"desktop-only reading font scale");
+ok(site.includes("@media(min-width:60rem)")&&site.includes("font-size:1.57rem")&&site.includes(".md-content__inner.md-typeset > h1"),"desktop-only reading font scale");
 ok(index.includes("topic25-entry-grid")&&index.includes("bo-de-luyen")&&index.includes("Kỹ năng thi — tách khỏi điểm học thuật"),"academic first Topic25 routes");
 ok(hub.includes("exam-directory")&&hub.includes("120 phút")&&hub.includes("Không phải đề chính thức"),"exam hub");
 ok(workspace.cards.length===5&&workspace.cards.filter(c=>c.learning_kind==="academic").length===3&&workspace.cards.filter(c=>c.learning_kind==="exam_skill").length===2,"learning card separation");
