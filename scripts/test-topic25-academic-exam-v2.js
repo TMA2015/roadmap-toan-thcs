@@ -14,7 +14,7 @@ ok(practice.includes("## A. Đại số")&&practice.includes("## D. Thống kê 
 ok(!practice.includes("Mức 1 – Nhận biết")&&!practice.includes("Sổ lỗi sai nên ghi"),"strategy prompts removed from academic exercise bank");
 ok(check.includes("Câu 1 – Đại số")&&check.includes("Câu 4 – Hình học")&&check.includes("Điểm này chỉ đo bài Toán hiện tại"),"academic self-check");
 ok(skills.includes("Không dùng điểm ở đây để kết luận năng lực Toán"),"exam skills separated");
-ok((mock.match(/^### Bài [IVX]+/gm)||[]).length===5,"five-problem mock");
+ok((mock.split("## Đáp án và hướng dẫn chấm")[0].match(/^### Bài [IVX]+/gm)||[]).length===5,"five-problem mock");
 ok(mock.includes("120 phút")&&mock.includes("không sao chép đề chính thức"),"mock scope and provenance");
 ok(classic.includes("Viète")&&classic.includes("đường cao trong tam giác vuông")&&classic.includes("Tối ưu đại số"),"classic algebra/geometry archetypes");
 ok(data.cards.length===5&&data.cards.slice(0,3).every(x=>x.learning_kind==="academic")&&data.cards.slice(3).every(x=>x.learning_kind==="exam_skill"),"workspace academic first, exam skills second");
