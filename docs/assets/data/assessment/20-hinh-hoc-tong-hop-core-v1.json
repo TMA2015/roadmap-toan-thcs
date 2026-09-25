@@ -1,0 +1,246 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "GEO20-CORE-READY-V1",
+  "topic": {
+    "id": "20-hinh-hoc-tong-hop",
+    "title": "Chuyên đề 20 – Hình học tổng hợp, đo lường và hình khối"
+  },
+  "layer": "KNTT-Core",
+  "title": "Core Readiness Check – Chuyên đề 20 – Hình học tổng hợp, đo lường và hình khối",
+  "skill_labels": {
+    "nhan-biet-tam-giac-deu": "Nhận biết tam giác đều",
+    "nhan-biet-hinh-vuong": "Nhận biết hình vuông",
+    "nhan-biet-luc-giac-deu": "Nhận biết lục giác đều",
+    "nhan-biet-tu-giac-dac-biet": "Nhận biết tứ giác đặc biệt",
+    "chu-vi-tu-giac": "Chu vi tứ giác",
+    "dien-tich-tu-giac": "Diện tích tứ giác",
+    "do-luong-thuc-te": "Đo lường thực tế",
+    "truc-doi-xung": "Trục đối xứng",
+    "tam-doi-xung": "Tâm đối xứng",
+    "the-tich-hop-chu-nhat": "Thể tích hình hộp chữ nhật",
+    "dien-tich-day": "Diện tích đáy",
+    "doi-don-vi-do-luong": "Đổi đơn vị đo lường",
+    "nhan-biet-hinh-hop-lap-phuong": "Nhận biết hình hộp chữ nhật và lập phương",
+    "dien-tich-xung-quanh-hop-chu-nhat": "Diện tích xung quanh hình hộp chữ nhật",
+    "the-tich-lang-tru": "Thể tích lăng trụ đứng",
+    "nhan-biet-lang-tru-dung": "Nhận biết lăng trụ đứng",
+    "dien-tich-xung-quanh-lang-tru": "Diện tích xung quanh lăng trụ đứng",
+    "nhan-biet-hinh-chop-deu": "Nhận biết hình chóp đều",
+    "dien-tich-xung-quanh-hinh-chop": "Diện tích xung quanh hình chóp đều",
+    "the-tich-hinh-chop": "Thể tích hình chóp",
+    "nhan-biet-hinh-tru": "Nhận biết hình trụ",
+    "dien-tich-xung-quanh-hinh-tru": "Diện tích xung quanh hình trụ",
+    "the-tich-hinh-tru": "Thể tích hình trụ",
+    "nhan-biet-hinh-non": "Nhận biết hình nón",
+    "dien-tich-xung-quanh-hinh-non": "Diện tích xung quanh hình nón",
+    "the-tich-hinh-non": "Thể tích hình nón",
+    "nhan-biet-hinh-cau": "Nhận biết hình cầu",
+    "dien-tich-mat-cau": "Diện tích mặt cầu",
+    "the-tich-hinh-cau": "Thể tích hình cầu"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "GEO20READY_001",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-hinh-vuong",
+      "skill": "nhan-biet-hinh-vuong",
+      "points": 1,
+      "question": "Tứ giác có bốn cạnh bằng nhau và bốn góc vuông:",
+      "options": [
+        "Hình vuông",
+        "Hình thang",
+        "Hình thoi bất kỳ",
+        "Hình chữ nhật bất kỳ"
+      ],
+      "answer": 0,
+      "explanation": "Định nghĩa hình vuông."
+    },
+    {
+      "id": "GEO20READY_002",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-tu-giac",
+      "skill": "dien-tich-tu-giac",
+      "points": 1,
+      "question": "Hình chữ nhật 6×5 cm có diện tích:",
+      "options": [
+        "30 cm²",
+        "22 cm²",
+        "11 cm²",
+        "60 cm²"
+      ],
+      "answer": 0,
+      "explanation": "S=6·5."
+    },
+    {
+      "id": "GEO20READY_003",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "truc-doi-xung",
+      "skill": "truc-doi-xung",
+      "points": 1,
+      "question": "Hình vuông có số trục đối xứng:",
+      "options": [
+        "4",
+        "2",
+        "1",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "Bốn trục."
+    },
+    {
+      "id": "GEO20READY_004",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-xung-quanh-hop-chu-nhat",
+      "skill": "dien-tich-xung-quanh-hop-chu-nhat",
+      "points": 1,
+      "question": "Hộp chữ nhật Pđáy=18 cm,h=4 cm. Sxq:",
+      "options": [
+        "72 cm²",
+        "36 cm²",
+        "22 cm²",
+        "144 cm²"
+      ],
+      "answer": 0,
+      "explanation": "Pđáy·h."
+    },
+    {
+      "id": "GEO20READY_005",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "the-tich-lang-tru",
+      "skill": "the-tich-lang-tru",
+      "points": 1,
+      "question": "Lăng trụ có Sđáy=12 cm²,h=5 cm. V:",
+      "options": [
+        "60 cm³",
+        "17 cm³",
+        "30 cm³",
+        "120 cm³"
+      ],
+      "answer": 0,
+      "explanation": "V=Sđáyh."
+    },
+    {
+      "id": "GEO20READY_006",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "the-tich-hinh-chop",
+      "skill": "the-tich-hinh-chop",
+      "points": 1,
+      "question": "Chóp Sđáy=30 cm²,h=9 cm. V:",
+      "options": [
+        "90 cm³",
+        "270 cm³",
+        "39 cm³",
+        "810 cm³"
+      ],
+      "answer": 0,
+      "explanation": "1/3·30·9."
+    },
+    {
+      "id": "GEO20READY_007",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-xung-quanh-hinh-tru",
+      "skill": "dien-tich-xung-quanh-hinh-tru",
+      "points": 1,
+      "question": "Trụ r=3,h=5. Sxq:",
+      "options": [
+        "30π",
+        "15π",
+        "45π",
+        "18π"
+      ],
+      "answer": 0,
+      "explanation": "2πrh."
+    },
+    {
+      "id": "GEO20READY_008",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "the-tich-hinh-non",
+      "skill": "the-tich-hinh-non",
+      "points": 1,
+      "question": "Nón r=3,h=4. V:",
+      "options": [
+        "12π",
+        "36π",
+        "9π",
+        "48π"
+      ],
+      "answer": 0,
+      "explanation": "1/3πr²h."
+    },
+    {
+      "id": "GEO20READY_009",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-mat-cau",
+      "skill": "dien-tich-mat-cau",
+      "points": 1,
+      "question": "Mặt cầu r=2. S:",
+      "options": [
+        "16π",
+        "8π",
+        "4π",
+        "32π"
+      ],
+      "answer": 0,
+      "explanation": "4πr²."
+    },
+    {
+      "id": "GEO20READY_010",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "the-tich-hinh-cau",
+      "skill": "the-tich-hinh-cau",
+      "points": 1,
+      "question": "Hình cầu r=3. V:",
+      "options": [
+        "36π",
+        "27π",
+        "12π",
+        "108π"
+      ],
+      "answer": 0,
+      "explanation": "4/3πr³."
+    }
+  ],
+  "next_topic": {
+    "id": "21-thong-ke",
+    "title": "Chuyên đề 21 – Thống kê và thu thập dữ liệu"
+  }
+}

@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "SYN20-MICRO-V1",
+  "topic": {
+    "id": "20-hinh-hoc-tong-hop",
+    "title": "Hình học tổng hợp, đo lường và hình khối"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "GEO20MICRO_001",
+      "card_id": "geo20-core-1",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-tam-giac-deu",
+      "question": "Tam giác có ba cạnh bằng nhau là:",
+      "options": [
+        "Tam giác đều",
+        "Tam giác vuông",
+        "Tam giác cân nhưng không đều",
+        "Tam giác tù"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-tam-giac-deu"
+        ],
+        "type": "nhan-biet-tam-giac-deu",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Ba cạnh bằng nhau là định nghĩa tam giác đều.",
+      "hints": [
+        "Nhìn số cạnh bằng nhau.",
+        "Ba cạnh cùng bằng."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_002",
+      "card_id": "geo20-core-1",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "truc-doi-xung",
+      "question": "Hình vuông có bao nhiêu trục đối xứng?",
+      "options": [
+        "4",
+        "2",
+        "1",
+        "0"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "truc-doi-xung"
+        ],
+        "type": "truc-doi-xung",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai đường chéo và hai đường qua trung điểm cặp cạnh đối là bốn trục.",
+      "hints": [
+        "Đếm đường chéo.",
+        "Đếm thêm hai đường qua tâm song song cạnh."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_003",
+      "card_id": "geo20-core-1",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-tu-giac",
+      "question": "Hình chữ nhật 5 cm × 8 cm có diện tích:",
+      "options": [
+        "40 cm²",
+        "26 cm²",
+        "13 cm²",
+        "80 cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-tu-giac"
+        ],
+        "type": "dien-tich-tu-giac",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "S=5·8=40 cm².",
+      "hints": [
+        "Diện tích chữ nhật = dài×rộng.",
+        "Giữ đơn vị bình phương."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_004",
+      "card_id": "geo20-core-2",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-hinh-hop-lap-phuong",
+      "question": "Hình lập phương có:",
+      "options": [
+        "6 mặt đều là hình vuông bằng nhau",
+        "6 mặt đều là tam giác",
+        "2 đáy tròn",
+        "Một đỉnh"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-hop-lap-phuong"
+        ],
+        "type": "nhan-biet-hinh-hop-lap-phuong",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Định nghĩa nhận biết hình lập phương.",
+      "hints": [
+        "Đếm mặt.",
+        "Các mặt là hình vuông."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_005",
+      "card_id": "geo20-core-2",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-xung-quanh-hop-chu-nhat",
+      "question": "Hộp chữ nhật đáy a×b, cao h. Diện tích xung quanh là:",
+      "options": [
+        "2(a+b)h",
+        "abh",
+        "2ab",
+        "ab+2h"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hop-chu-nhat"
+        ],
+        "type": "dien-tich-xung-quanh-hop-chu-nhat",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Sxq=chu vi đáy×h=2(a+b)h.",
+      "hints": [
+        "Không cộng hai đáy.",
+        "Dùng chu vi đáy nhân chiều cao."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_006",
+      "card_id": "geo20-core-2",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-xung-quanh-lang-tru",
+      "question": "Lăng trụ đứng có chu vi đáy 12 cm, chiều cao 5 cm. Sxq:",
+      "options": [
+        "60 cm²",
+        "30 cm²",
+        "17 cm²",
+        "120 cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-lang-tru"
+        ],
+        "type": "dien-tich-xung-quanh-lang-tru",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Sxq=Pđáy·h=12·5=60.",
+      "hints": [
+        "Dùng chu vi đáy.",
+        "Nhân với chiều cao lăng trụ."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_007",
+      "card_id": "geo20-core-3",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-hinh-chop-deu",
+      "question": "Hình chóp đều có:",
+      "options": [
+        "Đáy là đa giác đều và chân đường cao ở tâm đáy",
+        "Mọi cạnh đều bằng nhau",
+        "Hai đáy song song",
+        "Mặt bên là hình chữ nhật"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-chop-deu"
+        ],
+        "type": "nhan-biet-hinh-chop-deu",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Đây là đặc trưng của hình chóp đều.",
+      "hints": [
+        "Có một đáy.",
+        "Chân đường cao ở tâm đáy."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_008",
+      "card_id": "geo20-core-3",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-xung-quanh-hinh-chop",
+      "question": "Hình chóp đều có nửa chu vi đáy p và trung đoạn d. Sxq:",
+      "options": [
+        "pd",
+        "2pd",
+        "(1/3)pd",
+        "p+d"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hinh-chop"
+        ],
+        "type": "dien-tich-xung-quanh-hinh-chop",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Sxq=p·d.",
+      "hints": [
+        "p đã là nửa chu vi.",
+        "Nhân với trung đoạn."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_009",
+      "card_id": "geo20-core-3",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "the-tich-hinh-chop",
+      "question": "Hình chóp có Sđáy=30 cm², h=9 cm. Thể tích:",
+      "options": [
+        "90 cm³",
+        "270 cm³",
+        "39 cm³",
+        "810 cm³"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-chop"
+        ],
+        "type": "the-tich-hinh-chop",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "V=(1/3)Sđáyh=(1/3)·30·9=90.",
+      "hints": [
+        "Có hệ số 1/3.",
+        "Đơn vị thể tích cm³."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_010",
+      "card_id": "geo20-core-4",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-hinh-tru",
+      "question": "Hình trụ tròn xoay có:",
+      "options": [
+        "Hai đáy là hai hình tròn bằng nhau song song",
+        "Một đáy tròn",
+        "Một đỉnh",
+        "Hai đáy tam giác"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-tru"
+        ],
+        "type": "nhan-biet-hinh-tru",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Hình trụ có hai đáy tròn bằng nhau song song.",
+      "hints": [
+        "Đếm đáy.",
+        "Hai hình tròn."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_011",
+      "card_id": "geo20-core-4",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-xung-quanh-hinh-non",
+      "question": "Hình nón bán kính r, đường sinh l. Sxq:",
+      "options": [
+        "πrl",
+        "2πrh",
+        "πr²h",
+        "(1/3)πr²h"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hinh-non"
+        ],
+        "type": "dien-tich-xung-quanh-hinh-non",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Diện tích xung quanh hình nón là πrl.",
+      "hints": [
+        "Dùng đường sinh l, không phải h.",
+        "π×r×l."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_012",
+      "card_id": "geo20-core-4",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "the-tich-hinh-tru",
+      "question": "Hình trụ r=3 cm, h=4 cm. Thể tích:",
+      "options": [
+        "36π cm³",
+        "12π cm³",
+        "24π cm³",
+        "9π cm³"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-tru"
+        ],
+        "type": "the-tich-hinh-tru",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "V=πr²h=π·9·4=36π.",
+      "hints": [
+        "Diện tích đáy πr².",
+        "Nhân chiều cao."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_013",
+      "card_id": "geo20-core-5",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-hinh-cau",
+      "question": "Mọi điểm trên mặt cầu tâm O bán kính R:",
+      "options": [
+        "Cách O một khoảng R",
+        "Cách O không quá R",
+        "Nằm trên một đường tròn duy nhất",
+        "Cách nhau R"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-cau"
+        ],
+        "type": "nhan-biet-hinh-cau",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Đó là định nghĩa mặt cầu.",
+      "hints": [
+        "Khoảng cách tới tâm cố định.",
+        "Bằng bán kính."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_014",
+      "card_id": "geo20-core-5",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-mat-cau",
+      "question": "Mặt cầu bán kính r có diện tích:",
+      "options": [
+        "4πr²",
+        "πr²",
+        "2πr²",
+        "(4/3)πr³"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-mat-cau"
+        ],
+        "type": "dien-tich-mat-cau",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "S=4πr².",
+      "hints": [
+        "Phân biệt diện tích và thể tích.",
+        "Diện tích có r²."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_015",
+      "card_id": "geo20-core-5",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "the-tich-hinh-cau",
+      "question": "Hình cầu bán kính 3 cm có thể tích:",
+      "options": [
+        "36π cm³",
+        "12π cm³",
+        "27π cm³",
+        "108π cm³"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-cau"
+        ],
+        "type": "the-tich-hinh-cau",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "V=(4/3)π·3³=36π.",
+      "hints": [
+        "Dùng 4/3 πr³.",
+        "3³=27."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

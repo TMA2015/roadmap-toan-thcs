@@ -203,6 +203,15 @@ Sau khi hoàn thành chuyên đề, học sinh cần:
 
 ## 📖 3. Kiến thức cốt lõi
 
+### 3.0. KNTT Core nền tảng hình phẳng và đối xứng
+
+Trước phần tổng hợp, cần chắc các nội dung Core lớp 6:
+
+- nhận biết tam giác đều, hình vuông, lục giác đều và các tứ giác đặc biệt;
+- tính chu vi, diện tích các hình phẳng quen thuộc trong bài đo lường thực tế;
+- **trục đối xứng:** đường thẳng mà phép đối xứng qua đó biến hình thành chính nó;
+- **tâm đối xứng:** điểm mà phép đối xứng tâm qua đó biến hình thành chính nó.
+
 ### 3.1. Nguyên tắc giải bài hình học tổng hợp
 
 Một bài tổng hợp thường không dùng một định lý duy nhất. Cần ghép nhiều mảnh kiến thức.
@@ -502,46 +511,17 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
-### Mức 1 – Nhận biết
+Phần luyện tập chính đã chuyển sang **Practice Room** để tách rõ KNTT Core với Entrance10/Challenge và ghi learner evidence theo skill.
 
-1. Hai góc vuông cùng nhìn đoạn `AB` gợi đến kết luận gì?
-2. Muốn chứng minh tiếp tuyến tại `A`, thường cần chứng minh quan hệ nào?
-3. Một hệ thức tích có thể chuyển về dạng gì để tìm tam giác đồng dạng?
-
-### Mức 2 – Thông hiểu
-
-4. Cho `C`, `D` nằm cùng phía đối với đường thẳng `AB` và `∠ACB = ∠ADB`. Nêu một hướng để chứng minh bốn điểm `A, B, C, D` nội tiếp.
-5. Hai tam giác đã đồng dạng. Hãy nêu cách suy ra một hệ thức tích từ tỉ số cạnh.
-6. Một hình hộp chữ nhật có kích thước `3 cm`, `4 cm`, `5 cm`. Tính thể tích.
-
-### Mức 3 – Vận dụng
-
-7. Chứng minh một tứ giác nội tiếp rồi dùng các góc nội tiếp để chứng minh hai tam giác đồng dạng.
-8. Từ hai tam giác đồng dạng, suy ra một hệ thức tích đoạn thẳng.
-9. Chứng minh một đường thẳng là tiếp tuyến sau khi đã có một tứ giác nội tiếp.
-
-### Mức 4 – Tổng hợp
-
-10. Giải một bài gồm chuỗi: nội tiếp → đồng dạng → hệ thức tích.
-11. Giải một bài gồm chuỗi: đồng dạng → vuông góc → tiếp tuyến.
-12. Một bài toán thực tế yêu cầu tính diện tích hoặc thể tích sau khi tìm một độ dài bằng lượng giác.
+- **→ [Mở Practice Room](bai-tap.md)**
 
 ---
 
 ## ✅ 9. Tự kiểm tra
 
-Hãy tự trả lời không nhìn tài liệu:
+Sau khi luyện, làm **Core Readiness Check**. Kết quả là **soft mastery**: dùng để gợi ý ôn lại, không khóa lộ trình.
 
-1. Hai góc vuông cùng nhìn một đoạn gợi đến định lý nào?
-2. Khi cần chứng minh hệ thức tích, nên thử chuyển về dạng gì?
-3. Muốn chứng minh tiếp tuyến, thường cần chứng minh gì?
-4. Khi thấy nhiều góc bằng nhau, nên nghĩ tới công cụ nào?
-5. Khi thấy song song trong tam giác, nên nghĩ tới gì?
-6. Khi thấy hai góc đối bù nhau, nên nghĩ tới gì?
-7. Một bài hình nhiều ý có nên dùng lại kết quả ý trước không?
-8. Diện tích và thể tích khác nhau về đơn vị như thế nào?
-
-**Tiêu chí đạt:** đúng ít nhất `7/8` câu và giải được một bài tổng hợp có ít nhất ba bước suy luận.
+- **→ [Mở Core Readiness Check](tu-kiem-tra.md)**
 
 ---
 
@@ -562,12 +542,10 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+- [ ] Đã học đủ 5 chặng KNTT Core ở đầu trang.
+- [ ] Đã luyện Practice Room và chữa lại các câu sai.
+- [ ] Đã làm Core Readiness Check; khoảng 80% trở lên là tín hiệu sẵn sàng.
+- [ ] Không suy dữ kiện từ hình vẽ; công thức đo lường dùng đúng đại lượng và đơn vị.
 
-- [ ] Nhận diện được cấu hình cần dùng trong bài tổng hợp.
-- [ ] Xây dựng được chuỗi suy luận ít nhất ba bước.
-- [ ] Chứng minh được nội tiếp, đồng dạng và tiếp tuyến.
-- [ ] Chứng minh được một hệ thức tích.
-- [ ] Tính đúng độ dài, diện tích hoặc thể tích khi bài yêu cầu.
-- [ ] Trình bày mỗi kết luận kèm lý do.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 21.
+!!! note "Soft Mastery"
+    Kết quả không khóa chuyên đề tiếp theo; evidence yếu chỉ tạo gợi ý ôn đúng skill.

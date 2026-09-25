@@ -1,6 +1,6 @@
 {
   "schema": "roadmap-geometry-core-coverage-v1",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "status": "ACTIVE_ROLLOUT",
   "generated_from": [
     "kntt-grade6-map.json",
@@ -18,8 +18,8 @@
   "summary": {
     "topics": 8,
     "total_curriculum_core_skills": 124,
-    "exact_id_covered": 90,
-    "exact_id_gaps": 34
+    "exact_id_covered": 124,
+    "exact_id_gaps": 0
   },
   "topics": [
     {
@@ -691,9 +691,7 @@
         "do-dai-duong-tron",
         "goc-noi-tiep",
         "tu-giac-noi-tiep",
-        "dau-hieu-noi-tiep"
-      ],
-      "missing_by_exact_skill_id": [
+        "dau-hieu-noi-tiep",
         "cung-va-day",
         "do-dai-cung",
         "dien-tich-quat-tron",
@@ -704,6 +702,7 @@
         "duong-tron-noi-tiep-tam-giac",
         "da-giac-deu"
       ],
+      "missing_by_exact_skill_id": [],
       "bank_skills_not_core_by_current_map": [
         "goc-o-tam",
         "nua-duong-tron",
@@ -798,8 +797,8 @@
       ],
       "counts": {
         "core": 14,
-        "exact_present": 5,
-        "exact_missing": 9,
+        "exact_present": 14,
+        "exact_missing": 0,
         "bank_extra": 8
       }
     },
@@ -847,9 +846,7 @@
         "the-tich-hop-chu-nhat",
         "dien-tich-day",
         "doi-don-vi-do-luong",
-        "the-tich-lang-tru"
-      ],
-      "missing_by_exact_skill_id": [
+        "the-tich-lang-tru",
         "nhan-biet-tam-giac-deu",
         "nhan-biet-hinh-vuong",
         "nhan-biet-luc-giac-deu",
@@ -876,6 +873,7 @@
         "dien-tich-mat-cau",
         "the-tich-hinh-cau"
       ],
+      "missing_by_exact_skill_id": [],
       "bank_skills_not_core_by_current_map": [
         "nhan-dang-cong-cu",
         "song-song-dong-dang",
@@ -953,8 +951,8 @@
       ],
       "counts": {
         "core": 29,
-        "exact_present": 4,
-        "exact_missing": 25,
+        "exact_present": 29,
+        "exact_missing": 0,
         "bank_extra": 9
       }
     }

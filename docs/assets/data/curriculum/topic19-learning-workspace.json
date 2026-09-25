@@ -1,0 +1,143 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "19-duong-tron",
+  "title": "Đường tròn",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only mapped Core cards contribute to readiness; support/Entrance10/Challenge never gate Core."
+  },
+  "cards": [
+    {
+      "id": "geo19-core-1",
+      "order": 1,
+      "title": "Dây, cung và độ dài đường tròn",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "day-va-tam",
+        "cung-va-day",
+        "do-dai-duong-tron",
+        "do-dai-cung"
+      ],
+      "prerequisites": [
+        "goc-o-tam"
+      ],
+      "micro_practice": [
+        "GEO19MICRO_001",
+        "GEO19MICRO_002",
+        "GEO19MICRO_003"
+      ]
+    },
+    {
+      "id": "geo19-core-2",
+      "order": 2,
+      "title": "Vị trí tương đối",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "vi-tri-tuong-doi-duong-thang-duong-tron",
+        "vi-tri-tuong-doi-hai-duong-tron"
+      ],
+      "prerequisites": [
+        "khoang-cach-diem-duong-thang"
+      ],
+      "micro_practice": [
+        "GEO19MICRO_004",
+        "GEO19MICRO_005",
+        "GEO19MICRO_006"
+      ]
+    },
+    {
+      "id": "geo19-core-3",
+      "order": 3,
+      "title": "Góc nội tiếp",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "goc-noi-tiep"
+      ],
+      "prerequisites": [
+        "do-goc"
+      ],
+      "micro_practice": [
+        "GEO19MICRO_007",
+        "GEO19MICRO_008",
+        "GEO19MICRO_009"
+      ]
+    },
+    {
+      "id": "geo19-core-4",
+      "order": 4,
+      "title": "Nội tiếp và ngoại tiếp tam giác",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tu-giac-noi-tiep",
+        "dau-hieu-noi-tiep",
+        "duong-tron-ngoai-tiep-tam-giac",
+        "duong-tron-noi-tiep-tam-giac"
+      ],
+      "prerequisites": [
+        "tam-ngoai-tiep",
+        "tam-noi-tiep"
+      ],
+      "micro_practice": [
+        "GEO19MICRO_010",
+        "GEO19MICRO_011",
+        "GEO19MICRO_012"
+      ]
+    },
+    {
+      "id": "geo19-core-5",
+      "order": 5,
+      "title": "Đa giác đều, quạt tròn và vành khuyên",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "da-giac-deu",
+        "dien-tich-quat-tron",
+        "dien-tich-vanh-khuyen"
+      ],
+      "prerequisites": [
+        "do-dai-duong-tron"
+      ],
+      "micro_practice": [
+        "GEO19MICRO_013",
+        "GEO19MICRO_014",
+        "GEO19MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "geo19-ext-1",
+      "layer": "Core-Support",
+      "title": "Góc ở tâm, nửa đường tròn và tiếp tuyến–bán kính hỗ trợ suy luận",
+      "gates_core": false
+    },
+    {
+      "id": "geo19-ext-2",
+      "layer": "Entrance10",
+      "title": "Chứng minh tiếp tuyến và chuỗi nội tiếp–đồng dạng",
+      "gates_core": false
+    },
+    {
+      "id": "geo19-ext-3",
+      "layer": "Challenge",
+      "title": "Hệ thức hai dây / tiếp tuyến–cát tuyến và bài nhiều bước",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/19-duong-tron-micro-v1.json",
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json"
+}

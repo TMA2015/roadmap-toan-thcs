@@ -7,7 +7,7 @@
     "title": "Đường tròn"
   },
   "session_size": 10,
-  "question_count": 120,
+  "question_count": 147,
   "skill_labels": {
     "goc-o-tam": "Góc ở tâm",
     "goc-noi-tiep": "Góc nội tiếp",
@@ -21,7 +21,16 @@
     "tiep-tuyen-cat-tuyen": "Tiếp tuyến – cát tuyến",
     "chung-minh-tiep-tuyen": "Chứng minh tiếp tuyến",
     "goc-cung": "Góc và cung tổng hợp",
-    "do-dai-duong-tron": "Hệ thức độ dài trong đường tròn"
+    "do-dai-duong-tron": "Hệ thức độ dài trong đường tròn",
+    "cung-va-day": "Quan hệ cung và dây",
+    "do-dai-cung": "Độ dài cung",
+    "dien-tich-quat-tron": "Diện tích quạt tròn",
+    "dien-tich-vanh-khuyen": "Diện tích vành khuyên",
+    "vi-tri-tuong-doi-duong-thang-duong-tron": "Vị trí tương đối đường thẳng – đường tròn",
+    "vi-tri-tuong-doi-hai-duong-tron": "Vị trí tương đối hai đường tròn",
+    "duong-tron-ngoai-tiep-tam-giac": "Đường tròn ngoại tiếp tam giác",
+    "duong-tron-noi-tiep-tam-giac": "Đường tròn nội tiếp tam giác",
+    "da-giac-deu": "Đa giác đều"
   },
   "skill_groups": [
     {
@@ -60,12 +69,28 @@
         "tiep-tuyen-cat-tuyen",
         "do-dai-duong-tron"
       ]
+    },
+    {
+      "id": "kntt-core-bo-sung",
+      "label": "E. KNTT Core bổ sung lớp 9",
+      "skills": [
+        "cung-va-day",
+        "do-dai-cung",
+        "dien-tich-quat-tron",
+        "dien-tich-vanh-khuyen",
+        "vi-tri-tuong-doi-duong-thang-duong-tron",
+        "vi-tri-tuong-doi-hai-duong-tron",
+        "duong-tron-ngoai-tiep-tam-giac",
+        "duong-tron-noi-tiep-tam-giac",
+        "da-giac-deu"
+      ]
     }
   ],
   "sources": [
     "19-duong-tron-v1-01.json",
     "19-duong-tron-v1-02.json",
     "19-duong-tron-v1-03.json",
-    "19-duong-tron-v1-04.json"
+    "19-duong-tron-v1-04.json",
+    "19-duong-tron-v1-05.json"
   ]
 }
