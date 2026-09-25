@@ -1,0 +1,146 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "10-ham-so-do-thi",
+  "title": "Hàm số và đồ thị",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Core preserves Grade 8 linear-function foundations and Grade 9 y=ax² progression."
+  },
+  "cards": [
+    {
+      "id": "fun10-core-1",
+      "order": 1,
+      "title": "Khái niệm hàm số & bảng giá trị",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "khai-niem-ham-so",
+        "tinh-gia-tri-ham",
+        "bang-gia-tri"
+      ],
+      "prerequisites": [
+        "bieu-thuc-dai-so"
+      ],
+      "micro_practice": [
+        "FUN10MICRO_001",
+        "FUN10MICRO_002",
+        "FUN10MICRO_003"
+      ]
+    },
+    {
+      "id": "fun10-core-2",
+      "order": 2,
+      "title": "Tọa độ & điểm thuộc đồ thị",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "toa-do-diem",
+        "diem-thuoc-do-thi"
+      ],
+      "prerequisites": [
+        "mat-phang-toa-do"
+      ],
+      "micro_practice": [
+        "FUN10MICRO_004",
+        "FUN10MICRO_005",
+        "FUN10MICRO_006"
+      ]
+    },
+    {
+      "id": "fun10-core-3",
+      "order": 3,
+      "title": "Hàm số bậc nhất",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-ham-bac-nhat",
+        "he-so-goc",
+        "tung-do-goc",
+        "dong-nghich-bien"
+      ],
+      "prerequisites": [
+        "khai-niem-ham-so"
+      ],
+      "micro_practice": [
+        "FUN10MICRO_007",
+        "FUN10MICRO_008",
+        "FUN10MICRO_009"
+      ]
+    },
+    {
+      "id": "fun10-core-4",
+      "order": 4,
+      "title": "Vẽ đồ thị hàm số bậc nhất",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "ve-do-thi-ham-bac-nhat"
+      ],
+      "prerequisites": [
+        "toa-do-diem",
+        "nhan-biet-ham-bac-nhat"
+      ],
+      "micro_practice": [
+        "FUN10MICRO_010",
+        "FUN10MICRO_011",
+        "FUN10MICRO_012"
+      ]
+    },
+    {
+      "id": "fun10-core-5",
+      "order": 5,
+      "title": "Parabol \\(y=ax^2\\)",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "ham-y-ax2",
+        "doi-xung-parabol",
+        "diem-thuoc-parabol"
+      ],
+      "prerequisites": [
+        "khai-niem-ham-so",
+        "toa-do-diem"
+      ],
+      "micro_practice": [
+        "FUN10MICRO_013",
+        "FUN10MICRO_014",
+        "FUN10MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "fun10-ext-1",
+      "layer": "Entrance10",
+      "title": "Vị trí hai đường thẳng & giao điểm đồ thị",
+      "gates_core": false
+    },
+    {
+      "id": "fun10-ext-2",
+      "layer": "Entrance10",
+      "title": "Liên hệ hệ phương trình",
+      "gates_core": false
+    },
+    {
+      "id": "fun10-ch-1",
+      "layer": "Specialized-Challenge",
+      "title": "Tham số và đồ thị tổng hợp",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/10-ham-so-do-thi-micro-v1.json",
+  "qa_notes": [
+    "vi-tri-hai-duong-thang, giao-diem-do-thi and lien-he-he-phuong-trinh stay layer-review/cross-link in this rollout.",
+    "ham-y-ax2, doi-xung-parabol and diem-thuoc-parabol are Grade 9 Core."
+  ]
+}
