@@ -64,3 +64,8 @@
 .topic-micro-note{margin-top:.4rem;font-size:.75rem;opacity:.72}
 @media(max-width:1000px){.topic-core-card.is-active{grid-template-columns:auto 1fr}.topic-micro-panel{grid-column:1/-1;border-left:0;border-top:1px solid var(--md-default-fg-color--lightest);padding:.75rem 0 0}}
 @media(max-width:600px){.topic-micro-options{grid-template-columns:1fr}}
+
+/* Golden Template v1 mobile/touch hardening */
+.topic-micro-options{gap:.5rem}
+.topic-micro-option{min-height:44px;min-width:0;overflow-wrap:anywhere}
+.topic-micro-option mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
