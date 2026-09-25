@@ -1,0 +1,150 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "ALG-BATCH-04-06-CHATGPT-REVIEW-001",
+  "task_id": "ALG-BATCH-04-06-001",
+  "context_version": "1.0.22",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "INTEGRATION_DECISION",
+  "scope": {
+    "layer": [
+      "KNTT-Core",
+      "Entrance10",
+      "Specialized-Challenge"
+    ],
+    "topics": [
+      "04-bieu-thuc-dai-so",
+      "05-7-hang-dang-thuc",
+      "06-phan-tich-da-thuc"
+    ],
+    "skills": []
+  },
+  "source_artifacts": [
+    "docs/assets/data/collaboration/packets/ALG-BATCH-04-06-GEMINI-AUTHOR-001.json",
+    "docs/assets/data/curriculum/kntt-grade7-map.json",
+    "docs/assets/data/curriculum/kntt-grade8-map.json",
+    "docs/assets/data/practice/04-bieu-thuc-dai-so-v2.manifest.json",
+    "docs/assets/data/practice/05-7-hang-dang-thuc-v1.manifest.json",
+    "docs/assets/data/practice/06-phan-tich-da-thuc-v1.manifest.json",
+    "docs/assets/data/curriculum/golden-template-v1.json"
+  ],
+  "claims": [
+    {
+      "id": "R1",
+      "status": "FACT_VERIFIED",
+      "statement": "The Gemini response covers Learning Workspace / Micro-Practice only and does not yet satisfy the requested complete batch deliverables for Practice Room written work, Core Readiness assessments, and Knowledge Graph review candidates.",
+      "evidence": [
+        "Original AUTHOR packet proposed_changes and acceptance requirements"
+      ]
+    },
+    {
+      "id": "R2",
+      "status": "DISAGREEMENT",
+      "statement": "CĐ06 Card 5 cannot use tach-hang-tu-giua inside KNTT Core. The reviewed Grade 8 mapping explicitly excludes this skill from Core.",
+      "evidence": [
+        "kntt-grade8-map.json practice_alignment.06-phan-tich-da-thuc.grade8_core_exclude"
+      ]
+    },
+    {
+      "id": "R3",
+      "status": "DISAGREEMENT",
+      "statement": "CĐ06 Core micro-practice should not use giai-pt-bang-nhan-tu as an assessed Core skill without new curriculum evidence. Equation-solving items proposed in Cards 1, 4 and 5 must be moved to Entrance10/Extension or replaced.",
+      "evidence": [
+        "Original AUTHOR packet marks giai-pt-bang-nhan-tu non-Core by default pending source evidence"
+      ]
+    },
+    {
+      "id": "R4",
+      "status": "DISAGREEMENT",
+      "statement": "CĐ05 Core must not promote giai-phuong-trinh-hdt without explicit KNTT evidence; the proposed equation-solving item in Card 5 should be replaced or moved out of Core.",
+      "evidence": [
+        "Original AUTHOR packet marks giai-phuong-trinh-hdt non-Core by default pending source evidence"
+      ]
+    },
+    {
+      "id": "R5",
+      "status": "PEDAGOGICAL_PROPOSAL",
+      "statement": "CĐ04 is a Vertical Spine topic spanning Grade 7 foundations and Grade 8 development; the Learning Workspace should preserve that story rather than frame the entire topic as only 'Lớp 8 đa thức nhiều biến'.",
+      "evidence": [
+        "kntt-grade7-map.json + kntt-grade8-map.json"
+      ]
+    },
+    {
+      "id": "R6",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Every final micro item must explicitly declare exactly one assessed skill_id, optional supporting_skills, four options, canonical answer, explanation, hints, and kebab-case observed_signal only where the distractor has one defensible primary interpretation.",
+      "evidence": [
+        "Golden Template v1 + CĐ07 micro-practice schema conventions"
+      ]
+    },
+    {
+      "id": "R7",
+      "status": "PEDAGOGICAL_PROPOSAL",
+      "statement": "Five cards per topic is acceptable if pedagogically coherent, but it is not a frozen invariant. Golden Template freezes the 3-layer flow and 3 micro items per Core card, not an exact card count for every topic.",
+      "evidence": [
+        "golden-template-v1.json"
+      ]
+    }
+  ],
+  "proposed_changes": [
+    {
+      "artifact": "CĐ04 revised Learning Workspace",
+      "change": "Preserve Grade 7 -> Grade 8 vertical progression. Explicitly model da-thuc-mot-bien and chia-da-thuc-cho-don-thuc. Do not assume lap-bieu-thuc/bai-toan-thuc-te/dieu-kien-xac-dinh are Core merely because they exist in the bank.",
+      "rationale": "Align topic scope with reviewed KNTT overlays and Vertical Spine philosophy."
+    },
+    {
+      "artifact": "CĐ05 revised micro-practice",
+      "change": "Keep identity recognition/expansion/transformation/application Core; remove or move equation-solving via identities unless explicit curriculum evidence is supplied. Review reverse-factorization items before labeling phan-tich-hdt Core.",
+      "rationale": "Respect original Core caution list."
+    },
+    {
+      "artifact": "CĐ06 revised Learning Workspace",
+      "change": "Replace Card 5 'tách hạng tử' with a Core card such as 'Kiểm tra kết quả & lựa chọn/phối hợp phương pháp' using kiem-tra-phan-tich/phoi-hop-phuong-phap. Remove Core equation-solving items; move them to Entrance10/Extension.",
+      "rationale": "tach-hang-tu-giua and giai-pt-bang-nhan-tu are not accepted Core skills."
+    },
+    {
+      "artifact": "Complete batch deliverables",
+      "change": "Return Practice Room written-practice plans, 10–12 Core Readiness MCQs per topic, and KG review candidates for all three topics in the same packet.",
+      "rationale": "The original task explicitly requested one complete batch, not a micro-practice-only response."
+    }
+  ],
+  "tests": [
+    {
+      "id": "T1",
+      "expected": "Response contains all five requested deliverable groups for all three topics.",
+      "result": "FAIL"
+    },
+    {
+      "id": "T2",
+      "expected": "CĐ06 tach-hang-tu-giua absent from Core cards/readiness.",
+      "result": "FAIL"
+    },
+    {
+      "id": "T3",
+      "expected": "CĐ06 giai-pt-bang-nhan-tu not promoted to Core without evidence.",
+      "result": "FAIL"
+    },
+    {
+      "id": "T4",
+      "expected": "CĐ05 giai-phuong-trinh-hdt not promoted to Core without evidence.",
+      "result": "FAIL"
+    },
+    {
+      "id": "T5",
+      "expected": "CĐ04 preserves Vertical Spine Grade 7 -> Grade 8 scope and models confirmed gaps.",
+      "result": "PARTIAL"
+    },
+    {
+      "id": "T6",
+      "expected": "Final authored items use explicit assessed skill IDs and Golden Template evidence semantics.",
+      "result": "NOT_RUN"
+    }
+  ],
+  "uncertainties": [
+    "Reverse use of identities for factorization in CĐ05 may be valid within KNTT wording 'biến đổi và vận dụng', but the reviewed mapping did not promote phan-tich-hdt as a Core skill. Gemini should either source-justify it or move those items to CĐ06 where factorization is explicitly Core."
+  ],
+  "acceptance": {
+    "verdict": "BLOCKED",
+    "notes": "Strong micro-practice draft, but not integration-ready. Return one revised COMPLETE packet for CĐ04+CĐ05+CĐ06 addressing Core-scope violations and adding the missing Practice Room, Readiness, and KG deliverables."
+  }
+}
