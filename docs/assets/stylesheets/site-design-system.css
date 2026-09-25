@@ -352,19 +352,19 @@ body{letter-spacing:-.008em}
 /* Desktop lesson typography: the prior 77rem breakpoint missed 1366–1440px laptops.
    Target only article headings; homepage/hero typography and mobile stay unchanged. */
 @media(min-width:60rem){
-  .md-content__inner > .md-typeset > h1{
+  .md-content__inner.md-typeset > h1, .md-content__inner > .md-typeset > h1{
     font-size:1.57rem;line-height:1.24;letter-spacing:-.022em;font-weight:790;
     margin-top:.65rem;margin-bottom:1rem;padding-bottom:.6rem;
   }
-  .md-content__inner > .md-typeset > h2{
+  .md-content__inner.md-typeset > h2, .md-content__inner > .md-typeset > h2{
     font-size:1.12rem;line-height:1.36;letter-spacing:-.017em;
     font-weight:760;margin-top:1.65rem;padding:.55rem .72rem;
   }
-  .md-content__inner > .md-typeset > h3{
+  .md-content__inner.md-typeset > h3, .md-content__inner > .md-typeset > h3{
     font-size:.97rem;line-height:1.42;letter-spacing:-.008em;font-weight:720;
     margin-top:1.2rem;
   }
-  .md-content__inner > .md-typeset{line-height:1.68}
+  .md-content__inner.md-typeset, .md-content__inner > .md-typeset{line-height:1.68}
 }
 
 /* Topic 25 is an academic-first capstone; strategy is a separate lane. */
