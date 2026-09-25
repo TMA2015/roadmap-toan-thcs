@@ -163,6 +163,17 @@ Sau khi hoàn thành chuyên đề, học sinh cần:
 
 ## 📖 3. Kiến thức cốt lõi
 
+### 3.0. KNTT Core bổ sung: cung, vị trí tương đối và đo lường đường tròn
+
+- **Cung và dây:** trong cùng một đường tròn, hai dây bằng nhau chắn hai cung nhỏ bằng nhau và ngược lại.
+- **Độ dài cung:** \(l=\frac{n}{360}\cdot2\pi R\).
+- **Diện tích quạt tròn:** \(S=\frac{n}{360}\pi R^2\).
+- **Vành khuyên:** \(S=\pi(R^2-r^2)\), với \(R>r\).
+- **Đường thẳng và đường tròn:** so sánh khoảng cách từ tâm đến đường thẳng với bán kính \(R\): nhỏ hơn → 2 giao điểm; bằng → tiếp tuyến; lớn hơn → không giao.
+- **Hai đường tròn:** so sánh khoảng cách hai tâm \(d\) với \(R+r\) và \(|R-r|\) để xác định cắt nhau, tiếp xúc hoặc không giao.
+- **Ngoại tiếp tam giác:** tâm là giao các đường trung trực. **Nội tiếp tam giác:** tâm là giao các đường phân giác.
+- **Đa giác đều:** có các cạnh bằng nhau và các góc bằng nhau.
+
 ### 3.1. Góc ở tâm và góc nội tiếp
 
 Nếu `∠AOB` là góc ở tâm và `∠ACB` là góc nội tiếp cùng chắn cung `AB`, thì:
@@ -364,45 +375,17 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
-### Mức 1 – Nhận biết
+Phần luyện tập chính đã chuyển sang **Practice Room** để tách rõ KNTT Core với Entrance10/Challenge và ghi learner evidence theo skill.
 
-1. Góc nội tiếp chắn nửa đường tròn bằng bao nhiêu độ?
-2. Tiếp tuyến vuông góc với đoạn nào tại tiếp điểm?
-3. Hai tiếp tuyến từ cùng một điểm ngoài có độ dài như thế nào?
-
-### Mức 2 – Thông hiểu
-
-4. Góc ở tâm chắn cung `AB` bằng `120°`. Tính góc nội tiếp cùng chắn cung đó.
-5. Hai dây cắt nhau tại `I`, biết `IA = 3`, `IB = 8`, `IC = 4`. Tính `ID`.
-6. Từ `P` ngoài đường tròn, `PT` là tiếp tuyến, cát tuyến cắt tại `A`, `B`. Biết `PA = 4`, `PB = 9`. Tính `PT`.
-
-### Mức 3 – Vận dụng
-
-7. Chứng minh một tứ giác nội tiếp bằng cách chứng minh tổng hai góc đối bằng `180°`.
-8. Chứng minh một đường thẳng là tiếp tuyến bằng cách chứng minh vuông góc với bán kính tại tiếp điểm.
-9. Từ hai tiếp tuyến `PA`, `PB`, hãy khai thác `PA = PB` để chứng minh một tam giác cân.
-
-### Mức 4 – Tổng hợp
-
-10. Trong một cấu hình có tiếp tuyến và dây cung, hãy chứng minh hai tam giác đồng dạng rồi suy ra một hệ thức tích.
-11. Cho bốn điểm tạo thành hai góc vuông. Hãy chứng minh chúng cùng thuộc một đường tròn và tiếp tục tính một góc liên quan.
+- **→ [Mở Practice Room](bai-tap.md)**
 
 ---
 
 ## ✅ 9. Tự kiểm tra
 
-Hãy tự trả lời không nhìn tài liệu:
+Sau khi luyện, làm **Core Readiness Check**. Kết quả là **soft mastery**: dùng để gợi ý ôn lại, không khóa lộ trình.
 
-1. Góc nội tiếp bằng bao nhiêu lần góc ở tâm cùng chắn cung?
-2. Góc nội tiếp chắn đường kính bằng bao nhiêu độ?
-3. Điều kiện nhận biết một tiếp tuyến tại điểm `A` là gì?
-4. Hai tiếp tuyến từ một điểm ngoài có tính chất gì?
-5. Nêu một dấu hiệu chứng minh tứ giác nội tiếp.
-6. Hệ thức hai dây cắt nhau là gì?
-7. Hệ thức tiếp tuyến – cát tuyến là gì?
-8. Khi thấy nhiều góc bằng nhau trong đường tròn, nên kiểm tra điều gì?
-
-**Tiêu chí đạt:** đúng ít nhất `7/8` câu và giải được một bài chứng minh nội tiếp hoặc tiếp tuyến.
+- **→ [Mở Core Readiness Check](tu-kiem-tra.md)**
 
 ---
 
@@ -421,12 +404,10 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## 🏁 11. Điều kiện hoàn thành
 
-Chuyên đề được xem là hoàn thành khi học sinh:
+- [ ] Đã học đủ 5 chặng KNTT Core ở đầu trang.
+- [ ] Đã luyện Practice Room và chữa lại các câu sai.
+- [ ] Đã làm Core Readiness Check; khoảng 80% trở lên là tín hiệu sẵn sàng.
+- [ ] Không suy dữ kiện từ hình vẽ; công thức đo lường dùng đúng đại lượng và đơn vị.
 
-- [ ] Phân biệt đúng góc ở tâm và góc nội tiếp.
-- [ ] Chứng minh được một tiếp tuyến.
-- [ ] Chứng minh được một tứ giác nội tiếp.
-- [ ] Dùng đúng hai hệ thức tích đoạn thẳng.
-- [ ] Kết hợp được đường tròn với đồng dạng.
-- [ ] Giải được ít nhất một bài hình tổng hợp có đường tròn.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai trước khi chuyển sang Chuyên đề 20.
+!!! note "Soft Mastery"
+    Kết quả không khóa chuyên đề tiếp theo; evidence yếu chỉ tạo gợi ý ôn đúng skill.

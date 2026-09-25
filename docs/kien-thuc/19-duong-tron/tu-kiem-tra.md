@@ -1,87 +1,25 @@
-# Tự kiểm tra – Chuyên đề 19: Đường tròn
+# Core Readiness Check – Chuyên đề 19 – Đường tròn
 
-> **Thời gian gợi ý:** 45 phút
-> **Thang điểm:** 10 điểm
+> **Mục tiêu:** kiểm tra khả năng giải độc lập phần **KNTT Core**.
+>
+> **Nguyên tắc:** không gợi ý, không Tutor và không báo đúng/sai từng câu; chỉ chấm sau khi **Nộp bài**.
 
-# Đề tự kiểm tra
-
-## Câu 1 — 0,5 điểm
-Góc nội tiếp chắn nửa đường tròn bằng bao nhiêu?
-
-## Câu 2 — 0,5 điểm
-Nêu điều kiện nhận biết tiếp tuyến tại điểm \(A\).
-
-## Câu 3 — 0,75 điểm
-Góc ở tâm chắn cung \(AB\) bằng \(100^\circ\). Tính góc nội tiếp cùng chắn cung.
-
-## Câu 4 — 0,75 điểm
-Hai dây cắt nhau tại \(I\), \(IA=3,IB=8,IC=4\). Tính \(ID\).
-
-## Câu 5 — 1,0 điểm
-Từ \(P\) ngoài đường tròn, \(PT\) tiếp tuyến, cát tuyến \(PAB\), \(PA=4,PB=9\). Tính \(PT\).
-
-## Câu 6 — 1,0 điểm
-Tứ giác nội tiếp có \(\angle A=110^\circ\). Tính \(\angle C\).
-
-## Câu 7 — 1,25 điểm
-Từ \(P\) ngoài đường tròn kẻ hai tiếp tuyến \(PA,PB\). Chứng minh \(PA=PB\).
-
-## Câu 8 — 1,25 điểm
-Nếu \(\angle AMB=\angle ANB=90^\circ\), chứng minh \(A,M,B,N\) cùng thuộc một đường tròn.
-
-## Câu 9 — 1,5 điểm
-Cho \(A\) thuộc đường tròn tâm \(O\), đường thẳng \(d\) qua \(A\) và \(d\perp OA\). Chứng minh \(d\) là tiếp tuyến.
-
-## Câu 10 — 1,5 điểm
-Nêu điều kiện áp dụng đúng hai định lý: hai dây cắt nhau và tiếp tuyến–cát tuyến; giải thích điểm giao/điểm xuất phát phải nằm ở đâu.
-
-# Đáp án và hướng dẫn chấm
-
-1. \(90^\circ\).
-2. \(A\) thuộc đường tròn và đường thẳng qua \(A\) vuông góc \(OA\).
-3. \(50^\circ\).
-4. 6.
-5. 6.
-6. \(70^\circ\).
-7. Hai tam giác vuông \(OAP,OBP\): \(OP\) chung, \(OA=OB\) \(\Rightarrow\) bằng nhau theo cạnh huyền – cạnh góc vuông, nên \(PA=PB\).
-8. Cả \(M,N\) đều nhìn \(AB\) dưới góc vuông, nên thuộc đường tròn đường kính \(AB\).
-9. Dùng dấu hiệu tiếp tuyến.
-10. Hai dây: giao điểm ở trong đường tròn. Tiếp tuyến–cát tuyến: điểm xuất phát ở ngoài đường tròn.
-
-# Bảng truy nguyên lỗi
-
-| Sai câu | Nên quay lại |
-|---|---|
-| 1, 3 | Góc nội tiếp – góc ở tâm |
-| 2, 7, 9 | Tiếp tuyến |
-| 4 | Hai dây cắt nhau |
-| 5, 10 | Tiếp tuyến–cát tuyến |
-| 6, 8 | Tứ giác nội tiếp |
-
-# Thang tự đánh giá
-
-| Điểm | Mức | Hành động đề xuất |
-|---:|---|---|
-| 9,0–10 | Hoàn thành tốt | Có thể tiếp tục lộ trình; vẫn chữa mọi câu chưa chắc |
-| 7,0–8,75 | Đạt | Chữa toàn bộ câu sai rồi chuyển tiếp |
-| 5,0–6,75 | Chưa chắc | Quay lại đúng dạng bài còn yếu và luyện thêm M2–M3 |
-| Dưới 5,0 | Cần củng cố | Học lại kiến thức cốt lõi và làm lại M1–M2 |
-
-> Điểm số chỉ là một tín hiệu. Quan trọng hơn là xác định **loại lỗi** và sửa đúng phần kiến thức gốc.
+<div data-readiness-check-v1="assets/data/assessment/19-duong-tron-core-v1.json"></div>
 
 ---
 
-# Checklist sau khi chấm
+## Cách hiểu kết quả
+- **Sẵn sàng học tiếp:** khoảng 80% trở lên.
+- **Nên củng cố thêm:** quay lại Practice Room đúng skill còn sai.
+- **Chưa đủ evidence:** còn quá nhiều câu chưa trả lời.
 
-- [ ] Tôi đã ghi lại điểm số.
-- [ ] Tôi đã đối chiếu từng câu sai với **Bảng truy nguyên lỗi**.
-- [ ] Tôi đã xác định lỗi thuộc nhóm kiến thức / biến đổi / dấu / điều kiện / mô hình hóa / kết luận / trình bày.
-- [ ] Tôi đã làm lại từng câu sai mà không nhìn đáp án.
-- [ ] Tôi đã luyện lại kỹ năng yếu trong Practice Bank nếu cần.
-- [ ] Nếu đạt từ 7 điểm trở lên, tôi đã chữa xong các câu sai trước khi chuyển tiếp.
+!!! note "Soft Mastery"
+    Đây không phải cổng khóa.
 
-# Liên kết Roadmap
+!!! warning "Geometry Architecture"
+    Hình vẽ không tạo thêm giả thiết. Với hình khối/đo lường, luôn kiểm tra đúng công thức và đơn vị trước khi kết luận.
 
-- **← Bài học:** [Chuyên đề 19](index.md)
-- **← Luyện tập:** [Bài tập Chuyên đề 19](bai-tap.md)
-- **→ Nếu đạt:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
+## Liên kết Roadmap
+- **← Học:** [Chuyên đề 19 – Đường tròn](index.md)
+- **← Luyện tập:** [Practice Room](bai-tap.md)
+- **→ Học tiếp:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
