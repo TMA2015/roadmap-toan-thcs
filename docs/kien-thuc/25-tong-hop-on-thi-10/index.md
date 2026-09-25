@@ -499,6 +499,10 @@ Mức ưu tiên tổng thể của chuyên đề: **⭐⭐⭐⭐⭐**.
 
 ---
 
+## Learning Journey · 5 thẻ học theo hai mạch
+
+Bộ năm thẻ bên dưới gồm **ba thẻ học thuật** và **hai thẻ kỹ năng thi**. Nội dung học thuật được ôn trước, phần kỹ năng thi dùng sau khi đã làm bài và chữa lỗi.
+
 ## 📝 8. Luyện tập
 
 Chuyên đề 25 từ nay tách rõ **ba đường luyện khác nhau** để không trộn “biết Toán” với “biết làm bài thi”:
