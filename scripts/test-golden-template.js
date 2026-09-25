@@ -12,6 +12,24 @@ const practice = fs.readFileSync(practicePath, "utf8");
 const check = fs.readFileSync(checkPath, "utf8");
 const errors = [];
 
+const rejectControlChars = (value, path = "root") => {
+  if (typeof value === "string") {
+    for (const ch of value) {
+      const code = ch.charCodeAt(0);
+      if (code < 32 && ![9, 10, 13].includes(code)) {
+        errors.push(`${path}: unexpected control character U+${code.toString(16).padStart(4, "0")}`);
+      }
+    }
+    return;
+  }
+  if (Array.isArray(value)) return value.forEach((item, i) => rejectControlChars(item, `${path}[${i}]`));
+  if (value && typeof value === "object") {
+    for (const [key, item] of Object.entries(value)) rejectControlChars(item, `${path}.${key}`);
+  }
+};
+
+rejectControlChars(data, "assessment");
+
 if (data.schema !== "roadmap-readiness-assessment-v1") errors.push("assessment schema mismatch");
 if (data.layer !== "KNTT-Core") errors.push("CĐ07 readiness must be KNTT-Core");
 if (data.policy?.feedback !== "after_submit") errors.push("assessment feedback must be after_submit");
@@ -33,6 +51,8 @@ for (const item of data.items || []) {
 if (lesson.includes("### Mini quiz")) errors.push("lesson still contains duplicate static mini quiz");
 if (!lesson.includes("Mở Practice Room")) errors.push("lesson missing Practice Room gateway");
 if (!lesson.includes("Core Readiness Check")) errors.push("lesson missing Readiness gateway");
+if (!lesson.includes("Sang Phòng Luyện Tập")) errors.push("lesson missing bottom Practice CTA");
+if (!lesson.includes("Kiểm Tra Độ Sẵn Sàng")) errors.push("lesson missing bottom Readiness CTA");
 if (!practice.includes("Luyện tự luận & trình bày")) errors.push("Practice Room missing written-practice mode");
 if (!practice.includes('??? example "Xem lời giải"')) errors.push("Practice Room missing collapsed solutions");
 if (!practice.includes("Entrance10 / Extension")) errors.push("Practice Room missing Core/Extension boundary");
