@@ -1,0 +1,109 @@
+{
+  "schema": "roadmap-geometry-benchmark-v1",
+  "version": 1,
+  "id": "BENCH-GEO-001",
+  "title": "Hình chữ nhật, trung điểm và giao điểm",
+  "problem": "Cho hình chữ nhật ABCD với AB=16 cm, AD=10 cm. M,N lần lượt là trung điểm của AB,BC. MC và DN cắt nhau tại E. Tính diện tích BMEN.",
+  "coordinates": {
+    "A": [
+      0,
+      10
+    ],
+    "B": [
+      16,
+      10
+    ],
+    "C": [
+      16,
+      0
+    ],
+    "D": [
+      0,
+      0
+    ],
+    "M": [
+      8,
+      10
+    ],
+    "N": [
+      16,
+      5
+    ],
+    "E": [
+      12.8,
+      4
+    ]
+  },
+  "required_relations": [
+    {
+      "type": "parallel",
+      "entities": [
+        "AB",
+        "DC"
+      ]
+    },
+    {
+      "type": "parallel",
+      "entities": [
+        "AD",
+        "BC"
+      ]
+    },
+    {
+      "type": "perpendicular",
+      "entities": [
+        "AB",
+        "AD"
+      ]
+    },
+    {
+      "type": "midpoint",
+      "entities": [
+        "M",
+        "A",
+        "B"
+      ]
+    },
+    {
+      "type": "midpoint",
+      "entities": [
+        "N",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "type": "collinear",
+      "entities": [
+        "M",
+        "E",
+        "C"
+      ]
+    },
+    {
+      "type": "collinear",
+      "entities": [
+        "D",
+        "E",
+        "N"
+      ]
+    }
+  ],
+  "target": {
+    "type": "polygon_area",
+    "polygon": [
+      "B",
+      "M",
+      "E",
+      "N"
+    ],
+    "expected": 32,
+    "tolerance": 1e-9
+  },
+  "independent_checks": [
+    "coordinate intersection",
+    "shoelace area",
+    "triangle subtraction"
+  ],
+  "svg_path": "content-staging/benchmarks/geometry-001-rectangle-midpoints.svg"
+}
