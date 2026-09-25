@@ -34,3 +34,7 @@
 .readiness-error{padding:.8rem;border-left:.2rem solid #c62828;background:var(--md-code-bg-color)}
 @media(max-width:700px){.readiness-intro{flex-direction:column}.readiness-time{align-self:flex-start}.readiness-nav>*{flex:1 1 42%}.readiness-skill-row{font-size:.74rem}}
 @media(prefers-reduced-motion:reduce){.readiness-option,.readiness-btn,.readiness-action-link{transition:none}}
+
+/* Golden Template v1 mobile/touch hardening */
+.readiness-option{min-height:44px;box-sizing:border-box}
+.readiness-option mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
