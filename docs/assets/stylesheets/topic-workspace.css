@@ -30,7 +30,7 @@
 .topic-core-journey{margin:1rem 0 1.2rem}
 .topic-core-journey-head{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;margin-bottom:.7rem}
 .topic-core-journey-head h2{margin:.15rem 0 0}
-.topic-core-card-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.55rem}
+.topic-core-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(18rem,100%),1fr));gap:.55rem}
 .topic-core-card{position:relative;display:flex;gap:.55rem;padding:.75rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:.75rem;background:var(--md-default-bg-color);min-height:8rem}
 .topic-core-card-number{display:grid;place-items:center;flex:0 0 1.6rem;height:1.6rem;border-radius:50%;background:color-mix(in srgb,var(--md-primary-fg-color) 13%,transparent);font-weight:800;font-size:.72rem}
 .topic-core-card h3{font-size:.82rem;margin:.15rem 0 .35rem;line-height:1.3}
