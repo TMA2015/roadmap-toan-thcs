@@ -1,0 +1,35 @@
+name: Primary skill overlay CĐ04-07 QA
+
+on:
+  pull_request:
+    paths:
+      - 'docs/assets/data/curriculum/primary-skill-overlay-draft-*.json'
+      - 'docs/roadmap/primary-skill-overlay-review-04-07-v1.md'
+      - 'docs/roadmap/primary-skill-overlay-review-cases-04-07-v1.md'
+      - 'scripts/test-primary-skill-overlay-04-07.js'
+      - '.github/workflows/primary-skill-overlay-04-07-qa.yml'
+  push:
+    branches:
+      - curriculum/primary-skill-cd04-07-audit-v1
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify per-question primary mapping and locked source versions
+        run: node scripts/test-primary-skill-overlay-04-07.js
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install static site dependencies
+        run: pip install mkdocs-material
+      - name: Build documentation strictly without deployment
+        run: mkdocs build --strict
