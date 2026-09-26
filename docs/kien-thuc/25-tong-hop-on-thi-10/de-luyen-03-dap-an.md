@@ -56,7 +56,7 @@ x_1^2+x_2^2=6^2-2\cdot5=26.
 
 2. Vì \(E,H,B\) thẳng hàng và \(AE\subset AC\), \(\angle AEH=90^\circ\). Vì \(F,H,C\) thẳng hàng và \(AF\subset AB\), \(\angle AFH=90^\circ\). Hai điểm \(E,F\) cùng nhìn đoạn \(AH\) dưới góc vuông, nên \(A,E,H,F\) cùng thuộc đường tròn đường kính \(AH\). **1,0 điểm.**
 
-3. Theo câu 1, \(B,E,C,F\) nội tiếp. Hai góc nội tiếp \(\angle BFE\) và \(\angle BCE\) cùng chắn cung (hay dây) \(BE\), nên bằng nhau. **1,0 điểm.**
+3. Theo câu 1, \(B,E,C,F\) nội tiếp. Hai góc nội tiếp \(\angle BEF\) và \(\angle BCF\) cùng chắn cung (hay dây) \(BE\), nên bằng nhau. **1,0 điểm.**
 
 ## Bài V (1,0 điểm)
 
