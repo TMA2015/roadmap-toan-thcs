@@ -309,6 +309,7 @@ $$
     half_page = half.new_page()
     half_page.goto(BASE + "kien-thuc/23-xac-suat/", wait_until="networkidle")
     half_page.locator('.md-header__button[for="__drawer"]').click()
+    half_page.wait_for_timeout(550)  # Let Material's translated drawer settle before hit-testing.
     active_shortcuts = half_page.evaluate("""() => {
       const nodes = [...document.querySelectorAll(".md-sidebar--primary .roadmap-mobile-shortcuts")];
       return nodes.findIndex(node => {
