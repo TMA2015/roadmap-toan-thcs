@@ -1,0 +1,25 @@
+.skill-assessment-pilot{--pilot-line:color-mix(in srgb,var(--md-default-fg-color) 18%,transparent);margin:1.2rem 0;padding:1rem;border:1px solid var(--pilot-line);border-radius:.75rem;background:var(--md-default-bg-color)}
+.skill-pilot-intro{font-size:.88rem;line-height:1.55}
+.skill-pilot-warning{border-left:.22rem solid #b7791f;padding:.6rem .8rem;background:color-mix(in srgb,#b7791f 9%,transparent)}
+.skill-pilot-progress{font-weight:700;padding:.55rem 0;border-bottom:1px solid var(--pilot-line)}
+.skill-pilot-card{padding:.5rem 0;min-width:0}
+.skill-pilot-meta,.skill-pilot-secondary{font-size:.8rem;opacity:.8}
+.skill-pilot-heading{font-size:1.08rem;margin:.55rem 0!important}
+.skill-pilot-question{font-size:1rem;font-weight:600;line-height:1.65;overflow-wrap:anywhere}
+.skill-pilot-options{display:grid;gap:.55rem;margin:.9rem 0}
+.skill-pilot-button{display:block;width:100%;padding:.7rem .85rem;font:inherit;text-align:left;color:var(--md-default-fg-color);background:var(--md-default-bg-color);border:1px solid var(--pilot-line);border-radius:.45rem;cursor:pointer;min-height:2.65rem;overflow-wrap:anywhere}
+.skill-pilot-button:hover:not(:disabled){border-color:var(--md-primary-fg-color);background:color-mix(in srgb,var(--md-primary-fg-color) 6%,transparent)}
+.skill-pilot-button:focus-visible{outline:2px solid var(--md-primary-fg-color);outline-offset:2px}
+.skill-pilot-button:disabled{opacity:1;cursor:default}
+.skill-pilot-option.is-correct{border-color:#2e7d32;background:color-mix(in srgb,#2e7d32 10%,transparent)}
+.skill-pilot-option.is-wrong{border-color:#c62828;background:color-mix(in srgb,#c62828 10%,transparent)}
+.skill-pilot-feedback{padding:.75rem .9rem;margin-top:.8rem;border-left:.2rem solid;border-radius:.35rem}
+.skill-pilot-feedback.is-correct{border-color:#2e7d32;background:color-mix(in srgb,#2e7d32 7%,transparent)}
+.skill-pilot-feedback.is-wrong{border-color:#c62828;background:color-mix(in srgb,#c62828 7%,transparent)}
+.skill-pilot-feedback p{margin:.45rem 0}
+.skill-pilot-actions{display:flex;gap:.5rem;margin-top:.7rem}
+.skill-pilot-primary{width:auto;min-width:10rem;text-align:center;background:var(--md-primary-fg-color);color:var(--md-primary-bg-color);border-color:var(--md-primary-fg-color)}
+.skill-pilot-primary:hover:not(:disabled){background:var(--md-primary-fg-color--dark);color:var(--md-primary-bg-color)}
+.skill-pilot-result{border-bottom:1px solid var(--pilot-line);padding:.45rem 0;margin:0!important;font-size:.85rem}
+@media(max-width:650px){.skill-assessment-pilot{padding:.7rem}.skill-pilot-actions .skill-pilot-primary{width:100%}}
+@media(prefers-reduced-motion:reduce){.skill-pilot-button{scroll-behavior:auto}}

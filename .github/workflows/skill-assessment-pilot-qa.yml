@@ -1,0 +1,48 @@
+name: Skill assessment pilot QA
+
+on:
+  pull_request:
+    paths:
+      - 'docs/assets/javascripts/skill-assessment-pilot-v1.js'
+      - 'docs/assets/stylesheets/skill-assessment-pilot-v1.css'
+      - 'docs/assets/data/curriculum/skill-assessment-pilot-config-v1.json'
+      - 'docs/assets/data/curriculum/skill-diagnostic-micro-pilot-v1.json'
+      - 'docs/huong-dan/thu-nghiem-danh-gia-ky-nang.md'
+      - 'scripts/test-skill-assessment-pilot.js'
+      - 'scripts/test-skill-assessment-pilot-browser.py'
+      - 'mkdocs.yml'
+      - '.github/workflows/skill-assessment-pilot-qa.yml'
+  push:
+    branches:
+      - pilot/one-skill-evidence-20260926
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate pilot JavaScript syntax
+        run: node --check docs/assets/javascripts/skill-assessment-pilot-v1.js
+      - name: Run source-locked pilot regression tests
+        run: node scripts/test-skill-assessment-pilot.js
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install MkDocs
+        run: pip install mkdocs-material
+      - name: Build site strictly without deployment
+        run: mkdocs build --strict
+      - name: Verify learner flow in Chromium on a mobile viewport
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+          python -m http.server 8766 --directory site >/tmp/skill-pilot-preview.log 2>&1 &
+          for i in {1..30}; do curl --fail --silent http://127.0.0.1:8766/ >/dev/null && break; sleep 0.2; done
+          python scripts/test-skill-assessment-pilot-browser.py
