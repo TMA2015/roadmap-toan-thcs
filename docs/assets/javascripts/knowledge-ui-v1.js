@@ -134,12 +134,12 @@
     const host = document.querySelector(".md-content__inner");
     if (!host || host.querySelector("[data-skill-connections]")) return;
     const root = location.pathname.slice(0, location.pathname.indexOf(match[1]) + match[1].length + 1);
-    const panel = document.createElement("section");
+    const panel = document.createElement("details");
     panel.className = "skill-connections";
     panel.dataset.skillConnections = "1";
     panel.setAttribute("aria-label", "Các mối nối kiến thức");
-    const title = document.createElement("h2");
-    title.textContent = "🧭 Mối nối kiến thức";
+    const title = document.createElement("summary");
+    title.textContent = "🧭 Mối nối kiến thức · xem kỹ năng nền và hướng học";
     const note = document.createElement("p");
     note.textContent = "Các kỹ năng liên quan giúp em chọn đường học và ôn bù. Đây không phải điều kiện khóa bài học.";
     panel.append(title, note);
@@ -176,9 +176,15 @@
           else {
             const link = document.createElement("a");
             link.href = topicHref(id);
+            const targets = edges.filter(e => e.type === "PREREQUISITE" && e.confidence === "high" && ((group.label === "Kiến thức nền đã xác nhận" && e.from === id && ids.includes(e.to)) || (group.label === "Hướng học tiếp" && e.to === id && ids.includes(e.from))));
             link.textContent = labelFor(id);
             link.title = "Mở chuyên đề " + nodes[id].topic.slice(0,2);
-            item.appendChild(link);
+            if (targets.length) {
+              const detail = document.createElement("small");
+              detail.textContent = group.label === "Kiến thức nền đã xác nhận" ? " → dùng cho: " + targets.map(e => labelFor(e.to)).join(", ") : " ← tiếp nối: " + targets.map(e => labelFor(e.from)).join(", ");
+              item.appendChild(detail);
+            }
+            item.prepend(link);
           }
           list.appendChild(item);
         });
