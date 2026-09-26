@@ -115,4 +115,23 @@ check("event retention is bounded without touching other objects", () => {
   assert.equal(s.events[0].question_id, "q5");
 });
 
+check("session retries do not inflate distinct-question first-attempt evidence", () => {
+  let state = app.emptyState();
+  const seen = [
+    ["q1", "cong-tru-da-thuc", false],
+    ["q2", "lap-bieu-thuc", true],
+    ["q1", "cong-tru-da-thuc", true],
+    ["q2", "lap-bieu-thuc", true],
+    ["q3", "cong-tru-da-thuc", true]
+  ];
+  for (const [question_id, assessed_skill, correct] of seen) {
+    state = app.appendEvidence(state, { question_id, assessed_skill, correct, independent: true });
+  }
+  const unique = app.firstAttemptSummary(state);
+  assert.deepEqual(unique["cong-tru-da-thuc"], { distinct: 2, first_correct: 1, total_attempts: 3 });
+  assert.deepEqual(unique["lap-bieu-thuc"], { distinct: 1, first_correct: 1, total_attempts: 2 });
+  assert.equal(app.skillSummary(state)["cong-tru-da-thuc"].correct, 2);
+  assert.equal(seen.length, state.events.length);
+});
+
 console.log("PASSED " + tests.length + " pilot checks.");
