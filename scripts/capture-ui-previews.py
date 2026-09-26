@@ -66,17 +66,18 @@ with sync_playwright() as p:
         cornerAlpha:[a(0,0),a(node.naturalWidth-1,0),a(0,node.naturalHeight-1)]};
     }""")
     check(visual["loaded"] and visual["width"] >= 480 and visual["height"] >= 200, "approved mascot loaded")
-    room = page.locator(".study-art-room")
-    check(room.evaluate("(node) => node.complete && node.naturalWidth >= 1000"), "illustrated study room loaded")
+    check(page.locator(".study-art-room, .study-art-wakeup").count() == 0, "no stacked room panel or duplicate greeting")
+    stage = page.locator(".study-art-stage").bounding_box()
+    check(stage is not None and abs(stage["width"] / stage["height"] - 520/276) < .02, "sleeping scene has one landscape panel")
     shot(page, "home-playful-desktop.png")
     page.locator("[data-study-wake]").click()
     check(page.locator("[data-study-gateway]").is_visible(), "wake reveals learning routes")
-    check("study-kid-awake.webp" in img.get_attribute("src"), "happy eyes-open state swaps actual image")
-    greeting = page.locator(".study-art-wakeup").bounding_box()
-    stage = page.locator(".study-art-stage").bounding_box()
-    check(greeting is not None and stage is not None and
-          greeting["x"] + greeting["width"] < stage["x"] + stage["width"] * .55,
-          "greeting stays to the left and clear of the mascot")
+    check("study-scene-awake-approved.webp" in img.get_attribute("src"), "approved full-room scene swaps in")
+    page.wait_for_function("""() => {
+      const img = document.querySelector(".study-art-image");
+      return img && img.complete && img.naturalWidth >= 780 && img.naturalWidth / img.naturalHeight > 1.7;
+    }""")
+    check(page.locator(".study-art-stage").evaluate("(el) => getComputedStyle(el).backgroundImage === 'none' || !getComputedStyle(el).backgroundImage.includes('study-room-pastel.svg')"), "awake artwork has no separate room layer")
     shot(page, "home-awake-desktop.png")
     page.reload(wait_until="networkidle")
     check(page.locator('[data-home-mode="playful"]').is_visible(), "mode persisted after reload")
