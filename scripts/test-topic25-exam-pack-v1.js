@@ -29,5 +29,5 @@ fail(self.includes("Đáp án và hướng dẫn chấm")&&!self.includes("## C�
 fail(selfKey.includes("Đáp án và hướng dẫn chấm")&&selfKey.includes("Bảng truy nguyên lỗi"),"self-check key and recovery");
 const mock2=read("de-luyen-02-dap-an.md"),mock3=read("de-luyen-03-dap-an.md");
 fail(mock2.includes("\\triangle ABD\\sim\\triangle AEB")&&mock2.includes("AE=9"),"tangent-secant reasoning");
-fail(mock3.includes("\\angle BEF")&&mock3.includes("\\angle BCF")&&mock3.includes("dây \\(BF\\)"),"orthocenter angles");
+fail(mock3.includes("\\angle BEF")&&mock3.includes("\\angle BCF")&&mock3.includes("dây) \\(BF\\)"),"orthocenter angles");
 console.log("PASS: three 120-minute complete original capstone exams, separate keys, ten anchor problems, academic self-check and geometry.");
