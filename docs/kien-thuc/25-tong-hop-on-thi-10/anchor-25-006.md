@@ -41,7 +41,7 @@ Viết \(n+1=(n-1)+2\) để có \(P=1+2/(n-1)\).
 \(n-1\) là ước khác \(0\) của \(2\), đồng thời \(n-1\ge-1\).
 </details>
 
-## Lời giải theo bước
+## Lời giải chi tiết theo bước
 
 **Bước 1 – Điều kiện.** \(x=n^2\) với \(n\in\mathbb Z_{\ge0}\), nên \(\sqrt{x}=n\). Mẫu khác \(0\) đòi hỏi \(n\ne1\).
 
@@ -62,7 +62,9 @@ n-1\in\{-1,1,2\}\iff n\in\{0,2,3\}.
 \boxed{n\in\{0,2,3\}}.
 \]
 
-## Vì sao không dùng cách thử nhiều giá trị?
+## Tư duy và lỗi thường gặp
+
+### Vì sao không dùng cách thử nhiều giá trị?
 
 Thử \(n=0,1,2,3,\dots\) có thể đoán ra đáp án nhưng không chứng minh không còn giá trị lớn hơn. Phép chia hết giới hạn toàn bộ khả năng, rồi điều kiện \(n\ge0\) loại các ứng viên không hợp lệ.
 
