@@ -22,7 +22,7 @@ hide:
         <strong>Giao diện chuẩn</strong><small>Hiện đại, gọn gàng, tập trung vào nội dung.</small><span class="home-style-cta">Dùng giao diện này →</span>
       </button>
       <button type="button" data-home-select="playful" class="home-style-card home-style-card-playful">
-        <span class="home-style-preview home-style-preview-playful" aria-hidden="true"><img src="assets/images/study-kid-sleeping.webp" width="320" height="170" alt="" loading="lazy"></span>
+        <span class="home-style-preview home-style-preview-playful" aria-hidden="true"><img src="assets/images/study-scene-sleep-final.webp" width="320" height="170" alt="" loading="lazy"></span>
         <strong>Giao diện vui nhộn</strong><small>Góc học tập rực rỡ cùng cô bé ngủ gật đáng yêu.</small><span class="home-style-cta">Dùng giao diện này →</span>
       </button>
     </div>
@@ -55,7 +55,7 @@ hide:
     <div class="study-scene-heading"><span>📖 GÓC HỌC TẬP</span><span class="study-scene-tag">Một chút phép màu ✦</span></div>
     <button type="button" class="study-wake-button" data-study-wake aria-label="Đánh thức cô bé đang ngủ gật để bắt đầu học">
       <span class="study-art-stage">
-        <img class="study-art-image" src="assets/images/study-kid-sleeping.webp" data-awake-src="assets/images/study-scene-awake-approved.webp" width="520" height="276" alt="Cô bé tóc dài đeo kính đang ngáp ngủ bên quyển vở" loading="eager" decoding="async">
+        <img class="study-art-image" src="assets/images/study-scene-sleep-final.webp" data-awake-src="assets/images/study-scene-awake-final.webp" width="520" height="276" alt="Cô bé tóc dài đeo kính đang ngáp ngủ bên quyển vở" loading="eager" decoding="async">
       </span>
       <span class="study-wake-caption"><span class="study-wake-caption-sleep">Suỵt… bạn ấy ngủ gật rồi! <strong>Chạm để đánh thức ✨</strong></span><span class="study-wake-caption-awake">Bạn ấy tỉnh rồi! Cùng bắt đầu học nào ✨</span></span>
     </button>
