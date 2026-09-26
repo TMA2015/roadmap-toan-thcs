@@ -1,9 +1,12 @@
 (() => {
   "use strict";
 
-  const isLessonPage = () => {
+  // Read-only teaching surfaces: topic lessons plus the Topic 25 anchor library.
+  // Never mount on practice, self-checks, timed mocks or answer keys.
+  const isReadingPage = () => {
     const path = location.pathname.replace(/\/index\.html$/, "/");
-    return /^\/(?:roadmap-toan-thcs\/)?kien-thuc\/[^/]+\/$/.test(path);
+    if (/^\/(?:roadmap-toan-thcs\/)?kien-thuc\/[^/]+\/$/.test(path)) return true;
+    return /^\/(?:roadmap-toan-thcs\/)?kien-thuc\/25-tong-hop-on-thi-10\/(?:bai-toan-kinh-dien|kho-bai-mo-neo|anchor-25-\d{3})\/$/.test(path);
   };
   const contentRoot = () => document.querySelector(".md-content__inner .md-typeset") || document.querySelector(".md-content__inner");
   const topicSlug = () => {
@@ -79,7 +82,7 @@
   };
 
   const init = () => {
-    if (!isLessonPage() || document.querySelector("[data-floating-ai]")) return;
+    if (!isReadingPage() || document.querySelector("[data-floating-ai]")) return;
     if (!window.RoadmapGemini?.isConfigured?.() || !window.RoadmapTutor) return;
 
     const shell = document.createElement("div");
