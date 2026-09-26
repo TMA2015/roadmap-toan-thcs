@@ -139,11 +139,11 @@ Vậy \(P_{\max}=25\).
 
 **Đọc kết quả để học lại đúng phần:**
 
-- Sai Bài I → [Căn thức](../11-can-bac-hai-can-thuc/index.md) và [phương trình](../08-phuong-trinh/index.md) *(nếu đường dẫn chuyên đề gốc không khớp, mở Bản đồ 25 chuyên đề để tìm tương ứng)*.
-- Sai Bài II → [Bài toán kinh điển: Viète và lập hệ](bai-toan-kinh-dien.md).
-- Sai Bài III → [Bài toán kinh điển và bộ bài tập học thuật](bai-tap.md).
-- Sai Bài IV → [Bài toán kinh điển: hệ thức lượng từ đồng dạng](bai-toan-kinh-dien.md).
-- Sai Bài V → [Bài toán kinh điển: tối ưu với tổng cố định](bai-toan-kinh-dien.md).
+- Sai Bài I → [Căn thức – CĐ11](../11-can-thuc/index.md) và [phương trình – CĐ08](../08-phuong-trinh-bat-phuong-trinh/index.md).
+- Sai Bài II → [Phương trình bậc hai & Viète – CĐ12](../12-phuong-trinh-bac-hai-viete/index.md), [Hệ phương trình – CĐ09](../09-he-phuong-trinh/index.md) và [Bài toán kinh điển](bai-toan-kinh-dien.md).
+- Sai Bài III → [Thống kê – CĐ21](../21-thong-ke/index.md), [Xác suất – CĐ23](../23-xac-suat/index.md).
+- Sai Bài IV → [Đồng dạng – CĐ17](../17-thales-dong-dang/index.md), [Hệ thức lượng – CĐ18](../18-he-thuc-luong/index.md).
+- Sai Bài V → [Biểu thức đại số – CĐ04](../04-bieu-thuc-dai-so/index.md) và [Bài toán kinh điển](bai-toan-kinh-dien.md).
 
 ---
 
