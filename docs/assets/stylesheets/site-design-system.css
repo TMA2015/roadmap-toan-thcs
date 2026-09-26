@@ -463,3 +463,13 @@ body{letter-spacing:-.008em}
  .roadmap-mobile-shortcuts__link:focus-visible{outline:2px solid var(--roadmap-indigo);outline-offset:1px}
  .roadmap-mobile-shortcuts__icon{display:inline-flex;align-items:center;justify-content:center;flex:0 0 1.25rem;font-size:.9rem}
 }
+
+/* Advisory skill graph: scoped to lesson pages, no hard-lock UI. */
+.skill-connections{margin:1.2rem 0 1.6rem;padding:1rem 1.15rem;border:1px solid var(--roadmap-line);border-radius:.85rem;background:var(--roadmap-soft);color:var(--roadmap-ink)}
+.skill-connections>h2{font-size:1.05rem!important;margin:0 0 .35rem!important;border:0!important}
+.skill-connections>p,.skill-connections-group>p{font-size:.76rem;line-height:1.55;color:var(--roadmap-muted);margin:.2rem 0 .65rem}
+.skill-connections-group{margin-top:.85rem}
+.skill-connections-group h3{font-size:.83rem!important;margin:0 0 .25rem!important}
+.skill-connections-group ul{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none!important;padding:0!important;margin:.35rem 0!important}
+.skill-connections-group li{margin:0!important;padding:.35rem .6rem;border-radius:.45rem;background:var(--roadmap-surface);border:1px solid var(--roadmap-line);font-size:.73rem;line-height:1.35}
+.skill-connections-group a{font-weight:650}
