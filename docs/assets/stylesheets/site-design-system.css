@@ -181,7 +181,7 @@ body{letter-spacing:-.008em}
 .home-portal[data-home-style="playful"] .home-hero h1 span{color:#ed793a}
 .study-art-stage{display:block;position:relative;border-radius:.75rem;overflow:hidden;background:#f8e9e1;isolation:isolate}
 .study-art-room{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;z-index:0}
-.study-art-image{position:relative;z-index:1;width:100%;height:auto;display:block;aspect-ratio:520/276;object-fit:contain;object-position:right bottom}
+.study-art-image{position:relative;z-index:1;width:100%;height:auto;display:block;aspect-ratio:520/276;object-fit:contain;object-position:right bottom;mix-blend-mode:darken}
 .study-art-light{position:absolute;z-index:2;left:37%;top:27%;font-size:2.5rem;color:#fff4a2;text-shadow:0 0 25px #fff79f;opacity:0;transition:opacity .6s ease}
 .study-art-wakeup{position:absolute;z-index:3;left:8%;right:auto;top:16%;max-width:45%;white-space:nowrap;padding:.35rem .7rem;border-radius:2rem;background:#fffaf0;color:#e36f40;box-shadow:0 5px 17px #665a6533;font-weight:850;font-size:.7rem;opacity:0;transform:translateY(.5rem);transition:opacity .4s,transform .4s}
 .study-art-wakeup::after{content:"";position:absolute;right:-.4rem;bottom:.2rem;border-left:.52rem solid #fffaf0;border-top:.34rem solid transparent;border-bottom:.1rem solid transparent}
@@ -460,7 +460,7 @@ body{letter-spacing:-.008em}
 /* Primary destinations remain one tap away in the Material drawer at half-width. */
 .roadmap-mobile-shortcuts{display:none}
 @media(max-width:76.24rem){
- .md-sidebar--primary .roadmap-mobile-shortcuts{display:block;margin:.55rem .55rem .85rem;padding:.65rem;border:1px solid var(--roadmap-line);border-radius:.7rem;background:var(--roadmap-soft)}
+ .md-sidebar--primary .roadmap-mobile-shortcuts{display:block;position:sticky;top:0;z-index:30;margin:0 0 .6rem;padding:.65rem .55rem;border:1px solid var(--roadmap-line);border-radius:0 0 .65rem .65rem;background:var(--roadmap-soft);box-shadow:0 6px 16px rgba(23,49,97,.09)}
  .roadmap-mobile-shortcuts__title{display:block;margin:.1rem .3rem .5rem;color:var(--roadmap-muted);font-size:.64rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
  .roadmap-mobile-shortcuts__links{display:grid;gap:.18rem}
  .roadmap-mobile-shortcuts__link{display:flex;align-items:center;gap:.55rem;min-height:2.45rem;padding:.5rem .6rem;border-radius:.42rem;color:var(--roadmap-ink)!important;font-size:.78rem;font-weight:680;text-decoration:none!important}
