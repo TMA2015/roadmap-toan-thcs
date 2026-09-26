@@ -93,4 +93,29 @@ check("pilot cannot silently write or load tentative overlay",()=>{
   const files=["mkdocs.yml","docs/assets/javascripts/practice-engine-v2.js","docs/assets/javascripts/skill-assessment-pilot-v2.js","docs/assets/javascripts/learner-evidence-v1.js"];
   for (const file of files) assert.equal(read(file).includes("primary-skill-overlay-draft-"),false,file+" unexpectedly imports draft");
 });
+check("full-text review queues exactly match 39 flagged source items",()=>{
+  const flagged=compiled.filter(x=>x.review_state!=="pattern_candidate_only");
+  const queued=[
+    ...json(base+"primary-skill-review-queue-04-05-v1.json").items,
+    ...json(base+"primary-skill-review-queue-06-07-v1.json").items
+  ];
+  assert.equal(queued.length,39);
+  assert.deepEqual(queued.map(x=>x.question_id).sort(),flagged.map(x=>x.id).sort());
+  const byId=new Map(flagged.map(x=>[x.id,x]));
+  for(const entry of queued){
+    const item=byId.get(entry.question_id);
+    assert.ok(item);
+    assert.equal(entry.source_file,item.source_file);
+    assert.deepEqual(entry.original_skill_tags,item.original_skill_tags);
+    assert.equal(entry.proposed_assessed_skill,item.proposed_assessed_skill);
+    assert.deepEqual(entry.flags,item.flags);
+    const q=json("docs/assets/data/practice/"+entry.source_file).questions.find(q=>q.id===entry.question_id);
+    assert.ok(q);
+    assert.equal(entry.question,q.question);
+    assert.deepEqual(entry.options,q.options);
+    assert.equal(entry.answer_index,q.answer);
+    assert.equal(entry.correct_option,q.options[q.answer]);
+    assert.equal(entry.explanation,q.explanation);
+  }
+});
 console.log("PASSED "+checks+" overlay checks. "+JSON.stringify(totals));
