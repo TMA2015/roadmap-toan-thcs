@@ -1,6 +1,6 @@
 {
-  "version": "1.0.49",
-  "updated": "2026-09-25",
+  "version": "1.0.50",
+  "updated": "2026-09-26",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
     "name": "Roadmap Toán THCS",
@@ -115,8 +115,9 @@
       "policy_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/ai/tutor-policy-v1.json",
       "rule": "LLM explains/guides; curriculum layer, learner evidence, reviewed graph and remediation engine remain source of truth.",
       "context_schema": "roadmap-tutor-context-v1",
-      "runtime": "Tutor Context Builder + provider adapter v1; mock enabled; real providers disabled pending runtime credentials",
-      "privacy": "minimum relevant evidence only; no full localStorage/provider memory"
+      "runtime": "Provider-neutral Tutor contract with live user-initiated Firebase AI Logic Gemini transport, reCAPTCHA Enterprise App Check enforced on the production origin; mock/local fallback retained; safe Markdown and MathJax renderer.",
+      "privacy": "minimum relevant evidence only; no full localStorage/provider memory",
+      "reading_scope": "Main topic lessons and Topic25 classic-problem/anchor deep-reading pages; excludes practice, readiness/self-check, timed exams and answer keys."
     },
     "learning_flow": {
       "version": "1.0",
@@ -208,7 +209,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "CĐ23 Golden Learn 5 cards/15 formative micro integrated; verify CI/owner display and proceed with separate 12-item Core Readiness source-locked batch, grade6–8 map and exact assessed skill IDs. Original bank 120 unchanged.",
+    "next_priority": "Topic25 post-release academic QA: obtain independent review of the frozen 13-source packet for anchor proofs, figures and three original 120-minute exam keys; integrate verified corrections only. Confirm owner visual UX for the deep-reading Tutor and exam self-scoring. Preserve Core/Challenge separation and existing learner records.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -219,8 +220,8 @@
     "remediation_loop": "targeted remediation sessions implemented: 6-question local session or cross-topic focus navigation",
     "recovery_measurement": "tracks prerequisite before/after remediation and later target-skill recheck without claiming causality from one session",
     "ai_tutor_contract": "v1 provider-neutral policy defined; not yet connected to an AI provider",
-    "ai_tutor_adapter": "v1 implemented with mock/local QA adapter and disabled Gemini/OpenAI-compatible transport sockets",
-    "ai_tutor_ui": "mock/local Tutor integrated into Practice Engine with HINT/REMEDIATE/CONTINUE student actions; no external AI calls",
+    "ai_tutor_adapter": "LIVE: Firebase AI Logic Gemini 3.5 Flash-Lite through App Check on production origin; transport remains provider-neutral, user click required, no private provider key in repo or browser storage. Mock/local adapter remains available for QA.",
+    "ai_tutor_ui": "Practice: four learner-selected help levels with assisted evidence tracking. Reading: floating approved student-avatar Tutor on main lesson and Topic25 anchor/library pages with selected text/active heading; not on self-checks, timed exam pages or answer keys. Safe rich-math rendering; no auto inference.",
     "ui_ux_pilot": "CĐ07 responsive Learning Card grid fixed to size from available content width rather than viewport width; learner-facing technical labels simplified.",
     "micro_practice_evidence": "Observed signals are stored separately from attempted/correct counters. signal_weight 1–2 is salience only and cannot independently create weak-skill/remediation conclusions.",
     "golden_template": "Frozen v1.0 with maintenance hardening v1.0.1: MathJax details re-typeset, touch-safe targets, bottom CTAs and JSON control-character QA. Frozen invariants unchanged.",
@@ -267,13 +268,47 @@
         "Entrance10": 38
       },
       "layer_audit": "docs/assets/data/curriculum/topic23-layer-audit-v1.json",
-      "learning_cards": "INTEGRATED_DEPLOY_PENDING",
+      "learning_cards": "DEPLOYED",
       "micro_count_target": 15,
-      "readiness": "PENDING_SEPARATE_BATCH",
+      "readiness": "DEPLOYED_CI_PASS_OWNER_QA_NOT_RECORDED",
       "grade9_mapping": "NO_PRIMARY_REF_CURRENT_OVERLAY",
       "learning_card_count": 5,
       "micro_count": 15,
-      "learn_review": "PROB23-LEARN-CHATGPT-INTEGRATION-001"
+      "learn_review": "PROB23-LEARN-CHATGPT-INTEGRATION-001",
+      "readiness_id": "PROB23-CORE-READY-V1",
+      "readiness_item_count": 12,
+      "readiness_skill_count": 5
+    },
+    "topic24": {
+      "learning_card_count": 5,
+      "micro_practice_count": 15,
+      "readiness": "INTEGRATED",
+      "cross_topic_learning": "DEPLOYED_CI_PASS"
+    },
+    "topic25": {
+      "learning_card_count": 5,
+      "micro_practice_count": 15,
+      "academic_lanes": [
+        "academic practice by strand",
+        "classic anchor problems",
+        "three complete written mock exams",
+        "separate exam skills"
+      ],
+      "anchor_catalog_count": 11,
+      "representative_anchor_count": 10,
+      "expanded_anchor_ids": [
+        "A25-004",
+        "A25-008",
+        "A25-009",
+        "A25-011"
+      ],
+      "original_mock_exam_count": 3,
+      "mock_duration_minutes": 120,
+      "mock_total_points": 10,
+      "exam_engine": "localStorage-backed timed written exam with learner self-marked rubric and gap links; not AI/teacher graded",
+      "release": "PRs #104, #109–#113 merged; strict build and browser QA passed for #113",
+      "independent_math_review": "PENDING_GEMINI; frozen 13-source packet at review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26.txt; no unverified approval",
+      "learning_ai": "contextual Tutor on Topic25 main and deep-reading pages, not assessment/answer pages"
     }
   },
   "handoff_required_fields": [
