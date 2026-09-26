@@ -233,6 +233,11 @@ $$
     anchors_page.goto(BASE + "kien-thuc/25-tong-hop-on-thi-10/anchor-25-004/", wait_until="networkidle")
     diagram = anchors_page.locator('.md-typeset img[src*="anchor-25-004-right-altitude.svg"]')
     check(diagram.count() == 1 and diagram.evaluate("(x) => x.complete && x.naturalWidth > 200"), "geometry proof diagram loads")
+    check(anchors_page.locator(".floating-ai-launcher").count() == 1, "deep anchor lesson provides contextual AI")
+    anchors_page.locator(".floating-ai-launcher").click()
+    check("Bài toán mỏ neo" in anchors_page.locator(".floating-ai-head small").inner_text() or
+          anchors_page.locator(".floating-ai-head small").inner_text().strip(), "deep AI shows reading section")
+    anchors_page.locator(".floating-ai-close").click()
     shot(anchors_page, "topic25-anchor-004-geometry-desktop.png")
     anchors_page.close()
 
@@ -240,6 +245,7 @@ $$
     exam_page = desktop.new_page()
     exam_page.goto(BASE + "kien-thuc/25-tong-hop-on-thi-10/de-luyen-01/", wait_until="networkidle")
     check(exam_page.locator(".exam-engine").count() == 1, "exam 1 interactive engine mounted")
+    check(exam_page.locator(".floating-ai-launcher").count() == 0, "timed exam must not expose reading Tutor before submission")
     check(exam_page.locator(".exam-rubric-item").count() == 0, "no rubric before submission")
     check(exam_page.locator('a[href*="de-luyen-01-dap-an/"]').first.is_hidden(), "source answer link withheld in exam UI")
     exam_page.get_by_role("button", name="Bắt đầu làm đề 120 phút").click()
