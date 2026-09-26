@@ -25,7 +25,7 @@
 4. 12 kết quả theo câu hỏi nằm tại `../assets/data/curriculum/review-question-audit-*.json`. Mỗi tệp có số câu thực tế, số lần gắn tag, mã lạ, tag chưa dùng, mã câu ví dụ.
 5. [Mẫu JSON trả lời](../assets/data/curriculum/gemini-skill-review-response-v1.example.json)
 
-Gemini đã hoàn thành phản biện 10 cặp theo mẫu; ý kiến được điều chỉnh ở trường hợp ID05V1_021 và đưa vào [pilot JSON](../assets/data/curriculum/skill-role-pilot-04-11-v1.json). Bước tiếp là QA học thuật nhóm CĐ04–07 và 39 ca chờ xét trong [hai gói toàn văn câu hỏi](../assets/data/curriculum/primary-skill-review-queue-04-05-v1.json); đánh giá theo từng câu, không mở rộng danh mục chỉ vì có nhiều tag. Tần suất thi chưa kiểm chứng thì để `unverified`.
+Gemini đã hoàn thành phản biện 10 cặp theo mẫu; ý kiến được điều chỉnh ở trường hợp ID05V1_021 và đưa vào [pilot JSON](../assets/data/curriculum/skill-role-pilot-04-11-v1.json). Bước tiếp là QA học thuật nhóm CĐ04–07 và 39 ca chờ xét trong hai gói toàn văn câu hỏi [04–05](../assets/data/curriculum/primary-skill-review-queue-04-05-v1.json) và [06–07](../assets/data/curriculum/primary-skill-review-queue-06-07-v1.json); đánh giá theo từng câu, không mở rộng danh mục chỉ vì có nhiều tag. Tần suất thi chưa kiểm chứng thì để `unverified`.
 
 ## Quy tắc tích hợp
 
