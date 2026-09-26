@@ -4,12 +4,13 @@
 
 Khi học sinh làm một câu có hai tag, câu đó chỉ tạo một bằng chứng cho **kỹ năng được kiểm tra chính**. Tag phương pháp, nhóm kiến thức hoặc bối cảnh vẫn giúp giải thích/định hướng nhưng không tự sinh thêm một lần đúng/sai cho kỹ năng khác.
 
-Bộ thử nghiệm gồm **10 câu trích trực tiếp từ ngân hàng gốc** thuộc CĐ04–11 và **4 câu kiểm tra riêng** cho lỗi bỏ ngoặc, quy tắc khai phương một tích. Các phương án trả lời được đảo thứ tự khi hiển thị. Chọn một đáp án sẽ hiện kết quả và lời giải ngay; khi làm xong, bảng tiến độ chỉ liệt kê kỹ năng đã trực tiếp được đo.
+Bộ thử nghiệm gồm **10 câu trích trực tiếp từ ngân hàng gốc** thuộc CĐ04–11 và **4 câu kiểm tra riêng** cho lỗi bỏ ngoặc, quy tắc khai phương một tích. Các phương án trả lời được đảo thứ tự khi hiển thị. Chọn một đáp án sẽ hiện kết quả và lời giải ngay. Cuối lượt, học sinh thấy các câu vừa sai, đáp án và đường dẫn về bài học; có thể luyện lại riêng những câu đó. Phần lịch sử được thu gọn và ghi rõ số **câu khác nhau**, không coi lượt làm lại là bằng chứng độc lập mới.
 
 <div class="skill-assessment-pilot" data-skill-assessment-pilot data-pilot-base="../../assets/" aria-live="polite">Đang khởi tạo bộ đánh giá thử nghiệm…</div>
 
 !!! info "Cách hiểu kết quả"
-    - Kết quả dưới ba lượt mỗi kỹ năng chỉ là **bằng chứng ban đầu**, không nên hiểu là đã nắm vững hoặc hổng kiến thức.
+    - Kết quả **lượt vừa làm** và **lịch sử tích lũy** được hiển thị riêng; kết quả dưới ba câu khác nhau mỗi kỹ năng chỉ là bằng chứng ban đầu, không nên hiểu là đã nắm vững hoặc hổng kiến thức.
+    - Luyện lại câu vừa xem đáp án để củng cố cách làm; hệ thống lưu lần thử mới nhưng **không cộng thành một câu hỏi khác** khi tính số câu khác nhau và tỉ lệ đúng ở lần xuất hiện đầu tiên.
     - Lượt thử nghiệm này lưu riêng dưới khóa `toan-thcs-assessment-v2` trên trình duyệt hiện tại. **Không đọc, chuyển đổi hay xóa** dữ liệu luyện tập cũ ở `toan-thcs-practice-v1`. Không tự đồng bộ giữa thiết bị.
     - Bốn câu kiểm tra ngắn mới chỉ phục vụ thử nghiệm đánh giá kỹ năng; chưa được thêm vào ngân hàng luyện tập chính và chưa ảnh hưởng Knowledge Graph hay gợi ý AI Tutor.
     - Để đo độc lập lỗi hiểu hình học từ đồ thị, chúng ta cần một câu có hình được kiểm định riêng; vòng này chưa gắn thêm kỹ năng đó.
