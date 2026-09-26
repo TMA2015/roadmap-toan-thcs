@@ -48,7 +48,7 @@ for (const [i,q] of assessment.items.entries()){
 ok(lesson.includes("## 📝 8. Luyện tập tiếp theo") && lesson.includes("Core Readiness lớp 6") && !lesson.includes("### Mini quiz"),"lesson gateways and no duplicate static quiz");
 ok(practice.includes("Luyện tự luận & trình bày") && practice.includes('??? example "Xem lời giải"') && practice.includes('??? example "Xem đáp án nhanh'),"written practice has hidden solutions");
 ok(check.includes('data-readiness-check-v1="assets/data/assessment/02-so-va-phep-tinh-core-v1.json"') && !check.includes("# Đáp án và hướng dẫn chấm"),"live independent assessment");
-ok(read("docs/kien-thuc/02-so-va-phep-tinh/tu-kiem-tra-tu-luan.md").includes("Tự luận"),"legacy written check preserved");
+ok(/tự luận/i.test(read("docs/kien-thuc/02-so-va-phep-tinh/tu-kiem-tra-tu-luan.md")),"legacy written check preserved");
 const panel=classhub.split('data-grade-panel="6"')[1].split('data-grade-panel="7"')[0];
 ok((panel.match(/02-so-va-phep-tinh\/#core-journey/g)||[]).length>=5,"grade6 class hub opens the learning cards");
 ok(runtime.includes('"02-so-va-phep-tinh":{') && runtime.includes("topic02-learning-workspace.json"),"runtime supports topic02");
