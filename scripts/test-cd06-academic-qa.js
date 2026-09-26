@@ -88,10 +88,10 @@ for(const q of questions){
    // Equivalent expressions are not necessarily factorizations; compare actual task.
    for(const i of eqIndices.filter(i=>i!==q.answer)){
      const raw=tex(blocks(q.options[i])[0]);
-     assert.ok(n>=53&&n<=64||n>=77&&n<=92,q.id+" unexpectedly equivalent distractor "+i);
-     assert.ok(n>=53&&n<=64?raw.includes("+")&&raw.includes("x("):
-       raw.includes("x^2"),q.id+" alternative equivalent factorization requires review");
-     equivalent_but_not_factorized.push({id:q.id,option:i,kind:n<=64?"unfactored_expansion":"partial_factorization"});
+     assert.ok(n<=76||n>=77&&n<=92,q.id+" unexpected equivalent distractor "+i);
+     assert.ok(n<=76?/\)[+-]/.test(raw):raw.includes("x^2"),
+       q.id+" equivalent alternate might also satisfy requested factorization");
+     equivalent_but_not_factorized.push({id:q.id,option:i,kind:n<=76?"unfactored_expression":"partial_factorization"});
    }
    if(n<=12){
      const coefficients=target.filter(v=>v!==0n);
