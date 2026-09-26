@@ -156,9 +156,9 @@ def markdown_anchors(path):
 
     # Explicit stable anchors are allowed in Markdown source too.
     # This supports editorial IDs that survive changes to translated headings.
-    for explicit in re.finditer(r'<a\\s+[^>]*?id=["\\\']([^"\\\']+)["\\\'][^>]*>', text, re.IGNORECASE):
+    for explicit in re.finditer(r"""<a\s+[^>]*?id=['"]([^'"]+)['"][^>]*>""", text, re.IGNORECASE):
         anchors.add(explicit.group(1))
-    for explicit in re.finditer(r'\\{#([A-Za-z][A-Za-z0-9_.:-]*)\\}', text):
+    for explicit in re.finditer(r"\{#([A-Za-z][A-Za-z0-9_.:-]*)\}", text):
         anchors.add(explicit.group(1))
 
     return anchors
