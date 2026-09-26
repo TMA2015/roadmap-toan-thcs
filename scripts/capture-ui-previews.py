@@ -65,19 +65,20 @@ with sync_playwright() as p:
       return {loaded:node.complete, width:node.naturalWidth, height:node.naturalHeight,
         cornerAlpha:[a(0,0),a(node.naturalWidth-1,0),a(0,node.naturalHeight-1)]};
     }""")
-    check(visual["loaded"] and visual["width"] >= 480 and visual["height"] >= 200, "approved mascot loaded")
+    check(visual["loaded"] and visual["width"] >= 700 and visual["height"] >= 360, "approved full sleeping classroom scene loaded")
     check(page.locator(".study-art-room, .study-art-wakeup").count() == 0, "no stacked room panel or duplicate greeting")
     stage = page.locator(".study-art-stage").bounding_box()
     check(stage is not None and abs(stage["width"] / stage["height"] - 520/276) < .02, "sleeping scene has one landscape panel")
     shot(page, "home-playful-desktop.png")
     page.locator("[data-study-wake]").click()
     check(page.locator("[data-study-gateway]").is_visible(), "wake reveals learning routes")
-    check("study-scene-awake-approved.webp" in img.get_attribute("src"), "approved full-room scene swaps in")
+    check("study-scene-awake-final.webp" in img.get_attribute("src"), "owner-approved awake scene swaps in")
     page.wait_for_function("""() => {
       const img = document.querySelector(".study-art-image");
-      return img && img.complete && img.naturalWidth >= 780 && img.naturalWidth / img.naturalHeight > 1.7;
+      return img && img.complete && img.naturalWidth >= 700 && img.naturalWidth / img.naturalHeight > 1.7;
     }""")
-    check(page.locator(".study-art-stage").evaluate("(el) => getComputedStyle(el).backgroundImage === 'none' || !getComputedStyle(el).backgroundImage.includes('study-room-pastel.svg')"), "awake artwork has no separate room layer")
+    check(page.locator(".study-art-stage").evaluate("(el) => getComputedStyle(el).backgroundImage === 'none'"), "both scene states need no extra image background")
+    check(img.evaluate("(node) => getComputedStyle(node).objectFit === 'cover'"), "both scene images use same cover crop")
     shot(page, "home-awake-desktop.png")
     page.reload(wait_until="networkidle")
     check(page.locator('[data-home-mode="playful"]').is_visible(), "mode persisted after reload")
