@@ -355,3 +355,29 @@ body{letter-spacing:-.008em}
   .md-typeset>h2{font-size:1.16rem;line-height:1.28}
   .md-typeset>h3{font-size:.94rem;line-height:1.35}
 }
+
+/* Knowledge reading hierarchy on desktop: headings should not dominate the lesson. */
+@media(min-width:60rem){
+  .md-content__inner>.md-typeset>h1{
+    font-size:clamp(1.55rem,2.2vw,1.82rem);
+    line-height:1.22;
+    font-weight:770;
+    letter-spacing:-.025em;
+    padding-bottom:.58rem;
+    margin-bottom:1rem
+  }
+  .md-content__inner>.md-typeset>h2{
+    font-size:clamp(1.04rem,1.4vw,1.18rem);
+    line-height:1.36;
+    font-weight:740;
+    margin-top:1.7rem;
+    padding:.58rem .78rem;
+    letter-spacing:-.018em
+  }
+  .md-content__inner>.md-typeset>h3{
+    font-size:.94rem;
+    line-height:1.4;
+    font-weight:720;
+    margin-top:1.15rem
+  }
+}

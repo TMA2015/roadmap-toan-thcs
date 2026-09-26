@@ -117,6 +117,8 @@ with sync_playwright() as p:
     shot(page, "lesson-04-desktop.png")
     ai_launcher = page.locator(".floating-ai-launcher")
     check(ai_launcher.count() == 1 and ai_launcher.is_visible(), "lesson page must expose floating AI launcher")
+    check(ai_launcher.locator("img.floating-ai-face").count() == 1, "approved student avatar in launcher")
+    check("tutor-girl-awake.webp" in ai_launcher.locator("img").get_attribute("src"), "avatar image path")
     ai_launcher.click()
     ai_panel = page.locator(".floating-ai-panel")
     check(ai_panel.is_visible(), "floating AI panel opens")
