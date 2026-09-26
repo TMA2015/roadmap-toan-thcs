@@ -86,7 +86,16 @@
     shell.className = "floating-ai";
     shell.dataset.floatingAi = "1";
 
-    const launcher = button("🤖", "floating-ai-launcher");
+    const iconSrc = (location.pathname.startsWith("/roadmap-toan-thcs/") ? "/roadmap-toan-thcs/" : "/") + "assets/images/tutor-girl-awake.webp";
+    const launcher = button("", "floating-ai-launcher");
+    const face = document.createElement("img");
+    face.className = "floating-ai-face";
+    face.src = iconSrc;
+    face.alt = "";
+    face.width = 64;
+    face.height = 64;
+    face.decoding = "async";
+    launcher.appendChild(face);
     launcher.setAttribute("aria-label", "Mở AI Tutor để hỏi về bài học");
     launcher.setAttribute("aria-expanded", "false");
 
@@ -99,12 +108,16 @@
     head.className = "floating-ai-head";
     const titleWrap = document.createElement("div");
     const title = document.createElement("strong");
-    title.textContent = "🤖 Hỏi AI về bài đang đọc";
+    title.textContent = "Gia sư AI · Hỏi về bài đang đọc";
     const contextLabel = document.createElement("small");
     titleWrap.append(title, contextLabel);
     const close = button("×", "floating-ai-close");
     close.setAttribute("aria-label", "Đóng AI Tutor");
-    head.append(titleWrap, close);
+    const smallFace = document.createElement("img");
+    smallFace.src = iconSrc;
+    smallFace.alt = "";
+    smallFace.className = "floating-ai-head-face";
+    head.append(smallFace, titleWrap, close);
 
     const quick = document.createElement("div");
     quick.className = "floating-ai-quick";
