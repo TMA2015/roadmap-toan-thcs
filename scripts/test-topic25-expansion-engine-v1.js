@@ -57,7 +57,7 @@ for(const token of ["deadline_at","localStorage","submitted","finalized","answer
   check(code.includes(token),"engine missing "+token);
 }
 check(!code.includes("innerHTML")&&!code.includes("eval("),"no untrusted markup or eval");
-check(code.includes("Static")&&code.includes("NOT a security boundary"),"do not misrepresent GitHub Pages security");
+check(code.includes("GitHub Pages")&&code.includes("NOT a security boundary"),"do not misrepresent GitHub Pages security");
 const packet=read("review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26.txt");
 check((packet.match(/BEGIN SOURCE FILE:/g)||[]).length===13,"Gemini packet includes exact original 13 sources");
 console.log("PASS: 10 curated of 11+ anchors, geometry SVG and proof links, 3x120min 10-point exam rubrics, gap mapping and source packet.");
