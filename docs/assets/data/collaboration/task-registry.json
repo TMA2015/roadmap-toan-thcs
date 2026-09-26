@@ -502,11 +502,12 @@
       "id": "TOPIC25-INDEPENDENT-MATH-REVIEW-001",
       "title": "Independent review of Topic25 geometry proofs and exam keys",
       "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
-      "status": "OPEN",
+      "status": "READY",
       "packet": "review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26_MAIN_R2.txt",
-      "review_notes": "R2 pack snapshot 04b275cb5870a2fbd8f540333b96529285277883; exact 23 current-source Markdown/JSON/SVG files including anchor catalog, 11 anchors and exam rubric. Original 13-file packet predates PR #112 and MUST NOT be used for sign-off. Structural preflight: 3 exams 120 minutes / 10 points, rubric sums and anchor/topic links valid. Independent math/Gemini result NOT RECEIVED; do not mark PASS until source-locked findings are checked against current revision.",
+      "review_notes": "Received user-supplied Gemini R2 JSON (SHA256 7a2e617952842db0dde138e297631b7fb6910945dc1dcaaaa6a6f7e2c5694091) with APPROVE and no critical corrections. Its source_files_reviewed lists 17/23 sources; unlisted: anchor-25-011.md, anchor-catalog-v1.json, topic25-exams-v1.json, three geometry SVGs. All 23 source blobs match snapshot commit on main. Three new deep pages 006/007/010 authored after review, so not Gemini-certified. See review-packets/topic25/REVIEW_INTEGRATION_2026-09-26.md. Technical CI/browser pending; preserve scope warning.",
       "source_commit": "04b275cb5870a2fbd8f540333b96529285277883",
-      "packet_source_count": 23
+      "packet_source_count": 23,
+      "review_verdict": "GEMINI_R2_APPROVE_REPORTED_SOURCE_LIST_INCOMPLETE"
     },
     {
       "id": "G6-T02-GOLDEN-001",
@@ -529,6 +530,13 @@
       "routing": "OWNER_DEVICE_QA",
       "status": "OPEN",
       "review_notes": "Check class6 chapter link → five learning cards → micro hints and after-submit readiness → next-topic link on PC/iPad/mobile. CI/browser passes but this task remains pending user acceptance. No impact on learner evidence."
+    },
+    {
+      "id": "TOPIC25-R2-SOURCE-COVERAGE-001",
+      "title": "Confirm omitted R2 source files and review new Topic25 deep pages",
+      "routing": "INDEPENDENT_REVIEW+CHATGPT_VERIFY",
+      "status": "OPEN",
+      "review_notes": "Gemini response lists 17/23 files. Obtain targeted independent source-locked review of 6 unlisted sources and new deep pages A25-006/007/010 when Math project resumes. This follow-up is not a reported critical math error; do not block use of existing exam content or merge technically validated editorial additions solely due to missing file list."
     }
   ]
 }

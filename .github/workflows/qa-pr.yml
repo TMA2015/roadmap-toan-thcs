@@ -31,6 +31,7 @@ jobs:
           node --check docs/assets/javascripts/anchor-library-v1.js
           node --check docs/assets/javascripts/topic25-exam-engine-v1.js
           node scripts/test-topic25-expansion-engine-v1.js
+          node scripts/test-topic25-gemini-r2-integration.js
           node scripts/test-prob23-learn-001.js
           node scripts/test-prob23-layer-001.js
           node scripts/test-learning-card-micro-practice.js docs/assets/data/curriculum/topic23-learning-workspace.json docs/assets/data/practice/23-xac-suat-micro-v1.json

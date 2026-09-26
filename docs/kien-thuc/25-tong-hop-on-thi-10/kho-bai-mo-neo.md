@@ -23,11 +23,11 @@ Các bài hình học có hình SVG dựng từ cấu hình thực, nét phụ v
 3. [A25-003 · Lập hệ bài toán vé](bai-toan-kinh-dien.md#anchor-25-003)
 4. [A25-004 · Đường cao tam giác vuông – lời giải sâu và hình](anchor-25-004.md)
 5. [A25-005 · Tối ưu tích](bai-toan-kinh-dien.md#anchor-25-005)
-6. [A25-006 · Căn thức phụ trợ số nguyên](bai-toan-kinh-dien.md#anchor-25-006)
-7. [A25-007 · Tham số và Viète](bai-toan-kinh-dien.md#anchor-25-007)
+6. [A25-006 · Căn thức và tính nguyên – lời giải sâu](anchor-25-006.md)
+7. [A25-007 · Tham số và Viète – lời giải sâu](anchor-25-007.md)
 8. [A25-008 · Tiếp tuyến–cát tuyến – lời giải sâu và hình](anchor-25-008.md)
 9. [A25-009 · Trực tâm–tứ giác nội tiếp – lời giải sâu và hình](anchor-25-009.md)
-10. [A25-010 · Bài toán năng suất](bai-toan-kinh-dien.md#anchor-25-010)
+10. [A25-010 · Bài toán năng suất – lời giải sâu](anchor-25-010.md)
 
 ## Bài bổ sung ngoài bộ 10
 
