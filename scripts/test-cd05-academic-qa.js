@@ -153,4 +153,15 @@ console.log("PASS CĐ05 formula oracle and unique correct options: "+variantChec
 console.log("PASS CĐ05 coefficient, A/B, equation, proof/method QA: "+manualChecks.length+" cases");
 console.log("PASS CĐ05 five flagged cases retain limited assessment claims and have specific explanations");
 console.log("PASS CĐ05 full-text review queue/source hashes and 120 original IDs/tags retained");
+const ledger=json("docs/assets/data/curriculum/cd05-academic-qa-ledger-v1.json");
+assert.equal(ledger.schema,"cd05-academic-qa-ledger-v1");
+assert.deepEqual(ledger.counts,{total:120,numeric_group:104,logic_group:16,
+ identity_recognition_or_method_only:4,first_step_only:1,method_not_observable:15});
+assert.deepEqual(ledger.items.map(q=>q.question_id),overlay.items.map(q=>q.id));
+for(const item of ledger.items){
+ const q=byId.get(item.question_id);
+ assert.equal(item.source_file,q.__source);
+ assert.equal(item.candidate_primary,overlay.items.find(x=>x.id===q.id).proposed_assessed_skill);
+}
+console.log("PASS CĐ05 ledger 120/120 source mappings and honest proof/method limitations");
 console.log("PASSED CĐ05 academic QA: 120/120 with two explicit QA methods.");
