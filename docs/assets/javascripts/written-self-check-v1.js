@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   const init = () => {
-    if (!/\/tu-kiem-tra\/?(?:index\.html)?$/.test(location.pathname)) return;
+    if (!/\/tu-kiem-tra(?:-tu-luan)?\/?(?:index\.html)?$/.test(location.pathname)) return;
     const host = document.querySelector(".md-content__inner");
     if (!host || host.dataset.writtenSelfCheckReady === "1") return;
     host.dataset.writtenSelfCheckReady = "1";
