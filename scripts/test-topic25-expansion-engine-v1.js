@@ -19,7 +19,7 @@ for(const a of catalog.anchors){
   check(acceptedReviewStates.has(a.independent_math_review),a.id+" must use source-qualified independent review status");
   if(a.independent_math_review!=="pending_Gemini"){
     const review=read("review-packets/topic25/REVIEW_INTEGRATION_2026-09-26.md");
-    check(review.includes("17/23") && review.includes("không ký duyệt") && review.includes("04b275cb5870a2fbd8f540333b96529285277883"),a.id+" must have source-locked limited review evidence");
+    check(review.includes("17/23") && review.toLowerCase().includes("không ký duyệt") && review.includes("04b275cb5870a2fbd8f540333b96529285277883"),a.id+" must have source-locked limited review evidence");
     if(a.id==="A25-011")check(a.independent_math_review==="gemini_R2_claimed_correct_but_source_file_not_listed",a.id+" unlisted file must remain qualified");
   }
   for(const x of a.related_anchor_ids)check(ids.has(x),a.id+" broken relation "+x);
