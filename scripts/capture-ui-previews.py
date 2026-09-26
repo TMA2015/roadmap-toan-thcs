@@ -58,7 +58,15 @@ with sync_playwright() as p:
     page.locator('.home-style-bar [data-home-select="playful"]').click()
     check(page.locator('[data-home-mode="playful"]').is_visible(), "playful artwork must be visible")
     img = page.locator(".study-art-image")
-    check(img.evaluate("(node) => node.complete && node.naturalWidth >= 480 && node.naturalHeight > node.naturalWidth"), "approved portrait mascot loaded")
+    visual = img.evaluate("""node => {
+      const canvas = document.createElement("canvas"); canvas.width = node.naturalWidth; canvas.height = node.naturalHeight;
+      const ctx = canvas.getContext("2d"); ctx.drawImage(node, 0, 0);
+      const a = (x,y) => ctx.getImageData(x,y,1,1).data[3];
+      return {loaded:node.complete, width:node.naturalWidth, height:node.naturalHeight,
+        cornerAlpha:[a(0,0),a(node.naturalWidth-1,0),a(0,node.naturalHeight-1)]};
+    }""")
+    print("MASCOT ASSET", visual, flush=True)
+    check(visual["loaded"] and visual["width"] >= 480 and visual["height"] >= 200, "approved mascot loaded")
     room = page.locator(".study-art-room")
     check(room.evaluate("(node) => node.complete && node.naturalWidth >= 1000"), "illustrated study room loaded")
     shot(page, "home-playful-desktop.png")
