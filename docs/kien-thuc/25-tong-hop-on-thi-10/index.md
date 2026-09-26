@@ -511,13 +511,13 @@ Chuyên đề 25 từ nay tách rõ **ba đường luyện khác nhau** để kh
 
 [**Bộ bài tập học thuật tổng hợp**](bai-tap.md) gồm các bài Đại số, hàm số – Viète, bài toán thực tế, Thống kê – Xác suất và Hình học. Đây là nơi kiểm tra trực tiếp năng lực Toán.
 
-### B. Học bài mẫu kinh điển
+### B. Bài toán kinh điển – học bài mẫu
 
 [**Bộ 10 bài toán kinh điển**](bai-toan-kinh-dien.md) kết nối biểu thức căn và câu hỏi phụ, Viète có tham số, hệ phương trình thực tế, năng suất, đồng dạng, tiếp tuyến–cát tuyến, trực tâm và cực trị.
 
 Mỗi bài yêu cầu học sinh nhận ra **dấu hiệu → công cụ → chuỗi suy luận → cách biến đổi bài**, rồi tự giải lại biến thể trước khi chuyển sang đề tổng hợp.
 
-### C. Luyện đề hoàn chỉnh
+### C. Đề luyện hoàn chỉnh – làm bài đủ thời gian
 
 Ba đề dưới đây đều là **đề tự biên soạn, 120 phút, 10 điểm, gồm 5 bài tự luận**. Đây là tài liệu luyện tập theo những mạch kiến thức của chúng ta, không phải đề chính thức hay đề dự báo. **Đáp án nằm ở trang riêng**, để học sinh hoàn thành bài trên giấy trước khi mở:
 
