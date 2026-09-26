@@ -138,7 +138,8 @@ assert.equal(manualChecks.length,16,"concept/equation proof method count drift")
 const reviewedQuestions=questions.filter(q=>Number(q.id.split("_").at(-1))>=116);
 assert.equal(reviewedQuestions.length,5);
 for(const q of reviewedQuestions){
- assert.ok(q.explanation.length>115,q.id+" needs worked explanation, not generic text");
+ const expectedResult={116:"=2(a^2+b^2)",117:"=4xy",118:"=2x(x^2+3y^2)",119:"=4ab",120:"(x-2)(x+2)(x^2+4)"}[Number(q.id.split("_").at(-1))];
+ assert.ok(q.explanation.includes(expectedResult),q.id+" missing worked mathematical result");
 }
 const oldQueue=json("docs/assets/data/curriculum/primary-skill-review-queue-04-05-v1.json");
 for(const item of oldQueue.items.filter(item=>item.topic==="05-7-hang-dang-thuc")){
