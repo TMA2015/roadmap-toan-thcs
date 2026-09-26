@@ -11,6 +11,7 @@
     const panel = dialog && dialog.querySelector(".home-style-panel");
     const scene = portal.querySelector("[data-study-scene]");
     const wake = scene && scene.querySelector("[data-study-wake]");
+    const illustration = scene && scene.querySelector(".study-art-image");
     const gateway = scene && scene.querySelector("[data-study-gateway]");
     const standard = portal.querySelector('[data-home-mode="standard"]');
     let restoreFocus = null;
@@ -50,6 +51,10 @@
       wake.addEventListener("click", () => {
         if (scene.classList.contains("is-awake")) return;
         scene.classList.add("is-awake"); gateway.hidden = false;
+        if (illustration?.dataset.awakeSrc) {
+          illustration.src = illustration.dataset.awakeSrc;
+          illustration.alt = "Cô bé đeo kính đã tỉnh dậy, mở mắt và vui vẻ vẫy tay";
+        }
         wake.setAttribute("aria-label", "Cô bé đã tỉnh và sẵn sàng học; chọn lối vào bên dưới");
       });
     }
