@@ -511,18 +511,23 @@ Chuyên đề 25 từ nay tách rõ **ba đường luyện khác nhau** để kh
 
 [**Bộ bài tập học thuật tổng hợp**](bai-tap.md) gồm các bài Đại số, hàm số – Viète, bài toán thực tế, Thống kê – Xác suất và Hình học. Đây là nơi kiểm tra trực tiếp năng lực Toán.
 
-### B. Học bài mẫu kinh điển
+### B. Bài toán kinh điển – học bài mẫu
 
-[**Bài toán kinh điển**](bai-toan-kinh-dien.md) tập trung vào những mẫu có giá trị dạy phương pháp: biểu thức căn có điều kiện, Viète, bài toán lập hệ, hệ thức lượng từ đồng dạng và tối ưu bằng bình phương không âm.
+[**Bộ 10 bài toán kinh điển**](bai-toan-kinh-dien.md) kết nối biểu thức căn và câu hỏi phụ, Viète có tham số, hệ phương trình thực tế, năng suất, đồng dạng, tiếp tuyến–cát tuyến, trực tâm và cực trị.
 
-Mỗi bài yêu cầu học sinh nhận ra:
-**dấu hiệu → công cụ → chuỗi suy luận → cách biến đổi bài**.
+Mỗi bài yêu cầu học sinh nhận ra **dấu hiệu → công cụ → chuỗi suy luận → cách biến đổi bài**, rồi tự giải lại biến thể trước khi chuyển sang đề tổng hợp.
 
-### C. Luyện đề hoàn chỉnh
+### C. Đề luyện hoàn chỉnh – làm bài đủ thời gian
 
-[**Đề luyện hoàn chỉnh số 1 – 120 phút**](de-luyen-01.md) là đề tự biên soạn để luyện toàn bộ quy trình phòng thi và chữa đề.
+Ba đề dưới đây đều là **đề tự biên soạn, 120 phút, 10 điểm, gồm 5 bài tự luận**. Đây là tài liệu luyện tập theo những mạch kiến thức của chúng ta, không phải đề chính thức hay đề dự báo. **Đáp án nằm ở trang riêng**, để học sinh hoàn thành bài trên giấy trước khi mở:
 
-Đề này **không sao chép đề chính thức**. Cấu trúc được dùng như một bài mô phỏng dựa trên xu hướng kỳ thi Hà Nội theo chương trình mới. Đề Toán vào lớp 10 Hà Nội năm 2025 gồm 5 bài trong 120 phút; Sở GD&ĐT Hà Nội đã công bố đề và đáp án chính thức sau kỳ thi.
+<div class="capstone-exam-grid" markdown="1">
+  <a class="capstone-exam-link" href="de-luyen-01/"><strong>Đề 01 · Nền tảng tổng hợp</strong><span>Căn thức, Viète, hệ thực tế, dữ liệu và hình học tam giác vuông.</span><small>120 phút · 10 điểm →</small></a>
+  <a class="capstone-exam-link" href="de-luyen-02/"><strong>Đề 02 · Mạch liên kết</strong><span>Căn thức phụ trợ số nguyên, parabol–đường thẳng, tiếp tuyến–cát tuyến.</span><small>120 phút · 10 điểm →</small></a>
+  <a class="capstone-exam-link" href="de-luyen-03/"><strong>Đề 03 · Lập luận chặt chẽ</strong><span>Năng suất, hàm số, trực tâm, tứ giác nội tiếp và xác suất.</span><small>120 phút · 10 điểm →</small></a>
+</div>
+
+*Trình tự khuyến nghị: làm đề → tự chấm theo từng bước → ghi câu sai → mở bài mỏ neo → làm bài biến thể.* Không dùng điểm của lớp kỹ năng thi để cộng vào điểm Toán.
 
 ### D. Kỹ năng thi — tách khỏi điểm học thuật
 
@@ -548,7 +553,7 @@ Phần hỏi về chiến lược phòng thi đã được chuyển sang [Tự �
 - **→ Tiếp theo:** quay lại các chuyên đề được xếp nhóm ưu tiên A/B theo kết quả luyện đề.
 - **🏁 Kết thúc Roadmap:** dùng chuyên đề này như bảng điều khiển ôn tập.
 
-- **✏️ Luyện tập:** [Bài tập Chuyên đề 25](bai-tap.md)
+- **✏️ Luyện tập:** [Bài tập Chuyên đề 25](bai-tap.md) · [10 bài toán kinh điển](bai-toan-kinh-dien.md) · [Đề 1](de-luyen-01.md) · [Đề 2](de-luyen-02.md) · [Đề 3](de-luyen-03.md)
 - **✅ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 25](tu-kiem-tra.md)
 
 Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blueprint-25-chuyen-de.md).
@@ -566,4 +571,4 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Biết phân loại lỗi kiến thức – kỹ năng – cẩu thả.
 - [ ] Biết điều chỉnh chiến lược theo cấu trúc đề địa phương.
 - [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai.
-- [ ] Hoàn thành được một đề có bấm giờ và phân tích lại đầy đủ.
+- [ ] Hoàn thành ít nhất hai đề có bấm giờ và phân tích lại đầy đủ (không yêu cầu làm cả ba ngay từ đầu).

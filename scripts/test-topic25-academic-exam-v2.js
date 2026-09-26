@@ -9,7 +9,7 @@ const mock=read("docs/kien-thuc/25-tong-hop-on-thi-10/de-luyen-01.md");
 const skills=read("docs/kien-thuc/25-tong-hop-on-thi-10/tu-danh-gia-ky-nang-thi.md");
 const data=JSON.parse(read("docs/assets/data/curriculum/topic25-learning-workspace.json"));
 const ok=(v,m)=>{if(!v)throw Error(m)};
-ok(index.includes("Luyện học thuật")&&index.includes("Bài toán kinh điển")&&index.includes("Đề luyện hoàn chỉnh số 1")&&index.includes("Kỹ năng thi — tách khỏi điểm học thuật"),"topic25 four lanes");
+ok(index.includes("Luyện học thuật")&&index.includes("Bài toán kinh điển")&&[1,2,3].every(n=>index.includes("de-luyen-0"+n+"/"))&&index.includes("Kỹ năng thi — tách khỏi điểm học thuật"),"topic25 four lanes");
 ok(practice.includes("## A. Đại số")&&practice.includes("## D. Thống kê và xác suất")&&practice.includes("## E. Hình học"),"academic practice strands");
 ok(!practice.includes("Mức 1 – Nhận biết")&&!practice.includes("Sổ lỗi sai nên ghi"),"strategy prompts removed from academic exercise bank");
 ok(check.includes("Câu 1 – Đại số")&&check.includes("Câu 4 – Hình học")&&check.includes("Điểm này chỉ đo bài Toán hiện tại"),"academic self-check");
