@@ -11,7 +11,11 @@
  ];
  const addMobileShortcuts = () => {
    const nav = document.querySelector(".md-sidebar--primary nav.md-nav--primary");
-   if (!nav || nav.querySelector("[data-roadmap-mobile-shortcuts]")) return;
+   if (!nav) return;
+   // Material's drill-down topic list overlays nav children. Put global links
+   // in the drawer scroll container, outside that moving list, so they stay tappable.
+   const drawer = nav.closest(".md-sidebar__scrollwrap") || nav;
+   if (drawer.querySelector("[data-roadmap-mobile-shortcuts]")) return;
    const list = nav.querySelector(":scope > .md-nav__list") || nav.querySelector(".md-nav__list");
    if (!list) return;
    const sources = [...document.querySelectorAll(".md-tabs__list a.md-tabs__link")];
@@ -38,7 +42,8 @@
      links.appendChild(a);
    }
    section.append(title, links);
-   nav.insertBefore(section, list);
+   if (drawer === nav) nav.insertBefore(section, list);
+   else drawer.insertBefore(section, drawer.firstChild);
  };
  const create = () => {
    // The sidebar is reconstructed on instant navigation, so mount separately
