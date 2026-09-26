@@ -18,7 +18,7 @@ A=\frac{\sqrt{x}-2}{\sqrt{x}+1},\qquad x\ge 0.
 **Cách nghĩ**
 
 - Nhìn thấy \(\sqrt{x}\): kiểm tra \(x\ge0\).
-- Mẫu \(sqrt{x}+1>0\) với mọi \(x\ge0\), nên không phát sinh điều kiện loại thêm.
+- Mẫu \(\sqrt{x}+1>0\) với mọi \(x\ge0\), nên không phát sinh điều kiện loại thêm.
 - Khi giải phương trình, có thể đặt \(t=\sqrt{x}\ge0\) để nhìn cấu trúc rõ hơn.
 
 **Lời giải**
@@ -62,7 +62,7 @@ S=x_1^2+x_2^2.
 
 Từ Viète:
 \[
-x_1+x_2=5,qquad x_1x_2=3.
+x_1+x_2=5,\qquad x_1x_2=3.
 \]
 
 Biểu thức cần tính là đối xứng theo hai nghiệm:

@@ -24,7 +24,7 @@ Giá trị này thỏa điều kiện.
 
 1. Theo Viète:
 \[
-x_1+x_2=5,qquad x_1x_2=6.
+x_1+x_2=5,\qquad x_1x_2=6.
 \]
 Suy ra
 \[
@@ -48,7 +48,7 @@ Tổng số điểm:
 \]
 Số trung bình:
 \[
-\\overline x=\frac{65}{8}=8{,}125.
+\overline{x}=\frac{65}{8}=8{,}125.
 \]
 
 Trung vị:
@@ -56,7 +56,7 @@ Trung vị:
 \frac{8+9}{2}=8{,}5.
 \]
 
-Mốt là (9).
+Mốt là \(9\).
 
 Có 4 học sinh đạt từ 9 điểm trở lên, nên xác suất:
 \[
@@ -114,6 +114,36 @@ Do \(x+y=10\):
 Dấu bằng xảy ra khi \(x=y=5\).
 
 Vậy \(P_{\max}=25\).
+
+---
+
+## Rubric tự chấm theo từng ý
+
+Đây là **hướng dẫn phân bổ điểm cho đề tự biên soạn**, không phải đáp án chính thức của một kỳ thi tuyển sinh. Học sinh tự chấm theo phần lập luận thực sự đã trình bày trên giấy; chỉ ghi đáp số đúng mà không có cách giải thì không tự nhận toàn bộ điểm.
+
+| Bài – ý | Điểm | Những bước cần thể hiện |
+|---|---:|---|
+| I.1 | 1,00 | Đưa ba căn thức về cùng dạng (0,75); cộng trừ hệ số đúng (0,25). |
+| I.2 | 1,00 | Điều kiện \(x\ne-1\) (0,25); biến đổi và giải \(x=8\) (0,50); đối chiếu và kết luận (0,25). |
+| II.1 | 1,00 | Nêu tổng/tích hai nghiệm bằng Viète (0,50); dùng hằng đẳng thức và ra \(13\) (0,50). |
+| II.2 | 1,00 | Đặt ẩn gắn đơn vị/điều kiện (0,25); lập đúng hai phương trình (0,35); giải hệ (0,25); kết luận số sản phẩm từng loại (0,15). |
+| III.1 | 0,50 | Cộng đúng dữ liệu (0,25); chia cho 8 và kết luận trung bình (0,25). |
+| III.2 | 0,50 | Trung vị \(8{,}5\) (0,25); mốt \(9\) (0,25). |
+| III.3 | 0,50 | Xác định 4 trường hợp đạt từ 9 điểm (0,25); xác suất \(1/2\) (0,25). |
+| IV.1 | 1,00 | Chỉ ra các cặp góc bằng nhau (0,40); viết đúng cặp tam giác đồng dạng theo thứ tự tương ứng (0,60). |
+| IV.2 | 0,75 | Từ tỷ số cạnh tương ứng suy ra \(AH^2=BH\cdot CH\) (0,75). |
+| IV.3 | 1,25 | \(BC=25\) (0,25); \(AH=12\) (0,35); \(AB=15\) và \(AC=20\), kèm hệ thức lượng (0,65). |
+| IV.4 | 0,50 | Chọn đúng công thức diện tích (0,25); kết quả \(150\) (0,25). |
+| V | 1,00 | Chứng minh \(4xy\le(x+y)^2\) (0,50); suy ra cận trên (0,25); nêu dấu bằng và kết luận (0,25). |
+| **Tổng** | **10,00** | |
+
+**Đọc kết quả để học lại đúng phần:**
+
+- Sai Bài I → [Căn thức – CĐ11](../11-can-thuc/index.md) và [phương trình – CĐ08](../08-phuong-trinh-bat-phuong-trinh/index.md).
+- Sai Bài II → [Phương trình bậc hai & Viète – CĐ12](../12-phuong-trinh-bac-hai-viete/index.md), [Hệ phương trình – CĐ09](../09-he-phuong-trinh/index.md) và [Bài toán kinh điển](bai-toan-kinh-dien.md).
+- Sai Bài III → [Thống kê – CĐ21](../21-thong-ke/index.md), [Xác suất – CĐ23](../23-xac-suat/index.md).
+- Sai Bài IV → [Đồng dạng – CĐ17](../17-thales-dong-dang/index.md), [Hệ thức lượng – CĐ18](../18-he-thuc-luong/index.md).
+- Sai Bài V → [Biểu thức đại số – CĐ04](../04-bieu-thuc-dai-so/index.md) và [Bài toán kinh điển](bai-toan-kinh-dien.md).
 
 ---
 

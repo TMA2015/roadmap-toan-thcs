@@ -33,9 +33,9 @@ x_1^2+x_2^2=49-20=29.
 
 ## Câu 3
 
-Tổng dữ liệu bằng (42), nên số trung bình là
+Tổng dữ liệu bằng \(42\), nên số trung bình là
 \[
-\\overline x=7.
+\overline{x}=7.
 \]
 
 Trung vị:
@@ -43,7 +43,7 @@ Trung vị:
 \frac{7+7}{2}=7.
 \]
 
-Mốt là (7).
+Mốt là \(7\).
 
 Các số chia hết cho 3 trong \(1,2,\ldots,10\) là \(3,6,9\), nên
 \[
