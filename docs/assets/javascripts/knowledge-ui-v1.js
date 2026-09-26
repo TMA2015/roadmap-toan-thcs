@@ -147,7 +147,7 @@
     if (anchor) anchor.after(panel);
     else host.prepend(panel);
     try {
-      const graphUrl = new URL("../../assets/data/curriculum/knowledge-graph-v1.json", root);
+      const graphUrl = new URL("../../assets/data/curriculum/knowledge-graph-v1.json", location.origin + root);
       const response = await fetch(graphUrl.href);
       if (!response.ok) throw new Error("Graph unavailable");
       const graph = await response.json();
@@ -163,7 +163,7 @@
         {label:"Hướng học tiếp", ids:[...new Set(edges.filter(e => e.type === "PREREQUISITE" && e.confidence === "high" && ids.includes(e.from) && nodes[e.to]?.topic !== match[1]).map(e => e.to))], explanation:"Gợi ý kỹ năng sử dụng kiến thức hiện tại; có thể học theo nhiều nhánh."}
       ];
       const labelFor = id => id.replace(/-/g, " ");
-      const topicHref = id => new URL("../" + nodes[id].topic + "/", root).href;
+      const topicHref = id => new URL("../" + nodes[id].topic + "/", location.origin + root).href;
       const visibleGroups = groups.filter(group => group.ids.length);
       visibleGroups.forEach(group => {
         const section = document.createElement("div");
