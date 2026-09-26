@@ -1,5 +1,7 @@
 # Gói phản biện độc lập cho Gemini — Skill Taxonomy v1
 
+> **ĐỔI PHẠM VI SAU PHẢN BIỆN 26/09/2026:** Lệnh rà soát/chuẩn hóa toàn bộ 346 tag ở các phần dưới là lịch sử của đợt kiểm kê, **không còn là nhiệm vụ Gemini hiện hành**. Ưu tiên hiện tại là taxonomy tối thiểu đủ chẩn đoán cho nền tảng và ứng dụng thực tế; dùng [quy tắc tinh gọn](skill-taxonomy-minimal-policy-v1.md), [pilot 10 cặp](../assets/data/curriculum/skill-role-pilot-04-11-v1.json), [bằng chứng câu hỏi](gemini-question-evidence-10-cases-2026-09-26.md) và [nhiệm vụ mới](gemini-next-review-10-pairs-v1.md). Không đổi mã/lưu trữ/runtime nếu chưa có QA và quyết định riêng.
+
 > **Cập nhật 26/09/2026:** KNTT là bộ SGK thống nhất toàn quốc từ năm học 2026–2027 theo Quyết định 3588/QĐ-BGDĐT; Quyết định 185/QĐ-BGDĐT bổ sung danh mục. Toán THCS: KNTT 6–9 là mapping SGK, Chương trình GDPT môn Toán là chuẩn yêu cầu cần đạt. Không dựng các mapping Core theo ba bộ SGK song song. Văn bản: https://xaydungchinhsach.chinhphu.vn/quyet-dinh-so-3588-qd-bgddt-ve-bo-sach-giao-khoa-giao-duc-pho-thong-su-dung-thong-nhat-toan-quoc-119251227145448874.htm
 >
 > **Quy tắc Gemini:** đọc nội dung tệp .md/.json được tải lên trực tiếp; URL là tham chiếu tùy chọn, không giả định truy cập được. Ba catalogue có ID/nhãn/số câu/ID ví dụ: docs/roadmap/gemini-catalogue-04-11.md, gemini-catalogue-12-18.md, gemini-catalogue-19-25.md. Nếu không có toàn văn câu hỏi hay chương trình, đánh dấu thiếu chứng cứ, không kết luận chắc chắn.
