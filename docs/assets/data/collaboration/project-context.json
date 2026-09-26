@@ -1,5 +1,5 @@
 {
-  "version": "1.0.56",
+  "version": "1.0.57",
   "updated": "2026-09-26",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -209,7 +209,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Math next when resumed: CĐ03 grade-scoped foundation (class6 ratio/percent vs class7 proportion/direct-inverse ratio). CĐ25 R2 received and integrated with explicit 17/23 source-list limitation; follow-up 6 omitted source files and 3 post-review deep pages if independent signoff desired. Do not redo CĐ02 pilot.",
+    "next_priority": "Pause Math after CĐ25 R2/R3 scope-accurate closure and deployed CĐ02 grade-six pilot. Transfer to EXISTING AI English Tutor Site, preserving learner accounts, evidence, Assisted Review, 12-week writing course, imports, exports and independent content. When Math resumes: G6-T03-SCOPE-001 grade6 ratio/percent vs grade7 proportion/direct/inverse mapping; G6-T02-OWNER-UX-001 real-device acceptance still separate.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -309,14 +309,14 @@
       "mock_total_points": 10,
       "exam_engine": "localStorage-backed timed written exam with learner self-marked rubric and gap links; not AI/teacher graded",
       "release": "PR #122 CI run 36233772681 success, Deploy MkDocs run 36233855045 success. Previous PRs #104 and #109–113 remain history.",
-      "independent_math_review": "GEMINI_R2_REPORTED_APPROVE_WITH_17_OF_23_SOURCE_LIST; response had no critical corrections; math/exam reviewed as reported, source listing omitted 6 files and post-review deep pages new. See REVIEW_INTEGRATION_2026-09-26.md. Follow-up task TOPIC25-R2-SOURCE-COVERAGE-001 remains OPEN; do not imply full independent signoff.",
+      "independent_math_review": "DOCUMENTED_COMPLETE_R2_R3: Gemini R2 reported APPROVE with 17/23 source paths listed (snapshot 04b275cb). Targeted Gemini R3 APPROVE with all nine named target files PASS (six omitted R2 source files + three new deep A25-006/007/010) at source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536. R3 lists only five of eight context files; do not claim eight context files independently reviewed in R3. No critical corrections; findings are AI cross-review not formal exam certification. See review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md.",
       "learning_ai": "contextual Tutor on Topic25 main and deep-reading pages, not assessment/answer pages",
-      "deep_solution_new_release": "DEPLOYED: PR #122 merge 2865e1e82749484300244234e95cad8b6ca05f7a; academic/source QA, browser and MkDocs deploy success. A25-006/007/010 new deep pages; source original unchanged, Gemini R2 did NOT independently review these post-snapshot pages.",
-      "gemini_review_packet": "TOPIC25-GEMINI-REVIEW-20260926-R2"
+      "deep_solution_new_release": "DEPLOYED: PR #122 merge 2865e1e82749484300244234e95cad8b6ca05f7a; academic/source QA, browser and MkDocs deploy success. A25-006/007/010 new deep pages; source original unchanged, Gemini R2 did NOT independently review these post-snapshot pages. Subsequent direct Gemini R3 review confirmed PASS for 006/007/010 at snapshot 5f74d7c; metadata records R3 separately from historical R2.",
+      "gemini_review_packet": "TOPIC25-GEMINI-TARGETED-R3-20260926 (R2 historical limited list remains archived)"
     },
     "grade6_topic02_pilot": "DEPLOYED_CI_BROWSER_PASS_OWNER_DEVICE_QA_PENDING: PR #120, 5 grade6 cards, 15 micro, 10 independent readiness; legacy 120-bank and written test preserved; class7 content excluded from grade6 readiness. Technical CI/build/deploy passed; owner real-device acceptance separate OPEN task G6-T02-OWNER-UX-001.",
     "grade6_topic03_next": "OPEN G6-T03-SCOPE-001: grade6 B31 tỉ số/phần trăm vs grade7 B20–23 tỉ lệ thức, thuận/nghịch; current 120-bank lacks grade metadata, needs scoped next batch.",
-    "topic25_followup": "R2 integrated with limited source coverage. Source-locked TARGETED_R3 package at review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26_TARGETED_R3.txt, source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536, nine TARGET source files (three new deep pages A25-006/007/010 + six previously unlisted R2 files), eight CONTEXT sources; all 17 blob SHAs verified. Independent R3 result NOT RECEIVED. Treat R2 APPROVE as reported for its listed scope, not 23/23 sign-off. Future handoff priority after English project: integrate R3 only if source-locked and evidence-backed."
+    "topic25_followup": "CLOSED: Gemini Targeted R3 delivered 9/9 target PASS (six omitted R2 + three new deep pages) with zero critical corrections, source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536. Five of eight optional context source paths explicitly listed; figure decimal-coordinate rounding qualified. See review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md. No pending source-coverage task for CĐ25 in current review cycle."
   },
   "handoff_required_fields": [
     "TASK_ID",
