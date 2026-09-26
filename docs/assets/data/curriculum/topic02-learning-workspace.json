@@ -1,0 +1,191 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "02-so-va-phep-tinh",
+  "title": "Số và phép tính — chặng học Core lớp 6",
+  "learning_layer_label": "KNTT Core · Nền số học lớp 6",
+  "grade_scope": [
+    6
+  ],
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Năm chặng này chỉ đánh giá nền số học theo KNTT lớp 6, không khẳng định hoàn thành toàn bộ CĐ02 xuyên lớp 6–9. Nội dung số hữu tỉ, số thực và căn bậc hai lớp 7 được học ở chặng riêng sau này."
+  },
+  "cards": [
+    {
+      "id": "num02-g6-core-1",
+      "order": 1,
+      "title": "Tập hợp số tự nhiên và thứ tự phép tính",
+      "kntt_lessons": [
+        "Lớp 6 · Bài 1–7"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        6
+      ],
+      "skills": [
+        "tap-hop-so",
+        "thu-tu-phep-tinh",
+        "luy-thua"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "NUM02MICRO_001",
+        "NUM02MICRO_002",
+        "NUM02MICRO_003"
+      ],
+      "teaching_copy": {
+        "key_idea": "Số tự nhiên gồm 0, 1, 2, 3, ...; khi tính biểu thức, làm trong ngoặc, rồi lũy thừa, nhân/chia và cuối cùng cộng/trừ.",
+        "worked_example": {
+          "problem": "Tính 6 + 2 × 3².",
+          "solution": "3² = 9; 2 × 9 = 18; vậy kết quả là 6 + 18 = 24."
+        },
+        "misconception": "Không cộng 6 + 2 trước khi nhân; cũng không hiểu 3² là 3 × 2.",
+        "summary": "Viết từng bước theo đúng thứ tự để kiểm soát phép tính."
+      }
+    },
+    {
+      "id": "num02-g6-core-2",
+      "order": 2,
+      "title": "Chia hết, số nguyên tố, ƯCLN và BCNN",
+      "kntt_lessons": [
+        "Lớp 6 · Bài 8–12"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        6
+      ],
+      "skills": [
+        "dau-hieu-chia-het",
+        "so-nguyen-to",
+        "phan-tich-thua-so-nguyen-to",
+        "ucln",
+        "bcnn"
+      ],
+      "prerequisites": [
+        "thu-tu-phep-tinh"
+      ],
+      "micro_practice": [
+        "NUM02MICRO_004",
+        "NUM02MICRO_005",
+        "NUM02MICRO_006"
+      ],
+      "teaching_copy": {
+        "key_idea": "Số chia hết cho 3 hoặc 9 khi tổng các chữ số chia hết cho 3 hoặc 9. Số nguyên tố lớn hơn 1 có đúng hai ước dương. ƯCLN dùng cho chia nhóm nhiều nhất; BCNN cho chu kỳ gặp lại.",
+        "worked_example": {
+          "problem": "Có 24 bút và 36 vở, chia được nhiều nhất bao nhiêu phần quà giống nhau, dùng hết?",
+          "solution": "Số phần quà là ƯCLN(24, 36) = 12; mỗi phần có 2 bút và 3 vở."
+        },
+        "misconception": "Tìm nhiều nhóm nhất phải dùng ƯCLN chứ không dùng BCNN.",
+        "summary": "Đọc rõ dấu hiệu của bài toán trước khi chọn ƯCLN hoặc BCNN."
+      }
+    },
+    {
+      "id": "num02-g6-core-3",
+      "order": 3,
+      "title": "Số nguyên, số đối và quy tắc dấu",
+      "kntt_lessons": [
+        "Lớp 6 · Bài 13–17"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        6
+      ],
+      "skills": [
+        "so-nguyen-phep-tinh",
+        "gia-tri-tuyet-doi"
+      ],
+      "prerequisites": [
+        "tap-hop-so"
+      ],
+      "micro_practice": [
+        "NUM02MICRO_007",
+        "NUM02MICRO_008",
+        "NUM02MICRO_009"
+      ],
+      "teaching_copy": {
+        "key_idea": "Số nguyên có số âm, số 0 và số dương. Khi cộng hai số khác dấu, so sánh giá trị tuyệt đối; nhân hai số âm được số dương.",
+        "worked_example": {
+          "problem": "Tính −8 + 13 và (−3) × (−4).",
+          "solution": "−8 + 13 = 5; (−3) × (−4) = 12."
+        },
+        "misconception": "Dấu trừ ở phép cộng khác dấu không có nghĩa kết quả luôn âm.",
+        "summary": "Ước lượng dấu trước khi tính, rồi đối chiếu kết quả."
+      }
+    },
+    {
+      "id": "num02-g6-core-4",
+      "order": 4,
+      "title": "Phân số và các phép tính",
+      "kntt_lessons": [
+        "Lớp 6 · Bài 23–27"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        6
+      ],
+      "skills": [
+        "rut-gon-phan-so",
+        "quy-dong-so-sanh-phan-so",
+        "phep-tinh-phan-so"
+      ],
+      "prerequisites": [
+        "ucln",
+        "bcnn"
+      ],
+      "micro_practice": [
+        "NUM02MICRO_010",
+        "NUM02MICRO_011",
+        "NUM02MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Rút gọn bằng cách chia tử và mẫu cho cùng ước chung; cộng/trừ phân số khác mẫu phải quy đồng; chia phân số khác 0 bằng nhân với nghịch đảo.",
+        "worked_example": {
+          "problem": "Tính 1/2 + 1/3.",
+          "solution": "Quy đồng: 1/2 = 3/6 và 1/3 = 2/6; tổng bằng 5/6."
+        },
+        "misconception": "Không cộng tử với tử, mẫu với mẫu khi hai phân số khác mẫu.",
+        "summary": "Nhận dạng phép tính trước: rút gọn, quy đồng, nhân hoặc chia."
+      }
+    },
+    {
+      "id": "num02-g6-core-5",
+      "order": 5,
+      "title": "Số thập phân, làm tròn và phần trăm",
+      "kntt_lessons": [
+        "Lớp 6 · Bài 28–31"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        6
+      ],
+      "skills": [
+        "so-huu-ti-thap-phan",
+        "phan-tram"
+      ],
+      "prerequisites": [
+        "phep-tinh-phan-so"
+      ],
+      "micro_practice": [
+        "NUM02MICRO_013",
+        "NUM02MICRO_014",
+        "NUM02MICRO_015"
+      ],
+      "teaching_copy": {
+        "key_idea": "Tính số thập phân cần đặt đúng dấu phẩy. p% = p/100. Khi giảm p%, lấy giá ban đầu nhân (1 − p/100).",
+        "worked_example": {
+          "problem": "Áo giá 120 000 đồng giảm 10%. Giá còn bao nhiêu?",
+          "solution": "Số tiền giảm: 120 000 × 10/100 = 12 000 đồng; giá mới 108 000 đồng."
+        },
+        "misconception": "Không nhầm tiền giảm với giá mới; khi cộng số thập phân phải đặt dấu phẩy thẳng cột.",
+        "summary": "Ghi rõ số tiền giảm và số tiền phải trả, kèm đơn vị."
+      }
+    }
+  ],
+  "extensions": [],
+  "micro_practice_bank": "assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+  "qa_notes": [
+    "Nguồn phân đoạn: docs/assets/data/curriculum/kntt-grade6-map.json, bài 1–17 và 23–31.",
+    "Bộ câu hỏi này không lấy kỹ năng số hữu tỉ/số thực/căn bậc hai lớp 7 làm điều kiện hoàn thành lớp 6.",
+    "Practice Bank v1 có 120 câu chưa gắn grade metadata từng item: không tuyên bố toàn bộ ngân hàng là Core lớp 6."
+  ]
+}

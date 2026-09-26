@@ -10,7 +10,12 @@
 > **Vai trò trong Roadmap:** nền tảng số học xuyên suốt THCS, làm cơ sở cho tỉ lệ, biểu thức đại số, căn thức, xác suất và các bài toán thực tế.
 >
 
+!!! info "Học từ lớp 6"
+    Em nên bắt đầu bằng **5 chặng học tương tác** ở phía trên, theo SGK KNTT lớp 6 (Bài 1–17, 23–31). Phần kiến thức trong bài dài này còn có nội dung lớp 7 và các liên hệ học sau: em chỉ cần học đúng phần phù hợp với lớp của mình. Nếu muốn học trước, hãy hỏi AI Tutor về kiến thức nền cần thiết.
+
 ---
+
+<a id="core-journey"></a>
 
 ## 🧭 1. Bản đồ kiến thức
 
@@ -626,77 +631,26 @@ Còn phương trình `x² = 25` mới có hai nghiệm `x = ±5`.
 
 ---
 
-## 📝 8. Luyện tập
+## 📝 8. Luyện tập tiếp theo
 
-### Mức 1 – Nhận biết
+Bộ **5 chặng học lớp 6** ở đầu trang có 15 câu kiểm tra nhanh (Base → Trap → Apply), cho phản hồi và gợi ý. Nếu muốn luyện thêm theo dạng bài hoặc tự trình bày trên vở, hãy vào **Practice Room**.
 
-1. Tính `(-7) + 12`.
-2. Tính `(-4)(-6)`.
-3. Viết `0,35` dưới dạng phân số tối giản.
-4. Tính `ƯCLN(18,30)`.
-5. Tính `BCNN(12,15)`.
-6. Tính `|-9|`.
+[🎯 Mở Practice Room – Chuyên đề 02](bai-tap.md){ .md-button .md-button--primary }
 
-### Mức 2 – Thông hiểu
-
-1. Tính `24 - 3·2² + 18:3`.
-2. Rút gọn `84/126`.
-3. Tính `5/6 - 7/15`.
-4. Tìm `x`: `x - 3/4 = 5/8`.
-5. Một mặt hàng giá 1 200 000 đồng giảm 10%. Tính giá mới.
-
-### Mức 3 – Vận dụng
-
-1. Tính nhanh `48·125 + 52·125`.
-2. Tìm chữ số `a` để số `47a` chia hết cho 9.
-3. Ba chuông reo theo chu kì 6 phút, 8 phút và 12 phút. Sau bao lâu chúng cùng reo lại?
-4. Một số tăng 20% rồi giảm 20%. So sánh kết quả với số ban đầu.
-5. Tìm `x` biết `|2x - 1| = 7`.
-
-### Mức 4 – Nâng cao / tổng hợp
-
-1. Tìm số tự nhiên nhỏ nhất chia cho 6 dư 1, chia cho 8 dư 3.
-2. Chứng minh tổng ba số nguyên liên tiếp chia hết cho 3.
-3. Tìm phân số tối giản bằng `0,272727...`.
-4. Một cửa hàng giảm giá 15%, sau đó giảm tiếp 10% trên giá đã giảm. Tính tỉ lệ giảm thực tế so với giá ban đầu.
-5. Tìm các số nguyên `x` thỏa `|x - 2| + |x + 1| = 5`.
+!!! info "Phạm vi lớp 6 và lớp 7"
+    5 chặng và bài Readiness mới chỉ đo **Core số học lớp 6**. Ngân hàng 120 câu của CĐ02 là ngân hàng xuyên lớp chưa phân loại chính xác từng câu theo lớp; không mặc định cả ngân hàng thuộc lớp 6. Phần số hữu tỉ, số thực và căn bậc hai được học ở lớp 7, không phải điều kiện hoàn thành lớp 6.
 
 ---
 
-## ✅ 9. Tự kiểm tra
+## ✅ 9. Tự kiểm tra mức độ sẵn sàng
 
-### Mini quiz
+Khi đã luyện, em làm **Core Readiness Check – phần lớp 6**: 10 câu độc lập, không gợi ý/Tutor trong khi làm, chỉ phản hồi sau khi nộp bài.
 
-1. `(-8) + 3 = ?`
-2. `(-5)(-2) = ?`
-3. `3/4 + 1/6 = ?`
-4. `ƯCLN(24,36) = ?`
-5. `BCNN(8,12) = ?`
-6. `25%` của `360` bằng bao nhiêu?
-7. `|-12| = ?`
-8. `√81 = ?`
-9. `(-3)²` bằng bao nhiêu?
-10. `-3²` bằng bao nhiêu?
+[✅ Bắt đầu Core Readiness lớp 6](tu-kiem-tra.md){ .md-button .md-button--primary }
 
-### Đáp án
+Kết quả giúp em nhận ra nhóm kỹ năng cần ôn, không phải chứng nhận hoàn thành toàn bộ CĐ02 lớp 6–9 và **không khóa quyền học tiếp**.
 
-1. `-5`
-2. `10`
-3. `11/12`
-4. `12`
-5. `24`
-6. `90`
-7. `12`
-8. `9`
-9. `9`
-10. `-9`
-
-### Tự đánh giá
-
-- **9–10 câu đúng:** nền tảng số học rất chắc.
-- **7–8 câu đúng:** đạt yêu cầu, nên luyện thêm tốc độ và độ chính xác.
-- **5–6 câu đúng:** cần ôn lại các nhóm kiến thức còn sai.
-- **Dưới 5 câu:** nên học lại phần cốt lõi trước khi chuyển sang chuyên đề sau.
+Bài tự luận cũ được giữ thành [bài kiểm tra tự luận bổ sung](tu-kiem-tra-tu-luan.md), không cộng vào điểm Readiness tương tác.
 
 ---
 
@@ -735,4 +689,16 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Chuyển đổi được giữa phân số, số thập phân và phần trăm.
 - [ ] Giải được các bài phần trăm cơ bản và thực tế.
 - [ ] Hiểu giá trị tuyệt đối và căn bậc hai ở mức nền tảng.
-- [ ] Đạt ít nhất **8/10** ở phần tự kiểm tra.
+- [ ] Đã làm **Core Readiness – phần lớp 6**, hiểu và sửa được những lỗi còn lại; không cần đạt 100% mới được học tiếp.
+
+## ➡️ Tiếp tục học
+
+<div class="topic-workspace-actions" markdown>
+
+[🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
+
+[✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
+
+[→ CĐ03 – Tỉ số và phần trăm](../03-ti-le-ti-le-thuc/index.md){ .md-button }
+
+</div>
