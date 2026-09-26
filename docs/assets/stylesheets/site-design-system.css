@@ -465,11 +465,19 @@ body{letter-spacing:-.008em}
 }
 
 /* Advisory skill graph: scoped to lesson pages, no hard-lock UI. */
-.skill-connections{margin:1.2rem 0 1.6rem;padding:1rem 1.15rem;border:1px solid var(--roadmap-line);border-radius:.85rem;background:var(--roadmap-soft);color:var(--roadmap-ink)}
+.skill-connections{margin:1.2rem 0 1.6rem;padding:1rem 1.15rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:.85rem;background:var(--md-code-bg-color);color:var(--md-default-fg-color)}
 .skill-connections>h2{font-size:1.05rem!important;margin:0 0 .35rem!important;border:0!important}
-.skill-connections>p,.skill-connections-group>p{font-size:.76rem;line-height:1.55;color:var(--roadmap-muted);margin:.2rem 0 .65rem}
+.skill-connections>p,.skill-connections-group>p{font-size:.76rem;line-height:1.55;color:var(--md-default-fg-color--light);margin:.2rem 0 .65rem}
 .skill-connections-group{margin-top:.85rem}
 .skill-connections-group h3{font-size:.83rem!important;margin:0 0 .25rem!important}
 .skill-connections-group ul{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none!important;padding:0!important;margin:.35rem 0!important}
-.skill-connections-group li{margin:0!important;padding:.35rem .6rem;border-radius:.45rem;background:var(--roadmap-surface);border:1px solid var(--roadmap-line);font-size:.73rem;line-height:1.35}
+.skill-connections-group li{margin:0!important;padding:.35rem .6rem;border-radius:.45rem;background:var(--md-default-bg-color);border:1px solid var(--md-default-fg-color--lightest);font-size:.73rem;line-height:1.35}
 .skill-connections-group a{font-weight:650}
+
+.skill-connections>summary{cursor:pointer;font-size:.88rem;font-weight:750;line-height:1.5;list-style-position:inside}
+.skill-connections>summary:focus-visible{outline:2px solid var(--md-accent-fg-color);outline-offset:4px}
+.skill-connections:not([open]){padding:.7rem 1rem}
+.skill-connections:not([open])>summary{margin:0}
+.skill-connections-group small{display:block;font-size:.68rem;line-height:1.4;opacity:.8;margin-top:.18rem}
+.skill-connections-group li{max-width:100%;overflow-wrap:anywhere}
+@media(max-width:600px){.skill-connections{padding:.75rem}.skill-connections-group ul{display:grid;grid-template-columns:minmax(0,1fr)}.skill-connections-group li{font-size:.78rem}}
