@@ -43,4 +43,4 @@ Một bài mới được nhận vào kho khi có **đủ dữ liệu và đư�
 
 **Bộ 10 bài tiêu biểu** do khâu biên tập tuyển chọn trong kho: cân bằng đại số, hình học, mô hình hóa, tư duy biến đổi, dạng học sinh thường sai. Khi thay thế phải giữ ID và đường dẫn của bài cũ; bài đó vẫn còn trong thư viện. Góp ý độc lập của Gemini được lưu như **phản biện**, không tự động công bố thành đáp án.
 
-[Trở về Chuyên đề 25](index.md) · [Ba đề luyện hoàn chỉnh](index.md#c-de-luyen-hoan-chinh-lam-bai-du-thoi-gian) · [Đề 1](de-luyen-01.md)
+[Trở về Chuyên đề 25](index.md) · [Ba đề luyện hoàn chỉnh](index.md) · [Đề 1](de-luyen-01.md)
