@@ -42,7 +42,7 @@
       ],
       "content_depth": "overview_pending_deep_solution",
       "publication_status": "published",
-      "independent_math_review": "pending_Gemini"
+      "independent_math_review": "gemini_R2_reported_correct_from_listed_overview_or_deep_source"
     },
     {
       "id": "A25-002",
@@ -71,7 +71,7 @@
       ],
       "content_depth": "overview_pending_deep_solution",
       "publication_status": "published",
-      "independent_math_review": "pending_Gemini"
+      "independent_math_review": "gemini_R2_reported_correct_from_listed_overview_or_deep_source"
     },
     {
       "id": "A25-003",
@@ -101,7 +101,7 @@
       ],
       "content_depth": "overview_pending_deep_solution",
       "publication_status": "published",
-      "independent_math_review": "pending_Gemini"
+      "independent_math_review": "gemini_R2_reported_correct_from_listed_overview_or_deep_source"
     },
     {
       "id": "A25-004",
@@ -135,7 +135,7 @@
       ],
       "content_depth": "full_solution_with_variants",
       "publication_status": "published",
-      "independent_math_review": "pending_Gemini"
+      "independent_math_review": "gemini_R2_reported_correct_from_listed_overview_or_deep_source"
     },
     {
       "id": "A25-005",
@@ -165,7 +165,7 @@
       ],
       "content_depth": "overview_pending_deep_solution",
       "publication_status": "published",
-      "independent_math_review": "pending_Gemini"
+      "independent_math_review": "gemini_R2_reported_correct_from_listed_overview_or_deep_source"
     },
     {
       "id": "A25-006",
@@ -185,7 +185,7 @@
       ],
       "representative": true,
       "source_uri": "bai-toan-kinh-dien/#anchor-25-006",
-      "deep_dive_uri": null,
+      "deep_dive_uri": "anchor-25-006/",
       "figure_uris": [],
       "related_anchor_ids": [
         "A25-001"
@@ -193,9 +193,10 @@
       "exam_question_refs": [
         "EXAM25-02:I"
       ],
-      "content_depth": "overview_pending_deep_solution",
+      "content_depth": "full_solution_with_variants",
       "publication_status": "published",
-      "independent_math_review": "pending_Gemini"
+      "independent_math_review": "gemini_R2_reported_correct_from_listed_overview_or_deep_source",
+      "deep_dive_review": "new_post_R2_editorial_QA_pending_independent_signoff"
     },
     {
       "id": "A25-007",
@@ -215,7 +216,7 @@
       ],
       "representative": true,
       "source_uri": "bai-toan-kinh-dien/#anchor-25-007",
-      "deep_dive_uri": null,
+      "deep_dive_uri": "anchor-25-007/",
       "figure_uris": [],
       "related_anchor_ids": [
         "A25-002",
@@ -224,9 +225,10 @@
       "exam_question_refs": [
         "EXAM25-03:III"
       ],
-      "content_depth": "overview_pending_deep_solution",
+      "content_depth": "full_solution_with_variants",
       "publication_status": "published",
-      "independent_math_review": "pending_Gemini"
+      "independent_math_review": "gemini_R2_reported_correct_from_listed_overview_or_deep_source",
+      "deep_dive_review": "new_post_R2_editorial_QA_pending_independent_signoff"
     },
     {
       "id": "A25-008",
@@ -259,7 +261,7 @@
       ],
       "content_depth": "full_solution_with_variants",
       "publication_status": "published",
-      "independent_math_review": "pending_Gemini"
+      "independent_math_review": "gemini_R2_reported_correct_from_listed_overview_or_deep_source"
     },
     {
       "id": "A25-009",
@@ -292,7 +294,7 @@
       ],
       "content_depth": "full_solution_with_variants",
       "publication_status": "published",
-      "independent_math_review": "pending_Gemini"
+      "independent_math_review": "gemini_R2_reported_correct_from_listed_overview_or_deep_source"
     },
     {
       "id": "A25-010",
@@ -312,7 +314,7 @@
       ],
       "representative": true,
       "source_uri": "bai-toan-kinh-dien/#anchor-25-010",
-      "deep_dive_uri": null,
+      "deep_dive_uri": "anchor-25-010/",
       "figure_uris": [],
       "related_anchor_ids": [
         "A25-003"
@@ -320,9 +322,10 @@
       "exam_question_refs": [
         "EXAM25-03:II"
       ],
-      "content_depth": "overview_pending_deep_solution",
+      "content_depth": "full_solution_with_variants",
       "publication_status": "published",
-      "independent_math_review": "pending_Gemini"
+      "independent_math_review": "gemini_R2_reported_correct_from_listed_overview_or_deep_source",
+      "deep_dive_review": "new_post_R2_editorial_QA_pending_independent_signoff"
     },
     {
       "id": "A25-011",
@@ -355,7 +358,7 @@
       ],
       "content_depth": "full_solution_with_variants",
       "publication_status": "published",
-      "independent_math_review": "pending_Gemini"
+      "independent_math_review": "gemini_R2_claimed_correct_but_source_file_not_listed"
     }
   ],
   "admission_policy": [
@@ -367,5 +370,5 @@
     "Keep exactly ten representative IDs; the full anchor library can grow indefinitely.",
     "Changing the representative set is a curatorial decision and must not delete archived anchors or links."
   ],
-  "review_notes": "Snapshot authored internally. Gemini review requested; do not claim external approval."
+  "review_notes": "Gemini R2 APPROVE received for source commit 04b275cb5870a2fbd8f540333b96529285277883; report lists only 17/23 source files, omitting anchor-25-011.md, catalog JSON, exam rubric JSON and three SVGs. Statements about omitted files and newly added A25-006/007/010 deep pages are NOT independent file-by-file signoff; see review-packets/topic25/REVIEW_INTEGRATION_2026-09-26.md. Existing representative IDs remain unchanged."
 }
