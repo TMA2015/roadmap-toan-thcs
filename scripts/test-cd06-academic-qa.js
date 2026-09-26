@@ -188,4 +188,22 @@ console.log("PASS exact BigInt polynomial identity and source-key QA: "+JSON.str
 console.log("PASS greatest common monomials for all 12 dedicated questions: "+JSON.stringify(greatest));
 console.log("PASS equivalent-but-unfactored partial distractors observed: "+equivalent_but_not_factorized.length+" "+JSON.stringify(equivalent_but_not_factorized));
 console.log("PASS 24 CĐ06 flags remain undecided; unchanged tags and full-text queue in sync");
+const ledger=json("docs/assets/data/curriculum/cd06-academic-qa-ledger-v1.json");
+assert.equal(ledger.status,"mathematical_qa_passed_primary_overlay_review_only");
+assert.deepEqual(ledger.counts,{
+ total:120,exact_polynomial_factorization:92,exact_polynomial_identity:8,equations:12,
+ divisibility:4,numeric_application:4,review_flagged:24,primary_null:24,
+ answer_text_corrected:4,equivalent_unfactored_distractors:13,equivalent_partial_distractors:7,
+ unique_item_revisions:46
+});
+assert.deepEqual(ledger.items.map(x=>x.question_id),overlay.items.map(x=>x.id));
+for(const item of ledger.items){
+ const q=byId.get(item.question_id);
+ assert.equal(item.source_file,q.source_file,item.question_id+" wrong source reference");
+ assert.equal(item.proposed_primary,overlay.items.find(x=>x.id===item.question_id).proposed_assessed_skill);
+ assert.equal(ledger.source_files[item.source_file].github_blob_sha,overlay.source_files[item.source_file].github_blob_sha);
+ if(item.distinguish_wrong_option)assert.ok(equivalent_but_not_factorized.some(x=>x.id===item.question_id));
+}
+assert.ok(ledger.limitations.some(s=>s.includes("historical")));
+console.log("PASS 120-row CĐ06 ledger, 20 equivalent-but-incomplete alternatives and content-version safeguards");
 console.log("PASSED CĐ06 source mathematical QA: 120/120; no runtime or learner-state migration.");
