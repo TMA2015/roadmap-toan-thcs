@@ -48,4 +48,4 @@ Tất cả 24 dòng tiếp tục để `proposed_assessed_skill: null` trong [ov
 - Nội dung 46 câu đã được hiệu chỉnh ở những mức khác nhau (đáp án/lời giải/diễn đạt phương án nhiễu). Overlay nguồn và gói [toàn văn 24 câu cần review](../assets/data/curriculum/primary-skill-review-queue-06-07-v1.json) đã đồng bộ.
 - Chưa sửa Practice Engine, Beta v2, learner localStorage v1/v2, Knowledge Graph hoặc tầng KNTT Core/Extension. Chưa có phê duyệt học thuật độc lập từ Gemini/giáo viên đối với từng câu.
 
-[Mã kiểm thử](../../scripts/test-cd06-academic-qa.js) và workflow QA đã được thêm để chặn tái phát lỗi nguồn. **Tiếp theo:** kiểm định CĐ07 và tám trường hợp bài toán nhiều bước/tìm giá trị nguyên; giữ nguyên nguyên tắc phân biệt đáp án bài với kỹ năng được chấm độc lập.
+[Mã kiểm thử](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/scripts/test-cd06-academic-qa.js) và workflow QA đã được thêm để chặn tái phát lỗi nguồn. **Tiếp theo:** kiểm định CĐ07 và tám trường hợp bài toán nhiều bước/tìm giá trị nguyên; giữ nguyên nguyên tắc phân biệt đáp án bài với kỹ năng được chấm độc lập.
