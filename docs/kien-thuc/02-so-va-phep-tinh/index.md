@@ -15,7 +15,7 @@
 
 ---
 
-<span id="core-journey"></span>
+<a id="core-journey"></a>
 
 ## 🧭 1. Bản đồ kiến thức
 
