@@ -45,8 +45,8 @@ with sync_playwright() as p:
     readiness_page = desktop.new_page()
     readiness_page.goto(BASE + "kien-thuc/02-so-va-phep-tinh/tu-kiem-tra/", wait_until="networkidle")
     readiness_page.locator(".readiness-question").wait_for(state="visible", timeout=12000)
-    check("NUM02-G6-CORE-READY-V1" not in readiness_page.content() or readiness_page.locator(".readiness-engine").count() == 1,
-          "grade-six readiness renders without static answer panel")
+    check(readiness_page.locator(".readiness-engine").count() == 1,
+          "grade-six readiness renders its interactive assessment")
     check(readiness_page.locator(".written-self-check-solution").count() == 0, "interactive readiness has no archived answer block")
     check(readiness_page.locator(".readiness-result").is_hidden(), "grade-six readiness hides results before submission")
     check(readiness_page.locator(".readiness-question").is_visible(), "grade-six readiness question visible")
