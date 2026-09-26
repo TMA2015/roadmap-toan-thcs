@@ -1,8 +1,6 @@
-# Thử nghiệm đánh giá một kỹ năng chính mỗi câu
+# Thử nghiệm đánh giá kỹ năng — Beta v2
 
-> **Giao diện đã có bản mới:** [Mở thử nghiệm Beta v2 — xem câu sai và luyện lại riêng](thu-nghiem-danh-gia-ky-nang-v2.md). Đường dẫn này được giữ để tương thích với liên kết cũ; nếu bạn thấy bảng “Kết quả thử nghiệm” thì hãy dùng bản v2.
-
-> **Thử nghiệm tự chọn (Beta).** Đây là khu kiểm định cách ghi nhận năng lực, không phải bài kiểm tra học kỳ hay điều kiện mở khóa lộ trình. [Quay lại luyện tập CĐ04](../kien-thuc/04-bieu-thuc-dai-so/bai-tap.md) · [CĐ11](../kien-thuc/11-can-thuc/bai-tap.md).
+> **Giao diện mới Beta v2 · Có danh sách câu sai, lời giải và luyện lại riêng.** Đây là khu kiểm định cách ghi nhận năng lực, không phải bài kiểm tra học kỳ hay điều kiện mở khóa lộ trình. [Quay lại luyện tập CĐ04](../kien-thuc/04-bieu-thuc-dai-so/bai-tap.md) · [CĐ11](../kien-thuc/11-can-thuc/bai-tap.md).
 
 Khi học sinh làm một câu có hai tag, câu đó chỉ tạo một bằng chứng cho **kỹ năng được kiểm tra chính**. Tag phương pháp, nhóm kiến thức hoặc bối cảnh vẫn giúp giải thích/định hướng nhưng không tự sinh thêm một lần đúng/sai cho kỹ năng khác.
 
@@ -13,8 +11,10 @@ Bộ thử nghiệm gồm **10 câu trích trực tiếp từ ngân hàng gốc*
 !!! info "Cách hiểu kết quả"
     - Kết quả **lượt vừa làm** và **lịch sử tích lũy** được hiển thị riêng; kết quả dưới ba câu khác nhau mỗi kỹ năng chỉ là bằng chứng ban đầu, không nên hiểu là đã nắm vững hoặc hổng kiến thức.
     - Luyện lại câu vừa xem đáp án để củng cố cách làm; hệ thống lưu lần thử mới nhưng **không cộng thành một câu hỏi khác** khi tính số câu khác nhau và tỉ lệ đúng ở lần xuất hiện đầu tiên.
-    - Lượt thử nghiệm này lưu riêng dưới khóa `toan-thcs-assessment-v2` trên trình duyệt hiện tại. **Không đọc, chuyển đổi hay xóa** dữ liệu luyện tập cũ ở `toan-thcs-practice-v1`. Không tự đồng bộ giữa thiết bị.
+    - Beta v2 dùng chung lịch sử thử nghiệm với bản Beta trước để bạn không mất kết quả. Lượt thử nghiệm này lưu riêng dưới khóa `toan-thcs-assessment-v2` trên trình duyệt hiện tại. **Không đọc, chuyển đổi hay xóa** dữ liệu luyện tập cũ ở `toan-thcs-practice-v1`. Không tự đồng bộ giữa thiết bị.
     - Bốn câu kiểm tra ngắn mới chỉ phục vụ thử nghiệm đánh giá kỹ năng; chưa được thêm vào ngân hàng luyện tập chính và chưa ảnh hưởng Knowledge Graph hay gợi ý AI Tutor.
     - Để đo độc lập lỗi hiểu hình học từ đồ thị, chúng ta cần một câu có hình được kiểm định riêng; vòng này chưa gắn thêm kỹ năng đó.
+
+**Dấu hiệu kiểm tra phiên bản:** Dòng đầu bộ câu hỏi ghi “Beta v2”; sau khi làm xong tiêu đề phải là **“Kết quả lượt vừa làm”** và xuất hiện danh sách câu vừa sai. Nếu còn thấy “Kết quả thử nghiệm” cùng bảng dài, bạn đang mở đường dẫn cũ.
 
 **Thử nghiệm này kiểm tra cơ chế:** câu có hai tag chỉ ghi một kỹ năng chính, bài hỗ trợ không làm tăng bộ đếm kỹ năng khác và việc luyện tập thường ngày vẫn giữ nguyên. Phản hồi học sinh/phụ huynh sau khi thử sẽ được dùng để quyết định có nên mở rộng hay không.

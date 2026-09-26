@@ -2,7 +2,7 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
-const app = require("../docs/assets/javascripts/skill-assessment-pilot-v1.js");
+const app = require("../docs/assets/javascripts/skill-assessment-pilot-v2.js");
 const fromRoot = (name) => path.join(__dirname, "..", name);
 const readJson = (name) => JSON.parse(fs.readFileSync(fromRoot(name), "utf8"));
 const config = readJson("docs/assets/data/curriculum/skill-assessment-pilot-config-v1.json");
@@ -79,8 +79,12 @@ check("invalid source mapping fails closed, no inferred primary from tag positio
   assert.throws(() => app.prepareItems(missing, input, micro), /Thiếu câu gốc/);
 });
 
+check("fresh review build is explicitly versioned", () => {
+  assert.equal(app.BUILD, "learner-review-v2-20260926");
+});
+
 check("legacy storage stays out of new pilot module", () => {
-  const source = fs.readFileSync(fromRoot("docs/assets/javascripts/skill-assessment-pilot-v1.js"), "utf8");
+  const source = fs.readFileSync(fromRoot("docs/assets/javascripts/skill-assessment-pilot-v2.js"), "utf8");
   assert.equal(app.KEY, "toan-thcs-assessment-v2");
   assert.equal(source.includes('"toan-thcs-practice-v1"'), false);
   assert.equal(source.includes("RoadmapLearnerEvidence.recordAnswer"), false);
