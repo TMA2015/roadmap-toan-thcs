@@ -309,8 +309,19 @@ $$
     half_page = half.new_page()
     half_page.goto(BASE + "kien-thuc/23-xac-suat/", wait_until="networkidle")
     half_page.locator('.md-header__button[for="__drawer"]').click()
-    quick = half_page.locator(".md-sidebar--primary .roadmap-mobile-shortcuts__link")
+    active_shortcuts = half_page.evaluate("""() => {
+      const nodes = [...document.querySelectorAll(".md-sidebar--primary .roadmap-mobile-shortcuts")];
+      return nodes.findIndex(node => {
+        const r = node.getBoundingClientRect();
+        const x = r.left + Math.min(r.width/2, 80), y = r.top + 45;
+        return r.left >= 0 && r.right <= innerWidth && y > 0 && y < innerHeight &&
+          document.elementFromPoint(x,y)?.closest(".roadmap-mobile-shortcuts") === node;
+      });
+    }""")
+    check(active_shortcuts >= 0, "visible compact menu belongs to current Material drill-down")
+    quick = half_page.locator(".md-sidebar--primary .roadmap-mobile-shortcuts").nth(active_shortcuts).locator("a")
     check(quick.count() == 6 and quick.first.is_visible(), "six global destinations in half-width drawer")
+    check(half_page.locator(".md-sidebar--primary .md-nav__link").count() > 6, "topic links remain in the drawer")
     check([quick.nth(i).evaluate("(a) => a.lastChild.textContent.trim()") for i in range(6)] ==
           ["Trang chủ", "Học theo lớp", "Roadmap", "AI Tutor", "Hướng dẫn", "Kiến thức"],
           "compact navigation order and labels")
