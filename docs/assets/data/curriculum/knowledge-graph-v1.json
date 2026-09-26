@@ -1,5 +1,5 @@
 {
-  "version": 1.1,
+  "version": 1.2,
   "schema": "roadmap-knowledge-graph-v1",
   "status": "independently-reviewed",
   "purpose": "Skill-level prerequisite/unlock graph across the 25-topic Vertical Spine. Grade mappings are overlays; remediation is advisory.",
@@ -9,7 +9,9 @@
     "mastery": "soft",
     "remediation": "recommend-only; never hard-lock progression",
     "challenge": "Specialized-Challenge nodes must never be Core prerequisites.",
-    "confidence": "Only high-confidence edges are active in v1; uncertain edges require review."
+    "confidence": "Only high-confidence edges are active in v1; uncertain edges require review.",
+    "topic_links": "Blueprint topic Before/After links are navigation only; never auto-convert to skill prerequisites.",
+    "alternative_methods": "Alternative solving methods and conditional techniques must not each become unconditional prerequisites."
   },
   "edge_types": [
     "PREREQUISITE",
@@ -398,14 +400,16 @@
     {
       "from": "giai-he-the",
       "to": "lap-he-bai-toan",
-      "type": "PREREQUISITE",
-      "confidence": "high"
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Substitution is one possible solving method; it is not individually mandatory for constructing a system."
     },
     {
       "from": "giai-he-cong",
       "to": "lap-he-bai-toan",
-      "type": "PREREQUISITE",
-      "confidence": "high"
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Elimination is an alternative solving method; it is not individually mandatory for constructing a system."
     },
     {
       "from": "khai-niem-ham-so",
@@ -434,8 +438,9 @@
     {
       "from": "cong-thuc-nghiem",
       "to": "tong-tich-nghiem",
-      "type": "PREREQUISITE",
-      "confidence": "high"
+      "type": "SEQUENCE",
+      "confidence": "high",
+      "reason": "Viète follows quadratic equations in the learning sequence, but does not require using the quadratic formula."
     },
     {
       "from": "dong-dang-gg",
@@ -446,26 +451,30 @@
     {
       "from": "pythagore",
       "to": "tim-canh-luong-giac",
-      "type": "PREREQUISITE",
-      "confidence": "high"
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Pythagoras is useful for missing-side cases, not every trigonometric side calculation."
     },
     {
       "from": "sin",
       "to": "tim-canh-luong-giac",
-      "type": "PREREQUISITE",
-      "confidence": "high"
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Use sine only when the chosen side-angle relation requires it; not all three ratios are mandatory."
     },
     {
       "from": "cos",
       "to": "tim-canh-luong-giac",
-      "type": "PREREQUISITE",
-      "confidence": "high"
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Use cosine only when the chosen side-angle relation requires it."
     },
     {
       "from": "tan",
       "to": "tim-canh-luong-giac",
-      "type": "PREREQUISITE",
-      "confidence": "high"
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Use tangent only when the chosen side-angle relation requires it."
     },
     {
       "from": "goc-noi-tiep",
@@ -636,6 +645,47 @@
       "hang-tu-dong-dang→tinh-delta is not global Core prerequisite",
       "Pythagoras is not made a prerequisite for sin/cos/tan definitions; it remains prerequisite/remediation for many solve-for-side workflows"
     ],
-    "reviewer_note": "Independent review is advisory; repository integration applies item-scope and logical-dependency QA."
+    "reviewer_note": "Independent review is advisory; repository integration applies item-scope and logical-dependency QA.",
+    "topic_dependency_audit_2026_09_26": {
+      "status": "scoped-corrections",
+      "changed_edges": [
+        {
+          "from": "cong-thuc-nghiem",
+          "to": "tong-tich-nghiem",
+          "type": "SEQUENCE"
+        },
+        {
+          "from": "giai-he-the",
+          "to": "lap-he-bai-toan",
+          "type": "REMEDIATION"
+        },
+        {
+          "from": "giai-he-cong",
+          "to": "lap-he-bai-toan",
+          "type": "REMEDIATION"
+        },
+        {
+          "from": "pythagore",
+          "to": "tim-canh-luong-giac",
+          "type": "REMEDIATION"
+        },
+        {
+          "from": "sin",
+          "to": "tim-canh-luong-giac",
+          "type": "REMEDIATION"
+        },
+        {
+          "from": "cos",
+          "to": "tim-canh-luong-giac",
+          "type": "REMEDIATION"
+        },
+        {
+          "from": "tan",
+          "to": "tim-canh-luong-giac",
+          "type": "REMEDIATION"
+        }
+      ],
+      "note": "No new nodes or prerequisite edges activated; runtime uses only high-confidence PREREQUISITE edges."
+    }
   }
 }
