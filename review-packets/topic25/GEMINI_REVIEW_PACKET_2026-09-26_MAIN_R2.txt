@@ -2083,3 +2083,1526 @@ và ghi mục đích của từng bước.
   "micro_practice_bank": "assets/data/practice/25-tong-hop-on-thi-10-micro-v1.json"
 }
 ========== END SOURCE FILE: docs/assets/data/curriculum/topic25-learning-workspace.json ==========
+
+
+========== BEGIN SOURCE FILE: docs/kien-thuc/25-tong-hop-on-thi-10/kho-bai-mo-neo.md (git blob 5189efd0f254442cfeb8d8b1b0cde0be3e85a898) ==========
+# Thư viện bài toán mỏ neo – Chuyên đề 25
+
+> **10 bài tiêu biểu là một bộ tuyển chọn, không phải tổng số bài.** Kho bài có thể tăng theo thời gian. Bài mới mang ID cố định và được liên kết với mạch kiến thức, biến thể, đề luyện và bài liên quan. Đổi bộ 10 tiêu biểu không làm mất bài cũ.
+
+<div class="anchor-library-intro" markdown="1">
+
+**Đọc hiểu → Nhận dạng → Tư duy lùi từ mục tiêu → Lời giải có luận cứ → Làm biến thể → Tự kiểm tra.**
+
+Các bài hình học có hình SVG dựng từ cấu hình thực, nét phụ và lời giải theo bước. Hình giúp nhìn ra quan hệ; không thay thế lập luận.
+
+</div>
+
+<div class="anchor-browser" data-anchor-browser>
+  <p>Đang tải danh mục bài mỏ neo…</p>
+</div>
+
+<div data-anchor-fallback markdown="1">
+
+## Mười bài tiêu biểu
+
+1. [A25-001 · Căn thức và điều kiện](bai-toan-kinh-dien.md#anchor-25-001)
+2. [A25-002 · Viète và biểu thức đối xứng](bai-toan-kinh-dien.md#anchor-25-002)
+3. [A25-003 · Lập hệ bài toán vé](bai-toan-kinh-dien.md#anchor-25-003)
+4. [A25-004 · Đường cao tam giác vuông – lời giải sâu và hình](anchor-25-004.md)
+5. [A25-005 · Tối ưu tích](bai-toan-kinh-dien.md#anchor-25-005)
+6. [A25-006 · Căn thức phụ trợ số nguyên](bai-toan-kinh-dien.md#anchor-25-006)
+7. [A25-007 · Tham số và Viète](bai-toan-kinh-dien.md#anchor-25-007)
+8. [A25-008 · Tiếp tuyến–cát tuyến – lời giải sâu và hình](anchor-25-008.md)
+9. [A25-009 · Trực tâm–tứ giác nội tiếp – lời giải sâu và hình](anchor-25-009.md)
+10. [A25-010 · Bài toán năng suất](bai-toan-kinh-dien.md#anchor-25-010)
+
+## Bài bổ sung ngoài bộ 10
+
+- [A25-011 · Parabol – đường thẳng – Viète](anchor-25-011.md). Một bài đã thêm vào thư viện mà **không thay đổi bộ 10 tiêu biểu**.
+
+</div>
+
+## Khi nào được thêm một bài mỏ neo mới?
+
+Một bài mới được nhận vào kho khi có **đủ dữ liệu và được rà soát**, không phải vì chỉ đổi số ở một bài cũ. Người biên soạn cần chỉ rõ bài này bổ sung kiểu tư duy nào, quan hệ với bài trước và lý do học sinh nên học.
+
+**Mỗi bài tối thiểu phải có:** ID bất biến; đề và điều kiện; nhận dạng dấu hiệu; giải thích vì sao chọn công cụ; lời giải theo bước; kết luận và kiểm tra; lỗi điển hình; 2–3 biến thể; liên kết tới chuyên đề và đề luyện. Hình học phải có hình chính xác và chỉ dẫn quan sát theo từng bước chứng minh. Bài chưa đủ độ sâu được đánh dấu *cần biên soạn lời giải sâu*, không được gắn nhãn đã hoàn chỉnh.
+
+**Bộ 10 bài tiêu biểu** do khâu biên tập tuyển chọn trong kho: cân bằng đại số, hình học, mô hình hóa, tư duy biến đổi, dạng học sinh thường sai. Khi thay thế phải giữ ID và đường dẫn của bài cũ; bài đó vẫn còn trong thư viện. Góp ý độc lập của Gemini được lưu như **phản biện**, không tự động công bố thành đáp án.
+
+[Trở về Chuyên đề 25](index.md) · [Ba đề luyện hoàn chỉnh](index.md) · [Đề 1](de-luyen-01.md)
+========== END SOURCE FILE: docs/kien-thuc/25-tong-hop-on-thi-10/kho-bai-mo-neo.md ==========
+
+
+========== BEGIN SOURCE FILE: docs/kien-thuc/25-tong-hop-on-thi-10/anchor-25-004.md (git blob 4ba1478cde622a2aa4635a987743844d55baac5b) ==========
+# Bài mỏ neo A25-004 – Đường cao trong tam giác vuông
+
+> **Mạch:** Đồng dạng → hệ thức lượng · **Lớp:** 8–9 · **Vai trò:** Hình học học thuật, không phải mẹo thi.  
+> **Đề tương ứng:** Đề luyện 01 – Bài IV.
+
+## Đề gốc
+
+Tam giác \(ABC\) vuông tại \(A\), đường cao \(AH\perp BC\), \(H\in BC\). Cho \(BH=9\), \(HC=16\). Tính \(BC, AH, AB, AC\) và diện tích tam giác \(ABC\).
+
+![Tam giác vuông với đường cao AH, BH bằng 9 và HC bằng 16](../../assets/geometry/25/anchor-25-004-right-altitude.svg)
+
+*Hình có cấu trúc dựng đúng tỉ lệ 9–12–16. Hãy quan sát ba tam giác nhỏ/lớn; không dùng việc đo độ dài trên màn hình làm chứng minh.*
+
+## Vì sao nên nghĩ tới đồng dạng?
+
+Dữ kiện nằm trên **cạnh huyền** nhưng đại lượng hỏi nằm ở **đường cao và hai cạnh góc vuông**. Định lý Pythagore trực tiếp chưa đủ, vì chưa biết hai cạnh góc vuông. Đường cao \(AH\) tạo thành **ba tam giác đồng dạng**; đây là chiếc cầu nối dữ kiện với mục tiêu.
+
+Chuỗi suy luận tiến: \(BH,HC\rightarrow BC\rightarrow\) đồng dạng \(\rightarrow AH^2=BH\cdot HC\rightarrow AB,AC\).
+
+Suy luận lùi từ đích: Muốn tính \(AH\), hãy tìm một hệ thức chứa \(AH\) và hai đoạn đã biết. Muốn có \(AH^2=BH\cdot HC\), cần hai tam giác nhỏ đồng dạng.
+
+## Ba mức gợi ý
+
+<details><summary>Gợi ý 1 – Nhìn hình</summary>
+Xác định cặp góc vuông và một cặp góc nhọn bằng nhau trong \(\triangle ABH\) và \(\triangle CAH\).
+</details>
+<details><summary>Gợi ý 2 – Lập quan hệ</summary>
+Viết đúng thứ tự \(\triangle ABH\sim\triangle CAH\), suy ra \(\dfrac{BH}{AH}=\dfrac{AH}{CH}\).
+</details>
+<details><summary>Gợi ý 3 – Tính</summary>
+Trước hết \(BC=BH+HC=25\). Sau đó tính \(AH\), rồi dùng \(AB^2=BH\cdot BC\), \(AC^2=CH\cdot BC\).
+</details>
+
+## Lời giải chi tiết
+
+**Bước 1.** Vì \(B,H,C\) thẳng hàng, \(BC=BH+HC=9+16=25\).
+
+**Bước 2.** Do \(AH\perp BC\), ta có \(\angle AHB=\angle CHA=90^\circ\). Mặt khác \(\angle ABH=\angle CAH\) vì cùng phụ với \(\angle ACB\). Suy ra theo góc–góc:
+\[
+\triangle ABH\sim\triangle CAH.
+\]
+Thứ tự tương ứng là \(A\leftrightarrow C\), \(B\leftrightarrow A\), \(H\leftrightarrow H\); do đó
+\[
+\frac{BH}{AH}=\frac{AH}{CH}\quad\Rightarrow\quad AH^2=BH\cdot CH.
+\]
+Suy ra \(AH^2=9\cdot16=144\). Vì \(AH\) là độ dài nên \(AH=12\).
+
+**Bước 3.** Từ \(\triangle ABH\sim\triangle CBA\), có \(AB^2=BH\cdot BC\); tương tự \(AC^2=CH\cdot BC\). Vì vậy
+\[
+AB=\sqrt{9\cdot25}=15,\qquad AC=\sqrt{16\cdot25}=20.
+\]
+
+**Bước 4.** Kiểm tra bằng Pythagore: \(15^2+20^2=625=25^2\). Diện tích:
+\[
+S_{ABC}=\frac12 AB\cdot AC=\frac12\cdot15\cdot20=150.
+\]
+Cũng có thể kiểm tra bằng \(S_{ABC}=\frac12 BC\cdot AH=150\).
+
+## Tư duy tổng kết
+
+- Đừng **nhớ hệ thức nhưng không biết vì sao đúng**: các hệ thức lượng là hệ quả của đồng dạng.
+- **Thứ tự tam giác** quyết định tỷ số cạnh; viết sai thứ tự dễ sinh hệ thức sai.
+- Với số liệu mới \(BH=p,CH=q>0\), công thức khái quát:
+\[
+BC=p+q,\quad AH=\sqrt{pq},\quad AB=\sqrt{p(p+q)},\quad AC=\sqrt{q(p+q)}.
+\]
+- Hình vẽ giúp nhận diện tam giác tương ứng; lập luận hình học mới tạo thành chứng minh.
+
+## Biến thể tự luyện
+
+1. \(BH=4,CH=9\). Tính \(AH,BC\). **Đối chiếu:** \(6,13\).
+2. \(AH=6,BH=4\). Tính \(CH,BC\). **Đối chiếu:** \(9,13\).
+3. Chứng minh \(AH\le BC/2\) và chỉ ra dấu bằng. **Gợi ý:** \(4BH\cdot CH\le(BH+CH)^2\). Dấu bằng khi \(BH=CH\).
+
+[Trở về kho bài mỏ neo](kho-bai-mo-neo.md) · [CĐ17 Đồng dạng](../17-thales-dong-dang/index.md) · [CĐ18 Hệ thức lượng](../18-he-thuc-luong/index.md) · [Đề 01](de-luyen-01.md)
+========== END SOURCE FILE: docs/kien-thuc/25-tong-hop-on-thi-10/anchor-25-004.md ==========
+
+
+========== BEGIN SOURCE FILE: docs/kien-thuc/25-tong-hop-on-thi-10/anchor-25-008.md (git blob 5212be9401c14130e12eef5f9a481195123c1963) ==========
+# Bài mỏ neo A25-008 – Tiếp tuyến và cát tuyến
+
+> **Mạch:** Đường tròn – đồng dạng · **Lớp:** 9 · **Đề tương ứng:** Đề luyện 02 – Bài IV.
+
+## Đề gốc
+
+Từ \(A\) ngoài đường tròn \((O)\), kẻ các tiếp tuyến \(AB,AC\) tại \(B,C\). Cát tuyến qua \(A\) cắt đường tròn tại \(D,E\) theo đúng thứ tự \(A,D,E\); cát tuyến không qua \(B,C\). Chứng minh \(AB=AC\), tứ giác \(ABOC\) nội tiếp và
+\[
+AB^2=AD\cdot AE.
+\]
+Nếu \(AB=6\), \(AD=4\), tính \(AE\).
+
+![Hình tiếp tuyến AB AC và cát tuyến ADE](../../assets/geometry/25/anchor-25-008-tangent-secant.svg)
+
+*Đường cam là cát tuyến. \(A,D,E\) thẳng hàng theo thứ tự đó; \(OB\perp AB\), \(OC\perp AC\). Hình chỉ minh họa cấu hình, không biểu diễn tỉ lệ 6:4:9 của câu số.*
+
+## Tư duy tiến và tư duy lùi
+
+**Tiến từ dữ kiện:** tiếp tuyến \(\rightarrow\) bán kính vuông góc \(\rightarrow\) hai tam giác vuông \(ABO,ACO\) bằng nhau, và hai góc đối tứ giác bù nhau.
+
+**Lùi từ mục tiêu:** muốn có \(AB^2=AD\cdot AE\), hãy tìm hai tam giác có tỷ số \(AB/AE=AD/AB\). Dấu hiệu “bình phương tiếp tuyến = tích hai đoạn cát tuyến” dẫn tới \(\triangle ABD\) và \(\triangle AEB\).
+
+## Ba mức gợi ý
+
+<details><summary>Gợi ý 1</summary>
+Tô góc \(\angle ABD\) giữa tiếp tuyến \(BA\) và dây \(BD\), rồi tìm góc nội tiếp cùng chắn dây \(BD\).
+</details>
+<details><summary>Gợi ý 2</summary>
+Vì \(A,D,E\) thẳng hàng và \(A\) nằm ngoài trước \(D\), tia \(EA\) trùng hướng tia \(ED\); dùng \(\angle ABD=\angle BEA\).
+</details>
+<details><summary>Gợi ý 3</summary>
+Viết \(\triangle ABD\sim\triangle AEB\), kiểm tra tương ứng \(A\leftrightarrow A\), \(B\leftrightarrow E\), \(D\leftrightarrow B\).
+</details>
+
+## Lời giải chi tiết
+
+**1. Hai tiếp tuyến bằng nhau.** Vì \(OB\perp AB\), \(OC\perp AC\), hai tam giác \(ABO\) và \(ACO\) đều vuông; có cạnh huyền \(AO\) chung và \(OB=OC\) (bán kính). Hai tam giác bằng nhau theo cạnh huyền–cạnh góc vuông, suy ra \(AB=AC\).
+
+**2. Tứ giác nội tiếp.** \(\angle ABO=\angle ACO=90^\circ\). Hai góc đối bù nhau, nên \(A,B,O,C\) cùng thuộc đường tròn đường kính \(AO\). Lưu ý đây **không phải** đường tròn \((O)\) ban đầu.
+
+**3. Hệ thức tiếp tuyến–cát tuyến.** Do \(A,D,E\) thẳng hàng,
+\[
+\angle BAD=\angle EAB.
+\]
+Theo định lý góc giữa tiếp tuyến và dây cung \(BD\),
+\[
+\angle ABD=\angle BED=\angle BEA.
+\]
+Vì hai cặp góc tương ứng bằng nhau, \(\triangle ABD\sim\triangle AEB\). Viết tỷ số theo đúng thứ tự:
+\[
+\frac{AB}{AE}=\frac{AD}{AB}.
+\]
+Nhân chéo: \(AB^2=AD\cdot AE\).
+
+**4. Thay số và kiểm tra vị trí.** \(AE=AB^2/AD=36/4=9\) cm. Vì \(9>4>0\), kết quả phù hợp với thứ tự \(A,D,E\).
+
+## Tổng hợp về mặt tư duy
+
+Tại sao bài này có nhiều ý? **Một hình vẽ – hai nguồn góc:** bán kính–tiếp tuyến tạo góc vuông để chứng minh nội tiếp; tiếp tuyến–dây cung tạo góc bằng nhau để chứng minh đồng dạng. Khi gặp yêu cầu tích đoạn thẳng, đừng bắt đầu bằng phép tính: hãy **truy ngược mục tiêu thành một tỷ số cạnh**.
+
+Không dùng hình vẽ để suy ra góc bằng nhau nếu chưa chỉ rõ góc cùng chắn cung hoặc một định lý hợp lệ. Tránh lẫn đường tròn \((O)\) với đường tròn đường kính \(AO\).
+
+## Biến thể tự luyện
+
+1. \(AB=8,AD=4\), tính \(AE\). **Đối chiếu:** \(16\).
+2. \(AD=5,AE=20\), tính \(AB\). **Đối chiếu:** \(10\).
+3. Giải thích vì sao \(AD<AB<AE\) với cát tuyến không tiếp xúc ở \(D\) hay \(E\). **Gợi ý:** \(AB^2=AD\cdot AE\) và \(0<AD<AE\).
+
+[Trở về kho bài mỏ neo](kho-bai-mo-neo.md) · [CĐ19 Đường tròn](../19-duong-tron/index.md) · [Đề 02](de-luyen-02.md)
+========== END SOURCE FILE: docs/kien-thuc/25-tong-hop-on-thi-10/anchor-25-008.md ==========
+
+
+========== BEGIN SOURCE FILE: docs/kien-thuc/25-tong-hop-on-thi-10/anchor-25-009.md (git blob 0bbdeaea869b151473beb275ddd7a53c1f22fe22) ==========
+# Bài mỏ neo A25-009 – Trực tâm và hai đường tròn phụ
+
+> **Mạch:** Đường cao → góc vuông → tứ giác nội tiếp → góc bằng nhau · **Lớp:** 9 · **Đề tương ứng:** Đề luyện 03 – Bài IV.
+
+## Đề gốc
+
+Trong tam giác nhọn \(ABC\), các đường cao \(BE\perp AC\), \(CF\perp AB\) cắt nhau tại \(H\), với \(E\in AC,F\in AB\).
+
+1. Chứng minh \(B,E,C,F\) nội tiếp.
+2. Chứng minh \(A,E,H,F\) nội tiếp.
+3. Suy ra \(\angle BEF=\angle BCF\).
+
+![Hai đường cao và các đường tròn phụ trong tam giác nhọn](../../assets/geometry/25/anchor-25-009-orthocenter.svg)
+
+*Nét cam là hai đường cao; đường tròn nét chấm xanh đi qua \(B,E,C,F\), đường tròn nét chấm tím đi qua \(A,E,H,F\). Chúng là đường tròn **phụ**, không mặc nhiên là đường tròn ngoại tiếp tam giác \(ABC\).*
+
+## Phân tích ngược từ mục tiêu
+
+Muốn chứng minh \(\angle BEF=\angle BCF\), nhận thấy hai góc có chung cặp điểm đầu mút \(B,F\), nhưng đỉnh nằm ở \(E\) và \(C\). Hãy tự hỏi: **liệu \(B,E,C,F\) có nằm trên cùng một đường tròn không?**
+
+Muốn chứng minh nội tiếp: tìm hai góc \(\angle BEC,\angle BFC\) cùng bằng \(90^\circ\). Hai đường cao đã cho đúng hai góc đó.
+
+Điều này tạo thành chuỗi: **đường cao → góc vuông → đường tròn đường kính → hai góc nội tiếp cùng chắn dây**.
+
+## Gợi ý có kiểm soát
+
+<details><summary>Gợi ý 1 – Nhìn đường cao</summary>
+Từ \(BE\perp AC\) và \(CF\perp AB\), đánh dấu hai góc vuông nào?
+</details>
+<details><summary>Gợi ý 2 – Nhận diện hai đường tròn</summary>
+Các điểm nhìn đoạn \(BC\) dưới góc vuông nằm trên đường tròn đường kính \(BC\); tương tự với đoạn \(AH\).
+</details>
+<details><summary>Gợi ý 3 – Chứng minh góc</summary>
+Viết \(\angle BEF,\angle BCF\) và xác định cả hai cùng chắn dây \(BF\) trên đường tròn thứ nhất.
+</details>
+
+## Lời giải chi tiết
+
+**Bước 1 – Chứng minh \(B,E,C,F\) nội tiếp.** Vì \(E\in AC\), \(BE\perp AC\) nên \(\angle BEC=90^\circ\). Vì \(F\in AB\), \(CF\perp AB\) nên \(\angle BFC=90^\circ\). Hai điểm \(E,F\) cùng nhìn đoạn \(BC\) dưới góc vuông, vì thế chúng cùng nằm trên đường tròn đường kính \(BC\) (với \(B,C\) là hai đầu đường kính). Vậy \(B,E,C,F\) nội tiếp.
+
+**Bước 2 – Chứng minh \(A,E,H,F\) nội tiếp.** Các điểm \(B,E,H\) thẳng hàng, \(A,E,C\) thẳng hàng nên \(\angle AEH=90^\circ\). Tương tự, \(C,F,H\) thẳng hàng, \(A,F,B\) thẳng hàng nên \(\angle AFH=90^\circ\). Suy ra \(E,F\) cùng thuộc đường tròn đường kính \(AH\); do đó \(A,E,H,F\) nội tiếp.
+
+**Bước 3 – Suy ra góc.** Trên đường tròn đường kính \(BC\), hai góc nội tiếp \(\angle BEF\) và \(\angle BCF\) cùng chắn cung \(BF\) không chứa hai đỉnh \(E,C\). Vì vậy
+\[
+\boxed{\angle BEF=\angle BCF}.
+\]
+
+## Tư duy tổng kết
+
+- **Không phải cứ có trực tâm là lập tức dùng đường tròn ngoại tiếp tam giác ABC.** Đường cao tạo ra hai đường tròn phụ dễ nhìn hơn.
+- Khi đích là hai góc bằng nhau, hãy **đọc tên các điểm đầu mút**: chúng gợi ý dây/cung cần tìm.
+- Hai đường tròn chỉ có thể được suy ra sau khi đã xác định đúng cặp góc vuông; hình ảnh không thay chứng minh.
+- Với tam giác nhọn và chân đường cao nằm trong cạnh, ta tránh các trường hợp điểm trên phần kéo dài dễ làm đổi hướng tia/góc.
+
+## Biến thể
+
+1. Chỉ chứng minh \(B,E,C,F\) nội tiếp, không dùng \(H\). **Đáp án:** dùng hai góc vuông.
+2. Tìm thêm một cặp góc bằng nhau cùng chắn dây \(EF\). **Gợi ý:** \(\angle EBF=\angle ECF\) (nếu chọn đúng đỉnh trên cùng đường tròn).
+3. Nếu tam giác không nhọn, hãy xét lại vị trí chân đường cao và dùng góc định hướng để viết các hệ thức; **không áp dụng máy móc kết luận góc không định hướng**.
+
+[Trở về kho bài mỏ neo](kho-bai-mo-neo.md) · [CĐ19 Đường tròn](../19-duong-tron/index.md) · [Đề 03](de-luyen-03.md)
+========== END SOURCE FILE: docs/kien-thuc/25-tong-hop-on-thi-10/anchor-25-009.md ==========
+
+
+========== BEGIN SOURCE FILE: docs/kien-thuc/25-tong-hop-on-thi-10/anchor-25-011.md (git blob 1031b286435a850da43872ca24d8b8049bf5c7e3) ==========
+# Bài mỏ neo A25-011 – Tương giao parabol và đường thẳng
+
+> **Tầng:** Entrance10 · **Trạng thái:** Bài bổ sung trong thư viện mở rộng, **không tự động thay một trong 10 bài tiêu biểu**.  
+> **Mạch:** Hàm số, phương trình bậc hai, biệt thức, Viète. **Liên hệ:** Đề 02 – Bài III.
+
+## Đề mẫu
+
+Cho \((P):y=x^2\) và \((d):y=2x+3\).
+
+1. Chứng minh chúng có hai giao điểm phân biệt.
+2. Tìm tọa độ hai giao điểm.
+3. Không lấy kết quả từng nghiệm để thay trực tiếp, tính \(x_1^2+x_2^2\) bằng Viète với \(x_1,x_2\) là hai hoành độ giao điểm.
+
+## Phân tích đề – tư duy trước khi tính
+
+Tìm giao điểm của **hai đồ thị** nghĩa là tìm cặp \((x,y)\) cùng thỏa cả hai phương trình. Vì chúng cùng biểu diễn \(y\), hãy đặt hai biểu thức bằng nhau. Số nghiệm thực của phương trình hoành độ chính là số giao điểm (khi mỗi nghiệm xác định một tung độ).
+
+Mục tiêu “hai giao điểm” gợi ý **biệt thức**; mục tiêu biểu thức đối xứng theo nghiệm gợi ý **Viète**. Không giải nghiệm ngay nếu chỉ cần tổng/tích.
+
+## Gợi ý theo ba tầng
+
+<details><summary>Gợi ý 1</summary>Viết \(x^2=2x+3\).</details>
+<details><summary>Gợi ý 2</summary>Chuyển về \(x^2-2x-3=0\) và tính \(\Delta\).</details>
+<details><summary>Gợi ý 3</summary>Viète cho \(x_1+x_2=2,\ x_1x_2=-3\).</details>
+
+## Lời giải chi tiết
+
+Hoành độ giao điểm thỏa
+\[
+x^2=2x+3\iff x^2-2x-3=0.
+\]
+Biệt thức \(\Delta=(-2)^2-4\cdot1\cdot(-3)=16>0\), nên có **hai hoành độ thực phân biệt**, tức hai giao điểm phân biệt.
+
+Phân tích \(x^2-2x-3=(x-3)(x+1)\), suy ra \(x=3\) hoặc \(x=-1\). Thế vào \(y=x^2\), hai giao điểm là \((3;9)\), \((-1;1)\).
+
+Theo Viète cho phương trình hoành độ:
+\[
+x_1+x_2=2,\qquad x_1x_2=-3.
+\]
+Do đó
+\[
+x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=4+6=\boxed{10}.
+\]
+
+## Tư duy tổng kết và khái quát
+
+Với \((d_k):y=2x+k\), phương trình hoành độ là \(x^2-2x-k=0\), có \(\Delta=4+4k\). Vậy:
+\[
+k>-1:\ 2\ \text{giao điểm};\quad k=-1:\ 1\ \text{giao điểm (tiếp xúc)};\quad k<-1:\ 0\ \text{giao điểm}.
+\]
+Trường hợp \(k=-1\) cho \(x=1\) và điểm tiếp xúc \((1;1)\). Viète vẫn cung cấp tổng/tích nghiệm khi có hai nghiệm kể cả trùng, nhưng yêu cầu “hai giao điểm phân biệt” buộc \(\Delta>0\).
+
+## Biến thể tự luyện
+
+1. Thay \(y=x+2\). **Đối chiếu:** \((2;4),(-1;1)\).
+2. Tìm \(k\) để \((P)\) và \(y=2x+k\) tiếp xúc. **Đối chiếu:** \(k=-1\).
+3. Với \(k>-1\), tính \(x_1^2+x_2^2\) theo \(k\) mà không giải nghiệm. **Đối chiếu:** \(4+2k\).
+
+[Thư viện bài mỏ neo](kho-bai-mo-neo.md) · [CĐ10 Hàm số](../10-ham-so-do-thi/index.md) · [CĐ12 Viète](../12-phuong-trinh-bac-hai-viete/index.md) · [Đề 02](de-luyen-02.md)
+========== END SOURCE FILE: docs/kien-thuc/25-tong-hop-on-thi-10/anchor-25-011.md ==========
+
+
+========== BEGIN SOURCE FILE: docs/assets/data/anchors/anchor-catalog-v1.json (git blob 9d204c91280061aac17cec8c90c58c686fd6bef2) ==========
+{
+  "schema_version": "1.0.0",
+  "catalog_id": "TOPIC25-ANCHOR-LIBRARY",
+  "source_topic": "25-tong-hop-on-thi-10",
+  "snapshot_date": "2026-09-26",
+  "representative_count": 10,
+  "representative_ids": [
+    "A25-001",
+    "A25-002",
+    "A25-003",
+    "A25-004",
+    "A25-005",
+    "A25-006",
+    "A25-007",
+    "A25-008",
+    "A25-009",
+    "A25-010"
+  ],
+  "anchors": [
+    {
+      "id": "A25-001",
+      "title": "Biểu thức căn – điều kiện trước",
+      "strand": "algebra",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT11"
+      ],
+      "skill_tags": [
+        "sqrt",
+        "condition"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-001",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [],
+      "exam_question_refs": [
+        "EXAM25-01:I.1"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-002",
+      "title": "Viète – biểu thức đối xứng",
+      "strand": "algebra",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT12"
+      ],
+      "skill_tags": [
+        "vieta",
+        "symmetric-expressions"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-002",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-007"
+      ],
+      "exam_question_refs": [
+        "EXAM25-01:II.1"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-003",
+      "title": "Lập hệ từ bài toán vé",
+      "strand": "application",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT09",
+        "CT24"
+      ],
+      "skill_tags": [
+        "systems",
+        "modelling"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-003",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-010"
+      ],
+      "exam_question_refs": [
+        "EXAM25-01:II.2"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-004",
+      "title": "Đường cao tam giác vuông",
+      "strand": "geometry",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT17",
+        "CT18"
+      ],
+      "skill_tags": [
+        "similarity",
+        "altitude",
+        "right-triangle"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-004",
+      "deep_dive_uri": "anchor-25-004/",
+      "figure_uris": [
+        "../../assets/geometry/25/anchor-25-004-right-altitude.svg"
+      ],
+      "related_anchor_ids": [
+        "A25-008",
+        "A25-009"
+      ],
+      "exam_question_refs": [
+        "EXAM25-01:IV"
+      ],
+      "content_depth": "full_solution_with_variants",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-005",
+      "title": "Tối ưu tích khi tổng cố định",
+      "strand": "algebra",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT04"
+      ],
+      "skill_tags": [
+        "inequality",
+        "optimization"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-005",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-007"
+      ],
+      "exam_question_refs": [
+        "EXAM25-01:V",
+        "EXAM25-02:V"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-006",
+      "title": "Biểu thức căn và tính nguyên",
+      "strand": "algebra",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT11"
+      ],
+      "skill_tags": [
+        "sqrt",
+        "integers",
+        "divisibility"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-006",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-001"
+      ],
+      "exam_question_refs": [
+        "EXAM25-02:I"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-007",
+      "title": "Tham số – biệt thức – Viète",
+      "strand": "algebra",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT12"
+      ],
+      "skill_tags": [
+        "discriminant",
+        "vieta",
+        "parameter"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-007",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-002",
+        "A25-011"
+      ],
+      "exam_question_refs": [
+        "EXAM25-03:III"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-008",
+      "title": "Tiếp tuyến và cát tuyến",
+      "strand": "geometry",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT19",
+        "CT17"
+      ],
+      "skill_tags": [
+        "tangent-secant",
+        "cyclic-quadrilateral",
+        "similarity"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-008",
+      "deep_dive_uri": "anchor-25-008/",
+      "figure_uris": [
+        "../../assets/geometry/25/anchor-25-008-tangent-secant.svg"
+      ],
+      "related_anchor_ids": [
+        "A25-009"
+      ],
+      "exam_question_refs": [
+        "EXAM25-02:IV"
+      ],
+      "content_depth": "full_solution_with_variants",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-009",
+      "title": "Trực tâm – hai tứ giác nội tiếp",
+      "strand": "geometry",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT19",
+        "CT15"
+      ],
+      "skill_tags": [
+        "orthocenter",
+        "cyclic-quadrilateral",
+        "angles"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-009",
+      "deep_dive_uri": "anchor-25-009/",
+      "figure_uris": [
+        "../../assets/geometry/25/anchor-25-009-orthocenter.svg"
+      ],
+      "related_anchor_ids": [
+        "A25-008"
+      ],
+      "exam_question_refs": [
+        "EXAM25-03:IV"
+      ],
+      "content_depth": "full_solution_with_variants",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-010",
+      "title": "Làm chung – năng suất",
+      "strand": "application",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT03",
+        "CT24"
+      ],
+      "skill_tags": [
+        "rate",
+        "modelling"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-010",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-003"
+      ],
+      "exam_question_refs": [
+        "EXAM25-03:II"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-011",
+      "title": "Parabol – đường thẳng – Viète",
+      "strand": "algebra",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT10",
+        "CT12"
+      ],
+      "skill_tags": [
+        "parabola",
+        "intersection",
+        "discriminant",
+        "vieta"
+      ],
+      "representative": false,
+      "source_uri": null,
+      "deep_dive_uri": "anchor-25-011/",
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-007",
+        "A25-002"
+      ],
+      "exam_question_refs": [
+        "EXAM25-02:III"
+      ],
+      "content_depth": "full_solution_with_variants",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    }
+  ],
+  "admission_policy": [
+    "Keep a stable anchor ID; never reuse or renumber historical IDs.",
+    "Document source/provenance and independent math review before elevating a new anchor into the representative set.",
+    "Tag topic prerequisites, KNTT/Entrance10/Challenge layer, skills and misconception.",
+    "Search existing structure, not merely changed numbers, to avoid duplicates.",
+    "Geometry anchors require a verifiable diagram and a complete stepwise proof.",
+    "Keep exactly ten representative IDs; the full anchor library can grow indefinitely.",
+    "Changing the representative set is a curatorial decision and must not delete archived anchors or links."
+  ],
+  "review_notes": "Snapshot authored internally. Gemini review requested; do not claim external approval."
+}
+========== END SOURCE FILE: docs/assets/data/anchors/anchor-catalog-v1.json ==========
+
+
+========== BEGIN SOURCE FILE: docs/assets/data/exams/topic25-exams-v1.json (git blob 5b64a96a0c0ecc7edc9d03ef6c4c6b255f93d438) ==========
+{
+  "schema_version": "1.0.0",
+  "engine": "RoadmapExamEngineV1",
+  "exam_family": "TOPIC25",
+  "assessment_mode": "self_marked_written_work",
+  "integrity_note": "Static GitHub Pages cannot securely hide publicly published answers. The UI blocks self-scoring until submission but is not a proctoring system.",
+  "exams": [
+    {
+      "id": "EXAM25-01",
+      "no": "01",
+      "title": "Đề 01 · Nền tảng tổng hợp",
+      "duration_minutes": 120,
+      "total_points": 10,
+      "exam_uri": "kien-thuc/25-tong-hop-on-thi-10/de-luyen-01/",
+      "answer_uri": "kien-thuc/25-tong-hop-on-thi-10/de-luyen-01-dap-an/",
+      "items": [
+        {
+          "id": "I.1",
+          "anchor_ids": [
+            "A25-001"
+          ],
+          "topic_uris": [
+            "kien-thuc/11-can-thuc/"
+          ],
+          "criteria": [
+            {
+              "text": "Đổi ba căn thức về cùng căn √2",
+              "points": 0.75
+            },
+            {
+              "text": "Cộng trừ hệ số và kết luận đúng",
+              "points": 0.25
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "I.2",
+          "anchor_ids": [
+            "A25-001"
+          ],
+          "topic_uris": [
+            "kien-thuc/08-phuong-trinh-bat-phuong-trinh/"
+          ],
+          "criteria": [
+            {
+              "text": "Nêu điều kiện x khác −1",
+              "points": 0.25
+            },
+            {
+              "text": "Giải đúng x = 8",
+              "points": 0.5
+            },
+            {
+              "text": "Đối chiếu điều kiện và kết luận",
+              "points": 0.25
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "II.1",
+          "anchor_ids": [
+            "A25-002"
+          ],
+          "topic_uris": [
+            "kien-thuc/12-phuong-trinh-bac-hai-viete/"
+          ],
+          "criteria": [
+            {
+              "text": "Nêu tổng/tích hai nghiệm theo Viète",
+              "points": 0.5
+            },
+            {
+              "text": "Áp dụng hằng đẳng thức, tính được 13",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "II.2",
+          "anchor_ids": [
+            "A25-003"
+          ],
+          "topic_uris": [
+            "kien-thuc/09-he-phuong-trinh/",
+            "kien-thuc/24-bai-toan-thuc-te/"
+          ],
+          "criteria": [
+            {
+              "text": "Đặt ẩn có ý nghĩa và điều kiện",
+              "points": 0.25
+            },
+            {
+              "text": "Lập hệ số lượng và doanh thu",
+              "points": 0.35
+            },
+            {
+              "text": "Giải x = 14, y = 26",
+              "points": 0.25
+            },
+            {
+              "text": "Kiểm tra và kết luận theo ngữ cảnh",
+              "points": 0.15
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "III.1",
+          "anchor_ids": [],
+          "topic_uris": [
+            "kien-thuc/21-thong-ke/"
+          ],
+          "criteria": [
+            {
+              "text": "Tính đúng tổng 65",
+              "points": 0.25
+            },
+            {
+              "text": "Chia 8, ra trung bình 8,125",
+              "points": 0.25
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "III.2",
+          "anchor_ids": [],
+          "topic_uris": [
+            "kien-thuc/21-thong-ke/"
+          ],
+          "criteria": [
+            {
+              "text": "Trung vị 8,5",
+              "points": 0.25
+            },
+            {
+              "text": "Mốt 9",
+              "points": 0.25
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "III.3",
+          "anchor_ids": [],
+          "topic_uris": [
+            "kien-thuc/23-xac-suat/"
+          ],
+          "criteria": [
+            {
+              "text": "Đếm 4 kết quả từ 9 điểm trở lên",
+              "points": 0.25
+            },
+            {
+              "text": "Xác suất 4/8 = 1/2",
+              "points": 0.25
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "IV.1",
+          "anchor_ids": [
+            "A25-004"
+          ],
+          "topic_uris": [
+            "kien-thuc/17-thales-dong-dang/",
+            "kien-thuc/18-he-thuc-luong/"
+          ],
+          "criteria": [
+            {
+              "text": "Chỉ ra hai cặp góc bằng nhau",
+              "points": 0.4
+            },
+            {
+              "text": "Viết đúng thứ tự đồng dạng",
+              "points": 0.6
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "IV.2",
+          "anchor_ids": [
+            "A25-004"
+          ],
+          "topic_uris": [
+            "kien-thuc/17-thales-dong-dang/",
+            "kien-thuc/18-he-thuc-luong/"
+          ],
+          "criteria": [
+            {
+              "text": "Từ tỷ số cạnh suy ra AH² = BH·CH",
+              "points": 0.75
+            }
+          ],
+          "points": 0.75
+        },
+        {
+          "id": "IV.3",
+          "anchor_ids": [
+            "A25-004"
+          ],
+          "topic_uris": [
+            "kien-thuc/18-he-thuc-luong/"
+          ],
+          "criteria": [
+            {
+              "text": "BC = 25",
+              "points": 0.25
+            },
+            {
+              "text": "AH = 12",
+              "points": 0.35
+            },
+            {
+              "text": "AB = 15 và AC = 20 kèm công thức",
+              "points": 0.65
+            }
+          ],
+          "points": 1.25
+        },
+        {
+          "id": "IV.4",
+          "anchor_ids": [
+            "A25-004"
+          ],
+          "topic_uris": [
+            "kien-thuc/18-he-thuc-luong/"
+          ],
+          "criteria": [
+            {
+              "text": "Công thức diện tích đúng",
+              "points": 0.25
+            },
+            {
+              "text": "Kết quả 150",
+              "points": 0.25
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "V",
+          "anchor_ids": [
+            "A25-005"
+          ],
+          "topic_uris": [
+            "kien-thuc/04-bieu-thuc-dai-so/"
+          ],
+          "criteria": [
+            {
+              "text": "Chứng minh 4xy ≤ (x+y)²",
+              "points": 0.5
+            },
+            {
+              "text": "Suy ra P ≤ 25",
+              "points": 0.25
+            },
+            {
+              "text": "Dấu bằng x=y=5 và kết luận",
+              "points": 0.25
+            }
+          ],
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "EXAM25-02",
+      "no": "02",
+      "title": "Đề 02 · Mạch liên kết",
+      "duration_minutes": 120,
+      "total_points": 10,
+      "exam_uri": "kien-thuc/25-tong-hop-on-thi-10/de-luyen-02/",
+      "answer_uri": "kien-thuc/25-tong-hop-on-thi-10/de-luyen-02-dap-an/",
+      "items": [
+        {
+          "id": "I.1",
+          "anchor_ids": [
+            "A25-006"
+          ],
+          "topic_uris": [
+            "kien-thuc/11-can-thuc/"
+          ],
+          "criteria": [
+            {
+              "text": "Thế x = 9, tính A = 2",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "I.2",
+          "anchor_ids": [
+            "A25-006"
+          ],
+          "topic_uris": [
+            "kien-thuc/11-can-thuc/"
+          ],
+          "criteria": [
+            {
+              "text": "Đặt n=√x, giữ n≥0, n≠1",
+              "points": 0.5
+            },
+            {
+              "text": "Tách A=1+2/(n−1)",
+              "points": 0.5
+            },
+            {
+              "text": "Xét cả ước âm, được n=0,2,3",
+              "points": 0.5
+            }
+          ],
+          "points": 1.5
+        },
+        {
+          "id": "II.1",
+          "anchor_ids": [
+            "A25-003"
+          ],
+          "topic_uris": [
+            "kien-thuc/09-he-phuong-trinh/",
+            "kien-thuc/24-bai-toan-thuc-te/"
+          ],
+          "criteria": [
+            {
+              "text": "Đặt ẩn và điều kiện",
+              "points": 0.25
+            },
+            {
+              "text": "Lập hệ 36 vé, 2070 nghìn",
+              "points": 0.5
+            },
+            {
+              "text": "Giải 15 vé người lớn, 21 vé học sinh",
+              "points": 0.5
+            },
+            {
+              "text": "Đối chiếu và kết luận",
+              "points": 0.25
+            }
+          ],
+          "points": 1.5
+        },
+        {
+          "id": "II.2",
+          "anchor_ids": [
+            "A25-003"
+          ],
+          "topic_uris": [
+            "kien-thuc/24-bai-toan-thuc-te/"
+          ],
+          "criteria": [
+            {
+              "text": "Giá mới 400×1,1×0,9=396 nghìn",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "III.1",
+          "anchor_ids": [
+            "A25-011"
+          ],
+          "topic_uris": [
+            "kien-thuc/10-ham-so-do-thi/",
+            "kien-thuc/12-phuong-trinh-bac-hai-viete/"
+          ],
+          "criteria": [
+            {
+              "text": "Lập hoành độ, tính Δ=16>0",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "III.2",
+          "anchor_ids": [
+            "A25-011"
+          ],
+          "topic_uris": [
+            "kien-thuc/10-ham-so-do-thi/",
+            "kien-thuc/12-phuong-trinh-bac-hai-viete/"
+          ],
+          "criteria": [
+            {
+              "text": "Giải x=−1 hoặc 3",
+              "points": 0.5
+            },
+            {
+              "text": "Tìm đủ hai giao điểm",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "III.3",
+          "anchor_ids": [
+            "A25-011",
+            "A25-007"
+          ],
+          "topic_uris": [
+            "kien-thuc/12-phuong-trinh-bac-hai-viete/"
+          ],
+          "criteria": [
+            {
+              "text": "Viète tổng 2, tích −3, kết quả 10",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "IV.1",
+          "anchor_ids": [
+            "A25-008"
+          ],
+          "topic_uris": [
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "Nêu hai góc vuông tại B và C",
+              "points": 0.25
+            },
+            {
+              "text": "Nội tiếp đường tròn đường kính AO",
+              "points": 0.5
+            }
+          ],
+          "points": 0.75
+        },
+        {
+          "id": "IV.2",
+          "anchor_ids": [
+            "A25-008"
+          ],
+          "topic_uris": [
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "Hai tam giác vuông bằng nhau, AB=AC",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "IV.3",
+          "anchor_ids": [
+            "A25-008"
+          ],
+          "topic_uris": [
+            "kien-thuc/17-thales-dong-dang/",
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "Hai cặp góc tương ứng",
+              "points": 0.5
+            },
+            {
+              "text": "Đồng dạng đúng thứ tự",
+              "points": 0.5
+            },
+            {
+              "text": "Suy ra AB²=AD·AE",
+              "points": 0.25
+            }
+          ],
+          "points": 1.25
+        },
+        {
+          "id": "IV.4",
+          "anchor_ids": [
+            "A25-008"
+          ],
+          "topic_uris": [
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "AE=9 cm",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "V",
+          "anchor_ids": [
+            "A25-005"
+          ],
+          "topic_uris": [
+            "kien-thuc/04-bieu-thuc-dai-so/"
+          ],
+          "criteria": [
+            {
+              "text": "Đặt a,b>0 và a+b=12",
+              "points": 0.25
+            },
+            {
+              "text": "Chứng minh ab≤36",
+              "points": 0.5
+            },
+            {
+              "text": "Dấu bằng và kết luận diện tích 36cm²",
+              "points": 0.25
+            }
+          ],
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "EXAM25-03",
+      "no": "03",
+      "title": "Đề 03 · Lập luận chặt chẽ",
+      "duration_minutes": 120,
+      "total_points": 10,
+      "exam_uri": "kien-thuc/25-tong-hop-on-thi-10/de-luyen-03/",
+      "answer_uri": "kien-thuc/25-tong-hop-on-thi-10/de-luyen-03-dap-an/",
+      "items": [
+        {
+          "id": "I.1",
+          "anchor_ids": [
+            "A25-001"
+          ],
+          "topic_uris": [
+            "kien-thuc/11-can-thuc/"
+          ],
+          "criteria": [
+            {
+              "text": "Đổi căn thức về căn √2",
+              "points": 0.5
+            },
+            {
+              "text": "Kết luận 4√2",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "I.2",
+          "anchor_ids": [
+            "A25-001"
+          ],
+          "topic_uris": [
+            "kien-thuc/08-phuong-trinh-bat-phuong-trinh/"
+          ],
+          "criteria": [
+            {
+              "text": "Điều kiện x≠2",
+              "points": 0.25
+            },
+            {
+              "text": "Giải đúng x=1",
+              "points": 0.5
+            },
+            {
+              "text": "Thử điều kiện và kết luận",
+              "points": 0.25
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "II.1",
+          "anchor_ids": [
+            "A25-010"
+          ],
+          "topic_uris": [
+            "kien-thuc/03-ti-le-ti-le-thuc/",
+            "kien-thuc/24-bai-toan-thuc-te/"
+          ],
+          "criteria": [
+            {
+              "text": "Mô hình năng suất A và A+B",
+              "points": 0.5
+            },
+            {
+              "text": "Tính năng suất B=1/30",
+              "points": 0.5
+            },
+            {
+              "text": "B làm riêng 30 ngày",
+              "points": 0.5
+            }
+          ],
+          "points": 1.5
+        },
+        {
+          "id": "II.2",
+          "anchor_ids": [
+            "A25-010"
+          ],
+          "topic_uris": [
+            "kien-thuc/03-ti-le-ti-le-thuc/",
+            "kien-thuc/24-bai-toan-thuc-te/"
+          ],
+          "criteria": [
+            {
+              "text": "Bốn ngày hoàn thành 1/3 công việc",
+              "points": 0.5
+            }
+          ],
+          "points": 0.5
+        },
+        {
+          "id": "III.1",
+          "anchor_ids": [
+            "A25-011"
+          ],
+          "topic_uris": [
+            "kien-thuc/10-ham-so-do-thi/",
+            "kien-thuc/12-phuong-trinh-bac-hai-viete/"
+          ],
+          "criteria": [
+            {
+              "text": "Giải phương trình hoành độ",
+              "points": 0.5
+            },
+            {
+              "text": "Hai giao điểm (2;4), (−1;1)",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "III.2",
+          "anchor_ids": [
+            "A25-002"
+          ],
+          "topic_uris": [
+            "kien-thuc/12-phuong-trinh-bac-hai-viete/"
+          ],
+          "criteria": [
+            {
+              "text": "Viète tổng 6 tích 5",
+              "points": 0.5
+            },
+            {
+              "text": "Tính x₁²+x₂²=26",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "IV.1",
+          "anchor_ids": [
+            "A25-009"
+          ],
+          "topic_uris": [
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "Chứng minh hai góc BEC, BFC vuông",
+              "points": 0.5
+            },
+            {
+              "text": "Nội tiếp đường tròn đường kính BC",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "IV.2",
+          "anchor_ids": [
+            "A25-009"
+          ],
+          "topic_uris": [
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "Chứng minh AEH, AFH vuông",
+              "points": 0.5
+            },
+            {
+              "text": "Nội tiếp đường tròn đường kính AH",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "IV.3",
+          "anchor_ids": [
+            "A25-009"
+          ],
+          "topic_uris": [
+            "kien-thuc/19-duong-tron/"
+          ],
+          "criteria": [
+            {
+              "text": "Nêu hai góc cùng chắn dây BF",
+              "points": 0.5
+            },
+            {
+              "text": "Kết luận đúng góc BEF=BCF",
+              "points": 0.5
+            }
+          ],
+          "points": 1
+        },
+        {
+          "id": "V.1",
+          "anchor_ids": [],
+          "topic_uris": [
+            "kien-thuc/21-thong-ke/"
+          ],
+          "criteria": [
+            {
+              "text": "Trung bình 8",
+              "points": 0.25
+            },
+            {
+              "text": "Trung vị 8",
+              "points": 0.25
+            },
+            {
+              "text": "Mốt 8",
+              "points": 0.25
+            }
+          ],
+          "points": 0.75
+        },
+        {
+          "id": "V.2",
+          "anchor_ids": [],
+          "topic_uris": [
+            "kien-thuc/23-xac-suat/"
+          ],
+          "criteria": [
+            {
+              "text": "Xác suất 2/6=1/3",
+              "points": 0.25
+            }
+          ],
+          "points": 0.25
+        }
+      ]
+    }
+  ]
+}
+========== END SOURCE FILE: docs/assets/data/exams/topic25-exams-v1.json ==========
+
+
+========== BEGIN SOURCE FILE: docs/assets/geometry/25/anchor-25-004-right-altitude.svg (git blob d19190932657e66bb5897681e425a5b9d1f27d30) ==========
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 360" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Tam giác ABC vuông tại A, đường cao AH xuống BC</title>
+<desc id="desc">B, H, C thẳng hàng, BH bằng 9 và HC bằng 16; A nằm trên đường thẳng vuông góc BC tại H. Góc BAC và góc AHB là góc vuông. Ba tam giác ABH, AHC và ABC đồng dạng.</desc>
+<rect width="650" height="360" rx="18" fill="#f4f8ff"/>
+<path d="M70 285L250 45L570 285Z" fill="#e5f0ff" stroke="#233b88" stroke-width="3.5" stroke-linejoin="round"/>
+<path d="M250 45V285" stroke="#d17f2c" stroke-width="3" stroke-dasharray="9 7"/>
+<path d="M240.4 57.8L253.2 67.4L262.8 54.6" fill="none" stroke="#233b88" stroke-width="2.2"/>
+<path d="M250 269L266 269L266 285" fill="none" stroke="#d17f2c" stroke-width="2.4"/>
+<g fill="#233b88"><circle cx="250" cy="45" r="4.5"/><circle cx="70" cy="285" r="4.5"/><circle cx="250" cy="285" r="4.5"/><circle cx="570" cy="285" r="4.5"/></g>
+<g font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#182b50"><text x="241" y="29">A</text><text x="52" y="311">B</text><text x="244" y="312">H</text><text x="573" y="311">C</text></g>
+<g font-family="Arial,sans-serif" font-size="17" fill="#374968"><text x="145" y="306">9</text><text x="405" y="306">16</text><text x="263" y="166" fill="#ad6020">AH = 12</text><text x="128" y="167">AB = 15</text><text x="433" y="170">AC = 20</text></g>
+<text x="325" y="343" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#52627d">Hình dựng theo tỉ lệ 9 : 12 : 16; chỉ dùng quan hệ hình học để chứng minh.</text>
+</svg>
+========== END SOURCE FILE: docs/assets/geometry/25/anchor-25-004-right-altitude.svg ==========
+
+
+========== BEGIN SOURCE FILE: docs/assets/geometry/25/anchor-25-008-tangent-secant.svg (git blob 356079e6310bd5c3fb0dae6a1dfae42ac7c0e3c2) ==========
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 390" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Hai tiếp tuyến AB, AC và cát tuyến ADE của đường tròn tâm O</title>
+<desc id="desc">A nằm ngoài đường tròn, B và C là tiếp điểm, D và E là giao của cát tuyến qua A với đường tròn theo thứ tự A D E. OB vuông góc AB, OC vuông góc AC. AB bình phương bằng AD nhân AE.</desc>
+<rect width="670" height="390" rx="18" fill="#f4f8ff"/>
+<circle cx="365" cy="190" r="125" fill="#e7f5fa" stroke="#29739a" stroke-width="3"/>
+<path d="M90 190L308.182 78.658M90 190L308.182 301.342" fill="none" stroke="#304bac" stroke-width="3.3"/>
+<path d="M90 190H490" stroke="#d17f2c" stroke-width="3" stroke-dasharray="10 6"/>
+<path d="M365 190L308.182 78.658M365 190L308.182 301.342" stroke="#28778f" stroke-width="2.4"/>
+<path d="M308.182 78.658L314.542 91.119L302.081 97.479" stroke="#28778f" stroke-width="2.3" fill="none"/>
+<path d="M308.182 301.342L314.542 288.881L302.081 282.521" stroke="#28778f" stroke-width="2.3" fill="none"/>
+<g fill="#1d2e61"><circle cx="90" cy="190" r="4.5"/><circle cx="308.182" cy="78.658" r="4.5"/><circle cx="308.182" cy="301.342" r="4.5"/><circle cx="240" cy="190" r="4.5"/><circle cx="365" cy="190" r="4.5"/><circle cx="490" cy="190" r="4.5"/></g>
+<g font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#182b50"><text x="69" y="181">A</text><text x="300" y="60">B</text><text x="302" y="328">C</text><text x="230" y="181">D</text><text x="357" y="181">O</text><text x="494" y="181">E</text></g>
+<g font-family="Arial,sans-serif" fill="#ad6020" font-size="17"><text x="145" y="215">AD</text><text x="426" y="215">DE</text></g>
+<text x="335" y="358" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#1f367e" font-weight="700">AB² = AD · AE</text>
+</svg>
+========== END SOURCE FILE: docs/assets/geometry/25/anchor-25-008-tangent-secant.svg ==========
+
+
+========== BEGIN SOURCE FILE: docs/assets/geometry/25/anchor-25-009-orthocenter.svg (git blob c8af6e2bf42662501e0901e5fe52284a1be10e1c) ==========
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Hai đường cao BE và CF của tam giác nhọn ABC cắt nhau tại trực tâm H</title>
+<desc id="desc">A trên, B trái dưới, C phải dưới. E là chân đường cao từ B trên AC, F là chân đường cao từ C trên AB, H là giao điểm BE và CF. Các tứ giác BECF và AEHF nội tiếp các đường tròn đường kính BC và AH.</desc>
+<rect width="640" height="400" rx="18" fill="#f4f8ff"/>
+<path d="M310 75L95 315H520Z" fill="#e9efff" stroke="#2f438f" stroke-width="3.3" stroke-linejoin="round"/>
+<circle cx="307.5" cy="315" r="212.5" fill="none" stroke="#8aaacf" stroke-width="2" stroke-dasharray="8 6"/>
+<circle cx="310" cy="100.94" r="25.94" fill="none" stroke="#b69ed0" stroke-width="2" stroke-dasharray="4 5"/>
+<path d="M95 315L335.708 104.381M520 315L284.219 103.779" stroke="#cf702a" stroke-width="2.8" stroke-dasharray="9 5"/>
+<path d="M310 75V315" stroke="#5993ab" stroke-width="1.8" stroke-dasharray="6 7"/>
+<path d="M328.49 96.13L320.25 103.34L327.47 111.57" stroke="#cf702a" stroke-width="2.2" fill="none"/>
+<path d="M291.52 95.64L299.75 103.34L292.05 111.57" stroke="#cf702a" stroke-width="2.2" fill="none"/>
+<g fill="#213a86"><circle cx="310" cy="75" r="4.5"/><circle cx="95" cy="315" r="4.5"/><circle cx="520" cy="315" r="4.5"/><circle cx="335.708" cy="104.381" r="4.5"/><circle cx="284.219" cy="103.779" r="4.5"/><circle cx="310" cy="126.875" r="4.5"/></g>
+<g font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#182b50"><text x="304" y="58">A</text><text x="74" y="340">B</text><text x="526" y="340">C</text><text x="344" y="98">E</text><text x="260" y="98">F</text><text x="316" y="143">H</text></g>
+<g font-family="Arial,sans-serif" font-size="14" fill="#52627d"><text x="24" y="374">Nét cam: hai đường cao</text><text x="323" y="374">Nét chấm: hai đường tròn phụ</text></g>
+</svg>
+========== END SOURCE FILE: docs/assets/geometry/25/anchor-25-009-orthocenter.svg ==========
