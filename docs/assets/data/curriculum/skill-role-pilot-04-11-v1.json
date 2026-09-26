@@ -1,0 +1,264 @@
+{
+  "schema": "roadmap-skill-role-pilot-v1",
+  "as_of": "2026-09-26",
+  "status": "draft_read_only_not_used_by_runtime",
+  "method": "Observed 10 actual representative items plus full-bank tag co-occurrence counts; not semantic approval for all tagged questions",
+  "policy_ref": "docs/roadmap/skill-taxonomy-minimal-policy-v1.md",
+  "evidence_ref": "docs/roadmap/gemini-question-evidence-10-cases-2026-09-26.md",
+  "role_values": [
+    "assessed_skill",
+    "supporting_skill",
+    "method",
+    "context",
+    "extension"
+  ],
+  "safeguards": {
+    "no_hard_lock": true,
+    "legacy_question_tags_unchanged": true,
+    "legacy_counters_unchanged": true,
+    "do_not_multiply_mastery_from_one_item": true,
+    "graph_nodes_not_automatically_expanded": true
+  },
+  "pairs": [
+    {
+      "topic": "04-bieu-thuc-dai-so",
+      "a": "cong-tru-da-thuc",
+      "b": "bo-ngoac-dau",
+      "primary": "cong-tru-da-thuc",
+      "secondary_role": "supporting_skill",
+      "secondary_remains_assessable": true,
+      "reason": "Bỏ ngoặc có bài đo riêng, nhưng một kết quả rút gọn không thể chấm hai kỹ năng độc lập.",
+      "recommendation": "KEEP_SEPARATE_TARGETS_WITH_PRIMARY_PER_ITEM",
+      "labels": {
+        "a": "Cộng – trừ đa thức",
+        "b": "Bỏ ngoặc và dấu"
+      },
+      "assessed_target_on_representative": "cong-tru-da-thuc",
+      "review_status": "proposal_pending_question_level_QA",
+      "scope": "representative_item_only_not_auto_rule_for_all_questions",
+      "stored_tag_ids_unchanged": true,
+      "question_id": "ALG04V2_037",
+      "question_tag_counts": {
+        "a": 14,
+        "b": 26,
+        "intersection": 14
+      }
+    },
+    {
+      "topic": "04-bieu-thuc-dai-so",
+      "a": "nhan-bieu-thuc",
+      "b": "tinh-phan-phoi",
+      "primary": "nhan-bieu-thuc",
+      "secondary_role": "method",
+      "secondary_remains_assessable": false,
+      "reason": "Tập câu hiện tại trùng hoàn toàn; phân phối là quy tắc dùng để nhân biểu thức. Nếu muốn đo nhận biết quy tắc riêng phải có bài độc lập.",
+      "recommendation": "ONE_TARGET_AND_METHOD_TAG_CANDIDATE",
+      "labels": {
+        "a": "Nhân biểu thức",
+        "b": "Tính phân phối"
+      },
+      "assessed_target_on_representative": "nhan-bieu-thuc",
+      "review_status": "proposal_pending_question_level_QA",
+      "scope": "representative_item_only_not_auto_rule_for_all_questions",
+      "stored_tag_ids_unchanged": true,
+      "question_id": "ALG04V2_051",
+      "question_tag_counts": {
+        "a": 26,
+        "b": 26,
+        "intersection": 26
+      }
+    },
+    {
+      "topic": "04-bieu-thuc-dai-so",
+      "a": "lap-bieu-thuc",
+      "b": "bai-toan-thuc-te",
+      "primary": "lap-bieu-thuc",
+      "secondary_role": "context",
+      "secondary_remains_assessable": false,
+      "reason": "Bài toán thực tế là tình huống, đích câu là lập biểu thức chu vi.",
+      "recommendation": "ONE_TARGET_AND_CONTEXT_TAG_CANDIDATE",
+      "labels": {
+        "a": "Lập biểu thức",
+        "b": "Bài toán thực tế"
+      },
+      "assessed_target_on_representative": "lap-bieu-thuc",
+      "review_status": "proposal_pending_question_level_QA",
+      "scope": "representative_item_only_not_auto_rule_for_all_questions",
+      "stored_tag_ids_unchanged": true,
+      "question_id": "ALG04V2_111",
+      "question_tag_counts": {
+        "a": 10,
+        "b": 10,
+        "intersection": 10
+      }
+    },
+    {
+      "topic": "05-7-hang-dang-thuc",
+      "a": "nhan-dang-hdt",
+      "b": "binh-phuong-hoan-chinh",
+      "primary": "binh-phuong-hoan-chinh",
+      "secondary_role": "supporting_skill",
+      "secondary_remains_assessable": true,
+      "reason": "Cụ thể hóa mẫu bình phương hoàn chỉnh; hai tập câu không giống nhau. Giữ khả năng đo nhận dạng chung bằng bài không trùng.",
+      "recommendation": "KEEP_DISTINCT_BUT_NO_DOUBLE_EVIDENCE",
+      "labels": {
+        "a": "Nhận dạng cấu trúc hằng đẳng thức",
+        "b": "Nhận dạng bình phương hoàn chỉnh"
+      },
+      "assessed_target_on_representative": "binh-phuong-hoan-chinh",
+      "review_status": "proposal_pending_question_level_QA",
+      "scope": "representative_item_only_not_auto_rule_for_all_questions",
+      "stored_tag_ids_unchanged": true,
+      "question_id": "ID05V1_061",
+      "question_tag_counts": {
+        "a": 21,
+        "b": 16,
+        "intersection": 14
+      }
+    },
+    {
+      "topic": "05-7-hang-dang-thuc",
+      "a": "phan-tich-hdt",
+      "b": "hieu-hai-binh-phuong",
+      "primary": "phan-tich-hdt",
+      "secondary_role": "supporting_skill",
+      "secondary_remains_assessable": true,
+      "reason": "Câu mẫu đo chuyển đa thức thành tích; mẫu hiệu hai bình phương là công cụ. Hai tập câu chỉ giao nhau một phần.",
+      "recommendation": "KEEP_DISTINCT_BUT_NO_DOUBLE_EVIDENCE",
+      "labels": {
+        "a": "Phân tích biểu thức bằng hằng đẳng thức",
+        "b": "Hiệu hai bình phương"
+      },
+      "assessed_target_on_representative": "phan-tich-hdt",
+      "review_status": "proposal_pending_question_level_QA",
+      "scope": "representative_item_only_not_auto_rule_for_all_questions",
+      "stored_tag_ids_unchanged": true,
+      "question_id": "ID05V1_021",
+      "question_tag_counts": {
+        "a": 30,
+        "b": 19,
+        "intersection": 12
+      }
+    },
+    {
+      "topic": "07-phan-thuc-dai-so",
+      "a": "hai-phan-thuc-bang-nhau",
+      "b": "giu-dieu-kien-ban-dau",
+      "primary": "hai-phan-thuc-bang-nhau",
+      "secondary_role": "supporting_skill",
+      "secondary_remains_assessable": true,
+      "reason": "Bảo toàn miền xác định là hành vi chẩn đoán khác, được gắn ở câu khác; câu này chỉ có một kết luận kết hợp.",
+      "recommendation": "KEEP_DISTINCT_BUT_NO_DOUBLE_EVIDENCE",
+      "labels": {
+        "a": "Hai phân thức bằng nhau",
+        "b": "Giữ điều kiện xác định ban đầu"
+      },
+      "assessed_target_on_representative": "hai-phan-thuc-bang-nhau",
+      "review_status": "proposal_pending_question_level_QA",
+      "scope": "representative_item_only_not_auto_rule_for_all_questions",
+      "stored_tag_ids_unchanged": true,
+      "question_id": "RAT07V1_025",
+      "question_tag_counts": {
+        "a": 6,
+        "b": 14,
+        "intersection": 6
+      }
+    },
+    {
+      "topic": "09-he-phuong-trinh",
+      "a": "so-nghiem-he",
+      "b": "y-nghia-hinh-hoc",
+      "primary": "so-nghiem-he",
+      "secondary_role": "method",
+      "secondary_remains_assessable": false,
+      "reason": "Trong tập hiện có, ý nghĩa hình học là cách giải thích số nghiệm. Cần câu chuyên biệt trước khi công nhận mastery riêng.",
+      "recommendation": "ONE_TARGET_AND_REPRESENTATION_CANDIDATE",
+      "labels": {
+        "a": "Số nghiệm của hệ",
+        "b": "Ý nghĩa hình học của hệ"
+      },
+      "assessed_target_on_representative": "so-nghiem-he",
+      "review_status": "proposal_pending_question_level_QA",
+      "scope": "representative_item_only_not_auto_rule_for_all_questions",
+      "stored_tag_ids_unchanged": true,
+      "question_id": "SYS09V1_029",
+      "question_tag_counts": {
+        "a": 12,
+        "b": 12,
+        "intersection": 12
+      }
+    },
+    {
+      "topic": "09-he-phuong-trinh",
+      "a": "lap-he-bai-toan",
+      "b": "bai-toan-so",
+      "primary": "lap-he-bai-toan",
+      "secondary_role": "context",
+      "secondary_remains_assessable": false,
+      "reason": "Bài toán số là bối cảnh ứng dụng; kỹ năng đo là chuyển lời văn thành hệ.",
+      "recommendation": "ONE_TARGET_AND_CONTEXT_TAG_CANDIDATE",
+      "labels": {
+        "a": "Lập hệ từ bài toán",
+        "b": "Bài toán về số"
+      },
+      "assessed_target_on_representative": "lap-he-bai-toan",
+      "review_status": "proposal_pending_question_level_QA",
+      "scope": "representative_item_only_not_auto_rule_for_all_questions",
+      "stored_tag_ids_unchanged": true,
+      "question_id": "SYS09V1_089",
+      "question_tag_counts": {
+        "a": 32,
+        "b": 12,
+        "intersection": 12
+      }
+    },
+    {
+      "topic": "10-ham-so-do-thi",
+      "a": "giao-diem-do-thi",
+      "b": "lien-he-he-phuong-trinh",
+      "primary": "giao-diem-do-thi",
+      "secondary_role": "method",
+      "secondary_remains_assessable": false,
+      "reason": "Câu mẫu yêu cầu điểm giao, còn giải hệ là cách tính. Nếu muốn đo quan hệ hệ–đồ thị cần câu riêng.",
+      "recommendation": "ONE_TARGET_AND_METHOD_TAG_CANDIDATE",
+      "labels": {
+        "a": "Giao điểm hai đồ thị",
+        "b": "Liên hệ với hệ phương trình"
+      },
+      "assessed_target_on_representative": "giao-diem-do-thi",
+      "review_status": "proposal_pending_question_level_QA",
+      "scope": "representative_item_only_not_auto_rule_for_all_questions",
+      "stored_tag_ids_unchanged": true,
+      "question_id": "FUN10V1_103",
+      "question_tag_counts": {
+        "a": 8,
+        "b": 8,
+        "intersection": 8
+      }
+    },
+    {
+      "topic": "11-can-thuc",
+      "a": "khai-phuong-tich",
+      "b": "dua-thua-so-ra",
+      "primary": "dua-thua-so-ra",
+      "secondary_role": "supporting_skill",
+      "secondary_remains_assessable": true,
+      "reason": "Câu mẫu yêu cầu đưa thừa số ra ngoài; phép khai căn tích là điều kiện nền. Hai tập câu trùng nhưng hai mục tiêu kiến thức có thể được đo bằng bài riêng.",
+      "recommendation": "KEEP_KNOWLEDGE_WITH_TARGETED_MICRO_PRACTICE",
+      "labels": {
+        "a": "Khai phương một tích",
+        "b": "Đưa thừa số ra ngoài dấu căn"
+      },
+      "assessed_target_on_representative": "dua-thua-so-ra",
+      "review_status": "proposal_pending_question_level_QA",
+      "scope": "representative_item_only_not_auto_rule_for_all_questions",
+      "stored_tag_ids_unchanged": true,
+      "question_id": "RAD11V1_043",
+      "question_tag_counts": {
+        "a": 12,
+        "b": 12,
+        "intersection": 12
+      }
+    }
+  ]
+}
