@@ -1,0 +1,612 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "NUM02-G6-MICRO-V1",
+  "topic": {
+    "id": "02-so-va-phep-tinh",
+    "title": "Số và phép tính · Core lớp 6"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "NUM02MICRO_001",
+      "card_id": "num02-g6-core-1",
+      "micro_role": "base",
+      "question": "Trong các số sau, số nào là số tự nhiên?",
+      "options": [
+        "−2",
+        "1/2",
+        "7",
+        "−7"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "tap-hop-so"
+        ],
+        "type": "num02-g6-01",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Số tự nhiên gồm 0, 1, 2, 3, ...; trong bốn lựa chọn chỉ có 7 là số tự nhiên.",
+      "hints": [
+        "Hãy chọn số không âm và không có phần phân số.",
+        "Số tự nhiên gồm 0 và các số nguyên dương."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_002",
+      "card_id": "num02-g6-core-1",
+      "micro_role": "trap",
+      "question": "Tính 6 + 2 × 3².",
+      "options": [
+        "24",
+        "72",
+        "42",
+        "54"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "thu-tu-phep-tinh"
+        ],
+        "type": "num02-g6-02",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Thực hiện 3² = 9, rồi 2 × 9 = 18; 6 + 18 = 24.",
+      "hints": [
+        "Lũy thừa được thực hiện trước phép nhân và phép cộng.",
+        "Tính 3², rồi nhân 2, cuối cùng cộng 6."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_003",
+      "card_id": "num02-g6-core-1",
+      "micro_role": "apply",
+      "question": "Tính 2³ + 4 × (9 − 6).",
+      "options": [
+        "36",
+        "24",
+        "20",
+        "14"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "thu-tu-phep-tinh"
+        ],
+        "type": "num02-g6-03",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trong ngoặc được 3, lũy thừa được 8, tích được 12; tổng bằng 20.",
+      "hints": [
+        "Làm phép tính trong ngoặc và lũy thừa trước.",
+        "Biểu thức thành 8 + 4 × 3."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_004",
+      "card_id": "num02-g6-core-2",
+      "micro_role": "base",
+      "question": "Số nào sau đây chia hết cho 9?",
+      "options": [
+        "425",
+        "423",
+        "422",
+        "421"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "dau-hieu-chia-het"
+        ],
+        "type": "num02-g6-04",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Tổng chữ số của 423 là 4 + 2 + 3 = 9, chia hết cho 9.",
+      "hints": [
+        "Hãy cộng các chữ số của mỗi số.",
+        "Số chia hết cho 9 khi tổng chữ số chia hết cho 9."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_005",
+      "card_id": "num02-g6-core-2",
+      "micro_role": "trap",
+      "question": "Số nào là số nguyên tố?",
+      "options": [
+        "21",
+        "33",
+        "29",
+        "39"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-nguyen-to"
+        ],
+        "type": "num02-g6-05",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "29 chỉ có hai ước dương là 1 và 29; các số còn lại đều chia hết cho 3 hoặc 7.",
+      "hints": [
+        "Số nguyên tố lớn hơn 1 và chỉ có hai ước dương.",
+        "Thử chia cho 2, 3 và 5; 21, 33, 39 đều là hợp số."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_006",
+      "card_id": "num02-g6-core-2",
+      "micro_role": "apply",
+      "question": "Có 24 bút và 36 quyển vở. Chia được nhiều nhất bao nhiêu phần quà giống nhau, dùng hết cả hai loại?",
+      "options": [
+        "12",
+        "6",
+        "24",
+        "60"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "ucln"
+        ],
+        "type": "num02-g6-06",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "ƯCLN(24,36)=12; mỗi phần quà có 2 bút và 3 vở.",
+      "hints": [
+        "Số phần quà phải là ước chung của 24 và 36.",
+        "Vì muốn nhiều phần quà nhất, tìm ƯCLN."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_007",
+      "card_id": "num02-g6-core-3",
+      "micro_role": "base",
+      "question": "Tính −8 + 13.",
+      "options": [
+        "−21",
+        "−5",
+        "5",
+        "21"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-nguyen-phep-tinh"
+        ],
+        "type": "num02-g6-07",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Hai số khác dấu: 13 − 8 = 5; giữ dấu dương vì 13 có giá trị tuyệt đối lớn hơn.",
+      "hints": [
+        "Hai số khác dấu: lấy giá trị tuyệt đối lớn trừ nhỏ.",
+        "So sánh 13 và 8 để chọn dấu."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_008",
+      "card_id": "num02-g6-core-3",
+      "micro_role": "trap",
+      "question": "Tính (−3) × (−4).",
+      "options": [
+        "−12",
+        "12",
+        "−7",
+        "7"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-nguyen-phep-tinh"
+        ],
+        "type": "num02-g6-08",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai thừa số âm có tích dương; 3 × 4 = 12.",
+      "hints": [
+        "Nhớ quy tắc dấu khi nhân.",
+        "Hai số âm nhân nhau cho kết quả dương."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_009",
+      "card_id": "num02-g6-core-3",
+      "micro_role": "apply",
+      "question": "Nhiệt độ đang là −2 °C, sau đó tăng 5 °C. Nhiệt độ mới là bao nhiêu?",
+      "options": [
+        "−7 °C",
+        "7 °C",
+        "−3 °C",
+        "3 °C"
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-nguyen-phep-tinh"
+        ],
+        "type": "num02-g6-09",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tăng 5 °C tức cộng 5: −2 + 5 = 3 °C.",
+      "hints": [
+        "Tăng nhiệt độ tương ứng với phép cộng.",
+        "Tính −2 + 5."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_010",
+      "card_id": "num02-g6-core-4",
+      "micro_role": "base",
+      "question": "Rút gọn phân số 18/24 đến tối giản.",
+      "options": [
+        "2/3",
+        "3/4",
+        "4/5",
+        "3/8"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "rut-gon-phan-so"
+        ],
+        "type": "num02-g6-10",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Chia cả tử và mẫu cho ƯCLN(18,24)=6, được 3/4.",
+      "hints": [
+        "Tìm ước chung lớn nhất của tử và mẫu.",
+        "Chia đồng thời 18 và 24 cho 6."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_011",
+      "card_id": "num02-g6-core-4",
+      "micro_role": "trap",
+      "question": "Tính 3/4 − 1/2.",
+      "options": [
+        "2/2",
+        "1/4",
+        "1/2",
+        "2/4"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "phep-tinh-phan-so"
+        ],
+        "type": "num02-g6-11",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đổi 1/2 = 2/4; 3/4 − 2/4 = 1/4.",
+      "hints": [
+        "Hai phân số cần cùng mẫu trước khi trừ.",
+        "Viết 1/2 thành 2/4."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_012",
+      "card_id": "num02-g6-core-4",
+      "micro_role": "apply",
+      "question": "Tính 1/2 + 1/3.",
+      "options": [
+        "2/5",
+        "1/5",
+        "3/6",
+        "5/6"
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "phep-tinh-phan-so"
+        ],
+        "type": "num02-g6-12",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Quy đồng 1/2=3/6, 1/3=2/6, cộng được 5/6.",
+      "hints": [
+        "Tìm mẫu chung của 2 và 3.",
+        "Viết 1/2=3/6 và 1/3=2/6."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_013",
+      "card_id": "num02-g6-core-5",
+      "micro_role": "base",
+      "question": "Tính 0,6 + 0,25.",
+      "options": [
+        "0,31",
+        "0,85",
+        "0,625",
+        "0,75"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-huu-ti-thap-phan"
+        ],
+        "type": "num02-g6-13",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Viết 0,6 = 0,60; 0,60 + 0,25 = 0,85.",
+      "hints": [
+        "Đặt dấu phẩy của hai số thẳng cột.",
+        "Viết 0,6 thành 0,60 trước khi cộng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_014",
+      "card_id": "num02-g6-core-5",
+      "micro_role": "trap",
+      "question": "25% của 200 bằng bao nhiêu?",
+      "options": [
+        "25",
+        "50",
+        "75",
+        "500"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "phan-tram"
+        ],
+        "type": "num02-g6-14",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "25% = 1/4, một phần tư của 200 bằng 50.",
+      "hints": [
+        "Đổi 25% thành một phân số.",
+        "200 × 25/100 = 50."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_015",
+      "card_id": "num02-g6-core-5",
+      "micro_role": "apply",
+      "question": "Áo giá 120 000 đồng giảm 10% so với giá ban đầu. Giá phải trả là bao nhiêu?",
+      "options": [
+        "12 000 đồng",
+        "132 000 đồng",
+        "110 000 đồng",
+        "108 000 đồng"
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "phan-tram"
+        ],
+        "type": "num02-g6-15",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Giảm 12 000 đồng nên giá mới là 120 000 − 12 000 = 108 000 đồng.",
+      "hints": [
+        "Tính số tiền giảm trước, đừng nhầm với số tiền trả.",
+        "120 000 × 10% = 12 000, rồi lấy giá ban đầu trừ đi."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      }
+    }
+  ]
+}
