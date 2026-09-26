@@ -147,9 +147,11 @@
     if (anchor) anchor.after(panel);
     else host.prepend(panel);
     try {
-      const response = await fetch(root + "../../assets/data/curriculum/knowledge-graph-v1.json");
+      const graphUrl = new URL("../../assets/data/curriculum/knowledge-graph-v1.json", root);
+      const response = await fetch(graphUrl.href);
       if (!response.ok) throw new Error("Graph unavailable");
       const graph = await response.json();
+      if (graph.schema !== "roadmap-knowledge-graph-v1" || !graph.nodes || !Array.isArray(graph.edges)) throw new Error("Invalid graph schema");
       if (!panel.isConnected || !location.pathname.includes("/" + match[1] + "/")) return;
       const nodes = graph.nodes || {};
       const ids = Object.keys(nodes).filter(id => nodes[id].topic === match[1]);
@@ -161,8 +163,9 @@
         {label:"Hướng học tiếp", ids:[...new Set(edges.filter(e => e.type === "PREREQUISITE" && e.confidence === "high" && ids.includes(e.from) && nodes[e.to]?.topic !== match[1]).map(e => e.to))], explanation:"Gợi ý kỹ năng sử dụng kiến thức hiện tại; có thể học theo nhiều nhánh."}
       ];
       const labelFor = id => id.replace(/-/g, " ");
-      const topicHref = id => root + "../" + nodes[id].topic + "/";
-      groups.filter(group => group.ids.length).forEach(group => {
+      const topicHref = id => new URL("../" + nodes[id].topic + "/", root).href;
+      const visibleGroups = groups.filter(group => group.ids.length);
+      visibleGroups.forEach(group => {
         const section = document.createElement("div");
         section.className = "skill-connections-group";
         const heading = document.createElement("h3");
@@ -191,6 +194,7 @@
         section.append(heading, description, list);
         panel.appendChild(section);
       });
+      if (!visibleGroups.length) panel.remove();
     } catch (_) {
       panel.remove(); // A missing graph must never block reading the lesson.
     }
