@@ -269,6 +269,17 @@ $$
         check(exam_page.locator(".exam-engine").count() == 1, "exam engine mounted on "+number)
         exam_page.get_by_role("button", name="Bắt đầu làm đề 120 phút").click()
         check(exam_page.locator(".exam-answer-item").count() == expected, "exam "+number+" response mapping")
+        if number == "02":
+            exam_page.evaluate("""() => {
+                const key = "roadmap:exam-v1:EXAM25-02";
+                const state = JSON.parse(localStorage.getItem(key));
+                state.deadline_at = Date.now() - 1000;
+                localStorage.setItem(key, JSON.stringify(state));
+            }""")
+            exam_page.reload(wait_until="networkidle")
+            check(exam_page.locator(".exam-answer-item").count() == 0, "expired exam freezes draft on reload")
+            check("Đã hết 120 phút" in exam_page.locator(".exam-message").first.inner_text(), "expired exam submits automatically")
+            check(exam_page.locator(".exam-rubric-item").count() == 0, "timeout never reveals rubric before answer-review step")
         exam_page.close()
 
     phone = browser.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=1,
