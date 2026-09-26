@@ -1,5 +1,5 @@
 {
-  "version": "1.0.54",
+  "version": "1.0.55",
   "updated": "2026-09-26",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -308,10 +308,10 @@
       "mock_duration_minutes": 120,
       "mock_total_points": 10,
       "exam_engine": "localStorage-backed timed written exam with learner self-marked rubric and gap links; not AI/teacher graded",
-      "release": "PRs #104, #109–#113 merged; strict build and browser QA passed for #113",
-      "independent_math_review": "RECEIVED_GEMINI_R2_APPROVE_SCOPE_LIMITED: critical_corrections=[]; source_files_reviewed 17/23; original 23 source blobs match snapshot. Six missing from source list, and three newly authored deep pages, remain targeted follow-up TOPIC25-R2-SOURCE-COVERAGE-001; no claim of full 23/23 independent sign-off. See review-packets/topic25/REVIEW_INTEGRATION_2026-09-26.md.",
+      "release": "PR #122 CI run 36233772681 success, Deploy MkDocs run 36233855045 success. Previous PRs #104 and #109–113 remain history.",
+      "independent_math_review": "GEMINI_R2_REPORTED_APPROVE_WITH_17_OF_23_SOURCE_LIST; response had no critical corrections; math/exam reviewed as reported, source listing omitted 6 files and post-review deep pages new. See REVIEW_INTEGRATION_2026-09-26.md. Follow-up task TOPIC25-R2-SOURCE-COVERAGE-001 remains OPEN; do not imply full independent signoff.",
       "learning_ai": "contextual Tutor on Topic25 main and deep-reading pages, not assessment/answer pages",
-      "deep_solution_new_release": "A25-006/007/010: drafted on PR, technical release pending; original source ID/URL unchanged.",
+      "deep_solution_new_release": "DEPLOYED: PR #122 merge 2865e1e82749484300244234e95cad8b6ca05f7a; academic/source QA, browser and MkDocs deploy success. A25-006/007/010 new deep pages; source original unchanged, Gemini R2 did NOT independently review these post-snapshot pages.",
       "gemini_review_packet": "TOPIC25-GEMINI-REVIEW-20260926-R2"
     },
     "grade6_topic02_pilot": "DEPLOYED_CI_BROWSER_PASS_OWNER_DEVICE_QA_PENDING: PR #120, 5 grade6 cards, 15 micro, 10 independent readiness; legacy 120-bank and written test preserved; class7 content excluded from grade6 readiness. Technical CI/build/deploy passed; owner real-device acceptance separate OPEN task G6-T02-OWNER-UX-001.",
