@@ -346,11 +346,14 @@ Vậy đội B làm một mình trong **30 ngày**.
 Phần tóm tắt ở trên giúp nhận diện nhanh. Khi mới học dạng toán hoặc vướng bài khó, **ưu tiên mở lời giải sâu** để xem từng bước, cách suy luận lùi từ mục tiêu, lỗi thường gặp và biến thể:
 
 - [A25-004 – Đường cao tam giác vuông (có hình SVG)](anchor-25-004.md)
+- [A25-006 – Biểu thức căn và tính nguyên](anchor-25-006.md)
+- [A25-007 – Tham số, biệt thức và Viète](anchor-25-007.md)
 - [A25-008 – Tiếp tuyến, cát tuyến và đồng dạng (có hình SVG)](anchor-25-008.md)
 - [A25-009 – Trực tâm và hai đường tròn phụ (có hình SVG)](anchor-25-009.md)
+- [A25-010 – Năng suất và phần việc chung](anchor-25-010.md)
 - [A25-011 – Parabol và đường thẳng (bài mở rộng thứ 11)](anchor-25-011.md)
 
-Các bài còn ở dạng tóm tắt chưa được gắn nhãn “lời giải sâu đã hoàn chỉnh”. Chúng sẽ tiếp tục được biên soạn và rà soát theo cùng mẫu, trong khi bộ 10 tiêu biểu vẫn giữ đủ mười ID.
+Các bài chưa có trang giải sâu vẫn được ghi rõ là nội dung tóm tắt. Ba trang mới A25-006, A25-007, A25-010 được biên soạn sau phản biện Gemini R2 và cần được kiểm tra theo phiên bản mới; không tự động coi là đã được Gemini phê duyệt. Bộ 10 tiêu biểu vẫn giữ đủ mười ID.
 
 ## Liên kết tới đề thực hành
 
