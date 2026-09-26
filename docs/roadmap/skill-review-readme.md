@@ -1,5 +1,7 @@
 # Chuẩn hóa kỹ năng THCS — hồ sơ phản biện
 
+> **Phạm vi hiện hành (cập nhật 26/09/2026):** Không đặt mục tiêu định danh/chuẩn hóa đủ 346 tag thành 346 skill. Danh mục lịch sử là nguồn kiểm kê. Nhiệm vụ mới: xây bộ năng lực nền và ứng dụng **gọn, đủ chẩn đoán** theo [quy tắc tinh gọn](skill-taxonomy-minimal-policy-v1.md); thí điểm [10 cặp](../assets/data/curriculum/skill-role-pilot-04-11-v1.json). Các tag dạng bài, phương pháp, bối cảnh và kỹ thuật tự chọn không mặc định thành mastery/node. [Brief Gemini hiện hành](gemini-next-review-10-pairs-v1.md). Mọi yêu cầu 346/346 ở tài liệu cũ chỉ là mục tiêu kiểm kê, không phải mục tiêu sản phẩm.
+
 **Trạng thái:** đã hoàn thành kiểm kê cấu trúc; chờ Gemini phản biện nội dung và ưu tiên học thuật. **Không thay đổi tag luyện tập, Knowledge Graph, localStorage hoặc giao diện học sinh** từ các kết quả sơ bộ.
 
 ## Dữ liệu đã kiểm tra
@@ -23,7 +25,7 @@
 4. 12 kết quả theo câu hỏi nằm tại `../assets/data/curriculum/review-question-audit-*.json`. Mỗi tệp có số câu thực tế, số lần gắn tag, mã lạ, tag chưa dùng, mã câu ví dụ.
 5. [Mẫu JSON trả lời](../assets/data/curriculum/gemini-skill-review-response-v1.example.json)
 
-Hãy cho Gemini làm vòng A theo từng batch, sau đó kiểm tra trùng chéo. Vòng B phân biệt yêu cầu chương trình, giá trị nền tảng, tần suất đề không chuyên và đề chuyên. Chưa có corpus đủ lớn thì để `unverified`, không bịa phần trăm.
+Trước mắt Gemini chỉ phản biện 10 cặp có bằng chứng câu hỏi và cách xếp vai trò skill/support/context; về sau chỉ mở rộng có chọn lọc theo nhu cầu học sinh. Tần suất thi chưa kiểm chứng thì để `unverified`, không bịa phần trăm.
 
 ## Quy tắc tích hợp
 
