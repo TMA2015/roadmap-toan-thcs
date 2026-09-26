@@ -2,7 +2,7 @@
 
 > **Phạm vi hiện hành (cập nhật 26/09/2026):** Không đặt mục tiêu định danh/chuẩn hóa đủ 346 tag thành 346 skill. Danh mục lịch sử là nguồn kiểm kê. Nhiệm vụ mới: xây bộ năng lực nền và ứng dụng **gọn, đủ chẩn đoán** theo [quy tắc tinh gọn](skill-taxonomy-minimal-policy-v1.md); thí điểm [10 cặp](../assets/data/curriculum/skill-role-pilot-04-11-v1.json). Các tag dạng bài, phương pháp, bối cảnh và kỹ thuật tự chọn không mặc định thành mastery/node. [Brief Gemini hiện hành](gemini-next-review-10-pairs-v1.md). Mọi yêu cầu 346/346 ở tài liệu cũ chỉ là mục tiêu kiểm kê, không phải mục tiêu sản phẩm.
 
-**Trạng thái:** đã hoàn thành kiểm kê cấu trúc; chờ Gemini phản biện nội dung và ưu tiên học thuật. **Không thay đổi tag luyện tập, Knowledge Graph, localStorage hoặc giao diện học sinh** từ các kết quả sơ bộ.
+**Trạng thái 26/09/2026:** kiểm kê cấu trúc hoàn thành; Gemini đã phản biện 10 cặp, ChatGPT đã đối chiếu 10 câu nguồn và ghi nhận vào pilot. [Bản chốt thí điểm và kế hoạch tích hợp](skill-role-pilot-rollout-v1.md) là hồ sơ hiện hành. Chưa thay đổi tag luyện tập, Knowledge Graph, localStorage hay giao diện học sinh.
 
 ## Dữ liệu đã kiểm tra
 
@@ -25,7 +25,7 @@
 4. 12 kết quả theo câu hỏi nằm tại `../assets/data/curriculum/review-question-audit-*.json`. Mỗi tệp có số câu thực tế, số lần gắn tag, mã lạ, tag chưa dùng, mã câu ví dụ.
 5. [Mẫu JSON trả lời](../assets/data/curriculum/gemini-skill-review-response-v1.example.json)
 
-Trước mắt Gemini chỉ phản biện 10 cặp có bằng chứng câu hỏi và cách xếp vai trò skill/support/context; về sau chỉ mở rộng có chọn lọc theo nhu cầu học sinh. Tần suất thi chưa kiểm chứng thì để `unverified`, không bịa phần trăm.
+Gemini đã hoàn thành phản biện 10 cặp theo mẫu; ý kiến được điều chỉnh ở trường hợp ID05V1_021 và đưa vào [pilot JSON](../assets/data/curriculum/skill-role-pilot-04-11-v1.json). Bước tiếp là QA đánh giá độc lập theo câu và thử nghiệm [micro-test draft](../assets/data/curriculum/skill-diagnostic-micro-pilot-v1.json) ở phạm vi nhỏ, không mở rộng danh mục chỉ vì có nhiều tag. Tần suất thi chưa kiểm chứng thì để `unverified`.
 
 ## Quy tắc tích hợp
 
