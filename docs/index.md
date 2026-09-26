@@ -55,9 +55,7 @@ hide:
     <div class="study-scene-heading"><span>📖 GÓC HỌC TẬP</span><span class="study-scene-tag">Một chút phép màu ✦</span></div>
     <button type="button" class="study-wake-button" data-study-wake aria-label="Đánh thức cô bé đang ngủ gật để bắt đầu học">
       <span class="study-art-stage">
-        <img class="study-art-room" src="assets/images/study-room-pastel.svg" width="1040" height="552" alt="" aria-hidden="true" decoding="async">
-        <img class="study-art-image" src="assets/images/study-kid-sleeping.webp" data-awake-src="assets/images/study-kid-awake.webp" width="520" height="276" alt="Cô bé tóc dài đeo kính đang ngáp ngủ bên quyển vở" loading="eager" decoding="async">
-        <span class="study-art-light" aria-hidden="true">✦</span><span class="study-art-wakeup" aria-hidden="true">Chào bạn! ✨</span>
+        <img class="study-art-image" src="assets/images/study-kid-sleeping.webp" data-awake-src="assets/images/study-scene-awake-approved.webp" width="520" height="276" alt="Cô bé tóc dài đeo kính đang ngáp ngủ bên quyển vở" loading="eager" decoding="async">
       </span>
       <span class="study-wake-caption"><span class="study-wake-caption-sleep">Suỵt… bạn ấy ngủ gật rồi! <strong>Chạm để đánh thức ✨</strong></span><span class="study-wake-caption-awake">Bạn ấy tỉnh rồi! Cùng bắt đầu học nào ✨</span></span>
     </button>
