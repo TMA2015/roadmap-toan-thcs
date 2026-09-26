@@ -58,10 +58,18 @@ with sync_playwright() as p:
     page.locator('.home-style-bar [data-home-select="playful"]').click()
     check(page.locator('[data-home-mode="playful"]').is_visible(), "playful artwork must be visible")
     img = page.locator(".study-art-image")
-    check(img.evaluate("(node) => node.complete && node.naturalWidth >= 480 && node.naturalWidth / node.naturalHeight > 1.7"), "approved artwork loaded")
+    check(img.evaluate("(node) => node.complete && node.naturalWidth >= 480 && node.naturalHeight > node.naturalWidth"), "approved portrait mascot loaded")
+    room = page.locator(".study-art-room")
+    check(room.evaluate("(node) => node.complete && node.naturalWidth >= 1000"), "illustrated study room loaded")
     shot(page, "home-playful-desktop.png")
     page.locator("[data-study-wake]").click()
     check(page.locator("[data-study-gateway]").is_visible(), "wake reveals learning routes")
+    check("study-kid-awake.webp" in img.get_attribute("src"), "happy eyes-open state swaps actual image")
+    greeting = page.locator(".study-art-wakeup").bounding_box()
+    stage = page.locator(".study-art-stage").bounding_box()
+    check(greeting is not None and stage is not None and
+          greeting["x"] + greeting["width"] < stage["x"] + stage["width"] * .55,
+          "greeting stays to the left and clear of the mascot")
     shot(page, "home-awake-desktop.png")
     page.reload(wait_until="networkidle")
     check(page.locator('[data-home-mode="playful"]').is_visible(), "mode persisted after reload")
@@ -287,6 +295,21 @@ $$
             check("Đã hết 120 phút" in exam_page.locator(".exam-message").first.inner_text(), "expired exam submits automatically")
             check(exam_page.locator(".exam-rubric-item").count() == 0, "timeout never reveals rubric before answer-review step")
         exam_page.close()
+
+    # Half-width desktop: the main destinations stay available inside the drawer.
+    half = browser.new_context(viewport={"width": 880, "height": 900}, device_scale_factor=1)
+    half_page = half.new_page()
+    half_page.goto(BASE + "kien-thuc/23-xac-suat/", wait_until="networkidle")
+    half_page.locator('.md-header__button[for="__drawer"]').click()
+    quick = half_page.locator(".md-sidebar--primary .roadmap-mobile-shortcuts__link")
+    check(quick.count() == 6 and quick.first.is_visible(), "six global destinations in half-width drawer")
+    check([quick.nth(i).inner_text().strip() for i in range(6)] ==
+          ["⌂ Trang chủ", "▣ Học theo lớp", "◇ Roadmap", "✦ AI Tutor", "☷ Hướng dẫn", "▤ Kiến thức"],
+          "compact navigation order and labels")
+    shot(half_page, "lesson-23-half-width-main-navigation.png")
+    quick.first.click()
+    check(half_page.url.rstrip("/") == BASE.rstrip("/"), "return to home in one drawer click")
+    half.close()
 
     phone = browser.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=1,
                                 is_mobile=True, has_touch=True)
