@@ -65,7 +65,6 @@ with sync_playwright() as p:
       return {loaded:node.complete, width:node.naturalWidth, height:node.naturalHeight,
         cornerAlpha:[a(0,0),a(node.naturalWidth-1,0),a(0,node.naturalHeight-1)]};
     }""")
-    print("MASCOT ASSET", visual, flush=True)
     check(visual["loaded"] and visual["width"] >= 480 and visual["height"] >= 200, "approved mascot loaded")
     room = page.locator(".study-art-room")
     check(room.evaluate("(node) => node.complete && node.naturalWidth >= 1000"), "illustrated study room loaded")
@@ -319,14 +318,6 @@ $$
           document.elementFromPoint(x,y)?.closest(".roadmap-mobile-shortcuts") === node;
       });
     }""")
-    print("SHORTCUT DIAGNOSTIC", half_page.evaluate("""() => ({
-      nodes:[...document.querySelectorAll(".md-sidebar--primary .roadmap-mobile-shortcuts")].map((n,i)=>({
-        i,outer:n.closest("nav.md-nav")?.getAttribute("data-md-level"),
-        rect:(()=>{let r=n.getBoundingClientRect();return [Math.round(r.x),Math.round(r.y),Math.round(r.width),Math.round(r.height)]})(),
-        display:getComputedStyle(n).display,
-        point:(()=>{let r=n.getBoundingClientRect();return document.elementFromPoint(r.left+Math.min(r.width/2,80),r.top+45)?.className||null})()
-      })),sidebar:(()=>{let r=document.querySelector(".md-sidebar--primary").getBoundingClientRect();return [r.x,r.y,r.width,r.height]})()
-    })"""), flush=True)
     check(active_shortcuts >= 0, "visible compact menu belongs to current Material drill-down")
     quick = half_page.locator(".md-sidebar--primary .roadmap-mobile-shortcuts").nth(active_shortcuts).locator("a")
     check(quick.count() == 6 and quick.first.is_visible(), "six global destinations in half-width drawer")
