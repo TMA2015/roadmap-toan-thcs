@@ -15,12 +15,16 @@ for(const id of catalog.representative_ids)check(ids.has(id),"representative id 
 const original=read(folder+"bai-toan-kinh-dien.md");
 for(const a of catalog.anchors){
   check(a.topic_ids.length>0&&a.skill_tags.length>0,a.id+" needs topic/skill tags");
-  const acceptedReviewStates=new Set(["pending_Gemini","gemini_R2_reported_correct_from_listed_overview_or_deep_source","gemini_R2_claimed_correct_but_source_file_not_listed"]);
+  const acceptedReviewStates=new Set(["pending_Gemini","gemini_R2_reported_correct_from_listed_overview_or_deep_source","gemini_R2_claimed_correct_but_source_file_not_listed","gemini_R2_overview_plus_R3_deep_pass","gemini_R3_source_locked_pass_5f74d7c377bc94f2688a9b5ee431d90c88af0536"]);
   check(acceptedReviewStates.has(a.independent_math_review),a.id+" must use source-qualified independent review status");
   if(a.independent_math_review!=="pending_Gemini"){
     const review=read("review-packets/topic25/REVIEW_INTEGRATION_2026-09-26.md");
     check(review.includes("17/23") && review.toLowerCase().includes("không ký duyệt") && review.includes("04b275cb5870a2fbd8f540333b96529285277883"),a.id+" must have source-locked limited review evidence");
-    if(a.id==="A25-011")check(a.independent_math_review==="gemini_R2_claimed_correct_but_source_file_not_listed",a.id+" unlisted file must remain qualified");
+    if(a.id==="A25-011")check(["gemini_R2_claimed_correct_but_source_file_not_listed","gemini_R3_source_locked_pass_5f74d7c377bc94f2688a9b5ee431d90c88af0536"].includes(a.independent_math_review),a.id+" must retain accurate R2/R3 provenance");
+    if(a.independent_math_review.includes("R3_")){
+      const r3=read("review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md");
+      check(r3.includes("9/9")&&r3.includes("5/8")&&r3.includes("5f74d7c377bc94f2688a9b5ee431d90c88af0536"),a.id+" must have source-locked R3 review evidence");
+    }
   }
   for(const x of a.related_anchor_ids)check(ids.has(x),a.id+" broken relation "+x);
   if(a.source_uri){const hash=a.source_uri.split("#")[1];check(original.includes('id="'+hash+'"'),a.id+" missing stable anchor "+hash);}
