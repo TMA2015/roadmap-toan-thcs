@@ -46,7 +46,7 @@ x_1^2+x_2^2.
 
 Cho tam giác \(ABC\) vuông tại \(A\), đường cao \(AH\) xuống \(BC\). Biết \(BH=9\), \(CH=16\).
 
-1. Chứng minh \(	ri\angle ABH\sim\tri\angle HAC\).
+1. Chứng minh \(	ri\angle ABH\sim\triangle HAC\).
 2. Chứng minh
 \[
 AH^2=BH\cdot CH.
@@ -131,7 +131,7 @@ Có 4 học sinh đạt từ 9 điểm trở lên, nên xác suất:
 
 1. Ta có \(\angle AHB=\angle AHC=90^\circ\). Vì \(\angle ABH=\angle HAC\) nên
 \[
-	ri\angle ABH\sim\tri\angle HAC.
+	ri\angle ABH\sim\triangle HAC.
 \]
 
 2. Từ đồng dạng:
