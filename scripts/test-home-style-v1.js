@@ -14,16 +14,18 @@ for(const name of ["study-kid-sleeping.webp","study-kid-awake.webp","tutor-girl-
   const image=path.join(root,"docs/assets/images",name),data=fs.readFileSync(image);
   ok(data.length>5000&&data.toString("ascii",0,4)==="RIFF"&&data.toString("ascii",8,12)==="WEBP",name+" is an optimized bundled WebP");
 }
-ok(html.includes('data-awake-src="assets/images/study-scene-awake-approved.webp"'),"explicit approved awake scene");
+ok(html.includes('src="assets/images/study-scene-sleep-final.webp" data-awake-src="assets/images/study-scene-awake-final.webp"'),"exact matched owner-approved scene pair");
 ok(!html.includes('class="study-art-room"')&&!html.includes('class="study-art-wakeup"'),"no duplicate room panel or greeting overlay");
-ok(css.includes(".study-art-stage{")&&css.includes("aspect-ratio:520/276")&&css.includes(".study-scene.is-awake .study-art-stage{background:#f8e9e1}"),"single stage with scene-specific backdrop");
-const approved=fs.readFileSync(path.join(root,"docs/assets/images/study-scene-awake-approved.webp"));
-ok(approved.length>20000&&approved.toString("ascii",0,4)==="RIFF"&&approved.toString("ascii",8,12)==="WEBP", "approved composite is bundled WebP");
-const room=load("docs/assets/images/study-room-pastel.svg");
-ok(room.includes("<svg")&&room.includes("viewBox=\"0 0 1040 552\"")&&room.includes("<title")&&room.includes("<desc"),"accessible self-contained room SVG");
+ok(css.includes(".study-art-stage{")&&css.includes("aspect-ratio:520/276")&&css.includes("object-fit:cover;object-position:center"),"both states share identical stage and crop");
+ok(!css.includes(".study-scene.is-awake .study-art-stage{")&&!css.includes(".study-art-room{"),"no per-state background or duplicate room layer");
+for(const name of ["study-scene-sleep-final.webp","study-scene-awake-final.webp"]){
+  const data=fs.readFileSync(path.join(root,"docs/assets/images",name));
+  ok(data.length>20000&&data.toString("ascii",0,4)==="RIFF"&&data.toString("ascii",8,12)==="WEBP",name+" is the bundled approved scene");
+  ok(data.readUInt32LE(4)+8===data.length,name+" RIFF length is exact");
+}
 const classes=new Set(),events={},attrs={};const gateway={hidden:true};
 const wake={addEventListener:(t,fn)=>events.wake=fn,setAttribute:(k,v)=>attrs[k]=v};
-const illustration={src:"assets/images/study-kid-sleeping.webp",dataset:{awakeSrc:"assets/images/study-scene-awake-approved.webp"},alt:"sleeping"};
+const illustration={src:"assets/images/study-scene-sleep-final.webp",dataset:{awakeSrc:"assets/images/study-scene-awake-final.webp"},alt:"sleeping"};
 const scene={hidden:true,classList:{contains:v=>classes.has(v),add:v=>classes.add(v)},querySelector:s=>s==="[data-study-wake]"?wake:s==="[data-study-gateway]"?gateway:s===".study-art-image"?illustration:null};
 const standard={hidden:false};
 const choices={standard:{dataset:{homeSelect:"standard"},setAttribute:(k,v)=>attrs.standard=v,addEventListener:(t,fn)=>events.standard=fn},playful:{dataset:{homeSelect:"playful"},setAttribute:(k,v)=>attrs.playful=v,addEventListener:(t,fn)=>events.playful=fn}};
@@ -34,6 +36,6 @@ vm.runInNewContext(js,{document:doc,localStorage:{getItem:()=>null,setItem:(k,v)
 ok(!dialog.hidden&&standard.hidden===false&&scene.hidden===true,"first visit chooser and stable default");
 events.playful();ok(dialog.hidden&&scene.hidden===false&&standard.hidden&&attrs.saved==="playful","switch and save");
 events.wake();ok(!gateway.hidden&&classes.has("is-awake"),"wake reveals navigation");
-ok(illustration.src==="assets/images/study-scene-awake-approved.webp"&&illustration.alt.includes("mở mắt"),"waking swaps to eyes-open happy illustration");
+ok(illustration.src==="assets/images/study-scene-awake-final.webp"&&illustration.alt.includes("mở mắt"),"waking swaps to eyes-open happy illustration");
 events.standard();ok(scene.hidden&& !standard.hidden&&attrs.saved==="standard","switch back preserves standard portal");
 console.log("PASS: two styles, first visit chooser, state persistence, visual asset, wake links, safe fallback.");
