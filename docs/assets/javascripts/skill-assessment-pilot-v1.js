@@ -163,6 +163,9 @@
     constructor(root, questions) {
       this.root = root;
       this.questions = questions;
+      this.session = [...questions];
+      this.sessionAnswers = [];
+      this.retryMode = false;
       this.index = 0;
       this.correct = 0;
       this.answered = false;
@@ -175,11 +178,23 @@
       try { localStorage.setItem(KEY, JSON.stringify(this.state)); }
       catch (_) { this.storageAvailable = false; }
     }
+    startSession(items, retryMode = false) {
+      this.session = [...items];
+      this.sessionAnswers = [];
+      this.retryMode = retryMode;
+      this.index = 0;
+      this.correct = 0;
+      if (this.introEl) this.introEl.textContent = retryMode
+        ? "Luyện lại " + this.session.length + " câu vừa sai. Đáp án đã được xem trước đó; lần làm lại giúp ôn tập nhưng không phải bằng chứng độc lập mới."
+        : "14 câu thử nghiệm: 10 câu từ ngân hàng gốc và 4 câu kiểm tra ngắn. Mỗi câu chỉ cộng vào một kỹ năng chính.";
+      this.renderQuestion();
+    }
     render() {
       this.root.replaceChildren();
-      this.root.appendChild(textEl("p",
-        "14 câu thử nghiệm: 10 câu từ ngân hàng gốc và 4 câu kiểm tra ngắn. Chỉ kỹ năng chính nhận điểm; dữ liệu luyện tập cũ không bị thay đổi.",
-        "skill-pilot-intro"));
+      this.introEl = textEl("p",
+        "14 câu thử nghiệm: 10 câu từ ngân hàng gốc và 4 câu kiểm tra ngắn. Mỗi câu chỉ cộng vào một kỹ năng chính.",
+        "skill-pilot-intro");
+      this.root.appendChild(this.introEl);
       if (!this.storageAvailable) this.root.appendChild(textEl("p",
         "Trình duyệt đang chặn lưu dữ liệu; kết quả chỉ tồn tại trong phiên này.", "skill-pilot-warning"));
       this.progress = textEl("p", "", "skill-pilot-progress");
@@ -189,10 +204,10 @@
     }
     renderQuestion() {
       this.card.replaceChildren();
-      if (this.index >= this.questions.length) return this.renderSummary();
+      if (this.index >= this.session.length) return this.renderSummary();
       this.answered = false;
-      const q = this.questions[this.index];
-      this.progress.textContent = "Câu " + (this.index + 1) + "/" + this.questions.length + " · Đúng " + this.correct;
+      const q = this.session[this.index];
+      this.progress.textContent = "Câu " + (this.index + 1) + "/" + this.session.length + " · Đúng " + this.correct;
       this.card.appendChild(textEl("p", (q.question_kind === "micro_pilot" ? "🔎 Kiểm tra riêng" : "📘 Câu trong ngân hàng") +
         " · " + q.topic, "skill-pilot-meta"));
       this.card.appendChild(textEl("h3", "Kỹ năng đánh giá: " + label(q.assessed_skill), "skill-pilot-heading"));
@@ -218,10 +233,11 @@
       typeset(this.card);
     }
     answer(q, choice, choices) {
-      if (this.answered || this.questions[this.index]?.id !== q.id) return;
+      if (this.answered || this.session[this.index]?.id !== q.id) return;
       this.answered = true;
       const correct = choice === q.answer;
       if (correct) this.correct += 1;
+      this.sessionAnswers.push({ question: q, choice, correct });
       this.state = appendEvidence(this.state, {
         question_id: q.id, assessed_skill: q.assessed_skill, correct, independent: true,
         question_kind: q.question_kind,
@@ -242,7 +258,7 @@
       this.feedback.appendChild(textEl("p", q.explanation || "Chưa có giải thích trong ngân hàng."));
       this.feedback.appendChild(textEl("p", "Chỉ ghi nhận: " + label(q.assessed_skill) + ". Các tag hỗ trợ không nhận điểm.",
         "skill-pilot-secondary"));
-      const next = button(this.index + 1 < this.questions.length ? "Câu tiếp theo" : "Xem tổng kết", "skill-pilot-primary");
+      const next = button(this.index + 1 < this.session.length ? "Câu tiếp theo" : "Xem tổng kết", "skill-pilot-primary");
       next.addEventListener("click", () => { this.index += 1; this.renderQuestion(); });
       this.actions.appendChild(next);
       typeset(this.feedback);
