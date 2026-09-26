@@ -10,6 +10,9 @@ on:
       - 'docs/huong-dan/thu-nghiem-danh-gia-ky-nang.md'
       - 'scripts/test-skill-assessment-pilot.js'
       - 'scripts/test-skill-assessment-pilot-browser.py'
+      - 'docs/assets/javascripts/skill-assessment-pilot-v2.js'
+      - 'docs/assets/stylesheets/skill-assessment-pilot-v2.css'
+      - 'docs/huong-dan/thu-nghiem-danh-gia-ky-nang-v2.md'
       - 'mkdocs.yml'
       - '.github/workflows/skill-assessment-pilot-qa.yml'
   push:
@@ -29,7 +32,7 @@ jobs:
         with:
           node-version: '22'
       - name: Validate pilot JavaScript syntax
-        run: node --check docs/assets/javascripts/skill-assessment-pilot-v1.js
+        run: node --check docs/assets/javascripts/skill-assessment-pilot-v2.js
       - name: Run source-locked pilot regression tests
         run: node scripts/test-skill-assessment-pilot.js
       - uses: actions/setup-python@v5
