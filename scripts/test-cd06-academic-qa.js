@@ -162,6 +162,14 @@ for(const q of questions){
  }
 }
 assert.deepEqual(checked,{factorization:92,identity:8,equations:12,divisibility:4,numerical:4});
+assert.equal(equivalent_but_not_factorized.length,20,"number of equivalent yet incomplete distractors drifted");
+assert.equal(equivalent_but_not_factorized.filter(x=>x.kind==="unfactored_expression").length,13);
+assert.equal(equivalent_but_not_factorized.filter(x=>x.kind==="partial_factorization").length,7);
+for(const row of equivalent_but_not_factorized){
+ const q=byId.get(row.id);
+ assert.ok(q.explanation.includes(row.kind==="unfactored_expression"?"tích":"phân tích"),row.id+" does not explain task requirement");
+}
+
 for(const id of ["FAC06V1_004","FAC06V1_007","FAC06V1_011","FAC06V1_012"])assert.ok(greatest[id]);
 assert.equal(overlay.items.filter(x=>x.review_state!=="pattern_candidate_only").length,24);
 assert.equal(overlay.items.filter(x=>x.proposed_assessed_skill===null).length,24);
