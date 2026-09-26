@@ -239,7 +239,7 @@
 
   const init=async()=>{
     if (document.querySelector("[data-exam-engine]"))return;
-    const content=document.querySelector(".md-content__inner .md-typeset");
+    const content=document.querySelector(".md-content__inner.md-typeset, .md-content__inner .md-typeset") || document.querySelector(".md-content__inner");
     if (!content)return;
     const first=[...content.querySelectorAll("h2,h3")].find(el=>
       /^Đề bài$/.test(el.textContent.trim()) || /^Bài I\b/.test(el.textContent.trim()));
