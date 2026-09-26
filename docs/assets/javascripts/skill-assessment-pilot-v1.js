@@ -52,6 +52,25 @@
     }
     return result;
   };
+  // Distinct-question evidence prevents same-item retries from looking like new coverage.
+  // For histories longer than MAX_EVENTS, this summarizes the retained window only.
+  const firstAttemptSummary = (state) => {
+    const result = {};
+    const seen = new Set();
+    for (const event of normalizedState(state).events) {
+      const row = result[event.assessed_skill] || { distinct: 0, first_correct: 0, total_attempts: 0 };
+      row.total_attempts += 1;
+      const key = event.assessed_skill + "\\u0000" + event.question_id;
+      if (!seen.has(key)) {
+        seen.add(key);
+        row.distinct += 1;
+        if (event.correct) row.first_correct += 1;
+      }
+      result[event.assessed_skill] = row;
+    }
+    return result;
+  };
+
   const shuffle = (items, random = Math.random) => {
     const out = [...items];
     for (let i = out.length - 1; i > 0; i -= 1) {
@@ -98,7 +117,7 @@
     if (new Set(result.map((q) => q.id)).size !== result.length) throw new Error("ID trùng trong bộ thử nghiệm");
     return result;
   };
-  const logic = Object.freeze({ KEY, emptyState, normalizedState, appendEvidence, skillSummary, prepareItems, shuffle, isValidQuestion });
+  const logic = Object.freeze({ KEY, emptyState, normalizedState, appendEvidence, skillSummary, firstAttemptSummary, prepareItems, shuffle, isValidQuestion });
   if (typeof module !== "undefined" && module.exports) module.exports = logic;
   if (typeof window === "undefined" || typeof document === "undefined") return;
   window.RoadmapSkillAssessmentPilot = logic;
