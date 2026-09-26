@@ -162,7 +162,50 @@
         {label:"Kiến thức nền đã xác nhận", ids:[...new Set(edges.filter(e => e.type === "PREREQUISITE" && e.confidence === "high" && ids.includes(e.to) && nodes[e.from]?.topic !== match[1]).map(e => e.from))], explanation:"Chỉ áp dụng cho kỹ năng đích cụ thể, không bắt buộc hoàn thành cả chuyên đề nguồn."},
         {label:"Hướng học tiếp", ids:[...new Set(edges.filter(e => e.type === "PREREQUISITE" && e.confidence === "high" && ids.includes(e.from) && nodes[e.to]?.topic !== match[1]).map(e => e.to))], explanation:"Gợi ý kỹ năng sử dụng kiến thức hiện tại; có thể học theo nhiều nhánh."}
       ];
-      const labelFor = id => id.replace(/-/g, " ");
+      const skillLabels = {
+        "nhan-tu-chung": "Đặt nhân tử chung",
+        "hieu-hai-binh-phuong": "Hằng đẳng thức hiệu hai bình phương",
+        "phan-tich-tu-mau": "Phân tích tử và mẫu thành nhân tử",
+        "rut-gon-phan-thuc": "Rút gọn phân thức",
+        "quy-dong-mau-thuc": "Quy đồng mẫu thức",
+        "dkxd-phuong-trinh-mau": "Điều kiện xác định của phương trình chứa ẩn ở mẫu",
+        "khu-mau-phuong-trinh": "Khử mẫu trong phương trình",
+        "doi-chieu-nghiem": "Đối chiếu nghiệm với điều kiện xác định",
+        "pt-bac-nhat": "Giải phương trình bậc nhất",
+        "bien-doi-pt-nhieu-buoc": "Biến đổi phương trình nhiều bước",
+        "nghiem-pt-hai-an": "Nghiệm của phương trình hai ẩn",
+        "giai-he-the": "Giải hệ bằng phương pháp thế",
+        "giai-he-cong": "Giải hệ bằng phương pháp cộng đại số",
+        "lap-he-bai-toan": "Lập hệ phương trình từ bài toán",
+        "khai-niem-ham-so": "Khái niệm hàm số",
+        "ve-do-thi-ham-bac-nhat": "Vẽ đồ thị hàm số bậc nhất",
+        "ham-y-ax2": "Hàm số y = ax²",
+        "can-bac-hai-so-hoc": "Căn bậc hai số học",
+        "dkxd-can": "Điều kiện xác định của căn thức",
+        "tinh-delta": "Tính biệt thức Δ",
+        "cong-thuc-nghiem": "Công thức nghiệm phương trình bậc hai",
+        "tong-tich-nghiem": "Hệ thức Viète về tổng và tích nghiệm",
+        "thales-thuan": "Định lý Thalès thuận",
+        "dong-dang-gg": "Đồng dạng theo trường hợp góc–góc",
+        "tinh-do-dai-dong-dang": "Tính độ dài nhờ tam giác đồng dạng",
+        "pythagore": "Định lý Pythagore",
+        "sin": "Tỉ số lượng giác sin",
+        "cos": "Tỉ số lượng giác cos",
+        "tan": "Tỉ số lượng giác tan",
+        "tim-canh-luong-giac": "Tìm cạnh bằng tỉ số lượng giác",
+        "goc-noi-tiep": "Góc nội tiếp",
+        "tu-giac-noi-tiep": "Tứ giác nội tiếp",
+        "xac-suat-thuc-nghiem": "Xác suất thực nghiệm",
+        "bien-co": "Biến cố",
+        "xac-suat-co-dien": "Xác suất cổ điển",
+        "ti-le-thuc": "Tỉ lệ thức",
+        "hang-tu-dong-dang": "Hằng đẳng thức đáng nhớ",
+        "thu-gon-da-thuc": "Thu gọn đa thức",
+        "bo-ngoac-dau": "Quy tắc bỏ dấu ngoặc",
+        "cong-tru-da-thuc": "Cộng, trừ đa thức",
+        "cong-tru-phan-thuc": "Cộng, trừ phân thức"
+};
+      const labelFor = id => skillLabels[id] || id.replace(/-/g, " ");
       const topicHref = id => new URL("../" + nodes[id].topic + "/", location.origin + root).href;
       const visibleGroups = groups.filter(group => group.ids.length);
       visibleGroups.forEach(group => {
