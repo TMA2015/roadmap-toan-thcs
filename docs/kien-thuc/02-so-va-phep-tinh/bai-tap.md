@@ -166,6 +166,14 @@ Tìm số tự nhiên nhỏ nhất có đúng ba thừa số nguyên tố khác 
     
     ---
 
+### Ranh giới Core / Entrance10 / Challenge
+
+- **KNTT Core lớp 6:** bắt đầu từ 5 chặng lớp 6, 15 câu micro và bài tự luận Core ở phần B. Readiness riêng không lấy câu ngoài phạm vi lớp 6.
+- **Entrance10 / Extension:** bài tổng hợp xuyên lớp chỉ luyện khi đã đủ nền; ngân hàng cũ chưa có phân loại theo lớp đáng tin cậy, nên không tính lượt luyện đó vào Core Readiness.
+- **Challenge:** tự chọn sau khi nắm chắc Core, không phải điều kiện học tiếp và hiện chưa có bộ tuyển chọn Challenge riêng được kiểm định cho CĐ02.
+
+---
+
 # Theo dõi tiến độ
 
 - [ ] Mức 1: tôi thực hiện đúng phép tính và quy tắc cơ bản.
