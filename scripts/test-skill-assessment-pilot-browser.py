@@ -21,8 +21,10 @@ with sync_playwright() as playwright:
     page.goto(BASE + "/", wait_until="domcontentloaded")
     sentinel = '{"questions":{"LEGACY_Q":{"attempted":7,"correct":5}},"tags":{"legacy":{"attempted":7,"correct":5}}}'
     page.evaluate("(value) => localStorage.setItem('toan-thcs-practice-v1', value)", sentinel)
-    page.goto(BASE + "/huong-dan/thu-nghiem-danh-gia-ky-nang/", wait_until="domcontentloaded")
+    page.goto(BASE + "/huong-dan/thu-nghiem-danh-gia-ky-nang-v2/", wait_until="domcontentloaded")
     page.locator(".skill-pilot-question").wait_for(timeout=30000)
+    assert page.locator("[data-skill-pilot-version='learner-review-v2-20260926']").count() == 1
+    assert "Beta v2" in page.locator(".skill-pilot-intro").inner_text()
     assert page.locator(".skill-pilot-option").count() == 4
     assert len(questions) == 14
 
