@@ -31,3 +31,12 @@ Nếu học sinh liên tục sai `khu-mau-phuong-trinh`, hệ thống có thể 
 V1 cố ý nhỏ: tập trung vào các chuỗi dependency có giá trị remediation cao ở Đại số, Hàm số, Hình học, Lượng giác và Xác suất. Quan hệ chưa chắc chắn nằm trong `review_queue`, không được dùng để điều khiển học tập.
 
 Dữ liệu máy đọc: `assets/data/curriculum/knowledge-graph-v1.json`.
+
+## Quy tắc đối chiếu Blueprint v1.3
+
+- Bảng `Trước/Sau` của Blueprint là **điều hướng chuyên đề**, không được tự động chuyển thành cạnh prerequisite trong JSON.
+- Chỉ kích hoạt cạnh `skill A → skill B` khi có mô tả rõ B sử dụng thao tác hoặc định lý của A, phạm vi lớp/tầng tương thích và ví dụ kiểm chứng.
+- Phân biệt `prerequisite`, `related` và `next`; các quan hệ chưa xác thực giữ trong `review_queue`.
+- Không khóa bài học vì chưa đạt mastery; dùng lỗi theo tag để đề nghị học lại kỹ năng nguồn cụ thể.
+- Mạch mô hình hóa, đo lường và ôn thi là các **điểm hội tụ theo từng bài**, không có prerequisite tổng quát “hoàn thành toàn bộ 02–23”.
+- Khi mở rộng THPT/SAT/ACT, thêm namespace/metadata kỹ năng và cạnh được kiểm định; không dùng nhãn chương trình mới làm điều kiện cho Core THCS.
