@@ -1,5 +1,9 @@
 # Gói phản biện độc lập cho Gemini — Skill Taxonomy v1
 
+> **Cập nhật 26/09/2026:** KNTT là bộ SGK thống nhất toàn quốc từ năm học 2026–2027 theo Quyết định 3588/QĐ-BGDĐT; Quyết định 185/QĐ-BGDĐT bổ sung danh mục. Toán THCS: KNTT 6–9 là mapping SGK, Chương trình GDPT môn Toán là chuẩn yêu cầu cần đạt. Không dựng các mapping Core theo ba bộ SGK song song. Văn bản: https://xaydungchinhsach.chinhphu.vn/quyet-dinh-so-3588-qd-bgddt-ve-bo-sach-giao-khoa-giao-duc-pho-thong-su-dung-thong-nhat-toan-quoc-119251227145448874.htm
+>
+> **Quy tắc Gemini:** đọc nội dung tệp .md/.json được tải lên trực tiếp; URL là tham chiếu tùy chọn, không giả định truy cập được. Ba catalogue có ID/nhãn/số câu/ID ví dụ: docs/roadmap/gemini-catalogue-04-11.md, gemini-catalogue-12-18.md, gemini-catalogue-19-25.md. Nếu không có toàn văn câu hỏi hay chương trình, đánh dấu thiếu chứng cứ, không kết luận chắc chắn.
+
 Trạng thái: **REQUEST_FOR_REVIEW** (chưa được Gemini kiểm định; tuyệt đối không coi các gợi ý dưới đây là kết luận đã chốt).
 
 ## Tài liệu đầu vào (phải đọc đủ cả 4)
