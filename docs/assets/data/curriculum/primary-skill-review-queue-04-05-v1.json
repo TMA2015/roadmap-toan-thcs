@@ -1,0 +1,179 @@
+{
+  "schema": "primary-skill-review-queue-v1",
+  "status": "source_question_excerpts_for_independent_review",
+  "topics": [
+    "04-bieu-thuc-dai-so",
+    "05-7-hang-dang-thuc"
+  ],
+  "limits": "Question and answer as currently authored, not externally verified. This queue only covers flagged entries; other candidates still lack full mathematical QA.",
+  "count": 7,
+  "items": [
+    {
+      "topic": "04-bieu-thuc-dai-so",
+      "question_id": "ALG04V2_009",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-da-thuc"
+      ],
+      "proposed_assessed_skill": "nhan-biet-da-thuc",
+      "flags": [
+        "broad_label_free_term"
+      ],
+      "question": "Hạng tử tự do của \\(5x^2-4x+11\\) là gì?",
+      "options": [
+        "11",
+        "5",
+        "-4",
+        "0"
+      ],
+      "answer_index": 0,
+      "correct_option": "11",
+      "explanation": "Hạng tử tự do là hạng tử không chứa biến, ở đây là \\(11\\).",
+      "review_status": "requires_human_academic_decision"
+    },
+    {
+      "topic": "04-bieu-thuc-dai-so",
+      "question_id": "ALG04V2_010",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "original_skill_tags": [
+        "nhan-biet-don-thuc",
+        "he-so-bac"
+      ],
+      "proposed_assessed_skill": "nhan-biet-don-thuc",
+      "flags": [
+        "tag_he_so_bac_not_actual_target"
+      ],
+      "question": "Phần biến của đơn thức \\(-8a^2b^5\\) là gì?",
+      "options": [
+        "\\(a^2b^5\\)",
+        "\\(-8\\)",
+        "\\(-8a^2\\)",
+        "\\(a^7b\\)"
+      ],
+      "answer_index": 0,
+      "correct_option": "\\(a^2b^5\\)",
+      "explanation": "Phần biến là \\(a^2b^5\\); \\(-8\\) là hệ số.",
+      "review_status": "requires_human_academic_decision"
+    },
+    {
+      "topic": "05-7-hang-dang-thuc",
+      "question_id": "ID05V1_116",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "original_skill_tags": [
+        "chung-minh-hdt"
+      ],
+      "proposed_assessed_skill": null,
+      "flags": [
+        "recognition_or_method_question_not_a_full_proof",
+        "no_production_primary_selected"
+      ],
+      "question": "Đẳng thức nào đúng với mọi \\(a,b\\)?",
+      "options": [
+        "\\((a+b)^2+(a-b)^2=2(a^2+b^2)\\)",
+        "\\((a+b)^2+(a-b)^2=2(a^2-b^2)\\)",
+        "\\((a+b)^2+(a-b)^2=a^2+b^2\\)",
+        "\\((a+b)^2+(a-b)^2=4ab\\)"
+      ],
+      "answer_index": 0,
+      "correct_option": "\\((a+b)^2+(a-b)^2=2(a^2+b^2)\\)",
+      "explanation": "Chọn phép biến đổi dựa trên đúng cấu trúc hằng đẳng thức; không thể chứng minh hằng đẳng thức chỉ bằng một giá trị thử.",
+      "review_status": "requires_human_academic_decision"
+    },
+    {
+      "topic": "05-7-hang-dang-thuc",
+      "question_id": "ID05V1_117",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "original_skill_tags": [
+        "chung-minh-hdt"
+      ],
+      "proposed_assessed_skill": null,
+      "flags": [
+        "recognition_or_method_question_not_a_full_proof",
+        "no_production_primary_selected"
+      ],
+      "question": "Đẳng thức nào đúng với mọi \\(x,y\\)?",
+      "options": [
+        "\\((x+y)^2-(x-y)^2=4xy\\)",
+        "\\((x+y)^2-(x-y)^2=2xy\\)",
+        "\\((x+y)^2-(x-y)^2=2x^2+2y^2\\)",
+        "\\((x+y)^2-(x-y)^2=x^2-y^2\\)"
+      ],
+      "answer_index": 0,
+      "correct_option": "\\((x+y)^2-(x-y)^2=4xy\\)",
+      "explanation": "Chọn phép biến đổi dựa trên đúng cấu trúc hằng đẳng thức; không thể chứng minh hằng đẳng thức chỉ bằng một giá trị thử.",
+      "review_status": "requires_human_academic_decision"
+    },
+    {
+      "topic": "05-7-hang-dang-thuc",
+      "question_id": "ID05V1_118",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "original_skill_tags": [
+        "chung-minh-hdt"
+      ],
+      "proposed_assessed_skill": null,
+      "flags": [
+        "recognition_or_method_question_not_a_full_proof",
+        "no_production_primary_selected"
+      ],
+      "question": "Đẳng thức nào đúng với mọi \\(x,y\\)?",
+      "options": [
+        "\\((x+y)^3+(x-y)^3=2x(x^2+3y^2)\\)",
+        "\\((x+y)^3+(x-y)^3=2x(x^2+y^2)\\)",
+        "\\((x+y)^3+(x-y)^3=2x^3+2y^3\\)",
+        "\\((x+y)^3+(x-y)^3=2y(3x^2+y^2)\\)"
+      ],
+      "answer_index": 0,
+      "correct_option": "\\((x+y)^3+(x-y)^3=2x(x^2+3y^2)\\)",
+      "explanation": "Chọn phép biến đổi dựa trên đúng cấu trúc hằng đẳng thức; không thể chứng minh hằng đẳng thức chỉ bằng một giá trị thử.",
+      "review_status": "requires_human_academic_decision"
+    },
+    {
+      "topic": "05-7-hang-dang-thuc",
+      "question_id": "ID05V1_119",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "original_skill_tags": [
+        "chung-minh-hdt"
+      ],
+      "proposed_assessed_skill": null,
+      "flags": [
+        "recognition_or_method_question_not_a_full_proof",
+        "no_production_primary_selected"
+      ],
+      "question": "Để chứng minh \\((a+b)^2-(a-b)^2=4ab\\), bước phù hợp nhất là:",
+      "options": [
+        "Khai triển hai bình phương rồi thu gọn",
+        "Chia cả hai vế cho \\(a-b\\)",
+        "Cho \\(a=b=1\\) rồi kết luận",
+        "Lấy căn hai vế"
+      ],
+      "answer_index": 0,
+      "correct_option": "Khai triển hai bình phương rồi thu gọn",
+      "explanation": "Chọn phép biến đổi dựa trên đúng cấu trúc hằng đẳng thức; không thể chứng minh hằng đẳng thức chỉ bằng một giá trị thử.",
+      "review_status": "requires_human_academic_decision"
+    },
+    {
+      "topic": "05-7-hang-dang-thuc",
+      "question_id": "ID05V1_120",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "original_skill_tags": [
+        "phan-tich-hdt",
+        "hieu-hai-binh-phuong"
+      ],
+      "proposed_assessed_skill": "hieu-hai-binh-phuong",
+      "flags": [
+        "factorization_first_step_not_full_factorization"
+      ],
+      "question": "Biểu thức \\(x^4-16\\) có thể bắt đầu phân tích bằng:",
+      "options": [
+        "Hiệu hai bình phương: \\((x^2-4)(x^2+4)\\)",
+        "Tổng hai bình phương",
+        "Bình phương của một tổng",
+        "Lập phương của một hiệu"
+      ],
+      "answer_index": 0,
+      "correct_option": "Hiệu hai bình phương: \\((x^2-4)(x^2+4)\\)",
+      "explanation": "Chọn phép biến đổi dựa trên đúng cấu trúc hằng đẳng thức; không thể chứng minh hằng đẳng thức chỉ bằng một giá trị thử.",
+      "review_status": "requires_human_academic_decision"
+    }
+  ]
+}
