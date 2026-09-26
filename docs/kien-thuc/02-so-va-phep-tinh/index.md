@@ -15,6 +15,8 @@
 
 ---
 
+<span id="core-journey"></span>
+
 ## 🧭 1. Bản đồ kiến thức
 
 ### Infographic 1 – Tổng quan chuyên đề
