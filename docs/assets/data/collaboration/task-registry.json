@@ -1,7 +1,7 @@
 {
   "version": 1,
   "schema": "roadmap-collaboration-task-registry-v1",
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "statuses": [
     "OPEN",
     "GEMINI-DRAFT",
@@ -461,6 +461,50 @@
       "review_notes": "Five grade6–8 KNTT Core cards, fifteen micro (Base/Trap/Apply), independently reviewed and normalized. Revised near-duplicate/ambiguous items, removed expected-score item 015 beyond narrowly scored Core; retained existing 120 practice and separate Readiness pending.",
       "review_verdict": "ACCEPT_WITH_EDITORIAL_AND_SCHEMA_FIXES",
       "integrated_artifact": "docs/assets/data/curriculum/topic23-learning-workspace.json"
+    },
+    {
+      "id": "PROB23-READY-001",
+      "title": "CĐ23 source-locked 12-item Core Readiness",
+      "routing": "CHATGPT_INTEGRATE_AND_QA",
+      "status": "DONE",
+      "review_verdict": "CI_PASS",
+      "integrated_artifact": "docs/assets/data/assessment/23-xac-suat-core-v1.json",
+      "review_notes": "12 after-submit-only items over 5 assessed skills; soft readiness threshold and no Tutor/hints; existing 120-item practice bank unchanged. Owner-device acceptance not yet recorded."
+    },
+    {
+      "id": "AI-TUTOR-LIVE-001",
+      "title": "Firebase App Check Gemini Tutor live transport",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "LIVE_VERIFIED",
+      "integrated_artifact": "docs/assets/javascripts/firebase-gemini-v1.js",
+      "review_notes": "PRs #105–106: enforced reCAPTCHA Enterprise App Check and a verified live Gemini response; user-initiated only. Source content and learner evidence remain independent of AI output."
+    },
+    {
+      "id": "AI-TUTOR-READING-001",
+      "title": "Contextual floating Tutor on lessons and Topic25 deep-reading pages",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "CI_AND_BROWSER_PASS",
+      "integrated_artifact": "docs/assets/javascripts/floating-ai-tutor-v1.js",
+      "review_notes": "PRs #107, #109 and #113; selected passage/active heading, approved cheerful avatar and safe rich math. Explicitly excludes practice, self-check, timed mocks and answer keys; no AI request during CI."
+    },
+    {
+      "id": "TOPIC25-EXPANSION-001",
+      "title": "Topic25 anchor library and three complete original written exams",
+      "routing": "CHATGPT_LEAD+INDEPENDENT_MATH_REVIEW",
+      "status": "DONE",
+      "review_verdict": "CI_AND_BROWSER_PASS_INDEPENDENT_MATH_PENDING",
+      "integrated_artifact": "docs/assets/data/exams/topic25-exams-v1.json",
+      "review_notes": "PRs #104, #109–112: 10 curated of 11 anchors, deep geometry explanations, 3×120-minute 10-point exams, separate answer keys, self-marked step rubrics and remediation. Implementation delivered; independent math review remains separate OPEN task."
+    },
+    {
+      "id": "TOPIC25-INDEPENDENT-MATH-REVIEW-001",
+      "title": "Independent review of Topic25 geometry proofs and exam keys",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "OPEN",
+      "packet": "review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26.txt",
+      "review_notes": "Review actual frozen sources/diagrams, validate mathematical claims and all three mock keys. Do not mark PASS until the external review result has been received and verified; do not treat CI link checks as mathematical proof."
     }
   ]
 }
