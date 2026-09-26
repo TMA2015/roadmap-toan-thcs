@@ -127,10 +127,74 @@
     const first = host.querySelector(".topic-workspace-hero, h1");
     host.insertBefore(block, first);
   };
+
+  const setupSkillConnections = async () => {
+    const match = location.pathname.match(/\/kien-thuc\/(\d{2}-[^/]+)\/(?:index\.html)?$/);
+    if (!match) return;
+    const host = document.querySelector(".md-content__inner");
+    if (!host || host.querySelector("[data-skill-connections]")) return;
+    const root = location.pathname.slice(0, location.pathname.indexOf(match[1]) + match[1].length + 1);
+    const panel = document.createElement("section");
+    panel.className = "skill-connections";
+    panel.dataset.skillConnections = "1";
+    panel.setAttribute("aria-label", "Các mối nối kiến thức");
+    const title = document.createElement("h2");
+    title.textContent = "🧭 Mối nối kiến thức";
+    const note = document.createElement("p");
+    note.textContent = "Các kỹ năng liên quan giúp em chọn đường học và ôn bù. Đây không phải điều kiện khóa bài học.";
+    panel.append(title, note);
+    const anchor = host.querySelector(".lesson-switcher");
+    if (anchor) anchor.after(panel);
+    else host.prepend(panel);
+    try {
+      const response = await fetch(root + "../../assets/data/curriculum/knowledge-graph-v1.json");
+      if (!response.ok) throw new Error("Graph unavailable");
+      const graph = await response.json();
+      if (!panel.isConnected || !location.pathname.includes("/" + match[1] + "/")) return;
+      const nodes = graph.nodes || {};
+      const ids = Object.keys(nodes).filter(id => nodes[id].topic === match[1]);
+      if (!ids.length) { panel.remove(); return; }
+      const edges = graph.edges || [];
+      const groups = [
+        {label:"Kỹ năng trong chuyên đề", ids, explanation:"Các kỹ năng hiện có trong bản đồ; không phải danh sách đầy đủ mọi bài học."},
+        {label:"Kiến thức nền đã xác nhận", ids:[...new Set(edges.filter(e => e.type === "PREREQUISITE" && e.confidence === "high" && ids.includes(e.to) && nodes[e.from]?.topic !== match[1]).map(e => e.from))], explanation:"Chỉ áp dụng cho kỹ năng đích cụ thể, không bắt buộc hoàn thành cả chuyên đề nguồn."},
+        {label:"Hướng học tiếp", ids:[...new Set(edges.filter(e => e.type === "PREREQUISITE" && e.confidence === "high" && ids.includes(e.from) && nodes[e.to]?.topic !== match[1]).map(e => e.to))], explanation:"Gợi ý kỹ năng sử dụng kiến thức hiện tại; có thể học theo nhiều nhánh."}
+      ];
+      const labelFor = id => id.replace(/-/g, " ");
+      const topicHref = id => root + "../" + nodes[id].topic + "/";
+      groups.filter(group => group.ids.length).forEach(group => {
+        const section = document.createElement("div");
+        section.className = "skill-connections-group";
+        const heading = document.createElement("h3");
+        heading.textContent = group.label;
+        const description = document.createElement("p");
+        description.textContent = group.explanation;
+        const list = document.createElement("ul");
+        group.ids.forEach(id => {
+          const item = document.createElement("li");
+          if (nodes[id].topic === match[1]) item.textContent = labelFor(id);
+          else {
+            const link = document.createElement("a");
+            link.href = topicHref(id);
+            link.textContent = labelFor(id);
+            link.title = "Mở chuyên đề " + nodes[id].topic.slice(0,2);
+            item.appendChild(link);
+          }
+          list.appendChild(item);
+        });
+        section.append(heading, description, list);
+        panel.appendChild(section);
+      });
+    } catch (_) {
+      panel.remove(); // A missing graph must never block reading the lesson.
+    }
+  };
+
   const init = () => {
     if (!location.pathname.includes("/kien-thuc/") || !location.pathname.match(/\/[0-9][0-9]-[^/]+\//)) document.body.classList.remove("roadmap-focus-mode");
     setupLibrary();
     setupLesson();
+    setupSkillConnections();
   };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
