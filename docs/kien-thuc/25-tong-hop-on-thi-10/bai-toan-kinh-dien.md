@@ -353,7 +353,7 @@ Phần tóm tắt ở trên giúp nhận diện nhanh. Khi mới học dạng to
 - [A25-010 – Năng suất và phần việc chung](anchor-25-010.md)
 - [A25-011 – Parabol và đường thẳng (bài mở rộng thứ 11)](anchor-25-011.md)
 
-Các bài chưa có trang giải sâu vẫn được ghi rõ là nội dung tóm tắt. Ba trang mới A25-006, A25-007, A25-010 được biên soạn sau phản biện Gemini R2 và cần được kiểm tra theo phiên bản mới; không tự động coi là đã được Gemini phê duyệt. Bộ 10 tiêu biểu vẫn giữ đủ mười ID.
+Các bài chưa có trang giải sâu vẫn được ghi rõ là nội dung tóm tắt. Ba trang A25-006, A25-007, A25-010 được biên soạn sau phản biện Gemini R2 và đã được kiểm định riêng trong đợt Targeted R3 theo đúng phiên bản nguồn. Kết quả R3 không được tính ngược là phê duyệt của đợt R2. Bộ 10 bài tiêu biểu vẫn giữ đủ mười ID.
 
 ## Liên kết tới đề thực hành
 
