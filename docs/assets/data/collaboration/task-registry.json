@@ -512,9 +512,9 @@
       "id": "G6-T02-GOLDEN-001",
       "title": "Topic02 source-scoped grade6 Golden pilot: five learning cards, micro-practice and independent readiness",
       "routing": "CHATGPT_LEAD+ACADEMIC_QA",
-      "status": "READY",
-      "review_verdict": "PENDING_CI_AND_OWNER_DEVICE_QA",
-      "review_notes": "5 learning cards map KNTT grade6 B1–17, B23–31; 15 micro checks + 10 grade6 readiness, written practice with collapsed answers and preserved legacy self-check. 120 legacy bank kept untouched and ungraded by class; does not count grade7 real-number/cube/square-root content as grade6 Core. Mark DONE only after CI/deploy; owner-device QA separate."
+      "status": "DONE",
+      "review_verdict": "CI_AND_BROWSER_PASS_DEPLOYED_OWNER_DEVICE_QA_PENDING",
+      "review_notes": "PR #120 merged into main 09ff58e41eb5bc05cf66ef20b8d4add508a74a2b. CI run 36232747305 PASS; Deploy MkDocs run 36232843852 PASS. Five grade6 cards, 15 micro, 10 independent Readiness, written answer guard. Legacy 120-bank IDs retained and explicitly marked cross-grade; grade7 content NOT included in grade6 Readiness. Implementation DONE; owner real-device UX acceptance not yet recorded."
     },
     {
       "id": "G6-T03-SCOPE-001",
@@ -522,6 +522,13 @@
       "routing": "CHATGPT_LEAD+GEMINI_ACADEMIC_REVIEW",
       "status": "OPEN",
       "review_notes": "Grade6 KNTT B31 maps tỉ số, tỉ số phần trăm and basic percent; Grade7 B20–23 maps tỉ lệ thức, dãy tỉ số, đại lượng tỉ lệ thuận/nghịch. Existing 120-question bank has no reliable per-item grade metadata. Need grade-scoped learner path and independent readiness; do not misrepresent full bank as grade6 Core."
+    },
+    {
+      "id": "G6-T02-OWNER-UX-001",
+      "title": "Owner real-device confirmation of grade-six Topic02 learning and Readiness",
+      "routing": "OWNER_DEVICE_QA",
+      "status": "OPEN",
+      "review_notes": "Check class6 chapter link → five learning cards → micro hints and after-submit readiness → next-topic link on PC/iPad/mobile. CI/browser passes but this task remains pending user acceptance. No impact on learner evidence."
     }
   ]
 }
