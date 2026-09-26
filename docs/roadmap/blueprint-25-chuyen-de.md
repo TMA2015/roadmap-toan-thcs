@@ -1,6 +1,6 @@
 # Blueprint 25 chuyên đề – Roadmap Toán THCS
 
-> **Phiên bản 1.2 – Hoàn tất kiểm định học thuật và tổng kiểm cấu trúc 25 chuyên đề**
+> **Phiên bản 1.3 – Bổ sung phân biệt quan hệ chuyên đề và tiên quyết ở cấp kỹ năng**
 >
 > Tài liệu này là bản thiết kế thống nhất cho 25 chuyên đề. Mục tiêu là bảo đảm học sinh có thể đi theo một mạch: **tổng quan → kiến thức cốt lõi → hiểu sâu → dạng bài → luyện tập → tự kiểm tra → liên hệ chuyên đề → ôn thi vào 10**.
 
@@ -53,6 +53,31 @@ Mỗi chuyên đề phải tuân thủ cấu trúc chuẩn đã quy định tron
 | 23 | **Xác suất** | `23-xac-suat` | 6–9 | Xác suất | 02, 21 | 24, 25 | ⭐⭐⭐⭐ | Đã kiểm định; cấu trúc chuẩn 11 mục |
 | 24 | **Bài toán thực tế và mô hình hóa** | `24-bai-toan-thuc-te` | 6–9 | Liên môn/tổng hợp | 02–23 | 25 | ⭐⭐⭐⭐⭐ | Đã kiểm định; cấu trúc chuẩn 11 mục |
 | 25 | **Bản đồ tổng hợp & chiến lược ôn thi vào 10** | `25-tong-hop-on-thi-10` | 9 | Tổng hợp/Thi vào 10 | 01–24 | — | ⭐⭐⭐⭐⭐ | Đã kiểm định; cấu trúc chuẩn 11 mục |
+
+## 2.1. Cách đọc cột Trước/Sau (quan trọng)
+
+Cột **Trước/Sau** trong bảng là **liên hệ định hướng ở cấp chuyên đề**, không phải danh sách điều kiện bắt buộc để mở khóa toàn bộ chuyên đề. Không suy diễn rằng phải hoàn thành mọi chuyên đề được liệt kê trước khi học bất kỳ bài nào của chuyên đề hiện tại.
+
+- **Prerequisite (cứng về mặt học thuật):** chỉ xác lập ở cấp *skill/bài học* khi kỹ năng đích không thể thực hiện đúng nếu thiếu kỹ năng nguồn. Học sinh vẫn được mở bài và được đề nghị ôn bù, không bị khóa.
+- **Related (liên hệ):** kiến thức bổ trợ hoặc cùng mạch, không phải điều kiện bắt buộc.
+- **Next (hướng học tiếp):** gợi ý đường phát triển, không mặc định là điều kiện tiên quyết theo chiều ngược.
+- **Core / Extension / Entrance10 / THPT:** không lấy Challenge/Extension làm điều kiện để học Core. Các cầu nối THPT và SAT/ACT về sau phải dùng ID kỹ năng và lớp nội dung riêng, không đổi URL 25 chuyên đề.
+
+**Các mục dễ bị hiểu sai trong bản bảng cũ:**
+
+| Chuyên đề | Cách hiểu đúng |
+|---|---|
+| 01 – Bản đồ | Trang định hướng, không phải tiên quyết học thuật của 02, 13 hay 21. |
+| 04 – Biểu thức | Kiến thức tỉ lệ ở 03 là liên hệ hữu ích, không bắt buộc cho mọi bài đại số ở 04. |
+| 08 – Phương trình/BPT | Phương trình bậc nhất không cần học xong toàn bộ 06 và 07; riêng phương trình tích hoặc chứa ẩn ở mẫu mới có các prerequisite tương ứng. |
+| 10 – Hàm số | Quan hệ tỉ lệ và tọa độ mở đường cho phần cơ bản; không cần hoàn thành toàn bộ 09 trước khi học hàm số. |
+| 17 – Thales/đồng dạng | Không yêu cầu hoàn thành toàn bộ tứ giác 16 trước khi bắt đầu định lý Thales. |
+| 20 – Đo lường/hình khối | Các bài cơ bản lớp 6 có thể học độc lập; chỉ phần tổng hợp nâng cao mới cần các định lý 14–19 phù hợp. |
+| 23 – Xác suất | Các phép thử đơn giản không yêu cầu hoàn thành toàn bộ Thống kê 21. |
+| 24 – Mô hình hóa | Là mạch xuyên suốt 6–9: mỗi bài chỉ cần các kỹ năng toán cụ thể được sử dụng, không phải toàn bộ 02–23. |
+| 25 – Ôn thi | Là điểm tổng hợp và điều hướng ôn bù, không bắt học sinh đạt 100% ở 01–24 mới được luyện đề. |
+
+Dữ liệu điều khiển gợi ý ôn bù nằm ở `assets/data/curriculum/knowledge-graph-v1.json`, không lấy trực tiếp cột Trước/Sau làm quy tắc máy. Mọi cạnh mới phải được kiểm tra đúng phạm vi kỹ năng, lớp và tầng nội dung trước khi kích hoạt.
 
 ## 3. Cấu trúc trang của từng chuyên đề
 
