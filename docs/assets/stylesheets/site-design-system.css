@@ -481,3 +481,18 @@ body{letter-spacing:-.008em}
 .skill-connections-group small{display:block;font-size:.68rem;line-height:1.4;opacity:.8;margin-top:.18rem}
 .skill-connections-group li{max-width:100%;overflow-wrap:anywhere}
 @media(max-width:600px){.skill-connections{padding:.75rem}.skill-connections-group ul{display:grid;grid-template-columns:minmax(0,1fr)}.skill-connections-group li{font-size:.78rem}}
+
+/* Mobile learner-facing skill map: quiet, compact and readable. */
+.skill-connections{padding:.65rem .85rem}
+.skill-connections>summary{font-size:.79rem;line-height:1.35}
+.skill-connections>p{margin-top:.65rem}
+.skill-connections-group{margin-top:.7rem}
+.skill-connections-group li{padding:.32rem .52rem}
+@media(max-width:600px){
+ .skill-connections{margin:.75rem 0 1rem;padding:.5rem .65rem}
+ .skill-connections:not([open]){padding:.5rem .65rem}
+ .skill-connections>summary{font-size:.76rem;line-height:1.35}
+ .skill-connections>p,.skill-connections-group>p{font-size:.72rem}
+ .skill-connections-group h3{font-size:.8rem!important}
+ .skill-connections-group li{padding:.32rem .5rem;font-size:.76rem}
+}
