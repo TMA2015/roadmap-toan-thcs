@@ -23,3 +23,21 @@
 .skill-pilot-result{border-bottom:1px solid var(--pilot-line);padding:.45rem 0;margin:0!important;font-size:.85rem}
 @media(max-width:650px){.skill-assessment-pilot{padding:.7rem}.skill-pilot-actions .skill-pilot-primary{width:100%}}
 @media(prefers-reduced-motion:reduce){.skill-pilot-button{scroll-behavior:auto}}
+
+/* Learner-facing review after the pilot: the current session is distinct from all retained attempts. */
+.skill-pilot-summary-lead{padding:.7rem .85rem;margin:.5rem 0 1rem;border-left:.22rem solid var(--md-primary-fg-color);background:color-mix(in srgb,var(--md-primary-fg-color) 7%,transparent);line-height:1.55}
+.skill-pilot-review-title{font-size:.95rem;margin:1.1rem 0 .35rem!important}
+.skill-pilot-review-item{margin:.55rem 0;border:1px solid var(--pilot-line);border-radius:.48rem;padding:.6rem .8rem}
+.skill-pilot-review-item summary,.skill-pilot-history summary{font-weight:650;cursor:pointer;line-height:1.5}
+.skill-pilot-review-item summary:focus-visible,.skill-pilot-history summary:focus-visible{outline:2px solid var(--md-primary-fg-color);outline-offset:3px}
+.skill-pilot-review-item p{margin:.5rem 0;line-height:1.55;overflow-wrap:anywhere}
+.skill-pilot-review-question{font-weight:600}
+.skill-pilot-review-chosen{color:var(--md-default-fg-color)}
+.skill-pilot-review-answer{border-left:.18rem solid #2e7d32;padding-left:.6rem}
+.skill-pilot-review-explanation{font-size:.86rem}
+.skill-pilot-lesson-link{display:inline-block;margin:.35rem 0 .2rem;font-size:.83rem}
+.skill-pilot-history{margin:1.1rem 0;padding:.65rem .8rem;border:1px solid var(--pilot-line);border-radius:.48rem}
+.skill-pilot-history .skill-pilot-result{line-height:1.5}
+.skill-pilot-success{border-left:.22rem solid #2e7d32;padding:.7rem .8rem;background:color-mix(in srgb,#2e7d32 7%,transparent)}
+.skill-pilot-card>.skill-pilot-primary{margin:.55rem 0;display:block}
+@media(max-width:650px){.skill-pilot-card>.skill-pilot-primary{width:100%}.skill-pilot-review-item{padding:.55rem .65rem}}
