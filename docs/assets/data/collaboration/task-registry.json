@@ -536,7 +536,11 @@
       "title": "Confirm omitted R2 source files and review new Topic25 deep pages",
       "routing": "INDEPENDENT_REVIEW+CHATGPT_VERIFY",
       "status": "OPEN",
-      "review_notes": "Gemini response lists 17/23 files. Obtain targeted independent source-locked review of 6 unlisted sources and new deep pages A25-006/007/010 when Math project resumes. This follow-up is not a reported critical math error; do not block use of existing exam content or merge technically validated editorial additions solely due to missing file list."
+      "review_notes": "R3 targets exactly 9 files: newly authored A25-006/007/010 + six unlisted R2 sources (A25-011, anchor catalog, exams rubric JSON, three geometry SVG). Includes 8 related original/answer/deep-page sources as context. Verified 17/17 snapshot blob SHAs and no duplicate source; arithmetic/algebra sample checks pass for new pages. Gemini text acknowledgement of missing list is not source-by-source review. Keep OPEN until independent JSON names and checks all nine targets; no automatic sign-off of missing SVG/JSON.",
+      "packet": "review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26_TARGETED_R3.txt",
+      "source_commit": "5f74d7c377bc94f2688a9b5ee431d90c88af0536",
+      "packet_source_count": 17,
+      "review_verdict": "R3_SOURCE_LOCKED_AWAITING_INDEPENDENT_RESULT"
     },
     {
       "id": "TOPIC25-R2-EDITORIAL-DEEP-001",

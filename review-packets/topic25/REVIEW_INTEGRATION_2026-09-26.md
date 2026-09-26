@@ -28,3 +28,9 @@
 ## Phạm vi công việc tiếp theo
 
 Có thể chuyển dự án sang tiếng Anh sau khi CI/Deploy hoàn tất; hồ sơ CĐ25 không còn lỗi toán được Gemini nêu cần sửa khẩn cấp. Tương lai nếu phản biện sáu nguồn còn thiếu hoặc các trang mới, tiếp tục từ chính file/commit mới, không hồi quy sang packet 13 nguồn lịch sử.
+
+---
+
+## Phụ lục – Đợt kiểm định bổ sung Targeted R3
+
+Sau phản hồi của Gemini rằng `source_files_reviewed` trong R2 bỏ sót sáu tệp, đã chuẩn bị [gói Targeted R3](GEMINI_REVIEW_PACKET_2026-09-26_TARGETED_R3.txt) tại source commit `5f74d7c377bc94f2688a9b5ee431d90c88af0536`. Gói chụp nguyên văn **9 tệp cần kiểm định** (sáu tệp chưa liệt kê ở R2 và ba trang giải sâu mới A25-006/007/010) cùng **8 tệp đối chiếu**, tất cả 17 SHA khớp snapshot. Kiểm tra toán sơ bộ các phép tính/biến thể mới chưa phát hiện lỗi; việc này không thay kết quả phản biện độc lập. Task `TOPIC25-R2-SOURCE-COVERAGE-001` tiếp tục OPEN đến khi có JSON R3 ghi đủ 9 tệp và kết quả riêng từng tệp.
