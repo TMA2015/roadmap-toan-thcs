@@ -10,7 +10,7 @@ ok((library.match(/class="library-topic-tile"/g)||[]).length===25,"all 25 topics
 ok(!/class="library-topic-tile" href="[^"]+\\.md"/.test(library),"HTML tile links point to built routes, never source Markdown");
 ok(library.includes('href="22-dai-luong-dac-trung/"')&&library.includes('href="25-tong-hop-on-thi-10/"'),"original destinations intact");
 ok(nav.includes("window.addEventListener(\"scroll\"")&&nav.includes("md-tabs__list")&&nav.includes("aria-label"),"sticky nav and semantics");
-ok(nav.includes("addMobileShortcuts")&&nav.includes("roadmap-mobile-shortcuts")&&nav.includes("nav.insertBefore(section, list)"),"compact primary navigation precedes topic list");
+ok(nav.includes("addMobileShortcuts")&&nav.includes("roadmap-mobile-shortcuts")&&nav.includes("drawer.insertBefore(section, drawer.firstChild)"),"compact primary navigation precedes topic list");
 for(const name of ["Trang chủ","Học theo lớp","Roadmap","AI Tutor","Hướng dẫn","Kiến thức"])
   ok(nav.includes('["'+name+'"'),"missing compact destination: "+name);
 ok(nav.includes("source?.href || sitePrefix() + fallback"),"reuse exact built menu URLs with fallback");
