@@ -2,6 +2,13 @@
 "use strict";
 
 const TOPICS={
+ "02-so-va-phep-tinh":{
+   number:"02",
+   data:"assets/data/curriculum/topic02-learning-workspace.json",
+   description:"Nền số học lớp 6: số tự nhiên, chia hết, số nguyên, phân số, số thập phân và phần trăm. CĐ02 đầy đủ còn có nội dung lớp sau.",
+   chips:["KNTT Core · phần lớp 6","Số học","5 chặng học","Nội dung lớp 7 học tiếp"],
+   progressSkills:["tap-hop-so","thu-tu-phep-tinh","luy-thua","dau-hieu-chia-het","so-nguyen-to","ucln","bcnn","so-nguyen-phep-tinh","rut-gon-phan-so","phep-tinh-phan-so","so-huu-ti-thap-phan","phan-tram"]
+ },
  "04-bieu-thuc-dai-so":{
    number:"04",
    data:"assets/data/curriculum/topic04-learning-workspace.json",
