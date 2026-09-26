@@ -10,40 +10,38 @@
    ["Kiến thức", "kien-thuc/", "▤"]
  ];
  const addMobileShortcuts = () => {
-   const nav = document.querySelector(".md-sidebar--primary nav.md-nav--primary");
-   if (!nav) return;
-   // Material's drill-down topic list overlays nav children. Put global links
-   // in the drawer scroll container, outside that moving list, so they stay tappable.
-   const drawer = nav.closest(".md-sidebar__scrollwrap") || nav;
-   if (drawer.querySelector("[data-roadmap-mobile-shortcuts]")) return;
-   const list = nav.querySelector(":scope > .md-nav__list") || nav.querySelector(".md-nav__list");
-   if (!list) return;
+   // Each Material drill-down level has its own moving list; placing links
+   // inside the lists keeps the original topic items visible and clickable.
+   const navs = [...document.querySelectorAll(".md-sidebar--primary nav.md-nav")];
    const sources = [...document.querySelectorAll(".md-tabs__list a.md-tabs__link")];
-   const section = document.createElement("section");
-   section.className = "roadmap-mobile-shortcuts";
-   section.dataset.roadmapMobileShortcuts = "1";
-   section.setAttribute("aria-label", "Điều hướng chính");
-   const title = document.createElement("strong");
-   title.className = "roadmap-mobile-shortcuts__title";
-   title.textContent = "Điều hướng chính";
-   const links = document.createElement("div");
-   links.className = "roadmap-mobile-shortcuts__links";
-   for (const [label, fallback, glyph] of mainDestinations) {
-     const source = sources.find(a => a.textContent.trim() === label);
-     const a = document.createElement("a");
-     a.className = "roadmap-mobile-shortcuts__link";
-     a.href = source?.href || sitePrefix() + fallback;
-     const icon = document.createElement("span");
-     icon.className = "roadmap-mobile-shortcuts__icon";
-     icon.setAttribute("aria-hidden", "true");
-     icon.textContent = glyph;
-     a.append(icon, document.createTextNode(label));
-     if (source?.classList.contains("md-tabs__link--active")) a.setAttribute("aria-current", "page");
-     links.appendChild(a);
+   for (const nav of navs) {
+     const list = nav.querySelector(":scope > .md-nav__list");
+     if (!list || list.querySelector(":scope > [data-roadmap-mobile-shortcuts]")) continue;
+     const item = document.createElement("li");
+     item.className = "md-nav__item roadmap-mobile-shortcuts";
+     item.dataset.roadmapMobileShortcuts = "1";
+     item.setAttribute("aria-label", "Điều hướng chính");
+     const title = document.createElement("strong");
+     title.className = "roadmap-mobile-shortcuts__title";
+     title.textContent = "Điều hướng chính";
+     const links = document.createElement("div");
+     links.className = "roadmap-mobile-shortcuts__links";
+     for (const [label, fallback, glyph] of mainDestinations) {
+       const source = sources.find(a => a.textContent.trim() === label);
+       const a = document.createElement("a");
+       a.className = "roadmap-mobile-shortcuts__link";
+       a.href = source?.href || sitePrefix() + fallback;
+       const icon = document.createElement("span");
+       icon.className = "roadmap-mobile-shortcuts__icon";
+       icon.setAttribute("aria-hidden", "true");
+       icon.textContent = glyph;
+       a.append(icon, document.createTextNode(label));
+       if (source?.classList.contains("md-tabs__link--active")) a.setAttribute("aria-current", "page");
+       links.appendChild(a);
+     }
+     item.append(title, links);
+     list.insertBefore(item, list.firstChild);
    }
-   section.append(title, links);
-   if (drawer === nav) nav.insertBefore(section, list);
-   else drawer.insertBefore(section, drawer.firstChild);
  };
  const create = () => {
    // The sidebar is reconstructed on instant navigation, so mount separately
