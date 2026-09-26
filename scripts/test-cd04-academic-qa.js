@@ -117,4 +117,20 @@ const engine=read("docs/assets/javascripts/practice-engine-v2.js");
 assert.ok(engine.includes("displayOptions = shuffle(question.options.map"),"Practice Engine must shuffle source A-only keys");
 assert.ok(engine.includes("selectedIndex === question.answer"),"Practice Engine must compare original option indices");
 console.log("PASS source keys are index zero but engine shuffles options and checks original index");
+const ledger=from("docs/assets/data/curriculum/cd04-academic-qa-ledger-v1.json");
+assert.equal(ledger.status,"answer_checks_completed_primary_mapping_not_approved");
+assert.deepEqual(ledger.counts,{total:132,numeric_checked:92,manual_reviewed:40,clarified:8,taxonomy_pending:2});
+assert.deepEqual(ledger.items.map(x=>x.question_id).sort(),questions.map(x=>x.id).sort());
+for(const item of ledger.items){
+  const q=byId.get(item.question_id);
+  assert.equal(item.source_file,q.__source);
+  assert.equal(item.primary_skill_candidate,overlay.items.find(x=>x.id===q.id).proposed_assessed_skill);
+  assert.equal(item.answer_check,(Number(q.id.split("_").at(-1))>=21&&Number(q.id.split("_").at(-1))<=88)||
+    (Number(q.id.split("_").at(-1))>=99&&Number(q.id.split("_").at(-1))<=110)||
+    (Number(q.id.split("_").at(-1))>=121&&Number(q.id.split("_").at(-1))<=132)
+    ?"numeric_algebra_oracle_four_samples":"reviewed_explicit_expected_answer");
+}
+assert.deepEqual(ledger.items.filter(x=>x.primary_skill_qa==="pending_semantic_tag_decision").map(x=>x.question_id),
+  ["ALG04V2_009","ALG04V2_010"]);
+console.log("PASS 132-row audit ledger and two unresolved taxonomy cases match source/overlay");
 console.log("PASSED CĐ04 academic QA checks: 132 items, 92 algebra-oracle + 40 reviewed, 8 assumption clarifications.");
