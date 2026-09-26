@@ -1,5 +1,5 @@
 {
-  "version": "1.0.52",
+  "version": "1.0.53",
   "updated": "2026-09-26",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -309,8 +309,8 @@
       "independent_math_review": "PENDING_GEMINI; 23-source current-main R2 packet at review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26_MAIN_R2.txt. Old 13-source packet is superseded, not approved.",
       "learning_ai": "contextual Tutor on Topic25 main and deep-reading pages, not assessment/answer pages"
     },
-    "grade6_topic02_pilot": "IN_PR_PENDING_QA: 5 grade6 source-mapped cards, 15 micro, 10-item independent grade6 readiness; legacy 120-item mixed-grade bank intact; old written self-check preserved separately. Grade7 extension NOT certified or relabeled as grade6 Core.",
-    "grade6_topic03_next": "OPEN: explicitly separate grade6 B31 tỉ số/phần trăm from grade7 B20–23 tỉ lệ thức, thuận/nghịch; do not claim full legacy 120-question bank has grade metadata."
+    "grade6_topic02_pilot": "DEPLOYED_CI_BROWSER_PASS_OWNER_DEVICE_QA_PENDING: PR #120, 5 grade6 cards, 15 micro, 10 independent readiness; legacy 120-bank and written test preserved; class7 content excluded from grade6 readiness. Technical CI/build/deploy passed; owner real-device acceptance separate OPEN task G6-T02-OWNER-UX-001.",
+    "grade6_topic03_next": "OPEN G6-T03-SCOPE-001: grade6 B31 tỉ số/phần trăm vs grade7 B20–23 tỉ lệ thức, thuận/nghịch; current 120-bank lacks grade metadata, needs scoped next batch."
   },
   "handoff_required_fields": [
     "TASK_ID",
