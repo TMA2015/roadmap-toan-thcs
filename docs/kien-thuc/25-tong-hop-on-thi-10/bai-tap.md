@@ -103,21 +103,21 @@ Một học sinh giải bài toán thực tế ra nghiệm âm cho một đại 
 
 | Bài | Kết quả |
 |---|---|
-| 25-A1 | (5\sqrt3-2\sqrt3+2\sqrt3=5\sqrt3) |
-| 25-A2 | (x=-7), với (x\ne-2) |
-| 25-A3 | (A=\frac12) khi (x=16); phương trình cho (\sqrt{x}=4\Rightarrow x=16) |
-| 25-B1 | (x_1^2+x_2^2=29) |
-| 25-B2 | ((x,y)=(5,6)) |
+| 25-A1 | \(5\sqrt3\) |
+| 25-A2 | \(x=-7\), với điều kiện \(x\ne-2\) |
+| 25-A3 | \(A=\frac12\) khi \(x=16\); giải \(\sqrt{x}=4\Rightarrow x=16\) |
+| 25-B1 | \(x_1^2+x_2^2=29\) |
+| 25-B2 | \((x,y)=(5,6)\) |
 | 25-B3 | 15 quyển loại A và 15 quyển loại B |
-| 25-C1 | Có, vì (2\cdot3-1=5) |
-| 25-C2 | ((2,4)) |
-| 25-C3 | (V=120+15t); sau 8 phút: 240 lít |
-| 25-D1 | Trung bình (7{,}5); trung vị (7{,}5); mốt (9) |
-| 25-D2 | (1/2; 1/3; 1/6) |
-| 25-E1 | (BC=10), diện tích (24) |
-| 25-E2 | (BC=25, AH=12, AB=15, AC=20) |
+| 25-C1 | Có, vì \(2\cdot3-1=5\) |
+| 25-C2 | \((2,4)\) |
+| 25-C3 | \(V=120+15t\); sau 8 phút: 240 lít |
+| 25-D1 | Trung bình \(7{,}5\); trung vị \(7{,}5\); mốt \(9\) |
+| 25-D2 | \(\frac12;\ \frac13;\ \frac16\) |
+| 25-E1 | \(BC=10\), diện tích \(24\) |
+| 25-E2 | \(BC=25,\ AH=12,\ AB=15,\ AC=20\) |
 | 25-E3 | Hai góc nội tiếp cùng chắn một cung bằng nhau |
-| 25-F1 | (36), đạt khi (x=y=6) |
+| 25-F1 | \(36\), đạt khi \(x=y=6\) |
 | 25-F2 | Nghiệm không thỏa ý nghĩa thực tế; phải đối chiếu điều kiện và kết luận bằng lời |
 
 ---
