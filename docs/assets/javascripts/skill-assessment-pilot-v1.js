@@ -186,6 +186,7 @@
       const choices = textEl("div", "", "skill-pilot-options");
       shuffle(q.options.map((content, i) => ({ content, index: i }))).forEach((choice) => {
         const item = button(choice.content, "skill-pilot-option");
+        item.dataset.originalIndex = String(choice.index);
         item.addEventListener("click", () => this.answer(q, choice.index, choices));
         choices.appendChild(item);
       });
@@ -212,8 +213,9 @@
       this.save();
       [...choices.children].forEach((element) => {
         element.disabled = true;
-        if (element.textContent === q.options[q.answer]) element.classList.add("is-correct");
-        if (element.textContent === q.options[choice] && !correct) element.classList.add("is-wrong");
+        const originalIndex = Number(element.dataset.originalIndex);
+        if (originalIndex === q.answer) element.classList.add("is-correct");
+        if (originalIndex === choice && !correct) element.classList.add("is-wrong");
       });
       this.feedback.hidden = false;
       this.feedback.className = "skill-pilot-feedback " + (correct ? "is-correct" : "is-wrong");
