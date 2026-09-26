@@ -507,6 +507,21 @@
       "review_notes": "R2 pack snapshot 04b275cb5870a2fbd8f540333b96529285277883; exact 23 current-source Markdown/JSON/SVG files including anchor catalog, 11 anchors and exam rubric. Original 13-file packet predates PR #112 and MUST NOT be used for sign-off. Structural preflight: 3 exams 120 minutes / 10 points, rubric sums and anchor/topic links valid. Independent math/Gemini result NOT RECEIVED; do not mark PASS until source-locked findings are checked against current revision.",
       "source_commit": "04b275cb5870a2fbd8f540333b96529285277883",
       "packet_source_count": 23
+    },
+    {
+      "id": "G6-T02-GOLDEN-001",
+      "title": "Topic02 source-scoped grade6 Golden pilot: five learning cards, micro-practice and independent readiness",
+      "routing": "CHATGPT_LEAD+ACADEMIC_QA",
+      "status": "READY",
+      "review_verdict": "PENDING_CI_AND_OWNER_DEVICE_QA",
+      "review_notes": "5 learning cards map KNTT grade6 B1–17, B23–31; 15 micro checks + 10 grade6 readiness, written practice with collapsed answers and preserved legacy self-check. 120 legacy bank kept untouched and ungraded by class; does not count grade7 real-number/cube/square-root content as grade6 Core. Mark DONE only after CI/deploy; owner-device QA separate."
+    },
+    {
+      "id": "G6-T03-SCOPE-001",
+      "title": "Topic03 class6 tỉ số/phần trăm versus class7 tỉ lệ thức/thuận/nghịch: audited content and progressive Golden rollout",
+      "routing": "CHATGPT_LEAD+GEMINI_ACADEMIC_REVIEW",
+      "status": "OPEN",
+      "review_notes": "Grade6 KNTT B31 maps tỉ số, tỉ số phần trăm and basic percent; Grade7 B20–23 maps tỉ lệ thức, dãy tỉ số, đại lượng tỉ lệ thuận/nghịch. Existing 120-question bank has no reliable per-item grade metadata. Need grade-scoped learner path and independent readiness; do not misrepresent full bank as grade6 Core."
     }
   ]
 }
