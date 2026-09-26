@@ -523,6 +523,8 @@ Mỗi bài yêu cầu học sinh nhận ra **dấu hiệu → công cụ → chu
 
 Ba đề dưới đây đều là **đề tự biên soạn, 120 phút, 10 điểm, gồm 5 bài tự luận**. Đây là tài liệu luyện tập theo những mạch kiến thức của chúng ta, không phải đề chính thức hay đề dự báo. **Đáp án nằm ở trang riêng**, để học sinh hoàn thành bài trên giấy trước khi mở:
 
+**Chế độ làm đề tương tác:** trên mỗi đề có nút **Bắt đầu 120 phút**; trình duyệt lưu nháp và thời điểm bắt đầu. Nộp bài/hết giờ mới hiện phần đối chiếu và rubric tự chấm; sau khi tự đối chiếu từng bước, hệ thống tính **điểm tự chấm** và gợi ý ôn lại bài mỏ neo. Đây vẫn là bài tự luận làm trên giấy: website tĩnh không thể khóa an toàn URL đáp án, không tự động xác minh cách giải hoặc chấm thay giáo viên.
+
 <div class="capstone-exam-grid" markdown="1">
   <a class="capstone-exam-link" href="de-luyen-01/"><strong>Đề 01 · Nền tảng tổng hợp</strong><span>Căn thức, Viète, hệ thực tế, dữ liệu và hình học tam giác vuông.</span><small>120 phút · 10 điểm →</small></a>
   <a class="capstone-exam-link" href="de-luyen-02/"><strong>Đề 02 · Mạch liên kết</strong><span>Căn thức phụ trợ số nguyên, parabol–đường thẳng, tiếp tuyến–cát tuyến.</span><small>120 phút · 10 điểm →</small></a>
