@@ -15,6 +15,10 @@ for(const name of ["study-kid-sleeping.webp","study-kid-awake.webp","tutor-girl-
   ok(data.length>5000&&data.toString("ascii",0,4)==="RIFF"&&data.toString("ascii",8,12)==="WEBP",name+" is an optimized bundled WebP");
 }
 ok(html.includes('data-awake-src="assets/images/study-kid-awake.webp"'),"explicit awake artwork source");
+ok(html.includes('class="study-art-room"')&&html.includes('study-room-pastel.svg'),"room illustration behind both mascot states");
+ok(css.includes(".study-art-room")&&css.includes(".study-art-wakeup{position:absolute;z-index:3;left:8%"),"room and left-side greeting CSS");
+const room=load("docs/assets/images/study-room-pastel.svg");
+ok(room.includes("<svg")&&room.includes("viewBox=\"0 0 1040 552\"")&&room.includes("<title")&&room.includes("<desc"),"accessible self-contained room SVG");
 const classes=new Set(),events={},attrs={};const gateway={hidden:true};
 const wake={addEventListener:(t,fn)=>events.wake=fn,setAttribute:(k,v)=>attrs[k]=v};
 const illustration={src:"assets/images/study-kid-sleeping.webp",dataset:{awakeSrc:"assets/images/study-kid-awake.webp"},alt:"sleeping"};
