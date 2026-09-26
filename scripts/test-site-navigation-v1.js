@@ -10,6 +10,11 @@ ok((library.match(/class="library-topic-tile"/g)||[]).length===25,"all 25 topics
 ok(!/class="library-topic-tile" href="[^"]+\\.md"/.test(library),"HTML tile links point to built routes, never source Markdown");
 ok(library.includes('href="22-dai-luong-dac-trung/"')&&library.includes('href="25-tong-hop-on-thi-10/"'),"original destinations intact");
 ok(nav.includes("window.addEventListener(\"scroll\"")&&nav.includes("md-tabs__list")&&nav.includes("aria-label"),"sticky nav and semantics");
+ok(nav.includes("addMobileShortcuts")&&nav.includes("roadmap-mobile-shortcuts")&&nav.includes("nav.insertBefore(section, list)"),"compact primary navigation precedes topic list");
+for(const name of ["Trang chủ","Học theo lớp","Roadmap","AI Tutor","Hướng dẫn","Kiến thức"])
+  ok(nav.includes('["'+name+'"'),"missing compact destination: "+name);
+ok(nav.includes("source?.href || sitePrefix() + fallback"),"reuse exact built menu URLs with fallback");
+ok(css.includes("@media(max-width:76.24rem)")&&css.includes(".roadmap-mobile-shortcuts__link"),"mobile-only navigation styles");
 ok(css.includes(".roadmap-nav-dock.is-visible")&&css.includes(".library-topic-grid"),"style definitions");
 ok(yaml.includes("sticky-nav-v1.js"),"loaded on site");
 console.log("PASS: persistent desktop nav, four home cards, four library clusters, all 25 links.");
