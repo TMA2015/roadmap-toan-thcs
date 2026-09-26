@@ -32,8 +32,8 @@
       "primary": "cong-tru-da-thuc",
       "secondary_role": "supporting_skill",
       "secondary_remains_assessable": true,
-      "reason": "Bỏ ngoặc có bài đo riêng, nhưng một kết quả rút gọn không thể chấm hai kỹ năng độc lập.",
-      "recommendation": "KEEP_SEPARATE_TARGETS_WITH_PRIMARY_PER_ITEM",
+      "reason": "Bỏ ngoặc và cộng/trừ đa thức có lỗi khác nhau nhưng 12 câu mang bo-ngoac-dau ngoài cặp này vẫn là các bài rút gọn nhiều bước, không phải phép đo riêng sạch. Cần micro-test chỉ hỏi ngay sau bước bỏ ngoặc.",
+      "recommendation": "KEEP_DIAGNOSTIC_TARGET_WITH_NEW_SIGN_MICRO_TEST",
       "labels": {
         "a": "Cộng – trừ đa thức",
         "b": "Bỏ ngoặc và dấu"
@@ -51,7 +51,8 @@
       "confidence": "moderate_for_representative_item_only",
       "primary_counter_mode": "future_primary_only_legacy_unchanged",
       "assessment_grouping": "do_not_auto_roll_up_parent_category_or_supporting_tags",
-      "secondary_role_scope": "on_representative_question_only"
+      "secondary_role_scope": "on_representative_question_only",
+      "independent_micro_test_required": true
     },
     {
       "topic": "04-bieu-thuc-dai-so",
@@ -172,7 +173,7 @@
       "primary": "hai-phan-thuc-bang-nhau",
       "secondary_role": "supporting_skill",
       "secondary_remains_assessable": true,
-      "reason": "Câu mẫu kiểm tra hai phân thức bằng nhau TRÊN MIỀN x≠2. Giữ miền xác định sau rút gọn là thao tác riêng; micro-test thích hợp so sánh miền trước/sau khi triệt nhân tử, không thay bằng câu loại nghiệm ngoại lai của phương trình.",
+      "reason": "Câu mẫu kiểm tra hai phân thức bằng nhau TRÊN MIỀN x≠2. Giữ miền xác định sau rút gọn là thao tác riêng; micro-test thích hợp so sánh miền trước/sau khi triệt nhân tử, không thay bằng câu loại nghiệm ngoại lai của phương trình. Hiện đã có 8 câu chỉ gắn giu-dieu-kien-ban-dau, ví dụ RAT07V1_063; chưa cần tạo thêm bài trừ khi QA chứng minh thiếu.",
       "recommendation": "KEEP_DISTINCT_WITH_DOMAIN_PRESERVATION_MICRO_TEST",
       "labels": {
         "a": "Hai phân thức bằng nhau",
@@ -191,7 +192,12 @@
       "confidence": "moderate_for_representative_item_only",
       "primary_counter_mode": "future_primary_only_legacy_unchanged",
       "assessment_grouping": "do_not_auto_roll_up_parent_category_or_supporting_tags",
-      "secondary_role_scope": "on_representative_question_only"
+      "secondary_role_scope": "on_representative_question_only",
+      "independent_micro_test_required": false,
+      "separate_existing_question_evidence": [
+        "RAT07V1_063",
+        "RAT07V1_064"
+      ]
     },
     {
       "topic": "09-he-phuong-trinh",
@@ -219,7 +225,8 @@
       "confidence": "moderate_for_representative_item_only",
       "primary_counter_mode": "future_primary_only_legacy_unchanged",
       "assessment_grouping": "do_not_auto_roll_up_parent_category_or_supporting_tags",
-      "secondary_role_scope": "on_representative_question_only"
+      "secondary_role_scope": "on_representative_question_only",
+      "independent_micro_test_required": true
     },
     {
       "topic": "09-he-phuong-trinh",
@@ -303,7 +310,8 @@
       "confidence": "moderate_for_representative_item_only",
       "primary_counter_mode": "future_primary_only_legacy_unchanged",
       "assessment_grouping": "do_not_auto_roll_up_parent_category_or_supporting_tags",
-      "secondary_role_scope": "on_representative_question_only"
+      "secondary_role_scope": "on_representative_question_only",
+      "independent_micro_test_required": true
     }
   ],
   "review": {
