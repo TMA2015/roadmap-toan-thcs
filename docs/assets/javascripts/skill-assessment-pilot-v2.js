@@ -194,7 +194,7 @@
     render() {
       this.root.replaceChildren();
       this.introEl = textEl("p",
-        "14 câu thử nghiệm: 10 câu từ ngân hàng gốc và 4 câu kiểm tra ngắn. Mỗi câu chỉ cộng vào một kỹ năng chính.",
+        "Beta v2 · 14 câu thử nghiệm: 10 câu từ ngân hàng gốc và 4 câu kiểm tra ngắn. Mỗi câu chỉ cộng vào một kỹ năng chính.",
         "skill-pilot-intro");
       this.root.appendChild(this.introEl);
       if (!this.storageAvailable) this.root.appendChild(textEl("p",
