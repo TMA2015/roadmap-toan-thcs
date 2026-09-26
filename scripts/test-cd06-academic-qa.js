@@ -178,6 +178,6 @@ const legacy=read("docs/assets/javascripts/practice-engine-v2.js");
 assert.ok(!legacy.includes("cd06-academic-qa-ledger"));
 console.log("PASS exact BigInt polynomial identity and source-key QA: "+JSON.stringify(checked));
 console.log("PASS greatest common monomials for all 12 dedicated questions: "+JSON.stringify(greatest));
-console.log("PASS equivalent-but-unfactored partial distractors observed: "+equivalent_but_not_factorized.length);
+console.log("PASS equivalent-but-unfactored partial distractors observed: "+equivalent_but_not_factorized.length+" "+JSON.stringify(equivalent_but_not_factorized));
 console.log("PASS 24 CĐ06 flags remain undecided; unchanged tags and full-text queue in sync");
 console.log("PASSED CĐ06 source mathematical QA: 120/120; no runtime or learner-state migration.");
