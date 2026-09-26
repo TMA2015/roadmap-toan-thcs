@@ -303,8 +303,8 @@ $$
     half_page.locator('.md-header__button[for="__drawer"]').click()
     quick = half_page.locator(".md-sidebar--primary .roadmap-mobile-shortcuts__link")
     check(quick.count() == 6 and quick.first.is_visible(), "six global destinations in half-width drawer")
-    check([quick.nth(i).inner_text().strip() for i in range(6)] ==
-          ["⌂ Trang chủ", "▣ Học theo lớp", "◇ Roadmap", "✦ AI Tutor", "☷ Hướng dẫn", "▤ Kiến thức"],
+    check([quick.nth(i).evaluate("(a) => a.lastChild.textContent.trim()") for i in range(6)] ==
+          ["Trang chủ", "Học theo lớp", "Roadmap", "AI Tutor", "Hướng dẫn", "Kiến thức"],
           "compact navigation order and labels")
     shot(half_page, "lesson-23-half-width-main-navigation.png")
     quick.first.click()
