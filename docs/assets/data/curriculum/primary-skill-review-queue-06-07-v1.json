@@ -29,7 +29,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\(3x(x-4)(x+4)\\)",
-      "explanation": "Đặt \\(3x\\) ra ngoài rồi tiếp tục phân tích \\(x^2-16\\) bằng hiệu hai bình phương.",
+      "explanation": "\\(3x^3-48x=3x(x^2-16)=3x(x-4)(x+4)\\). Đặt nhân tử chung trước, sau đó dùng hiệu hai bình phương. \\(3x(x^2-16)\\) mới là bước trung gian, chưa phân tích hoàn toàn.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -53,7 +53,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\(2x(x+3)^2\\)",
-      "explanation": "Đặt nhân tử chung trước; phần còn lại là bình phương hoàn chỉnh.",
+      "explanation": "\\(2x^3+12x^2+18x=2x(x^2+6x+9)=2x(x+3)^2\\). Sau khi đặt \\(2x\\), nhận dạng bình phương hoàn chỉnh.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -77,7 +77,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\((x+3)(x-2)(x+2)\\)",
-      "explanation": "Tiếp tục phân tích hiệu hai bình phương cho đến khi không còn dạng quen thuộc.",
+      "explanation": "Nhóm \\(x^3+3x^2-4x-12=(x+3)(x^2-4)=(x+3)(x-2)(x+2)\\). Dừng ở \\((x+3)(x^2-4)\\) là chưa phân tích hoàn toàn.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -101,7 +101,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\(x(x+2)(x+6)\\)",
-      "explanation": "Đặt nhân tử chung x trước, sau đó phân tích tam thức bậc hai còn lại.",
+      "explanation": "\\(x^3+8x^2+12x=x(x^2+8x+12)=x(x+2)(x+6)\\). Đặt \\(x\\) trước; tìm hai số có tổng 8, tích 12.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -125,7 +125,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\(2x(x-3)(x+3)\\)",
-      "explanation": "Đặt \\(2x\\) ra ngoài rồi tiếp tục phân tích \\(x^2-9\\) bằng hiệu hai bình phương.",
+      "explanation": "\\(2x^3-18x=2x(x^2-9)=2x(x-3)(x+3)\\). Đặt \\(2x\\) rồi tiếp tục tách hiệu hai bình phương. Bước \\(2x(x^2-9)\\) vẫn chưa là kết quả phân tích hoàn toàn.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -149,7 +149,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\(3x(x+3)^2\\)",
-      "explanation": "Đặt nhân tử chung trước; phần còn lại là bình phương hoàn chỉnh.",
+      "explanation": "\\(3x^3+18x^2+27x=3x(x^2+6x+9)=3x(x+3)^2\\). Nhân tử chung \\(3x\\), phần còn lại là bình phương hoàn chỉnh.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -173,7 +173,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\((x+3)(x-1)(x+1)\\)",
-      "explanation": "Tiếp tục phân tích hiệu hai bình phương cho đến khi không còn dạng quen thuộc.",
+      "explanation": "\\(x^3+3x^2-x-3=(x+3)(x^2-1)=(x+3)(x-1)(x+1)\\). Nhóm hạng tử rồi phân tích tiếp hiệu hai bình phương.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -197,7 +197,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\(x(x+1)(x+5)\\)",
-      "explanation": "Đặt nhân tử chung x trước, sau đó phân tích tam thức bậc hai còn lại.",
+      "explanation": "\\(x^3+6x^2+5x=x(x^2+6x+5)=x(x+1)(x+5)\\). Đặt \\(x\\), sau đó tách hạng tử giữa.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -221,7 +221,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\(4x(x-3)(x+3)\\)",
-      "explanation": "Đặt \\(4x\\) ra ngoài rồi tiếp tục phân tích \\(x^2-9\\) bằng hiệu hai bình phương.",
+      "explanation": "\\(4x^3-36x=4x(x^2-9)=4x(x-3)(x+3)\\). Cần tiếp tục phân tích \\(x^2-9\\), không dừng ở bước đặt nhân tử chung.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -245,7 +245,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\(3x(x+1)^2\\)",
-      "explanation": "Đặt nhân tử chung trước; phần còn lại là bình phương hoàn chỉnh.",
+      "explanation": "\\(3x^3+6x^2+3x=3x(x^2+2x+1)=3x(x+1)^2\\). Nhận ra bình phương hoàn chỉnh sau khi đặt \\(3x\\).",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -269,7 +269,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\((x+2)(x-3)(x+3)\\)",
-      "explanation": "Nhóm được \\((x+2)(x^2-9)\\), rồi dùng hiệu hai bình phương: \\((x+2)(x-3)(x+3)\\).",
+      "explanation": "\\(x^3+2x^2-9x-18=(x+2)(x^2-9)=(x+2)(x-3)(x+3)\\). Nhóm hạng tử và dùng hiệu hai bình phương cho bước cuối.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -293,7 +293,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\(x(x+3)(x+6)\\)",
-      "explanation": "Đặt nhân tử chung x trước, sau đó phân tích tam thức bậc hai còn lại.",
+      "explanation": "\\(x^3+9x^2+18x=x(x^2+9x+18)=x(x+3)(x+6)\\). Đặt nhân tử chung rồi phân tích tam thức.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -317,7 +317,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\(3x(x-1)(x+1)\\)",
-      "explanation": "Đặt \\(3x\\) ra ngoài rồi tiếp tục phân tích \\(x^2-1\\) bằng hiệu hai bình phương.",
+      "explanation": "\\(3x^3-3x=3x(x^2-1)=3x(x-1)(x+1)\\). Sau khi đặt \\(3x\\), tiếp tục phân tích hiệu hai bình phương.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -341,7 +341,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\(2x(x+2)^2\\)",
-      "explanation": "Đặt nhân tử chung trước; phần còn lại là bình phương hoàn chỉnh.",
+      "explanation": "\\(2x^3+8x^2+8x=2x(x^2+4x+4)=2x(x+2)^2\\). Đặt \\(2x\\), nhận dạng bình phương hoàn chỉnh.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -365,7 +365,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\((x+1)(x-2)(x+2)\\)",
-      "explanation": "Tiếp tục phân tích hiệu hai bình phương cho đến khi không còn dạng quen thuộc.",
+      "explanation": "\\(x^3+x^2-4x-4=(x+1)(x^2-4)=(x+1)(x-2)(x+2)\\). Bước tách hiệu hai bình phương cuối là bắt buộc khi đề yêu cầu phân tích hoàn toàn.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -389,7 +389,7 @@
       ],
       "answer_index": 0,
       "correct_option": "\\(x(x+1)(x+3)\\)",
-      "explanation": "Đặt \\(x\\) chung: \\(x(x^2+4x+3)=x(x+1)(x+3)\\).",
+      "explanation": "\\(x^3+4x^2+3x=x(x^2+4x+3)=x(x+1)(x+3)\\). Đặt nhân tử chung và tách hạng tử giữa.",
       "review_status": "requires_human_academic_decision"
     },
     {
@@ -480,12 +480,12 @@
       "options": [
         "\\(n^2+3n+2=(n+1)(n+2)\\), tích hai số nguyên liên tiếp luôn chẵn.",
         "\\(n^2+3n+2=(n+1)^2\\).",
-        "\\(n^2+3n+2=n(n+3)+2\\) nên hiển nhiên chẵn.",
+        "\\(n^2+3n+2=n(n+2)+2\\), nên biểu thức luôn chẵn.",
         "Vì \\(n\\) luôn là số chẵn."
       ],
       "answer_index": 0,
       "correct_option": "\\(n^2+3n+2=(n+1)(n+2)\\), tích hai số nguyên liên tiếp luôn chẵn.",
-      "explanation": "\\(n^2+3n+2=(n+1)(n+2)\\). Hai nhân tử là hai số nguyên liên tiếp nên tích luôn chẵn.",
+      "explanation": "\\(n^2+3n+2=(n+1)(n+2)\\). Hai số nguyên liên tiếp có một số chẵn nên tích chia hết cho 2. Lưu ý phương án \\(n(n+2)+2\\) không bằng đa thức đã cho.",
       "review_status": "requires_human_academic_decision"
     },
     {
