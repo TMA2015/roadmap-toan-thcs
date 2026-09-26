@@ -4,6 +4,8 @@
 
 **Trạng thái 26/09/2026:** Beta v2 đánh giá một kỹ năng chính đã được người dùng thử và chấp nhận. Đợt tiếp theo là [bản ánh xạ CĐ04–07 theo từng câu](primary-skill-overlay-review-04-07-v1.md): 492 câu đã khóa ID/nguồn; 456 ứng viên primary và 39 ca chờ kiểm định, trong đó 36 ca chưa chọn primary. Đây vẫn là **dữ liệu review chưa được engine đọc**. Không đổi tag luyện tập, Knowledge Graph hay dữ liệu học sinh.
 
+**QA học thuật CĐ04:** [Báo cáo 132 câu và tám làm rõ giả thiết](cd04-academic-qa-v1.md), [ledger theo từng ID](../assets/data/curriculum/cd04-academic-qa-ledger-v1.json). Hai trường hợp skill tag chưa quyết định là ALG04V2_009 và ALG04V2_010; không sử dụng overlay để chấm mastery khi chưa duyệt.
+
 ## Dữ liệu đã kiểm tra
 
 - 22 manifest đang được bộ tải luyện tập tham chiếu, 99 tệp câu hỏi nguồn.
