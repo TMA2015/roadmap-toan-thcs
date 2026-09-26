@@ -1,0 +1,371 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_id": "TOPIC25-ANCHOR-LIBRARY",
+  "source_topic": "25-tong-hop-on-thi-10",
+  "snapshot_date": "2026-09-26",
+  "representative_count": 10,
+  "representative_ids": [
+    "A25-001",
+    "A25-002",
+    "A25-003",
+    "A25-004",
+    "A25-005",
+    "A25-006",
+    "A25-007",
+    "A25-008",
+    "A25-009",
+    "A25-010"
+  ],
+  "anchors": [
+    {
+      "id": "A25-001",
+      "title": "Biểu thức căn – điều kiện trước",
+      "strand": "algebra",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT11"
+      ],
+      "skill_tags": [
+        "sqrt",
+        "condition"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-001",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [],
+      "exam_question_refs": [
+        "EXAM25-01:I.1"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-002",
+      "title": "Viète – biểu thức đối xứng",
+      "strand": "algebra",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT12"
+      ],
+      "skill_tags": [
+        "vieta",
+        "symmetric-expressions"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-002",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-007"
+      ],
+      "exam_question_refs": [
+        "EXAM25-01:II.1"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-003",
+      "title": "Lập hệ từ bài toán vé",
+      "strand": "application",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT09",
+        "CT24"
+      ],
+      "skill_tags": [
+        "systems",
+        "modelling"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-003",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-010"
+      ],
+      "exam_question_refs": [
+        "EXAM25-01:II.2"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-004",
+      "title": "Đường cao tam giác vuông",
+      "strand": "geometry",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT17",
+        "CT18"
+      ],
+      "skill_tags": [
+        "similarity",
+        "altitude",
+        "right-triangle"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-004",
+      "deep_dive_uri": "anchor-25-004/",
+      "figure_uris": [
+        "../../assets/geometry/25/anchor-25-004-right-altitude.svg"
+      ],
+      "related_anchor_ids": [
+        "A25-008",
+        "A25-009"
+      ],
+      "exam_question_refs": [
+        "EXAM25-01:IV"
+      ],
+      "content_depth": "full_solution_with_variants",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-005",
+      "title": "Tối ưu tích khi tổng cố định",
+      "strand": "algebra",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT04"
+      ],
+      "skill_tags": [
+        "inequality",
+        "optimization"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-005",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-007"
+      ],
+      "exam_question_refs": [
+        "EXAM25-01:V",
+        "EXAM25-02:V"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-006",
+      "title": "Biểu thức căn và tính nguyên",
+      "strand": "algebra",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT11"
+      ],
+      "skill_tags": [
+        "sqrt",
+        "integers",
+        "divisibility"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-006",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-001"
+      ],
+      "exam_question_refs": [
+        "EXAM25-02:I"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-007",
+      "title": "Tham số – biệt thức – Viète",
+      "strand": "algebra",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT12"
+      ],
+      "skill_tags": [
+        "discriminant",
+        "vieta",
+        "parameter"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-007",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-002",
+        "A25-011"
+      ],
+      "exam_question_refs": [
+        "EXAM25-03:III"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-008",
+      "title": "Tiếp tuyến và cát tuyến",
+      "strand": "geometry",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT19",
+        "CT17"
+      ],
+      "skill_tags": [
+        "tangent-secant",
+        "cyclic-quadrilateral",
+        "similarity"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-008",
+      "deep_dive_uri": "anchor-25-008/",
+      "figure_uris": [
+        "../../assets/geometry/25/anchor-25-008-tangent-secant.svg"
+      ],
+      "related_anchor_ids": [
+        "A25-009"
+      ],
+      "exam_question_refs": [
+        "EXAM25-02:IV"
+      ],
+      "content_depth": "full_solution_with_variants",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-009",
+      "title": "Trực tâm – hai tứ giác nội tiếp",
+      "strand": "geometry",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT19",
+        "CT15"
+      ],
+      "skill_tags": [
+        "orthocenter",
+        "cyclic-quadrilateral",
+        "angles"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-009",
+      "deep_dive_uri": "anchor-25-009/",
+      "figure_uris": [
+        "../../assets/geometry/25/anchor-25-009-orthocenter.svg"
+      ],
+      "related_anchor_ids": [
+        "A25-008"
+      ],
+      "exam_question_refs": [
+        "EXAM25-03:IV"
+      ],
+      "content_depth": "full_solution_with_variants",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-010",
+      "title": "Làm chung – năng suất",
+      "strand": "application",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT03",
+        "CT24"
+      ],
+      "skill_tags": [
+        "rate",
+        "modelling"
+      ],
+      "representative": true,
+      "source_uri": "bai-toan-kinh-dien/#anchor-25-010",
+      "deep_dive_uri": null,
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-003"
+      ],
+      "exam_question_refs": [
+        "EXAM25-03:II"
+      ],
+      "content_depth": "overview_pending_deep_solution",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    },
+    {
+      "id": "A25-011",
+      "title": "Parabol – đường thẳng – Viète",
+      "strand": "algebra",
+      "grade_overlay": [
+        9
+      ],
+      "learning_layer": "Entrance10",
+      "topic_ids": [
+        "CT10",
+        "CT12"
+      ],
+      "skill_tags": [
+        "parabola",
+        "intersection",
+        "discriminant",
+        "vieta"
+      ],
+      "representative": false,
+      "source_uri": null,
+      "deep_dive_uri": "anchor-25-011/",
+      "figure_uris": [],
+      "related_anchor_ids": [
+        "A25-007",
+        "A25-002"
+      ],
+      "exam_question_refs": [
+        "EXAM25-02:III"
+      ],
+      "content_depth": "full_solution_with_variants",
+      "publication_status": "published",
+      "independent_math_review": "pending_Gemini"
+    }
+  ],
+  "admission_policy": [
+    "Keep a stable anchor ID; never reuse or renumber historical IDs.",
+    "Document source/provenance and independent math review before elevating a new anchor into the representative set.",
+    "Tag topic prerequisites, KNTT/Entrance10/Challenge layer, skills and misconception.",
+    "Search existing structure, not merely changed numbers, to avoid duplicates.",
+    "Geometry anchors require a verifiable diagram and a complete stepwise proof.",
+    "Keep exactly ten representative IDs; the full anchor library can grow indefinitely.",
+    "Changing the representative set is a curatorial decision and must not delete archived anchors or links."
+  ],
+  "review_notes": "Snapshot authored internally. Gemini review requested; do not claim external approval."
+}
