@@ -10,11 +10,15 @@ ok(html.includes('href="kien-thuc/"')&&html.includes('href="roadmap/"'),"links")
 ok(css.includes("prefers-reduced-motion:reduce")&&css.includes(".home-style-card-playful"),"accessibility and style");
 ok(config.includes("study-scene-v1.js"),"loaded script");
 ok(js.includes("roadmap.home.style.v1")&&js.includes("localStorage.setItem")&&js.includes('gateway.hidden = false'),"preference and wake interaction");
-const image=path.join(root,"docs/assets/images/study-kid-sleeping.webp");
-ok(fs.existsSync(image)&&fs.statSync(image).size>10000,"approved illustration bundled locally");
+for(const name of ["study-kid-sleeping.webp","study-kid-awake.webp","tutor-girl-awake.webp"]){
+  const image=path.join(root,"docs/assets/images",name),data=fs.readFileSync(image);
+  ok(data.length>5000&&data.toString("ascii",0,4)==="RIFF"&&data.toString("ascii",8,12)==="WEBP",name+" is an optimized bundled WebP");
+}
+ok(html.includes('data-awake-src="assets/images/study-kid-awake.webp"'),"explicit awake artwork source");
 const classes=new Set(),events={},attrs={};const gateway={hidden:true};
 const wake={addEventListener:(t,fn)=>events.wake=fn,setAttribute:(k,v)=>attrs[k]=v};
-const scene={hidden:true,classList:{contains:v=>classes.has(v),add:v=>classes.add(v)},querySelector:s=>s==="[data-study-wake]"?wake:s==="[data-study-gateway]"?gateway:null};
+const illustration={src:"assets/images/study-kid-sleeping.webp",dataset:{awakeSrc:"assets/images/study-kid-awake.webp"},alt:"sleeping"};
+const scene={hidden:true,classList:{contains:v=>classes.has(v),add:v=>classes.add(v)},querySelector:s=>s==="[data-study-wake]"?wake:s==="[data-study-gateway]"?gateway:s===".study-art-image"?illustration:null};
 const standard={hidden:false};
 const choices={standard:{dataset:{homeSelect:"standard"},setAttribute:(k,v)=>attrs.standard=v,addEventListener:(t,fn)=>events.standard=fn},playful:{dataset:{homeSelect:"playful"},setAttribute:(k,v)=>attrs.playful=v,addEventListener:(t,fn)=>events.playful=fn}};
 const panel={focus:()=>{}}, dialog={hidden:true,querySelector:s=>s===".home-style-panel"?panel:null,addEventListener:(t,fn)=>events[t]=fn,querySelectorAll:()=>[]};
@@ -24,5 +28,6 @@ vm.runInNewContext(js,{document:doc,localStorage:{getItem:()=>null,setItem:(k,v)
 ok(!dialog.hidden&&standard.hidden===false&&scene.hidden===true,"first visit chooser and stable default");
 events.playful();ok(dialog.hidden&&scene.hidden===false&&standard.hidden&&attrs.saved==="playful","switch and save");
 events.wake();ok(!gateway.hidden&&classes.has("is-awake"),"wake reveals navigation");
+ok(illustration.src==="assets/images/study-kid-awake.webp"&&illustration.alt.includes("mở mắt"),"waking swaps to eyes-open happy illustration");
 events.standard();ok(scene.hidden&& !standard.hidden&&attrs.saved==="standard","switch back preserves standard portal");
 console.log("PASS: two styles, first visit chooser, state persistence, visual asset, wake links, safe fallback.");
