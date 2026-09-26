@@ -10,7 +10,7 @@ Trạng thái: **REQUEST_FOR_REVIEW** (chưa được Gemini kiểm định; tuy
 - Kiểm kê và nghi vấn: https://raw.githubusercontent.com/TMA2015/roadmap-toan-thcs/main/docs/assets/data/curriculum/skill-taxonomy-audit-v1.json
 - Knowledge Graph đang chạy (chỉ là bản chọn lọc 41 node, KHÔNG phải chuẩn bao phủ): https://raw.githubusercontent.com/TMA2015/roadmap-toan-thcs/main/docs/assets/data/curriculum/knowledge-graph-v1.json
 
-Mỗi snapshot lưu đường dẫn manifest gốc, SHA, `skill_labels`, `skill_groups`, nguồn câu hỏi và số câu **khai báo**. Cần mở file nguồn tương ứng khi gặp ca trùng/tách; không kết luận chỉ từ tên tag.
+Mỗi snapshot lưu đường dẫn manifest gốc, SHA, `skill_labels`, `skill_groups` và nguồn câu hỏi. Đã kiểm tra 99 tệp nguồn, 2.874 câu, 3.414 lượt gắn kỹ năng, 346 mã quan sát; không có tag ngoài manifest, tag chưa dùng, câu thiếu tag hoặc ID trùng trong cùng chuyên đề. Các kết quả theo từng mã và ID câu ví dụ nằm ở 12 file `review-question-audit-*.json` cùng thư mục (04-05, 06-07, 08-09, 10-11, 12-13, 14-15, 16-17, 18, 19-20, 21-22, 23-24, 25). Đây chỉ là kiểm tra cấu trúc, không chứng minh nội dung toán đúng hoặc hai skill khác nhau thực sự độc lập. Khi gặp ca trùng/tách, phải mở câu hỏi nguồn; không kết luận chỉ từ tên tag.
 
 ## Nguồn học thuật, đề thi
 
@@ -28,7 +28,7 @@ Mục tiêu: chuẩn hóa danh mục kỹ năng **theo năng lực có thể đo
 
 Trình bày đề xuất theo 6 hành động: KEEP, MERGE, SPLIT, RENAME, RECLASSIFY, ADD; nêu rõ `old_ids`, `proposed_canonical_id`, nhãn, mô tả đầu ra, chuyên đề/lớp, ID câu hỏi ví dụ, lý do, độ tin cậy, và `needs_human_review`. Không xóa hay đổi ID trong question bank, không tự gộp thống kê học sinh; cần `legacy_aliases` và chiến lược migration có thể kiểm thử.
 
-Phải phân tích các điểm sau trước khi mở rộng danh sách: mã `cach-deu-dinh` gắn vào 14 và 15 với nghĩa khác nhau; câu `TRI14V1_132` có ngữ cảnh ba đỉnh, nên cấm tự động tách chỉ dựa trên chuyên đề. Các nhóm `dieu-kien-xac-dinh / dkxd-phuong-trinh-mau / dkxd-can / giu-dieu-kien-ban-dau / doi-chieu-nghiem`; `lap-he-bai-toan / lap-he / lap-phuong-trinh`; `binh-phuong-hoan-chinh` giữa 05–06; tag tổng hợp ở 25. Chỉ ra cả các trường hợp **không nên gộp**. So sánh toàn bộ 346 mã để tìm trùng khác tên và kỹ năng đầu ra quá rộng.
+Hãy ưu tiên kiểm tra hai cặp khác mã nhưng trùng nhãn: `chuyen-dong-he` / `chuyen-dong`, `chung-minh-tiep-tuyen` / `tiep-tuyen-chung-minh`. Không được mặc định gộp khi hai trường hợp có yêu cầu đầu ra khác nhau. Phải phân tích các điểm sau trước khi mở rộng danh sách: mã `cach-deu-dinh` gắn vào 14 và 15 với nghĩa khác nhau; câu `TRI14V1_132` có ngữ cảnh ba đỉnh, nên cấm tự động tách chỉ dựa trên chuyên đề. Các nhóm `dieu-kien-xac-dinh / dkxd-phuong-trinh-mau / dkxd-can / giu-dieu-kien-ban-dau / doi-chieu-nghiem`; `lap-he-bai-toan / lap-he / lap-phuong-trinh`; `binh-phuong-hoan-chinh` giữa 05–06; tag tổng hợp ở 25. Chỉ ra cả các trường hợp **không nên gộp**. So sánh toàn bộ 346 mã để tìm trùng khác tên và kỹ năng đầu ra quá rộng.
 
 ## Prompt gửi Gemini — vòng B: tầm quan trọng, phân tầng và đề thi
 
@@ -44,7 +44,7 @@ Kiểm tra các dạng bài trong đề thực tế chưa được ngân hàng �
 
 ## Đầu ra và điều kiện hoàn thành
 
-Gửi 3 phần: (1) báo cáo executive ngắn + danh sách vấn đề nghiêm trọng; (2) JSON machine-readable theo mẫu `gemini-skill-review-response-v1.json` trong cùng thư mục; (3) bảng các quyết định còn tranh luận kèm bằng chứng cần thu thập. Để đảm bảo đầy đủ, xuất lần lượt cho 04–11, 12–18, 19–25, rồi một vòng rà soát **trùng chéo giữa các batch**. Không chỉ phản biện 41 node có sẵn. Đừng gắn nhãn APPROVED khi chưa đọc và đối chiếu câu hỏi nguồn.
+Gửi 3 phần: (1) báo cáo executive ngắn + danh sách vấn đề nghiêm trọng; (2) JSON machine-readable theo mẫu `docs/assets/data/curriculum/gemini-skill-review-response-v1.example.json`; (3) bảng các quyết định còn tranh luận kèm bằng chứng cần thu thập. Để đảm bảo đầy đủ, xuất lần lượt cho 04–11, 12–18, 19–25, rồi một vòng rà soát **trùng chéo giữa các batch**. Không chỉ phản biện 41 node có sẵn. Đừng gắn nhãn APPROVED khi chưa đọc và đối chiếu câu hỏi nguồn.
 
 ## Điều kiện tích hợp của ChatGPT sau phản biện
 
