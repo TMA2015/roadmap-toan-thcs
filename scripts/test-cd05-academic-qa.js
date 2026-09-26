@@ -31,7 +31,7 @@ const blocks=s=>[...s.matchAll(/\\\((.*?)\\\)/gs)].map(m=>m[1]);
 function normalize(src){
  let s=src.replace(/\\(?:dfrac|frac)\{([^{}]+)\}\{([^{}]+)\}/g,"($1)/($2)")
    .replace(/\\(?:cdot|times)/g,"*").replace(/\^\{([^{}]+)\}/g,"^($1)")
-   .replace(/\s+/g,"").replace(/\\[()]/g,"").replace(/[{}]/g,c=>c==="{"?"(":")");
+   .replace(/\\ /g,"").replace(/\s+/g,"").replace(/\\[()]/g,"").replace(/[{}]/g,c=>c==="{"?"(":")");
  return s;
 }
 function evaluate(source,vars){
@@ -76,7 +76,8 @@ for(const q of questions){
   variantChecks.push(q.id);
  }else if(n>=69&&n<=74){
   assert.ok(math.length>=2,q.id+" missing k equation");
-  const expr=math[0],goal=math[1];
+  assert.ok(math.length>=3 && math[0]==="k",q.id+" missing k label");
+  const expr=math[1],goal=math[2];
   for(let index=0;index<4;index++){
     const val=Number(blocks(q.options[index])[0]);
     assert.ok(Number.isFinite(val),q.id+" invalid k");
@@ -132,8 +133,8 @@ for(const q of questions){
   manualChecks.push(q.id);
  }else throw Error("uncovered ID "+q.id);
 }
-assert.equal(variantChecks.length,94,"algebraic oracle count drift");
-assert.equal(manualChecks.length,26,"concept/equation proof method count drift");
+assert.equal(variantChecks.length,104,"algebraic oracle count drift");
+assert.equal(manualChecks.length,16,"concept/equation proof method count drift");
 const reviewedQuestions=questions.filter(q=>Number(q.id.split("_").at(-1))>=116);
 assert.equal(reviewedQuestions.length,5);
 for(const q of reviewedQuestions){
