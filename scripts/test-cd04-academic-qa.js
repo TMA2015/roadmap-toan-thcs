@@ -105,7 +105,7 @@ for(const [id,variable] of Object.entries(conditions)){
   assert.ok(q.explanation.includes(variable+"\\ne0"),id+" explanation missing nonzero divisor");
 }
 for(const id of ["ALG04V2_111","ALG04V2_116","ALG04V2_117"]){
-  assert.ok(byId.get(id).question.includes("với \\(x"),id+" missing context condition");
+  assert.ok(byId.get(id).question.toLowerCase().includes("với \\(x"),id+" missing context condition");
 }
 console.log("PASS eight explicit domain/real-life assumption clarifications");
 for(const filename of sources){
