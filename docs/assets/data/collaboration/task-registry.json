@@ -537,6 +537,14 @@
       "routing": "INDEPENDENT_REVIEW+CHATGPT_VERIFY",
       "status": "OPEN",
       "review_notes": "Gemini response lists 17/23 files. Obtain targeted independent source-locked review of 6 unlisted sources and new deep pages A25-006/007/010 when Math project resumes. This follow-up is not a reported critical math error; do not block use of existing exam content or merge technically validated editorial additions solely due to missing file list."
+    },
+    {
+      "id": "TOPIC25-R2-EDITORIAL-DEEP-001",
+      "title": "Publish three post-Gemini R2 deep-dive anchor lessons",
+      "routing": "CHATGPT_AUTHOR+CI_BROWSER_QA",
+      "status": "DONE",
+      "review_verdict": "EDITORIAL_CHECKED_CI_BROWSER_DEPLOYED_NOT_GEMINI_POSTREVIEW",
+      "review_notes": "PR #122 merged as 2865e1e82749484300244234e95cad8b6ca05f7a. New pages A25-006/007/010 connect to catalog and library, IDs/URLs unchanged. CI run 36233772681 PASS and deployment run 36233855045 PASS. The Gemini R2 review was on prior source snapshot; these new pages were independently added afterwards. Follow-up TOPIC25-R2-SOURCE-COVERAGE-001 remains OPEN."
     }
   ]
 }
