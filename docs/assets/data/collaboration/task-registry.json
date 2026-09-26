@@ -503,8 +503,10 @@
       "title": "Independent review of Topic25 geometry proofs and exam keys",
       "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
       "status": "OPEN",
-      "packet": "review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26.txt",
-      "review_notes": "Review actual frozen sources/diagrams, validate mathematical claims and all three mock keys. Do not mark PASS until the external review result has been received and verified; do not treat CI link checks as mathematical proof."
+      "packet": "review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26_MAIN_R2.txt",
+      "review_notes": "R2 pack snapshot 04b275cb5870a2fbd8f540333b96529285277883; exact 23 current-source Markdown/JSON/SVG files including anchor catalog, 11 anchors and exam rubric. Original 13-file packet predates PR #112 and MUST NOT be used for sign-off. Structural preflight: 3 exams 120 minutes / 10 points, rubric sums and anchor/topic links valid. Independent math/Gemini result NOT RECEIVED; do not mark PASS until source-locked findings are checked against current revision.",
+      "source_commit": "04b275cb5870a2fbd8f540333b96529285277883",
+      "packet_source_count": 23
     }
   ]
 }
