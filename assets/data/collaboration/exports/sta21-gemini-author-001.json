@@ -1,0 +1,2994 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "STA21-GEMINI-AUTHOR-001",
+  "task_id": "STA21-AUTHOR-001",
+  "context_version": "1.0.39",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "AUTHOR",
+  "scope": {
+    "topic_id": "21-thong-ke",
+    "title": "Thống kê và thu thập dữ liệu",
+    "layer": "KNTT-Core",
+    "batch_size": 12,
+    "skills": [
+      {
+        "id": "du-lieu-phan-loai",
+        "count": 4,
+        "grades": [
+          6,
+          7
+        ],
+        "focus": "Distinguish numerical/categorical values; avoid confusing a variable name with its observed value."
+      },
+      {
+        "id": "thu-thap-du-lieu",
+        "count": 4,
+        "grades": [
+          6,
+          7,
+          8
+        ],
+        "focus": "Choose methods fit for a measurable question, observation time, population and recording accuracy."
+      },
+      {
+        "id": "doc-bieu-do-cot",
+        "count": 4,
+        "grades": [
+          6,
+          8
+        ],
+        "focus": "Read actual numerical values, units and comparisons from complete text-specified bar-chart datasets."
+      }
+    ],
+    "id_range": "STA21NEW_001 through STA21NEW_012 (draft IDs; ChatGPT normalizes final IDs)",
+    "excluded": [
+      "kiem-tra-chat-luong",
+      "mau-thien-lech",
+      "du-lieu-ghep-nhom",
+      "tan-suat",
+      "other skills outside batch"
+    ]
+  },
+  "source_lock": {
+    "source_of_truth": [
+      "docs/assets/data/practice/21-thong-ke-v1.manifest.json",
+      "docs/assets/data/practice/21-thong-ke-v1-01.json",
+      "docs/assets/data/practice/21-thong-ke-v1-02.json",
+      "docs/assets/data/practice/21-thong-ke-v1-03.json",
+      "docs/assets/data/practice/21-thong-ke-v1-04.json",
+      "docs/assets/data/curriculum/kntt-grade6-map.json",
+      "docs/assets/data/curriculum/kntt-grade7-map.json",
+      "docs/assets/data/curriculum/kntt-grade8-map.json",
+      "docs/assets/data/curriculum/golden-template-v1.json"
+    ],
+    "existing_bank_count": 120,
+    "rule": "Use source bundle as authoritative: reject duplicate or near-duplicate existing questions, preserve exact skill IDs and Core mapping; proposed refinements not auto promoted."
+  },
+  "deliverable": {
+    "format": "JSON object",
+    "result_packet_id": "STA21-GEMINI-AUTHOR-001-RESULT",
+    "fields": [
+      "packet_id",
+      "status",
+      "questions",
+      "editorial_notes",
+      "uncertainties"
+    ],
+    "question_shape": {
+      "id": "STA21NEW_001",
+      "question": "Vietnamese question with all necessary data",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "du-lieu-phan-loai"
+        ],
+        "type": "specific-question-type",
+        "layer": "KNTT-Core"
+      },
+      "difficulty": "basic | intermediate | advanced",
+      "explanation": "full student-facing explanation",
+      "hints": [
+        "short conceptual hint",
+        "more concrete hint without giving answer"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "author_check": "explicit calculation or unique-answer check"
+    },
+    "constraints": [
+      "12 items exactly, 4 per whitelisted skill; 4 unique answer options and exactly one correct answer; answer integer 0..3, vary correct position; no ambiguous chart values or reading diagrams to scale.",
+      "At least 4 tasks interpret a realistic dataset, at least 3 check a common misconception with plausible distractors.",
+      "No new diagram asset needed in this first batch; for bar-chart items state the entire categorical data table within the question and use correct units.",
+      "Do not invent statistics or claim survey facts are real: label small datasets hypothetical.",
+      "Explanations show values/operation and units; make errors diagnostically useful.",
+      "Every scored item has exactly one assessed skill. No cross-credit for supporting skills.",
+      "Keep hints in author draft only; these will not be attached to Core Readiness; this batch is interactive Practice Bank only.",
+      "Do not change or claim to have committed repository files; return only one complete JSON packet."
+    ],
+    "acceptance": "AUTHOR_DRAFT_PENDING_CHATGPT_QA"
+  },
+  "source_bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-gemini-author-001.json",
+  "source_snapshot": {
+    "manifest": {
+      "version": 2,
+      "schema": "practice-bank-manifest-v1",
+      "bank_id": "STA21-V1",
+      "topic": {
+        "id": "21-thong-ke",
+        "title": "Thống kê và thu thập dữ liệu"
+      },
+      "session_size": 10,
+      "question_count": 120,
+      "skill_labels": {
+        "du-lieu-phan-loai": "Dữ liệu và phân loại dữ liệu",
+        "thu-thap-du-lieu": "Thu thập dữ liệu",
+        "kiem-tra-chat-luong": "Kiểm tra chất lượng dữ liệu",
+        "mau-thien-lech": "Nhận biết mẫu thiên lệch",
+        "bang-tan-so": "Bảng tần số",
+        "tan-suat": "Tần suất và phần trăm",
+        "doc-bieu-do-cot": "Đọc biểu đồ cột",
+        "doc-bieu-do-doan-thang": "Đọc biểu đồ đoạn thẳng",
+        "chon-bieu-do": "Chọn dạng biểu diễn",
+        "chuyen-bang-bieu-do": "Chuyển đổi bảng – biểu đồ",
+        "nhan-xet-du-lieu": "Nhận xét và kết luận từ dữ liệu",
+        "don-vi-thang-do": "Đơn vị và thang đo",
+        "doc-bieu-do-cot-kep": "Đọc và so sánh biểu đồ cột kép",
+        "bieu-do-quat-tron": "Biểu đồ hình quạt tròn",
+        "du-lieu-ghep-nhom": "Dữ liệu và tần số ghép nhóm"
+      },
+      "skill_groups": [
+        {
+          "id": "du-lieu-thu-thap",
+          "label": "A. Dữ liệu và thu thập",
+          "skills": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "kiem-tra-chat-luong",
+            "mau-thien-lech"
+          ]
+        },
+        {
+          "id": "to-chuc-du-lieu",
+          "label": "B. Tổ chức dữ liệu",
+          "skills": [
+            "bang-tan-so",
+            "tan-suat",
+            "du-lieu-ghep-nhom"
+          ]
+        },
+        {
+          "id": "bieu-dien-du-lieu",
+          "label": "C. Biểu diễn dữ liệu",
+          "skills": [
+            "doc-bieu-do-cot",
+            "doc-bieu-do-doan-thang",
+            "doc-bieu-do-cot-kep",
+            "bieu-do-quat-tron",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do"
+          ]
+        },
+        {
+          "id": "phan-tich-du-lieu",
+          "label": "D. Phân tích và kết luận",
+          "skills": [
+            "nhan-xet-du-lieu",
+            "don-vi-thang-do"
+          ]
+        }
+      ],
+      "sources": [
+        "21-thong-ke-v1-01.json",
+        "21-thong-ke-v1-02.json",
+        "21-thong-ke-v1-03.json",
+        "21-thong-ke-v1-04.json"
+      ]
+    },
+    "core_curriculum": {
+      "6": {
+        "status": "reviewed",
+        "primary_lessons": [
+          {
+            "chapter": "Dữ liệu và xác suất thực nghiệm",
+            "lesson": {
+              "lessons": "Bài 38-41",
+              "core": "Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép",
+              "roadmap": [
+                {
+                  "topic_id": "21-thong-ke",
+                  "relation": "PRIMARY"
+                },
+                {
+                  "topic_id": "24-bai-toan-thuc-te",
+                  "relation": "SECONDARY"
+                }
+              ],
+              "skills": [
+                "du-lieu",
+                "thu-thap-du-lieu",
+                "bang-thong-ke",
+                "bieu-do-tranh",
+                "doc-bieu-do-cot",
+                "doc-bieu-do-cot-kep",
+                "nhan-xet-du-lieu"
+              ]
+            }
+          }
+        ],
+        "practice_alignment": {
+          "existing_core_skills": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep",
+            "nhan-xet-du-lieu"
+          ],
+          "proposed_refinements": [
+            "bang-thong-ke",
+            "bieu-do-tranh"
+          ],
+          "exclude_from_grade6_core": [
+            "kiem-tra-chat-luong",
+            "mau-thien-lech",
+            "bang-tan-so",
+            "tan-suat",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "don-vi-thang-do",
+            "bieu-do-quat-tron",
+            "du-lieu-ghep-nhom"
+          ]
+        }
+      },
+      "7": {
+        "status": "reviewed",
+        "primary_lessons": [
+          {
+            "chapter": "Thu thập và biểu diễn dữ liệu",
+            "lesson": {
+              "lessons": "Bài 17",
+              "core": "Thu thập và phân loại dữ liệu.",
+              "roadmap": [
+                {
+                  "topic_id": "21-thong-ke",
+                  "relation": "PRIMARY"
+                }
+              ],
+              "existing_skills": [
+                "du-lieu-phan-loai",
+                "thu-thap-du-lieu"
+              ],
+              "proposed_skills": [],
+              "upstream": [
+                "du-lieu",
+                "bang-thong-ke"
+              ],
+              "downstream": [
+                "chon-bieu-do",
+                "nhan-xet-du-lieu",
+                "dai-luong-dac-trung"
+              ]
+            }
+          },
+          {
+            "chapter": "Thu thập và biểu diễn dữ liệu",
+            "lesson": {
+              "lessons": "Bài 18-19",
+              "core": "Biểu đồ hình quạt tròn và biểu đồ đoạn thẳng; đọc, biểu diễn và nhận xét dữ liệu.",
+              "roadmap": [
+                {
+                  "topic_id": "21-thong-ke",
+                  "relation": "PRIMARY"
+                },
+                {
+                  "topic_id": "03-ti-le-ti-le-thuc",
+                  "relation": "SECONDARY"
+                }
+              ],
+              "existing_skills": [
+                "bieu-do-quat-tron",
+                "doc-bieu-do-doan-thang",
+                "chon-bieu-do",
+                "chuyen-bang-bieu-do",
+                "nhan-xet-du-lieu"
+              ],
+              "proposed_skills": [
+                "ve-bieu-do-quat-tron",
+                "ve-bieu-do-doan-thang"
+              ],
+              "upstream": [
+                "ti-so-phan-tram",
+                "doc-bieu-do-cot",
+                "doc-bieu-do-cot-kep"
+              ],
+              "downstream": [
+                "tan-suat",
+                "dai-luong-dac-trung",
+                "thong-ke-thuc-te"
+              ]
+            }
+          }
+        ],
+        "practice_alignment": null
+      },
+      "8": {
+        "status": "reviewed",
+        "primary_lessons": [
+          {
+            "chapter": "Dữ liệu và biểu đồ",
+            "lesson": {
+              "lessons": "Bài 18-20",
+              "core": "Thu thập, phân loại, biểu diễn và phân tích dữ liệu; chọn/đọc/chuyển dạng biểu đồ; nhận xét số liệu từ biểu đồ.",
+              "roadmap": [
+                {
+                  "topic_id": "21-thong-ke",
+                  "relation": "PRIMARY"
+                }
+              ],
+              "existing_skills": [
+                "du-lieu-phan-loai",
+                "thu-thap-du-lieu",
+                "doc-bieu-do-cot",
+                "doc-bieu-do-doan-thang",
+                "chon-bieu-do",
+                "chuyen-bang-bieu-do",
+                "nhan-xet-du-lieu",
+                "doc-bieu-do-cot-kep",
+                "bieu-do-quat-tron"
+              ],
+              "proposed_skills": [],
+              "upstream": [
+                "bang-thong-ke",
+                "bieu-do-cot",
+                "bieu-do-quat-tron",
+                "ti-so-phan-tram"
+              ],
+              "downstream": [
+                "trung-binh-tho",
+                "trung-vi",
+                "mot",
+                "thong-ke-thuc-te"
+              ]
+            }
+          }
+        ],
+        "practice_alignment": null
+      }
+    },
+    "existing_questions": [
+      {
+        "id": "STA21V1_001",
+        "question": "Trong một khảo sát, “số giờ ngủ của một học sinh” thuộc loại dữ liệu nào?",
+        "options": [
+          "dữ liệu số",
+          "dữ liệu phân loại",
+          "không phải dữ liệu",
+          "chỉ là tên biến, không có giá trị"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-phan-loai"
+          ],
+          "type": "phan-loai-du-lieu"
+        },
+        "difficulty": "basic",
+        "explanation": "“số giờ ngủ của một học sinh” được ghi nhận dưới dạng con số đo/đếm, nên là dữ liệu số."
+      },
+      {
+        "id": "STA21V1_002",
+        "question": "Trong một khảo sát, “màu yêu thích” thuộc loại dữ liệu nào?",
+        "options": [
+          "dữ liệu phân loại",
+          "dữ liệu số",
+          "không phải dữ liệu",
+          "chỉ là tên biến, không có giá trị"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-phan-loai"
+          ],
+          "type": "phan-loai-du-lieu"
+        },
+        "difficulty": "basic",
+        "explanation": "“màu yêu thích” được ghi nhận dưới dạng nhóm hoặc loại, nên là dữ liệu phân loại."
+      },
+      {
+        "id": "STA21V1_003",
+        "question": "Trong một khảo sát, “chiều cao của học sinh” thuộc loại dữ liệu nào?",
+        "options": [
+          "dữ liệu số",
+          "dữ liệu phân loại",
+          "không phải dữ liệu",
+          "chỉ là tên biến, không có giá trị"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-phan-loai"
+          ],
+          "type": "phan-loai-du-lieu"
+        },
+        "difficulty": "intermediate",
+        "explanation": "“chiều cao của học sinh” được ghi nhận dưới dạng con số đo/đếm, nên là dữ liệu số."
+      },
+      {
+        "id": "STA21V1_004",
+        "question": "Trong một khảo sát, “phương tiện đi học” thuộc loại dữ liệu nào?",
+        "options": [
+          "dữ liệu phân loại",
+          "dữ liệu số",
+          "không phải dữ liệu",
+          "chỉ là tên biến, không có giá trị"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-phan-loai"
+          ],
+          "type": "phan-loai-du-lieu"
+        },
+        "difficulty": "intermediate",
+        "explanation": "“phương tiện đi học” được ghi nhận dưới dạng nhóm hoặc loại, nên là dữ liệu phân loại."
+      },
+      {
+        "id": "STA21V1_005",
+        "question": "Trong một khảo sát, “số anh chị em trong gia đình” thuộc loại dữ liệu nào?",
+        "options": [
+          "dữ liệu số",
+          "dữ liệu phân loại",
+          "không phải dữ liệu",
+          "chỉ là tên biến, không có giá trị"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-phan-loai"
+          ],
+          "type": "phan-loai-du-lieu"
+        },
+        "difficulty": "advanced",
+        "explanation": "“số anh chị em trong gia đình” được ghi nhận dưới dạng con số đo/đếm, nên là dữ liệu số."
+      },
+      {
+        "id": "STA21V1_006",
+        "question": "Trong một khảo sát, “loại sách yêu thích” thuộc loại dữ liệu nào?",
+        "options": [
+          "dữ liệu phân loại",
+          "dữ liệu số",
+          "không phải dữ liệu",
+          "chỉ là tên biến, không có giá trị"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-phan-loai"
+          ],
+          "type": "phan-loai-du-lieu"
+        },
+        "difficulty": "basic",
+        "explanation": "“loại sách yêu thích” được ghi nhận dưới dạng nhóm hoặc loại, nên là dữ liệu phân loại."
+      },
+      {
+        "id": "STA21V1_007",
+        "question": "Trong một khảo sát, “nhiệt độ lúc 7 giờ” thuộc loại dữ liệu nào?",
+        "options": [
+          "dữ liệu số",
+          "dữ liệu phân loại",
+          "không phải dữ liệu",
+          "chỉ là tên biến, không có giá trị"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-phan-loai"
+          ],
+          "type": "phan-loai-du-lieu"
+        },
+        "difficulty": "basic",
+        "explanation": "“nhiệt độ lúc 7 giờ” được ghi nhận dưới dạng con số đo/đếm, nên là dữ liệu số."
+      },
+      {
+        "id": "STA21V1_008",
+        "question": "Trong một khảo sát, “nhóm máu” thuộc loại dữ liệu nào?",
+        "options": [
+          "dữ liệu phân loại",
+          "dữ liệu số",
+          "không phải dữ liệu",
+          "chỉ là tên biến, không có giá trị"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-phan-loai"
+          ],
+          "type": "phan-loai-du-lieu"
+        },
+        "difficulty": "intermediate",
+        "explanation": "“nhóm máu” được ghi nhận dưới dạng nhóm hoặc loại, nên là dữ liệu phân loại."
+      },
+      {
+        "id": "STA21V1_011",
+        "question": "Muốn thu thập dữ liệu về món ăn yêu thích của học sinh khối 7, cách phù hợp nhất là:",
+        "options": [
+          "phiếu hỏi hoặc biểu mẫu khảo sát",
+          "ước lượng bằng cảm giác",
+          "tự đặt số liệu cho đủ bảng",
+          "chỉ hỏi/đo một trường hợp rồi suy ra tất cả"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "thu-thap-du-lieu"
+          ],
+          "type": "chon-cach-thu-thap"
+        },
+        "difficulty": "basic",
+        "explanation": "Cách thu thập phải trực tiếp phù hợp với đại lượng cần quan sát và có thể kiểm tra lại."
+      },
+      {
+        "id": "STA21V1_012",
+        "question": "Muốn thu thập dữ liệu về chiều cao của học sinh lớp 6A, cách phù hợp nhất là:",
+        "options": [
+          "đo trực tiếp bằng dụng cụ phù hợp",
+          "ước lượng bằng cảm giác",
+          "tự đặt số liệu cho đủ bảng",
+          "chỉ hỏi/đo một trường hợp rồi suy ra tất cả"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "thu-thap-du-lieu"
+          ],
+          "type": "chon-cach-thu-thap"
+        },
+        "difficulty": "basic",
+        "explanation": "Cách thu thập phải trực tiếp phù hợp với đại lượng cần quan sát và có thể kiểm tra lại."
+      },
+      {
+        "id": "STA21V1_013",
+        "question": "Muốn thu thập dữ liệu về nhiệt độ sân trường lúc 7 giờ mỗi ngày, cách phù hợp nhất là:",
+        "options": [
+          "đo và ghi chép vào cùng thời điểm",
+          "ước lượng bằng cảm giác",
+          "tự đặt số liệu cho đủ bảng",
+          "chỉ hỏi/đo một trường hợp rồi suy ra tất cả"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "thu-thap-du-lieu"
+          ],
+          "type": "chon-cach-thu-thap"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Cách thu thập phải trực tiếp phù hợp với đại lượng cần quan sát và có thể kiểm tra lại."
+      },
+      {
+        "id": "STA21V1_014",
+        "question": "Muốn thu thập dữ liệu về số xe đi qua cổng trường trong 15 phút, cách phù hợp nhất là:",
+        "options": [
+          "quan sát và ghi đếm",
+          "ước lượng bằng cảm giác",
+          "tự đặt số liệu cho đủ bảng",
+          "chỉ hỏi/đo một trường hợp rồi suy ra tất cả"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "thu-thap-du-lieu"
+          ],
+          "type": "chon-cach-thu-thap"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Cách thu thập phải trực tiếp phù hợp với đại lượng cần quan sát và có thể kiểm tra lại."
+      },
+      {
+        "id": "STA21V1_015",
+        "question": "Muốn thu thập dữ liệu về thời gian tự học mỗi tối của học sinh, cách phù hợp nhất là:",
+        "options": [
+          "nhật ký hoặc biểu mẫu ghi thời gian",
+          "ước lượng bằng cảm giác",
+          "tự đặt số liệu cho đủ bảng",
+          "chỉ hỏi/đo một trường hợp rồi suy ra tất cả"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "thu-thap-du-lieu"
+          ],
+          "type": "chon-cach-thu-thap"
+        },
+        "difficulty": "advanced",
+        "explanation": "Cách thu thập phải trực tiếp phù hợp với đại lượng cần quan sát và có thể kiểm tra lại."
+      },
+      {
+        "id": "STA21V1_016",
+        "question": "Muốn thu thập dữ liệu về lượng mưa hằng ngày, cách phù hợp nhất là:",
+        "options": [
+          "đọc thiết bị đo và ghi chép định kỳ",
+          "ước lượng bằng cảm giác",
+          "tự đặt số liệu cho đủ bảng",
+          "chỉ hỏi/đo một trường hợp rồi suy ra tất cả"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "thu-thap-du-lieu"
+          ],
+          "type": "chon-cach-thu-thap"
+        },
+        "difficulty": "basic",
+        "explanation": "Cách thu thập phải trực tiếp phù hợp với đại lượng cần quan sát và có thể kiểm tra lại."
+      },
+      {
+        "id": "STA21V1_017",
+        "question": "Muốn thu thập dữ liệu về số cuốn sách thư viện được mượn mỗi ngày, cách phù hợp nhất là:",
+        "options": [
+          "trích xuất sổ hoặc hệ thống mượn trả",
+          "ước lượng bằng cảm giác",
+          "tự đặt số liệu cho đủ bảng",
+          "chỉ hỏi/đo một trường hợp rồi suy ra tất cả"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "thu-thap-du-lieu"
+          ],
+          "type": "chon-cach-thu-thap"
+        },
+        "difficulty": "basic",
+        "explanation": "Cách thu thập phải trực tiếp phù hợp với đại lượng cần quan sát và có thể kiểm tra lại."
+      },
+      {
+        "id": "STA21V1_018",
+        "question": "Muốn thu thập dữ liệu về ý kiến về hoạt động ngoại khóa, cách phù hợp nhất là:",
+        "options": [
+          "khảo sát bằng câu hỏi rõ ràng",
+          "ước lượng bằng cảm giác",
+          "tự đặt số liệu cho đủ bảng",
+          "chỉ hỏi/đo một trường hợp rồi suy ra tất cả"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "thu-thap-du-lieu"
+          ],
+          "type": "chon-cach-thu-thap"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Cách thu thập phải trực tiếp phù hợp với đại lượng cần quan sát và có thể kiểm tra lại."
+      },
+      {
+        "id": "STA21V1_021",
+        "question": "Khi kiểm tra chất lượng dữ liệu, phát hiện bảng có 50 quan sát nhưng tổng tần số chỉ là 48. Xử lý hợp lý nhất là:",
+        "options": [
+          "đếm lại dữ liệu và đối chiếu các giá trị bị bỏ sót",
+          "bỏ qua vì tổng thể vẫn đủ lớn",
+          "vẽ biểu đồ ngay để che lỗi",
+          "thay bằng một số bất kỳ gần đó"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "kiem-tra-chat-luong"
+          ],
+          "type": "kiem-tra-du-lieu"
+        },
+        "difficulty": "basic",
+        "explanation": "Chất lượng dữ liệu phải được kiểm tra và làm sạch trước khi tính toán hay kết luận."
+      },
+      {
+        "id": "STA21V1_022",
+        "question": "Khi kiểm tra chất lượng dữ liệu, phát hiện chiều cao được ghi lẫn cm và m. Xử lý hợp lý nhất là:",
+        "options": [
+          "đổi toàn bộ về cùng một đơn vị trước khi phân tích",
+          "bỏ qua vì tổng thể vẫn đủ lớn",
+          "vẽ biểu đồ ngay để che lỗi",
+          "thay bằng một số bất kỳ gần đó"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "kiem-tra-chat-luong"
+          ],
+          "type": "kiem-tra-du-lieu"
+        },
+        "difficulty": "basic",
+        "explanation": "Chất lượng dữ liệu phải được kiểm tra và làm sạch trước khi tính toán hay kết luận."
+      },
+      {
+        "id": "STA21V1_023",
+        "question": "Khi kiểm tra chất lượng dữ liệu, phát hiện một học sinh bị ghi hai lần. Xử lý hợp lý nhất là:",
+        "options": [
+          "loại bản ghi trùng hoặc xác minh lại danh tính",
+          "bỏ qua vì tổng thể vẫn đủ lớn",
+          "vẽ biểu đồ ngay để che lỗi",
+          "thay bằng một số bất kỳ gần đó"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "kiem-tra-chat-luong"
+          ],
+          "type": "kiem-tra-du-lieu"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Chất lượng dữ liệu phải được kiểm tra và làm sạch trước khi tính toán hay kết luận."
+      },
+      {
+        "id": "STA21V1_024",
+        "question": "Khi kiểm tra chất lượng dữ liệu, phát hiện có một ô dữ liệu trống không rõ lý do. Xử lý hợp lý nhất là:",
+        "options": [
+          "xác minh dữ liệu thiếu trước khi kết luận",
+          "bỏ qua vì tổng thể vẫn đủ lớn",
+          "vẽ biểu đồ ngay để che lỗi",
+          "thay bằng một số bất kỳ gần đó"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "kiem-tra-chat-luong"
+          ],
+          "type": "kiem-tra-du-lieu"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Chất lượng dữ liệu phải được kiểm tra và làm sạch trước khi tính toán hay kết luận."
+      },
+      {
+        "id": "STA21V1_025",
+        "question": "Khi kiểm tra chất lượng dữ liệu, phát hiện nhiệt độ các ngày được đo vào nhiều thời điểm khác nhau. Xử lý hợp lý nhất là:",
+        "options": [
+          "chuẩn hóa thời điểm đo hoặc ghi rõ sự khác biệt",
+          "bỏ qua vì tổng thể vẫn đủ lớn",
+          "vẽ biểu đồ ngay để che lỗi",
+          "thay bằng một số bất kỳ gần đó"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "kiem-tra-chat-luong"
+          ],
+          "type": "kiem-tra-du-lieu"
+        },
+        "difficulty": "advanced",
+        "explanation": "Chất lượng dữ liệu phải được kiểm tra và làm sạch trước khi tính toán hay kết luận."
+      },
+      {
+        "id": "STA21V1_026",
+        "question": "Khi kiểm tra chất lượng dữ liệu, phát hiện một giá trị 850 cm xuất hiện trong bảng chiều cao học sinh. Xử lý hợp lý nhất là:",
+        "options": [
+          "kiểm tra khả năng nhập sai hoặc sai đơn vị",
+          "bỏ qua vì tổng thể vẫn đủ lớn",
+          "vẽ biểu đồ ngay để che lỗi",
+          "thay bằng một số bất kỳ gần đó"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "kiem-tra-chat-luong"
+          ],
+          "type": "kiem-tra-du-lieu"
+        },
+        "difficulty": "basic",
+        "explanation": "Chất lượng dữ liệu phải được kiểm tra và làm sạch trước khi tính toán hay kết luận."
+      },
+      {
+        "id": "STA21V1_027",
+        "question": "Khi kiểm tra chất lượng dữ liệu, phát hiện câu hỏi khảo sát dẫn dắt người trả lời. Xử lý hợp lý nhất là:",
+        "options": [
+          "viết lại câu hỏi trung lập hơn",
+          "bỏ qua vì tổng thể vẫn đủ lớn",
+          "vẽ biểu đồ ngay để che lỗi",
+          "thay bằng một số bất kỳ gần đó"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "kiem-tra-chat-luong"
+          ],
+          "type": "kiem-tra-du-lieu"
+        },
+        "difficulty": "basic",
+        "explanation": "Chất lượng dữ liệu phải được kiểm tra và làm sạch trước khi tính toán hay kết luận."
+      },
+      {
+        "id": "STA21V1_028",
+        "question": "Khi kiểm tra chất lượng dữ liệu, phát hiện một nhóm ghi dấu phẩy thập phân, nhóm khác dùng dấu chấm gây nhập sai. Xử lý hợp lý nhất là:",
+        "options": [
+          "chuẩn hóa định dạng số trước khi tính toán",
+          "bỏ qua vì tổng thể vẫn đủ lớn",
+          "vẽ biểu đồ ngay để che lỗi",
+          "thay bằng một số bất kỳ gần đó"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "kiem-tra-chat-luong"
+          ],
+          "type": "kiem-tra-du-lieu"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Chất lượng dữ liệu phải được kiểm tra và làm sạch trước khi tính toán hay kết luận."
+      },
+      {
+        "id": "STA21V1_121",
+        "question": "Theo biểu đồ cột kép, ở Kỳ 2 lớp nào có giá trị lớn nhất?",
+        "options": [
+          "Lớp A",
+          "Lớp B",
+          "Lớp C",
+          "Ba lớp bằng nhau"
+        ],
+        "answer": 2,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot-kep"
+          ],
+          "type": "doc-cot-kep"
+        },
+        "difficulty": "basic",
+        "explanation": "Ở Kỳ 2: lớp A = 7, lớp B = 5, lớp C = 8. Giá trị lớn nhất là lớp C.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-cot-kep.svg",
+          "alt": "Biểu đồ cột kép so sánh Kỳ 1 và Kỳ 2 của các lớp A, B, C",
+          "caption": "Đọc chú giải Kỳ 1/Kỳ 2 trước khi so sánh các cột."
+        }
+      },
+      {
+        "id": "STA21V1_122",
+        "question": "Theo biểu đồ cột kép, lớp A tăng bao nhiêu đơn vị từ Kỳ 1 sang Kỳ 2?",
+        "options": [
+          "2",
+          "1",
+          "3",
+          "Không tăng"
+        ],
+        "answer": 1,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot-kep"
+          ],
+          "type": "doc-cot-kep"
+        },
+        "difficulty": "basic",
+        "explanation": "Lớp A tăng từ 6 lên 7, nên mức tăng là 7 - 6 = 1.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-cot-kep.svg",
+          "alt": "Biểu đồ cột kép so sánh Kỳ 1 và Kỳ 2 của các lớp A, B, C",
+          "caption": "Đọc chú giải Kỳ 1/Kỳ 2 trước khi so sánh các cột."
+        }
+      },
+      {
+        "id": "STA21V1_123",
+        "question": "Tổng giá trị Kỳ 1 của ba lớp A, B, C trên biểu đồ cột kép là bao nhiêu?",
+        "options": [
+          "16",
+          "17",
+          "18",
+          "20"
+        ],
+        "answer": 1,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot-kep"
+          ],
+          "type": "doc-cot-kep"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Kỳ 1 có các giá trị 6, 4, 7 nên tổng là 6 + 4 + 7 = 17.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-cot-kep.svg",
+          "alt": "Biểu đồ cột kép so sánh Kỳ 1 và Kỳ 2 của các lớp A, B, C",
+          "caption": "Đọc chú giải Kỳ 1/Kỳ 2 trước khi so sánh các cột."
+        }
+      },
+      {
+        "id": "STA21V1_124",
+        "question": "Tổng giá trị Kỳ 2 của ba lớp A, B, C trên biểu đồ cột kép là bao nhiêu?",
+        "options": [
+          "19",
+          "18",
+          "20",
+          "21"
+        ],
+        "answer": 2,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot-kep"
+          ],
+          "type": "doc-cot-kep"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Kỳ 2 có các giá trị 7, 5, 8 nên tổng là 20.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-cot-kep.svg",
+          "alt": "Biểu đồ cột kép so sánh Kỳ 1 và Kỳ 2 của các lớp A, B, C",
+          "caption": "Đọc chú giải Kỳ 1/Kỳ 2 trước khi so sánh các cột."
+        }
+      },
+      {
+        "id": "STA21V1_125",
+        "question": "Chênh lệch giữa Kỳ 2 và Kỳ 1 của lớp B là bao nhiêu?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot-kep"
+          ],
+          "type": "doc-cot-kep"
+        },
+        "difficulty": "basic",
+        "explanation": "Lớp B có Kỳ 1 = 4 và Kỳ 2 = 5, nên chênh lệch là 1.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-cot-kep.svg",
+          "alt": "Biểu đồ cột kép so sánh Kỳ 1 và Kỳ 2 của các lớp A, B, C",
+          "caption": "Đọc chú giải Kỳ 1/Kỳ 2 trước khi so sánh các cột."
+        }
+      },
+      {
+        "id": "STA21V1_126",
+        "question": "Giá trị Kỳ 2 của lớp C gấp bao nhiêu lần giá trị Kỳ 1 của lớp B?",
+        "options": [
+          "1,5 lần",
+          "2 lần",
+          "2,5 lần",
+          "3 lần"
+        ],
+        "answer": 1,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot-kep"
+          ],
+          "type": "doc-cot-kep"
+        },
+        "difficulty": "advanced",
+        "explanation": "Kỳ 2 lớp C = 8 và Kỳ 1 lớp B = 4, do đó 8/4 = 2.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-cot-kep.svg",
+          "alt": "Biểu đồ cột kép so sánh Kỳ 1 và Kỳ 2 của các lớp A, B, C",
+          "caption": "Đọc chú giải Kỳ 1/Kỳ 2 trước khi so sánh các cột."
+        }
+      },
+      {
+        "id": "STA21V1_031",
+        "question": "Tình huống: khảo sát thói quen đọc sách toàn trường nhưng chỉ hỏi câu lạc bộ đọc sách. Nhận xét đúng nhất là:",
+        "options": [
+          "Mẫu có nguy cơ thiên lệch và khó đại diện cho toàn bộ nhóm",
+          "Mẫu chắc chắn đại diện vì người được hỏi có kinh nghiệm",
+          "Chỉ cần tăng số câu hỏi là hết thiên lệch",
+          "Không cần quan tâm cách chọn mẫu"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "mau-thien-lech"
+          ],
+          "type": "nhan-biet-thien-lech"
+        },
+        "difficulty": "basic",
+        "explanation": "Mẫu lấy từ nhóm có đặc điểm liên quan trực tiếp đến nội dung khảo sát dễ làm kết quả lệch so với quần thể."
+      },
+      {
+        "id": "STA21V1_032",
+        "question": "Tình huống: khảo sát việc chơi game khối 8 nhưng chỉ hỏi đội tuyển Tin. Nhận xét đúng nhất là:",
+        "options": [
+          "Mẫu có nguy cơ thiên lệch và khó đại diện cho toàn bộ nhóm",
+          "Mẫu chắc chắn đại diện vì người được hỏi có kinh nghiệm",
+          "Chỉ cần tăng số câu hỏi là hết thiên lệch",
+          "Không cần quan tâm cách chọn mẫu"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "mau-thien-lech"
+          ],
+          "type": "nhan-biet-thien-lech"
+        },
+        "difficulty": "basic",
+        "explanation": "Mẫu lấy từ nhóm có đặc điểm liên quan trực tiếp đến nội dung khảo sát dễ làm kết quả lệch so với quần thể."
+      },
+      {
+        "id": "STA21V1_033",
+        "question": "Tình huống: khảo sát phương tiện đi học nhưng chỉ hỏi học sinh ở ngay cạnh trường. Nhận xét đúng nhất là:",
+        "options": [
+          "Mẫu có nguy cơ thiên lệch và khó đại diện cho toàn bộ nhóm",
+          "Mẫu chắc chắn đại diện vì người được hỏi có kinh nghiệm",
+          "Chỉ cần tăng số câu hỏi là hết thiên lệch",
+          "Không cần quan tâm cách chọn mẫu"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "mau-thien-lech"
+          ],
+          "type": "nhan-biet-thien-lech"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Mẫu lấy từ nhóm có đặc điểm liên quan trực tiếp đến nội dung khảo sát dễ làm kết quả lệch so với quần thể."
+      },
+      {
+        "id": "STA21V1_034",
+        "question": "Tình huống: khảo sát mức độ yêu thích thể thao nhưng chỉ hỏi đội bóng. Nhận xét đúng nhất là:",
+        "options": [
+          "Mẫu có nguy cơ thiên lệch và khó đại diện cho toàn bộ nhóm",
+          "Mẫu chắc chắn đại diện vì người được hỏi có kinh nghiệm",
+          "Chỉ cần tăng số câu hỏi là hết thiên lệch",
+          "Không cần quan tâm cách chọn mẫu"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "mau-thien-lech"
+          ],
+          "type": "nhan-biet-thien-lech"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Mẫu lấy từ nhóm có đặc điểm liên quan trực tiếp đến nội dung khảo sát dễ làm kết quả lệch so với quần thể."
+      },
+      {
+        "id": "STA21V1_035",
+        "question": "Tình huống: khảo sát thời gian học thêm nhưng chỉ hỏi một lớp chọn. Nhận xét đúng nhất là:",
+        "options": [
+          "Mẫu có nguy cơ thiên lệch và khó đại diện cho toàn bộ nhóm",
+          "Mẫu chắc chắn đại diện vì người được hỏi có kinh nghiệm",
+          "Chỉ cần tăng số câu hỏi là hết thiên lệch",
+          "Không cần quan tâm cách chọn mẫu"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "mau-thien-lech"
+          ],
+          "type": "nhan-biet-thien-lech"
+        },
+        "difficulty": "advanced",
+        "explanation": "Mẫu lấy từ nhóm có đặc điểm liên quan trực tiếp đến nội dung khảo sát dễ làm kết quả lệch so với quần thể."
+      },
+      {
+        "id": "STA21V1_036",
+        "question": "Tình huống: khảo sát sở thích âm nhạc toàn trường nhưng chỉ hỏi thành viên câu lạc bộ văn nghệ. Nhận xét đúng nhất là:",
+        "options": [
+          "Mẫu có nguy cơ thiên lệch và khó đại diện cho toàn bộ nhóm",
+          "Mẫu chắc chắn đại diện vì người được hỏi có kinh nghiệm",
+          "Chỉ cần tăng số câu hỏi là hết thiên lệch",
+          "Không cần quan tâm cách chọn mẫu"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "mau-thien-lech"
+          ],
+          "type": "nhan-biet-thien-lech"
+        },
+        "difficulty": "basic",
+        "explanation": "Mẫu lấy từ nhóm có đặc điểm liên quan trực tiếp đến nội dung khảo sát dễ làm kết quả lệch so với quần thể."
+      },
+      {
+        "id": "STA21V1_037",
+        "question": "Tình huống: khảo sát bữa sáng nhưng chỉ hỏi học sinh đến trường rất sớm. Nhận xét đúng nhất là:",
+        "options": [
+          "Mẫu có nguy cơ thiên lệch và khó đại diện cho toàn bộ nhóm",
+          "Mẫu chắc chắn đại diện vì người được hỏi có kinh nghiệm",
+          "Chỉ cần tăng số câu hỏi là hết thiên lệch",
+          "Không cần quan tâm cách chọn mẫu"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "mau-thien-lech"
+          ],
+          "type": "nhan-biet-thien-lech"
+        },
+        "difficulty": "basic",
+        "explanation": "Mẫu lấy từ nhóm có đặc điểm liên quan trực tiếp đến nội dung khảo sát dễ làm kết quả lệch so với quần thể."
+      },
+      {
+        "id": "STA21V1_038",
+        "question": "Tình huống: khảo sát việc dùng xe buýt nhưng chỉ hỏi tại điểm chờ xe buýt. Nhận xét đúng nhất là:",
+        "options": [
+          "Mẫu có nguy cơ thiên lệch và khó đại diện cho toàn bộ nhóm",
+          "Mẫu chắc chắn đại diện vì người được hỏi có kinh nghiệm",
+          "Chỉ cần tăng số câu hỏi là hết thiên lệch",
+          "Không cần quan tâm cách chọn mẫu"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "mau-thien-lech"
+          ],
+          "type": "nhan-biet-thien-lech"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Mẫu lấy từ nhóm có đặc điểm liên quan trực tiếp đến nội dung khảo sát dễ làm kết quả lệch so với quần thể."
+      },
+      {
+        "id": "STA21V1_041",
+        "question": "Bảng tần số có các tần số [2, 4, 6]. Tổng số quan sát là:",
+        "options": [
+          "12",
+          "13",
+          "11",
+          "6"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bang-tan-so"
+          ],
+          "type": "tong-tan-so"
+        },
+        "difficulty": "basic",
+        "explanation": "Tổng số quan sát bằng tổng các tần số: 2+4+6=12."
+      },
+      {
+        "id": "STA21V1_042",
+        "question": "Bảng tần số có các tần số [3, 5, 4]. Tổng số quan sát là:",
+        "options": [
+          "12",
+          "13",
+          "11",
+          "5"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bang-tan-so"
+          ],
+          "type": "tong-tan-so"
+        },
+        "difficulty": "basic",
+        "explanation": "Tổng số quan sát bằng tổng các tần số: 3+5+4=12."
+      },
+      {
+        "id": "STA21V1_043",
+        "question": "Bảng tần số có các tần số [5, 2, 7]. Tổng số quan sát là:",
+        "options": [
+          "14",
+          "15",
+          "13",
+          "7"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bang-tan-so"
+          ],
+          "type": "tong-tan-so"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Tổng số quan sát bằng tổng các tần số: 5+2+7=14."
+      },
+      {
+        "id": "STA21V1_044",
+        "question": "Bảng tần số có các tần số [6, 3, 5]. Tổng số quan sát là:",
+        "options": [
+          "14",
+          "15",
+          "13",
+          "6"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bang-tan-so"
+          ],
+          "type": "tong-tan-so"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Tổng số quan sát bằng tổng các tần số: 6+3+5=14."
+      },
+      {
+        "id": "STA21V1_045",
+        "question": "Bảng tần số có các tần số [4, 4, 8]. Tổng số quan sát là:",
+        "options": [
+          "16",
+          "17",
+          "15",
+          "8"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bang-tan-so"
+          ],
+          "type": "tong-tan-so"
+        },
+        "difficulty": "advanced",
+        "explanation": "Tổng số quan sát bằng tổng các tần số: 4+4+8=16."
+      },
+      {
+        "id": "STA21V1_046",
+        "question": "Bảng tần số có các tần số [7, 5, 3]. Tổng số quan sát là:",
+        "options": [
+          "15",
+          "16",
+          "14",
+          "7"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bang-tan-so"
+          ],
+          "type": "tong-tan-so"
+        },
+        "difficulty": "basic",
+        "explanation": "Tổng số quan sát bằng tổng các tần số: 7+5+3=15."
+      },
+      {
+        "id": "STA21V1_047",
+        "question": "Bảng tần số có các tần số [8, 6, 4]. Tổng số quan sát là:",
+        "options": [
+          "18",
+          "19",
+          "17",
+          "8"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bang-tan-so"
+          ],
+          "type": "tong-tan-so"
+        },
+        "difficulty": "basic",
+        "explanation": "Tổng số quan sát bằng tổng các tần số: 8+6+4=18."
+      },
+      {
+        "id": "STA21V1_048",
+        "question": "Bảng tần số có các tần số [2, 9, 5]. Tổng số quan sát là:",
+        "options": [
+          "16",
+          "17",
+          "15",
+          "9"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bang-tan-so"
+          ],
+          "type": "tong-tan-so"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Tổng số quan sát bằng tổng các tần số: 2+9+5=16."
+      },
+      {
+        "id": "STA21V1_051",
+        "question": "Một giá trị xuất hiện 3 lần trong 12 quan sát. Tần suất phần trăm là:",
+        "options": [
+          "25%",
+          "0,25",
+          "75%",
+          "Không đủ dữ kiện"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "tan-suat"
+          ],
+          "type": "tinh-tan-suat"
+        },
+        "difficulty": "basic",
+        "explanation": "Tần suất = 3/12 × 100% = 25%."
+      },
+      {
+        "id": "STA21V1_052",
+        "question": "Một giá trị xuất hiện 5 lần trong 20 quan sát. Tần suất phần trăm là:",
+        "options": [
+          "25%",
+          "0,25",
+          "75%",
+          "Không đủ dữ kiện"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "tan-suat"
+          ],
+          "type": "tinh-tan-suat"
+        },
+        "difficulty": "basic",
+        "explanation": "Tần suất = 5/20 × 100% = 25%."
+      },
+      {
+        "id": "STA21V1_053",
+        "question": "Một giá trị xuất hiện 8 lần trong 40 quan sát. Tần suất phần trăm là:",
+        "options": [
+          "20%",
+          "0,2",
+          "80%",
+          "Không đủ dữ kiện"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "tan-suat"
+          ],
+          "type": "tinh-tan-suat"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Tần suất = 8/40 × 100% = 20%."
+      },
+      {
+        "id": "STA21V1_054",
+        "question": "Một giá trị xuất hiện 9 lần trong 30 quan sát. Tần suất phần trăm là:",
+        "options": [
+          "30%",
+          "0,3",
+          "70%",
+          "Không đủ dữ kiện"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "tan-suat"
+          ],
+          "type": "tinh-tan-suat"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Tần suất = 9/30 × 100% = 30%."
+      },
+      {
+        "id": "STA21V1_055",
+        "question": "Một giá trị xuất hiện 7 lần trong 28 quan sát. Tần suất phần trăm là:",
+        "options": [
+          "25%",
+          "0,25",
+          "75%",
+          "Không đủ dữ kiện"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "tan-suat"
+          ],
+          "type": "tinh-tan-suat"
+        },
+        "difficulty": "advanced",
+        "explanation": "Tần suất = 7/28 × 100% = 25%."
+      },
+      {
+        "id": "STA21V1_056",
+        "question": "Một giá trị xuất hiện 12 lần trong 48 quan sát. Tần suất phần trăm là:",
+        "options": [
+          "25%",
+          "0,25",
+          "75%",
+          "Không đủ dữ kiện"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "tan-suat"
+          ],
+          "type": "tinh-tan-suat"
+        },
+        "difficulty": "basic",
+        "explanation": "Tần suất = 12/48 × 100% = 25%."
+      },
+      {
+        "id": "STA21V1_057",
+        "question": "Một giá trị xuất hiện 15 lần trong 60 quan sát. Tần suất phần trăm là:",
+        "options": [
+          "25%",
+          "0,25",
+          "75%",
+          "Không đủ dữ kiện"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "tan-suat"
+          ],
+          "type": "tinh-tan-suat"
+        },
+        "difficulty": "basic",
+        "explanation": "Tần suất = 15/60 × 100% = 25%."
+      },
+      {
+        "id": "STA21V1_058",
+        "question": "Một giá trị xuất hiện 6 lần trong 24 quan sát. Tần suất phần trăm là:",
+        "options": [
+          "25%",
+          "0,25",
+          "75%",
+          "Không đủ dữ kiện"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "tan-suat"
+          ],
+          "type": "tinh-tan-suat"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Tần suất = 6/24 × 100% = 25%."
+      },
+      {
+        "id": "STA21V1_127",
+        "question": "Tổng mức tăng của cả ba lớp từ Kỳ 1 sang Kỳ 2 là bao nhiêu?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": 2,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot-kep"
+          ],
+          "type": "doc-cot-kep"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Mỗi lớp đều tăng 1 đơn vị, nên tổng mức tăng là 1 + 1 + 1 = 3.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-cot-kep.svg",
+          "alt": "Biểu đồ cột kép so sánh Kỳ 1 và Kỳ 2 của các lớp A, B, C",
+          "caption": "Đọc chú giải Kỳ 1/Kỳ 2 trước khi so sánh các cột."
+        }
+      },
+      {
+        "id": "STA21V1_128",
+        "question": "Vì sao phải đọc chú giải trước khi so sánh hai cột trong biểu đồ cột kép?",
+        "options": [
+          "Để biết cột nào thuộc dãy số liệu nào",
+          "Để làm các cột cao bằng nhau",
+          "Để bỏ qua trục dọc",
+          "Để đổi cột thành biểu đồ tròn"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot-kep"
+          ],
+          "type": "doc-cot-kep"
+        },
+        "difficulty": "advanced",
+        "explanation": "Chú giải cho biết màu/ký hiệu nào ứng với từng dãy số liệu; bỏ qua chú giải dễ dẫn đến so sánh nhầm đối tượng.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-cot-kep.svg",
+          "alt": "Biểu đồ cột kép so sánh Kỳ 1 và Kỳ 2 của các lớp A, B, C",
+          "caption": "Đọc chú giải Kỳ 1/Kỳ 2 trước khi so sánh các cột."
+        }
+      },
+      {
+        "id": "STA21V1_129",
+        "question": "Một phần chiếm 40% hình quạt tròn. Góc ở tâm tương ứng bằng bao nhiêu?",
+        "options": [
+          "108°",
+          "120°",
+          "144°",
+          "160°"
+        ],
+        "answer": 2,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bieu-do-quat-tron"
+          ],
+          "type": "doi-phan-tram-goc"
+        },
+        "difficulty": "basic",
+        "explanation": "40% × 360° = 0,4 × 360° = 144°.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-quat-tron.svg",
+          "alt": "Biểu đồ quạt tròn gồm 40%, 30%, 20% và 10%",
+          "caption": "Toàn bộ hình tròn tương ứng 100% = 360°."
+        }
+      },
+      {
+        "id": "STA21V1_130",
+        "question": "Trên biểu đồ quạt tròn minh họa, phần “Thể thao” chiếm 30%. Góc ở tâm của phần này là:",
+        "options": [
+          "72°",
+          "108°",
+          "120°",
+          "135°"
+        ],
+        "answer": 1,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bieu-do-quat-tron"
+          ],
+          "type": "doi-phan-tram-goc"
+        },
+        "difficulty": "basic",
+        "explanation": "30% × 360° = 108°.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-quat-tron.svg",
+          "alt": "Biểu đồ quạt tròn gồm 40%, 30%, 20% và 10%",
+          "caption": "Toàn bộ hình tròn tương ứng 100% = 360°."
+        }
+      },
+      {
+        "id": "STA21V1_131",
+        "question": "Một hình quạt có góc ở tâm 72°. Hình quạt đó chiếm bao nhiêu phần trăm hình tròn?",
+        "options": [
+          "10%",
+          "15%",
+          "20%",
+          "25%"
+        ],
+        "answer": 2,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bieu-do-quat-tron"
+          ],
+          "type": "doi-goc-phan-tram"
+        },
+        "difficulty": "intermediate",
+        "explanation": "72/360 = 0,2 nên hình quạt chiếm 20%.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-quat-tron.svg",
+          "alt": "Biểu đồ quạt tròn gồm 40%, 30%, 20% và 10%",
+          "caption": "Toàn bộ hình tròn tương ứng 100% = 360°."
+        }
+      },
+      {
+        "id": "STA21V1_132",
+        "question": "Nếu tổng thể có 200 học sinh và nhóm “Đọc sách” chiếm 40%, có bao nhiêu học sinh thuộc nhóm này?",
+        "options": [
+          "60",
+          "70",
+          "80",
+          "90"
+        ],
+        "answer": 2,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bieu-do-quat-tron"
+          ],
+          "type": "doc-quat-tron"
+        },
+        "difficulty": "intermediate",
+        "explanation": "40% của 200 là 0,4 × 200 = 80.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-quat-tron.svg",
+          "alt": "Biểu đồ quạt tròn gồm 40%, 30%, 20% và 10%",
+          "caption": "Toàn bộ hình tròn tương ứng 100% = 360°."
+        }
+      },
+      {
+        "id": "STA21V1_061",
+        "question": "Một biểu đồ cột cho ba nhóm A, B, C với giá trị lần lượt [12, 18, 15]. Chênh lệch giữa cột cao nhất và thấp nhất là:",
+        "options": [
+          "6",
+          "18",
+          "12",
+          "45"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot"
+          ],
+          "type": "doc-cot"
+        },
+        "difficulty": "basic",
+        "explanation": "Chênh lệch là 18-12=6."
+      },
+      {
+        "id": "STA21V1_062",
+        "question": "Một biểu đồ cột cho ba nhóm Bóng đá, Cầu lông, Bơi với giá trị lần lượt [14, 9, 7]. Chênh lệch giữa cột cao nhất và thấp nhất là:",
+        "options": [
+          "7",
+          "14",
+          "30",
+          "Không đủ dữ kiện"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot"
+          ],
+          "type": "doc-cot"
+        },
+        "difficulty": "basic",
+        "explanation": "Chênh lệch là 14-7=7."
+      },
+      {
+        "id": "STA21V1_063",
+        "question": "Một biểu đồ cột cho ba nhóm Tháng 1, 2, 3 với giá trị lần lượt [20, 25, 22]. Chênh lệch giữa cột cao nhất và thấp nhất là:",
+        "options": [
+          "5",
+          "25",
+          "20",
+          "67"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot"
+          ],
+          "type": "doc-cot"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Chênh lệch là 25-20=5."
+      },
+      {
+        "id": "STA21V1_064",
+        "question": "Một biểu đồ cột cho ba nhóm Xe đạp, Đi bộ, Xe buýt với giá trị lần lượt [8, 11, 5]. Chênh lệch giữa cột cao nhất và thấp nhất là:",
+        "options": [
+          "6",
+          "11",
+          "5",
+          "24"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot"
+          ],
+          "type": "doc-cot"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Chênh lệch là 11-5=6."
+      },
+      {
+        "id": "STA21V1_065",
+        "question": "Một biểu đồ cột cho ba nhóm Sách A, B, C với giá trị lần lượt [30, 24, 36]. Chênh lệch giữa cột cao nhất và thấp nhất là:",
+        "options": [
+          "12",
+          "36",
+          "24",
+          "90"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot"
+          ],
+          "type": "doc-cot"
+        },
+        "difficulty": "advanced",
+        "explanation": "Chênh lệch là 36-24=12."
+      },
+      {
+        "id": "STA21V1_066",
+        "question": "Một biểu đồ cột cho ba nhóm Lớp 6A, 6B, 6C với giá trị lần lượt [32, 28, 35]. Chênh lệch giữa cột cao nhất và thấp nhất là:",
+        "options": [
+          "7",
+          "35",
+          "28",
+          "95"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot"
+          ],
+          "type": "doc-cot"
+        },
+        "difficulty": "basic",
+        "explanation": "Chênh lệch là 35-28=7."
+      },
+      {
+        "id": "STA21V1_067",
+        "question": "Một biểu đồ cột cho ba nhóm Môn Toán, Văn, Anh với giá trị lần lượt [18, 16, 20]. Chênh lệch giữa cột cao nhất và thấp nhất là:",
+        "options": [
+          "4",
+          "20",
+          "16",
+          "54"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot"
+          ],
+          "type": "doc-cot"
+        },
+        "difficulty": "basic",
+        "explanation": "Chênh lệch là 20-16=4."
+      },
+      {
+        "id": "STA21V1_068",
+        "question": "Một biểu đồ cột cho ba nhóm Nhóm X, Y, Z với giá trị lần lượt [7, 13, 10]. Chênh lệch giữa cột cao nhất và thấp nhất là:",
+        "options": [
+          "6",
+          "13",
+          "7",
+          "30"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-cot"
+          ],
+          "type": "doc-cot"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Chênh lệch là 13-7=6."
+      },
+      {
+        "id": "STA21V1_071",
+        "question": "Dữ liệu theo 5 thời điểm là [15, 18, 22, 19, 25]. Giá trị lớn nhất xuất hiện ở thời điểm thứ mấy?",
+        "options": [
+          "5",
+          "1",
+          "25",
+          "4"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-doan-thang"
+          ],
+          "type": "doc-xu-huong"
+        },
+        "difficulty": "basic",
+        "explanation": "Giá trị lớn nhất là 25, nằm ở vị trí thứ 5."
+      },
+      {
+        "id": "STA21V1_072",
+        "question": "Dữ liệu theo 5 thời điểm là [20, 21, 23, 23, 24]. Giá trị lớn nhất xuất hiện ở thời điểm thứ mấy?",
+        "options": [
+          "5",
+          "1",
+          "24",
+          "4"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-doan-thang"
+          ],
+          "type": "doc-xu-huong"
+        },
+        "difficulty": "basic",
+        "explanation": "Giá trị lớn nhất là 24, nằm ở vị trí thứ 5."
+      },
+      {
+        "id": "STA21V1_073",
+        "question": "Dữ liệu theo 5 thời điểm là [30, 28, 26, 27, 25]. Giá trị lớn nhất xuất hiện ở thời điểm thứ mấy?",
+        "options": [
+          "1",
+          "2",
+          "30",
+          "Không đủ dữ kiện"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-doan-thang"
+          ],
+          "type": "doc-xu-huong"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Giá trị lớn nhất là 30, nằm ở vị trí thứ 1."
+      },
+      {
+        "id": "STA21V1_074",
+        "question": "Dữ liệu theo 5 thời điểm là [12, 14, 13, 16, 18]. Giá trị lớn nhất xuất hiện ở thời điểm thứ mấy?",
+        "options": [
+          "5",
+          "1",
+          "18",
+          "4"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-doan-thang"
+          ],
+          "type": "doc-xu-huong"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Giá trị lớn nhất là 18, nằm ở vị trí thứ 5."
+      },
+      {
+        "id": "STA21V1_075",
+        "question": "Dữ liệu theo 5 thời điểm là [8, 10, 12, 11, 15]. Giá trị lớn nhất xuất hiện ở thời điểm thứ mấy?",
+        "options": [
+          "5",
+          "1",
+          "15",
+          "4"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-doan-thang"
+          ],
+          "type": "doc-xu-huong"
+        },
+        "difficulty": "advanced",
+        "explanation": "Giá trị lớn nhất là 15, nằm ở vị trí thứ 5."
+      },
+      {
+        "id": "STA21V1_076",
+        "question": "Dữ liệu theo 5 thời điểm là [25, 24, 26, 29, 28]. Giá trị lớn nhất xuất hiện ở thời điểm thứ mấy?",
+        "options": [
+          "4",
+          "5",
+          "29",
+          "3"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-doan-thang"
+          ],
+          "type": "doc-xu-huong"
+        },
+        "difficulty": "basic",
+        "explanation": "Giá trị lớn nhất là 29, nằm ở vị trí thứ 4."
+      },
+      {
+        "id": "STA21V1_077",
+        "question": "Dữ liệu theo 5 thời điểm là [5, 7, 9, 11, 13]. Giá trị lớn nhất xuất hiện ở thời điểm thứ mấy?",
+        "options": [
+          "5",
+          "1",
+          "13",
+          "4"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-doan-thang"
+          ],
+          "type": "doc-xu-huong"
+        },
+        "difficulty": "basic",
+        "explanation": "Giá trị lớn nhất là 13, nằm ở vị trí thứ 5."
+      },
+      {
+        "id": "STA21V1_078",
+        "question": "Dữ liệu theo 5 thời điểm là [18, 16, 17, 15, 14]. Giá trị lớn nhất xuất hiện ở thời điểm thứ mấy?",
+        "options": [
+          "1",
+          "2",
+          "18",
+          "Không đủ dữ kiện"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "doc-bieu-do-doan-thang"
+          ],
+          "type": "doc-xu-huong"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Giá trị lớn nhất là 18, nằm ở vị trí thứ 1."
+      },
+      {
+        "id": "STA21V1_081",
+        "question": "Muốn so sánh số học sinh của 4 câu lạc bộ, dạng biểu diễn phù hợp nhất là:",
+        "options": [
+          "biểu đồ cột",
+          "biểu đồ đoạn thẳng",
+          "sơ đồ cây xác suất",
+          "đồ thị hàm số bậc hai"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chon-bieu-do"
+          ],
+          "type": "chon-bieu-do"
+        },
+        "difficulty": "basic",
+        "explanation": "Biểu đồ cột phù hợp so sánh nhóm; biểu đồ đoạn thẳng phù hợp theo dõi biến đổi theo thời gian."
+      },
+      {
+        "id": "STA21V1_082",
+        "question": "Muốn theo dõi nhiệt độ qua 7 ngày liên tiếp, dạng biểu diễn phù hợp nhất là:",
+        "options": [
+          "biểu đồ đoạn thẳng",
+          "biểu đồ cột",
+          "sơ đồ cây xác suất",
+          "đồ thị hàm số bậc hai"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chon-bieu-do"
+          ],
+          "type": "chon-bieu-do"
+        },
+        "difficulty": "basic",
+        "explanation": "Biểu đồ cột phù hợp so sánh nhóm; biểu đồ đoạn thẳng phù hợp theo dõi biến đổi theo thời gian."
+      },
+      {
+        "id": "STA21V1_083",
+        "question": "Muốn so sánh doanh số của 5 cửa hàng trong cùng tháng, dạng biểu diễn phù hợp nhất là:",
+        "options": [
+          "biểu đồ cột",
+          "biểu đồ đoạn thẳng",
+          "sơ đồ cây xác suất",
+          "đồ thị hàm số bậc hai"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chon-bieu-do"
+          ],
+          "type": "chon-bieu-do"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Biểu đồ cột phù hợp so sánh nhóm; biểu đồ đoạn thẳng phù hợp theo dõi biến đổi theo thời gian."
+      },
+      {
+        "id": "STA21V1_084",
+        "question": "Muốn quan sát sự thay đổi chiều cao cây theo 10 tuần, dạng biểu diễn phù hợp nhất là:",
+        "options": [
+          "biểu đồ đoạn thẳng",
+          "biểu đồ cột",
+          "sơ đồ cây xác suất",
+          "đồ thị hàm số bậc hai"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chon-bieu-do"
+          ],
+          "type": "chon-bieu-do"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Biểu đồ cột phù hợp so sánh nhóm; biểu đồ đoạn thẳng phù hợp theo dõi biến đổi theo thời gian."
+      },
+      {
+        "id": "STA21V1_085",
+        "question": "Muốn so sánh số huy chương của các đội, dạng biểu diễn phù hợp nhất là:",
+        "options": [
+          "biểu đồ cột",
+          "biểu đồ đoạn thẳng",
+          "sơ đồ cây xác suất",
+          "đồ thị hàm số bậc hai"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chon-bieu-do"
+          ],
+          "type": "chon-bieu-do"
+        },
+        "difficulty": "advanced",
+        "explanation": "Biểu đồ cột phù hợp so sánh nhóm; biểu đồ đoạn thẳng phù hợp theo dõi biến đổi theo thời gian."
+      },
+      {
+        "id": "STA21V1_086",
+        "question": "Muốn theo dõi mực nước qua từng giờ, dạng biểu diễn phù hợp nhất là:",
+        "options": [
+          "biểu đồ đoạn thẳng",
+          "biểu đồ cột",
+          "sơ đồ cây xác suất",
+          "đồ thị hàm số bậc hai"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chon-bieu-do"
+          ],
+          "type": "chon-bieu-do"
+        },
+        "difficulty": "basic",
+        "explanation": "Biểu đồ cột phù hợp so sánh nhóm; biểu đồ đoạn thẳng phù hợp theo dõi biến đổi theo thời gian."
+      },
+      {
+        "id": "STA21V1_087",
+        "question": "Muốn so sánh số sách theo từng thể loại, dạng biểu diễn phù hợp nhất là:",
+        "options": [
+          "biểu đồ cột",
+          "biểu đồ đoạn thẳng",
+          "sơ đồ cây xác suất",
+          "đồ thị hàm số bậc hai"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chon-bieu-do"
+          ],
+          "type": "chon-bieu-do"
+        },
+        "difficulty": "basic",
+        "explanation": "Biểu đồ cột phù hợp so sánh nhóm; biểu đồ đoạn thẳng phù hợp theo dõi biến đổi theo thời gian."
+      },
+      {
+        "id": "STA21V1_088",
+        "question": "Muốn theo dõi lượng điện tiêu thụ theo 12 tháng, dạng biểu diễn phù hợp nhất là:",
+        "options": [
+          "biểu đồ đoạn thẳng",
+          "biểu đồ cột",
+          "sơ đồ cây xác suất",
+          "đồ thị hàm số bậc hai"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chon-bieu-do"
+          ],
+          "type": "chon-bieu-do"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Biểu đồ cột phù hợp so sánh nhóm; biểu đồ đoạn thẳng phù hợp theo dõi biến đổi theo thời gian."
+      },
+      {
+        "id": "STA21V1_133",
+        "question": "Hai phần “Đọc sách” 40% và “Âm nhạc” 20% gộp lại có góc ở tâm bao nhiêu?",
+        "options": [
+          "180°",
+          "200°",
+          "216°",
+          "240°"
+        ],
+        "answer": 2,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bieu-do-quat-tron"
+          ],
+          "type": "gop-phan-quat-tron"
+        },
+        "difficulty": "advanced",
+        "explanation": "Hai phần chiếm 60%; 60% × 360° = 216°.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-quat-tron.svg",
+          "alt": "Biểu đồ quạt tròn gồm 40%, 30%, 20% và 10%",
+          "caption": "Toàn bộ hình tròn tương ứng 100% = 360°."
+        }
+      },
+      {
+        "id": "STA21V1_134",
+        "question": "Điều kiện nào cần kiểm tra khi một biểu đồ quạt tròn mô tả đầy đủ các phần của cùng một tổng thể?",
+        "options": [
+          "Tổng tỉ lệ bằng 50%",
+          "Tổng tỉ lệ bằng 100%",
+          "Mọi phần phải bằng nhau",
+          "Chỉ được có bốn phần"
+        ],
+        "answer": 1,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bieu-do-quat-tron"
+          ],
+          "type": "kiem-tra-quat-tron"
+        },
+        "difficulty": "basic",
+        "explanation": "Một hình tròn đầy đủ biểu diễn toàn bộ tổng thể, nên tổng các tỉ lệ phải bằng 100% (cho phép sai khác rất nhỏ do làm tròn).",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-quat-tron.svg",
+          "alt": "Biểu đồ quạt tròn gồm 40%, 30%, 20% và 10%",
+          "caption": "Toàn bộ hình tròn tương ứng 100% = 360°."
+        }
+      },
+      {
+        "id": "STA21V1_135",
+        "question": "Một hình quạt có góc ở tâm 36°. Tỉ lệ tương ứng là:",
+        "options": [
+          "5%",
+          "10%",
+          "12%",
+          "15%"
+        ],
+        "answer": 1,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bieu-do-quat-tron"
+          ],
+          "type": "doi-goc-phan-tram"
+        },
+        "difficulty": "intermediate",
+        "explanation": "36/360 = 0,1 nên tỉ lệ là 10%.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-quat-tron.svg",
+          "alt": "Biểu đồ quạt tròn gồm 40%, 30%, 20% và 10%",
+          "caption": "Toàn bộ hình tròn tương ứng 100% = 360°."
+        }
+      },
+      {
+        "id": "STA21V1_136",
+        "question": "Trên biểu đồ minh họa, tỉ lệ “Thể thao” 30% gấp mấy lần tỉ lệ “Khác” 10%?",
+        "options": [
+          "2 lần",
+          "2,5 lần",
+          "3 lần",
+          "4 lần"
+        ],
+        "answer": 2,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "bieu-do-quat-tron"
+          ],
+          "type": "so-sanh-quat-tron"
+        },
+        "difficulty": "advanced",
+        "explanation": "30% / 10% = 3.",
+        "diagram": {
+          "src": "../../statistics/21/21-bieu-do-quat-tron.svg",
+          "alt": "Biểu đồ quạt tròn gồm 40%, 30%, 20% và 10%",
+          "caption": "Toàn bộ hình tròn tương ứng 100% = 360°."
+        }
+      },
+      {
+        "id": "STA21V1_137",
+        "question": "Theo quy ước các khoảng [140;150), [150;160), ..., giá trị 150 thuộc nhóm nào?",
+        "options": [
+          "[140;150)",
+          "[150;160)",
+          "Cả hai nhóm",
+          "Không thuộc nhóm nào"
+        ],
+        "answer": 1,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-ghep-nhom"
+          ],
+          "type": "diem-bien-nhom"
+        },
+        "difficulty": "basic",
+        "explanation": "Khoảng [140;150) không chứa 150, còn [150;160) có chứa 150.",
+        "diagram": {
+          "src": "../../statistics/21/21-du-lieu-ghep-nhom.svg",
+          "alt": "Dữ liệu chiều cao ghép nhóm theo các khoảng [140;150), [150;160), [160;170), [170;180)",
+          "caption": "Các khoảng dùng quy ước đầu mút trái đóng, đầu mút phải mở."
+        }
+      },
+      {
+        "id": "STA21V1_138",
+        "question": "Trong hình minh họa dữ liệu ghép nhóm, tần số của nhóm [150;160) là bao nhiêu?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "14"
+        ],
+        "answer": 1,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-ghep-nhom"
+          ],
+          "type": "tan-so-nhom"
+        },
+        "difficulty": "basic",
+        "explanation": "Nhóm [150;160) gồm 150, 153, 157, 159 nên có tần số 4.",
+        "diagram": {
+          "src": "../../statistics/21/21-du-lieu-ghep-nhom.svg",
+          "alt": "Dữ liệu chiều cao ghép nhóm theo các khoảng [140;150), [150;160), [160;170), [170;180)",
+          "caption": "Các khoảng dùng quy ước đầu mút trái đóng, đầu mút phải mở."
+        }
+      },
+      {
+        "id": "STA21V1_091",
+        "question": "Từ bảng có nhãn ['A', 'B', 'C'] và giá trị [5, 8, 7], nguyên tắc chuyển sang biểu đồ đúng là:",
+        "options": [
+          "Giữ đúng các cặp [('A', 5), ('B', 8), ('C', 7)]",
+          "đảo ngược toàn bộ giá trị",
+          "chỉ biểu diễn giá trị lớn nhất",
+          "bỏ nhãn và chỉ giữ tổng"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chuyen-bang-bieu-do"
+          ],
+          "type": "chuyen-doi"
+        },
+        "difficulty": "basic",
+        "explanation": "Khi chuyển bảng sang biểu đồ phải giữ đúng từng cặp nhãn–giá trị."
+      },
+      {
+        "id": "STA21V1_092",
+        "question": "Từ bảng có nhãn ['Đỏ', 'Xanh', 'Vàng'] và giá trị [10, 6, 4], nguyên tắc chuyển sang biểu đồ đúng là:",
+        "options": [
+          "Giữ đúng các cặp [('Đỏ', 10), ('Xanh', 6), ('Vàng', 4)]",
+          "đảo ngược toàn bộ giá trị",
+          "chỉ biểu diễn giá trị lớn nhất",
+          "bỏ nhãn và chỉ giữ tổng"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chuyen-bang-bieu-do"
+          ],
+          "type": "chuyen-doi"
+        },
+        "difficulty": "basic",
+        "explanation": "Khi chuyển bảng sang biểu đồ phải giữ đúng từng cặp nhãn–giá trị."
+      },
+      {
+        "id": "STA21V1_093",
+        "question": "Từ bảng có nhãn ['6', '7', '8'] và giá trị [2, 3, 5], nguyên tắc chuyển sang biểu đồ đúng là:",
+        "options": [
+          "Giữ đúng các cặp [('6', 2), ('7', 3), ('8', 5)]",
+          "đảo ngược toàn bộ giá trị",
+          "chỉ biểu diễn giá trị lớn nhất",
+          "bỏ nhãn và chỉ giữ tổng"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chuyen-bang-bieu-do"
+          ],
+          "type": "chuyen-doi"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Khi chuyển bảng sang biểu đồ phải giữ đúng từng cặp nhãn–giá trị."
+      },
+      {
+        "id": "STA21V1_094",
+        "question": "Từ bảng có nhãn ['Đi bộ', 'Xe đạp', 'Xe buýt'] và giá trị [8, 12, 6], nguyên tắc chuyển sang biểu đồ đúng là:",
+        "options": [
+          "Giữ đúng các cặp [('Đi bộ', 8), ('Xe đạp', 12), ('Xe buýt', 6)]",
+          "đảo ngược toàn bộ giá trị",
+          "chỉ biểu diễn giá trị lớn nhất",
+          "bỏ nhãn và chỉ giữ tổng"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chuyen-bang-bieu-do"
+          ],
+          "type": "chuyen-doi"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Khi chuyển bảng sang biểu đồ phải giữ đúng từng cặp nhãn–giá trị."
+      },
+      {
+        "id": "STA21V1_095",
+        "question": "Từ bảng có nhãn ['T1', 'T2', 'T3'] và giá trị [20, 24, 23], nguyên tắc chuyển sang biểu đồ đúng là:",
+        "options": [
+          "Giữ đúng các cặp [('T1', 20), ('T2', 24), ('T3', 23)]",
+          "đảo ngược toàn bộ giá trị",
+          "chỉ biểu diễn giá trị lớn nhất",
+          "bỏ nhãn và chỉ giữ tổng"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chuyen-bang-bieu-do"
+          ],
+          "type": "chuyen-doi"
+        },
+        "difficulty": "advanced",
+        "explanation": "Khi chuyển bảng sang biểu đồ phải giữ đúng từng cặp nhãn–giá trị."
+      },
+      {
+        "id": "STA21V1_096",
+        "question": "Từ bảng có nhãn ['Lớp A', 'Lớp B', 'Lớp C'] và giá trị [30, 28, 32], nguyên tắc chuyển sang biểu đồ đúng là:",
+        "options": [
+          "Giữ đúng các cặp [('Lớp A', 30), ('Lớp B', 28), ('Lớp C', 32)]",
+          "đảo ngược toàn bộ giá trị",
+          "chỉ biểu diễn giá trị lớn nhất",
+          "bỏ nhãn và chỉ giữ tổng"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chuyen-bang-bieu-do"
+          ],
+          "type": "chuyen-doi"
+        },
+        "difficulty": "basic",
+        "explanation": "Khi chuyển bảng sang biểu đồ phải giữ đúng từng cặp nhãn–giá trị."
+      },
+      {
+        "id": "STA21V1_097",
+        "question": "Từ bảng có nhãn ['M1', 'M2', 'M3'] và giá trị [7, 9, 11], nguyên tắc chuyển sang biểu đồ đúng là:",
+        "options": [
+          "Giữ đúng các cặp [('M1', 7), ('M2', 9), ('M3', 11)]",
+          "đảo ngược toàn bộ giá trị",
+          "chỉ biểu diễn giá trị lớn nhất",
+          "bỏ nhãn và chỉ giữ tổng"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chuyen-bang-bieu-do"
+          ],
+          "type": "chuyen-doi"
+        },
+        "difficulty": "basic",
+        "explanation": "Khi chuyển bảng sang biểu đồ phải giữ đúng từng cặp nhãn–giá trị."
+      },
+      {
+        "id": "STA21V1_098",
+        "question": "Từ bảng có nhãn ['Nhóm X', 'Y', 'Z'] và giá trị [4, 6, 5], nguyên tắc chuyển sang biểu đồ đúng là:",
+        "options": [
+          "Giữ đúng các cặp [('Nhóm X', 4), ('Y', 6), ('Z', 5)]",
+          "đảo ngược toàn bộ giá trị",
+          "chỉ biểu diễn giá trị lớn nhất",
+          "bỏ nhãn và chỉ giữ tổng"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "chuyen-bang-bieu-do"
+          ],
+          "type": "chuyen-doi"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Khi chuyển bảng sang biểu đồ phải giữ đúng từng cặp nhãn–giá trị."
+      },
+      {
+        "id": "STA21V1_101",
+        "question": "Với dữ liệu [5, 6, 6, 7, 8], nhận xét nào chắc chắn đúng?",
+        "options": [
+          "Giá trị lớn nhất là 8 và nhỏ nhất là 5",
+          "Giá trị lớn nhất là 5",
+          "Mọi giá trị đều bằng 5",
+          "Dữ liệu chắc chắn tăng đều"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "nhan-xet-du-lieu"
+          ],
+          "type": "nhan-xet"
+        },
+        "difficulty": "basic",
+        "explanation": "Nhận xét phải dựa trực tiếp vào dữ liệu."
+      },
+      {
+        "id": "STA21V1_102",
+        "question": "Với dữ liệu [12, 12, 15, 18, 18], nhận xét nào chắc chắn đúng?",
+        "options": [
+          "Giá trị lớn nhất là 18 và nhỏ nhất là 12",
+          "Giá trị lớn nhất là 12",
+          "Mọi giá trị đều bằng 12",
+          "Dữ liệu chắc chắn tăng đều"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "nhan-xet-du-lieu"
+          ],
+          "type": "nhan-xet"
+        },
+        "difficulty": "basic",
+        "explanation": "Nhận xét phải dựa trực tiếp vào dữ liệu."
+      },
+      {
+        "id": "STA21V1_103",
+        "question": "Với dữ liệu [20, 24, 23, 30, 35], nhận xét nào chắc chắn đúng?",
+        "options": [
+          "Giá trị lớn nhất là 35 và nhỏ nhất là 20",
+          "Giá trị lớn nhất là 20",
+          "Mọi giá trị đều bằng 20",
+          "Dữ liệu chắc chắn tăng đều"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "nhan-xet-du-lieu"
+          ],
+          "type": "nhan-xet"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Nhận xét phải dựa trực tiếp vào dữ liệu."
+      },
+      {
+        "id": "STA21V1_104",
+        "question": "Với dữ liệu [8, 9, 9, 9, 10], nhận xét nào chắc chắn đúng?",
+        "options": [
+          "Giá trị lớn nhất là 10 và nhỏ nhất là 8",
+          "Giá trị lớn nhất là 8",
+          "Mọi giá trị đều bằng 8",
+          "Dữ liệu chắc chắn tăng đều"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "nhan-xet-du-lieu"
+          ],
+          "type": "nhan-xet"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Nhận xét phải dựa trực tiếp vào dữ liệu."
+      },
+      {
+        "id": "STA21V1_105",
+        "question": "Với dữ liệu [30, 25, 20, 15, 10], nhận xét nào chắc chắn đúng?",
+        "options": [
+          "Giá trị lớn nhất là 30 và nhỏ nhất là 10",
+          "Giá trị lớn nhất là 10",
+          "Mọi giá trị đều bằng 30",
+          "Dữ liệu chắc chắn tăng đều"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "nhan-xet-du-lieu"
+          ],
+          "type": "nhan-xet"
+        },
+        "difficulty": "advanced",
+        "explanation": "Nhận xét phải dựa trực tiếp vào dữ liệu."
+      },
+      {
+        "id": "STA21V1_106",
+        "question": "Với dữ liệu [3, 5, 7, 9, 11], nhận xét nào chắc chắn đúng?",
+        "options": [
+          "Giá trị lớn nhất là 11 và nhỏ nhất là 3",
+          "Giá trị lớn nhất là 3",
+          "Mọi giá trị đều bằng 3",
+          "Dữ liệu chắc chắn tăng đều"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "nhan-xet-du-lieu"
+          ],
+          "type": "nhan-xet"
+        },
+        "difficulty": "basic",
+        "explanation": "Nhận xét phải dựa trực tiếp vào dữ liệu."
+      },
+      {
+        "id": "STA21V1_107",
+        "question": "Với dữ liệu [10, 10, 10, 12, 14], nhận xét nào chắc chắn đúng?",
+        "options": [
+          "Giá trị lớn nhất là 14 và nhỏ nhất là 10",
+          "Giá trị lớn nhất là 10",
+          "Mọi giá trị đều bằng 10",
+          "Dữ liệu chắc chắn tăng đều"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "nhan-xet-du-lieu"
+          ],
+          "type": "nhan-xet"
+        },
+        "difficulty": "basic",
+        "explanation": "Nhận xét phải dựa trực tiếp vào dữ liệu."
+      },
+      {
+        "id": "STA21V1_108",
+        "question": "Với dữ liệu [4, 6, 6, 8, 12], nhận xét nào chắc chắn đúng?",
+        "options": [
+          "Giá trị lớn nhất là 12 và nhỏ nhất là 4",
+          "Giá trị lớn nhất là 4",
+          "Mọi giá trị đều bằng 4",
+          "Dữ liệu chắc chắn tăng đều"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "nhan-xet-du-lieu"
+          ],
+          "type": "nhan-xet"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Nhận xét phải dựa trực tiếp vào dữ liệu."
+      },
+      {
+        "id": "STA21V1_111",
+        "question": "Phát hiện chiều cao ghi lẫn 1,65 m và 168 cm. Cách xử lý đúng là:",
+        "options": [
+          "đổi về cùng một đơn vị trước khi so sánh",
+          "bỏ qua vì số liệu vẫn có chữ số",
+          "cộng trực tiếp các số",
+          "chọn đơn vị lớn hơn và bỏ số nhỏ"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "don-vi-thang-do"
+          ],
+          "type": "don-vi-thang-do"
+        },
+        "difficulty": "basic",
+        "explanation": "Đơn vị và thang đo phải được chuẩn hóa đúng trước khi phân tích."
+      },
+      {
+        "id": "STA21V1_112",
+        "question": "Phát hiện khối lượng ghi lẫn 2,5 kg và 800 g. Cách xử lý đúng là:",
+        "options": [
+          "đổi về cùng một đơn vị trước khi tính",
+          "bỏ qua vì số liệu vẫn có chữ số",
+          "cộng trực tiếp các số",
+          "chọn đơn vị lớn hơn và bỏ số nhỏ"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "don-vi-thang-do"
+          ],
+          "type": "don-vi-thang-do"
+        },
+        "difficulty": "basic",
+        "explanation": "Đơn vị và thang đo phải được chuẩn hóa đúng trước khi phân tích."
+      },
+      {
+        "id": "STA21V1_113",
+        "question": "Phát hiện trục tung chia mỗi vạch 10 nhưng người đọc tưởng là 1. Cách xử lý đúng là:",
+        "options": [
+          "đọc đúng thang chia của trục",
+          "bỏ qua vì số liệu vẫn có chữ số",
+          "cộng trực tiếp các số",
+          "chọn đơn vị lớn hơn và bỏ số nhỏ"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "don-vi-thang-do"
+          ],
+          "type": "don-vi-thang-do"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Đơn vị và thang đo phải được chuẩn hóa đúng trước khi phân tích."
+      },
+      {
+        "id": "STA21V1_114",
+        "question": "Phát hiện biểu đồ ghi doanh thu theo triệu đồng nhưng kết luận dùng đồng. Cách xử lý đúng là:",
+        "options": [
+          "đổi và ghi đúng đơn vị",
+          "bỏ qua vì số liệu vẫn có chữ số",
+          "cộng trực tiếp các số",
+          "chọn đơn vị lớn hơn và bỏ số nhỏ"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "don-vi-thang-do"
+          ],
+          "type": "don-vi-thang-do"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Đơn vị và thang đo phải được chuẩn hóa đúng trước khi phân tích."
+      },
+      {
+        "id": "STA21V1_115",
+        "question": "Phát hiện thời gian ghi 1,5 giờ và 90 phút. Cách xử lý đúng là:",
+        "options": [
+          "thống nhất về giờ hoặc phút",
+          "bỏ qua vì số liệu vẫn có chữ số",
+          "cộng trực tiếp các số",
+          "chọn đơn vị lớn hơn và bỏ số nhỏ"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "don-vi-thang-do"
+          ],
+          "type": "don-vi-thang-do"
+        },
+        "difficulty": "advanced",
+        "explanation": "Đơn vị và thang đo phải được chuẩn hóa đúng trước khi phân tích."
+      },
+      {
+        "id": "STA21V1_116",
+        "question": "Phát hiện nhiệt độ dùng °C nhưng một bản ghi lại là °F. Cách xử lý đúng là:",
+        "options": [
+          "quy đổi về cùng thang nhiệt độ",
+          "bỏ qua vì số liệu vẫn có chữ số",
+          "cộng trực tiếp các số",
+          "chọn đơn vị lớn hơn và bỏ số nhỏ"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "don-vi-thang-do"
+          ],
+          "type": "don-vi-thang-do"
+        },
+        "difficulty": "basic",
+        "explanation": "Đơn vị và thang đo phải được chuẩn hóa đúng trước khi phân tích."
+      },
+      {
+        "id": "STA21V1_117",
+        "question": "Phát hiện diện tích ghi m² và cm² trong cùng bảng. Cách xử lý đúng là:",
+        "options": [
+          "quy đổi đơn vị diện tích trước khi cộng",
+          "bỏ qua vì số liệu vẫn có chữ số",
+          "cộng trực tiếp các số",
+          "chọn đơn vị lớn hơn và bỏ số nhỏ"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "don-vi-thang-do"
+          ],
+          "type": "don-vi-thang-do"
+        },
+        "difficulty": "basic",
+        "explanation": "Đơn vị và thang đo phải được chuẩn hóa đúng trước khi phân tích."
+      },
+      {
+        "id": "STA21V1_118",
+        "question": "Phát hiện một biểu đồ cột bị cắt trục dọc từ 90 thay vì 0. Cách xử lý đúng là:",
+        "options": [
+          "đọc thang trục và thận trọng khi so sánh trực quan",
+          "bỏ qua vì số liệu vẫn có chữ số",
+          "cộng trực tiếp các số",
+          "chọn đơn vị lớn hơn và bỏ số nhỏ"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "don-vi-thang-do"
+          ],
+          "type": "don-vi-thang-do"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Đơn vị và thang đo phải được chuẩn hóa đúng trước khi phân tích."
+      },
+      {
+        "id": "STA21V1_139",
+        "question": "Tần số tương đối của nhóm [150;160) trong bộ dữ liệu 14 giá trị là:",
+        "options": [
+          "3/14",
+          "4/14",
+          "4/10",
+          "10/14"
+        ],
+        "answer": 1,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-ghep-nhom"
+          ],
+          "type": "tan-so-tuong-doi-nhom"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Nhóm có 4 giá trị trên tổng 14 giá trị nên tần số tương đối là 4/14.",
+        "diagram": {
+          "src": "../../statistics/21/21-du-lieu-ghep-nhom.svg",
+          "alt": "Dữ liệu chiều cao ghép nhóm theo các khoảng [140;150), [150;160), [160;170), [170;180)",
+          "caption": "Các khoảng dùng quy ước đầu mút trái đóng, đầu mút phải mở."
+        }
+      },
+      {
+        "id": "STA21V1_140",
+        "question": "Giá trị đại diện theo trung điểm của nhóm [160;170) là:",
+        "options": [
+          "160",
+          "165",
+          "170",
+          "330"
+        ],
+        "answer": 1,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-ghep-nhom"
+          ],
+          "type": "gia-tri-dai-dien-nhom"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Trung điểm của khoảng là (160 + 170)/2 = 165.",
+        "diagram": {
+          "src": "../../statistics/21/21-du-lieu-ghep-nhom.svg",
+          "alt": "Dữ liệu chiều cao ghép nhóm theo các khoảng [140;150), [150;160), [160;170), [170;180)",
+          "caption": "Các khoảng dùng quy ước đầu mút trái đóng, đầu mút phải mở."
+        }
+      },
+      {
+        "id": "STA21V1_141",
+        "question": "Với các nhóm [160;170) và [170;180), giá trị 170 phải được xếp vào:",
+        "options": [
+          "[160;170)",
+          "[170;180)",
+          "Cả hai nhóm",
+          "Không nhóm nào"
+        ],
+        "answer": 1,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-ghep-nhom"
+          ],
+          "type": "diem-bien-nhom"
+        },
+        "difficulty": "basic",
+        "explanation": "Theo quy ước [a;b), đầu mút phải không thuộc nhóm trước; 170 thuộc [170;180).",
+        "diagram": {
+          "src": "../../statistics/21/21-du-lieu-ghep-nhom.svg",
+          "alt": "Dữ liệu chiều cao ghép nhóm theo các khoảng [140;150), [150;160), [160;170), [170;180)",
+          "caption": "Các khoảng dùng quy ước đầu mút trái đóng, đầu mút phải mở."
+        }
+      },
+      {
+        "id": "STA21V1_142",
+        "question": "Trong dữ liệu minh họa, hai nhóm nào cùng có tần số lớn nhất bằng 4?",
+        "options": [
+          "[140;150) và [160;170)",
+          "[150;160) và [170;180)",
+          "[140;150) và [170;180)",
+          "[150;160) và [160;170)"
+        ],
+        "answer": 1,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-ghep-nhom"
+          ],
+          "type": "so-sanh-tan-so-nhom"
+        },
+        "difficulty": "advanced",
+        "explanation": "Các nhóm [150;160) và [170;180) đều có 4 giá trị; hai nhóm còn lại có 3.",
+        "diagram": {
+          "src": "../../statistics/21/21-du-lieu-ghep-nhom.svg",
+          "alt": "Dữ liệu chiều cao ghép nhóm theo các khoảng [140;150), [150;160), [160;170), [170;180)",
+          "caption": "Các khoảng dùng quy ước đầu mút trái đóng, đầu mút phải mở."
+        }
+      },
+      {
+        "id": "STA21V1_143",
+        "question": "Vì sao các khoảng ghép nhóm nên được quy ước không chồng lấn?",
+        "options": [
+          "Để mỗi giá trị chỉ được đếm vào một nhóm",
+          "Để mọi nhóm có cùng tần số",
+          "Để bỏ qua các giá trị ở biên",
+          "Để tổng tần số nhỏ hơn cỡ mẫu"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-ghep-nhom"
+          ],
+          "type": "quy-uoc-khoang"
+        },
+        "difficulty": "advanced",
+        "explanation": "Khoảng không chồng lấn và quy ước đầu mút nhất quán ngăn một giá trị biên bị đếm hai lần.",
+        "diagram": {
+          "src": "../../statistics/21/21-du-lieu-ghep-nhom.svg",
+          "alt": "Dữ liệu chiều cao ghép nhóm theo các khoảng [140;150), [150;160), [160;170), [170;180)",
+          "caption": "Các khoảng dùng quy ước đầu mút trái đóng, đầu mút phải mở."
+        }
+      },
+      {
+        "id": "STA21V1_144",
+        "question": "Tổng tần số của bốn nhóm trong hình minh họa phải bằng bao nhiêu?",
+        "options": [
+          "10",
+          "12",
+          "14",
+          "16"
+        ],
+        "answer": 2,
+        "tags": {
+          "topic": "21-thong-ke",
+          "skill": [
+            "du-lieu-ghep-nhom"
+          ],
+          "type": "tong-tan-so-nhom"
+        },
+        "difficulty": "intermediate",
+        "explanation": "Có 14 quan sát ban đầu, nên tổng tần số các nhóm phải bằng 14.",
+        "diagram": {
+          "src": "../../statistics/21/21-du-lieu-ghep-nhom.svg",
+          "alt": "Dữ liệu chiều cao ghép nhóm theo các khoảng [140;150), [150;160), [160;170), [170;180)",
+          "caption": "Các khoảng dùng quy ước đầu mút trái đóng, đầu mút phải mở."
+        }
+      }
+    ],
+    "example_question": {
+      "id": "STA21V1_001",
+      "question": "Trong một khảo sát, “số giờ ngủ của một học sinh” thuộc loại dữ liệu nào?",
+      "options": [
+        "dữ liệu số",
+        "dữ liệu phân loại",
+        "không phải dữ liệu",
+        "chỉ là tên biến, không có giá trị"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "du-lieu-phan-loai"
+        ],
+        "type": "phan-loai-du-lieu"
+      },
+      "difficulty": "basic",
+      "explanation": "“số giờ ngủ của một học sinh” được ghi nhận dưới dạng con số đo/đếm, nên là dữ liệu số."
+    },
+    "golden_template": {
+      "schema": "roadmap-golden-template-v1",
+      "version": "1.0",
+      "status": "FROZEN",
+      "frozen_on": "2026-09-25",
+      "pilot_topic": "07-phan-thuc-dai-so",
+      "freeze_evidence": [
+        "curriculum/content QA passed",
+        "schema and JavaScript QA passed",
+        "GitHub Actions deploy QA passed",
+        "MkDocs strict build passed",
+        "GitHub Pages deploy passed",
+        "iPad real-device Learn -> Practice -> Readiness flow passed"
+      ],
+      "invariants": {
+        "learning_flow": [
+          "LEARN",
+          "PRACTICE",
+          "READINESS"
+        ],
+        "learn": {
+          "learning_cards": true,
+          "micro_practice": "short formative checks with immediate feedback",
+          "duplicate_static_practice_blocks": false,
+          "sections_8_9": "gateways only"
+        },
+        "practice": {
+          "interactive_engine": true,
+          "written_practice": true,
+          "collapsed_solutions": true,
+          "layer_separation": [
+            "KNTT-Core",
+            "Entrance10",
+            "Specialized-Challenge"
+          ]
+        },
+        "readiness": {
+          "feedback": "after_submit",
+          "hints": false,
+          "tutor": false,
+          "hard_gate": false,
+          "states": [
+            "READY",
+            "REVIEW_RECOMMENDED",
+            "MORE_EVIDENCE_NEEDED"
+          ],
+          "evidence_store": "toan-thcs-assessment-v1"
+        },
+        "practice_evidence_store": "toan-thcs-practice-v1",
+        "evidence_rule": "Formative practice and readiness assessment evidence remain separate; do not mechanically merge them into one mastery score.",
+        "assessed_skill_rule": "Each scored item has one assessed skill. supporting_skills do not automatically receive attempted/correct updates.",
+        "core_rule": "Entrance10 and Specialized-Challenge never contribute to KNTT Core readiness or gate Core progression.",
+        "soft_mastery": "Readiness recommends next action; it never blocks the next topic."
+      },
+      "reusable_assets": [
+        "docs/assets/javascripts/assessment-engine-v1.js",
+        "docs/assets/stylesheets/assessment-engine.css",
+        "docs/assets/data/assessment/readiness-assessment-v1.schema.json",
+        "docs/assets/javascripts/learner-evidence-v1.js",
+        "docs/assets/javascripts/practice-engine-v2.js"
+      ],
+      "pilot_assets": [
+        "docs/assets/data/curriculum/topic07-learning-workspace.json",
+        "docs/assets/data/practice/07-phan-thuc-dai-so-micro-v1.json",
+        "docs/assets/data/assessment/07-phan-thuc-dai-so-core-v1.json"
+      ],
+      "rollout_policy": "Apply by topic/strand batch. Do not create per-card rollout PRs unless fixing a verified defect.",
+      "maintenance_revision": "1.0.1",
+      "maintenance_notes": [
+        "MathJax is re-typeset when collapsible details open.",
+        "Micro-practice and Readiness choices enforce touch-safe 44px targets; micro option gap is at least 8px.",
+        "Learning page exposes bottom Practice/Readiness CTAs.",
+        "CI rejects hidden JSON control characters and validates micro-practice before deploy."
+      ]
+    }
+  }
+}

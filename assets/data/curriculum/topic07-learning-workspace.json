@@ -1,0 +1,208 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "07-phan-thuc-dai-so",
+  "title": "Phân thức đại số",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only five Core cards contribute to KNTT Grade 8 Core completion. Entrance10 and Challenge never gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "pt07-core-1",
+      "order": 1,
+      "title": "Khái niệm & điều kiện xác định",
+      "kntt_lessons": [
+        "Bài 21"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-phan-thuc",
+        "dieu-kien-xac-dinh",
+        "hai-phan-thuc-bang-nhau",
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "RAT07MICRO_001",
+        "RAT07MICRO_002",
+        "RAT07MICRO_003"
+      ],
+      "misconceptions": [
+        "dkxd-sai-doi-tuong"
+      ]
+    },
+    {
+      "id": "pt07-core-2",
+      "order": 2,
+      "title": "Tính chất cơ bản & rút gọn",
+      "kntt_lessons": [
+        "Bài 22"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "doi-dau-phan-thuc",
+        "phan-tich-tu-mau",
+        "rut-gon-phan-thuc"
+      ],
+      "prerequisites": [
+        "nhan-tu-chung",
+        "hieu-hai-binh-phuong"
+      ],
+      "micro_practice": [
+        "RAT07MICRO_004",
+        "RAT07MICRO_005",
+        "RAT07MICRO_006"
+      ],
+      "misconceptions": [
+        "triet-tieu-hang-tu",
+        "doi-dau-khong-day-du"
+      ]
+    },
+    {
+      "id": "pt07-core-3",
+      "order": 3,
+      "title": "Quy đồng mẫu thức",
+      "kntt_lessons": [
+        "Bài 22"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "prerequisites": [
+        "phan-tich-tu-mau"
+      ],
+      "micro_practice": [
+        "RAT07MICRO_007",
+        "RAT07MICRO_008",
+        "RAT07MICRO_009"
+      ],
+      "misconceptions": [
+        "mtc-chua-toi-uu",
+        "quen-nhan-tu-phu"
+      ]
+    },
+    {
+      "id": "pt07-core-4",
+      "order": 4,
+      "title": "Phép cộng & phép trừ",
+      "kntt_lessons": [
+        "Bài 23"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "cong-tru-phan-thuc"
+      ],
+      "prerequisites": [
+        "quy-dong-mau-thuc",
+        "bo-ngoac-dau",
+        "cong-tru-da-thuc"
+      ],
+      "micro_practice": [
+        "RAT07MICRO_010",
+        "RAT07MICRO_011",
+        "RAT07MICRO_012"
+      ],
+      "misconceptions": [
+        "tru-khong-doi-dau-tu-thuc"
+      ]
+    },
+    {
+      "id": "pt07-core-5",
+      "order": 5,
+      "title": "Phép nhân & phép chia",
+      "kntt_lessons": [
+        "Bài 24"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-phan-thuc",
+        "chia-phan-thuc"
+      ],
+      "prerequisites": [
+        "phan-tich-tu-mau",
+        "rut-gon-phan-thuc"
+      ],
+      "micro_practice": [
+        "RAT07MICRO_013",
+        "RAT07MICRO_014",
+        "RAT07MICRO_015"
+      ],
+      "misconceptions": [
+        "chia-khong-nghich-dao",
+        "quen-dieu-kien-so-chia"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "pt07-ent10-1",
+      "layer": "Entrance10",
+      "title": "Biểu thức hữu tỉ nhiều bước",
+      "gates_core": false
+    },
+    {
+      "id": "pt07-ent10-2",
+      "layer": "Entrance10",
+      "title": "Tính giá trị sau rút gọn & bài toán tổng hợp",
+      "gates_core": false
+    },
+    {
+      "id": "pt07-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Giá trị nguyên / chia có dư",
+      "gates_core": false
+    },
+    {
+      "id": "pt07-challenge-2",
+      "layer": "Specialized-Challenge",
+      "title": "GTLN / GTNN phân thức khi phù hợp",
+      "gates_core": false
+    }
+  ],
+  "misconception_registry": {
+    "triet-tieu-hang-tu": {
+      "symptom": "Triệt tiêu hạng tử qua dấu cộng/trừ thay vì nhân tử.",
+      "causal_remediation": false,
+      "review_context_only": [
+        "nhan-tu-chung"
+      ]
+    },
+    "tru-khong-doi-dau-tu-thuc": {
+      "symptom": "Dấu trừ trước phân thức/ngoặc không đổi dấu toàn bộ tử thức.",
+      "causal_remediation": false,
+      "review_context_only": [
+        "bo-ngoac-dau"
+      ]
+    },
+    "dkxd-sai-doi-tuong": {
+      "symptom": "Cho tử bằng 0 hoặc bỏ sót mẫu thức khi tìm điều kiện xác định.",
+      "causal_remediation": false,
+      "review_context_only": [
+        "dieu-kien-xac-dinh"
+      ]
+    },
+    "doi-dau-khong-day-du": {
+      "symptom": "Đổi dấu mẫu nhưng không đổi dấu tương ứng của tử/phân thức.",
+      "causal_remediation": false,
+      "review_context_only": [
+        "doi-dau-phan-thuc"
+      ]
+    }
+  },
+  "qa_notes": [
+    "KNTT Bài 21 includes value of a rational expression at an allowed variable value.",
+    "KNTT Bài 23 includes addition/subtraction of multiple rational expressions and use of addition properties / bracket rule.",
+    "KNTT Bài 24 includes multiplication properties in addition to multiplication/division rules.",
+    "Do not encode every pedagogical sequence as a causal Knowledge Graph prerequisite.",
+    "Learning-card skill IDs are aligned with the existing CĐ07 Practice Bank manifest.",
+    "Micro-practice IDs are stable authored items in RAT07-MICRO-V1; Extension never contributes to Core completion.",
+    "Card 1 includes hai-phan-thuc-bang-nhau as KNTT Core metadata even though the 3-item micro set samples only part of the card.",
+    "misconception_registry is descriptive only; review_context_only must never be treated as causal remediation without independent learner evidence + reviewed graph/rule."
+  ],
+  "micro_practice_bank": "assets/data/practice/07-phan-thuc-dai-so-micro-v1.json",
+  "observed_signal_policy": {
+    "rule": "Option-level misconception signals are observations, not diagnoses. A signal may guide local feedback/Tutor context but must not create causal remediation without sufficient learner evidence and a reviewed Knowledge Graph/rule.",
+    "signal_weight": "Optional 1–2 salience value for ranking/feedback only; never added to accuracy and never used alone to mark a skill weak."
+  }
+}

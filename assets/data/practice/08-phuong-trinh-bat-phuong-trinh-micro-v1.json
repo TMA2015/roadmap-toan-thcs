@@ -1,0 +1,665 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "EQ08-MICRO-V1",
+  "topic": {
+    "id": "08-phuong-trinh-bat-phuong-trinh",
+    "title": "Phương trình và bất phương trình"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "EQ08MICRO_001",
+      "card_id": "eq08-core-1",
+      "micro_role": "base",
+      "question": "Số nào là nghiệm của \\(2x+1=7\\)?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "-3"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "nghiem-phuong-trinh"
+        ],
+        "type": "nghiem-phuong-trinh",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Thay x=3 được 2·3+1=7.",
+      "hints": [
+        "Nghiệm làm hai vế bằng nhau.",
+        "Thử thay từng giá trị vào vế trái."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_002",
+      "card_id": "eq08-core-1",
+      "micro_role": "trap",
+      "question": "Giải \\(3x-5=10\\).",
+      "options": [
+        "\\(x=5\\)",
+        "\\(x=\\frac53\\)",
+        "\\(x=-5\\)",
+        "\\(x=15\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "pt-bac-nhat"
+        ],
+        "type": "pt-bac-nhat",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "3x=15 nên x=5.",
+      "hints": [
+        "Chuyển -5 sang vế phải thành +5.",
+        "Sau đó chia cả hai vế cho 3."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "pt-bac-nhat-chia-sai",
+          "signal_weight": 2,
+          "feedback_hint": "Sau khi chuyển vế cần chia 15 cho 3, không chia 5 cho 3."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_003",
+      "card_id": "eq08-core-1",
+      "micro_role": "apply",
+      "question": "Giải \\(2(x-1)+3(x+2)=14\\).",
+      "options": [
+        "\\(x=2\\)",
+        "\\(x=-2\\)",
+        "\\(x=4\\)",
+        "\\(x=10\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "bien-doi-pt-nhieu-buoc"
+        ],
+        "type": "bien-doi-pt-nhieu-buoc",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "2x-2+3x+6=14 ⇒ 5x=10 ⇒ x=2.",
+      "hints": [
+        "Bỏ ngoặc trước.",
+        "Thu gọn được 5x+4=14."
+      ],
+      "supporting_skills": [
+        "pt-bac-nhat"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_004",
+      "card_id": "eq08-core-2",
+      "micro_role": "base",
+      "question": "Giải \\((x-2)(x+3)=0\\).",
+      "options": [
+        "\\(x=2\\) hoặc \\(x=-3\\)",
+        "\\(x=-2\\) hoặc \\(x=3\\)",
+        "\\(x=1\\)",
+        "\\(x=-6\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "pt-tich"
+        ],
+        "type": "pt-tich",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Tích bằng 0 khi một trong hai nhân tử bằng 0.",
+      "hints": [
+        "Cho từng nhân tử bằng 0.",
+        "Giải x-2=0 và x+3=0."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_005",
+      "card_id": "eq08-core-2",
+      "micro_role": "trap",
+      "question": "Điều kiện xác định của \\(\\frac1{x-2}=\\frac3x\\) là:",
+      "options": [
+        "\\(x\\ne2,\\ x\\ne0\\)",
+        "\\(x\\ne2\\)",
+        "\\(x\\ne0\\)",
+        "\\(x\\ne3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "dkxd-phuong-trinh-mau"
+        ],
+        "type": "dkxd-phuong-trinh-mau",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Cả hai mẫu x-2 và x phải khác 0.",
+      "hints": [
+        "Xét từng mẫu riêng.",
+        "Loại các giá trị làm ít nhất một mẫu bằng 0."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "dkxd-thieu-mau",
+          "signal_weight": 2,
+          "feedback_hint": "Phương trình có hai mẫu, cần kiểm tra cả hai."
+        },
+        "2": {
+          "signal": "dkxd-thieu-mau",
+          "signal_weight": 2,
+          "feedback_hint": "Phương trình có hai mẫu, cần kiểm tra cả hai."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_006",
+      "card_id": "eq08-core-2",
+      "micro_role": "apply",
+      "question": "Giải phương trình \\(\\frac{x+1}{x-1}=0\\), \\(x\\ne1\\). Kết luận đúng là:",
+      "options": [
+        "\\(x=-1\\)",
+        "\\(x=1\\)",
+        "Vô nghiệm",
+        "\\(x=0\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "doi-chieu-nghiem"
+        ],
+        "type": "doi-chieu-nghiem",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Phân thức bằng 0 khi tử bằng 0 và mẫu khác 0. x=-1 thỏa điều kiện.",
+      "hints": [
+        "Cho tử x+1 bằng 0.",
+        "Sau khi tìm nghiệm, đối chiếu x≠1."
+      ],
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_007",
+      "card_id": "eq08-core-3",
+      "micro_role": "base",
+      "question": "Bất đẳng thức nào biểu diễn “x không nhỏ hơn 4”?",
+      "options": [
+        "\\(x\\ge4\\)",
+        "\\(x>4\\)",
+        "\\(x\\le4\\)",
+        "\\(x<4\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "bat-dang-thuc"
+        ],
+        "type": "bat-dang-thuc",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "“Không nhỏ hơn” nghĩa là lớn hơn hoặc bằng.",
+      "hints": [
+        "Từ khóa “không nhỏ hơn”.",
+        "Cho phép bằng 4."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_008",
+      "card_id": "eq08-core-3",
+      "micro_role": "trap",
+      "question": "Nếu \\(a<b\\), khẳng định nào luôn đúng?",
+      "options": [
+        "\\(a-7<b-7\\)",
+        "\\(a-7>b-7\\)",
+        "\\(7-a<7-b\\)",
+        "\\(a+7=b+7\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "tinh-chat-thu-tu-phep-cong"
+        ],
+        "type": "tinh-chat-thu-tu-phep-cong",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trừ cùng một số ở hai vế giữ nguyên chiều.",
+      "hints": [
+        "Phép cộng/trừ cùng một số không đổi chiều.",
+        "Cẩn thận 7-a và 7-b là nhân với -1 sau khi đổi thứ tự."
+      ],
+      "option_evidence": {
+        "2": {
+          "signal": "thu-tu-doi-dau-nham",
+          "signal_weight": 2,
+          "feedback_hint": "Biểu thức 7-a và 7-b tương ứng với việc đổi dấu, nên chiều không giữ như phép cộng đơn thuần."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_009",
+      "card_id": "eq08-core-3",
+      "micro_role": "apply",
+      "question": "Từ \\(-3x<12\\), kết luận đúng là:",
+      "options": [
+        "\\(x>-4\\)",
+        "\\(x<-4\\)",
+        "\\(x>4\\)",
+        "\\(x<4\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "tinh-chat-thu-tu-phep-nhan"
+        ],
+        "type": "tinh-chat-thu-tu-phep-nhan",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Chia hai vế cho -3 phải đổi chiều: x>-4.",
+      "hints": [
+        "Ta sẽ chia cho -3.",
+        "Chia cho số âm phải đổi chiều."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "quen-doi-chieu-khi-chia-am",
+          "signal_weight": 2,
+          "feedback_hint": "Chia hai vế cho số âm phải đổi chiều bất đẳng thức."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_010",
+      "card_id": "eq08-core-4",
+      "micro_role": "base",
+      "question": "Giải \\(2x+1>5\\).",
+      "options": [
+        "\\(x>2\\)",
+        "\\(x<2\\)",
+        "\\(x>3\\)",
+        "\\(x\\ge2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "bpt-bac-nhat"
+        ],
+        "type": "bpt-bac-nhat",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "2x>4 nên x>2.",
+      "hints": [
+        "Chuyển 1 sang vế phải.",
+        "Chia cho 2 là số dương nên giữ chiều."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_011",
+      "card_id": "eq08-core-4",
+      "micro_role": "trap",
+      "question": "Giải \\(-2x\\ge6\\).",
+      "options": [
+        "\\(x\\le-3\\)",
+        "\\(x\\ge-3\\)",
+        "\\(x\\le3\\)",
+        "\\(x\\ge3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "doi-chieu-bpt"
+        ],
+        "type": "doi-chieu-bpt",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Chia hai vế cho -2 và đổi chiều: x≤-3.",
+      "hints": [
+        "Chia cho -2.",
+        "Đổi ≥ thành ≤."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "quen-doi-chieu-bpt",
+          "signal_weight": 2,
+          "feedback_hint": "Khi chia cho số âm, dấu bất phương trình phải đổi chiều."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_012",
+      "card_id": "eq08-core-4",
+      "micro_role": "apply",
+      "question": "Tập nghiệm \\(x<2\\) được mô tả đúng là:",
+      "options": [
+        "Điểm 2 rỗng, tô về bên trái.",
+        "Điểm 2 đặc, tô về bên trái.",
+        "Điểm 2 rỗng, tô về bên phải.",
+        "Điểm 2 đặc, tô về bên phải."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "bieu-dien-tap-nghiem"
+        ],
+        "type": "bieu-dien-tap-nghiem",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dấu < không lấy mốc 2 và nhận các số nhỏ hơn 2.",
+      "hints": [
+        "Dấu < có lấy điểm 2 không?",
+        "Các số nhỏ hơn 2 nằm bên trái trên trục số."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_013",
+      "card_id": "eq08-core-5",
+      "micro_role": "base",
+      "question": "Một số tăng thêm 5 thì bằng 17. Gọi số đó là x. Phương trình đúng là:",
+      "options": [
+        "\\(x+5=17\\)",
+        "\\(x-5=17\\)",
+        "\\(5x=17\\)",
+        "\\(x+17=5\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "lap-phuong-trinh"
+        ],
+        "type": "lap-phuong-trinh",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "“Tăng thêm 5” nghĩa là x+5.",
+      "hints": [
+        "Dịch câu chữ thành phép toán.",
+        "Số ban đầu là x."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_014",
+      "card_id": "eq08-core-5",
+      "micro_role": "trap",
+      "question": "Một hình chữ nhật có chiều dài hơn chiều rộng 3 cm. Gọi chiều rộng là x, chiều dài là:",
+      "options": [
+        "\\(x+3\\)",
+        "\\(x-3\\)",
+        "\\(3x\\)",
+        "\\(x/3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "lap-phuong-trinh"
+        ],
+        "type": "lap-phuong-trinh",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Chiều dài lớn hơn chiều rộng 3 nên bằng x+3.",
+      "hints": [
+        "“Hơn 3” là cộng 3.",
+        "Biến x đang đại diện cho chiều rộng."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "lap-phuong-trinh-dao-quan-he",
+          "signal_weight": 2,
+          "feedback_hint": "Chiều dài lớn hơn chiều rộng, nên phải cộng 3 chứ không trừ 3."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_015",
+      "card_id": "eq08-core-5",
+      "micro_role": "apply",
+      "question": "Tổng hai số liên tiếp là 41. Gọi số bé là x. Phương trình đúng là:",
+      "options": [
+        "\\(x+(x+1)=41\\)",
+        "\\(x+(x-1)=41\\)",
+        "\\(2x+1=40\\)",
+        "\\(x(x+1)=41\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "lap-phuong-trinh"
+        ],
+        "type": "lap-phuong-trinh",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai số liên tiếp là x và x+1; tổng bằng 41.",
+      "hints": [
+        "Viết số lớn theo x.",
+        "Số lớn hơn số bé 1 đơn vị."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8,
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

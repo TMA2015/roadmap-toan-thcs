@@ -1,0 +1,1162 @@
+{
+  "schema": "cd05-academic-qa-ledger-v1",
+  "topic": "05-7-hang-dang-thuc",
+  "as_of": "2026-09-26",
+  "status": "source_review_and_regression_pending_ci_no_runtime_use",
+  "source_overlay": "primary-skill-overlay-draft-05-7-hang-dang-thuc-v1.json",
+  "source_files": {
+    "05-7-hang-dang-thuc-v1-01.json": {
+      "github_blob_sha": "6bb054851b281e495b02a55bf65008a08ad82218",
+      "question_count": 30
+    },
+    "05-7-hang-dang-thuc-v1-02.json": {
+      "github_blob_sha": "68c2d51a80b2eb9bdfe57cf62d2a790e88b4a05d",
+      "question_count": 30
+    },
+    "05-7-hang-dang-thuc-v1-03.json": {
+      "github_blob_sha": "fa18b11a46d5aad8e47813d3cc83549cd5769ac4",
+      "question_count": 30
+    },
+    "05-7-hang-dang-thuc-v1-04.json": {
+      "github_blob_sha": "c1edbbe7eba0d144a32d54cb384eb1ec09f156c8",
+      "question_count": 30
+    }
+  },
+  "limits": [
+    "Mathematical regression uses finite samples and explicit expected-answer checks, not formal proof of arbitrary symbolic identities.",
+    "Primary skill overlay remains review-only; MCQ identity/method questions do not establish written proof or chosen solution method.",
+    "Original question IDs/tags/options/correct indexes and learner statistics unchanged."
+  ],
+  "counts": {
+    "total": 120,
+    "numeric_group": 104,
+    "logic_group": 16,
+    "identity_recognition_or_method_only": 4,
+    "first_step_only": 1,
+    "method_not_observable": 15
+  },
+  "items": [
+    {
+      "question_id": "ID05V1_001",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_002",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_003",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_004",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_005",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_006",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_007",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_008",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_009",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_010",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_011",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_012",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_013",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_014",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_015",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_016",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_017",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_018",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_019",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_020",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_021",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_022",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_023",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_024",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_025",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_026",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_027",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_028",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_029",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_030",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_031",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_032",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_033",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_034",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_035",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_036",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_037",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_038",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_039",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_040",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_041",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_042",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_043",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_044",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_045",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_046",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_047",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "tong-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_048",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "tong-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_049",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "tong-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_050",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "tong-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_051",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "tong-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_052",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "tong-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_053",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "tong-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_054",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_055",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_056",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_057",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_058",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_059",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_060",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_061",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_062",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_063",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_064",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_065",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_066",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_067",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_068",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_069",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_070",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_071",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_072",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_073",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_074",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_075",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_076",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_077",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "tong-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_078",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_079",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "nhan-dang-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_080",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "nhan-dang-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "Subtraction form (A-B)^2 stated; previous A/B representation was ambiguous."
+      ]
+    },
+    {
+      "question_id": "ID05V1_081",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_082",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "tong-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_083",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_084",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_085",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_086",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hoan-chinh",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_087",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_088",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "tong-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_089",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-lap-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_090",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "lap-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_091",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "MCQ numeric result does not establish that learner actually used a fast identity."
+      ]
+    },
+    {
+      "question_id": "ID05V1_092",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "MCQ numeric result does not establish that learner actually used a fast identity."
+      ]
+    },
+    {
+      "question_id": "ID05V1_093",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "MCQ numeric result does not establish that learner actually used a fast identity."
+      ]
+    },
+    {
+      "question_id": "ID05V1_094",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "MCQ numeric result does not establish that learner actually used a fast identity."
+      ]
+    },
+    {
+      "question_id": "ID05V1_095",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "MCQ numeric result does not establish that learner actually used a fast identity."
+      ]
+    },
+    {
+      "question_id": "ID05V1_096",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "MCQ numeric result does not establish that learner actually used a fast identity."
+      ]
+    },
+    {
+      "question_id": "ID05V1_097",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-hieu",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "MCQ numeric result does not establish that learner actually used a fast identity."
+      ]
+    },
+    {
+      "question_id": "ID05V1_098",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "MCQ numeric result does not establish that learner actually used a fast identity."
+      ]
+    },
+    {
+      "question_id": "ID05V1_099",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "MCQ numeric result does not establish that learner actually used a fast identity."
+      ]
+    },
+    {
+      "question_id": "ID05V1_100",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "binh-phuong-tong",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "MCQ numeric result does not establish that learner actually used a fast identity."
+      ]
+    },
+    {
+      "question_id": "ID05V1_101",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "rut-gon-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_102",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "rut-gon-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_103",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "rut-gon-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_104",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "rut-gon-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_105",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "rut-gon-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_106",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "rut-gon-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_107",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "rut-gon-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_108",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "rut-gon-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_109",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "rut-gon-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_110",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "numeric_equivalence_or_coefficient_oracle",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "rut-gon-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": []
+    },
+    {
+      "question_id": "ID05V1_111",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "giai-phuong-trinh-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "Equation answer alone does not prove which method learner chose."
+      ]
+    },
+    {
+      "question_id": "ID05V1_112",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "giai-phuong-trinh-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "Equation answer alone does not prove which method learner chose."
+      ]
+    },
+    {
+      "question_id": "ID05V1_113",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "giai-phuong-trinh-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "Equation answer alone does not prove which method learner chose."
+      ]
+    },
+    {
+      "question_id": "ID05V1_114",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "giai-phuong-trinh-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "Equation answer alone does not prove which method learner chose."
+      ]
+    },
+    {
+      "question_id": "ID05V1_115",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "giai-phuong-trinh-hdt",
+      "primary_status": "candidate_only_not_live",
+      "notes": [
+        "Equation answer alone does not prove which method learner chose."
+      ]
+    },
+    {
+      "question_id": "ID05V1_116",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": null,
+      "primary_status": "no_primary_proof_skill",
+      "notes": [
+        "Identity recognition only; not proof-writing assessment."
+      ]
+    },
+    {
+      "question_id": "ID05V1_117",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": null,
+      "primary_status": "no_primary_proof_skill",
+      "notes": [
+        "Identity recognition only; not proof-writing assessment."
+      ]
+    },
+    {
+      "question_id": "ID05V1_118",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": null,
+      "primary_status": "no_primary_proof_skill",
+      "notes": [
+        "Identity recognition only; not proof-writing assessment."
+      ]
+    },
+    {
+      "question_id": "ID05V1_119",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": null,
+      "primary_status": "no_primary_proof_skill",
+      "notes": [
+        "Method selection only; not proof-writing assessment."
+      ]
+    },
+    {
+      "question_id": "ID05V1_120",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "answer_check_method": "logic_and_expected_answers",
+      "answer_check_status": "ready_for_ci",
+      "candidate_primary": "hieu-hai-binh-phuong",
+      "primary_status": "specific_first_step_candidate",
+      "notes": [
+        "First factorization step only, not complete factorization."
+      ]
+    }
+  ]
+}

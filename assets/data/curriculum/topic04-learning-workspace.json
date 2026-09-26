@@ -1,0 +1,146 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "04-bieu-thuc-dai-so",
+  "title": "Biểu thức và biến đổi đại số",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only Core cards contribute to readiness. Entrance10 and Challenge never gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "alg04-core-1",
+      "order": 1,
+      "title": "Đơn thức & đa thức",
+      "kntt_lessons": [
+        "Lớp 7 → 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-don-thuc",
+        "nhan-biet-da-thuc",
+        "he-so-bac"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "ALG04MICRO_001",
+        "ALG04MICRO_002",
+        "ALG04MICRO_003"
+      ]
+    },
+    {
+      "id": "alg04-core-2",
+      "order": 2,
+      "title": "Hạng tử đồng dạng & thu gọn",
+      "kntt_lessons": [
+        "Nền tảng"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "hang-tu-dong-dang",
+        "thu-gon-da-thuc"
+      ],
+      "prerequisites": [
+        "phep-tinh-so-huu-ti"
+      ],
+      "micro_practice": [
+        "ALG04MICRO_004",
+        "ALG04MICRO_005",
+        "ALG04MICRO_006"
+      ]
+    },
+    {
+      "id": "alg04-core-3",
+      "order": 3,
+      "title": "Cộng, trừ & bỏ ngoặc",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "prerequisites": [
+        "hang-tu-dong-dang",
+        "thu-gon-da-thuc"
+      ],
+      "micro_practice": [
+        "ALG04MICRO_007",
+        "ALG04MICRO_008",
+        "ALG04MICRO_009"
+      ]
+    },
+    {
+      "id": "alg04-core-4",
+      "order": 4,
+      "title": "Nhân & tính phân phối",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "prerequisites": [
+        "thu-gon-da-thuc"
+      ],
+      "micro_practice": [
+        "ALG04MICRO_010",
+        "ALG04MICRO_011",
+        "ALG04MICRO_012"
+      ]
+    },
+    {
+      "id": "alg04-core-5",
+      "order": 5,
+      "title": "Chia cho đơn thức & tính giá trị",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "chia-da-thuc-cho-don-thuc",
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "prerequisites": [
+        "nhan-biet-da-thuc",
+        "tinh-phan-phoi"
+      ],
+      "micro_practice": [
+        "ALG04MICRO_013",
+        "ALG04MICRO_014",
+        "ALG04MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "alg04-ent10-1",
+      "layer": "Entrance10",
+      "title": "Biến đổi nhiều bước & tham số",
+      "gates_core": false
+    },
+    {
+      "id": "alg04-ent10-2",
+      "layer": "Entrance10",
+      "title": "Lập biểu thức / mô hình hóa",
+      "gates_core": false
+    },
+    {
+      "id": "alg04-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Biến đổi cấu trúc nâng cao",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/04-bieu-thuc-dai-so-micro-v1.json",
+  "observed_signal_policy": {
+    "rule": "Signals are observations only; they never create causal remediation without sufficient learner evidence and a reviewed rule."
+  },
+  "qa_notes": [
+    "CĐ04 preserves Grade 7 → Grade 8 Vertical Spine.",
+    "Đa thức một biến is represented within nhan-biet-da-thuc; chia-da-thuc-cho-don-thuc is added as an explicit Core skill.",
+    "dieu-kien-xac-dinh, lap-bieu-thuc, bai-toan-thuc-te and broader multi-step algebra are not counted as CĐ04 Core readiness by default."
+  ]
+}

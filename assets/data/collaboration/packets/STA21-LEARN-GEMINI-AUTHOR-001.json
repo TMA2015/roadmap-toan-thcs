@@ -1,0 +1,186 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "STA21-LEARN-GEMINI-AUTHOR-001",
+  "task_id": "STA21-LEARN-001",
+  "context_version": "1.0.41",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "AUTHOR",
+  "scope": {
+    "topic_id": "21-thong-ke",
+    "layer": "KNTT-Core",
+    "deliverables": [
+      "Five-card Learning Workspace draft",
+      "Fifteen micro-practice authored questions, exactly base/trap/apply per card",
+      "Short five-card teaching copy: key idea, one worked example, misconception, concise summary"
+    ],
+    "card_plan": [
+      {
+        "id": "sta21-core-1",
+        "order": 1,
+        "title": "Dữ liệu và phương pháp thu thập",
+        "grades": [
+          6,
+          7
+        ],
+        "lessons": [
+          "Lớp 6: Bài 38–41",
+          "Lớp 7: Bài 17"
+        ],
+        "skills": [
+          "du-lieu-phan-loai",
+          "thu-thap-du-lieu"
+        ],
+        "targets": [
+          "STA21MICRO_001",
+          "STA21MICRO_002",
+          "STA21MICRO_003"
+        ],
+        "notes": "Phân biệt giá trị dữ liệu số/phân loại và chọn phương pháp đo/khảo sát."
+      },
+      {
+        "id": "sta21-core-2",
+        "order": 2,
+        "title": "Đọc bảng dữ liệu, biểu đồ cột và cột kép",
+        "grades": [
+          6,
+          8
+        ],
+        "lessons": [
+          "Lớp 6: Bài 38–41",
+          "Lớp 8: Bài 18–20"
+        ],
+        "skills": [
+          "doc-bieu-do-cot",
+          "doc-bieu-do-cot-kep"
+        ],
+        "targets": [
+          "STA21MICRO_004",
+          "STA21MICRO_005",
+          "STA21MICRO_006"
+        ],
+        "notes": "Giá trị, đơn vị, chênh lệch; hai dãy và cùng thang đo."
+      },
+      {
+        "id": "sta21-core-3",
+        "order": 3,
+        "title": "Đọc biểu đồ đoạn thẳng và hình quạt tròn",
+        "grades": [
+          7,
+          8
+        ],
+        "lessons": [
+          "Lớp 7: Bài 18–19",
+          "Lớp 8: Bài 18–20"
+        ],
+        "skills": [
+          "doc-bieu-do-doan-thang",
+          "bieu-do-quat-tron"
+        ],
+        "targets": [
+          "STA21MICRO_007",
+          "STA21MICRO_008",
+          "STA21MICRO_009"
+        ],
+        "notes": "Xu hướng theo thời gian; phần của tổng và phần trăm. Tính đúng đơn vị, không áp dụng cho lớp 6."
+      },
+      {
+        "id": "sta21-core-4",
+        "order": 4,
+        "title": "Chọn và chuyển dạng biểu diễn dữ liệu",
+        "grades": [
+          7,
+          8
+        ],
+        "lessons": [
+          "Lớp 7: Bài 18–19",
+          "Lớp 8: Bài 18–20"
+        ],
+        "skills": [
+          "chon-bieu-do",
+          "chuyen-bang-bieu-do"
+        ],
+        "targets": [
+          "STA21MICRO_010",
+          "STA21MICRO_011",
+          "STA21MICRO_012"
+        ],
+        "notes": "Chọn dạng theo mục tiêu; chuyển bảng sang mô tả biểu đồ có trục và thang phù hợp."
+      },
+      {
+        "id": "sta21-core-5",
+        "order": 5,
+        "title": "Đọc số liệu và kết luận có căn cứ",
+        "grades": [
+          6,
+          7,
+          8
+        ],
+        "lessons": [
+          "Lớp 6: Bài 38–41",
+          "Lớp 7: Bài 18–19",
+          "Lớp 8: Bài 18–20"
+        ],
+        "skills": [
+          "nhan-xet-du-lieu"
+        ],
+        "targets": [
+          "STA21MICRO_013",
+          "STA21MICRO_014",
+          "STA21MICRO_015"
+        ],
+        "notes": "Kết luận đúng phạm vi mẫu/dữ kiện, không nhầm chênh lệch và tỉ số hoặc suy diễn nhân quả."
+      }
+    ]
+  },
+  "source_lock": {
+    "files": [
+      "docs/assets/data/curriculum/golden-template-v1.json",
+      "docs/assets/data/curriculum/topic20-learning-workspace.json",
+      "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+      "docs/assets/data/practice/21-thong-ke-v1.manifest.json",
+      "docs/assets/data/practice/21-thong-ke-v1-01.json",
+      "docs/assets/data/practice/21-thong-ke-v1-02.json",
+      "docs/assets/data/practice/21-thong-ke-v1-03.json",
+      "docs/assets/data/practice/21-thong-ke-v1-04.json",
+      "docs/assets/data/practice/21-thong-ke-v1-05.json",
+      "docs/assets/data/curriculum/kntt-grade6-map.json",
+      "docs/assets/data/curriculum/kntt-grade7-map.json",
+      "docs/assets/data/curriculum/kntt-grade8-map.json",
+      "docs/assets/data/curriculum/kntt-grade9-map.json",
+      "docs/kien-thuc/21-thong-ke/index.md",
+      "docs/huong-dan/golden-template-hoc-luyen-kiem-tra.md"
+    ],
+    "practice_count": 132,
+    "rule": "Exact grade/topic source mapping and existing skill labels, not all existing 132 bank skills are Core. Proposed refinements do not become scored Core skills by assumption."
+  },
+  "output": {
+    "packet_id": "STA21-LEARN-GEMINI-AUTHOR-001-RESULT",
+    "format": "one valid JSON object",
+    "fields": [
+      "packet_id",
+      "status",
+      "learning_workspace",
+      "micro_practice_bank",
+      "card_copy",
+      "qa_notes",
+      "uncertainties"
+    ],
+    "workspace_shape": "Follow topic20-learning-workspace.json for schema, 5 cards, 3 stable micro IDs each; include separate non-gating extensions.",
+    "micro_shape": "Follow 20-hinh-hoc-tong-hop-micro-v1.json for fields, omit geometry_role/givens when irrelevant, include question/options/answer/tags/difficulty/explanation/hints/curriculum/exam and card_id/micro_role.",
+    "draft_instruction": "Return one complete authored batch, no direct repository edits."
+  },
+  "invariants": [
+    "Five cards exactly; 15 micro items, three each in base→trap→apply order, IDs STA21MICRO_001..015.",
+    "Each item exactly one assessed skill in card.skills and manifest.skill_labels, optional supporting skills unscored.",
+    "One unique correct answer among four distinct options; answer index 0..3, not always 0; two progressively helpful hints with no direct final answer in hint 1.",
+    "Every card: simple Vietnamese conceptual explanation, one correctly solved example, at least one plausible misconception and a short usage cue; no copying the existing bank verbatim.",
+    "Use hypothetical datasets, explicitly include all values, category names, units and denominators. If the chart image is not actually embedded, say data transcribed from chart rather than requiring invisible figure.",
+    "KNTT-Core grades follow verified mapping. No Grade 9 Core claim for CĐ21 from current KNTT grade-9 map.",
+    "No tần số ghép nhóm, tần suất or mẫu thiên lệch promoted to KNTT Core merely because they exist in 132-question bank; hold these in clearly non-gating Core-Support or Entrance10 until explicit source support.",
+    "No duplicate static drills in lesson sections 8–9; those sections remain Practice/Readiness gateways.",
+    "This is Learn + formative micro-practice only, no Core Readiness items. Do not blend evidence stores or add hard gates.",
+    "No new foundational engine, no API changes, no guessed skill IDs or prerequisite edges; cite uncertainties rather than invent."
+  ],
+  "acceptance": "AUTHOR_DRAFT_PENDING_CHATGPT_QA"
+}

@@ -1,0 +1,230 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "GEO14-CORE-READY-V1",
+  "topic": {
+    "id": "14-tam-giac",
+    "title": "Chuyên đề 14 – Tam giác"
+  },
+  "layer": "KNTT-Core",
+  "title": "Core Readiness Check – Chuyên đề 14 – Tam giác",
+  "skill_labels": {
+    "tong-goc-tam-giac": "Tổng ba góc trong tam giác",
+    "bang-nhau-ccc": "Hai tam giác bằng nhau c.c.c",
+    "bang-nhau-cgc": "Hai tam giác bằng nhau c.g.c",
+    "bang-nhau-gcg": "Hai tam giác bằng nhau g.c.g",
+    "bang-nhau-tam-giac-vuong": "Bằng nhau của hai tam giác vuông",
+    "viet-tuong-ung-tam-giac-bang-nhau": "Viết đúng thứ tự tương ứng của hai tam giác bằng nhau",
+    "tam-giac-can": "Tam giác cân",
+    "nhan-biet-trung-truc": "Nhận biết đường trung trực",
+    "cach-deu-dinh": "Điểm cách đều hai đầu mút",
+    "tinh-chat-duong-trung-truc": "Tính chất và dấu hiệu đường trung trực",
+    "so-sanh-canh-goc": "Quan hệ cạnh – góc đối diện",
+    "bat-dang-thuc-tam-giac": "Bất đẳng thức tam giác",
+    "duong-vuong-goc-duong-xien": "Đường vuông góc và đường xiên"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "GEO14READY_001",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tong-goc-tam-giac",
+      "skill": "tong-goc-tam-giac",
+      "points": 1,
+      "question": "Tam giác có góc 45° và 75°. Góc còn lại:",
+      "options": [
+        "60°",
+        "120°",
+        "75°",
+        "45°"
+      ],
+      "answer": 0,
+      "explanation": "180-45-75=60."
+    },
+    {
+      "id": "GEO14READY_002",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "bat-dang-thuc-tam-giac",
+      "skill": "bat-dang-thuc-tam-giac",
+      "points": 1,
+      "question": "Bộ nào không tạo thành tam giác?",
+      "options": [
+        "2,3,6",
+        "3,4,5",
+        "4,4,7",
+        "5,6,8"
+      ],
+      "answer": 0,
+      "explanation": "2+3≤6."
+    },
+    {
+      "id": "GEO14READY_003",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "duong-vuong-goc-duong-xien",
+      "skill": "duong-vuong-goc-duong-xien",
+      "points": 1,
+      "question": "AH⊥d, B∈d, B≠H. So sánh:",
+      "options": [
+        "AH<AB",
+        "AH>AB",
+        "AH=AB",
+        "Không thể"
+      ],
+      "answer": 0,
+      "explanation": "Vuông góc ngắn nhất."
+    },
+    {
+      "id": "GEO14READY_004",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tam-giac-can",
+      "skill": "tam-giac-can",
+      "points": 1,
+      "question": "ABC cân tại A thì:",
+      "options": [
+        "\\(\\angle B=\\angle C\\)",
+        "AB=BC",
+        "A=90°",
+        "Ba góc bằng nhau"
+      ],
+      "answer": 0,
+      "explanation": "Góc đáy bằng nhau."
+    },
+    {
+      "id": "GEO14READY_005",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tinh-chat-duong-trung-truc",
+      "skill": "tinh-chat-duong-trung-truc",
+      "points": 1,
+      "question": "PA=PB suy ra:",
+      "options": [
+        "P thuộc trung trực AB",
+        "P là trung điểm AB",
+        "P∈AB",
+        "P nằm giữa A,B"
+      ],
+      "answer": 0,
+      "explanation": "Dùng mệnh đề đảo."
+    },
+    {
+      "id": "GEO14READY_006",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "viet-tuong-ung-tam-giac-bang-nhau",
+      "skill": "viet-tuong-ung-tam-giac-bang-nhau",
+      "points": 1,
+      "question": "A↔D,B↔E,C↔F. Viết đúng:",
+      "options": [
+        "ABC=DEF",
+        "ABC=DFE",
+        "ACB=DEF",
+        "BAC=DEF"
+      ],
+      "answer": 0,
+      "explanation": "Giữ đúng thứ tự tương ứng."
+    },
+    {
+      "id": "GEO14READY_007",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "bang-nhau-ccc",
+      "skill": "bang-nhau-ccc",
+      "points": 1,
+      "question": "Ba cặp cạnh tương ứng bằng nhau →",
+      "options": [
+        "c.c.c",
+        "c.g.c",
+        "g.c.g",
+        "Không đủ"
+      ],
+      "answer": 0,
+      "explanation": "Tiêu chuẩn c.c.c."
+    },
+    {
+      "id": "GEO14READY_008",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "bang-nhau-cgc",
+      "skill": "bang-nhau-cgc",
+      "points": 1,
+      "question": "Trong c.g.c, góc phải là:",
+      "options": [
+        "Góc xen giữa",
+        "Góc bất kỳ",
+        "Góc ngoài",
+        "Góc lớn nhất"
+      ],
+      "answer": 0,
+      "explanation": "Góc xen giữa hai cạnh."
+    },
+    {
+      "id": "GEO14READY_009",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "bang-nhau-gcg",
+      "skill": "bang-nhau-gcg",
+      "points": 1,
+      "question": "g.c.g cần:",
+      "options": [
+        "Một cạnh và hai góc kề cạnh",
+        "Ba góc",
+        "Ba cạnh",
+        "Hai cạnh và góc bất kỳ"
+      ],
+      "answer": 0,
+      "explanation": "Đúng định nghĩa."
+    },
+    {
+      "id": "GEO14READY_010",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "bang-nhau-tam-giac-vuong",
+      "skill": "bang-nhau-tam-giac-vuong",
+      "points": 1,
+      "question": "Hai tam giác vuông có cạnh huyền và một cạnh góc vuông tương ứng bằng nhau:",
+      "options": [
+        "Bằng nhau",
+        "Chỉ đồng dạng",
+        "Không đủ",
+        "Luôn cân"
+      ],
+      "answer": 0,
+      "explanation": "Tiêu chuẩn tam giác vuông."
+    }
+  ],
+  "next_topic": {
+    "id": "15-duong-dong-quy",
+    "title": "Chuyên đề 15 – Các đường đồng quy trong tam giác"
+  }
+}

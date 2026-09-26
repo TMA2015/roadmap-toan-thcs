@@ -1,0 +1,146 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "05-7-hang-dang-thuc",
+  "title": "7 Hằng đẳng thức đáng nhớ",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only Core cards contribute to readiness. Entrance10 and Challenge never gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "id05-core-1",
+      "order": 1,
+      "title": "Bình phương tổng & hiệu",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "binh-phuong-tong",
+        "binh-phuong-hieu",
+        "binh-phuong-hoan-chinh"
+      ],
+      "prerequisites": [
+        "nhan-bieu-thuc"
+      ],
+      "micro_practice": [
+        "ID05MICRO_001",
+        "ID05MICRO_002",
+        "ID05MICRO_003"
+      ]
+    },
+    {
+      "id": "id05-core-2",
+      "order": 2,
+      "title": "Hiệu hai bình phương",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "hieu-hai-binh-phuong"
+      ],
+      "prerequisites": [
+        "binh-phuong-tong",
+        "binh-phuong-hieu"
+      ],
+      "micro_practice": [
+        "ID05MICRO_004",
+        "ID05MICRO_005",
+        "ID05MICRO_006"
+      ]
+    },
+    {
+      "id": "id05-core-3",
+      "order": 3,
+      "title": "Lập phương tổng & hiệu",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "lap-phuong-tong",
+        "lap-phuong-hieu",
+        "nhan-dang-lap-phuong"
+      ],
+      "prerequisites": [
+        "nhan-bieu-thuc"
+      ],
+      "micro_practice": [
+        "ID05MICRO_007",
+        "ID05MICRO_008",
+        "ID05MICRO_009"
+      ]
+    },
+    {
+      "id": "id05-core-4",
+      "order": 4,
+      "title": "Tổng & hiệu hai lập phương",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tong-hai-lap-phuong",
+        "hieu-hai-lap-phuong"
+      ],
+      "prerequisites": [
+        "nhan-dang-lap-phuong"
+      ],
+      "micro_practice": [
+        "ID05MICRO_010",
+        "ID05MICRO_011",
+        "ID05MICRO_012"
+      ]
+    },
+    {
+      "id": "id05-core-5",
+      "order": 5,
+      "title": "Nhận dạng & vận dụng",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-dang-hdt",
+        "tinh-nhanh-hdt",
+        "rut-gon-hdt"
+      ],
+      "prerequisites": [
+        "thu-gon-da-thuc"
+      ],
+      "micro_practice": [
+        "ID05MICRO_013",
+        "ID05MICRO_014",
+        "ID05MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "id05-ent10-1",
+      "layer": "Entrance10",
+      "title": "Chứng minh & biến đổi tổng hợp",
+      "gates_core": false
+    },
+    {
+      "id": "id05-ent10-2",
+      "layer": "Entrance10",
+      "title": "Giải phương trình bằng HĐT",
+      "gates_core": false
+    },
+    {
+      "id": "id05-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Đẳng thức nâng cao",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/05-7-hang-dang-thuc-micro-v1.json",
+  "observed_signal_policy": {
+    "rule": "Signals are observations only; they never create causal remediation without sufficient learner evidence and a reviewed rule."
+  },
+  "qa_notes": [
+    "phan-tich-hdt, chung-minh-hdt and giai-phuong-trinh-hdt are not promoted to Core in this workspace without separate source evidence."
+  ]
+}

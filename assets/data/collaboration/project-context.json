@@ -1,0 +1,352 @@
+{
+  "version": "1.0.57",
+  "updated": "2026-09-26",
+  "schema": "roadmap-ai-collaboration-context-v1",
+  "project": {
+    "name": "Roadmap Toán THCS",
+    "public_site": "https://tma2015.github.io/roadmap-toan-thcs/",
+    "repository": "TMA2015/roadmap-toan-thcs",
+    "purpose": "Hệ thống tự học Toán THCS theo mạch kiến thức dọc xuyên suốt lớp 6-9; 25 chuyên đề là Vertical Spine, KNTT là lớp mapping/định vị, đồng thời hỗ trợ luyện tập, ôn thi vào 10 và mở rộng Challenge/thi chuyên."
+  },
+  "source_of_truth": [
+    {
+      "name": "Triết lý mạch kiến thức dọc",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/triet-ly-mach-kien-thuc-doc/"
+    },
+    {
+      "name": "Blueprint 25 chuyên đề",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/blueprint-25-chuyen-de/"
+    },
+    {
+      "name": "Ma trận kiến thức",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/ma-tran-kien-thuc/"
+    },
+    {
+      "name": "Chuẩn KNTT và các tầng học",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/chuan-kntt-va-cac-tang-hoc/"
+    },
+    {
+      "name": "Quy trình biên soạn và QA",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/quy-trinh-bien-soan-noi-dung/"
+    },
+    {
+      "name": "Chuẩn ngân hàng câu hỏi",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/chuan-ngan-hang-cau-hoi/"
+    },
+    {
+      "name": "Thư viện hình và QA",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/qa-diagram-practice/"
+    },
+    {
+      "name": "Mapping KNTT lớp 6 đã review",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-6-mapping/"
+    },
+    {
+      "name": "Mapping KNTT lớp 7 đã review",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-7-mapping/"
+    },
+    {
+      "name": "Mapping KNTT lớp 8 đã review",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-8-mapping/"
+    },
+    {
+      "name": "Mapping KNTT lớp 9 đã review",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-9-mapping/"
+    },
+    {
+      "name": "Knowledge Graph v1",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/knowledge-graph/"
+    },
+    {
+      "name": "Golden Template Học – Luyện – Tự kiểm tra",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/golden-template-hoc-luyen-kiem-tra/"
+    }
+  ],
+  "curriculum": {
+    "primary_textbook": "Kết nối tri thức",
+    "layers": [
+      {
+        "id": "KNTT-Core",
+        "required": true,
+        "description": "Kiến thức và kỹ năng cốt lõi."
+      },
+      {
+        "id": "Entrance10",
+        "required": false,
+        "description": "Ôn thi vào 10 dựa trên Core và dữ liệu đề thật."
+      },
+      {
+        "id": "Specialized-Challenge",
+        "required": false,
+        "description": "Mở rộng cho học sinh khá giỏi/thi chuyên; không dùng để khóa Core."
+      }
+    ]
+  },
+  "architecture": {
+    "roadmap_topics": 25,
+    "practice_engine": "v2",
+    "adaptive_features": [
+      "skill tags",
+      "weak-skill practice",
+      "localStorage progress",
+      "multi-level hints",
+      "hint-usage tracking",
+      "knowledge-graph remediation recommender",
+      "remediation recovery events",
+      "post-remediation target recheck"
+    ],
+    "content_pipeline": "content-staging -> academic QA -> technical QA -> visual QA -> approved -> published",
+    "geometry_policy": "SVG-first from verified diagram spec; semantic QA required for core geometric relations.",
+    "vertical_spine": {
+      "primary": true,
+      "topics": 25,
+      "data_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/vertical-spine.json",
+      "rule": "Grade/book mappings are overlays on the same knowledge graph, not separate hierarchies."
+    },
+    "mastery_policy": "soft mastery: diagnose weak prerequisites, recommend remediation, allow continued learning, and use accuracy + hint usage + history; no absolute 100% hard gate.",
+    "knowledge_graph": {
+      "version": 1.1,
+      "data_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/knowledge-graph-v1.json",
+      "policy": "independently reviewed; PREREQUISITE separated from SEQUENCE/CROSS_LINK/REMEDIATION; soft mastery only"
+    },
+    "ai_tutor": {
+      "policy_version": "1.0",
+      "provider_neutral": true,
+      "policy_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/ai/tutor-policy-v1.json",
+      "rule": "LLM explains/guides; curriculum layer, learner evidence, reviewed graph and remediation engine remain source of truth.",
+      "context_schema": "roadmap-tutor-context-v1",
+      "runtime": "Provider-neutral Tutor contract with live user-initiated Firebase AI Logic Gemini transport, reCAPTCHA Enterprise App Check enforced on the production origin; mock/local fallback retained; safe Markdown and MathJax renderer.",
+      "privacy": "minimum relevant evidence only; no full localStorage/provider memory",
+      "reading_scope": "Main topic lessons and Topic25 classic-problem/anchor deep-reading pages; excludes practice, readiness/self-check, timed exams and answer keys."
+    },
+    "learning_flow": {
+      "version": "1.0",
+      "pattern": "Learn Workspace -> Practice Room -> Core Readiness Check",
+      "rule": "Micro-practice and Practice Engine are formative; Readiness Check is after-submit assessment evidence; no hard gate."
+    },
+    "assessment_engine": {
+      "version": "v1",
+      "schema": "roadmap-readiness-assessment-v1",
+      "storage": "toan-thcs-assessment-v1",
+      "policy": "after-submit only; no hints/Tutor; separate from practice evidence; READY is not Mastered"
+    },
+    "golden_template": {
+      "version": "1.0",
+      "status": "FROZEN",
+      "contract": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/golden-template-v1.json",
+      "pilot": "07-phan-thuc-dai-so",
+      "evidence": "automated QA + successful deploy + real iPad UX validation",
+      "maintenance_revision": "1.0.1"
+    },
+    "geometry_architecture": {
+      "version": "1.0",
+      "status": "FROZEN-V1",
+      "contract": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/geometry-architecture-v1.json",
+      "freeze_evidence": "content-staging/reviews/GEO-ARCH-V1-FREEZE-AUDIT-001.json"
+    }
+  },
+  "roles": {
+    "project_owner": {
+      "lead_on": [
+        "product priorities",
+        "learning experience goals",
+        "final product direction"
+      ],
+      "not_expected_to_do": [
+        "technical QA",
+        "manual GitHub integration",
+        "mathematical cross-checking between AIs"
+      ]
+    },
+    "gemini": {
+      "lead_on": [
+        "pedagogical critique",
+        "academic drafting",
+        "examples and exercise generation",
+        "independent solution of difficult math problems"
+      ],
+      "review_on": [
+        "curriculum mapping",
+        "geometry reasoning",
+        "student-facing explanations"
+      ],
+      "constraints": [
+        "Do not assume repository state that is not in context.",
+        "Do not mix Specialized-Challenge into KNTT-Core.",
+        "Mark uncertainty explicitly."
+      ]
+    },
+    "chatgpt": {
+      "lead_on": [
+        "repository architecture",
+        "GitHub integration",
+        "schemas and metadata",
+        "technical QA",
+        "practice engine",
+        "SVG generation from verified specs",
+        "release and deploy"
+      ],
+      "review_on": [
+        "academic correctness",
+        "pedagogical consistency",
+        "hard-problem independent verification"
+      ],
+      "constraints": [
+        "Do not self-certify high-risk geometry or advanced proofs without an independent check when feasible.",
+        "Preserve backward compatibility unless migration is deliberate."
+      ]
+    }
+  },
+  "dual_review_required_for": [
+    "multi-step geometry proofs",
+    "specialized/high-achievement problems",
+    "solutions with non-obvious theorem use",
+    "canonical answer keys reused across the bank",
+    "areas where prior AI answers were unstable or conflicting"
+  ],
+  "current_state": {
+    "roadmap": "25/25 topic pages exist",
+    "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
+    "content_staging": "available",
+    "geometry_qa": "available with benchmark and SVG-first policy",
+    "next_priority": "Pause Math after CĐ25 R2/R3 scope-accurate closure and deployed CĐ02 grade-six pilot. Transfer to EXISTING AI English Tutor Site, preserving learner accounts, evidence, Assisted Review, 12-week writing course, imports, exports and independent content. When Math resumes: G6-T03-SCOPE-001 grade6 ratio/percent vs grade7 proportion/direct/inverse mapping; G6-T02-OWNER-UX-001 real-device acceptance still separate.",
+    "grade6_mapping": "reviewed and integrated as curriculum metadata",
+    "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
+    "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
+    "grade9_mapping": "reviewed and integrated as final KNTT grade overlay",
+    "kntt_grade_mapping": "Grades 6-9 complete",
+    "knowledge_graph": "v1.1 independently reviewed",
+    "remediation_recommender": "MVP implemented locally from learner evidence + Knowledge Graph v1.1; minimum-evidence safeguards enabled",
+    "remediation_loop": "targeted remediation sessions implemented: 6-question local session or cross-topic focus navigation",
+    "recovery_measurement": "tracks prerequisite before/after remediation and later target-skill recheck without claiming causality from one session",
+    "ai_tutor_contract": "v1 provider-neutral policy defined; not yet connected to an AI provider",
+    "ai_tutor_adapter": "LIVE: Firebase AI Logic Gemini 3.5 Flash-Lite through App Check on production origin; transport remains provider-neutral, user click required, no private provider key in repo or browser storage. Mock/local adapter remains available for QA.",
+    "ai_tutor_ui": "Practice: four learner-selected help levels with assisted evidence tracking. Reading: floating approved student-avatar Tutor on main lesson and Topic25 anchor/library pages with selected text/active heading; not on self-checks, timed exam pages or answer keys. Safe rich-math rendering; no auto inference.",
+    "ui_ux_pilot": "CĐ07 responsive Learning Card grid fixed to size from available content width rather than viewport width; learner-facing technical labels simplified.",
+    "micro_practice_evidence": "Observed signals are stored separately from attempted/correct counters. signal_weight 1–2 is salience only and cannot independently create weak-skill/remediation conclusions.",
+    "golden_template": "Frozen v1.0 with maintenance hardening v1.0.1: MathJax details re-typeset, touch-safe targets, bottom CTAs and JSON control-character QA. Frozen invariants unchanged.",
+    "golden_rollout": "CĐ04–CĐ12 DEPLOYED-PASS under Golden Template. CĐ11 adds source-mapped căn bậc ba with 12 real Practice Bank items (120→132); CĐ12 keeps parameter/extended Viète applications outside Core readiness pending item-level review. CI, strict MkDocs build and Pages deploy pass.",
+    "geometry_architecture": "v1 FROZEN after Gemini architecture PASS, coverage 124/124, BENCH PASS, successful CI and owner-reported cross-device geometry flow acceptance (explicit iPhone/iPad). Automatic geometry renderer remains separate scope.",
+    "geometry_rollout": "CĐ13–CĐ20 DEPLOYED-PASS; CĐ19–CĐ20 Gemini batch review PASS with corrections []. Geometry exact-ID coverage 124/124, 0 gaps; CĐ19 bank 147 and CĐ20 bank 195.",
+    "geometry_visuals": "Main-lesson SVG refresh CĐ13–20 delivered: 33 internal diagrams; CĐ19–20 folder-path repair PR #84 and CI run 36105090022 PASS. Older diagrams retained for rollback; CĐ21–25 internal diagrams retained. Owner device visual QA of new CĐ13–17/19–20 pending; reusable renderer still open. Owner accepted updated figures on 2026-09-25.",
+    "statistics_rollout": {
+      "topic": "21-thong-ke",
+      "practice_bank_count": 132,
+      "learn_card_count": 5,
+      "micro_practice_count": 15,
+      "learn_integration": "STA21-LEARN-CHATGPT-INTEGRATION-001",
+      "readiness": "DEPLOYED_CI_PASS_OWNER_PC_IPHONE_ACCEPTED",
+      "language_standard": "docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md",
+      "responsive_fix": "STA21-UX-LANGUAGE-001",
+      "readiness_item_count": 12,
+      "readiness_skill_count": 9,
+      "readiness_id": "STA21-CORE-READY-V1",
+      "readiness_review": "STA21-READY-CHATGPT-INTEGRATION-001",
+      "owner_device_qa": "PC and iPhone confirmed by user 2026-09-25"
+    },
+    "statistics_topic22": {
+      "bank_count": 120,
+      "primary_layer": "THPT-Bridge",
+      "grade4_average_prerequisite": true,
+      "grade6_9_primary_map_refs": 0,
+      "readiness_eligible": false,
+      "source_review": "STAT22-MAP-CHATGPT-REVIEW-001",
+      "progression_hard_gate": false,
+      "optional_learning": "PENDING_SEPARATE_BRIDGE_CARDS",
+      "question_meta_layer_label": "SHOW_THPT_BRIDGE"
+    },
+    "probability_topic23": {
+      "primary_grade_scope": [
+        6,
+        7,
+        8
+      ],
+      "existing_bank_count": 120,
+      "practice_layer_counts": {
+        "KNTT-Core": 52,
+        "Core-Support": 30,
+        "Entrance10": 38
+      },
+      "layer_audit": "docs/assets/data/curriculum/topic23-layer-audit-v1.json",
+      "learning_cards": "DEPLOYED",
+      "micro_count_target": 15,
+      "readiness": "DEPLOYED_CI_PASS_OWNER_QA_NOT_RECORDED",
+      "grade9_mapping": "NO_PRIMARY_REF_CURRENT_OVERLAY",
+      "learning_card_count": 5,
+      "micro_count": 15,
+      "learn_review": "PROB23-LEARN-CHATGPT-INTEGRATION-001",
+      "readiness_id": "PROB23-CORE-READY-V1",
+      "readiness_item_count": 12,
+      "readiness_skill_count": 5
+    },
+    "topic24": {
+      "learning_card_count": 5,
+      "micro_practice_count": 15,
+      "cross_topic_learning": "DEPLOYED_CI_PASS"
+    },
+    "topic25": {
+      "learning_card_count": 5,
+      "micro_practice_count": 15,
+      "academic_lanes": [
+        "academic practice by strand",
+        "classic anchor problems",
+        "three complete written mock exams",
+        "separate exam skills"
+      ],
+      "anchor_catalog_count": 11,
+      "representative_anchor_count": 10,
+      "expanded_anchor_ids": [
+        "A25-004",
+        "A25-006",
+        "A25-007",
+        "A25-008",
+        "A25-009",
+        "A25-010",
+        "A25-011"
+      ],
+      "original_mock_exam_count": 3,
+      "mock_duration_minutes": 120,
+      "mock_total_points": 10,
+      "exam_engine": "localStorage-backed timed written exam with learner self-marked rubric and gap links; not AI/teacher graded",
+      "release": "PR #122 CI run 36233772681 success, Deploy MkDocs run 36233855045 success. Previous PRs #104 and #109–113 remain history.",
+      "independent_math_review": "DOCUMENTED_COMPLETE_R2_R3: Gemini R2 reported APPROVE with 17/23 source paths listed (snapshot 04b275cb). Targeted Gemini R3 APPROVE with all nine named target files PASS (six omitted R2 source files + three new deep A25-006/007/010) at source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536. R3 lists only five of eight context files; do not claim eight context files independently reviewed in R3. No critical corrections; findings are AI cross-review not formal exam certification. See review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md.",
+      "learning_ai": "contextual Tutor on Topic25 main and deep-reading pages, not assessment/answer pages",
+      "deep_solution_new_release": "DEPLOYED: PR #122 merge 2865e1e82749484300244234e95cad8b6ca05f7a; academic/source QA, browser and MkDocs deploy success. A25-006/007/010 new deep pages; source original unchanged, Gemini R2 did NOT independently review these post-snapshot pages. Subsequent direct Gemini R3 review confirmed PASS for 006/007/010 at snapshot 5f74d7c; metadata records R3 separately from historical R2.",
+      "gemini_review_packet": "TOPIC25-GEMINI-TARGETED-R3-20260926 (R2 historical limited list remains archived)"
+    },
+    "grade6_topic02_pilot": "DEPLOYED_CI_BROWSER_PASS_OWNER_DEVICE_QA_PENDING: PR #120, 5 grade6 cards, 15 micro, 10 independent readiness; legacy 120-bank and written test preserved; class7 content excluded from grade6 readiness. Technical CI/build/deploy passed; owner real-device acceptance separate OPEN task G6-T02-OWNER-UX-001.",
+    "grade6_topic03_next": "OPEN G6-T03-SCOPE-001: grade6 B31 tỉ số/phần trăm vs grade7 B20–23 tỉ lệ thức, thuận/nghịch; current 120-bank lacks grade metadata, needs scoped next batch.",
+    "topic25_followup": "CLOSED: Gemini Targeted R3 delivered 9/9 target PASS (six omitted R2 + three new deep pages) with zero critical corrections, source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536. Five of eight optional context source paths explicitly listed; figure decimal-coordinate rounding qualified. See review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md. No pending source-coverage task for CĐ25 in current review cycle."
+  },
+  "handoff_required_fields": [
+    "TASK_ID",
+    "CONTEXT_VERSION",
+    "ROLE",
+    "LAYER",
+    "TOPIC",
+    "RESULT",
+    "UNCERTAINTIES"
+  ],
+  "do_not_assume": [
+    "An AI-generated draft is not source of truth.",
+    "Difficulty is not the same as curriculum layer.",
+    "A visually plausible geometry diagram is not necessarily geometrically valid.",
+    "Exam frequency claims require evidence from an exam corpus.",
+    "A grade mapping is an index over the Vertical Spine, not a separate curriculum tree."
+  ],
+  "collaboration": {
+    "hub_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/",
+    "handoff_protocol_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/handoff-protocol/",
+    "capability_benchmark_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/capability-benchmark/",
+    "task_board_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/task-board/",
+    "task_registry_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/task-registry.json",
+    "first_public_task": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G6-001/",
+    "offline_relay_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/offline-relay/",
+    "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
+    "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
+    "next_public_task": "PROB23-READY-001",
+    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/prob23-learn-gemini-author-001.json",
+    "protocol_version": "2.0",
+    "relay_v2": "All new author/reviewer batches MUST apply docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md: direct language, explicit units/population, never infer data or leave absent chart. Golden Template frozen."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "schema": "roadmap-ai-capability-profile-v1",
+  "updated": "2026-09-25",
+  "evidence_levels": {
+    "self_reported": "AI tự mô tả thế mạnh; dùng làm giả thuyết phân công, chưa phải kết luận benchmark.",
+    "observed": "Đã có quan sát thực tế từ dự án nhưng chưa đủ sample benchmark.",
+    "benchmarked": "Đã có bộ task đủ mẫu và tiêu chí chấm."
+  },
+  "gemini": {
+    "current_hypotheses": [
+      {
+        "capability": "pedagogical-content-engineering",
+        "evidence": "self_reported",
+        "description": "Sư phạm hóa và đóng gói kiến thức; chuyển bài khó thành bước tư duy dễ hiểu."
+      },
+      {
+        "capability": "competitive-exam-pedagogy",
+        "evidence": "self_reported",
+        "description": "Biên tập/giải thích bài luyện thi CLC/top-school theo hướng trực quan cho học sinh THCS; cần benchmark trên corpus đề thật."
+      },
+      {
+        "capability": "print-friendly-infographic-content-design",
+        "evidence": "self_reported",
+        "description": "Cô đọng chuyên đề thành sơ đồ/bảng/công thức phù hợp A4 trắng đen."
+      },
+      {
+        "capability": "modular-exercise-authoring",
+        "evidence": "self_reported",
+        "description": "Xây hệ bài tập từ cơ bản đến nâng cao kèm lời giải chi tiết."
+      },
+      {
+        "capability": "geometry-and-pedagogy",
+        "evidence": "observed",
+        "description": "Có tín hiệu tốt từ một số bài hình học và phản hồi sư phạm; cần benchmark rộng hơn."
+      },
+      {
+        "capability": "curriculum-mapping",
+        "evidence": "observed",
+        "description": "G6-G9 complete. Coverage, continuity and gap detection are consistently strong when task packets include verified TOC, topic whitelist and existing skill inventory. Repository/curriculum QA remains necessary for exact Core boundaries and over-exclusion."
+      }
+    ],
+    "routing_hint": "GEMINI_LEAD_WITH_CHATGPT_REVIEW"
+  },
+  "chatgpt": {
+    "current_hypotheses": [
+      {
+        "capability": "repository-and-github-integration",
+        "evidence": "observed",
+        "description": "Quản lý branch/PR/deploy, đọc và cập nhật repository trực tiếp."
+      },
+      {
+        "capability": "technical-architecture-and-schema",
+        "evidence": "observed",
+        "description": "Practice Engine, metadata, content pipeline, backward compatibility."
+      },
+      {
+        "capability": "svg-and-technical-diagram-qa",
+        "evidence": "observed",
+        "description": "Dựng SVG từ spec và kiểm tra semantic; hình học khó vẫn cần independent academic check."
+      }
+    ],
+    "routing_hint": "CHATGPT_LEAD_ON_TECHNICAL_INTEGRATION"
+  },
+  "dual_independent_default": [
+    "multi-step geometry",
+    "specialized/high-achievement math",
+    "canonical answer keys",
+    "areas with prior unstable AI answers"
+  ],
+  "note": "Không dùng profile này để xếp hạng tổng quát hai AI. Routing được cập nhật theo capability benchmark."
+}

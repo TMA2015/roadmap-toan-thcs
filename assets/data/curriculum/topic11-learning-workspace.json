@@ -1,0 +1,148 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "11-can-thuc",
+  "title": "Căn thức và biến đổi căn thức",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only Core cards contribute to readiness. Entrance10 and Challenge never gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "rad11-core-1",
+      "order": 1,
+      "title": "Căn bậc hai & điều kiện",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 3"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "can-bac-hai-so-hoc",
+        "dkxd-can",
+        "can-binh-phuong"
+      ],
+      "prerequisites": [
+        "phep-tinh-so-thuc"
+      ],
+      "micro_practice": [
+        "RAD11MICRO_001",
+        "RAD11MICRO_002",
+        "RAD11MICRO_003"
+      ]
+    },
+    {
+      "id": "rad11-core-2",
+      "order": 2,
+      "title": "Khai phương tích & thương",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 3"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "khai-phuong-tich",
+        "khai-phuong-thuong"
+      ],
+      "prerequisites": [
+        "can-bac-hai-so-hoc"
+      ],
+      "micro_practice": [
+        "RAD11MICRO_004",
+        "RAD11MICRO_005",
+        "RAD11MICRO_006"
+      ]
+    },
+    {
+      "id": "rad11-core-3",
+      "order": 3,
+      "title": "Đưa thừa số ra / vào căn",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 3"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "dua-thua-so-ra",
+        "dua-thua-so-vao"
+      ],
+      "prerequisites": [
+        "khai-phuong-tich",
+        "can-binh-phuong"
+      ],
+      "micro_practice": [
+        "RAD11MICRO_007",
+        "RAD11MICRO_008",
+        "RAD11MICRO_009"
+      ]
+    },
+    {
+      "id": "rad11-core-4",
+      "order": 4,
+      "title": "Phép tính & trục căn thức",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 3"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "can-dong-dang",
+        "nhan-chia-can",
+        "truc-can-mau-don",
+        "truc-can-lien-hop"
+      ],
+      "prerequisites": [
+        "dua-thua-so-ra",
+        "hieu-hai-binh-phuong"
+      ],
+      "micro_practice": [
+        "RAD11MICRO_010",
+        "RAD11MICRO_011",
+        "RAD11MICRO_012"
+      ]
+    },
+    {
+      "id": "rad11-core-5",
+      "order": 5,
+      "title": "Căn bậc ba",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 3"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "can-bac-ba"
+      ],
+      "prerequisites": [
+        "luy-thua"
+      ],
+      "micro_practice": [
+        "RAD11MICRO_013",
+        "RAD11MICRO_014",
+        "RAD11MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "rad11-ent10-1",
+      "layer": "Entrance10",
+      "title": "Phương trình chứa căn & kiểm tra nghiệm",
+      "gates_core": false
+    },
+    {
+      "id": "rad11-ent10-2",
+      "layer": "Entrance10",
+      "title": "So sánh biểu thức căn",
+      "gates_core": false
+    },
+    {
+      "id": "rad11-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Giá trị nguyên / tham số với căn thức",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/11-can-thuc-micro-v1.json",
+  "observed_signal_policy": {
+    "rule": "Signals are observations only; they never create causal remediation without sufficient learner evidence and a reviewed rule."
+  },
+  "qa_notes": [
+    "can-bac-ba is explicit Grade 9 Core and receives real Practice Bank coverage in RAD11-V1-05.",
+    "tim-x-can and so-sanh-can remain outside Core readiness in this rollout because the reviewed Grade 9 map does not list them among CĐ11 core_existing/proposed skills."
+  ]
+}

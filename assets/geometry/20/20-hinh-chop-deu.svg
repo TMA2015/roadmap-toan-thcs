@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-labelledby="title desc">
+  <title id="title">Hình chóp đều với chiều cao h và trung đoạn d</title>
+  <desc id="desc">Hình chóp tứ giác đều có đỉnh S, tâm đáy O, trung điểm M của một cạnh đáy; SO là chiều cao h, SM là trung đoạn d, đáy mang ký hiệu S đáy và nửa chu vi p.</desc>
+  <rect width="640" height="440" fill="white"/>
+  <g stroke="#1f2937" stroke-width="4" stroke-linejoin="round" fill="#eef4fb">
+    <polygon points="175,305 365,345 485,275 290,235"/>
+    <polygon points="330,70 175,305 365,345" fill="#f8fafc"/>
+    <polygon points="330,70 365,345 485,275" fill="#dbeafe"/>
+    <polygon points="330,70 485,275 290,235" fill="#eff6ff"/>
+  </g>
+  <g stroke="#1f2937" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M330 70 L175 305 M330 70 L365 345 M330 70 L485 275 M330 70 L290 235"/>
+    <path d="M175 305 L365 345 L485 275 L290 235 Z"/>
+  </g>
+  <g stroke="#c2410c" stroke-width="3.5" fill="none" stroke-linecap="round">
+    <path d="M330 70 L330 288" stroke-dasharray="10 8"/>
+  </g>
+  <g stroke="#2563eb" stroke-width="3.5" fill="none" stroke-linecap="round">
+    <path d="M330 70 L425 310"/>
+  </g>
+  <g fill="#111827" font-family="Arial, sans-serif">
+    <circle cx="330" cy="288" r="5"/>
+    <circle cx="425" cy="310" r="5"/>
+    <text x="338" y="294" font-size="23">O</text>
+    <text x="433" y="317" font-size="23">M</text>
+    <text x="316" y="52" font-size="26" font-weight="700">S</text>
+    <text x="292" y="182" font-size="30" font-weight="700" fill="#c2410c">h</text>
+    <text x="392" y="178" font-size="30" font-weight="700" fill="#2563eb">d</text>
+    <text x="290" y="325" font-size="24" font-weight="700">S_đáy</text>
+    <text x="205" y="360" font-size="24" font-weight="700">p = 1/2 P_đáy</text>
+  </g>
+</svg>

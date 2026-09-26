@@ -1,0 +1,84 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "TRI14-V1",
+  "topic": {
+    "id": "14-tam-giac",
+    "title": "Tam giác"
+  },
+  "session_size": 10,
+  "question_count": 140,
+  "skill_labels": {
+    "phan-loai-tam-giac": "Phân loại tam giác",
+    "chu-vi-dien-tich": "Chu vi – diện tích tam giác",
+    "tong-goc-tam-giac": "Tổng ba góc trong tam giác",
+    "goc-ngoai": "Góc ngoài của tam giác",
+    "so-sanh-canh-goc": "Quan hệ cạnh – góc đối diện",
+    "bat-dang-thuc-tam-giac": "Bất đẳng thức tam giác",
+    "tam-giac-can": "Tam giác cân",
+    "tam-giac-deu": "Tam giác đều",
+    "pythagore": "Định lý Pythagore",
+    "pythagore-dao": "Định lý Pythagore đảo",
+    "bang-nhau-ccc": "Hai tam giác bằng nhau c.c.c",
+    "bang-nhau-cgc": "Hai tam giác bằng nhau c.g.c",
+    "bang-nhau-gcg": "Hai tam giác bằng nhau g.c.g",
+    "bang-nhau-tam-giac-vuong": "Bằng nhau của hai tam giác vuông",
+    "viet-tuong-ung-tam-giac-bang-nhau": "Viết đúng thứ tự tương ứng của hai tam giác bằng nhau",
+    "nhan-biet-trung-truc": "Nhận biết đường trung trực",
+    "cach-deu-dinh": "Điểm cách đều hai đầu mút",
+    "tinh-chat-duong-trung-truc": "Tính chất và dấu hiệu đường trung trực",
+    "duong-vuong-goc-duong-xien": "Đường vuông góc và đường xiên"
+  },
+  "skill_groups": [
+    {
+      "id": "A",
+      "label": "A. Góc – cạnh – bất đẳng thức",
+      "skills": [
+        "tong-goc-tam-giac",
+        "so-sanh-canh-goc",
+        "bat-dang-thuc-tam-giac",
+        "duong-vuong-goc-duong-xien"
+      ]
+    },
+    {
+      "id": "B",
+      "label": "B. Tam giác cân – đường trung trực",
+      "skills": [
+        "tam-giac-can",
+        "nhan-biet-trung-truc",
+        "cach-deu-dinh",
+        "tinh-chat-duong-trung-truc"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "C. Hai tam giác bằng nhau",
+      "skills": [
+        "viet-tuong-ung-tam-giac-bang-nhau",
+        "bang-nhau-ccc",
+        "bang-nhau-cgc",
+        "bang-nhau-gcg",
+        "bang-nhau-tam-giac-vuong"
+      ]
+    },
+    {
+      "id": "S",
+      "label": "Core-Support / kết nối",
+      "skills": [
+        "phan-loai-tam-giac",
+        "chu-vi-dien-tich",
+        "goc-ngoai",
+        "tam-giac-deu",
+        "pythagore",
+        "pythagore-dao"
+      ]
+    }
+  ],
+  "sources": [
+    "14-tam-giac-v1-01.json",
+    "14-tam-giac-v1-02.json",
+    "14-tam-giac-v1-03.json",
+    "14-tam-giac-v1-04.json",
+    "14-tam-giac-v1-05.json"
+  ]
+}

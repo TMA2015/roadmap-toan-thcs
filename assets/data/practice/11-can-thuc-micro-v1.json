@@ -1,0 +1,611 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "RAD11-MICRO-V1",
+  "topic": {
+    "id": "11-can-thuc",
+    "title": "Căn thức và biến đổi căn thức"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "RAD11MICRO_001",
+      "card_id": "rad11-core-1",
+      "micro_role": "base",
+      "question": "Giá trị của \\(\\sqrt{49}\\) là:",
+      "options": [
+        "7",
+        "-7",
+        "±7",
+        "49"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "can-bac-hai-so-hoc"
+        ],
+        "type": "can-bac-hai-so-hoc",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Căn bậc hai số học luôn không âm; \\(7^2=49\\).",
+      "hints": [
+        "Tìm số không âm có bình phương bằng 49.",
+        "Phân biệt \\(\\sqrt{49}\\) với nghiệm của \\(x^2=49\\)."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_002",
+      "card_id": "rad11-core-1",
+      "micro_role": "trap",
+      "question": "Điều kiện để \\(\\sqrt{2x-6}\\) có nghĩa là:",
+      "options": [
+        "\\(x\\ge3\\)",
+        "\\(x>3\\)",
+        "\\(x\\le3\\)",
+        "Mọi \\(x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "dkxd-can"
+        ],
+        "type": "dkxd-can",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Cần \\(2x-6\\ge0\\), nên \\(x\\ge3\\).",
+      "hints": [
+        "Biểu thức dưới căn bậc hai phải không âm.",
+        "Giải \\(2x-6\\ge0\\)."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "nham-dk-can-nghiem-ngat",
+          "signal_weight": 2,
+          "feedback_hint": "Căn bậc hai cho phép biểu thức dưới căn bằng 0."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_003",
+      "card_id": "rad11-core-1",
+      "micro_role": "apply",
+      "question": "Với mọi \\(x\\in\\mathbb R\\), \\(\\sqrt{(x-2)^2}\\) bằng:",
+      "options": [
+        "\\(|x-2|\\)",
+        "\\(x-2\\)",
+        "\\(2-x\\)",
+        "\\(\\pm(x-2)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "can-binh-phuong"
+        ],
+        "type": "can-binh-phuong",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Quy tắc đúng là \\(\\sqrt{A^2}=|A|\\).",
+      "hints": [
+        "Đặt \\(A=x-2\\).",
+        "Căn bậc hai số học không âm."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_004",
+      "card_id": "rad11-core-2",
+      "micro_role": "base",
+      "question": "Tính \\(\\sqrt{12}\\cdot\\sqrt3\\).",
+      "options": [
+        "6",
+        "\\(2\\sqrt3\\)",
+        "\\(3\\sqrt2\\)",
+        "12"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "khai-phuong-tich"
+        ],
+        "type": "khai-phuong-tich",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "\\(\\sqrt{12}\\sqrt3=\\sqrt{36}=6\\).",
+      "hints": [
+        "Gộp hai căn bằng quy tắc tích.",
+        "\\(12\\cdot3=36\\)."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_005",
+      "card_id": "rad11-core-2",
+      "micro_role": "trap",
+      "question": "Tính \\(\\dfrac{\\sqrt{50}}{\\sqrt2}\\).",
+      "options": [
+        "5",
+        "25",
+        "\\(5\\sqrt2\\)",
+        "\\(\\sqrt{48}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "khai-phuong-thuong"
+        ],
+        "type": "khai-phuong-thuong",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(\\sqrt{50}/\\sqrt2=\\sqrt{25}=5\\).",
+      "hints": [
+        "Gộp thành căn của thương.",
+        "\\(50/2=25\\)."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_006",
+      "card_id": "rad11-core-2",
+      "micro_role": "apply",
+      "question": "Rút gọn \\(\\sqrt{72}\\).",
+      "options": [
+        "\\(6\\sqrt2\\)",
+        "\\(8\\sqrt2\\)",
+        "\\(12\\sqrt2\\)",
+        "36"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "khai-phuong-tich"
+        ],
+        "type": "khai-phuong-tich",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(72=36\\cdot2\\), nên \\(\\sqrt{72}=6\\sqrt2\\).",
+      "hints": [
+        "Tách một thừa số là số chính phương.",
+        "Dùng \\(72=36\\cdot2\\)."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_007",
+      "card_id": "rad11-core-3",
+      "micro_role": "base",
+      "question": "Với \\(x\\in\\mathbb R\\), \\(\\sqrt{18x^2}\\) bằng:",
+      "options": [
+        "\\(3\\sqrt2|x|\\)",
+        "\\(3\\sqrt2x\\)",
+        "\\(9\\sqrt2|x|\\)",
+        "\\(18|x|\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "dua-thua-so-ra"
+        ],
+        "type": "dua-thua-so-ra",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "\\(\\sqrt{18x^2}=3\\sqrt2\\sqrt{x^2}=3\\sqrt2|x|\\).",
+      "hints": [
+        "Tách \\(18=9\\cdot2\\).",
+        "Đừng quên \\(\\sqrt{x^2}=|x|\\)."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_008",
+      "card_id": "rad11-core-3",
+      "micro_role": "trap",
+      "question": "Đưa \\(3\\sqrt5\\) vào trong dấu căn.",
+      "options": [
+        "\\(\\sqrt{45}\\)",
+        "\\(\\sqrt{15}\\)",
+        "\\(\\sqrt8\\)",
+        "\\(\\sqrt{25}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "dua-thua-so-vao"
+        ],
+        "type": "dua-thua-so-vao",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(3\\sqrt5=\\sqrt{3^2\\cdot5}=\\sqrt{45}\\).",
+      "hints": [
+        "Bình phương thừa số đưa vào.",
+        "Tính \\(3^2\\cdot5\\)."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_009",
+      "card_id": "rad11-core-3",
+      "micro_role": "apply",
+      "question": "Đưa \\(-2\\sqrt3\\) vào dạng có một căn và dấu âm ở ngoài.",
+      "options": [
+        "\\(-\\sqrt{12}\\)",
+        "\\(\\sqrt{12}\\)",
+        "\\(-\\sqrt6\\)",
+        "\\(\\sqrt{-12}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "dua-thua-so-vao"
+        ],
+        "type": "dua-thua-so-vao",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Giữ dấu âm ở ngoài: \\(-2\\sqrt3=-\\sqrt{12}\\).",
+      "hints": [
+        "Thừa số âm không được biến thành căn bậc hai của số âm.",
+        "Giữ dấu - rồi đưa 2 vào căn."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_010",
+      "card_id": "rad11-core-4",
+      "micro_role": "base",
+      "question": "Rút gọn \\(\\sqrt{12}+\\sqrt{27}\\).",
+      "options": [
+        "\\(5\\sqrt3\\)",
+        "\\(\\sqrt{39}\\)",
+        "\\(3\\sqrt3\\)",
+        "\\(5\\sqrt{39}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "can-dong-dang"
+        ],
+        "type": "can-dong-dang",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "\\(2\\sqrt3+3\\sqrt3=5\\sqrt3\\).",
+      "hints": [
+        "Rút gọn từng căn trước.",
+        "Chỉ cộng hệ số của các căn đồng dạng."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_011",
+      "card_id": "rad11-core-4",
+      "micro_role": "trap",
+      "question": "Tính \\(\\sqrt6\\cdot\\sqrt{24}\\).",
+      "options": [
+        "12",
+        "30",
+        "\\(6\\sqrt{24}\\)",
+        "\\(\\sqrt{30}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "nhan-chia-can"
+        ],
+        "type": "nhan-chia-can",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(\\sqrt6\\sqrt{24}=\\sqrt{144}=12\\).",
+      "hints": [
+        "Gộp tích dưới một dấu căn.",
+        "\\(6\\cdot24=144\\)."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_012",
+      "card_id": "rad11-core-4",
+      "micro_role": "apply",
+      "question": "Trục căn thức ở mẫu của \\(\\dfrac1{\\sqrt3+1}\\).",
+      "options": [
+        "\\(\\dfrac{\\sqrt3-1}{2}\\)",
+        "\\(\\dfrac{\\sqrt3+1}{2}\\)",
+        "\\(\\sqrt3-1\\)",
+        "\\(\\dfrac12\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "truc-can-lien-hop"
+        ],
+        "type": "truc-can-lien-hop",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Nhân với liên hợp \\(\\sqrt3-1\\); mẫu bằng 2.",
+      "hints": [
+        "Dùng liên hợp của \\(\\sqrt3+1\\).",
+        "Mẫu trở thành hiệu hai bình phương."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_013",
+      "card_id": "rad11-core-5",
+      "micro_role": "base",
+      "question": "Giá trị của \\(\\sqrt[3]{27}\\) là:",
+      "options": [
+        "3",
+        "9",
+        "±3",
+        "\\(\\sqrt3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "can-bac-ba"
+        ],
+        "type": "can-bac-ba",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Vì \\(3^3=27\\), nên căn bậc ba là 3.",
+      "hints": [
+        "Tìm số có lập phương bằng 27.",
+        "\\(3^3=27\\)."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_014",
+      "card_id": "rad11-core-5",
+      "micro_role": "trap",
+      "question": "Giá trị của \\(\\sqrt[3]{-64}\\) là:",
+      "options": [
+        "-4",
+        "4",
+        "Không xác định trong \\(\\mathbb R\\)",
+        "±4"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "can-bac-ba"
+        ],
+        "type": "can-bac-ba",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Căn bậc ba của số âm vẫn là số thực; \\((-4)^3=-64\\).",
+      "hints": [
+        "Căn bậc ba khác căn bậc hai ở số âm.",
+        "Tìm số có lập phương bằng -64."
+      ],
+      "option_evidence": {
+        "2": {
+          "signal": "nham-can-bac-ba-voi-can-bac-hai",
+          "signal_weight": 2,
+          "feedback_hint": "Căn bậc ba của số âm vẫn xác định trên tập số thực."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_015",
+      "card_id": "rad11-core-5",
+      "micro_role": "apply",
+      "question": "Với mọi \\(x\\in\\mathbb R\\), \\(\\sqrt[3]{x^3}\\) bằng:",
+      "options": [
+        "\\(x\\)",
+        "\\(|x|\\)",
+        "\\(x^2\\)",
+        "\\(\\pm x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "can-bac-ba"
+        ],
+        "type": "can-bac-ba",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(\\sqrt[3]{x^3}=x\\) với mọi số thực x.",
+      "hints": [
+        "Thử cả x dương và x âm.",
+        "Không cần giá trị tuyệt đối với căn bậc ba."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

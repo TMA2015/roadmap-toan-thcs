@@ -1,0 +1,27 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "GEO14-15-GEMINI-REVIEW-001",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "INDEPENDENT_REVIEW",
+  "task_id": "GEO-BATCH-13-15-001",
+  "context_version": "1.0.31",
+  "topics": [
+    "14-tam-giac",
+    "15-duong-dong-quy"
+  ],
+  "review_requirements": [
+    "Verify CĐ14 13 mapped Core skills and CĐ15 11 mapped Core skills against embedded KNTT Grade 7 map.",
+    "Review CĐ14 20 local gap-fill items and CĐ15 4 local gap-fill items.",
+    "Check that Pythagore in CĐ14 is support/forward connection, not Core readiness in this mapping.",
+    "Check the distinction between each family of three concurrent lines and the false claim that all twelve special lines are concurrent.",
+    "Check micro/readiness for exact one assessed skill and no diagram-based inference.",
+    "Every correction must cite exact existing item ID + exact current prompt quote; prose uses source_path + heading + exact quote."
+  ],
+  "result_format": {
+    "packet_id": "GEO14-15-GEMINI-REVIEW-001-RESULT",
+    "verdict": "PASS | PASS_WITH_CHANGES | REVISIONS_REQUIRED",
+    "corrections": [],
+    "optional_suggestions": []
+  }
+}

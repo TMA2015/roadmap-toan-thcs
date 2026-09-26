@@ -1,0 +1,554 @@
+{
+  "version": 1,
+  "schema": "roadmap-collaboration-task-registry-v1",
+  "updated": "2026-09-26",
+  "statuses": [
+    "OPEN",
+    "GEMINI-DRAFT",
+    "CHATGPT-REVIEW",
+    "DUAL-CHECK",
+    "BLOCKED-ACADEMIC",
+    "READY",
+    "DONE"
+  ],
+  "tasks": [
+    {
+      "id": "COLLAB-SYSTEM-001",
+      "title": "Xây AI Collaboration Hub + context + protocol",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE"
+    },
+    {
+      "id": "KNTT-MAP-001",
+      "title": "Chuẩn hóa mapping KNTT → 25 chuyên đề → skill",
+      "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "review_notes": "Grades 6-9 KNTT overlays reviewed and integrated; next phase is consolidated prerequisite/unlock knowledge graph."
+    },
+    {
+      "id": "KNTT-MAP-G6-001",
+      "title": "Mapping Toán 6 KNTT → 25 chuyên đề/skill",
+      "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "public_task_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G6-001/",
+      "context_version": "1.0.1",
+      "relay_packet_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
+      "delivery_modes": [
+        "online-url",
+        "offline-copy",
+        "file-upload"
+      ],
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/kntt-grade6-map.json",
+      "review_notes": "Gemini covered most knowledge clusters, but chapter numbering/structure and repository topic IDs required correction; several missing KNTT items were restored."
+    },
+    {
+      "id": "KNTT-MAP-G7-001",
+      "title": "Mapping Toán 7 KNTT → 25 chuyên đề/skill",
+      "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.3",
+      "public_task_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G7-001/",
+      "relay_packet_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G7-001/",
+      "delivery_modes": [
+        "online-url",
+        "offline-copy",
+        "file-upload"
+      ],
+      "task_design": "source-verified-toc+valid-topic-id-whitelist+vertical-spine-traceability",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/kntt-grade7-map.json",
+      "review_notes": "Coverage and topic IDs improved; corrected Chapter 10 PRIMARY mapping to topic 20, normalized many already-existing skills, and added Vertical Spine upstream/downstream metadata.",
+      "resubmission": {
+        "context_version": "1.0.3",
+        "outcome": "NO_REINTEGRATION_NEEDED",
+        "improvements": [
+          "vertical-spine-columns-present",
+          "continuity-narrative-improved"
+        ],
+        "persistent_issues": [
+          "chapter10-topic24-primary",
+          "existing-skills-marked-proposed"
+        ],
+        "feedback_artifact": "content-staging/reviews/KNTT-MAP-G7-001-resubmission-feedback.md"
+      }
+    },
+    {
+      "id": "KNTT-MAP-G8-001",
+      "title": "Mapping Toán 8 KNTT → Vertical Spine/skill",
+      "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.4",
+      "public_task_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G8-001/",
+      "relay_packet_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G8-001/",
+      "delivery_modes": [
+        "online-url",
+        "offline-copy",
+        "file-upload"
+      ],
+      "task_design": "verified-toc+valid-topic-ids+existing-skill-inventory+vertical-spine-traceability",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/kntt-grade8-map.json",
+      "review_notes": "Best mapping round so far after embedding existing skill inventory. Corrected Grade 8 Core boundaries for factorization/equations/probability, refined pyramid skills, and rejected absolute hard-gate mastery."
+    },
+    {
+      "id": "KNTT-MAP-G9-001",
+      "title": "Mapping Toán 9 KNTT → Vertical Spine/skill + audit",
+      "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.5",
+      "public_task_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G9-001/",
+      "relay_packet_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G9-001/",
+      "delivery_modes": [
+        "online-url",
+        "offline-copy",
+        "file-upload"
+      ],
+      "task_design": "verified-toc+valid-topic-ids+existing-skill-inventory+vertical-spine-audit+soft-mastery",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/kntt-grade9-map.json",
+      "review_notes": "Strong final grade mapping. Corrected over-exclusion of system-solution geometry/count, broadened Viète Core pending item-level QA, added cot and inequality-property gaps, and kept Topic 22 conclusion limited to the Grade 9 overlay."
+    },
+    {
+      "id": "CONTENT-PILOT-001",
+      "title": "Tạo batch nội dung mẫu Core/Vào10/Challenge để thử pipeline",
+      "routing": "GEMINI_LEAD+CHATGPT_REVIEW",
+      "status": "OPEN"
+    },
+    {
+      "id": "BENCH-CAP-001",
+      "title": "Benchmark năng lực theo nhóm task",
+      "routing": "CATEGORY_BASED_DUAL",
+      "status": "OPEN"
+    },
+    {
+      "id": "GEO-LIB-001",
+      "title": "Chuẩn hóa thư viện hình SVG và giảm hình Internet",
+      "routing": "CHATGPT_LEAD+DUAL_QA_FOR_HARD_GEOMETRY",
+      "status": "OPEN",
+      "review_notes": "Main-lesson legacy SVG replacement completed separately as GEO-LIB-VISUAL-REFRESH-001. Keep this umbrella OPEN for reusable spec-driven JSON→SVG renderer, semantic geometry validation, and optional further library QA; do not conflate with image replacement."
+    },
+    {
+      "id": "KG-V1-001",
+      "title": "Hợp nhất KNTT G6-G9 thành prerequisite/unlock knowledge graph v1",
+      "routing": "CHATGPT_LEAD+GEMINI_REVIEW",
+      "status": "DONE",
+      "review_verdict": "FOUNDATION-READY",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/knowledge-graph-v1.json",
+      "review_notes": "Activated only high-confidence dependencies; uncertain associations remain in review_queue. Includes soft remediation rules and no hard gates."
+    },
+    {
+      "id": "KG-REVIEW-001",
+      "title": "Independent prerequisite/remediation audit",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "source_verdict": "PASS",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/knowledge-graph-v1.json"
+    },
+    {
+      "id": "REMEDIATION-MVP-001",
+      "title": "Connect Practice Engine learner evidence to Knowledge Graph remediation",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "MVP-READY",
+      "review_notes": "Local/offline recommender. Target and prerequisite require >=3 attempts; weak threshold <75%; recommendation-only; no AI/API dependency."
+    },
+    {
+      "id": "REMEDIATION-LOOP-001",
+      "title": "Close adaptive remediation loop with targeted practice",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "QA-READY",
+      "review_notes": "Six-question targeted sessions; cross-topic focus navigation; regression cases cover insufficient evidence, healthy prerequisite, weak prerequisite, weakest candidate, and threshold boundary."
+    },
+    {
+      "id": "RECOVERY-MEASURE-001",
+      "title": "Measure remediation recovery and target recheck",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "QA-READY"
+    },
+    {
+      "id": "AI-TUTOR-CONTRACT-001",
+      "title": "Provider-neutral AI Tutor pedagogical contract",
+      "routing": "CHATGPT_LEAD+GEMINI_REVIEW",
+      "status": "DONE",
+      "review_verdict": "REVIEW-READY",
+      "review_notes": "Soft mastery, evidence-first diagnosis, Core/Challenge boundary, growth language, hint ladder, no fabricated learner evidence, graph-discipline."
+    },
+    {
+      "id": "AI-TUTOR-ADAPTER-001",
+      "title": "Tutor Context Builder and provider-neutral adapter",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "QA-READY",
+      "review_notes": "Mock/local adapter enabled; Gemini and OpenAI-compatible transports intentionally disabled until secure runtime credentials exist; context is minimized and schema-validated."
+    },
+    {
+      "id": "AI-TUTOR-UI-001",
+      "title": "Integrate mock Tutor into Practice Engine UI",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "QA-READY",
+      "review_notes": "Student-facing local mock Tutor supports HINT/REMEDIATE/CONTINUE; preserves question-bank hints and soft mastery; no network/provider calls."
+    },
+    {
+      "id": "TOPIC07-CORE-CARDS-001",
+      "title": "Refine CĐ07 into five KNTT Core learning cards",
+      "routing": "CHATGPT_LEAD_GEMINI_REVIEW",
+      "status": "DONE",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "review_notes": "Accepted five-card Core structure and misconception metadata. Qualified overly absolute dependency language; preserved KNTT B21 value evaluation, B23 multi-expression addition/subtraction, and B24 multiplication properties. Extension does not gate Core."
+    },
+    {
+      "id": "COLLAB-RELAY-V2-001",
+      "title": "Batch-first ChatGPT ↔ Gemini collaboration protocol",
+      "routing": "CHATGPT_LEAD+GEMINI_PILOT",
+      "status": "DONE",
+      "context_version": "1.0.16",
+      "review_verdict": "PROTOCOL-VALIDATED",
+      "review_notes": "First complete Relay v2 loop executed: ChatGPT packet -> Gemini batch response -> normalized response packet -> ChatGPT integration decision."
+    },
+    {
+      "id": "C07-MICRO15-001",
+      "title": "CĐ07 complete 15-item diagnostic micro-practice pilot",
+      "routing": "GEMINI_AUTHOR_REVIEW+CHATGPT_INTEGRATE",
+      "status": "READY",
+      "context_version": "1.0.16",
+      "review_notes": "15 Core micro-practice questions integrated inline across five Learning Cards. Shared evidence + observed signals + mock Tutor wired. Structural/math QA passed; deployed desktop/iPad/mobile QA still pending before template freeze.",
+      "review_verdict": "QA-READY"
+    },
+    {
+      "id": "GOLDEN-TEMPLATE-001",
+      "title": "Golden Template Learn → Practice → Core Readiness",
+      "routing": "GEMINI_PEDAGOGY+CHATGPT_ARCHITECTURE_QA",
+      "status": "DONE",
+      "context_version": "1.0.20",
+      "review_verdict": "FROZEN-V1",
+      "review_notes": "CĐ07 passed automated/deploy QA and real iPad UX verification. Golden Template v1 invariants frozen in assets/data/curriculum/golden-template-v1.json."
+    },
+    {
+      "id": "ALG-BATCH-04-06-001",
+      "title": "Golden Template batch production CĐ04–CĐ06",
+      "routing": "GEMINI_AUTHOR_REVIEW+CHATGPT_INTEGRATE_QA",
+      "status": "DONE",
+      "context_version": "1.0.25",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_notes": "Full CĐ04–CĐ06 Golden Template batch merged in PR #61 and passed dependency/link QA, Golden validator, micro-practice QA, practice audit, strict MkDocs build, Pages deploy and gh-pages smoke check. CĐ04 expanded to 132 Practice Bank questions with 12 division-by-monomial items."
+    },
+    {
+      "id": "C07-GOLDEN-HARDENING-001",
+      "title": "CĐ07 Golden Template mobile/math hardening",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE_QA",
+      "status": "DONE",
+      "context_version": "1.0.21",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "review_notes": "Accepted MathJax details re-typeset, touch targets, bottom CTAs and JSON control-character QA. Rejected low-score => MORE_EVIDENCE_NEEDED because low performance is not insufficient evidence."
+    },
+    {
+      "id": "ALG-BATCH-08-10-001",
+      "title": "Golden Template batch production CĐ08–CĐ10",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_PEDAGOGICAL_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.29",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_notes": "PR #64 production plus PR #66 LaTeX maintenance both deployed successfully. Dedicated batch validator, Markdown math regression QA, strict MkDocs build and gh-pages smoke check PASS. Gemini review corrections were not applied because all six IDs/prompts were source-misaligned."
+    },
+    {
+      "id": "ALG-BATCH-11-12-001",
+      "title": "Golden Template batch production CĐ11–CĐ12",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_PEDAGOGICAL_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.30",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_notes": "PR #68 merged and production deploy passed. Both topics have 5 Core Learning Cards, 15 micro-practice and 10 MCQ Core Readiness items. CĐ11 adds can-bac-ba theory + 12 real bank items (120→132). CĐ12 keeps tham-so-so-nghiem and item-review Viète extensions outside Core readiness."
+    },
+    {
+      "id": "ALG-REVIEW-04-11-GEMINI-001",
+      "title": "Source-locked pedagogical review CĐ04–CĐ11",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "READY",
+      "context_version": "1.0.30",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-review-04-11.json",
+      "review_notes": "Single-file 48-source bundle generated during deploy. Corrections are admissible only with exact existing ID + exact prompt quote; prose requires source_path + heading + exact quote."
+    },
+    {
+      "id": "GEO-ARCH-V1-001",
+      "title": "Geometry Architecture v1 before CĐ13–CĐ20 rollout",
+      "routing": "CHATGPT_ARCHITECTURE_LEAD+GEMINI_GEOMETRY_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.37",
+      "review_notes": "Architecture-specific Gemini PASS, no corrections/unresolved questions; 124/124 exact Core, BENCH-GEO-001 and CI pass. Owner accepted requested geometry cross-device smoke test, explicitly including iPhone and iPad. Frozen v1 contract; geometry renderer remains separately scoped.",
+      "review_verdict": "FROZEN-V1",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/geometry-architecture-v1.json",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geometry-architecture-v1.json",
+      "audit_artifact": "content-staging/reviews/GEO-ARCH-V1-FREEZE-AUDIT-001.json"
+    },
+    {
+      "id": "GEO13-GOLDEN-001",
+      "title": "Golden Geometry rollout CĐ13 – Góc và đường thẳng",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_GEOMETRY_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.31",
+      "review_verdict": "DEPLOYED-PASS",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/kien-thuc/13-goc-va-duong-thang/",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo13-review.json",
+      "review_notes": "PR #70 deployed successfully. CĐ13 has 21/21 mapped Core exact IDs, 156 Practice Bank items, 5 Learning Cards, 15 micro-practice, 10 Readiness MCQ and proof-language/Euclid coverage."
+    },
+    {
+      "id": "GEO13-GEMINI-REVIEW-001",
+      "title": "Independent source-locked pedagogical/math review CĐ13",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "READY",
+      "context_version": "1.0.31",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo13-review.json",
+      "review_notes": "Review must cite exact existing item ID + exact current prompt quote; prose issues use source_path + heading + exact quote; no visual inference."
+    },
+    {
+      "id": "GEO-BATCH-13-15-001",
+      "title": "Golden Geometry foundational batch CĐ13–CĐ15",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_GEOMETRY_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.32",
+      "review_notes": "CĐ13–CĐ15 all DEPLOYED-PASS. CĐ13 21/21, CĐ14 13/13 and CĐ15 11/11 mapped Core exact coverage; Golden Geometry Learn→Practice→Readiness, strict MkDocs and Pages deploy passed.",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo14-15-review.json"
+    },
+    {
+      "id": "GEO-BATCH-16-18-001",
+      "title": "Golden Geometry batch CĐ16–CĐ18",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_GEOMETRY_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.32",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_notes": "PR #72 merged; follow-up QA fix decoupled batch validators from mutable global coverage totals. Production run 36096886141 passed all geometry validators, review-bundle builders, SVG integrity, practice audit, strict MkDocs and Pages deploy. CĐ16 13/13, CĐ17 12/12, CĐ18 11/11 Core exact coverage; global geometry coverage 90/124.",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo16-18-review.json"
+    },
+    {
+      "id": "GEO-BATCH-16-18-GEMINI-REVIEW-001",
+      "title": "Independent source-locked geometry review CĐ16–CĐ18",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "READY",
+      "context_version": "1.0.32",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo16-18-review.json",
+      "review_notes": "Review theorem hypotheses/converses, corresponding-order logic, diagram-independent reasoning, distractors, pedagogy and Markdown/LaTeX. Corrections require exact current ID + exact prompt quote; prose requires source_path + heading + exact quote."
+    },
+    {
+      "id": "GEO-BATCH-19-20-001",
+      "title": "Golden Geometry high-risk batch CĐ19–CĐ20",
+      "routing": "CHATGPT_PRODUCTION_LEAD+DUAL_GEOMETRY_QA",
+      "status": "DONE",
+      "context_version": "1.0.34",
+      "review_notes": "PR #73 merged as 52f4888 and production run 36097423518 passed Geometry Architecture QA, all Golden Geometry validators, review bundle build, SVG integrity, practice quality audit, strict MkDocs and Pages deploy. CĐ19 14/14 and CĐ20 29/29 mapped Core exact coverage; geometry matrix is 124/124 with 0 gaps. Gemini source-locked batch review returned PASS with corrections []; independent architecture freeze-gate review remains separate.",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo19-20-review.json"
+    },
+    {
+      "id": "GEO-BATCH-19-20-GEMINI-REVIEW-001",
+      "title": "High-risk independent source-locked review CĐ19–CĐ20",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.34",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo19-20-review.json",
+      "review_notes": "User relayed Gemini response: verdict PASS, corrections []. Recorded verbatim in review-result artifact. Review applies to supplied CĐ19–CĐ20 source-locked bundle; not a separate review of the architecture freeze gate.",
+      "source_verdict": "PASS",
+      "review_verdict": "PASS",
+      "corrections_count": 0,
+      "response_packet_id": "GEO-BATCH-19-20-GEMINI-REVIEW-001-RESULT",
+      "result_artifact": "content-staging/reviews/GEO-BATCH-19-20-GEMINI-REVIEW-001-RESULT.json"
+    },
+    {
+      "id": "GEO-ARCH-V1-GEMINI-REVIEW-001",
+      "title": "Independent architecture contract review before freeze",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.36",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geometry-architecture-v1.json",
+      "review_notes": "Architecture-specific Gemini review PASS with corrections [] and unresolved_questions []. Freeze still pending recorded geometry-topic device-flow evidence.",
+      "source_verdict": "PASS",
+      "review_verdict": "PASS",
+      "corrections_count": 0,
+      "unresolved_questions_count": 0,
+      "result_artifact": "content-staging/reviews/GEO-ARCH-V1-GEMINI-REVIEW-001-RESULT.json"
+    },
+    {
+      "id": "GEO-LIB-VISUAL-REFRESH-001",
+      "title": "Replace legacy lesson diagrams with original visual-standard SVGs",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "context_version": "1.0.38",
+      "review_verdict": "DEPLOYED-CI-PASS-OWNER-ACCEPTED",
+      "integrated_artifact": "content-staging/reviews/GEO-LIB-VISUAL-REFRESH-001.json",
+      "review_notes": "33 original SVGs across CĐ13–20 in PRs #79–84; full-path link regression repaired and deployed. CĐ01–12 no non-infographic main-lesson figures; CĐ21–25 already use internal visualization assets. Device visual QA for new CĐ13–17/19–20 group remains owner-pending; JSON-to-SVG engine remains separate GEO-LIB-001 task. User confirmed new diagram quality acceptable after deployment; owner-reported visual acceptance recorded 2026-09-25."
+    },
+    {
+      "id": "STA21-AUTHOR-001",
+      "title": "Gemini-authored first twelve CĐ21 Core Practice Bank items",
+      "routing": "GEMINI_AUTHOR+CHATGPT_QA_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.40",
+      "packet": "docs/assets/data/collaboration/packets/STA21-GEMINI-AUTHOR-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-gemini-author-001.json",
+      "review_notes": "REV2 aligned 003, ChatGPT applied remaining #87 corrections, 12 new items in chunk 05, manifest 132, original 120 preserved.",
+      "review_verdict": "ACCEPT_WITH_EDITORIAL_FIXES",
+      "integrated_artifact": "docs/assets/data/practice/21-thong-ke-v1-05.json"
+    },
+    {
+      "id": "STA21-LEARN-001",
+      "title": "CĐ21 Golden Template five Learning Cards and fifteen micro-practice items",
+      "routing": "GEMINI_AUTHOR+CHATGPT_QA_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.42",
+      "packet": "docs/assets/data/collaboration/packets/STA21-LEARN-GEMINI-AUTHOR-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-learn-gemini-author-001.json",
+      "review_notes": "Five KNTT Core cards with optional teaching copy and 15 micro-practice checks integrated in dedicated files, QA and CI; 132-question Practice Bank preserved. Interactive Readiness pending.",
+      "review_verdict": "ACCEPT_WITH_EDITORIAL_AND_SCHEMA_FIXES",
+      "integrated_artifact": "docs/assets/data/curriculum/topic21-learning-workspace.json"
+    },
+    {
+      "id": "STA21-UX-LANGUAGE-001",
+      "title": "Fix CĐ21 responsive Learning Card captions and apply plain-language math editorial style",
+      "routing": "CHATGPT_IMPLEMENT_QA",
+      "status": "DONE",
+      "context_version": "1.0.43",
+      "integrated_artifact": "docs/assets/stylesheets/topic-workspace.css",
+      "review_verdict": "CODE_READY_AWAITING_DEPLOY_QA",
+      "review_notes": "Removed forced lesson nowrap and early 5-column layout; 1/2/3/4/5 responsive columns by container width, full labels retained. Rewrote all 15 CĐ21 micro question stems for direct language; answers and scored skill IDs preserved. Added editorial standard + CI. Owner PC/iPad/iPhone screenshot shows prior overflow; owner visual recheck after deployment pending."
+    },
+    {
+      "id": "STA21-READY-001",
+      "title": "Gemini CĐ21 Core-only 12-item interactive Readiness authoring",
+      "routing": "GEMINI_AUTHOR+CHATGPT_INDEPENDENT_QA_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.45",
+      "packet": "docs/assets/data/collaboration/packets/STA21-READY-GEMINI-AUTHOR-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-ready-gemini-author-001.json",
+      "review_notes": "12 independent checked Core MCQs / 9 skill IDs; corrects duplicate-like drills, ambiguity of overall class quality in 012, chart data visibility; post-submit no hints/Tutor/soft gate. Original self-test preserved as supplement; 132 bank and 15 micro unchanged. CI / device QA separate.",
+      "review_verdict": "ACCEPT_WITH_EDITORIAL_AND_ACADEMIC_FIXES",
+      "integrated_artifact": "docs/assets/data/assessment/21-thong-ke-core-v1.json"
+    },
+    {
+      "id": "STAT22-MAP-001",
+      "title": "Audit CĐ22 skill-to-grade KNTT Core boundaries before Golden rollout",
+      "routing": "GEMINI_REVIEW+CHATGPT_SOURCE_QA",
+      "status": "DONE",
+      "context_version": "1.0.47",
+      "packet": "docs/assets/data/collaboration/packets/STAT22-MAP-GEMINI-REVIEW-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/stat22-map-gemini-review-001.json",
+      "review_notes": "Gemini's 10-skill formal Grade10 classification accepted as topic THPT-Bridge; corrected overgeneralization about mean (basic arithmetic in Grade4), mode conventions and outlier formal criteria. All 120 practice items retain IDs/answers but explicitly tagged Bridge to avoid engine Core fallback. Removed static hard grade gate; no new readiness.",
+      "review_verdict": "ACCEPT_WITH_CORRECTIONS",
+      "integrated_artifact": "docs/assets/data/curriculum/topic22-layer-audit-v1.json"
+    },
+    {
+      "id": "PROB23-MAP-001",
+      "title": "Audit grade6–8 KNTT probability Core/extension",
+      "routing": "CHATGPT_SOURCE_QA",
+      "status": "DONE",
+      "context_version": "1.0.48",
+      "integrated_artifact": "docs/assets/data/curriculum/topic23-layer-audit-v1.json",
+      "review_verdict": "REVIEWED_WITH_ITEM_EXCEPTIONS",
+      "review_notes": "Grade6 B42–43, Grade7 B29–30, Grade8 B30–32; existing 120 questions: 52 Core/30 Core-Support/38 Entrance10, four conservative overrides and five equal-likelihood wording fixes. Current grade9 overlay has no PRIMARY topic23."
+    },
+    {
+      "id": "PROB23-LEARN-001",
+      "title": "Author five CĐ23 Core Learning Cards and fifteen micro checks",
+      "routing": "GEMINI_AUTHOR+CHATGPT_INDEPENDENT_QA",
+      "status": "DONE",
+      "context_version": "1.0.49",
+      "packet": "docs/assets/data/collaboration/packets/PROB23-LEARN-GEMINI-AUTHOR-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/prob23-learn-gemini-author-001.json",
+      "review_notes": "Five grade6–8 KNTT Core cards, fifteen micro (Base/Trap/Apply), independently reviewed and normalized. Revised near-duplicate/ambiguous items, removed expected-score item 015 beyond narrowly scored Core; retained existing 120 practice and separate Readiness pending.",
+      "review_verdict": "ACCEPT_WITH_EDITORIAL_AND_SCHEMA_FIXES",
+      "integrated_artifact": "docs/assets/data/curriculum/topic23-learning-workspace.json"
+    },
+    {
+      "id": "PROB23-READY-001",
+      "title": "CĐ23 source-locked 12-item Core Readiness",
+      "routing": "CHATGPT_INTEGRATE_AND_QA",
+      "status": "DONE",
+      "review_verdict": "CI_PASS",
+      "integrated_artifact": "docs/assets/data/assessment/23-xac-suat-core-v1.json",
+      "review_notes": "12 after-submit-only items over 5 assessed skills; soft readiness threshold and no Tutor/hints; existing 120-item practice bank unchanged. Owner-device acceptance not yet recorded."
+    },
+    {
+      "id": "AI-TUTOR-LIVE-001",
+      "title": "Firebase App Check Gemini Tutor live transport",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "LIVE_VERIFIED",
+      "integrated_artifact": "docs/assets/javascripts/firebase-gemini-v1.js",
+      "review_notes": "PRs #105–106: enforced reCAPTCHA Enterprise App Check and a verified live Gemini response; user-initiated only. Source content and learner evidence remain independent of AI output."
+    },
+    {
+      "id": "AI-TUTOR-READING-001",
+      "title": "Contextual floating Tutor on lessons and Topic25 deep-reading pages",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "CI_AND_BROWSER_PASS",
+      "integrated_artifact": "docs/assets/javascripts/floating-ai-tutor-v1.js",
+      "review_notes": "PRs #107, #109 and #113; selected passage/active heading, approved cheerful avatar and safe rich math. Explicitly excludes practice, self-check, timed mocks and answer keys; no AI request during CI."
+    },
+    {
+      "id": "TOPIC25-EXPANSION-001",
+      "title": "Topic25 anchor library and three complete original written exams",
+      "routing": "CHATGPT_LEAD+INDEPENDENT_MATH_REVIEW",
+      "status": "DONE",
+      "review_verdict": "CI_BROWSER_DEPLOYED_R2_R3_REVIEW_DOCUMENTED",
+      "integrated_artifact": "docs/assets/data/exams/topic25-exams-v1.json",
+      "review_notes": "PRs #104, #109–112: 10 curated of 11 anchors, deep geometry explanations, 3×120-minute 10-point exams, separate answer keys, self-marked step rubrics and remediation. Implementation delivered; independent math R2/R3 coverage completed in separate task; see review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md."
+    },
+    {
+      "id": "TOPIC25-INDEPENDENT-MATH-REVIEW-001",
+      "title": "Independent review of Topic25 geometry proofs and exam keys",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "packet": "review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26_MAIN_R2.txt",
+      "review_notes": "Gemini R2 source commit 04b275cb reported APPROVE with 17/23 source files listed. Gemini Targeted R3 source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536 reports PASS for all nine targets: six R2-unlisted files plus three post-R2 deep pages. No critical corrections in either response. R3 lists 5 of 8 context files, not 8 of 8. SHA preflight verified 17/17 files in packet and 9 target paths unchanged. See review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md. No claim of third-party formal certification.",
+      "source_commit": "04b275cb5870a2fbd8f540333b96529285277883",
+      "packet_source_count": 23,
+      "review_verdict": "R2_17_LISTED_PLUS_R3_9_TARGETS_PASS_SCOPE_RECORDED"
+    },
+    {
+      "id": "G6-T02-GOLDEN-001",
+      "title": "Topic02 source-scoped grade6 Golden pilot: five learning cards, micro-practice and independent readiness",
+      "routing": "CHATGPT_LEAD+ACADEMIC_QA",
+      "status": "DONE",
+      "review_verdict": "CI_AND_BROWSER_PASS_DEPLOYED_OWNER_DEVICE_QA_PENDING",
+      "review_notes": "PR #120 merged into main 09ff58e41eb5bc05cf66ef20b8d4add508a74a2b. CI run 36232747305 PASS; Deploy MkDocs run 36232843852 PASS. Five grade6 cards, 15 micro, 10 independent Readiness, written answer guard. Legacy 120-bank IDs retained and explicitly marked cross-grade; grade7 content NOT included in grade6 Readiness. Implementation DONE; owner real-device UX acceptance not yet recorded."
+    },
+    {
+      "id": "G6-T03-SCOPE-001",
+      "title": "Topic03 class6 tỉ số/phần trăm versus class7 tỉ lệ thức/thuận/nghịch: audited content and progressive Golden rollout",
+      "routing": "CHATGPT_LEAD+GEMINI_ACADEMIC_REVIEW",
+      "status": "OPEN",
+      "review_notes": "Grade6 KNTT B31 maps tỉ số, tỉ số phần trăm and basic percent; Grade7 B20–23 maps tỉ lệ thức, dãy tỉ số, đại lượng tỉ lệ thuận/nghịch. Existing 120-question bank has no reliable per-item grade metadata. Need grade-scoped learner path and independent readiness; do not misrepresent full bank as grade6 Core."
+    },
+    {
+      "id": "G6-T02-OWNER-UX-001",
+      "title": "Owner real-device confirmation of grade-six Topic02 learning and Readiness",
+      "routing": "OWNER_DEVICE_QA",
+      "status": "OPEN",
+      "review_notes": "Check class6 chapter link → five learning cards → micro hints and after-submit readiness → next-topic link on PC/iPad/mobile. CI/browser passes but this task remains pending user acceptance. No impact on learner evidence."
+    },
+    {
+      "id": "TOPIC25-R2-SOURCE-COVERAGE-001",
+      "title": "Confirm omitted R2 source files and review new Topic25 deep pages",
+      "routing": "INDEPENDENT_REVIEW+CHATGPT_VERIFY",
+      "status": "DONE",
+      "review_notes": "User provided Gemini R3 JSON with packet_id TOPIC25-GEMINI-TARGETED-R3-20260926, source_commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536, APPROVE, 9/9 distinct target_files_reviewed status PASS, critical_corrections empty; 5/8 context_files_read. Source-match and independent arithmetic/SVG coordinate preflight checked; decimal SVG plotting is rounded. Integration review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md. This completes targeted follow-up; editorial-only metadata changes after snapshot do not imply Gemini read those later bytes.",
+      "packet": "review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26_TARGETED_R3.txt",
+      "source_commit": "5f74d7c377bc94f2688a9b5ee431d90c88af0536",
+      "packet_source_count": 17,
+      "review_verdict": "TARGETED_R3_9_OF_9_SOURCE_LOCKED_PASS"
+    },
+    {
+      "id": "TOPIC25-R2-EDITORIAL-DEEP-001",
+      "title": "Publish three post-Gemini R2 deep-dive anchor lessons",
+      "routing": "CHATGPT_AUTHOR+CI_BROWSER_QA",
+      "status": "DONE",
+      "review_verdict": "DEPLOYED_POST_R2_THEN_GEMINI_R3_3_OF_3_PASS",
+      "review_notes": "PR #122 merged as 2865e1e82749484300244234e95cad8b6ca05f7a. New pages A25-006/007/010 connect to catalog and library, IDs/URLs unchanged. CI run 36233772681 PASS and deployment run 36233855045 PASS. The Gemini R2 review was on prior source snapshot; these new pages were independently added afterwards. Follow-up TOPIC25-R2-SOURCE-COVERAGE-001 remains OPEN. Gemini Targeted R3 subsequently reviewed all three deep pages A25-006/007/010 directly against source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536 and reported PASS with variant checks; see review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md."
+    }
+  ]
+}

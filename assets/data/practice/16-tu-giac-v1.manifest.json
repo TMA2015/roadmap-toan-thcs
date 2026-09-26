@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "QUAD16-V1",
+  "topic": {
+    "id": "16-tu-giac",
+    "title": "Tứ giác và các hình đặc biệt"
+  },
+  "session_size": 10,
+  "question_count": 120,
+  "skill_labels": {
+    "tong-goc-tu-giac": "Tổng các góc trong tứ giác",
+    "hinh-thang": "Hình thang",
+    "hinh-thang-can": "Hình thang cân",
+    "hbh-tinh-chat": "Tính chất hình bình hành",
+    "hbh-dau-hieu": "Dấu hiệu hình bình hành",
+    "hcn-tinh-chat": "Tính chất hình chữ nhật",
+    "hcn-dau-hieu": "Dấu hiệu hình chữ nhật",
+    "hthoi-tinh-chat": "Tính chất hình thoi",
+    "hthoi-dau-hieu": "Dấu hiệu hình thoi",
+    "hvuong-tinh-chat": "Tính chất hình vuông",
+    "hvuong-dau-hieu": "Dấu hiệu hình vuông",
+    "quan-he-bao-ham": "Quan hệ bao hàm giữa các tứ giác đặc biệt",
+    "duong-cheo-suy-luan": "Suy luận từ tính chất đường chéo"
+  },
+  "skill_groups": [
+    {
+      "id": "A",
+      "label": "A. Tứ giác – hình thang",
+      "skills": [
+        "tong-goc-tu-giac",
+        "hinh-thang",
+        "hinh-thang-can"
+      ]
+    },
+    {
+      "id": "B",
+      "label": "B. Hình bình hành",
+      "skills": [
+        "hbh-tinh-chat",
+        "hbh-dau-hieu"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "C. Hình chữ nhật",
+      "skills": [
+        "hcn-tinh-chat",
+        "hcn-dau-hieu"
+      ]
+    },
+    {
+      "id": "D",
+      "label": "D. Hình thoi",
+      "skills": [
+        "hthoi-tinh-chat",
+        "hthoi-dau-hieu"
+      ]
+    },
+    {
+      "id": "E",
+      "label": "E. Hình vuông và hệ thống hóa",
+      "skills": [
+        "hvuong-tinh-chat",
+        "hvuong-dau-hieu",
+        "quan-he-bao-ham",
+        "duong-cheo-suy-luan"
+      ]
+    }
+  ],
+  "sources": [
+    "16-tu-giac-v1-01.json",
+    "16-tu-giac-v1-02.json",
+    "16-tu-giac-v1-03.json",
+    "16-tu-giac-v1-04.json"
+  ]
+}

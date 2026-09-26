@@ -1,0 +1,83 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "C07-GOLDEN-TEMPLATE-DEEP-REVIEW-001",
+  "task_id": "C07-GOLDEN-HARDENING-001",
+  "context_version": "1.0.20",
+  "from": "GEMINI",
+  "to": "CHATGPT",
+  "mode": "REVIEW",
+  "scope": {
+    "layer": [
+      "KNTT-Core",
+      "SYSTEM"
+    ],
+    "topics": [
+      "07-phan-thuc-dai-so"
+    ],
+    "skills": []
+  },
+  "source_artifacts": [
+    "docs/kien-thuc/07-phan-thuc-dai-so/index.md",
+    "docs/kien-thuc/07-phan-thuc-dai-so/bai-tap.md",
+    "docs/kien-thuc/07-phan-thuc-dai-so/tu-kiem-tra.md",
+    "docs/assets/data/practice/07-phan-thuc-dai-so-micro-v1.json",
+    "docs/assets/data/assessment/07-phan-thuc-dai-so-core-v1.json"
+  ],
+  "claims": [
+    {
+      "id": "G1",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Harden MathJax rendering when collapsible details are opened.",
+      "evidence": []
+    },
+    {
+      "id": "G2",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Reject malformed TeX escaping/control-character traps in JSON data.",
+      "evidence": []
+    },
+    {
+      "id": "G3",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Enforce touch-safe option targets on iPad/mobile.",
+      "evidence": []
+    },
+    {
+      "id": "G4",
+      "status": "PEDAGOGICAL_PROPOSAL",
+      "statement": "Add explicit bottom-of-page Practice and Readiness CTAs.",
+      "evidence": []
+    },
+    {
+      "id": "G5",
+      "status": "PEDAGOGICAL_PROPOSAL",
+      "statement": "Use score bands >=80 READY, 50-79 REVIEW_RECOMMENDED, <50 MORE_EVIDENCE_NEEDED.",
+      "evidence": []
+    }
+  ],
+  "proposed_changes": [
+    {
+      "artifact": "UI/math rendering",
+      "change": "Re-typeset formulas when details open and ensure option layouts do not overflow.",
+      "rationale": "Mobile robustness."
+    },
+    {
+      "artifact": "JSON QA",
+      "change": "Validate TeX escaping/control characters.",
+      "rationale": "Avoid silent \\f-style corruption."
+    },
+    {
+      "artifact": "Navigation",
+      "change": "Add bottom CTAs to Practice and Readiness.",
+      "rationale": "Reduce mobile navigation friction."
+    }
+  ],
+  "tests": [],
+  "uncertainties": [
+    "Score-band proposal conflicts with current semantic definition of MORE_EVIDENCE_NEEDED."
+  ],
+  "acceptance": {
+    "verdict": "PASS-WITH-CHANGES",
+    "notes": "Technical hardening accepted; low-score -> MORE_EVIDENCE_NEEDED rejected because evidence sufficiency and performance are distinct concepts."
+  }
+}

@@ -1,0 +1,635 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "SYS09-MICRO-V1",
+  "topic": {
+    "id": "09-he-phuong-trinh",
+    "title": "Hệ phương trình bậc nhất hai ẩn"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "SYS09MICRO_001",
+      "card_id": "sys09-core-1",
+      "micro_role": "base",
+      "question": "Cặp nào là nghiệm của \\(x+2y=7\\)?",
+      "options": [
+        "\\((3;2)\\)",
+        "\\((1;2)\\)",
+        "\\((7;2)\\)",
+        "\\((0;7)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "nghiem-pt-hai-an"
+        ],
+        "type": "nghiem-pt-hai-an",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "3+2·2=7.",
+      "hints": [
+        "Thay từng cặp vào phương trình.",
+        "Tính x+2y."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_002",
+      "card_id": "sys09-core-1",
+      "micro_role": "trap",
+      "question": "Cặp \\((2;1)\\) có là nghiệm của hệ \\(x+y=3,\\ 2x-y=3\\) không?",
+      "options": [
+        "Có, vì thỏa cả hai phương trình.",
+        "Có, vì chỉ cần thỏa phương trình đầu.",
+        "Không, vì 2+1≠3.",
+        "Không, vì 2·2-1≠3."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "nghiem-he"
+        ],
+        "type": "nghiem-he",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Một nghiệm hệ phải thỏa đồng thời cả hai phương trình; (2,1) thỏa cả hai.",
+      "hints": [
+        "Kiểm tra từng phương trình.",
+        "Nghiệm hệ phải thỏa đồng thời."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "nghiem-he-chi-kiem-tra-mot-pt",
+          "signal_weight": 2,
+          "feedback_hint": "Nghiệm hệ phải thỏa đồng thời tất cả phương trình, không chỉ một phương trình."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_003",
+      "card_id": "sys09-core-1",
+      "micro_role": "apply",
+      "question": "Hai đường thẳng biểu diễn hai phương trình của hệ cắt nhau tại đúng một điểm. Hệ có:",
+      "options": [
+        "Một nghiệm duy nhất",
+        "Vô số nghiệm",
+        "Vô nghiệm",
+        "Hai nghiệm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "y-nghia-hinh-hoc"
+        ],
+        "type": "y-nghia-hinh-hoc",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Giao điểm duy nhất tương ứng với nghiệm duy nhất của hệ.",
+      "hints": [
+        "Mỗi giao điểm chung là một nghiệm hệ.",
+        "Một giao điểm → một nghiệm."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_004",
+      "card_id": "sys09-core-2",
+      "micro_role": "base",
+      "question": "Với hệ \\(x+y=5,\\ x-y=1\\), từ phương trình đầu có thể thế \\(x=\\):",
+      "options": [
+        "\\(5-y\\)",
+        "\\(5+y\\)",
+        "\\(y-5\\)",
+        "\\(1-y\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "giai-he-the"
+        ],
+        "type": "giai-he-the",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "x+y=5 ⇒ x=5-y.",
+      "hints": [
+        "Chuyển y sang vế phải.",
+        "Đổi dấu khi chuyển vế."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_005",
+      "card_id": "sys09-core-2",
+      "micro_role": "trap",
+      "question": "Hệ \\(y=x+1,\\ 2x+y=7\\). Sau khi thế y vào phương trình hai ta được:",
+      "options": [
+        "\\(3x+1=7\\)",
+        "\\(2x+x-1=7\\)",
+        "\\(2x+y+1=7\\)",
+        "\\(2x=6\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "giai-he-the"
+        ],
+        "type": "giai-he-the",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Thay y=x+1: 2x+(x+1)=7.",
+      "hints": [
+        "Thế toàn bộ biểu thức x+1 cho y.",
+        "Giữ ngoặc nếu cần."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "the-sai-dau-bieu-thuc",
+          "signal_weight": 2,
+          "feedback_hint": "Biểu thức y=x+1 phải được thế nguyên vẹn, không đổi +1 thành -1."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_006",
+      "card_id": "sys09-core-2",
+      "micro_role": "apply",
+      "question": "Giải hệ \\(y=x+2,\\ x+y=8\\). Nghiệm là:",
+      "options": [
+        "\\((3;5)\\)",
+        "\\((5;3)\\)",
+        "\\((4;4)\\)",
+        "\\((2;6)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "giai-he-the"
+        ],
+        "type": "giai-he-the",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Thế y=x+2 vào x+y=8: 2x+2=8 ⇒ x=3, y=5.",
+      "hints": [
+        "Thế phương trình đã biểu diễn y.",
+        "Tìm x trước rồi suy ra y."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_007",
+      "card_id": "sys09-core-3",
+      "micro_role": "base",
+      "question": "Với hệ \\(x+y=7,\\ x-y=1\\), cộng hai phương trình giúp khử:",
+      "options": [
+        "y",
+        "x",
+        "cả x và y",
+        "không khử ẩn nào"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "giai-he-cong"
+        ],
+        "type": "giai-he-cong",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "y và -y triệt tiêu.",
+      "hints": [
+        "Quan sát hệ số của y.",
+        "Hai hệ số đối nhau."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_008",
+      "card_id": "sys09-core-3",
+      "micro_role": "trap",
+      "question": "Muốn khử y trong hệ \\(2x+y=5,\\ 3x+2y=8\\), bước phù hợp là:",
+      "options": [
+        "Nhân phương trình đầu với -2 rồi cộng với phương trình hai.",
+        "Nhân phương trình đầu với 2 rồi cộng.",
+        "Cộng ngay hai phương trình.",
+        "Trừ phương trình đầu khỏi chính nó."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "giai-he-cong"
+        ],
+        "type": "giai-he-cong",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Nhân PT1 với -2 tạo -2y, rồi cộng với +2y.",
+      "hints": [
+        "Cần hệ số y đối nhau.",
+        "Tạo -2y ở phương trình đầu."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "cong-dai-so-tao-cung-dau",
+          "signal_weight": 2,
+          "feedback_hint": "Muốn cộng để khử y, hai hệ số của y phải đối nhau."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_009",
+      "card_id": "sys09-core-3",
+      "micro_role": "apply",
+      "question": "Hệ \\(\\frac{x}{2}+\\frac{y}{3}=2,\\ x-y=1\\). Biến đổi phương trình đầu thuận tiện nhất là:",
+      "options": [
+        "Nhân cả hai vế với 6.",
+        "Nhân chỉ x với 2.",
+        "Chia cả hai vế cho 6.",
+        "Giữ nguyên và cộng ngay."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "bien-doi-truoc-giai"
+        ],
+        "type": "bien-doi-truoc-giai",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Nhân 6 để khử mẫu: 3x+2y=12.",
+      "hints": [
+        "Tìm BCNN của 2 và 3.",
+        "Nhân toàn bộ hai vế với 6."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_010",
+      "card_id": "sys09-core-4",
+      "micro_role": "base",
+      "question": "Hệ \\(y=2x+1,\\ 3x-y=4\\) thuận tiện nhất để giải bằng:",
+      "options": [
+        "Phương pháp thế",
+        "Cộng đại số ngay",
+        "Đồ thị bắt buộc",
+        "Không có phương pháp phù hợp"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "chon-phuong-phap"
+        ],
+        "type": "chon-phuong-phap",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "y đã được biểu diễn theo x nên thế rất thuận tiện.",
+      "hints": [
+        "Quan sát phương trình đã cô lập y.",
+        "Khi một ẩn đã được biểu diễn, thế thường gọn."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_011",
+      "card_id": "sys09-core-4",
+      "micro_role": "trap",
+      "question": "Để kiểm tra \\((2;3)\\) có là nghiệm của một hệ hai phương trình, cần:",
+      "options": [
+        "Thay vào cả hai phương trình.",
+        "Chỉ thay vào phương trình đầu.",
+        "Chỉ thay vào phương trình hai.",
+        "Chỉ kiểm tra x=2."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "kiem-tra-nghiem-he"
+        ],
+        "type": "kiem-tra-nghiem-he",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Nghiệm hệ phải thỏa đồng thời tất cả phương trình.",
+      "hints": [
+        "Hệ có hai điều kiện đồng thời.",
+        "Kiểm tra cả hai."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "kiem-tra-nghiem-he-thieu-phuong-trinh",
+          "signal_weight": 2,
+          "feedback_hint": "Không thể xác nhận nghiệm hệ nếu chỉ kiểm tra một phương trình."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_012",
+      "card_id": "sys09-core-4",
+      "micro_role": "apply",
+      "question": "Hai phương trình của hệ biểu diễn hai đường thẳng song song phân biệt. Hệ:",
+      "options": [
+        "Vô nghiệm",
+        "Có một nghiệm",
+        "Có vô số nghiệm",
+        "Có hai nghiệm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "so-nghiem-he"
+        ],
+        "type": "so-nghiem-he",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai đường song song phân biệt không có giao điểm chung.",
+      "hints": [
+        "Nghiệm hệ là giao điểm chung.",
+        "Song song phân biệt → không giao nhau."
+      ],
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_013",
+      "card_id": "sys09-core-5",
+      "micro_role": "base",
+      "question": "Tổng hai số là 20 và hiệu số lớn trừ số bé là 4. Gọi số lớn x, số bé y. Hệ đúng là:",
+      "options": [
+        "\\(x+y=20,\\ x-y=4\\)",
+        "\\(x+y=4,\\ x-y=20\\)",
+        "\\(x-y=20,\\ y-x=4\\)",
+        "\\(xy=20,\\ x+y=4\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "lap-he-bai-toan"
+        ],
+        "type": "lap-he-bai-toan",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Dịch trực tiếp hai quan hệ tổng và hiệu.",
+      "hints": [
+        "Quan hệ thứ nhất là tổng.",
+        "Quan hệ thứ hai là hiệu số lớn-số bé."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_014",
+      "card_id": "sys09-core-5",
+      "micro_role": "trap",
+      "question": "Số có hai chữ số với hàng chục x và hàng đơn vị y được viết là:",
+      "options": [
+        "\\(10x+y\\)",
+        "\\(x+10y\\)",
+        "\\(xy\\)",
+        "\\(x+y\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "bai-toan-so"
+        ],
+        "type": "bai-toan-so",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Giá trị hàng chục là 10x, hàng đơn vị là y.",
+      "hints": [
+        "Hàng chục có giá trị gấp 10.",
+        "Cộng giá trị hai hàng."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "bieu-dien-so-hai-chu-so-dao-hang",
+          "signal_weight": 2,
+          "feedback_hint": "x là hàng chục nên phải nhân 10; y là hàng đơn vị."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_015",
+      "card_id": "sys09-core-5",
+      "micro_role": "apply",
+      "question": "Hai xe đi ngược chiều, vận tốc lần lượt x và y km/h. Sau 2 giờ tổng quãng đường là 220 km. Phương trình đúng là:",
+      "options": [
+        "\\(2x+2y=220\\)",
+        "\\(x+y=220\\)",
+        "\\(2x-y=220\\)",
+        "\\(xy=110\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "chuyen-dong-he"
+        ],
+        "type": "chuyen-dong-he",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Mỗi xe đi 2 giờ nên quãng đường là 2x và 2y; tổng bằng 220.",
+      "hints": [
+        "Quãng đường = vận tốc × thời gian.",
+        "Cộng quãng đường hai xe."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

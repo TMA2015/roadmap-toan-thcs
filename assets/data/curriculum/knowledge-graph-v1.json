@@ -1,0 +1,691 @@
+{
+  "version": 1.2,
+  "schema": "roadmap-knowledge-graph-v1",
+  "status": "independently-reviewed",
+  "purpose": "Skill-level prerequisite/unlock graph across the 25-topic Vertical Spine. Grade mappings are overlays; remediation is advisory.",
+  "policies": {
+    "prerequisite": "A prerequisite is knowledge materially required to execute the target skill, not merely a related earlier topic.",
+    "cross_link": "Pedagogically useful associations that are not required dependencies stay outside prerequisite edges.",
+    "mastery": "soft",
+    "remediation": "recommend-only; never hard-lock progression",
+    "challenge": "Specialized-Challenge nodes must never be Core prerequisites.",
+    "confidence": "Only high-confidence edges are active in v1; uncertain edges require review.",
+    "topic_links": "Blueprint topic Before/After links are navigation only; never auto-convert to skill prerequisites.",
+    "alternative_methods": "Alternative solving methods and conditional techniques must not each become unconditional prerequisites."
+  },
+  "edge_types": [
+    "PREREQUISITE",
+    "SEQUENCE",
+    "CROSS_LINK",
+    "REMEDIATION"
+  ],
+  "nodes": {
+    "nhan-tu-chung": {
+      "topic": "06-phan-tich-da-thuc",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "hieu-hai-binh-phuong": {
+      "topic": "06-phan-tich-da-thuc",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "phan-tich-tu-mau": {
+      "topic": "07-phan-thuc-dai-so",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "rut-gon-phan-thuc": {
+      "topic": "07-phan-thuc-dai-so",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "quy-dong-mau-thuc": {
+      "topic": "07-phan-thuc-dai-so",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "dkxd-phuong-trinh-mau": {
+      "topic": "08-phuong-trinh-bat-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "khu-mau-phuong-trinh": {
+      "topic": "08-phuong-trinh-bat-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "doi-chieu-nghiem": {
+      "topic": "08-phuong-trinh-bat-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "pt-bac-nhat": {
+      "topic": "08-phuong-trinh-bat-phuong-trinh",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "bien-doi-pt-nhieu-buoc": {
+      "topic": "08-phuong-trinh-bat-phuong-trinh",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "nghiem-pt-hai-an": {
+      "topic": "09-he-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "giai-he-the": {
+      "topic": "09-he-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "giai-he-cong": {
+      "topic": "09-he-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "lap-he-bai-toan": {
+      "topic": "09-he-phuong-trinh",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "khai-niem-ham-so": {
+      "topic": "10-ham-so-do-thi",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "ve-do-thi-ham-bac-nhat": {
+      "topic": "10-ham-so-do-thi",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "ham-y-ax2": {
+      "topic": "10-ham-so-do-thi",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "can-bac-hai-so-hoc": {
+      "topic": "11-can-thuc",
+      "grades": [
+        7,
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "dkxd-can": {
+      "topic": "11-can-thuc",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "tinh-delta": {
+      "topic": "12-phuong-trinh-bac-hai-viete",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "cong-thuc-nghiem": {
+      "topic": "12-phuong-trinh-bac-hai-viete",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "tong-tich-nghiem": {
+      "topic": "12-phuong-trinh-bac-hai-viete",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "thales-thuan": {
+      "topic": "17-thales-dong-dang",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "dong-dang-gg": {
+      "topic": "17-thales-dong-dang",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "tinh-do-dai-dong-dang": {
+      "topic": "17-thales-dong-dang",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "pythagore": {
+      "topic": "18-he-thuc-luong",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "sin": {
+      "topic": "18-he-thuc-luong",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "cos": {
+      "topic": "18-he-thuc-luong",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "tan": {
+      "topic": "18-he-thuc-luong",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "tim-canh-luong-giac": {
+      "topic": "18-he-thuc-luong",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "goc-noi-tiep": {
+      "topic": "19-duong-tron",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "tu-giac-noi-tiep": {
+      "topic": "19-duong-tron",
+      "grades": [
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "xac-suat-thuc-nghiem": {
+      "topic": "23-xac-suat",
+      "grades": [
+        6,
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "bien-co": {
+      "topic": "23-xac-suat",
+      "grades": [
+        8,
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "xac-suat-co-dien": {
+      "topic": "23-xac-suat",
+      "grades": [
+        8,
+        9
+      ],
+      "layer": "KNTT-Core"
+    },
+    "ti-le-thuc": {
+      "topic": "03-ti-le-ti-le-thuc",
+      "grades": [
+        7
+      ],
+      "layer": "KNTT-Core"
+    },
+    "hang-tu-dong-dang": {
+      "topic": "04-bieu-thuc-dai-so",
+      "grades": [
+        7,
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "thu-gon-da-thuc": {
+      "topic": "04-bieu-thuc-dai-so",
+      "grades": [
+        7,
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "bo-ngoac-dau": {
+      "topic": "04-bieu-thuc-dai-so",
+      "grades": [
+        7,
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "cong-tru-da-thuc": {
+      "topic": "04-bieu-thuc-dai-so",
+      "grades": [
+        7,
+        8
+      ],
+      "layer": "KNTT-Core"
+    },
+    "cong-tru-phan-thuc": {
+      "topic": "07-phan-thuc-dai-so",
+      "grades": [
+        8
+      ],
+      "layer": "KNTT-Core"
+    }
+  },
+  "edges": [
+    {
+      "from": "nhan-tu-chung",
+      "to": "phan-tich-tu-mau",
+      "type": "PREREQUISITE",
+      "confidence": "high",
+      "reason": "Factoring numerator/denominator requires recognizing common factors."
+    },
+    {
+      "from": "hieu-hai-binh-phuong",
+      "to": "phan-tich-tu-mau",
+      "type": "PREREQUISITE",
+      "confidence": "high",
+      "reason": "Difference-of-squares is a core factorization pattern used in rational expressions."
+    },
+    {
+      "from": "phan-tich-tu-mau",
+      "to": "rut-gon-phan-thuc",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "phan-tich-tu-mau",
+      "to": "quy-dong-mau-thuc",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "rut-gon-phan-thuc",
+      "to": "khu-mau-phuong-trinh",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "quy-dong-mau-thuc",
+      "to": "khu-mau-phuong-trinh",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "dkxd-phuong-trinh-mau",
+      "to": "khu-mau-phuong-trinh",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "khu-mau-phuong-trinh",
+      "to": "doi-chieu-nghiem",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "pt-bac-nhat",
+      "to": "bien-doi-pt-nhieu-buoc",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "pt-bac-nhat",
+      "to": "giai-he-the",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "pt-bac-nhat",
+      "to": "giai-he-cong",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "nghiem-pt-hai-an",
+      "to": "giai-he-the",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "nghiem-pt-hai-an",
+      "to": "giai-he-cong",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "giai-he-the",
+      "to": "lap-he-bai-toan",
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Substitution is one possible solving method; it is not individually mandatory for constructing a system."
+    },
+    {
+      "from": "giai-he-cong",
+      "to": "lap-he-bai-toan",
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Elimination is an alternative solving method; it is not individually mandatory for constructing a system."
+    },
+    {
+      "from": "khai-niem-ham-so",
+      "to": "ve-do-thi-ham-bac-nhat",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "khai-niem-ham-so",
+      "to": "ham-y-ax2",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "can-bac-hai-so-hoc",
+      "to": "dkxd-can",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "tinh-delta",
+      "to": "cong-thuc-nghiem",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "cong-thuc-nghiem",
+      "to": "tong-tich-nghiem",
+      "type": "SEQUENCE",
+      "confidence": "high",
+      "reason": "Viète follows quadratic equations in the learning sequence, but does not require using the quadratic formula."
+    },
+    {
+      "from": "dong-dang-gg",
+      "to": "tinh-do-dai-dong-dang",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "pythagore",
+      "to": "tim-canh-luong-giac",
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Pythagoras is useful for missing-side cases, not every trigonometric side calculation."
+    },
+    {
+      "from": "sin",
+      "to": "tim-canh-luong-giac",
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Use sine only when the chosen side-angle relation requires it; not all three ratios are mandatory."
+    },
+    {
+      "from": "cos",
+      "to": "tim-canh-luong-giac",
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Use cosine only when the chosen side-angle relation requires it."
+    },
+    {
+      "from": "tan",
+      "to": "tim-canh-luong-giac",
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Use tangent only when the chosen side-angle relation requires it."
+    },
+    {
+      "from": "goc-noi-tiep",
+      "to": "tu-giac-noi-tiep",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "bien-co",
+      "to": "xac-suat-co-dien",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "xac-suat-thuc-nghiem",
+      "to": "xac-suat-co-dien",
+      "type": "REMEDIATION",
+      "confidence": "high",
+      "reason": "Useful conceptual bridge; not a logical prerequisite."
+    },
+    {
+      "from": "can-bac-hai-so-hoc",
+      "to": "cong-thuc-nghiem",
+      "type": "PREREQUISITE",
+      "confidence": "high",
+      "reason": "Using the real quadratic formula requires evaluating sqrt(Delta); computing Delta itself does not."
+    },
+    {
+      "from": "thales-thuan",
+      "to": "dong-dang-gg",
+      "type": "SEQUENCE",
+      "confidence": "high",
+      "reason": "Useful KNTT learning sequence, but Thales is not a logical prerequisite for executing angle-angle similarity."
+    },
+    {
+      "from": "hang-tu-dong-dang",
+      "to": "thu-gon-da-thuc",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "bo-ngoac-dau",
+      "to": "cong-tru-da-thuc",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "quy-dong-mau-thuc",
+      "to": "cong-tru-phan-thuc",
+      "type": "PREREQUISITE",
+      "confidence": "high"
+    },
+    {
+      "from": "ti-le-thuc",
+      "to": "thales-thuan",
+      "type": "PREREQUISITE",
+      "confidence": "high",
+      "reason": "Using Thales numerically requires proportional relationships."
+    },
+    {
+      "from": "ti-le-thuc",
+      "to": "tinh-do-dai-dong-dang",
+      "type": "PREREQUISITE",
+      "confidence": "high",
+      "reason": "Computing corresponding lengths in similar triangles uses proportions."
+    }
+  ],
+  "remediation_rules": [
+    {
+      "when": {
+        "skill": "khu-mau-phuong-trinh",
+        "signal": "repeated_errors"
+      },
+      "recommend": [
+        "quy-dong-mau-thuc",
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "message": "Có vẻ bạn đang gặp khó khăn với Phân thức đại số. Hãy ôn nhanh các bước phân tích, rút gọn và quy đồng mẫu thức."
+    },
+    {
+      "when": {
+        "skill": "rut-gon-phan-thuc",
+        "signal": "repeated_errors"
+      },
+      "recommend": [
+        "phan-tich-tu-mau",
+        "nhan-tu-chung",
+        "hieu-hai-binh-phuong"
+      ],
+      "message": "Hãy kiểm tra lại kỹ năng phân tích đa thức trước khi tiếp tục rút gọn phân thức."
+    },
+    {
+      "when": {
+        "skill": "lap-he-bai-toan",
+        "signal": "repeated_errors"
+      },
+      "recommend": [
+        "giai-he-the",
+        "giai-he-cong",
+        "pt-bac-nhat"
+      ],
+      "message": "Hãy ôn cách giải hệ và phương trình bậc nhất trước khi tập trung vào bước mô hình hóa."
+    },
+    {
+      "when": {
+        "skill": "tim-canh-luong-giac",
+        "signal": "repeated_errors"
+      },
+      "recommend": [
+        "sin",
+        "cos",
+        "tan",
+        "pythagore"
+      ],
+      "message": "Hãy ôn tỉ số lượng giác và Pythagore trong tam giác vuông."
+    }
+  ],
+  "review_queue": [
+    {
+      "candidate": [
+        "dong-dang-gg",
+        "goc-noi-tiep"
+      ],
+      "question": "Common geometric reuse, but not an unconditional prerequisite; do not activate without item-level evidence."
+    },
+    {
+      "candidate": [
+        "ve-do-thi-ham-bac-nhat",
+        "nghiem-pt-hai-an"
+      ],
+      "question": "Conceptually linked through line graphs; review exact direction before activation."
+    },
+    {
+      "candidate": [
+        "bo-ngoac-dau",
+        "cong-tru-phan-thuc"
+      ],
+      "question": "Likely remediation/cross-topic support, but not universal prerequisite because many rational-expression items contain no leading negative parentheses."
+    },
+    {
+      "candidate": [
+        "hang-tu-dong-dang",
+        "tinh-delta"
+      ],
+      "question": "Do not activate globally. Relevant mainly when coefficients/parameters first require algebraic simplification."
+    },
+    {
+      "candidate": [
+        "bien-doi-pt-nhieu-buoc",
+        "lap-phuong-trinh"
+      ],
+      "question": "Model construction and equation solving are separable learner abilities; evaluate as remediation evidence rather than a universal prerequisite."
+    }
+  ],
+  "review_evidence": {
+    "task": "KG-REVIEW-001",
+    "verdict": "PASS",
+    "integrated_as": "PASS-WITH-CHANGES",
+    "accepted": [
+      "Downgrade Thales→GG to SEQUENCE",
+      "Keep experimental→classical probability as REMEDIATION bridge",
+      "Add ratio/proportion dependencies for Thales/similarity length",
+      "Add polynomial sign/like-term foundation edges"
+    ],
+    "rejected_or_qualified": [
+      "No unsupported 80%/90% error-rate claims",
+      "hang-tu-dong-dang→tinh-delta is not global Core prerequisite",
+      "Pythagoras is not made a prerequisite for sin/cos/tan definitions; it remains prerequisite/remediation for many solve-for-side workflows"
+    ],
+    "reviewer_note": "Independent review is advisory; repository integration applies item-scope and logical-dependency QA.",
+    "topic_dependency_audit_2026_09_26": {
+      "status": "scoped-corrections",
+      "changed_edges": [
+        {
+          "from": "cong-thuc-nghiem",
+          "to": "tong-tich-nghiem",
+          "type": "SEQUENCE"
+        },
+        {
+          "from": "giai-he-the",
+          "to": "lap-he-bai-toan",
+          "type": "REMEDIATION"
+        },
+        {
+          "from": "giai-he-cong",
+          "to": "lap-he-bai-toan",
+          "type": "REMEDIATION"
+        },
+        {
+          "from": "pythagore",
+          "to": "tim-canh-luong-giac",
+          "type": "REMEDIATION"
+        },
+        {
+          "from": "sin",
+          "to": "tim-canh-luong-giac",
+          "type": "REMEDIATION"
+        },
+        {
+          "from": "cos",
+          "to": "tim-canh-luong-giac",
+          "type": "REMEDIATION"
+        },
+        {
+          "from": "tan",
+          "to": "tim-canh-luong-giac",
+          "type": "REMEDIATION"
+        }
+      ],
+      "note": "No new nodes or prerequisite edges activated; runtime uses only high-confidence PREREQUISITE edges."
+    }
+  }
+}

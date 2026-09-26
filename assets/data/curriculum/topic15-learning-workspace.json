@@ -1,0 +1,136 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "15-duong-dong-quy",
+  "title": "Các đường đồng quy trong tam giác",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only mapped Core cards contribute to readiness; support properties do not gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "geo15-core-1",
+      "order": 1,
+      "title": "Trung tuyến và trọng tâm",
+      "kntt_lessons": [
+        "Lớp 7"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-trung-tuyen",
+        "trong-tam",
+        "ti-so-trong-tam"
+      ],
+      "prerequisites": [
+        "trung-diem"
+      ],
+      "micro_practice": [
+        "GEO15MICRO_001",
+        "GEO15MICRO_002",
+        "GEO15MICRO_003"
+      ]
+    },
+    {
+      "id": "geo15-core-2",
+      "order": 2,
+      "title": "Đường cao và trực tâm",
+      "kntt_lessons": [
+        "Lớp 7"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-duong-cao",
+        "truc-tam"
+      ],
+      "prerequisites": [
+        "duong-vuong-goc"
+      ],
+      "micro_practice": [
+        "GEO15MICRO_004",
+        "GEO15MICRO_005",
+        "GEO15MICRO_006"
+      ]
+    },
+    {
+      "id": "geo15-core-3",
+      "order": 3,
+      "title": "Phân giác và tâm nội tiếp",
+      "kntt_lessons": [
+        "Lớp 7"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-phan-giac",
+        "tam-noi-tiep"
+      ],
+      "prerequisites": [
+        "tia-phan-giac"
+      ],
+      "micro_practice": [
+        "GEO15MICRO_007",
+        "GEO15MICRO_008",
+        "GEO15MICRO_009"
+      ]
+    },
+    {
+      "id": "geo15-core-4",
+      "order": 4,
+      "title": "Trung trực và tâm ngoại tiếp",
+      "kntt_lessons": [
+        "Lớp 7"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-biet-trung-truc",
+        "tam-ngoai-tiep"
+      ],
+      "prerequisites": [
+        "tinh-chat-duong-trung-truc"
+      ],
+      "micro_practice": [
+        "GEO15MICRO_010",
+        "GEO15MICRO_011",
+        "GEO15MICRO_012"
+      ]
+    },
+    {
+      "id": "geo15-core-5",
+      "order": 5,
+      "title": "Bốn tâm và tính đồng quy",
+      "kntt_lessons": [
+        "Lớp 7"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "phan-biet-bon-tam",
+        "dong-quy-bon-duong-dac-biet"
+      ],
+      "prerequisites": [
+        "trong-tam",
+        "truc-tam",
+        "tam-noi-tiep",
+        "tam-ngoai-tiep"
+      ],
+      "micro_practice": [
+        "GEO15MICRO_013",
+        "GEO15MICRO_014",
+        "GEO15MICRO_015"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "geo15-support-1",
+      "layer": "Core-Support",
+      "title": "Vị trí trực tâm/tâm ngoại tiếp và tính chất cách đều",
+      "gates_core": false
+    },
+    {
+      "id": "geo15-ent10-1",
+      "layer": "Entrance10",
+      "title": "Khai thác các tâm trong hình học tổng hợp",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/15-duong-dong-quy-micro-v1.json",
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json"
+}

@@ -1,0 +1,134 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "SYN20-V1",
+  "topic": {
+    "id": "20-hinh-hoc-tong-hop",
+    "title": "Hình học tổng hợp, đo lường và hình khối"
+  },
+  "session_size": 10,
+  "question_count": 195,
+  "skill_labels": {
+    "nhan-dang-cong-cu": "Nhận dạng công cụ",
+    "song-song-dong-dang": "Song song → đồng dạng",
+    "hai-goc-vuong-noi-tiep": "Hai góc vuông → nội tiếp",
+    "noi-tiep-dong-dang": "Nội tiếp → đồng dạng",
+    "dong-dang-he-thuc-tich": "Đồng dạng → hệ thức tích",
+    "tam-giac-vuong-dong-dang": "Đồng dạng trong tam giác vuông",
+    "tiep-tuyen-chung-minh": "Chứng minh tiếp tuyến",
+    "chuoi-suy-luan": "Chuỗi suy luận hình học",
+    "the-tich-hop-chu-nhat": "Thể tích hình hộp chữ nhật",
+    "the-tich-lang-tru": "Thể tích lăng trụ đứng",
+    "dien-tich-day": "Diện tích đáy",
+    "doi-don-vi-do-luong": "Đổi đơn vị đo lường",
+    "bai-toan-tong-hop": "Bài toán tổng hợp",
+    "nhan-biet-tam-giac-deu": "Nhận biết tam giác đều",
+    "nhan-biet-hinh-vuong": "Nhận biết hình vuông",
+    "nhan-biet-luc-giac-deu": "Nhận biết lục giác đều",
+    "nhan-biet-tu-giac-dac-biet": "Nhận biết tứ giác đặc biệt",
+    "chu-vi-tu-giac": "Chu vi tứ giác",
+    "dien-tich-tu-giac": "Diện tích tứ giác",
+    "do-luong-thuc-te": "Đo lường thực tế",
+    "truc-doi-xung": "Trục đối xứng",
+    "tam-doi-xung": "Tâm đối xứng",
+    "nhan-biet-hinh-hop-lap-phuong": "Nhận biết hình hộp chữ nhật và lập phương",
+    "dien-tich-xung-quanh-hop-chu-nhat": "Diện tích xung quanh hình hộp chữ nhật",
+    "nhan-biet-lang-tru-dung": "Nhận biết lăng trụ đứng",
+    "dien-tich-xung-quanh-lang-tru": "Diện tích xung quanh lăng trụ đứng",
+    "nhan-biet-hinh-chop-deu": "Nhận biết hình chóp đều",
+    "dien-tich-xung-quanh-hinh-chop": "Diện tích xung quanh hình chóp đều",
+    "the-tich-hinh-chop": "Thể tích hình chóp",
+    "nhan-biet-hinh-tru": "Nhận biết hình trụ",
+    "dien-tich-xung-quanh-hinh-tru": "Diện tích xung quanh hình trụ",
+    "the-tich-hinh-tru": "Thể tích hình trụ",
+    "nhan-biet-hinh-non": "Nhận biết hình nón",
+    "dien-tich-xung-quanh-hinh-non": "Diện tích xung quanh hình nón",
+    "the-tich-hinh-non": "Thể tích hình nón",
+    "nhan-biet-hinh-cau": "Nhận biết hình cầu",
+    "dien-tich-mat-cau": "Diện tích mặt cầu",
+    "the-tich-hinh-cau": "Thể tích hình cầu"
+  },
+  "skill_groups": [
+    {
+      "id": "nhan-dang",
+      "label": "A. Nhận dạng cấu hình và công cụ",
+      "skills": [
+        "nhan-dang-cong-cu",
+        "song-song-dong-dang",
+        "hai-goc-vuong-noi-tiep"
+      ]
+    },
+    {
+      "id": "cau-noi",
+      "label": "B. Các cầu nối suy luận",
+      "skills": [
+        "noi-tiep-dong-dang",
+        "dong-dang-he-thuc-tich",
+        "tam-giac-vuong-dong-dang",
+        "tiep-tuyen-chung-minh"
+      ]
+    },
+    {
+      "id": "chien-luoc",
+      "label": "C. Chuỗi suy luận tổng hợp",
+      "skills": [
+        "chuoi-suy-luan",
+        "bai-toan-tong-hop"
+      ]
+    },
+    {
+      "id": "do-luong",
+      "label": "D. Đo lường và hình khối",
+      "skills": [
+        "the-tich-hop-chu-nhat",
+        "the-tich-lang-tru",
+        "dien-tich-day",
+        "doi-don-vi-do-luong"
+      ]
+    },
+    {
+      "id": "kntt-core-hinh-phang",
+      "label": "E. KNTT Core – hình phẳng và đối xứng",
+      "skills": [
+        "nhan-biet-tam-giac-deu",
+        "nhan-biet-hinh-vuong",
+        "nhan-biet-luc-giac-deu",
+        "nhan-biet-tu-giac-dac-biet",
+        "chu-vi-tu-giac",
+        "dien-tich-tu-giac",
+        "do-luong-thuc-te",
+        "truc-doi-xung",
+        "tam-doi-xung"
+      ]
+    },
+    {
+      "id": "kntt-core-hinh-khoi",
+      "label": "F. KNTT Core – hình khối",
+      "skills": [
+        "nhan-biet-hinh-hop-lap-phuong",
+        "dien-tich-xung-quanh-hop-chu-nhat",
+        "nhan-biet-lang-tru-dung",
+        "dien-tich-xung-quanh-lang-tru",
+        "nhan-biet-hinh-chop-deu",
+        "dien-tich-xung-quanh-hinh-chop",
+        "the-tich-hinh-chop",
+        "nhan-biet-hinh-tru",
+        "dien-tich-xung-quanh-hinh-tru",
+        "the-tich-hinh-tru",
+        "nhan-biet-hinh-non",
+        "dien-tich-xung-quanh-hinh-non",
+        "the-tich-hinh-non",
+        "nhan-biet-hinh-cau",
+        "dien-tich-mat-cau",
+        "the-tich-hinh-cau"
+      ]
+    }
+  ],
+  "sources": [
+    "20-hinh-hoc-tong-hop-v1-01.json",
+    "20-hinh-hoc-tong-hop-v1-02.json",
+    "20-hinh-hoc-tong-hop-v1-03.json",
+    "20-hinh-hoc-tong-hop-v1-04.json",
+    "20-hinh-hoc-tong-hop-v1-05.json"
+  ]
+}

@@ -1,0 +1,691 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "ID05-MICRO-V1",
+  "topic": {
+    "id": "05-7-hang-dang-thuc",
+    "title": "7 Hằng đẳng thức đáng nhớ"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "ID05MICRO_001",
+      "card_id": "id05-core-1",
+      "micro_role": "base",
+      "question": "Khai triển \\((x+3)^2\\).",
+      "options": [
+        "\\(x^2+6x+9\\)",
+        "\\(x^2+3x+9\\)",
+        "\\(x^2+9\\)",
+        "\\(x^2+6x+6\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "binh-phuong-tong"
+        ],
+        "type": "binh-phuong-tong",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "\\((a+b)^2=a^2+2ab+b^2\\), nên \\((x+3)^2=x^2+6x+9\\).",
+      "hints": [
+        "Nhớ hạng tử giữa là \\(2ab\\).",
+        "Ở đây \\(2ab=2\\cdot x\\cdot3=6x\\)."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "quen-nhan-2-trong-2ab",
+          "signal_weight": 2,
+          "feedback_hint": "Hạng tử giữa phải là 2ab."
+        },
+        "2": {
+          "signal": "thieu-hang-tu-2ab",
+          "signal_weight": 2,
+          "feedback_hint": "Bình phương một tổng có hạng tử giữa 2ab."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_002",
+      "card_id": "id05-core-1",
+      "micro_role": "trap",
+      "question": "Khai triển \\((2x-1)^2\\).",
+      "options": [
+        "\\(4x^2-4x+1\\)",
+        "\\(4x^2+4x+1\\)",
+        "\\(2x^2-4x+1\\)",
+        "\\(4x^2-2x+1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "binh-phuong-hieu"
+        ],
+        "type": "binh-phuong-hieu",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\((2x-1)^2=(2x)^2-2(2x)(1)+1=4x^2-4x+1\\).",
+      "hints": [
+        "Bình phương hiệu có dấu âm ở hạng tử giữa.",
+        "Đừng quên bình phương hệ số 2."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "binh-phuong-hieu-sai-dau",
+          "signal_weight": 2,
+          "feedback_hint": "Hạng tử giữa phải mang dấu âm."
+        },
+        "2": {
+          "signal": "binh-phuong-he-so-sai",
+          "signal_weight": 2,
+          "feedback_hint": "(2x)^2 bằng 4x^2."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_003",
+      "card_id": "id05-core-1",
+      "micro_role": "apply",
+      "question": "Đa thức \\(x^2-10x+25\\) bằng:",
+      "options": [
+        "\\((x-5)^2\\)",
+        "\\((x+5)^2\\)",
+        "\\((x-10)^2\\)",
+        "\\((x-25)^2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "binh-phuong-hoan-chinh"
+        ],
+        "type": "binh-phuong-hoan-chinh",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Vì \\(25=5^2\\) và \\(-10x=-2\\cdot x\\cdot5\\), nên đây là \\((x-5)^2\\).",
+      "hints": [
+        "So sánh với dạng a^2-2ab+b^2.",
+        "Từ 25, thử b=5."
+      ],
+      "supporting_skills": [
+        "nhan-dang-hdt"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_004",
+      "card_id": "id05-core-2",
+      "micro_role": "base",
+      "question": "Phân tích \\(x^2-16\\) thành tích.",
+      "options": [
+        "\\((x-4)(x+4)\\)",
+        "\\((x-8)(x+8)\\)",
+        "\\((x-4)^2\\)",
+        "\\((x+4)^2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "hieu-hai-binh-phuong"
+        ],
+        "type": "hieu-hai-binh-phuong",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "\\(x^2-16=x^2-4^2=(x-4)(x+4)\\).",
+      "hints": [
+        "Nhận dạng a^2-b^2.",
+        "16=4^2."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_005",
+      "card_id": "id05-core-2",
+      "micro_role": "trap",
+      "question": "Phân tích \\(4x^2-9y^2\\) thành tích.",
+      "options": [
+        "\\((2x-3y)(2x+3y)\\)",
+        "\\((4x-9y)(4x+9y)\\)",
+        "\\((2x-3y)^2\\)",
+        "\\((4x-3y)(4x+3y)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "hieu-hai-binh-phuong"
+        ],
+        "type": "hieu-hai-binh-phuong",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(4x^2=(2x)^2\\), \\(9y^2=(3y)^2\\), rồi dùng hiệu hai bình phương.",
+      "hints": [
+        "Lấy căn bậc hai của từng hạng tử bình phương.",
+        "Dạng tích là (a-b)(a+b)."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "hieu-hai-binh-phuong-quen-can-he-so",
+          "signal_weight": 2,
+          "feedback_hint": "Cần lấy căn bậc hai của 4 và 9 trước."
+        },
+        "2": {
+          "signal": "nham-hieu-binh-phuong-voi-binh-phuong-hieu",
+          "signal_weight": 2,
+          "feedback_hint": "Hiệu hai bình phương tạo hai nhân tử đối dấu."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_006",
+      "card_id": "id05-core-2",
+      "micro_role": "apply",
+      "question": "Tính nhanh \\(101\\cdot99\\).",
+      "options": [
+        "9999",
+        "10000",
+        "9801",
+        "10201"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "hieu-hai-binh-phuong"
+        ],
+        "type": "tinh-nhanh-hdt",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(101\\cdot99=(100+1)(100-1)=100^2-1=9999\\).",
+      "hints": [
+        "Hai thừa số đối xứng quanh 100.",
+        "Dùng (a+b)(a-b)=a^2-b^2."
+      ],
+      "supporting_skills": [
+        "tinh-nhanh-hdt"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_007",
+      "card_id": "id05-core-3",
+      "micro_role": "base",
+      "question": "Khai triển \\((x+1)^3\\).",
+      "options": [
+        "\\(x^3+3x^2+3x+1\\)",
+        "\\(x^3+x^2+x+1\\)",
+        "\\(x^3+3x+1\\)",
+        "\\(x^3+1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "lap-phuong-tong"
+        ],
+        "type": "lap-phuong-tong",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "\\((a+b)^3=a^3+3a^2b+3ab^2+b^3\\).",
+      "hints": [
+        "Có bốn hạng tử.",
+        "Hai hạng tử giữa đều có hệ số 3."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "lap-phuong-thieu-he-so-3",
+          "signal_weight": 2,
+          "feedback_hint": "Hai hạng tử giữa đều cần hệ số 3."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_008",
+      "card_id": "id05-core-3",
+      "micro_role": "trap",
+      "question": "Khai triển \\((x-2)^3\\).",
+      "options": [
+        "\\(x^3-6x^2+12x-8\\)",
+        "\\(x^3-6x^2-12x-8\\)",
+        "\\(x^3-6x^2+6x-8\\)",
+        "\\(x^3-2x^2+4x-8\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "lap-phuong-hieu"
+        ],
+        "type": "lap-phuong-hieu",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\((x-2)^3=x^3-6x^2+12x-8\\).",
+      "hints": [
+        "Dấu lần lượt là +, −, +, −.",
+        "Hạng tử thứ ba là 3ab^2 nên có 2^2."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "lap-phuong-hieu-sai-dau",
+          "signal_weight": 2,
+          "feedback_hint": "Dấu của hạng tử 3ab^2 phải dương."
+        },
+        "2": {
+          "signal": "lap-phuong-sai-he-so-3ab2",
+          "signal_weight": 2,
+          "feedback_hint": "Hạng tử 3ab^2 cần bình phương của 2."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_009",
+      "card_id": "id05-core-3",
+      "micro_role": "apply",
+      "question": "Đa thức \\(x^3-6x^2+12x-8\\) bằng:",
+      "options": [
+        "\\((x-2)^3\\)",
+        "\\((x+2)^3\\)",
+        "\\((x-4)^3\\)",
+        "\\(x^3-2^3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "nhan-dang-lap-phuong"
+        ],
+        "type": "nhan-dang-lap-phuong",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "So sánh với lập phương một hiệu với b=2.",
+      "hints": [
+        "Hạng tử tự do -8 gợi ý b=2.",
+        "Kiểm tra hạng tử -3x^2b."
+      ],
+      "supporting_skills": [
+        "lap-phuong-hieu"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_010",
+      "card_id": "id05-core-4",
+      "micro_role": "base",
+      "question": "Phân tích \\(x^3+8\\) thành tích.",
+      "options": [
+        "\\((x+2)(x^2-2x+4)\\)",
+        "\\((x+2)(x^2+2x+4)\\)",
+        "\\((x-2)(x^2+2x+4)\\)",
+        "\\((x+2)^3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "tong-hai-lap-phuong"
+        ],
+        "type": "tong-hai-lap-phuong",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "\\(x^3+2^3=(x+2)(x^2-2x+4)\\).",
+      "hints": [
+        "Nhân tử đầu là tổng.",
+        "Trong nhân tử bậc hai, hạng tử giữa mang dấu âm."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "tong-lap-phuong-sai-dau",
+          "signal_weight": 2,
+          "feedback_hint": "Tổng hai lập phương có hạng tử giữa âm trong nhân tử bậc hai."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_011",
+      "card_id": "id05-core-4",
+      "micro_role": "trap",
+      "question": "Phân tích \\(x^3-27\\) thành tích.",
+      "options": [
+        "\\((x-3)(x^2+3x+9)\\)",
+        "\\((x-3)(x^2-3x+9)\\)",
+        "\\((x+3)(x^2-3x+9)\\)",
+        "\\((x-3)^3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "hieu-hai-lap-phuong"
+        ],
+        "type": "hieu-hai-lap-phuong",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(x^3-3^3=(x-3)(x^2+3x+9)\\).",
+      "hints": [
+        "Nhân tử đầu là (a-b).",
+        "Hạng tử giữa trong nhân tử bậc hai là +ab."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "hieu-lap-phuong-sai-dau",
+          "signal_weight": 2,
+          "feedback_hint": "Với hiệu hai lập phương, hạng tử giữa của nhân tử bậc hai là dương."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_012",
+      "card_id": "id05-core-4",
+      "micro_role": "apply",
+      "question": "Rút gọn \\((x-1)(x^2+x+1)-x^3\\).",
+      "options": [
+        "\\(-1\\)",
+        "1",
+        "0",
+        "\\(-2x^3-1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "hieu-hai-lap-phuong"
+        ],
+        "type": "hieu-hai-lap-phuong",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\((x-1)(x^2+x+1)=x^3-1\\), nên kết quả bằng -1.",
+      "hints": [
+        "Nhận dạng hiệu hai lập phương theo chiều ngược.",
+        "Thay tích đầu bằng x^3-1."
+      ],
+      "supporting_skills": [
+        "rut-gon-hdt"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_013",
+      "card_id": "id05-core-5",
+      "micro_role": "base",
+      "question": "Tính nhanh \\(99^2\\).",
+      "options": [
+        "9801",
+        "9900",
+        "10001",
+        "9604"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "tinh-nhanh-hdt"
+        ],
+        "type": "tinh-nhanh-hdt",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "\\(99^2=(100-1)^2=10000-200+1=9801\\).",
+      "hints": [
+        "Viết 99 thành 100-1.",
+        "Dùng bình phương một hiệu."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_014",
+      "card_id": "id05-core-5",
+      "micro_role": "trap",
+      "question": "Rút gọn \\((x+2)^2-(x-2)^2\\).",
+      "options": [
+        "\\(8x\\)",
+        "0",
+        "\\(4x\\)",
+        "\\(2x^2+8\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "rut-gon-hdt"
+        ],
+        "type": "rut-gon-hdt",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dùng hiệu hai bình phương: [(x+2)-(x-2)][(x+2)+(x-2)]=4·2x=8x.",
+      "hints": [
+        "Đây là hiệu của hai bình phương.",
+        "Tính riêng hiệu và tổng của hai biểu thức."
+      ],
+      "supporting_skills": [
+        "hieu-hai-binh-phuong"
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "bo-ngoac-tru-sau-hdt-sai",
+          "signal_weight": 2,
+          "feedback_hint": "Nếu khai triển, dấu trừ phải đổi dấu toàn bộ bình phương thứ hai."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ID05MICRO_015",
+      "card_id": "id05-core-5",
+      "micro_role": "apply",
+      "question": "Biểu thức nào bằng \\(4x^2+12x+9\\)?",
+      "options": [
+        "\\((2x+3)^2\\)",
+        "\\((2x-3)^2\\)",
+        "\\((4x+3)^2\\)",
+        "\\((2x+9)^2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "7-hang-dang-thuc",
+        "skill": [
+          "nhan-dang-hdt"
+        ],
+        "type": "nhan-dang-hdt",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(4x^2=(2x)^2\\), 9=3^2 và 12x=2·2x·3.",
+      "hints": [
+        "Kiểm tra hai hạng tử đầu-cuối có phải bình phương không.",
+        "Hạng tử giữa phải bằng hai lần tích hai căn."
+      ],
+      "supporting_skills": [
+        "binh-phuong-hoan-chinh"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}
