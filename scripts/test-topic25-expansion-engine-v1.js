@@ -15,7 +15,13 @@ for(const id of catalog.representative_ids)check(ids.has(id),"representative id 
 const original=read(folder+"bai-toan-kinh-dien.md");
 for(const a of catalog.anchors){
   check(a.topic_ids.length>0&&a.skill_tags.length>0,a.id+" needs topic/skill tags");
-  check(a.independent_math_review==="pending_Gemini",a.id+" must not fake external approval");
+  const acceptedReviewStates=new Set(["pending_Gemini","gemini_R2_reported_correct_from_listed_overview_or_deep_source","gemini_R2_claimed_correct_but_source_file_not_listed"]);
+  check(acceptedReviewStates.has(a.independent_math_review),a.id+" must use source-qualified independent review status");
+  if(a.independent_math_review!=="pending_Gemini"){
+    const review=read("review-packets/topic25/REVIEW_INTEGRATION_2026-09-26.md");
+    check(review.includes("17/23") && review.includes("không ký duyệt") && review.includes("04b275cb5870a2fbd8f540333b96529285277883"),a.id+" must have source-locked limited review evidence");
+    if(a.id==="A25-011")check(a.independent_math_review==="gemini_R2_claimed_correct_but_source_file_not_listed",a.id+" unlisted file must remain qualified");
+  }
   for(const x of a.related_anchor_ids)check(ids.has(x),a.id+" broken relation "+x);
   if(a.source_uri){const hash=a.source_uri.split("#")[1];check(original.includes('id="'+hash+'"'),a.id+" missing stable anchor "+hash);}
   if(a.deep_dive_uri){
