@@ -6,9 +6,9 @@ const prompt=read("docs/assets/javascripts/firebase-gemini-v1.js");
 const mk=read("mkdocs.yml");
 const ok=(v,m)=>{if(!v)throw Error(m)};
 ok(ui.includes("isReadingPage")&&ui.includes("(?:roadmap-toan-thcs\\/)?kien-thuc"),"explicit teaching-route gate");
-const routeSource=ui.match(/const isReadingPage = \\(\\) => \\{[\\s\\S]*?\\n  \\};/)?.[0];
+const routeSource=ui.match(/const isReadingPage = \(\) => \{[\s\S]*?\n  \};/)?.[0];
 ok(routeSource,"route function remains independently testable");
-const mayMount = pathname => require("vm").runInNewContext(routeSource+"\\nisReadingPage();",{location:{pathname}});
+const mayMount = pathname => require("vm").runInNewContext(routeSource+"\nisReadingPage();",{location:{pathname}});
 for(const pathname of [
   "/roadmap-toan-thcs/kien-thuc/04-bieu-thuc-dai-so/",
   "/roadmap-toan-thcs/kien-thuc/25-tong-hop-on-thi-10/",
