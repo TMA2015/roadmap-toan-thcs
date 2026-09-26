@@ -515,6 +515,8 @@ Chuyên đề 25 từ nay tách rõ **ba đường luyện khác nhau** để kh
 
 [**Bộ 10 bài toán kinh điển**](bai-toan-kinh-dien.md) kết nối biểu thức căn và câu hỏi phụ, Viète có tham số, hệ phương trình thực tế, năng suất, đồng dạng, tiếp tuyến–cát tuyến, trực tâm và cực trị.
 
+[**Mở thư viện bài mỏ neo**](kho-bai-mo-neo.md): luôn giữ 10 bài tiêu biểu để định hướng, đồng thời tiếp nhận thêm các bài mới có ID, dạng tư duy và liên kết kiến thức riêng. Hiện đã có bài thứ 11 và các bản giải sâu có hình học chính xác.
+
 Mỗi bài yêu cầu học sinh nhận ra **dấu hiệu → công cụ → chuỗi suy luận → cách biến đổi bài**, rồi tự giải lại biến thể trước khi chuyển sang đề tổng hợp.
 
 ### C. Đề luyện hoàn chỉnh – làm bài đủ thời gian
