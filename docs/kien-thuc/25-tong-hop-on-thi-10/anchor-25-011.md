@@ -42,7 +42,7 @@ Do đó
 x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=4+6=\boxed{10}.
 \]
 
-## Khái quát và tư duy kiểm tra
+## Tư duy tổng kết và khái quát
 
 Với \((d_k):y=2x+k\), phương trình hoành độ là \(x^2-2x-k=0\), có \(\Delta=4+4k\). Vậy:
 \[
@@ -50,7 +50,7 @@ k>-1:\ 2\ \text{giao điểm};\quad k=-1:\ 1\ \text{giao điểm (tiếp xúc)};
 \]
 Trường hợp \(k=-1\) cho \(x=1\) và điểm tiếp xúc \((1;1)\). Viète vẫn cung cấp tổng/tích nghiệm khi có hai nghiệm kể cả trùng, nhưng yêu cầu “hai giao điểm phân biệt” buộc \(\Delta>0\).
 
-## Tự luyện
+## Biến thể tự luyện
 
 1. Thay \(y=x+2\). **Đối chiếu:** \((2;4),(-1;1)\).
 2. Tìm \(k\) để \((P)\) và \(y=2x+k\) tiếp xúc. **Đối chiếu:** \(k=-1\).
