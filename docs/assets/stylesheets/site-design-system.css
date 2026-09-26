@@ -171,20 +171,18 @@ body{letter-spacing:-.008em}
 .home-style-preview-title{font-size:.7rem;line-height:1.3;font-weight:900;color:#2b46a5}
 .home-style-preview-orbit{display:grid;place-items:center;color:#fff;font-weight:900;font-size:1.6rem;background:#2f4bb9;border-radius:50%;width:3.2rem;height:3.2rem;box-shadow:0 0 0 .6rem #dbe8ff}
 .home-style-preview-chips{position:absolute;bottom:.4rem;font-size:.45rem;color:#526b91}
-.home-style-preview-playful{background:#fdf0e4 url('../images/study-room-pastel.svg') center/cover no-repeat}
-.home-style-preview-playful img{width:100%;height:100%;object-fit:contain;object-position:right bottom}
+.home-style-preview-playful{background:#f8e9e1}
+.home-style-preview-playful img{width:100%;height:100%;object-fit:cover;object-position:center}
 .home-style-card strong{font-size:.82rem}.home-style-card small{font-size:.64rem;line-height:1.5;color:#647086;min-height:2.9em}
 .home-style-cta{display:block;text-align:center;background:#3657d1;border-radius:.55rem;color:#fff;font-size:.65rem;font-weight:850;padding:.45rem}
 .home-style-card-playful .home-style-cta{background:#f17f30}
 .home-style-panel .home-style-footer{font-size:.58rem;margin:.7rem 0 0}
 .home-portal[data-home-style="playful"] .home-hero{background:linear-gradient(117deg,#fff8ed 0%,#fffaee 44%,#e5f5ff 100%);border-color:#f4d6a4}
 .home-portal[data-home-style="playful"] .home-hero h1 span{color:#ed793a}
-/* One fixed-ratio image surface: sleeping mascot over the study-room background;
-   the approved awake illustration already includes its own background and greeting. */
-.study-art-stage{display:block;position:relative;width:100%;aspect-ratio:520/276;border-radius:.75rem;overflow:hidden;background:#f8e9e1 url('../images/study-room-pastel.svg') center/cover no-repeat}
-.study-art-image{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:contain;object-position:right bottom}
-.study-scene.is-awake .study-art-stage{background:#f8e9e1}
-.study-scene.is-awake .study-art-image{object-fit:cover;object-position:center}
+/* One stable picture surface for both owner-approved full-room study illustrations. */
+.study-art-stage{display:block;position:relative;width:100%;aspect-ratio:520/276;border-radius:.75rem;overflow:hidden;background:#f8e9e1}
+.study-art-image{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+
 @media(max-width:42rem){.home-style-cards{grid-template-columns:minmax(0,1fr)}.home-style-preview{height:7.5rem}.home-style-panel{max-height:93vh;padding:1rem}.home-style-bar{justify-content:center}.home-style-bar>span{width:100%;text-align:center}}
 @media(prefers-reduced-motion:reduce){.study-art-image{transition:none!important}}
 
