@@ -30,7 +30,7 @@ Cho tam giác nhọn \(ABC\). Các đường cao \(BE\perp AC\) (\(E\in AC\)) v�
 
 1. Chứng minh bốn điểm \(B,E,C,F\) cùng thuộc một đường tròn. (1,0 điểm)
 2. Chứng minh bốn điểm \(A,E,H,F\) cùng thuộc một đường tròn. (1,0 điểm)
-3. Suy ra \(\angle BFE=\angle BCE\) và giải thích vì sao hai góc đó bằng nhau. (1,0 điểm)
+3. Suy ra \(\angle BEF=\angle BCF\) và giải thích vì sao hai góc đó bằng nhau. (1,0 điểm)
 
 ## Bài V. Thống kê – xác suất (1,0 điểm)
 
