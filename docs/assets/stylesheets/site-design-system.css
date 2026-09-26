@@ -381,3 +381,14 @@ body{letter-spacing:-.008em}
     margin-top:1.15rem
   }
 }
+
+/* Capstone exam choices: scan the three complete self-authored exams, not a wall of links. */
+.capstone-exam-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.66rem;margin:1rem 0 1.1rem}
+.capstone-exam-link{display:flex;flex-direction:column;gap:.5rem;min-height:8rem;padding:1rem;border:1px solid var(--roadmap-line);border-radius:.8rem;background:var(--roadmap-surface);text-decoration:none!important;color:var(--roadmap-ink)!important;box-shadow:0 .4rem 1.25rem rgba(19,40,90,.04);transition:transform .15s ease,border-color .15s ease}
+.capstone-exam-link:hover{transform:translateY(-2px);border-color:var(--roadmap-indigo)}
+.capstone-exam-link strong{font-size:.82rem;font-weight:830;line-height:1.36;color:var(--roadmap-ink)}
+.capstone-exam-link span{font-size:.65rem;line-height:1.5;flex:1;color:var(--roadmap-muted)}
+.capstone-exam-link small{font-size:.65rem;font-weight:780;color:var(--roadmap-indigo)}
+@media(max-width:70rem){.capstone-exam-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:38rem){.capstone-exam-grid{grid-template-columns:1fr}.capstone-exam-link{min-height:0;padding:.8rem}}
+@media(prefers-reduced-motion:reduce){.capstone-exam-link{transition:none}.capstone-exam-link:hover{transform:none}}
