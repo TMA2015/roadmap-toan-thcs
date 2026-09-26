@@ -56,7 +56,7 @@ Cho đường thẳng \(y=2x-1\). Kiểm tra điểm \(M(3;5)\) có thuộc đư
 ### 25-C2
 Hai đường thẳng
 \[
-y=x+2,qquad y=-x+6
+y=x+2,\qquad y=-x+6
 \]
 cắt nhau tại điểm nào?
 
