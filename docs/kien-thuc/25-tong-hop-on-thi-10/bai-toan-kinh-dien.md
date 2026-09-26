@@ -311,7 +311,7 @@ Suy ra \(B,E,C,F\) cùng nằm trên đường tròn đường kính \(BC\).
 \]
 Suy ra \(A,E,H,F\) cùng nằm trên đường tròn đường kính \(AH\).
 
-**Vận dụng:** vì \(B,E,C,F\) nội tiếp, \(\angle BFE=\angle BCE\) (hai góc nội tiếp cùng chắn dây \(BE\)).
+**Vận dụng:** vì \(B,E,C,F\) nội tiếp, \(\angle BEF=\angle BCF\) (hai góc nội tiếp cùng chắn dây \(BF\)).
 
 **Bẫy:** nhìn hình đoán tứ giác nội tiếp nhưng không chỉ ra cặp góc vuông hoặc góc bù nhau.
 
