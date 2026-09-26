@@ -392,3 +392,63 @@ body{letter-spacing:-.008em}
 @media(max-width:70rem){.capstone-exam-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:38rem){.capstone-exam-grid{grid-template-columns:1fr}.capstone-exam-link{min-height:0;padding:.8rem}}
 @media(prefers-reduced-motion:reduce){.capstone-exam-link{transition:none}.capstone-exam-link:hover{transform:none}}
+
+/* Topic25 expandable anchor library and native, opt-in self-marked examination. */
+.anchor-library-intro{border:1px solid var(--roadmap-line);border-left:4px solid var(--roadmap-indigo);padding:.7rem 1rem;border-radius:.65rem;background:var(--roadmap-soft);margin:1rem 0}
+.anchor-browser{margin:1.1rem 0 1.7rem}
+.anchor-mode{display:flex;flex-wrap:wrap;gap:.5rem;margin:.65rem 0}
+.anchor-tab,.exam-btn{font:inherit;cursor:pointer;border-radius:.5rem;transition:filter .15s ease,transform .15s ease}
+.anchor-tab{border:1px solid var(--roadmap-line);padding:.5rem .75rem;color:var(--roadmap-ink);background:var(--roadmap-surface);font-size:.76rem;font-weight:720}
+.anchor-tab[aria-pressed="true"]{border-color:var(--roadmap-indigo);background:var(--roadmap-indigo);color:#fff}
+.anchor-filters{display:flex;align-items:center;gap:.55rem;margin:.8rem 0;flex-wrap:wrap}
+.anchor-search,.anchor-strand{box-sizing:border-box;border:1px solid var(--roadmap-line);background:var(--roadmap-surface);color:var(--roadmap-ink);border-radius:.5rem;font:inherit;font-size:.76rem;padding:.55rem .7rem}
+.anchor-search{flex:1 1 15rem;min-width:0}
+.anchor-strand{flex:0 1 12rem}
+.anchor-count{color:var(--roadmap-muted);font-size:.72rem}
+.anchor-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem}
+.anchor-result{min-width:0;border:1px solid var(--roadmap-line);border-radius:.75rem;padding:.85rem .95rem;background:var(--roadmap-surface);box-shadow:var(--roadmap-shadow)}
+.anchor-result-heading{display:flex;gap:.35rem;align-items:center;justify-content:space-between}
+.anchor-result-heading strong{font-size:.72rem;color:var(--roadmap-indigo)}
+.anchor-result-heading span{border-radius:999px;background:var(--roadmap-soft);font-size:.62rem;padding:.2rem .45rem;color:var(--roadmap-muted)}
+.md-typeset .anchor-result h3{margin:.55rem 0 .4rem;padding:0;border:0;font-size:.85rem;line-height:1.38}
+.anchor-tags,.anchor-depth{font-size:.68rem;margin:.3rem 0;color:var(--roadmap-muted)}
+.anchor-link{display:inline-block;margin-top:.55rem;font-size:.72rem;font-weight:760}
+.exam-engine{margin:1.15rem 0 1.8rem;border:1px solid var(--roadmap-line);background:var(--roadmap-surface);border-radius:.9rem;overflow:hidden;box-shadow:var(--roadmap-shadow)}
+.exam-engine-heading{padding:.95rem 1rem;background:linear-gradient(100deg,var(--roadmap-soft),var(--roadmap-surface));border-bottom:1px solid var(--roadmap-line)}
+.md-typeset .exam-engine-heading h2{margin:0 0 .22rem;padding:0;border:0;background:none;font-size:1rem;line-height:1.4;color:var(--roadmap-ink)}
+.exam-engine-heading small{font-size:.69rem;line-height:1.5;color:var(--roadmap-muted)}
+.exam-engine-body{padding:.95rem 1rem}
+.exam-engine-body p{font-size:.76rem;line-height:1.64}
+.exam-caution{color:var(--roadmap-muted);font-size:.69rem!important}
+.exam-message{background:var(--roadmap-soft);border-radius:.55rem;padding:.7rem .8rem;font-weight:620}
+.exam-btn{border:1px solid var(--roadmap-line);padding:.57rem .85rem;font-size:.74rem;font-weight:750}
+.exam-primary{border-color:var(--roadmap-indigo);background:var(--roadmap-indigo);color:#fff}
+.exam-secondary{background:var(--roadmap-surface);color:var(--roadmap-indigo)}
+.exam-btn:hover:not(:disabled){filter:brightness(1.06);transform:translateY(-1px)}
+.exam-btn:disabled{opacity:.46;cursor:not-allowed}
+.exam-status-bar{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;padding:.65rem .8rem;background:var(--roadmap-soft);border-radius:.55rem;font-size:.72rem}
+.exam-timer{font-size:1.05rem;font-variant-numeric:tabular-nums;color:var(--roadmap-indigo)}
+.exam-progress{margin-left:auto;font-weight:700}
+.exam-answers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;margin:.85rem 0}
+.exam-answer-item{display:flex;flex-direction:column;gap:.3rem;min-width:0;border:1px solid var(--roadmap-line);border-radius:.55rem;padding:.65rem}
+.exam-answer-item strong{font-size:.7rem}
+.exam-answer-item textarea{box-sizing:border-box;width:100%;min-height:3.6rem;resize:vertical;font:inherit;font-size:.7rem;line-height:1.45;color:var(--roadmap-ink);background:var(--roadmap-surface);border:1px solid var(--roadmap-line);border-radius:.35rem;padding:.5rem}
+.exam-footer{display:flex;justify-content:flex-end;gap:.5rem;margin-top:.8rem}
+.exam-solution-link{display:inline-block;font-size:.78rem;font-weight:730;margin:.55rem .8rem .85rem 0}
+.exam-score{display:block;border-radius:.5rem;padding:.65rem .7rem;margin:.8rem 0;background:var(--roadmap-soft);color:var(--roadmap-indigo);font-size:.9rem}
+.exam-rubric-item{border:1px solid var(--roadmap-line);border-radius:.55rem;padding:.65rem .75rem;margin:.65rem 0;min-width:0}
+.exam-rubric-item legend{padding:0 .3rem;font-size:.75rem;font-weight:760;color:var(--roadmap-ink)}
+.exam-criterion,.exam-attest{display:flex;align-items:flex-start;gap:.55rem;margin:.42rem 0;font-size:.73rem;line-height:1.55}
+.exam-criterion input,.exam-attest input{margin:.28em 0 0;accent-color:var(--roadmap-indigo)}
+.exam-criterion span{flex:1}
+.exam-criterion strong{white-space:nowrap;color:var(--roadmap-indigo);font-size:.68rem}
+.exam-attest{border:1px solid var(--roadmap-line);padding:.65rem;border-radius:.5rem}
+.md-typeset .exam-gap-list h3{font-size:.91rem;margin:1rem 0 .55rem}
+.exam-gap{padding:.65rem 0;border-top:1px solid var(--roadmap-line)}
+.exam-gap strong{font-size:.72rem}
+.exam-gap-links{display:flex;gap:.45rem .8rem;flex-wrap:wrap;margin:.35rem 0}
+.exam-gap-links a{font-size:.68rem}
+.exam-engine button:focus-visible,.anchor-browser :is(button,input,select,a):focus-visible,.exam-engine textarea:focus-visible{outline:2px solid var(--roadmap-indigo);outline-offset:3px}
+@media(max-width:48rem){.anchor-results,.exam-answers{grid-template-columns:1fr}.exam-engine-body{padding:.75rem}.anchor-strand{flex:1 1 10rem}.exam-progress{margin-left:0}}
+@media(prefers-reduced-motion:reduce){.exam-btn,.anchor-tab{transition:none}.exam-btn:hover:not(:disabled){transform:none}}
+@media print{.anchor-browser,.exam-engine,.floating-ai{display:none!important}}

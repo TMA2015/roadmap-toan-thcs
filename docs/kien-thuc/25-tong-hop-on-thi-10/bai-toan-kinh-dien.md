@@ -2,6 +2,9 @@
 
 > **Mục tiêu:** học những bài có cấu trúc điển hình, không phải để học thuộc lời giải mà để nhận ra **dấu hiệu → công cụ → chuỗi suy luận**. Mỗi mẫu dưới đây đều nên được làm lại với số liệu khác sau khi đã hiểu lời giải.
 
+> **10 bài trên trang này là bộ TIÊU BIỂU, không phải toàn bộ kho.** [Mở thư viện bài mỏ neo có thể mở rộng](kho-bai-mo-neo.md) để xem bài bổ sung, tìm theo mạch và vào những bản giải sâu kèm hình hình học.
+
+<a id="anchor-25-001"></a>
 ## 1. Biểu thức căn: điều kiện trước, biến đổi sau
 
 **Bài mẫu**
@@ -45,6 +48,7 @@ Không bắt đầu bằng biến đổi dài. Hãy tìm điều kiện và đ�
 
 ---
 
+<a id="anchor-25-002"></a>
 ## 2. Viète: không cần giải phương trình nếu chỉ hỏi biểu thức đối xứng
 
 **Bài mẫu**
@@ -82,6 +86,7 @@ Khi đề chỉ hỏi tổng, tích hoặc biểu thức đối xứng của hai
 
 ---
 
+<a id="anchor-25-003"></a>
 ## 3. Bài toán thực tế bằng hệ phương trình: đặt ẩn phải gắn đơn vị
 
 **Bài mẫu**
@@ -121,6 +126,7 @@ Một bài hệ thực tế tốt luôn có bước: đặt ẩn có đơn vị 
 
 ---
 
+<a id="anchor-25-004"></a>
 ## 4. Hình học kinh điển: đường cao trong tam giác vuông
 
 **Bài mẫu**
@@ -165,6 +171,7 @@ Bài này không quan trọng ở bộ số \(9,16,25\). Giá trị nằm ở vi
 
 ---
 
+<a id="anchor-25-005"></a>
 ## 5. Tối ưu đại số: biến điều kiện thành bình phương không âm
 
 **Bài mẫu**
@@ -196,7 +203,7 @@ P_{\max}=25.
 
 **Điều cần rút ra**
 
-Khi tổng cố định và cần tối ưu tích, hãy nghĩ tới (\(x-y\)^2\ge0) hoặc bất đẳng thức tương đương trước khi thử số.
+Khi tổng cố định và cần tối ưu tích, hãy nghĩ tới \((x-y)^2\ge0\) hoặc bất đẳng thức tương đương trước khi thử số.
 
 ---
 
@@ -215,6 +222,7 @@ Với mỗi bài:
 
 ---
 
+<a id="anchor-25-006"></a>
 ## 6. Rút gọn căn thức và câu hỏi phụ về số nguyên
 
 **Bài mẫu.** Với \(x=n^2\), \(n\) nguyên không âm, \(n\ne1\), xét
@@ -239,6 +247,7 @@ Cả ba giá trị đều thỏa điều kiện và làm \(P\) nguyên.
 
 **Biến thể:** thay 2 trong biểu thức \(1+2/(n-1)\) bằng 3 và tự liệt kê cả ước âm hợp điều kiện.
 
+<a id="anchor-25-007"></a>
 ## 7. Tham số, biệt thức và Viète
 
 **Bài mẫu.** Cho phương trình
@@ -272,6 +281,7 @@ Vậy \(\boxed{m=-2\ \text{hoặc}\ m=1}\).
 
 **Bẫy:** có được biểu thức nghiệm theo Viète nhưng quên điều kiện hai nghiệm phân biệt; ở bài này điều kiện đúng với mọi \(m\), song không được bỏ qua bước chứng minh.
 
+<a id="anchor-25-008"></a>
 ## 8. Tiếp tuyến–cát tuyến: một cấu hình, nhiều mục tiêu
 
 **Bài mẫu.** Từ \(A\) ngoài \((O)\), kẻ tiếp tuyến \(AB,AC\) và cát tuyến \(ADE\), với \(A,D,E\) theo thứ tự. Chứng minh
@@ -295,6 +305,7 @@ Suy ra \(\triangle ABD\sim\triangle AEB\), nên
 
 **Bẫy:** viết hai tam giác đồng dạng nhưng đảo thứ tự đỉnh làm suy ra tỷ số sai. Hãy viết cặp góc tương ứng trước khi viết tỷ số cạnh.
 
+<a id="anchor-25-009"></a>
 ## 9. Trực tâm và hai tứ giác nội tiếp từ đường cao
 
 Cho tam giác nhọn \(ABC\), đường cao \(BE\perp AC\), \(CF\perp AB\) cắt nhau tại \(H\).
@@ -315,6 +326,7 @@ Suy ra \(A,E,H,F\) cùng nằm trên đường tròn đường kính \(AH\).
 
 **Bẫy:** nhìn hình đoán tứ giác nội tiếp nhưng không chỉ ra cặp góc vuông hoặc góc bù nhau.
 
+<a id="anchor-25-010"></a>
 ## 10. Bài toán năng suất: cộng phần việc mỗi ngày
 
 Một đội A làm một mình xong trong 20 ngày; A và B cùng làm xong trong 12 ngày. Hỏi B làm một mình mất bao lâu?
@@ -328,6 +340,17 @@ Vậy đội B làm một mình trong **30 ngày**.
 **Bẫy:** không lấy \(20-12=8\) ngày. Khi ghép hai đội, thứ có thể cộng/trừ trực tiếp là *phần công việc làm được trong một đơn vị thời gian*, không phải thời gian hoàn thành.
 
 ---
+
+## Bản giải sâu – hình vẽ và chuỗi tư duy
+
+Phần tóm tắt ở trên giúp nhận diện nhanh. Khi mới học dạng toán hoặc vướng bài khó, **ưu tiên mở lời giải sâu** để xem từng bước, cách suy luận lùi từ mục tiêu, lỗi thường gặp và biến thể:
+
+- [A25-004 – Đường cao tam giác vuông (có hình SVG)](anchor-25-004.md)
+- [A25-008 – Tiếp tuyến, cát tuyến và đồng dạng (có hình SVG)](anchor-25-008.md)
+- [A25-009 – Trực tâm và hai đường tròn phụ (có hình SVG)](anchor-25-009.md)
+- [A25-011 – Parabol và đường thẳng (bài mở rộng thứ 11)](anchor-25-011.md)
+
+Các bài còn ở dạng tóm tắt chưa được gắn nhãn “lời giải sâu đã hoàn chỉnh”. Chúng sẽ tiếp tục được biên soạn và rà soát theo cùng mẫu, trong khi bộ 10 tiêu biểu vẫn giữ đủ mười ID.
 
 ## Liên kết tới đề thực hành
 

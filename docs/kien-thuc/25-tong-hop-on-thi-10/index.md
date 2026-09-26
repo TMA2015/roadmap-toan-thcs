@@ -515,11 +515,15 @@ Chuyên đề 25 từ nay tách rõ **ba đường luyện khác nhau** để kh
 
 [**Bộ 10 bài toán kinh điển**](bai-toan-kinh-dien.md) kết nối biểu thức căn và câu hỏi phụ, Viète có tham số, hệ phương trình thực tế, năng suất, đồng dạng, tiếp tuyến–cát tuyến, trực tâm và cực trị.
 
+[**Mở thư viện bài mỏ neo**](kho-bai-mo-neo.md): luôn giữ 10 bài tiêu biểu để định hướng, đồng thời tiếp nhận thêm các bài mới có ID, dạng tư duy và liên kết kiến thức riêng. Hiện đã có bài thứ 11 và các bản giải sâu có hình học chính xác.
+
 Mỗi bài yêu cầu học sinh nhận ra **dấu hiệu → công cụ → chuỗi suy luận → cách biến đổi bài**, rồi tự giải lại biến thể trước khi chuyển sang đề tổng hợp.
 
 ### C. Đề luyện hoàn chỉnh – làm bài đủ thời gian
 
 Ba đề dưới đây đều là **đề tự biên soạn, 120 phút, 10 điểm, gồm 5 bài tự luận**. Đây là tài liệu luyện tập theo những mạch kiến thức của chúng ta, không phải đề chính thức hay đề dự báo. **Đáp án nằm ở trang riêng**, để học sinh hoàn thành bài trên giấy trước khi mở:
+
+**Chế độ làm đề tương tác:** trên mỗi đề có nút **Bắt đầu 120 phút**; trình duyệt lưu nháp và thời điểm bắt đầu. Nộp bài/hết giờ mới hiện phần đối chiếu và rubric tự chấm; sau khi tự đối chiếu từng bước, hệ thống tính **điểm tự chấm** và gợi ý ôn lại bài mỏ neo. Đây vẫn là bài tự luận làm trên giấy: website tĩnh không thể khóa an toàn URL đáp án, không tự động xác minh cách giải hoặc chấm thay giáo viên.
 
 <div class="capstone-exam-grid" markdown="1">
   <a class="capstone-exam-link" href="de-luyen-01/"><strong>Đề 01 · Nền tảng tổng hợp</strong><span>Căn thức, Viète, hệ thực tế, dữ liệu và hình học tam giác vuông.</span><small>120 phút · 10 điểm →</small></a>
