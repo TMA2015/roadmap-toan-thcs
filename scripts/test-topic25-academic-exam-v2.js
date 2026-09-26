@@ -17,7 +17,7 @@ ok(skills.includes("Không dùng điểm ở đây để kết luận năng lự
 const examSection=mock.split("## Đáp án và hướng dẫn chấm")[0];
 const examHeadings=examSection.match(/^### Bài (?:I|II|III|IV|V)\s+[–-]/gm)||[];
 ok(examHeadings.length===5,"five-problem mock: actual "+examHeadings.length);
-ok(mock.includes(String.raw\`\triangle ABH\sim\triangle CAH\`),"geometry similarity is correctly ordered");
+ok(mock.includes(String.raw`\triangle ABH\sim\triangle CAH\`),"geometry similarity is correctly ordered");
 for(const [name,body] of [["classics",classic],["practice",practice],["self-check",check],["mock",mock]]){
   const opens=(body.match(/^\\\[$/gm)||[]).length, closes=(body.match(/^\\\]$/gm)||[]).length;
   ok(opens>0&&opens===closes,"unpaired display math: "+name+" ("+opens+"/"+closes+")");
