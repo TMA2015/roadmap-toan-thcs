@@ -10,6 +10,7 @@ Bộ này vẫn có **10 câu nguồn CĐ04–11 và 4 câu kiểm tra ngắn**.
     - **Lượt đầu** và **lượt ôn lại** hiện riêng; làm lại đúng không sửa ấn tượng/điểm của lượt đầu.
     - Câu chưa từng có sự kiện ID+kỹ năng trong lịch sử đang giữ, nộp trực tiếp trước khi xem giải thích, được đánh dấu `first_unseen`/không hỗ trợ ở mức **formative thử nghiệm**. Nếu câu đã từng làm hoặc đã xem đáp án, chỉ ghi lượt ôn, `independent=false`.
     - Lịch sử Beta v2 dưới khóa `toan-thcs-assessment-v2` **giữ nguyên nội dung từng sự kiện cũ**, không sửa cờ `independent` cũ. Những cờ đó có thể đã ghi quá rộng; chỉ lượt mới có phân loại v3 rõ ràng. Lịch sử quá 500 sự kiện chỉ chứa cửa sổ gần nhất, chưa đủ cơ sở kết luận mastery.
+    - Cờ `independent` chỉ nói rằng **chưa thấy ID+kỹ năng này trong lịch sử Beta đang giữ trên trình duyệt hiện tại**. Nó không chứng minh học sinh chưa từng làm câu đó ở trang luyện tập khác hoặc trên thiết bị khác; không dùng làm kết luận mastery.
     - Không sửa `toan-thcs-practice-v1` và không chấm Core Readiness. Câu tương tự sẽ chỉ được đưa vào đây sau QA từng kỹ năng, không tự sinh từ tag chưa duyệt. Muốn thử câu tương tự đã kiểm định, mở Beta CĐ06 ở trên.
 
 **Dấu hiệu phiên bản:** dòng giới thiệu bắt đầu bằng “Beta v3”; có **Câu trước**, **Câu tiếp**. Câu đã nộp sẽ ghi “Đã nộp · Chỉ xem”, không thể nộp lần hai.
