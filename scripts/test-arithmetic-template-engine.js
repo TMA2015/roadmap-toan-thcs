@@ -84,6 +84,13 @@ for(const template of catalog.templates){
   assert.ok(ids.has(old.id));
   totals[template.id]={tested:count,unique_parameters:signatures.size};
 }
+for(const t of engine.TEMPLATE_IDS){
+  for(const highSeed of [2147483648,2147483649,3221225472,4294967294,4294967295]){
+    const q=engine.generate(catalog,t,highSeed);
+    assert.equal(q.seed,highSeed,"high unsigned seed must work");
+    assert.deepEqual(q,engine.generate(catalog,t,highSeed));
+  }
+}
 for(const bad of [0,-1,1.5,4294967296,Infinity,NaN])
   assert.throws(()=>engine.generate(catalog,engine.TEMPLATE_IDS[0],bad));
 assert.throws(()=>engine.generate(catalog,"UNAPPROVED",1));
