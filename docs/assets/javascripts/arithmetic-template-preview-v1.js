@@ -58,7 +58,6 @@
       this.mode = mode;
       this.index = 0;
       this.answers = [];
-      this.orders = items.map(q => engine.TEMPLATE_IDS.map((_, i) => i).concat(3));
       // Shuffling only affects the four displayed choices, not the authored answer index.
       this.orders = items.map(() => {
         const values = [0,1,2,3];
