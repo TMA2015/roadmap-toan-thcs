@@ -149,7 +149,7 @@
   const logic = Object.freeze({ KEY, BUILD, emptyState, normalizedState, appendEvidence, skillSummary, firstAttemptSummary, classifyAttempt, verifiedV3Summary, prepareItems, shuffle, isValidQuestion });
   if (typeof module !== "undefined" && module.exports) module.exports = logic;
   if (typeof window === "undefined" || typeof document === "undefined") return;
-  window.RoadmapSkillAssessmentPilot = logic;
+  window.SelfLearningSkillAssessmentV3 = logic;
 
   const typeset = (element) => {
     if (window.MathJax?.typesetPromise) {
@@ -191,183 +191,196 @@
   class Pilot {
     constructor(root, questions) {
       this.root = root;
-      this.root.dataset.skillPilotVersion = BUILD;
+      root.dataset.skillPilotVersion = BUILD;
       this.questions = questions;
-      this.session = [...questions];
-      this.sessionAnswers = [];
-      this.retryMode = false;
-      this.index = 0;
-      this.correct = 0;
-      this.answered = false;
       this.storageAvailable = true;
       try { this.state = normalizedState(JSON.parse(localStorage.getItem(KEY))); }
       catch (_) { this.state = emptyState(); this.storageAvailable = false; }
-      this.render();
+      this.originalScore = null;
+      this.startSession(questions, "initial");
     }
     save() {
       try { localStorage.setItem(KEY, JSON.stringify(this.state)); }
       catch (_) { this.storageAvailable = false; }
     }
-    startSession(items, retryMode = false) {
+    startSession(items, mode = "initial") {
       this.session = [...items];
+      this.mode = mode;
       this.sessionAnswers = [];
-      this.retryMode = retryMode;
+      this.choiceOrders = items.map(q => shuffle(q.options.map((_, index) => index)));
       this.index = 0;
-      this.correct = 0;
-      if (this.introEl) this.introEl.textContent = retryMode
-        ? "Luyện lại " + this.session.length + " câu vừa sai. Đáp án đã được xem trước đó; lần làm lại giúp ôn tập nhưng không phải bằng chứng độc lập mới."
-        : "Beta v2 · 14 câu thử nghiệm: 10 câu từ ngân hàng gốc và 4 câu kiểm tra ngắn. Mỗi câu chỉ cộng vào một kỹ năng chính.";
-      this.renderQuestion();
+      this.render();
     }
     render() {
       this.root.replaceChildren();
-      this.introEl = textEl("p",
-        "Beta v2 · 14 câu thử nghiệm: 10 câu từ ngân hàng gốc và 4 câu kiểm tra ngắn. Mỗi câu chỉ cộng vào một kỹ năng chính.",
-        "skill-pilot-intro");
-      this.root.appendChild(this.introEl);
-      if (!this.storageAvailable) this.root.appendChild(textEl("p",
-        "Trình duyệt đang chặn lưu dữ liệu; kết quả chỉ tồn tại trong phiên này.", "skill-pilot-warning"));
+      const title = this.mode === "initial"
+        ? "Beta v3 · 14 câu thử nghiệm. Có thể quay lại câu đã nộp để xem, không sửa điểm."
+        : this.mode === "retry_misses"
+          ? "Luyện lại chính các câu vừa sai; đã xem lời giải nên không phải bằng chứng độc lập mới."
+          : "Ôn lại bộ câu cũ; lượt này không cộng thêm bằng chứng độc lập mới.";
+      this.introEl = textEl("p", title, "skill-pilot-intro");
+      this.root.append(this.introEl);
+      if (!this.storageAvailable) this.root.append(textEl("p",
+        "Không lưu được vào trình duyệt; kết quả chỉ tồn tại trong phiên này.", "skill-pilot-warning"));
       this.progress = textEl("p", "", "skill-pilot-progress");
       this.card = textEl("section", "", "skill-pilot-card");
       this.root.append(this.progress, this.card);
       this.renderQuestion();
     }
+    go(index) {
+      if (!Number.isInteger(index) || index < 0 || index > this.sessionAnswers.length ||
+          index > this.session.length) return;
+      this.index = index;
+      this.renderQuestion();
+    }
+    navBar(record) {
+      const nav = textEl("nav", "", "skill-pilot-nav");
+      nav.setAttribute("aria-label", "Điều hướng câu hỏi");
+      const back = button("← Câu trước", "skill-pilot-nav-back");
+      back.disabled = this.index === 0;
+      back.addEventListener("click", () => this.go(this.index - 1));
+      const labelText = textEl("span", "Câu " + (this.index + 1) + "/" + this.session.length,
+        "skill-pilot-nav-counter");
+      const next = button(this.index + 1 === this.session.length ? "Xem tổng kết →" : "Câu tiếp →",
+        "skill-pilot-nav-next skill-pilot-primary");
+      next.disabled = !record;
+      next.addEventListener("click", () => {
+        if (this.sessionAnswers[this.index]) this.go(this.index + 1);
+      });
+      nav.append(back, labelText, next);
+      return nav;
+    }
     renderQuestion() {
       this.card.replaceChildren();
-      if (this.index >= this.session.length) return this.renderSummary();
-      this.answered = false;
+      if (this.index >= this.session.length) { this.renderSummary(); return; }
       const q = this.session[this.index];
-      this.progress.textContent = "Câu " + (this.index + 1) + "/" + this.session.length + " · Đúng " + this.correct;
-      this.card.appendChild(textEl("p", (q.question_kind === "micro_pilot" ? "🔎 Kiểm tra riêng" : "📘 Câu trong ngân hàng") +
-        " · " + q.topic, "skill-pilot-meta"));
-      this.card.appendChild(textEl("h3", "Kỹ năng đánh giá: " + label(q.assessed_skill), "skill-pilot-heading"));
-      if (q.secondary_tag) this.card.appendChild(textEl("p",
+      const record = this.sessionAnswers[this.index];
+      const score = this.sessionAnswers.filter(a => a.correct).length;
+      this.progress.textContent = "Câu " + (this.index + 1) + "/" + this.session.length +
+        " · Đã nộp " + this.sessionAnswers.length + "/" + this.session.length + " · Đúng " + score;
+      this.card.append(textEl("p", (q.question_kind === "micro_pilot" ? "🔎 Kiểm tra riêng" : "📘 Câu trong ngân hàng") +
+        " · " + q.topic + (record ? " · Đã nộp · Chỉ xem" : ""), "skill-pilot-meta"));
+      this.card.append(textEl("h3", "Kỹ năng đánh giá: " + label(q.assessed_skill), "skill-pilot-heading"));
+      if (q.secondary_tag) this.card.append(textEl("p",
         "Liên quan: " + label(q.secondary_tag) + " (" +
-        ({ category: "nhóm kiến thức", method: "phương pháp", context: "bối cảnh",
-          representation: "cách biểu diễn", supporting_skill: "kiến thức hỗ trợ" })[q.secondary_role] + ") — không cộng điểm riêng.",
-        "skill-pilot-secondary"));
-      this.card.appendChild(textEl("p", q.question, "skill-pilot-question"));
+        ({ category:"nhóm kiến thức", method:"phương pháp", context:"bối cảnh",
+           representation:"cách biểu diễn", supporting_skill:"kiến thức hỗ trợ" })[q.secondary_role] +
+        ") — không cộng điểm riêng.", "skill-pilot-secondary"));
+      this.card.append(textEl("p", q.question, "skill-pilot-question"));
       const choices = textEl("div", "", "skill-pilot-options");
-      shuffle(q.options.map((content, i) => ({ content, index: i }))).forEach((choice) => {
-        const item = button(choice.content, "skill-pilot-option");
-        item.dataset.originalIndex = String(choice.index);
-        item.addEventListener("click", () => this.answer(q, choice.index, choices));
-        choices.appendChild(item);
-      });
-      this.card.appendChild(choices);
-      this.feedback = textEl("div", "", "skill-pilot-feedback");
-      this.feedback.hidden = true;
-      this.card.appendChild(this.feedback);
-      this.actions = textEl("div", "", "skill-pilot-actions");
-      this.card.appendChild(this.actions);
+      for (const index of this.choiceOrders[this.index]) {
+        const option = button(q.options[index], "skill-pilot-option");
+        option.dataset.originalIndex = String(index);
+        if (record) {
+          option.disabled = true;
+          if (index === q.answer) option.classList.add("is-correct");
+          if (index === record.choice && !record.correct) option.classList.add("is-wrong");
+        } else option.addEventListener("click", () => this.answer(q, index));
+        choices.append(option);
+      }
+      this.card.append(choices);
+      if (record) {
+        const feedback = textEl("div", "", "skill-pilot-feedback " +
+          (record.correct ? "is-correct" : "is-wrong"));
+        feedback.append(textEl("strong", record.correct ? "✓ Đúng" : "✗ Chưa đúng"));
+        feedback.append(textEl("p", q.explanation || "Chưa có lời giải ngắn."));
+        feedback.append(textEl("p", record.assessment.independent
+          ? "Bài đầu tiên chưa từng ghi nhận cho ID này; dữ liệu chỉ dùng thử nghiệm formative."
+          : "Câu đã xem/luyện lại: có ghi lượt ôn nhưng không cộng bằng chứng độc lập.",
+          "skill-pilot-secondary"));
+        this.card.append(feedback);
+      } else this.card.append(textEl("p",
+        "Chọn một phương án để nộp. Sau khi nộp chỉ được xem lại.", "skill-pilot-secondary"));
+      this.card.append(this.navBar(record));
       typeset(this.card);
     }
-    answer(q, choice, choices) {
-      if (this.answered || this.session[this.index]?.id !== q.id) return;
-      this.answered = true;
-      const correct = choice === q.answer;
-      if (correct) this.correct += 1;
-      this.sessionAnswers.push({ question: q, choice, correct });
+    answer(q, choice) {
+      if (this.sessionAnswers[this.index] || this.index !== this.sessionAnswers.length ||
+          this.session[this.index]?.id !== q.id) return;
+      const seenBefore = this.state.events.some(event =>
+        event.question_id === q.id && event.assessed_skill === q.assessed_skill);
+      const assessment = classifyAttempt(this.mode, seenBefore);
+      const record = { question:q, choice, correct:choice===q.answer, assessment };
+      this.sessionAnswers.push(record);
       this.state = appendEvidence(this.state, {
-        question_id: q.id, assessed_skill: q.assessed_skill, correct, independent: true,
-        question_kind: q.question_kind,
-        supporting_tags: q.secondary_tag ? [q.secondary_tag] : [],
-        context: q.secondary_role === "context" ? q.secondary_tag : null,
-        attempted_at: new Date().toISOString()
+        question_id:q.id, assessed_skill:q.assessed_skill, correct:record.correct,
+        independent:assessment.independent, assisted:assessment.assisted,
+        attempt_kind:assessment.attempt_kind, evidence_policy:"formative_v3",
+        source_file:q.source_file,
+        question_kind:q.question_kind,
+        supporting_tags:q.secondary_tag ? [q.secondary_tag] : [],
+        context:q.secondary_role === "context" ? q.secondary_tag : null,
+        attempted_at:new Date().toISOString()
       });
       this.save();
-      [...choices.children].forEach((element) => {
-        element.disabled = true;
-        const originalIndex = Number(element.dataset.originalIndex);
-        if (originalIndex === q.answer) element.classList.add("is-correct");
-        if (originalIndex === choice && !correct) element.classList.add("is-wrong");
-      });
-      this.feedback.hidden = false;
-      this.feedback.className = "skill-pilot-feedback " + (correct ? "is-correct" : "is-wrong");
-      this.feedback.appendChild(textEl("strong", correct ? "✓ Đúng" : "✗ Chưa đúng"));
-      this.feedback.appendChild(textEl("p", q.explanation || "Chưa có giải thích trong ngân hàng."));
-      this.feedback.appendChild(textEl("p", "Chỉ ghi nhận: " + label(q.assessed_skill) + ". Các tag hỗ trợ không nhận điểm.",
-        "skill-pilot-secondary"));
-      const next = button(this.index + 1 < this.session.length ? "Câu tiếp theo" : "Xem tổng kết", "skill-pilot-primary");
-      next.addEventListener("click", () => { this.index += 1; this.renderQuestion(); });
-      this.actions.appendChild(next);
-      typeset(this.feedback);
+      this.renderQuestion();
     }
     renderSummary() {
-      const wrong = this.sessionAnswers.filter((entry) => !entry.correct);
-      this.progress.textContent = "Hoàn thành: " + this.correct + "/" + this.session.length;
-      this.card.appendChild(textEl("h3", this.retryMode ? "Kết quả lượt luyện lại" : "Kết quả lượt vừa làm", "skill-pilot-heading"));
-      this.card.appendChild(textEl("p",
-        "Đúng " + this.correct + "/" + this.session.length + " câu · " + wrong.length +
-        " câu cần xem lại. Đây là nhận xét từ bài thử nghiệm ngắn, chưa phải kết luận mức độ thành thạo.",
+      const wrong = this.sessionAnswers.filter(a => !a.correct);
+      const correct = this.sessionAnswers.length - wrong.length;
+      if (this.mode === "initial" && !this.originalScore) {
+        this.originalScore = { attempted:this.session.length, correct };
+      }
+      this.progress.textContent = "Hoàn thành: " + correct + "/" + this.session.length;
+      this.card.append(textEl("h3", this.mode === "initial" ? "Kết quả lượt đầu" :
+        "Kết quả lượt luyện lại", "skill-pilot-heading"));
+      this.card.append(textEl("p", "Lượt đầu: " + this.originalScore.correct + "/" +
+        this.originalScore.attempted + " · Lượt này: " + correct + "/" + this.session.length +
+        " · " + wrong.length + " câu cần xem lại. Không cộng gộp điểm luyện lại vào lượt đầu.",
         "skill-pilot-summary-lead"));
-
+      if (this.mode !== "initial") this.card.append(textEl("p",
+        "Các câu đã xem lời giải: lượt luyện này chỉ phục vụ ôn tập, không tạo bằng chứng độc lập mới.",
+        "skill-pilot-warning"));
       if (wrong.length) {
-        this.card.appendChild(textEl("h4", "Câu cần xem lại (" + wrong.length + ")", "skill-pilot-review-title"));
-        this.card.appendChild(textEl("p",
-          "Mở từng câu để xem đáp án và lời giải, hoặc bấm luyện lại ở dưới. Một câu sai chưa đủ để kết luận em yếu cả kỹ năng.",
-          "skill-pilot-secondary"));
-        wrong.forEach((entry, index) => {
-          const q = entry.question;
+        this.card.append(textEl("h4", "Câu cần xem lại (" + wrong.length + ")", "skill-pilot-review-title"));
+        for (const a of wrong) {
+          const q = a.question;
           const item = document.createElement("details");
           item.className = "skill-pilot-review-item";
-          const heading = document.createElement("summary");
-          heading.textContent = (index + 1) + ". " + label(q.assessed_skill) + " · " + q.id;
-          item.appendChild(heading);
-          item.appendChild(textEl("p", q.question, "skill-pilot-review-question"));
-          item.appendChild(textEl("p", "Em đã chọn: " + q.options[entry.choice], "skill-pilot-review-chosen"));
-          item.appendChild(textEl("p", "Đáp án đúng: " + q.options[q.answer], "skill-pilot-review-answer"));
-          item.appendChild(textEl("p", q.explanation || "Chưa có lời giải ngắn cho câu này.", "skill-pilot-review-explanation"));
-          if (/^[0-9]{2}-[a-z0-9-]+$/.test(q.topic)) {
-            const link = document.createElement("a");
-            link.className = "skill-pilot-lesson-link";
-            link.href = new URL("../../kien-thuc/" + q.topic + "/", document.baseURI).href;
-            link.textContent = "Ôn lại bài học liên quan ↗";
-            item.appendChild(link);
-          }
-          this.card.appendChild(item);
-        });
+          item.append(textEl("summary", label(q.assessed_skill) + " · " + q.id));
+          item.append(textEl("p", q.question, "skill-pilot-review-question"));
+          item.append(textEl("p", "Em đã chọn: " + q.options[a.choice], "skill-pilot-review-chosen"));
+          item.append(textEl("p", "Đáp án đúng: " + q.options[q.answer], "skill-pilot-review-answer"));
+          item.append(textEl("p", q.explanation || "Chưa có lời giải ngắn.", "skill-pilot-review-explanation"));
+          this.card.append(item);
+        }
         const retry = button("Luyện lại " + wrong.length + " câu vừa sai", "skill-pilot-primary");
-        retry.addEventListener("click", () => this.startSession(wrong.map((entry) => entry.question), true));
-        this.card.appendChild(retry);
-        this.card.appendChild(textEl("p",
-          "Luyện lại câu đã xem đáp án là hoạt động ôn tập; không được hiểu như một câu hỏi mới hoặc chứng cứ độc lập mới.",
-          "skill-pilot-secondary"));
-      } else {
-        this.card.appendChild(textEl("p",
-          "Không có câu sai trong lượt này. Em có thể mở phần lịch sử hoặc làm lại bộ thử nghiệm; không cần suy ra đã nắm chắc từ một lượt.",
-          "skill-pilot-success"));
-      }
-
+        retry.addEventListener("click", () => this.startSession(wrong.map(a => a.question), "retry_misses"));
+        this.card.append(retry);
+      } else this.card.append(textEl("p", "Không còn câu sai trong lượt này.", "skill-pilot-success"));
+      this.card.append(textEl("p",
+        "Câu tương tự mới sẽ chỉ được bổ sung khi học liệu của từng kỹ năng qua QA. Hiện không tự sinh đề từ các tag chưa được duyệt.",
+        "skill-pilot-secondary"));
       const history = document.createElement("details");
       history.className = "skill-pilot-history";
-      const historyTitle = document.createElement("summary");
-      historyTitle.textContent = "Lịch sử thử nghiệm (" + this.state.events.length + " lượt, gồm cả làm lại)";
-      history.appendChild(historyTitle);
-      history.appendChild(textEl("p",
-        "Số câu khác nhau và kết quả ở lần xuất hiện đầu tiên trong dữ liệu đang giữ. Làm lại cùng câu không tạo thêm câu hỏi độc lập, dù vẫn được lưu như một lượt ôn.",
+      history.append(textEl("summary", "Lịch sử thử nghiệm (" + this.state.events.length +
+        " lượt, gồm ôn lại)"));
+      history.append(textEl("p",
+        "Kết quả lần đầu của mỗi ID trong cửa sổ lịch sử đang giữ. Lịch sử Beta v2 được giữ nguyên, không sửa lại cờ independent trước đây.",
         "skill-pilot-secondary"));
-      const summary = firstAttemptSummary(this.state);
-      for (const skill of Object.keys(summary).sort((a, b) => label(a).localeCompare(label(b), "vi"))) {
-        const record = summary[skill];
-        history.appendChild(textEl("p", label(skill) + ": lần đầu đúng " +
-          record.first_correct + "/" + record.distinct + " câu khác nhau · tổng " +
-          record.total_attempts + " lượt" +
-          (record.distinct < 3 ? " · chưa đủ bằng chứng để kết luận" : " · dữ liệu ban đầu"),
-          "skill-pilot-result"));
+      const historical = firstAttemptSummary(this.state);
+      for (const skill of Object.keys(historical).sort((a,b) => label(a).localeCompare(label(b),"vi"))) {
+        const stat = historical[skill];
+        history.append(textEl("p", label(skill) + ": lần đầu đúng " +
+          stat.first_correct + "/" + stat.distinct + " câu khác nhau · tổng " +
+          stat.total_attempts + " lượt" + (stat.distinct < 3 ? " · cần thêm bằng chứng" :
+          " · dữ liệu ban đầu"), "skill-pilot-result"));
       }
-      this.card.appendChild(history);
-      this.card.appendChild(textEl("p", this.storageAvailable ?
-        "Lịch sử thử nghiệm được lưu riêng trên trình duyệt này. Dữ liệu luyện tập thông thường vẫn giữ nguyên." :
-        "Không lưu được xuống trình duyệt; kết quả trên chỉ có trong phiên này.", "skill-pilot-secondary"));
-      const again = button("Làm lại toàn bộ 14 câu", "skill-pilot-primary");
-      again.addEventListener("click", () => this.startSession(this.questions, false));
-      this.card.appendChild(again);
+      this.card.append(history);
+      this.card.append(textEl("p", this.storageAvailable ?
+        "Đã lưu riêng trong lịch sử thử nghiệm. Dữ liệu Practice v1 vẫn giữ nguyên." :
+        "Không lưu được dữ liệu; chỉ có kết quả trong phiên này.", "skill-pilot-secondary"));
+      const reviewLast = button("Xem lại câu cuối", "skill-pilot-nav-back");
+      reviewLast.addEventListener("click", () => this.go(this.session.length - 1));
+      this.card.append(reviewLast);
+      const restart = button("Ôn lại toàn bộ 14 câu", "skill-pilot-primary");
+      restart.addEventListener("click", () => this.startSession(this.questions, "review_all"));
+      this.card.append(restart);
       typeset(this.card);
     }
   }
   const init = async () => {
-    for (const root of document.querySelectorAll("[data-skill-assessment-pilot]")) {
+    for (const root of document.querySelectorAll("[data-skill-assessment-pilot-v3]")) {
       if (root.dataset.skillPilotReady) continue;
       root.dataset.skillPilotReady = "true";
       root.textContent = "Đang tải bộ đánh giá thử nghiệm…";
