@@ -1,12 +1,20 @@
-# Roadmap Toán THCS
+# Self-Learning Math
 
-Bộ tài liệu học Toán THCS theo lộ trình từ lớp 6 đến lớp 9, hướng tới mục tiêu nắm vững kiến thức trên lớp và chuẩn bị xuyên suốt cho kỳ thi vào lớp 10.
+**Nền tảng tự học Toán theo lộ trình.** Hiện tập trung chương trình THCS lớp 6–9 (Kết nối tri thức): kiến thức, hình minh họa, bài luyện tập có giải thích, AI Tutor và theo dõi tiến độ. Roadmap 25 chuyên đề là bản đồ định hướng, không phải toàn bộ sản phẩm.
 
-## Mục tiêu dự án
+## Phạm vi hiện tại
 
-- Hệ thống hóa toàn bộ kiến thức Toán THCS.
-- Học theo mạch kiến thức liên thông giữa các lớp.
-- Kết hợp kiến thức cốt lõi, dạng bài, luyện tập và ôn thi.
-- Cung cấp tài liệu miễn phí, dễ tra cứu và dễ tự học.
+- Học theo lớp hoặc theo mạch kiến thức; Core, ôn thi vào 10 và mở rộng được phân tầng.
+- Học – luyện – tự kiểm tra, gợi ý/giải thích và phát hiện kỹ năng cần ôn.
+- Thí điểm đánh giá mỗi câu một kỹ năng chính; chưa chuyển toàn bộ ngân hàng sang cơ chế mới.
+- Thiết kế dạng module, dự kiến có thể bổ sung Toán THPT, SAT/ACT Math và tư duy logic khi nền tảng THCS được củng cố.
 
-Website được xây dựng bằng **MkDocs Material** và xuất bản trên **GitHub Pages**.
+## Đường dẫn được giữ ổn định
+
+Website: https://tma2015.github.io/roadmap-toan-thcs/
+
+Repository: https://github.com/TMA2015/roadmap-toan-thcs
+
+**Self-Learning Math là tên hiển thị mới.** Tên repo, GitHub Pages path, URL của các chuyên đề, ID bài tập, cấu hình Firebase/App Check, Gemini và dữ liệu học sinh đều được giữ nguyên. Không đổi slug kỹ thuật khi chưa thiết kế và kiểm thử chuyển hướng. Các tài liệu tên cũ được giữ làm dấu vết nguồn.
+
+Website dùng MkDocs Material, triển khai bằng GitHub Pages.

@@ -32,9 +32,9 @@ hide:
 
 <section class="home-hero" aria-labelledby="home-title">
   <div class="home-hero-copy">
-    <span class="home-eyebrow"><span class="home-eyebrow-dot" aria-hidden="true"></span> ROADMAP TOÁN · LỚP 6–9</span>
+    <span class="home-eyebrow"><span class="home-eyebrow-dot" aria-hidden="true"></span> SELF-LEARNING MATH · TOÁN THCS LỚP 6–9</span>
     <h1 id="home-title">Hiểu bản chất.<br><span>Tiến bộ từng chặng.</span></h1>
-    <p>Một không gian học Toán từ nền tảng đến ôn thi vào lớp 10: học qua hình ảnh, luyện đúng kỹ năng và biết cần ôn lại điều gì sau mỗi lần làm bài.</p>
+    <p>Self-Learning Math — không gian tự học Toán từ nền tảng đến ôn thi vào lớp 10: học qua hình ảnh, luyện đúng kỹ năng và biết cần ôn lại điều gì sau mỗi lần làm bài.</p>
     <div class="home-hero-actions">
       <a class="home-button home-button-primary" href="kien-thuc/">Khám phá 25 chuyên đề <span aria-hidden="true">↗</span></a>
       <a class="home-button home-button-ghost" href="roadmap/">Xem lộ trình học <span aria-hidden="true">→</span></a>
