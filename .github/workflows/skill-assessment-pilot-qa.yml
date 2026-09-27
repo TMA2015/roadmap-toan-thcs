@@ -17,6 +17,14 @@ on:
       - 'scripts/test-skill-assessment-pilot-v3-browser.py'
       - 'docs/assets/javascripts/complete-factorization-preview-v1.js'
       - 'docs/assets/javascripts/complete-factorization-preview-v2.js'
+      - 'docs/assets/javascripts/arithmetic-template-engine-v1.js'
+      - 'docs/assets/javascripts/arithmetic-template-preview-v1.js'
+      - 'docs/assets/data/curriculum/arithmetic-template-catalog-v1.json'
+      - 'docs/assets/stylesheets/arithmetic-template-preview-v1.css'
+      - 'docs/huong-dan/thu-nghiem-sinh-cau-tuong-tu.md'
+      - 'docs/roadmap/deterministic-math-templates-v1.md'
+      - 'scripts/test-arithmetic-template-engine.js'
+      - 'scripts/test-arithmetic-template-preview-browser.py'
       - 'docs/assets/data/curriculum/complete-factorization-preview-v2.json'
       - 'docs/assets/stylesheets/complete-factorization-preview-v2.css'
       - 'docs/huong-dan/thu-nghiem-phan-tich-hoan-toan-v2.md'
@@ -56,6 +64,10 @@ jobs:
         run: node --check docs/assets/javascripts/complete-factorization-preview-v1.js
       - name: Validate CĐ06 v2 navigation script syntax
         run: node --check docs/assets/javascripts/complete-factorization-preview-v2.js
+      - name: Validate deterministic math generator and preview syntax
+        run: |
+          node --check docs/assets/javascripts/arithmetic-template-engine-v1.js
+          node --check docs/assets/javascripts/arithmetic-template-preview-v1.js
       - name: Run source-locked pilot regression tests
         run: node scripts/test-skill-assessment-pilot.js
       - name: Verify v3 navigation and per-attempt independent evidence semantics
@@ -64,6 +76,8 @@ jobs:
         run: node scripts/test-complete-factorization-preview.js
       - name: Verify CĐ06 v2 source siblings and evidence modes
         run: node scripts/test-complete-factorization-preview-v2.js
+      - name: Check 4500 generated arithmetic variants with independent math oracle
+        run: node scripts/test-arithmetic-template-engine.js
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
@@ -81,3 +95,4 @@ jobs:
           python scripts/test-skill-assessment-pilot-v3-browser.py
           python scripts/test-complete-factorization-preview-browser.py
           python scripts/test-complete-factorization-preview-v2-browser.py
+          python scripts/test-arithmetic-template-preview-browser.py
