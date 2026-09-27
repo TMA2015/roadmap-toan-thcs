@@ -52,6 +52,7 @@ nav:
   - Hướng dẫn:
       - Thử nghiệm đánh giá kỹ năng (Beta v3): huong-dan/thu-nghiem-danh-gia-ky-nang-v3.md
       - Thử nghiệm phân tích hoàn toàn (Beta v2): huong-dan/thu-nghiem-phan-tich-hoan-toan-v2.md
+      - Thử nghiệm sinh câu số học theo mẫu (Beta): huong-dan/thu-nghiem-sinh-cau-tuong-tu.md
       - Lộ trình tự học: huong-dan/lo-trinh-tu-hoc.md
       - Nguyên tắc học mỗi chuyên đề: huong-dan/nguyen-tac-hoc-moi-chuyen-de.md
       - Quy tắc chuyển sang chuyên đề mới: huong-dan/quy-tac-chuyen-chuyen-de.md
@@ -196,6 +197,7 @@ extra_css:
   - assets/stylesheets/assessment-engine.css
   - assets/stylesheets/skill-assessment-pilot-v2.css
   - assets/stylesheets/complete-factorization-preview-v2.css
+  - assets/stylesheets/arithmetic-template-preview-v1.css
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -213,6 +215,8 @@ extra_javascript:
   - assets/javascripts/skill-assessment-pilot-v3.js
   - assets/javascripts/complete-factorization-preview-v1.js
   - assets/javascripts/complete-factorization-preview-v2.js
+  - assets/javascripts/arithmetic-template-engine-v1.js
+  - assets/javascripts/arithmetic-template-preview-v1.js
   - assets/javascripts/study-scene-v1.js
   - assets/javascripts/sticky-nav-v1.js
   - assets/javascripts/knowledge-ui-v1.js
