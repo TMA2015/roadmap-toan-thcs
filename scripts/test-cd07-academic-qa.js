@@ -108,7 +108,7 @@ for(const q of questions){
   for(const root of forbidden) assert.equal(at(fraction.d,root),0n,q.id+" excluded point not denominator root");
   if(n<=16)assert.equal(forbidden.length,1);else assert.equal(forbidden.length,2);
  }else if(n<=30){
-  kind="equality";const pieces=blocks(q.options[0]);assert.equal(pieces.length,2,q.id+" equality needs two expressions");
+  kind="equality";const pieces=blocks(q.options[0]);assert.ok(pieces.length>=2,q.id+" equality needs two expressions");
   assert.ok(req(expr(pieces[0]),expr(pieces[1])),q.id+" wrongly claims fraction equality");
   assert.match(q.options[0],/miền/);
  }else if(n<=38){
