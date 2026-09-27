@@ -2,7 +2,9 @@
 
 > **Phạm vi hiện hành (cập nhật 26/09/2026):** Không đặt mục tiêu định danh/chuẩn hóa đủ 346 tag thành 346 skill. Danh mục lịch sử là nguồn kiểm kê. Nhiệm vụ mới: xây bộ năng lực nền và ứng dụng **gọn, đủ chẩn đoán** theo [quy tắc tinh gọn](skill-taxonomy-minimal-policy-v1.md); thí điểm [10 cặp](../assets/data/curriculum/skill-role-pilot-04-11-v1.json). Các tag dạng bài, phương pháp, bối cảnh và kỹ thuật tự chọn không mặc định thành mastery/node. [Brief Gemini hiện hành](gemini-next-review-10-pairs-v1.md). Mọi yêu cầu 346/346 ở tài liệu cũ chỉ là mục tiêu kiểm kê, không phải mục tiêu sản phẩm.
 
-**Trạng thái 26/09/2026:** Beta v2 đánh giá một kỹ năng chính đã được người dùng thử và chấp nhận. Đợt tiếp theo là [bản ánh xạ CĐ04–07 theo từng câu](primary-skill-overlay-review-04-07-v1.md): 492 câu đã khóa ID/nguồn; 456 ứng viên primary và 39 ca chờ kiểm định, trong đó 36 ca chưa chọn primary. Đây vẫn là **dữ liệu review chưa được engine đọc**. Không đổi tag luyện tập, Knowledge Graph hay dữ liệu học sinh.
+**Trạng thái 27/09/2026:** Self-Learning Math là tên hiển thị mới (URL repo/Pages vẫn giữ nguyên). Beta v2 đã được người dùng thử. QA nội dung CĐ04–07 đã có ledger theo 492 câu; [bản ánh xạ theo từng ID](primary-skill-overlay-review-04-07-v1.md) tiếp tục có 456 ứng viên primary và **39 ca chờ quyết định kỹ năng**, trong đó 36 ca chưa chọn primary. Đây là **dữ liệu review chưa được engine đọc**. Không đổi tag luyện tập, Knowledge Graph hay dữ liệu học sinh.
+
+**QA học thuật CĐ07:** [Báo cáo 120 câu, điều kiện xác định và 8 ca chờ review](cd07-academic-qa-v1.md), [ledger từng câu](../assets/data/curriculum/cd07-academic-qa-ledger-v1.json). Ba đáp án số học đã rút gọn hệ số; không hồi tố dữ liệu cũ hoặc chấm nhiều mastery từ bài tổng hợp.
 
 **QA học thuật CĐ06:** [Báo cáo 120 câu và 24 ca giữ chờ review](cd06-academic-qa-v1.md), [ledger từng câu](../assets/data/curriculum/cd06-academic-qa-ledger-v1.json). Đã sửa bốn đáp án nhân tử chung lớn nhất, phân biệt biểu thức tương đương với phân tích hoàn toàn; chưa kích hoạt overlay mastery.
 
