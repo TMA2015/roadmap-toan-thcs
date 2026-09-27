@@ -6,8 +6,10 @@ from playwright.sync_api import sync_playwright
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 BASE = "http://127.0.0.1:8766"
 cfg = json.loads((ROOT / "docs/assets/data/curriculum/complete-factorization-preview-v2.json").read_text(encoding="utf-8"))
-bank = json.loads((ROOT / "docs/assets/data/practice" / cfg["source_file"]).read_text(encoding="utf-8"))
-by_id = {q["id"]: q for q in bank["questions"]}
+by_id = {}
+for filename in cfg["source_files"]:
+    bank = json.loads((ROOT / "docs/assets/data/practice" / filename).read_text(encoding="utf-8"))
+    by_id.update({q["id"]: q for q in bank["questions"]})
 initial = [by_id[id] for id in cfg["initial_question_ids"]]
 wrong = {0, 2, 6}
 
