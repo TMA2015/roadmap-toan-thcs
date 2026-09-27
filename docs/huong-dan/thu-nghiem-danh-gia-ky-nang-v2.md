@@ -1,5 +1,7 @@
 # Thử nghiệm đánh giá kỹ năng — Beta v2
 
+> **Đã có Beta v3:** [Mở phiên có Câu trước / Câu tiếp và phân biệt lượt độc lập với ôn lại](thu-nghiem-danh-gia-ky-nang-v3.md). Trang v2 vẫn giữ để tương thích các liên kết đã chia sẻ.
+
 > **Giao diện mới Beta v2 · Có danh sách câu sai, lời giải và luyện lại riêng.** Đây là khu kiểm định cách ghi nhận năng lực, không phải bài kiểm tra học kỳ hay điều kiện mở khóa lộ trình. [Quay lại luyện tập CĐ04](../kien-thuc/04-bieu-thuc-dai-so/bai-tap.md) · [CĐ11](../kien-thuc/11-can-thuc/bai-tap.md).
 
 Khi học sinh làm một câu có hai tag, câu đó chỉ tạo một bằng chứng cho **kỹ năng được kiểm tra chính**. Tag phương pháp, nhóm kiến thức hoặc bối cảnh vẫn giúp giải thích/định hướng nhưng không tự sinh thêm một lần đúng/sai cho kỹ năng khác.
