@@ -107,7 +107,8 @@
     "GEN_" + template.id + "_V" + template.version + "_S" + seed + "_" +
     Object.values(params).join("_");
   const build = (template, seed) => {
-    const rand = prng(seedValue(seed) ^ (template.id.length * 9973));
+    const mixedSeed = (seedValue(seed) ^ (template.id.length * 9973)) >>> 0;
+    const rand = prng(mixedSeed || 1);
     let params, question, correct, wrongs, explanation;
     if (template.id === "INT_MIXED_ADD") {
       const { a_min, a_max, b_min, b_max } = template.params;
