@@ -12,6 +12,8 @@ Bài đầu gồm **8 câu** được lấy từ ngân hàng CĐ06 đã kiểm �
     - **Điểm lượt đầu được giữ riêng**, không nâng lên dù sau đó luyện lại đúng hết.
     - Beta này không đọc/ghi localStorage, sessionStorage, tiến độ luyện tập hay hồ sơ AI. Đóng/tải lại trang sẽ bắt đầu lại.
 
+**Thử nghiệm tiếp theo:** [Bộ sinh câu số học theo mẫu, tự tính lại đáp án và lời giải](thu-nghiem-sinh-cau-tuong-tu.md). Đây là module riêng, không tự động nhân bản các bài hình học hoặc thay ngân hàng CĐ06.
+
 Đích đo của bài chỉ là **nhận diện kết quả phân tích hoàn toàn**, không chứng minh học sinh đã tự thực hiện đúng mọi bước đặt nhân tử chung, nhóm hạng tử hay hằng đẳng thức. Mã năng lực này vẫn là đề xuất; không được tự chuyển vào bảng mastery chính.
 
 [Hồ sơ phân loại 39 trường hợp](../roadmap/primary-skill-decisions-39-v1.md) · [Quay về luyện tập CĐ06](../kien-thuc/06-phan-tich-da-thuc/bai-tap.md).
