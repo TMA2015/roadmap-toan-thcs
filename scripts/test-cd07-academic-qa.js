@@ -184,5 +184,36 @@ for(const flagged of queue.items.filter(x=>x.topic==="07-phan-thuc-dai-so")){
  assert.equal(flagged.answer_index,q.answer);
  assert.equal(flagged.correct_option,q.options[q.answer]);
 }
+const ledger=json("docs/assets/data/curriculum/cd07-academic-qa-ledger-v1.json");
+assert.equal(ledger.status,"mathematical_qa_passed_primary_overlay_review_only");
+assert.equal(ledger.counts.total,120);
+assert.equal(ledger.counts.answer_text_changed,3);
+assert.equal(ledger.counts.question_or_explanation_revised,90);
+assert.equal(ledger.counts.review_flagged,8);
+assert.equal(ledger.counts.primary_null,8);
+assert.deepEqual(ledger.items.map(x=>x.question_id),overlay.items.map(x=>x.id));
+for(const row of ledger.items){
+ const source=byId.get(row.question_id);
+ assert.equal(row.source_file,source.source_file);
+ assert.equal(row.proposed_primary,overlay.items.find(x=>x.id===row.question_id).proposed_assessed_skill);
+ assert.equal(ledger.source_files[row.source_file].github_blob_sha,overlay.source_files[row.source_file].github_blob_sha);
+}
+for(const n of [82,84,86]){
+ const q=byId.get("RAT07V1_"+String(n).padStart(3,"0"));
+ assert.ok(q.question.startsWith("Tính và rút gọn"),q.id+" lost reduction instruction");
+ assert.equal(q.options[0],"\\(\\frac{"+((n-78)/2)+"}{x}\\)",q.id+" must show fully reduced coefficient");
+}
+for(let n=109;n<=114;n++){
+ const q=byId.get("RAT07V1_"+String(n));
+ assert.equal([...q.question.matchAll(/x\\ne/g)].length,3,q.id+" must state all three exclusions");
+ assert.equal([...q.explanation.matchAll(/x\\ne/g)].length,3,q.id+" must retain original domain in explanation");
+ assert.ok(q.explanation.includes("=1"),q.id+" lacks final rational identity");
+}
+for(let n=119;n<=120;n++){
+ const q=byId.get("RAT07V1_"+n);
+ assert.ok(q.explanation.includes(q.options[0].match(/\\\((.*?)\\\)/s)[1]),q.id+" must explicitly list integer values");
+}
+console.log("PASS CĐ07 120-row ledger, three fully reduced answers, six composite-domain explanations and eight pending mappings");
+
 console.log("PASS CĐ07 exact rational polynomial arithmetic and semantic checks: "+JSON.stringify(results));
 console.log("PASS all 120 IDs, 4 source SHA locks, 8 review-only cases and full-text queue");
