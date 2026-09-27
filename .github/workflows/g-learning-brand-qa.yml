@@ -1,0 +1,31 @@
+name: G Learning branding QA
+
+on:
+  pull_request:
+    paths:
+      - 'docs/assets/branding/**'
+      - 'mkdocs.yml'
+      - 'scripts/test-g-learning-brand.js'
+      - '.github/workflows/g-learning-brand-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate G Learning assets and Self-Learning Math identity
+        run: node scripts/test-g-learning-brand.js
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install MkDocs Material
+        run: pip install mkdocs-material
+      - name: Validate strict static build
+        run: mkdocs build --strict
