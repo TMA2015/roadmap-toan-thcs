@@ -9,13 +9,17 @@ const json=p=>JSON.parse(read(p));
 const blob=body=>crypto.createHash("sha1").update("blob "+Buffer.byteLength(body)+"\0").update(body).digest("hex");
 const cfg=json("docs/assets/data/curriculum/complete-factorization-preview-v2.json");
 const source="docs/assets/data/practice/"+cfg.source_file;
-const bank=json(source);
+const banks=Object.fromEntries(Object.entries(cfg.source_files).map(([file,digest])=>{
+ const sourcePath="docs/assets/data/practice/"+file;
+ assert.equal(blob(read(sourcePath)),digest,"source version drift: "+file);
+ return [file,json(sourcePath).questions];
+}));
 const logic=require("../docs/assets/javascripts/complete-factorization-preview-v2.js");
 assert.equal(logic.BUILD,"complete-factor-preview-v2-20260927");
 assert.equal(blob(read(source)),cfg.source_file_blob_sha,"source SHA drift");
 assert.ok(logic.validConfig(cfg));
 assert.deepEqual(cfg.initial_question_ids,Array.from({length:8},(_,i)=>"FAC06V1_"+String(77+i).padStart(3,"0")));
-const sets=logic.prepareSets(cfg,bank.questions);
+const sets=logic.prepareSets(cfg,banks);
 assert.equal(sets.initial.length,8);
 assert.equal(Object.keys(sets.similar).length,8);
 const initial=new Set(sets.initial.map(q=>q.id));
@@ -28,7 +32,7 @@ for(let i=0;i<8;i++){
   assert.notEqual(related.question,original.question);
   for(const q of [original,related]){
     assert.equal(q.assessed_skill,"phan-tich-da-thuc-hoan-toan");
-    assert.equal(q.source_blob_sha,cfg.source_file_blob_sha);
+    assert.equal(q.source_blob_sha,cfg.source_files[q.source_file]);
     assert.deepEqual(q.tags.skill,["phoi-hop-phuong-phap"]);
     assert.equal(q.options.length,4);
     assert.ok(q.explanation.includes("="),"must show worked answer");
@@ -50,7 +54,7 @@ assert.deepEqual(logic.summarize([{question:sets.initial[0],correct:true},{quest
 assert.deepEqual(logic.shuffle([0,1,2,3],()=>0).sort(),[0,1,2,3]);
 assert.equal(logic.validConfig({...cfg,similar_question_by_initial_id:{...cfg.similar_question_by_initial_id,[cfg.initial_question_ids[0]]:cfg.initial_question_ids[0]}}),false);
 assert.equal(logic.validConfig({...cfg,similar_question_by_initial_id:{...cfg.similar_question_by_initial_id,[cfg.initial_question_ids[0]]:cfg.similar_question_by_initial_id[cfg.initial_question_ids[1]]}}),false);
-assert.throws(()=>logic.prepareSets(cfg,bank.questions.filter(q=>q.id!==cfg.initial_question_ids[0])));
+assert.throws(()=>logic.prepareSets(cfg,{...banks,[cfg.source_file]:banks[cfg.source_file].filter(q=>q.id!==cfg.initial_question_ids[0])}));
 const js=read("docs/assets/javascripts/complete-factorization-preview-v2.js");
 assert.ok(!/\blocalStorage\b|\bsessionStorage\b|indexedDB|document\.cookie/.test(js),"preview must never read or write learner storage");
 assert.ok(!js.includes("appendEvidence")&&!js.includes("recordAnswer"));
