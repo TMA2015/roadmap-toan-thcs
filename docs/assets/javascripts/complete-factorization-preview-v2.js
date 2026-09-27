@@ -17,13 +17,20 @@
     cfg.legacy_source_tag === "phoi-hop-phuong-phap" &&
     /^06-phan-tich-da-thuc-v1-\d{2}\.json$/.test(cfg.source_file || "") &&
     /^[0-9a-f]{40}$/.test(cfg.source_file_blob_sha || "") &&
+    cfg.source_file_blob_sha === cfg.source_files?.[cfg.source_file] &&
+    Object.keys(cfg.source_files || {}).length === 2 &&
+    Object.entries(cfg.source_files || {}).every(([file, sha]) =>
+      /^06-phan-tich-da-thuc-v1-\d{2}\.json$/.test(file) && /^[0-9a-f]{40}$/.test(sha)) &&
     Array.isArray(cfg.initial_question_ids) && cfg.initial_question_ids.length === 8 &&
     new Set(cfg.initial_question_ids).size === 8 &&
     !!cfg.similar_question_by_initial_id &&
     Object.keys(cfg.similar_question_by_initial_id).length === 8 &&
     cfg.initial_question_ids.every(id => Object.hasOwn(cfg.similar_question_by_initial_id, id)) &&
     new Set(Object.values(cfg.similar_question_by_initial_id)).size === 8 &&
-    Object.values(cfg.similar_question_by_initial_id).every(id => !cfg.initial_question_ids.includes(id));
+    Object.values(cfg.similar_question_by_initial_id).every(id => !cfg.initial_question_ids.includes(id)) &&
+    Object.keys(cfg.source_file_by_question_id || {}).length === 16 &&
+    [...cfg.initial_question_ids, ...Object.values(cfg.similar_question_by_initial_id)]
+      .every(id => Object.hasOwn(cfg.source_files, cfg.source_file_by_question_id[id]));
 
   const validQuestion = (q, cfg) => !!q && /^FAC06V1_0(7[7-9]|8[0-9]|9[0-2])$/.test(q.id || "") &&
     Array.isArray(q.tags?.skill) && q.tags.skill.length === 1 &&
@@ -35,15 +42,15 @@
     q.answer >= 0 && q.answer < 4 &&
     typeof q.explanation === "string" && !!q.explanation.trim();
 
-  const prepareSets = (cfg, bank) => {
-    if (!validConfig(cfg) || !Array.isArray(bank)) throw new Error("Học liệu thử nghiệm không đúng phiên bản.");
-    const ids = [...cfg.initial_question_ids, ...Object.values(cfg.similar_question_by_initial_id)];
-    const found = new Map(bank.map(q => [q.id, q]));
+  const prepareSets = (cfg, banks) => {
+    if (!validConfig(cfg) || !banks || typeof banks !== "object") throw new Error("Học liệu thử nghiệm không đúng phiên bản.");
     const read = id => {
-      const question = found.get(id);
+      const file = cfg.source_file_by_question_id[id];
+      const questions = banks[file];
+      const question = Array.isArray(questions) ? questions.find(item => item.id === id) : null;
       if (!validQuestion(question, cfg)) throw new Error("Câu nguồn chưa qua kiểm tra: " + id);
       return { ...question, assessed_skill: cfg.candidate_assessed_skill,
-        source_file: cfg.source_file, source_blob_sha: cfg.source_file_blob_sha };
+        source_file: file, source_blob_sha: cfg.source_files[file] };
     };
     const initial = cfg.initial_question_ids.map(read);
     const similar = Object.fromEntries(cfg.initial_question_ids.map(id =>
@@ -91,8 +98,11 @@
     const assets = new URL(root.dataset.assetsBase || "../../assets/", document.baseURI);
     const cfg = await fetchJson(new URL("data/curriculum/complete-factorization-preview-v2.json", assets));
     if (!validConfig(cfg)) throw new Error("Gói câu hỏi chưa khớp cấu hình thử nghiệm.");
-    const bank = await fetchJson(new URL("data/practice/" + cfg.source_file, assets));
-    return prepareSets(cfg, bank.questions);
+    const banks = Object.fromEntries(await Promise.all(Object.keys(cfg.source_files).map(async file => {
+      const bank = await fetchJson(new URL("data/practice/" + file, assets));
+      return [file, bank.questions];
+    })));
+    return prepareSets(cfg, banks);
   };
 
   class Preview {
