@@ -57,7 +57,7 @@ with sync_playwright() as pw:
     assert len(page.evaluate("JSON.parse(localStorage.getItem('toan-thcs-assessment-v2')).events"))==2
     page.locator(".skill-pilot-nav-next").click()
     for i,(qid,answer,skill) in enumerate(items[1:],start=1):
-        assert qid in page.locator(".skill-pilot-meta").inner_text() or items[i][0]==qid
+        assert qid in page.locator(".skill-pilot-meta").inner_text()
         picked=(answer+1)%4 if i in wrong else answer
         page.locator(f'.skill-pilot-option[data-original-index="{picked}"]').click()
         state=page.evaluate("JSON.parse(localStorage.getItem('toan-thcs-assessment-v2'))")
