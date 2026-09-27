@@ -14,6 +14,9 @@ on:
       - 'docs/assets/data/curriculum/cd06-academic-qa-ledger-v1.json'
       - 'docs/roadmap/cd06-academic-qa-v1.md'
       - 'scripts/test-cd06-academic-qa.js'
+      - 'docs/assets/data/practice/07-phan-thuc-dai-so-v1-*.json'
+      - 'docs/roadmap/cd07-academic-qa-v1.md'
+      - 'scripts/test-cd07-domain-qa.js'
       - 'docs/roadmap/cd04-academic-qa-v1.md'
       - 'docs/roadmap/primary-skill-overlay-review-04-07-v1.md'
       - 'docs/roadmap/primary-skill-overlay-review-cases-04-07-v1.md'
@@ -43,6 +46,8 @@ jobs:
         run: node scripts/test-cd05-academic-qa.js
       - name: Verify CĐ06 exact polynomial factorization and application scope
         run: node scripts/test-cd06-academic-qa.js
+      - name: Verify CĐ07 exact rational domains and flagged assessment scope
+        run: node scripts/test-cd07-domain-qa.js
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
