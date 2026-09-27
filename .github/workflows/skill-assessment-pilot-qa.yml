@@ -11,6 +11,13 @@ on:
       - 'scripts/test-skill-assessment-pilot.js'
       - 'scripts/test-skill-assessment-pilot-browser.py'
       - 'docs/assets/javascripts/skill-assessment-pilot-v2.js'
+      - 'docs/assets/javascripts/complete-factorization-preview-v1.js'
+      - 'docs/assets/data/curriculum/complete-factorization-preview-v1.json'
+      - 'docs/assets/data/curriculum/primary-skill-decision-register-39-v1.json'
+      - 'docs/assets/data/practice/06-phan-tich-da-thuc-v1-03.json'
+      - 'docs/huong-dan/thu-nghiem-phan-tich-hoan-toan.md'
+      - 'scripts/test-complete-factorization-preview.js'
+      - 'scripts/test-complete-factorization-preview-browser.py'
       - 'docs/assets/stylesheets/skill-assessment-pilot-v2.css'
       - 'docs/huong-dan/thu-nghiem-danh-gia-ky-nang-v2.md'
       - 'mkdocs.yml'
@@ -33,8 +40,12 @@ jobs:
           node-version: '22'
       - name: Validate pilot JavaScript syntax
         run: node --check docs/assets/javascripts/skill-assessment-pilot-v2.js
+      - name: Check isolated CĐ06 preview script syntax
+        run: node --check docs/assets/javascripts/complete-factorization-preview-v1.js
       - name: Run source-locked pilot regression tests
         run: node scripts/test-skill-assessment-pilot.js
+      - name: Verify source-locked CĐ06 preview, no learner storage writes
+        run: node scripts/test-complete-factorization-preview.js
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
@@ -49,3 +60,4 @@ jobs:
           python -m http.server 8766 --directory site >/tmp/skill-pilot-preview.log 2>&1 &
           for i in {1..30}; do curl --fail --silent http://127.0.0.1:8766/ >/dev/null && break; sleep 0.2; done
           python scripts/test-skill-assessment-pilot-browser.py
+          python scripts/test-complete-factorization-preview-browser.py
