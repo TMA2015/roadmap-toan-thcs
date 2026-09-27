@@ -12,6 +12,8 @@
 
 **QA học thuật CĐ04:** [Báo cáo 132 câu và tám làm rõ giả thiết](cd04-academic-qa-v1.md), [ledger theo từng ID](../assets/data/curriculum/cd04-academic-qa-ledger-v1.json). Hai trường hợp skill tag chưa quyết định là ALG04V2_009 và ALG04V2_010; không sử dụng overlay để chấm mastery khi chưa duyệt.
 
+**Phân luồng 39 trường hợp:** [Hồ sơ quyết định theo câu](primary-skill-decisions-39-v1.md) — 19 ứng viên thử nghiệm có giới hạn, 18 câu formative-only, 2 câu chờ xác nhận tầng mở rộng. Chưa đưa dữ liệu đề xuất vào chấm mastery hay chuyển đổi lịch sử. 
+
 ## Dữ liệu đã kiểm tra
 
 - 22 manifest đang được bộ tải luyện tập tham chiếu, 99 tệp câu hỏi nguồn.

@@ -1,0 +1,1163 @@
+{
+  "schema": "primary-skill-decision-register-v1",
+  "as_of": "2026-09-27",
+  "status": "question_level_triage_completed_not_consumed_by_runtime",
+  "scope": "39 flagged entries CĐ04–07, not a global taxonomy migration",
+  "review_packets": [
+    {
+      "path": "docs/assets/data/curriculum/primary-skill-review-queue-04-05-v1.json",
+      "blob_sha": "289e6f6c643a308ae6a0d255ce80fc7680a97846"
+    },
+    {
+      "path": "docs/assets/data/curriculum/primary-skill-review-queue-06-07-v1.json",
+      "blob_sha": "73d3bd84fcec987e40827cfe9dc228ab643b8441"
+    }
+  ],
+  "source_overlays": {
+    "04-bieu-thuc-dai-so": {
+      "path": "docs/assets/data/curriculum/primary-skill-overlay-draft-04-bieu-thuc-dai-so-v1.json",
+      "blob_sha": "ce798874d06e8ad8fe622c6ba1f29c835add6c4b"
+    },
+    "05-7-hang-dang-thuc": {
+      "path": "docs/assets/data/curriculum/primary-skill-overlay-draft-05-7-hang-dang-thuc-v1.json",
+      "blob_sha": "d8cc862c82f039c4f2e252a7478e42c39ea7d2a4"
+    },
+    "06-phan-tich-da-thuc": {
+      "path": "docs/assets/data/curriculum/primary-skill-overlay-draft-06-phan-tich-da-thuc-v1.json",
+      "blob_sha": "274646325f8203484958c0c4a45fb02cb19dd13e"
+    },
+    "07-phan-thuc-dai-so": {
+      "path": "docs/assets/data/curriculum/primary-skill-overlay-draft-07-phan-thuc-dai-so-v1.json",
+      "blob_sha": "6e5294581867ea206885210f0e75cdf416b95201"
+    }
+  },
+  "limits": [
+    "19 scoped candidates are only eligible for a separately tested formative pilot, not mastery approval; answer correctness does not prove all intermediate methods.",
+    "The 16 CĐ06 outputs propose one NEW focused assessment code phan-tich-da-thuc-hoan-toan. Its existing legacy tag phoi-hop-phuong-phap is not silently renamed; canonical ID and display label require explicit registry/review.",
+    "4 CĐ05 proof MCQs, 8 CĐ06 application MCQs, and 6 CĐ07 repeated composite MCQs remain formative only. 2 CĐ07 integer-value questions await curricular tier review.",
+    "No changes to legacy IDs, tags, Question Bank, learner localStorage or mastery evidence."
+  ],
+  "single_new_canonical_candidate": {
+    "id": "phan-tich-da-thuc-hoan-toan",
+    "display_name": "Nhận diện kết quả phân tích đa thức hoàn toàn",
+    "source_topic": "06-phan-tich-da-thuc",
+    "source_legacy_tag": "phoi-hop-phuong-phap",
+    "observable": "Chọn kết quả cuối dạng tích, không dừng ở dạng tương đương hoặc kết quả trung gian.",
+    "not_claimed": "Chứng minh được phương pháp trung gian.",
+    "registry_status": "proposal_not_registered_or_live"
+  },
+  "summary": {
+    "total": 39,
+    "scoped_primary_candidate": 19,
+    "formative_only_requires_new_evidence": 18,
+    "extension_only_pending_layer_check": 2,
+    "selected_candidate": 19,
+    "runtime_enabled": 0,
+    "core_readiness_credit": 0
+  },
+  "items": [
+    {
+      "question_id": "ALG04V2_009",
+      "topic": "04-bieu-thuc-dai-so",
+      "question_source": "04-bieu-thuc-dai-so-v2-01.json",
+      "question_source_blob_sha": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+      "queue_source": "primary-skill-review-queue-04-05-v1.json",
+      "legacy_skill_tags": [
+        "nhan-biet-da-thuc"
+      ],
+      "previous_draft_primary": "nhan-biet-da-thuc",
+      "original_flags": [
+        "broad_label_free_term"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "nhan-biet-da-thuc",
+      "learner_facing_scope_label": "Nhận biết cấu trúc đa thức (hạng tử tự do)",
+      "observable_answer_evidence": "Chọn đúng hạng tử không chứa biến trong một đa thức đã cho.",
+      "does_not_establish": [
+        "Nhận biết đầy đủ mọi thành phần đa thức",
+        "Thành thạo thu gọn đa thức"
+      ],
+      "review_next_action": "Thêm 2 dạng hạng tử tự do khác trước khi kết luận vững; không tạo skill độc lập chỉ cho hạng tử tự do.",
+      "learner_remediation": "Phân biệt hạng tử chứa biến và hạng tử tự do.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "ALG04V2_010",
+      "topic": "04-bieu-thuc-dai-so",
+      "question_source": "04-bieu-thuc-dai-so-v2-01.json",
+      "question_source_blob_sha": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+      "queue_source": "primary-skill-review-queue-04-05-v1.json",
+      "legacy_skill_tags": [
+        "nhan-biet-don-thuc",
+        "he-so-bac"
+      ],
+      "previous_draft_primary": "nhan-biet-don-thuc",
+      "original_flags": [
+        "tag_he_so_bac_not_actual_target"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "nhan-biet-don-thuc",
+      "learner_facing_scope_label": "Nhận biết cấu trúc đơn thức (phần biến)",
+      "observable_answer_evidence": "Chọn đúng phần biến của đơn thức có hệ số âm.",
+      "does_not_establish": [
+        "Xác định hệ số và bậc của đơn thức",
+        "Thành thạo mọi dạng đơn thức"
+      ],
+      "review_next_action": "Không cộng bất cứ mastery nào cho he-so-bac; bổ sung ví dụ phần biến khác nếu đo ổn định.",
+      "learner_remediation": "Tách hệ số -8 ra khỏi a²b⁵; luyện riêng hệ số/bậc.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "ID05V1_116",
+      "topic": "05-7-hang-dang-thuc",
+      "question_source": "05-7-hang-dang-thuc-v1-04.json",
+      "question_source_blob_sha": "c1edbbe7eba0d144a32d54cb384eb1ec09f156c8",
+      "queue_source": "primary-skill-review-queue-04-05-v1.json",
+      "legacy_skill_tags": [
+        "chung-minh-hdt"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "recognition_or_method_question_not_a_full_proof",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Nhận diện đẳng thức đúng sau khai triển",
+      "observable_answer_evidence": "Nhận diện một đẳng thức đúng từ bốn lựa chọn.",
+      "does_not_establish": [
+        "Tự trình bày chứng minh tổng quát",
+        "Tự thực hiện đầy đủ các bước khai triển"
+      ],
+      "review_next_action": "Giữ câu làm câu hỏi học tập; muốn đánh giá chứng minh cần bài viết từng bước với rubric, không dùng tag chung-minh-hdt làm mastery từ đáp án MCQ.",
+      "learner_remediation": "Tự khai triển từng vế, thu gọn và trình bày vì sao đẳng thức đúng với mọi biến.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "ID05V1_117",
+      "topic": "05-7-hang-dang-thuc",
+      "question_source": "05-7-hang-dang-thuc-v1-04.json",
+      "question_source_blob_sha": "c1edbbe7eba0d144a32d54cb384eb1ec09f156c8",
+      "queue_source": "primary-skill-review-queue-04-05-v1.json",
+      "legacy_skill_tags": [
+        "chung-minh-hdt"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "recognition_or_method_question_not_a_full_proof",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Nhận diện đẳng thức đúng sau khai triển",
+      "observable_answer_evidence": "Nhận diện một đẳng thức đúng từ bốn lựa chọn.",
+      "does_not_establish": [
+        "Tự trình bày chứng minh tổng quát",
+        "Tự thực hiện đầy đủ các bước khai triển"
+      ],
+      "review_next_action": "Giữ câu làm câu hỏi học tập; muốn đánh giá chứng minh cần bài viết từng bước với rubric, không dùng tag chung-minh-hdt làm mastery từ đáp án MCQ.",
+      "learner_remediation": "Tự khai triển từng vế, thu gọn và trình bày vì sao đẳng thức đúng với mọi biến.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "ID05V1_118",
+      "topic": "05-7-hang-dang-thuc",
+      "question_source": "05-7-hang-dang-thuc-v1-04.json",
+      "question_source_blob_sha": "c1edbbe7eba0d144a32d54cb384eb1ec09f156c8",
+      "queue_source": "primary-skill-review-queue-04-05-v1.json",
+      "legacy_skill_tags": [
+        "chung-minh-hdt"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "recognition_or_method_question_not_a_full_proof",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Nhận diện đẳng thức đúng sau khai triển",
+      "observable_answer_evidence": "Nhận diện một đẳng thức đúng từ bốn lựa chọn.",
+      "does_not_establish": [
+        "Tự trình bày chứng minh tổng quát",
+        "Tự thực hiện đầy đủ các bước khai triển"
+      ],
+      "review_next_action": "Giữ câu làm câu hỏi học tập; muốn đánh giá chứng minh cần bài viết từng bước với rubric, không dùng tag chung-minh-hdt làm mastery từ đáp án MCQ.",
+      "learner_remediation": "Tự khai triển từng vế, thu gọn và trình bày vì sao đẳng thức đúng với mọi biến.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "ID05V1_119",
+      "topic": "05-7-hang-dang-thuc",
+      "question_source": "05-7-hang-dang-thuc-v1-04.json",
+      "question_source_blob_sha": "c1edbbe7eba0d144a32d54cb384eb1ec09f156c8",
+      "queue_source": "primary-skill-review-queue-04-05-v1.json",
+      "legacy_skill_tags": [
+        "chung-minh-hdt"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "recognition_or_method_question_not_a_full_proof",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Chọn phương pháp bắt đầu chứng minh",
+      "observable_answer_evidence": "Chọn thao tác khai triển hai bình phương và thu gọn.",
+      "does_not_establish": [
+        "Tự trình bày chứng minh tổng quát",
+        "Tự thực hiện đầy đủ các bước khai triển"
+      ],
+      "review_next_action": "Giữ câu làm câu hỏi học tập; muốn đánh giá chứng minh cần bài viết từng bước với rubric, không dùng tag chung-minh-hdt làm mastery từ đáp án MCQ.",
+      "learner_remediation": "Tự khai triển từng vế, thu gọn và trình bày vì sao đẳng thức đúng với mọi biến.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "ID05V1_120",
+      "topic": "05-7-hang-dang-thuc",
+      "question_source": "05-7-hang-dang-thuc-v1-04.json",
+      "question_source_blob_sha": "c1edbbe7eba0d144a32d54cb384eb1ec09f156c8",
+      "queue_source": "primary-skill-review-queue-04-05-v1.json",
+      "legacy_skill_tags": [
+        "phan-tich-hdt",
+        "hieu-hai-binh-phuong"
+      ],
+      "previous_draft_primary": "hieu-hai-binh-phuong",
+      "original_flags": [
+        "factorization_first_step_not_full_factorization"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "learner_facing_scope_label": "Nhận dạng và áp dụng hiệu hai bình phương (bước đầu)",
+      "observable_answer_evidence": "Chọn bước đầu đúng để tách x⁴−16 thành tích.",
+      "does_not_establish": [
+        "Phân tích hoàn toàn đa thức bậc bốn",
+        "Thành thạo mọi HĐT"
+      ],
+      "review_next_action": "Giữ nhãn phan-tich-hdt ở vai trò nhóm cha; không chấm kỹ năng phân tích hoàn toàn từ câu này.",
+      "learner_remediation": "Sau (x²−4)(x²+4), kiểm tra x²−4 còn phân tích được.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_077",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_078",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_079",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_080",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_081",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_082",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_083",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_084",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_085",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_086",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_087",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_088",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_089",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_090",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-03.json",
+      "question_source_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_091",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-04.json",
+      "question_source_blob_sha": "281e90b8c791d3047c4c0413a2fea58958bd2323",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_092",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-04.json",
+      "question_source_blob_sha": "281e90b8c791d3047c4c0413a2fea58958bd2323",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "phoi-hop-phuong-phap"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "scoped_primary_candidate",
+      "selected_assessed_skill_candidate": "phan-tich-da-thuc-hoan-toan",
+      "learner_facing_scope_label": "Chọn kết quả phân tích đa thức hoàn toàn",
+      "observable_answer_evidence": "Nhận diện dạng tích đã phân tích hoàn toàn; phân biệt đáp án trung gian hoặc thiếu nhân tử.",
+      "does_not_establish": [
+        "Đã tự thực hiện đúng mọi phương pháp trung gian",
+        "Đã biết chứng minh sự phân tích bằng các bước viết"
+      ],
+      "review_next_action": "Đề xuất duy nhất một năng lực đầu ra gọn cho cả 16 câu; đăng ký mã mới trong lớp assessment trước khi dùng, không đổi tag gốc phoi-hop-phuong-phap; chỉ dùng evidence tập luyện không xét Core Readiness ngay.",
+      "learner_remediation": "Đặt nhân tử chung, nhận dạng HĐT/nhóm hạng tử rồi kiểm tra mỗi nhân tử còn phân tích được không.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_113",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-04.json",
+      "question_source_blob_sha": "281e90b8c791d3047c4c0413a2fea58958bd2323",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "ung-dung-phan-tich"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Nhận diện lập luận chia hết từ dạng tích",
+      "observable_answer_evidence": "Chọn lập luận đúng về tích hai hoặc ba số nguyên liên tiếp.",
+      "does_not_establish": [
+        "Tự trình bày chứng minh chia hết",
+        "Thành thạo tất cả vận dụng phân tích đa thức"
+      ],
+      "review_next_action": "Dùng làm câu hỏi kiểm tra hiểu; nếu đo năng lực lập luận, cần câu yêu cầu điền nguyên nhân hoặc tự viết giải thích.",
+      "learner_remediation": "Viết dạng tích rồi nêu lý do trong các số liên tiếp có thừa số chia hết cho 2 hoặc 3.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_114",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-04.json",
+      "question_source_blob_sha": "281e90b8c791d3047c4c0413a2fea58958bd2323",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "ung-dung-phan-tich"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Nhận diện lập luận chia hết từ dạng tích",
+      "observable_answer_evidence": "Chọn lập luận đúng về tích hai hoặc ba số nguyên liên tiếp.",
+      "does_not_establish": [
+        "Tự trình bày chứng minh chia hết",
+        "Thành thạo tất cả vận dụng phân tích đa thức"
+      ],
+      "review_next_action": "Dùng làm câu hỏi kiểm tra hiểu; nếu đo năng lực lập luận, cần câu yêu cầu điền nguyên nhân hoặc tự viết giải thích.",
+      "learner_remediation": "Viết dạng tích rồi nêu lý do trong các số liên tiếp có thừa số chia hết cho 2 hoặc 3.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_115",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-04.json",
+      "question_source_blob_sha": "281e90b8c791d3047c4c0413a2fea58958bd2323",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "ung-dung-phan-tich"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Nhận diện lập luận chia hết từ dạng tích",
+      "observable_answer_evidence": "Chọn lập luận đúng về tích hai hoặc ba số nguyên liên tiếp.",
+      "does_not_establish": [
+        "Tự trình bày chứng minh chia hết",
+        "Thành thạo tất cả vận dụng phân tích đa thức"
+      ],
+      "review_next_action": "Dùng làm câu hỏi kiểm tra hiểu; nếu đo năng lực lập luận, cần câu yêu cầu điền nguyên nhân hoặc tự viết giải thích.",
+      "learner_remediation": "Viết dạng tích rồi nêu lý do trong các số liên tiếp có thừa số chia hết cho 2 hoặc 3.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_116",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-04.json",
+      "question_source_blob_sha": "281e90b8c791d3047c4c0413a2fea58958bd2323",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "ung-dung-phan-tich"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Nhận diện lập luận chia hết từ dạng tích",
+      "observable_answer_evidence": "Chọn lập luận đúng về tích hai hoặc ba số nguyên liên tiếp.",
+      "does_not_establish": [
+        "Tự trình bày chứng minh chia hết",
+        "Thành thạo tất cả vận dụng phân tích đa thức"
+      ],
+      "review_next_action": "Dùng làm câu hỏi kiểm tra hiểu; nếu đo năng lực lập luận, cần câu yêu cầu điền nguyên nhân hoặc tự viết giải thích.",
+      "learner_remediation": "Viết dạng tích rồi nêu lý do trong các số liên tiếp có thừa số chia hết cho 2 hoặc 3.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_117",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-04.json",
+      "question_source_blob_sha": "281e90b8c791d3047c4c0413a2fea58958bd2323",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "ung-dung-phan-tich"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Tính kết quả số từ hiệu hai bình phương",
+      "observable_answer_evidence": "Chọn đúng giá trị số của phép tính đã cho.",
+      "does_not_establish": [
+        "Đã dùng phương pháp phân tích nhân tử",
+        "Đã chọn được HĐT thích hợp độc lập"
+      ],
+      "review_next_action": "Muốn đo cách làm, thêm bài hỏi biểu thức tích trung gian trước khi nhận kết quả cuối; không sinh mastery của phương pháp từ một đáp số.",
+      "learner_remediation": "Viết a²−b²=(a−b)(a+b), thay hai số rồi mới tính.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_118",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-04.json",
+      "question_source_blob_sha": "281e90b8c791d3047c4c0413a2fea58958bd2323",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "ung-dung-phan-tich"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Tính kết quả số từ hiệu hai bình phương",
+      "observable_answer_evidence": "Chọn đúng giá trị số của phép tính đã cho.",
+      "does_not_establish": [
+        "Đã dùng phương pháp phân tích nhân tử",
+        "Đã chọn được HĐT thích hợp độc lập"
+      ],
+      "review_next_action": "Muốn đo cách làm, thêm bài hỏi biểu thức tích trung gian trước khi nhận kết quả cuối; không sinh mastery của phương pháp từ một đáp số.",
+      "learner_remediation": "Viết a²−b²=(a−b)(a+b), thay hai số rồi mới tính.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_119",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-04.json",
+      "question_source_blob_sha": "281e90b8c791d3047c4c0413a2fea58958bd2323",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "ung-dung-phan-tich"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Tính kết quả số từ hiệu hai bình phương",
+      "observable_answer_evidence": "Chọn đúng giá trị số của phép tính đã cho.",
+      "does_not_establish": [
+        "Đã dùng phương pháp phân tích nhân tử",
+        "Đã chọn được HĐT thích hợp độc lập"
+      ],
+      "review_next_action": "Muốn đo cách làm, thêm bài hỏi biểu thức tích trung gian trước khi nhận kết quả cuối; không sinh mastery của phương pháp từ một đáp số.",
+      "learner_remediation": "Viết a²−b²=(a−b)(a+b), thay hai số rồi mới tính.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "FAC06V1_120",
+      "topic": "06-phan-tich-da-thuc",
+      "question_source": "06-phan-tich-da-thuc-v1-04.json",
+      "question_source_blob_sha": "281e90b8c791d3047c4c0413a2fea58958bd2323",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "ung-dung-phan-tich"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Tính kết quả số từ hiệu hai bình phương",
+      "observable_answer_evidence": "Chọn đúng giá trị số của phép tính đã cho.",
+      "does_not_establish": [
+        "Đã dùng phương pháp phân tích nhân tử",
+        "Đã chọn được HĐT thích hợp độc lập"
+      ],
+      "review_next_action": "Muốn đo cách làm, thêm bài hỏi biểu thức tích trung gian trước khi nhận kết quả cuối; không sinh mastery của phương pháp từ một đáp số.",
+      "learner_remediation": "Viết a²−b²=(a−b)(a+b), thay hai số rồi mới tính.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "RAT07V1_109",
+      "topic": "07-phan-thuc-dai-so",
+      "question_source": "07-phan-thuc-dai-so-v1-04.json",
+      "question_source_blob_sha": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-nhieu-phep-tinh",
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "composite_item_needs_step_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Rút gọn biểu thức phân thức nhiều phép tính (đầu ra)",
+      "observable_answer_evidence": "Chọn kết quả cuối bằng 1 trên miền xác định đã nêu.",
+      "does_not_establish": [
+        "Làm đúng độc lập cả bước cộng, nhân và điều kiện xác định",
+        "Nắm chắc dạng bài khác ngoài mẫu đồng nhất 6 câu"
+      ],
+      "review_next_action": "Sáu câu cùng công thức cho đáp án 1; giữ formative, thay đổi cấu trúc/đáp án và thêm câu hỏi điều kiện xác định trước khi dùng như evidence đáng tin cậy.",
+      "learner_remediation": "Viết miền xác định, quy đồng trong ngoặc, nhân và chỉ rút gọn trên miền gốc.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "RAT07V1_110",
+      "topic": "07-phan-thuc-dai-so",
+      "question_source": "07-phan-thuc-dai-so-v1-04.json",
+      "question_source_blob_sha": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-nhieu-phep-tinh",
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "composite_item_needs_step_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Rút gọn biểu thức phân thức nhiều phép tính (đầu ra)",
+      "observable_answer_evidence": "Chọn kết quả cuối bằng 1 trên miền xác định đã nêu.",
+      "does_not_establish": [
+        "Làm đúng độc lập cả bước cộng, nhân và điều kiện xác định",
+        "Nắm chắc dạng bài khác ngoài mẫu đồng nhất 6 câu"
+      ],
+      "review_next_action": "Sáu câu cùng công thức cho đáp án 1; giữ formative, thay đổi cấu trúc/đáp án và thêm câu hỏi điều kiện xác định trước khi dùng như evidence đáng tin cậy.",
+      "learner_remediation": "Viết miền xác định, quy đồng trong ngoặc, nhân và chỉ rút gọn trên miền gốc.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "RAT07V1_111",
+      "topic": "07-phan-thuc-dai-so",
+      "question_source": "07-phan-thuc-dai-so-v1-04.json",
+      "question_source_blob_sha": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-nhieu-phep-tinh",
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "composite_item_needs_step_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Rút gọn biểu thức phân thức nhiều phép tính (đầu ra)",
+      "observable_answer_evidence": "Chọn kết quả cuối bằng 1 trên miền xác định đã nêu.",
+      "does_not_establish": [
+        "Làm đúng độc lập cả bước cộng, nhân và điều kiện xác định",
+        "Nắm chắc dạng bài khác ngoài mẫu đồng nhất 6 câu"
+      ],
+      "review_next_action": "Sáu câu cùng công thức cho đáp án 1; giữ formative, thay đổi cấu trúc/đáp án và thêm câu hỏi điều kiện xác định trước khi dùng như evidence đáng tin cậy.",
+      "learner_remediation": "Viết miền xác định, quy đồng trong ngoặc, nhân và chỉ rút gọn trên miền gốc.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "RAT07V1_112",
+      "topic": "07-phan-thuc-dai-so",
+      "question_source": "07-phan-thuc-dai-so-v1-04.json",
+      "question_source_blob_sha": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-nhieu-phep-tinh",
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "composite_item_needs_step_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Rút gọn biểu thức phân thức nhiều phép tính (đầu ra)",
+      "observable_answer_evidence": "Chọn kết quả cuối bằng 1 trên miền xác định đã nêu.",
+      "does_not_establish": [
+        "Làm đúng độc lập cả bước cộng, nhân và điều kiện xác định",
+        "Nắm chắc dạng bài khác ngoài mẫu đồng nhất 6 câu"
+      ],
+      "review_next_action": "Sáu câu cùng công thức cho đáp án 1; giữ formative, thay đổi cấu trúc/đáp án và thêm câu hỏi điều kiện xác định trước khi dùng như evidence đáng tin cậy.",
+      "learner_remediation": "Viết miền xác định, quy đồng trong ngoặc, nhân và chỉ rút gọn trên miền gốc.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "RAT07V1_113",
+      "topic": "07-phan-thuc-dai-so",
+      "question_source": "07-phan-thuc-dai-so-v1-04.json",
+      "question_source_blob_sha": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-nhieu-phep-tinh",
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "composite_item_needs_step_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Rút gọn biểu thức phân thức nhiều phép tính (đầu ra)",
+      "observable_answer_evidence": "Chọn kết quả cuối bằng 1 trên miền xác định đã nêu.",
+      "does_not_establish": [
+        "Làm đúng độc lập cả bước cộng, nhân và điều kiện xác định",
+        "Nắm chắc dạng bài khác ngoài mẫu đồng nhất 6 câu"
+      ],
+      "review_next_action": "Sáu câu cùng công thức cho đáp án 1; giữ formative, thay đổi cấu trúc/đáp án và thêm câu hỏi điều kiện xác định trước khi dùng như evidence đáng tin cậy.",
+      "learner_remediation": "Viết miền xác định, quy đồng trong ngoặc, nhân và chỉ rút gọn trên miền gốc.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "RAT07V1_114",
+      "topic": "07-phan-thuc-dai-so",
+      "question_source": "07-phan-thuc-dai-so-v1-04.json",
+      "question_source_blob_sha": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-nhieu-phep-tinh",
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "composite_item_needs_step_rubric",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "formative_only_requires_new_evidence",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Rút gọn biểu thức phân thức nhiều phép tính (đầu ra)",
+      "observable_answer_evidence": "Chọn kết quả cuối bằng 1 trên miền xác định đã nêu.",
+      "does_not_establish": [
+        "Làm đúng độc lập cả bước cộng, nhân và điều kiện xác định",
+        "Nắm chắc dạng bài khác ngoài mẫu đồng nhất 6 câu"
+      ],
+      "review_next_action": "Sáu câu cùng công thức cho đáp án 1; giữ formative, thay đổi cấu trúc/đáp án và thêm câu hỏi điều kiện xác định trước khi dùng như evidence đáng tin cậy.",
+      "learner_remediation": "Viết miền xác định, quy đồng trong ngoặc, nhân và chỉ rút gọn trên miền gốc.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "RAT07V1_119",
+      "topic": "07-phan-thuc-dai-so",
+      "question_source": "07-phan-thuc-dai-so-v1-04.json",
+      "question_source_blob_sha": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "tim-gia-tri-nguyen"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "check_curriculum_layer_not_core_by_default",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "extension_only_pending_layer_check",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Tìm giá trị nguyên của phân thức",
+      "observable_answer_evidence": "Chọn tập x nguyên bằng cách xét ước của một số nguyên.",
+      "does_not_establish": [
+        "Đáp ứng Core Readiness chung",
+        "Thành thạo mọi bài toán phân thức có tham số nguyên"
+      ],
+      "review_next_action": "Giữ bài ở luyện tập tự chọn/chờ đối chiếu lớp yêu cầu cần đạt KNTT; không gắn Core hay tạo một skill mới dựa trên hai câu.",
+      "learner_remediation": "Biến đổi thành số nguyên + hằng số/(x−a), liệt kê đủ ước và loại giá trị làm mẫu bằng 0.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "question_id": "RAT07V1_120",
+      "topic": "07-phan-thuc-dai-so",
+      "question_source": "07-phan-thuc-dai-so-v1-04.json",
+      "question_source_blob_sha": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "queue_source": "primary-skill-review-queue-06-07-v1.json",
+      "legacy_skill_tags": [
+        "tim-gia-tri-nguyen"
+      ],
+      "previous_draft_primary": null,
+      "original_flags": [
+        "check_curriculum_layer_not_core_by_default",
+        "no_production_primary_selected"
+      ],
+      "decision_status": "extension_only_pending_layer_check",
+      "selected_assessed_skill_candidate": null,
+      "learner_facing_scope_label": "Tìm giá trị nguyên của phân thức",
+      "observable_answer_evidence": "Chọn tập x nguyên bằng cách xét ước của một số nguyên.",
+      "does_not_establish": [
+        "Đáp ứng Core Readiness chung",
+        "Thành thạo mọi bài toán phân thức có tham số nguyên"
+      ],
+      "review_next_action": "Giữ bài ở luyện tập tự chọn/chờ đối chiếu lớp yêu cầu cần đạt KNTT; không gắn Core hay tạo một skill mới dựa trên hai câu.",
+      "learner_remediation": "Biến đổi thành số nguyên + hằng số/(x−a), liệt kê đủ ước và loại giá trị làm mẫu bằng 0.",
+      "maturity": "internal_question_level_review_not_approved_production_mastery",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    }
+  ]
+}
