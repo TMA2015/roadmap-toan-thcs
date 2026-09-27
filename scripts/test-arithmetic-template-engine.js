@@ -19,7 +19,6 @@ function canonical(n,d=1){
   while(b){const c=a%b;a=b;b=c;}
   return {n:n/a,d:d/a};
 }
-const key=x=>x.n+"/"+x.d;
 const totals={};
 for(const template of catalog.templates){
   let signatures=new Set(),ids=new Set(),count=0;
@@ -40,9 +39,6 @@ for(const template of catalog.templates){
     assert.ok(q.explanation.length>70,"solution too short: "+q.id);
     assert.ok(q.explanation.includes("\\(")&&q.explanation.includes("\\)"),"missing worked mathematical expression");
     assert.equal(new Set(q.options).size,4,"duplicate displayed choice: "+q.id);
-    assert.equal(new Set(q.options.map((_,i)=>key(engine.rational(
-      // Validate exact normalized underlying rational values independently below.
-      q.correct_value.n,q.correct_value.d)))).size,1); // canonical correct representation
     let expected;
     if(template.id==="INT_MIXED_ADD"){
       const {a,b}=q.params;
