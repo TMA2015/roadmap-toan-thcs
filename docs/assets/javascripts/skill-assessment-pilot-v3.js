@@ -259,7 +259,7 @@
       this.progress.textContent = "Câu " + (this.index + 1) + "/" + this.session.length +
         " · Đã nộp " + this.sessionAnswers.length + "/" + this.session.length + " · Đúng " + score;
       this.card.append(textEl("p", (q.question_kind === "micro_pilot" ? "🔎 Kiểm tra riêng" : "📘 Câu trong ngân hàng") +
-        " · " + q.topic + (record ? " · Đã nộp · Chỉ xem" : ""), "skill-pilot-meta"));
+        " · " + q.topic + " · " + q.id + (record ? " · Đã nộp · Chỉ xem" : ""), "skill-pilot-meta"));
       this.card.append(textEl("h3", "Kỹ năng đánh giá: " + label(q.assessed_skill), "skill-pilot-heading"));
       if (q.secondary_tag) this.card.append(textEl("p",
         "Liên quan: " + label(q.secondary_tag) + " (" +
