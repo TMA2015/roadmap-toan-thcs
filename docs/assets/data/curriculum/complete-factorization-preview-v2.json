@@ -1,0 +1,43 @@
+{
+  "schema": "complete-factorization-preview-v2",
+  "status": "opt_in_unscored_no_storage",
+  "as_of": "2026-09-27",
+  "topic": "06-phan-tich-da-thuc",
+  "candidate_assessed_skill": "phan-tich-da-thuc-hoan-toan",
+  "display_label": "Nhận diện kết quả phân tích đa thức hoàn toàn",
+  "legacy_source_tag": "phoi-hop-phuong-phap",
+  "source_file": "06-phan-tich-da-thuc-v1-03.json",
+  "source_file_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+  "initial_question_ids": [
+    "FAC06V1_077",
+    "FAC06V1_078",
+    "FAC06V1_079",
+    "FAC06V1_080",
+    "FAC06V1_081",
+    "FAC06V1_082",
+    "FAC06V1_083",
+    "FAC06V1_084"
+  ],
+  "similar_question_by_initial_id": {
+    "FAC06V1_077": "FAC06V1_085",
+    "FAC06V1_078": "FAC06V1_086",
+    "FAC06V1_079": "FAC06V1_087",
+    "FAC06V1_080": "FAC06V1_088",
+    "FAC06V1_081": "FAC06V1_089",
+    "FAC06V1_082": "FAC06V1_090",
+    "FAC06V1_083": "FAC06V1_091",
+    "FAC06V1_084": "FAC06V1_092"
+  },
+  "similarity_basis": "Matched four reviewed structural families in same source bank; each sibling has a different original question ID and coefficients, not a dynamically generated question.",
+  "modes": {
+    "initial": "First exposure within this 8-question session (no persistence).",
+    "retry_old": "Same original IDs after feedback; review only.",
+    "similar_after_feedback": "Different source IDs, same mathematical family; assisted transfer after feedback, not independent mastery evidence."
+  },
+  "warnings": [
+    "No write to localStorage, sessionStorage, assessment-v2, practice-v1 or Core Readiness.",
+    "A new question after immediate explanation remains post-feedback transfer, not automatic independent evidence.",
+    "The preview only measures recognition of a completely factored output, not unobserved intermediate methods.",
+    "Do not promote these 16 question IDs into Core mastery without separate longitudinal validation."
+  ]
+}
