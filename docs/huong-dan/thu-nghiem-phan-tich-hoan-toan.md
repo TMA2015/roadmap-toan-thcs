@@ -1,5 +1,7 @@
 # Thử nghiệm phân tích hoàn toàn — Beta riêng
 
+> **Đã có Beta v2:** [Mở phiên có Câu trước / Câu tiếp và câu tương tự khác ID](thu-nghiem-phan-tich-hoan-toan-v2.md). Trang cũ được giữ để tương thích liên kết đã chia sẻ.
+
 > **Self-Learning Math · Phiên thử nghiệm nhỏ, không lưu điểm.** Mục đích là kiểm tra xem dạng trắc nghiệm có giúp học sinh phân biệt *phân tích hoàn toàn* với *chỉ đặt được nhân tử chung/bước trung gian* hay không. [Về bài học CĐ06](../kien-thuc/06-phan-tich-da-thuc/index.md) · [Về Beta v2](thu-nghiem-danh-gia-ky-nang-v2.md).
 
 Bộ này có **8 câu nguồn CĐ06** đã qua QA toán học, bao gồm: đặt nhân tử chung + hiệu hai bình phương; đặt nhân tử chung + bình phương hoàn chỉnh; nhóm hạng tử; tách hạng tử giữa. Chọn một phương án, nhận lời giải ngay, xem câu sai và luyện lại riêng.
