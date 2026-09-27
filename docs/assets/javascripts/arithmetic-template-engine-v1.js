@@ -22,6 +22,7 @@
   const rational = (numerator, denominator = 1) => {
     int(numerator); int(denominator);
     if (denominator === 0) throw new Error("Zero denominator.");
+    if (numerator === 0) return { n: 0, d: 1 };
     if (denominator < 0) { numerator = -numerator; denominator = -denominator; }
     const div = gcd(numerator, denominator);
     return { n: numerator / div, d: denominator / div };
