@@ -29,7 +29,7 @@ const legacy={
  schema:"one-skill-assessment-events-v2",
  events:[{
    schema:"one-skill-assessment-event-v2",question_id:items[0].id,
-   assessed_skill:items[0].assessed_skill,correct:false,independent:true,
+   assessed_skill:items[0].assessed_skill,correct:true,independent:true,
    question_kind:"bank_sample",supporting_tags:[items[0].secondary_tag],
    context:null,attempted_at:"2026-09-26T00:00:00Z"
  }]
