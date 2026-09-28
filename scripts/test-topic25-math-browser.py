@@ -28,7 +28,7 @@ with sync_playwright() as p:
         assert not RAW.search(article.inner_text()), slug + " exposes raw TeX on main content"
         for hint in article.locator("details").all():
             hint.locator("summary").click()
-            page.wait_for_function("""node => node.open &&
+            page.wait_for_function(r"""node => node.open &&
               !/\\(?:cdot|triangle|sim|sqrt|frac|Rightarrow|angle|leftrightarrow)\b/.test(node.innerText)""",
               arg=hint.element_handle(), timeout=12000)
         assert not RAW.search(article.inner_text()), slug + " exposes raw TeX after opening hints"
