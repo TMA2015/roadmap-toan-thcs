@@ -311,7 +311,7 @@ def check_academic_capstone(num, folder, lesson_text, practice_text, self_text):
     if "đáp án và hướng dẫn tự chấm" not in self_text.lower():
         issues.append(f"{num:02d}: Academic Capstone self-check thiếu đáp án/hướng dẫn chấm")
 
-    if "điểm học sinh tự chấm" not in self_text or "không cộng điểm này vào kết quả Readiness tự động" not in self_text:
+    if "điểm học sinh tự chấm" not in self_text.lower() or "không cộng điểm này vào kết quả readiness tự động" not in self_text.lower():
         issues.append(f"{num:02d}: Academic Capstone chưa tách điểm học thuật khỏi kỹ năng thi")
 
     for filename in ["bai-toan-kinh-dien.md", "de-luyen-01.md", "tu-danh-gia-ky-nang-thi.md"]:
