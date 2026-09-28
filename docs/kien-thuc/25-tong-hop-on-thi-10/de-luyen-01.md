@@ -9,11 +9,13 @@
 ### Bài I – Đại số nền tảng (2,0 điểm)
 
 1. Rút gọn
+
 \[
 A=\sqrt{72}-2\sqrt8+\sqrt{18}.
 \]
 
 2. Giải phương trình
+
 \[
 \frac{x-2}{x+1}=\frac23.
 \]
@@ -21,10 +23,13 @@ A=\sqrt{72}-2\sqrt8+\sqrt{18}.
 ### Bài II – Hàm số, phương trình và mô hình thực tế (2,0 điểm)
 
 1. Cho phương trình
+
 \[
 x^2-5x+6=0
 \]
+
 có hai nghiệm \(x_1,x_2\). Không dùng công thức nghiệm, tính
+
 \[
 x_1^2+x_2^2.
 \]
@@ -34,6 +39,7 @@ x_1^2+x_2^2.
 ### Bài III – Thống kê và xác suất (1,5 điểm)
 
 Điểm kiểm tra của 8 học sinh là:
+
 \[
 6, 7, 7, 8, 9, 9, 9, 10.
 \]
@@ -48,18 +54,22 @@ Cho tam giác \(ABC\) vuông tại \(A\), đường cao \(AH\) xuống \(BC\). B
 
 1. Chứng minh \(\triangle ABH\sim\triangle CAH\).
 2. Chứng minh
+
 \[
 AH^2=BH\cdot CH.
 \]
+
 3. Tính \(BC, AH, AB, AC\).
 4. Tính diện tích tam giác \(ABC\).
 
 ### Bài V – Vận dụng (1,0 điểm)
 
 Cho \(x,y>0\), \(x+y=10\). Tìm giá trị lớn nhất của
+
 \[
 P=xy
 \]
+
 và xác định khi nào đạt dấu bằng.
 
 ---

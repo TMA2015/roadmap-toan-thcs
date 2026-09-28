@@ -5,9 +5,11 @@
 ## Đề gốc
 
 Từ \(A\) ngoài đường tròn \((O)\), kẻ các tiếp tuyến \(AB,AC\) tại \(B,C\). Cát tuyến qua \(A\) cắt đường tròn tại \(D,E\) theo đúng thứ tự \(A,D,E\); cát tuyến không qua \(B,C\). Chứng minh \(AB=AC\), tứ giác \(ABOC\) nội tiếp và
+
 \[
 AB^2=AD\cdot AE.
 \]
+
 Nếu \(AB=6\), \(AD=4\), tính \(AE\).
 
 ![Hình tiếp tuyến AB AC và cát tuyến ADE](../../assets/geometry/25/anchor-25-008-tangent-secant.svg)
@@ -39,17 +41,23 @@ Viết \(\triangle ABD\sim\triangle AEB\), kiểm tra tương ứng \(A\leftrigh
 **2. Tứ giác nội tiếp.** \(\angle ABO=\angle ACO=90^\circ\). Hai góc đối bù nhau, nên \(A,B,O,C\) cùng thuộc đường tròn đường kính \(AO\). Lưu ý đây **không phải** đường tròn \((O)\) ban đầu.
 
 **3. Hệ thức tiếp tuyến–cát tuyến.** Do \(A,D,E\) thẳng hàng,
+
 \[
 \angle BAD=\angle EAB.
 \]
+
 Theo định lý góc giữa tiếp tuyến và dây cung \(BD\),
+
 \[
 \angle ABD=\angle BED=\angle BEA.
 \]
+
 Vì hai cặp góc tương ứng bằng nhau, \(\triangle ABD\sim\triangle AEB\). Viết tỷ số theo đúng thứ tự:
+
 \[
 \frac{AB}{AE}=\frac{AD}{AB}.
 \]
+
 Nhân chéo: \(AB^2=AD\cdot AE\).
 
 **4. Thay số và kiểm tra vị trí.** \(AE=AB^2/AD=36/4=9\) cm. Vì \(9>4>0\), kết quả phù hợp với thứ tự \(A,D,E\).

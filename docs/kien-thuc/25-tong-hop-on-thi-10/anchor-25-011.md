@@ -26,18 +26,23 @@ Mục tiêu “hai giao điểm” gợi ý **biệt thức**; mục tiêu biể
 ## Lời giải chi tiết
 
 Hoành độ giao điểm thỏa
+
 \[
 x^2=2x+3\iff x^2-2x-3=0.
 \]
+
 Biệt thức \(\Delta=(-2)^2-4\cdot1\cdot(-3)=16>0\), nên có **hai hoành độ thực phân biệt**, tức hai giao điểm phân biệt.
 
 Phân tích \(x^2-2x-3=(x-3)(x+1)\), suy ra \(x=3\) hoặc \(x=-1\). Thế vào \(y=x^2\), hai giao điểm là \((3;9)\), \((-1;1)\).
 
 Theo Viète cho phương trình hoành độ:
+
 \[
 x_1+x_2=2,\qquad x_1x_2=-3.
 \]
+
 Do đó
+
 \[
 x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=4+6=\boxed{10}.
 \]
@@ -45,9 +50,11 @@ x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=4+6=\boxed{10}.
 ## Tư duy tổng kết và khái quát
 
 Với \((d_k):y=2x+k\), phương trình hoành độ là \(x^2-2x-k=0\), có \(\Delta=4+4k\). Vậy:
+
 \[
 k>-1:\ 2\ \text{giao điểm};\quad k=-1:\ 1\ \text{giao điểm (tiếp xúc)};\quad k<-1:\ 0\ \text{giao điểm}.
 \]
+
 Trường hợp \(k=-1\) cho \(x=1\) và điểm tiếp xúc \((1;1)\). Viète vẫn cung cấp tổng/tích nghiệm khi có hai nghiệm kể cả trùng, nhưng yêu cầu “hai giao điểm phân biệt” buộc \(\Delta>0\).
 
 ## Biến thể tự luyện

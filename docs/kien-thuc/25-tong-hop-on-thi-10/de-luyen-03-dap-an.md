@@ -5,15 +5,19 @@
 ## Bài I (2,0 điểm)
 
 1. \(\sqrt{50}=5\sqrt2\), \(\sqrt8=2\sqrt2\), \(\sqrt{18}=3\sqrt2\), nên
+
 \[
 A=5\sqrt2+2\sqrt2-3\sqrt2=4\sqrt2.
 \]
+
 **1,0 điểm.**
 
 2. Điều kiện \(x\ne2\). Nhân với \(x-2\ne0\):
+
 \[
 x-3=2(x-2)\iff x=1.
 \]
+
 Giá trị \(x=1\) thỏa điều kiện. Vậy tập nghiệm \(S=\{1\}\).
 
 **1,0 điểm:** điều kiện (0,25), giải đúng (0,5), thử và kết luận (0,25).
@@ -21,17 +25,21 @@ Giá trị \(x=1\) thỏa điều kiện. Vậy tập nghiệm \(S=\{1\}\).
 ## Bài II (2,0 điểm)
 
 Quy ước toàn bộ công việc là 1. Năng suất một ngày của A bằng \(1/20\), của hai đội cùng làm bằng \(1/12\). Năng suất của B:
+
 \[
 \frac1{12}-\frac1{20}=\frac{5-3}{60}=\frac1{30}.
 \]
+
 Vậy B làm một mình mất **30 ngày**.
 
 **1,5 điểm:** lập mô hình năng suất (0,5), phép trừ phân số (0,5), kết luận đúng đơn vị (0,5).
 
 Trong 4 ngày làm chung, hai đội làm được
+
 \[
 4\cdot\frac1{12}=\frac13
 \]
+
 công việc. **0,5 điểm.**
 
 > Bẫy kinh điển: chỉ cộng/trừ **năng suất**, không cộng/trừ trực tiếp số ngày.
@@ -39,15 +47,19 @@ công việc. **0,5 điểm.**
 ## Bài III (2,0 điểm)
 
 1. Tại giao điểm:
+
 \[
 x^2=x+2\iff (x-2)(x+1)=0.
 \]
+
 Suy ra \(x=2\) hoặc \(x=-1\), tương ứng \(y=4\) hoặc \(y=1\). Hai giao điểm là \((2;4)\), \((-1;1)\). **1,0 điểm.**
 
 2. Theo Viète, \(x_1+x_2=6\), \(x_1x_2=5\). Do đó:
+
 \[
 x_1^2+x_2^2=6^2-2\cdot5=26.
 \]
+
 **1,0 điểm.**
 
 ## Bài IV (3,0 điểm)

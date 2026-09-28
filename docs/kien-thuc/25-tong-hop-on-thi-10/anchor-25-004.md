@@ -36,24 +36,31 @@ Trước hết \(BC=BH+HC=25\). Sau đó tính \(AH\), rồi dùng \(AB^2=BH\cdo
 **Bước 1.** Vì \(B,H,C\) thẳng hàng, \(BC=BH+HC=9+16=25\).
 
 **Bước 2.** Do \(AH\perp BC\), ta có \(\angle AHB=\angle CHA=90^\circ\). Mặt khác \(\angle ABH=\angle CAH\) vì cùng phụ với \(\angle ACB\). Suy ra theo góc–góc:
+
 \[
 \triangle ABH\sim\triangle CAH.
 \]
+
 Thứ tự tương ứng là \(A\leftrightarrow C\), \(B\leftrightarrow A\), \(H\leftrightarrow H\); do đó
+
 \[
 \frac{BH}{AH}=\frac{AH}{CH}\quad\Rightarrow\quad AH^2=BH\cdot CH.
 \]
+
 Suy ra \(AH^2=9\cdot16=144\). Vì \(AH\) là độ dài nên \(AH=12\).
 
 **Bước 3.** Từ \(\triangle ABH\sim\triangle CBA\), có \(AB^2=BH\cdot BC\); tương tự \(AC^2=CH\cdot BC\). Vì vậy
+
 \[
 AB=\sqrt{9\cdot25}=15,\qquad AC=\sqrt{16\cdot25}=20.
 \]
 
 **Bước 4.** Kiểm tra bằng Pythagore: \(15^2+20^2=625=25^2\). Diện tích:
+
 \[
 S_{ABC}=\frac12 AB\cdot AC=\frac12\cdot15\cdot20=150.
 \]
+
 Cũng có thể kiểm tra bằng \(S_{ABC}=\frac12 BC\cdot AH=150\).
 
 ## Tư duy tổng kết
@@ -61,9 +68,11 @@ Cũng có thể kiểm tra bằng \(S_{ABC}=\frac12 BC\cdot AH=150\).
 - Đừng **nhớ hệ thức nhưng không biết vì sao đúng**: các hệ thức lượng là hệ quả của đồng dạng.
 - **Thứ tự tam giác** quyết định tỷ số cạnh; viết sai thứ tự dễ sinh hệ thức sai.
 - Với số liệu mới \(BH=p,CH=q>0\), công thức khái quát:
+
 \[
 BC=p+q,\quad AH=\sqrt{pq},\quad AB=\sqrt{p(p+q)},\quad AC=\sqrt{q(p+q)}.
 \]
+
 - Hình vẽ giúp nhận diện tam giác tương ứng; lập luận hình học mới tạo thành chứng minh.
 
 ## Biến thể tự luyện

@@ -10,11 +10,13 @@
 ### Câu 1 – Đại số (2,0 điểm)
 
 1. Rút gọn
+
 \[
 A=\sqrt{98}-\sqrt8.
 \]
 
 2. Giải phương trình
+
 \[
 \frac{2}{x-1}=\frac13.
 \]
@@ -22,15 +24,19 @@ A=\sqrt{98}-\sqrt8.
 ### Câu 2 – Viète và hệ phương trình (2,0 điểm)
 
 1. Cho phương trình
+
 \[
 x^2-7x+10=0
 \]
+
 có hai nghiệm \(x_1,x_2\). Không giải phương trình, tính
+
 \[
 x_1^2+x_2^2.
 \]
 
 2. Giải hệ
+
 \[
 \begin{cases}
 x+y=13,\\
@@ -41,6 +47,7 @@ x-y=3.
 ### Câu 3 – Thống kê và xác suất (2,0 điểm)
 
 Cho dãy số liệu
+
 \[
 5, 6, 7, 7, 8, 9.
 \]

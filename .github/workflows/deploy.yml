@@ -140,8 +140,14 @@ jobs:
       - name: Audit practice quality
         run: python audit_practice_quality.py
 
+      - name: Validate CĐ25 display math source
+        run: node scripts/test-topic25-math-render.js
+
       - name: Build documentation
         run: mkdocs build --strict
+
+      - name: Validate CĐ25 built display math
+        run: node scripts/test-topic25-math-render.js --built
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force

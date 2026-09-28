@@ -6,14 +6,17 @@
 ## Đề bài
 
 Cho phương trình
+
 \[
 x^2-2(m+1)x+2m=0,\qquad m\in\mathbb R.
 \]
+
 Tìm \(m\) để phương trình có hai nghiệm phân biệt \(x_1,x_2\) thỏa \(x_1^2+x_2^2=12\).
 
 ## Phân tích từ mục tiêu
 
 Có **hai yêu cầu khác nhau**: (1) hai nghiệm thực phân biệt; (2) biểu thức theo nghiệm bằng \(12\). Phải kiểm tra biệt thức rồi mới dùng Viète. Vì đích là tổng bình phương, không cần giải từng nghiệm:
+
 \[
 x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2.
 \]
@@ -35,30 +38,38 @@ Rút gọn thành \(4(m^2+m+1)=12\), rồi giải phương trình theo \(m\).
 ## Lời giải chi tiết
 
 **Bước 1 – Điều kiện hai nghiệm phân biệt.** Hệ số \(a=1\ne0\). Biệt thức thu gọn:
+
 \[
 \Delta'=(m+1)^2-1\cdot2m=m^2+1>0
 \]
+
 với mọi \(m\in\mathbb R\). Vì thế phương trình luôn có hai nghiệm thực phân biệt; không phát sinh điều kiện bổ sung cho \(m\).
 
 **Bước 2 – Dùng Viète đúng dấu.**
+
 \[
 x_1+x_2=2(m+1),\qquad x_1x_2=2m.
 \]
+
 Do đó
+
 \[
 x_1^2+x_2^2=[2(m+1)]^2-2(2m)
 =4(m+1)^2-4m=4(m^2+m+1).
 \]
 
 **Bước 3 – Áp điều kiện đề bài.**
+
 \[
 4(m^2+m+1)=12
 \iff m^2+m-2=0
 \iff(m+2)(m-1)=0.
 \]
+
 Vậy \(m=-2\) hoặc \(m=1\).
 
 **Bước 4 – Đối chiếu ngược.** Với hai giá trị tìm được, \(\Delta'=m^2+1>0\); phương trình đều có hai nghiệm phân biệt và tổng bình phương đúng bằng \(12\). Kết luận:
+
 \[
 \boxed{m\in\{-2,1\}}.
 \]

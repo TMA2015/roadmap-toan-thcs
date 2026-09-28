@@ -7,37 +7,45 @@
 
 ### 25-A1
 Rút gọn
+
 \[
 \sqrt{75}-\sqrt{12}+2\sqrt3.
 \]
 
 ### 25-A2
 Giải phương trình
+
 \[
 \frac{2x-1}{x+2}=3.
 \]
 
 ### 25-A3
 Cho
+
 \[
 A=\frac{\sqrt{x}-1}{\sqrt{x}+2},\qquad x\ge0.
 \]
+
 Tính \(A\) khi \(x=16\), sau đó giải \(A=\frac12\).
 
 ## B. Phương trình, hệ và Viète
 
 ### 25-B1
 Cho phương trình
+
 \[
 x^2-7x+10=0
 \]
+
 có hai nghiệm \(x_1,x_2\). Không giải phương trình, tính
+
 \[
 x_1^2+x_2^2.
 \]
 
 ### 25-B2
 Giải hệ
+
 \[
 \begin{cases}
 x+y=11,\\
@@ -55,9 +63,11 @@ Cho đường thẳng \(y=2x-1\). Kiểm tra điểm \(M(3;5)\) có thuộc đư
 
 ### 25-C2
 Hai đường thẳng
+
 \[
 y=x+2,\qquad y=-x+6
 \]
+
 cắt nhau tại điểm nào?
 
 ### 25-C3
@@ -67,9 +77,11 @@ Một bể đang có 120 lít nước và được bơm thêm đều 15 lít m�
 
 ### 25-D1
 Dữ liệu:
+
 \[
 5, 6, 7, 7, 8, 9, 9, 9.
 \]
+
 Tính số trung bình, trung vị và mốt.
 
 ### 25-D2

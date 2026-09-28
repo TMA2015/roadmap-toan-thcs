@@ -7,6 +7,7 @@
 ## Bài I. Căn thức và điều kiện xác định (2,0 điểm)
 
 Cho \(x\ge0,\ x\ne1\) và
+
 \[
 A=\frac{\sqrt{x}+1}{\sqrt{x}-1}.
 \]

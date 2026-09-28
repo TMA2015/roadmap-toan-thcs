@@ -6,9 +6,11 @@
 ## Đề bài và điều kiện
 
 Với \(x=n^2\), \(n\) là số nguyên không âm và \(n\ne1\), xét
+
 \[
 P=\frac{\sqrt{x}+1}{\sqrt{x}-1}.
 \]
+
 Tìm tất cả \(n\) để \(P\) là số nguyên.
 
 Điều kiện \(x\ge0,\ x\ne1\) xuất phát từ căn thức và mẫu khác \(0\). Khi \(x=n^2,\ n\ge0\), điều kiện tương ứng là \(n\ne1\).
@@ -46,18 +48,22 @@ Viết \(n+1=(n-1)+2\) để có \(P=1+2/(n-1)\).
 **Bước 1 – Điều kiện.** \(x=n^2\) với \(n\in\mathbb Z_{\ge0}\), nên \(\sqrt{x}=n\). Mẫu khác \(0\) đòi hỏi \(n\ne1\).
 
 **Bước 2 – Đưa về điều kiện chia hết.**
+
 \[
 P=\frac{n+1}{n-1}=\frac{(n-1)+2}{n-1}
 =1+\frac2{n-1}.
 \]
+
 Vì \(n-1\) là số nguyên khác \(0\), \(P\) nguyên khi và chỉ khi \(n-1\mid2\).
 
 **Bước 3 – Lọc ước theo miền của \(n\).** Các ước nguyên của \(2\) là \(-2,-1,1,2\). Nhưng \(n\ge0\Rightarrow n-1\ge-1\), nên loại \(-2\). Ta có
+
 \[
 n-1\in\{-1,1,2\}\iff n\in\{0,2,3\}.
 \]
 
 **Bước 4 – Thử lại.** Với \(n=0,2,3\), giá trị \(P\) lần lượt là \(-1,3,2\), đều nguyên và mẫu khác \(0\). Vậy
+
 \[
 \boxed{n\in\{0,2,3\}}.
 \]

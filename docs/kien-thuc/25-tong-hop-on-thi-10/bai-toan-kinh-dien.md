@@ -10,6 +10,7 @@
 **Bài mẫu**
 
 Cho
+
 \[
 A=\frac{\sqrt{x}-2}{\sqrt{x}+1},\qquad x\ge 0.
 \]
@@ -29,17 +30,20 @@ A=\frac{\sqrt{x}-2}{\sqrt{x}+1},\qquad x\ge 0.
 Với \(x\ge0\), biểu thức xác định.
 
 Khi \(x=9\):
+
 \[
 A=\frac{3-2}{3+1}=\frac14.
 \]
 
 Giải \(A=\frac14\). Đặt \(t=\sqrt{x}\ge0\):
+
 \[
 \frac{t-2}{t+1}=\frac14
 \Rightarrow 4t-8=t+1
 \Rightarrow 3t=9
 \Rightarrow t=3.
 \]
+
 Suy ra \(x=9\).
 
 **Điều cần rút ra**
@@ -54,10 +58,13 @@ Không bắt đầu bằng biến đổi dài. Hãy tìm điều kiện và đ�
 **Bài mẫu**
 
 Cho phương trình
+
 \[
 x^2-5x+3=0
 \]
+
 có hai nghiệm \(x_1,x_2\). Không giải phương trình, tính
+
 \[
 S=x_1^2+x_2^2.
 \]
@@ -65,11 +72,13 @@ S=x_1^2+x_2^2.
 **Cách nghĩ**
 
 Từ Viète:
+
 \[
 x_1+x_2=5,\qquad x_1x_2=3.
 \]
 
 Biểu thức cần tính là đối xứng theo hai nghiệm:
+
 \[
 x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2.
 \]
@@ -111,11 +120,13 @@ x+y=40,\\
 \]
 
 Từ \(y=40-x\):
+
 \[
 80x+50(40-x)=2420
 \Rightarrow30x=420
 \Rightarrow x=14.
 \]
+
 Suy ra \(y=26\).
 
 Vậy có **14 vé người lớn và 26 vé học sinh**.
@@ -140,9 +151,11 @@ Tam giác \(ABC\) vuông tại \(A\), đường cao \(AH\) xuống cạnh huyề
 **Ý tưởng cốt lõi**
 
 Ba tam giác \(ABH\), \(AHC\), \(ABC\) đồng dạng. Từ đó có các hệ thức:
+
 \[
 AH^2=BH\cdot CH,
 \]
+
 \[
 AB^2=BH\cdot BC,\qquad AC^2=CH\cdot BC.
 \]
@@ -181,15 +194,19 @@ Cho \(x,y>0\) và \(x+y=10\). Tìm giá trị lớn nhất của \(P=xy\).
 **Lời giải**
 
 Từ
+
 \[
 (x-y)^2\ge0
 \]
+
 suy ra
+
 \[
 (x+y)^2\ge4xy.
 \]
 
 Do \(x+y=10\):
+
 \[
 100\ge4xy\Rightarrow xy\le25.
 \]
@@ -197,6 +214,7 @@ Do \(x+y=10\):
 Dấu bằng xảy ra khi \(x=y=5\).
 
 Vậy
+
 \[
 P_{\max}=25.
 \]
@@ -226,21 +244,27 @@ Với mỗi bài:
 ## 6. Rút gọn căn thức và câu hỏi phụ về số nguyên
 
 **Bài mẫu.** Với \(x=n^2\), \(n\) nguyên không âm, \(n\ne1\), xét
+
 \[
 P=\frac{\sqrt{x}+1}{\sqrt{x}-1}.
 \]
+
 Tìm \(n\) để \(P\) nguyên.
 
 **Nhận dạng:** dạng căn có cấu trúc lặp lại; nếu \(x=n^2\) thì phải đổi về biến nguyên \(n\) trước khi xét tính chia hết.
 
 Vì \(\sqrt{x}=n\), ta có
+
 \[
 P=\frac{n+1}{n-1}=1+\frac{2}{n-1}.
 \]
+
 \(P\) nguyên khi và chỉ khi \(n-1\mid 2\). Từ \(n\ge0\) và \(n\ne1\), suy ra
+
 \[
 n-1\in\{-1,1,2\},\quad n\in\{0,2,3\}.
 \]
+
 Cả ba giá trị đều thỏa điều kiện và làm \(P\) nguyên.
 
 **Bẫy:** chỉ ghi các ước dương của 2, bỏ sót \(n=0\); hoặc giải câu phụ mà không mang theo \(n\ne1\).
@@ -251,32 +275,43 @@ Cả ba giá trị đều thỏa điều kiện và làm \(P\) nguyên.
 ## 7. Tham số, biệt thức và Viète
 
 **Bài mẫu.** Cho phương trình
+
 \[
 x^2-2(m+1)x+2m=0.
 \]
+
 Tìm \(m\) để phương trình có hai nghiệm phân biệt \(x_1,x_2\) thỏa
+
 \[
 x_1^2+x_2^2=12.
 \]
 
 **Bước 1 – kiểm tra tồn tại nghiệm.** Ta có
+
 \[
 \Delta'=(m+1)^2-2m=m^2+1>0
 \]
+
 với mọi \(m\in\mathbb R\), nên luôn có hai nghiệm phân biệt.
 
 **Bước 2 – dùng Viète, không vội tìm từng nghiệm:**
+
 \[
 x_1+x_2=2(m+1),\qquad x_1x_2=2m.
 \]
+
 Suy ra
+
 \[
 x_1^2+x_2^2=4(m+1)^2-4m=4(m^2+m+1).
 \]
+
 Do đó \(4(m^2+m+1)=12\), hay
+
 \[
 m^2+m-2=0\iff (m+2)(m-1)=0.
 \]
+
 Vậy \(\boxed{m=-2\ \text{hoặc}\ m=1}\).
 
 **Bẫy:** có được biểu thức nghiệm theo Viète nhưng quên điều kiện hai nghiệm phân biệt; ở bài này điều kiện đúng với mọi \(m\), song không được bỏ qua bước chứng minh.
@@ -285,6 +320,7 @@ Vậy \(\boxed{m=-2\ \text{hoặc}\ m=1}\).
 ## 8. Tiếp tuyến–cát tuyến: một cấu hình, nhiều mục tiêu
 
 **Bài mẫu.** Từ \(A\) ngoài \((O)\), kẻ tiếp tuyến \(AB,AC\) và cát tuyến \(ADE\), với \(A,D,E\) theo thứ tự. Chứng minh
+
 \[
 AB^2=AD\cdot AE.
 \]
@@ -292,10 +328,13 @@ AB^2=AD\cdot AE.
 **Dấu hiệu:** thấy bình phương tiếp tuyến và tích hai đoạn cùng nằm trên cát tuyến thì nghĩ tới hai tam giác đồng dạng.
 
 Do \(A,D,E\) thẳng hàng, \(\angle BAD=\angle EAB\). Theo định lý góc giữa tiếp tuyến và dây cung:
+
 \[
 \angle ABD=\angle BEA.
 \]
+
 Suy ra \(\triangle ABD\sim\triangle AEB\), nên
+
 \[
 \frac{AB}{AE}=\frac{AD}{AB}
 \Rightarrow AB^2=AD\cdot AE.
@@ -311,15 +350,19 @@ Suy ra \(\triangle ABD\sim\triangle AEB\), nên
 Cho tam giác nhọn \(ABC\), đường cao \(BE\perp AC\), \(CF\perp AB\) cắt nhau tại \(H\).
 
 **Nút mở khóa thứ nhất:**
+
 \[
 \angle BEC=\angle BFC=90^\circ.
 \]
+
 Suy ra \(B,E,C,F\) cùng nằm trên đường tròn đường kính \(BC\).
 
 **Nút mở khóa thứ hai:**
+
 \[
 \angle AEH=\angle AFH=90^\circ.
 \]
+
 Suy ra \(A,E,H,F\) cùng nằm trên đường tròn đường kính \(AH\).
 
 **Vận dụng:** vì \(B,E,C,F\) nội tiếp, \(\angle BEF=\angle BCF\) (hai góc nội tiếp cùng chắn dây \(BF\)).
@@ -332,9 +375,11 @@ Suy ra \(A,E,H,F\) cùng nằm trên đường tròn đường kính \(AH\).
 Một đội A làm một mình xong trong 20 ngày; A và B cùng làm xong trong 12 ngày. Hỏi B làm một mình mất bao lâu?
 
 **Mô hình:** lấy toàn bộ công việc là \(1\). Năng suất A là \(1/20\), năng suất A+B là \(1/12\). Vì vậy:
+
 \[
 \text{Năng suất B}=\frac1{12}-\frac1{20}=\frac1{30}.
 \]
+
 Vậy đội B làm một mình trong **30 ngày**.
 
 **Bẫy:** không lấy \(20-12=8\) ngày. Khi ghép hai đội, thứ có thể cộng/trừ trực tiếp là *phần công việc làm được trong một đơn vị thời gian*, không phải thời gian hoàn thành.

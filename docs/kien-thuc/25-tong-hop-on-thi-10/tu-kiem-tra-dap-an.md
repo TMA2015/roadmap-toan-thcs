@@ -4,11 +4,13 @@
 ## Câu 1
 
 1.
+
 \[
 A=7\sqrt2-2\sqrt2=5\sqrt2.
 \]
 
 2. Điều kiện \(x\ne1\).
+
 \[
 \frac{2}{x-1}=\frac13
 \Rightarrow x-1=6
@@ -18,15 +20,19 @@ A=7\sqrt2-2\sqrt2=5\sqrt2.
 ## Câu 2
 
 1. Theo Viète:
+
 \[
 x_1+x_2=7,\qquad x_1x_2=10.
 \]
+
 Do đó
+
 \[
 x_1^2+x_2^2=49-20=29.
 \]
 
 2. Cộng hai phương trình:
+
 \[
 2x=16\Rightarrow x=8,\qquad y=5.
 \]
@@ -34,11 +40,13 @@ x_1^2+x_2^2=49-20=29.
 ## Câu 3
 
 Tổng dữ liệu bằng \(42\), nên số trung bình là
+
 \[
 \overline{x}=7.
 \]
 
 Trung vị:
+
 \[
 \frac{7+7}{2}=7.
 \]
@@ -46,6 +54,7 @@ Trung vị:
 Mốt là \(7\).
 
 Các số chia hết cho 3 trong \(1,2,\ldots,10\) là \(3,6,9\), nên
+
 \[
 P=\frac3{10}.
 \]
@@ -53,30 +62,37 @@ P=\frac3{10}.
 ## Câu 4
 
 Theo Pythagore:
+
 \[
 BC=\sqrt{6^2+8^2}=10.
 \]
 
 Từ diện tích:
+
 \[
 \frac12 AB\cdot AC=\frac12 BC\cdot AH
 \]
+
 nên
+
 \[
 AH=\frac{6\cdot8}{10}=\frac{24}{5}.
 \]
 
 Dùng hệ thức lượng:
+
 \[
 AB^2=BH\cdot BC
 \Rightarrow BH=\frac{36}{10}=\frac{18}{5},
 \]
+
 \[
 AC^2=CH\cdot BC
 \Rightarrow CH=\frac{64}{10}=\frac{32}{5}.
 \]
 
 Kiểm tra:
+
 \[
 BH+CH=\frac{50}{5}=10=BC.
 \]
@@ -84,20 +100,27 @@ BH+CH=\frac{50}{5}=10=BC.
 ## Câu 5
 
 Từ
+
 \[
 (x-y)^2\ge0
 \]
+
 suy ra
+
 \[
 (x+y)^2\ge4xy.
 \]
+
 Do \(x+y=12\):
+
 \[
 144\ge4xy\Rightarrow xy\le36.
 \]
+
 Dấu bằng xảy ra khi \(x=y=6\).
 
 Vậy
+
 \[
 P_{\max}=36.
 \]
