@@ -31,7 +31,7 @@ for(const [no,counts] of Object.entries(specs)){
  const pts=[...exam.matchAll(/^#{2,3} Bài (I|II|III|IV|V).*?\((\d+),(\d+) điểm\)/gm)]
   .map(m=>Number(m[2])+Number(m[3])/10);
  assert(JSON.stringify(pts)===JSON.stringify(vals[no]),no+" incorrect per-Bài points");
- const rows=[...key.matchAll(/^\| ((?:I|II|III|IV)\.\d+|V) \| (\d+),(\d{2}) \|/gm)]
+ const rows=[...key.matchAll(/^\| ((?:I|II|III|IV|V)\.\d+|V) \| (\d+),(\d{2}) \|/gm)]
   .map(m=>({id:m[1],pts:Number(m[2])+Number(m[3])/100}));
  assert(rows.length===counts.reduce((a,b)=>a+b,0)+(counts[4]===0?1:0),no+" rubric parts "+rows.length);
  const sum=rows.reduce((a,r)=>a+r.pts,0);
