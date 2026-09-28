@@ -4,7 +4,9 @@
 
 ### Bài I
 
-**Câu 1.** \[
+**Câu 1.**
+
+\[
 \sqrt{72}=6\sqrt2,\quad2\sqrt8=4\sqrt2,\quad\sqrt{18}=3\sqrt2.
 \]
 
@@ -97,7 +99,9 @@ Có 4 học sinh đạt từ 9 điểm trở lên, nên xác suất:
 \Rightarrow AH^2=BH\cdot CH.
 \]
 
-**Câu 3.** \[
+**Câu 3.**
+
+\[
 BC=9+16=25.
 \]
 
@@ -115,7 +119,9 @@ AB^2=BH\cdot BC=9\cdot25=225\Rightarrow AB=15,
 AC^2=CH\cdot BC=16\cdot25=400\Rightarrow AC=20.
 \]
 
-**Câu 4.** \[
+**Câu 4.**
+
+\[
 S_{ABC}=\frac12 AB\cdot AC
 =\frac12\cdot15\cdot20=150.
 \]
