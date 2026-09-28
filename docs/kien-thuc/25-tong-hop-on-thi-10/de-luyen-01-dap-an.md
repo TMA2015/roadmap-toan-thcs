@@ -4,9 +4,7 @@
 
 ### Bài I
 
-1.
-
-\[
+**Câu 1.** \[
 \sqrt{72}=6\sqrt2,\quad2\sqrt8=4\sqrt2,\quad\sqrt{18}=3\sqrt2.
 \]
 
@@ -16,7 +14,7 @@ Do đó
 A=5\sqrt2.
 \]
 
-2. Điều kiện \(x\ne-1\).
+**Câu 2.** Điều kiện \(x\ne-1\).
 
 \[
 3(x-2)=2(x+1)
@@ -27,7 +25,7 @@ Giá trị này thỏa điều kiện.
 
 ### Bài II
 
-1. Theo Viète:
+**Câu 1.** Theo Viète:
 
 \[
 x_1+x_2=5,\qquad x_1x_2=6.
@@ -39,7 +37,7 @@ Suy ra
 x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=25-12=13.
 \]
 
-2. Gọi \(x,y\) lần lượt là số sản phẩm A và B:
+**Câu 2.** Gọi \(x,y\) lần lượt là số sản phẩm A và B:
 
 \[
 \begin{cases}
@@ -51,6 +49,8 @@ x+y=40,\\
 Giải được \(x=14, y=26\).
 
 ### Bài III
+
+**Câu 1.** Tính số trung bình cộng.
 
 Tổng số điểm:
 
@@ -64,6 +64,8 @@ Số trung bình:
 \overline{x}=\frac{65}{8}=8{,}125.
 \]
 
+**Câu 2.** Tìm trung vị và mốt.
+
 Trung vị:
 
 \[
@@ -71,6 +73,8 @@ Trung vị:
 \]
 
 Mốt là \(9\).
+
+**Câu 3.** Tính xác suất.
 
 Có 4 học sinh đạt từ 9 điểm trở lên, nên xác suất:
 
@@ -80,22 +84,20 @@ Có 4 học sinh đạt từ 9 điểm trở lên, nên xác suất:
 
 ### Bài IV
 
-1. Ta có \(\angle AHB=\angle AHC=90^\circ\). Vì \(\angle ABH=\angle HAC\) nên
+**Câu 1.** Ta có \(\angle AHB=\angle AHC=90^\circ\). Vì \(\angle ABH=\angle HAC\) nên
 
 \[
 \triangle ABH\sim\triangle CAH.
 \]
 
-2. Từ đồng dạng:
+**Câu 2.** Từ đồng dạng:
 
 \[
 \frac{BH}{AH}=\frac{AH}{CH}
 \Rightarrow AH^2=BH\cdot CH.
 \]
 
-3.
-
-\[
+**Câu 3.** \[
 BC=9+16=25.
 \]
 
@@ -113,9 +115,7 @@ AB^2=BH\cdot BC=9\cdot25=225\Rightarrow AB=15,
 AC^2=CH\cdot BC=16\cdot25=400\Rightarrow AC=20.
 \]
 
-4.
-
-\[
+**Câu 4.** \[
 S_{ABC}=\frac12 AB\cdot AC
 =\frac12\cdot15\cdot20=150.
 \]
@@ -146,7 +146,7 @@ Vậy \(P_{\max}=25\).
 
 ---
 
-## Rubric tự chấm theo từng ý
+## Hướng dẫn chấm theo từng ý
 
 Đây là **hướng dẫn phân bổ điểm cho đề tự biên soạn**, không phải đáp án chính thức của một kỳ thi tuyển sinh. Học sinh tự chấm theo phần lập luận thực sự đã trình bày trên giấy; chỉ ghi đáp số đúng mà không có cách giải thì không tự nhận toàn bộ điểm.
 
@@ -176,18 +176,8 @@ Vậy \(P_{\max}=25\).
 
 ---
 
-## Sau khi làm đề
+## Sau khi đối chiếu
 
-Không chỉ ghi điểm. Hãy ghi thêm:
-
-| Câu | Đúng/sai | Loại lỗi | Chuyên đề cần quay lại | Đã làm lại? |
-|---|---|---|---|---|
-| I |  |  |  |  |
-| II |  |  |  |  |
-| III |  |  |  |  |
-| IV |  |  |  |  |
-| V |  |  |  |  |
-
-> Nếu một câu sai vì đã xem lời giải trước đó, hãy làm một câu biến thể mới trước khi coi kỹ năng đó là đã vững.
+Nếu một câu sai, quay lại bài mỏ neo/chuyên đề liên quan và tự giải lại một biến thể không nhìn đáp án. Không cần nhập hay lưu điểm trên website.
 
 [Quay lại đề luyện số 1](de-luyen-01.md) · [Bộ bài mỏ neo](bai-toan-kinh-dien.md)

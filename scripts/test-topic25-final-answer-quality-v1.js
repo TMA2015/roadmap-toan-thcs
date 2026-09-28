@@ -14,7 +14,7 @@ for(const name of names){
 }
 const key=get("de-luyen-01-dap-an.md");
 assert(key.includes("\\overline{x}=\\frac{65}{8}"),"mean must typeset correctly");
-assert(key.includes("## Rubric tự chấm theo từng ý"),"first exam key needs per-part rubric");
+assert(key.includes("## Hướng dẫn chấm theo từng ý"),"first exam key needs per-part rubric");
 const rows=[...key.matchAll(/^\| (I\.[12]|II\.[12]|III\.[123]|IV\.[1234]|V) \| (\d+),(\d{2}) \|/gm)];
 const total=rows.reduce((n,m)=>n+Number(m[2])+Number(m[3])/100,0);
 assert(rows.length===12&&Math.abs(total-10)<1e-9,"rubric needs 12 graded parts totaling 10; got "+rows.length+" / "+total);

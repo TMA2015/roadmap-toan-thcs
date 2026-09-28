@@ -62,12 +62,14 @@ for(const exam of exams.exams){
   }
 }
 check(anchorRefs.has("A25-011"),"new anchor must link from a full exam");
-const code=read("docs/assets/javascripts/topic25-exam-engine-v1.js");
-for(const token of ["deadline_at","localStorage","submitted","finalized","answer_opened","confirm(","anchorHref","timed_out"]){
-  check(code.includes(token),"engine missing "+token);
+// Historical engine and rubric JSON are retained, but the paper-only site must not load the script.
+const yml=read("mkdocs.yml");
+check(!yml.includes("  - assets/javascripts/topic25-exam-engine-v1.js"),"paper-only exams must not mount JS exam engine");
+for(const n of ["01","02","03"]){
+ const exam=read(folder+"de-luyen-"+n+".md"),key=read(folder+"de-luyen-"+n+"-dap-an.md");
+ check(exam.includes("làm toàn bộ trên giấy")||exam.includes("không cần nhập"),"paper instructions missing "+n);
+ check(key.includes("## Hướng dẫn chấm theo từng ý"),"step rubric missing "+n);
 }
-check(!code.includes("innerHTML")&&!code.includes("eval("),"no untrusted markup or eval");
-check(code.includes("GitHub Pages")&&code.includes("NOT a security boundary"),"do not misrepresent GitHub Pages security");
 const packet=read("review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26.txt");
 check((packet.match(/BEGIN SOURCE FILE:/g)||[]).length===13,"Gemini packet includes exact original 13 sources");
-console.log("PASS: 10 curated of 11+ anchors, geometry SVG and proof links, 3x120min 10-point exam rubrics, gap mapping and source packet.");
+console.log("PASS: 10 curated of 11+ anchors, geometry SVG and proof links, 3x120min 10-point archived rubrics, paper-first pages, gap mapping and source packet.");
