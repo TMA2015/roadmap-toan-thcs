@@ -17,8 +17,8 @@
 
 ## Ngoại lệ ở ví dụ micro-test mới của reviewer
 
-- Đề xe tải tải trọng 1200 kg, đã có 450 kg và thêm mỗi bao 50 kg: `450+50n≤1200`, (n_{{max}}=15) đúng.
-- Nếu `n` là số bao **có thể** chất thêm, điều kiện tự nhiên là (n\in\mathbb Z_{{\ge0}}), không nên áp `n∈N*` như một giả thiết mặc định vì xe có thể không chất thêm bao nào. `n∈N*` có thể sử dụng nếu đề ghi rõ có thêm ít nhất 1 bao. Kết luận cực đại 15 không đổi.
+- Đề xe tải tải trọng 1200 kg, đã có 450 kg và thêm mỗi bao 50 kg: `450+50n≤1200`, `n_max = 15` đúng.
+- Nếu `n` là số bao **có thể** chất thêm, điều kiện tự nhiên là số nguyên không âm (`n = 0, 1, 2, ...`), không nên áp `n∈N*` như một giả thiết mặc định vì xe có thể không chất thêm bao nào. `n∈N*` có thể sử dụng nếu đề ghi rõ có thêm ít nhất 1 bao. Kết luận cực đại 15 không đổi.
 - Rubric micro-test cần tách việc chọn biến + đơn vị, thiết lập bất phương trình, chọn giá trị nguyên, và diễn giải tải trọng. Câu nhận diện số tối đa không tự chứng minh các bước này.
 
 ## Trạng thái hệ thống
