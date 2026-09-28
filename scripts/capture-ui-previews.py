@@ -267,52 +267,28 @@ $$
     shot(anchors_page, "topic25-anchor-004-geometry-desktop.png")
     anchors_page.close()
 
-    # Exam Engine: no scoring before submit, persistent draft, explicit self marking.
+    # CĐ25 paper-first: the three self-authored papers and their keys are plain documents.
+    # Legacy JS exam engine is retained as a historical file but is NOT mounted.
     exam_page = desktop.new_page()
-    exam_page.goto(BASE + "kien-thuc/25-tong-hop-on-thi-10/de-luyen-01/", wait_until="networkidle")
-    check(exam_page.locator(".exam-engine").count() == 1, "exam 1 interactive engine mounted")
-    check(exam_page.locator(".floating-ai-launcher").count() == 0, "timed exam must not expose reading Tutor before submission")
-    check(exam_page.locator(".exam-rubric-item").count() == 0, "no rubric before submission")
-    check(exam_page.locator('a[href*="de-luyen-01-dap-an/"]').first.is_hidden(), "source answer link withheld in exam UI")
-    exam_page.get_by_role("button", name="Bắt đầu làm đề 120 phút").click()
-    check(exam_page.locator(".exam-answer-item").count() == 12, "exam 1 written response slots")
-    exam_page.locator(".exam-answer-item textarea").first.fill("Kết quả: 5 căn 2; đã đổi từng căn thức.")
-    shot(exam_page, "topic25-exam01-running-desktop.png")
-    exam_page.reload(wait_until="networkidle")
-    check(exam_page.locator(".exam-answer-item textarea").first.input_value().startswith("Kết quả: 5 căn 2"), "draft persists after reload")
-    check(exam_page.locator(".exam-progress").inner_text().startswith("1/12"), "saved progress")
-    exam_page.on("dialog", lambda dialog: dialog.accept())
-    exam_page.get_by_role("button", name="Kết thúc lượt làm · chuyển sang tự chấm", exact=True).click()
-    check(exam_page.locator(".exam-answer-item").count() == 0, "submission freezes response fields")
-    check(exam_page.locator(".exam-rubric-item").count() == 0, "rubric shown only after learner confirms key review")
-    exam_page.get_by_role("button", name="Tôi đã đối chiếu lời giải trên giấy").click()
-    check(exam_page.locator(".exam-rubric-item").count() == 12, "per-subpart self-scoring controls")
-    exam_page.locator(".exam-rubric-item input").first.check()
-    check("0,75" in exam_page.locator(".exam-score").inner_text(), "self score follows per-step rubric")
-    exam_page.locator(".exam-attest input").check()
-    exam_page.get_by_role("button", name="Chốt điểm tự chấm").click()
-    check("Đã lưu" in exam_page.locator(".exam-message").last.inner_text(), "finalized self-assessment persisted")
-    check(exam_page.locator(".exam-gap-list a").count() > 0, "missed rubric routes to anchor/topic recovery")
-    shot(exam_page, "topic25-exam01-self-score-desktop.png")
-    exam_page.close()
-    for number, expected in [("02", 12), ("03", 11)]:
-        exam_page = desktop.new_page()
+    for number, expected_parts in [("01", 12), ("02", 12), ("03", 11)]:
         exam_page.goto(BASE + "kien-thuc/25-tong-hop-on-thi-10/de-luyen-" + number + "/", wait_until="networkidle")
-        check(exam_page.locator(".exam-engine").count() == 1, "exam engine mounted on "+number)
-        exam_page.get_by_role("button", name="Bắt đầu làm đề 120 phút").click()
-        check(exam_page.locator(".exam-answer-item").count() == expected, "exam "+number+" response mapping")
-        if number == "02":
-            exam_page.evaluate("""() => {
-                const key = "roadmap:exam-v1:EXAM25-02";
-                const state = JSON.parse(localStorage.getItem(key));
-                state.deadline_at = Date.now() - 1000;
-                localStorage.setItem(key, JSON.stringify(state));
-            }""")
-            exam_page.reload(wait_until="networkidle")
-            check(exam_page.locator(".exam-answer-item").count() == 0, "expired exam freezes draft on reload")
-            check("Đã hết 120 phút" in exam_page.locator(".exam-message").first.inner_text(), "expired exam submits automatically")
-            check(exam_page.locator(".exam-rubric-item").count() == 0, "timeout never reveals rubric before answer-review step")
-        exam_page.close()
+        check(exam_page.locator(".exam-engine, [data-exam-engine], .exam-answers, .exam-notation-toolbar").count() == 0,
+              "paper-only exam must have no interactive input on " + number)
+        check(exam_page.locator(".floating-ai-launcher").count() == 0, "exam must not reveal AI")
+        check(exam_page.get_by_text("Câu 1.", exact=True).count() > 0 and
+              exam_page.get_by_text("Câu 2.", exact=True).count() > 0, "explicit per-Bài labels " + number)
+        check("không cần nhập" in exam_page.locator(".md-content__inner").inner_text(),
+              "student paper guidance " + number)
+        if number == "01": shot(exam_page, "topic25-exam01-paper-desktop.png")
+        exam_page.goto(BASE + "kien-thuc/25-tong-hop-on-thi-10/de-luyen-" + number + "-dap-an/", wait_until="networkidle")
+        check(exam_page.get_by_role("heading",name="Hướng dẫn chấm theo từng ý").count() == 1,
+              "clear step rubric "+number)
+        check(exam_page.locator(".md-content__inner table").first.locator("tr").count() >= expected_parts,
+              "rubric rows "+number)
+        check(exam_page.locator(".exam-engine, .exam-answers, .floating-ai-launcher").count() == 0,
+              "no mock engine/AI on key "+number)
+        if number == "01": shot(exam_page, "topic25-exam01-rubric-desktop.png")
+    exam_page.close()
 
     # Half-width desktop: the main destinations stay available inside the drawer.
     half = browser.new_context(viewport={"width": 880, "height": 900}, device_scale_factor=1)

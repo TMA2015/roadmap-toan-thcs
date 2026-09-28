@@ -4,7 +4,7 @@
 
 ## Bài I (2,0 điểm)
 
-1. Điều kiện đã cho là \(x\ge0,\ x\ne1\). Với \(x=9\),
+**Câu 1.** Điều kiện đã cho là \(x\ge0,\ x\ne1\). Với \(x=9\),
 
 \[
 A=\frac{3+1}{3-1}=2.
@@ -12,7 +12,7 @@ A=\frac{3+1}{3-1}=2.
 
 **0,5 điểm.**
 
-2. Đặt \(n=\sqrt{x}\) vì \(x=n^2,\ n\in\mathbb Z_{\ge0}\). Khi ấy \(n\ne1\) và
+**Câu 2.** Đặt \(n=\sqrt{x}\) vì \(x=n^2,\ n\in\mathbb Z_{\ge0}\). Khi ấy \(n\ne1\) và
 
 \[
 A=\frac{n+1}{n-1}=1+\frac{2}{n-1}.
@@ -29,6 +29,8 @@ Thử lại: \(n=0,2,3\) lần lượt cho \(A=-1,3,2\), đều là số nguyên
 **1,5 điểm:** đổi biến và điều kiện (0,5), tách \(1+2/(n-1)\) (0,5), lọc ước và thử lại (0,5).
 
 ## Bài II (2,0 điểm)
+
+**Câu 1.** Lập hệ từ số vé và doanh thu.
 
 Gọi \(a,b\) lần lượt là số vé người lớn và học sinh, \(a,b\in\mathbb Z_{\ge0}\).
 
@@ -51,6 +53,8 @@ Vậy **15 vé người lớn và 21 vé học sinh**.
 
 **1,5 điểm:** đặt ẩn/điều kiện (0,25), hệ đúng (0,5), giải đúng (0,5), kết luận đúng (0,25).
 
+**Câu 2.** Hai lần thay đổi giá.
+
 Giá sau tăng 10% rồi giảm 10%:
 
 \[
@@ -61,6 +65,8 @@ nghìn đồng. **0,5 điểm.** Hai lần thay đổi phần trăm được tí
 
 ## Bài III (2,0 điểm)
 
+**Câu 1.** Xác định số giao điểm.
+
 Hoành độ giao điểm thỏa
 
 \[
@@ -69,7 +75,11 @@ x^2=2x+3\iff x^2-2x-3=0.
 
 \(\Delta=(-2)^2-4(1)(-3)=16>0\), nên có hai giao điểm phân biệt. **0,5 điểm.**
 
+**Câu 2.** Tính tọa độ hai giao điểm.
+
 Giải phương trình được \(x=-1\) hoặc \(x=3\). Thế vào \(y=x^2\), ta có hai giao điểm \((-1;1)\), \((3;9)\). **1,0 điểm.**
+
+**Câu 3.** Tính tổng bình phương bằng Viète.
 
 Theo Viète: \(x_1+x_2=2,\ x_1x_2=-3\), vì vậy
 
@@ -81,7 +91,7 @@ x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=4+6=10.
 
 ## Bài IV (3,0 điểm)
 
-1. Bán kính vuông góc với tiếp tuyến tại tiếp điểm:
+**Câu 1.** Bán kính vuông góc với tiếp tuyến tại tiếp điểm:
 
 \[
 \angle ABO=\angle ACO=90^\circ.
@@ -89,9 +99,9 @@ x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=4+6=10.
 
 Hai góc đối của tứ giác \(ABOC\) bù nhau, suy ra \(ABOC\) nội tiếp đường tròn đường kính \(AO\). **0,75 điểm.**
 
-2. Hai tam giác vuông \(ABO\) và \(ACO\) có cạnh huyền \(AO\) chung, \(OB=OC\) (bán kính), nên bằng nhau; suy ra \(AB=AC\). **0,5 điểm.**
+**Câu 2.** Hai tam giác vuông \(ABO\) và \(ACO\) có cạnh huyền \(AO\) chung, \(OB=OC\) (bán kính), nên bằng nhau; suy ra \(AB=AC\). **0,5 điểm.**
 
-3. Do \(A,D,E\) thẳng hàng, ta có \(\angle BAD=\angle EAB\). Theo định lý góc tạo bởi tiếp tuyến và dây cung \(BD\),
+**Câu 3.** Do \(A,D,E\) thẳng hàng, ta có \(\angle BAD=\angle EAB\). Theo định lý góc tạo bởi tiếp tuyến và dây cung \(BD\),
 
 \[
 \angle ABD=\angle BED=\angle BEA.
@@ -105,7 +115,7 @@ Do đó \(\triangle ABD\sim\triangle AEB\). Suy ra
 
 **1,25 điểm:** chỉ ra hai cặp góc (0,5), đồng dạng đúng thứ tự đỉnh (0,5), suy hệ thức đúng (0,25).
 
-4. Từ \(6^2=4\cdot AE\), suy ra \(AE=9\) cm. **0,5 điểm.**
+**Câu 4.** Từ \(6^2=4\cdot AE\), suy ra \(AE=9\) cm. **0,5 điểm.**
 
 ## Bài V (1,0 điểm)
 
@@ -122,14 +132,28 @@ Dấu bằng khi \(a=b=6\). Vậy diện tích lớn nhất là **36 cm²**, đ�
 
 ---
 
-## Truy nguyên lỗ hổng
+## Hướng dẫn chấm theo từng ý
 
-| Sai bài | Quay lại |
-|---|---|
-| I | Căn thức, điều kiện xác định; bài mỏ neo biểu thức căn |
-| II | Lập hệ và bài toán thực tế; phân biệt tăng/giảm theo giá mới |
-| III | Hàm số bậc hai, giao điểm, Viète |
-| IV | Đường tròn, tiếp tuyến–cát tuyến, đồng dạng |
-| V | Hằng đẳng thức và cực trị với tổng cố định |
+Điểm dưới đây là **rubric tham khảo cho đề tự biên soạn**, không phải thang điểm chính thức. Chỉ ghi điểm các bước hợp lệ trong bài viết trên giấy; cách giải khác đúng toán được đối chiếu tương ứng.
+
+| Bài – câu | Điểm | Các bước cần thể hiện |
+|---|---:|---|
+| I.1 | 0,50 | \(\sqrt9=3\) (0,25); thay vào và kết luận \(A=2\) (0,25). |
+| I.2 | 1,50 | Đổi biến, nêu \(n\ge0,\ n\ne1\) (0,25); viết \(A=1+2/(n-1)\) (0,50); liệt kê các ước nguyên phù hợp (0,50); kiểm tra \(n=0,2,3\) (0,25). |
+| II.1 | 1,50 | Đặt ẩn có đơn vị/điều kiện (0,25); lập hệ số vé và doanh thu (0,50); giải hệ (0,50); kết luận hai loại vé (0,25). |
+| II.2 | 0,50 | Giá sau tăng là 440 nghìn đồng (0,25); giảm theo giá mới, kết quả 396 nghìn đồng (0,25). |
+| III.1 | 0,50 | Lập phương trình hoành độ giao điểm (0,25); chứng minh \(\Delta=16>0\) (0,25). |
+| III.2 | 1,00 | Giải \(x=-1,\ 3\) (0,50); ghi hai tọa độ \((-1;1),(3;9)\) (0,50). |
+| III.3 | 0,50 | Dùng Viète lấy tổng/tích hai nghiệm (0,25); tính \(x_1^2+x_2^2=10\) (0,25). |
+| IV.1 | 0,75 | Hai góc vuông tại tiếp điểm (0,50); kết luận nội tiếp đường tròn đường kính \(AO\) (0,25). |
+| IV.2 | 0,50 | Chứng minh hai tam giác vuông bằng nhau (0,25); \(AB=AC\) (0,25). |
+| IV.3 | 1,25 | Hai cặp góc tương ứng (0,50); đồng dạng đúng thứ tự (0,50); suy hệ thức (0,25). |
+| IV.4 | 0,50 | Thay \(6^2=4\cdot AE\) (0,25); kết luận \(AE=9\) cm (0,25). |
+| V | 1,00 | Điều kiện \(a,b>0\), tổng \(a+b=12\) (0,25); bất đẳng thức \(4ab\le(a+b)^2\) (0,50); diện tích cực đại và dấu bằng (0,25). |
+| **Tổng** | **10,00** | |
+
+## Ôn lại sau khi đối chiếu
+
+Bài I: [Căn thức](../11-can-thuc/index.md). Bài II: [Hệ phương trình](../09-he-phuong-trinh/index.md), [Mô hình hóa](../24-bai-toan-thuc-te/index.md). Bài III: [Hàm số](../10-ham-so-do-thi/index.md), [Viète](../12-phuong-trinh-bac-hai-viete/index.md). Bài IV: [Đường tròn](../19-duong-tron/index.md), [Đồng dạng](../17-thales-dong-dang/index.md). Bài V: [Biểu thức đại số](../04-bieu-thuc-dai-so/index.md).
 
 [Quay lại đề](de-luyen-02.md) · [Học bài mỏ neo](bai-toan-kinh-dien.md)

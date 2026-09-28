@@ -24,7 +24,7 @@ for(const [name,body] of [["classics",classic],["practice",practice],["self-chec
   ok(!/^\[$/m.test(body)&&!/^\]$/m.test(body),"raw bracket math: "+name);
   ok(!/[\t\f]/.test(body),"control escapes: "+name);
 }
-ok(mock.includes("120 phút")&&mock.includes("không sao chép đề chính thức"),"mock scope and provenance");
+ok(mock.includes("120 phút")&&mock.includes("tự biên soạn")&&mock.includes("không sao chép hoặc mô phỏng"),"mock scope and provenance");
 ok(classic.includes("Viète")&&classic.includes("đường cao trong tam giác vuông")&&classic.includes("Tối ưu đại số"),"classic algebra/geometry archetypes");
 ok(data.cards.length===5&&data.cards.slice(0,3).every(x=>x.learning_kind==="academic")&&data.cards.slice(3).every(x=>x.learning_kind==="exam_skill"),"workspace academic first, exam skills second");
 ok(data.cards.flatMap(x=>x.micro_practice||[]).length===15,"existing 15 micro items retained");

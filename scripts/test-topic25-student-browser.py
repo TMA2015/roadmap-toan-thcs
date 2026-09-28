@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Student-journey browser checks for CĐ25: truthful navigation and optional paper/exam UX."""
+"""Student-journey browser checks for CĐ25: truthful navigation and paper-only self-authored exam UX."""
 import shutil
 from playwright.sync_api import sync_playwright
 
@@ -40,27 +40,19 @@ with sync_playwright() as p:
     for slug in ["anchor-25-004","anchor-25-007","kho-bai-mo-neo"]:
         page.goto(BASE+slug+"/",wait_until="networkidle")
         assert page.locator(".topic-workspace-hero,.topic-workspace-nav").count()==0, "nested anchor route contains irrelevant sticky navigation: "+slug
-    page.goto(BASE+"de-luyen-01/",wait_until="networkidle")
-    box=page.locator("[data-exam-engine]")
-    box.wait_for(state="visible")
-    guide=box.locator(".exam-input-guide")
-    assert guide.count()==1 and guide.locator("summary").count()==1, "sample/notation guide absent before starting"
-    guide.locator("summary").click()
-    assert "x^2 = 4" in guide.inner_text() and "sqrt(2)" in guide.inner_text(), "plain-text sample missing"
-    box.get_by_role("button",name="Bắt đầu làm đề 120 phút").click()
-    scratch=box.locator("textarea").first
-    scratch.fill("x")
-    toolbar=box.locator(".exam-answer-item").first.locator(".exam-notation-toolbar")
-    toolbar.get_by_role("button",name="Chèn x² vào bài nháp").click()
-    toolbar.get_by_role("button",name="Chèn √ vào bài nháp").click()
-    assert "^2" in scratch.input_value() and "sqrt()" in scratch.input_value(), "notation insertion failed"
-    saved=scratch.input_value()
-    page.reload(wait_until="networkidle")
-    scratch=page.locator(".exam-answer-item textarea").first
-    assert scratch.input_value()==saved, "typed note must persist over reload"
-    page.once("dialog",lambda d:d.accept())
-    page.get_by_role("button",name="Kết thúc lượt làm · chuyển sang tự chấm").click()
-    assert "Lượt làm đã kết thúc" in page.locator(".exam-engine").inner_text()
-    assert "Không phải điểm AI chấm" in page.locator(".exam-engine").inner_text()
+    # All three exam routes are static paper-first: no typing, submit or saved score.
+    for number, expected_parts in [("01",12),("02",12),("03",11)]:
+        page.goto(BASE+"de-luyen-"+number+"/",wait_until="networkidle")
+        assert page.locator(".exam-engine,[data-exam-engine],.exam-answers,.exam-notation-toolbar").count()==0, "no legacy exam UI: "+number
+        assert page.locator(".floating-ai-launcher").count()==0, "no AI on exam: "+number
+        assert "không cần nhập" in page.locator(".md-content__inner").inner_text(), "paper instructions: "+number
+        assert page.get_by_text("Câu 1.",exact=True).count()>0 and page.get_by_text("Câu 2.",exact=True).count()>0, "independent question numbering: "+number
+        page.goto(BASE+"de-luyen-"+number+"-dap-an/",wait_until="networkidle")
+        assert page.get_by_role("heading",name="Hướng dẫn chấm theo từng ý").count()==1, "step rubric: "+number
+        assert page.locator(".md-content__inner table").first.locator("tr").count()>=expected_parts, "rubric rows: "+number
+        assert page.locator(".exam-engine,.floating-ai-launcher").count()==0, "no exam engine/AI on answer key: "+number
+        page.emulate_media(media="print")
+        assert page.locator(".md-content__inner").is_visible(), "paper and rubric must remain printable"
+        page.emulate_media(media="screen")
     browser.close()
-    print("PASS: CĐ25 real browser: no fake links, A/B paths, sidebar, paper self-check, example, notation insertion and persisted draft.")
+    print("PASS: CĐ25 real browser: no fake links, A/B paths, sidebar, paper self-check, static exams, answer keys and print mode.")

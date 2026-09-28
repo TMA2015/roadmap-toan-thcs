@@ -521,9 +521,9 @@ Mỗi bài yêu cầu học sinh nhận ra **dấu hiệu → công cụ → chu
 
 ### C. Đề luyện hoàn chỉnh – làm bài đủ thời gian
 
-Ba đề dưới đây đều là **đề tự biên soạn, 120 phút, 10 điểm, gồm 5 bài tự luận**. Đây là tài liệu luyện tập theo những mạch kiến thức của chúng ta, không phải đề chính thức hay đề dự báo. **Đáp án nằm ở trang riêng**, để học sinh hoàn thành bài trên giấy trước khi mở:
+Ba đề dưới đây là **bộ luyện tự biên soạn, 120 phút, 10 điểm, gồm 5 bài tự luận**; các đề được phân tầng từ củng cố nền đến liên kết kiến thức và chứng minh. Đây là tài liệu luyện tập theo những mạch kiến thức của chúng ta, không phải đề chính thức hay đề dự báo. **Đáp án nằm ở trang riêng**, để học sinh hoàn thành bài trên giấy trước khi mở:
 
-**Chế độ làm đề tương tác:** trên mỗi đề có nút **Bắt đầu 120 phút**; trình duyệt lưu nháp và thời điểm bắt đầu. Kết thúc lượt làm/hết giờ mới hiện phần đối chiếu và rubric tự chấm; sau khi tự đối chiếu từng bước, hệ thống tính **điểm tự chấm** và gợi ý ôn lại bài mỏ neo. Đây vẫn là bài tự luận làm trên giấy: website tĩnh không thể khóa an toàn URL đáp án, không tự động xác minh cách giải hoặc chấm thay giáo viên.
+**Cách sử dụng bộ đề:** làm trên giấy, có thể tự bấm giờ 120 phút. Mỗi đề có trang **lời giải chi tiết và rubric theo bước** riêng để đối chiếu sau khi hoàn thành. Website không yêu cầu nhập/nộp bài, không lưu điểm tự luận và không tự chấm. Đây là bộ đề tự biên soạn, không phải đề chính thức hoặc đề dự báo.
 
 <div class="capstone-exam-grid" markdown="1">
   <a class="capstone-exam-link" href="de-luyen-01/"><strong>Đề 01 · Nền tảng tổng hợp</strong><span>Căn thức, Viète, hệ thực tế, dữ liệu và hình học tam giác vuông.</span><small>120 phút · 10 điểm →</small></a>
@@ -531,7 +531,7 @@ Ba đề dưới đây đều là **đề tự biên soạn, 120 phút, 10 đi�
   <a class="capstone-exam-link" href="de-luyen-03/"><strong>Đề 03 · Lập luận chặt chẽ</strong><span>Năng suất, hàm số, trực tâm, tứ giác nội tiếp và xác suất.</span><small>120 phút · 10 điểm →</small></a>
 </div>
 
-*Trình tự khuyến nghị: làm đề → tự chấm theo từng bước → ghi câu sai → mở bài mỏ neo → làm bài biến thể.* Không dùng điểm của lớp kỹ năng thi để cộng vào điểm Toán.
+*Trình tự khuyến nghị: làm đề trên giấy → đối chiếu lời giải và rubric → tự nhận diện bước còn sai → mở bài mỏ neo → làm bài biến thể.* Không dùng điểm của lớp kỹ năng thi để cộng vào điểm Toán.
 
 ### D. Kỹ năng thi — tách khỏi điểm học thuật
 
