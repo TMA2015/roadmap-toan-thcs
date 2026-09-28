@@ -543,7 +543,7 @@ Ba đề dưới đây đều là **đề tự biên soạn, 120 phút, 10 đi�
 
 ## ✅ 9. Tự kiểm tra
 
-[Tự kiểm tra Chuyên đề 25](tu-kiem-tra.md) giờ là **bài Toán học thuật**: Đại số, Viète, Thống kê – Xác suất, Hình học và vận dụng.
+[Tự kiểm tra Chuyên đề 25](tu-kiem-tra.md) là **bài Toán học thuật tự làm trên giấy và tự đối chiếu**: Đại số, Viète, Thống kê – Xác suất, Hình học và vận dụng.
 
 Phần hỏi về chiến lược phòng thi đã được chuyển sang [Tự đánh giá kỹ năng làm bài](tu-danh-gia-ky-nang-thi.md).
 
@@ -574,5 +574,5 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Có sổ lỗi sai và quy trình chữa đề.
 - [ ] Biết phân loại lỗi kiến thức – kỹ năng – cẩu thả.
 - [ ] Biết điều chỉnh chiến lược theo cấu trúc đề địa phương.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai.
+- [ ] Tự làm bài kiểm tra học thuật trên giấy, tự đối chiếu từng bước và chữa xong các câu sai; điểm tự chấm được ghi riêng, không dùng để khóa tiến độ học.
 - [ ] Hoàn thành ít nhất hai đề có bấm giờ và phân tích lại đầy đủ (không yêu cầu làm cả ba ngay từ đầu).

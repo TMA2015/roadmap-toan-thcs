@@ -496,3 +496,13 @@ body{letter-spacing:-.008em}
  .skill-connections-group h3{font-size:.8rem!important}
  .skill-connections-group li{padding:.32rem .5rem;font-size:.76rem}
 }
+
+/* CĐ25: optional plain-text scratchpad; no unverified mathematical typesetting. */
+.exam-input-guide{border:1px solid var(--roadmap-line);border-radius:.55rem;background:var(--roadmap-soft);margin:.65rem 0;padding:.5rem .8rem}
+.exam-input-guide summary{font-size:.75rem;font-weight:780;cursor:pointer;min-height:2rem;padding:.35rem 0}
+.exam-input-guide p{margin:.45rem 0}
+.exam-notation-sample{white-space:pre-wrap;overflow-wrap:anywhere;margin:.45rem 0;padding:.6rem .7rem;border-radius:.4rem;background:var(--roadmap-surface);border:1px solid var(--roadmap-line);font-size:.72rem}
+.exam-notation-toolbar{display:flex;gap:.35rem;flex-wrap:wrap;align-items:center;margin:.2rem 0 0}
+.exam-notation-toolbar .exam-notation-button{display:inline-flex;align-items:center;justify-content:center;min-width:2.75rem;min-height:2.5rem;padding:.2rem .45rem;font-size:.72rem;background:var(--roadmap-soft);color:var(--roadmap-ink)}
+.exam-notation-toolbar .exam-notation-button:hover,.exam-notation-toolbar .exam-notation-button:focus-visible{border-color:var(--roadmap-indigo)}
+@media(max-width:38rem){.exam-notation-toolbar .exam-notation-button{flex:1 1 2.65rem}}

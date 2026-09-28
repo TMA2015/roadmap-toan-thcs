@@ -73,8 +73,43 @@
     return b;
   };
 
+
+  // Plain-text notation guide, not a mathematical parser or an automatic grader.
+  const createInputGuide = () => {
+    const details = create("details", "exam-input-guide");
+    details.appendChild(create("summary", "", "⌨️ Xem bài mẫu và cách nhập ký hiệu toán"));
+    details.appendChild(create("p", "", "Ví dụ riêng, KHÔNG thuộc đề luyện: Giải x² = 4. Em có thể ghi bài giải trên giấy, rồi nhập ngắn gọn vào ô nháp:"));
+    details.appendChild(create("pre", "exam-notation-sample",
+      "x^2 = 4\nx = 2 hoặc x = -2\nKiểm tra: 2^2 = 4; (-2)^2 = 4."));
+    details.appendChild(create("p", "", "Quy ước nhập bằng bàn phím thường: x^2 là x bình phương; sqrt(2) là căn 2; 3/4 là ba phần tư; sqrt(x+1) là căn của (x+1). Dùng ngoặc để tránh nhầm."));
+    details.appendChild(create("p", "exam-caution", "Các ô chỉ lưu chữ và ý chính, không phải trình soạn công thức hay nơi nộp ảnh bài viết tay. Có thể để trống nếu em làm hoàn toàn trên giấy; hệ thống không tự chấm nội dung đã gõ."));
+    return details;
+  };
+  const addNotationToolbar = (wrap, input) => {
+    const tools = create("div", "exam-notation-toolbar");
+    tools.setAttribute("aria-label", "Chèn ký hiệu vào ô ghi nháp");
+    for (const [label, snippet, back] of [
+      ["x²", "^2", 0], ["√", "sqrt()", 1], ["a/b", "/", 0],
+      ["( )", "()", 1], ["π", "pi", 0]
+    ]) {
+      const action = button(label, "exam-notation-button", () => {
+        const start = input.selectionStart ?? input.value.length;
+        const end = input.selectionEnd ?? start;
+        input.setRangeText(snippet, start, end, "end");
+        const cursor = start + snippet.length - back;
+        input.focus();
+        input.setSelectionRange(cursor, cursor);
+        input.dispatchEvent(new Event("input", {bubbles: true}));
+      });
+      action.setAttribute("aria-label", "Chèn " + label + " vào bài nháp");
+      tools.appendChild(action);
+    }
+    wrap.appendChild(tools);
+  };
+
   function showIdle(box) {
-    box.appendChild(create("p", "", "Đề vẫn hiển thị bên dưới để em đọc và làm trên giấy. Bấm bắt đầu để mở đồng hồ 120 phút và ô ghi nháp theo từng ý."));
+    box.appendChild(create("p", "", "Đề có ở bên dưới: em làm bài tự luận chính trên giấy. Đồng hồ và ô ghi nháp trên web là công cụ tùy chọn, không phải nơi nộp bài viết tay."));
+    box.appendChild(createInputGuide());
     box.appendChild(create("p", "exam-caution", "Đáp án và rubric chỉ hiện trong giao diện khi nộp bài hoặc hết giờ. Đây là cơ chế tự học trên GitHub Pages, không phải khóa đề thi an toàn trước người có thể mở URL đáp án trực tiếp."));
     box.appendChild(button("▶ Bắt đầu làm đề 120 phút", "exam-primary", () => {
       attempt.status = "running";
@@ -93,10 +128,11 @@
     top.append(create("span", "", "Thời gian còn lại"), timerEl,
       create("span", "exam-progress", progress() + "/" + allItems().length + " ý đã ghi nháp"));
     box.appendChild(top);
-    box.appendChild(create("p","exam-caution","Thời gian tiếp tục chạy nếu tải lại hoặc đóng tab. Ghi bài giải chính trên giấy; ô dưới đây chỉ để giữ kết quả và ý tưởng."));
+    box.appendChild(create("p","exam-caution","Thời gian tiếp tục chạy nếu tải lại hoặc đóng tab. Làm bài giải chính trên giấy; ô nháp là tùy chọn và không được tự chấm."));
+    box.appendChild(createInputGuide());
     const fields = create("div","exam-answers");
     allItems().forEach(item => {
-      const wrap = create("label","exam-answer-item");
+      const wrap = create("div","exam-answer-item");
       const heading = create("strong","", "Bài "+item.id+" · tối đa "+formatPoints(item.points)+" điểm");
       const input = document.createElement("textarea");
       input.rows = 2; input.maxLength = 2500; input.value = attempt.answers[item.id] || "";
@@ -107,12 +143,12 @@
         const p = box.querySelector(".exam-progress");
         if (p) p.textContent=progress()+"/"+allItems().length+" ý đã ghi nháp";
       });
-      wrap.append(heading,input);fields.appendChild(wrap);
+      wrap.append(heading,input);addNotationToolbar(wrap,input);fields.appendChild(wrap);
     });
     box.appendChild(fields);
     const footer = create("div","exam-footer");
-    footer.append(button("Nộp bài", "exam-primary", () => {
-      if (confirm("Em đã làm xong và muốn nộp bài? Sau khi nộp không thể sửa nháp trong lượt này.")) submit(false);
+    footer.append(button("Kết thúc lượt làm · chuyển sang tự chấm", "exam-primary", () => {
+      if (confirm("Em đã hoàn thành bài trên giấy? Kết thúc lượt sẽ khóa ô nháp và mở bước đối chiếu đáp án; không gửi bài cho AI hay giáo viên.")) submit(false);
     }));
     box.appendChild(footer);
   }
@@ -134,8 +170,8 @@
 
   function showScoring(box) {
     box.appendChild(create("p","exam-message", attempt.timed_out ?
-      "Đã hết 120 phút. Bài được nộp tự động; em hãy mở đáp án và đối chiếu từng bước." :
-      "Bài đã nộp. Em hãy mở đáp án, so bài trên giấy và chỉ tích những bước bản thân thực sự làm đúng."));
+      "Đã hết 120 phút. Lượt làm được kết thúc tự động; em hãy mở đáp án và đối chiếu bài trên giấy." :
+      "Lượt làm đã kết thúc. Em hãy mở đáp án, so bài trên giấy và chỉ tích những bước bản thân thực sự làm đúng."));
     box.appendChild(create("p","exam-caution","Không phải điểm AI chấm. Điểm là do em tự đối chiếu rubric; nếu chỉ có đáp số nhưng thiếu lập luận thì không chọn bước lập luận."));
     openSolution(box);
     if (!attempt.answer_opened) {

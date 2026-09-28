@@ -10,9 +10,9 @@ const skills=read("docs/kien-thuc/25-tong-hop-on-thi-10/tu-danh-gia-ky-nang-thi.
 const data=JSON.parse(read("docs/assets/data/curriculum/topic25-learning-workspace.json"));
 const ok=(v,m)=>{if(!v)throw Error(m)};
 ok(index.includes("Luyện học thuật")&&index.includes("Bài toán kinh điển")&&[1,2,3].every(n=>index.includes("de-luyen-0"+n+"/"))&&index.includes("Kỹ năng thi — tách khỏi điểm học thuật"),"topic25 four lanes");
-ok(practice.includes("## A. Đại số")&&practice.includes("## D. Thống kê và xác suất")&&practice.includes("## E. Hình học"),"academic practice strands");
+ok(practice.includes("## B. Bài tập tự luận bổ sung")&&practice.includes("### Nhóm A. Đại số")&&practice.includes("### Nhóm D. Thống kê và xác suất")&&practice.includes("### Nhóm E. Hình học"),"academic practice strands");
 ok(!practice.includes("Mức 1 – Nhận biết")&&!practice.includes("Sổ lỗi sai nên ghi"),"strategy prompts removed from academic exercise bank");
-ok(check.includes("Câu 1 – Đại số")&&check.includes("Câu 4 – Hình học")&&check.includes("Điểm này chỉ đo bài Toán hiện tại"),"academic self-check");
+ok(check.includes("Câu 1 – Đại số")&&check.includes("Câu 4 – Hình học")&&check.includes("điểm học sinh tự chấm"),"academic self-check");
 ok(skills.includes("Không dùng điểm ở đây để kết luận năng lực Toán"),"exam skills separated");
 const examSection=mock.split("## Đáp án và hướng dẫn chấm")[0];
 const examHeadings=examSection.match(/^### Bài (?:I|II|III|IV|V)\s+[–-]/gm)||[];

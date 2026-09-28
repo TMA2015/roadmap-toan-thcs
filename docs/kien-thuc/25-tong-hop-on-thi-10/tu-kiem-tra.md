@@ -5,6 +5,12 @@
 > **Thang điểm:** 10 điểm  
 > **Mục tiêu:** kiểm tra năng lực giải Toán tổng hợp. Kỹ năng phòng thi và chữa đề được đánh giá riêng, không cộng vào điểm này.
 
+## Cách thực hiện
+
+1. Chuẩn bị giấy, bút và đồng hồ; làm độc lập trong khoảng 60 phút, không xem gợi ý hoặc đáp án.
+2. Viết đầy đủ các bước giải trên giấy. Website **chưa nhận bài viết tay, chưa có nút nộp và chưa tự chấm bài tự luận này**.
+3. Sau khi hoàn thành, mở đáp án ở cuối trang, so từng bước, ghi điểm tự chấm và xác định câu cần ôn lại. Không cộng điểm này vào kết quả Readiness tự động.
+
 ## Đề bài
 
 ### Câu 1 – Đại số (2,0 điểm)
@@ -68,8 +74,8 @@ Tam giác \(ABC\) vuông tại \(A\), \(AB=6\), \(AC=8\), đường cao \(AH\) x
 
 Cho \(x,y>0\), \(x+y=12\). Tìm giá trị lớn nhất của \(P=xy\), chỉ rõ khi nào đạt dấu bằng.
 
-## Sau khi nộp bài
+## Sau khi tự làm xong – đối chiếu và tự chấm
 
-Làm toàn bộ câu hỏi trong 60 phút và đối chiếu bài viết trên giấy. **[Đáp án và hướng dẫn chấm – chỉ mở sau khi hoàn thành](tu-kiem-tra-dap-an.md)**. Điểm này chỉ đo bài Toán hiện tại; không cộng/trừ điểm vì tốc độ, sổ lỗi hay chiến lược thi.
+**[Mở đáp án và hướng dẫn tự chấm](tu-kiem-tra-dap-an.md)** sau khi làm bài trên giấy. Đánh dấu từng bước làm đúng, tự ghi điểm và lỗi cần sửa. Đây là **điểm học sinh tự chấm**, không phải bài nộp hay điểm do website/giáo viên xác nhận; không cộng/trừ điểm vì tốc độ, sổ lỗi hay chiến lược thi.
 
 [Bài tập học thuật](bai-tap.md) · [Đề luyện 01](de-luyen-01.md) · [Đề luyện 02](de-luyen-02.md) · [Đề luyện 03](de-luyen-03.md)
