@@ -1,0 +1,443 @@
+{
+  "schema": "math-skill-overlay-proposal-v1",
+  "packet_id": "MATH-SKILL-TAXONOMY-B06-20260928",
+  "source_main_sha": "88143e6b2690edfe721f8d74d2dbcb251bc55ab3",
+  "phase": "C",
+  "reviewer": {
+    "PASS": 23,
+    "REVISION_REQUIRED": 0
+  },
+  "independent_reconciliation": {
+    "PASS": 21,
+    "REVISION_REQUIRED": 2,
+    "affected_ids": [
+      "MOD24V1__058",
+      "MOD24V1__069"
+    ]
+  },
+  "overall_b06": {
+    "reviewed": 71,
+    "reviewer_reported_PASS": 71,
+    "independent_PASS": 69,
+    "independent_REVISION_REQUIRED": 2
+  },
+  "implementation_status": "NOT_IMPLEMENTED",
+  "status": "PROPOSAL_ONLY",
+  "exact_duplicate_pairs": [
+    {
+      "ids": [
+        "MOD24MICRO_010",
+        "MOD24V1__051"
+      ],
+      "exact_question_options_answer_explanation": true
+    },
+    {
+      "ids": [
+        "MOD24MICRO_011",
+        "MOD24V1__061"
+      ],
+      "exact_question_options_answer_explanation": true
+    },
+    {
+      "ids": [
+        "MOD24MICRO_012",
+        "MOD24V1__062"
+      ],
+      "exact_question_options_answer_explanation": true
+    }
+  ],
+  "items": [
+    {
+      "item_id": "MOD24MICRO_010",
+      "legacy_tags": [
+        "lap-phuong-trinh"
+      ],
+      "assessed_target_candidate": "single_equation_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": "MOD24MICRO_010__MOD24V1__051",
+      "flags": [
+        "EXACT_CLONE"
+      ],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24MICRO_011",
+      "legacy_tags": [
+        "lap-he"
+      ],
+      "assessed_target_candidate": "single_equation_component_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": "MOD24MICRO_011__MOD24V1__061",
+      "flags": [
+        "EXACT_CLONE"
+      ],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24MICRO_012",
+      "legacy_tags": [
+        "lap-he"
+      ],
+      "assessed_target_candidate": "single_equation_component_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": "MOD24MICRO_012__MOD24V1__062",
+      "flags": [
+        "EXACT_CLONE"
+      ],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__051",
+      "legacy_tags": [
+        "lap-phuong-trinh"
+      ],
+      "assessed_target_candidate": "single_equation_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": "MOD24MICRO_010__MOD24V1__051",
+      "flags": [
+        "EXACT_CLONE"
+      ],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__052",
+      "legacy_tags": [
+        "lap-phuong-trinh"
+      ],
+      "assessed_target_candidate": "single_equation_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__053",
+      "legacy_tags": [
+        "lap-phuong-trinh"
+      ],
+      "assessed_target_candidate": "single_equation_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__054",
+      "legacy_tags": [
+        "lap-phuong-trinh"
+      ],
+      "assessed_target_candidate": "single_equation_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__055",
+      "legacy_tags": [
+        "lap-phuong-trinh"
+      ],
+      "assessed_target_candidate": "single_equation_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__056",
+      "legacy_tags": [
+        "lap-phuong-trinh"
+      ],
+      "assessed_target_candidate": "single_equation_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__057",
+      "legacy_tags": [
+        "lap-phuong-trinh"
+      ],
+      "assessed_target_candidate": "single_equation_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__058",
+      "legacy_tags": [
+        "lap-phuong-trinh"
+      ],
+      "assessed_target_candidate": "single_equation_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [
+        "TWO_EQUIVALENT_CORRECT_OPTIONS_A_AND_D"
+      ],
+      "reviewer_status": "PASS",
+      "reconciled_status": "REVISION_REQUIRED",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__059",
+      "legacy_tags": [
+        "lap-phuong-trinh"
+      ],
+      "assessed_target_candidate": "single_equation_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__060",
+      "legacy_tags": [
+        "lap-phuong-trinh"
+      ],
+      "assessed_target_candidate": "single_equation_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__061",
+      "legacy_tags": [
+        "lap-he"
+      ],
+      "assessed_target_candidate": "single_equation_component_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": "MOD24MICRO_011__MOD24V1__061",
+      "flags": [
+        "EXACT_CLONE"
+      ],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__062",
+      "legacy_tags": [
+        "lap-he"
+      ],
+      "assessed_target_candidate": "single_equation_component_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": "MOD24MICRO_012__MOD24V1__062",
+      "flags": [
+        "EXACT_CLONE"
+      ],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__063",
+      "legacy_tags": [
+        "lap-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__064",
+      "legacy_tags": [
+        "lap-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__065",
+      "legacy_tags": [
+        "lap-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__066",
+      "legacy_tags": [
+        "lap-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__067",
+      "legacy_tags": [
+        "lap-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__068",
+      "legacy_tags": [
+        "lap-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__069",
+      "legacy_tags": [
+        "lap-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [
+        "REAL_WORLD_INTEGER_INFEASIBILITY"
+      ],
+      "reviewer_status": "PASS",
+      "reconciled_status": "REVISION_REQUIRED",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "MOD24V1__070",
+      "legacy_tags": [
+        "lap-he"
+      ],
+      "assessed_target_candidate": "full_system_recognition",
+      "evidence_type": "multiple_choice_recognition",
+      "independent_written_model_evidence": false,
+      "clone_group": null,
+      "flags": [],
+      "reviewer_status": "PASS",
+      "reconciled_status": "PASS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    }
+  ],
+  "safety": {
+    "legacy_ids_unchanged": true,
+    "legacy_tags_unchanged": true,
+    "legacy_counters_unchanged": true,
+    "auto_alias_merge": false,
+    "runtime_enabled": false,
+    "core_readiness_credit": false
+  }
+}
