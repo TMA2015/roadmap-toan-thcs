@@ -1,0 +1,7 @@
+B05 — PHA B (CHỈ CĐ11, 23 ID). Giữ nguyên ba Sources đang tích: Master Plan Toán v1.1, Notebook Math Permanent v1.1 và 01_UPLOAD_TO_SOURCES_B05.md. KHÔNG tải file mới vào Sources, không chọn B04/B03, không chạy lại Pha A.
+
+Đọc đúng mục A–E của B05, lấy phase_B_ids và kiểm kê 23 ID CĐ11. Rà từng câu/4 lựa chọn/answer index/explanation; phân biệt căn ở tử f(x)≥0 và căn ở mẫu f(x)>0, nhất là điểm biên f(x)=0. Xem các câu RAD11V1_023–032, nhóm 030–032 gần lặp với 023–025 và ký hiệu +0 ở 014/021. Ghi chính xác lỗi toán khác với lỗi trình bày/clone.
+
+LƯU Ý ĐÍNH CHÍNH TỪ PHA A: Báo cáo A viết sai rằng EQ08V1_067 vô nghiệm. Nghiệm đúng của (x²−4)/(x−2)=0 là S={−2}, vì x=2 bị loại còn x=−2 thỏa. Phương án đúng của câu nguồn “x=2 bị loại” vẫn đúng. Nếu tổng hợp A+B, chỉ dùng kết luận đã đính chính, không sao chép lỗi reviewer. Các tập nghiệm gốc EQ08V1_068/069 là R bỏ {3} / R bỏ {−1}; EQ08V1_070/072 vô nghiệm, EQ08V1_071 có S={2}. Không cần phản biện lại A trong câu trả lời Pha B.
+
+Chỉ xuất MỘT bảng đúng 23 dòng Pha B, tối đa 7 phát hiện, 1–2 micro-test tự tìm miền xác định có lời giải, JSON summary phase=B theo đúng hợp đồng ở source. Status counts phải cộng đúng 23 và nêu missing IDs. Tóm tắt ngắn chuỗi khái niệm B04+B05 mà không tự phê duyệt mapping/runtimes. Kết quả PROPOSAL_ONLY; không thay ID/tag/counter hoặc website. Nếu bị cắt hãy ghi ID cuối để tiếp tục, không tự đánh dấu PASS các ID chưa xét.
