@@ -2,7 +2,7 @@
 
 > **Đề tự biên soạn · 120 phút · 10 điểm.** Không phải đề chính thức hay dự đoán của một kỳ thi. Bài hình yêu cầu chứng minh bằng luận cứ, không chỉ đoán từ hình vẽ.
 
-**Cách làm:** In hoặc mở đề, làm toàn bộ trên giấy trong thời gian gợi ý. Không cần nhập lời giải, nộp bài, chụp ảnh hay lưu điểm trên website. Chỉ mở **đáp án và hướng dẫn chấm** sau khi hoàn thành để so từng bước. [Đáp án và hướng dẫn chấm](de-luyen-03-dap-an.md).
+**Cách làm:** In hoặc mở đề, làm toàn bộ trên giấy trong thời gian gợi ý. Em không cần nhập lời giải, nộp bài, chụp ảnh hay lưu điểm trên website. Chỉ mở **đáp án và hướng dẫn chấm** sau khi hoàn thành để so từng bước. [Đáp án và hướng dẫn chấm](de-luyen-03-dap-an.md).
 
 ## Bài I. Căn thức và phương trình chứa ẩn ở mẫu (2,0 điểm)
 

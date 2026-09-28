@@ -4,7 +4,7 @@
 > **Thang điểm:** 10 điểm  
 > **Tính chất:** đề **tự biên soạn, mức nền tảng tổng hợp**; không sao chép hoặc mô phỏng nguyên cấu trúc/trọng số đề chính thức. Nội dung được biên tập để luyện lập luận trong 120 phút.
 
-**Cách làm:** In hoặc mở đề, làm toàn bộ trên giấy trong thời gian gợi ý. Không cần nhập lời giải, nộp bài, chụp ảnh hay lưu điểm trên website. Chỉ mở **đáp án và hướng dẫn chấm** sau khi hoàn thành để so từng bước.
+**Cách làm:** In hoặc mở đề, làm toàn bộ trên giấy trong thời gian gợi ý. Em không cần nhập lời giải, nộp bài, chụp ảnh hay lưu điểm trên website. Chỉ mở **đáp án và hướng dẫn chấm** sau khi hoàn thành để so từng bước.
 
 ## Đề bài
 

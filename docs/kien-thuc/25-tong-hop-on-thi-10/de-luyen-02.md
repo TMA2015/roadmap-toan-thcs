@@ -2,7 +2,7 @@
 
 > **Đề tự biên soạn · 120 phút · 10 điểm.** Không phải đề chính thức của Hà Nội hay đề dự báo. Mục tiêu là luyện nhiều mạch Toán trong cùng một bài và trình bày tự luận có căn cứ.
 
-**Cách làm:** In hoặc mở đề, làm toàn bộ trên giấy trong thời gian gợi ý. Không cần nhập lời giải, nộp bài, chụp ảnh hay lưu điểm trên website. Chỉ mở **đáp án và hướng dẫn chấm** sau khi hoàn thành để so từng bước. [Đáp án và hướng dẫn chấm](de-luyen-02-dap-an.md).
+**Cách làm:** In hoặc mở đề, làm toàn bộ trên giấy trong thời gian gợi ý. Em không cần nhập lời giải, nộp bài, chụp ảnh hay lưu điểm trên website. Chỉ mở **đáp án và hướng dẫn chấm** sau khi hoàn thành để so từng bước. [Đáp án và hướng dẫn chấm](de-luyen-02-dap-an.md).
 
 ## Bài I. Căn thức và điều kiện xác định (2,0 điểm)
 
