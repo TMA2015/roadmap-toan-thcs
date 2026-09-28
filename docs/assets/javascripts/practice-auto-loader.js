@@ -69,9 +69,10 @@
     ensureStyles(siteRoot);
 
     const section = document.createElement("section");
+    const practiceTitle = slug === "25-tong-hop-on-thi-10" ? "A. 🎯 Luyện tập tương tác" : "A. 🎯 Luyện nhanh tương tác";
     section.className = "practice-auto-section";
     section.innerHTML = `
-      <h2 id="luyen-tap-tuong-tac">A. 🎯 Luyện nhanh tương tác</h2>
+      <h2 id="luyen-tap-tuong-tac">${practiceTitle}</h2>
       <p>Mỗi lượt hệ thống chọn một bộ câu từ ngân hàng lớn của chuyên đề. Có thể luyện hỗn hợp, bấm trực tiếp một kỹ năng để luyện riêng hoặc dùng <strong>Luyện điểm yếu</strong>. Phần này có feedback, gợi ý và Tutor nên được xem là <strong>formative practice</strong>, không phải bài kiểm tra cuối chuyên đề.</p>
       <div data-practice-bank-v2="${siteRoot}/assets/data/practice/${manifest}" data-session-size="10"></div>
       <p><em>Lưu ý: tiến độ hiện được lưu trên trình duyệt này bằng localStorage và chưa tự đồng bộ giữa các thiết bị.</em></p>

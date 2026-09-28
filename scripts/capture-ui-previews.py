@@ -282,7 +282,7 @@ $$
     check(exam_page.locator(".exam-answer-item textarea").first.input_value().startswith("Kết quả: 5 căn 2"), "draft persists after reload")
     check(exam_page.locator(".exam-progress").inner_text().startswith("1/12"), "saved progress")
     exam_page.on("dialog", lambda dialog: dialog.accept())
-    exam_page.get_by_role("button", name="Nộp bài", exact=True).click()
+    exam_page.get_by_role("button", name="Kết thúc lượt làm · chuyển sang tự chấm", exact=True).click()
     check(exam_page.locator(".exam-answer-item").count() == 0, "submission freezes response fields")
     check(exam_page.locator(".exam-rubric-item").count() == 0, "rubric shown only after learner confirms key review")
     exam_page.get_by_role("button", name="Tôi đã đối chiếu lời giải trên giấy").click()

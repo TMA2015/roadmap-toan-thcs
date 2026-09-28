@@ -3,23 +3,27 @@
 
 > **Mục tiêu:** luyện trực tiếp năng lực Toán ở các mạch lớn. Kỹ năng quản lý thời gian, chữa đề và sổ lỗi được tách sang [Tự đánh giá kỹ năng làm bài](tu-danh-gia-ky-nang-thi.md).
 
-## A. Đại số và biểu thức
+## B. Bài tập tự luận bổ sung – tự làm trên giấy
 
-### 25-A1
+Các bài dưới đây là phần **luyện thêm sau phần A tương tác**. Em làm trên giấy hoặc vở trước, sau đó mới xem bảng đáp án nhanh. Kết quả phần này chưa được website tự chấm và không tự cộng vào tiến độ luyện tương tác.
+
+### Nhóm A. Đại số và biểu thức
+
+#### 25-A1
 Rút gọn
 
 \[
 \sqrt{75}-\sqrt{12}+2\sqrt3.
 \]
 
-### 25-A2
+#### 25-A2
 Giải phương trình
 
 \[
 \frac{2x-1}{x+2}=3.
 \]
 
-### 25-A3
+#### 25-A3
 Cho
 
 \[
@@ -28,9 +32,9 @@ A=\frac{\sqrt{x}-1}{\sqrt{x}+2},\qquad x\ge0.
 
 Tính \(A\) khi \(x=16\), sau đó giải \(A=\frac12\).
 
-## B. Phương trình, hệ và Viète
+### Nhóm B. Phương trình, hệ và Viète
 
-### 25-B1
+#### 25-B1
 Cho phương trình
 
 \[
@@ -43,7 +47,7 @@ có hai nghiệm \(x_1,x_2\). Không giải phương trình, tính
 x_1^2+x_2^2.
 \]
 
-### 25-B2
+#### 25-B2
 Giải hệ
 
 \[
@@ -53,15 +57,15 @@ x+y=11,\\
 \end{cases}
 \]
 
-### 25-B3
+#### 25-B3
 Một cửa hàng bán 30 quyển sách gồm loại A giá 60 nghìn đồng và loại B giá 40 nghìn đồng, thu được 1,5 triệu đồng. Tính số sách mỗi loại.
 
-## C. Hàm số và mô hình hóa
+### Nhóm C. Hàm số và mô hình hóa
 
-### 25-C1
+#### 25-C1
 Cho đường thẳng \(y=2x-1\). Kiểm tra điểm \(M(3;5)\) có thuộc đường thẳng không.
 
-### 25-C2
+#### 25-C2
 Hai đường thẳng
 
 \[
@@ -70,12 +74,12 @@ y=x+2,\qquad y=-x+6
 
 cắt nhau tại điểm nào?
 
-### 25-C3
+#### 25-C3
 Một bể đang có 120 lít nước và được bơm thêm đều 15 lít mỗi phút. Viết công thức lượng nước \(V\) theo thời gian \(t\) phút và tính \(V\) sau 8 phút.
 
-## D. Thống kê và xác suất
+### Nhóm D. Thống kê và xác suất
 
-### 25-D1
+#### 25-D1
 Dữ liệu:
 
 \[
@@ -84,34 +88,34 @@ Dữ liệu:
 
 Tính số trung bình, trung vị và mốt.
 
-### 25-D2
+#### 25-D2
 Rút ngẫu nhiên một thẻ ghi số từ 1 đến 12. Tính xác suất nhận được:
 1. số chẵn;
 2. số chia hết cho 3;
 3. số vừa chẵn vừa chia hết cho 3.
 
-## E. Hình học
+### Nhóm E. Hình học
 
-### 25-E1
+#### 25-E1
 Tam giác \(ABC\) vuông tại \(A\), \(AB=6\), \(AC=8\). Tính \(BC\) và diện tích tam giác.
 
-### 25-E2
+#### 25-E2
 Tam giác \(ABC\) vuông tại \(A\), đường cao \(AH\) xuống \(BC\). Biết \(BH=9\), \(CH=16\). Tính \(BC, AH, AB, AC\).
 
-### 25-E3
+#### 25-E3
 Trong một đường tròn, hai góc nội tiếp cùng chắn một cung. Chứng minh hai góc đó bằng nhau và nêu điều kiện để áp dụng kết luận này.
 
-## F. Vận dụng tổng hợp
+### Nhóm F. Vận dụng tổng hợp
 
-### 25-F1
+#### 25-F1
 Cho \(x,y>0\), \(x+y=12\). Tìm giá trị lớn nhất của (xy).
 
-### 25-F2
+#### 25-F2
 Một học sinh giải bài toán thực tế ra nghiệm âm cho một đại lượng “số sản phẩm”. Hãy chỉ ra vì sao nghiệm đó phải bị loại và nêu bước kiểm tra cuối cùng cần viết trong lời giải.
 
 ---
 
-# Đáp án nhanh
+## Đáp án nhanh – chỉ xem sau khi tự làm
 
 | Bài | Kết quả |
 |---|---|

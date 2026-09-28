@@ -523,7 +523,7 @@ Mỗi bài yêu cầu học sinh nhận ra **dấu hiệu → công cụ → chu
 
 Ba đề dưới đây đều là **đề tự biên soạn, 120 phút, 10 điểm, gồm 5 bài tự luận**. Đây là tài liệu luyện tập theo những mạch kiến thức của chúng ta, không phải đề chính thức hay đề dự báo. **Đáp án nằm ở trang riêng**, để học sinh hoàn thành bài trên giấy trước khi mở:
 
-**Chế độ làm đề tương tác:** trên mỗi đề có nút **Bắt đầu 120 phút**; trình duyệt lưu nháp và thời điểm bắt đầu. Nộp bài/hết giờ mới hiện phần đối chiếu và rubric tự chấm; sau khi tự đối chiếu từng bước, hệ thống tính **điểm tự chấm** và gợi ý ôn lại bài mỏ neo. Đây vẫn là bài tự luận làm trên giấy: website tĩnh không thể khóa an toàn URL đáp án, không tự động xác minh cách giải hoặc chấm thay giáo viên.
+**Chế độ làm đề tương tác:** trên mỗi đề có nút **Bắt đầu 120 phút**; trình duyệt lưu nháp và thời điểm bắt đầu. Kết thúc lượt làm/hết giờ mới hiện phần đối chiếu và rubric tự chấm; sau khi tự đối chiếu từng bước, hệ thống tính **điểm tự chấm** và gợi ý ôn lại bài mỏ neo. Đây vẫn là bài tự luận làm trên giấy: website tĩnh không thể khóa an toàn URL đáp án, không tự động xác minh cách giải hoặc chấm thay giáo viên.
 
 <div class="capstone-exam-grid" markdown="1">
   <a class="capstone-exam-link" href="de-luyen-01/"><strong>Đề 01 · Nền tảng tổng hợp</strong><span>Căn thức, Viète, hệ thực tế, dữ liệu và hình học tam giác vuông.</span><small>120 phút · 10 điểm →</small></a>
@@ -543,7 +543,7 @@ Ba đề dưới đây đều là **đề tự biên soạn, 120 phút, 10 đi�
 
 ## ✅ 9. Tự kiểm tra
 
-[Tự kiểm tra Chuyên đề 25](tu-kiem-tra.md) giờ là **bài Toán học thuật**: Đại số, Viète, Thống kê – Xác suất, Hình học và vận dụng.
+[Tự kiểm tra Chuyên đề 25](tu-kiem-tra.md) là **bài Toán học thuật tự làm trên giấy và tự đối chiếu**: Đại số, Viète, Thống kê – Xác suất, Hình học và vận dụng.
 
 Phần hỏi về chiến lược phòng thi đã được chuyển sang [Tự đánh giá kỹ năng làm bài](tu-danh-gia-ky-nang-thi.md).
 
@@ -574,5 +574,5 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 - [ ] Có sổ lỗi sai và quy trình chữa đề.
 - [ ] Biết phân loại lỗi kiến thức – kỹ năng – cẩu thả.
 - [ ] Biết điều chỉnh chiến lược theo cấu trúc đề địa phương.
-- [ ] Đạt tối thiểu **7/10** ở bài Tự kiểm tra và chữa xong các câu sai.
+- [ ] Tự làm bài kiểm tra học thuật trên giấy, tự đối chiếu từng bước và chữa xong các câu sai; điểm tự chấm được ghi riêng, không dùng để khóa tiến độ học.
 - [ ] Hoàn thành ít nhất hai đề có bấm giờ và phân tích lại đầy đủ (không yêu cầu làm cả ba ngay từ đầu).
