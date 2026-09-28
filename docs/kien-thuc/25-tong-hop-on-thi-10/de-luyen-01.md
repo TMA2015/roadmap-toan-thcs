@@ -76,7 +76,7 @@ và xác định khi nào đạt dấu bằng.
 
 ---
 
-## Đáp án và hướng dẫn chấm
+## Sau khi hoàn thành đề
 
 Hãy hoàn thành trên giấy trong 120 phút trước khi mở [đáp án và hướng dẫn chấm đề số 1](de-luyen-01-dap-an.md). Đối chiếu cách lập luận, ghi điểm theo từng ý, rồi quay lại chuyên đề gốc ở câu còn yếu.
 

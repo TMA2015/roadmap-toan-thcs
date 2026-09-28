@@ -42,7 +42,7 @@ Cho tam giác nhọn \(ABC\). Các đường cao \(BE\perp AC\) (\(E\in AC\)) v�
 
 ---
 
-## Đáp án và hướng dẫn chấm
+## Sau khi hoàn thành đề
 
 Hoàn thành bài làm rồi mới mở [đáp án, thang điểm và liên kết ôn lại của đề 3](de-luyen-03-dap-an.md). Ghi riêng lỗi kiến thức, lỗi lập luận hình học và lỗi tính toán.
 
