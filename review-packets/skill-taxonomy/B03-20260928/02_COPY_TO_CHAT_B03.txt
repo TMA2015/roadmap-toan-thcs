@@ -1,0 +1,9 @@
+KIỂM ĐỊNH ĐỘC LẬP B03: MATH-SKILL-TAXONOMY-B03-20260928.
+
+Trong Sources chỉ chọn: (1) Master Plan Toán v1.1; (2) Notebook Math Permanent v1.1; (3) 01_UPLOAD_TO_SOURCES_B03.md. Bỏ chọn B01/B02, template và chats cũ.
+
+Đọc toàn văn nguồn B03, kiểm kê đủ 26 ID: 12 câu cach-deu-dinh (CĐ14 4, CĐ15 8), 14 câu nhan-biet-trung-truc (CĐ14 5, CĐ15 9). Đối chiếu record gốc cùng source path/blob SHA. Phân biệt lỗi Toán, sai metadata, và thiếu bằng chứng về năng lực độc lập. TRI14V1_132 không mặc nhiên sai toán vì dùng OA=OB=OC. Xem xét hai cụm gần như lặp CTR15V1_079–086, CTR15V1_097–104: thay tên/số không tự thành nhiều năng lực độc lập.
+
+Phản biện từng item_id, đưa bảng 26/26 với math_status, đích đo hẹp, tag role, giới hạn bằng chứng và hành động đề nghị. Đề xuất canonical concept và task_demand, chỉ tách assessed_skill khi có lý do đo độc lập; tạo ít nhất hai micro-test: tính chất/đảo của trung trực hai đầu mút và bài vận dụng ba đỉnh/tâm ngoại tiếp không chỉ thay số. Đưa một bài chuyển giao có lời giải kỳ vọng.
+
+Cuối cùng xuất JSON có packet_id/source_sha/expected_ids/actual_ids/status_counts/missing_ids/duplicate_ids/unexpected_ids, các findings theo ID và status PROPOSAL_ONLY. Tổng trạng thái phải đúng 26. Không kết luận Core chính thức/tần suất thi khi chưa khóa SGK/đề thi. Không sửa website, IDs, tags hoặc old learner counters. Nếu quá dài, dừng với ID cuối đã kiểm định và chờ lệnh tiếp tục; không tự PASS phần chưa đọc.
