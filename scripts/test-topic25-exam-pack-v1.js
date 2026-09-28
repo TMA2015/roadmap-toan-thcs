@@ -25,7 +25,7 @@ for(const i of [1,2,3]){
  fail(home.includes("de-luyen-"+p+"/")&&home.includes("de-luyen-"+p+".md"),"Topic25 exam card and plain link "+p);
 }
 const self=read("tu-kiem-tra.md"),selfKey=read("tu-kiem-tra-dap-an.md");
-fail(self.includes("Đáp án và hướng dẫn chấm")&&!self.includes("## Câu 1\n\n1."),"self-check answers kept separate");
+fail(self.includes("đáp án và hướng dẫn tự chấm")&&!self.includes("## Câu 1\n\n1."),"self-check answers kept separate");
 fail(selfKey.includes("Đáp án và hướng dẫn chấm")&&selfKey.includes("Bảng truy nguyên lỗi"),"self-check key and recovery");
 const mock2=read("de-luyen-02-dap-an.md"),mock3=read("de-luyen-03-dap-an.md");
 fail(mock2.includes("\\triangle ABD\\sim\\triangle AEB")&&mock2.includes("AE=9"),"tangent-secant reasoning");

@@ -43,7 +43,7 @@ Một hình chữ nhật có chu vi 24 cm. Hỏi diện tích lớn nhất bằn
 
 ---
 
-## Nộp bài và chữa đề
+## Sau khi làm đề – đối chiếu và tự chấm
 
 Sau 120 phút, ghi điểm từng ý, không chỉ ghi điểm tổng. Mở [đáp án chi tiết và rubric đề 2](de-luyen-02-dap-an.md), đối chiếu **từng bước lập luận** với bài làm trên giấy. Sai kỹ năng nào thì quay lại bài mỏ neo hoặc chuyên đề liên quan.
 

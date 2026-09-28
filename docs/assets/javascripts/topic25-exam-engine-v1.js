@@ -110,7 +110,7 @@
   function showIdle(box) {
     box.appendChild(create("p", "", "Đề có ở bên dưới: em làm bài tự luận chính trên giấy. Đồng hồ và ô ghi nháp trên web là công cụ tùy chọn, không phải nơi nộp bài viết tay."));
     box.appendChild(createInputGuide());
-    box.appendChild(create("p", "exam-caution", "Đáp án và rubric chỉ hiện trong giao diện khi nộp bài hoặc hết giờ. Đây là cơ chế tự học trên GitHub Pages, không phải khóa đề thi an toàn trước người có thể mở URL đáp án trực tiếp."));
+    box.appendChild(create("p", "exam-caution", "Đáp án và rubric chỉ hiện trong giao diện khi kết thúc lượt làm hoặc hết giờ. Đây là cơ chế tự học trên GitHub Pages, không phải khóa đề thi an toàn trước người có thể mở URL đáp án trực tiếp."));
     box.appendChild(button("▶ Bắt đầu làm đề 120 phút", "exam-primary", () => {
       attempt.status = "running";
       attempt.started_at = now();

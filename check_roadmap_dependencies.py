@@ -285,13 +285,15 @@ def is_academic_capstone(practice_text, self_text):
 
 
 def check_academic_capstone(num, folder, lesson_text, practice_text, self_text):
+    # CĐ25: A is the interactive engine; B contains the additional paper exercises.
     required_practice = [
-        "## A. Đại số",
-        "## B. Phương trình, hệ và Viète",
-        "## C. Hàm số và mô hình hóa",
-        "## D. Thống kê và xác suất",
-        "## E. Hình học",
-        "## F. Vận dụng tổng hợp",
+        "## B. Bài tập tự luận bổ sung",
+        "### Nhóm A. Đại số",
+        "### Nhóm B. Phương trình, hệ và Viète",
+        "### Nhóm C. Hàm số và mô hình hóa",
+        "### Nhóm D. Thống kê và xác suất",
+        "### Nhóm E. Hình học",
+        "### Nhóm F. Vận dụng tổng hợp",
     ]
     for marker in required_practice:
         if marker not in practice_text:
@@ -306,10 +308,10 @@ def check_academic_capstone(num, folder, lesson_text, practice_text, self_text):
     if not re.search(r"^#+\s+Câu\s+1\b", self_text, re.MULTILINE | re.IGNORECASE):
         issues.append(f"{num:02d}: Academic Capstone self-check thiếu câu hỏi học thuật")
 
-    if "Đáp án và hướng dẫn chấm" not in self_text:
+    if "đáp án và hướng dẫn tự chấm" not in self_text.lower():
         issues.append(f"{num:02d}: Academic Capstone self-check thiếu đáp án/hướng dẫn chấm")
 
-    if "Điểm này chỉ đo bài Toán hiện tại" not in self_text:
+    if "điểm học sinh tự chấm" not in self_text or "không cộng điểm này vào kết quả Readiness tự động" not in self_text:
         issues.append(f"{num:02d}: Academic Capstone chưa tách điểm học thuật khỏi kỹ năng thi")
 
     for filename in ["bai-toan-kinh-dien.md", "de-luyen-01.md", "tu-danh-gia-ky-nang-thi.md"]:
