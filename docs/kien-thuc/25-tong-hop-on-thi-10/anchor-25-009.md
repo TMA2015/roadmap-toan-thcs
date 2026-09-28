@@ -41,6 +41,7 @@ Viết \(\angle BEF,\angle BCF\) và xác định cả hai cùng chắn dây \(B
 **Bước 2 – Chứng minh \(A,E,H,F\) nội tiếp.** Các điểm \(B,E,H\) thẳng hàng, \(A,E,C\) thẳng hàng nên \(\angle AEH=90^\circ\). Tương tự, \(C,F,H\) thẳng hàng, \(A,F,B\) thẳng hàng nên \(\angle AFH=90^\circ\). Suy ra \(E,F\) cùng thuộc đường tròn đường kính \(AH\); do đó \(A,E,H,F\) nội tiếp.
 
 **Bước 3 – Suy ra góc.** Trên đường tròn đường kính \(BC\), hai góc nội tiếp \(\angle BEF\) và \(\angle BCF\) cùng chắn cung \(BF\) không chứa hai đỉnh \(E,C\). Vì vậy
+
 \[
 \boxed{\angle BEF=\angle BCF}.
 \]

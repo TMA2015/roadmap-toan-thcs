@@ -8,6 +8,7 @@
 
 1. Rút gọn \(A=\sqrt{50}+\sqrt8-\sqrt{18}\). (1,0 điểm)
 2. Giải phương trình sau và đối chiếu điều kiện xác định: (1,0 điểm)
+
 \[
 \frac{x-3}{x-2}=2.
 \]

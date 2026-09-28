@@ -15,6 +15,7 @@
 Thời gian hoàn thành **không thể cộng hoặc trừ trực tiếp**. Ta quy ước toàn bộ công việc bằng \(1\); khi cùng làm, các **phần công việc hoàn thành trong một ngày** mới cộng được.
 
 Đặt \(r_A,r_B\) lần lượt là năng suất (công việc/ngày) của hai đội:
+
 \[
 r_A=\frac1{20},\qquad r_A+r_B=\frac1{12}.
 \]
@@ -40,19 +41,23 @@ Nếu \(r_B=1/30\) công việc/ngày, thời gian B làm một mình là \(1:(1
 **Bước 1 – Năng suất mỗi ngày.** Quy ước cả công việc bằng \(1\). Đội A làm được \(1/20\) công việc/ngày; cả hai đội làm được \(1/12\) công việc/ngày.
 
 **Bước 2 – Năng suất B.**
+
 \[
 r_B=\frac1{12}-\frac1{20}
 =\frac5{60}-\frac3{60}=\frac2{60}=\frac1{30}.
 \]
+
 Năng suất dương, phù hợp với thực tế: đội B có đóng góp vào tiến độ chung.
 
 **Bước 3 – Thời gian B làm một mình.**
+
 \[
 t_B=\frac{\text{toàn bộ công việc}}{\text{năng suất B}}
 =\frac1{1/30}=\boxed{30\text{ ngày}}.
 \]
 
 **Bước 4 – Khối lượng làm chung trong 4 ngày.**
+
 \[
 W_{4} =4(r_A+r_B)=4\cdot\frac1{12}=\boxed{\frac13\text{ công việc}}.
 \]
