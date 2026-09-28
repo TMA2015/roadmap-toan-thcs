@@ -1,0 +1,7 @@
+B06 – PHA B (CHỈ 35 ID CĐ09). Giữ nguyên ba Sources đã chọn: Master Plan Toán v1.1, Notebook Math Permanent v1.1 và 01_UPLOAD_TO_SOURCES_B06.md. KHÔNG nạp file mới, không chạy lại Pha A.
+
+Pha A đã có đủ 13/13 ID; tất cả PASS về toán/đáp án nhưng phân biệt: EQ08MICRO_013/015 chỉ CHỌN phương trình cho sẵn (model_recognition), EQ08MICRO_014 CHỌN biểu thức thành phần, EQ08V1_107–112 chọn đáp số, EQ08V1_113–116 chọn chặn nguyên. Không gọi các câu này là đã chứng minh học sinh tự dựng mô hình. Không cần tái xuất bảng A.
+
+Đọc phase B mục C và D của nguồn B06, kiểm kê đúng 35 ID CĐ09. Kiểm định độc lập toán, phương án/đáp án và đích đo của từng câu: nhận diện một quan hệ, chọn cả hệ, giải hệ, kiểm tra điều kiện. Đặc biệt SYS09MICRO_015 chỉ hỏi một phương trình chuyển động; các SYS09V1_111–120 có tag nang-suat-he nhưng cần phân biệt năng suất với bối cảnh doanh thu/số sản phẩm. Không gộp tag context thành năng lực assessed. Kiểm tra clone thay số và bẫy đáp án.
+
+Chỉ in MỘT bảng 35 dòng (ID, math/answer status, đích đo thực, role của tag/context/clone, đề xuất); tối đa 7 findings có dẫn ID + nguồn, và 1–2 micro-tests tự đặt ẩn/lập đầy đủ hai phương trình/giải/kiểm tra, với lời giải và rubric ngắn. JSON coverage theo đúng mục E, counts cộng 35, PROPOSAL_ONLY. Không viết lại 35 object/đề gốc. Nếu bị cắt, ghi ID cuối và dùng lệnh continuation, không tự PASS những ID chưa xem.
