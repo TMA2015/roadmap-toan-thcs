@@ -4,7 +4,7 @@ const fs=require("fs");
 const css=fs.readFileSync("docs/assets/stylesheets/topic-workspace.css","utf8");
 const js=fs.readFileSync("docs/assets/javascripts/topic-workspace-v1.js","utf8");
 const ok=(v,m)=>{if(!v)throw new Error(m)};
-const marker="/* Academic soft cards · visual-only enhancement (2026-09-29). */";
+const marker="/* Academic soft cards · visual-only enhancement (2026-09-29).";
 ok(css.includes(marker),"soft-card CSS missing");
 ok(js.includes('class="topic-core-card-header"')&&js.includes('class="topic-core-card-content"'),"semantic header/body wrappers");
 ok(js.includes('topic-core-teach-start')&&js.includes('topic-core-practice-start'),"two original Core actions preserved");
