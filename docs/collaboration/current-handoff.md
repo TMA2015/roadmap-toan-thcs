@@ -1,48 +1,44 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT 29/09/2026.** Trạng thái ngắn hạn, không thay Master Plan. Tên chính thức **Self-Learning Math**, thuộc **G Learning**; AI Tutor là tính năng. Snapshot dựa trên `main` `e80c5e685a24c36ad632a3c8da9963de644575ea`. Mọi phiên mới phải đối chiếu lại SHA của `main`/PR/deploy vì snapshot có thể cũ sau một lần merge.
+> **CURRENT CHECKPOINT — 29/09/2026, sau nghiệm thu CĐ19–20 trên iPad và desktop.** Tên sản phẩm: **Self-Learning Math** thuộc **G Learning**; AI Tutor là tính năng. Snapshot được đối chiếu với `main` tại `4cfa70ff999eb469ac4e33dadb6447abae1c7383` trước PR bàn giao này. Khi tiếp nối, luôn đọc `main`/PR/QA live; checkpoint là lịch sử có ngày, không tự khẳng định đã bao trùm commit sau đó.
 
-## Mở cuộc trò chuyện mới
+## Khôi phục trong cuộc trò chuyện mới
 
-Đọc [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), tài liệu này, [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md) và Task Registry; sau đó kiểm tra GitHub `main` và nhánh/PR đang mở. **Không dùng tên hoặc trạng thái trong chat cũ để ghi đè quyết định và code hiện hành.** Sau mỗi mốc cần cập nhật lại tài liệu này, Task Registry và Project Context.
+Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Quyết định giao diện/học thuật cần giữ
+## Quyết định không được tự làm lệch
 
-- 25 chuyên đề là Vertical Spine; KNTT lớp/chương/bài là overlay. Việc chia lại CĐ20 không thêm chuyên đề thứ 26. Core/Support/Entrance10/Challenge/Bridge phân tầng; không đưa Challenge vào Core readiness.
-- Golden Template: **Đọc & hiểu → Core theo chặng (học có trợ giúp) → Practice Room → Core Readiness (độc lập, chấm sau Submit)**. Formative evidence và assessment evidence tách biệt; không hard gate.
-- **Soft Academic Cards** theo giao diện đã duyệt CĐ04–18/CĐ18: màu nhấn nhẹ, header/content, tối đa ba cột trên khung rộng và responsive trên iPad/mobile; hiển thị bài/lớp, tiên quyết, kỹ năng, số câu và coverage thật. Mỗi thẻ có **Bài giảng / Luyện tập** mở trong modal riêng, không bung card trong lưới; chuyển mode và chuyển câu, hint/giảng lại/lời giải theo yêu cầu. **Mở/đóng/xem câu không tạo lượt sai; chỉ chọn đáp án mới ghi answer.**
-- Số câu mỗi thẻ phụ thuộc skill, không ép ba câu; mỗi item một assessed skill chính, supporting skills không nhận điểm giả. Không nói đã luyện khi chưa có câu riêng; 80%/coverage không đồng nghĩa mastery. Không xóa/đổi ID câu, `card_id` lịch sử, URL, dữ liệu học sinh, ảnh SVG đã duyệt hay điều hướng sáu nhóm +25 lối tắt.
+- 25 chuyên đề là một Vertical Spine G6–G9, lớp/KNTT là overlay. Có thể mở rộng THPT, SAT/ACT, logic sau này; chia thêm thẻ CĐ20 không tạo chuyên đề thứ 26.
+- Học theo **Đọc & hiểu → Core theo chặng → Practice Room → Core Readiness**. Core có trợ giúp; Readiness độc lập, không hint/Tutor, chỉ feedback sau Submit; practice/assessment evidence tách biệt, không khóa cứng.
+- Giữ **Soft Academic Cards** đã nghiệm thu: header/body rõ, màu nhấn nhẹ, tối đa ba cột khung rộng, responsive tablet/mobile; bài/lớp, tiên quyết, coverage chính xác; hai nút **Bài giảng / Luyện tập** mở modal riêng, chuyển mode và câu. Mở/đóng/xem câu không ghi thêm attempt; chỉ chọn đáp án mới ghi.
+- Số micro theo số skill thực tế, không cố định ba; một item có một assessed skill chính, supporting skill không tính điểm; coverage không phải mastery. Không đổi ID, legacy `card_id`, URL, localStorage, readiness, ảnh/SVG đã duyệt hoặc menu sáu nhóm +25 lối tắt khi không có migration/QA riêng.
+- Phân biệt independent academic text review, bounded self-audit, QA render/browser, GitHub deploy và owner real-device acceptance; không đánh đồng.
 
-## Phạm vi đã xuất bản, không làm lại
+## Phát hành và nghiệm thu đã có
 
-| Mốc | Trạng thái xác nhận |
-|---|---|
-| CĐ04–06 | PR #166; dedicated Core, bài giảng và dual-modal; self-audited. |
-| CĐ07 | Pilot, 5 R2-approved teaching copies; 17 micro; 11/11 cơ hội skill. |
-| CĐ08–12 | PR #167; 25 bài giảng, bốn câu lấp gap, câu cũ giữ nguyên. |
-| CĐ13–15 | PR #168; 15 bài giảng, chín câu thêm; owner đã kiểm tra thiết bị. |
-| CĐ16–18 | PR #169 **merged/deployed** tại `8a13c6c2f076fe360ada6bbaf51d09997e538a4c`: 15 bài giảng, 46 micro, 36/36 cơ hội skill, chỉ thêm GEO16MICRO_016. Ảnh CĐ18 chủ dự án cung cấp; nghiệm thu đầy đủ mọi thiết bị cần ghi riêng nếu chưa được xác nhận. Registry cũ ghi READY là sai. |
-| Project identity | PR #171 merged tại `e80c5e685a24c36ad632a3c8da9963de644575ea`; Master Plan v1.1.1 và GitHub Pages workflow đã PASS. |
+| Phạm vi | Mốc và bằng chứng | Giới hạn |
+|---|---|---|
+| CĐ04–06 | PR #166 Core riêng, dual-modal, self-audit | Không suy ra độc lập NotebookLM |
+| CĐ07 | Pilot, 5 bài giảng R2, 17 micro, 11/11 cơ hội skill | Coverage ≠ mastery |
+| CĐ08–12 | PR #167; 25 bài giảng, bốn item gap | Item cũ được giữ |
+| CĐ13–15 | PR #168; 15 giảng, chín item mới; owner đã kiểm tra thiết bị | Tách audit nguồn và thiết bị |
+| CĐ16–18 | PR #169, merge `8a13c6c2f076fe360ada6bbaf51d09997e538a4c`; 15 giảng, 46 micro, 36/36 cơ hội skill | Không làm lại |
+| **CĐ19** | [PR #173](https://github.com/TMA2015/roadmap-toan-thcs/pull/173) merge `607b521635653ae89df68ed1890869a331721da3`; năm bài giảng R2, 17 micro, 14/14 cơ hội skill | 15 item gốc không được tái kiểm định chỉ từ packet |
+| **CĐ20** | [PR #174](https://github.com/TMA2015/roadmap-toan-thcs/pull/174) merge `4cfa70ff999eb469ac4e33dadb6447abae1c7383`; 10 thẻ v2, 29 skill, 15 câu cũ +14 item mới; CI và [Deploy MkDocs](https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/36599072769) SUCCESS | Năm giảng mới/14 câu text review, năm giảng legacy/hint self-audit; không đồng nghĩa SVG được NotebookLM chứng nhận |
 
-Self-audit ở các batch trước **không được gọi là NotebookLM independent PASS**. Rollout Golden 13–20 trước đó khác với việc phát hành trang Core độc lập mới.
+**Owner device acceptance 29/09/2026:** chủ dự án xác nhận “đã kiểm tra trên iPad, desktop. ok” cho **CĐ19–20**. Ghi `OWNER_ACCEPTED_IPAD_DESKTOP` cho phiên bản đã xuất bản. **Không suy diễn đã test iPhone**, cũng không tự gán xác nhận riêng cho từng edge case về lưu tiến độ nếu owner chưa chỉ rõ. QA browser/CI trước phát hành là bằng chứng riêng.
 
-## CĐ19–20 — điểm nối hiện hành
+**CĐ20 history contract:** workspace v1 năm thẻ và 15 item cũ bảo toàn; v2 là display overlay riêng, không migration hoặc tính lại mẫu số cũ; `GEO20MICRO_011` vẫn thuộc `geo20-core-4`. `geo20-core-2b` chỉ có hai skill/hai câu, không sinh câu giả. Hoán vị đáp án của 14 câu mới có kiểm thử 4/4/3/3 và provenance, không sửa option text.
 
-**[Draft PR #170](https://github.com/TMA2015/roadmap-toan-thcs/pull/170)** chứa gói nguồn và receipt kiểm định; head `275749b59c528f0bf6b324018db516b65d250ed3`, baseline `8a13c6c2f076fe360ada6bbaf51d09997e538a4c`. Đây là **audit-only, không merge thành release**. CĐ19–20 candidate chưa xuất bản.
+**Audit-only [PR #170](https://github.com/TMA2015/roadmap-toan-thcs/pull/170)** vẫn là hồ sơ nguồn/receipt độc lập, không merge thành release. CĐ19 R2 5+2 PASS, CĐ20 Part A 10/10, Part B 19/19 text/math PASS, nhưng phạm vi không gồm SVG rendered hay năm giảng legacy. Master Plan v1.1.1 ở PR #171 và cơ chế handoff PR #172 đã merge. Không chạy lại các vòng review đã đóng khi source không thay.
 
-- **CĐ19 R2:** 5 bản giảng + hai câu `GEO19MICRO_016–017` đã có xác nhận học thuật targeted R2. Đã xác nhận điều kiện đảo định lý dây cung, vị trí tương đối đường tròn và ID chuẩn. Receipt: `content-staging/reviews/MATH-CORE19-20-R1-20260929/12_CD19_R2_FINAL_RECEIPT.md` trong PR #170. Không suy diễn 15 câu gốc được regrade.
-- **CĐ20 Part A:** 10 nhóm thẻ đề xuất, chia đúng 29 skill, reviewer 10/10 PASS; 5 legacy anchors + 5 subcards. Receipt `11_CD20_PART_A_R1_RECEIPT.md` trong PR #170.
-- **CĐ20 Part B:** Báo cáo NotebookLM chủ dự án đã cung cấp ghi 5 bản giảng đề xuất (`geo20-core-1a,1b,2a,2b,4a`) và 14 câu `GEO20MICRO_016–029`, **19/19 PASS cho toán học và văn bản**. *Không chứng nhận SVG sau render và chưa deploy.* Cần lưu receipt có khóa packet/source trước khi tích hợp.
-- **Safety:** hai bộ 15 câu gốc, ID, assessed skill, card mapping và lịch sử attempt giữ nguyên. CĐ20 phải có overlay chia thẻ **có phiên bản, không migration ngầm**, tiến độ cũ không bị tính lại theo mẫu số mới. `GEO20MICRO_011` tiếp tục thuộc legacy `geo20-core-4`; `geo20-core-2b` hai kỹ năng/hai câu không cần tạo câu giả.
+## Việc tiếp theo — tiếp tục học thuật, không tái triển khai Core
 
-## Công việc tiếp theo
+1. **Skill taxonomy / assessed-skill audit:** bắt đầu bằng read-only/source-locked reconciliation của 39 mục CĐ04–07 và các cụm B01–B07, tránh trộn `41 graph nodes` với hệ thống skill toàn chương trình. Đối chiếu các [draft PR #146–155](https://github.com/TMA2015/roadmap-toan-thcs/pulls) và file hiện hành, không mặc định draft đã merge hoặc review toàn bộ item. Phân biệt kỹ năng cốt lõi, kỹ năng phụ thuộc, context, kỹ năng tổng hợp và Extension; soát trùng, nhãn quá rộng, câu trùng phương pháp và độ bao phủ.
+2. Tách kết luận đã được NotebookLM/Gemini phản biện khỏi self-audit; các câu sửa học thuật trong PR #151/#153/#155 vẫn là draft, không nhập riêng hoặc tự thay đáp án/kho câu vì nhận định ở một báo cáo.
+3. Phân tầng ưu tiên Core/Entrance10/Challenge theo mapping chuẩn, sau đó mới đối chiếu corpus đề thi có nguồn/địa phương/năm để nói về tần suất; tuyệt đối không tự suy tần suất từ ngân hàng tự biên soạn.
+4. Lập một bản quyết định read-only đề xuất trước khi thay taxonomy runtime; giữ nguyên ID, tags lịch sử và dữ liệu học sinh cho đến khi có cơ chế compatibility/evidence riêng. Sau quyết định, ghi PR/QA và cập nhật handoff.
 
-1. Lưu receipt CĐ20 Part B và đối chiếu exact source/packet IDs; không chạy lại CĐ20 Part A hoặc CĐ19 R2 nếu nguồn không thay.
-2. So sánh draft #170 với `main` mới nhất, rà soát hình SVG render thực tế và giả thiết hình học.
-3. PR triển khai riêng CĐ19–20 đúng Soft Academic Cards/dual-modal, câu/giảng được review và CĐ20 overlay v2 bảo toàn history.
-4. Chạy theorem/diagram/math QA, schema, answer indices, evidence regression, strict MkDocs build, desktop/iPad/mobile browser, merge/deploy chỉ khi đủ điều kiện; owner device acceptance là cổng riêng.
-5. Sau từng mốc cập nhật checkpoint này và registry/context, ghi rõ **draft / QA / merged / deployed / owner-accepted**.
+## Duy trì trạng thái
 
-## Giao thức bảo trì và giới hạn chat
-
-Cập nhật checkpoint ngay sau quyết định được chủ dự án duyệt, review kết thúc, PR merge hoặc deploy. Git history lưu các lần cập nhật; không nhét log tiến độ vào Master Plan. Khi đoạn chat dài hoặc trước khi chuyển chat, chủ động chốt checkpoint. Không có bộ đếm chính xác báo trước giới hạn hội thoại, nên **không cam kết cảnh báo đúng ngưỡng**. Câu lệnh khôi phục: **“Đọc Project Handoff trên GitHub, đối chiếu main và tiếp tục.”**
+Cập nhật GitHub sau mỗi mốc quyết định, QA, merge, deploy hoặc nghiệm thu; lịch sử Git giữ bản cũ. Không có bộ đếm đáng tin cậy để cảnh báo chính xác giới hạn chat; chủ động chốt checkpoint khi phiên dài. Câu khôi phục: **“Đọc Project Handoff trên GitHub, đối chiếu main và tiếp tục.”**
