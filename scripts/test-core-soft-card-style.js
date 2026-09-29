@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+"use strict";
+const fs=require("fs");
+const css=fs.readFileSync("docs/assets/stylesheets/topic-workspace.css","utf8");
+const js=fs.readFileSync("docs/assets/javascripts/topic-workspace-v1.js","utf8");
+const ok=(v,m)=>{if(!v)throw new Error(m)};
+const marker="/* Academic soft cards · visual-only enhancement (2026-09-29).";
+ok(css.includes(marker),"soft-card CSS missing");
+ok(js.includes('class="topic-core-card-header"')&&js.includes('class="topic-core-card-content"'),"semantic header/body wrappers");
+ok(js.includes('topic-core-teach-start')&&js.includes('topic-core-practice-start'),"two original Core actions preserved");
+ok(js.includes('const sessions=new Map()')&&js.includes('recordAnswer?.('),"modal/evidence code remains present");
+const cssLines=css.split("\n").map(x=>x.trim());
+const variants=cssLines.filter(x=>x.startsWith(".topic-core-card:nth-child(5n+")&&x.includes("{--core-accent:")).length;
+const dark=cssLines.filter(x=>x.startsWith('[data-md-color-scheme="slate"] .topic-core-card:nth-child(5n+')&&x.includes("{--core-accent:")).length;
+ok(variants===5&&dark===5,"five light and five dark accent variants");
+ok(css.includes(".topic-core-card-header{")&&css.includes(".topic-core-card-content{"),"header and body styling");
+ok(css.includes("prefers-reduced-motion:reduce"),"respects reduced-motion preference");
+ok(css.includes("@media(hover:hover) and (pointer:fine)"),"hover polish must not animate touch-only devices");
+ok(css.includes("min-height:44px"),"touch targets remain at least 44px");
+ok(css.includes("grid-template-columns:repeat(3,minmax(0,1fr))"),"large Core grids use readable max three columns");
+console.log("PASS: soft Core cards have semantic header/body, five balanced accents, dark/reduced-motion rules and unchanged modal hooks.");

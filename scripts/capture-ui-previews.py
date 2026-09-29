@@ -146,6 +146,38 @@ with sync_playwright() as p:
                   "all five cards retain the practice button")
             first_card = core_page.locator('.topic-core-card[data-card-id="pt07-core-1"]')
             second_card = core_page.locator('.topic-core-card[data-card-id="pt07-core-2"]')
+            cards_visual = core_page.locator(".topic-core-card")
+            check(cards_visual.count() == 5 and core_page.locator(".topic-core-card-header").count() == 5
+                  and core_page.locator(".topic-core-card-content").count() == 5,
+                  "five semantic soft-card headers and bodies")
+            accents = cards_visual.evaluate_all(
+                "(items) => items.map(el => getComputedStyle(el).getPropertyValue('--core-accent').trim())")
+            check(len(set(accents)) == 5, "all five cards have distinct restrained accent tones")
+            check(first_card.locator(".topic-core-card-header").evaluate(
+                "(el) => getComputedStyle(el).backgroundImage.includes('gradient')"),
+                "card header has a separate soft-tinted treatment")
+            grid_cols = core_page.locator(".topic-core-card-grid").evaluate(
+                "(el) => getComputedStyle(el).gridTemplateColumns.split(' ').filter(Boolean).length")
+            check(1 <= grid_cols <= 3, "readable maximum three Core columns on desktop")
+            check(first_card.locator(".topic-core-card-number").evaluate(
+                "(el) => getComputedStyle(el).backgroundColor !== 'rgba(0, 0, 0, 0)'"),
+                "Core number badge has a solid contrasting background")
+            check(first_card.locator(".topic-core-card-actions button").evaluate_all(
+                "(buttons) => buttons.length === 2 && buttons.every(b => b.getBoundingClientRect().height >= 44)"),
+                "both Core actions retain touch-size targets")
+            first_card.locator(".topic-core-card-actions").scroll_into_view_if_needed()
+            shot(core_page, "topic07-core-soft-cards-desktop.png")
+            original_scheme = core_page.evaluate("() => document.body.getAttribute('data-md-color-scheme')")
+            core_page.evaluate("() => document.body.setAttribute('data-md-color-scheme','slate')")
+            dark_accent = first_card.evaluate(
+                "(el) => getComputedStyle(el).getPropertyValue('--core-accent').trim()")
+            check(dark_accent != accents[0], "soft-card accents adapt to dark theme")
+            shot(core_page, "topic07-core-soft-cards-dark-desktop.png")
+            core_page.evaluate("""(previous) => {
+                if(previous === null) document.body.removeAttribute('data-md-color-scheme');
+                else document.body.setAttribute('data-md-color-scheme', previous);
+            }""", original_scheme)
+
             check(first_card.get_attribute("data-covered-skills") == "3"
                   and first_card.get_attribute("data-total-skills") == "4",
                   "Core1 displays actual 3/4 coverage")
@@ -439,6 +471,17 @@ $$
     # Close through the actual dimmed backdrop, as an iOS user would.
     half_page.mouse.click(700, 450)
     check(not half_page.locator('input#__drawer').is_checked(), "backdrop closes native drawer")
+    half_page.goto(BASE + "kien-thuc/07-phan-thuc-dai-so/core/", wait_until="networkidle")
+    tablet_cards = half_page.locator('#core-journey[data-core-ready="1"] .topic-core-card')
+    check(tablet_cards.count() == 5, "tablet renders all Core cards")
+    check(half_page.locator(".topic-core-card-header").count() == 5, "tablet renders tinted headers")
+    check(tablet_cards.first.locator(".topic-core-card-actions button").evaluate_all(
+          "(buttons) => buttons.length === 2 && buttons.every(b => b.getBoundingClientRect().height >= 44)"),
+          "tablet Core actions retain accessible targets")
+    check(tablet_cards.first.evaluate("(el) => el.scrollWidth <= el.clientWidth + 2"),
+          "tablet Core card has no horizontal overflow")
+    tablet_cards.first.locator(".topic-core-card-actions").scroll_into_view_if_needed()
+    shot(half_page, "topic07-core-soft-cards-tablet.png")
     half_page.close()
     half.close()
 
@@ -500,6 +543,16 @@ $$
           "no separate teaching accordion on phone")
     check(completed_core.locator(".topic-core-teach-start").count() == 5,
           "phone has five lecture buttons")
+    check(completed_core.locator(".topic-core-card-header").count() == 5,
+          "phone retains five tinted Core card headers")
+    check(completed_core.locator(".topic-core-card").first.evaluate(
+          "(el) => el.scrollWidth <= el.clientWidth + 2"),
+          "card does not create horizontal scrolling on phone")
+    check(completed_core.locator(".topic-core-card").first.locator(".topic-core-card-actions button").evaluate_all(
+          "(buttons) => buttons.length === 2 && buttons.every(b => b.getBoundingClientRect().height >= 44)"),
+          "phone Core actions remain thumb-sized")
+    completed_core.locator(".topic-core-card").first.locator(".topic-core-card-actions").scroll_into_view_if_needed()
+    shot(first_phone, "topic07-core-soft-cards-phone.png")
     first_phone.locator("#core-journey .topic-core-teach-start").first.click()
     pilot_dialog=first_phone.locator(".topic-core-dialog")
     check(pilot_dialog.is_visible() and pilot_dialog.get_attribute("data-mode") == "teach",
