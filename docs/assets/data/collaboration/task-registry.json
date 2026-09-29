@@ -613,9 +613,9 @@
       "id": "MATH-SKILL-TAXONOMY-RECONCILE-001",
       "title": "Reconcile B01–B07 independent academic reviews and primary skill taxonomy before runtime integration",
       "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW_RECONCILIATION",
-      "status": "OPEN",
-      "review_verdict": "PROPOSAL_ONLY_NO_RUNTIME_MIGRATION",
-      "review_notes": "Review legacy 39 flagged CĐ04–07 records and B01–B07 draft packets #146–155 with actual review receipts and current main source SHA. Distinguish 41 graph nodes from 346 legacy skill tags (snapshot, not current count); no unsupported frequency rankings. Author read-only decision register, then proposal for backwards-compatible primary-skill overlay. Preserve bank IDs/tags/history until explicit separately tested rollout."
+      "status": "CHATGPT-REVIEW",
+      "review_verdict": "B01_B07_ROUND_RECEIPTS_CONSOLIDATED_10_FIX_DIFF_PREFLIGHT_PASS_PROPOSAL_ONLY",
+      "review_notes": "Evidence ledger review-packets/skill-taxonomy/B01-B07-CURRENT-RECONCILIATION-20260930.md consolidates B01–B07 receipt limits and checks 10 proposed content fixes against main 4cfa70f: six file comparisons/five unique paths, exact changed IDs and unchanged keys/tags. Not an independent whole-bank audit, not a completed question-level taxonomy overlay and not production. Historical draft PRs #151/#153/#155 remain unmerged pending explicit controlled approval. Next: item-level canonical concept/task-demand/clone/evidence register, source-locked and read-only."
     }
   ]
 }
