@@ -27,7 +27,8 @@
       "micro_practice": [
         "GEO14MICRO_001",
         "GEO14MICRO_002",
-        "GEO14MICRO_003"
+        "GEO14MICRO_003",
+        "GEO14MICRO_016"
       ],
       "teaching_copy": {
         "key_idea": "Trong tam giác, tổng ba góc \\(180^\\circ\\); góc lớn hơn đối diện cạnh lớn hơn và ngược lại. Ba đoạn lập thành tam giác khi tổng hai đoạn ngắn hơn lớn hơn đoạn dài nhất. Từ A ngoài đường d, đoạn vuông góc AH ngắn hơn mọi đường xiên AB (B khác H trên d).",
@@ -75,7 +76,8 @@
       "micro_practice": [
         "GEO14MICRO_004",
         "GEO14MICRO_005",
-        "GEO14MICRO_006"
+        "GEO14MICRO_006",
+        "GEO14MICRO_017"
       ],
       "teaching_copy": {
         "key_idea": "Tam giác cân tại A có \\(AB=AC\\) và hai góc đáy bằng nhau. Đường trung trực AB vuông góc AB tại trung điểm; một điểm P cách đều A, B thì nằm trên trung trực, và ngược lại. Không được suy ra P là trung điểm AB chỉ từ \\(PA=PB\\).",
@@ -249,5 +251,8 @@
     }
   ],
   "micro_practice_bank": "assets/data/practice/14-tam-giac-micro-v1.json",
-  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json"
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json",
+  "qa_notes": [
+    "New skill-coverage items appended; the original Base–Trap–Apply records and their IDs remain intact; source-linked teaching references only the first three."
+  ]
 }
