@@ -14,10 +14,13 @@ with sync_playwright() as p:
         page=context.new_page()
         page.goto(BASE,wait_until="networkidle")
         assert page.locator("#core-journey.topic-core-gateway a[href='core/']").count()==1
+        page.evaluate("""() => localStorage.setItem("toan-thcs-practice-v1", JSON.stringify({questions:{"GEO20MICRO_011":{attempted:2,correct:1}},tags:{"dien-tich-xung-quanh-hinh-non":{attempted:2,correct:1}},observed_signals:[]}))""")
+        before=page.evaluate("localStorage.getItem('toan-thcs-practice-v1')")
         page.goto(BASE+"core/",wait_until="networkidle")
         cards=page.locator(".topic-core-card")
         cards.first.wait_for(state="visible",timeout=20000)
         assert cards.count()==10 and page.locator(".lesson-switcher-steps--four a").count()==4
+        assert page.evaluate("localStorage.getItem('toan-thcs-practice-v1')")==before, "v2 view must not migrate old progress"
         assert page.locator(".topic-core-card-gap").count()==0
         assert page.locator(".topic-core-card-header").count()==10
         assert "29 câu thực hành" in page.locator(".topic-core-journey-head").inner_text()
@@ -30,6 +33,13 @@ with sync_playwright() as p:
         assert dialog.locator(".topic-micro-pager button").count()==3
         assert dialog.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill")=="nhan-biet-hinh-vuong"
         assert dialog.locator(".topic-micro-option").nth(1).inner_text()=="Hình vuông"
+        assert page.evaluate("localStorage.getItem('toan-thcs-practice-v1')")==before, "opening/moving must not count as an attempt"
+        dialog.locator(".topic-micro-option").nth(1).click()
+        after=page.evaluate("JSON.parse(localStorage.getItem('toan-thcs-practice-v1'))")
+        assert after["questions"]["GEO20MICRO_011"]=={"attempted":2,"correct":1}, "legacy ID counter unchanged"
+        assert after["tags"]["dien-tich-xung-quanh-hinh-non"]=={"attempted":2,"correct":1}, "legacy skill counter unchanged"
+        assert after["questions"]["GEO20MICRO_016"]["attempted"]==1 and after["questions"]["GEO20MICRO_016"]["correct"]==1
+        assert after["tags"]["nhan-biet-hinh-vuong"]["attempted"]==1, "new singleton skill only"
         dialog.locator(".topic-core-dialog__close").click()
         page.locator('[data-card-id="geo20-core-2b"].topic-core-card .topic-core-practice-start').click()
         assert dialog.locator(".topic-micro-pager button").count()==2
