@@ -71,6 +71,9 @@ jobs:
           node scripts/test-core08-12-teaching-rollout.js
           node scripts/test-core13-15-geometry-rollout.js
           node scripts/test-core16-18-geometry-rollout.js
+          node scripts/test-core19-r2-release.js
+          node scripts/test-golden-geo19-20.js
+          node scripts/test-geo19-20-visual-v1.js
           node scripts/test-core-soft-card-style.js
           node scripts/test-core07-teaching-coverage.js
           node scripts/test-learning-card-micro-practice.js
@@ -108,6 +111,7 @@ jobs:
           python scripts/capture-ui-previews.py
           python scripts/test-topic25-student-browser.py
           python scripts/test-topic25-math-browser.py
+          python scripts/test-core19-r2-browser.py
       - name: Upload visual preview screenshots
         uses: actions/upload-artifact@v4
         with:
