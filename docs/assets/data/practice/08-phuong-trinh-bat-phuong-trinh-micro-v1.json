@@ -6,7 +6,7 @@
     "id": "08-phuong-trinh-bat-phuong-trinh",
     "title": "Phương trình và bất phương trình"
   },
-  "question_count": 15,
+  "question_count": 16,
   "questions": [
     {
       "id": "EQ08MICRO_001",
@@ -659,6 +659,54 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
+      }
+    },
+    {
+      "id": "EQ08MICRO_016",
+      "card_id": "eq08-core-2",
+      "micro_role": "coverage",
+      "question": "Với \\(x\\ne3\\), khử mẫu phương trình \\(\\frac{2}{x-3}=\\frac{x}{x-3}+1\\) bằng cách nhân cả hai vế với \\(x-3\\) được phương trình nào?",
+      "options": [
+        "\\(2=x+(x-3)\\)",
+        "\\(2=x+1\\)",
+        "\\(2(x-3)=x+1\\)",
+        "\\(2=x+(x+3)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bat-phuong-trinh",
+        "skill": [
+          "khu-mau-phuong-trinh"
+        ],
+        "type": "khu-mau-co-hang-tu-nguyen",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Trên miền \\(x\\ne3\\), nhân **cả hai vế** với \\(x-3\\): hạng tử \\(1\\) ở vế phải trở thành \\(x-3\\), nên \\(2=x+(x-3)\\). Phương trình này cho \\(x=\\frac52\\), thỏa điều kiện gốc.",
+      "hints": [
+        "Tìm điều kiện làm mẫu khác 0; mẫu chung là x−3.",
+        "Mỗi hạng tử ở cả hai vế đều phải được nhân với x−3, kể cả hạng tử 1."
+      ],
+      "supporting_skills": [
+        "dkxd-phuong-trinh-mau",
+        "doi-chieu-nghiem"
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
       }
     }
   ]
