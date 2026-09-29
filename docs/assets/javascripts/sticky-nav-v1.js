@@ -23,7 +23,7 @@
    heading.className = "roadmap-topic-dialog__heading";
    const title = document.createElement("h2");
    title.id = "roadmap-topic-dialog-title";
-   title.textContent = "Chuyển nhanh chuyên đề";
+   title.textContent = "Điều hướng nhanh";
    const close = document.createElement("button");
    close.type = "button";
    close.className = "roadmap-topic-dialog__close";
@@ -45,7 +45,21 @@
      if (active && active[0] === slug) a.setAttribute("aria-current", "page");
      list.appendChild(a);
    }
-   dialog.append(heading, hint, list);
+   const main=document.createElement("details");
+   main.className="roadmap-main-quick";main.open=true;
+   const summary=document.createElement("summary");summary.textContent="6 nhóm chính · mở/thu gọn";
+   const primary=document.createElement("nav");primary.className="roadmap-main-quick__links";
+   primary.setAttribute("aria-label","Sáu nhóm điều hướng chính");
+   const sources=[...document.querySelectorAll(".md-tabs__list a.md-tabs__link")];
+   for(const [label,fallback,glyph] of mainDestinations){
+     const source=sources.find(a=>a.textContent.trim()===label);
+     const a=document.createElement("a");a.href=source?.href||sitePrefix()+fallback;
+     a.textContent=glyph+" "+label;
+     if(source?.classList.contains("md-tabs__link--active"))a.setAttribute("aria-current","page");
+     primary.appendChild(a);
+   }
+   main.append(summary,primary);
+   dialog.append(heading,main,hint,list);
    dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
    document.body.appendChild(dialog);
    return dialog;
@@ -59,8 +73,8 @@
    button.type = "button";
    button.className = "roadmap-topic-launcher";
    button.dataset.roadmapTopicLauncher = "1";
-   button.setAttribute("aria-label", "Chọn nhanh một trong 25 chuyên đề Toán");
-   button.setAttribute("title", "Chọn chuyên đề (25)");
+   button.setAttribute("aria-label", "Mở 6 nhóm chính và 25 chuyên đề Toán");
+   button.setAttribute("title", "Điều hướng nhanh: 6 nhóm và 25 chuyên đề");
    button.setAttribute("aria-haspopup", "dialog");
    const mark = document.createElement("span");
    mark.className = "roadmap-topic-launcher__mark";
@@ -69,11 +83,11 @@
    const count = document.createElement("span");
    count.className = "roadmap-topic-launcher__count";
    count.setAttribute("aria-hidden", "true");
-   count.textContent = "25";
+   count.textContent = "6 + 25";
    const name = document.createElement("span");
    name.className = "roadmap-topic-launcher__name";
    name.setAttribute("aria-hidden", "true");
-   name.textContent = "chuyên đề";
+   name.textContent = "lối tắt";
    button.append(mark, count, name);
    button.addEventListener("click", () => {
      const dialog = ensureTopicDialog();
