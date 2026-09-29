@@ -6,7 +6,7 @@
     "id": "13-goc-va-duong-thang",
     "title": "Góc và quan hệ giữa các đường thẳng"
   },
-  "question_count": 15,
+  "question_count": 22,
   "questions": [
     {
       "id": "GEO13MICRO_001",
@@ -643,6 +643,321 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_016",
+      "card_id": "geo13-core-1",
+      "micro_role": "coverage",
+      "question": "Cho điểm O và điểm A khác O. Trong các mô tả sau, mô tả nào đúng về tia OA?",
+      "options": [
+        "Có gốc O, đi qua A và kéo dài vô hạn về phía A.",
+        "Là đoạn thẳng hữu hạn có hai đầu mút O, A.",
+        "Có gốc A, đi qua O và kéo dài vô hạn về phía O.",
+        "Là toàn bộ đường thẳng đi qua O và A."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tia"
+        ],
+        "type": "nhan-biet-tia",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Tia OA có gốc O, đi qua A và kéo dài mãi về một phía; không phải đoạn thẳng hay đường thẳng hai phía.",
+      "hints": [
+        "Xác định chữ đứng đầu tên tia là điểm nào.",
+        "Tia có một gốc và kéo dài vô hạn chỉ về một phía."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_017",
+      "card_id": "geo13-core-1",
+      "micro_role": "coverage",
+      "question": "Ba điểm A, O, B thẳng hàng theo đúng thứ tự A–O–B. Hai tia nào chắc chắn đối nhau?",
+      "options": [
+        "Tia \\(OA\\) và \\(OB\\).",
+        "Tia \\(AO\\) và \\(BO\\).",
+        "Tia \\(OA\\) và \\(AO\\).",
+        "Tia \\(AB\\) và \\(BA\\)."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tia-doi"
+        ],
+        "type": "nhan-biet-tia-doi",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Hai tia OA và OB cùng gốc O, cùng đường thẳng AB và ngược hướng vì O nằm giữa A và B. Các cặp khác không cùng gốc.",
+      "hints": [
+        "Hai tia đối nhau bắt buộc có chung gốc.",
+        "Với thứ tự A–O–B, hai hướng xuất phát từ O đi về hai phía."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_018",
+      "card_id": "geo13-core-1",
+      "micro_role": "coverage",
+      "question": "Điểm M nằm giữa A và B. Biết \\(AM=4\\text{ cm}\\) và \\(MB=7\\text{ cm}\\). Độ dài \\(AB\\) là bao nhiêu?",
+      "options": [
+        "\\(11\\text{ cm}\\)",
+        "\\(3\\text{ cm}\\)",
+        "\\(28\\text{ cm}\\)",
+        "\\(7\\text{ cm}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "doan-thang-do-dai"
+        ],
+        "type": "do-doan-thang",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Vì M nằm giữa A và B, \\(AB=AM+MB=4+7=11\\) cm. Dữ kiện vị trí là điều kiện để cộng hai đoạn.",
+      "hints": [
+        "Chỉ cộng độ dài trực tiếp khi biết điểm ở giữa.",
+        "Đoạn lớn AB gồm hai đoạn AM và MB ghép liên tiếp."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_019",
+      "card_id": "geo13-core-2",
+      "micro_role": "coverage",
+      "question": "Tia Oz nằm trong góc xOy, \\(\\angle xOy=110^\\circ\\), \\(\\angle xOz=35^\\circ\\). Số đo \\(\\angle zOy\\) là:",
+      "options": [
+        "\\(75^\\circ\\)",
+        "\\(145^\\circ\\)",
+        "\\(55^\\circ\\)",
+        "\\(35^\\circ\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "do-goc"
+        ],
+        "type": "tinh-so-do-goc",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Do Oz nằm trong góc xOy, \\(\\angle xOz+\\angle zOy=\\angle xOy\\); vậy \\(110^\\circ-35^\\circ=75^\\circ\\). Không suy đoán vị trí tia nếu đề không cho.",
+      "hints": [
+        "Dữ kiện 'Oz nằm trong góc' cho phép cộng hai góc kề.",
+        "Lấy số đo góc lớn trừ phần đã biết."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_020",
+      "card_id": "geo13-core-2",
+      "micro_role": "coverage",
+      "question": "Góc có số đo \\(125^\\circ\\) là loại góc nào?",
+      "options": [
+        "Góc tù.",
+        "Góc nhọn.",
+        "Góc vuông.",
+        "Góc bẹt."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "phan-loai-goc"
+        ],
+        "type": "phan-loai-theo-do",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Vì \\(90^\\circ<125^\\circ<180^\\circ\\), đó là góc tù.",
+      "hints": [
+        "So sánh số đo với hai mốc 90° và 180°.",
+        "Góc nằm giữa 90° và 180° không phải góc vuông hay góc bẹt."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_021",
+      "card_id": "geo13-core-2",
+      "micro_role": "coverage",
+      "question": "Hai góc có tổng số đo \\(90^\\circ\\). Góc thứ nhất bằng \\(34^\\circ\\). Góc thứ hai bằng bao nhiêu?",
+      "options": [
+        "\\(56^\\circ\\)",
+        "\\(146^\\circ\\)",
+        "\\(124^\\circ\\)",
+        "\\(34^\\circ\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "goc-phu-bu"
+        ],
+        "type": "tinh-goc-phu",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Hai góc phụ nhau có tổng \\(90^\\circ\\), nên góc thứ hai là \\(90^\\circ-34^\\circ=56^\\circ\\). Góc bù nhau mới có tổng \\(180^\\circ\\).",
+      "hints": [
+        "Nhắc lại định nghĩa hai góc phụ nhau.",
+        "Lấy 90° trừ góc đã biết, không dùng 180°."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_022",
+      "card_id": "geo13-core-2",
+      "micro_role": "coverage",
+      "question": "Ox và Oy là hai tia đối nhau, tia Oz nằm giữa chúng. Hai góc \\(\\angle xOz\\) và \\(\\angle zOy\\) là cặp góc nào?",
+      "options": [
+        "Hai góc kề bù.",
+        "Hai góc đối đỉnh.",
+        "Hai góc phụ nhau.",
+        "Hai góc đồng vị."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "nhan-dang-goc-dac-biet"
+        ],
+        "type": "nhan-dang-goc-ke-bu",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Hai góc có cạnh chung Oz, phần trong không giao nhau và hai cạnh còn lại Ox, Oy là hai tia đối nhau. Do đó chúng kề nhau và tổng \\(180^\\circ\\): kề bù.",
+      "hints": [
+        "Xem hai góc có chung cạnh và phần trong tách nhau không.",
+        "Hai cạnh còn lại là hai tia đối nhau nên tạo góc bẹt 180°."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
       }
     }
   ]
