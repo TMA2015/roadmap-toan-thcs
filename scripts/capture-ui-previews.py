@@ -137,6 +137,7 @@ with sync_playwright() as p:
             check(response_core is not None and response_core.status == 200, "dedicated Core route reachable")
             check(core_page.locator(".lesson-switcher-steps a").count() == 4, "four-step navigation on Core page")
             check(core_page.locator('.lesson-switcher-steps [aria-current="page"]').get_attribute("href").endswith("/core/"), "Core step selected")
+            core_page.locator('#core-journey[data-core-ready="1"]').wait_for(state="visible", timeout=12000)
             check(core_page.locator(".topic-core-teaching-item").count() == 5, "five Core teaching slots")
             exercise_page = core_page
             shot(core_page, "topic07-core-standalone-desktop.png")
@@ -449,8 +450,11 @@ $$
     check(first_phone.locator("#core-journey.topic-core-gateway").count() == 1, "legacy anchor reaches gateway")
     first_phone.locator('.lesson-switcher-steps a[href$="/core/"]').click()
     check(first_phone.url.endswith("/07-phan-thuc-dai-so/core/"), "phone opens separate Core page")
-    first_phone.locator(".topic-core-teaching-item").first.wait_for(state="visible", timeout=12000)
-    check(first_phone.locator(".topic-core-teaching-item").count() == 5, "five independent lesson slots on phone")
+    # Wait for the completed renderer, not the first element of an async batch.
+    completed_core=first_phone.locator('#core-journey[data-core-ready="1"]')
+    completed_core.wait_for(state="visible", timeout=12000)
+    check(completed_core.count() == 1, "exactly one fully rendered Core workspace")
+    check(completed_core.locator(".topic-core-teaching-item").count() == 5, "five independent lesson slots on phone")
     first_phone.locator(".topic-core-teaching-item").first.locator("summary").click()
     check(first_phone.locator(".topic-core-teaching-item").first.get_attribute("open") is not None, "teaching slot opens")
     first_phone.locator("#core-journey .topic-micro-start").first.click()
