@@ -597,17 +597,25 @@
       "title": "Integrate Core19–20 dual-modal learning with safe CĐ20 versioned grouping",
       "routing": "CHATGPT_INTEGRATE+CI_BROWSER_VISUAL_QA+OWNER_QA",
       "status": "DONE",
-      "review_verdict": "PR173_PR174_MERGED_CI_BROWSER_DEPLOY_PASS_OWNER_DEVICE_QA_OPEN",
-      "review_notes": "CĐ19 #173 merged 607b521635653ae89df68ed1890869a331721da3: 5 R2 teaching, 17 micro, 14/14 opportunities. CĐ20 #174 merged 4cfa70ff999eb469ac4e33dadb6447abae1c7383: versioned 10-card overlay, 29/29, 15 immutable old +14 append-only, no migration; 3 workflows PASS per PR, deploy run 36599072769 success. SVG browser QA separate from NotebookLM text review. Owner actual-device acceptance not yet recorded. See docs/collaboration/current-handoff.md."
+      "review_verdict": "PR173_PR174_MERGED_CI_BROWSER_DEPLOY_PASS_OWNER_IPAD_DESKTOP_ACCEPTED",
+      "review_notes": "CĐ19 #173 merged 607b521635653ae89df68ed1890869a331721da3: 5 R2 teaching, 17 micro, 14/14 opportunities. CĐ20 #174 merged 4cfa70ff999eb469ac4e33dadb6447abae1c7383: versioned 10-card overlay, 29/29, 15 immutable old +14 append-only, no migration; 3 workflows PASS per PR, deploy run 36599072769 success. SVG browser QA separate from NotebookLM text review. Owner accepted iPad and desktop on 2026-09-29; iPhone unverified. See docs/collaboration/current-handoff.md."
     },
     {
       "id": "CORE19-20-OWNER-DEVICE-QA-001",
-      "title": "Owner real-device acceptance of released CĐ19 and CĐ20 Core",
+      "title": "Owner iPad and desktop acceptance of released CĐ19–20 Core",
       "routing": "OWNER_DEVICE_QA",
-      "status": "OPEN",
-      "review_verdict": "TECHNICAL_QA_DEPLOY_PASS_OWNER_ACCEPTANCE_PENDING",
-      "review_notes": "Check CĐ19 five cards/17 micro and CĐ20 ten cards/29 micro on desktop/iPad/iPhone; lecture/practice modal switch, full lesson/SVG, question next, no phantom attempt on close, original progress still tied to legacy IDs. Do not mark accepted from CI alone.",
+      "status": "DONE",
+      "review_verdict": "OWNER_ACCEPTED_IPAD_DESKTOP_20260929_IPHONE_UNVERIFIED",
+      "review_notes": "User explicitly confirmed on 2026-09-29: 'đã kiểm tra trên ipad, desktop. ok.' Applies to deployed CĐ19 PR #173 and CĐ20 PR #174 general owner QA. iPhone not reported. CI/browser QA and the v1 history invariants are separate automated evidence; do not invent owner-observed per-edge-case checks. No runtime data migration.",
       "source_commit": "4cfa70ff999eb469ac4e33dadb6447abae1c7383"
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-RECONCILE-001",
+      "title": "Reconcile B01–B07 independent academic reviews and primary skill taxonomy before runtime integration",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW_RECONCILIATION",
+      "status": "OPEN",
+      "review_verdict": "PROPOSAL_ONLY_NO_RUNTIME_MIGRATION",
+      "review_notes": "Review legacy 39 flagged CĐ04–07 records and B01–B07 draft packets #146–155 with actual review receipts and current main source SHA. Distinguish 41 graph nodes from 346 legacy skill tags (snapshot, not current count); no unsupported frequency rankings. Author read-only decision register, then proposal for backwards-compatible primary-skill overlay. Preserve bank IDs/tags/history until explicit separately tested rollout."
     }
   ]
 }
