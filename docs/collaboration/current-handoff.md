@@ -1,10 +1,25 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 29/09/2026, sau nghiệm thu CĐ19–20 trên iPad và desktop.** Tên sản phẩm: **Self-Learning Math** thuộc **G Learning**; AI Tutor là tính năng. Snapshot được đối chiếu với `main` tại `4cfa70ff999eb469ac4e33dadb6447abae1c7383` trước PR bàn giao này. Khi tiếp nối, luôn đọc `main`/PR/QA live; checkpoint là lịch sử có ngày, không tự khẳng định đã bao trùm commit sau đó.
+> **CURRENT CHECKPOINT — 30/09/2026, sau Batch A.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Snapshot đối chiếu với `main` `c1b461885d7da1bd3cafef34f357c04c493df3b0`; trạng thái GitHub live và PR/workflow mới hơn phải được tra lại khi tiếp nối.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+
+## Mốc mới nhất — Batch A chuẩn hóa luồng học (30/09/2026)
+
+- [PR #178](https://github.com/TMA2015/roadmap-toan-thcs/pull/178) merge tại `c1b461885d7da1bd3cafef34f357c04c493df3b0`, [GitHub Pages Deploy](https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/36606931537) **SUCCESS**; ba workflow PR (Roadmap QA, G Learning branding, Skill assessment pilot) PASS. **Owner device QA cho bản Batch A vẫn OPEN**, không suy từ nghiệm thu CĐ19–20 trước đó.
+- CĐ**02/21/23/24/25** đã có trang học độc lập `/core/`, top stepper bốn bước, menu trái và link lớp, cùng Soft Academic Cards hai modal Bài giảng/Luyện tập. Một nguồn route `docs/assets/javascripts/topic-learning-routes-v1.js` dùng chung cho stepper và workspace (22 route đang tồn tại); không thêm nút bốn bước cho CĐ03/CĐ22 khi chưa có học liệu/trang thật. CĐ01 là tổng quan.
+- 5 workspace JSON + 5 micro-bank JSON được khóa Git blob, **25 cards + 75 item** nguyên bản; ID, `card_id`, tags, đáp án, tầng học và `toan-thcs-practice-v1` không bị viết lại. CĐ02 chỉ KNTT Core lớp 6; CĐ24 là **Core-Support**, CĐ25 là **Entrance10**. CĐ22 giữ nhánh tự chọn **THPT-Bridge**.
+- Trình duyệt desktop/mobile đã kiểm tra các route, modal, mở/đóng/chuyển câu không tạo lượt làm, trả lời mới ghi đúng một lượt, dữ liệu sentinel cũ còn nguyên; kiểm thử 25 trang và strict MkDocs PASS. CI/browser không thay xác nhận của chủ dự án trên iPad/iPhone.
+- **Khoảng trống được phát hiện, không được che:** CĐ02 khai báo 15 skill occurrences nhưng 5 skill chưa có câu riêng trong 4 thẻ: `luy-thua`, `phan-tich-thua-so-nguyen-to`, `bcnn`, `gia-tri-tuyet-doi`, `quy-dong-so-sanh-phan-so`; CĐ23 có hai thiếu sót **theo thẻ**: `kiem-tra-xac-suat` tại card 3, `xac-suat-co-dien` tại card 5. Giữ cảnh báo hiển thị thật, không tự tính mastery/cấp credit hoặc tạo câu giả. Xây ứng viên bổ sung theo review học thuật riêng.
+
+### Bước tiếp tục sau mốc này
+
+1. **Batch B — CĐ03:** lập 5 chặng học đúng mapping lớp 6/7 từ bài nguồn và ngân hàng hiện có, soạn bài giảng/câu micro *candidate*, đưa NotebookLM review độc lập và đối soát nguồn/đáp án trước mọi triển khai. Hiện tại **CĐ03 chưa có trang Core hoặc workspace**, menu 3 bước là đúng trạng thái.
+2. **Gap CĐ02/23:** chuẩn bị review packet bảy cơ hội luyện còn thiếu, gắn từng ID/card/grade/layer và math answer QA. Không thay thẻ cũ hay key/progress.
+3. **Owner QA Batch A:** kiểm tra desktop/iPad thực tế sau deploy và ghi rõ thiết bị/từng phát hiện. CĐ22 không gộp THPT-Bridge vào THCS readiness, CĐ25 không gộp kỹ năng thi với điểm Toán.
+4. B01–B07 taxonomy read-only ở ledger đã lưu vẫn có hiệu lực, sẽ tiếp tục sau khi đồng bộ UI/học thuật những phần còn thiếu; không merge các draft học thuật ngoài cổng approval.
 
 ## Quyết định không được tự làm lệch
 
@@ -32,7 +47,7 @@
 
 **Audit-only [PR #170](https://github.com/TMA2015/roadmap-toan-thcs/pull/170)** vẫn là hồ sơ nguồn/receipt độc lập, không merge thành release. CĐ19 R2 5+2 PASS, CĐ20 Part A 10/10, Part B 19/19 text/math PASS, nhưng phạm vi không gồm SVG rendered hay năm giảng legacy. Master Plan v1.1.1 ở PR #171 và cơ chế handoff PR #172 đã merge. Không chạy lại các vòng review đã đóng khi source không thay.
 
-## Việc tiếp theo — tiếp tục học thuật, không tái triển khai Core
+## Học thuật B01–B07 — hồ sơ tồn tại trước Batch A (chưa bật runtime)
 
 1. **Skill taxonomy / assessed-skill audit:** bắt đầu bằng read-only/source-locked reconciliation của 39 mục CĐ04–07 và các cụm B01–B07, tránh trộn `41 graph nodes` với hệ thống skill toàn chương trình. Đối chiếu các [draft PR #146–155](https://github.com/TMA2015/roadmap-toan-thcs/pulls) và file hiện hành, không mặc định draft đã merge hoặc review toàn bộ item. Phân biệt kỹ năng cốt lõi, kỹ năng phụ thuộc, context, kỹ năng tổng hợp và Extension; soát trùng, nhãn quá rộng, câu trùng phương pháp và độ bao phủ.
 2. Tách kết luận đã được NotebookLM/Gemini phản biện khỏi self-audit; các câu sửa học thuật trong PR #151/#153/#155 vẫn là draft, không nhập riêng hoặc tự thay đáp án/kho câu vì nhận định ở một báo cáo.
