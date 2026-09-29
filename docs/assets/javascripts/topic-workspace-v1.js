@@ -145,7 +145,28 @@ const SKILL_LABELS={
   "chia-phan-thuc":"Chia phân thức",
   "giu-dieu-kien-ban-dau":"Giữ điều kiện xác định ban đầu",
   "bieu-thuc-nhieu-phep-tinh":"Biểu thức hữu tỉ nhiều phép tính",
-  "tim-gia-tri-nguyen":"Tìm giá trị nguyên"
+  "tim-gia-tri-nguyen":"Tìm giá trị nguyên",
+  "nhan-biet-don-thuc":"Nhận biết đơn thức",
+  "nhan-biet-da-thuc":"Nhận biết đa thức",
+  "he-so-bac":"Hệ số và bậc",
+  "chia-da-thuc-cho-don-thuc":"Chia đa thức cho đơn thức",
+  "tinh-gia-tri-bieu-thuc":"Tính giá trị biểu thức",
+  "binh-phuong-hoan-chinh":"Nhận dạng bình phương hoàn chỉnh",
+  "nhan-dang-lap-phuong":"Nhận dạng cấu trúc lập phương",
+  "tong-hai-lap-phuong":"Tổng hai lập phương",
+  "hieu-hai-lap-phuong":"Hiệu hai lập phương",
+  "nhan-dang-hdt":"Nhận dạng hằng đẳng thức",
+  "tinh-nhanh-hdt":"Tính nhanh bằng hằng đẳng thức",
+  "rut-gon-hdt":"Rút gọn bằng hằng đẳng thức",
+  "doi-dau-nhan-tu-chung":"Đổi dấu để tạo nhân tử chung",
+  "tong-hieu-lap-phuong":"Tổng – hiệu hai lập phương",
+  "kiem-tra-phan-tich":"Kiểm tra kết quả phân tích",
+  "bo-ngoac-dau":"Bỏ ngoặc và dấu",
+  "cong-tru-da-thuc":"Cộng – trừ đa thức",
+  "tinh-phan-phoi":"Tính phân phối",
+  "nhan-bieu-thuc":"Nhân biểu thức",
+  "hieu-hai-binh-phuong":"Hiệu hai bình phương",
+  "phan-tich-tu-mau":"Phân tích tử và mẫu"
 };
 const skillLabel=id=>SKILL_LABELS[id]||String(id||"").replaceAll("-"," ");
 const primarySkill=q=>{
