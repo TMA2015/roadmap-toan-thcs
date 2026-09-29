@@ -131,9 +131,55 @@ const SKILL_LABELS={
   "bieu-thuc-dai-so":"biểu thức đại số",
   "phep-tinh-so-huu-ti":"phép tính số hữu tỉ",
   "phan-thuc-dai-so":"phân thức đại số",
-  "phan-tich-da-thuc":"phân tích đa thức"
+  "phan-tich-da-thuc":"phân tích đa thức",
+  "nhan-biet-phan-thuc":"Nhận biết phân thức",
+  "dieu-kien-xac-dinh":"Điều kiện xác định",
+  "hai-phan-thuc-bang-nhau":"Hai phân thức bằng nhau",
+  "tinh-gia-tri-phan-thuc":"Tính giá trị phân thức",
+  "doi-dau-phan-thuc":"Đổi dấu phân thức",
+  "phan-tich-tu-mau":"Phân tích tử và mẫu",
+  "rut-gon-phan-thuc":"Rút gọn phân thức",
+  "quy-dong-mau-thuc":"Quy đồng mẫu thức",
+  "cong-tru-phan-thuc":"Cộng – trừ phân thức",
+  "nhan-phan-thuc":"Nhân phân thức",
+  "chia-phan-thuc":"Chia phân thức",
+  "giu-dieu-kien-ban-dau":"Giữ điều kiện xác định ban đầu",
+  "bieu-thuc-nhieu-phep-tinh":"Biểu thức hữu tỉ nhiều phép tính",
+  "tim-gia-tri-nguyen":"Tìm giá trị nguyên"
 };
 const skillLabel=id=>SKILL_LABELS[id]||String(id||"").replaceAll("-"," ");
+const primarySkill=q=>{
+ // Only the assessed skill counts as covered. Supporting tags are context.
+ const raw=q?.assessed_skill||q?.primary_skill||q?.tags?.skill;
+ return Array.isArray(raw)?raw[0]||null:typeof raw==="string"?raw:null;
+};
+const coverageFor=(card,questions)=>{
+ const declared=[...new Set(card.skills||[])];
+ const assessed=new Set(questions.map(primarySkill).filter(Boolean));
+ return {declared,assessed,covered:declared.filter(id=>assessed.has(id)),missing:declared.filter(id=>!assessed.has(id))};
+};
+const skillOverview=(card,questions,asTeaching=false)=>{
+ const coverage=coverageFor(card,questions);
+ const wrap=document.createElement("section");wrap.className="topic-core-skill-overview";
+ const heading=document.createElement("strong");heading.textContent=asTeaching?"Kỹ năng cần học":"Kỹ năng của chặng · phạm vi thực hành";
+ const count=document.createElement("span");count.className="topic-core-coverage-count";
+ count.textContent=coverage.covered.length+"/"+coverage.declared.length+" kỹ năng có câu riêng";
+ const list=document.createElement("div");list.className="topic-core-skill-list";
+ for(const id of coverage.declared){
+  const chip=document.createElement("span");chip.className="topic-core-skill-chip";chip.dataset.skillId=id;
+  const covered=coverage.assessed.has(id);chip.dataset.covered=covered?"yes":"no";
+  chip.textContent=skillLabel(id)+(covered?" · có câu riêng":" · chưa có câu riêng");
+  list.appendChild(chip);
+ }
+ wrap.append(heading,count,list);
+ if(coverage.missing.length){
+  const note=document.createElement("p");note.className="topic-core-coverage-gap";
+  note.textContent="Chưa có câu thực hành riêng cho: "+coverage.missing.map(skillLabel).join(", ")+". Phần này vẫn cần học; không tự tính là đã luyện.";
+  wrap.appendChild(note);
+ }
+ return wrap;
+};
+
 
 const sections=[
  ["map","🗺️ Bản đồ","1. Bản đồ kiến thức"],["goals","🎯 Mục tiêu","2. Mục tiêu cần đạt"],["core","📖 Cốt lõi","3. Kiến thức cốt lõi"],["links","🔗 Liên quan","4. Kiến thức liên quan"],["types","🧩 Dạng bài","5. Các dạng bài cần nắm vững"],["exam","🚀 Thi vào 10","6. Dạng bài thi vào lớp 10"],["errors","⚠️ Lỗi sai","7. Lỗi sai thường gặp"],["practice","📝 Luyện tập","8. Luyện tập"],["check","✅ Tự kiểm tra","9. Tự kiểm tra"],["roadmap","🔄 Roadmap","10. Liên kết Roadmap"],["finish","🏁 Hoàn thành","11. Điều kiện hoàn thành"]
@@ -213,9 +259,13 @@ const mountMicro=(host,card,questions,graph)=>{
    const box=document.createElement("div");box.className="topic-micro-summary";
    const strong=document.createElement("strong");strong.textContent="Đã làm "+answered()+"/"+questions.length+" câu · Đúng "+records.filter((r,i)=>r.selected===questions[i].answer).length+"/"+answered();
    const note=document.createElement("p");note.textContent="Chỉ các câu đã trả lời được ghi nhận. Đây là luyện tập có trợ giúp, không phải bài tự kiểm tra độc lập.";
-   box.append(strong,note,make("← Xem lại các câu","",()=>{index=0;render()}));host.appendChild(box);return;
+   box.append(strong,note,skillOverview(card,questions),make("← Xem lại các câu","",()=>{index=0;render()}));host.appendChild(box);return;
   }
   const q=questions[index],st=records[index],correct=st.selected===q.answer;
+  const assessed=primarySkill(q);
+  const skill=document.createElement("div");skill.className="topic-micro-assessed-skill";
+  skill.dataset.primarySkill=assessed||"unmapped";
+  skill.textContent="Kỹ năng chính của câu: "+(assessed?skillLabel(assessed):"Chưa có tag kỹ năng cần rà soát");
   const meta=document.createElement("div");meta.className="topic-micro-meta";
   meta.textContent="Câu "+(index+1)+"/"+questions.length+" · "+(q.micro_role==="base"?"Nền tảng":q.micro_role==="trap"?"Bẫy sai điển hình":"Vận dụng");
   const pager=document.createElement("nav");pager.className="topic-micro-pager";pager.setAttribute("aria-label","Chọn câu hỏi");
@@ -288,7 +338,7 @@ const mountMicro=(host,card,questions,graph)=>{
   if(index===questions.length-1&&answered()<questions.length){
    const note=document.createElement("small");note.textContent="Chưa trả lời "+(questions.length-answered())+" câu. Bỏ qua không bị tính sai.";controls.appendChild(note);
   }
-  host.append(meta,pager,prompt,opts,tools,feedback,tutor,controls);typeset(host);
+  host.append(meta,skillOverview(card,questions),pager,skill,prompt,opts,tools,feedback,tutor,controls);typeset(host);
  };
  render();
 };
@@ -306,7 +356,7 @@ const renderCoreCards=async(hero,config)=>{
   const head=document.createElement("div");head.className="topic-core-dialog__head";
   const title=document.createElement("h2");title.id="topic-core-dialog-title";
   const close=document.createElement("button");close.type="button";close.className="practice-btn topic-core-dialog__close";
-  close.textContent="Đóng ✕";close.setAttribute("aria-label","Đóng cửa sổ thực hành");
+  close.textContent="Đóng ✕";close.setAttribute("aria-label","Đóng cửa sổ Core");
   close.addEventListener("click",()=>dialog.close());
   head.append(title,close);
   const body=document.createElement("div");body.className="topic-core-dialog__body";
@@ -315,14 +365,57 @@ const renderCoreCards=async(hero,config)=>{
   let returnFocus=null;
   dialog.addEventListener("close",()=>{if(returnFocus?.isConnected)returnFocus.focus();returnFocus=null});
   const sessions=new Map();
-  const openCard=(card,button)=>{
-   const qs=(card.micro_practice||[]).map(id=>byId.get(id)).filter(Boolean);
-   if(!sessions.has(card.id)){
-    const panel=document.createElement("div");mountMicro(panel,card,qs,graph);sessions.set(card.id,panel);
+  const questionsFor=card=>(card.micro_practice||[]).map(id=>byId.get(id)).filter(Boolean);
+  const teachingPanel=(card,qs)=>{
+   const panel=document.createElement("section");panel.className="topic-core-teaching-modal";
+   panel.appendChild(skillOverview(card,qs,true));
+   const copy=card.teaching_copy;
+   const row=(label,value)=>{
+    if(!value)return;
+    const part=document.createElement("section");part.className="topic-core-teaching-row";
+    const h=document.createElement("h3");h.textContent=label;
+    const p=document.createElement("p");p.textContent=value;part.append(h,p);panel.appendChild(part);
+   };
+   if(copy){
+    row("Kiến thức cốt lõi",copy.key_idea);
+    row("Ví dụ mẫu",copy.worked_example?.problem);
+    row("Các bước giải",copy.worked_example?.solution);
+    row("Lỗi dễ mắc",copy.misconception);
+    row("Ghi nhớ nhanh",copy.summary);
+   }else{
+    row("Bài giảng đang hoàn thiện","Chặng này chưa có ví dụ mẫu riêng đã kiểm định. Em có thể đọc bài giảng đầy đủ của chuyên đề trước khi luyện.");
+    const link=document.createElement("a");link.className="md-button";
+    link.href=location.pathname.includes("/core/")?"../#core":"#core";
+    link.textContent="Mở kiến thức cốt lõi trong bài giảng đầy đủ ↗";panel.appendChild(link);
    }
-   title.textContent=card.title+" · "+qs.length+" câu thực hành";
-   body.replaceChildren(sessions.get(card.id));
-   body.scrollTop=0;returnFocus=button;
+   return panel;
+  };
+  const openCard=(card,mode,button)=>{
+   const qs=questionsFor(card);
+   if(!dialog.open)returnFocus=button;
+   const tabs=document.createElement("nav");tabs.className="topic-core-modal-modes";
+   tabs.setAttribute("aria-label","Chọn bài giảng hoặc luyện tập trong chặng");
+   for(const choice of ["teach","practice"]){
+    const tab=document.createElement("button");tab.type="button";tab.className="practice-btn topic-core-modal-mode";
+    tab.dataset.mode=choice;tab.textContent=choice==="teach"?"📘 Bài giảng":"✏️ Luyện tập";
+    tab.setAttribute("aria-pressed",String(choice===mode));
+    tab.addEventListener("click",()=>{if(choice!==dialog.dataset.mode)openCard(card,choice,null)});
+    tabs.appendChild(tab);
+   }
+   title.textContent=(mode==="teach"?"Bài giảng":"Luyện tập")+" · "+card.title;
+   dialog.dataset.mode=mode;dialog.dataset.cardId=card.id;
+   if(mode==="practice"){
+    if(!sessions.has(card.id)){
+     const panel=document.createElement("div");mountMicro(panel,card,qs,graph);sessions.set(card.id,panel);
+    }
+    body.replaceChildren(tabs,sessions.get(card.id));
+   }else{
+    const panel=teachingPanel(card,qs);
+    const next=document.createElement("button");next.type="button";next.className="practice-btn practice-btn-primary topic-core-to-practice";
+    next.textContent="✏️ Bắt đầu luyện tập →";next.addEventListener("click",()=>openCard(card,"practice",null));
+    panel.appendChild(next);body.replaceChildren(tabs,panel);typeset(panel);
+   }
+   body.scrollTop=0;
    if(!dialog.open)dialog.showModal();
    close.focus();
   };
@@ -332,40 +425,15 @@ const renderCoreCards=async(hero,config)=>{
    const pre=prereqNames.length?
     '<div class="topic-core-prereq topic-core-prereq-full">Nền tảng: '+prereqNames.join(" · ")+'</div><div class="topic-core-prereq topic-core-prereq-compact">Nền tảng: '+prereqNames.length+' kỹ năng</div>':
     '<div class="topic-core-prereq topic-core-prereq-empty">Nền tảng: —</div>';
-   const count=(card.micro_practice||[]).length;
-   el.innerHTML='<div class="topic-core-card-main"><div class="topic-core-card-top"><span class="topic-core-card-number">'+(i+1)+'</span><span class="topic-core-card-lesson">'+(card.kntt_lessons||[]).join(" · ")+'</span></div><h3>'+card.title+'</h3>'+pre+'<div class="topic-core-card-meta"><span>'+card.skills.length+' kỹ năng</span><span>'+count+' câu thực hành</span></div><button type="button" class="practice-btn topic-micro-start">✏️ Mở chặng học</button></div>';
-   if(card.teaching_copy){el.dataset.hasTeachingCopy="1"}
-   el.querySelector(".topic-micro-start").addEventListener("click",event=>openCard(card,event.currentTarget));
+   const qs=questionsFor(card),coverage=coverageFor(card,qs);
+   el.dataset.coveredSkills=String(coverage.covered.length);el.dataset.totalSkills=String(coverage.declared.length);
+   const warning=coverage.missing.length?'<div class="topic-core-card-gap">Chưa có câu riêng: '+coverage.missing.map(skillLabel).join(", ")+'</div>':"";
+   el.innerHTML='<div class="topic-core-card-main"><div class="topic-core-card-top"><span class="topic-core-card-number">'+(i+1)+'</span><span class="topic-core-card-lesson">'+(card.kntt_lessons||[]).join(" · ")+'</span></div><h3>'+card.title+'</h3>'+pre+'<div class="topic-core-card-meta"><span>'+card.skills.length+' kỹ năng</span><span>'+qs.length+' câu thực hành</span><span class="topic-core-card-coverage">'+coverage.covered.length+'/'+coverage.declared.length+' có câu riêng</span></div>'+warning+'<div class="topic-core-card-actions"><button type="button" class="practice-btn topic-core-teach-start">📘 Bài giảng</button><button type="button" class="practice-btn topic-micro-start topic-core-practice-start">✏️ Luyện tập</button></div></div>';
+   if(card.teaching_copy)el.dataset.hasTeachingCopy="1";
+   el.querySelector(".topic-core-teach-start").addEventListener("click",event=>openCard(card,"teach",event.currentTarget));
+   el.querySelector(".topic-micro-start").addEventListener("click",event=>openCard(card,"practice",event.currentTarget));
    grid.appendChild(el);
   });
-  if(location.pathname.includes("/core/")){
-   // Teaching sits outside the card grid to preserve all card dimensions.
-   const teaching=document.createElement("section");teaching.className="topic-core-teaching";
-   const heading=document.createElement("h2");heading.textContent="Bài giảng và ví dụ theo chặng";
-   const note=document.createElement("p");note.textContent="Đọc kiến thức và ví dụ trước khi thực hành. Mỗi bài giảng mở/thu gọn độc lập.";
-   teaching.append(heading,note);
-   data.cards.forEach((card,i)=>{
-    const details=document.createElement("details");details.className="topic-core-teaching-item";details.id="core-lesson-"+(i+1);
-    const summary=document.createElement("summary");summary.textContent=(i+1)+". "+card.title;details.appendChild(summary);
-    const copy=card.teaching_copy;
-    const row=(label,value)=>{
-     if(!value)return;
-     const block=document.createElement("div");block.className="topic-core-teaching-row";
-     const title=document.createElement("strong");title.textContent=label;
-     const p=document.createElement("p");p.textContent=value;block.append(title,p);details.appendChild(block);
-    };
-    if(copy){
-     row("Kiến thức cốt lõi",copy.key_idea);row("Ví dụ mẫu",copy.worked_example?.problem);
-     row("Các bước giải",copy.worked_example?.solution);row("Lỗi dễ mắc",copy.misconception);row("Ghi nhớ",copy.summary);
-    }else{
-     const p=document.createElement("p");p.textContent="Chặng này chưa có bản giảng riêng được kiểm định. Em hãy đọc bài giảng đầy đủ trước khi thực hành.";
-     const link=document.createElement("a");link.href="../#core";link.textContent="Mở kiến thức cốt lõi của chuyên đề ↗";details.append(p,link);
-    }
-    details.addEventListener("toggle",()=>{if(details.open)typeset(details)});
-    teaching.appendChild(details);
-   });
-   host.appendChild(teaching);
-  }
   host.appendChild(grid);
   if((data.extensions||[]).length){const ext=document.createElement("details");ext.className="topic-extension-zone";ext.innerHTML='<summary>🚀 Entrance10 / Challenge <span>không tính vào hoàn thành KNTT Core</span></summary><div class="topic-extension-list">'+(data.extensions||[]).map(x=>`<span class="topic-chip">${x.layer}: ${x.title}</span>`).join("")+"</div>";host.appendChild(ext);}
   const staticJourneyAnchor=document.getElementById("core-journey");

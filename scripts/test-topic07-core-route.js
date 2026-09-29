@@ -15,7 +15,9 @@ ok(js.includes('const isPilot=config.slug==="'+slug+'"')&&js.includes("mountCore
 ok(js.includes('link.href="core/"')&&js.includes('location.pathname.includes("/core/")'),"dedicated URL and safe knowledge fallback");
 ok(js.includes('const sessions=new Map()')&&js.includes("recordAnswer?.(")&&!js.includes("el.classList.toggle(\"is-active\")"),"existing modal and evidence path retained");
 ok(shell.includes('id:"core"')&&shell.includes('lesson-switcher-steps--four'),"four-stage pilot navigation");
-ok(css.includes(".topic-core-teaching")&&css.includes(".topic-core-gateway"),"separate teaching and gateway styles");
+ok(css.includes(".topic-core-teaching-modal")&&css.includes(".topic-core-gateway"),"teaching modal and gateway styles");
+ok(js.includes("topic-core-teach-start")&&js.includes("topic-core-practice-start"),"two Core card actions");
+ok(!js.includes("topic-core-teaching-item"),"no duplicate standalone lecture list");
 ok(workspace.topic===slug&&workspace.cards.length===5&&bank.questions.length===15,"original topic scope unchanged");
 const ids=new Set(bank.questions.map(q=>q.id));
 for(const c of workspace.cards){

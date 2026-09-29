@@ -138,12 +138,50 @@ with sync_playwright() as p:
             check(core_page.locator(".lesson-switcher-steps a").count() == 4, "four-step navigation on Core page")
             check(core_page.locator('.lesson-switcher-steps [aria-current="page"]').get_attribute("href").endswith("/core/"), "Core step selected")
             core_page.locator('#core-journey[data-core-ready="1"]').wait_for(state="visible", timeout=12000)
-            check(core_page.locator(".topic-core-teaching-item").count() == 5, "five Core teaching slots")
-            check(core_page.locator(".topic-core-teaching-item .topic-core-teaching-row").count() == 25,
-                  "all five candidate copies have key idea/example/solution/mistake/summary")
-            core_page.locator(".topic-core-teaching-item").first.locator("summary").click()
-            check(core_page.locator(".topic-core-teaching-item").first.get_by_text("Các bước giải").is_visible(),
-                  "worked solution visible only after opening teaching item")
+            check(core_page.locator(".topic-core-teaching-item").count() == 0,
+                  "no duplicate lecture accordion outside cards")
+            check(core_page.locator(".topic-core-card .topic-core-teach-start").count() == 5,
+                  "all five cards have a lecture button")
+            check(core_page.locator(".topic-core-card .topic-micro-start").count() == 5,
+                  "all five cards retain the practice button")
+            first_card = core_page.locator('.topic-core-card[data-card-id="pt07-core-1"]')
+            second_card = core_page.locator('.topic-core-card[data-card-id="pt07-core-2"]')
+            check(first_card.get_attribute("data-covered-skills") == "3"
+                  and first_card.get_attribute("data-total-skills") == "4",
+                  "Core1 displays actual 3/4 coverage")
+            check(second_card.get_attribute("data-covered-skills") == "2"
+                  and second_card.get_attribute("data-total-skills") == "3",
+                  "Core2 displays actual 2/3 coverage")
+            check("Hai phân thức bằng nhau" in first_card.locator(".topic-core-card-gap").inner_text(),
+                  "missing first skill named instead of concealed")
+            initial_evidence = core_page.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')")
+            fixed_boxes = [core_page.locator(".topic-core-card").nth(i).bounding_box() for i in range(5)]
+            first_card.locator(".topic-core-teach-start").click()
+            lecture = core_page.locator(".topic-core-dialog")
+            check(lecture.is_visible() and lecture.get_attribute("data-mode") == "teach",
+                  "lecture opens in its own Core modal")
+            check(lecture.locator(".topic-core-teaching-row").count() == 5,
+                  "reviewed teaching example/steps/error/summary appear inside modal")
+            check(lecture.locator(".topic-core-skill-chip").count() == 4
+                  and lecture.locator('.topic-core-skill-chip[data-covered="no"]').count() == 1,
+                  "lecture displays four skill tags and missing assessed skill")
+            check(lecture.locator(".topic-micro-option").count() == 0,
+                  "lecture contains no scored question")
+            shot(core_page, "topic07-lecture-modal-desktop.png")
+            lecture.locator(".topic-core-to-practice").click()
+            check(lecture.get_attribute("data-mode") == "practice"
+                  and lecture.locator(".topic-micro-option").count() == 4,
+                  "lecture switches directly to practice in same modal")
+            check(lecture.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill") == "nhan-biet-phan-thuc",
+                  "first question shows its real primary skill")
+            lecture.locator('.topic-core-modal-mode[data-mode="teach"]').click()
+            check(lecture.get_attribute("data-mode") == "teach", "practice can return to lecture")
+            lecture.locator(".topic-core-dialog__close").click()
+            check(not lecture.is_visible(), "lecture closes without stretching card")
+            check(core_page.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')") == initial_evidence,
+                  "opening/closing/moving between modes never creates an attempt")
+            check(all(abs(before["height"] - core_page.locator(".topic-core-card").nth(i).bounding_box()["height"]) < 2
+                      for i, before in enumerate(fixed_boxes)), "all five card heights remain stable")
             exercise_page = core_page
             shot(core_page, "topic07-core-standalone-desktop.png")
         if slug not in ("01-ban-do-chuong-trinh", "03-ti-le-ti-le-thuc", "22-dai-luong-dac-trung"):
@@ -458,15 +496,33 @@ $$
     completed_core=first_phone.locator('#core-journey[data-core-ready="1"]')
     completed_core.wait_for(state="visible", timeout=12000)
     check(completed_core.count() == 1, "exactly one fully rendered Core workspace")
-    check(completed_core.locator(".topic-core-teaching-item").count() == 5, "five independent lesson slots on phone")
-    first_phone.locator(".topic-core-teaching-item").first.locator("summary").click()
-    check(first_phone.locator(".topic-core-teaching-item").first.get_attribute("open") is not None, "teaching slot opens")
-    first_phone.locator("#core-journey .topic-micro-start").first.click()
+    check(completed_core.locator(".topic-core-teaching-item").count() == 0,
+          "no separate teaching accordion on phone")
+    check(completed_core.locator(".topic-core-teach-start").count() == 5,
+          "phone has five lecture buttons")
+    first_phone.locator("#core-journey .topic-core-teach-start").first.click()
     pilot_dialog=first_phone.locator(".topic-core-dialog")
-    check(pilot_dialog.is_visible() and pilot_dialog.locator(".topic-micro-options button").count() == 4, "phone Core modal still works")
-    shot(first_phone, "topic07-core-standalone-phone.png")
+    check(pilot_dialog.is_visible() and pilot_dialog.get_attribute("data-mode") == "teach",
+          "phone lecture opens in same stable dialog")
+    check(pilot_dialog.locator(".topic-core-skill-chip").count() == 4,
+          "four legible skill chips on phone")
+    check(pilot_dialog.locator(".topic-core-teaching-row").count() == 5,
+          "five approved teaching fields on phone")
+    check(pilot_dialog.locator(".topic-core-dialog__body").evaluate(
+          "(el) => el.scrollWidth <= el.clientWidth + 2"),
+          "lecture and formulas do not overflow phone modal")
+    shot(first_phone, "topic07-core-lecture-phone.png")
+    pilot_dialog.locator(".topic-core-to-practice").click()
+    check(pilot_dialog.get_attribute("data-mode") == "practice"
+          and pilot_dialog.locator(".topic-micro-options button").count() == 4,
+          "phone lecture-to-practice handoff works")
+    check(pilot_dialog.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill") == "nhan-biet-phan-thuc",
+          "phone question shows matching skill")
+    shot(first_phone, "topic07-core-practice-phone.png")
     pilot_dialog.locator(".topic-core-dialog__close").click()
     check(not pilot_dialog.is_visible(), "phone Core modal closes")
+    check(completed_core.locator('.topic-core-card[data-card-id="pt07-core-1"]').get_attribute("data-covered-skills") == "3",
+          "phone retains truthful 3/4 coverage")
     browser.close()
 
 checks = sorted(OUT.glob("*.png"))
