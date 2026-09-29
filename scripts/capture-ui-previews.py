@@ -290,31 +290,32 @@ $$
         if number == "01": shot(exam_page, "topic25-exam01-rubric-desktop.png")
     exam_page.close()
 
-    # Tablet/half-width: a persistent launcher, without altering Material's nested lists.
+    # Tablet: header launcher is independent of the native, unclipped drawer.
     half = browser.new_context(viewport={"width": 880, "height": 900}, device_scale_factor=1)
     half_page = half.new_page()
     half_page.goto(BASE + "kien-thuc/23-xac-suat/", wait_until="networkidle")
-    half_page.locator('.md-header__button[for="__drawer"]').click()
-    half_page.wait_for_timeout(550)
-    shortcuts = half_page.locator(".md-sidebar--primary > .md-sidebar__scrollwrap > .roadmap-mobile-shortcuts")
-    check(shortcuts.count() == 1 and shortcuts.is_visible(), "one persistent launcher")
-    check(half_page.locator(".md-nav__list .roadmap-mobile-shortcuts").count() == 0, "native nav untouched")
-    check("23. Xác suất" in shortcuts.inner_text(), "current topic context")
-    shortcuts.locator(".roadmap-mobile-shortcuts__jump").click()
+    launcher = half_page.locator(".md-header__inner > [data-roadmap-topic-launcher]")
+    check(launcher.count() == 1 and launcher.is_visible(), "single visible independent topic launcher")
+    check(half_page.locator(".md-sidebar--primary [data-roadmap-mobile-shortcuts]").count() == 0,
+          "zero custom elements inside native drawer")
+    launcher.click()
     dialog = half_page.locator("[data-roadmap-topic-dialog]")
     check(dialog.is_visible() and dialog.locator("nav a").count() == 25, "25-topic chooser")
     check("23. Xác suất" in dialog.locator('nav a[aria-current="page"]').inner_text(), "active topic")
+    check("01." in dialog.locator("nav a").first.inner_text(), "topic list begins at 01")
+    check(dialog.locator("nav").evaluate("(n) => n.scrollTop") == 0, "fresh dialog starts unscrolled")
     shot(half_page, "lesson-23-half-width-topic-chooser.png")
     dialog.locator('nav a[href$="/24-bai-toan-thuc-te/"]').click()
     check("/kien-thuc/24-bai-toan-thuc-te/" in half_page.url, "direct topic switch")
     half_page.locator('.md-header__button[for="__drawer"]').click()
-    shortcuts = half_page.locator(".md-sidebar--primary > .md-sidebar__scrollwrap > .roadmap-mobile-shortcuts")
-    shortcuts.locator(".roadmap-mobile-shortcuts__more summary").click()
-    quick = shortcuts.locator(".roadmap-mobile-shortcuts__links a")
-    check(quick.count() == 6 and quick.first.is_visible(), "six global destinations")
-    shot(half_page, "lesson-24-half-width-main-navigation.png")
-    quick.first.click()
-    check(half_page.url.rstrip("/") == BASE.rstrip("/"), "home from nested lesson")
+    half_page.wait_for_timeout(550)
+    check(half_page.locator(".md-sidebar--primary [data-roadmap-mobile-shortcuts]").count() == 0,
+          "drawer navigation not patched at any nested level")
+    native_title = half_page.locator(".md-sidebar--primary .md-nav__title").first
+    check(native_title.is_visible(), "native drawer title remains visible")
+    shot(half_page, "lesson-24-half-width-native-drawer.png")
+    half_page.locator('.md-header__button[for="__drawer"]').click()
+    half_page.close()
     half.close()
 
     phone = browser.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=1,
