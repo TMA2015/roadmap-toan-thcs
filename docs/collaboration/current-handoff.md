@@ -4,7 +4,7 @@
 
 ## Mở cuộc trò chuyện mới
 
-Đọc [Master Plan v1.1.1](../../governance/TOAN_THCS_MASTER_PLAN.md), tài liệu này, [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md) và Task Registry; sau đó kiểm tra GitHub `main` và nhánh/PR đang mở. **Không dùng tên hoặc trạng thái trong chat cũ để ghi đè quyết định và code hiện hành.** Sau mỗi mốc cần cập nhật lại tài liệu này, Task Registry và Project Context.
+Đọc [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), tài liệu này, [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md) và Task Registry; sau đó kiểm tra GitHub `main` và nhánh/PR đang mở. **Không dùng tên hoặc trạng thái trong chat cũ để ghi đè quyết định và code hiện hành.** Sau mỗi mốc cần cập nhật lại tài liệu này, Task Registry và Project Context.
 
 ## Quyết định giao diện/học thuật cần giữ
 
