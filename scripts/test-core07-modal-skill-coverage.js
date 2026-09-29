@@ -38,7 +38,7 @@ ok(total===17,"five-card question links must total seventeen");
 ok(coverage[0].covered===4&&coverage[0].declared===4&&coverage[0].missing.length===0,"Core 1 four skills have dedicated questions");
 ok(coverage[1].covered===3&&coverage[1].declared===3&&coverage[1].missing.length===0,"Core 2 three skills have dedicated questions");
 ok(coverage.slice(2).every(c=>c.covered===c.declared),"Core 3-5 coverage");
-ok(coverage.reduce((n,c)=>n+c.declared,0)===11&&coverage.reduce((n,c)=>n+c.covered,0)===11,"12 of 12 declared skills have at least one dedicated formative item");
+ok(coverage.reduce((n,c)=>n+c.declared,0)===11&&coverage.reduce((n,c)=>n+c.covered,0)===11,"11 of 11 declared skills have at least one dedicated formative item");
 for(const required of ["coverageFor=(card,questions)","primarySkill=q=>","topic-core-teach-start","topic-core-practice-start","topic-core-modal-modes","topic-micro-assessed-skill","body.replaceChildren(tabs,sessions.get(card.id))","const sessions=new Map()","recordAnswer?.("])
  ok(js.includes(required),"UI invariant: "+required);
 ok(!js.includes("topic-core-teaching-item"),"no separate inline teaching accordion");
