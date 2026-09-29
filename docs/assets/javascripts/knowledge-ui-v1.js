@@ -37,7 +37,7 @@
   };
 
   const setupLesson = () => {
-    const m = location.pathname.match(/\/kien-thuc\/(\d{2}-[^/]+)\/(bai-tap\/|tu-kiem-tra\/)?(?:index\.html)?$/);
+    const m = location.pathname.match(/\/kien-thuc\/(\d{2}-[^/]+)\/(bai-tap\/|tu-kiem-tra\/|core\/)?(?:index\.html)?$/);
     if (!m) return;
     const host = document.querySelector(".md-content__inner");
     if (!host || host.dataset.lessonShellReady === "1") return;
@@ -87,12 +87,19 @@
     headingRow.append(back, controls);
     const nav = document.createElement("nav");
     nav.className = "lesson-switcher-steps";
-    nav.setAttribute("aria-label", "Chuyển giữa bài học, luyện tập và tự kiểm tra");
-    const steps = [
+    nav.setAttribute("aria-label", "Các bước học của chuyên đề");
+    const standaloneCore = m[1] === "07-phan-thuc-dai-so";
+    const steps = standaloneCore ? [
+      {id:"lesson", title:"01 · Đọc & hiểu", path:root},
+      {id:"core", title:"02 · Core theo chặng", path:root+"core/"},
+      {id:"bai-tap", title:"03 · Luyện tập", path:root+"bai-tap/"},
+      {id:"tu-kiem-tra", title:"04 · Tự kiểm tra", path:root+"tu-kiem-tra/"}
+    ] : [
       {id:"lesson", title:"01 · Đọc & hiểu", path:root},
       {id:"bai-tap", title:"02 · Luyện tập", path:root+"bai-tap/"},
       {id:"tu-kiem-tra", title:"03 · Tự kiểm tra", path:root+"tu-kiem-tra/"}
     ];
+    if(standaloneCore) nav.classList.add("lesson-switcher-steps--four");
     steps.forEach(step => {
       const a = document.createElement("a");
       a.href = step.path;
