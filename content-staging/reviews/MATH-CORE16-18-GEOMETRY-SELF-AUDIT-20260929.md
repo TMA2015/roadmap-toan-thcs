@@ -38,7 +38,7 @@ Each example includes complete independent problem and steps, misconception, rec
 
 - Original CĐ16 fifth Core card declared \`hvuong-dau-hieu\` without a primary-assessed question. New \`GEO16MICRO_016\`, only after original 001–015 and after Core5's Base–Trap–Apply trio, assesses **exactly** \`hvuong-dau-hieu\`: ABCD **given a rectangle** and AB=BC (adjacent) → square. Options: square / rhombus-but-not-rectangle / not-rhombus / cannot conclude. Unique correct choice index 0. Two scaffold hints and post-answer explanation; \`hcn-tinh-chat\` and \`quan-he-bao-ham\` supporting, not scored again.
 - CĐ17 and CĐ18 original 15 items already cover all their declared skill IDs. Keep both banks fully untouched.
-- After addition CĐ16 11/11 declared skills, CĐ17 12/12, CĐ18 11/11: **34/34 skill-card opportunities**, not mastery levels. Counts 16/15/15 = 46 questions.
+- After addition CĐ16 13/13 declared skills, CĐ17 12/12, CĐ18 11/11: **36/36 skill-card opportunities**, not mastery levels. Counts 16/15/15 = 46 questions.
 
 ## Curriculum and release safeguards
 
