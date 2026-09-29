@@ -31,7 +31,7 @@
         "dkxd-sai-doi-tuong"
       ],
       "teaching_copy": {
-        "key_idea": "Phân thức đại số có dạng \\(A/B\\), trong đó \\(A,B\\) là đa thức và \\(B\\) không phải đa thức 0. Khi thay giá trị của biến, phải loại mọi giá trị khiến mẫu bằng 0. Hai phân thức bằng nhau được xét trên miền xác định chung.",
+        "key_idea": "Phân thức đại số có dạng \\(\\frac{A}{B}\\), trong đó \\(A,B\\) là đa thức và \\(B\\) không phải đa thức \\(0\\); \\(A\\) là tử thức, \\(B\\) là mẫu thức. Mỗi đa thức cũng được coi là phân thức có mẫu bằng \\(1\\). Điều kiện xác định là \\(B\\ne0\\): phải tìm trước khi thay số hoặc biến đổi. Tại các giá trị biến thỏa \\(B\\ne0\\) và \\(D\\ne0\\), hai phân thức \\(\\frac{A}{B}\\) và \\(\\frac{C}{D}\\) bằng nhau khi và chỉ khi \\(A\\cdot D=B\\cdot C\\).",
         "worked_example": {
           "problem": "Cho \\(P=\\frac{x+2}{(x-1)(x+3)}\\). Tìm điều kiện xác định và tính \\(P\\) tại \\(x=0\\).",
           "solution": "Bước 1: \\((x-1)(x+3)\\ne0\\) nên \\(x\\ne1\\), \\(x\\ne-3\\).\nBước 2: \\(x=0\\) thỏa điều kiện. Khi đó \\(P(0)=\\frac2{(-1)\\cdot3}=-\\frac23\\).\nBước 3: Kiểm tra lại cả hai giá trị bị loại ở mẫu ban đầu."
@@ -50,7 +50,8 @@
           "RAT07MICRO_002",
           "RAT07MICRO_003"
         ],
-        "review_status": "DRAFT_AWAITING_INDEPENDENT_REVIEW"
+        "review_status": "R1_REVISED_AWAITING_R2",
+        "review_round": "MATH-CORE07-TEACH-R2-20260929"
       }
     },
     {
@@ -80,7 +81,7 @@
         "doi-dau-khong-day-du"
       ],
       "teaching_copy": {
-        "key_idea": "Rút gọn phân thức bằng cách phân tích tử, mẫu thành nhân tử rồi chia nhân tử chung khác 0. Đẳng thức sau rút gọn chỉ đúng trên miền xác định ban đầu. Quy tắc đổi dấu: \\(\\frac AB=\\frac{-A}{-B}\\); đổi dấu đúng một trong hai phần thì phân thức đổi dấu.",
+        "key_idea": "Rút gọn phân thức bằng cách phân tích tử, mẫu thành nhân tử rồi chia nhân tử chung khác \\(0\\). Đẳng thức sau rút gọn chỉ đúng trên miền xác định ban đầu. Quy tắc đổi dấu: \\(\\frac{A}{B}=\\frac{-A}{-B}\\) và \\(\\frac{A}{-B}=\\frac{-A}{B}=-\\frac{A}{B}\\), với các mẫu khác \\(0\\).",
         "worked_example": {
           "problem": "Rút gọn \\(Q=\\frac{x^2-16}{x^2-4x}\\) và nêu điều kiện xác định.",
           "solution": "Bước 1: \\(x^2-4x=x(x-4)\\ne0\\), nên \\(x\\ne0\\), \\(x\\ne4\\).\nBước 2: \\(x^2-16=(x-4)(x+4)\\).\nBước 3: Với điều kiện trên, \\(Q=\\frac{(x-4)(x+4)}{x(x-4)}=\\frac{x+4}{x}\\).\nBước 4: Giữ nguyên cả \\(x\\ne0\\), \\(x\\ne4\\), dù mẫu sau rút gọn chỉ còn \\(x\\)."
@@ -99,7 +100,8 @@
           "RAT07MICRO_005",
           "RAT07MICRO_006"
         ],
-        "review_status": "DRAFT_AWAITING_INDEPENDENT_REVIEW"
+        "review_status": "R1_REVISED_AWAITING_R2",
+        "review_round": "MATH-CORE07-TEACH-R2-20260929"
       }
     },
     {
@@ -126,10 +128,10 @@
         "quen-nhan-tu-phu"
       ],
       "teaching_copy": {
-        "key_idea": "Muốn quy đồng, trước hết phân tích các mẫu thành nhân tử. Chọn mẫu thức chung chứa mỗi nhân tử với số mũ lớn nhất rồi nhân cả tử và mẫu của từng phân thức với nhân tử phụ tương ứng. Giữ điều kiện xác định của các phân thức ban đầu.",
+        "key_idea": "Muốn quy đồng: (1) Phân tích các mẫu thành nhân tử, chọn mẫu thức chung (MTC) chia hết cho tất cả mẫu cũ; mỗi nhân tử được lấy với số mũ lớn nhất cần thiết. (2) Tìm nhân tử phụ của từng phân thức: \\(\\text{nhân tử phụ}=\\text{MTC}:\\text{mẫu thức cũ}\\). (3) Nhân cả tử và mẫu của từng phân thức với nhân tử phụ tương ứng. Trong suốt quá trình, giữ điều kiện xác định chung của các phân thức ban đầu.",
         "worked_example": {
           "problem": "Quy đồng \\(\\frac1{x(x-2)}\\) và \\(\\frac2{x+2}\\).",
-          "solution": "Bước 1: Điều kiện chung \\(x\\ne0,\\,x\\ne2,\\,x\\ne-2\\).\nBước 2: Chọn mẫu thức chung \\(M=x(x-2)(x+2)\\).\nBước 3: \\(\\frac1{x(x-2)}=\\frac{x+2}{M}\\) và \\(\\frac2{x+2}=\\frac{2x(x-2)}{M}\\).\nBước 4: Mỗi phân thức mới được hiểu trên miền xác định chung đã ghi."
+          "solution": "Bước 1: Điều kiện chung \\(x\\ne0,\\,x\\ne2,\\,x\\ne-2\\).\nBước 2: Chọn mẫu thức chung \\(M=x(x-2)(x+2)\\).\nBước 3: Nhân tử phụ của phân thức thứ nhất là \\(x+2\\):\n\\(\\frac{1}{x(x-2)}=\\frac{1\\cdot(x+2)}{x(x-2)(x+2)}=\\frac{x+2}{M}\\).\nNhân tử phụ của phân thức thứ hai là \\(x(x-2)\\):\n\\(\\frac{2}{x+2}=\\frac{2\\cdot x(x-2)}{(x+2)\\cdot x(x-2)}=\\frac{2x(x-2)}{M}\\).\nBước 4: Hai phân thức mới được hiểu trên miền xác định chung đã ghi."
         },
         "misconception": "Chọn thiếu một nhân tử hoặc quên nhân tử phụ ở tử thức; chỉ nhân mẫu mà không nhân tử.",
         "summary": "Phân tích mẫu → chọn mẫu chung → tìm nhân tử phụ → nhân cả tử và mẫu.",
@@ -143,7 +145,8 @@
           "RAT07MICRO_008",
           "RAT07MICRO_009"
         ],
-        "review_status": "DRAFT_AWAITING_INDEPENDENT_REVIEW"
+        "review_status": "R1_REVISED_AWAITING_R2",
+        "review_round": "MATH-CORE07-TEACH-R2-20260929"
       }
     },
     {
@@ -188,7 +191,8 @@
           "RAT07MICRO_011",
           "RAT07MICRO_012"
         ],
-        "review_status": "DRAFT_AWAITING_INDEPENDENT_REVIEW"
+        "review_status": "R1_REVISED_AWAITING_R2",
+        "review_round": "MATH-CORE07-TEACH-R2-20260929"
       }
     },
     {
@@ -217,10 +221,10 @@
         "quen-dieu-kien-so-chia"
       ],
       "teaching_copy": {
-        "key_idea": "Nhân: \\(\\frac AB\\cdot\\frac CD=\\frac{AC}{BD}\\). Chia: \\(\\frac AB:\\frac CD=\\frac AB\\cdot\\frac DC\\). Mẫu của các phân thức ban đầu phải khác 0; khi chia, phân thức bị chia còn phải khác 0 (\\(C\\ne0\\)). Nên phân tích và rút gọn nhân tử trước khi khai triển.",
+        "key_idea": "Phép nhân: \\(\\frac{A}{B}\\cdot\\frac{C}{D}=\\frac{AC}{BD}\\). Phép chia: \\(\\frac{A}{B}:\\frac{C}{D}=\\frac{A}{B}\\cdot\\frac{D}{C}\\). Mẫu của tất cả phân thức ban đầu phải khác \\(0\\). Riêng phép chia, phân thức chia (số chia) \\(\\frac{C}{D}\\) cũng phải khác \\(0\\), nghĩa là \\(C\\ne0\\) và \\(D\\ne0\\). Nên phân tích các tử và mẫu thành nhân tử để rút gọn trước khi khai triển.",
         "worked_example": {
           "problem": "Rút gọn \\(T=\\frac{x^2-1}{2x}:\\frac{x+1}{3x}\\).",
-          "solution": "Bước 1: \\(2x\\ne0\\), \\(3x\\ne0\\) và phân thức bị chia \\(\\frac{x+1}{3x}\\ne0\\), nên \\(x\\ne0\\), \\(x\\ne-1\\).\nBước 2: \\(x^2-1=(x-1)(x+1)\\).\nBước 3: \\(T=\\frac{(x-1)(x+1)}{2x}\\cdot\\frac{3x}{x+1}=\\frac{3(x-1)}2\\).\nBước 4: Kết quả chỉ có nghĩa với \\(x\\ne0,-1\\)."
+          "solution": "Bước 1: Mẫu thức của hai phân thức ban đầu phải khác \\(0\\): \\(2x\\ne0\\) và \\(3x\\ne0\\), tức \\(x\\ne0\\). Đồng thời, phân thức chia \\(\\frac{x+1}{3x}\\) phải khác \\(0\\), nên \\(x+1\\ne0\\), hay \\(x\\ne-1\\). Vậy điều kiện xác định: \\(x\\ne0\\) và \\(x\\ne-1\\).\nBước 2: \\(x^2-1=(x-1)(x+1)\\).\nBước 3: \\(T=\\frac{(x-1)(x+1)}{2x}\\cdot\\frac{3x}{x+1}=\\frac{3(x-1)}{2}\\).\nBước 4: Kết quả chỉ có nghĩa với \\(x\\ne0,-1\\)."
         },
         "misconception": "Chia nhưng không nhân nghịch đảo, hoặc chỉ xét mẫu của hai phân thức mà quên số chia phải khác 0.",
         "summary": "Ghi điều kiện của biểu thức ban đầu; đổi chia thành nhân nghịch đảo; rút nhân tử chung.",
@@ -234,7 +238,8 @@
           "RAT07MICRO_014",
           "RAT07MICRO_015"
         ],
-        "review_status": "DRAFT_AWAITING_INDEPENDENT_REVIEW"
+        "review_status": "R1_REVISED_AWAITING_R2",
+        "review_round": "MATH-CORE07-TEACH-R2-20260929"
       }
     }
   ],
