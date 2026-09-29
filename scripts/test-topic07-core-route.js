@@ -18,11 +18,12 @@ ok(shell.includes('id:"core"')&&shell.includes('lesson-switcher-steps--four'),"f
 ok(css.includes(".topic-core-teaching-modal")&&css.includes(".topic-core-gateway"),"teaching modal and gateway styles");
 ok(js.includes("topic-core-teach-start")&&js.includes("topic-core-practice-start"),"two Core card actions");
 ok(!js.includes("topic-core-teaching-item"),"no duplicate standalone lecture list");
-ok(workspace.topic===slug&&workspace.cards.length===5&&bank.questions.length===15,"original topic scope unchanged");
+ok(workspace.topic===slug&&workspace.cards.length===5&&bank.questions.length===17,"original topic scope unchanged");
 const ids=new Set(bank.questions.map(q=>q.id));
 for(const c of workspace.cards){
  ok(c.layer==="KNTT-Core","card layer "+c.id);
- ok(c.micro_practice.length===3&&c.micro_practice.every(id=>ids.has(id)),"original micro item links "+c.id);
+ ok(c.micro_practice.length >= 3 && c.micro_practice.every(id=>ids.has(id)),"Core micro item links "+c.id);
+ ok(c.micro_practice.slice(0,3).map(id=>bank.questions.find(q=>q.id===id)?.micro_role).join(",")==="base,trap,apply","baseline three learning roles preserved "+c.id);
 }
 ok(lesson.includes("## 📖 3. Kiến thức cốt lõi"),"full lesson content retained");
 console.log("PASS: topic07 independent Core pilot, stable URLs/IDs, lesson gateway, modal and formative boundaries.");
