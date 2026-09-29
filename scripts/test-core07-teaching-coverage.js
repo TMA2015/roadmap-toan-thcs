@@ -16,8 +16,13 @@ for(const card of workspace.cards){
    assert(typeof copy[name]==="string"&&copy[name].trim(),"missing "+name+" for "+card.id);
  assert(copy.worked_example?.problem?.trim()&&copy.worked_example?.solution?.trim(),"missing worked solution "+card.id);
  assert(copy.source_reference===source.source_reference&&JSON.stringify(copy.source_question_ids)===JSON.stringify(source.question_ids),"source provenance mismatch "+card.id);
- if(process.argv.includes("--release"))
-   assert(copy.review_status==="APPROVED"&&typeof copy.academic_review_ref==="string"&&copy.academic_review_ref.trim(),"UNREVIEWED CORE TEACHING MUST NOT DEPLOY: "+card.id);
+ if(process.argv.includes("--release")){
+   const ref="content-staging/reviews/MATH-CORE07-TEACH-R2-REVIEW-RESULT-20260929.md";
+   assert(copy.review_status==="APPROVED"&&copy.academic_review_ref===ref,"UNREVIEWED CORE TEACHING MUST NOT DEPLOY: "+card.id);
+   assert(copy.review_source_packet==="MATH-CORE07-TEACH-R2-20260929-NOTEBOOKLM.txt"&&copy.review_source_blob_sha==="446f984a1e38f260fec3e8568712c8fda4bbfa23","R2 source mismatch: "+card.id);
+   const review=fs.readFileSync(ref,"utf8");
+   assert(review.includes("**Verdict:** PASS")&&review.includes("metadata/date mismatch")&&review.includes(card.id),"Missing sourced R2 review approval: "+card.id);
+ }
 }
 const byId=new Map(workspace.cards.map(c=>[c.id,c.teaching_copy]));
 const checkText=(id,field,expected)=>{
@@ -36,4 +41,4 @@ const r2=fs.readFileSync("content-staging/reviews/MATH-CORE07-TEACH-R2-20260929-
 assert((r2.match(/^THẺ [1-5]: pt07-core-/gm)||[]).length===5,"R2 packet must contain five revisions");
 assert((r2.match(/^CÂU \d+ — RAT07MICRO_/gm)||[]).length===15,"R2 packet must contain fifteen source questions");
 assert(r2.includes("A\\cdot D=B\\cdot C")&&r2.includes("R1 — Lời giải:")&&r2.includes("R2 — Lời giải:"),"R2 must compare old/new math and solutions");
-console.log("PASS: five source-locked Core07 teaching copies; "+(process.argv.includes("--release")?"release academic approval present":"candidate stage; independent review still required"));
+console.log("PASS: five source-locked Core07 teaching copies; "+(process.argv.includes("--release")?"R2 academic approval and source provenance verified":"candidate structure and corrections verified"));
