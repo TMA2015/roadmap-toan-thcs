@@ -36,7 +36,7 @@ Question: Factor \(P=\frac{x^2-25}{x^2+10x+25}\) in preparation for simplificati
 1. Assert all first 15 records are JSON-deep-equal to the locked 15-item snapshot in the R1 teaching packet; IDs and answers must not change.
 2. Assert new IDs unique and isolated, four unique choices, exactly one assessed tag, two hints, explanations and target skill declared on card; the new \`coverage\` role appears only **after** the three original roles.
 3. Independently calculate algebraic identities and counterexamples across allowed sample values; verify excluded domain points.
-4. Assert 17 total questions and 12/12 unique *declared* Core skills have at least one dedicated formative item; separately preserve the honest 'not mastery' wording.
+4. Assert 17 total questions and 11/11 unique *declared* Core skills have at least one dedicated formative item; separately preserve the honest 'not mastery' wording.
 5. Assert \`learner-evidence-v1.js\` still records only from answer submission; no historical question ID/counter migration or manipulation.
 6. Exercise both modals, navigation through new Q4/4, localStorage unaffected on open/close, and recording of exactly the intended single primary skill upon answering a new item. Test desktop, tablet, phone and dark mode.
 7. Run existing question-bank, Core R2 provenance, Golden Template, route and strict-site build checks.
