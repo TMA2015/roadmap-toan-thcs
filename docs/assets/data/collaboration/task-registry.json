@@ -1,7 +1,7 @@
 {
   "version": 1,
   "schema": "roadmap-collaboration-task-registry-v1",
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "statuses": [
     "OPEN",
     "GEMINI-DRAFT",
@@ -616,6 +616,40 @@
       "status": "CHATGPT-REVIEW",
       "review_verdict": "B01_B07_ROUND_RECEIPTS_CONSOLIDATED_10_FIX_DIFF_PREFLIGHT_PASS_PROPOSAL_ONLY",
       "review_notes": "Evidence ledger review-packets/skill-taxonomy/B01-B07-CURRENT-RECONCILIATION-20260930.md consolidates B01–B07 receipt limits and checks 10 proposed content fixes against main 4cfa70f: six file comparisons/five unique paths, exact changed IDs and unchanged keys/tags. Not an independent whole-bank audit, not a completed question-level taxonomy overlay and not production. Historical draft PRs #151/#153/#155 remain unmerged pending explicit controlled approval. Next: item-level canonical concept/task-demand/clone/evidence register, source-locked and read-only."
+    },
+    {
+      "id": "MATH-UI-BATCH-A-001",
+      "title": "Standalone dual-modal learning pages for CĐ02/21/23/24/25",
+      "routing": "GITHUB_IMPLEMENT+CI_BROWSER",
+      "status": "DONE",
+      "review_verdict": "PR178_MERGED_CI_BROWSER_DEPLOY_PASS_OWNER_DEVICE_QA_OPEN",
+      "review_notes": "PR #178 merge c1b461885d7da1bd3cafef34f357c04c493df3b0, 3 PR workflows success and Pages run 36606931537 success. Five separate routes/four-step nav, 25 original cards/75 original questions immutable; shared topic-learning-routes-v1.js; no learner-data migration. CĐ02 Grade6 Core, CĐ24 Core-Support, CĐ25 Entrance10. Owner new-batch real-device acceptance not yet recorded.",
+      "source_commit": "c1b461885d7da1bd3cafef34f357c04c493df3b0"
+    },
+    {
+      "id": "MATH-UI-BATCH-A-OWNER-QA-001",
+      "title": "Owner acceptance of released CĐ02/21/23/24/25 standalone pages",
+      "routing": "OWNER_DEVICE_QA",
+      "status": "OPEN",
+      "review_verdict": "CI_BROWSER_PASS_OWNER_UNVERIFIED",
+      "review_notes": "Verify real desktop/iPad UI, 4-step navigation, left drawer, modal lecture/practice and preserved learner stats. Do not inherit CĐ19–20 owner acceptance. iPhone unverified.",
+      "source_commit": "c1b461885d7da1bd3cafef34f357c04c493df3b0"
+    },
+    {
+      "id": "MATH-CORE03-ACADEMIC-AUTHOR-001",
+      "title": "Author and independently review CĐ03 five-stage Core based on Grade6/7 KNTT",
+      "routing": "CHATGPT_AUTHOR_SOURCE_LOCKED+NOTEBOOKLM_REVIEW",
+      "status": "OPEN",
+      "review_verdict": "NO_WORKSPACE_OR_APPROVED_MICRO_YET",
+      "review_notes": "Source full CĐ03 lesson and 120 legacy questions exist, but no micro/workspace/independent route. Proposed new content must pass academic review and exact source/index/render before UI release. No automatic readiness migration; distinguish Grade6 ratio/percent from Grade7 proportions/direct and inverse relationships."
+    },
+    {
+      "id": "MATH-CORE02-23-GAP-001",
+      "title": "Review seven missing card-level skill practice opportunities CĐ02/23",
+      "routing": "CHATGPT_CANDIDATES+NOTEBOOKLM_REVIEW",
+      "status": "OPEN",
+      "review_verdict": "SOURCE_COVERAGE_GAP_SEVEN_NO_FALSE_CREDIT",
+      "review_notes": "CĐ02 five missing skills in four cards; CĐ23 two missing per-card skill opportunities. Keep existing visible warnings and original 30 item records immutable. Append only after independent math, scope and grade review."
     }
   ]
 }
