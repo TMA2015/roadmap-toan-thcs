@@ -1,0 +1,436 @@
+{
+  "schema": "math-skill-overlay-proposal-v1",
+  "packet_id": "MATH-SKILL-TAXONOMY-B03-20260928",
+  "source_sha": "88143e6b2690edfe721f8d74d2dbcb251bc55ab3",
+  "locked_source_blob_sha": "f7d2472f95e2615144aa8723f870014cf53bfed9",
+  "status": "PROPOSAL_ONLY",
+  "implementation_status": "NOT_IMPLEMENTED",
+  "canonical_concepts": [
+    {
+      "id": "concept_trung_truc_doan_thang",
+      "label": "Đường trung trực đoạn thẳng và tính chất cách đều hai đầu mút"
+    },
+    {
+      "id": "concept_tam_ngoai_tiep_tam_giac",
+      "label": "Tâm ngoại tiếp tam giác và vận dụng trung trực theo ba đỉnh"
+    }
+  ],
+  "items": [
+    {
+      "item_id": "GEO14MICRO_005",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_definition_two_conditions",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": null,
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "TRI14V1_125",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_definition_two_conditions",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": null,
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "TRI14V1_126",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_proof_requirements",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": null,
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "TRI14V1_127",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_definition_two_conditions",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": null,
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "TRI14V1_128",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_definition_two_conditions",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": null,
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "TRI14V1_129",
+      "legacy_skill_tags": [
+        "cach-deu-dinh"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_forward_property",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": null,
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "TRI14V1_130",
+      "legacy_skill_tags": [
+        "cach-deu-dinh"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_converse_property",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": null,
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "TRI14V1_131",
+      "legacy_skill_tags": [
+        "cach-deu-dinh"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "equidistance_terminology",
+      "evidence_mode": "mcq_recognition",
+      "role": "definition_recognition",
+      "clone_cluster": null,
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "TRI14V1_132",
+      "legacy_skill_tags": [
+        "cach-deu-dinh"
+      ],
+      "canonical_concept_candidate": "concept_tam_ngoai_tiep_tam_giac",
+      "task_demand_candidate": "apply_converse_pairwise_three_vertices",
+      "evidence_mode": "mcq_recognition",
+      "role": "bridge_recognition",
+      "clone_cluster": null,
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "GEO15MICRO_010",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_definition_two_conditions",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": null,
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_079",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_definition_two_conditions",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": "CTR15_DEF",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_080",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_definition_two_conditions",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": "CTR15_DEF",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_081",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_definition_two_conditions",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": "CTR15_DEF",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_082",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_definition_two_conditions",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": "CTR15_DEF",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_083",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_definition_two_conditions",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": "CTR15_DEF",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_084",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_definition_two_conditions",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": "CTR15_DEF",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_085",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_definition_two_conditions",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": "CTR15_DEF",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_086",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_concept_candidate": "concept_trung_truc_doan_thang",
+      "task_demand_candidate": "recognize_definition_two_conditions",
+      "evidence_mode": "mcq_recognition",
+      "role": "assessed_recognition_only",
+      "clone_cluster": "CTR15_DEF",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_097",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_concept_candidate": "concept_tam_ngoai_tiep_tam_giac",
+      "task_demand_candidate": "recognize_equal_radii",
+      "evidence_mode": "mcq_recognition",
+      "role": "formative_clone",
+      "clone_cluster": "CTR15_RADIUS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_098",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_concept_candidate": "concept_tam_ngoai_tiep_tam_giac",
+      "task_demand_candidate": "recognize_equal_radii",
+      "evidence_mode": "mcq_recognition",
+      "role": "formative_clone",
+      "clone_cluster": "CTR15_RADIUS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_099",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_concept_candidate": "concept_tam_ngoai_tiep_tam_giac",
+      "task_demand_candidate": "recognize_equal_radii",
+      "evidence_mode": "mcq_recognition",
+      "role": "formative_clone",
+      "clone_cluster": "CTR15_RADIUS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_100",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_concept_candidate": "concept_tam_ngoai_tiep_tam_giac",
+      "task_demand_candidate": "recognize_equal_radii",
+      "evidence_mode": "mcq_recognition",
+      "role": "formative_clone",
+      "clone_cluster": "CTR15_RADIUS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_101",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_concept_candidate": "concept_tam_ngoai_tiep_tam_giac",
+      "task_demand_candidate": "recognize_equal_radii",
+      "evidence_mode": "mcq_recognition",
+      "role": "formative_clone",
+      "clone_cluster": "CTR15_RADIUS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_102",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_concept_candidate": "concept_tam_ngoai_tiep_tam_giac",
+      "task_demand_candidate": "recognize_equal_radii",
+      "evidence_mode": "mcq_recognition",
+      "role": "formative_clone",
+      "clone_cluster": "CTR15_RADIUS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_103",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_concept_candidate": "concept_tam_ngoai_tiep_tam_giac",
+      "task_demand_candidate": "recognize_equal_radii",
+      "evidence_mode": "mcq_recognition",
+      "role": "formative_clone",
+      "clone_cluster": "CTR15_RADIUS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    },
+    {
+      "item_id": "CTR15V1_104",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_concept_candidate": "concept_tam_ngoai_tiep_tam_giac",
+      "task_demand_candidate": "recognize_equal_radii",
+      "evidence_mode": "mcq_recognition",
+      "role": "formative_clone",
+      "clone_cluster": "CTR15_RADIUS",
+      "learner_counter_migration": "NONE",
+      "runtime_enabled": false,
+      "core_readiness_credit": false
+    }
+  ],
+  "clone_clusters": [
+    {
+      "id": "CTR15_DEF",
+      "ids": [
+        "CTR15V1_079",
+        "CTR15V1_080",
+        "CTR15V1_081",
+        "CTR15V1_082",
+        "CTR15V1_083",
+        "CTR15V1_084",
+        "CTR15V1_085",
+        "CTR15V1_086"
+      ],
+      "role": "formative_practice_repetition",
+      "do_not_infer": "8 distinct skills or independent proof mastery"
+    },
+    {
+      "id": "CTR15_RADIUS",
+      "ids": [
+        "CTR15V1_097",
+        "CTR15V1_098",
+        "CTR15V1_099",
+        "CTR15V1_100",
+        "CTR15V1_101",
+        "CTR15V1_102",
+        "CTR15V1_103",
+        "CTR15V1_104"
+      ],
+      "role": "formative_practice_repetition",
+      "do_not_infer": "8 distinct independent transfer evidences"
+    }
+  ],
+  "unmeasured_demands": [
+    "written_concurrency_proof_independent",
+    "transfer_without_answer_choices"
+  ],
+  "safety": {
+    "legacy_ids_unchanged": true,
+    "legacy_tags_unchanged": true,
+    "old_counters_unchanged": true,
+    "legacy_counter_alias_merge": false,
+    "runtime_enabled": false,
+    "core_readiness_credit": false
+  }
+}
