@@ -27,8 +27,33 @@
       "micro_practice": [
         "GEO14MICRO_001",
         "GEO14MICRO_002",
-        "GEO14MICRO_003"
-      ]
+        "GEO14MICRO_003",
+        "GEO14MICRO_016"
+      ],
+      "teaching_copy": {
+        "key_idea": "Trong tam giác, tổng ba góc \\(180^\\circ\\); góc lớn hơn đối diện cạnh lớn hơn và ngược lại. Ba đoạn lập thành tam giác khi tổng hai đoạn ngắn hơn lớn hơn đoạn dài nhất. Từ A ngoài đường d, đoạn vuông góc AH ngắn hơn mọi đường xiên AB (B khác H trên d).",
+        "worked_example": {
+          "problem": "Tam giác ABC có \\(\\angle A=50^\\circ,\\angle B=60^\\circ\\). Tính góc C và sắp xếp độ dài AB, AC, BC theo thứ tự tăng dần.",
+          "solution": "Bước 1: \\(\\angle C=180^\\circ-50^\\circ-60^\\circ=70^\\circ\\).\nBước 2: Thứ tự góc \\(A<B<C\\) nên cạnh đối diện \\(BC<AC<AB\\).\nBước 3: Kiểm tra ghép cạnh: BC đối diện A, AC đối diện B, AB đối diện C."
+        },
+        "misconception": "So sánh cạnh với góc kề thay vì góc đối diện; quên tam giác phải tồn tại khi xét độ dài.",
+        "summary": "Góc A đối diện BC, B đối diện CA, C đối diện AB.",
+        "source_reference": "docs/kien-thuc/14-tam-giac/index.md",
+        "source_sections": [
+          "3.3",
+          "3.5",
+          "3.6",
+          "3.6A"
+        ],
+        "source_question_ids": [
+          "GEO14MICRO_001",
+          "GEO14MICRO_002",
+          "GEO14MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "geo14-core-2",
@@ -51,8 +76,31 @@
       "micro_practice": [
         "GEO14MICRO_004",
         "GEO14MICRO_005",
-        "GEO14MICRO_006"
-      ]
+        "GEO14MICRO_006",
+        "GEO14MICRO_017"
+      ],
+      "teaching_copy": {
+        "key_idea": "Tam giác cân tại A có \\(AB=AC\\) và hai góc đáy bằng nhau. Đường trung trực AB vuông góc AB tại trung điểm; một điểm P cách đều A, B thì nằm trên trung trực, và ngược lại. Không được suy ra P là trung điểm AB chỉ từ \\(PA=PB\\).",
+        "worked_example": {
+          "problem": "Cho AB dài 10 cm, M là trung điểm AB, đường d vuông góc AB tại M. P thuộc d và khác M. So sánh PA, PB; P có là trung điểm AB không?",
+          "solution": "Bước 1: d là đường trung trực AB do qua M và vuông góc AB.\nBước 2: P thuộc d nên \\(PA=PB\\).\nBước 3: Vì P khác M và d vuông góc AB, P không nằm trên đoạn AB; P không là trung điểm AB."
+        },
+        "misconception": "Đánh đồng 'cách đều A, B' với 'nằm giữa A, B'; một điểm trên trung trực không nhất thiết nằm trên AB.",
+        "summary": "Trung trực cho cách đều hai đầu mút, không tự suy ra trung điểm.",
+        "source_reference": "docs/kien-thuc/14-tam-giac/index.md",
+        "source_sections": [
+          "3.6A",
+          "3.7"
+        ],
+        "source_question_ids": [
+          "GEO14MICRO_004",
+          "GEO14MICRO_005",
+          "GEO14MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "geo14-core-3",
@@ -73,7 +121,29 @@
         "GEO14MICRO_007",
         "GEO14MICRO_008",
         "GEO14MICRO_009"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Hai tam giác bằng nhau phải ghép các đỉnh đúng thứ tự tương ứng. Trường hợp cạnh–cạnh–cạnh (c.c.c): ba cặp cạnh tương ứng bằng nhau thì hai tam giác bằng nhau; từ đó mới suy ra các góc tương ứng bằng nhau.",
+        "worked_example": {
+          "problem": "Cho \\(\\triangle ABC\\) có \\(AB=4,BC=5,CA=6\\) và \\(\\triangle DEF\\) có \\(DE=4,EF=5,FD=6\\). Viết cặp tam giác bằng nhau và kết luận góc ứng với góc B.",
+          "solution": "Bước 1: \\(AB=DE,\\ BC=EF,\\ CA=FD\\).\nBước 2: Theo c.c.c, \\(\\triangle ABC=\\triangle DEF\\), tương ứng A↔D, B↔E, C↔F.\nBước 3: \\(\\angle B=\\angle E\\)."
+        },
+        "misconception": "Viết sai thứ tự hai tam giác mặc dù ba độ dài đã đúng, kéo theo ghép góc sai.",
+        "summary": "Trước c.c.c, ghi đủ ba cặp cạnh tương ứng và đúng thứ tự đỉnh.",
+        "source_reference": "docs/kien-thuc/14-tam-giac/index.md",
+        "source_sections": [
+          "3.8",
+          "3.8A"
+        ],
+        "source_question_ids": [
+          "GEO14MICRO_007",
+          "GEO14MICRO_008",
+          "GEO14MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "geo14-core-4",
@@ -94,7 +164,29 @@
         "GEO14MICRO_010",
         "GEO14MICRO_011",
         "GEO14MICRO_012"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "c.g.c cần hai cạnh **và góc xen giữa** tương ứng bằng nhau; g.c.g cần một cạnh và hai góc kề cạnh ấy. Không dùng góc không xen giữa để suy ra c.g.c. Phải xác định đúng thứ tự hai tam giác khi kết luận.",
+        "worked_example": {
+          "problem": "Cho \\(AB=DE,\\ AC=DF\\) và \\(\\angle BAC=\\angle EDF\\). Kết luận hai tam giác nào bằng nhau và theo trường hợp gì?",
+          "solution": "Bước 1: Tương ứng AB↔DE, AC↔DF.\nBước 2: Hai góc BAC và EDF nằm xen giữa đúng hai cạnh vừa nêu.\nBước 3: \\(\\triangle ABC=\\triangle DEF\\) theo c.g.c."
+        },
+        "misconception": "Chọn c.g.c chỉ vì có hai cạnh và một góc bất kỳ, không kiểm tra góc xen giữa.",
+        "summary": "c.g.c: góc phải nằm giữa hai cạnh đã biết.",
+        "source_reference": "docs/kien-thuc/14-tam-giac/index.md",
+        "source_sections": [
+          "3.8",
+          "3.8A"
+        ],
+        "source_question_ids": [
+          "GEO14MICRO_010",
+          "GEO14MICRO_011",
+          "GEO14MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "geo14-core-5",
@@ -114,7 +206,28 @@
         "GEO14MICRO_013",
         "GEO14MICRO_014",
         "GEO14MICRO_015"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Hai tam giác vuông có cạnh huyền và một cạnh góc vuông tương ứng bằng nhau thì bằng nhau (cạnh huyền–cạnh góc vuông). Phải xác nhận cả hai tam giác vuông trước; không áp dụng điều kiện đó tùy ý cho tam giác thường.",
+        "worked_example": {
+          "problem": "Tam giác ABC và DEF lần lượt vuông tại A và D, \\(BC=EF=13\\) cm, \\(AB=DE=5\\) cm. Kết luận hai tam giác có bằng nhau không?",
+          "solution": "Bước 1: BC và EF là các cạnh huyền, vì A và D là các góc vuông.\nBước 2: Hai cạnh huyền bằng nhau (13 cm), một cặp cạnh góc vuông tương ứng AB=DE=5 cm.\nBước 3: \\(\\triangle ABC=\\triangle DEF\\) theo cạnh huyền–cạnh góc vuông."
+        },
+        "misconception": "Quên nêu góc vuông hoặc nhầm cạnh huyền với cạnh góc vuông.",
+        "summary": "Chỉ áp dụng trường hợp cạnh huyền–cạnh góc vuông sau khi biết cả hai tam giác vuông.",
+        "source_reference": "docs/kien-thuc/14-tam-giac/index.md",
+        "source_sections": [
+          "3.8"
+        ],
+        "source_question_ids": [
+          "GEO14MICRO_013",
+          "GEO14MICRO_014",
+          "GEO14MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     }
   ],
   "extensions": [
@@ -138,5 +251,8 @@
     }
   ],
   "micro_practice_bank": "assets/data/practice/14-tam-giac-micro-v1.json",
-  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json"
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json",
+  "qa_notes": [
+    "New skill-coverage items appended; the original Base–Trap–Apply records and their IDs remain intact; source-linked teaching references only the first three."
+  ]
 }

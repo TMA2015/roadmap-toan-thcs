@@ -27,8 +27,32 @@
       "micro_practice": [
         "GEO13MICRO_001",
         "GEO13MICRO_002",
-        "GEO13MICRO_003"
-      ]
+        "GEO13MICRO_003",
+        "GEO13MICRO_016",
+        "GEO13MICRO_017",
+        "GEO13MICRO_018"
+      ],
+      "teaching_copy": {
+        "key_idea": "Qua hai điểm phân biệt có đúng một đường thẳng. Tia có một gốc và kéo dài vô hạn về một phía; hai tia đối nhau phải cùng gốc, cùng đường thẳng và ngược hướng. Đoạn \\(AB\\) có hai đầu mút. Nếu \\(M\\) nằm giữa A và B thì \\(AM+MB=AB\\); M là trung điểm cần thêm \\(AM=MB\\).",
+        "worked_example": {
+          "problem": "Ba điểm A, O, B thẳng hàng theo thứ tự A–O–B; \\(AO=3\\text{ cm}\\), \\(OB=3\\text{ cm}\\). Nêu quan hệ hai tia OA, OB và kết luận vị trí của O đối với AB.",
+          "solution": "Bước 1: OA và OB cùng gốc O, nằm trên đường thẳng AB và đi về hai phía ngược nhau, nên là hai tia đối nhau.\nBước 2: \\(AO+OB=6\\text{ cm}=AB\\) vì O nằm giữa A và B.\nBước 3: O vừa nằm giữa A, B vừa có \\(OA=OB\\), nên O là trung điểm AB."
+        },
+        "misconception": "Hai tia chỉ cùng gốc chưa chắc đối nhau; MA=MB một mình không chứng minh M là trung điểm nếu chưa biết M thuộc đoạn AB.",
+        "summary": "Tia đối nhau: cùng gốc–cùng đường–ngược hướng; trung điểm: nằm giữa và hai nửa bằng nhau.",
+        "source_reference": "docs/kien-thuc/13-goc-va-duong-thang/index.md",
+        "source_sections": [
+          "3.1"
+        ],
+        "source_question_ids": [
+          "GEO13MICRO_001",
+          "GEO13MICRO_002",
+          "GEO13MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "geo13-core-2",
@@ -54,8 +78,37 @@
       "micro_practice": [
         "GEO13MICRO_004",
         "GEO13MICRO_005",
-        "GEO13MICRO_006"
-      ]
+        "GEO13MICRO_006",
+        "GEO13MICRO_019",
+        "GEO13MICRO_020",
+        "GEO13MICRO_021",
+        "GEO13MICRO_022"
+      ],
+      "teaching_copy": {
+        "key_idea": "Góc có đỉnh và hai tia cạnh, số đo theo độ. Nhọn \\(0^\\circ<\\alpha<90^\\circ\\), vuông \\(90^\\circ\\), tù \\(90^\\circ<\\alpha<180^\\circ\\), bẹt \\(180^\\circ\\). Phụ nhau tổng \\(90^\\circ\\), bù nhau tổng \\(180^\\circ\\); kề bù còn phải kề nhau. Tia phân giác phải **nằm trong góc** và chia thành hai góc bằng nhau. Góc đối đỉnh chỉ hình thành khi hai đường thẳng cắt nhau, các cạnh từng cặp đối nhau.",
+        "worked_example": {
+          "problem": "Hai tia Ox và Oy đối nhau, tia Oz nằm trong góc bẹt xOy và \\(\\angle xOz=65^\\circ\\). Tính \\(\\angle zOy\\), phân loại góc xOz và nêu quan hệ hai góc xOz, zOy.",
+          "solution": "Bước 1: \\(\\angle xOy=180^\\circ\\) vì Ox, Oy là hai tia đối nhau.\nBước 2: \\(65^\\circ+\\angle zOy=180^\\circ\\), suy ra \\(\\angle zOy=115^\\circ\\).\nBước 3: xOz là góc nhọn; zOy là góc tù. Hai góc chung Oz, không chồng phần trong và có tổng \\(180^\\circ\\), nên kề bù."
+        },
+        "misconception": "Chỉ nhìn hai góc có tổng 180° rồi khẳng định kề bù; hoặc kết luận phân giác từ hai số đo bằng nhau mà chưa biết tia nằm bên trong.",
+        "summary": "Tên quan hệ góc cần cả vị trí tia và số đo, không chỉ dựa vào tổng số độ.",
+        "source_reference": "docs/kien-thuc/13-goc-va-duong-thang/index.md",
+        "source_sections": [
+          "3.2",
+          "3.3",
+          "3.4",
+          "3.5",
+          "3.6"
+        ],
+        "source_question_ids": [
+          "GEO13MICRO_004",
+          "GEO13MICRO_005",
+          "GEO13MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "geo13-core-3",
@@ -77,7 +130,30 @@
         "GEO13MICRO_007",
         "GEO13MICRO_008",
         "GEO13MICRO_009"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Góc so le trong nằm giữa hai đường và khác phía đường cắt; đồng vị cùng vị trí tương ứng; trong cùng phía nằm giữa hai đường và cùng phía đường cắt. Đây là **tên vị trí**, chưa tự suy ra bằng nhau khi chưa có giả thiết hai đường song song. Khi đã biết song song: so le trong/đồng vị bằng nhau, trong cùng phía bù nhau.",
+        "worked_example": {
+          "problem": "Đường cắt c gặp hai đường thẳng phân biệt a, b. Một góc trong cùng phía tại giao điểm với a bằng \\(112^\\circ\\). Nếu \\(a\\parallel b\\), góc trong cùng phía tương ứng tại giao điểm với b bằng bao nhiêu?",
+          "solution": "Bước 1: Xác định giả thiết \\(a\\parallel b\\) và hai góc **trong cùng phía** do c cắt.\nBước 2: Tính chất song song cho tổng hai góc là \\(180^\\circ\\).\nBước 3: Góc cần tìm \\(180^\\circ-112^\\circ=68^\\circ\\)."
+        },
+        "misconception": "Cứ thấy hai góc cùng tên thì cho bằng nhau; hai góc trong cùng phía của hai đường song song là hai góc bù nhau.",
+        "summary": "Nhận dạng vị trí trước; chỉ dùng tính chất góc sau khi có căn cứ song song.",
+        "source_reference": "docs/kien-thuc/13-goc-va-duong-thang/index.md",
+        "source_sections": [
+          "3.7",
+          "3.8",
+          "3.9"
+        ],
+        "source_question_ids": [
+          "GEO13MICRO_007",
+          "GEO13MICRO_008",
+          "GEO13MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "geo13-core-4",
@@ -100,7 +176,31 @@
         "GEO13MICRO_010",
         "GEO13MICRO_011",
         "GEO13MICRO_012"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Phân biệt chiều định lí: biết \\(a\\parallel b\\) thì suy ra quan hệ góc (tính chất); biết một cặp góc so le trong hoặc đồng vị bằng nhau, hay hai góc trong cùng phía bù nhau thì suy ra \\(a\\parallel b\\) (dấu hiệu). Hai đường phân biệt cùng vuông góc với một đường thứ ba thì song song. Qua điểm ngoài một đường thẳng chỉ có một đường song song với đường ấy.",
+        "worked_example": {
+          "problem": "Hai đường thẳng phân biệt a, b cùng vuông góc với c. Một đường d đi qua M ngoài a và song song a. Chứng minh b song song a và nêu tại sao chỉ có một đường thẳng đi qua M song song a.",
+          "solution": "Bước 1: Theo giả thiết, \\(a\\perp c,\\ b\\perp c\\) và a, b phân biệt.\nBước 2: Theo tính chất hai đường thẳng phân biệt cùng vuông góc với một đường thứ ba trong mặt phẳng, \\(a\\parallel b\\).\nBước 3: Theo tiên đề Euclid, qua M ở ngoài a có đúng một đường thẳng song song a; đó là d."
+        },
+        "misconception": "Sử dụng tính chất song song khi đang phải chứng minh song song, hoặc quên điều kiện hai đường phân biệt / điểm nằm ngoài đường.",
+        "summary": "Định lí đi từ giả thiết sang kết luận; xác định chính xác chiều suy luận.",
+        "source_reference": "docs/kien-thuc/13-goc-va-duong-thang/index.md",
+        "source_sections": [
+          "3.8",
+          "3.9",
+          "3.10",
+          "3.11"
+        ],
+        "source_question_ids": [
+          "GEO13MICRO_010",
+          "GEO13MICRO_011",
+          "GEO13MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "geo13-core-5",
@@ -122,7 +222,28 @@
         "GEO13MICRO_013",
         "GEO13MICRO_014",
         "GEO13MICRO_015"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Trong một định lí “Nếu P thì Q”, giả thiết là P, kết luận là Q. Một bước chứng minh cần nêu mệnh đề và căn cứ: giả thiết, định nghĩa, định lí đã học hoặc kết quả ở bước trước. Hình vẽ chỉ giúp định hướng, không tự tạo ra dữ kiện.",
+        "worked_example": {
+          "problem": "Cho \\(a\\parallel b\\) và \\(c\\perp a\\) (cùng trong mặt phẳng). Hãy trình bày ngắn gọn vì sao \\(c\\perp b\\), phân biệt giả thiết với kết luận.",
+          "solution": "Bước 1: Giả thiết (GT): \\(a\\parallel b,\\ c\\perp a\\).\nBước 2: Dùng tính chất đường thẳng vuông góc với một trong hai đường song song: \\(c\\perp b\\).\nBước 3: Kết luận (KL): \\(c\\perp b\\). Căn cứ là tính chất đã học, không phải do hình nhìn có vẻ vuông góc."
+        },
+        "misconception": "Viết kết luận vào cột giả thiết, hoặc nói chỉ vì hình vẽ có góc vuông mà chưa viện dẫn quan hệ đã cho.",
+        "summary": "Mỗi bước = mệnh đề + căn cứ; hình vẽ không thay lời chứng minh.",
+        "source_reference": "docs/kien-thuc/13-goc-va-duong-thang/index.md",
+        "source_sections": [
+          "3.12"
+        ],
+        "source_question_ids": [
+          "GEO13MICRO_013",
+          "GEO13MICRO_014",
+          "GEO13MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     }
   ],
   "extensions": [
@@ -153,6 +274,7 @@
   "qa_notes": [
     "All 21 mapped Core skill IDs are represented across cards.",
     "Text-first micro items avoid scale-dependent visual inference.",
-    "duong-vuong-goc and vuong-goc-song-song remain Core-Support in the current coverage matrix."
+    "duong-vuong-goc and vuong-goc-song-song remain Core-Support in the current coverage matrix.",
+    "Exactly one primary assessed skill per new question; original three Base–Trap–Apply records and teaching source IDs remain unchanged. Additional formative coverage does not certify mastery."
   ]
 }

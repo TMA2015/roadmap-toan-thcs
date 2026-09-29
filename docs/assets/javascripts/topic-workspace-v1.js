@@ -242,6 +242,62 @@ const SKILL_LABELS={
   "lap-pt-tu-nghiem":"Lập phương trình từ nghiệm",
   "dau-nghiem":"Xét dấu hai nghiệm",
   "lien-he-do-thi":"Liên hệ nghiệm với đồ thị"
+,
+  "diem-thuoc-duong":"Điểm thuộc / không thuộc đường thẳng",
+  "tia-doi":"Hai tia đối nhau",
+  "trung-diem":"Trung điểm đoạn thẳng",
+  "phan-loai-goc":"Phân loại góc",
+  "goc-phu-bu":"Góc phụ nhau – bù nhau",
+  "tia-phan-giac":"Tia phân giác",
+  "goc-doi-dinh":"Góc đối đỉnh",
+  "duong-vuong-goc":"Hai đường thẳng vuông góc",
+  "goc-so-le-trong":"Góc so le trong",
+  "goc-dong-vi":"Góc đồng vị",
+  "goc-trong-cung-phia":"Góc trong cùng phía",
+  "tinh-chat-song-song":"Tính chất hai đường thẳng song song",
+  "dau-hieu-song-song":"Dấu hiệu nhận biết song song",
+  "vuong-goc-song-song":"Quan hệ vuông góc – song song",
+  "diem-nam-giua":"Điểm nằm giữa hai điểm",
+  "tia":"Khái niệm tia",
+  "doan-thang-do-dai":"Đoạn thẳng và độ dài",
+  "khai-niem-goc":"Khái niệm góc",
+  "do-goc":"Số đo góc",
+  "nhan-dang-goc-dac-biet":"Nhận dạng góc ở vị trí đặc biệt",
+  "tien-de-euclid":"Tiên đề Euclid",
+  "gia-thiet-ket-luan":"Giả thiết – kết luận",
+  "lap-luan-chung-minh-ngan":"Lập luận chứng minh ngắn",
+  "phan-loai-tam-giac":"Phân loại tam giác",
+  "chu-vi-dien-tich":"Chu vi – diện tích tam giác",
+  "tong-goc-tam-giac":"Tổng ba góc trong tam giác",
+  "goc-ngoai":"Góc ngoài của tam giác",
+  "so-sanh-canh-goc":"Quan hệ cạnh – góc đối diện",
+  "bat-dang-thuc-tam-giac":"Bất đẳng thức tam giác",
+  "tam-giac-can":"Tam giác cân",
+  "tam-giac-deu":"Tam giác đều",
+  "pythagore":"Định lý Pythagore",
+  "pythagore-dao":"Định lý Pythagore đảo",
+  "bang-nhau-ccc":"Hai tam giác bằng nhau c.c.c",
+  "bang-nhau-cgc":"Hai tam giác bằng nhau c.g.c",
+  "bang-nhau-gcg":"Hai tam giác bằng nhau g.c.g",
+  "bang-nhau-tam-giac-vuong":"Bằng nhau của hai tam giác vuông",
+  "viet-tuong-ung-tam-giac-bang-nhau":"Viết đúng thứ tự tương ứng của hai tam giác bằng nhau",
+  "nhan-biet-trung-truc":"Nhận biết đường trung trực",
+  "cach-deu-dinh":"Tính chất cách đều ba đỉnh",
+  "tinh-chat-duong-trung-truc":"Tính chất và dấu hiệu đường trung trực",
+  "duong-vuong-goc-duong-xien":"Đường vuông góc và đường xiên",
+  "nhan-biet-trung-tuyen":"Nhận biết đường trung tuyến",
+  "trong-tam":"Trọng tâm",
+  "ti-so-trong-tam":"Tỉ số trọng tâm 2 : 1",
+  "nhan-biet-duong-cao":"Nhận biết đường cao",
+  "truc-tam":"Trực tâm",
+  "vi-tri-truc-tam":"Vị trí trực tâm",
+  "nhan-biet-phan-giac":"Nhận biết đường phân giác",
+  "tam-noi-tiep":"Tâm nội tiếp",
+  "cach-deu-canh":"Tính chất cách đều ba cạnh",
+  "tam-ngoai-tiep":"Tâm ngoại tiếp",
+  "vi-tri-tam-ngoai-tiep":"Vị trí tâm ngoại tiếp",
+  "phan-biet-bon-tam":"Phân biệt G – H – I – O",
+  "dong-quy-bon-duong-dac-biet":"Tính đồng quy của bốn họ đường đặc biệt"
 };
 const skillLabel=id=>SKILL_LABELS[id]||String(id||"").replaceAll("-"," ");
 const primarySkill=q=>{
@@ -559,7 +615,7 @@ const mountCoreGateway=(hero,config)=>{
 const init=()=>{
  const config=activeConfig();if(!config)return;
  const topicRoot="/kien-thuc/"+config.slug+"/";
- const hasStandaloneCore=["04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete"].includes(config.slug);
+ const hasStandaloneCore=["04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete","13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy"].includes(config.slug);
  const coreRoute=hasStandaloneCore&&(location.pathname.endsWith(topicRoot+"core/")||location.pathname.endsWith(topicRoot+"core/index.html"));
  if(coreRoute){
   const entry=document.querySelector("[data-topic-core-entry]");

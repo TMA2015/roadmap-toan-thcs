@@ -13,8 +13,8 @@ for(const cfg of [
  const row=cov.topics.find(x=>x.id===cfg.id), core=row.curriculum_core_skills;
  if(w.cards?.length!==5)errors.push(cfg.id+": 5 cards required");
  const cardSkills=w.cards.flatMap(c=>c.skills);if(new Set(cardSkills).size!==core.length||core.some(x=>!cardSkills.includes(x)))errors.push(cfg.id+": card Core coverage");
- if(m.question_count!==15||m.questions?.length!==15)errors.push(cfg.id+": 15 micro");
- const by=new Map(m.questions.map(q=>[q.id,q]));for(const c of w.cards){const qs=c.micro_practice.map(id=>by.get(id)).filter(Boolean);if(qs.length!==3||qs.map(q=>q.micro_role).join(",")!=="base,trap,apply")errors.push(c.id+": micro roles");}
+ if(m.question_count!==m.questions?.length||m.questions?.length!==w.cards.reduce((n,c)=>n+c.micro_practice.length,0))errors.push(cfg.id+": micro count must match linked items");
+ const by=new Map(m.questions.map(q=>[q.id,q]));for(const c of w.cards){const qs=c.micro_practice.map(id=>by.get(id)).filter(Boolean);if(qs.length<3||qs.length!==c.micro_practice.length||qs.slice(0,3).map(q=>q.micro_role).join(",")!=="base,trap,apply"||qs.slice(3).some(q=>q.micro_role!=="coverage"))errors.push(c.id+": micro roles");}
  for(const q of m.questions){if(q.tags?.skill?.length!==1||q.options?.length!==4||new Set(q.options).size!==4||!q.explanation||(q.hints||[]).length<2)errors.push(q.id+": quality");for(const [i] of Object.entries(q.option_evidence||{}))if(Number(i)===q.answer)errors.push(q.id+": correct option signal");}
  if(a.items?.length!==10||a.items.some(q=>q.type!=="mcq"||q.options?.length!==4||new Set(q.options).size!==4))errors.push(cfg.id+": readiness");
  if(a.policy?.feedback!=="after_submit"||a.policy?.hints!==false||a.policy?.tutor!==false||a.policy?.hard_gate!==false)errors.push(cfg.id+": readiness policy");
