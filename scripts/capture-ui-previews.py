@@ -118,6 +118,26 @@ with sync_playwright() as p:
         check(links.nth(2).get_attribute("href").endswith("/tu-kiem-tra/"), "self-check route " + row["url"])
         title = topic_page.locator(".topic-workspace-hero h1, .md-content__inner h1").first.inner_text()
         check(bool(title.strip()), "readable title for " + row["url"])
+        # Every published five-card workspace must open a self-contained modal.
+        # Probe without answering, so this sweep never writes learner evidence.
+        slug = urlparse(row["url"]).path.rstrip("/").split("/")[-1]
+        if slug not in ("01-ban-do-chuong-trinh", "03-ti-le-ti-le-thuc", "22-dai-luong-dac-trung"):
+            start_core = topic_page.locator("#core-journey .topic-micro-start").first
+            start_core.wait_for(state="visible", timeout=12000)
+            card = topic_page.locator("#core-journey .topic-core-card").first
+            original_height = card.bounding_box()["height"]
+            start_core.click()
+            core_modal = topic_page.locator(".topic-core-dialog")
+            check(core_modal.is_visible(), "Core modal opens on " + slug)
+            check(core_modal.locator(".topic-micro-option").count() >= 2, "real answer options on " + slug)
+            check(core_modal.locator(".topic-micro-options").evaluate(
+                "(el) => el.scrollWidth <= el.clientWidth + 2"), "Core answers do not overflow on " + slug)
+            check(topic_page.locator(".topic-core-card .topic-micro-panel").count() == 0,
+                  "Core never mounts inside a grid card on " + slug)
+            core_modal.locator(".topic-core-dialog__close").click()
+            check(not core_modal.is_visible(), "Core modal closes on " + slug)
+            check(abs(original_height - card.bounding_box()["height"]) < 2,
+                  "Core card does not expand/collapse on " + slug)
         practice_url = links.nth(1).get_attribute("href")
         self_check_url = links.nth(2).get_attribute("href")
         for subpath in (practice_url, self_check_url):
@@ -217,10 +237,22 @@ $$
     help_page.close()
     micro_page = desktop.new_page()
     micro_page.goto(BASE + "kien-thuc/04-bieu-thuc-dai-so/", wait_until="networkidle")
+    cards = micro_page.locator("#core-journey .topic-core-card")
+    original_boxes = [cards.nth(i).bounding_box() for i in range(cards.count())]
     micro_page.locator("#core-journey .topic-micro-start").first.click()
+    core_dialog = micro_page.locator(".topic-core-dialog")
+    check(core_dialog.is_visible(), "Core practice opens in its own dialog")
+    check(cards.count() == 5 and cards.nth(0).get_attribute("class") == "topic-core-card", "Core cards never stretch inline")
+    check(core_dialog.locator(".topic-micro-pager button").count() == 3, "per-question navigation")
+    check(core_dialog.locator(".topic-micro-option").first.evaluate("(el) => parseFloat(getComputedStyle(el).borderTopWidth) >= 1"), "visible answer boundaries")
+    check(core_dialog.locator(".topic-micro-tools > button").count() == 3, "three separate help buttons")
     micro_page.locator(".topic-micro-teach").first.click()
     check(micro_page.locator(".topic-micro-tutor").first.get_by_text("Mở kiến thức cốt lõi của chuyên đề").is_visible(), "missing card copy falls back to full lesson")
     check(micro_page.locator(".topic-micro-tutor").first.get_by_text("Đáp án trong ngân hàng").count() == 0, "reteaching does not reveal current question answer")
+    micro_page.locator(".topic-micro-teach").first.click()
+    check(micro_page.locator(".topic-micro-tutor").is_hidden(), "repeated teaching click collapses content")
+    micro_page.locator(".topic-micro-teach").first.click()
+    check(micro_page.locator(".topic-micro-tutor").is_visible(), "reteaching reopens after collapse")
     micro_page.locator(".topic-micro-reveal").first.click()
     micro_page.locator(".topic-micro-tutor button").filter(has_text="Tôi muốn xem lời giải ngay").first.click()
     check(micro_page.locator(".topic-micro-tutor").first.get_by_text("Đáp án trong ngân hàng").is_visible(), "micro full reveal after explicit choice")
@@ -229,6 +261,29 @@ $$
     micro_saved = micro_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1'))""")
     rec = micro_saved["questions"].get("ALG04MICRO_001", {})
     check(rec.get("full_solution_views") == 1 and rec.get("correct_without_hint", 0) == 0, "micro answer after reveal recorded only as assisted")
+    check(rec.get("attempted") == 1, "first answer recorded exactly once")
+    micro_page.locator(".topic-micro-pager button").nth(1).click()
+    check(micro_page.locator(".topic-micro-meta").inner_text().startswith("Câu 2/3"), "next question can be viewed before answering")
+    micro_page.locator(".topic-micro-pager button").first.click()
+    check(micro_page.locator(".topic-micro-options button").first.is_disabled(), "answered question remains locked within session")
+    unchanged = micro_page.evaluate("() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1')).questions.ALG04MICRO_001.attempted")
+    check(unchanged == 1, "revisiting answered question never double-counts")
+    core_dialog.locator(".topic-core-dialog__close").click()
+    check(not core_dialog.is_visible(), "close restores static card grid")
+    closed_boxes = [cards.nth(i).bounding_box() for i in range(cards.count())]
+    # Dialog focus/scroll restoration can move the viewport; compare dimensions
+    # and inter-card relative positions rather than viewport-absolute y.
+    check(all(before and after and abs(before["height"] - after["height"]) < 2
+              for before, after in zip(original_boxes, closed_boxes)), "Core card heights remain unchanged")
+    check(all(abs((before["y"] - original_boxes[0]["y"]) - (after["y"] - closed_boxes[0]["y"])) < 2
+              for before, after in zip(original_boxes, closed_boxes)), "Core card rows never shift or overlap")
+    check(micro_page.locator(".topic-core-card .topic-micro-panel").count() == 0,
+          "Core session must never be mounted inside a card")
+    micro_page.locator("#core-journey .topic-micro-start").first.click()
+    check(micro_page.locator(".topic-micro-options button").first.is_disabled(), "reopening same card retains current session")
+    check(micro_page.evaluate("() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1')).questions.ALG04MICRO_001.attempted") == 1,
+          "closing and reopening does not invent a new attempt")
+    shot(micro_page, "micro-04-dialog-reopen-desktop.png")
     micro_page.close()
 
     page.reload(wait_until="networkidle")
@@ -300,12 +355,13 @@ $$
           "zero custom elements inside native drawer")
     launcher.click()
     dialog = half_page.locator("[data-roadmap-topic-dialog]")
-    check(dialog.is_visible() and dialog.locator("nav a").count() == 25, "25-topic chooser")
-    check("23. Xác suất" in dialog.locator('nav a[aria-current="page"]').inner_text(), "active topic")
-    check("01." in dialog.locator("nav a").first.inner_text(), "topic list begins at 01")
-    check(dialog.locator("nav").evaluate("(n) => n.scrollTop") == 0, "fresh dialog starts unscrolled")
+    check(dialog.is_visible() and dialog.locator(".roadmap-topic-dialog__list a").count() == 25, "25-topic chooser")
+    check(dialog.locator(".roadmap-main-quick__links a").count() == 6, "six main destinations at half-width")
+    check("23. Xác suất" in dialog.locator('.roadmap-topic-dialog__list a[aria-current="page"]').inner_text(), "active topic")
+    check("01." in dialog.locator(".roadmap-topic-dialog__list a").first.inner_text(), "topic list begins at 01")
+    check(dialog.locator(".roadmap-topic-dialog__list").evaluate("(n) => n.scrollTop") == 0, "fresh dialog starts unscrolled")
     shot(half_page, "lesson-23-half-width-topic-chooser.png")
-    dialog.locator('nav a[href$="/24-bai-toan-thuc-te/"]').click()
+    dialog.locator('.roadmap-topic-dialog__list a[href$="/24-bai-toan-thuc-te/"]').click()
     check("/kien-thuc/24-bai-toan-thuc-te/" in half_page.url, "direct topic switch")
     half_page.locator('.md-header__button[for="__drawer"]').click()
     half_page.wait_for_timeout(550)
@@ -352,8 +408,9 @@ $$
     check(not first_phone.locator('input#__drawer').is_checked(), "phone drawer backdrop closes")
     first_phone.locator("[data-roadmap-topic-launcher]").click()
     chooser = first_phone.locator("[data-roadmap-topic-dialog]")
-    check(chooser.is_visible() and chooser.locator("nav a").count() == 25, "phone chooser has all 25 topics")
-    check("01." in chooser.locator("nav a").first.inner_text(), "phone chooser starts at 01")
+    check(chooser.is_visible() and chooser.locator(".roadmap-topic-dialog__list a").count() == 25, "phone chooser has all 25 topics")
+    check(chooser.locator(".roadmap-main-quick__links a").count() == 6, "phone chooser retains the six main groups")
+    check("01." in chooser.locator(".roadmap-topic-dialog__list a").first.inner_text(), "phone chooser starts at 01")
     shot(first_phone, "lesson-23-phone-topic-chooser.png")
     chooser.locator(".roadmap-topic-dialog__close").click()
     check(not chooser.is_visible(), "phone chooser closes and returns to lesson")
