@@ -290,31 +290,31 @@ $$
         if number == "01": shot(exam_page, "topic25-exam01-rubric-desktop.png")
     exam_page.close()
 
-    # Half-width desktop: the main destinations stay available inside the drawer.
+    # Tablet/half-width: a persistent launcher, without altering Material's nested lists.
     half = browser.new_context(viewport={"width": 880, "height": 900}, device_scale_factor=1)
     half_page = half.new_page()
     half_page.goto(BASE + "kien-thuc/23-xac-suat/", wait_until="networkidle")
     half_page.locator('.md-header__button[for="__drawer"]').click()
-    half_page.wait_for_timeout(550)  # Let Material's translated drawer settle before hit-testing.
-    active_shortcuts = half_page.evaluate("""() => {
-      const nodes = [...document.querySelectorAll(".md-sidebar--primary .roadmap-mobile-shortcuts")];
-      return nodes.findIndex(node => {
-        const r = node.getBoundingClientRect();
-        const x = r.left + Math.min(r.width/2, 80), y = r.top + 45;
-        return r.left >= 0 && r.right <= innerWidth && y > 0 && y < innerHeight &&
-          document.elementFromPoint(x,y)?.closest(".roadmap-mobile-shortcuts") === node;
-      });
-    }""")
-    check(active_shortcuts >= 0, "visible compact menu belongs to current Material drill-down")
-    quick = half_page.locator(".md-sidebar--primary .roadmap-mobile-shortcuts").nth(active_shortcuts).locator("a")
-    check(quick.count() == 6 and quick.first.is_visible(), "six global destinations in half-width drawer")
-    check(half_page.locator(".md-sidebar--primary .md-nav__link").count() > 6, "topic links remain in the drawer")
-    check([quick.nth(i).evaluate("(a) => a.lastChild.textContent.trim()") for i in range(6)] ==
-          ["Trang chủ", "Học theo lớp", "Roadmap", "AI Tutor", "Hướng dẫn", "Kiến thức"],
-          "compact navigation order and labels")
-    shot(half_page, "lesson-23-half-width-main-navigation.png")
+    half_page.wait_for_timeout(550)
+    shortcuts = half_page.locator(".md-sidebar--primary > .md-sidebar__scrollwrap > .roadmap-mobile-shortcuts")
+    check(shortcuts.count() == 1 and shortcuts.is_visible(), "one persistent launcher")
+    check(half_page.locator(".md-nav__list .roadmap-mobile-shortcuts").count() == 0, "native nav untouched")
+    check("23. Xác suất" in shortcuts.inner_text(), "current topic context")
+    shortcuts.locator(".roadmap-mobile-shortcuts__jump").click()
+    dialog = half_page.locator("[data-roadmap-topic-dialog]")
+    check(dialog.is_visible() and dialog.locator("nav a").count() == 25, "25-topic chooser")
+    check("23. Xác suất" in dialog.locator('nav a[aria-current="page"]').inner_text(), "active topic")
+    shot(half_page, "lesson-23-half-width-topic-chooser.png")
+    dialog.locator('nav a[href$="/24-bai-toan-thuc-te/"]').click()
+    check("/kien-thuc/24-bai-toan-thuc-te/" in half_page.url, "direct topic switch")
+    half_page.locator('.md-header__button[for="__drawer"]').click()
+    shortcuts = half_page.locator(".md-sidebar--primary > .md-sidebar__scrollwrap > .roadmap-mobile-shortcuts")
+    shortcuts.locator(".roadmap-mobile-shortcuts__more summary").click()
+    quick = shortcuts.locator(".roadmap-mobile-shortcuts__links a")
+    check(quick.count() == 6 and quick.first.is_visible(), "six global destinations")
+    shot(half_page, "lesson-24-half-width-main-navigation.png")
     quick.first.click()
-    check(half_page.url.rstrip("/") == BASE.rstrip("/"), "return to home in one drawer click")
+    check(half_page.url.rstrip("/") == BASE.rstrip("/"), "home from nested lesson")
     half.close()
 
     phone = browser.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=1,

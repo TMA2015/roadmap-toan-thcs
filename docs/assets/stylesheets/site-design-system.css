@@ -452,17 +452,35 @@ body{letter-spacing:-.008em}
 @media print{.anchor-browser,.exam-engine,.floating-ai{display:none!important}}
 
 
-/* Primary destinations remain one tap away in the Material drawer at half-width. */
+/* Single persistent drawer launcher, outside Material's translated nav lists. */
 .roadmap-mobile-shortcuts{display:none}
 @media(max-width:76.24rem){
- .md-sidebar--primary .roadmap-mobile-shortcuts{display:block;position:relative;z-index:1;margin:.25rem 0 .8rem;padding:.65rem .55rem;border:1px solid var(--roadmap-line);border-radius:.65rem;background:var(--roadmap-soft);box-shadow:0 6px 16px rgba(23,49,97,.09)}
- .roadmap-mobile-shortcuts__title{display:block;margin:.1rem .3rem .5rem;color:var(--roadmap-muted);font-size:.64rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
- .roadmap-mobile-shortcuts__links{display:grid;gap:.18rem}
- .roadmap-mobile-shortcuts__link{display:flex;align-items:center;gap:.55rem;min-height:2.45rem;padding:.5rem .6rem;border-radius:.42rem;color:var(--roadmap-ink)!important;font-size:.78rem;font-weight:680;text-decoration:none!important}
- .roadmap-mobile-shortcuts__link:hover,.roadmap-mobile-shortcuts__link:focus-visible,.roadmap-mobile-shortcuts__link[aria-current="page"]{background:var(--roadmap-surface);color:var(--roadmap-indigo)!important}
- .roadmap-mobile-shortcuts__link:focus-visible{outline:2px solid var(--roadmap-indigo);outline-offset:1px}
- .roadmap-mobile-shortcuts__icon{display:inline-flex;align-items:center;justify-content:center;flex:0 0 1.25rem;font-size:.9rem}
+ html{scroll-behavior:auto}
+ .md-sidebar--primary > .md-sidebar__scrollwrap{overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch}
+ .md-sidebar--primary > .md-sidebar__scrollwrap > .roadmap-mobile-shortcuts{display:block;position:sticky;top:0;z-index:6;margin:0;padding:.55rem .65rem .35rem;background:var(--roadmap-surface);border-bottom:1px solid var(--roadmap-line);box-shadow:0 4px 12px rgba(23,49,97,.05)}
+ .roadmap-mobile-shortcuts__row{display:flex;align-items:center;gap:.4rem}
+ .roadmap-mobile-shortcuts__jump,.roadmap-mobile-shortcuts__home{display:inline-flex;align-items:center;justify-content:center;min-height:2.5rem;padding:.45rem .5rem;border:1px solid var(--roadmap-line);border-radius:.5rem;font-size:.72rem;font-weight:750;line-height:1.3;text-decoration:none!important;cursor:pointer}
+ .roadmap-mobile-shortcuts__jump{flex:1;min-width:0;color:var(--roadmap-ink);background:var(--roadmap-soft)}
+ .roadmap-mobile-shortcuts__home{flex:none;color:var(--roadmap-indigo)!important;background:var(--roadmap-surface)}
+ .roadmap-mobile-shortcuts__context{display:block;margin:.35rem .15rem 0;color:var(--roadmap-muted);font-size:.63rem;line-height:1.4}
+ .roadmap-mobile-shortcuts__more{margin:.3rem .1rem 0;border:0;background:transparent;box-shadow:none}
+ .roadmap-mobile-shortcuts__more>summary{list-style:revert;min-height:1.6rem;padding:.15rem .25rem;cursor:pointer;color:var(--roadmap-indigo);font-size:.67rem;font-weight:750}
+ .roadmap-mobile-shortcuts__links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.22rem;padding:.32rem 0 .48rem}
+ .roadmap-mobile-shortcuts__link{display:block;min-height:2.25rem;padding:.45rem .4rem;border-radius:.4rem;background:var(--roadmap-soft);font-size:.68rem;font-weight:700;color:var(--roadmap-ink)!important;text-decoration:none!important}
+ .roadmap-mobile-shortcuts__link[aria-current="page"]{color:var(--roadmap-indigo)!important;outline:1px solid var(--roadmap-indigo)}
+ .roadmap-mobile-shortcuts :is(a,button,summary):focus-visible{outline:2px solid var(--roadmap-indigo);outline-offset:2px}
 }
+.roadmap-topic-dialog{box-sizing:border-box;width:min(26rem,calc(100vw - 1.25rem));max-width:26rem;max-height:calc(100dvh - 2rem);padding:.9rem;border:1px solid var(--roadmap-line);border-radius:.8rem;background:var(--roadmap-surface);color:var(--roadmap-ink);box-shadow:0 18px 45px rgba(0,0,0,.22)}
+.roadmap-topic-dialog:not([open]){display:none}
+.roadmap-topic-dialog::backdrop{background:rgba(11,20,43,.6)}
+.roadmap-topic-dialog__heading{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.roadmap-topic-dialog__heading h2{margin:0;font-size:1rem;line-height:1.3;color:var(--roadmap-ink)}
+.roadmap-topic-dialog__close{flex:none;min-height:2.4rem;padding:.4rem .55rem;border:1px solid var(--roadmap-line);border-radius:.4rem;background:var(--roadmap-soft);color:var(--roadmap-ink);font:inherit;font-size:.69rem;cursor:pointer}
+.roadmap-topic-dialog__hint{margin:.45rem 0 .65rem;color:var(--roadmap-muted);font-size:.71rem;line-height:1.45}
+.roadmap-topic-dialog__list{display:grid;gap:.3rem;max-height:calc(100dvh - 11rem);overflow-y:auto;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch}
+.roadmap-topic-dialog__list a{display:block;padding:.55rem .65rem;min-height:2.4rem;box-sizing:border-box;border-radius:.42rem;background:var(--roadmap-soft);color:var(--roadmap-ink)!important;font-size:.75rem;font-weight:650;text-decoration:none!important}
+.roadmap-topic-dialog__list a[aria-current="page"]{border:1px solid var(--roadmap-indigo);color:var(--roadmap-indigo)!important;font-weight:800}
+.roadmap-topic-dialog :is(a,button):focus-visible{outline:2px solid var(--roadmap-indigo);outline-offset:2px}
 
 /* Advisory skill graph: scoped to lesson pages, no hard-lock UI. */
 .skill-connections{margin:1.2rem 0 1.6rem;padding:1rem 1.15rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:.85rem;background:var(--md-code-bg-color);color:var(--md-default-fg-color)}
