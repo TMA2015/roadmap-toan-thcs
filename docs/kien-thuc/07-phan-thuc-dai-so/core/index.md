@@ -19,3 +19,4 @@ title: "Core theo chặng · CĐ07"
 
 !!! note "Kỹ năng và mức bao phủ"
     Trong cả hai cửa sổ, tag cho biết kỹ năng của chặng và kỹ năng chính của từng câu. Nếu một kỹ năng chưa có câu riêng, hệ thống hiển thị rõ — không tính là đã luyện và không đổi nhãn các câu khác để lấp chỗ trống.
+    Một câu riêng chỉ cho biết kỹ năng đó đã có cơ hội thực hành; **không có nghĩa học sinh đã thành thạo**. Số câu ở mỗi chặng có thể khác nhau tùy số kỹ năng và mức độ khó.

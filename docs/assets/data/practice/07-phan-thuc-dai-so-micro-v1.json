@@ -6,7 +6,7 @@
     "id": "07-phan-thuc-dai-so",
     "title": "Phân thức đại số"
   },
-  "question_count": 15,
+  "question_count": 17,
   "questions": [
     {
       "id": "RAT07MICRO_001",
@@ -736,6 +736,98 @@
         "phan-tich-tu-mau",
         "rut-gon-phan-thuc"
       ]
+    },
+    {
+      "id": "RAT07MICRO_016",
+      "card_id": "pt07-core-1",
+      "micro_role": "coverage",
+      "question": "So sánh \\(A=\\frac{x^2-4}{x-2}\\) và \\(B=x+2\\). Khẳng định nào đúng?",
+      "options": [
+        "\\(A=B\\) với mọi \\(x\\ne2\\).",
+        "\\(A=B\\) với mọi số thực \\(x\\), kể cả \\(x=2\\).",
+        "\\(A=B\\) chỉ khi \\(x=0\\).",
+        "\\(A\\ne B\\) với mọi \\(x\\ne2\\)."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "hai-phan-thuc-bang-nhau"
+        ],
+        "type": "so-sanh-phan-thuc-co-dkxd",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Vì \\(x^2-4=(x-2)(x+2)\\), với \\(x\\ne2\\) ta có \\(A=x+2=B\\). Tại \\(x=2\\), \\(A\\) không xác định dù \\(B\\) vẫn có giá trị, nên không được kết luận hai biểu thức bằng nhau ở đó.",
+      "hints": [
+        "Xét điều kiện của mẫu \\(x-2\\) trước, rồi phân tích tử thành nhân tử.",
+        "Áp dụng hiệu hai bình phương \\(x^2-4=(x-2)(x+2)\\), và nhớ giữ điều kiện ban đầu."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [
+        "dieu-kien-xac-dinh"
+      ],
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE07-MICRO-PLUS2-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "RAT07MICRO_017",
+      "card_id": "pt07-core-2",
+      "micro_role": "coverage",
+      "question": "Khi chuẩn bị rút gọn phân thức \\(P=\\frac{x^2-25}{x^2+10x+25}\\), cách phân tích cả tử và mẫu thành nhân tử nào đúng?",
+      "options": [
+        "\\(\\frac{(x-5)(x+5)}{(x+5)^2}\\)",
+        "\\(\\frac{(x-5)^2}{(x+5)^2}\\)",
+        "\\(\\frac{(x-5)(x+5)}{(x-5)^2}\\)",
+        "\\(\\frac{x^2-25}{(x+5)}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "phan-tich-tu-mau"
+        ],
+        "type": "phan-tich-ca-tu-va-mau",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Dùng hiệu hai bình phương: \\(x^2-25=(x-5)(x+5)\\); dùng bình phương của một tổng: \\(x^2+10x+25=(x+5)^2\\). Điều kiện của phân thức gốc là \\(x\\ne-5\\), phải giữ nguyên nếu rút gọn sau đó.",
+      "hints": [
+        "Tử là hiệu hai bình phương; mẫu có dạng bình phương của một tổng.",
+        "Tìm hai số có bình phương là \\(x^2\\) và \\(25\\), rồi xét dấu của hạng tử giữa \\(10x\\)."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE07-MICRO-PLUS2-SELF-AUDIT-20260929.md"
+      }
     }
   ]
 }

@@ -5,12 +5,13 @@ const base="docs/assets/data/curriculum/topic07-learning-workspace.json";
 const packet=read("content-staging/reviews/MATH-CORE07-TEACH-R1-20260929.json");
 const workspace=read(base),bank=read("docs/assets/data/practice/07-phan-thuc-dai-so-micro-v1.json");
 const expected=new Map(packet.cards.map(c=>[c.id,c]));
-assert(workspace.cards.length===5 && expected.size===5 && bank.questions.length===15,"source locked five cards / fifteen items");
+assert(workspace.cards.length===5 && expected.size===5 && bank.questions.length===17,"five reviewed teaching copies; original fifteen plus two self-audited items");
 const questionIds=new Set(bank.questions.map(q=>q.id));
 for(const card of workspace.cards){
  const source=expected.get(card.id),copy=card.teaching_copy;
  assert(source && copy,"missing teaching card "+card.id);
- assert(JSON.stringify(card.micro_practice)===JSON.stringify(source.question_ids),"micro ID drift "+card.id);
+ assert(JSON.stringify(card.micro_practice.slice(0,source.question_ids.length))===JSON.stringify(source.question_ids),"original three source-locked IDs drift "+card.id);
+ assert(JSON.stringify(copy.source_question_ids)===JSON.stringify(source.question_ids),"approved lecture provenance drift "+card.id);
  assert(card.micro_practice.every(id=>questionIds.has(id)),"missing question "+card.id);
  for(const name of ["key_idea","misconception","summary","source_reference","review_status"])
    assert(typeof copy[name]==="string"&&copy[name].trim(),"missing "+name+" for "+card.id);

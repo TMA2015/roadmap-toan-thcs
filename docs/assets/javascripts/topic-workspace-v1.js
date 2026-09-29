@@ -267,7 +267,7 @@ const mountMicro=(host,card,questions,graph)=>{
   skill.dataset.primarySkill=assessed||"unmapped";
   skill.textContent="Kỹ năng chính của câu: "+(assessed?skillLabel(assessed):"Chưa có tag kỹ năng cần rà soát");
   const meta=document.createElement("div");meta.className="topic-micro-meta";
-  meta.textContent="Câu "+(index+1)+"/"+questions.length+" · "+(q.micro_role==="base"?"Nền tảng":q.micro_role==="trap"?"Bẫy sai điển hình":"Vận dụng");
+  meta.textContent="Câu "+(index+1)+"/"+questions.length+" · "+(q.micro_role==="base"?"Nền tảng":q.micro_role==="trap"?"Bẫy sai điển hình":q.micro_role==="coverage"?"Bổ sung kỹ năng":"Vận dụng");
   const pager=document.createElement("nav");pager.className="topic-micro-pager";pager.setAttribute("aria-label","Chọn câu hỏi");
   records.forEach((record,i)=>{
    const b=make("Câu "+(i+1)+(record.selected===null?"":" ✓"),"topic-micro-page",()=>{index=i;render()});

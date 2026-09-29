@@ -85,13 +85,15 @@ for (const cfg of configs) {
   if (workspace.topic!==cfg.slug) errors.push(`CĐ${cfg.num}: workspace topic mismatch`);
   if (!Array.isArray(workspace.cards)||workspace.cards.length<4) errors.push(`CĐ${cfg.num}: workspace needs coherent Core cards`);
   const byId=new Map((micro.questions||[]).map(q=>[q.id,q]));
-  if ((micro.questions||[]).length!==workspace.cards.length*3) errors.push(`CĐ${cfg.num}: expected exactly 3 micro items per card`);
+  if ((micro.questions||[]).length!==workspace.cards.reduce((sum,c)=>sum+(c.micro_practice||[]).length,0)) errors.push(`CĐ${cfg.num}: micro bank size must equal linked Core item count`);
   for (const card of workspace.cards||[]) {
     for (const skill of card.skills||[]) if (cfg.forbidden.includes(skill)) errors.push(`CĐ${cfg.num} ${card.id}: forbidden Core skill ${skill}`);
     const qs=(card.micro_practice||[]).map(id=>byId.get(id)).filter(Boolean);
-    if (qs.length!==3) errors.push(`CĐ${cfg.num} ${card.id}: expected 3 micro items`);
-    if (qs.map(q=>q.micro_role).join(",")!=="base,trap,apply") errors.push(`CĐ${cfg.num} ${card.id}: expected base,trap,apply order`);
+    if (qs.length<3 || qs.length!==(card.micro_practice||[]).length) errors.push(`CĐ${cfg.num} ${card.id}: expected at least three valid micro items`);
+    if (qs.slice(0,3).map(q=>q.micro_role).join(",")!=="base,trap,apply") errors.push(`CĐ${cfg.num} ${card.id}: original base,trap,apply order must remain`);
+    if (qs.slice(3).some(q=>q.micro_role!=="coverage")) errors.push(`CĐ${cfg.num} ${card.id}: added items must be labelled coverage`);
     for (const q of qs) {
+      if (q.card_id!==card.id) errors.push(`CĐ${cfg.num} ${q.id}: card association mismatch`);
       if (!Array.isArray(q.tags?.skill)||q.tags.skill.length!==1) errors.push(`CĐ${cfg.num} ${q.id}: exactly one assessed skill required`);
       const skill=q.tags?.skill?.[0];
       if (!(card.skills||[]).includes(skill)) errors.push(`CĐ${cfg.num} ${q.id}: assessed skill not declared by card`);
