@@ -22,3 +22,7 @@ Website dùng MkDocs Material, triển khai bằng GitHub Pages.
 ## Nguồn quy tắc học thuật
 
 [Master Plan v1.1.1](governance/TOAN_THCS_MASTER_PLAN.md) là nguồn chuẩn cho nguyên tắc dài hạn; [hướng dẫn học sinh và phụ huynh](docs/huong-dan/phuong-phap-tu-hoc-va-danh-gia.md) là bản diễn giải công khai. Hồ sơ Batch và QA theo phiên bản được lưu riêng, không đưa tiến độ ngắn hạn vào Master Plan.
+
+## Bàn giao khi chuyển cuộc trò chuyện
+
+[Project Handoff hiện hành](docs/collaboration/current-handoff.md) ghi công việc vừa hoàn thành, quyết định đã duyệt và điểm nối. Luôn so sánh với GitHub `main` trước khi tiếp tục.
