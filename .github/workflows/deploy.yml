@@ -37,6 +37,7 @@ jobs:
           node scripts/test-core08-12-teaching-rollout.js
           node scripts/test-core13-15-geometry-rollout.js
           node scripts/test-core16-18-geometry-rollout.js
+          node scripts/test-core19-r2-release.js
           node scripts/test-core-soft-card-style.js
           node scripts/test-core07-teaching-coverage.js --release
 
