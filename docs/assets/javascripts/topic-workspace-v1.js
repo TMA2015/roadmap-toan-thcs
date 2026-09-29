@@ -298,6 +298,50 @@ const SKILL_LABELS={
   "vi-tri-tam-ngoai-tiep":"Vị trí tâm ngoại tiếp",
   "phan-biet-bon-tam":"Phân biệt G – H – I – O",
   "dong-quy-bon-duong-dac-biet":"Tính đồng quy của bốn họ đường đặc biệt"
+,
+  "tong-goc-tu-giac":"Tổng các góc trong tứ giác",
+  "hinh-thang":"Hình thang",
+  "hinh-thang-can":"Hình thang cân",
+  "hbh-tinh-chat":"Tính chất hình bình hành",
+  "hbh-dau-hieu":"Dấu hiệu hình bình hành",
+  "hcn-tinh-chat":"Tính chất hình chữ nhật",
+  "hcn-dau-hieu":"Dấu hiệu hình chữ nhật",
+  "hthoi-tinh-chat":"Tính chất hình thoi",
+  "hthoi-dau-hieu":"Dấu hiệu hình thoi",
+  "hvuong-tinh-chat":"Tính chất hình vuông",
+  "hvuong-dau-hieu":"Dấu hiệu hình vuông",
+  "quan-he-bao-ham":"Quan hệ bao hàm giữa các tứ giác đặc biệt",
+  "duong-cheo-suy-luan":"Suy luận từ tính chất đường chéo",
+  "thales-thuan":"Thales thuận",
+  "thales-dao":"Thales đảo",
+  "ti-le-doan-thang":"Tỉ lệ các đoạn thẳng",
+  "duong-trung-binh":"Đường trung bình tam giác",
+  "nhan-biet-dong-dang":"Nhận biết tam giác đồng dạng",
+  "dong-dang-gg":"Đồng dạng g-g",
+  "dong-dang-cgc":"Đồng dạng c-g-c",
+  "dong-dang-ccc":"Đồng dạng c-c-c",
+  "thu-tu-tuong-ung":"Thứ tự đỉnh tương ứng",
+  "tinh-do-dai-dong-dang":"Tính độ dài bằng đồng dạng",
+  "ti-so-chu-vi":"Tỉ số chu vi",
+  "ti-so-dien-tich":"Tỉ số diện tích",
+  "he-thuc-tich":"Hệ thức tích từ đồng dạng",
+  "ket-hop-song-song-dong-dang":"Kết hợp song song – đồng dạng",
+  "tinh-chat-duong-phan-giac":"Tính chất đường phân giác trong tam giác",
+  "hinh-dong-dang":"Hình đồng dạng",
+  "canh-huyen":"Cạnh huyền – cạnh góc vuông",
+  "he-thuc-canh":"Hệ thức cạnh góc vuông",
+  "he-thuc-duong-cao":"Hệ thức đường cao",
+  "dien-tich-duong-cao":"Diện tích và đường cao",
+  "doi-ke-huyen":"Nhận biết cạnh đối – kề – huyền",
+  "sin":"Tỉ số sin",
+  "cos":"Tỉ số cos",
+  "tan":"Tỉ số tan",
+  "tim-canh-luong-giac":"Tìm cạnh bằng lượng giác",
+  "tim-goc-luong-giac":"Tìm góc bằng lượng giác",
+  "goc-nang-ha":"Góc nâng – góc hạ",
+  "chieu-cao-khoang-cach":"Chiều cao – khoảng cách",
+  "ket-hop-he-thuc":"Kết hợp hệ thức lượng",
+  "cot":"Tỉ số cot"
 };
 const skillLabel=id=>SKILL_LABELS[id]||String(id||"").replaceAll("-"," ");
 const primarySkill=q=>{
@@ -615,7 +659,7 @@ const mountCoreGateway=(hero,config)=>{
 const init=()=>{
  const config=activeConfig();if(!config)return;
  const topicRoot="/kien-thuc/"+config.slug+"/";
- const hasStandaloneCore=["04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete","13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy"].includes(config.slug);
+ const hasStandaloneCore=["04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete","13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy","16-tu-giac","17-thales-dong-dang","18-he-thuc-luong"].includes(config.slug);
  const coreRoute=hasStandaloneCore&&(location.pathname.endsWith(topicRoot+"core/")||location.pathname.endsWith(topicRoot+"core/index.html"));
  if(coreRoute){
   const entry=document.querySelector("[data-topic-core-entry]");

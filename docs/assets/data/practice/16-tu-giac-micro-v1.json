@@ -6,7 +6,7 @@
     "id": "16-tu-giac",
     "title": "Tứ giác và các hình đặc biệt"
   },
-  "question_count": 15,
+  "question_count": 16,
   "questions": [
     {
       "id": "GEO16MICRO_001",
@@ -636,6 +636,60 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO16MICRO_016",
+      "card_id": "geo16-core-5",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [
+        "ABCD là hình chữ nhật",
+        "AB=BC"
+      ],
+      "target": "hvuong-dau-hieu",
+      "question": "Cho ABCD là hình chữ nhật và \\(AB=BC\\). Kết luận nào chắc chắn đúng?",
+      "options": [
+        "ABCD là hình vuông.",
+        "ABCD chỉ là hình thoi, không thể là hình chữ nhật.",
+        "ABCD chắc chắn không phải hình thoi.",
+        "Không thể kết luận ABCD là hình vuông."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tu-giac",
+        "skill": [
+          "hvuong-dau-hieu"
+        ],
+        "type": "nhan-biet-hinh-vuong-tu-hcn",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Hình chữ nhật có hai cạnh kề bằng nhau là hình vuông. Theo giả thiết ABCD là hình chữ nhật, AB và BC là hai cạnh kề; AB=BC là dấu hiệu đủ, không cần nhìn hình.",
+      "hints": [
+        "Tìm xem giả thiết đã khẳng định ABCD thuộc loại hình nào.",
+        "Trong hình chữ nhật, hai cạnh kề bằng nhau là một dấu hiệu nhận biết hình vuông."
+      ],
+      "supporting_skills": [
+        "hcn-tinh-chat",
+        "quan-he-bao-ham"
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
       }
     }
   ]
