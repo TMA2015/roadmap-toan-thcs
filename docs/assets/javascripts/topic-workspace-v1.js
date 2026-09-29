@@ -298,21 +298,46 @@ const renderCoreCards=async(hero,config)=>{
   const [microRes,graphRes]=await Promise.all([fetch(siteAsset(data.micro_practice_bank)),fetch(siteAsset(KG_DATA))]);
   const micro=microRes.ok?await microRes.json():{questions:[]};const graph=graphRes.ok?await graphRes.json():null;const byId=new Map((micro.questions||[]).map(q=>[q.id,q]));
   const host=document.createElement("section");host.className="topic-core-journey";host.id="core-journey";
-  host.innerHTML=`<div class="topic-core-journey-head"><div><span class="topic-workspace-kicker">${data.learning_layer_label||"KNTT Core"} · ${data.cards.length} chặng học</span><h2>Học theo chặng, kiểm tra ngay</h2></div><span class="topic-chip">${data.cards.length*3} câu kiểm tra nhanh</span></div>`;
+  const totalQuestions=(data.cards||[]).reduce((sum,c)=>sum+(c.micro_practice||[]).length,0);
+  host.innerHTML='<div class="topic-core-journey-head"><div><span class="topic-workspace-kicker">'+(data.learning_layer_label||"KNTT Core")+' · '+data.cards.length+' chặng học</span><h2>Học theo chặng · Thực hành ngắn</h2></div><span class="topic-chip">'+totalQuestions+' câu thực hành</span></div>';
   const grid=document.createElement("div");grid.className="topic-core-card-grid";
-  data.cards.forEach((card,i)=>{const el=document.createElement("article");el.className="topic-core-card";el.dataset.cardId=card.id;
-    const prereqNames=(card.prerequisites||[]).map(skillLabel);
-    const pre=prereqNames.length?`<div class="topic-core-prereq topic-core-prereq-full">Nền tảng: ${prereqNames.join(" · ")}</div><div class="topic-core-prereq topic-core-prereq-compact" title="Nền tảng: ${prereqNames.join(" · ")}">Nền tảng: ${prereqNames.length} kỹ năng</div>`:"<div class=\"topic-core-prereq topic-core-prereq-empty\">Nền tảng: —</div>";
-    el.innerHTML=`<div class="topic-core-card-main"><div class="topic-core-card-top"><span class="topic-core-card-number">${i+1}</span><span class="topic-core-card-lesson">${(card.kntt_lessons||[]).join(" · ")}</span></div><h3>${card.title}</h3>${pre}<div class="topic-core-card-meta"><span>${card.skills.length} kỹ năng</span><span>3 câu nhanh</span></div><button type="button" class="practice-btn topic-micro-start">✏️ Thử 3 câu</button></div><div class="topic-micro-mount"></div>`;
-    if(card.teaching_copy){
-      const copy=card.teaching_copy,details=document.createElement("details");details.className="topic-card-learn-copy";
-      const sum=document.createElement("summary");sum.textContent="📘 Kiến thức & ví dụ mẫu";details.appendChild(sum);
-      const field=(heading,value)=>{const block=document.createElement("div");block.className="topic-card-learn-field";const h=document.createElement("strong");h.textContent=heading;const p=document.createElement("p");p.textContent=value||"";block.append(h,p);details.appendChild(block)};
-      field("Cốt lõi",copy.key_idea);field("Ví dụ",copy.worked_example?.problem);field("Lời giải",copy.worked_example?.solution);field("Lỗi thường gặp",copy.misconception);field("Ghi nhớ",copy.summary);
-      el.querySelector(".topic-core-card-main h3").after(details);
-    }
-    const btn=el.querySelector(".topic-micro-start");const mount=el.querySelector(".topic-micro-mount");btn.onclick=()=>{const open=el.classList.toggle("is-active");btn.textContent=open?"Đóng":"✏️ Thử 3 câu";if(open&&!mount.dataset.loaded){const qs=(card.micro_practice||[]).map(id=>byId.get(id)).filter(Boolean);mount.dataset.loaded="1";mountMicro(mount,card,qs,graph)}};
-    grid.appendChild(el)});
+  const dialog=document.createElement("dialog");dialog.className="topic-core-dialog";
+  dialog.setAttribute("aria-labelledby","topic-core-dialog-title");
+  const head=document.createElement("div");head.className="topic-core-dialog__head";
+  const title=document.createElement("h2");title.id="topic-core-dialog-title";
+  const close=document.createElement("button");close.type="button";close.className="practice-btn topic-core-dialog__close";
+  close.textContent="Đóng ✕";close.setAttribute("aria-label","Đóng cửa sổ thực hành");
+  close.addEventListener("click",()=>dialog.close());
+  head.append(title,close);
+  const body=document.createElement("div");body.className="topic-core-dialog__body";
+  dialog.append(head,body);host.appendChild(dialog);
+  dialog.addEventListener("click",event=>{if(event.target===dialog)dialog.close()});
+  let returnFocus=null;
+  dialog.addEventListener("close",()=>{if(returnFocus?.isConnected)returnFocus.focus();returnFocus=null});
+  const sessions=new Map();
+  const openCard=(card,button)=>{
+   const qs=(card.micro_practice||[]).map(id=>byId.get(id)).filter(Boolean);
+   if(!sessions.has(card.id)){
+    const panel=document.createElement("div");mountMicro(panel,card,qs,graph);sessions.set(card.id,panel);
+   }
+   title.textContent=card.title+" · "+qs.length+" câu thực hành";
+   body.replaceChildren(sessions.get(card.id));
+   body.scrollTop=0;returnFocus=button;
+   if(!dialog.open)dialog.showModal();
+   close.focus();
+  };
+  data.cards.forEach((card,i)=>{
+   const el=document.createElement("article");el.className="topic-core-card";el.dataset.cardId=card.id;
+   const prereqNames=(card.prerequisites||[]).map(skillLabel);
+   const pre=prereqNames.length?
+    '<div class="topic-core-prereq topic-core-prereq-full">Nền tảng: '+prereqNames.join(" · ")+'</div><div class="topic-core-prereq topic-core-prereq-compact">Nền tảng: '+prereqNames.length+' kỹ năng</div>':
+    '<div class="topic-core-prereq topic-core-prereq-empty">Nền tảng: —</div>';
+   const count=(card.micro_practice||[]).length;
+   el.innerHTML='<div class="topic-core-card-main"><div class="topic-core-card-top"><span class="topic-core-card-number">'+(i+1)+'</span><span class="topic-core-card-lesson">'+(card.kntt_lessons||[]).join(" · ")+'</span></div><h3>'+card.title+'</h3>'+pre+'<div class="topic-core-card-meta"><span>'+card.skills.length+' kỹ năng</span><span>'+count+' câu thực hành</span></div><button type="button" class="practice-btn topic-micro-start">✏️ Mở chặng học</button></div>';
+   if(card.teaching_copy){el.dataset.hasTeachingCopy="1"}
+   el.querySelector(".topic-micro-start").addEventListener("click",event=>openCard(card,event.currentTarget));
+   grid.appendChild(el);
+  });
   host.appendChild(grid);
   if((data.extensions||[]).length){const ext=document.createElement("details");ext.className="topic-extension-zone";ext.innerHTML='<summary>🚀 Entrance10 / Challenge <span>không tính vào hoàn thành KNTT Core</span></summary><div class="topic-extension-list">'+(data.extensions||[]).map(x=>`<span class="topic-chip">${x.layer}: ${x.title}</span>`).join("")+"</div>";host.appendChild(ext);}
   const staticJourneyAnchor=document.getElementById("core-journey");
