@@ -11,7 +11,7 @@ ok(bank.questions.length===17&&bank.question_count===17&&w.cards.length===5,"fiv
 ok(JSON.stringify(bank.questions.slice(15).map(x=>x.id))===JSON.stringify(["GEO19MICRO_016","GEO19MICRO_017"]),"append-only canonical ID");
 const proof="content-staging/reviews/MATH-CORE19-R2-RELEASE-RECONCILIATION-20260929.md",receipt=read(proof);
 ok(receipt.includes("358a0461ea70ee587432d1ad8773c52973edfa8a")&&receipt.includes("targeted R2"),"review provenance");
-const frozen=receipt.split("### NO SUCH SECTION"); // The fenced source below is used as exact reviewer-candidate copy.
+// The fenced R2 source below is the frozen candidate copy for comparison.
 const textSource=receipt.split("```text\n")[1]?.split("\n```")[0];
 ok(textSource?.includes("CARD geo19-core-1")&&textSource.includes("GEO19MICRO_017"),"R2 source excerpt exists");
 const sourceCard=id=>{const c=textSource.split("CARD "+id+" — NEW CANDIDATE, NOT DEPLOYED\n")[1]?.split(/\nCARD geo19-core-|\n\[F\]/)[0];ok(c,"candidate "+id);return c};
