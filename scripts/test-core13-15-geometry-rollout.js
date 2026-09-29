@@ -12,6 +12,7 @@ const specs=[
 const auditPath="content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md",audit=read(auditPath);
 ok(audit.includes("SELF_AUDITED")&&audit.includes("not an independent"),"review must correctly distinguish self-audit");
 const nav=read("mkdocs.yml"),js=read("docs/assets/javascripts/topic-workspace-v1.js"),shell=read("docs/assets/javascripts/knowledge-ui-v1.js");
+const routes=read("docs/assets/javascripts/topic-learning-routes-v1.js");
 let total=0,declared=0,covered=0,appended=0;
 for(const t of specs){
  const root="docs/kien-thuc/"+t.slug+"/",bp="docs/assets/data/practice/"+t.slug+"-micro-v1.json";
@@ -21,7 +22,7 @@ for(const t of specs){
  ok(gitSha(JSON.stringify({...bank,question_count:15,questions:bank.questions.slice(0,15)},null,2)+"\n")===t.bank,"original fifteen items must be byte-equivalent as JSON "+t.slug);
  ok(new Set(bank.questions.map(q=>q.id)).size===t.count,"no duplicate IDs "+t.slug);
  ok(page.includes('data-topic-core-entry="'+t.slug+'"')&&page.includes("không phải"),"dedicated formative route "+t.slug);
- ok(js.includes('"'+t.slug+'"')&&shell.includes('"'+t.slug+'"')&&nav.includes("Core theo chặng: kien-thuc/"+t.slug+"/core/index.md"),"all four-step nav routes "+t.slug);
+ ok(js.includes('"'+t.slug+'"')&&routes.includes('"'+t.slug+'"')&&nav.includes("Core theo chặng: kien-thuc/"+t.slug+"/core/index.md"),"all four-step nav routes "+t.slug);
  ok(ws.extensions.every(e=>e.gates_core===false),"Extension non-gating "+t.slug);
  const by=new Map(bank.questions.map(q=>[q.id,q]));let c=0,d=0;
  for(const card of ws.cards){
