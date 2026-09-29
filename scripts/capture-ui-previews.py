@@ -251,8 +251,14 @@ $$
     core_dialog.locator(".topic-core-dialog__close").click()
     check(not core_dialog.is_visible(), "close restores static card grid")
     closed_boxes = [cards.nth(i).bounding_box() for i in range(cards.count())]
-    check(all(before and after and abs(before["y"] - after["y"]) < 2 and abs(before["height"] - after["height"]) < 2
-              for before, after in zip(original_boxes, closed_boxes)), "five core card positions stay fixed after closing")
+    # Dialog focus/scroll restoration can move the viewport; compare dimensions
+    # and inter-card relative positions rather than viewport-absolute y.
+    check(all(before and after and abs(before["height"] - after["height"]) < 2
+              for before, after in zip(original_boxes, closed_boxes)), "Core card heights remain unchanged")
+    check(all(abs((before["y"] - original_boxes[0]["y"]) - (after["y"] - closed_boxes[0]["y"])) < 2
+              for before, after in zip(original_boxes, closed_boxes)), "Core card rows never shift or overlap")
+    check(micro_page.locator(".topic-core-card .topic-micro-panel").count() == 0,
+          "Core session must never be mounted inside a card")
     micro_page.locator("#core-journey .topic-micro-start").first.click()
     check(micro_page.locator(".topic-micro-options button").first.is_disabled(), "reopening same card retains current session")
     check(micro_page.evaluate("() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1')).questions.ALG04MICRO_001.attempted") == 1,
