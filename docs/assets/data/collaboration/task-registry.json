@@ -1,7 +1,7 @@
 {
   "version": 1,
   "schema": "roadmap-collaboration-task-registry-v1",
-  "updated": "2026-09-26",
+  "updated": "2026-09-29",
   "statuses": [
     "OPEN",
     "GEMINI-DRAFT",
@@ -549,6 +549,14 @@
       "status": "DONE",
       "review_verdict": "DEPLOYED_POST_R2_THEN_GEMINI_R3_3_OF_3_PASS",
       "review_notes": "PR #122 merged as 2865e1e82749484300244234e95cad8b6ca05f7a. New pages A25-006/007/010 connect to catalog and library, IDs/URLs unchanged. CI run 36233772681 PASS and deployment run 36233855045 PASS. The Gemini R2 review was on prior source snapshot; these new pages were independently added afterwards. Follow-up TOPIC25-R2-SOURCE-COVERAGE-001 remains OPEN. Gemini Targeted R3 subsequently reviewed all three deep pages A25-006/007/010 directly against source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536 and reported PASS with variant checks; see review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md."
+    },
+    {
+      "id": "CORE04-06-STANDALONE-001",
+      "title": "CĐ04–06 dedicated Core pages, 15 source-linked teaching copies and dual-modal learning",
+      "routing": "CHATGPT_AUTHOR_SELF_AUDIT+CI_BROWSER_QA",
+      "status": "READY",
+      "review_verdict": "SELF_AUDITED_CANDIDATE_CI_PENDING_OWNER_DEVICE_QA",
+      "review_notes": "PR #166 draft. Old 45 questions and their stable IDs/keys unchanged, CĐ07 R2 unaffected. Three dedicated Core pages with original micro coverage CĐ04 11/11, CĐ05 12/12, CĐ06 9/9. Source-locked card-by-card review document content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md; math is self-audited under owner-approved risk tiers, not independently NotebookLM-verified. Four-step UI and browse QA; owner real-device acceptance pending."
     }
   ]
 }
