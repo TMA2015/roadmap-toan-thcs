@@ -1,14 +1,24 @@
 {
-  "version": "1.0.57",
-  "updated": "2026-09-26",
+  "version": "1.0.58",
+  "updated": "2026-09-29",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
-    "name": "Roadmap Toán THCS",
+    "name": "Self-Learning Math",
     "public_site": "https://tma2015.github.io/roadmap-toan-thcs/",
     "repository": "TMA2015/roadmap-toan-thcs",
-    "purpose": "Hệ thống tự học Toán THCS theo mạch kiến thức dọc xuyên suốt lớp 6-9; 25 chuyên đề là Vertical Spine, KNTT là lớp mapping/định vị, đồng thời hỗ trợ luyện tập, ôn thi vào 10 và mở rộng Challenge/thi chuyên."
+    "purpose": "Hệ thống tự học Toán THCS theo mạch kiến thức dọc xuyên suốt lớp 6-9; 25 chuyên đề là Vertical Spine, KNTT là lớp mapping/định vị, đồng thời hỗ trợ luyện tập, ôn thi vào 10 và mở rộng Challenge/thi chuyên.",
+    "legacy_technical_name": "Roadmap Toán THCS",
+    "product_family": "G Learning"
   },
   "source_of_truth": [
+    {
+      "name": "Current Project Handoff — state and next actions",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/current-handoff/"
+    },
+    {
+      "name": "Master Plan v1.1.1",
+      "url": "https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md"
+    },
     {
       "name": "Triết lý mạch kiến thức dọc",
       "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/triet-ly-mach-kien-thuc-doc/"
@@ -209,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Pause Math after CĐ25 R2/R3 scope-accurate closure and deployed CĐ02 grade-six pilot. Transfer to EXISTING AI English Tutor Site, preserving learner accounts, evidence, Assisted Review, 12-week writing course, imports, exports and independent content. When Math resumes: G6-T03-SCOPE-001 grade6 ratio/percent vs grade7 proportion/direct/inverse mapping; G6-T02-OWNER-UX-001 real-device acceptance still separate.",
+    "next_priority": "Continue CĐ19–20 reviewed candidate content in a separate safe standalone Core rollout. First archive CĐ20 Part B receipt; verify versioned grouping and SVG. Do not redo deployed CĐ04–18 or merge audit-only PR #170. Read docs/collaboration/current-handoff.md.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -316,7 +326,9 @@
     },
     "grade6_topic02_pilot": "DEPLOYED_CI_BROWSER_PASS_OWNER_DEVICE_QA_PENDING: PR #120, 5 grade6 cards, 15 micro, 10 independent readiness; legacy 120-bank and written test preserved; class7 content excluded from grade6 readiness. Technical CI/build/deploy passed; owner real-device acceptance separate OPEN task G6-T02-OWNER-UX-001.",
     "grade6_topic03_next": "OPEN G6-T03-SCOPE-001: grade6 B31 tỉ số/phần trăm vs grade7 B20–23 tỉ lệ thức, thuận/nghịch; current 120-bank lacks grade metadata, needs scoped next batch.",
-    "topic25_followup": "CLOSED: Gemini Targeted R3 delivered 9/9 target PASS (six omitted R2 + three new deep pages) with zero critical corrections, source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536. Five of eight optional context source paths explicitly listed; figure decimal-coordinate rounding qualified. See review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md. No pending source-coverage task for CĐ25 in current review cycle."
+    "topic25_followup": "CLOSED: Gemini Targeted R3 delivered 9/9 target PASS (six omitted R2 + three new deep pages) with zero critical corrections, source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536. Five of eight optional context source paths explicitly listed; figure decimal-coordinate rounding qualified. See review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md. No pending source-coverage task for CĐ25 in current review cycle.",
+    "standalone_core_rollout": "CĐ04–18 deployed via #166–169; CĐ19 R2 academic confirmed; CĐ20 Part A 10/10 and Part B text 19/19, both still candidate only. Details current-handoff.md.",
+    "canonical_handoff": "docs/collaboration/current-handoff.md"
   },
   "handoff_required_fields": [
     "TASK_ID",

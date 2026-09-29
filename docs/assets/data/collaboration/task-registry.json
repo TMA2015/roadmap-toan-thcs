@@ -578,9 +578,27 @@
       "id": "CORE16-18-STANDALONE-001",
       "title": "CĐ16–18 source-grounded standalone Core with one square skill item",
       "routing": "CHATGPT_AUTHOR_SOURCE_LOCKED_SELF_AUDIT+CI_BROWSER_QA",
-      "status": "READY",
-      "review_verdict": "SELF_AUDITED_CANDIDATE_CI_PENDING_OWNER_DEVICE_QA",
-      "review_notes": "15 lecture copies across CĐ16–18, original 45 micro questions pinned. New GEO16MICRO_016 assesses hvuong-dau-hieu only and closes a real gap. CĐ17/18 unchanged original banks. Bounded source audit content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md; excludes difficult multi-step geometry and does not claim independent NotebookLM PASS. Source art intact, no migration. Real iPad/desktop review after live deploy."
+      "status": "DONE",
+      "review_verdict": "DEPLOYED_CI_BROWSER_PASS_OWNER_DEVICE_ACCEPTANCE_SEPARATE",
+      "review_notes": "PR #169 merged/deployed 2026-09-29 at 8a13c6c2f076fe360ada6bbaf51d09997e538a4c; 15 teaching copies, 46 micro incl. append-only GEO16MICRO_016, 36/36 skill opportunities. Prior READY status outdated. SELF_AUDITED, not independently NotebookLM-reviewed. No old ID/data change. Owner device acceptance separately recorded."
+    },
+    {
+      "id": "CORE19-20-ACADEMIC-REVIEW-001",
+      "title": "CĐ19 R2 and CĐ20 R1 Part A/B source-locked academic review",
+      "routing": "NOTEBOOKLM_REVIEW+CHATGPT_RECONCILE",
+      "status": "DONE",
+      "review_verdict": "CD19_R2_CONFIRMED_CD20_PART_A_10_OF_10_PART_B_19_OF_19_TEXT_ONLY",
+      "review_notes": "Draft PR #170 audit-only. CĐ19 five proposed lectures/two proposed 016–017 R2 confirmed. CĐ20 Part A 10 groups/29 skills 10/10; Part B 5 teaching copies/14 proposed GEO20MICRO_016–029 19/19 textual academic PASS per owner-provided report. SVG render, new content integration, release not validated. Archive Part B receipt before integration.",
+      "source_commit": "8a13c6c2f076fe360ada6bbaf51d09997e538a4c",
+      "packet": "content-staging/reviews/MATH-CORE19-20-R1-20260929/"
+    },
+    {
+      "id": "CORE19-20-STANDALONE-ROLLOUT-001",
+      "title": "Integrate Core19–20 dual-modal learning with safe CĐ20 versioned grouping",
+      "routing": "CHATGPT_INTEGRATE+CI_BROWSER_VISUAL_QA+OWNER_QA",
+      "status": "OPEN",
+      "review_verdict": "CANDIDATES_REVIEWED_NOT_DEPLOYED",
+      "review_notes": "See docs/collaboration/current-handoff.md. Verify #170 against live main; preserve all old item/card IDs, primary skill, attempts/readiness, notably GEO20MICRO_011 legacy card. Use separate implementation PR; actual SVG and real device QA pending."
     }
   ]
 }
