@@ -9,10 +9,11 @@ const paths=[
 ];
 const gitSha=s=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+Buffer.byteLength(s)+"\0"),Buffer.from(s)])).digest("hex");
 const js=read("docs/assets/javascripts/topic-workspace-v1.js"),shell=read("docs/assets/javascripts/knowledge-ui-v1.js"),yaml=read("mkdocs.yml");
+const routes=read("docs/assets/javascripts/topic-learning-routes-v1.js");
 const auditPath="content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md",audit=read(auditPath);
 assert(audit.includes("SELF_AUDITED")&&audit.includes("not an independent")&&audit.includes("15"),"honest review provenance");
 assert(js.includes("const hasStandaloneCore="),"four-topic Core opt-in exists");
-assert(shell.includes("const standaloneCore = ["),"four-step navigation opt-in exists");
+assert(shell.includes("window.RoadmapTopicRoutes?.get(m[1])"),"four-step navigation opt-in exists");
 let totalCards=0,totalQuestions=0;
 for(const t of paths){
  const wp="docs/assets/data/curriculum/"+t.workspace,bp="docs/assets/data/practice/"+t.bank,
@@ -23,7 +24,7 @@ for(const t of paths){
  assert(w.topic===t.slug&&w.cards.length===5,"five Core cards "+t.slug);
  assert(yaml.includes("Core theo chặng: kien-thuc/"+t.slug+"/core/index.md"),"nav entry "+t.slug);
  assert(page.includes('data-topic-core-entry="'+t.slug+'"')&&page.includes("không phải"),"real formative Core route "+t.slug);
- assert(js.includes('"'+t.slug+'"')&&shell.includes('"'+t.slug+'"'),"route enablement "+t.slug);
+ assert(js.includes('"'+t.slug+'"')&&routes.includes('"'+t.slug+'"'),"route enablement "+t.slug);
  const byId=new Map(bank.questions.map(q=>[q.id,q]));let covered=0,declared=0;
  for(const card of w.cards){
   const qs=card.micro_practice.map(id=>byId.get(id)),copy=card.teaching_copy;

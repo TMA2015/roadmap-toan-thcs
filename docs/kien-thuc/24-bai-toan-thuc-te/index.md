@@ -506,7 +506,7 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
-**Learning Journey Ứng dụng xuyên lớp:** 5 thẻ học, mỗi thẻ có kiến thức ngắn, ví dụ, lỗi thường gặp và 3 câu kiểm tra nhanh. Tất cả đều là luyện tập bổ trợ, **không khóa KNTT Core** và không thay thế bài tự luận.
+**Learning Journey Ứng dụng xuyên lớp:** [5 thẻ học ở trang Ứng dụng theo chặng](core/index.md), mỗi thẻ có kiến thức ngắn, ví dụ, lỗi thường gặp và 3 câu kiểm tra nhanh. Tất cả đều là luyện tập bổ trợ, **không khóa KNTT Core** và không thay thế bài tự luận.
 
 
 ### Mức 1 – Nhận biết

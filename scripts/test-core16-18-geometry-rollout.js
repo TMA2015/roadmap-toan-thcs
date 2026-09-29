@@ -11,6 +11,7 @@ const specs=[
 const auditPath="content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md",audit=read(auditPath);
 assert(audit.includes("SELF_AUDITED")&&audit.includes("not an independent"),"honest, bounded academic provenance");
 const nav=read("mkdocs.yml"),engine=read("docs/assets/javascripts/topic-workspace-v1.js"),switcher=read("docs/assets/javascripts/knowledge-ui-v1.js");
+const routes=read("docs/assets/javascripts/topic-learning-routes-v1.js");
 let cardCount=0,totalQuestions=0,totalSkills=0,covered=0;
 for(const t of specs){
  const path="docs/kien-thuc/"+t.slug+"/",bp="docs/assets/data/practice/"+t.slug+"-micro-v1.json",wp="docs/assets/data/curriculum/topic"+t.n+"-learning-workspace.json";
@@ -22,7 +23,7 @@ for(const t of specs){
  assert(JSON.stringify(bank.questions.slice(15).map(q=>q.id))===JSON.stringify(t.newIds),"only expected append-only IDs "+t.slug);
  assert(new Set(bank.questions.map(q=>q.id)).size===t.count,"unique question IDs "+t.slug);
  assert(page.includes('data-topic-core-entry="'+t.slug+'"')&&page.includes("không phải"),"formative separate route "+t.slug);
- assert(engine.includes('"'+t.slug+'"')&&switcher.includes('"'+t.slug+'"')&&nav.includes("Core theo chặng: kien-thuc/"+t.slug+"/core/index.md"),"routing "+t.slug);
+ assert(engine.includes('"'+t.slug+'"')&&routes.includes('"'+t.slug+'"')&&nav.includes("Core theo chặng: kien-thuc/"+t.slug+"/core/index.md"),"routing "+t.slug);
  assert(w.extensions.every(x=>x.gates_core===false),"no Extension hard gate "+t.slug);
  const by=new Map(bank.questions.map(q=>[q.id,q]));let d=0,cov=0;
  for(const card of w.cards){

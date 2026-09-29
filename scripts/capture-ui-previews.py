@@ -117,7 +117,7 @@ with sync_playwright() as p:
         topic_page.locator(".lesson-switcher-steps a").first.wait_for(state="visible", timeout=12000)
         links = topic_page.locator(".lesson-switcher-steps a")
         slug = urlparse(row["url"]).path.rstrip("/").split("/")[-1]
-        pilot = slug in ("04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete", "13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy","16-tu-giac","17-thales-dong-dang","18-he-thuc-luong","19-duong-tron","20-hinh-hoc-tong-hop")
+        pilot = topic_page.evaluate("(slug) => Boolean(window.RoadmapTopicRoutes?.get(slug))", slug)
         check(links.count() == (4 if pilot else 3), "correct step count for " + row["url"])
         check(links.nth(0).get_attribute("aria-current") == "page", "lesson selected " + row["url"])
         if pilot:
@@ -269,8 +269,9 @@ with sync_playwright() as p:
                 first_card = core_page.locator(".topic-core-card").first
                 check(core_page.locator(".topic-core-card").count() == expected_core_cards,
                       "correct independent Core-card count " + slug)
-                check(core_page.locator(".topic-core-card-gap").count() == 0,
-                      "source-linked micro bank covers every declared skill " + slug)
+                expected_gaps={"02-so-va-phep-tinh":4,"23-xac-suat":2}.get(slug,0)
+                check(core_page.locator(".topic-core-card-gap").count() == expected_gaps,
+                      "truthful declared-vs-assessed coverage (no invented item) " + slug)
                 before=core_page.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')")
                 boxes=[x.bounding_box() for x in core_page.locator(".topic-core-card").all()]
                 first_card.locator(".topic-core-teach-start").click()
@@ -686,10 +687,10 @@ $$
     shot(first_phone, "lesson-23-phone-topic-chooser.png")
     chooser.locator(".roadmap-topic-dialog__close").click()
     check(not chooser.is_visible(), "phone chooser closes and returns to lesson")
-    check(first_phone.locator(".lesson-switcher-steps a").count() == 3, "phone lesson nav")
+    check(first_phone.locator(".lesson-switcher-steps a").count() == 4, "phone topic23 four-stage nav")
     shot(first_phone, "lesson-23-phone.png")
     # Route links are verified from actual static content.
-    first_phone.locator('.lesson-switcher-steps a').nth(1).click()
+    first_phone.locator('.lesson-switcher-steps a').nth(2).click()
     check("/bai-tap/" in first_phone.url, "topic practice route")
     first_phone.locator('.lesson-switcher-steps a[aria-current="page"]').wait_for(state="visible", timeout=10000)
     check(first_phone.locator('.lesson-switcher-steps a[aria-current="page"]').count() == 1, "practice stage selected")

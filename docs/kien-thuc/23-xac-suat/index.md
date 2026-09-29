@@ -429,7 +429,7 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
-Học **5 Learning Cards KNTT Core** theo thứ tự lớp 6–8; mỗi thẻ gồm kiến thức, ví dụ mẫu và ba câu kiểm tra nhanh **Base → Trap → Apply**. Làm sai sẽ có giải thích và gợi ý để thử lại.
+Học [**5 Learning Cards KNTT Core**](core/index.md) trên trang riêng theo thứ tự lớp 6–8; mỗi thẻ gồm kiến thức, ví dụ mẫu và ba câu kiểm tra nhanh **Base → Trap → Apply**. Làm sai sẽ có giải thích và gợi ý để thử lại.
 
 - **→ [Mở Practice Room CĐ23](bai-tap.md)** để luyện ngân hàng 120 câu; hệ thống hiện nhãn tầng Core / Core-Support / Entrance10.
 - Các câu về biến cố đối, sơ đồ cây, hai xúc xắc và rút không hoàn lại là nội dung bổ trợ/mở rộng, không tính vào Core Readiness.

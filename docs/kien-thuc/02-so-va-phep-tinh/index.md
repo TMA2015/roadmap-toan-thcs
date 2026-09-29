@@ -11,7 +11,7 @@
 >
 
 !!! info "Học từ lớp 6"
-    Em nên bắt đầu bằng **5 chặng học tương tác** ở phía trên, theo SGK KNTT lớp 6 (Bài 1–17, 23–31). Phần kiến thức trong bài dài này còn có nội dung lớp 7 và các liên hệ học sau: em chỉ cần học đúng phần phù hợp với lớp của mình. Nếu muốn học trước, hãy hỏi AI Tutor về kiến thức nền cần thiết.
+    Em nên bắt đầu bằng [**5 chặng học tương tác**](core/index.md) trên trang Core riêng, theo SGK KNTT lớp 6 (Bài 1–17, 23–31). Phần kiến thức trong bài dài này còn có nội dung lớp 7 và các liên hệ học sau: em chỉ cần học đúng phần phù hợp với lớp của mình. Nếu muốn học trước, hãy hỏi AI Tutor về kiến thức nền cần thiết.
 
 ---
 
@@ -633,7 +633,7 @@ Còn phương trình `x² = 25` mới có hai nghiệm `x = ±5`.
 
 ## 📝 8. Luyện tập tiếp theo
 
-Bộ **5 chặng học lớp 6** ở đầu trang có 15 câu kiểm tra nhanh (Base → Trap → Apply), cho phản hồi và gợi ý. Nếu muốn luyện thêm theo dạng bài hoặc tự trình bày trên vở, hãy vào **Practice Room**.
+Bộ [**5 chặng học lớp 6**](core/index.md) trên trang riêng có 15 câu kiểm tra nhanh (Base → Trap → Apply), cho phản hồi và gợi ý. Nếu muốn luyện thêm theo dạng bài hoặc tự trình bày trên vở, hãy vào **Practice Room**.
 
 [🎯 Mở Practice Room – Chuyên đề 02](bai-tap.md){ .md-button .md-button--primary }
 

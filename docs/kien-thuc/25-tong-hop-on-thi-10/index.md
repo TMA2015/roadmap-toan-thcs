@@ -499,9 +499,9 @@ Mức ưu tiên tổng thể của chuyên đề: **⭐⭐⭐⭐⭐**.
 
 ---
 
-## Learning Journey · 5 thẻ học theo hai mạch
+## Learning Journey · [5 thẻ học theo hai mạch ở trang riêng](core/index.md)
 
-Bộ năm thẻ bên dưới gồm **ba thẻ học thuật** và **hai thẻ kỹ năng thi**. Nội dung học thuật được ôn trước, phần kỹ năng thi dùng sau khi đã làm bài và chữa lỗi.
+Bộ năm thẻ ở [trang Ôn thi theo chặng](core/index.md) gồm **ba thẻ học thuật** và **hai thẻ kỹ năng thi**. Nội dung học thuật được ôn trước, phần kỹ năng thi dùng sau khi đã làm bài và chữa lỗi.
 
 ## 📝 8. Luyện tập
 
