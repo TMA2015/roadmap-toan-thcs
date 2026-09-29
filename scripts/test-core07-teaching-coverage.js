@@ -19,4 +19,21 @@ for(const card of workspace.cards){
  if(process.argv.includes("--release"))
    assert(copy.review_status==="APPROVED"&&typeof copy.academic_review_ref==="string"&&copy.academic_review_ref.trim(),"UNREVIEWED CORE TEACHING MUST NOT DEPLOY: "+card.id);
 }
+const byId=new Map(workspace.cards.map(c=>[c.id,c.teaching_copy]));
+const checkText=(id,field,expected)=>{
+ const copy=byId.get(id),value=field==="solution"?copy.worked_example.solution:copy.key_idea;
+ assert(value.includes(expected),"R1 correction regressed: "+id+" "+field);
+};
+checkText("pt07-core-1","key_idea","A\\cdot D=B\\cdot C");
+checkText("pt07-core-1","key_idea","D\\ne0");
+checkText("pt07-core-2","key_idea","\\frac{A}{-B}=\\frac{-A}{B}=-\\frac{A}{B}");
+checkText("pt07-core-3","key_idea","nhân tử phụ");
+checkText("pt07-core-3","solution","\\frac{2\\cdot x(x-2)}{(x+2)\\cdot x(x-2)}");
+checkText("pt07-core-5","key_idea","phân thức chia (số chia)");
+checkText("pt07-core-5","solution","x+1\\ne0");
+assert(!byId.get("pt07-core-5").key_idea.includes("phân thức bị chia")&&!byId.get("pt07-core-5").worked_example.solution.includes("phân thức bị chia"),"divisor terminology regression");
+const r2=fs.readFileSync("content-staging/reviews/MATH-CORE07-TEACH-R2-20260929-NOTEBOOKLM.txt","utf8");
+assert((r2.match(/^THẺ [1-5]: pt07-core-/gm)||[]).length===5,"R2 packet must contain five revisions");
+assert((r2.match(/^CÂU \\d+ — RAT07MICRO_/gm)||[]).length===15,"R2 packet must contain fifteen source questions");
+assert(r2.includes("A\\cdot D=B\\cdot C")&&r2.includes("R1 — Lời giải:")&&r2.includes("R2 — Lời giải:"),"R2 must compare old/new math and solutions");
 console.log("PASS: five source-locked Core07 teaching copies; "+(process.argv.includes("--release")?"release academic approval present":"candidate stage; independent review still required"));
