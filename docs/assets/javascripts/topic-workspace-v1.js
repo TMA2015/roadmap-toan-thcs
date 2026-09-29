@@ -97,7 +97,7 @@ const TOPICS={
  "17-thales-dong-dang":{number:"17",data:"assets/data/curriculum/topic17-learning-workspace.json",description:"Thales, đường phân giác, đồng dạng và ghép đúng đại lượng tương ứng.",chips:["KNTT Core","Lớp 8","Hình học","⭐⭐⭐⭐⭐"],progressSkills:["thales-thuan","thales-dao","ti-le-doan-thang","duong-trung-binh","tinh-chat-duong-phan-giac","nhan-biet-dong-dang","thu-tu-tuong-ung","dong-dang-gg","dong-dang-cgc","dong-dang-ccc","tinh-do-dai-dong-dang","hinh-dong-dang"]},
  "18-he-thuc-luong":{number:"18",data:"assets/data/curriculum/topic18-learning-workspace.json",description:"Pythagore, sin–cos–tan–cot và mô hình hóa chiều cao, khoảng cách.",chips:["KNTT Core","Lớp 8–9","Hình học","⭐⭐⭐⭐⭐"],progressSkills:["pythagore","pythagore-dao","canh-huyen","sin","cos","tan","cot","tim-canh-luong-giac","tim-goc-luong-giac","goc-nang-ha","chieu-cao-khoang-cach"]},
  "19-duong-tron":{number:"19",data:"assets/data/curriculum/topic19-learning-workspace.json",description:"Cung–dây, vị trí tương đối, góc nội tiếp, nội/ngoại tiếp và đo lường đường tròn.",chips:["KNTT Core","Lớp 9","Hình học","⭐⭐⭐⭐⭐"],progressSkills:["day-va-tam","cung-va-day","do-dai-duong-tron","do-dai-cung","vi-tri-tuong-doi-duong-thang-duong-tron","vi-tri-tuong-doi-hai-duong-tron","goc-noi-tiep","tu-giac-noi-tiep","dau-hieu-noi-tiep","duong-tron-ngoai-tiep-tam-giac","duong-tron-noi-tiep-tam-giac","da-giac-deu","dien-tich-quat-tron","dien-tich-vanh-khuyen"]},
- "20-hinh-hoc-tong-hop":{number:"20",data:"assets/data/curriculum/topic20-learning-workspace.json",description:"Hình phẳng, đối xứng, đo lường và các hình khối xuyên suốt lớp 6–9.",chips:["KNTT Core","Lớp 6–9","Hình học","⭐⭐⭐⭐⭐"],progressSkills:["nhan-biet-tam-giac-deu","nhan-biet-hinh-vuong","nhan-biet-luc-giac-deu","nhan-biet-tu-giac-dac-biet","chu-vi-tu-giac","dien-tich-tu-giac","do-luong-thuc-te","truc-doi-xung","tam-doi-xung","the-tich-hop-chu-nhat","dien-tich-day","doi-don-vi-do-luong","nhan-biet-hinh-hop-lap-phuong","dien-tich-xung-quanh-hop-chu-nhat","the-tich-lang-tru","nhan-biet-lang-tru-dung","dien-tich-xung-quanh-lang-tru","nhan-biet-hinh-chop-deu","dien-tich-xung-quanh-hinh-chop","the-tich-hinh-chop","nhan-biet-hinh-tru","dien-tich-xung-quanh-hinh-tru","the-tich-hinh-tru","nhan-biet-hinh-non","dien-tich-xung-quanh-hinh-non","the-tich-hinh-non","nhan-biet-hinh-cau","dien-tich-mat-cau","the-tich-hinh-cau"]},
+ "20-hinh-hoc-tong-hop":{number:"20",data:"assets/data/curriculum/topic20-learning-workspace.json",coreViewData:"assets/data/curriculum/topic20-core-display-v2.json",description:"Hình phẳng, đối xứng, đo lường và các hình khối xuyên suốt lớp 6–9.",chips:["KNTT Core","Lớp 6–9","Hình học","⭐⭐⭐⭐⭐"],progressSkills:["nhan-biet-tam-giac-deu","nhan-biet-hinh-vuong","nhan-biet-luc-giac-deu","nhan-biet-tu-giac-dac-biet","chu-vi-tu-giac","dien-tich-tu-giac","do-luong-thuc-te","truc-doi-xung","tam-doi-xung","the-tich-hop-chu-nhat","dien-tich-day","doi-don-vi-do-luong","nhan-biet-hinh-hop-lap-phuong","dien-tich-xung-quanh-hop-chu-nhat","the-tich-lang-tru","nhan-biet-lang-tru-dung","dien-tich-xung-quanh-lang-tru","nhan-biet-hinh-chop-deu","dien-tich-xung-quanh-hinh-chop","the-tich-hinh-chop","nhan-biet-hinh-tru","dien-tich-xung-quanh-hinh-tru","the-tich-hinh-tru","nhan-biet-hinh-non","dien-tich-xung-quanh-hinh-non","the-tich-hinh-non","nhan-biet-hinh-cau","dien-tich-mat-cau","the-tich-hinh-cau"]},
  "21-thong-ke":{number:"21",data:"assets/data/curriculum/topic21-learning-workspace.json",description:"Từ thu thập và phân loại đến biểu đồ, chọn cách biểu diễn và kết luận có căn cứ.",chips:["KNTT Core","Lớp 6–8","Thống kê","⭐⭐⭐⭐"],progressSkills:["du-lieu-phan-loai","thu-thap-du-lieu","doc-bieu-do-cot","doc-bieu-do-cot-kep","doc-bieu-do-doan-thang","bieu-do-quat-tron","chon-bieu-do","chuyen-bang-bieu-do","nhan-xet-du-lieu"]},
  "24-bai-toan-thuc-te":{number:"24",data:"assets/data/curriculum/topic24-learning-workspace.json",description:"Đọc dữ kiện, chọn mô hình, tính toán rồi kiểm tra đáp án trong thực tế.",chips:["Ứng dụng xuyên lớp","Lớp 6–9","Mô hình hóa","⭐⭐⭐⭐⭐"],progressSkills:["doc-de-du-kien","doi-don-vi","phan-tram","lap-phuong-trinh","lap-he","kiem-tra-ket-luan"]},
  "25-tong-hop-on-thi-10":{number:"25",data:"assets/data/curriculum/topic25-learning-workspace.json",description:"Nhận dạng dạng bài, ôn liên mạch và xây chu trình làm đề – chữa lỗi.",chips:["Entrance10","Ôn tập lớp 9","Tổng hợp","⭐⭐⭐⭐⭐"],progressSkills:["nhan-dien-chuyen-de","on-thi-bieu-thuc-can","on-thi-phuong-trinh","on-thi-he","on-thi-ham-so","on-thi-hinh-hoc","on-thi-thong-ke","on-thi-xac-suat","phan-loai-loi","checklist-chua-de"]},
@@ -540,7 +540,21 @@ const mountMicro=(host,card,questions,graph)=>{
 };
 const renderCoreCards=async(hero,config)=>{
  try{
-  const cardRes=await fetch(siteAsset(config.data));if(!cardRes.ok)return;const data=await cardRes.json();
+  const cardRes=await fetch(siteAsset(config.data));if(!cardRes.ok)return;let data=await cardRes.json();
+  if(config.coreViewData){
+   // The v1 source remains the historical five-card mapping; v2 changes display only.
+   const viewRes=await fetch(siteAsset(config.coreViewData));if(!viewRes.ok)throw Error("Core v2 overlay missing");
+   const view=await viewRes.json();
+   const originalIds=(data.cards||[]).map(c=>c.id);
+   if(view.schema!=="roadmap-topic-core-display-overlay-v2"||view.version!==2||view.topic!==data.topic||
+      view.history_policy?.migration!=="none"||view.history_policy?.storage_key!=="toan-thcs-practice-v1"||
+      view.legacy_cards_read_only?.length!==originalIds.length||
+      !originalIds.every((id,i)=>view.legacy_cards_read_only[i].id===id&&
+        view.legacy_cards_read_only[i].original_skill_denominator===data.cards[i].skills.length&&
+        JSON.stringify(view.legacy_cards_read_only[i].original_micro_practice)===JSON.stringify(data.cards[i].micro_practice))||
+      view.cards?.length!==10||new Set(view.cards.map(c=>c.id)).size!==10)throw Error("Core v2 legacy compatibility check failed");
+   data={...data,cards:view.cards,learning_layer_label:"KNTT Core · nhóm học v2"};
+  }
   const [microRes,graphRes]=await Promise.all([fetch(siteAsset(data.micro_practice_bank)),fetch(siteAsset(KG_DATA))]);
   const micro=microRes.ok?await microRes.json():{questions:[]};const graph=graphRes.ok?await graphRes.json():null;const byId=new Map((micro.questions||[]).map(q=>[q.id,q]));
   const host=document.createElement("section");host.className="topic-core-journey";host.id="core-journey";
@@ -659,7 +673,7 @@ const mountCoreGateway=(hero,config)=>{
 const init=()=>{
  const config=activeConfig();if(!config)return;
  const topicRoot="/kien-thuc/"+config.slug+"/";
- const hasStandaloneCore=["04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete","13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy","16-tu-giac","17-thales-dong-dang","18-he-thuc-luong","19-duong-tron"].includes(config.slug);
+ const hasStandaloneCore=["04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete","13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy","16-tu-giac","17-thales-dong-dang","18-he-thuc-luong","19-duong-tron","20-hinh-hoc-tong-hop"].includes(config.slug);
  const coreRoute=hasStandaloneCore&&(location.pathname.endsWith(topicRoot+"core/")||location.pathname.endsWith(topicRoot+"core/index.html"));
  if(coreRoute){
   const entry=document.querySelector("[data-topic-core-entry]");
