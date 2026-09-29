@@ -588,7 +588,7 @@
       "routing": "NOTEBOOKLM_REVIEW+CHATGPT_RECONCILE",
       "status": "DONE",
       "review_verdict": "CD19_R2_CONFIRMED_CD20_PART_A_10_OF_10_PART_B_19_OF_19_TEXT_ONLY",
-      "review_notes": "Draft PR #170 audit-only. CĐ19 five proposed lectures/two proposed 016–017 R2 confirmed. CĐ20 Part A 10 groups/29 skills 10/10; Part B 5 teaching copies/14 proposed GEO20MICRO_016–029 19/19 textual academic PASS per owner-provided report. SVG render, new content integration, release not validated. Archive Part B receipt before integration.",
+      "review_notes": "Archived draft audit PR #170 remains unmerged; reviewer result scope CD19 targeted R2 five lectures + two candidates; CĐ20 Part A 10/10 group taxonomy; Part B 5 new lectures + 14 new candidates 19/19 text/math PASS. Original 15+15 not regraded by these reports; SVG not certified by reviewer. Implementation/release separately PASS PRs #173/#174 and visual/browser QA. Part B verbatim report archived under audit PR and main release source packet.",
       "source_commit": "8a13c6c2f076fe360ada6bbaf51d09997e538a4c",
       "packet": "content-staging/reviews/MATH-CORE19-20-R1-20260929/"
     },
@@ -596,9 +596,17 @@
       "id": "CORE19-20-STANDALONE-ROLLOUT-001",
       "title": "Integrate Core19–20 dual-modal learning with safe CĐ20 versioned grouping",
       "routing": "CHATGPT_INTEGRATE+CI_BROWSER_VISUAL_QA+OWNER_QA",
+      "status": "DONE",
+      "review_verdict": "DEPLOYED_PR173_PR174_ALL_CI_BROWSER_PASS_OWNER_DEVICE_QA_PENDING",
+      "review_notes": "CĐ19 PR #173 merged 607b521635653ae89df68ed1890869a331721da3 / deploy 36597534733 PASS: five R2 lectures, +2 append-only, 17 total, 14/14 skill opportunities. CĐ20 PR #174 merged 4cfa70ff999eb469ac4e33dadb6447abae1c7383 / deploy 36599072769 PASS: ten-card v2, 29 skills/29 micro, original five-card workspace and 15 questions byte-equivalent, no learner-data migration, GEO20MICRO_011 old card preserved, 14 new keys balanced A/B/C/D 4/4/3/3. New five lectures NotebookLM Part B text PASS, original five self-audited. Strict CI/browser and SVG render QA passed; owner device QA separate."
+    },
+    {
+      "id": "CORE19-20-OWNER-DEVICE-QA-001",
+      "title": "Owner real-device acceptance of deployed CĐ19–20 dual-modal Core",
+      "routing": "OWNER_DEVICE_QA",
       "status": "OPEN",
-      "review_verdict": "CANDIDATES_REVIEWED_NOT_DEPLOYED",
-      "review_notes": "See docs/collaboration/current-handoff.md. Verify #170 against live main; preserve all old item/card IDs, primary skill, attempts/readiness, notably GEO20MICRO_011 legacy card. Use separate implementation PR; actual SVG and real device QA pending."
+      "review_notes": "Check CĐ19 5 cards/17 questions and CĐ20 10 groups/29 questions, updated viewport on desktop/iPad/iPhone, Bài giảng↔Luyện tập modal, clear rendering/geometry SVG, old results preserved, no attempted write from browsing, Core Readiness separate. CI Playwright desktop/mobile PASS; real owner acceptance not yet recorded. Source #173/#174.",
+      "review_verdict": "TECHNICAL_PASS_OWNER_PENDING"
     }
   ]
 }
