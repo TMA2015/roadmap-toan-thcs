@@ -50,64 +50,44 @@
    document.body.appendChild(dialog);
    return dialog;
  };
- const addMobileShortcuts = () => {
-   // Never inject into nested .md-nav__list: Material controls its own
-   // drill-down transforms and iOS scroll restoration.
-   const wrap = document.querySelector(".md-sidebar--primary > .md-sidebar__scrollwrap");
-   if (!wrap || wrap.querySelector(":scope > [data-roadmap-mobile-shortcuts]")) return;
-   const sources = [...document.querySelectorAll(".md-tabs__list a.md-tabs__link")];
-   const host = document.createElement("div");
-   host.className = "roadmap-mobile-shortcuts";
-   host.dataset.roadmapMobileShortcuts = "1";
-   host.setAttribute("aria-label", "Điều hướng nhanh trên điện thoại và máy tính bảng");
-   const row = document.createElement("div");
-   row.className = "roadmap-mobile-shortcuts__row";
-   const jump = document.createElement("button");
-   jump.type = "button";
-   jump.className = "roadmap-mobile-shortcuts__jump";
-   jump.textContent = "▤ Chọn chuyên đề (25)";
-   jump.setAttribute("aria-haspopup", "dialog");
-   jump.addEventListener("click", () => {
+ const addTopicLauncher = () => {
+   // Material owns the drawer's scrollwrap and translated navigation tree.
+   // Mount the topic chooser in the separate page header, never inside the drawer.
+   const header = document.querySelector(".md-header__inner");
+   if (!header || header.querySelector("[data-roadmap-topic-launcher]")) return;
+   const button = document.createElement("button");
+   button.type = "button";
+   button.className = "roadmap-topic-launcher";
+   button.dataset.roadmapTopicLauncher = "1";
+   button.setAttribute("aria-label", "Chọn nhanh một trong 25 chuyên đề Toán");
+   button.setAttribute("title", "Chọn chuyên đề (25)");
+   button.setAttribute("aria-haspopup", "dialog");
+   const mark = document.createElement("span");
+   mark.className = "roadmap-topic-launcher__mark";
+   mark.setAttribute("aria-hidden", "true");
+   mark.textContent = "▤";
+   const count = document.createElement("span");
+   count.className = "roadmap-topic-launcher__count";
+   count.setAttribute("aria-hidden", "true");
+   count.textContent = "25";
+   const name = document.createElement("span");
+   name.className = "roadmap-topic-launcher__name";
+   name.setAttribute("aria-hidden", "true");
+   name.textContent = "chuyên đề";
+   button.append(mark, count, name);
+   button.addEventListener("click", () => {
      const dialog = ensureTopicDialog();
+     // Opening a fresh dialog must start from 01, not a retained iOS scroll offset.
+     dialog.querySelector(".roadmap-topic-dialog__list").scrollTop = 0;
      if (!dialog.open) dialog.showModal();
    });
-   const home = document.createElement("a");
-   home.className = "roadmap-mobile-shortcuts__home";
-   home.href = sitePrefix();
-   home.textContent = "⌂ Trang chủ";
-   row.append(jump, home);
-   host.appendChild(row);
-   const active = currentTopic();
-   if (active) {
-     const context = document.createElement("small");
-     context.className = "roadmap-mobile-shortcuts__context";
-     context.textContent = "Đang học: " + active[1];
-     host.appendChild(context);
-   }
-   const more = document.createElement("details");
-   more.className = "roadmap-mobile-shortcuts__more";
-   const summary = document.createElement("summary");
-   summary.textContent = "Điều hướng chính";
-   const links = document.createElement("nav");
-   links.className = "roadmap-mobile-shortcuts__links";
-   links.setAttribute("aria-label", "Các khu vực chính");
-   for (const [label, fallback, glyph] of mainDestinations) {
-     const source = sources.find(a => a.textContent.trim() === label);
-     const a = document.createElement("a");
-     a.className = "roadmap-mobile-shortcuts__link";
-     a.href = source?.href || sitePrefix() + fallback;
-     a.textContent = glyph + " " + label;
-     if (source?.classList.contains("md-tabs__link--active")) a.setAttribute("aria-current", "page");
-     links.appendChild(a);
-   }
-   more.append(summary, links);
-   host.appendChild(more);
-   wrap.insertBefore(host, wrap.firstChild);
+   const title = header.querySelector(".md-header__title");
+   if (title) title.insertAdjacentElement("afterend", button);
+   else header.appendChild(button);
  };
  const create = () => {
-   // The sidebar is reconstructed on instant navigation, so mount separately
-   // from the desktop dock and guard each against duplication.
-   addMobileShortcuts();
+   // Keep the topic launcher and desktop dock independently guarded.
+   addTopicLauncher();
    const tabs = document.querySelector(".md-tabs");
    const list = tabs && tabs.querySelector(".md-tabs__list");
    if (!tabs || !list || document.querySelector("[data-roadmap-nav-dock]")) return;
