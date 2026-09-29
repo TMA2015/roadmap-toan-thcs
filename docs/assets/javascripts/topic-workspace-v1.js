@@ -463,8 +463,8 @@ const mountCoreGateway=(hero,config)=>{
 const init=()=>{
  const config=activeConfig();if(!config)return;
  const topicRoot="/kien-thuc/"+config.slug+"/";
- const isPilot=config.slug==="07-phan-thuc-dai-so";
- const coreRoute=isPilot&&(location.pathname.endsWith(topicRoot+"core/")||location.pathname.endsWith(topicRoot+"core/index.html"));
+ const hasStandaloneCore=["04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so"].includes(config.slug);
+ const coreRoute=hasStandaloneCore&&(location.pathname.endsWith(topicRoot+"core/")||location.pathname.endsWith(topicRoot+"core/index.html"));
  if(coreRoute){
   const entry=document.querySelector("[data-topic-core-entry]");
   if(entry&&!entry.dataset.coreMounted){entry.dataset.coreMounted="1";renderCoreCards(entry,config)}
@@ -475,7 +475,7 @@ const init=()=>{
  const pct=progress(config.progressSkills);
  const observed=config.progressSkills.some(s=>{const rec=loadStats().tags?.[s];return Boolean(rec?.attempted);});
  const hero=document.createElement("section");hero.className="topic-workspace-hero";
- hero.innerHTML=`<div class="topic-workspace-kicker">Roadmap 25 · Chuyên đề ${config.number}</div><h1>${h1.textContent.trim()}</h1><div>${config.description}</div><div class="topic-workspace-meta">${config.chips.map(x=>`<span class="topic-chip">${x}</span>`).join("")}</div><div class="topic-progress-wrap"><span>${observed?"Tỉ lệ đúng đã ghi nhận (kể cả lượt có trợ giúp)":"Chưa có kết quả luyện tập được ghi nhận"}</span><strong>${observed?pct+"%":"—"}</strong><progress max="100" value="${pct}" aria-label="Mức độ ghi nhận theo kỹ năng" ></progress></div><div class="topic-workspace-actions"><a href="${isPilot?"core/":"#core-journey"}">🧩 Các chặng học</a><a href="bai-tap/">🎯 Luyện tập tương tác</a><a href="#map">🗺️ Bản đồ</a><a href="#errors">⚠️ Lỗi thường gặp</a></div>`;
+ hero.innerHTML=`<div class="topic-workspace-kicker">Roadmap 25 · Chuyên đề ${config.number}</div><h1>${h1.textContent.trim()}</h1><div>${config.description}</div><div class="topic-workspace-meta">${config.chips.map(x=>`<span class="topic-chip">${x}</span>`).join("")}</div><div class="topic-progress-wrap"><span>${observed?"Tỉ lệ đúng đã ghi nhận (kể cả lượt có trợ giúp)":"Chưa có kết quả luyện tập được ghi nhận"}</span><strong>${observed?pct+"%":"—"}</strong><progress max="100" value="${pct}" aria-label="Mức độ ghi nhận theo kỹ năng" ></progress></div><div class="topic-workspace-actions"><a href="${hasStandaloneCore?"core/":"#core-journey"}">🧩 Các chặng học</a><a href="bai-tap/">🎯 Luyện tập tương tác</a><a href="#map">🗺️ Bản đồ</a><a href="#errors">⚠️ Lỗi thường gặp</a></div>`;
  h1.replaceWith(hero);
  const isCapstone=config.number==="25";
  let nav=null;
@@ -484,7 +484,7 @@ const init=()=>{
   nav.innerHTML='<div class="topic-workspace-nav-title">Đi nhanh trong chuyên đề</div><div class="topic-workspace-nav-list">'+sections.map(([id,label])=>`<a href="#${id}">${label}</a>`).join("")+"</div>";
   hero.after(nav);
  }
- if(isPilot)mountCoreGateway(hero,config);
+ if(hasStandaloneCore)mountCoreGateway(hero,config);
  else renderCoreCards(hero,config);
  sections.forEach(([id,,label],i)=>{const h=findHeading(label);if(h)wrapSection(h,id,i)});
  const expandTarget=event=>{
