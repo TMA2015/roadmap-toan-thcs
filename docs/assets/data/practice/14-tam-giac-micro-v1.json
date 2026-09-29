@@ -6,7 +6,7 @@
     "id": "14-tam-giac",
     "title": "Tam giác"
   },
-  "question_count": 15,
+  "question_count": 17,
   "questions": [
     {
       "id": "GEO14MICRO_001",
@@ -636,6 +636,96 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO14MICRO_016",
+      "card_id": "geo14-core-1",
+      "micro_role": "coverage",
+      "question": "Trong tam giác ABC, \\(\\angle A=45^\\circ\\), \\(\\angle B=60^\\circ\\), \\(\\angle C=75^\\circ\\). Cạnh nào dài nhất?",
+      "options": [
+        "\\(AB\\)",
+        "\\(BC\\)",
+        "\\(AC\\)",
+        "Ba cạnh bằng nhau."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "so-sanh-canh-goc"
+        ],
+        "type": "doi-dien-canh-goc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Góc lớn nhất là C (\\(75^\\circ\\)), cạnh đối diện C là AB nên AB dài nhất. BC đối diện A, AC đối diện B.",
+      "hints": [
+        "Cạnh lớn nhất đối diện góc lớn nhất.",
+        "Cạnh đối diện góc C là cạnh nối hai đỉnh còn lại A, B."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO14MICRO_017",
+      "card_id": "geo14-core-2",
+      "micro_role": "coverage",
+      "question": "P nằm trên đường trung trực của đoạn AB, với \\(PA=6\\text{ cm}\\). Kết luận nào chắc chắn đúng?",
+      "options": [
+        "\\(PB=6\\text{ cm}\\).",
+        "P là trung điểm AB.",
+        "P nằm giữa A và B.",
+        "\\(PB=12\\text{ cm}\\)."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "cach-deu-dinh"
+        ],
+        "type": "tinh-chat-cach-deu-dinh",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Mọi điểm trên đường trung trực AB cách đều A và B, nên \\(PB=PA=6\\) cm. Chỉ biết cách đều chưa đủ kết luận P thuộc đoạn AB hay là trung điểm.",
+      "hints": [
+        "Phân biệt khoảng cách đến hai đầu đoạn với vị trí trung điểm.",
+        "Tính chất đường trung trực cho PA=PB."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
       }
     }
   ]
