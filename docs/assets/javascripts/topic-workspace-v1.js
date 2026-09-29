@@ -259,9 +259,13 @@ const mountMicro=(host,card,questions,graph)=>{
    const box=document.createElement("div");box.className="topic-micro-summary";
    const strong=document.createElement("strong");strong.textContent="Đã làm "+answered()+"/"+questions.length+" câu · Đúng "+records.filter((r,i)=>r.selected===questions[i].answer).length+"/"+answered();
    const note=document.createElement("p");note.textContent="Chỉ các câu đã trả lời được ghi nhận. Đây là luyện tập có trợ giúp, không phải bài tự kiểm tra độc lập.";
-   box.append(strong,note,make("← Xem lại các câu","",()=>{index=0;render()}));host.appendChild(box);return;
+   box.append(strong,note,skillOverview(card,questions),make("← Xem lại các câu","",()=>{index=0;render()}));host.appendChild(box);return;
   }
   const q=questions[index],st=records[index],correct=st.selected===q.answer;
+  const assessed=primarySkill(q);
+  const skill=document.createElement("div");skill.className="topic-micro-assessed-skill";
+  skill.dataset.primarySkill=assessed||"unmapped";
+  skill.textContent="Kỹ năng chính của câu: "+(assessed?skillLabel(assessed):"Chưa có tag kỹ năng cần rà soát");
   const meta=document.createElement("div");meta.className="topic-micro-meta";
   meta.textContent="Câu "+(index+1)+"/"+questions.length+" · "+(q.micro_role==="base"?"Nền tảng":q.micro_role==="trap"?"Bẫy sai điển hình":"Vận dụng");
   const pager=document.createElement("nav");pager.className="topic-micro-pager";pager.setAttribute("aria-label","Chọn câu hỏi");
@@ -334,7 +338,7 @@ const mountMicro=(host,card,questions,graph)=>{
   if(index===questions.length-1&&answered()<questions.length){
    const note=document.createElement("small");note.textContent="Chưa trả lời "+(questions.length-answered())+" câu. Bỏ qua không bị tính sai.";controls.appendChild(note);
   }
-  host.append(meta,pager,prompt,opts,tools,feedback,tutor,controls);typeset(host);
+  host.append(meta,skillOverview(card,questions),pager,skill,prompt,opts,tools,feedback,tutor,controls);typeset(host);
  };
  render();
 };
