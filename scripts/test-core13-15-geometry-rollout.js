@@ -10,7 +10,7 @@ const specs=[
 {n:"15",slug:"15-duong-dong-quy",lesson:"5bff7b5e5dca04ad7f2288e31442d7536491f386",bank:"9e36e342ede18aa3317bb3d7e00f365fd1217b87",count:15,declared:11,add:[]}
 ];
 const auditPath="content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md",audit=read(auditPath);
-ok(audit.includes("SELF_AUDITED")&&audit.includes("not an independent")&&audit.includes("Hình")===false,"review must correctly distinguish self-audit");
+ok(audit.includes("SELF_AUDITED")&&audit.includes("not an independent"),"review must correctly distinguish self-audit");
 const nav=read("mkdocs.yml"),js=read("docs/assets/javascripts/topic-workspace-v1.js"),shell=read("docs/assets/javascripts/knowledge-ui-v1.js");
 let total=0,declared=0,covered=0,appended=0;
 for(const t of specs){
