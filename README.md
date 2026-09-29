@@ -15,6 +15,10 @@ Website: https://tma2015.github.io/roadmap-toan-thcs/
 
 Repository: https://github.com/TMA2015/roadmap-toan-thcs
 
-**Self-Learning Math là tên hiển thị mới.** Tên repo, GitHub Pages path, URL của các chuyên đề, ID bài tập, cấu hình Firebase/App Check, Gemini và dữ liệu học sinh đều được giữ nguyên. Không đổi slug kỹ thuật khi chưa thiết kế và kiểm thử chuyển hướng. Các tài liệu tên cũ được giữ làm dấu vết nguồn.
+**Self-Learning Math là tên sản phẩm chính thức của G Learning; AI Tutor là một tính năng hỗ trợ.** Tên repo, GitHub Pages path, URL của các chuyên đề, ID bài tập, cấu hình Firebase/App Check, Gemini và dữ liệu học sinh đều được giữ nguyên. Không đổi slug kỹ thuật khi chưa thiết kế và kiểm thử chuyển hướng. Các tài liệu tên cũ được giữ làm dấu vết nguồn.
 
 Website dùng MkDocs Material, triển khai bằng GitHub Pages.
+
+## Nguồn quy tắc học thuật
+
+[Master Plan v1.1.1](governance/TOAN_THCS_MASTER_PLAN.md) là nguồn chuẩn cho nguyên tắc dài hạn; [hướng dẫn học sinh và phụ huynh](docs/huong-dan/phuong-phap-tu-hoc-va-danh-gia.md) là bản diễn giải công khai. Hồ sơ Batch và QA theo phiên bản được lưu riêng, không đưa tiến độ ngắn hạn vào Master Plan.
