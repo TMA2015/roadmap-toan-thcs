@@ -21,6 +21,12 @@
 3. **Owner QA Batch A:** kiểm tra desktop/iPad thực tế sau deploy và ghi rõ thiết bị/từng phát hiện. CĐ22 không gộp THPT-Bridge vào THCS readiness, CĐ25 không gộp kỹ năng thi với điểm Toán.
 4. B01–B07 taxonomy read-only ở ledger đã lưu vẫn có hiệu lực, sẽ tiếp tục sau khi đồng bộ UI/học thuật những phần còn thiếu; không merge các draft học thuật ngoài cổng approval.
 
+### Batch B CĐ03 — R1 candidate đã đóng gói, đang chờ phản biện
+
+- [Draft PR #180](https://github.com/TMA2015/roadmap-toan-thcs/pull/180), packet `MATH-CORE03-R1-20260930`, frozen source lesson blob `61df5dd2a1f352c50005d40147bb229344861ed8`. Một source NotebookLM có bài nguồn nguyên bản, mapping lớp 6/7 và ứng viên **5 card + 15 micro**; prompt chấm từng 5+15 ID riêng. Câu mới RAT03MICRO_001–015, key candidate A/B/C/D = 4/4/4/3, 12 assessed-skill occurrences. Không trùng ID 120 câu RAT03V1 cũ, không có exact-text clone với 120 đề nguồn (preflight tác giả; **chưa phải phản biện độc lập**).
+- Chưa merge/deploy PR #180, chưa sinh `topic03-learning-workspace.json`, Core route, micro bank chính thức hay thay data học sinh. Người dùng upload **duy nhất** `review-packets/core03/01_UPLOAD_TO_NOTEBOOKLM_CORE03_R1.md` vào NotebookLM; copy prompt `02_COPY_TO_NOTEBOOKLM_CHAT_R1.txt` vào Chat, rồi chuyển kết quả để đối soát. Trọng tâm grade6 đổi đơn vị là kỹ năng nền/Support hay Core assessed, điều kiện mẫu số và sự khác biệt tỉ lệ thuận/nghịch.
+- Sau NotebookLM R1: reconcile correction từng ID, targeted R2 khi nguồn sửa, sau đó mới có PR triển khai CĐ03 và browser QA. **Không tự coi author preflight = academic PASS**.
+
 ## Quyết định không được tự làm lệch
 
 - 25 chuyên đề là một Vertical Spine G6–G9, lớp/KNTT là overlay. Có thể mở rộng THPT, SAT/ACT, logic sau này; chia thêm thẻ CĐ20 không tạo chuyên đề thứ 26.
