@@ -469,6 +469,12 @@ body{letter-spacing:-.008em}
 .roadmap-topic-dialog__heading h2{margin:0;font-size:1rem;line-height:1.3;color:var(--roadmap-ink)}
 .roadmap-topic-dialog__close{flex:none;min-height:2.4rem;padding:.4rem .55rem;border:1px solid var(--roadmap-line);border-radius:.4rem;background:var(--roadmap-soft);color:var(--roadmap-ink);font:inherit;font-size:.69rem;cursor:pointer}
 .roadmap-topic-dialog__hint{margin:.45rem 0 .65rem;color:var(--roadmap-muted);font-size:.71rem;line-height:1.45;flex:0 0 auto}
+.roadmap-main-quick{flex:0 0 auto;margin:.25rem 0 .65rem;padding:.45rem .55rem;border:1px solid var(--roadmap-line);border-radius:.5rem;background:var(--roadmap-soft)}
+.roadmap-main-quick>summary{cursor:pointer;font-size:.75rem;font-weight:800;line-height:1.55;color:var(--roadmap-indigo)}
+.roadmap-main-quick__links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.35rem;margin:.5rem 0 .15rem}
+.roadmap-main-quick__links a{display:flex;align-items:center;justify-content:center;min-height:2.4rem;padding:.4rem .3rem;border:1px solid var(--roadmap-line);border-radius:.4rem;background:var(--roadmap-surface);color:var(--roadmap-ink)!important;text-align:center;text-decoration:none!important;font-size:.68rem;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.roadmap-main-quick__links a[aria-current="page"]{border-color:var(--roadmap-indigo);color:var(--roadmap-indigo)!important}
+@media(max-width:38rem){.roadmap-main-quick__links{grid-template-columns:repeat(2,minmax(0,1fr))}.roadmap-topic-dialog{max-height:calc(100dvh - 1rem)}}
 .roadmap-topic-dialog__list{display:grid;gap:.3rem;min-height:0;flex:1 1 auto;overflow-y:auto;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch}
 .roadmap-topic-dialog__list a{display:block;padding:.55rem .65rem;min-height:2.4rem;box-sizing:border-box;border-radius:.42rem;background:var(--roadmap-soft);color:var(--roadmap-ink)!important;font-size:.75rem;font-weight:650;text-decoration:none!important}
 .roadmap-topic-dialog__list a[aria-current="page"]{border:1px solid var(--roadmap-indigo);color:var(--roadmap-indigo)!important;font-weight:800}
