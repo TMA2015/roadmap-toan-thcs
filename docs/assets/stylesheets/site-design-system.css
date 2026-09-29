@@ -522,3 +522,11 @@ body{letter-spacing:-.008em}
 .exam-notation-toolbar .exam-notation-button{display:inline-flex;align-items:center;justify-content:center;min-width:2.75rem;min-height:2.5rem;padding:.2rem .45rem;font-size:.72rem;background:var(--roadmap-soft);color:var(--roadmap-ink)}
 .exam-notation-toolbar .exam-notation-button:hover,.exam-notation-toolbar .exam-notation-button:focus-visible{border-color:var(--roadmap-indigo)}
 @media(max-width:38rem){.exam-notation-toolbar .exam-notation-button{flex:1 1 2.65rem}}
+
+
+/* The dedicated Core pilot has a fourth step. Other 24 topics retain three. */
+.lesson-switcher-steps--four{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:40rem){
+ .lesson-switcher-steps--four{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .lesson-switcher-steps--four a{min-height:2.45rem}
+}
