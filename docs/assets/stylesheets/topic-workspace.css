@@ -195,3 +195,143 @@
 .topic-micro-assessed-skill{font-size:.76rem;font-weight:750;line-height:1.5;margin:.42rem 0;padding:.35rem .55rem;border-left:.2rem solid var(--md-primary-fg-color);background:var(--md-code-bg-color);overflow-wrap:anywhere}
 @media(max-width:35rem){.topic-core-skill-overview{grid-template-columns:minmax(0,1fr)}.topic-core-coverage-count{text-align:left}.topic-core-skill-list,.topic-core-coverage-gap{grid-column:1}.topic-core-card-actions .practice-btn{font-size:.7rem}}
 @media print{.topic-core-modal-modes{display:none!important}}
+
+/* Academic soft cards · visual-only enhancement (2026-09-29).
+   Shared by all Core workspaces; lesson/practice modal and scoring stay intact. */
+.topic-core-card-grid{gap:.8rem;align-items:stretch}
+.topic-core-card{
+ --core-accent:#4268ac;
+ --core-badge-ink:#fff;
+ --core-header-wash:14%;
+ --core-shadow:rgba(29,46,78,.08);
+ box-sizing:border-box;
+ padding:0;
+ min-width:0;
+ overflow:hidden;
+ isolation:isolate;
+ border:1px solid color-mix(in srgb,var(--core-accent) 24%,var(--md-default-bg-color));
+ border-radius:.9rem;
+ background:linear-gradient(160deg,color-mix(in srgb,var(--core-accent) 5%,var(--md-default-bg-color)),var(--md-default-bg-color) 75%);
+ box-shadow:0 2px 8px var(--core-shadow);
+ transition:border-color .16s ease,box-shadow .16s ease,transform .16s ease;
+}
+.topic-core-card:nth-child(5n+1){--core-accent:#4268ac}
+.topic-core-card:nth-child(5n+2){--core-accent:#795eaa}
+.topic-core-card:nth-child(5n+3){--core-accent:#247c77}
+.topic-core-card:nth-child(5n+4){--core-accent:#a36d42}
+.topic-core-card:nth-child(5n+5){--core-accent:#527a99}
+.topic-core-card::before{
+ content:"";position:absolute;inset:0 0 auto;height:3px;
+ background:var(--core-accent);opacity:.82;z-index:1;pointer-events:none
+}
+.topic-core-card-main{display:flex;flex-direction:column;gap:0;min-height:100%;height:100%}
+.topic-core-card-header{
+ display:flex;flex-direction:column;gap:.48rem;
+ padding:.82rem .85rem .73rem;
+ background:linear-gradient(125deg,
+  color-mix(in srgb,var(--core-accent) var(--core-header-wash),var(--md-default-bg-color)),
+  color-mix(in srgb,var(--core-accent) 5%,var(--md-default-bg-color)));
+ border-bottom:1px solid color-mix(in srgb,var(--core-accent) 18%,var(--md-default-bg-color));
+}
+.topic-core-card-top{grid-template-columns:1.85rem minmax(0,1fr);gap:.48rem;align-items:center}
+.topic-core-card-number{
+ width:1.85rem;height:1.85rem;flex-basis:1.85rem;
+ color:var(--core-badge-ink);background:var(--core-accent);
+ font-size:.76rem;font-weight:850;
+ box-shadow:0 2px 5px color-mix(in srgb,var(--core-accent) 28%,transparent)
+}
+.topic-core-card-lesson{
+ font-size:.66rem;font-weight:750;opacity:1;
+ color:color-mix(in srgb,var(--core-accent) 62%,var(--md-default-fg-color));
+}
+.topic-core-card h3{
+ min-height:0;margin:0;font-size:.84rem;line-height:1.36;
+ color:var(--md-default-fg-color);font-weight:800
+}
+.topic-core-card-content{
+ display:flex;flex:1 1 auto;flex-direction:column;min-width:0;
+ gap:.48rem;padding:.72rem .8rem .78rem;
+}
+.topic-core-card-content>.topic-core-prereq{
+ margin:0;min-height:0;opacity:.78;
+ font-size:.66rem;line-height:1.5;color:var(--md-default-fg-color);
+}
+.topic-core-card-content>.topic-core-card-meta{
+ margin-top:auto;gap:.28rem;
+}
+.topic-core-card-meta span{
+ min-height:1.5rem;padding:.22rem .42rem;
+ background:color-mix(in srgb,var(--core-accent) 8%,var(--md-default-bg-color));
+ border:1px solid color-mix(in srgb,var(--core-accent) 15%,var(--md-default-bg-color));
+ color:var(--md-default-fg-color);font-size:.62rem;line-height:1.3;
+ white-space:normal;
+}
+.topic-core-card-meta .topic-core-card-coverage{
+ font-weight:800;background:color-mix(in srgb,var(--core-accent) 15%,var(--md-default-bg-color));
+}
+.topic-core-card-gap{margin:0;font-size:.65rem;line-height:1.45}
+.topic-core-card-actions{gap:.42rem;margin-top:.3rem}
+.topic-core-card-actions .practice-btn{
+ min-height:44px;padding:.48rem .42rem;
+ border-radius:.5rem;font-size:.73rem;line-height:1.4;
+ transition:border-color .16s ease,background-color .16s ease,box-shadow .16s ease
+}
+.topic-core-card-actions .topic-core-teach-start{
+ background:var(--md-default-bg-color);
+ border-color:color-mix(in srgb,var(--core-accent) 35%,var(--md-default-bg-color));
+}
+.topic-core-card-actions .topic-core-practice-start{
+ background:color-mix(in srgb,var(--core-accent) 13%,var(--md-default-bg-color));
+ border-color:color-mix(in srgb,var(--core-accent) 43%,var(--md-default-bg-color));
+ font-weight:800;
+}
+.topic-core-card:focus-within{
+ border-color:color-mix(in srgb,var(--core-accent) 55%,var(--md-default-bg-color));
+ box-shadow:0 4px 14px var(--core-shadow);
+}
+@media(hover:hover) and (pointer:fine){
+ .topic-core-card:hover{
+  border-color:color-mix(in srgb,var(--core-accent) 53%,var(--md-default-bg-color));
+  box-shadow:0 7px 20px var(--core-shadow)
+ }
+ .topic-core-card-actions .practice-btn:hover{
+  border-color:var(--core-accent);
+  box-shadow:0 2px 7px var(--core-shadow)
+ }
+}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .topic-core-card:hover{transform:translateY(-2px)}
+}
+/* Limit density: five narrow cards in one row made text and action targets cramped. */
+@container corejourney (min-width:34rem){
+ .topic-core-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@container corejourney (min-width:48rem){
+ .topic-core-card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@container corejourney (min-width:64rem){
+ .topic-core-card-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+ .topic-core-card-header{padding:.82rem .85rem .73rem}
+ .topic-core-card-content{padding:.72rem .8rem .78rem}
+ .topic-core-card h3{min-height:0;font-size:.84rem;line-height:1.36}
+ .topic-core-prereq-full{display:block}
+ .topic-core-prereq-compact{display:none}
+ .topic-core-card-content>.topic-core-prereq{min-height:0;font-size:.66rem}
+ .topic-core-card-meta{gap:.28rem}
+ .topic-core-card-meta span{font-size:.62rem;padding:.22rem .42rem}
+ .topic-core-card-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .topic-core-card-actions .practice-btn{min-height:44px;font-size:.73rem}
+}
+[data-md-color-scheme="slate"] .topic-core-card{
+ --core-badge-ink:#132136;
+ --core-header-wash:19%;
+ --core-shadow:rgba(0,0,0,.21);
+}
+[data-md-color-scheme="slate"] .topic-core-card:nth-child(5n+1){--core-accent:#95b5f5}
+[data-md-color-scheme="slate"] .topic-core-card:nth-child(5n+2){--core-accent:#c2a8f3}
+[data-md-color-scheme="slate"] .topic-core-card:nth-child(5n+3){--core-accent:#79cabe}
+[data-md-color-scheme="slate"] .topic-core-card:nth-child(5n+4){--core-accent:#edbd88}
+[data-md-color-scheme="slate"] .topic-core-card:nth-child(5n+5){--core-accent:#a2c7df}
+@media(prefers-reduced-motion:reduce){
+ .topic-core-card,.topic-core-card-actions .practice-btn{transition:none;transform:none}
+}
