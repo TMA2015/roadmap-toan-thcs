@@ -155,5 +155,871 @@
       "review_status": "DRAFT_AWAITING_INDEPENDENT_REVIEW",
       "source_reference": "docs/kien-thuc/07-phan-thuc-dai-so/index.md"
     }
-  ]
+  ],
+  "review_basis": {
+    "description": "Exact source snapshot supplied so an independent reviewer can evaluate without guessing repository contents.",
+    "workspace_sha": "d01c09dfe313939a19f7f2562bfe32d3fef02c0a",
+    "bank_sha": "077d3e46a345343cf9219c7f46fa6b56a38d3b42",
+    "lesson_sha": "f1fb2e8cd014c000ea0f5f5f9c58f14dc3907f81",
+    "original_core_cards": [
+      {
+        "id": "pt07-core-1",
+        "order": 1,
+        "title": "Khái niệm & điều kiện xác định",
+        "kntt_lessons": [
+          "Bài 21"
+        ],
+        "layer": "KNTT-Core",
+        "skills": [
+          "nhan-biet-phan-thuc",
+          "dieu-kien-xac-dinh",
+          "hai-phan-thuc-bang-nhau",
+          "tinh-gia-tri-phan-thuc"
+        ],
+        "prerequisites": [],
+        "micro_practice": [
+          "RAT07MICRO_001",
+          "RAT07MICRO_002",
+          "RAT07MICRO_003"
+        ],
+        "misconceptions": [
+          "dkxd-sai-doi-tuong"
+        ]
+      },
+      {
+        "id": "pt07-core-2",
+        "order": 2,
+        "title": "Tính chất cơ bản & rút gọn",
+        "kntt_lessons": [
+          "Bài 22"
+        ],
+        "layer": "KNTT-Core",
+        "skills": [
+          "doi-dau-phan-thuc",
+          "phan-tich-tu-mau",
+          "rut-gon-phan-thuc"
+        ],
+        "prerequisites": [
+          "nhan-tu-chung",
+          "hieu-hai-binh-phuong"
+        ],
+        "micro_practice": [
+          "RAT07MICRO_004",
+          "RAT07MICRO_005",
+          "RAT07MICRO_006"
+        ],
+        "misconceptions": [
+          "triet-tieu-hang-tu",
+          "doi-dau-khong-day-du"
+        ]
+      },
+      {
+        "id": "pt07-core-3",
+        "order": 3,
+        "title": "Quy đồng mẫu thức",
+        "kntt_lessons": [
+          "Bài 22"
+        ],
+        "layer": "KNTT-Core",
+        "skills": [
+          "quy-dong-mau-thuc"
+        ],
+        "prerequisites": [
+          "phan-tich-tu-mau"
+        ],
+        "micro_practice": [
+          "RAT07MICRO_007",
+          "RAT07MICRO_008",
+          "RAT07MICRO_009"
+        ],
+        "misconceptions": [
+          "mtc-chua-toi-uu",
+          "quen-nhan-tu-phu"
+        ]
+      },
+      {
+        "id": "pt07-core-4",
+        "order": 4,
+        "title": "Phép cộng & phép trừ",
+        "kntt_lessons": [
+          "Bài 23"
+        ],
+        "layer": "KNTT-Core",
+        "skills": [
+          "cong-tru-phan-thuc"
+        ],
+        "prerequisites": [
+          "quy-dong-mau-thuc",
+          "bo-ngoac-dau",
+          "cong-tru-da-thuc"
+        ],
+        "micro_practice": [
+          "RAT07MICRO_010",
+          "RAT07MICRO_011",
+          "RAT07MICRO_012"
+        ],
+        "misconceptions": [
+          "tru-khong-doi-dau-tu-thuc"
+        ]
+      },
+      {
+        "id": "pt07-core-5",
+        "order": 5,
+        "title": "Phép nhân & phép chia",
+        "kntt_lessons": [
+          "Bài 24"
+        ],
+        "layer": "KNTT-Core",
+        "skills": [
+          "nhan-phan-thuc",
+          "chia-phan-thuc"
+        ],
+        "prerequisites": [
+          "phan-tich-tu-mau",
+          "rut-gon-phan-thuc"
+        ],
+        "micro_practice": [
+          "RAT07MICRO_013",
+          "RAT07MICRO_014",
+          "RAT07MICRO_015"
+        ],
+        "misconceptions": [
+          "chia-khong-nghich-dao",
+          "quen-dieu-kien-so-chia"
+        ]
+      }
+    ],
+    "existing_micro_questions": [
+      {
+        "id": "RAT07MICRO_001",
+        "card_id": "pt07-core-1",
+        "micro_role": "base",
+        "question": "Khẳng định nào đúng về \\(\\frac{x+2}{x^2+1}\\)?",
+        "options": [
+          "Là phân thức đại số vì tử và mẫu đều là đa thức, mẫu không phải đa thức 0.",
+          "Không phải phân thức vì mẫu có chứa biến.",
+          "Chỉ là phân thức khi \\(x=0\\).",
+          "Là một phương trình."
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "nhan-biet-phan-thuc"
+          ],
+          "type": "nhan-biet-phan-thuc",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "basic",
+        "explanation": "Đây là phân thức đại số vì \\(x+2\\) và \\(x^2+1\\) đều là đa thức, còn mẫu không phải đa thức 0.",
+        "hints": [
+          "Nhớ dạng \\(A/B\\), trong đó \\(A,B\\) là đa thức và \\(B\\) không phải đa thức 0.",
+          "Mẫu có chứa biến vẫn có thể là mẫu của một phân thức đại số."
+        ],
+        "option_evidence": {},
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        }
+      },
+      {
+        "id": "RAT07MICRO_002",
+        "card_id": "pt07-core-1",
+        "micro_role": "trap",
+        "question": "Tìm điều kiện xác định của \\(P=\\frac{x+1}{x(x-2)}\\).",
+        "options": [
+          "\\(x\\ne0\\) và \\(x\\ne2\\)",
+          "\\(x\\ne2\\)",
+          "\\(x\\ne-1\\)",
+          "\\(x\\ne0\\)"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "dieu-kien-xac-dinh"
+          ],
+          "type": "dkxd-tich-nhan-tu",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "intermediate",
+        "explanation": "Mẫu \\(x(x-2)\\ne0\\), nên đồng thời \\(x\\ne0\\) và \\(x\\ne2\\).",
+        "hints": [
+          "Chỉ xét các giá trị làm mẫu bằng 0.",
+          "Một tích khác 0 khi từng nhân tử đều khác 0."
+        ],
+        "option_evidence": {
+          "1": {
+            "signal": "dkxd-thieu-nhan-tu",
+            "signal_weight": 2,
+            "feedback_hint": "Em đã loại một nghiệm của mẫu nhưng còn bỏ sót nhân tử x."
+          },
+          "2": {
+            "signal": "dkxd-nham-tu-so",
+            "signal_weight": 2,
+            "feedback_hint": "ĐKXĐ được tìm từ mẫu thức, không phải từ nghiệm của tử thức."
+          },
+          "3": {
+            "signal": "dkxd-thieu-nhan-tu",
+            "signal_weight": 2,
+            "feedback_hint": "Em đã loại một nghiệm của mẫu nhưng còn bỏ sót nhân tử x-2."
+          }
+        },
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        }
+      },
+      {
+        "id": "RAT07MICRO_003",
+        "card_id": "pt07-core-1",
+        "micro_role": "apply",
+        "question": "Cho \\(P=\\frac{x+1}{x-3}\\). Giá trị của \\(P\\) tại \\(x=3\\) là:",
+        "options": [
+          "Không xác định",
+          "0",
+          "4",
+          "1"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "tinh-gia-tri-phan-thuc"
+          ],
+          "type": "tinh-gia-tri-co-dkxd",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "basic",
+        "explanation": "Tại \\(x=3\\), mẫu \\(x-3=0\\), nên phân thức không xác định và không được thay số để tính giá trị.",
+        "hints": [
+          "Kiểm tra điều kiện xác định trước khi thay số.",
+          "Tại \\(x=3\\), hãy tính riêng mẫu thức."
+        ],
+        "option_evidence": {
+          "1": {
+            "signal": "dkxd-thay-gia-tri-bi-loai",
+            "signal_weight": 2,
+            "feedback_hint": "Mẫu bằng 0 thì phân thức không có giá trị, không thể coi kết quả là 0."
+          }
+        },
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        },
+        "supporting_skills": [
+          "dieu-kien-xac-dinh"
+        ]
+      },
+      {
+        "id": "RAT07MICRO_004",
+        "card_id": "pt07-core-2",
+        "micro_role": "base",
+        "question": "Rút gọn \\(\\frac{4x^2}{2x}\\) với \\(x\\ne0\\).",
+        "options": [
+          "\\(2x\\)",
+          "\\(2x^2\\)",
+          "\\(2\\)",
+          "\\(x\\)"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "rut-gon-phan-thuc"
+          ],
+          "type": "rut-gon-don-thuc",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "basic",
+        "explanation": "Chia hệ số \\(4:2=2\\) và \\(x^2:x=x\\), được \\(2x\\).",
+        "hints": [
+          "Tử và mẫu đang ở dạng tích nên có thể chia cho nhân tử chung.",
+          "Tách \\(4x^2=(2x)(2x)\\)."
+        ],
+        "option_evidence": {},
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        }
+      },
+      {
+        "id": "RAT07MICRO_005",
+        "card_id": "pt07-core-2",
+        "micro_role": "trap",
+        "question": "Rút gọn \\(\\frac{x^2-9}{x+3}\\) với \\(x\\ne-3\\).",
+        "options": [
+          "\\(x-3\\)",
+          "\\(x^2-3\\)",
+          "\\(x-9\\)",
+          "\\(x+3\\)"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "rut-gon-phan-thuc"
+          ],
+          "type": "rut-gon-hieu-hai-binh-phuong",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "intermediate",
+        "explanation": "\\(x^2-9=(x-3)(x+3)\\). Rút nhân tử chung \\(x+3\\) được \\(x-3\\), vẫn giữ \\(x\\ne-3\\).",
+        "hints": [
+          "Không rút gọn qua dấu trừ; hãy phân tích tử thành nhân tử trước.",
+          "Dùng \\(a^2-b^2=(a-b)(a+b)\\) với \\(b=3\\)."
+        ],
+        "option_evidence": {
+          "1": {
+            "signal": "triet-tieu-sai-hang-tu",
+            "signal_weight": 1,
+            "feedback_hint": "Chỉ được triệt tiêu nhân tử chung sau khi đưa tử và mẫu về dạng tích."
+          },
+          "2": {
+            "signal": "hieu-hai-binh-phuong-sai",
+            "signal_weight": 2,
+            "feedback_hint": "Hãy kiểm tra lại hằng đẳng thức hiệu hai bình phương trước khi rút gọn."
+          }
+        },
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        },
+        "supporting_skills": [
+          "phan-tich-tu-mau",
+          "hieu-hai-binh-phuong"
+        ]
+      },
+      {
+        "id": "RAT07MICRO_006",
+        "card_id": "pt07-core-2",
+        "micro_role": "apply",
+        "question": "Với \\(x\\ne y\\), rút gọn \\(\\frac{x-y}{y-x}\\).",
+        "options": [
+          "\\(-1\\)",
+          "\\(1\\)",
+          "\\(\\frac{x}{y}\\)",
+          "\\(\\frac{y}{x}\\)"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "doi-dau-phan-thuc"
+          ],
+          "type": "doi-dau-mau",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "intermediate",
+        "explanation": "Vì \\(y-x=-(x-y)\\), nên \\(\\frac{x-y}{y-x}=-1\\).",
+        "hints": [
+          "Hai biểu thức \\(x-y\\) và \\(y-x\\) là hai số đối nhau.",
+          "Viết \\(y-x=-(x-y)\\) rồi rút gọn."
+        ],
+        "option_evidence": {
+          "1": {
+            "signal": "doi-dau-khong-day-du",
+            "signal_weight": 2,
+            "feedback_hint": "Khi đổi thứ tự hai hạng tử, cần xuất hiện dấu trừ."
+          }
+        },
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        },
+        "supporting_skills": [
+          "rut-gon-phan-thuc"
+        ]
+      },
+      {
+        "id": "RAT07MICRO_007",
+        "card_id": "pt07-core-3",
+        "micro_role": "base",
+        "question": "Mẫu thức chung nhỏ nhất của hai mẫu \\(6x^2\\) và \\(4x^3\\) là:",
+        "options": [
+          "\\(12x^3\\)",
+          "\\(12x^2\\)",
+          "\\(24x^5\\)",
+          "\\(2x^2\\)"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "quy-dong-mau-thuc"
+          ],
+          "type": "chon-mtc-don-thuc",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "intermediate",
+        "explanation": "BCNN của 6 và 4 là 12; với nhân tử \\(x\\), lấy số mũ lớn nhất là 3. Do đó MTC là \\(12x^3\\).",
+        "hints": [
+          "Tách phần hệ số và phần biến.",
+          "Lấy BCNN của hệ số và số mũ lớn nhất của mỗi nhân tử."
+        ],
+        "option_evidence": {
+          "1": {
+            "signal": "mtc-sai-so-mu",
+            "signal_weight": 2,
+            "feedback_hint": "Khi tìm MTC, số mũ của một nhân tử phải đủ lớn để chia hết cho mọi mẫu."
+          },
+          "2": {
+            "signal": "mtc-khong-toi-uu",
+            "signal_weight": 2,
+            "feedback_hint": "Không cần nhân cộng dồn toàn bộ hai mẫu; hãy chọn MTC nhỏ nhất vẫn chia hết cho cả hai."
+          },
+          "3": {
+            "signal": "mtc-nham-ucln",
+            "signal_weight": 2,
+            "feedback_hint": "Quy đồng cần một bội chung của các mẫu, không phải ước chung."
+          }
+        },
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        }
+      },
+      {
+        "id": "RAT07MICRO_008",
+        "card_id": "pt07-core-3",
+        "micro_role": "trap",
+        "question": "MTC nhỏ nhất của \\((x-1)^2\\) và \\(x(x-1)\\) là:",
+        "options": [
+          "\\(x(x-1)^2\\)",
+          "\\(x(x-1)\\)",
+          "\\(x(x-1)^3\\)",
+          "\\(x^2(x-1)^2\\)"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "quy-dong-mau-thuc"
+          ],
+          "type": "chon-mtc-da-thuc",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "intermediate",
+        "explanation": "MTC phải chứa \\(x\\) và chứa \\((x-1)\\) với số mũ lớn nhất là 2, nên MTC là \\(x(x-1)^2\\).",
+        "hints": [
+          "Liệt kê các nhân tử khác nhau xuất hiện trong hai mẫu.",
+          "Với mỗi nhân tử, lấy số mũ lớn nhất xuất hiện."
+        ],
+        "option_evidence": {
+          "1": {
+            "signal": "mtc-sai-so-mu",
+            "signal_weight": 2,
+            "feedback_hint": "MTC này chưa chứa đủ \\((x-1)^2\\) để chia hết cho mẫu thứ nhất."
+          },
+          "2": {
+            "signal": "mtc-khong-toi-uu",
+            "signal_weight": 2,
+            "feedback_hint": "MTC này chia hết cho cả hai mẫu nhưng đang thừa một nhân tử \\(x-1\\)."
+          },
+          "3": {
+            "signal": "mtc-khong-toi-uu",
+            "signal_weight": 2,
+            "feedback_hint": "MTC này chia hết cho cả hai mẫu nhưng đang thừa một nhân tử \\(x\\)."
+          }
+        },
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        }
+      },
+      {
+        "id": "RAT07MICRO_009",
+        "card_id": "pt07-core-3",
+        "micro_role": "apply",
+        "question": "Quy đồng \\(\\frac1{x^2-4}\\) và \\(\\frac1{x+2}\\) với \\(x\\ne\\pm2\\). Cặp nào đúng?",
+        "options": [
+          "\\(\\frac1{(x-2)(x+2)}\\) và \\(\\frac{x-2}{(x-2)(x+2)}\\)",
+          "\\(\\frac1{(x-2)(x+2)}\\) và \\(\\frac1{(x-2)(x+2)}\\)",
+          "\\(\\frac{x+2}{(x-2)(x+2)}\\) và \\(\\frac{x-2}{(x-2)(x+2)}\\)",
+          "\\(\\frac1{x-2}\\) và \\(\\frac1{x+2}\\)"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "quy-dong-mau-thuc"
+          ],
+          "type": "quy-dong-sau-phan-tich",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "intermediate",
+        "explanation": "Phân tích \\(x^2-4=(x-2)(x+2)\\). Phân thức thứ hai cần nhân cả tử và mẫu với \\(x-2\\).",
+        "hints": [
+          "Phân tích mẫu \\(x^2-4\\) trước.",
+          "Khi nhân mẫu với nhân tử phụ, phải nhân tử với cùng nhân tử đó."
+        ],
+        "option_evidence": {
+          "1": {
+            "signal": "quy-dong-quen-nhan-tu-phu",
+            "signal_weight": 2,
+            "feedback_hint": "Khi đổi mẫu, tử thức cũng phải nhân với cùng nhân tử phụ."
+          }
+        },
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        },
+        "supporting_skills": [
+          "phan-tich-tu-mau",
+          "hieu-hai-binh-phuong"
+        ]
+      },
+      {
+        "id": "RAT07MICRO_010",
+        "card_id": "pt07-core-4",
+        "micro_role": "base",
+        "question": "Tính \\(\\frac{2x+1}{x+2}+\\frac{x-3}{x+2}\\), với \\(x\\ne-2\\).",
+        "options": [
+          "\\(\\frac{3x-2}{x+2}\\)",
+          "\\(\\frac{3x+4}{x+2}\\)",
+          "\\(\\frac{x-2}{x+2}\\)",
+          "\\(\\frac{3x-2}{2x+4}\\)"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "cong-tru-phan-thuc"
+          ],
+          "type": "cong-cung-mau",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "basic",
+        "explanation": "Hai phân thức cùng mẫu nên cộng tử: \\((2x+1)+(x-3)=3x-2\\), giữ nguyên mẫu \\(x+2\\).",
+        "hints": [
+          "Cùng mẫu thì giữ nguyên mẫu.",
+          "Chỉ cộng hai tử thức rồi thu gọn các hạng tử đồng dạng."
+        ],
+        "option_evidence": {},
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        }
+      },
+      {
+        "id": "RAT07MICRO_011",
+        "card_id": "pt07-core-4",
+        "micro_role": "trap",
+        "question": "Tính \\(\\frac{2x+1}{x-1}-\\frac{x-3}{x-1}\\), với \\(x\\ne1\\).",
+        "options": [
+          "\\(\\frac{x+4}{x-1}\\)",
+          "\\(\\frac{x-2}{x-1}\\)",
+          "\\(\\frac{x-4}{x-1}\\)",
+          "\\(\\frac{3x-2}{x-1}\\)"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "cong-tru-phan-thuc"
+          ],
+          "type": "tru-cung-mau-bo-ngoac",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "intermediate",
+        "explanation": "\\((2x+1)-(x-3)=2x+1-x+3=x+4\\). Dấu trừ phải đổi dấu cả \\(x\\) và \\(-3\\) trong ngoặc.",
+        "hints": [
+          "Viết phép trừ tử thức bằng ngoặc trước khi bỏ ngoặc.",
+          "\\(-(x-3)=-x+3\\)."
+        ],
+        "option_evidence": {
+          "1": {
+            "signal": "bo-ngoac-dau-tru-tu-thuc",
+            "signal_weight": 2,
+            "feedback_hint": "Dấu trừ trước ngoặc phải đổi dấu mọi hạng tử trong tử thức thứ hai."
+          }
+        },
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        },
+        "supporting_skills": [
+          "bo-ngoac-dau"
+        ]
+      },
+      {
+        "id": "RAT07MICRO_012",
+        "card_id": "pt07-core-4",
+        "micro_role": "apply",
+        "question": "Tính \\(\\frac1x-\\frac1{x+1}\\), với \\(x\\ne0,-1\\).",
+        "options": [
+          "\\(\\frac1{x(x+1)}\\)",
+          "\\(-\\frac1{x(x+1)}\\)",
+          "\\(\\frac{2x+1}{x(x+1)}\\)",
+          "0"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "cong-tru-phan-thuc"
+          ],
+          "type": "tru-khac-mau",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "intermediate",
+        "explanation": "Quy đồng: \\(\\frac{x+1}{x(x+1)}-\\frac{x}{x(x+1)}=\\frac1{x(x+1)}\\).",
+        "hints": [
+          "MTC là \\(x(x+1)\\).",
+          "Sau quy đồng, tử là \\((x+1)-x\\)."
+        ],
+        "option_evidence": {
+          "1": {
+            "signal": "cong-tru-phan-thuc-nham-dau",
+            "signal_weight": 1,
+            "feedback_hint": "Kiểm tra thứ tự phép trừ sau khi quy đồng."
+          },
+          "2": {
+            "signal": "cong-tru-phan-thuc-nham-phep",
+            "signal_weight": 2,
+            "feedback_hint": "Tử \\(2x+1\\) xuất hiện khi cộng, không phải khi trừ hai phân thức này."
+          }
+        },
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        },
+        "supporting_skills": [
+          "quy-dong-mau-thuc"
+        ]
+      },
+      {
+        "id": "RAT07MICRO_013",
+        "card_id": "pt07-core-5",
+        "micro_role": "base",
+        "question": "Tính \\(\\frac{x}{x+1}\\cdot\\frac{x+1}{2x}\\), với \\(x\\ne0,-1\\).",
+        "options": [
+          "\\(\\frac12\\)",
+          "2",
+          "\\(\\frac{x^2}{2(x+1)^2}\\)",
+          "\\(\\frac{x+1}{2x}\\)"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "nhan-phan-thuc"
+          ],
+          "type": "nhan-va-rut-gon",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "basic",
+        "explanation": "Nhân tử với tử, mẫu với mẫu rồi rút các nhân tử chung \\(x\\) và \\(x+1\\), được \\(1/2\\).",
+        "hints": [
+          "Viết thành một tích rồi tìm nhân tử chung ở tử và mẫu.",
+          "Có thể rút gọn trước khi thực hiện phép nhân."
+        ],
+        "option_evidence": {},
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        }
+      },
+      {
+        "id": "RAT07MICRO_014",
+        "card_id": "pt07-core-5",
+        "micro_role": "trap",
+        "question": "Với \\(x\\ne0, y\\ne0\\), tính \\(\\frac{x}{y}:\\frac{x^2}{y^2}\\).",
+        "options": [
+          "\\(\\frac{y}{x}\\)",
+          "\\(\\frac{x^3}{y^3}\\)",
+          "\\(\\frac{x}{y}\\)",
+          "\\(\\frac{y^3}{x^3}\\)"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "chia-phan-thuc"
+          ],
+          "type": "chia-phan-thuc",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "intermediate",
+        "explanation": "Đổi phép chia thành nhân với nghịch đảo phân thức thứ hai: \\(\\frac{x}{y}\\cdot\\frac{y^2}{x^2}=\\frac{y}{x}\\).",
+        "hints": [
+          "Giữ nguyên phân thức thứ nhất.",
+          "Đảo phân thức thứ hai rồi chuyển dấu chia thành dấu nhân."
+        ],
+        "option_evidence": {
+          "1": {
+            "signal": "phep-chia-quen-nghich-dao",
+            "signal_weight": 2,
+            "feedback_hint": "Em đang nhân hai phân thức ban đầu; phép chia cần nghịch đảo phân thức thứ hai trước."
+          },
+          "3": {
+            "signal": "phep-chia-dao-sai-phan-thuc",
+            "signal_weight": 2,
+            "feedback_hint": "Chỉ nghịch đảo phân thức đứng sau dấu chia, không nghịch đảo phân thức thứ nhất."
+          }
+        },
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        }
+      },
+      {
+        "id": "RAT07MICRO_015",
+        "card_id": "pt07-core-5",
+        "micro_role": "apply",
+        "question": "Rút gọn \\(\\frac{x^2-1}{x}:\\frac{x+1}{2x}\\), với \\(x\\ne0,-1\\).",
+        "options": [
+          "\\(2(x-1)\\)",
+          "\\(2(x+1)\\)",
+          "\\(\\frac{x-1}{2}\\)",
+          "\\(2(x^2-1)\\)"
+        ],
+        "answer": 0,
+        "tags": {
+          "topic": "phan-thuc-dai-so",
+          "skill": [
+            "chia-phan-thuc"
+          ],
+          "type": "chia-ket-hop-rut-gon",
+          "layer": "KNTT-Core",
+          "grade": 8
+        },
+        "difficulty": "intermediate",
+        "explanation": "\\(x^2-1=(x-1)(x+1)\\). Đổi chia thành nhân nghịch đảo rồi rút \\(x\\) và \\(x+1\\), được \\(2(x-1)\\).",
+        "hints": [
+          "Phân tích \\(x^2-1\\) trước.",
+          "Đổi phép chia thành nhân với \\(\\frac{2x}{x+1}\\), rồi rút gọn các nhân tử chung."
+        ],
+        "option_evidence": {},
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "exam": {
+          "entrance10": "foundation",
+          "specialized": "none"
+        },
+        "supporting_skills": [
+          "phan-tich-tu-mau",
+          "rut-gon-phan-thuc"
+        ]
+      }
+    ],
+    "lesson_sections_3_to_5": "## 📖 3. Kiến thức cốt lõi\n\n### Infographic 2 – Điều kiện xác định và rút gọn\n\n![Infographic điều kiện xác định và rút gọn phân thức](../../assets/infographics/07/07-02-dieu-kien-rut-gon.svg)\n\n### Infographic 3 – Quy đồng và các phép tính\n\n![Infographic quy đồng và các phép tính phân thức](../../assets/infographics/07/07-03-quy-dong-phep-tinh.svg)\n\n### 3.1. Phân thức đại số là gì?\n\nPhân thức đại số có dạng:\n\n`A/B`\n\ntrong đó `A`, `B` là các đa thức và `B` là **đa thức khác đa thức 0**.\n\n- `A` gọi là **tử thức**.\n- `B` gọi là **mẫu thức**.\n\nKhi thay biến bằng một giá trị cụ thể, còn phải bảo đảm **giá trị của mẫu thức khác 0**.\n\nVí dụ:\n\n- `(x + 1)/(x - 2)`\n- `(2x² - 3x + 1)/(x² - 9)`\n- `5/(x + 4)`\n\nMột đa thức cũng có thể xem là một phân thức có mẫu bằng `1`.\n\n---\n\n### 3.2. Điều kiện xác định\n\nVới một giá trị cụ thể của biến, phân thức xác định khi giá trị của mẫu thức khác `0`.\n\nVí dụ:\n\n`A = (x + 1)/(x - 3)`\n\nĐiều kiện xác định:\n\n`x - 3 ≠ 0 ⇒ x ≠ 3`\n\nVới:\n\n`B = (x + 2)/(x² - 9)`\n\nTa có:\n\n`x² - 9 = (x - 3)(x + 3)`\n\nnên:\n\n`x ≠ 3` và `x ≠ -3`.\n\n!!! warning \"Quy tắc bắt buộc\"\n    Với bài có phân thức chứa biến ở mẫu, hãy tìm **điều kiện xác định trước khi rút gọn hoặc biến đổi**.\n\n---\n\n### 3.3. Hai phân thức bằng nhau\n\nVới `B`, `D` là các đa thức khác đa thức `0`, hai phân thức\n\n`A/B` và `C/D`\n\nbằng nhau khi:\n\n`A·D = B·C`\n\nnhư một đẳng thức đa thức. Khi thay biến bằng giá trị cụ thể, chỉ được so sánh trên **miền xác định chung**, tức là các giá trị làm cả `B` và `D` khác `0`.\n\nVí dụ:\n\n`(x + 1)/(x - 2) = (2x + 2)/(2x - 4)`\n\ntrên miền xác định `x ≠ 2`.\n\n---\n\n### 3.4. Tính chất cơ bản của phân thức\n\nVới `M` là một đa thức khác đa thức `0`:\n\n`A/B = (A·M)/(B·M)`\n\nKhi xét giá trị của biểu thức, cần giữ các điều kiện để cả hai mẫu thức đều khác `0`.\n\nNếu `N` là nhân tử chung khác đa thức `0` của cả tử và mẫu thì có thể rút gọn:\n\n`(A·N)/(B·N) = A/B`\n\ntrên các giá trị của biến mà phân thức ban đầu xác định.\n\nĐây là cơ sở của hai thao tác quan trọng:\n\n- **quy đồng**: nhân thêm nhân tử;\n- **rút gọn**: chia đi nhân tử chung.\n\n---\n\n!!! warning \"Miền xác định không tự mở rộng\"\n    Khi nhân cả tử và mẫu với một đa thức `M`, biểu thức mới có thể thêm các giá trị bị loại tại nghiệm của `M`. Ngược lại, khi rút gọn một nhân tử chung, không được lấy lại các giá trị đã bị loại ở phân thức ban đầu. Vì vậy mọi đẳng thức biến đổi phân thức phải được hiểu trên **miền xác định chung** của các biểu thức đang so sánh.\n\n### 3.5. Quy tắc đổi dấu\n\nTa có:\n\n`A/B = (-A)/(-B)`\n\nvà:\n\n`A/(-B) = (-A)/B = -(A/B)`.\n\nĐặc biệt:\n\n`x - a = -(a - x)`.\n\nVí dụ:\n\n`1/(x - 2) = -1/(2 - x)`.\n\nĐây là kỹ năng rất quan trọng khi quy đồng mẫu thức.\n\n---\n\n## 🔗 4. Kiến thức liên quan\n\n### Kiến thức cần nắm trước\n\n- [Chuyên đề 04 – Biểu thức và biến đổi đại số](../04-bieu-thuc-dai-so/index.md)\n- [Chuyên đề 05 – 7 Hằng đẳng thức đáng nhớ](../05-7-hang-dang-thuc/index.md)\n- [Chuyên đề 06 – Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/index.md)\n\n### Kiến thức sẽ sử dụng tiếp\n\n- [Chuyên đề 08 – Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md)\n\nChuỗi kiến thức chính:\n\n```text\n04. Biểu thức đại số\n        ↓\n05. Hằng đẳng thức\n        ↓\n06. Phân tích đa thức thành nhân tử\n        ↓\n07. PHÂN THỨC ĐẠI SỐ\n        ↓\n08. Phương trình và bất phương trình\n```\n\n---\n\n## 🧩 5. Các dạng bài cần nắm vững\n\n### Infographic 4 – Dạng bài trọng tâm và lỗi sai\n\n![Infographic dạng bài và lỗi sai Chuyên đề 07](../../assets/infographics/07/07-04-dang-bai-loi-sai.svg)\n\n### Dạng 1 – Tìm điều kiện xác định\n\n**Dấu hiệu:** mẫu thức có chứa biến.\n\n**Cách làm:**\n\n1. Cho từng mẫu thức khác `0`.\n2. Phân tích mẫu thành nhân tử nếu cần.\n3. Loại các giá trị làm mẫu bằng `0`.\n\n**Ví dụ:**\n\nTìm điều kiện xác định của:\n\n`A = (x + 2)/(x² - 5x + 6)`\n\nTa có:\n\n`x² - 5x + 6 = (x - 2)(x - 3)`\n\nVậy:\n\n`x ≠ 2`, `x ≠ 3`.\n\n---\n\n### Dạng 2 – Rút gọn phân thức\n\n**Dấu hiệu:** tử và mẫu có thể phân tích thành nhân tử chung.\n\n**Quy trình:**\n\n`phân tích tử, mẫu → nhận nhân tử chung → rút gọn → giữ nguyên điều kiện xác định ban đầu`\n\n**Ví dụ:**\n\n`A = (x² - 9)/(x² - 3x)`\n\nĐiều kiện:\n\n`x ≠ 0`, `x ≠ 3`.\n\nPhân tích:\n\n`x² - 9 = (x - 3)(x + 3)`\n\n`x² - 3x = x(x - 3)`\n\nSuy ra:\n\n`A = [(x - 3)(x + 3)]/[x(x - 3)] = (x + 3)/x`\n\nvới **điều kiện ban đầu**:\n\n`x ≠ 0`, `x ≠ 3`.\n\n!!! danger \"Không được làm mất điều kiện\"\n    Sau khi rút gọn, mẫu mới chỉ còn `x`, nhưng giá trị `x = 3` vẫn phải loại vì phân thức ban đầu không xác định tại đó.\n\n---\n\n### Dạng 3 – Đổi dấu để tạo mẫu giống nhau\n\nVí dụ:\n\n`A = 1/(x - 2) + 1/(2 - x)`\n\nVì:\n\n`2 - x = -(x - 2)`\n\nnên:\n\n`1/(2 - x) = -1/(x - 2)`\n\nDo đó:\n\n`A = 0`\n\nvới `x ≠ 2`.\n\n---\n\n### Dạng 4 – Quy đồng mẫu thức\n\n**Quy trình chuẩn:**\n\n1. Phân tích các mẫu thành nhân tử.\n2. Chọn mẫu thức chung.\n3. Xác định nhân tử phụ của từng mẫu.\n4. Nhân cả tử và mẫu với nhân tử phụ tương ứng.\n\n**Ví dụ:**\n\nQuy đồng:\n\n`1/[x(x - 1)]` và `1/[x(x + 1)]`.\n\nMẫu thức chung:\n\n`x(x - 1)(x + 1)`.\n\nTa được:\n\n`1/[x(x - 1)] = (x + 1)/[x(x - 1)(x + 1)]`\n\n`1/[x(x + 1)] = (x - 1)/[x(x - 1)(x + 1)]`.\n\n---\n\n### Dạng 5 – Cộng, trừ phân thức\n\n#### Cùng mẫu\n\n`A/M + B/M = (A + B)/M`\n\n`A/M - B/M = (A - B)/M`\n\n#### Khác mẫu\n\nPhải quy đồng trước.\n\n**Ví dụ:**\n\n`A = 1/x + 1/(x + 1)`\n\nĐiều kiện:\n\n`x ≠ 0`, `x ≠ -1`.\n\nQuy đồng:\n\n`A = (x + 1)/[x(x + 1)] + x/[x(x + 1)]`\n\n`= (2x + 1)/[x(x + 1)]`.\n\n---\n\n### Dạng 6 – Nhân phân thức\n\nQuy tắc:\n\n`A/B · C/D = (A·C)/(B·D)`.\n\nNên **phân tích thành nhân tử và rút gọn trước khi nhân khai triển**.\n\n**Ví dụ:**\n\n`A = (x² - 4)/(x² - x - 2) · (x - 2)/(x + 2)`\n\nĐiều kiện xác định:\n\n`x ≠ 2`, `x ≠ -1`, `x ≠ -2`.\n\nPhân tích:\n\n`x² - 4 = (x - 2)(x + 2)`\n\n`x² - x - 2 = (x - 2)(x + 1)`\n\nDo đó:\n\n`A = [(x - 2)(x + 2)]/[(x - 2)(x + 1)] · (x - 2)/(x + 2)`\n\n`= (x - 2)/(x + 1)`\n\nvới điều kiện ban đầu `x ≠ 2`, `x ≠ -1`, `x ≠ -2`.\n\nVí dụ này cho thấy nên phân tích và rút gọn nhân tử trước khi nghĩ đến khai triển.\n\n---\n\n### Dạng 7 – Chia phân thức\n\nQuy tắc:\n\n`A/B : C/D = A/B · D/C`\n\nNgoài điều kiện các mẫu khác `0`, cần thêm điều kiện **phân thức bị chia khác `0`**.\n\nVí dụ:\n\n`A/B : C/D`\n\ncần:\n\n- `B ≠ 0`\n- `D ≠ 0`\n- `C ≠ 0`\n\nvì `C/D` không được bằng `0`.\n\n---\n\n### Dạng 8 – Biểu thức nhiều phép tính\n\n**Thứ tự ưu tiên:**\n\n1. Điều kiện xác định.\n2. Ngoặc.\n3. Nhân – chia.\n4. Cộng – trừ.\n5. Rút gọn cuối cùng.\n\nKhông nên quy đồng toàn bộ biểu thức quá sớm nếu có thể rút gọn từng cụm trước.\n\n**Chiến lược tốt:**\n\n`phân tích → rút gọn cục bộ → thực hiện phép tính → rút gọn toàn biểu thức`\n\n---\n\n### Dạng 9 – Tính giá trị biểu thức sau khi rút gọn\n\n**Quy trình:**\n\n1. Tìm điều kiện xác định.\n2. Rút gọn biểu thức.\n3. Kiểm tra giá trị cần thay có thỏa điều kiện không.\n4. Thay số vào biểu thức đã rút gọn.\n\nVí dụ:\n\n`A = (x² - 4)/(x - 2)` với `x ≠ 2`.\n\nRút gọn:\n\n`A = x + 2` với `x ≠ 2`.\n\nTại `x = 5`:\n\n`A = 7`.\n\nKhông được tính tại `x = 2`, dù biểu thức rút gọn `x + 2` có nghĩa tại `2`.\n\n---\n\n### Dạng 10 – Tìm giá trị nguyên của biểu thức\n\n> **Mức vận dụng:** dạng này dùng để kết nối phân thức với tính chia hết và không phải là yêu cầu cơ bản của mọi bài về phân thức.\n\nMột hướng xử lý là biến đổi biểu thức về dạng:\n\n`A = k + m/(x - a)`\n\nMuốn `A` nguyên, cần phân tích điều kiện để `x - a` là ước của `m`.\n\nVí dụ dạng:\n\n`A = 2 + 3/(x - 1)`.\n\nNếu `x` nguyên và `A` nguyên thì `x - 1` phải là ước nguyên của `3`.\n\nĐây là dạng vận dụng tốt để kết nối đại số với tính chia hết.\n\n---\n\n"
+  }
 }
