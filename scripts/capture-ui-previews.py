@@ -323,14 +323,14 @@ with sync_playwright() as p:
     (OUT / "all-25-topic-pages-audit.json").write_text(
         json.dumps({"topic_count":len(audit),"checked_routes":len(audit)*3,"checked":audit},ensure_ascii=False,indent=2),
         encoding="utf-8")
-    print("PASS: all 75 original topic routes plus dedicated CĐ07 Core pilot; modal checks on all 22 workspaces.", flush=True)
+    print("PASS: all 75 original topic routes plus standalone CĐ04–07 Core; modal checks on all 22 workspaces.", flush=True)
     page.locator("#library-local-search").fill("tam giac")
     matches = page.locator(".library-topic-tile:visible")
     check(matches.count() >= 1 and matches.count() < 25, "accent-insensitive filter works")
     check("tam giac" in page.locator("#library-search-result").inner_text().lower() or "/" in page.locator("#library-search-result").inner_text(), "filtered count shown")
     shot(page, "library-search-desktop.png")
     page.goto(BASE + "kien-thuc/04-bieu-thuc-dai-so/", wait_until="networkidle")
-    check(page.locator(".lesson-switcher-steps a").count() == 3, "learning step nav on topic")
+    check(page.locator(".lesson-switcher-steps a").count() == 4, "four-stage CĐ04 navigation")
     check(page.locator('.lesson-switcher-steps [aria-current="page"]').count() == 1, "lesson stage selected")
     check(page.locator(".topic-workspace-hero").count() == 1, "learning workspace retained")
     shot(page, "lesson-04-desktop.png")
