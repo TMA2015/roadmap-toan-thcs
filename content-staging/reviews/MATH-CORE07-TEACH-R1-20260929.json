@@ -53,7 +53,7 @@
         "key_idea": "Phân thức đại số có dạng \\(A/B\\), trong đó \\(A,B\\) là đa thức và \\(B\\) không phải đa thức 0. Khi thay giá trị của biến, phải loại mọi giá trị khiến mẫu bằng 0. Hai phân thức bằng nhau được xét trên miền xác định chung.",
         "worked_example": {
           "problem": "Cho \\(P=\\frac{x+2}{(x-1)(x+3)}\\). Tìm điều kiện xác định và tính \\(P\\) tại \\(x=0\\).",
-          "solution": "Bước 1: \\((x-1)(x+3)\ne0\\) nên \\(x\ne1\\), \\(x\ne-3\\).\nBước 2: \\(x=0\\) thỏa điều kiện. Khi đó \\(P(0)=\\frac2{(-1)\\cdot3}=-\\frac23\\).\nBước 3: Kiểm tra lại cả hai giá trị bị loại ở mẫu ban đầu."
+          "solution": "Bước 1: \\((x-1)(x+3)\\ne0\\) nên \\(x\\ne1\\), \\(x\\ne-3\\).\nBước 2: \\(x=0\\) thỏa điều kiện. Khi đó \\(P(0)=\\frac2{(-1)\\cdot3}=-\\frac23\\).\nBước 3: Kiểm tra lại cả hai giá trị bị loại ở mẫu ban đầu."
         },
         "misconception": "Tìm điều kiện từ tử thức, hoặc thay một giá trị khiến mẫu bằng 0 rồi vẫn tính kết quả.",
         "summary": "Luôn tìm điều kiện mẫu khác 0 trước khi thay số; không được tự lấy lại giá trị đã bị loại."
@@ -78,7 +78,7 @@
         "key_idea": "Rút gọn phân thức bằng cách phân tích tử, mẫu thành nhân tử rồi chia nhân tử chung khác 0. Đẳng thức sau rút gọn chỉ đúng trên miền xác định ban đầu. Quy tắc đổi dấu: \\(\\frac AB=\\frac{-A}{-B}\\); đổi dấu đúng một trong hai phần thì phân thức đổi dấu.",
         "worked_example": {
           "problem": "Rút gọn \\(Q=\\frac{x^2-16}{x^2-4x}\\) và nêu điều kiện xác định.",
-          "solution": "Bước 1: \\(x^2-4x=x(x-4)\ne0\\), nên \\(x\ne0\\), \\(x\ne4\\).\nBước 2: \\(x^2-16=(x-4)(x+4)\\).\nBước 3: Với điều kiện trên, \\(Q=\\frac{(x-4)(x+4)}{x(x-4)}=\\frac{x+4}{x}\\).\nBước 4: Giữ nguyên cả \\(x\ne0\\), \\(x\ne4\\), dù mẫu sau rút gọn chỉ còn \\(x\\)."
+          "solution": "Bước 1: \\(x^2-4x=x(x-4)\\ne0\\), nên \\(x\\ne0\\), \\(x\\ne4\\).\nBước 2: \\(x^2-16=(x-4)(x+4)\\).\nBước 3: Với điều kiện trên, \\(Q=\\frac{(x-4)(x+4)}{x(x-4)}=\\frac{x+4}{x}\\).\nBước 4: Giữ nguyên cả \\(x\\ne0\\), \\(x\\ne4\\), dù mẫu sau rút gọn chỉ còn \\(x\\)."
         },
         "misconception": "Gạch bỏ các hạng tử qua dấu cộng/trừ; chỉ rút gọn nhân tử. Hoặc quên giữ điều kiện của mẫu ban đầu.",
         "summary": "Phân tích → rút gọn nhân tử → ghi lại điều kiện gốc."
@@ -101,7 +101,7 @@
         "key_idea": "Muốn quy đồng, trước hết phân tích các mẫu thành nhân tử. Chọn mẫu thức chung chứa mỗi nhân tử với số mũ lớn nhất rồi nhân cả tử và mẫu của từng phân thức với nhân tử phụ tương ứng. Giữ điều kiện xác định của các phân thức ban đầu.",
         "worked_example": {
           "problem": "Quy đồng \\(\\frac1{x(x-2)}\\) và \\(\\frac2{x+2}\\).",
-          "solution": "Bước 1: Điều kiện chung \\(x\ne0,\\,x\ne2,\\,x\ne-2\\).\nBước 2: Chọn mẫu thức chung \\(M=x(x-2)(x+2)\\).\nBước 3: \\(\\frac1{x(x-2)}=\\frac{x+2}{M}\\) và \\(\\frac2{x+2}=\\frac{2x(x-2)}{M}\\).\nBước 4: Mỗi phân thức mới được hiểu trên miền xác định chung đã ghi."
+          "solution": "Bước 1: Điều kiện chung \\(x\\ne0,\\,x\\ne2,\\,x\\ne-2\\).\nBước 2: Chọn mẫu thức chung \\(M=x(x-2)(x+2)\\).\nBước 3: \\(\\frac1{x(x-2)}=\\frac{x+2}{M}\\) và \\(\\frac2{x+2}=\\frac{2x(x-2)}{M}\\).\nBước 4: Mỗi phân thức mới được hiểu trên miền xác định chung đã ghi."
         },
         "misconception": "Chọn thiếu một nhân tử hoặc quên nhân tử phụ ở tử thức; chỉ nhân mẫu mà không nhân tử.",
         "summary": "Phân tích mẫu → chọn mẫu chung → tìm nhân tử phụ → nhân cả tử và mẫu."
@@ -124,7 +124,7 @@
         "key_idea": "Cùng mẫu: \\(\\frac AM\\pm\\frac BM=\\frac{A\\pm B}{M}\\) với \\(M\\ne0\\). Khác mẫu: quy đồng trước rồi cộng/trừ tử thức. Dấu trừ trước một tử thức nhiều hạng tử phải đổi dấu toàn bộ tử thức trong ngoặc.",
         "worked_example": {
           "problem": "Tính \\(R=\\frac1{x-1}-\\frac2{x+1}\\).",
-          "solution": "Bước 1: \\(x\ne1\\) và \\(x\ne-1\\).\nBước 2: Mẫu chung \\((x-1)(x+1)\\).\nBước 3: \\(R=\\frac{x+1-2(x-1)}{(x-1)(x+1)}=\\frac{3-x}{x^2-1}\\), với \\(x\ne\\pm1\\).\nBước 4: Kiểm tra: \\(-2(x-1)=-2x+2\\), không phải \\(-2x-2\\)."
+          "solution": "Bước 1: \\(x\\ne1\\) và \\(x\\ne-1\\).\nBước 2: Mẫu chung \\((x-1)(x+1)\\).\nBước 3: \\(R=\\frac{x+1-2(x-1)}{(x-1)(x+1)}=\\frac{3-x}{x^2-1}\\), với \\(x\\ne\\pm1\\).\nBước 4: Kiểm tra: \\(-2(x-1)=-2x+2\\), không phải \\(-2x-2\\)."
         },
         "misconception": "Quên ngoặc khi trừ một phân thức hoặc cộng/trừ trực tiếp các mẫu thức.",
         "summary": "Điều kiện → quy đồng → xử lý dấu ngoặc của toàn bộ tử → rút gọn nếu có thể."
@@ -147,7 +147,7 @@
         "key_idea": "Nhân: \\(\\frac AB\\cdot\\frac CD=\\frac{AC}{BD}\\). Chia: \\(\\frac AB:\\frac CD=\\frac AB\\cdot\\frac DC\\). Mẫu của các phân thức ban đầu phải khác 0; khi chia, phân thức bị chia còn phải khác 0 (\\(C\\ne0\\)). Nên phân tích và rút gọn nhân tử trước khi khai triển.",
         "worked_example": {
           "problem": "Rút gọn \\(T=\\frac{x^2-1}{2x}:\\frac{x+1}{3x}\\).",
-          "solution": "Bước 1: \\(2x\ne0\\), \\(3x\ne0\\) và phân thức bị chia \\(\\frac{x+1}{3x}\ne0\\), nên \\(x\ne0\\), \\(x\ne-1\\).\nBước 2: \\(x^2-1=(x-1)(x+1)\\).\nBước 3: \\(T=\\frac{(x-1)(x+1)}{2x}\\cdot\\frac{3x}{x+1}=\\frac{3(x-1)}2\\).\nBước 4: Kết quả chỉ có nghĩa với \\(x\ne0,-1\\)."
+          "solution": "Bước 1: \\(2x\\ne0\\), \\(3x\\ne0\\) và phân thức bị chia \\(\\frac{x+1}{3x}\\ne0\\), nên \\(x\\ne0\\), \\(x\\ne-1\\).\nBước 2: \\(x^2-1=(x-1)(x+1)\\).\nBước 3: \\(T=\\frac{(x-1)(x+1)}{2x}\\cdot\\frac{3x}{x+1}=\\frac{3(x-1)}2\\).\nBước 4: Kết quả chỉ có nghĩa với \\(x\\ne0,-1\\)."
         },
         "misconception": "Chia nhưng không nhân nghịch đảo, hoặc chỉ xét mẫu của hai phân thức mà quên số chia phải khác 0.",
         "summary": "Ghi điều kiện của biểu thức ban đầu; đổi chia thành nhân nghịch đảo; rút nhân tử chung."
