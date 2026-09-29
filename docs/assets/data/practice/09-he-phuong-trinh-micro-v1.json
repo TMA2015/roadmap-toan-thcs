@@ -6,7 +6,7 @@
     "id": "09-he-phuong-trinh",
     "title": "Hệ phương trình bậc nhất hai ẩn"
   },
-  "question_count": 15,
+  "question_count": 17,
   "questions": [
     {
       "id": "SYS09MICRO_001",
@@ -629,6 +629,100 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
+      }
+    },
+    {
+      "id": "SYS09MICRO_016",
+      "card_id": "sys09-core-1",
+      "micro_role": "coverage",
+      "question": "Hệ \\(\\begin{cases}x+2y=5\\\\3x+6y=15\\end{cases}\\) có bao nhiêu nghiệm thực?",
+      "options": [
+        "Vô số nghiệm.",
+        "Một nghiệm duy nhất.",
+        "Vô nghiệm.",
+        "Đúng hai nghiệm."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "so-nghiem-he"
+        ],
+        "type": "so-nghiem-he-trung-duong",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Phương trình thứ hai chính là 3 lần phương trình thứ nhất, nên hai đường thẳng trùng nhau. Mỗi cặp thỏa \\(x+2y=5\\) đều thỏa cả hệ, hệ có vô số nghiệm.",
+      "hints": [
+        "So sánh hệ số cả hai vế của hai phương trình.",
+        "Kiểm tra xem phương trình hai có là một bội của phương trình một hay không."
+      ],
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "SYS09MICRO_017",
+      "card_id": "sys09-core-5",
+      "micro_role": "coverage",
+      "question": "Hai đội A, B có năng suất không đổi lần lượt \\(x,y\\) sản phẩm/giờ. Cả hai làm 3 giờ được tổng 180 sản phẩm; A làm 1 giờ, B làm 2 giờ được tổng 100 sản phẩm. Hệ nào biểu diễn đúng dữ kiện?",
+      "options": [
+        "\\(\\begin{cases}3x+3y=180\\\\x+2y=100\\end{cases}\\)",
+        "\\(\\begin{cases}x+y=180\\\\x+2y=100\\end{cases}\\)",
+        "\\(\\begin{cases}3x+3y=180\\\\2x+y=100\\end{cases}\\)",
+        "\\(\\begin{cases}3x+3y=180\\\\x+y=100\\end{cases}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "nang-suat-he"
+        ],
+        "type": "lap-he-nang-suat-theo-thoi-gian",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Sản lượng bằng năng suất nhân thời gian. Hai đội cùng làm 3 giờ: \\(3x+3y=180\\). A làm 1 giờ, B làm 2 giờ: \\(x+2y=100\\). Hệ cho \\(x=20,y=40\\), đều dương và đúng dữ kiện.",
+      "hints": [
+        "Đặt đơn vị của x, y là sản phẩm/giờ.",
+        "Trong mỗi dữ kiện, nhân năng suất từng đội với số giờ riêng rồi cộng sản lượng."
+      ],
+      "supporting_skills": [
+        "lap-he-bai-toan"
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
       }
     }
   ]
