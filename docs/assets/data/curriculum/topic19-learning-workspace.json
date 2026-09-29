@@ -27,8 +27,34 @@
       "micro_practice": [
         "GEO19MICRO_001",
         "GEO19MICRO_002",
-        "GEO19MICRO_003"
-      ]
+        "GEO19MICRO_003",
+        "GEO19MICRO_016"
+      ],
+      "teaching_copy": {
+        "key_idea": "Đường kính (hoặc đường thẳng qua tâm) vuông góc với một dây thì đi qua trung điểm của dây đó; ngược lại, đường kính đi qua trung điểm của một dây không đi qua tâm thì vuông góc với dây đó. Trong cùng một đường tròn, hai dây bằng nhau chắn hai cung nhỏ bằng nhau. Chu vi C=2πR và độ dài cung l=(n/360)·2πR=nπR/180.",
+        "worked_example": {
+          "problem": "Trong (O;5 cm), dây AB không là đường kính, OM⊥AB tại M, OM=3 cm. Tính AB và chu vi.",
+          "solution": "MA=√(25−9)=4 cm do tam giác OMA vuông; M là trung điểm AB nên AB=8 cm; C=10π cm."
+        },
+        "misconception": "Áp dụng định lí đảo cho dây là đường kính; dùng πR thay vì 2πR.",
+        "summary": "Dây–tâm cần giả thiết; chu vi dùng bán kính.",
+        "source_reference": "docs/kien-thuc/19-duong-tron/index.md",
+        "source_sections": [
+          "3.0",
+          "3.2",
+          "3.6A"
+        ],
+        "source_question_ids": [
+          "GEO19MICRO_001",
+          "GEO19MICRO_002",
+          "GEO19MICRO_003"
+        ],
+        "review_status": "APPROVED",
+        "review_method": "NOTEBOOKLM_R1_TARGETED_R2",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE19-R2-RELEASE-RECONCILIATION-20260929.md",
+        "review_source_blob_sha": "358a0461ea70ee587432d1ad8773c52973edfa8a",
+        "review_packet_id": "MATH-CORE19-20-R2-20260929"
+      }
     },
     {
       "id": "geo19-core-2",
@@ -49,7 +75,31 @@
         "GEO19MICRO_004",
         "GEO19MICRO_005",
         "GEO19MICRO_006"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "So khoảng cách tâm–đường thẳng với R; hai đường tròn so d với R+r và |R−r|. R=r,d=0 là trùng nhau chứ không là tiếp xúc trong.",
+        "worked_example": {
+          "problem": "Cho (O;5 cm), đường thẳng a cách O 3 cm và đường tròn thứ hai bán kính 3 cm cách O 4 cm. Tìm vị trí.",
+          "solution": "a cắt (O) tại hai điểm vì 3<5. Hai đường tròn cắt nhau tại hai điểm vì |5−3|=2<4<8=5+3."
+        },
+        "misconception": "Nhầm tiếp xúc ngoài với cắt hai điểm; bỏ sót trường hợp trùng nhau.",
+        "summary": "So sánh các khoảng cách theo đúng ranh giới.",
+        "source_reference": "docs/kien-thuc/19-duong-tron/index.md",
+        "source_sections": [
+          "3.0",
+          "3.3"
+        ],
+        "source_question_ids": [
+          "GEO19MICRO_004",
+          "GEO19MICRO_005",
+          "GEO19MICRO_006"
+        ],
+        "review_status": "APPROVED",
+        "review_method": "NOTEBOOKLM_R1_TARGETED_R2",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE19-R2-RELEASE-RECONCILIATION-20260929.md",
+        "review_source_blob_sha": "358a0461ea70ee587432d1ad8773c52973edfa8a",
+        "review_packet_id": "MATH-CORE19-20-R2-20260929"
+      }
     },
     {
       "id": "geo19-core-3",
@@ -69,7 +119,31 @@
         "GEO19MICRO_007",
         "GEO19MICRO_008",
         "GEO19MICRO_009"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Góc nội tiếp bằng nửa cung bị chắn KHÔNG chứa đỉnh góc. Cung nhỏ/lớn cần chỉ rõ; góc chắn nửa đường tròn là 90°.",
+        "worked_example": {
+          "problem": "Cung nhỏ AB=110°, C trên cung lớn AB (C≠A,B). Tính ∠ACB.",
+          "solution": "∠ACB chắn cung nhỏ AB, nên bằng 110°/2=55°."
+        },
+        "misconception": "Lấy cung có đỉnh C, hoặc lấy bằng luôn góc ở tâm.",
+        "summary": "Chọn đúng cung bị chắn trước khi tính.",
+        "source_reference": "docs/kien-thuc/19-duong-tron/index.md",
+        "source_sections": [
+          "3.1",
+          "3.3A"
+        ],
+        "source_question_ids": [
+          "GEO19MICRO_007",
+          "GEO19MICRO_008",
+          "GEO19MICRO_009"
+        ],
+        "review_status": "APPROVED",
+        "review_method": "NOTEBOOKLM_R1_TARGETED_R2",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE19-R2-RELEASE-RECONCILIATION-20260929.md",
+        "review_source_blob_sha": "358a0461ea70ee587432d1ad8773c52973edfa8a",
+        "review_packet_id": "MATH-CORE19-20-R2-20260929"
+      }
     },
     {
       "id": "geo19-core-4",
@@ -92,8 +166,33 @@
       "micro_practice": [
         "GEO19MICRO_010",
         "GEO19MICRO_011",
-        "GEO19MICRO_012"
-      ]
+        "GEO19MICRO_012",
+        "GEO19MICRO_017"
+      ],
+      "teaching_copy": {
+        "key_idea": "Tứ giác lồi có một cặp góc đối tổng 180° thì nội tiếp được đường tròn. Ngoại tiếp tam giác: giao trung trực và cách đều ba đỉnh; nội tiếp: giao phân giác và cách đều ba cạnh.",
+        "worked_example": {
+          "problem": "Tứ giác lồi ABCD có ∠BAD=68°, ∠BCD=112°. Kết luận tính nội tiếp.",
+          "solution": "Hai góc A và C đối nhau, 68°+112°=180°. Theo dấu hiệu đảo, bốn đỉnh cùng thuộc một đường tròn."
+        },
+        "misconception": "Nhầm tính chất với đảo, nhầm tâm nội tiếp/ngoại tiếp.",
+        "summary": "Kết luận chỉ từ cặp góc đối và vị trí hợp lệ.",
+        "source_reference": "docs/kien-thuc/19-duong-tron/index.md",
+        "source_sections": [
+          "3.0",
+          "3.4"
+        ],
+        "source_question_ids": [
+          "GEO19MICRO_010",
+          "GEO19MICRO_011",
+          "GEO19MICRO_012"
+        ],
+        "review_status": "APPROVED",
+        "review_method": "NOTEBOOKLM_R1_TARGETED_R2",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE19-R2-RELEASE-RECONCILIATION-20260929.md",
+        "review_source_blob_sha": "358a0461ea70ee587432d1ad8773c52973edfa8a",
+        "review_packet_id": "MATH-CORE19-20-R2-20260929"
+      }
     },
     {
       "id": "geo19-core-5",
@@ -115,7 +214,31 @@
         "GEO19MICRO_013",
         "GEO19MICRO_014",
         "GEO19MICRO_015"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Đa giác đều phải đều cạnh lẫn góc. Cung l=(n/360)2πR; quạt S=(n/360)πR²; vành khuyên đồng tâm S=π(R²−r²), R>r.",
+        "worked_example": {
+          "problem": "R=6 cm; quạt góc 120°; vành khuyên đồng tâm bán kính ngoài 6 cm, trong 4 cm. Tính ba đại lượng.",
+          "solution": "l=4π cm; S_quạt=12π cm²; S_vành=π(36−16)=20π cm²."
+        },
+        "misconception": "Nhầm bán kính/đường kính, chu vi/diện tích, vành/quạt.",
+        "summary": "Tách rõ độ dài và diện tích.",
+        "source_reference": "docs/kien-thuc/19-duong-tron/index.md",
+        "source_sections": [
+          "3.0",
+          "3.6A"
+        ],
+        "source_question_ids": [
+          "GEO19MICRO_013",
+          "GEO19MICRO_014",
+          "GEO19MICRO_015"
+        ],
+        "review_status": "APPROVED",
+        "review_method": "NOTEBOOKLM_R1_TARGETED_R2",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE19-R2-RELEASE-RECONCILIATION-20260929.md",
+        "review_source_blob_sha": "358a0461ea70ee587432d1ad8773c52973edfa8a",
+        "review_packet_id": "MATH-CORE19-20-R2-20260929"
+      }
     }
   ],
   "extensions": [
