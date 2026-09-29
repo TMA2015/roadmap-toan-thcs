@@ -570,9 +570,17 @@
       "id": "CORE13-15-STANDALONE-001",
       "title": "CĐ13–15 independent Core learning, 15 geometric lectures and nine targeted practice questions",
       "routing": "CHATGPT_AUTHOR_SOURCE_LOCKED_SELF_AUDIT+CI_BROWSER_QA",
+      "status": "DONE",
+      "review_verdict": "DEPLOYED_OWNER_DEVICE_ACCEPTED_SELF_AUDITED",
+      "review_notes": "Pilot geometry tranche CĐ13–15. Original 45 micro records pinned unchanged, nine new single-skill questions in CĐ13/14, CĐ15 has no question expansion. Geometric conditions are explicitly written, no answer depends on guessing from picture. Per-card source and review packet content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md; not an independent NotebookLM PASS. Verify desktop/iPhone/iPad and keep existing diagrams/infographics and student evidence unchanged. Larger CĐ16–20 batch separately risk-audited. Owner subsequently inspected iPad and desktop with no reported issue; CĐ13–15 release PR #168 was published. Not independent NotebookLM approval."
+    },
+    {
+      "id": "CORE16-18-STANDALONE-001",
+      "title": "CĐ16–18 source-grounded standalone Core with one square skill item",
+      "routing": "CHATGPT_AUTHOR_SOURCE_LOCKED_SELF_AUDIT+CI_BROWSER_QA",
       "status": "READY",
       "review_verdict": "SELF_AUDITED_CANDIDATE_CI_PENDING_OWNER_DEVICE_QA",
-      "review_notes": "Pilot geometry tranche CĐ13–15. Original 45 micro records pinned unchanged, nine new single-skill questions in CĐ13/14, CĐ15 has no question expansion. Geometric conditions are explicitly written, no answer depends on guessing from picture. Per-card source and review packet content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md; not an independent NotebookLM PASS. Verify desktop/iPhone/iPad and keep existing diagrams/infographics and student evidence unchanged. Larger CĐ16–20 batch separately risk-audited."
+      "review_notes": "15 lecture copies across CĐ16–18, original 45 micro questions pinned. New GEO16MICRO_016 assesses hvuong-dau-hieu only and closes a real gap. CĐ17/18 unchanged original banks. Bounded source audit content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md; excludes difficult multi-step geometry and does not claim independent NotebookLM PASS. Source art intact, no migration. Real iPad/desktop review after live deploy."
     }
   ]
 }
