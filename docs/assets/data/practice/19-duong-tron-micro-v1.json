@@ -6,7 +6,7 @@
     "id": "19-duong-tron",
     "title": "Đường tròn"
   },
-  "question_count": 15,
+  "question_count": 17,
   "questions": [
     {
       "id": "GEO19MICRO_001",
@@ -637,6 +637,111 @@
         "entrance10": "foundation",
         "specialized": "none"
       }
+    },
+    {
+      "id": "GEO19MICRO_016",
+      "card_id": "geo19-core-1",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [
+        "Đường tròn có bán kính R=7 cm."
+      ],
+      "target": "do-dai-duong-tron",
+      "question": "Một đường tròn có bán kính 7 cm. Độ dài đường tròn là:",
+      "options": [
+        "14π cm",
+        "7π cm",
+        "49π cm",
+        "28π cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "do-dai-duong-tron"
+        ],
+        "type": "do-dai-duong-tron",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "C=2πR=2π·7=14π cm; 49π là diện tích, không là chu vi.",
+      "hints": [
+        "Độ dài đường tròn sử dụng bán kính và hệ số 2π.",
+        "Thay R=7 vào C=2πR; đừng dùng công thức diện tích."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE19-R2-RELEASE-RECONCILIATION-20260929.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2",
+        "source_blob_sha": "358a0461ea70ee587432d1ad8773c52973edfa8a",
+        "packet_id": "MATH-CORE19-20-R2-20260929",
+        "source_answer_index": 0
+      },
+      "supporting_skills": []
+    },
+    {
+      "id": "GEO19MICRO_017",
+      "card_id": "geo19-core-4",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [
+        "ABCD là tứ giác lồi không suy biến; bốn đỉnh phân biệt.",
+        "∠ABC=110°; ∠ADC=70°."
+      ],
+      "target": "dau-hieu-noi-tiep",
+      "question": "ABCD là tứ giác lồi không suy biến với bốn đỉnh phân biệt. Biết ∠ABC=110° và ∠ADC=70°. Kết luận nào đúng?",
+      "options": [
+        "ABCD nội tiếp được một đường tròn",
+        "ABCD bắt buộc là hình chữ nhật",
+        "ABCD bắt buộc là hình thoi",
+        "ABCD không thể nội tiếp một đường tròn"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "dau-hieu-noi-tiep"
+        ],
+        "type": "dau-hieu-noi-tiep",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "B,D là hai góc đối, tổng 180°, đủ điều kiện nội tiếp cho tứ giác lồi.",
+      "hints": [
+        "Để nhận biết tứ giác lồi nội tiếp, hãy xét tổng hai góc đối.",
+        "Tính 110°+70° và so sánh với 180°."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE19-R2-RELEASE-RECONCILIATION-20260929.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2",
+        "source_blob_sha": "358a0461ea70ee587432d1ad8773c52973edfa8a",
+        "packet_id": "MATH-CORE19-20-R2-20260929",
+        "source_answer_index": 0
+      },
+      "supporting_skills": []
     }
   ]
 }
