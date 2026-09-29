@@ -37,7 +37,9 @@ const task=json("docs/assets/data/collaboration/task-registry.json").tasks;
 for(const id of ["TOPIC25-INDEPENDENT-MATH-REVIEW-001","TOPIC25-R2-SOURCE-COVERAGE-001"])
  ok(task.find(t=>t.id===id)?.status==="DONE","closed task "+id);
 const ctx=json("docs/assets/data/collaboration/project-context.json");
-ok(ctx.version==="1.0.57"&&ctx.current_state.topic25_followup.startsWith("CLOSED:"),"handoff version and closure");
+const contextVersion=ctx.version.match(/^1\.0\.(\d+)$/);
+ok(contextVersion&&Number(contextVersion[1])>=57&&ctx.current_state.topic25_followup.startsWith("CLOSED:"),"handoff minimum version and Topic25 closure");
+ok(ctx.current_state.canonical_handoff==="docs/collaboration/current-handoff.md","canonical current handoff pointer");
 const note=read("review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md");
 ok(note.includes("9/9")&&note.includes("5/8")&&note.includes("60000.426088"),"coverage and SVG rounding documented");
 console.log("PASS: Topic25 R3 source scope (9 target PASS, 5 context listed), math rubric, metadata, task closure, provenance and handoff.");
