@@ -42,9 +42,13 @@ for (const q of bank.questions) {
 
 for (const card of workspace.cards || []) {
   const qs = (card.micro_practice || []).map(id => byId.get(id)).filter(Boolean);
-  if (qs.length !== 3) errors.push(`${card.id}: expected 3 micro questions`);
-  if (qs.map(q => q.micro_role).join(",") !== "base,trap,apply") errors.push(`${card.id}: expected base,trap,apply order`);
-  for (const q of qs) if (!(card.skills || []).includes(q.tags.skill[0])) errors.push(`${q.id}: assessed skill not declared by card`);
+  if (qs.length < 3 || qs.length !== (card.micro_practice || []).length) errors.push(`${card.id}: expected at least three valid micro questions`);
+  if (qs.slice(0,3).map(q => q.micro_role).join(",") !== "base,trap,apply") errors.push(`${card.id}: first three must preserve base,trap,apply order`);
+  if (qs.slice(3).some(q => q.micro_role !== "coverage")) errors.push(`${card.id}: extra questions must be marked coverage`);
+  for (const q of qs) {
+    if (q.card_id !== card.id) errors.push(`${q.id}: question/card ID mismatch`);
+    if (!(card.skills || []).includes(q.tags.skill[0])) errors.push(`${q.id}: assessed skill not declared by card`);
+  }
 }
 
 if (workspace.core_progress_policy?.layer !== "KNTT-Core") errors.push("workspace: Core progress layer mismatch");
