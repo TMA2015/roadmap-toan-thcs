@@ -449,6 +449,7 @@ $$
     check(first_phone.locator("#core-journey.topic-core-gateway").count() == 1, "legacy anchor reaches gateway")
     first_phone.locator('.lesson-switcher-steps a[href$="/core/"]').click()
     check(first_phone.url.endswith("/07-phan-thuc-dai-so/core/"), "phone opens separate Core page")
+    first_phone.locator(".topic-core-teaching-item").first.wait_for(state="visible", timeout=12000)
     check(first_phone.locator(".topic-core-teaching-item").count() == 5, "five independent lesson slots on phone")
     first_phone.locator(".topic-core-teaching-item").first.locator("summary").click()
     check(first_phone.locator(".topic-core-teaching-item").first.get_attribute("open") is not None, "teaching slot opens")
