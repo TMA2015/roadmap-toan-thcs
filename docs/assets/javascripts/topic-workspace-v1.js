@@ -661,19 +661,22 @@ const activeConfig=()=>{
 };
 
 const mountCoreGateway=(hero,config)=>{
+ const oldAnchor=document.getElementById("core-journey");
+ if(oldAnchor)oldAnchor.removeAttribute("id"); // Avoid duplicate ID from legacy lesson anchors.
  const section=document.createElement("section");section.id="core-journey";section.className="topic-core-gateway";
  section.setAttribute("aria-label","Lối vào học Core theo chặng");
- const heading=document.createElement("strong");heading.textContent="🧩 Core theo chặng · "+config.number;
+ const heading=document.createElement("strong");heading.textContent="🧩 "+(window.RoadmapTopicRoutes?.get(config.slug)?.stepLabel||"Core theo chặng")+" · "+config.number;
  const description=document.createElement("p");
- description.textContent="Core đã chuyển sang trang học riêng. Bài giảng và ví dụ ở cùng chỗ với cửa sổ thực hành; kết quả đã làm vẫn được giữ nguyên.";
- const link=document.createElement("a");link.className="md-button md-button--primary";link.href="core/";link.textContent="Mở trang Core theo chặng →";
+ description.textContent="Phần học theo chặng đã chuyển sang trang riêng. Bài giảng, ví dụ và thực hành dùng cùng một luồng học; kết quả cũ vẫn được giữ nguyên.";
+ const link=document.createElement("a");link.className="md-button md-button--primary";link.href="core/";link.textContent="Mở trang "+(window.RoadmapTopicRoutes?.get(config.slug)?.stepLabel||"Core theo chặng")+" →";
  section.append(heading,description,link);hero.after(section);
 };
 
 const init=()=>{
  const config=activeConfig();if(!config)return;
  const topicRoot="/kien-thuc/"+config.slug+"/";
- const hasStandaloneCore=["04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete","13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy","16-tu-giac","17-thales-dong-dang","18-he-thuc-luong","19-duong-tron","20-hinh-hoc-tong-hop"].includes(config.slug);
+ const standaloneRoute=window.RoadmapTopicRoutes?.get(config.slug)||null;
+ const hasStandaloneCore=Boolean(standaloneRoute);
  const coreRoute=hasStandaloneCore&&(location.pathname.endsWith(topicRoot+"core/")||location.pathname.endsWith(topicRoot+"core/index.html"));
  if(coreRoute){
   const entry=document.querySelector("[data-topic-core-entry]");
