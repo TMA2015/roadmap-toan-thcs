@@ -29,7 +29,7 @@ with sync_playwright() as p:
         dialog=page.locator("dialog.topic-core-dialog")
         assert dialog.is_visible()
         assert dialog.get_by_text("Dây–tâm cần giả thiết",exact=False).count()>0
-        dialog.get_by_role("button",name="Luyện tập").click()
+        dialog.locator('.topic-core-modal-mode[data-mode="practice"]').click()
         assert dialog.get_attribute("data-mode")=="practice"
         assert dialog.locator(".topic-micro-page").count()==4
         assert dialog.get_by_text("4/4 kỹ năng có câu riêng").count()>0
