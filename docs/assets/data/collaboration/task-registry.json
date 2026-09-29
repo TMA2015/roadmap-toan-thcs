@@ -639,9 +639,11 @@
       "id": "MATH-CORE03-ACADEMIC-AUTHOR-001",
       "title": "Author and independently review CĐ03 five-stage Core based on Grade6/7 KNTT",
       "routing": "CHATGPT_AUTHOR_SOURCE_LOCKED+NOTEBOOKLM_REVIEW",
-      "status": "OPEN",
-      "review_verdict": "NO_WORKSPACE_OR_APPROVED_MICRO_YET",
-      "review_notes": "Source full CĐ03 lesson and 120 legacy questions exist, but no micro/workspace/independent route. Proposed new content must pass academic review and exact source/index/render before UI release. No automatic readiness migration; distinguish Grade6 ratio/percent from Grade7 proportions/direct and inverse relationships."
+      "status": "READY_FOR_NOTEBOOKLM",
+      "review_verdict": "R1_SOURCE_LOCKED_5_15_AUTHOR_PREFLIGHT_ONLY",
+      "review_notes": "Draft PR #180 source packet MATH-CORE03-R1-20260930 includes original full lesson blob 61df5dd2, KNTT G6/G7 matching records and proposed 5 teaching cards / 15 new RAT03MICRO IDs. Author integrity: 12 declared skills, unique IDs and options, 4/4/4/3 key positions, no exact old bank question clones. NOT independent review and NO website deployment. Owner uploads one source 01_UPLOAD_TO_NOTEBOOKLM_CORE03_R1.md and pastes prompt 02_COPY_TO_NOTEBOOKLM_CHAT_R1.txt; then ChatGPT reconciles R1 / R2 as needed.",
+      "packet": "review-packets/core03/01_UPLOAD_TO_NOTEBOOKLM_CORE03_R1.md",
+      "source_commit": "65618b7a0bbe451ef57864931561d179c92558bc"
     },
     {
       "id": "MATH-CORE02-23-GAP-001",
