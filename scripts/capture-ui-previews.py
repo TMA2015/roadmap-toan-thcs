@@ -112,34 +112,61 @@ with sync_playwright() as p:
         check(response is not None and response.status == 200, "topic page reachable: " + row["url"])
         topic_page.locator(".lesson-switcher-steps a").first.wait_for(state="visible", timeout=12000)
         links = topic_page.locator(".lesson-switcher-steps a")
-        check(links.count() == 3, "three steps for " + row["url"])
+        slug = urlparse(row["url"]).path.rstrip("/").split("/")[-1]
+        pilot = slug == "07-phan-thuc-dai-so"
+        check(links.count() == (4 if pilot else 3), "correct step count for " + row["url"])
         check(links.nth(0).get_attribute("aria-current") == "page", "lesson selected " + row["url"])
-        check(links.nth(1).get_attribute("href").endswith("/bai-tap/"), "practice route " + row["url"])
-        check(links.nth(2).get_attribute("href").endswith("/tu-kiem-tra/"), "self-check route " + row["url"])
+        if pilot:
+            check(links.nth(1).get_attribute("href").endswith("/core/"), "pilot Core route from lesson")
+        check(links.nth(2 if pilot else 1).get_attribute("href").endswith("/bai-tap/"), "practice route " + row["url"])
+        check(links.nth(3 if pilot else 2).get_attribute("href").endswith("/tu-kiem-tra/"), "self-check route " + row["url"])
         title = topic_page.locator(".topic-workspace-hero h1, .md-content__inner h1").first.inner_text()
         check(bool(title.strip()), "readable title for " + row["url"])
         # Every published five-card workspace must open a self-contained modal.
         # Probe without answering, so this sweep never writes learner evidence.
         slug = urlparse(row["url"]).path.rstrip("/").split("/")[-1]
+        core_page = None
+        exercise_page = topic_page
+        if pilot:
+            gateway = topic_page.locator("#core-journey.topic-core-gateway a[href='core/']")
+            check(gateway.count() == 1, "old Core anchor remains a working gateway")
+            check(topic_page.locator("#core-journey .topic-core-card").count() == 0, "Core cards moved off main lesson")
+            core_page = desktop.new_page()
+            core_url = links.nth(1).get_attribute("href")
+            response_core = core_page.goto(BASE.rstrip("/") + core_url, wait_until="networkidle")
+            check(response_core is not None and response_core.status == 200, "dedicated Core route reachable")
+            check(core_page.locator(".lesson-switcher-steps a").count() == 4, "four-step navigation on Core page")
+            check(core_page.locator('.lesson-switcher-steps [aria-current="page"]').get_attribute("href").endswith("/core/"), "Core step selected")
+            core_page.locator('#core-journey[data-core-ready="1"]').wait_for(state="visible", timeout=12000)
+            check(core_page.locator(".topic-core-teaching-item").count() == 5, "five Core teaching slots")
+            check(core_page.locator(".topic-core-teaching-item .topic-core-teaching-row").count() == 25,
+                  "all five candidate copies have key idea/example/solution/mistake/summary")
+            core_page.locator(".topic-core-teaching-item").first.locator("summary").click()
+            check(core_page.locator(".topic-core-teaching-item").first.get_by_text("Các bước giải").is_visible(),
+                  "worked solution visible only after opening teaching item")
+            exercise_page = core_page
+            shot(core_page, "topic07-core-standalone-desktop.png")
         if slug not in ("01-ban-do-chuong-trinh", "03-ti-le-ti-le-thuc", "22-dai-luong-dac-trung"):
-            start_core = topic_page.locator("#core-journey .topic-micro-start").first
+            start_core = exercise_page.locator("#core-journey .topic-micro-start").first
             start_core.wait_for(state="visible", timeout=12000)
-            card = topic_page.locator("#core-journey .topic-core-card").first
+            card = exercise_page.locator("#core-journey .topic-core-card").first
             original_height = card.bounding_box()["height"]
             start_core.click()
-            core_modal = topic_page.locator(".topic-core-dialog")
+            core_modal = exercise_page.locator(".topic-core-dialog")
             check(core_modal.is_visible(), "Core modal opens on " + slug)
             check(core_modal.locator(".topic-micro-option").count() >= 2, "real answer options on " + slug)
             check(core_modal.locator(".topic-micro-options").evaluate(
                 "(el) => el.scrollWidth <= el.clientWidth + 2"), "Core answers do not overflow on " + slug)
-            check(topic_page.locator(".topic-core-card .topic-micro-panel").count() == 0,
+            check(exercise_page.locator(".topic-core-card .topic-micro-panel").count() == 0,
                   "Core never mounts inside a grid card on " + slug)
             core_modal.locator(".topic-core-dialog__close").click()
             check(not core_modal.is_visible(), "Core modal closes on " + slug)
             check(abs(original_height - card.bounding_box()["height"]) < 2,
                   "Core card does not expand/collapse on " + slug)
-        practice_url = links.nth(1).get_attribute("href")
-        self_check_url = links.nth(2).get_attribute("href")
+        if core_page is not None:
+            core_page.close()
+        practice_url = links.nth(2 if pilot else 1).get_attribute("href")
+        self_check_url = links.nth(3 if pilot else 2).get_attribute("href")
         for subpath in (practice_url, self_check_url):
             with urlopen(BASE.rstrip("/") + subpath, timeout=10) as route:
                 check(route.status == 200, "built route available: " + subpath)
@@ -150,7 +177,7 @@ with sync_playwright() as p:
     (OUT / "all-25-topic-pages-audit.json").write_text(
         json.dumps({"topic_count":len(audit),"checked_routes":len(audit)*3,"checked":audit},ensure_ascii=False,indent=2),
         encoding="utf-8")
-    print("PASS: all 75 built topic routes (25 x lesson/practice/self-check) and lesson controls.", flush=True)
+    print("PASS: all 75 original topic routes plus dedicated CĐ07 Core pilot; modal checks on all 22 workspaces.", flush=True)
     page.locator("#library-local-search").fill("tam giac")
     matches = page.locator(".library-topic-tile:visible")
     check(matches.count() >= 1 and matches.count() < 25, "accent-insensitive filter works")
@@ -422,6 +449,24 @@ $$
     first_phone.locator('.lesson-switcher-steps a[aria-current="page"]').wait_for(state="visible", timeout=10000)
     check(first_phone.locator('.lesson-switcher-steps a[aria-current="page"]').count() == 1, "practice stage selected")
     shot(first_phone, "practice-23-phone.png")
+    # Pilot: Core is now a fourth, independently reachable learning step.
+    first_phone.goto(BASE + "kien-thuc/07-phan-thuc-dai-so/", wait_until="networkidle")
+    check(first_phone.locator(".lesson-switcher-steps a").count() == 4, "CĐ07 mobile four-step navigation")
+    check(first_phone.locator("#core-journey.topic-core-gateway").count() == 1, "legacy anchor reaches gateway")
+    first_phone.locator('.lesson-switcher-steps a[href$="/core/"]').click()
+    check(first_phone.url.endswith("/07-phan-thuc-dai-so/core/"), "phone opens separate Core page")
+    completed_core=first_phone.locator('#core-journey[data-core-ready="1"]')
+    completed_core.wait_for(state="visible", timeout=12000)
+    check(completed_core.count() == 1, "exactly one fully rendered Core workspace")
+    check(completed_core.locator(".topic-core-teaching-item").count() == 5, "five independent lesson slots on phone")
+    first_phone.locator(".topic-core-teaching-item").first.locator("summary").click()
+    check(first_phone.locator(".topic-core-teaching-item").first.get_attribute("open") is not None, "teaching slot opens")
+    first_phone.locator("#core-journey .topic-micro-start").first.click()
+    pilot_dialog=first_phone.locator(".topic-core-dialog")
+    check(pilot_dialog.is_visible() and pilot_dialog.locator(".topic-micro-options button").count() == 4, "phone Core modal still works")
+    shot(first_phone, "topic07-core-standalone-phone.png")
+    pilot_dialog.locator(".topic-core-dialog__close").click()
+    check(not pilot_dialog.is_visible(), "phone Core modal closes")
     browser.close()
 
 checks = sorted(OUT.glob("*.png"))

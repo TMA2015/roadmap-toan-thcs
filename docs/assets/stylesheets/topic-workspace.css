@@ -142,3 +142,22 @@
 @container corejourney (max-width:23.99rem){.topic-core-card-lesson{font-size:.72rem;line-height:1.4}}
 
 
+
+
+/* P1 Core page: full lesson first, static card grid second, modal practice last. */
+.topic-core-page-intro,.topic-core-gateway{margin:1rem 0;padding:1rem 1.1rem;border:1px solid color-mix(in srgb,var(--md-primary-fg-color) 38%,var(--md-default-bg-color));border-radius:.75rem;background:color-mix(in srgb,var(--md-primary-fg-color) 6%,var(--md-default-bg-color))}
+.topic-core-page-intro p,.topic-core-gateway p{margin:.45rem 0 .7rem;font-size:.85rem;line-height:1.65}
+.topic-core-gateway .md-button{font-size:.78rem;min-height:2.6rem;display:inline-flex;align-items:center}
+.topic-core-teaching{margin:1rem 0 1.35rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:.8rem;padding:.85rem;background:var(--md-default-bg-color)}
+.topic-core-teaching h2{margin:.1rem 0 .35rem;font-size:1.12rem}
+.topic-core-teaching>p{margin:.25rem 0 .8rem;font-size:.76rem;opacity:.85}
+.topic-core-teaching-item{margin:.45rem 0;border:1px solid var(--md-default-fg-color--lightest);border-radius:.55rem;overflow:hidden;background:var(--md-default-bg-color)}
+.topic-core-teaching-item>summary{cursor:pointer;padding:.75rem .8rem;min-height:2.8rem;box-sizing:border-box;background:var(--md-code-bg-color);color:var(--md-default-fg-color);font-size:.84rem;font-weight:750;line-height:1.5}
+.topic-core-teaching-item[open]>summary{border-bottom:1px solid var(--md-default-fg-color--lightest)}
+.topic-core-teaching-row{padding:.55rem .85rem;font-size:.8rem;line-height:1.65;overflow-wrap:anywhere}
+.topic-core-teaching-row+ .topic-core-teaching-row{border-top:1px solid var(--md-default-fg-color--lightest)}
+.topic-core-teaching-row strong{display:block;margin-bottom:.2rem}
+.topic-core-teaching-row p{margin:.15rem 0;white-space:pre-wrap}
+.topic-core-teaching-item>a,.topic-core-teaching-item>p{display:block;margin:.65rem .85rem;font-size:.8rem}
+.topic-core-teaching-row mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
+@media(max-width:40rem){.topic-core-page-intro,.topic-core-gateway,.topic-core-teaching{padding:.7rem}.topic-core-teaching-row{padding:.5rem .6rem}}

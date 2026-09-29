@@ -184,7 +184,7 @@ const showMicroLearning=(panel,card,q,showAnswer=false,submitted=false)=>{
  else {
   row("Gợi ý học","Thẻ này chưa có ví dụ mẫu riêng. Em có thể đọc phần kiến thức cốt lõi trong bài giảng đầy đủ.");
   const link=document.createElement("a");link.className="practice-btn practice-btn-secondary";
-  link.href="#core";link.textContent="Mở kiến thức cốt lõi của chuyên đề ↗";
+  link.href=location.pathname.includes("/core/")?"../#core":"#core";link.textContent="Mở kiến thức cốt lõi của chuyên đề ↗";
   panel.appendChild(link);
  }
  if(showAnswer){
@@ -338,11 +338,40 @@ const renderCoreCards=async(hero,config)=>{
    el.querySelector(".topic-micro-start").addEventListener("click",event=>openCard(card,event.currentTarget));
    grid.appendChild(el);
   });
+  if(location.pathname.includes("/core/")){
+   // Teaching sits outside the card grid to preserve all card dimensions.
+   const teaching=document.createElement("section");teaching.className="topic-core-teaching";
+   const heading=document.createElement("h2");heading.textContent="Bài giảng và ví dụ theo chặng";
+   const note=document.createElement("p");note.textContent="Đọc kiến thức và ví dụ trước khi thực hành. Mỗi bài giảng mở/thu gọn độc lập.";
+   teaching.append(heading,note);
+   data.cards.forEach((card,i)=>{
+    const details=document.createElement("details");details.className="topic-core-teaching-item";details.id="core-lesson-"+(i+1);
+    const summary=document.createElement("summary");summary.textContent=(i+1)+". "+card.title;details.appendChild(summary);
+    const copy=card.teaching_copy;
+    const row=(label,value)=>{
+     if(!value)return;
+     const block=document.createElement("div");block.className="topic-core-teaching-row";
+     const title=document.createElement("strong");title.textContent=label;
+     const p=document.createElement("p");p.textContent=value;block.append(title,p);details.appendChild(block);
+    };
+    if(copy){
+     row("Kiến thức cốt lõi",copy.key_idea);row("Ví dụ mẫu",copy.worked_example?.problem);
+     row("Các bước giải",copy.worked_example?.solution);row("Lỗi dễ mắc",copy.misconception);row("Ghi nhớ",copy.summary);
+    }else{
+     const p=document.createElement("p");p.textContent="Chặng này chưa có bản giảng riêng được kiểm định. Em hãy đọc bài giảng đầy đủ trước khi thực hành.";
+     const link=document.createElement("a");link.href="../#core";link.textContent="Mở kiến thức cốt lõi của chuyên đề ↗";details.append(p,link);
+    }
+    details.addEventListener("toggle",()=>{if(details.open)typeset(details)});
+    teaching.appendChild(details);
+   });
+   host.appendChild(teaching);
+  }
   host.appendChild(grid);
   if((data.extensions||[]).length){const ext=document.createElement("details");ext.className="topic-extension-zone";ext.innerHTML='<summary>🚀 Entrance10 / Challenge <span>không tính vào hoàn thành KNTT Core</span></summary><div class="topic-extension-list">'+(data.extensions||[]).map(x=>`<span class="topic-chip">${x.layer}: ${x.title}</span>`).join("")+"</div>";host.appendChild(ext);}
   const staticJourneyAnchor=document.getElementById("core-journey");
   if(staticJourneyAnchor)staticJourneyAnchor.remove();
   hero.after(host);
+  host.dataset.coreReady="1";
   if(location.hash==="#core-journey")requestAnimationFrame(()=>host.scrollIntoView({block:"start",behavior:"auto"}));
  }catch(_){}
 };
@@ -353,15 +382,32 @@ const activeConfig=()=>{
  return TOPICS[slug]?{slug,...TOPICS[slug]}:null;
 };
 
+const mountCoreGateway=(hero,config)=>{
+ const section=document.createElement("section");section.id="core-journey";section.className="topic-core-gateway";
+ section.setAttribute("aria-label","Lối vào học Core theo chặng");
+ const heading=document.createElement("strong");heading.textContent="🧩 Core theo chặng · "+config.number;
+ const description=document.createElement("p");
+ description.textContent="Core đã chuyển sang trang học riêng. Bài giảng và ví dụ ở cùng chỗ với cửa sổ thực hành; kết quả đã làm vẫn được giữ nguyên.";
+ const link=document.createElement("a");link.className="md-button md-button--primary";link.href="core/";link.textContent="Mở trang Core theo chặng →";
+ section.append(heading,description,link);hero.after(section);
+};
+
 const init=()=>{
  const config=activeConfig();if(!config)return;
  const topicRoot="/kien-thuc/"+config.slug+"/";
+ const isPilot=config.slug==="07-phan-thuc-dai-so";
+ const coreRoute=isPilot&&(location.pathname.endsWith(topicRoot+"core/")||location.pathname.endsWith(topicRoot+"core/index.html"));
+ if(coreRoute){
+  const entry=document.querySelector("[data-topic-core-entry]");
+  if(entry&&!entry.dataset.coreMounted){entry.dataset.coreMounted="1";renderCoreCards(entry,config)}
+  return;
+ }
  if(!location.pathname.endsWith(topicRoot) && !location.pathname.endsWith(topicRoot+"index.html"))return;
  const content=document.querySelector(".md-content__inner");if(!content)return;const h1=content.querySelector("h1");if(!h1)return;
  const pct=progress(config.progressSkills);
  const observed=config.progressSkills.some(s=>{const rec=loadStats().tags?.[s];return Boolean(rec?.attempted);});
  const hero=document.createElement("section");hero.className="topic-workspace-hero";
- hero.innerHTML=`<div class="topic-workspace-kicker">Roadmap 25 · Chuyên đề ${config.number}</div><h1>${h1.textContent.trim()}</h1><div>${config.description}</div><div class="topic-workspace-meta">${config.chips.map(x=>`<span class="topic-chip">${x}</span>`).join("")}</div><div class="topic-progress-wrap"><span>${observed?"Tỉ lệ đúng đã ghi nhận (kể cả lượt có trợ giúp)":"Chưa có kết quả luyện tập được ghi nhận"}</span><strong>${observed?pct+"%":"—"}</strong><progress max="100" value="${pct}" aria-label="Mức độ ghi nhận theo kỹ năng" ></progress></div><div class="topic-workspace-actions"><a href="#core-journey">🧩 Các chặng học</a><a href="bai-tap/">🎯 Luyện tập tương tác</a><a href="#map">🗺️ Bản đồ</a><a href="#errors">⚠️ Lỗi thường gặp</a></div>`;
+ hero.innerHTML=`<div class="topic-workspace-kicker">Roadmap 25 · Chuyên đề ${config.number}</div><h1>${h1.textContent.trim()}</h1><div>${config.description}</div><div class="topic-workspace-meta">${config.chips.map(x=>`<span class="topic-chip">${x}</span>`).join("")}</div><div class="topic-progress-wrap"><span>${observed?"Tỉ lệ đúng đã ghi nhận (kể cả lượt có trợ giúp)":"Chưa có kết quả luyện tập được ghi nhận"}</span><strong>${observed?pct+"%":"—"}</strong><progress max="100" value="${pct}" aria-label="Mức độ ghi nhận theo kỹ năng" ></progress></div><div class="topic-workspace-actions"><a href="${isPilot?"core/":"#core-journey"}">🧩 Các chặng học</a><a href="bai-tap/">🎯 Luyện tập tương tác</a><a href="#map">🗺️ Bản đồ</a><a href="#errors">⚠️ Lỗi thường gặp</a></div>`;
  h1.replaceWith(hero);
  const isCapstone=config.number==="25";
  let nav=null;
@@ -370,7 +416,8 @@ const init=()=>{
   nav.innerHTML='<div class="topic-workspace-nav-title">Đi nhanh trong chuyên đề</div><div class="topic-workspace-nav-list">'+sections.map(([id,label])=>`<a href="#${id}">${label}</a>`).join("")+"</div>";
   hero.after(nav);
  }
- renderCoreCards(hero,config);
+ if(isPilot)mountCoreGateway(hero,config);
+ else renderCoreCards(hero,config);
  sections.forEach(([id,,label],i)=>{const h=findHeading(label);if(h)wrapSection(h,id,i)});
  const expandTarget=event=>{
   const a=event.target.closest?.('a[href^="#"]');

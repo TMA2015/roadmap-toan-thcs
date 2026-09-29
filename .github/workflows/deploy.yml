@@ -28,7 +28,10 @@ jobs:
         run: python check_roadmap_dependencies.py
 
       - name: Run Golden Template pilot QA
-        run: node scripts/test-golden-template.js
+        run: |
+          node scripts/test-golden-template.js
+          node scripts/test-topic07-core-route.js
+          node scripts/test-core07-teaching-coverage.js --release
 
       - name: Run Learning Card micro-practice QA
         run: node scripts/test-learning-card-micro-practice.js
