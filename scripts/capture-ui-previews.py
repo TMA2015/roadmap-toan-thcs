@@ -496,15 +496,33 @@ $$
     completed_core=first_phone.locator('#core-journey[data-core-ready="1"]')
     completed_core.wait_for(state="visible", timeout=12000)
     check(completed_core.count() == 1, "exactly one fully rendered Core workspace")
-    check(completed_core.locator(".topic-core-teaching-item").count() == 5, "five independent lesson slots on phone")
-    first_phone.locator(".topic-core-teaching-item").first.locator("summary").click()
-    check(first_phone.locator(".topic-core-teaching-item").first.get_attribute("open") is not None, "teaching slot opens")
-    first_phone.locator("#core-journey .topic-micro-start").first.click()
+    check(completed_core.locator(".topic-core-teaching-item").count() == 0,
+          "no separate teaching accordion on phone")
+    check(completed_core.locator(".topic-core-teach-start").count() == 5,
+          "phone has five lecture buttons")
+    first_phone.locator("#core-journey .topic-core-teach-start").first.click()
     pilot_dialog=first_phone.locator(".topic-core-dialog")
-    check(pilot_dialog.is_visible() and pilot_dialog.locator(".topic-micro-options button").count() == 4, "phone Core modal still works")
-    shot(first_phone, "topic07-core-standalone-phone.png")
+    check(pilot_dialog.is_visible() and pilot_dialog.get_attribute("data-mode") == "teach",
+          "phone lecture opens in same stable dialog")
+    check(pilot_dialog.locator(".topic-core-skill-chip").count() == 4,
+          "four legible skill chips on phone")
+    check(pilot_dialog.locator(".topic-core-teaching-row").count() == 5,
+          "five approved teaching fields on phone")
+    check(pilot_dialog.locator(".topic-core-dialog__body").evaluate(
+          "(el) => el.scrollWidth <= el.clientWidth + 2"),
+          "lecture and formulas do not overflow phone modal")
+    shot(first_phone, "topic07-core-lecture-phone.png")
+    pilot_dialog.locator(".topic-core-to-practice").click()
+    check(pilot_dialog.get_attribute("data-mode") == "practice"
+          and pilot_dialog.locator(".topic-micro-options button").count() == 4,
+          "phone lecture-to-practice handoff works")
+    check(pilot_dialog.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill") == "nhan-biet-phan-thuc",
+          "phone question shows matching skill")
+    shot(first_phone, "topic07-core-practice-phone.png")
     pilot_dialog.locator(".topic-core-dialog__close").click()
     check(not pilot_dialog.is_visible(), "phone Core modal closes")
+    check(completed_core.locator('.topic-core-card[data-card-id="pt07-core-1"]').get_attribute("data-covered-skills") == "3",
+          "phone retains truthful 3/4 coverage")
     browser.close()
 
 checks = sorted(OUT.glob("*.png"))
