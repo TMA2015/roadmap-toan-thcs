@@ -87,8 +87,9 @@ mixedUnits:2.5*1.2,boxVolume:4*3*2,baseArea:6*4,liters:2.5*1000,prismVolume:9*7,
 };
 ok(math.squareArea===49&&math.boxSurface===50&&3**2+4**2===5**2&&math.pyramidSurface===60&&math.pyramidVolume===48&&math.cylinderVolume===20&&math.coneSurface===15&&math.sphereArea===16&&Math.abs(math.sphereVolume-32/3)<1e-9&&math.mixedUnits===3&&math.boxVolume===24&&math.baseArea===24&&math.liters===2500&&math.prismVolume===63&&math.coneVolume===24,"independent numerical oracle checks");
 const rt=read("docs/assets/javascripts/topic-workspace-v1.js"),shell=read("docs/assets/javascripts/knowledge-ui-v1.js"),nav=read("mkdocs.yml"),evidence=read("docs/assets/javascripts/learner-evidence-v1.js");
+const routes=read("docs/assets/javascripts/topic-learning-routes-v1.js");
 ok(rt.includes('coreViewData:"assets/data/curriculum/topic20-core-display-v2.json"')&&rt.includes('view.history_policy?.migration!=="none"')&&rt.includes("legacy_cards_read_only")&&rt.includes('"20-hinh-hoc-tong-hop"'),"runtime overlay gate present");
-ok(shell.includes('"20-hinh-hoc-tong-hop"')&&nav.includes("kien-thuc/20-hinh-hoc-tong-hop/core/index.md"),"four-step Core route");
+ok(routes.includes('"20-hinh-hoc-tong-hop"')&&nav.includes("kien-thuc/20-hinh-hoc-tong-hop/core/index.md"),"four-step Core route");
 ok(evidence.includes("data.questions[question.id]")&&evidence.includes("const skills = questionSkills(question)")&&!evidence.includes("question.card_id"),"learner evidence keyed by question and skill, not display card");
 ok(legacy.extensions.every(x=>x.gates_core===false),"no extension gating");
 console.log("PASS: Core20 v2 10 groups, 29/29 skill opportunities, 15 frozen original items and 5 frozen legacy cards, 14 balanced reviewer-source-preserving options, 10 teaching copies, math and evidence nonmigration.");
