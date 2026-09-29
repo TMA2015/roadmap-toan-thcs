@@ -165,6 +165,7 @@ with sync_playwright() as p:
             check(first_card.locator(".topic-core-card-actions button").evaluate_all(
                 "(buttons) => buttons.length === 2 && buttons.every(b => b.getBoundingClientRect().height >= 44)"),
                 "both Core actions retain touch-size targets")
+            first_card.locator(".topic-core-card-actions").scroll_into_view_if_needed()
             shot(core_page, "topic07-core-soft-cards-desktop.png")
             original_scheme = core_page.evaluate("() => document.body.getAttribute('data-md-color-scheme')")
             core_page.evaluate("() => document.body.setAttribute('data-md-color-scheme','slate')")
@@ -479,6 +480,7 @@ $$
           "tablet Core actions retain accessible targets")
     check(tablet_cards.first.evaluate("(el) => el.scrollWidth <= el.clientWidth + 2"),
           "tablet Core card has no horizontal overflow")
+    tablet_cards.first.locator(".topic-core-card-actions").scroll_into_view_if_needed()
     shot(half_page, "topic07-core-soft-cards-tablet.png")
     half_page.close()
     half.close()
@@ -549,6 +551,7 @@ $$
     check(completed_core.locator(".topic-core-card").first.locator(".topic-core-card-actions button").evaluate_all(
           "(buttons) => buttons.length === 2 && buttons.every(b => b.getBoundingClientRect().height >= 44)"),
           "phone Core actions remain thumb-sized")
+    completed_core.locator(".topic-core-card").first.locator(".topic-core-card-actions").scroll_into_view_if_needed()
     shot(first_phone, "topic07-core-soft-cards-phone.png")
     first_phone.locator("#core-journey .topic-core-teach-start").first.click()
     pilot_dialog=first_phone.locator(".topic-core-dialog")
