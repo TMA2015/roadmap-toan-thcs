@@ -371,6 +371,7 @@ const renderCoreCards=async(hero,config)=>{
   const staticJourneyAnchor=document.getElementById("core-journey");
   if(staticJourneyAnchor)staticJourneyAnchor.remove();
   hero.after(host);
+  host.dataset.coreReady="1";
   if(location.hash==="#core-journey")requestAnimationFrame(()=>host.scrollIntoView({block:"start",behavior:"auto"}));
  }catch(_){}
 };
