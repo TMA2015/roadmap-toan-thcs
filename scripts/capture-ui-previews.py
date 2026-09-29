@@ -314,7 +314,10 @@ $$
     native_title = half_page.locator(".md-sidebar--primary .md-nav__title").first
     check(native_title.is_visible(), "native drawer title remains visible")
     shot(half_page, "lesson-24-half-width-native-drawer.png")
-    half_page.locator('.md-header__button[for="__drawer"]').click()
+    # The drawer's overlay intentionally intercepts the header hamburger while open.
+    # Close through the actual dimmed backdrop, as an iOS user would.
+    half_page.mouse.click(700, 450)
+    check(not half_page.locator('input#__drawer').is_checked(), "backdrop closes native drawer")
     half_page.close()
     half.close()
 
@@ -338,6 +341,22 @@ $$
     check(first_phone.locator("[data-study-gateway]").is_visible(), "tap interaction works")
     shot(first_phone, "home-awake-phone.png")
     first_phone.goto(BASE + "kien-thuc/23-xac-suat/", wait_until="networkidle")
+    check(first_phone.locator(".md-header__inner > [data-roadmap-topic-launcher]").count() == 1,
+          "phone header has one independent topic chooser")
+    first_phone.locator('.md-header__button[for="__drawer"]').click()
+    first_phone.wait_for_timeout(450)
+    check(first_phone.locator(".md-sidebar--primary [data-roadmap-mobile-shortcuts]").count() == 0,
+          "phone drawer has no injected sticky toolbar")
+    shot(first_phone, "lesson-23-phone-native-drawer.png")
+    first_phone.mouse.click(375, 350)
+    check(not first_phone.locator('input#__drawer').is_checked(), "phone drawer backdrop closes")
+    first_phone.locator("[data-roadmap-topic-launcher]").click()
+    chooser = first_phone.locator("[data-roadmap-topic-dialog]")
+    check(chooser.is_visible() and chooser.locator("nav a").count() == 25, "phone chooser has all 25 topics")
+    check("01." in chooser.locator("nav a").first.inner_text(), "phone chooser starts at 01")
+    shot(first_phone, "lesson-23-phone-topic-chooser.png")
+    chooser.locator(".roadmap-topic-dialog__close").click()
+    check(not chooser.is_visible(), "phone chooser closes and returns to lesson")
     check(first_phone.locator(".lesson-switcher-steps a").count() == 3, "phone lesson nav")
     shot(first_phone, "lesson-23-phone.png")
     # Route links are verified from actual static content.
