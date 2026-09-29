@@ -117,7 +117,7 @@ with sync_playwright() as p:
         topic_page.locator(".lesson-switcher-steps a").first.wait_for(state="visible", timeout=12000)
         links = topic_page.locator(".lesson-switcher-steps a")
         slug = urlparse(row["url"]).path.rstrip("/").split("/")[-1]
-        pilot = slug in ("04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete", "13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy","16-tu-giac","17-thales-dong-dang","18-he-thuc-luong","19-duong-tron")
+        pilot = slug in ("04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete", "13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy","16-tu-giac","17-thales-dong-dang","18-he-thuc-luong","19-duong-tron","20-hinh-hoc-tong-hop")
         check(links.count() == (4 if pilot else 3), "correct step count for " + row["url"])
         check(links.nth(0).get_attribute("aria-current") == "page", "lesson selected " + row["url"])
         if pilot:
@@ -144,9 +144,10 @@ with sync_playwright() as p:
             core_page.locator('#core-journey[data-core-ready="1"]').wait_for(state="visible", timeout=12000)
             check(core_page.locator(".topic-core-teaching-item").count() == 0,
                   "no duplicate lecture accordion outside cards")
-            check(core_page.locator(".topic-core-card .topic-core-teach-start").count() == 5,
+            expected_core_cards = 10 if slug == "20-hinh-hoc-tong-hop" else 5
+            check(core_page.locator(".topic-core-card .topic-core-teach-start").count() == expected_core_cards,
                   "all five cards have a lecture button")
-            check(core_page.locator(".topic-core-card .topic-micro-start").count() == 5,
+            check(core_page.locator(".topic-core-card .topic-micro-start").count() == expected_core_cards,
                   "all five cards retain the practice button")
             if slug == "07-phan-thuc-dai-so":
                 first_card = core_page.locator('.topic-core-card[data-card-id="pt07-core-1"]')
@@ -266,8 +267,8 @@ with sync_playwright() as p:
                 lecture.locator(".topic-core-dialog__close").click()
             else:
                 first_card = core_page.locator(".topic-core-card").first
-                check(core_page.locator(".topic-core-card").count() == 5,
-                      "five independent cards on the new Core page " + slug)
+                check(core_page.locator(".topic-core-card").count() == expected_core_cards,
+                      "correct independent Core-card count " + slug)
                 check(core_page.locator(".topic-core-card-gap").count() == 0,
                       "source-linked micro bank covers every declared skill " + slug)
                 before=core_page.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')")
@@ -298,7 +299,7 @@ with sync_playwright() as p:
                     "09-he-phuong-trinh":[("sys09-core-1","SYS09MICRO_016","so-nghiem-he",["y-nghia-hinh-hoc"]),("sys09-core-5","SYS09MICRO_017","nang-suat-he",["lap-he-bai-toan"])],
                     "11-can-thuc":[("rad11-core-4","RAD11MICRO_016","truc-can-mau-don",["nhan-chia-can"])]
                 }
-                if slug in ("13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy","16-tu-giac","17-thales-dong-dang","18-he-thuc-luong"):
+                if slug in ("13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy","16-tu-giac","17-thales-dong-dang","18-he-thuc-luong","19-duong-tron","20-hinh-hoc-tong-hop"):
                     check(core_page.locator(".topic-core-card-gap").count()==0,
                           "geometry declared skills have real individually assessed questions "+slug)
                     check(core_page.locator(".topic-core-card").first.locator(".topic-core-card-meta").is_visible(),

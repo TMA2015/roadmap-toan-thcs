@@ -6,7 +6,7 @@
     "id": "20-hinh-hoc-tong-hop",
     "title": "Hình học tổng hợp, đo lường và hình khối"
   },
-  "question_count": 15,
+  "question_count": 29,
   "questions": [
     {
       "id": "GEO20MICRO_001",
@@ -636,6 +636,734 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO20MICRO_016",
+      "card_id": "geo20-core-1a",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-hinh-vuong",
+      "question": "Tứ giác có bốn cạnh bằng nhau và một góc vuông là:",
+      "options": [
+        "Hình thoi không có góc vuông",
+        "Hình vuông",
+        "Hình chữ nhật có hai cạnh kề khác nhau",
+        "Hình bình hành có hai cạnh kề khác nhau"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-vuong"
+        ],
+        "type": "nhan-biet-hinh-vuong",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Bốn cạnh bằng nhau và góc vuông đủ để kết luận hình vuông.",
+      "hints": [
+        "Bốn cạnh bằng nhau cho biết loại tứ giác nào?",
+        "Kết hợp điều kiện góc vuông với bốn cạnh bằng nhau."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 1,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
+      }
+    },
+    {
+      "id": "GEO20MICRO_017",
+      "card_id": "geo20-core-1a",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-luc-giac-deu",
+      "question": "Điều kiện nào mô tả đúng một lục giác đều?",
+      "options": [
+        "Chỉ cần sáu cạnh bằng nhau",
+        "Chỉ cần sáu góc bằng nhau",
+        "Sáu cạnh bằng nhau và sáu góc bằng nhau",
+        "Chỉ cần có ba đường chéo"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-luc-giac-deu"
+        ],
+        "type": "nhan-biet-luc-giac-deu",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đa giác đều cần đồng thời đều cạnh, đều góc.",
+      "hints": [
+        "Đa giác đều phải có hai tính chất nào cùng lúc?",
+        "Kiểm tra cả sáu cạnh lẫn sáu góc."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 2,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
+      }
+    },
+    {
+      "id": "GEO20MICRO_018",
+      "card_id": "geo20-core-1a",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-tu-giac-dac-biet",
+      "question": "Mọi hình vuông luôn thuộc đồng thời hai loại nào?",
+      "options": [
+        "Hình thoi nhưng không là hình chữ nhật",
+        "Hình chữ nhật nhưng không là hình thoi",
+        "Hình bình hành nhưng không là hình chữ nhật",
+        "Hình chữ nhật và hình thoi"
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-tu-giac-dac-biet"
+        ],
+        "type": "nhan-biet-tu-giac-dac-biet",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hình vuông có bốn góc vuông và bốn cạnh bằng nhau.",
+      "hints": [
+        "Dùng định nghĩa hình chữ nhật và hình thoi.",
+        "Hình vuông có bốn góc vuông và bốn cạnh bằng nhau."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 3,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
+      }
+    },
+    {
+      "id": "GEO20MICRO_019",
+      "card_id": "geo20-core-1b",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "chu-vi-tu-giac",
+      "question": "Tứ giác có bốn cạnh lần lượt 3 cm, 5 cm, 4 cm, 6 cm. Chu vi bằng:",
+      "options": [
+        "18 cm",
+        "15 cm",
+        "22 cm",
+        "90 cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "chu-vi-tu-giac"
+        ],
+        "type": "chu-vi-tu-giac",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "3+5+4+6=18 cm.",
+      "hints": [
+        "Chu vi là tổng độ dài các cạnh.",
+        "Tính 3+5+4+6 và giữ đơn vị cm."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 0,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
+      }
+    },
+    {
+      "id": "GEO20MICRO_020",
+      "card_id": "geo20-core-1b",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "do-luong-thuc-te",
+      "question": "Một nền hình chữ nhật dài 2,5 m, rộng 120 cm. Diện tích nền là:",
+      "options": [
+        "300 m²",
+        "0,3 m²",
+        "3 m²",
+        "3 m"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "do-luong-thuc-te"
+        ],
+        "type": "do-luong-thuc-te",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "120 cm=1,2 m, diện tích =2,5×1,2=3 m².",
+      "hints": [
+        "Trước tiên đổi chiều rộng sang mét.",
+        "120 cm=1,2 m; nhân chiều dài với chiều rộng."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 2,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
+      }
+    },
+    {
+      "id": "GEO20MICRO_021",
+      "card_id": "geo20-core-1b",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tam-doi-xung",
+      "question": "Tâm đối xứng của một lục giác đều là:",
+      "options": [
+        "Trung điểm một cạnh bất kỳ",
+        "Một đỉnh bất kỳ",
+        "Lục giác đều không có tâm đối xứng",
+        "Tâm của lục giác đều"
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "tam-doi-xung"
+        ],
+        "type": "tam-doi-xung",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Phép quay 180° quanh tâm biến hình thành chính nó.",
+      "hints": [
+        "Tâm đối xứng là điểm quay 180° quanh đó hình giữ nguyên.",
+        "Xét tâm chung các cặp đỉnh đối diện."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 3,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
+      }
+    },
+    {
+      "id": "GEO20MICRO_022",
+      "card_id": "geo20-core-2a",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "the-tich-hop-chu-nhat",
+      "question": "Hình hộp chữ nhật dài 4 cm, rộng 3 cm, cao 2 cm. Thể tích là:",
+      "options": [
+        "24 cm³",
+        "24 cm²",
+        "12 cm³",
+        "9 cm³"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hop-chu-nhat"
+        ],
+        "type": "the-tich-hop-chu-nhat",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "V=4×3×2=24 cm³.",
+      "hints": [
+        "Thể tích hộp chữ nhật là diện tích đáy nhân chiều cao.",
+        "Nhân lần lượt 4, 3 và 2; đơn vị là cm³."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 0,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
+      }
+    },
+    {
+      "id": "GEO20MICRO_023",
+      "card_id": "geo20-core-2a",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-day",
+      "question": "Hình hộp chữ nhật có đáy 6 cm × 4 cm, cao 3 cm. Diện tích một đáy là:",
+      "options": [
+        "72 cm³",
+        "24 cm²",
+        "24 cm³",
+        "20 cm²"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-day"
+        ],
+        "type": "dien-tich-day",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "S_đáy=6×4=24 cm².",
+      "hints": [
+        "Diện tích đáy không dùng chiều cao khối.",
+        "Đáy hình chữ nhật có cạnh 6 cm và 4 cm."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 1,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
+      }
+    },
+    {
+      "id": "GEO20MICRO_024",
+      "card_id": "geo20-core-2a",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "doi-don-vi-do-luong",
+      "question": "Đổi 2,5 m³ ra lít được:",
+      "options": [
+        "250 lít",
+        "25000 lít",
+        "2,5 lít",
+        "2500 lít"
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "doi-don-vi-do-luong"
+        ],
+        "type": "doi-don-vi-do-luong",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "1 m³=1000 lít ⇒ 2,5 m³=2500 lít.",
+      "hints": [
+        "Ghi nhớ 1 m³ bằng 1000 lít.",
+        "Nhân 2,5 với 1000."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 3,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
+      }
+    },
+    {
+      "id": "GEO20MICRO_025",
+      "card_id": "geo20-core-2b",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "the-tich-lang-tru",
+      "question": "Lăng trụ đứng diện tích đáy 9 cm², cao 7 cm. Thể tích là:",
+      "options": [
+        "63 cm³",
+        "63 cm²",
+        "16 cm³",
+        "126 cm³"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-lang-tru"
+        ],
+        "type": "the-tich-lang-tru",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "V=S_đáy×h=9×7=63 cm³.",
+      "hints": [
+        "Thể tích lăng trụ đứng bằng diện tích đáy nhân chiều cao.",
+        "Tính 9×7 và dùng đơn vị cm³."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 0,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
+      }
+    },
+    {
+      "id": "GEO20MICRO_026",
+      "card_id": "geo20-core-2b",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-lang-tru-dung",
+      "question": "Phát biểu đúng về cạnh bên lăng trụ đứng là:",
+      "options": [
+        "Luôn nằm trong mặt phẳng đáy",
+        "Vuông góc mặt phẳng đáy",
+        "Luôn dài bằng chu vi đáy",
+        "Hai đáy là hai hình tròn"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-lang-tru-dung"
+        ],
+        "type": "nhan-biet-lang-tru-dung",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Cạnh bên của lăng trụ đứng vuông góc với hai mặt đáy.",
+      "hints": [
+        "Định nghĩa lăng trụ đứng liên quan góc của cạnh bên với đáy.",
+        "Cạnh bên vuông góc mặt đáy."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 1,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
+      }
+    },
+    {
+      "id": "GEO20MICRO_027",
+      "card_id": "geo20-core-4a",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-xung-quanh-hinh-tru",
+      "question": "Hình trụ tròn xoay có r=3 cm, h=5 cm. Diện tích xung quanh là:",
+      "options": [
+        "15π cm²",
+        "45π cm²",
+        "30π cm²",
+        "30π cm³"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "dien-tich-xung-quanh-hinh-tru"
+        ],
+        "type": "dien-tich-xung-quanh-hinh-tru",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "S_xq=2πrh=2π·3·5=30π cm².",
+      "hints": [
+        "Diện tích xung quanh trụ bằng chu vi đáy nhân chiều cao.",
+        "Dùng 2πrh; kết quả mang đơn vị diện tích."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 2,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
+      }
+    },
+    {
+      "id": "GEO20MICRO_028",
+      "card_id": "geo20-core-4a",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-hinh-non",
+      "question": "Hình nón tròn xoay có cấu tạo nào?",
+      "options": [
+        "Một đáy hình tròn và một đỉnh",
+        "Hai đáy tròn song song bằng nhau",
+        "Hai đáy là tam giác bằng nhau",
+        "Sáu mặt vuông bằng nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "nhan-biet-hinh-non"
+        ],
+        "type": "nhan-biet-hinh-non",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Nón có một đáy tròn và một đỉnh, khác trụ có hai đáy.",
+      "hints": [
+        "So sánh nón với trụ: nón có bao nhiêu đáy?",
+        "Hình nón tròn xoay có một đáy tròn và một đỉnh."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 0,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
+      }
+    },
+    {
+      "id": "GEO20MICRO_029",
+      "card_id": "geo20-core-4a",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "the-tich-hinh-non",
+      "question": "Hình nón tròn xoay r=3 cm, h=8 cm. Thể tích là:",
+      "options": [
+        "72π cm³",
+        "24π cm³",
+        "24π cm²",
+        "12π cm³"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "hinh-hoc-tong-hop",
+        "skill": [
+          "the-tich-hinh-non"
+        ],
+        "type": "the-tich-hinh-non",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "V=πr²h/3=π·9·8/3=24π cm³.",
+      "hints": [
+        "Thể tích nón bằng một phần ba thể tích trụ cùng đáy và chiều cao.",
+        "Thay r=3, h=8 vào πr²h/3."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "supporting_skills": [],
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md",
+        "review_result": "content-staging/reviews/MATH-CORE20-PARTB-OWNER-REVIEW-RESULT-20260929.md",
+        "method": "NOTEBOOKLM_R1_TEXT_PASS_WITH_SELF_AUDITED_HINTS",
+        "source_blob_sha": "1b22f297e57eeee65c43575c4a81fd06c8e7eede",
+        "source_answer_index": 0,
+        "published_answer_index": 1,
+        "option_permutation": "move reviewed source option A to published answer index; preserve all four option texts"
       }
     }
   ]
