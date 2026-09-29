@@ -588,7 +588,7 @@
       "routing": "NOTEBOOKLM_REVIEW+CHATGPT_RECONCILE",
       "status": "DONE",
       "review_verdict": "CD19_R2_CONFIRMED_CD20_PART_A_10_OF_10_PART_B_19_OF_19_TEXT_ONLY",
-      "review_notes": "Draft PR #170 audit-only. CĐ19 five proposed lectures/two proposed 016–017 R2 confirmed. CĐ20 Part A 10 groups/29 skills 10/10; Part B 5 teaching copies/14 proposed GEO20MICRO_016–029 19/19 textual academic PASS per owner-provided report. SVG render, new content integration, release not validated. Archive Part B receipt before integration.",
+      "review_notes": "Draft PR #170 audit-only; CĐ19 R2 confirmed 5 lectures/2 new items; CĐ20 Part A 10/10 taxonomy and Part B 5 new lectures/14 items 19/19 text review, receipts in PR #170 and main CĐ20 release packet. This does not certify legacy lectures/hints/rendered SVG; separate implementation now delivered #173/#174.",
       "source_commit": "8a13c6c2f076fe360ada6bbaf51d09997e538a4c",
       "packet": "content-staging/reviews/MATH-CORE19-20-R1-20260929/"
     },
@@ -596,9 +596,18 @@
       "id": "CORE19-20-STANDALONE-ROLLOUT-001",
       "title": "Integrate Core19–20 dual-modal learning with safe CĐ20 versioned grouping",
       "routing": "CHATGPT_INTEGRATE+CI_BROWSER_VISUAL_QA+OWNER_QA",
+      "status": "DONE",
+      "review_verdict": "PR173_PR174_MERGED_CI_BROWSER_DEPLOY_PASS_OWNER_DEVICE_QA_OPEN",
+      "review_notes": "CĐ19 #173 merged 607b521635653ae89df68ed1890869a331721da3: 5 R2 teaching, 17 micro, 14/14 opportunities. CĐ20 #174 merged 4cfa70ff999eb469ac4e33dadb6447abae1c7383: versioned 10-card overlay, 29/29, 15 immutable old +14 append-only, no migration; 3 workflows PASS per PR, deploy run 36599072769 success. SVG browser QA separate from NotebookLM text review. Owner actual-device acceptance not yet recorded. See docs/collaboration/current-handoff.md."
+    },
+    {
+      "id": "CORE19-20-OWNER-DEVICE-QA-001",
+      "title": "Owner real-device acceptance of released CĐ19 and CĐ20 Core",
+      "routing": "OWNER_DEVICE_QA",
       "status": "OPEN",
-      "review_verdict": "CANDIDATES_REVIEWED_NOT_DEPLOYED",
-      "review_notes": "See docs/collaboration/current-handoff.md. Verify #170 against live main; preserve all old item/card IDs, primary skill, attempts/readiness, notably GEO20MICRO_011 legacy card. Use separate implementation PR; actual SVG and real device QA pending."
+      "review_verdict": "TECHNICAL_QA_DEPLOY_PASS_OWNER_ACCEPTANCE_PENDING",
+      "review_notes": "Check CĐ19 five cards/17 micro and CĐ20 ten cards/29 micro on desktop/iPad/iPhone; lecture/practice modal switch, full lesson/SVG, question next, no phantom attempt on close, original progress still tied to legacy IDs. Do not mark accepted from CI alone.",
+      "source_commit": "4cfa70ff999eb469ac4e33dadb6447abae1c7383"
     }
   ]
 }
