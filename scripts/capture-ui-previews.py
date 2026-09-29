@@ -421,7 +421,7 @@ $$
     check(core_dialog.locator(".topic-micro-option").first.evaluate("(el) => parseFloat(getComputedStyle(el).borderTopWidth) >= 1"), "visible answer boundaries")
     check(core_dialog.locator(".topic-micro-tools > button").count() == 3, "three separate help buttons")
     micro_page.locator(".topic-micro-teach").first.click()
-    check(micro_page.locator(".topic-micro-tutor").first.get_by_text("Mở kiến thức cốt lõi của chuyên đề").is_visible(), "missing card copy falls back to full lesson")
+    check(micro_page.locator(".topic-micro-tutor").first.get_by_text("Ví dụ mẫu", exact=True).is_visible(), "new CĐ04 teaching copy appears on demand")
     check(micro_page.locator(".topic-micro-tutor").first.get_by_text("Đáp án trong ngân hàng").count() == 0, "reteaching does not reveal current question answer")
     micro_page.locator(".topic-micro-teach").first.click()
     check(micro_page.locator(".topic-micro-tutor").is_hidden(), "repeated teaching click collapses content")
