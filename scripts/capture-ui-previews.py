@@ -138,6 +138,11 @@ with sync_playwright() as p:
             check(core_page.locator(".lesson-switcher-steps a").count() == 4, "four-step navigation on Core page")
             check(core_page.locator('.lesson-switcher-steps [aria-current="page"]').get_attribute("href").endswith("/core/"), "Core step selected")
             check(core_page.locator(".topic-core-teaching-item").count() == 5, "five Core teaching slots")
+            check(core_page.locator(".topic-core-teaching-item .topic-core-teaching-row").count() == 25,
+                  "all five candidate copies have key idea/example/solution/mistake/summary")
+            core_page.locator(".topic-core-teaching-item").first.locator("summary").click()
+            check(core_page.locator(".topic-core-teaching-item").first.get_by_text("Các bước giải").is_visible(),
+                  "worked solution visible only after opening teaching item")
             exercise_page = core_page
             shot(core_page, "topic07-core-standalone-desktop.png")
         if slug not in ("01-ban-do-chuong-trinh", "03-ti-le-ti-le-thuc", "22-dai-luong-dac-trung"):
