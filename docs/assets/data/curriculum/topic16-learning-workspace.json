@@ -201,7 +201,8 @@
       "micro_practice": [
         "GEO16MICRO_013",
         "GEO16MICRO_014",
-        "GEO16MICRO_015"
+        "GEO16MICRO_015",
+        "GEO16MICRO_016"
       ],
       "teaching_copy": {
         "key_idea": "Hình vuông đồng thời là hình chữ nhật và hình thoi. Dấu hiệu đủ: hình chữ nhật có hai cạnh kề bằng nhau hoặc hai đường chéo vuông góc; hình thoi có một góc vuông hoặc hai đường chéo bằng nhau. Cần kiểm tra tiền đề loại hình trước khi nâng cấp. Quan hệ bao hàm: mọi hình vuông đều là hình chữ nhật và hình thoi, chiều đảo không đúng nói chung.",
@@ -242,5 +243,8 @@
     }
   ],
   "micro_practice_bank": "assets/data/practice/16-tu-giac-micro-v1.json",
-  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json"
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json",
+  "qa_notes": [
+    "Original GEO16MICRO_001…015 remain unchanged. GEO16MICRO_016 is appended to Core5 with a singleton assessed hvuong-dau-hieu skill; teaching source IDs remain original three; coverage is not mastery."
+  ]
 }
