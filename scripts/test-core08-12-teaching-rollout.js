@@ -11,9 +11,10 @@ const specs=[
 {n:"12",slug:"12-phuong-trinh-bac-hai-viete",b:"925a9e487fd15803ba462a9639aff2c0973f3267",lesson:"93e05718230c48900129a5042e0537aeb8e3c398",manifest:"12-phuong-trinh-bac-hai-viete-v1.manifest.json",count:15,declared:10,additional:[]}
 ];
 const js=read("docs/assets/javascripts/topic-workspace-v1.js"),shell=read("docs/assets/javascripts/knowledge-ui-v1.js"),yaml=read("mkdocs.yml"),auditPath="content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md",audit=read(auditPath);
+const routes=read("docs/assets/javascripts/topic-learning-routes-v1.js");
 assert(audit.includes("SELF_AUDITED")&&audit.includes("not an independent")&&audit.includes("75"),"transparent bounded audit");
 const expectedRoutes=specs.map(x=>x.slug);
-for(const slug of expectedRoutes)assert(js.includes('"'+slug+'"')&&shell.includes('"'+slug+'"')&&yaml.includes("Core theo chặng: kien-thuc/"+slug+"/core/index.md"),"route "+slug);
+for(const slug of expectedRoutes)assert(js.includes('"'+slug+'"')&&routes.includes('"'+slug+'"')&&yaml.includes("Core theo chặng: kien-thuc/"+slug+"/core/index.md"),"route "+slug);
 let cards=0,questions=0,declared=0,covered=0,addition=0;
 for(const t of specs){
  const root="docs/kien-thuc/"+t.slug+"/",bp="docs/assets/data/practice/"+t.slug+"-micro-v1.json",wp="docs/assets/data/curriculum/topic"+t.n+"-learning-workspace.json",p=read(bp),bank=JSON.parse(p),w=json(wp),lesson=read(root+"index.md"),page=read(root+"core/index.md"),labels=json("docs/assets/data/practice/"+t.manifest).skill_labels;
