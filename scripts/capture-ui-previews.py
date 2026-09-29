@@ -117,7 +117,7 @@ with sync_playwright() as p:
         topic_page.locator(".lesson-switcher-steps a").first.wait_for(state="visible", timeout=12000)
         links = topic_page.locator(".lesson-switcher-steps a")
         slug = urlparse(row["url"]).path.rstrip("/").split("/")[-1]
-        pilot = slug in ("04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so")
+        pilot = slug in ("04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete")
         check(links.count() == (4 if pilot else 3), "correct step count for " + row["url"])
         check(links.nth(0).get_attribute("aria-current") == "page", "lesson selected " + row["url"])
         if pilot:
@@ -283,7 +283,7 @@ with sync_playwright() as p:
                 shot(core_page, slug + "-lecture-modal-desktop.png")
                 dlg.locator(".topic-core-to-practice").click()
                 check(dlg.get_attribute("data-mode") == "practice"
-                      and dlg.locator(".topic-micro-pager button").count() == 3,
+                      and dlg.locator(".topic-micro-pager button").count() == (4 if slug == "09-he-phuong-trinh" else 3),
                       "lecture links to original three practice items " + slug)
                 dlg.locator(".topic-core-dialog__close").click()
                 check(not dlg.is_visible() and core_page.evaluate(
@@ -291,6 +291,45 @@ with sync_playwright() as p:
                       "closing new Core lecture does not invent attempted question " + slug)
                 check(all(abs(x["height"]-core_page.locator(".topic-core-card").nth(i).bounding_box()["height"])<2
                       for i,x in enumerate(boxes)),"Core cards never stretch " + slug)
+                # Newly authored Q4 items must preserve one-assessed-skill evidence,
+                # while mere open/close/switch creates no attempted question.
+                targeted={
+                    "08-phuong-trinh-bat-phuong-trinh":[("eq08-core-2","EQ08MICRO_016","khu-mau-phuong-trinh",["dkxd-phuong-trinh-mau","doi-chieu-nghiem"])],
+                    "09-he-phuong-trinh":[("sys09-core-1","SYS09MICRO_016","so-nghiem-he",["y-nghia-hinh-hoc"]),("sys09-core-5","SYS09MICRO_017","nang-suat-he",["lap-he-bai-toan"])],
+                    "11-can-thuc":[("rad11-core-4","RAD11MICRO_016","truc-can-mau-don",["nhan-chia-can"])]
+                }
+                if slug == "09-he-phuong-trinh":
+                    fourth=core_page.locator('.topic-core-card[data-card-id="sys09-core-4"]')
+                    check(fourth.get_attribute("data-covered-skills") == "3"
+                          and fourth.get_attribute("data-total-skills") == "3",
+                          "existing SYS09MICRO_012 is truthfully declared without rewriting its record")
+                for card_id, qid, primary, supporting in targeted.get(slug,[]):
+                    this_card=core_page.locator('.topic-core-card[data-card-id="'+card_id+'"]')
+                    check(this_card.get_attribute("data-covered-skills")==this_card.get_attribute("data-total-skills"),
+                          "dedicated Q4 closes actual card gap "+card_id)
+                    this_card.locator(".topic-core-practice-start").click()
+                    check(dlg.locator(".topic-micro-pager button").count()==4,
+                          "targeted extra item is accessible after three original roles "+card_id)
+                    dlg.locator(".topic-micro-pager button").nth(3).click()
+                    check(dlg.locator(".topic-micro-meta").inner_text().startswith("Câu 4/4")
+                          and "Bổ sung kỹ năng" in dlg.locator(".topic-micro-meta").inner_text()
+                          and dlg.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill")==primary,
+                          "fourth item has accurate assessed tag, not a relabelled old question "+qid)
+                    before_q=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+                    shot(core_page,slug+"-"+qid+"-desktop.png")
+                    dlg.locator(".topic-micro-option").first.click()
+                    after_q=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+                    check(after_q.get("questions",{}).get(qid,{}).get("attempted",0)
+                          == before_q.get("questions",{}).get(qid,{}).get("attempted",0)+1,
+                          "new item records exactly one stable-ID attempt "+qid)
+                    check(after_q.get("tags",{}).get(primary,{}).get("attempted",0)
+                          == before_q.get("tags",{}).get(primary,{}).get("attempted",0)+1,
+                          "new item increments exactly its primary assessed skill "+qid)
+                    check(all(after_q.get("tags",{}).get(tag,{}).get("attempted",0)
+                          == before_q.get("tags",{}).get(tag,{}).get("attempted",0) for tag in supporting),
+                          "supporting tags do not acquire phantom attempts "+qid)
+                    dlg.locator(".topic-core-dialog__close").click()
+                    check(not dlg.is_visible(),"fourth item closes cleanly "+qid)
             exercise_page = core_page
             shot(core_page, slug + "-core-standalone-desktop.png")
         if slug not in ("01-ban-do-chuong-trinh", "03-ti-le-ti-le-thuc", "22-dai-luong-dac-trung"):
@@ -324,7 +363,7 @@ with sync_playwright() as p:
     (OUT / "all-25-topic-pages-audit.json").write_text(
         json.dumps({"topic_count":len(audit),"checked_routes":len(audit)*3,"checked":audit},ensure_ascii=False,indent=2),
         encoding="utf-8")
-    print("PASS: all 75 original topic routes plus standalone CĐ04–07 Core; modal checks on all 22 workspaces.", flush=True)
+    print("PASS: all 75 original topic routes plus standalone CĐ04–12 Core; modal checks on all 22 workspaces.", flush=True)
     page.locator("#library-local-search").fill("tam giac")
     matches = page.locator(".library-topic-tile:visible")
     check(matches.count() >= 1 and matches.count() < 25, "accent-insensitive filter works")
@@ -660,6 +699,43 @@ $$
     check(not pilot_dialog.is_visible(), "phone Core modal closes")
     check(completed_core.locator('.topic-core-card[data-card-id="pt07-core-1"]').get_attribute("data-covered-skills") == "4",
           "phone retains truthful 4/4 coverage")
+    # Cover each new subject, plus all four Q4 items, in a real touch viewport.
+    new_core_phone=[
+        ("08-phuong-trinh-bat-phuong-trinh","eq08-core-2","khu-mau-phuong-trinh"),
+        ("09-he-phuong-trinh","sys09-core-1","so-nghiem-he"),
+        ("09-he-phuong-trinh","sys09-core-5","nang-suat-he"),
+        ("10-ham-so-do-thi","fun10-core-5",None),
+        ("11-can-thuc","rad11-core-4","truc-can-mau-don"),
+        ("12-phuong-trinh-bac-hai-viete","qua12-core-5",None)
+    ]
+    for topic_slug,card_id,skill in new_core_phone:
+        first_phone.goto(BASE + "kien-thuc/"+topic_slug+"/core/",wait_until="networkidle")
+        first_phone.locator('#core-journey[data-core-ready="1"]').wait_for(state="visible",timeout=12000)
+        check(first_phone.locator(".lesson-switcher-steps a").count()==4
+              and first_phone.locator(".topic-core-card").count()==5,
+              "phone Core page and four-step shell "+topic_slug)
+        card=first_phone.locator('.topic-core-card[data-card-id="'+card_id+'"]')
+        check(card.evaluate("(el)=>el.scrollWidth<=el.clientWidth+2"),"Core card fits phone "+card_id)
+        card.locator(".topic-core-teach-start").click()
+        modal=first_phone.locator(".topic-core-dialog")
+        check(modal.get_attribute("data-mode")=="teach"
+              and modal.locator(".topic-core-teaching-row").count()==5,
+              "complete Core teaching in phone modal "+card_id)
+        check(modal.locator(".topic-core-dialog__body").evaluate(
+              "(el)=>el.scrollWidth<=el.clientWidth+2"),"teaching formulas do not overflow phone "+card_id)
+        modal.locator(".topic-core-to-practice").click()
+        check(modal.get_attribute("data-mode")=="practice","phone switches between teaching and exercise "+card_id)
+        if skill is not None:
+            check(modal.locator(".topic-micro-pager button").count()==4,
+                  "all four phone exercise questions accessible "+card_id)
+            modal.locator(".topic-micro-pager button").nth(3).click()
+            check(modal.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill")==skill,
+                  "phone Q4 uses real primary skill "+card_id)
+            check(modal.locator(".topic-core-dialog__body").evaluate(
+                  "(el)=>el.scrollWidth<=el.clientWidth+2"),"targeted math does not overflow phone "+card_id)
+        shot(first_phone,topic_slug+"-"+card_id+"-phone.png")
+        modal.locator(".topic-core-dialog__close").click()
+        check(not modal.is_visible(),"phone Core modal closes without card stretching "+card_id)
     browser.close()
 
 checks = sorted(OUT.glob("*.png"))

@@ -27,7 +27,30 @@
         "RAD11MICRO_001",
         "RAD11MICRO_002",
         "RAD11MICRO_003"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Căn bậc hai số học \\(\\sqrt A\\) không âm và chỉ có nghĩa khi \\(A\\ge0\\). Nếu căn ở mẫu thì mẫu còn phải khác 0. Với mọi \\(U\\) thực, \\(\\sqrt{U^2}=|U|\\), không được bỏ dấu giá trị tuyệt đối khi chưa biết dấu U.",
+        "worked_example": {
+          "problem": "Tìm điều kiện và tính \\(E=\\sqrt{(x-5)^2}+\\sqrt{3x-6}\\) tại \\(x=2\\).",
+          "solution": "Bước 1: \\(3x-6\\ge0\\Rightarrow x\\ge2\\); căn bình phương luôn có nghĩa.\nBước 2: Viết \\(E=|x-5|+\\sqrt{3x-6}\\).\nBước 3: Với \\(x=2\\): \\(E=|-3|+\\sqrt0=3\\)."
+        },
+        "misconception": "Viết (sqrt{(x-5)^2}=x-5) mọi lúc, hoặc xét dấu biểu thức ngoài căn thay cho dưới căn.",
+        "summary": "Căn bậc hai số học không âm; xét điều kiện và nhớ √(U²)=|U|.",
+        "source_reference": "docs/kien-thuc/11-can-thuc/index.md",
+        "source_sections": [
+          "3.1",
+          "3.2",
+          "3.3"
+        ],
+        "source_question_ids": [
+          "RAD11MICRO_001",
+          "RAD11MICRO_002",
+          "RAD11MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "rad11-core-2",
@@ -48,7 +71,31 @@
         "RAD11MICRO_004",
         "RAD11MICRO_005",
         "RAD11MICRO_006"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Với \\(A,B\\ge0\\), \\(\\sqrt{AB}=\\sqrt A\\sqrt B\\); với \\(A\\ge0,B>0\\), \\(\\sqrt{A/B}=\\sqrt A/\\sqrt B\\). Để rút gọn một căn, nhận diện bình phương hoàn chỉnh dưới căn trước.",
+        "worked_example": {
+          "problem": "Rút gọn \\(\\sqrt{32}\\) và tính \\(\\frac{\\sqrt{98}}{\\sqrt2}\\).",
+          "solution": "Bước 1: \\(\\sqrt{32}=\\sqrt{16\\cdot2}=4\\sqrt2\\).\nBước 2: Vì mẫu \\(\\sqrt2>0\\), \\(\\frac{\\sqrt{98}}{\\sqrt2}=\\sqrt{\\frac{98}{2}}=\\sqrt{49}=7\\).\nBước 3: Có thể kiểm tra bằng \\(\\sqrt{98}=7\\sqrt2\\)."
+        },
+        "misconception": "Dùng công thức chia căn khi mẫu bằng 0, hoặc viết (sqrt{A+B}=sqrt A+sqrt B).",
+        "summary": "Tích/thương của căn dùng đúng miền điều kiện; tách bình phương hoàn chỉnh.",
+        "source_reference": "docs/kien-thuc/11-can-thuc/index.md",
+        "source_sections": [
+          "3.4",
+          "3.5",
+          "Dạng 2",
+          "Dạng 4"
+        ],
+        "source_question_ids": [
+          "RAD11MICRO_004",
+          "RAD11MICRO_005",
+          "RAD11MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "rad11-core-3",
@@ -70,7 +117,29 @@
         "RAD11MICRO_007",
         "RAD11MICRO_008",
         "RAD11MICRO_009"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Muốn đưa thừa số ra căn, dùng \\(\\sqrt{A^2B}=|A|\\sqrt B\\) (khi \\(B\\ge0\\)). Muốn đưa \\(c\\sqrt B\\) vào căn, cần \\(c\\ge0\\); nếu \\(c<0\\), giữ dấu âm bên ngoài: \\(-c\\sqrt B=-\\sqrt{c^2B}\\) khi \\(c>0\\).",
+        "worked_example": {
+          "problem": "Rút gọn \\(\\sqrt{32x^2}\\); riêng với \\(x=-3\\), tính giá trị. Đồng thời đưa \\(-2\\sqrt7\\) vào căn.",
+          "solution": "Bước 1: \\(\\sqrt{32x^2}=4|x|\\sqrt2\\).\nBước 2: Với \\(x=-3\\), kết quả \\(4\\cdot3\\sqrt2=12\\sqrt2\\).\nBước 3: \\(-2\\sqrt7=-\\sqrt{4\\cdot7}=-\\sqrt{28}\\); không mất dấu âm."
+        },
+        "misconception": "Viết (sqrt{x^2}=x) khi x âm, hoặc đưa số âm vào căn rồi làm mất dấu.",
+        "summary": "Đưa ra dùng giá trị tuyệt đối; thừa số ngoài căn âm phải giữ dấu âm.",
+        "source_reference": "docs/kien-thuc/11-can-thuc/index.md",
+        "source_sections": [
+          "3.6",
+          "3.7"
+        ],
+        "source_question_ids": [
+          "RAD11MICRO_007",
+          "RAD11MICRO_008",
+          "RAD11MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "rad11-core-4",
@@ -93,8 +162,33 @@
       "micro_practice": [
         "RAD11MICRO_010",
         "RAD11MICRO_011",
-        "RAD11MICRO_012"
-      ]
+        "RAD11MICRO_012",
+        "RAD11MICRO_016"
+      ],
+      "teaching_copy": {
+        "key_idea": "Cộng trừ căn đồng dạng sau khi rút gọn về cùng phần căn. Với mẫu \\(\\sqrt a\\) (\\(a>0\\)), nhân cả tử và mẫu với \\(\\sqrt a\\); với mẫu dạng \\(u+\\sqrt v\\), dùng liên hợp nếu hiệu hai bình phương ở mẫu khác 0.",
+        "worked_example": {
+          "problem": "Rút gọn \\(A=\\sqrt{18}+\\sqrt8\\); trục căn ở mẫu của \\(B=\\frac3{\\sqrt5}\\).",
+          "solution": "Bước 1: \\(\\sqrt{18}=3\\sqrt2,\\ \\sqrt8=2\\sqrt2\\), nên \\(A=5\\sqrt2\\).\nBước 2: \\(B=\\frac{3\\sqrt5}{\\sqrt5\\cdot\\sqrt5}=\\frac{3\\sqrt5}{5}\\).\nBước 3: Với mẫu tổng/hiệu chứa căn, có thể dùng biểu thức liên hợp, chẳng hạn \\(\\frac1{\\sqrt3+1}=\\frac{\\sqrt3-1}{2}\\)."
+        },
+        "misconception": "Cộng các số dưới căn trực tiếp, nhân chỉ tử hoặc làm cho mẫu liên hợp bằng 0.",
+        "summary": "Đưa căn về cùng dạng; khi trục mẫu phải nhân cả tử và mẫu đúng biểu thức.",
+        "source_reference": "docs/kien-thuc/11-can-thuc/index.md",
+        "source_sections": [
+          "Dạng 3",
+          "Dạng 4",
+          "Dạng 5",
+          "Dạng 6"
+        ],
+        "source_question_ids": [
+          "RAD11MICRO_010",
+          "RAD11MICRO_011",
+          "RAD11MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "rad11-core-5",
@@ -114,7 +208,28 @@
         "RAD11MICRO_013",
         "RAD11MICRO_014",
         "RAD11MICRO_015"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Căn bậc ba của mọi số thực đều tồn tại trong tập số thực; \\(\\sqrt[3]{A^3}=A\\) với mọi số thực A, không cần giá trị tuyệt đối. Khác với \\(\\sqrt{A^2}=|A|\\).",
+        "worked_example": {
+          "problem": "Tính \\(\\sqrt[3]{-125}\\) và rút gọn \\(\\sqrt[3]{(x-1)^3}\\).",
+          "solution": "Bước 1: Vì \\((-5)^3=-125\\) nên \\(\\sqrt[3]{-125}=-5\\).\nBước 2: Với mọi \\(x\\) thực, \\(\\sqrt[3]{(x-1)^3}=x-1\\).\nBước 3: Không thay bằng \\(|x-1|\\), vì đó là quy tắc của căn bậc hai của bình phương."
+        },
+        "misconception": "Cho rằng căn bậc ba của số âm không có nghĩa hoặc tự đưa giá trị tuyệt đối vào kết quả.",
+        "summary": "Căn bậc ba nhận cả số âm; căn của lập phương trả lại chính biểu thức.",
+        "source_reference": "docs/kien-thuc/11-can-thuc/index.md",
+        "source_sections": [
+          "3.8"
+        ],
+        "source_question_ids": [
+          "RAD11MICRO_013",
+          "RAD11MICRO_014",
+          "RAD11MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
     }
   ],
   "extensions": [
@@ -143,6 +258,7 @@
   },
   "qa_notes": [
     "can-bac-ba is explicit Grade 9 Core and receives real Practice Bank coverage in RAD11-V1-05.",
-    "tim-x-can and so-sanh-can remain outside Core readiness in this rollout because the reviewed Grade 9 map does not list them among CĐ11 core_existing/proposed skills."
+    "tim-x-can and so-sanh-can remain outside Core readiness in this rollout because the reviewed Grade 9 map does not list them among CĐ11 core_existing/proposed skills.",
+    "Dedicated coverage items are appended after the three original base/trap/apply items without changing R2/previously reviewed teaching content or learner-evidence semantics; each item assesses exactly one declared primary skill."
   ]
 }

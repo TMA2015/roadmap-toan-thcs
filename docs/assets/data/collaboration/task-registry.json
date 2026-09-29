@@ -557,6 +557,14 @@
       "status": "READY",
       "review_verdict": "SELF_AUDITED_CANDIDATE_CI_PENDING_OWNER_DEVICE_QA",
       "review_notes": "PR #166 draft. Old 45 questions and their stable IDs/keys unchanged, CĐ07 R2 unaffected. Three dedicated Core pages with original micro coverage CĐ04 11/11, CĐ05 12/12, CĐ06 9/9. Source-locked card-by-card review document content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md; math is self-audited under owner-approved risk tiers, not independently NotebookLM-verified. Four-step UI and browse QA; owner real-device acceptance pending."
+    },
+    {
+      "id": "CORE08-12-STANDALONE-001",
+      "title": "CĐ08–12 independent Core pages, 25 source-grounded lectures and four skill-gap items",
+      "routing": "CHATGPT_AUTHOR_SELF_AUDIT+CI_BROWSER_QA",
+      "status": "READY",
+      "review_verdict": "SELF_AUDITED_CANDIDATE_CI_PENDING_OWNER_DEVICE_QA",
+      "review_notes": "Five stable standalone Core pages and 25 teaching cards, original 75 micro items preserved with four append-only singleton-skill questions (08 khử mẫu; 09 số nghiệm and năng suất; 11 trục mẫu đơn). CĐ09 pre-existing SYS09MICRO_012 declared skill mismatch reconciled in card metadata only. Source-locked audit content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md. No change to main lessons, previous cards, assessment/readiness or storage IDs. Owner desktop/iPhone/iPad QA separate."
     }
   ]
 }

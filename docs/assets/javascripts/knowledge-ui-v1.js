@@ -88,7 +88,7 @@
     const nav = document.createElement("nav");
     nav.className = "lesson-switcher-steps";
     nav.setAttribute("aria-label", "Các bước học của chuyên đề");
-    const standaloneCore = ["04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so"].includes(m[1]);
+    const standaloneCore = ["04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete"].includes(m[1]);
     const steps = standaloneCore ? [
       {id:"lesson", title:"01 · Đọc & hiểu", path:root},
       {id:"core", title:"02 · Core theo chặng", path:root+"core/"},

@@ -81,13 +81,14 @@ for (const topic of topics) {
 
   if (workspace.topic !== topic.slug) errors.push(`${topic.slug}: workspace topic mismatch`);
   if (!Array.isArray(workspace.cards) || workspace.cards.length !== 5) errors.push(`${topic.slug}: expected 5 Core cards`);
-  if (micro.question_count !== 15 || micro.questions?.length !== 15) errors.push(`${topic.slug}: expected 15 micro questions`);
+  if (micro.question_count !== micro.questions?.length || micro.questions?.length !== workspace.cards.reduce((n,c)=>n+(c.micro_practice||[]).length,0)) errors.push(`${topic.slug}: micro item count must equal linked items`);
 
   const byId = new Map((micro.questions || []).map(q => [q.id,q]));
   for (const card of workspace.cards || []) {
     const qs = (card.micro_practice || []).map(id => byId.get(id)).filter(Boolean);
-    if (qs.length !== 3) errors.push(`${topic.slug}/${card.id}: expected 3 micro questions`);
-    if (qs.map(q => q.micro_role).join(",") !== "base,trap,apply") errors.push(`${topic.slug}/${card.id}: expected base,trap,apply`);
+    if (qs.length < 3 || qs.length !== (card.micro_practice||[]).length) errors.push(`${topic.slug}/${card.id}: expected at least three linked micro questions`);
+    if (qs.slice(0,3).map(q => q.micro_role).join(",") !== "base,trap,apply") errors.push(`${topic.slug}/${card.id}: first three roles must remain base,trap,apply`);
+    if (qs.slice(3).some(q => q.micro_role !== "coverage")) errors.push(`${topic.slug}/${card.id}: appended items must be coverage`);
     for (const skill of card.skills || []) {
       if (topic.excluded.has(skill)) errors.push(`${topic.slug}/${card.id}: excluded Core skill ${skill}`);
     }
