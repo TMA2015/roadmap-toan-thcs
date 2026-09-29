@@ -131,9 +131,55 @@ const SKILL_LABELS={
   "bieu-thuc-dai-so":"biểu thức đại số",
   "phep-tinh-so-huu-ti":"phép tính số hữu tỉ",
   "phan-thuc-dai-so":"phân thức đại số",
-  "phan-tich-da-thuc":"phân tích đa thức"
+  "phan-tich-da-thuc":"phân tích đa thức",
+  "nhan-biet-phan-thuc":"Nhận biết phân thức",
+  "dieu-kien-xac-dinh":"Điều kiện xác định",
+  "hai-phan-thuc-bang-nhau":"Hai phân thức bằng nhau",
+  "tinh-gia-tri-phan-thuc":"Tính giá trị phân thức",
+  "doi-dau-phan-thuc":"Đổi dấu phân thức",
+  "phan-tich-tu-mau":"Phân tích tử và mẫu",
+  "rut-gon-phan-thuc":"Rút gọn phân thức",
+  "quy-dong-mau-thuc":"Quy đồng mẫu thức",
+  "cong-tru-phan-thuc":"Cộng – trừ phân thức",
+  "nhan-phan-thuc":"Nhân phân thức",
+  "chia-phan-thuc":"Chia phân thức",
+  "giu-dieu-kien-ban-dau":"Giữ điều kiện xác định ban đầu",
+  "bieu-thuc-nhieu-phep-tinh":"Biểu thức hữu tỉ nhiều phép tính",
+  "tim-gia-tri-nguyen":"Tìm giá trị nguyên"
 };
 const skillLabel=id=>SKILL_LABELS[id]||String(id||"").replaceAll("-"," ");
+const primarySkill=q=>{
+ // Only the assessed skill counts as covered. Supporting tags are context.
+ const raw=q?.assessed_skill||q?.primary_skill||q?.tags?.skill;
+ return Array.isArray(raw)?raw[0]||null:typeof raw==="string"?raw:null;
+};
+const coverageFor=(card,questions)=>{
+ const declared=[...new Set(card.skills||[])];
+ const assessed=new Set(questions.map(primarySkill).filter(Boolean));
+ return {declared,assessed,covered:declared.filter(id=>assessed.has(id)),missing:declared.filter(id=>!assessed.has(id))};
+};
+const skillOverview=(card,questions,asTeaching=false)=>{
+ const coverage=coverageFor(card,questions);
+ const wrap=document.createElement("section");wrap.className="topic-core-skill-overview";
+ const heading=document.createElement("strong");heading.textContent=asTeaching?"Kỹ năng cần học":"Kỹ năng của chặng · phạm vi thực hành";
+ const count=document.createElement("span");count.className="topic-core-coverage-count";
+ count.textContent=coverage.covered.length+"/"+coverage.declared.length+" kỹ năng có câu riêng";
+ const list=document.createElement("div");list.className="topic-core-skill-list";
+ for(const id of coverage.declared){
+  const chip=document.createElement("span");chip.className="topic-core-skill-chip";chip.dataset.skillId=id;
+  const covered=coverage.assessed.has(id);chip.dataset.covered=covered?"yes":"no";
+  chip.textContent=skillLabel(id)+(covered?" · có câu riêng":" · chưa có câu riêng");
+  list.appendChild(chip);
+ }
+ wrap.append(heading,count,list);
+ if(coverage.missing.length){
+  const note=document.createElement("p");note.className="topic-core-coverage-gap";
+  note.textContent="Chưa có câu thực hành riêng cho: "+coverage.missing.map(skillLabel).join(", ")+". Phần này vẫn cần học; không tự tính là đã luyện.";
+  wrap.appendChild(note);
+ }
+ return wrap;
+};
+
 
 const sections=[
  ["map","🗺️ Bản đồ","1. Bản đồ kiến thức"],["goals","🎯 Mục tiêu","2. Mục tiêu cần đạt"],["core","📖 Cốt lõi","3. Kiến thức cốt lõi"],["links","🔗 Liên quan","4. Kiến thức liên quan"],["types","🧩 Dạng bài","5. Các dạng bài cần nắm vững"],["exam","🚀 Thi vào 10","6. Dạng bài thi vào lớp 10"],["errors","⚠️ Lỗi sai","7. Lỗi sai thường gặp"],["practice","📝 Luyện tập","8. Luyện tập"],["check","✅ Tự kiểm tra","9. Tự kiểm tra"],["roadmap","🔄 Roadmap","10. Liên kết Roadmap"],["finish","🏁 Hoàn thành","11. Điều kiện hoàn thành"]
