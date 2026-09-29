@@ -178,14 +178,15 @@ with sync_playwright() as p:
                 else document.body.setAttribute('data-md-color-scheme', previous);
             }""", original_scheme)
 
-            check(first_card.get_attribute("data-covered-skills") == "3"
+            check(first_card.get_attribute("data-covered-skills") == "4"
                   and first_card.get_attribute("data-total-skills") == "4",
-                  "Core1 displays actual 3/4 coverage")
-            check(second_card.get_attribute("data-covered-skills") == "2"
+                  "Core1 displays 4/4 actual dedicated-skill coverage")
+            check(second_card.get_attribute("data-covered-skills") == "3"
                   and second_card.get_attribute("data-total-skills") == "3",
-                  "Core2 displays actual 2/3 coverage")
-            check("Hai phân thức bằng nhau" in first_card.locator(".topic-core-card-gap").inner_text(),
-                  "missing first skill named instead of concealed")
+                  "Core2 displays 3/3 actual dedicated-skill coverage")
+            check(first_card.locator(".topic-core-card-gap").count() == 0
+                  and second_card.locator(".topic-core-card-gap").count() == 0,
+                  "no missing-skill warnings after dedicated items are supplied")
             initial_evidence = core_page.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')")
             fixed_boxes = [core_page.locator(".topic-core-card").nth(i).bounding_box() for i in range(5)]
             first_card.locator(".topic-core-teach-start").click()
@@ -195,8 +196,8 @@ with sync_playwright() as p:
             check(lecture.locator(".topic-core-teaching-row").count() == 5,
                   "reviewed teaching example/steps/error/summary appear inside modal")
             check(lecture.locator(".topic-core-skill-chip").count() == 4
-                  and lecture.locator('.topic-core-skill-chip[data-covered="no"]').count() == 1,
-                  "lecture displays four skill tags and missing assessed skill")
+                  and lecture.locator('.topic-core-skill-chip[data-covered="no"]').count() == 0,
+                  "lecture displays four skills with dedicated formative questions")
             check(lecture.locator(".topic-micro-option").count() == 0,
                   "lecture contains no scored question")
             shot(core_page, "topic07-lecture-modal-desktop.png")
@@ -214,6 +215,50 @@ with sync_playwright() as p:
                   "opening/closing/moving between modes never creates an attempt")
             check(all(abs(before["height"] - core_page.locator(".topic-core-card").nth(i).bounding_box()["height"]) < 2
                       for i, before in enumerate(fixed_boxes)), "all five card heights remain stable")
+            # New questions are appended, not swapped into the original three.
+            first_card.locator(".topic-core-practice-start").click()
+            check(lecture.locator(".topic-micro-pager button").count() == 4,
+                  "first card has original three questions and one new coverage question")
+            lecture.locator(".topic-micro-pager button").nth(3).click()
+            check(lecture.locator(".topic-micro-meta").inner_text().startswith("Câu 4/4")
+                  and "Bổ sung kỹ năng" in lecture.locator(".topic-micro-meta").inner_text(),
+                  "fourth question is explicitly labelled as added skill coverage")
+            check(lecture.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill")
+                  == "hai-phan-thuc-bang-nhau", "fourth question assesses the missing equality skill")
+            before_extra=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+            shot(core_page, "topic07-equality-skill-q4-desktop.png")
+            lecture.locator(".topic-micro-option").first.click()
+            after_extra=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+            check(after_extra.get("questions",{}).get("RAT07MICRO_016",{}).get("attempted",0)
+                  == before_extra.get("questions",{}).get("RAT07MICRO_016",{}).get("attempted",0)+1,
+                  "new equality question records one canonical attempt")
+            check(after_extra.get("tags",{}).get("hai-phan-thuc-bang-nhau",{}).get("attempted",0)
+                  == before_extra.get("tags",{}).get("hai-phan-thuc-bang-nhau",{}).get("attempted",0)+1,
+                  "equality assessed skill gains one attempt")
+            check(after_extra.get("tags",{}).get("dieu-kien-xac-dinh",{}).get("attempted",0)
+                  == before_extra.get("tags",{}).get("dieu-kien-xac-dinh",{}).get("attempted",0),
+                  "supporting domain tag is not falsely counted as a second assessed skill")
+            lecture.locator(".topic-core-dialog__close").click()
+            second_card.locator(".topic-core-practice-start").click()
+            check(lecture.locator(".topic-micro-pager button").count() == 4,
+                  "second card also has one additional formative question")
+            lecture.locator(".topic-micro-pager button").nth(3).click()
+            check(lecture.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill")
+                  == "phan-tich-tu-mau", "second new question assesses numerator and denominator factorization")
+            check("Bổ sung kỹ năng" in lecture.locator(".topic-micro-meta").inner_text(),
+                  "second fourth question has accurate role label")
+            before_factoring=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+            lecture.locator(".topic-micro-option").first.click()
+            after_factoring=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+            check(after_factoring.get("questions",{}).get("RAT07MICRO_017",{}).get("attempted",0)
+                  == before_factoring.get("questions",{}).get("RAT07MICRO_017",{}).get("attempted",0)+1,
+                  "new factorization question records one canonical attempt")
+            check(after_factoring.get("tags",{}).get("phan-tich-tu-mau",{}).get("attempted",0)
+                  == before_factoring.get("tags",{}).get("phan-tich-tu-mau",{}).get("attempted",0)+1
+                  and after_factoring.get("tags",{}).get("rut-gon-phan-thuc",{}).get("attempted",0)
+                  == before_factoring.get("tags",{}).get("rut-gon-phan-thuc",{}).get("attempted",0),
+                  "factoring only increments its own assessed skill")
+            lecture.locator(".topic-core-dialog__close").click()
             exercise_page = core_page
             shot(core_page, "topic07-core-standalone-desktop.png")
         if slug not in ("01-ban-do-chuong-trinh", "03-ti-le-ti-le-thuc", "22-dai-luong-dac-trung"):
@@ -571,11 +616,18 @@ $$
           "phone lecture-to-practice handoff works")
     check(pilot_dialog.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill") == "nhan-biet-phan-thuc",
           "phone question shows matching skill")
+    check(pilot_dialog.locator(".topic-micro-pager button").count() == 4,
+          "phone shows all four first-card questions")
+    pilot_dialog.locator(".topic-micro-pager button").nth(3).click()
+    check(pilot_dialog.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill") == "hai-phan-thuc-bang-nhau",
+          "fourth phone question has the correct skill")
+    check(pilot_dialog.locator(".topic-core-dialog__body").evaluate(
+          "(el) => el.scrollWidth <= el.clientWidth + 2"), "new math question does not overflow phone")
     shot(first_phone, "topic07-core-practice-phone.png")
     pilot_dialog.locator(".topic-core-dialog__close").click()
     check(not pilot_dialog.is_visible(), "phone Core modal closes")
-    check(completed_core.locator('.topic-core-card[data-card-id="pt07-core-1"]').get_attribute("data-covered-skills") == "3",
-          "phone retains truthful 3/4 coverage")
+    check(completed_core.locator('.topic-core-card[data-card-id="pt07-core-1"]').get_attribute("data-covered-skills") == "4",
+          "phone retains truthful 4/4 coverage")
     browser.close()
 
 checks = sorted(OUT.glob("*.png"))
