@@ -27,7 +27,28 @@
         "GEO15MICRO_001",
         "GEO15MICRO_002",
         "GEO15MICRO_003"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Trung tuyến nối một đỉnh với trung điểm cạnh đối diện. Ba trung tuyến đồng quy ở trọng tâm G; trên trung tuyến AM từ A đến BC, G ở giữa A và M và \\(AG=2GM=\\frac23AM\\). Tỉ số đo từ đỉnh đến G là phần **dài hơn**.",
+        "worked_example": {
+          "problem": "Tam giác ABC có M là trung điểm BC, G là trọng tâm và \\(AM=18\\) cm. Tính AG, GM.",
+          "solution": "Bước 1: AM là trung tuyến của ABC.\nBước 2: \\(AG=\\frac23\\cdot18=12\\) cm.\nBước 3: \\(GM=\\frac13\\cdot18=6\\) cm; kiểm tra \\(AG=2GM\\) và \\(AG+GM=AM\\)."
+        },
+        "misconception": "Viết ngược AG:GM thành 1:2 hoặc áp dụng tỉ lệ trên đường không phải trung tuyến.",
+        "summary": "Trên trung tuyến: đỉnh → G là 2 phần, G → trung điểm là 1 phần.",
+        "source_reference": "docs/kien-thuc/15-duong-dong-quy/index.md",
+        "source_sections": [
+          "3.1"
+        ],
+        "source_question_ids": [
+          "GEO15MICRO_001",
+          "GEO15MICRO_002",
+          "GEO15MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "geo15-core-2",
@@ -48,7 +69,28 @@
         "GEO15MICRO_004",
         "GEO15MICRO_005",
         "GEO15MICRO_006"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Đường cao từ A đi qua A và vuông góc với **đường thẳng chứa BC**, kể cả khi chân đường cao nằm ngoài đoạn BC. Ba đường cao đồng quy ở trực tâm H: tam giác nhọn H trong; vuông H là đỉnh góc vuông; tù H ở ngoài.",
+        "worked_example": {
+          "problem": "Tam giác ABC vuông tại B. Trực tâm H ở đâu? Vì sao?",
+          "solution": "Bước 1: \\(AB\\perp BC\\), nên đường thẳng AB là đường cao từ A và BC là đường cao từ C.\nBước 2: Hai đường cao cắt nhau tại B.\nBước 3: Trực tâm \\(H=B\\)."
+        },
+        "misconception": "Cho rằng đường cao luôn cắt đoạn đối diện hoặc trực tâm luôn nằm trong tam giác.",
+        "summary": "Đường cao vuông góc đường chứa cạnh; ở tam giác vuông, trực tâm tại đỉnh góc vuông.",
+        "source_reference": "docs/kien-thuc/15-duong-dong-quy/index.md",
+        "source_sections": [
+          "3.2"
+        ],
+        "source_question_ids": [
+          "GEO15MICRO_004",
+          "GEO15MICRO_005",
+          "GEO15MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "geo15-core-3",
@@ -69,7 +111,29 @@
         "GEO15MICRO_007",
         "GEO15MICRO_008",
         "GEO15MICRO_009"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Ba phân giác **trong** đồng quy ở tâm nội tiếp I, một điểm trong tam giác cách đều ba **đường thẳng chứa cạnh**. Với điểm nằm trong một góc, cách đều hai đường chứa cạnh thì điểm nằm trên tia phân giác. Không nhầm khoảng cách tới cạnh với khoảng cách tới đỉnh.",
+        "worked_example": {
+          "problem": "I nằm trong tam giác ABC và là giao điểm hai tia phân giác trong của góc A, B. So sánh khoảng cách từ I tới ba đường thẳng AB, BC, CA.",
+          "solution": "Bước 1: I trên phân giác trong A nên \\(d(I,AB)=d(I,AC)\\).\nBước 2: I trên phân giác trong B nên \\(d(I,BA)=d(I,BC)\\).\nBước 3: Ba khoảng cách tới các đường chứa cạnh bằng nhau; I là tâm nội tiếp, không phải điểm cách đều ba đỉnh."
+        },
+        "misconception": "Dùng IA=IB=IC để nhận dạng tâm nội tiếp; đó là tính chất của tâm ngoại tiếp.",
+        "summary": "Tâm nội tiếp cách đều các cạnh (khoảng cách vuông góc), không phải các đỉnh.",
+        "source_reference": "docs/kien-thuc/15-duong-dong-quy/index.md",
+        "source_sections": [
+          "3.3",
+          "3.5"
+        ],
+        "source_question_ids": [
+          "GEO15MICRO_007",
+          "GEO15MICRO_008",
+          "GEO15MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "geo15-core-4",
@@ -90,7 +154,29 @@
         "GEO15MICRO_010",
         "GEO15MICRO_011",
         "GEO15MICRO_012"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Ba đường trung trực các cạnh đồng quy ở tâm ngoại tiếp O; \\(OA=OB=OC\\). Nếu tam giác vuông, O là trung điểm **cạnh huyền**. Nếu tam giác tù, O có thể nằm ngoài tam giác; không được suy ra O luôn nằm bên trong.",
+        "worked_example": {
+          "problem": "Tam giác ABC vuông tại A, cạnh huyền BC dài 10 cm. Xác định tâm ngoại tiếp O và tính OA, OB, OC.",
+          "solution": "Bước 1: Với tam giác vuông tại A, tâm ngoại tiếp O là trung điểm BC.\nBước 2: \\(OB=OC=\\frac{BC}{2}=5\\) cm.\nBước 3: Điểm O cũng cách đều đỉnh A, nên \\(OA=OB=OC=5\\) cm."
+        },
+        "misconception": "Chọn giao phân giác thay vì trung trực, hoặc đặt tâm ngoại tiếp tại đỉnh góc vuông.",
+        "summary": "Ngoại tiếp: cách đều ba đỉnh; tam giác vuông: tâm là trung điểm cạnh huyền.",
+        "source_reference": "docs/kien-thuc/15-duong-dong-quy/index.md",
+        "source_sections": [
+          "3.4",
+          "3.5"
+        ],
+        "source_question_ids": [
+          "GEO15MICRO_010",
+          "GEO15MICRO_011",
+          "GEO15MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "geo15-core-5",
@@ -114,7 +200,29 @@
         "GEO15MICRO_013",
         "GEO15MICRO_014",
         "GEO15MICRO_015"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Bốn họ đường đặc biệt đồng quy **riêng**: trung tuyến→G, đường cao→H, phân giác trong→I, trung trực→O. Nói chung bốn tâm khác nhau; chỉ ở tam giác đặc biệt như tam giác đều có thể trùng nhau. Không kết luận mọi đường thuộc cả bốn họ đồng quy tại một điểm.",
+        "worked_example": {
+          "problem": "Tam giác ABC đều. Những tâm nào trong G (trọng tâm), H (trực tâm), I (nội tiếp), O (ngoại tiếp) trùng nhau?",
+          "solution": "Bước 1: Trong tam giác đều, trung tuyến từ mỗi đỉnh cũng là đường cao, phân giác và trung trực cạnh đối diện.\nBước 2: Ba đường chung này đồng quy tại một điểm.\nBước 3: Vì vậy \\(G=H=I=O\\) **trong tam giác đều**; đây không phải kết luận cho mọi tam giác."
+        },
+        "misconception": "Suy rộng tính chất đặc biệt của tam giác đều cho tam giác tùy ý.",
+        "summary": "Bốn họ đường, bốn tâm theo định nghĩa; có thể trùng nhau trong cấu hình đặc biệt.",
+        "source_reference": "docs/kien-thuc/15-duong-dong-quy/index.md",
+        "source_sections": [
+          "3.5",
+          "3.6A"
+        ],
+        "source_question_ids": [
+          "GEO15MICRO_013",
+          "GEO15MICRO_014",
+          "GEO15MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
     }
   ],
   "extensions": [
