@@ -117,7 +117,7 @@ with sync_playwright() as p:
         topic_page.locator(".lesson-switcher-steps a").first.wait_for(state="visible", timeout=12000)
         links = topic_page.locator(".lesson-switcher-steps a")
         slug = urlparse(row["url"]).path.rstrip("/").split("/")[-1]
-        pilot = slug in ("04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete", "13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy","16-tu-giac","17-thales-dong-dang","18-he-thuc-luong")
+        pilot = slug in ("04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete", "13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy","16-tu-giac","17-thales-dong-dang","18-he-thuc-luong","19-duong-tron")
         check(links.count() == (4 if pilot else 3), "correct step count for " + row["url"])
         check(links.nth(0).get_attribute("aria-current") == "page", "lesson selected " + row["url"])
         if pilot:
