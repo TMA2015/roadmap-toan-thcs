@@ -1,5 +1,5 @@
 {
-  "version": "1.0.59",
+  "version": "1.0.60",
   "updated": "2026-09-29",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "CĐ19–20 standalone Core released in PRs #173–174, CI/browser/Pages PASS. Next owner real-device QA; verify old CĐ20 evidence unaffected and rendered figures. Read docs/collaboration/current-handoff.md. Do not reimplement.",
+    "next_priority": "CĐ19–20 published, owner accepted on iPad and desktop 2026-09-29; iPhone not verified. Resume source-locked B01–B07 skill taxonomy reconciliation; preserve runtime evidence and old question/skill IDs. Read current-handoff.md.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -327,7 +327,7 @@
     "grade6_topic02_pilot": "DEPLOYED_CI_BROWSER_PASS_OWNER_DEVICE_QA_PENDING: PR #120, 5 grade6 cards, 15 micro, 10 independent readiness; legacy 120-bank and written test preserved; class7 content excluded from grade6 readiness. Technical CI/build/deploy passed; owner real-device acceptance separate OPEN task G6-T02-OWNER-UX-001.",
     "grade6_topic03_next": "OPEN G6-T03-SCOPE-001: grade6 B31 tỉ số/phần trăm vs grade7 B20–23 tỉ lệ thức, thuận/nghịch; current 120-bank lacks grade metadata, needs scoped next batch.",
     "topic25_followup": "CLOSED: Gemini Targeted R3 delivered 9/9 target PASS (six omitted R2 + three new deep pages) with zero critical corrections, source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536. Five of eight optional context source paths explicitly listed; figure decimal-coordinate rounding qualified. See review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md. No pending source-coverage task for CĐ25 in current review cycle.",
-    "standalone_core_rollout": "CĐ04–20 deployed with separate Core routes, CĐ19 PR #173 5 R2 lectures/17 micro, CĐ20 PR #174 ten-card v2 29 micro and old five-card history preserved; new Part B 19/19 text review, additional legacy teaching/hints self-audited; owner acceptance CĐ19–20 still OPEN.",
+    "standalone_core_rollout": "CĐ04–20 deployed; #173 CĐ19 five R2 lectures +17 micro and #174 CĐ20 v2 10 cards/29 micro with legacy history preserved. Owner accepted CĐ19–20 on iPad/desktop 2026-09-29, iPhone unverified. Text academic review ≠ rendered SVG; old lectures/hints separately self-audited.",
     "canonical_handoff": "docs/collaboration/current-handoff.md"
   },
   "handoff_required_fields": [
