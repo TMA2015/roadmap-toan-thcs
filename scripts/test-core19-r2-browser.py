@@ -35,7 +35,7 @@ with sync_playwright() as p:
         assert dialog.get_by_text("4/4 kỹ năng có câu riêng").count()>0
         dialog.locator(".topic-micro-page").last.click()
         assert dialog.get_by_text("GEO19MICRO_016",exact=False).count()==0
-        assert dialog.get_by_text("Độ dài đường tròn",exact=False).count()>0
+        assert dialog.locator('[data-primary-skill="do-dai-duong-tron"]').count()==1
         assert storage()==before, name+" opening, switching, choosing unsubmitted item must not write learner data"
         dialog.locator(".topic-micro-option").first.click()
         assert storage()!=before, name+" answering must write learner evidence"
