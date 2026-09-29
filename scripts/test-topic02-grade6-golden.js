@@ -50,6 +50,6 @@ ok(practice.includes("Luyện tự luận & trình bày") && practice.includes('
 ok(check.includes('data-readiness-check-v1="assets/data/assessment/02-so-va-phep-tinh-core-v1.json"') && !check.includes("# Đáp án và hướng dẫn chấm"),"live independent assessment");
 ok(/tự luận/i.test(read("docs/kien-thuc/02-so-va-phep-tinh/tu-kiem-tra-tu-luan.md")),"legacy written check preserved");
 const panel=classhub.split('data-grade-panel="6"')[1].split('data-grade-panel="7"')[0];
-ok((panel.match(/02-so-va-phep-tinh\/#core-journey/g)||[]).length>=5,"grade6 class hub opens the learning cards");
+ok((panel.match(/02-so-va-phep-tinh\/core\//g)||[]).length>=5,"grade6 class hub opens the learning cards");
 ok(runtime.includes('"02-so-va-phep-tinh":{') && runtime.includes("topic02-learning-workspace.json"),"runtime supports topic02");
 console.log("PASS: Topic02 grade6 golden pilot: 5 cards, 15 micro, 10 readiness, source/skill scope, routes, legacy bank and answer-key regression.");
