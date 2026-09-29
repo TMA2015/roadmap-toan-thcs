@@ -35,6 +35,7 @@ ok(2*Math.PI*7>0&&2*7===14&&110+70===180,"numeric and opposite-angle oracles");
 for(const src of ["GEO19MICRO_001","GEO19MICRO_002","GEO19MICRO_003"])ok(by.get(src).card_id==="geo19-core-1","stable old association");
 ok(read(root+"core/index.md").includes('data-topic-core-entry="19-duong-tron"')&&read("mkdocs.yml").includes("kien-thuc/19-duong-tron/core/index.md"),"standalone route");
 const engine=read("docs/assets/javascripts/topic-workspace-v1.js"),ui=read("docs/assets/javascripts/knowledge-ui-v1.js");
-ok(engine.includes('"19-duong-tron"')&&ui.includes('"19-duong-tron"')&&engine.includes('recordAnswer?.('),"rendering and evidence hooks");
+const routes=read("docs/assets/javascripts/topic-learning-routes-v1.js");
+ok(engine.includes('"19-duong-tron"')&&routes.includes('"19-duong-tron"')&&engine.includes('recordAnswer?.('),"rendering and evidence hooks");
 ok(w.extensions.every(x=>x.gates_core===false),"no extension core gate");
 console.log("PASS: Core19 source R2 exact 5 lectures, frozen 15 legacy questions, 2 approved gap items, 14/14 opportunities, immutable historical identity.");
