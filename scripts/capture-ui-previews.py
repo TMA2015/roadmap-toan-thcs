@@ -117,7 +117,7 @@ with sync_playwright() as p:
         topic_page.locator(".lesson-switcher-steps a").first.wait_for(state="visible", timeout=12000)
         links = topic_page.locator(".lesson-switcher-steps a")
         slug = urlparse(row["url"]).path.rstrip("/").split("/")[-1]
-        pilot = slug in ("04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete")
+        pilot = slug in ("04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so","08-phuong-trinh-bat-phuong-trinh","09-he-phuong-trinh","10-ham-so-do-thi","11-can-thuc","12-phuong-trinh-bac-hai-viete", "13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy")
         check(links.count() == (4 if pilot else 3), "correct step count for " + row["url"])
         check(links.nth(0).get_attribute("aria-current") == "page", "lesson selected " + row["url"])
         if pilot:
@@ -283,7 +283,7 @@ with sync_playwright() as p:
                 shot(core_page, slug + "-lecture-modal-desktop.png")
                 dlg.locator(".topic-core-to-practice").click()
                 check(dlg.get_attribute("data-mode") == "practice"
-                      and dlg.locator(".topic-micro-pager button").count() == (4 if slug == "09-he-phuong-trinh" else 3),
+                      and dlg.locator(".topic-micro-pager button").count() == {"09-he-phuong-trinh":4,"13-goc-va-duong-thang":6,"14-tam-giac":4}.get(slug,3),
                       "lecture links to original three practice items " + slug)
                 dlg.locator(".topic-core-dialog__close").click()
                 check(not dlg.is_visible() and core_page.evaluate(
@@ -298,6 +298,47 @@ with sync_playwright() as p:
                     "09-he-phuong-trinh":[("sys09-core-1","SYS09MICRO_016","so-nghiem-he",["y-nghia-hinh-hoc"]),("sys09-core-5","SYS09MICRO_017","nang-suat-he",["lap-he-bai-toan"])],
                     "11-can-thuc":[("rad11-core-4","RAD11MICRO_016","truc-can-mau-don",["nhan-chia-can"])]
                 }
+                if slug in ("13-goc-va-duong-thang","14-tam-giac","15-duong-dong-quy"):
+                    check(core_page.locator(".topic-core-card-gap").count()==0,
+                          "geometry declared skills have real individually assessed questions "+slug)
+                    check(core_page.locator(".topic-core-card").first.locator(".topic-core-card-meta").is_visible(),
+                          "geometry skill opportunities visible on card "+slug)
+                geometry_targeted={
+                    "13-goc-va-duong-thang":[
+                        ("geo13-core-1","GEO13MICRO_016","tia",3,6),
+                        ("geo13-core-1","GEO13MICRO_017","tia-doi",4,6),
+                        ("geo13-core-1","GEO13MICRO_018","doan-thang-do-dai",5,6),
+                        ("geo13-core-2","GEO13MICRO_019","do-goc",3,7),
+                        ("geo13-core-2","GEO13MICRO_020","phan-loai-goc",4,7),
+                        ("geo13-core-2","GEO13MICRO_021","goc-phu-bu",5,7),
+                        ("geo13-core-2","GEO13MICRO_022","nhan-dang-goc-dac-biet",6,7)
+                    ],
+                    "14-tam-giac":[
+                        ("geo14-core-1","GEO14MICRO_016","so-sanh-canh-goc",3,4),
+                        ("geo14-core-2","GEO14MICRO_017","cach-deu-dinh",3,4)
+                    ]
+                }
+                for card_id,qid,skill,index,count in geometry_targeted.get(slug,[]):
+                    c=core_page.locator('.topic-core-card[data-card-id="'+card_id+'"]')
+                    c.locator(".topic-core-practice-start").click()
+                    check(dlg.locator(".topic-micro-pager button").count()==count,
+                          "geometry pager shows every original and added skill "+qid)
+                    dlg.locator(".topic-micro-pager button").nth(index).click()
+                    check(dlg.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill")==skill
+                          and "Bổ sung kỹ năng" in dlg.locator(".topic-micro-meta").inner_text(),
+                          "geometry question has correct own assessed skill "+qid)
+                    pre=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+                    shot(core_page,slug+"-"+qid+"-desktop.png")
+                    dlg.locator(".topic-micro-option").first.click()
+                    post=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+                    check(post.get("questions",{}).get(qid,{}).get("attempted",0)
+                          == pre.get("questions",{}).get(qid,{}).get("attempted",0)+1,
+                          "exact stable-ID geometry attempt "+qid)
+                    check(post.get("tags",{}).get(skill,{}).get("attempted",0)
+                          == pre.get("tags",{}).get(skill,{}).get("attempted",0)+1,
+                          "one assessed geometry skill counted "+qid)
+                    dlg.locator(".topic-core-dialog__close").click()
+                    check(not dlg.is_visible(),"geometry modal closes without layout overlap "+qid)
                 if slug == "09-he-phuong-trinh":
                     fourth=core_page.locator('.topic-core-card[data-card-id="sys09-core-4"]')
                     check(fourth.get_attribute("data-covered-skills") == "3"
@@ -363,7 +404,7 @@ with sync_playwright() as p:
     (OUT / "all-25-topic-pages-audit.json").write_text(
         json.dumps({"topic_count":len(audit),"checked_routes":len(audit)*3,"checked":audit},ensure_ascii=False,indent=2),
         encoding="utf-8")
-    print("PASS: all 75 original topic routes plus standalone CĐ04–12 Core; modal checks on all 22 workspaces.", flush=True)
+    print("PASS: all 75 original topic routes plus standalone CĐ04–15 Core; modal checks on all 22 workspaces.", flush=True)
     page.locator("#library-local-search").fill("tam giac")
     matches = page.locator(".library-topic-tile:visible")
     check(matches.count() >= 1 and matches.count() < 25, "accent-insensitive filter works")
@@ -736,6 +777,41 @@ $$
         shot(first_phone,topic_slug+"-"+card_id+"-phone.png")
         modal.locator(".topic-core-dialog__close").click()
         check(not modal.is_visible(),"phone Core modal closes without card stretching "+card_id)
+    # Geometry route/long pagers must fit a real touch viewport.
+    for geometry_slug,card_id,count in [
+        ("13-goc-va-duong-thang","geo13-core-1",6),
+        ("13-goc-va-duong-thang","geo13-core-2",7),
+        ("14-tam-giac","geo14-core-1",4),
+        ("14-tam-giac","geo14-core-2",4),
+        ("15-duong-dong-quy","geo15-core-1",3)
+    ]:
+        first_phone.goto(BASE+"kien-thuc/"+geometry_slug+"/core/",wait_until="networkidle")
+        first_phone.locator('#core-journey[data-core-ready="1"]').wait_for(state="visible",timeout=12000)
+        check(first_phone.locator(".lesson-switcher-steps a").count()==4
+              and first_phone.locator(".topic-core-card").count()==5,
+              "geometry phone has five cards and four-step menu "+geometry_slug)
+        card=first_phone.locator('.topic-core-card[data-card-id="'+card_id+'"]')
+        check(card.evaluate("(el)=>el.scrollWidth<=el.clientWidth+2"),"geometry card fits screen "+card_id)
+        before=first_phone.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')")
+        card.locator(".topic-core-teach-start").click()
+        modal=first_phone.locator(".topic-core-dialog")
+        check(modal.is_visible() and modal.locator(".topic-core-teaching-row").count()==5
+              and modal.locator(".topic-core-dialog__body").evaluate(
+                    "(el)=>el.scrollWidth<=el.clientWidth+2"),
+              "geometry full lecture and formula layout fit phone "+card_id)
+        modal.locator(".topic-core-to-practice").click()
+        check(modal.locator(".topic-micro-pager button").count()==count
+              and modal.locator(".topic-micro-pager").evaluate(
+                    "(el)=>el.scrollWidth<=el.clientWidth+2"),
+              "geometry pager wraps without horizontal overflow "+card_id)
+        modal.locator(".topic-micro-pager button").last.click()
+        check(modal.locator(".topic-core-dialog__body").evaluate(
+              "(el)=>el.scrollWidth<=el.clientWidth+2"),"geometry last item fits phone "+card_id)
+        shot(first_phone,geometry_slug+"-"+card_id+"-phone.png")
+        modal.locator(".topic-core-dialog__close").click()
+        check(not modal.is_visible()
+              and first_phone.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')")==before,
+              "phone geometry open/close/view never records attempt "+card_id)
     browser.close()
 
 checks = sorted(OUT.glob("*.png"))
