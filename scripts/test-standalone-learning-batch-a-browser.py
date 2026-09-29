@@ -13,7 +13,7 @@ CASES = [
     ("21-thong-ke", "Core theo chặng", "STA21MICRO_001"),
     ("23-xac-suat", "Core theo chặng", "PRO23MICRO_001"),
     ("24-bai-toan-thuc-te", "Ứng dụng theo chặng", "MOD24MICRO_001"),
-    ("25-tong-hop-on-thi-10", "Ôn thi theo chặng", "REV25MICRO_001"),
+    ("25-tong-hop-on-thi-10", "Ôn thi theo chặng", "REV25MICRO_004"),
 ]
 KEY = "toan-thcs-practice-v1"
 Path("previews").mkdir(exist_ok=True)
