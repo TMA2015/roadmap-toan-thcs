@@ -6,7 +6,7 @@
 > **Mạch kiến thức:** Thống kê
 > **Mức ưu tiên:** ⭐⭐⭐⭐
 >
-> **Lưu ý tầng học:** Năm Learning Cards KNTT Core ở đầu trang là lộ trình nền tảng lớp 6–8. Các mục tổng hợp, tần suất và dữ liệu ghép nhóm bên dưới cần học đúng bài/lớp phù hợp; không tự động tính vào Core Readiness.
+> **Lưu ý tầng học:** Năm Learning Cards KNTT Core trong [trang học theo chặng](core/index.md) là lộ trình nền tảng lớp 6–8. Các mục tổng hợp, tần suất và dữ liệu ghép nhóm bên dưới cần học đúng bài/lớp phù hợp; không tự động tính vào Core Readiness.
 
 ---
 
@@ -434,7 +434,7 @@ Mức ưu tiên ôn thi: **⭐⭐⭐⭐**.
 
 ## 📝 8. Luyện tập
 
-Thực hiện 15 câu **micro-practice** trong 5 Learning Cards (Base → Trap → Apply) để nhận phản hồi ngay. Sau đó mở Practice Room để luyện sâu và theo dõi lượt làm theo skill. Practice là **formative evidence**, không gộp cơ học với Core Readiness.
+Thực hiện 15 câu **micro-practice** trong [5 Learning Cards ở trang Core riêng](core/index.md) (Base → Trap → Apply) để nhận phản hồi ngay. Sau đó mở Practice Room để luyện sâu và theo dõi lượt làm theo skill. Practice là **formative evidence**, không gộp cơ học với Core Readiness.
 
 - **→ [Mở Practice Room CĐ21](bai-tap.md)**
 
