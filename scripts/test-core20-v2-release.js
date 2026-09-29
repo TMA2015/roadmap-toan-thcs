@@ -30,7 +30,7 @@ for(let i=0;i<5;i++){
  ok(JSON.stringify(c.skills)===JSON.stringify(v.original_skills)&&JSON.stringify(c.micro_practice)===JSON.stringify(v.original_micro_practice),"historical mapping snapshot "+c.id);
 }
 ok(approved.includes(reviewSourceHash)&&review.includes("19/19")&&receipt.includes("Part A 10 groups/29 skills PASS"),"source and review provenance");
-const from=approved.indexOf("[E] AUTHOR CANDIDATE TEN-CARD GROUPING"),until=approved.indexOf("[H] SAFETY"),sourceText=approved.slice(from,until);
+const from=approved.indexOf("[E] AUTHOR CANDIDATE TEN-CARD GROUPING"),until=approved.indexOf("```",from),sourceText=approved.slice(from,until);
 ok(from>=0&&until>from,"full candidate source excerpt");
 const sourceGroups=[...sourceText.matchAll(/PROPOSED ORDER (\d+) (geo20-core-[0-9ab]+) \[(?:LEGACY_CARD|NEW_CARD)\]: ([^\n]+)\nCandidate skills: ([^\n]+)\nOriginal or proposed question IDs: ([^\n]+)/g)];
 ok(sourceGroups.length===10,"ten source groups");
