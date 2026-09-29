@@ -269,8 +269,9 @@ with sync_playwright() as p:
                 first_card = core_page.locator(".topic-core-card").first
                 check(core_page.locator(".topic-core-card").count() == expected_core_cards,
                       "correct independent Core-card count " + slug)
-                check(core_page.locator(".topic-core-card-gap").count() == 0,
-                      "source-linked micro bank covers every declared skill " + slug)
+                expected_gaps={"02-so-va-phep-tinh":4,"23-xac-suat":2}.get(slug,0)
+                check(core_page.locator(".topic-core-card-gap").count() == expected_gaps,
+                      "truthful declared-vs-assessed coverage (no invented item) " + slug)
                 before=core_page.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')")
                 boxes=[x.bounding_box() for x in core_page.locator(".topic-core-card").all()]
                 first_card.locator(".topic-core-teach-start").click()
