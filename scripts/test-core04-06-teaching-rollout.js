@@ -61,7 +61,7 @@ for(const x of [-4,-2,0,1,3])for(const y of [-2,0,1,5]){
  assert(eq((x+3)**2-(x-3)**2,12*x),"CĐ05 card5");
  assert(eq(6*x*(x-3)+9*(3-x),3*(x-3)*(2*x-3)),"CĐ06 card1");
  assert(eq(x**3+27,(x+3)*(x*x-3*x+9)),"CĐ06 card2");
- assert(eq(2*x*y+2*x+3*y*x+3*y,(2*x+3*y)*(y+1)),"CĐ06 card3 sampled with a=x,b=y,x=y,y=1");
+ assert(eq(2*x*y+2*x+3*y*y+3*y,(2*x+3*y)*(y+1)),"CĐ06 card3 sampled with a=x,b=y,x=y,y=1");
  assert(eq(x**3+2*x*x-9*x-18,(x+2)*(x-3)*(x+3)),"CĐ06 card4");
  assert(eq((x-4)*(x+1),x*x-3*x-4),"CĐ06 card5");
 }
