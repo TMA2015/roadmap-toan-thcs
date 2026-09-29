@@ -1,0 +1,9 @@
+BẮT ĐẦU KIỂM ĐỊNH BATCH MATH-SKILL-TAXONOMY-B02-20260928.
+
+Chỉ sử dụng 3 nguồn được chọn: Master Plan Toán v1.1, Notebook Math Permanent v1.1, và 01_UPLOAD_TO_SOURCES_B02.md. Không sử dụng B01, chat Gemini hay template rỗng.
+
+Đọc đầy đủ mục A–L, kiểm kê expected_item_ids: 39 ID = CĐ04(2), CĐ05(5), CĐ06(24), CĐ07(8). Đối chiếu từng đề/lựa chọn/đáp án/giải thích với thông tin source_bank_record, nhưng KHÔNG coi previous_internal_triage là kết quả kiểm định độc lập.
+
+Làm một lượt kiểm định theo thứ tự 39 ID, trả bảng 39 item_id với trạng thái, đích đo hẹp, vấn đề toán/đáp án/giải thích/nhiễu, quyết định vai trò tag. Diễn giải đầy đủ các ca lỗi và ca khác kết luận cũ. Nhất thiết kiểm toán 16 câu phân tích hoàn toàn, 6 câu phân thức trùng cấu trúc, 4 câu chứng minh trắc nghiệm và 2 câu giá trị nguyên. Tránh suy diễn mastery từ một kết quả cuối.
+
+Cuối cùng xuất JSON đúng hợp đồng mục L; tổng status_counts = 39, danh sách 39 ID khớp, báo rõ missing/duplicate/unexpected. Phạm vi không gồm kiểm định tần suất thi hay giải quyết xong xung đột CĐ14–15. Status báo cáo PROPOSAL_ONLY. Nếu output dài, hoàn thành theo từng nhóm CĐ và ghi rõ ID cuối cùng đã xét; không bỏ ID hoặc giả định PASS.
