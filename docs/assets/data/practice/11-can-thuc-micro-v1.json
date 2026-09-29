@@ -6,7 +6,7 @@
     "id": "11-can-thuc",
     "title": "Căn thức và biến đổi căn thức"
   },
-  "question_count": 15,
+  "question_count": 16,
   "questions": [
     {
       "id": "RAD11MICRO_001",
@@ -605,6 +605,53 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
+      }
+    },
+    {
+      "id": "RAD11MICRO_016",
+      "card_id": "rad11-core-4",
+      "micro_role": "coverage",
+      "question": "Trục căn thức ở mẫu của \\(\\frac{2}{\\sqrt7}\\) được kết quả nào?",
+      "options": [
+        "\\(\\frac{2\\sqrt7}{7}\\)",
+        "\\(\\frac{\\sqrt7}{2}\\)",
+        "\\(2\\sqrt7\\)",
+        "\\(\\frac27\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "can-thuc",
+        "skill": [
+          "truc-can-mau-don"
+        ],
+        "type": "truc-can-mau-don-so-hoc",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Nhân cả tử và mẫu với \\(\\sqrt7\\), ta được \\(\\frac{2\\sqrt7}{\\sqrt7\\cdot\\sqrt7}=\\frac{2\\sqrt7}{7}\\), vì \\(7>0\\). Không chỉ nhân tử hay làm mất hệ số 2.",
+      "hints": [
+        "Nhân cả tử và mẫu với cùng một biểu thức để không đổi giá trị phân thức.",
+        "Dùng căn dương ở mẫu: \\(\\sqrt7\\cdot\\sqrt7=7\\)."
+      ],
+      "supporting_skills": [
+        "nhan-chia-can"
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
       }
     }
   ]
