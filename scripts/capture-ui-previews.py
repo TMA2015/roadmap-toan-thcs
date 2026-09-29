@@ -118,6 +118,26 @@ with sync_playwright() as p:
         check(links.nth(2).get_attribute("href").endswith("/tu-kiem-tra/"), "self-check route " + row["url"])
         title = topic_page.locator(".topic-workspace-hero h1, .md-content__inner h1").first.inner_text()
         check(bool(title.strip()), "readable title for " + row["url"])
+        # Every published five-card workspace must open a self-contained modal.
+        # Probe without answering, so this sweep never writes learner evidence.
+        slug = urlparse(row["url"]).path.rstrip("/").split("/")[-1]
+        if slug not in ("01-ban-do-chuong-trinh", "03-ti-le-ti-le-thuc", "22-dai-luong-dac-trung"):
+            start_core = topic_page.locator("#core-journey .topic-micro-start").first
+            start_core.wait_for(state="visible", timeout=12000)
+            card = topic_page.locator("#core-journey .topic-core-card").first
+            original_height = card.bounding_box()["height"]
+            start_core.click()
+            core_modal = topic_page.locator(".topic-core-dialog")
+            check(core_modal.is_visible(), "Core modal opens on " + slug)
+            check(core_modal.locator(".topic-micro-option").count() >= 2, "real answer options on " + slug)
+            check(core_modal.locator(".topic-micro-options").evaluate(
+                "(el) => el.scrollWidth <= el.clientWidth + 2"), "Core answers do not overflow on " + slug)
+            check(topic_page.locator(".topic-core-card .topic-micro-panel").count() == 0,
+                  "Core never mounts inside a grid card on " + slug)
+            core_modal.locator(".topic-core-dialog__close").click()
+            check(not core_modal.is_visible(), "Core modal closes on " + slug)
+            check(abs(original_height - card.bounding_box()["height"]) < 2,
+                  "Core card does not expand/collapse on " + slug)
         practice_url = links.nth(1).get_attribute("href")
         self_check_url = links.nth(2).get_attribute("href")
         for subpath in (practice_url, self_check_url):
