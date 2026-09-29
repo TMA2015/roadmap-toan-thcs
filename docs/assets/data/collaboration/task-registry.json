@@ -554,17 +554,25 @@
       "id": "CORE04-06-STANDALONE-001",
       "title": "CĐ04–06 dedicated Core pages, 15 source-linked teaching copies and dual-modal learning",
       "routing": "CHATGPT_AUTHOR_SELF_AUDIT+CI_BROWSER_QA",
-      "status": "READY",
-      "review_verdict": "SELF_AUDITED_CANDIDATE_CI_PENDING_OWNER_DEVICE_QA",
-      "review_notes": "PR #166 draft. Old 45 questions and their stable IDs/keys unchanged, CĐ07 R2 unaffected. Three dedicated Core pages with original micro coverage CĐ04 11/11, CĐ05 12/12, CĐ06 9/9. Source-locked card-by-card review document content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md; math is self-audited under owner-approved risk tiers, not independently NotebookLM-verified. Four-step UI and browse QA; owner real-device acceptance pending."
+      "status": "DONE",
+      "review_verdict": "DEPLOYED_OWNER_ACCEPTED_SELF_AUDITED",
+      "review_notes": "PR #166 draft. Old 45 questions and their stable IDs/keys unchanged, CĐ07 R2 unaffected. Three dedicated Core pages with original micro coverage CĐ04 11/11, CĐ05 12/12, CĐ06 9/9. Source-locked card-by-card review document content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md; math is self-audited under owner-approved risk tiers, not independently NotebookLM-verified. Four-step UI and browse QA; owner real-device acceptance pending. Owner accepted desktop+iPhone after successful published Pages deploy in PR #166; independent NotebookLM not claimed."
     },
     {
       "id": "CORE08-12-STANDALONE-001",
       "title": "CĐ08–12 independent Core pages, 25 source-grounded lectures and four skill-gap items",
       "routing": "CHATGPT_AUTHOR_SELF_AUDIT+CI_BROWSER_QA",
+      "status": "DONE",
+      "review_verdict": "DEPLOYED_OWNER_ACCEPTED_SELF_AUDITED",
+      "review_notes": "Five stable standalone Core pages and 25 teaching cards, original 75 micro items preserved with four append-only singleton-skill questions (08 khử mẫu; 09 số nghiệm and năng suất; 11 trục mẫu đơn). CĐ09 pre-existing SYS09MICRO_012 declared skill mismatch reconciled in card metadata only. Source-locked audit content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md. No change to main lessons, previous cards, assessment/readiness or storage IDs. Owner desktop/iPhone/iPad QA separate. Owner accepted iPad+desktop after successful published Pages deploy in PR #167; independent NotebookLM not claimed."
+    },
+    {
+      "id": "CORE13-15-STANDALONE-001",
+      "title": "CĐ13–15 independent Core learning, 15 geometric lectures and nine targeted practice questions",
+      "routing": "CHATGPT_AUTHOR_SOURCE_LOCKED_SELF_AUDIT+CI_BROWSER_QA",
       "status": "READY",
       "review_verdict": "SELF_AUDITED_CANDIDATE_CI_PENDING_OWNER_DEVICE_QA",
-      "review_notes": "Five stable standalone Core pages and 25 teaching cards, original 75 micro items preserved with four append-only singleton-skill questions (08 khử mẫu; 09 số nghiệm and năng suất; 11 trục mẫu đơn). CĐ09 pre-existing SYS09MICRO_012 declared skill mismatch reconciled in card metadata only. Source-locked audit content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md. No change to main lessons, previous cards, assessment/readiness or storage IDs. Owner desktop/iPhone/iPad QA separate."
+      "review_notes": "Pilot geometry tranche CĐ13–15. Original 45 micro records pinned unchanged, nine new single-skill questions in CĐ13/14, CĐ15 has no question expansion. Geometric conditions are explicitly written, no answer depends on guessing from picture. Per-card source and review packet content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md; not an independent NotebookLM PASS. Verify desktop/iPhone/iPad and keep existing diagrams/infographics and student evidence unchanged. Larger CĐ16–20 batch separately risk-audited."
     }
   ]
 }
