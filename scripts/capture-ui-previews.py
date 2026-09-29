@@ -61,6 +61,7 @@ with sync_playwright() as p:
     shot(class_page, "learn-by-grade-7-desktop.png")
     class_page.locator('[data-grade-panel="7"] a[href$="04-bieu-thuc-dai-so/#core-journey"]').first.click()
     gateway_grade7=class_page.locator("#core-journey.topic-core-gateway a[href='core/']")
+    gateway_grade7.wait_for(state="visible", timeout=12000)
     check(gateway_grade7.count() == 1, "grade 7 mapping reaches the right Core gateway")
     gateway_grade7.click()
     class_page.locator("#core-journey .topic-core-card").first.wait_for(state="visible", timeout=12000)
