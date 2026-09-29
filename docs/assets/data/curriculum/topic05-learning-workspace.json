@@ -27,7 +27,30 @@
         "ID05MICRO_001",
         "ID05MICRO_002",
         "ID05MICRO_003"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Bình phương một tổng: \\((A+B)^2=A^2+2AB+B^2\\); bình phương một hiệu: \\((A-B)^2=A^2-2AB+B^2\\). Khi nhận dạng ngược, kiểm tra đủ hai bình phương và hạng tử giữa \\(\\pm2AB\\); không chỉ nhìn hạng tử đầu/cuối.",
+        "worked_example": {
+          "problem": "Khai triển và thu gọn \\((2x+3)^2+(x-2)^2\\).",
+          "solution": "Bước 1: \\((2x+3)^2=4x^2+12x+9\\).\nBước 2: \\((x-2)^2=x^2-4x+4\\).\nBước 3: Cộng hai kết quả: \\(5x^2+8x+13\\)."
+        },
+        "misconception": "Quên (2AB) hoặc viết bình phương của một hiệu với hạng tử cuối mang dấu âm.",
+        "summary": "Bình phương tổng/hiệu có ba hạng tử; hạng tử cuối luôn là (+B^2).",
+        "source_reference": "docs/kien-thuc/05-7-hang-dang-thuc/index.md",
+        "source_sections": [
+          "3.1",
+          "3.2",
+          "3.8"
+        ],
+        "source_question_ids": [
+          "ID05MICRO_001",
+          "ID05MICRO_002",
+          "ID05MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "id05-core-2",
@@ -48,7 +71,29 @@
         "ID05MICRO_004",
         "ID05MICRO_005",
         "ID05MICRO_006"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Hiệu hai bình phương: \\(A^2-B^2=(A-B)(A+B)\\). Xác định chính xác \\(A\\), \\(B\\), kể cả khi chúng là đơn thức hoặc biểu thức; không áp dụng công thức này cho tổng \\(A^2+B^2\\).",
+        "worked_example": {
+          "problem": "Phân tích \\(9x^2-16y^2\\) thành nhân tử.",
+          "solution": "Bước 1: \\(9x^2=(3x)^2\\), \\(16y^2=(4y)^2\\).\nBước 2: Dùng hiệu hai bình phương: \\(9x^2-16y^2=(3x-4y)(3x+4y)\\).\nBước 3: Nhân hai ngoặc trở lại để kiểm tra hai hạng tử chéo triệt tiêu."
+        },
+        "misconception": "Viết ((3x-4y)^2) hoặc cố phân tích tổng hai bình phương bằng cùng công thức.",
+        "summary": "Hai bình phương và dấu trừ ở giữa → tích của tổng và hiệu.",
+        "source_reference": "docs/kien-thuc/05-7-hang-dang-thuc/index.md",
+        "source_sections": [
+          "3.3",
+          "3.8"
+        ],
+        "source_question_ids": [
+          "ID05MICRO_004",
+          "ID05MICRO_005",
+          "ID05MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "id05-core-3",
@@ -70,7 +115,30 @@
         "ID05MICRO_007",
         "ID05MICRO_008",
         "ID05MICRO_009"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Lập phương tổng: \\((A+B)^3=A^3+3A^2B+3AB^2+B^3\\). Lập phương hiệu: \\((A-B)^3=A^3-3A^2B+3AB^2-B^3\\). Nhận dạng ngược cần đủ bốn hạng tử theo hệ số \\(1,3,3,1\\); chú ý dấu \\(+,-,+,-\\) với lập phương hiệu.",
+        "worked_example": {
+          "problem": "Khai triển \\((2x-1)^3\\).",
+          "solution": "Bước 1: Chọn \\(A=2x\\), \\(B=1\\).\nBước 2: \\(A^3=8x^3,\\;-3A^2B=-12x^2,\\;3AB^2=6x,\\;-B^3=-1\\).\nBước 3: Kết quả \\(8x^3-12x^2+6x-1\\)."
+        },
+        "misconception": "Quên hệ số (3), sai dấu của hạng tử (3AB^2), hoặc tính ((2x)^3) thành (2x^3).",
+        "summary": "Nhận đúng A, B; giữ đủ bốn hạng tử và thứ tự dấu.",
+        "source_reference": "docs/kien-thuc/05-7-hang-dang-thuc/index.md",
+        "source_sections": [
+          "3.4",
+          "3.5",
+          "3.8"
+        ],
+        "source_question_ids": [
+          "ID05MICRO_007",
+          "ID05MICRO_008",
+          "ID05MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "id05-core-4",
@@ -91,7 +159,30 @@
         "ID05MICRO_010",
         "ID05MICRO_011",
         "ID05MICRO_012"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Tổng hai lập phương: \\(A^3+B^3=(A+B)(A^2-AB+B^2)\\). Hiệu hai lập phương: \\(A^3-B^3=(A-B)(A^2+AB+B^2)\\). Ngoặc thứ nhất giữ dấu của đề; dấu của tích \\(AB\\) trong ngoặc thứ hai là dấu ngược lại.",
+        "worked_example": {
+          "problem": "Phân tích \\(8x^3+125\\) thành nhân tử.",
+          "solution": "Bước 1: Nhận \\(8x^3=(2x)^3\\) và \\(125=5^3\\).\nBước 2: Áp dụng tổng hai lập phương: \\((2x+5)((2x)^2-(2x)\\cdot5+5^2)\\).\nBước 3: Thu gọn: \\((2x+5)(4x^2-10x+25)\\)."
+        },
+        "misconception": "Viết sai dấu hạng tử giữa hoặc nhận ((A+B)^3) thay cho (A^3+B^3).",
+        "summary": "Tổng/hiệu lập phương: ngoặc 1 giữ dấu, ngoặc 2 đổi dấu hạng tử tích.",
+        "source_reference": "docs/kien-thuc/05-7-hang-dang-thuc/index.md",
+        "source_sections": [
+          "3.6",
+          "3.7",
+          "3.8"
+        ],
+        "source_question_ids": [
+          "ID05MICRO_010",
+          "ID05MICRO_011",
+          "ID05MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md"
+      }
     },
     {
       "id": "id05-core-5",
@@ -113,7 +204,33 @@
         "ID05MICRO_013",
         "ID05MICRO_014",
         "ID05MICRO_015"
-      ]
+      ],
+      "teaching_copy": {
+        "key_idea": "Chọn hằng đẳng thức từ cấu trúc của biểu thức, không chỉ từ số lượng hạng tử. Có thể dùng công thức xuôi để khai triển, ngược để nhận dạng hoặc hiệu hai bình phương để tính nhanh. Sau biến đổi, thử nhân trở lại để kiểm tra.",
+        "worked_example": {
+          "problem": "Rút gọn \\(S=(x+3)^2-(x-3)^2\\).",
+          "solution": "Bước 1: Đặt \\(A=x+3\\), \\(B=x-3\\); \\(S=A^2-B^2=(A-B)(A+B)\\).\nBước 2: \\(A-B=6\\), \\(A+B=2x\\).\nBước 3: \\(S=12x\\); kiểm tra bằng khai triển hai bình phương cũng được \\(12x\\)."
+        },
+        "misconception": "Bỏ ngoặc sai dấu trong ((x-3)^2) hoặc cố khai triển quá dài khi nhận ra hiệu hai bình phương.",
+        "summary": "Nhận cấu trúc trước khi tính; sau đó chọn công thức ngắn, kiểm tra bằng cách khác.",
+        "source_reference": "docs/kien-thuc/05-7-hang-dang-thuc/index.md",
+        "source_sections": [
+          "3.1",
+          "3.2",
+          "3.3",
+          "3.8",
+          "Dạng 5",
+          "Dạng 6"
+        ],
+        "source_question_ids": [
+          "ID05MICRO_013",
+          "ID05MICRO_014",
+          "ID05MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md"
+      }
     }
   ],
   "extensions": [
