@@ -15,9 +15,11 @@ with sync_playwright() as p:
     page.locator(".topic-workspace-hero").wait_for(state="visible")
     assert page.locator(".topic-workspace-nav").count()==0, "redundant sticky quick menu on CĐ25"
     hero=page.locator(".topic-workspace-hero")
-    for selector in ['a[href="#map"]','a[href="#errors"]','a[href="#core-journey"]']:
+    for selector in ['a[href="#map"]','a[href="#errors"]']:
         target=hero.locator(selector).get_attribute("href")[1:]
         page.locator("#"+target).wait_for(state="attached"), target
+    assert hero.locator('a[href="core/"]').count()==1, "CĐ25 new independent academic/strategy learning page"
+    assert page.locator('#core-journey.topic-core-gateway a[href="core/"]').count()==1
     hero.locator('a[href="#errors"]').click()
     assert page.locator("#errors").evaluate("(node) => node.open"), "common-error link must expand its section"
     hero.locator('a[href="bai-tap/"]').click()
