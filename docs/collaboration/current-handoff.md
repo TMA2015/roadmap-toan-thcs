@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT 29/09/2026.** Trạng thái ngắn hạn, không thay Master Plan. Tên chính thức **Self-Learning Math**, thuộc **G Learning**; AI Tutor là tính năng. Snapshot dựa trên `main` `e80c5e685a24c36ad632a3c8da9963de644575ea`. Mọi phiên mới phải đối chiếu lại SHA của `main`/PR/deploy vì snapshot có thể cũ sau một lần merge.
+> **CURRENT CHECKPOINT 29/09/2026.** Trạng thái ngắn hạn, không thay Master Plan. Tên chính thức **Self-Learning Math**, thuộc **G Learning**; AI Tutor là tính năng. Snapshot đối chiếu đến `main` `4cfa70ff999eb469ac4e33dadb6447abae1c7383` (PR #174). Mọi phiên mới phải đối chiếu lại SHA của `main`/PR/deploy vì snapshot có thể cũ sau một lần merge.
 
 ## Mở cuộc trò chuyện mới
 
@@ -26,22 +26,20 @@
 
 Self-audit ở các batch trước **không được gọi là NotebookLM independent PASS**. Rollout Golden 13–20 trước đó khác với việc phát hành trang Core độc lập mới.
 
-## CĐ19–20 — điểm nối hiện hành
+## CĐ19–20 — đã tích hợp và triển khai, không làm lại
 
-**[Draft PR #170](https://github.com/TMA2015/roadmap-toan-thcs/pull/170)** chứa gói nguồn và receipt kiểm định; head `275749b59c528f0bf6b324018db516b65d250ed3`, baseline `8a13c6c2f076fe360ada6bbaf51d09997e538a4c`. Đây là **audit-only, không merge thành release**. CĐ19–20 candidate chưa xuất bản.
-
-- **CĐ19 R2:** 5 bản giảng + hai câu `GEO19MICRO_016–017` đã có xác nhận học thuật targeted R2. Đã xác nhận điều kiện đảo định lý dây cung, vị trí tương đối đường tròn và ID chuẩn. Receipt: `content-staging/reviews/MATH-CORE19-20-R1-20260929/12_CD19_R2_FINAL_RECEIPT.md` trong PR #170. Không suy diễn 15 câu gốc được regrade.
-- **CĐ20 Part A:** 10 nhóm thẻ đề xuất, chia đúng 29 skill, reviewer 10/10 PASS; 5 legacy anchors + 5 subcards. Receipt `11_CD20_PART_A_R1_RECEIPT.md` trong PR #170.
-- **CĐ20 Part B:** Báo cáo NotebookLM chủ dự án đã cung cấp ghi 5 bản giảng đề xuất (`geo20-core-1a,1b,2a,2b,4a`) và 14 câu `GEO20MICRO_016–029`, **19/19 PASS cho toán học và văn bản**. *Không chứng nhận SVG sau render và chưa deploy.* Cần lưu receipt có khóa packet/source trước khi tích hợp.
-- **Safety:** hai bộ 15 câu gốc, ID, assessed skill, card mapping và lịch sử attempt giữ nguyên. CĐ20 phải có overlay chia thẻ **có phiên bản, không migration ngầm**, tiến độ cũ không bị tính lại theo mẫu số mới. `GEO20MICRO_011` tiếp tục thuộc legacy `geo20-core-4`; `geo20-core-2b` hai kỹ năng/hai câu không cần tạo câu giả.
+- **[PR #173 — CĐ19](https://github.com/TMA2015/roadmap-toan-thcs/pull/173)** merged `607b521635653ae89df68ed1890869a331721da3`; Deploy MkDocs run [36597534733](https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/36597534733) **SUCCESS**. Trang Core độc lập đúng mẫu Soft Academic Cards, năm bài giảng đúng nguồn NotebookLM R2, thêm `GEO19MICRO_016–017`, giữ nguyên 15 câu gốc và dữ liệu. 17 micro, năm card, 14/14 cơ hội kỹ năng có câu riêng. Source-locked QA, strict build, browser desktop/mobile, hiện hình SVG và không ghi lượt làm ảo đã PASS.
+- **[PR #174 — CĐ20](https://github.com/TMA2015/roadmap-toan-thcs/pull/174)** merged `4cfa70ff999eb469ac4e33dadb6447abae1c7383`; Deploy MkDocs run [36599072769](https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/36599072769) **SUCCESS**. Trang Core độc lập dùng `topic20-core-display-v2.json`: 10 chặng/29 kỹ năng và 29 micro. Bản workspace 5 card cũ giữ nguyên Git blob `774997cd9ac4d2efc1c53c17c0de48e6fcdba497`; 15 câu đầu giữ nguyên toàn bộ record `d61845552c9a484ab9b220606ff20c9a9e6a7046`. `GEO20MICRO_011` vẫn thuộc `geo20-core-4`. V2 **không migration storage**, giữ v1 read-only snapshot và mẫu số kỹ năng 9/8/3/6/3; card `geo20-core-2b` có đúng hai câu. Browser/technical/strict build và SVG render QA PASS.
+- CĐ20 Part A: 10 nhóm/29 kỹ năng được phản biện PASS. Part B: 5 **card mới** và 14 câu mới được phản biện nội dung văn bản 19/19 PASS. 5 bản giảng ở card cũ được **self-audit**, không gán nhầm nhãn NotebookLM độc lập. 14 câu mới được hoán vị vị trí phương án đúng A/B/C/D=4/4/3/3 (nguyên văn bốn phương án, chỉ đổi vị trí; key cũ 001–015 không đổi), source-to-published answer mapping được test. Reviewer **không** tự chứng nhận SVG render; CI/browser kiểm riêng.
+- **[Draft PR #170](https://github.com/TMA2015/roadmap-toan-thcs/pull/170)** tiếp tục là hồ sơ audit-only; bao gồm Part A, R2 CĐ19 và nguyên văn báo cáo Part B do chủ dự án cung cấp. Không merge #170 như PR triển khai. Tài liệu tái đối chiếu đã nằm trên `main`: `content-staging/reviews/MATH-CORE19-R2-RELEASE-RECONCILIATION-20260929.md`, `MATH-CORE20-V2-RELEASE-RECONCILIATION-20260929.md`, `MATH-CORE20-R1-CANDIDATES-EXACT-20260929.md`.
+- **Nghiệm thu thiết bị của chủ dự án chưa ghi nhận cho CĐ19–20 sau bản phát hành này.** CI/browser giả lập không phải bằng chứng owner iPad/iPhone/PC chấp nhận. Giữ task QA thiết bị riêng, không suy diễn.
 
 ## Công việc tiếp theo
 
-1. Lưu receipt CĐ20 Part B và đối chiếu exact source/packet IDs; không chạy lại CĐ20 Part A hoặc CĐ19 R2 nếu nguồn không thay.
-2. So sánh draft #170 với `main` mới nhất, rà soát hình SVG render thực tế và giả thiết hình học.
-3. PR triển khai riêng CĐ19–20 đúng Soft Academic Cards/dual-modal, câu/giảng được review và CĐ20 overlay v2 bảo toàn history.
-4. Chạy theorem/diagram/math QA, schema, answer indices, evidence regression, strict MkDocs build, desktop/iPad/mobile browser, merge/deploy chỉ khi đủ điều kiện; owner device acceptance là cổng riêng.
-5. Sau từng mốc cập nhật checkpoint này và registry/context, ghi rõ **draft / QA / merged / deployed / owner-accepted**.
+1. Chủ dự án kiểm tra nhanh CĐ19–20 trên desktop/iPad/iPhone: 4 bước, 5/10 card và hai modal, CĐ20 nhóm 2b đúng hai câu, SVG không vỡ, điều hướng/trở lại, tiến độ cũ giữ nguyên. Ghi kết quả owner QA riêng.
+2. Nếu phát hiện lỗi: xác định đúng ID, asset, trình duyệt và phiên bản; sửa bằng PR nhỏ và test không hồi quy. Không chỉnh câu gốc hoặc đánh giá độc lập đã lưu theo cảm tính.
+3. Sau QA thiết bị, tiếp tục kiểm định **bảng kỹ năng và mức ưu tiên** trong toàn bộ 25 chuyên đề theo quyết định trước đó: gộp trùng lặp, phân biệt Core/Entrance10/Challenge, đối chiếu ngân hàng hiện có và mẫu đề thi thật trước khi suy diễn tần suất. Đây là workflow tiếp theo, không quay lại tự động nhân rộng Core CĐ04–20.
+4. Sau mỗi quyết định/release, cập nhật handoff + Task Registry + Context trong cùng batch và đối chiếu `main`/PR/QA ở lượt chat mới; không ghi đè Master Plan bằng nhật ký tiến độ.
 
 ## Giao thức bảo trì và giới hạn chat
 
