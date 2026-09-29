@@ -356,7 +356,7 @@ const renderCoreCards=async(hero,config)=>{
   const head=document.createElement("div");head.className="topic-core-dialog__head";
   const title=document.createElement("h2");title.id="topic-core-dialog-title";
   const close=document.createElement("button");close.type="button";close.className="practice-btn topic-core-dialog__close";
-  close.textContent="Đóng ✕";close.setAttribute("aria-label","Đóng cửa sổ thực hành");
+  close.textContent="Đóng ✕";close.setAttribute("aria-label","Đóng cửa sổ Core");
   close.addEventListener("click",()=>dialog.close());
   head.append(title,close);
   const body=document.createElement("div");body.className="topic-core-dialog__body";
@@ -365,14 +365,57 @@ const renderCoreCards=async(hero,config)=>{
   let returnFocus=null;
   dialog.addEventListener("close",()=>{if(returnFocus?.isConnected)returnFocus.focus();returnFocus=null});
   const sessions=new Map();
-  const openCard=(card,button)=>{
-   const qs=(card.micro_practice||[]).map(id=>byId.get(id)).filter(Boolean);
-   if(!sessions.has(card.id)){
-    const panel=document.createElement("div");mountMicro(panel,card,qs,graph);sessions.set(card.id,panel);
+  const questionsFor=card=>(card.micro_practice||[]).map(id=>byId.get(id)).filter(Boolean);
+  const teachingPanel=(card,qs)=>{
+   const panel=document.createElement("section");panel.className="topic-core-teaching-modal";
+   panel.appendChild(skillOverview(card,qs,true));
+   const copy=card.teaching_copy;
+   const row=(label,value)=>{
+    if(!value)return;
+    const part=document.createElement("section");part.className="topic-core-teaching-row";
+    const h=document.createElement("h3");h.textContent=label;
+    const p=document.createElement("p");p.textContent=value;part.append(h,p);panel.appendChild(part);
+   };
+   if(copy){
+    row("Kiến thức cốt lõi",copy.key_idea);
+    row("Ví dụ mẫu",copy.worked_example?.problem);
+    row("Các bước giải",copy.worked_example?.solution);
+    row("Lỗi dễ mắc",copy.misconception);
+    row("Ghi nhớ nhanh",copy.summary);
+   }else{
+    row("Bài giảng đang hoàn thiện","Chặng này chưa có ví dụ mẫu riêng đã kiểm định. Em có thể đọc bài giảng đầy đủ của chuyên đề trước khi luyện.");
+    const link=document.createElement("a");link.className="md-button";
+    link.href=location.pathname.includes("/core/")?"../#core":"#core";
+    link.textContent="Mở kiến thức cốt lõi trong bài giảng đầy đủ ↗";panel.appendChild(link);
    }
-   title.textContent=card.title+" · "+qs.length+" câu thực hành";
-   body.replaceChildren(sessions.get(card.id));
-   body.scrollTop=0;returnFocus=button;
+   return panel;
+  };
+  const openCard=(card,mode,button)=>{
+   const qs=questionsFor(card);
+   if(!dialog.open)returnFocus=button;
+   const tabs=document.createElement("nav");tabs.className="topic-core-modal-modes";
+   tabs.setAttribute("aria-label","Chọn bài giảng hoặc luyện tập trong chặng");
+   for(const choice of ["teach","practice"]){
+    const tab=document.createElement("button");tab.type="button";tab.className="practice-btn topic-core-modal-mode";
+    tab.dataset.mode=choice;tab.textContent=choice==="teach"?"📘 Bài giảng":"✏️ Luyện tập";
+    tab.setAttribute("aria-pressed",String(choice===mode));
+    tab.addEventListener("click",()=>{if(choice!==dialog.dataset.mode)openCard(card,choice,null)});
+    tabs.appendChild(tab);
+   }
+   title.textContent=(mode==="teach"?"Bài giảng":"Luyện tập")+" · "+card.title;
+   dialog.dataset.mode=mode;dialog.dataset.cardId=card.id;
+   if(mode==="practice"){
+    if(!sessions.has(card.id)){
+     const panel=document.createElement("div");mountMicro(panel,card,qs,graph);sessions.set(card.id,panel);
+    }
+    body.replaceChildren(tabs,sessions.get(card.id));
+   }else{
+    const panel=teachingPanel(card,qs);
+    const next=document.createElement("button");next.type="button";next.className="practice-btn practice-btn-primary topic-core-to-practice";
+    next.textContent="✏️ Bắt đầu luyện tập →";next.addEventListener("click",()=>openCard(card,"practice",null));
+    panel.appendChild(next);body.replaceChildren(tabs,panel);typeset(panel);
+   }
+   body.scrollTop=0;
    if(!dialog.open)dialog.showModal();
    close.focus();
   };
@@ -382,40 +425,15 @@ const renderCoreCards=async(hero,config)=>{
    const pre=prereqNames.length?
     '<div class="topic-core-prereq topic-core-prereq-full">Nền tảng: '+prereqNames.join(" · ")+'</div><div class="topic-core-prereq topic-core-prereq-compact">Nền tảng: '+prereqNames.length+' kỹ năng</div>':
     '<div class="topic-core-prereq topic-core-prereq-empty">Nền tảng: —</div>';
-   const count=(card.micro_practice||[]).length;
-   el.innerHTML='<div class="topic-core-card-main"><div class="topic-core-card-top"><span class="topic-core-card-number">'+(i+1)+'</span><span class="topic-core-card-lesson">'+(card.kntt_lessons||[]).join(" · ")+'</span></div><h3>'+card.title+'</h3>'+pre+'<div class="topic-core-card-meta"><span>'+card.skills.length+' kỹ năng</span><span>'+count+' câu thực hành</span></div><button type="button" class="practice-btn topic-micro-start">✏️ Mở chặng học</button></div>';
-   if(card.teaching_copy){el.dataset.hasTeachingCopy="1"}
-   el.querySelector(".topic-micro-start").addEventListener("click",event=>openCard(card,event.currentTarget));
+   const qs=questionsFor(card),coverage=coverageFor(card,qs);
+   el.dataset.coveredSkills=String(coverage.covered.length);el.dataset.totalSkills=String(coverage.declared.length);
+   const warning=coverage.missing.length?'<div class="topic-core-card-gap">Chưa có câu riêng: '+coverage.missing.map(skillLabel).join(", ")+'</div>':"";
+   el.innerHTML='<div class="topic-core-card-main"><div class="topic-core-card-top"><span class="topic-core-card-number">'+(i+1)+'</span><span class="topic-core-card-lesson">'+(card.kntt_lessons||[]).join(" · ")+'</span></div><h3>'+card.title+'</h3>'+pre+'<div class="topic-core-card-meta"><span>'+card.skills.length+' kỹ năng</span><span>'+qs.length+' câu thực hành</span><span class="topic-core-card-coverage">'+coverage.covered.length+'/'+coverage.declared.length+' có câu riêng</span></div>'+warning+'<div class="topic-core-card-actions"><button type="button" class="practice-btn topic-core-teach-start">📘 Bài giảng</button><button type="button" class="practice-btn topic-micro-start topic-core-practice-start">✏️ Luyện tập</button></div></div>';
+   if(card.teaching_copy)el.dataset.hasTeachingCopy="1";
+   el.querySelector(".topic-core-teach-start").addEventListener("click",event=>openCard(card,"teach",event.currentTarget));
+   el.querySelector(".topic-micro-start").addEventListener("click",event=>openCard(card,"practice",event.currentTarget));
    grid.appendChild(el);
   });
-  if(location.pathname.includes("/core/")){
-   // Teaching sits outside the card grid to preserve all card dimensions.
-   const teaching=document.createElement("section");teaching.className="topic-core-teaching";
-   const heading=document.createElement("h2");heading.textContent="Bài giảng và ví dụ theo chặng";
-   const note=document.createElement("p");note.textContent="Đọc kiến thức và ví dụ trước khi thực hành. Mỗi bài giảng mở/thu gọn độc lập.";
-   teaching.append(heading,note);
-   data.cards.forEach((card,i)=>{
-    const details=document.createElement("details");details.className="topic-core-teaching-item";details.id="core-lesson-"+(i+1);
-    const summary=document.createElement("summary");summary.textContent=(i+1)+". "+card.title;details.appendChild(summary);
-    const copy=card.teaching_copy;
-    const row=(label,value)=>{
-     if(!value)return;
-     const block=document.createElement("div");block.className="topic-core-teaching-row";
-     const title=document.createElement("strong");title.textContent=label;
-     const p=document.createElement("p");p.textContent=value;block.append(title,p);details.appendChild(block);
-    };
-    if(copy){
-     row("Kiến thức cốt lõi",copy.key_idea);row("Ví dụ mẫu",copy.worked_example?.problem);
-     row("Các bước giải",copy.worked_example?.solution);row("Lỗi dễ mắc",copy.misconception);row("Ghi nhớ",copy.summary);
-    }else{
-     const p=document.createElement("p");p.textContent="Chặng này chưa có bản giảng riêng được kiểm định. Em hãy đọc bài giảng đầy đủ trước khi thực hành.";
-     const link=document.createElement("a");link.href="../#core";link.textContent="Mở kiến thức cốt lõi của chuyên đề ↗";details.append(p,link);
-    }
-    details.addEventListener("toggle",()=>{if(details.open)typeset(details)});
-    teaching.appendChild(details);
-   });
-   host.appendChild(teaching);
-  }
   host.appendChild(grid);
   if((data.extensions||[]).length){const ext=document.createElement("details");ext.className="topic-extension-zone";ext.innerHTML='<summary>🚀 Entrance10 / Challenge <span>không tính vào hoàn thành KNTT Core</span></summary><div class="topic-extension-list">'+(data.extensions||[]).map(x=>`<span class="topic-chip">${x.layer}: ${x.title}</span>`).join("")+"</div>";host.appendChild(ext);}
   const staticJourneyAnchor=document.getElementById("core-journey");
