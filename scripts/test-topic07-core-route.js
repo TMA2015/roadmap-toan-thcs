@@ -11,7 +11,7 @@ const js=read("docs/assets/javascripts/topic-workspace-v1.js");
 const shell=read("docs/assets/javascripts/knowledge-ui-v1.js"),css=read("docs/assets/stylesheets/topic-workspace.css");
 ok(yaml.includes("Core theo chặng: kien-thuc/"+slug+"/core/index.md"),"stable Core route in navigation");
 ok(core.includes('data-topic-core-entry="'+slug+'"')&&core.includes("không phải"),"Core page has teaching marker and formative scope");
-ok(js.includes('const isPilot=config.slug==="'+slug+'"')&&js.includes("mountCoreGateway(hero,config)"),"pilot root retains old #core-journey entry");
+ok(js.includes('const hasStandaloneCore=')&&js.includes('"07-phan-thuc-dai-so"')&&js.includes("mountCoreGateway(hero,config)"),"pilot root retains old #core-journey entry");
 ok(js.includes('link.href="core/"')&&js.includes('location.pathname.includes("/core/")'),"dedicated URL and safe knowledge fallback");
 ok(js.includes('const sessions=new Map()')&&js.includes("recordAnswer?.(")&&!js.includes("el.classList.toggle(\"is-active\")"),"existing modal and evidence path retained");
 ok(shell.includes('id:"core"')&&shell.includes('lesson-switcher-steps--four'),"four-stage pilot navigation");
