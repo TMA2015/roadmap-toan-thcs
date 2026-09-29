@@ -60,8 +60,11 @@ with sync_playwright() as p:
     check("lop=7" in class_page.url, "grade selection is shareable")
     shot(class_page, "learn-by-grade-7-desktop.png")
     class_page.locator('[data-grade-panel="7"] a[href$="04-bieu-thuc-dai-so/#core-journey"]').first.click()
+    gateway_grade7=class_page.locator("#core-journey.topic-core-gateway a[href='core/']")
+    check(gateway_grade7.count() == 1, "grade 7 mapping reaches the right Core gateway")
+    gateway_grade7.click()
     class_page.locator("#core-journey .topic-core-card").first.wait_for(state="visible", timeout=12000)
-    check(class_page.locator("#core-journey .topic-core-card").count() == 5, "grade 7 link reaches five topic cards")
+    check(class_page.locator("#core-journey .topic-core-card").count() == 5, "grade 7 opens five CĐ04 cards")
     shot(class_page, "grade-7-core-cards-desktop.png")
     class_page.close()
     page.locator('.home-style-bar [data-home-select="playful"]').click()
@@ -113,7 +116,7 @@ with sync_playwright() as p:
         topic_page.locator(".lesson-switcher-steps a").first.wait_for(state="visible", timeout=12000)
         links = topic_page.locator(".lesson-switcher-steps a")
         slug = urlparse(row["url"]).path.rstrip("/").split("/")[-1]
-        pilot = slug == "07-phan-thuc-dai-so"
+        pilot = slug in ("04-bieu-thuc-dai-so","05-7-hang-dang-thuc","06-phan-tich-da-thuc","07-phan-thuc-dai-so")
         check(links.count() == (4 if pilot else 3), "correct step count for " + row["url"])
         check(links.nth(0).get_attribute("aria-current") == "page", "lesson selected " + row["url"])
         if pilot:
@@ -144,123 +147,151 @@ with sync_playwright() as p:
                   "all five cards have a lecture button")
             check(core_page.locator(".topic-core-card .topic-micro-start").count() == 5,
                   "all five cards retain the practice button")
-            first_card = core_page.locator('.topic-core-card[data-card-id="pt07-core-1"]')
-            second_card = core_page.locator('.topic-core-card[data-card-id="pt07-core-2"]')
-            cards_visual = core_page.locator(".topic-core-card")
-            check(cards_visual.count() == 5 and core_page.locator(".topic-core-card-header").count() == 5
-                  and core_page.locator(".topic-core-card-content").count() == 5,
-                  "five semantic soft-card headers and bodies")
-            accents = cards_visual.evaluate_all(
-                "(items) => items.map(el => getComputedStyle(el).getPropertyValue('--core-accent').trim())")
-            check(len(set(accents)) == 5, "all five cards have distinct restrained accent tones")
-            check(first_card.locator(".topic-core-card-header").evaluate(
-                "(el) => getComputedStyle(el).backgroundImage.includes('gradient')"),
-                "card header has a separate soft-tinted treatment")
-            grid_cols = core_page.locator(".topic-core-card-grid").evaluate(
-                "(el) => getComputedStyle(el).gridTemplateColumns.split(' ').filter(Boolean).length")
-            check(1 <= grid_cols <= 3, "readable maximum three Core columns on desktop")
-            check(first_card.locator(".topic-core-card-number").evaluate(
-                "(el) => getComputedStyle(el).backgroundColor !== 'rgba(0, 0, 0, 0)'"),
-                "Core number badge has a solid contrasting background")
-            check(first_card.locator(".topic-core-card-actions button").evaluate_all(
-                "(buttons) => buttons.length === 2 && buttons.every(b => b.getBoundingClientRect().height >= 44)"),
-                "both Core actions retain touch-size targets")
-            first_card.locator(".topic-core-card-actions").scroll_into_view_if_needed()
-            shot(core_page, "topic07-core-soft-cards-desktop.png")
-            original_scheme = core_page.evaluate("() => document.body.getAttribute('data-md-color-scheme')")
-            core_page.evaluate("() => document.body.setAttribute('data-md-color-scheme','slate')")
-            dark_accent = first_card.evaluate(
-                "(el) => getComputedStyle(el).getPropertyValue('--core-accent').trim()")
-            check(dark_accent != accents[0], "soft-card accents adapt to dark theme")
-            shot(core_page, "topic07-core-soft-cards-dark-desktop.png")
-            core_page.evaluate("""(previous) => {
-                if(previous === null) document.body.removeAttribute('data-md-color-scheme');
-                else document.body.setAttribute('data-md-color-scheme', previous);
-            }""", original_scheme)
+            if slug == "07-phan-thuc-dai-so":
+                first_card = core_page.locator('.topic-core-card[data-card-id="pt07-core-1"]')
+                second_card = core_page.locator('.topic-core-card[data-card-id="pt07-core-2"]')
+                cards_visual = core_page.locator(".topic-core-card")
+                check(cards_visual.count() == 5 and core_page.locator(".topic-core-card-header").count() == 5
+                      and core_page.locator(".topic-core-card-content").count() == 5,
+                      "five semantic soft-card headers and bodies")
+                accents = cards_visual.evaluate_all(
+                    "(items) => items.map(el => getComputedStyle(el).getPropertyValue('--core-accent').trim())")
+                check(len(set(accents)) == 5, "all five cards have distinct restrained accent tones")
+                check(first_card.locator(".topic-core-card-header").evaluate(
+                    "(el) => getComputedStyle(el).backgroundImage.includes('gradient')"),
+                    "card header has a separate soft-tinted treatment")
+                grid_cols = core_page.locator(".topic-core-card-grid").evaluate(
+                    "(el) => getComputedStyle(el).gridTemplateColumns.split(' ').filter(Boolean).length")
+                check(1 <= grid_cols <= 3, "readable maximum three Core columns on desktop")
+                check(first_card.locator(".topic-core-card-number").evaluate(
+                    "(el) => getComputedStyle(el).backgroundColor !== 'rgba(0, 0, 0, 0)'"),
+                    "Core number badge has a solid contrasting background")
+                check(first_card.locator(".topic-core-card-actions button").evaluate_all(
+                    "(buttons) => buttons.length === 2 && buttons.every(b => b.getBoundingClientRect().height >= 44)"),
+                    "both Core actions retain touch-size targets")
+                first_card.locator(".topic-core-card-actions").scroll_into_view_if_needed()
+                shot(core_page, "topic07-core-soft-cards-desktop.png")
+                original_scheme = core_page.evaluate("() => document.body.getAttribute('data-md-color-scheme')")
+                core_page.evaluate("() => document.body.setAttribute('data-md-color-scheme','slate')")
+                dark_accent = first_card.evaluate(
+                    "(el) => getComputedStyle(el).getPropertyValue('--core-accent').trim()")
+                check(dark_accent != accents[0], "soft-card accents adapt to dark theme")
+                shot(core_page, "topic07-core-soft-cards-dark-desktop.png")
+                core_page.evaluate("""(previous) => {
+                    if(previous === null) document.body.removeAttribute('data-md-color-scheme');
+                    else document.body.setAttribute('data-md-color-scheme', previous);
+                }""", original_scheme)
 
-            check(first_card.get_attribute("data-covered-skills") == "4"
-                  and first_card.get_attribute("data-total-skills") == "4",
-                  "Core1 displays 4/4 actual dedicated-skill coverage")
-            check(second_card.get_attribute("data-covered-skills") == "3"
-                  and second_card.get_attribute("data-total-skills") == "3",
-                  "Core2 displays 3/3 actual dedicated-skill coverage")
-            check(first_card.locator(".topic-core-card-gap").count() == 0
-                  and second_card.locator(".topic-core-card-gap").count() == 0,
-                  "no missing-skill warnings after dedicated items are supplied")
-            initial_evidence = core_page.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')")
-            fixed_boxes = [core_page.locator(".topic-core-card").nth(i).bounding_box() for i in range(5)]
-            first_card.locator(".topic-core-teach-start").click()
-            lecture = core_page.locator(".topic-core-dialog")
-            check(lecture.is_visible() and lecture.get_attribute("data-mode") == "teach",
-                  "lecture opens in its own Core modal")
-            check(lecture.locator(".topic-core-teaching-row").count() == 5,
-                  "reviewed teaching example/steps/error/summary appear inside modal")
-            check(lecture.locator(".topic-core-skill-chip").count() == 4
-                  and lecture.locator('.topic-core-skill-chip[data-covered="no"]').count() == 0,
-                  "lecture displays four skills with dedicated formative questions")
-            check(lecture.locator(".topic-micro-option").count() == 0,
-                  "lecture contains no scored question")
-            shot(core_page, "topic07-lecture-modal-desktop.png")
-            lecture.locator(".topic-core-to-practice").click()
-            check(lecture.get_attribute("data-mode") == "practice"
-                  and lecture.locator(".topic-micro-option").count() == 4,
-                  "lecture switches directly to practice in same modal")
-            check(lecture.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill") == "nhan-biet-phan-thuc",
-                  "first question shows its real primary skill")
-            lecture.locator('.topic-core-modal-mode[data-mode="teach"]').click()
-            check(lecture.get_attribute("data-mode") == "teach", "practice can return to lecture")
-            lecture.locator(".topic-core-dialog__close").click()
-            check(not lecture.is_visible(), "lecture closes without stretching card")
-            check(core_page.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')") == initial_evidence,
-                  "opening/closing/moving between modes never creates an attempt")
-            check(all(abs(before["height"] - core_page.locator(".topic-core-card").nth(i).bounding_box()["height"]) < 2
-                      for i, before in enumerate(fixed_boxes)), "all five card heights remain stable")
-            # New questions are appended, not swapped into the original three.
-            first_card.locator(".topic-core-practice-start").click()
-            check(lecture.locator(".topic-micro-pager button").count() == 4,
-                  "first card has original three questions and one new coverage question")
-            lecture.locator(".topic-micro-pager button").nth(3).click()
-            check(lecture.locator(".topic-micro-meta").inner_text().startswith("Câu 4/4")
-                  and "Bổ sung kỹ năng" in lecture.locator(".topic-micro-meta").inner_text(),
-                  "fourth question is explicitly labelled as added skill coverage")
-            check(lecture.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill")
-                  == "hai-phan-thuc-bang-nhau", "fourth question assesses the missing equality skill")
-            before_extra=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
-            shot(core_page, "topic07-equality-skill-q4-desktop.png")
-            lecture.locator(".topic-micro-option").first.click()
-            after_extra=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
-            check(after_extra.get("questions",{}).get("RAT07MICRO_016",{}).get("attempted",0)
-                  == before_extra.get("questions",{}).get("RAT07MICRO_016",{}).get("attempted",0)+1,
-                  "new equality question records one canonical attempt")
-            check(after_extra.get("tags",{}).get("hai-phan-thuc-bang-nhau",{}).get("attempted",0)
-                  == before_extra.get("tags",{}).get("hai-phan-thuc-bang-nhau",{}).get("attempted",0)+1,
-                  "equality assessed skill gains one attempt")
-            check(after_extra.get("tags",{}).get("dieu-kien-xac-dinh",{}).get("attempted",0)
-                  == before_extra.get("tags",{}).get("dieu-kien-xac-dinh",{}).get("attempted",0),
-                  "supporting domain tag is not falsely counted as a second assessed skill")
-            lecture.locator(".topic-core-dialog__close").click()
-            second_card.locator(".topic-core-practice-start").click()
-            check(lecture.locator(".topic-micro-pager button").count() == 4,
-                  "second card also has one additional formative question")
-            lecture.locator(".topic-micro-pager button").nth(3).click()
-            check(lecture.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill")
-                  == "phan-tich-tu-mau", "second new question assesses numerator and denominator factorization")
-            check("Bổ sung kỹ năng" in lecture.locator(".topic-micro-meta").inner_text(),
-                  "second fourth question has accurate role label")
-            before_factoring=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
-            lecture.locator(".topic-micro-option").first.click()
-            after_factoring=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
-            check(after_factoring.get("questions",{}).get("RAT07MICRO_017",{}).get("attempted",0)
-                  == before_factoring.get("questions",{}).get("RAT07MICRO_017",{}).get("attempted",0)+1,
-                  "new factorization question records one canonical attempt")
-            check(after_factoring.get("tags",{}).get("phan-tich-tu-mau",{}).get("attempted",0)
-                  == before_factoring.get("tags",{}).get("phan-tich-tu-mau",{}).get("attempted",0)+1
-                  and after_factoring.get("tags",{}).get("rut-gon-phan-thuc",{}).get("attempted",0)
-                  == before_factoring.get("tags",{}).get("rut-gon-phan-thuc",{}).get("attempted",0),
-                  "factoring only increments its own assessed skill")
-            lecture.locator(".topic-core-dialog__close").click()
+                check(first_card.get_attribute("data-covered-skills") == "4"
+                      and first_card.get_attribute("data-total-skills") == "4",
+                      "Core1 displays 4/4 actual dedicated-skill coverage")
+                check(second_card.get_attribute("data-covered-skills") == "3"
+                      and second_card.get_attribute("data-total-skills") == "3",
+                      "Core2 displays 3/3 actual dedicated-skill coverage")
+                check(first_card.locator(".topic-core-card-gap").count() == 0
+                      and second_card.locator(".topic-core-card-gap").count() == 0,
+                      "no missing-skill warnings after dedicated items are supplied")
+                initial_evidence = core_page.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')")
+                fixed_boxes = [core_page.locator(".topic-core-card").nth(i).bounding_box() for i in range(5)]
+                first_card.locator(".topic-core-teach-start").click()
+                lecture = core_page.locator(".topic-core-dialog")
+                check(lecture.is_visible() and lecture.get_attribute("data-mode") == "teach",
+                      "lecture opens in its own Core modal")
+                check(lecture.locator(".topic-core-teaching-row").count() == 5,
+                      "reviewed teaching example/steps/error/summary appear inside modal")
+                check(lecture.locator(".topic-core-skill-chip").count() == 4
+                      and lecture.locator('.topic-core-skill-chip[data-covered="no"]').count() == 0,
+                      "lecture displays four skills with dedicated formative questions")
+                check(lecture.locator(".topic-micro-option").count() == 0,
+                      "lecture contains no scored question")
+                shot(core_page, "topic07-lecture-modal-desktop.png")
+                lecture.locator(".topic-core-to-practice").click()
+                check(lecture.get_attribute("data-mode") == "practice"
+                      and lecture.locator(".topic-micro-option").count() == 4,
+                      "lecture switches directly to practice in same modal")
+                check(lecture.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill") == "nhan-biet-phan-thuc",
+                      "first question shows its real primary skill")
+                lecture.locator('.topic-core-modal-mode[data-mode="teach"]').click()
+                check(lecture.get_attribute("data-mode") == "teach", "practice can return to lecture")
+                lecture.locator(".topic-core-dialog__close").click()
+                check(not lecture.is_visible(), "lecture closes without stretching card")
+                check(core_page.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')") == initial_evidence,
+                      "opening/closing/moving between modes never creates an attempt")
+                check(all(abs(before["height"] - core_page.locator(".topic-core-card").nth(i).bounding_box()["height"]) < 2
+                          for i, before in enumerate(fixed_boxes)), "all five card heights remain stable")
+                # New questions are appended, not swapped into the original three.
+                first_card.locator(".topic-core-practice-start").click()
+                check(lecture.locator(".topic-micro-pager button").count() == 4,
+                      "first card has original three questions and one new coverage question")
+                lecture.locator(".topic-micro-pager button").nth(3).click()
+                check(lecture.locator(".topic-micro-meta").inner_text().startswith("Câu 4/4")
+                      and "Bổ sung kỹ năng" in lecture.locator(".topic-micro-meta").inner_text(),
+                      "fourth question is explicitly labelled as added skill coverage")
+                check(lecture.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill")
+                      == "hai-phan-thuc-bang-nhau", "fourth question assesses the missing equality skill")
+                before_extra=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+                shot(core_page, "topic07-equality-skill-q4-desktop.png")
+                lecture.locator(".topic-micro-option").first.click()
+                after_extra=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+                check(after_extra.get("questions",{}).get("RAT07MICRO_016",{}).get("attempted",0)
+                      == before_extra.get("questions",{}).get("RAT07MICRO_016",{}).get("attempted",0)+1,
+                      "new equality question records one canonical attempt")
+                check(after_extra.get("tags",{}).get("hai-phan-thuc-bang-nhau",{}).get("attempted",0)
+                      == before_extra.get("tags",{}).get("hai-phan-thuc-bang-nhau",{}).get("attempted",0)+1,
+                      "equality assessed skill gains one attempt")
+                check(after_extra.get("tags",{}).get("dieu-kien-xac-dinh",{}).get("attempted",0)
+                      == before_extra.get("tags",{}).get("dieu-kien-xac-dinh",{}).get("attempted",0),
+                      "supporting domain tag is not falsely counted as a second assessed skill")
+                lecture.locator(".topic-core-dialog__close").click()
+                second_card.locator(".topic-core-practice-start").click()
+                check(lecture.locator(".topic-micro-pager button").count() == 4,
+                      "second card also has one additional formative question")
+                lecture.locator(".topic-micro-pager button").nth(3).click()
+                check(lecture.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill")
+                      == "phan-tich-tu-mau", "second new question assesses numerator and denominator factorization")
+                check("Bổ sung kỹ năng" in lecture.locator(".topic-micro-meta").inner_text(),
+                      "second fourth question has accurate role label")
+                before_factoring=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+                lecture.locator(".topic-micro-option").first.click()
+                after_factoring=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+                check(after_factoring.get("questions",{}).get("RAT07MICRO_017",{}).get("attempted",0)
+                      == before_factoring.get("questions",{}).get("RAT07MICRO_017",{}).get("attempted",0)+1,
+                      "new factorization question records one canonical attempt")
+                check(after_factoring.get("tags",{}).get("phan-tich-tu-mau",{}).get("attempted",0)
+                      == before_factoring.get("tags",{}).get("phan-tich-tu-mau",{}).get("attempted",0)+1
+                      and after_factoring.get("tags",{}).get("rut-gon-phan-thuc",{}).get("attempted",0)
+                      == before_factoring.get("tags",{}).get("rut-gon-phan-thuc",{}).get("attempted",0),
+                      "factoring only increments its own assessed skill")
+                lecture.locator(".topic-core-dialog__close").click()
+            else:
+                first_card = core_page.locator(".topic-core-card").first
+                check(core_page.locator(".topic-core-card").count() == 5,
+                      "five independent cards on the new Core page " + slug)
+                check(core_page.locator(".topic-core-card-gap").count() == 0,
+                      "source-linked micro bank covers every declared skill " + slug)
+                before=core_page.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')")
+                boxes=[x.bounding_box() for x in core_page.locator(".topic-core-card").all()]
+                first_card.locator(".topic-core-teach-start").click()
+                dlg=core_page.locator(".topic-core-dialog")
+                check(dlg.is_visible() and dlg.get_attribute("data-mode") == "teach",
+                      "new lecture opens in separate modal " + slug)
+                check(dlg.locator(".topic-core-teaching-row").count() == 5,
+                      "complete source-grounded five-field teaching copy " + slug)
+                check(dlg.locator(".topic-core-skill-chip").count() >= 1,
+                      "learner-facing skill chips visible " + slug)
+                shot(core_page, slug + "-lecture-modal-desktop.png")
+                dlg.locator(".topic-core-to-practice").click()
+                check(dlg.get_attribute("data-mode") == "practice"
+                      and dlg.locator(".topic-micro-pager button").count() == 3,
+                      "lecture links to original three practice items " + slug)
+                dlg.locator(".topic-core-dialog__close").click()
+                check(not dlg.is_visible() and core_page.evaluate(
+                      "() => localStorage.getItem('toan-thcs-practice-v1')") == before,
+                      "closing new Core lecture does not invent attempted question " + slug)
+                check(all(abs(x["height"]-core_page.locator(".topic-core-card").nth(i).bounding_box()["height"])<2
+                      for i,x in enumerate(boxes)),"Core cards never stretch " + slug)
             exercise_page = core_page
-            shot(core_page, "topic07-core-standalone-desktop.png")
+            shot(core_page, slug + "-core-standalone-desktop.png")
         if slug not in ("01-ban-do-chuong-trinh", "03-ti-le-ti-le-thuc", "22-dai-luong-dac-trung"):
             start_core = exercise_page.locator("#core-journey .topic-micro-start").first
             start_core.wait_for(state="visible", timeout=12000)
@@ -378,7 +409,7 @@ $$
     check(saved == saved_after, "reading explanation after submission does not alter original attempt")
     help_page.close()
     micro_page = desktop.new_page()
-    micro_page.goto(BASE + "kien-thuc/04-bieu-thuc-dai-so/", wait_until="networkidle")
+    micro_page.goto(BASE + "kien-thuc/04-bieu-thuc-dai-so/core/", wait_until="networkidle")
     cards = micro_page.locator("#core-journey .topic-core-card")
     original_boxes = [cards.nth(i).bounding_box() for i in range(cards.count())]
     micro_page.locator("#core-journey .topic-micro-start").first.click()
