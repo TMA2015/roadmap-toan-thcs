@@ -690,10 +690,10 @@
       "id": "MATH-SKILL-PHASE-F-EXPANSION-001",
       "title": "Review bounded multi-topic canonical evidence expansion after accepted Beta v4",
       "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_INDEPENDENT_REVIEW_BEFORE_RUNTIME",
-      "status": "AWAITING_NOTEBOOKLM_REVIEW",
-      "context_version": "1.0.75",
-      "review_verdict": "PENDING",
-      "review_notes": "Draft PR #208 design-only. Packet MATH-SKILL-PHASE-F-EXPANSION-R1-20260930; source blob 70d044f1de98f5b283a3e54fdecfd07fb25d82bd; manifest blob 5a5b339d7372068dd692b9a03dc1277758a6b6d5. Scope: 15 new source-locked items across CĐ04–07, 5 canonical skills, max 9 new independent evidence units. Tests prospective cross-topic aggregation, mixed evidence classes, legacy-tag boundary and append-only reuse of canonical store. No runtime/mastery/readiness/migration."
+      "status": "STAGED_QA_PASS_RELEASE_DECISION_PENDING",
+      "context_version": "1.0.76",
+      "review_verdict": "NOTEBOOKLM_PASS_15_OF_15_AND_TECHNICAL_QA_PASS_NOT_DEPLOYED",
+      "review_notes": "Phase F R1 NotebookLM PASS 15/15, 0 revisions. Beta v5 staged in draft PR #210 at exact HEAD 1614bf89d8f85a8c40f950fefea7501a4c5cc9ea. Roadmap PR Quality 36688748721, Skill assessment pilot QA 36688748761 and Branding QA 36688748845 all SUCCESS. Tests confirm 15 source-locked items, 5 skills, 4 topics, 9 new independent evidence units, dynamic topic labels, v4+v5 prospective aggregation with evidence-class/topic breakdown, legacy tag-order boundary, immutable legacy stores and frozen v4 canonical seed. Not merged/deployed; owner controlled-release decision remains pending."
     }
   ]
 }
