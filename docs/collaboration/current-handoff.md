@@ -16,16 +16,18 @@
 
 ### Bước tiếp tục sau mốc này
 
-1. **Batch B — CĐ03:** lập 5 chặng học đúng mapping lớp 6/7 từ bài nguồn và ngân hàng hiện có, soạn bài giảng/câu micro *candidate*, đưa NotebookLM review độc lập và đối soát nguồn/đáp án trước mọi triển khai. Hiện tại **CĐ03 chưa có trang Core hoặc workspace**, menu 3 bước là đúng trạng thái.
+1. **Owner QA CĐ03:** kiểm tra desktop/iPad thực tế trang Core mới của CĐ03 sau deploy; xác nhận top stepper bốn bước, menu trái, 5 thẻ, modal Bài giảng/Luyện tập và việc mở/đóng/chuyển câu không tự ghi lượt làm.
 2. **Gap CĐ02/23:** chuẩn bị review packet bảy cơ hội luyện còn thiếu, gắn từng ID/card/grade/layer và math answer QA. Không thay thẻ cũ hay key/progress.
-3. **Owner QA Batch A:** kiểm tra desktop/iPad thực tế sau deploy và ghi rõ thiết bị/từng phát hiện. CĐ22 không gộp THPT-Bridge vào THCS readiness, CĐ25 không gộp kỹ năng thi với điểm Toán.
-4. B01–B07 taxonomy read-only ở ledger đã lưu vẫn có hiệu lực, sẽ tiếp tục sau khi đồng bộ UI/học thuật những phần còn thiếu; không merge các draft học thuật ngoài cổng approval.
+3. **Owner QA Batch A:** trạng thái riêng vẫn OPEN nếu chưa có xác nhận thiết bị cho đúng bản Batch A #178; không kế thừa xác nhận CĐ19–20 hoặc CĐ03 sang các route khác.
+4. B01–B07 taxonomy read-only ở ledger đã lưu vẫn có hiệu lực; tiếp tục sau khi xử lý các gap đang hiển thị thật, không merge draft học thuật ngoài cổng approval.
 
-### Batch B CĐ03 — R1 candidate đã đóng gói, đang chờ phản biện
+### Batch B CĐ03 — academic R2 PASS, đã triển khai
 
-- [Draft PR #180](https://github.com/TMA2015/roadmap-toan-thcs/pull/180), packet `MATH-CORE03-R1-20260930`, frozen source lesson blob `61df5dd2a1f352c50005d40147bb229344861ed8`. Một source NotebookLM có bài nguồn nguyên bản, mapping lớp 6/7 và ứng viên **5 card + 15 micro**; prompt chấm từng 5+15 ID riêng. Câu mới RAT03MICRO_001–015, key candidate A/B/C/D = 4/4/4/3, 12 assessed-skill occurrences. Không trùng ID 120 câu RAT03V1 cũ, không có exact-text clone với 120 đề nguồn (preflight tác giả; **chưa phải phản biện độc lập**).
-- Chưa merge/deploy PR #180, chưa sinh `topic03-learning-workspace.json`, Core route, micro bank chính thức hay thay data học sinh. Người dùng upload **duy nhất** `review-packets/core03/01_UPLOAD_TO_NOTEBOOKLM_CORE03_R1.md` vào NotebookLM; copy prompt `02_COPY_TO_NOTEBOOKLM_CHAT_R1.txt` vào Chat, rồi chuyển kết quả để đối soát. Trọng tâm grade6 đổi đơn vị là kỹ năng nền/Support hay Core assessed, điều kiện mẫu số và sự khác biệt tỉ lệ thuận/nghịch.
-- Sau NotebookLM R1: reconcile correction từng ID, targeted R2 khi nguồn sửa, sau đó mới có PR triển khai CĐ03 và browser QA. **Không tự coi author preflight = academic PASS**.
+- NotebookLM R1 kiểm đủ **5/5 cards + 15/15 micro** và trả `REVISIONS_REQUIRED`; targeted R2 packet `MATH-CORE03-R2-20260930` trên source blob `a84c2740169070d6919bc8d2f274d10fb914fa32` sau đó trả **PASS**. R2 xác nhận 6/6 mục thay đổi PASS và hồi quy 4/4 card + 10/10 micro không đổi PASS.
+- Ranh giới Grade 6 đã khóa: Core assessed chỉ `ti-so`, `ti-so-phan-tram`; `doi-don-vi-ti-so` là Prerequisite/Core-Support. `RAT03MICRO_002` là `FORMATIVE_SUPPORT_ONLY`, `gates_core=false`, không cấp Core Readiness. Grade 7 Core giữ 9 kỹ năng tỉ lệ thức/dãy tỉ số/tỉ lệ thuận-nghịch.
+- [PR #183](https://github.com/TMA2015/roadmap-toan-thcs/pull/183) merge bằng squash commit `03e27855e1499cc2f674be2b83ebdb2fb35a0d29`. Ba PR workflow **SUCCESS** và [Deploy MkDocs run 36662797203](https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/36662797203) **SUCCESS**.
+- CĐ03 nay có `topic03-learning-workspace.json`, 5 thẻ, micro bank riêng `RAT03MICRO_001–015`, trang `/core/`, top stepper bốn bước, menu trái và link Học theo lớp cho lớp 6/7. 120 câu `RAT03V1_001–120`, manifest cũ, Practice/Readiness và dữ liệu `toan-thcs-practice-v1` không bị migrate/regrade.
+- Draft PR #180 tiếp tục là provenance/audit-only, **không merge làm release**. Owner real-device QA cho CĐ03 vẫn là cổng riêng sau deploy.
 
 ## Quyết định không được tự làm lệch
 
@@ -39,6 +41,7 @@
 
 | Phạm vi | Mốc và bằng chứng | Giới hạn |
 |---|---|---|
+| **CĐ03** | PR #183, merge `03e27855e1499cc2f674be2b83ebdb2fb35a0d29`; NotebookLM targeted R2 PASS; 5 thẻ + 15 micro; Deploy run 36662797203 SUCCESS | Owner desktop/iPad QA chưa ghi nhận; `RAT03MICRO_002` support-only, không tính Core Readiness |
 | CĐ04–06 | PR #166 Core riêng, dual-modal, self-audit | Không suy ra độc lập NotebookLM |
 | CĐ07 | Pilot, 5 bài giảng R2, 17 micro, 11/11 cơ hội skill | Coverage ≠ mastery |
 | CĐ08–12 | PR #167; 25 bài giảng, bốn item gap | Item cũ được giữ |

@@ -639,9 +639,9 @@
       "id": "MATH-CORE03-ACADEMIC-AUTHOR-001",
       "title": "Author and independently review CĐ03 five-stage Core based on Grade6/7 KNTT",
       "routing": "CHATGPT_AUTHOR_SOURCE_LOCKED+NOTEBOOKLM_REVIEW",
-      "status": "READY_FOR_NOTEBOOKLM",
-      "review_verdict": "R1_SOURCE_LOCKED_5_15_AUTHOR_PREFLIGHT_ONLY",
-      "review_notes": "Draft PR #180 source packet MATH-CORE03-R1-20260930 includes original full lesson blob 61df5dd2, KNTT G6/G7 matching records and proposed 5 teaching cards / 15 new RAT03MICRO IDs. Author integrity: 12 declared skills, unique IDs and options, 4/4/4/3 key positions, no exact old bank question clones. NOT independent review and NO website deployment. Owner uploads one source 01_UPLOAD_TO_NOTEBOOKLM_CORE03_R1.md and pastes prompt 02_COPY_TO_NOTEBOOKLM_CHAT_R1.txt; then ChatGPT reconciles R1 / R2 as needed.",
+      "status": "DONE",
+      "review_verdict": "NOTEBOOKLM_R2_PASS",
+      "review_notes": "R1 reviewed 5/5 cards +15/15 micro and required revisions. Targeted R2 MATH-CORE03-R2-20260930 on blob a84c2740169070d6919bc8d2f274d10fb914fa32 PASS: 6/6 changed targets and 4/4 unchanged cards +10/10 unchanged micro regression PASS. Grade6 doi-don-vi-ti-so is Core-Support/formative only.",
       "packet": "review-packets/core03/01_UPLOAD_TO_NOTEBOOKLM_CORE03_R1.md",
       "source_commit": "65618b7a0bbe451ef57864931561d179c92558bc"
     },
@@ -652,6 +652,22 @@
       "status": "OPEN",
       "review_verdict": "SOURCE_COVERAGE_GAP_SEVEN_NO_FALSE_CREDIT",
       "review_notes": "CĐ02 five missing skills in four cards; CĐ23 two missing per-card skill opportunities. Keep existing visible warnings and original 30 item records immutable. Append only after independent math, scope and grade review."
+    },
+    {
+      "id": "MATH-CORE03-STANDALONE-IMPLEMENT-001",
+      "title": "Implement reviewed CĐ03 standalone Core route and micro bank",
+      "routing": "CHATGPT_INTEGRATE+CI_BROWSER_QA",
+      "status": "DONE",
+      "review_verdict": "PR183_MERGED_DEPLOY_PASS",
+      "review_notes": "PR #183 squash merge 03e27855e1499cc2f674be2b83ebdb2fb35a0d29. Three PR workflows PASS and Deploy MkDocs run 36662797203 PASS. Five cards +15 RAT03MICRO items, /core/ route, four-step nav, left menu and Grade6/7 class links added. RAT03V1_001-120, old manifest, Practice/Readiness and learner localStorage preserved without migration/regrade."
+    },
+    {
+      "id": "MATH-CORE03-OWNER-QA-001",
+      "title": "Owner real-device QA for deployed CĐ03 standalone Core",
+      "routing": "OWNER_DESKTOP_IPAD_QA",
+      "status": "OPEN",
+      "review_verdict": "CI_BROWSER_DEPLOY_PASS_OWNER_UNVERIFIED",
+      "review_notes": "Verify desktop/iPad: four-step top nav, left menu Core entry, five cards, lecture/practice modals, MathJax readability, no phantom attempts on open/close/navigation, and legacy learner history still visible. Do not infer iPhone coverage."
     }
   ]
 }
