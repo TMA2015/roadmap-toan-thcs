@@ -1,5 +1,5 @@
 {
-  "version": "1.0.75",
+  "version": "1.0.76",
   "updated": "2026-09-30",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Phase F canonical evidence multi-topic expansion R1 is READY FOR NOTEBOOKLM REVIEW in draft PR #208. Scope: 15 new source-locked items across CĐ04–07, 5 canonical skills in batch, max 9 new independent evidence units, mixed evidence classes and prospective cross-topic aggregation. Beta v4 owner QA remains PASS; learner-facing copy polish PR #207 merged as 197c990903d2be6f7df2d49483a24b4c75038c92 and Deploy MkDocs run 36685589573 SUCCESS. No Phase F runtime activation.",
+    "next_priority": "Phase F / Canonical Evidence Beta v5 is academically PASS and technically staged QA-PASS at PR #210 exact HEAD 1614bf89d8f85a8c40f950fefea7501a4c5cc9ea. Roadmap PR Quality 36688748721, Skill assessment pilot QA 36688748761 and G Learning branding QA 36688748845 all SUCCESS. Next gate: owner decision on controlled release; no deployment yet.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -378,13 +378,23 @@
       }
     },
     "canonical_evidence_phase_f": {
-      "status": "DESIGN_READY_AWAITING_NOTEBOOKLM",
+      "status": "STAGED_TECHNICAL_QA_PASS_NOT_DEPLOYED",
       "review_pr": 208,
       "packet_id": "MATH-SKILL-PHASE-F-EXPANSION-R1-20260930",
       "notebooklm_source_blob": "70d044f1de98f5b283a3e54fdecfd07fb25d82bd",
       "manifest_blob": "5a5b339d7372068dd692b9a03dc1277758a6b6d5",
       "scope": "15 new items; CĐ04–07; 5 canonical skills; max 9 new independent evidence units",
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "implementation_pr": 210,
+      "notebooklm_verdict": "PASS_15_OF_15_ZERO_REVISIONS",
+      "tested_head": "1614bf89d8f85a8c40f950fefea7501a4c5cc9ea",
+      "store_key": "toan-thcs-canonical-evidence-v1",
+      "roadmap_pr_quality_run": 36688748721,
+      "skill_assessment_qa_run": 36688748761,
+      "branding_qa_run": 36688748845,
+      "browser_artifact_id": 11085062148,
+      "owner_release_decision": "PENDING",
+      "production_release": false
     }
   },
   "handoff_required_fields": [
