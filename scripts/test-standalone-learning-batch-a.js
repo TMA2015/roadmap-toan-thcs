@@ -50,11 +50,11 @@ const specs=[
 const nav=read("mkdocs.yml"),engine=read("docs/assets/javascripts/topic-workspace-v1.js"),ui=read("docs/assets/javascripts/knowledge-ui-v1.js"),routesSrc=read("docs/assets/javascripts/topic-learning-routes-v1.js");
 const context={window:{}};vm.runInNewContext(routesSrc,context);
 const routes=context.window.RoadmapTopicRoutes;
-ok(routes&&routes.slugs.length===22&&new Set(routes.slugs).size===22,"canonical route size/unique");
+ok(routes&&routes.slugs.length===23&&new Set(routes.slugs).size===23,"canonical route size/unique");
 ok(nav.indexOf("topic-learning-routes-v1.js")<nav.indexOf("topic-workspace-v1.js")&&nav.indexOf("topic-learning-routes-v1.js")<nav.indexOf("knowledge-ui-v1.js"),"shared route must load before both consumers");
 ok(ui.includes("RoadmapTopicRoutes?.get(m[1])")&&engine.includes("RoadmapTopicRoutes?.get(config.slug)"),"both consumers use same routing source");
-ok(!routes.get("03-ti-le-ti-le-thuc")&&!routes.get("22-dai-luong-dac-trung")&&!routes.get("01-ban-do-chuong-trinh"),"no invented Core route for unfinished/optional topics");
-ok(!fs.existsSync(path.join(root,"docs/kien-thuc/03-ti-le-ti-le-thuc/core/index.md")),"CĐ03 unreviewed content must not be silently published");
+ok(routes.get("03-ti-le-ti-le-thuc")&&!routes.get("22-dai-luong-dac-trung")&&!routes.get("01-ban-do-chuong-trinh"),"reviewed CĐ03 route added; optional/overview routes still absent");
+ok(fs.existsSync(path.join(root,"docs/kien-thuc/03-ti-le-ti-le-thuc/core/index.md")),"CĐ03 reviewed standalone page exists");
 let count=0;
 for(const [num,slug,layer,wsSha,bankSha,label] of specs){
  const dir="docs/kien-thuc/"+slug+"/",wp="docs/assets/data/curriculum/topic"+num+"-learning-workspace.json",bp="docs/assets/data/practice/"+slug+"-micro-v1.json";

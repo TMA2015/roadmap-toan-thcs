@@ -1,0 +1,252 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "03-ti-le-ti-le-thuc",
+  "title": "Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ · Core lớp 6–7",
+  "learning_layer_label": "KNTT Core · Lớp 6–7",
+  "grade_scope": [
+    6,
+    7
+  ],
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Chỉ card.skills tạo coverage Core. supporting_skills và câu Core-Support chỉ là bằng chứng định hình, không cộng Core Readiness hoặc mastery."
+  },
+  "review_metadata": {
+    "packet": "MATH-CORE03-R2-20260930",
+    "source_blob": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+    "verdict": "PASS"
+  },
+  "cards": [
+    {
+      "id": "rat03-core-g6-1",
+      "order": 1,
+      "title": "Tỉ số, cùng đơn vị và phần trăm",
+      "kntt_lessons": [
+        "Lớp 6 · Tỉ số và phần trăm"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        6
+      ],
+      "skills": [
+        "ti-so",
+        "ti-so-phan-tram"
+      ],
+      "supporting_skills": [
+        "doi-don-vi-ti-so"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "RAT03MICRO_001",
+        "RAT03MICRO_002",
+        "RAT03MICRO_003"
+      ],
+      "teaching_copy": {
+        "key_idea": "Tỉ số a/b chỉ có nghĩa khi b ≠ 0. Khi so sánh hai đại lượng cùng loại, phải đổi về cùng đơn vị; tỉ số phần trăm là phần chia cho tổng rồi nhân 100%.",
+        "worked_example": {
+          "problem": "a) Lớp có 18 học sinh nữ và 12 học sinh nam. Tìm tỉ số nữ so với cả lớp và tỉ số phần trăm. b) So sánh 2 m với 50 cm bằng tỉ số.",
+          "solution": "a) Cả lớp có 18+12=30 học sinh. Tỉ số nữ/cả lớp =18/30=3/5, nên tỉ số phần trăm là 60%. b) Đổi 2 m=200 cm, rồi lập tỉ số 200/50=4."
+        },
+        "misconception": "Nhầm nữ/cả lớp với nữ/nam; so sánh 2 m với 50 cm khi chưa đổi 2 m thành 200 cm.",
+        "summary": "Nêu rõ đại lượng so sánh và mẫu số; cùng đơn vị trước khi chia.",
+        "source_reference": "docs/kien-thuc/03-ti-le-ti-le-thuc/index.md",
+        "source_sections": [
+          "3.1",
+          "3.10"
+        ],
+        "source_question_ids": [
+          "RAT03MICRO_001",
+          "RAT03MICRO_002",
+          "RAT03MICRO_003"
+        ],
+        "review_status": "NOTEBOOKLM_R2_PASS",
+        "review_method": "INDEPENDENT_NOTEBOOKLM_R1_TARGETED_R2",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md"
+      }
+    },
+    {
+      "id": "rat03-core-g7-2",
+      "order": 2,
+      "title": "Tỉ lệ thức và tìm số chưa biết",
+      "kntt_lessons": [
+        "Lớp 7 · Tỉ lệ thức"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        7
+      ],
+      "skills": [
+        "ti-le-thuc",
+        "tim-x-ti-le-thuc"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "RAT03MICRO_004",
+        "RAT03MICRO_005",
+        "RAT03MICRO_006"
+      ],
+      "teaching_copy": {
+        "key_idea": "Với b và d khác 0, a/b=c/d tương đương ad=bc. Kiểm tra điều kiện mẫu trước khi nhân chéo.",
+        "worked_example": {
+          "problem": "Giải x/6=5/9.",
+          "solution": "6 và 9 đều khác 0. Nhân chéo: 9x=6×5=30 nên x=10/3. Thay lại: (10/3)/6=5/9."
+        },
+        "misconception": "Nhân chéo sai cặp tích hoặc quên điều kiện các mẫu khác 0.",
+        "summary": "Kiểm mẫu → nhân chéo → giải và đối chiếu.",
+        "source_reference": "docs/kien-thuc/03-ti-le-ti-le-thuc/index.md",
+        "source_sections": [
+          "3.2",
+          "3.3"
+        ],
+        "source_question_ids": [
+          "RAT03MICRO_004",
+          "RAT03MICRO_005",
+          "RAT03MICRO_006"
+        ],
+        "review_status": "NOTEBOOKLM_R2_PASS",
+        "review_method": "INDEPENDENT_NOTEBOOKLM_R1_TARGETED_R2",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md"
+      }
+    },
+    {
+      "id": "rat03-core-g7-3",
+      "order": 3,
+      "title": "Dãy tỉ số bằng nhau và chia theo tỉ lệ",
+      "kntt_lessons": [
+        "Lớp 7 · Dãy tỉ số bằng nhau"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        7
+      ],
+      "skills": [
+        "day-ti-so-bang-nhau",
+        "chia-theo-ti-le"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "RAT03MICRO_007",
+        "RAT03MICRO_008",
+        "RAT03MICRO_009"
+      ],
+      "teaching_copy": {
+        "key_idea": "Đặt các tỉ số bằng k: x/a=y/b=z/c=k, suy ra x=ak,y=bk,z=ck. Chỉ dùng tỉ số tổng khi a+b+c khác 0.",
+        "worked_example": {
+          "problem": "Chia 120 thành ba phần theo tỉ lệ 2:3:5.",
+          "solution": "Đặt x=2k, y=3k, z=5k. Tổng 10k=120 nên k=12. Ba phần là 24,36,60."
+        },
+        "misconception": "Cộng sai tổng số phần hoặc dùng biểu thức tổng có mẫu bằng 0; không phân biệt tổng với từng phần.",
+        "summary": "Đặt k chung, tính tổng phần, suy ra từng đại lượng.",
+        "source_reference": "docs/kien-thuc/03-ti-le-ti-le-thuc/index.md",
+        "source_sections": [
+          "3.4"
+        ],
+        "source_question_ids": [
+          "RAT03MICRO_007",
+          "RAT03MICRO_008",
+          "RAT03MICRO_009"
+        ],
+        "review_status": "NOTEBOOKLM_R2_PASS",
+        "review_method": "INDEPENDENT_NOTEBOOKLM_R1_TARGETED_R2",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md"
+      }
+    },
+    {
+      "id": "rat03-core-g7-4",
+      "order": 4,
+      "title": "Đại lượng tỉ lệ thuận và hệ số tỉ lệ",
+      "kntt_lessons": [
+        "Lớp 7 · Tỉ lệ thuận"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        7
+      ],
+      "skills": [
+        "ti-le-thuan",
+        "he-so-ti-le-thuan"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "RAT03MICRO_010",
+        "RAT03MICRO_011",
+        "RAT03MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Hai đại lượng tỉ lệ thuận theo y=kx với k khác 0. Khi x=0 vẫn có y=0; biểu thức y/x chỉ dùng khi x khác 0.",
+        "worked_example": {
+          "problem": "Bảng x lần lượt 2,3,5; y lần lượt 8,12,20. Tìm k và công thức.",
+          "solution": "Tại từng cặp có x khác 0, y/x=4. Do đó k=4 và y=4x. Nếu x=0 thì y=0."
+        },
+        "misconception": "Lấy x/y thay cho y/x khi cần k của y theo x; loại sai trường hợp x=0 khỏi quan hệ y=kx.",
+        "summary": "Kiểm tra cùng tỉ số y/x trên các cặp x khác 0; viết y=kx.",
+        "source_reference": "docs/kien-thuc/03-ti-le-ti-le-thuc/index.md",
+        "source_sections": [
+          "3.5",
+          "3.6"
+        ],
+        "source_question_ids": [
+          "RAT03MICRO_010",
+          "RAT03MICRO_011",
+          "RAT03MICRO_012"
+        ],
+        "review_status": "NOTEBOOKLM_R2_PASS",
+        "review_method": "INDEPENDENT_NOTEBOOKLM_R1_TARGETED_R2",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md"
+      }
+    },
+    {
+      "id": "rat03-core-g7-5",
+      "order": 5,
+      "title": "Đại lượng tỉ lệ nghịch và phân biệt thuận/nghịch",
+      "kntt_lessons": [
+        "Lớp 7 · Tỉ lệ nghịch"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        7
+      ],
+      "skills": [
+        "ti-le-nghich",
+        "he-so-ti-le-nghich",
+        "phan-biet-thuan-nghich"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "RAT03MICRO_013",
+        "RAT03MICRO_014",
+        "RAT03MICRO_015"
+      ],
+      "teaching_copy": {
+        "key_idea": "Tỉ lệ nghịch có xy=a với a khác 0, nên x khác 0 và y=a/x. Một đại lượng tăng còn đại lượng kia giảm chưa đủ; phải kiểm tra tích xy giữ nguyên.",
+        "worked_example": {
+          "problem": "Bảng x: 2,4,8; y: 12,6,3. Hai đại lượng có tỉ lệ nghịch không?",
+          "solution": "Tích xy lần lượt là 24,24,24, nên chúng tỉ lệ nghịch với hệ số a=24; công thức y=24/x."
+        },
+        "misconception": "Kết luận nghịch chỉ vì bảng có y giảm, hoặc nhầm tỉ số y/x giữ nguyên với tích xy giữ nguyên.",
+        "summary": "Thuận: tỉ số y/x không đổi (x≠0). Nghịch: tích xy không đổi và khác 0.",
+        "source_reference": "docs/kien-thuc/03-ti-le-ti-le-thuc/index.md",
+        "source_sections": [
+          "3.7",
+          "3.8",
+          "3.11"
+        ],
+        "source_question_ids": [
+          "RAT03MICRO_013",
+          "RAT03MICRO_014",
+          "RAT03MICRO_015"
+        ],
+        "review_status": "NOTEBOOKLM_R2_PASS",
+        "review_method": "INDEPENDENT_NOTEBOOKLM_R1_TARGETED_R2",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md"
+      }
+    }
+  ],
+  "extensions": [],
+  "micro_practice_bank": "assets/data/practice/03-ti-le-ti-le-thuc-micro-v1.json",
+  "qa_notes": [
+    "MATH-CORE03-R2-20260930 PASS; source blob a84c2740169070d6919bc8d2f274d10fb914fa32.",
+    "Grade 6 Core: ti-so, ti-so-phan-tram. doi-don-vi-ti-so is prerequisite/Core-Support only.",
+    "Legacy RAT03V1_001–120 and learner history remain separate and immutable."
+  ]
+}

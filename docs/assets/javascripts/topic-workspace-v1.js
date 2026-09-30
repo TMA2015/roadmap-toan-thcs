@@ -9,7 +9,14 @@ const TOPICS={
    chips:["KNTT Core · phần lớp 6","Số học","5 chặng học","Nội dung lớp 7 học tiếp"],
    progressSkills:["tap-hop-so","thu-tu-phep-tinh","luy-thua","dau-hieu-chia-het","so-nguyen-to","ucln","bcnn","so-nguyen-phep-tinh","rut-gon-phan-so","phep-tinh-phan-so","so-huu-ti-thap-phan","phan-tram"]
  },
- "04-bieu-thuc-dai-so":{
+ "03-ti-le-ti-le-thuc":{
+    number:"03",
+    data:"assets/data/curriculum/topic03-learning-workspace.json",
+    description:"Từ tỉ số và phần trăm lớp 6 đến tỉ lệ thức, tỉ lệ thuận và tỉ lệ nghịch lớp 7.",
+    chips:["KNTT Core","Lớp 6–7","Số / Đại số","⭐⭐⭐⭐"],
+    progressSkills:["ti-so","ti-so-phan-tram","ti-le-thuc","tim-x-ti-le-thuc","day-ti-so-bang-nhau","chia-theo-ti-le","ti-le-thuan","he-so-ti-le-thuan","ti-le-nghich","he-so-ti-le-nghich","phan-biet-thuan-nghich"]
+  },
+  "04-bieu-thuc-dai-so":{
    number:"04",
    data:"assets/data/curriculum/topic04-learning-workspace.json",
    description:"Nền móng của biến đổi đại số: từ đơn thức, đa thức đến phép toán và tính giá trị.",
@@ -110,6 +117,18 @@ const siteRoot=()=>{const marker="/kien-thuc/";const p=window.location.pathname;
 const siteAsset=rel=>`${siteRoot()}/${String(rel||"").replace(/^\/+/, "")}`;
 
 const SKILL_LABELS={
+ "ti-so":"Tỉ số",
+ "doi-don-vi-ti-so":"Đổi đơn vị khi lập tỉ số",
+ "ti-so-phan-tram":"Tỉ số phần trăm",
+ "ti-le-thuc":"Tỉ lệ thức",
+ "tim-x-ti-le-thuc":"Tìm số chưa biết trong tỉ lệ thức",
+ "day-ti-so-bang-nhau":"Dãy tỉ số bằng nhau",
+ "chia-theo-ti-le":"Chia theo tỉ lệ",
+ "ti-le-thuan":"Đại lượng tỉ lệ thuận",
+ "he-so-ti-le-thuan":"Hệ số tỉ lệ thuận",
+ "ti-le-nghich":"Đại lượng tỉ lệ nghịch",
+ "he-so-ti-le-nghich":"Hệ số tỉ lệ nghịch",
+ "phan-biet-thuan-nghich":"Phân biệt tỉ lệ thuận – nghịch",
  "nhan-tu-chung":"nhân tử chung",
  "hieu-hai-binh-phuong":"hiệu hai bình phương",
  "phan-tich-tu-mau":"phân tích tử/mẫu",

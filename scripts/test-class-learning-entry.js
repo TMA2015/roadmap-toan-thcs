@@ -9,7 +9,7 @@ assert(mkdocs.includes("Học theo lớp: hoc-theo-lop/index.md")&&mkdocs.includ
 for(let grade=6;grade<=9;grade++)assert(hub.includes('data-grade-panel="'+grade+'"')&&hub.includes('data-grade-select="'+grade+'"'),"grade panel "+grade);
 assert((hub.match(/class="class-chapter"/g)||[]).length===39,"39 KNTT chapters 9+10+10+10");
 assert(hub.includes("../kien-thuc/04-bieu-thuc-dai-so/#core-journey")&&hub.includes("../kien-thuc/14-tam-giac/#core-journey"),"grade entry points to teaching cards");
-assert(hub.includes("không mặc định cả 5 thẻ")&&hub.includes("Chưa có bộ 5 thẻ"),"grade boundary and honest readiness labels");
+assert(hub.includes("không mặc định cả 5 thẻ")&&(hub.split("03-ti-le-ti-le-thuc/core/").length-1)===2,"grade boundary and reviewed CĐ03 Core links");
 assert(!hub.includes("roadmap/chuan-kntt-va-cac-tang-hoc"),"architecture docs excluded from learning CTA");
 assert(workspace.includes('location.hash==="#core-journey"'),"async cards correct anchor");
 console.log("PASS: KNTT 6–9 student entry, 39 chapters, honest cross-grade links and Core cards.");

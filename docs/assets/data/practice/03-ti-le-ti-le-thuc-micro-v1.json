@@ -1,0 +1,704 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "RAT03-MICRO-V1",
+  "topic": {
+    "id": "03-ti-le-ti-le-thuc",
+    "title": "Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ · Core lớp 6–7"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "RAT03MICRO_001",
+      "card_id": "rat03-core-g6-1",
+      "micro_role": "base",
+      "question": "Tỉ số của 12 và 18 ở dạng tối giản là gì?",
+      "options": [
+        "2/3",
+        "3/2",
+        "2/5",
+        "5/3"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "ti-so"
+        ],
+        "type": "ti-so",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "12/18 = 2/3.",
+      "hints": [
+        "Rút gọn phân số 12/18 bằng cách chia tử và mẫu cho 6.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_002",
+      "card_id": "rat03-core-g6-1",
+      "micro_role": "trap",
+      "question": "Tỉ số 2 m so với 50 cm bằng bao nhiêu?",
+      "options": [
+        "1/25",
+        "4",
+        "40",
+        "0,04"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "doi-don-vi-ti-so"
+        ],
+        "type": "doi-don-vi-ti-so",
+        "layer": "Core-Support",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "2 m = 200 cm nên 200/50=4.",
+      "hints": [
+        "Đưa cả hai đại lượng về centimet.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "support"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      },
+      "evidence_role": "FORMATIVE_SUPPORT_ONLY",
+      "gates_core": false
+    },
+    {
+      "id": "RAT03MICRO_003",
+      "card_id": "rat03-core-g6-1",
+      "micro_role": "apply",
+      "question": "Lớp có 15 học sinh nữ trên tổng số 25 học sinh. Tỉ số phần trăm của số nữ so với cả lớp là:",
+      "options": [
+        "40%",
+        "30%",
+        "60%",
+        "18%"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "ti-so-phan-tram"
+        ],
+        "type": "ti-so-phan-tram",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "15/25×100%=60%.",
+      "hints": [
+        "Lấy số nữ chia cho tổng số học sinh, không chia cho số nam.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_004",
+      "card_id": "rat03-core-g7-2",
+      "micro_role": "base",
+      "question": "Để kiểm tra 3/5 = 12/20, đẳng thức tích nào cần đúng?",
+      "options": [
+        "3+20=5+12",
+        "3×12=5×20",
+        "3/20=5/12",
+        "3×20=5×12"
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "ti-le-thuc"
+        ],
+        "type": "ti-le-thuc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "3×20=60 và 5×12=60.",
+      "hints": [
+        "Hai tích chéo là tử bên trái nhân mẫu bên phải và mẫu bên trái nhân tử bên phải.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_005",
+      "card_id": "rat03-core-g7-2",
+      "micro_role": "trap",
+      "question": "Giải tỉ lệ thức x/8 = 3/4. Giá trị x là:",
+      "options": [
+        "6",
+        "3/2",
+        "32/3",
+        "24"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "tim-x-ti-le-thuc"
+        ],
+        "type": "tim-x-ti-le-thuc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "4x=24 nên x=6.",
+      "hints": [
+        "Nhân chéo: 4x=8×3.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_006",
+      "card_id": "rat03-core-g7-2",
+      "micro_role": "apply",
+      "question": "Với b≠0 và d≠0, từ a/b=c/d suy ra:",
+      "options": [
+        "ac=bd",
+        "ad=bc",
+        "a+b=c+d",
+        "ab=cd"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "ti-le-thuc"
+        ],
+        "type": "ti-le-thuc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "ad=bc, với các mẫu đã khác 0.",
+      "hints": [
+        "Nhân chéo hai vế của tỉ lệ thức.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_007",
+      "card_id": "rat03-core-g7-3",
+      "micro_role": "base",
+      "question": "Biết x/2=y/3=z/5 và x+y+z=120. Giá trị y là:",
+      "options": [
+        "24",
+        "60",
+        "36",
+        "12"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "day-ti-so-bang-nhau"
+        ],
+        "type": "day-ti-so-bang-nhau",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "10k=120 nên k=12, do đó y=36.",
+      "hints": [
+        "Đặt x=2k, y=3k, z=5k rồi cộng.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_008",
+      "card_id": "rat03-core-g7-3",
+      "micro_role": "trap",
+      "question": "Chia 96 thành hai phần theo tỉ lệ 3:5. Hai phần lần lượt là:",
+      "options": [
+        "32 và 64",
+        "40 và 56",
+        "48 và 48",
+        "36 và 60"
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "chia-theo-ti-le"
+        ],
+        "type": "chia-theo-ti-le",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Mỗi phần đơn vị bằng 96/8=12; hai số là 3×12=36 và 5×12=60.",
+      "hints": [
+        "Tổng số phần bằng nhau là 3+5=8.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_009",
+      "card_id": "rat03-core-g7-3",
+      "micro_role": "apply",
+      "question": "Biết x/2=y/3 và x+y=25. Giá trị x là:",
+      "options": [
+        "10",
+        "15",
+        "5",
+        "20"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "day-ti-so-bang-nhau"
+        ],
+        "type": "day-ti-so-bang-nhau",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "5k=25 nên k=5 và x=10.",
+      "hints": [
+        "Đặt x=2k,y=3k.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_010",
+      "card_id": "rat03-core-g7-4",
+      "micro_role": "base",
+      "question": "Nếu y=4x và x=3, y bằng:",
+      "options": [
+        "7",
+        "12",
+        "4/3",
+        "1"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "ti-le-thuan"
+        ],
+        "type": "ti-le-thuan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "y=4×3=12.",
+      "hints": [
+        "Thay x=3 vào y=4x.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_011",
+      "card_id": "rat03-core-g7-4",
+      "micro_role": "trap",
+      "question": "Bảng có x: 2, 4, 5 và y tương ứng: 6, 12, 15. Hệ số tỉ lệ k trong y=kx là:",
+      "options": [
+        "2",
+        "4",
+        "3",
+        "5"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "he-so-ti-le-thuan"
+        ],
+        "type": "he-so-ti-le-thuan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "6/2=12/4=15/5=3.",
+      "hints": [
+        "Tính y/x tại một cặp có x khác 0, sau đó kiểm tra cặp còn lại.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_012",
+      "card_id": "rat03-core-g7-4",
+      "micro_role": "apply",
+      "question": "Nếu y=4x thì tại x=0, phát biểu nào đúng?",
+      "options": [
+        "y/x=4 tại x=0",
+        "y=4",
+        "x không được bằng 0 trong quan hệ y=4x",
+        "y=0 nhưng y/x không xác định"
+      ],
+      "answer": 3,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "ti-le-thuan"
+        ],
+        "type": "ti-le-thuan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Từ y=4×0=0, quan hệ vẫn đúng; tỉ số y/x không xác định tại x=0.",
+      "hints": [
+        "Thay x=0 vào công thức nhưng không chia cho 0.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_013",
+      "card_id": "rat03-core-g7-5",
+      "micro_role": "base",
+      "question": "Nếu xy=24 và x=3 thì y bằng:",
+      "options": [
+        "8",
+        "21",
+        "72",
+        "3/24"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "ti-le-nghich"
+        ],
+        "type": "ti-le-nghich",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "y=24/3=8.",
+      "hints": [
+        "Từ xy=24 suy ra y=24/x.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_014",
+      "card_id": "rat03-core-g7-5",
+      "micro_role": "trap",
+      "question": "Với y=12/x (x≠0), hệ số tỉ lệ nghịch là:",
+      "options": [
+        "1/12",
+        "12",
+        "x",
+        "0"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "he-so-ti-le-nghich"
+        ],
+        "type": "he-so-ti-le-nghich",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "xy=12, nên hệ số a=12.",
+      "hints": [
+        "Đưa công thức về tích xy=a.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_015",
+      "card_id": "rat03-core-g7-5",
+      "micro_role": "apply",
+      "question": "Bảng x: 2, 3, 6 và y: 18, 12, 6 thể hiện quan hệ nào?",
+      "options": [
+        "Tỉ lệ thuận với hệ số 6",
+        "Không tỉ lệ vì y giảm",
+        "Tỉ lệ nghịch vì xy=36",
+        "Tỉ lệ thuận vì xy=36"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "phan-biet-thuan-nghich"
+        ],
+        "type": "phan-biet-thuan-nghich",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Các tích 2×18=3×12=6×6=36, do đó tỉ lệ nghịch.",
+      "hints": [
+        "Kiểm tra tích của từng cặp x,y, không chỉ nhìn xu hướng.",
+        "Dùng định nghĩa/công thức của chặng rồi kiểm tra điều kiện áp dụng."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "record": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md",
+        "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
+        "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
+        "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    }
+  ]
+}
