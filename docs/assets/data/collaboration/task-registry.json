@@ -113,20 +113,25 @@
       "id": "CONTENT-PILOT-001",
       "title": "Tạo batch nội dung mẫu Core/Vào10/Challenge để thử pipeline",
       "routing": "GEMINI_LEAD+CHATGPT_REVIEW",
-      "status": "OPEN"
+      "status": "DONE",
+      "context_version": "1.0.90",
+      "review_verdict": "SUPERSEDED_BY_RELEASED_CONTENT_PIPELINE",
+      "review_notes": "Original objective was to create a sample Core/Entrance10/Challenge content batch to test the pipeline. The project has since shipped multiple standalone Core workspaces, Entrance10 content and production QA across the 25-topic spine. Close this pilot as superseded/completed-by-later-baseline; this does not claim every later topic has independent academic review."
     },
     {
       "id": "BENCH-CAP-001",
       "title": "Benchmark năng lực theo nhóm task",
       "routing": "CATEGORY_BASED_DUAL",
-      "status": "OPEN"
+      "status": "OPEN",
+      "context_version": "1.0.90"
     },
     {
       "id": "GEO-LIB-001",
       "title": "Chuẩn hóa thư viện hình SVG và giảm hình Internet",
       "routing": "CHATGPT_LEAD+DUAL_QA_FOR_HARD_GEOMETRY",
       "status": "OPEN",
-      "review_notes": "Main-lesson legacy SVG replacement completed separately as GEO-LIB-VISUAL-REFRESH-001. Keep this umbrella OPEN for reusable spec-driven JSON→SVG renderer, semantic geometry validation, and optional further library QA; do not conflate with image replacement."
+      "review_notes": "Main-lesson legacy SVG replacement completed separately as GEO-LIB-VISUAL-REFRESH-001. Keep this umbrella OPEN for reusable spec-driven JSON→SVG renderer, semantic geometry validation, and optional further library QA; do not conflate with image replacement.",
+      "context_version": "1.0.90"
     },
     {
       "id": "KG-V1-001",
@@ -212,12 +217,12 @@
     },
     {
       "id": "C07-MICRO15-001",
-      "title": "CĐ07 complete 15-item diagnostic micro-practice pilot",
-      "routing": "GEMINI_AUTHOR_REVIEW+CHATGPT_INTEGRATE",
-      "status": "READY",
-      "context_version": "1.0.16",
-      "review_notes": "15 Core micro-practice questions integrated inline across five Learning Cards. Shared evidence + observed signals + mock Tutor wired. Structural/math QA passed; deployed desktop/iPad/mobile QA still pending before template freeze.",
-      "review_verdict": "QA-READY"
+      "title": "CĐ07 current 17-item Core micro-practice owner device QA",
+      "routing": "OWNER_DESKTOP_IPAD_QA",
+      "status": "OPEN",
+      "context_version": "1.0.90",
+      "review_notes": "The original 15-item pilot scope is obsolete: current CĐ07 baseline is 5 lectures + 17 micro items with 11/11 declared skill opportunities. G2 owner QA exercised CĐ07 Practice/canonical debug, not the full Core micro path, so do not infer Core owner acceptance. Tomorrow/when convenient, spot-check the current CĐ07 /core/ flow on desktop+iPad: cards, lecture/practice modal, sequential hints/collapse, answer recording, MathJax, and no phantom attempts.",
+      "review_verdict": "CURRENT_17_ITEM_BASELINE_CI_PASS_OWNER_CORE_QA_NOT_EXPLICIT"
     },
     {
       "id": "GOLDEN-TEMPLATE-001",
@@ -269,7 +274,7 @@
       "title": "Source-locked pedagogical review CĐ04–CĐ11",
       "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
       "status": "READY",
-      "context_version": "1.0.30",
+      "context_version": "1.0.90",
       "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-review-04-11.json",
       "review_notes": "Single-file 48-source bundle generated during deploy. Corrections are admissible only with exact existing ID + exact prompt quote; prose requires source_path + heading + exact quote."
     },
@@ -301,7 +306,7 @@
       "title": "Independent source-locked pedagogical/math review CĐ13",
       "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
       "status": "READY",
-      "context_version": "1.0.31",
+      "context_version": "1.0.90",
       "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo13-review.json",
       "review_notes": "Review must cite exact existing item ID + exact current prompt quote; prose issues use source_path + heading + exact quote; no visual inference."
     },
@@ -329,10 +334,11 @@
       "id": "GEO-BATCH-16-18-GEMINI-REVIEW-001",
       "title": "Independent source-locked geometry review CĐ16–CĐ18",
       "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
-      "status": "READY",
-      "context_version": "1.0.32",
+      "status": "DONE",
+      "context_version": "1.0.90",
       "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo16-18-review.json",
-      "review_notes": "Review theorem hypotheses/converses, corresponding-order logic, diagram-independent reasoning, distractors, pedagogy and Markdown/LaTeX. Corrections require exact current ID + exact prompt quote; prose requires source_path + heading + exact quote."
+      "review_notes": "Do not interpret this as an independent Gemini/NotebookLM PASS. The task is retired because the current handoff explicitly freezes CĐ16–18 as released baseline ('Không làm lại'): PR #169, 15 lectures, 46 micro items, 36/36 skill opportunities. Reopen only if new concrete evidence identifies an academic/geometry defect.",
+      "review_verdict": "SUPERSEDED_NO_FURTHER_REVIEW_PLANNED"
     },
     {
       "id": "GEO-BATCH-19-20-001",
@@ -522,14 +528,16 @@
       "title": "Topic03 class6 tỉ số/phần trăm versus class7 tỉ lệ thức/thuận/nghịch: audited content and progressive Golden rollout",
       "routing": "CHATGPT_LEAD+GEMINI_ACADEMIC_REVIEW",
       "status": "OPEN",
-      "review_notes": "Grade6 KNTT B31 maps tỉ số, tỉ số phần trăm and basic percent; Grade7 B20–23 maps tỉ lệ thức, dãy tỉ số, đại lượng tỉ lệ thuận/nghịch. Existing 120-question bank has no reliable per-item grade metadata. Need grade-scoped learner path and independent readiness; do not misrepresent full bank as grade6 Core."
+      "review_notes": "Grade6 KNTT B31 maps tỉ số, tỉ số phần trăm and basic percent; Grade7 B20–23 maps tỉ lệ thức, dãy tỉ số, đại lượng tỉ lệ thuận/nghịch. Existing 120-question bank has no reliable per-item grade metadata. Need grade-scoped learner path and independent readiness; do not misrepresent full bank as grade6 Core.",
+      "context_version": "1.0.90"
     },
     {
       "id": "G6-T02-OWNER-UX-001",
       "title": "Owner real-device confirmation of grade-six Topic02 learning and Readiness",
       "routing": "OWNER_DEVICE_QA",
       "status": "OPEN",
-      "review_notes": "Check class6 chapter link → five learning cards → micro hints and after-submit readiness → next-topic link on PC/iPad/mobile. CI/browser passes but this task remains pending user acceptance. No impact on learner evidence."
+      "review_notes": "Still OPEN, but do not duplicate the already accepted CĐ02 card-function QA. Owner already confirmed CĐ02/CĐ23 Core/Application card functions on desktop+iPad. This task is narrower and end-to-end: class6 chapter link → five Grade6 learning cards → micro hints → after-submit Readiness → next-topic link, with no phantom attempts/data loss. Desktop+iPad acceptance of cards alone is not sufficient to close this journey/readiness gate.",
+      "context_version": "1.0.90"
     },
     {
       "id": "TOPIC25-R2-SOURCE-COVERAGE-001",
@@ -632,8 +640,9 @@
       "routing": "OWNER_DEVICE_QA",
       "status": "OPEN",
       "review_verdict": "CI_BROWSER_PASS_OWNER_UNVERIFIED",
-      "review_notes": "Partial owner acceptance recorded 2026-09-30: CĐ02 and CĐ23 Core/application card functions tested on iPad + desktop and OK. Task remains OPEN for CĐ21/24/25 and any other Batch A acceptance points not explicitly reported. Do not infer iPhone coverage.",
-      "source_commit": "c1b461885d7da1bd3cafef34f357c04c493df3b0"
+      "review_notes": "Partial owner acceptance is already recorded for CĐ02 and CĐ23 card functions on desktop+iPad. Remaining owner acceptance scope is CĐ21/CĐ24/CĐ25 standalone pages (plus any Batch A navigation/modal points not explicitly reported). Do not re-test CĐ02/CĐ23 card basics merely to close this task; G6-T02-OWNER-UX-001 separately owns the deeper Grade6 CĐ02 journey/Readiness check.",
+      "source_commit": "c1b461885d7da1bd3cafef34f357c04c493df3b0",
+      "context_version": "1.0.90"
     },
     {
       "id": "MATH-CORE03-ACADEMIC-AUTHOR-001",
@@ -667,7 +676,8 @@
       "routing": "OWNER_DESKTOP_IPAD_QA",
       "status": "OPEN",
       "review_verdict": "CI_BROWSER_DEPLOY_PASS_OWNER_UNVERIFIED",
-      "review_notes": "Verify desktop/iPad: four-step top nav, left menu Core entry, five cards, lecture/practice modals, MathJax readability, no phantom attempts on open/close/navigation, and legacy learner history still visible. Do not infer iPhone coverage."
+      "review_notes": "Still a real owner QA debt. Academic R2, CI and deploy are PASS, but no explicit desktop+iPad acceptance has been recorded for the deployed CĐ03 standalone Core. Verify four-step top nav, left-menu Core entry, five cards, lecture/practice modals, MathJax readability, hint/disclosure behavior, no phantom attempts, and legacy learner history persistence.",
+      "context_version": "1.0.90"
     },
     {
       "id": "MATH-CORE02-23-GAP-OWNER-QA-001",
