@@ -948,6 +948,23 @@
         });
         saveStats(this.stats);
       }
+
+      // Phase G1 shadow capture: preserve the existing Practice write as the
+      // primary path. Canonical capture is asynchronous and fail-open; it must
+      // never block, rollback or alter legacy Practice stats/remediation.
+      try {
+        window.RoadmapCanonicalEvidenceObserver?.captureAttempt?.({
+          question,
+          correct,
+          hintsUsed,
+          fullSolutionViewed,
+          selectedIndex,
+          practiceMode: this.mode
+        });
+      } catch (_) {
+        // Intentionally ignore canonical observer failures in the Practice lane.
+      }
+
       questionSkills(question).forEach((skill) => this.closePendingRecoveryOnTarget(skill));
     }
 
