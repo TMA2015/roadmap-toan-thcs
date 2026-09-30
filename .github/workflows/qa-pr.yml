@@ -76,6 +76,7 @@ jobs:
           node scripts/test-core20-v2-release.js
           node --check docs/assets/javascripts/topic-learning-routes-v1.js
           node scripts/test-standalone-learning-batch-a.js
+          node scripts/test-core02-23-seven-gap-release.js
           node scripts/test-golden-geo19-20.js
           node scripts/test-geo19-20-visual-v1.js
           node scripts/test-core-soft-card-style.js
