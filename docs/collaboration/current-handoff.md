@@ -1,12 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Phase G2 CLOSED DONE; learner-help disclosure UX patch RELEASED, OWNER SPOT-QA PENDING.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. PR #227 deploys disclosure-only UX: Practice help opens/closes/reopens with the same button; Core hints reveal sequentially then collapse/reopen while `hintsUsed` remains unchanged. Exact-head CI/browser PASS and Pages deploy SUCCESS. G3, mastery/Readiness, canonical remediation/ranking, migration/backfill/regrade and broader capture remain OFF.
+> **CURRENT CHECKPOINT — 30/09/2026, Phase G2 CLOSED DONE; learner-help disclosure UX patch OWNER QA PASS, CLOSED DONE.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Owner spot-QA on both desktop and iPad confirms Practice help and Core hint disclosures open/collapse/reopen correctly, while viewed hints remain counted. Product baseline is stable. G3, mastery/Readiness, canonical remediation/ranking, migration/backfill/regrade and broader capture remain OFF until a separate explicit gate is opened.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Learner-help disclosure toggle — RELEASED, OWNER SPOT-QA PENDING (30/09/2026)
+## Learner-help disclosure toggle — OWNER QA PASS; CLOSED DONE (30/09/2026)
 
 - Task: `MATH-HELP-DISCLOSURE-TOGGLE-001`.
 - Owner-approved scope is **UI disclosure only**: collapsing does not erase viewed hints, full-solution state, assistance classification, attempts, readiness/history or canonical evidence.
@@ -20,7 +20,7 @@
   - legacy sentinel data remains unchanged.
 - PR #227 production merge: `fb571ec78cfaf56f82d7dd81b719481dc4296e2b`.
 - Deploy MkDocs run `36719709094`: **SUCCESS**.
-- Current gate: owner spot-QA on production; task remains OPEN until that confirmation.
+- Owner spot-QA: **PASS on desktop and iPad**. Practice help and Core hint disclosure behavior matches the approved UX rule. Task `MATH-HELP-DISCLOSURE-TOGGLE-001` is CLOSED DONE.
 
 ## Phase G2 — RELEASED + OWNER PRODUCTION QA PASS; G2 CLOSED DONE (30/09/2026)
 
