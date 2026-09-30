@@ -10,9 +10,10 @@ const specs=[
     "02",
     "02-so-va-phep-tinh",
     "KNTT-Core",
-    "1dd253ad020b86fd5bc2558e3e5884fd8941b5bf",
-    "3275ecb262fa3942ae9b98fbca2c195efcd87df1",
-    "Core theo chặng"
+    "22b2a74908191f1e8be85bf90019c17a3fe1a6a2",
+    "60235e77c56fd75a65b1dc5df562baea5150984b",
+    "Core theo chặng",
+    20
   ],
   [
     "21",
@@ -20,15 +21,17 @@ const specs=[
     "KNTT-Core",
     "2812085ab0dd0800196eee7d44562f2ced4294e1",
     "f8309442663408f5d75b57c6d62f9887ab7df4a9",
-    "Core theo chặng"
+    "Core theo chặng",
+    15
   ],
   [
     "23",
     "23-xac-suat",
     "KNTT-Core",
-    "e83cb0fdf82a9a80ba5cb27e968461c9ad2135bb",
-    "3f0e1249ecf104a013dab972b65eeca21b6e52f2",
-    "Core theo chặng"
+    "7b2659c78e298017d16ec52f2a45cd57d3d88191",
+    "ef8e6f27456591ddc42e606575abeb8d5fd28437",
+    "Core theo chặng",
+    17
   ],
   [
     "24",
@@ -36,7 +39,8 @@ const specs=[
     "Core-Support",
     "9da0d85fe15dfb20ad4edd434404407fa949742a",
     "0c11446a01aec62e32b2320f0f537dd52133906a",
-    "Ứng dụng theo chặng"
+    "Ứng dụng theo chặng",
+    15
   ],
   [
     "25",
@@ -44,7 +48,8 @@ const specs=[
     "Entrance10",
     "b8eaf7793a4f7b71e5976bdf93e6e45bdb04825a",
     "214f3d2df9bd11d8a66e19da33d7737303e24fb2",
-    "Ôn thi theo chặng"
+    "Ôn thi theo chặng",
+    15
   ]
 ];
 const nav=read("mkdocs.yml"),engine=read("docs/assets/javascripts/topic-workspace-v1.js"),ui=read("docs/assets/javascripts/knowledge-ui-v1.js"),routesSrc=read("docs/assets/javascripts/topic-learning-routes-v1.js");
@@ -56,11 +61,11 @@ ok(ui.includes("RoadmapTopicRoutes?.get(m[1])")&&engine.includes("RoadmapTopicRo
 ok(routes.get("03-ti-le-ti-le-thuc")&&!routes.get("22-dai-luong-dac-trung")&&!routes.get("01-ban-do-chuong-trinh"),"reviewed CĐ03 route added; optional/overview routes still absent");
 ok(fs.existsSync(path.join(root,"docs/kien-thuc/03-ti-le-ti-le-thuc/core/index.md")),"CĐ03 reviewed standalone page exists");
 let count=0;
-for(const [num,slug,layer,wsSha,bankSha,label] of specs){
+for(const [num,slug,layer,wsSha,bankSha,label,expectedCount] of specs){
  const dir="docs/kien-thuc/"+slug+"/",wp="docs/assets/data/curriculum/topic"+num+"-learning-workspace.json",bp="docs/assets/data/practice/"+slug+"-micro-v1.json";
  const w=json(wp),b=json(bp),page=read(dir+"core/index.md"),lesson=read(dir+"index.md");
  ok(blob(read(wp))===wsSha&&blob(read(bp))===bankSha,"frozen workspace/micro bank unchanged "+slug);
- ok(w.topic===slug&&w.core_progress_policy.layer===layer&&w.cards.length===5&&b.question_count===15&&b.questions.length===15,"source content/layer "+slug);
+ ok(w.topic===slug&&w.core_progress_policy.layer===layer&&w.cards.length===5&&b.question_count===expectedCount&&b.questions.length===expectedCount,"source content/layer "+slug);
  ok(routes.get(slug)?.stepLabel===label&&routes.get(slug)?.path==="core/","semantic label "+slug);
  ok(nav.includes(" - "+label+": kien-thuc/"+slug+"/core/index.md"),"MkDocs sidebar route "+slug);
  ok(page.includes('data-topic-core-entry="'+slug+'"')&&page.includes("không phải")&&page.includes("../index.md"),"formative standalone page and full lesson link "+slug);
@@ -74,10 +79,10 @@ for(const [num,slug,layer,wsSha,bankSha,label] of specs){
      ids.add(id);
    }
  }
- ok(ids.size===15&&ids.size===bank.size,"no missing/duplicate micro items "+slug);
+ ok(ids.size===expectedCount&&ids.size===bank.size,"no missing/duplicate micro items "+slug);
  count+=ids.size;
 }
 ok(routes.get("04-bieu-thuc-dai-so")&&routes.get("20-hinh-hoc-tong-hop"),"old independent routes remain");
 ok(engine.includes('recordAnswer?.(')&&engine.includes("topic-core-modal-modes")&&engine.includes('if(hasStandaloneCore)mountCoreGateway(hero,config)'),"old modal and answer evidence path retained");
 ok(read("docs/hoc-theo-lop/index.md").includes("../kien-thuc/02-so-va-phep-tinh/core/")&&!read("docs/hoc-theo-lop/index.md").includes("../kien-thuc/02-so-va-phep-tinh/#core-journey"),"class map direct links to standalone learning");
-console.log("PASS: "+specs.length+" independent topic routes, "+count+" frozen micro IDs, scope-safe labels, one canonical route source, CĐ03/22 boundaries.");
+console.log("PASS: "+specs.length+" independent topic routes, "+count+" reviewed/frozen micro IDs, scope-safe labels, one canonical route source, CĐ03/22 boundaries.");

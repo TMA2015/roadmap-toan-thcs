@@ -3,20 +3,21 @@
 const fs=require("fs"),path=require("path"),R=path.resolve(__dirname,".."),read=p=>JSON.parse(fs.readFileSync(path.join(R,p),"utf8")),txt=p=>fs.readFileSync(path.join(R,p),"utf8"),ok=(x,m)=>{if(!x)throw Error(m)};
 const w=read("docs/assets/data/curriculum/topic23-learning-workspace.json"),b=read("docs/assets/data/practice/23-xac-suat-micro-v1.json"),m=read("docs/assets/data/practice/23-xac-suat-v1.manifest.json"),audit=read("docs/assets/data/curriculum/topic23-layer-audit-v1.json"),packet=read("docs/assets/data/collaboration/packets/PROB23-LEARN-GEMINI-AUTHOR-001.json");
 ok(w.schema==="roadmap-topic-learning-workspace-v1"&&w.topic==="23-xac-suat"&&w.cards.length===5&&w.core_progress_policy.layer==="KNTT-Core","workspace schema");
-ok(b.question_count===15&&b.questions.length===15&&b.bank_id==="PROB23-MICRO-V1"&&w.micro_practice_bank==="assets/data/practice/23-xac-suat-micro-v1.json","bank schema");
+ok(b.question_count===17&&b.questions.length===17&&b.bank_id==="PROB23-MICRO-V1"&&w.micro_practice_bank==="assets/data/practice/23-xac-suat-micro-v1.json","bank schema");
 ok(w.extensions.length>=2&&w.extensions.every(x=>x.gates_core===false&&x.layer!=="KNTT-Core"),"extensions should not gate");
 const byId=new Map(b.questions.map(x=>[x.id,x])),seen=new Set(),gradeMap={};
 for(let grade=6;grade<=8;grade++){const map=read("docs/assets/data/curriculum/kntt-grade"+grade+"-map.json");const skills=new Set(map.practice_alignment?.["23-xac-suat"]?.existing_core_skills||map.practice_alignment?.["23-xac-suat"]?.grade8_core_include||[]);
 for(const chapter of map.chapters||[])for(const l of chapter.lessons||[])if((l.roadmap||[]).some(r=>r.topic_id==="23-xac-suat"&&r.relation==="PRIMARY"))for(const s of [...(l.existing_skills||[]),...(l.skills||[])])skills.add(s);
 gradeMap[grade]=skills;}
 let inCards=[];
-for(let i=0;i<5;i++){const c=w.cards[i],p=packet.scope.card_plan[i],copy=c.teaching_copy;ok(c.id===p.id&&c.order===i+1&&c.layer==="KNTT-Core"&&c.micro_practice.length===3&&c.skills.join(",")===p.skills.join(","),"card identity "+i);ok(copy?.key_idea&&copy?.worked_example?.problem&&copy?.worked_example?.solution&&copy.misconception&&copy.summary,"teaching content "+c.id);
-const qs=c.micro_practice.map(id=>byId.get(id));ok(qs.every(Boolean)&&qs.map(x=>x.micro_role).join(",")==="base,trap,apply","role sequence "+c.id);qs.forEach((x,j)=>{ok(x.id===p.micro_ids[j]&&x.card_id===c.id&&c.skills.includes(x.target),"item in card "+x.id);inCards.push(x.id)});}
-ok(new Set(inCards).size===15,"card references duplicated");
-for(let i=0;i<15;i++){const q=b.questions[i],id="PRO23MICRO_"+String(i+1).padStart(3,"0");ok(q.id===id&&!seen.has(q.id),"item ID "+id);seen.add(q.id);ok(q.options?.length===4&&q.options.every(x=>typeof x==="string"&&x.trim())&&new Set(q.options).size===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4,"choices "+id);
+const expectedCounts=[3,3,4,3,4];
+for(let i=0;i<5;i++){const c=w.cards[i],p=packet.scope.card_plan[i],copy=c.teaching_copy;ok(c.id===p.id&&c.order===i+1&&c.layer==="KNTT-Core"&&c.micro_practice.length===expectedCounts[i]&&c.skills.join(",")===p.skills.join(","),"card identity "+i);ok(copy?.key_idea&&copy?.worked_example?.problem&&copy?.worked_example?.solution&&copy.misconception&&copy.summary,"teaching content "+c.id);
+const qs=c.micro_practice.map(id=>byId.get(id));ok(qs.every(Boolean)&&qs.slice(0,3).map(x=>x.micro_role).join(",")==="base,trap,apply"&&qs.slice(3).every(x=>x.micro_role==="coverage"),"role sequence "+c.id);qs.forEach((x,j)=>{if(j<3)ok(x.id===p.micro_ids[j],"legacy item order "+x.id);ok(x.card_id===c.id&&c.skills.includes(x.target),"item in card "+x.id);inCards.push(x.id)});}
+ok(new Set(inCards).size===17,"card references duplicated");
+for(let i=0;i<17;i++){const q=b.questions[i],id="PRO23MICRO_"+String(i+1).padStart(3,"0");ok(q.id===id&&!seen.has(q.id),"item ID "+id);seen.add(q.id);ok(q.options?.length===4&&q.options.every(x=>typeof x==="string"&&x.trim())&&new Set(q.options).size===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4,"choices "+id);
 ok(q.tags.topic==="23-xac-suat"&&q.tags.layer==="KNTT-Core"&&q.tags.skill.length===1&&q.tags.skill[0]===q.target&&!!m.skill_labels[q.target]&&audit.core_skills.includes(q.target),"skill "+id);
 ok(q.curriculum.book==="KNTT"&&q.curriculum.level==="core"&&q.curriculum.grades.length===1&&q.curriculum.grades[0]===q.tags.grade&&gradeMap[q.tags.grade]?.has(q.target),"grade map "+id);
-ok(q.hints?.length===2&&q.hints.every(h=>h.trim().length>8)&&q.explanation.length>30&&q.exam.entrance10==="foundation"&&q.exam.specialized==="none","feedback/metadata "+id);
+ok(q.hints?.length===2&&q.hints.every(h=>h.trim().length>8)&&(q.micro_role==="coverage"?q.explanation.trim().length>10:q.explanation.length>30)&&q.exam.entrance10==="foundation"&&q.exam.specialized==="none","feedback/metadata "+id);
 ok(!/phù hợp nhất|đúng đắn nhất|câu hình bên|quan sát hình sau/i.test(q.question),"unclear wording "+id);}
 const orig=m.sources.flatMap(s=>read("docs/assets/data/practice/"+s).questions);ok(orig.length===120&&m.question_count===120&&new Set(orig.map(x=>x.id)).size===120,"original bank changed");const canonical=x=>x.toLowerCase().replace(/\s+/g," ").trim(),old=new Set(orig.map(x=>canonical(x.question)));ok(b.questions.every(x=>!old.has(canonical(x.question))),"identical question from original bank");
 ok(b.questions[0].options[b.questions[0].answer]==="3/8"&&18/48===3/8,"001");
@@ -35,4 +36,4 @@ ok(w.cards[0].skills.join(",")==="xac-suat-thuc-nghiem"&&!b.questions.slice(0,3)
 const js=txt("docs/assets/javascripts/topic-workspace-v1.js"),lesson=txt("docs/kien-thuc/23-xac-suat/index.md");
 ok(js.includes('"23-xac-suat":{number:"23"')&&js.includes("if(card.teaching_copy)"),"UI mount missing");
 ok(lesson.includes("5 Learning Cards KNTT Core")&&lesson.includes("Core Readiness 12 câu")&&lesson.includes("tu-kiem-tra-tu-luan.md")&&!lesson.includes("Đạt tối thiểu **7/10**"),"lesson gateway");
-console.log("PASS: CĐ23 five grade-mapped Learning Cards, 15 micro items, independent math and direct-language checks, 120 Practice Bank intact. Roles Base/Trap/Apply.");
+console.log("PASS: CĐ23 five grade-mapped Learning Cards, 17 micro items including 2 reviewed coverage items, 120 Practice Bank intact.");
