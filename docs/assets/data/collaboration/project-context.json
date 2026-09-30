@@ -1,5 +1,5 @@
 {
-  "version": "1.0.79",
+  "version": "1.0.80",
   "updated": "2026-09-30",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Phase G canonical evidence productionization R1 is REVIEW-READY and awaiting NotebookLM. Draft PR #214 Roadmap PR Quality run 36695136493 SUCCESS. Design proposes freezing Beta canonical-v1, new production canonical-v2 with persistent de-dup indexes, and a 27-item shadow canary in normal Practice before any broader rollout. No Phase G runtime code exists.",
+    "next_priority": "Phase G productionization R1 independently reviewed PASS with 0 revisions. Audit PR #214 records NotebookLM PASS on source blob 1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1 / design blob 9302ba28e1c9bf506a290b7b05f6defee2d38e92. Authorized next gate: technical implementation/QA only for G1 shadow canary on exactly 27 Beta-proven Practice items, production canonical-v2, no learner UI change, no deploy yet.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -414,20 +414,17 @@
       ]
     },
     "canonical_evidence_phase_g": {
-      "status": "DESIGN_READY_AWAITING_NOTEBOOKLM",
-      "review_pr": 214,
+      "status": "ACADEMIC_PASS_TECHNICAL_IMPLEMENTATION_AUTHORIZED_NOT_DEPLOYED",
+      "audit_pr": 214,
       "packet_id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-R1-20260930",
+      "source_blob": "1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1",
       "design_blob": "9302ba28e1c9bf506a290b7b05f6defee2d38e92",
-      "notebooklm_source_blob": "1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1",
-      "roadmap_pr_quality_run": 36695136493,
-      "qa_status": "SUCCESS",
-      "proposed_beta_store_frozen": "toan-thcs-canonical-evidence-v1",
-      "proposed_production_store": "toan-thcs-canonical-evidence-v2",
-      "g1_scope": "27 Beta-proven items; 7 canonical skills; max 16 skill/topic-scoped units; shadow capture only",
-      "g2_scope": "101 total items across same 7 proven skills after separate G1 owner QA gate",
-      "g3_scope": "310 additional items across 29 additional reviewed YES skills in bounded batches",
-      "phase_d_inventory": "492 total; 411 YES-primary; 16 PENDING-primary; 65 formative-only; 36 YES skills; 91 skill/topic-scoped units",
-      "runtime_enabled": false
+      "notebooklm_verdict": "PASS_ZERO_REVISIONS_9_OF_9_ARCHITECTURE_QUESTIONS",
+      "authorized_scope": "G1 shadow canary only: 27 Beta-proven items, 7 skills, max 16 skill/topic-scoped units",
+      "proposed_store": "toan-thcs-canonical-evidence-v2",
+      "beta_v1_policy": "freeze read-only provenance; no migration/backfill",
+      "production_release": false,
+      "g2_g3_authorized": false
     }
   },
   "handoff_required_fields": [
