@@ -21,13 +21,12 @@
 3. **Owner QA Batch A:** kiểm tra desktop/iPad thực tế sau deploy và ghi rõ thiết bị/từng phát hiện. CĐ22 không gộp THPT-Bridge vào THCS readiness, CĐ25 không gộp kỹ năng thi với điểm Toán.
 4. B01–B07 taxonomy read-only ở ledger đã lưu vẫn có hiệu lực, sẽ tiếp tục sau khi đồng bộ UI/học thuật những phần còn thiếu; không merge các draft học thuật ngoài cổng approval.
 
-### Batch B CĐ03 — R1 đã phản biện, targeted R2 đang chờ NotebookLM
+### Batch B CĐ03 — học thuật đã đóng PASS, sẵn sàng implementation
 
-- [Draft PR #180](https://github.com/TMA2015/roadmap-toan-thcs/pull/180) vẫn là **review-only, không merge/deploy**. R1 packet `MATH-CORE03-R1-20260930` đã được NotebookLM kiểm đủ **5/5 cards + 15/15 micro** và trả `REVISIONS_REQUIRED`. R1 xác nhận 15/15 phép tính và answer index đúng, nhưng bắt buộc hạ `doi-don-vi-ti-so` khỏi Grade-6 Core assessed xuống Prerequisite/Core-Support; đồng thời đề nghị bổ sung ví dụ đổi đơn vị và đổi số liệu bốn micro trùng bài mẫu.
-- ChatGPT đã reconcile và chuẩn bị `MATH-CORE03-R2-20260930`. Source duy nhất cho R2 là `review-packets/core03/05_UPLOAD_TO_NOTEBOOKLM_CORE03_R2.md`, **Git blob `a84c2740169070d6919bc8d2f274d10fb914fa32`**; prompt là `06_COPY_TO_NOTEBOOKLM_CHAT_R2.txt`. Diff R2 có đúng 1 card + 5 item thay đổi: `rat03-core-g6-1`, `RAT03MICRO_002/003/005/011/015`; 4 card + 10 item còn lại giữ nguyên. Phân bố key vẫn 4/4/4/3.
-- `RAT03MICRO_002` ở R2 là `Core-Support / FORMATIVE_SUPPORT_ONLY`, không được cộng Grade-6 Core readiness. Toàn bộ 120 `RAT03V1` cũ, localStorage, CĐ03 runtime và menu hiện tại vẫn không thay đổi.
-- **Điểm tiếp theo:** upload đúng source R2 blob ở trên vào NotebookLM, dán prompt R2, gửi nguyên văn báo cáo về ChatGPT. Chỉ khi R2 đóng học thuật mới tạo implementation PR và QA browser/MathJax.
-
+- [Draft PR #180](https://github.com/TMA2015/roadmap-toan-thcs/pull/180) là **audit-only, không merge/deploy**. NotebookLM R1 kiểm đủ 5/5 cards +15/15 micro và trả REVISIONS_REQUIRED; targeted R2 packet `MATH-CORE03-R2-20260930` trên source blob `a84c2740169070d6919bc8d2f274d10fb914fa32` đã trả **PASS**.
+- R2 xác nhận 6/6 mục thay đổi PASS, 4/4 card không đổi +10/10 micro không đổi hồi quy PASS. Grade 6 Core chỉ `ti-so`, `ti-so-phan-tram`; `doi-don-vi-ti-so` là Prerequisite/Core-Support, item `RAT03MICRO_002` chỉ `FORMATIVE_SUPPORT_ONLY`, không cấp Core Readiness. Grade 7 Core gồm 9 kỹ năng tỉ lệ thức/dãy tỉ số/tỉ lệ thuận-nghịch đã xác nhận.
+- Toàn bộ 120 `RAT03V1_001–120`, localStorage và runtime CĐ03 hiện tại vẫn chưa bị thay đổi bởi review. Academic receipt R2 lưu ở PR #180.
+- **Điểm tiếp theo:** tạo implementation PR riêng từ `main`, sinh `topic03-learning-workspace.json` + `03-ti-le-ti-le-thuc-micro-v1.json` từ đúng R2 PASS, thêm trang `/core/`, route/menu 4 bước, rồi chạy schema/MathJax/browser/evidence regression. Chỉ deploy sau CI PASS.
 ## Quyết định không được tự làm lệch
 
 - 25 chuyên đề là một Vertical Spine G6–G9, lớp/KNTT là overlay. Có thể mở rộng THPT, SAT/ACT, logic sau này; chia thêm thẻ CĐ20 không tạo chuyên đề thứ 26.
