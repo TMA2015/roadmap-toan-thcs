@@ -19,10 +19,10 @@ const validated = obs.validatePolicy(policy);
 
 assert.equal(obs.STORE_KEY, "toan-thcs-canonical-evidence-v2");
 assert.equal(obs.BETA_V1_KEY, "toan-thcs-canonical-evidence-v1");
-assert.equal(policy.rows.length, 27);
-assert.equal(new Set(policy.rows.map((r) => r.question_id)).size, 27);
+assert.equal(policy.rows.length, 101);
+assert.equal(new Set(policy.rows.map((r) => r.question_id)).size, 101);
 assert.equal(new Set(policy.rows.map((r) => r.canonical_skill_id)).size, 7);
-assert.equal(new Set(policy.rows.map(obs.evidenceUnitKey)).size, 16);
+assert.equal(new Set(policy.rows.map(obs.evidenceUnitKey)).size, 23);
 assert.equal(policy.runtime_rules.normal_learner_ui_change, false);
 assert.equal(policy.runtime_rules.mastery_threshold, null);
 assert.equal(policy.runtime_rules.core_readiness_credit, false);
@@ -32,7 +32,10 @@ const v4Config = json("docs/assets/data/curriculum/canonical-evidence-beta-v4-co
 const v5Config = json("docs/assets/data/curriculum/canonical-evidence-beta-v5-config-v1.json");
 const accepted = new Set([...v4Config.selected_item_ids, ...v5Config.selected_item_ids]);
 assert.equal(accepted.size, 27);
-assert.deepEqual(new Set(policy.rows.map((r) => r.question_id)), accepted);
+const g1Rows = policy.rows.filter((r) => r.capture_status === "G1_CANARY_ACTIVE");
+assert.equal(g1Rows.length, 27);
+assert.deepEqual(new Set(g1Rows.map((r) => r.question_id)), accepted);
+assert.equal(policy.rows.filter((r) => r.capture_status === "G2_PROVEN_SKILLS_ACTIVE").length, 74);
 
 const files = [...new Set(policy.rows.map((r) => r.source_file))];
 const banks = {};
@@ -47,7 +50,7 @@ for (const row of policy.rows) {
   const q = banks[row.source_file].find((item) => item.id === row.question_id);
   assert.ok(q, "missing source question " + row.question_id);
   assert.deepEqual(q.tags?.skill || [], row.legacy_skill_tags, row.question_id + " legacy tags drift");
-  assert.equal(row.capture_status, "G1_CANARY_ACTIVE");
+  assert.ok(["G1_CANARY_ACTIVE", "G2_PROVEN_SKILLS_ACTIVE"].includes(row.capture_status));
 }
 
 // Negative first-unassisted evidence stays independent.
@@ -143,7 +146,7 @@ assert.ok(store.independent_units["synthetic-skill|synthetic-topic|q:SYNTH_0"]);
 const bytes = Buffer.byteLength(JSON.stringify(store), "utf8");
 assert.ok(bytes < 4 * 1024 * 1024, "synthetic v2 store exceeds 4 MiB: " + bytes);
 
-console.log("PASS G1 policy: 27 source-locked rows, 7 skills, 16 skill/topic units.");
+console.log("PASS G1 regression subset: 27 accepted rows preserved inside G2 101-row policy.");
 console.log("PASS assistance, negative evidence, repeat, clone and cross-topic semantics.");
 console.log("PASS retention stress: 1000 recent events retained; 1105 de-dup indexes preserved.");
 console.log("PASS synthetic store size bytes:", bytes);
