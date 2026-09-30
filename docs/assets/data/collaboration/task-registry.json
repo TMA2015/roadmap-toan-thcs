@@ -703,6 +703,15 @@
       "context_version": "1.0.85",
       "review_verdict": "ACCEPTED_PRODUCTION_NOTEBOOKLM_PASS_RELEASE_QA_PASS_OWNER_QA_PASS",
       "review_notes": "Phase G1 fully accepted. NotebookLM design review PASS 0 revisions; exact release-head QA PASS; production deploy SUCCESS; owner production QA PASS. Final screenshot confirms canonical-v2 real production capture: policy_ready=true, policy_error=null, recent_events=3, seen_questions=3, independent_units=3, last_capture captured=true for RAT07V1_055, canonical skill rut-gon-phan-thuc, independent_evidence=true, reason first_unseen_unit. G1 is closed DONE. G2/G3 remain unauthorized and require a separate design/review gate."
+    },
+    {
+      "id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G2-001",
+      "title": "Expand canonical Practice shadow capture across the seven proven G1 skills",
+      "routing": "CHATGPT_SOURCE_LOCK+NOTEBOOKLM_INDEPENDENT_REVIEW+EXACT_HEAD_TECHNICAL_QA+OWNER_PRODUCTION_QA",
+      "status": "OPEN",
+      "context_version": "1.0.86",
+      "review_verdict": "PRODUCTION_RELEASED_NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_OWNER_QA_PENDING",
+      "review_notes": "G2 academic gate PASS: 74/74 delta items and 8/8 architecture checks. Exact tested implementation HEAD 56892b0d5b8a9791e99e48e4f9022412097e764b; Roadmap PR Quality run 36708260947 SUCCESS; browser artifact 11093235811 digest sha256:e1a971357be742e5f3da39c93fea0326e199152902c96fc169c8506b960eb916. PR #224 controlled release merged as 3c235e4e23ed6adf33fbba8ff7f01737b709fac7; Deploy MkDocs run 36713507743 SUCCESS. Scope is 101 = 27 G1 + 74 G2, same 7 proven skills, max 23 topic-scoped units, CĐ04–07, shadow-only. Owner production QA is pending. G3/mastery/Readiness/remediation/ranking/migration/backfill/regrade/broader capture remain OFF."
     }
   ]
 }
