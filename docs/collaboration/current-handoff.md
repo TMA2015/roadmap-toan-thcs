@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Phase G2 CLOSED DONE; learner-help disclosure UX patch OWNER QA PASS, CLOSED DONE.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Owner spot-QA on both desktop and iPad confirms Practice help and Core hint disclosures open/collapse/reopen correctly, while viewed hints remain counted. Product baseline is stable. G3, mastery/Readiness, canonical remediation/ranking, migration/backfill/regrade and broader capture remain OFF until a separate explicit gate is opened.
+> **CURRENT CHECKPOINT — 30/09/2026 END-OF-DAY PAUSE.** Phase G2 **CLOSED DONE**; learner-help disclosure UX **CLOSED DONE** after desktop+iPad owner QA. Baseline is stable. **No G3/mastery/Readiness expansion gate is open.** Tomorrow, clear the four real owner-QA debts (CĐ03 Core, current CĐ07 17-item Core, Grade6 CĐ02 end-to-end journey/Readiness, Batch A remaining CĐ21/24/25) before opening a new large phase.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -21,6 +21,39 @@
 - PR #227 production merge: `fb571ec78cfaf56f82d7dd81b719481dc4296e2b`.
 - Deploy MkDocs run `36719709094`: **SUCCESS**.
 - Owner spot-QA: **PASS on desktop and iPad**. Practice help and Core hint disclosure behavior matches the approved UX rule. Task `MATH-HELP-DISCLOSURE-TOGGLE-001` is CLOSED DONE.
+
+## End-of-day housekeeping — project paused on stable baseline (30/09/2026)
+
+### Real owner-QA debt to clear next
+
+1. `MATH-CORE03-OWNER-QA-001` — **CĐ03 standalone Core**, desktop+iPad. Academic R2 / CI / deploy already PASS; owner acceptance is the missing gate.
+2. `C07-MICRO15-001` — migrated from the obsolete 15-item pilot label to the **current CĐ07 17-item Core baseline**. G2 production QA tested CĐ07 Practice/canonical capture, not the whole Core micro journey; owner Core acceptance is still not explicit.
+3. `G6-T02-OWNER-UX-001` — **CĐ02 Grade6 end-to-end journey/Readiness** only. CĐ02 card functions were already accepted on desktop+iPad, so do not repeat basic card QA; check chapter link → cards → hints → after-submit Readiness → next-topic.
+4. `MATH-UI-BATCH-A-OWNER-QA-001` — remaining **CĐ21/CĐ24/CĐ25** owner acceptance. CĐ02/CĐ23 card basics are already accepted and should not be re-tested merely to close Batch A.
+
+### Retired as stale/superseded
+
+- `CONTENT-PILOT-001` — sample Core/Entrance10/Challenge pipeline pilot is superseded by the much later released production content pipeline.
+- `GEO-BATCH-16-18-GEMINI-REVIEW-001` — retired **without claiming an independent Gemini/NotebookLM PASS**. Current handoff freezes CĐ16–18 as released baseline (“Không làm lại”); reopen only on new concrete defect evidence.
+
+### Valid non-blocking backlog
+
+- `BENCH-CAP-001` — capability benchmark; useful but not a release gate.
+- `GEO-LIB-001` — reusable spec-driven SVG library/semantic geometry validation; umbrella intentionally remains OPEN.
+- `ALG-REVIEW-04-11-GEMINI-001` — older independent-review backlog; do not run blindly before reconciling scope/routing with the current NotebookLM/source-locked process.
+- `GEO13-GEMINI-REVIEW-001` — same: optional independent academic backlog, not blocking current production baseline.
+- `G6-T03-SCOPE-001` — valid future Grade6/Grade7 scope separation work.
+
+### Repository hygiene note
+
+There are still many historical open PRs, mostly **audit/provenance drafts**. Do not bulk-merge them. Several older implementation/design PRs are clearly superseded, but closing/deleting provenance branches should be a separate hygiene action after verifying every blob/reference needed by handoff and review receipts. No such cleanup is required to resume product work.
+
+### Pause rule
+
+- **G2 stays CLOSED DONE.**
+- **G3 is OFF.**
+- No new mastery/Readiness, canonical remediation/ranking, migration/backfill/regrade or broader canonical capture is authorized.
+- Resume tomorrow from the owner-QA list above, then decide the next substantive phase.
 
 ## Phase G2 — RELEASED + OWNER PRODUCTION QA PASS; G2 CLOSED DONE (30/09/2026)
 

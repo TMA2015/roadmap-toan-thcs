@@ -1,5 +1,5 @@
 {
-  "version": "1.0.89",
+  "version": "1.0.90",
   "updated": "2026-09-30",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Phase G2 remains fully accepted and CLOSED DONE. Learner-help disclosure UX patch is also fully accepted after owner spot-QA PASS on both desktop and iPad. Task MATH-HELP-DISCLOSURE-TOGGLE-001 is CLOSED DONE. Current product baseline is stable; G3/mastery/Readiness/canonical remediation/ranking/migration/backfill/regrade/broader capture remain separate and OFF until a new explicit gate is opened.",
+    "next_priority": "END-OF-DAY PAUSE. G2 and learner-help disclosure patch are CLOSED DONE. Do not start G3 automatically. Tomorrow first resolve/decide the four remaining owner-device QA debts: CĐ03 standalone Core; current CĐ07 17-item Core; Grade6 CĐ02 end-to-end journey/Readiness (card basics already accepted); Batch A remaining CĐ21/CĐ24/CĐ25. Non-blocking backlog remains BENCH-CAP-001, GEO-LIB-001, ALG-REVIEW-04-11-GEMINI-001, GEO13-GEMINI-REVIEW-001 and G6-T03-SCOPE-001. CONTENT-PILOT-001 and the old CĐ16–18 Gemini review task were retired as superseded.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -530,6 +530,32 @@
       ],
       "owner_qa_date": "2026-09-30",
       "task_closed": true
+    },
+    "end_of_day_pause_20260930": {
+      "status": "PAUSED_STABLE_BASELINE",
+      "main_before_checkpoint": "f5d2979164e919d56ef79b697bbe85b993c4a1ef",
+      "project_context_version": "1.0.90",
+      "closed_as_superseded": [
+        "CONTENT-PILOT-001",
+        "GEO-BATCH-16-18-GEMINI-REVIEW-001"
+      ],
+      "owner_qa_debts": [
+        "MATH-CORE03-OWNER-QA-001",
+        "C07-MICRO15-001",
+        "G6-T02-OWNER-UX-001",
+        "MATH-UI-BATCH-A-OWNER-QA-001"
+      ],
+      "non_blocking_backlog": [
+        "BENCH-CAP-001",
+        "GEO-LIB-001",
+        "ALG-REVIEW-04-11-GEMINI-001",
+        "GEO13-GEMINI-REVIEW-001",
+        "G6-T03-SCOPE-001"
+      ],
+      "canonical_next_gate": "NONE_OPEN",
+      "g3_authorized": false,
+      "mastery_readiness_expansion_authorized": false,
+      "note": "Resume tomorrow by clearing owner QA debt before opening a new large academic/runtime phase."
     }
   },
   "handoff_required_fields": [
