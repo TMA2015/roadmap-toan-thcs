@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Phase G1 CONTROLLED RELEASE OWNER-AUTHORIZED; PRE-RELEASE RECONCILIATION/EXACT-HEAD QA IN PROGRESS.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Staged PR #217 technical QA PASS. Owner explicitly approved controlled G1 release, but production merge/deploy occurs only after reconcile with latest `main` and all exact-release-head QA PASS. G2/G3 remain OFF.
+> **CURRENT CHECKPOINT — 30/09/2026, Phase G1 CONTROLLED PRODUCTION RELEASE LIVE; OWNER PRODUCTION QA PENDING.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. PR #217 release merged `74b38fd2361c11ebc76eee743bf505e938bc48b0`; Deploy MkDocs `36701320498` SUCCESS. G1 shadow capture is live for exact 27 approved Practice items only. G2/G3 remain OFF until owner QA PASS.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -20,7 +20,8 @@
 - First Roadmap run failed only because of Playwright test-call syntax; corrected test rerun PASS. Không waive product assertion.
 - **Owner release decision:** **APPROVED** on 30/09/2026 for a controlled G1 production release.
 - **Pre-release requirement now:** reconcile PR #217 with latest `main`, rerun Roadmap + Skill assessment + Branding QA on the exact release HEAD, then merge/deploy only if all PASS.
-- **After deploy:** owner real-device production QA is mandatory before any G2 consideration.
+- **Production release:** PR #217 exact release HEAD `3473f4383df990da04404a24659732e38c5422c6` passed Roadmap `36700956876`, Skill `36700957023`, Branding `36700956882`; squash merge `74b38fd2361c11ebc76eee743bf505e938bc48b0`; Deploy MkDocs `36701320498` **SUCCESS**.
+- **Current gate:** owner real-device/browser production QA of v2 shadow capture. G2 remains blocked until explicit owner QA PASS.
 - G2/G3, mastery/readiness, canonical remediation/ranking, migration/backfill/regrade and broader capture remain **OFF**.
 
 ## Canonical Evidence Beta v4 — RELEASED + OWNER QA PASS (30/09/2026)
