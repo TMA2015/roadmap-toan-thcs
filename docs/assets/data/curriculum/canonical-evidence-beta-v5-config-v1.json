@@ -1,0 +1,79 @@
+{
+  "schema": "canonical-evidence-beta-v5-config-v1",
+  "status": "TECHNICAL_QA_ONLY_NOT_PRODUCTION_RELEASED",
+  "as_of": "2026-09-30",
+  "pilot_id": "phase-f-canonical-evidence-beta-v5",
+  "pilot_version": "phase-f-beta-v5-r1-20260930",
+  "reviewed_manifest": "data/curriculum/canonical-evidence-phase-f-expansion-r1.json",
+  "reviewed_manifest_blob": "5a5b339d7372068dd692b9a03dc1277758a6b6d5",
+  "notebook_review": {
+    "packet_id": "MATH-SKILL-PHASE-F-EXPANSION-R1-20260930",
+    "source_blob": "70d044f1de98f5b283a3e54fdecfd07fb25d82bd",
+    "verdict": "PASS",
+    "item_coverage": "15/15",
+    "revisions": 0
+  },
+  "storage_key": "toan-thcs-canonical-evidence-v1",
+  "legacy_immutable_storage_keys": [
+    "toan-thcs-practice-v1",
+    "toan-thcs-assessment-v1",
+    "toan-thcs-assessment-v2"
+  ],
+  "content_version": "phase-f-source-locked-20260930",
+  "selected_item_ids": [
+    "ALG04V2_013",
+    "ALG04V2_014",
+    "ALG04V2_089",
+    "ALG04V2_090",
+    "ID05V1_021",
+    "ID05V1_022",
+    "ID05V1_081",
+    "ID05V1_087",
+    "ID05V1_120",
+    "FAC06V1_001",
+    "FAC06V1_002",
+    "FAC06V1_021",
+    "FAC06V1_022",
+    "RAT07V1_071",
+    "RAT07V1_072"
+  ],
+  "labels": {
+    "skills": {
+      "dieu-kien-xac-dinh": "Điều kiện xác định",
+      "hang-tu-dong-dang": "Hạng tử đồng dạng",
+      "hieu-hai-binh-phuong": "Hiệu hai bình phương",
+      "nhan-tu-chung": "Đặt nhân tử chung",
+      "quy-dong-mau-thuc": "Quy đồng mẫu thức"
+    },
+    "topics": {
+      "CĐ04": "CĐ04 · Biểu thức đại số",
+      "CĐ05": "CĐ05 · 7 hằng đẳng thức",
+      "CĐ06": "CĐ06 · Phân tích đa thức",
+      "CĐ07": "CĐ07 · Phân thức đại số"
+    },
+    "evidence_classes": {
+      "MCQ_RECOGNITION_ONLY": "Nhận biết",
+      "MCQ_METHOD_SELECTION_ONLY": "Chọn cách làm",
+      "MCQ_FINAL_OUTPUT_ONLY": "Kết quả cuối",
+      "MCQ_FINAL_ANSWER_ONLY": "Đáp án cuối"
+    }
+  },
+  "policy": {
+    "prospective_append_only": true,
+    "one_assessed_skill_per_event": true,
+    "supporting_skills_metadata_only": true,
+    "clone_family_dedup": true,
+    "cross_topic_clone_equivalence": false,
+    "topic_and_evidence_class_retained": true,
+    "evidence_class_breakdown_required": true,
+    "evidence_class_weighting": false,
+    "mastery_threshold": null,
+    "mastery_labels": false,
+    "core_readiness_credit": false,
+    "historical_backfill": false,
+    "migration": false,
+    "regrade": false,
+    "dual_write": false,
+    "practice_engine_integration": false
+  }
+}
