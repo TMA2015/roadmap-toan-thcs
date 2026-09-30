@@ -82,6 +82,10 @@ jobs:
           node scripts/test-core-soft-card-style.js
           node scripts/test-core07-teaching-coverage.js
           node scripts/test-learning-card-micro-practice.js
+      - name: Validate canonical evidence Beta v4
+        run: |
+          node --check docs/assets/javascripts/canonical-evidence-pilot-v1.js
+          node scripts/test-canonical-evidence-pilot-v1.js
       - name: Validate assets and practice
         run: |
           python check_svg_integrity.py
@@ -118,6 +122,7 @@ jobs:
           python scripts/test-topic25-math-browser.py
           python scripts/test-core19-r2-browser.py
           python scripts/test-core20-v2-browser.py
+          python scripts/test-canonical-evidence-pilot-browser.py
       - name: Upload visual preview screenshots
         uses: actions/upload-artifact@v4
         with:
