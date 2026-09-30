@@ -681,10 +681,10 @@
       "id": "MATH-SKILL-PILOT-001",
       "title": "Design bounded additive canonical-skill evidence pilot after Phase D closure",
       "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_REVIEW_BEFORE_RUNTIME",
-      "status": "RELEASED_OWNER_DEVICE_QA_PENDING",
-      "context_version": "1.0.73",
-      "review_verdict": "NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_RELEASED",
-      "review_notes": "Owner approved controlled release. PR #203 exact release HEAD 83bcd263f36c45f007bcaf67f19c19f272541f77 passed Roadmap PR Quality 36681119202, Skill assessment pilot QA 36681119234 and G Learning branding QA 36681119312. Squash merge 5873253c3f3dad1d9066a61e408ff0bc760b5a74; Deploy MkDocs run 36681408115 SUCCESS. Production Beta v4 uses isolated store toan-thcs-canonical-evidence-v1; no migration/backfill/regrade/dual-write. Owner real-device QA remains pending; no mastery/readiness integration authorized."
+      "status": "DONE",
+      "context_version": "1.0.74",
+      "review_verdict": "ACCEPTED_PRODUCTION_NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_OWNER_QA_PASS",
+      "review_notes": "Bounded Phase E / Beta v4 pilot fully accepted. NotebookLM PASS 12/12, release-head technical QA PASS, production deploy SUCCESS, and owner production QA PASS from six screenshots of a completed 12-item session. Visible behavior confirms answer lock, supporting metadata-only, clone-family de-dup, singleton evidence, 12 attempts -> 7 max independent units, retry/history UI, and no mastery/readiness overclaim. Storage isolation remains supported by automated browser sentinel. Non-blocking UX polish candidate: simplify developer-oriented terms metadata / independent evidence unit. Any expansion is a separate reviewed gate."
     }
   ]
 }
