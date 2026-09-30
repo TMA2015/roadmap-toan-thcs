@@ -639,9 +639,9 @@
       "id": "MATH-CORE03-ACADEMIC-AUTHOR-001",
       "title": "Author and independently review CĐ03 five-stage Core based on Grade6/7 KNTT",
       "routing": "CHATGPT_AUTHOR_SOURCE_LOCKED+NOTEBOOKLM_REVIEW",
-      "status": "READY_FOR_NOTEBOOKLM",
-      "review_verdict": "R1_SOURCE_LOCKED_5_15_AUTHOR_PREFLIGHT_ONLY",
-      "review_notes": "Draft PR #180 source packet MATH-CORE03-R1-20260930 includes original full lesson blob 61df5dd2, KNTT G6/G7 matching records and proposed 5 teaching cards / 15 new RAT03MICRO IDs. Author integrity: 12 declared skills, unique IDs and options, 4/4/4/3 key positions, no exact old bank question clones. NOT independent review and NO website deployment. Owner uploads one source 01_UPLOAD_TO_NOTEBOOKLM_CORE03_R1.md and pastes prompt 02_COPY_TO_NOTEBOOKLM_CHAT_R1.txt; then ChatGPT reconciles R1 / R2 as needed.",
+      "status": "READY_FOR_NOTEBOOKLM_R2",
+      "review_verdict": "R1_REVISIONS_REQUIRED_R2_SOURCE_LOCKED",
+      "review_notes": "Independent R1 reviewed 5/5 cards +15/15 micro: all math oracles/0-based keys correct; mandatory Grade6 doi-don-vi-ti-so→Prerequisite/Core-Support plus unit-conversion example and anti-copy revisions. Reconciled targeted R2 in draft #180; exact source 05_UPLOAD_TO_NOTEBOOKLM_CORE03_R2.md blob a84c2740169070d6919bc8d2f274d10fb914fa32, prompt 06_COPY_TO_NOTEBOOKLM_CHAT_R2.txt. Exact candidate diff: card g6-1 + items 002/003/005/011/015; no runtime/legacy data changes. Await independent R2.",
       "packet": "review-packets/core03/01_UPLOAD_TO_NOTEBOOKLM_CORE03_R1.md",
       "source_commit": "65618b7a0bbe451ef57864931561d179c92558bc"
     },
