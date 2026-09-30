@@ -690,10 +690,10 @@
       "id": "MATH-SKILL-PHASE-F-EXPANSION-001",
       "title": "Review bounded multi-topic canonical evidence expansion after accepted Beta v4",
       "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_INDEPENDENT_REVIEW_BEFORE_RUNTIME",
-      "status": "RELEASED_OWNER_DEVICE_QA_PENDING",
-      "context_version": "1.0.77",
-      "review_verdict": "NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_RELEASED",
-      "review_notes": "Owner approved controlled release. PR #210 exact release HEAD 5017ffc134b9bd076771fa5496d8fb23149fb20b passed Roadmap PR Quality 36690938386, Skill assessment pilot QA 36690938362 and Branding QA 36690938341. Squash merge 371b4980586ae684729060ae1a4c8dc1443cb45d; Deploy MkDocs run 36691324129 SUCCESS. Production Beta v5 remains bounded to 15 Phase F items, 5 canonical skills and max 9 new independent evidence units, with append-only canonical store and no mastery/readiness/backfill. Owner real-device QA remains pending."
+      "status": "DONE",
+      "context_version": "1.0.78",
+      "review_verdict": "ACCEPTED_PRODUCTION_NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_OWNER_QA_PASS",
+      "review_notes": "Phase F/Beta v5 fully accepted. NotebookLM PASS 15/15, release-head technical QA PASS, production deploy SUCCESS, and owner production QA PASS from seven screenshots. Owner used the same browser/profile as the prior Beta v4 session but opened a new page; canonical history showed 27 events, matching prior 12 v4 + new 15 v5 and confirming origin-scoped v4→v5 continuity. Screenshots also confirm dynamic CĐ04–CĐ07 labels, mixed evidence-class labels, ID05V1_120 canonical primary from overlay rather than legacy tag order, CĐ05/CĐ06 shared hieu-hai-binh-phuong skill, clone-family de-dup, exactly 9 new independent checks, and no mastery/readiness claim. Broader rollout remains a separate reviewed gate."
     }
   ]
 }
