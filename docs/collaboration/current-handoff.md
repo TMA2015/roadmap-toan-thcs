@@ -21,11 +21,12 @@
 3. **Owner QA Batch A:** kiểm tra desktop/iPad thực tế sau deploy và ghi rõ thiết bị/từng phát hiện. CĐ22 không gộp THPT-Bridge vào THCS readiness, CĐ25 không gộp kỹ năng thi với điểm Toán.
 4. B01–B07 taxonomy read-only ở ledger đã lưu vẫn có hiệu lực, sẽ tiếp tục sau khi đồng bộ UI/học thuật những phần còn thiếu; không merge các draft học thuật ngoài cổng approval.
 
-### Batch B CĐ03 — R1 candidate đã đóng gói, đang chờ phản biện
+### Batch B CĐ03 — R1 đã phản biện, targeted R2 đang chờ NotebookLM
 
-- [Draft PR #180](https://github.com/TMA2015/roadmap-toan-thcs/pull/180), packet `MATH-CORE03-R1-20260930`, frozen source lesson blob `61df5dd2a1f352c50005d40147bb229344861ed8`. Một source NotebookLM có bài nguồn nguyên bản, mapping lớp 6/7 và ứng viên **5 card + 15 micro**; prompt chấm từng 5+15 ID riêng. Câu mới RAT03MICRO_001–015, key candidate A/B/C/D = 4/4/4/3, 12 assessed-skill occurrences. Không trùng ID 120 câu RAT03V1 cũ, không có exact-text clone với 120 đề nguồn (preflight tác giả; **chưa phải phản biện độc lập**).
-- Chưa merge/deploy PR #180, chưa sinh `topic03-learning-workspace.json`, Core route, micro bank chính thức hay thay data học sinh. Người dùng upload **duy nhất** `review-packets/core03/01_UPLOAD_TO_NOTEBOOKLM_CORE03_R1.md` vào NotebookLM; copy prompt `02_COPY_TO_NOTEBOOKLM_CHAT_R1.txt` vào Chat, rồi chuyển kết quả để đối soát. Trọng tâm grade6 đổi đơn vị là kỹ năng nền/Support hay Core assessed, điều kiện mẫu số và sự khác biệt tỉ lệ thuận/nghịch.
-- Sau NotebookLM R1: reconcile correction từng ID, targeted R2 khi nguồn sửa, sau đó mới có PR triển khai CĐ03 và browser QA. **Không tự coi author preflight = academic PASS**.
+- [Draft PR #180](https://github.com/TMA2015/roadmap-toan-thcs/pull/180) vẫn là **review-only, không merge/deploy**. R1 packet `MATH-CORE03-R1-20260930` đã được NotebookLM kiểm đủ **5/5 cards + 15/15 micro** và trả `REVISIONS_REQUIRED`. R1 xác nhận 15/15 phép tính và answer index đúng, nhưng bắt buộc hạ `doi-don-vi-ti-so` khỏi Grade-6 Core assessed xuống Prerequisite/Core-Support; đồng thời đề nghị bổ sung ví dụ đổi đơn vị và đổi số liệu bốn micro trùng bài mẫu.
+- ChatGPT đã reconcile và chuẩn bị `MATH-CORE03-R2-20260930`. Source duy nhất cho R2 là `review-packets/core03/05_UPLOAD_TO_NOTEBOOKLM_CORE03_R2.md`, **Git blob `a84c2740169070d6919bc8d2f274d10fb914fa32`**; prompt là `06_COPY_TO_NOTEBOOKLM_CHAT_R2.txt`. Diff R2 có đúng 1 card + 5 item thay đổi: `rat03-core-g6-1`, `RAT03MICRO_002/003/005/011/015`; 4 card + 10 item còn lại giữ nguyên. Phân bố key vẫn 4/4/4/3.
+- `RAT03MICRO_002` ở R2 là `Core-Support / FORMATIVE_SUPPORT_ONLY`, không được cộng Grade-6 Core readiness. Toàn bộ 120 `RAT03V1` cũ, localStorage, CĐ03 runtime và menu hiện tại vẫn không thay đổi.
+- **Điểm tiếp theo:** upload đúng source R2 blob ở trên vào NotebookLM, dán prompt R2, gửi nguyên văn báo cáo về ChatGPT. Chỉ khi R2 đóng học thuật mới tạo implementation PR và QA browser/MathJax.
 
 ## Quyết định không được tự làm lệch
 
