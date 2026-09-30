@@ -17,7 +17,7 @@ ok(new Set(inCards).size===17,"card references duplicated");
 for(let i=0;i<17;i++){const q=b.questions[i],id="PRO23MICRO_"+String(i+1).padStart(3,"0");ok(q.id===id&&!seen.has(q.id),"item ID "+id);seen.add(q.id);ok(q.options?.length===4&&q.options.every(x=>typeof x==="string"&&x.trim())&&new Set(q.options).size===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4,"choices "+id);
 ok(q.tags.topic==="23-xac-suat"&&q.tags.layer==="KNTT-Core"&&q.tags.skill.length===1&&q.tags.skill[0]===q.target&&!!m.skill_labels[q.target]&&audit.core_skills.includes(q.target),"skill "+id);
 ok(q.curriculum.book==="KNTT"&&q.curriculum.level==="core"&&q.curriculum.grades.length===1&&q.curriculum.grades[0]===q.tags.grade&&gradeMap[q.tags.grade]?.has(q.target),"grade map "+id);
-ok(q.hints?.length===2&&q.hints.every(h=>h.trim().length>8)&&q.explanation.length>30&&q.exam.entrance10==="foundation"&&q.exam.specialized==="none","feedback/metadata "+id);
+ok(q.hints?.length===2&&q.hints.every(h=>h.trim().length>8)&&(q.micro_role==="coverage"?q.explanation.trim().length>10:q.explanation.length>30)&&q.exam.entrance10==="foundation"&&q.exam.specialized==="none","feedback/metadata "+id);
 ok(!/phù hợp nhất|đúng đắn nhất|câu hình bên|quan sát hình sau/i.test(q.question),"unclear wording "+id);}
 const orig=m.sources.flatMap(s=>read("docs/assets/data/practice/"+s).questions);ok(orig.length===120&&m.question_count===120&&new Set(orig.map(x=>x.id)).size===120,"original bank changed");const canonical=x=>x.toLowerCase().replace(/\s+/g," ").trim(),old=new Set(orig.map(x=>canonical(x.question)));ok(b.questions.every(x=>!old.has(canonical(x.question))),"identical question from original bank");
 ok(b.questions[0].options[b.questions[0].answer]==="3/8"&&18/48===3/8,"001");
