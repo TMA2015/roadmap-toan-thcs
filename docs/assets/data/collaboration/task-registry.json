@@ -699,10 +699,10 @@
       "id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-001",
       "title": "Review production-scale canonical evidence architecture and G1 Practice shadow canary",
       "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_INDEPENDENT_REVIEW_BEFORE_RUNTIME",
-      "status": "OWNER_AUTHORIZED_CONTROLLED_RELEASE_IN_PROGRESS",
-      "context_version": "1.0.82",
-      "review_verdict": "NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_OWNER_RELEASE_AUTHORIZED",
-      "review_notes": "Owner explicitly authorized controlled G1 production release on 2026-09-30 after durable handoff is saved. Release must first reconcile PR #217 against latest main and rerun all QA on the exact release HEAD. Scope remains exactly 27 Beta-proven Practice items /7 skills /max 16 skill-topic units using canonical-evidence-v2 shadow capture. No G2/G3, mastery/readiness, canonical remediation/ranking, migration/backfill/regrade, normal learner canonical UI or capture outside policy. After deploy, owner production QA is required before any G2 consideration."
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "context_version": "1.0.83",
+      "review_verdict": "NOTEBOOKLM_PASS_EXACT_RELEASE_QA_PASS_DEPLOY_SUCCESS_OWNER_QA_PENDING",
+      "review_notes": "G1 controlled release completed. Exact reconciled release HEAD 3473f4383df990da04404a24659732e38c5422c6 passed Roadmap 36700956876, Skill assessment 36700957023 and Branding 36700956882. PR #217 squash merge 74b38fd2361c11ebc76eee743bf505e938bc48b0; Deploy MkDocs 36701320498 SUCCESS. Production scope remains exact 27 items /7 skills /max 16 units shadow capture to canonical-v2. No normal learner UI, G2/G3, mastery/readiness, migration/backfill or canonical remediation/ranking. Owner real-device production QA required before G2."
     }
   ]
 }
