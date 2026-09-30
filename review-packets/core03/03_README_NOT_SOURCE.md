@@ -10,6 +10,6 @@ Trạng thái: source-locked author candidate, chưa có độc lập review, ch
 R1 độc lập trả `REVISIONS_REQUIRED`, 5/5 cards và 15/15 items đã được kiểm. Không dùng lại file R1 làm source hoạt động.
 
 - Lưu biên nhận: `04_NOTEBOOKLM_R1_RECEIPT.md`.
-- Upload **duy nhất** `05_UPLOAD_TO_NOTEBOOKLM_CORE03_R2.md` vào NotebookLM Sources.
+- Upload **duy nhất** `05_UPLOAD_TO_NOTEBOOKLM_CORE03_R2.md` (Git blob `a84c2740169070d6919bc8d2f274d10fb914fa32`) vào NotebookLM Sources.
 - Dán `06_COPY_TO_NOTEBOOKLM_CHAT_R2.txt` vào Chat.
 - Sau R2, gửi nguyên văn kết quả cho ChatGPT để reconcile trước implementation.
