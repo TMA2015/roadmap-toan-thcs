@@ -1,0 +1,33 @@
+Bạn đang phản biện độc lập Skill Taxonomy Phase B cho Self-Learning Math.
+
+Chỉ dùng source “01_UPLOAD_TO_NOTEBOOKLM_CODE52_R1.md”, packet MATH-SKILL-CODE52-R1-20260930, exact Git blob b77f810b4c57a0bdca5038e6722b4ac968f71a5d.
+
+Đây là code-level semantic review, READ_ONLY / PROPOSAL_ONLY. Không được suy rằng tag hiện tại = mastery counter.
+
+Hãy kiểm đủ 52/52 unique legacy codes và 55/55 topic-code occurrences. Với mỗi code:
+- semantic_kind_candidate có đúng không;
+- canonical_counter_candidate YES/NO/PENDING có hợp lý không;
+- evidence_readiness_candidate có phản ánh đúng giới hạn bằng chứng hiện có không;
+- nếu code là category/method/context nhưng vẫn nên giữ metadata thì nói rõ;
+- không gộp hai skill chỉ vì cùng item hoặc cùng tên gần giống.
+
+Bắt buộc kiểm riêng:
+1) dieu-kien-xac-dinh CĐ04/CĐ07;
+2) hieu-hai-binh-phuong CĐ05/CĐ06;
+3) binh-phuong-hoan-chinh CĐ05/CĐ06;
+=> quyết định MERGE_ONE_CONCEPT hay KEEP_SEPARATE, nhưng task demand có thể khác nhau.
+
+Kiểm 8 relationship candidates trong register.
+Kiểm riêng phan-tich-da-thuc-hoan-toan: có phải new canonical output skill candidate hợp lý cho FAC06V1_077–092 không.
+Không hạ tim-gia-tri-nguyen xuống Core nếu source không đủ.
+Không xóa chung-minh-hdt chỉ vì MCQ hiện tại yếu; phân biệt competency hợp lệ với evidence chưa đủ.
+
+Trả về:
+1. Packet ID + verdict PASS / REVISIONS_REQUIRED / INSUFFICIENT_EVIDENCE.
+2. Coverage 52/52 và 55/55, hoặc list thiếu.
+3. Revision table ONLY: code | field | current | corrected | reason. Nếu không có, ghi 0 revisions.
+4. Shared-code table cho 3 code.
+5. Relationship table 8 dòng PASS/REVISE.
+6. Quyết định phan-tich-da-thuc-hoan-toan.
+7. Final counts theo semantic_kind và canonical_counter.
+8. Xác nhận: không runtime migration, không đổi legacy tags, không merge counter, không regrade history, không đặt mastery threshold.
