@@ -1,10 +1,23 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Skill Taxonomy Phase D CĐ04–07 CLOSED PASS.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Snapshot đối chiếu với `main` `20b8afbfd6eca9a41a1512216a4538a0fc460bf4`; trạng thái GitHub live và PR/workflow mới hơn phải được tra lại khi tiếp nối.
+> **CURRENT CHECKPOINT — 30/09/2026, Canonical Evidence Beta v4 STAGED TECHNICAL-QA PASS, NOT DEPLOYED.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. `main` hiện tại `be22486bd8a7640a440d32518ae06e3db67563eb`; staging PR #203 exact tested HEAD `175b12499ed6df3155af4d83a33a7afa6d8c4043`. Trạng thái merge/deploy mới hơn phải được tra lại khi tiếp nối.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+
+## Canonical Evidence Beta v4 — academic + technical gates PASS, chưa deploy (30/09/2026)
+
+- Phase E audit [PR #202](https://github.com/TMA2015/roadmap-toan-thcs/pull/202): NotebookLM packet `MATH-SKILL-CANONICAL-EVIDENCE-PILOT-R1-20260930`, source blob `18c58eb3c11c7c8ca7e3da1091b6a87787ffa75b` → **PASS 12/12, 0 revisions**.
+- Pilot cố ý nhỏ: **3 canonical skills / 12 CĐ07 items / tối đa 7 independent evidence units**; 5 clone pairs +2 singleton. `phan-tich-tu-mau` có 8 occurrence nhưng chỉ supporting metadata.
+- Draft staging [PR #203](https://github.com/TMA2015/roadmap-toan-thcs/pull/203), exact tested HEAD `175b12499ed6df3155af4d83a33a7afa6d8c4043`. **Chưa merge, chưa deploy.**
+- Store mới riêng: `toan-thcs-canonical-evidence-v1`. Browser sentinel QA xác nhận không sửa ba store cũ: `toan-thcs-practice-v1`, `toan-thcs-assessment-v1`, `toan-thcs-assessment-v2`.
+- QA exact HEAD: Roadmap PR Quality `36677824734` **SUCCESS**; Skill assessment pilot QA `36677824732` **SUCCESS**; G Learning branding QA `36677824752` **SUCCESS**.
+- Browser QA: mobile PASS clone de-dup + negative evidence + immutable old stores; desktop/mobile zero page errors, không horizontal overflow. Artifact `11080419543`.
+- Run Roadmap đầu `36677543322` fail do test mới gọi Playwright browser chưa download; đây là lỗi test harness, không phải assertion sản phẩm. Đã đổi sang runner-installed Chromium như các browser test hiện hành; run kế tiếp PASS toàn bộ.
+- **Không mastery/readiness:** chỉ descriptive counts; không Mastered/Not mastered, mastery %, Core Readiness credit, hard gate, PENDING/NO/Extension counter, backfill/regrade hay Practice Engine interception.
+- Hồ sơ kỹ thuật: `review-packets/skill-taxonomy/phase-e-pilot/BETA_V4_TECHNICAL_QA_CHECKPOINT.md`.
+- **Bước tiếp theo:** owner quyết định có controlled release trang opt-in Beta v4 hay không. Nếu release, owner real-device QA là gate riêng sau deploy.
 
 ## Mốc mới nhất — CĐ03 và 7 gap kỹ năng đã đóng (30/09/2026)
 

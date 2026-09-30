@@ -1,5 +1,5 @@
 {
-  "version": "1.0.71",
+  "version": "1.0.72",
   "updated": "2026-09-30",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Skill Taxonomy Phase D CĐ04–07 CLOSED PASS: 492/492 source-locked questions reviewed across four full-bank overlays; 427 one-primary mappings, 65 formative-only, 74/74 clone-family proposals PASS, 0 item revisions. Next gate is a separate bounded additive runtime/evidence pilot design using Phase C compatibility; no runtime activation yet.",
+    "next_priority": "Canonical Evidence Beta v4 is academically PASS and technically staged QA-PASS at PR #203 exact HEAD 175b12499ed6df3155af4d83a33a7afa6d8c4043. Roadmap PR Quality 36677824734, Skill assessment pilot QA 36677824732 and G Learning branding QA 36677824752 all SUCCESS. PR #203 remains draft/not merged/not deployed. Next gate: owner decision on controlled release of the isolated opt-in Beta v4 page, then explicit real-device QA; no mastery/readiness integration.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -328,7 +328,26 @@
     "grade6_topic03_next": "OPEN G6-T03-SCOPE-001: grade6 B31 tỉ số/phần trăm vs grade7 B20–23 tỉ lệ thức, thuận/nghịch; current 120-bank lacks grade metadata, needs scoped next batch.",
     "topic25_followup": "CLOSED: Gemini Targeted R3 delivered 9/9 target PASS (six omitted R2 + three new deep pages) with zero critical corrections, source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536. Five of eight optional context source paths explicitly listed; figure decimal-coordinate rounding qualified. See review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md. No pending source-coverage task for CĐ25 in current review cycle.",
     "standalone_core_rollout": "CĐ02 and CĐ04–21 and CĐ23–25 have dedicated learning routes. CĐ03 has no approved card/micro; CĐ22 THPT bridge no compulsory Core. CĐ24 Core-Support and CĐ25 Entrance10. PR #178 owner device acceptance pending.",
-    "canonical_handoff": "docs/collaboration/current-handoff.md"
+    "canonical_handoff": "docs/collaboration/current-handoff.md",
+    "canonical_evidence_beta_v4": {
+      "status": "STAGED_TECHNICAL_QA_PASS_NOT_DEPLOYED",
+      "audit_pr": 202,
+      "implementation_pr": 203,
+      "tested_head": "175b12499ed6df3155af4d83a33a7afa6d8c4043",
+      "notebooklm_verdict": "PASS_12_OF_12_ZERO_REVISIONS",
+      "scope": "CĐ07; 12 items; 3 canonical skills; max 7 independent evidence units",
+      "storage_key": "toan-thcs-canonical-evidence-v1",
+      "immutable_old_stores": [
+        "toan-thcs-practice-v1",
+        "toan-thcs-assessment-v1",
+        "toan-thcs-assessment-v2"
+      ],
+      "roadmap_pr_quality_run": 36677824734,
+      "skill_assessment_qa_run": 36677824732,
+      "branding_qa_run": 36677824752,
+      "owner_device_qa": "PENDING_AFTER_RELEASE",
+      "production_release": false
+    }
   },
   "handoff_required_fields": [
     "TASK_ID",
