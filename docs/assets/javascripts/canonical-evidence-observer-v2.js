@@ -8,9 +8,11 @@
   const STORE_SCHEMA = "canonical-skill-evidence-store-v2";
   const EVENT_SCHEMA = "canonical-skill-evidence-event-v2";
   const POLICY_SCHEMA = "canonical-evidence-runtime-policy-v1";
-  const ACTIVE_STATUS = "G1_CANARY_ACTIVE";
+  const G1_ACTIVE_STATUS = "G1_CANARY_ACTIVE";
+  const G2_ACTIVE_STATUS = "G2_PROVEN_SKILLS_ACTIVE";
+  const ACTIVE_STATUSES = new Set([G1_ACTIVE_STATUS, G2_ACTIVE_STATUS]);
   const MAX_RECENT = 1000;
-  const BUILD = "canonical-evidence-g1-shadow-20260930";
+  const BUILD = "canonical-evidence-g2-proven-skills-20260930";
 
   const plainObject = (value) => value && typeof value === "object" && !Array.isArray(value);
 
@@ -163,14 +165,22 @@
         policy?.production_store?.backfill_beta_v1 !== false) {
       throw new Error("unsafe_store_policy");
     }
-    if (!Array.isArray(policy.rows) || policy.rows.length !== 27) throw new Error("invalid_g1_scope");
+    if (!Array.isArray(policy.rows) ||
+        policy.rows.length !== 101 ||
+        policy?.scope?.rows !== 101 ||
+        policy?.scope?.existing_g1_rows !== 27 ||
+        policy?.scope?.g2_delta_rows !== 74 ||
+        policy?.scope?.canonical_skills !== 7 ||
+        policy?.scope?.max_independent_units !== 23) {
+      throw new Error("invalid_g2_scope");
+    }
     const ids = new Set();
     const map = new Map();
     for (const row of policy.rows) {
       if (!row?.question_id || ids.has(row.question_id) ||
           !row.normalized_topic_key || !row.canonical_skill_id ||
           !row.evidence_class || !row.source_file || !row.source_blob ||
-          !row.phase_d_overlay_blob || row.capture_status !== ACTIVE_STATUS) {
+          !row.phase_d_overlay_blob || !ACTIVE_STATUSES.has(row.capture_status)) {
         throw new Error("invalid_policy_row");
       }
       ids.add(row.question_id);
@@ -185,7 +195,7 @@
 
   const api = {
     BUILD, STORE_KEY, BETA_V1_KEY, STORE_SCHEMA, EVENT_SCHEMA, POLICY_SCHEMA,
-    ACTIVE_STATUS, MAX_RECENT, emptyStore, normalizedStore, seenQuestionKey,
+    G1_ACTIVE_STATUS, G2_ACTIVE_STATUS, ACTIVE_STATUSES, MAX_RECENT, emptyStore, normalizedStore, seenQuestionKey,
     evidenceUnitKey, assistanceKind, classifyAttempt, makeEvent, appendEvent,
     recordAttemptToStore, validatePolicy
   };
@@ -234,7 +244,7 @@
       panel.style.padding = ".75rem";
       panel.style.border = "1px dashed currentColor";
       const summary = document.createElement("summary");
-      summary.textContent = "QA · Canonical Evidence G1";
+      summary.textContent = "QA · Canonical Evidence G2";
       const pre = document.createElement("pre");
       pre.style.whiteSpace = "pre-wrap";
       panel.append(summary, pre);
@@ -284,7 +294,7 @@
       const question = input.question;
       const row = state.rows.get(question?.id);
       if (!row) {
-        lastCapture = { captured: false, reason: "not_in_g1_policy", question_id: question?.id || null };
+        lastCapture = { captured: false, reason: "not_in_g2_policy", question_id: question?.id || null };
         refreshDebug();
         return lastCapture;
       }
