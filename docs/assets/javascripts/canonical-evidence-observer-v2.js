@@ -190,6 +190,25 @@
         legacy_skill_tags: Object.freeze([...(row.legacy_skill_tags || [])])
       }));
     }
+    const actualSkills = new Set(policy.rows.map((row) => row.canonical_skill_id));
+    const actualTopics = new Set(policy.rows.map((row) => row.normalized_topic_key));
+    const actualUnits = new Set(policy.rows.map(evidenceUnitKey));
+    const g1Count = policy.rows.filter((row) => row.capture_status === G1_ACTIVE_STATUS).length;
+    const g2Count = policy.rows.filter((row) => row.capture_status === G2_ACTIVE_STATUS).length;
+    const expectedTopics = new Set([
+      "04-bieu-thuc-dai-so",
+      "05-7-hang-dang-thuc",
+      "06-phan-tich-da-thuc",
+      "07-phan-thuc-dai-so"
+    ]);
+    if (actualSkills.size !== 7 ||
+        actualUnits.size !== 23 ||
+        g1Count !== 27 ||
+        g2Count !== 74 ||
+        actualTopics.size !== expectedTopics.size ||
+        [...actualTopics].some((topic) => !expectedTopics.has(topic))) {
+      throw new Error("invalid_g2_runtime_boundary");
+    }
     return { policy: Object.freeze(policy), rows: map };
   };
 
