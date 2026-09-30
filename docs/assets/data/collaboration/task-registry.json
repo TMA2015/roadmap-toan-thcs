@@ -699,10 +699,10 @@
       "id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-001",
       "title": "Review production-scale canonical evidence architecture and G1 Practice shadow canary",
       "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_INDEPENDENT_REVIEW_BEFORE_RUNTIME",
-      "status": "PRODUCTION_OWNER_QA_PARTIAL_CAPTURE_PENDING",
-      "context_version": "1.0.84",
-      "review_verdict": "NOTEBOOKLM_PASS_RELEASE_QA_PASS_DEPLOY_SUCCESS_OWNER_QA_PARTIAL",
-      "review_notes": "Owner production screenshots on CĐ07 confirm normal Practice works, canonical debug is opt-in, policy_ready=true, policy_error=null and store key is canonical-evidence-v2. Owner completed one 10-question session at 9/10. However no exact G1 policy item appeared: recent_events/seen_questions/independent_units remained 0 and last_capture reported not_in_g1_policy for RAT07V1_089. Do NOT mark owner QA PASS yet. Next gate is at least one production captured:true event from an exact G1 item; G2 remains unauthorized."
+      "status": "DONE",
+      "context_version": "1.0.85",
+      "review_verdict": "ACCEPTED_PRODUCTION_NOTEBOOKLM_PASS_RELEASE_QA_PASS_OWNER_QA_PASS",
+      "review_notes": "Phase G1 fully accepted. NotebookLM design review PASS 0 revisions; exact release-head QA PASS; production deploy SUCCESS; owner production QA PASS. Final screenshot confirms canonical-v2 real production capture: policy_ready=true, policy_error=null, recent_events=3, seen_questions=3, independent_units=3, last_capture captured=true for RAT07V1_055, canonical skill rut-gon-phan-thuc, independent_evidence=true, reason first_unseen_unit. G1 is closed DONE. G2/G3 remain unauthorized and require a separate design/review gate."
     }
   ]
 }
