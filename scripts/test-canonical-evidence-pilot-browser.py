@@ -1,12 +1,16 @@
 """Desktop + mobile browser QA for Beta v4 canonical evidence isolation and de-dup."""
 import json
 import pathlib
+import shutil
 from playwright.sync_api import sync_playwright
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 BASE = "http://127.0.0.1:8765"
 PREVIEWS = ROOT / "previews"
 PREVIEWS.mkdir(exist_ok=True)
+CHROME = shutil.which("google-chrome") or shutil.which("chromium")
+if not CHROME:
+    raise RuntimeError("Chromium/Chrome required for Beta v4 browser QA")
 
 config = json.loads((ROOT / "docs/assets/data/curriculum/canonical-evidence-beta-v4-config-v1.json").read_text(encoding="utf-8"))
 manifest = json.loads((ROOT / "docs/assets/data/curriculum/canonical-evidence-pilot-core07-r1.json").read_text(encoding="utf-8"))
@@ -34,7 +38,7 @@ old_readiness = '{"assessments":{"LEGACY_READY":{"attempts":[{"correct":3,"total
 old_beta3 = '{"schema":"one-skill-assessment-events-v2","events":[{"question_id":"OLD","assessed_skill":"old-skill","correct":true}]}'
 
 with sync_playwright() as pw:
-    browser = pw.chromium.launch(headless=True)
+    browser = pw.chromium.launch(executable_path=CHROME, headless=True, args=["--no-sandbox","--disable-dev-shm-usage"])
 
     context = browser.new_context(viewport={"width": 390, "height": 844})
     page = context.new_page()
