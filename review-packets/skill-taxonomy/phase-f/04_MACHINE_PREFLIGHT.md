@@ -2,6 +2,12 @@
 
 **State:** design/source consistency only; not an independent academic verdict.
 
+## Exact review artifacts
+
+- Expansion manifest blob: `5a5b339d7372068dd692b9a03dc1277758a6b6d5`.
+- NotebookLM source blob: `70d044f1de98f5b283a3e54fdecfd07fb25d82bd`.
+- Machine source reconciliation errors: `0`.
+
 ## Locked counts
 
 - 15 selected IDs / 15 unique IDs.
