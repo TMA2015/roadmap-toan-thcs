@@ -699,10 +699,10 @@
       "id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-001",
       "title": "Review production-scale canonical evidence architecture and G1 Practice shadow canary",
       "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_INDEPENDENT_REVIEW_BEFORE_RUNTIME",
-      "status": "ACADEMIC_PASS_TECHNICAL_IMPLEMENTATION_AUTHORIZED",
-      "context_version": "1.0.80",
-      "review_verdict": "NOTEBOOKLM_PASS_ZERO_REVISIONS_9_OF_9",
-      "review_notes": "NotebookLM independently reviewed Phase G productionization packet MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-R1-20260930, source blob 1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1, design blob 9302ba28e1c9bf506a290b7b05f6defee2d38e92: PASS, 0 revisions, all nine architecture questions PASS. Authorized next step is technical implementation/QA only for G1 shadow capture on exactly 27 Beta-proven items using new production canonical-v2. No deployment, G2/G3, mastery/readiness, canonical remediation/ranking, migration/backfill/regrade or PENDING/NO/Extension activation."
+      "status": "STAGED_QA_PASS_RELEASE_DECISION_PENDING",
+      "context_version": "1.0.81",
+      "review_verdict": "NOTEBOOKLM_PASS_AND_G1_TECHNICAL_QA_PASS_NOT_DEPLOYED",
+      "review_notes": "Phase G design PASS 0 revisions. G1 shadow canary staged in draft PR #217 at exact HEAD 540be8b17ffb12dd26c8dee459ff8874a57156b5. Roadmap 36698929683, Skill assessment 36698929574 and Branding 36698929696 all SUCCESS. Tests confirm exact 27-row/7-skill/16-unit policy, v2 persistent de-dup indexes, assistance and negative-evidence semantics, cross-topic unit identity, retention stress, actual CĐ04–07 Practice capture, fail-open legacy equivalence, frozen canonical-v1/assessment stores and no normal learner UI. Not merged/deployed. Explicit owner release decision required; G2/G3 remain unauthorized."
     }
   ]
 }

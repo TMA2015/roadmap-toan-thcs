@@ -1,26 +1,24 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Phase G productionization R1 NOTEBOOKLM PASS; G1 TECHNICAL IMPLEMENTATION AUTHORIZED, NOT DEPLOYED.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Audit PR #214 PASS 0 revisions; next gate is G1 shadow canary technical implementation/QA on exactly 27 proven Practice items.
+> **CURRENT CHECKPOINT — 30/09/2026, Phase G1 Practice shadow canary STAGED TECHNICAL-QA PASS, NOT DEPLOYED.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. PR #217 exact tested HEAD `540be8b17ffb12dd26c8dee459ff8874a57156b5`; all three QA workflows SUCCESS. Owner controlled-release decision pending; G2/G3 remain OFF.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Phase G — Canonical Evidence Productionization/Scale R1 PASS; G1 technical gate open (30/09/2026)
+## Phase G1 — Practice shadow canary technical QA PASS, chưa deploy (30/09/2026)
 
-- Draft audit [PR #214](https://github.com/TMA2015/roadmap-toan-thcs/pull/214) remains **audit/design-only**. NotebookLM packet `MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-R1-20260930`, source blob `1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1`, design blob `9302ba28e1c9bf506a290b7b05f6defee2d38e92` → **PASS, 0 revisions, 9/9 architecture questions PASS**.
-- Approved architecture: freeze `toan-thcs-canonical-evidence-v1` as Beta provenance; production uses new `toan-thcs-canonical-evidence-v2`, no migrate/backfill/delete v1.
-- v2 design: bounded `recent_events` plus persistent `seen_questions` and `independent_units`; event-log truncation must never erase de-dup memory.
-- Unit identity: `canonical_skill_id + normalized_topic_key + clone_family/question_id`. Skill scope is mandatory because two CĐ05 structural clone families contain multiple canonical skills.
-- Assistance rule PASS: hint/full-solution attempt is stored but non-independent; exact question becomes seen; an unseen sibling in the same clone family may later become the first independent unit if self-solved.
-- Integration rule PASS: **legacy-write-first / canonical-fail-open / no automatic retry-backfill**. Existing Practice behavior remains source of truth if canonical observer fails.
-- Rollout:
-  - **G1:** exact 27 Beta-v4/v5-proven items, 7 skills, max 16 skill/topic units, shadow capture only, no normal learner UI change.
-  - **G2:** only after G1 owner QA, expand same 7 skills to 101 items /23 units.
-  - **G3:** remaining 310 reviewed-YES items /29 skills in bounded batches.
-  - 16 PENDING +65 formative-only remain blocked.
-- **Authorization boundary:** PASS allows only G1 technical implementation/QA. No deploy, no G2/G3, no mastery/readiness, no canonical remediation/ranking, no migration/backfill/regrade.
-- **Next:** implement G1 on a separate branch with exact 27-row policy, production-v2 store/indexes, Practice observer, fail-open and retention/browser QA.
+- Phase G academic audit [PR #214](https://github.com/TMA2015/roadmap-toan-thcs/pull/214): NotebookLM **PASS, 0 revisions, 9/9 architecture questions PASS**.
+- Draft staging [PR #217](https://github.com/TMA2015/roadmap-toan-thcs/pull/217), exact tested HEAD `540be8b17ffb12dd26c8dee459ff8874a57156b5`. **Chưa merge, chưa deploy.**
+- G1 scope: **27 exact Beta-proven Practice items / 7 canonical skills / max 16 skill-topic units**, shadow capture only; no normal learner UI change.
+- Production data: new `toan-thcs-canonical-evidence-v2`; Beta `toan-thcs-canonical-evidence-v1` frozen/read-only, no migration/backfill.
+- v2 keeps bounded `recent_events` but persistent `seen_questions` + `independent_units`; retention test kept 1105 indexes after trimming events to 1000.
+- Practice integration: legacy write first; canonical observer second/fail-open. Forced observer failure produced **identical legacy Practice stats**.
+- Exact-head QA: Roadmap `36698929683` **SUCCESS**; Skill assessment `36698929574` **SUCCESS**; Branding `36698929696` **SUCCESS**.
+- Browser: actual Practice CĐ04–07 PASS; assistance/unseen-sibling transfer, negative evidence, cross-topic identity, `ID05V1_120` tag-order boundary and store isolation PASS.
+- Artifact `11089467337`, digest `sha256:bbd5da8d5f0aecece709f4e17601fe57a3b76fcbd2f6d1db41e9b36f20f382fe`.
+- First Roadmap run failed only because of Playwright test-call syntax; corrected test rerun PASS. Không waive product assertion.
+- **Gate hiện tại:** owner controlled-release decision. G2/G3, mastery/readiness, canonical remediation/ranking và broader capture vẫn OFF.
 
 ## Canonical Evidence Beta v4 — RELEASED + OWNER QA PASS (30/09/2026)
 

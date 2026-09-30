@@ -1,5 +1,5 @@
 {
-  "version": "1.0.80",
+  "version": "1.0.81",
   "updated": "2026-09-30",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Phase G productionization R1 independently reviewed PASS with 0 revisions. Audit PR #214 records NotebookLM PASS on source blob 1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1 / design blob 9302ba28e1c9bf506a290b7b05f6defee2d38e92. Authorized next gate: technical implementation/QA only for G1 shadow canary on exactly 27 Beta-proven Practice items, production canonical-v2, no learner UI change, no deploy yet.",
+    "next_priority": "Phase G1 Practice shadow canary is academically PASS and technically staged QA-PASS at PR #217 exact HEAD 540be8b17ffb12dd26c8dee459ff8874a57156b5. Roadmap 36698929683, Skill assessment 36698929574 and Branding 36698929696 all SUCCESS. Next gate: explicit owner controlled-release decision; no deployment yet and no G2/G3.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -414,7 +414,7 @@
       ]
     },
     "canonical_evidence_phase_g": {
-      "status": "ACADEMIC_PASS_TECHNICAL_IMPLEMENTATION_AUTHORIZED_NOT_DEPLOYED",
+      "status": "G1_STAGED_TECHNICAL_QA_PASS_NOT_DEPLOYED",
       "audit_pr": 214,
       "packet_id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-R1-20260930",
       "source_blob": "1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1",
@@ -424,7 +424,16 @@
       "proposed_store": "toan-thcs-canonical-evidence-v2",
       "beta_v1_policy": "freeze read-only provenance; no migration/backfill",
       "production_release": false,
-      "g2_g3_authorized": false
+      "g2_g3_authorized": false,
+      "implementation_pr": 217,
+      "tested_head": "540be8b17ffb12dd26c8dee459ff8874a57156b5",
+      "g1_scope": "27 Beta-proven Practice items; 7 skills; max 16 skill/topic units; shadow capture only",
+      "production_store": "toan-thcs-canonical-evidence-v2",
+      "roadmap_pr_quality_run": 36698929683,
+      "skill_assessment_qa_run": 36698929574,
+      "branding_qa_run": 36698929696,
+      "browser_artifact_id": 11089467337,
+      "owner_release_decision": "PENDING"
     }
   },
   "handoff_required_fields": [
