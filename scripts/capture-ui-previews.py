@@ -269,7 +269,7 @@ with sync_playwright() as p:
                 first_card = core_page.locator(".topic-core-card").first
                 check(core_page.locator(".topic-core-card").count() == expected_core_cards,
                       "correct independent Core-card count " + slug)
-                expected_gaps={"02-so-va-phep-tinh":4,"23-xac-suat":2}.get(slug,0)
+                expected_gaps=0
                 check(core_page.locator(".topic-core-card-gap").count() == expected_gaps,
                       "truthful declared-vs-assessed coverage (no invented item) " + slug)
                 before=core_page.evaluate("() => localStorage.getItem('toan-thcs-practice-v1')")
@@ -285,7 +285,7 @@ with sync_playwright() as p:
                 shot(core_page, slug + "-lecture-modal-desktop.png")
                 dlg.locator(".topic-core-to-practice").click()
                 check(dlg.get_attribute("data-mode") == "practice"
-                      and dlg.locator(".topic-micro-pager button").count() == {"09-he-phuong-trinh":4,"13-goc-va-duong-thang":6,"14-tam-giac":4,"19-duong-tron":4}.get(slug,3),
+                      and dlg.locator(".topic-micro-pager button").count() == {"02-so-va-phep-tinh":4,"09-he-phuong-trinh":4,"13-goc-va-duong-thang":6,"14-tam-giac":4,"19-duong-tron":4}.get(slug,3),
                       "lecture opens the actual card question count " + slug)
                 dlg.locator(".topic-core-dialog__close").click()
                 check(not dlg.is_visible() and core_page.evaluate(
