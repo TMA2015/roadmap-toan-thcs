@@ -1,0 +1,42 @@
+G2 R1 — COMPACT COMPLETION CHECK
+
+Use the SAME source already loaded:
+01_UPLOAD_TO_NOTEBOOKLM_G2_PROVEN_SKILLS_R1.md
+
+Packet:
+MATH-CANONICAL-EVIDENCE-G2-PROVEN-SKILLS-R1-20260930
+
+Your previous answer was truncated/corrupted in transmission, so do NOT repeat explanations, questions, source citations, headings, markdown tables, or prose.
+
+Re-read the source and return ONLY the following machine-checkable format:
+
+OVERALL|PASS
+COVERAGE|74|74|0|0|0
+
+Then exactly 74 lines, one for every G2 delta item, in the source order:
+question_id|PASS
+or
+question_id|REVISION_REQUIRED
+or
+question_id|INSUFFICIENT_EVIDENCE
+
+Then exactly 8 architecture lines:
+ARCH_1|PASS
+ARCH_2|PASS
+ARCH_3|PASS
+ARCH_4|PASS
+ARCH_5|PASS
+ARCH_6|PASS
+ARCH_7|PASS
+ARCH_8|PASS
+
+Then exactly one final line:
+AUTHORIZATION|CLEARED_FOR_SEPARATE_G2_TECHNICAL_IMPLEMENTATION_QA
+
+Rules:
+- Every one of the 74 source delta IDs must appear exactly once.
+- No omitted item may be treated as PASS.
+- If ANY item is REVISION_REQUIRED or INSUFFICIENT_EVIDENCE, set OVERALL|REVISIONS_REQUIRED and set AUTHORIZATION|NOT_CLEARED.
+- If ANY architecture check fails, set OVERALL|REVISIONS_REQUIRED and set AUTHORIZATION|NOT_CLEARED.
+- Do not authorize production deployment, G3, mastery, Readiness, remediation/ranking, migration/backfill/regrade, PENDING/formative-only capture, or broader CĐ08–25 capture.
+- Do not add any text before or after these lines.
