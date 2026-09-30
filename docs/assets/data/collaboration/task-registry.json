@@ -699,10 +699,10 @@
       "id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-001",
       "title": "Review production-scale canonical evidence architecture and G1 Practice shadow canary",
       "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_INDEPENDENT_REVIEW_BEFORE_RUNTIME",
-      "status": "STAGED_QA_PASS_RELEASE_DECISION_PENDING",
-      "context_version": "1.0.81",
-      "review_verdict": "NOTEBOOKLM_PASS_AND_G1_TECHNICAL_QA_PASS_NOT_DEPLOYED",
-      "review_notes": "Phase G design PASS 0 revisions. G1 shadow canary staged in draft PR #217 at exact HEAD 540be8b17ffb12dd26c8dee459ff8874a57156b5. Roadmap 36698929683, Skill assessment 36698929574 and Branding 36698929696 all SUCCESS. Tests confirm exact 27-row/7-skill/16-unit policy, v2 persistent de-dup indexes, assistance and negative-evidence semantics, cross-topic unit identity, retention stress, actual CĐ04–07 Practice capture, fail-open legacy equivalence, frozen canonical-v1/assessment stores and no normal learner UI. Not merged/deployed. Explicit owner release decision required; G2/G3 remain unauthorized."
+      "status": "OWNER_AUTHORIZED_CONTROLLED_RELEASE_IN_PROGRESS",
+      "context_version": "1.0.82",
+      "review_verdict": "NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_OWNER_RELEASE_AUTHORIZED",
+      "review_notes": "Owner explicitly authorized controlled G1 production release on 2026-09-30 after durable handoff is saved. Release must first reconcile PR #217 against latest main and rerun all QA on the exact release HEAD. Scope remains exactly 27 Beta-proven Practice items /7 skills /max 16 skill-topic units using canonical-evidence-v2 shadow capture. No G2/G3, mastery/readiness, canonical remediation/ranking, migration/backfill/regrade, normal learner canonical UI or capture outside policy. After deploy, owner production QA is required before any G2 consideration."
     }
   ]
 }
