@@ -6,7 +6,7 @@
     "id": "02-so-va-phep-tinh",
     "title": "Số và phép tính · Core lớp 6"
   },
-  "question_count": 15,
+  "question_count": 20,
   "questions": [
     {
       "id": "NUM02MICRO_001",
@@ -606,6 +606,236 @@
       "exam": {
         "entrance10": "none",
         "specialized": "none"
+      }
+    },
+    {
+      "id": "NUM02MICRO_016",
+      "card_id": "num02-g6-core-1",
+      "micro_role": "coverage",
+      "question": "Viết tích 5·5·5·5 dưới dạng lũy thừa.",
+      "options": [
+        "5³",
+        "4⁵",
+        "5⁴",
+        "20"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "luy-thua"
+        ],
+        "type": "luy-thua",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tích có bốn thừa số 5 nên bằng 5⁴.",
+      "hints": [
+        "Cơ số là thừa số được lặp lại.",
+        "Số mũ bằng số lần thừa số 5 xuất hiện."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "packet": "MATH-CORE02-23-GAP-R1-20260930",
+        "source_blob": "9695c998aade401f4c4129aa25ac6a8392a41b2b",
+        "verdict": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_R1"
+      }
+    },
+    {
+      "id": "NUM02MICRO_017",
+      "card_id": "num02-g6-core-2",
+      "micro_role": "coverage",
+      "question": "Phân tích 90 ra thừa số nguyên tố được kết quả nào?",
+      "options": [
+        "2·3²·5",
+        "2²·3·5",
+        "2·3·5²",
+        "9·10"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "phan-tich-thua-so-nguyen-to"
+        ],
+        "type": "phan-tich-thua-so-nguyen-to",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "90=9·10=3²·2·5=2·3²·5.",
+      "hints": [
+        "Chia 90 lần lượt cho các số nguyên tố nhỏ.",
+        "90=9·10, rồi tiếp tục phân tích 9 và 10 ra số nguyên tố."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "packet": "MATH-CORE02-23-GAP-R1-20260930",
+        "source_blob": "9695c998aade401f4c4129aa25ac6a8392a41b2b",
+        "verdict": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_R1"
+      }
+    },
+    {
+      "id": "NUM02MICRO_018",
+      "card_id": "num02-g6-core-2",
+      "micro_role": "coverage",
+      "question": "BCNN(12,18) bằng bao nhiêu?",
+      "options": [
+        "6",
+        "18",
+        "36",
+        "216"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "bcnn"
+        ],
+        "type": "bcnn",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "BCNN(12,18)=2²·3²=36.",
+      "hints": [
+        "Phân tích 12 và 18 ra thừa số nguyên tố rồi lấy mỗi thừa số với số mũ lớn nhất.",
+        "12=2²·3 và 18=2·3²."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "packet": "MATH-CORE02-23-GAP-R1-20260930",
+        "source_blob": "9695c998aade401f4c4129aa25ac6a8392a41b2b",
+        "verdict": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_R1"
+      }
+    },
+    {
+      "id": "NUM02MICRO_019",
+      "card_id": "num02-g6-core-3",
+      "micro_role": "coverage",
+      "question": "Trên trục số, điểm biểu diễn −9 cách 0 bao nhiêu đơn vị?",
+      "options": [
+        "−9",
+        "0",
+        "9",
+        "18"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "gia-tri-tuyet-doi"
+        ],
+        "type": "gia-tri-tuyet-doi",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "|−9|=9, nên điểm −9 cách 0 đúng 9 đơn vị.",
+      "hints": [
+        "Khoảng cách trên trục số luôn không âm.",
+        "Khoảng cách từ số a đến 0 chính là |a|."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "packet": "MATH-CORE02-23-GAP-R1-20260930",
+        "source_blob": "9695c998aade401f4c4129aa25ac6a8392a41b2b",
+        "verdict": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_R1"
+      }
+    },
+    {
+      "id": "NUM02MICRO_020",
+      "card_id": "num02-g6-core-4",
+      "micro_role": "coverage",
+      "question": "So sánh 5/6 và 7/9. Khẳng định nào đúng?",
+      "options": [
+        "5/6 < 7/9",
+        "5/6 > 7/9",
+        "5/6 = 7/9",
+        "Không thể so sánh"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "quy-dong-so-sanh-phan-so"
+        ],
+        "type": "quy-dong-so-sanh-phan-so",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Vì 15/18>14/18 nên 5/6>7/9.",
+      "hints": [
+        "Quy đồng hai phân số về mẫu chung 18.",
+        "5/6=15/18 và 7/9=14/18."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "packet": "MATH-CORE02-23-GAP-R1-20260930",
+        "source_blob": "9695c998aade401f4c4129aa25ac6a8392a41b2b",
+        "verdict": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_R1"
       }
     }
   ]
