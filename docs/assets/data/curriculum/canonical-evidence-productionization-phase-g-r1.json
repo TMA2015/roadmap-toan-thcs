@@ -211,14 +211,15 @@
   "full_reviewed_yes_pool": {
     "items": 411,
     "skills": 36,
-    "independent_units_max": 87,
+    "independent_units_max": 91,
     "evidence_class_counts": {
       "MCQ_RECOGNITION_ONLY": 58,
       "MCQ_FINAL_ANSWER_ONLY": 39,
       "MCQ_FINAL_OUTPUT_ONLY": 303,
       "MCQ_METHOD_SELECTION_ONLY": 11
     },
-    "learner_counter_interpretation": "DESCRIPTIVE_EVIDENCE_ONLY"
+    "learner_counter_interpretation": "DESCRIPTIVE_EVIDENCE_ONLY",
+    "unit_identity_note": "Unit count is skill-scoped. Two CĐ05 structural clone families contain multiple canonical skills, so structural clone-family count alone (55 groups +32 singletons) understates canonical independent units; canonical_skill_id + topic + unit yields 91."
   },
   "runtime_policy_row_contract": {
     "required": [
