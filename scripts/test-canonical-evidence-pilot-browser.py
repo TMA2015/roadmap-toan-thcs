@@ -61,6 +61,10 @@ with sync_playwright() as pw:
     assert page.locator(".skill-pilot-option").count() == 4
     assert page.locator(".skill-pilot-nav-back").is_disabled()
     assert page.locator(".skill-pilot-nav-next").is_disabled()
+    first_learner_text = page.locator(".skill-assessment-pilot").inner_text()
+    assert "Kỹ năng đang theo dõi" in first_learner_text
+    assert "metadata" not in first_learner_text.lower()
+    assert "RAT07-DOMAIN-LINEAR-009-016" not in first_learner_text
 
     for index, item in enumerate(items):
         qid = item["question_id"]
@@ -101,7 +105,6 @@ with sync_playwright() as pw:
     learner_text = page.locator(".skill-assessment-pilot").inner_text()
     assert "metadata" not in learner_text.lower()
     assert "RAT07-DOMAIN-LINEAR-009-016" not in learner_text
-    assert "Kỹ năng đang theo dõi" in learner_text
 
     stats = page.evaluate(
         "window.SelfLearningCanonicalEvidenceV4.descriptiveSummary(JSON.parse(localStorage.getItem('toan-thcs-canonical-evidence-v1')))"
