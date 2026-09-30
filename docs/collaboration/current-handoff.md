@@ -1,23 +1,21 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Canonical Evidence Beta v4 RELEASED; OWNER DEVICE QA PENDING.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Production merge `5873253c3f3dad1d9066a61e408ff0bc760b5a74`; Deploy MkDocs run `36681408115` SUCCESS. Trạng thái GitHub live mới hơn phải được tra lại khi tiếp nối.
+> **CURRENT CHECKPOINT — 30/09/2026, Canonical Evidence Beta v4 RELEASED + OWNER PRODUCTION QA PASS.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Production merge `5873253c3f3dad1d9066a61e408ff0bc760b5a74`; release checkpoint `79cdc8d187f5ddb1dfca97409abfa39a8dde2f8d`; owner QA đã PASS trên production. Trạng thái GitHub live mới hơn phải được tra lại khi tiếp nối.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Canonical Evidence Beta v4 — RELEASED, owner device QA pending (30/09/2026)
+## Canonical Evidence Beta v4 — RELEASED + OWNER QA PASS (30/09/2026)
 
-- Phase E audit [PR #202](https://github.com/TMA2015/roadmap-toan-thcs/pull/202): NotebookLM packet `MATH-SKILL-CANONICAL-EVIDENCE-PILOT-R1-20260930`, source blob `18c58eb3c11c7c8ca7e3da1091b6a87787ffa75b` → **PASS 12/12, 0 revisions**.
-- Controlled release [PR #203](https://github.com/TMA2015/roadmap-toan-thcs/pull/203), exact release HEAD `83bcd263f36c45f007bcaf67f19c19f272541f77` after reconcile with current main; merge-base current main, behind 0.
-- Release-head QA: Roadmap PR Quality `36681119202` **SUCCESS**; Skill assessment pilot QA `36681119234` **SUCCESS**; G Learning branding QA `36681119312` **SUCCESS**.
-- Squash merge vào `main`: `5873253c3f3dad1d9066a61e408ff0bc760b5a74`.
-- Deploy MkDocs run `36681408115`: **SUCCESS**.
-- Production route: `/huong-dan/thu-nghiem-bang-chung-ky-nang-v4/`.
-- Scope không đổi: **3 canonical skills / 12 CĐ07 items / tối đa 7 independent evidence units**; 5 clone pairs +2 singleton; `phan-tich-tu-mau` chỉ supporting metadata.
-- Store mới riêng: `toan-thcs-canonical-evidence-v1`; không migrate/backfill/regrade/dual-write ba store cũ `toan-thcs-practice-v1`, `toan-thcs-assessment-v1`, `toan-thcs-assessment-v2`.
-- Learner-facing chỉ descriptive counts; không Mastered/Not mastered, mastery %, Core Readiness credit, hard gate, PENDING/NO/Extension counter hay Practice Engine interception.
-- **Gate còn mở:** owner real-device QA trên production Beta v4. Không suy QA tự động thành owner acceptance.
+- Academic audit [PR #202](https://github.com/TMA2015/roadmap-toan-thcs/pull/202): NotebookLM **PASS 12/12, 0 revisions**.
+- Controlled release [PR #203](https://github.com/TMA2015/roadmap-toan-thcs/pull/203), exact release HEAD `83bcd263f36c45f007bcaf67f19c19f272541f77`; release-head Roadmap/Skill/Branding QA đều SUCCESS.
+- Production merge `5873253c3f3dad1d9066a61e408ff0bc760b5a74`; Deploy MkDocs `36681408115` SUCCESS. Post-release checkpoint PR #205 merge `79cdc8d187f5ddb1dfca97409abfa39a8dde2f8d`.
+- Owner production QA: **PASS** từ 6 ảnh của một session hoàn chỉnh 12 câu.
+- Ảnh xác nhận: submit → `Đã nộp · Chỉ xem`; primary/supporting hiển thị đúng; clone-repeat không tăng evidence unit; singleton tạo unit mới; tổng 12 attempts → đúng **7 independent evidence units**; có review/retry/history; không có Mastered/Not mastered, mastery %, Readiness credit hay hard gate.
+- Store mới riêng `toan-thcs-canonical-evidence-v1`; automated browser sentinel trước release xác nhận ba store cũ không bị ghi lại.
+- Non-blocking UX candidate: từ `metadata` và `đơn vị bằng chứng độc lập` hơi kỹ thuật với học sinh; có thể polish copy sau nhưng không phải lỗi release.
+- **Pilot task MATH-SKILL-PILOT-001 CLOSED DONE.** Bất kỳ mở rộng sang nhiều skill/câu hơn, Practice Engine, mastery hoặc Readiness đều là gate mới, không tự động suy từ PASS này.
 
 ## Mốc mới nhất — CĐ03 và 7 gap kỹ năng đã đóng (30/09/2026)
 
