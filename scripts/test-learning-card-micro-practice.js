@@ -13,20 +13,14 @@ const rejectControlChars = (value, path = "root") => {
   if (typeof value === "string") {
     for (const ch of value) {
       const code = ch.charCodeAt(0);
-      if (code < 32 && ![9, 10, 13].includes(code)) {
-        errors.push(`${path}: unexpected control character U+${code.toString(16).padStart(4, "0")}`);
-      }
+      if (code < 32 && ![9, 10, 13].includes(code)) errors.push(`${path}: unexpected control character U+${code.toString(16).padStart(4, "0")}`);
     }
     return;
   }
   if (Array.isArray(value)) return value.forEach((item, i) => rejectControlChars(item, `${path}[${i}]`));
-  if (value && typeof value === "object") {
-    for (const [key, item] of Object.entries(value)) rejectControlChars(item, `${path}.${key}`);
-  }
+  if (value && typeof value === "object") for (const [key, item] of Object.entries(value)) rejectControlChars(item, `${path}.${key}`);
 };
-
 rejectControlChars(bank, "bank");
-
 
 for (const q of bank.questions) {
   if (ids.has(q.id)) errors.push(`duplicate id: ${q.id}`);
@@ -47,7 +41,11 @@ for (const card of workspace.cards || []) {
   if (qs.slice(3).some(q => q.micro_role !== "coverage")) errors.push(`${card.id}: extra questions must be marked coverage`);
   for (const q of qs) {
     if (q.card_id !== card.id) errors.push(`${q.id}: question/card ID mismatch`);
-    if (!(card.skills || []).includes(q.tags.skill[0])) errors.push(`${q.id}: assessed skill not declared by card`);
+    const skill = q.tags.skill[0];
+    const core = (card.skills || []).includes(skill);
+    const support = (card.supporting_skills || []).includes(skill);
+    if (!core && !support) errors.push(`${q.id}: assessed skill not declared by card`);
+    if (support && (q.tags.layer === "KNTT-Core" || q.gates_core !== false)) errors.push(`${q.id}: supporting skill must be non-Core and gates_core=false`);
   }
 }
 
