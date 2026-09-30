@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Phase G1 CONTROLLED PRODUCTION RELEASE LIVE; OWNER PRODUCTION QA PENDING.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. PR #217 release merged `74b38fd2361c11ebc76eee743bf505e938bc48b0`; Deploy MkDocs `36701320498` SUCCESS. G1 shadow capture is live for exact 27 approved Practice items only. G2/G3 remain OFF until owner QA PASS.
+> **CURRENT CHECKPOINT — 30/09/2026, Phase G1 LIVE; OWNER PRODUCTION QA PARTIAL PASS, ACTUAL CANARY CAPTURE PENDING.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Owner screenshots confirm CĐ07 Practice normal behavior and `canonicalDebug=1` production policy load (`policy_ready=true`, no policy error), but the completed 10-question session did not encounter any of the exact 27 G1 items, so canonical-v2 remains at 0 events. G2/G3 remain OFF.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -23,6 +23,17 @@
 - **Production release:** PR #217 exact release HEAD `3473f4383df990da04404a24659732e38c5422c6` passed Roadmap `36700956876`, Skill `36700957023`, Branding `36700956882`; squash merge `74b38fd2361c11ebc76eee743bf505e938bc48b0`; Deploy MkDocs `36701320498` **SUCCESS**.
 - **Current gate:** owner real-device/browser production QA of v2 shadow capture. G2 remains blocked until explicit owner QA PASS.
 - G2/G3, mastery/readiness, canonical remediation/ranking, migration/backfill/regrade and broader capture remain **OFF**.
+
+## Phase G1 — owner production QA PARTIAL PASS; capture pending (30/09/2026)
+
+- Owner tested live CĐ07 Practice with `?canonicalDebug=1` in a desktop browser.
+- Normal Practice remained healthy; one 10-question session completed at **9/10**.
+- QA debug surface appeared only with the explicit debug query.
+- Production policy load PASS: `policy_ready: true`, `policy_error: null`.
+- Store routing PASS: `store_key = toan-thcs-canonical-evidence-v2`; frozen Beta v1 remains separately named.
+- The sampled session **did not hit a G1 canary item**. Debug showed `recent_events=0`, `seen_questions=0`, `independent_units=0`, with `last_capture = { captured:false, reason:"not_in_g1_policy", question_id:"RAT07V1_089" }`.
+- Therefore owner QA is **not yet full PASS**. Required final evidence: at least one real production Practice answer on an exact G1 item with `last_capture.captured=true` and v2 counters increasing.
+- G2/G3 remain blocked until that capture is observed and owner QA is explicitly closed PASS.
 
 ## Canonical Evidence Beta v4 — RELEASED + OWNER QA PASS (30/09/2026)
 

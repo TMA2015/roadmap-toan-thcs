@@ -1,5 +1,5 @@
 {
-  "version": "1.0.83",
+  "version": "1.0.84",
   "updated": "2026-09-30",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Phase G1 controlled production release is LIVE. Merge `74b38fd2361c11ebc76eee743bf505e938bc48b0`; Deploy MkDocs `36701320498` SUCCESS. Next gate is owner production QA of shadow capture on real browser/device using QA debug surface; G2 remains blocked until explicit owner QA PASS.",
+    "next_priority": "Phase G1 production owner QA is PARTIAL PASS: owner screenshots confirm normal Practice behavior, debug surface opt-in only, and production policy loaded (`policy_ready=true`, `policy_error=null`) on CĐ07. The completed 10-question session did not encounter a G1 canary item; debug remained recent_events=0 / seen_questions=0 / independent_units=0 and last_capture=not_in_g1_policy for RAT07V1_089. Next gate: obtain at least one real production `captured:true` event from an exact G1 policy item before owner QA PASS. G2 remains blocked.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -414,7 +414,7 @@
       ]
     },
     "canonical_evidence_phase_g": {
-      "status": "G1_PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "status": "G1_PRODUCTION_RELEASED_OWNER_QA_PARTIAL_CAPTURE_PENDING",
       "audit_pr": 214,
       "packet_id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-R1-20260930",
       "source_blob": "1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1",
@@ -438,11 +438,27 @@
       "owner_release_authorized_at": "2026-09-30",
       "release_precondition": "reconcile with latest main and exact-head Roadmap + Skill assessment + Branding QA SUCCESS before merge",
       "release_scope": "exact 27 Beta-proven Practice items; 7 canonical skills; max 16 skill/topic units; shadow capture only",
-      "owner_production_qa": "PENDING",
+      "owner_production_qa": "PARTIAL_PASS_POLICY_LOAD_AND_NORMAL_PRACTICE_CONFIRMED_CAPTURE_NOT_YET_OBSERVED",
       "exact_release_head": "3473f4383df990da04404a24659732e38c5422c6",
       "production_merge": "74b38fd2361c11ebc76eee743bf505e938bc48b0",
       "deploy_run": 36701320498,
-      "deploy_conclusion": "SUCCESS"
+      "deploy_conclusion": "SUCCESS",
+      "owner_qa_evidence": {
+        "device": "desktop browser",
+        "topic": "07-phan-thuc-dai-so",
+        "normal_practice_session": "completed 10 questions, 9/10 correct",
+        "debug_policy_ready": true,
+        "debug_policy_error": null,
+        "debug_store_key": "toan-thcs-canonical-evidence-v2",
+        "debug_recent_events": 0,
+        "debug_seen_questions": 0,
+        "debug_independent_units": 0,
+        "last_capture": {
+          "captured": false,
+          "reason": "not_in_g1_policy",
+          "question_id": "RAT07V1_089"
+        }
+      }
     }
   },
   "handoff_required_fields": [
