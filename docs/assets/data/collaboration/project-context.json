@@ -1,5 +1,5 @@
 {
-  "version": "1.0.86",
+  "version": "1.0.87",
   "updated": "2026-09-30",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Phase G2 proven-skill expansion has been controlled-released to production after NotebookLM 74/74 + 8/8 PASS and exact-head technical QA PASS. Production merge 3c235e4e23ed6adf33fbba8ff7f01737b709fac7; Deploy MkDocs run 36713507743 SUCCESS. G2 owner production QA is now the only open acceptance gate. G3, mastery/Readiness, canonical remediation/ranking, migration/backfill/regrade, PENDING/formative-only capture and broader CĐ08–25 canonical capture remain unauthorized.",
+    "next_priority": "Phase G2 is fully accepted: RELEASED + OWNER PRODUCTION QA PASS, task closed DONE. Live owner screenshots confirm G2 build/policy/store and correct allowlist exclusion behavior; exact-head automated browser QA directly covered G2 delta capture. Next work should not expand canonical evidence automatically. G3/mastery/Readiness/canonical remediation/ranking/migration/backfill/regrade/broader capture remain separate gates. A separate learner-help disclosure/collapse UX follow-up was observed during G2 owner QA.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -414,7 +414,7 @@
       ]
     },
     "canonical_evidence_phase_g": {
-      "status": "G2_PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "status": "G2_PRODUCTION_RELEASED_OWNER_QA_PASS",
       "audit_pr": 214,
       "packet_id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-R1-20260930",
       "source_blob": "1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1",
@@ -476,9 +476,35 @@
       "g2_production_merge": "3c235e4e23ed6adf33fbba8ff7f01737b709fac7",
       "g2_deploy_run": 36713507743,
       "g2_deploy_conclusion": "SUCCESS",
-      "g2_owner_production_qa": "PENDING",
+      "g2_owner_production_qa": "PASS",
       "g2_release_date": "2026-09-30",
-      "mastery_readiness_remediation": "OFF"
+      "mastery_readiness_remediation": "OFF",
+      "g2_complete": true,
+      "g2_owner_qa_date": "2026-09-30",
+      "g2_owner_qa_evidence": {
+        "device": "desktop browser",
+        "build": "canonical-evidence-g2-proven-skills-20260930",
+        "policy_ready": true,
+        "policy_error": null,
+        "store_key": "toan-thcs-canonical-evidence-v2",
+        "observed_recent_events": 5,
+        "observed_seen_questions": 5,
+        "observed_independent_units": 5,
+        "positive_capture": {
+          "question_id": "RAT07V1_115",
+          "scope": "G1_EXISTING_ACTIVE",
+          "canonical_skill_id": "tinh-gia-tri-phan-thuc",
+          "independent_evidence": true,
+          "independent_reason": "first_unseen_unit"
+        },
+        "negative_boundary": {
+          "question_id": "RAT07V1_114",
+          "expected_scope": "OUTSIDE_G2_POLICY",
+          "captured": false,
+          "reason": "not_in_g2_policy"
+        },
+        "delta_positive_capture_basis": "exact-head automated real-Practice browser QA on release HEAD 56892b0d5b8a9791e99e48e4f9022412097e764b"
+      }
     }
   },
   "handoff_required_fields": [

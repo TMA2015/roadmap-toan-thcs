@@ -708,10 +708,19 @@
       "id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G2-001",
       "title": "Expand canonical Practice shadow capture across the seven proven G1 skills",
       "routing": "CHATGPT_SOURCE_LOCK+NOTEBOOKLM_INDEPENDENT_REVIEW+EXACT_HEAD_TECHNICAL_QA+OWNER_PRODUCTION_QA",
+      "status": "DONE",
+      "context_version": "1.0.87",
+      "review_verdict": "ACCEPTED_PRODUCTION_NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_OWNER_QA_PASS",
+      "review_notes": "G2 fully accepted. NotebookLM PASS 74/74 delta + 8/8 architecture; exact release-head Roadmap QA PASS with direct representative G2-delta browser capture; production merge/deploy SUCCESS; owner live screenshots confirm G2 build canonical-evidence-g2-proven-skills-20260930, policy_ready=true, policy_error=null, v2 store active, five observed events/seen/independent units, RAT07V1_115 positive capture, and correct RAT07V1_114 not_in_g2_policy exclusion. Owner QA did not randomly surface a positive delta row, but direct delta capture was already proven on the exact release HEAD and the owner verified the identical G2 build/policy live. G2 CLOSED DONE. Separate help-disclosure collapse UX issue is outside this evidence acceptance."
+    },
+    {
+      "id": "MATH-HELP-DISCLOSURE-TOGGLE-001",
+      "title": "Make learner help and solution disclosures collapsible after expansion",
+      "routing": "CHATGPT_UX_DESIGN+REGRESSION_QA",
       "status": "OPEN",
-      "context_version": "1.0.86",
-      "review_verdict": "PRODUCTION_RELEASED_NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_OWNER_QA_PENDING",
-      "review_notes": "G2 academic gate PASS: 74/74 delta items and 8/8 architecture checks. Exact tested implementation HEAD 56892b0d5b8a9791e99e48e4f9022412097e764b; Roadmap PR Quality run 36708260947 SUCCESS; browser artifact 11093235811 digest sha256:e1a971357be742e5f3da39c93fea0326e199152902c96fc169c8506b960eb916. PR #224 controlled release merged as 3c235e4e23ed6adf33fbba8ff7f01737b709fac7; Deploy MkDocs run 36713507743 SUCCESS. Scope is 101 = 27 G1 + 74 G2, same 7 proven skills, max 23 topic-scoped units, CĐ04–07, shadow-only. Owner production QA is pending. G3/mastery/Readiness/remediation/ranking/migration/backfill/regrade/broader capture remain OFF."
+      "context_version": "1.0.87",
+      "review_verdict": "OWNER_OBSERVED_UX_FOLLOWUP",
+      "review_notes": "Observed during G2 owner QA. Practice 'Hướng dẫn/lời giải' opens but cannot close with the same control. Similar Core help disclosures should follow the useful existing toggle pattern: lecture/solution buttons open on first click and close on repeat; hint progression may reveal hint 1 then hint 2, but after all available hints are visible the same control should offer a simple collapse action. Must not create phantom attempts, change assistance/evidence semantics, or alter readiness/history."
     }
   ]
 }
