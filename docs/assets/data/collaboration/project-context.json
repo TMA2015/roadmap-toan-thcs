@@ -1,5 +1,5 @@
 {
-  "version": "1.0.74",
+  "version": "1.0.75",
   "updated": "2026-09-30",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Canonical Evidence Beta v4 RELEASED and OWNER PRODUCTION QA PASS. The bounded Phase E pilot is accepted: 12 CĐ07 items, 3 canonical skills, max 7 independent evidence units, isolated store, descriptive counts only. Next gate should be a separate decision: learner-facing wording polish and/or a reviewed expansion batch; no automatic mastery/readiness or Practice Engine integration.",
+    "next_priority": "Phase F canonical evidence multi-topic expansion R1 is READY FOR NOTEBOOKLM REVIEW in draft PR #208. Scope: 15 new source-locked items across CĐ04–07, 5 canonical skills in batch, max 9 new independent evidence units, mixed evidence classes and prospective cross-topic aggregation. Beta v4 owner QA remains PASS; learner-facing copy polish PR #207 merged as 197c990903d2be6f7df2d49483a24b4c75038c92 and Deploy MkDocs run 36685589573 SUCCESS. No Phase F runtime activation.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -362,7 +362,29 @@
         "12 attempts summarize to max 7 independent units",
         "descriptive summary avoids mastery/readiness claims"
       ],
-      "ux_polish_candidate": "Replace or progressively disclose technical learner-facing terms such as metadata and independent evidence unit without changing semantics."
+      "ux_polish_candidate": "Replace or progressively disclose technical learner-facing terms such as metadata and independent evidence unit without changing semantics.",
+      "student_copy_polish": {
+        "status": "RELEASED_QA_PASS",
+        "pr": 207,
+        "merge_commit": "197c990903d2be6f7df2d49483a24b4c75038c92",
+        "deploy_run": 36685589573,
+        "deploy_status": "SUCCESS",
+        "semantics_changed": false,
+        "changes": [
+          "student-friendly evidence wording",
+          "raw clone-family ID hidden from learner card",
+          "technical details moved to collapsed parent/QA note"
+        ]
+      }
+    },
+    "canonical_evidence_phase_f": {
+      "status": "DESIGN_READY_AWAITING_NOTEBOOKLM",
+      "review_pr": 208,
+      "packet_id": "MATH-SKILL-PHASE-F-EXPANSION-R1-20260930",
+      "notebooklm_source_blob": "70d044f1de98f5b283a3e54fdecfd07fb25d82bd",
+      "manifest_blob": "5a5b339d7372068dd692b9a03dc1277758a6b6d5",
+      "scope": "15 new items; CĐ04–07; 5 canonical skills; max 9 new independent evidence units",
+      "runtime_enabled": false
     }
   },
   "handoff_required_fields": [
