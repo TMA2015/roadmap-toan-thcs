@@ -681,10 +681,10 @@
       "id": "MATH-SKILL-PILOT-001",
       "title": "Design bounded additive canonical-skill evidence pilot after Phase D closure",
       "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_REVIEW_BEFORE_RUNTIME",
-      "status": "READY",
-      "context_version": "1.0.71",
-      "review_verdict": "NOT_STARTED_RUNTIME_DISABLED",
-      "review_notes": "Use Phase C canonical registry/compatibility contract plus Phase D CĐ04–07 reviewed overlays. Design only first: select a small reviewed skill subset, versioned additive evidence store/path, clone-family de-dup, supporting-skill no-double-credit, PENDING/NO nodes excluded, rollback and legacy-history preservation. No production/runtime activation until separate review, schema/regression/browser/device QA and owner release decision."
+      "status": "STAGED_QA_PASS_RELEASE_DECISION_PENDING",
+      "context_version": "1.0.72",
+      "review_verdict": "NOTEBOOKLM_PASS_12_OF_12_AND_TECHNICAL_QA_PASS_NOT_DEPLOYED",
+      "review_notes": "Phase E design PASS: 12/12, 0 revisions, 3 skills, max 7 independent evidence units. Beta v4 implementation staged in draft PR #203 at exact HEAD 175b12499ed6df3155af4d83a33a7afa6d8c4043. Roadmap PR Quality run 36677824734, Skill assessment pilot QA 36677824732 and G Learning branding QA 36677824752 all SUCCESS. New isolated store toan-thcs-canonical-evidence-v1; three old stores sentinel-tested unchanged. PR #203 not merged/deployed. Owner controlled-release decision and subsequent real-device QA remain pending."
     }
   ]
 }
