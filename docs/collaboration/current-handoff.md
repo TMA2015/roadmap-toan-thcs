@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Canonical Evidence Beta v4 RELEASED + OWNER PRODUCTION QA PASS.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Production merge `5873253c3f3dad1d9066a61e408ff0bc760b5a74`; release checkpoint `79cdc8d187f5ddb1dfca97409abfa39a8dde2f8d`; owner QA đã PASS trên production. Trạng thái GitHub live mới hơn phải được tra lại khi tiếp nối.
+> **CURRENT CHECKPOINT — 30/09/2026, Beta v4 OWNER QA PASS + student-copy polish RELEASED; Phase F R1 AWAITING NOTEBOOKLM.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Beta v4 production owner QA PASS; copy polish merge `197c990903d2be6f7df2d49483a24b4c75038c92`, deploy `36685589573` SUCCESS. Phase F draft PR #208 là design-only, chưa runtime.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -16,6 +16,17 @@
 - Store mới riêng `toan-thcs-canonical-evidence-v1`; automated browser sentinel trước release xác nhận ba store cũ không bị ghi lại.
 - Non-blocking UX candidate: từ `metadata` và `đơn vị bằng chứng độc lập` hơi kỹ thuật với học sinh; có thể polish copy sau nhưng không phải lỗi release.
 - **Pilot task MATH-SKILL-PILOT-001 CLOSED DONE.** Bất kỳ mở rộng sang nhiều skill/câu hơn, Practice Engine, mastery hoặc Readiness đều là gate mới, không tự động suy từ PASS này.
+
+## Phase F canonical evidence — R1 ready for NotebookLM (30/09/2026)
+
+- Beta v4 bounded pilot đã **RELEASED + OWNER QA PASS**; task `MATH-SKILL-PILOT-001` đóng DONE.
+- Copy/UX polish [PR #207](https://github.com/TMA2015/roadmap-toan-thcs/pull/207) đã QA PASS, merge `197c990903d2be6f7df2d49483a24b4c75038c92`, Deploy MkDocs `36685589573` SUCCESS. Chỉ đổi wording/UI: bỏ `metadata` và raw clone-family ID khỏi learner card, không đổi evidence/storage/taxonomy semantics.
+- Phase F draft audit [PR #208](https://github.com/TMA2015/roadmap-toan-thcs/pull/208): **15 new items / CĐ04–07 / 5 canonical skills / max 9 independent evidence units**, 6 clone groups +3 singleton.
+- Mục tiêu Phase F: kiểm prospective cross-topic canonical identity, mixed evidence classes, legacy-tag boundary và append-only reuse của `toan-thcs-canonical-evidence-v1`.
+- Hai case chính: `dieu-kien-xac-dinh` nối prospective CĐ04 với canonical CĐ07 đã có; `hieu-hai-binh-phuong` dùng chung CĐ05+CĐ06 và có final-output / recognition / method-selection evidence.
+- Packet NotebookLM: `MATH-SKILL-PHASE-F-EXPANSION-R1-20260930`; source blob `70d044f1de98f5b283a3e54fdecfd07fb25d82bd`; manifest blob `5a5b339d7372068dd692b9a03dc1277758a6b6d5`.
+- Machine preflight: 15/15 source match, 0 errors; runtime/readiness OFF.
+- **Gate hiện tại:** chờ NotebookLM PASS/REVISIONS_REQUIRED. Không viết Beta v5 runtime trước gate này.
 
 ## Mốc mới nhất — CĐ03 và 7 gap kỹ năng đã đóng (30/09/2026)
 
