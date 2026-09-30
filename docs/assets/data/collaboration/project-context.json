@@ -1,5 +1,5 @@
 {
-  "version": "1.0.73",
+  "version": "1.0.74",
   "updated": "2026-09-30",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Canonical Evidence Beta v4 RELEASED on production via PR #203 merge 5873253c3f3dad1d9066a61e408ff0bc760b5a74; Deploy MkDocs run 36681408115 SUCCESS. Release-head QA was Roadmap PR Quality 36681119202, Skill assessment pilot QA 36681119234 and G Learning branding QA 36681119312, all SUCCESS. Next gate: owner real-device QA on production Beta v4; no mastery/readiness integration.",
+    "next_priority": "Canonical Evidence Beta v4 RELEASED and OWNER PRODUCTION QA PASS. The bounded Phase E pilot is accepted: 12 CĐ07 items, 3 canonical skills, max 7 independent evidence units, isolated store, descriptive counts only. Next gate should be a separate decision: learner-facing wording polish and/or a reviewed expansion batch; no automatic mastery/readiness or Practice Engine integration.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -330,7 +330,7 @@
     "standalone_core_rollout": "CĐ02 and CĐ04–21 and CĐ23–25 have dedicated learning routes. CĐ03 has no approved card/micro; CĐ22 THPT bridge no compulsory Core. CĐ24 Core-Support and CĐ25 Entrance10. PR #178 owner device acceptance pending.",
     "canonical_handoff": "docs/collaboration/current-handoff.md",
     "canonical_evidence_beta_v4": {
-      "status": "PRODUCTION_RELEASED_OWNER_DEVICE_QA_PENDING",
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PASS",
       "audit_pr": 202,
       "implementation_pr": 203,
       "tested_head": "175b12499ed6df3155af4d83a33a7afa6d8c4043",
@@ -345,13 +345,24 @@
       "roadmap_pr_quality_run": 36681119202,
       "skill_assessment_qa_run": 36681119234,
       "branding_qa_run": 36681119312,
-      "owner_device_qa": "PENDING",
+      "owner_device_qa": "PASS",
       "production_release": true,
       "release_head": "83bcd263f36c45f007bcaf67f19c19f272541f77",
       "merge_commit": "5873253c3f3dad1d9066a61e408ff0bc760b5a74",
       "deploy_run": 36681408115,
       "deploy_status": "SUCCESS",
-      "production_url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/thu-nghiem-bang-chung-ky-nang-v4/"
+      "production_url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/thu-nghiem-bang-chung-ky-nang-v4/",
+      "owner_qa_date": "2026-09-30",
+      "owner_qa_evidence": "six production screenshots from a completed 12-item session",
+      "owner_qa_observed": [
+        "submitted questions locked read-only with navigation",
+        "first unseen evidence unit behavior visible",
+        "clone-family repeat does not add independent unit",
+        "supporting skill remains metadata-only",
+        "12 attempts summarize to max 7 independent units",
+        "descriptive summary avoids mastery/readiness claims"
+      ],
+      "ux_polish_candidate": "Replace or progressively disclose technical learner-facing terms such as metadata and independent evidence unit without changing semantics."
     }
   },
   "handoff_required_fields": [
