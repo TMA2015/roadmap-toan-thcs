@@ -20,7 +20,7 @@ The other four cards and ten other micro items are intended to remain text-ident
 ## Required academic scope and unresolved assumptions
 
 - Distinguish Grade 6 ratio/percentage from Grade 7 proportions, direct and inverse quantities; no assumption that all 120 legacy questions are grade-specific Core.
-- Grade 6 mapping lists `ti-so`, `ti-so-phan-tram`, `bai-toan-phan-tram`. Candidate `doi-don-vi-ti-so` is a **prerequisite/supporting demand** whose tier needs independent confirmation. It must not silently gain a Grade-6 Core mastery flag merely because card 1 uses it.
+- Grade 6 mapping lists `ti-so`, `ti-so-phan-tram`, `bai-toan-phan-tram`. R1 confirmed `doi-don-vi-ti-so` is **Prerequisite/Core-Support**, not a standalone Grade-6 Core assessed skill; R2 must verify that the corrected candidate preserves this boundary.
 - Grade 7 mapping includes proportion, equal ratios, direct and inverse relations. Real-world movement/productivity, map ratios and broad modeling remain separate contextual/Support tracks unless validated as explicit grade-level Core requirements.
 - Check denominator conditions in proportional identities and equal-ratio summation; `y=kx` includes `x=0`, but `y/x` is undefined there; inverse `xy=a` requires `a≠0` and `x≠0`. Decreasing behavior alone does not prove inverse proportion.
 - Every new MCQ only supports **recognition/formative evidence**, not an independently written proof or full-model mastery. Reviewer should flag cloned source prompts or weak distractors and demand source-specific mathematical corrections. Do not infer exam frequency from a self-authored bank.
@@ -171,7 +171,7 @@ The other four cards and ten other micro items are intended to remain text-ident
 
 ```
 
-## Five proposed cards / teaching copies (UNREVIEWED)
+## Five corrected card / teaching-copy candidates (TARGETED R2)
 
 ```json
 [
@@ -307,7 +307,7 @@ The other four cards and ten other micro items are intended to remain text-ident
 ]
 ```
 
-## Fifteen candidate formative questions, correct-index distribution A/B/C/D = 4/4/4/3 (UNREVIEWED)
+## Fifteen formative-question candidates, correct-index distribution A/B/C/D = 4/4/4/3 (TARGETED R2)
 
 ```json
 [
