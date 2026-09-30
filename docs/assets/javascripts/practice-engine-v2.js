@@ -310,6 +310,7 @@
       this.score = 0;
       this.answered = false;
       this.hintLevel = 0;
+      this.hintsCollapsed = false;
       this.fullSolutionViewed = false;
       this.hintButton = null;
       this.geminiPending = false;
@@ -482,6 +483,7 @@
       const question = this.currentQuestion();
       this.answered = false;
       this.hintLevel = 0;
+      this.hintsCollapsed = false;
       this.fullSolutionViewed = false;
       this.hintButton = null;
       this.progressEl.textContent = `Câu ${this.index + 1}/${this.session.length} · Đúng ${this.score}`;
@@ -506,11 +508,13 @@
       });
 
       const tutorBtn = createButton("🤖 Chọn cách được giúp", "practice-btn-secondary");
-      tutorBtn.addEventListener("click", () => this.openTutorMenu(question));
+      tutorBtn.setAttribute("aria-expanded", "false");
+      tutorBtn.addEventListener("click", () => this.toggleTutorMenu(question, tutorBtn));
       this.actionsEl.appendChild(tutorBtn);
 
       if (Array.isArray(question.hints) && question.hints.length) {
         const hintBtn = createButton("💡 Xem gợi ý", "practice-btn-secondary");
+        hintBtn.setAttribute("aria-expanded", "false");
         hintBtn.addEventListener("click", () => this.showNextHint(question, hintBtn));
         this.actionsEl.appendChild(hintBtn);
         this.hintButton = hintBtn;
@@ -519,6 +523,20 @@
       typeset(this.cardEl);
     }
 
+
+    toggleTutorMenu(question, button) {
+      if (this.currentQuestion()?.id !== question?.id) return;
+      const panel = this.tutorEl;
+      const openedByThisButton = !panel.hidden && (!button || button.getAttribute("aria-expanded") === "true");
+      if (openedByThisButton) {
+        panel.hidden = true;
+        panel.innerHTML = "";
+        if (button) button.setAttribute("aria-expanded", "false");
+        return;
+      }
+      if (button) button.setAttribute("aria-expanded", "true");
+      this.openTutorMenu(question);
+    }
 
     openTutorMenu(question) {
       if (this.currentQuestion()?.id !== question?.id) return;
@@ -808,10 +826,23 @@
     }
 
     showNextHint(question, button) {
-      if (this.answered || !Array.isArray(question.hints) || this.hintLevel >= question.hints.length) return;
+      if (this.answered || !Array.isArray(question.hints) || !question.hints.length) return;
+
+      if (this.hintLevel >= question.hints.length) {
+        this.hintsCollapsed = !this.hintsCollapsed;
+        this.hintsEl.hidden = this.hintsCollapsed;
+        button.setAttribute("aria-expanded", String(!this.hintsCollapsed));
+        button.textContent = this.hintsCollapsed
+          ? `💡 Xem lại gợi ý (${this.hintLevel}/${question.hints.length})`
+          : "▴ Thu gọn gợi ý";
+        if (!this.hintsCollapsed) typeset(this.hintsEl);
+        return;
+      }
 
       this.hintLevel += 1;
+      this.hintsCollapsed = false;
       this.hintsEl.hidden = false;
+      button.setAttribute("aria-expanded", "true");
 
       const hint = document.createElement("div");
       hint.className = "practice-hint";
@@ -823,8 +854,7 @@
       this.hintsEl.appendChild(hint);
 
       if (this.hintLevel >= question.hints.length) {
-        button.textContent = "Đã xem hết gợi ý";
-        button.disabled = true;
+        button.textContent = "▴ Thu gọn gợi ý";
       } else {
         button.textContent = `💡 Gợi ý tiếp (${this.hintLevel + 1}/${question.hints.length})`;
       }
@@ -863,7 +893,8 @@
       }
       this.actionsEl.innerHTML = "";
       const reviewBtn = createButton("📘 Xem hướng dẫn / lời giải", "practice-btn-secondary");
-      reviewBtn.addEventListener("click", () => this.openTutorMenu(question));
+      reviewBtn.setAttribute("aria-expanded", "false");
+      reviewBtn.addEventListener("click", () => this.toggleTutorMenu(question, reviewBtn));
       this.actionsEl.appendChild(reviewBtn);
 
       if (!correct && this.index < this.session.length - 1) {

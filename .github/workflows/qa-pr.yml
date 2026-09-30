@@ -135,6 +135,7 @@ jobs:
           python scripts/test-canonical-evidence-pilot-browser.py
           python scripts/test-canonical-evidence-pilot-v2-browser.py
           python scripts/test-canonical-evidence-g1-browser.py
+          python scripts/test-help-disclosure-toggle-browser.py
       - name: Upload visual preview screenshots
         uses: actions/upload-artifact@v4
         with:
