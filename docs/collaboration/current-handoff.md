@@ -1,10 +1,26 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Phase G2 RELEASED + OWNER PRODUCTION QA PASS; G2 CLOSED DONE.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Live owner QA confirms the G2 build/policy/store are active, five canonical-v2 events are present in the observed session, `RAT07V1_115` captures correctly, and out-of-policy `RAT07V1_114` correctly returns `not_in_g2_policy`. Combined with exact-release-head delta browser QA, this closes G2. G3, mastery/Readiness, canonical remediation/ranking, migration/backfill/regrade and broader capture remain OFF.
+> **CURRENT CHECKPOINT — 30/09/2026, Phase G2 CLOSED DONE; learner-help disclosure UX patch RELEASED, OWNER SPOT-QA PENDING.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. PR #227 deploys disclosure-only UX: Practice help opens/closes/reopens with the same button; Core hints reveal sequentially then collapse/reopen while `hintsUsed` remains unchanged. Exact-head CI/browser PASS and Pages deploy SUCCESS. G3, mastery/Readiness, canonical remediation/ranking, migration/backfill/regrade and broader capture remain OFF.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+
+## Learner-help disclosure toggle — RELEASED, OWNER SPOT-QA PENDING (30/09/2026)
+
+- Task: `MATH-HELP-DISCLOSURE-TOGGLE-001`.
+- Owner-approved scope is **UI disclosure only**: collapsing does not erase viewed hints, full-solution state, assistance classification, attempts, readiness/history or canonical evidence.
+- Implementation PR #227, exact tested HEAD `e55667c5a0db5b034e832feeef1d95334d63aa01`.
+- Roadmap PR Quality run `36719189942`: **SUCCESS**.
+- New desktop/mobile browser regression confirms:
+  - Practice help opens → closes → reopens with the same button;
+  - Core hint 1 → hint 2 → **Thu gọn gợi ý** → **Xem lại gợi ý (2/2)**;
+  - collapsing/reopening creates no phantom attempt;
+  - after a real answer, viewed hints remain recorded (`hints_used >= 2`, `hinted_attempts = 1`);
+  - legacy sentinel data remains unchanged.
+- PR #227 production merge: `fb571ec78cfaf56f82d7dd81b719481dc4296e2b`.
+- Deploy MkDocs run `36719709094`: **SUCCESS**.
+- Current gate: owner spot-QA on production; task remains OPEN until that confirmation.
 
 ## Phase G2 — RELEASED + OWNER PRODUCTION QA PASS; G2 CLOSED DONE (30/09/2026)
 

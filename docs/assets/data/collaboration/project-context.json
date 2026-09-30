@@ -1,5 +1,5 @@
 {
-  "version": "1.0.87",
+  "version": "1.0.88",
   "updated": "2026-09-30",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Phase G2 is fully accepted: RELEASED + OWNER PRODUCTION QA PASS, task closed DONE. Live owner screenshots confirm G2 build/policy/store and correct allowlist exclusion behavior; exact-head automated browser QA directly covered G2 delta capture. Next work should not expand canonical evidence automatically. G3/mastery/Readiness/canonical remediation/ranking/migration/backfill/regrade/broader capture remain separate gates. A separate learner-help disclosure/collapse UX follow-up was observed during G2 owner QA.",
+    "next_priority": "Phase G2 remains fully accepted and CLOSED DONE. Owner-approved learner-help disclosure UX patch is now deployed: Practice help can open/close/reopen with the same button; Core hints reveal sequentially, then collapse/reopen without reducing hintsUsed or changing assistance/evidence semantics. PR #227 exact tested HEAD e55667c5a0db5b034e832feeef1d95334d63aa01; Roadmap PR Quality 36719189942 SUCCESS; production merge fb571ec78cfaf56f82d7dd81b719481dc4296e2b; Deploy MkDocs 36719709094 SUCCESS. Current small gate is owner spot-QA of disclosure behavior. G3/mastery/Readiness/canonical remediation/ranking/migration/backfill/regrade/broader capture remain separate and OFF.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -505,6 +505,24 @@
         },
         "delta_positive_capture_basis": "exact-head automated real-Practice browser QA on release HEAD 56892b0d5b8a9791e99e48e4f9022412097e764b"
       }
+    },
+    "help_disclosure_toggle": {
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "task_id": "MATH-HELP-DISCLOSURE-TOGGLE-001",
+      "implementation_pr": 227,
+      "exact_tested_head": "e55667c5a0db5b034e832feeef1d95334d63aa01",
+      "roadmap_pr_quality_run": 36719189942,
+      "production_merge": "fb571ec78cfaf56f82d7dd81b719481dc4296e2b",
+      "deploy_run": 36719709094,
+      "deploy_conclusion": "SUCCESS",
+      "semantics_changed": false,
+      "verified_qa": [
+        "Practice help opens/closes/reopens with one button on desktop/mobile",
+        "Core hints reveal sequentially then collapse/reopen",
+        "collapsed hints remain counted as viewed",
+        "no phantom attempts from disclosure-only actions",
+        "legacy learner data preserved"
+      ]
     }
   },
   "handoff_required_fields": [
