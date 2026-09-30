@@ -17,7 +17,7 @@ const manifestPath = "docs/assets/data/curriculum/canonical-evidence-pilot-core0
 const manifest = json(manifestPath);
 
 assert.equal(app.KEY, "toan-thcs-canonical-evidence-v1");
-assert.equal(app.BUILD, "canonical-evidence-beta-v4-20260930");
+assert.equal(app.BUILD, "canonical-evidence-beta-v4-copy1-20260930");
 assert.equal(config.storage_key, app.KEY);
 assert.equal(gitBlobSha(read(manifestPath)), config.reviewed_manifest_blob);
 assert.deepEqual(config.immutable_existing_storage_keys, [

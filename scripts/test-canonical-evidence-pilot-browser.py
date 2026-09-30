@@ -55,18 +55,22 @@ with sync_playwright() as pw:
         [old_practice, old_readiness, old_beta3],
     )
     page.goto(BASE + "/huong-dan/thu-nghiem-bang-chung-ky-nang-v4/", wait_until="domcontentloaded")
-    page.locator("[data-canonical-evidence-build='canonical-evidence-beta-v4-20260930']").wait_for(timeout=30000)
+    page.locator("[data-canonical-evidence-build='canonical-evidence-beta-v4-copy1-20260930']").wait_for(timeout=30000)
     assert "Beta v4" in page.locator(".skill-pilot-intro").inner_text()
     assert page.evaluate("typeof window.SelfLearningCanonicalEvidenceV4") == "object"
     assert page.locator(".skill-pilot-option").count() == 4
     assert page.locator(".skill-pilot-nav-back").is_disabled()
     assert page.locator(".skill-pilot-nav-next").is_disabled()
+    first_learner_text = page.locator(".skill-assessment-pilot").inner_text()
+    assert "Kỹ năng đang theo dõi" in first_learner_text
+    assert "metadata" not in first_learner_text.lower()
+    assert "RAT07-DOMAIN-LINEAR-009-016" not in first_learner_text
 
     for index, item in enumerate(items):
         qid = item["question_id"]
         assert qid in page.locator(".skill-pilot-meta").inner_text()
         if item["supporting_skills"]:
-            assert "không tạo bằng chứng riêng" in page.locator(".skill-pilot-secondary").all_inner_texts()[0]
+            assert "không được tính thành một kỹ năng riêng" in page.locator(".skill-pilot-secondary").all_inner_texts()[0]
         picked = (item["answer_index"] + 1) % 4 if qid == "RAT07V1_009" else item["answer_index"]
         page.locator(f'.skill-pilot-option[data-original-index="{picked}"]').click()
         page.locator(".skill-pilot-feedback").wait_for()
@@ -90,14 +94,17 @@ with sync_playwright() as pw:
         assert page.evaluate("localStorage.getItem('toan-thcs-assessment-v2')") == old_beta3
         page.locator(".skill-pilot-nav-next").click()
 
-    assert page.locator(".skill-pilot-heading").inner_text() == "Tổng kết bằng chứng lượt đầu"
+    assert page.locator(".skill-pilot-heading").inner_text() == "Tổng kết lượt đầu"
     summary_text = page.locator(".skill-pilot-summary-lead").inner_text()
     assert "đúng 11/12" in summary_text
-    assert "đơn vị bằng chứng độc lập mới: 7" in summary_text
+    assert "có 7 mẫu bài được kiểm tra độc lập" in summary_text
     assert "không phải kết luận thành thạo" in summary_text
     assert page.locator(".skill-pilot-review-item").count() == 1
     assert "Mastered" not in page.locator(".skill-assessment-pilot").inner_text()
     assert "Mastery %" not in page.locator(".skill-assessment-pilot").inner_text()
+    learner_text = page.locator(".skill-assessment-pilot").inner_text()
+    assert "metadata" not in learner_text.lower()
+    assert "RAT07-DOMAIN-LINEAR-009-016" not in learner_text
 
     stats = page.evaluate(
         "window.SelfLearningCanonicalEvidenceV4.descriptiveSummary(JSON.parse(localStorage.getItem('toan-thcs-canonical-evidence-v1')))"
@@ -111,7 +118,7 @@ with sync_playwright() as pw:
 
     before = stats
     page.get_by_role("button", name="Luyện lại 1 câu vừa sai").click()
-    assert "không tạo bằng chứng độc lập mới" in page.locator(".skill-pilot-intro").inner_text()
+    assert "không tính thêm lần kiểm tra độc lập" in page.locator(".skill-pilot-intro").inner_text()
     item = items[0]
     page.locator(f'.skill-pilot-option[data-original-index="{item["answer_index"]}"]').click()
     retry_event = page.evaluate("JSON.parse(localStorage.getItem('toan-thcs-canonical-evidence-v1')).events.at(-1)")
@@ -137,7 +144,7 @@ with sync_playwright() as pw:
     desktop_errors = []
     page2.on("pageerror", lambda err: desktop_errors.append(str(err)))
     page2.goto(BASE + "/huong-dan/thu-nghiem-bang-chung-ky-nang-v4/", wait_until="domcontentloaded")
-    page2.locator("[data-canonical-evidence-build='canonical-evidence-beta-v4-20260930']").wait_for(timeout=30000)
+    page2.locator("[data-canonical-evidence-build='canonical-evidence-beta-v4-copy1-20260930']").wait_for(timeout=30000)
     assert page2.locator(".skill-pilot-option").count() == 4
     assert page2.evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth + 2")
     page2.screenshot(path=str(PREVIEWS / "canonical-evidence-beta-v4-desktop.png"), full_page=True)

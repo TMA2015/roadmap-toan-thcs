@@ -2,7 +2,7 @@
   "use strict";
 
   const KEY = "toan-thcs-canonical-evidence-v1";
-  const BUILD = "canonical-evidence-beta-v4-20260930";
+  const BUILD = "canonical-evidence-beta-v4-copy1-20260930";
   const MAX_EVENTS = 500;
   const STORE_SCHEMA = "canonical-skill-evidence-store-v1";
   const EVENT_SCHEMA = "canonical-skill-evidence-event-v1";
@@ -316,8 +316,8 @@
     render() {
       this.root.replaceChildren();
       const intro = this.mode === "initial"
-        ? "Beta v4 · 12 câu CĐ07 để thử cách ghi bằng chứng kỹ năng. Không kết luận mức độ thành thạo."
-        : "Luyện lại sau khi đã xem phản hồi; các lượt này không tạo bằng chứng độc lập mới.";
+        ? "Beta v4 · 12 câu CĐ07 để thử cách theo dõi quá trình học theo kỹ năng. Kết quả dùng để theo dõi, không kết luận thành thạo."
+        : "Luyện lại sau khi đã xem phản hồi; các lượt này giúp ôn tập nhưng không tính thêm lần kiểm tra độc lập.";
       this.root.append(textEl("p", intro, "skill-pilot-intro"));
       if (!this.storageAvailable) {
         this.root.append(textEl("p",
@@ -357,15 +357,15 @@
 
     evidenceCopy(assessment) {
       if (assessment.independent_evidence) {
-        return "Đơn vị bằng chứng mới: lượt đầu không trợ giúp. Kết quả chỉ được lưu như bằng chứng mô tả.";
+        return "Lần kiểm tra độc lập đầu tiên cho mẫu bài này. Kết quả được lưu để theo dõi quá trình học, chưa dùng để kết luận đã thành thạo.";
       }
       if (assessment.independent_reason === "clone_family_repeat") {
-        return "Câu mới nhưng cùng mẫu cấu trúc đã gặp: lưu lượt làm, không tạo thêm đơn vị bằng chứng độc lập.";
+        return "Câu này rất giống một câu đã làm trước đó. Kết quả vẫn được lưu để ôn tập, nhưng không tính thêm một lần kiểm tra độc lập.";
       }
       if (assessment.independent_reason === "repeat_question") {
-        return "Câu này đã từng xuất hiện: lưu lượt ôn, không tạo thêm đơn vị bằng chứng độc lập.";
+        return "Câu này đã được làm trước đó. Kết quả được lưu như một lượt ôn tập, không tính thêm một lần kiểm tra độc lập.";
       }
-      return "Đã xem phản hồi trước đó: lượt luyện lại không tạo thêm đơn vị bằng chứng độc lập.";
+      return "Đã xem phản hồi trước đó. Lượt luyện lại được lưu để ôn tập, không tính thêm một lần kiểm tra độc lập.";
     }
 
     renderQuestion() {
@@ -385,17 +385,17 @@
         "📘 Câu ngân hàng · CĐ07 · " + q.id + (record ? " · Đã nộp · Chỉ xem" : ""),
         "skill-pilot-meta"));
       this.card.append(textEl("h3",
-        "Kỹ năng đang ghi bằng chứng: " + this.label(q.canonical_skill_id),
+        "Kỹ năng đang theo dõi: " + this.label(q.canonical_skill_id),
         "skill-pilot-heading"));
       if (q.supporting_skills.length) {
         this.card.append(textEl("p",
           "Kiến thức hỗ trợ: " + q.supporting_skills.map((id) => this.label(id)).join(", ") +
-          " — chỉ là metadata, không tạo bằng chứng riêng.",
+          " — giúp giải bài này nhưng không được tính thành một kỹ năng riêng.",
           "skill-pilot-secondary"));
       }
       if (q.clone_family) {
         this.card.append(textEl("p",
-          "Nhóm cấu trúc tương tự: " + q.clone_family + " — tối đa một đơn vị bằng chứng độc lập trong nhóm.",
+          "Mẫu bài tương tự đã được gom cùng nhóm — hệ thống chỉ tính tối đa một lần kiểm tra độc lập cho các câu rất giống nhau.",
           "skill-pilot-secondary"));
       }
 
@@ -453,12 +453,12 @@
       }
       this.progress.textContent = "Hoàn thành: " + correct + "/" + this.session.length;
       this.card.append(textEl("h3",
-        this.mode === "initial" ? "Tổng kết bằng chứng lượt đầu" : "Tổng kết lượt luyện lại",
+        this.mode === "initial" ? "Tổng kết lượt đầu" : "Tổng kết lượt luyện lại",
         "skill-pilot-heading"));
       this.card.append(textEl("p",
         "Lượt này: đúng " + correct + "/" + this.session.length +
-        " · đơn vị bằng chứng độc lập mới: " + newIndependent +
-        ". Đây là số liệu mô tả, không phải kết luận thành thạo.",
+        " · có " + newIndependent + " mẫu bài được kiểm tra độc lập." +
+        " Đây là thông tin theo dõi, không phải kết luận thành thạo.",
         "skill-pilot-summary-lead"));
 
       if (wrong.length) {
@@ -485,7 +485,7 @@
       history.className = "skill-pilot-history";
       history.append(textEl("summary", "Lịch sử Beta v4 (" + this.state.events.length + " lượt)"));
       history.append(textEl("p",
-        "Chỉ hiển thị số liệu mô tả từ kho Beta v4 riêng. Không gộp lịch sử Practice, Readiness hoặc Beta v3.",
+        "Lịch sử này chỉ dùng để theo dõi Beta v4. Không gộp với lịch sử luyện tập thường, Core Readiness hoặc Beta v3.",
         "skill-pilot-secondary"));
       const summary = descriptiveSummary(this.state);
       for (const skill of Object.keys(summary).sort((a, b) => this.label(a).localeCompare(this.label(b), "vi"))) {
@@ -494,7 +494,7 @@
           this.label(skill) + ": " +
           row.attempts + " lượt · " +
           row.distinct_questions + " câu khác nhau · " +
-          row.independent_units + " đơn vị tự làm lần đầu (" +
+          row.independent_units + " mẫu bài đã kiểm tra lần đầu (" +
           row.independent_correct + " đúng, " + row.independent_incorrect + " sai)",
           "skill-pilot-result"));
       }
@@ -502,7 +502,7 @@
 
       this.card.append(textEl("p",
         this.storageAvailable
-          ? "Đã lưu riêng vào Beta v4. Ba kho dữ liệu cũ không bị ghi lại."
+          ? "Đã lưu riêng cho Beta v4. Dữ liệu luyện tập và kiểm tra cũ vẫn giữ nguyên."
           : "Không lưu được dữ liệu; chỉ có kết quả trong phiên này.",
         "skill-pilot-secondary"));
 
