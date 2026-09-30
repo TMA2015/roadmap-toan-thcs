@@ -460,7 +460,7 @@ const showMicroLearning=(panel,card,q,showAnswer=false,submitted=false)=>{
 
 const mountMicro=(host,card,questions,graph)=>{
  host.replaceChildren();host.className="topic-micro-panel";
- const records=questions.map(()=>({selected:null,hintsUsed:0,fullSolutionViewed:false,signal:null}));
+ const records=questions.map(()=>({selected:null,hintsUsed:0,hintsCollapsed:false,fullSolutionViewed:false,signal:null}));
  let index=0;
  const make=(text,cls="",action)=>{
   const b=document.createElement("button");b.type="button";b.className="practice-btn "+cls;b.textContent=text;
@@ -515,21 +515,30 @@ const mountMicro=(host,card,questions,graph)=>{
    }
    opts.appendChild(b);
   });
-  if(st.hintsUsed){
+  if(st.hintsUsed&&!st.hintsCollapsed){
    const hints=document.createElement("div");hints.className="topic-micro-hints";
    (q.hints||[]).slice(0,st.hintsUsed).forEach((value,i)=>{
     const hint=document.createElement("div");hint.className="practice-hint";hint.textContent="Gợi ý "+(i+1)+": "+value;hints.appendChild(hint);
    });tools.appendChild(hints);
   }
-  const hint=make("💡 Gợi ý","topic-micro-hint",()=>{if(st.hintsUsed<(q.hints||[]).length){st.hintsUsed++;render()}});
-  if(st.hintsUsed>=(q.hints||[]).length)hint.disabled=true;
+  const hintCount=(q.hints||[]).length;
+  const hintLabel=!hintCount?"💡 Gợi ý":
+   st.hintsUsed<hintCount?(st.hintsUsed?("💡 Gợi ý tiếp ("+(st.hintsUsed+1)+"/"+hintCount+")"):"💡 Gợi ý"):
+   st.hintsCollapsed?("💡 Xem lại gợi ý ("+st.hintsUsed+"/"+hintCount+")"):"▴ Thu gọn gợi ý";
+  const hint=make(hintLabel,"topic-micro-hint",()=>{
+   if(!hintCount)return;
+   if(st.hintsUsed<hintCount){st.hintsUsed++;st.hintsCollapsed=false;render();return}
+   st.hintsCollapsed=!st.hintsCollapsed;render();
+  });
+  hint.setAttribute("aria-expanded",String(st.hintsUsed>0&&!st.hintsCollapsed));
+  if(!hintCount)hint.disabled=true;
   const teach=make("🎓 Giảng lại / Xem ví dụ mẫu","topic-micro-teach",()=>toggle("teach",teach,st.selected!==null));teach.setAttribute("aria-expanded","false");
   const reveal=make("📖 Xem lời giải câu này","topic-micro-reveal",()=>{
    if(!tutor.hidden&&tutor.dataset.mode==="answer"){tutor.hidden=true;tutor.dataset.mode="";reveal.setAttribute("aria-expanded","false");return}
    clearExpanded();tutor.replaceChildren();tutor.hidden=false;tutor.dataset.mode="answer";reveal.setAttribute("aria-expanded","true");
    if(st.selected!==null||st.fullSolutionViewed){showMicroLearning(tutor,card,q,true,st.selected!==null);return}
    const notice=document.createElement("p");notice.className="practice-help-confirm";notice.textContent="Nếu mở đáp án trước khi trả lời, lần làm này được ghi là có trợ giúp.";
-   const confirm=make("Tôi muốn xem lời giải ngay","practice-btn-primary",()=>{st.fullSolutionViewed=true;st.hintsUsed=Math.max(1,st.hintsUsed);showMicroLearning(tutor,card,q,true,false)});
+   const confirm=make("Tôi muốn xem lời giải ngay","practice-btn-primary",()=>{st.fullSolutionViewed=true;st.hintsUsed=Math.max(1,st.hintsUsed);st.hintsCollapsed=false;showMicroLearning(tutor,card,q,true,false)});
    tutor.append(notice,confirm);
   });reveal.setAttribute("aria-expanded","false");
   tools.append(hint,teach,reveal);
