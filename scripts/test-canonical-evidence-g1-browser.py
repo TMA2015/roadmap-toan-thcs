@@ -1,4 +1,4 @@
-"""Browser QA for Phase G1 Practice shadow canonical capture."""
+"""Browser QA for G1 regression plus Phase G2 proven-skill Practice shadow expansion."""
 import json
 import pathlib
 import shutil
@@ -11,7 +11,7 @@ PREVIEWS = ROOT / "previews"
 PREVIEWS.mkdir(exist_ok=True)
 CHROME = shutil.which("google-chrome") or shutil.which("chromium")
 if not CHROME:
-    raise RuntimeError("Chromium/Chrome required for G1 browser QA")
+    raise RuntimeError("Chromium/Chrome required for G2 browser QA")
 
 TOPICS = {
     "04-bieu-thuc-dai-so": {
@@ -35,11 +35,19 @@ TOPICS = {
 TARGETS = {
     "ALG04V2_013": ("04-bieu-thuc-dai-so", "04-bieu-thuc-dai-so-v2-01.json"),
     "ALG04V2_014": ("04-bieu-thuc-dai-so", "04-bieu-thuc-dai-so-v2-01.json"),
+    "ALG04V2_015": ("04-bieu-thuc-dai-so", "04-bieu-thuc-dai-so-v2-01.json"),
     "ALG04V2_089": ("04-bieu-thuc-dai-so", "04-bieu-thuc-dai-so-v2-03.json"),
+    "ALG04V2_091": ("04-bieu-thuc-dai-so", "04-bieu-thuc-dai-so-v2-04.json"),
+    "ID05V1_023": ("05-7-hang-dang-thuc", "05-7-hang-dang-thuc-v1-01.json"),
     "ID05V1_120": ("05-7-hang-dang-thuc", "05-7-hang-dang-thuc-v1-04.json"),
+    "FAC06V1_003": ("06-phan-tich-da-thuc", "06-phan-tich-da-thuc-v1-01.json"),
     "FAC06V1_021": ("06-phan-tich-da-thuc", "06-phan-tich-da-thuc-v1-01.json"),
     "RAT07V1_009": ("07-phan-thuc-dai-so", "07-phan-thuc-dai-so-v1-01.json"),
+    "RAT07V1_050": ("07-phan-thuc-dai-so", "07-phan-thuc-dai-so-v1-02.json"),
+    "RAT07V1_058": ("07-phan-thuc-dai-so", "07-phan-thuc-dai-so-v1-02.json"),
     "RAT07V1_071": ("07-phan-thuc-dai-so", "07-phan-thuc-dai-so-v1-03.json"),
+    "RAT07V1_073": ("07-phan-thuc-dai-so", "07-phan-thuc-dai-so-v1-03.json"),
+    "RAT07V1_117": ("07-phan-thuc-dai-so", "07-phan-thuc-dai-so-v1-04.json"),
 }
 
 def load_json(rel):
@@ -184,6 +192,14 @@ with sync_playwright() as pw:
     assert event["independent_evidence"] is True
     assert event["independent_reason"] == "first_unseen_unit"
 
+    # G2 delta sibling is captured but cannot create a second unit.
+    goto_target(page, current, "ALG04V2_015")
+    answer(page, "ALG04V2_015")
+    store = wait_event(page, "ALG04V2_015")
+    event = store["recent_events"][-1]
+    assert event["independent_evidence"] is False
+    assert event["independent_reason"] == "clone_family_repeat"
+
     # Cross-topic same canonical skill: CĐ07 then CĐ04 must remain separate units.
     goto_target(page, current, "RAT07V1_009")
     answer(page, "RAT07V1_009")
@@ -203,6 +219,12 @@ with sync_playwright() as pw:
     assert e04["independent_evidence"] is True
     assert e04["independent_unit_key"] != e07["independent_unit_key"]
 
+    # G2 sibling in the CĐ04 domain clone family is captured as repeat.
+    goto_target(page, current, "ALG04V2_091")
+    answer(page, "ALG04V2_091")
+    store = wait_event(page, "ALG04V2_091")
+    assert store["recent_events"][-1]["independent_reason"] == "clone_family_repeat"
+
     # Legacy-tag-order boundary on CĐ05.
     goto_target(page, current, "ID05V1_120")
     answer(page, "ID05V1_120")
@@ -211,6 +233,12 @@ with sync_playwright() as pw:
     assert event["canonical_skill_id"] == "hieu-hai-binh-phuong"
     assert "phan-tich-hdt" not in [e["canonical_skill_id"] for e in store["recent_events"]]
 
+    # G2 CĐ05 clone-family delta captures independently from the standalone G1 unit.
+    goto_target(page, current, "ID05V1_023")
+    answer(page, "ID05V1_023")
+    store = wait_event(page, "ID05V1_023")
+    assert store["recent_events"][-1]["independent_evidence"] is True
+
     # Same canonical skill on CĐ06 remains topic-specific.
     goto_target(page, current, "FAC06V1_021")
     answer(page, "FAC06V1_021")
@@ -218,6 +246,14 @@ with sync_playwright() as pw:
     event = store["recent_events"][-1]
     assert event["canonical_skill_id"] == "hieu-hai-binh-phuong"
     assert event["normalized_topic_key"] == "06-phan-tich-da-thuc"
+
+    # G2 CĐ06 new proven skill row.
+    goto_target(page, current, "FAC06V1_003")
+    answer(page, "FAC06V1_003")
+    store = wait_event(page, "FAC06V1_003")
+    event = store["recent_events"][-1]
+    assert event["canonical_skill_id"] == "nhan-tu-chung"
+    assert event["independent_evidence"] is True
 
     # CĐ07 method-selection canary.
     goto_target(page, current, "RAT07V1_071", debug=True)
@@ -228,13 +264,37 @@ with sync_playwright() as pw:
     assert event["canonical_skill_id"] == "quy-dong-mau-thuc"
     assert event["evidence_class"] == "MCQ_METHOD_SELECTION_ONLY"
     assert event["normalized_topic_key"] == "07-phan-thuc-dai-so"
+
+    # G2 sibling in same method-selection family is captured as clone repeat.
+    goto_target(page, current, "RAT07V1_073")
+    answer(page, "RAT07V1_073")
+    store = wait_event(page, "RAT07V1_073")
+    event = store["recent_events"][-1]
+    assert event["evidence_class"] == "MCQ_METHOD_SELECTION_ONLY"
+    assert event["independent_reason"] == "clone_family_repeat"
+
+    # G2-only simplify family: first item independent, sibling repeat.
+    goto_target(page, current, "RAT07V1_050")
+    answer(page, "RAT07V1_050")
+    store = wait_event(page, "RAT07V1_050")
+    assert store["recent_events"][-1]["independent_evidence"] is True
+    goto_target(page, current, "RAT07V1_058")
+    answer(page, "RAT07V1_058")
+    store = wait_event(page, "RAT07V1_058")
+    assert store["recent_events"][-1]["independent_reason"] == "clone_family_repeat"
+
+    # G2 standalone evaluation item creates its own unit.
+    goto_target(page, current, "RAT07V1_117")
+    answer(page, "RAT07V1_117")
+    store = wait_event(page, "RAT07V1_117")
+    assert store["recent_events"][-1]["independent_evidence"] is True
     sentinel_assertions(page)
 
-    # G1 remains shadow-only: no normal learner-facing canonical panel.
+    # G2 remains shadow-only: no normal learner-facing canonical panel.
     page.goto(BASE + TOPICS["07-phan-thuc-dai-so"]["page"], wait_until="domcontentloaded")
     assert page.locator("[data-canonical-evidence-debug]").count() == 0
 
-    page.screenshot(path=str(PREVIEWS / "canonical-evidence-g1-practice-mobile.png"), full_page=True)
+    page.screenshot(path=str(PREVIEWS / "canonical-evidence-g2-practice-mobile.png"), full_page=True)
     assert not errors, errors
     context.close()
 
@@ -277,18 +337,18 @@ with sync_playwright() as pw:
     current2 = {}
     install_forced_bank(page2, current2)
     seed_storage(page2)
-    goto_target(page2, current2, "ID05V1_120", debug=True)
+    goto_target(page2, current2, "RAT07V1_117", debug=True)
     page2.locator("[data-canonical-evidence-debug]").wait_for(timeout=10000)
-    answer(page2, "ID05V1_120")
-    wait_event(page2, "ID05V1_120")
+    answer(page2, "RAT07V1_117")
+    wait_event(page2, "RAT07V1_117")
     assert page2.evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth + 2")
-    page2.screenshot(path=str(PREVIEWS / "canonical-evidence-g1-practice-desktop.png"), full_page=True)
+    page2.screenshot(path=str(PREVIEWS / "canonical-evidence-g2-practice-desktop.png"), full_page=True)
     assert not desktop_errors, desktop_errors
     desktop.close()
 
     browser.close()
 
-print("PASS G1 Practice browser QA across CĐ04–07.")
-print("PASS assistance semantics, negative evidence, cross-topic identity and legacy-tag boundary.")
+print("PASS G1 regression + G2 Practice browser QA across CĐ04–07.")
+print("PASS G2 delta capture, clone, negative evidence, cross-topic identity and method-selection semantics.")
 print("PASS legacy-write-first/canonical-fail-open: Practice stats identical on observer failure.")
-print("PASS frozen beta-v1 and assessment stores remain unchanged; G1 has no normal learner UI.")
+print("PASS frozen beta-v1 and assessment stores remain unchanged; G2 has no normal learner UI.")
