@@ -527,7 +527,8 @@
     toggleTutorMenu(question, button) {
       if (this.currentQuestion()?.id !== question?.id) return;
       const panel = this.tutorEl;
-      if (!panel.hidden) {
+      const openedByThisButton = !panel.hidden && (!button || button.getAttribute("aria-expanded") === "true");
+      if (openedByThisButton) {
         panel.hidden = true;
         panel.innerHTML = "";
         if (button) button.setAttribute("aria-expanded", "false");
