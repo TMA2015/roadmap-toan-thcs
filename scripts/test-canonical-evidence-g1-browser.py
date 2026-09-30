@@ -135,7 +135,7 @@ def wait_event(page, qid):
           const s = JSON.parse(localStorage.getItem('toan-thcs-canonical-evidence-v2') || 'null');
           return s && Array.isArray(s.recent_events) && s.recent_events.at(-1)?.question_id === qid;
         }""",
-        qid,
+        arg=qid,
         timeout=10000,
     )
     return page.evaluate("JSON.parse(localStorage.getItem('toan-thcs-canonical-evidence-v2'))")
