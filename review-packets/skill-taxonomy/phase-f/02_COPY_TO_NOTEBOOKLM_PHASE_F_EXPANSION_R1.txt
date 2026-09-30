@@ -1,0 +1,105 @@
+PHẢN BIỆN ĐỘC LẬP — SKILL TAXONOMY PHASE F / CANONICAL EVIDENCE MULTI-TOPIC EXPANSION R1
+
+Chỉ dùng:
+1) các permanent/baseline sources của dự án trong Notebook;
+2) đúng MỘT temporary source mới:
+   01_UPLOAD_TO_NOTEBOOKLM_PHASE_F_EXPANSION_R1.md
+   Git blob: 70d044f1de98f5b283a3e54fdecfd07fb25d82bd
+
+Không dùng temporary packet cũ để suy diễn thêm.
+
+Packet ID bắt buộc:
+MATH-SKILL-PHASE-F-EXPANSION-R1-20260930
+
+Mục tiêu review:
+- kiểm đủ 15/15 item và mapping canonical đã source-lock;
+- kiểm 9 maximum independent evidence units;
+- kiểm prospective cross-topic aggregation, không historical backfill;
+- kiểm mixed evidence classes trong cùng canonical skill;
+- kiểm legacy tag order/secondary tags không tạo event thứ hai;
+- kiểm việc reuse cùng canonical store theo append-only;
+- kiểm scope vẫn đủ nhỏ cho Beta v5 và không overclaim mastery/readiness.
+
+Hãy trả về đúng cấu trúc:
+
+# BÁO CÁO PHẢN BIỆN HỌC THUẬT ĐỘC LẬP
+## SKILL TAXONOMY PHASE F — CANONICAL EVIDENCE MULTI-TOPIC EXPANSION R1
+
+### 1. PACKET ID & VERDICT
+- Packet ID
+- Source blob
+- State
+- Verdict: PASS hoặc REVISIONS_REQUIRED
+
+### 2. COVERAGE CHECK
+- Expected 15/15
+- Reviewed 15/15
+- 4 topics
+- 5 canonical skills trong batch
+- 4 new-to-runtime skills + 1 existing v4 skill extended
+- Maximum 9 new independent evidence units
+- 6 clone-family groups + 3 singleton units
+- Missing / duplicate / out-of-scope IDs nếu có
+
+### 3. REVISION TABLE
+Nếu PASS: ghi 0 revisions.
+Nếu cần sửa: item/rule cụ thể + correction chính xác.
+
+### 4. 15-ITEM AUDIT TABLE
+question_id | topic | canonical primary | legacy secondary role | evidence class | clone family | PASS/REVISE | concise reason
+
+### 5. 9 EVIDENCE-UNIT DECISIONS
+Kiểm riêng:
+1. ALG04-DONGDANG-013-020 (013,014)
+2. ALG04-DKXD-LINEAR-089-098 (089,090)
+3. ID05-HIEU-HAI-BP-021-030 (021,022)
+4. singleton ID05V1_081
+5. singleton ID05V1_087
+6. singleton ID05V1_120
+7. FAC06-NHAN-TU-CHUNG-001-012 (001,002)
+8. FAC06-HIEU-HAI-BP-021-032 (021,022)
+9. RAT07-COMMON-DENOMINATOR-071-080 (071,072)
+
+Xác nhận mỗi clone group tối đa 1 independent unit trong batch; singleton dùng question_id.
+
+### 6. CROSS-TOPIC / EVIDENCE-CLASS DECISIONS
+A. `dieu-kien-xac-dinh`: cho phép prospective aggregation của canonical events CĐ04 + accepted v4 CĐ07, nhưng giữ topic/evidence_class và không backfill lịch sử cũ: PASS/REVISE.
+B. `hieu-hai-binh-phuong`: một canonical skill dùng cho CĐ05 + CĐ06: PASS/REVISE.
+C. Trong cùng `hieu-hai-binh-phuong`, final-output / recognition-only / method-selection-only có thể cùng tồn tại dưới một skill nếu UI luôn cho thấy breakdown theo evidence class và không tạo weighted mastery score: PASS/REVISE.
+D. Không invent cross-topic clone equivalence; clone de-dup chỉ dùng clone_family đã review: PASS/REVISE.
+
+### 7. LEGACY TAG BOUNDARY
+Kiểm rõ:
+- ID05V1_021/022: `phan-tich-hdt` không nhận event thứ hai.
+- ID05V1_081: `nhan-dang-hdt` không nhận event thứ hai.
+- ID05V1_087: `phan-tich-hdt` không nhận event thứ hai.
+- ID05V1_120: legacy tag đầu tiên là `phan-tich-hdt`, nhưng canonical primary phải là `hieu-hai-binh-phuong`; tag order không quyết định canonical primary.
+
+### 8. STORE / SURFACE DECISIONS
+A. Reuse append-only `toan-thcs-canonical-evidence-v1` với cùng event schema, không tạo canonical store cạnh tranh: PASS/REVISE.
+B. Existing v4 canonical events giữ nguyên và có thể hiển thị read-only cùng Phase F events: PASS/REVISE.
+C. Accepted Beta v4 page giữ nguyên; Phase F nếu implement sẽ là separate opt-in Beta v5 multi-topic page: PASS/REVISE.
+D. Topic label ở Beta v5 phải dynamic; không hard-code CĐ07: PASS/REVISE.
+
+### 9. FINAL COUNTS
+- 15 new items
+- 5 canonical skills in batch
+- 4 new-to-runtime + 1 existing extended
+- 9 max new independent units
+- 6 clone groups
+- 3 singleton units
+- evidence-class counts: final-output 7; final-answer 2; recognition 3; method-selection 3
+- supporting canonical skill occurrences = 0
+
+### 10. SAFETY BOUNDARY
+Xác nhận/sửa:
+- design-only, runtime OFF;
+- no mastery threshold / mastery % / Mastered labels;
+- no Core Readiness credit;
+- no legacy history backfill/regrade/migration;
+- no Practice Engine interception;
+- no PENDING/NO/Extension nodes;
+- không suy exam frequency/importance từ authored-bank frequency;
+- PASS chỉ cho phép đi sang technical implementation/QA của đúng 15 item, không auto-deploy.
+
+Không đề xuất mở rộng scope chỉ để tăng coverage.
