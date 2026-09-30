@@ -65,6 +65,15 @@
 
 **Audit-only [PR #170](https://github.com/TMA2015/roadmap-toan-thcs/pull/170)** vẫn là hồ sơ nguồn/receipt độc lập, không merge thành release. CĐ19 R2 5+2 PASS, CĐ20 Part A 10/10, Part B 19/19 text/math PASS, nhưng phạm vi không gồm SVG rendered hay năm giảng legacy. Master Plan v1.1.1 ở PR #171 và cơ chế handoff PR #172 đã merge. Không chạy lại các vòng review đã đóng khi source không thay.
 
+## Skill Taxonomy Phase A — 39 item CĐ04–07 đã PASS (30/09/2026)
+
+- Draft audit [PR #189](https://github.com/TMA2015/roadmap-toan-thcs/pull/189), packet `MATH-SKILL-TAXONOMY-39-R1-20260930`, source blob `3bb663e2eefeb2907b4915963c10387ddf3e504d`.
+- NotebookLM kiểm đủ **39/39 items**, **0 item revisions**, và **9/9 clone-family PASS**. Trạng thái quyết định giữ nguyên: 19 `scoped_primary_candidate`, 18 `formative_only_requires_new_evidence`, 2 `extension_only_pending_layer_check`.
+- Lớp bằng chứng đã được tách khỏi độ khó của prompt: 5 `MCQ_RECOGNITION_ONLY`, 2 `MCQ_METHOD_SELECTION_ONLY`, 24 `MCQ_FINAL_OUTPUT_ONLY`, 4 `MCQ_ARGUMENT_RECOGNITION_ONLY`, 4 `MCQ_FINAL_ANSWER_ONLY`.
+- Clone-family chỉ dùng để **không đếm lặp thành bằng chứng mastery độc lập** trong pilot tương lai; không xóa câu luyện tập. `RAT07V1_119–120` vẫn pending Extension.
+- **Không bật runtime:** `runtime_enabled=0`, `core_readiness_credit=0`; không đổi legacy ID/tag, localStorage hay regrade lịch sử.
+- **Bước tiếp theo:** Phase B code-level registry cho **52 legacy skill codes CĐ04–07**. Tách code nào là assessed skill thực, category/parent, method, context, supporting skill hoặc Extension; ba code dùng xuyên topic (`dieu-kien-xac-dinh`, `hieu-hai-binh-phuong`, `binh-phuong-hoan-chinh`) phải được kiểm semantics trước khi coi là cùng một canonical concept.
+
 ## Học thuật B01–B07 — hồ sơ tồn tại trước Batch A (chưa bật runtime)
 
 1. **Skill taxonomy / assessed-skill audit:** bắt đầu bằng read-only/source-locked reconciliation của 39 mục CĐ04–07 và các cụm B01–B07, tránh trộn `41 graph nodes` với hệ thống skill toàn chương trình. Đối chiếu các [draft PR #146–155](https://github.com/TMA2015/roadmap-toan-thcs/pulls) và file hiện hành, không mặc định draft đã merge hoặc review toàn bộ item. Phân biệt kỹ năng cốt lõi, kỹ năng phụ thuộc, context, kỹ năng tổng hợp và Extension; soát trùng, nhãn quá rộng, câu trùng phương pháp và độ bao phủ.
