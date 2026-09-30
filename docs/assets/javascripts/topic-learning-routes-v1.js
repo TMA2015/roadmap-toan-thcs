@@ -1,10 +1,11 @@
 (() => {
   "use strict";
   // Single source of truth for the independent learning stage in the top stepper
-  // and the topic workspace. 01 = overview; 03 = academic-content pending;
-  // 22 = optional THPT bridge (no THCS Core). Do not add those without a real page.
+  // and the topic workspace. 01 = overview; 22 = optional THPT bridge (no THCS Core).
+  // Only add a topic after its standalone learning page and reviewed data exist.
   const slugs = [
   "02-so-va-phep-tinh",
+  "03-ti-le-ti-le-thuc",
   "04-bieu-thuc-dai-so",
   "05-7-hang-dang-thuc",
   "06-phan-tich-da-thuc",
