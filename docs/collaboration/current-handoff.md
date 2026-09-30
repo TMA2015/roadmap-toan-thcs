@@ -1,12 +1,20 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, sau Batch A.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Snapshot đối chiếu với `main` `c1b461885d7da1bd3cafef34f357c04c493df3b0`; trạng thái GitHub live và PR/workflow mới hơn phải được tra lại khi tiếp nối.
+> **CURRENT CHECKPOINT — 30/09/2026, sau CĐ03 + đóng 7 gap CĐ02/CĐ23.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Snapshot đối chiếu với `main` `0f00e939e1dc4dd3a2035d4e1bd0e116fc5d3809`; trạng thái GitHub live và PR/workflow mới hơn phải được tra lại khi tiếp nối.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Mốc mới nhất — Batch A chuẩn hóa luồng học (30/09/2026)
+## Mốc mới nhất — CĐ03 và 7 gap kỹ năng đã đóng (30/09/2026)
+
+- **CĐ03:** academic R2 PASS và [PR #183](https://github.com/TMA2015/roadmap-toan-thcs/pull/183) đã phát hành 5 thẻ +15 micro, route/menu bốn bước; deploy run `36662797203` SUCCESS. Owner desktop/iPad QA riêng vẫn OPEN.
+- **CĐ02/CĐ23:** NotebookLM packet `MATH-CORE02-23-GAP-R1-20260930`, source blob `9695c998aade401f4c4129aa25ac6a8392a41b2b`, review **7/7 PASS**. [PR #186](https://github.com/TMA2015/roadmap-toan-thcs/pull/186) merge `0f00e939e1dc4dd3a2035d4e1bd0e116fc5d3809`; PR Quality PASS và Deploy MkDocs run `36664825146` SUCCESS.
+- Append-only: CĐ02 thêm `NUM02MICRO_016–020` cho `luy-thua`, `phan-tich-thua-so-nguyen-to`, `bcnn`, `gia-tri-tuyet-doi`, `quy-dong-so-sanh-phan-so`; CĐ23 thêm `PRO23MICRO_016–017` cho card 3 `kiem-tra-xac-suat` và card 5 `xac-suat-co-dien`.
+- CĐ02 hiện **20 micro**, CĐ23 **17 micro**; mọi skill đã khai báo trong từng card đều có ít nhất một cơ hội luyện riêng. 30 record gốc được kiểm bằng canonical blob và giữ nguyên; Readiness/localStorage/lịch sử học sinh không migrate hoặc regrade. `coverage ≠ mastery`.
+- Audit [PR #185](https://github.com/TMA2015/roadmap-toan-thcs/pull/185) vẫn là provenance review-only, không merge làm release.
+
+## Mốc nền — Batch A chuẩn hóa luồng học (30/09/2026)
 
 - [PR #178](https://github.com/TMA2015/roadmap-toan-thcs/pull/178) merge tại `c1b461885d7da1bd3cafef34f357c04c493df3b0`, [GitHub Pages Deploy](https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/36606931537) **SUCCESS**; ba workflow PR (Roadmap QA, G Learning branding, Skill assessment pilot) PASS. **Owner device QA cho bản Batch A vẫn OPEN**, không suy từ nghiệm thu CĐ19–20 trước đó.
 - CĐ**02/21/23/24/25** đã có trang học độc lập `/core/`, top stepper bốn bước, menu trái và link lớp, cùng Soft Academic Cards hai modal Bài giảng/Luyện tập. Một nguồn route `docs/assets/javascripts/topic-learning-routes-v1.js` dùng chung cho stepper và workspace (22 route đang tồn tại); không thêm nút bốn bước cho CĐ03/CĐ22 khi chưa có học liệu/trang thật. CĐ01 là tổng quan.
@@ -16,10 +24,10 @@
 
 ### Bước tiếp tục sau mốc này
 
-1. **Owner QA CĐ03:** kiểm tra desktop/iPad thực tế trang Core mới của CĐ03 sau deploy; xác nhận top stepper bốn bước, menu trái, 5 thẻ, modal Bài giảng/Luyện tập và việc mở/đóng/chuyển câu không tự ghi lượt làm.
-2. **Gap CĐ02/23:** chuẩn bị review packet bảy cơ hội luyện còn thiếu, gắn từng ID/card/grade/layer và math answer QA. Không thay thẻ cũ hay key/progress.
-3. **Owner QA Batch A:** trạng thái riêng vẫn OPEN nếu chưa có xác nhận thiết bị cho đúng bản Batch A #178; không kế thừa xác nhận CĐ19–20 hoặc CĐ03 sang các route khác.
-4. B01–B07 taxonomy read-only ở ledger đã lưu vẫn có hiệu lực; tiếp tục sau khi xử lý các gap đang hiển thị thật, không merge draft học thuật ngoài cổng approval.
+1. **B01–B07 skill taxonomy:** quay lại read-only/source-locked reconciliation đã lưu; chuẩn hóa concept / task-demand / evidence / clone-family trước khi thay đổi runtime hoặc mastery. Không cộng gộp coverage thành mastery.
+2. **Owner QA CĐ03:** kiểm tra desktop/iPad thực tế trang Core mới; xác nhận stepper bốn bước, menu trái, 5 thẻ, modal Bài giảng/Luyện tập, MathJax và không có phantom attempt.
+3. **Owner QA Batch A:** trạng thái riêng vẫn OPEN nếu chưa có xác nhận thiết bị cho đúng bản Batch A #178; không kế thừa xác nhận CĐ19–20/CĐ03.
+4. **Không mở lại 7 gap CĐ02/23:** academic gate và release đã đóng PASS; chỉ sửa lại nếu có bằng chứng lỗi mới hoặc owner QA phát hiện vấn đề.
 
 ### Batch B CĐ03 — academic R2 PASS, đã triển khai
 

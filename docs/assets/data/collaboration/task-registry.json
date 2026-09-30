@@ -649,9 +649,9 @@
       "id": "MATH-CORE02-23-GAP-001",
       "title": "Review seven missing card-level skill practice opportunities CĐ02/23",
       "routing": "CHATGPT_CANDIDATES+NOTEBOOKLM_REVIEW",
-      "status": "OPEN",
-      "review_verdict": "SOURCE_COVERAGE_GAP_SEVEN_NO_FALSE_CREDIT",
-      "review_notes": "CĐ02 five missing skills in four cards; CĐ23 two missing per-card skill opportunities. Keep existing visible warnings and original 30 item records immutable. Append only after independent math, scope and grade review."
+      "status": "DONE",
+      "review_verdict": "NOTEBOOKLM_R1_PASS_7_OF_7_RELEASED_PR186",
+      "review_notes": "Packet MATH-CORE02-23-GAP-R1-20260930 blob 9695c998aade401f4c4129aa25ac6a8392a41b2b independently reviewed 7/7 PASS. PR #186 squash merge 0f00e939e1dc4dd3a2035d4e1bd0e116fc5d3809; Roadmap PR Quality PASS and Deploy MkDocs 36664825146 PASS. CĐ02 +5 coverage items, CĐ23 +2; original first 15+15 canonical records immutable, no learner migration/regrade, coverage != mastery."
     },
     {
       "id": "MATH-CORE03-STANDALONE-IMPLEMENT-001",
@@ -668,6 +668,14 @@
       "status": "OPEN",
       "review_verdict": "CI_BROWSER_DEPLOY_PASS_OWNER_UNVERIFIED",
       "review_notes": "Verify desktop/iPad: four-step top nav, left menu Core entry, five cards, lecture/practice modals, MathJax readability, no phantom attempts on open/close/navigation, and legacy learner history still visible. Do not infer iPhone coverage."
+    },
+    {
+      "id": "MATH-CORE02-23-GAP-OWNER-QA-001",
+      "title": "Owner spot-check appended CĐ02/CĐ23 coverage questions",
+      "routing": "OWNER_DESKTOP_IPAD_SPOT_QA",
+      "status": "OPEN",
+      "review_verdict": "CI_BROWSER_DEPLOY_PASS_OWNER_UNVERIFIED",
+      "review_notes": "Optional spot-check after PR #186: CĐ02 affected cards show 4/5/4/4 questions and CĐ23 cards 3/5 show four questions; open/close/navigation must not create attempts; answer only writes the new ID/tag. Does not block taxonomy work."
     }
   ]
 }
