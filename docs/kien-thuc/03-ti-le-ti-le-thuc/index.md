@@ -11,6 +11,8 @@
 >
 > **Phạm vi học:** kiến thức cốt lõi tập trung ở lớp 6–7; các ví dụ chuyển động, năng suất, đồng dạng và mô hình hóa được dùng để kết nối với những chuyên đề học sau.
 
+> **Học theo chặng:** [Mở 5 thẻ Core lớp 6–7 →](core/index.md). Kỹ năng đổi đơn vị trong thẻ lớp 6 là phần hỗ trợ/tiền đề, không tính vào Core Readiness.
+
 ---
 
 ## 🧭 1. Bản đồ kiến thức
