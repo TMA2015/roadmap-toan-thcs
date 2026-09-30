@@ -13,6 +13,7 @@
 - Append-only: CĐ02 thêm `NUM02MICRO_016–020` cho `luy-thua`, `phan-tich-thua-so-nguyen-to`, `bcnn`, `gia-tri-tuyet-doi`, `quy-dong-so-sanh-phan-so`; CĐ23 thêm `PRO23MICRO_016–017` cho card 3 `kiem-tra-xac-suat` và card 5 `xac-suat-co-dien`.
 - CĐ02 hiện **20 micro**, CĐ23 **17 micro**; mọi skill đã khai báo trong từng card đều có ít nhất một cơ hội luyện riêng. 30 record gốc được kiểm bằng canonical blob và giữ nguyên; Readiness/localStorage/lịch sử học sinh không migrate hoặc regrade. `coverage ≠ mastery`.
 - Audit [PR #185](https://github.com/TMA2015/roadmap-toan-thcs/pull/185) vẫn là provenance review-only, không merge làm release.
+- **Owner QA CĐ02/CĐ23:** chủ dự án đã kiểm tra chức năng các thẻ Core/Ứng dụng trên **iPad và desktop** và xác nhận **ổn**. Phạm vi xác nhận này áp dụng cho chức năng thẻ ở CĐ02/CĐ23; không suy rộng sang iPhone hoặc các route Batch A khác.
 
 ## Mốc nền — Batch A chuẩn hóa luồng học (30/09/2026)
 
