@@ -1,5 +1,5 @@
 {
-  "version": "1.0.81",
+  "version": "1.0.82",
   "updated": "2026-09-30",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Phase G1 Practice shadow canary is academically PASS and technically staged QA-PASS at PR #217 exact HEAD 540be8b17ffb12dd26c8dee459ff8874a57156b5. Roadmap 36698929683, Skill assessment 36698929574 and Branding 36698929696 all SUCCESS. Next gate: explicit owner controlled-release decision; no deployment yet and no G2/G3.",
+    "next_priority": "Owner explicitly authorized controlled production release of Phase G1 Practice shadow canary. Before release, reconcile PR #217 with latest main and rerun all QA on the exact release HEAD. Release scope remains exactly 27 Beta-proven Practice items / 7 canonical skills / max 16 skill-topic units using canonical-evidence-v2; no normal learner UI, no G2/G3, no mastery/readiness, no migration/backfill.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -414,7 +414,7 @@
       ]
     },
     "canonical_evidence_phase_g": {
-      "status": "G1_STAGED_TECHNICAL_QA_PASS_NOT_DEPLOYED",
+      "status": "G1_OWNER_AUTHORIZED_CONTROLLED_RELEASE_IN_PROGRESS",
       "audit_pr": 214,
       "packet_id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-R1-20260930",
       "source_blob": "1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1",
@@ -433,7 +433,12 @@
       "skill_assessment_qa_run": 36698929574,
       "branding_qa_run": 36698929696,
       "browser_artifact_id": 11089467337,
-      "owner_release_decision": "PENDING"
+      "owner_release_decision": "PENDING",
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-09-30",
+      "release_precondition": "reconcile with latest main and exact-head Roadmap + Skill assessment + Branding QA SUCCESS before merge",
+      "release_scope": "exact 27 Beta-proven Practice items; 7 canonical skills; max 16 skill/topic units; shadow capture only",
+      "owner_production_qa": "PENDING_AFTER_RELEASE"
     }
   },
   "handoff_required_fields": [
