@@ -717,10 +717,10 @@
       "id": "MATH-HELP-DISCLOSURE-TOGGLE-001",
       "title": "Make learner help and solution disclosures collapsible after expansion",
       "routing": "CHATGPT_UX_DESIGN+REGRESSION_QA",
-      "status": "OPEN",
-      "context_version": "1.0.88",
-      "review_verdict": "PRODUCTION_RELEASED_CI_BROWSER_PASS_OWNER_QA_PENDING",
-      "review_notes": "Owner-approved UX-only patch deployed. Practice help disclosure opens/closes/reopens with the same button. Core hints reveal sequentially; after all viewed, same control collapses and reopens them without reducing hintsUsed. Exact tested HEAD e55667c5a0db5b034e832feeef1d95334d63aa01; Roadmap PR Quality run 36719189942 SUCCESS with desktop/mobile regression; production merge fb571ec78cfaf56f82d7dd81b719481dc4296e2b; Deploy MkDocs run 36719709094 SUCCESS. Browser QA confirms no phantom attempts and viewed hints remain recorded (hints_used >= 2, hinted_attempts = 1). Owner production spot-QA pending."
+      "status": "DONE",
+      "context_version": "1.0.89",
+      "review_verdict": "ACCEPTED_PRODUCTION_CI_BROWSER_PASS_OWNER_QA_PASS",
+      "review_notes": "Owner spot-QA PASS on both desktop and iPad. Practice help disclosure opens/closes/reopens with the same button; Core hints reveal sequentially, collapse/reopen correctly, and viewed hints remain counted. Exact tested HEAD e55667c5a0db5b034e832feeef1d95334d63aa01; Roadmap PR Quality run 36719189942 SUCCESS; production merge fb571ec78cfaf56f82d7dd81b719481dc4296e2b; Deploy MkDocs run 36719709094 SUCCESS. Browser QA confirmed no phantom attempts and assistance state persisted. Task CLOSED DONE."
     }
   ]
 }
