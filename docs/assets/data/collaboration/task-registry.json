@@ -694,6 +694,15 @@
       "context_version": "1.0.78",
       "review_verdict": "ACCEPTED_PRODUCTION_NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_OWNER_QA_PASS",
       "review_notes": "Phase F/Beta v5 fully accepted. NotebookLM PASS 15/15, release-head technical QA PASS, production deploy SUCCESS, and owner production QA PASS from seven screenshots. Owner used the same browser/profile as the prior Beta v4 session but opened a new page; canonical history showed 27 events, matching prior 12 v4 + new 15 v5 and confirming origin-scoped v4→v5 continuity. Screenshots also confirm dynamic CĐ04–CĐ07 labels, mixed evidence-class labels, ID05V1_120 canonical primary from overlay rather than legacy tag order, CĐ05/CĐ06 shared hieu-hai-binh-phuong skill, clone-family de-dup, exactly 9 new independent checks, and no mastery/readiness claim. Broader rollout remains a separate reviewed gate."
+    },
+    {
+      "id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-001",
+      "title": "Review production-scale canonical evidence architecture and G1 Practice shadow canary",
+      "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_INDEPENDENT_REVIEW_BEFORE_RUNTIME",
+      "status": "AWAITING_NOTEBOOKLM_REVIEW",
+      "context_version": "1.0.79",
+      "review_verdict": "PENDING",
+      "review_notes": "Draft PR #214 design-only; Roadmap PR Quality 36695136493 SUCCESS. Packet MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-R1-20260930; source blob 1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1; design blob 9302ba28e1c9bf506a290b7b05f6defee2d38e92. Proposal freezes canonical-v1 Beta provenance, introduces production canonical-v2 with recent_events + persistent seen_questions/independent_units, normalizes topic/unit identity, and limits first Practice integration to shadow capture on exact 27 Beta-proven items. No runtime/mastery/readiness/migration."
     }
   ]
 }
