@@ -1,10 +1,24 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Phase G1 CONTROLLED PRODUCTION RELEASE + OWNER PRODUCTION QA PASS; G1 CLOSED DONE.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Real production canonical-v2 capture is confirmed (`3 events / 3 seen questions / 3 independent units`; last capture `RAT07V1_055` → `rut-gon-phan-thuc` → `first_unseen_unit`). G2/G3 remain OFF and require a new design/review gate.
+> **CURRENT CHECKPOINT — 30/09/2026, Phase G2 CONTROLLED PRODUCTION RELEASE SUCCESS; OWNER PRODUCTION QA PENDING.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. G2 is live as shadow canonical-v2 capture for **101 items = 27 G1 + 74 G2 / same 7 proven skills / max 23 topic-scoped units / CĐ04–07**. Production merge `3c235e4e23ed6adf33fbba8ff7f01737b709fac7`; Deploy MkDocs `36713507743` SUCCESS. G3, mastery/Readiness, canonical remediation/ranking, migration/backfill/regrade and broader capture remain OFF. Owner real-production G2 QA is the current gate.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+
+## Phase G2 — CONTROLLED PRODUCTION RELEASE SUCCESS; OWNER QA PENDING (30/09/2026)
+
+- Academic review packet `MATH-CANONICAL-EVIDENCE-G2-PROVEN-SKILLS-R1-20260930`: NotebookLM compact recheck **74/74 delta item PASS + 8/8 architecture PASS**; authorization limited to separate technical implementation/QA.
+- G2 audit/review provenance: PR #223; source blob `95b32fa4b5ebebdc88886cc9725b7b90ae991e46`.
+- Technical implementation [PR #224](https://github.com/TMA2015/roadmap-toan-thcs/pull/224), exact tested HEAD `56892b0d5b8a9791e99e48e4f9022412097e764b`.
+- Exact-head Roadmap PR Quality run `36708260947`: **SUCCESS**. Verified **101 = 27 G1 + 74 G2**, 7 proven skills, max 23 topic-scoped units, manifest↔policy 101/101, G1 regression subset, source/tag/blob locks, clone/repeat, assisted/unassisted, negative evidence, cross-topic identity, standalone units, strict MkDocs build and real Practice browser QA across CĐ04–07.
+- QA artifact `11093235811`, digest `sha256:e1a971357be742e5f3da39c93fea0326e199152902c96fc169c8506b960eb916`.
+- Owner explicitly authorized controlled production release for the exact tested HEAD on 30/09/2026.
+- PR #224 squash merge: `3c235e4e23ed6adf33fbba8ff7f01737b709fac7`.
+- Deploy MkDocs run `36713507743`: **SUCCESS**, including the GitHub Pages deploy step.
+- Production store remains `toan-thcs-canonical-evidence-v2`; Beta v1 remains frozen/read-only; no migration/backfill/regrade; normal learner UI unchanged.
+- **Current gate:** owner production QA on representative **new G2 delta rows**. Until that PASS, task `MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G2-001` remains OPEN.
+- **Still OFF:** G3, mastery labels/percentages/thresholds, Core Readiness credit, canonical remediation/weak-skill ranking, PENDING/formative-only capture, and canonical production capture outside this exact CĐ04–07 / seven-skill G2 boundary.
 
 ## Phase G1 — Practice shadow canary technical QA PASS, chưa deploy (30/09/2026)
 
