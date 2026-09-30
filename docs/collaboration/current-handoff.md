@@ -1,29 +1,26 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Phase G productionization R1 REVIEW-READY; AWAITING NOTEBOOKLM.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Beta v4/v5 owner QA PASS; Phase G draft PR #214 design-only, Roadmap PR Quality `36695136493` SUCCESS; chưa có Practice runtime integration.
+> **CURRENT CHECKPOINT — 30/09/2026, Phase G productionization R1 NOTEBOOKLM PASS; G1 TECHNICAL IMPLEMENTATION AUTHORIZED, NOT DEPLOYED.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Audit PR #214 PASS 0 revisions; next gate is G1 shadow canary technical implementation/QA on exactly 27 proven Practice items.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Phase G — Canonical Evidence Productionization/Scale R1 ready for NotebookLM (30/09/2026)
+## Phase G — Canonical Evidence Productionization/Scale R1 PASS; G1 technical gate open (30/09/2026)
 
-- Beta v4 và Beta v5 đều **RELEASED + OWNER QA PASS**; Phase F task đã đóng DONE.
-- Draft audit [PR #214](https://github.com/TMA2015/roadmap-toan-thcs/pull/214): **design-only / runtime OFF**. Roadmap PR Quality run `36695136493` **SUCCESS**.
-- Packet: `MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-R1-20260930`; source blob `1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1`; design blob `9302ba28e1c9bf506a290b7b05f6defee2d38e92`.
-- Lý do không nối thẳng Practice vào canonical-v1: v1 chỉ giữ 500 events; event cũ có thể rơi khỏi log và làm mất de-dup memory; v1 cũng là Beta provenance và có raw topic identifiers không đồng nhất giữa v4/v5.
-- Đề xuất: freeze `toan-thcs-canonical-evidence-v1`; production dùng store mới `toan-thcs-canonical-evidence-v2`, **không migrate/backfill v1**.
-- v2: bounded `recent_events` + persistent `seen_questions` + persistent `independent_units`; việc trim event log không được làm mất de-dup memory.
-- Unit identity production: `canonical_skill_id + normalized_topic_key + clone_family/question_id`. Machine preflight phát hiện hai structural clone families ở CĐ05 chứa nhiều canonical skill, nên clone-family name đơn lẻ là không đủ.
-- Integration proposal: legacy Practice write trước, canonical observer append sau; canonical failure **fail-open** cho Practice, không rollback và không auto-backfill.
-- Assistance proposal: hint/full solution vẫn lưu descriptive event nhưng `independent=false`; exact question đã xem không thể độc lập lại; unseen sibling cùng clone có thể là independent đầu tiên nếu unit chưa có independent evidence — điểm này cần NotebookLM phê bình riêng.
+- Draft audit [PR #214](https://github.com/TMA2015/roadmap-toan-thcs/pull/214) remains **audit/design-only**. NotebookLM packet `MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-R1-20260930`, source blob `1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1`, design blob `9302ba28e1c9bf506a290b7b05f6defee2d38e92` → **PASS, 0 revisions, 9/9 architecture questions PASS**.
+- Approved architecture: freeze `toan-thcs-canonical-evidence-v1` as Beta provenance; production uses new `toan-thcs-canonical-evidence-v2`, no migrate/backfill/delete v1.
+- v2 design: bounded `recent_events` plus persistent `seen_questions` and `independent_units`; event-log truncation must never erase de-dup memory.
+- Unit identity: `canonical_skill_id + normalized_topic_key + clone_family/question_id`. Skill scope is mandatory because two CĐ05 structural clone families contain multiple canonical skills.
+- Assistance rule PASS: hint/full-solution attempt is stored but non-independent; exact question becomes seen; an unseen sibling in the same clone family may later become the first independent unit if self-solved.
+- Integration rule PASS: **legacy-write-first / canonical-fail-open / no automatic retry-backfill**. Existing Practice behavior remains source of truth if canonical observer fails.
 - Rollout:
-  - **G1:** 27 item đã proven trong Beta v4/v5, 7 skill, max 16 skill/topic-scoped units, shadow capture, không đổi UI học sinh mặc định.
-  - **G2:** sau owner QA của G1, mở cùng 7 skill lên 101 item /23 units.
-  - **G3:** 310 item còn lại /29 skill YES, mở theo batch.
-  - 16 PENDING +65 formative-only vẫn blocked.
-- Phase D production-eligible inventory hiện tại: **411 YES-primary items /36 YES skills /91 skill-topic units** trên CĐ04–07.
-- **Gate hiện tại:** chờ NotebookLM PASS/REVISIONS_REQUIRED. Không viết G1 runtime trước gate này.
+  - **G1:** exact 27 Beta-v4/v5-proven items, 7 skills, max 16 skill/topic units, shadow capture only, no normal learner UI change.
+  - **G2:** only after G1 owner QA, expand same 7 skills to 101 items /23 units.
+  - **G3:** remaining 310 reviewed-YES items /29 skills in bounded batches.
+  - 16 PENDING +65 formative-only remain blocked.
+- **Authorization boundary:** PASS allows only G1 technical implementation/QA. No deploy, no G2/G3, no mastery/readiness, no canonical remediation/ranking, no migration/backfill/regrade.
+- **Next:** implement G1 on a separate branch with exact 27-row policy, production-v2 store/indexes, Practice observer, fail-open and retention/browser QA.
 
 ## Canonical Evidence Beta v4 — RELEASED + OWNER QA PASS (30/09/2026)
 
