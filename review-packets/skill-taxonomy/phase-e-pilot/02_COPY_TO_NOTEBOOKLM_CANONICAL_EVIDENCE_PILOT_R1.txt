@@ -1,0 +1,88 @@
+PHẢN BIỆN ĐỘC LẬP — SKILL TAXONOMY PHASE E / CANONICAL EVIDENCE PILOT R1
+
+Chỉ dùng:
+1) các nguồn permanent/baseline của dự án đang có trong Notebook (Master Plan / quy tắc nguồn nếu đã được giữ làm permanent source);
+2) đúng MỘT temporary source mới:
+   01_UPLOAD_TO_NOTEBOOKLM_CANONICAL_EVIDENCE_PILOT_R1.md
+   Git blob: 18c58eb3c11c7c8ca7e3da1091b6a87787ffa75b
+
+Không dùng các temporary packet Phase A/B/C/D cũ để suy diễn thêm. Packet mới đã source-lock các quyết định cần thiết.
+
+Packet ID bắt buộc:
+MATH-SKILL-CANONICAL-EVIDENCE-PILOT-R1-20260930
+
+Mục tiêu:
+- phản biện học thuật và logic bằng chứng của pilot 12 câu CĐ07;
+- kiểm primary/supporting/evidence-class/clone-family cho đủ 12/12;
+- kiểm quy tắc de-dup theo evidence unit;
+- kiểm shared concept dieu-kien-xac-dinh chỉ giữ task demand CĐ07, không backfill CĐ04;
+- kiểm việc MCQ final-answer/final-output chỉ tạo evidence, KHÔNG tạo mastery;
+- kiểm learner-facing summary không overclaim;
+- xác nhận việc tách storage mới là phù hợp với nguyên tắc không migrate/rewrite lịch sử (không cần review code runtime vì chưa có runtime code).
+
+Hãy trả về đúng cấu trúc sau:
+
+# BÁO CÁO PHẢN BIỆN HỌC THUẬT ĐỘC LẬP
+## SKILL TAXONOMY PHASE E — CĐ07 CANONICAL EVIDENCE PILOT R1
+
+### 1. PACKET ID & VERDICT
+- Packet ID
+- Source blob
+- State
+- Verdict: PASS hoặc REVISIONS_REQUIRED
+
+### 2. COVERAGE CHECK
+- Expected 12/12
+- Reviewed 12/12
+- 3 canonical skills
+- Maximum independent evidence units = 7
+- Missing/duplicate/out-of-scope IDs nếu có
+
+### 3. REVISION TABLE
+Nếu PASS: ghi "0 revisions".
+Nếu cần sửa: chỉ liệt kê thay đổi cụ thể, item/rule nào và correction chính xác.
+
+### 4. 12-ITEM AUDIT TABLE
+Mỗi item một dòng:
+question_id | primary skill | supporting role | evidence class | clone family | PASS/REVISE | concise reason
+
+### 5. 7 EVIDENCE-UNIT DECISIONS
+Kiểm riêng:
+- RAT07-DOMAIN-LINEAR-009-016 (009,010)
+- RAT07-DOMAIN-QUADRATIC-017-024 (017,018)
+- RAT07-SIMPLIFY-047-055 (047,055)
+- RAT07-SIMPLIFY-048-056 (048,056)
+- RAT07-SIMPLIFY-049-057 (049,057)
+- singleton RAT07V1_115
+- singleton RAT07V1_116
+
+Cho biết có đồng ý rằng mỗi clone family ở trên tối đa một independent evidence unit trong pilot không. Singleton dùng question_id làm evidence unit.
+
+### 6. SPECIAL DECISIONS
+Trả lời rõ:
+A. dieu-kien-xac-dinh là shared canonical concept nhưng pilot chỉ dùng CĐ07 task demand và không aggregate lịch sử CĐ04: PASS/REVISE.
+B. phan-tich-tu-mau ở 017/018 và 047/048/049/055/056/057 chỉ supporting metadata, không event thứ hai: PASS/REVISE.
+C. tinh-gia-tri-phan-thuc 115/116 là MCQ_FINAL_ANSWER_ONLY, được phép tạo evidence event nhưng không mastery: PASS/REVISE.
+D. first unseen question trong clone family đã từng có independent event phải là clone_family_repeat, không independent mới: PASS/REVISE.
+E. correct=false ở first unassisted unseen evidence unit vẫn là một independent evidence event (negative evidence), không phải mastery: PASS/REVISE.
+F. learner-facing chỉ hiển thị descriptive counts, không Mastered/Not mastered, không mastery %: PASS/REVISE.
+G. storage key mới toan-thcs-canonical-evidence-v1, ba store cũ không migrate/rewrite/dual-write: PASS/REVISE theo nguyên tắc bảo toàn lịch sử.
+
+### 7. FINAL COUNTS
+- 12 item
+- 3 primary canonical skills
+- 7 max independent evidence units
+- số supporting-skill occurrences
+- số clone-family pairs
+- số singleton evidence units
+
+### 8. SAFETY BOUNDARY
+Xác nhận hoặc sửa:
+- runtime vẫn OFF;
+- không Core Readiness credit;
+- không mastery threshold;
+- không historical backfill/regrade;
+- không PENDING/NO/Extension node;
+- PASS của vòng này chỉ cho phép đi sang technical implementation/QA gate, không tự động deploy.
+
+Không đề xuất mở rộng thêm skill/câu chỉ để tăng coverage. Pilot này cố ý nhỏ để kiểm kiến trúc evidence.
