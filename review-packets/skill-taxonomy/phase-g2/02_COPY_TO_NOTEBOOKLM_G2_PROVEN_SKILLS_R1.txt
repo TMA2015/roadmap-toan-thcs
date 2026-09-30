@@ -1,0 +1,18 @@
+PHẢN BIỆN ĐỘC LẬP — G2 PROVEN-SKILL EXPANSION R1
+
+Đọc source:
+01_UPLOAD_TO_NOTEBOOKLM_G2_PROVEN_SKILLS_R1.md
+
+Packet ID:
+MATH-CANONICAL-EVIDENCE-G2-PROVEN-SKILLS-R1-20260930
+
+Yêu cầu:
+- Kiểm 74 G2 delta items 1:1; item không nhắc tới = NOT_REVIEWED, không phải PASS.
+- Kiểm canonical_skill_id, evidence_class và clone/unit theo đúng prompt thực tế.
+- Kiểm đủ 8 architecture checks.
+- Xác nhận hoặc bác bỏ 27 G1 + 74 delta = 101 items, 7 skills, max 23 topic-scoped units.
+- Giữ nguyên safety boundary: không mastery/Readiness/remediation/ranking; không migration/backfill/regrade; không PENDING/formative-only capture; không G3.
+
+Dùng đúng format yêu cầu trong source.
+Nếu thiếu bằng chứng, dùng INSUFFICIENT_EVIDENCE.
+PASS chỉ cho phép bước technical implementation/QA G2 riêng biệt; không cho phép deploy production.
