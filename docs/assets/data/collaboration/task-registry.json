@@ -676,6 +676,15 @@
       "status": "DONE",
       "review_verdict": "OWNER_ACCEPTED_IPAD_DESKTOP_20260930",
       "review_notes": "User explicitly confirmed after PR #186 release: tested functions of the Core/application cards in CĐ02 and CĐ23 on iPad and desktop; 'đã ổn'. Scope is card functionality on those two topics. iPhone and unrelated Batch A routes are not implied."
+    },
+    {
+      "id": "MATH-SKILL-PILOT-001",
+      "title": "Design bounded additive canonical-skill evidence pilot after Phase D closure",
+      "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_REVIEW_BEFORE_RUNTIME",
+      "status": "READY",
+      "context_version": "1.0.71",
+      "review_verdict": "NOT_STARTED_RUNTIME_DISABLED",
+      "review_notes": "Use Phase C canonical registry/compatibility contract plus Phase D CĐ04–07 reviewed overlays. Design only first: select a small reviewed skill subset, versioned additive evidence store/path, clone-family de-dup, supporting-skill no-double-credit, PENDING/NO nodes excluded, rollback and legacy-history preservation. No production/runtime activation until separate review, schema/regression/browser/device QA and owner release decision."
     }
   ]
 }
