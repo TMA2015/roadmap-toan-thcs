@@ -1,12 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Phase G2 CONTROLLED PRODUCTION RELEASE SUCCESS; OWNER PRODUCTION QA PENDING.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. G2 is live as shadow canonical-v2 capture for **101 items = 27 G1 + 74 G2 / same 7 proven skills / max 23 topic-scoped units / CĐ04–07**. Production merge `3c235e4e23ed6adf33fbba8ff7f01737b709fac7`; Deploy MkDocs `36713507743` SUCCESS. G3, mastery/Readiness, canonical remediation/ranking, migration/backfill/regrade and broader capture remain OFF. Owner real-production G2 QA is the current gate.
+> **CURRENT CHECKPOINT — 30/09/2026, Phase G2 RELEASED + OWNER PRODUCTION QA PASS; G2 CLOSED DONE.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Live owner QA confirms the G2 build/policy/store are active, five canonical-v2 events are present in the observed session, `RAT07V1_115` captures correctly, and out-of-policy `RAT07V1_114` correctly returns `not_in_g2_policy`. Combined with exact-release-head delta browser QA, this closes G2. G3, mastery/Readiness, canonical remediation/ranking, migration/backfill/regrade and broader capture remain OFF.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Phase G2 — CONTROLLED PRODUCTION RELEASE SUCCESS; OWNER QA PENDING (30/09/2026)
+## Phase G2 — RELEASED + OWNER PRODUCTION QA PASS; G2 CLOSED DONE (30/09/2026)
 
 - Academic review packet `MATH-CANONICAL-EVIDENCE-G2-PROVEN-SKILLS-R1-20260930`: NotebookLM compact recheck **74/74 delta item PASS + 8/8 architecture PASS**; authorization limited to separate technical implementation/QA.
 - G2 audit/review provenance: PR #223; source blob `95b32fa4b5ebebdc88886cc9725b7b90ae991e46`.
@@ -17,8 +17,9 @@
 - PR #224 squash merge: `3c235e4e23ed6adf33fbba8ff7f01737b709fac7`.
 - Deploy MkDocs run `36713507743`: **SUCCESS**, including the GitHub Pages deploy step.
 - Production store remains `toan-thcs-canonical-evidence-v2`; Beta v1 remains frozen/read-only; no migration/backfill/regrade; normal learner UI unchanged.
-- **Current gate:** owner production QA on representative **new G2 delta rows**. Until that PASS, task `MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G2-001` remains OPEN.
+- **Owner production QA: PASS.** Live screenshots confirm `canonical-evidence-g2-proven-skills-20260930`, `policy_ready=true`, `policy_error=null`, store `toan-thcs-canonical-evidence-v2`, a five-event observed session, successful `RAT07V1_115` capture, and correct `RAT07V1_114 -> not_in_g2_policy` exclusion. Exact-head automated browser QA had already directly captured representative G2 delta rows. Task `MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G2-001` is CLOSED DONE.
 - **Still OFF:** G3, mastery labels/percentages/thresholds, Core Readiness credit, canonical remediation/weak-skill ranking, PENDING/formative-only capture, and canonical production capture outside this exact CĐ04–07 / seven-skill G2 boundary.
+- **Separate UX follow-up discovered during owner QA:** learner help/solution disclosure controls should support collapsing after expansion; track separately from canonical-evidence acceptance.
 
 ## Phase G1 — Practice shadow canary technical QA PASS, chưa deploy (30/09/2026)
 
