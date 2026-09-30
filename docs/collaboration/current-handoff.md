@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Phase G1 Practice shadow canary STAGED TECHNICAL-QA PASS, NOT DEPLOYED.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. PR #217 exact tested HEAD `540be8b17ffb12dd26c8dee459ff8874a57156b5`; all three QA workflows SUCCESS. Owner controlled-release decision pending; G2/G3 remain OFF.
+> **CURRENT CHECKPOINT — 30/09/2026, Phase G1 CONTROLLED RELEASE OWNER-AUTHORIZED; PRE-RELEASE RECONCILIATION/EXACT-HEAD QA IN PROGRESS.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Staged PR #217 technical QA PASS. Owner explicitly approved controlled G1 release, but production merge/deploy occurs only after reconcile with latest `main` and all exact-release-head QA PASS. G2/G3 remain OFF.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -18,7 +18,10 @@
 - Browser: actual Practice CĐ04–07 PASS; assistance/unseen-sibling transfer, negative evidence, cross-topic identity, `ID05V1_120` tag-order boundary and store isolation PASS.
 - Artifact `11089467337`, digest `sha256:bbd5da8d5f0aecece709f4e17601fe57a3b76fcbd2f6d1db41e9b36f20f382fe`.
 - First Roadmap run failed only because of Playwright test-call syntax; corrected test rerun PASS. Không waive product assertion.
-- **Gate hiện tại:** owner controlled-release decision. G2/G3, mastery/readiness, canonical remediation/ranking và broader capture vẫn OFF.
+- **Owner release decision:** **APPROVED** on 30/09/2026 for a controlled G1 production release.
+- **Pre-release requirement now:** reconcile PR #217 with latest `main`, rerun Roadmap + Skill assessment + Branding QA on the exact release HEAD, then merge/deploy only if all PASS.
+- **After deploy:** owner real-device production QA is mandatory before any G2 consideration.
+- G2/G3, mastery/readiness, canonical remediation/ranking, migration/backfill/regrade and broader capture remain **OFF**.
 
 ## Canonical Evidence Beta v4 — RELEASED + OWNER QA PASS (30/09/2026)
 
