@@ -1,5 +1,5 @@
 {
-  "version": "1.0.77",
+  "version": "1.0.78",
   "updated": "2026-09-30",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Phase F / Canonical Evidence Beta v5 RELEASED on production via PR #210 merge 371b4980586ae684729060ae1a4c8dc1443cb45d; Deploy MkDocs 36691324129 SUCCESS. Release-head QA on exact HEAD 5017ffc134b9bd076771fa5496d8fb23149fb20b: Roadmap 36690938386, Skill assessment 36690938362, Branding 36690938341 all SUCCESS. Next gate: owner real-device production QA; no mastery/readiness expansion.",
+    "next_priority": "Phase F / Canonical Evidence Beta v5 RELEASED and OWNER PRODUCTION QA PASS. Bounded Phase F is accepted: 15 items across CĐ04–07, 5 canonical skills in batch, max 9 new independent evidence units, prospective v4+v5 continuity verified in same browser/profile (27 canonical events = prior 12 v4 + new 15 v5), dynamic topic/evidence-class display and clone de-dup verified. Next gate should be a separate expansion/productionization design review; no automatic mastery/readiness or Practice Engine integration.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -378,7 +378,7 @@
       }
     },
     "canonical_evidence_phase_f": {
-      "status": "PRODUCTION_RELEASED_OWNER_DEVICE_QA_PENDING",
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PASS",
       "review_pr": 208,
       "packet_id": "MATH-SKILL-PHASE-F-EXPANSION-R1-20260930",
       "notebooklm_source_blob": "70d044f1de98f5b283a3e54fdecfd07fb25d82bd",
@@ -400,7 +400,18 @@
       "deploy_run": 36691324129,
       "deploy_status": "SUCCESS",
       "production_url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/thu-nghiem-bang-chung-da-chuyen-de-v5/",
-      "owner_device_qa": "PENDING"
+      "owner_device_qa": "PASS",
+      "owner_qa_date": "2026-09-30",
+      "owner_qa_evidence": "seven production screenshots from a completed 15-item Beta v5 session in the same browser/profile as prior Beta v4, opened in a new page",
+      "owner_qa_observed": [
+        "dynamic CĐ04–CĐ07 topic labels",
+        "ID05V1_120 primary hieu-hai-binh-phuong despite legacy tag order",
+        "same hieu-hai-binh-phuong canonical skill across CĐ05 and CĐ06",
+        "clone-family repeat does not add independent unit",
+        "15-item session reports exactly 9 new independent checks",
+        "canonical history shows 27 events = prior 12 Beta v4 + current 15 Beta v5",
+        "no mastery/readiness claim"
+      ]
     }
   },
   "handoff_required_fields": [
