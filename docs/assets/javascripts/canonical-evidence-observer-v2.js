@@ -268,7 +268,7 @@
     .catch((error) => {
       policyError = String(error?.message || error);
       refreshDebug();
-      throw error;
+      return null;
     });
 
   const tagsMatch = (question, row) => {
@@ -280,6 +280,7 @@
   const captureAttempt = async (input = {}) => {
     try {
       const state = await ready;
+      if (!state) throw new Error("policy_unavailable");
       const question = input.question;
       const row = state.rows.get(question?.id);
       if (!row) {
