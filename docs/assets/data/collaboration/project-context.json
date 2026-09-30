@@ -1,5 +1,5 @@
 {
-  "version": "1.0.76",
+  "version": "1.0.77",
   "updated": "2026-09-30",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Phase F / Canonical Evidence Beta v5 is academically PASS and technically staged QA-PASS at PR #210 exact HEAD 1614bf89d8f85a8c40f950fefea7501a4c5cc9ea. Roadmap PR Quality 36688748721, Skill assessment pilot QA 36688748761 and G Learning branding QA 36688748845 all SUCCESS. Next gate: owner decision on controlled release; no deployment yet.",
+    "next_priority": "Phase F / Canonical Evidence Beta v5 RELEASED on production via PR #210 merge 371b4980586ae684729060ae1a4c8dc1443cb45d; Deploy MkDocs 36691324129 SUCCESS. Release-head QA on exact HEAD 5017ffc134b9bd076771fa5496d8fb23149fb20b: Roadmap 36690938386, Skill assessment 36690938362, Branding 36690938341 all SUCCESS. Next gate: owner real-device production QA; no mastery/readiness expansion.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -378,7 +378,7 @@
       }
     },
     "canonical_evidence_phase_f": {
-      "status": "STAGED_TECHNICAL_QA_PASS_NOT_DEPLOYED",
+      "status": "PRODUCTION_RELEASED_OWNER_DEVICE_QA_PENDING",
       "review_pr": 208,
       "packet_id": "MATH-SKILL-PHASE-F-EXPANSION-R1-20260930",
       "notebooklm_source_blob": "70d044f1de98f5b283a3e54fdecfd07fb25d82bd",
@@ -389,12 +389,18 @@
       "notebooklm_verdict": "PASS_15_OF_15_ZERO_REVISIONS",
       "tested_head": "1614bf89d8f85a8c40f950fefea7501a4c5cc9ea",
       "store_key": "toan-thcs-canonical-evidence-v1",
-      "roadmap_pr_quality_run": 36688748721,
-      "skill_assessment_qa_run": 36688748761,
-      "branding_qa_run": 36688748845,
+      "roadmap_pr_quality_run": 36690938386,
+      "skill_assessment_qa_run": 36690938362,
+      "branding_qa_run": 36690938341,
       "browser_artifact_id": 11085062148,
       "owner_release_decision": "PENDING",
-      "production_release": false
+      "production_release": true,
+      "release_head": "5017ffc134b9bd076771fa5496d8fb23149fb20b",
+      "merge_commit": "371b4980586ae684729060ae1a4c8dc1443cb45d",
+      "deploy_run": 36691324129,
+      "deploy_status": "SUCCESS",
+      "production_url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/thu-nghiem-bang-chung-da-chuyen-de-v5/",
+      "owner_device_qa": "PENDING"
     }
   },
   "handoff_required_fields": [

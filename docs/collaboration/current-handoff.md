@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Phase F / Beta v5 STAGED TECHNICAL-QA PASS, NOT DEPLOYED.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Phase F audit PASS 15/15; staging PR #210 exact tested HEAD `1614bf89d8f85a8c40f950fefea7501a4c5cc9ea`; all three QA workflows SUCCESS. Owner release decision pending.
+> **CURRENT CHECKPOINT — 30/09/2026, Phase F / Beta v5 RELEASED; OWNER DEVICE QA PENDING.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Production merge `371b4980586ae684729060ae1a4c8dc1443cb45d`; Deploy MkDocs `36691324129` SUCCESS. Release-head exact QA PASS on `5017ffc134b9bd076771fa5496d8fb23149fb20b`. Owner production QA pending.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -28,17 +28,18 @@
 - Machine preflight: 15/15 source match, 0 errors; runtime/readiness OFF.
 - **Gate hiện tại:** chờ NotebookLM PASS/REVISIONS_REQUIRED. Không viết Beta v5 runtime trước gate này.
 
-## Phase F / Canonical Evidence Beta v5 — academic + technical gates PASS, chưa deploy (30/09/2026)
+## Phase F / Canonical Evidence Beta v5 — RELEASED, owner device QA pending (30/09/2026)
 
-- Academic audit [PR #208](https://github.com/TMA2015/roadmap-toan-thcs/pull/208): NotebookLM packet `MATH-SKILL-PHASE-F-EXPANSION-R1-20260930`, source blob `70d044f1de98f5b283a3e54fdecfd07fb25d82bd` → **PASS 15/15, 0 revisions**.
-- Scope: **15 new items / CĐ04–07 / 5 canonical skills / max 9 new independent evidence units**.
-- Draft staging [PR #210](https://github.com/TMA2015/roadmap-toan-thcs/pull/210), exact tested HEAD `1614bf89d8f85a8c40f950fefea7501a4c5cc9ea`. **Chưa merge, chưa deploy.**
-- QA exact HEAD: Roadmap PR Quality `36688748721` **SUCCESS**; Skill assessment pilot QA `36688748761` **SUCCESS**; G Learning branding QA `36688748845` **SUCCESS**.
-- Unit/browser xác nhận: 15/15 source-lock; 5 skills; 4 topics; 9 units; dynamic topic labels; prospective v4+v5 aggregation; breakdown theo evidence class/topic; `ID05V1_120` canonical primary đúng overlay; không secondary-tag event.
-- Store canonical giữ nguyên `toan-thcs-canonical-evidence-v1`; append-only. Legacy Practice/Readiness/Beta3 không migrate/backfill/regrade.
-- Beta v4 vẫn là accepted control page, không bị Phase F sửa.
-- Artifact browser/visual: `11085062148`.
-- **Gate hiện tại:** owner quyết định controlled release Beta v5. Sau release vẫn cần owner real-device QA riêng.
+- Academic audit [PR #208](https://github.com/TMA2015/roadmap-toan-thcs/pull/208): NotebookLM packet `MATH-SKILL-PHASE-F-EXPANSION-R1-20260930` → **PASS 15/15, 0 revisions**.
+- Controlled release [PR #210](https://github.com/TMA2015/roadmap-toan-thcs/pull/210), exact reconciled release HEAD `5017ffc134b9bd076771fa5496d8fb23149fb20b`; merge-base current main, behind 0.
+- Release-head QA: Roadmap PR Quality `36690938386` **SUCCESS**; Skill assessment pilot QA `36690938362` **SUCCESS**; Branding QA `36690938341` **SUCCESS**.
+- Production squash merge `371b4980586ae684729060ae1a4c8dc1443cb45d`; Deploy MkDocs `36691324129` **SUCCESS**.
+- Production route: `/huong-dan/thu-nghiem-bang-chung-da-chuyen-de-v5/`.
+- Released scope remains **15 items / CĐ04–07 / 5 canonical skills / max 9 new independent evidence units**.
+- Store canonical vẫn là `toan-thcs-canonical-evidence-v1`, append-only; v4+v5 prospective history giữ `topic` + `evidence_class`.
+- Không mastery %, Mastered labels, Core Readiness credit, backfill/regrade/migration, Practice Engine interception hay PENDING/NO/Extension nodes.
+- Beta v4 vẫn là accepted control page, không bị thay đổi.
+- **Gate còn mở:** owner real-device QA trên production Beta v5. Automated PASS không tự suy thành owner acceptance.
 
 ## Mốc mới nhất — CĐ03 và 7 gap kỹ năng đã đóng (30/09/2026)
 
