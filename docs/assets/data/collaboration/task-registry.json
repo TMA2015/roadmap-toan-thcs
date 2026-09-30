@@ -613,9 +613,9 @@
       "id": "MATH-SKILL-TAXONOMY-RECONCILE-001",
       "title": "Reconcile B01–B07 independent academic reviews and primary skill taxonomy before runtime integration",
       "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW_RECONCILIATION",
-      "status": "CHATGPT-REVIEW",
-      "review_verdict": "PHASE_D_CORE06_PASS_120_OF_120_17_CLONE_FAMILIES_CORE07_NEXT",
-      "review_notes": "CĐ06 Phase D packet MATH-SKILL-CORE06-OVERLAY-R1-20260930 blob dff6013a0062e2a81dfafbe35280b4e52ab620c0: PASS 120/120, 0 revisions, 17/17 clone families. 104 one-primary mappings; FAC06V1_093–100, 113–116, 117–120 remain formative-only. No runtime/migration/mastery changes. CĐ07 full-bank overlay is the final Phase D gate for CĐ04–07."
+      "status": "DONE",
+      "review_verdict": "PHASE_D_CLOSED_PASS_492_OF_492_74_CLONE_FAMILIES_ZERO_REVISIONS",
+      "review_notes": "Phase D CĐ04–07 full-bank overlay review CLOSED PASS. Aggregate: 492 questions; 427 one-primary mappings; 65 intentionally formative-only/no-primary; 74/74 clone-family proposals PASS; 0 item revisions across CĐ04, CĐ05, CĐ06, CĐ07. CĐ07 packet MATH-SKILL-CORE07-OVERLAY-R1-20260930 source blob 06a4b8f6f31b356d09a22c8c2e42423a14523d6b PASS 120/120, 23/23 clone families. No runtime activation, history migration/regrade, Core Readiness credit or mastery threshold. Next gate: separate bounded additive pilot design under Phase C compatibility contract."
     },
     {
       "id": "MATH-UI-BATCH-A-001",
@@ -676,6 +676,15 @@
       "status": "DONE",
       "review_verdict": "OWNER_ACCEPTED_IPAD_DESKTOP_20260930",
       "review_notes": "User explicitly confirmed after PR #186 release: tested functions of the Core/application cards in CĐ02 and CĐ23 on iPad and desktop; 'đã ổn'. Scope is card functionality on those two topics. iPhone and unrelated Batch A routes are not implied."
+    },
+    {
+      "id": "MATH-SKILL-PILOT-001",
+      "title": "Design bounded additive canonical-skill evidence pilot after Phase D closure",
+      "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_REVIEW_BEFORE_RUNTIME",
+      "status": "READY",
+      "context_version": "1.0.71",
+      "review_verdict": "NOT_STARTED_RUNTIME_DISABLED",
+      "review_notes": "Use Phase C canonical registry/compatibility contract plus Phase D CĐ04–07 reviewed overlays. Design only first: select a small reviewed skill subset, versioned additive evidence store/path, clone-family de-dup, supporting-skill no-double-credit, PENDING/NO nodes excluded, rollback and legacy-history preservation. No production/runtime activation until separate review, schema/regression/browser/device QA and owner release decision."
     }
   ]
 }

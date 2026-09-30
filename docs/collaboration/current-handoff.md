@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026, Skill Taxonomy Phase D CĐ06 PASS.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Snapshot đối chiếu với `main` `86a1dafc818149a440c82c9bb373eb27af73cf93`; trạng thái GitHub live và PR/workflow mới hơn phải được tra lại khi tiếp nối.
+> **CURRENT CHECKPOINT — 30/09/2026, Skill Taxonomy Phase D CĐ04–07 CLOSED PASS.** Tên sản phẩm: **Self-Learning Math**, thuộc **G Learning**; AI Tutor là một tính năng. Snapshot đối chiếu với `main` `20b8afbfd6eca9a41a1512216a4538a0fc460bf4`; trạng thái GitHub live và PR/workflow mới hơn phải được tra lại khi tiếp nối.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -65,6 +65,16 @@
 
 **Audit-only [PR #170](https://github.com/TMA2015/roadmap-toan-thcs/pull/170)** vẫn là hồ sơ nguồn/receipt độc lập, không merge thành release. CĐ19 R2 5+2 PASS, CĐ20 Part A 10/10, Part B 19/19 text/math PASS, nhưng phạm vi không gồm SVG rendered hay năm giảng legacy. Master Plan v1.1.1 ở PR #171 và cơ chế handoff PR #172 đã merge. Không chạy lại các vòng review đã đóng khi source không thay.
 
+## Skill Taxonomy Phase D — CĐ04–07 CLOSED PASS (30/09/2026)
+
+- Bốn full-bank overlay CĐ04–07 đã được NotebookLM phản biện độc lập theo packet source-locked và đều **PASS, 0 item revisions**.
+- Tổng cộng **492/492 questions**: **427** câu có đúng một canonical assessed-skill candidate; **65** câu giữ formative-only/no-primary; **74/74 clone-family proposals PASS**.
+- CĐ07 cuối cùng: [PR #200](https://github.com/TMA2015/roadmap-toan-thcs/pull/200), packet `MATH-SKILL-CORE07-OVERLAY-R1-20260930`, source blob `06a4b8f6f31b356d09a22c8c2e42423a14523d6b`; 120/120, 112 primary + 8 formative-only, 23/23 clone families PASS.
+- 65 câu formative-only **không phải khoảng trống cần ép lấp**: chúng phản ánh giới hạn bằng chứng của MCQ đối với composite/method/proof/Extension. Supporting skill không nhận mastery event thứ hai từ cùng một answer.
+- **Không runtime/migration/mastery:** không đổi legacy ID/tag, không backfill/regrade, không Core Readiness credit, không mastery threshold, không sửa learner store.
+- Hồ sơ closure: `review-packets/skill-taxonomy/PHASE_D_04_07_CLOSURE_20260930.md`.
+- **Bước tiếp theo:** thiết kế pilot additive, phạm vi nhỏ, dựa trên Phase C canonical registry + compatibility contract; chưa bật production/runtime.
+
 ## Skill Taxonomy Phase D — CĐ06 full-bank overlay PASS (30/09/2026)
 
 - Draft audit [PR #197](https://github.com/TMA2015/roadmap-toan-thcs/pull/197), packet `MATH-SKILL-CORE06-OVERLAY-R1-20260930`, source blob `dff6013a0062e2a81dfafbe35280b4e52ab620c0`, overlay blob `a64ec780b62ef6fd40668eb4bbad331024b470aa`.
@@ -72,7 +82,7 @@
 - 104 câu có đúng một canonical assessed-skill candidate; **16 câu FAC06V1_093–100, 113–116, 117–120** giữ formative-only vì current MCQ không cô lập task/method/written-proof competency.
 - `FAC06V1_077–092` giữ primary candidate `phan-tich-da-thuc-hoan-toan` theo Phase A/B nhưng vẫn `FORMATIVE_ONLY_STEPWISE_EVIDENCE_REQUIRED`; `101–112` có primary `giai-pt-bang-nhan-tu` nhưng final-answer evidence không đồng nghĩa mastery quy trình.
 - **Không runtime/migration/mastery:** legacy tags giữ nguyên, không backfill/regrade, không Core Readiness credit, không mastery threshold.
-- **Bước tiếp theo:** dựng CĐ07 full-bank overlay, chuyên đề cuối của Phase D CĐ04–07.
+- **Bước tiếp theo:** CĐ07 đã PASS; Phase D CĐ04–07 đã đóng. Chuyển sang pilot additive riêng, chưa bật runtime.
 
 ## Skill Taxonomy Phase D — CĐ05 full-bank overlay PASS (30/09/2026)
 
