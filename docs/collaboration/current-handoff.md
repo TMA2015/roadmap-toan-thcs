@@ -65,6 +65,17 @@
 
 **Audit-only [PR #170](https://github.com/TMA2015/roadmap-toan-thcs/pull/170)** vẫn là hồ sơ nguồn/receipt độc lập, không merge thành release. CĐ19 R2 5+2 PASS, CĐ20 Part A 10/10, Part B 19/19 text/math PASS, nhưng phạm vi không gồm SVG rendered hay năm giảng legacy. Master Plan v1.1.1 ở PR #171 và cơ chế handoff PR #172 đã merge. Không chạy lại các vòng review đã đóng khi source không thay.
 
+## Skill Taxonomy Phase B — 52 legacy codes CĐ04–07 đã PASS (30/09/2026)
+
+- Draft audit [PR #191](https://github.com/TMA2015/roadmap-toan-thcs/pull/191), packet `MATH-SKILL-CODE52-R1-20260930`, source blob `b77f810b4c57a0bdca5038e6722b4ac968f71a5d`.
+- NotebookLM kiểm đủ **52/52 unique codes + 55/55 topic-code occurrences**, **0 revisions**.
+- Phân loại ngữ nghĩa PASS: 35 skill, 3 diagnostic_skill, 2 composite_skill, 5 parent_category, 1 method, 1 context, 4 task_family, 1 extension_skill. Learner-counter candidate: **38 YES / 7 NO / 7 PENDING**.
+- Ba mã dùng xuyên chuyên đề đều được xác nhận **MERGE_ONE_CONCEPT** nhưng giữ task-demand theo topic: `dieu-kien-xac-dinh`, `hieu-hai-binh-phuong`, `binh-phuong-hoan-chinh`.
+- 8/8 relationship candidates PASS. `phan-tich-da-thuc-hoan-toan` được APPROVED làm canonical output-skill candidate cho đúng `FAC06V1_077–092`, nhưng counter vẫn PENDING vì MCQ chỉ cho final-output evidence; không đổi toàn bộ tag `phoi-hop-phuong-phap`.
+- `chung-minh-hdt` được giữ là competency hợp lệ nhưng cần written evidence trước mastery. `tim-gia-tri-nguyen` giữ Extension.
+- **Không migration:** runtime off, không đổi legacy tags/IDs, không gộp counter hiện hành, không regrade/localStorage rewrite, không mastery threshold.
+- **Bước tiếp theo Phase C:** thiết kế canonical registry + compatibility layer dùng store v2 riêng, one-assessed-skill-per-evidence, không backfill lịch sử; PENDING/NO không xuất hiện như mastery counter.
+
 ## Skill Taxonomy Phase A — 39 item CĐ04–07 đã PASS (30/09/2026)
 
 - Draft audit [PR #189](https://github.com/TMA2015/roadmap-toan-thcs/pull/189), packet `MATH-SKILL-TAXONOMY-39-R1-20260930`, source blob `3bb663e2eefeb2907b4915963c10387ddf3e504d`.
