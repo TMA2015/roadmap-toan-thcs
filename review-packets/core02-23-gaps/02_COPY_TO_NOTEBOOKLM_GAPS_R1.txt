@@ -1,0 +1,27 @@
+Bạn đang phản biện học thuật độc lập cho Self-Learning Math.
+
+Chỉ dùng source “01_UPLOAD_TO_NOTEBOOKLM_GAPS_R1.md”, packet MATH-CORE02-23-GAP-R1-20260930, Git blob 9695c998aade401f4c4129aa25ac6a8392a41b2b. Không dùng suy đoán ngoài source để lấp khoảng trống.
+
+Hãy kiểm đúng 7 candidate ID:
+NUM02MICRO_016, 017, 018, 019, 020; PRO23MICRO_016, 017.
+
+Với từng ID, kiểm:
+- đúng grade / card / KNTT-Core / assessed skill;
+- phép tính, đáp án đúng duy nhất và answer_index 0-based;
+- hint + explanation nhất quán;
+- không đánh giá nhầm kỹ năng lân cận;
+- không trùng hoặc quá tương đồng với 30 micro hiện có;
+- phù hợp formative Core, không phải Support/Extension/Challenge.
+
+Kiểm thêm ranh giới:
+- 30 item cũ tuyệt đối không đổi;
+- 7 item mới chỉ append với micro_role=coverage;
+- coverage ≠ mastery, không hồi tố tiến độ học sinh;
+- CĐ23 không mở rộng sang multi-step tree, không hoàn lại hoặc extension ngoài phạm vi.
+
+Trả về:
+1) Packet ID + verdict: PASS / REVISIONS_REQUIRED / INSUFFICIENT_EVIDENCE.
+2) Bảng 7 dòng: ID | PASS/FAIL | scope/skill | oracle + correct option/index | duplication/pedagogy | correction.
+3) Coverage review chính xác: 7/7 hoặc liệt kê mục chưa kiểm.
+4) Xác nhận cuối: cả 7 có phải Core opportunity đúng không; nếu mục nào nên Support/Extension thì nêu rõ.
+5) Không tuyên bố browser/render/deploy vì packet này chỉ là academic review.
