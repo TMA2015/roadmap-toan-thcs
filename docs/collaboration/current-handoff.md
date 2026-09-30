@@ -65,6 +65,16 @@
 
 **Audit-only [PR #170](https://github.com/TMA2015/roadmap-toan-thcs/pull/170)** vẫn là hồ sơ nguồn/receipt độc lập, không merge thành release. CĐ19 R2 5+2 PASS, CĐ20 Part A 10/10, Part B 19/19 text/math PASS, nhưng phạm vi không gồm SVG rendered hay năm giảng legacy. Master Plan v1.1.1 ở PR #171 và cơ chế handoff PR #172 đã merge. Không chạy lại các vòng review đã đóng khi source không thay.
 
+## Skill Taxonomy Phase D — CĐ04 full-bank overlay PASS (30/09/2026)
+
+- Draft audit [PR #194](https://github.com/TMA2015/roadmap-toan-thcs/pull/194), packet `MATH-SKILL-CORE04-OVERLAY-R1-20260930`, source blob `4db8c7451be599038870d55eee2404af0afb1d37`.
+- NotebookLM kiểm đủ **132/132 questions**, **0 revisions**, **13/13 clone-family PASS**.
+- 120 câu có đúng một canonical assessed-skill candidate; **12 câu ALG04V2_099–110** giữ `FORMATIVE_ONLY_COMPOSITE`, không primary skill vì `bien-doi-nhieu-buoc` vẫn PENDING.
+- Mapping đặc biệt được xác nhận: 009 → `nhan-biet-da-thuc`; 010 → `nhan-biet-don-thuc` (he-so-bac metadata); 011 → `he-so-bac` + thu-gon supporting; 012 → `thu-gon-da-thuc`.
+- Các block 037–050, 051–076, 111–120, 121–132 và toàn bộ clone-family memberships đều PASS.
+- **Không runtime/migration/mastery:** legacy tags giữ nguyên, không backfill/regrade, không Core Readiness credit, không mastery threshold.
+- **Bước tiếp theo:** áp dụng cùng quy trình bounded full-bank overlay cho CĐ05, rồi CĐ06 và CĐ07.
+
 ## Skill Taxonomy Phase B — 52 legacy codes CĐ04–07 đã PASS (30/09/2026)
 
 - Draft audit [PR #191](https://github.com/TMA2015/roadmap-toan-thcs/pull/191), packet `MATH-SKILL-CODE52-R1-20260930`, source blob `b77f810b4c57a0bdca5038e6722b4ac968f71a5d`.
