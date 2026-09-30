@@ -632,7 +632,7 @@
       "routing": "OWNER_DEVICE_QA",
       "status": "OPEN",
       "review_verdict": "CI_BROWSER_PASS_OWNER_UNVERIFIED",
-      "review_notes": "Verify real desktop/iPad UI, 4-step navigation, left drawer, modal lecture/practice and preserved learner stats. Do not inherit CĐ19–20 owner acceptance. iPhone unverified.",
+      "review_notes": "Partial owner acceptance recorded 2026-09-30: CĐ02 and CĐ23 Core/application card functions tested on iPad + desktop and OK. Task remains OPEN for CĐ21/24/25 and any other Batch A acceptance points not explicitly reported. Do not infer iPhone coverage.",
       "source_commit": "c1b461885d7da1bd3cafef34f357c04c493df3b0"
     },
     {
@@ -673,9 +673,9 @@
       "id": "MATH-CORE02-23-GAP-OWNER-QA-001",
       "title": "Owner spot-check appended CĐ02/CĐ23 coverage questions",
       "routing": "OWNER_DESKTOP_IPAD_SPOT_QA",
-      "status": "OPEN",
-      "review_verdict": "CI_BROWSER_DEPLOY_PASS_OWNER_UNVERIFIED",
-      "review_notes": "Optional spot-check after PR #186: CĐ02 affected cards show 4/5/4/4 questions and CĐ23 cards 3/5 show four questions; open/close/navigation must not create attempts; answer only writes the new ID/tag. Does not block taxonomy work."
+      "status": "DONE",
+      "review_verdict": "OWNER_ACCEPTED_IPAD_DESKTOP_20260930",
+      "review_notes": "User explicitly confirmed after PR #186 release: tested functions of the Core/application cards in CĐ02 and CĐ23 on iPad and desktop; 'đã ổn'. Scope is card functionality on those two topics. iPhone and unrelated Batch A routes are not implied."
     }
   ]
 }
