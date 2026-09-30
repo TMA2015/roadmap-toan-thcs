@@ -685,6 +685,15 @@
       "context_version": "1.0.74",
       "review_verdict": "ACCEPTED_PRODUCTION_NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_OWNER_QA_PASS",
       "review_notes": "Bounded Phase E / Beta v4 pilot fully accepted. NotebookLM PASS 12/12, release-head technical QA PASS, production deploy SUCCESS, and owner production QA PASS from six screenshots of a completed 12-item session. Visible behavior confirms answer lock, supporting metadata-only, clone-family de-dup, singleton evidence, 12 attempts -> 7 max independent units, retry/history UI, and no mastery/readiness overclaim. Storage isolation remains supported by automated browser sentinel. Non-blocking UX polish candidate: simplify developer-oriented terms metadata / independent evidence unit. Any expansion is a separate reviewed gate."
+    },
+    {
+      "id": "MATH-SKILL-PHASE-F-EXPANSION-001",
+      "title": "Review bounded multi-topic canonical evidence expansion after accepted Beta v4",
+      "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_INDEPENDENT_REVIEW_BEFORE_RUNTIME",
+      "status": "AWAITING_NOTEBOOKLM_REVIEW",
+      "context_version": "1.0.75",
+      "review_verdict": "PENDING",
+      "review_notes": "Draft PR #208 design-only. Packet MATH-SKILL-PHASE-F-EXPANSION-R1-20260930; source blob 70d044f1de98f5b283a3e54fdecfd07fb25d82bd; manifest blob 5a5b339d7372068dd692b9a03dc1277758a6b6d5. Scope: 15 new source-locked items across CĐ04–07, 5 canonical skills, max 9 new independent evidence units. Tests prospective cross-topic aggregation, mixed evidence classes, legacy-tag boundary and append-only reuse of canonical store. No runtime/mastery/readiness/migration."
     }
   ]
 }
