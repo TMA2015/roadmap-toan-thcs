@@ -94,6 +94,8 @@ Một hình vẽ cho hai tam giác trông bằng nhau nhưng đề chưa cho đ�
 - [ ] Tôi không dùng c.g.c với góc không xen giữa.
 
 ## Liên kết Roadmap
-- **← Học:** [Chuyên đề 14](index.md)
+
+- **← Chuyên đề trước:** [13 – Góc và đường thẳng](../13-goc-va-duong-thang/index.md)
+- **← Học kiến thức:** [Chuyên đề 14 – Tam giác](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [15 – Các đường đồng quy](../15-duong-dong-quy/index.md)
+- **→ Chuyên đề tiếp theo:** [15 – Các đường đồng quy](../15-duong-dong-quy/index.md)
