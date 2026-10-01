@@ -1,5 +1,5 @@
 {
-  "version": "1.0.130",
+  "version": "1.0.131",
   "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Owner explicitly authorized controlled production release for Written Library Expansion B7. Persisted authorization now requires fresh exact-head Roadmap PR Quality revalidation on PR #255. If the final exact HEAD passes and main remains at the verified base with no drift, merge/deploy B7 and verify production 44 items / 22 topics.",
+    "next_priority": "Written Library Expansion B7 is production released: PR #255 merged as 47adffd87b654a1bd2b6854ddbc270bbf31dfa62 and Deploy MkDocs 36900375742 succeeded. Production catalog is 44 items / 22 topics with CT21 exactly two items. Next gate is owner real-device QA on iPad and desktop; keep B7 open until that acceptance is recorded.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1289,7 +1289,7 @@
       ]
     },
     "written_library_expansion_b7": {
-      "status": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-001",
       "review_pr": 254,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-R1-20261001",
@@ -1332,7 +1332,7 @@
           "CT24"
         ]
       },
-      "production_release": false,
+      "production_release": true,
       "auto_readiness_credit": false,
       "canonical_evidence_g3_changed": false,
       "architecture_notes": [
@@ -1354,7 +1354,26 @@
         "browser_visual_qa": "PASS"
       },
       "owner_release_authorized": true,
-      "owner_release_authorized_at": "2026-10-02"
+      "owner_release_authorized_at": "2026-10-02",
+      "final_release_qa": {
+        "exact_tested_head": "f0df2011ab9694b06c30ffda1b7fa872d2dc1fda",
+        "roadmap_pr_quality_run": 36899579636,
+        "result": "PASS",
+        "strict_mkdocs_build": "PASS",
+        "browser_visual_qa": "PASS",
+        "main_base_before_merge": "0bb3ee85e6bb57a7ab86dce88bf25eeee16a677d",
+        "base_drift": false
+      },
+      "production": {
+        "implementation_pr": 255,
+        "merge_commit": "47adffd87b654a1bd2b6854ddbc270bbf31dfa62",
+        "deploy_run": 36900375742,
+        "deploy_result": "SUCCESS",
+        "pages_step": "SUCCESS",
+        "catalog_exercise_count": 44,
+        "catalog_topic_count": 22
+      },
+      "owner_production_qa": "PENDING"
     }
   },
   "handoff_required_fields": [

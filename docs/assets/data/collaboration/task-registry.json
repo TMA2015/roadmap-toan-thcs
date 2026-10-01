@@ -1,5 +1,5 @@
 {
-  "version": "1.0.130",
+  "version": "1.0.131",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.130",
-      "review_verdict": "B7_OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
-      "review_notes": "B7 CT21 NotebookLM PASS 2/2 + ARCH_1..ARCH_10 and technical QA PASS on b8aa8617212d5435d6e92311f2599e55880c1630 / Roadmap PR Quality 36898694706. Owner explicitly authorized controlled production release on 2026-10-02. Fresh exact-head QA is required after this saved authorization checkpoint before merge/deploy."
+      "context_version": "1.0.131",
+      "review_verdict": "B7_RELEASED_44_ITEMS_22_TOPICS_OWNER_QA_PENDING",
+      "review_notes": "B7 CT21 production release succeeded. PR #255 merged as 47adffd87b654a1bd2b6854ddbc270bbf31dfa62 after final exact-head Roadmap PR Quality 36899579636 PASS; Deploy MkDocs 36900375742 SUCCESS including Deploy to GitHub Pages. Production catalog is 44 items / 22 topics. Owner real-device QA on iPad and desktop remains pending."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -846,9 +846,9 @@
       "title": "Expand Written Exercise Library to CĐ21 Thống kê",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
       "status": "OPEN",
-      "context_version": "1.0.130",
-      "review_verdict": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
-      "review_notes": "NotebookLM PASS 2/2 + ARCH_1..ARCH_10. Technical QA PASS on b8aa8617212d5435d6e92311f2599e55880c1630 / Roadmap PR Quality 36898694706, including strict MkDocs build and browser/visual QA. Owner explicitly authorized controlled production release on 2026-10-02. Re-run fresh exact-head QA after this saved authorization checkpoint; merge/deploy only if clean and main has no base drift."
+      "context_version": "1.0.131",
+      "review_verdict": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "review_notes": "NotebookLM PASS 2/2 + ARCH_1..ARCH_10. Owner controlled release authorized 2026-10-02. Final exact-head f0df2011ab9694b06c30ffda1b7fa872d2dc1fda passed Roadmap PR Quality 36899579636; PR #255 merged as 47adffd87b654a1bd2b6854ddbc270bbf31dfa62; Deploy MkDocs 36900375742 SUCCESS including GitHub Pages. Production is 44 items / 22 topics. Await owner QA on iPad and desktop before closing DONE."
     }
   ]
 }

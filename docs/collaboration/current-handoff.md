@@ -1,12 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 02/10/2026, Written Library Expansion B7 owner controlled release AUTHORIZED / exact-head revalidation pending.** NotebookLM **2/2 + ARCH_1–ARCH_10 PASS**. Technical QA on `b8aa8617212d5435d6e92311f2599e55880c1630` / Roadmap PR Quality `36898694706` **SUCCESS**, including strict MkDocs build and browser/visual QA. Owner explicitly authorized controlled production release. Prospective catalog: **44 items / 22 topics**. Fresh exact-head QA is required after this saved authorization checkpoint before merge/deploy.
+> **CURRENT CHECKPOINT — 02/10/2026, Written Library Expansion B7 PRODUCTION RELEASED / owner QA pending.** NotebookLM **2/2 + ARCH_1–ARCH_10 PASS**. Owner controlled release authorized. Final exact-head `f0df2011ab9694b06c30ffda1b7fa872d2dc1fda` passed Roadmap PR Quality `36899579636`; PR #255 merged as `47adffd87b654a1bd2b6854ddbc270bbf31dfa62`; Deploy MkDocs `36900375742` **SUCCESS**, including **Deploy to GitHub Pages**. Production catalog verified at **44 items / 22 topics**, with exactly two CĐ21 items. Owner real-device QA on iPad + desktop remains pending.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Written Library Expansion B7 — NotebookLM PASS / technical QA pending (01/10/2026)
+## Written Library Expansion B7 — PRODUCTION RELEASED / owner QA pending (02/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B7-001`.
 - Academic packet: `MATH-WRITTEN-LIBRARY-EXPANSION-B7-R1-20261001`.
@@ -24,7 +24,12 @@
 - Self-marking only; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion.
 - Technical QA: exact HEAD `b8aa8617212d5435d6e92311f2599e55880c1630`, Roadmap PR Quality `36898694706` **SUCCESS**; strict MkDocs build PASS; browser interaction + visual previews PASS.
 - Owner explicitly authorized **controlled production release** on 02/10/2026.
-- Current gate: fresh exact-head QA after this saved authorization checkpoint, then merge/deploy only if clean and `main` has no base drift.
+- Final exact-head QA after saved authorization checkpoint: `f0df2011ab9694b06c30ffda1b7fa872d2dc1fda`, Roadmap PR Quality `36899579636` **SUCCESS**; strict MkDocs build PASS; browser interaction + visual previews PASS.
+- No base drift before merge: `main` remained `0bb3ee85e6bb57a7ab86dce88bf25eeee16a677d`.
+- PR #255 production merge: `47adffd87b654a1bd2b6854ddbc270bbf31dfa62`.
+- Deploy MkDocs `36900375742`: **SUCCESS**, including **Deploy to GitHub Pages**.
+- Production catalog verified on `main`: **44 items / 22 topics**, with CĐ21 exactly `WX21-STA-001` and `WX21-STA-002`.
+- Owner production QA: **PENDING** — confirm on iPad and desktop that CĐ21 shows exactly 2 items and the two items open/render correctly.
 
 ## Written Library Expansion B6 — CLOSED DONE / owner QA PASS (01/10/2026)
 
