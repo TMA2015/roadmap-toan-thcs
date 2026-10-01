@@ -1,5 +1,5 @@
 {
-  "version": "1.0.121",
+  "version": "1.0.122",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B5 has NotebookLM PASS 6/6 + ARCH_1–ARCH_10, exact-head technical QA PASS, and owner controlled-release authorization. Re-run exact-head QA after this saved authorization checkpoint; if clean and main has no base drift, merge/deploy PR #250. CT22 remains THPT-Bridge and outside the THCS Core Written Library.",
+    "next_priority": "Written Library Expansion B5 is PRODUCTION RELEASED after saved authorization checkpoint, fresh exact-head QA PASS, merge and Deploy MkDocs SUCCESS. Owner production QA should confirm 36 items / 18 topics and CT04/CT05/CT06 each expose exactly 2 exercises. CT22 remains THPT-Bridge and outside the THCS Core Written Library.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1083,7 +1083,7 @@
       ]
     },
     "written_library_expansion_b5": {
-      "status": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-001",
       "review_pr": 249,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001",
@@ -1128,7 +1128,7 @@
           "CT24"
         ]
       },
-      "production_release": false,
+      "production_release": true,
       "auto_readiness_credit": false,
       "canonical_evidence_g3_changed": false,
       "architecture_note": "CT22 remains THPT-Bridge and is not promoted into the THCS Core Written Library.",
@@ -1138,7 +1138,39 @@
         "result": "PASS"
       },
       "owner_release_authorized": true,
-      "owner_release_authorized_at": "2026-10-01"
+      "owner_release_authorized_at": "2026-10-01",
+      "final_exact_tested_head": "6f5ad2fb23e6cbce07e26b80901ca05297a73978",
+      "final_roadmap_pr_quality_run": 36886706322,
+      "final_qa_result": "SUCCESS",
+      "implementation_pr": 250,
+      "production_merge": "798cc58919aa15cd69fa28aeb5132929047f3113",
+      "deploy_run": 36887406960,
+      "deploy_conclusion": "SUCCESS",
+      "owner_production_qa": "PENDING",
+      "expected_production_catalog": {
+        "exercise_count": 36,
+        "topic_count": 18,
+        "topics": [
+          "CT04",
+          "CT05",
+          "CT06",
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT13",
+          "CT14",
+          "CT15",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT23",
+          "CT24"
+        ]
+      }
     }
   },
   "handoff_required_fields": [
