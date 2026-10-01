@@ -1,5 +1,5 @@
 {
-  "version": "1.0.103",
+  "version": "1.0.104",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Topic-filter numeric sort is OWNER QA PASS and CLOSED. Proceed with Written Library Expansion B2 as review-only for CT09/CT16/CT18; NotebookLM academic gate required before any production implementation. Patch 1 deep-link owner spot-check remains independent and non-blocking.",
+    "next_priority": "Written Library Expansion B2 has NotebookLM PASS 6/6 + ARCH_1–ARCH_10 and is staged on a separate implementation branch for exact-head technical QA. Intended catalog: 18 items / 9 topics after append. No release until technical QA is clean and owner controlled-release authorization is reconciled. Patch 1 deep-link owner spot-check remains independent.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -719,7 +719,7 @@
       ]
     },
     "written_library_expansion_b1": {
-      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-001",
       "review_pr": 239,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001",
@@ -759,7 +759,7 @@
       "production_merge": "6f506f1f0434d1f06099a4e78c2f669ffe2e9257",
       "deploy_run": 36860706849,
       "deploy_conclusion": "SUCCESS",
-      "owner_production_qa": "PARTIAL_PASS_COUNTS_AND_NEW_TOPICS",
+      "owner_production_qa": "PASS_COUNTS_NEW_TOPICS",
       "expected_production_catalog": {
         "exercise_count": 12,
         "topics": [
@@ -797,6 +797,47 @@
         "CT24"
       ],
       "owner_qa_date": "2026-10-01"
+    },
+    "written_library_expansion_b2": {
+      "status": "NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B2-001",
+      "review_pr": 242,
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B2-R1-20261001",
+      "candidate_blob": "334f2c31e43a219bb4917fc8ef0dcf52fdc2de1b",
+      "notebooklm_result": "PASS_6_OF_6_ARCH_10_OF_10",
+      "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "topics": [
+        "CT09",
+        "CT16",
+        "CT18"
+      ],
+      "item_ids": [
+        "WX09-SYS-001",
+        "WX09-SYS-002",
+        "WX16-QUAD-001",
+        "WX16-QUAD-002",
+        "WX18-TRI-001",
+        "WX18-TRI-002"
+      ],
+      "implementation_branch": "feature/written-library-expansion-b2-20261001",
+      "intended_catalog": {
+        "exercise_count": 18,
+        "topic_count": 9,
+        "topics": [
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT14",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT24"
+        ]
+      },
+      "production_release": false,
+      "auto_readiness_credit": false,
+      "canonical_evidence_g3_changed": false
     }
   },
   "handoff_required_fields": [
