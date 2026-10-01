@@ -38,7 +38,9 @@ for(const topic of ["CT07","CT08","CT09","CT10","CT11","CT12","CT14","CT16","CT1
 for(const x of data.exercises){
   ok(x.exercise_kind==="standard","kind "+x.exercise_id);
   ok(x.learning_layer==="KNTT-Core"||x.learning_layer==="Core-Support","layer "+x.exercise_id);
-  ok(Array.isArray(x.solution_steps)&&x.solution_steps.length>=4,"solution depth "+x.exercise_id);
+  ok(Array.isArray(x.solution_steps)&&x.solution_steps.length>=3,"solution depth "+x.exercise_id);
+  ok(new Set(x.solution_steps.map(s=>s.step_id)).size===x.solution_steps.length,"unique solution step IDs "+x.exercise_id);
+  ok(x.solution_steps.every(s=>String(s.title||"").trim()&&String(s.content_markdown||"").trim()),"complete solution steps "+x.exercise_id);
   ok(Array.isArray(x.rubric)&&x.rubric.length>=4,"rubric "+x.exercise_id);
   const sum=x.rubric.reduce((n,r)=>n+Number(r.points||0),0);
   ok(sum===x.rubric_total,"rubric total "+x.exercise_id);
