@@ -1,7 +1,7 @@
 /* Written Exercise Library v1 */
 .written-library-shell{margin:1rem 0}
 .written-library-note{margin:.8rem 0 1rem;padding:.8rem 1rem;border-left:.22rem solid var(--md-primary-fg-color);border-radius:.45rem;background:color-mix(in srgb,var(--md-primary-fg-color) 7%,var(--md-default-bg-color));font-size:.84rem}
-.written-library-controls{display:grid;grid-template-columns:minmax(12rem,2fr) minmax(10rem,1fr) minmax(9rem,1fr);gap:.55rem;margin:1rem 0}
+.written-library-controls{display:grid;grid-template-columns:minmax(12rem,2fr) repeat(3,minmax(9rem,1fr));gap:.55rem;margin:1rem 0}
 .written-library-search,.written-library-select{box-sizing:border-box;min-height:2.7rem;width:100%;padding:.55rem .7rem;border:1px solid var(--md-default-fg-color--lighter);border-radius:.5rem;background:var(--md-default-bg-color);color:var(--md-default-fg-color);font:inherit;font-size:.78rem}
 .written-library-count{font-size:.76rem;opacity:.72}
 .written-library-results{display:grid;gap:1rem}
