@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library B2 OWNER QA PASS / CLOSED; durable intro-copy fix PRODUCTION RELEASED / owner spot-QA pending.** Production remains **18 items / 9 topics**. PR #244 removed stale `Pilot v1` / `6 bài` / fixed CĐ07-CĐ14-CĐ24 copy and replaced it with durable expansion + live-filter guidance; exact QA `36869043055` SUCCESS, merge `aa813c19fab105c5e0f3ef12a982f98406fac5de`, Deploy MkDocs `36869588454` SUCCESS. B2 batch metadata is now `PUBLISHED`. Patch 1 deep-link owner spot-check remains independent.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library intro-copy OWNER QA PASS / CLOSED; B3 review-only next.** B2 remains closed at **18 items / 9 topics**. The durable intro copy is owner-approved. Next academic expansion is **B3 review-only: CĐ10 + CĐ11 + CĐ12**, two items per topic (CORE_BASE + CORE_APPLY), with NotebookLM required before implementation. Patch 1 deep-link owner spot-check remains independent and non-blocking.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -16,7 +16,7 @@
 - Exact-head QA: `3f459683f8fe1bff52c1f32eb645e3b24a792b89`, Roadmap PR Quality `36869043055` **SUCCESS**.
 - PR #244 merge: `aa813c19fab105c5e0f3ef12a982f98406fac5de`.
 - Deploy MkDocs `36869588454`: **SUCCESS**.
-- Owner production spot-QA: **PENDING** — refresh the library page and confirm the stale pilot/count/topic-list copy is gone.
+- Owner production spot-QA: **PASS**. Task closed.
 
 ## Written Library Expansion B2 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 

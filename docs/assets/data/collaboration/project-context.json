@@ -1,5 +1,5 @@
 {
-  "version": "1.0.108",
+  "version": "1.0.109",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "B2 is OWNER QA PASS and CLOSED. Written Library durable intro-copy fix is PRODUCTION RELEASED after CI/deploy success; owner may refresh once to confirm stale Pilot v1 / 6-item copy is gone. Patch 1 still has one independent owner spot-check: topic 'Các dạng bài' deep link auto-filters correctly. After that, continue append-only Written Library expansion by reviewed batch.",
+    "next_priority": "Written Library intro-copy owner QA PASS and CLOSED. Proceed with Expansion B3 as review-only for CT10/CT11/CT12 (2 items per topic, Core Base + Core Apply), with NotebookLM academic review required before implementation. Patch 1 deep-link owner spot-check remains independent.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -874,7 +874,7 @@
       ]
     },
     "written_library_intro_copy": {
-      "status": "PRODUCTION_RELEASED_OWNER_SPOT_QA_PENDING",
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
       "task_id": "MATH-WRITTEN-LIBRARY-INTRO-COPY-001",
       "rule": "Library intro must not hard-code a pilot count or fixed topic list; live catalog/filter UI is the source of current coverage.",
       "branch": "fix/written-library-durable-intro-20261001",
@@ -886,7 +886,8 @@
       "production_merge": "aa813c19fab105c5e0f3ef12a982f98406fac5de",
       "deploy_run": 36869588454,
       "deploy_conclusion": "SUCCESS",
-      "owner_spot_qa": "PENDING"
+      "owner_spot_qa": "PASS",
+      "owner_qa_date": "2026-10-01"
     }
   },
   "handoff_required_fields": [
