@@ -535,9 +535,10 @@
       "id": "G6-T02-OWNER-UX-001",
       "title": "Owner real-device confirmation of grade-six Topic02 learning and Readiness",
       "routing": "OWNER_DEVICE_QA",
-      "status": "OPEN",
-      "review_notes": "Still OPEN, but do not duplicate the already accepted CĐ02 card-function QA. Owner already confirmed CĐ02/CĐ23 Core/Application card functions on desktop+iPad. This task is narrower and end-to-end: class6 chapter link → five Grade6 learning cards → micro hints → after-submit Readiness → next-topic link, with no phantom attempts/data loss. Desktop+iPad acceptance of cards alone is not sufficient to close this journey/readiness gate.",
-      "context_version": "1.0.90"
+      "status": "DONE",
+      "review_notes": "Owner confirmed CĐ02 end-to-end desktop/iPad PASS on 2026-10-01 with no observed functional errors. Accepted journey: topic page → five Grade6 Core stages → micro/help flow → post-submit Readiness → next-topic link. Prior card-function acceptance remains valid. Task CLOSED DONE.",
+      "context_version": "1.0.92",
+      "review_verdict": "OWNER_DESKTOP_IPAD_PASS_CLOSED_DONE"
     },
     {
       "id": "TOPIC25-R2-SOURCE-COVERAGE-001",
@@ -638,11 +639,11 @@
       "id": "MATH-UI-BATCH-A-OWNER-QA-001",
       "title": "Owner acceptance of released CĐ02/21/23/24/25 standalone pages",
       "routing": "OWNER_DEVICE_QA",
-      "status": "OPEN",
-      "review_verdict": "CI_BROWSER_PASS_OWNER_UNVERIFIED",
-      "review_notes": "Partial owner acceptance is already recorded for CĐ02 and CĐ23 card functions on desktop+iPad. Remaining owner acceptance scope is CĐ21/CĐ24/CĐ25 standalone pages (plus any Batch A navigation/modal points not explicitly reported). Do not re-test CĐ02/CĐ23 card basics merely to close this task; G6-T02-OWNER-UX-001 separately owns the deeper Grade6 CĐ02 journey/Readiness check.",
+      "status": "DONE",
+      "review_verdict": "OWNER_DESKTOP_IPAD_PASS_CLOSED_DONE",
+      "review_notes": "Owner confirmed CĐ21/CĐ24/CĐ25 desktop+iPad PASS on 2026-10-01 with no observed functional errors. Combined with earlier CĐ02/CĐ23 card acceptance, Batch A owner-device acceptance is complete. Task CLOSED DONE.",
       "source_commit": "c1b461885d7da1bd3cafef34f357c04c493df3b0",
-      "context_version": "1.0.90"
+      "context_version": "1.0.92"
     },
     {
       "id": "MATH-CORE03-ACADEMIC-AUTHOR-001",
@@ -731,6 +732,33 @@
       "context_version": "1.0.89",
       "review_verdict": "ACCEPTED_PRODUCTION_CI_BROWSER_PASS_OWNER_QA_PASS",
       "review_notes": "Owner spot-QA PASS on both desktop and iPad. Practice help disclosure opens/closes/reopens with the same button; Core hints reveal sequentially, collapse/reopen correctly, and viewed hints remain counted. Exact tested HEAD e55667c5a0db5b034e832feeef1d95334d63aa01; Roadmap PR Quality run 36719189942 SUCCESS; production merge fb571ec78cfaf56f82d7dd81b719481dc4296e2b; Deploy MkDocs run 36719709094 SUCCESS. Browser QA confirmed no phantom attempts and assistance state persisted. Task CLOSED DONE."
+    },
+    {
+      "id": "MATH-TOPIC-NAV-FIX-001",
+      "title": "Fix topic continuation rendering and standardize Practice roadmap order",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_SPOT_QA",
+      "status": "OPEN",
+      "context_version": "1.0.92",
+      "review_verdict": "PATCH_STAGED_CI_PENDING",
+      "review_notes": "Owner observed raw Markdown in 'Tiếp tục học'. Audit found vulnerable raw-HTML wrapper in CĐ02 and CĐ04–13. Patch removes wrapper. Practice roadmap footers CĐ02–25 are standardized to previous topic → same-topic links → next topic; CĐ25 remains capstone. Regression test added. Await CI/deploy and owner spot-QA."
+    },
+    {
+      "id": "MATH-TOPIC-NAV-DEDUP-001",
+      "title": "Review duplicate top stepper vs in-topic quick navigation",
+      "routing": "CHATGPT_UX_AUDIT",
+      "status": "OPEN",
+      "context_version": "1.0.92",
+      "review_verdict": "NON_BLOCKING_OWNER_OBSERVATION",
+      "review_notes": "Owner noted the top four-step topic navigation and in-topic quick menu can duplicate each other. Not a functional defect. Do not remove either surface yet; later compare learner value, mobile behavior and scroll context, then consolidate only if one surface is redundant."
+    },
+    {
+      "id": "MATH-WRITTEN-EXERCISE-LIBRARY-001",
+      "title": "Build paper-first written exercise and anchor library",
+      "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
+      "status": "OPEN",
+      "context_version": "1.0.92",
+      "review_verdict": "DESIGN_DIRECTION_RECORDED_PILOT_NOT_STARTED",
+      "review_notes": "Owner selected a written exercise library as the preferred bridge from theoretical 'Các dạng bài' to real mathematical writing. v1 design: 1 Core Base item per problem type where sufficient; optional second Core Apply item; solve on paper; reveal stepwise solution; rubric; common errors/remediation; anchor problems surfaced without duplicating A25 IDs; no handwriting upload/AI grading/readiness credit. Recommended six-item pilot across CĐ07/CĐ14/CĐ24."
     }
   ]
 }
