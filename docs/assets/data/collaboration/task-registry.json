@@ -1,5 +1,5 @@
 {
-  "version": "1.0.127",
+  "version": "1.0.128",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.126",
-      "review_verdict": "B6_RELEASED_42_ITEMS_21_TOPICS_OWNER_QA_PENDING",
-      "review_notes": "Written Library production now contains 42 items / 21 topics after B6 release. Owner production QA should confirm CT02/CT03/CT20 appear and each has exactly 2 exercises. CT01 roadmap-only, CT22 THPT-Bridge, CT25 Entrance10 remain outside normal Core append."
+      "context_version": "1.0.128",
+      "review_verdict": "B7_NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "review_notes": "B6 owner QA closed DONE at 42 items / 21 topics. B7 NotebookLM PASS 2/2 + ARCH_1..ARCH_10 for CT21 only. Separate implementation branch stages append-only expansion to 44 items / 22 topics. Preserve CT21 five-card KNTT-Core boundary; no frequency/tần suất or grouped-data promotion, no CT22/CT25 expansion, no automatic Readiness/mastery credit and no canonical-evidence/G3 expansion."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -840,6 +840,15 @@
       "context_version": "1.0.127",
       "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
       "review_notes": "Owner production QA PASS on both iPad and desktop: CT02, CT03 and CT20 are present and each exposes exactly 2 exercises. Release provenance remains PR #252 / merge 6dadcb1fb969380dc6fb5f7c241740dc769ae919 / Deploy MkDocs 36893580607 SUCCESS. Production remains 42 exercises / 21 topics. CT02 remains grade-6 Core journey; CT20 remains Core measurement/solid geometry. B6 closed."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-001",
+      "title": "Expand Written Exercise Library to CĐ21 Thống kê",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "OPEN",
+      "context_version": "1.0.128",
+      "review_verdict": "NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "review_notes": "NotebookLM PASS 2/2 + ARCH_1..ARCH_10; authorization CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA. Review PR #254 exact-head preflight 15eb19db0073455483b9576998cb1f9f93846ca6 / Roadmap PR Quality 36897216442 SUCCESS. Implementation stages WX21-STA-001 and WX21-STA-002 only, taking the prospective catalog from 42 to 44 items and 21 to 22 topics. Production release not yet authorized."
     }
   ]
 }
