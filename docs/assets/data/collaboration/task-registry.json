@@ -1,5 +1,5 @@
 {
-  "version": "1.0.116",
+  "version": "1.0.117",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -819,9 +819,9 @@
       "title": "Expand Written Exercise Library to CĐ13/CĐ15/CĐ23",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
       "status": "OPEN",
-      "context_version": "1.0.116",
-      "review_verdict": "NOTEBOOKLM_PASS_6_OF_6_ARCH_10_OF_10_TECHNICAL_IMPLEMENTATION_STAGED",
-      "review_notes": "NotebookLM academic R1 PASS for WX13-LIN-001/002, WX15-CEN-001/002, WX23-PRO-001/002. Authorization is limited to separate technical implementation/QA. Append-only catalog expansion to 30 items / 15 topics; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
+      "context_version": "1.0.117",
+      "review_verdict": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_AUTHORIZED",
+      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Implementation PR #248 exact-head technical QA on 9dc51f28a670fc8748a670f3d876793940623114 passed Roadmap PR Quality 36880519503. Owner explicitly authorized controlled production release on 2026-10-01. Intended append-only production state: 30 items / 15 topics; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion. Fresh exact-head revalidation is required after this authorization checkpoint."
     }
   ]
 }
