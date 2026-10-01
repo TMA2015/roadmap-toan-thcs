@@ -172,6 +172,8 @@ Giải hệ \(\frac{x+y}{2}=3,\ \frac{x-y}{3}=1\).
 - [ ] Khi tương đối chắc, tôi chuyển sang [✅ Core Readiness Check](tu-kiem-tra.md).
 
 ## Liên kết Roadmap
-- **← Học:** [Chuyên đề 09](index.md)
+
+- **← Chuyên đề trước:** [08 – Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md)
+- **← Học kiến thức:** [Chuyên đề 09 – Hệ phương trình](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [10 – Hàm số và đồ thị](../10-ham-so-do-thi/index.md)
+- **→ Chuyên đề tiếp theo:** [10 – Hàm số và đồ thị](../10-ham-so-do-thi/index.md)
