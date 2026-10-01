@@ -25,7 +25,8 @@
       return;
     }
 
-    let topic="all",level="all",term="";
+    const params=new URLSearchParams(location.search);
+    let topic=params.get("topic")||"all",level=params.get("level")||"all",type=params.get("type")||"all",term="";
     const shell=el("div","written-library-shell");
     const intro=el("div","written-library-note");
     intro.innerHTML="<strong>Làm trên giấy trước.</strong> Chỉ mở hướng dẫn khi em đã tự thử. Rubric dùng để tự đối chiếu, không tạo điểm Readiness.";
@@ -34,9 +35,15 @@
     search.type="search";search.placeholder="Tìm theo dạng bài, kỹ năng hoặc ID…";search.setAttribute("aria-label","Tìm bài tự luận");
     const topicSelect=document.createElement("select");topicSelect.className="written-library-select";topicSelect.setAttribute("aria-label","Lọc theo chuyên đề");
     [["all","Tất cả chuyên đề"],["CT07","CĐ07 · Phân thức đại số"],["CT14","CĐ14 · Tam giác"],["CT24","CĐ24 · Bài toán thực tế"]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;topicSelect.appendChild(o);});
+    const typeSelect=document.createElement("select");typeSelect.className="written-library-select";typeSelect.setAttribute("aria-label","Lọc theo dạng bài");
+    const typeMap=new Map(data.exercises.map(x=>[x.problem_type_id,x.problem_type_title]));
+    [["all","Tất cả dạng bài"],...[...typeMap.entries()]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;typeSelect.appendChild(o);});
     const levelSelect=document.createElement("select");levelSelect.className="written-library-select";levelSelect.setAttribute("aria-label","Lọc theo mức");
     [["all","Tất cả mức"],["CORE_BASE","Core Base"],["CORE_APPLY","Core Apply"]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;levelSelect.appendChild(o);});
-    controls.append(search,topicSelect,levelSelect);
+    if([...topicSelect.options].some(o=>o.value===topic))topicSelect.value=topic;else topic="all";
+    if([...typeSelect.options].some(o=>o.value===type))typeSelect.value=type;else type="all";
+    if([...levelSelect.options].some(o=>o.value===level))levelSelect.value=level;else level="all";
+    controls.append(search,topicSelect,typeSelect,levelSelect);
     const count=el("p","written-library-count");
     const results=el("div","written-library-results");
 
@@ -50,6 +57,7 @@
       const q=term.toLowerCase();
       const list=data.exercises.filter(x=>
         (topic==="all"||x.topic_id===topic)&&
+        (type==="all"||x.problem_type_id===type)&&
         (level==="all"||x.level===level)&&
         [x.exercise_id,x.title,x.problem_type_title,...x.skills].join(" ").toLowerCase().includes(q)
       );
@@ -107,6 +115,7 @@
 
     search.addEventListener("input",()=>{term=search.value.trim();render();});
     topicSelect.addEventListener("change",()=>{topic=topicSelect.value;render();});
+    typeSelect.addEventListener("change",()=>{type=typeSelect.value;render();});
     levelSelect.addEventListener("change",()=>{level=levelSelect.value;render();});
     shell.append(intro,controls,count,results);
     root.replaceChildren(shell);root.dataset.ready="1";render();
