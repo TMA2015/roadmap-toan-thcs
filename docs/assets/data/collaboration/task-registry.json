@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.92",
-      "review_verdict": "DESIGN_DIRECTION_RECORDED_PILOT_NOT_STARTED",
-      "review_notes": "Owner selected a written exercise library as the preferred bridge from theoretical 'Các dạng bài' to real mathematical writing. v1 design: 1 Core Base item per problem type where sufficient; optional second Core Apply item; solve on paper; reveal stepwise solution; rubric; common errors/remediation; anchor problems surfaced without duplicating A25 IDs; no handwriting upload/AI grading/readiness credit. Recommended six-item pilot across CĐ07/CĐ14/CĐ24."
+      "context_version": "1.0.94",
+      "review_verdict": "PILOT_STAGED_NOTEBOOKLM_R1_PENDING",
+      "review_notes": "Six-item pilot staged on feature/written-exercise-library-pilot-20261001: CĐ07/CĐ14/CĐ24, one CORE_BASE + one CORE_APPLY each. JSON source of truth, central /luyen-tap/ UI, filters by topic/problem type/level, stepwise solution, rubric, common mistakes, remediation, two geometry SVGs, no automatic Readiness/mastery credit. Source-locked NotebookLM packet MATH-WRITTEN-LIBRARY-PILOT-R1-20261001 prepared. Do not merge/publish before academic PASS and separate technical QA."
     }
   ]
 }
