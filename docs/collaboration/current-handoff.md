@@ -1,12 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B4 NotebookLM PASS / technical implementation staged.** B4: 6/6 items PASS + ARCH_1–ARCH_10 PASS for CĐ13/CĐ15/CĐ23; separate implementation branch stages append-only expansion from **24 → 30 items / 12 → 15 topics**. Review preflight `36879068239` SUCCESS. No Readiness/mastery/canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B4 owner controlled release AUTHORIZED; exact-head revalidation pending after saved authorization checkpoint.** NotebookLM **6/6 + ARCH_1–ARCH_10 PASS**. Technical QA on `9dc51f28a670fc8748a670f3d876793940623114` / run `36880519503` **SUCCESS**. Owner explicitly authorized controlled production release. Intended catalog: **30 items / 15 topics**. No Readiness/mastery/canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Written Library Expansion B4 — NotebookLM PASS / technical implementation staged (01/10/2026)
+## Written Library Expansion B4 — controlled release authorized / saved checkpoint (01/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B4-001`.
 - Review PR: **#247 Draft** — provenance/review only; **do not merge as implementation**.
@@ -33,7 +33,9 @@
 - Authorization: `CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA`.
 - Implementation branch: `feature/written-library-expansion-b4-20261001`.
 - Intended catalog after append: **30 items / 15 topics**, preserving all 24 currently published IDs.
-- Current gate: exact-head technical CI/browser QA before any merge/deploy.
+- Technical QA: exact HEAD `9dc51f28a670fc8748a670f3d876793940623114`, Roadmap PR Quality `36880519503` **SUCCESS**.
+- Owner explicitly authorized **controlled production release** on 01/10/2026.
+- Current gate: fresh exact-head QA after this authorization checkpoint, then merge/deploy if clean and `main` has no base drift.
 
 ## Written Library Expansion B3 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 
