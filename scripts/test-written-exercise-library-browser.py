@@ -94,7 +94,12 @@ with sync_playwright() as p:
         topic_page = context.new_page()
         topic_page.goto(BASE + "kien-thuc/07-phan-thuc-dai-so/", wait_until="networkidle")
         topic_link = topic_page.locator("[data-written-topic-link]")
-        topic_link.wait_for(state="visible", timeout=15000)
+        topic_link.wait_for(state="attached", timeout=15000)
+        types_card = topic_page.locator("#types")
+        assert types_card.count() == 1, (device, "problem-types learning card exists")
+        if types_card.get_attribute("open") is None:
+            types_card.locator("summary").click()
+        topic_link.wait_for(state="visible", timeout=5000)
         href = topic_link.get_attribute("href")
         assert "luyen-tap/?topic=CT07" in href, (device, "topic deep link prefilters CT07")
         topic_page.goto(BASE.rstrip("/") + href, wait_until="networkidle")
