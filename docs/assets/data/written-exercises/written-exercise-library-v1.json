@@ -1824,6 +1824,580 @@
         "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B2-R1-20261001",
         "receipt": "review-packets/written-exercise-library/17_NOTEBOOKLM_EXPANSION_B2_R1_PASS_RECEIPT.md"
       }
+    },
+    {
+      "exercise_id": "WX10-FUN-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT10",
+      "topic_slug": "10-ham-so-do-thi",
+      "topic_title": "Hàm số và đồ thị",
+      "problem_type_id": "linear-function-intercepts-variation",
+      "problem_type_title": "Đường thẳng: hệ số, giao trục và biến thiên",
+      "title": "Từ công thức đến hai điểm vẽ đường thẳng",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "he-so-goc",
+        "tung-do-goc",
+        "dong-nghich-bien",
+        "ve-do-thi-ham-bac-nhat"
+      ],
+      "prerequisites": [
+        "toa-do-diem"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Cho hàm số\n\n$$y=-2x+4.$$\n\n1. Xác định hệ số góc và tung độ gốc.\n2. Tìm giao điểm của đồ thị với hai trục tọa độ.\n3. Cho biết hàm số đồng biến hay nghịch biến.\n4. Nêu hai điểm có thể dùng để vẽ đồ thị.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Đọc hệ số từ dạng chuẩn",
+          "content_markdown": "So với $y=ax+b$, ta có\n\n$$a=-2,\\qquad b=4.$$\n\nVì vậy hệ số góc là $-2$ và tung độ gốc là $4$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Tìm giao điểm với Oy",
+          "content_markdown": "Trên trục $Oy$ thì $x=0$. Khi đó\n\n$$y=-2\\cdot0+4=4.$$\n\nĐồ thị cắt $Oy$ tại $A(0;4)$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Tìm giao điểm với Ox",
+          "content_markdown": "Trên trục $Ox$ thì $y=0$. Do đó\n\n$$-2x+4=0\\Rightarrow x=2.$$\n\nĐồ thị cắt $Ox$ tại $B(2;0)$."
+        },
+        {
+          "step_id": "S4",
+          "title": "Xét biến thiên",
+          "content_markdown": "Vì hệ số góc $a=-2<0$, hàm số **nghịch biến**."
+        },
+        {
+          "step_id": "S5",
+          "title": "Chọn hai điểm để vẽ",
+          "content_markdown": "Hai điểm $A(0;4)$ và $B(2;0)$ là hai điểm phân biệt thuộc đồ thị. Nối $A$ và $B$ ta được đường thẳng biểu diễn hàm số."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Xác định đúng $a=-2$, $b=4$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tìm đúng giao điểm $A(0;4)$ với $Oy$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tìm đúng giao điểm $B(2;0)$ với $Ox$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kết luận đúng hàm số nghịch biến vì $a<0$.",
+          "points": 1
+        },
+        {
+          "criterion": "Nêu đúng hai điểm phân biệt $A,B$ để vẽ đường thẳng.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Đổi nhầm giao $Oy$ thành $(4;0)$.",
+        "Xét dấu của $b$ thay vì $a$ để kết luận đồng/nghịch biến.",
+        "Cho $x=0$ và $y=0$ nhưng ghi sai thứ tự tọa độ."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ10 – Hàm số bậc nhất và đồ thị",
+          "href": "../kien-thuc/10-ham-so-do-thi/core/"
+        },
+        {
+          "label": "Practice Room CĐ10",
+          "href": "../kien-thuc/10-ham-so-do-thi/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/10-ham-so-do-thi/bai-tap.md#10-WR-05",
+        "docs/kien-thuc/10-ham-so-do-thi/bai-tap.md#10-WR-06",
+        "docs/kien-thuc/10-ham-so-do-thi/bai-tap.md#10-WR-07",
+        "docs/assets/data/curriculum/topic10-learning-workspace.json#fun10-core-3",
+        "docs/assets/data/curriculum/topic10-learning-workspace.json#fun10-core-4"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/24_NOTEBOOKLM_EXPANSION_B3_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX10-FUN-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT10",
+      "topic_slug": "10-ham-so-do-thi",
+      "topic_title": "Hàm số và đồ thị",
+      "problem_type_id": "parabola-table-symmetry-membership",
+      "problem_type_title": "Parabol y=ax²: bảng giá trị, đối xứng và điểm thuộc đồ thị",
+      "title": "Nhìn cấu trúc parabol từ bảng giá trị đối xứng",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "bang-gia-tri",
+        "ham-y-ax2",
+        "doi-xung-parabol",
+        "diem-thuoc-parabol"
+      ],
+      "prerequisites": [
+        "toa-do-diem"
+      ],
+      "estimated_minutes": 12,
+      "problem_markdown": "Cho parabol\n\n$$y=\\frac12x^2.$$\n\n1. Lập bảng giá trị khi $x=-4,-2,0,2,4$.\n2. Từ bảng, nêu đỉnh, trục đối xứng và hướng mở của parabol.\n3. Kiểm tra điểm $P(6;18)$ có thuộc parabol hay không.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Tính các giá trị y",
+          "content_markdown": "Thay lần lượt các giá trị $x$ vào $y=\\frac12x^2$:\n\n$$8,\\ 2,\\ 0,\\ 2,\\ 8.$$\n\nCác cặp tương ứng là $(-4;8),(-2;2),(0;0),(2;2),(4;8)$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Nhận ra tính đối xứng",
+          "content_markdown": "Các giá trị tại $x$ và $-x$ bằng nhau, nên đồ thị đối xứng qua trục $Oy$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Nêu đỉnh và hướng mở",
+          "content_markdown": "Đây là dạng đặc biệt $y=ax^2$ với $a=\\frac12>0$, nên parabol có đỉnh $O(0;0)$ và mở lên."
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra điểm P",
+          "content_markdown": "Với $x=6$:\n\n$$y=\\frac12\\cdot6^2=18.$$\n\nTung độ tính được đúng bằng tung độ của $P$, nên $P(6;18)$ thuộc parabol."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Lập đúng bảng $y=8,2,0,2,8$ theo thứ tự đã cho.",
+          "points": 1
+        },
+        {
+          "criterion": "Nêu đúng đối xứng qua $Oy$ từ các cặp $x,-x$.",
+          "points": 1
+        },
+        {
+          "criterion": "Nêu đúng đỉnh $O(0;0)$ và hướng mở lên vì $a>0$.",
+          "points": 1
+        },
+        {
+          "criterion": "Thay $x=6$, tính được $y=18$ và kết luận $P$ thuộc parabol.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Tính $(-4)^2=-16$ thay vì $16$.",
+        "Áp dụng tính chất đỉnh $O$ cho mọi hàm bậc hai thay vì đúng dạng $y=ax^2$.",
+        "Chỉ nhìn hình/ước lượng thay vì thay hoành độ để kiểm tra điểm thuộc đồ thị."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ10 – Parabol y=ax²",
+          "href": "../kien-thuc/10-ham-so-do-thi/core/"
+        },
+        {
+          "label": "Practice Room CĐ10",
+          "href": "../kien-thuc/10-ham-so-do-thi/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/10-ham-so-do-thi/bai-tap.md#10-WR-08",
+        "docs/kien-thuc/10-ham-so-do-thi/bai-tap.md#10-WR-09",
+        "docs/kien-thuc/10-ham-so-do-thi/bai-tap.md#10-WR-10",
+        "docs/assets/data/curriculum/topic10-learning-workspace.json#fun10-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/24_NOTEBOOKLM_EXPANSION_B3_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX11-RAD-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT11",
+      "topic_slug": "11-can-thuc",
+      "topic_title": "Căn thức và biến đổi căn thức",
+      "problem_type_id": "radical-domain-absolute-value",
+      "problem_type_title": "Điều kiện căn và căn của bình phương",
+      "title": "Xét điều kiện trước, giữ giá trị tuyệt đối đúng chỗ",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "dkxd-can",
+        "can-binh-phuong"
+      ],
+      "prerequisites": [
+        "phep-tinh-so-thuc"
+      ],
+      "estimated_minutes": 9,
+      "problem_markdown": "Cho biểu thức\n\n$$A=\\sqrt{(x-3)^2}+\\sqrt{2x-4}.$$\n\n1. Tìm điều kiện xác định của $A$.\n2. Rút gọn căn thức thứ nhất.\n3. Tính $A$ tại $x=2$.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Tìm điều kiện xác định",
+          "content_markdown": "Căn $\\sqrt{(x-3)^2}$ luôn có nghĩa với mọi $x$ thực. Căn thứ hai cần\n\n$$2x-4\\ge0\\Rightarrow x\\ge2.$$\n\nVậy điều kiện xác định của $A$ là $x\\ge2$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Rút gọn căn của bình phương",
+          "content_markdown": "Với mọi $x$ thực,\n\n$$\\sqrt{(x-3)^2}=|x-3|.$$\n\nDo đó trên miền xác định,\n\n$$A=|x-3|+\\sqrt{2x-4}.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Thay x=2",
+          "content_markdown": "Giá trị $x=2$ thỏa điều kiện. Khi đó\n\n$$A=|2-3|+\\sqrt{4-4}=1+0=1.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Xác định đúng điều kiện $x\\ge2$.",
+          "points": 1
+        },
+        {
+          "criterion": "Rút gọn đúng $\\sqrt{(x-3)^2}=|x-3|$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra $x=2$ thuộc miền xác định và tính đúng $A=1$.",
+          "points": 1
+        },
+        {
+          "criterion": "Không tự bỏ dấu giá trị tuyệt đối khi chưa biết dấu $x-3$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Bắt $(x-3)^2\\ge0$ rồi tạo thêm điều kiện không cần thiết.",
+        "Viết $\\sqrt{(x-3)^2}=x-3$ với mọi $x$.",
+        "Thay số trước khi xác định miền của biểu thức."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ11 – Điều kiện và căn của bình phương",
+          "href": "../kien-thuc/11-can-thuc/core/"
+        },
+        {
+          "label": "Practice Room CĐ11",
+          "href": "../kien-thuc/11-can-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/11-can-thuc/bai-tap.md#11-WR-01",
+        "docs/kien-thuc/11-can-thuc/bai-tap.md#11-WR-02",
+        "docs/assets/data/curriculum/topic11-learning-workspace.json#rad11-core-1"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/24_NOTEBOOKLM_EXPANSION_B3_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX11-RAD-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT11",
+      "topic_slug": "11-can-thuc",
+      "topic_title": "Căn thức và biến đổi căn thức",
+      "problem_type_id": "radical-rationalize-conjugates",
+      "problem_type_title": "Trục căn bằng liên hợp và cộng biểu thức",
+      "title": "Hai mẫu liên hợp, một kết quả gọn",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "truc-can-lien-hop",
+        "can-dong-dang",
+        "nhan-chia-can"
+      ],
+      "prerequisites": [
+        "hieu-hai-binh-phuong"
+      ],
+      "estimated_minutes": 12,
+      "problem_markdown": "Rút gọn biểu thức\n\n$$E=\\frac1{\\sqrt5+1}+\\frac1{\\sqrt5-1}.$$\n\nYêu cầu: trục căn thức ở từng mẫu trước khi cộng.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Trục căn ở phân thức thứ nhất",
+          "content_markdown": "Nhân cả tử và mẫu với liên hợp $\\sqrt5-1$:\n\n$$\\frac1{\\sqrt5+1}=\\frac{\\sqrt5-1}{(\\sqrt5+1)(\\sqrt5-1)}=\\frac{\\sqrt5-1}{4}.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Trục căn ở phân thức thứ hai",
+          "content_markdown": "Nhân cả tử và mẫu với liên hợp $\\sqrt5+1$:\n\n$$\\frac1{\\sqrt5-1}=\\frac{\\sqrt5+1}{(\\sqrt5-1)(\\sqrt5+1)}=\\frac{\\sqrt5+1}{4}.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Cộng hai kết quả",
+          "content_markdown": "Hai phân thức có cùng mẫu:\n\n$$E=\\frac{\\sqrt5-1+\\sqrt5+1}{4}=\\frac{2\\sqrt5}{4}=\\frac{\\sqrt5}{2}.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra mẫu",
+          "content_markdown": "Vì $\\sqrt5\\ne1$, cả hai mẫu ban đầu đều khác $0$, nên các phép biến đổi hợp lệ."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Chọn đúng liên hợp $\\sqrt5-1$ cho mẫu $\\sqrt5+1$.",
+          "points": 1
+        },
+        {
+          "criterion": "Chọn đúng liên hợp $\\sqrt5+1$ cho mẫu $\\sqrt5-1$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng mỗi mẫu sau nhân liên hợp bằng $4$.",
+          "points": 1
+        },
+        {
+          "criterion": "Cộng và rút gọn đúng $E=\\sqrt5/2$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Chỉ nhân tử mà không nhân mẫu với liên hợp.",
+        "Tính $(\\sqrt5+1)(\\sqrt5-1)=5+1$ thay vì $5-1$.",
+        "Cộng tử nhưng làm mất một trong hai dấu $\\pm1$."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ11 – Trục căn thức ở mẫu",
+          "href": "../kien-thuc/11-can-thuc/core/"
+        },
+        {
+          "label": "Practice Room CĐ11",
+          "href": "../kien-thuc/11-can-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/11-can-thuc/bai-tap.md#11-WR-09",
+        "docs/assets/data/curriculum/topic11-learning-workspace.json#rad11-core-4"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/24_NOTEBOOKLM_EXPANSION_B3_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX12-QUA-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT12",
+      "topic_slug": "12-phuong-trinh-bac-hai-viete",
+      "topic_title": "Phương trình bậc hai & Viète",
+      "problem_type_id": "quadratic-formula-check",
+      "problem_type_title": "Giải phương trình bậc hai bằng biệt thức và kiểm tra nghiệm",
+      "title": "Đọc đúng hệ số, tính Δ rồi kiểm tra đủ hai nghiệm",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "he-so-abc",
+        "tinh-delta",
+        "cong-thuc-nghiem",
+        "giai-pt-bac-hai"
+      ],
+      "prerequisites": [
+        "can-bac-hai-so-hoc"
+      ],
+      "estimated_minutes": 11,
+      "problem_markdown": "Giải phương trình\n\n$$3x^2+x-2=0$$\n\nbằng công thức nghiệm, rồi kiểm tra cả hai nghiệm tìm được.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Xác định hệ số",
+          "content_markdown": "Phương trình đã ở dạng $ax^2+bx+c=0$ với\n\n$$a=3,\\qquad b=1,\\qquad c=-2.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Tính biệt thức",
+          "content_markdown": "Ta có\n\n$$\\Delta=b^2-4ac=1^2-4\\cdot3\\cdot(-2)=25>0.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Dùng công thức nghiệm",
+          "content_markdown": "Vì $\\Delta>0$, phương trình có hai nghiệm phân biệt:\n\n$$x=\\frac{-1\\pm\\sqrt{25}}{2\\cdot3}=\\frac{-1\\pm5}{6}.$$\n\nSuy ra\n\n$$x_1=\\frac23,\\qquad x_2=-1.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra hai nghiệm",
+          "content_markdown": "Với $x=\\frac23$:\n\n$$3\\cdot\\frac49+\\frac23-2=0.$$\n\nVới $x=-1$:\n\n$$3-1-2=0.$$\n\nCả hai đều thỏa phương trình."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Xác định đúng $a=3,b=1,c=-2$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $\\Delta=25>0$.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng công thức và tìm được $x=2/3,-1$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra đúng cả hai nghiệm.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Đọc $c=2$ thay vì $-2$.",
+        "Quên mẫu $2a$ trong công thức nghiệm.",
+        "Tìm đủ hai giá trị nhưng không kiểm tra hoặc kiểm tra chỉ một nghiệm."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ12 – Δ và công thức nghiệm",
+          "href": "../kien-thuc/12-phuong-trinh-bac-hai-viete/core/"
+        },
+        {
+          "label": "Practice Room CĐ12",
+          "href": "../kien-thuc/12-phuong-trinh-bac-hai-viete/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/12-phuong-trinh-bac-hai-viete/bai-tap.md#12-WR-03",
+        "docs/kien-thuc/12-phuong-trinh-bac-hai-viete/bai-tap.md#12-WR-05",
+        "docs/assets/data/curriculum/topic12-learning-workspace.json#qua12-core-2",
+        "docs/assets/data/curriculum/topic12-learning-workspace.json#qua12-core-3"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/24_NOTEBOOKLM_EXPANSION_B3_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX12-QUA-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT12",
+      "topic_slug": "12-phuong-trinh-bac-hai-viete",
+      "topic_title": "Phương trình bậc hai & Viète",
+      "problem_type_id": "quadratic-viete-build-and-solve",
+      "problem_type_title": "Lập phương trình từ tổng–tích rồi giải nhanh",
+      "title": "Đi ngược Viète rồi kiểm tra bằng nghiệm",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "tong-tich-nghiem",
+        "lap-pt-tu-nghiem",
+        "nham-nghiem"
+      ],
+      "prerequisites": [
+        "giai-pt-bac-hai"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Biết hai số $x_1,x_2$ có\n\n$$x_1+x_2=7,\\qquad x_1x_2=10.$$\n\n1. Lập phương trình bậc hai hệ số đầu bằng $1$ nhận $x_1,x_2$ làm hai nghiệm.\n2. Giải nhanh phương trình đó.\n3. Dùng tổng và tích để kiểm tra hai nghiệm tìm được.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Lập phương trình từ S và P",
+          "content_markdown": "Với $S=x_1+x_2=7$ và $P=x_1x_2=10$, phương trình hệ số đầu bằng $1$ là\n\n$$x^2-Sx+P=0,$$\n\nnên\n\n$$x^2-7x+10=0.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Giải nhanh bằng phân tích nhân tử",
+          "content_markdown": "Ta có\n\n$$x^2-7x+10=(x-2)(x-5).$$\n\nVì vậy\n\n$$x=2\\quad\\text{hoặc}\\quad x=5.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Kiểm tra bằng Viète",
+          "content_markdown": "Hai nghiệm tìm được có\n\n$$2+5=7,\\qquad 2\\cdot5=10,$$\n\nđúng với tổng và tích đã cho."
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận",
+          "content_markdown": "Phương trình cần lập là $x^2-7x+10=0$ và hai nghiệm là $2$ và $5$."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Dùng đúng dạng $x^2-Sx+P=0$.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng phương trình $x^2-7x+10=0$.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải đúng để được hai nghiệm $2$ và $5$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra đúng tổng $7$ và tích $10$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Viết $x^2+Sx+P=0$ và sai dấu hệ số của $x$.",
+        "Nhầm tích $P$ thành $-P$.",
+        "Tìm được hai nghiệm nhưng không kiểm tra lại tổng và tích đã cho."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ12 – Viète và lập phương trình từ nghiệm",
+          "href": "../kien-thuc/12-phuong-trinh-bac-hai-viete/core/"
+        },
+        {
+          "label": "Practice Room CĐ12",
+          "href": "../kien-thuc/12-phuong-trinh-bac-hai-viete/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/12-phuong-trinh-bac-hai-viete/bai-tap.md#12-WR-07",
+        "docs/kien-thuc/12-phuong-trinh-bac-hai-viete/bai-tap.md#12-WR-10",
+        "docs/assets/data/curriculum/topic12-learning-workspace.json#qua12-core-4",
+        "docs/assets/data/curriculum/topic12-learning-workspace.json#qua12-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/24_NOTEBOOKLM_EXPANSION_B3_R1_PASS_RECEIPT.md"
+      }
     }
   ],
   "extension_policy": [
@@ -1838,6 +2412,9 @@
       "CT07",
       "CT08",
       "CT09",
+      "CT10",
+      "CT11",
+      "CT12",
       "CT14",
       "CT16",
       "CT17",
@@ -1845,7 +2422,7 @@
       "CT19",
       "CT24"
     ],
-    "exercise_count": 18,
+    "exercise_count": 24,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -1864,6 +2441,12 @@
         "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B2-R1-20261001",
         "count": 6,
         "status": "PUBLISHED"
+      },
+      {
+        "batch_id": "EXPANSION_B3_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
+        "count": 6,
+        "status": "TECHNICAL_IMPLEMENTATION_CANDIDATE"
       }
     ],
     "rule": "Append-only publication of academically reviewed written exercises; self-marking only."
