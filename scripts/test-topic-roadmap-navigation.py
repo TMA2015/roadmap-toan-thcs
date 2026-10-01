@@ -1,15 +1,42 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import re
+import runpy
 import sys
 
 ROOT = Path("docs/kien-thuc")
+MKDOCS = Path("mkdocs.yml").read_text(encoding="utf-8")
 
-# Rendering contract: existing lesson sources may use Markdown inside raw HTML.
-mkdocs = Path("mkdocs.yml").read_text(encoding="utf-8")
-for extension in ("attr_list", "md_in_html"):
-    if f"  - {extension}" not in mkdocs:
-        raise SystemExit(f"Missing Markdown extension required by topic UI: {extension}")
+# Rendering contract: keep source-locked lesson files unchanged, repair only at build time.
+if "  - attr_list" not in MKDOCS:
+    raise SystemExit("Missing attr_list required for Material-style Markdown buttons")
+if "md_in_html" in MKDOCS:
+    raise SystemExit("Do not enable md_in_html globally; it changes unrelated homepage DOM")
+if "hooks/topic_markdown_fixes.py" not in MKDOCS:
+    raise SystemExit("Missing narrow topic Markdown build hook")
+
+unwrap = runpy.run_path("hooks/topic_markdown_fixes.py")["_unwrap_topic_actions"]
+affected = [
+    "02-so-va-phep-tinh",
+    "04-bieu-thuc-dai-so",
+    "05-7-hang-dang-thuc",
+    "06-phan-tich-da-thuc",
+    "07-phan-thuc-dai-so",
+    "08-phuong-trinh-bat-phuong-trinh",
+    "09-he-phuong-trinh",
+    "10-ham-so-do-thi",
+    "11-can-thuc",
+    "12-phuong-trinh-bac-hai-viete",
+    "13-goc-va-duong-thang",
+]
+for slug in affected:
+    path = ROOT / slug / "index.md"
+    source = path.read_text(encoding="utf-8")
+    transformed = unwrap(source)
+    if '<div class="topic-workspace-actions" markdown>' in transformed:
+        raise SystemExit(f"Build hook failed to unwrap continuation block: {path}")
+    if "Sang Phòng Luyện Tập" not in transformed or "Kiểm Tra Độ Sẵn Sàng" not in transformed:
+        raise SystemExit(f"Build hook lost continuation links: {path}")
 
 # Practice footer contract:
 # previous topic first -> same-topic navigation in the middle -> next topic last.
@@ -48,23 +75,11 @@ for path in practice_pages:
 if checked != 24:
     raise SystemExit(f"Expected to validate 24 Practice pages CĐ02–25, got {checked}")
 
+print("PASS: source-locked topic lessons are repaired by a narrow build hook.")
 print("PASS: Practice roadmap links follow previous -> same-topic -> next across CĐ02–25.")
 
 if "--built" in sys.argv:
     site = Path("site")
-    affected = [
-        "02-so-va-phep-tinh",
-        "04-bieu-thuc-dai-so",
-        "05-7-hang-dang-thuc",
-        "06-phan-tich-da-thuc",
-        "07-phan-thuc-dai-so",
-        "08-phuong-trinh-bat-phuong-trinh",
-        "09-he-phuong-trinh",
-        "10-ham-so-do-thi",
-        "11-can-thuc",
-        "12-phuong-trinh-bac-hai-viete",
-        "13-goc-va-duong-thang",
-    ]
     for slug in affected:
         path = site / "kien-thuc" / slug / "index.html"
         if not path.exists():
