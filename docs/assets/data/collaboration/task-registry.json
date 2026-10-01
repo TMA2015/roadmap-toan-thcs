@@ -1,5 +1,5 @@
 {
-  "version": "1.0.105",
+  "version": "1.0.106",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.104",
-      "review_verdict": "B2_NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
-      "review_notes": "B2 NotebookLM PASS 6/6 + ARCH_1..ARCH_10 for CT09/16/18. Separate implementation branch stages append-only expansion from 12 to 18 items / 9 topics. No automatic Readiness/mastery credit; no canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent."
+      "context_version": "1.0.106",
+      "review_verdict": "B2_RELEASED_18_ITEMS_9_TOPICS_OWNER_QA_PENDING",
+      "review_notes": "Written Library production now contains 18 items / 9 topics after B2 release. B1 is closed. B2 owner production QA should confirm CT09/16/18 appear and each has 2 items. Patch 1 deep-link owner spot-check remains independent."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -792,9 +792,9 @@
       "title": "Expand Written Exercise Library to CĐ09/CĐ16/CĐ18",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
       "status": "OPEN",
-      "context_version": "1.0.105",
-      "review_verdict": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_AUTHORIZED",
-      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Exact-head technical QA on e1598d6febb719ead3de2a42fe78436ccb0eedb1 passed Roadmap PR Quality 36865069195. Owner explicitly authorized controlled production release on 2026-10-01. Append-only expansion target: 18 items / 9 topics; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
+      "context_version": "1.0.106",
+      "review_verdict": "PRODUCTION_RELEASED_DEPLOY_SUCCESS_OWNER_PRODUCTION_QA_PENDING",
+      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Final release HEAD de16484dc41e32a48515ba853c5d40c4c0ba1a83 passed Roadmap PR Quality 36866360773. PR #243 merged as ebd8c5e3f17805ddfd281826956c4d4de799cd5e and Deploy MkDocs 36866917887 SUCCESS, including Deploy to GitHub Pages. Production catalog now contains 18 written exercises across CT07/08/09/14/16/17/18/19/24. Owner production QA remains."
     }
   ]
 }
