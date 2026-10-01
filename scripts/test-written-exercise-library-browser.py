@@ -59,6 +59,11 @@ with sync_playwright() as p:
 
         topic.select_option("all")
         level.select_option("all")
+        problem_type = page.locator('select[aria-label="Lọc theo dạng bài"]')
+        problem_type.select_option("rat-multi-operation")
+        assert cards.count() == 1, (device, "problem type filter")
+        assert page.locator(".written-exercise-card#wx07-rat-002").count() == 1
+        problem_type.select_option("all")
         search = page.locator('input[aria-label="Tìm bài tự luận"]')
         search.fill("chuyển động")
         assert cards.count() == 1, (device, "search filter")
