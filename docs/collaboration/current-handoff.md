@@ -1,10 +1,29 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library topic-sort OWNER QA PASS / CLOSED; B2 review-only next.** Owner confirmed the production topic filter is numerically ordered correctly. Sort task `MATH-WRITTEN-LIBRARY-TOPIC-SORT-001` is closed. B1 new topics/counts remain accepted. Next academic expansion is **B2 review-only: CĐ09 + CĐ16 + CĐ18**, with NotebookLM required before implementation. Patch 1 remains 2/3 PASS; topic auto-filter deep link is an independent remaining spot-check.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B2 owner controlled release AUTHORIZED; exact-head revalidation pending after provenance update.** NotebookLM 6/6 + ARCH_1–ARCH_10 PASS; technical QA on `e1598d6febb719ead3de2a42fe78436ccb0eedb1` / run `36865069195` PASS. Owner explicitly authorized controlled production release. Intended catalog: **18 items / 9 topics**. No Readiness/mastery/canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+
+## Written Library Expansion B2 — owner controlled release authorized (01/10/2026)
+
+- Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B2-001`.
+- Academic packet: `MATH-WRITTEN-LIBRARY-EXPANSION-B2-R1-20261001`.
+- Review PR: #242 (provenance/review only; do not merge as implementation).
+- Review preflight: exact HEAD `df054642bcdaaacf74723702d6a0d20ec894a80f`, Roadmap PR Quality `36864002108` **SUCCESS**.
+- NotebookLM result supplied by owner: **OVERALL PASS; 6/6 items PASS; 0 revisions; ARCH_1–ARCH_10 PASS**.
+- Authorization: `CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA`.
+- Approved candidates:
+  - CĐ09: `WX09-SYS-001`, `WX09-SYS-002`;
+  - CĐ16: `WX16-QUAD-001`, `WX16-QUAD-002`;
+  - CĐ18: `WX18-TRI-001`, `WX18-TRI-002`.
+- Implementation branch: `feature/written-library-expansion-b2-20261001`.
+- Intended catalog after append: **18 items / 9 topics**, preserving all 12 currently published IDs.
+- Self-marking only; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion.
+- Technical QA: exact HEAD `e1598d6febb719ead3de2a42fe78436ccb0eedb1`, Roadmap PR Quality `36865069195` **SUCCESS**.
+- Owner explicitly authorized **controlled production release** on 01/10/2026.
+- Current gate: revalidate exact HEAD after recording this authorization, then merge/deploy if clean.
 
 ## Written Library topic-filter numeric order fix — RELEASED (01/10/2026)
 

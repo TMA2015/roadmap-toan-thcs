@@ -1,5 +1,5 @@
 {
-  "version": "1.0.103",
+  "version": "1.0.105",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.103",
-      "review_verdict": "B1_COUNTS_FILTERS_OWNER_PASS_SORT_CLOSED_NEXT_B2_REVIEW_ONLY",
-      "review_notes": "Owner confirmed B1 new topics CT08/17/19 each expose 2 items and topic dropdown order is now correct. Numeric topic-sort task closed. Patch 1 deep-link owner spot-check remains independent. Next academic expansion B2 may proceed review-only for CT09/16/18."
+      "context_version": "1.0.104",
+      "review_verdict": "B2_NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "review_notes": "B2 NotebookLM PASS 6/6 + ARCH_1..ARCH_10 for CT09/16/18. Separate implementation branch stages append-only expansion from 12 to 18 items / 9 topics. No automatic Readiness/mastery credit; no canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -773,10 +773,10 @@
       "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-001",
       "title": "Expand Written Exercise Library to CĐ08/CĐ17/CĐ19",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
-      "status": "OPEN",
-      "context_version": "1.0.101",
-      "review_verdict": "PRODUCTION_RELEASED_DEPLOY_SUCCESS_OWNER_PRODUCTION_QA_PENDING",
-      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_8. Final release HEAD 86b065ec8479688ea7e4eb643202e1ae18556a63 passed Roadmap PR Quality 36860254512. PR #240 merged as 6f506f1f0434d1f06099a4e78c2f669ffe2e9257 and Deploy MkDocs 36860706849 SUCCESS, including Deploy to GitHub Pages. Production catalog is expected to expose 12 written exercises across CT07/08/14/17/19/24. Owner production QA remains."
+      "status": "DONE",
+      "context_version": "1.0.104",
+      "review_verdict": "PRODUCTION_OWNER_QA_COUNTS_NEW_TOPICS_PASS_DONE",
+      "review_notes": "B1 production release completed. Owner confirmed CT08/17/19 are present and each exposes 2 exercises; numeric topic-order follow-up also passed. B1 closed."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-TOPIC-SORT-001",
@@ -786,6 +786,15 @@
       "context_version": "1.0.103",
       "review_verdict": "OWNER_QA_PASS_CLOSED_DONE",
       "review_notes": "Owner refreshed production and confirmed the Written Library topic filter is now in ascending numeric order. PR #241 / QA 36862512366 / merge 3e30e66b041b0ca92f8b706e07f8568511471e9b / deploy 36863005816 remain the release provenance. Durable rule: sort by CT number, never append order."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B2-001",
+      "title": "Expand Written Exercise Library to CĐ09/CĐ16/CĐ18",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "OPEN",
+      "context_version": "1.0.105",
+      "review_verdict": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_AUTHORIZED",
+      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Exact-head technical QA on e1598d6febb719ead3de2a42fe78436ccb0eedb1 passed Roadmap PR Quality 36865069195. Owner explicitly authorized controlled production release on 2026-10-01. Append-only expansion target: 18 items / 9 topics; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
     }
   ]
 }
