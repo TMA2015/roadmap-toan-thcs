@@ -674,12 +674,8 @@ Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi họ
 
 ## ➡️ Tiếp tục học
 
-<div class="topic-workspace-actions" markdown>
-
 [🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
 
 [✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
 
 [→ 07 – Phân thức đại số](../07-phan-thuc-dai-so/index.md){ .md-button }
-
-</div>
