@@ -1,5 +1,5 @@
 {
-  "version": "1.0.95",
+  "version": "1.0.96",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Exercise Library v1 pilot Academic Gate PASS: NotebookLM reviewed all 6/6 items and 6/6 architecture checks PASS with authorization CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA. Navigation task is also OWNER QA PASS/CLOSED DONE. PR #234 remains unmerged. After syncing current main, rerun exact-head technical QA; production release still requires explicit owner authorization.",
+    "next_priority": "Written Exercise Library v1 pilot is PRODUCTION RELEASED after owner-authorized exact-head merge and Deploy MkDocs SUCCESS. Owner production QA is the only remaining gate before closing MATH-WRITTEN-EXERCISE-LIBRARY-001 DONE. Navigation remains OWNER QA PASS/CLOSED DONE. Duplicate topic menu remains non-blocking backlog. G3/mastery expansion remains OFF.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -602,7 +602,7 @@
     "product_completeness_next": {
       "navigation_render_fix": "OWNER_QA_PASS_CLOSED_DONE",
       "duplicate_topic_menu": "BACKLOG_NON_BLOCKING",
-      "written_exercise_library_v1": "ACADEMIC_PASS_TECHNICAL_REVALIDATION_PENDING",
+      "written_exercise_library_v1": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
       "g3_authorized": false,
       "navigation_release": {
         "implementation_pr": 232,
@@ -621,10 +621,22 @@
           "CĐ02 continuation block renders as buttons with no raw Markdown",
           "CĐ07 Practice footer order is previous topic -> same-topic learning/self-check -> next topic"
         ]
+      },
+      "written_exercise_library_release": {
+        "implementation_pr": 234,
+        "authorized_exact_head": "ad0234e4bf367b4b28d17664a687fbf3a0931a02",
+        "notebooklm_result": "PASS_6_OF_6_ARCH_6_OF_6",
+        "roadmap_pr_quality_run": 36832354851,
+        "skill_assessment_run": 36832355939,
+        "branding_run": 36832354918,
+        "merge_commit": "56739479516bafe00340594cb161f5251fb9e3e9",
+        "deploy_run": 36833487797,
+        "deploy_conclusion": "SUCCESS",
+        "owner_qa": "PENDING"
       }
     },
     "written_exercise_library_pilot": {
-      "status": "ACADEMIC_PASS_TECHNICAL_REVALIDATION_PENDING",
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
       "task_id": "MATH-WRITTEN-EXERCISE-LIBRARY-001",
       "branch": "feature/written-exercise-library-pilot-20261001",
       "item_ids": [
@@ -645,7 +657,7 @@
       "review_packet_id": "MATH-WRITTEN-LIBRARY-PILOT-R1-20261001",
       "source_packet": "review-packets/written-exercise-library/01_UPLOAD_TO_NOTEBOOKLM_WRITTEN_PILOT_R1.md",
       "prompt": "review-packets/written-exercise-library/02_COPY_TO_NOTEBOOKLM_WRITTEN_PILOT_R1.txt",
-      "production_released": false,
+      "production_released": true,
       "readiness_credit": false,
       "notebooklm_r1": {
         "result": "PASS",
@@ -661,7 +673,10 @@
         "skill_assessment": 36825618194,
         "branding": 36825617988,
         "result": "PASS"
-      }
+      },
+      "production_merge": "56739479516bafe00340594cb161f5251fb9e3e9",
+      "deploy_run": 36833487797,
+      "deploy_conclusion": "SUCCESS"
     }
   },
   "handoff_required_fields": [

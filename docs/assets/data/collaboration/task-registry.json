@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.95",
-      "review_verdict": "NOTEBOOKLM_R1_PASS_6_OF_6_ARCH_6_OF_6_TECHNICAL_REVALIDATION_PENDING",
-      "review_notes": "NotebookLM R1 PASS: OVERALL PASS; COVERAGE 6/6/0/0; all six items PASS; ARCH_1..ARCH_6 PASS; AUTHORIZATION CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA. Reviewed packet blob 45aefb0ddbaef15ca05d802d141fbb070b742e05 with catalog blob bf926501b512a85fc2f0b73786784aa4cbe26f81. Prior exact implementation HEAD c4616821fb6ce491977b9c1fe1e791bcb3e50e39 technical QA was PASS. Because main advanced after navigation owner-QA closure, sync main and rerun exact-head technical QA before any release. Production remains unauthorized."
+      "context_version": "1.0.96",
+      "review_verdict": "PRODUCTION_RELEASED_ACADEMIC_PASS_EXACT_HEAD_QA_PASS_OWNER_QA_PENDING",
+      "review_notes": "Owner explicitly authorized controlled production release for exact HEAD ad0234e4bf367b4b28d17664a687fbf3a0931a02. NotebookLM R1 PASS 6/6 items + ARCH_1..ARCH_6 PASS. Exact-head Roadmap PR Quality 36832354851, Skill assessment 36832355939, branding 36832354918 all SUCCESS. PR #234 merged as 56739479516bafe00340594cb161f5251fb9e3e9. Deploy MkDocs 36833487797 SUCCESS. Owner production QA remains before task closure."
     }
   ]
 }

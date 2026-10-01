@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Exercise Library pilot ACADEMIC PASS / technical revalidation pending.** NotebookLM R1: **6/6 items PASS + 6/6 architecture PASS**, authorization `CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA`. Navigation is OWNER QA PASS/CLOSED DONE. PR #234 remains unmerged; after syncing current main, exact-head technical QA must be rerun. Production release still requires explicit owner authorization. G3/mastery expansion remains OFF.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Exercise Library pilot PRODUCTION RELEASED / owner QA pending.** NotebookLM R1 PASS 6/6 + ARCH_1–ARCH_6 PASS; exact authorized HEAD `ad0234e4bf367b4b28d17664a687fbf3a0931a02` passed all technical QA, merged via PR #234 and deployed successfully. Navigation remains CLOSED DONE. Owner QA of `/luyen-tap/` is the only remaining gate for the pilot. G3/mastery expansion remains OFF.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -22,7 +22,7 @@
 - Deploy MkDocs run `36719709094`: **SUCCESS**.
 - Owner spot-QA: **PASS on desktop and iPad**. Practice help and Core hint disclosure behavior matches the approved UX rule. Task `MATH-HELP-DISCLOSURE-TOGGLE-001` is CLOSED DONE.
 
-## Written Exercise Library v1 pilot — ACADEMIC PASS; technical revalidation pending (01/10/2026)
+## Written Exercise Library v1 pilot — PRODUCTION RELEASED; owner QA pending (01/10/2026)
 
 - Task: `MATH-WRITTEN-EXERCISE-LIBRARY-001`.
 - Branch: `feature/written-exercise-library-pilot-20261001`.
@@ -41,8 +41,11 @@
 - Prompt: `review-packets/written-exercise-library/02_COPY_TO_NOTEBOOKLM_WRITTEN_PILOT_R1.txt`.
 - NotebookLM R1 result: **OVERALL PASS; COVERAGE 6/6; ARCH_1–ARCH_6 PASS**; authorization `CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA`.
 - Prior exact implementation HEAD `c4616821fb6ce491977b9c1fe1e791bcb3e50e39` already passed Roadmap PR Quality `36825618122`, Skill assessment `36825618194`, and branding `36825617988`.
-- Because `main` advanced after navigation owner-QA closure, sync current main and rerun exact-head technical QA before release.
-- **Do not merge/publish without explicit owner controlled-production-release authorization.**
+- Exact authorized HEAD `ad0234e4bf367b4b28d17664a687fbf3a0931a02` passed Roadmap PR Quality `36832354851`, Skill assessment `36832355939`, and branding `36832354918`.
+- Owner explicitly authorized controlled production release.
+- PR #234 merged as `56739479516bafe00340594cb161f5251fb9e3e9`.
+- Deploy MkDocs `36833487797`: **SUCCESS**.
+- Current gate: owner production QA on `/luyen-tap/` before task closure.
 
 ## Final owner-QA cleanup + product-completeness observations (01/10/2026)
 
