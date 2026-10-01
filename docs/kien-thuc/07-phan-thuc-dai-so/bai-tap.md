@@ -328,6 +328,7 @@ Tự chọn một biểu thức có ngoặc và ít nhất ba phép tính phân 
 
 ## Liên kết Roadmap
 
-- **← Học:** [Chuyên đề 07 – Phân thức đại số](index.md)
+- **← Chuyên đề trước:** [06 – Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/index.md)
+- **← Học kiến thức:** [Chuyên đề 07 – Phân thức đại số](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
 - **→ Chuyên đề tiếp theo:** [08 – Phương trình và bất phương trình](../08-phuong-trinh-bat-phuong-trinh/index.md)
