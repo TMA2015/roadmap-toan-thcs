@@ -1,10 +1,19 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B2 PRODUCTION RELEASED / owner QA pending.** Final exact HEAD `de16484dc41e32a48515ba853c5d40c4c0ba1a83` passed Roadmap PR Quality `36866360773`; PR #243 merged as `ebd8c5e3f17805ddfd281826956c4d4de799cd5e`; Deploy MkDocs `36866917887` succeeded through **Deploy to GitHub Pages**. Production catalog now has **18 items / 9 topics** (CĐ07/08/09/14/16/17/18/19/24). Owner QA should confirm CĐ09/CĐ16/CĐ18 each show 2 items. No Readiness/mastery/canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library B2 OWNER QA PASS / CLOSED; durable intro-copy fix staged.** Owner confirmed CĐ09/CĐ16/CĐ18 are present in production and each has 2 exercises. B2 is closed. The library intro was correctly identified as stale because it still said `Pilot v1` / `6 bài` / CĐ07-CĐ14-CĐ24; a small UX fix replaces those fixed claims with durable expansion wording and live-filter guidance. B2 batch metadata is reconciled to `PUBLISHED`. Patch 1 deep-link owner spot-check remains independent.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+
+## Written Library intro-copy refresh — staged (01/10/2026)
+
+- Owner production QA closed B2: CĐ09/CĐ16/CĐ18 are visible and each has 2 exercises.
+- Production intro was stale: it still hard-coded `Pilot v1`, `6 bài`, and only CĐ07/CĐ14/CĐ24.
+- Durable rule: **the library intro must not hard-code current exercise count or topic list**. Current coverage belongs to the live catalog/filter UI.
+- Replacement copy keeps the paper-first workflow and tells learners to use filters for currently available topics/types/levels.
+- B2 catalog batch metadata is reconciled from `TECHNICAL_IMPLEMENTATION_CANDIDATE` to `PUBLISHED`.
+- Current gate: exact-head CI/browser QA before merge/deploy.
 
 ## Written Library Expansion B2 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 
