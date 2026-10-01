@@ -1,12 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B4 owner controlled release AUTHORIZED; exact-head revalidation pending after saved authorization checkpoint.** NotebookLM **6/6 + ARCH_1–ARCH_10 PASS**. Technical QA on `9dc51f28a670fc8748a670f3d876793940623114` / run `36880519503` **SUCCESS**. Owner explicitly authorized controlled production release. Intended catalog: **30 items / 15 topics**. No Readiness/mastery/canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B4 PRODUCTION RELEASED / owner QA pending.** Owner controlled-release authorization was persisted before merge. Fresh exact HEAD `027e18ea8953de4986399d999363a5e13be6db93` passed Roadmap PR Quality `36881591932`; PR #248 merged as `83db880966bd0dcfaf594811ff30abff1e9edd9a`; Deploy MkDocs `36882280354` succeeded through **Deploy to GitHub Pages**. Production catalog verified at **30 items / 15 topics**. Owner QA should confirm CĐ13/CĐ15/CĐ23 each show 2 items. No Readiness/mastery/canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Written Library Expansion B4 — controlled release authorized / saved checkpoint (01/10/2026)
+## Written Library Expansion B4 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B4-001`.
 - Review PR: **#247 Draft** — provenance/review only; **do not merge as implementation**.
@@ -35,7 +35,11 @@
 - Intended catalog after append: **30 items / 15 topics**, preserving all 24 currently published IDs.
 - Technical QA: exact HEAD `9dc51f28a670fc8748a670f3d876793940623114`, Roadmap PR Quality `36880519503` **SUCCESS**.
 - Owner explicitly authorized **controlled production release** on 01/10/2026.
-- Current gate: fresh exact-head QA after this authorization checkpoint, then merge/deploy if clean and `main` has no base drift.
+- Final exact-head QA after saved authorization checkpoint: `027e18ea8953de4986399d999363a5e13be6db93`, Roadmap PR Quality `36881591932` **SUCCESS**.
+- PR #248 production merge: `83db880966bd0dcfaf594811ff30abff1e9edd9a`.
+- Deploy MkDocs `36882280354`: **SUCCESS**, including `Deploy to GitHub Pages`.
+- Production catalog verified on `main`: **30 items / 15 topics** — CĐ07, CĐ08, CĐ09, CĐ10, CĐ11, CĐ12, CĐ13, CĐ14, CĐ15, CĐ16, CĐ17, CĐ18, CĐ19, CĐ23, CĐ24.
+- Owner production QA: **PENDING** — refresh the library and confirm CĐ13/CĐ15/CĐ23 each expose exactly 2 items.
 
 ## Written Library Expansion B3 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.117",
+  "version": "1.0.118",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.116",
-      "review_verdict": "B4_NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
-      "review_notes": "B4 NotebookLM PASS 6/6 + ARCH_1..ARCH_10 for CT13/CT15/CT23. Separate implementation branch stages append-only expansion from 24 to 30 items / 15 topics. No automatic Readiness/mastery credit; no canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent."
+      "context_version": "1.0.118",
+      "review_verdict": "B4_RELEASED_30_ITEMS_15_TOPICS_OWNER_QA_PENDING",
+      "review_notes": "Written Library production now contains 30 items / 15 topics after B4 release. Owner production QA should confirm CT13/CT15/CT23 appear and each has exactly 2 exercises. Patch 1 topic deep-link owner spot-check remains independent."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -819,9 +819,9 @@
       "title": "Expand Written Exercise Library to CĐ13/CĐ15/CĐ23",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
       "status": "OPEN",
-      "context_version": "1.0.117",
-      "review_verdict": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_AUTHORIZED",
-      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Implementation PR #248 exact-head technical QA on 9dc51f28a670fc8748a670f3d876793940623114 passed Roadmap PR Quality 36880519503. Owner explicitly authorized controlled production release on 2026-10-01. Intended append-only production state: 30 items / 15 topics; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion. Fresh exact-head revalidation is required after this authorization checkpoint."
+      "context_version": "1.0.118",
+      "review_verdict": "PRODUCTION_RELEASED_DEPLOY_SUCCESS_OWNER_PRODUCTION_QA_PENDING",
+      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Owner controlled-release authorization was saved before merge. Final authorization-checkpoint exact HEAD 027e18ea8953de4986399d999363a5e13be6db93 passed Roadmap PR Quality 36881591932. PR #248 merged as 83db880966bd0dcfaf594811ff30abff1e9edd9a. Deploy MkDocs 36882280354 SUCCESS, including Deploy to GitHub Pages. Production catalog verified on main at 30 exercises / 15 topics; CT13/CT15/CT23 each have 2 reviewed items. Owner production QA remains."
     }
   ]
 }

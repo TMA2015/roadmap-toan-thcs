@@ -1,5 +1,5 @@
 {
-  "version": "1.0.117",
+  "version": "1.0.118",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B4 has NotebookLM PASS 6/6 + ARCH_1–ARCH_10, exact-head technical QA PASS, and owner controlled-release authorization. Re-run exact-head QA after this provenance update; if clean and main has no base drift, merge/deploy PR #248. Patch 1 deep-link owner spot-check remains independent.",
+    "next_priority": "Written Library Expansion B4 is PRODUCTION RELEASED after saved authorization checkpoint, fresh exact-head QA PASS, merge and Deploy MkDocs SUCCESS. Owner production QA should confirm 30 items / 15 topics and CT13/CT15/CT23 each expose exactly 2 exercises. Patch 1 deep-link owner spot-check remains independent.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -977,7 +977,7 @@
       ]
     },
     "written_library_expansion_b4": {
-      "status": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-001",
       "review_pr": 247,
       "review_branch": "review/written-library-expansion-b4-r1-20261001",
@@ -1039,14 +1039,43 @@
           "CT24"
         ]
       },
-      "production_release": false,
+      "production_release": true,
       "technical_qa": {
         "exact_tested_head": "9dc51f28a670fc8748a670f3d876793940623114",
         "roadmap_pr_quality_run": 36880519503,
         "result": "PASS"
       },
       "owner_release_authorized": true,
-      "owner_release_authorized_at": "2026-10-01"
+      "owner_release_authorized_at": "2026-10-01",
+      "final_exact_tested_head": "027e18ea8953de4986399d999363a5e13be6db93",
+      "final_roadmap_pr_quality_run": 36881591932,
+      "final_qa_result": "SUCCESS",
+      "implementation_pr": 248,
+      "production_merge": "83db880966bd0dcfaf594811ff30abff1e9edd9a",
+      "deploy_run": 36882280354,
+      "deploy_conclusion": "SUCCESS",
+      "owner_production_qa": "PENDING",
+      "expected_production_catalog": {
+        "exercise_count": 30,
+        "topic_count": 15,
+        "topics": [
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT13",
+          "CT14",
+          "CT15",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT23",
+          "CT24"
+        ]
+      }
     }
   },
   "handoff_required_fields": [
