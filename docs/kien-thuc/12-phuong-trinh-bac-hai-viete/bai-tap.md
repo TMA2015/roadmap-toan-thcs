@@ -169,6 +169,8 @@ Tìm m để \(x^2-2x+m=0\) có hai nghiệm thực phân biệt.
 - [ ] Khi tương đối chắc, tôi chuyển sang [✅ Core Readiness Check](tu-kiem-tra.md).
 
 ## Liên kết Roadmap
-- **← Học:** [Chuyên đề 12](index.md)
+
+- **← Chuyên đề trước:** [11 – Căn thức](../11-can-thuc/index.md)
+- **← Học kiến thức:** [Chuyên đề 12 – Phương trình bậc hai & Viète](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [13 – Góc và đường thẳng](../13-goc-va-duong-thang/index.md)
+- **→ Chuyên đề tiếp theo:** [13 – Góc và đường thẳng](../13-goc-va-duong-thang/index.md)

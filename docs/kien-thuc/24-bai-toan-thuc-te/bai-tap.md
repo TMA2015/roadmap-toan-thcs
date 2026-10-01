@@ -198,9 +198,9 @@ Tỉ lệ giá còn lại là \(0{,}8\times0{,}9=0{,}72\), nên tổng mức gi�
 - [ ] M4 đã thử ít nhất 4/8.
 - [ ] Tôi luôn kiểm tra đơn vị, điều kiện nghiệm và tính hợp lý trước khi kết luận.
 
-# Liên kết Roadmap
+## Liên kết Roadmap
 
-- **← Bài học:** [Chuyên đề 24 – Bài toán thực tế](index.md)
 - **← Chuyên đề trước:** [23 – Xác suất](../23-xac-suat/index.md)
+- **← Học kiến thức:** [Chuyên đề 24 – Bài toán thực tế](index.md)
 - **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 24](tu-kiem-tra.md)
 - **→ Chuyên đề tiếp theo:** [25 – Tổng hợp ôn thi vào 10](../25-tong-hop-on-thi-10/index.md)

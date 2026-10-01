@@ -168,6 +168,8 @@ Tìm các số nguyên \(x\ge0\), \(x<50\) sao cho \(\sqrt x\) là số nguyên.
 - [ ] Khi tương đối chắc, tôi chuyển sang [✅ Core Readiness Check](tu-kiem-tra.md).
 
 ## Liên kết Roadmap
-- **← Học:** [Chuyên đề 11](index.md)
+
+- **← Chuyên đề trước:** [10 – Hàm số và đồ thị](../10-ham-so-do-thi/index.md)
+- **← Học kiến thức:** [Chuyên đề 11 – Căn thức](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [12 – Phương trình bậc hai & Viète](../12-phuong-trinh-bac-hai-viete/index.md)
+- **→ Chuyên đề tiếp theo:** [12 – Phương trình bậc hai & Viète](../12-phuong-trinh-bac-hai-viete/index.md)

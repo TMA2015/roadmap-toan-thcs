@@ -88,6 +88,8 @@ Bài khó cần independent review; mọi quan hệ hình học phải có giả
 - [ ] Tôi đã chữa lại các câu sai mà không nhìn lời giải.
 
 ## Liên kết Roadmap
-- **← Học:** [Chuyên đề 20](index.md)
+
+- **← Chuyên đề trước:** [19 – Đường tròn](../19-duong-tron/index.md)
+- **← Học kiến thức:** [Chuyên đề 20 – Hình học tổng hợp](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [21 – Thống kê và thu thập dữ liệu](../21-thong-ke/index.md)
+- **→ Chuyên đề tiếp theo:** [21 – Thống kê và thu thập dữ liệu](../21-thong-ke/index.md)

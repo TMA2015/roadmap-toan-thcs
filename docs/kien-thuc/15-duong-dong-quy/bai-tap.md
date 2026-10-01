@@ -85,6 +85,8 @@ Xét câu “G, H, I, O luôn là bốn điểm phân biệt”. Câu này đún
     Sai. Trong tam giác đều, bốn tâm trùng nhau. Vì vậy phải phân biệt phát biểu tổng quát với trường hợp đặc biệt.
 
 ## Liên kết Roadmap
-- **← Học:** [Chuyên đề 15](index.md)
+
+- **← Chuyên đề trước:** [14 – Tam giác](../14-tam-giac/index.md)
+- **← Học kiến thức:** [Chuyên đề 15 – Các đường đồng quy](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [16 – Tứ giác](../16-tu-giac/index.md)
+- **→ Chuyên đề tiếp theo:** [16 – Tứ giác](../16-tu-giac/index.md)

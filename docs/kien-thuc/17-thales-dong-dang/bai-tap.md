@@ -88,6 +88,8 @@ Ghi từng cặp tương ứng riêng để tránh ghép sai.
 - [ ] Tôi đã chữa lại các câu sai mà không nhìn lời giải.
 
 ## Liên kết Roadmap
-- **← Học:** [Chuyên đề 17](index.md)
+
+- **← Chuyên đề trước:** [16 – Tứ giác](../16-tu-giac/index.md)
+- **← Học kiến thức:** [Chuyên đề 17 – Thales và tam giác đồng dạng](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [18 – Hệ thức lượng trong tam giác vuông](../18-he-thuc-luong/index.md)
+- **→ Chuyên đề tiếp theo:** [18 – Hệ thức lượng trong tam giác vuông](../18-he-thuc-luong/index.md)

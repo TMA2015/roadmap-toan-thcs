@@ -166,6 +166,8 @@ Xét phương trình \((m-1)x=2\). Biện luận theo \(m\).
 - [ ] Khi tương đối chắc, tôi chuyển sang [✅ Core Readiness Check](tu-kiem-tra.md).
 
 ## Liên kết Roadmap
-- **← Học:** [Chuyên đề 08](index.md)
+
+- **← Chuyên đề trước:** [07 – Phân thức đại số](../07-phan-thuc-dai-so/index.md)
+- **← Học kiến thức:** [Chuyên đề 08 – Phương trình và bất phương trình](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [09 – Hệ phương trình](../09-he-phuong-trinh/index.md)
+- **→ Chuyên đề tiếp theo:** [09 – Hệ phương trình](../09-he-phuong-trinh/index.md)

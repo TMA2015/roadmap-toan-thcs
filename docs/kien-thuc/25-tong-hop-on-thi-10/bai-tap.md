@@ -155,7 +155,8 @@ Khi đã làm tương đối chắc các bài trên, chuyển sang [Đề luyệ
 
 ## Liên kết
 
-- **← Bài học:** [Chuyên đề 25](index.md)
+- **← Chuyên đề trước:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
+- **← Học kiến thức:** [Chuyên đề 25 – Tổng hợp và ôn thi vào 10](index.md)
 - **→ Bài toán kinh điển:** [Mở bộ bài mẫu](bai-toan-kinh-dien.md)
 - **→ Đề luyện hoàn chỉnh:** [Đề số 1](de-luyen-01.md)
 - **→ Tự kiểm tra học thuật:** [Tự kiểm tra](tu-kiem-tra.md)

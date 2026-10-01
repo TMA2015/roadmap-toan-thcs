@@ -185,6 +185,7 @@ Phân tích \(x^4+4\).
 
 ## Liên kết Roadmap
 
-- **← Học:** [Chuyên đề 06](index.md)
+- **← Chuyên đề trước:** [05 – 7 Hằng đẳng thức đáng nhớ](../05-7-hang-dang-thuc/index.md)
+- **← Học kiến thức:** [Chuyên đề 06 – Phân tích đa thức thành nhân tử](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [07 – Phân thức đại số](../07-phan-thuc-dai-so/index.md)
+- **→ Chuyên đề tiếp theo:** [07 – Phân thức đại số](../07-phan-thuc-dai-so/index.md)

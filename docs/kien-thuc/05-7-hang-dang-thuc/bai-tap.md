@@ -189,6 +189,7 @@ Biết \(a+b+c=0\). Chứng minh \(a^3+b^3+c^3=3abc\).
 
 ## Liên kết Roadmap
 
-- **← Học:** [Chuyên đề 05](index.md)
+- **← Chuyên đề trước:** [04 – Biểu thức và biến đổi đại số](../04-bieu-thuc-dai-so/index.md)
+- **← Học kiến thức:** [Chuyên đề 05 – 7 Hằng đẳng thức đáng nhớ](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [06 – Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/index.md)
+- **→ Chuyên đề tiếp theo:** [06 – Phân tích đa thức thành nhân tử](../06-phan-tich-da-thuc/index.md)

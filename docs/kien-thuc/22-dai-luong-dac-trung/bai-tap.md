@@ -183,9 +183,9 @@ Mốt là 8.
 - [ ] M4: thử bài nhiều bước khi đã sẵn sàng.
 - [ ] Tôi luôn sắp xếp dữ liệu trước khi tìm trung vị.
 
-# Liên kết Roadmap
+## Liên kết Roadmap
 
-- **← Bài học:** [Chuyên đề 22 – Đại lượng đặc trưng](index.md)
 - **← Chuyên đề trước:** [21 – Thống kê](../21-thong-ke/index.md)
-- **→ Tự kiểm tra tự chọn:** [Bài tự luận chuyển tiếp Toán 10](tu-kiem-tra.md)
+- **← Học kiến thức:** [Chuyên đề 22 – Đại lượng đặc trưng](index.md)
+- **→ Tự kiểm tra:** [Bài tự luận chuyển tiếp Toán 10](tu-kiem-tra.md)
 - **→ Chuyên đề tiếp theo:** [23 – Xác suất](../23-xac-suat/index.md)

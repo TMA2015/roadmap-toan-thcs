@@ -88,6 +88,8 @@ Hai dây cắt nhau và tiếp tuyến–cát tuyến là mở rộng mạnh, nh
 - [ ] Tôi đã chữa lại các câu sai mà không nhìn lời giải.
 
 ## Liên kết Roadmap
-- **← Học:** [Chuyên đề 19](index.md)
+
+- **← Chuyên đề trước:** [18 – Hệ thức lượng trong tam giác vuông](../18-he-thuc-luong/index.md)
+- **← Học kiến thức:** [Chuyên đề 19 – Đường tròn](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
+- **→ Chuyên đề tiếp theo:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)

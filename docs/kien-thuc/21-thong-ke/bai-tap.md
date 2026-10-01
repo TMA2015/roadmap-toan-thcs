@@ -198,9 +198,9 @@ Tổng phần trăm có thể lệch rất nhỏ so với \(100\%\) do làm trò
 - [ ] M4 đã thử ít nhất 3/6.
 - [ ] Tôi kiểm tra tổng tần số và chất lượng dữ liệu trước khi kết luận.
 
-# Liên kết Roadmap
+## Liên kết Roadmap
 
-- **← Bài học:** [Chuyên đề 21 – Thống kê](index.md)
 - **← Chuyên đề trước:** [20 – Hình học tổng hợp](../20-hinh-hoc-tong-hop/index.md)
+- **← Học kiến thức:** [Chuyên đề 21 – Thống kê](index.md)
 - **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 21](tu-kiem-tra.md)
 - **→ Chuyên đề tiếp theo:** [22 – Đại lượng đặc trưng](../22-dai-luong-dac-trung/index.md)

@@ -186,6 +186,7 @@ Chứng minh \((x+1)(x+2)-x(x+3)\) không phụ thuộc vào \(x\).
 
 ## Liên kết Roadmap
 
-- **← Học:** [Chuyên đề 04](index.md)
+- **← Chuyên đề trước:** [03 – Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ](../03-ti-le-ti-le-thuc/index.md)
+- **← Học kiến thức:** [Chuyên đề 04 – Biểu thức đại số](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [05 – 7 Hằng đẳng thức đáng nhớ](../05-7-hang-dang-thuc/index.md)
+- **→ Chuyên đề tiếp theo:** [05 – 7 Hằng đẳng thức đáng nhớ](../05-7-hang-dang-thuc/index.md)

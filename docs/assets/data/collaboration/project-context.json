@@ -1,5 +1,5 @@
 {
-  "version": "1.0.91",
+  "version": "1.0.92",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Owner QA debt reduced from four to two. CĐ03 standalone Core and current CĐ07 17-item Core both PASS on desktop+iPad and are CLOSED DONE. Remaining owner QA: (1) Grade6 CĐ02 end-to-end journey/Readiness; (2) Batch A remaining CĐ21/CĐ24/CĐ25. G2/help-disclosure stay CLOSED DONE. Do not open G3/mastery/Readiness expansion automatically.",
+    "next_priority": "All four housekeeping owner-device QA debts are now cleared. CĐ02 end-to-end Grade6 journey/Readiness and Batch A remaining CĐ21/CĐ24/CĐ25 PASS on desktop+iPad. A navigation/rendering patch is staged to fix raw 'Tiếp tục học' Markdown in CĐ02/CĐ04–13 without modifying source-locked lesson files: keep `attr_list`, add a narrow MkDocs build hook for the affected continuation wrapper, and validate built HTML; Practice roadmap link order is standardized CĐ02–25. Duplicate topic navigation surfaces are logged as non-blocking UX debt. Written Exercise Library v1 design is recorded as the next substantive product-completeness initiative; do not open G3/mastery expansion automatically.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -558,7 +558,7 @@
       "note": "Resume tomorrow by clearing owner QA debt before opening a new large academic/runtime phase."
     },
     "owner_qa_progress_20261001": {
-      "status": "2_OF_4_CLEARED",
+      "status": "4_OF_4_CLEARED",
       "passed": [
         {
           "task_id": "MATH-CORE03-OWNER-QA-001",
@@ -577,12 +577,33 @@
             "iPad"
           ],
           "result": "PASS"
+        },
+        {
+          "task_id": "G6-T02-OWNER-UX-001",
+          "scope": "CĐ02 Grade6 end-to-end learning + Readiness",
+          "devices": [
+            "desktop",
+            "iPad"
+          ],
+          "result": "PASS"
+        },
+        {
+          "task_id": "MATH-UI-BATCH-A-OWNER-QA-001",
+          "scope": "Batch A remaining CĐ21/CĐ24/CĐ25; CĐ02/CĐ23 previously accepted",
+          "devices": [
+            "desktop",
+            "iPad"
+          ],
+          "result": "PASS"
         }
       ],
-      "remaining": [
-        "G6-T02-OWNER-UX-001",
-        "MATH-UI-BATCH-A-OWNER-QA-001"
-      ]
+      "remaining": []
+    },
+    "product_completeness_next": {
+      "navigation_render_fix": "STAGED_CI_PENDING",
+      "duplicate_topic_menu": "BACKLOG_NON_BLOCKING",
+      "written_exercise_library_v1": "DESIGN_RECORDED_PILOT_NOT_STARTED",
+      "g3_authorized": false
     }
   },
   "handoff_required_fields": [

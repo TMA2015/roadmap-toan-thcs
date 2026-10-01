@@ -209,9 +209,9 @@ $$
 - [ ] M4 đã thử ít nhất 4/8.
 - [ ] Tôi kiểm tra điều kiện đồng khả năng trước khi dùng công thức cổ điển.
 
-# Liên kết Roadmap
+## Liên kết Roadmap
 
-- **← Bài học:** [Chuyên đề 23 – Xác suất](index.md)
 - **← Chuyên đề trước:** [22 – Đại lượng đặc trưng](../22-dai-luong-dac-trung/index.md)
+- **← Học kiến thức:** [Chuyên đề 23 – Xác suất](index.md)
 - **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 23](tu-kiem-tra.md)
 - **→ Chuyên đề tiếp theo:** [24 – Bài toán thực tế](../24-bai-toan-thuc-te/index.md)
