@@ -1,5 +1,5 @@
 {
-  "version": "1.0.124",
+  "version": "1.0.125",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B6 has NotebookLM PASS 6/6 + ARCH_1–ARCH_10 and is staged on a separate implementation branch for exact-head technical QA. Intended catalog: 42 items / 21 topics after append. No release until technical QA is clean and owner controlled-release authorization is obtained.",
+    "next_priority": "Written Library Expansion B6 has NotebookLM PASS 6/6 + ARCH_1–ARCH_10, exact-head technical QA PASS, and owner controlled-release authorization. Re-run exact-head QA after this saved authorization checkpoint; if clean and main has no base drift, merge/deploy PR #252. Preserve CT02 grade-6 Core scope and CT20 Core measurement/solid-geometry scope.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1178,7 +1178,7 @@
       ]
     },
     "written_library_expansion_b6": {
-      "status": "NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "status": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-001",
       "review_pr": 251,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001",
@@ -1237,7 +1237,16 @@
       "preflight": {
         "roadmap_pr_quality_run": 36889335146,
         "status": "SUCCESS"
-      }
+      },
+      "technical_qa": {
+        "exact_tested_head": "39b2bd2b1cf260a7a57cc695eee898b1e9cdd5c7",
+        "roadmap_pr_quality_run": 36890766907,
+        "result": "PASS",
+        "earlier_failed_run": 36890557226,
+        "earlier_failure_reason": "Regression assertion for WX03-RAT-001 searched for shortened result strings; test-only fix, no academic-content change."
+      },
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-10-01"
     }
   },
   "handoff_required_fields": [
