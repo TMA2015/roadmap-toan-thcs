@@ -1,5 +1,5 @@
 {
-  "version": "1.0.101",
+  "version": "1.0.102",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B1 is PRODUCTION RELEASED after final exact-head QA PASS and Deploy MkDocs SUCCESS. Owner production QA should confirm the library now reports 12 items / 6 topics and new CT08/CT17/CT19 filters/cards. Patch 1 is 2/3 owner spot-QA PASS; only the topic 'Các dạng bài' auto-filter deep-link check remains.",
+    "next_priority": "Written Library B1 production owner QA confirms the 3 new topics are present and each has 2 exercises. Topic-filter numeric-order UX fix is now released: PR #241, QA 36862512366 SUCCESS, merge 3e30e66b041b0ca92f8b706e07f8568511471e9b, deploy 36863005816 SUCCESS. Owner should refresh and confirm ascending topic order. Patch 1 still has one remaining owner spot-check: topic 'Các dạng bài' deep link auto-filters correctly.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -759,7 +759,7 @@
       "production_merge": "6f506f1f0434d1f06099a4e78c2f669ffe2e9257",
       "deploy_run": 36860706849,
       "deploy_conclusion": "SUCCESS",
-      "owner_production_qa": "PENDING",
+      "owner_production_qa": "PARTIAL_PASS_COUNTS_AND_NEW_TOPICS",
       "expected_production_catalog": {
         "exercise_count": 12,
         "topics": [
@@ -770,7 +770,32 @@
           "CT19",
           "CT24"
         ]
-      }
+      },
+      "owner_qa_observed": [
+        "CT08, CT17 and CT19 appear in the topic filter",
+        "each newly added topic exposes exactly 2 exercises"
+      ]
+    },
+    "written_library_topic_sort": {
+      "status": "PRODUCTION_RELEASED_OWNER_SPOT_QA_PENDING",
+      "task_id": "MATH-WRITTEN-LIBRARY-TOPIC-SORT-001",
+      "rule": "Topic filter options are sorted numerically by CT number, independent of catalog append order.",
+      "implementation_pr": 241,
+      "exact_tested_head": "f7d6954a404542f08efa6e2928a21e925a004abb",
+      "qa_run": 36862512366,
+      "qa_conclusion": "SUCCESS",
+      "production_merge": "3e30e66b041b0ca92f8b706e07f8568511471e9b",
+      "deploy_run": 36863005816,
+      "deploy_conclusion": "SUCCESS",
+      "owner_spot_qa": "PENDING",
+      "expected_current_order": [
+        "CT07",
+        "CT08",
+        "CT14",
+        "CT17",
+        "CT19",
+        "CT24"
+      ]
     }
   },
   "handoff_required_fields": [

@@ -1,10 +1,23 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B1 PRODUCTION RELEASED / owner QA pending.** Final exact HEAD `86b065ec8479688ea7e4eb643202e1ae18556a63` passed Roadmap PR Quality `36860254512`; PR #240 merged as `6f506f1f0434d1f06099a4e78c2f669ffe2e9257`; Deploy MkDocs `36860706849` succeeded through **Deploy to GitHub Pages**. Expected production library: **12 items / 6 topics** (CĐ07/08/14/17/19/24). Patch 1 owner spot-QA is **2/3 PASS**; only topic auto-filter deep link remains. No Readiness/mastery/canonical-evidence/G3 expansion.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library B1 production counts/new topics OWNER QA PASS; numeric topic-filter sort fix RELEASED / owner order spot-QA pending.** Owner confirmed CT08/CT17/CT19 appear and each has 2 exercises. PR #241 fixes topic filter ordering to numeric ascending independent of append order; exact QA `36862512366` SUCCESS, merge `3e30e66b041b0ca92f8b706e07f8568511471e9b`, Deploy MkDocs `36863005816` SUCCESS. Expected current order: CĐ07 → CĐ08 → CĐ14 → CĐ17 → CĐ19 → CĐ24. Patch 1 remains 2/3 PASS; topic auto-filter deep link is the remaining owner spot-check.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+
+## Written Library topic-filter numeric order fix — RELEASED (01/10/2026)
+
+- Owner confirmed B1 production expansion is present: CĐ08, CĐ17 and CĐ19 each show 2 exercises.
+- UX issue found: topic dropdown followed catalog append order rather than topic number.
+- Durable rule: **topic filter options are sorted numerically by CĐ/CT number, independent of catalog insertion/append order**.
+- PR #241 exact tested HEAD: `f7d6954a404542f08efa6e2928a21e925a004abb`.
+- Roadmap PR Quality `36862512366`: **SUCCESS**.
+- Production merge: `3e30e66b041b0ca92f8b706e07f8568511471e9b`.
+- Deploy MkDocs `36863005816`: **SUCCESS**.
+- Regression test now asserts numeric ascending topic-option order.
+- Expected current dropdown order: CĐ07 → CĐ08 → CĐ14 → CĐ17 → CĐ19 → CĐ24.
+- Owner order spot-QA: **PENDING** after refresh.
 
 ## Written Library Expansion B1 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 
