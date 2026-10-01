@@ -8,19 +8,22 @@ const ok=(v,m)=>{if(!v)throw Error(m)};
 
 const data=json("docs/assets/data/written-exercises/written-exercise-library-v1.json");
 ok(data.schema_version==="1.0.0","schema version");
-ok(data.status==="PILOT_CANDIDATE_PENDING_NOTEBOOKLM_R1","pilot review gate");
+ok(data.status==="ACTIVE_APPEND_ONLY","active append-only catalog");
 ok(data.auto_readiness_credit===false,"no readiness credit");
 ok(data.self_marking_only===true,"self marking only");
-ok(Array.isArray(data.exercises)&&data.exercises.length===6,"exact six pilot items");
+ok(Array.isArray(data.exercises)&&data.exercises.length===12,"exact twelve published items");
 
 const expected=[
   "WX07-RAT-001","WX07-RAT-002",
   "WX14-TRI-001","WX14-TRI-002",
-  "WX24-MOD-001","WX24-MOD-002"
+  "WX24-MOD-001","WX24-MOD-002",
+  "WX08-EQI-001","WX08-EQI-002",
+  "WX17-SIM-001","WX17-SIM-002",
+  "WX19-CIR-001","WX19-CIR-002"
 ];
 ok(JSON.stringify(data.exercises.map(x=>x.exercise_id))===JSON.stringify(expected),"exact stable IDs");
 
-for(const topic of ["CT07","CT14","CT24"]){
+for(const topic of ["CT07","CT08","CT14","CT17","CT19","CT24"]){
   const items=data.exercises.filter(x=>x.topic_id===topic);
   ok(items.length===2,topic+" exactly two items");
   ok(items.some(x=>x.level==="CORE_BASE"),topic+" CORE_BASE");
@@ -35,7 +38,7 @@ for(const x of data.exercises){
   ok(sum===x.rubric_total,"rubric total "+x.exercise_id);
   ok(Array.isArray(x.common_mistakes)&&x.common_mistakes.length>=3,"common mistakes "+x.exercise_id);
   ok(Array.isArray(x.remediation_links)&&x.remediation_links.length>=2,"remediation "+x.exercise_id);
-  ok(x.academic_review?.status==="PENDING_NOTEBOOKLM_R1","review status "+x.exercise_id);
+  ok(x.academic_review?.status==="APPROVED","review status "+x.exercise_id);
   for(const l of x.remediation_links)ok(/^\.\.\/kien-thuc\//.test(l.href),"relative remediation href "+x.exercise_id);
 }
 
@@ -46,6 +49,12 @@ ok(byId["WX14-TRI-001"].solution_steps.at(-1).content_markdown.includes("AM\\per
 ok(byId["WX14-TRI-002"].solution_steps.at(-1).content_markdown.includes("BE=CD"),"WX14-002 conclusion");
 ok(byId["WX24-MOD-001"].solution_steps.at(-1).content_markdown.includes("40\\,\\text{km/h}"),"WX24-001 result");
 ok(byId["WX24-MOD-002"].solution_steps.at(-1).content_markdown.includes("70")&&byId["WX24-MOD-002"].solution_steps.at(-1).content_markdown.includes("50"),"WX24-002 result");
+ok(byId["WX08-EQI-001"].solution_steps.at(-1).content_markdown.includes("varnothing"),"WX08-001 result");
+ok(byId["WX08-EQI-002"].solution_steps.at(-1).content_markdown.includes("-\\frac15"),"WX08-002 result");
+ok(byId["WX17-SIM-001"].solution_steps.at(-1).content_markdown.includes("DE\\parallel BC"),"WX17-001 conclusion");
+ok(byId["WX17-SIM-002"].solution_steps.at(-1).content_markdown.includes("DE=8\\text{ cm}"),"WX17-002 result");
+ok(byId["WX19-CIR-001"].solution_steps.some(s=>s.content_markdown.includes("60\\pi")),"WX19-001 result");
+ok(byId["WX19-CIR-002"].solution_steps.at(-1).content_markdown.includes("62^\\circ"),"WX19-002 result");
 
 for(const x of data.exercises.filter(x=>x.topic_id==="CT14")){
   ok(x.figure_uri&&fs.existsSync(path.join("docs",x.figure_uri.replace(/^\.\.\//,""))),"geometry figure "+x.exercise_id);
@@ -63,7 +72,7 @@ ok(ui.includes("initTopicLibraryLink")&&ui.includes('luyen-tap/?topic='),"topic 
 ok(uiCss.includes("grid-template-columns:repeat(3,minmax(0,1fr))"),"help actions use one three-column row");
 ok(uiCss.includes(".written-topic-library-link"),"topic-to-library CTA styled");
 
-console.log("PASS: written exercise pilot schema = 6 items / 3 topics / Base+Apply.");
+console.log("PASS: written exercise catalog = 12 items / 6 topics / Base+Apply.");
 console.log("PASS: rubric, remediation, geometry assets and no-readiness boundary validated.");
-console.log("PASS: exact pilot conclusions and UI wiring validated.");
+console.log("PASS: exact published conclusions and UI wiring validated.");
 console.log("PASS: compact 3-action help row and topic-filter deep links validated.");

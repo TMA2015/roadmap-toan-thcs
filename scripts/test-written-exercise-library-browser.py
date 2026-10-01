@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Browser regression for Written Exercise Library v1 pilot."""
+"""Browser regression for Written Exercise Library v1 append-only catalog."""
 import json
 import shutil
 from playwright.sync_api import sync_playwright
@@ -29,7 +29,7 @@ with sync_playwright() as p:
         )
 
         cards = page.locator(".written-exercise-card")
-        assert cards.count() == 6, (device, "six pilot cards")
+        assert cards.count() == 12, (device, "twelve published cards")
         assert page.locator(".written-exercise-card#wx07-rat-001").count() == 1
         assert page.locator(".written-exercise-card#wx14-tri-001 img").is_visible(), (device, "geometry figure")
 
@@ -108,13 +108,34 @@ with sync_playwright() as p:
             timeout=15000,
         )
         assert topic_page.locator('select[aria-label="Lọc theo chuyên đề"]').input_value() == "CT07", (device, "topic filter auto-applied")
-        assert topic_page.locator(".written-exercise-card").count() == 2, (device, "CT07 deep link shows two pilot items")
+        assert topic_page.locator(".written-exercise-card").count() == 2, (device, "CT07 deep link shows two published items")
         topic_page.close()
+
+        for topic_num, topic_id in [("08", "CT08"), ("17", "CT17"), ("19", "CT19")]:
+            new_topic_page = context.new_page()
+            slug = {
+                "08": "08-phuong-trinh-bat-phuong-trinh",
+                "17": "17-thales-dong-dang",
+                "19": "19-duong-tron",
+            }[topic_num]
+            new_topic_page.goto(BASE + "kien-thuc/" + slug + "/", wait_until="networkidle")
+            new_link = new_topic_page.locator("[data-written-topic-link]")
+            new_link.wait_for(state="attached", timeout=15000)
+            new_href = new_link.get_attribute("href")
+            assert f"luyen-tap/?topic={topic_id}" in new_href, (device, topic_id, "topic deep link")
+            new_topic_page.goto(BASE.rstrip("/") + new_href, wait_until="networkidle")
+            new_topic_page.wait_for_function(
+                "document.querySelector('[data-written-exercise-library]')?.dataset.ready === '1'",
+                timeout=15000,
+            )
+            assert new_topic_page.locator('select[aria-label="Lọc theo chuyên đề"]').input_value() == topic_id, (device, topic_id, "filter auto-applied")
+            assert new_topic_page.locator(".written-exercise-card").count() == 2, (device, topic_id, "two published items")
+            new_topic_page.close()
         context.close()
 
     browser.close()
 
-print("PASS: Written Exercise Library renders six pilot items on desktop/mobile.")
+print("PASS: Written Exercise Library renders twelve published items on desktop/mobile.")
 print("PASS: topic/level/search filters, geometry figure and MathJax work.")
 print("PASS: compact 3-action help row is presentation-only with no localStorage write.")
 print("PASS: quick shortcut and topic deep link open the written library with CT07 auto-filter.")

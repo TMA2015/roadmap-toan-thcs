@@ -1,10 +1,36 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library Patch 1 PRODUCTION RELEASED / owner spot-QA pending.** Exact HEAD `8be3c40482dcf48545fa49e27cfccaa1822b8b16` passed Roadmap PR Quality `36841009154`, PR #237 merged as `a80343a5ceba56957af3002f4b128e9fb5545c8e`, and Deploy MkDocs `36841498180` succeeded. Remaining gate: owner checks the compact 3-button row, `7 + 25` shortcut with **Thư viện bài tập**, and topic-filter deep link. No academic/Readiness/mastery/G3 change.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B1 owner controlled release AUTHORIZED; exact-head revalidation pending after provenance update.** NotebookLM 6/6 + ARCH_1–ARCH_8 PASS; technical QA on `bc5cbd9a3c9971ff5d20ef1bc446d6d0f212da09` / run `36859348005` PASS. Patch 1 owner spot-QA is **2/3 PASS**: `7 + 25 / Thư viện bài tập` and compact 3-button row approved; only topic auto-filter deep link remains. No Readiness/mastery/canonical-evidence/G3 expansion.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+
+## Written Library Expansion B1 — owner controlled release authorized (01/10/2026)
+
+- Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B1-001`.
+- Academic packet: `MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001`.
+- Review PR: #239 (provenance/review only; do not merge as implementation).
+- NotebookLM result supplied by owner: **OVERALL PASS; 6/6 items PASS; 0 revisions; ARCH_1–ARCH_8 PASS**.
+- Authorization: `CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA`.
+- Approved candidates:
+  - CĐ08: `WX08-EQI-001`, `WX08-EQI-002`;
+  - CĐ17: `WX17-SIM-001`, `WX17-SIM-002`;
+  - CĐ19: `WX19-CIR-001`, `WX19-CIR-002`.
+- Implementation branch: `feature/written-library-expansion-b1-20261001`.
+- Intended catalog after append: **12 items / 6 topics**, preserving the original six pilot items.
+- Self-marking only; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion.
+- Technical QA: exact HEAD `bc5cbd9a3c9971ff5d20ef1bc446d6d0f212da09`, Roadmap PR Quality `36859348005` **SUCCESS**. First run `36859229839` failed only because the test harness still expected six IDs; catalog content was already correct.
+- Owner explicitly authorized **controlled production release** on 01/10/2026.
+- Current gate: revalidate exact HEAD after recording this authorization, then merge/deploy if clean.
+
+## Patch 1 owner spot-QA partial update (01/10/2026)
+
+- **PASS:** quick shortcut displays `7 + 25` and includes **Thư viện bài tập**.
+- **PASS:** compact horizontal **Hướng dẫn / Rubric / Lỗi thường gặp** row; owner production screenshot approved the layout.
+- Still to spot-check by owner:
+  - topic **Các dạng bài** link opens the library with the correct topic filter.
+- Automated exact-head browser QA for both remaining behaviors already PASS; owner visual/real-device acceptance remains separate.
 
 ## Learner-help disclosure toggle — OWNER QA PASS; CLOSED DONE (30/09/2026)
 

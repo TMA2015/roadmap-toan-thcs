@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "catalog_id": "MATH-WRITTEN-EXERCISE-LIBRARY-V1",
   "snapshot_date": "2026-10-01",
-  "status": "PILOT_CANDIDATE_PENDING_NOTEBOOKLM_R1",
+  "status": "ACTIVE_APPEND_ONLY",
   "auto_readiness_credit": false,
   "self_marking_only": true,
   "pilot_scope": {
@@ -103,7 +103,10 @@
         "docs/kien-thuc/07-phan-thuc-dai-so/bai-tap.md#07-WR-11"
       ],
       "academic_review": {
-        "status": "PENDING_NOTEBOOKLM_R1"
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-PILOT-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/04_NOTEBOOKLM_R1_PASS_RECEIPT.md"
       }
     },
     {
@@ -203,7 +206,10 @@
         "docs/kien-thuc/07-phan-thuc-dai-so/bai-tap.md#07-WR-10"
       ],
       "academic_review": {
-        "status": "PENDING_NOTEBOOKLM_R1"
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-PILOT-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/04_NOTEBOOKLM_R1_PASS_RECEIPT.md"
       }
     },
     {
@@ -304,7 +310,10 @@
         "docs/kien-thuc/14-tam-giac/bai-tap.md#14-WR-09"
       ],
       "academic_review": {
-        "status": "PENDING_NOTEBOOKLM_R1"
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-PILOT-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/04_NOTEBOOKLM_R1_PASS_RECEIPT.md"
       }
     },
     {
@@ -404,7 +413,10 @@
         "docs/kien-thuc/14-tam-giac/bai-tap.md#14-ENT-01"
       ],
       "academic_review": {
-        "status": "PENDING_NOTEBOOKLM_R1"
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-PILOT-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/04_NOTEBOOKLM_R1_PASS_RECEIPT.md"
       }
     },
     {
@@ -520,7 +532,10 @@
         "docs/kien-thuc/24-bai-toan-thuc-te/bai-tap.md#24-M3-02"
       ],
       "academic_review": {
-        "status": "PENDING_NOTEBOOKLM_R1"
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-PILOT-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/04_NOTEBOOKLM_R1_PASS_RECEIPT.md"
       }
     },
     {
@@ -634,7 +649,579 @@
         "docs/kien-thuc/24-bai-toan-thuc-te/bai-tap.md#24-M3-06"
       ],
       "academic_review": {
-        "status": "PENDING_NOTEBOOKLM_R1"
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-PILOT-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/04_NOTEBOOKLM_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX08-EQI-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT08",
+      "topic_slug": "08-phuong-trinh-bat-phuong-trinh",
+      "topic_title": "Phương trình và bất phương trình",
+      "problem_type_id": "equation-rational-domain-check",
+      "problem_type_title": "Phương trình chứa ẩn ở mẫu và đối chiếu điều kiện",
+      "title": "Nghiệm tìm được bị loại bởi điều kiện xác định",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "dkxd-phuong-trinh-mau",
+        "khu-mau-phuong-trinh",
+        "doi-chieu-nghiem"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat",
+        "phan-thuc-dai-so"
+      ],
+      "estimated_minutes": 8,
+      "problem_markdown": "Giải phương trình\n\n$$\\frac{2x-2}{x-1}=3.$$\n\nYêu cầu: ghi điều kiện xác định trước khi biến đổi và nêu tập nghiệm cuối cùng.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Điều kiện xác định",
+          "content_markdown": "Mẫu số phải khác $0$, nên\n\n$$x-1\\ne0\\Rightarrow x\\ne1.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Khử mẫu trên miền xác định",
+          "content_markdown": "Với $x\\ne1$, nhân hai vế với $x-1$:\n\n$$2x-2=3(x-1).$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Giải phương trình thu được",
+          "content_markdown": "Ta có\n\n$$2x-2=3x-3\\Rightarrow x=1.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Đối chiếu và kết luận",
+          "content_markdown": "Giá trị $x=1$ không thỏa điều kiện xác định. Vì vậy phương trình **vô nghiệm**:\n\n$$S=\\varnothing.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Ghi đúng điều kiện $x\\ne1$.",
+          "points": 1
+        },
+        {
+          "criterion": "Khử mẫu đúng để được $2x-2=3(x-1)$.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải đúng phương trình thu được và tìm $x=1$.",
+          "points": 1
+        },
+        {
+          "criterion": "Đối chiếu điều kiện, loại $x=1$ và kết luận $S=\\varnothing$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Bỏ qua điều kiện $x\\ne1$ rồi kết luận $x=1$ là nghiệm.",
+        "Rút gọn $(2x-2)/(x-1)$ trước khi nêu miền xác định rồi quên mất giá trị bị loại.",
+        "Khử mẫu nhưng không đối chiếu nghiệm với điều kiện ban đầu."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ08 – Phương trình tích & chứa mẫu",
+          "href": "../kien-thuc/08-phuong-trinh-bat-phuong-trinh/core/"
+        },
+        {
+          "label": "Practice Room CĐ08",
+          "href": "../kien-thuc/08-phuong-trinh-bat-phuong-trinh/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/08-phuong-trinh-bat-phuong-trinh/bai-tap.md#08-WR-05",
+        "docs/assets/data/curriculum/topic08-learning-workspace.json#eq08-core-2"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/11_NOTEBOOKLM_EXPANSION_B1_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX08-EQI-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT08",
+      "topic_slug": "08-phuong-trinh-bat-phuong-trinh",
+      "topic_title": "Phương trình và bất phương trình",
+      "problem_type_id": "inequality-multistep-number-line",
+      "problem_type_title": "Bất phương trình nhiều bước và biểu diễn tập nghiệm",
+      "title": "Thu gọn, đổi chiều đúng lúc và biểu diễn nghiệm",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "tinh-chat-thu-tu-phep-nhan",
+        "bpt-bac-nhat",
+        "doi-chieu-bpt",
+        "bieu-dien-tap-nghiem"
+      ],
+      "prerequisites": [
+        "phep-tinh-so-huu-ti"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Giải bất phương trình\n\n$$5-2(3x-1)\\ge4x+9$$\n\nrồi mô tả cách biểu diễn tập nghiệm trên trục số.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Bỏ ngoặc và thu gọn",
+          "content_markdown": "Ta có\n\n$$5-2(3x-1)=5-6x+2=7-6x.$$\n\nDo đó\n\n$$7-6x\\ge4x+9.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Chuyển vế",
+          "content_markdown": "Chuyển các hạng chứa $x$ sang một vế và hằng số sang vế kia:\n\n$$-10x\\ge2.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Chia cho số âm",
+          "content_markdown": "Chia hai vế cho $-10$ nên phải **đổi chiều** bất phương trình:\n\n$$x\\le-\\frac15.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Biểu diễn trên trục số",
+          "content_markdown": "Đặt **điểm đặc** tại $-\\frac15$ vì có lấy mốc, rồi tô phần trục số về **bên trái**. Tập nghiệm là $(-\\infty,-\\frac15]$."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Bỏ ngoặc và thu gọn đúng về $7-6x\\ge4x+9$.",
+          "points": 1
+        },
+        {
+          "criterion": "Chuyển vế đúng để được $-10x\\ge2$.",
+          "points": 1
+        },
+        {
+          "criterion": "Đổi chiều khi chia cho $-10$ và kết luận $x\\le-\\frac15$.",
+          "points": 1
+        },
+        {
+          "criterion": "Mô tả đúng điểm đặc tại $-\\frac15$ và tô về bên trái.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Bỏ ngoặc sai dấu ở $-2(3x-1)$.",
+        "Chia cho $-10$ nhưng giữ nguyên chiều bất phương trình.",
+        "Dùng điểm rỗng tại $-1/5$ hoặc tô sai phía trên trục số."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ08 – Bất phương trình & tập nghiệm",
+          "href": "../kien-thuc/08-phuong-trinh-bat-phuong-trinh/core/"
+        },
+        {
+          "label": "Practice Room CĐ08",
+          "href": "../kien-thuc/08-phuong-trinh-bat-phuong-trinh/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/08-phuong-trinh-bat-phuong-trinh/bai-tap.md#08-WR-07",
+        "docs/kien-thuc/08-phuong-trinh-bat-phuong-trinh/bai-tap.md#08-WR-09",
+        "docs/assets/data/curriculum/topic08-learning-workspace.json#eq08-core-4"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/11_NOTEBOOKLM_EXPANSION_B1_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX17-SIM-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT17",
+      "topic_slug": "17-thales-dong-dang",
+      "topic_title": "Thales và tam giác đồng dạng",
+      "problem_type_id": "thales-converse-parallel-proof",
+      "problem_type_title": "Chứng minh song song bằng định lí Thales đảo",
+      "title": "Từ hai tỉ số đúng đến kết luận song song",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "thales-dao",
+        "ti-le-doan-thang"
+      ],
+      "prerequisites": [
+        "tinh-chat-song-song"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Cho tam giác $ABC$. Điểm $D$ thuộc đoạn $AB$, điểm $E$ thuộc đoạn $AC$. Biết\n\n$$AD=4\\text{ cm},\\quad DB=2\\text{ cm},\\quad AE=6\\text{ cm},\\quad EC=3\\text{ cm}.$$\n\nChứng minh $DE\\parallel BC$.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Xác định cấu hình",
+          "content_markdown": "Theo giả thiết, $D$ nằm trên đoạn $AB$ và $E$ nằm trên đoạn $AC$, đúng vị trí để xét định lí Thales đảo trong tam giác $ABC$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Tính hai tỉ số tương ứng",
+          "content_markdown": "Ta có\n\n$$\\frac{AD}{DB}=\\frac42=2,\\qquad \\frac{AE}{EC}=\\frac63=2.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "So sánh",
+          "content_markdown": "Suy ra\n\n$$\\frac{AD}{DB}=\\frac{AE}{EC}.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận bằng Thales đảo",
+          "content_markdown": "Vì $D\\in AB$, $E\\in AC$ và hai tỉ số tương ứng bằng nhau, theo định lí Thales đảo:\n\n$$DE\\parallel BC.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Nêu đúng vị trí $D\\in AB$, $E\\in AC$ trong tam giác $ABC$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $AD/DB=2$ và $AE/EC=2$.",
+          "points": 1
+        },
+        {
+          "criterion": "So sánh đúng hai tỉ số tương ứng.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng định lí Thales đảo để kết luận $DE\\parallel BC$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Dùng Thales thuận để chứng minh song song khi song song chưa phải giả thiết.",
+        "Ghép sai các đoạn, chẳng hạn so $AD/DB$ với $EC/AE$.",
+        "Bỏ qua điều kiện $D,E$ phải nằm trên hai cạnh tương ứng của tam giác."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ17 – Thales thuận và đảo",
+          "href": "../kien-thuc/17-thales-dong-dang/core/"
+        },
+        {
+          "label": "Practice Room CĐ17",
+          "href": "../kien-thuc/17-thales-dong-dang/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/17-thales-dong-dang/bai-tap.md#17-WR-02",
+        "docs/assets/data/curriculum/topic17-learning-workspace.json#geo17-core-1"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/11_NOTEBOOKLM_EXPANSION_B1_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX17-SIM-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT17",
+      "topic_slug": "17-thales-dong-dang",
+      "topic_title": "Thales và tam giác đồng dạng",
+      "problem_type_id": "similarity-parallel-length-chain",
+      "problem_type_title": "Chứng minh đồng dạng rồi tính nhiều độ dài",
+      "title": "Từ song song đến đồng dạng và hai kết quả độ dài",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "dong-dang-gg",
+        "thu-tu-tuong-ung",
+        "tinh-do-dai-dong-dang"
+      ],
+      "prerequisites": [
+        "thales-thuan"
+      ],
+      "estimated_minutes": 15,
+      "problem_markdown": "Cho tam giác $ABC$. Điểm $D$ thuộc đoạn $AB$, điểm $E$ thuộc đoạn $AC$ và $DE\\parallel BC$. Biết\n\n$$AD=6\\text{ cm},\\quad DB=3\\text{ cm},\\quad AE=8\\text{ cm},\\quad BC=12\\text{ cm}.$$\n\n1. Chứng minh $\\triangle ADE\\sim\\triangle ABC$.\n2. Tính $EC$ và $DE$.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Tính cạnh toàn phần",
+          "content_markdown": "Vì $D$ nằm trên đoạn $AB$ nên\n\n$$AB=AD+DB=6+3=9\\text{ cm}.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Chứng minh hai tam giác đồng dạng",
+          "content_markdown": "Do $DE\\parallel BC$, ta có $\\angle ADE=\\angle ABC$ và $\\angle AED=\\angle ACB$. Vì vậy\n\n$$\\triangle ADE\\sim\\triangle ABC$$\n\ntheo trường hợp g-g, với sự tương ứng $A\\leftrightarrow A$, $D\\leftrightarrow B$, $E\\leftrightarrow C$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Lập tỉ số đúng thứ tự",
+          "content_markdown": "Từ đồng dạng:\n\n$$\\frac{AD}{AB}=\\frac{AE}{AC}=\\frac{DE}{BC}=\\frac69=\\frac23.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Tính AC và EC",
+          "content_markdown": "Từ $AE/AC=2/3$:\n\n$$\\frac8{AC}=\\frac23\\Rightarrow AC=12\\text{ cm}.$$\n\nDo đó\n\n$$EC=AC-AE=12-8=4\\text{ cm}.$$"
+        },
+        {
+          "step_id": "S5",
+          "title": "Tính DE",
+          "content_markdown": "Từ $DE/BC=2/3$:\n\n$$\\frac{DE}{12}=\\frac23\\Rightarrow DE=8\\text{ cm}.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Tính đúng $AB=9$ cm.",
+          "points": 1
+        },
+        {
+          "criterion": "Chứng minh đúng $\\triangle ADE\\sim\\triangle ABC$ theo g-g.",
+          "points": 1
+        },
+        {
+          "criterion": "Viết đúng thứ tự tương ứng và tỉ số $AD/AB=AE/AC=DE/BC$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $AC=12$ cm và $EC=4$ cm.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $DE=8$ cm.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Viết sai thứ tự tương ứng rồi ghép $AE$ với $BC$.",
+        "Dùng $AD/DB$ thay cho tỉ số giữa hai tam giác đồng dạng.",
+        "Tìm được $AC$ nhưng quên trừ $AE$ để trả lời đúng đại lượng $EC$."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ17 – Đồng dạng và thứ tự tương ứng",
+          "href": "../kien-thuc/17-thales-dong-dang/core/"
+        },
+        {
+          "label": "Practice Room CĐ17",
+          "href": "../kien-thuc/17-thales-dong-dang/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/17-thales-dong-dang/bai-tap.md#17-WR-06",
+        "docs/kien-thuc/17-thales-dong-dang/bai-tap.md#17-WR-09",
+        "docs/assets/data/curriculum/topic17-learning-workspace.json#geo17-core-4"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/11_NOTEBOOKLM_EXPANSION_B1_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX19-CIR-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT19",
+      "topic_slug": "19-duong-tron",
+      "topic_title": "Đường tròn",
+      "problem_type_id": "circle-arc-sector-measure",
+      "problem_type_title": "Độ dài cung và diện tích quạt tròn",
+      "title": "Cùng một cung, hai đại lượng khác đơn vị",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "do-dai-cung",
+        "dien-tich-quat-tron"
+      ],
+      "prerequisites": [
+        "do-dai-duong-tron"
+      ],
+      "estimated_minutes": 8,
+      "problem_markdown": "Một đường tròn có bán kính $R=12\\text{ cm}$. Xét cung có số đo $150^\\circ$.\n\n1. Tính độ dài cung đó.\n2. Tính diện tích hình quạt tròn tương ứng.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Xác định phần của đường tròn",
+          "content_markdown": "Cung $150^\\circ$ chiếm\n\n$$\\frac{150}{360}=\\frac5{12}$$\n\nmột vòng tròn."
+        },
+        {
+          "step_id": "S2",
+          "title": "Tính độ dài cung",
+          "content_markdown": "Độ dài cung là\n\n$$l=\\frac{150}{360}\\cdot2\\pi\\cdot12=10\\pi\\text{ cm}.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Tính diện tích quạt",
+          "content_markdown": "Diện tích hình quạt là\n\n$$S=\\frac{150}{360}\\cdot\\pi\\cdot12^2=60\\pi\\text{ cm}^2.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra đơn vị",
+          "content_markdown": "Độ dài cung dùng đơn vị cm; diện tích quạt dùng cm$^2$. Hai kết quả đều ứng với cùng tỉ lệ $5/12$ của đường tròn."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Xác định đúng tỉ lệ $150/360=5/12$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng độ dài cung $10\\pi$ cm.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng diện tích quạt $60\\pi$ cm$^2$.",
+          "points": 1
+        },
+        {
+          "criterion": "Ghi đúng và phân biệt đơn vị độ dài với diện tích.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Dùng $\\pi R$ thay cho chu vi $2\\pi R$ khi tính độ dài cung.",
+        "Dùng công thức độ dài cung cho diện tích quạt hoặc ngược lại.",
+        "Ghi cùng một đơn vị cho cả độ dài và diện tích."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ19 – Cung và đo lường đường tròn",
+          "href": "../kien-thuc/19-duong-tron/core/"
+        },
+        {
+          "label": "Practice Room CĐ19",
+          "href": "../kien-thuc/19-duong-tron/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/19-duong-tron/bai-tap.md#19-WR-02",
+        "docs/kien-thuc/19-duong-tron/bai-tap.md#19-WR-03",
+        "docs/assets/data/curriculum/topic19-learning-workspace.json#geo19-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/11_NOTEBOOKLM_EXPANSION_B1_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX19-CIR-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT19",
+      "topic_slug": "19-duong-tron",
+      "topic_title": "Đường tròn",
+      "problem_type_id": "circle-cyclic-quadrilateral-angle",
+      "problem_type_title": "Dấu hiệu tứ giác nội tiếp và góc đối",
+      "title": "Nhận ra nội tiếp rồi khai thác cặp góc đối",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "tu-giac-noi-tiep",
+        "dau-hieu-noi-tiep"
+      ],
+      "prerequisites": [
+        "do-goc"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Cho tứ giác **lồi** $ABCD$ có\n\n$$\\angle BAD=72^\\circ,\\qquad \\angle BCD=108^\\circ.$$\n\n1. Chứng minh $ABCD$ nội tiếp được một đường tròn.\n2. Biết thêm $\\angle ABC=118^\\circ$. Tính $\\angle ADC$.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Kiểm tra một cặp góc đối",
+          "content_markdown": "Hai góc $\\angle BAD$ và $\\angle BCD$ là hai góc đối của tứ giác lồi $ABCD$ và\n\n$$72^\\circ+108^\\circ=180^\\circ.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Kết luận nội tiếp",
+          "content_markdown": "Vì một cặp góc đối của tứ giác lồi bù nhau, theo dấu hiệu đảo, bốn điểm $A,B,C,D$ cùng thuộc một đường tròn. Do đó $ABCD$ là tứ giác nội tiếp."
+        },
+        {
+          "step_id": "S3",
+          "title": "Dùng tính chất của tứ giác nội tiếp",
+          "content_markdown": "Trong tứ giác nội tiếp, hai góc đối bù nhau:\n\n$$\\angle ABC+\\angle ADC=180^\\circ.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Tính góc còn lại",
+          "content_markdown": "Suy ra\n\n$$\\angle ADC=180^\\circ-118^\\circ=62^\\circ.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Nhận ra đúng $\\angle BAD$ và $\\angle BCD$ là hai góc đối và có tổng $180^\\circ$.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng dấu hiệu đảo để chứng minh tứ giác nội tiếp.",
+          "points": 1
+        },
+        {
+          "criterion": "Viết đúng tính chất $\\angle ABC+\\angle ADC=180^\\circ$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $\\angle ADC=62^\\circ$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Kết luận nội tiếp chỉ vì hình vẽ trông giống tứ giác nội tiếp.",
+        "Dùng hai góc kề thay vì một cặp góc đối để kiểm tra tổng $180^\\circ$.",
+        "Sau khi đã chứng minh nội tiếp, trừ sai và cho $\\angle ADC=118^\\circ$."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ19 – Tứ giác nội tiếp",
+          "href": "../kien-thuc/19-duong-tron/core/"
+        },
+        {
+          "label": "Practice Room CĐ19",
+          "href": "../kien-thuc/19-duong-tron/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/19-duong-tron/bai-tap.md#19-WR-08",
+        "docs/assets/data/curriculum/topic19-learning-workspace.json#geo19-core-4"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/11_NOTEBOOKLM_EXPANSION_B1_R1_PASS_RECEIPT.md"
       }
     }
   ],
@@ -644,5 +1231,31 @@
     "Written-library self-marking never grants automatic Readiness/mastery credit in v1.",
     "Geometry figures support orientation only and never create unstated hypotheses.",
     "Existing Topic 25 A25 anchors keep their IDs and source of truth; future general-library surfacing must reference rather than duplicate them."
-  ]
+  ],
+  "published_scope": {
+    "topics": [
+      "CT07",
+      "CT08",
+      "CT14",
+      "CT17",
+      "CT19",
+      "CT24"
+    ],
+    "exercise_count": 12,
+    "batches": [
+      {
+        "batch_id": "PILOT_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-PILOT-R1-20261001",
+        "count": 6,
+        "status": "PUBLISHED"
+      },
+      {
+        "batch_id": "EXPANSION_B1_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001",
+        "count": 6,
+        "status": "TECHNICAL_IMPLEMENTATION_CANDIDATE"
+      }
+    ],
+    "rule": "Append-only publication of academically reviewed written exercises; self-marking only."
+  }
 }

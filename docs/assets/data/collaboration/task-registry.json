@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": "1.0.100",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,18 +756,27 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.98",
-      "review_verdict": "OWNER_CONTENT_UX_PASS_PATCH1_RELEASED_SPOT_QA_PENDING",
-      "review_notes": "Owner already accepted the production pilot on desktop+iPad. Requested Patch 1 has now passed CI and deployed successfully. Close the parent Written Exercise Library task after a short owner production spot-QA confirms compact support row, shortcut entry, and topic-filter deep link."
+      "context_version": "1.0.99",
+      "review_verdict": "PILOT_OWNER_PASS_PATCH1_PARTIAL_QA_AND_B1_NOTEBOOKLM_PASS",
+      "review_notes": "Pilot owner UX/content PASS. Patch 1 production spot-QA: quick shortcut 7+25 with Thư viện bài tập PASS; compact 3-button row and topic deep-link spot checks remain. Expansion B1 NotebookLM PASS 6/6 + ARCH_1..ARCH_8; separate technical implementation/QA is staged, not yet released."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
       "title": "Compact written-library support row and connect topic/shortcut navigation",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_SPOT_QA",
       "status": "OPEN",
-      "context_version": "1.0.98",
-      "review_verdict": "PRODUCTION_RELEASED_CI_PASS_OWNER_SPOT_QA_PENDING",
-      "review_notes": "Owner-approved UX/navigation patch released. Exact tested HEAD 8be3c40482dcf48545fa49e27cfccaa1822b8b16 passed Roadmap PR Quality 36841009154. PR #237 merged as a80343a5ceba56957af3002f4b128e9fb5545c8e; Deploy MkDocs 36841498180 SUCCESS. Browser QA verified three horizontal support actions, no learner-data writes, quick shortcut 7+25 with Thư viện bài tập, and CĐ07 deep link /luyen-tap/?topic=CT07 with automatic topic filter. Owner production spot-QA remains before task closure."
+      "context_version": "1.0.100",
+      "review_verdict": "PRODUCTION_RELEASED_OWNER_SPOT_QA_PARTIAL_2_OF_3_PASS",
+      "review_notes": "Owner spot-QA now confirms (1) quick shortcut 7+25 with Thư viện bài tập PASS and (2) compact horizontal Hướng dẫn/Rubric/Lỗi thường gặp row PASS from production screenshot. Remaining owner check: topic 'Các dạng bài' deep link auto-filters the library. Automated browser QA already PASS."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-001",
+      "title": "Expand Written Exercise Library to CĐ08/CĐ17/CĐ19",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "OPEN",
+      "context_version": "1.0.100",
+      "review_verdict": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_AUTHORIZED",
+      "review_notes": "NotebookLM academic R1 PASS 6/6 + ARCH_1..ARCH_8. Exact-head technical QA on bc5cbd9a3c9971ff5d20ef1bc446d6d0f212da09 passed Roadmap PR Quality 36859348005 after correcting a test-harness expected-ID list; catalog itself was correct. Owner explicitly authorized controlled production release on 2026-10-01. Append-only 12-item catalog; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
     }
   ]
 }
