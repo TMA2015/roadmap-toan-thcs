@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0.0",
+  "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-R1-20261001",
+  "snapshot_date": "2026-10-01",
+  "status": "REVIEW_ONLY_PENDING_NOTEBOOKLM_R1",
+  "production_catalog_unchanged": true,
+  "auto_readiness_credit": false,
+  "self_marking_only": true,
+  "scope": {
+    "topics": [
+      "CT21"
+    ],
+    "exercise_count": 2,
+    "rule": "CT21 only: one CORE_BASE and one CORE_APPLY; do not force CT22 THPT-Bridge or CT25 Entrance10 into the normal Core append"
+  },
+  "exercises": [
+    {
+      "exercise_id": "WX21-STA-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT21",
+      "topic_slug": "21-thong-ke",
+      "topic_title": "Thống kê và thu thập dữ liệu",
+      "problem_type_id": "statistics-table-to-bar-chart",
+      "problem_type_title": "Chuyển bảng số liệu thành biểu đồ cột và nhận xét",
+      "title": "Từ bảng số liệu đến biểu đồ cột có thang đo rõ ràng",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "doc-bieu-do-cot",
+        "chon-bieu-do",
+        "chuyen-bang-bieu-do",
+        "nhan-xet-du-lieu"
+      ],
+      "prerequisites": [],
+      "estimated_minutes": 12,
+      "problem_markdown": "Một thư viện ghi lại số lượt mượn sách theo thể loại trong một tuần:\n\n| Thể loại | Truyện | Khoa học | Lịch sử | Kỹ năng |\n|---|---:|---:|---:|---:|\n| Số lượt mượn | 24 | 18 | 12 | 16 |\n\n1. Chọn dạng biểu đồ phù hợp để so sánh bốn thể loại và giải thích ngắn gọn.\n2. Trên giấy, vẽ biểu đồ với tên biểu đồ, trục, đơn vị và thang chia hợp lý.\n3. Xác định thể loại có số lượt mượn lớn nhất, nhỏ nhất và tính chênh lệch giữa hai giá trị đó.\n4. Viết một nhận xét chỉ dựa trên số liệu đã cho.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Chọn dạng biểu diễn",
+          "content_markdown": "Dữ liệu gồm bốn nhóm thể loại cần so sánh số lượt mượn, nên **biểu đồ cột** là phù hợp. Biểu đồ đoạn thẳng không phù hợp vì bốn thể loại không phải một chuỗi thời gian."
+        },
+        {
+          "step_id": "S2",
+          "title": "Thiết lập biểu đồ",
+          "content_markdown": "Trục ngang ghi bốn thể loại: Truyện, Khoa học, Lịch sử, Kỹ năng. Trục dọc ghi **Số lượt mượn (lượt)**, bắt đầu từ $0$ và dùng thang chia đều đủ để biểu diễn đến $24$. Bốn cột có chiều cao lần lượt $24,18,12,16$."
+        },
+        {
+          "step_id": "S3",
+          "title": "So sánh các giá trị",
+          "content_markdown": "Truyện có số lượt mượn lớn nhất: $24$ lượt. Lịch sử nhỏ nhất: $12$ lượt. Chênh lệch là\n\n$$24-12=12\\text{ lượt}.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận trong phạm vi dữ liệu",
+          "content_markdown": "Một nhận xét có căn cứ là: **Trong tuần được ghi nhận, sách Truyện có số lượt mượn lớn nhất và nhiều hơn sách Lịch sử 12 lượt.** Dữ liệu này không tự cho biết nguyên nhân vì sao các thể loại có số lượt mượn khác nhau."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Chọn đúng biểu đồ cột và nêu được mục tiêu là so sánh các nhóm.",
+          "points": 1
+        },
+        {
+          "criterion": "Vẽ/thiết lập đúng trục, đơn vị, thang chia và bốn cột 24, 18, 12, 16.",
+          "points": 1
+        },
+        {
+          "criterion": "Xác định đúng lớn nhất 24, nhỏ nhất 12 và chênh lệch 12 lượt.",
+          "points": 1
+        },
+        {
+          "criterion": "Viết nhận xét đúng phạm vi dữ liệu, không tự suy diễn nguyên nhân.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Chọn biểu đồ đoạn thẳng dù các thể loại không tạo thành chuỗi thời gian.",
+        "Vẽ cột đúng số nhưng thiếu đơn vị hoặc dùng thang chia không đều.",
+        "Nhầm giá trị nhỏ nhất 12 với chênh lệch 12 mà không nêu rõ đại lượng.",
+        "Từ số lượt mượn suy ra nguyên nhân hoặc khẳng định mức độ yêu thích mà dữ liệu không cung cấp."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ21 – Đọc bảng và biểu đồ cột",
+          "href": "../kien-thuc/21-thong-ke/core/"
+        },
+        {
+          "label": "Practice Room CĐ21",
+          "href": "../kien-thuc/21-thong-ke/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/assets/data/curriculum/topic21-learning-workspace.json#sta21-core-2",
+        "docs/assets/data/curriculum/topic21-learning-workspace.json#sta21-core-4",
+        "docs/assets/data/curriculum/topic21-learning-workspace.json#sta21-core-5",
+        "docs/kien-thuc/21-thong-ke/bai-tap.md#21-M3-09"
+      ],
+      "academic_review": {
+        "status": "PENDING_NOTEBOOKLM_R1"
+      }
+    },
+    {
+      "exercise_id": "WX21-STA-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT21",
+      "topic_slug": "21-thong-ke",
+      "topic_title": "Thống kê và thu thập dữ liệu",
+      "problem_type_id": "statistics-double-bar-percent-claim",
+      "problem_type_title": "So sánh hai dãy số liệu, tính mức tăng và giới hạn kết luận",
+      "title": "Cột kép: tăng bao nhiêu và dữ liệu cho phép kết luận đến đâu?",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "doc-bieu-do-cot-kep",
+        "nhan-xet-du-lieu"
+      ],
+      "prerequisites": [
+        "phan-tram"
+      ],
+      "estimated_minutes": 12,
+      "problem_markdown": "Dữ liệu từ một biểu đồ cột kép về số học sinh tham gia thử thách đọc sách được chép lại như sau. Hai dãy tương ứng với **đầu học kỳ** và **cuối học kỳ**:\n\n| Khối | Đầu học kỳ | Cuối học kỳ |\n|---|---:|---:|\n| 6 | 18 | 24 |\n| 7 | 20 | 25 |\n| 8 | 16 | 24 |\n| 9 | 22 | 22 |\n\n1. Tính mức thay đổi số học sinh của từng khối từ đầu đến cuối học kỳ.\n2. Khối nào tăng nhiều nhất về **số học sinh**?\n3. Tính tỉ lệ phần trăm tăng của khối 8 so với đầu học kỳ.\n4. Một bạn nói: “Khối 8 tăng mạnh nhất vì giáo viên khối 8 tổ chức hoạt động tốt hơn.” Hãy chỉ ra phần nào của câu nói được dữ liệu hỗ trợ và phần nào không.\n5. Viết một kết luận ngắn chỉ dựa trên số liệu.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Tính mức thay đổi",
+          "content_markdown": "Lấy số cuối học kỳ trừ số đầu học kỳ:\n\n- Khối 6: $24-18=6$ học sinh;\n- Khối 7: $25-20=5$ học sinh;\n- Khối 8: $24-16=8$ học sinh;\n- Khối 9: $22-22=0$ học sinh."
+        },
+        {
+          "step_id": "S2",
+          "title": "So sánh mức tăng tuyệt đối",
+          "content_markdown": "Mức tăng lớn nhất về số học sinh là $8$, thuộc **khối 8**."
+        },
+        {
+          "step_id": "S3",
+          "title": "Tính tỉ lệ tăng của khối 8",
+          "content_markdown": "Mốc so sánh là số đầu học kỳ $16$ học sinh:\n\n$$\\frac{24-16}{16}\\times100\\%=\\frac8{16}\\times100\\%=50\\%.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Giới hạn kết luận",
+          "content_markdown": "Dữ liệu hỗ trợ phần: **khối 8 tăng 8 học sinh, tương đương 50% so với đầu học kỳ, và đây là mức tăng tuyệt đối lớn nhất trong bốn khối**. Dữ liệu **không** cho biết nguyên nhân; vì vậy không thể từ bảng này kết luận việc tăng là do giáo viên tổ chức hoạt động tốt hơn."
+        },
+        {
+          "step_id": "S5",
+          "title": "Kết luận có căn cứ",
+          "content_markdown": "Ví dụ kết luận hợp lệ: **Từ đầu đến cuối học kỳ, số học sinh tham gia tăng ở khối 6, 7, 8; khối 9 không đổi. Khối 8 tăng nhiều nhất về số học sinh, từ 16 lên 24, tức tăng 8 học sinh hay 50%.**"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Tính đúng mức thay đổi của bốn khối: +6, +5, +8, 0.",
+          "points": 1
+        },
+        {
+          "criterion": "Xác định đúng khối 8 tăng nhiều nhất về số học sinh.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng tỉ lệ tăng của khối 8 là 50% với mẫu số là 16.",
+          "points": 1
+        },
+        {
+          "criterion": "Phân biệt đúng dữ liệu quan sát được với nguyên nhân không được dữ liệu cung cấp.",
+          "points": 1
+        },
+        {
+          "criterion": "Viết kết luận đúng số liệu và đúng phạm vi.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Nhìn giá trị cuối học kỳ lớn nhất rồi nhầm với mức tăng lớn nhất.",
+        "Tính tỉ lệ tăng bằng cách chia 8 cho 24 thay vì chia cho giá trị đầu kỳ 16.",
+        "Bỏ qua khối 9 không thay đổi.",
+        "Biến mối liên hệ trong dữ liệu thành kết luận nguyên nhân mà không có bằng chứng."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ21 – Cột kép và kết luận từ dữ liệu",
+          "href": "../kien-thuc/21-thong-ke/core/"
+        },
+        {
+          "label": "Practice Room CĐ21",
+          "href": "../kien-thuc/21-thong-ke/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/assets/data/curriculum/topic21-learning-workspace.json#sta21-core-2",
+        "docs/assets/data/curriculum/topic21-learning-workspace.json#sta21-core-5",
+        "docs/assets/data/assessment/21-thong-ke-core-v1.json#STA21READY_012"
+      ],
+      "academic_review": {
+        "status": "PENDING_NOTEBOOKLM_R1"
+      }
+    }
+  ]
+}
