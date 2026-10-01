@@ -9,7 +9,7 @@ Review **only** the material in this packet.
 - Base production checkpoint: `9b94dfbbb092c145a558af38afedd7ad87bb3fde`
 - Review branch: `review/written-library-expansion-b7-r1-20261001`
 - Candidate JSON: `review-packets/written-exercise-library/44_WRITTEN_EXPANSION_B7_CANDIDATE.json`
-  - blob: `undefined`
+  - blob: `9b27714fdb9f96c5f4512759c6e9766629838dc9`
 - Design contract inherited unchanged from the locked B6 source packet
   - B6 packet blob: `6c1cc0d4516382aedf52759ab6827baf24f493f7`
 - Production catalog blob: `ba73ae9fd0d28a60acbafa788ac5142e2cb68439`
