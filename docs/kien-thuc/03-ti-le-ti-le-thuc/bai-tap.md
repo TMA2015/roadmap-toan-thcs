@@ -115,9 +115,9 @@ Rút ngắn 30 phút tức thời gian mới là \(2,5\) giờ. Do đó vận t�
 
 ---
 
-# Liên kết Roadmap
+## Liên kết Roadmap
 
-- **← Học kiến thức:** [Chuyên đề 03 – Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ](index.md)
 - **← Chuyên đề trước:** [02 – Số và phép tính](../02-so-va-phep-tinh/index.md)
+- **← Học kiến thức:** [Chuyên đề 03 – Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ](index.md)
 - **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 03](tu-kiem-tra.md)
 - **→ Chuyên đề tiếp theo:** [04 – Biểu thức và biến đổi đại số](../04-bieu-thuc-dai-so/index.md)
