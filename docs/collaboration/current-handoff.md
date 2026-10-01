@@ -30,7 +30,7 @@
 
 ### Navigation/rendering patch staged
 
-- Owner screenshot exposed raw Markdown in **Tiếp tục học**. Audit found the same source pattern in **CĐ02 and CĐ04–13**; wrapper removed so links render as normal Markdown.
+- Owner screenshot exposed raw Markdown in **Tiếp tục học**. Audit found the same source pattern in **CĐ02 and CĐ04–13**. Final implementation **does not modify those source-locked lesson files**; it enables `attr_list` + `md_in_html` and verifies the built HTML contains rendered buttons with no raw Markdown leakage.
 - Practice footer navigation is standardized across **CĐ02–25**: **previous topic → same-topic learning/self-check → next topic**. CĐ25 has no next topic.
 - Regression: `scripts/test-topic-roadmap-navigation.py`.
 - Task: `MATH-TOPIC-NAV-FIX-001` OPEN until CI/deploy + owner spot-QA.
