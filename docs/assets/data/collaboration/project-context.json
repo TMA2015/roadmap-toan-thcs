@@ -1,6 +1,6 @@
 {
-  "version": "1.0.90",
-  "updated": "2026-09-30",
+  "version": "1.0.91",
+  "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
     "name": "Self-Learning Math",
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "END-OF-DAY PAUSE. G2 and learner-help disclosure patch are CLOSED DONE. Do not start G3 automatically. Tomorrow first resolve/decide the four remaining owner-device QA debts: CĐ03 standalone Core; current CĐ07 17-item Core; Grade6 CĐ02 end-to-end journey/Readiness (card basics already accepted); Batch A remaining CĐ21/CĐ24/CĐ25. Non-blocking backlog remains BENCH-CAP-001, GEO-LIB-001, ALG-REVIEW-04-11-GEMINI-001, GEO13-GEMINI-REVIEW-001 and G6-T03-SCOPE-001. CONTENT-PILOT-001 and the old CĐ16–18 Gemini review task were retired as superseded.",
+    "next_priority": "Owner QA debt reduced from four to two. CĐ03 standalone Core and current CĐ07 17-item Core both PASS on desktop+iPad and are CLOSED DONE. Remaining owner QA: (1) Grade6 CĐ02 end-to-end journey/Readiness; (2) Batch A remaining CĐ21/CĐ24/CĐ25. G2/help-disclosure stay CLOSED DONE. Do not open G3/mastery/Readiness expansion automatically.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -556,6 +556,33 @@
       "g3_authorized": false,
       "mastery_readiness_expansion_authorized": false,
       "note": "Resume tomorrow by clearing owner QA debt before opening a new large academic/runtime phase."
+    },
+    "owner_qa_progress_20261001": {
+      "status": "2_OF_4_CLEARED",
+      "passed": [
+        {
+          "task_id": "MATH-CORE03-OWNER-QA-001",
+          "scope": "CĐ03 standalone Core",
+          "devices": [
+            "desktop",
+            "iPad"
+          ],
+          "result": "PASS"
+        },
+        {
+          "task_id": "C07-MICRO15-001",
+          "scope": "CĐ07 current 17-item Core baseline",
+          "devices": [
+            "desktop",
+            "iPad"
+          ],
+          "result": "PASS"
+        }
+      ],
+      "remaining": [
+        "G6-T02-OWNER-UX-001",
+        "MATH-UI-BATCH-A-OWNER-QA-001"
+      ]
     }
   },
   "handoff_required_fields": [
