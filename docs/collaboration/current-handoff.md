@@ -1,12 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, SAFE HANDOFF SAVED while owner runs NotebookLM B4.** B3 is **OWNER QA PASS on iPad + desktop / CLOSED**. Production remains **24 items / 12 topics**. B4 is **REVIEW-ONLY / NotebookLM R1 pending** on Draft PR #247, source-locked to review HEAD `fc11593309acc9a4aa6926a7d28b387263cbe6f8`: CĐ13 + CĐ15 + CĐ23, two items each (CORE_BASE + CORE_APPLY). **Do not implement, merge or deploy B4 before NotebookLM result.** Roadmap PR Quality run `36879068239` was still in progress when this checkpoint was saved. Patch 1 deep-link owner spot-check remains independent and non-blocking.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B4 owner controlled release AUTHORIZED; exact-head revalidation pending after saved authorization checkpoint.** NotebookLM **6/6 + ARCH_1–ARCH_10 PASS**. Technical QA on `9dc51f28a670fc8748a670f3d876793940623114` / run `36880519503` **SUCCESS**. Owner explicitly authorized controlled production release. Intended catalog: **30 items / 15 topics**. No Readiness/mastery/canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Written Library Expansion B4 — REVIEW-ONLY / NotebookLM R1 pending (01/10/2026)
+## Written Library Expansion B4 — controlled release authorized / saved checkpoint (01/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B4-001`.
 - Review PR: **#247 Draft** — provenance/review only; **do not merge as implementation**.
@@ -28,8 +28,14 @@
 - NotebookLM prompt: `review-packets/written-exercise-library/28_COPY_TO_NOTEBOOKLM_WRITTEN_EXPANSION_B4_R1.txt`.
 - Production is unchanged: **24 items / 12 topics**.
 - No runtime/UI/deploy change; no automatic Readiness/mastery credit; no canonical-evidence/G3 change.
-- Roadmap PR Quality `36879068239`: **IN PROGRESS at handoff save time**.
-- **Next action:** wait for owner-provided NotebookLM output. Only if it returns complete `6/6` + `ARCH_1–ARCH_10 PASS` + `AUTHORIZATION|CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA`, record a PASS receipt and open a **separate implementation branch/PR from then-current main**.
+- Roadmap PR Quality `36879068239`: **SUCCESS**.
+- NotebookLM result supplied by owner: **OVERALL PASS; 6/6 items PASS; 0 revisions; ARCH_1–ARCH_10 PASS**.
+- Authorization: `CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA`.
+- Implementation branch: `feature/written-library-expansion-b4-20261001`.
+- Intended catalog after append: **30 items / 15 topics**, preserving all 24 currently published IDs.
+- Technical QA: exact HEAD `9dc51f28a670fc8748a670f3d876793940623114`, Roadmap PR Quality `36880519503` **SUCCESS**.
+- Owner explicitly authorized **controlled production release** on 01/10/2026.
+- Current gate: fresh exact-head QA after this authorization checkpoint, then merge/deploy if clean and `main` has no base drift.
 
 ## Written Library Expansion B3 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 
