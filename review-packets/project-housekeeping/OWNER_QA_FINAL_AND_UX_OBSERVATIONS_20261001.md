@@ -26,7 +26,7 @@ Owner screenshot shows raw Markdown leaking in the continuation block. Audit fou
 
 Root cause in source: Markdown links were nested inside a raw HTML `<div class="topic-workspace-actions" markdown>` while the current Markdown extension set does not process that wrapper as intended.
 
-Patch: remove that unnecessary raw HTML wrapper and keep the Markdown links as normal Markdown.
+Final patch strategy: preserve the source-locked lesson files unchanged; enable the Markdown extensions required by their existing markup (`attr_list` + `md_in_html`) and validate the built HTML so raw Markdown cannot leak unnoticed.
 
 ### 2. Roadmap link order
 
