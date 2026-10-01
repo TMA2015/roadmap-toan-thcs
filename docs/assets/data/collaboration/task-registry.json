@@ -1,5 +1,5 @@
 {
-  "version": "1.0.99",
+  "version": "1.0.100",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -765,18 +765,18 @@
       "title": "Compact written-library support row and connect topic/shortcut navigation",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_SPOT_QA",
       "status": "OPEN",
-      "context_version": "1.0.99",
-      "review_verdict": "PRODUCTION_RELEASED_OWNER_SPOT_QA_PARTIAL_1_OF_3_PASS",
-      "review_notes": "Owner spot-QA confirms quick shortcut 7+25 and Thư viện bài tập PASS. Remaining owner checks: compact horizontal Hướng dẫn/Rubric/Lỗi thường gặp row and topic 'Các dạng bài' deep link auto-filter. Automated browser QA already PASS."
+      "context_version": "1.0.100",
+      "review_verdict": "PRODUCTION_RELEASED_OWNER_SPOT_QA_PARTIAL_2_OF_3_PASS",
+      "review_notes": "Owner spot-QA now confirms (1) quick shortcut 7+25 with Thư viện bài tập PASS and (2) compact horizontal Hướng dẫn/Rubric/Lỗi thường gặp row PASS from production screenshot. Remaining owner check: topic 'Các dạng bài' deep link auto-filters the library. Automated browser QA already PASS."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-001",
       "title": "Expand Written Exercise Library to CĐ08/CĐ17/CĐ19",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
       "status": "OPEN",
-      "context_version": "1.0.99",
-      "review_verdict": "NOTEBOOKLM_PASS_6_OF_6_ARCH_8_OF_8_TECHNICAL_IMPLEMENTATION_STAGED",
-      "review_notes": "NotebookLM academic R1 PASS for WX08-EQI-001/002, WX17-SIM-001/002, WX19-CIR-001/002. Authorization is limited to separate technical implementation/QA. Append-only catalog expansion; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
+      "context_version": "1.0.100",
+      "review_verdict": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_AUTHORIZED",
+      "review_notes": "NotebookLM academic R1 PASS 6/6 + ARCH_1..ARCH_8. Exact-head technical QA on bc5cbd9a3c9971ff5d20ef1bc446d6d0f212da09 passed Roadmap PR Quality 36859348005 after correcting a test-harness expected-ID list; catalog itself was correct. Owner explicitly authorized controlled production release on 2026-10-01. Append-only 12-item catalog; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
     }
   ]
 }
