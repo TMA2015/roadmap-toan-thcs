@@ -1,5 +1,5 @@
 {
-  "version": "1.0.107",
+  "version": "1.0.108",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.107",
-      "review_verdict": "B2_OWNER_PASS_INTRO_COPY_REFRESH_IN_PROGRESS",
-      "review_notes": "B2 owner QA PASS and closed. Owner noticed library intro still described the six-item pilot; replace fixed pilot/count/topic copy with durable expansion wording so future append-only batches do not stale the page. Patch 1 deep-link owner spot-check remains independent."
+      "context_version": "1.0.108",
+      "review_verdict": "B2_OWNER_PASS_DURABLE_INTRO_RELEASED",
+      "review_notes": "B2 owner QA PASS and closed. Durable library intro copy released, removing fixed pilot counts/topic list. Production catalog remains 18 items / 9 topics. Patch 1 topic deep-link owner spot-check remains independent."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -801,9 +801,9 @@
       "title": "Replace stale Written Library pilot intro with durable copy",
       "routing": "CHATGPT_IMPLEMENT+CI+DEPLOY+OWNER_SPOT_QA",
       "status": "OPEN",
-      "context_version": "1.0.107",
-      "review_verdict": "IMPLEMENTATION_STAGED",
-      "review_notes": "Owner observed production intro still says Pilot v1 / 6 items / CT07-14-24 after expansion to 18 items / 9 topics. Fix removes fixed counts/topic list, keeps paper-first workflow, and directs learners to live filters. Also reconciles B2 batch metadata to PUBLISHED."
+      "context_version": "1.0.108",
+      "review_verdict": "PRODUCTION_RELEASED_CI_PASS_OWNER_SPOT_QA_PENDING",
+      "review_notes": "Stale Pilot v1 / 6-item / CT07-14-24 intro removed. Durable expansion copy is now production. PR #244 exact HEAD 3f459683f8fe1bff52c1f32eb645e3b24a792b89 passed Roadmap PR Quality 36869043055; merge aa813c19fab105c5e0f3ef12a982f98406fac5de; Deploy MkDocs 36869588454 SUCCESS. Owner should refresh library intro once; no academic content changed."
     }
   ]
 }

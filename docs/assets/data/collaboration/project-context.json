@@ -1,5 +1,5 @@
 {
-  "version": "1.0.107",
+  "version": "1.0.108",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "B2 owner production QA PASS and CLOSED. Fix stale Written Library intro copy so it no longer hard-codes Pilot v1 / 6 items / CT07-14-24; use durable expansion wording and live filters instead. B2 batch metadata is reconciled to PUBLISHED. Patch 1 deep-link owner spot-check remains independent.",
+    "next_priority": "B2 is OWNER QA PASS and CLOSED. Written Library durable intro-copy fix is PRODUCTION RELEASED after CI/deploy success; owner may refresh once to confirm stale Pilot v1 / 6-item copy is gone. Patch 1 still has one independent owner spot-check: topic 'Các dạng bài' deep link auto-filters correctly. After that, continue append-only Written Library expansion by reviewed batch.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -874,11 +874,19 @@
       ]
     },
     "written_library_intro_copy": {
-      "status": "IMPLEMENTATION_STAGED",
+      "status": "PRODUCTION_RELEASED_OWNER_SPOT_QA_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-INTRO-COPY-001",
       "rule": "Library intro must not hard-code a pilot count or fixed topic list; live catalog/filter UI is the source of current coverage.",
       "branch": "fix/written-library-durable-intro-20261001",
-      "production_release": false
+      "production_release": true,
+      "implementation_pr": 244,
+      "exact_tested_head": "3f459683f8fe1bff52c1f32eb645e3b24a792b89",
+      "qa_run": 36869043055,
+      "qa_conclusion": "SUCCESS",
+      "production_merge": "aa813c19fab105c5e0f3ef12a982f98406fac5de",
+      "deploy_run": 36869588454,
+      "deploy_conclusion": "SUCCESS",
+      "owner_spot_qa": "PENDING"
     }
   },
   "handoff_required_fields": [
