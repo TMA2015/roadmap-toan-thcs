@@ -17,10 +17,11 @@ ok((nav.match(/\["\d{2}-[a-z0-9-]+","[0-9]{2}\. /g)||[]).length===25,"25 canonic
 for(const slug of ["01-ban-do-chuong-trinh","05-7-hang-dang-thuc","23-xac-suat","25-tong-hop-on-thi-10"])
   ok(nav.includes('["'+slug+'"')&&yaml.includes("kien-thuc/"+slug+"/index.md"),"canonical topic route: "+slug);
 ok(nav.includes("dialog.showModal()")&&nav.includes("scrollTop = 0"),"accessible chooser starts at top");
-ok(nav.includes("main.className=\"roadmap-main-quick\"")&&nav.includes("mainDestinations"),"six destinations in the independent topic chooser");
-ok(nav.includes('dialog.append(heading,main,hint,list)')&&nav.includes('count.textContent = "6 + 25"'),"main groups and topics share one compact header launcher");
+ok(nav.includes("main.className=\"roadmap-main-quick\"")&&nav.includes("mainDestinations"),"seven destinations in the independent topic chooser");
+ok(nav.includes('["Thư viện bài tập", "luyen-tap/", "✎"]')&&yaml.includes("Thư viện bài tập: luyen-tap/index.md"),"written exercise library is available in quick shortcuts");
+ok(nav.includes('dialog.append(heading,main,hint,list)')&&nav.includes('count.textContent = "7 + 25"'),"main groups and topics share one compact header launcher");
 ok(css.includes(".roadmap-topic-launcher")&&css.includes(".roadmap-topic-dialog__list"),"independent launcher/modal styles");
-ok(css.includes(".roadmap-main-quick__links"),"responsive six-group grid in the modal");
+ok(css.includes(".roadmap-main-quick__links"),"responsive seven-group grid in the modal");
 ok(!css.includes(".roadmap-mobile-shortcuts")&&!css.includes(".md-sidebar--primary > .md-sidebar__scrollwrap"),"remove all injected/sticky drawer styles");
 ok(css.includes("overflow:hidden")&&css.includes("flex:1 1 auto"),"modal header does not disappear while topic list scrolls");
 ok(css.includes(".roadmap-nav-dock.is-visible")&&css.includes(".library-topic-grid"),"style definitions");
