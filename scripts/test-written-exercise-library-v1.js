@@ -70,6 +70,10 @@ for(const x of data.exercises.filter(x=>x.topic_id==="CT14")){
 }
 const page=read("docs/luyen-tap/index.md");
 ok(page.includes("data-written-exercise-library"),"library page mount");
+ok(!page.includes("Pilot v1"),"library intro no longer pilot-labelled");
+ok(!page.includes("Hiện pilot có"),"library intro has no stale fixed pilot count");
+ok(page.includes("mở rộng dần theo từng chuyên đề"),"library intro uses durable expansion copy");
+ok(data.published_scope?.batches?.every(x=>x.status==="PUBLISHED"),"all released written-library batches marked published");
 const yaml=read("mkdocs.yml");
 ok(yaml.includes("Thư viện bài tập: luyen-tap/index.md"),"nav entry");
 ok(yaml.includes("written-exercise-library-v1.css"),"css wired");
