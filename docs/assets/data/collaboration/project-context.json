@@ -1,6 +1,6 @@
 {
-  "version": "1.0.127",
-  "updated": "2026-10-01",
+  "version": "1.0.130",
+  "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
     "name": "Self-Learning Math",
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B6 is CLOSED DONE after production release and owner real-device QA PASS on both iPad and desktop. Production remains 42 items / 21 topics. Next academic scope: plan Written Library B7 for CĐ21 Thống kê only; do not force CĐ22 THPT-Bridge or CĐ25 Entrance10 into the normal Core append.",
+    "next_priority": "Owner explicitly authorized controlled production release for Written Library Expansion B7. Persisted authorization now requires fresh exact-head Roadmap PR Quality revalidation on PR #255. If the final exact HEAD passes and main remains at the verified base with no drift, merge/deploy B7 and verify production 44 items / 22 topics.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1287,6 +1287,74 @@
         "each B6 topic exposes exactly 2 exercises",
         "owner checked on both iPad and desktop on 2026-10-01"
       ]
+    },
+    "written_library_expansion_b7": {
+      "status": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
+      "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-001",
+      "review_pr": 254,
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-R1-20261001",
+      "candidate_blob": "9b27714fdb9f96c5f4512759c6e9766629838dc9",
+      "notebooklm_result": "PASS_2_OF_2_ARCH_10_OF_10",
+      "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "topics": [
+        "CT21"
+      ],
+      "item_ids": [
+        "WX21-STA-001",
+        "WX21-STA-002"
+      ],
+      "implementation_branch": "feature/written-library-expansion-b7-20261001",
+      "intended_catalog": {
+        "exercise_count": 44,
+        "topic_count": 22,
+        "topics": [
+          "CT02",
+          "CT03",
+          "CT04",
+          "CT05",
+          "CT06",
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT13",
+          "CT14",
+          "CT15",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT20",
+          "CT21",
+          "CT23",
+          "CT24"
+        ]
+      },
+      "production_release": false,
+      "auto_readiness_credit": false,
+      "canonical_evidence_g3_changed": false,
+      "architecture_notes": [
+        "CT21 stays inside the locked five-card KNTT-Core skill boundary.",
+        "Frequency/tần suất and grouped data remain outside this B7 Core append.",
+        "CT22 remains separate THPT-Bridge/characteristic-measure scope; CT25 remains Entrance10/tổng hợp."
+      ],
+      "review_preflight": {
+        "exact_tested_head": "15eb19db0073455483b9576998cb1f9f93846ca6",
+        "roadmap_pr_quality_run": 36897216442,
+        "status": "SUCCESS"
+      },
+      "academic_review_receipt": "review-packets/written-exercise-library/48_NOTEBOOKLM_EXPANSION_B7_R1_PASS_RECEIPT.md",
+      "technical_qa": {
+        "exact_tested_head": "b8aa8617212d5435d6e92311f2599e55880c1630",
+        "roadmap_pr_quality_run": 36898694706,
+        "result": "PASS",
+        "strict_mkdocs_build": "PASS",
+        "browser_visual_qa": "PASS"
+      },
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-10-02"
     }
   },
   "handoff_required_fields": [

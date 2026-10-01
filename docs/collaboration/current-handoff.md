@@ -1,10 +1,30 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B6 CLOSED DONE.** PR #252 merged as `6dadcb1fb969380dc6fb5f7c241740dc769ae919`; Deploy MkDocs `36893580607` succeeded through **Deploy to GitHub Pages**; production catalog is **42 items / 21 topics**. Owner real-device QA **PASS on both iPad and desktop**: CĐ02/CĐ03/CĐ20 are present and each exposes exactly 2 exercises. CĐ02 remains grade-6 Core journey; CĐ20 remains Core measurement/solid geometry. No Readiness/mastery/canonical-evidence/G3 expansion. Next academic scope is a separate B7 for CĐ21 Thống kê only; do not force CĐ22 THPT-Bridge or CĐ25 Entrance10 into the normal Core append.
+> **CURRENT CHECKPOINT — 02/10/2026, Written Library Expansion B7 owner controlled release AUTHORIZED / exact-head revalidation pending.** NotebookLM **2/2 + ARCH_1–ARCH_10 PASS**. Technical QA on `b8aa8617212d5435d6e92311f2599e55880c1630` / Roadmap PR Quality `36898694706` **SUCCESS**, including strict MkDocs build and browser/visual QA. Owner explicitly authorized controlled production release. Prospective catalog: **44 items / 22 topics**. Fresh exact-head QA is required after this saved authorization checkpoint before merge/deploy.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+
+## Written Library Expansion B7 — NotebookLM PASS / technical QA pending (01/10/2026)
+
+- Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B7-001`.
+- Academic packet: `MATH-WRITTEN-LIBRARY-EXPANSION-B7-R1-20261001`.
+- Review PR: #254 (Draft; provenance/review only; do not merge as implementation).
+- Review exact HEAD before receipt: `15eb19db0073455483b9576998cb1f9f93846ca6`.
+- Review preflight: Roadmap PR Quality `36897216442` **SUCCESS**.
+- Owner-supplied NotebookLM result: **OVERALL PASS; 2/2 items PASS; ARCH_1–ARCH_10 PASS**.
+- Authorization: `CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA`.
+- Approved candidates:
+  - `WX21-STA-001` — CORE_BASE: table → bar chart → evidence-bounded conclusion;
+  - `WX21-STA-002` — CORE_APPLY: two-series comparison → percentage increase → reject unsupported causal inference.
+- Implementation branch: `feature/written-library-expansion-b7-20261001`.
+- Intended catalog after append: **44 items / 22 topics**, preserving all 42 published IDs.
+- CT21 boundary: five-card KNTT-Core only; do not promote frequency/tần suất, grouped data, CT22 characteristic measures/THPT-Bridge, or CT25 Entrance10.
+- Self-marking only; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion.
+- Technical QA: exact HEAD `b8aa8617212d5435d6e92311f2599e55880c1630`, Roadmap PR Quality `36898694706` **SUCCESS**; strict MkDocs build PASS; browser interaction + visual previews PASS.
+- Owner explicitly authorized **controlled production release** on 02/10/2026.
+- Current gate: fresh exact-head QA after this saved authorization checkpoint, then merge/deploy only if clean and `main` has no base drift.
 
 ## Written Library Expansion B6 — CLOSED DONE / owner QA PASS (01/10/2026)
 

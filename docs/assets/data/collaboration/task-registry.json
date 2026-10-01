@@ -1,7 +1,7 @@
 {
-  "version": "1.0.127",
+  "version": "1.0.130",
   "schema": "roadmap-collaboration-task-registry-v1",
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "statuses": [
     "OPEN",
     "GEMINI-DRAFT",
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.126",
-      "review_verdict": "B6_RELEASED_42_ITEMS_21_TOPICS_OWNER_QA_PENDING",
-      "review_notes": "Written Library production now contains 42 items / 21 topics after B6 release. Owner production QA should confirm CT02/CT03/CT20 appear and each has exactly 2 exercises. CT01 roadmap-only, CT22 THPT-Bridge, CT25 Entrance10 remain outside normal Core append."
+      "context_version": "1.0.130",
+      "review_verdict": "B7_OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
+      "review_notes": "B7 CT21 NotebookLM PASS 2/2 + ARCH_1..ARCH_10 and technical QA PASS on b8aa8617212d5435d6e92311f2599e55880c1630 / Roadmap PR Quality 36898694706. Owner explicitly authorized controlled production release on 2026-10-02. Fresh exact-head QA is required after this saved authorization checkpoint before merge/deploy."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -840,6 +840,15 @@
       "context_version": "1.0.127",
       "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
       "review_notes": "Owner production QA PASS on both iPad and desktop: CT02, CT03 and CT20 are present and each exposes exactly 2 exercises. Release provenance remains PR #252 / merge 6dadcb1fb969380dc6fb5f7c241740dc769ae919 / Deploy MkDocs 36893580607 SUCCESS. Production remains 42 exercises / 21 topics. CT02 remains grade-6 Core journey; CT20 remains Core measurement/solid geometry. B6 closed."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-001",
+      "title": "Expand Written Exercise Library to CĐ21 Thống kê",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "OPEN",
+      "context_version": "1.0.130",
+      "review_verdict": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
+      "review_notes": "NotebookLM PASS 2/2 + ARCH_1..ARCH_10. Technical QA PASS on b8aa8617212d5435d6e92311f2599e55880c1630 / Roadmap PR Quality 36898694706, including strict MkDocs build and browser/visual QA. Owner explicitly authorized controlled production release on 2026-10-02. Re-run fresh exact-head QA after this saved authorization checkpoint; merge/deploy only if clean and main has no base drift."
     }
   ]
 }
