@@ -1,0 +1,82 @@
+Review packet: MATH-WRITTEN-LIBRARY-EXPANSION-B2-R1-20261001.
+
+Use ONLY the uploaded source packet. Do not import outside exercises, rewrite the curriculum, or assume facts not present in the packet.
+
+Review all 6 candidates in exact order:
+WX09-SYS-001
+WX09-SYS-002
+WX16-QUAD-001
+WX16-QUAD-002
+WX18-TRI-001
+WX18-TRI-002
+
+For EACH item check:
+1) mathematical correctness;
+2) hypotheses / domain / units;
+3) exact skill IDs and KNTT-Core boundary against the locked Learning Workspace;
+4) step-by-step solution logic;
+5) final conclusion;
+6) rubric matches the solution and total points;
+7) common mistakes and remediation are accurate;
+8) duplicate / near-duplicate risk against the locked production catalog and existing written-practice source;
+9) CORE_BASE / CORE_APPLY classification;
+10) paper-first self-study suitability.
+
+For CT16 geometry also check:
+- theorem preconditions are explicit before each upgrade;
+- no conclusion is inferred from appearance or a missing diagram;
+- the chain tứ giác → hình bình hành → hình chữ nhật → hình vuông is logically valid where used.
+
+For CT18 modelling also check:
+- horizontal distance, eye height, right-angle structure and angle-elevation reference line are sufficiently stated;
+- exact and rounded answers are both correct where requested;
+- units are consistent.
+
+Then check:
+ARCH_1 — exactly 6 candidates, 2 each for CT09/CT16/CT18.
+ARCH_2 — each topic has one CORE_BASE and one CORE_APPLY.
+ARCH_3 — review-only; production catalog unchanged.
+ARCH_4 — self-marking only; no automatic Readiness/mastery credit.
+ARCH_5 — unique stable exercise IDs and no collision with current production catalog.
+ARCH_6 — every skill ID/layer is supported by the locked Learning Workspaces.
+ARCH_7 — every item has problem, stepwise solution, rubric, common mistakes, remediation, and source refs.
+ARCH_8 — no unsupported exam-frequency claim is used.
+ARCH_9 — CT16 theorem preconditions are explicit and valid.
+ARCH_10 — CT18 modelling assumptions/units/rounding are sufficient and correct.
+
+Return ONLY this compact format:
+
+OVERALL|PASS
+or
+OVERALL|REVISIONS_REQUIRED
+
+COVERAGE|6|<pass_count>|<revise_count>|<missing_count>
+
+ITEM|WX09-SYS-001|PASS
+ITEM|WX09-SYS-002|PASS
+ITEM|WX16-QUAD-001|PASS
+ITEM|WX16-QUAD-002|PASS
+ITEM|WX18-TRI-001|PASS
+ITEM|WX18-TRI-002|PASS
+
+If an item needs revision, replace PASS with REVISE and immediately add one or more:
+FIX|<item_id>|<field>|<precise issue>|<exact correction>
+
+Then:
+ARCH_1|PASS
+ARCH_2|PASS
+ARCH_3|PASS
+ARCH_4|PASS
+ARCH_5|PASS
+ARCH_6|PASS
+ARCH_7|PASS
+ARCH_8|PASS
+ARCH_9|PASS
+ARCH_10|PASS
+
+Finally exactly one:
+AUTHORIZATION|CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA
+or
+AUTHORIZATION|BLOCKED_PENDING_REVISIONS
+
+Do not say PASS unless all six candidate items and all ten architecture checks have been materially reviewed.
