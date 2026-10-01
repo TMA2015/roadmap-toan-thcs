@@ -1,5 +1,5 @@
 {
-  "version": "1.0.120",
+  "version": "1.0.121",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B5 has NotebookLM PASS 6/6 + ARCH_1–ARCH_10 and is staged on a separate implementation branch for exact-head technical QA. Intended catalog: 36 items / 18 topics after append. CT22 remains THPT-Bridge and outside the Core Written Library. No release until technical QA is clean and owner controlled-release authorization is obtained.",
+    "next_priority": "Written Library Expansion B5 has NotebookLM PASS 6/6 + ARCH_1–ARCH_10, exact-head technical QA PASS, and owner controlled-release authorization. Re-run exact-head QA after this saved authorization checkpoint; if clean and main has no base drift, merge/deploy PR #250. CT22 remains THPT-Bridge and outside the THCS Core Written Library.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1083,7 +1083,7 @@
       ]
     },
     "written_library_expansion_b5": {
-      "status": "NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "status": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-001",
       "review_pr": 249,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001",
@@ -1131,7 +1131,14 @@
       "production_release": false,
       "auto_readiness_credit": false,
       "canonical_evidence_g3_changed": false,
-      "architecture_note": "CT22 remains THPT-Bridge and is not promoted into the THCS Core Written Library."
+      "architecture_note": "CT22 remains THPT-Bridge and is not promoted into the THCS Core Written Library.",
+      "technical_qa": {
+        "exact_tested_head": "6d1fe8c752f98477f2790555a5d452b58e477928",
+        "roadmap_pr_quality_run": 36885670750,
+        "result": "PASS"
+      },
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-10-01"
     }
   },
   "handoff_required_fields": [
