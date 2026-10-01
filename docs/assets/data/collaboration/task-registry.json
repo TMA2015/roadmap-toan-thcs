@@ -1,5 +1,5 @@
 {
-  "version": "1.0.123",
+  "version": "1.0.124",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.123",
-      "review_verdict": "B5_OWNER_PASS_B6_REVIEW_ONLY_NEXT",
-      "review_notes": "B5 owner QA PASS on iPad and desktop. Production remains 36 items / 18 topics. Next academic expansion B6 review-only: CT02/CT03/CT20, two items per topic. CT01 is roadmap-only; CT22 remains THPT-Bridge; CT25 remains Entrance10 with separate anchor/source handling."
+      "context_version": "1.0.124",
+      "review_verdict": "B6_NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "review_notes": "B6 NotebookLM PASS 6/6 + ARCH_1..ARCH_10 for CT02/CT03/CT20. Separate implementation branch stages append-only expansion from 36 to 42 items / 21 topics. CT02 remains grade-6 Core journey; CT20 stays Core measurement/solid geometry. No automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -831,6 +831,15 @@
       "context_version": "1.0.123",
       "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
       "review_notes": "Owner production QA PASS on both iPad and desktop: CT04, CT05 and CT06 are present and each exposes exactly 2 exercises. Release provenance remains PR #250 / merge 798cc58919aa15cd69fa28aeb5132929047f3113 / Deploy MkDocs 36887406960 SUCCESS. B5 closed."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-001",
+      "title": "Expand Written Exercise Library to CĐ02/CĐ03/CĐ20",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "OPEN",
+      "context_version": "1.0.124",
+      "review_verdict": "NOTEBOOKLM_PASS_6_OF_6_ARCH_10_OF_10_TECHNICAL_IMPLEMENTATION_STAGED",
+      "review_notes": "NotebookLM academic R1 PASS for WX02-NUM-001/002, WX03-RAT-001/002, WX20-GEO-001/002. Authorization is limited to separate technical implementation/QA. Append-only catalog expansion to 42 items / 21 topics; CT02 remains grade-6 Core journey; CT20 remains Core measurement/solid geometry; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
     }
   ]
 }

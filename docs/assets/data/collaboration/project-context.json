@@ -1,5 +1,5 @@
 {
-  "version": "1.0.123",
+  "version": "1.0.124",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library B5 owner production QA PASS on iPad and desktop and CLOSED. Proceed with Expansion B6 as review-only for CT02/CT03/CT20, two items per topic (CORE_BASE + CORE_APPLY), with NotebookLM required before implementation. CT01 is roadmap-only, CT22 is THPT-Bridge, and CT25 remains Entrance10/separate-anchor territory.",
+    "next_priority": "Written Library Expansion B6 has NotebookLM PASS 6/6 + ARCH_1–ARCH_10 and is staged on a separate implementation branch for exact-head technical QA. Intended catalog: 42 items / 21 topics after append. No release until technical QA is clean and owner controlled-release authorization is obtained.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1176,6 +1176,68 @@
         "each B5 topic exposes exactly 2 exercises",
         "owner checked on both iPad and desktop"
       ]
+    },
+    "written_library_expansion_b6": {
+      "status": "NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-001",
+      "review_pr": 251,
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001",
+      "candidate_blob": "acf731914d8314a654609fba5789ed9878a14ca6",
+      "notebooklm_result": "PASS_6_OF_6_ARCH_10_OF_10",
+      "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "topics": [
+        "CT02",
+        "CT03",
+        "CT20"
+      ],
+      "item_ids": [
+        "WX02-NUM-001",
+        "WX02-NUM-002",
+        "WX03-RAT-001",
+        "WX03-RAT-002",
+        "WX20-GEO-001",
+        "WX20-GEO-002"
+      ],
+      "implementation_branch": "feature/written-library-expansion-b6-20261001",
+      "intended_catalog": {
+        "exercise_count": 42,
+        "topic_count": 21,
+        "topics": [
+          "CT02",
+          "CT03",
+          "CT04",
+          "CT05",
+          "CT06",
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT13",
+          "CT14",
+          "CT15",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT20",
+          "CT23",
+          "CT24"
+        ]
+      },
+      "production_release": false,
+      "auto_readiness_credit": false,
+      "canonical_evidence_g3_changed": false,
+      "architecture_notes": [
+        "CT02 remains scoped to the grade-6 Core journey; no full cross-grade completion claim.",
+        "CT20 remains Core measurement/solid geometry; no Entrance10 proof-chain promotion.",
+        "CT01 roadmap-only, CT22 THPT-Bridge, CT25 Entrance10 remain outside the normal Core append."
+      ],
+      "preflight": {
+        "roadmap_pr_quality_run": 36889335146,
+        "status": "SUCCESS"
+      }
     }
   },
   "handoff_required_fields": [
