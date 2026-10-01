@@ -740,8 +740,12 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 ## ➡️ Tiếp tục học
 
+<div class="topic-workspace-actions" markdown>
+
 [🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
 
 [✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
 
 [→ 14 – Tam giác](../14-tam-giac/index.md){ .md-button }
+
+</div>
