@@ -1,5 +1,5 @@
 {
-  "version": "1.0.128",
+  "version": "1.0.129",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B7 has NotebookLM PASS 2/2 + ARCH_1–ARCH_10 and is staged on a separate implementation branch for CĐ21 only. Run exact-head technical QA; production release still requires a separate owner controlled-release authorization. Preserve the five-card CĐ21 KNTT-Core boundary; do not promote frequency/tần suất, grouped data, CT22 THPT-Bridge/characteristic measures, or CT25 Entrance10 content.",
+    "next_priority": "Written Library Expansion B7 exact implementation HEAD b8aa8617212d5435d6e92311f2599e55880c1630 passed Roadmap PR Quality 36898694706, including strict MkDocs build and browser/visual QA. Production release remains blocked on explicit owner controlled-release authorization. After authorization is persisted, run fresh exact-head QA before merge/deploy.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1289,7 +1289,7 @@
       ]
     },
     "written_library_expansion_b7": {
-      "status": "TECHNICAL_IMPLEMENTATION_CANDIDATE_QA_PENDING",
+      "status": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-001",
       "review_pr": 254,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-R1-20261001",
@@ -1345,7 +1345,14 @@
         "roadmap_pr_quality_run": 36897216442,
         "status": "SUCCESS"
       },
-      "academic_review_receipt": "review-packets/written-exercise-library/48_NOTEBOOKLM_EXPANSION_B7_R1_PASS_RECEIPT.md"
+      "academic_review_receipt": "review-packets/written-exercise-library/48_NOTEBOOKLM_EXPANSION_B7_R1_PASS_RECEIPT.md",
+      "technical_qa": {
+        "exact_tested_head": "b8aa8617212d5435d6e92311f2599e55880c1630",
+        "roadmap_pr_quality_run": 36898694706,
+        "result": "PASS",
+        "strict_mkdocs_build": "PASS",
+        "browser_visual_qa": "PASS"
+      }
     }
   },
   "handoff_required_fields": [
