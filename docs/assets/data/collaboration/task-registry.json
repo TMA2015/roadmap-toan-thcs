@@ -1,5 +1,5 @@
 {
-  "version": "1.0.112",
+  "version": "1.0.113",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.110",
-      "review_verdict": "B3_NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
-      "review_notes": "B3 NotebookLM PASS 6/6 + ARCH_1..ARCH_10 for CT10/11/12. Separate implementation branch stages append-only expansion from 18 to 24 items / 12 topics. No automatic Readiness/mastery credit; no canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent."
+      "context_version": "1.0.113",
+      "review_verdict": "B3_RELEASED_24_ITEMS_12_TOPICS_OWNER_QA_PENDING",
+      "review_notes": "Written Library production now contains 24 items / 12 topics after B3 release. B3 owner production QA should confirm CT10/11/12 appear and each has exactly 2 exercises. Patch 1 topic deep-link owner spot-check remains independent."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -810,9 +810,9 @@
       "title": "Expand Written Exercise Library to CĐ10/CĐ11/CĐ12",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
       "status": "OPEN",
-      "context_version": "1.0.112",
-      "review_verdict": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_AUTHORIZED",
-      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Implementation PR #246 stages append-only expansion to 24 items / 12 topics. Technical QA on exact HEAD 030687f95a6a174b4ae42a54c0d32acbfc728ed1 passed Roadmap PR Quality 36875117900 (duplicate same-head 36875088705 also SUCCESS). Two intermediate failures were technical harness/metadata only: legacy >=4-step assumption was aligned to the design contract with stronger step-quality checks; proposed B3 batch metadata was reconciled to PUBLISHED. Owner explicitly authorized controlled production release on 2026-10-01. Fresh exact-head revalidation required after this checkpoint commit."
+      "context_version": "1.0.113",
+      "review_verdict": "PRODUCTION_RELEASED_DEPLOY_SUCCESS_OWNER_PRODUCTION_QA_PENDING",
+      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Final saved-release exact HEAD 1795377603e40b1b41d22a20ffc4f518d8afbf35 passed Roadmap PR Quality 36876254236. PR #246 merged as 2a6204c9ee4134471ea678fcc07347439e22faae. Deploy MkDocs 36876967991 SUCCESS, including Deploy to GitHub Pages. Production catalog verified on main at 24 exercises / 12 topics; CT10/11/12 each have 2 reviewed items. Owner production QA remains."
     }
   ]
 }

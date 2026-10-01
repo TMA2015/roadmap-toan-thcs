@@ -1,5 +1,5 @@
 {
-  "version": "1.0.112",
+  "version": "1.0.113",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B3 has NotebookLM PASS 6/6 + ARCH_1–ARCH_10, technical QA PASS, and owner controlled-release authorization. Re-run exact-head QA after this saved authorization checkpoint; if clean and main has no base drift, merge/deploy PR #246. Patch 1 deep-link owner spot-check remains independent.",
+    "next_priority": "Written Library Expansion B3 is PRODUCTION RELEASED after saved authorization checkpoint, fresh exact-head QA PASS, merge and Deploy MkDocs SUCCESS. Owner production QA should confirm 24 items / 12 topics and CT10/CT11/CT12 each expose exactly 2 exercises. Patch 1 deep-link owner spot-check remains independent.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -890,7 +890,7 @@
       "owner_qa_date": "2026-10-01"
     },
     "written_library_expansion_b3": {
-      "status": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-001",
       "review_pr": 245,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
@@ -929,7 +929,7 @@
           "CT24"
         ]
       },
-      "production_release": false,
+      "production_release": true,
       "auto_readiness_credit": false,
       "canonical_evidence_g3_changed": false,
       "implementation_pr": 246,
@@ -944,7 +944,32 @@
         "Proposed B3 batch metadata inside published_scope was reconciled to PUBLISHED; no academic exercise content changed."
       ],
       "owner_release_authorized": true,
-      "owner_release_authorized_at": "2026-10-01"
+      "owner_release_authorized_at": "2026-10-01",
+      "final_exact_tested_head": "1795377603e40b1b41d22a20ffc4f518d8afbf35",
+      "final_roadmap_pr_quality_run": 36876254236,
+      "final_qa_result": "SUCCESS",
+      "production_merge": "2a6204c9ee4134471ea678fcc07347439e22faae",
+      "deploy_run": 36876967991,
+      "deploy_conclusion": "SUCCESS",
+      "owner_production_qa": "PENDING",
+      "expected_production_catalog": {
+        "exercise_count": 24,
+        "topic_count": 12,
+        "topics": [
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT14",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT24"
+        ]
+      }
     }
   },
   "handoff_required_fields": [
