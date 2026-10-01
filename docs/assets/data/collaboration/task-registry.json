@@ -738,9 +738,9 @@
       "title": "Fix topic continuation rendering and standardize Practice roadmap order",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_SPOT_QA",
       "status": "OPEN",
-      "context_version": "1.0.92",
-      "review_verdict": "PATCH_STAGED_CI_PENDING",
-      "review_notes": "Owner observed raw Markdown in 'Tiếp tục học'. Audit found vulnerable Markdown-inside-HTML usage in CĐ02 and CĐ04–13. Final patch preserves source-locked lesson files and keeps `attr_list` and uses `hooks/topic_markdown_fixes.py` for only the affected continuation wrapper, with built-HTML regression validation. Practice roadmap footers CĐ02–25 are standardized to previous topic → same-topic links → next topic; CĐ25 remains capstone. Regression test added. Await CI/deploy and owner spot-QA."
+      "context_version": "1.0.93",
+      "review_verdict": "PRODUCTION_RELEASED_CI_PASS_OWNER_SPOT_QA_PENDING",
+      "review_notes": "PR #232 exact tested HEAD 891c1dea7eda264f1da918590ddf1c7ad1aa8fb2 passed Roadmap PR Quality run 36821844162, Skill assessment pilot QA 36821844031 and G Learning branding QA 36821844317. Source-locked lessons remain unchanged. Narrow build hook + attr_list renders CĐ02/CĐ04–13 continuation buttons; built-HTML regression PASS. Practice footer order standardized CĐ02–25. Merge a1dce90e0436351ea109bd6dbe4c6697dafcff3f; Deploy MkDocs 36822248798 SUCCESS. Owner production spot-QA pending before task closure."
     },
     {
       "id": "MATH-TOPIC-NAV-DEDUP-001",
