@@ -1,10 +1,27 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library intro-copy OWNER QA PASS / CLOSED; B3 review-only next.** B2 remains closed at **18 items / 9 topics**. The durable intro copy is owner-approved. Next academic expansion is **B3 review-only: CĐ10 + CĐ11 + CĐ12**, two items per topic (CORE_BASE + CORE_APPLY), with NotebookLM required before implementation. Patch 1 deep-link owner spot-check remains independent and non-blocking.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B3 NotebookLM PASS / technical implementation staged.** B3: 6/6 items PASS + ARCH_1–ARCH_10 PASS for CĐ10/CĐ11/CĐ12; separate implementation branch stages append-only expansion from **18 → 24 items / 9 → 12 topics**. No Readiness/mastery/canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+
+## Written Library Expansion B3 — NotebookLM PASS / technical implementation staged (01/10/2026)
+
+- Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B3-001`.
+- Academic packet: `MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001`.
+- Review PR: #245 (provenance/review only; do not merge as implementation).
+- Review preflight: exact HEAD `08da2d3df55dc1cd22aae1f8edabe15894deeb77`, Roadmap PR Quality `36870959157` **SUCCESS**.
+- NotebookLM result supplied by owner: **OVERALL PASS; 6/6 items PASS; 0 revisions; ARCH_1–ARCH_10 PASS**.
+- Authorization: `CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA`.
+- Approved candidates:
+  - CĐ10: `WX10-FUN-001`, `WX10-FUN-002`;
+  - CĐ11: `WX11-RAD-001`, `WX11-RAD-002`;
+  - CĐ12: `WX12-QUA-001`, `WX12-QUA-002`.
+- Implementation branch: `feature/written-library-expansion-b3-20261001`.
+- Intended catalog after append: **24 items / 12 topics**, preserving all 18 currently published IDs.
+- Self-marking only; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion.
+- Current gate: exact-head technical CI/browser QA before any merge/deploy.
 
 ## Written Library intro-copy refresh — PRODUCTION RELEASED (01/10/2026)
 
