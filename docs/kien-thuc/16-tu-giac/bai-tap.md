@@ -88,6 +88,8 @@ Hình trông vuông không tạo giả thiết góc vuông.
 - [ ] Tôi đã chữa lại các câu sai mà không nhìn lời giải.
 
 ## Liên kết Roadmap
-- **← Học:** [Chuyên đề 16](index.md)
+
+- **← Chuyên đề trước:** [15 – Các đường đồng quy](../15-duong-dong-quy/index.md)
+- **← Học kiến thức:** [Chuyên đề 16 – Tứ giác](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md)
+- **→ Chuyên đề tiếp theo:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md)
