@@ -1,5 +1,5 @@
 {
-  "version": "1.0.106",
+  "version": "1.0.107",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B2 is PRODUCTION RELEASED after final exact-head QA PASS and Deploy MkDocs SUCCESS. Owner production QA should confirm 18 items / 9 topics and CT09/CT16/CT18 each expose exactly 2 exercises. Patch 1 deep-link owner spot-check remains independent.",
+    "next_priority": "B2 owner production QA PASS and CLOSED. Fix stale Written Library intro copy so it no longer hard-codes Pilot v1 / 6 items / CT07-14-24; use durable expansion wording and live filters instead. B2 batch metadata is reconciled to PUBLISHED. Patch 1 deep-link owner spot-check remains independent.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -799,7 +799,7 @@
       "owner_qa_date": "2026-10-01"
     },
     "written_library_expansion_b2": {
-      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B2-001",
       "review_pr": 242,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B2-R1-20261001",
@@ -852,7 +852,7 @@
       "production_merge": "ebd8c5e3f17805ddfd281826956c4d4de799cd5e",
       "deploy_run": 36866917887,
       "deploy_conclusion": "SUCCESS",
-      "owner_production_qa": "PENDING",
+      "owner_production_qa": "PASS",
       "expected_production_catalog": {
         "exercise_count": 18,
         "topic_count": 9,
@@ -867,7 +867,18 @@
           "CT19",
           "CT24"
         ]
-      }
+      },
+      "owner_qa_observed": [
+        "CT09, CT16 and CT18 appear in the production topic filter",
+        "each B2 topic exposes exactly 2 exercises"
+      ]
+    },
+    "written_library_intro_copy": {
+      "status": "IMPLEMENTATION_STAGED",
+      "task_id": "MATH-WRITTEN-LIBRARY-INTRO-COPY-001",
+      "rule": "Library intro must not hard-code a pilot count or fixed topic list; live catalog/filter UI is the source of current coverage.",
+      "branch": "fix/written-library-durable-intro-20261001",
+      "production_release": false
     }
   },
   "handoff_required_fields": [
