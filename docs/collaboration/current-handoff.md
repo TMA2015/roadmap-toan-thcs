@@ -1,12 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B6 owner controlled release AUTHORIZED; exact-head revalidation pending after saved authorization checkpoint.** NotebookLM **6/6 + ARCH_1–ARCH_10 PASS**. Technical QA on `39b2bd2b1cf260a7a57cc695eee898b1e9cdd5c7` / run `36890766907` **SUCCESS**. Earlier run `36890557226` failed only on a test-string assertion for WX03-RAT-001; assertion aligned to approved content with **no academic change**. Owner explicitly authorized controlled production release. Intended catalog: **42 items / 21 topics**. No Readiness/mastery/canonical-evidence/G3 expansion.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B6 PRODUCTION RELEASED / owner QA pending.** Owner controlled-release authorization was persisted before merge. Fresh exact HEAD `1d195ee31302419927d6e03616af82bea5e1bef1` passed Roadmap PR Quality `36892813423`; PR #252 merged as `6dadcb1fb969380dc6fb5f7c241740dc769ae919`; Deploy MkDocs `36893580607` succeeded through **Deploy to GitHub Pages**. Production catalog verified at **42 items / 21 topics**. Owner QA should confirm CĐ02/CĐ03/CĐ20 each show 2 items. CĐ02 remains grade-6 Core journey; CĐ20 remains Core measurement/solid geometry. No Readiness/mastery/canonical-evidence/G3 expansion.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Written Library Expansion B6 — controlled release authorized / saved checkpoint (01/10/2026)
+## Written Library Expansion B6 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B6-001`.
 - Academic packet: `MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001`.
@@ -27,7 +27,12 @@
 - Technical QA: exact HEAD `39b2bd2b1cf260a7a57cc695eee898b1e9cdd5c7`, Roadmap PR Quality `36890766907` **SUCCESS**.
 - Earlier run `36890557226` failed only on a regression string assertion for `WX03-RAT-001`; test assertion fixed, **no academic content changed**.
 - Owner explicitly authorized **controlled production release** on 01/10/2026.
-- Current gate: fresh exact-head QA after this authorization checkpoint, then merge/deploy if clean and `main` has no base drift.
+- Final exact-head QA after saved authorization checkpoint: `1d195ee31302419927d6e03616af82bea5e1bef1`, Roadmap PR Quality `36892813423` **SUCCESS**.
+- PR #252 production merge: `6dadcb1fb969380dc6fb5f7c241740dc769ae919`.
+- Deploy MkDocs `36893580607`: **SUCCESS**, including `Deploy to GitHub Pages`.
+- Production catalog verified on `main`: **42 items / 21 topics** — CĐ02, CĐ03, CĐ04, CĐ05, CĐ06, CĐ07, CĐ08, CĐ09, CĐ10, CĐ11, CĐ12, CĐ13, CĐ14, CĐ15, CĐ16, CĐ17, CĐ18, CĐ19, CĐ20, CĐ23, CĐ24.
+- Owner production QA: **PENDING** — refresh the library and confirm CĐ02/CĐ03/CĐ20 each expose exactly 2 items.
+- Architecture scope remains: CĐ02 grade-6 Core journey; CĐ20 Core measurement/solid geometry.
 
 ## Written Library Expansion B5 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 

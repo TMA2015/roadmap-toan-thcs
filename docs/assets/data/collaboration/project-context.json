@@ -1,5 +1,5 @@
 {
-  "version": "1.0.125",
+  "version": "1.0.126",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B6 has NotebookLM PASS 6/6 + ARCH_1–ARCH_10, exact-head technical QA PASS, and owner controlled-release authorization. Re-run exact-head QA after this saved authorization checkpoint; if clean and main has no base drift, merge/deploy PR #252. Preserve CT02 grade-6 Core scope and CT20 Core measurement/solid-geometry scope.",
+    "next_priority": "Written Library Expansion B6 is PRODUCTION RELEASED after saved authorization checkpoint, fresh exact-head QA PASS, merge and Deploy MkDocs SUCCESS. Owner production QA should confirm 42 items / 21 topics and CT02/CT03/CT20 each expose exactly 2 exercises. Preserve CT02 grade-6 Core scope and CT20 Core measurement/solid-geometry scope.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1178,7 +1178,7 @@
       ]
     },
     "written_library_expansion_b6": {
-      "status": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-001",
       "review_pr": 251,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001",
@@ -1226,7 +1226,7 @@
           "CT24"
         ]
       },
-      "production_release": false,
+      "production_release": true,
       "auto_readiness_credit": false,
       "canonical_evidence_g3_changed": false,
       "architecture_notes": [
@@ -1246,7 +1246,42 @@
         "earlier_failure_reason": "Regression assertion for WX03-RAT-001 searched for shortened result strings; test-only fix, no academic-content change."
       },
       "owner_release_authorized": true,
-      "owner_release_authorized_at": "2026-10-01"
+      "owner_release_authorized_at": "2026-10-01",
+      "final_exact_tested_head": "1d195ee31302419927d6e03616af82bea5e1bef1",
+      "final_roadmap_pr_quality_run": 36892813423,
+      "final_qa_result": "SUCCESS",
+      "implementation_pr": 252,
+      "production_merge": "6dadcb1fb969380dc6fb5f7c241740dc769ae919",
+      "deploy_run": 36893580607,
+      "deploy_conclusion": "SUCCESS",
+      "owner_production_qa": "PENDING",
+      "expected_production_catalog": {
+        "exercise_count": 42,
+        "topic_count": 21,
+        "topics": [
+          "CT02",
+          "CT03",
+          "CT04",
+          "CT05",
+          "CT06",
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT13",
+          "CT14",
+          "CT15",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT20",
+          "CT23",
+          "CT24"
+        ]
+      }
     }
   },
   "handoff_required_fields": [
