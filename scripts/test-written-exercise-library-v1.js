@@ -98,7 +98,7 @@ ok(byId["WX06-FAC-001"].solution_steps.some(s=>s.content_markdown.includes("2(x-
 ok(byId["WX06-FAC-002"].solution_steps.some(s=>s.content_markdown.includes("(x+2)(x-3)(x+3)")),"WX06-002 result");
 ok(byId["WX02-NUM-001"].solution_steps.some(s=>s.content_markdown.includes("\\operatorname{ƯCLN}(36,48)=2^2\\cdot3=12"))&&byId["WX02-NUM-001"].solution_steps.at(-1).content_markdown.includes("3\\text{ bút}")&&byId["WX02-NUM-001"].solution_steps.at(-1).content_markdown.includes("4\\text{ vở}"),"WX02-001 result");
 ok(byId["WX02-NUM-002"].solution_steps.some(s=>s.content_markdown.includes("120\\,000"))&&byId["WX02-NUM-002"].solution_steps.some(s=>s.content_markdown.includes("680\\,000")),"WX02-002 result");
-ok(byId["WX03-RAT-001"].solution_steps.some(s=>s.content_markdown.includes("x=24")&&s.content_markdown.includes("y=60")),"WX03-001 result");
+ok(byId["WX03-RAT-001"].solution_steps.some(s=>s.content_markdown.includes("x=2\\cdot12=24")&&s.content_markdown.includes("y=5\\cdot12=60")),"WX03-001 result");
 ok(byId["WX03-RAT-002"].solution_steps.some(s=>s.content_markdown.includes("t=\\frac{4\\cdot15}{6}=10")),"WX03-002 result");
 ok(byId["WX20-GEO-001"].solution_steps.some(s=>s.content_markdown.includes("70\\text{ cm}^2"))&&byId["WX20-GEO-001"].solution_steps.some(s=>s.content_markdown.includes("60\\text{ cm}^3")),"WX20-001 result");
 ok(byId["WX20-GEO-002"].solution_steps.at(-1).content_markdown.includes("15\\pi\\text{ cm}^2")&&byId["WX20-GEO-002"].solution_steps.at(-1).content_markdown.includes("12\\pi\\text{ cm}^3"),"WX20-002 result");
