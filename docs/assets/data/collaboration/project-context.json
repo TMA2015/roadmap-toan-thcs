@@ -1,6 +1,6 @@
 {
-  "version": "1.0.129",
-  "updated": "2026-10-01",
+  "version": "1.0.130",
+  "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
     "name": "Self-Learning Math",
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B7 exact implementation HEAD b8aa8617212d5435d6e92311f2599e55880c1630 passed Roadmap PR Quality 36898694706, including strict MkDocs build and browser/visual QA. Production release remains blocked on explicit owner controlled-release authorization. After authorization is persisted, run fresh exact-head QA before merge/deploy.",
+    "next_priority": "Owner explicitly authorized controlled production release for Written Library Expansion B7. Persisted authorization now requires fresh exact-head Roadmap PR Quality revalidation on PR #255. If the final exact HEAD passes and main remains at the verified base with no drift, merge/deploy B7 and verify production 44 items / 22 topics.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1289,7 +1289,7 @@
       ]
     },
     "written_library_expansion_b7": {
-      "status": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_PENDING",
+      "status": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-001",
       "review_pr": 254,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-R1-20261001",
@@ -1352,7 +1352,9 @@
         "result": "PASS",
         "strict_mkdocs_build": "PASS",
         "browser_visual_qa": "PASS"
-      }
+      },
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-10-02"
     }
   },
   "handoff_required_fields": [
