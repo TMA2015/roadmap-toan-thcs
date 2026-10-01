@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, navigation OWNER QA PASS / CLOSED DONE.** All inherited owner-device QA debt is cleared. The Written Exercise Library v1 pilot is staged on Draft PR #234 and is **not production released**; NotebookLM R1 is the next blocking gate. Duplicate topic navigation remains non-blocking backlog. G2/help UX remain CLOSED DONE; G3/mastery expansion remains OFF.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Exercise Library pilot ACADEMIC PASS / technical revalidation pending.** NotebookLM R1: **6/6 items PASS + 6/6 architecture PASS**, authorization `CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA`. Navigation is OWNER QA PASS/CLOSED DONE. PR #234 remains unmerged; after syncing current main, exact-head technical QA must be rerun. Production release still requires explicit owner authorization. G3/mastery expansion remains OFF.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -22,6 +22,28 @@
 - Deploy MkDocs run `36719709094`: **SUCCESS**.
 - Owner spot-QA: **PASS on desktop and iPad**. Practice help and Core hint disclosure behavior matches the approved UX rule. Task `MATH-HELP-DISCLOSURE-TOGGLE-001` is CLOSED DONE.
 
+## Written Exercise Library v1 pilot — ACADEMIC PASS; technical revalidation pending (01/10/2026)
+
+- Task: `MATH-WRITTEN-EXERCISE-LIBRARY-001`.
+- Branch: `feature/written-exercise-library-pilot-20261001`.
+- Exactly six candidate items:
+  - CĐ07: `WX07-RAT-001`, `WX07-RAT-002`;
+  - CĐ14: `WX14-TRI-001`, `WX14-TRI-002`;
+  - CĐ24: `WX24-MOD-001`, `WX24-MOD-002`.
+- Coverage contract: one `CORE_BASE` + one `CORE_APPLY` per pilot topic.
+- UI: central `/luyen-tap/` library; filters by topic, **problem type**, level and text search; query parameters can preselect filters for future deep links from “Các dạng bài”.
+- Each item: paper-first prompt → collapsible step-by-step solution → rubric → common mistakes → remediation links.
+- CĐ14 has two dedicated SVG orientation figures; figures are not hypotheses.
+- Self-marking only; **no automatic Readiness/mastery credit**.
+- Catalog blob: `bf926501b512a85fc2f0b73786784aa4cbe26f81`.
+- NotebookLM packet: `MATH-WRITTEN-LIBRARY-PILOT-R1-20261001`.
+- Upload source: `review-packets/written-exercise-library/01_UPLOAD_TO_NOTEBOOKLM_WRITTEN_PILOT_R1.md`.
+- Prompt: `review-packets/written-exercise-library/02_COPY_TO_NOTEBOOKLM_WRITTEN_PILOT_R1.txt`.
+- NotebookLM R1 result: **OVERALL PASS; COVERAGE 6/6; ARCH_1–ARCH_6 PASS**; authorization `CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA`.
+- Prior exact implementation HEAD `c4616821fb6ce491977b9c1fe1e791bcb3e50e39` already passed Roadmap PR Quality `36825618122`, Skill assessment `36825618194`, and branding `36825617988`.
+- Because `main` advanced after navigation owner-QA closure, sync current main and rerun exact-head technical QA before release.
+- **Do not merge/publish without explicit owner controlled-production-release authorization.**
+
 ## Final owner-QA cleanup + product-completeness observations (01/10/2026)
 
 - **CĐ02 Grade6 end-to-end:** owner PASS on desktop+iPad; `G6-T02-OWNER-UX-001` → DONE.
@@ -35,7 +57,7 @@
 - Regression: `scripts/test-topic-roadmap-navigation.py`.
 - PR #232 exact tested HEAD `891c1dea7eda264f1da918590ddf1c7ad1aa8fb2`: Roadmap PR Quality `36821844162` **SUCCESS**; Skill assessment `36821844031` **SUCCESS**; branding `36821844317` **SUCCESS**.
 - Production merge `a1dce90e0436351ea109bd6dbe4c6697dafcff3f`; Deploy MkDocs `36822248798` **SUCCESS**.
-- Owner production spot-QA: **PASS**. CĐ02 continuation buttons render correctly without raw Markdown; CĐ07 Practice footer order is previous topic → same-topic learning/self-check → next topic. Task `MATH-TOPIC-NAV-FIX-001` → **DONE**.
+- Owner production spot-QA: **PASS**. Task `MATH-TOPIC-NAV-FIX-001` → **DONE**.
 
 ### UX backlog
 

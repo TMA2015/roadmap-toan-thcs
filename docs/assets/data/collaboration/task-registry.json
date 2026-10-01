@@ -738,9 +738,9 @@
       "title": "Fix topic continuation rendering and standardize Practice roadmap order",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_SPOT_QA",
       "status": "DONE",
-      "context_version": "1.0.94",
+      "context_version": "1.0.95",
       "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED_DONE",
-      "review_notes": "Owner production spot-QA PASS on 2026-10-01. Screenshot confirms CĐ02 'Tiếp tục học' renders as normal buttons with no raw Markdown; CĐ07 Practice footer confirms previous topic -> same-topic learning/self-check -> next topic ordering. PR #232 exact-head CI already PASS; production deploy successful. Task CLOSED DONE."
+      "review_notes": "Owner production spot-QA PASS on 2026-10-01. CĐ02 continuation renders correctly; CĐ07 Practice footer order matches approved contract. Task CLOSED DONE."
     },
     {
       "id": "MATH-TOPIC-NAV-DEDUP-001",
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.92",
-      "review_verdict": "DESIGN_DIRECTION_RECORDED_PILOT_NOT_STARTED",
-      "review_notes": "Owner selected a written exercise library as the preferred bridge from theoretical 'Các dạng bài' to real mathematical writing. v1 design: 1 Core Base item per problem type where sufficient; optional second Core Apply item; solve on paper; reveal stepwise solution; rubric; common errors/remediation; anchor problems surfaced without duplicating A25 IDs; no handwriting upload/AI grading/readiness credit. Recommended six-item pilot across CĐ07/CĐ14/CĐ24."
+      "context_version": "1.0.95",
+      "review_verdict": "NOTEBOOKLM_R1_PASS_6_OF_6_ARCH_6_OF_6_TECHNICAL_REVALIDATION_PENDING",
+      "review_notes": "NotebookLM R1 PASS: OVERALL PASS; COVERAGE 6/6/0/0; all six items PASS; ARCH_1..ARCH_6 PASS; AUTHORIZATION CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA. Reviewed packet blob 45aefb0ddbaef15ca05d802d141fbb070b742e05 with catalog blob bf926501b512a85fc2f0b73786784aa4cbe26f81. Prior exact implementation HEAD c4616821fb6ce491977b9c1fe1e791bcb3e50e39 technical QA was PASS. Because main advanced after navigation owner-QA closure, sync main and rerun exact-head technical QA before any release. Production remains unauthorized."
     }
   ]
 }

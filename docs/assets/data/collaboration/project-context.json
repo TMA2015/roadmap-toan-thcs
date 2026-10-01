@@ -1,5 +1,5 @@
 {
-  "version": "1.0.94",
+  "version": "1.0.95",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Topic navigation/rendering fix is OWNER QA PASS and CLOSED DONE. All inherited owner-device QA debt is now fully cleared. Written Exercise Library v1 pilot remains staged on Draft PR #234 and must not be merged before NotebookLM R1 academic PASS. Duplicate top stepper vs in-topic quick menu remains non-blocking UX backlog. G3/mastery expansion remains OFF.",
+    "next_priority": "Written Exercise Library v1 pilot Academic Gate PASS: NotebookLM reviewed all 6/6 items and 6/6 architecture checks PASS with authorization CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA. Navigation task is also OWNER QA PASS/CLOSED DONE. PR #234 remains unmerged. After syncing current main, rerun exact-head technical QA; production release still requires explicit owner authorization.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -602,7 +602,7 @@
     "product_completeness_next": {
       "navigation_render_fix": "OWNER_QA_PASS_CLOSED_DONE",
       "duplicate_topic_menu": "BACKLOG_NON_BLOCKING",
-      "written_exercise_library_v1": "DESIGN_RECORDED_PILOT_NOT_STARTED",
+      "written_exercise_library_v1": "ACADEMIC_PASS_TECHNICAL_REVALIDATION_PENDING",
       "g3_authorized": false,
       "navigation_release": {
         "implementation_pr": 232,
@@ -621,6 +621,46 @@
           "CĐ02 continuation block renders as buttons with no raw Markdown",
           "CĐ07 Practice footer order is previous topic -> same-topic learning/self-check -> next topic"
         ]
+      }
+    },
+    "written_exercise_library_pilot": {
+      "status": "ACADEMIC_PASS_TECHNICAL_REVALIDATION_PENDING",
+      "task_id": "MATH-WRITTEN-EXERCISE-LIBRARY-001",
+      "branch": "feature/written-exercise-library-pilot-20261001",
+      "item_ids": [
+        "WX07-RAT-001",
+        "WX07-RAT-002",
+        "WX14-TRI-001",
+        "WX14-TRI-002",
+        "WX24-MOD-001",
+        "WX24-MOD-002"
+      ],
+      "topics": [
+        "CT07",
+        "CT14",
+        "CT24"
+      ],
+      "count": 6,
+      "catalog_blob": "bf926501b512a85fc2f0b73786784aa4cbe26f81",
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-PILOT-R1-20261001",
+      "source_packet": "review-packets/written-exercise-library/01_UPLOAD_TO_NOTEBOOKLM_WRITTEN_PILOT_R1.md",
+      "prompt": "review-packets/written-exercise-library/02_COPY_TO_NOTEBOOKLM_WRITTEN_PILOT_R1.txt",
+      "production_released": false,
+      "readiness_credit": false,
+      "notebooklm_r1": {
+        "result": "PASS",
+        "coverage": "6/6",
+        "architecture": "6/6",
+        "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+        "date": "2026-10-01",
+        "packet_blob": "45aefb0ddbaef15ca05d802d141fbb070b742e05"
+      },
+      "prior_exact_head_technical_qa": {
+        "head": "c4616821fb6ce491977b9c1fe1e791bcb3e50e39",
+        "roadmap_pr_quality": 36825618122,
+        "skill_assessment": 36825618194,
+        "branding": 36825617988,
+        "result": "PASS"
       }
     }
   },

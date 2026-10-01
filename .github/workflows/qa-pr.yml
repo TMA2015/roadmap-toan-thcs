@@ -109,6 +109,8 @@ jobs:
           node --check docs/assets/javascripts/knowledge-ui-v1.js
           node scripts/test-knowledge-ui-v1.js
           python scripts/test-topic-roadmap-navigation.py
+          node --check docs/assets/javascripts/written-exercise-library-v1.js
+          node scripts/test-written-exercise-library-v1.js
       - name: Validate CĐ25 display math source
         run: node scripts/test-topic25-math-render.js
       - name: Validate CĐ25 student journey
@@ -139,6 +141,7 @@ jobs:
           python scripts/test-canonical-evidence-pilot-v2-browser.py
           python scripts/test-canonical-evidence-g1-browser.py
           python scripts/test-help-disclosure-toggle-browser.py
+          python scripts/test-written-exercise-library-browser.py
       - name: Upload visual preview screenshots
         uses: actions/upload-artifact@v4
         with:
