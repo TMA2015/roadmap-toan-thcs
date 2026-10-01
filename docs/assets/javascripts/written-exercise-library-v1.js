@@ -170,16 +170,19 @@
     const topicId="CT"+match[1];
     const items=data.exercises.filter(x=>x.topic_id===topicId);
     if(!items.length)return;
-    // Re-query after the async catalog load: other lesson UI may have re-rendered
-    // the Markdown content while fetch was pending.
+    // Topic workspace converts the original H2 into <details id="types">.
+    // Mount inside that card body when available; fall back to the raw H2 on
+    // non-workspace pages. This keeps source-locked lesson Markdown untouched.
     const content=document.querySelector(".md-content__inner");
     if(!content||content.querySelector("[data-written-topic-link]"))return;
+    const typesBody=content.querySelector("#types .topic-learning-card-body");
     const heading=[...content.querySelectorAll("h2")].find(h=>/Các dạng bài/i.test(h.textContent||""));
-    if(!heading)return;
+    if(!typesBody&&!heading)return;
     const a=el("a","written-topic-library-link",`📚 Xem ${items.length} bài mẫu tự luận ${topicId.replace("CT","CĐ")} →`);
     a.dataset.writtenTopicLink="1";
     a.href=base()+"luyen-tap/?topic="+encodeURIComponent(topicId);
-    heading.insertAdjacentElement("afterend",a);
+    if(typesBody)typesBody.prepend(a);
+    else heading.insertAdjacentElement("afterend",a);
   };
 
   const init=()=>{initLibrary();initTopicLibraryLink();};
