@@ -1,5 +1,5 @@
 {
-  "version": "1.0.99",
+  "version": "1.0.100",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Two independent Written Library gates are active: Patch 1 owner spot-QA has 1/3 PASS (7+25 / Thư viện bài tập confirmed; compact 3-button row and topic deep-link remain), while Expansion B1 has NotebookLM PASS 6/6 + ARCH_1–ARCH_8 and is staged for separate exact-head technical QA. No Readiness/mastery, canonical-evidence or G3 expansion.",
+    "next_priority": "Written Library Expansion B1 has NotebookLM PASS 6/6 + ARCH_1–ARCH_8, exact-head technical QA PASS, and owner controlled-release authorization. Re-run exact-head QA after this provenance update, then merge/deploy if clean. Patch 1 owner spot-QA is 2/3 PASS; only the topic 'Các dạng bài' auto-filter deep-link check remains.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -709,17 +709,17 @@
       "merge_commit": "a80343a5ceba56957af3002f4b128e9fb5545c8e",
       "deploy_run": 36841498180,
       "deploy_conclusion": "SUCCESS",
-      "owner_spot_qa": "PARTIAL_PASS_1_OF_3",
+      "owner_spot_qa": "PARTIAL_PASS_2_OF_3",
       "owner_spot_qa_passed": [
-        "quick shortcut shows 7 + 25 and includes Thư viện bài tập"
+        "quick shortcut shows 7 + 25 and includes Thư viện bài tập",
+        "compact horizontal Hướng dẫn / Rubric / Lỗi thường gặp row is visually approved"
       ],
       "owner_spot_qa_remaining": [
-        "compact horizontal 3-button support row",
         "topic Các dạng bài deep link auto-filters library"
       ]
     },
     "written_library_expansion_b1": {
-      "status": "NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "status": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-001",
       "review_pr": 239,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001",
@@ -742,7 +742,16 @@
       "implementation_branch": "feature/written-library-expansion-b1-20261001",
       "production_release": false,
       "auto_readiness_credit": false,
-      "canonical_evidence_g3_changed": false
+      "canonical_evidence_g3_changed": false,
+      "technical_qa": {
+        "exact_tested_head": "bc5cbd9a3c9971ff5d20ef1bc446d6d0f212da09",
+        "roadmap_pr_quality_run": 36859348005,
+        "result": "PASS",
+        "first_failed_run": 36859229839,
+        "first_failure_reason": "test harness expected-ID list still locked to six pilot IDs; catalog already contained correct 12 IDs"
+      },
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-10-01"
     }
   },
   "handoff_required_fields": [
