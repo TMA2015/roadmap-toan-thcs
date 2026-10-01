@@ -4,7 +4,8 @@
  const mainDestinations = [
    ["Trang chủ", "", "⌂"], ["Học theo lớp", "hoc-theo-lop/", "▣"],
    ["Roadmap", "roadmap/", "◇"], ["AI Tutor", "ai/ai-tutor-core-contract/", "✦"],
-   ["Hướng dẫn", "huong-dan/lo-trinh-tu-hoc/", "☷"], ["Kiến thức", "kien-thuc/", "▤"]
+   ["Hướng dẫn", "huong-dan/lo-trinh-tu-hoc/", "☷"], ["Kiến thức", "kien-thuc/", "▤"],
+   ["Thư viện bài tập", "luyen-tap/", "✎"]
  ];
  // Canonical 25-topic spine, generated from the current mkdocs.yml nav.
  const topics = [["01-ban-do-chuong-trinh","01. Bản đồ chương trình Toán THCS"],["02-so-va-phep-tinh","02. Số và phép tính"],["03-ti-le-ti-le-thuc","03. Tỉ lệ – Tỉ lệ thức"],["04-bieu-thuc-dai-so","04. Biểu thức đại số"],["05-7-hang-dang-thuc","05. 7 Hằng đẳng thức"],["06-phan-tich-da-thuc","06. Phân tích đa thức"],["07-phan-thuc-dai-so","07. Phân thức đại số"],["08-phuong-trinh-bat-phuong-trinh","08. Phương trình – Bất phương trình"],["09-he-phuong-trinh","09. Hệ phương trình"],["10-ham-so-do-thi","10. Hàm số và đồ thị"],["11-can-thuc","11. Căn thức"],["12-phuong-trinh-bac-hai-viete","12. Phương trình bậc hai & Viète"],["13-goc-va-duong-thang","13. Góc và đường thẳng"],["14-tam-giac","14. Tam giác"],["15-duong-dong-quy","15. Các đường đồng quy"],["16-tu-giac","16. Tứ giác"],["17-thales-dong-dang","17. Thales và đồng dạng"],["18-he-thuc-luong","18. Hệ thức lượng"],["19-duong-tron","19. Đường tròn"],["20-hinh-hoc-tong-hop","20. Hình học tổng hợp"],["21-thong-ke","21. Thống kê"],["22-dai-luong-dac-trung","22. Đại lượng đặc trưng"],["23-xac-suat","23. Xác suất"],["24-bai-toan-thuc-te","24. Bài toán thực tế"],["25-tong-hop-on-thi-10","25. Tổng hợp & ôn thi vào 10"]];
@@ -47,9 +48,9 @@
    }
    const main=document.createElement("details");
    main.className="roadmap-main-quick";main.open=true;
-   const summary=document.createElement("summary");summary.textContent="6 nhóm chính · mở/thu gọn";
+   const summary=document.createElement("summary");summary.textContent="7 nhóm chính · mở/thu gọn";
    const primary=document.createElement("nav");primary.className="roadmap-main-quick__links";
-   primary.setAttribute("aria-label","Sáu nhóm điều hướng chính");
+   primary.setAttribute("aria-label","Bảy nhóm điều hướng chính");
    const sources=[...document.querySelectorAll(".md-tabs__list a.md-tabs__link")];
    for(const [label,fallback,glyph] of mainDestinations){
      const source=sources.find(a=>a.textContent.trim()===label);
@@ -73,8 +74,8 @@
    button.type = "button";
    button.className = "roadmap-topic-launcher";
    button.dataset.roadmapTopicLauncher = "1";
-   button.setAttribute("aria-label", "Mở 6 nhóm chính và 25 chuyên đề Toán");
-   button.setAttribute("title", "Điều hướng nhanh: 6 nhóm và 25 chuyên đề");
+   button.setAttribute("aria-label", "Mở 7 nhóm chính và 25 chuyên đề Toán");
+   button.setAttribute("title", "Điều hướng nhanh: 7 nhóm và 25 chuyên đề");
    button.setAttribute("aria-haspopup", "dialog");
    const mark = document.createElement("span");
    mark.className = "roadmap-topic-launcher__mark";
@@ -83,7 +84,7 @@
    const count = document.createElement("span");
    count.className = "roadmap-topic-launcher__count";
    count.setAttribute("aria-hidden", "true");
-   count.textContent = "6 + 25";
+   count.textContent = "7 + 25";
    const name = document.createElement("span");
    name.className = "roadmap-topic-launcher__name";
    name.setAttribute("aria-hidden", "true");

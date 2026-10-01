@@ -56,7 +56,14 @@ const yaml=read("mkdocs.yml");
 ok(yaml.includes("Thư viện bài tập: luyen-tap/index.md"),"nav entry");
 ok(yaml.includes("written-exercise-library-v1.css"),"css wired");
 ok(yaml.includes("written-exercise-library-v1.js"),"js wired");
+const ui=read("docs/assets/javascripts/written-exercise-library-v1.js");
+const uiCss=read("docs/assets/stylesheets/written-exercise-library-v1.css");
+ok(ui.includes("written-help-actions")&&ui.includes("dataset.helpTarget")&&ui.includes("written-help-panel"),"compact three-action support UI wired");
+ok(ui.includes("initTopicLibraryLink")&&ui.includes('luyen-tap/?topic='),"topic lesson deep link with topic auto-filter wired");
+ok(uiCss.includes("grid-template-columns:repeat(3,minmax(0,1fr))"),"help actions use one three-column row");
+ok(uiCss.includes(".written-topic-library-link"),"topic-to-library CTA styled");
 
 console.log("PASS: written exercise pilot schema = 6 items / 3 topics / Base+Apply.");
 console.log("PASS: rubric, remediation, geometry assets and no-readiness boundary validated.");
 console.log("PASS: exact pilot conclusions and UI wiring validated.");
+console.log("PASS: compact 3-action help row and topic-filter deep links validated.");
