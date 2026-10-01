@@ -1,12 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 02/10/2026, Written Library Expansion B7 PRODUCTION RELEASED / owner QA pending.** NotebookLM **2/2 + ARCH_1–ARCH_10 PASS**. Owner controlled release authorized. Final exact-head `f0df2011ab9694b06c30ffda1b7fa872d2dc1fda` passed Roadmap PR Quality `36899579636`; PR #255 merged as `47adffd87b654a1bd2b6854ddbc270bbf31dfa62`; Deploy MkDocs `36900375742` **SUCCESS**, including **Deploy to GitHub Pages**. Production catalog verified at **44 items / 22 topics**, with exactly two CĐ21 items. Owner real-device QA on iPad + desktop remains pending.
+> **CURRENT CHECKPOINT — 02/10/2026, Written Library Expansion B7 CLOSED DONE / owner QA PASS on iPad + desktop.** NotebookLM **2/2 + ARCH_1–ARCH_10 PASS**. Final exact-head `f0df2011ab9694b06c30ffda1b7fa872d2dc1fda` passed Roadmap PR Quality `36899579636`; PR #255 merged as `47adffd87b654a1bd2b6854ddbc270bbf31dfa62`; Deploy MkDocs `36900375742` **SUCCESS**. Production remains **44 items / 22 topics**. Owner real-device QA on iPad and desktop is **PASS**. Normal Core Written Library expansion stops here: CT01 remains roadmap/navigation, CT22 remains THPT-Bridge, and CT25 remains in separate Entrance10/tổng hợp lanes. Next priority returns to skill-taxonomy consolidation/deduplication and importance/coverage review, with independent Gemini review before integration.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Written Library Expansion B7 — PRODUCTION RELEASED / owner QA pending (02/10/2026)
+## Written Library Expansion B7 — CLOSED DONE / owner QA PASS (02/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B7-001`.
 - Academic packet: `MATH-WRITTEN-LIBRARY-EXPANSION-B7-R1-20261001`.
@@ -29,7 +29,10 @@
 - PR #255 production merge: `47adffd87b654a1bd2b6854ddbc270bbf31dfa62`.
 - Deploy MkDocs `36900375742`: **SUCCESS**, including **Deploy to GitHub Pages**.
 - Production catalog verified on `main`: **44 items / 22 topics**, with CĐ21 exactly `WX21-STA-001` and `WX21-STA-002`.
-- Owner production QA: **PENDING** — confirm on iPad and desktop that CĐ21 shows exactly 2 items and the two items open/render correctly.
+- Owner production QA: **PASS on iPad and desktop** — production rendering checked by owner; supplied screenshots show the CĐ21 item, Guidance panel, $50\%$ calculation, 5-point rubric and evidence-boundary explanation rendering correctly.
+- B7 status: **CLOSED DONE**.
+- Normal Core Written Library expansion stops here at **44 items / 22 topics**; CT01 remains roadmap/navigation, CT22 remains THPT-Bridge, and CT25 remains separate Entrance10/tổng hợp.
+- Next priority: resume **skill-taxonomy consolidation / duplicate removal / importance and coverage review**, including the independent Gemini review requested earlier.
 
 ## Written Library Expansion B6 — CLOSED DONE / owner QA PASS (01/10/2026)
 
