@@ -1,5 +1,5 @@
 {
-  "version": "1.0.93",
+  "version": "1.0.94",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "All inherited owner-device QA debts are CLOSED DONE. Topic navigation/rendering fix is now PRODUCTION RELEASED after exact-head CI PASS and Deploy MkDocs SUCCESS; only owner spot-QA remains for the visible rendering/order change. Written Exercise Library v1 is the next substantive product-completeness initiative after that spot-QA; recommended pilot remains CĐ07/CĐ14/CĐ24 with six paper-first items. Duplicate top stepper vs in-topic quick menu remains non-blocking UX backlog. G3/mastery expansion remains OFF.",
+    "next_priority": "Topic navigation/rendering fix is OWNER QA PASS and CLOSED DONE. All inherited owner-device QA debt is now fully cleared. Written Exercise Library v1 pilot remains staged on Draft PR #234 and must not be merged before NotebookLM R1 academic PASS. Duplicate top stepper vs in-topic quick menu remains non-blocking UX backlog. G3/mastery expansion remains OFF.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -600,7 +600,7 @@
       "remaining": []
     },
     "product_completeness_next": {
-      "navigation_render_fix": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "navigation_render_fix": "OWNER_QA_PASS_CLOSED_DONE",
       "duplicate_topic_menu": "BACKLOG_NON_BLOCKING",
       "written_exercise_library_v1": "DESIGN_RECORDED_PILOT_NOT_STARTED",
       "g3_authorized": false,
@@ -613,6 +613,14 @@
         "merge_commit": "a1dce90e0436351ea109bd6dbe4c6697dafcff3f",
         "deploy_run": 36822248798,
         "deploy_conclusion": "SUCCESS"
+      },
+      "navigation_owner_qa": {
+        "result": "PASS",
+        "date": "2026-10-01",
+        "checks": [
+          "CĐ02 continuation block renders as buttons with no raw Markdown",
+          "CĐ07 Practice footer order is previous topic -> same-topic learning/self-check -> next topic"
+        ]
       }
     }
   },
