@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, owner QA debt reduced to 2.** CĐ03 standalone Core **PASS desktop+iPad, CLOSED DONE**; current CĐ07 17-item Core **PASS desktop+iPad, CLOSED DONE**. G2 and learner-help disclosure UX remain CLOSED DONE. Remaining owner QA: Grade6 CĐ02 end-to-end journey/Readiness and Batch A remaining CĐ21/CĐ24/CĐ25. G3/mastery/Readiness expansion remain OFF.
+> **CURRENT CHECKPOINT — 01/10/2026, all housekeeping owner QA CLEARED.** CĐ02 end-to-end, CĐ03, CĐ07, CĐ21, CĐ24 and CĐ25 have owner PASS on desktop+iPad; the four inherited QA debts are CLOSED DONE. A navigation/rendering patch is staged for raw “Tiếp tục học” Markdown and Practice footer order. Duplicate navigation is logged as non-blocking backlog. Written Exercise Library v1 is now the preferred product-completeness direction after navigation cleanup. G2/help UX remain CLOSED DONE; G3/mastery expansion remains OFF.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -21,6 +21,42 @@
 - PR #227 production merge: `fb571ec78cfaf56f82d7dd81b719481dc4296e2b`.
 - Deploy MkDocs run `36719709094`: **SUCCESS**.
 - Owner spot-QA: **PASS on desktop and iPad**. Practice help and Core hint disclosure behavior matches the approved UX rule. Task `MATH-HELP-DISCLOSURE-TOGGLE-001` is CLOSED DONE.
+
+## Final owner-QA cleanup + product-completeness observations (01/10/2026)
+
+- **CĐ02 Grade6 end-to-end:** owner PASS on desktop+iPad; `G6-T02-OWNER-UX-001` → DONE.
+- **CĐ21/CĐ24/CĐ25:** owner PASS on desktop+iPad; together with prior CĐ02/CĐ23 acceptance, `MATH-UI-BATCH-A-OWNER-QA-001` → DONE.
+- The 30/09 housekeeping list is now **4/4 owner-QA debts cleared**.
+
+### Navigation/rendering patch staged
+
+- Owner screenshot exposed raw Markdown in **Tiếp tục học**. Audit found the same source pattern in **CĐ02 and CĐ04–13**; wrapper removed so links render as normal Markdown.
+- Practice footer navigation is standardized across **CĐ02–25**: **previous topic → same-topic learning/self-check → next topic**. CĐ25 has no next topic.
+- Regression: `scripts/test-topic-roadmap-navigation.py`.
+- Task: `MATH-TOPIC-NAV-FIX-001` OPEN until CI/deploy + owner spot-QA.
+
+### UX backlog
+
+- `MATH-TOPIC-NAV-DEDUP-001`: compare the top four-step stepper with the in-topic quick menu. Keep both for now; this is not release-blocking.
+
+### Written Exercise Library v1
+
+Owner identified a real academic gap: many **Các dạng bài** sections describe methods but do not show enough concrete written problems, while interactive Practice is skill-oriented.
+
+Preferred direction:
+- paper-first problems;
+- one **Core Base** item per problem type when sufficient;
+- optional second **Core Apply** item;
+- hidden step-by-step solution;
+- rubric;
+- common mistakes + remediation links;
+- anchor problems surfaced in the same library without duplicating existing A25 sources;
+- append-only expansion later;
+- no requirement for typed long answers, handwriting upload, AI grading, or Readiness credit.
+
+Design contract: `docs/collaboration/written-exercise-library-v1.md`.
+Recommended first pilot: **CĐ07 + CĐ14 + CĐ24, two items each**.
+Task: `MATH-WRITTEN-EXERCISE-LIBRARY-001`.
 
 ## Owner QA cleanup — CĐ03 + CĐ07 PASS (01/10/2026)
 
