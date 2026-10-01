@@ -11,7 +11,7 @@ ok(data.schema_version==="1.0.0","schema version");
 ok(data.status==="ACTIVE_APPEND_ONLY","active append-only catalog");
 ok(data.auto_readiness_credit===false,"no readiness credit");
 ok(data.self_marking_only===true,"self marking only");
-ok(Array.isArray(data.exercises)&&data.exercises.length===30,"exact thirty published items");
+ok(Array.isArray(data.exercises)&&data.exercises.length===36,"exact thirty-six published items");
 
 const expected=[
   "WX07-RAT-001","WX07-RAT-002",
@@ -28,11 +28,14 @@ const expected=[
   "WX12-QUA-001","WX12-QUA-002",
   "WX13-LIN-001","WX13-LIN-002",
   "WX15-CEN-001","WX15-CEN-002",
-  "WX23-PRO-001","WX23-PRO-002"
+  "WX23-PRO-001","WX23-PRO-002",
+  "WX04-ALG-001","WX04-ALG-002",
+  "WX05-IDN-001","WX05-IDN-002",
+  "WX06-FAC-001","WX06-FAC-002"
 ];
 ok(JSON.stringify(data.exercises.map(x=>x.exercise_id))===JSON.stringify(expected),"exact stable IDs");
 
-for(const topic of ["CT07","CT08","CT09","CT10","CT11","CT12","CT13","CT14","CT15","CT16","CT17","CT18","CT19","CT23","CT24"]){
+for(const topic of ["CT04","CT05","CT06","CT07","CT08","CT09","CT10","CT11","CT12","CT13","CT14","CT15","CT16","CT17","CT18","CT19","CT23","CT24"]){
   const items=data.exercises.filter(x=>x.topic_id===topic);
   ok(items.length===2,topic+" exactly two items");
   ok(items.some(x=>x.level==="CORE_BASE"),topic+" CORE_BASE");
@@ -84,6 +87,12 @@ ok(byId["WX15-CEN-001"].solution_steps.some(s=>s.content_markdown.includes("AG=\
 ok(byId["WX15-CEN-002"].solution_steps.some(s=>s.content_markdown.includes("OA=OB=OC"))&&byId["WX15-CEN-002"].solution_steps.some(s=>s.content_markdown.includes("d(I,AB)=d(I,BC)=d(I,CA)")),"WX15-002 center distinctions");
 ok(byId["WX23-PRO-001"].solution_steps.some(s=>s.content_markdown.includes("\\frac{23}{40}=0{,}575")),"WX23-001 experimental probability");
 ok(byId["WX23-PRO-002"].solution_steps.some(s=>s.content_markdown.includes("P(A)=\\frac8{12}=\\frac23"))&&byId["WX23-PRO-002"].solution_steps.some(s=>s.content_markdown.includes("\\frac{19}{30}")),"WX23-002 classical and experimental probability");
+ok(byId["WX04-ALG-001"].solution_steps.at(-1).content_markdown.includes("2x^2-3x+9"),"WX04-001 result");
+ok(byId["WX04-ALG-002"].solution_steps.some(s=>s.content_markdown.includes("3x^2-2x+1"))&&byId["WX04-ALG-002"].solution_steps.some(s=>s.content_markdown.includes("T(2)")&&s.content_markdown.includes("=9")),"WX04-002 result");
+ok(byId["WX05-IDN-001"].solution_steps.some(s=>s.content_markdown.includes("(x-5)^2")),"WX05-001 result");
+ok(byId["WX05-IDN-002"].solution_steps.at(-1).content_markdown.includes("40x"),"WX05-002 result");
+ok(byId["WX06-FAC-001"].solution_steps.some(s=>s.content_markdown.includes("2(x-y)(x-2)")),"WX06-001 result");
+ok(byId["WX06-FAC-002"].solution_steps.some(s=>s.content_markdown.includes("(x+2)(x-3)(x+3)")),"WX06-002 result");
 
 for(const x of data.exercises.filter(x=>x.topic_id==="CT14")){
   ok(x.figure_uri&&fs.existsSync(path.join("docs",x.figure_uri.replace(/^\.\.\//,""))),"geometry figure "+x.exercise_id);
@@ -105,7 +114,7 @@ ok(ui.includes("initTopicLibraryLink")&&ui.includes('luyen-tap/?topic='),"topic 
 ok(uiCss.includes("grid-template-columns:repeat(3,minmax(0,1fr))"),"help actions use one three-column row");
 ok(uiCss.includes(".written-topic-library-link"),"topic-to-library CTA styled");
 
-console.log("PASS: written exercise catalog = 30 items / 15 topics / Base+Apply.");
+console.log("PASS: written exercise catalog = 36 items / 18 topics / Base+Apply.");
 console.log("PASS: rubric, remediation, geometry assets and no-readiness boundary validated.");
 console.log("PASS: exact published conclusions and UI wiring validated.");
 console.log("PASS: compact 3-action help row and topic-filter deep links validated.");
