@@ -65,4 +65,5 @@ ok(uiCss.includes(".written-topic-library-link"),"topic-to-library CTA styled");
 
 console.log("PASS: written exercise pilot schema = 6 items / 3 topics / Base+Apply.");
 console.log("PASS: rubric, remediation, geometry assets and no-readiness boundary validated.");
-console.log("PASS: exact pilot conclusions and UI wiring validated.");\nconsole.log("PASS: compact 3-action help row and topic-filter deep links validated.");
+console.log("PASS: exact pilot conclusions and UI wiring validated.");
+console.log("PASS: compact 3-action help row and topic-filter deep links validated.");
