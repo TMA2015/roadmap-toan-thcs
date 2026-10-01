@@ -1,5 +1,5 @@
 {
-  "version": "1.0.115",
+  "version": "1.0.116",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.115",
-      "review_verdict": "B4_REVIEW_ONLY_PACKET_READY_NOTEBOOKLM_PENDING",
-      "review_notes": "B3 owner QA PASS on iPad and desktop and closed. B4 review-only packet is ready on Draft PR #247 for CT13/CT15/CT23, two items per topic (CORE_BASE + CORE_APPLY). Production remains 24 items / 12 topics. NotebookLM R1 result pending. Exact review HEAD fc11593309acc9a4aa6926a7d28b387263cbe6f8; Roadmap PR Quality run 36879068239 was still in progress when this handoff checkpoint was saved. Patch 1 deep-link owner spot-check remains independent and non-blocking."
+      "context_version": "1.0.116",
+      "review_verdict": "B4_NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "review_notes": "B4 NotebookLM PASS 6/6 + ARCH_1..ARCH_10 for CT13/CT15/CT23. Separate implementation branch stages append-only expansion from 24 to 30 items / 15 topics. No automatic Readiness/mastery credit; no canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -817,11 +817,11 @@
     {
       "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-001",
       "title": "Expand Written Exercise Library to CĐ13/CĐ15/CĐ23",
-      "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
       "status": "OPEN",
-      "context_version": "1.0.115",
-      "review_verdict": "REVIEW_ONLY_PACKET_READY_NOTEBOOKLM_R1_PENDING",
-      "review_notes": "Review-only B4 packet prepared on Draft PR #247 from main 28b1561a49ab4d935ba6167aa9d7bf1350fc0788. Candidate scope: CT13 WX13-LIN-001/002, CT15 WX15-CEN-001/002, CT23 WX23-PRO-001/002. No production catalog/runtime/UI changes; production stays 24 items / 12 topics. NotebookLM source packet 27 and prompt 28 are source-locked to review HEAD fc11593309acc9a4aa6926a7d28b387263cbe6f8. Await owner-provided NotebookLM result before any implementation."
+      "context_version": "1.0.116",
+      "review_verdict": "NOTEBOOKLM_PASS_6_OF_6_ARCH_10_OF_10_TECHNICAL_IMPLEMENTATION_STAGED",
+      "review_notes": "NotebookLM academic R1 PASS for WX13-LIN-001/002, WX15-CEN-001/002, WX23-PRO-001/002. Authorization is limited to separate technical implementation/QA. Append-only catalog expansion to 30 items / 15 topics; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
     }
   ]
 }
