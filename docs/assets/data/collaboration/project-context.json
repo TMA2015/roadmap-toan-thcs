@@ -1,5 +1,5 @@
 {
-  "version": "1.0.92",
+  "version": "1.0.93",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "All four housekeeping owner-device QA debts are now cleared. CĐ02 end-to-end Grade6 journey/Readiness and Batch A remaining CĐ21/CĐ24/CĐ25 PASS on desktop+iPad. A navigation/rendering patch is staged to fix raw 'Tiếp tục học' Markdown in CĐ02/CĐ04–13 without modifying source-locked lesson files: keep `attr_list`, add a narrow MkDocs build hook for the affected continuation wrapper, and validate built HTML; Practice roadmap link order is standardized CĐ02–25. Duplicate topic navigation surfaces are logged as non-blocking UX debt. Written Exercise Library v1 design is recorded as the next substantive product-completeness initiative; do not open G3/mastery expansion automatically.",
+    "next_priority": "All inherited owner-device QA debts are CLOSED DONE. Topic navigation/rendering fix is now PRODUCTION RELEASED after exact-head CI PASS and Deploy MkDocs SUCCESS; only owner spot-QA remains for the visible rendering/order change. Written Exercise Library v1 is the next substantive product-completeness initiative after that spot-QA; recommended pilot remains CĐ07/CĐ14/CĐ24 with six paper-first items. Duplicate top stepper vs in-topic quick menu remains non-blocking UX backlog. G3/mastery expansion remains OFF.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -600,10 +600,20 @@
       "remaining": []
     },
     "product_completeness_next": {
-      "navigation_render_fix": "STAGED_CI_PENDING",
+      "navigation_render_fix": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
       "duplicate_topic_menu": "BACKLOG_NON_BLOCKING",
       "written_exercise_library_v1": "DESIGN_RECORDED_PILOT_NOT_STARTED",
-      "g3_authorized": false
+      "g3_authorized": false,
+      "navigation_release": {
+        "implementation_pr": 232,
+        "exact_tested_head": "891c1dea7eda264f1da918590ddf1c7ad1aa8fb2",
+        "roadmap_pr_quality_run": 36821844162,
+        "skill_assessment_run": 36821844031,
+        "branding_run": 36821844317,
+        "merge_commit": "a1dce90e0436351ea109bd6dbe4c6697dafcff3f",
+        "deploy_run": 36822248798,
+        "deploy_conclusion": "SUCCESS"
+      }
     }
   },
   "handoff_required_fields": [
