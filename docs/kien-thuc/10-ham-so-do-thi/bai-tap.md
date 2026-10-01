@@ -158,6 +158,8 @@ Tìm giao điểm của \(y=x^2\) và \(y=x+2\).
 - [ ] Khi tương đối chắc, tôi chuyển sang [✅ Core Readiness Check](tu-kiem-tra.md).
 
 ## Liên kết Roadmap
-- **← Học:** [Chuyên đề 10](index.md)
+
+- **← Chuyên đề trước:** [09 – Hệ phương trình](../09-he-phuong-trinh/index.md)
+- **← Học kiến thức:** [Chuyên đề 10 – Hàm số và đồ thị](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [11 – Căn thức](../11-can-thuc/index.md)
+- **→ Chuyên đề tiếp theo:** [11 – Căn thức](../11-can-thuc/index.md)
