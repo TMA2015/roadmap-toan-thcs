@@ -2398,6 +2398,589 @@
         "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
         "receipt": "review-packets/written-exercise-library/24_NOTEBOOKLM_EXPANSION_B3_R1_PASS_RECEIPT.md"
       }
+    },
+    {
+      "exercise_id": "WX13-LIN-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT13",
+      "topic_slug": "13-goc-va-duong-thang",
+      "topic_title": "Góc và quan hệ giữa các đường thẳng",
+      "problem_type_id": "parallel-converse-alt-interior",
+      "problem_type_title": "Dùng góc so le trong để chứng minh song song",
+      "title": "Nhận đúng vị trí góc rồi mới kết luận song song",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        7
+      ],
+      "skills": [
+        "goc-so-le-trong",
+        "dau-hieu-song-song",
+        "lap-luan-chung-minh-ngan"
+      ],
+      "prerequisites": [
+        "nhan-dang-goc-dac-biet"
+      ],
+      "estimated_minutes": 8,
+      "problem_markdown": "Đường thẳng $c$ cắt hai đường thẳng phân biệt $a$ và $b$. Một cặp góc **so le trong** tạo bởi $c$ với $a,b$ đều có số đo $68^\\circ$.\n\nChứng minh $a\\parallel b$ và nêu rõ căn cứ dùng ở bước kết luận.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Xác định đúng quan hệ vị trí",
+          "content_markdown": "Theo đề bài, hai góc đã cho là một cặp **so le trong** do đường thẳng $c$ cắt $a$ và $b$."
+        },
+        {
+          "step_id": "S2",
+          "title": "So sánh số đo",
+          "content_markdown": "Hai góc đều bằng $68^\\circ$, nên chúng bằng nhau."
+        },
+        {
+          "step_id": "S3",
+          "title": "Áp dụng dấu hiệu song song",
+          "content_markdown": "Nếu một đường thẳng cắt hai đường thẳng và tạo ra một cặp góc so le trong bằng nhau thì hai đường thẳng đó song song."
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận",
+          "content_markdown": "Vì vậy\n\n$$a\\parallel b.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Nhận đúng hai góc là so le trong.",
+          "points": 1
+        },
+        {
+          "criterion": "Nêu được hai góc bằng nhau vì cùng bằng $68^\\circ$.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng dấu hiệu nhận biết hai đường thẳng song song.",
+          "points": 1
+        },
+        {
+          "criterion": "Kết luận đúng $a\\parallel b$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Chỉ thấy hai góc bằng nhau rồi kết luận song song mà không xác định chúng là so le trong/đồng vị.",
+        "Dùng tính chất 'hai đường song song thì góc bằng nhau' theo chiều ngược mà không gọi đúng đó là dấu hiệu.",
+        "Suy ra song song chỉ từ hình vẽ."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ13 – Góc tạo bởi một đường cắt và dấu hiệu song song",
+          "href": "../kien-thuc/13-goc-va-duong-thang/core/"
+        },
+        {
+          "label": "Practice Room CĐ13",
+          "href": "../kien-thuc/13-goc-va-duong-thang/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/13-goc-va-duong-thang/bai-tap.md#13-WR-08",
+        "docs/assets/data/curriculum/topic13-learning-workspace.json#geo13-core-3",
+        "docs/assets/data/curriculum/topic13-learning-workspace.json#geo13-core-4"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/30_NOTEBOOKLM_EXPANSION_B4_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX13-LIN-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT13",
+      "topic_slug": "13-goc-va-duong-thang",
+      "topic_title": "Góc và quan hệ giữa các đường thẳng",
+      "problem_type_id": "parallel-perpendicular-proof-chain",
+      "problem_type_title": "GT/KL và chuỗi suy luận vuông góc–song song",
+      "title": "Mỗi bước có căn cứ: từ song song đến vuông góc",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        7
+      ],
+      "skills": [
+        "tinh-chat-song-song",
+        "gia-thiet-ket-luan",
+        "lap-luan-chung-minh-ngan"
+      ],
+      "prerequisites": [
+        "goc-dong-vi"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Trong cùng một mặt phẳng, cho\n\n$$a\\parallel b,\\qquad c\\perp a.$$\n\n1. Viết giả thiết (GT) và kết luận (KL) của mệnh đề cần chứng minh.\n2. Chứng minh $c\\perp b$ bằng một chuỗi lập luận ngắn, trong đó mỗi bước đều nêu căn cứ.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Viết GT/KL",
+          "content_markdown": "**GT:** $a\\parallel b$, $c\\perp a$.\n\n**KL:** $c\\perp b$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Đổi vuông góc thành số đo góc",
+          "content_markdown": "Vì $c\\perp a$, góc tạo bởi $c$ và $a$ bằng $90^\\circ$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Dùng tính chất hai đường song song",
+          "content_markdown": "Do $a\\parallel b$, góc đồng vị tương ứng tạo bởi đường cắt $c$ với $b$ bằng góc tạo bởi $c$ với $a$, nên cũng bằng $90^\\circ$."
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận vuông góc",
+          "content_markdown": "Vì góc tạo bởi $c$ và $b$ bằng $90^\\circ$, suy ra\n\n$$c\\perp b.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Viết đúng GT và KL.",
+          "points": 1
+        },
+        {
+          "criterion": "Từ $c\\perp a$ suy ra đúng góc $90^\\circ$.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng tính chất góc đồng vị khi $a\\parallel b$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kết luận đúng $c\\perp b$ và không dựa vào hình vẽ.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Đưa $c\\perp b$ vào giả thiết thay vì kết luận.",
+        "Nói 'nhìn hình thấy vuông góc' mà không viện dẫn tính chất song song.",
+        "Dùng dấu hiệu song song khi ở đây giả thiết song song đã có sẵn."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ13 – Tính chất song song và GT/KL",
+          "href": "../kien-thuc/13-goc-va-duong-thang/core/"
+        },
+        {
+          "label": "Practice Room CĐ13",
+          "href": "../kien-thuc/13-goc-va-duong-thang/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/13-goc-va-duong-thang/bai-tap.md#13-WR-10",
+        "docs/assets/data/curriculum/topic13-learning-workspace.json#geo13-core-4",
+        "docs/assets/data/curriculum/topic13-learning-workspace.json#geo13-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/30_NOTEBOOKLM_EXPANSION_B4_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX15-CEN-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT15",
+      "topic_slug": "15-duong-dong-quy",
+      "topic_title": "Các đường đồng quy trong tam giác",
+      "problem_type_id": "centroid-median-ratio",
+      "problem_type_title": "Trung tuyến và tỉ số trọng tâm",
+      "title": "Đọc đúng chiều tỉ số 2:1 trên trung tuyến",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        7
+      ],
+      "skills": [
+        "nhan-biet-trung-tuyen",
+        "trong-tam",
+        "ti-so-trong-tam"
+      ],
+      "prerequisites": [
+        "trung-diem"
+      ],
+      "estimated_minutes": 8,
+      "problem_markdown": "Trong tam giác $ABC$, $M$ là trung điểm của $BC$. Trọng tâm $G$ nằm trên trung tuyến $AM$ và\n\n$$AM=18\\text{ cm}.$$\n\n1. Giải thích vì sao $AM$ là trung tuyến.\n2. Tính $AG$ và $GM$.\n3. Kiểm tra lại kết quả bằng hai quan hệ $AG=2GM$ và $AG+GM=AM$.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Nhận diện trung tuyến",
+          "content_markdown": "Vì $M$ là trung điểm của cạnh $BC$, đoạn nối đỉnh $A$ với $M$ là trung tuyến. Do đó $AM$ là trung tuyến của tam giác $ABC$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Dùng tỉ số trọng tâm",
+          "content_markdown": "Trọng tâm chia trung tuyến theo tỉ số tính từ đỉnh:\n\n$$AG:GM=2:1,$$\n\nhay\n\n$$AG=\\frac23AM,\\qquad GM=\\frac13AM.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Tính độ dài",
+          "content_markdown": "Với $AM=18$ cm:\n\n$$AG=\\frac23\\cdot18=12\\text{ cm},$$\n\n$$GM=\\frac13\\cdot18=6\\text{ cm}.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra",
+          "content_markdown": "Ta có $12=2\\cdot6$ và $12+6=18$, nên cả $AG=2GM$ và $AG+GM=AM$ đều đúng."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Giải thích đúng $AM$ là trung tuyến vì $M$ là trung điểm $BC$.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng tỉ số $AG:GM=2:1$ theo chiều từ đỉnh.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $AG=12$ cm và $GM=6$ cm.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra đúng cả hai quan hệ yêu cầu.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Viết ngược $AG:GM=1:2$.",
+        "Áp dụng tỉ số trọng tâm trên một đoạn không phải trung tuyến.",
+        "Tính đúng hai số nhưng không kiểm tra tổng bằng $AM$."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ15 – Trung tuyến và trọng tâm",
+          "href": "../kien-thuc/15-duong-dong-quy/core/"
+        },
+        {
+          "label": "Practice Room CĐ15",
+          "href": "../kien-thuc/15-duong-dong-quy/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/15-duong-dong-quy/bai-tap.md#15-WR-01",
+        "docs/kien-thuc/15-duong-dong-quy/bai-tap.md#15-WR-02",
+        "docs/assets/data/curriculum/topic15-learning-workspace.json#geo15-core-1"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/30_NOTEBOOKLM_EXPANSION_B4_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX15-CEN-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT15",
+      "topic_slug": "15-duong-dong-quy",
+      "topic_title": "Các đường đồng quy trong tam giác",
+      "problem_type_id": "incenter-circumcenter-distinguish",
+      "problem_type_title": "Phân biệt tâm nội tiếp và tâm ngoại tiếp từ họ đường",
+      "title": "Không nhầm khoảng cách tới cạnh với khoảng cách tới đỉnh",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        7
+      ],
+      "skills": [
+        "nhan-biet-phan-giac",
+        "tam-noi-tiep",
+        "nhan-biet-trung-truc",
+        "tam-ngoai-tiep",
+        "phan-biet-bon-tam"
+      ],
+      "prerequisites": [
+        "tia-phan-giac",
+        "tinh-chat-duong-trung-truc"
+      ],
+      "estimated_minutes": 12,
+      "problem_markdown": "Trong tam giác $ABC$:\n\n- Hai tia phân giác **trong** của góc $A$ và góc $B$ cắt nhau tại $I$.\n- Hai đường trung trực của $AB$ và $AC$ cắt nhau tại $O$.\n\n1. Xác định vai trò của $I$ và $O$.\n2. Nêu quan hệ khoảng cách đặc trưng của $I$ đối với ba **đường thẳng chứa cạnh**.\n3. Nêu quan hệ khoảng cách đặc trưng của $O$ đối với ba **đỉnh**.\n4. Giải thích vì sao mệnh đề $IA=IB=IC$ không phải là căn cứ đúng để nhận dạng $I$ là tâm nội tiếp.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Nhận dạng I",
+          "content_markdown": "Hai phân giác trong của tam giác cắt nhau tại tâm nội tiếp. Vì vậy $I$ là tâm nội tiếp của tam giác $ABC$; phân giác trong thứ ba cũng đi qua $I$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Khoảng cách đặc trưng của I",
+          "content_markdown": "Tâm nội tiếp cách đều ba đường thẳng chứa các cạnh:\n\n$$d(I,AB)=d(I,BC)=d(I,CA).$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Nhận dạng O",
+          "content_markdown": "Hai đường trung trực của các cạnh cắt nhau tại tâm ngoại tiếp. Vì vậy $O$ là tâm ngoại tiếp của tam giác $ABC$; trung trực cạnh $BC$ cũng đi qua $O$."
+        },
+        {
+          "step_id": "S4",
+          "title": "Khoảng cách đặc trưng của O",
+          "content_markdown": "Tâm ngoại tiếp cách đều ba đỉnh:\n\n$$OA=OB=OC.$$"
+        },
+        {
+          "step_id": "S5",
+          "title": "Phân biệt hai tính chất",
+          "content_markdown": "Quan hệ $IA=IB=IC$ là dạng 'cách đều ba đỉnh', gắn với tâm ngoại tiếp chứ không phải tính chất nhận dạng tâm nội tiếp. Với tâm nội tiếp, đại lượng cần so sánh là khoảng cách từ $I$ tới ba đường thẳng chứa cạnh."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Xác định đúng $I$ là tâm nội tiếp.",
+          "points": 1
+        },
+        {
+          "criterion": "Nêu đúng $d(I,AB)=d(I,BC)=d(I,CA)$.",
+          "points": 1
+        },
+        {
+          "criterion": "Xác định đúng $O$ là tâm ngoại tiếp và $OA=OB=OC$.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải thích đúng vì sao $IA=IB=IC$ không nhận dạng tâm nội tiếp.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Dùng khoảng cách tới đỉnh để mô tả tâm nội tiếp.",
+        "Nhầm giao của phân giác trong với giao của trung trực.",
+        "Cho rằng tâm nội tiếp và tâm ngoại tiếp luôn trùng nhau."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ15 – Tâm nội tiếp và tâm ngoại tiếp",
+          "href": "../kien-thuc/15-duong-dong-quy/core/"
+        },
+        {
+          "label": "Practice Room CĐ15",
+          "href": "../kien-thuc/15-duong-dong-quy/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/15-duong-dong-quy/bai-tap.md#15-WR-05",
+        "docs/kien-thuc/15-duong-dong-quy/bai-tap.md#15-WR-06",
+        "docs/kien-thuc/15-duong-dong-quy/bai-tap.md#15-WR-07",
+        "docs/assets/data/curriculum/topic15-learning-workspace.json#geo15-core-3",
+        "docs/assets/data/curriculum/topic15-learning-workspace.json#geo15-core-4",
+        "docs/assets/data/curriculum/topic15-learning-workspace.json#geo15-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/30_NOTEBOOKLM_EXPANSION_B4_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX23-PRO-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT23",
+      "topic_slug": "23-xac-suat",
+      "topic_title": "Xác suất",
+      "problem_type_id": "experimental-probability-interpret",
+      "problem_type_title": "Xác suất thực nghiệm và cách diễn giải",
+      "title": "Tính từ dữ liệu quan sát, không biến thành lời tiên đoán chắc chắn",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        6,
+        7,
+        8
+      ],
+      "skills": [
+        "xac-suat-thuc-nghiem",
+        "kiem-tra-xac-suat"
+      ],
+      "prerequisites": [],
+      "estimated_minutes": 8,
+      "problem_markdown": "Một đồng xu được tung $40$ lần, trong đó xuất hiện mặt ngửa $23$ lần.\n\n1. Tính xác suất thực nghiệm của biến cố $A$: “xuất hiện mặt ngửa”.\n2. Kiểm tra kết quả có nằm trong khoảng hợp lệ của xác suất hay không.\n3. Giải thích vì sao kết quả trên **không** có nghĩa rằng lần tung tiếp theo chắc chắn sẽ ra ngửa.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Xác định số lần biến cố xảy ra",
+          "content_markdown": "Biến cố $A$ xảy ra $23$ lần trong tổng số $40$ lần thử."
+        },
+        {
+          "step_id": "S2",
+          "title": "Tính xác suất thực nghiệm",
+          "content_markdown": "Xác suất thực nghiệm là\n\n$$P_{\\text{tn}}(A)=\\frac{23}{40}=0{,}575.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Kiểm tra khoảng giá trị",
+          "content_markdown": "Ta có\n\n$$0\\le0{,}575\\le1,$$\n\nnên giá trị nhận được nằm trong khoảng hợp lệ của xác suất."
+        },
+        {
+          "step_id": "S4",
+          "title": "Diễn giải đúng",
+          "content_markdown": "Giá trị $23/40$ chỉ là tần số tương đối quan sát được trong **40 lần thử đã thực hiện**. Nó không khẳng định chắc chắn kết quả của lần tung tiếp theo."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Xác định đúng 23 lần thuận lợi trên 40 lần thử.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $23/40=0{,}575$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra đúng kết quả thuộc $[0,1]$.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải thích đúng rằng xác suất thực nghiệm không dự đoán chắc chắn lần tiếp theo.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Lấy $17/40$ là xác suất thực nghiệm của mặt ngửa.",
+        "Chia 23 cho số lần mặt sấp thay vì tổng số lần thử.",
+        "Hiểu 0,575 là lời khẳng định chắc chắn về lần tung tiếp theo."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ23 – Xác suất thực nghiệm",
+          "href": "../kien-thuc/23-xac-suat/core/"
+        },
+        {
+          "label": "Practice Room CĐ23",
+          "href": "../kien-thuc/23-xac-suat/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/23-xac-suat/bai-tap.md#b-luyen-tu-luan--trinh-bay",
+        "docs/assets/data/curriculum/topic23-learning-workspace.json#prob23-core-1",
+        "docs/assets/data/curriculum/topic23-learning-workspace.json#prob23-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/30_NOTEBOOKLM_EXPANSION_B4_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX23-PRO-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT23",
+      "topic_slug": "23-xac-suat",
+      "topic_title": "Xác suất",
+      "problem_type_id": "classical-vs-experimental",
+      "problem_type_title": "Xác suất cổ điển và đối chiếu thực nghiệm",
+      "title": "Đếm kết quả thuận lợi trước, rồi mới so với dữ liệu thử",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        7,
+        8
+      ],
+      "skills": [
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat",
+        "xac-suat-thuc-nghiem"
+      ],
+      "prerequisites": [],
+      "estimated_minutes": 12,
+      "problem_markdown": "Có $12$ thẻ giống nhau, đánh số từ $1$ đến $12$. Rút ngẫu nhiên một thẻ. Gọi $A$ là biến cố: “số trên thẻ chia hết cho $2$ **hoặc** chia hết cho $3$”.\n\n1. Giải thích vì sao có thể dùng công thức xác suất cổ điển.\n2. Liệt kê các kết quả thuận lợi của $A$ và tính $P(A)$.\n3. Trong một thí nghiệm lặp lại $60$ lần với **hoàn lại thẻ sau mỗi lần rút**, $A$ xảy ra $38$ lần. Tính xác suất thực nghiệm của $A$.\n4. So sánh hai giá trị và giải thích vì sao chúng không bắt buộc phải bằng nhau trong một mẫu hữu hạn.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Kiểm tra điều kiện dùng xác suất cổ điển",
+          "content_markdown": "Các thẻ giống nhau và được rút ngẫu nhiên, nên $12$ kết quả $1,2,\\ldots,12$ được coi là đồng khả năng. Vì vậy có thể dùng tỉ số số kết quả thuận lợi trên tổng số kết quả."
+        },
+        {
+          "step_id": "S2",
+          "title": "Liệt kê kết quả thuận lợi",
+          "content_markdown": "Các số từ $1$ đến $12$ chia hết cho $2$ hoặc $3$ là\n\n$$\\{2,3,4,6,8,9,10,12\\}.$$\n\nCó $8$ kết quả thuận lợi."
+        },
+        {
+          "step_id": "S3",
+          "title": "Tính xác suất theo mô hình",
+          "content_markdown": "Do đó\n\n$$P(A)=\\frac8{12}=\\frac23.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Tính xác suất thực nghiệm",
+          "content_markdown": "Trong $60$ lần thử có hoàn lại, $A$ xảy ra $38$ lần, nên\n\n$$P_{\\text{tn}}(A)=\\frac{38}{60}=\\frac{19}{30}.$$"
+        },
+        {
+          "step_id": "S5",
+          "title": "So sánh và diễn giải",
+          "content_markdown": "Ta có $\\frac{19}{30}\\ne\\frac23$. Hai giá trị khá gần nhau nhưng không bắt buộc bằng nhau vì xác suất thực nghiệm được tính từ một mẫu hữu hạn; nó có thể dao động quanh xác suất theo mô hình."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Nêu đúng điều kiện đồng khả năng của 12 thẻ.",
+          "points": 1
+        },
+        {
+          "criterion": "Liệt kê đúng 8 kết quả thuận lợi, không đếm 6 và 12 hai lần.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $P(A)=2/3$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng xác suất thực nghiệm $19/30$.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải thích đúng vì sao hai giá trị không bắt buộc bằng nhau ở mẫu hữu hạn.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Đếm các số chia hết cho cả 2 và 3 hai lần.",
+        "Dùng công thức cổ điển mà không kiểm tra điều kiện đồng khả năng.",
+        "Cho rằng xác suất thực nghiệm phải bằng chính xác xác suất lý thuyết sau 60 lần thử."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ23 – Xác suất cổ điển và thực nghiệm",
+          "href": "../kien-thuc/23-xac-suat/core/"
+        },
+        {
+          "label": "Practice Room CĐ23",
+          "href": "../kien-thuc/23-xac-suat/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/23-xac-suat/bai-tap.md#23-M2-05",
+        "docs/kien-thuc/23-xac-suat/bai-tap.md#23-M3-10",
+        "docs/assets/data/curriculum/topic23-learning-workspace.json#prob23-core-3",
+        "docs/assets/data/curriculum/topic23-learning-workspace.json#prob23-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/30_NOTEBOOKLM_EXPANSION_B4_R1_PASS_RECEIPT.md"
+      }
     }
   ],
   "extension_policy": [
@@ -2415,14 +2998,17 @@
       "CT10",
       "CT11",
       "CT12",
+      "CT13",
       "CT14",
+      "CT15",
       "CT16",
       "CT17",
       "CT18",
       "CT19",
+      "CT23",
       "CT24"
     ],
-    "exercise_count": 24,
+    "exercise_count": 30,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -2445,6 +3031,12 @@
       {
         "batch_id": "EXPANSION_B3_R1",
         "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
+        "count": 6,
+        "status": "PUBLISHED"
+      },
+      {
+        "batch_id": "EXPANSION_B4_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-R1-20261001",
         "count": 6,
         "status": "PUBLISHED"
       }
