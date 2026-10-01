@@ -111,4 +111,5 @@ with sync_playwright() as p:
 
 print("PASS: Written Exercise Library renders six pilot items on desktop/mobile.")
 print("PASS: topic/level/search filters, geometry figure and MathJax work.")
-print("PASS: compact 3-action help row is presentation-only with no localStorage write.")\nprint("PASS: quick shortcut and topic deep link open the written library with CT07 auto-filter.")
+print("PASS: compact 3-action help row is presentation-only with no localStorage write.")
+print("PASS: quick shortcut and topic deep link open the written library with CT07 auto-filter.")
