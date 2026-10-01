@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library B1 production counts/new topics OWNER QA PASS; numeric topic-filter sort fix RELEASED / owner order spot-QA pending.** Owner confirmed CT08/CT17/CT19 appear and each has 2 exercises. PR #241 fixes topic filter ordering to numeric ascending independent of append order; exact QA `36862512366` SUCCESS, merge `3e30e66b041b0ca92f8b706e07f8568511471e9b`, Deploy MkDocs `36863005816` SUCCESS. Expected current order: CĐ07 → CĐ08 → CĐ14 → CĐ17 → CĐ19 → CĐ24. Patch 1 remains 2/3 PASS; topic auto-filter deep link is the remaining owner spot-check.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library topic-sort OWNER QA PASS / CLOSED; B2 review-only next.** Owner confirmed the production topic filter is numerically ordered correctly. Sort task `MATH-WRITTEN-LIBRARY-TOPIC-SORT-001` is closed. B1 new topics/counts remain accepted. Next academic expansion is **B2 review-only: CĐ09 + CĐ16 + CĐ18**, with NotebookLM required before implementation. Patch 1 remains 2/3 PASS; topic auto-filter deep link is an independent remaining spot-check.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -17,7 +17,7 @@
 - Deploy MkDocs `36863005816`: **SUCCESS**.
 - Regression test now asserts numeric ascending topic-option order.
 - Expected current dropdown order: CĐ07 → CĐ08 → CĐ14 → CĐ17 → CĐ19 → CĐ24.
-- Owner order spot-QA: **PENDING** after refresh.
+- Owner order spot-QA: **PASS**. Task closed.
 
 ## Written Library Expansion B1 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 

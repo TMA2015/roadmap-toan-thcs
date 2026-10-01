@@ -1,5 +1,5 @@
 {
-  "version": "1.0.102",
+  "version": "1.0.103",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.102",
-      "review_verdict": "B1_RELEASED_OWNER_COUNTS_PASS_TOPIC_SORT_FIX_RELEASED",
-      "review_notes": "Owner confirmed 3 newly added topics appear in the filter and each has 2 exercises. Found follow-up UX issue: topic options were append-ordered rather than numeric. Sort fix released via PR #241; owner order spot-QA pending. Patch 1 remains 2/3 owner spot-QA PASS; topic deep-link auto-filter still pending."
+      "context_version": "1.0.103",
+      "review_verdict": "B1_COUNTS_FILTERS_OWNER_PASS_SORT_CLOSED_NEXT_B2_REVIEW_ONLY",
+      "review_notes": "Owner confirmed B1 new topics CT08/17/19 each expose 2 items and topic dropdown order is now correct. Numeric topic-sort task closed. Patch 1 deep-link owner spot-check remains independent. Next academic expansion B2 may proceed review-only for CT09/16/18."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -782,10 +782,10 @@
       "id": "MATH-WRITTEN-LIBRARY-TOPIC-SORT-001",
       "title": "Sort Written Library topic filter numerically",
       "routing": "CHATGPT_IMPLEMENT+CI+DEPLOY+OWNER_SPOT_QA",
-      "status": "OPEN",
-      "context_version": "1.0.102",
-      "review_verdict": "PRODUCTION_RELEASED_CI_PASS_OWNER_SPOT_QA_PENDING",
-      "review_notes": "Owner observed topic filter followed append order after B1 expansion. PR #241 sorts topic options numerically by CT number, so future catalog growth keeps CĐ01→CĐ25 order regardless of append order. Exact PR QA 36862512366 SUCCESS; merge 3e30e66b041b0ca92f8b706e07f8568511471e9b; Deploy MkDocs 36863005816 SUCCESS. Owner should refresh and confirm current visible order CT07, CT08, CT14, CT17, CT19, CT24."
+      "status": "DONE",
+      "context_version": "1.0.103",
+      "review_verdict": "OWNER_QA_PASS_CLOSED_DONE",
+      "review_notes": "Owner refreshed production and confirmed the Written Library topic filter is now in ascending numeric order. PR #241 / QA 36862512366 / merge 3e30e66b041b0ca92f8b706e07f8568511471e9b / deploy 36863005816 remain the release provenance. Durable rule: sort by CT number, never append order."
     }
   ]
 }
