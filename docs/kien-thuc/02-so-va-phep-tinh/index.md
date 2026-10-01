@@ -693,12 +693,8 @@ Chuyên đề được xem là hoàn thành khi học sinh:
 
 ## ➡️ Tiếp tục học
 
-<div class="topic-workspace-actions" markdown>
-
 [🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
 
 [✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
 
 [→ CĐ03 – Tỉ số và phần trăm](../03-ti-le-ti-le-thuc/index.md){ .md-button }
-
-</div>
