@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Exercise Library pilot PRODUCTION RELEASED / owner QA pending.** NotebookLM R1 PASS 6/6 + ARCH_1–ARCH_6 PASS; exact authorized HEAD `ad0234e4bf367b4b28d17664a687fbf3a0931a02` passed all technical QA, merged via PR #234 and deployed successfully. Navigation remains CLOSED DONE. Owner QA of `/luyen-tap/` is the only remaining gate for the pilot. G3/mastery expansion remains OFF.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Exercise Library owner QA PASS with approved UX follow-up.** Desktop+iPad confirm the paper-first library works as intended. Patch 1 is staged: compact 3-action support row, add library to quick shortcuts, and connect topic “Các dạng bài” to topic-filtered library results. No academic content/Readiness/mastery/G3 change.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -21,6 +21,22 @@
 - PR #227 production merge: `fb571ec78cfaf56f82d7dd81b719481dc4296e2b`.
 - Deploy MkDocs run `36719709094`: **SUCCESS**.
 - Owner spot-QA: **PASS on desktop and iPad**. Practice help and Core hint disclosure behavior matches the approved UX rule. Task `MATH-HELP-DISCLOSURE-TOGGLE-001` is CLOSED DONE.
+
+## Written Library Patch 1 — compact actions + shortcut + topic deep links (01/10/2026)
+
+Owner production QA on desktop+iPad confirmed the six-item pilot works and is the intended learning experience.
+
+Approved follow-up:
+- replace the three stacked **Hướng dẫn / Rubric / Lỗi thường gặp** disclosures with one **three-column horizontal action row**; revealed content stays full-width below the row;
+- keep toggles presentation-only: no learner-data/Readiness/mastery write;
+- add **Thư viện bài tập** to the header quick shortcuts, changing the compact launcher from **6 + 25** to **7 + 25**;
+- on topic lesson pages, add a compact CTA immediately after **Các dạng bài** when the published written catalog contains items for that topic;
+- CTA deep-links to `/luyen-tap/?topic=CTxx`, so the topic filter is applied automatically;
+- do not show an empty-topic CTA for topics that do not yet have written-library items. As the JSON catalog grows, links appear automatically without editing source-locked lesson Markdown.
+
+Task: `MATH-WRITTEN-LIBRARY-UX-PATCH-001`.
+Branch: `fix/written-library-compact-links-shortcut-20261001`.
+Status: **implementation staged / CI pending**.
 
 ## Written Exercise Library v1 pilot — PRODUCTION RELEASED; owner QA pending (01/10/2026)
 
