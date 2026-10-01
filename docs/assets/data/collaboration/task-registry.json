@@ -1,7 +1,7 @@
 {
-  "version": "1.0.129",
+  "version": "1.0.130",
   "schema": "roadmap-collaboration-task-registry-v1",
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "statuses": [
     "OPEN",
     "GEMINI-DRAFT",
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.129",
-      "review_verdict": "B7_TECHNICAL_QA_PASS_OWNER_RELEASE_PENDING",
-      "review_notes": "B7 CT21 NotebookLM PASS 2/2 + ARCH_1..ARCH_10. Implementation PR #255 exact HEAD b8aa8617212d5435d6e92311f2599e55880c1630 passed Roadmap PR Quality 36898694706, including strict MkDocs build and browser/visual QA. Prospective catalog is 44 items / 22 topics. Explicit owner controlled-release authorization is still required before any merge/deploy."
+      "context_version": "1.0.130",
+      "review_verdict": "B7_OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
+      "review_notes": "B7 CT21 NotebookLM PASS 2/2 + ARCH_1..ARCH_10 and technical QA PASS on b8aa8617212d5435d6e92311f2599e55880c1630 / Roadmap PR Quality 36898694706. Owner explicitly authorized controlled production release on 2026-10-02. Fresh exact-head QA is required after this saved authorization checkpoint before merge/deploy."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -846,9 +846,9 @@
       "title": "Expand Written Exercise Library to CĐ21 Thống kê",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
       "status": "OPEN",
-      "context_version": "1.0.129",
-      "review_verdict": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_PENDING",
-      "review_notes": "NotebookLM PASS 2/2 + ARCH_1..ARCH_10. Implementation PR #255 exact HEAD b8aa8617212d5435d6e92311f2599e55880c1630 passed Roadmap PR Quality 36898694706; strict MkDocs build PASS; browser interaction/visual previews PASS. Prospective catalog 44 items / 22 topics, all prior 42 IDs preserved. No production merge/deploy until explicit owner controlled-release authorization, then fresh exact-head revalidation."
+      "context_version": "1.0.130",
+      "review_verdict": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
+      "review_notes": "NotebookLM PASS 2/2 + ARCH_1..ARCH_10. Technical QA PASS on b8aa8617212d5435d6e92311f2599e55880c1630 / Roadmap PR Quality 36898694706, including strict MkDocs build and browser/visual QA. Owner explicitly authorized controlled production release on 2026-10-02. Re-run fresh exact-head QA after this saved authorization checkpoint; merge/deploy only if clean and main has no base drift."
     }
   ]
 }
