@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, all inherited owner QA CLEARED; topic navigation fix RELEASED, owner spot-QA pending.** PR #232 exact-head CI PASS and Deploy MkDocs SUCCESS. CĐ02/CĐ04–13 continuation rendering is repaired without modifying source-locked lesson files; Practice footer order is standardized CĐ02–25. Written Exercise Library v1 is the next substantive product-completeness initiative after the spot-check. Duplicate navigation remains non-blocking backlog. G2/help UX remain CLOSED DONE; G3/mastery expansion remains OFF.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Exercise Library pilot STAGED / academic review pending.** Six paper-first items across CĐ07/CĐ14/CĐ24 are implemented on a feature branch with filters, stepwise solutions, rubrics, remediation and geometry figures. **Not production released.** NotebookLM R1 is the next gate. Topic navigation fix remains released with owner spot-QA pending. G2/help UX remain CLOSED DONE; G3/mastery expansion remains OFF.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -21,6 +21,25 @@
 - PR #227 production merge: `fb571ec78cfaf56f82d7dd81b719481dc4296e2b`.
 - Deploy MkDocs run `36719709094`: **SUCCESS**.
 - Owner spot-QA: **PASS on desktop and iPad**. Practice help and Core hint disclosure behavior matches the approved UX rule. Task `MATH-HELP-DISCLOSURE-TOGGLE-001` is CLOSED DONE.
+
+## Written Exercise Library v1 pilot — STAGED, NotebookLM R1 pending (01/10/2026)
+
+- Task: `MATH-WRITTEN-EXERCISE-LIBRARY-001`.
+- Branch: `feature/written-exercise-library-pilot-20261001`.
+- Exactly six candidate items:
+  - CĐ07: `WX07-RAT-001`, `WX07-RAT-002`;
+  - CĐ14: `WX14-TRI-001`, `WX14-TRI-002`;
+  - CĐ24: `WX24-MOD-001`, `WX24-MOD-002`.
+- Coverage contract: one `CORE_BASE` + one `CORE_APPLY` per pilot topic.
+- UI: central `/luyen-tap/` library; filters by topic, **problem type**, level and text search; query parameters can preselect filters for future deep links from “Các dạng bài”.
+- Each item: paper-first prompt → collapsible step-by-step solution → rubric → common mistakes → remediation links.
+- CĐ14 has two dedicated SVG orientation figures; figures are not hypotheses.
+- Self-marking only; **no automatic Readiness/mastery credit**.
+- Catalog blob: `bf926501b512a85fc2f0b73786784aa4cbe26f81`.
+- NotebookLM packet: `MATH-WRITTEN-LIBRARY-PILOT-R1-20261001`.
+- Upload source: `review-packets/written-exercise-library/01_UPLOAD_TO_NOTEBOOKLM_WRITTEN_PILOT_R1.md`.
+- Prompt: `review-packets/written-exercise-library/02_COPY_TO_NOTEBOOKLM_WRITTEN_PILOT_R1.txt`.
+- **Do not merge/publish before NotebookLM PASS + separate technical QA.**
 
 ## Final owner-QA cleanup + product-completeness observations (01/10/2026)
 
