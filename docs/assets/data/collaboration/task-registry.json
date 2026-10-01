@@ -756,18 +756,18 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.97",
-      "review_verdict": "OWNER_DESKTOP_IPAD_PASS_WITH_APPROVED_UX_FOLLOWUP",
-      "review_notes": "Owner tested production on desktop+iPad and confirmed the Written Exercise Library is the intended product direction. Core content/filters/stepwise solution/rubric workflow PASS. Before closing the task, owner requested a compact three-action row, a quick-shortcut entry, and topic-page links from 'Các dạng bài' with topic auto-filter. These are UX/navigation-only follow-ups."
+      "context_version": "1.0.98",
+      "review_verdict": "OWNER_CONTENT_UX_PASS_PATCH1_RELEASED_SPOT_QA_PENDING",
+      "review_notes": "Owner already accepted the production pilot on desktop+iPad. Requested Patch 1 has now passed CI and deployed successfully. Close the parent Written Exercise Library task after a short owner production spot-QA confirms compact support row, shortcut entry, and topic-filter deep link."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
       "title": "Compact written-library support row and connect topic/shortcut navigation",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_SPOT_QA",
       "status": "OPEN",
-      "context_version": "1.0.97",
-      "review_verdict": "IMPLEMENTATION_STAGED_CI_PENDING",
-      "review_notes": "Owner-approved UX/navigation patch. Replace three vertical support disclosures with three horizontal action tiles; add Thư viện bài tập to quick shortcuts (7+25); inject a topic-filter deep link after 'Các dạng bài' only when the written catalog contains items for that topic. Keep solution/rubric/mistake toggles presentation-only with no learner-data writes. No academic content or readiness/mastery changes."
+      "context_version": "1.0.98",
+      "review_verdict": "PRODUCTION_RELEASED_CI_PASS_OWNER_SPOT_QA_PENDING",
+      "review_notes": "Owner-approved UX/navigation patch released. Exact tested HEAD 8be3c40482dcf48545fa49e27cfccaa1822b8b16 passed Roadmap PR Quality 36841009154. PR #237 merged as a80343a5ceba56957af3002f4b128e9fb5545c8e; Deploy MkDocs 36841498180 SUCCESS. Browser QA verified three horizontal support actions, no learner-data writes, quick shortcut 7+25 with Thư viện bài tập, and CĐ07 deep link /luyen-tap/?topic=CT07 with automatic topic filter. Owner production spot-QA remains before task closure."
     }
   ]
 }
