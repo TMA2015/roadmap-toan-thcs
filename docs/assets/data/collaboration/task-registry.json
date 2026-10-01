@@ -740,7 +740,7 @@
       "status": "OPEN",
       "context_version": "1.0.92",
       "review_verdict": "PATCH_STAGED_CI_PENDING",
-      "review_notes": "Owner observed raw Markdown in 'Tiếp tục học'. Audit found vulnerable raw-HTML wrapper in CĐ02 and CĐ04–13. Patch removes wrapper. Practice roadmap footers CĐ02–25 are standardized to previous topic → same-topic links → next topic; CĐ25 remains capstone. Regression test added. Await CI/deploy and owner spot-QA."
+      "review_notes": "Owner observed raw Markdown in 'Tiếp tục học'. Audit found vulnerable Markdown-inside-HTML usage in CĐ02 and CĐ04–13. Final patch preserves source-locked lesson files and enables `attr_list` + `md_in_html`, with built-HTML regression validation. Practice roadmap footers CĐ02–25 are standardized to previous topic → same-topic links → next topic; CĐ25 remains capstone. Regression test added. Await CI/deploy and owner spot-QA."
     },
     {
       "id": "MATH-TOPIC-NAV-DEDUP-001",
