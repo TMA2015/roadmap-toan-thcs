@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, all inherited owner QA CLEARED; topic navigation fix RELEASED, owner spot-QA pending.** PR #232 exact-head CI PASS and Deploy MkDocs SUCCESS. CĐ02/CĐ04–13 continuation rendering is repaired without modifying source-locked lesson files; Practice footer order is standardized CĐ02–25. Written Exercise Library v1 is the next substantive product-completeness initiative after the spot-check. Duplicate navigation remains non-blocking backlog. G2/help UX remain CLOSED DONE; G3/mastery expansion remains OFF.
+> **CURRENT CHECKPOINT — 01/10/2026, navigation OWNER QA PASS / CLOSED DONE.** All inherited owner-device QA debt is cleared. The Written Exercise Library v1 pilot is staged on Draft PR #234 and is **not production released**; NotebookLM R1 is the next blocking gate. Duplicate topic navigation remains non-blocking backlog. G2/help UX remain CLOSED DONE; G3/mastery expansion remains OFF.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -35,7 +35,7 @@
 - Regression: `scripts/test-topic-roadmap-navigation.py`.
 - PR #232 exact tested HEAD `891c1dea7eda264f1da918590ddf1c7ad1aa8fb2`: Roadmap PR Quality `36821844162` **SUCCESS**; Skill assessment `36821844031` **SUCCESS**; branding `36821844317` **SUCCESS**.
 - Production merge `a1dce90e0436351ea109bd6dbe4c6697dafcff3f`; Deploy MkDocs `36822248798` **SUCCESS**.
-- Task `MATH-TOPIC-NAV-FIX-001` remains OPEN only for owner production spot-QA.
+- Owner production spot-QA: **PASS**. CĐ02 continuation buttons render correctly without raw Markdown; CĐ07 Practice footer order is previous topic → same-topic learning/self-check → next topic. Task `MATH-TOPIC-NAV-FIX-001` → **DONE**.
 
 ### UX backlog
 
