@@ -1,0 +1,74 @@
+Review packet: MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001.
+
+Use ONLY the uploaded source packet. Do not import outside exercises, rewrite the curriculum, or assume facts not present in the packet.
+
+Review all 6 candidates in exact order:
+WX08-EQI-001
+WX08-EQI-002
+WX17-SIM-001
+WX17-SIM-002
+WX19-CIR-001
+WX19-CIR-002
+
+For EACH item check:
+1) mathematical correctness;
+2) hypotheses / domain / units;
+3) exact skill IDs and KNTT-Core boundary against the locked Learning Workspace;
+4) step-by-step solution logic;
+5) final conclusion;
+6) rubric matches the solution and total points;
+7) common mistakes and remediation are accurate;
+8) duplicate / near-duplicate risk against the locked production catalog and existing written-practice source;
+9) CORE_BASE / CORE_APPLY classification;
+10) paper-first self-study suitability.
+
+For geometry also check:
+- theorem conditions;
+- correspondence/order;
+- no conclusion inferred from a diagram or from appearance;
+- written hypotheses are sufficient even when figure_uri is null.
+
+Then check:
+ARCH_1 — exactly 6 candidates, 2 each for CT08/CT17/CT19.
+ARCH_2 — each topic has one CORE_BASE and one CORE_APPLY.
+ARCH_3 — review-only; production catalog unchanged.
+ARCH_4 — self-marking only; no automatic Readiness/mastery credit.
+ARCH_5 — unique stable exercise IDs and no collision with current pilot catalog.
+ARCH_6 — every skill ID/layer is supported by the locked Learning Workspaces.
+ARCH_7 — every item has problem, stepwise solution, rubric, common mistakes, remediation, and source refs.
+ARCH_8 — no unsupported exam-frequency claim is used.
+
+Return ONLY this compact format:
+
+OVERALL|PASS
+or
+OVERALL|REVISIONS_REQUIRED
+
+COVERAGE|6|<pass_count>|<revise_count>|<missing_count>
+
+ITEM|WX08-EQI-001|PASS
+ITEM|WX08-EQI-002|PASS
+ITEM|WX17-SIM-001|PASS
+ITEM|WX17-SIM-002|PASS
+ITEM|WX19-CIR-001|PASS
+ITEM|WX19-CIR-002|PASS
+
+If an item needs revision, replace PASS with REVISE and immediately add one or more:
+FIX|<item_id>|<field>|<precise issue>|<exact correction>
+
+Then:
+ARCH_1|PASS
+ARCH_2|PASS
+ARCH_3|PASS
+ARCH_4|PASS
+ARCH_5|PASS
+ARCH_6|PASS
+ARCH_7|PASS
+ARCH_8|PASS
+
+Finally exactly one:
+AUTHORIZATION|CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA
+or
+AUTHORIZATION|BLOCKED_PENDING_REVISIONS
+
+Do not say PASS unless all six candidate items and all eight architecture checks have been materially reviewed.
