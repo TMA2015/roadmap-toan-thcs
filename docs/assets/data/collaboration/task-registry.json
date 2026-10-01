@@ -737,10 +737,10 @@
       "id": "MATH-TOPIC-NAV-FIX-001",
       "title": "Fix topic continuation rendering and standardize Practice roadmap order",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_SPOT_QA",
-      "status": "OPEN",
-      "context_version": "1.0.93",
-      "review_verdict": "PRODUCTION_RELEASED_CI_PASS_OWNER_SPOT_QA_PENDING",
-      "review_notes": "PR #232 exact tested HEAD 891c1dea7eda264f1da918590ddf1c7ad1aa8fb2 passed Roadmap PR Quality run 36821844162, Skill assessment pilot QA 36821844031 and G Learning branding QA 36821844317. Source-locked lessons remain unchanged. Narrow build hook + attr_list renders CĐ02/CĐ04–13 continuation buttons; built-HTML regression PASS. Practice footer order standardized CĐ02–25. Merge a1dce90e0436351ea109bd6dbe4c6697dafcff3f; Deploy MkDocs 36822248798 SUCCESS. Owner production spot-QA pending before task closure."
+      "status": "DONE",
+      "context_version": "1.0.95",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED_DONE",
+      "review_notes": "Owner production spot-QA PASS on 2026-10-01. CĐ02 continuation renders correctly; CĐ07 Practice footer order matches approved contract. Task CLOSED DONE."
     },
     {
       "id": "MATH-TOPIC-NAV-DEDUP-001",
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.94",
-      "review_verdict": "PILOT_STAGED_NOTEBOOKLM_R1_PENDING",
-      "review_notes": "Six-item pilot staged on feature/written-exercise-library-pilot-20261001: CĐ07/CĐ14/CĐ24, one CORE_BASE + one CORE_APPLY each. JSON source of truth, central /luyen-tap/ UI, filters by topic/problem type/level, stepwise solution, rubric, common mistakes, remediation, two geometry SVGs, no automatic Readiness/mastery credit. Source-locked NotebookLM packet MATH-WRITTEN-LIBRARY-PILOT-R1-20261001 prepared. Do not merge/publish before academic PASS and separate technical QA."
+      "context_version": "1.0.95",
+      "review_verdict": "NOTEBOOKLM_R1_PASS_6_OF_6_ARCH_6_OF_6_TECHNICAL_REVALIDATION_PENDING",
+      "review_notes": "NotebookLM R1 PASS: OVERALL PASS; COVERAGE 6/6/0/0; all six items PASS; ARCH_1..ARCH_6 PASS; AUTHORIZATION CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA. Reviewed packet blob 45aefb0ddbaef15ca05d802d141fbb070b742e05 with catalog blob bf926501b512a85fc2f0b73786784aa4cbe26f81. Prior exact implementation HEAD c4616821fb6ce491977b9c1fe1e791bcb3e50e39 technical QA was PASS. Because main advanced after navigation owner-QA closure, sync main and rerun exact-head technical QA before any release. Production remains unauthorized."
     }
   ]
 }
