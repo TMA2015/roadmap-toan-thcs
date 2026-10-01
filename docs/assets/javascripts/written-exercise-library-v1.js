@@ -165,15 +165,17 @@
   const initTopicLibraryLink=async()=>{
     const match=location.pathname.match(/\/kien-thuc\/(\d{2})-[^/]+\/$/);
     if(!match)return;
-    const content=document.querySelector(".md-content__inner");
-    if(!content||content.querySelector("[data-written-topic-link]"))return;
-    const heading=[...content.querySelectorAll("h2")].find(h=>/Các dạng bài/i.test(h.textContent||""));
-    if(!heading)return;
     let data;
     try{data=await loadCatalog();}catch(err){return;}
     const topicId="CT"+match[1];
     const items=data.exercises.filter(x=>x.topic_id===topicId);
     if(!items.length)return;
+    // Re-query after the async catalog load: other lesson UI may have re-rendered
+    // the Markdown content while fetch was pending.
+    const content=document.querySelector(".md-content__inner");
+    if(!content||content.querySelector("[data-written-topic-link]"))return;
+    const heading=[...content.querySelectorAll("h2")].find(h=>/Các dạng bài/i.test(h.textContent||""));
+    if(!heading)return;
     const a=el("a","written-topic-library-link",`📚 Xem ${items.length} bài mẫu tự luận ${topicId.replace("CT","CĐ")} →`);
     a.dataset.writtenTopicLink="1";
     a.href=base()+"luyen-tap/?topic="+encodeURIComponent(topicId);
