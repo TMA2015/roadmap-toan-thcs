@@ -215,7 +215,6 @@ nav:
 markdown_extensions:
   - admonition
   - attr_list
-  - md_in_html
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:
@@ -225,6 +224,9 @@ markdown_extensions:
 
 plugins:
   - search
+
+hooks:
+  - hooks/topic_markdown_fixes.py
 
 extra_css:
   - assets/stylesheets/site-design-system.css
