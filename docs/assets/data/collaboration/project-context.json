@@ -1,5 +1,5 @@
 {
-  "version": "1.0.96",
+  "version": "1.0.97",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Exercise Library v1 pilot is PRODUCTION RELEASED after owner-authorized exact-head merge and Deploy MkDocs SUCCESS. Owner production QA is the only remaining gate before closing MATH-WRITTEN-EXERCISE-LIBRARY-001 DONE. Navigation remains OWNER QA PASS/CLOSED DONE. Duplicate topic menu remains non-blocking backlog. G3/mastery expansion remains OFF.",
+    "next_priority": "Written Exercise Library pilot content/interaction is owner-accepted on desktop+iPad, with one approved UX/navigation follow-up now staged: compact the three support controls into one horizontal row, add the library to the quick-shortcut modal, and add topic-page 'Các dạng bài' deep links that auto-filter the library by topic when published items exist. This is presentation/navigation only; no academic content, Readiness/mastery credit, or G3 scope change.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -676,7 +676,32 @@
       },
       "production_merge": "56739479516bafe00340594cb161f5251fb9e3e9",
       "deploy_run": 36833487797,
-      "deploy_conclusion": "SUCCESS"
+      "deploy_conclusion": "SUCCESS",
+      "owner_qa": "PASS_WITH_APPROVED_UX_FOLLOWUP",
+      "owner_qa_devices": [
+        "desktop",
+        "iPad"
+      ],
+      "owner_qa_date": "2026-10-01",
+      "owner_notes": [
+        "Pilot is the intended paper-first written-practice experience.",
+        "Compact Hướng dẫn/Rubric/Lỗi thường gặp into a single horizontal row.",
+        "Add Thư viện bài tập to quick shortcuts.",
+        "Link topic 'Các dạng bài' to the library; auto-filter by topic where supported."
+      ]
+    },
+    "written_library_patch_1": {
+      "status": "IMPLEMENTATION_STAGED_CI_PENDING",
+      "task_id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
+      "branch": "fix/written-library-compact-links-shortcut-20261001",
+      "scope": [
+        "3-button compact support row with full-width revealed panels",
+        "quick shortcut changes from 6+25 to 7+25 and adds Thư viện bài tập",
+        "topic 'Các dạng bài' CTA to /luyen-tap/?topic=CTxx only when catalog has published items",
+        "no learner-data write from support-panel toggles"
+      ],
+      "academic_content_changed": false,
+      "readiness_mastery_changed": false
     }
   },
   "handoff_required_fields": [
