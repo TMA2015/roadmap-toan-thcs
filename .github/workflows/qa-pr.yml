@@ -122,6 +122,8 @@ jobs:
         run: mkdocs build --strict
       - name: Validate CĐ25 built display math
         run: node scripts/test-topic25-math-render.js --built
+      - name: Validate built topic navigation
+        run: python scripts/test-topic-roadmap-navigation.py --built
       - name: Browser interaction QA and visual previews
         run: |
           python -m pip install playwright
