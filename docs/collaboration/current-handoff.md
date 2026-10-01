@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Exercise Library owner QA PASS with approved UX follow-up.** Desktop+iPad confirm the paper-first library works as intended. Patch 1 is staged: compact 3-action support row, add library to quick shortcuts, and connect topic “Các dạng bài” to topic-filtered library results. No academic content/Readiness/mastery/G3 change.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library Patch 1 PRODUCTION RELEASED / owner spot-QA pending.** Exact HEAD `8be3c40482dcf48545fa49e27cfccaa1822b8b16` passed Roadmap PR Quality `36841009154`, PR #237 merged as `a80343a5ceba56957af3002f4b128e9fb5545c8e`, and Deploy MkDocs `36841498180` succeeded. Remaining gate: owner checks the compact 3-button row, `7 + 25` shortcut with **Thư viện bài tập**, and topic-filter deep link. No academic/Readiness/mastery/G3 change.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -36,7 +36,13 @@ Approved follow-up:
 
 Task: `MATH-WRITTEN-LIBRARY-UX-PATCH-001`.
 Branch: `fix/written-library-compact-links-shortcut-20261001`.
-Status: **implementation staged / CI pending**.
+Status: **PRODUCTION RELEASED / owner spot-QA pending**.
+
+Release provenance:
+- exact tested HEAD: `8be3c40482dcf48545fa49e27cfccaa1822b8b16`;
+- Roadmap PR Quality `36841009154`: **SUCCESS**;
+- PR #237 merge: `a80343a5ceba56957af3002f4b128e9fb5545c8e`;
+- Deploy MkDocs `36841498180`: **SUCCESS**.
 
 ## Written Exercise Library v1 pilot — PRODUCTION RELEASED; owner QA pending (01/10/2026)
 

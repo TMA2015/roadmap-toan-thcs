@@ -1,5 +1,5 @@
 {
-  "version": "1.0.97",
+  "version": "1.0.98",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Exercise Library pilot content/interaction is owner-accepted on desktop+iPad, with one approved UX/navigation follow-up now staged: compact the three support controls into one horizontal row, add the library to the quick-shortcut modal, and add topic-page 'Các dạng bài' deep links that auto-filter the library by topic when published items exist. This is presentation/navigation only; no academic content, Readiness/mastery credit, or G3 scope change.",
+    "next_priority": "Written Library Patch 1 is PRODUCTION RELEASED after exact-head CI PASS and Deploy MkDocs SUCCESS. Owner spot-QA is the only remaining gate: confirm the 3-button horizontal support row, quick shortcut 7+25 with Thư viện bài tập, and topic 'Các dạng bài' deep link with automatic topic filtering. No academic content, Readiness/mastery, canonical-evidence or G3 scope changed.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -691,7 +691,7 @@
       ]
     },
     "written_library_patch_1": {
-      "status": "IMPLEMENTATION_STAGED_CI_PENDING",
+      "status": "PRODUCTION_RELEASED_OWNER_SPOT_QA_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
       "branch": "fix/written-library-compact-links-shortcut-20261001",
       "scope": [
@@ -701,7 +701,15 @@
         "no learner-data write from support-panel toggles"
       ],
       "academic_content_changed": false,
-      "readiness_mastery_changed": false
+      "readiness_mastery_changed": false,
+      "tested_head": "8be3c40482dcf48545fa49e27cfccaa1822b8b16",
+      "qa_run": 36841009154,
+      "qa_conclusion": "SUCCESS",
+      "implementation_pr": 237,
+      "merge_commit": "a80343a5ceba56957af3002f4b128e9fb5545c8e",
+      "deploy_run": 36841498180,
+      "deploy_conclusion": "SUCCESS",
+      "owner_spot_qa": "PENDING"
     }
   },
   "handoff_required_fields": [
