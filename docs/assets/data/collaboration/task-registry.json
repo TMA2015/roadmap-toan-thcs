@@ -1,5 +1,5 @@
 {
-  "version": "1.0.109",
+  "version": "1.0.112",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.109",
-      "review_verdict": "B2_AND_INTRO_OWNER_PASS_B3_REVIEW_ONLY_NEXT",
-      "review_notes": "B2 owner QA PASS and intro-copy owner QA PASS. Next append-only academic expansion: B3 review-only for CT10/CT11/CT12, two items per topic. Patch 1 deep-link owner spot-check remains independent and non-blocking."
+      "context_version": "1.0.110",
+      "review_verdict": "B3_NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "review_notes": "B3 NotebookLM PASS 6/6 + ARCH_1..ARCH_10 for CT10/11/12. Separate implementation branch stages append-only expansion from 18 to 24 items / 12 topics. No automatic Readiness/mastery credit; no canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -804,6 +804,15 @@
       "context_version": "1.0.109",
       "review_verdict": "OWNER_QA_PASS_CLOSED_DONE",
       "review_notes": "Owner refreshed production and confirmed the durable Written Library intro copy is correct. Stale Pilot v1 / fixed 6-item / fixed topic-list copy is gone. Task closed."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-001",
+      "title": "Expand Written Exercise Library to CĐ10/CĐ11/CĐ12",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "OPEN",
+      "context_version": "1.0.112",
+      "review_verdict": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_AUTHORIZED",
+      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Implementation PR #246 stages append-only expansion to 24 items / 12 topics. Technical QA on exact HEAD 030687f95a6a174b4ae42a54c0d32acbfc728ed1 passed Roadmap PR Quality 36875117900 (duplicate same-head 36875088705 also SUCCESS). Two intermediate failures were technical harness/metadata only: legacy >=4-step assumption was aligned to the design contract with stronger step-quality checks; proposed B3 batch metadata was reconciled to PUBLISHED. Owner explicitly authorized controlled production release on 2026-10-01. Fresh exact-head revalidation required after this checkpoint commit."
     }
   ]
 }

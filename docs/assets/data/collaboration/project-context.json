@@ -1,5 +1,5 @@
 {
-  "version": "1.0.109",
+  "version": "1.0.112",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library intro-copy owner QA PASS and CLOSED. Proceed with Expansion B3 as review-only for CT10/CT11/CT12 (2 items per topic, Core Base + Core Apply), with NotebookLM academic review required before implementation. Patch 1 deep-link owner spot-check remains independent.",
+    "next_priority": "Written Library Expansion B3 has NotebookLM PASS 6/6 + ARCH_1–ARCH_10, technical QA PASS, and owner controlled-release authorization. Re-run exact-head QA after this saved authorization checkpoint; if clean and main has no base drift, merge/deploy PR #246. Patch 1 deep-link owner spot-check remains independent.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -888,6 +888,63 @@
       "deploy_conclusion": "SUCCESS",
       "owner_spot_qa": "PASS",
       "owner_qa_date": "2026-10-01"
+    },
+    "written_library_expansion_b3": {
+      "status": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
+      "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-001",
+      "review_pr": 245,
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
+      "candidate_blob": "4fae4c2535c7ad0ae608935c72030ee924924f5b",
+      "notebooklm_result": "PASS_6_OF_6_ARCH_10_OF_10",
+      "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "topics": [
+        "CT10",
+        "CT11",
+        "CT12"
+      ],
+      "item_ids": [
+        "WX10-FUN-001",
+        "WX10-FUN-002",
+        "WX11-RAD-001",
+        "WX11-RAD-002",
+        "WX12-QUA-001",
+        "WX12-QUA-002"
+      ],
+      "implementation_branch": "feature/written-library-expansion-b3-20261001",
+      "intended_catalog": {
+        "exercise_count": 24,
+        "topic_count": 12,
+        "topics": [
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT14",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT24"
+        ]
+      },
+      "production_release": false,
+      "auto_readiness_credit": false,
+      "canonical_evidence_g3_changed": false,
+      "implementation_pr": 246,
+      "technical_qa": {
+        "exact_tested_head": "030687f95a6a174b4ae42a54c0d32acbfc728ed1",
+        "roadmap_pr_quality_run": 36875117900,
+        "duplicate_same_head_run": 36875088705,
+        "result": "PASS"
+      },
+      "technical_notes": [
+        "Legacy regression required >=4 solution steps although the written-library design contract does not specify a 4-step minimum; harness now accepts >=3 while requiring unique step IDs and non-empty titles/content.",
+        "Proposed B3 batch metadata inside published_scope was reconciled to PUBLISHED; no academic exercise content changed."
+      ],
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-10-01"
     }
   },
   "handoff_required_fields": [
