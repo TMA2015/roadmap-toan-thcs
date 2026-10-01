@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B7 TECHNICAL QA PASS / owner controlled-release authorization pending.** NotebookLM **2/2 + ARCH_1–ARCH_10 PASS**. Implementation PR #255 exact HEAD `b8aa8617212d5435d6e92311f2599e55880c1630` passed Roadmap PR Quality `36898694706`, including **strict MkDocs build** and **browser interaction + visual previews**. Prospective catalog: **44 items / 22 topics**. Production remains unchanged at 42 / 21 until explicit owner authorization, followed by fresh exact-head revalidation before merge/deploy.
+> **CURRENT CHECKPOINT — 02/10/2026, Written Library Expansion B7 owner controlled release AUTHORIZED / exact-head revalidation pending.** NotebookLM **2/2 + ARCH_1–ARCH_10 PASS**. Technical QA on `b8aa8617212d5435d6e92311f2599e55880c1630` / Roadmap PR Quality `36898694706` **SUCCESS**, including strict MkDocs build and browser/visual QA. Owner explicitly authorized controlled production release. Prospective catalog: **44 items / 22 topics**. Fresh exact-head QA is required after this saved authorization checkpoint before merge/deploy.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -23,7 +23,8 @@
 - CT21 boundary: five-card KNTT-Core only; do not promote frequency/tần suất, grouped data, CT22 characteristic measures/THPT-Bridge, or CT25 Entrance10.
 - Self-marking only; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion.
 - Technical QA: exact HEAD `b8aa8617212d5435d6e92311f2599e55880c1630`, Roadmap PR Quality `36898694706` **SUCCESS**; strict MkDocs build PASS; browser interaction + visual previews PASS.
-- Current gate: **explicit owner controlled-production-release authorization**. After authorization is saved, run fresh exact-head QA before merge/deploy.
+- Owner explicitly authorized **controlled production release** on 02/10/2026.
+- Current gate: fresh exact-head QA after this saved authorization checkpoint, then merge/deploy only if clean and `main` has no base drift.
 
 ## Written Library Expansion B6 — CLOSED DONE / owner QA PASS (01/10/2026)
 
