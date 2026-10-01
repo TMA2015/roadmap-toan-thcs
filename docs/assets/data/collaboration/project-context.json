@@ -1,5 +1,5 @@
 {
-  "version": "1.0.93",
+  "version": "1.0.94",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "All inherited owner-device QA debts are CLOSED DONE. Topic navigation/rendering fix is now PRODUCTION RELEASED after exact-head CI PASS and Deploy MkDocs SUCCESS; only owner spot-QA remains for the visible rendering/order change. Written Exercise Library v1 is the next substantive product-completeness initiative after that spot-QA; recommended pilot remains CĐ07/CĐ14/CĐ24 with six paper-first items. Duplicate top stepper vs in-topic quick menu remains non-blocking UX backlog. G3/mastery expansion remains OFF.",
+    "next_priority": "Written Exercise Library v1 pilot is STAGED, NOT PRODUCTION RELEASED: exactly six paper-first items across CĐ07/CĐ14/CĐ24, with JSON source, filters including problem type, stepwise solutions, rubrics, common mistakes, remediation and two geometry SVGs. Academic gate is NotebookLM R1 using source-locked packet MATH-WRITTEN-LIBRARY-PILOT-R1-20261001; do not merge/publish before PASS. Topic navigation fix remains production-released with owner spot-QA pending. G3/mastery expansion remains OFF.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -614,6 +614,31 @@
         "deploy_run": 36822248798,
         "deploy_conclusion": "SUCCESS"
       }
+    },
+    "written_exercise_library_pilot": {
+      "status": "STAGED_AWAITING_NOTEBOOKLM_R1",
+      "task_id": "MATH-WRITTEN-EXERCISE-LIBRARY-001",
+      "branch": "feature/written-exercise-library-pilot-20261001",
+      "item_ids": [
+        "WX07-RAT-001",
+        "WX07-RAT-002",
+        "WX14-TRI-001",
+        "WX14-TRI-002",
+        "WX24-MOD-001",
+        "WX24-MOD-002"
+      ],
+      "topics": [
+        "CT07",
+        "CT14",
+        "CT24"
+      ],
+      "count": 6,
+      "catalog_blob": "bf926501b512a85fc2f0b73786784aa4cbe26f81",
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-PILOT-R1-20261001",
+      "source_packet": "review-packets/written-exercise-library/01_UPLOAD_TO_NOTEBOOKLM_WRITTEN_PILOT_R1.md",
+      "prompt": "review-packets/written-exercise-library/02_COPY_TO_NOTEBOOKLM_WRITTEN_PILOT_R1.txt",
+      "production_released": false,
+      "readiness_credit": false
     }
   },
   "handoff_required_fields": [
