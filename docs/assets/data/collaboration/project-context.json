@@ -1,5 +1,5 @@
 {
-  "version": "1.0.113",
+  "version": "1.0.114",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B3 is PRODUCTION RELEASED after saved authorization checkpoint, fresh exact-head QA PASS, merge and Deploy MkDocs SUCCESS. Owner production QA should confirm 24 items / 12 topics and CT10/CT11/CT12 each expose exactly 2 exercises. Patch 1 deep-link owner spot-check remains independent.",
+    "next_priority": "Written Library B3 owner production QA PASS on iPad and desktop and CLOSED. Proceed with Expansion B4 as review-only for CT13/CT15/CT23, two items per topic (CORE_BASE + CORE_APPLY), with NotebookLM required before implementation. Patch 1 deep-link owner spot-check remains independent.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -890,7 +890,7 @@
       "owner_qa_date": "2026-10-01"
     },
     "written_library_expansion_b3": {
-      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-001",
       "review_pr": 245,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
@@ -951,7 +951,7 @@
       "production_merge": "2a6204c9ee4134471ea678fcc07347439e22faae",
       "deploy_run": 36876967991,
       "deploy_conclusion": "SUCCESS",
-      "owner_production_qa": "PENDING",
+      "owner_production_qa": "PASS_IPAD_DESKTOP",
       "expected_production_catalog": {
         "exercise_count": 24,
         "topic_count": 12,
@@ -969,7 +969,12 @@
           "CT19",
           "CT24"
         ]
-      }
+      },
+      "owner_qa_observed": [
+        "CT10, CT11 and CT12 are present in production",
+        "each B3 topic exposes exactly 2 exercises",
+        "owner checked on both iPad and desktop"
+      ]
     }
   },
   "handoff_required_fields": [
