@@ -1,0 +1,603 @@
+{
+  "schema_version": "1.0.0",
+  "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B2-R1-20261001",
+  "snapshot_date": "2026-10-01",
+  "status": "REVIEW_ONLY_PENDING_NOTEBOOKLM_R1",
+  "production_catalog_unchanged": true,
+  "auto_readiness_credit": false,
+  "self_marking_only": true,
+  "scope": {
+    "topics": [
+      "CT09",
+      "CT16",
+      "CT18"
+    ],
+    "exercise_count": 6,
+    "rule": "2 candidate items per topic: one CORE_BASE and one CORE_APPLY"
+  },
+  "exercises": [
+    {
+      "exercise_id": "WX09-SYS-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT09",
+      "topic_slug": "09-he-phuong-trinh",
+      "topic_title": "Hệ phương trình bậc nhất hai ẩn",
+      "problem_type_id": "system-elimination-check",
+      "problem_type_title": "Giải hệ bằng cộng đại số và kiểm tra nghiệm",
+      "title": "Khử ẩn thuận tiện và kiểm tra trên cả hai phương trình",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "giai-he-cong",
+        "chon-phuong-phap",
+        "kiem-tra-nghiem-he"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Giải hệ phương trình sau bằng phương pháp thuận tiện, rồi kiểm tra nghiệm trong **cả hai** phương trình:\n\n$$\\begin{cases}2x+3y=13\\\\x-3y=2\\end{cases}$$",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Chọn phương pháp",
+          "content_markdown": "Hai hệ số của $y$ là $3$ và $-3$, nên cộng hai phương trình sẽ khử $y$ ngay. Chọn phương pháp cộng đại số."
+        },
+        {
+          "step_id": "S2",
+          "title": "Khử một ẩn",
+          "content_markdown": "Cộng hai phương trình:\n\n$$3x=15\\Rightarrow x=5.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Tìm ẩn còn lại",
+          "content_markdown": "Thay $x=5$ vào $x-3y=2$:\n\n$$5-3y=2\\Rightarrow -3y=-3\\Rightarrow y=1.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra và kết luận",
+          "content_markdown": "Kiểm tra:\n\n$$2\\cdot5+3\\cdot1=13,$$\n\n$$5-3\\cdot1=2.$$\n\nCả hai phương trình đều đúng, nên nghiệm của hệ là\n\n$$(x;y)=(5;1).$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Chọn hợp lý phương pháp cộng đại số vì hệ số của $y$ đối nhau.",
+          "points": 1
+        },
+        {
+          "criterion": "Cộng đúng hai phương trình và tìm được $x=5$.",
+          "points": 1
+        },
+        {
+          "criterion": "Thế đúng để tìm được $y=1$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra trong cả hai phương trình và kết luận $(5;1)$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Cộng vế trái nhưng quên cộng vế phải.",
+        "Khử được một ẩn nhưng dừng lại, chưa tìm ẩn còn lại.",
+        "Chỉ kiểm tra nghiệm trong một phương trình."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ09 – Giải hệ bằng cộng đại số",
+          "href": "../kien-thuc/09-he-phuong-trinh/core/"
+        },
+        {
+          "label": "Practice Room CĐ09",
+          "href": "../kien-thuc/09-he-phuong-trinh/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/09-he-phuong-trinh/bai-tap.md#09-WR-04",
+        "docs/kien-thuc/09-he-phuong-trinh/bai-tap.md#09-WR-06",
+        "docs/kien-thuc/09-he-phuong-trinh/bai-tap.md#09-WR-07",
+        "docs/assets/data/curriculum/topic09-learning-workspace.json#sys09-core-3",
+        "docs/assets/data/curriculum/topic09-learning-workspace.json#sys09-core-4"
+      ],
+      "academic_review": {
+        "status": "PENDING_NOTEBOOKLM_R1"
+      }
+    },
+    {
+      "exercise_id": "WX09-SYS-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT09",
+      "topic_slug": "09-he-phuong-trinh",
+      "topic_title": "Hệ phương trình bậc nhất hai ẩn",
+      "problem_type_id": "system-modelling-two-prices",
+      "problem_type_title": "Lập hệ từ hai dữ kiện giá tiền",
+      "title": "Từ hai hóa đơn đến hệ phương trình",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "lap-he-bai-toan",
+        "giai-he-cong",
+        "kiem-tra-nghiem-he"
+      ],
+      "prerequisites": [
+        "giai-he-cong"
+      ],
+      "estimated_minutes": 14,
+      "problem_markdown": "Tại một cửa hàng, giá mỗi quyển vở và mỗi cây bút là cố định.\n\n- 3 quyển vở và 2 cây bút có giá 44 nghìn đồng.\n- 2 quyển vở và 5 cây bút có giá 66 nghìn đồng.\n\nTìm giá một quyển vở và một cây bút.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Đặt ẩn và điều kiện",
+          "content_markdown": "Gọi $x$ là giá một quyển vở và $y$ là giá một cây bút, đơn vị nghìn đồng. Vì là giá tiền nên $x>0$, $y>0$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Lập hệ",
+          "content_markdown": "Từ hai hóa đơn:\n\n$$\\begin{cases}3x+2y=44\\\\2x+5y=66\\end{cases}.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Khử một ẩn",
+          "content_markdown": "Nhân phương trình đầu với $2$ và phương trình hai với $3$:\n\n$$\\begin{cases}6x+4y=88\\\\6x+15y=198\\end{cases}.$$\n\nLấy phương trình hai trừ phương trình một:\n\n$$11y=110\\Rightarrow y=10.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Tìm ẩn còn lại",
+          "content_markdown": "Thay $y=10$ vào $3x+2y=44$:\n\n$$3x+20=44\\Rightarrow x=8.$$"
+        },
+        {
+          "step_id": "S5",
+          "title": "Đối chiếu và kết luận",
+          "content_markdown": "Ta có $3\\cdot8+2\\cdot10=44$ và $2\\cdot8+5\\cdot10=66$, đồng thời $x,y>0$. Vậy một quyển vở giá **8 nghìn đồng**, một cây bút giá **10 nghìn đồng**."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Đặt hai ẩn, ghi đúng đơn vị và điều kiện dương.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng hệ $3x+2y=44$, $2x+5y=66$.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải đúng hệ và tìm được $y=10$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tìm đúng $x=8$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra hai dữ kiện và kết luận kèm đơn vị.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Đặt ẩn nhưng không ghi đơn vị hoặc điều kiện.",
+        "Ghép sai số lượng vở/bút vào hai phương trình.",
+        "Giải được $x,y$ nhưng không đối chiếu lại hai hóa đơn hoặc không trả lời bằng đơn vị tiền."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ09 – Lập hệ từ bài toán",
+          "href": "../kien-thuc/09-he-phuong-trinh/core/"
+        },
+        {
+          "label": "Practice Room CĐ09",
+          "href": "../kien-thuc/09-he-phuong-trinh/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/09-he-phuong-trinh/bai-tap.md#09-WR-08",
+        "docs/kien-thuc/09-he-phuong-trinh/bai-tap.md#09-WR-10",
+        "docs/assets/data/curriculum/topic09-learning-workspace.json#sys09-core-5"
+      ],
+      "academic_review": {
+        "status": "PENDING_NOTEBOOKLM_R1"
+      }
+    },
+    {
+      "exercise_id": "WX16-QUAD-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT16",
+      "topic_slug": "16-tu-giac",
+      "topic_title": "Tứ giác và các hình đặc biệt",
+      "problem_type_id": "quadrilateral-upgrade-parallelogram-rectangle",
+      "problem_type_title": "Chứng minh hình bình hành rồi nâng cấp thành hình chữ nhật",
+      "title": "Hai dấu hiệu nối tiếp: hình bình hành → hình chữ nhật",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "hbh-dau-hieu",
+        "hcn-dau-hieu"
+      ],
+      "prerequisites": [
+        "tinh-chat-song-song"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Cho tứ giác lồi $ABCD$ có\n\n$$AB\\parallel CD,\\qquad AB=CD,\\qquad \\angle ABC=90^\\circ.$$\n\nChứng minh $ABCD$ là hình chữ nhật.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Nhận ra dấu hiệu hình bình hành",
+          "content_markdown": "Trong tứ giác $ABCD$, $AB$ và $CD$ là một cặp cạnh đối. Theo giả thiết, cặp cạnh đối này vừa song song vừa bằng nhau."
+        },
+        {
+          "step_id": "S2",
+          "title": "Kết luận hình bình hành",
+          "content_markdown": "Tứ giác có một cặp cạnh đối vừa song song vừa bằng nhau là hình bình hành. Do đó $ABCD$ là hình bình hành."
+        },
+        {
+          "step_id": "S3",
+          "title": "Dùng thêm góc vuông",
+          "content_markdown": "Hình bình hành $ABCD$ có $\\angle ABC=90^\\circ$."
+        },
+        {
+          "step_id": "S4",
+          "title": "Nâng cấp kết luận",
+          "content_markdown": "Hình bình hành có một góc vuông là hình chữ nhật. Vậy $ABCD$ là hình chữ nhật."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Xác định $AB$ và $CD$ là hai cạnh đối, vừa song song vừa bằng nhau.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng dấu hiệu để kết luận $ABCD$ là hình bình hành.",
+          "points": 1
+        },
+        {
+          "criterion": "Sử dụng đúng giả thiết $\\angle ABC=90^\\circ$ sau khi đã có hình bình hành.",
+          "points": 1
+        },
+        {
+          "criterion": "Kết luận đúng $ABCD$ là hình chữ nhật.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Kết luận hình chữ nhật ngay từ $AB\\parallel CD$ và $AB=CD$ mà không qua bước hình bình hành.",
+        "Dùng một góc vuông để kết luận tứ giác bất kỳ là hình chữ nhật.",
+        "Nhầm $AB$ và $CD$ là hai cạnh kề."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ16 – Dấu hiệu hình bình hành và hình chữ nhật",
+          "href": "../kien-thuc/16-tu-giac/core/"
+        },
+        {
+          "label": "Practice Room CĐ16",
+          "href": "../kien-thuc/16-tu-giac/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/16-tu-giac/bai-tap.md#16-WR-04",
+        "docs/kien-thuc/16-tu-giac/bai-tap.md#16-WR-05",
+        "docs/assets/data/curriculum/topic16-learning-workspace.json#geo16-core-2",
+        "docs/assets/data/curriculum/topic16-learning-workspace.json#geo16-core-3"
+      ],
+      "academic_review": {
+        "status": "PENDING_NOTEBOOKLM_R1"
+      }
+    },
+    {
+      "exercise_id": "WX16-QUAD-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT16",
+      "topic_slug": "16-tu-giac",
+      "topic_title": "Tứ giác và các hình đặc biệt",
+      "problem_type_id": "quadrilateral-diagonals-square-proof",
+      "problem_type_title": "Chuỗi dấu hiệu từ đường chéo đến hình vuông",
+      "title": "Không suy từ hình: chứng minh từng tầng đến hình vuông",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "hbh-dau-hieu",
+        "hcn-dau-hieu",
+        "hvuong-dau-hieu",
+        "duong-cheo-suy-luan"
+      ],
+      "prerequisites": [
+        "trung-diem",
+        "duong-vuong-goc"
+      ],
+      "estimated_minutes": 15,
+      "problem_markdown": "Cho tứ giác lồi $ABCD$. Hai đường chéo $AC$ và $BD$ cắt nhau tại $O$. Biết\n\n$$OA=OC,\\qquad OB=OD,\\qquad AC=BD,\\qquad AC\\perp BD.$$\n\nChứng minh $ABCD$ là hình vuông.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Chứng minh hình bình hành",
+          "content_markdown": "Từ $OA=OC$, $O$ là trung điểm của $AC$; từ $OB=OD$, $O$ là trung điểm của $BD$. Vậy hai đường chéo của $ABCD$ cắt nhau tại trung điểm mỗi đường, nên $ABCD$ là hình bình hành."
+        },
+        {
+          "step_id": "S2",
+          "title": "Nâng cấp thành hình chữ nhật",
+          "content_markdown": "Ta đã có $ABCD$ là hình bình hành và $AC=BD$. Hình bình hành có hai đường chéo bằng nhau là hình chữ nhật, nên $ABCD$ là hình chữ nhật."
+        },
+        {
+          "step_id": "S3",
+          "title": "Dùng điều kiện vuông góc",
+          "content_markdown": "Theo giả thiết, hai đường chéo $AC$ và $BD$ vuông góc nhau."
+        },
+        {
+          "step_id": "S4",
+          "title": "Nâng cấp thành hình vuông",
+          "content_markdown": "Hình chữ nhật có hai đường chéo vuông góc là hình vuông. Vậy $ABCD$ là hình vuông."
+        },
+        {
+          "step_id": "S5",
+          "title": "Kiểm tra chuỗi suy luận",
+          "content_markdown": "Mỗi lần nâng cấp đều có đủ tiền đề: tứ giác → hình bình hành → hình chữ nhật → hình vuông; không có kết luận nào chỉ dựa vào hình minh họa."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Từ $OA=OC$ và $OB=OD$, kết luận đúng hai đường chéo chia đôi nhau.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng dấu hiệu để suy ra hình bình hành.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng $AC=BD$ để nâng cấp hình bình hành thành hình chữ nhật.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng $AC\\perp BD$ để nâng cấp hình chữ nhật thành hình vuông.",
+          "points": 1
+        },
+        {
+          "criterion": "Trình bày đúng thứ tự và kết luận cuối cùng rõ ràng.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Chỉ thấy hai đường chéo vuông góc rồi kết luận ngay hình vuông.",
+        "Dùng $AC=BD$ cho một tứ giác bất kỳ để kết luận hình chữ nhật khi chưa có tiền đề hình bình hành.",
+        "Bỏ qua bước chứng minh $O$ là trung điểm của cả hai đường chéo."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ16 – Chuỗi dấu hiệu tứ giác đặc biệt",
+          "href": "../kien-thuc/16-tu-giac/core/"
+        },
+        {
+          "label": "Practice Room CĐ16",
+          "href": "../kien-thuc/16-tu-giac/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/16-tu-giac/bai-tap.md#16-WR-03",
+        "docs/kien-thuc/16-tu-giac/bai-tap.md#16-WR-05",
+        "docs/kien-thuc/16-tu-giac/bai-tap.md#16-WR-09",
+        "docs/assets/data/curriculum/topic16-learning-workspace.json#geo16-core-2",
+        "docs/assets/data/curriculum/topic16-learning-workspace.json#geo16-core-3",
+        "docs/assets/data/curriculum/topic16-learning-workspace.json#geo16-core-5"
+      ],
+      "academic_review": {
+        "status": "PENDING_NOTEBOOKLM_R1"
+      }
+    },
+    {
+      "exercise_id": "WX18-TRI-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT18",
+      "topic_slug": "18-he-thuc-luong",
+      "topic_title": "Hệ thức lượng trong tam giác vuông",
+      "problem_type_id": "right-triangle-find-sides-trig",
+      "problem_type_title": "Tìm cạnh bằng sin và cos",
+      "title": "Chọn đúng cạnh đối – kề – huyền trước khi tính",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "sin",
+        "cos",
+        "tim-canh-luong-giac"
+      ],
+      "prerequisites": [
+        "ti-le-doan-thang"
+      ],
+      "estimated_minutes": 9,
+      "problem_markdown": "Cho tam giác $ABC$ vuông tại $A$, có\n\n$$BC=20\\text{ cm},\\qquad \\angle B=30^\\circ.$$\n\nTính chính xác $AC$ và $AB$.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Xác định vai trò các cạnh",
+          "content_markdown": "Vì tam giác vuông tại $A$, $BC$ là cạnh huyền. Với góc $B$, $AC$ là cạnh đối và $AB$ là cạnh kề."
+        },
+        {
+          "step_id": "S2",
+          "title": "Tính cạnh đối bằng sin",
+          "content_markdown": "Ta có\n\n$$\\sin B=\\frac{AC}{BC}.$$\n\nDo $\\sin30^\\circ=\\frac12$:\n\n$$AC=20\\cdot\\frac12=10\\text{ cm}.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Tính cạnh kề bằng cos",
+          "content_markdown": "Ta có\n\n$$\\cos B=\\frac{AB}{BC}.$$\n\nDo $\\cos30^\\circ=\\frac{\\sqrt3}{2}$:\n\n$$AB=20\\cdot\\frac{\\sqrt3}{2}=10\\sqrt3\\text{ cm}.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận",
+          "content_markdown": "Vậy\n\n$$AC=10\\text{ cm},\\qquad AB=10\\sqrt3\\text{ cm}.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Xác định đúng $BC$ là huyền, $AC$ đối và $AB$ kề với góc $B$.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng sin để tính $AC=10$ cm.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng cos để tính $AB=10\\sqrt3$ cm.",
+          "points": 1
+        },
+        {
+          "criterion": "Kết luận đủ hai độ dài với đơn vị.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Nhầm $AB$ là cạnh đối góc $B$.",
+        "Dùng cos để tính cạnh đối hoặc sin để tính cạnh kề mà không đổi tỉ số đúng.",
+        "Đổi $10\\sqrt3$ thành số gần đúng dù đề yêu cầu kết quả chính xác."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ18 – Sin, cos và tìm cạnh",
+          "href": "../kien-thuc/18-he-thuc-luong/core/"
+        },
+        {
+          "label": "Practice Room CĐ18",
+          "href": "../kien-thuc/18-he-thuc-luong/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/18-he-thuc-luong/bai-tap.md#18-WR-04",
+        "docs/kien-thuc/18-he-thuc-luong/bai-tap.md#18-WR-06",
+        "docs/assets/data/curriculum/topic18-learning-workspace.json#geo18-core-2",
+        "docs/assets/data/curriculum/topic18-learning-workspace.json#geo18-core-4"
+      ],
+      "academic_review": {
+        "status": "PENDING_NOTEBOOKLM_R1"
+      }
+    },
+    {
+      "exercise_id": "WX18-TRI-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT18",
+      "topic_slug": "18-he-thuc-luong",
+      "topic_title": "Hệ thức lượng trong tam giác vuông",
+      "problem_type_id": "right-triangle-angle-elevation-height",
+      "problem_type_title": "Góc nâng và chiều cao có tầm mắt",
+      "title": "Tách chênh cao khỏi chiều cao toàn vật",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "goc-nang-ha",
+        "chieu-cao-khoang-cach",
+        "tan",
+        "tim-canh-luong-giac"
+      ],
+      "prerequisites": [
+        "tan"
+      ],
+      "estimated_minutes": 12,
+      "problem_markdown": "Một người đứng trên mặt đất phẳng, cách chân một tháp theo phương ngang $24$ m. Mắt người đó cao $1{,}5$ m so với mặt đất. Góc nâng từ tầm mắt đến đỉnh tháp là $30^\\circ$. Giả sử chân tháp và chân người cùng cao độ, tháp thẳng đứng.\n\nTính chiều cao tháp. Viết kết quả chính xác rồi làm tròn đến $0{,}1$ m.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Xác định tam giác vuông mô hình",
+          "content_markdown": "Khoảng cách ngang từ người đến chân tháp là cạnh kề của góc nâng $30^\\circ$. Cạnh đối là **độ chênh cao từ tầm mắt đến đỉnh tháp**, không phải toàn bộ chiều cao tháp."
+        },
+        {
+          "step_id": "S2",
+          "title": "Dùng tan để tính chênh cao",
+          "content_markdown": "Gọi $h$ là độ chênh cao từ tầm mắt đến đỉnh tháp. Khi đó\n\n$$\\tan30^\\circ=\\frac{h}{24}.$$\n\nSuy ra\n\n$$h=24\\tan30^\\circ=24\\cdot\\frac1{\\sqrt3}=8\\sqrt3\\text{ m}.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Cộng chiều cao tầm mắt",
+          "content_markdown": "Chiều cao tháp là\n\n$$H=1{,}5+8\\sqrt3\\text{ m}.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Làm tròn",
+          "content_markdown": "Vì $8\\sqrt3\\approx13{,}856$, nên\n\n$$H\\approx15{,}356\\text{ m}\\approx15{,}4\\text{ m}.$$"
+        },
+        {
+          "step_id": "S5",
+          "title": "Kết luận",
+          "content_markdown": "Chiều cao tháp là\n\n$$\\boxed{1{,}5+8\\sqrt3\\text{ m}\\approx15{,}4\\text{ m}}.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Mô hình đúng: 24 m là khoảng cách ngang/cạnh kề; cạnh đối là chênh cao từ mắt tới đỉnh.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng $\\tan30^\\circ=h/24$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $h=8\\sqrt3$ m.",
+          "points": 1
+        },
+        {
+          "criterion": "Cộng đúng chiều cao mắt để được $H=1{,}5+8\\sqrt3$ m.",
+          "points": 1
+        },
+        {
+          "criterion": "Làm tròn đúng $H\\approx15{,}4$ m và kết luận kèm đơn vị.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Dùng 24 m như cạnh huyền thay vì khoảng cách ngang.",
+        "Tính được $8\\sqrt3$ m rồi coi đó là toàn bộ chiều cao tháp, quên cộng $1{,}5$ m.",
+        "Đo góc nâng với phương thẳng đứng hoặc làm tròn quá sớm."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ18 – Góc nâng và đo chiều cao",
+          "href": "../kien-thuc/18-he-thuc-luong/core/"
+        },
+        {
+          "label": "Practice Room CĐ18",
+          "href": "../kien-thuc/18-he-thuc-luong/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/18-he-thuc-luong/bai-tap.md#18-WR-08",
+        "docs/kien-thuc/18-he-thuc-luong/bai-tap.md#18-WR-09",
+        "docs/kien-thuc/18-he-thuc-luong/bai-tap.md#18-WR-10",
+        "docs/assets/data/curriculum/topic18-learning-workspace.json#geo18-core-5"
+      ],
+      "academic_review": {
+        "status": "PENDING_NOTEBOOKLM_R1"
+      }
+    }
+  ]
+}
