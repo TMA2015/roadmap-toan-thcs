@@ -1,5 +1,5 @@
 {
-  "version": "1.0.98",
+  "version": "1.0.99",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Patch 1 is PRODUCTION RELEASED after exact-head CI PASS and Deploy MkDocs SUCCESS. Owner spot-QA is the only remaining gate: confirm the 3-button horizontal support row, quick shortcut 7+25 with Thư viện bài tập, and topic 'Các dạng bài' deep link with automatic topic filtering. No academic content, Readiness/mastery, canonical-evidence or G3 scope changed.",
+    "next_priority": "Two independent Written Library gates are active: Patch 1 owner spot-QA has 1/3 PASS (7+25 / Thư viện bài tập confirmed; compact 3-button row and topic deep-link remain), while Expansion B1 has NotebookLM PASS 6/6 + ARCH_1–ARCH_8 and is staged for separate exact-head technical QA. No Readiness/mastery, canonical-evidence or G3 expansion.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -709,7 +709,40 @@
       "merge_commit": "a80343a5ceba56957af3002f4b128e9fb5545c8e",
       "deploy_run": 36841498180,
       "deploy_conclusion": "SUCCESS",
-      "owner_spot_qa": "PENDING"
+      "owner_spot_qa": "PARTIAL_PASS_1_OF_3",
+      "owner_spot_qa_passed": [
+        "quick shortcut shows 7 + 25 and includes Thư viện bài tập"
+      ],
+      "owner_spot_qa_remaining": [
+        "compact horizontal 3-button support row",
+        "topic Các dạng bài deep link auto-filters library"
+      ]
+    },
+    "written_library_expansion_b1": {
+      "status": "NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-001",
+      "review_pr": 239,
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001",
+      "candidate_blob": "afa995465f875acf4cf1cb838df6ddfb885ea206",
+      "notebooklm_result": "PASS_6_OF_6_ARCH_8_OF_8",
+      "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "topics": [
+        "CT08",
+        "CT17",
+        "CT19"
+      ],
+      "item_ids": [
+        "WX08-EQI-001",
+        "WX08-EQI-002",
+        "WX17-SIM-001",
+        "WX17-SIM-002",
+        "WX19-CIR-001",
+        "WX19-CIR-002"
+      ],
+      "implementation_branch": "feature/written-library-expansion-b1-20261001",
+      "production_release": false,
+      "auto_readiness_credit": false,
+      "canonical_evidence_g3_changed": false
     }
   },
   "handoff_required_fields": [
