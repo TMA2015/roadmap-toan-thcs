@@ -16,7 +16,10 @@ ok(Array.isArray(data.exercises)&&data.exercises.length===12,"exact twelve publi
 const expected=[
   "WX07-RAT-001","WX07-RAT-002",
   "WX14-TRI-001","WX14-TRI-002",
-  "WX24-MOD-001","WX24-MOD-002"
+  "WX24-MOD-001","WX24-MOD-002",
+  "WX08-EQI-001","WX08-EQI-002",
+  "WX17-SIM-001","WX17-SIM-002",
+  "WX19-CIR-001","WX19-CIR-002"
 ];
 ok(JSON.stringify(data.exercises.map(x=>x.exercise_id))===JSON.stringify(expected),"exact stable IDs");
 
