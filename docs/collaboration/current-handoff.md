@@ -1,10 +1,35 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library B3 OWNER QA PASS on iPad + desktop / CLOSED; B4 review-only next.** Production remains **24 items / 12 topics**. B3 is closed. Next academic expansion is **B4 review-only: CĐ13 + CĐ15 + CĐ23**, two items per topic (CORE_BASE + CORE_APPLY), with NotebookLM required before implementation. Patch 1 deep-link owner spot-check remains independent and non-blocking.
+> **CURRENT CHECKPOINT — 01/10/2026, SAFE HANDOFF SAVED while owner runs NotebookLM B4.** B3 is **OWNER QA PASS on iPad + desktop / CLOSED**. Production remains **24 items / 12 topics**. B4 is **REVIEW-ONLY / NotebookLM R1 pending** on Draft PR #247, source-locked to review HEAD `fc11593309acc9a4aa6926a7d28b387263cbe6f8`: CĐ13 + CĐ15 + CĐ23, two items each (CORE_BASE + CORE_APPLY). **Do not implement, merge or deploy B4 before NotebookLM result.** Roadmap PR Quality run `36879068239` was still in progress when this checkpoint was saved. Patch 1 deep-link owner spot-check remains independent and non-blocking.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+
+## Written Library Expansion B4 — REVIEW-ONLY / NotebookLM R1 pending (01/10/2026)
+
+- Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B4-001`.
+- Review PR: **#247 Draft** — provenance/review only; **do not merge as implementation**.
+- Review branch: `review/written-library-expansion-b4-r1-20261001`.
+- Base production checkpoint: `28b1561a49ab4d935ba6167aa9d7bf1350fc0788`.
+- Exact review HEAD / source-lock: `fc11593309acc9a4aa6926a7d28b387263cbe6f8`.
+- Candidate blob: `1184135a82b038cd1d03623107ed8cccc33837da`.
+- Packet ID: `MATH-WRITTEN-LIBRARY-EXPANSION-B4-R1-20261001`.
+- Scope — exactly 6 candidates:
+  - CĐ13: `WX13-LIN-001`, `WX13-LIN-002`;
+  - CĐ15: `WX15-CEN-001`, `WX15-CEN-002`;
+  - CĐ23: `WX23-PRO-001`, `WX23-PRO-002`.
+- Design: one `CORE_BASE` + one `CORE_APPLY` per topic.
+- Academic boundaries:
+  - CĐ13: theorem direction, GT/KL, explicit proof grounds; no diagram inference.
+  - CĐ15: centroid ratio; median vs perpendicular bisector; incenter distance-to-side-lines vs circumcenter distance-to-vertices.
+  - CĐ23: **KNTT-Core only**; equal-likelihood check + classical/experimental probability. No complement-event/tree/two-dice/no-replacement extension machinery.
+- NotebookLM source file: `review-packets/written-exercise-library/27_UPLOAD_TO_NOTEBOOKLM_WRITTEN_EXPANSION_B4_R1.md`.
+- NotebookLM prompt: `review-packets/written-exercise-library/28_COPY_TO_NOTEBOOKLM_WRITTEN_EXPANSION_B4_R1.txt`.
+- Production is unchanged: **24 items / 12 topics**.
+- No runtime/UI/deploy change; no automatic Readiness/mastery credit; no canonical-evidence/G3 change.
+- Roadmap PR Quality `36879068239`: **IN PROGRESS at handoff save time**.
+- **Next action:** wait for owner-provided NotebookLM output. Only if it returns complete `6/6` + `ARCH_1–ARCH_10 PASS` + `AUTHORIZATION|CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA`, record a PASS receipt and open a **separate implementation branch/PR from then-current main**.
 
 ## Written Library Expansion B3 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 
