@@ -1,7 +1,7 @@
 {
   "version": 1,
   "schema": "roadmap-collaboration-task-registry-v1",
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "statuses": [
     "OPEN",
     "GEMINI-DRAFT",
@@ -219,10 +219,10 @@
       "id": "C07-MICRO15-001",
       "title": "CĐ07 current 17-item Core micro-practice owner device QA",
       "routing": "OWNER_DESKTOP_IPAD_QA",
-      "status": "OPEN",
-      "context_version": "1.0.90",
-      "review_notes": "The original 15-item pilot scope is obsolete: current CĐ07 baseline is 5 lectures + 17 micro items with 11/11 declared skill opportunities. G2 owner QA exercised CĐ07 Practice/canonical debug, not the full Core micro path, so do not infer Core owner acceptance. Tomorrow/when convenient, spot-check the current CĐ07 /core/ flow on desktop+iPad: cards, lecture/practice modal, sequential hints/collapse, answer recording, MathJax, and no phantom attempts.",
-      "review_verdict": "CURRENT_17_ITEM_BASELINE_CI_PASS_OWNER_CORE_QA_NOT_EXPLICIT"
+      "status": "DONE",
+      "context_version": "1.0.91",
+      "review_notes": "Owner explicitly confirmed CĐ07 desktop/iPad PASS on 2026-10-01, with no observed errors. Acceptance applies to the current 5-card / 17-micro / 11-of-11 declared skill-opportunity Core baseline, not the obsolete 15-item pilot label. G2 Practice/canonical QA remains a separate already-closed gate.",
+      "review_verdict": "OWNER_DESKTOP_IPAD_PASS_CURRENT_17_ITEM_BASELINE_CLOSED_DONE"
     },
     {
       "id": "GOLDEN-TEMPLATE-001",
@@ -674,10 +674,10 @@
       "id": "MATH-CORE03-OWNER-QA-001",
       "title": "Owner real-device QA for deployed CĐ03 standalone Core",
       "routing": "OWNER_DESKTOP_IPAD_QA",
-      "status": "OPEN",
-      "review_verdict": "CI_BROWSER_DEPLOY_PASS_OWNER_UNVERIFIED",
-      "review_notes": "Still a real owner QA debt. Academic R2, CI and deploy are PASS, but no explicit desktop+iPad acceptance has been recorded for the deployed CĐ03 standalone Core. Verify four-step top nav, left-menu Core entry, five cards, lecture/practice modals, MathJax readability, hint/disclosure behavior, no phantom attempts, and legacy learner history persistence.",
-      "context_version": "1.0.90"
+      "status": "DONE",
+      "review_verdict": "OWNER_DESKTOP_IPAD_PASS_CLOSED_DONE",
+      "review_notes": "Owner explicitly confirmed CĐ03 desktop/iPad PASS on 2026-10-01, with no observed errors. This closes the deployed standalone Core owner-device gate that followed academic R2 / CI / deploy PASS. Scope accepted: four-step navigation, five cards, lecture/practice modal flow, MathJax/readability, hint/disclosure interaction, and no observed phantom-attempt/history regression in the owner spot-check.",
+      "context_version": "1.0.91"
     },
     {
       "id": "MATH-CORE02-23-GAP-OWNER-QA-001",

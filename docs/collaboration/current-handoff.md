@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 30/09/2026 END-OF-DAY PAUSE.** Phase G2 **CLOSED DONE**; learner-help disclosure UX **CLOSED DONE** after desktop+iPad owner QA. Baseline is stable. **No G3/mastery/Readiness expansion gate is open.** Tomorrow, clear the four real owner-QA debts (CĐ03 Core, current CĐ07 17-item Core, Grade6 CĐ02 end-to-end journey/Readiness, Batch A remaining CĐ21/24/25) before opening a new large phase.
+> **CURRENT CHECKPOINT — 01/10/2026, owner QA debt reduced to 2.** CĐ03 standalone Core **PASS desktop+iPad, CLOSED DONE**; current CĐ07 17-item Core **PASS desktop+iPad, CLOSED DONE**. G2 and learner-help disclosure UX remain CLOSED DONE. Remaining owner QA: Grade6 CĐ02 end-to-end journey/Readiness and Batch A remaining CĐ21/CĐ24/CĐ25. G3/mastery/Readiness expansion remain OFF.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -21,6 +21,13 @@
 - PR #227 production merge: `fb571ec78cfaf56f82d7dd81b719481dc4296e2b`.
 - Deploy MkDocs run `36719709094`: **SUCCESS**.
 - Owner spot-QA: **PASS on desktop and iPad**. Practice help and Core hint disclosure behavior matches the approved UX rule. Task `MATH-HELP-DISCLOSURE-TOGGLE-001` is CLOSED DONE.
+
+## Owner QA cleanup — CĐ03 + CĐ07 PASS (01/10/2026)
+
+- **CĐ03 standalone Core:** owner confirmed **PASS on desktop and iPad**, no observed errors. Task `MATH-CORE03-OWNER-QA-001` → **DONE**.
+- **CĐ07 current Core:** owner confirmed **PASS on desktop and iPad**, no observed errors. Acceptance is for the current **5 cards + 17 micro / 11/11 declared skill opportunities** baseline. Task `C07-MICRO15-001` → **DONE**; the old “15-item pilot” scope is no longer used.
+- These device acceptances do not alter academic/evidence semantics and do not reopen G2.
+- **Owner QA still open:** `G6-T02-OWNER-UX-001` (Grade6 CĐ02 full journey/Readiness) and `MATH-UI-BATCH-A-OWNER-QA-001` (remaining CĐ21/CĐ24/CĐ25).
 
 ## End-of-day housekeeping — project paused on stable baseline (30/09/2026)
 
