@@ -7,7 +7,7 @@ Packet ID: `MATH-WRITTEN-LIBRARY-PILOT-R1-20261001`
 Review **only** the material in this packet.
 
 - Branch: `feature/written-exercise-library-pilot-20261001`
-- Exact packet build HEAD: `07312ab8031f78506210c3f8484f5e33760afa1c`
+- Exact academic source snapshot HEAD: `a1424e5adde58f232011a2ae196add4764e9d3eb`
 - Catalog: `docs/assets/data/written-exercises/written-exercise-library-v1.json`
   - blob: `bf926501b512a85fc2f0b73786784aa4cbe26f81`
 - Design contract: `docs/collaboration/written-exercise-library-v1.md`
@@ -15,7 +15,7 @@ Review **only** the material in this packet.
 - Geometry figure WX14-TRI-001:
   - blob: `090e6bf912b9e074694abb76ae25f9c066641c5d`
 - Geometry figure WX14-TRI-002:
-  - blob: `37ac3adbcbca6ebde2e1500013e7d9ad8f699faa`
+  - blob: `d244678ccfa39a41687fba720b35452a866ae7d8`
 
 ## Scope
 
@@ -887,11 +887,11 @@ No account/profile/cloud dependency is required.
   .note{font:13px system-ui,sans-serif;fill:#455a64}
 </style>
 <path class="s" d="M180 28 L55 218 L305 218 Z"/>
-<path class="cross" d="M55 218 L242 123"/><path class="cross" d="M305 218 L118 123"/>
+<path class="cross" d="M55 218 L233 108"/><path class="cross" d="M305 218 L127 108"/>
 <circle class="pt" cx="180" cy="28" r="3.2"/><circle class="pt" cx="55" cy="218" r="3.2"/><circle class="pt" cx="305" cy="218" r="3.2"/>
-<circle class="pt" cx="118" cy="123" r="3.2"/><circle class="pt" cx="242" cy="123" r="3.2"/>
+<circle class="pt" cx="127" cy="108" r="3.2"/><circle class="pt" cx="233" cy="108" r="3.2"/>
 <text class="lbl" x="174" y="18">A</text><text class="lbl" x="40" y="239">B</text><text class="lbl" x="309" y="239">C</text>
-<text class="lbl" x="101" y="120">D</text><text class="lbl" x="247" y="120">E</text>
+<text class="lbl" x="110" y="104">D</text><text class="lbl" x="238" y="104">E</text>
 <text class="note" x="15" y="28">AB = AC</text><text class="note" x="15" y="47">AD = AE</text>
 </svg>
 ```
