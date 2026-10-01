@@ -59,6 +59,9 @@ with sync_playwright() as p:
         assert after == before, (device, "help panels do not write progress")
 
         topic = page.locator('select[aria-label="Lọc theo chuyên đề"]')
+        topic_values = topic.locator("option").evaluate_all("(nodes) => nodes.map(n => n.value)")
+        numeric_topics = [value for value in topic_values if value != "all"]
+        assert numeric_topics == sorted(numeric_topics, key=lambda value: int(value.replace("CT", ""))), (device, "topic filter is numerically ascending")
         topic.select_option("CT14")
         assert cards.count() == 2, (device, "CT14 filter")
         assert page.locator(".written-exercise-card#wx14-tri-002").count() == 1

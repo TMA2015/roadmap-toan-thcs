@@ -100,7 +100,8 @@
 
     const topicSelect=document.createElement("select");topicSelect.className="written-library-select";topicSelect.setAttribute("aria-label","Lọc theo chuyên đề");
     const topicMap=new Map(data.exercises.map(x=>[x.topic_id,`${x.topic_id.replace("CT","CĐ")} · ${x.topic_title}`]));
-    [["all","Tất cả chuyên đề"],...[...topicMap.entries()]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;topicSelect.appendChild(o);});
+    const topicOptions=[...topicMap.entries()].sort(([a],[b])=>Number(a.replace(/\D/g,""))-Number(b.replace(/\D/g,"")));
+    [["all","Tất cả chuyên đề"],...topicOptions].forEach(([v,t])=>{const o=el("option","",t);o.value=v;topicSelect.appendChild(o);});
 
     const typeSelect=document.createElement("select");typeSelect.className="written-library-select";typeSelect.setAttribute("aria-label","Lọc theo dạng bài");
     const typeMap=new Map(data.exercises.map(x=>[x.problem_type_id,x.problem_type_title]));
