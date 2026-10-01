@@ -9,17 +9,81 @@
   const typeset=root=>{
     if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([root]).catch(()=>{});
   };
-  const init=async()=>{
+
+  let catalogPromise=null;
+  const loadCatalog=()=>{
+    if(catalogPromise)return catalogPromise;
+    catalogPromise=fetch(base()+"assets/data/written-exercises/written-exercise-library-v1.json",{cache:"no-cache"})
+      .then(res=>{if(!res.ok)throw Error("HTTP "+res.status);return res.json();})
+      .then(data=>{if(!Array.isArray(data.exercises)||!data.exercises.length)throw Error("catalog invalid");return data;});
+    return catalogPromise;
+  };
+
+  const makeHelpPanel=(card,x)=>{
+    const wrap=el("div","written-help");
+    const actions=el("div","written-help-actions");
+    actions.setAttribute("role","group");
+    actions.setAttribute("aria-label","Hỗ trợ cho "+x.exercise_id);
+    const panels=el("div","written-help-panels");
+
+    const defs=[
+      ["solution","Hướng dẫn",()=>{
+        const body=el("div","written-disclosure-body");
+        x.solution_steps.forEach((s,i)=>{
+          const step=el("section","written-solution-step");
+          step.appendChild(el("h3","",`Bước ${i+1} · ${s.title}`));
+          const rich=el("div","written-rich");renderRich(rich,s.content_markdown);step.appendChild(rich);body.appendChild(step);
+        });
+        return body;
+      }],
+      ["rubric",`Rubric · ${x.rubric_total}đ`,()=>{
+        const body=el("div","written-disclosure-body");
+        const table=document.createElement("table");table.className="written-rubric-table";
+        const thead=document.createElement("thead"),hr=document.createElement("tr");
+        ["Tiêu chí","Điểm"].forEach(t=>hr.appendChild(el("th","",t)));thead.appendChild(hr);
+        const tbody=document.createElement("tbody");
+        x.rubric.forEach(r=>{
+          const tr=document.createElement("tr"),td=document.createElement("td");
+          renderRich(td,r.criterion);tr.append(td,el("td","",String(r.points)));tbody.appendChild(tr);
+        });
+        table.append(thead,tbody);body.appendChild(table);return body;
+      }],
+      ["mistakes","Lỗi thường gặp",()=>{
+        const body=el("div","written-disclosure-body written-mistakes-body");
+        const ul=document.createElement("ul");
+        x.common_mistakes.forEach(m=>{const li=document.createElement("li");renderRich(li,m);ul.appendChild(li);});
+        body.appendChild(ul);return body;
+      }]
+    ];
+
+    defs.forEach(([key,label,build])=>{
+      const id=`${x.exercise_id.toLowerCase()}-${key}`;
+      const button=el("button","written-help-action",label);
+      button.type="button";
+      button.dataset.helpTarget=key;
+      button.setAttribute("aria-expanded","false");
+      button.setAttribute("aria-controls",id);
+      const panel=el("section","written-help-panel");
+      panel.id=id;panel.dataset.helpPanel=key;panel.hidden=true;panel.appendChild(build());
+      button.addEventListener("click",()=>{
+        const opening=panel.hidden;
+        panel.hidden=!opening;
+        button.setAttribute("aria-expanded",opening?"true":"false");
+        button.classList.toggle("is-active",opening);
+        if(opening)typeset(panel);
+      });
+      actions.appendChild(button);panels.appendChild(panel);
+    });
+    wrap.append(actions,panels);return wrap;
+  };
+
+  const initLibrary=async()=>{
     const root=document.querySelector("[data-written-exercise-library]");
     if(!root||root.dataset.ready==="1"||root.dataset.ready==="loading")return;
     root.dataset.ready="loading";
     let data;
-    try{
-      const res=await fetch(base()+"assets/data/written-exercises/written-exercise-library-v1.json",{cache:"no-cache"});
-      if(!res.ok)throw Error("HTTP "+res.status);
-      data=await res.json();
-      if(!Array.isArray(data.exercises)||data.exercises.length!==6)throw Error("pilot catalog invalid");
-    }catch(err){
+    try{data=await loadCatalog();}
+    catch(err){
       root.dataset.ready="failed";
       root.replaceChildren(el("p","written-library-error","Không tải được thư viện bài tập. Hãy thử tải lại trang."));
       return;
@@ -33,24 +97,24 @@
     const controls=el("div","written-library-controls");
     const search=el("input","written-library-search");
     search.type="search";search.placeholder="Tìm theo dạng bài, kỹ năng hoặc ID…";search.setAttribute("aria-label","Tìm bài tự luận");
+
     const topicSelect=document.createElement("select");topicSelect.className="written-library-select";topicSelect.setAttribute("aria-label","Lọc theo chuyên đề");
-    [["all","Tất cả chuyên đề"],["CT07","CĐ07 · Phân thức đại số"],["CT14","CĐ14 · Tam giác"],["CT24","CĐ24 · Bài toán thực tế"]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;topicSelect.appendChild(o);});
+    const topicMap=new Map(data.exercises.map(x=>[x.topic_id,`${x.topic_id.replace("CT","CĐ")} · ${x.topic_title}`]));
+    [["all","Tất cả chuyên đề"],...[...topicMap.entries()]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;topicSelect.appendChild(o);});
+
     const typeSelect=document.createElement("select");typeSelect.className="written-library-select";typeSelect.setAttribute("aria-label","Lọc theo dạng bài");
     const typeMap=new Map(data.exercises.map(x=>[x.problem_type_id,x.problem_type_title]));
     [["all","Tất cả dạng bài"],...[...typeMap.entries()]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;typeSelect.appendChild(o);});
+
     const levelSelect=document.createElement("select");levelSelect.className="written-library-select";levelSelect.setAttribute("aria-label","Lọc theo mức");
     [["all","Tất cả mức"],["CORE_BASE","Core Base"],["CORE_APPLY","Core Apply"]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;levelSelect.appendChild(o);});
+
     if([...topicSelect.options].some(o=>o.value===topic))topicSelect.value=topic;else topic="all";
     if([...typeSelect.options].some(o=>o.value===type))typeSelect.value=type;else type="all";
     if([...levelSelect.options].some(o=>o.value===level))levelSelect.value=level;else level="all";
     controls.append(search,topicSelect,typeSelect,levelSelect);
     const count=el("p","written-library-count");
     const results=el("div","written-library-results");
-
-    const makeDetails=(label,cls)=>{
-      const d=document.createElement("details");d.className=cls;
-      const s=document.createElement("summary");s.textContent=label;d.appendChild(s);return d;
-    };
 
     const render=()=>{
       results.replaceChildren();
@@ -61,54 +125,31 @@
         (level==="all"||x.level===level)&&
         [x.exercise_id,x.title,x.problem_type_title,...x.skills].join(" ").toLowerCase().includes(q)
       );
-      count.textContent=`${list.length} bài đang hiển thị · Pilot hiện có ${data.exercises.length} bài.`;
-      if(!list.length){results.appendChild(el("p","","Không có bài phù hợp với bộ lọc hiện tại."));return;}
+      count.textContent=`${list.length} bài đang hiển thị · Thư viện hiện có ${data.exercises.length} bài.`;
+      if(!list.length){results.appendChild(el("p","","Chưa có bài mẫu phù hợp với bộ lọc hiện tại."));return;}
+
       for(const x of list){
         const card=el("article","written-exercise-card");card.id=x.exercise_id.toLowerCase();
         const top=el("div","written-exercise-head");
         const meta=el("div","written-exercise-meta");
         [x.exercise_id,x.topic_id,x.learning_layer,x.level,`${x.estimated_minutes} phút`].forEach(t=>meta.appendChild(el("span","written-chip",t)));
-        const h=el("h2","",x.title);
-        const type=el("p","written-exercise-type",x.problem_type_title);
-        top.append(meta,h,type);
+        top.append(meta,el("h2","",x.title),el("p","written-exercise-type",x.problem_type_title));
 
         const prompt=el("div","written-exercise-problem");
         prompt.appendChild(el("div","written-exercise-kicker","ĐỀ BÀI"));
         const rich=el("div","written-rich");renderRich(rich,x.problem_markdown);prompt.appendChild(rich);
-
         if(x.figure_uri){
           const fig=document.createElement("figure");fig.className="written-exercise-figure";
           const img=document.createElement("img");img.src=base()+x.figure_uri.replace(/^\.\.\//,"");img.alt=x.figure_alt||"";img.loading="lazy";
-          const cap=el("figcaption","","Hình minh họa theo giả thiết; không dùng hình để suy thêm dữ kiện.");
-          fig.append(img,cap);prompt.appendChild(fig);
+          fig.append(img,el("figcaption","","Hình minh họa theo giả thiết; không dùng hình để suy thêm dữ kiện."));prompt.appendChild(fig);
         }
 
         const reminder=el("p","written-paper-reminder","✍️ Tự giải trên giấy trước khi mở hướng dẫn.");
-
-        const solution=makeDetails("Hướng dẫn giải từng bước","written-disclosure written-solution");
-        const solBody=el("div","written-disclosure-body");
-        x.solution_steps.forEach((s,i)=>{
-          const step=el("section","written-solution-step");
-          step.appendChild(el("h3","",`Bước ${i+1} · ${s.title}`));
-          const body=el("div","written-rich");renderRich(body,s.content_markdown);step.appendChild(body);solBody.appendChild(step);
-        });
-        solution.appendChild(solBody);
-
-        const rubric=makeDetails(`Rubric tự chấm · ${x.rubric_total} điểm`,"written-disclosure written-rubric");
-        const rubBody=el("div","written-disclosure-body");
-        const table=document.createElement("table");table.className="written-rubric-table";
-        const thead=document.createElement("thead");const hr=document.createElement("tr");["Tiêu chí","Điểm"].forEach(t=>hr.appendChild(el("th","",t)));thead.appendChild(hr);
-        const tbody=document.createElement("tbody");
-        x.rubric.forEach(r=>{const tr=document.createElement("tr");const td=document.createElement("td");renderRich(td,r.criterion);tr.append(td,el("td","",String(r.points)));tbody.appendChild(tr);});
-        table.append(thead,tbody);rubBody.appendChild(table);rubric.appendChild(rubBody);
-
-        const mistakes=makeDetails("Lỗi thường gặp","written-disclosure written-mistakes");
-        const ul=document.createElement("ul");x.common_mistakes.forEach(m=>{const li=document.createElement("li");renderRich(li,m);ul.appendChild(li);});mistakes.appendChild(ul);
-
+        const help=makeHelpPanel(card,x);
         const links=el("div","written-exercise-links");
         x.remediation_links.forEach(l=>{const a=el("a","",l.label+" →");a.href=base()+l.href.replace(/^\.\.\//,"");links.appendChild(a);});
 
-        card.append(top,prompt,reminder,solution,rubric,mistakes,links);results.appendChild(card);
+        card.append(top,prompt,reminder,help,links);results.appendChild(card);
       }
       typeset(results);
     };
@@ -120,6 +161,26 @@
     shell.append(intro,controls,count,results);
     root.replaceChildren(shell);root.dataset.ready="1";render();
   };
+
+  const initTopicLibraryLink=async()=>{
+    const match=location.pathname.match(/\/kien-thuc\/(\d{2})-[^/]+\/$/);
+    if(!match)return;
+    const content=document.querySelector(".md-content__inner");
+    if(!content||content.querySelector("[data-written-topic-link]"))return;
+    const heading=[...content.querySelectorAll("h2")].find(h=>/Các dạng bài/i.test(h.textContent||""));
+    if(!heading)return;
+    let data;
+    try{data=await loadCatalog();}catch(err){return;}
+    const topicId="CT"+match[1];
+    const items=data.exercises.filter(x=>x.topic_id===topicId);
+    if(!items.length)return;
+    const a=el("a","written-topic-library-link",`📚 Xem ${items.length} bài mẫu tự luận ${topicId.replace("CT","CĐ")} →`);
+    a.dataset.writtenTopicLink="1";
+    a.href=base()+"luyen-tap/?topic="+encodeURIComponent(topicId);
+    heading.insertAdjacentElement("afterend",a);
+  };
+
+  const init=()=>{initLibrary();initTopicLibraryLink();};
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
   if(typeof document$!=="undefined")document$.subscribe(init);
 })();
