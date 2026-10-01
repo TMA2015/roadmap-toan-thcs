@@ -1,12 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B3 NotebookLM PASS / technical implementation staged.** B3: 6/6 items PASS + ARCH_1–ARCH_10 PASS for CĐ10/CĐ11/CĐ12; separate implementation branch stages append-only expansion from **18 → 24 items / 9 → 12 topics**. No Readiness/mastery/canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B3 OWNER CONTROLLED RELEASE AUTHORIZED; saved checkpoint before release; exact-head revalidation pending.** NotebookLM **6/6 + ARCH_1–ARCH_10 PASS**. Technical QA on `030687f95a6a174b4ae42a54c0d32acbfc728ed1` / run `36875117900` **SUCCESS** (duplicate same-head run `36875088705` also SUCCESS). Two intermediate failures were harness/metadata only and did not change reviewed academic content. Owner explicitly authorized controlled production release. Intended catalog: **24 items / 12 topics**. No Readiness/mastery/canonical-evidence/G3 expansion. Patch 1 deep-link owner spot-check remains independent.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Written Library Expansion B3 — NotebookLM PASS / technical implementation staged (01/10/2026)
+## Written Library Expansion B3 — controlled release authorized / saved checkpoint (01/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B3-001`.
 - Academic packet: `MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001`.
@@ -22,7 +22,10 @@
 - Implementation PR: #246 (Draft).
 - Intended catalog after append: **24 items / 12 topics**, preserving all 18 currently published IDs.
 - Self-marking only; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion.
-- Current gate: exact-head technical CI/browser QA on PR #246 before any merge/deploy.
+- Technical QA: exact HEAD `030687f95a6a174b4ae42a54c0d32acbfc728ed1`, Roadmap PR Quality `36875117900` **SUCCESS**; duplicate same-head run `36875088705` also **SUCCESS**.
+- Intermediate technical fixes only: relaxed unsupported `>=4` solution-step harness assumption to `>=3` with stronger step integrity checks; reconciled proposed B3 batch metadata to `PUBLISHED`. **No reviewed academic content changed.**
+- Owner explicitly authorized **controlled production release** on 01/10/2026.
+- Current gate: fresh exact-head QA after this authorization checkpoint, then merge/deploy if clean and `main` has no base drift.
 
 ## Written Library intro-copy refresh — PRODUCTION RELEASED (01/10/2026)
 
