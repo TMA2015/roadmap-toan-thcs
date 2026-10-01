@@ -1,5 +1,5 @@
 {
-  "version": "1.0.124",
+  "version": "1.0.125",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -837,9 +837,9 @@
       "title": "Expand Written Exercise Library to CĐ02/CĐ03/CĐ20",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
       "status": "OPEN",
-      "context_version": "1.0.124",
-      "review_verdict": "NOTEBOOKLM_PASS_6_OF_6_ARCH_10_OF_10_TECHNICAL_IMPLEMENTATION_STAGED",
-      "review_notes": "NotebookLM academic R1 PASS for WX02-NUM-001/002, WX03-RAT-001/002, WX20-GEO-001/002. Authorization is limited to separate technical implementation/QA. Append-only catalog expansion to 42 items / 21 topics; CT02 remains grade-6 Core journey; CT20 remains Core measurement/solid geometry; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
+      "context_version": "1.0.125",
+      "review_verdict": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_AUTHORIZED",
+      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Implementation PR #252 exact-head technical QA on 39b2bd2b1cf260a7a57cc695eee898b1e9cdd5c7 passed Roadmap PR Quality 36890766907. Earlier run 36890557226 failed only because the regression assertion for WX03-RAT-001 searched for shortened result strings instead of the approved fuller derivation; assertion fixed with no academic-content change. Owner explicitly authorized controlled production release on 2026-10-01. Intended append-only production state: 42 items / 21 topics. CT02 remains grade-6 Core journey; CT20 remains Core measurement/solid geometry. No automatic Readiness/mastery credit; no canonical-evidence/G3 expansion. Fresh exact-head revalidation required after this authorization checkpoint."
     }
   ]
 }
