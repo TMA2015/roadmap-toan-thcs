@@ -361,12 +361,8 @@ Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi họ
 
 ## ➡️ Tiếp tục học
 
-<div class="topic-workspace-actions" markdown>
-
 [🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
 
 [✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
 
 [→ 09 – Hệ phương trình bậc nhất hai ẩn](../09-he-phuong-trinh/index.md){ .md-button }
-
-</div>
