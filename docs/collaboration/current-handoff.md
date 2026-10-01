@@ -19,9 +19,10 @@
   - CĐ11: `WX11-RAD-001`, `WX11-RAD-002`;
   - CĐ12: `WX12-QUA-001`, `WX12-QUA-002`.
 - Implementation branch: `feature/written-library-expansion-b3-20261001`.
+- Implementation PR: #246 (Draft).
 - Intended catalog after append: **24 items / 12 topics**, preserving all 18 currently published IDs.
 - Self-marking only; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion.
-- Current gate: exact-head technical CI/browser QA before any merge/deploy.
+- Current gate: exact-head technical CI/browser QA on PR #246 before any merge/deploy.
 
 ## Written Library intro-copy refresh — PRODUCTION RELEASED (01/10/2026)
 
