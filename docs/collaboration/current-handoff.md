@@ -1,10 +1,33 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library B5 OWNER QA PASS on iPad + desktop / CLOSED; B6 review-only next.** Production remains **36 items / 18 topics**. B5 is closed. Next academic expansion is **B6 review-only: CĐ02 + CĐ03 + CĐ20**, two items per topic (CORE_BASE + CORE_APPLY), with NotebookLM required before implementation. **CĐ01 is roadmap-only; CĐ22 remains THPT-Bridge; CĐ25 remains Entrance10 with separate anchor/source handling.**
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B6 owner controlled release AUTHORIZED; exact-head revalidation pending after saved authorization checkpoint.** NotebookLM **6/6 + ARCH_1–ARCH_10 PASS**. Technical QA on `39b2bd2b1cf260a7a57cc695eee898b1e9cdd5c7` / run `36890766907` **SUCCESS**. Earlier run `36890557226` failed only on a test-string assertion for WX03-RAT-001; assertion aligned to approved content with **no academic change**. Owner explicitly authorized controlled production release. Intended catalog: **42 items / 21 topics**. No Readiness/mastery/canonical-evidence/G3 expansion.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+
+## Written Library Expansion B6 — controlled release authorized / saved checkpoint (01/10/2026)
+
+- Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B6-001`.
+- Academic packet: `MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001`.
+- Review PR: #251 (provenance/review only; do not merge as implementation).
+- Review exact HEAD: `a0d7b879a8e01da0bd5f1bf07dd6336d0e2dd8ad`.
+- Review preflight: Roadmap PR Quality `36889335146` **SUCCESS**.
+- NotebookLM result supplied by owner: **OVERALL PASS; 6/6 items PASS; 0 revisions; ARCH_1–ARCH_10 PASS**.
+- Authorization: `CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA`.
+- Approved candidates:
+  - CĐ02: `WX02-NUM-001`, `WX02-NUM-002`;
+  - CĐ03: `WX03-RAT-001`, `WX03-RAT-002`;
+  - CĐ20: `WX20-GEO-001`, `WX20-GEO-002`.
+- Implementation branch: `feature/written-library-expansion-b6-20261001`.
+- Intended catalog after append: **42 items / 21 topics**, preserving all 36 currently published IDs.
+- CĐ02 remains the **grade-6 Core journey**; no cross-grade completion claim.
+- CĐ20 remains **Core measurement/solid geometry**; no Entrance10 proof-chain promotion.
+- Self-marking only; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion.
+- Technical QA: exact HEAD `39b2bd2b1cf260a7a57cc695eee898b1e9cdd5c7`, Roadmap PR Quality `36890766907` **SUCCESS**.
+- Earlier run `36890557226` failed only on a regression string assertion for `WX03-RAT-001`; test assertion fixed, **no academic content changed**.
+- Owner explicitly authorized **controlled production release** on 01/10/2026.
+- Current gate: fresh exact-head QA after this authorization checkpoint, then merge/deploy if clean and `main` has no base drift.
 
 ## Written Library Expansion B5 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 

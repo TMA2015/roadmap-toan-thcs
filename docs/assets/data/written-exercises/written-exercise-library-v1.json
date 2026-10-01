@@ -3553,6 +3553,558 @@
         "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001",
         "receipt": "review-packets/written-exercise-library/36_NOTEBOOKLM_EXPANSION_B5_R1_PASS_RECEIPT.md"
       }
+    },
+    {
+      "exercise_id": "WX02-NUM-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT02",
+      "topic_slug": "02-so-va-phep-tinh",
+      "topic_title": "Số và phép tính",
+      "problem_type_id": "gcd-max-equal-groups",
+      "problem_type_title": "Chọn ƯCLN cho bài toán chia nhiều nhóm nhất",
+      "title": "Nhiều phần quà giống nhau nhất: vì sao phải dùng ƯCLN?",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        6
+      ],
+      "skills": [
+        "ucln",
+        "phan-tich-thua-so-nguyen-to"
+      ],
+      "prerequisites": [
+        "thu-tu-phep-tinh"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Có $36$ bút và $48$ quyển vở. Muốn chia thành **nhiều phần quà giống nhau nhất**, dùng hết cả hai loại.\n\n1. Giải thích vì sao số phần quà phải là ước chung của $36$ và $48$.\n2. Tìm số phần quà nhiều nhất.\n3. Tính số bút và số vở trong mỗi phần quà.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Chuyển điều kiện thực tế thành điều kiện chia hết",
+          "content_markdown": "Nếu chia thành $n$ phần quà giống nhau và dùng hết, thì $36$ và $48$ đều phải chia hết cho $n$. Vì vậy $n$ là một **ước chung** của $36$ và $48$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Chọn công cụ phù hợp",
+          "content_markdown": "Đề yêu cầu **nhiều phần quà nhất**, nên ta cần ước chung lớn nhất:\n\n$$n=\\operatorname{ƯCLN}(36,48).$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Tính ƯCLN",
+          "content_markdown": "Phân tích:\n\n$$36=2^2\\cdot3^2,\\qquad48=2^4\\cdot3.$$\n\nSuy ra\n\n$$\\operatorname{ƯCLN}(36,48)=2^2\\cdot3=12.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Tính mỗi phần quà",
+          "content_markdown": "Có $12$ phần quà. Mỗi phần có\n\n$$36:12=3\\text{ bút},\\qquad48:12=4\\text{ vở}.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Giải thích được số phần quà phải là ước chung.",
+          "points": 1
+        },
+        {
+          "criterion": "Chọn đúng ƯCLN vì cần số nhóm lớn nhất.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $\\operatorname{ƯCLN}(36,48)=12$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kết luận đúng mỗi phần có 3 bút và 4 vở.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Dùng BCNN thay vì ƯCLN.",
+        "Tìm được 12 nhưng không giải thích vì sao đó là số nhóm lớn nhất.",
+        "Chia ngược số nhóm cho số đồ vật."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ02 – ƯCLN và BCNN",
+          "href": "../kien-thuc/02-so-va-phep-tinh/core/"
+        },
+        {
+          "label": "Practice Room CĐ02",
+          "href": "../kien-thuc/02-so-va-phep-tinh/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/02-so-va-phep-tinh/bai-tap.md#02-G6-WR-02",
+        "docs/assets/data/curriculum/topic02-learning-workspace.json#num02-g6-core-2"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/42_NOTEBOOKLM_EXPANSION_B6_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX02-NUM-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT02",
+      "topic_slug": "02-so-va-phep-tinh",
+      "topic_title": "Số và phép tính",
+      "problem_type_id": "percentage-discount-two-step",
+      "problem_type_title": "Phần trăm: phân biệt số tiền giảm và giá phải trả",
+      "title": "Giảm 15%: tính đúng đại lượng ở từng bước",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        6
+      ],
+      "skills": [
+        "phan-tram",
+        "so-huu-ti-thap-phan"
+      ],
+      "prerequisites": [
+        "phep-tinh-phan-so"
+      ],
+      "estimated_minutes": 9,
+      "problem_markdown": "Một món hàng có giá niêm yết $800\\,000$ đồng và được giảm $15\\%$ giá ban đầu.\n\n1. Tính số tiền được giảm.\n2. Tính số tiền phải trả.\n3. Kiểm tra kết quả bằng cách tính trực tiếp $85\\%$ của giá ban đầu.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Tính số tiền giảm",
+          "content_markdown": "Ta có\n\n$$15\\%=\\frac{15}{100}=0{,}15.$$\n\nSố tiền giảm là\n\n$$800\\,000\\cdot0{,}15=120\\,000\\text{ đồng}.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Tính giá phải trả",
+          "content_markdown": "Giá phải trả là\n\n$$800\\,000-120\\,000=680\\,000\\text{ đồng}.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Kiểm tra bằng phần còn lại",
+          "content_markdown": "Sau khi giảm $15\\%$, giá còn $85\\%$ giá ban đầu:\n\n$$800\\,000\\cdot0{,}85=680\\,000\\text{ đồng}.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận",
+          "content_markdown": "Vậy số tiền giảm là $120\\,000$ đồng và số tiền phải trả là $680\\,000$ đồng."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Đổi đúng $15\\%$ về $0{,}15$ hoặc $15/100$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng số tiền giảm $120\\,000$ đồng.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng giá phải trả $680\\,000$ đồng.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra đúng bằng $85\\%$ của giá ban đầu.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Coi $120\\,000$ đồng là giá phải trả.",
+        "Lấy 15% của một giá khác thay vì giá ban đầu.",
+        "Trừ 15 trực tiếp khỏi 800 000 thay vì dùng tỉ lệ phần trăm."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ02 – Phần trăm",
+          "href": "../kien-thuc/02-so-va-phep-tinh/core/"
+        },
+        {
+          "label": "Practice Room CĐ02",
+          "href": "../kien-thuc/02-so-va-phep-tinh/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/02-so-va-phep-tinh/bai-tap.md#02-G6-WR-04",
+        "docs/assets/data/curriculum/topic02-learning-workspace.json#num02-g6-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/42_NOTEBOOKLM_EXPANSION_B6_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX03-RAT-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT03",
+      "topic_slug": "03-ti-le-ti-le-thuc",
+      "topic_title": "Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ",
+      "problem_type_id": "divide-total-by-ratio",
+      "problem_type_title": "Chia một tổng theo tỉ lệ",
+      "title": "Từ tổng số phần đến giá trị từng phần",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        7
+      ],
+      "skills": [
+        "day-ti-so-bang-nhau",
+        "chia-theo-ti-le"
+      ],
+      "prerequisites": [],
+      "estimated_minutes": 9,
+      "problem_markdown": "Chia số $84$ thành hai phần $x$ và $y$ theo tỉ lệ\n\n$$x:y=2:5.$$\n\nTính $x,y$ và kiểm tra cả tổng lẫn tỉ lệ.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Biểu diễn theo cùng một đơn vị phần",
+          "content_markdown": "Vì $x:y=2:5$, đặt\n\n$$x=2k,\\qquad y=5k.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Dùng tổng",
+          "content_markdown": "Ta có\n\n$$x+y=84\\Rightarrow2k+5k=84\\Rightarrow7k=84,$$\n\nnên $k=12$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Tính hai phần",
+          "content_markdown": "Suy ra\n\n$$x=2\\cdot12=24,\\qquad y=5\\cdot12=60.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra",
+          "content_markdown": "Ta có $24+60=84$ và\n\n$$24:60=2:5.$$\n\nVậy kết quả thỏa cả tổng và tỉ lệ đã cho."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Biểu diễn đúng $x=2k,y=5k$ hoặc cách tương đương.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng $x+y=84$ để tìm $k=12$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $x=24,y=60$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra đúng tổng và tỉ lệ.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Chia 84 trực tiếp cho 2 và 5 riêng rẽ.",
+        "Dùng hiệu $5-2$ thay vì tổng số phần $2+5$.",
+        "Tìm được hai số nhưng không kiểm tra lại tỉ lệ."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ03 – Dãy tỉ số bằng nhau và chia theo tỉ lệ",
+          "href": "../kien-thuc/03-ti-le-ti-le-thuc/core/"
+        },
+        {
+          "label": "Practice Room CĐ03",
+          "href": "../kien-thuc/03-ti-le-ti-le-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/03-ti-le-ti-le-thuc/bai-tap.md#03-M2-01",
+        "docs/assets/data/curriculum/topic03-learning-workspace.json#rat03-core-g7-3"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/42_NOTEBOOKLM_EXPANSION_B6_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX03-RAT-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT03",
+      "topic_slug": "03-ti-le-ti-le-thuc",
+      "topic_title": "Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ",
+      "problem_type_id": "inverse-proportion-workers-days",
+      "problem_type_title": "Nhận dạng và giải bài toán tỉ lệ nghịch",
+      "title": "Nhiều người hơn thì số ngày phải giảm",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        7
+      ],
+      "skills": [
+        "ti-le-nghich",
+        "he-so-ti-le-nghich",
+        "phan-biet-thuan-nghich"
+      ],
+      "prerequisites": [],
+      "estimated_minutes": 10,
+      "problem_markdown": "Bốn người làm xong một công việc trong $15$ ngày. Giả sử mọi người có năng suất như nhau và khối lượng công việc không đổi.\n\n1. Giải thích vì sao số người và số ngày là hai đại lượng tỉ lệ nghịch.\n2. Nếu có $6$ người thì cần bao nhiêu ngày?\n3. Kiểm tra kết quả bằng tích “số người × số ngày”.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Nhận dạng tỉ lệ nghịch",
+          "content_markdown": "Khối lượng công việc không đổi và năng suất mỗi người như nhau. Khi số người tăng thì số ngày cần thiết giảm sao cho tích **số người × số ngày** không đổi. Vì vậy hai đại lượng tỉ lệ nghịch."
+        },
+        {
+          "step_id": "S2",
+          "title": "Lập quan hệ tích không đổi",
+          "content_markdown": "Ta có\n\n$$4\\cdot15=6\\cdot t,$$\n\nvới $t$ là số ngày cần khi có 6 người."
+        },
+        {
+          "step_id": "S3",
+          "title": "Giải",
+          "content_markdown": "Suy ra\n\n$$t=\\frac{4\\cdot15}{6}=10.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra",
+          "content_markdown": "Ta có\n\n$$4\\cdot15=60,\\qquad6\\cdot10=60.$$\n\nHai tích bằng nhau, nên kết quả phù hợp với quan hệ tỉ lệ nghịch."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Giải thích đúng vì sao đây là tỉ lệ nghịch.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng $4\\cdot15=6t$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $t=10$ ngày.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra đúng bằng tích không đổi.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Cho rằng nhiều người hơn thì số ngày cũng tăng theo tỉ lệ thuận.",
+        "Lập tỉ lệ sai chiều và nhận kết quả 22,5 ngày.",
+        "Không nêu giả thiết năng suất như nhau/khối lượng công việc không đổi."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ03 – Đại lượng tỉ lệ nghịch",
+          "href": "../kien-thuc/03-ti-le-ti-le-thuc/core/"
+        },
+        {
+          "label": "Practice Room CĐ03",
+          "href": "../kien-thuc/03-ti-le-ti-le-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/03-ti-le-ti-le-thuc/bai-tap.md#03-M2-03",
+        "docs/assets/data/curriculum/topic03-learning-workspace.json#rat03-core-g7-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/42_NOTEBOOKLM_EXPANSION_B6_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX20-GEO-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT20",
+      "topic_slug": "20-hinh-hoc-tong-hop",
+      "topic_title": "Hình học tổng hợp, đo lường và hình khối",
+      "problem_type_id": "rectangular-prism-lateral-area-volume",
+      "problem_type_title": "Hình hộp chữ nhật: diện tích xung quanh và thể tích",
+      "title": "Phân biệt chu vi đáy, diện tích đáy và chiều cao",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        6,
+        7
+      ],
+      "skills": [
+        "dien-tich-xung-quanh-hop-chu-nhat",
+        "the-tich-hop-chu-nhat",
+        "dien-tich-day"
+      ],
+      "prerequisites": [
+        "dien-tich-tu-giac"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Một hình hộp chữ nhật có đáy là hình chữ nhật kích thước $3$ cm và $4$ cm, chiều cao $5$ cm.\n\n1. Tính chu vi đáy và diện tích đáy.\n2. Tính diện tích xung quanh.\n3. Tính thể tích.\n4. Ghi đúng đơn vị cho từng đại lượng.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Tính dữ liệu của đáy",
+          "content_markdown": "Chu vi đáy là\n\n$$P_{\\text{đáy}}=2(3+4)=14\\text{ cm}.$$\n\nDiện tích đáy là\n\n$$S_{\\text{đáy}}=3\\cdot4=12\\text{ cm}^2.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Tính diện tích xung quanh",
+          "content_markdown": "Với hình hộp chữ nhật,\n\n$$S_{xq}=P_{\\text{đáy}}\\cdot h=14\\cdot5=70\\text{ cm}^2.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Tính thể tích",
+          "content_markdown": "Ta có\n\n$$V=S_{\\text{đáy}}\\cdot h=12\\cdot5=60\\text{ cm}^3.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Đối chiếu đơn vị",
+          "content_markdown": "Chu vi dùng cm, diện tích dùng cm², thể tích dùng cm³. Vì vậy các đơn vị trên phù hợp với từng đại lượng."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Tính đúng $P_{đáy}=14$ cm và $S_{đáy}=12$ cm².",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $S_{xq}=70$ cm².",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $V=60$ cm³.",
+          "points": 1
+        },
+        {
+          "criterion": "Ghi đúng đơn vị độ dài/diện tích/thể tích.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Dùng diện tích đáy thay cho chu vi đáy khi tính $S_{xq}$.",
+        "Ghi cm² cho thể tích.",
+        "Nhầm chiều cao với một cạnh đáy."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ20 – Hình hộp chữ nhật",
+          "href": "../kien-thuc/20-hinh-hoc-tong-hop/core/"
+        },
+        {
+          "label": "Practice Room CĐ20",
+          "href": "../kien-thuc/20-hinh-hoc-tong-hop/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/20-hinh-hoc-tong-hop/bai-tap.md#20-WR-04",
+        "docs/assets/data/curriculum/topic20-learning-workspace.json#geo20-core-2"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/42_NOTEBOOKLM_EXPANSION_B6_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX20-GEO-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT20",
+      "topic_slug": "20-hinh-hoc-tong-hop",
+      "topic_title": "Hình học tổng hợp, đo lường và hình khối",
+      "problem_type_id": "cone-lateral-area-volume-distinguish-heights",
+      "problem_type_title": "Hình nón: phân biệt chiều cao và đường sinh",
+      "title": "Cùng một hình nón, hai công thức dùng hai độ dài khác nhau",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        9
+      ],
+      "skills": [
+        "nhan-biet-hinh-non",
+        "dien-tich-xung-quanh-hinh-non",
+        "the-tich-hinh-non"
+      ],
+      "prerequisites": [
+        "do-dai-duong-tron"
+      ],
+      "estimated_minutes": 11,
+      "problem_markdown": "Một hình nón có bán kính đáy $r=3$ cm, chiều cao $h=4$ cm và đường sinh $l=5$ cm.\n\n1. Tính diện tích xung quanh.\n2. Tính thể tích.\n3. Giải thích vì sao công thức diện tích xung quanh dùng $l$ còn công thức thể tích dùng $h$.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Chọn đúng công thức diện tích xung quanh",
+          "content_markdown": "Diện tích xung quanh hình nón là\n\n$$S_{xq}=\\pi rl.$$\n\nThay $r=3$, $l=5$:\n\n$$S_{xq}=\\pi\\cdot3\\cdot5=15\\pi\\text{ cm}^2.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Chọn đúng công thức thể tích",
+          "content_markdown": "Thể tích hình nón là\n\n$$V=\\frac13\\pi r^2h.$$\n\nThay $r=3$, $h=4$:\n\n$$V=\\frac13\\pi\\cdot9\\cdot4=12\\pi\\text{ cm}^3.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Phân biệt l và h",
+          "content_markdown": "$l$ là **đường sinh**, nằm trên mặt bên nên xuất hiện trong công thức diện tích xung quanh. $h$ là **chiều cao vuông góc** từ đỉnh xuống mặt phẳng đáy nên xuất hiện trong công thức thể tích."
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận",
+          "content_markdown": "Vậy\n\n$$S_{xq}=15\\pi\\text{ cm}^2,\\qquad V=12\\pi\\text{ cm}^3.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Dùng đúng $S_{xq}=\\pi rl$ và tính được $15\\pi$ cm².",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng $V=\\frac13\\pi r^2h$ và tính được $12\\pi$ cm³.",
+          "points": 1
+        },
+        {
+          "criterion": "Phân biệt đúng đường sinh $l$ và chiều cao $h$.",
+          "points": 1
+        },
+        {
+          "criterion": "Ghi đúng đơn vị diện tích và thể tích.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Dùng $h$ thay cho $l$ trong $S_{xq}$.",
+        "Dùng $l$ thay cho $h$ trong thể tích.",
+        "Quên hệ số $1/3$ trong công thức thể tích hình nón."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ20 – Hình nón",
+          "href": "../kien-thuc/20-hinh-hoc-tong-hop/core/"
+        },
+        {
+          "label": "Practice Room CĐ20",
+          "href": "../kien-thuc/20-hinh-hoc-tong-hop/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/20-hinh-hoc-tong-hop/bai-tap.md#20-WR-08",
+        "docs/assets/data/curriculum/topic20-learning-workspace.json#geo20-core-4"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/42_NOTEBOOKLM_EXPANSION_B6_R1_PASS_RECEIPT.md"
+      }
     }
   ],
   "extension_policy": [
@@ -3564,6 +4116,8 @@
   ],
   "published_scope": {
     "topics": [
+      "CT02",
+      "CT03",
       "CT04",
       "CT05",
       "CT06",
@@ -3580,10 +4134,11 @@
       "CT17",
       "CT18",
       "CT19",
+      "CT20",
       "CT23",
       "CT24"
     ],
-    "exercise_count": 36,
+    "exercise_count": 42,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -3618,6 +4173,12 @@
       {
         "batch_id": "EXPANSION_B5_R1",
         "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001",
+        "count": 6,
+        "status": "PUBLISHED"
+      },
+      {
+        "batch_id": "EXPANSION_B6_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001",
         "count": 6,
         "status": "PUBLISHED"
       }

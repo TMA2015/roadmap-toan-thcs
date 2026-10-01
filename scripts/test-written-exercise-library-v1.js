@@ -11,7 +11,7 @@ ok(data.schema_version==="1.0.0","schema version");
 ok(data.status==="ACTIVE_APPEND_ONLY","active append-only catalog");
 ok(data.auto_readiness_credit===false,"no readiness credit");
 ok(data.self_marking_only===true,"self marking only");
-ok(Array.isArray(data.exercises)&&data.exercises.length===36,"exact thirty-six published items");
+ok(Array.isArray(data.exercises)&&data.exercises.length===42,"exact forty-two published items");
 
 const expected=[
   "WX07-RAT-001","WX07-RAT-002",
@@ -31,11 +31,14 @@ const expected=[
   "WX23-PRO-001","WX23-PRO-002",
   "WX04-ALG-001","WX04-ALG-002",
   "WX05-IDN-001","WX05-IDN-002",
-  "WX06-FAC-001","WX06-FAC-002"
+  "WX06-FAC-001","WX06-FAC-002",
+  "WX02-NUM-001","WX02-NUM-002",
+  "WX03-RAT-001","WX03-RAT-002",
+  "WX20-GEO-001","WX20-GEO-002"
 ];
 ok(JSON.stringify(data.exercises.map(x=>x.exercise_id))===JSON.stringify(expected),"exact stable IDs");
 
-for(const topic of ["CT04","CT05","CT06","CT07","CT08","CT09","CT10","CT11","CT12","CT13","CT14","CT15","CT16","CT17","CT18","CT19","CT23","CT24"]){
+for(const topic of ["CT02","CT03","CT04","CT05","CT06","CT07","CT08","CT09","CT10","CT11","CT12","CT13","CT14","CT15","CT16","CT17","CT18","CT19","CT20","CT23","CT24"]){
   const items=data.exercises.filter(x=>x.topic_id===topic);
   ok(items.length===2,topic+" exactly two items");
   ok(items.some(x=>x.level==="CORE_BASE"),topic+" CORE_BASE");
@@ -93,6 +96,12 @@ ok(byId["WX05-IDN-001"].solution_steps.some(s=>s.content_markdown.includes("(x-5
 ok(byId["WX05-IDN-002"].solution_steps.at(-1).content_markdown.includes("40x"),"WX05-002 result");
 ok(byId["WX06-FAC-001"].solution_steps.some(s=>s.content_markdown.includes("2(x-y)(x-2)")),"WX06-001 result");
 ok(byId["WX06-FAC-002"].solution_steps.some(s=>s.content_markdown.includes("(x+2)(x-3)(x+3)")),"WX06-002 result");
+ok(byId["WX02-NUM-001"].solution_steps.some(s=>s.content_markdown.includes("\\operatorname{ƯCLN}(36,48)=2^2\\cdot3=12"))&&byId["WX02-NUM-001"].solution_steps.at(-1).content_markdown.includes("3\\text{ bút}")&&byId["WX02-NUM-001"].solution_steps.at(-1).content_markdown.includes("4\\text{ vở}"),"WX02-001 result");
+ok(byId["WX02-NUM-002"].solution_steps.some(s=>s.content_markdown.includes("120\\,000"))&&byId["WX02-NUM-002"].solution_steps.some(s=>s.content_markdown.includes("680\\,000")),"WX02-002 result");
+ok(byId["WX03-RAT-001"].solution_steps.some(s=>s.content_markdown.includes("x=2\\cdot12=24")&&s.content_markdown.includes("y=5\\cdot12=60")),"WX03-001 result");
+ok(byId["WX03-RAT-002"].solution_steps.some(s=>s.content_markdown.includes("t=\\frac{4\\cdot15}{6}=10")),"WX03-002 result");
+ok(byId["WX20-GEO-001"].solution_steps.some(s=>s.content_markdown.includes("70\\text{ cm}^2"))&&byId["WX20-GEO-001"].solution_steps.some(s=>s.content_markdown.includes("60\\text{ cm}^3")),"WX20-001 result");
+ok(byId["WX20-GEO-002"].solution_steps.at(-1).content_markdown.includes("15\\pi\\text{ cm}^2")&&byId["WX20-GEO-002"].solution_steps.at(-1).content_markdown.includes("12\\pi\\text{ cm}^3"),"WX20-002 result");
 
 for(const x of data.exercises.filter(x=>x.topic_id==="CT14")){
   ok(x.figure_uri&&fs.existsSync(path.join("docs",x.figure_uri.replace(/^\.\.\//,""))),"geometry figure "+x.exercise_id);
@@ -114,7 +123,7 @@ ok(ui.includes("initTopicLibraryLink")&&ui.includes('luyen-tap/?topic='),"topic 
 ok(uiCss.includes("grid-template-columns:repeat(3,minmax(0,1fr))"),"help actions use one three-column row");
 ok(uiCss.includes(".written-topic-library-link"),"topic-to-library CTA styled");
 
-console.log("PASS: written exercise catalog = 36 items / 18 topics / Base+Apply.");
+console.log("PASS: written exercise catalog = 42 items / 21 topics / Base+Apply.");
 console.log("PASS: rubric, remediation, geometry assets and no-readiness boundary validated.");
 console.log("PASS: exact published conclusions and UI wiring validated.");
 console.log("PASS: compact 3-action help row and topic-filter deep links validated.");
