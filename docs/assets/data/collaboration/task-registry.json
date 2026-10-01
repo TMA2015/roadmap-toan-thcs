@@ -1,5 +1,5 @@
 {
-  "version": "1.0.131",
+  "version": "1.0.132",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.131",
-      "review_verdict": "B7_RELEASED_44_ITEMS_22_TOPICS_OWNER_QA_PENDING",
-      "review_notes": "B7 CT21 production release succeeded. PR #255 merged as 47adffd87b654a1bd2b6854ddbc270bbf31dfa62 after final exact-head Roadmap PR Quality 36899579636 PASS; Deploy MkDocs 36900375742 SUCCESS including Deploy to GitHub Pages. Production catalog is 44 items / 22 topics. Owner real-device QA on iPad and desktop remains pending."
+      "context_version": "1.0.132",
+      "review_verdict": "B7_OWNER_QA_PASS_CORE_APPEND_STOP_44_ITEMS_22_TOPICS",
+      "review_notes": "B7 owner production QA PASS on both iPad and desktop. Production remains 44 items / 22 topics with CT21 exactly two reviewed items. Normal Core append stops here: CT01 is roadmap/navigation, CT22 remains THPT-Bridge, and CT25 retains separate Entrance10/tổng hợp lanes. Keep umbrella OPEN for future anchor/library maintenance rather than forcing artificial topic completeness."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -845,10 +845,10 @@
       "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-001",
       "title": "Expand Written Exercise Library to CĐ21 Thống kê",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
-      "status": "OPEN",
-      "context_version": "1.0.131",
-      "review_verdict": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
-      "review_notes": "NotebookLM PASS 2/2 + ARCH_1..ARCH_10. Owner controlled release authorized 2026-10-02. Final exact-head f0df2011ab9694b06c30ffda1b7fa872d2dc1fda passed Roadmap PR Quality 36899579636; PR #255 merged as 47adffd87b654a1bd2b6854ddbc270bbf31dfa62; Deploy MkDocs 36900375742 SUCCESS including GitHub Pages. Production is 44 items / 22 topics. Await owner QA on iPad and desktop before closing DONE."
+      "status": "DONE",
+      "context_version": "1.0.132",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
+      "review_notes": "NotebookLM PASS 2/2 + ARCH_1..ARCH_10. Final exact-head f0df2011ab9694b06c30ffda1b7fa872d2dc1fda passed Roadmap PR Quality 36899579636; PR #255 merged as 47adffd87b654a1bd2b6854ddbc270bbf31dfa62; Deploy MkDocs 36900375742 SUCCESS including GitHub Pages. Owner then checked production on both iPad and desktop and reported it achieved the expected result; supplied screenshots show CT21 item rendering, guidance, 50% calculation, rubric and evidence-boundary copy correctly. B7 closed DONE at 44 items / 22 topics."
     }
   ]
 }
