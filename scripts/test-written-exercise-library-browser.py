@@ -97,7 +97,7 @@ with sync_playwright() as p:
         topic_link.wait_for(state="visible", timeout=15000)
         href = topic_link.get_attribute("href")
         assert "luyen-tap/?topic=CT07" in href, (device, "topic deep link prefilters CT07")
-        topic_page.goto(href, wait_until="networkidle")
+        topic_page.goto(BASE.rstrip("/") + href, wait_until="networkidle")
         topic_page.wait_for_function(
             "document.querySelector('[data-written-exercise-library]')?.dataset.ready === '1'",
             timeout=15000,
