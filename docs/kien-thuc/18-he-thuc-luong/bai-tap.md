@@ -88,6 +88,8 @@ Xác định đường ngang, chiều cao mắt và đơn vị trước khi tín
 - [ ] Tôi đã chữa lại các câu sai mà không nhìn lời giải.
 
 ## Liên kết Roadmap
-- **← Học:** [Chuyên đề 18](index.md)
+
+- **← Chuyên đề trước:** [17 – Thales và tam giác đồng dạng](../17-thales-dong-dang/index.md)
+- **← Học kiến thức:** [Chuyên đề 18 – Hệ thức lượng trong tam giác vuông](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [19 – Đường tròn](../19-duong-tron/index.md)
+- **→ Chuyên đề tiếp theo:** [19 – Đường tròn](../19-duong-tron/index.md)
