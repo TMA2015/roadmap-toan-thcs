@@ -1,5 +1,5 @@
 {
-  "version": "1.0.110",
+  "version": "1.0.111",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B3 has NotebookLM PASS 6/6 + ARCH_1–ARCH_10 and is staged on a separate implementation branch for exact-head technical QA. Intended catalog: 24 items / 12 topics after append. No release until technical QA is clean and owner controlled-release authorization is reconciled. Patch 1 deep-link owner spot-check remains independent.",
+    "next_priority": "Written Library Expansion B3 implementation PR #246 is open from current main. Run exact-head technical QA for the intended 24-item / 12-topic append-only catalog; no merge/deploy until QA passes and owner controlled-release authorization is obtained.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -890,7 +890,7 @@
       "owner_qa_date": "2026-10-01"
     },
     "written_library_expansion_b3": {
-      "status": "NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "status": "TECHNICAL_IMPLEMENTATION_PR_OPEN_QA_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-001",
       "review_pr": 245,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
@@ -931,7 +931,8 @@
       },
       "production_release": false,
       "auto_readiness_credit": false,
-      "canonical_evidence_g3_changed": false
+      "canonical_evidence_g3_changed": false,
+      "implementation_pr": 246
     }
   },
   "handoff_required_fields": [
