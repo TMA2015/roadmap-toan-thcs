@@ -1,5 +1,5 @@
 {
-  "version": "1.0.118",
+  "version": "1.0.119",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.118",
-      "review_verdict": "B4_RELEASED_30_ITEMS_15_TOPICS_OWNER_QA_PENDING",
-      "review_notes": "Written Library production now contains 30 items / 15 topics after B4 release. Owner production QA should confirm CT13/CT15/CT23 appear and each has exactly 2 exercises. Patch 1 topic deep-link owner spot-check remains independent."
+      "context_version": "1.0.119",
+      "review_verdict": "B4_OWNER_PASS_B5_REVIEW_ONLY_NEXT",
+      "review_notes": "B4 owner QA PASS on iPad and desktop. Production remains 30 items / 15 topics. Next academic expansion B5 review-only: CT04/CT05/CT06, two items per topic. CT22 remains THPT-Bridge and is not forced into the Core Written Library. Patch 1 deep-link owner spot-check remains independent and non-blocking."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -818,10 +818,10 @@
       "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-001",
       "title": "Expand Written Exercise Library to CĐ13/CĐ15/CĐ23",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
-      "status": "OPEN",
-      "context_version": "1.0.118",
-      "review_verdict": "PRODUCTION_RELEASED_DEPLOY_SUCCESS_OWNER_PRODUCTION_QA_PENDING",
-      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Owner controlled-release authorization was saved before merge. Final authorization-checkpoint exact HEAD 027e18ea8953de4986399d999363a5e13be6db93 passed Roadmap PR Quality 36881591932. PR #248 merged as 83db880966bd0dcfaf594811ff30abff1e9edd9a. Deploy MkDocs 36882280354 SUCCESS, including Deploy to GitHub Pages. Production catalog verified on main at 30 exercises / 15 topics; CT13/CT15/CT23 each have 2 reviewed items. Owner production QA remains."
+      "status": "DONE",
+      "context_version": "1.0.119",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
+      "review_notes": "Owner production QA PASS on both iPad and desktop: CT13, CT15 and CT23 are present and each exposes exactly 2 exercises. Release provenance remains PR #248 / merge 83db880966bd0dcfaf594811ff30abff1e9edd9a / Deploy MkDocs 36882280354 SUCCESS. B4 closed."
     }
   ]
 }

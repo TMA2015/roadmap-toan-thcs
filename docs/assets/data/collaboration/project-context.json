@@ -1,5 +1,5 @@
 {
-  "version": "1.0.118",
+  "version": "1.0.119",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B4 is PRODUCTION RELEASED after saved authorization checkpoint, fresh exact-head QA PASS, merge and Deploy MkDocs SUCCESS. Owner production QA should confirm 30 items / 15 topics and CT13/CT15/CT23 each expose exactly 2 exercises. Patch 1 deep-link owner spot-check remains independent.",
+    "next_priority": "Written Library B4 owner production QA PASS on iPad and desktop and CLOSED. Proceed with Expansion B5 as review-only for CT04/CT05/CT06, two items per topic (CORE_BASE + CORE_APPLY), with NotebookLM required before implementation. Keep CT22 outside the Core Written Library because its audit classifies it as THPT-Bridge. Patch 1 deep-link owner spot-check remains independent.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -977,7 +977,7 @@
       ]
     },
     "written_library_expansion_b4": {
-      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-001",
       "review_pr": 247,
       "review_branch": "review/written-library-expansion-b4-r1-20261001",
@@ -1054,7 +1054,7 @@
       "production_merge": "83db880966bd0dcfaf594811ff30abff1e9edd9a",
       "deploy_run": 36882280354,
       "deploy_conclusion": "SUCCESS",
-      "owner_production_qa": "PENDING",
+      "owner_production_qa": "PASS_IPAD_DESKTOP",
       "expected_production_catalog": {
         "exercise_count": 30,
         "topic_count": 15,
@@ -1075,7 +1075,12 @@
           "CT23",
           "CT24"
         ]
-      }
+      },
+      "owner_qa_observed": [
+        "CT13, CT15 and CT23 are present in production",
+        "each B4 topic exposes exactly 2 exercises",
+        "owner checked on both iPad and desktop"
+      ]
     }
   },
   "handoff_required_fields": [
