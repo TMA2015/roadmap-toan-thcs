@@ -1,5 +1,5 @@
 {
-  "version": "1.0.120",
+  "version": "1.0.121",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -828,9 +828,9 @@
       "title": "Expand Written Exercise Library to CĐ04/CĐ05/CĐ06",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
       "status": "OPEN",
-      "context_version": "1.0.120",
-      "review_verdict": "NOTEBOOKLM_PASS_6_OF_6_ARCH_10_OF_10_TECHNICAL_IMPLEMENTATION_STAGED",
-      "review_notes": "NotebookLM academic R1 PASS for WX04-ALG-001/002, WX05-IDN-001/002, WX06-FAC-001/002. Authorization is limited to separate technical implementation/QA. Append-only catalog expansion to 36 items / 18 topics; CT22 remains THPT-Bridge; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
+      "context_version": "1.0.121",
+      "review_verdict": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_AUTHORIZED",
+      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Implementation PR #250 exact-head technical QA on 6d1fe8c752f98477f2790555a5d452b58e477928 passed Roadmap PR Quality 36885670750. Owner explicitly authorized controlled production release on 2026-10-01. Intended append-only production state: 36 items / 18 topics. CT22 remains THPT-Bridge. No automatic Readiness/mastery credit; no canonical-evidence/G3 expansion. Fresh exact-head revalidation required after this authorization checkpoint."
     }
   ]
 }
