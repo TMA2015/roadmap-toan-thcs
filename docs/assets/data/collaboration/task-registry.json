@@ -1,5 +1,5 @@
 {
-  "version": "1.0.110",
+  "version": "1.0.111",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -810,9 +810,9 @@
       "title": "Expand Written Exercise Library to CĐ10/CĐ11/CĐ12",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
       "status": "OPEN",
-      "context_version": "1.0.110",
-      "review_verdict": "NOTEBOOKLM_PASS_6_OF_6_ARCH_10_OF_10_TECHNICAL_IMPLEMENTATION_STAGED",
-      "review_notes": "NotebookLM academic R1 PASS for WX10-FUN-001/002, WX11-RAD-001/002, WX12-QUA-001/002. Authorization is limited to separate technical implementation/QA. Append-only catalog expansion to 24 items / 12 topics; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
+      "context_version": "1.0.111",
+      "review_verdict": "TECHNICAL_IMPLEMENTATION_PR_246_OPEN_QA_PENDING",
+      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Implementation PR #246 stages append-only expansion to 24 items / 12 topics. Exact-head QA pending; no release authorization yet."
     }
   ]
 }
