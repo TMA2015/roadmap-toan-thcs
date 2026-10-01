@@ -1,12 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B5 NotebookLM PASS / technical implementation staged.** B5: 6/6 items PASS + ARCH_1–ARCH_10 PASS for CĐ04/CĐ05/CĐ06; separate implementation branch stages append-only expansion from **30 → 36 items / 15 → 18 topics**. Review preflight `36884636667` SUCCESS. **CĐ22 remains THPT-Bridge and is intentionally outside the Core Written Library.** No Readiness/mastery/canonical-evidence/G3 expansion.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B5 owner controlled release AUTHORIZED; exact-head revalidation pending after saved authorization checkpoint.** NotebookLM **6/6 + ARCH_1–ARCH_10 PASS**. Technical QA on `6d1fe8c752f98477f2790555a5d452b58e477928` / run `36885670750` **SUCCESS**. Owner explicitly authorized controlled production release. Intended catalog: **36 items / 18 topics**. **CĐ22 remains THPT-Bridge**. No Readiness/mastery/canonical-evidence/G3 expansion.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Written Library Expansion B5 — NotebookLM PASS / technical implementation staged (01/10/2026)
+## Written Library Expansion B5 — controlled release authorized / saved checkpoint (01/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B5-001`.
 - Academic packet: `MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001`.
@@ -23,7 +23,9 @@
 - Intended catalog after append: **36 items / 18 topics**, preserving all 30 currently published IDs.
 - Architecture note: **CĐ22 remains THPT-Bridge**, not a THCS Core milestone, and is not forced into this library.
 - Self-marking only; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion.
-- Current gate: exact-head technical CI/browser QA before any merge/deploy.
+- Technical QA: exact HEAD `6d1fe8c752f98477f2790555a5d452b58e477928`, Roadmap PR Quality `36885670750` **SUCCESS**.
+- Owner explicitly authorized **controlled production release** on 01/10/2026.
+- Current gate: fresh exact-head QA after this authorization checkpoint, then merge/deploy if clean and `main` has no base drift.
 
 ## Written Library Expansion B4 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 
