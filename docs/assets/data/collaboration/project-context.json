@@ -1,5 +1,5 @@
 {
-  "version": "1.0.100",
+  "version": "1.0.101",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B1 has NotebookLM PASS 6/6 + ARCH_1–ARCH_8, exact-head technical QA PASS, and owner controlled-release authorization. Re-run exact-head QA after this provenance update, then merge/deploy if clean. Patch 1 owner spot-QA is 2/3 PASS; only the topic 'Các dạng bài' auto-filter deep-link check remains.",
+    "next_priority": "Written Library Expansion B1 is PRODUCTION RELEASED after final exact-head QA PASS and Deploy MkDocs SUCCESS. Owner production QA should confirm the library now reports 12 items / 6 topics and new CT08/CT17/CT19 filters/cards. Patch 1 is 2/3 owner spot-QA PASS; only the topic 'Các dạng bài' auto-filter deep-link check remains.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -719,7 +719,7 @@
       ]
     },
     "written_library_expansion_b1": {
-      "status": "OWNER_CONTROLLED_RELEASE_AUTHORIZED_EXACT_HEAD_REVALIDATION_PENDING",
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-001",
       "review_pr": 239,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001",
@@ -740,7 +740,7 @@
         "WX19-CIR-002"
       ],
       "implementation_branch": "feature/written-library-expansion-b1-20261001",
-      "production_release": false,
+      "production_release": true,
       "auto_readiness_credit": false,
       "canonical_evidence_g3_changed": false,
       "technical_qa": {
@@ -751,7 +751,26 @@
         "first_failure_reason": "test harness expected-ID list still locked to six pilot IDs; catalog already contained correct 12 IDs"
       },
       "owner_release_authorized": true,
-      "owner_release_authorized_at": "2026-10-01"
+      "owner_release_authorized_at": "2026-10-01",
+      "final_exact_tested_head": "86b065ec8479688ea7e4eb643202e1ae18556a63",
+      "final_roadmap_pr_quality_run": 36860254512,
+      "final_qa_result": "SUCCESS",
+      "implementation_pr": 240,
+      "production_merge": "6f506f1f0434d1f06099a4e78c2f669ffe2e9257",
+      "deploy_run": 36860706849,
+      "deploy_conclusion": "SUCCESS",
+      "owner_production_qa": "PENDING",
+      "expected_production_catalog": {
+        "exercise_count": 12,
+        "topics": [
+          "CT07",
+          "CT08",
+          "CT14",
+          "CT17",
+          "CT19",
+          "CT24"
+        ]
+      }
     }
   },
   "handoff_required_fields": [

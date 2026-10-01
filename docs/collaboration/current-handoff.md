@@ -1,12 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B1 owner controlled release AUTHORIZED; exact-head revalidation pending after provenance update.** NotebookLM 6/6 + ARCH_1–ARCH_8 PASS; technical QA on `bc5cbd9a3c9971ff5d20ef1bc446d6d0f212da09` / run `36859348005` PASS. Patch 1 owner spot-QA is **2/3 PASS**: `7 + 25 / Thư viện bài tập` and compact 3-button row approved; only topic auto-filter deep link remains. No Readiness/mastery/canonical-evidence/G3 expansion.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B1 PRODUCTION RELEASED / owner QA pending.** Final exact HEAD `86b065ec8479688ea7e4eb643202e1ae18556a63` passed Roadmap PR Quality `36860254512`; PR #240 merged as `6f506f1f0434d1f06099a4e78c2f669ffe2e9257`; Deploy MkDocs `36860706849` succeeded through **Deploy to GitHub Pages**. Expected production library: **12 items / 6 topics** (CĐ07/08/14/17/19/24). Patch 1 owner spot-QA is **2/3 PASS**; only topic auto-filter deep link remains. No Readiness/mastery/canonical-evidence/G3 expansion.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Written Library Expansion B1 — owner controlled release authorized (01/10/2026)
+## Written Library Expansion B1 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B1-001`.
 - Academic packet: `MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001`.
@@ -22,7 +22,11 @@
 - Self-marking only; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion.
 - Technical QA: exact HEAD `bc5cbd9a3c9971ff5d20ef1bc446d6d0f212da09`, Roadmap PR Quality `36859348005` **SUCCESS**. First run `36859229839` failed only because the test harness still expected six IDs; catalog content was already correct.
 - Owner explicitly authorized **controlled production release** on 01/10/2026.
-- Current gate: revalidate exact HEAD after recording this authorization, then merge/deploy if clean.
+- Final exact-head QA: `86b065ec8479688ea7e4eb643202e1ae18556a63`, Roadmap PR Quality `36860254512` **SUCCESS**.
+- PR #240 production merge: `6f506f1f0434d1f06099a4e78c2f669ffe2e9257`.
+- Deploy MkDocs `36860706849`: **SUCCESS**, including the `Deploy to GitHub Pages` step.
+- Expected production catalog: **12 items / 6 topics** — CĐ07, CĐ08, CĐ14, CĐ17, CĐ19, CĐ24.
+- Owner production QA: **PENDING**; refresh `/luyen-tap/` and confirm 12 items plus new topic filters/cards.
 
 ## Patch 1 owner spot-QA partial update (01/10/2026)
 
