@@ -1,5 +1,5 @@
 {
-  "version": "1.0.115",
+  "version": "1.0.116",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "B4 review-only packet is ready on Draft PR #247 for CT13/CT15/CT23. While owner runs NotebookLM, do not implement or merge B4. Next action on return: ingest NotebookLM R1 result; if 6/6 + ARCH_1–ARCH_10 PASS with CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA, record receipt and open a separate implementation branch/PR from then-current main. Production remains 24 items / 12 topics. Patch 1 deep-link owner spot-check remains independent and non-blocking.",
+    "next_priority": "Written Library Expansion B4 has NotebookLM PASS 6/6 + ARCH_1–ARCH_10 and is staged on a separate implementation branch for exact-head technical QA. Intended catalog: 30 items / 15 topics after append. No release until technical QA is clean and owner controlled-release authorization is obtained. Patch 1 deep-link owner spot-check remains independent.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -977,7 +977,7 @@
       ]
     },
     "written_library_expansion_b4": {
-      "status": "REVIEW_ONLY_NOTEBOOKLM_R1_PENDING",
+      "status": "NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-001",
       "review_pr": 247,
       "review_branch": "review/written-library-expansion-b4-r1-20261001",
@@ -1012,9 +1012,34 @@
       "canonical_evidence_g3_changed": false,
       "preflight": {
         "roadmap_pr_quality_run": 36879068239,
-        "status_at_checkpoint": "IN_PROGRESS"
+        "status": "SUCCESS"
       },
-      "next_gate": "NOTEBOOKLM_R1_RESULT"
+      "next_gate": "NOTEBOOKLM_R1_RESULT",
+      "notebooklm_result": "PASS_6_OF_6_ARCH_10_OF_10",
+      "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "implementation_branch": "feature/written-library-expansion-b4-20261001",
+      "intended_catalog": {
+        "exercise_count": 30,
+        "topic_count": 15,
+        "topics": [
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT13",
+          "CT14",
+          "CT15",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT23",
+          "CT24"
+        ]
+      },
+      "production_release": false
     }
   },
   "handoff_required_fields": [
