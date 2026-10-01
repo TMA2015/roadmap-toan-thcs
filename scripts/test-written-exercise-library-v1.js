@@ -11,7 +11,7 @@ ok(data.schema_version==="1.0.0","schema version");
 ok(data.status==="ACTIVE_APPEND_ONLY","active append-only catalog");
 ok(data.auto_readiness_credit===false,"no readiness credit");
 ok(data.self_marking_only===true,"self marking only");
-ok(Array.isArray(data.exercises)&&data.exercises.length===18,"exact eighteen published items");
+ok(Array.isArray(data.exercises)&&data.exercises.length===24,"exact twenty-four published items");
 
 const expected=[
   "WX07-RAT-001","WX07-RAT-002",
@@ -22,11 +22,14 @@ const expected=[
   "WX19-CIR-001","WX19-CIR-002",
   "WX09-SYS-001","WX09-SYS-002",
   "WX16-QUAD-001","WX16-QUAD-002",
-  "WX18-TRI-001","WX18-TRI-002"
+  "WX18-TRI-001","WX18-TRI-002",
+  "WX10-FUN-001","WX10-FUN-002",
+  "WX11-RAD-001","WX11-RAD-002",
+  "WX12-QUA-001","WX12-QUA-002"
 ];
 ok(JSON.stringify(data.exercises.map(x=>x.exercise_id))===JSON.stringify(expected),"exact stable IDs");
 
-for(const topic of ["CT07","CT08","CT09","CT14","CT16","CT17","CT18","CT19","CT24"]){
+for(const topic of ["CT07","CT08","CT09","CT10","CT11","CT12","CT14","CT16","CT17","CT18","CT19","CT24"]){
   const items=data.exercises.filter(x=>x.topic_id===topic);
   ok(items.length===2,topic+" exactly two items");
   ok(items.some(x=>x.level==="CORE_BASE"),topic+" CORE_BASE");
@@ -64,6 +67,12 @@ ok(byId["WX16-QUAD-001"].solution_steps.at(-1).content_markdown.includes("hình 
 ok(byId["WX16-QUAD-002"].solution_steps.at(-1).content_markdown.includes("hình vuông"),"WX16-002 conclusion");
 ok(byId["WX18-TRI-001"].solution_steps.at(-1).content_markdown.includes("10\\sqrt3"),"WX18-001 result");
 ok(byId["WX18-TRI-002"].solution_steps.at(-1).content_markdown.includes("15{,}4"),"WX18-002 result");
+ok(byId["WX10-FUN-001"].solution_steps.at(-1).content_markdown.includes("A(0;4)")&&byId["WX10-FUN-001"].solution_steps.at(-1).content_markdown.includes("B(2;0)"),"WX10-001 result");
+ok(byId["WX10-FUN-002"].solution_steps.at(-1).content_markdown.includes("P(6;18)")&&byId["WX10-FUN-002"].solution_steps.at(-1).content_markdown.includes("thuộc parabol"),"WX10-002 result");
+ok(byId["WX11-RAD-001"].solution_steps.at(-1).content_markdown.includes("=1"),"WX11-001 result");
+ok(byId["WX11-RAD-002"].solution_steps.some(s=>s.content_markdown.includes("\\frac{\\sqrt5}{2}")),"WX11-002 result");
+ok(byId["WX12-QUA-001"].solution_steps.some(s=>s.content_markdown.includes("x_1=\\frac23")&&s.content_markdown.includes("x_2=-1")),"WX12-001 result");
+ok(byId["WX12-QUA-002"].solution_steps.at(-1).content_markdown.includes("x^2-7x+10=0")&&byId["WX12-QUA-002"].solution_steps.at(-1).content_markdown.includes("2")&&byId["WX12-QUA-002"].solution_steps.at(-1).content_markdown.includes("5"),"WX12-002 result");
 
 for(const x of data.exercises.filter(x=>x.topic_id==="CT14")){
   ok(x.figure_uri&&fs.existsSync(path.join("docs",x.figure_uri.replace(/^\.\.\//,""))),"geometry figure "+x.exercise_id);
@@ -85,7 +94,7 @@ ok(ui.includes("initTopicLibraryLink")&&ui.includes('luyen-tap/?topic='),"topic 
 ok(uiCss.includes("grid-template-columns:repeat(3,minmax(0,1fr))"),"help actions use one three-column row");
 ok(uiCss.includes(".written-topic-library-link"),"topic-to-library CTA styled");
 
-console.log("PASS: written exercise catalog = 18 items / 9 topics / Base+Apply.");
+console.log("PASS: written exercise catalog = 24 items / 12 topics / Base+Apply.");
 console.log("PASS: rubric, remediation, geometry assets and no-readiness boundary validated.");
 console.log("PASS: exact published conclusions and UI wiring validated.");
 console.log("PASS: compact 3-action help row and topic-filter deep links validated.");
