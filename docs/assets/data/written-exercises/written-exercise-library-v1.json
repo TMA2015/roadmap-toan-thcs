@@ -2981,6 +2981,578 @@
         "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-R1-20261001",
         "receipt": "review-packets/written-exercise-library/30_NOTEBOOKLM_EXPANSION_B4_R1_PASS_RECEIPT.md"
       }
+    },
+    {
+      "exercise_id": "WX04-ALG-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT04",
+      "topic_slug": "04-bieu-thuc-dai-so",
+      "topic_title": "Biểu thức và biến đổi đại số",
+      "problem_type_id": "polynomial-subtraction-signs",
+      "problem_type_title": "Trừ đa thức và bỏ ngoặc đúng dấu",
+      "title": "Đổi dấu toàn bộ đa thức bị trừ rồi mới thu gọn",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        7,
+        8
+      ],
+      "skills": [
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau",
+        "thu-gon-da-thuc"
+      ],
+      "prerequisites": [
+        "hang-tu-dong-dang"
+      ],
+      "estimated_minutes": 9,
+      "problem_markdown": "Cho\n\n$$A=3x^2-2x+4,\\qquad B=x^2+x-5.$$\n\nTính và thu gọn $A-B$. Hãy viết riêng bước bỏ ngoặc để thể hiện rõ việc đổi dấu.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Viết phép trừ có ngoặc",
+          "content_markdown": "Ta có\n\n$$A-B=3x^2-2x+4-(x^2+x-5).$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Bỏ ngoặc và đổi đủ dấu",
+          "content_markdown": "Dấu trừ trước ngoặc làm đổi dấu **tất cả** hạng tử của $B$:\n\n$$A-B=3x^2-2x+4-x^2-x+5.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Gộp hạng tử đồng dạng",
+          "content_markdown": "Gộp theo từng bậc:\n\n$$A-B=(3x^2-x^2)+(-2x-x)+(4+5).$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận",
+          "content_markdown": "Do đó\n\n$$\\boxed{A-B=2x^2-3x+9}.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Viết đúng $A-B$ với toàn bộ $B$ trong ngoặc.",
+          "points": 1
+        },
+        {
+          "criterion": "Bỏ ngoặc đúng thành $-x^2-x+5$.",
+          "points": 1
+        },
+        {
+          "criterion": "Gộp đúng các hạng tử đồng dạng.",
+          "points": 1
+        },
+        {
+          "criterion": "Kết luận đúng $2x^2-3x+9$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Chỉ đổi dấu hạng tử đầu của $B$.",
+        "Giữ $-5$ thành $-5$ sau khi bỏ ngoặc thay vì đổi thành $+5$.",
+        "Gộp các hạng tử khác bậc."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ04 – Cộng, trừ và bỏ ngoặc",
+          "href": "../kien-thuc/04-bieu-thuc-dai-so/core/"
+        },
+        {
+          "label": "Practice Room CĐ04",
+          "href": "../kien-thuc/04-bieu-thuc-dai-so/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/04-bieu-thuc-dai-so/bai-tap.md#04-WR-03",
+        "docs/kien-thuc/04-bieu-thuc-dai-so/bai-tap.md#04-WR-04",
+        "docs/assets/data/curriculum/topic04-learning-workspace.json#alg04-core-3"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/36_NOTEBOOKLM_EXPANSION_B5_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX04-ALG-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT04",
+      "topic_slug": "04-bieu-thuc-dai-so",
+      "topic_title": "Biểu thức và biến đổi đại số",
+      "problem_type_id": "polynomial-divide-monomial-evaluate",
+      "problem_type_title": "Chia đa thức cho đơn thức rồi tính giá trị",
+      "title": "Giữ điều kiện gốc sau khi rút gọn",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "chia-da-thuc-cho-don-thuc",
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "prerequisites": [
+        "nhan-biet-da-thuc",
+        "tinh-phan-phoi"
+      ],
+      "estimated_minutes": 11,
+      "problem_markdown": "Cho\n\n$$T=(9x^3-6x^2+3x):(3x),\\qquad x\\ne0.$$\n\n1. Thu gọn $T$ bằng cách chia từng hạng tử.\n2. Tính $T$ tại $x=2$.\n3. Giải thích vì sao điều kiện $x\\ne0$ vẫn cần được ghi nhớ dù biểu thức sau khi thu gọn không còn mẫu.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Giữ điều kiện",
+          "content_markdown": "Số chia là $3x$, nên điều kiện ban đầu là\n\n$$3x\\ne0\\Longleftrightarrow x\\ne0.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Chia từng hạng tử",
+          "content_markdown": "Ta có\n\n$$T=\\frac{9x^3}{3x}-\\frac{6x^2}{3x}+\\frac{3x}{3x}=3x^2-2x+1,$$\n\ntrên miền $x\\ne0$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Thay giá trị hợp lệ",
+          "content_markdown": "Giá trị $x=2$ thỏa điều kiện, nên\n\n$$T(2)=3\\cdot2^2-2\\cdot2+1=12-4+1=9.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Giải thích điều kiện gốc",
+          "content_markdown": "Rút gọn không làm phép chia ban đầu trở nên xác định tại $x=0$. Vì vậy miền xác định gốc $x\\ne0$ phải được giữ."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Ghi đúng điều kiện $x\\ne0$.",
+          "points": 1
+        },
+        {
+          "criterion": "Chia đúng từng hạng tử để được $3x^2-2x+1$.",
+          "points": 1
+        },
+        {
+          "criterion": "Thay $x=2$ và tính đúng $T=9$.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải thích đúng vì sao không được lấy lại $x=0$ sau rút gọn.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Chỉ chia hạng tử đầu cho $3x$.",
+        "Bỏ mất điều kiện $x\\ne0$ sau khi rút gọn.",
+        "Thay $x=2$ trước khi hoàn tất phép chia và thu gọn."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ04 – Chia cho đơn thức và tính giá trị",
+          "href": "../kien-thuc/04-bieu-thuc-dai-so/core/"
+        },
+        {
+          "label": "Practice Room CĐ04",
+          "href": "../kien-thuc/04-bieu-thuc-dai-so/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/04-bieu-thuc-dai-so/bai-tap.md#04-WR-07",
+        "docs/kien-thuc/04-bieu-thuc-dai-so/bai-tap.md#04-WR-08",
+        "docs/assets/data/curriculum/topic04-learning-workspace.json#alg04-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/36_NOTEBOOKLM_EXPANSION_B5_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX05-IDN-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT05",
+      "topic_slug": "05-7-hang-dang-thuc",
+      "topic_title": "7 Hằng đẳng thức đáng nhớ",
+      "problem_type_id": "perfect-square-reverse-identification",
+      "problem_type_title": "Nhận dạng bình phương hoàn chỉnh",
+      "title": "Kiểm tra đủ hai bình phương và hạng tử giữa",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "binh-phuong-hieu",
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "prerequisites": [
+        "nhan-bieu-thuc"
+      ],
+      "estimated_minutes": 8,
+      "problem_markdown": "Viết đa thức\n\n$$x^2-10x+25$$\n\ndưới dạng bình phương của một hiệu. Hãy chỉ rõ ba thành phần dùng để nhận dạng và khai triển ngược để kiểm tra.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Nhận hai bình phương",
+          "content_markdown": "Ta có\n\n$$x^2=(x)^2,\\qquad 25=5^2.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Kiểm tra hạng tử giữa",
+          "content_markdown": "Hạng tử giữa là\n\n$$-10x=-2\\cdot x\\cdot5,$$\n\nđúng với mẫu $A^2-2AB+B^2$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Viết bình phương hoàn chỉnh",
+          "content_markdown": "Vì vậy\n\n$$x^2-10x+25=(x-5)^2.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Khai triển ngược để kiểm tra",
+          "content_markdown": "Ta có\n\n$$(x-5)^2=x^2-10x+25,$$\n\ntrùng với đa thức ban đầu."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Nhận đúng $x^2$ và $25$ là hai bình phương.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra đúng $-10x=-2\\cdot x\\cdot5$.",
+          "points": 1
+        },
+        {
+          "criterion": "Viết đúng $(x-5)^2$.",
+          "points": 1
+        },
+        {
+          "criterion": "Khai triển ngược đúng để kiểm tra.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Chỉ nhìn hạng tử đầu và cuối rồi kết luận mà không kiểm tra hạng tử giữa.",
+        "Viết $(x+5)^2$ dù hạng tử giữa mang dấu âm.",
+        "Viết $(x-5)^2=x^2-25$."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ05 – Bình phương tổng và hiệu",
+          "href": "../kien-thuc/05-7-hang-dang-thuc/core/"
+        },
+        {
+          "label": "Practice Room CĐ05",
+          "href": "../kien-thuc/05-7-hang-dang-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/05-7-hang-dang-thuc/bai-tap.md#05-WR-02",
+        "docs/kien-thuc/05-7-hang-dang-thuc/bai-tap.md#05-WR-03",
+        "docs/assets/data/curriculum/topic05-learning-workspace.json#id05-core-1",
+        "docs/assets/data/curriculum/topic05-learning-workspace.json#id05-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/36_NOTEBOOKLM_EXPANSION_B5_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX05-IDN-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT05",
+      "topic_slug": "05-7-hang-dang-thuc",
+      "topic_title": "7 Hằng đẳng thức đáng nhớ",
+      "problem_type_id": "difference-of-squares-structured-simplify",
+      "problem_type_title": "Rút gọn bằng hiệu hai bình phương",
+      "title": "Nhìn hai bình phương như A²−B² trước khi khai triển dài",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "hieu-hai-binh-phuong",
+        "nhan-dang-hdt",
+        "rut-gon-hdt"
+      ],
+      "prerequisites": [
+        "binh-phuong-tong",
+        "binh-phuong-hieu"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Rút gọn\n\n$$E=(2x+5)^2-(2x-5)^2$$\n\nbằng cách nhận dạng cấu trúc hằng đẳng thức trước, không khai triển riêng từng bình phương.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Đặt cấu trúc A và B",
+          "content_markdown": "Đặt\n\n$$A=2x+5,\\qquad B=2x-5.$$\n\nKhi đó $E=A^2-B^2$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Dùng hiệu hai bình phương",
+          "content_markdown": "Áp dụng\n\n$$A^2-B^2=(A-B)(A+B).$$\n\nSuy ra\n\n$$E=[(2x+5)-(2x-5)]\\,[(2x+5)+(2x-5)].$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Rút gọn hai nhân tử",
+          "content_markdown": "Ta có\n\n$$(2x+5)-(2x-5)=10,$$\n\n$$(2x+5)+(2x-5)=4x.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận",
+          "content_markdown": "Do đó\n\n$$\\boxed{E=10\\cdot4x=40x}.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Nhận đúng cấu trúc $A^2-B^2$.",
+          "points": 1
+        },
+        {
+          "criterion": "Áp dụng đúng $(A-B)(A+B)$.",
+          "points": 1
+        },
+        {
+          "criterion": "Rút gọn đúng hai nhân tử thành $10$ và $4x$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kết luận đúng $E=40x$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Áp dụng sai thành $(A-B)^2$.",
+        "Bỏ ngoặc sai khi tính $(2x+5)-(2x-5)$.",
+        "Khai triển dài rồi dễ sai dấu thay vì dùng cấu trúc đã yêu cầu."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ05 – Hiệu hai bình phương và nhận dạng HĐT",
+          "href": "../kien-thuc/05-7-hang-dang-thuc/core/"
+        },
+        {
+          "label": "Practice Room CĐ05",
+          "href": "../kien-thuc/05-7-hang-dang-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/05-7-hang-dang-thuc/bai-tap.md#05-WR-04",
+        "docs/kien-thuc/05-7-hang-dang-thuc/bai-tap.md#05-WR-10",
+        "docs/assets/data/curriculum/topic05-learning-workspace.json#id05-core-2",
+        "docs/assets/data/curriculum/topic05-learning-workspace.json#id05-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/36_NOTEBOOKLM_EXPANSION_B5_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX06-FAC-001",
+      "exercise_kind": "standard",
+      "topic_id": "CT06",
+      "topic_slug": "06-phan-tich-da-thuc",
+      "topic_title": "Phân tích đa thức thành nhân tử",
+      "problem_type_id": "factor-common-sign-flip",
+      "problem_type_title": "Đổi dấu để tạo nhân tử chung",
+      "title": "Nhìn hai ngoặc đối nhau trước khi đặt nhân tử",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "nhan-tu-chung",
+        "doi-dau-nhan-tu-chung"
+      ],
+      "prerequisites": [
+        "thu-gon-da-thuc"
+      ],
+      "estimated_minutes": 9,
+      "problem_markdown": "Phân tích hoàn toàn thành nhân tử:\n\n$$P=2x(x-y)+4(y-x).$$\n\nHãy chỉ rõ bước đổi dấu của ngoặc trước khi đặt nhân tử chung.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Nhận hai ngoặc đối nhau",
+          "content_markdown": "Ta có\n\n$$y-x=-(x-y).$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Đổi về cùng một ngoặc",
+          "content_markdown": "Do đó\n\n$$P=2x(x-y)-4(x-y).$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Đặt nhân tử chung",
+          "content_markdown": "Đặt $2(x-y)$ làm nhân tử chung:\n\n$$P=2(x-y)(x-2).$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra nhanh",
+          "content_markdown": "Nhân ngược:\n\n$$2(x-y)(x-2)=2x(x-y)-4(x-y)=2x(x-y)+4(y-x),$$\n\nđúng với biểu thức ban đầu."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Dùng đúng $y-x=-(x-y)$.",
+          "points": 1
+        },
+        {
+          "criterion": "Đổi biểu thức về $2x(x-y)-4(x-y)$.",
+          "points": 1
+        },
+        {
+          "criterion": "Đặt đúng nhân tử chung để được $2(x-y)(x-2)$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra ngược hợp lệ.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Xem $y-x$ và $x-y$ là cùng một ngoặc.",
+        "Đổi dấu ngoặc nhưng quên đổi dấu hệ số đi kèm.",
+        "Chỉ đặt $(x-y)$ chung và không rút tiếp nhân tử số $2$."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ06 – Nhân tử chung và đổi dấu",
+          "href": "../kien-thuc/06-phan-tich-da-thuc/core/"
+        },
+        {
+          "label": "Practice Room CĐ06",
+          "href": "../kien-thuc/06-phan-tich-da-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/06-phan-tich-da-thuc/bai-tap.md#06-WR-01",
+        "docs/kien-thuc/06-phan-tich-da-thuc/bai-tap.md#06-WR-02",
+        "docs/assets/data/curriculum/topic06-learning-workspace.json#fac06-core-1"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/36_NOTEBOOKLM_EXPANSION_B5_R1_PASS_RECEIPT.md"
+      }
+    },
+    {
+      "exercise_id": "WX06-FAC-002",
+      "exercise_kind": "standard",
+      "topic_id": "CT06",
+      "topic_slug": "06-phan-tich-da-thuc",
+      "topic_title": "Phân tích đa thức thành nhân tử",
+      "problem_type_id": "factor-grouping-then-identity",
+      "problem_type_title": "Nhóm hạng tử rồi tiếp tục bằng hằng đẳng thức",
+      "title": "Không dừng khi nhân tử vẫn còn phân tích được",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "grade_overlay": [
+        8
+      ],
+      "skills": [
+        "nhom-hang-tu",
+        "phoi-hop-phuong-phap",
+        "hieu-hai-binh-phuong",
+        "kiem-tra-phan-tich"
+      ],
+      "prerequisites": [
+        "nhan-tu-chung",
+        "hieu-hai-binh-phuong"
+      ],
+      "estimated_minutes": 13,
+      "problem_markdown": "Phân tích **hoàn toàn** thành nhân tử:\n\n$$Q=x^3+2x^2-9x-18.$$\n\nSau khi phân tích, hãy nhân ngược hoặc kiểm tra cấu trúc để xác nhận kết quả.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Nhóm có mục đích",
+          "content_markdown": "Nhóm hai hạng tử đầu và hai hạng tử sau:\n\n$$Q=(x^3+2x^2)+(-9x-18).$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Đặt nhân tử từng nhóm",
+          "content_markdown": "Ta được\n\n$$Q=x^2(x+2)-9(x+2)=(x+2)(x^2-9).$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Tiếp tục phân tích",
+          "content_markdown": "Vì\n\n$$x^2-9=x^2-3^2=(x-3)(x+3),$$\n\nnên\n\n$$Q=(x+2)(x-3)(x+3).$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra đã phân tích hoàn toàn",
+          "content_markdown": "Ba nhân tử bậc nhất không còn phân tích tiếp bằng các phương pháp Core đã học. Nhân $(x-3)(x+3)=x^2-9$ rồi nhân với $(x+2)$ sẽ thu lại $x^3+2x^2-9x-18$."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Nhóm đúng để xuất hiện chung $(x+2)$.",
+          "points": 1
+        },
+        {
+          "criterion": "Đặt nhân tử đúng và được $(x+2)(x^2-9)$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tiếp tục dùng hiệu hai bình phương để được $(x+2)(x-3)(x+3)$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra được kết quả và không dừng sớm.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Nhóm tùy ý khiến hai nhóm không tạo cùng một ngoặc.",
+        "Dừng ở $(x+2)(x^2-9)$ dù $x^2-9$ còn phân tích được.",
+        "Dùng kỹ thuật tách hạng tử giữa hoặc giải phương trình tích dù bài chỉ yêu cầu phân tích theo Core."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ06 – Phối hợp nhiều phương pháp",
+          "href": "../kien-thuc/06-phan-tich-da-thuc/core/"
+        },
+        {
+          "label": "Practice Room CĐ06",
+          "href": "../kien-thuc/06-phan-tich-da-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/06-phan-tich-da-thuc/bai-tap.md#06-WR-06",
+        "docs/kien-thuc/06-phan-tich-da-thuc/bai-tap.md#06-WR-08",
+        "docs/kien-thuc/06-phan-tich-da-thuc/bai-tap.md#06-WR-10",
+        "docs/assets/data/curriculum/topic06-learning-workspace.json#fac06-core-3",
+        "docs/assets/data/curriculum/topic06-learning-workspace.json#fac06-core-4",
+        "docs/assets/data/curriculum/topic06-learning-workspace.json#fac06-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001",
+        "receipt": "review-packets/written-exercise-library/36_NOTEBOOKLM_EXPANSION_B5_R1_PASS_RECEIPT.md"
+      }
     }
   ],
   "extension_policy": [
@@ -2992,6 +3564,9 @@
   ],
   "published_scope": {
     "topics": [
+      "CT04",
+      "CT05",
+      "CT06",
       "CT07",
       "CT08",
       "CT09",
@@ -3008,7 +3583,7 @@
       "CT23",
       "CT24"
     ],
-    "exercise_count": 30,
+    "exercise_count": 36,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -3037,6 +3612,12 @@
       {
         "batch_id": "EXPANSION_B4_R1",
         "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-R1-20261001",
+        "count": 6,
+        "status": "PUBLISHED"
+      },
+      {
+        "batch_id": "EXPANSION_B5_R1",
+        "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001",
         "count": 6,
         "status": "PUBLISHED"
       }

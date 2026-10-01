@@ -29,7 +29,7 @@ with sync_playwright() as p:
         )
 
         cards = page.locator(".written-exercise-card")
-        assert cards.count() == 30, (device, "thirty published cards")
+        assert cards.count() == 36, (device, "thirty-six published cards")
         assert page.locator(".written-exercise-card#wx07-rat-001").count() == 1
         assert page.locator(".written-exercise-card#wx14-tri-001 img").is_visible(), (device, "geometry figure")
 
@@ -114,9 +114,12 @@ with sync_playwright() as p:
         assert topic_page.locator(".written-exercise-card").count() == 2, (device, "CT07 deep link shows two published items")
         topic_page.close()
 
-        for topic_num, topic_id in [("08", "CT08"), ("09", "CT09"), ("10", "CT10"), ("11", "CT11"), ("12", "CT12"), ("13", "CT13"), ("15", "CT15"), ("16", "CT16"), ("17", "CT17"), ("18", "CT18"), ("19", "CT19"), ("23", "CT23")]:
+        for topic_num, topic_id in [("04", "CT04"), ("05", "CT05"), ("06", "CT06"), ("08", "CT08"), ("09", "CT09"), ("10", "CT10"), ("11", "CT11"), ("12", "CT12"), ("13", "CT13"), ("15", "CT15"), ("16", "CT16"), ("17", "CT17"), ("18", "CT18"), ("19", "CT19"), ("23", "CT23")]:
             new_topic_page = context.new_page()
             slug = {
+                "04": "04-bieu-thuc-dai-so",
+                "05": "05-7-hang-dang-thuc",
+                "06": "06-phan-tich-da-thuc",
                 "08": "08-phuong-trinh-bat-phuong-trinh",
                 "09": "09-he-phuong-trinh",
                 "10": "10-ham-so-do-thi",
@@ -147,7 +150,7 @@ with sync_playwright() as p:
 
     browser.close()
 
-print("PASS: Written Exercise Library renders thirty published items on desktop/mobile.")
+print("PASS: Written Exercise Library renders thirty-six published items on desktop/mobile.")
 print("PASS: topic/level/search filters, geometry figure and MathJax work.")
 print("PASS: compact 3-action help row is presentation-only with no localStorage write.")
 print("PASS: quick shortcut and topic deep link open the written library with CT07 auto-filter.")

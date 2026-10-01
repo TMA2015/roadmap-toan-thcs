@@ -1,5 +1,5 @@
 {
-  "version": "1.0.119",
+  "version": "1.0.120",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.119",
-      "review_verdict": "B4_OWNER_PASS_B5_REVIEW_ONLY_NEXT",
-      "review_notes": "B4 owner QA PASS on iPad and desktop. Production remains 30 items / 15 topics. Next academic expansion B5 review-only: CT04/CT05/CT06, two items per topic. CT22 remains THPT-Bridge and is not forced into the Core Written Library. Patch 1 deep-link owner spot-check remains independent and non-blocking."
+      "context_version": "1.0.120",
+      "review_verdict": "B5_NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
+      "review_notes": "B5 NotebookLM PASS 6/6 + ARCH_1..ARCH_10 for CT04/CT05/CT06. Separate implementation branch stages append-only expansion from 30 to 36 items / 18 topics. CT22 remains THPT-Bridge and is intentionally outside the Core Written Library. No automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -822,6 +822,15 @@
       "context_version": "1.0.119",
       "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
       "review_notes": "Owner production QA PASS on both iPad and desktop: CT13, CT15 and CT23 are present and each exposes exactly 2 exercises. Release provenance remains PR #248 / merge 83db880966bd0dcfaf594811ff30abff1e9edd9a / Deploy MkDocs 36882280354 SUCCESS. B4 closed."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-001",
+      "title": "Expand Written Exercise Library to CĐ04/CĐ05/CĐ06",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "OPEN",
+      "context_version": "1.0.120",
+      "review_verdict": "NOTEBOOKLM_PASS_6_OF_6_ARCH_10_OF_10_TECHNICAL_IMPLEMENTATION_STAGED",
+      "review_notes": "NotebookLM academic R1 PASS for WX04-ALG-001/002, WX05-IDN-001/002, WX06-FAC-001/002. Authorization is limited to separate technical implementation/QA. Append-only catalog expansion to 36 items / 18 topics; CT22 remains THPT-Bridge; no automatic Readiness/mastery credit; no canonical-evidence/G3 expansion."
     }
   ]
 }
