@@ -185,9 +185,9 @@ Tìm số tự nhiên nhỏ nhất có đúng ba thừa số nguyên tố khác 
 
 ---
 
-# Liên kết Roadmap
+## Liên kết Roadmap
 
-- **← Học kiến thức:** [Chuyên đề 02 – Số và phép tính](index.md)
 - **← Chuyên đề trước:** [01 – Bản đồ chương trình Toán THCS](../01-ban-do-chuong-trinh/index.md)
+- **← Học kiến thức:** [Chuyên đề 02 – Số và phép tính](index.md)
 - **→ Tự kiểm tra:** [Tự kiểm tra Chuyên đề 02](tu-kiem-tra.md)
 - **→ Chuyên đề tiếp theo:** [03 – Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ](../03-ti-le-ti-le-thuc/index.md)
