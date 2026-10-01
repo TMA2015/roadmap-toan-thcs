@@ -29,7 +29,7 @@ with sync_playwright() as p:
         )
 
         cards = page.locator(".written-exercise-card")
-        assert cards.count() == 12, (device, "twelve published cards")
+        assert cards.count() == 18, (device, "eighteen published cards")
         assert page.locator(".written-exercise-card#wx07-rat-001").count() == 1
         assert page.locator(".written-exercise-card#wx14-tri-001 img").is_visible(), (device, "geometry figure")
 
@@ -114,11 +114,14 @@ with sync_playwright() as p:
         assert topic_page.locator(".written-exercise-card").count() == 2, (device, "CT07 deep link shows two published items")
         topic_page.close()
 
-        for topic_num, topic_id in [("08", "CT08"), ("17", "CT17"), ("19", "CT19")]:
+        for topic_num, topic_id in [("08", "CT08"), ("09", "CT09"), ("16", "CT16"), ("17", "CT17"), ("18", "CT18"), ("19", "CT19")]:
             new_topic_page = context.new_page()
             slug = {
                 "08": "08-phuong-trinh-bat-phuong-trinh",
+                "09": "09-he-phuong-trinh",
+                "16": "16-tu-giac",
                 "17": "17-thales-dong-dang",
+                "18": "18-he-thuc-luong",
                 "19": "19-duong-tron",
             }[topic_num]
             new_topic_page.goto(BASE + "kien-thuc/" + slug + "/", wait_until="networkidle")
@@ -138,7 +141,7 @@ with sync_playwright() as p:
 
     browser.close()
 
-print("PASS: Written Exercise Library renders twelve published items on desktop/mobile.")
+print("PASS: Written Exercise Library renders eighteen published items on desktop/mobile.")
 print("PASS: topic/level/search filters, geometry figure and MathJax work.")
 print("PASS: compact 3-action help row is presentation-only with no localStorage write.")
 print("PASS: quick shortcut and topic deep link open the written library with CT07 auto-filter.")
