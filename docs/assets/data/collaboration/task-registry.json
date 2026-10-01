@@ -1,5 +1,5 @@
 {
-  "version": "1.0.128",
+  "version": "1.0.129",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.128",
-      "review_verdict": "B7_NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
-      "review_notes": "B6 owner QA closed DONE at 42 items / 21 topics. B7 NotebookLM PASS 2/2 + ARCH_1..ARCH_10 for CT21 only. Separate implementation branch stages append-only expansion to 44 items / 22 topics. Preserve CT21 five-card KNTT-Core boundary; no frequency/tần suất or grouped-data promotion, no CT22/CT25 expansion, no automatic Readiness/mastery credit and no canonical-evidence/G3 expansion."
+      "context_version": "1.0.129",
+      "review_verdict": "B7_TECHNICAL_QA_PASS_OWNER_RELEASE_PENDING",
+      "review_notes": "B7 CT21 NotebookLM PASS 2/2 + ARCH_1..ARCH_10. Implementation PR #255 exact HEAD b8aa8617212d5435d6e92311f2599e55880c1630 passed Roadmap PR Quality 36898694706, including strict MkDocs build and browser/visual QA. Prospective catalog is 44 items / 22 topics. Explicit owner controlled-release authorization is still required before any merge/deploy."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -846,9 +846,9 @@
       "title": "Expand Written Exercise Library to CĐ21 Thống kê",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
       "status": "OPEN",
-      "context_version": "1.0.128",
-      "review_verdict": "NOTEBOOKLM_PASS_TECHNICAL_IMPLEMENTATION_STAGED",
-      "review_notes": "NotebookLM PASS 2/2 + ARCH_1..ARCH_10; authorization CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA. Review PR #254 exact-head preflight 15eb19db0073455483b9576998cb1f9f93846ca6 / Roadmap PR Quality 36897216442 SUCCESS. Implementation stages WX21-STA-001 and WX21-STA-002 only, taking the prospective catalog from 42 to 44 items and 21 to 22 topics. Production release not yet authorized."
+      "context_version": "1.0.129",
+      "review_verdict": "TECHNICAL_QA_PASS_OWNER_CONTROLLED_RELEASE_PENDING",
+      "review_notes": "NotebookLM PASS 2/2 + ARCH_1..ARCH_10. Implementation PR #255 exact HEAD b8aa8617212d5435d6e92311f2599e55880c1630 passed Roadmap PR Quality 36898694706; strict MkDocs build PASS; browser interaction/visual previews PASS. Prospective catalog 44 items / 22 topics, all prior 42 IDs preserved. No production merge/deploy until explicit owner controlled-release authorization, then fresh exact-head revalidation."
     }
   ]
 }
