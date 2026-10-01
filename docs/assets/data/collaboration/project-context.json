@@ -1,5 +1,5 @@
 {
-  "version": "1.0.126",
+  "version": "1.0.127",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B6 is PRODUCTION RELEASED after saved authorization checkpoint, fresh exact-head QA PASS, merge and Deploy MkDocs SUCCESS. Owner production QA should confirm 42 items / 21 topics and CT02/CT03/CT20 each expose exactly 2 exercises. Preserve CT02 grade-6 Core scope and CT20 Core measurement/solid-geometry scope.",
+    "next_priority": "Written Library Expansion B6 is CLOSED DONE after production release and owner real-device QA PASS on both iPad and desktop. Production remains 42 items / 21 topics. Next academic scope: plan Written Library B7 for CĐ21 Thống kê only; do not force CĐ22 THPT-Bridge or CĐ25 Entrance10 into the normal Core append.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1178,7 +1178,7 @@
       ]
     },
     "written_library_expansion_b6": {
-      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "status": "DONE",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-001",
       "review_pr": 251,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001",
@@ -1254,7 +1254,7 @@
       "production_merge": "6dadcb1fb969380dc6fb5f7c241740dc769ae919",
       "deploy_run": 36893580607,
       "deploy_conclusion": "SUCCESS",
-      "owner_production_qa": "PENDING",
+      "owner_production_qa": "PASS_IPAD_DESKTOP",
       "expected_production_catalog": {
         "exercise_count": 42,
         "topic_count": 21,
@@ -1281,7 +1281,12 @@
           "CT23",
           "CT24"
         ]
-      }
+      },
+      "owner_qa_observed": [
+        "CT02, CT03 and CT20 are present in production",
+        "each B6 topic exposes exactly 2 exercises",
+        "owner checked on both iPad and desktop on 2026-10-01"
+      ]
     }
   },
   "handoff_required_fields": [

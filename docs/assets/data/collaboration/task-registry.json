@@ -1,5 +1,5 @@
 {
-  "version": "1.0.126",
+  "version": "1.0.127",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -836,10 +836,10 @@
       "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-001",
       "title": "Expand Written Exercise Library to CĐ02/CĐ03/CĐ20",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
-      "status": "OPEN",
-      "context_version": "1.0.126",
-      "review_verdict": "PRODUCTION_RELEASED_DEPLOY_SUCCESS_OWNER_PRODUCTION_QA_PENDING",
-      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Owner controlled-release authorization was saved before merge. Final authorization-checkpoint exact HEAD 1d195ee31302419927d6e03616af82bea5e1bef1 passed Roadmap PR Quality 36892813423. PR #252 merged as 6dadcb1fb969380dc6fb5f7c241740dc769ae919. Deploy MkDocs 36893580607 SUCCESS, including Deploy to GitHub Pages. Production catalog verified on main at 42 exercises / 21 topics; CT02/CT03/CT20 each have 2 reviewed items. CT02 remains grade-6 Core journey; CT20 remains Core measurement/solid geometry. Owner production QA remains."
+      "status": "DONE",
+      "context_version": "1.0.127",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
+      "review_notes": "Owner production QA PASS on both iPad and desktop: CT02, CT03 and CT20 are present and each exposes exactly 2 exercises. Release provenance remains PR #252 / merge 6dadcb1fb969380dc6fb5f7c241740dc769ae919 / Deploy MkDocs 36893580607 SUCCESS. Production remains 42 exercises / 21 topics. CT02 remains grade-6 Core journey; CT20 remains Core measurement/solid geometry. B6 closed."
     }
   ]
 }

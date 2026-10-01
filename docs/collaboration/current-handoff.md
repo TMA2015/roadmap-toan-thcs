@@ -1,12 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B6 PRODUCTION RELEASED / owner QA pending.** Owner controlled-release authorization was persisted before merge. Fresh exact HEAD `1d195ee31302419927d6e03616af82bea5e1bef1` passed Roadmap PR Quality `36892813423`; PR #252 merged as `6dadcb1fb969380dc6fb5f7c241740dc769ae919`; Deploy MkDocs `36893580607` succeeded through **Deploy to GitHub Pages**. Production catalog verified at **42 items / 21 topics**. Owner QA should confirm CĐ02/CĐ03/CĐ20 each show 2 items. CĐ02 remains grade-6 Core journey; CĐ20 remains Core measurement/solid geometry. No Readiness/mastery/canonical-evidence/G3 expansion.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B6 CLOSED DONE.** PR #252 merged as `6dadcb1fb969380dc6fb5f7c241740dc769ae919`; Deploy MkDocs `36893580607` succeeded through **Deploy to GitHub Pages**; production catalog is **42 items / 21 topics**. Owner real-device QA **PASS on both iPad and desktop**: CĐ02/CĐ03/CĐ20 are present and each exposes exactly 2 exercises. CĐ02 remains grade-6 Core journey; CĐ20 remains Core measurement/solid geometry. No Readiness/mastery/canonical-evidence/G3 expansion. Next academic scope is a separate B7 for CĐ21 Thống kê only; do not force CĐ22 THPT-Bridge or CĐ25 Entrance10 into the normal Core append.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
-## Written Library Expansion B6 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
+## Written Library Expansion B6 — CLOSED DONE / owner QA PASS (01/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B6-001`.
 - Academic packet: `MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001`.
@@ -31,8 +31,10 @@
 - PR #252 production merge: `6dadcb1fb969380dc6fb5f7c241740dc769ae919`.
 - Deploy MkDocs `36893580607`: **SUCCESS**, including `Deploy to GitHub Pages`.
 - Production catalog verified on `main`: **42 items / 21 topics** — CĐ02, CĐ03, CĐ04, CĐ05, CĐ06, CĐ07, CĐ08, CĐ09, CĐ10, CĐ11, CĐ12, CĐ13, CĐ14, CĐ15, CĐ16, CĐ17, CĐ18, CĐ19, CĐ20, CĐ23, CĐ24.
-- Owner production QA: **PENDING** — refresh the library and confirm CĐ02/CĐ03/CĐ20 each expose exactly 2 items.
+- Owner production QA: **PASS on both iPad and desktop** — CĐ02/CĐ03/CĐ20 are present and each exposes exactly 2 items.
+- B6 status: **CLOSED DONE**.
 - Architecture scope remains: CĐ02 grade-6 Core journey; CĐ20 Core measurement/solid geometry.
+- Next academic scope: **Written Library B7 for CĐ21 Thống kê only**. CĐ22 remains THPT-Bridge; CĐ25 remains Entrance10/tổng hợp and is not forced into the normal Core append.
 
 ## Written Library Expansion B5 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
 
