@@ -6,7 +6,7 @@ Packet ID: `MATH-WRITTEN-LIBRARY-EXPANSION-B7-R1-20261001`
 
 Review **only** the material in this packet.
 
-- Base production checkpoint: `9b94dfbbb092c145a558af38afedd7ad87bb3fde`
+- Base production checkpoint after B6 owner-QA closure: `0bb3ee85e6bb57a7ab86dce88bf25eeee16a677d`
 - Review branch: `review/written-library-expansion-b7-r1-20261001`
 - Candidate JSON: `review-packets/written-exercise-library/44_WRITTEN_EXPANSION_B7_CANDIDATE.json`
   - blob: `9b27714fdb9f96c5f4512759c6e9766629838dc9`
