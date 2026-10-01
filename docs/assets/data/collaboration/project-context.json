@@ -1,5 +1,5 @@
 {
-  "version": "1.0.122",
+  "version": "1.0.123",
   "updated": "2026-10-01",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B5 is PRODUCTION RELEASED after saved authorization checkpoint, fresh exact-head QA PASS, merge and Deploy MkDocs SUCCESS. Owner production QA should confirm 36 items / 18 topics and CT04/CT05/CT06 each expose exactly 2 exercises. CT22 remains THPT-Bridge and outside the THCS Core Written Library.",
+    "next_priority": "Written Library B5 owner production QA PASS on iPad and desktop and CLOSED. Proceed with Expansion B6 as review-only for CT02/CT03/CT20, two items per topic (CORE_BASE + CORE_APPLY), with NotebookLM required before implementation. CT01 is roadmap-only, CT22 is THPT-Bridge, and CT25 remains Entrance10/separate-anchor territory.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1083,7 +1083,7 @@
       ]
     },
     "written_library_expansion_b5": {
-      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
       "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-001",
       "review_pr": 249,
       "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001",
@@ -1146,7 +1146,7 @@
       "production_merge": "798cc58919aa15cd69fa28aeb5132929047f3113",
       "deploy_run": 36887406960,
       "deploy_conclusion": "SUCCESS",
-      "owner_production_qa": "PENDING",
+      "owner_production_qa": "PASS_IPAD_DESKTOP",
       "expected_production_catalog": {
         "exercise_count": 36,
         "topic_count": 18,
@@ -1170,7 +1170,12 @@
           "CT23",
           "CT24"
         ]
-      }
+      },
+      "owner_qa_observed": [
+        "CT04, CT05 and CT06 are present in production",
+        "each B5 topic exposes exactly 2 exercises",
+        "owner checked on both iPad and desktop"
+      ]
     }
   },
   "handoff_required_fields": [

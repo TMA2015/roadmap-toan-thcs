@@ -1,5 +1,5 @@
 {
-  "version": "1.0.122",
+  "version": "1.0.123",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-01",
   "statuses": [
@@ -756,9 +756,9 @@
       "title": "Build paper-first written exercise and anchor library",
       "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
       "status": "OPEN",
-      "context_version": "1.0.122",
-      "review_verdict": "B5_RELEASED_36_ITEMS_18_TOPICS_OWNER_QA_PENDING",
-      "review_notes": "Written Library production now contains 36 items / 18 topics after B5 release. Owner production QA should confirm CT04/CT05/CT06 appear and each has exactly 2 exercises. CT22 remains THPT-Bridge. Patch 1 topic deep-link owner spot-check remains independent."
+      "context_version": "1.0.123",
+      "review_verdict": "B5_OWNER_PASS_B6_REVIEW_ONLY_NEXT",
+      "review_notes": "B5 owner QA PASS on iPad and desktop. Production remains 36 items / 18 topics. Next academic expansion B6 review-only: CT02/CT03/CT20, two items per topic. CT01 is roadmap-only; CT22 remains THPT-Bridge; CT25 remains Entrance10 with separate anchor/source handling."
     },
     {
       "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
@@ -827,10 +827,10 @@
       "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-001",
       "title": "Expand Written Exercise Library to CĐ04/CĐ05/CĐ06",
       "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
-      "status": "OPEN",
-      "context_version": "1.0.122",
-      "review_verdict": "PRODUCTION_RELEASED_DEPLOY_SUCCESS_OWNER_PRODUCTION_QA_PENDING",
-      "review_notes": "NotebookLM PASS 6/6 + ARCH_1..ARCH_10. Owner controlled-release authorization was saved before merge. Final authorization-checkpoint exact HEAD 6f5ad2fb23e6cbce07e26b80901ca05297a73978 passed Roadmap PR Quality 36886706322. PR #250 merged as 798cc58919aa15cd69fa28aeb5132929047f3113. Deploy MkDocs 36887406960 SUCCESS, including Deploy to GitHub Pages. Production catalog verified on main at 36 exercises / 18 topics; CT04/CT05/CT06 each have 2 reviewed items. CT22 remains THPT-Bridge. Owner production QA remains."
+      "status": "DONE",
+      "context_version": "1.0.123",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
+      "review_notes": "Owner production QA PASS on both iPad and desktop: CT04, CT05 and CT06 are present and each exposes exactly 2 exercises. Release provenance remains PR #250 / merge 798cc58919aa15cd69fa28aeb5132929047f3113 / Deploy MkDocs 36887406960 SUCCESS. B5 closed."
     }
   ]
 }

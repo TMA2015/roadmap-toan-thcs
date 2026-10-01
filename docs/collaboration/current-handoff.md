@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 01/10/2026, Written Library Expansion B5 PRODUCTION RELEASED / owner QA pending.** Owner controlled-release authorization was persisted before merge. Fresh exact HEAD `6f5ad2fb23e6cbce07e26b80901ca05297a73978` passed Roadmap PR Quality `36886706322`; PR #250 merged as `798cc58919aa15cd69fa28aeb5132929047f3113`; Deploy MkDocs `36887406960` succeeded through **Deploy to GitHub Pages**. Production catalog verified at **36 items / 18 topics**. Owner QA should confirm CĐ04/CĐ05/CĐ06 each show 2 items. **CĐ22 remains THPT-Bridge.** No Readiness/mastery/canonical-evidence/G3 expansion.
+> **CURRENT CHECKPOINT — 01/10/2026, Written Library B5 OWNER QA PASS on iPad + desktop / CLOSED; B6 review-only next.** Production remains **36 items / 18 topics**. B5 is closed. Next academic expansion is **B6 review-only: CĐ02 + CĐ03 + CĐ20**, two items per topic (CORE_BASE + CORE_APPLY), with NotebookLM required before implementation. **CĐ01 is roadmap-only; CĐ22 remains THPT-Bridge; CĐ25 remains Entrance10 with separate anchor/source handling.**
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -29,7 +29,7 @@
 - PR #250 production merge: `798cc58919aa15cd69fa28aeb5132929047f3113`.
 - Deploy MkDocs `36887406960`: **SUCCESS**, including `Deploy to GitHub Pages`.
 - Production catalog verified on `main`: **36 items / 18 topics** — CĐ04, CĐ05, CĐ06, CĐ07, CĐ08, CĐ09, CĐ10, CĐ11, CĐ12, CĐ13, CĐ14, CĐ15, CĐ16, CĐ17, CĐ18, CĐ19, CĐ23, CĐ24.
-- Owner production QA: **PENDING** — refresh the library and confirm CĐ04/CĐ05/CĐ06 each expose exactly 2 items.
+- Owner production QA: **PASS on iPad and desktop**. B5 task closed.
 - Architecture note remains: **CĐ22 is THPT-Bridge**, not forced into the THCS Core Written Library.
 
 ## Written Library Expansion B4 — PRODUCTION RELEASED / owner QA pending (01/10/2026)
