@@ -146,6 +146,8 @@ Một hình vẽ cho hai đường trông có vẻ song song nhưng đề không
 - [ ] Khi tương đối chắc, tôi chuyển sang [✅ Core Readiness Check](tu-kiem-tra.md).
 
 ## Liên kết Roadmap
-- **← Học:** [Chuyên đề 13](index.md)
+
+- **← Chuyên đề trước:** [12 – Phương trình bậc hai & Viète](../12-phuong-trinh-bac-hai-viete/index.md)
+- **← Học kiến thức:** [Chuyên đề 13 – Góc và đường thẳng](index.md)
 - **→ Tự kiểm tra:** [Core Readiness Check](tu-kiem-tra.md)
-- **→ Tiếp theo:** [14 – Tam giác](../14-tam-giac/index.md)
+- **→ Chuyên đề tiếp theo:** [14 – Tam giác](../14-tam-giac/index.md)
