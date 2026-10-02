@@ -14,7 +14,7 @@ const gitBlobSha = (buffer) => crypto.createHash("sha1")
 
 const obs = require("../docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js");
 
-const i3dPath = "docs/assets/data/curriculum/taxonomy-v2-runtime/i3e-ct02-12-r1.json";
+const i3dPath = "docs/assets/data/curriculum/taxonomy-v2-runtime/i3d-ct02-07-r1.json";
 const i3cPath = "docs/assets/data/curriculum/taxonomy-v2-runtime/i3c-ct02-04-r1.json";
 const topicPaths = [
   "docs/assets/data/curriculum/taxonomy-v2-runtime/ct02-r1.json",
