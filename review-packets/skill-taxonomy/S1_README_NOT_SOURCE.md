@@ -30,3 +30,12 @@ Academic gate:
 - reconciled candidate: `S1_SKILL_TAXONOMY_V2_RECONCILED_R1.json`.
 
 Next gate: full 240-item question-level primary-role audit for CT02 + CT03.
+
+
+240-item item-level gate:
+- CT02: 120/120 PASS, 0 revisions;
+- CT03: 120/120 PASS, 0 revisions;
+- combined: 240/240;
+- closure: `S1_240_ITEM_GATE_CLOSURE_20261002.md`.
+
+Next gate: S1 canonical-skill consolidation across CT02–CT07.
