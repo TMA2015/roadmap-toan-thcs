@@ -1,13 +1,14 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 I2 CT02 SHADOW CANARY DONE; OWNER PRODUCTION QA PASS.**  
+> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 I3A FULL-CT02 SHADOW LIVE; OWNER PRODUCTION QA PENDING.**  
 > Academic taxonomy: **131/131 family definitions PASS; 386/386 mappings PASS**.  
 > I0 durable registry: **DONE**. I1 topic policies: **DONE — 24 policies / 3,114 questions / 2,900 family-linked + 214 formative/NO_FAMILY**.  
-> I2 controlled canary: **LIVE on CT02** — **12 active questions / 4 Core families / 2 NO_FAMILY guards / max 8 independent units**.  
-> Exact I2 tested HEAD `53d6e0b90a6ceded5ace55b1c6d616c667928b3a` passed Roadmap PR Quality **37019025938**, Skill assessment pilot QA **37019026358**, and branding QA **37019026822**; merged as `e45ec7e4c5f8900f96a61ba82f9c060b94e7c8cb`; production deploy **37019804305 SUCCESS**.  
-> Post-deploy `gh-pages` verification: **PASS** @ `3b04dce9ec61211818732d6cbb6d387afe893606` — observer present, CT02 I2 policy present, and deployed CT02 Practice HTML loads the observer.  
-> New isolated store: `toan-thcs-taxonomy-v2-evidence-v1`. **No mastery, no Readiness, no backfill/regrade, no normal learner-facing Taxonomy v2 UI. G2 remains unchanged.**  
-> I2 canary gate is closed. **I3 shadow-capture expansion is READY but requires separate authorization before scope is widened.**
+> I2 CT02 canary: **DONE / OWNER PRODUCTION QA PASS**.  
+> I3A full CT02 shadow: **LIVE** — **120 rows = 103 family-linked active + 17 formative/NO_FAMILY guards / 10 Core families / max 75 independent units**.  
+> Exact I3A tested HEAD `02b39d0cf27ad2815b4f0305cda506a21ab032b7` passed Roadmap PR Quality **37025889031**; merged as `c1940bda496caeed2e4f269c1e9e087145a96275`; production deploy **37026596985 SUCCESS**.  
+> Post-deploy `gh-pages` verification: **PASS** @ `71c5900059fe1ace8c8b6f3431ae3124bde92dfb` — I3A observer build present, 103/17 policy present, deployed CT02 Practice HTML loads observer.  
+> Store remains `toan-thcs-taxonomy-v2-evidence-v1`; prior I2 evidence is preserved. **No mastery, no Readiness, no backfill/regrade, no normal learner-facing Taxonomy v2 UI. G2 remains unchanged.**  
+> **Do not expand to CT03 or beyond until owner production QA closes I3A.**
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -167,39 +168,52 @@
 - No runtime JS accesses proposed `toan-thcs-taxonomy-v2-evidence-v1`.
 - Technical receipt: `review-packets/skill-taxonomy/implementation/I1_TOPIC_POLICY_COMPILATION_TECHNICAL_CHECKPOINT.md`.
 
-### Skill Taxonomy v2 — I2 CT02 shadow canary — LIVE / OWNER QA PENDING
+### Skill Taxonomy v2 — I2 CT02 shadow canary — DONE
 - Task: `MATH-SKILL-TAXONOMY-V2-I2-001`.
 - PR: **#273**.
 - Exact tested HEAD: `53d6e0b90a6ceded5ace55b1c6d616c667928b3a`.
-- CI:
-  - Roadmap PR Quality **37019025938 — SUCCESS**
-  - Skill assessment pilot QA **37019026358 — SUCCESS**
-  - G Learning branding QA **37019026822 — SUCCESS**
-- Squash merge: `e45ec7e4c5f8900f96a61ba82f9c060b94e7c8cb`.
-- Deploy MkDocs: **37019804305 — SUCCESS**.
-- New isolated shadow store: `toan-thcs-taxonomy-v2-evidence-v1`.
-- Canary policy:
-  - `docs/assets/data/curriculum/taxonomy-v2-runtime/i2-canary-ct02-r1.json`
-  - **12** active CT02 questions;
-  - **4** Core families: NUM-SETS, NUM-INTEGER-OPS, NUM-ABS, NUM-ORDER;
-  - **2** explicit NO_FAMILY guards;
-  - maximum **8** independent units after clone de-dup;
-  - default = NO_CAPTURE.
-- Runtime:
-  - legacy Practice write remains first;
-  - G2 observer/store remain separate and unchanged;
-  - Taxonomy v2 lane is fail-open;
-  - assisted / repeat / clone semantics tested;
-  - first wrong unassisted attempt may be negative independent evidence;
-  - NO_FAMILY writes **no** Taxonomy v2 event;
-  - no migration or historical backfill;
+- Automated QA and deploy: **PASS**.
+- Owner production QA: **PASS**.
+  - debug policy loaded with `policy_ready: true` / `policy_error: null`;
+  - non-canary `NUM02V1_119` correctly returned `not_in_i2_canary`;
+  - normal learner UI showed no Taxonomy v2 QA panel.
+- Owner QA receipt: `review-packets/skill-taxonomy/implementation/I2_CT02_SHADOW_CANARY_OWNER_QA_PASS.md`.
+- I2 evidence remains valid in the same isolated store and is preserved by I3A.
+
+### Skill Taxonomy v2 — I3A full CT02 shadow — LIVE / OWNER QA PENDING
+- Task: `MATH-SKILL-TAXONOMY-V2-I3-001`.
+- PR: **#274**.
+- Exact tested HEAD: `02b39d0cf27ad2815b4f0305cda506a21ab032b7`.
+- Roadmap PR Quality: **37025889031 — SUCCESS**.
+- Squash merge: `c1940bda496caeed2e4f269c1e9e087145a96275`.
+- Deploy MkDocs: **37026596985 — SUCCESS**.
+- `gh-pages`: `71c5900059fe1ace8c8b6f3431ae3124bde92dfb` — deployed artifacts verified.
+- Policy: `docs/assets/data/curriculum/taxonomy-v2-runtime/i3a-full-ct02-r1.json`.
+- Runtime scope:
+  - CT02 total **120** rows;
+  - **103** family-linked rows active;
+  - **17** formative / NO_FAMILY no-write guards;
+  - **10** KNTT-Core learner families;
+  - maximum **75** independent units after clone de-dup.
+- Store continuity:
+  - same `toan-thcs-taxonomy-v2-evidence-v1`;
+  - prior I2 events / seen-question / independent-unit indexes are preserved;
+  - no migration and no historical backfill.
+- Runtime boundaries remain:
+  - legacy Practice write first;
+  - Canonical Evidence G2 unchanged;
+  - Taxonomy v2 separately fail-open;
+  - assisted/repeat/clone de-dup semantics preserved;
+  - wrong first-unassisted answer may be negative independent evidence;
+  - NO_FAMILY writes no Taxonomy v2 event;
   - no mastery threshold;
   - no Core Readiness credit;
   - no normal learner UI;
   - debug panel only with `?taxonomyV2Debug=1`.
-- Release receipt: `review-packets/skill-taxonomy/implementation/I2_CT02_SHADOW_CANARY_RELEASE_RECEIPT.md`.
+- Release receipt: `review-packets/skill-taxonomy/implementation/I3A_FULL_CT02_SHADOW_RELEASE_RECEIPT.md`.
 - Current gate: **OWNER PRODUCTION QA**.
-- **No I2 expansion is authorized until this gate is closed.**
+- **No CT03+ expansion is authorized until this gate is closed.**
+
 ## Written Library Expansion B7 — CLOSED DONE / owner QA PASS (02/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B7-001`.
