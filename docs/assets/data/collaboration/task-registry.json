@@ -1,5 +1,5 @@
 {
-  "version": "1.0.138",
+  "version": "1.0.139",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -926,10 +926,19 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I1-001",
       "title": "Skill Taxonomy v2 I1 — compile topic-local CT02–CT25 item policies",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA",
-      "status": "READY",
-      "context_version": "1.0.138",
-      "review_verdict": "PLANNED_NOT_STARTED",
-      "review_notes": "Next planned gate after I0. Compile the 3,114 reviewed question overlays into topic-local policies with source locks. Data-only: no observer, learner UI, mastery/Readiness, migration, backfill or regrade."
+      "status": "DONE",
+      "context_version": "1.0.139",
+      "review_verdict": "PASS_3114_OF_3114_TOPIC_LOCAL_POLICIES_RUNTIME_DISABLED",
+      "review_notes": "PR #272 merged. Exact head 35128a59... CI SUCCESS run 37016671647. 24 CT02–CT25 policies cover 3,114 unique questions: 2,900 family-linked + 214 formative/NO_FAMILY. Source bank Git blobs and legacy skill tags exact; family/layer consistency checked; no runtime JS loads policies; G2 unchanged."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I2-001",
+      "title": "Skill Taxonomy v2 I2 — shadow observer canary",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "BLOCKED",
+      "context_version": "1.0.139",
+      "review_verdict": "SEPARATE_CONTROLLED_AUTHORIZATION_REQUIRED",
+      "review_notes": "I2 is the first phase that would add runtime observer code and write new learner evidence to proposed store toan-thcs-taxonomy-v2-evidence-v1. Must preserve legacy Practice and Canonical Evidence G2, start with a bounded canary allowlist, fail open, and have rollback/QA before production activation. I1 does not authorize this automatically."
     }
   ]
 }
