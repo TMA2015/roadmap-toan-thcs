@@ -4,12 +4,10 @@ Packet ID: `MATH-SKILL-CORE03-S1-OVERLAY-R1-20261002`
 
 ## Upload these 2 temporary sources
 
-1. `primary-skill-overlay-core03-s1-phase-d-r1.json`
-   - exact blob: `5ec0da1727ad90a35e6bb866ea770564c68fd541`
-2. this review guide
-   - CT03 manifest blob: `4645eb69493281702a19a36453f999d1114736f3`
-   - S1 reconciled taxonomy blob: `ede79dc59bf3bb6512687362463bb07f1d9dbc84`
-   - v2 design contract blob: `3c8c5a082c990814c3ed9a1465172c72697735b3`
+1. `00_CT03_OVERLAY_SOURCE.md`
+   - NotebookLM-readable rendering of all 120 mappings
+   - source JSON remains repo provenance only and is **not** uploaded to NotebookLM
+2. this review guide: `01_NOTEBOOKLM_REVIEW_GUIDE_CORE03_R1.md`
 
 Use only these selected review sources plus the already-frozen permanent project sources.
 
