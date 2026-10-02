@@ -2,13 +2,13 @@
 
 Task scope: CĐ02–CĐ07.
 
-Status: **REVIEW_ONLY / GEMINI_REVIEW_PENDING / NOT_RUNTIME_ENABLED**
+Status: **REVIEW_ONLY / NOTEBOOKLM_REVIEW_PENDING / NOT_RUNTIME_ENABLED**
 
 Artifacts:
 - design contract: `docs/roadmap/skill-taxonomy-v2-design-contract.md`
 - candidate: `S1_SKILL_TAXONOMY_V2_CANDIDATE_R1.json`
-- Gemini upload packet: `S1_UPLOAD_TO_GEMINI_R1.md`
-- Gemini prompt: `S1_COPY_TO_GEMINI_R1.txt`
+- NotebookLM upload packet: `S1_UPLOAD_TO_NOTEBOOKLM_R1.md`
+- NotebookLM compact prompt: `S1_COPY_TO_NOTEBOOKLM_R1.txt`
 
 Scope facts:
 - 732 Practice questions;
