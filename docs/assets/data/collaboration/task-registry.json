@@ -1,5 +1,5 @@
 {
-  "version": "1.0.149",
+  "version": "1.0.150",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -989,10 +989,19 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I3F-001",
       "title": "Skill Taxonomy v2 I3F — CT13–CT20 shadow expansion",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.150",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "Owner production QA PASS on 2026-10-03. Live snapshot: build taxonomy-v2-i3f-ct02-20-20261003, policy_ready=true, policy_error=null, 41 recent events / 41 seen questions / 34 independent units; last capture GEO19V1_060 -> CIRCLE-CYCLIC / dau-hieu-noi-tiep with independent_evidence=false and clone_family_repeat. S3 CT13–CT20 accepted."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I3G-001",
+      "title": "Skill Taxonomy v2 I3G — full CT02–CT25 shadow rollout",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.149",
+      "context_version": "1.0.150",
       "review_verdict": "IMPLEMENTATION_BRANCH_PRE_CI",
-      "review_notes": "Expand Taxonomy v2 shadow capture through CT20 using the academically closed S3 batch. Cumulative scope 2502 rows: 2408 active, 94 NO_FAMILY guards, 108 families, max 543 independent units. S3 adds 1146 rows: 1136 active + 10 intentional guards across 44 families. G2 remains frozen to CT04–CT07; CT21+ remains outside this gate."
+      "review_notes": "Final shadow expansion through CT25. Full reviewed practice coverage: 3114 rows = 2900 active + 214 NO_FAMILY guards, 127 evidence-bearing families, max 650 topic-scoped independent units. Registry remains 131 families; four intentionally have no direct runtime evidence in the current bank: RATIO-MODEL, ID-APPLY, ID-PROOF, RATEX-INTEGER. Final CT21–CT25 batch adds 612 rows = 492 active + 120 guards. G2 remains frozen to CT04–CT07. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF."
     }
   ]
 }
