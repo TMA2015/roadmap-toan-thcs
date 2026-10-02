@@ -2,7 +2,7 @@
 
 Task scope: CĐ02–CĐ07.
 
-Status: **REVIEW_ONLY / NOTEBOOKLM_REVIEW_PENDING / NOT_RUNTIME_ENABLED**
+Status: **NOTEBOOKLM_PASS / S1_RECONCILIATION_CLEARED / CT02_CT03_ITEM_AUDIT_PENDING / NOT_RUNTIME_ENABLED**
 
 Artifacts:
 - design contract: `docs/roadmap/skill-taxonomy-v2-design-contract.md`
@@ -19,3 +19,14 @@ Scope facts:
 - CĐ02–CĐ03: full question-level primary-role audit still pending.
 
 No runtime, learner-history, Readiness/mastery, canonical-evidence or Knowledge Graph migration is authorized here.
+
+
+Academic gate:
+- NotebookLM 87/87 taxonomy rows PASS;
+- 8/8 written gaps PASS;
+- ARCH_1..ARCH_12 PASS;
+- `CLEARED_FOR_S1_RECONCILIATION`;
+- receipt: `S1_NOTEBOOKLM_R1_PASS_RECEIPT.md`;
+- reconciled candidate: `S1_SKILL_TAXONOMY_V2_RECONCILED_R1.json`.
+
+Next gate: full 240-item question-level primary-role audit for CT02 + CT03.
