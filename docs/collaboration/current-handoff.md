@@ -1,12 +1,13 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 ACADEMIC PROGRAM CLOSED; I0 DURABLE REGISTRY DONE.**  
+> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 ACADEMIC PROGRAM CLOSED; I0 + I1 DONE.**  
 > Academic taxonomy: **131/131 family definitions PASS; 386/386 mappings PASS; 0 cross-batch fixes**.  
 > Reviewed Practice basis: **3,114 questions** across CT02–CT25.  
-> I0 registry is merged to `main`: **131 families / 386 mappings / 20 intentional NO_FAMILY / 14 total CROSS_TOPIC_REUSE**, including the **5 reviewed CT24 canonical reuse mappings**.  
-> Exact I0 tested HEAD `ae8b7264fedbbe62e16b7d2d6a98634341554aa1` passed Roadmap PR Quality run **37013490363** and merged as `a8b619a2b1ed5d572f615cd7178e0906978eaa6a`.  
-> **Runtime/mastery/Readiness/history migration remains OFF. Canonical Evidence G2 is unchanged.**  
-> Next planned gate: **I1 topic-local CT02–CT25 item-policy compilation**, data-only and not yet started.
+> I0 registry: **DONE** — 131 families / 386 mappings / 20 intentional NO_FAMILY / 14 total CROSS_TOPIC_REUSE.  
+> I1 topic policies: **DONE** — **24 policies**, **3,114/3,114 unique question rows**, **2,900 family-linked + 214 formative/NO_FAMILY**.  
+> Exact I1 tested HEAD `35128a591e60e7737c00d2f63d3713b8d50d43ad` passed Roadmap PR Quality run **37016671647** and merged as `144772d4464aa03d79ddcaf543dcc4fc7a956145`.  
+> **Runtime/mastery/Readiness/history migration remains OFF. No Taxonomy v2 observer or learner-data write exists. Canonical Evidence G2 is unchanged.**  
+> Next gate: **I2 shadow observer canary — BLOCKED pending separate controlled authorization**, because I2 is the first phase that would write new Taxonomy v2 learner evidence.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -144,12 +145,41 @@
 - Technical receipt: `review-packets/skill-taxonomy/implementation/I0_DURABLE_REGISTRY_TECHNICAL_CHECKPOINT.md`.
 - **No learner UI change. No learner-data write. No backfill/regrade. No mastery/Readiness activation.**
 
-### Skill Taxonomy v2 — next planned gate I1
+### Skill Taxonomy v2 — I1 DONE
 - Task: `MATH-SKILL-TAXONOMY-V2-I1-001`.
-- Status: **READY / NOT STARTED**.
-- Scope: compile the **3,114 reviewed Practice questions** into topic-local CT02–CT25 policy files with source locks.
-- I1 remains **data-only**: no observer, no learner UI, no mastery/Readiness, no migration/backfill/regrade.
-- Existing Canonical Evidence G2 remains protected and unchanged.
+- PR: **#272**.
+- Exact tested HEAD: `35128a591e60e7737c00d2f63d3713b8d50d43ad`.
+- Roadmap PR Quality: run **37016671647 — SUCCESS**.
+- Squash merge to main: `144772d4464aa03d79ddcaf543dcc4fc7a956145`.
+- Runtime-disabled index:
+  - `docs/assets/data/curriculum/taxonomy-v2-runtime/index-r1.json`
+  - blob `592075ed951a55c7b0c6b81255e1ca51c9672339`
+- Compiled scope:
+  - **24** topic policy files: CT02 → CT25;
+  - **3,114** reviewed question rows / **3,114 unique IDs**;
+  - **2,900** family-linked rows;
+  - **214** formative / NO_FAMILY rows;
+  - largest topic policy **195 rows**;
+  - no monolithic 3,114-row runtime payload.
+- I1 CI verifies current Practice bank Git blob SHAs, exact question-ID coverage, exact legacy skill tags, family/layer consistency, source overlay locks, and global ID uniqueness.
+- Existing `toan-thcs-practice-v1` and Canonical Evidence G2 `toan-thcs-canonical-evidence-v2` remain unchanged.
+- No runtime JS loads `taxonomy-v2-runtime/`.
+- No runtime JS accesses proposed `toan-thcs-taxonomy-v2-evidence-v1`.
+- Technical receipt: `review-packets/skill-taxonomy/implementation/I1_TOPIC_POLICY_COMPILATION_TECHNICAL_CHECKPOINT.md`.
+
+### Skill Taxonomy v2 — I2 shadow observer canary — BLOCKED
+- Task: `MATH-SKILL-TAXONOMY-V2-I2-001`.
+- I2 is the **first runtime/data-write phase**.
+- Proposed new store: `toan-thcs-taxonomy-v2-evidence-v1`.
+- Required boundaries before activation:
+  - bounded canary allowlist;
+  - existing G2 observer/store unchanged;
+  - existing Practice counters/history unchanged;
+  - assisted/repeat/clone de-duplication;
+  - NO_FAMILY gives no family evidence;
+  - fail-open if Taxonomy v2 policy fails;
+  - rollback path + exact-head CI + controlled owner QA.
+- **Separate controlled authorization is required before I2 implementation/activation.**
 ## Written Library Expansion B7 — CLOSED DONE / owner QA PASS (02/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B7-001`.
