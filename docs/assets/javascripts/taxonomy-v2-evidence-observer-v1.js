@@ -6,11 +6,14 @@
   const STORE_KEY = "toan-thcs-taxonomy-v2-evidence-v1";
   const STORE_SCHEMA = "taxonomy-v2-evidence-store-v1";
   const EVENT_SCHEMA = "taxonomy-v2-evidence-event-v1";
-  const POLICY_SCHEMA = "skill-taxonomy-v2-i2-canary-policy-r1";
+  const I2_POLICY_SCHEMA = "skill-taxonomy-v2-i2-canary-policy-r1";
+  const I3A_POLICY_SCHEMA = "skill-taxonomy-v2-i3a-ct02-policy-r1";
   const ACTIVE_STATUS = "I2_CANARY_ACTIVE";
   const GUARD_STATUS = "I2_CANARY_NO_CAPTURE_GUARD";
+  const I3A_ACTIVE_STATUS = "I3A_CT02_ACTIVE";
+  const I3A_GUARD_STATUS = "I3A_CT02_NO_FAMILY_GUARD";
   const MAX_RECENT = 500;
-  const BUILD = "taxonomy-v2-i2-ct02-canary-20261002";
+  const BUILD = "taxonomy-v2-i3a-full-ct02-20261002";
   const EXPECTED_REGISTRY_BLOB = "c2f2e5b8d78a58d874f88524861326223fdbdf45";
   const EXPECTED_CT02_POLICY_BLOB = "30a4ede71d6119ffd612aef8b153f1c7d2a786d2";
 
@@ -157,8 +160,14 @@
     return next;
   };
 
+  const isActiveCaptureStatus = (status) =>
+    status === ACTIVE_STATUS || status === I3A_ACTIVE_STATUS;
+
+  const isGuardCaptureStatus = (status) =>
+    status === GUARD_STATUS || status === I3A_GUARD_STATUS;
+
   const recordAttemptToStore = (storeLike, row, input, policy, now, eventId) => {
-    if (row.capture_status !== ACTIVE_STATUS || !row.family_id) {
+    if (!isActiveCaptureStatus(row.capture_status) || !row.family_id) {
       throw new Error("row_not_capture_eligible");
     }
     const assessment = classifyAttempt(storeLike, row, input);
@@ -166,13 +175,44 @@
     return { assessment, event, store: appendEvent(storeLike, row, event) };
   };
 
+  const policyProfile = (policy) => {
+    if (policy?.schema === I2_POLICY_SCHEMA) {
+      return {
+        schema: I2_POLICY_SCHEMA,
+        state: "I2_SHADOW_CANARY_ACTIVE",
+        active_status: ACTIVE_STATUS,
+        guard_status: GUARD_STATUS,
+        rows: 14,
+        active_rows: 12,
+        guard_rows: 2,
+        family_count: 4,
+        max_independent_units: 8
+      };
+    }
+    if (policy?.schema === I3A_POLICY_SCHEMA) {
+      return {
+        schema: I3A_POLICY_SCHEMA,
+        state: "I3A_FULL_CT02_SHADOW_ACTIVE",
+        active_status: I3A_ACTIVE_STATUS,
+        guard_status: I3A_GUARD_STATUS,
+        rows: 120,
+        active_rows: 103,
+        guard_rows: 17,
+        family_count: 10,
+        max_independent_units: 75
+      };
+    }
+    return null;
+  };
+
   const validatePolicy = (policy) => {
-    if (!plainObject(policy) || policy.schema !== POLICY_SCHEMA || policy.version !== 1) {
+    const profile = policyProfile(policy);
+    if (!plainObject(policy) || !profile || policy.version !== 1) {
       throw new Error("invalid_policy_schema");
     }
-    if (policy.state !== "I2_SHADOW_CANARY_ACTIVE" || policy.runtime_enabled !== true ||
+    if (policy.state !== profile.state || policy.runtime_enabled !== true ||
         policy.normal_learner_ui_change !== false) {
-      throw new Error("invalid_canary_state");
+      throw new Error("invalid_shadow_state");
     }
     if (policy?.source_registry?.blob_sha !== EXPECTED_REGISTRY_BLOB ||
         policy?.source_topic_policy?.blob_sha !== EXPECTED_CT02_POLICY_BLOB) {
@@ -194,13 +234,13 @@
         policy?.runtime_rules?.normal_learner_ui_change !== false) {
       throw new Error("unsafe_runtime_rules");
     }
-    if (!Array.isArray(policy.rows) || policy.rows.length !== 14 ||
+    if (!Array.isArray(policy.rows) || policy.rows.length !== profile.rows ||
         policy?.scope?.topic_id !== "CT02" ||
-        policy?.scope?.active_rows !== 12 ||
-        policy?.scope?.no_capture_guard_rows !== 2 ||
-        policy?.scope?.family_count !== 4 ||
-        policy?.scope?.max_independent_units !== 8) {
-      throw new Error("invalid_i2_scope");
+        policy?.scope?.active_rows !== profile.active_rows ||
+        policy?.scope?.no_capture_guard_rows !== profile.guard_rows ||
+        policy?.scope?.family_count !== profile.family_count ||
+        policy?.scope?.max_independent_units !== profile.max_independent_units) {
+      throw new Error("invalid_shadow_scope");
     }
 
     const ids = new Set();
@@ -218,7 +258,7 @@
       }
       ids.add(row.question_id);
 
-      if (row.capture_status === ACTIVE_STATUS) {
+      if (row.capture_status === profile.active_status) {
         activeCount += 1;
         if (!row.family_id || !row.diagnostic_skill_id || !row.family_layer ||
             !row.mapping_role || row.policy_disposition !== "FAMILY_LINK_REVIEWED") {
@@ -226,7 +266,7 @@
         }
         activeFamilies.add(row.family_id);
         activeUnits.add(evidenceUnitKey(row));
-      } else if (row.capture_status === GUARD_STATUS) {
+      } else if (row.capture_status === profile.guard_status) {
         guardCount += 1;
         if (row.family_id !== null || row.diagnostic_skill_id !== null ||
             row.policy_disposition !== "FORMATIVE_ONLY_NO_FAMILY") {
@@ -242,17 +282,19 @@
       }));
     }
 
-    if (activeCount !== 12 || guardCount !== 2 ||
-        activeFamilies.size !== 4 || activeUnits.size !== 8) {
-      throw new Error("invalid_i2_runtime_boundary");
+    if (activeCount !== profile.active_rows || guardCount !== profile.guard_rows ||
+        activeFamilies.size !== profile.family_count ||
+        activeUnits.size !== profile.max_independent_units) {
+      throw new Error("invalid_shadow_runtime_boundary");
     }
 
-    return { policy: Object.freeze(policy), rows: map };
+    return { policy: Object.freeze(policy), rows: map, profile: Object.freeze(profile) };
   };
 
   const api = {
-    BUILD, STORE_KEY, STORE_SCHEMA, EVENT_SCHEMA, POLICY_SCHEMA,
-    ACTIVE_STATUS, GUARD_STATUS, MAX_RECENT,
+    BUILD, STORE_KEY, STORE_SCHEMA, EVENT_SCHEMA,
+    I2_POLICY_SCHEMA, I3A_POLICY_SCHEMA,
+    ACTIVE_STATUS, GUARD_STATUS, I3A_ACTIVE_STATUS, I3A_GUARD_STATUS, MAX_RECENT,
     emptyStore, normalizedStore, seenQuestionKey, evidenceUnitKey,
     assistanceKind, classifyAttempt, makeEvent, appendEvent,
     recordAttemptToStore, validatePolicy
@@ -270,8 +312,8 @@
 
   const scriptUrl = document.currentScript?.src || "";
   const policyUrl = scriptUrl
-    ? new URL("../data/curriculum/taxonomy-v2-runtime/i2-canary-ct02-r1.json", scriptUrl).href
-    : new URL("assets/data/curriculum/taxonomy-v2-runtime/i2-canary-ct02-r1.json", document.baseURI).href;
+    ? new URL("../data/curriculum/taxonomy-v2-runtime/i3a-full-ct02-r1.json", scriptUrl).href
+    : new URL("assets/data/curriculum/taxonomy-v2-runtime/i3a-full-ct02-r1.json", document.baseURI).href;
 
   const loadStore = () => {
     try {
@@ -302,7 +344,7 @@
       panel.style.padding = ".75rem";
       panel.style.border = "1px dashed currentColor";
       const summary = document.createElement("summary");
-      summary.textContent = "QA · Skill Taxonomy v2 I2 Canary";
+      summary.textContent = "QA · Skill Taxonomy v2 I3A CT02 Shadow";
       const pre = document.createElement("pre");
       pre.style.whiteSpace = "pre-wrap";
       panel.append(summary, pre);
@@ -352,11 +394,11 @@
       const row = state.rows.get(question?.id);
 
       if (!row) {
-        lastCapture = { captured: false, reason: "not_in_i2_canary", question_id: question?.id || null };
+        lastCapture = { captured: false, reason: "not_in_i3a_scope", question_id: question?.id || null };
         refreshDebug();
         return lastCapture;
       }
-      if (row.capture_status === GUARD_STATUS) {
+      if (isGuardCaptureStatus(row.capture_status)) {
         lastCapture = { captured: false, reason: "no_family_guard", question_id: question.id };
         refreshDebug();
         return lastCapture;
