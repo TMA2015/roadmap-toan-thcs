@@ -1,6 +1,6 @@
 {
-  "version": "1.0.147",
-  "updated": "2026-10-02",
+  "version": "1.0.148",
+  "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
     "name": "Self-Learning Math",
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Skill Taxonomy v2 I3C CT02–CT04 owner production QA is PASS and closed. The next controlled gate is I3D, expanding the same isolated shadow evidence store through CT07 in one batch so the entire Canonical Evidence G2 overlap band CT04–CT07 is covered and regression-tested together. I3D scope: CT02–CT07 = 732 rows, 648 family-linked active + 84 NO_FAMILY guards, 35 unique learner-facing families, max 240 topic-scoped independent units. CT05+06+07 add 360 rows = 307 active + 53 guards. CT08+ remains outside I3D. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF.",
+    "next_priority": "Skill Taxonomy v2 I3D CT02–CT07 owner production QA is PASS and closed. The next controlled gate is I3E, expanding the same isolated Taxonomy v2 shadow store through CT12 using the academically closed S2 batch CT08–CT12. Cumulative scope becomes CT02–CT12 = 1356 rows, 1272 family-linked active + 84 NO_FAMILY guards, 64 unique learner-facing families, max 375 topic-scoped independent units. The new S2 batch contributes 624/624 active rows across 29 families and zero NO_FAMILY guards. Canonical Evidence G2 remains frozen to CT04–CT07 and is not expanded. CT13+ remains outside I3E. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1768,7 +1768,7 @@
         }
       },
       "i3d": {
-        "status": "IMPLEMENTATION_BRANCH_PRE_CI",
+        "status": "DONE_OWNER_PRODUCTION_QA_PASS",
         "phase": "I3D_CT02_CT07",
         "branch": "impl/skill-taxonomy-v2-i3d-ct02-07-shadow-r1-20261002",
         "scope": {
@@ -1849,7 +1849,74 @@
         "readiness_enabled": false,
         "history_backfill_enabled": false,
         "normal_learner_ui_change": false,
-        "ct08_plus_expansion_authorized": false
+        "ct08_plus_expansion_authorized": true,
+        "owner_production_qa": "PASS",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I3D_CT02_07_SHADOW_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "build": "taxonomy-v2-i3d-ct02-07-20261002",
+          "policy_ready": true,
+          "policy_error": null,
+          "recent_events": 25,
+          "seen_questions": 25,
+          "independent_units": 21,
+          "last_capture": {
+            "captured": true,
+            "question_id": "FAC06V1_081",
+            "family_id": "FAC-COMBINE",
+            "diagnostic_skill_id": "phan-tich-da-thuc-hoan-toan",
+            "independent_evidence": false,
+            "independent_reason": "clone_family_repeat"
+          }
+        }
+      },
+      "i3e": {
+        "status": "IMPLEMENTATION_BRANCH_PRE_CI",
+        "phase": "I3E_CT02_CT12",
+        "branch": "impl/skill-taxonomy-v2-i3e-ct02-12-shadow-r1-20261002",
+        "scope": {
+          "topics": [
+            "CT02",
+            "CT03",
+            "CT04",
+            "CT05",
+            "CT06",
+            "CT07",
+            "CT08",
+            "CT09",
+            "CT10",
+            "CT11",
+            "CT12"
+          ],
+          "total_rows": 1356,
+          "active_family_rows": 1272,
+          "no_family_guards": 84,
+          "family_count": 64,
+          "max_independent_units": 375
+        },
+        "s2_delta": {
+          "topics": [
+            "CT08",
+            "CT09",
+            "CT10",
+            "CT11",
+            "CT12"
+          ],
+          "total_rows": 624,
+          "active_family_rows": 624,
+          "no_family_guards": 0,
+          "family_count": 29,
+          "max_independent_units": 135
+        },
+        "store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "policy": "docs/assets/data/curriculum/taxonomy-v2-runtime/i3e-ct02-12-r1.json",
+        "observer": "docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js",
+        "prior_evidence_continuity": true,
+        "g2_status": "FROZEN_TO_CT04_CT07_ONLY",
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "normal_learner_ui_change": false,
+        "ct13_plus_expansion_authorized": false
       }
     },
     "notebooklm_taxonomy_workflow": {
