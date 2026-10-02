@@ -1,5 +1,5 @@
 {
-  "version": "1.0.136",
+  "version": "1.0.137",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -909,9 +909,9 @@
       "title": "Skill Taxonomy v2 implementation planning",
       "routing": "CHATGPT_ARCHITECTURE+GITHUB_REVIEW",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.136",
-      "review_verdict": "PLANNING_AUTHORIZED_RUNTIME_NOT_AUTHORIZED",
-      "review_notes": "Plan integration of the academically closed 131-family / 386-mapping taxonomy with protected canonical-evidence G2, Skill Map, and Readiness. Must preserve legacy storage/history, avoid backfill/regrade, keep optional/bridge/challenge non-gating, and define canary/rollback/QA gates before any runtime activation."
+      "context_version": "1.0.137",
+      "review_verdict": "PLAN_R1_DRAFT_PR_270_ACTIVE",
+      "review_notes": "Draft PR #270 defines protected G2 boundary, durable 131-family/386-mapping registry, topic-sharded CT02–CT25 runtime policy, separate shadow store toan-thcs-taxonomy-v2-evidence-v1, no-backfill/no-regrade, Skill Map v2 preview path, separate later mastery/Readiness policy gate, canary/rollback QA. First coding deliverable after plan approval: I0 registry build/validation only; no learner UI or data writes."
     }
   ]
 }
