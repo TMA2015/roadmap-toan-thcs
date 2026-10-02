@@ -1,5 +1,5 @@
 {
-  "version": "1.0.135",
+  "version": "1.0.136",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -854,10 +854,10 @@
       "id": "MATH-SKILL-TAXONOMY-V2-001",
       "title": "Consolidate THCS Skill Taxonomy v2 across learner-facing families and diagnostic subskills",
       "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.135",
-      "review_verdict": "S1_S4_ACADEMICALLY_CLOSED_CROSS_BATCH_RECONCILIATION_ACTIVE",
-      "review_notes": "S1–S4 academically closed. S4 combined item audit PASS 612/612, 0 revisions, 66/66 clone groups, BOUNDARY_1..8 PASS, ARCH_1..12 PASS. Whole-project CT02–CT25 cross-batch review is active in Draft PR #269: 131 family definitions / 131 unique IDs, 386 legacy mappings, 20 intentional NO_FAMILY rows, 5 CT24 canonical reuse rows, 2 machine overlap candidates. No runtime/mastery/Readiness/history activation."
+      "status": "DONE",
+      "context_version": "1.0.136",
+      "review_verdict": "ACADEMIC_PROGRAM_CLOSED_131_FAMILIES_386_MAPPINGS_PASS",
+      "review_notes": "S1–S4 and whole-project CT02–CT25 reconciliation are academically closed. Cross-batch NotebookLM: 131/131 family definitions PASS; 386/386 mapping rows PASS; 5/5 CT24 canonical reuse PASS; 20 intentional NO_FAMILY PASS; 2/2 overlap candidates PASS_AS_CONTEXTUAL_REUSE; ARCH_1..16 PASS; 0 fixes. Authorization CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING. Runtime/mastery/Readiness/history migration remains unauthorized."
     },
     {
       "id": "MATH-SKILL-TAXONOMY-V2-S1-001",
@@ -899,10 +899,19 @@
       "id": "MATH-SKILL-TAXONOMY-V2-CROSS-BATCH-001",
       "title": "Skill Taxonomy v2 whole-project cross-batch reconciliation — CT02–CT25",
       "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.136",
+      "review_verdict": "PASS_131_OF_131_FAMILIES_386_OF_386_MAPPINGS_ZERO_FIXES",
+      "review_notes": "Whole-project reconciliation PASS. Five CT24 canonical reuse mappings PASS; 20 intentional NO_FAMILY rows PASS; two diagnostic-subskill overlaps PASS_AS_CONTEXTUAL_REUSE; ARCH_1..16 PASS. Authorization CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING only."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-IMPLEMENTATION-PLAN-001",
+      "title": "Skill Taxonomy v2 implementation planning",
+      "routing": "CHATGPT_ARCHITECTURE+GITHUB_REVIEW",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.135",
-      "review_verdict": "NOTEBOOKLM_REVIEW_PENDING",
-      "review_notes": "Draft PR #269. Review scope: 131 family definitions, 386 legacy mappings, 20 intentional NO_FAMILY rows, 5 explicit CT24 canonical-reuse mappings, 2 machine overlap candidates. Exact NotebookLM source arithmetic: 2 permanent + 5 batch = 7 selected Sources. PASS clears implementation planning only; it does not authorize runtime/mastery/Readiness/history migration."
+      "context_version": "1.0.136",
+      "review_verdict": "PLANNING_AUTHORIZED_RUNTIME_NOT_AUTHORIZED",
+      "review_notes": "Plan integration of the academically closed 131-family / 386-mapping taxonomy with protected canonical-evidence G2, Skill Map, and Readiness. Must preserve legacy storage/history, avoid backfill/regrade, keep optional/bridge/challenge non-gating, and define canary/rollback/QA gates before any runtime activation."
     }
   ]
 }
