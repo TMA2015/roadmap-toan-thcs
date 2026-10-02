@@ -1,5 +1,5 @@
 {
-  "version": "1.0.133",
+  "version": "1.0.134",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -855,9 +855,9 @@
       "title": "Consolidate THCS Skill Taxonomy v2 across learner-facing families and diagnostic subskills",
       "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.133",
-      "review_verdict": "S1_S3_ACADEMICALLY_CLOSED_S4_ACTIVE",
-      "review_notes": "Program rule: learner-facing family != every legacy tag. Preserve legacy IDs/history; roles include assessed/supporting/method/context/category/composite/extension. S1 CT02–07, S2 CT08–12 and S3 CT13–20 are academically closed. S4 CT21–25 family review is running. No runtime/mastery/Readiness/history migration authorized. Exam-frequency claims remain PENDING_OFFICIAL_CORPUS."
+      "context_version": "1.0.134",
+      "review_verdict": "S1_S3_ACADEMICALLY_CLOSED_S4_ITEM_AUDIT_ACTIVE",
+      "review_notes": "S1–S3 academically closed. S4 family review PASS: 19/19 families, MAP_FIX_COUNT 0, 4/4 written gaps PASS, CROSS_1..4 PASS, ARCH_1..12 PASS, authorization CLEARED_FOR_S4_ITEM_AUDITS. Combined CT21–CT25 full-bank audit is active in Draft PR #268: 612 items = 492 approved-family rows + 120 intentional context/category NO_FAMILY rows, 66 clone candidates, machine preflight 612 unique IDs. No runtime/mastery/Readiness/history migration authorized."
     },
     {
       "id": "MATH-SKILL-TAXONOMY-V2-S1-001",
@@ -891,9 +891,9 @@
       "title": "Skill Taxonomy v2 S4 — CT21–CT25",
       "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.133",
-      "review_verdict": "NOTEBOOKLM_FAMILY_REVIEW_RUNNING",
-      "review_notes": "Current candidate: 612 Practice questions / 62 legacy tags -> 19 proposed new families (7 Core, 5 Core-Support, 3 THPT-Bridge, 4 Entrance10), plus 5 reuse-existing-family mappings, 12 NO_NEW_FAMILY context/category mappings and 4 written-gap proposals. CT22 stays THPT-Bridge non-gating; CT24 is cross-topic Core-Support with family reuse; CT25 on-thi-* academic lanes remain CATEGORY, while exam strategy/review skills are optional Entrance10. Draft PR #267. Current NotebookLM selected Sources exactly 3: 00_NOTEBOOK_MATH_PERMANENT_v1.1.md + 01_TOAN_THCS_MASTER_PLAN_v1.1.md + S4_FAMILY_NOTEBOOKLM_SOURCE_R1.md. Next gate: owner supplies S4 family result; if PASS, run one combined CT21–25 full-bank audit = 612 items."
+      "context_version": "1.0.134",
+      "review_verdict": "FAMILY_PASS_19_OF_19_COMBINED_612_ITEM_AUDIT_ACTIVE",
+      "review_notes": "Family gate closed PASS with 19/19 families, 0 mapping fixes, 4/4 written gaps, CROSS_1..4 and ARCH_1..12 PASS; authorization CLEARED_FOR_S4_ITEM_AUDITS. Item-audit Draft PR #268 contains five topic overlays + combined guide: CT21 132, CT22 120, CT23 120, CT24 120, CT25 120; 492 family-evidence rows + 120 intentional NO_FAMILY rows; 66 clone groups; 612/612 unique IDs. Current gate: owner supplies NotebookLM combined item-audit result. No runtime activation."
     }
   ]
 }
