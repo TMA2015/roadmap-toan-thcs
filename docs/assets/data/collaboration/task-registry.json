@@ -1,5 +1,5 @@
 {
-  "version": "1.0.139",
+  "version": "1.0.140",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -935,10 +935,10 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I2-001",
       "title": "Skill Taxonomy v2 I2 — shadow observer canary",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
-      "status": "BLOCKED",
-      "context_version": "1.0.139",
-      "review_verdict": "SEPARATE_CONTROLLED_AUTHORIZATION_REQUIRED",
-      "review_notes": "I2 is the first phase that would add runtime observer code and write new learner evidence to proposed store toan-thcs-taxonomy-v2-evidence-v1. Must preserve legacy Practice and Canonical Evidence G2, start with a bounded canary allowlist, fail open, and have rollback/QA before production activation. I1 does not authorize this automatically."
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.140",
+      "review_verdict": "LIVE_CANARY_PENDING_OWNER_PRODUCTION_QA",
+      "review_notes": "PR #273 exact head 53d6e0b9... passed all three CI workflows; merged e45ec7e4...; Deploy MkDocs run 37019804305 SUCCESS. Live scope: CT02 only, 12 active questions / 4 Core families / 2 NO_FAMILY guards / max 8 independent units, store toan-thcs-taxonomy-v2-evidence-v1. No mastery, Readiness, backfill or normal learner UI. Do not expand until owner production QA."
     }
   ]
 }
