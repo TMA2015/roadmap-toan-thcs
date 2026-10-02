@@ -2,7 +2,7 @@
 
 Packet: `MATH-SKILL-S3-GEOMETRY-FAMILY-R1-20261002`
 
-Status: **REVIEW_ONLY / NOTEBOOKLM_PENDING / FULL_BANK_ITEM_AUDITS_PENDING / NOT_RUNTIME_ENABLED**
+Status: **NOTEBOOKLM_PASS / CLEARED_FOR_S3_ITEM_AUDITS / NOT_RUNTIME_ENABLED**
 
 Scope:
 - CT13–CT20
@@ -24,3 +24,16 @@ NotebookLM:
 After family-level PASS, run full-bank item audits over the entire CT13–CT20 set. Larger combined batches are preferred where topic-local repairability is preserved.
 
 No legacy ID deletion, runtime migration, Readiness/mastery activation, history backfill or learner-progress rewrite is authorized.
+
+
+Academic gate:
+- 44/44 families PASS;
+- 0 mapping fixes;
+- 9/9 written gaps PASS;
+- CROSS_1..CROSS_7 PASS;
+- ARCH_1..ARCH_12 PASS;
+- `CLEARED_FOR_S3_ITEM_AUDITS`;
+- receipt: `S3_GEOMETRY_FAMILY_NOTEBOOKLM_PASS_RECEIPT.md`;
+- reconciled candidate: `S3_GEOMETRY_FAMILY_RECONCILED_R1.json`.
+
+Next gate: one combined full-bank audit across CT13–CT20 = **1,146 Practice items**, with topic-local overlays/sources retained for repairability.
