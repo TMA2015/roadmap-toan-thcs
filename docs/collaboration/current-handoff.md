@@ -1,12 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 02/10/2026, Skill Taxonomy v2 S1–S3 ACADEMICALLY CLOSED; S4 FAMILY PASS / COMBINED 612-ITEM AUDIT ACTIVE.**  
+> **CURRENT CHECKPOINT — 02/10/2026, Skill Taxonomy v2 S1–S4 ACADEMICALLY CLOSED; WHOLE-PROJECT CT02–CT25 CROSS-BATCH RECONCILIATION ACTIVE.**  
 > S1 CT02–CT07: **39 learner-facing families PASS**; combined question-level basis **732 reviewed**.  
 > S2 CT08–CT12: **29 families PASS; 624/624 full-bank PASS; 0 revisions**.  
 > S3 CT13–CT20: **44 families PASS; 1,146/1,146 full-bank PASS; 165/165 clone candidates PASS; 0 revisions**.  
-> S4 family gate is now **PASS**: **19/19 families**, **MAP_FIX_COUNT 0**, **4/4 written gaps PASS**, CROSS_1..4 PASS, ARCH_1..12 PASS; authorization `CLEARED_FOR_S4_ITEM_AUDITS`.  
-> S4 combined item audit is ACTIVE in Draft PR **#268**: **612 questions = 492 approved-family evidence rows + 120 intentional context/category NO_FAMILY rows**, **66 clone-family candidates**, machine preflight **612/612 unique IDs**.  
-> **No Skill Taxonomy v2 runtime/mastery/Readiness/history migration is authorized yet.** Next gate: owner supplies the combined NotebookLM S4 item-audit result; after PASS, finalize S4 reconciliation, then run whole-project CT02–CT25 cross-batch reconciliation.
+> S4 CT21–CT25: **19 new families PASS; 612/612 full-bank PASS; 66/66 clone candidates PASS; 0 revisions**.  
+> Whole-project cross-batch gate is ACTIVE in Draft PR **#269**: **131 family definitions / 131 unique family IDs, 386 legacy mappings, 20 intentional NO_FAMILY rows, 5 explicit CT24 canonical-reuse mappings, 2 machine overlap candidates**.  
+> **No Skill Taxonomy v2 runtime/mastery/Readiness/history migration is authorized yet.** A cross-batch PASS will clear **implementation planning only**, not automatic runtime activation.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -72,51 +72,52 @@
 - Review PR #266: latest checked Roadmap PR Quality **SUCCESS**.
 - No runtime activation.
 
-### S4 — CT21–CT25 — FAMILY PASS / COMBINED FULL-BANK AUDIT ACTIVE
-- Scope: **612 Practice questions / 62 legacy tags**.
+### S4 — CT21–CT25 — ACADEMICALLY CLOSED
+- Scope: **612 Practice questions / 62 legacy mappings**.
 - Family-level NotebookLM review: **19/19 PASS**, **0 mapping fixes**, **4/4 written gaps PASS**, CROSS_1..4 PASS, ARCH_1..12 PASS.
-- Authorization: `CLEARED_FOR_S4_ITEM_AUDITS`.
-- Approved family structure remains:
-  - 7 KNTT-Core;
-  - 5 Core-Support;
-  - 3 THPT-Bridge;
-  - 4 Entrance10.
-- Additional approved mapping behavior:
-  - **5** mappings reuse existing canonical families;
-  - **12** mappings intentionally create no new family (CONTEXT/CATEGORY);
-  - CT22 stays **THPT-Bridge / non-gating**;
-  - CT24 stays cross-topic Core-Support with canonical family reuse;
-  - CT25 `on-thi-*` lanes remain CATEGORY, while EXAM-STRATEGY / EXAM-REVIEW remain optional Entrance10.
-- Family review branch: `review/skill-taxonomy-v2-s4-family-r1-20261002`.
-- Family review Draft PR: **#267**.
-- Family PASS receipt: `review-packets/skill-taxonomy/S4_FAMILY_NOTEBOOKLM_R1_PASS_RECEIPT.md`.
-- Combined item-audit branch: `review/skill-taxonomy-v2-s4-ct21-25-combined-r1-20261002`.
-- Combined item-audit Draft PR: **#268**.
-- Item-audit machine preflight:
-  - CT21: 132/132 rows;
-  - CT22: 120/120 rows;
-  - CT23: 120/120 rows;
-  - CT24: 120 rows = 80 family + 40 intentional context/NO_FAMILY;
-  - CT25: 120 rows = 40 family + 80 intentional category/NO_FAMILY;
-  - combined **612/612 unique IDs**;
-  - **492** family-evidence rows;
+- Full-bank NotebookLM audit:
+  - CT21 **132/132 PASS**
+  - CT22 **120/120 PASS**
+  - CT23 **120/120 PASS**
+  - CT24 **120/120 PASS**
+  - CT25 **120/120 PASS**
+  - combined **612/612 PASS**
+  - revisions **0**
+  - missing **0**
+  - clone-family candidates **66/66 PASS**
+  - BOUNDARY_1..8 PASS
+  - ARCH_1..12 PASS
+  - authorization `CLEARED_FOR_S4_CT21_25_RECONCILIATION`
+- Evidence boundary:
+  - **492** mapped-family evidence rows;
   - **120** intentional NO_FAMILY rows;
-  - **66** clone-family candidates;
-  - **0** unknown legacy mappings;
-  - **0** multi-family collisions.
-- NotebookLM selected Sources for current combined audit: exactly **8 = 2 permanent + 6 S4 batch Sources**:
-  1. permanent `00_NOTEBOOK_MATH_PERMANENT_v1.1.md`
-  2. permanent `01_TOAN_THCS_MASTER_PLAN_v1.1.md`
-  3. `CT21_OVERLAY_SOURCE.md`
-  4. `CT22_OVERLAY_SOURCE.md`
-  5. `CT23_OVERLAY_SOURCE.md`
-  6. `CT24_OVERLAY_SOURCE.md`
-  7. `CT25_OVERLAY_SOURCE.md`
-  8. `06_NOTEBOOKLM_COMBINED_REVIEW_GUIDE.md`
-- Prompt: `review-packets/skill-taxonomy/phase-d-s4-ct21-25/07_COPY_TO_NOTEBOOKLM_COMBINED_R1.txt`.
-- Current gate: **WAIT FOR OWNER-SUPPLIED NOTEBOOKLM S4 COMBINED ITEM RESULT**.
-- If PASS: finalize S4 academic registry/reconciliation, then run **whole-project CT02–CT25 cross-batch reconciliation**.
-- No runtime/mastery/Readiness/history migration before those gates close.
+  - CT22 remains **THPT-Bridge / non-gating**;
+  - CT24 = 80 mapped-family + 40 context/NO_FAMILY rows;
+  - CT25 = 40 mapped-family + 80 CATEGORY/NO_FAMILY rows;
+  - EXAM-STRATEGY / EXAM-REVIEW remain optional Entrance10;
+  - MCQ evidence does not substitute for required written reasoning.
+- Final S4 registry: `review-packets/skill-taxonomy/S4_FINAL_ACADEMIC_REGISTRY_R1.json`.
+- S4 closure: `review-packets/skill-taxonomy/S4_ACADEMIC_CLOSURE_20261002.md`.
+- Review branch: `review/skill-taxonomy-v2-s4-ct21-25-combined-r1-20261002`.
+- Draft PR: **#268**.
+- No runtime/mastery/Readiness/history migration was authorized by S4 closure.
+
+### Whole-project cross-batch reconciliation — CT02–CT25 — ACTIVE
+- Review branch: `review/skill-taxonomy-v2-cross-batch-ct02-25-r1-20261002`.
+- Draft PR: **#269**.
+- Machine preflight:
+  - **131** family definitions / **131 unique family IDs**;
+  - **386** legacy mapping rows;
+  - **20** intentional NO_FAMILY mappings;
+  - **5** explicit CT24 canonical-reuse mappings;
+  - **0** duplicate family IDs;
+  - **0** duplicate topic+legacy mapping keys;
+  - **0** mappings to unknown family IDs;
+  - **2** diagnostic-subskill overlap candidates requiring explicit academic review: `hieu-hai-binh-phuong` and `binh-phuong-hoan-chinh`, each shared by ID-STRUCTURE and FAC-IDENTITY.
+- NotebookLM selected Sources: exactly **7 = 2 permanent + 5 batch Sources**.
+- Current gate: **WAIT FOR OWNER-SUPPLIED NOTEBOOKLM CROSS-BATCH RESULT**.
+- PASS effect: `CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING` only.
+- Runtime/mastery/Readiness/history migration remains blocked until a separate implementation plan and release gate.
 ## Written Library Expansion B7 — CLOSED DONE / owner QA PASS (02/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B7-001`.
