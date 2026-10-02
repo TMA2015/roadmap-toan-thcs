@@ -1,5 +1,5 @@
 {
-  "version": "1.0.141",
+  "version": "1.0.142",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -935,10 +935,19 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I2-001",
       "title": "Skill Taxonomy v2 I2 — shadow observer canary",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.141",
-      "review_verdict": "LIVE_CANARY_DEPLOYED_ARTIFACT_VERIFIED_OWNER_QA_PENDING",
-      "review_notes": "PR #273 exact head 53d6e0b9... passed all CI and merged e45ec7e4.... Deploy run 37019804305 SUCCESS. Post-deploy gh-pages @ 3b04dce9... verified observer present, I2 policy present with 12 active rows, and CT02 Practice HTML loads the observer. Owner production QA remains the only open gate. No expansion until owner QA."
+      "status": "DONE",
+      "context_version": "1.0.142",
+      "review_verdict": "PASS_OWNER_PRODUCTION_QA_CLOSED",
+      "review_notes": "Automated QA PASS; Deploy MkDocs 37019804305 SUCCESS; gh-pages artifact verification PASS; owner production QA PASS. Owner confirmed policy_ready=true / policy_error=null, NUM02V1_119 correctly returned not_in_i2_canary, and normal CT02 Practice shows no Taxonomy v2 debug panel. No mastery/Readiness/backfill/UI activation."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I3-001",
+      "title": "Skill Taxonomy v2 I3 — expand shadow capture",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "READY",
+      "context_version": "1.0.142",
+      "review_verdict": "PENDING_SEPARATE_AUTHORIZATION",
+      "review_notes": "I2 canary is DONE. I3 may expand shadow capture using the reviewed I1 topic policies, but must preserve G2 and legacy Practice, remain fail-open, keep mastery/Readiness/backfill/UI OFF, and use a separately bounded rollout/QA gate."
     }
   ]
 }
