@@ -1,5 +1,5 @@
 {
-  "version": "1.0.145",
+  "version": "1.0.146",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -953,10 +953,19 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I3B-001",
       "title": "Skill Taxonomy v2 I3B — CT03 shadow expansion",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.146",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "Owner production QA PASS on 2026-10-02 from the live debug snapshot: build taxonomy-v2-i3b-ct02-03-20261002, policy_ready=true, policy_error=null, 18 recent events / 18 seen questions / 16 independent units; last capture RAT03V1_088 -> RATIO-DISTINGUISH / phan-biet-thuan-nghich with independent_evidence=true and first_unseen_unit. I3B CT02+CT03 gate is closed. No mastery, Readiness, backfill/regrade or learner-facing Taxonomy v2 UI."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I3C-001",
+      "title": "Skill Taxonomy v2 I3C — CT04 shadow expansion",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.145",
-      "review_verdict": "LIVE_I3B_CT02_CT03_OWNER_QA_PENDING",
-      "review_notes": "PR #275 exact head b3c65095... CI SUCCESS run 37030103708; merge a49ea583...; Deploy MkDocs 37030799961 SUCCESS; gh-pages artifact verification PASS @ 31e5074e.... Scope: CT02+CT03 = 240 rows, 221 active + 19 NO_FAMILY guards, 16 Core families, max 149 independent units. Same isolated store preserves prior CT02 evidence. No CT04+ expansion, mastery, Readiness, backfill/regrade or learner-facing Taxonomy v2 UI until owner production QA."
+      "context_version": "1.0.146",
+      "review_verdict": "IMPLEMENTATION_BRANCH_PRE_CI",
+      "review_notes": "Controlled expansion from CT02+CT03 to CT02+CT03+CT04 only. Planned scope: 372 rows = 341 family-linked active + 31 NO_FAMILY guards, 23 unique families, max 177 topic-scoped independent units. CT04 contributes 132 rows = 120 active + 12 guards across 7 reviewed families. Existing Canonical Evidence G2 on CT04–07 remains separate and is explicitly regression-tested for dual-shadow coexistence. CT05+ remains outside I3C. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF."
     }
   ]
 }
