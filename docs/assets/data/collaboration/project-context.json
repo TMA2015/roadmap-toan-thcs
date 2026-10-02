@@ -1,5 +1,5 @@
 {
-  "version": "1.0.141",
+  "version": "1.0.142",
   "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Skill Taxonomy v2 I2 CT02 shadow canary is live and post-deploy artifact verification passed on gh-pages @ 3b04dce9.... Owner production QA is now the only remaining gate before I2 can be closed DONE. Do not expand canary scope before owner QA confirms policy_ready/normal-UI behavior.",
+    "next_priority": "Skill Taxonomy v2 I2 CT02 shadow canary is DONE. Owner production QA PASS confirmed policy_ready true / no policy error, correct not_in_i2_canary behavior for NUM02V1_119, and no QA panel in normal learner UI. I2 automated QA, production deploy, gh-pages artifact verification, and owner QA are all closed. Next gate is I3 shadow-capture expansion planning/implementation, but expansion is not authorized automatically; mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1536,7 +1536,7 @@
         "checkpoint": "review-packets/skill-taxonomy/implementation/I1_TOPIC_POLICY_COMPILATION_TECHNICAL_CHECKPOINT.md"
       },
       "i2": {
-        "status": "LIVE_CANARY_PENDING_OWNER_PRODUCTION_QA",
+        "status": "DONE_OWNER_PRODUCTION_QA_PASS",
         "pr": 273,
         "tested_head": "53d6e0b90a6ceded5ace55b1c6d616c667928b3a",
         "ci_runs": {
@@ -1574,7 +1574,25 @@
         "deployed_observer_verified": true,
         "deployed_policy_verified": true,
         "deployed_ct02_loader_verified": true,
-        "owner_production_qa": "PENDING"
+        "owner_production_qa": "PASS",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I2_CT02_SHADOW_CANARY_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "policy_ready": true,
+          "policy_error": null,
+          "non_canary_question_id": "NUM02V1_119",
+          "non_canary_result": "not_in_i2_canary",
+          "normal_ui_debug_panel_absent": true
+        }
+      },
+      "i3": {
+        "status": "READY_PENDING_SEPARATE_AUTHORIZATION",
+        "scope": "expand Taxonomy v2 shadow capture beyond the 12-row CT02 canary using reviewed I1 topic policies",
+        "learner_data_write_required": true,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "normal_learner_ui_change": false,
+        "production_activation_authorized": false
       }
     },
     "notebooklm_taxonomy_workflow": {
