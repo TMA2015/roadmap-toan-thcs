@@ -1,5 +1,5 @@
 {
-  "version": "1.0.142",
+  "version": "1.0.143",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -944,10 +944,10 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I3-001",
       "title": "Skill Taxonomy v2 I3 — expand shadow capture",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
-      "status": "READY",
-      "context_version": "1.0.142",
-      "review_verdict": "PENDING_SEPARATE_AUTHORIZATION",
-      "review_notes": "I2 canary is DONE. I3 may expand shadow capture using the reviewed I1 topic policies, but must preserve G2 and legacy Practice, remain fail-open, keep mastery/Readiness/backfill/UI OFF, and use a separately bounded rollout/QA gate."
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.143",
+      "review_verdict": "I3A_FULL_CT02_LIVE_OWNER_QA_PENDING",
+      "review_notes": "I3A full CT02 shadow expansion is live. PR #274 exact head 02b39d0c... CI SUCCESS run 37025889031; merge c1940bda...; Deploy MkDocs 37026596985 SUCCESS; gh-pages artifact verification PASS @ 71c59000.... Scope: 120 CT02 rows = 103 family-linked active + 17 NO_FAMILY guards, 10 Core families, max 75 independent units. Same isolated store preserves I2 evidence. No CT03+ expansion, mastery, Readiness, backfill/regrade or learner-facing Taxonomy v2 UI until owner production QA."
     }
   ]
 }
