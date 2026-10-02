@@ -88,3 +88,16 @@ Recommended owner QA:
 4. Normal CT02 Practice without the query parameter must show no Taxonomy v2 panel and behave exactly as before.
 
 No expansion beyond this canary is authorized until the owner-production gate is closed.
+
+## Owner production QA
+
+**PASS**
+
+Owner verified the live production canary:
+- debug policy loaded with `policy_ready: true` and `policy_error: null`;
+- non-canary question `NUM02V1_119` correctly returned `captured: false` / `not_in_i2_canary`;
+- normal CT02 Practice without the debug query parameter showed no Taxonomy v2 QA panel.
+
+Owner QA receipt: `review-packets/skill-taxonomy/implementation/I2_CT02_SHADOW_CANARY_OWNER_QA_PASS.md`.
+
+Final I2 verdict: **DONE / OWNER PRODUCTION QA PASS**.
