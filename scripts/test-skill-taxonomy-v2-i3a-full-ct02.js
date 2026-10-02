@@ -171,11 +171,14 @@ assert.ok(legacyAt >= 0 && g2At > legacyAt && tv2At > g2At, "shadow capture orde
 
 // Runtime has advanced to I3B, while this historical I3A policy remains valid for regression.
 const observerSource = read("docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js").toString("utf8");
-assert.ok(observerSource.includes("taxonomy-v2-runtime/i3c-ct02-04-r1.json"));
+assert.ok(observerSource.includes("taxonomy-v2-runtime/i3d-ct02-07-r1.json"));
 assert.ok(!observerSource.includes('new URL("../data/curriculum/taxonomy-v2-runtime/index-r1.json"'));
 assert.ok(!observerSource.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct02-r1.json"'));
 assert.ok(!observerSource.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct03-r1.json"'));
 assert.ok(!observerSource.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct04-r1.json"'));
+assert.ok(!observerSource.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct05-r1.json"'));
+assert.ok(!observerSource.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct06-r1.json"'));
+assert.ok(!observerSource.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct07-r1.json"'));
 
 console.log("PASS Taxonomy v2 I3A full CT02 policy: 103 active + 17 NO_FAMILY guards.");
 console.log("PASS 10 families / max 75 independent units / exact 120-row CT02 coverage.");
