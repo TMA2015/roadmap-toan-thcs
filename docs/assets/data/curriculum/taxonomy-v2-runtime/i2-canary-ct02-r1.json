@@ -1,0 +1,295 @@
+{
+  "schema": "skill-taxonomy-v2-i2-canary-policy-r1",
+  "version": 1,
+  "state": "I2_SHADOW_CANARY_ACTIVE",
+  "as_of": "2026-10-02",
+  "policy_id": "skill-taxonomy-v2-i2-ct02-canary-r1",
+  "capture_version": "taxonomy-v2-i2-ct02-canary-v1",
+  "runtime_enabled": true,
+  "normal_learner_ui_change": false,
+  "source_registry": {
+    "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+    "blob_sha": "c2f2e5b8d78a58d874f88524861326223fdbdf45"
+  },
+  "source_topic_policy": {
+    "path": "docs/assets/data/curriculum/taxonomy-v2-runtime/ct02-r1.json",
+    "blob_sha": "30a4ede71d6119ffd612aef8b153f1c7d2a786d2"
+  },
+  "production_store": {
+    "key": "toan-thcs-taxonomy-v2-evidence-v1",
+    "schema": "taxonomy-v2-evidence-store-v1",
+    "recent_events_max": 500,
+    "migrate_from": null,
+    "backfill_existing_attempts": false
+  },
+  "runtime_rules": {
+    "default_capture": "NO_CAPTURE",
+    "legacy_write_first": true,
+    "fail_open": true,
+    "auto_retry_backfill": false,
+    "assisted_event_stored": true,
+    "assisted_event_independent": false,
+    "same_question_after_any_prior_exposure_independent": false,
+    "unseen_sibling_after_assisted_exposure_may_be_independent": true,
+    "negative_first_unassisted_is_independent": true,
+    "no_family_rows_never_write_events": true,
+    "family_mastery_threshold": null,
+    "core_readiness_credit": false,
+    "normal_learner_ui_change": false
+  },
+  "scope": {
+    "topic_id": "CT02",
+    "active_rows": 12,
+    "no_capture_guard_rows": 2,
+    "families": [
+      "NUM-SETS",
+      "NUM-INTEGER-OPS",
+      "NUM-ABS",
+      "NUM-ORDER"
+    ],
+    "family_count": 4,
+    "max_independent_units": 8
+  },
+  "rows": [
+    {
+      "question_id": "NUM02V1_001",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "tap-hop-so"
+      ],
+      "diagnostic_skill_id": "tap-hop-so",
+      "family_id": "NUM-SETS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "NUM02-SET-RECOG-001-005",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I2_CANARY_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_002",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "tap-hop-so"
+      ],
+      "diagnostic_skill_id": "tap-hop-so",
+      "family_id": "NUM-SETS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "NUM02-SET-RECOG-001-005",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I2_CANARY_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_004",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "tap-hop-so"
+      ],
+      "diagnostic_skill_id": "tap-hop-so",
+      "family_id": "NUM-SETS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I2_CANARY_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_005",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "tap-hop-so"
+      ],
+      "diagnostic_skill_id": "tap-hop-so",
+      "family_id": "NUM-SETS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "NUM02-SET-RECOG-001-005",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I2_CANARY_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_006",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I2_CANARY_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_007",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-INT-ADD-007-008",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I2_CANARY_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_008",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-INT-ADD-007-008",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I2_CANARY_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_011",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I2_CANARY_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_015",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "gia-tri-tuyet-doi"
+      ],
+      "diagnostic_skill_id": "gia-tri-tuyet-doi",
+      "family_id": "NUM-ABS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-ABS-EVAL-015-016",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I2_CANARY_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_016",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "gia-tri-tuyet-doi"
+      ],
+      "diagnostic_skill_id": "gia-tri-tuyet-doi",
+      "family_id": "NUM-ABS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-ABS-EVAL-015-016",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I2_CANARY_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_017",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "gia-tri-tuyet-doi"
+      ],
+      "diagnostic_skill_id": "gia-tri-tuyet-doi",
+      "family_id": "NUM-ABS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I2_CANARY_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_018",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "thu-tu-phep-tinh",
+        "luy-thua"
+      ],
+      "diagnostic_skill_id": "thu-tu-phep-tinh",
+      "family_id": "NUM-ORDER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I2_CANARY_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_059",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "ucln",
+        "bcnn"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I2_CANARY_NO_CAPTURE_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_103",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "can-bac-hai"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": "Core-Support",
+      "mapping_role": "SUPPORTING_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-ROOT-CALC-103-104",
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I2_CANARY_NO_CAPTURE_GUARD"
+    }
+  ]
+}
