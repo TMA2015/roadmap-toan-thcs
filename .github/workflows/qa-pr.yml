@@ -98,6 +98,8 @@ jobs:
           node scripts/test-canonical-evidence-g2.js
       - name: Validate Skill Taxonomy v2 I0 registry
         run: node scripts/test-skill-taxonomy-v2-registry.js
+      - name: Validate Skill Taxonomy v2 I1 topic policies
+        run: node scripts/test-skill-taxonomy-v2-i1-policies.js
       - name: Validate assets and practice
         run: |
           python check_svg_integrity.py
