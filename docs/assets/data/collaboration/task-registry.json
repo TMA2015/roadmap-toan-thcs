@@ -1,5 +1,5 @@
 {
-  "version": "1.0.137",
+  "version": "1.0.138",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -908,10 +908,28 @@
       "id": "MATH-SKILL-TAXONOMY-V2-IMPLEMENTATION-PLAN-001",
       "title": "Skill Taxonomy v2 implementation planning",
       "routing": "CHATGPT_ARCHITECTURE+GITHUB_REVIEW",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.137",
-      "review_verdict": "PLAN_R1_DRAFT_PR_270_ACTIVE",
-      "review_notes": "Draft PR #270 defines protected G2 boundary, durable 131-family/386-mapping registry, topic-sharded CT02–CT25 runtime policy, separate shadow store toan-thcs-taxonomy-v2-evidence-v1, no-backfill/no-regrade, Skill Map v2 preview path, separate later mastery/Readiness policy gate, canary/rollback QA. First coding deliverable after plan approval: I0 registry build/validation only; no learner UI or data writes."
+      "status": "DONE",
+      "context_version": "1.0.138",
+      "review_verdict": "PLAN_R1_ACCEPTED_I0_COMPLETED",
+      "review_notes": "Plan R1 accepted. I0 durable registry completed in PR #271; exact head ae8b7264... CI SUCCESS run 37013490363; merge a8b619a2.... Registry 131 families / 386 mappings / 20 NO_FAMILY / 14 total CROSS_TOPIC_REUSE with 5 CT24 reuse. No runtime/data writes."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I0-001",
+      "title": "Skill Taxonomy v2 I0 — durable registry and validation",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA",
+      "status": "DONE",
+      "context_version": "1.0.138",
+      "review_verdict": "PASS_MAIN_REGISTRY_RUNTIME_DISABLED",
+      "review_notes": "PR #271 merged. 131/131 families, 386/386 mappings, 20 intentional NO_FAMILY, 14 total CROSS_TOPIC_REUSE, 5 CT24 reuse, source-locked S1–S4. CI run 37013490363 SUCCESS including I0 test, G2 regression, strict build and browser QA. No runtime activation."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I1-001",
+      "title": "Skill Taxonomy v2 I1 — compile topic-local CT02–CT25 item policies",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA",
+      "status": "READY",
+      "context_version": "1.0.138",
+      "review_verdict": "PLANNED_NOT_STARTED",
+      "review_notes": "Next planned gate after I0. Compile the 3,114 reviewed question overlays into topic-local policies with source locks. Data-only: no observer, learner UI, mastery/Readiness, migration, backfill or regrade."
     }
   ]
 }
