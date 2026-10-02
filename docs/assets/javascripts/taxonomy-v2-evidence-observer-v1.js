@@ -13,6 +13,7 @@
   const I3D_POLICY_SCHEMA = "skill-taxonomy-v2-i3d-ct02-07-policy-r1";
   const I3E_POLICY_SCHEMA = "skill-taxonomy-v2-i3e-ct02-12-policy-r1";
   const I3F_POLICY_SCHEMA = "skill-taxonomy-v2-i3f-ct02-20-policy-r1";
+  const I3G_POLICY_SCHEMA = "skill-taxonomy-v2-i3g-ct02-25-policy-r1";
   const ACTIVE_STATUS = "I2_CANARY_ACTIVE";
   const GUARD_STATUS = "I2_CANARY_NO_CAPTURE_GUARD";
   const I3A_ACTIVE_STATUS = "I3A_CT02_ACTIVE";
@@ -27,8 +28,10 @@
   const I3E_GUARD_STATUS = "I3E_NO_FAMILY_GUARD";
   const I3F_ACTIVE_STATUS = "I3F_ACTIVE";
   const I3F_GUARD_STATUS = "I3F_NO_FAMILY_GUARD";
+  const I3G_ACTIVE_STATUS = "I3G_ACTIVE";
+  const I3G_GUARD_STATUS = "I3G_NO_FAMILY_GUARD";
   const MAX_RECENT = 500;
-  const BUILD = "taxonomy-v2-i3f-ct02-20-20261003";
+  const BUILD = "taxonomy-v2-i3g-ct02-25-20261003";
   const EXPECTED_REGISTRY_BLOB = "c2f2e5b8d78a58d874f88524861326223fdbdf45";
   const EXPECTED_CT02_POLICY_BLOB = "30a4ede71d6119ffd612aef8b153f1c7d2a786d2";
   const EXPECTED_CT03_POLICY_BLOB = "46190fb4c3f7402879e0b3803cd851971d8cee51";
@@ -49,6 +52,11 @@
   const EXPECTED_CT18_POLICY_BLOB = "9f2a305dc68733c0e7ac619bb0bcc4ce9bb5b6ed";
   const EXPECTED_CT19_POLICY_BLOB = "2180cef5f91f0b8e2d9b550c86df92c33b81de50";
   const EXPECTED_CT20_POLICY_BLOB = "d6205a8b5c1367461d6661f0100f615b245ad146";
+  const EXPECTED_CT21_POLICY_BLOB = "4cd3f727a0ae8f55199e6e1ef9528ce77615d734";
+  const EXPECTED_CT22_POLICY_BLOB = "0e0cd0c21e18e8135ee84354a73d188ee4569f7a";
+  const EXPECTED_CT23_POLICY_BLOB = "cfa4042267312d58fae02033fbfead1614c2f356";
+  const EXPECTED_CT24_POLICY_BLOB = "6035dcd4998da6a9282365c3b31257a0100ee626";
+  const EXPECTED_CT25_POLICY_BLOB = "bf88c4c8b1cb8aa28b06ad6b8d809808eb1c5c64";
   const EXPECTED_TOPIC_POLICY_BLOBS = Object.freeze({
     CT02: EXPECTED_CT02_POLICY_BLOB,
     CT03: EXPECTED_CT03_POLICY_BLOB,
@@ -68,7 +76,12 @@
     CT17: EXPECTED_CT17_POLICY_BLOB,
     CT18: EXPECTED_CT18_POLICY_BLOB,
     CT19: EXPECTED_CT19_POLICY_BLOB,
-    CT20: EXPECTED_CT20_POLICY_BLOB
+    CT20: EXPECTED_CT20_POLICY_BLOB,
+    CT21: EXPECTED_CT21_POLICY_BLOB,
+    CT22: EXPECTED_CT22_POLICY_BLOB,
+    CT23: EXPECTED_CT23_POLICY_BLOB,
+    CT24: EXPECTED_CT24_POLICY_BLOB,
+    CT25: EXPECTED_CT25_POLICY_BLOB
   });
 
   const plainObject = (value) => value && typeof value === "object" && !Array.isArray(value);
@@ -223,10 +236,10 @@
   };
 
   const isActiveCaptureStatus = (status) =>
-    status === ACTIVE_STATUS || status === I3A_ACTIVE_STATUS || status === I3B_ACTIVE_STATUS || status === I3C_ACTIVE_STATUS || status === I3D_ACTIVE_STATUS || status === I3E_ACTIVE_STATUS || status === I3F_ACTIVE_STATUS;
+    status === ACTIVE_STATUS || status === I3A_ACTIVE_STATUS || status === I3B_ACTIVE_STATUS || status === I3C_ACTIVE_STATUS || status === I3D_ACTIVE_STATUS || status === I3E_ACTIVE_STATUS || status === I3F_ACTIVE_STATUS || status === I3G_ACTIVE_STATUS;
 
   const isGuardCaptureStatus = (status) =>
-    status === GUARD_STATUS || status === I3A_GUARD_STATUS || status === I3B_GUARD_STATUS || status === I3C_GUARD_STATUS || status === I3D_GUARD_STATUS || status === I3E_GUARD_STATUS || status === I3F_GUARD_STATUS;
+    status === GUARD_STATUS || status === I3A_GUARD_STATUS || status === I3B_GUARD_STATUS || status === I3C_GUARD_STATUS || status === I3D_GUARD_STATUS || status === I3E_GUARD_STATUS || status === I3F_GUARD_STATUS || status === I3G_GUARD_STATUS;
 
   const recordAttemptToStore = (storeLike, row, input, policy, now, eventId) => {
     if (!isActiveCaptureStatus(row.capture_status) || !row.family_id) {
@@ -334,6 +347,20 @@
         guard_rows: 94,
         family_count: 108,
         max_independent_units: 543
+      };
+    }
+    if (policy?.schema === I3G_POLICY_SCHEMA) {
+      return {
+        schema: I3G_POLICY_SCHEMA,
+        state: "I3G_CT02_CT25_SHADOW_ACTIVE",
+        active_status: I3G_ACTIVE_STATUS,
+        guard_status: I3G_GUARD_STATUS,
+        topics: ["CT02", "CT03", "CT04", "CT05", "CT06", "CT07", "CT08", "CT09", "CT10", "CT11", "CT12", "CT13", "CT14", "CT15", "CT16", "CT17", "CT18", "CT19", "CT20", "CT21", "CT22", "CT23", "CT24", "CT25"],
+        rows: 3114,
+        active_rows: 2900,
+        guard_rows: 214,
+        family_count: 127,
+        max_independent_units: 650
       };
     }
     return null;
@@ -444,11 +471,11 @@
 
   const api = {
     BUILD, STORE_KEY, STORE_SCHEMA, EVENT_SCHEMA,
-    I2_POLICY_SCHEMA, I3A_POLICY_SCHEMA, I3B_POLICY_SCHEMA, I3C_POLICY_SCHEMA, I3D_POLICY_SCHEMA, I3E_POLICY_SCHEMA, I3F_POLICY_SCHEMA,
+    I2_POLICY_SCHEMA, I3A_POLICY_SCHEMA, I3B_POLICY_SCHEMA, I3C_POLICY_SCHEMA, I3D_POLICY_SCHEMA, I3E_POLICY_SCHEMA, I3F_POLICY_SCHEMA, I3G_POLICY_SCHEMA,
     ACTIVE_STATUS, GUARD_STATUS, I3A_ACTIVE_STATUS, I3A_GUARD_STATUS,
     I3B_ACTIVE_STATUS, I3B_GUARD_STATUS, I3C_ACTIVE_STATUS, I3C_GUARD_STATUS,
     I3D_ACTIVE_STATUS, I3D_GUARD_STATUS, I3E_ACTIVE_STATUS, I3E_GUARD_STATUS,
-    I3F_ACTIVE_STATUS, I3F_GUARD_STATUS, MAX_RECENT,
+    I3F_ACTIVE_STATUS, I3F_GUARD_STATUS, I3G_ACTIVE_STATUS, I3G_GUARD_STATUS, MAX_RECENT,
     emptyStore, normalizedStore, seenQuestionKey, evidenceUnitKey,
     assistanceKind, classifyAttempt, sourceTopicPolicyBlob, makeEvent, appendEvent,
     recordAttemptToStore, validatePolicy
@@ -466,8 +493,8 @@
 
   const scriptUrl = document.currentScript?.src || "";
   const policyUrl = scriptUrl
-    ? new URL("../data/curriculum/taxonomy-v2-runtime/i3f-ct02-20-r1.json", scriptUrl).href
-    : new URL("assets/data/curriculum/taxonomy-v2-runtime/i3f-ct02-20-r1.json", document.baseURI).href;
+    ? new URL("../data/curriculum/taxonomy-v2-runtime/i3g-ct02-25-r1.json", scriptUrl).href
+    : new URL("assets/data/curriculum/taxonomy-v2-runtime/i3g-ct02-25-r1.json", document.baseURI).href;
 
   const loadStore = () => {
     try {
@@ -498,7 +525,7 @@
       panel.style.padding = ".75rem";
       panel.style.border = "1px dashed currentColor";
       const summary = document.createElement("summary");
-      summary.textContent = "QA · Skill Taxonomy v2 I3F CT02–CT20 Shadow";
+      summary.textContent = "QA · Skill Taxonomy v2 I3G CT02–CT25 Shadow";
       const pre = document.createElement("pre");
       pre.style.whiteSpace = "pre-wrap";
       panel.append(summary, pre);
@@ -548,7 +575,7 @@
       const row = state.rows.get(question?.id);
 
       if (!row) {
-        lastCapture = { captured: false, reason: "not_in_i3f_scope", question_id: question?.id || null };
+        lastCapture = { captured: false, reason: "not_in_i3g_scope", question_id: question?.id || null };
         refreshDebug();
         return lastCapture;
       }
