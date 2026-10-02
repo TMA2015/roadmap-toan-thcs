@@ -1,0 +1,39 @@
+name: NotebookLM S4 Source Bundle
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'review-packets/skill-taxonomy/phase-d-s4-ct21-25/**'
+      - '.github/workflows/notebooklm-s4-source-bundle.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Collect NotebookLM batch sources
+        run: |
+          set -euo pipefail
+          SRC="review-packets/skill-taxonomy/phase-d-s4-ct21-25"
+          OUT="S4_NOTEBOOKLM_6_BATCH_SOURCES"
+          mkdir -p "$OUT"
+          cp "$SRC/CT21_OVERLAY_SOURCE.md" "$OUT/"
+          cp "$SRC/CT22_OVERLAY_SOURCE.md" "$OUT/"
+          cp "$SRC/CT23_OVERLAY_SOURCE.md" "$OUT/"
+          cp "$SRC/CT24_OVERLAY_SOURCE.md" "$OUT/"
+          cp "$SRC/CT25_OVERLAY_SOURCE.md" "$OUT/"
+          cp "$SRC/06_NOTEBOOKLM_COMBINED_REVIEW_GUIDE.md" "$OUT/"
+          test "$(find "$OUT" -maxdepth 1 -type f | wc -l)" -eq 6
+
+      - name: Upload source bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: S4_NOTEBOOKLM_6_BATCH_SOURCES
+          path: S4_NOTEBOOKLM_6_BATCH_SOURCES/
+          if-no-files-found: error
+          retention-days: 7
