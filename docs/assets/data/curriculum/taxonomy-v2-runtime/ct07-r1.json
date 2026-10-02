@@ -1,0 +1,3031 @@
+{
+  "schema": "skill-taxonomy-v2-topic-policy-r1",
+  "version": 1,
+  "status": "I1_COMPILED_RUNTIME_DISABLED",
+  "topic_id": "CT07",
+  "topic_slug": "07-phan-thuc-dai-so",
+  "runtime_enabled": false,
+  "learner_data_write_enabled": false,
+  "independent_credit_authorized": false,
+  "source_overlay": {
+    "path": "docs/assets/data/curriculum/primary-skill-overlay-core07-phase-d-r1.json",
+    "ref": "review/skill-taxonomy-phase-d-core07-r1-20260930",
+    "blob_sha": "0318bde17dd140ad2e94563abdbddca90343cc77",
+    "raw_status": "CHATGPT_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+    "review_gate": "PHASE_D_04_07_CLOSURE_PASS_ZERO_REVISIONS"
+  },
+  "review_support": {
+    "path": "review-packets/skill-taxonomy/PHASE_D_04_07_CLOSURE_20260930.md",
+    "ref": "main",
+    "blob_sha": "d4e8d029787139697e50dd55401a2c7f9bc3787a"
+  },
+  "source_files": {
+    "07-phan-thuc-dai-so-v1-01.json": {
+      "path": "docs/assets/data/practice/07-phan-thuc-dai-so-v1-01.json",
+      "blob_sha": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "question_count": 30
+    },
+    "07-phan-thuc-dai-so-v1-02.json": {
+      "path": "docs/assets/data/practice/07-phan-thuc-dai-so-v1-02.json",
+      "blob_sha": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "question_count": 30
+    },
+    "07-phan-thuc-dai-so-v1-03.json": {
+      "path": "docs/assets/data/practice/07-phan-thuc-dai-so-v1-03.json",
+      "blob_sha": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "question_count": 30
+    },
+    "07-phan-thuc-dai-so-v1-04.json": {
+      "path": "docs/assets/data/practice/07-phan-thuc-dai-so-v1-04.json",
+      "blob_sha": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "question_count": 30
+    }
+  },
+  "counts": {
+    "questions": 120,
+    "family_link_rows": 112,
+    "no_family_rows": 8
+  },
+  "rows": [
+    {
+      "question_id": "RAT07V1_001",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-thuc"
+      ],
+      "source_primary_id": "nhan-biet-phan-thuc",
+      "diagnostic_skill_id": "nhan-biet-phan-thuc",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-RECOGNIZE-001-008",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_002",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-thuc"
+      ],
+      "source_primary_id": "nhan-biet-phan-thuc",
+      "diagnostic_skill_id": "nhan-biet-phan-thuc",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-RECOGNIZE-001-008",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_003",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-thuc"
+      ],
+      "source_primary_id": "nhan-biet-phan-thuc",
+      "diagnostic_skill_id": "nhan-biet-phan-thuc",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-RECOGNIZE-001-008",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_004",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-thuc"
+      ],
+      "source_primary_id": "nhan-biet-phan-thuc",
+      "diagnostic_skill_id": "nhan-biet-phan-thuc",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-RECOGNIZE-001-008",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_005",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-thuc"
+      ],
+      "source_primary_id": "nhan-biet-phan-thuc",
+      "diagnostic_skill_id": "nhan-biet-phan-thuc",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-RECOGNIZE-001-008",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_006",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-thuc"
+      ],
+      "source_primary_id": "nhan-biet-phan-thuc",
+      "diagnostic_skill_id": "nhan-biet-phan-thuc",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-RECOGNIZE-001-008",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_007",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-thuc"
+      ],
+      "source_primary_id": "nhan-biet-phan-thuc",
+      "diagnostic_skill_id": "nhan-biet-phan-thuc",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-RECOGNIZE-001-008",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_008",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-thuc"
+      ],
+      "source_primary_id": "nhan-biet-phan-thuc",
+      "diagnostic_skill_id": "nhan-biet-phan-thuc",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-RECOGNIZE-001-008",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_009",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_010",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_011",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_012",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_013",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_014",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_015",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_016",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-LINEAR-009-016",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_017",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_018",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_019",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_020",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_021",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_022",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_023",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_024",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "dieu-kien-xac-dinh",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "dieu-kien-xac-dinh",
+      "diagnostic_skill_id": "dieu-kien-xac-dinh",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DOMAIN-QUADRATIC-017-024",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_025",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "hai-phan-thuc-bang-nhau",
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "hai-phan-thuc-bang-nhau",
+      "diagnostic_skill_id": "hai-phan-thuc-bang-nhau",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-EQUALITY-DOMAIN-025-030",
+      "supporting_skills": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_026",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "hai-phan-thuc-bang-nhau",
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "hai-phan-thuc-bang-nhau",
+      "diagnostic_skill_id": "hai-phan-thuc-bang-nhau",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-EQUALITY-DOMAIN-025-030",
+      "supporting_skills": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_027",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "hai-phan-thuc-bang-nhau",
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "hai-phan-thuc-bang-nhau",
+      "diagnostic_skill_id": "hai-phan-thuc-bang-nhau",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-EQUALITY-DOMAIN-025-030",
+      "supporting_skills": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_028",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "hai-phan-thuc-bang-nhau",
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "hai-phan-thuc-bang-nhau",
+      "diagnostic_skill_id": "hai-phan-thuc-bang-nhau",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-EQUALITY-DOMAIN-025-030",
+      "supporting_skills": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_029",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "hai-phan-thuc-bang-nhau",
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "hai-phan-thuc-bang-nhau",
+      "diagnostic_skill_id": "hai-phan-thuc-bang-nhau",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-EQUALITY-DOMAIN-025-030",
+      "supporting_skills": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_030",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-01.json",
+      "source_blob": "3bf6305a57286b92c9c6a2486c94eadcff0d9163",
+      "legacy_skill_tags": [
+        "hai-phan-thuc-bang-nhau",
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "hai-phan-thuc-bang-nhau",
+      "diagnostic_skill_id": "hai-phan-thuc-bang-nhau",
+      "family_id": "RATEX-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-EQUALITY-DOMAIN-025-030",
+      "supporting_skills": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_031",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "doi-dau-phan-thuc"
+      ],
+      "source_primary_id": "doi-dau-phan-thuc",
+      "diagnostic_skill_id": "doi-dau-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-SIGN-031-038",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_032",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "doi-dau-phan-thuc"
+      ],
+      "source_primary_id": "doi-dau-phan-thuc",
+      "diagnostic_skill_id": "doi-dau-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-SIGN-031-038",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_033",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "doi-dau-phan-thuc"
+      ],
+      "source_primary_id": "doi-dau-phan-thuc",
+      "diagnostic_skill_id": "doi-dau-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-SIGN-031-038",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_034",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "doi-dau-phan-thuc"
+      ],
+      "source_primary_id": "doi-dau-phan-thuc",
+      "diagnostic_skill_id": "doi-dau-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-SIGN-031-038",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_035",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "doi-dau-phan-thuc"
+      ],
+      "source_primary_id": "doi-dau-phan-thuc",
+      "diagnostic_skill_id": "doi-dau-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-SIGN-031-038",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_036",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "doi-dau-phan-thuc"
+      ],
+      "source_primary_id": "doi-dau-phan-thuc",
+      "diagnostic_skill_id": "doi-dau-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-SIGN-031-038",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_037",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "doi-dau-phan-thuc"
+      ],
+      "source_primary_id": "doi-dau-phan-thuc",
+      "diagnostic_skill_id": "doi-dau-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-SIGN-031-038",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_038",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "doi-dau-phan-thuc"
+      ],
+      "source_primary_id": "doi-dau-phan-thuc",
+      "diagnostic_skill_id": "doi-dau-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-SIGN-031-038",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_039",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "phan-tich-tu-mau",
+      "diagnostic_skill_id": "phan-tich-tu-mau",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-FACTOR-DIFFSQ-039-042",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_040",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "phan-tich-tu-mau",
+      "diagnostic_skill_id": "phan-tich-tu-mau",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_041",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "phan-tich-tu-mau",
+      "diagnostic_skill_id": "phan-tich-tu-mau",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-FACTOR-PERFECTSQ-041-046",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_042",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "phan-tich-tu-mau",
+      "diagnostic_skill_id": "phan-tich-tu-mau",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-FACTOR-DIFFSQ-039-042",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_043",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "phan-tich-tu-mau",
+      "diagnostic_skill_id": "phan-tich-tu-mau",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_044",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "phan-tich-tu-mau",
+      "diagnostic_skill_id": "phan-tich-tu-mau",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_045",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "phan-tich-tu-mau",
+      "diagnostic_skill_id": "phan-tich-tu-mau",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_046",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "phan-tich-tu-mau",
+      "diagnostic_skill_id": "phan-tich-tu-mau",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-FACTOR-PERFECTSQ-041-046",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_047",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-047-055",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_048",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-048-056",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_049",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-049-057",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_050",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-050-058",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_051",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-051-059",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_052",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-052-060",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_053",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-053-061",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_054",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-054-062",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_055",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-047-055",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_056",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-048-056",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_057",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-049-057",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_058",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-050-058",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_059",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-051-059",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_060",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-02.json",
+      "source_blob": "2294a3f9d93b01b70036167713a3940fea367dca",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-052-060",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_061",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-053-061",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_062",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "rut-gon-phan-thuc",
+        "phan-tich-tu-mau"
+      ],
+      "source_primary_id": "rut-gon-phan-thuc",
+      "diagnostic_skill_id": "rut-gon-phan-thuc",
+      "family_id": "RATEX-SIMPLIFY",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "METHOD",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SIMPLIFY-054-062",
+      "supporting_skills": [
+        "phan-tich-tu-mau"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_063",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "giu-dieu-kien-ban-dau",
+      "diagnostic_skill_id": "giu-dieu-kien-ban-dau",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-DOMAIN-PRESERVE-063-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_064",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "giu-dieu-kien-ban-dau",
+      "diagnostic_skill_id": "giu-dieu-kien-ban-dau",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-DOMAIN-PRESERVE-063-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_065",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "giu-dieu-kien-ban-dau",
+      "diagnostic_skill_id": "giu-dieu-kien-ban-dau",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-DOMAIN-PRESERVE-063-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_066",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "giu-dieu-kien-ban-dau",
+      "diagnostic_skill_id": "giu-dieu-kien-ban-dau",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-DOMAIN-PRESERVE-063-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_067",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "giu-dieu-kien-ban-dau",
+      "diagnostic_skill_id": "giu-dieu-kien-ban-dau",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-DOMAIN-PRESERVE-063-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_068",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "giu-dieu-kien-ban-dau",
+      "diagnostic_skill_id": "giu-dieu-kien-ban-dau",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-DOMAIN-PRESERVE-063-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_069",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "giu-dieu-kien-ban-dau",
+      "diagnostic_skill_id": "giu-dieu-kien-ban-dau",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-DOMAIN-PRESERVE-063-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_070",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "source_primary_id": "giu-dieu-kien-ban-dau",
+      "diagnostic_skill_id": "giu-dieu-kien-ban-dau",
+      "family_id": "RATEX-DOMAIN",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "RAT07-DOMAIN-PRESERVE-063-070",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_071",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "quy-dong-mau-thuc",
+      "diagnostic_skill_id": "quy-dong-mau-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_072",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "quy-dong-mau-thuc",
+      "diagnostic_skill_id": "quy-dong-mau-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_073",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "quy-dong-mau-thuc",
+      "diagnostic_skill_id": "quy-dong-mau-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_074",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "quy-dong-mau-thuc",
+      "diagnostic_skill_id": "quy-dong-mau-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_075",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "quy-dong-mau-thuc",
+      "diagnostic_skill_id": "quy-dong-mau-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_076",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "quy-dong-mau-thuc",
+      "diagnostic_skill_id": "quy-dong-mau-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_077",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "quy-dong-mau-thuc",
+      "diagnostic_skill_id": "quy-dong-mau-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_078",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "quy-dong-mau-thuc",
+      "diagnostic_skill_id": "quy-dong-mau-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_079",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "quy-dong-mau-thuc",
+      "diagnostic_skill_id": "quy-dong-mau-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_080",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "quy-dong-mau-thuc",
+      "diagnostic_skill_id": "quy-dong-mau-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_081",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "cong-tru-phan-thuc",
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "cong-tru-phan-thuc",
+      "diagnostic_skill_id": "cong-tru-phan-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-ADD-081-086",
+      "supporting_skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_082",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "cong-tru-phan-thuc",
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "cong-tru-phan-thuc",
+      "diagnostic_skill_id": "cong-tru-phan-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-ADD-081-086",
+      "supporting_skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_083",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "cong-tru-phan-thuc",
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "cong-tru-phan-thuc",
+      "diagnostic_skill_id": "cong-tru-phan-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-ADD-081-086",
+      "supporting_skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_084",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "cong-tru-phan-thuc",
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "cong-tru-phan-thuc",
+      "diagnostic_skill_id": "cong-tru-phan-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-ADD-081-086",
+      "supporting_skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_085",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "cong-tru-phan-thuc",
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "cong-tru-phan-thuc",
+      "diagnostic_skill_id": "cong-tru-phan-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-ADD-081-086",
+      "supporting_skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_086",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "cong-tru-phan-thuc",
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "cong-tru-phan-thuc",
+      "diagnostic_skill_id": "cong-tru-phan-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-ADD-081-086",
+      "supporting_skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_087",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "cong-tru-phan-thuc",
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "cong-tru-phan-thuc",
+      "diagnostic_skill_id": "cong-tru-phan-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SUBTRACT-087-092",
+      "supporting_skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_088",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "cong-tru-phan-thuc",
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "cong-tru-phan-thuc",
+      "diagnostic_skill_id": "cong-tru-phan-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SUBTRACT-087-092",
+      "supporting_skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_089",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "cong-tru-phan-thuc",
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "cong-tru-phan-thuc",
+      "diagnostic_skill_id": "cong-tru-phan-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SUBTRACT-087-092",
+      "supporting_skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_090",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-03.json",
+      "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+      "legacy_skill_tags": [
+        "cong-tru-phan-thuc",
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "cong-tru-phan-thuc",
+      "diagnostic_skill_id": "cong-tru-phan-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SUBTRACT-087-092",
+      "supporting_skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_091",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "cong-tru-phan-thuc",
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "cong-tru-phan-thuc",
+      "diagnostic_skill_id": "cong-tru-phan-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SUBTRACT-087-092",
+      "supporting_skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_092",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "cong-tru-phan-thuc",
+        "quy-dong-mau-thuc"
+      ],
+      "source_primary_id": "cong-tru-phan-thuc",
+      "diagnostic_skill_id": "cong-tru-phan-thuc",
+      "family_id": "RATEX-ADD-SUB",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-SUBTRACT-087-092",
+      "supporting_skills": [
+        "quy-dong-mau-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_093",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "nhan-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "nhan-phan-thuc",
+      "diagnostic_skill_id": "nhan-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-MULTIPLY-093-100",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_094",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "nhan-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "nhan-phan-thuc",
+      "diagnostic_skill_id": "nhan-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-MULTIPLY-093-100",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_095",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "nhan-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "nhan-phan-thuc",
+      "diagnostic_skill_id": "nhan-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-MULTIPLY-093-100",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_096",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "nhan-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "nhan-phan-thuc",
+      "diagnostic_skill_id": "nhan-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-MULTIPLY-093-100",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_097",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "nhan-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "nhan-phan-thuc",
+      "diagnostic_skill_id": "nhan-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-MULTIPLY-093-100",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_098",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "nhan-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "nhan-phan-thuc",
+      "diagnostic_skill_id": "nhan-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-MULTIPLY-093-100",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_099",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "nhan-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "nhan-phan-thuc",
+      "diagnostic_skill_id": "nhan-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-MULTIPLY-093-100",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_100",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "nhan-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "nhan-phan-thuc",
+      "diagnostic_skill_id": "nhan-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-MULTIPLY-093-100",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_101",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "chia-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "chia-phan-thuc",
+      "diagnostic_skill_id": "chia-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DIVIDE-101-108",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_102",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "chia-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "chia-phan-thuc",
+      "diagnostic_skill_id": "chia-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DIVIDE-101-108",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_103",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "chia-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "chia-phan-thuc",
+      "diagnostic_skill_id": "chia-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DIVIDE-101-108",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_104",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "chia-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "chia-phan-thuc",
+      "diagnostic_skill_id": "chia-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DIVIDE-101-108",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_105",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "chia-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "chia-phan-thuc",
+      "diagnostic_skill_id": "chia-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DIVIDE-101-108",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_106",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "chia-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "chia-phan-thuc",
+      "diagnostic_skill_id": "chia-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DIVIDE-101-108",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_107",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "chia-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "chia-phan-thuc",
+      "diagnostic_skill_id": "chia-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DIVIDE-101-108",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_108",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "chia-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "source_primary_id": "chia-phan-thuc",
+      "diagnostic_skill_id": "chia-phan-thuc",
+      "family_id": "RATEX-MULT-DIV",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-DIVIDE-101-108",
+      "supporting_skills": [
+        "rut-gon-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_109",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "bieu-thuc-nhieu-phep-tinh",
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "source_primary_id": null,
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-COMPOSITE-109-114",
+      "supporting_skills": [
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [
+        "bieu-thuc-nhieu-phep-tinh"
+      ],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_110",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "bieu-thuc-nhieu-phep-tinh",
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "source_primary_id": null,
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-COMPOSITE-109-114",
+      "supporting_skills": [
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [
+        "bieu-thuc-nhieu-phep-tinh"
+      ],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_111",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "bieu-thuc-nhieu-phep-tinh",
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "source_primary_id": null,
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-COMPOSITE-109-114",
+      "supporting_skills": [
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [
+        "bieu-thuc-nhieu-phep-tinh"
+      ],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_112",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "bieu-thuc-nhieu-phep-tinh",
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "source_primary_id": null,
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-COMPOSITE-109-114",
+      "supporting_skills": [
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [
+        "bieu-thuc-nhieu-phep-tinh"
+      ],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_113",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "bieu-thuc-nhieu-phep-tinh",
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "source_primary_id": null,
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-COMPOSITE-109-114",
+      "supporting_skills": [
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [
+        "bieu-thuc-nhieu-phep-tinh"
+      ],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_114",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "bieu-thuc-nhieu-phep-tinh",
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "source_primary_id": null,
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-COMPOSITE-109-114",
+      "supporting_skills": [
+        "cong-tru-phan-thuc",
+        "nhan-phan-thuc"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [
+        "bieu-thuc-nhieu-phep-tinh"
+      ],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_115",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "source_primary_id": "tinh-gia-tri-phan-thuc",
+      "diagnostic_skill_id": "tinh-gia-tri-phan-thuc",
+      "family_id": "RATEX-EVALUATE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_116",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "source_primary_id": "tinh-gia-tri-phan-thuc",
+      "diagnostic_skill_id": "tinh-gia-tri-phan-thuc",
+      "family_id": "RATEX-EVALUATE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_117",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "source_primary_id": "tinh-gia-tri-phan-thuc",
+      "diagnostic_skill_id": "tinh-gia-tri-phan-thuc",
+      "family_id": "RATEX-EVALUATE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_118",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "source_primary_id": "tinh-gia-tri-phan-thuc",
+      "diagnostic_skill_id": "tinh-gia-tri-phan-thuc",
+      "family_id": "RATEX-EVALUATE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_119",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "tim-gia-tri-nguyen"
+      ],
+      "source_primary_id": null,
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-INTEGER-119-120",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [
+        "tim-gia-tri-nguyen"
+      ],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    },
+    {
+      "question_id": "RAT07V1_120",
+      "topic_id": "CT07",
+      "source_file": "07-phan-thuc-dai-so-v1-04.json",
+      "source_blob": "b1ba2cc3664cfc2cda13fdafe4655f744130c833",
+      "legacy_skill_tags": [
+        "tim-gia-tri-nguyen"
+      ],
+      "source_primary_id": null,
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family": "RAT07-INTEGER-119-120",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [
+        "tim-gia-tri-nguyen"
+      ],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false
+    }
+  ]
+}
