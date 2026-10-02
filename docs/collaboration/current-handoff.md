@@ -1,14 +1,15 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 I3A FULL-CT02 SHADOW DONE; OWNER PRODUCTION QA PASS.**  
+> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 I3B CT02–CT03 SHADOW LIVE; OWNER PRODUCTION QA PENDING.**  
 > Academic taxonomy: **131/131 family definitions PASS; 386/386 mappings PASS**.  
 > I0 durable registry: **DONE**. I1 topic policies: **DONE — 24 policies / 3,114 questions / 2,900 family-linked + 214 formative/NO_FAMILY**.  
-> I2 CT02 canary: **DONE / OWNER PRODUCTION QA PASS**.  
-> I3A full CT02 shadow: **LIVE** — **120 rows = 103 family-linked active + 17 formative/NO_FAMILY guards / 10 Core families / max 75 independent units**.  
-> Exact I3A tested HEAD `02b39d0cf27ad2815b4f0305cda506a21ab032b7` passed Roadmap PR Quality **37025889031**; merged as `c1940bda496caeed2e4f269c1e9e087145a96275`; production deploy **37026596985 SUCCESS**.  
-> Post-deploy `gh-pages` verification: **PASS** @ `71c5900059fe1ace8c8b6f3431ae3124bde92dfb` — I3A observer build present, 103/17 policy present, deployed CT02 Practice HTML loads observer.  
-> Store remains `toan-thcs-taxonomy-v2-evidence-v1`; prior I2 evidence is preserved. **No mastery, no Readiness, no backfill/regrade, no normal learner-facing Taxonomy v2 UI. G2 remains unchanged.**  
-> I3A owner-QA gate is closed. **I3B CT03 shadow expansion is READY but requires separate authorization before CT03 is activated.**
+> I2 CT02 canary: **DONE / OWNER QA PASS**. I3A full CT02: **DONE / OWNER QA PASS**.  
+> I3B CT02–CT03 shadow: **LIVE** — **240 rows = 221 family-linked active + 19 NO_FAMILY guards / 16 Core families / max 149 independent units**.  
+> Exact I3B tested HEAD `b3c650955fc4481cff121702542ba57c4296140d` passed Roadmap PR Quality **37030103708**; merged as `a49ea5832206e7cd43df0440e241799d246a9916`; production deploy **37030799961 SUCCESS**.  
+> Post-deploy `gh-pages` verification: **PASS** @ `31e5074e82d87586501d24a8b04226859aee87c8` — I3B observer/policy present and both CT02/CT03 Practice HTML load the observer.  
+> Store remains `toan-thcs-taxonomy-v2-evidence-v1`; all prior CT02 evidence is preserved. Cross-topic `NUM-PERCENT` reuse remains topic-scoped for independent units.  
+> **No mastery, no Readiness, no backfill/regrade, no normal learner-facing Taxonomy v2 UI. G2 remains unchanged.**  
+> **Do not expand to CT04 or beyond until owner production QA closes I3B.**
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -204,11 +205,31 @@
 - I3A status: **DONE**.
 - Still OFF: mastery, Readiness, backfill/regrade, learner-facing Taxonomy v2 UI.
 
-### Skill Taxonomy v2 — I3B CT03 shadow expansion — READY
+### Skill Taxonomy v2 — I3B CT02–CT03 shadow — LIVE / OWNER QA PENDING
 - Task: `MATH-SKILL-TAXONOMY-V2-I3B-001`.
-- Scope: add reviewed CT03 shadow capture while preserving the same isolated store and CT02/I2 evidence continuity.
-- Required boundaries: legacy Practice first; G2 unchanged; fail-open; NO_FAMILY no-write; no mastery/Readiness/backfill/UI.
-- **Separate owner authorization required before activation.**
+- PR: **#275**.
+- Exact tested HEAD: `b3c650955fc4481cff121702542ba57c4296140d`.
+- Roadmap PR Quality: **37030103708 — SUCCESS**.
+- Squash merge: `a49ea5832206e7cd43df0440e241799d246a9916`.
+- Deploy MkDocs: **37030799961 — SUCCESS**.
+- Deployed artifact verification: **PASS**.
+- Policy: `docs/assets/data/curriculum/taxonomy-v2-runtime/i3b-ct02-03-r1.json`.
+- Combined runtime scope:
+  - **240** rows total;
+  - **221** family-linked active;
+  - **19** formative / NO_FAMILY no-write guards;
+  - **16** unique KNTT-Core learner families;
+  - maximum **149** independent units after topic-scoped clone de-dup.
+- Per-topic scope:
+  - CT02: **120 = 103 active + 17 guards**;
+  - CT03: **120 = 118 active + 2 guards**.
+- CT03 adds seven family lanes: RATIO-BASIC, RATIO-PROP, RATIO-SPLIT, RATIO-DIRECT, RATIO-INVERSE, RATIO-DISTINGUISH, and canonical reuse NUM-PERCENT.
+- Cross-topic NUM-PERCENT evidence units remain topic-scoped, so CT02 and CT03 evidence does not collapse into one unit.
+- Same isolated store `toan-thcs-taxonomy-v2-evidence-v1` preserves I2/I3A evidence.
+- Runtime boundaries remain: legacy Practice first; G2 unchanged; fail-open; assisted/repeat/clone de-dup preserved; NO_FAMILY no-write; no mastery/Readiness/backfill/UI.
+- Release receipt: `review-packets/skill-taxonomy/implementation/I3B_CT02_03_SHADOW_RELEASE_RECEIPT.md`.
+- Current gate: **OWNER PRODUCTION QA**.
+- **No CT04+ expansion is authorized until this gate is closed.**
 
 ## Written Library Expansion B7 — CLOSED DONE / owner QA PASS (02/10/2026)
 
