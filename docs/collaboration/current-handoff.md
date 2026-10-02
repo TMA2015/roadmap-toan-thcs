@@ -1,6 +1,6 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 I3A FULL-CT02 SHADOW LIVE; OWNER PRODUCTION QA PENDING.**  
+> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 I3A FULL-CT02 SHADOW DONE; OWNER PRODUCTION QA PASS.**  
 > Academic taxonomy: **131/131 family definitions PASS; 386/386 mappings PASS**.  
 > I0 durable registry: **DONE**. I1 topic policies: **DONE — 24 policies / 3,114 questions / 2,900 family-linked + 214 formative/NO_FAMILY**.  
 > I2 CT02 canary: **DONE / OWNER PRODUCTION QA PASS**.  
@@ -8,7 +8,7 @@
 > Exact I3A tested HEAD `02b39d0cf27ad2815b4f0305cda506a21ab032b7` passed Roadmap PR Quality **37025889031**; merged as `c1940bda496caeed2e4f269c1e9e087145a96275`; production deploy **37026596985 SUCCESS**.  
 > Post-deploy `gh-pages` verification: **PASS** @ `71c5900059fe1ace8c8b6f3431ae3124bde92dfb` — I3A observer build present, 103/17 policy present, deployed CT02 Practice HTML loads observer.  
 > Store remains `toan-thcs-taxonomy-v2-evidence-v1`; prior I2 evidence is preserved. **No mastery, no Readiness, no backfill/regrade, no normal learner-facing Taxonomy v2 UI. G2 remains unchanged.**  
-> **Do not expand to CT03 or beyond until owner production QA closes I3A.**
+> I3A owner-QA gate is closed. **I3B CT03 shadow expansion is READY but requires separate authorization before CT03 is activated.**
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -180,39 +180,35 @@
 - Owner QA receipt: `review-packets/skill-taxonomy/implementation/I2_CT02_SHADOW_CANARY_OWNER_QA_PASS.md`.
 - I2 evidence remains valid in the same isolated store and is preserved by I3A.
 
-### Skill Taxonomy v2 — I3A full CT02 shadow — LIVE / OWNER QA PENDING
+### Skill Taxonomy v2 — I3A full CT02 shadow — DONE
 - Task: `MATH-SKILL-TAXONOMY-V2-I3-001`.
 - PR: **#274**.
 - Exact tested HEAD: `02b39d0cf27ad2815b4f0305cda506a21ab032b7`.
 - Roadmap PR Quality: **37025889031 — SUCCESS**.
 - Squash merge: `c1940bda496caeed2e4f269c1e9e087145a96275`.
 - Deploy MkDocs: **37026596985 — SUCCESS**.
-- `gh-pages`: `71c5900059fe1ace8c8b6f3431ae3124bde92dfb` — deployed artifacts verified.
-- Policy: `docs/assets/data/curriculum/taxonomy-v2-runtime/i3a-full-ct02-r1.json`.
+- Deployed artifact verification: **PASS**.
 - Runtime scope:
   - CT02 total **120** rows;
-  - **103** family-linked rows active;
+  - **103** family-linked active;
   - **17** formative / NO_FAMILY no-write guards;
   - **10** KNTT-Core learner families;
   - maximum **75** independent units after clone de-dup.
-- Store continuity:
-  - same `toan-thcs-taxonomy-v2-evidence-v1`;
-  - prior I2 events / seen-question / independent-unit indexes are preserved;
-  - no migration and no historical backfill.
-- Runtime boundaries remain:
-  - legacy Practice write first;
-  - Canonical Evidence G2 unchanged;
-  - Taxonomy v2 separately fail-open;
-  - assisted/repeat/clone de-dup semantics preserved;
-  - wrong first-unassisted answer may be negative independent evidence;
-  - NO_FAMILY writes no Taxonomy v2 event;
-  - no mastery threshold;
-  - no Core Readiness credit;
-  - no normal learner UI;
-  - debug panel only with `?taxonomyV2Debug=1`.
-- Release receipt: `review-packets/skill-taxonomy/implementation/I3A_FULL_CT02_SHADOW_RELEASE_RECEIPT.md`.
-- Current gate: **OWNER PRODUCTION QA**.
-- **No CT03+ expansion is authorized until this gate is closed.**
+- Owner production QA: **PASS**.
+  - `policy_ready: true`, `policy_error: null`;
+  - observed store: **8 events / 8 seen questions / 7 independent units**;
+  - last capture: `NUM02V1_100` -> `NUM-FRACTION-OPS` / `phep-tinh-phan-so`;
+  - `independent_evidence: true`, `first_unseen_unit`;
+  - normal learner UI showed no Taxonomy v2 panel.
+- Owner QA receipt: `review-packets/skill-taxonomy/implementation/I3A_FULL_CT02_SHADOW_OWNER_QA_PASS.md`.
+- I3A status: **DONE**.
+- Still OFF: mastery, Readiness, backfill/regrade, learner-facing Taxonomy v2 UI.
+
+### Skill Taxonomy v2 — I3B CT03 shadow expansion — READY
+- Task: `MATH-SKILL-TAXONOMY-V2-I3B-001`.
+- Scope: add reviewed CT03 shadow capture while preserving the same isolated store and CT02/I2 evidence continuity.
+- Required boundaries: legacy Practice first; G2 unchanged; fail-open; NO_FAMILY no-write; no mastery/Readiness/backfill/UI.
+- **Separate owner authorization required before activation.**
 
 ## Written Library Expansion B7 — CLOSED DONE / owner QA PASS (02/10/2026)
 
