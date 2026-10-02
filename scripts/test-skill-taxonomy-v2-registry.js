@@ -155,15 +155,21 @@ assert(learnerEvidence.includes('const STORAGE_KEY = "toan-thcs-practice-v1"'), 
 
 const proposedStore = "toan-thcs-taxonomy-v2-evidence-v1";
 const registryName = "skill-taxonomy-v2-registry-r1.json";
-const authorizedI2Observer = "taxonomy-v2-evidence-observer-v1.js";
+const authorizedObserver = "taxonomy-v2-evidence-observer-v1.js";
+const authorizedI4Preview = "skill-map-v2-preview.js";
 for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))) {
   const content = fs.readFileSync(path.join(jsRoot, file), "utf8");
-  if (file === authorizedI2Observer) {
-    assert(content.includes(proposedStore), "authorized I2 observer must use the isolated Taxonomy v2 store");
+  if (file === authorizedObserver) {
+    assert(content.includes(proposedStore), "authorized Taxonomy v2 observer must use the isolated store");
+    assert(!content.includes(registryName), "observer must stay on compiled runtime policy rather than the full registry");
+  } else if (file === authorizedI4Preview) {
+    assert(content.includes(proposedStore), "authorized I4 preview must read the isolated Taxonomy v2 store");
+    assert(content.includes(registryName), "authorized I4 preview must read the durable 131-family registry");
+    assert(!content.includes("localStorage.setItem"), "I4 preview must remain read-only");
   } else {
-    assert(!content.includes(proposedStore), `only the authorized I2 observer may access the Taxonomy v2 store: ${file}`);
+    assert(!content.includes(proposedStore), `unauthorized JS must not access the Taxonomy v2 store: ${file}`);
+    assert(!content.includes(registryName), `unauthorized runtime JS must not load the I0 registry directly: ${file}`);
   }
-  assert(!content.includes(registryName), `runtime JS must not load the I0 registry directly: ${file}`);
 }
 
 console.log("PASS Taxonomy v2 I0 registry", JSON.stringify({

@@ -1,0 +1,44 @@
+.skill-map-v2-preview{--sm2-line:color-mix(in srgb,var(--md-default-fg-color) 16%,transparent);--sm2-soft:color-mix(in srgb,var(--md-primary-fg-color) 7%,transparent);margin:1rem 0 2rem}
+.skill-map-v2-intro{padding:.9rem 1rem;border-left:.24rem solid var(--md-primary-fg-color);background:var(--sm2-soft);border-radius:.35rem}
+.skill-map-v2-intro p{margin:.45rem 0 0;line-height:1.55}
+.skill-map-v2-totals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem;margin:1rem 0}
+.skill-map-v2-total-card{padding:.8rem;border:1px solid var(--sm2-line);border-radius:.6rem;background:var(--md-default-bg-color)}
+.skill-map-v2-total-value{display:block;font-size:1.35rem;font-weight:750;line-height:1.1}
+.skill-map-v2-total-label{display:block;margin-top:.3rem;font-size:.78rem;opacity:.76;line-height:1.35}
+.skill-map-v2-controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.45fr) auto;gap:.7rem;align-items:end;margin:1rem 0;padding:.8rem;border:1px solid var(--sm2-line);border-radius:.65rem}
+.skill-map-v2-control{display:grid;gap:.35rem;font-size:.82rem;font-weight:650}
+.skill-map-v2-control select{width:100%;min-height:2.45rem;padding:.45rem .55rem;border:1px solid var(--sm2-line);border-radius:.42rem;background:var(--md-default-bg-color);color:var(--md-default-fg-color);font:inherit}
+.skill-map-v2-check{display:flex;align-items:center;gap:.45rem;min-height:2.45rem;padding:.45rem .1rem;font-weight:550}
+.skill-map-v2-check input{width:1rem;height:1rem}
+.skill-map-v2-count{font-size:.8rem;opacity:.75;margin:.5rem 0 1rem}
+.skill-map-v2-layer{margin:1rem 0 1.3rem}
+.skill-map-v2-layer.is-optional{border:1px solid var(--sm2-line);border-radius:.65rem;padding:.65rem .8rem}
+.skill-map-v2-layer-title{font-size:1rem!important;font-weight:750;margin:.2rem 0 .75rem!important}
+details.skill-map-v2-layer>summary{cursor:pointer;list-style-position:outside}
+.skill-map-v2-groups{display:grid;gap:1rem}
+.skill-map-v2-topic{min-width:0}
+.skill-map-v2-topic-title{font-size:.93rem!important;margin:.2rem 0!important}
+.skill-map-v2-strand{font-size:.75rem;opacity:.68;margin:.2rem 0 .55rem}
+.skill-map-v2-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}
+.skill-map-v2-card{min-width:0;border:1px solid var(--sm2-line);border-radius:.65rem;padding:.78rem .85rem;background:var(--md-default-bg-color)}
+.skill-map-v2-card-header{display:flex;gap:.6rem;align-items:flex-start;justify-content:space-between}
+.skill-map-v2-card-title{font-size:.92rem!important;line-height:1.42;margin:0!important;overflow-wrap:anywhere}
+.skill-map-v2-layer-badge{flex:0 0 auto;padding:.16rem .42rem;border-radius:999px;background:var(--sm2-soft);font-size:.68rem;font-weight:700;white-space:nowrap}
+.skill-map-v2-family-id{font-size:.68rem;opacity:.56;margin:.2rem 0 .45rem}
+.skill-map-v2-topics{font-size:.76rem;line-height:1.45;opacity:.78;margin:.25rem 0 .55rem}
+.skill-map-v2-metrics{display:flex;flex-wrap:wrap;gap:.35rem;margin:.45rem 0}
+.skill-map-v2-metric{padding:.2rem .45rem;border-radius:.4rem;background:color-mix(in srgb,var(--md-default-fg-color) 5%,transparent);font-size:.72rem;font-weight:650}
+.skill-map-v2-recent,.skill-map-v2-no-evidence{font-size:.75rem;line-height:1.5;margin:.5rem 0}
+.skill-map-v2-no-evidence{padding:.45rem .55rem;border-left:.18rem solid color-mix(in srgb,var(--md-default-fg-color) 38%,transparent);background:color-mix(in srgb,var(--md-default-fg-color) 4%,transparent)}
+.skill-map-v2-actions{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.65rem}
+.skill-map-v2-link{font-size:.75rem;font-weight:650;text-decoration:none}
+.skill-map-v2-link:focus-visible,.skill-map-v2-control select:focus-visible,.skill-map-v2-check input:focus-visible{outline:2px solid var(--md-primary-fg-color);outline-offset:2px}
+.skill-map-v2-legacy{margin-top:1.3rem;padding:.7rem .85rem;border:1px dashed var(--sm2-line);border-radius:.6rem}
+.skill-map-v2-legacy>summary{cursor:pointer;font-weight:700}
+.skill-map-v2-legacy-note{font-size:.78rem;line-height:1.5;opacity:.78}
+.skill-map-v2-legacy-list{max-height:22rem;overflow:auto;padding-right:.2rem}
+.skill-map-v2-legacy-row{font-size:.76rem;line-height:1.45;margin:.25rem 0;padding:.3rem 0;border-bottom:1px solid var(--sm2-line)}
+.skill-map-v2-empty,.skill-map-v2-error{padding:.7rem .8rem;border-left:.2rem solid #b7791f;background:color-mix(in srgb,#b7791f 8%,transparent);font-size:.82rem}
+@media(max-width:850px){.skill-map-v2-totals{grid-template-columns:repeat(2,minmax(0,1fr))}.skill-map-v2-controls{grid-template-columns:1fr 1fr}.skill-map-v2-check{grid-column:1/-1}.skill-map-v2-cards{grid-template-columns:1fr}}
+@media(max-width:520px){.skill-map-v2-totals,.skill-map-v2-controls{grid-template-columns:1fr}.skill-map-v2-check{grid-column:auto}.skill-map-v2-card-header{display:block}.skill-map-v2-layer-badge{display:inline-block;margin-top:.35rem}.skill-map-v2-preview{font-size:.96rem}}
+@media(prefers-reduced-motion:reduce){.skill-map-v2-preview *{scroll-behavior:auto!important}}

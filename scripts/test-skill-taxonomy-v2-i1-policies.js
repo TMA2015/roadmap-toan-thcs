@@ -146,6 +146,7 @@ assert(g2?.runtime_rules?.core_readiness_credit === false, "G2 Readiness credit 
 
 const proposedStore = "toan-thcs-taxonomy-v2-evidence-v1";
 const authorizedI2Observer = "taxonomy-v2-evidence-observer-v1.js";
+const authorizedI4Preview = "skill-map-v2-preview.js";
 for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))) {
   const content = fs.readFileSync(path.join(jsRoot, file), "utf8");
   if (file === authorizedI2Observer) {
@@ -202,9 +203,13 @@ for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))
       "Taxonomy v2 observer must not load the full CT24 I1 policy directly");
     assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct25-r1.json"'),
       "Taxonomy v2 observer must not load the full CT25 I1 policy directly");
+  } else if (file === authorizedI4Preview) {
+    assert(content.includes(proposedStore), "authorized I4 preview must read the isolated Taxonomy v2 store");
+    assert(!content.includes("taxonomy-v2-runtime/"), "I4 preview must not load compiled item policies directly");
+    assert(!content.includes("localStorage.setItem"), "I4 preview must remain read-only");
   } else {
-    assert(!content.includes(proposedStore), `only the authorized I2 observer may access the Taxonomy v2 store: ${file}`);
-    assert(!content.includes("taxonomy-v2-runtime/"), `only the authorized I2 observer may load a Taxonomy v2 runtime path: ${file}`);
+    assert(!content.includes(proposedStore), `unauthorized JS must not access the Taxonomy v2 store: ${file}`);
+    assert(!content.includes("taxonomy-v2-runtime/"), `only the authorized observer may load a Taxonomy v2 runtime path: ${file}`);
   }
 }
 
