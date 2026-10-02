@@ -1,5 +1,5 @@
 {
-  "version": "1.0.134",
+  "version": "1.0.135",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -855,9 +855,9 @@
       "title": "Consolidate THCS Skill Taxonomy v2 across learner-facing families and diagnostic subskills",
       "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.134",
-      "review_verdict": "S1_S3_ACADEMICALLY_CLOSED_S4_ITEM_AUDIT_ACTIVE",
-      "review_notes": "S1–S3 academically closed. S4 family review PASS: 19/19 families, MAP_FIX_COUNT 0, 4/4 written gaps PASS, CROSS_1..4 PASS, ARCH_1..12 PASS, authorization CLEARED_FOR_S4_ITEM_AUDITS. Combined CT21–CT25 full-bank audit is active in Draft PR #268: 612 items = 492 approved-family rows + 120 intentional context/category NO_FAMILY rows, 66 clone candidates, machine preflight 612 unique IDs. No runtime/mastery/Readiness/history migration authorized."
+      "context_version": "1.0.135",
+      "review_verdict": "S1_S4_ACADEMICALLY_CLOSED_CROSS_BATCH_RECONCILIATION_ACTIVE",
+      "review_notes": "S1–S4 academically closed. S4 combined item audit PASS 612/612, 0 revisions, 66/66 clone groups, BOUNDARY_1..8 PASS, ARCH_1..12 PASS. Whole-project CT02–CT25 cross-batch review is active in Draft PR #269: 131 family definitions / 131 unique IDs, 386 legacy mappings, 20 intentional NO_FAMILY rows, 5 CT24 canonical reuse rows, 2 machine overlap candidates. No runtime/mastery/Readiness/history activation."
     },
     {
       "id": "MATH-SKILL-TAXONOMY-V2-S1-001",
@@ -890,10 +890,19 @@
       "id": "MATH-SKILL-TAXONOMY-V2-S4-001",
       "title": "Skill Taxonomy v2 S4 — CT21–CT25",
       "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.135",
+      "review_verdict": "ACADEMICALLY_CLOSED_612_OF_612_PASS_ZERO_REVISIONS",
+      "review_notes": "19/19 family PASS; 62 legacy mappings with 0 fixes; 4/4 written gaps PASS. Full-bank CT21–CT25 612/612 PASS, 492 mapped-family + 120 intentional NO_FAMILY rows, 66/66 clone groups PASS, BOUNDARY_1..8 and ARCH_1..12 PASS. Final registry review-packets/skill-taxonomy/S4_FINAL_ACADEMIC_REGISTRY_R1.json. No runtime activation."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-CROSS-BATCH-001",
+      "title": "Skill Taxonomy v2 whole-project cross-batch reconciliation — CT02–CT25",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.134",
-      "review_verdict": "FAMILY_PASS_19_OF_19_COMBINED_612_ITEM_AUDIT_ACTIVE",
-      "review_notes": "Family gate closed PASS with 19/19 families, 0 mapping fixes, 4/4 written gaps, CROSS_1..4 and ARCH_1..12 PASS; authorization CLEARED_FOR_S4_ITEM_AUDITS. Item-audit Draft PR #268 contains five topic overlays + combined guide: CT21 132, CT22 120, CT23 120, CT24 120, CT25 120; 492 family-evidence rows + 120 intentional NO_FAMILY rows; 66 clone groups; 612/612 unique IDs. Current gate: owner supplies NotebookLM combined item-audit result. No runtime activation."
+      "context_version": "1.0.135",
+      "review_verdict": "NOTEBOOKLM_REVIEW_PENDING",
+      "review_notes": "Draft PR #269. Review scope: 131 family definitions, 386 legacy mappings, 20 intentional NO_FAMILY rows, 5 explicit CT24 canonical-reuse mappings, 2 machine overlap candidates. Exact NotebookLM source arithmetic: 2 permanent + 5 batch = 7 selected Sources. PASS clears implementation planning only; it does not authorize runtime/mastery/Readiness/history migration."
     }
   ]
 }
