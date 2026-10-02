@@ -150,8 +150,8 @@ for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))
   const content = fs.readFileSync(path.join(jsRoot, file), "utf8");
   if (file === authorizedI2Observer) {
     assert(content.includes(proposedStore), "authorized I2 observer must use the isolated Taxonomy v2 store");
-    assert(content.includes("taxonomy-v2-runtime/i3e-ct02-12-r1.json"),
-      "authorized Taxonomy v2 observer must load only the bounded I3E CT02-CT12 shadow policy");
+    assert(content.includes("taxonomy-v2-runtime/i3f-ct02-20-r1.json"),
+      "authorized Taxonomy v2 observer must load only the bounded I3F CT02-CT20 shadow policy");
     assert(!content.includes("taxonomy-v2-runtime/index-r1.json"),
       "Taxonomy v2 observer must not load the full I1 index");
     assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct02-r1.json"'),
@@ -176,6 +176,22 @@ for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))
       "Taxonomy v2 observer must not load the full CT11 I1 policy directly");
     assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct12-r1.json"'),
       "Taxonomy v2 observer must not load the full CT12 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct13-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT13 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct14-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT14 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct15-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT15 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct16-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT16 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct17-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT17 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct18-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT18 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct19-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT19 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct20-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT20 I1 policy directly");
   } else {
     assert(!content.includes(proposedStore), `only the authorized I2 observer may access the Taxonomy v2 store: ${file}`);
     assert(!content.includes("taxonomy-v2-runtime/"), `only the authorized I2 observer may load a Taxonomy v2 runtime path: ${file}`);
