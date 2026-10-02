@@ -1,5 +1,5 @@
 {
-  "version": "1.0.138",
+  "version": "1.0.139",
   "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Skill Taxonomy v2 I0 durable registry is DONE and merged to main. Registry: 131 families / 386 mappings / 20 intentional NO_FAMILY / 14 total CROSS_TOPIC_REUSE, with exactly 5 reviewed CT24 reuse mappings. Exact I0 tested HEAD ae8b7264... passed Roadmap PR Quality run 37013490363 and merged as a8b619a2.... Runtime remains disabled; Canonical Evidence G2 is untouched. Next planned gate is I1 topic-local CT02–CT25 item-policy compilation for the 3,114 reviewed questions, still data-only until separately started.",
+    "next_priority": "Skill Taxonomy v2 I1 topic-local policy compilation is DONE and merged to main. 24 CT02–CT25 policies cover all 3,114 reviewed Practice questions: 2,900 family-linked + 214 formative/NO_FAMILY, with exact bank blob locks and global unique IDs. Exact I1 HEAD 35128a59... passed Roadmap PR Quality run 37016671647 and merged as 144772d4.... Runtime remains disabled; no observer/UI/data write exists and Canonical Evidence G2 is unchanged. Next gate I2 shadow observer canary would be the first new Taxonomy v2 learner-data write and therefore requires a separate controlled authorization.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1517,9 +1517,31 @@
         "checkpoint": "review-packets/skill-taxonomy/implementation/I0_DURABLE_REGISTRY_TECHNICAL_CHECKPOINT.md"
       },
       "i1": {
-        "status": "PLANNED_NOT_STARTED",
-        "scope": "compile topic-local item policies for 3,114 reviewed Practice questions",
-        "runtime_activation_authorized": false
+        "status": "DONE",
+        "pr": 272,
+        "tested_head": "35128a591e60e7737c00d2f63d3713b8d50d43ad",
+        "ci_run": 37016671647,
+        "ci_result": "SUCCESS",
+        "merge_sha": "144772d4464aa03d79ddcaf543dcc4fc7a956145",
+        "index_path": "docs/assets/data/curriculum/taxonomy-v2-runtime/index-r1.json",
+        "index_blob": "592075ed951a55c7b0c6b81255e1ca51c9672339",
+        "topic_policies": 24,
+        "questions": 3114,
+        "family_link_rows": 2900,
+        "no_family_rows": 214,
+        "max_topic_rows": 195,
+        "runtime_enabled": false,
+        "learner_data_write_enabled": false,
+        "independent_credit_authorized": false,
+        "checkpoint": "review-packets/skill-taxonomy/implementation/I1_TOPIC_POLICY_COMPILATION_TECHNICAL_CHECKPOINT.md"
+      },
+      "i2": {
+        "status": "BLOCKED_PENDING_SEPARATE_CONTROLLED_AUTHORIZATION",
+        "scope": "shadow observer canary with new Taxonomy v2 evidence store",
+        "proposed_store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "runtime_code_required": true,
+        "learner_data_write_required": true,
+        "production_activation_authorized": false
       }
     },
     "notebooklm_taxonomy_workflow": {
