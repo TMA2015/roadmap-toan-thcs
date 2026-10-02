@@ -1,5 +1,5 @@
 {
-  "version": "1.0.142",
+  "version": "1.0.143",
   "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Skill Taxonomy v2 I2 CT02 shadow canary is DONE. Owner production QA PASS confirmed policy_ready true / no policy error, correct not_in_i2_canary behavior for NUM02V1_119, and no QA panel in normal learner UI. I2 automated QA, production deploy, gh-pages artifact verification, and owner QA are all closed. Next gate is I3 shadow-capture expansion planning/implementation, but expansion is not authorized automatically; mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF.",
+    "next_priority": "Skill Taxonomy v2 I3A full-CT02 shadow capture is LIVE and pending owner production QA. Scope is exactly CT02: 103 family-linked rows active, 17 formative/NO_FAMILY no-write guards, 10 Core families, max 75 independent units. Exact tested HEAD 02b39d0c... passed Roadmap PR Quality run 37025889031, merged c1940bda..., deployed via run 37026596985, and gh-pages artifact verification passed @ 71c59000.... Do not expand to CT03 or beyond until owner QA closes I3A. Mastery, Readiness, backfill/regrade and normal learner Taxonomy v2 UI remain OFF.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1585,14 +1585,36 @@
         }
       },
       "i3": {
-        "status": "READY_PENDING_SEPARATE_AUTHORIZATION",
-        "scope": "expand Taxonomy v2 shadow capture beyond the 12-row CT02 canary using reviewed I1 topic policies",
-        "learner_data_write_required": true,
+        "status": "LIVE_I3A_PENDING_OWNER_PRODUCTION_QA",
+        "phase": "I3A_FULL_CT02",
+        "pr": 274,
+        "tested_head": "02b39d0cf27ad2815b4f0305cda506a21ab032b7",
+        "ci_run": 37025889031,
+        "ci_result": "SUCCESS",
+        "merge_sha": "c1940bda496caeed2e4f269c1e9e087145a96275",
+        "deploy_run": 37026596985,
+        "deploy_result": "SUCCESS",
+        "gh_pages_sha": "71c5900059fe1ace8c8b6f3431ae3124bde92dfb",
+        "deployed_artifact_verified": true,
+        "scope": {
+          "topic": "CT02",
+          "total_rows": 120,
+          "active_family_rows": 103,
+          "no_family_guards": 17,
+          "family_count": 10,
+          "max_independent_units": 75
+        },
+        "store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "policy": "docs/assets/data/curriculum/taxonomy-v2-runtime/i3a-full-ct02-r1.json",
+        "observer": "docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js",
+        "prior_i2_store_continuity": true,
         "mastery_enabled": false,
         "readiness_enabled": false,
         "history_backfill_enabled": false,
         "normal_learner_ui_change": false,
-        "production_activation_authorized": false
+        "ct03_plus_expansion_authorized": false,
+        "owner_production_qa": "PENDING",
+        "checkpoint": "review-packets/skill-taxonomy/implementation/I3A_FULL_CT02_SHADOW_RELEASE_RECEIPT.md"
       }
     },
     "notebooklm_taxonomy_workflow": {
