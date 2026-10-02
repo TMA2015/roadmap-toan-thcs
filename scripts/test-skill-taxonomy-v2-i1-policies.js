@@ -150,12 +150,12 @@ for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))
   const content = fs.readFileSync(path.join(jsRoot, file), "utf8");
   if (file === authorizedI2Observer) {
     assert(content.includes(proposedStore), "authorized I2 observer must use the isolated Taxonomy v2 store");
-    assert(content.includes("taxonomy-v2-runtime/i2-canary-ct02-r1.json"),
-      "authorized I2 observer must load only the bounded CT02 canary policy");
+    assert(content.includes("taxonomy-v2-runtime/i3a-full-ct02-r1.json"),
+      "authorized Taxonomy v2 observer must load only the bounded I3A CT02 shadow policy");
     assert(!content.includes("taxonomy-v2-runtime/index-r1.json"),
-      "I2 observer must not load the full I1 index");
-    assert(!content.includes("taxonomy-v2-runtime/ct02-r1.json"),
-      "I2 observer must not load the full CT02 I1 policy");
+      "Taxonomy v2 observer must not load the full I1 index");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct02-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT02 I1 policy directly");
   } else {
     assert(!content.includes(proposedStore), `only the authorized I2 observer may access the Taxonomy v2 store: ${file}`);
     assert(!content.includes("taxonomy-v2-runtime/"), `only the authorized I2 observer may load a Taxonomy v2 runtime path: ${file}`);
