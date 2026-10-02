@@ -1,5 +1,5 @@
 {
-  "version": "1.0.146",
+  "version": "1.0.147",
   "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Skill Taxonomy v2 I3B CT02–CT03 owner production QA is PASS and the gate is closed. The next controlled gate is I3C: expand the same isolated shadow store to CT04 only, yielding CT02+CT03+CT04 = 372 rows, 341 family-linked active + 31 NO_FAMILY guards, 23 unique families, max 177 topic-scoped independent units. CT04 adds 132 rows = 120 active + 12 guards across 7 reviewed families. Canonical Evidence G2 remains separate and must continue to coexist on CT04 without store/schema interference. CT05+ remains outside I3C. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF.",
+    "next_priority": "Skill Taxonomy v2 I3C CT02–CT04 owner production QA is PASS and closed. The next controlled gate is I3D, expanding the same isolated shadow evidence store through CT07 in one batch so the entire Canonical Evidence G2 overlap band CT04–CT07 is covered and regression-tested together. I3D scope: CT02–CT07 = 732 rows, 648 family-linked active + 84 NO_FAMILY guards, 35 unique learner-facing families, max 240 topic-scoped independent units. CT05+06+07 add 360 rows = 307 active + 53 guards. CT08+ remains outside I3D. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1697,7 +1697,7 @@
         }
       },
       "i3c": {
-        "status": "IMPLEMENTATION_BRANCH_PRE_CI",
+        "status": "DONE_OWNER_PRODUCTION_QA_PASS",
         "phase": "I3C_CT02_CT04",
         "branch": "impl/skill-taxonomy-v2-i3c-ct02-04-shadow-r1-20261002",
         "scope": {
@@ -1747,7 +1747,109 @@
         "readiness_enabled": false,
         "history_backfill_enabled": false,
         "normal_learner_ui_change": false,
-        "ct05_plus_expansion_authorized": false
+        "ct05_plus_expansion_authorized": true,
+        "owner_production_qa": "PASS",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I3C_CT02_04_SHADOW_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "build": "taxonomy-v2-i3c-ct02-04-20261002",
+          "policy_ready": true,
+          "policy_error": null,
+          "recent_events": 21,
+          "seen_questions": 21,
+          "independent_units": 19,
+          "last_capture": {
+            "captured": true,
+            "question_id": "ALG04V2_053",
+            "family_id": "ALG-MULTIPLY",
+            "diagnostic_skill_id": "nhan-bieu-thuc",
+            "independent_evidence": true,
+            "independent_reason": "first_unseen_unit"
+          }
+        }
+      },
+      "i3d": {
+        "status": "IMPLEMENTATION_BRANCH_PRE_CI",
+        "phase": "I3D_CT02_CT07",
+        "branch": "impl/skill-taxonomy-v2-i3d-ct02-07-shadow-r1-20261002",
+        "scope": {
+          "topics": [
+            "CT02",
+            "CT03",
+            "CT04",
+            "CT05",
+            "CT06",
+            "CT07"
+          ],
+          "total_rows": 732,
+          "active_family_rows": 648,
+          "no_family_guards": 84,
+          "family_count": 35,
+          "max_independent_units": 240,
+          "per_topic": {
+            "CT02": {
+              "total_rows": 120,
+              "active_family_rows": 103,
+              "no_family_guards": 17
+            },
+            "CT03": {
+              "total_rows": 120,
+              "active_family_rows": 118,
+              "no_family_guards": 2
+            },
+            "CT04": {
+              "total_rows": 132,
+              "active_family_rows": 120,
+              "no_family_guards": 12
+            },
+            "CT05": {
+              "total_rows": 120,
+              "active_family_rows": 91,
+              "no_family_guards": 29
+            },
+            "CT06": {
+              "total_rows": 120,
+              "active_family_rows": 104,
+              "no_family_guards": 16
+            },
+            "CT07": {
+              "total_rows": 120,
+              "active_family_rows": 112,
+              "no_family_guards": 8
+            }
+          }
+        },
+        "new_topic_families": {
+          "CT05": [
+            "ID-STRUCTURE"
+          ],
+          "CT06": [
+            "FAC-COMMON",
+            "FAC-IDENTITY",
+            "FAC-GROUP",
+            "FAC-SPLIT-MIDDLE",
+            "FAC-COMBINE",
+            "EQ-ZERO-PRODUCT"
+          ],
+          "CT07": [
+            "RATEX-CONCEPT",
+            "RATEX-DOMAIN",
+            "RATEX-SIMPLIFY",
+            "RATEX-ADD-SUB",
+            "RATEX-MULT-DIV",
+            "RATEX-EVALUATE"
+          ]
+        },
+        "store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "policy": "docs/assets/data/curriculum/taxonomy-v2-runtime/i3d-ct02-07-r1.json",
+        "observer": "docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js",
+        "prior_evidence_continuity": true,
+        "g2_overlap_band": "CT04–CT07",
+        "g2_store_isolation_required": true,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "normal_learner_ui_change": false,
+        "ct08_plus_expansion_authorized": false
       }
     },
     "notebooklm_taxonomy_workflow": {
