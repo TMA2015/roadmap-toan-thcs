@@ -125,7 +125,7 @@ OLD_PRACTICE = json.dumps({
     "tags": {"legacy": {"attempted": 7, "correct": 5}},
     "observed_signals": [],
 }, ensure_ascii=False, separators=(",", ":"))
-OLD_READY = '{"assessments":{"LEGACY_READY":{"attempts":[{"correct":3,"total":4}]}}'
+OLD_READY = '{"assessments":{"LEGACY_READY":{"attempts":[{"correct":3,"total":4}]}}}'
 OLD_BETA3 = '{"schema":"one-skill-assessment-events-v2","events":[{"question_id":"OLD","assessed_skill":"old-skill","correct":true}]}'
 
 I3E_STORE = json.dumps({
