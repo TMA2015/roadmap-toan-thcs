@@ -13,6 +13,12 @@ Skill assessment pilot QA: **37019026358 — SUCCESS**
 G Learning branding QA: **37019026822 — SUCCESS**  
 Squash merge to `main`: `e45ec7e4c5f8900f96a61ba82f9c060b94e7c8cb`  
 Deploy MkDocs: **37019804305 — SUCCESS**
+GitHub Pages deployed branch: `gh-pages` @ `3b04dce9ec61211818732d6cbb6d387afe893606`
+
+Post-deploy artifact verification:
+- deployed observer file exists and contains the isolated store + `I2_CANARY_ACTIVE` boundary;
+- deployed CT02 canary policy exists with `I2_SHADOW_CANARY_ACTIVE` and `active_rows = 12`;
+- deployed CT02 Practice HTML loads `taxonomy-v2-evidence-observer-v1.js`.
 
 ## Live canary scope
 
