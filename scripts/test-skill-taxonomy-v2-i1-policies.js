@@ -150,8 +150,8 @@ for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))
   const content = fs.readFileSync(path.join(jsRoot, file), "utf8");
   if (file === authorizedI2Observer) {
     assert(content.includes(proposedStore), "authorized I2 observer must use the isolated Taxonomy v2 store");
-    assert(content.includes("taxonomy-v2-runtime/i3f-ct02-20-r1.json"),
-      "authorized Taxonomy v2 observer must load only the bounded I3F CT02-CT20 shadow policy");
+    assert(content.includes("taxonomy-v2-runtime/i3g-ct02-25-r1.json"),
+      "authorized Taxonomy v2 observer must load only the bounded I3G CT02-CT25 shadow policy");
     assert(!content.includes("taxonomy-v2-runtime/index-r1.json"),
       "Taxonomy v2 observer must not load the full I1 index");
     assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct02-r1.json"'),
@@ -192,6 +192,16 @@ for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))
       "Taxonomy v2 observer must not load the full CT19 I1 policy directly");
     assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct20-r1.json"'),
       "Taxonomy v2 observer must not load the full CT20 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct21-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT21 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct22-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT22 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct23-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT23 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct24-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT24 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct25-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT25 I1 policy directly");
   } else {
     assert(!content.includes(proposedStore), `only the authorized I2 observer may access the Taxonomy v2 store: ${file}`);
     assert(!content.includes("taxonomy-v2-runtime/"), `only the authorized I2 observer may load a Taxonomy v2 runtime path: ${file}`);
