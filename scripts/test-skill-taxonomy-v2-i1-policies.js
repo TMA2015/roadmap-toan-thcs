@@ -160,6 +160,12 @@ for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))
       "Taxonomy v2 observer must not load the full CT03 I1 policy directly");
     assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct04-r1.json"'),
       "Taxonomy v2 observer must not load the full CT04 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct05-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT05 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct06-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT06 I1 policy directly");
+    assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct07-r1.json"'),
+      "Taxonomy v2 observer must not load the full CT07 I1 policy directly");
   } else {
     assert(!content.includes(proposedStore), `only the authorized I2 observer may access the Taxonomy v2 store: ${file}`);
     assert(!content.includes("taxonomy-v2-runtime/"), `only the authorized I2 observer may load a Taxonomy v2 runtime path: ${file}`);
