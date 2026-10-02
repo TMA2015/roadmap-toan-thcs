@@ -1,7 +1,7 @@
 {
-  "version": "1.0.147",
+  "version": "1.0.148",
   "schema": "roadmap-collaboration-task-registry-v1",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "statuses": [
     "OPEN",
     "GEMINI-DRAFT",
@@ -971,10 +971,19 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I3D-001",
       "title": "Skill Taxonomy v2 I3D — CT05–CT07 shadow expansion",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.148",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "Owner production QA PASS on 2026-10-03. Live snapshot: build taxonomy-v2-i3d-ct02-07-20261002, policy_ready=true, policy_error=null, 25 recent events / 25 seen questions / 21 independent units; last capture FAC06V1_081 -> FAC-COMBINE / phan-tich-da-thuc-hoan-toan with independent_evidence=false and clone_family_repeat. This specifically confirms live de-duplication of repeated clone-family exposure. The full G2 overlap band CT04–CT07 is now proven with stores isolated. No mastery, Readiness, backfill/regrade or learner-facing Taxonomy v2 UI."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I3E-001",
+      "title": "Skill Taxonomy v2 I3E — CT08–CT12 shadow expansion",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.147",
+      "context_version": "1.0.148",
       "review_verdict": "IMPLEMENTATION_BRANCH_PRE_CI",
-      "review_notes": "Controlled expansion from CT02–CT04 to CT02–CT07 in one batch, deliberately completing the whole Canonical Evidence G2 overlap band after CT04 proved dual-shadow coexistence. Scope: 732 rows = 648 active + 84 NO_FAMILY guards, 35 unique families, max 240 topic-scoped independent units. New topics: CT05 120=91+29, CT06 120=104+16, CT07 120=112+8. CT08+ remains outside I3D. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF."
+      "review_notes": "Controlled expansion from CT02–CT07 to CT02–CT12 using the academically closed S2 batch. Cumulative scope: 1356 rows = 1272 active + 84 NO_FAMILY guards, 64 unique families, max 375 topic-scoped independent units. New CT08–CT12 batch contributes 624/624 active family-linked rows, 29 families and zero NO_FAMILY guards. Canonical Evidence G2 remains frozen to CT04–CT07 and is not expanded. CT13+ remains outside I3E. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF."
     }
   ]
 }
