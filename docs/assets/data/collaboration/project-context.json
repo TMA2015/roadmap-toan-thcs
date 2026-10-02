@@ -1,5 +1,5 @@
 {
-  "version": "1.0.143",
+  "version": "1.0.144",
   "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Skill Taxonomy v2 I3A full-CT02 shadow capture is LIVE and pending owner production QA. Scope is exactly CT02: 103 family-linked rows active, 17 formative/NO_FAMILY no-write guards, 10 Core families, max 75 independent units. Exact tested HEAD 02b39d0c... passed Roadmap PR Quality run 37025889031, merged c1940bda..., deployed via run 37026596985, and gh-pages artifact verification passed @ 71c59000.... Do not expand to CT03 or beyond until owner QA closes I3A. Mastery, Readiness, backfill/regrade and normal learner Taxonomy v2 UI remain OFF.",
+    "next_priority": "Skill Taxonomy v2 I3A full-CT02 shadow capture is DONE. Owner production QA PASS confirmed I3A policy_ready=true / policy_error=null, active capture on NUM02V1_100 -> NUM-FRACTION-OPS / phep-tinh-phan-so, 8 events / 8 seen questions / 7 independent units, and no debug panel in normal learner UI. Next bounded rollout is I3B CT03 shadow expansion, but CT03+ remains unauthorized until separately approved. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1585,7 +1585,7 @@
         }
       },
       "i3": {
-        "status": "LIVE_I3A_PENDING_OWNER_PRODUCTION_QA",
+        "status": "I3A_DONE_OWNER_PRODUCTION_QA_PASS",
         "phase": "I3A_FULL_CT02",
         "pr": 274,
         "tested_head": "02b39d0cf27ad2815b4f0305cda506a21ab032b7",
@@ -1594,7 +1594,7 @@
         "merge_sha": "c1940bda496caeed2e4f269c1e9e087145a96275",
         "deploy_run": 37026596985,
         "deploy_result": "SUCCESS",
-        "gh_pages_sha": "71c5900059fe1ace8c8b6f3431ae3124bde92dfb",
+        "gh_pages_sha": "dad1d90995c908a8e51258f04e2cb8ba74329f67",
         "deployed_artifact_verified": true,
         "scope": {
           "topic": "CT02",
@@ -1612,9 +1612,35 @@
         "readiness_enabled": false,
         "history_backfill_enabled": false,
         "normal_learner_ui_change": false,
-        "ct03_plus_expansion_authorized": false,
-        "owner_production_qa": "PENDING",
-        "checkpoint": "review-packets/skill-taxonomy/implementation/I3A_FULL_CT02_SHADOW_RELEASE_RECEIPT.md"
+        "owner_production_qa": "PASS",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I3A_FULL_CT02_SHADOW_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "policy_ready": true,
+          "policy_error": null,
+          "recent_events": 8,
+          "seen_questions": 8,
+          "independent_units": 7,
+          "last_capture": {
+            "captured": true,
+            "question_id": "NUM02V1_100",
+            "family_id": "NUM-FRACTION-OPS",
+            "diagnostic_skill_id": "phep-tinh-phan-so",
+            "independent_evidence": true,
+            "independent_reason": "first_unseen_unit"
+          },
+          "normal_ui_debug_panel_absent": true
+        },
+        "ct03_plus_expansion_authorized": false
+      },
+      "i3b": {
+        "status": "READY_PENDING_SEPARATE_AUTHORIZATION",
+        "scope": "expand Taxonomy v2 shadow capture to CT03 using reviewed I1 CT03 policy while preserving CT02/I2 evidence continuity",
+        "learner_data_write_required": true,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "normal_learner_ui_change": false,
+        "production_activation_authorized": false
       }
     },
     "notebooklm_taxonomy_workflow": {
