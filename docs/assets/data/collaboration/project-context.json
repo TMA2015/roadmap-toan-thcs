@@ -1,5 +1,5 @@
 {
-  "version": "1.0.132",
+  "version": "1.0.133",
   "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Written Library Expansion B7 is CLOSED DONE after owner real-device QA PASS on iPad and desktop. Production remains 44 items / 22 topics. Stop normal Core Written Library expansion here: CT01 is roadmap/navigation, CT22 is THPT-Bridge, and CT25 has separate Entrance10/tổng hợp lanes. Resume the broader skill-taxonomy work: consolidate/deduplicate the current skill inventory, verify importance and coverage against real learning/exam needs, obtain independent Gemini review, then reconcile the learner journey/evidence surfaces.",
+    "next_priority": "Skill Taxonomy v2 S1–S3 are academically closed. S4 CT21–CT25 family review is currently running in NotebookLM. After S4 family PASS, run one combined CT21–CT25 full-bank audit (612 items), then whole-project CT02–CT25 cross-batch reconciliation before any runtime/mastery/Readiness/history migration. NotebookLM is the academic reviewer for this taxonomy program; exam-frequency claims remain PENDING_OFFICIAL_CORPUS.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1378,6 +1378,90 @@
         "owner checked production on both iPad and desktop on 2026-10-02",
         "CT21 Written Library content opened and rendered correctly",
         "WX21-STA-002 guidance, 50% calculation, 5-point rubric and evidence-boundary explanation rendered correctly in supplied production screenshots"
+      ]
+    },
+    "skill_taxonomy_v2": {
+      "status": "S1_S3_ACADEMICALLY_CLOSED_S4_FAMILY_REVIEW_RUNNING",
+      "runtime_enabled": false,
+      "mastery_readiness_migration_authorized": false,
+      "exam_frequency": "PENDING_OFFICIAL_CORPUS",
+      "s1": {
+        "topics": "CT02–CT07",
+        "legacy_tags": 87,
+        "learner_families": 39,
+        "family_review": "NOTEBOOKLM_PASS_39_OF_39_ZERO_MAPPING_FIXES",
+        "question_level_review": "CT02+CT03 240/240 PASS plus prior CT04–CT07 Phase D 492/492 reviewed",
+        "total_question_basis": 732,
+        "status": "ACADEMICALLY_CLOSED"
+      },
+      "s2": {
+        "topics": "CT08–CT12",
+        "legacy_tags": 75,
+        "learner_families": 29,
+        "family_review": "NOTEBOOKLM_PASS_29_OF_29_ZERO_MAPPING_FIXES",
+        "full_bank_review": "624/624 PASS_ZERO_REVISIONS",
+        "status": "ACADEMICALLY_CLOSED",
+        "final_registry": "review-packets/skill-taxonomy/S2_FINAL_ACADEMIC_REGISTRY_R1.json"
+      },
+      "s3": {
+        "topics": "CT13–CT20",
+        "legacy_tags": 162,
+        "learner_families": 44,
+        "family_review": "NOTEBOOKLM_PASS_44_OF_44_ZERO_MAPPING_FIXES",
+        "full_bank_review": "1146/1146 PASS_ZERO_REVISIONS",
+        "mapped_family_items": 1136,
+        "formative_no_family_items": 10,
+        "clone_family_candidates_pass": "165/165",
+        "topic_checks_pass": "20/20",
+        "architecture_checks_pass": "14/14",
+        "authorization": "CLEARED_FOR_S3_CT13_20_RECONCILIATION",
+        "status": "ACADEMICALLY_CLOSED",
+        "final_registry": "review-packets/skill-taxonomy/S3_FINAL_ACADEMIC_REGISTRY_R1.json",
+        "review_pr": 266
+      },
+      "s4": {
+        "topics": "CT21–CT25",
+        "practice_questions": 612,
+        "legacy_tags": 62,
+        "proposed_new_families": 19,
+        "layers": {
+          "core": 7,
+          "core_support": 5,
+          "thpt_bridge": 3,
+          "entrance10": 4
+        },
+        "cross_topic_reuse_mappings": 5,
+        "no_new_family_context_category_mappings": 12,
+        "proposed_written_gaps": 4,
+        "review_branch": "review/skill-taxonomy-v2-s4-family-r1-20261002",
+        "review_pr": 267,
+        "status": "NOTEBOOKLM_FAMILY_REVIEW_RUNNING",
+        "next_gate": "OWNER_SUPPLIED_NOTEBOOKLM_S4_FAMILY_RESULT"
+      }
+    },
+    "notebooklm_taxonomy_workflow": {
+      "reviewer": "NotebookLM",
+      "permanent_sources": [
+        "00_NOTEBOOK_MATH_PERMANENT_v1.1.md",
+        "01_TOAN_THCS_MASTER_PLAN_v1.1.md"
+      ],
+      "source_selection_rule": "Prompts must state exact selected-source arithmetic: 2 permanent + N batch = total selected Sources.",
+      "preferred_batch_source_formats": [
+        "md",
+        "txt",
+        "csv"
+      ],
+      "json_policy": "Keep JSON in GitHub for provenance/machine-check only; do not upload JSON as NotebookLM Source.",
+      "large_batch_policy": "Allowed when topic-local overlays/sources are retained for repairability and output remains machine-checkable.",
+      "validated_large_batches": [
+        "S2 CT09–CT12 combined 492/492 PASS",
+        "S3 CT13–CT20 combined 1146/1146 PASS"
+      ],
+      "output_policy": "Strict machine-checkable contract; if chat may truncate, NotebookLM may return a Markdown artifact with the exact same output.",
+      "unselected_by_default": [
+        "gemini-catalogue-04-11.md",
+        "gemini-catalogue-12-18.md",
+        "gemini-catalogue-19-25.md"
       ]
     }
   },
