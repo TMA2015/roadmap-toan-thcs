@@ -85,7 +85,7 @@ for (const mapping of registry.legacy_mappings) {
   assert(!mappingKeys.has(key), `duplicate mapping key ${key}`);
   mappingKeys.add(key);
   assert(allowedRoles.has(mapping.role), `invalid mapping role ${key}: ${mapping.role}`);
-  if (mapping.layer !== undefined) assert(allowedLayers.has(mapping.layer), `invalid mapping layer ${key}: ${mapping.layer}`);
+  if (mapping.layer !== undefined && mapping.layer !== null) assert(allowedLayers.has(mapping.layer), `invalid mapping layer ${key}: ${mapping.layer}`);
   assert(batchCounts[mapping.source_batch], `invalid mapping source_batch: ${mapping.source_batch}`);
   batchCounts[mapping.source_batch].mappings += 1;
   roleCounts[mapping.role] = (roleCounts[mapping.role] || 0) + 1;
