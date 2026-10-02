@@ -1,5 +1,5 @@
 {
-  "version": "1.0.151",
+  "version": "1.0.152",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1007,10 +1007,19 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I4-001",
       "title": "Skill Taxonomy v2 I4 — owner/opt-in Skill Map preview",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.152",
+      "review_verdict": "OWNER_PREVIEW_QA_PASS_CLOSED",
+      "review_notes": "Owner production screenshots confirm I4 preview behavior with the real browser profile: 42 independent units, 18 correct independent units, 51 seen questions, 51 recent events; evidence-only filter shows 28/131 families with 23 KNTT-Core visible; representative cards show independent counts/accuracy without mastery; legacy Practice remains in a separate 74-tag disclosure with explicit no-merge wording. Automated release QA already proved read-only localStorage behavior. I4 closed."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I5-001",
+      "title": "Skill Taxonomy v2 I5 — evidence sufficiency/mastery/readiness policy review",
+      "routing": "CHATGPT_POLICY_DRAFT+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.151",
-      "review_verdict": "IMPLEMENTATION_BRANCH_PRE_CI",
-      "review_notes": "Read-only owner/internal preview of Taxonomy v2 shadow evidence. Renders all 131 registry families, aggregates direct evidence for 127 evidence-bearing families from the isolated store, shows independent-unit count and evidence accuracy without mastery/readiness labels, supports layer/topic/evidence filters, collapses optional layers by default, aggregates cross-topic reuse to one family card, relies on independent_units so clone repeats cannot inflate counts, and exposes legacy Practice tag statistics only in a separate disclosure. No localStorage writes, no backfill/regrade, no readiness gating."
+      "context_version": "1.0.152",
+      "review_verdict": "NOTEBOOKLM_PACKET_PREPARED_AWAITING_INDEPENDENT_REVIEW",
+      "review_notes": "I5 is policy-only: no runtime activation. Draft R1 and NotebookLM packet prepared. Machine preflight proves strong capacity asymmetry across 131 families: 4 have 0 max independent units, 12 have 1, 29 have 2; therefore one universal evidence-count threshold is not assumed. Review must decide D1–D12 and ARCH_1–12 covering sparse families, evidence-class strength, written-evidence boundary, correctness/recency, cross-topic reuse, assistance/recovery, Core Readiness layers, unseen-family treatment and sparse-percentage wording."
     }
   ]
 }
