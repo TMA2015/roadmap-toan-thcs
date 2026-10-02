@@ -1,5 +1,5 @@
 {
-  "version": "1.0.148",
+  "version": "1.0.149",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -980,10 +980,10 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I3E-001",
       "title": "Skill Taxonomy v2 I3E — CT08–CT12 shadow expansion",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.148",
-      "review_verdict": "IMPLEMENTATION_BRANCH_PRE_CI",
-      "review_notes": "Controlled expansion from CT02–CT07 to CT02–CT12 using the academically closed S2 batch. Cumulative scope: 1356 rows = 1272 active + 84 NO_FAMILY guards, 64 unique families, max 375 topic-scoped independent units. New CT08–CT12 batch contributes 624/624 active family-linked rows, 29 families and zero NO_FAMILY guards. Canonical Evidence G2 remains frozen to CT04–CT07 and is not expanded. CT13+ remains outside I3E. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF."
+      "status": "DONE",
+      "context_version": "1.0.149",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "Owner QA PASS: I3E live build ready, no policy error, 33 events / 33 seen / 29 independent units; FUN10V1_004 mapped to FUNC-BASIC / tinh-gia-tri-ham as first_unseen_unit. S2 CT08–CT12 accepted; G2 stays frozen to CT04–CT07."
     }
   ]
 }
