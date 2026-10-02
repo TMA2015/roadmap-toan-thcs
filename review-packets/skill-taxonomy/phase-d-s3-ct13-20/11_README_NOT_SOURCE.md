@@ -19,7 +19,7 @@ Combined scope:
 - clone-family candidates: **165**
 - machine preflight clean: exact IDs, no invalid missing family, no duplicate clone membership, no runtime/Readiness/legacy changes
 
-NotebookLM temporary sources:
+NotebookLM selected sources:
 1. `CT13_OVERLAY_SOURCE.md`
 2. `CT14_OVERLAY_SOURCE.md`
 3. `CT15_OVERLAY_SOURCE.md`
@@ -29,6 +29,9 @@ NotebookLM temporary sources:
 7. `CT19_OVERLAY_SOURCE.md`
 8. `CT20_OVERLAY_SOURCE.md`
 9. `09_NOTEBOOKLM_COMBINED_REVIEW_GUIDE.md`
+10–11. the **2 permanent baseline Sources already present in the Notebook**
+
+Total selected Sources: **11 = 2 permanent baseline + 9 S3 batch Sources**.
 
 Prompt:
 - `10_COPY_TO_NOTEBOOKLM_COMBINED_R1.txt`
