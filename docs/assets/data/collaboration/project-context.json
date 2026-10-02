@@ -1,5 +1,5 @@
 {
-  "version": "1.0.133",
+  "version": "1.0.134",
   "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Skill Taxonomy v2 S1–S3 are academically closed. S4 CT21–CT25 family review is currently running in NotebookLM. After S4 family PASS, run one combined CT21–CT25 full-bank audit (612 items), then whole-project CT02–CT25 cross-batch reconciliation before any runtime/mastery/Readiness/history migration. NotebookLM is the academic reviewer for this taxonomy program; exam-frequency claims remain PENDING_OFFICIAL_CORPUS.",
+    "next_priority": "Skill Taxonomy v2 S1–S3 are academically closed. S4 CT21–CT25 family review is PASS (19/19, 0 mapping fixes, 4/4 written gaps PASS) and the combined 612-item full-bank audit is now active in NotebookLM via Draft PR #268. After S4 item-audit PASS, finalize S4 reconciliation, then run whole-project CT02–CT25 cross-batch reconciliation before any runtime/mastery/Readiness/history migration. Exam-frequency claims remain PENDING_OFFICIAL_CORPUS.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1381,7 +1381,7 @@
       ]
     },
     "skill_taxonomy_v2": {
-      "status": "S1_S3_ACADEMICALLY_CLOSED_S4_FAMILY_REVIEW_RUNNING",
+      "status": "S1_S3_ACADEMICALLY_CLOSED_S4_ITEM_AUDIT_ACTIVE",
       "runtime_enabled": false,
       "mastery_readiness_migration_authorized": false,
       "exam_frequency": "PENDING_OFFICIAL_CORPUS",
@@ -1435,8 +1435,20 @@
         "proposed_written_gaps": 4,
         "review_branch": "review/skill-taxonomy-v2-s4-family-r1-20261002",
         "review_pr": 267,
-        "status": "NOTEBOOKLM_FAMILY_REVIEW_RUNNING",
-        "next_gate": "OWNER_SUPPLIED_NOTEBOOKLM_S4_FAMILY_RESULT"
+        "status": "FAMILY_REVIEW_CLOSED_COMBINED_FULL_BANK_AUDIT_ACTIVE",
+        "next_gate": "OWNER_SUPPLIED_NOTEBOOKLM_S4_COMBINED_ITEM_RESULT",
+        "family_review": "NOTEBOOKLM_PASS_19_OF_19_ZERO_MAPPING_FIXES",
+        "written_gap_review": "4_OF_4_PASS",
+        "family_authorization": "CLEARED_FOR_S4_ITEM_AUDITS",
+        "item_audit_branch": "review/skill-taxonomy-v2-s4-ct21-25-combined-r1-20261002",
+        "item_audit_pr": 268,
+        "item_audit_scope": {
+          "total": 612,
+          "approved_family_rows": 492,
+          "intentional_no_family_rows": 120,
+          "clone_family_candidates": 66,
+          "unique_ids": 612
+        }
       }
     },
     "notebooklm_taxonomy_workflow": {
