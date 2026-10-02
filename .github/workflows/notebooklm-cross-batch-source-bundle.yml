@@ -1,0 +1,38 @@
+name: NotebookLM Cross-Batch Source Bundle
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'review-packets/skill-taxonomy/phase-e-cross-batch-ct02-25/**'
+      - '.github/workflows/notebooklm-cross-batch-source-bundle.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Collect NotebookLM batch sources
+        run: |
+          set -euo pipefail
+          SRC="review-packets/skill-taxonomy/phase-e-cross-batch-ct02-25"
+          OUT="CROSS_BATCH_CT02_25_NOTEBOOKLM_5_BATCH_SOURCES"
+          mkdir -p "$OUT"
+          cp "$SRC/S1_CROSS_BATCH_SOURCE.md" "$OUT/"
+          cp "$SRC/S2_CROSS_BATCH_SOURCE.md" "$OUT/"
+          cp "$SRC/S3_CROSS_BATCH_SOURCE.md" "$OUT/"
+          cp "$SRC/S4_CROSS_BATCH_SOURCE.md" "$OUT/"
+          cp "$SRC/05_NOTEBOOKLM_CROSS_BATCH_REVIEW_GUIDE.md" "$OUT/"
+          test "$(find "$OUT" -maxdepth 1 -type f | wc -l)" -eq 5
+
+      - name: Upload source bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: CROSS_BATCH_CT02_25_NOTEBOOKLM_5_BATCH_SOURCES
+          path: CROSS_BATCH_CT02_25_NOTEBOOKLM_5_BATCH_SOURCES/
+          if-no-files-found: error
+          retention-days: 7
