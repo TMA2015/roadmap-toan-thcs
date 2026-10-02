@@ -1,12 +1,13 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 02/10/2026, Skill Taxonomy v2 S1–S4 ACADEMICALLY CLOSED; WHOLE-PROJECT CT02–CT25 CROSS-BATCH RECONCILIATION ACTIVE.**  
-> S1 CT02–CT07: **39 learner-facing families PASS**; combined question-level basis **732 reviewed**.  
-> S2 CT08–CT12: **29 families PASS; 624/624 full-bank PASS; 0 revisions**.  
-> S3 CT13–CT20: **44 families PASS; 1,146/1,146 full-bank PASS; 165/165 clone candidates PASS; 0 revisions**.  
-> S4 CT21–CT25: **19 new families PASS; 612/612 full-bank PASS; 66/66 clone candidates PASS; 0 revisions**.  
-> Whole-project cross-batch gate is ACTIVE in Draft PR **#269**: **131 family definitions / 131 unique family IDs, 386 legacy mappings, 20 intentional NO_FAMILY rows, 5 explicit CT24 canonical-reuse mappings, 2 machine overlap candidates**.  
-> **No Skill Taxonomy v2 runtime/mastery/Readiness/history migration is authorized yet.** A cross-batch PASS will clear **implementation planning only**, not automatic runtime activation.
+> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 CT02–CT25 ACADEMIC PROGRAM CLOSED; IMPLEMENTATION PLANNING AUTHORIZED.**  
+> S1 CT02–CT07: **39 families**, reviewed question basis **732**.  
+> S2 CT08–CT12: **29 families; 624/624 PASS**.  
+> S3 CT13–CT20: **44 families; 1,146/1,146 PASS; 165/165 clone candidates PASS**.  
+> S4 CT21–CT25: **19 new families; 612/612 PASS; 66/66 clone candidates PASS**.  
+> Whole-project reconciliation: **131/131 family definitions PASS; 386/386 mappings PASS; 5/5 CT24 canonical reuse PASS; 20 intentional NO_FAMILY PASS; 2/2 contextual overlaps PASS; 0 fixes; ARCH_1..16 PASS**.  
+> Authorization: `CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING`.  
+> **Runtime/mastery/Readiness/history migration is still NOT authorized.** Next phase is architecture/implementation planning with the existing Canonical Evidence G2 boundary protected.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -102,22 +103,35 @@
 - Draft PR: **#268**.
 - No runtime/mastery/Readiness/history migration was authorized by S4 closure.
 
-### Whole-project cross-batch reconciliation — CT02–CT25 — ACTIVE
-- Review branch: `review/skill-taxonomy-v2-cross-batch-ct02-25-r1-20261002`.
+### Whole-project cross-batch reconciliation — CT02–CT25 — ACADEMICALLY CLOSED
 - Draft PR: **#269**.
-- Machine preflight:
-  - **131** family definitions / **131 unique family IDs**;
-  - **386** legacy mapping rows;
-  - **20** intentional NO_FAMILY mappings;
-  - **5** explicit CT24 canonical-reuse mappings;
-  - **0** duplicate family IDs;
-  - **0** duplicate topic+legacy mapping keys;
-  - **0** mappings to unknown family IDs;
-  - **2** diagnostic-subskill overlap candidates requiring explicit academic review: `hieu-hai-binh-phuong` and `binh-phuong-hoan-chinh`, each shared by ID-STRUCTURE and FAC-IDENTITY.
-- NotebookLM selected Sources: exactly **7 = 2 permanent + 5 batch Sources**.
-- Current gate: **WAIT FOR OWNER-SUPPLIED NOTEBOOKLM CROSS-BATCH RESULT**.
-- PASS effect: `CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING` only.
-- Runtime/mastery/Readiness/history migration remains blocked until a separate implementation plan and release gate.
+- NotebookLM result:
+  - **131/131** family definitions PASS;
+  - **386/386** legacy mappings PASS;
+  - **5/5** CT24 canonical reuse mappings PASS;
+  - **20** intentional NO_FAMILY mappings PASS;
+  - `hieu-hai-binh-phuong`: PASS_AS_CONTEXTUAL_REUSE between ID-STRUCTURE and FAC-IDENTITY;
+  - `binh-phuong-hoan-chinh`: PASS_AS_CONTEXTUAL_REUSE between ID-STRUCTURE and FAC-IDENTITY;
+  - FIX_COUNT **0**;
+  - ARCH_1..16 PASS;
+  - OVERALL PASS;
+  - authorization `CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING`.
+- Academic closure receipt: `review-packets/skill-taxonomy/TAXONOMY_V2_ACADEMIC_CLOSURE_20261002.md`.
+- This closes the **academic taxonomy design**, not runtime activation.
+
+### Skill Taxonomy v2 implementation planning — ACTIVE
+- Planning task: `MATH-SKILL-TAXONOMY-V2-IMPLEMENTATION-PLAN-001`.
+- Protected production boundary: Canonical Evidence G2 and existing learner/history stores.
+- Planning must define:
+  1. durable 131-family registry + 386 mapping lookup;
+  2. separation of family IDs from diagnostic subskills and legacy tags;
+  3. evidence-event → family aggregation without double counting clone-equivalent items;
+  4. learner-facing Skill Map v2;
+  5. Core Readiness policy with optional/Bridge/Challenge non-gating;
+  6. written-evidence handling where MCQ is partial only;
+  7. explicit no-backfill/no-regrade behavior for old learner history;
+  8. canary, regression, rollback, owner-QA and release gates.
+- **No code/runtime migration may be treated as authorized merely because planning is authorized.**
 ## Written Library Expansion B7 — CLOSED DONE / owner QA PASS (02/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B7-001`.
