@@ -1,5 +1,5 @@
 {
-  "version": "1.0.152",
+  "version": "1.0.153",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1016,10 +1016,22 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I5-001",
       "title": "Skill Taxonomy v2 I5 — evidence sufficiency/mastery/readiness policy review",
       "routing": "CHATGPT_POLICY_DRAFT+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.152",
-      "review_verdict": "NOTEBOOKLM_PACKET_PREPARED_AWAITING_INDEPENDENT_REVIEW",
-      "review_notes": "I5 is policy-only: no runtime activation. Draft R1 and NotebookLM packet prepared. Machine preflight proves strong capacity asymmetry across 131 families: 4 have 0 max independent units, 12 have 1, 29 have 2; therefore one universal evidence-count threshold is not assumed. Review must decide D1–D12 and ARCH_1–12 covering sparse families, evidence-class strength, written-evidence boundary, correctness/recency, cross-topic reuse, assistance/recovery, Core Readiness layers, unseen-family treatment and sparse-percentage wording."
+      "status": "DONE",
+      "context_version": "1.0.153",
+      "review_verdict": "NOTEBOOKLM_R2_8_OF_8_PASS_POLICY_CLOSED",
+      "review_notes": "I5 R1 was directionally PASS but reconciled to R2 because R1 incorrectly made independent evidence correct-only and blurred Practice sufficiency with Mastery/Readiness. R2 preserves negative first-unassisted evidence as independent and immutable, keeps Practice sufficiency formative/descriptive, handles sparse capacities 0/1/2/>=3, separates unseen-Core coverage from observed performance, keeps paper self-check non-verified, applies no time decay, and requires no UI/runtime activation for policy closure. NotebookLM compact R2 recheck returned 8/8 PASS, 0 revisions. Mastery, Readiness, backfill/regrade and general learner-facing release remain OFF.",
+      "integrated_artifact": "docs/roadmap/skill-taxonomy-v2-evidence-policy-r2.md",
+      "review_receipt": "review-packets/skill-taxonomy/phase-i5/08_NOTEBOOKLM_I5_R2_PASS_RECEIPT.md",
+      "closure_receipt": "review-packets/skill-taxonomy/phase-i5/09_I5_POLICY_CLOSURE.md"
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I6-001",
+      "title": "Skill Taxonomy v2 I6 — controlled learner-facing release",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "OPEN",
+      "context_version": "1.0.153",
+      "review_verdict": "AWAITING_CONTROLLED_IMPLEMENTATION_GATE",
+      "review_notes": "I5 policy is closed PASS. I6 may implement only the accepted R2 descriptive/sparse-data safeguards for a controlled learner-facing Skill Map release. Mastery/Readiness remain OFF; no backfill/regrade; preserve Practice v1 and frozen G2 stores; require rollback, exact-head automated QA and owner-controlled release before broader activation."
     }
   ]
 }
