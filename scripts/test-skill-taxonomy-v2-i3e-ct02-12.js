@@ -209,7 +209,7 @@ const tv2At = practice.indexOf("RoadmapTaxonomyV2Observer?.captureAttempt");
 assert.ok(legacyAt >= 0 && g2At > legacyAt && tv2At > g2At, "shadow capture order changed");
 
 const observerSource = read("docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js").toString("utf8");
-assert.ok(observerSource.includes("taxonomy-v2-runtime/i3e-ct02-12-r1.json"));
+assert.ok(observerSource.includes("taxonomy-v2-runtime/i3f-ct02-20-r1.json"));
 for (let n = 2; n <= 12; n += 1) {
   const file = "ct" + String(n).padStart(2, "0") + "-r1.json";
   assert.ok(!observerSource.includes('new URL("../data/curriculum/taxonomy-v2-runtime/' + file + '"'));
