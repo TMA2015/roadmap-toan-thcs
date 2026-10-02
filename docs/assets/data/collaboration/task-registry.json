@@ -1,5 +1,5 @@
 {
-  "version": "1.0.140",
+  "version": "1.0.141",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -936,9 +936,9 @@
       "title": "Skill Taxonomy v2 I2 — shadow observer canary",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.140",
-      "review_verdict": "LIVE_CANARY_PENDING_OWNER_PRODUCTION_QA",
-      "review_notes": "PR #273 exact head 53d6e0b9... passed all three CI workflows; merged e45ec7e4...; Deploy MkDocs run 37019804305 SUCCESS. Live scope: CT02 only, 12 active questions / 4 Core families / 2 NO_FAMILY guards / max 8 independent units, store toan-thcs-taxonomy-v2-evidence-v1. No mastery, Readiness, backfill or normal learner UI. Do not expand until owner production QA."
+      "context_version": "1.0.141",
+      "review_verdict": "LIVE_CANARY_DEPLOYED_ARTIFACT_VERIFIED_OWNER_QA_PENDING",
+      "review_notes": "PR #273 exact head 53d6e0b9... passed all CI and merged e45ec7e4.... Deploy run 37019804305 SUCCESS. Post-deploy gh-pages @ 3b04dce9... verified observer present, I2 policy present with 12 active rows, and CT02 Practice HTML loads the observer. Owner production QA remains the only open gate. No expansion until owner QA."
     }
   ]
 }
