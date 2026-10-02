@@ -5,7 +5,7 @@ Packet: `MATH-SKILL-CORE03-S1-OVERLAY-R1-20261002`
 Status: **REVIEW_ONLY / NOTEBOOKLM_PENDING / NOT_RUNTIME_ENABLED**
 
 Use **2 temporary sources** in NotebookLM:
-1. `docs/assets/data/curriculum/primary-skill-overlay-core03-s1-phase-d-r1.json`
+1. `00_CT03_OVERLAY_SOURCE.md`
 2. `01_NOTEBOOKLM_REVIEW_GUIDE_CORE03_R1.md`
 
 Then paste:
@@ -21,3 +21,5 @@ Scope:
 - no Readiness/mastery/runtime activation.
 
 After PASS, reconcile CT03 and close the full CT02+CT03 240-item S1 gate.
+
+NotebookLM source rule: JSON stays in repo for provenance/machine checks; upload only Markdown/TXT review sources.
