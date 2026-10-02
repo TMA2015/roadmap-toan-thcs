@@ -1,10 +1,101 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 02/10/2026, Written Library Expansion B7 CLOSED DONE / owner QA PASS on iPad + desktop.** NotebookLM **2/2 + ARCH_1–ARCH_10 PASS**. Final exact-head `f0df2011ab9694b06c30ffda1b7fa872d2dc1fda` passed Roadmap PR Quality `36899579636`; PR #255 merged as `47adffd87b654a1bd2b6854ddbc270bbf31dfa62`; Deploy MkDocs `36900375742` **SUCCESS**. Production remains **44 items / 22 topics**. Owner real-device QA on iPad and desktop is **PASS**. Normal Core Written Library expansion stops here: CT01 remains roadmap/navigation, CT22 remains THPT-Bridge, and CT25 remains in separate Entrance10/tổng hợp lanes. Next priority returns to skill-taxonomy consolidation/deduplication and importance/coverage review, with independent Gemini review before integration.
+> **CURRENT CHECKPOINT — 02/10/2026, Skill Taxonomy v2 S1–S3 ACADEMICALLY CLOSED; S4 FAMILY REVIEW RUNNING IN NOTEBOOKLM.**  
+> S1 CT02–CT07: **39 learner-facing families PASS**; CT02+CT03 item audit **240/240 PASS**, prior CT04–CT07 Phase D **492/492 PASS**.  
+> S2 CT08–CT12: **29 families PASS; 624/624 full-bank PASS; 0 revisions**.  
+> S3 CT13–CT20: **44 families PASS; 1,146/1,146 full-bank PASS; 165/165 clone candidates PASS; 0 revisions**. Final S3 review used exactly **11 selected NotebookLM Sources = 2 permanent + 9 S3 batch Sources** and authorized `CLEARED_FOR_S3_CT13_20_RECONCILIATION`.  
+> S4 CT21–CT25 is ACTIVE: **612 Practice questions / 62 legacy tags → 19 proposed new families**, plus **5 cross-topic reuse mappings + 12 NO_NEW_FAMILY context/category mappings + 4 written-gap proposals**. Draft review PR **#267**; owner is currently running the S4 family-level NotebookLM review.  
+> **No Skill Taxonomy v2 runtime/mastery/Readiness/history migration is authorized yet.** Next gate after S4 family PASS: one combined CT21–CT25 full-bank audit (612 items), then whole-project CT02–CT25 cross-batch reconciliation before any runtime migration.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+
+## Skill Taxonomy v2 — ACTIVE PROGRAM CHECKPOINT (02/10/2026)
+
+### Durable taxonomy rules
+- Không đồng nhất **Concept / Canonical skill / Problem type / Individual question**.
+- Learner-facing skill family phải ít hơn diagnostic subskills; không tạo một mastery bar cho mỗi legacy tag.
+- Chỉ giữ family khi điểm yếu dẫn tới remediation cụ thể; METHOD / CONTEXT / CATEGORY / COMPOSITE_TASK / SUPPORTING_SKILL không tự động trở thành learner mastery.
+- Core / Core-Support / THPT-Bridge / Entrance10 / Specialized-Challenge là các trục riêng; optional/Bridge không gate Core.
+- Exam frequency/importance **không** suy từ authored Practice bank; trạng thái vẫn `PENDING_OFFICIAL_CORPUS`.
+- Written Library coverage được bổ sung theo problem-type gap thật, không theo quota mỗi topic.
+- Tất cả legacy IDs, learner history và old tags được bảo toàn; không backfill/regrade.
+- Canonical Evidence G2 hiện tại vẫn là protected boundary; Skill Taxonomy v2 chưa được phép bật runtime.
+
+### NotebookLM review workflow — frozen for current taxonomy program
+- **NotebookLM** là independent academic reviewer cho Skill Taxonomy v2; không dùng Gemini thay thế cho vòng audit này.
+- Hai permanent Sources cố định:
+  1. `00_NOTEBOOK_MATH_PERMANENT_v1.1.md`
+  2. `01_TOAN_THCS_MASTER_PLAN_v1.1.md`
+- Prompt phải ghi **đúng tổng số selected Sources** theo dạng: `2 permanent + N batch = total`.
+- Chỉ upload các định dạng NotebookLM hỗ trợ; với pipeline hiện tại ưu tiên **Markdown/TXT/CSV**. JSON chỉ giữ trong GitHub cho provenance/machine-check, **không dùng làm NotebookLM Source**.
+- Batch lớn được phép nếu vẫn giữ topic-local source/overlay để sửa cục bộ. Đã xác nhận:
+  - CT09–CT12 combined: **492/492 PASS**;
+  - CT13–CT20 combined: **1,146/1,146 PASS**.
+- Output phải machine-checkable; nếu chat có nguy cơ truncate, NotebookLM có thể tạo Markdown artifact theo cùng contract.
+- Permanent Sources và batch Sources phải được chọn rõ ràng; các `gemini-catalogue-*` không được chọn trừ khi một packet mới yêu cầu rõ.
+
+### S1 — CT02–CT07 — ACADEMICALLY CLOSED
+- Family consolidation: **87 legacy tags → 39 learner-facing families** = 33 Core + 6 optional.
+- NotebookLM family review: **39/39 PASS**, 0 mapping fixes, 8/8 written-family links PASS, ARCH_1..ARCH_10 PASS.
+- CT02 full-bank: **120/120 PASS**, 103 primary + 17 formative-only.
+- CT03 full-bank: **120/120 PASS**, 118 primary + 2 formative-only.
+- CT04–CT07 prior Phase D: **492/492 reviewed**, 427 primary + 65 formative-only, 74 clone families; NotebookLM PASS.
+- Combined S1 question-level evidence basis: **732 questions reviewed**.
+- No runtime activation.
+
+### S2 — CT08–CT12 — ACADEMICALLY CLOSED
+- Family review: **75 legacy tags → 29 learner-facing families** = 20 Core + 9 optional.
+- NotebookLM: 29/29 families PASS, 0 mapping fixes, 9/9 written gaps PASS, CROSS_1..4 PASS.
+- CT08 full-bank: **132/132 PASS**.
+- CT09–CT12 combined: **492/492 PASS**, 59/59 clone families PASS.
+- S2 total: **624/624 PASS, 0 revisions**.
+- Final registry: `review-packets/skill-taxonomy/S2_FINAL_ACADEMIC_REGISTRY_R1.json`.
+- No runtime activation.
+
+### S3 — CT13–CT20 — ACADEMICALLY CLOSED
+- Family review: **162 legacy tags → 44 learner-facing families** = 38 Core + 1 Core-Support + 5 optional.
+- `CT20:nhan-dang-cong-cu` is intentionally METHOD / NO_FAMILY.
+- Family NotebookLM review: 44/44 PASS, 0 mapping fixes, 9/9 written gaps PASS, 7/7 cross-topic reuse checks PASS.
+- Final full-bank review source set: exactly **11 selected Sources**:
+  - permanent `00_NOTEBOOK_MATH_PERMANENT_v1.1.md`;
+  - permanent `01_TOAN_THCS_MASTER_PLAN_v1.1.md`;
+  - 8 CT13–CT20 overlay Markdown Sources;
+  - `09_NOTEBOOKLM_COMBINED_REVIEW_GUIDE.md`.
+- Final item audit: **1,146/1,146 PASS**, 0 revisions, 165/165 clone-family candidates PASS, 20/20 topic checks PASS, ARCH_1..ARCH_14 PASS.
+- Evidence split: **1,136 mapped-family items + 10 CT20 formative/no-family method items**.
+- Authorization: `CLEARED_FOR_S3_CT13_20_RECONCILIATION`.
+- Final registry: `review-packets/skill-taxonomy/S3_FINAL_ACADEMIC_REGISTRY_R1.json`.
+- Review PR #266: latest checked Roadmap PR Quality **SUCCESS**.
+- No runtime activation.
+
+### S4 — CT21–CT25 — ACTIVE / NOTEBOOKLM FAMILY REVIEW RUNNING
+- Scope: **612 Practice questions / 62 legacy tags**.
+- Candidate: **19 new learner-facing families**:
+  - 7 KNTT-Core;
+  - 5 Core-Support;
+  - 3 THPT-Bridge;
+  - 4 Entrance10.
+- Additional mapping behavior:
+  - **5** mappings reuse existing canonical families;
+  - **12** mappings intentionally create no new family (CONTEXT/CATEGORY);
+  - **4** proposed written-coverage gaps.
+- Critical boundaries:
+  - CT22 remains **THPT-Bridge**, non-gating for THCS Core;
+  - CT24 is cross-topic **Core-Support** and should reuse existing math families rather than duplicate them;
+  - CT25 `on-thi-*` academic lanes are **CATEGORY**, not new mastery families;
+  - CT25 exam strategy/review skills are optional Entrance10.
+- Review branch: `review/skill-taxonomy-v2-s4-family-r1-20261002`.
+- Draft PR: **#267**.
+- NotebookLM selected Sources for current family review: exactly **3**:
+  1. `00_NOTEBOOK_MATH_PERMANENT_v1.1.md`
+  2. `01_TOAN_THCS_MASTER_PLAN_v1.1.md`
+  3. `S4_FAMILY_NOTEBOOKLM_SOURCE_R1.md`
+- Prompt: `review-packets/skill-taxonomy/S4_FAMILY_COPY_TO_NOTEBOOKLM_R1.txt`.
+- Current gate: **WAIT FOR OWNER-SUPPLIED NOTEBOOKLM S4 FAMILY RESULT**.
+- If PASS: reconcile S4 family candidate, then build **one combined CT21–CT25 full-bank audit = 612 items**, review in NotebookLM, then run **whole-project CT02–CT25 reconciliation**.
+- No runtime/mastery migration before those gates close.
 
 ## Written Library Expansion B7 — CLOSED DONE / owner QA PASS (02/10/2026)
 
