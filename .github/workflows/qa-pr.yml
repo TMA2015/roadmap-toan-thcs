@@ -100,6 +100,11 @@ jobs:
         run: node scripts/test-skill-taxonomy-v2-registry.js
       - name: Validate Skill Taxonomy v2 I1 topic policies
         run: node scripts/test-skill-taxonomy-v2-i1-policies.js
+      - name: Validate Skill Taxonomy v2 I2 shadow canary
+        run: |
+          node --check docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js
+          node --check docs/assets/javascripts/practice-engine-v2.js
+          node scripts/test-skill-taxonomy-v2-i2-canary.js
       - name: Validate assets and practice
         run: |
           python check_svg_integrity.py
@@ -144,6 +149,7 @@ jobs:
           python scripts/test-canonical-evidence-pilot-browser.py
           python scripts/test-canonical-evidence-pilot-v2-browser.py
           python scripts/test-canonical-evidence-g1-browser.py
+          python scripts/test-skill-taxonomy-v2-i2-browser.py
           python scripts/test-help-disclosure-toggle-browser.py
           python scripts/test-written-exercise-library-browser.py
       - name: Upload visual preview screenshots
