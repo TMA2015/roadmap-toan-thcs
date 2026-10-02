@@ -1,5 +1,5 @@
 {
-  "version": "1.0.136",
+  "version": "1.0.137",
   "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Skill Taxonomy v2 CT02–CT25 academic program is closed. Cross-batch reconciliation PASS: 131/131 families, 386/386 mappings, 5/5 CT24 canonical reuse mappings, 20 intentional NO_FAMILY mappings, 2/2 contextual-overlap candidates, 0 fixes, ARCH_1..16 PASS. Authorization is CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING. Next phase is implementation planning only: durable registry, mapping lookup, evidence aggregation, Skill Map v2, Core Readiness boundaries, no-backfill policy, canary/rollback/QA. Runtime/mastery/Readiness/history migration remains NOT authorized.",
+    "next_priority": "Skill Taxonomy v2 academic program is closed and implementation planning is active in Draft PR #270. Plan R1 preserves Canonical Evidence G2, introduces a separate Taxonomy v2 shadow store, durable 131-family registry, topic-sharded runtime policies for the 3,114 reviewed items, no backfill/regrade, and no mastery/Readiness thresholds yet. First coding gate after plan approval is I0 registry build/validation only. Runtime activation remains unauthorized.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1482,6 +1482,21 @@
         "authorization": "CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING",
         "academic_closure": "review-packets/skill-taxonomy/TAXONOMY_V2_ACADEMIC_CLOSURE_20261002.md",
         "pass_effect": "IMPLEMENTATION_PLANNING_ONLY_NOT_RUNTIME_ACTIVATION"
+      },
+      "implementation_planning": {
+        "status": "ACTIVE_REVIEW_ONLY",
+        "branch": "plan/skill-taxonomy-v2-implementation-r1-20261002",
+        "review_pr": 270,
+        "plan": "docs/roadmap/skill-taxonomy-v2-implementation-plan-r1.md",
+        "registry_schema_candidate": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.schema.json",
+        "protected_runtime_boundary": "Canonical Evidence G2: 101 items / 7 skills / CT04–CT07 / store toan-thcs-canonical-evidence-v2",
+        "proposed_new_store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "runtime_policy_layout": "topic_sharded_ct02_ct25",
+        "first_coding_gate": "I0_REGISTRY_BUILD_VALIDATION_ONLY",
+        "mastery_thresholds_authorized": false,
+        "readiness_authorized": false,
+        "history_backfill_authorized": false,
+        "runtime_activation_authorized": false
       }
     },
     "notebooklm_taxonomy_workflow": {
