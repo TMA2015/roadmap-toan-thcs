@@ -1,5 +1,5 @@
 {
-  "version": "1.0.132",
+  "version": "1.0.133",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -849,6 +849,51 @@
       "context_version": "1.0.132",
       "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
       "review_notes": "NotebookLM PASS 2/2 + ARCH_1..ARCH_10. Final exact-head f0df2011ab9694b06c30ffda1b7fa872d2dc1fda passed Roadmap PR Quality 36899579636; PR #255 merged as 47adffd87b654a1bd2b6854ddbc270bbf31dfa62; Deploy MkDocs 36900375742 SUCCESS including GitHub Pages. Owner then checked production on both iPad and desktop and reported it achieved the expected result; supplied screenshots show CT21 item rendering, guidance, 50% calculation, rubric and evidence-boundary copy correctly. B7 closed DONE at 44 items / 22 topics."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-001",
+      "title": "Consolidate THCS Skill Taxonomy v2 across learner-facing families and diagnostic subskills",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.133",
+      "review_verdict": "S1_S3_ACADEMICALLY_CLOSED_S4_ACTIVE",
+      "review_notes": "Program rule: learner-facing family != every legacy tag. Preserve legacy IDs/history; roles include assessed/supporting/method/context/category/composite/extension. S1 CT02–07, S2 CT08–12 and S3 CT13–20 are academically closed. S4 CT21–25 family review is running. No runtime/mastery/Readiness/history migration authorized. Exam-frequency claims remain PENDING_OFFICIAL_CORPUS."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-S1-001",
+      "title": "Skill Taxonomy v2 S1 — CT02–CT07",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.133",
+      "review_verdict": "ACADEMICALLY_CLOSED",
+      "review_notes": "87 legacy tags -> 39 learner-facing families; NotebookLM family review 39/39 PASS, 0 mapping fixes, 8/8 written-family links PASS. CT02+CT03 240/240 full-bank PASS; prior CT04–CT07 Phase D 492/492 reviewed. Combined question basis 732. No runtime activation."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-S2-001",
+      "title": "Skill Taxonomy v2 S2 — CT08–CT12",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.133",
+      "review_verdict": "ACADEMICALLY_CLOSED_624_OF_624_PASS_ZERO_REVISIONS",
+      "review_notes": "75 legacy tags -> 29 learner-facing families (20 Core + 9 optional). Family review PASS 29/29 with 0 mapping fixes and 9/9 written gaps. CT08 132/132 PASS; combined CT09–12 492/492 PASS, 59/59 clone families. Final registry review-packets/skill-taxonomy/S2_FINAL_ACADEMIC_REGISTRY_R1.json. No runtime activation."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-S3-001",
+      "title": "Skill Taxonomy v2 S3 — CT13–CT20 Geometry cluster",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.133",
+      "review_verdict": "ACADEMICALLY_CLOSED_1146_OF_1146_PASS_ZERO_REVISIONS",
+      "review_notes": "162 legacy tags -> 44 learner-facing families (38 Core + 1 Core-Support + 5 optional). Family review 44/44 PASS. Final combined review used exactly 11 selected Sources = two permanent (00_NOTEBOOK_MATH_PERMANENT_v1.1.md; 01_TOAN_THCS_MASTER_PLAN_v1.1.md) + 9 S3 batch Sources. Full-bank 1146/1146 PASS, 165/165 clone candidates, 20/20 topic checks, ARCH_1..14 PASS, 1136 mapped-family + 10 CT20 method/no-family items. PR #266 CI SUCCESS. Final registry review-packets/skill-taxonomy/S3_FINAL_ACADEMIC_REGISTRY_R1.json."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-S4-001",
+      "title": "Skill Taxonomy v2 S4 — CT21–CT25",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.133",
+      "review_verdict": "NOTEBOOKLM_FAMILY_REVIEW_RUNNING",
+      "review_notes": "Current candidate: 612 Practice questions / 62 legacy tags -> 19 proposed new families (7 Core, 5 Core-Support, 3 THPT-Bridge, 4 Entrance10), plus 5 reuse-existing-family mappings, 12 NO_NEW_FAMILY context/category mappings and 4 written-gap proposals. CT22 stays THPT-Bridge non-gating; CT24 is cross-topic Core-Support with family reuse; CT25 on-thi-* academic lanes remain CATEGORY, while exam strategy/review skills are optional Entrance10. Draft PR #267. Current NotebookLM selected Sources exactly 3: 00_NOTEBOOK_MATH_PERMANENT_v1.1.md + 01_TOAN_THCS_MASTER_PLAN_v1.1.md + S4_FAMILY_NOTEBOOKLM_SOURCE_R1.md. Next gate: owner supplies S4 family result; if PASS, run one combined CT21–25 full-bank audit = 612 items."
     }
   ]
 }
