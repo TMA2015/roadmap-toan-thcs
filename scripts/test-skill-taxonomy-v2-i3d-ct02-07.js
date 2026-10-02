@@ -14,7 +14,7 @@ const gitBlobSha = (buffer) => crypto.createHash("sha1")
 
 const obs = require("../docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js");
 
-const i3dPath = "docs/assets/data/curriculum/taxonomy-v2-runtime/i3d-ct02-07-r1.json";
+const i3dPath = "docs/assets/data/curriculum/taxonomy-v2-runtime/i3e-ct02-12-r1.json";
 const i3cPath = "docs/assets/data/curriculum/taxonomy-v2-runtime/i3c-ct02-04-r1.json";
 const topicPaths = [
   "docs/assets/data/curriculum/taxonomy-v2-runtime/ct02-r1.json",
@@ -185,7 +185,7 @@ const tv2At = practice.indexOf("RoadmapTaxonomyV2Observer?.captureAttempt");
 assert.ok(legacyAt >= 0 && g2At > legacyAt && tv2At > g2At, "shadow capture order changed");
 
 const observerSource = read("docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js").toString("utf8");
-assert.ok(observerSource.includes("taxonomy-v2-runtime/i3d-ct02-07-r1.json"));
+assert.ok(observerSource.includes("taxonomy-v2-runtime/i3e-ct02-12-r1.json"));
 for (const topic of ["ct02-r1.json", "ct03-r1.json", "ct04-r1.json", "ct05-r1.json", "ct06-r1.json", "ct07-r1.json"]) {
   assert.ok(!observerSource.includes('new URL("../data/curriculum/taxonomy-v2-runtime/' + topic + '"'));
 }
