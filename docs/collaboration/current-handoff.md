@@ -121,6 +121,12 @@
 
 ### Skill Taxonomy v2 implementation planning — ACTIVE
 - Planning task: `MATH-SKILL-TAXONOMY-V2-IMPLEMENTATION-PLAN-001`.
+- Draft architecture PR: **#270** (`plan/skill-taxonomy-v2-implementation-r1-20261002`).
+- Plan R1: `docs/roadmap/skill-taxonomy-v2-implementation-plan-r1.md`.
+- Registry schema candidate: `docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.schema.json`.
+- Proposed new shadow store: `toan-thcs-taxonomy-v2-evidence-v1`; existing `toan-thcs-canonical-evidence-v2` remains untouched.
+- Proposed runtime policy layout: topic-sharded CT02–CT25; do not ship a single giant 3,114-row browser payload.
+- First coding gate after plan approval: **I0 registry build/validation only**; no learner UI and no learner-data write.
 - Protected production boundary: Canonical Evidence G2 and existing learner/history stores.
 - Planning must define:
   1. durable 131-family registry + 386 mapping lookup;
