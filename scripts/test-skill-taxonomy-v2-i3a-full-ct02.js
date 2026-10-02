@@ -169,11 +169,12 @@ const g2At = practice.indexOf("RoadmapCanonicalEvidenceObserver?.captureAttempt"
 const tv2At = practice.indexOf("RoadmapTaxonomyV2Observer?.captureAttempt");
 assert.ok(legacyAt >= 0 && g2At > legacyAt && tv2At > g2At, "shadow capture order changed");
 
-// Runtime observer loads only I3A bounded policy; it does not load I1 index/full policy.
+// Runtime has advanced to I3B, while this historical I3A policy remains valid for regression.
 const observerSource = read("docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js").toString("utf8");
-assert.ok(observerSource.includes("taxonomy-v2-runtime/i3a-full-ct02-r1.json"));
+assert.ok(observerSource.includes("taxonomy-v2-runtime/i3b-ct02-03-r1.json"));
 assert.ok(!observerSource.includes('new URL("../data/curriculum/taxonomy-v2-runtime/index-r1.json"'));
 assert.ok(!observerSource.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct02-r1.json"'));
+assert.ok(!observerSource.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct03-r1.json"'));
 
 console.log("PASS Taxonomy v2 I3A full CT02 policy: 103 active + 17 NO_FAMILY guards.");
 console.log("PASS 10 families / max 75 independent units / exact 120-row CT02 coverage.");
