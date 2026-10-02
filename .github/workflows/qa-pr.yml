@@ -133,6 +133,10 @@ jobs:
         run: |
           node --check docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js
           node scripts/test-skill-taxonomy-v2-i3g-ct02-25.js
+      - name: Validate Skill Taxonomy v2 I4 owner preview
+        run: |
+          node --check docs/assets/javascripts/skill-map-v2-preview.js
+          node scripts/test-skill-map-v2-preview.js
       - name: Validate assets and practice
         run: |
           python check_svg_integrity.py
@@ -178,6 +182,7 @@ jobs:
           python scripts/test-canonical-evidence-pilot-v2-browser.py
           python scripts/test-canonical-evidence-g1-browser.py
           python scripts/test-skill-taxonomy-v2-i3g-browser.py
+          python scripts/test-skill-map-v2-preview-browser.py
           python scripts/test-help-disclosure-toggle-browser.py
           python scripts/test-written-exercise-library-browser.py
       - name: Upload visual preview screenshots
