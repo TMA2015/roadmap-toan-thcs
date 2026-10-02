@@ -26,9 +26,9 @@ Packet ID: `MATH-SKILL-S3-CT13-20-COMBINED-R1-20261002`
 - `CT19_OVERLAY_SOURCE.md`
 - `CT20_OVERLAY_SOURCE.md`
 - this review guide
-- plus the **2 permanent baseline Sources already present in this Notebook**
+- plus the 2 permanent baseline Sources: `00_NOTEBOOK_MATH_PERMANENT_v1.1.md` and `01_TOAN_THCS_MASTER_PLAN_v1.1.md`
 
-Total selected Sources for this review: **11 = 2 permanent baseline + 9 S3 batch Sources**.
+Total selected Sources for this review: **11 = 2 permanent baseline + 9 S3 batch Sources**. The three `gemini-catalogue-*` files are intentionally unselected and are not review inputs.
 
 JSON overlays remain GitHub provenance/machine-check data only and are not uploaded to NotebookLM.
 
