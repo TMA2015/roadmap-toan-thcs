@@ -1,8 +1,9 @@
 # Skill Taxonomy v2 — I5 Evidence Policy R2
 
 Date: 2026-10-03
-Status: REVIEW ONLY / NO RUNTIME ACTIVATION
+Status: ACCEPTED POLICY / NO RUNTIME ACTIVATION
 Supersedes: policy draft R1 for I5 closure decisions
+Independent recheck: 8/8 PASS — `review-packets/skill-taxonomy/phase-i5/08_NOTEBOOKLM_I5_R2_PASS_RECEIPT.md`
 
 ## 1. Purpose
 
