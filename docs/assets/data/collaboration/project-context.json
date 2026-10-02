@@ -1,5 +1,5 @@
 {
-  "version": "1.0.137",
+  "version": "1.0.138",
   "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Skill Taxonomy v2 academic program is closed and implementation planning is active in Draft PR #270. Plan R1 preserves Canonical Evidence G2, introduces a separate Taxonomy v2 shadow store, durable 131-family registry, topic-sharded runtime policies for the 3,114 reviewed items, no backfill/regrade, and no mastery/Readiness thresholds yet. First coding gate after plan approval is I0 registry build/validation only. Runtime activation remains unauthorized.",
+    "next_priority": "Skill Taxonomy v2 I0 durable registry is DONE and merged to main. Registry: 131 families / 386 mappings / 20 intentional NO_FAMILY / 14 total CROSS_TOPIC_REUSE, with exactly 5 reviewed CT24 reuse mappings. Exact I0 tested HEAD ae8b7264... passed Roadmap PR Quality run 37013490363 and merged as a8b619a2.... Runtime remains disabled; Canonical Evidence G2 is untouched. Next planned gate is I1 topic-local CT02–CT25 item-policy compilation for the 3,114 reviewed questions, still data-only until separately started.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1484,18 +1484,41 @@
         "pass_effect": "IMPLEMENTATION_PLANNING_ONLY_NOT_RUNTIME_ACTIVATION"
       },
       "implementation_planning": {
-        "status": "ACTIVE_REVIEW_ONLY",
+        "status": "PLAN_R1_ACCEPTED_I0_DONE",
         "branch": "plan/skill-taxonomy-v2-implementation-r1-20261002",
-        "review_pr": 270,
+        "review_pr": 271,
         "plan": "docs/roadmap/skill-taxonomy-v2-implementation-plan-r1.md",
         "registry_schema_candidate": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.schema.json",
         "protected_runtime_boundary": "Canonical Evidence G2: 101 items / 7 skills / CT04–CT07 / store toan-thcs-canonical-evidence-v2",
         "proposed_new_store": "toan-thcs-taxonomy-v2-evidence-v1",
         "runtime_policy_layout": "topic_sharded_ct02_ct25",
-        "first_coding_gate": "I0_REGISTRY_BUILD_VALIDATION_ONLY",
+        "first_coding_gate": "I0_DONE",
         "mastery_thresholds_authorized": false,
         "readiness_authorized": false,
         "history_backfill_authorized": false,
+        "runtime_activation_authorized": false
+      },
+      "i0": {
+        "status": "DONE",
+        "pr": 271,
+        "tested_head": "ae8b7264fedbbe62e16b7d2d6a98634341554aa1",
+        "ci_run": 37013490363,
+        "ci_result": "SUCCESS",
+        "merge_sha": "a8b619a2b1ed5d572f615cd7178e0906978eaa6a",
+        "registry_path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+        "registry_blob": "c2f2e5b8d78a58d874f88524861326223fdbdf45",
+        "families": 131,
+        "mappings": 386,
+        "intentional_no_family": 20,
+        "cross_topic_reuse_total": 14,
+        "ct24_reuse": 5,
+        "runtime_enabled": false,
+        "learner_data_write_enabled": false,
+        "checkpoint": "review-packets/skill-taxonomy/implementation/I0_DURABLE_REGISTRY_TECHNICAL_CHECKPOINT.md"
+      },
+      "i1": {
+        "status": "PLANNED_NOT_STARTED",
+        "scope": "compile topic-local item policies for 3,114 reviewed Practice questions",
         "runtime_activation_authorized": false
       }
     },
