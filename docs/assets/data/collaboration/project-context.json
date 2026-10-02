@@ -1,5 +1,5 @@
 {
-  "version": "1.0.151",
+  "version": "1.0.152",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "I3G full CT02–CT25 shadow rollout owner QA is PASS and closed. Next gate is I4: an owner/internal, read-only Skill Map v2 preview. It must read the isolated Taxonomy v2 shadow store only; render the 131-family registry while showing evidence only where direct runtime units exist; aggregate cross-topic reuse to one family; use independent_units so clone/repeat attempts cannot inflate evidence; keep Practice v1 statistics visibly separate; support layer/topic filtering; keep optional layers collapsed by default; and expose no mastery labels, readiness gates, backfill/regrade, or learner-data writes.",
+    "next_priority": "I4 Skill Map v2 owner preview is PASS and closed. Next gate is I5 evidence-policy review only: define defensible evidence sufficiency, mastery eligibility and Readiness policy before any activation. Current bank capacity is highly uneven across the 131-family registry: 4 families have 0 direct units, 12 have max 1, 29 have max 2; do not impose one universal evidence-count threshold. NotebookLM independent review packet is prepared for D1–D12 and ARCH_1–12. Mastery/Readiness/backfill/regrade remain OFF.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1987,7 +1987,7 @@
         }
       },
       "i4": {
-        "status": "IMPLEMENTATION_BRANCH_PRE_CI",
+        "status": "DONE_OWNER_PREVIEW_QA_PASS",
         "phase": "I4_SKILL_MAP_V2_OWNER_PREVIEW",
         "branch": "impl/skill-taxonomy-v2-i4-skill-map-preview-r1-20261003",
         "page": "docs/collaboration/skill-map-v2-preview.md",
@@ -2007,7 +2007,57 @@
         "readiness_enabled": false,
         "history_backfill_enabled": false,
         "learner_data_write_enabled": false,
-        "learner_facing_general_release": false
+        "learner_facing_general_release": false,
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I4_SKILL_MAP_V2_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "independent_units": 42,
+          "independent_correct": 18,
+          "seen_questions": 51,
+          "recent_events": 51,
+          "evidence_bearing_families_in_profile": 28,
+          "visible_kntt_core_families_in_evidence_filter": 23,
+          "legacy_practice_tags": 74
+        }
+      },
+      "i5": {
+        "status": "NOTEBOOKLM_PACKET_PREPARED_AWAITING_REVIEW",
+        "branch": "review/skill-taxonomy-v2-i5-evidence-policy-r1-20261003",
+        "draft_policy": "docs/roadmap/skill-taxonomy-v2-evidence-policy-draft-r1.md",
+        "notebook_source": "review-packets/skill-taxonomy/phase-i5/01_UPLOAD_TO_NOTEBOOKLM_I5_EVIDENCE_POLICY_R1.md",
+        "notebook_prompt": "review-packets/skill-taxonomy/phase-i5/02_COPY_TO_NOTEBOOKLM_I5_EVIDENCE_POLICY_R1.txt",
+        "machine_preflight": "review-packets/skill-taxonomy/phase-i5/03_MACHINE_PREFLIGHT_I5_EVIDENCE_POLICY_R1.json",
+        "decisions_required": [
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "D5",
+          "D6",
+          "D7",
+          "D8",
+          "D9",
+          "D10",
+          "D11",
+          "D12"
+        ],
+        "architecture_checks_required": [
+          "ARCH_1",
+          "ARCH_2",
+          "ARCH_3",
+          "ARCH_4",
+          "ARCH_5",
+          "ARCH_6",
+          "ARCH_7",
+          "ARCH_8",
+          "ARCH_9",
+          "ARCH_10",
+          "ARCH_11",
+          "ARCH_12"
+        ],
+        "runtime_activation_authorized": false,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false
       }
     },
     "notebooklm_taxonomy_workflow": {
