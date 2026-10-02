@@ -1,13 +1,13 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 I2 CT02 SHADOW CANARY LIVE; DEPLOYED ARTIFACT VERIFIED; OWNER PRODUCTION QA PENDING.**  
+> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 I2 CT02 SHADOW CANARY DONE; OWNER PRODUCTION QA PASS.**  
 > Academic taxonomy: **131/131 family definitions PASS; 386/386 mappings PASS**.  
 > I0 durable registry: **DONE**. I1 topic policies: **DONE — 24 policies / 3,114 questions / 2,900 family-linked + 214 formative/NO_FAMILY**.  
 > I2 controlled canary: **LIVE on CT02** — **12 active questions / 4 Core families / 2 NO_FAMILY guards / max 8 independent units**.  
 > Exact I2 tested HEAD `53d6e0b90a6ceded5ace55b1c6d616c667928b3a` passed Roadmap PR Quality **37019025938**, Skill assessment pilot QA **37019026358**, and branding QA **37019026822**; merged as `e45ec7e4c5f8900f96a61ba82f9c060b94e7c8cb`; production deploy **37019804305 SUCCESS**.  
 > Post-deploy `gh-pages` verification: **PASS** @ `3b04dce9ec61211818732d6cbb6d387afe893606` — observer present, CT02 I2 policy present, and deployed CT02 Practice HTML loads the observer.  
 > New isolated store: `toan-thcs-taxonomy-v2-evidence-v1`. **No mastery, no Readiness, no backfill/regrade, no normal learner-facing Taxonomy v2 UI. G2 remains unchanged.**  
-> **Do not expand I2 until owner production QA closes the live canary gate.**
+> I2 canary gate is closed. **I3 shadow-capture expansion is READY but requires separate authorization before scope is widened.**
 
 ## Khôi phục trong cuộc trò chuyện mới
 
