@@ -1,0 +1,1262 @@
+{
+  "schema": "skill-taxonomy-v2-s2-provisional-family-r1",
+  "status": "PROVISIONAL_PENDING_NOTEBOOKLM_AND_FULL_BANK_ITEM_AUDITS",
+  "as_of": "2026-10-02",
+  "scope": {
+    "topics": [
+      "CT08",
+      "CT09",
+      "CT10",
+      "CT11",
+      "CT12"
+    ],
+    "practice_questions": 624,
+    "legacy_rows": 75,
+    "current_written_items": 10
+  },
+  "design": {
+    "proposed_family_count": 29,
+    "core_family_count": 20,
+    "optional_family_count": 9,
+    "learner_facing_family_not_every_legacy_tag": true,
+    "diagnostic_subskills_preserved": true,
+    "runtime_enabled": false,
+    "item_level_primary_overlay_status": "PENDING_FOR_ALL_CT08_CT12"
+  },
+  "families": [
+    {
+      "family_id": "EQ-BASIC",
+      "label_vi": "Giải phương trình cơ bản",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "nghiem-phuong-trinh",
+        "pt-bac-nhat",
+        "bien-doi-pt-nhieu-buoc",
+        "pt-tich"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "EQ-RATIONAL",
+      "label_vi": "Phương trình chứa ẩn ở mẫu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "dkxd-phuong-trinh-mau",
+        "khu-mau-phuong-trinh",
+        "doi-chieu-nghiem"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "INEQ-ORDER",
+      "label_vi": "Bất đẳng thức và tính chất thứ tự",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "bat-dang-thuc",
+        "tinh-chat-thu-tu-phep-cong",
+        "tinh-chat-thu-tu-phep-nhan"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "INEQ-SOLVE",
+      "label_vi": "Giải và biểu diễn bất phương trình",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "bpt-bac-nhat",
+        "doi-chieu-bpt",
+        "bieu-dien-tap-nghiem",
+        "giao-tap-nghiem"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "EQ-MODEL",
+      "label_vi": "Lập phương trình từ bài toán",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "lap-phuong-trinh"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "INEQ-MODEL",
+      "label_vi": "Lập bất phương trình từ bài toán",
+      "layer": "Entrance10",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "lap-bat-phuong-trinh"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "EQ-PARAM",
+      "label_vi": "Phương trình/bất phương trình có tham số",
+      "layer": "Specialized-Challenge",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "tham-so-co-ban"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "SYS-CONCEPT",
+      "label_vi": "Nghiệm và ý nghĩa của hệ phương trình",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT09"
+      ],
+      "diagnostic_subskills": [
+        "nghiem-pt-hai-an",
+        "nghiem-he",
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "SYS-SOLVE",
+      "label_vi": "Giải và kiểm tra hệ phương trình",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT09"
+      ],
+      "diagnostic_subskills": [
+        "giai-he-the",
+        "giai-he-cong",
+        "chon-phuong-phap",
+        "bien-doi-truoc-giai",
+        "kiem-tra-nghiem-he"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "SYS-MODEL",
+      "label_vi": "Lập hệ từ bài toán",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT09"
+      ],
+      "diagnostic_subskills": [
+        "lap-he-bai-toan",
+        "bai-toan-so",
+        "chuyen-dong-he",
+        "nang-suat-he"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "SYS-PARAM",
+      "label_vi": "Hệ phương trình có tham số",
+      "layer": "Entrance10",
+      "topics": [
+        "CT09"
+      ],
+      "diagnostic_subskills": [
+        "tham-so-he"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "FUNC-BASIC",
+      "label_vi": "Hàm số, giá trị và bảng giá trị",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "khai-niem-ham-so",
+        "tinh-gia-tri-ham",
+        "bang-gia-tri"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "GRAPH-POINT",
+      "label_vi": "Tọa độ và điểm thuộc đồ thị",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "toa-do-diem",
+        "diem-thuoc-do-thi"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "LINEAR-FUNC",
+      "label_vi": "Hàm số bậc nhất và đồ thị đường thẳng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-ham-bac-nhat",
+        "he-so-goc",
+        "tung-do-goc",
+        "dong-nghich-bien",
+        "ve-do-thi-ham-bac-nhat"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "GRAPH-INTERSECTION",
+      "label_vi": "Vị trí và giao điểm các đồ thị",
+      "layer": "Entrance10",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "vi-tri-hai-duong-thang",
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "PARABOLA-BASIC",
+      "label_vi": "Parabol y=ax²",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "ham-y-ax2",
+        "doi-xung-parabol",
+        "diem-thuoc-parabol"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RAD-BASIC",
+      "label_vi": "Căn bậc hai và điều kiện xác định",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "can-bac-hai-so-hoc",
+        "dkxd-can",
+        "can-binh-phuong"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RAD-TRANSFORM",
+      "label_vi": "Biến đổi căn thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "khai-phuong-tich",
+        "khai-phuong-thuong",
+        "dua-thua-so-ra",
+        "dua-thua-so-vao"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RAD-OPERATE",
+      "label_vi": "Phép tính với căn thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "can-dong-dang",
+        "nhan-chia-can"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RAD-RATIONALIZE",
+      "label_vi": "Trục căn thức ở mẫu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "truc-can-mau-don",
+        "truc-can-lien-hop"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RAD-CUBEROOT",
+      "label_vi": "Căn bậc ba",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "can-bac-ba"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RAD-EQUATION",
+      "label_vi": "Phương trình chứa căn",
+      "layer": "Entrance10",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "tim-x-can"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RAD-COMPARE",
+      "label_vi": "So sánh biểu thức căn",
+      "layer": "Entrance10",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "so-sanh-can"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "QUAD-STRUCTURE",
+      "label_vi": "Nhận dạng phương trình bậc hai và hệ số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "nhan-dang-pt-bac-hai",
+        "he-so-abc"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "QUAD-SOLVE",
+      "label_vi": "Biệt thức và giải phương trình bậc hai",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "tinh-delta",
+        "so-nghiem-delta",
+        "cong-thuc-nghiem",
+        "delta-phay",
+        "giai-pt-bac-hai",
+        "nham-nghiem"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "VIETE-CORE",
+      "label_vi": "Viète và lập phương trình từ nghiệm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "tong-tich-nghiem",
+        "lap-pt-tu-nghiem"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "VIETE-APPLY",
+      "label_vi": "Vận dụng Viète với biểu thức và dấu nghiệm",
+      "layer": "Entrance10",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "bieu-thuc-doi-xung",
+        "dau-nghiem"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "QUAD-GRAPH",
+      "label_vi": "Liên hệ nghiệm với đồ thị",
+      "layer": "Entrance10",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "lien-he-do-thi"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "QUAD-PARAM",
+      "label_vi": "Tham số và số nghiệm",
+      "layer": "Specialized-Challenge",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "tham-so-so-nghiem"
+      ],
+      "runtime_enabled": false
+    }
+  ],
+  "legacy_mappings": [
+    {
+      "topic_id": "CT08",
+      "legacy_id": "nghiem-phuong-trinh",
+      "label": "Khái niệm nghiệm phương trình",
+      "question_count": 6,
+      "family_id": "EQ-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "pt-bac-nhat",
+      "label": "Phương trình bậc nhất",
+      "question_count": 28,
+      "family_id": "EQ-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "bien-doi-pt-nhieu-buoc",
+      "label": "Biến đổi phương trình nhiều bước",
+      "question_count": 12,
+      "family_id": "EQ-BASIC",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "pt-tich",
+      "label": "Phương trình tích",
+      "question_count": 12,
+      "family_id": "EQ-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "dkxd-phuong-trinh-mau",
+      "label": "Điều kiện xác định phương trình chứa mẫu",
+      "question_count": 26,
+      "family_id": "EQ-RATIONAL",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "khu-mau-phuong-trinh",
+      "label": "Khử mẫu và giải phương trình",
+      "question_count": 12,
+      "family_id": "EQ-RATIONAL",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "doi-chieu-nghiem",
+      "label": "Đối chiếu nghiệm với điều kiện",
+      "question_count": 6,
+      "family_id": "EQ-RATIONAL",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "bpt-bac-nhat",
+      "label": "Bất phương trình bậc nhất",
+      "question_count": 22,
+      "family_id": "INEQ-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "doi-chieu-bpt",
+      "label": "Đổi chiều bất phương trình",
+      "question_count": 8,
+      "family_id": "INEQ-SOLVE",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "bieu-dien-tap-nghiem",
+      "label": "Biểu diễn tập nghiệm",
+      "question_count": 6,
+      "family_id": "INEQ-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "giao-tap-nghiem",
+      "label": "Giao các tập nghiệm",
+      "question_count": 6,
+      "family_id": "INEQ-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "lap-phuong-trinh",
+      "label": "Lập phương trình từ bài toán",
+      "question_count": 6,
+      "family_id": "EQ-MODEL",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "lap-bat-phuong-trinh",
+      "label": "Lập bất phương trình từ bài toán",
+      "question_count": 4,
+      "family_id": "INEQ-MODEL",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "tham-so-co-ban",
+      "label": "Biện luận tham số cơ bản",
+      "question_count": 4,
+      "family_id": "EQ-PARAM",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Specialized-Challenge",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "bat-dang-thuc",
+      "label": "Khái niệm bất đẳng thức",
+      "question_count": 4,
+      "family_id": "INEQ-ORDER",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "tinh-chat-thu-tu-phep-cong",
+      "label": "Tính chất thứ tự với phép cộng",
+      "question_count": 4,
+      "family_id": "INEQ-ORDER",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "tinh-chat-thu-tu-phep-nhan",
+      "label": "Tính chất thứ tự với phép nhân",
+      "question_count": 4,
+      "family_id": "INEQ-ORDER",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "nghiem-pt-hai-an",
+      "label": "Nghiệm của phương trình bậc nhất hai ẩn",
+      "question_count": 12,
+      "family_id": "SYS-CONCEPT",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "nghiem-he",
+      "label": "Nghiệm của hệ phương trình",
+      "question_count": 16,
+      "family_id": "SYS-CONCEPT",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "so-nghiem-he",
+      "label": "Số nghiệm của hệ",
+      "question_count": 12,
+      "family_id": "SYS-CONCEPT",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "y-nghia-hinh-hoc",
+      "label": "Ý nghĩa hình học của hệ",
+      "question_count": 12,
+      "family_id": "SYS-CONCEPT",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "giai-he-the",
+      "label": "Giải hệ bằng phương pháp thế",
+      "question_count": 24,
+      "family_id": "SYS-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "giai-he-cong",
+      "label": "Giải hệ bằng cộng đại số",
+      "question_count": 4,
+      "family_id": "SYS-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "chon-phuong-phap",
+      "label": "Chọn phương pháp giải phù hợp",
+      "question_count": 12,
+      "family_id": "SYS-SOLVE",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "bien-doi-truoc-giai",
+      "label": "Biến đổi hệ trước khi giải",
+      "question_count": 12,
+      "family_id": "SYS-SOLVE",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "kiem-tra-nghiem-he",
+      "label": "Kiểm tra nghiệm của hệ",
+      "question_count": 24,
+      "family_id": "SYS-SOLVE",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "tham-so-he",
+      "label": "Hệ phương trình có tham số",
+      "question_count": 12,
+      "family_id": "SYS-PARAM",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "lap-he-bai-toan",
+      "label": "Lập hệ từ bài toán",
+      "question_count": 32,
+      "family_id": "SYS-MODEL",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "bai-toan-so",
+      "label": "Bài toán về số",
+      "question_count": 12,
+      "family_id": "SYS-MODEL",
+      "role": "CONTEXT",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "chuyen-dong-he",
+      "label": "Bài toán chuyển động",
+      "question_count": 10,
+      "family_id": "SYS-MODEL",
+      "role": "CONTEXT",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "nang-suat-he",
+      "label": "Bài toán năng suất – giá trị",
+      "question_count": 10,
+      "family_id": "SYS-MODEL",
+      "role": "CONTEXT",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "khai-niem-ham-so",
+      "label": "Khái niệm hàm số",
+      "question_count": 8,
+      "family_id": "FUNC-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "tinh-gia-tri-ham",
+      "label": "Tính giá trị hàm số",
+      "question_count": 22,
+      "family_id": "FUNC-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "bang-gia-tri",
+      "label": "Bảng giá trị",
+      "question_count": 10,
+      "family_id": "FUNC-BASIC",
+      "role": "REPRESENTATION",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "toa-do-diem",
+      "label": "Tọa độ điểm",
+      "question_count": 10,
+      "family_id": "GRAPH-POINT",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "diem-thuoc-do-thi",
+      "label": "Điểm thuộc đồ thị",
+      "question_count": 20,
+      "family_id": "GRAPH-POINT",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "nhan-biet-ham-bac-nhat",
+      "label": "Nhận biết hàm số bậc nhất",
+      "question_count": 10,
+      "family_id": "LINEAR-FUNC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "he-so-goc",
+      "label": "Hệ số góc",
+      "question_count": 16,
+      "family_id": "LINEAR-FUNC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "tung-do-goc",
+      "label": "Tung độ gốc",
+      "question_count": 6,
+      "family_id": "LINEAR-FUNC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "dong-nghich-bien",
+      "label": "Đồng biến – nghịch biến",
+      "question_count": 10,
+      "family_id": "LINEAR-FUNC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "ve-do-thi-ham-bac-nhat",
+      "label": "Vẽ đồ thị hàm số bậc nhất",
+      "question_count": 10,
+      "family_id": "LINEAR-FUNC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "vi-tri-hai-duong-thang",
+      "label": "Vị trí tương đối hai đường thẳng",
+      "question_count": 10,
+      "family_id": "GRAPH-INTERSECTION",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "giao-diem-do-thi",
+      "label": "Giao điểm hai đồ thị",
+      "question_count": 8,
+      "family_id": "GRAPH-INTERSECTION",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "lien-he-he-phuong-trinh",
+      "label": "Liên hệ với hệ phương trình",
+      "question_count": 8,
+      "family_id": "GRAPH-INTERSECTION",
+      "role": "CROSS_TOPIC_LINK",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "ham-y-ax2",
+      "label": "Hàm số y = ax²",
+      "question_count": 10,
+      "family_id": "PARABOLA-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "doi-xung-parabol",
+      "label": "Tính đối xứng và hướng mở parabol",
+      "question_count": 5,
+      "family_id": "PARABOLA-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "diem-thuoc-parabol",
+      "label": "Điểm thuộc parabol",
+      "question_count": 5,
+      "family_id": "PARABOLA-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "can-bac-hai-so-hoc",
+      "label": "Căn bậc hai số học",
+      "question_count": 10,
+      "family_id": "RAD-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "dkxd-can",
+      "label": "Điều kiện xác định của căn thức",
+      "question_count": 22,
+      "family_id": "RAD-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "can-binh-phuong",
+      "label": "Căn của bình phương và giá trị tuyệt đối",
+      "question_count": 10,
+      "family_id": "RAD-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "khai-phuong-tich",
+      "label": "Khai phương một tích",
+      "question_count": 12,
+      "family_id": "RAD-TRANSFORM",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "khai-phuong-thuong",
+      "label": "Khai phương một thương",
+      "question_count": 10,
+      "family_id": "RAD-TRANSFORM",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "dua-thua-so-ra",
+      "label": "Đưa thừa số ra ngoài dấu căn",
+      "question_count": 12,
+      "family_id": "RAD-TRANSFORM",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "dua-thua-so-vao",
+      "label": "Đưa thừa số vào trong dấu căn",
+      "question_count": 10,
+      "family_id": "RAD-TRANSFORM",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "can-dong-dang",
+      "label": "Cộng trừ căn đồng dạng",
+      "question_count": 12,
+      "family_id": "RAD-OPERATE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "nhan-chia-can",
+      "label": "Nhân chia căn thức",
+      "question_count": 10,
+      "family_id": "RAD-OPERATE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "truc-can-mau-don",
+      "label": "Trục căn thức ở mẫu dạng đơn",
+      "question_count": 10,
+      "family_id": "RAD-RATIONALIZE",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "truc-can-lien-hop",
+      "label": "Trục căn thức bằng liên hợp",
+      "question_count": 8,
+      "family_id": "RAD-RATIONALIZE",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "tim-x-can",
+      "label": "Tìm x trong phương trình chứa căn",
+      "question_count": 3,
+      "family_id": "RAD-EQUATION",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "so-sanh-can",
+      "label": "So sánh biểu thức căn",
+      "question_count": 3,
+      "family_id": "RAD-COMPARE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "can-bac-ba",
+      "label": "Căn bậc ba",
+      "question_count": 12,
+      "family_id": "RAD-CUBEROOT",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "nhan-dang-pt-bac-hai",
+      "label": "Nhận dạng phương trình bậc hai",
+      "question_count": 10,
+      "family_id": "QUAD-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "he-so-abc",
+      "label": "Xác định hệ số a, b, c",
+      "question_count": 10,
+      "family_id": "QUAD-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "tinh-delta",
+      "label": "Tính biệt thức Δ",
+      "question_count": 14,
+      "family_id": "QUAD-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "so-nghiem-delta",
+      "label": "Số nghiệm theo Δ",
+      "question_count": 9,
+      "family_id": "QUAD-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "cong-thuc-nghiem",
+      "label": "Công thức nghiệm",
+      "question_count": 18,
+      "family_id": "QUAD-SOLVE",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "delta-phay",
+      "label": "Công thức nghiệm thu gọn Δ'",
+      "question_count": 10,
+      "family_id": "QUAD-SOLVE",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "giai-pt-bac-hai",
+      "label": "Giải phương trình bậc hai",
+      "question_count": 28,
+      "family_id": "QUAD-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "nham-nghiem",
+      "label": "Nhẩm nghiệm",
+      "question_count": 10,
+      "family_id": "QUAD-SOLVE",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "tham-so-so-nghiem",
+      "label": "Tham số và số nghiệm",
+      "question_count": 8,
+      "family_id": "QUAD-PARAM",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Specialized-Challenge",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "tong-tich-nghiem",
+      "label": "Tổng – tích nghiệm theo Viète",
+      "question_count": 30,
+      "family_id": "VIETE-CORE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "bieu-thuc-doi-xung",
+      "label": "Biểu thức đối xứng theo nghiệm",
+      "question_count": 12,
+      "family_id": "VIETE-APPLY",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "lap-pt-tu-nghiem",
+      "label": "Lập phương trình từ nghiệm",
+      "question_count": 8,
+      "family_id": "VIETE-CORE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "dau-nghiem",
+      "label": "Xét dấu hai nghiệm",
+      "question_count": 6,
+      "family_id": "VIETE-APPLY",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "lien-he-do-thi",
+      "label": "Liên hệ nghiệm với đồ thị",
+      "question_count": 2,
+      "family_id": "QUAD-GRAPH",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false
+    }
+  ],
+  "proposed_written_gaps": [
+    {
+      "id": "S2-WR-CT08-MODEL-001",
+      "topic_id": "CT08",
+      "family_id": "EQ-MODEL",
+      "layer": "KNTT-Core",
+      "problem_type": "Lập phương trình từ bài toán thực tế nhiều bước",
+      "need": "WRITTEN_REQUIRED_FOR_FULL_SKILL"
+    },
+    {
+      "id": "S2-WR-CT08-INEQMODEL-001",
+      "topic_id": "CT08",
+      "family_id": "INEQ-MODEL",
+      "layer": "Entrance10",
+      "problem_type": "Lập bất phương trình từ ràng buộc thực tế",
+      "need": "WRITTEN_REQUIRED_FOR_FULL_SKILL"
+    },
+    {
+      "id": "S2-WR-CT09-SUB-001",
+      "topic_id": "CT09",
+      "family_id": "SYS-SOLVE",
+      "layer": "KNTT-Core",
+      "problem_type": "Giải hệ bằng phương pháp thế với trình bày đầy đủ",
+      "need": "WRITTEN_RECOMMENDED"
+    },
+    {
+      "id": "S2-WR-CT09-RATE-001",
+      "topic_id": "CT09",
+      "family_id": "SYS-MODEL",
+      "layer": "KNTT-Core",
+      "problem_type": "Lập hệ cho bài toán chuyển động hoặc năng suất",
+      "need": "WRITTEN_REQUIRED_FOR_FULL_SKILL"
+    },
+    {
+      "id": "S2-WR-CT10-INTERSECT-001",
+      "topic_id": "CT10",
+      "family_id": "GRAPH-INTERSECTION",
+      "layer": "Entrance10",
+      "problem_type": "Tìm giao điểm hai đồ thị và liên hệ nghiệm hệ",
+      "need": "WRITTEN_RECOMMENDED"
+    },
+    {
+      "id": "S2-WR-CT11-TRANSFORM-001",
+      "topic_id": "CT11",
+      "family_id": "RAD-TRANSFORM",
+      "layer": "KNTT-Core",
+      "problem_type": "Biến đổi/rút gọn căn thức nhiều bước bằng nhiều quy tắc",
+      "need": "WRITTEN_RECOMMENDED"
+    },
+    {
+      "id": "S2-WR-CT11-EQ-001",
+      "topic_id": "CT11",
+      "family_id": "RAD-EQUATION",
+      "layer": "Entrance10",
+      "problem_type": "Giải phương trình chứa căn và kiểm tra điều kiện/nghiệm",
+      "need": "WRITTEN_REQUIRED_FOR_FULL_SKILL"
+    },
+    {
+      "id": "S2-WR-CT12-VIETE-001",
+      "topic_id": "CT12",
+      "family_id": "VIETE-APPLY",
+      "layer": "Entrance10",
+      "problem_type": "Tính biểu thức đối xứng theo nghiệm bằng Viète",
+      "need": "WRITTEN_REQUIRED_FOR_FULL_SKILL"
+    },
+    {
+      "id": "S2-WR-CT12-PARAM-001",
+      "topic_id": "CT12",
+      "family_id": "QUAD-PARAM",
+      "layer": "Specialized-Challenge",
+      "problem_type": "Biện luận tham số theo số nghiệm/điều kiện nghiệm",
+      "need": "WRITTEN_REQUIRED_FOR_FULL_SKILL"
+    }
+  ],
+  "cross_batch_reconciliation_questions": [
+    "Should CT08 pt-tich share/absorb the S1 EQ-ZERO-PRODUCT family so product-equation capability is not duplicated across batches?",
+    "Should CT11 RAD-BASIC become the canonical home for S1 Core-Support can-bac-hai-so-hoc?",
+    "Should CT10 GRAPH-INTERSECTION and CT09 system geometry/link evidence share a cross-topic family or remain separate learner-facing families with a dependency edge?",
+    "Should CT12 QUAD-GRAPH share a higher graph-intersection/roots family with CT10 or remain a separate Entrance10 application family?",
+    "Are any S2 Core families still too broad or too narrow for actionable remediation?"
+  ],
+  "safety": {
+    "legacy_ids_unchanged": true,
+    "runtime_unchanged": true,
+    "no_history_backfill": true,
+    "exam_frequency": "PENDING_OFFICIAL_CORPUS",
+    "full_bank_item_audits_required_before_final_family_reconciliation": true
+  }
+}
