@@ -79,3 +79,16 @@ Do not add written exercises just to satisfy a numeric quota.
 - Preserve learner history.
 - Do not retroactively sum historical counters across aliases without sufficient event-level evidence.
 - Knowledge Graph remains selective; it is not a copy of every legacy tag.
+
+
+## NotebookLM source strategy
+
+NotebookLM is the academic reviewer for this project.
+
+Use two source classes:
+- **Permanent/Frozen sources:** stable project rules, curriculum/boundary references and durable review contracts.
+- **Temporary batch sources:** the current source-locked review packet and only the supporting files genuinely needed for that batch.
+
+NotebookLM may support many sources (the owner reports up to 50 in the current product), but **source count is not a target**. Prefer the smallest source set that gives complete academic context. Add more sources only when they materially improve evidence coverage or disambiguation; avoid redundant or overlapping sources that can dilute the review.
+
+Long instructions, expected IDs and output contracts belong in Sources. Keep the chat prompt compact; the current successful S1 pattern used a 560-character / 69-word prompt.
