@@ -1,5 +1,5 @@
 {
-  "version": "1.0.149",
+  "version": "1.0.150",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "I3E CT02–CT12 owner QA PASS. I3F expands Taxonomy v2 shadow capture through CT20 using the reviewed S3 CT13–CT20 batch. Cumulative scope: 2502 rows, 2408 active + 94 guards, 108 families, max 543 independent units. S3 adds 1146 rows = 1136 active + 10 guards across 44 families. G2 stays frozen to CT04–CT07; CT21+ remains outside this gate.",
+    "next_priority": "I3F owner QA PASS. I3G is the final Taxonomy v2 shadow rollout through CT25: 3114 reviewed practice rows, 2900 active + 214 guards, 127 evidence-bearing families, max 650 independent units. Registry remains 131 families; RATIO-MODEL, ID-APPLY, ID-PROOF and RATEX-INTEGER intentionally have no direct runtime evidence in the current bank. G2 remains frozen to CT04–CT07. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1917,6 +1917,57 @@
         "history_backfill_enabled": false,
         "normal_learner_ui_change": false,
         "ct13_plus_expansion_authorized": false
+      },
+      "i3f": {
+        "status": "DONE_OWNER_PRODUCTION_QA_PASS",
+        "owner_production_qa": "PASS",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I3F_CT02_20_SHADOW_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "build": "taxonomy-v2-i3f-ct02-20-20261003",
+          "policy_ready": true,
+          "policy_error": null,
+          "recent_events": 41,
+          "seen_questions": 41,
+          "independent_units": 34,
+          "last_capture": {
+            "question_id": "GEO19V1_060",
+            "family_id": "CIRCLE-CYCLIC",
+            "diagnostic_skill_id": "dau-hieu-noi-tiep",
+            "independent_evidence": false,
+            "independent_reason": "clone_family_repeat"
+          }
+        }
+      },
+      "i3g": {
+        "status": "IMPLEMENTATION_BRANCH_PRE_CI",
+        "phase": "I3G_FULL_CT02_CT25",
+        "branch": "impl/skill-taxonomy-v2-i3g-ct02-25-shadow-r1-20261003",
+        "scope": {
+          "total_rows": 3114,
+          "active_family_rows": 2900,
+          "no_family_guards": 214,
+          "evidence_family_count": 127,
+          "registry_family_count": 131,
+          "max_independent_units": 650
+        },
+        "no_direct_runtime_evidence_families": [
+          "RATIO-MODEL",
+          "ID-APPLY",
+          "ID-PROOF",
+          "RATEX-INTEGER"
+        ],
+        "final_batch": {
+          "topics": "CT21–CT25",
+          "total_rows": 612,
+          "active_family_rows": 492,
+          "no_family_guards": 120
+        },
+        "store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "policy": "docs/assets/data/curriculum/taxonomy-v2-runtime/i3g-ct02-25-r1.json",
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "normal_learner_ui_change": false
       }
     },
     "notebooklm_taxonomy_workflow": {
