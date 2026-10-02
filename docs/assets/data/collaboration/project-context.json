@@ -1,5 +1,5 @@
 {
-  "version": "1.0.134",
+  "version": "1.0.135",
   "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Skill Taxonomy v2 S1–S3 are academically closed. S4 CT21–CT25 family review is PASS (19/19, 0 mapping fixes, 4/4 written gaps PASS) and the combined 612-item full-bank audit is now active in NotebookLM via Draft PR #268. After S4 item-audit PASS, finalize S4 reconciliation, then run whole-project CT02–CT25 cross-batch reconciliation before any runtime/mastery/Readiness/history migration. Exam-frequency claims remain PENDING_OFFICIAL_CORPUS.",
+    "next_priority": "Skill Taxonomy v2 S1–S4 are academically closed. Whole-project CT02–CT25 cross-batch reconciliation is active in Draft PR #269: 131 family definitions, 386 legacy mappings, 20 intentional NO_FAMILY rows, 5 explicit CT24 canonical-reuse mappings, 2 machine overlap candidates. Next gate is owner-supplied NotebookLM cross-batch result. No runtime/mastery/Readiness/history migration is authorized; a PASS only clears implementation planning. Exam-frequency claims remain PENDING_OFFICIAL_CORPUS.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1381,7 +1381,7 @@
       ]
     },
     "skill_taxonomy_v2": {
-      "status": "S1_S3_ACADEMICALLY_CLOSED_S4_ITEM_AUDIT_ACTIVE",
+      "status": "S1_S4_ACADEMICALLY_CLOSED_CROSS_BATCH_RECONCILIATION_ACTIVE",
       "runtime_enabled": false,
       "mastery_readiness_migration_authorized": false,
       "exam_frequency": "PENDING_OFFICIAL_CORPUS",
@@ -1435,8 +1435,8 @@
         "proposed_written_gaps": 4,
         "review_branch": "review/skill-taxonomy-v2-s4-family-r1-20261002",
         "review_pr": 267,
-        "status": "FAMILY_REVIEW_CLOSED_COMBINED_FULL_BANK_AUDIT_ACTIVE",
-        "next_gate": "OWNER_SUPPLIED_NOTEBOOKLM_S4_COMBINED_ITEM_RESULT",
+        "status": "ACADEMICALLY_CLOSED",
+        "next_gate": "WHOLE_PROJECT_CT02_CT25_CROSS_BATCH_RECONCILIATION",
         "family_review": "NOTEBOOKLM_PASS_19_OF_19_ZERO_MAPPING_FIXES",
         "written_gap_review": "4_OF_4_PASS",
         "family_authorization": "CLEARED_FOR_S4_ITEM_AUDITS",
@@ -1448,7 +1448,33 @@
           "intentional_no_family_rows": 120,
           "clone_family_candidates": 66,
           "unique_ids": 612
-        }
+        },
+        "full_bank_review": "612/612 PASS_ZERO_REVISIONS",
+        "mapped_family_items": 492,
+        "intentional_no_family_items": 120,
+        "clone_family_candidates_pass": "66/66",
+        "boundary_checks_pass": "8/8",
+        "architecture_checks_pass": "12/12",
+        "authorization": "CLEARED_FOR_S4_CT21_25_RECONCILIATION",
+        "final_registry": "review-packets/skill-taxonomy/S4_FINAL_ACADEMIC_REGISTRY_R1.json",
+        "academic_closure": "review-packets/skill-taxonomy/S4_ACADEMIC_CLOSURE_20261002.md"
+      },
+      "cross_batch": {
+        "scope": "CT02–CT25",
+        "status": "NOTEBOOKLM_REVIEW_PENDING",
+        "branch": "review/skill-taxonomy-v2-cross-batch-ct02-25-r1-20261002",
+        "review_pr": 269,
+        "family_definitions": 131,
+        "unique_family_ids": 131,
+        "legacy_mapping_rows": 386,
+        "intentional_no_family_rows": 20,
+        "explicit_reuse_rows": 5,
+        "duplicate_family_ids": 0,
+        "duplicate_topic_legacy_keys": 0,
+        "unknown_family_mappings": 0,
+        "machine_overlap_candidates": 2,
+        "next_gate": "OWNER_SUPPLIED_NOTEBOOKLM_CROSS_BATCH_RESULT",
+        "pass_effect": "CLEARS_IMPLEMENTATION_PLANNING_ONLY_NOT_RUNTIME_ACTIVATION"
       }
     },
     "notebooklm_taxonomy_workflow": {
