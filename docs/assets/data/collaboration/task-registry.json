@@ -1,5 +1,5 @@
 {
-  "version": "1.0.150",
+  "version": "1.0.151",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -998,10 +998,19 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I3G-001",
       "title": "Skill Taxonomy v2 I3G — full CT02–CT25 shadow rollout",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.151",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "Owner production QA PASS on 2026-10-03. Live snapshot: build taxonomy-v2-i3g-ct02-25-20261003, policy_ready=true, policy_error=null, 51 recent events / 51 seen questions / 42 independent units; last capture PRO23V1__021 -> PROB-EVENT / bien-co with independent_evidence=true and first_unseen_unit. Full I3 CT02–CT25 shadow rollout is closed. Runtime coverage remains 3114 reviewed rows = 2900 active + 214 guards, 127 evidence-bearing families; registry remains 131 families."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I4-001",
+      "title": "Skill Taxonomy v2 I4 — owner/opt-in Skill Map preview",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.150",
+      "context_version": "1.0.151",
       "review_verdict": "IMPLEMENTATION_BRANCH_PRE_CI",
-      "review_notes": "Final shadow expansion through CT25. Full reviewed practice coverage: 3114 rows = 2900 active + 214 NO_FAMILY guards, 127 evidence-bearing families, max 650 topic-scoped independent units. Registry remains 131 families; four intentionally have no direct runtime evidence in the current bank: RATIO-MODEL, ID-APPLY, ID-PROOF, RATEX-INTEGER. Final CT21–CT25 batch adds 612 rows = 492 active + 120 guards. G2 remains frozen to CT04–CT07. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF."
+      "review_notes": "Read-only owner/internal preview of Taxonomy v2 shadow evidence. Renders all 131 registry families, aggregates direct evidence for 127 evidence-bearing families from the isolated store, shows independent-unit count and evidence accuracy without mastery/readiness labels, supports layer/topic/evidence filters, collapses optional layers by default, aggregates cross-topic reuse to one family card, relies on independent_units so clone repeats cannot inflate counts, and exposes legacy Practice tag statistics only in a separate disclosure. No localStorage writes, no backfill/regrade, no readiness gating."
     }
   ]
 }
