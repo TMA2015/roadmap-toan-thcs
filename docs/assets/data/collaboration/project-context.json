@@ -1,5 +1,5 @@
 {
-  "version": "1.0.140",
+  "version": "1.0.141",
   "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Skill Taxonomy v2 I2 CT02 shadow canary is LIVE on production, pending owner production QA. Exact tested HEAD 53d6e0b9... passed Roadmap PR Quality 37019025938, Skill assessment pilot QA 37019026358, and G Learning branding QA 37019026822; merged as e45ec7e4... and deployed successfully in run 37019804305. Canary scope is 12 active CT02 questions across 4 Core families + 2 NO_FAMILY guards, max 8 independent units, isolated store toan-thcs-taxonomy-v2-evidence-v1. No mastery/Readiness/UI/backfill. Do not expand canary until owner production QA closes I2.",
+    "next_priority": "Skill Taxonomy v2 I2 CT02 shadow canary is live and post-deploy artifact verification passed on gh-pages @ 3b04dce9.... Owner production QA is now the only remaining gate before I2 can be closed DONE. Do not expand canary scope before owner QA confirms policy_ready/normal-UI behavior.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1568,7 +1568,13 @@
         "normal_learner_ui_change": false,
         "history_backfill_enabled": false,
         "expansion_authorized": false,
-        "checkpoint": "review-packets/skill-taxonomy/implementation/I2_CT02_SHADOW_CANARY_RELEASE_RECEIPT.md"
+        "checkpoint": "review-packets/skill-taxonomy/implementation/I2_CT02_SHADOW_CANARY_RELEASE_RECEIPT.md",
+        "gh_pages_sha": "3b04dce9ec61211818732d6cbb6d387afe893606",
+        "deployed_artifact_verified": true,
+        "deployed_observer_verified": true,
+        "deployed_policy_verified": true,
+        "deployed_ct02_loader_verified": true,
+        "owner_production_qa": "PENDING"
       }
     },
     "notebooklm_taxonomy_workflow": {
