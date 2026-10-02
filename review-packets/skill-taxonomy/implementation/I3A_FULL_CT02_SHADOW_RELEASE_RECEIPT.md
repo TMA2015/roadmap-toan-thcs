@@ -99,3 +99,19 @@ Verified on deployed `gh-pages`:
 **LIVE_I3A_PENDING_OWNER_PRODUCTION_QA**
 
 Do not expand to CT03 or beyond until owner production QA closes this live full-CT02 gate.
+
+
+## Owner production QA
+
+**PASS**
+
+Owner verified the live I3A production rollout:
+- debug panel loaded with `policy_ready: true` and `policy_error: null`;
+- after Practice work, store reported `recent_events: 8`, `seen_questions: 8`, `independent_units: 7`;
+- last capture was `NUM02V1_100` -> `NUM-FRACTION-OPS` / `phep-tinh-phan-so`, with `independent_evidence: true` and `independent_reason: "first_unseen_unit"`;
+- normal CT02 Practice without the debug query parameter showed no Taxonomy v2 QA panel.
+
+Owner QA receipt:
+`review-packets/skill-taxonomy/implementation/I3A_FULL_CT02_SHADOW_OWNER_QA_PASS.md`
+
+Final I3A verdict: **DONE / OWNER PRODUCTION QA PASS**.
