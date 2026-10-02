@@ -1,0 +1,1516 @@
+{
+  "schema": "skill-taxonomy-v2-s1-family-consolidation-r1",
+  "status": "CHATGPT_CANDIDATE_PENDING_NOTEBOOKLM_REVIEW",
+  "as_of": "2026-10-02",
+  "scope": {
+    "topics": [
+      "CT02",
+      "CT03",
+      "CT04",
+      "CT05",
+      "CT06",
+      "CT07"
+    ],
+    "legacy_rows": 87
+  },
+  "design": {
+    "principle": "Separate learner-facing skill families from finer diagnostic subskills. Do not create a learner-facing mastery bar for every legacy tag.",
+    "learner_facing_family_count": 39,
+    "core_visible_family_count": 33,
+    "optional_family_count": 6,
+    "legacy_ids_preserved": true,
+    "diagnostic_subskills_preserved": true,
+    "runtime_enabled": false,
+    "no_history_backfill": true,
+    "no_mastery_migration": true
+  },
+  "source_locks": {
+    "s1_reconciled_blob": "ede79dc59bf3bb6512687362463bb07f1d9dbc84",
+    "s1_taxonomy_packet": "MATH-SKILL-TAXONOMY-V2-S1-R1-20261002",
+    "ct02_full_bank": "120/120 NotebookLM PASS",
+    "ct03_full_bank": "120/120 NotebookLM PASS",
+    "ct04_ct07_phase_d": "492/492 prior full-bank review closure"
+  },
+  "families": [
+    {
+      "family_id": "NUM-SETS",
+      "label_vi": "Tập hợp số và biểu diễn số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "tap-hop-so",
+        "so-huu-ti-thap-phan"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "NUM-INTEGER-OPS",
+      "label_vi": "Số nguyên và phép tính",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "so-nguyen-phep-tinh"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "NUM-ABS",
+      "label_vi": "Giá trị tuyệt đối",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "gia-tri-tuyet-doi"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "NUM-ORDER",
+      "label_vi": "Thứ tự thực hiện phép tính",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "thu-tu-phep-tinh"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "NUM-POWER",
+      "label_vi": "Lũy thừa",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "luy-thua"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "NUM-DIV-PRIME",
+      "label_vi": "Chia hết, số nguyên tố và phân tích thừa số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "dau-hieu-chia-het",
+        "so-nguyen-to",
+        "phan-tich-thua-so-nguyen-to"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "NUM-GCD-LCM",
+      "label_vi": "ƯCLN và BCNN",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "ucln",
+        "bcnn"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "NUM-FRACTION-FORM",
+      "label_vi": "Rút gọn, quy đồng và so sánh phân số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "rut-gon-phan-so",
+        "quy-dong-so-sanh-phan-so"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "NUM-FRACTION-OPS",
+      "label_vi": "Phép tính phân số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "phep-tinh-phan-so"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "NUM-PERCENT",
+      "label_vi": "Phần trăm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02",
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "phan-tram",
+        "ti-so-phan-tram"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATIO-BASIC",
+      "label_vi": "Tỉ số và ứng dụng tỉ số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "ti-so",
+        "doi-don-vi-ti-so",
+        "ti-le-ban-do"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATIO-PROP",
+      "label_vi": "Tỉ lệ thức và tìm số chưa biết",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "ti-le-thuc",
+        "tim-x-ti-le-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATIO-SPLIT",
+      "label_vi": "Dãy tỉ số bằng nhau và chia theo tỉ lệ",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "day-ti-so-bang-nhau",
+        "chia-theo-ti-le"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATIO-DIRECT",
+      "label_vi": "Đại lượng tỉ lệ thuận",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "ti-le-thuan",
+        "he-so-ti-le-thuan"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATIO-INVERSE",
+      "label_vi": "Đại lượng tỉ lệ nghịch",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "ti-le-nghich",
+        "he-so-ti-le-nghich"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATIO-DISTINGUISH",
+      "label_vi": "Phân biệt tỉ lệ thuận và tỉ lệ nghịch",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "phan-biet-thuan-nghich"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATIO-MODEL",
+      "label_vi": "Mô hình hóa bằng tỉ lệ",
+      "layer": "Entrance10",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "mo-hinh-ti-le"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "ALG-STRUCTURE",
+      "label_vi": "Cấu trúc đơn thức và đa thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-don-thuc",
+        "nhan-biet-da-thuc",
+        "he-so-bac"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "ALG-SIMPLIFY-ADD-SUB",
+      "label_vi": "Thu gọn, bỏ ngoặc và cộng trừ đa thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "hang-tu-dong-dang",
+        "thu-gon-da-thuc",
+        "bo-ngoac-dau",
+        "cong-tru-da-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "ALG-MULTIPLY",
+      "label_vi": "Nhân biểu thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "ALG-EVALUATE",
+      "label_vi": "Tính giá trị biểu thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "ALG-DIV-MONOMIAL",
+      "label_vi": "Chia đa thức cho đơn thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "ALG-MODEL-EXPR",
+      "label_vi": "Lập biểu thức từ bài toán",
+      "layer": "Entrance10",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "lap-bieu-thuc",
+        "bai-toan-thuc-te"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "ID-STRUCTURE",
+      "label_vi": "Nhận dạng và vận dụng các hằng đẳng thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT05"
+      ],
+      "diagnostic_subskills": [
+        "binh-phuong-tong",
+        "binh-phuong-hieu",
+        "hieu-hai-binh-phuong",
+        "lap-phuong-tong",
+        "lap-phuong-hieu",
+        "tong-hai-lap-phuong",
+        "hieu-hai-lap-phuong",
+        "nhan-dang-hdt",
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "ID-APPLY",
+      "label_vi": "Rút gọn và tính nhanh bằng hằng đẳng thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT05"
+      ],
+      "diagnostic_subskills": [
+        "tinh-nhanh-hdt",
+        "rut-gon-hdt"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "ID-PROOF",
+      "label_vi": "Chứng minh đẳng thức",
+      "layer": "Entrance10",
+      "topics": [
+        "CT05"
+      ],
+      "diagnostic_subskills": [
+        "chung-minh-hdt"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "FAC-COMMON",
+      "label_vi": "Phân tích bằng đặt nhân tử chung",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "nhan-tu-chung",
+        "doi-dau-nhan-tu-chung"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "FAC-GROUP",
+      "label_vi": "Phân tích bằng nhóm hạng tử",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "nhom-hang-tu"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "FAC-IDENTITY",
+      "label_vi": "Phân tích bằng hằng đẳng thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "hieu-hai-binh-phuong",
+        "binh-phuong-hoan-chinh",
+        "tong-hieu-lap-phuong"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "FAC-COMBINE",
+      "label_vi": "Phối hợp các phương pháp phân tích đa thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "phoi-hop-phuong-phap",
+        "kiem-tra-phan-tich"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "FAC-SPLIT-MIDDLE",
+      "label_vi": "Tách hạng tử giữa",
+      "layer": "Entrance10",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "tach-hang-tu-giua"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "EQ-ZERO-PRODUCT",
+      "label_vi": "Giải phương trình bằng phân tích nhân tử",
+      "layer": "Entrance10",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "giai-pt-bang-nhan-tu"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATEX-CONCEPT",
+      "label_vi": "Khái niệm và tính chất cơ bản của phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-phan-thuc",
+        "hai-phan-thuc-bang-nhau"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATEX-DOMAIN",
+      "label_vi": "Điều kiện xác định và bảo toàn điều kiện",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04",
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "dieu-kien-xac-dinh",
+        "giu-dieu-kien-ban-dau"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATEX-SIMPLIFY",
+      "label_vi": "Phân tích và rút gọn phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "doi-dau-phan-thuc",
+        "phan-tich-tu-mau",
+        "rut-gon-phan-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATEX-ADD-SUB",
+      "label_vi": "Quy đồng, cộng và trừ phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "quy-dong-mau-thuc",
+        "cong-tru-phan-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATEX-MULT-DIV",
+      "label_vi": "Nhân và chia phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "nhan-phan-thuc",
+        "chia-phan-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATEX-EVALUATE",
+      "label_vi": "Tính giá trị phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "RATEX-INTEGER",
+      "label_vi": "Tìm giá trị nguyên của biểu thức hữu tỉ",
+      "layer": "Specialized-Challenge",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "tim-gia-tri-nguyen"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "runtime_enabled": false
+    }
+  ],
+  "legacy_mappings": [
+    {
+      "topic_id": "CT02",
+      "legacy_id": "tap-hop-so",
+      "label": "Tập hợp số",
+      "family_id": "NUM-SETS",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tap-hop-so",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "so-nguyen-phep-tinh",
+      "label": "Số nguyên và phép tính",
+      "family_id": "NUM-INTEGER-OPS",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "so-nguyen-phep-tinh",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "gia-tri-tuyet-doi",
+      "label": "Giá trị tuyệt đối",
+      "family_id": "NUM-ABS",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "gia-tri-tuyet-doi",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "thu-tu-phep-tinh",
+      "label": "Thứ tự thực hiện phép tính",
+      "family_id": "NUM-ORDER",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "thu-tu-phep-tinh",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "luy-thua",
+      "label": "Lũy thừa",
+      "family_id": "NUM-POWER",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "luy-thua",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "dau-hieu-chia-het",
+      "label": "Dấu hiệu chia hết",
+      "family_id": "NUM-DIV-PRIME",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "dau-hieu-chia-het",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "so-nguyen-to",
+      "label": "Số nguyên tố – hợp số",
+      "family_id": "NUM-DIV-PRIME",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "so-nguyen-to",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "phan-tich-thua-so-nguyen-to",
+      "label": "Phân tích thừa số nguyên tố",
+      "family_id": "NUM-DIV-PRIME",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "phan-tich-thua-so-nguyen-to",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "ucln",
+      "label": "ƯCLN",
+      "family_id": "NUM-GCD-LCM",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "ucln",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "bcnn",
+      "label": "BCNN",
+      "family_id": "NUM-GCD-LCM",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "bcnn",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "rut-gon-phan-so",
+      "label": "Rút gọn phân số",
+      "family_id": "NUM-FRACTION-FORM",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "rut-gon-phan-so",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "quy-dong-so-sanh-phan-so",
+      "label": "Quy đồng – so sánh phân số",
+      "family_id": "NUM-FRACTION-FORM",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "quy-dong-so-sanh-phan-so",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "phep-tinh-phan-so",
+      "label": "Phép tính phân số",
+      "family_id": "NUM-FRACTION-OPS",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "phep-tinh-phan-so",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "so-huu-ti-thap-phan",
+      "label": "Số hữu tỉ – số thập phân",
+      "family_id": "NUM-SETS",
+      "role": "REVIEW_REQUIRED",
+      "canonical_candidate": null,
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "phan-tram",
+      "label": "Phần trăm",
+      "family_id": "NUM-PERCENT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "phan-tram",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "can-bac-hai",
+      "label": "Căn bậc hai nền tảng",
+      "family_id": null,
+      "role": "SUPPORTING_SKILL",
+      "canonical_candidate": "can-bac-hai-so-hoc",
+      "layer": "Core-Support",
+      "note": "Core-Support square-root content; excluded from normal S1 learner-facing skill families."
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "ti-so",
+      "label": "Tỉ số",
+      "family_id": "RATIO-BASIC",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "ti-so",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "doi-don-vi-ti-so",
+      "label": "Đổi đơn vị khi lập tỉ số",
+      "family_id": "RATIO-BASIC",
+      "role": "SUPPORTING_SKILL",
+      "canonical_candidate": "ti-so",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "ti-le-thuc",
+      "label": "Tỉ lệ thức",
+      "family_id": "RATIO-PROP",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "ti-le-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "tim-x-ti-le-thuc",
+      "label": "Tìm số chưa biết trong tỉ lệ thức",
+      "family_id": "RATIO-PROP",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tim-x-ti-le-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "day-ti-so-bang-nhau",
+      "label": "Dãy tỉ số bằng nhau",
+      "family_id": "RATIO-SPLIT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "day-ti-so-bang-nhau",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "chia-theo-ti-le",
+      "label": "Chia theo tỉ lệ",
+      "family_id": "RATIO-SPLIT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "chia-theo-ti-le",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "ti-le-thuan",
+      "label": "Đại lượng tỉ lệ thuận",
+      "family_id": "RATIO-DIRECT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "ti-le-thuan",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "he-so-ti-le-thuan",
+      "label": "Hệ số tỉ lệ thuận",
+      "family_id": "RATIO-DIRECT",
+      "role": "SUPPORTING_SKILL",
+      "canonical_candidate": "ti-le-thuan",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "ti-le-nghich",
+      "label": "Đại lượng tỉ lệ nghịch",
+      "family_id": "RATIO-INVERSE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "ti-le-nghich",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "he-so-ti-le-nghich",
+      "label": "Hệ số tỉ lệ nghịch",
+      "family_id": "RATIO-INVERSE",
+      "role": "SUPPORTING_SKILL",
+      "canonical_candidate": "ti-le-nghich",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "phan-biet-thuan-nghich",
+      "label": "Phân biệt tỉ lệ thuận – nghịch",
+      "family_id": "RATIO-DISTINGUISH",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "phan-biet-thuan-nghich",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "ti-le-ban-do",
+      "label": "Tỉ lệ bản đồ",
+      "family_id": "RATIO-BASIC",
+      "role": "CONTEXT",
+      "canonical_candidate": "ti-so",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "ti-so-phan-tram",
+      "label": "Tỉ số phần trăm",
+      "family_id": "NUM-PERCENT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "phan-tram",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "chuyen-dong-ti-le",
+      "label": "Tỉ lệ trong bài toán chuyển động",
+      "family_id": null,
+      "role": "CONTEXT",
+      "canonical_candidate": null,
+      "layer": "KNTT-Core",
+      "note": "Motion context only."
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "nang-suat-ti-le",
+      "label": "Tỉ lệ trong bài toán năng suất",
+      "family_id": null,
+      "role": "CONTEXT",
+      "canonical_candidate": null,
+      "layer": "KNTT-Core",
+      "note": "Productivity context only."
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "mo-hinh-ti-le",
+      "label": "Mô hình hóa bằng tỉ lệ",
+      "family_id": "RATIO-MODEL",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "mo-hinh-ti-le",
+      "layer": "Entrance10",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "nhan-biet-don-thuc",
+      "label": "Nhận biết đơn thức",
+      "family_id": "ALG-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhan-biet-don-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "nhan-biet-da-thuc",
+      "label": "Nhận biết đa thức",
+      "family_id": "ALG-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhan-biet-da-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "he-so-bac",
+      "label": "Hệ số và bậc",
+      "family_id": "ALG-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "he-so-bac",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "hang-tu-dong-dang",
+      "label": "Hạng tử đồng dạng",
+      "family_id": "ALG-SIMPLIFY-ADD-SUB",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "hang-tu-dong-dang",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "thu-gon-da-thuc",
+      "label": "Thu gọn đa thức",
+      "family_id": "ALG-SIMPLIFY-ADD-SUB",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "thu-gon-da-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "cong-tru-da-thuc",
+      "label": "Cộng – trừ đa thức",
+      "family_id": "ALG-SIMPLIFY-ADD-SUB",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "cong-tru-da-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "bo-ngoac-dau",
+      "label": "Bỏ ngoặc và dấu",
+      "family_id": "ALG-SIMPLIFY-ADD-SUB",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "bo-ngoac-dau",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "nhan-bieu-thuc",
+      "label": "Nhân biểu thức",
+      "family_id": "ALG-MULTIPLY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhan-bieu-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "tinh-phan-phoi",
+      "label": "Tính phân phối",
+      "family_id": "ALG-MULTIPLY",
+      "role": "METHOD",
+      "canonical_candidate": "nhan-bieu-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "tinh-gia-tri-bieu-thuc",
+      "label": "Tính giá trị biểu thức",
+      "family_id": "ALG-EVALUATE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tinh-gia-tri-bieu-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "dieu-kien-xac-dinh",
+      "label": "Điều kiện xác định",
+      "family_id": "RATEX-DOMAIN",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "dieu-kien-xac-dinh",
+      "layer": "Core-Support",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "bien-doi-nhieu-buoc",
+      "label": "Biến đổi nhiều bước",
+      "family_id": null,
+      "role": "COMPOSITE_TASK",
+      "canonical_candidate": null,
+      "layer": "Entrance10",
+      "note": "Composite task demand, not a standalone family."
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "lap-bieu-thuc",
+      "label": "Lập biểu thức",
+      "family_id": "ALG-MODEL-EXPR",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "lap-bieu-thuc",
+      "layer": "Entrance10",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "bai-toan-thuc-te",
+      "label": "Bài toán thực tế",
+      "family_id": "ALG-MODEL-EXPR",
+      "role": "CONTEXT",
+      "canonical_candidate": null,
+      "layer": "Entrance10",
+      "note": ""
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "chia-da-thuc-cho-don-thuc",
+      "label": "Chia đa thức cho đơn thức",
+      "family_id": "ALG-DIV-MONOMIAL",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "chia-da-thuc-cho-don-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "binh-phuong-tong",
+      "label": "Bình phương của một tổng",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "binh-phuong-tong-hieu",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "binh-phuong-hieu",
+      "label": "Bình phương của một hiệu",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "binh-phuong-tong-hieu",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "hieu-hai-binh-phuong",
+      "label": "Hiệu hai bình phương",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "hieu-hai-binh-phuong",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "lap-phuong-tong",
+      "label": "Lập phương của một tổng",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "lap-phuong-tong-hieu",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "lap-phuong-hieu",
+      "label": "Lập phương của một hiệu",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "lap-phuong-tong-hieu",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "tong-hai-lap-phuong",
+      "label": "Tổng hai lập phương",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tong-hieu-hai-lap-phuong",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "hieu-hai-lap-phuong",
+      "label": "Hiệu hai lập phương",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tong-hieu-hai-lap-phuong",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "nhan-dang-hdt",
+      "label": "Nhận dạng cấu trúc hằng đẳng thức",
+      "family_id": "ID-STRUCTURE",
+      "role": "CATEGORY",
+      "canonical_candidate": null,
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "binh-phuong-hoan-chinh",
+      "label": "Nhận dạng bình phương hoàn chỉnh",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "binh-phuong-hoan-chinh",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "nhan-dang-lap-phuong",
+      "label": "Nhận dạng cấu trúc lập phương",
+      "family_id": "ID-STRUCTURE",
+      "role": "CATEGORY",
+      "canonical_candidate": "lap-phuong-tong-hieu",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "phan-tich-hdt",
+      "label": "Phân tích biểu thức bằng hằng đẳng thức",
+      "family_id": "ID-STRUCTURE",
+      "role": "CATEGORY",
+      "canonical_candidate": null,
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "tinh-nhanh-hdt",
+      "label": "Tính nhanh bằng hằng đẳng thức",
+      "family_id": "ID-APPLY",
+      "role": "METHOD",
+      "canonical_candidate": null,
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "rut-gon-hdt",
+      "label": "Rút gọn bằng hằng đẳng thức",
+      "family_id": "ID-APPLY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "rut-gon-hdt",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "chung-minh-hdt",
+      "label": "Chứng minh đẳng thức",
+      "family_id": "ID-PROOF",
+      "role": "EXTENSION_SKILL",
+      "canonical_candidate": "chung-minh-dang-thuc",
+      "layer": "Entrance10",
+      "note": ""
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "giai-phuong-trinh-hdt",
+      "label": "Giải phương trình bằng hằng đẳng thức",
+      "family_id": null,
+      "role": "METHOD",
+      "canonical_candidate": "pt-bac-nhat",
+      "layer": "Entrance10",
+      "note": "Identity use inside equation solving; no separate family."
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "nhan-tu-chung",
+      "label": "Đặt nhân tử chung",
+      "family_id": "FAC-COMMON",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhan-tu-chung",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "doi-dau-nhan-tu-chung",
+      "label": "Đổi dấu để tạo nhân tử chung",
+      "family_id": "FAC-COMMON",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "doi-dau-nhan-tu-chung",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "hieu-hai-binh-phuong",
+      "label": "Hiệu hai bình phương",
+      "family_id": "FAC-IDENTITY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "hieu-hai-binh-phuong",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "binh-phuong-hoan-chinh",
+      "label": "Bình phương hoàn chỉnh",
+      "family_id": "FAC-IDENTITY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "binh-phuong-hoan-chinh",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "tong-hieu-lap-phuong",
+      "label": "Tổng – hiệu hai lập phương",
+      "family_id": "FAC-IDENTITY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tong-hieu-hai-lap-phuong",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "nhom-hang-tu",
+      "label": "Nhóm hạng tử",
+      "family_id": "FAC-GROUP",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhom-hang-tu",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "tach-hang-tu-giua",
+      "label": "Tách hạng tử giữa",
+      "family_id": "FAC-SPLIT-MIDDLE",
+      "role": "EXTENSION_SKILL",
+      "canonical_candidate": "tach-hang-tu-giua",
+      "layer": "Entrance10",
+      "note": ""
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "phoi-hop-phuong-phap",
+      "label": "Phối hợp nhiều phương pháp",
+      "family_id": "FAC-COMBINE",
+      "role": "COMPOSITE_TASK",
+      "canonical_candidate": "phan-tich-da-thuc-hoan-toan",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "kiem-tra-phan-tich",
+      "label": "Kiểm tra kết quả phân tích",
+      "family_id": "FAC-COMBINE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "kiem-tra-phan-tich",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "giai-pt-bang-nhan-tu",
+      "label": "Giải phương trình bằng nhân tử",
+      "family_id": "EQ-ZERO-PRODUCT",
+      "role": "EXTENSION_SKILL",
+      "canonical_candidate": "pt-tich",
+      "layer": "Entrance10",
+      "note": ""
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "ung-dung-phan-tich",
+      "label": "Vận dụng phân tích nhân tử",
+      "family_id": null,
+      "role": "CONTEXT",
+      "canonical_candidate": null,
+      "layer": "Core-Support",
+      "note": "Broad application label, not a standalone family."
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "nhan-biet-phan-thuc",
+      "label": "Nhận biết phân thức",
+      "family_id": "RATEX-CONCEPT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhan-biet-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "dieu-kien-xac-dinh",
+      "label": "Điều kiện xác định",
+      "family_id": "RATEX-DOMAIN",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "dieu-kien-xac-dinh",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "hai-phan-thuc-bang-nhau",
+      "label": "Hai phân thức bằng nhau",
+      "family_id": "RATEX-CONCEPT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "hai-phan-thuc-bang-nhau",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "doi-dau-phan-thuc",
+      "label": "Đổi dấu phân thức",
+      "family_id": "RATEX-SIMPLIFY",
+      "role": "METHOD",
+      "canonical_candidate": "rut-gon-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "phan-tich-tu-mau",
+      "label": "Phân tích tử và mẫu",
+      "family_id": "RATEX-SIMPLIFY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "phan-tich-tu-mau",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "rut-gon-phan-thuc",
+      "label": "Rút gọn phân thức",
+      "family_id": "RATEX-SIMPLIFY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "rut-gon-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "giu-dieu-kien-ban-dau",
+      "label": "Giữ điều kiện xác định ban đầu",
+      "family_id": "RATEX-DOMAIN",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "giu-dieu-kien-ban-dau",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "quy-dong-mau-thuc",
+      "label": "Quy đồng mẫu thức",
+      "family_id": "RATEX-ADD-SUB",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "quy-dong-mau-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "cong-tru-phan-thuc",
+      "label": "Cộng – trừ phân thức",
+      "family_id": "RATEX-ADD-SUB",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "cong-tru-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "nhan-phan-thuc",
+      "label": "Nhân phân thức",
+      "family_id": "RATEX-MULT-DIV",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhan-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "chia-phan-thuc",
+      "label": "Chia phân thức",
+      "family_id": "RATEX-MULT-DIV",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "chia-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "bieu-thuc-nhieu-phep-tinh",
+      "label": "Biểu thức hữu tỉ nhiều phép tính",
+      "family_id": null,
+      "role": "COMPOSITE_TASK",
+      "canonical_candidate": null,
+      "layer": "Entrance10",
+      "note": "Composite rational-expression task, not a standalone family."
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "tinh-gia-tri-phan-thuc",
+      "label": "Tính giá trị phân thức",
+      "family_id": "RATEX-EVALUATE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tinh-gia-tri-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": ""
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "tim-gia-tri-nguyen",
+      "label": "Tìm giá trị nguyên",
+      "family_id": "RATEX-INTEGER",
+      "role": "EXTENSION_SKILL",
+      "canonical_candidate": "tim-gia-tri-nguyen",
+      "layer": "Specialized-Challenge",
+      "note": ""
+    }
+  ],
+  "written_gap_family_map": {
+    "S1-WR-CT02-BCNN-001": "NUM-GCD-LCM",
+    "S1-WR-CT03-DIRECT-001": "RATIO-DIRECT",
+    "S1-WR-CT03-MODEL-001": "RATIO-MODEL",
+    "S1-WR-CT04-MODEL-001": "ALG-MODEL-EXPR",
+    "S1-WR-CT05-PROOF-001": "ID-PROOF",
+    "S1-WR-CT06-EQ-001": "EQ-ZERO-PRODUCT",
+    "S1-WR-CT06-MIDTERM-001": "FAC-SPLIT-MIDDLE",
+    "S1-WR-CT07-INTEGER-001": "RATEX-INTEGER"
+  },
+  "unresolved_review_questions": [
+    "Is NUM-DIV-PRIME too broad for one learner-facing family, or should divisibility and prime-factorization be two families?",
+    "Is NUM-GCD-LCM best as one learner-facing family while retaining UCLN and BCNN as diagnostic subskills?",
+    "Is RATIO-PROP best as one learner-facing family while retaining ti-le-thuc and tim-x as diagnostics?",
+    "Is ID-STRUCTURE appropriately one learner-facing family for the seven identities while retaining identity-specific diagnostics?",
+    "Should FAC-IDENTITY remain a separate learner-facing factorization family even though it reuses CT05 identity diagnostics?",
+    "Should RATEX-ADD-SUB and RATEX-MULT-DIV remain separate learner-facing families?",
+    "Are any current diagnostic subskills important enough to remain visible as independent learner skills?",
+    "Are any families still too narrow or too broad for actionable remediation?"
+  ]
+}
