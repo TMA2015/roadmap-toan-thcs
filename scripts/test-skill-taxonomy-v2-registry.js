@@ -155,10 +155,15 @@ assert(learnerEvidence.includes('const STORAGE_KEY = "toan-thcs-practice-v1"'), 
 
 const proposedStore = "toan-thcs-taxonomy-v2-evidence-v1";
 const registryName = "skill-taxonomy-v2-registry-r1.json";
+const authorizedI2Observer = "taxonomy-v2-evidence-observer-v1.js";
 for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))) {
   const content = fs.readFileSync(path.join(jsRoot, file), "utf8");
-  assert(!content.includes(proposedStore), `I0 must not write/read proposed Taxonomy v2 store from JS: ${file}`);
-  assert(!content.includes(registryName), `I0 must not load Taxonomy v2 registry from runtime JS: ${file}`);
+  if (file === authorizedI2Observer) {
+    assert(content.includes(proposedStore), "authorized I2 observer must use the isolated Taxonomy v2 store");
+  } else {
+    assert(!content.includes(proposedStore), `only the authorized I2 observer may access the Taxonomy v2 store: ${file}`);
+  }
+  assert(!content.includes(registryName), `runtime JS must not load the I0 registry directly: ${file}`);
 }
 
 console.log("PASS Taxonomy v2 I0 registry", JSON.stringify({

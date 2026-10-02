@@ -996,6 +996,21 @@
         // Intentionally ignore canonical observer failures in the Practice lane.
       }
 
+      // Skill Taxonomy v2 I2 canary is a separate shadow lane. It runs only
+      // after the legacy Practice write and is independently fail-open.
+      try {
+        window.RoadmapTaxonomyV2Observer?.captureAttempt?.({
+          question,
+          correct,
+          hintsUsed,
+          fullSolutionViewed,
+          selectedIndex,
+          practiceMode: this.mode
+        });
+      } catch (_) {
+        // Intentionally ignore Taxonomy v2 observer failures in the Practice lane.
+      }
+
       questionSkills(question).forEach((skill) => this.closePendingRecoveryOnTarget(skill));
     }
 

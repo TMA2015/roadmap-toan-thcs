@@ -145,10 +145,21 @@ assert(g2?.runtime_rules?.mastery_threshold === null, "G2 mastery threshold must
 assert(g2?.runtime_rules?.core_readiness_credit === false, "G2 Readiness credit must remain off");
 
 const proposedStore = "toan-thcs-taxonomy-v2-evidence-v1";
+const authorizedI2Observer = "taxonomy-v2-evidence-observer-v1.js";
 for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))) {
   const content = fs.readFileSync(path.join(jsRoot, file), "utf8");
-  assert(!content.includes(proposedStore), `I1 runtime JS must not access proposed Taxonomy v2 store: ${file}`);
-  assert(!content.includes("taxonomy-v2-runtime/"), `I1 runtime JS must not load compiled policy files: ${file}`);
+  if (file === authorizedI2Observer) {
+    assert(content.includes(proposedStore), "authorized I2 observer must use the isolated Taxonomy v2 store");
+    assert(content.includes("taxonomy-v2-runtime/i2-canary-ct02-r1.json"),
+      "authorized I2 observer must load only the bounded CT02 canary policy");
+    assert(!content.includes("taxonomy-v2-runtime/index-r1.json"),
+      "I2 observer must not load the full I1 index");
+    assert(!content.includes("taxonomy-v2-runtime/ct02-r1.json"),
+      "I2 observer must not load the full CT02 I1 policy");
+  } else {
+    assert(!content.includes(proposedStore), `only the authorized I2 observer may access the Taxonomy v2 store: ${file}`);
+    assert(!content.includes("taxonomy-v2-runtime/"), `only the authorized I2 observer may load a Taxonomy v2 runtime path: ${file}`);
+  }
 }
 
 console.log("PASS Taxonomy v2 I1 topic policies", JSON.stringify({
