@@ -29,7 +29,8 @@ NotebookLM selected sources:
 7. `CT19_OVERLAY_SOURCE.md`
 8. `CT20_OVERLAY_SOURCE.md`
 9. `09_NOTEBOOKLM_COMBINED_REVIEW_GUIDE.md`
-10–11. the **2 permanent baseline Sources already present in the Notebook**
+10. `00_NOTEBOOK_MATH_PERMANENT_v1.1.md`
+11. `01_TOAN_THCS_MASTER_PLAN_v1.1.md`
 
 Total selected Sources: **11 = 2 permanent baseline + 9 S3 batch Sources**.
 
@@ -39,3 +40,5 @@ Prompt:
 If NotebookLM chat output risks truncation, return a Markdown artifact with the exact machine-checkable output contract.
 
 No runtime, Readiness/mastery, history backfill or learner-progress migration is authorized.
+
+The three `gemini-catalogue-*` sources shown in the Notebook are intentionally **unselected** for this review.
