@@ -984,6 +984,15 @@
       "context_version": "1.0.149",
       "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
       "review_notes": "Owner QA PASS: I3E live build ready, no policy error, 33 events / 33 seen / 29 independent units; FUN10V1_004 mapped to FUNC-BASIC / tinh-gia-tri-ham as first_unseen_unit. S2 CT08–CT12 accepted; G2 stays frozen to CT04–CT07."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I3F-001",
+      "title": "Skill Taxonomy v2 I3F — CT13–CT20 shadow expansion",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.149",
+      "review_verdict": "IMPLEMENTATION_BRANCH_PRE_CI",
+      "review_notes": "Expand Taxonomy v2 shadow capture through CT20 using the academically closed S3 batch. Cumulative scope 2502 rows: 2408 active, 94 NO_FAMILY guards, 108 families, max 543 independent units. S3 adds 1146 rows: 1136 active + 10 intentional guards across 44 families. G2 remains frozen to CT04–CT07; CT21+ remains outside this gate."
     }
   ]
 }
