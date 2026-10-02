@@ -16,7 +16,7 @@ Packet ID: `MATH-SKILL-S3-CT13-20-COMBINED-R1-20261002`
 - Clone-family candidates: **165**
 - Machine preflight: exact IDs, no missing primary, no invalid no-family credit, no duplicate clone membership, no runtime/Readiness/legacy changes.
 
-## Temporary Sources to select
+## Selected Sources for this review
 - `CT13_OVERLAY_SOURCE.md`
 - `CT14_OVERLAY_SOURCE.md`
 - `CT15_OVERLAY_SOURCE.md`
@@ -26,6 +26,9 @@ Packet ID: `MATH-SKILL-S3-CT13-20-COMBINED-R1-20261002`
 - `CT19_OVERLAY_SOURCE.md`
 - `CT20_OVERLAY_SOURCE.md`
 - this review guide
+- plus the **2 permanent baseline Sources already present in this Notebook**
+
+Total selected Sources for this review: **11 = 2 permanent baseline + 9 S3 batch Sources**.
 
 JSON overlays remain GitHub provenance/machine-check data only and are not uploaded to NotebookLM.
 
