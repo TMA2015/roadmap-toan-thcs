@@ -150,8 +150,8 @@ for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))
   const content = fs.readFileSync(path.join(jsRoot, file), "utf8");
   if (file === authorizedI2Observer) {
     assert(content.includes(proposedStore), "authorized I2 observer must use the isolated Taxonomy v2 store");
-    assert(content.includes("taxonomy-v2-runtime/i3c-ct02-04-r1.json"),
-      "authorized Taxonomy v2 observer must load only the bounded I3C CT02-CT04 shadow policy");
+    assert(content.includes("taxonomy-v2-runtime/i3d-ct02-07-r1.json"),
+      "authorized Taxonomy v2 observer must load only the bounded I3D CT02-CT07 shadow policy");
     assert(!content.includes("taxonomy-v2-runtime/index-r1.json"),
       "Taxonomy v2 observer must not load the full I1 index");
     assert(!content.includes('new URL("../data/curriculum/taxonomy-v2-runtime/ct02-r1.json"'),
