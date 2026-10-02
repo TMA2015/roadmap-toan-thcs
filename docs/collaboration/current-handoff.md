@@ -1,13 +1,12 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 CT02–CT25 ACADEMIC PROGRAM CLOSED; IMPLEMENTATION PLANNING AUTHORIZED.**  
-> S1 CT02–CT07: **39 families**, reviewed question basis **732**.  
-> S2 CT08–CT12: **29 families; 624/624 PASS**.  
-> S3 CT13–CT20: **44 families; 1,146/1,146 PASS; 165/165 clone candidates PASS**.  
-> S4 CT21–CT25: **19 new families; 612/612 PASS; 66/66 clone candidates PASS**.  
-> Whole-project reconciliation: **131/131 family definitions PASS; 386/386 mappings PASS; 5/5 CT24 canonical reuse PASS; 20 intentional NO_FAMILY PASS; 2/2 contextual overlaps PASS; 0 fixes; ARCH_1..16 PASS**.  
-> Authorization: `CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING`.  
-> **Runtime/mastery/Readiness/history migration is still NOT authorized.** Next phase is architecture/implementation planning with the existing Canonical Evidence G2 boundary protected.
+> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 ACADEMIC PROGRAM CLOSED; I0 DURABLE REGISTRY DONE.**  
+> Academic taxonomy: **131/131 family definitions PASS; 386/386 mappings PASS; 0 cross-batch fixes**.  
+> Reviewed Practice basis: **3,114 questions** across CT02–CT25.  
+> I0 registry is merged to `main`: **131 families / 386 mappings / 20 intentional NO_FAMILY / 14 total CROSS_TOPIC_REUSE**, including the **5 reviewed CT24 canonical reuse mappings**.  
+> Exact I0 tested HEAD `ae8b7264fedbbe62e16b7d2d6a98634341554aa1` passed Roadmap PR Quality run **37013490363** and merged as `a8b619a2b1ed5d572f615cd7178e0906978eaa6a`.  
+> **Runtime/mastery/Readiness/history migration remains OFF. Canonical Evidence G2 is unchanged.**  
+> Next planned gate: **I1 topic-local CT02–CT25 item-policy compilation**, data-only and not yet started.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
@@ -119,25 +118,38 @@
 - Academic closure receipt: `review-packets/skill-taxonomy/TAXONOMY_V2_ACADEMIC_CLOSURE_20261002.md`.
 - This closes the **academic taxonomy design**, not runtime activation.
 
-### Skill Taxonomy v2 implementation planning — ACTIVE
-- Planning task: `MATH-SKILL-TAXONOMY-V2-IMPLEMENTATION-PLAN-001`.
-- Draft architecture PR: **#270** (`plan/skill-taxonomy-v2-implementation-r1-20261002`).
-- Plan R1: `docs/roadmap/skill-taxonomy-v2-implementation-plan-r1.md`.
-- Registry schema candidate: `docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.schema.json`.
-- Proposed new shadow store: `toan-thcs-taxonomy-v2-evidence-v1`; existing `toan-thcs-canonical-evidence-v2` remains untouched.
-- Proposed runtime policy layout: topic-sharded CT02–CT25; do not ship a single giant 3,114-row browser payload.
-- First coding gate after plan approval: **I0 registry build/validation only**; no learner UI and no learner-data write.
-- Protected production boundary: Canonical Evidence G2 and existing learner/history stores.
-- Planning must define:
-  1. durable 131-family registry + 386 mapping lookup;
-  2. separation of family IDs from diagnostic subskills and legacy tags;
-  3. evidence-event → family aggregation without double counting clone-equivalent items;
-  4. learner-facing Skill Map v2;
-  5. Core Readiness policy with optional/Bridge/Challenge non-gating;
-  6. written-evidence handling where MCQ is partial only;
-  7. explicit no-backfill/no-regrade behavior for old learner history;
-  8. canary, regression, rollback, owner-QA and release gates.
-- **No code/runtime migration may be treated as authorized merely because planning is authorized.**
+### Skill Taxonomy v2 implementation — I0 DONE
+- Approved plan R1: `docs/roadmap/skill-taxonomy-v2-implementation-plan-r1.md`.
+- I0 PR: **#271**.
+- Exact tested HEAD: `ae8b7264fedbbe62e16b7d2d6a98634341554aa1`.
+- Roadmap PR Quality: run **37013490363 — SUCCESS**.
+- Squash merge to main: `a8b619a2b1ed5d572f615cd7178e0906978eaa6a`.
+- Durable registry:
+  - path: `docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json`
+  - blob: `c2f2e5b8d78a58d874f88524861326223fdbdf45`
+  - **131** family definitions / **131 unique IDs**
+  - **386** legacy mapping rows
+  - **20** intentional NO_FAMILY mappings
+  - **14** total CROSS_TOPIC_REUSE mappings across S1–S4
+  - exactly **5** explicit CT24 canonical-reuse mappings
+  - reviewed Practice basis: **3,114 questions**
+- I0 QA specifically locks:
+  - S1–S4 source registry blob SHAs;
+  - the two approved contextual diagnostic-subskill overlaps;
+  - legacy store `toan-thcs-practice-v1`;
+  - Canonical Evidence G2 store `toan-thcs-canonical-evidence-v2`;
+  - G2 boundary **101 rows / 7 skills / CĐ04–07**;
+  - no Taxonomy v2 runtime JS reads/writes the proposed new store.
+- Source-preservation edge case fixed during CI: CT20 `nhan-dang-cong-cu` remains METHOD / NO_FAMILY with `layer: null`; no layer was invented.
+- Technical receipt: `review-packets/skill-taxonomy/implementation/I0_DURABLE_REGISTRY_TECHNICAL_CHECKPOINT.md`.
+- **No learner UI change. No learner-data write. No backfill/regrade. No mastery/Readiness activation.**
+
+### Skill Taxonomy v2 — next planned gate I1
+- Task: `MATH-SKILL-TAXONOMY-V2-I1-001`.
+- Status: **READY / NOT STARTED**.
+- Scope: compile the **3,114 reviewed Practice questions** into topic-local CT02–CT25 policy files with source locks.
+- I1 remains **data-only**: no observer, no learner UI, no mastery/Readiness, no migration/backfill/regrade.
+- Existing Canonical Evidence G2 remains protected and unchanged.
 ## Written Library Expansion B7 — CLOSED DONE / owner QA PASS (02/10/2026)
 
 - Task: `MATH-WRITTEN-LIBRARY-EXPANSION-B7-001`.
