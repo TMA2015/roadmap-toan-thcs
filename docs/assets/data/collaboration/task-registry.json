@@ -1,5 +1,5 @@
 {
-  "version": "1.0.146",
+  "version": "1.0.147",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-02",
   "statuses": [
@@ -962,10 +962,19 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I3C-001",
       "title": "Skill Taxonomy v2 I3C — CT04 shadow expansion",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.147",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "Owner production QA PASS on 2026-10-02. Live snapshot: build taxonomy-v2-i3c-ct02-04-20261002, policy_ready=true, policy_error=null, 21 recent events / 21 seen questions / 19 independent units; last capture ALG04V2_053 -> ALG-MULTIPLY / nhan-bieu-thuc with independent_evidence=true and first_unseen_unit. CT04 dual-shadow coexistence with Canonical Evidence G2 accepted. No mastery, Readiness, backfill/regrade or learner-facing Taxonomy v2 UI."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I3D-001",
+      "title": "Skill Taxonomy v2 I3D — CT05–CT07 shadow expansion",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.146",
+      "context_version": "1.0.147",
       "review_verdict": "IMPLEMENTATION_BRANCH_PRE_CI",
-      "review_notes": "Controlled expansion from CT02+CT03 to CT02+CT03+CT04 only. Planned scope: 372 rows = 341 family-linked active + 31 NO_FAMILY guards, 23 unique families, max 177 topic-scoped independent units. CT04 contributes 132 rows = 120 active + 12 guards across 7 reviewed families. Existing Canonical Evidence G2 on CT04–07 remains separate and is explicitly regression-tested for dual-shadow coexistence. CT05+ remains outside I3C. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF."
+      "review_notes": "Controlled expansion from CT02–CT04 to CT02–CT07 in one batch, deliberately completing the whole Canonical Evidence G2 overlap band after CT04 proved dual-shadow coexistence. Scope: 732 rows = 648 active + 84 NO_FAMILY guards, 35 unique families, max 240 topic-scoped independent units. New topics: CT05 120=91+29, CT06 120=104+16, CT07 120=112+8. CT08+ remains outside I3D. Mastery, Readiness, backfill/regrade and learner-facing Taxonomy v2 UI remain OFF."
     }
   ]
 }
