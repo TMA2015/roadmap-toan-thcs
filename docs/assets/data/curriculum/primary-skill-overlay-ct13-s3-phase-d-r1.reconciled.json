@@ -1,0 +1,3776 @@
+{
+  "schema": "primary-skill-overlay-ct13-s3-phase-d-r1",
+  "status": "NOTEBOOKLM_PASS_CLEARED_FOR_CT13_S3_RECONCILIATION",
+  "as_of": "2026-10-02",
+  "topic": "13-goc-va-duong-thang",
+  "source_manifest": "docs/assets/data/practice/13-goc-va-duong-thang-v1.manifest.json",
+  "source_manifest_blob": "4b6a44701d6fe413e333349a799aaa7911390b70",
+  "source_files": {
+    "13-goc-va-duong-thang-v1-01.json": {
+      "blob": "73ec4573662c38ce66978d0f8929445e66b8fc2d",
+      "question_count": 30
+    },
+    "13-goc-va-duong-thang-v1-02.json": {
+      "blob": "83ec2afdaf6db290e33fdd21e8a16f3668483dca",
+      "question_count": 30
+    },
+    "13-goc-va-duong-thang-v1-03.json": {
+      "blob": "ed4317db4a0c0466a18d7a9a39ee44e8a2df39af",
+      "question_count": 30
+    },
+    "13-goc-va-duong-thang-v1-04.json": {
+      "blob": "bb4ed15ef7a06021587511437734ee6d0ae2539b",
+      "question_count": 30
+    },
+    "13-goc-va-duong-thang-v1-05.json": {
+      "blob": "2b09b1cd610d7b2203e6cd311092c00b1a953f82",
+      "question_count": 36
+    }
+  },
+  "academic_basis": {
+    "s3_family_blob": "7c817ecc064873135ae05b40ded30661bff6434a"
+  },
+  "rules": {
+    "one_primary_max_per_mcq": true,
+    "learner_family_broader_than_diagnostic": true,
+    "proof_mcq_partial_only": true,
+    "no_family_method_formative_only": true,
+    "auto_clone_key": "primary diagnostic + exact question type",
+    "runtime_enabled": false,
+    "no_history_backfill": true
+  },
+  "summary": {
+    "questions": 156,
+    "mapped_primary": 156,
+    "formative_only_without_family": 0,
+    "primary_counts": {
+      "diem-thuoc-duong": 6,
+      "tia-doi": 6,
+      "trung-diem": 8,
+      "phan-loai-goc": 10,
+      "goc-phu-bu": 12,
+      "tia-phan-giac": 12,
+      "goc-doi-dinh": 12,
+      "duong-vuong-goc": 8,
+      "goc-so-le-trong": 8,
+      "goc-dong-vi": 8,
+      "goc-trong-cung-phia": 8,
+      "tinh-chat-song-song": 7,
+      "dau-hieu-song-song": 7,
+      "vuong-goc-song-song": 8,
+      "diem-nam-giua": 4,
+      "tia": 4,
+      "doan-thang-do-dai": 4,
+      "khai-niem-goc": 4,
+      "do-goc": 4,
+      "nhan-dang-goc-dac-biet": 4,
+      "tien-de-euclid": 4,
+      "gia-thiet-ket-luan": 4,
+      "lap-luan-chung-minh-ngan": 4
+    },
+    "family_counts": {
+      "GEO-LINE-FOUND": 32,
+      "GEO-ANGLE-REL": 66,
+      "GEO-TRANSVERSAL": 24,
+      "GEO-PARALLEL": 26,
+      "GEO-PROOF-BASIC": 8
+    },
+    "clone_families": [
+      {
+        "id": "GEO13-AUTO-001",
+        "key": "diem-thuoc-duong__ky-hieu-thuoc",
+        "count": 6,
+        "ids": [
+          "GEO13V1_001",
+          "GEO13V1_002",
+          "GEO13V1_003",
+          "GEO13V1_004",
+          "GEO13V1_005",
+          "GEO13V1_006"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-002",
+        "key": "tia-doi__nhan-biet-tia-doi",
+        "count": 6,
+        "ids": [
+          "GEO13V1_007",
+          "GEO13V1_008",
+          "GEO13V1_009",
+          "GEO13V1_010",
+          "GEO13V1_011",
+          "GEO13V1_012"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-003",
+        "key": "trung-diem__trung-diem",
+        "count": 8,
+        "ids": [
+          "GEO13V1_013",
+          "GEO13V1_014",
+          "GEO13V1_015",
+          "GEO13V1_016",
+          "GEO13V1_017",
+          "GEO13V1_018",
+          "GEO13V1_019",
+          "GEO13V1_020"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-004",
+        "key": "phan-loai-goc__phan-loai-goc",
+        "count": 10,
+        "ids": [
+          "GEO13V1_021",
+          "GEO13V1_022",
+          "GEO13V1_023",
+          "GEO13V1_024",
+          "GEO13V1_025",
+          "GEO13V1_026",
+          "GEO13V1_027",
+          "GEO13V1_028",
+          "GEO13V1_029",
+          "GEO13V1_030"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-005",
+        "key": "goc-phu-bu__tinh-goc-phu-bu",
+        "count": 12,
+        "ids": [
+          "GEO13V1_031",
+          "GEO13V1_032",
+          "GEO13V1_033",
+          "GEO13V1_034",
+          "GEO13V1_035",
+          "GEO13V1_036",
+          "GEO13V1_037",
+          "GEO13V1_038",
+          "GEO13V1_039",
+          "GEO13V1_040",
+          "GEO13V1_041",
+          "GEO13V1_042"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-006",
+        "key": "tia-phan-giac__tinh-goc-phan-giac",
+        "count": 12,
+        "ids": [
+          "GEO13V1_043",
+          "GEO13V1_044",
+          "GEO13V1_045",
+          "GEO13V1_046",
+          "GEO13V1_047",
+          "GEO13V1_048",
+          "GEO13V1_049",
+          "GEO13V1_050",
+          "GEO13V1_051",
+          "GEO13V1_052",
+          "GEO13V1_053",
+          "GEO13V1_054"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-007",
+        "key": "goc-doi-dinh__goc-doi-dinh-ke-bu",
+        "count": 12,
+        "ids": [
+          "GEO13V1_055",
+          "GEO13V1_056",
+          "GEO13V1_057",
+          "GEO13V1_058",
+          "GEO13V1_059",
+          "GEO13V1_060",
+          "GEO13V1_061",
+          "GEO13V1_062",
+          "GEO13V1_063",
+          "GEO13V1_064",
+          "GEO13V1_065",
+          "GEO13V1_066"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-008",
+        "key": "duong-vuong-goc__nhan-biet-vuong-goc",
+        "count": 8,
+        "ids": [
+          "GEO13V1_067",
+          "GEO13V1_068",
+          "GEO13V1_069",
+          "GEO13V1_070",
+          "GEO13V1_071",
+          "GEO13V1_072",
+          "GEO13V1_073",
+          "GEO13V1_074"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-009",
+        "key": "goc-so-le-trong__goc-goc-so-le-trong",
+        "count": 8,
+        "ids": [
+          "GEO13V1_075",
+          "GEO13V1_076",
+          "GEO13V1_077",
+          "GEO13V1_078",
+          "GEO13V1_079",
+          "GEO13V1_080",
+          "GEO13V1_081",
+          "GEO13V1_082"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-010",
+        "key": "goc-dong-vi__goc-goc-dong-vi",
+        "count": 8,
+        "ids": [
+          "GEO13V1_083",
+          "GEO13V1_084",
+          "GEO13V1_085",
+          "GEO13V1_086",
+          "GEO13V1_087",
+          "GEO13V1_088",
+          "GEO13V1_089",
+          "GEO13V1_090"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-011",
+        "key": "goc-trong-cung-phia__goc-goc-trong-cung-phia",
+        "count": 8,
+        "ids": [
+          "GEO13V1_091",
+          "GEO13V1_092",
+          "GEO13V1_093",
+          "GEO13V1_094",
+          "GEO13V1_095",
+          "GEO13V1_096",
+          "GEO13V1_097",
+          "GEO13V1_098"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-012",
+        "key": "tinh-chat-song-song__suy-tu-song-song",
+        "count": 7,
+        "ids": [
+          "GEO13V1_099",
+          "GEO13V1_100",
+          "GEO13V1_101",
+          "GEO13V1_102",
+          "GEO13V1_103",
+          "GEO13V1_104",
+          "GEO13V1_105"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-013",
+        "key": "dau-hieu-song-song__chung-minh-song-song",
+        "count": 7,
+        "ids": [
+          "GEO13V1_106",
+          "GEO13V1_107",
+          "GEO13V1_108",
+          "GEO13V1_109",
+          "GEO13V1_110",
+          "GEO13V1_111",
+          "GEO13V1_112"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-014",
+        "key": "vuong-goc-song-song__vuong-goc-song-song",
+        "count": 8,
+        "ids": [
+          "GEO13V1_113",
+          "GEO13V1_114",
+          "GEO13V1_115",
+          "GEO13V1_116",
+          "GEO13V1_117",
+          "GEO13V1_118",
+          "GEO13V1_119",
+          "GEO13V1_120"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-015",
+        "key": "diem-nam-giua__diem-nam-giua",
+        "count": 4,
+        "ids": [
+          "GEO13V1_121",
+          "GEO13V1_122",
+          "GEO13V1_123",
+          "GEO13V1_124"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-016",
+        "key": "tia__tia",
+        "count": 4,
+        "ids": [
+          "GEO13V1_125",
+          "GEO13V1_126",
+          "GEO13V1_127",
+          "GEO13V1_128"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-017",
+        "key": "doan-thang-do-dai__doan-thang-do-dai",
+        "count": 4,
+        "ids": [
+          "GEO13V1_129",
+          "GEO13V1_130",
+          "GEO13V1_131",
+          "GEO13V1_132"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-018",
+        "key": "khai-niem-goc__khai-niem-goc",
+        "count": 4,
+        "ids": [
+          "GEO13V1_133",
+          "GEO13V1_134",
+          "GEO13V1_135",
+          "GEO13V1_136"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-019",
+        "key": "do-goc__do-goc",
+        "count": 4,
+        "ids": [
+          "GEO13V1_137",
+          "GEO13V1_138",
+          "GEO13V1_139",
+          "GEO13V1_140"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-020",
+        "key": "nhan-dang-goc-dac-biet__nhan-dang-goc-dac-biet",
+        "count": 4,
+        "ids": [
+          "GEO13V1_141",
+          "GEO13V1_142",
+          "GEO13V1_143",
+          "GEO13V1_144"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-021",
+        "key": "tien-de-euclid__tien-de-euclid",
+        "count": 4,
+        "ids": [
+          "GEO13V1_145",
+          "GEO13V1_146",
+          "GEO13V1_147",
+          "GEO13V1_148"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-022",
+        "key": "gia-thiet-ket-luan__gia-thiet-ket-luan",
+        "count": 4,
+        "ids": [
+          "GEO13V1_149",
+          "GEO13V1_150",
+          "GEO13V1_151",
+          "GEO13V1_152"
+        ]
+      },
+      {
+        "id": "GEO13-AUTO-023",
+        "key": "lap-luan-chung-minh-ngan__lap-luan-chung-minh-ngan",
+        "count": 4,
+        "ids": [
+          "GEO13V1_153",
+          "GEO13V1_154",
+          "GEO13V1_155",
+          "GEO13V1_156"
+        ]
+      }
+    ],
+    "runtime_enabled": 0
+  },
+  "items": [
+    {
+      "question_id": "GEO13V1_001",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "diem-thuoc-duong"
+      ],
+      "canonical_assessed_skill_candidate": "diem-thuoc-duong",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Biết điểm A nằm trên đường thẳng d. Ký hiệu nào đúng?",
+      "correct_option": "\\(A \\in d\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ky-hieu-thuoc"
+    },
+    {
+      "question_id": "GEO13V1_002",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "diem-thuoc-duong"
+      ],
+      "canonical_assessed_skill_candidate": "diem-thuoc-duong",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Biết điểm B không nằm trên đường thẳng m. Ký hiệu nào đúng?",
+      "correct_option": "\\(B \\notin m\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ky-hieu-thuoc"
+    },
+    {
+      "question_id": "GEO13V1_003",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "diem-thuoc-duong"
+      ],
+      "canonical_assessed_skill_candidate": "diem-thuoc-duong",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Biết điểm C nằm trên đường thẳng n. Ký hiệu nào đúng?",
+      "correct_option": "\\(C \\in n\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ky-hieu-thuoc"
+    },
+    {
+      "question_id": "GEO13V1_004",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "diem-thuoc-duong"
+      ],
+      "canonical_assessed_skill_candidate": "diem-thuoc-duong",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Biết điểm P không nằm trên đường thẳng a. Ký hiệu nào đúng?",
+      "correct_option": "\\(P \\notin a\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ky-hieu-thuoc"
+    },
+    {
+      "question_id": "GEO13V1_005",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "diem-thuoc-duong"
+      ],
+      "canonical_assessed_skill_candidate": "diem-thuoc-duong",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biết điểm Q nằm trên đường thẳng b. Ký hiệu nào đúng?",
+      "correct_option": "\\(Q \\in b\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ky-hieu-thuoc"
+    },
+    {
+      "question_id": "GEO13V1_006",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "diem-thuoc-duong"
+      ],
+      "canonical_assessed_skill_candidate": "diem-thuoc-duong",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biết điểm M không nằm trên đường thẳng c. Ký hiệu nào đúng?",
+      "correct_option": "\\(M \\notin c\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ky-hieu-thuoc"
+    },
+    {
+      "question_id": "GEO13V1_007",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "tia-doi"
+      ],
+      "canonical_assessed_skill_candidate": "tia-doi",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai tia \\(OA\\) và \\(OB\\) là hai tia đối nhau. Khẳng định nào bắt buộc đúng?",
+      "correct_option": "Hai tia cùng gốc, cùng nằm trên một đường thẳng và ngược hướng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-tia-doi"
+    },
+    {
+      "question_id": "GEO13V1_008",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "tia-doi"
+      ],
+      "canonical_assessed_skill_candidate": "tia-doi",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai tia \\(OM\\) và \\(ON\\) là hai tia đối nhau. Khẳng định nào bắt buộc đúng?",
+      "correct_option": "Hai tia cùng gốc, cùng nằm trên một đường thẳng và ngược hướng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-tia-doi"
+    },
+    {
+      "question_id": "GEO13V1_009",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "tia-doi"
+      ],
+      "canonical_assessed_skill_candidate": "tia-doi",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai tia \\(OP\\) và \\(OQ\\) là hai tia đối nhau. Khẳng định nào bắt buộc đúng?",
+      "correct_option": "Hai tia cùng gốc, cùng nằm trên một đường thẳng và ngược hướng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-tia-doi"
+    },
+    {
+      "question_id": "GEO13V1_010",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "tia-doi"
+      ],
+      "canonical_assessed_skill_candidate": "tia-doi",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai tia \\(OC\\) và \\(OD\\) là hai tia đối nhau. Khẳng định nào bắt buộc đúng?",
+      "correct_option": "Hai tia cùng gốc, cùng nằm trên một đường thẳng và ngược hướng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-tia-doi"
+    },
+    {
+      "question_id": "GEO13V1_011",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "tia-doi"
+      ],
+      "canonical_assessed_skill_candidate": "tia-doi",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tia \\(OE\\) và \\(OF\\) là hai tia đối nhau. Khẳng định nào bắt buộc đúng?",
+      "correct_option": "Hai tia cùng gốc, cùng nằm trên một đường thẳng và ngược hướng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-tia-doi"
+    },
+    {
+      "question_id": "GEO13V1_012",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "tia-doi"
+      ],
+      "canonical_assessed_skill_candidate": "tia-doi",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai tia \\(OX\\) và \\(OY\\) là hai tia đối nhau. Khẳng định nào bắt buộc đúng?",
+      "correct_option": "Hai tia cùng gốc, cùng nằm trên một đường thẳng và ngược hướng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-tia-doi"
+    },
+    {
+      "question_id": "GEO13V1_013",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "trung-diem"
+      ],
+      "canonical_assessed_skill_candidate": "trung-diem",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Điểm \\(M\\) nằm giữa \\(A,B\\), \\(AB=10\\) cm và \\(AM=5\\) cm. Kết luận nào đúng?",
+      "correct_option": "M là trung điểm của AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trung-diem"
+    },
+    {
+      "question_id": "GEO13V1_014",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "trung-diem"
+      ],
+      "canonical_assessed_skill_candidate": "trung-diem",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "\\(M\\) là trung điểm của \\(AB\\) và \\(AB=14\\) cm. Độ dài \\(AM\\) bằng bao nhiêu?",
+      "correct_option": "\\(7\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trung-diem"
+    },
+    {
+      "question_id": "GEO13V1_015",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "trung-diem"
+      ],
+      "canonical_assessed_skill_candidate": "trung-diem",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Điểm \\(M\\) nằm giữa \\(A,B\\), \\(AB=18\\) cm và \\(AM=9\\) cm. Kết luận nào đúng?",
+      "correct_option": "M là trung điểm của AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trung-diem"
+    },
+    {
+      "question_id": "GEO13V1_016",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "trung-diem"
+      ],
+      "canonical_assessed_skill_candidate": "trung-diem",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "\\(M\\) là trung điểm của \\(AB\\) và \\(AB=22\\) cm. Độ dài \\(AM\\) bằng bao nhiêu?",
+      "correct_option": "\\(11\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trung-diem"
+    },
+    {
+      "question_id": "GEO13V1_017",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "trung-diem"
+      ],
+      "canonical_assessed_skill_candidate": "trung-diem",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Điểm \\(M\\) nằm giữa \\(A,B\\), \\(AB=26\\) cm và \\(AM=13\\) cm. Kết luận nào đúng?",
+      "correct_option": "M là trung điểm của AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trung-diem"
+    },
+    {
+      "question_id": "GEO13V1_018",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "trung-diem"
+      ],
+      "canonical_assessed_skill_candidate": "trung-diem",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "\\(M\\) là trung điểm của \\(AB\\) và \\(AB=30\\) cm. Độ dài \\(AM\\) bằng bao nhiêu?",
+      "correct_option": "\\(15\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trung-diem"
+    },
+    {
+      "question_id": "GEO13V1_019",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "trung-diem"
+      ],
+      "canonical_assessed_skill_candidate": "trung-diem",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Điểm \\(M\\) nằm giữa \\(A,B\\), \\(AB=34\\) cm và \\(AM=17\\) cm. Kết luận nào đúng?",
+      "correct_option": "M là trung điểm của AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trung-diem"
+    },
+    {
+      "question_id": "GEO13V1_020",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "trung-diem"
+      ],
+      "canonical_assessed_skill_candidate": "trung-diem",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "\\(M\\) là trung điểm của \\(AB\\) và \\(AB=38\\) cm. Độ dài \\(AM\\) bằng bao nhiêu?",
+      "correct_option": "\\(19\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trung-diem"
+    },
+    {
+      "question_id": "GEO13V1_021",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "phan-loai-goc"
+      ],
+      "canonical_assessed_skill_candidate": "phan-loai-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Góc có số đo \\(25^\\circ\\) là loại góc nào?",
+      "correct_option": "góc nhọn",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-loai-goc"
+    },
+    {
+      "question_id": "GEO13V1_022",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "phan-loai-goc"
+      ],
+      "canonical_assessed_skill_candidate": "phan-loai-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Góc có số đo \\(40^\\circ\\) là loại góc nào?",
+      "correct_option": "góc nhọn",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-loai-goc"
+    },
+    {
+      "question_id": "GEO13V1_023",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "phan-loai-goc"
+      ],
+      "canonical_assessed_skill_candidate": "phan-loai-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Góc có số đo \\(65^\\circ\\) là loại góc nào?",
+      "correct_option": "góc nhọn",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-loai-goc"
+    },
+    {
+      "question_id": "GEO13V1_024",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "phan-loai-goc"
+      ],
+      "canonical_assessed_skill_candidate": "phan-loai-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc có số đo \\(89^\\circ\\) là loại góc nào?",
+      "correct_option": "góc nhọn",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-loai-goc"
+    },
+    {
+      "question_id": "GEO13V1_025",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "phan-loai-goc"
+      ],
+      "canonical_assessed_skill_candidate": "phan-loai-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Góc có số đo \\(90^\\circ\\) là loại góc nào?",
+      "correct_option": "góc vuông",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-loai-goc"
+    },
+    {
+      "question_id": "GEO13V1_026",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "phan-loai-goc"
+      ],
+      "canonical_assessed_skill_candidate": "phan-loai-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Góc có số đo \\(105^\\circ\\) là loại góc nào?",
+      "correct_option": "góc tù",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-loai-goc"
+    },
+    {
+      "question_id": "GEO13V1_027",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "phan-loai-goc"
+      ],
+      "canonical_assessed_skill_candidate": "phan-loai-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Góc có số đo \\(120^\\circ\\) là loại góc nào?",
+      "correct_option": "góc tù",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-loai-goc"
+    },
+    {
+      "question_id": "GEO13V1_028",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "phan-loai-goc"
+      ],
+      "canonical_assessed_skill_candidate": "phan-loai-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Góc có số đo \\(150^\\circ\\) là loại góc nào?",
+      "correct_option": "góc tù",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-loai-goc"
+    },
+    {
+      "question_id": "GEO13V1_029",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "phan-loai-goc"
+      ],
+      "canonical_assessed_skill_candidate": "phan-loai-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Góc có số đo \\(175^\\circ\\) là loại góc nào?",
+      "correct_option": "góc tù",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-loai-goc"
+    },
+    {
+      "question_id": "GEO13V1_030",
+      "source_file": "13-goc-va-duong-thang-v1-01.json",
+      "legacy_skill_tags": [
+        "phan-loai-goc"
+      ],
+      "canonical_assessed_skill_candidate": "phan-loai-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Góc có số đo \\(180^\\circ\\) là loại góc nào?",
+      "correct_option": "góc bẹt",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-loai-goc"
+    },
+    {
+      "question_id": "GEO13V1_031",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-phu-bu"
+      ],
+      "canonical_assessed_skill_candidate": "goc-phu-bu",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai góc phụ nhau, một góc bằng \\(20^\\circ\\). Góc còn lại bằng bao nhiêu?",
+      "correct_option": "\\(70^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phu-bu"
+    },
+    {
+      "question_id": "GEO13V1_032",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-phu-bu"
+      ],
+      "canonical_assessed_skill_candidate": "goc-phu-bu",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc phụ nhau, một góc bằng \\(25^\\circ\\). Góc còn lại bằng bao nhiêu?",
+      "correct_option": "\\(65^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phu-bu"
+    },
+    {
+      "question_id": "GEO13V1_033",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-phu-bu"
+      ],
+      "canonical_assessed_skill_candidate": "goc-phu-bu",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc phụ nhau, một góc bằng \\(30^\\circ\\). Góc còn lại bằng bao nhiêu?",
+      "correct_option": "\\(60^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phu-bu"
+    },
+    {
+      "question_id": "GEO13V1_034",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-phu-bu"
+      ],
+      "canonical_assessed_skill_candidate": "goc-phu-bu",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai góc phụ nhau, một góc bằng \\(35^\\circ\\). Góc còn lại bằng bao nhiêu?",
+      "correct_option": "\\(55^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phu-bu"
+    },
+    {
+      "question_id": "GEO13V1_035",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-phu-bu"
+      ],
+      "canonical_assessed_skill_candidate": "goc-phu-bu",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai góc phụ nhau, một góc bằng \\(40^\\circ\\). Góc còn lại bằng bao nhiêu?",
+      "correct_option": "\\(50^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phu-bu"
+    },
+    {
+      "question_id": "GEO13V1_036",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-phu-bu"
+      ],
+      "canonical_assessed_skill_candidate": "goc-phu-bu",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai góc phụ nhau, một góc bằng \\(45^\\circ\\). Góc còn lại bằng bao nhiêu?",
+      "correct_option": "\\(45^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phu-bu"
+    },
+    {
+      "question_id": "GEO13V1_037",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-phu-bu"
+      ],
+      "canonical_assessed_skill_candidate": "goc-phu-bu",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai góc bù nhau, một góc bằng \\(50^\\circ\\). Góc còn lại bằng bao nhiêu?",
+      "correct_option": "\\(130^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phu-bu"
+    },
+    {
+      "question_id": "GEO13V1_038",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-phu-bu"
+      ],
+      "canonical_assessed_skill_candidate": "goc-phu-bu",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai góc bù nhau, một góc bằng \\(55^\\circ\\). Góc còn lại bằng bao nhiêu?",
+      "correct_option": "\\(125^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phu-bu"
+    },
+    {
+      "question_id": "GEO13V1_039",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-phu-bu"
+      ],
+      "canonical_assessed_skill_candidate": "goc-phu-bu",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc bù nhau, một góc bằng \\(60^\\circ\\). Góc còn lại bằng bao nhiêu?",
+      "correct_option": "\\(120^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phu-bu"
+    },
+    {
+      "question_id": "GEO13V1_040",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-phu-bu"
+      ],
+      "canonical_assessed_skill_candidate": "goc-phu-bu",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai góc bù nhau, một góc bằng \\(65^\\circ\\). Góc còn lại bằng bao nhiêu?",
+      "correct_option": "\\(115^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phu-bu"
+    },
+    {
+      "question_id": "GEO13V1_041",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-phu-bu"
+      ],
+      "canonical_assessed_skill_candidate": "goc-phu-bu",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc bù nhau, một góc bằng \\(70^\\circ\\). Góc còn lại bằng bao nhiêu?",
+      "correct_option": "\\(110^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phu-bu"
+    },
+    {
+      "question_id": "GEO13V1_042",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-phu-bu"
+      ],
+      "canonical_assessed_skill_candidate": "goc-phu-bu",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai góc bù nhau, một góc bằng \\(75^\\circ\\). Góc còn lại bằng bao nhiêu?",
+      "correct_option": "\\(105^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phu-bu"
+    },
+    {
+      "question_id": "GEO13V1_043",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "tia-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tia-phan-giac",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Tia \\(Oz\\) là tia phân giác của \\(\\angle xOy=40^\\circ\\). Tính \\(\\angle xOz\\).",
+      "correct_option": "\\(20^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phan-giac"
+    },
+    {
+      "question_id": "GEO13V1_044",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "tia-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tia-phan-giac",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tia \\(Oz\\) là tia phân giác của \\(\\angle xOy=50^\\circ\\). Tính \\(\\angle xOz\\).",
+      "correct_option": "\\(25^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phan-giac"
+    },
+    {
+      "question_id": "GEO13V1_045",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "tia-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tia-phan-giac",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tia \\(Oz\\) là tia phân giác của \\(\\angle xOy=60^\\circ\\). Tính \\(\\angle xOz\\).",
+      "correct_option": "\\(30^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phan-giac"
+    },
+    {
+      "question_id": "GEO13V1_046",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "tia-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tia-phan-giac",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tia \\(Oz\\) là tia phân giác của \\(\\angle xOy=70^\\circ\\). Tính \\(\\angle xOz\\).",
+      "correct_option": "\\(35^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phan-giac"
+    },
+    {
+      "question_id": "GEO13V1_047",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "tia-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tia-phan-giac",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tia \\(Oz\\) là tia phân giác của \\(\\angle xOy=80^\\circ\\). Tính \\(\\angle xOz\\).",
+      "correct_option": "\\(40^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phan-giac"
+    },
+    {
+      "question_id": "GEO13V1_048",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "tia-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tia-phan-giac",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tia \\(Oz\\) là tia phân giác của \\(\\angle xOy=90^\\circ\\). Tính \\(\\angle xOz\\).",
+      "correct_option": "\\(45^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phan-giac"
+    },
+    {
+      "question_id": "GEO13V1_049",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "tia-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tia-phan-giac",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Tia \\(Oz\\) là tia phân giác của \\(\\angle xOy=100^\\circ\\). Tính \\(\\angle xOz\\).",
+      "correct_option": "\\(50^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phan-giac"
+    },
+    {
+      "question_id": "GEO13V1_050",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "tia-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tia-phan-giac",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tia \\(Oz\\) là tia phân giác của \\(\\angle xOy=110^\\circ\\). Tính \\(\\angle xOz\\).",
+      "correct_option": "\\(55^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phan-giac"
+    },
+    {
+      "question_id": "GEO13V1_051",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "tia-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tia-phan-giac",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tia \\(Oz\\) là tia phân giác của \\(\\angle xOy=120^\\circ\\). Tính \\(\\angle xOz\\).",
+      "correct_option": "\\(60^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phan-giac"
+    },
+    {
+      "question_id": "GEO13V1_052",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "tia-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tia-phan-giac",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tia \\(Oz\\) là tia phân giác của \\(\\angle xOy=130^\\circ\\). Tính \\(\\angle xOz\\).",
+      "correct_option": "\\(65^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phan-giac"
+    },
+    {
+      "question_id": "GEO13V1_053",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "tia-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tia-phan-giac",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tia \\(Oz\\) là tia phân giác của \\(\\angle xOy=140^\\circ\\). Tính \\(\\angle xOz\\).",
+      "correct_option": "\\(70^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phan-giac"
+    },
+    {
+      "question_id": "GEO13V1_054",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "tia-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tia-phan-giac",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Tia \\(Oz\\) là tia phân giác của \\(\\angle xOy=150^\\circ\\). Tính \\(\\angle xOz\\).",
+      "correct_option": "\\(75^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-phan-giac"
+    },
+    {
+      "question_id": "GEO13V1_055",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-doi-dinh"
+      ],
+      "canonical_assessed_skill_candidate": "goc-doi-dinh",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai đường thẳng cắt nhau. Một góc bằng \\(30^\\circ\\). Góc đối đỉnh với nó bằng bao nhiêu?",
+      "correct_option": "\\(30^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi-dinh-ke-bu"
+    },
+    {
+      "question_id": "GEO13V1_056",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-doi-dinh"
+      ],
+      "canonical_assessed_skill_candidate": "goc-doi-dinh",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai đường thẳng cắt nhau tạo một góc \\(40^\\circ\\). Góc kề bù với góc đó bằng bao nhiêu?",
+      "correct_option": "\\(140^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi-dinh-ke-bu"
+    },
+    {
+      "question_id": "GEO13V1_057",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-doi-dinh"
+      ],
+      "canonical_assessed_skill_candidate": "goc-doi-dinh",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai đường thẳng cắt nhau. Một góc bằng \\(50^\\circ\\). Góc đối đỉnh với nó bằng bao nhiêu?",
+      "correct_option": "\\(50^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi-dinh-ke-bu"
+    },
+    {
+      "question_id": "GEO13V1_058",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-doi-dinh"
+      ],
+      "canonical_assessed_skill_candidate": "goc-doi-dinh",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai đường thẳng cắt nhau tạo một góc \\(60^\\circ\\). Góc kề bù với góc đó bằng bao nhiêu?",
+      "correct_option": "\\(120^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi-dinh-ke-bu"
+    },
+    {
+      "question_id": "GEO13V1_059",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-doi-dinh"
+      ],
+      "canonical_assessed_skill_candidate": "goc-doi-dinh",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai đường thẳng cắt nhau. Một góc bằng \\(70^\\circ\\). Góc đối đỉnh với nó bằng bao nhiêu?",
+      "correct_option": "\\(70^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi-dinh-ke-bu"
+    },
+    {
+      "question_id": "GEO13V1_060",
+      "source_file": "13-goc-va-duong-thang-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-doi-dinh"
+      ],
+      "canonical_assessed_skill_candidate": "goc-doi-dinh",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai đường thẳng cắt nhau tạo một góc \\(80^\\circ\\). Góc kề bù với góc đó bằng bao nhiêu?",
+      "correct_option": "\\(100^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi-dinh-ke-bu"
+    },
+    {
+      "question_id": "GEO13V1_061",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-doi-dinh"
+      ],
+      "canonical_assessed_skill_candidate": "goc-doi-dinh",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai đường thẳng cắt nhau. Một góc bằng \\(100^\\circ\\). Góc đối đỉnh với nó bằng bao nhiêu?",
+      "correct_option": "\\(100^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi-dinh-ke-bu"
+    },
+    {
+      "question_id": "GEO13V1_062",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-doi-dinh"
+      ],
+      "canonical_assessed_skill_candidate": "goc-doi-dinh",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai đường thẳng cắt nhau tạo một góc \\(110^\\circ\\). Góc kề bù với góc đó bằng bao nhiêu?",
+      "correct_option": "\\(70^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi-dinh-ke-bu"
+    },
+    {
+      "question_id": "GEO13V1_063",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-doi-dinh"
+      ],
+      "canonical_assessed_skill_candidate": "goc-doi-dinh",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai đường thẳng cắt nhau. Một góc bằng \\(120^\\circ\\). Góc đối đỉnh với nó bằng bao nhiêu?",
+      "correct_option": "\\(120^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi-dinh-ke-bu"
+    },
+    {
+      "question_id": "GEO13V1_064",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-doi-dinh"
+      ],
+      "canonical_assessed_skill_candidate": "goc-doi-dinh",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai đường thẳng cắt nhau tạo một góc \\(130^\\circ\\). Góc kề bù với góc đó bằng bao nhiêu?",
+      "correct_option": "\\(50^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi-dinh-ke-bu"
+    },
+    {
+      "question_id": "GEO13V1_065",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-doi-dinh"
+      ],
+      "canonical_assessed_skill_candidate": "goc-doi-dinh",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai đường thẳng cắt nhau. Một góc bằng \\(140^\\circ\\). Góc đối đỉnh với nó bằng bao nhiêu?",
+      "correct_option": "\\(140^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi-dinh-ke-bu"
+    },
+    {
+      "question_id": "GEO13V1_066",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-doi-dinh"
+      ],
+      "canonical_assessed_skill_candidate": "goc-doi-dinh",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai đường thẳng cắt nhau tạo một góc \\(150^\\circ\\). Góc kề bù với góc đó bằng bao nhiêu?",
+      "correct_option": "\\(30^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi-dinh-ke-bu"
+    },
+    {
+      "question_id": "GEO13V1_067",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "duong-vuong-goc"
+      ],
+      "canonical_assessed_skill_candidate": "duong-vuong-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Nếu hai đường thẳng \\(a\\) và \\(b\\) cắt nhau tạo một góc \\(90^\\circ\\), ký hiệu đúng là gì?",
+      "correct_option": "\\(a\\perp b\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong-goc"
+    },
+    {
+      "question_id": "GEO13V1_068",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "duong-vuong-goc"
+      ],
+      "canonical_assessed_skill_candidate": "duong-vuong-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu hai đường thẳng \\(m\\) và \\(n\\) cắt nhau tạo một góc \\(90^\\circ\\), ký hiệu đúng là gì?",
+      "correct_option": "\\(m\\perp n\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong-goc"
+    },
+    {
+      "question_id": "GEO13V1_069",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "duong-vuong-goc"
+      ],
+      "canonical_assessed_skill_candidate": "duong-vuong-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Nếu hai đường thẳng \\(d\\) và \\(e\\) cắt nhau tạo một góc \\(90^\\circ\\), ký hiệu đúng là gì?",
+      "correct_option": "\\(d\\perp e\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong-goc"
+    },
+    {
+      "question_id": "GEO13V1_070",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "duong-vuong-goc"
+      ],
+      "canonical_assessed_skill_candidate": "duong-vuong-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Nếu hai đường thẳng \\(p\\) và \\(q\\) cắt nhau tạo một góc \\(90^\\circ\\), ký hiệu đúng là gì?",
+      "correct_option": "\\(p\\perp q\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong-goc"
+    },
+    {
+      "question_id": "GEO13V1_071",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "duong-vuong-goc"
+      ],
+      "canonical_assessed_skill_candidate": "duong-vuong-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu hai đường thẳng \\(x\\) và \\(y\\) cắt nhau tạo một góc \\(90^\\circ\\), ký hiệu đúng là gì?",
+      "correct_option": "\\(x\\perp y\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong-goc"
+    },
+    {
+      "question_id": "GEO13V1_072",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "duong-vuong-goc"
+      ],
+      "canonical_assessed_skill_candidate": "duong-vuong-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu hai đường thẳng \\(u\\) và \\(v\\) cắt nhau tạo một góc \\(90^\\circ\\), ký hiệu đúng là gì?",
+      "correct_option": "\\(u\\perp v\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong-goc"
+    },
+    {
+      "question_id": "GEO13V1_073",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "duong-vuong-goc"
+      ],
+      "canonical_assessed_skill_candidate": "duong-vuong-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Nếu hai đường thẳng \\(c\\) và \\(k\\) cắt nhau tạo một góc \\(90^\\circ\\), ký hiệu đúng là gì?",
+      "correct_option": "\\(c\\perp k\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong-goc"
+    },
+    {
+      "question_id": "GEO13V1_074",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "duong-vuong-goc"
+      ],
+      "canonical_assessed_skill_candidate": "duong-vuong-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Nếu hai đường thẳng \\(r\\) và \\(s\\) cắt nhau tạo một góc \\(90^\\circ\\), ký hiệu đúng là gì?",
+      "correct_option": "\\(r\\perp s\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong-goc"
+    },
+    {
+      "question_id": "GEO13V1_075",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-so-le-trong",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-so-le-trong",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc so le trong bằng \\(35^\\circ\\). Góc so le trong tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(35^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-so-le-trong"
+    },
+    {
+      "question_id": "GEO13V1_076",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-so-le-trong",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-so-le-trong",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc so le trong bằng \\(45^\\circ\\). Góc so le trong tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(45^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-so-le-trong"
+    },
+    {
+      "question_id": "GEO13V1_077",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-so-le-trong",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-so-le-trong",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc so le trong bằng \\(55^\\circ\\). Góc so le trong tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(55^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-so-le-trong"
+    },
+    {
+      "question_id": "GEO13V1_078",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-so-le-trong",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-so-le-trong",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc so le trong bằng \\(65^\\circ\\). Góc so le trong tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(65^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-so-le-trong"
+    },
+    {
+      "question_id": "GEO13V1_079",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-so-le-trong",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-so-le-trong",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc so le trong bằng \\(75^\\circ\\). Góc so le trong tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(75^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-so-le-trong"
+    },
+    {
+      "question_id": "GEO13V1_080",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-so-le-trong",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-so-le-trong",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc so le trong bằng \\(85^\\circ\\). Góc so le trong tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(85^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-so-le-trong"
+    },
+    {
+      "question_id": "GEO13V1_081",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-so-le-trong",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-so-le-trong",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc so le trong bằng \\(105^\\circ\\). Góc so le trong tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(105^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-so-le-trong"
+    },
+    {
+      "question_id": "GEO13V1_082",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-so-le-trong",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-so-le-trong",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc so le trong bằng \\(125^\\circ\\). Góc so le trong tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(125^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-so-le-trong"
+    },
+    {
+      "question_id": "GEO13V1_083",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-dong-vi",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-dong-vi",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc đồng vị bằng \\(35^\\circ\\). Góc đồng vị tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(35^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-dong-vi"
+    },
+    {
+      "question_id": "GEO13V1_084",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-dong-vi",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-dong-vi",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc đồng vị bằng \\(45^\\circ\\). Góc đồng vị tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(45^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-dong-vi"
+    },
+    {
+      "question_id": "GEO13V1_085",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-dong-vi",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-dong-vi",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc đồng vị bằng \\(55^\\circ\\). Góc đồng vị tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(55^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-dong-vi"
+    },
+    {
+      "question_id": "GEO13V1_086",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-dong-vi",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-dong-vi",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc đồng vị bằng \\(65^\\circ\\). Góc đồng vị tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(65^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-dong-vi"
+    },
+    {
+      "question_id": "GEO13V1_087",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-dong-vi",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-dong-vi",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc đồng vị bằng \\(75^\\circ\\). Góc đồng vị tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(75^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-dong-vi"
+    },
+    {
+      "question_id": "GEO13V1_088",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-dong-vi",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-dong-vi",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc đồng vị bằng \\(85^\\circ\\). Góc đồng vị tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(85^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-dong-vi"
+    },
+    {
+      "question_id": "GEO13V1_089",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-dong-vi",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-dong-vi",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc đồng vị bằng \\(105^\\circ\\). Góc đồng vị tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(105^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-dong-vi"
+    },
+    {
+      "question_id": "GEO13V1_090",
+      "source_file": "13-goc-va-duong-thang-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-dong-vi",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-dong-vi",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc đồng vị bằng \\(125^\\circ\\). Góc đồng vị tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(125^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-dong-vi"
+    },
+    {
+      "question_id": "GEO13V1_091",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-trong-cung-phia",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-trong-cung-phia",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc trong cùng phía bằng \\(35^\\circ\\). Góc trong cùng phía tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(145^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-trong-cung-phia"
+    },
+    {
+      "question_id": "GEO13V1_092",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-trong-cung-phia",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-trong-cung-phia",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc trong cùng phía bằng \\(45^\\circ\\). Góc trong cùng phía tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(135^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-trong-cung-phia"
+    },
+    {
+      "question_id": "GEO13V1_093",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-trong-cung-phia",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-trong-cung-phia",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc trong cùng phía bằng \\(55^\\circ\\). Góc trong cùng phía tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(125^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-trong-cung-phia"
+    },
+    {
+      "question_id": "GEO13V1_094",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-trong-cung-phia",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-trong-cung-phia",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc trong cùng phía bằng \\(65^\\circ\\). Góc trong cùng phía tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(115^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-trong-cung-phia"
+    },
+    {
+      "question_id": "GEO13V1_095",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-trong-cung-phia",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-trong-cung-phia",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc trong cùng phía bằng \\(75^\\circ\\). Góc trong cùng phía tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(105^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-trong-cung-phia"
+    },
+    {
+      "question_id": "GEO13V1_096",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-trong-cung-phia",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-trong-cung-phia",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc trong cùng phía bằng \\(85^\\circ\\). Góc trong cùng phía tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(95^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-trong-cung-phia"
+    },
+    {
+      "question_id": "GEO13V1_097",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-trong-cung-phia",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-trong-cung-phia",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc trong cùng phía bằng \\(105^\\circ\\). Góc trong cùng phía tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(75^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-trong-cung-phia"
+    },
+    {
+      "question_id": "GEO13V1_098",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-trong-cung-phia",
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "goc-trong-cung-phia",
+      "learner_family_candidate": "GEO-TRANSVERSAL",
+      "supporting_skills": [
+        "tinh-chat-song-song"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai đường thẳng \\(a\\parallel b\\) bị cắt bởi \\(c\\). Một góc trong cùng phía bằng \\(125^\\circ\\). Góc trong cùng phía tương ứng bằng bao nhiêu?",
+      "correct_option": "\\(55^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-goc-trong-cung-phia"
+    },
+    {
+      "question_id": "GEO13V1_099",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Biết \\(a\\parallel b\\) và đường \\(c\\) cắt cả hai. Nếu một góc đồng vị bằng \\(40^\\circ\\), góc đồng vị kia bằng bao nhiêu?",
+      "correct_option": "\\(40^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "suy-tu-song-song"
+    },
+    {
+      "question_id": "GEO13V1_100",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Biết \\(a\\parallel b\\) và đường \\(c\\) cắt cả hai. Nếu một góc đồng vị bằng \\(50^\\circ\\), góc đồng vị kia bằng bao nhiêu?",
+      "correct_option": "\\(50^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "suy-tu-song-song"
+    },
+    {
+      "question_id": "GEO13V1_101",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Biết \\(a\\parallel b\\) và đường \\(c\\) cắt cả hai. Nếu một góc đồng vị bằng \\(60^\\circ\\), góc đồng vị kia bằng bao nhiêu?",
+      "correct_option": "\\(60^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "suy-tu-song-song"
+    },
+    {
+      "question_id": "GEO13V1_102",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Biết \\(a\\parallel b\\) và đường \\(c\\) cắt cả hai. Nếu một góc đồng vị bằng \\(70^\\circ\\), góc đồng vị kia bằng bao nhiêu?",
+      "correct_option": "\\(70^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "suy-tu-song-song"
+    },
+    {
+      "question_id": "GEO13V1_103",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Biết \\(a\\parallel b\\) và đường \\(c\\) cắt cả hai. Nếu một góc đồng vị bằng \\(80^\\circ\\), góc đồng vị kia bằng bao nhiêu?",
+      "correct_option": "\\(80^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "suy-tu-song-song"
+    },
+    {
+      "question_id": "GEO13V1_104",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Biết \\(a\\parallel b\\) và đường \\(c\\) cắt cả hai. Nếu một góc đồng vị bằng \\(100^\\circ\\), góc đồng vị kia bằng bao nhiêu?",
+      "correct_option": "\\(100^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "suy-tu-song-song"
+    },
+    {
+      "question_id": "GEO13V1_105",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-chat-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Biết \\(a\\parallel b\\) và đường \\(c\\) cắt cả hai. Nếu một góc đồng vị bằng \\(120^\\circ\\), góc đồng vị kia bằng bao nhiêu?",
+      "correct_option": "\\(120^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "suy-tu-song-song"
+    },
+    {
+      "question_id": "GEO13V1_106",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-hieu-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Đường thẳng \\(c\\) cắt \\(a\\) và \\(b\\). Biết một cặp góc so le trong cùng bằng \\(50^\\circ\\). Kết luận nào đúng?",
+      "correct_option": "\\(a\\parallel b\\)",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO13V1_107",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-hieu-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Đường thẳng \\(c\\) cắt \\(a\\) và \\(b\\). Biết một cặp góc đồng vị cùng bằng \\(65^\\circ\\). Kết luận nào đúng?",
+      "correct_option": "\\(a\\parallel b\\)",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO13V1_108",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-hieu-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đường thẳng \\(c\\) cắt \\(a\\) và \\(b\\). Biết hai góc trong cùng phía có tổng \\(180^\\circ\\). Kết luận nào đúng?",
+      "correct_option": "\\(a\\parallel b\\)",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO13V1_109",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-hieu-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đường thẳng \\(c\\) cắt \\(a\\) và \\(b\\). Biết một cặp góc so le trong cùng bằng \\(80^\\circ\\). Kết luận nào đúng?",
+      "correct_option": "\\(a\\parallel b\\)",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO13V1_110",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-hieu-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đường thẳng \\(c\\) cắt \\(a\\) và \\(b\\). Biết một cặp góc đồng vị cùng bằng \\(105^\\circ\\). Kết luận nào đúng?",
+      "correct_option": "\\(a\\parallel b\\)",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO13V1_111",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-hieu-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Đường thẳng \\(c\\) cắt \\(a\\) và \\(b\\). Biết hai góc trong cùng phía có tổng \\(180^\\circ\\). Kết luận nào đúng?",
+      "correct_option": "\\(a\\parallel b\\)",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO13V1_112",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-hieu-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Đường thẳng \\(c\\) cắt \\(a\\) và \\(b\\). Biết một cặp góc so le trong cùng bằng \\(120^\\circ\\). Kết luận nào đúng?",
+      "correct_option": "\\(a\\parallel b\\)",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO13V1_113",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "vuong-goc-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "vuong-goc-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Biết \\(a\\perp c\\) và \\(b\\perp c\\), với \\(a\\ne b\\). Kết luận nào đúng?",
+      "correct_option": "\\(a\\parallel b\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vuong-goc-song-song"
+    },
+    {
+      "question_id": "GEO13V1_114",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "vuong-goc-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "vuong-goc-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Biết \\(m\\parallel n\\) và \\(d\\perp m\\). Kết luận nào đúng?",
+      "correct_option": "\\(d\\perp n\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vuong-goc-song-song"
+    },
+    {
+      "question_id": "GEO13V1_115",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "vuong-goc-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "vuong-goc-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Biết \\(p\\perp r\\) và \\(q\\perp r\\), với \\(p\\ne q\\). Kết luận nào đúng?",
+      "correct_option": "\\(p\\parallel q\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vuong-goc-song-song"
+    },
+    {
+      "question_id": "GEO13V1_116",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "vuong-goc-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "vuong-goc-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biết \\(u\\parallel v\\) và \\(w\\perp u\\). Kết luận nào đúng?",
+      "correct_option": "\\(w\\perp v\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vuong-goc-song-song"
+    },
+    {
+      "question_id": "GEO13V1_117",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "vuong-goc-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "vuong-goc-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Biết \\(x\\perp z\\) và \\(y\\perp z\\), với \\(x\\ne y\\). Kết luận nào đúng?",
+      "correct_option": "\\(x\\parallel y\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vuong-goc-song-song"
+    },
+    {
+      "question_id": "GEO13V1_118",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "vuong-goc-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "vuong-goc-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biết \\(d_1\\parallel d_2\\) và \\(k\\perp d_1\\). Kết luận nào đúng?",
+      "correct_option": "\\(k\\perp d_2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vuong-goc-song-song"
+    },
+    {
+      "question_id": "GEO13V1_119",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "vuong-goc-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "vuong-goc-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Biết \\(l\\perp n\\) và \\(m\\perp n\\), với \\(l\\ne m\\). Kết luận nào đúng?",
+      "correct_option": "\\(l\\parallel m\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vuong-goc-song-song"
+    },
+    {
+      "question_id": "GEO13V1_120",
+      "source_file": "13-goc-va-duong-thang-v1-04.json",
+      "legacy_skill_tags": [
+        "vuong-goc-song-song"
+      ],
+      "canonical_assessed_skill_candidate": "vuong-goc-song-song",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Biết \\(g\\parallel h\\) và \\(t\\perp g\\). Kết luận nào đúng?",
+      "correct_option": "\\(t\\perp h\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vuong-goc-song-song"
+    },
+    {
+      "question_id": "GEO13V1_121",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "diem-nam-giua"
+      ],
+      "canonical_assessed_skill_candidate": "diem-nam-giua",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu B nằm giữa A và C thì đẳng thức độ dài nào đúng?",
+      "correct_option": "AB+BC=AC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "diem-nam-giua"
+    },
+    {
+      "question_id": "GEO13V1_122",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "diem-nam-giua"
+      ],
+      "canonical_assessed_skill_candidate": "diem-nam-giua",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "A, M, B thẳng hàng và AM+MB=AB. Kết luận phù hợp là:",
+      "correct_option": "M nằm giữa A và B",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "diem-nam-giua"
+    },
+    {
+      "question_id": "GEO13V1_123",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "diem-nam-giua"
+      ],
+      "canonical_assessed_skill_candidate": "diem-nam-giua",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu C nằm giữa A và B, AB=12 cm, AC=5 cm thì CB bằng:",
+      "correct_option": "7 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "diem-nam-giua"
+    },
+    {
+      "question_id": "GEO13V1_124",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "diem-nam-giua"
+      ],
+      "canonical_assessed_skill_candidate": "diem-nam-giua",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Điều nào KHÔNG đủ để kết luận M nằm giữa A và B?",
+      "correct_option": "Chỉ biết AM<AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "diem-nam-giua"
+    },
+    {
+      "question_id": "GEO13V1_125",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "tia"
+      ],
+      "canonical_assessed_skill_candidate": "tia",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tia Ox có:",
+      "correct_option": "Gốc O và kéo dài vô hạn về một phía",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tia"
+    },
+    {
+      "question_id": "GEO13V1_126",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "tia"
+      ],
+      "canonical_assessed_skill_candidate": "tia",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tia OA và OB trùng nhau khi:",
+      "correct_option": "A và B nằm cùng phía đối với O trên cùng một đường thẳng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tia"
+    },
+    {
+      "question_id": "GEO13V1_127",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "tia"
+      ],
+      "canonical_assessed_skill_candidate": "tia",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu A nằm trên tia Ox và A khác O thì:",
+      "correct_option": "O là gốc của tia OA",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tia"
+    },
+    {
+      "question_id": "GEO13V1_128",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "tia"
+      ],
+      "canonical_assessed_skill_candidate": "tia",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tia chung gốc nhưng không cùng nằm trên một đường thẳng thì:",
+      "correct_option": "Không phải hai tia đối nhau",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tia"
+    },
+    {
+      "question_id": "GEO13V1_129",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "doan-thang-do-dai"
+      ],
+      "canonical_assessed_skill_candidate": "doan-thang-do-dai",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-017",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đoạn thẳng AB gồm:",
+      "correct_option": "A, B và các điểm nằm giữa A, B",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "doan-thang-do-dai"
+    },
+    {
+      "question_id": "GEO13V1_130",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "doan-thang-do-dai"
+      ],
+      "canonical_assessed_skill_candidate": "doan-thang-do-dai",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-017",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu AB=7 cm và M nằm giữa A,B với AM=3 cm thì MB bằng:",
+      "correct_option": "4 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "doan-thang-do-dai"
+    },
+    {
+      "question_id": "GEO13V1_131",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "doan-thang-do-dai"
+      ],
+      "canonical_assessed_skill_candidate": "doan-thang-do-dai",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-017",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khẳng định nào đúng về độ dài đoạn thẳng?",
+      "correct_option": "AB=BA",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "doan-thang-do-dai"
+    },
+    {
+      "question_id": "GEO13V1_132",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "doan-thang-do-dai"
+      ],
+      "canonical_assessed_skill_candidate": "doan-thang-do-dai",
+      "learner_family_candidate": "GEO-LINE-FOUND",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-017",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "A,M,B thẳng hàng, AM=4 cm, MB=6 cm, M nằm giữa A,B. Khi đó AB=",
+      "correct_option": "10 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "doan-thang-do-dai"
+    },
+    {
+      "question_id": "GEO13V1_133",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "khai-niem-goc"
+      ],
+      "canonical_assessed_skill_candidate": "khai-niem-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-018",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc xOy có đỉnh là:",
+      "correct_option": "O",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "khai-niem-goc"
+    },
+    {
+      "question_id": "GEO13V1_134",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "khai-niem-goc"
+      ],
+      "canonical_assessed_skill_candidate": "khai-niem-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-018",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai cạnh của góc xOy là:",
+      "correct_option": "Hai tia Ox và Oy",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "khai-niem-goc"
+    },
+    {
+      "question_id": "GEO13V1_135",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "khai-niem-goc"
+      ],
+      "canonical_assessed_skill_candidate": "khai-niem-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-018",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khi Ox và Oy là hai tia đối nhau, góc xOy là:",
+      "correct_option": "Góc bẹt",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "khai-niem-goc"
+    },
+    {
+      "question_id": "GEO13V1_136",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "khai-niem-goc"
+      ],
+      "canonical_assessed_skill_candidate": "khai-niem-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-018",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Điều kiện cần để hai tia tạo thành một góc là:",
+      "correct_option": "Có chung gốc",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "khai-niem-goc"
+    },
+    {
+      "question_id": "GEO13V1_137",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "do-goc"
+      ],
+      "canonical_assessed_skill_candidate": "do-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-019",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Số đo của góc vuông là:",
+      "correct_option": "90°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-goc"
+    },
+    {
+      "question_id": "GEO13V1_138",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "do-goc"
+      ],
+      "canonical_assessed_skill_candidate": "do-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-019",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một góc có số đo 135° thuộc loại:",
+      "correct_option": "Góc tù",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-goc"
+    },
+    {
+      "question_id": "GEO13V1_139",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "do-goc"
+      ],
+      "canonical_assessed_skill_candidate": "do-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-019",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu ∠xOy=70° và Oz nằm trong góc, ∠xOz=25° thì ∠zOy=",
+      "correct_option": "45°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-goc"
+    },
+    {
+      "question_id": "GEO13V1_140",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "do-goc"
+      ],
+      "canonical_assessed_skill_candidate": "do-goc",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-019",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khẳng định nào đúng?",
+      "correct_option": "Số đo góc không âm và góc bẹt có số đo 180°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-goc"
+    },
+    {
+      "question_id": "GEO13V1_141",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-dang-goc-dac-biet"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-goc-dac-biet",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc đối đỉnh xuất hiện khi:",
+      "correct_option": "Hai đường thẳng cắt nhau",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-dang-goc-dac-biet"
+    },
+    {
+      "question_id": "GEO13V1_142",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-dang-goc-dac-biet"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-goc-dac-biet",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc kề bù có tổng số đo:",
+      "correct_option": "180°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-dang-goc-dac-biet"
+    },
+    {
+      "question_id": "GEO13V1_143",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-dang-goc-dac-biet"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-goc-dac-biet",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khi một đường thẳng cắt hai đường thẳng, để gọi hai góc là so le trong cần kiểm tra:",
+      "correct_option": "Nằm giữa hai đường và ở hai phía của đường cắt",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-dang-goc-dac-biet"
+    },
+    {
+      "question_id": "GEO13V1_144",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-dang-goc-dac-biet"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-goc-dac-biet",
+      "learner_family_candidate": "GEO-ANGLE-REL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc đồng vị được nhận dạng chủ yếu bởi:",
+      "correct_option": "Vị trí tương ứng tại hai giao điểm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-dang-goc-dac-biet"
+    },
+    {
+      "question_id": "GEO13V1_145",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "tien-de-euclid"
+      ],
+      "canonical_assessed_skill_candidate": "tien-de-euclid",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-021",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Qua một điểm M nằm ngoài đường thẳng a, có bao nhiêu đường thẳng đi qua M và song song với a?",
+      "correct_option": "Đúng một",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tien-de-euclid"
+    },
+    {
+      "question_id": "GEO13V1_146",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "tien-de-euclid"
+      ],
+      "canonical_assessed_skill_candidate": "tien-de-euclid",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-021",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phát biểu nào đúng theo tiên đề Euclid?",
+      "correct_option": "Qua điểm ngoài một đường thẳng chỉ có một đường thẳng song song với đường đó",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tien-de-euclid"
+    },
+    {
+      "question_id": "GEO13V1_147",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "tien-de-euclid"
+      ],
+      "canonical_assessed_skill_candidate": "tien-de-euclid",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-021",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "M ngoài a. Nếu b và c cùng đi qua M, b∥a và c∥a thì:",
+      "correct_option": "b và c trùng nhau",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tien-de-euclid"
+    },
+    {
+      "question_id": "GEO13V1_148",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "tien-de-euclid"
+      ],
+      "canonical_assessed_skill_candidate": "tien-de-euclid",
+      "learner_family_candidate": "GEO-PARALLEL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "GEO13-AUTO-021",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vai trò trực tiếp của tiên đề Euclid trong mạch này là:",
+      "correct_option": "Bảo đảm duy nhất đường song song qua một điểm ngoài đường thẳng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tien-de-euclid"
+    },
+    {
+      "question_id": "GEO13V1_149",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "gia-thiet-ket-luan"
+      ],
+      "canonical_assessed_skill_candidate": "gia-thiet-ket-luan",
+      "learner_family_candidate": "GEO-PROOF-BASIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong định lí “Nếu hai đường thẳng phân biệt cùng vuông góc với đường thẳng thứ ba thì chúng song song”, giả thiết là:",
+      "correct_option": "Hai đường phân biệt cùng vuông góc với đường thứ ba",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "gia-thiet-ket-luan"
+    },
+    {
+      "question_id": "GEO13V1_150",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "gia-thiet-ket-luan"
+      ],
+      "canonical_assessed_skill_candidate": "gia-thiet-ket-luan",
+      "learner_family_candidate": "GEO-PROOF-BASIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong cùng định lí, kết luận là:",
+      "correct_option": "Hai đường thẳng đó song song",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "gia-thiet-ket-luan"
+    },
+    {
+      "question_id": "GEO13V1_151",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "gia-thiet-ket-luan"
+      ],
+      "canonical_assessed_skill_candidate": "gia-thiet-ket-luan",
+      "learner_family_candidate": "GEO-PROOF-BASIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khi viết GT/KL cho một bài chứng minh, điều nào đúng?",
+      "correct_option": "Không đưa điều cần chứng minh vào giả thiết",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "gia-thiet-ket-luan"
+    },
+    {
+      "question_id": "GEO13V1_152",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "gia-thiet-ket-luan"
+      ],
+      "canonical_assessed_skill_candidate": "gia-thiet-ket-luan",
+      "learner_family_candidate": "GEO-PROOF-BASIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cho GT: a∥b, c⊥a. KL phù hợp để dùng tính chất song song-vuông góc là:",
+      "correct_option": "c⊥b",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "gia-thiet-ket-luan"
+    },
+    {
+      "question_id": "GEO13V1_153",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "lap-luan-chung-minh-ngan"
+      ],
+      "canonical_assessed_skill_candidate": "lap-luan-chung-minh-ngan",
+      "learner_family_candidate": "GEO-PROOF-BASIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-023",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chuỗi nào hợp logic từ GT a∥b, c⊥a đến KL c⊥b?",
+      "correct_option": "c⊥a ⇒ góc tạo bởi c,a bằng 90°; a∥b ⇒ góc tương ứng với c,b bằng 90°; suy ra c⊥b",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "lap-luan-chung-minh-ngan"
+    },
+    {
+      "question_id": "GEO13V1_154",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "lap-luan-chung-minh-ngan"
+      ],
+      "canonical_assessed_skill_candidate": "lap-luan-chung-minh-ngan",
+      "learner_family_candidate": "GEO-PROOF-BASIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-023",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong chứng minh hình học, lý do nào KHÔNG hợp lệ?",
+      "correct_option": "Theo hình vẽ thấy hai đoạn bằng nhau",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "lap-luan-chung-minh-ngan"
+    },
+    {
+      "question_id": "GEO13V1_155",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "lap-luan-chung-minh-ngan"
+      ],
+      "canonical_assessed_skill_candidate": "lap-luan-chung-minh-ngan",
+      "learner_family_candidate": "GEO-PROOF-BASIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-023",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Muốn kết luận a∥b từ hai góc bằng nhau, bước còn thiếu quan trọng là:",
+      "correct_option": "Chỉ ra chúng là cặp so le trong hoặc đồng vị thích hợp",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "lap-luan-chung-minh-ngan"
+    },
+    {
+      "question_id": "GEO13V1_156",
+      "source_file": "13-goc-va-duong-thang-v1-05.json",
+      "legacy_skill_tags": [
+        "lap-luan-chung-minh-ngan"
+      ],
+      "canonical_assessed_skill_candidate": "lap-luan-chung-minh-ngan",
+      "learner_family_candidate": "GEO-PROOF-BASIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "GEO13-AUTO-023",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một proof step tốt nên có dạng:",
+      "correct_option": "Mệnh đề + căn cứ",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "lap-luan-chung-minh-ngan"
+    }
+  ],
+  "academic_review": {
+    "reviewer": "NotebookLM",
+    "result": "PASS",
+    "selected_sources": {
+      "total": 11,
+      "permanent": [
+        "00_NOTEBOOK_MATH_PERMANENT_v1.1.md",
+        "01_TOAN_THCS_MASTER_PLAN_v1.1.md"
+      ],
+      "batch_count": 9
+    },
+    "combined_packet": "MATH-SKILL-S3-CT13-20-COMBINED-R1-20261002",
+    "coverage": {
+      "expected": 156,
+      "reviewed": 156,
+      "revisions": 0,
+      "missing": 0
+    },
+    "counts_verified": true,
+    "architecture_checks": {
+      "batch_expected": 14,
+      "batch_pass": 14
+    },
+    "authorization": "CLEARED_FOR_S3_CT13_20_RECONCILIATION",
+    "reviewed_at": "2026-10-02",
+    "runtime_activation_authorized": false
+  }
+}
