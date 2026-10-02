@@ -1,5 +1,5 @@
 {
-  "version": "1.0.135",
+  "version": "1.0.136",
   "updated": "2026-10-02",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Skill Taxonomy v2 S1–S4 are academically closed. Whole-project CT02–CT25 cross-batch reconciliation is active in Draft PR #269: 131 family definitions, 386 legacy mappings, 20 intentional NO_FAMILY rows, 5 explicit CT24 canonical-reuse mappings, 2 machine overlap candidates. Next gate is owner-supplied NotebookLM cross-batch result. No runtime/mastery/Readiness/history migration is authorized; a PASS only clears implementation planning. Exam-frequency claims remain PENDING_OFFICIAL_CORPUS.",
+    "next_priority": "Skill Taxonomy v2 CT02–CT25 academic program is closed. Cross-batch reconciliation PASS: 131/131 families, 386/386 mappings, 5/5 CT24 canonical reuse mappings, 20 intentional NO_FAMILY mappings, 2/2 contextual-overlap candidates, 0 fixes, ARCH_1..16 PASS. Authorization is CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING. Next phase is implementation planning only: durable registry, mapping lookup, evidence aggregation, Skill Map v2, Core Readiness boundaries, no-backfill policy, canary/rollback/QA. Runtime/mastery/Readiness/history migration remains NOT authorized.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1381,7 +1381,7 @@
       ]
     },
     "skill_taxonomy_v2": {
-      "status": "S1_S4_ACADEMICALLY_CLOSED_CROSS_BATCH_RECONCILIATION_ACTIVE",
+      "status": "ACADEMIC_PROGRAM_CLOSED_IMPLEMENTATION_PLANNING_AUTHORIZED",
       "runtime_enabled": false,
       "mastery_readiness_migration_authorized": false,
       "exam_frequency": "PENDING_OFFICIAL_CORPUS",
@@ -1461,7 +1461,7 @@
       },
       "cross_batch": {
         "scope": "CT02–CT25",
-        "status": "NOTEBOOKLM_REVIEW_PENDING",
+        "status": "ACADEMICALLY_CLOSED_PASS",
         "branch": "review/skill-taxonomy-v2-cross-batch-ct02-25-r1-20261002",
         "review_pr": 269,
         "family_definitions": 131,
@@ -1473,8 +1473,15 @@
         "duplicate_topic_legacy_keys": 0,
         "unknown_family_mappings": 0,
         "machine_overlap_candidates": 2,
-        "next_gate": "OWNER_SUPPLIED_NOTEBOOKLM_CROSS_BATCH_RESULT",
-        "pass_effect": "CLEARS_IMPLEMENTATION_PLANNING_ONLY_NOT_RUNTIME_ACTIVATION"
+        "family_coverage": "131/131 PASS",
+        "mapping_coverage": "386/386 PASS",
+        "reuse_checks": "5/5 PASS",
+        "overlap_checks": "2/2 PASS_AS_CONTEXTUAL_REUSE",
+        "architecture_checks": "16/16 PASS",
+        "fixes": 0,
+        "authorization": "CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING",
+        "academic_closure": "review-packets/skill-taxonomy/TAXONOMY_V2_ACADEMIC_CLOSURE_20261002.md",
+        "pass_effect": "IMPLEMENTATION_PLANNING_ONLY_NOT_RUNTIME_ACTIVATION"
       }
     },
     "notebooklm_taxonomy_workflow": {
