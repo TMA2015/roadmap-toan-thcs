@@ -2,7 +2,7 @@
 
 Packet: `MATH-SKILL-S3-CT13-20-COMBINED-R1-20261002`
 
-Status: **REVIEW_ONLY / NOTEBOOKLM_PENDING / NOT_RUNTIME_ENABLED**
+Status: **NOTEBOOKLM_PASS / CT13_CT20_S3_RECONCILIATION_CLEARED / NOT_RUNTIME_ENABLED**
 
 Combined scope:
 - CT13: 156 items
@@ -42,3 +42,17 @@ If NotebookLM chat output risks truncation, return a Markdown artifact with the 
 No runtime, Readiness/mastery, history backfill or learner-progress migration is authorized.
 
 The three `gemini-catalogue-*` sources shown in the Notebook are intentionally **unselected** for this review.
+
+
+Final academic gate:
+- selected Sources: 11 = 2 permanent + 9 S3 batch;
+- CT13–CT20 combined: 1,146/1,146 PASS;
+- 0 revisions / 0 missing;
+- 165/165 clone-family candidates PASS;
+- 20/20 topic checks PASS;
+- ARCH_1..ARCH_14 PASS;
+- `CLEARED_FOR_S3_CT13_20_RECONCILIATION`;
+- receipt: `12_NOTEBOOKLM_COMBINED_PASS_RECEIPT.md`;
+- reconciled overlays created for CT13–CT20.
+
+S3 full-bank item gate is academically complete.
