@@ -84,11 +84,8 @@ LEGACY_RAW = json.dumps(LEGACY, ensure_ascii=False, separators=(",", ":"))
 
 def seed(context):
     context.add_init_script(
-        """([storeRaw, legacyRaw]) => {
-          localStorage.setItem('toan-thcs-taxonomy-v2-evidence-v1', storeRaw);
-          localStorage.setItem('toan-thcs-practice-v1', legacyRaw);
-        }""",
-        [STORE_RAW, LEGACY_RAW],
+        "localStorage.setItem('toan-thcs-taxonomy-v2-evidence-v1', " + json.dumps(STORE_RAW) + ");"
+        "localStorage.setItem('toan-thcs-practice-v1', " + json.dumps(LEGACY_RAW) + ");"
     )
 
 def validate(page):
