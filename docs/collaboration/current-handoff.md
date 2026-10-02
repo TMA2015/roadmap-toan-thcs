@@ -36,6 +36,7 @@
   - CT13–CT20 combined: **1,146/1,146 PASS**.
 - Output phải machine-checkable; nếu chat có nguy cơ truncate, NotebookLM có thể tạo Markdown artifact theo cùng contract.
 - Permanent Sources và batch Sources phải được chọn rõ ràng; các `gemini-catalogue-*` không được chọn trừ khi một packet mới yêu cầu rõ.
+- **NotebookLM delivery UX:** khi có từ 2 batch Sources trở lên, đóng gói các Source cần upload thành **một ZIP duy nhất** để owner tải một lần; không đóng gói lại permanent Sources nếu chúng đã có trong Notebook. Prompt ngắn phải **hiển thị trực tiếp trong chat**, không bắt owner mở file prompt riêng.
 
 ### S1 — CT02–CT07 — ACADEMICALLY CLOSED
 - Family consolidation: **87 legacy tags → 39 learner-facing families** = 33 Core + 6 optional.
