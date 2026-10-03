@@ -158,6 +158,10 @@ jobs:
           python scripts/test-topic-roadmap-navigation.py
           node --check docs/assets/javascripts/written-exercise-library-v1.js
           node scripts/test-written-exercise-library-v1.js
+      - name: Validate CT08 Academic Depth P1-A
+        run: |
+          node --check docs/assets/javascripts/topic-workspace-v1.js
+          node scripts/test-topic08-academic-depth-p1a.js
       - name: Validate CT09 Academic Depth P1-A
         run: node scripts/test-topic09-academic-depth-p1a.js
       - name: Validate CT09 Academic Depth P1-C1
@@ -206,6 +210,7 @@ jobs:
           python scripts/test-skill-map-v2-i6-controlled-browser.py
           python scripts/test-skill-map-v2-i6b-public-browser.py
           python scripts/test-help-disclosure-toggle-browser.py
+          python scripts/test-topic08-academic-depth-p1a-browser.py
           python scripts/test-topic09-navigation-reading-browser.py
           python scripts/test-topic09-p1c1-variant-browser.py
           python scripts/test-topic09-p1c2-browser.py
