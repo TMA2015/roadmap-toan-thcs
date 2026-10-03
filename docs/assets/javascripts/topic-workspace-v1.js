@@ -400,11 +400,15 @@ const skillOverview=(card,questions,asTeaching=false)=>{
 
 
 const sections=[
- ["map","🗺️ Bản đồ","1. Bản đồ kiến thức"],["goals","🎯 Mục tiêu","2. Mục tiêu cần đạt"],["core","📖 Cốt lõi","3. Kiến thức cốt lõi"],["links","🔗 Liên quan","4. Kiến thức liên quan"],["types","🧩 Dạng bài","5. Các dạng bài cần nắm vững"],["exam","🚀 Thi vào 10","6. Dạng bài thi vào lớp 10"],["errors","⚠️ Lỗi sai","7. Lỗi sai thường gặp"],["practice","📝 Luyện tập","8. Luyện tập"],["check","✅ Tự kiểm tra","9. Tự kiểm tra"],["roadmap","🔄 Roadmap","10. Liên kết Roadmap"],["finish","🏁 Hoàn thành","11. Điều kiện hoàn thành"]
+ ["map","🗺️ Bản đồ","1. Bản đồ kiến thức"],["goals","🎯 Mục tiêu","2. Mục tiêu cần đạt"],["core","📖 Cốt lõi","3. Kiến thức cốt lõi"],["links","🔗 Liên quan","4. Kiến thức liên quan"],["types","🧩 Dạng bài","5. Các dạng bài cần nắm vững"],["exam","🚀 Thi vào 10","6. Liên hệ với thi vào lớp 10"],["errors","⚠️ Lỗi sai","7. Lỗi sai thường gặp"],["practice","📝 Luyện tập","8. Luyện tập"],["check","✅ Tự kiểm tra","9. Tự kiểm tra"],["roadmap","🔄 Roadmap","10. Liên kết Roadmap"],["finish","🏁 Hoàn thành","11. Điều kiện hoàn thành"]
 ];
 
 const normalize=s=>(s||"").replace(/\s+/g," ").trim();
-const findHeading=label=>[...document.querySelectorAll(".md-content h2")].find(h=>normalize(h.textContent).includes(label));
+const findHeading=(label,ordinal)=>{
+ const headings=[...document.querySelectorAll(".md-content h2")];
+ const byNumber=headings.find(h=>new RegExp("(?:^|\\s)"+ordinal+"\\.\\s").test(normalize(h.textContent)));
+ return byNumber||headings.find(h=>normalize(h.textContent).includes(label));
+};
 const typeset=el=>window.MathJax?.typesetPromise?.([el]).catch(()=>{});
 const loadStats=()=>window.RoadmapLearnerEvidence?.load?.()||(()=>{try{return JSON.parse(localStorage.getItem(STORAGE))||{tags:{}}}catch(_){return{tags:{}}}})();
 const progress=skills=>{
@@ -413,8 +417,11 @@ const progress=skills=>{
 };
 
 const wrapSection=(heading,id,index)=>{
+ const sourceAnchor=heading.id||"";
  const details=document.createElement("details");details.className="topic-learning-card";details.id=id;if(index<3)details.open=true;
- const summary=document.createElement("summary");summary.innerHTML=`${heading.textContent}<span class="topic-section-badge">${index<3?"mở sẵn":"chạm để mở"}</span>`;
+ const summary=document.createElement("summary");
+ if(sourceAnchor){summary.id=sourceAnchor;details.dataset.sourceAnchor=sourceAnchor}
+ summary.innerHTML=`${heading.textContent}<span class="topic-section-badge">${index<3?"mở sẵn":"chạm để mở"}</span>`;
  const body=document.createElement("div");body.className="topic-learning-card-body";heading.parentNode.insertBefore(details,heading);details.append(summary,body);
  let node=heading.nextSibling;heading.remove();while(node&&!(node.nodeType===1&&node.tagName==="H2")){const next=node.nextSibling;body.appendChild(node);node=next}
 };
@@ -733,14 +740,61 @@ const init=()=>{
  }
  if(hasStandaloneCore)mountCoreGateway(hero,config);
  else renderCoreCards(hero,config);
- sections.forEach(([id,,label],i)=>{const h=findHeading(label);if(h)wrapSection(h,id,i)});
+ sections.forEach(([id,,label],i)=>{const h=findHeading(label,i+1);if(h)wrapSection(h,id,i)});
+
+ const revealAnchor=id=>{
+  if(!id)return null;
+  const target=document.getElementById(id);
+  if(!target)return null;
+  const card=target.matches?.("details.topic-learning-card")?target:target.closest?.("details.topic-learning-card");
+  if(card)card.open=true;
+  return target;
+ };
  const expandTarget=event=>{
   const a=event.target.closest?.('a[href^="#"]');
   if(!a)return;
-  const target=document.getElementById(a.getAttribute("href").slice(1));
-  if(target?.tagName==="DETAILS")target.open=true;
+  revealAnchor(decodeURIComponent(a.getAttribute("href").slice(1)));
  };
- hero.addEventListener("click",expandTarget);
+ if(!document.documentElement.dataset.topicAnchorReveal){
+  document.documentElement.dataset.topicAnchorReveal="1";
+  document.addEventListener("click",expandTarget);
+  window.addEventListener("hashchange",()=>revealAnchor(decodeURIComponent(location.hash.slice(1))));
+ }
+ requestAnimationFrame(()=>revealAnchor(decodeURIComponent(location.hash.slice(1))));
+
+ const enhanceSecondaryToc=()=>{
+  const root=document.querySelector(".md-sidebar--secondary nav.md-nav--secondary > ul.md-nav__list");
+  if(!root||root.dataset.topicCollapsible==="1")return;
+  root.dataset.topicCollapsible="1";
+  const enhanceList=list=>{
+   [...list.children].forEach(li=>{
+    if(!(li instanceof HTMLElement))return;
+    const nestedNav=[...li.children].find(el=>el.tagName==="NAV"&&el.classList.contains("md-nav"));
+    const link=[...li.children].find(el=>el.tagName==="A"&&el.classList.contains("md-nav__link"));
+    if(nestedNav&&link){
+     nestedNav.classList.add("topic-toc-children");nestedNav.hidden=true;
+     li.classList.add("topic-toc-collapsible");
+     const toggle=document.createElement("button");toggle.type="button";toggle.className="topic-toc-toggle";
+     toggle.textContent="+";toggle.setAttribute("aria-expanded","false");
+     const label=normalize(link.textContent)||"mục con";
+     toggle.setAttribute("aria-label","Mở các mục con của "+label);
+     toggle.addEventListener("click",event=>{
+      event.preventDefault();event.stopPropagation();
+      const open=nestedNav.hidden;
+      nestedNav.hidden=!open;toggle.textContent=open?"−":"+";
+      toggle.setAttribute("aria-expanded",open?"true":"false");
+      toggle.setAttribute("aria-label",(open?"Đóng":"Mở")+" các mục con của "+label);
+     });
+     link.insertAdjacentElement("afterend",toggle);
+     const childList=nestedNav.querySelector(":scope > ul.md-nav__list");
+     if(childList)enhanceList(childList);
+    }
+   });
+  };
+  enhanceList(root);
+ };
+ enhanceSecondaryToc();
+
  if(nav){
   const links=[...nav.querySelectorAll("a")];nav.addEventListener("click",expandTarget);
   const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("is-active",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-25% 0px -65% 0px"});
