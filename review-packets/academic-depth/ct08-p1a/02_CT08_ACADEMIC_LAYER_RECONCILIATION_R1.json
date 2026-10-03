@@ -1,0 +1,35 @@
+{
+  "schema": "ct08-academic-layer-reconciliation-r1",
+  "date": "2026-10-03",
+  "packet_id": "MATH-ACADEMIC-DEPTH-CT08-GAP-DELTA-R1-20261003",
+  "authorization": "CLEARED_FOR_CT08_P1_IMPLEMENTATION_ONLY",
+  "learner_layer_source_of_truth": "Academic Depth R1",
+  "mappings": [
+    {
+      "skill_id": "lap-bat-phuong-trinh",
+      "reviewed_academic_layer": "KNTT-Core",
+      "learner_role": "Ứng dụng Core",
+      "gates_core_readiness": false,
+      "legacy_taxonomy_v2_family": "INEQ-MODEL",
+      "legacy_taxonomy_v2_family_layer": "Entrance10",
+      "taxonomy_v2_action": "NO_MUTATION_IN_P1A",
+      "reason": "KNTT SGK/SBT directly supports real-world first-degree inequality modeling. Readiness/Taxonomy v2 is a separate protected program."
+    },
+    {
+      "skill_id": "giao-tap-nghiem",
+      "reviewed_academic_layer": "Core-Support",
+      "learner_role": "Củng cố",
+      "gates_core_readiness": false,
+      "legacy_taxonomy_v2_family": "INEQ-SOLVE",
+      "legacy_taxonomy_v2_family_layer": "KNTT-Core",
+      "taxonomy_v2_action": "NO_MUTATION_IN_P1A",
+      "reason": "SBT supports combining conditions, but NotebookLM R1 classifies this as Core-Support rather than an independent mandatory Core bar."
+    }
+  ],
+  "protected_boundaries": {
+    "mastery_readiness_change": false,
+    "backfill_regrade": false,
+    "history_migration": false,
+    "taxonomy_v2_runtime_mutation": false
+  }
+}
