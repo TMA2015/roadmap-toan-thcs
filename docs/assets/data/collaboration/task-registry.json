@@ -1,5 +1,5 @@
 {
-  "version": "1.0.183",
+  "version": "1.0.184",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1146,10 +1146,10 @@
       "title": "Academic Depth CT08 — source-backed self-learning audit",
       "routing": "SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_QA",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.183",
-      "review_verdict": "R0_CI_PASS_AWAITING_SUPPLEMENTAL_CORPUS_AND_NOTEBOOKLM",
-      "review_notes": "Draft PR #303 exact-head CI #655 PASS. Owner offered a ZIP of Grade 6-9 school exams, Grade-10 entrance exams and study materials. Ingest plan added: inventory/provenance/deduplicate, classify S1/S2/S3/S4, extract CT08 problem types, and revise packet to R1 before NotebookLM if evidence materially changes. No learner-facing edit yet.",
-      "review_packet": "review-packets/academic-depth/ct08-r0/10_NOTEBOOKLM_CT08_GAP_DELTA_R0.md"
+      "context_version": "1.0.184",
+      "review_verdict": "R1_NOTEBOOKLM_REVIEW_PACKET_READY_WITH_OWNER_CORPUS",
+      "review_notes": "Owner supplied four ZIP archives. Ingest: 85 raw files → 80 unique docs after 5 exact duplicates; 79 PDFs + 1 DOC / 2,051 unique PDF pages. Grade-6 ZIP includes six Grade-7 files, five duplicated in Grade-7 ZIP. Grade 6-8 semester sets are overwhelmingly Loigiaihay-compiled S2 exam-like practice, not authentic school-exam S3; school-semester frequency remains INSUFFICIENT_SOURCE. New verified transfer evidence: Cầu Giấy general mock and Hanoi inter-school mock both contain inequality modeling/minimum-bound problems; official KHXH&NV 2026 tests order/inequality solution recognition. CT08 R1 NotebookLM packet incorporates this without broadening the Delta.",
+      "review_packet": "review-packets/academic-depth/ct08-r1/02_NOTEBOOKLM_CT08_GAP_DELTA_R1.md"
     }
   ]
 }
