@@ -1,0 +1,18 @@
+Bạn đang phản biện độc lập Phase A của Skill Taxonomy cho Self-Learning Math.
+
+Chỉ dùng source “01_UPLOAD_TO_NOTEBOOKLM_SKILL39_R1.md”, packet MATH-SKILL-TAXONOMY-39-R1-20260930, exact source Git blob `3bb663e2eefeb2907b4915963c10387ddf3e504d`. Đây là read-only proposal, không phải migration runtime.
+
+Hãy kiểm đủ 39/39 item và toàn bộ clone-family proposal theo yêu cầu ở cuối source. Đặc biệt:
+- phân biệt prompt task demand với observable MCQ evidence;
+- không cho MCQ nhận diện/phương pháp/final-output chứng minh kỹ năng viết lời giải hoặc chứng minh;
+- kiểm granularity của 4 family FAC06V1_077–092;
+- giữ RAT07V1_119–120 pending Extension nếu source không đủ để hạ xuống Core;
+- clone-family chỉ phục vụ de-dup evidence tương lai, không xóa câu luyện tập.
+
+Trả đúng:
+1) Packet ID + verdict.
+2) Coverage 39/39.
+3) Chỉ liệt kê các item cần sửa trong bảng ID | field | current | corrected | reason; nếu không có thì ghi “0 item revisions”.
+4) Bảng 9 clone-family: PASS/REVISE + membership.
+5) Final counts theo decision_status và observable_evidence_class.
+6) Xác nhận review không bật runtime, không sửa legacy tags, không cộng mastery hay regrade lịch sử.
