@@ -73,7 +73,7 @@ The following are official Hanoi Department of Education publication pages with 
 
 ## S3 — Hanoi school semester/final exams
 
-Status: NOT_SELECTED.
+Status: SOURCE DISCOVERY STARTED.
 
 Selection rule for the pilot:
 - provenance must be clear;
@@ -81,6 +81,45 @@ Selection rule for the pilot:
 - prefer recent Grade 9 exams;
 - record school/year/semester;
 - do not use school reputation as a proxy for academic authority.
+
+### Secondary discovery index: Loigiaihay — KNTT Grade 9 exam collection
+
+- Site: https://loigiaihay.com/de-thi-de-kiem-tra-toan-lop-9-ket-noi-tri-thuc-c1984.html
+- Publisher/site: Loigiaihay.com
+- Source role: SECONDARY_DISCOVERY_INDEX / EXAM_STYLE_REFERENCE
+- Program filter: **Kết nối tri thức** only for the current project.
+- Accessibility check: PASS. Full problem text and detailed solutions are viewable for many entries.
+- Collection currently exposes:
+  - beginning-of-year survey exams, including named schools;
+  - 5 generic midterm-1 sets;
+  - 5 generic semester-1 exam sets plus a review outline;
+  - 5 generic midterm-2 sets;
+  - 5 generic semester-2 sets.
+- Named Hanoi school entries currently visible include:
+  - THCS–THPT Newton;
+  - THCS–THPT Tạ Quang Bửu;
+  - THCS&THPT Lương Thế Vinh.
+- Cross-grade usefulness: the same site also has KNTT Mathematics exam collections for Grades 6, 7 and 8, so it may later support the 25-topic audit beyond CT09.
+
+#### Classification rule
+
+Loigiaihay is **not itself an official assessment issuer**. Therefore:
+
+1. Generic items named only “Đề số 1…5” are treated as **S2 exam-style/pedagogical reference**, not as S3 frequency evidence.
+2. An item carrying a school/test identity may become an **S3 candidate** only after provenance is verified against the original school/issuer, downloadable scan metadata, or another traceable primary source.
+3. Loigiaihay answer explanations may be useful for method/error analysis, but are secondary explanations and never override S1 curriculum authority.
+4. No “hay gặp / phổ biến” claim may be computed from Loigiaihay's editorial set counts alone.
+
+#### CT09 evidence already observable on the site
+
+Without making frequency claims, accessible KNTT Grade 9 pages visibly contain CT09-relevant structures such as:
+- recognition of a linear equation in two variables;
+- checking/identifying a system solution;
+- selecting a system that models a two-unknown word problem;
+- direct solving of systems;
+- school survey items containing systems of equations.
+
+These observations justify using the site for **problem-type discovery**, while final frequency counts remain restricted to verified S3 items.
 
 ## S4 — Challenge
 
