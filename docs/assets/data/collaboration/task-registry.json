@@ -1,5 +1,5 @@
 {
-  "version": "1.0.185",
+  "version": "1.0.186",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1146,10 +1146,20 @@
       "title": "Academic Depth CT08 — source-backed self-learning audit",
       "routing": "SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_QA",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.185",
-      "review_verdict": "NOTEBOOKLM_R1_PASS_CLEARED_FOR_CT08_P1_IMPLEMENTATION_ONLY",
-      "review_notes": "NotebookLM R1 independent review PASS: C1-C12 all PASS. Authorized decisions: inequality modeling = KNTT-Core application; multi-condition intersection = Core-Support; remove row-level star table; keep generic topic priority badge; selective hints PASS; bounded EQ08V1_047..050 notation cleanup is safe without re-ID/regrade. P1 implementation may proceed slice-by-slice only.",
+      "context_version": "1.0.186",
+      "review_verdict": "P1A_IMPLEMENTATION_IN_PROGRESS",
+      "review_notes": "R1 academic review PASS. P1-A implementation is in progress on a separate branch; P1-B/P1-C remain blocked until P1-A technical/owner QA. No Mastery/Readiness change.",
       "review_packet": "review-packets/academic-depth/ct08-r1/02_NOTEBOOKLM_CT08_GAP_DELTA_R1.md",
+      "review_receipt": "review-packets/academic-depth/ct08-r1/03_CT08_R1_NOTEBOOKLM_PASS_RECEIPT.md"
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-CT08-P1A-001",
+      "title": "CT08 Academic Depth P1-A — framing, theory and reviewed layer correction",
+      "routing": "GITHUB_QA+OWNER_QA",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.186",
+      "review_verdict": "IMPLEMENTATION_IN_PROGRESS_AFTER_NOTEBOOKLM_R1_PASS",
+      "review_notes": "Authorized by CT08 R1 NotebookLM PASS. Scope: learner-layer correction (inequality modeling = KNTT-Core application; multi-condition = Core-Support, both non-gating), remove row-level star ranking but keep generic topic badge, add targeted worked examples (transform-to-product, transformed inequality, deeper one-variable model), add Core inequality-model teaching block, and notation-only cleanup EQ08V1_047..050 under academic lock. Taxonomy v2 registry/runtime remains protected and unchanged; no Mastery/Readiness, backfill/regrade or history migration.",
       "review_receipt": "review-packets/academic-depth/ct08-r1/03_CT08_R1_NOTEBOOKLM_PASS_RECEIPT.md"
     }
   ]
