@@ -71,7 +71,7 @@ def validate(page):
     root = page.locator('[data-skill-map-v2-controlled][data-skill-map-ready="true"]')
     root.wait_for(timeout=30000)
 
-    assert root.get_attribute("data-skill-map-build") == "skill-map-v2-i6-controlled-r1-20261003"
+    assert root.get_attribute("data-skill-map-build") == "skill-map-v2-i6b-learner-r1-20261003"
     intro = root.locator(".skill-map-v2-intro").inner_text()
     assert "Bản đồ kỹ năng" in intro
     assert "không phải kết luận thành thạo" in intro
