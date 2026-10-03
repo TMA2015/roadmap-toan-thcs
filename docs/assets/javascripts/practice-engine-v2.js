@@ -38,6 +38,11 @@
     return Array.isArray(value) ? value.filter(Boolean) : [value].filter(Boolean);
   };
 
+  const questionVariantGroup = (question) => {
+    const value = String(question?.variant_group || "").trim();
+    return value || null;
+  };
+
   const shuffle = (items) => {
     const result = [...items];
     for (let i = result.length - 1; i > 0; i -= 1) {
@@ -87,6 +92,9 @@
         if (!Array.isArray(question.hints) || !question.hints.length || question.hints.some((hint) => !String(hint || "").trim())) {
           throw new Error(`Câu ${question.id} có hints không hợp lệ`);
         }
+      }
+      if (question.variant_group !== undefined && !String(question.variant_group || "").trim()) {
+        throw new Error(`Câu ${question.id} có variant_group không hợp lệ`);
       }
     }
   };
@@ -251,22 +259,43 @@
       .map(([skill]) => skill);
   };
 
-  const pickFromPool = (pool, count, used) => {
+  const pickFromPool = (pool, count, used, usedVariantGroups = new Set()) => {
     const result = [];
+    const deferred = [];
+
     for (const question of pool) {
+      if (used.has(question.id)) continue;
+      const variantGroup = questionVariantGroup(question);
+      if (variantGroup && usedVariantGroups.has(variantGroup)) {
+        deferred.push(question);
+        continue;
+      }
+      result.push(question);
+      used.add(question.id);
+      if (variantGroup) usedVariantGroups.add(variantGroup);
+      if (result.length >= count) return result;
+    }
+
+    for (const question of deferred) {
       if (used.has(question.id)) continue;
       result.push(question);
       used.add(question.id);
+      const variantGroup = questionVariantGroup(question);
+      if (variantGroup) usedVariantGroups.add(variantGroup);
       if (result.length >= count) break;
     }
     return result;
   };
+
+  const buildDiverseSession = (pool, count) =>
+    pickFromPool(pool, count, new Set(), new Set());
 
   const buildFocusedSession = (questions, stats, skills, sessionSize) => {
     const focus = skills.filter(Boolean).slice(0, 2);
     if (!focus.length) return [];
 
     const used = new Set();
+    const usedVariantGroups = new Set();
     const selected = [];
     const firstQuota = focus.length === 2 ? Math.ceil(sessionSize / 2) : sessionSize;
     const quotas = focus.length === 2 ? [firstQuota, sessionSize - firstQuota] : [sessionSize];
@@ -274,17 +303,17 @@
     focus.forEach((skill, index) => {
       const subset = questions.filter((question) => questionSkills(question).includes(skill));
       const pool = weightedQuestionPool(subset, stats);
-      selected.push(...pickFromPool(pool, quotas[index], used));
+      selected.push(...pickFromPool(pool, quotas[index], used, usedVariantGroups));
     });
 
     if (selected.length < sessionSize) {
       const focusSet = new Set(focus);
       const union = questions.filter((question) => questionSkills(question).some((skill) => focusSet.has(skill)));
-      selected.push(...pickFromPool(weightedQuestionPool(union, stats), sessionSize - selected.length, used));
+      selected.push(...pickFromPool(weightedQuestionPool(union, stats), sessionSize - selected.length, used, usedVariantGroups));
     }
 
     if (selected.length < sessionSize) {
-      selected.push(...pickFromPool(weightedQuestionPool(questions, stats), sessionSize - selected.length, used));
+      selected.push(...pickFromPool(weightedQuestionPool(questions, stats), sessionSize - selected.length, used, usedVariantGroups));
     }
 
     return shuffle(selected).slice(0, sessionSize);
@@ -390,7 +419,7 @@
     startNormalSession() {
       this.stats = loadStats();
       const pool = weightedQuestionPool(this.questions, this.stats);
-      const session = pool.slice(0, Math.min(this.sessionSize, pool.length));
+      const session = buildDiverseSession(pool, Math.min(this.sessionSize, pool.length));
       this.setSession(
         session,
         "normal",
@@ -404,7 +433,7 @@
       const weakSkills = rankWeakSkills(this.stats, this.bankSkills, this.skillOrder).slice(0, 2);
       if (!weakSkills.length) {
         const pool = weightedQuestionPool(this.questions, this.stats);
-        const session = pool.slice(0, Math.min(this.sessionSize, pool.length));
+        const session = buildDiverseSession(pool, Math.min(this.sessionSize, pool.length));
         this.setSession(
           session,
           "weak",
@@ -428,7 +457,7 @@
       this.stats = loadStats();
       const subset = this.questions.filter((question) => questionSkills(question).includes(skill));
       const pool = weightedQuestionPool(subset, this.stats);
-      const session = pool.slice(0, Math.min(this.sessionSize, pool.length));
+      const session = buildDiverseSession(pool, Math.min(this.sessionSize, pool.length));
       this.setSession(
         session,
         "skill",
@@ -1073,7 +1102,7 @@
       if (this.bankSkills.includes(skill)) {
         const subset = this.questions.filter((question) => questionSkills(question).includes(skill));
         const pool = weightedQuestionPool(subset, this.stats);
-        const session = pool.slice(0, Math.min(REMEDIATION_SESSION_SIZE, pool.length));
+        const session = buildDiverseSession(pool, Math.min(REMEDIATION_SESSION_SIZE, pool.length));
         if (session.length) {
           this.setSession(session, "remediation", [skill], `Ôn nền tảng: ${this.prettyTag(skill)} · ${session.length} câu.`);
           this.root.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -1094,7 +1123,7 @@
       const subset = this.questions.filter((question) => questionSkills(question).includes(skill));
       if (!subset.length) return false;
       const pool = weightedQuestionPool(subset, this.stats);
-      const session = pool.slice(0, Math.min(REMEDIATION_SESSION_SIZE, pool.length));
+      const session = buildDiverseSession(pool, Math.min(REMEDIATION_SESSION_SIZE, pool.length));
       this.setSession(session, "remediation", [skill], `Ôn nền tảng: ${this.prettyTag(skill)} · ${session.length} câu.`);
       return true;
     }
