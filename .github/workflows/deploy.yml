@@ -157,6 +157,9 @@ jobs:
       - name: Audit practice quality
         run: python audit_practice_quality.py
 
+      - name: Validate CT09 Academic Depth P1-A
+        run: node scripts/test-topic09-academic-depth-p1a.js
+
       - name: Validate CĐ25 display math source
         run: node scripts/test-topic25-math-render.js
 
