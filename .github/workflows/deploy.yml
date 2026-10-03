@@ -159,6 +159,8 @@ jobs:
 
       - name: Validate CT09 Academic Depth P1-A
         run: node scripts/test-topic09-academic-depth-p1a.js
+      - name: Validate learner-focused skill metadata
+        run: node scripts/test-learner-focus-skill-metadata.js
 
       - name: Validate CĐ25 display math source
         run: node scripts/test-topic25-math-render.js
