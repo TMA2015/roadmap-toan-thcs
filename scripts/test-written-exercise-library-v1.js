@@ -123,8 +123,8 @@ for(const id of ["WX09-SYS-003","WX09-SYS-004","WX09-SYS-005","WX09-SYS-006","WX
   ok(anchor.academic_review?.receipt==="review-packets/academic-depth/ct09-p1b/02_NOTEBOOKLM_CT09_P1B_WRITTEN_R1_PASS_RECEIPT.md","P1-B review receipt "+id);
   ok(anchor.remediation_links.every(l=>/^\.\.\/kien-thuc\//.test(l.href)),"P1-B remediation links "+id);
 }
-ok(byId["WX09-SYS-003"].full_solution_markdown.includes("x=24")&&byId["WX09-SYS-003"].full_solution_markdown.includes("y=16"),"WX09-003 result");
-ok(byId["WX09-SYS-004"].full_solution_markdown.includes("x=1800")&&byId["WX09-SYS-004"].full_solution_markdown.includes("y=600"),"WX09-004 result");
+ok(byId["WX09-SYS-003"].full_solution_markdown.includes("x=24")&&byId["WX09-SYS-003"].full_solution_markdown.includes("y=40-24=16"),"WX09-003 result");
+ok(byId["WX09-SYS-004"].full_solution_markdown.includes("x=1800")&&byId["WX09-SYS-004"].full_solution_markdown.includes("y=2400-1800=600"),"WX09-004 result");
 ok(byId["WX09-SYS-005"].full_solution_markdown.includes("x=8")&&byId["WX09-SYS-005"].full_solution_markdown.includes("y=12"),"WX09-005 result");
 ok(byId["WX09-SYS-006"].full_solution_markdown.includes("x=30")&&byId["WX09-SYS-006"].full_solution_markdown.includes("y=20"),"WX09-006 result");
 ok(byId["WX09-SYS-007"].full_solution_markdown.includes("(x;y)=(8;2)"),"WX09-007 result");
