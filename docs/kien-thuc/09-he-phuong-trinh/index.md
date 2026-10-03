@@ -157,12 +157,12 @@ Có thể đọc hình theo một quy tắc duy nhất:
 
 Xét hệ:
 
-$
+$$
 \begin{cases}
 x+y=4\\
 x-y=0
 \end{cases}
-$
+$$
 
 **Bước 1 – Viết mỗi phương trình dưới dạng dễ vẽ.**
 
@@ -184,9 +184,9 @@ Giao điểm `(2;2)` là nghiệm của hệ vì cùng nằm trên **cả hai** 
 
 **Bước 4 – Kiểm tra bằng đại số.**
 
-$
+$$
 2+2=4,\qquad 2-2=0.
-$
+$$
 
 Vì `(2;2)` thỏa đồng thời hai phương trình nên nghiệm đọc từ đồ thị là đúng.
 
@@ -558,7 +558,7 @@ Phương pháp:
 
 ### Dạng 7 – Biện luận hệ theo tham số (Ôn thi vào 10)
 
- > **Mức học:** Mở rộng để ôn thi vào 10. Không bắt buộc nếu em đang học phần nền tảng.
+> **Mức học:** Mở rộng để ôn thi vào 10. Không bắt buộc nếu em đang học phần nền tảng.
 >
 > **Mức vận dụng:** cần xét cẩn thận các giá trị tham số làm thay đổi hệ số hoặc làm một phương trình suy biến.
 
@@ -607,52 +607,52 @@ Vì đây là số lượng đồ vật nên `x,y` là các số nguyên không 
 
 Từ tổng số đồ vật:
 
-$
+$$
 x+y=28.
-$
+$$
 
 Từ tổng số tiền:
 
-$
+$$
 15000x+5000y=300000.
-$
+$$
 
 Chia phương trình hai cho `5000`:
 
-$
+$$
 3x+y=60.
-$
+$$
 
 Ta có hệ:
 
-$
+$$
 \begin{cases}
 x+y=28\\
 3x+y=60
 \end{cases}
-$
+$$
 
 **Bước 4 – Giải hệ.**
 
 Lấy phương trình hai trừ phương trình một:
 
-$
+$$
 2x=32\Rightarrow x=16.
-$
+$$
 
 Suy ra:
 
-$
+$$
 y=28-16=12.
-$
+$$
 
 **Bước 5 – Kiểm tra và kết luận.**
 
 `x=16, y=12` thỏa điều kiện và:
 
-$
+$$
 16\cdot15000+12\cdot5000=300000.
-$
+$$
 
 Vậy câu lạc bộ mua **16 quyển sổ và 12 bút chì**.
 
@@ -740,15 +740,15 @@ Thay nghiệm vào hệ ban đầu là cách phát hiện rất nhanh lỗi tín
 
 ## 📝 8. Luyện tập tiếp theo
 
-Micro-practice trong các Learning Cards dùng để kiểm tra nhanh ngay sau khi học. Khi muốn luyện sâu hơn, luyện từng skill hoặc làm bài tự luận, hãy chuyển sang **Practice Room**.
+Các câu hỏi ngắn ngay trong bài giúp em kiểm tra nhanh sau khi học. Khi muốn luyện nhiều hơn hoặc làm bài tự luận, hãy mở phần **Luyện tập** của chuyên đề.
 
-[🎯 Mở Practice Room – Chuyên đề 09](bai-tap.md){ .md-button .md-button--primary }
+[🎯 Mở Luyện tập – Chuyên đề 09](bai-tap.md){ .md-button .md-button--primary }
 
-Trong Practice Room:
+Trong phần Luyện tập:
 
-- **Luyện nhanh tương tác:** Practice Engine chọn câu từ ngân hàng lớn, có feedback, gợi ý và Tutor.
-- **Luyện tự luận & trình bày:** tự giải trên giấy/vở rồi mở gợi ý hoặc lời giải để tự đối chiếu.
-- Core / Entrance10 / Challenge được tách rõ.
+- **Luyện nhanh tương tác:** làm câu hỏi và xem giải thích khi cần.
+- **Luyện tự luận & trình bày:** tự giải trên giấy/vở rồi mở gợi ý hoặc lời giải để đối chiếu.
+- Phần nền tảng, ôn thi vào 10 và thử thách được tách riêng để em chọn mức phù hợp.
 
 !!! info "Cách dùng phần luyện tập"
     Câu hỏi ngắn giúp em kiểm tra ngay sau khi học. Practice Room dùng để **luyện sâu hơn** và xem giải thích khi cần.
@@ -789,11 +789,11 @@ Xem toàn bộ hệ thống tại [Blueprint 25 chuyên đề](../../roadmap/blu
 
 Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi học sinh có phần lớn các bằng chứng sau:
 
-- [ ] Hiểu và giải thích được các quy tắc Core của chuyên đề.
-- [ ] Làm tương đối ổn định các skill Core trong Practice Room.
-- [ ] Không lặp lại ổn định cùng một lỗi nền tảng sau khi đã được chữa.
+- [ ] Hiểu và giải thích được các kiến thức nền tảng của chuyên đề.
+- [ ] Làm tương đối ổn định các dạng bài cơ bản trong phần Luyện tập.
+- [ ] Không lặp lại cùng một lỗi nền tảng sau khi đã được chữa.
 - [ ] Bài tự kiểm tra đạt khoảng **80%** hoặc em đã hiểu và chữa được các lỗi còn lại.
-- [ ] Có thể trình bày ít nhất một số bài tự luận Core mà không mở lời giải trước.
+- [ ] Có thể trình bày một số bài tự luận nền tảng mà không mở lời giải trước.
 
 !!! note "Không cần hoàn hảo mới học tiếp"
     Không cần đạt 100% mới chuyển sang chuyên đề sau. Nếu còn phần chưa chắc, em có thể đánh dấu để quay lại luyện thêm.
@@ -807,7 +807,7 @@ Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi họ
 
 <div class="topic-workspace-actions" markdown>
 
-[🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
+[🎯 Sang phần Luyện tập](bai-tap.md){ .md-button .md-button--primary }
 
 [✅ Tự kiểm tra](tu-kiem-tra.md){ .md-button }
 
