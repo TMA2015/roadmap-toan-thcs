@@ -1,5 +1,5 @@
 {
-  "version": "1.0.174",
+  "version": "1.0.175",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1063,9 +1063,9 @@
       "title": "Academic Depth CT09 pilot — source-backed self-learning audit",
       "routing": "CHATGPT_SOURCE_ANALYSIS+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.174",
+      "context_version": "1.0.175",
       "review_verdict": "NOTEBOOKLM_10_OF_10_PASS_CT09_IMPLEMENTATION_AUTHORIZED",
-      "review_notes": "CT09 pilot IN_PROGRESS. P1-A and P1-B closed Owner QA PASS. P1-C1 anti-clone selector is live with CI/deploy PASS and owner production QA pending. P1-C2 nine-item targeted interactive packet received NotebookLM PASS with 0 revisions and is cleared for integration only.",
+      "review_notes": "CT09 pilot IN_PROGRESS. P1-A/P1-B closed Owner QA PASS. P1-C1 is live and still awaits owner learner-UI spot check. P1-C2 academic review PASS; technical integration is in progress on a separate branch and may not be released until exact-head CI passes and P1-C1 owner QA is closed.",
       "review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md"
     },
     {
@@ -1112,9 +1112,9 @@
       "title": "CT09 Academic Depth P1-C2 — targeted interactive coverage",
       "routing": "NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_PRODUCTION_QA",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.174",
-      "review_verdict": "NOTEBOOKLM_PASS_CLEARED_FOR_INTEGRATION_ONLY",
-      "review_notes": "NotebookLM independently reviewed SYS09V1_121..129 and C1-C10: all PASS, 0 revisions. Authorization CLEARED_FOR_CT09_P1C2_INTEGRATION_ONLY. Integration may proceed on a separate implementation branch; no Mastery/Readiness, backfill/regrade, attempt migration or mass-edit authorization.",
+      "context_version": "1.0.175",
+      "review_verdict": "IMPLEMENTATION_IN_PROGRESS_AFTER_NOTEBOOKLM_PASS",
+      "review_notes": "NotebookLM PASS 9/9 items and C1-C10, 0 revisions. Implementation branch appends SYS09V1_121..129 in a new fifth chunk, raises CT09 manifest 120→129 and structural groups 18→27, and adds a separate reviewed Taxonomy v2 shadow extension for the nine new rows without rewriting the frozen I3G aggregate. Mastery/Readiness, backfill/regrade and historical IDs remain unchanged. Production merge remains gated by exact-head CI and closure of P1-C1 owner production QA.",
       "review_packet": "review-packets/academic-depth/ct09-p1c2/01_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_CANDIDATES_R1.md",
       "review_receipt": "review-packets/academic-depth/ct09-p1c2/02_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_R1_PASS_RECEIPT.md"
     }
