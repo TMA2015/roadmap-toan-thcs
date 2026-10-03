@@ -1,5 +1,5 @@
 {
-  "version": "1.0.154",
+  "version": "1.0.155",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "I6 Controlled learner-facing Skill Map is implemented on a dedicated branch and awaiting exact-head CI. The candidate keeps I4 owner preview behavior intact while adding a separate learner mode/page with R2 sparse-data wording: N=0 no evidence, N=1–2 counts + 'Dữ liệu còn ít' with no percentage, N>=3 descriptive observed percentage only. Technical family IDs are hidden in learner mode; legacy Practice remains separate; no Mastery/Readiness/backfill/regrade or learner-data writes are introduced. Next step: PR CI + desktop/mobile browser QA, then owner-controlled deployment/QA before any broader navigation exposure.",
+    "next_priority": "I6 controlled learner-facing Skill Map is deployed and owner visual QA PASS. Controlled release is closed. Before broader learner activation, remove internal QA/release jargon from learner-visible title/copy and use a learner-friendly route/navigation entry. Mastery, Readiness, backfill/regrade and broad learner navigation remain OFF until the next gate.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -2049,7 +2049,7 @@
         }
       },
       "i6": {
-        "status": "IMPLEMENTATION_BRANCH_PRE_CI",
+        "status": "DONE_CONTROLLED_RELEASE_OWNER_QA_PASS",
         "phase": "I6_CONTROLLED_LEARNER_FACING_RELEASE",
         "prerequisite": "I5_POLICY_REVIEW_PASS",
         "branch": "impl/skill-taxonomy-v2-i6-controlled-release-r1-20261003",
@@ -2071,7 +2071,19 @@
         "readiness_enabled": false,
         "history_backfill_enabled": false,
         "learner_data_write_enabled": false,
-        "broader_navigation_release": false
+        "broader_navigation_release": false,
+        "owner_qa": "PASS",
+        "exact_head_ci": "PASS",
+        "deploy": "PASS",
+        "merge_sha": "56b56aa03a486d0b78de767b02fa778dd5303ce8",
+        "gh_pages_sha": "15e245b22d5947b4c3a9d55ed0776998bde9fa9a",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/phase-i6/01_I6_OWNER_QA_PASS.md"
+      },
+      "i6b": {
+        "status": "NOT_STARTED",
+        "phase": "BROADER_LEARNER_FACING_ACTIVATION",
+        "prerequisite": "I6_CONTROLLED_RELEASE_OWNER_QA_PASS",
+        "owner_authorization_required": true
       }
     },
     "notebooklm_taxonomy_workflow": {
