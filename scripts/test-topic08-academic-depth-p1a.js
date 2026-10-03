@@ -28,7 +28,7 @@ assert.match(index, /> \*\*Mức ưu tiên:\*\* ⭐⭐⭐⭐⭐/, "generic topic
 assert.doesNotMatch(index, /\| Phương trình cơ bản \| ⭐/, "row-level star ranking must be removed");
 assert.doesNotMatch(index, /⭐ là \*\*mức độ ưu tiên ôn tập/, "old row-star disclaimer must be removed");
 assert.match(index, /## 🚀 6\. Ôn tập và chuyển giao thi vào lớp 10/);
-assert.ok(index.includes("mẫu nhỏ \\(n=2\\)"), "must keep declared n=2 sample");
+assert.ok(index.includes("mẫu nhỏ (n=2)"), "must keep declared n=2 sample");
 assert.ok(index.includes("không phải dự đoán tần suất đề thi"), "must keep non-predictive frequency wording");
 
 // P1-A theory depth.
