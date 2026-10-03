@@ -27,7 +27,7 @@ with sync_playwright() as p:
     assert "Biến đổi rồi mới dùng tính chất tích bằng 0" in body
     assert "Thu gọn rồi mới giải bất phương trình" in body
     assert "Mô hình hóa bằng một ẩn" in body
-    assert "Ứng dụng Core – lập bất phương trình từ bài toán" in body
+    assert "Ứng dụng – lập bất phương trình từ bài toán" in body
     assert "Phương trình cơ bản ⭐⭐⭐⭐⭐" not in body
     assert "mức độ ưu tiên ôn tập của Roadmap" not in body
 
@@ -38,15 +38,15 @@ with sync_playwright() as p:
     assert "không tự động thay đổi Core Readiness" in summary
     ext.locator("summary").click()
     chips = ext.locator(".topic-extension-list").inner_text()
-    assert "Ứng dụng Core: Lập bất phương trình từ bài toán" in chips
+    assert "Ứng dụng: Lập bất phương trình từ bài toán" in chips
     assert "Củng cố: Giao nhiều tập nghiệm" in chips
     assert "Thử thách: Tham số trong phương trình/bất phương trình" in chips
 
     page.goto(PRACTICE, wait_until="networkidle")
     practice_text = page.locator("body").inner_text()
-    assert "Ứng dụng KNTT-Core" in practice_text
+    assert "Ứng dụng" in practice_text
     assert "08-APP-01 · Lập bất phương trình" in practice_text
-    assert "Củng cố / Core-Support" in practice_text
+    assert "Củng cố" in practice_text
     assert "08-SUP-01 · Giao tập nghiệm" in practice_text
     assert "Entrance10 / Extension" not in practice_text
 
