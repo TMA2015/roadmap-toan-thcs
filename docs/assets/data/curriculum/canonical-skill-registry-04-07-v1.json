@@ -1,0 +1,1476 @@
+{
+  "schema": "canonical-skill-registry-04-07-v1",
+  "status": "REVIEWED_SEMANTICS_RUNTIME_DISABLED",
+  "as_of": "2026-09-30",
+  "scope": "CĐ04–07 only",
+  "source_reviews": {
+    "phase_a": {
+      "packet": "MATH-SKILL-TAXONOMY-39-R1-20260930",
+      "verdict": "PASS",
+      "coverage": "39/39 items; 9/9 clone families"
+    },
+    "phase_b": {
+      "packet": "MATH-SKILL-CODE52-R1-20260930",
+      "source_blob": "b77f810b4c57a0bdca5038e6722b4ac968f71a5d",
+      "verdict": "PASS",
+      "coverage": "52/52 codes; 55/55 occurrences; 0 revisions"
+    }
+  },
+  "policies": {
+    "semantic_node_not_equal_mastery_counter": true,
+    "one_concept_shared_across_topics_when_phase_b_merge_one_concept": true,
+    "topic_task_demand_retained": true,
+    "metadata_nodes_may_remain_useful_without_learner_counter": true,
+    "pending_nodes_never_count_as_mastery": true,
+    "runtime_enabled": false,
+    "historical_backfill": false,
+    "legacy_tags_immutable": true,
+    "mastery_threshold_defined": false
+  },
+  "summary": {
+    "legacy_codes_reviewed": 52,
+    "canonical_nodes": 53,
+    "shared_concepts": 3,
+    "reviewed_relationships": 8,
+    "legacy_counter_status": {
+      "YES": 38,
+      "NO": 7,
+      "PENDING": 7
+    },
+    "with_new_output_candidate_counter_status": {
+      "YES": 38,
+      "NO": 7,
+      "PENDING": 8
+    },
+    "runtime_enabled_nodes": 0
+  },
+  "nodes": [
+    {
+      "canonical_id": "bai-toan-thuc-te",
+      "source_legacy_codes": [
+        "bai-toan-thuc-te"
+      ],
+      "semantic_kind": "context",
+      "learner_counter_status": "NO",
+      "evidence_readiness": "CONTEXT_TAG_ONLY",
+      "registry_role": "metadata_only",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 10
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": [
+        "Prior representative review: context for lap-bieu-thuc, not an assessment target."
+      ]
+    },
+    {
+      "canonical_id": "bien-doi-nhieu-buoc",
+      "source_legacy_codes": [
+        "bien-doi-nhieu-buoc"
+      ],
+      "semantic_kind": "task_family",
+      "learner_counter_status": "PENDING",
+      "evidence_readiness": "FORMATIVE_ONLY_BROAD_COMPOSITE",
+      "registry_role": "pending_counter",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 12
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "bieu-thuc-nhieu-phep-tinh",
+      "source_legacy_codes": [
+        "bieu-thuc-nhieu-phep-tinh"
+      ],
+      "semantic_kind": "composite_skill",
+      "learner_counter_status": "PENDING",
+      "evidence_readiness": "FORMATIVE_ONLY_CLONE_DIVERSITY_REQUIRED",
+      "registry_role": "pending_counter",
+      "topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 6
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": [
+        "Phase A marks RAT07V1_109–114 as one clone family with MCQ_FINAL_OUTPUT_ONLY; no mastery counter yet."
+      ]
+    },
+    {
+      "canonical_id": "binh-phuong-hieu",
+      "source_legacy_codes": [
+        "binh-phuong-hieu"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 16
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "binh-phuong-hoan-chinh",
+      "source_legacy_codes": [
+        "binh-phuong-hoan-chinh"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED_SHARED_CONCEPT",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "05-7-hang-dang-thuc",
+        "06-phan-tich-da-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 16
+        },
+        {
+          "topic": "06-phan-tich-da-thuc",
+          "count": 10
+        }
+      ],
+      "shared_concept": true,
+      "task_variants": {
+        "05-7-hang-dang-thuc": "Nhận dạng/viết gọn cấu trúc bình phương của tổng hoặc hiệu.",
+        "06-phan-tich-da-thuc": "Áp dụng cấu trúc bình phương hoàn chỉnh khi phân tích đa thức."
+      },
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": [
+        "Same legacy code appears in two topics; candidate is one canonical concept with topic-specific task demand. Independent code-level review required before canonical merge."
+      ]
+    },
+    {
+      "canonical_id": "binh-phuong-tong",
+      "source_legacy_codes": [
+        "binh-phuong-tong"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 18
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "bo-ngoac-dau",
+      "source_legacy_codes": [
+        "bo-ngoac-dau"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_DIAGNOSTIC_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 26
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "chia-da-thuc-cho-don-thuc",
+      "source_legacy_codes": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 12
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "chia-phan-thuc",
+      "source_legacy_codes": [
+        "chia-phan-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 8
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "chung-minh-hdt",
+      "source_legacy_codes": [
+        "chung-minh-hdt"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "WRITTEN_EVIDENCE_REQUIRED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 4
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "cong-tru-da-thuc",
+      "source_legacy_codes": [
+        "cong-tru-da-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 14
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "cong-tru-phan-thuc",
+      "source_legacy_codes": [
+        "cong-tru-phan-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 18
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "dieu-kien-xac-dinh",
+      "source_legacy_codes": [
+        "dieu-kien-xac-dinh"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED_SHARED_CONCEPT",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "04-bieu-thuc-dai-so",
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 10
+        },
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 16
+        }
+      ],
+      "shared_concept": true,
+      "task_variants": {
+        "04-bieu-thuc-dai-so": "Nhận diện điều kiện mẫu khác 0 trong biểu thức/phân thức đơn giản.",
+        "07-phan-thuc-dai-so": "Phân tích mẫu, tìm điều kiện xác định phức hợp và duy trì miền xác định khi biến đổi."
+      },
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": [
+        "Same legacy code appears in two topics; candidate is one canonical concept with topic-specific task demand. Independent code-level review required before canonical merge."
+      ]
+    },
+    {
+      "canonical_id": "doi-dau-nhan-tu-chung",
+      "source_legacy_codes": [
+        "doi-dau-nhan-tu-chung"
+      ],
+      "semantic_kind": "diagnostic_skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_DIAGNOSTIC_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "06-phan-tich-da-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "06-phan-tich-da-thuc",
+          "count": 8
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "doi-dau-phan-thuc",
+      "source_legacy_codes": [
+        "doi-dau-phan-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 8
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "giai-phuong-trinh-hdt",
+      "source_legacy_codes": [
+        "giai-phuong-trinh-hdt"
+      ],
+      "semantic_kind": "composite_skill",
+      "learner_counter_status": "PENDING",
+      "evidence_readiness": "FINAL_OUTPUT_ONLY_STEP_EVIDENCE_NEEDED",
+      "registry_role": "pending_counter",
+      "topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 5
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "giai-pt-bang-nhan-tu",
+      "source_legacy_codes": [
+        "giai-pt-bang-nhan-tu"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "06-phan-tich-da-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "06-phan-tich-da-thuc",
+          "count": 12
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "giu-dieu-kien-ban-dau",
+      "source_legacy_codes": [
+        "giu-dieu-kien-ban-dau"
+      ],
+      "semantic_kind": "diagnostic_skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_DIAGNOSTIC_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 14
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "hai-phan-thuc-bang-nhau",
+      "source_legacy_codes": [
+        "hai-phan-thuc-bang-nhau"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 6
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "hang-tu-dong-dang",
+      "source_legacy_codes": [
+        "hang-tu-dong-dang"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_DIAGNOSTIC_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 24
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "he-so-bac",
+      "source_legacy_codes": [
+        "he-so-bac"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 8
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "hieu-hai-binh-phuong",
+      "source_legacy_codes": [
+        "hieu-hai-binh-phuong"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED_SHARED_CONCEPT",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "05-7-hang-dang-thuc",
+        "06-phan-tich-da-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 19
+        },
+        {
+          "topic": "06-phan-tich-da-thuc",
+          "count": 12
+        }
+      ],
+      "shared_concept": true,
+      "task_variants": {
+        "05-7-hang-dang-thuc": "Nhận dạng/biến đổi hằng đẳng thức hiệu hai bình phương.",
+        "06-phan-tich-da-thuc": "Áp dụng hiệu hai bình phương để phân tích đa thức thành nhân tử."
+      },
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": [
+        "Same legacy code appears in two topics; candidate is one canonical concept with topic-specific task demand. Independent code-level review required before canonical merge."
+      ]
+    },
+    {
+      "canonical_id": "hieu-hai-lap-phuong",
+      "source_legacy_codes": [
+        "hieu-hai-lap-phuong"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 12
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "kiem-tra-phan-tich",
+      "source_legacy_codes": [
+        "kiem-tra-phan-tich"
+      ],
+      "semantic_kind": "task_family",
+      "learner_counter_status": "PENDING",
+      "evidence_readiness": "RECOGNITION_TASK_NOT_FULL_EXECUTION",
+      "registry_role": "pending_counter",
+      "topics": [
+        "06-phan-tich-da-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "06-phan-tich-da-thuc",
+          "count": 8
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "lap-bieu-thuc",
+      "source_legacy_codes": [
+        "lap-bieu-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 10
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "lap-phuong-hieu",
+      "source_legacy_codes": [
+        "lap-phuong-hieu"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 11
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "lap-phuong-tong",
+      "source_legacy_codes": [
+        "lap-phuong-tong"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 11
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "nhan-biet-da-thuc",
+      "source_legacy_codes": [
+        "nhan-biet-da-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 6
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "nhan-biet-don-thuc",
+      "source_legacy_codes": [
+        "nhan-biet-don-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 6
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "nhan-biet-phan-thuc",
+      "source_legacy_codes": [
+        "nhan-biet-phan-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 8
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "nhan-bieu-thuc",
+      "source_legacy_codes": [
+        "nhan-bieu-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 26
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "nhan-dang-hdt",
+      "source_legacy_codes": [
+        "nhan-dang-hdt"
+      ],
+      "semantic_kind": "parent_category",
+      "learner_counter_status": "NO",
+      "evidence_readiness": "CATEGORY_NOT_SEPARATE_COUNTER",
+      "registry_role": "metadata_only",
+      "topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 21
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": [
+        "Prior representative review: general category; specific pattern binh-phuong-hoan-chinh was assessed on reviewed sample."
+      ]
+    },
+    {
+      "canonical_id": "nhan-dang-lap-phuong",
+      "source_legacy_codes": [
+        "nhan-dang-lap-phuong"
+      ],
+      "semantic_kind": "diagnostic_skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_DIAGNOSTIC_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 4
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "nhan-phan-thuc",
+      "source_legacy_codes": [
+        "nhan-phan-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 14
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "nhan-tu-chung",
+      "source_legacy_codes": [
+        "nhan-tu-chung"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "06-phan-tich-da-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "06-phan-tich-da-thuc",
+          "count": 20
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "nhom-hang-tu",
+      "source_legacy_codes": [
+        "nhom-hang-tu"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "06-phan-tich-da-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "06-phan-tich-da-thuc",
+          "count": 12
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "phan-tich-hdt",
+      "source_legacy_codes": [
+        "phan-tich-hdt"
+      ],
+      "semantic_kind": "parent_category",
+      "learner_counter_status": "NO",
+      "evidence_readiness": "CATEGORY_NOT_SEPARATE_COUNTER",
+      "registry_role": "metadata_only",
+      "topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 30
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": [
+        "Prior representative review: broad category; specific identity such as hieu-hai-binh-phuong is the assessed target on reviewed sample."
+      ]
+    },
+    {
+      "canonical_id": "phan-tich-tu-mau",
+      "source_legacy_codes": [
+        "phan-tich-tu-mau"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 32
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "phoi-hop-phuong-phap",
+      "source_legacy_codes": [
+        "phoi-hop-phuong-phap"
+      ],
+      "semantic_kind": "parent_category",
+      "learner_counter_status": "NO",
+      "evidence_readiness": "BROAD_LEGACY_LABEL_REPLACEMENT_OUTPUT_CANDIDATE_REVIEWED",
+      "registry_role": "metadata_only",
+      "topics": [
+        "06-phan-tich-da-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "06-phan-tich-da-thuc",
+          "count": 16
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": [
+        "Phase A 39-item review retained a new output candidate phan-tich-da-thuc-hoan-toan for FAC06V1_077–092; do not rename all legacy occurrences automatically."
+      ]
+    },
+    {
+      "canonical_id": "quy-dong-mau-thuc",
+      "source_legacy_codes": [
+        "quy-dong-mau-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 22
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "rut-gon-hdt",
+      "source_legacy_codes": [
+        "rut-gon-hdt"
+      ],
+      "semantic_kind": "task_family",
+      "learner_counter_status": "PENDING",
+      "evidence_readiness": "COMPOSITE_FINAL_OUTPUT_NEEDS_DIVERSE_EVIDENCE",
+      "registry_role": "pending_counter",
+      "topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 12
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "rut-gon-phan-thuc",
+      "source_legacy_codes": [
+        "rut-gon-phan-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 32
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "tach-hang-tu-giua",
+      "source_legacy_codes": [
+        "tach-hang-tu-giua"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "06-phan-tich-da-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "06-phan-tich-da-thuc",
+          "count": 12
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "thu-gon-da-thuc",
+      "source_legacy_codes": [
+        "thu-gon-da-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 30
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "tim-gia-tri-nguyen",
+      "source_legacy_codes": [
+        "tim-gia-tri-nguyen"
+      ],
+      "semantic_kind": "extension_skill",
+      "learner_counter_status": "PENDING",
+      "evidence_readiness": "EXTENSION_LAYER_PENDING",
+      "registry_role": "pending_counter",
+      "topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 2
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": [
+        "Phase A PASS keeps RAT07V1_119–120 extension_only_pending_layer_check."
+      ]
+    },
+    {
+      "canonical_id": "tinh-gia-tri-bieu-thuc",
+      "source_legacy_codes": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 12
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "tinh-gia-tri-phan-thuc",
+      "source_legacy_codes": [
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "07-phan-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "07-phan-thuc-dai-so",
+          "count": 4
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "tinh-nhanh-hdt",
+      "source_legacy_codes": [
+        "tinh-nhanh-hdt"
+      ],
+      "semantic_kind": "task_family",
+      "learner_counter_status": "PENDING",
+      "evidence_readiness": "FINAL_ANSWER_DOES_NOT_PROVE_METHOD",
+      "registry_role": "pending_counter",
+      "topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 10
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "tinh-phan-phoi",
+      "source_legacy_codes": [
+        "tinh-phan-phoi"
+      ],
+      "semantic_kind": "method",
+      "learner_counter_status": "NO",
+      "evidence_readiness": "METHOD_TAG_ONLY_ON_CURRENT_BANK",
+      "registry_role": "metadata_only",
+      "topics": [
+        "04-bieu-thuc-dai-so"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "04-bieu-thuc-dai-so",
+          "count": 26
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": [
+        "Prior representative review: method for nhan-bieu-thuc; current CĐ04 bank count is 26/26 co-occurrence with nhan-bieu-thuc."
+      ]
+    },
+    {
+      "canonical_id": "tong-hai-lap-phuong",
+      "source_legacy_codes": [
+        "tong-hai-lap-phuong"
+      ],
+      "semantic_kind": "skill",
+      "learner_counter_status": "YES",
+      "evidence_readiness": "DIRECT_MCQ_SUPPORTED",
+      "registry_role": "counter_candidate",
+      "topics": [
+        "05-7-hang-dang-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "05-7-hang-dang-thuc",
+          "count": 12
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "tong-hieu-lap-phuong",
+      "source_legacy_codes": [
+        "tong-hieu-lap-phuong"
+      ],
+      "semantic_kind": "parent_category",
+      "learner_counter_status": "NO",
+      "evidence_readiness": "PARENT_OF_SUM_AND_DIFFERENCE_CUBE_SKILLS_CANDIDATE",
+      "registry_role": "metadata_only",
+      "topics": [
+        "06-phan-tich-da-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "06-phan-tich-da-thuc",
+          "count": 10
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": []
+    },
+    {
+      "canonical_id": "ung-dung-phan-tich",
+      "source_legacy_codes": [
+        "ung-dung-phan-tich"
+      ],
+      "semantic_kind": "parent_category",
+      "learner_counter_status": "NO",
+      "evidence_readiness": "MIXED_APPLICATION_DEMANDS_NOT_ONE_COUNTER",
+      "registry_role": "metadata_only",
+      "topics": [
+        "06-phan-tich-da-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "06-phan-tich-da-thuc",
+          "count": 8
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": [
+        "Phase A shows heterogeneous evidence families: divisibility-argument recognition and numerical difference-of-squares calculation."
+      ]
+    },
+    {
+      "canonical_id": "phan-tich-da-thuc-hoan-toan",
+      "source_legacy_codes": [],
+      "semantic_kind": "skill",
+      "learner_counter_status": "PENDING",
+      "evidence_readiness": "MCQ_FINAL_OUTPUT_ONLY_STEPWISE_EVIDENCE_REQUIRED",
+      "registry_role": "pending_counter",
+      "topics": [
+        "06-phan-tich-da-thuc"
+      ],
+      "topic_occurrences": [
+        {
+          "topic": "06-phan-tich-da-thuc",
+          "count": 16,
+          "scope": "FAC06V1_077–092 only"
+        }
+      ],
+      "shared_concept": false,
+      "task_variants": null,
+      "runtime_enabled": false,
+      "mastery_threshold": null,
+      "history_backfill": false,
+      "notes": [
+        "Approved in Phase B as a canonical output-skill candidate for FAC06V1_077–092 only.",
+        "Do not globally rename phoi-hop-phuong-phap."
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "tinh-phan-phoi",
+      "to": "nhan-bieu-thuc",
+      "type": "METHOD_OF",
+      "review": "PHASE_B_PASS"
+    },
+    {
+      "from": "bai-toan-thuc-te",
+      "to": "lap-bieu-thuc",
+      "type": "CONTEXT_FOR",
+      "review": "PHASE_B_PASS"
+    },
+    {
+      "from": "bo-ngoac-dau",
+      "to": "cong-tru-da-thuc",
+      "type": "SUPPORTING_ON_COMPOSITE_ITEMS_BUT_INDEPENDENTLY_ASSESSABLE",
+      "review": "PHASE_B_PASS"
+    },
+    {
+      "from": "nhan-dang-hdt",
+      "to": "binh-phuong-hoan-chinh",
+      "type": "PARENT_CATEGORY_OF_SPECIFIC_PATTERN_ON_REVIEWED_SAMPLE",
+      "review": "PHASE_B_PASS"
+    },
+    {
+      "from": "phan-tich-hdt",
+      "to": "hieu-hai-binh-phuong",
+      "type": "PARENT_CATEGORY_OF_SPECIFIC_IDENTITY_ON_REVIEWED_SAMPLE",
+      "review": "PHASE_B_PASS"
+    },
+    {
+      "from": "tong-hieu-lap-phuong",
+      "to": [
+        "tong-hai-lap-phuong",
+        "hieu-hai-lap-phuong"
+      ],
+      "type": "PARENT_CATEGORY_OF",
+      "review": "PHASE_B_PASS"
+    },
+    {
+      "from": "phoi-hop-phuong-phap",
+      "to": "phan-tich-da-thuc-hoan-toan",
+      "type": "LEGACY_BROAD_LABEL_TO_NEW_OUTPUT_CANDIDATE",
+      "scope": "FAC06V1_077–092 only",
+      "review": "PHASE_B_PASS"
+    },
+    {
+      "from": "giu-dieu-kien-ban-dau",
+      "to": "hai-phan-thuc-bang-nhau",
+      "type": "SUPPORTING_ON_REPRESENTATIVE_BUT_INDEPENDENTLY_ASSESSABLE",
+      "review": "PHASE_B_PASS"
+    }
+  ]
+}
