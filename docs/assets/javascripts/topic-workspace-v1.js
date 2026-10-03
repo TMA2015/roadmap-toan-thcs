@@ -375,23 +375,26 @@ const coverageFor=(card,questions)=>{
 };
 const skillOverview=(card,questions,asTeaching=false)=>{
  const coverage=coverageFor(card,questions);
- const wrap=document.createElement("section");wrap.className="topic-core-skill-overview";
- const heading=document.createElement("strong");heading.textContent=asTeaching?"Kỹ năng cần học":"Kỹ năng của chặng · phạm vi thực hành";
+ const wrap=document.createElement("details");wrap.className="topic-core-skill-overview";
+ const summary=document.createElement("summary");summary.className="topic-core-skill-summary";
+ summary.textContent=asTeaching?"Xem kỹ năng của bài":"Xem kỹ năng đang luyện";
+ const body=document.createElement("div");body.className="topic-core-skill-body";
  const count=document.createElement("span");count.className="topic-core-coverage-count";
- count.textContent=coverage.covered.length+"/"+coverage.declared.length+" kỹ năng có câu riêng";
+ count.textContent=coverage.covered.length+"/"+coverage.declared.length+" kỹ năng có câu luyện riêng";
  const list=document.createElement("div");list.className="topic-core-skill-list";
  for(const id of coverage.declared){
   const chip=document.createElement("span");chip.className="topic-core-skill-chip";chip.dataset.skillId=id;
   const covered=coverage.assessed.has(id);chip.dataset.covered=covered?"yes":"no";
-  chip.textContent=skillLabel(id)+(covered?" · có câu riêng":" · chưa có câu riêng");
+  chip.textContent=skillLabel(id)+(covered?" · có câu luyện":" · chưa có câu luyện riêng");
   list.appendChild(chip);
  }
- wrap.append(heading,count,list);
+ body.append(count,list);
  if(coverage.missing.length){
   const note=document.createElement("p");note.className="topic-core-coverage-gap";
-  note.textContent="Chưa có câu thực hành riêng cho: "+coverage.missing.map(skillLabel).join(", ")+". Phần này vẫn cần học; không tự tính là đã luyện.";
-  wrap.appendChild(note);
+  note.textContent="Một số kỹ năng chưa có câu riêng trong chặng này. Em vẫn có thể học nội dung trước và luyện thêm ở phần Luyện tập.";
+  body.appendChild(note);
  }
+ wrap.append(summary,body);
  return wrap;
 };
 
@@ -478,9 +481,12 @@ const mountMicro=(host,card,questions,graph)=>{
   }
   const q=questions[index],st=records[index],correct=st.selected===q.answer;
   const assessed=primarySkill(q);
-  const skill=document.createElement("div");skill.className="topic-micro-assessed-skill";
+  const skill=document.createElement("details");skill.className="topic-micro-skill-details";
   skill.dataset.primarySkill=assessed||"unmapped";
-  skill.textContent="Kỹ năng chính của câu: "+(assessed?skillLabel(assessed):"Chưa có tag kỹ năng cần rà soát");
+  const skillSummary=document.createElement("summary");skillSummary.textContent="Xem kỹ năng đang luyện";
+  const skillText=document.createElement("div");skillText.className="topic-micro-assessed-skill";
+  skillText.textContent=assessed?skillLabel(assessed):"Kỹ năng đang được hệ thống ghi nhận";
+  skill.append(skillSummary,skillText);
   const meta=document.createElement("div");meta.className="topic-micro-meta";
   meta.textContent="Câu "+(index+1)+"/"+questions.length+" · "+(q.micro_role==="base"?"Nền tảng":q.micro_role==="trap"?"Bẫy sai điển hình":q.micro_role==="coverage"?"Bổ sung kỹ năng":"Vận dụng");
   const pager=document.createElement("nav");pager.className="topic-micro-pager";pager.setAttribute("aria-label","Chọn câu hỏi");
