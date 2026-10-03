@@ -1,8 +1,8 @@
 # Academic Depth Audit Standard v1 — Self-Learning Math
 
 Date: 2026-10-03  
-Status: **ACCEPTED FOR CT09 PILOT**  
-Applies to: CT09 pilot first; later rollout to the 25-topic Vertical Spine requires separate authorization after pilot validation.
+Status: **VALIDATED BY CT09 PILOT / READY FOR CONTROLLED TOPIC-BY-TOPIC ROLLOUT**  
+Applies to: CT09 is closed at `SELF_LEARNING_READY_V1`; later rollout must remain topic-by-topic or batch-controlled, with source review and no automatic mass-copy.
 
 ## 1. Product test
 
@@ -247,6 +247,15 @@ AI should be able to:
 - generate a nearby practice variant when appropriate.
 
 AI must not be the only place where essential curriculum knowledge exists.
+
+### Selective static-hint policy
+
+Static hint coverage is **selective, not quota-driven**.
+
+- Do not retrofit hints to every legacy interactive item merely for visual consistency.
+- Add static hints where a new item, a high-error Core family, modeling task, proof/construction task, or genuine reasoning bottleneck benefits from them.
+- Important written/modeling anchors must retain a reliable non-AI path such as progressive hints, prerequisite remediation, a worked step, or an easier sibling.
+- AI Tutor may add explanation and nearby practice, but it must not become the only route to essential curriculum knowledge or recovery from a key task.
 
 ### PASS standard
 
