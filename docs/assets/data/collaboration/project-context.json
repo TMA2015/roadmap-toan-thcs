@@ -1,5 +1,5 @@
 {
-  "version": "1.0.153",
+  "version": "1.0.154",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "I5 Evidence Policy R2 is independently rechecked 8/8 PASS and policy-closed. Practice sufficiency remains formative/descriptive and separate from Mastery/Readiness; first unseen unassisted wrong answers remain immutable negative independent evidence; sparse family capacity 0/1/2 is handled explicitly; proof/modeling/constructed-response limits are preserved; unseen Core is no-evidence rather than weak and future Readiness must separate coverage from observed performance. Mastery, Readiness, backfill/regrade and general learner-facing release remain OFF. Next gate is I6 Controlled learner-facing release planning/technical QA under the accepted R2 policy, with owner-controlled release and rollback.",
+    "next_priority": "I6 Controlled learner-facing Skill Map is implemented on a dedicated branch and awaiting exact-head CI. The candidate keeps I4 owner preview behavior intact while adding a separate learner mode/page with R2 sparse-data wording: N=0 no evidence, N=1–2 counts + 'Dữ liệu còn ít' with no percentage, N>=3 descriptive observed percentage only. Technical family IDs are hidden in learner mode; legacy Practice remains separate; no Mastery/Readiness/backfill/regrade or learner-data writes are introduced. Next step: PR CI + desktop/mobile browser QA, then owner-controlled deployment/QA before any broader navigation exposure.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -2049,15 +2049,29 @@
         }
       },
       "i6": {
-        "status": "NOT_STARTED_AWAITING_CONTROLLED_IMPLEMENTATION_GATE",
+        "status": "IMPLEMENTATION_BRANCH_PRE_CI",
         "phase": "I6_CONTROLLED_LEARNER_FACING_RELEASE",
         "prerequisite": "I5_POLICY_REVIEW_PASS",
-        "scope_boundary": "Implement accepted R2 descriptive/sparse-data safeguards for controlled learner-facing Skill Map release only; do not enable Mastery or Readiness.",
+        "branch": "impl/skill-taxonomy-v2-i6-controlled-release-r1-20261003",
+        "controlled_page": "docs/collaboration/skill-map-v2-i6-controlled.md",
+        "shared_script": "docs/assets/javascripts/skill-map-v2-preview.js",
+        "policy": "docs/roadmap/skill-taxonomy-v2-evidence-policy-r2.md",
+        "learner_mode_rules": {
+          "n0": "NO_EVIDENCE_NO_PERCENT",
+          "n1_2": "SPARSE_COUNTS_ONLY_NO_PERCENT",
+          "n3_plus": "DESCRIPTIVE_PERCENT_WITH_DENOMINATOR",
+          "technical_family_id_hidden": true,
+          "legacy_practice_separate": true
+        },
+        "owner_preview_regression_required": true,
+        "desktop_mobile_browser_qa_required": true,
         "owner_controlled_release_required": true,
         "rollback_required": true,
         "mastery_enabled": false,
         "readiness_enabled": false,
-        "history_backfill_enabled": false
+        "history_backfill_enabled": false,
+        "learner_data_write_enabled": false,
+        "broader_navigation_release": false
       }
     },
     "notebooklm_taxonomy_workflow": {
