@@ -1,5 +1,5 @@
 {
-  "version": "1.0.157",
+  "version": "1.0.158",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "I6B public learner-facing Skill Map is deployed and owner visual QA PASS. The initial Skill Taxonomy v2 learner-facing activation cycle is complete. Public route /ban-do-ky-nang/ is live; topic/layer/evidence-only filters, sparse-data wording and learner-friendly copy are visually verified. Mastery, Readiness, historical backfill/regrade and automatic written scoring remain OFF. Do not start a new Mastery/Readiness phase without a separately reviewed gate; next product/academic priority should be explicitly chosen after reviewing live usage/data quality.",
+    "next_priority": "Academic Depth & Self-Learning Readiness becomes the primary project focus after Skill Taxonomy v2 closure. Framework R1 is drafted: Academic Source Framework, Academic Depth Audit Standard, 25-topic master matrix and source-intake template. Do not expand Mastery/Readiness. Next gate: owner review of the framework, then a deep CT09 pilot using a source corpus (S1 curriculum + selected S2 pedagogy + S3 authentic assessment) before any mass edits across 25 topics.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -2129,6 +2129,34 @@
         "gemini-catalogue-12-18.md",
         "gemini-catalogue-19-25.md"
       ]
+    },
+    "academic_depth_phase": {
+      "status": "FRAMEWORK_R1_DRAFTED_AWAITING_OWNER_REVIEW",
+      "branch": "academic-depth-framework-r1-20261003",
+      "source_framework": "docs/roadmap/academic-source-framework-v1.md",
+      "audit_standard": "docs/roadmap/academic-depth-audit-standard-v1.md",
+      "master_matrix": "docs/roadmap/academic-depth-audit-master-matrix-v1.md",
+      "source_intake_template": "docs/roadmap/academic-source-intake-template-v1.md",
+      "six_dimensions": [
+        "THEORY_DEPTH",
+        "WORKED_EXAMPLES",
+        "INTERACTIVE_PRACTICE",
+        "WRITTEN_PROBLEM_SOLVING",
+        "EXAM_AUTHENTIC_COVERAGE",
+        "HELP_REMEDIATION"
+      ],
+      "source_classes": [
+        "S1_CURRICULUM",
+        "S2_PEDAGOGY",
+        "S3_AUTHENTIC_ASSESSMENT",
+        "S4_EXTENSION",
+        "S5_DRAFT_ONLY"
+      ],
+      "first_deep_pilot": "CT09",
+      "prior_audit_pass_carries_forward": false,
+      "mastery_expansion": false,
+      "readiness_expansion": false,
+      "mass_content_expansion_before_gap_audit": false
     }
   },
   "handoff_required_fields": [
