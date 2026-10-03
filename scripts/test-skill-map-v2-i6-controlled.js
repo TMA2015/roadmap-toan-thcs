@@ -8,7 +8,7 @@ const ROOT = path.resolve(__dirname, "..");
 const read = (p) => fs.readFileSync(path.join(ROOT, p), "utf8");
 const logic = require("../docs/assets/javascripts/skill-map-v2-preview.js");
 
-assert.equal(logic.CONTROLLED_BUILD, "skill-map-v2-i6-controlled-r1-20261003");
+assert.equal(logic.CONTROLLED_BUILD, "skill-map-v2-i6b-learner-r1-20261003");
 assert.ok(logic.NO_DIRECT_EVIDENCE_FAMILIES.has("RATIO-MODEL"));
 assert.ok(logic.NO_DIRECT_EVIDENCE_FAMILIES.has("ID-PROOF"));
 
