@@ -58,6 +58,19 @@ Every published written exercise must have:
 
 A problem may use several skills, but must have one primary problem type so that the library does not become another ambiguous tag bank.
 
+## Learner-facing minimalism
+
+Student-facing learning screens should prioritize only information that directly helps the learner:
+- understand what to learn or do;
+- attempt the task;
+- request appropriately staged help;
+- self-check or identify a mistake;
+- know the next useful learning step.
+
+Operational or authoring metadata should stay internal unless it clearly changes the learner's immediate action.
+
+For Written Exercise Library specifically, `estimated_minutes` remains valid internal scheduling metadata for future study-plan/worksheet composition, but it is **not shown on learner exercise cards** and does not contribute to Mastery/Readiness.
+
 ## UI contract
 
 A library item is shown as:
