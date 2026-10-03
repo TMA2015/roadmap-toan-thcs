@@ -10,7 +10,7 @@
     - **Chưa có bằng chứng**: chưa có lượt luyện độc lập cho kỹ năng này. Điều đó không có nghĩa là học sinh yếu.
     - Một số kỹ năng hiện **chưa có bài luyện trực tiếp** trong ngân hàng; hệ thống sẽ nói rõ thay vì yêu cầu học sinh đạt một tỷ lệ không thể có.
     - **Dữ liệu còn ít**: mới có 1–2 lượt luyện độc lập. Hệ thống chỉ hiển thị số đúng/tổng, chưa dùng phần trăm để kết luận.
-    - **Đã có đủ lượt luyện để xem xu hướng**: từ 3 lượt luyện độc lập trở lên, phần trăm có thể được hiển thị như một số liệu mô tả cùng mẫu số.
+    - **Đã có dữ liệu để xem xu hướng**: từ 3 lượt luyện độc lập trở lên, phần trăm có thể được hiển thị như một số liệu mô tả cùng mẫu số.
     - Một lần làm sai độc lập vẫn là dữ liệu thật và không bị xóa khi học sinh làm đúng ở lần khác.
     - Lượt có gợi ý/xem lời giải không trở thành bằng chứng độc lập.
 
