@@ -1,5 +1,5 @@
 {
-  "version": "1.0.155",
+  "version": "1.0.156",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "I6 controlled learner-facing Skill Map is deployed and owner visual QA PASS. Controlled release is closed. Before broader learner activation, remove internal QA/release jargon from learner-visible title/copy and use a learner-friendly route/navigation entry. Mastery, Readiness, backfill/regrade and broad learner navigation remain OFF until the next gate.",
+    "next_priority": "I6B broader learner-facing Skill Map activation is implemented on a dedicated branch and awaiting exact-head QA. The public route is /ban-do-ky-nang/, the main navigation label is 'Bản đồ kỹ năng', learner-visible I6/Controlled QA jargon is removed from the public surface, and the old controlled QA page is removed from navigation but retained as an internal rollback/verification route. Evidence semantics remain unchanged: N<=2 hides percentage, N>=3 is descriptive only, no-direct-evidence families are explicit, legacy Practice stays separate, and Mastery/Readiness/backfill/regrade remain OFF. Next step: exact-head CI + desktop/mobile browser QA, then deploy and owner visual QA.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -2080,10 +2080,22 @@
         "owner_qa_receipt": "review-packets/skill-taxonomy/phase-i6/01_I6_OWNER_QA_PASS.md"
       },
       "i6b": {
-        "status": "NOT_STARTED",
+        "status": "IMPLEMENTED_PRE_CI",
         "phase": "BROADER_LEARNER_FACING_ACTIVATION",
         "prerequisite": "I6_CONTROLLED_RELEASE_OWNER_QA_PASS",
-        "owner_authorization_required": true
+        "branch": "i6b-broader-learner-activation-20261003",
+        "public_route": "docs/ban-do-ky-nang/index.md",
+        "public_url_path": "/ban-do-ky-nang/",
+        "main_nav_label": "Bản đồ kỹ năng",
+        "internal_controlled_route_hidden_from_navigation": true,
+        "learner_jargon_removed": true,
+        "public_route_action_links_site_root_safe": true,
+        "desktop_mobile_browser_qa_required": true,
+        "owner_visual_qa_required": true,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "automatic_written_scoring_enabled": false
       }
     },
     "notebooklm_taxonomy_workflow": {
