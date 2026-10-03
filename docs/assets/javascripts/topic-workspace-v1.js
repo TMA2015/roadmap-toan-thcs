@@ -482,7 +482,6 @@ const mountMicro=(host,card,questions,graph)=>{
   const q=questions[index],st=records[index],correct=st.selected===q.answer;
   const assessed=primarySkill(q);
   const skill=document.createElement("details");skill.className="topic-micro-skill-details";
-  skill.dataset.primarySkill=assessed||"unmapped";
   const skillSummary=document.createElement("summary");skillSummary.textContent="Xem kỹ năng đang luyện";
   const skillText=document.createElement("div");skillText.className="topic-micro-assessed-skill";
   skillText.dataset.primarySkill=assessed||"unmapped";
