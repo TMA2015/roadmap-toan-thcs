@@ -172,7 +172,8 @@
         const card=el("article","written-exercise-card");card.id=x.exercise_id.toLowerCase();
         const top=el("div","written-exercise-head");
         const meta=el("div","written-exercise-meta");
-        const metaValues=x.learner_label?[x.exercise_id,x.topic_id,x.learner_label,`${x.estimated_minutes} phút`]:[x.exercise_id,x.topic_id,x.learning_layer,x.level,`${x.estimated_minutes} phút`];\n        metaValues.forEach(t=>meta.appendChild(el("span","written-chip",t)));
+        const metaValues=x.learner_label?[x.exercise_id,x.topic_id,x.learner_label,`${x.estimated_minutes} phút`]:[x.exercise_id,x.topic_id,x.learning_layer,x.level,`${x.estimated_minutes} phút`];
+        metaValues.forEach(t=>meta.appendChild(el("span","written-chip",t)));
         top.append(meta,el("h2","",x.title),el("p","written-exercise-type",x.problem_type_title));
 
         const prompt=el("div","written-exercise-problem");
