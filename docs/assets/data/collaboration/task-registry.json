@@ -1,5 +1,5 @@
 {
-  "version": "1.0.179",
+  "version": "1.0.180",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1062,11 +1062,11 @@
       "id": "MATH-ACADEMIC-DEPTH-CT09-001",
       "title": "Academic Depth CT09 pilot — source-backed self-learning audit",
       "routing": "CHATGPT_SOURCE_ANALYSIS+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.179",
-      "review_verdict": "NOTEBOOKLM_10_OF_10_PASS_CT09_IMPLEMENTATION_AUTHORIZED",
-      "review_notes": "CT09 pilot has completed and owner-QA closed P1-A/P1-B/P1-C1/P1-C2. Final Self-Learning Readiness closure audit is now review-only. It will reassess D1-D6, A1-A9, selective-hint policy, generic priority badge, and the non-blocking school-semester frequency evidence gap before any SELF_LEARNING_READY_V1 classification.",
-      "review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md"
+      "status": "DONE",
+      "context_version": "1.0.180",
+      "review_verdict": "SELF_LEARNING_READY_V1_CLOSED",
+      "review_notes": "CT09 Academic Depth pilot fully closed. P1-A/P1-B/P1-C1/P1-C2 all Owner QA PASS. Final NotebookLM closure: D1-D6 PASS, A1-A9 PASS, selective hints accepted, generic roadmap priority badge may remain, school-semester frequency remains transparent non-blocking INSUFFICIENT_SOURCE. CT09 classified SELF_LEARNING_READY_V1 under current reviewed corpus.",
+      "review_receipt": "review-packets/academic-depth/ct09-closure/02_CT09_SELF_LEARNING_READY_V1_PASS_RECEIPT.md"
     },
     {
       "id": "MATH-ACADEMIC-DEPTH-CT09-P1A-001",
@@ -1125,11 +1125,21 @@
       "id": "MATH-ACADEMIC-DEPTH-CT09-CLOSURE-001",
       "title": "CT09 Academic Depth — Self-Learning Readiness closure audit",
       "routing": "NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_DECISION",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.179",
-      "review_verdict": "REVIEW_PACKET_READY_NO_NEW_CONTENT_RELEASE",
-      "review_notes": "P1-A, P1-B, P1-C1 and P1-C2 are all closed Owner QA PASS. Closure audit now asks NotebookLM to reassess D1-D6 and Delta acceptance A1-A9 for SELF_LEARNING_READY_V1. Selective static hints are owner-approved: no 100% hint-coverage quota; deep written/modeling anchors must retain static progressive help. Generic learner-facing 'Mức ưu tiên: ⭐⭐⭐⭐⭐' badge is explicitly sent for independent keep/remove decision.",
-      "review_packet": "review-packets/academic-depth/ct09-closure/01_NOTEBOOKLM_CT09_SELF_LEARNING_READY_CLOSURE_R1.md"
+      "status": "DONE",
+      "context_version": "1.0.180",
+      "review_verdict": "SELF_LEARNING_READY_V1_CLOSED",
+      "review_notes": "NotebookLM final closure audit: D1-D6 PASS, A1-A9 PASS, PRIORITY_BADGE KEEP, SELECTIVE_HINT_POLICY PASS, school-semester frequency NON_BLOCKING_INSUFFICIENT_SOURCE. OVERALL SELF_LEARNING_READY_V1; authorization CLEARED_FOR_CT09_SELF_LEARNING_READY_V1_CLOSURE.",
+      "review_packet": "review-packets/academic-depth/ct09-closure/01_NOTEBOOKLM_CT09_SELF_LEARNING_READY_CLOSURE_R1.md",
+      "review_receipt": "review-packets/academic-depth/ct09-closure/02_CT09_SELF_LEARNING_READY_V1_PASS_RECEIPT.md"
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-ROLLOUT-001",
+      "title": "Academic Depth controlled rollout after CT09 pilot",
+      "routing": "SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_QA",
+      "status": "PLANNING",
+      "context_version": "1.0.180",
+      "review_verdict": "CT09_PILOT_VALIDATED_CONTROLLED_ROLLOUT_ONLY",
+      "review_notes": "CT09 validates the audit method. Remaining topics must be audited from source evidence topic-by-topic or in controlled batches; no automatic CT09 content cloning. Next topic/batch selection should follow the Master Matrix and source readiness."
     }
   ]
 }
