@@ -168,6 +168,13 @@ jobs:
           node scripts/test-topic25-student-journey.js
           node scripts/test-topic25-paper-exam-v1.js
 
+      - name: Validate learner Skill Map release
+        run: |
+          node --check docs/assets/javascripts/skill-map-v2-preview.js
+          node scripts/test-skill-map-v2-preview.js
+          node scripts/test-skill-map-v2-i6-controlled.js
+          node scripts/test-skill-map-v2-i6b-public.js
+
       - name: Build documentation
         run: mkdocs build --strict
 
