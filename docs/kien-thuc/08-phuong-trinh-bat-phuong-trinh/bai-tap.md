@@ -2,7 +2,7 @@
 
 > **Mục tiêu:** rèn khả năng biến đổi phương trình/bất phương trình, kiểm soát điều kiện và mô hình hóa bằng phương trình.
 >
-> **Phân tầng hiện tại:** lập bất phương trình từ bài toán là **Ứng dụng KNTT-Core**; giao nhiều điều kiện là **Củng cố / Core-Support**; bài tham số vẫn ở **Thử thách**. Các nhãn này không tự thay đổi Core Readiness.
+> **Phân tầng hiện tại:** lập bất phương trình từ bài toán là **Ứng dụng**; giao nhiều điều kiện là **Củng cố**; bài tham số là **Thử thách**. Việc phân tầng này không tự thay đổi kết quả Core Readiness.
 
 ## B. ✍️ Luyện tự luận & trình bày
 
@@ -120,7 +120,7 @@ Một số cộng 7 rồi nhân 2 được 30. Tìm số đó.
     x+7=15\Rightarrow x=8.
     \]
 
-### Ứng dụng KNTT-Core
+### Ứng dụng
 
 #### 08-APP-01 · Lập bất phương trình
 Một xe chở tối đa 500 kg. Đã có 320 kg hàng; mỗi kiện thêm nặng 30 kg. Lập bất phương trình theo số kiện (x).
@@ -133,9 +133,9 @@ Một xe chở tối đa 500 kg. Đã có 320 kg hàng; mỗi kiện thêm nặn
     320+30x\le500.
     ]
 
-> Đây là dạng **ứng dụng Core** theo KNTT. Việc xếp lại tầng học không làm thay đổi điểm Readiness hay lịch sử bài làm.
+> Đây là dạng **ứng dụng trong chương trình KNTT**. Việc xếp lại tầng học không làm thay đổi điểm Readiness hay lịch sử bài làm.
 
-### Củng cố / Core-Support
+### Củng cố
 
 #### 08-SUP-01 · Giao tập nghiệm
 Tìm các (x) thỏa đồng thời (x>-2) và (x\le4).
@@ -148,7 +148,7 @@ Tìm các (x) thỏa đồng thời (x>-2) và (x\le4).
     -2<x\le4.
     ]
 
-> Phần này hỗ trợ bài toán nhiều điều kiện nhưng không tạo thêm một chuẩn Core Readiness riêng.
+> Phần này hỗ trợ bài toán nhiều điều kiện nhưng không tạo thêm một chuẩn đánh giá bắt buộc riêng.
 
 ### Thử thách
 
