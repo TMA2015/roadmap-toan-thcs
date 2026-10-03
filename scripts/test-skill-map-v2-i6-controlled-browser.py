@@ -87,7 +87,7 @@ def validate(page):
     trend = root.locator('[data-family-id="NUM-SETS"]')
     assert trend.count() == 1
     trend_text = trend.inner_text()
-    assert "Đã có đủ lượt luyện để xem xu hướng" in trend_text
+    assert "Đã có dữ liệu để xem xu hướng" in trend_text
     assert "2/3 đúng" in trend_text
     assert "Tỷ lệ đúng quan sát 67%" in trend_text
     assert trend.get_attribute("data-evidence-state") == "PRACTICE_TREND_REVIEWABLE"
