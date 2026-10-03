@@ -4,7 +4,7 @@
   const STORE_KEY = "toan-thcs-taxonomy-v2-evidence-v1";
   const LEGACY_KEY = "toan-thcs-practice-v1";
   const BUILD = "skill-map-v2-preview-i4-r1-20261003";
-  const CONTROLLED_BUILD = "skill-map-v2-i6-controlled-r1-20261003";
+  const CONTROLLED_BUILD = "skill-map-v2-i6b-learner-r1-20261003";
   const LAYER_ORDER = ["KNTT-Core", "Core-Support", "Entrance10", "THPT-Bridge", "Specialized-Challenge"];
   const OPTIONAL_LAYERS = new Set(["Entrance10", "THPT-Bridge", "Specialized-Challenge"]);
   const NO_DIRECT_EVIDENCE_FAMILIES = new Set(["RATIO-MODEL", "ID-APPLY", "ID-PROOF", "RATEX-INTEGER"]);
@@ -268,14 +268,15 @@
       day: "2-digit", month: "2-digit", year: "numeric"
     }).format(date);
   };
-  const hrefFor = (slug, practice = false) =>
-    new URL("../../kien-thuc/" + slug + "/" + (practice ? "bai-tap/" : ""), document.baseURI).href;
+  const hrefFor = (assetsBase, slug, practice = false) =>
+    new URL("../kien-thuc/" + slug + "/" + (practice ? "bai-tap/" : ""), assetsBase).href;
 
   class Preview {
     constructor(root, registry, spine, storage) {
       this.root = root;
       this.mode = root.dataset.skillMapV2Mode === "learner" ? "learner" : "owner";
       this.registry = registry;
+      this.assetsBase = new URL(root.dataset.assetsBase || "../../assets/", document.baseURI);
       this.topicMeta = topicMetaFromSpine(spine);
       this.storage = storage;
       this.store = normalizedStore(parseStored(storage, STORE_KEY, {}));
@@ -293,7 +294,7 @@
       const intro = el("div", "skill-map-v2-intro");
       if (learnerMode) {
         intro.append(
-          el("strong", "", "Bản đồ kỹ năng · Thử nghiệm có kiểm soát"),
+          el("strong", "", "Bản đồ kỹ năng"),
           el("p", "", "Trang này giúp em xem dữ liệu luyện tập đã ghi nhận. Đây là xu hướng luyện tập, không phải kết luận thành thạo hay điểm sẵn sàng.")
         );
       } else {
@@ -486,9 +487,9 @@
         if (meta?.slug) {
           const actions = el("div", "skill-map-v2-actions");
           const learn = el("a", "skill-map-v2-link", "Học chuyên đề");
-          learn.href = hrefFor(meta.slug, false);
+          learn.href = hrefFor(this.assetsBase, meta.slug, false);
           const practice = el("a", "skill-map-v2-link", "Luyện tập");
-          practice.href = hrefFor(meta.slug, true);
+          practice.href = hrefFor(this.assetsBase, meta.slug, true);
           actions.append(learn, practice);
           card.append(actions);
         }
