@@ -1,8 +1,8 @@
 # Academic Depth Audit Standard v1 — Self-Learning Math
 
 Date: 2026-10-03  
-Status: **DRAFT STANDARD**  
-Applies to: 25-topic Vertical Spine, with CT01 audited by a special overview rule.
+Status: **ACCEPTED FOR CT09 PILOT**  
+Applies to: CT09 pilot first; later rollout to the 25-topic Vertical Spine requires separate authorization after pilot validation.
 
 ## 1. Product test
 
