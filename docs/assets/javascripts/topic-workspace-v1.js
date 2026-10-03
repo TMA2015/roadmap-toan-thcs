@@ -106,6 +106,13 @@ const TOPICS={
  "19-duong-tron":{number:"19",data:"assets/data/curriculum/topic19-learning-workspace.json",description:"Cung–dây, vị trí tương đối, góc nội tiếp, nội/ngoại tiếp và đo lường đường tròn.",chips:["KNTT Core","Lớp 9","Hình học","⭐⭐⭐⭐⭐"],progressSkills:["day-va-tam","cung-va-day","do-dai-duong-tron","do-dai-cung","vi-tri-tuong-doi-duong-thang-duong-tron","vi-tri-tuong-doi-hai-duong-tron","goc-noi-tiep","tu-giac-noi-tiep","dau-hieu-noi-tiep","duong-tron-ngoai-tiep-tam-giac","duong-tron-noi-tiep-tam-giac","da-giac-deu","dien-tich-quat-tron","dien-tich-vanh-khuyen"]},
  "20-hinh-hoc-tong-hop":{number:"20",data:"assets/data/curriculum/topic20-learning-workspace.json",coreViewData:"assets/data/curriculum/topic20-core-display-v2.json",description:"Hình phẳng, đối xứng, đo lường và các hình khối xuyên suốt lớp 6–9.",chips:["KNTT Core","Lớp 6–9","Hình học","⭐⭐⭐⭐⭐"],progressSkills:["nhan-biet-tam-giac-deu","nhan-biet-hinh-vuong","nhan-biet-luc-giac-deu","nhan-biet-tu-giac-dac-biet","chu-vi-tu-giac","dien-tich-tu-giac","do-luong-thuc-te","truc-doi-xung","tam-doi-xung","the-tich-hop-chu-nhat","dien-tich-day","doi-don-vi-do-luong","nhan-biet-hinh-hop-lap-phuong","dien-tich-xung-quanh-hop-chu-nhat","the-tich-lang-tru","nhan-biet-lang-tru-dung","dien-tich-xung-quanh-lang-tru","nhan-biet-hinh-chop-deu","dien-tich-xung-quanh-hinh-chop","the-tich-hinh-chop","nhan-biet-hinh-tru","dien-tich-xung-quanh-hinh-tru","the-tich-hinh-tru","nhan-biet-hinh-non","dien-tich-xung-quanh-hinh-non","the-tich-hinh-non","nhan-biet-hinh-cau","dien-tich-mat-cau","the-tich-hinh-cau"]},
  "21-thong-ke":{number:"21",data:"assets/data/curriculum/topic21-learning-workspace.json",description:"Từ thu thập và phân loại đến biểu đồ, chọn cách biểu diễn và kết luận có căn cứ.",chips:["KNTT Core","Lớp 6–8","Thống kê","⭐⭐⭐⭐"],progressSkills:["du-lieu-phan-loai","thu-thap-du-lieu","doc-bieu-do-cot","doc-bieu-do-cot-kep","doc-bieu-do-doan-thang","bieu-do-quat-tron","chon-bieu-do","chuyen-bang-bieu-do","nhan-xet-du-lieu"]},
+ "22-dai-luong-dac-trung":{
+   number:"22",
+   bridgeOnly:true,
+   description:"Nhánh tự chọn chuẩn bị Toán 10: trung bình, trung vị, mốt, khoảng biến thiên và cách chọn đại lượng đại diện.",
+   chips:["THPT-Bridge","Tự chọn","Thống kê","Chuẩn bị Toán 10"],
+   progressSkills:["mean","median","mode","range","outlier","representative-measure"]
+ },
  "24-bai-toan-thuc-te":{number:"24",data:"assets/data/curriculum/topic24-learning-workspace.json",description:"Đọc dữ kiện, chọn mô hình, tính toán rồi kiểm tra đáp án trong thực tế.",chips:["Ứng dụng xuyên lớp","Lớp 6–9","Mô hình hóa","⭐⭐⭐⭐⭐"],progressSkills:["doc-de-du-kien","doi-don-vi","phan-tram","lap-phuong-trinh","lap-he","kiem-tra-ket-luan"]},
  "25-tong-hop-on-thi-10":{number:"25",data:"assets/data/curriculum/topic25-learning-workspace.json",description:"Nhận dạng dạng bài, ôn liên mạch và xây chu trình làm đề – chữa lỗi.",chips:["Entrance10","Ôn tập lớp 9","Tổng hợp","⭐⭐⭐⭐⭐"],progressSkills:["nhan-dien-chuyen-de","on-thi-bieu-thuc-can","on-thi-phuong-trinh","on-thi-he","on-thi-ham-so","on-thi-hinh-hoc","on-thi-thong-ke","on-thi-xac-suat","phan-loai-loi","checklist-chua-de"]},
  "23-xac-suat":{number:"23",data:"assets/data/curriculum/topic23-learning-workspace.json",description:"Từ phép thử, biến cố đến xác suất đơn giản và xác suất thực nghiệm theo lớp 6–8.",chips:["KNTT Core","Lớp 6–8","Xác suất","⭐⭐⭐⭐"],progressSkills:["xac-suat-thuc-nghiem","bien-co","bien-co-chac-chan-khong-the","xac-suat-co-dien","kiem-tra-xac-suat","phep-thu-ngau-nhien"]}
@@ -729,7 +736,9 @@ const init=()=>{
  const pct=progress(config.progressSkills);
  const observed=config.progressSkills.some(s=>{const rec=loadStats().tags?.[s];return Boolean(rec?.attempted);});
  const hero=document.createElement("section");hero.className="topic-workspace-hero";
- hero.innerHTML=`<div class="topic-workspace-kicker">Roadmap 25 · Chuyên đề ${config.number}</div><h1>${h1.textContent.trim()}</h1><div>${config.description}</div><div class="topic-workspace-meta">${config.chips.map(x=>`<span class="topic-chip">${x}</span>`).join("")}</div><div class="topic-progress-wrap"><span>${observed?"Tỉ lệ đúng đã ghi nhận (kể cả lượt có trợ giúp)":"Chưa có kết quả luyện tập được ghi nhận"}</span><strong>${observed?pct+"%":"—"}</strong><progress max="100" value="${pct}" aria-label="Mức độ ghi nhận theo kỹ năng" ></progress></div><div class="topic-workspace-actions"><a href="${hasStandaloneCore?"core/":"#core-journey"}">🧩 Các chặng học</a><a href="bai-tap/">🎯 Luyện tập tương tác</a><a href="#map">🗺️ Bản đồ</a><a href="#errors">⚠️ Lỗi thường gặp</a></div>`;
+ const primaryLearningHref=config.bridgeOnly?"#core":(hasStandaloneCore?"core/":"#core-journey");
+ const primaryLearningLabel=config.bridgeOnly?"📖 Kiến thức chuyển tiếp":"🧩 Các chặng học";
+ hero.innerHTML=`<div class="topic-workspace-kicker">Roadmap 25 · Chuyên đề ${config.number}</div><h1>${h1.textContent.trim()}</h1><div>${config.description}</div><div class="topic-workspace-meta">${config.chips.map(x=>`<span class="topic-chip">${x}</span>`).join("")}</div><div class="topic-progress-wrap"><span>${observed?"Tỉ lệ đúng đã ghi nhận (kể cả lượt có trợ giúp)":"Chưa có kết quả luyện tập được ghi nhận"}</span><strong>${observed?pct+"%":"—"}</strong><progress max="100" value="${pct}" aria-label="Mức độ ghi nhận theo kỹ năng" ></progress></div><div class="topic-workspace-actions"><a href="${primaryLearningHref}">${primaryLearningLabel}</a><a href="bai-tap/">🎯 Luyện tập tương tác</a><a href="#map">🗺️ Bản đồ</a><a href="#errors">⚠️ Lỗi thường gặp</a></div>`;
  h1.replaceWith(hero);
  const isCapstone=config.number==="25";
  let nav=null;
@@ -738,7 +747,10 @@ const init=()=>{
   nav.innerHTML='<div class="topic-workspace-nav-title">Đi nhanh trong chuyên đề</div><div class="topic-workspace-nav-list">'+sections.map(([id,label])=>`<a href="#${id}">${label}</a>`).join("")+"</div>";
   hero.after(nav);
  }
- if(hasStandaloneCore)mountCoreGateway(hero,config);
+ if(config.bridgeOnly){
+   // CĐ22 is an optional THPT bridge. Keep the shared reading/navigation shell,
+   // but do not invent a KNTT-Core journey for content that is intentionally non-Core.
+ }else if(hasStandaloneCore)mountCoreGateway(hero,config);
  else renderCoreCards(hero,config);
  sections.forEach(([id,,label],i)=>{const h=findHeading(label,i+1);if(h)wrapSection(h,id,i)});
 
