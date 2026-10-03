@@ -1,0 +1,263 @@
+{
+  "schema": "skill-taxonomy-v2-ct09-p1c2-extension-r1",
+  "version": "1.0.0",
+  "status": "P1C2_REVIEWED_SHADOW_EXTENSION",
+  "topic_id": "CT09",
+  "topic_slug": "09-he-phuong-trinh",
+  "normal_learner_ui_change": false,
+  "mastery_readiness_credit": false,
+  "backfill_existing_attempts": false,
+  "source_review": {
+    "packet_id": "MATH-ACADEMIC-DEPTH-CT09-P1C2-INTERACTIVE-R1-20261003",
+    "verdict": "PASS",
+    "revisions": 0,
+    "authorization": "CLEARED_FOR_CT09_P1C2_INTEGRATION_ONLY",
+    "receipt": "review-packets/academic-depth/ct09-p1c2/02_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_R1_PASS_RECEIPT.md"
+  },
+  "source_file": {
+    "name": "09-he-phuong-trinh-v1-05.json",
+    "path": "docs/assets/data/practice/09-he-phuong-trinh-v1-05.json",
+    "blob_sha": "0d83108054a4c88d8d585e9c319eb94a00f142cf",
+    "question_count": 9
+  },
+  "counts": {
+    "rows": 9,
+    "active_shadow_rows": 9,
+    "distinct_clone_families": 9,
+    "families": 3
+  },
+  "rows": [
+    {
+      "question_id": "SYS09V1_121",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-05.json",
+      "source_blob": "0d83108054a4c88d8d585e9c319eb94a00f142cf",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "source_primary_id": "nghiem-pt-hai-an",
+      "diagnostic_skill_id": "nghiem-pt-hai-an",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-P1C2-CONCEPT-EQ-121",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false,
+      "capture_status": "I3G_ACTIVE"
+    },
+    {
+      "question_id": "SYS09V1_122",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-05.json",
+      "source_blob": "0d83108054a4c88d8d585e9c319eb94a00f142cf",
+      "legacy_skill_tags": [
+        "y-nghia-hinh-hoc"
+      ],
+      "source_primary_id": "y-nghia-hinh-hoc",
+      "diagnostic_skill_id": "y-nghia-hinh-hoc",
+      "family_id": "SYS-CONCEPT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "SYS09-P1C2-GRAPH-122",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false,
+      "capture_status": "I3G_ACTIVE"
+    },
+    {
+      "question_id": "SYS09V1_123",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-05.json",
+      "source_blob": "0d83108054a4c88d8d585e9c319eb94a00f142cf",
+      "legacy_skill_tags": [
+        "giai-he-cong"
+      ],
+      "source_primary_id": "giai-he-cong",
+      "diagnostic_skill_id": "giai-he-cong",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-P1C2-ELIM-SCALE-123",
+      "supporting_skills": [],
+      "method_tags": [
+        "elimination-scale"
+      ],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false,
+      "capture_status": "I3G_ACTIVE"
+    },
+    {
+      "question_id": "SYS09V1_124",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-05.json",
+      "source_blob": "0d83108054a4c88d8d585e9c319eb94a00f142cf",
+      "legacy_skill_tags": [
+        "giai-he-cong"
+      ],
+      "source_primary_id": "giai-he-cong",
+      "diagnostic_skill_id": "giai-he-cong",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-P1C2-ELIM-SUBTRACT-124",
+      "supporting_skills": [],
+      "method_tags": [
+        "elimination-subtract"
+      ],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false,
+      "capture_status": "I3G_ACTIVE"
+    },
+    {
+      "question_id": "SYS09V1_125",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-05.json",
+      "source_blob": "0d83108054a4c88d8d585e9c319eb94a00f142cf",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family": "SYS09-P1C2-DECIMAL-125",
+      "supporting_skills": [],
+      "method_tags": [
+        "coefficient-normalization"
+      ],
+      "context_tags": [],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false,
+      "capture_status": "I3G_ACTIVE"
+    },
+    {
+      "question_id": "SYS09V1_126",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-05.json",
+      "source_blob": "0d83108054a4c88d8d585e9c319eb94a00f142cf",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai"
+      ],
+      "source_primary_id": "bien-doi-truoc-giai",
+      "diagnostic_skill_id": "bien-doi-truoc-giai",
+      "family_id": "SYS-SOLVE",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "SYS09-P1C2-IRRATIONAL-126",
+      "supporting_skills": [],
+      "method_tags": [
+        "exact-irrational-coefficient"
+      ],
+      "context_tags": [],
+      "category_or_metadata_tags": [
+        "Core-Support"
+      ],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false,
+      "capture_status": "I3G_ACTIVE"
+    },
+    {
+      "question_id": "SYS09V1_127",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-05.json",
+      "source_blob": "0d83108054a4c88d8d585e9c319eb94a00f142cf",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-P1C2-DISCOUNT-127",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "price-discount"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false,
+      "capture_status": "I3G_ACTIVE"
+    },
+    {
+      "question_id": "SYS09V1_128",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-05.json",
+      "source_blob": "0d83108054a4c88d8d585e9c319eb94a00f142cf",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-P1C2-MIXTURE-128",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "mixture-concentration"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false,
+      "capture_status": "I3G_ACTIVE"
+    },
+    {
+      "question_id": "SYS09V1_129",
+      "topic_id": "CT09",
+      "source_file": "09-he-phuong-trinh-v1-05.json",
+      "source_blob": "0d83108054a4c88d8d585e9c319eb94a00f142cf",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan"
+      ],
+      "source_primary_id": "lap-he-bai-toan",
+      "diagnostic_skill_id": "lap-he-bai-toan",
+      "family_id": "SYS-MODEL",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family": "SYS09-P1C2-WORKRATE-129",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "category_or_metadata_tags": [],
+      "independent_credit_authorized": false,
+      "runtime_enabled": false,
+      "capture_status": "I3G_ACTIVE"
+    }
+  ]
+}
