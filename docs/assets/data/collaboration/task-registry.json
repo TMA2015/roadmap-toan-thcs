@@ -1,5 +1,5 @@
 {
-  "version": "1.0.154",
+  "version": "1.0.155",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1028,10 +1028,22 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I6-001",
       "title": "Skill Taxonomy v2 I6 — controlled learner-facing release",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.154",
-      "review_verdict": "IMPLEMENTATION_BRANCH_PRE_CI",
-      "review_notes": "I6 candidate implemented on impl/skill-taxonomy-v2-i6-controlled-release-r1-20261003. Adds a separate controlled learner page/mode while preserving I4 owner preview. R2 safeguards: N=0 no evidence; N=1–2 counts + sparse caution with no raw percentage; N>=3 descriptive percentage; no technical family IDs in learner cards; legacy Practice remains separate; read-only localStorage; Mastery/Readiness/backfill/regrade remain OFF. Await exact-head CI, desktop/mobile browser QA and owner-controlled release."
+      "status": "DONE",
+      "context_version": "1.0.155",
+      "review_verdict": "OWNER_QA_PASS_CONTROLLED_RELEASE_CLOSED",
+      "review_notes": "Exact-head CI PASS, PR #283 merged, MkDocs deploy PASS, and owner visual QA screenshots confirm the controlled learner Skill Map behavior. Internal I6/QA terminology is acceptable on the controlled QA route but must be removed before broad learner navigation exposure.",
+      "merge_sha": "56b56aa03a486d0b78de767b02fa778dd5303ce8",
+      "gh_pages_sha": "15e245b22d5947b4c3a9d55ed0776998bde9fa9a",
+      "owner_qa_receipt": "review-packets/skill-taxonomy/phase-i6/01_I6_OWNER_QA_PASS.md"
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I6B-001",
+      "title": "Skill Taxonomy v2 I6B — broader learner-facing activation",
+      "routing": "CHATGPT_PRODUCT_POLISH+GITHUB_QA+OWNER_APPROVAL",
+      "status": "OPEN",
+      "context_version": "1.0.155",
+      "review_verdict": "AWAITING_OWNER_AUTHORIZATION",
+      "review_notes": "Controlled I6 release is owner-QA PASS. Before broad activation, remove internal QA/I6 terminology from learner-visible title/copy, use a learner-friendly route/navigation entry, preserve R2 sparse-evidence semantics, and keep Mastery/Readiness/backfill/regrade OFF."
     }
   ]
 }
