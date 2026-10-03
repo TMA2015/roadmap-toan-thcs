@@ -347,7 +347,18 @@ def check_golden_template(num, folder, lesson_text, practice_text, self_text):
         issues.append(f"{num:02d}: Practice Room thiếu chế độ luyện tự luận/trình bày")
     if not re.search(r'^\?\?\?\s+example\s+["\']Xem lời giải["\']', practice_text, re.MULTILINE | re.IGNORECASE):
         issues.append(f"{num:02d}: Practice Room thiếu lời giải ẩn dạng details")
-    if "Entrance10" not in practice_text or "Challenge" not in practice_text:
+    if num == 8:
+        # CT08 Academic Depth R1 independently reviewed a source-backed layer correction:
+        # inequality modeling is KNTT-Core application; multiple-condition intersection
+        # is Core-Support; parameter work remains Challenge. These pedagogical labels
+        # are non-gating and do not change the protected Core Readiness assessment.
+        if (
+            "Ứng dụng KNTT-Core" not in practice_text
+            or "Core-Support" not in practice_text
+            or "Thử thách" not in practice_text
+        ):
+            issues.append(f"{num:02d}: Practice Room chưa tách rõ Core application / Core-Support / Challenge")
+    elif "Entrance10" not in practice_text or "Challenge" not in practice_text:
         issues.append(f"{num:02d}: Practice Room chưa tách rõ Core / Entrance10 / Challenge")
 
     # Readiness page: chỉ là shell; không lộ đáp án tĩnh trước Submit.
