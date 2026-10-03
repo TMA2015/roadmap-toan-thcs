@@ -184,7 +184,8 @@ with sync_playwright() as p:
                 timeout=15000,
             )
             assert new_topic_page.locator('select[aria-label="Lọc theo chuyên đề"]').input_value() == topic_id, (device, topic_id, "filter auto-applied")
-            expected_count = 8 if topic_id == "CT09" else 2\n            assert new_topic_page.locator(".written-exercise-card").count() == expected_count, (device, topic_id, "published item count")
+            expected_count = 8 if topic_id == "CT09" else 2
+            assert new_topic_page.locator(".written-exercise-card").count() == expected_count, (device, topic_id, "published item count")
             new_topic_page.close()
         context.close()
 
@@ -195,4 +196,4 @@ print("PASS: topic/level/search filters, geometry figure and MathJax work.")
 print("PASS: compact 3-action help row is presentation-only with no localStorage write.")
 print("PASS: quick shortcut and topic deep link open the written library with CT07 auto-filter.")
 
-print("PASS: CT09 P1-B six deep anchors expose progressive hints and friendly learner labels without evidence writes.")\n
+print("PASS: CT09 P1-B six deep anchors expose progressive hints and friendly learner labels without evidence writes.")
