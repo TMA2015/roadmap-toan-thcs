@@ -1,5 +1,5 @@
 {
-  "version": "1.0.159",
+  "version": "1.0.160",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Academic Depth Framework R1 is independently reviewed 10/10 PASS and authorized for CT09 pilot only. Next: execute CT09 source intake and source-backed audit using S1 curriculum/KNTT, selected S2 pedagogy/reference sources and S3 authentic assessment. No mass-edit across 25 topics and no Mastery/Readiness expansion.",
+    "next_priority": "CT09 Academic Depth pilot source intake is active. Official Hà Nội entrance exams 2023–2026 remain primary S3 sources. Loigiaihay KNTT Grade 9 exam collection is registered as a secondary discovery/exam-style reference: generic numbered sets are not frequency evidence; named-school tests require provenance verification before S3 use. Next: obtain/verify S1 KNTT textbook/workbook, select at least one trusted S2 pedagogical source, then normalize CT09 problem types and build the source-backed coverage/frequency matrix.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -2131,7 +2131,7 @@
       ]
     },
     "academic_depth_phase": {
-      "status": "FRAMEWORK_R1_ACCEPTED_CT09_PILOT_AUTHORIZED",
+      "status": "CT09_SOURCE_INTAKE_ACTIVE",
       "branch": "academic-depth-framework-r1-20261003",
       "source_framework": "docs/roadmap/academic-source-framework-v1.md",
       "audit_standard": "docs/roadmap/academic-depth-audit-standard-v1.md",
@@ -2160,7 +2160,14 @@
       "notebooklm_review": "10/10 PASS",
       "authorization": "CT09_PILOT_ONLY",
       "review_receipt": "review-packets/academic-depth/framework-r1/01_NOTEBOOKLM_FRAMEWORK_R1_PASS_RECEIPT.md",
-      "mass_edit_authorized": false
+      "mass_edit_authorized": false,
+      "ct09_source_branch": "academic-depth-ct09-source-intake-r1-20261003",
+      "ct09_sources": {
+        "s1_status": "AWAITING_KNTT_TEXTBOOK_WORKBOOK",
+        "s2_status": "AWAITING_TRUSTED_PEDAGOGICAL_SOURCE",
+        "s3_primary": "HANOI_ENTRANCE_2023_2024_2025_2026_REGISTERED",
+        "s3_secondary_discovery": "LOIGIAIHAY_KNTT_G9_REGISTERED_WITH_PROVENANCE_GUARD"
+      }
     }
   },
   "handoff_required_fields": [
