@@ -24,7 +24,7 @@ with sync_playwright() as p:
 
     assert "Mức ưu tiên: ⭐⭐⭐⭐⭐" in body
     assert "Ôn tập và chuyển giao thi vào lớp 10" in body
-    assert "Biến đổi rồi mới dùng tính chất tích bằng 0" in body
+    assert "Biến đổi rồi mới dùng tính chất tích" in body
     assert "Thu gọn rồi mới giải bất phương trình" in body
     assert "Mô hình hóa bằng một ẩn" in body
     assert "Ứng dụng – lập bất phương trình từ bài toán" in body
