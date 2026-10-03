@@ -34,7 +34,7 @@ with sync_playwright() as p:
     assert related.count() == 1, "missing right-TOC link for section 4"
     related.click()
     assert page.locator("#links").evaluate("(el) => el.open"), "right-TOC section 4 did not open"
-    assert page.locator("#4-kien-thuc-lien-quan").count() == 1, "source H2 anchor alias was not preserved"
+    assert page.locator('[id="4-kien-thuc-lien-quan"]').count() == 1, "source H2 anchor alias was not preserved"
 
     # Right TOC children start closed; + opens, - closes.
     core_item = page.locator('.md-sidebar--secondary nav.md-nav--secondary > ul.md-nav__list > li').filter(
@@ -54,7 +54,7 @@ with sync_playwright() as p:
     assert child.count() == 1, "missing nested 3.1 link"
     child.click()
     assert page.locator("#core").evaluate("(el) => el.open"), "nested TOC link did not open parent section"
-    assert page.locator("#31-phuong-trinh-bac-nhat-hai-an").is_visible(), "nested heading target still hidden"
+    assert page.locator('[id="31-phuong-trinh-bac-nhat-hai-an"]').is_visible(), "nested heading target still hidden"
 
     toggle.click()
     assert children.is_hidden(), "TOC − did not close children"
