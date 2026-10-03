@@ -1,12 +1,28 @@
 {
-  "version": 2,
-  "schema": "practice-question-chunk-v1",
-  "bank_id": "EQ08-V1-02",
-  "topic": {
-    "id": "08-phuong-trinh-bat-phuong-trinh",
-    "title": "Phương trình và bất phương trình"
-  },
-  "questions": [
+  "schema": "ct08-p1a-notation-academic-lock-r1",
+  "status": "NOTEBOOKLM_R1_APPROVED_NOTATION_ONLY_EXCEPTION",
+  "topic_id": "CT08",
+  "source_file": "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+  "audited_blob_sha": "717e6988da610c382e744118fe4aca0c20d40244",
+  "authorization": "CLEARED_FOR_CT08_P1_IMPLEMENTATION_ONLY",
+  "allowed_question_ids": [
+    "EQ08V1_047",
+    "EQ08V1_048",
+    "EQ08V1_049",
+    "EQ08V1_050"
+  ],
+  "allowed_changed_fields": [
+    "question",
+    "explanation"
+  ],
+  "invariant_fields": [
+    "id",
+    "options",
+    "answer",
+    "tags",
+    "difficulty"
+  ],
+  "audited_questions": [
     {
       "id": "EQ08V1_031",
       "question": "Giải phương trình \\(4(x-1)+1(x+3)=9\\).",
@@ -333,7 +349,7 @@
     },
     {
       "id": "EQ08V1_047",
-      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x+4}=2\\) là:",
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x--4}=2\\) là:",
       "options": [
         "\\(x\\ne -4\\)",
         "\\(x=-4\\)",
@@ -349,11 +365,11 @@
         "type": "dkxd-pt-mau"
       },
       "difficulty": "basic",
-      "explanation": "Mẫu \\(x+4\\) phải khác 0, nên \\(x\\ne -4\\)."
+      "explanation": "Mẫu \\(x--4\\) phải khác 0, nên \\(x\\ne -4\\)."
     },
     {
       "id": "EQ08V1_048",
-      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x+3}=2\\) là:",
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x--3}=2\\) là:",
       "options": [
         "\\(x\\ne -3\\)",
         "\\(x=-3\\)",
@@ -369,11 +385,11 @@
         "type": "dkxd-pt-mau"
       },
       "difficulty": "basic",
-      "explanation": "Mẫu \\(x+3\\) phải khác 0, nên \\(x\\ne -3\\)."
+      "explanation": "Mẫu \\(x--3\\) phải khác 0, nên \\(x\\ne -3\\)."
     },
     {
       "id": "EQ08V1_049",
-      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x+2}=2\\) là:",
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x--2}=2\\) là:",
       "options": [
         "\\(x\\ne -2\\)",
         "\\(x=-2\\)",
@@ -389,11 +405,11 @@
         "type": "dkxd-pt-mau"
       },
       "difficulty": "basic",
-      "explanation": "Mẫu \\(x+2\\) phải khác 0, nên \\(x\\ne -2\\)."
+      "explanation": "Mẫu \\(x--2\\) phải khác 0, nên \\(x\\ne -2\\)."
     },
     {
       "id": "EQ08V1_050",
-      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x+1}=2\\) là:",
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x--1}=2\\) là:",
       "options": [
         "\\(x\\ne -1\\)",
         "\\(x=-1\\)",
@@ -409,7 +425,7 @@
         "type": "dkxd-pt-mau"
       },
       "difficulty": "basic",
-      "explanation": "Mẫu \\(x+1\\) phải khác 0, nên \\(x\\ne -1\\)."
+      "explanation": "Mẫu \\(x--1\\) phải khác 0, nên \\(x\\ne -1\\)."
     },
     {
       "id": "EQ08V1_051",
@@ -617,5 +633,24 @@
       "difficulty": "intermediate",
       "explanation": "Điều kiện \\(x\\ne 6\\). Nhân hai vế với \\(x-6\\): \\(1=3(x-6)\\), rồi giải và đối chiếu."
     }
-  ]
+  ],
+  "reviewed_replacements": {
+    "EQ08V1_047": {
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x+4}=2\\) là:",
+      "explanation": "Mẫu \\(x+4\\) phải khác 0, nên \\(x\\ne -4\\)."
+    },
+    "EQ08V1_048": {
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x+3}=2\\) là:",
+      "explanation": "Mẫu \\(x+3\\) phải khác 0, nên \\(x\\ne -3\\)."
+    },
+    "EQ08V1_049": {
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x+2}=2\\) là:",
+      "explanation": "Mẫu \\(x+2\\) phải khác 0, nên \\(x\\ne -2\\)."
+    },
+    "EQ08V1_050": {
+      "question": "Điều kiện xác định của phương trình \\(\\frac{x+1}{x+1}=2\\) là:",
+      "explanation": "Mẫu \\(x+1\\) phải khác 0, nên \\(x\\ne -1\\)."
+    }
+  },
+  "rationale": "Normalize ambiguous learner-facing double-minus notation x--n to mathematically equivalent x+n without changing IDs, answers, skills, difficulty or historical-attempt semantics. Taxonomy v2 source provenance remains frozen under this narrow reviewed display exception."
 }

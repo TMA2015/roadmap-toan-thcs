@@ -693,7 +693,16 @@ const renderCoreCards=async(hero,config)=>{
    grid.appendChild(el);
   });
   host.appendChild(grid);
-  if((data.extensions||[]).length){const ext=document.createElement("details");ext.className="topic-extension-zone";ext.innerHTML='<summary>🚀 Entrance10 / Challenge <span>không tính vào hoàn thành KNTT Core</span></summary><div class="topic-extension-list">'+(data.extensions||[]).map(x=>`<span class="topic-chip">${x.layer}: ${x.title}</span>`).join("")+"</div>";host.appendChild(ext);}
+  if((data.extensions||[]).length){
+   const extensions=data.extensions||[];
+   const hasReviewedSupport=extensions.some(x=>x.layer==="KNTT-Core"||x.layer==="Core-Support");
+   const ext=document.createElement("details");ext.className="topic-extension-zone";
+   const summary=hasReviewedSupport
+    ? '🧩 Ứng dụng / Củng cố / Mở rộng <span>không tự động thay đổi Core Readiness</span>'
+    : '🚀 Entrance10 / Challenge <span>không tính vào hoàn thành KNTT Core</span>';
+   ext.innerHTML='<summary>'+summary+'</summary><div class="topic-extension-list">'+extensions.map(x=>`<span class="topic-chip">${x.learner_label||x.layer}: ${x.title}</span>`).join("")+"</div>";
+   host.appendChild(ext);
+  }
   const staticJourneyAnchor=document.getElementById("core-journey");
   if(staticJourneyAnchor)staticJourneyAnchor.remove();
   hero.after(host);

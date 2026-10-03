@@ -4,7 +4,7 @@
   "title": "Phương trình và bất phương trình",
   "core_progress_policy": {
     "layer": "KNTT-Core",
-    "rule": "Only Core cards contribute to readiness. Entrance10 and Challenge never gate Core completion."
+    "rule": "Only existing Core cards contribute to readiness in this version. Reviewed Core-application/Core-Support extension labels are pedagogical and remain non-gating until a separate readiness change is authorized."
   },
   "cards": [
     {
@@ -173,7 +173,7 @@
         "summary": "Kết quả đại số và hình trục số phải cùng mô tả một tập nghiệm.",
         "source_reference": "docs/kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md",
         "source_sections": [
-          "3.4",
+          "3.5",
           "Trực quan – biểu diễn tập nghiệm"
         ],
         "source_question_ids": [
@@ -232,21 +232,26 @@
   "extensions": [
     {
       "id": "eq08-ent10-1",
-      "layer": "Entrance10",
+      "layer": "KNTT-Core",
       "title": "Lập bất phương trình từ bài toán",
-      "gates_core": false
+      "gates_core": false,
+      "learner_label": "Ứng dụng",
+      "role": "application"
     },
     {
       "id": "eq08-ent10-2",
-      "layer": "Entrance10",
+      "layer": "Core-Support",
       "title": "Giao nhiều tập nghiệm",
-      "gates_core": false
+      "gates_core": false,
+      "learner_label": "Củng cố",
+      "role": "support"
     },
     {
       "id": "eq08-challenge-1",
       "layer": "Specialized-Challenge",
       "title": "Tham số trong phương trình/bất phương trình",
-      "gates_core": false
+      "gates_core": false,
+      "learner_label": "Thử thách"
     }
   ],
   "micro_practice_bank": "assets/data/practice/08-phuong-trinh-bat-phuong-trinh-micro-v1.json",
@@ -256,7 +261,8 @@
   "qa_notes": [
     "CĐ08 preserves Grade 8 → Grade 9 Vertical Spine.",
     "bat-dang-thuc, tinh-chat-thu-tu-phep-cong and tinh-chat-thu-tu-phep-nhan have real Practice Bank coverage before Golden rollout.",
-    "tham-so-co-ban and giao-tap-nghiem are excluded from Core readiness; lap-bat-phuong-trinh remains Extension pending explicit source promotion.",
-    "Dedicated coverage items are appended after the three original base/trap/apply items without changing R2/previously reviewed teaching content or learner-evidence semantics; each item assesses exactly one declared primary skill."
+    "NotebookLM R1: lap-bat-phuong-trinh is KNTT-Core application; giao-tap-nghiem is Core-Support; both remain non-gating for current Core Readiness because scoring changes are out of scope.",
+    "tham-so-co-ban remains Specialized-Challenge and does not gate Core.",
+    "Taxonomy v2 is a separate protected shadow program; P1-A learner-layer corrections do not mutate its family registry or Mastery/Readiness semantics."
   ]
 }
