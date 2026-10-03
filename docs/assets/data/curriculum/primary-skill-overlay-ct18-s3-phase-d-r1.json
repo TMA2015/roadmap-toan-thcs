@@ -1,0 +1,3093 @@
+{
+  "schema": "primary-skill-overlay-ct18-s3-phase-d-r1",
+  "status": "CHATGPT_CANDIDATE_PENDING_NOTEBOOKLM_REVIEW",
+  "as_of": "2026-10-02",
+  "topic": "18-he-thuc-luong",
+  "source_manifest": "docs/assets/data/practice/18-he-thuc-luong-v1.manifest.json",
+  "source_manifest_blob": "3a38cd8de28b455796326c8af30186742aba700a",
+  "source_files": {
+    "18-he-thuc-luong-v1-01.json": {
+      "blob": "203fc7d715895f5af1b7ca2e4f4e152f37c1fcc2",
+      "question_count": 30
+    },
+    "18-he-thuc-luong-v1-02.json": {
+      "blob": "c14810bcb5f5e07d04d03fe8aec85d2ae7b7a787",
+      "question_count": 30
+    },
+    "18-he-thuc-luong-v1-03.json": {
+      "blob": "95a9dcaea330f944f1d083cd3755e94ce3c59412",
+      "question_count": 30
+    },
+    "18-he-thuc-luong-v1-04.json": {
+      "blob": "687a8687c277ee2373c8f27cddc16314019dc36d",
+      "question_count": 30
+    },
+    "18-he-thuc-luong-v1-05.json": {
+      "blob": "71f774c79ca38cb84183ce8b4d9ba6b9a87776b3",
+      "question_count": 12
+    }
+  },
+  "academic_basis": {
+    "s3_family_blob": "7c817ecc064873135ae05b40ded30661bff6434a"
+  },
+  "rules": {
+    "one_primary_max_per_mcq": true,
+    "learner_family_broader_than_diagnostic": true,
+    "proof_mcq_partial_only": true,
+    "no_family_method_formative_only": true,
+    "auto_clone_key": "primary diagnostic + exact question type",
+    "runtime_enabled": false,
+    "no_history_backfill": true
+  },
+  "summary": {
+    "questions": 132,
+    "mapped_primary": 132,
+    "formative_only_without_family": 0,
+    "primary_counts": {
+      "pythagore": 8,
+      "pythagore-dao": 8,
+      "canh-huyen": 8,
+      "he-thuc-canh": 8,
+      "he-thuc-duong-cao": 8,
+      "dien-tich-duong-cao": 8,
+      "doi-ke-huyen": 8,
+      "sin": 8,
+      "cos": 8,
+      "tan": 8,
+      "tim-canh-luong-giac": 8,
+      "tim-goc-luong-giac": 8,
+      "goc-nang-ha": 8,
+      "chieu-cao-khoang-cach": 8,
+      "ket-hop-he-thuc": 8,
+      "cot": 12
+    },
+    "family_counts": {
+      "RIGHT-PYTHAGORE": 24,
+      "RIGHT-ALTITUDE": 32,
+      "RIGHT-TRIG-RATIO": 44,
+      "RIGHT-SOLVE": 16,
+      "RIGHT-APPLICATION": 16
+    },
+    "clone_families": [
+      {
+        "id": "TRIG18-AUTO-001",
+        "key": "pythagore__tinh-canh-huyen",
+        "count": 8,
+        "ids": [
+          "GEO18V1_001",
+          "GEO18V1_016",
+          "GEO18V1_031",
+          "GEO18V1_046",
+          "GEO18V1_061",
+          "GEO18V1_076",
+          "GEO18V1_091",
+          "GEO18V1_106"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-002",
+        "key": "pythagore-dao__nhan-biet-vuong",
+        "count": 8,
+        "ids": [
+          "GEO18V1_002",
+          "GEO18V1_017",
+          "GEO18V1_032",
+          "GEO18V1_047",
+          "GEO18V1_062",
+          "GEO18V1_077",
+          "GEO18V1_092",
+          "GEO18V1_107"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-003",
+        "key": "canh-huyen__nhan-biet-canh",
+        "count": 8,
+        "ids": [
+          "GEO18V1_003",
+          "GEO18V1_018",
+          "GEO18V1_033",
+          "GEO18V1_048",
+          "GEO18V1_063",
+          "GEO18V1_078",
+          "GEO18V1_093",
+          "GEO18V1_108"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-004",
+        "key": "he-thuc-canh__hinh-chieu",
+        "count": 8,
+        "ids": [
+          "GEO18V1_004",
+          "GEO18V1_019",
+          "GEO18V1_034",
+          "GEO18V1_049",
+          "GEO18V1_064",
+          "GEO18V1_079",
+          "GEO18V1_094",
+          "GEO18V1_109"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-005",
+        "key": "he-thuc-duong-cao__duong-cao",
+        "count": 8,
+        "ids": [
+          "GEO18V1_005",
+          "GEO18V1_020",
+          "GEO18V1_035",
+          "GEO18V1_050",
+          "GEO18V1_065",
+          "GEO18V1_080",
+          "GEO18V1_095",
+          "GEO18V1_110"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-006",
+        "key": "dien-tich-duong-cao__dien-tich",
+        "count": 8,
+        "ids": [
+          "GEO18V1_006",
+          "GEO18V1_021",
+          "GEO18V1_036",
+          "GEO18V1_051",
+          "GEO18V1_066",
+          "GEO18V1_081",
+          "GEO18V1_096",
+          "GEO18V1_111"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-007",
+        "key": "doi-ke-huyen__nhan-biet-canh",
+        "count": 8,
+        "ids": [
+          "GEO18V1_007",
+          "GEO18V1_022",
+          "GEO18V1_037",
+          "GEO18V1_052",
+          "GEO18V1_067",
+          "GEO18V1_082",
+          "GEO18V1_097",
+          "GEO18V1_112"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-008",
+        "key": "sin__tinh-sin",
+        "count": 8,
+        "ids": [
+          "GEO18V1_008",
+          "GEO18V1_023",
+          "GEO18V1_038",
+          "GEO18V1_053",
+          "GEO18V1_068",
+          "GEO18V1_083",
+          "GEO18V1_098",
+          "GEO18V1_113"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-009",
+        "key": "cos__tinh-cos",
+        "count": 8,
+        "ids": [
+          "GEO18V1_009",
+          "GEO18V1_024",
+          "GEO18V1_039",
+          "GEO18V1_054",
+          "GEO18V1_069",
+          "GEO18V1_084",
+          "GEO18V1_099",
+          "GEO18V1_114"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-010",
+        "key": "tan__tinh-tan",
+        "count": 8,
+        "ids": [
+          "GEO18V1_010",
+          "GEO18V1_025",
+          "GEO18V1_040",
+          "GEO18V1_055",
+          "GEO18V1_070",
+          "GEO18V1_085",
+          "GEO18V1_100",
+          "GEO18V1_115"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-011",
+        "key": "tim-canh-luong-giac__tim-canh",
+        "count": 8,
+        "ids": [
+          "GEO18V1_011",
+          "GEO18V1_026",
+          "GEO18V1_041",
+          "GEO18V1_056",
+          "GEO18V1_071",
+          "GEO18V1_086",
+          "GEO18V1_101",
+          "GEO18V1_116"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-012",
+        "key": "tim-goc-luong-giac__tim-goc",
+        "count": 8,
+        "ids": [
+          "GEO18V1_012",
+          "GEO18V1_027",
+          "GEO18V1_042",
+          "GEO18V1_057",
+          "GEO18V1_072",
+          "GEO18V1_087",
+          "GEO18V1_102",
+          "GEO18V1_117"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-013",
+        "key": "goc-nang-ha__nhan-biet-goc",
+        "count": 8,
+        "ids": [
+          "GEO18V1_013",
+          "GEO18V1_028",
+          "GEO18V1_043",
+          "GEO18V1_058",
+          "GEO18V1_073",
+          "GEO18V1_088",
+          "GEO18V1_103",
+          "GEO18V1_118"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-014",
+        "key": "chieu-cao-khoang-cach__bai-toan-thuc-te",
+        "count": 8,
+        "ids": [
+          "GEO18V1_014",
+          "GEO18V1_029",
+          "GEO18V1_044",
+          "GEO18V1_059",
+          "GEO18V1_074",
+          "GEO18V1_089",
+          "GEO18V1_104",
+          "GEO18V1_119"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-015",
+        "key": "ket-hop-he-thuc__tong-hop",
+        "count": 8,
+        "ids": [
+          "GEO18V1_015",
+          "GEO18V1_030",
+          "GEO18V1_045",
+          "GEO18V1_060",
+          "GEO18V1_075",
+          "GEO18V1_090",
+          "GEO18V1_105",
+          "GEO18V1_120"
+        ]
+      },
+      {
+        "id": "TRIG18-AUTO-016",
+        "key": "cot__cot",
+        "count": 12,
+        "ids": [
+          "TRIG18V1_121",
+          "TRIG18V1_122",
+          "TRIG18V1_123",
+          "TRIG18V1_124",
+          "TRIG18V1_125",
+          "TRIG18V1_126",
+          "TRIG18V1_127",
+          "TRIG18V1_128",
+          "TRIG18V1_129",
+          "TRIG18V1_130",
+          "TRIG18V1_131",
+          "TRIG18V1_132"
+        ]
+      }
+    ],
+    "runtime_enabled": 0
+  },
+  "items": [
+    {
+      "question_id": "GEO18V1_001",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "pythagore"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác vuông có hai cạnh góc vuông dài 3 và 4. Cạnh huyền bằng:",
+      "correct_option": "5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh-huyen"
+    },
+    {
+      "question_id": "GEO18V1_002",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "pythagore-dao"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore-dao",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác có ba cạnh 3, 4, 5. Kết luận đúng là:",
+      "correct_option": "Tam giác vuông",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong"
+    },
+    {
+      "question_id": "GEO18V1_003",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "canh-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "canh-huyen",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC vuông tại A, cạnh huyền là:",
+      "correct_option": "BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_004",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "he-thuc-canh"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-canh",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC vuông tại A, AH⊥BC, BH=9, CH=16. Tính AB.",
+      "correct_option": "15",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-chieu"
+    },
+    {
+      "question_id": "GEO18V1_005",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "he-thuc-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC vuông tại A, AH⊥BC, BH=9, CH=16. Tính AH.",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cao"
+    },
+    {
+      "question_id": "GEO18V1_006",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "dien-tich-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác ABC vuông tại A có AB=15, AC=20, BC=25. Đường cao AH xuống BC bằng:",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO18V1_007",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "doi-ke-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "doi-ke-huyen",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong ΔABC vuông tại A, xét góc C. Cách gọi cạnh đúng là:",
+      "correct_option": "Đối: AB; kề: AC; huyền: BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_008",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "sin"
+      ],
+      "canonical_assessed_skill_candidate": "sin",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị sin B là:",
+      "correct_option": "4/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-sin"
+    },
+    {
+      "question_id": "GEO18V1_009",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "cos"
+      ],
+      "canonical_assessed_skill_candidate": "cos",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị cos B là:",
+      "correct_option": "3/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-cos"
+    },
+    {
+      "question_id": "GEO18V1_010",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "tan"
+      ],
+      "canonical_assessed_skill_candidate": "tan",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị tan B là:",
+      "correct_option": "4/3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-tan"
+    },
+    {
+      "question_id": "GEO18V1_011",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "tim-canh-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-canh-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác vuông, tan α=3/4 và cạnh kề góc α dài 8. Cạnh đối dài:",
+      "correct_option": "6",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-canh"
+    },
+    {
+      "question_id": "GEO18V1_012",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "tim-goc-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-goc-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với α là góc nhọn, biết tan α = 1. Góc α bằng:",
+      "correct_option": "45°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-goc"
+    },
+    {
+      "question_id": "GEO18V1_013",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "goc-nang-ha"
+      ],
+      "canonical_assessed_skill_candidate": "goc-nang-ha",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc tạo bởi tia nhìn hướng lên đỉnh vật và phương ngang qua mắt người quan sát được gọi là:",
+      "correct_option": "Góc nâng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-goc"
+    },
+    {
+      "question_id": "GEO18V1_014",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "chieu-cao-khoang-cach"
+      ],
+      "canonical_assessed_skill_candidate": "chieu-cao-khoang-cach",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_APPLICATION_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Người quan sát đứng cách chân cột 20 m, góc nâng tới đỉnh là 45°, mắt cao 1.5 m. Chiều cao cột là:",
+      "correct_option": "21.5 m",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "bai-toan-thuc-te"
+    },
+    {
+      "question_id": "GEO18V1_015",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "ket-hop-he-thuc"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-he-thuc",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC vuông tại A có AB=15, AC=20. Tính đồng thời BC và AH.",
+      "correct_option": "BC=25, AH=12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tong-hop"
+    },
+    {
+      "question_id": "GEO18V1_016",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "pythagore"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác vuông có hai cạnh góc vuông dài 5 và 12. Cạnh huyền bằng:",
+      "correct_option": "13",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh-huyen"
+    },
+    {
+      "question_id": "GEO18V1_017",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "pythagore-dao"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore-dao",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác có ba cạnh 5, 12, 13. Kết luận đúng là:",
+      "correct_option": "Tam giác vuông",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong"
+    },
+    {
+      "question_id": "GEO18V1_018",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "canh-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "canh-huyen",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Cạnh huyền – cạnh góc vuông”: Trong tam giác ABC vuông tại A, cạnh huyền là:",
+      "correct_option": "BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_019",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "he-thuc-canh"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-canh",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC vuông tại A, AH⊥BC, BH=18, CH=32. Tính AB.",
+      "correct_option": "30",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-chieu"
+    },
+    {
+      "question_id": "GEO18V1_020",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "he-thuc-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC vuông tại A, AH⊥BC, BH=18, CH=32. Tính AH.",
+      "correct_option": "24",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cao"
+    },
+    {
+      "question_id": "GEO18V1_021",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "dien-tich-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác ABC vuông tại A có AB=30, AC=40, BC=50. Đường cao AH xuống BC bằng:",
+      "correct_option": "24",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO18V1_022",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "doi-ke-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "doi-ke-huyen",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong ΔABC vuông tại A, xét góc B. Cách gọi cạnh đúng là:",
+      "correct_option": "Đối: AC; kề: AB; huyền: BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_023",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "sin"
+      ],
+      "canonical_assessed_skill_candidate": "sin",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Tỉ số sin”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị sin B là:",
+      "correct_option": "4/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-sin"
+    },
+    {
+      "question_id": "GEO18V1_024",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "cos"
+      ],
+      "canonical_assessed_skill_candidate": "cos",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Tỉ số cos”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị cos B là:",
+      "correct_option": "3/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-cos"
+    },
+    {
+      "question_id": "GEO18V1_025",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "tan"
+      ],
+      "canonical_assessed_skill_candidate": "tan",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Tỉ số tan”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị tan B là:",
+      "correct_option": "4/3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-tan"
+    },
+    {
+      "question_id": "GEO18V1_026",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "tim-canh-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-canh-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác vuông, tan α=3/4 và cạnh kề góc α dài 12. Cạnh đối dài:",
+      "correct_option": "9",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-canh"
+    },
+    {
+      "question_id": "GEO18V1_027",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "tim-goc-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-goc-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với α là góc nhọn, biết sin α = 1/2. Góc α bằng:",
+      "correct_option": "30°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-goc"
+    },
+    {
+      "question_id": "GEO18V1_028",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "goc-nang-ha"
+      ],
+      "canonical_assessed_skill_candidate": "goc-nang-ha",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Góc nâng – góc hạ”: Góc tạo bởi tia nhìn hướng lên đỉnh vật và phương ngang qua mắt người quan sát được gọi là:",
+      "correct_option": "Góc nâng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-goc"
+    },
+    {
+      "question_id": "GEO18V1_029",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "chieu-cao-khoang-cach"
+      ],
+      "canonical_assessed_skill_candidate": "chieu-cao-khoang-cach",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_APPLICATION_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Người quan sát đứng cách chân cột 30 m, góc nâng tới đỉnh là 45°, mắt cao 1.6 m. Chiều cao cột là:",
+      "correct_option": "31.6 m",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "bai-toan-thuc-te"
+    },
+    {
+      "question_id": "GEO18V1_030",
+      "source_file": "18-he-thuc-luong-v1-01.json",
+      "legacy_skill_tags": [
+        "ket-hop-he-thuc"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-he-thuc",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC vuông tại A có AB=30, AC=40. Tính đồng thời BC và AH.",
+      "correct_option": "BC=50, AH=24",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tong-hop"
+    },
+    {
+      "question_id": "GEO18V1_031",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "pythagore"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác vuông có hai cạnh góc vuông dài 6 và 8. Cạnh huyền bằng:",
+      "correct_option": "10",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh-huyen"
+    },
+    {
+      "question_id": "GEO18V1_032",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "pythagore-dao"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore-dao",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác có ba cạnh 6, 8, 10. Kết luận đúng là:",
+      "correct_option": "Tam giác vuông",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong"
+    },
+    {
+      "question_id": "GEO18V1_033",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "canh-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "canh-huyen",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Cạnh huyền – cạnh góc vuông”: Trong tam giác ABC vuông tại A, cạnh huyền là:",
+      "correct_option": "BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_034",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "he-thuc-canh"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-canh",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC vuông tại A, AH⊥BC, BH=27, CH=48. Tính AB.",
+      "correct_option": "45",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-chieu"
+    },
+    {
+      "question_id": "GEO18V1_035",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "he-thuc-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC vuông tại A, AH⊥BC, BH=27, CH=48. Tính AH.",
+      "correct_option": "36",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cao"
+    },
+    {
+      "question_id": "GEO18V1_036",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "dien-tich-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác ABC vuông tại A có AB=45, AC=60, BC=75. Đường cao AH xuống BC bằng:",
+      "correct_option": "36",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO18V1_037",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "doi-ke-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "doi-ke-huyen",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Nhận biết cạnh đối – kề – huyền”: Trong ΔABC vuông tại A, xét góc C. Cách gọi cạnh đúng là:",
+      "correct_option": "Đối: AB; kề: AC; huyền: BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_038",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "sin"
+      ],
+      "canonical_assessed_skill_candidate": "sin",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Tỉ số sin”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị sin B là:",
+      "correct_option": "4/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-sin"
+    },
+    {
+      "question_id": "GEO18V1_039",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "cos"
+      ],
+      "canonical_assessed_skill_candidate": "cos",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Tỉ số cos”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị cos B là:",
+      "correct_option": "3/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-cos"
+    },
+    {
+      "question_id": "GEO18V1_040",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "tan"
+      ],
+      "canonical_assessed_skill_candidate": "tan",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Tỉ số tan”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị tan B là:",
+      "correct_option": "4/3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-tan"
+    },
+    {
+      "question_id": "GEO18V1_041",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "tim-canh-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-canh-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác vuông, tan α=3/4 và cạnh kề góc α dài 16. Cạnh đối dài:",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-canh"
+    },
+    {
+      "question_id": "GEO18V1_042",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "tim-goc-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-goc-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với α là góc nhọn, biết cos α = 1/2. Góc α bằng:",
+      "correct_option": "60°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-goc"
+    },
+    {
+      "question_id": "GEO18V1_043",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-nang-ha"
+      ],
+      "canonical_assessed_skill_candidate": "goc-nang-ha",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Góc nâng – góc hạ”: Góc tạo bởi tia nhìn hướng lên đỉnh vật và phương ngang qua mắt người quan sát được gọi là:",
+      "correct_option": "Góc nâng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-goc"
+    },
+    {
+      "question_id": "GEO18V1_044",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "chieu-cao-khoang-cach"
+      ],
+      "canonical_assessed_skill_candidate": "chieu-cao-khoang-cach",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_APPLICATION_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Người quan sát đứng cách chân cột 40 m, góc nâng tới đỉnh là 45°, mắt cao 1.7 m. Chiều cao cột là:",
+      "correct_option": "41.7 m",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "bai-toan-thuc-te"
+    },
+    {
+      "question_id": "GEO18V1_045",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "ket-hop-he-thuc"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-he-thuc",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC vuông tại A có AB=45, AC=60. Tính đồng thời BC và AH.",
+      "correct_option": "BC=75, AH=36",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tong-hop"
+    },
+    {
+      "question_id": "GEO18V1_046",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "pythagore"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác vuông có hai cạnh góc vuông dài 8 và 15. Cạnh huyền bằng:",
+      "correct_option": "17",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh-huyen"
+    },
+    {
+      "question_id": "GEO18V1_047",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "pythagore-dao"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore-dao",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác có ba cạnh 8, 15, 17. Kết luận đúng là:",
+      "correct_option": "Tam giác vuông",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong"
+    },
+    {
+      "question_id": "GEO18V1_048",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "canh-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "canh-huyen",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Cạnh huyền – cạnh góc vuông”: Trong tam giác ABC vuông tại A, cạnh huyền là:",
+      "correct_option": "BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_049",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "he-thuc-canh"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-canh",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC vuông tại A, AH⊥BC, BH=36, CH=64. Tính AB.",
+      "correct_option": "60",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-chieu"
+    },
+    {
+      "question_id": "GEO18V1_050",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "he-thuc-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC vuông tại A, AH⊥BC, BH=36, CH=64. Tính AH.",
+      "correct_option": "48",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cao"
+    },
+    {
+      "question_id": "GEO18V1_051",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "dien-tich-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác ABC vuông tại A có AB=60, AC=80, BC=100. Đường cao AH xuống BC bằng:",
+      "correct_option": "48",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO18V1_052",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "doi-ke-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "doi-ke-huyen",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Nhận biết cạnh đối – kề – huyền”: Trong ΔABC vuông tại A, xét góc B. Cách gọi cạnh đúng là:",
+      "correct_option": "Đối: AC; kề: AB; huyền: BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_053",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "sin"
+      ],
+      "canonical_assessed_skill_candidate": "sin",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Tỉ số sin”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị sin B là:",
+      "correct_option": "4/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-sin"
+    },
+    {
+      "question_id": "GEO18V1_054",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "cos"
+      ],
+      "canonical_assessed_skill_candidate": "cos",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Tỉ số cos”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị cos B là:",
+      "correct_option": "3/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-cos"
+    },
+    {
+      "question_id": "GEO18V1_055",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "tan"
+      ],
+      "canonical_assessed_skill_candidate": "tan",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Tỉ số tan”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị tan B là:",
+      "correct_option": "4/3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-tan"
+    },
+    {
+      "question_id": "GEO18V1_056",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "tim-canh-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-canh-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác vuông, tan α=3/4 và cạnh kề góc α dài 20. Cạnh đối dài:",
+      "correct_option": "15",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-canh"
+    },
+    {
+      "question_id": "GEO18V1_057",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "tim-goc-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-goc-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Tìm góc bằng lượng giác”: Với α là góc nhọn, biết tan α = 1. Góc α bằng:",
+      "correct_option": "45°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-goc"
+    },
+    {
+      "question_id": "GEO18V1_058",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-nang-ha"
+      ],
+      "canonical_assessed_skill_candidate": "goc-nang-ha",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Góc nâng – góc hạ”: Góc tạo bởi tia nhìn hướng lên đỉnh vật và phương ngang qua mắt người quan sát được gọi là:",
+      "correct_option": "Góc nâng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-goc"
+    },
+    {
+      "question_id": "GEO18V1_059",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "chieu-cao-khoang-cach"
+      ],
+      "canonical_assessed_skill_candidate": "chieu-cao-khoang-cach",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_APPLICATION_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Người quan sát đứng cách chân cột 50 m, góc nâng tới đỉnh là 45°, mắt cao 1.5 m. Chiều cao cột là:",
+      "correct_option": "51.5 m",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "bai-toan-thuc-te"
+    },
+    {
+      "question_id": "GEO18V1_060",
+      "source_file": "18-he-thuc-luong-v1-02.json",
+      "legacy_skill_tags": [
+        "ket-hop-he-thuc"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-he-thuc",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC vuông tại A có AB=60, AC=80. Tính đồng thời BC và AH.",
+      "correct_option": "BC=100, AH=48",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tong-hop"
+    },
+    {
+      "question_id": "GEO18V1_061",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "pythagore"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác vuông có hai cạnh góc vuông dài 7 và 24. Cạnh huyền bằng:",
+      "correct_option": "25",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh-huyen"
+    },
+    {
+      "question_id": "GEO18V1_062",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "pythagore-dao"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore-dao",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác có ba cạnh 7, 24, 25. Kết luận đúng là:",
+      "correct_option": "Tam giác vuông",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong"
+    },
+    {
+      "question_id": "GEO18V1_063",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "canh-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "canh-huyen",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Cạnh huyền – cạnh góc vuông”: Trong tam giác ABC vuông tại A, cạnh huyền là:",
+      "correct_option": "BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_064",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "he-thuc-canh"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-canh",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Hệ thức cạnh góc vuông”: ΔABC vuông tại A, AH⊥BC, BH=9, CH=16. Tính AB.",
+      "correct_option": "15",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-chieu"
+    },
+    {
+      "question_id": "GEO18V1_065",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "he-thuc-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Hệ thức đường cao”: ΔABC vuông tại A, AH⊥BC, BH=9, CH=16. Tính AH.",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cao"
+    },
+    {
+      "question_id": "GEO18V1_066",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "dien-tich-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Diện tích và đường cao”: Tam giác ABC vuông tại A có AB=15, AC=20, BC=25. Đường cao AH xuống BC bằng:",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO18V1_067",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-ke-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "doi-ke-huyen",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Nhận biết cạnh đối – kề – huyền”: Trong ΔABC vuông tại A, xét góc C. Cách gọi cạnh đúng là:",
+      "correct_option": "Đối: AB; kề: AC; huyền: BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_068",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "sin"
+      ],
+      "canonical_assessed_skill_candidate": "sin",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Tỉ số sin”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị sin B là:",
+      "correct_option": "4/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-sin"
+    },
+    {
+      "question_id": "GEO18V1_069",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "cos"
+      ],
+      "canonical_assessed_skill_candidate": "cos",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Tỉ số cos”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị cos B là:",
+      "correct_option": "3/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-cos"
+    },
+    {
+      "question_id": "GEO18V1_070",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "tan"
+      ],
+      "canonical_assessed_skill_candidate": "tan",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Tỉ số tan”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị tan B là:",
+      "correct_option": "4/3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-tan"
+    },
+    {
+      "question_id": "GEO18V1_071",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "tim-canh-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-canh-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác vuông, tan α=3/4 và cạnh kề góc α dài 24. Cạnh đối dài:",
+      "correct_option": "18",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-canh"
+    },
+    {
+      "question_id": "GEO18V1_072",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "tim-goc-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-goc-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Tìm góc bằng lượng giác”: Với α là góc nhọn, biết sin α = 1/2. Góc α bằng:",
+      "correct_option": "30°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-goc"
+    },
+    {
+      "question_id": "GEO18V1_073",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-nang-ha"
+      ],
+      "canonical_assessed_skill_candidate": "goc-nang-ha",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Góc nâng – góc hạ”: Góc tạo bởi tia nhìn hướng lên đỉnh vật và phương ngang qua mắt người quan sát được gọi là:",
+      "correct_option": "Góc nâng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-goc"
+    },
+    {
+      "question_id": "GEO18V1_074",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "chieu-cao-khoang-cach"
+      ],
+      "canonical_assessed_skill_candidate": "chieu-cao-khoang-cach",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_APPLICATION_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Người quan sát đứng cách chân cột 60 m, góc nâng tới đỉnh là 45°, mắt cao 1.6 m. Chiều cao cột là:",
+      "correct_option": "61.6 m",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "bai-toan-thuc-te"
+    },
+    {
+      "question_id": "GEO18V1_075",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "ket-hop-he-thuc"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-he-thuc",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Kết hợp hệ thức lượng”: ΔABC vuông tại A có AB=15, AC=20. Tính đồng thời BC và AH.",
+      "correct_option": "BC=25, AH=12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tong-hop"
+    },
+    {
+      "question_id": "GEO18V1_076",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "pythagore"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác vuông có hai cạnh góc vuông dài 9 và 12. Cạnh huyền bằng:",
+      "correct_option": "15",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh-huyen"
+    },
+    {
+      "question_id": "GEO18V1_077",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "pythagore-dao"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore-dao",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác có ba cạnh 9, 12, 15. Kết luận đúng là:",
+      "correct_option": "Tam giác vuông",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong"
+    },
+    {
+      "question_id": "GEO18V1_078",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "canh-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "canh-huyen",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Cạnh huyền – cạnh góc vuông”: Trong tam giác ABC vuông tại A, cạnh huyền là:",
+      "correct_option": "BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_079",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "he-thuc-canh"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-canh",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Hệ thức cạnh góc vuông”: ΔABC vuông tại A, AH⊥BC, BH=18, CH=32. Tính AB.",
+      "correct_option": "30",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-chieu"
+    },
+    {
+      "question_id": "GEO18V1_080",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "he-thuc-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Hệ thức đường cao”: ΔABC vuông tại A, AH⊥BC, BH=18, CH=32. Tính AH.",
+      "correct_option": "24",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cao"
+    },
+    {
+      "question_id": "GEO18V1_081",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "dien-tich-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Diện tích và đường cao”: Tam giác ABC vuông tại A có AB=30, AC=40, BC=50. Đường cao AH xuống BC bằng:",
+      "correct_option": "24",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO18V1_082",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-ke-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "doi-ke-huyen",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Nhận biết cạnh đối – kề – huyền”: Trong ΔABC vuông tại A, xét góc B. Cách gọi cạnh đúng là:",
+      "correct_option": "Đối: AC; kề: AB; huyền: BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_083",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "sin"
+      ],
+      "canonical_assessed_skill_candidate": "sin",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Tỉ số sin”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị sin B là:",
+      "correct_option": "4/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-sin"
+    },
+    {
+      "question_id": "GEO18V1_084",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "cos"
+      ],
+      "canonical_assessed_skill_candidate": "cos",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Tỉ số cos”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị cos B là:",
+      "correct_option": "3/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-cos"
+    },
+    {
+      "question_id": "GEO18V1_085",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "tan"
+      ],
+      "canonical_assessed_skill_candidate": "tan",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Tỉ số tan”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị tan B là:",
+      "correct_option": "4/3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-tan"
+    },
+    {
+      "question_id": "GEO18V1_086",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "tim-canh-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-canh-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Tìm cạnh bằng lượng giác”: Trong tam giác vuông, tan α=3/4 và cạnh kề góc α dài 8. Cạnh đối dài:",
+      "correct_option": "6",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-canh"
+    },
+    {
+      "question_id": "GEO18V1_087",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "tim-goc-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-goc-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Tìm góc bằng lượng giác”: Với α là góc nhọn, biết cos α = 1/2. Góc α bằng:",
+      "correct_option": "60°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-goc"
+    },
+    {
+      "question_id": "GEO18V1_088",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-nang-ha"
+      ],
+      "canonical_assessed_skill_candidate": "goc-nang-ha",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Góc nâng – góc hạ”: Góc tạo bởi tia nhìn hướng lên đỉnh vật và phương ngang qua mắt người quan sát được gọi là:",
+      "correct_option": "Góc nâng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-goc"
+    },
+    {
+      "question_id": "GEO18V1_089",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "chieu-cao-khoang-cach"
+      ],
+      "canonical_assessed_skill_candidate": "chieu-cao-khoang-cach",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_APPLICATION_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Người quan sát đứng cách chân cột 20 m, góc nâng tới đỉnh là 45°, mắt cao 1.7 m. Chiều cao cột là:",
+      "correct_option": "21.7 m",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "bai-toan-thuc-te"
+    },
+    {
+      "question_id": "GEO18V1_090",
+      "source_file": "18-he-thuc-luong-v1-03.json",
+      "legacy_skill_tags": [
+        "ket-hop-he-thuc"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-he-thuc",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Kết hợp hệ thức lượng”: ΔABC vuông tại A có AB=30, AC=40. Tính đồng thời BC và AH.",
+      "correct_option": "BC=50, AH=24",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tong-hop"
+    },
+    {
+      "question_id": "GEO18V1_091",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "pythagore"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Định lý Pythagore”: Tam giác vuông có hai cạnh góc vuông dài 3 và 4. Cạnh huyền bằng:",
+      "correct_option": "5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh-huyen"
+    },
+    {
+      "question_id": "GEO18V1_092",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "pythagore-dao"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore-dao",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Pythagore đảo”: Tam giác có ba cạnh 3, 4, 5. Kết luận đúng là:",
+      "correct_option": "Tam giác vuông",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong"
+    },
+    {
+      "question_id": "GEO18V1_093",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "canh-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "canh-huyen",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Cạnh huyền – cạnh góc vuông”: Trong tam giác ABC vuông tại A, cạnh huyền là:",
+      "correct_option": "BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_094",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "he-thuc-canh"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-canh",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Hệ thức cạnh góc vuông”: ΔABC vuông tại A, AH⊥BC, BH=27, CH=48. Tính AB.",
+      "correct_option": "45",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-chieu"
+    },
+    {
+      "question_id": "GEO18V1_095",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "he-thuc-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Hệ thức đường cao”: ΔABC vuông tại A, AH⊥BC, BH=27, CH=48. Tính AH.",
+      "correct_option": "36",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cao"
+    },
+    {
+      "question_id": "GEO18V1_096",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "dien-tich-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Diện tích và đường cao”: Tam giác ABC vuông tại A có AB=45, AC=60, BC=75. Đường cao AH xuống BC bằng:",
+      "correct_option": "36",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO18V1_097",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "doi-ke-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "doi-ke-huyen",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Nhận biết cạnh đối – kề – huyền”: Trong ΔABC vuông tại A, xét góc C. Cách gọi cạnh đúng là:",
+      "correct_option": "Đối: AB; kề: AC; huyền: BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_098",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "sin"
+      ],
+      "canonical_assessed_skill_candidate": "sin",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Tỉ số sin”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị sin B là:",
+      "correct_option": "4/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-sin"
+    },
+    {
+      "question_id": "GEO18V1_099",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "cos"
+      ],
+      "canonical_assessed_skill_candidate": "cos",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Tỉ số cos”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị cos B là:",
+      "correct_option": "3/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-cos"
+    },
+    {
+      "question_id": "GEO18V1_100",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "tan"
+      ],
+      "canonical_assessed_skill_candidate": "tan",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Tỉ số tan”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị tan B là:",
+      "correct_option": "4/3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-tan"
+    },
+    {
+      "question_id": "GEO18V1_101",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "tim-canh-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-canh-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Tìm cạnh bằng lượng giác”: Trong tam giác vuông, tan α=3/4 và cạnh kề góc α dài 12. Cạnh đối dài:",
+      "correct_option": "9",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-canh"
+    },
+    {
+      "question_id": "GEO18V1_102",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "tim-goc-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-goc-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Tìm góc bằng lượng giác”: Với α là góc nhọn, biết tan α = 1. Góc α bằng:",
+      "correct_option": "45°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-goc"
+    },
+    {
+      "question_id": "GEO18V1_103",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-nang-ha"
+      ],
+      "canonical_assessed_skill_candidate": "goc-nang-ha",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Góc nâng – góc hạ”: Góc tạo bởi tia nhìn hướng lên đỉnh vật và phương ngang qua mắt người quan sát được gọi là:",
+      "correct_option": "Góc nâng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-goc"
+    },
+    {
+      "question_id": "GEO18V1_104",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "chieu-cao-khoang-cach"
+      ],
+      "canonical_assessed_skill_candidate": "chieu-cao-khoang-cach",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_APPLICATION_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Người quan sát đứng cách chân cột 30 m, góc nâng tới đỉnh là 45°, mắt cao 1.5 m. Chiều cao cột là:",
+      "correct_option": "31.5 m",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "bai-toan-thuc-te"
+    },
+    {
+      "question_id": "GEO18V1_105",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "ket-hop-he-thuc"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-he-thuc",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Kết hợp hệ thức lượng”: ΔABC vuông tại A có AB=45, AC=60. Tính đồng thời BC và AH.",
+      "correct_option": "BC=75, AH=36",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tong-hop"
+    },
+    {
+      "question_id": "GEO18V1_106",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "pythagore"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Định lý Pythagore”: Tam giác vuông có hai cạnh góc vuông dài 5 và 12. Cạnh huyền bằng:",
+      "correct_option": "13",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh-huyen"
+    },
+    {
+      "question_id": "GEO18V1_107",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "pythagore-dao"
+      ],
+      "canonical_assessed_skill_candidate": "pythagore-dao",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Pythagore đảo”: Tam giác có ba cạnh 5, 12, 13. Kết luận đúng là:",
+      "correct_option": "Tam giác vuông",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-vuong"
+    },
+    {
+      "question_id": "GEO18V1_108",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "canh-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "canh-huyen",
+      "learner_family_candidate": "RIGHT-PYTHAGORE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Cạnh huyền – cạnh góc vuông”: Trong tam giác ABC vuông tại A, cạnh huyền là:",
+      "correct_option": "BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_109",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "he-thuc-canh"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-canh",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Hệ thức cạnh góc vuông”: ΔABC vuông tại A, AH⊥BC, BH=36, CH=64. Tính AB.",
+      "correct_option": "60",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-chieu"
+    },
+    {
+      "question_id": "GEO18V1_110",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "he-thuc-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Hệ thức đường cao”: ΔABC vuông tại A, AH⊥BC, BH=36, CH=64. Tính AH.",
+      "correct_option": "48",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cao"
+    },
+    {
+      "question_id": "GEO18V1_111",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "dien-tich-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-duong-cao",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Diện tích và đường cao”: Tam giác ABC vuông tại A có AB=60, AC=80, BC=100. Đường cao AH xuống BC bằng:",
+      "correct_option": "48",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO18V1_112",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "doi-ke-huyen"
+      ],
+      "canonical_assessed_skill_candidate": "doi-ke-huyen",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Nhận biết cạnh đối – kề – huyền”: Trong ΔABC vuông tại A, xét góc B. Cách gọi cạnh đúng là:",
+      "correct_option": "Đối: AC; kề: AB; huyền: BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-canh"
+    },
+    {
+      "question_id": "GEO18V1_113",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "sin"
+      ],
+      "canonical_assessed_skill_candidate": "sin",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Tỉ số sin”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị sin B là:",
+      "correct_option": "4/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-sin"
+    },
+    {
+      "question_id": "GEO18V1_114",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "cos"
+      ],
+      "canonical_assessed_skill_candidate": "cos",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Tỉ số cos”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị cos B là:",
+      "correct_option": "3/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-cos"
+    },
+    {
+      "question_id": "GEO18V1_115",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "tan"
+      ],
+      "canonical_assessed_skill_candidate": "tan",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Tỉ số tan”: Trong ΔABC vuông tại A với AB=3k, AC=4k, BC=5k. Giá trị tan B là:",
+      "correct_option": "4/3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-tan"
+    },
+    {
+      "question_id": "GEO18V1_116",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "tim-canh-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-canh-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Tìm cạnh bằng lượng giác”: Trong tam giác vuông, tan α=3/4 và cạnh kề góc α dài 16. Cạnh đối dài:",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-canh"
+    },
+    {
+      "question_id": "GEO18V1_117",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "tim-goc-luong-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tim-goc-luong-giac",
+      "learner_family_candidate": "RIGHT-SOLVE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Tìm góc bằng lượng giác”: Với α là góc nhọn, biết sin α = 1/2. Góc α bằng:",
+      "correct_option": "30°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-goc"
+    },
+    {
+      "question_id": "GEO18V1_118",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-nang-ha"
+      ],
+      "canonical_assessed_skill_candidate": "goc-nang-ha",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Góc nâng – góc hạ”: Góc tạo bởi tia nhìn hướng lên đỉnh vật và phương ngang qua mắt người quan sát được gọi là:",
+      "correct_option": "Góc nâng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-goc"
+    },
+    {
+      "question_id": "GEO18V1_119",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "chieu-cao-khoang-cach"
+      ],
+      "canonical_assessed_skill_candidate": "chieu-cao-khoang-cach",
+      "learner_family_candidate": "RIGHT-APPLICATION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_APPLICATION_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Người quan sát đứng cách chân cột 40 m, góc nâng tới đỉnh là 45°, mắt cao 1.6 m. Chiều cao cột là:",
+      "correct_option": "41.6 m",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "bai-toan-thuc-te"
+    },
+    {
+      "question_id": "GEO18V1_120",
+      "source_file": "18-he-thuc-luong-v1-04.json",
+      "legacy_skill_tags": [
+        "ket-hop-he-thuc"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-he-thuc",
+      "learner_family_candidate": "RIGHT-ALTITUDE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Kết hợp hệ thức lượng”: ΔABC vuông tại A có AB=60, AC=80. Tính đồng thời BC và AH.",
+      "correct_option": "BC=100, AH=48",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tong-hop"
+    },
+    {
+      "question_id": "TRIG18V1_121",
+      "source_file": "18-he-thuc-luong-v1-05.json",
+      "legacy_skill_tags": [
+        "cot"
+      ],
+      "canonical_assessed_skill_candidate": "cot",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "cot α=",
+      "correct_option": "kề/đối",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cot"
+    },
+    {
+      "question_id": "TRIG18V1_122",
+      "source_file": "18-he-thuc-luong-v1-05.json",
+      "legacy_skill_tags": [
+        "cot"
+      ],
+      "canonical_assessed_skill_candidate": "cot",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "tan α=2/5 thì cot α=",
+      "correct_option": "5/2",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cot"
+    },
+    {
+      "question_id": "TRIG18V1_123",
+      "source_file": "18-he-thuc-luong-v1-05.json",
+      "legacy_skill_tags": [
+        "cot"
+      ],
+      "canonical_assessed_skill_candidate": "cot",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kề=12, đối=5. cot α=",
+      "correct_option": "12/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cot"
+    },
+    {
+      "question_id": "TRIG18V1_124",
+      "source_file": "18-he-thuc-luong-v1-05.json",
+      "legacy_skill_tags": [
+        "cot"
+      ],
+      "canonical_assessed_skill_candidate": "cot",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "cot α=3 thì tan α=",
+      "correct_option": "1/3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cot"
+    },
+    {
+      "question_id": "TRIG18V1_125",
+      "source_file": "18-he-thuc-luong-v1-05.json",
+      "legacy_skill_tags": [
+        "cot"
+      ],
+      "canonical_assessed_skill_candidate": "cot",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "cot α=1 với góc nhọn khi:",
+      "correct_option": "45°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cot"
+    },
+    {
+      "question_id": "TRIG18V1_126",
+      "source_file": "18-he-thuc-luong-v1-05.json",
+      "legacy_skill_tags": [
+        "cot"
+      ],
+      "canonical_assessed_skill_candidate": "cot",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cạnh kề gấp đôi cạnh đối. cot α=",
+      "correct_option": "2",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cot"
+    },
+    {
+      "question_id": "TRIG18V1_127",
+      "source_file": "18-he-thuc-luong-v1-05.json",
+      "legacy_skill_tags": [
+        "cot"
+      ],
+      "canonical_assessed_skill_candidate": "cot",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "cot 30°=",
+      "correct_option": "√3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cot"
+    },
+    {
+      "question_id": "TRIG18V1_128",
+      "source_file": "18-he-thuc-luong-v1-05.json",
+      "legacy_skill_tags": [
+        "cot"
+      ],
+      "canonical_assessed_skill_candidate": "cot",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "cot 60°=",
+      "correct_option": "1/√3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cot"
+    },
+    {
+      "question_id": "TRIG18V1_129",
+      "source_file": "18-he-thuc-luong-v1-05.json",
+      "legacy_skill_tags": [
+        "cot"
+      ],
+      "canonical_assessed_skill_candidate": "cot",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "cot α=4/3, đối=9. Kề=",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cot"
+    },
+    {
+      "question_id": "TRIG18V1_130",
+      "source_file": "18-he-thuc-luong-v1-05.json",
+      "legacy_skill_tags": [
+        "cot"
+      ],
+      "canonical_assessed_skill_candidate": "cot",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kề=8, cot α=4/3. Đối=",
+      "correct_option": "6",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cot"
+    },
+    {
+      "question_id": "TRIG18V1_131",
+      "source_file": "18-he-thuc-luong-v1-05.json",
+      "legacy_skill_tags": [
+        "cot"
+      ],
+      "canonical_assessed_skill_candidate": "cot",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với góc nhọn α:",
+      "correct_option": "tan α·cot α=1",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cot"
+    },
+    {
+      "question_id": "TRIG18V1_132",
+      "source_file": "18-he-thuc-luong-v1-05.json",
+      "legacy_skill_tags": [
+        "cot"
+      ],
+      "canonical_assessed_skill_candidate": "cot",
+      "learner_family_candidate": "RIGHT-TRIG-RATIO",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "TRIG18-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biết cot α=2, cách tìm α:",
+      "correct_option": "Đổi tan α=1/2 rồi arctan",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cot"
+    }
+  ]
+}
