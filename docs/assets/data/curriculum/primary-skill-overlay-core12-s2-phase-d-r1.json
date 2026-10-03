@@ -1,0 +1,3084 @@
+{
+  "schema": "primary-skill-overlay-core12-s2-phase-d-r1",
+  "status": "CHATGPT_CANDIDATE_PENDING_NOTEBOOKLM_REVIEW",
+  "as_of": "2026-10-02",
+  "topic": "12-phuong-trinh-bac-hai-viete",
+  "source_manifest": "docs/assets/data/practice/12-phuong-trinh-bac-hai-viete-v1.manifest.json",
+  "source_manifest_blob": "e0c0fa4ae80b2b5d88a44e6505f090c1d7843aa3",
+  "source_files": {
+    "12-phuong-trinh-bac-hai-viete-v1-01.json": {
+      "blob": "435529308a3660f1d5b9121674b72f18d03494df",
+      "question_count": 30
+    },
+    "12-phuong-trinh-bac-hai-viete-v1-02.json": {
+      "blob": "3f3ca70fe49cce27abd31bd60dc514713c4a4db0",
+      "question_count": 30
+    },
+    "12-phuong-trinh-bac-hai-viete-v1-03.json": {
+      "blob": "58e5d830edcffef889089fbb9231c3219af89777",
+      "question_count": 30
+    },
+    "12-phuong-trinh-bac-hai-viete-v1-04.json": {
+      "blob": "b8b583e4322b081ffec482b0fa270f3e34fcb102",
+      "question_count": 30
+    }
+  },
+  "academic_basis": {
+    "s2_family_blob": "867d1b6fee2676cceff64117fc6c7983abec8233"
+  },
+  "rules": {
+    "one_primary_max_per_mcq": true,
+    "methods_not_extra_learner_family": true,
+    "construction_and_parameter_mcq_partial_only": true,
+    "runtime_enabled": false,
+    "no_history_backfill": true
+  },
+  "summary": {
+    "questions": 120,
+    "mapped_primary": 120,
+    "formative_only_without_primary": 0,
+    "primary_counts": {
+      "nhan-dang-pt-bac-hai": 10,
+      "he-so-abc": 10,
+      "tinh-delta": 7,
+      "so-nghiem-delta": 7,
+      "giai-pt-bac-hai": 18,
+      "delta-phay": 10,
+      "nham-nghiem": 10,
+      "tong-tich-nghiem": 12,
+      "bieu-thuc-doi-xung": 12,
+      "lap-pt-tu-nghiem": 8,
+      "tham-so-so-nghiem": 8,
+      "dau-nghiem": 6,
+      "lien-he-do-thi": 2
+    },
+    "family_counts": {
+      "QUAD-STRUCTURE": 20,
+      "QUAD-SOLVE": 52,
+      "VIETE-CORE": 20,
+      "VIETE-APPLY": 18,
+      "QUAD-PARAM": 8,
+      "QUAD-GRAPH": 2
+    },
+    "clone_families": [
+      {
+        "id": "QUA12-RECOG-001-005",
+        "count": 5,
+        "ids": [
+          "QUA12V1_001",
+          "QUA12V1_002",
+          "QUA12V1_003",
+          "QUA12V1_004",
+          "QUA12V1_005"
+        ]
+      },
+      {
+        "id": "QUA12-RECOG-006-010",
+        "count": 5,
+        "ids": [
+          "QUA12V1_006",
+          "QUA12V1_007",
+          "QUA12V1_008",
+          "QUA12V1_009",
+          "QUA12V1_010"
+        ]
+      },
+      {
+        "id": "QUA12-COEFF-011-020",
+        "count": 10,
+        "ids": [
+          "QUA12V1_011",
+          "QUA12V1_012",
+          "QUA12V1_013",
+          "QUA12V1_014",
+          "QUA12V1_015",
+          "QUA12V1_016",
+          "QUA12V1_017",
+          "QUA12V1_018",
+          "QUA12V1_019",
+          "QUA12V1_020"
+        ]
+      },
+      {
+        "id": "QUA12-DELTA-021-034",
+        "count": 14,
+        "ids": [
+          "QUA12V1_021",
+          "QUA12V1_022",
+          "QUA12V1_023",
+          "QUA12V1_024",
+          "QUA12V1_025",
+          "QUA12V1_026",
+          "QUA12V1_027",
+          "QUA12V1_028",
+          "QUA12V1_029",
+          "QUA12V1_030",
+          "QUA12V1_031",
+          "QUA12V1_032",
+          "QUA12V1_033",
+          "QUA12V1_034"
+        ]
+      },
+      {
+        "id": "QUA12-SOLVE-035-043",
+        "count": 9,
+        "ids": [
+          "QUA12V1_035",
+          "QUA12V1_036",
+          "QUA12V1_037",
+          "QUA12V1_038",
+          "QUA12V1_039",
+          "QUA12V1_040",
+          "QUA12V1_041",
+          "QUA12V1_042",
+          "QUA12V1_043"
+        ]
+      },
+      {
+        "id": "QUA12-SOLVE-044-052",
+        "count": 9,
+        "ids": [
+          "QUA12V1_044",
+          "QUA12V1_045",
+          "QUA12V1_046",
+          "QUA12V1_047",
+          "QUA12V1_048",
+          "QUA12V1_049",
+          "QUA12V1_050",
+          "QUA12V1_051",
+          "QUA12V1_052"
+        ]
+      },
+      {
+        "id": "QUA12-DELTA-PRIME-053-062",
+        "count": 10,
+        "ids": [
+          "QUA12V1_053",
+          "QUA12V1_054",
+          "QUA12V1_055",
+          "QUA12V1_056",
+          "QUA12V1_057",
+          "QUA12V1_058",
+          "QUA12V1_059",
+          "QUA12V1_060",
+          "QUA12V1_061",
+          "QUA12V1_062"
+        ]
+      },
+      {
+        "id": "QUA12-MENTAL-063-067",
+        "count": 5,
+        "ids": [
+          "QUA12V1_063",
+          "QUA12V1_064",
+          "QUA12V1_065",
+          "QUA12V1_066",
+          "QUA12V1_067"
+        ]
+      },
+      {
+        "id": "QUA12-MENTAL-068-072",
+        "count": 5,
+        "ids": [
+          "QUA12V1_068",
+          "QUA12V1_069",
+          "QUA12V1_070",
+          "QUA12V1_071",
+          "QUA12V1_072"
+        ]
+      },
+      {
+        "id": "QUA12-VIETE-073-084",
+        "count": 12,
+        "ids": [
+          "QUA12V1_073",
+          "QUA12V1_074",
+          "QUA12V1_075",
+          "QUA12V1_076",
+          "QUA12V1_077",
+          "QUA12V1_078",
+          "QUA12V1_079",
+          "QUA12V1_080",
+          "QUA12V1_081",
+          "QUA12V1_082",
+          "QUA12V1_083",
+          "QUA12V1_084"
+        ]
+      },
+      {
+        "id": "QUA12-SYMMETRIC-085-096",
+        "count": 12,
+        "ids": [
+          "QUA12V1_085",
+          "QUA12V1_086",
+          "QUA12V1_087",
+          "QUA12V1_088",
+          "QUA12V1_089",
+          "QUA12V1_090",
+          "QUA12V1_091",
+          "QUA12V1_092",
+          "QUA12V1_093",
+          "QUA12V1_094",
+          "QUA12V1_095",
+          "QUA12V1_096"
+        ]
+      },
+      {
+        "id": "QUA12-BUILD-097-104",
+        "count": 8,
+        "ids": [
+          "QUA12V1_097",
+          "QUA12V1_098",
+          "QUA12V1_099",
+          "QUA12V1_100",
+          "QUA12V1_101",
+          "QUA12V1_102",
+          "QUA12V1_103",
+          "QUA12V1_104"
+        ]
+      },
+      {
+        "id": "QUA12-PARAM-105-112",
+        "count": 8,
+        "ids": [
+          "QUA12V1_105",
+          "QUA12V1_106",
+          "QUA12V1_107",
+          "QUA12V1_108",
+          "QUA12V1_109",
+          "QUA12V1_110",
+          "QUA12V1_111",
+          "QUA12V1_112"
+        ]
+      },
+      {
+        "id": "QUA12-SIGN-113-118",
+        "count": 6,
+        "ids": [
+          "QUA12V1_113",
+          "QUA12V1_114",
+          "QUA12V1_115",
+          "QUA12V1_116",
+          "QUA12V1_117",
+          "QUA12V1_118"
+        ]
+      },
+      {
+        "id": "QUA12-GRAPH-119-120",
+        "count": 2,
+        "ids": [
+          "QUA12V1_119",
+          "QUA12V1_120"
+        ]
+      }
+    ],
+    "runtime_enabled": 0
+  },
+  "items": [
+    {
+      "question_id": "QUA12V1_001",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-dang-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-pt-bac-hai",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-RECOG-001-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Xét phương trình \\(2x^2-3x+1=0\\). Kết luận nào đúng?",
+      "correct_option": "Là phương trình bậc hai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_002",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-dang-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-pt-bac-hai",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-RECOG-001-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Xét phương trình \\(x^2+5=0\\). Kết luận nào đúng?",
+      "correct_option": "Là phương trình bậc hai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_003",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-dang-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-pt-bac-hai",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-RECOG-001-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Xét phương trình \\(3x-2=0\\). Kết luận nào đúng?",
+      "correct_option": "Không phải phương trình bậc hai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_004",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-dang-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-pt-bac-hai",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-RECOG-001-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Xét phương trình \\(0x^2+2x+1=0\\). Kết luận nào đúng?",
+      "correct_option": "Không phải phương trình bậc hai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_005",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-dang-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-pt-bac-hai",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-RECOG-001-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Xét phương trình \\(-x^2+4x=0\\). Kết luận nào đúng?",
+      "correct_option": "Là phương trình bậc hai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_006",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-dang-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-pt-bac-hai",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-RECOG-006-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, xét phương trình \\(2x^2-3x+1=0\\). Kết luận nào đúng?",
+      "correct_option": "Là phương trình bậc hai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_007",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-dang-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-pt-bac-hai",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-RECOG-006-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, xét phương trình \\(x^2+5=0\\). Kết luận nào đúng?",
+      "correct_option": "Là phương trình bậc hai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_008",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-dang-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-pt-bac-hai",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-RECOG-006-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, xét phương trình \\(3x-2=0\\). Kết luận nào đúng?",
+      "correct_option": "Không phải phương trình bậc hai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_009",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-dang-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-pt-bac-hai",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-RECOG-006-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, xét phương trình \\(0x^2+2x+1=0\\). Kết luận nào đúng?",
+      "correct_option": "Không phải phương trình bậc hai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_010",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-dang-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-pt-bac-hai",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-RECOG-006-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, xét phương trình \\(-x^2+4x=0\\). Kết luận nào đúng?",
+      "correct_option": "Là phương trình bậc hai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_011",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "he-so-abc"
+      ],
+      "canonical_assessed_skill_candidate": "he-so-abc",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-COEFF-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với phương trình \\(2x^2-3x+1=0\\), bộ \\((a,b,c)\\) là:",
+      "correct_option": "\\((2;-3;1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_012",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "he-so-abc"
+      ],
+      "canonical_assessed_skill_candidate": "he-so-abc",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-COEFF-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong \\(x^2+5x-6=0\\), hệ số \\(b\\) bằng:",
+      "correct_option": "\\(5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_013",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "he-so-abc"
+      ],
+      "canonical_assessed_skill_candidate": "he-so-abc",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-COEFF-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với phương trình \\(-x^2+4x=0\\), bộ \\((a,b,c)\\) là:",
+      "correct_option": "\\((-1;4;0)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_014",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "he-so-abc"
+      ],
+      "canonical_assessed_skill_candidate": "he-so-abc",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-COEFF-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong \\(3x^2-12=0\\), hệ số \\(b\\) bằng:",
+      "correct_option": "\\(0\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_015",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "he-so-abc"
+      ],
+      "canonical_assessed_skill_candidate": "he-so-abc",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-COEFF-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với phương trình \\(4x^2-2x+7=0\\), bộ \\((a,b,c)\\) là:",
+      "correct_option": "\\((4;-2;7)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_016",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "he-so-abc"
+      ],
+      "canonical_assessed_skill_candidate": "he-so-abc",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-COEFF-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong \\(2x^2-3x+1=0\\), hệ số \\(b\\) bằng:",
+      "correct_option": "\\(-3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_017",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "he-so-abc"
+      ],
+      "canonical_assessed_skill_candidate": "he-so-abc",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-COEFF-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với phương trình \\(x^2+5x-6=0\\), bộ \\((a,b,c)\\) là:",
+      "correct_option": "\\((1;5;-6)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_018",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "he-so-abc"
+      ],
+      "canonical_assessed_skill_candidate": "he-so-abc",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-COEFF-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong \\(-x^2+4x=0\\), hệ số \\(b\\) bằng:",
+      "correct_option": "\\(4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_019",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "he-so-abc"
+      ],
+      "canonical_assessed_skill_candidate": "he-so-abc",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-COEFF-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với phương trình \\(3x^2-12=0\\), bộ \\((a,b,c)\\) là:",
+      "correct_option": "\\((3;0;-12)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_020",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "he-so-abc"
+      ],
+      "canonical_assessed_skill_candidate": "he-so-abc",
+      "learner_family_candidate": "QUAD-STRUCTURE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-COEFF-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong \\(4x^2-2x+7=0\\), hệ số \\(b\\) bằng:",
+      "correct_option": "\\(-2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_021",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biệt thức \\(\\Delta\\) của \\(x^2-5x+6=0\\) bằng:",
+      "correct_option": "\\(1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_022",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "so-nghiem-delta",
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "tinh-delta"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2+2x+1=0\\) có bao nhiêu nghiệm thực?",
+      "correct_option": "Một nghiệm kép",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_023",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biệt thức \\(\\Delta\\) của \\(x^2+x+1=0\\) bằng:",
+      "correct_option": "\\(-3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_024",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "so-nghiem-delta",
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "tinh-delta"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(2x^2-4x-6=0\\) có bao nhiêu nghiệm thực?",
+      "correct_option": "Hai nghiệm phân biệt",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_025",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biệt thức \\(\\Delta\\) của \\(3x^2+x-2=0\\) bằng:",
+      "correct_option": "\\(25\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_026",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "so-nghiem-delta",
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "tinh-delta"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(2x^2+4x+2=0\\) có bao nhiêu nghiệm thực?",
+      "correct_option": "Một nghiệm kép",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_027",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biệt thức \\(\\Delta\\) của \\(x^2-4x+4=0\\) bằng:",
+      "correct_option": "\\(0\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_028",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "so-nghiem-delta",
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "tinh-delta"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-5x+6=0\\) có bao nhiêu nghiệm thực?",
+      "correct_option": "Hai nghiệm phân biệt",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_029",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biệt thức \\(\\Delta\\) của \\(x^2+2x+1=0\\) bằng:",
+      "correct_option": "\\(0\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_030",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-01.json",
+      "legacy_skill_tags": [
+        "so-nghiem-delta",
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "tinh-delta"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2+x+1=0\\) có bao nhiêu nghiệm thực?",
+      "correct_option": "Vô nghiệm trong R",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_031",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biệt thức \\(\\Delta\\) của \\(2x^2-4x-6=0\\) bằng:",
+      "correct_option": "\\(64\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_032",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "so-nghiem-delta",
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "tinh-delta"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(3x^2+x-2=0\\) có bao nhiêu nghiệm thực?",
+      "correct_option": "Hai nghiệm phân biệt",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_033",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biệt thức \\(\\Delta\\) của \\(2x^2+4x+2=0\\) bằng:",
+      "correct_option": "\\(0\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_034",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "so-nghiem-delta",
+        "tinh-delta"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-delta",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "tinh-delta"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-021-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-4x+4=0\\) có bao nhiêu nghiệm thực?",
+      "correct_option": "Một nghiệm kép",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_035",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-035-043",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(2x^2-10x+12=0\\).",
+      "correct_option": "\\(x=2\\) hoặc \\(x=3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_036",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-035-043",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(x^2+x-2=0\\).",
+      "correct_option": "\\(x=1\\) hoặc \\(x=-2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_037",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-035-043",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(x^2+4x+3=0\\).",
+      "correct_option": "\\(x=-1\\) hoặc \\(x=-3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_038",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-035-043",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(2x^2-8x=0\\).",
+      "correct_option": "\\(x=0\\) hoặc \\(x=4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_039",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-035-043",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(x^2-x-2=0\\).",
+      "correct_option": "\\(x=2\\) hoặc \\(x=-1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_040",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-035-043",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(x^2-8x+15=0\\).",
+      "correct_option": "\\(x=3\\) hoặc \\(x=5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_041",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-035-043",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(2x^2-4x-16=0\\).",
+      "correct_option": "\\(x=-2\\) hoặc \\(x=4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_042",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-035-043",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(x^2-2x+1=0\\).",
+      "correct_option": "\\(x=1\\) (nghiệm kép)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_043",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-035-043",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\(x^2-4x+4=0\\).",
+      "correct_option": "\\(x=2\\) (nghiệm kép)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_044",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-044-052",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, giải phương trình \\(2x^2-10x+12=0\\).",
+      "correct_option": "\\(x=2\\) hoặc \\(x=3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_045",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-044-052",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, giải phương trình \\(x^2+x-2=0\\).",
+      "correct_option": "\\(x=1\\) hoặc \\(x=-2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_046",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-044-052",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, giải phương trình \\(x^2+4x+3=0\\).",
+      "correct_option": "\\(x=-1\\) hoặc \\(x=-3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_047",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-044-052",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, giải phương trình \\(2x^2-8x=0\\).",
+      "correct_option": "\\(x=0\\) hoặc \\(x=4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_048",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-044-052",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, giải phương trình \\(x^2-x-2=0\\).",
+      "correct_option": "\\(x=2\\) hoặc \\(x=-1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_049",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-044-052",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, giải phương trình \\(x^2-8x+15=0\\).",
+      "correct_option": "\\(x=3\\) hoặc \\(x=5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_050",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-044-052",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, giải phương trình \\(2x^2-4x-16=0\\).",
+      "correct_option": "\\(x=-2\\) hoặc \\(x=4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_051",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-044-052",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, giải phương trình \\(x^2-2x+1=0\\).",
+      "correct_option": "\\(x=1\\) (nghiệm kép)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_052",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "giai-pt-bac-hai",
+        "cong-thuc-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "giai-pt-bac-hai",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "cong-thuc-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SOLVE-044-052",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, giải phương trình \\(x^2-4x+4=0\\).",
+      "correct_option": "\\(x=2\\) (nghiệm kép)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_053",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "delta-phay"
+      ],
+      "canonical_assessed_skill_candidate": "delta-phay",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-PRIME-053-062",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với \\(x^2-4x-1=0\\), giá trị \\(\\Delta'\\) bằng:",
+      "correct_option": "\\(5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_054",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "delta-phay"
+      ],
+      "canonical_assessed_skill_candidate": "delta-phay",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-PRIME-053-062",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với \\(2x^2-2x=0\\), giá trị \\(\\Delta'\\) bằng:",
+      "correct_option": "\\(1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_055",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "delta-phay"
+      ],
+      "canonical_assessed_skill_candidate": "delta-phay",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-PRIME-053-062",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với \\(3x^2+1=0\\), giá trị \\(\\Delta'\\) bằng:",
+      "correct_option": "\\(-3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_056",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "delta-phay"
+      ],
+      "canonical_assessed_skill_candidate": "delta-phay",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-PRIME-053-062",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với \\(x^2+2x+2=0\\), giá trị \\(\\Delta'\\) bằng:",
+      "correct_option": "\\(-1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_057",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "delta-phay"
+      ],
+      "canonical_assessed_skill_candidate": "delta-phay",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-PRIME-053-062",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với \\(2x^2+4x-1=0\\), giá trị \\(\\Delta'\\) bằng:",
+      "correct_option": "\\(6\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_058",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "delta-phay"
+      ],
+      "canonical_assessed_skill_candidate": "delta-phay",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-PRIME-053-062",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với \\(3x^2-4x=0\\), giá trị \\(\\Delta'\\) bằng:",
+      "correct_option": "\\(4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_059",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "delta-phay"
+      ],
+      "canonical_assessed_skill_candidate": "delta-phay",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-PRIME-053-062",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với \\(x^2-2x+1=0\\), giá trị \\(\\Delta'\\) bằng:",
+      "correct_option": "\\(0\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_060",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-02.json",
+      "legacy_skill_tags": [
+        "delta-phay"
+      ],
+      "canonical_assessed_skill_candidate": "delta-phay",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-PRIME-053-062",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với \\(2x^2+2=0\\), giá trị \\(\\Delta'\\) bằng:",
+      "correct_option": "\\(-4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_061",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "delta-phay"
+      ],
+      "canonical_assessed_skill_candidate": "delta-phay",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-PRIME-053-062",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với \\(3x^2+2x-1=0\\), giá trị \\(\\Delta'\\) bằng:",
+      "correct_option": "\\(4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_062",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "delta-phay"
+      ],
+      "canonical_assessed_skill_candidate": "delta-phay",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-DELTA-PRIME-053-062",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với \\(x^2+4x=0\\), giá trị \\(\\Delta'\\) bằng:",
+      "correct_option": "\\(4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_063",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "nham-nghiem",
+        "giai-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nham-nghiem",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "giai-pt-bac-hai"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-MENTAL-063-067",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-5x+4=0\\) có thể nhẩm nhanh nghiệm nào?",
+      "correct_option": "\\(x_1=1,\\ x_2=4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_064",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "nham-nghiem",
+        "giai-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nham-nghiem",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "giai-pt-bac-hai"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-MENTAL-063-067",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(2x^2-5x+3=0\\) có thể nhẩm nhanh nghiệm nào?",
+      "correct_option": "\\(x_1=1,\\ x_2=\\frac{3}{2}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_065",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "nham-nghiem",
+        "giai-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nham-nghiem",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "giai-pt-bac-hai"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-MENTAL-063-067",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2+2x-3=0\\) có thể nhẩm nhanh nghiệm nào?",
+      "correct_option": "\\(x_1=1,\\ x_2=-3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_066",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "nham-nghiem",
+        "giai-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nham-nghiem",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "giai-pt-bac-hai"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-MENTAL-063-067",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(3x^2-8x+5=0\\) có thể nhẩm nhanh nghiệm nào?",
+      "correct_option": "\\(x_1=1,\\ x_2=\\frac{5}{3}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_067",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "nham-nghiem",
+        "giai-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nham-nghiem",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "giai-pt-bac-hai"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-MENTAL-063-067",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(2x^2+x-3=0\\) có thể nhẩm nhanh nghiệm nào?",
+      "correct_option": "\\(x_1=1,\\ x_2=\\frac{-3}{2}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_068",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "nham-nghiem",
+        "giai-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nham-nghiem",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "giai-pt-bac-hai"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-MENTAL-068-072",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, phương trình \\(x^2-5x+4=0\\) có thể nhẩm nhanh nghiệm nào?",
+      "correct_option": "\\(x_1=1,\\ x_2=4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_069",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "nham-nghiem",
+        "giai-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nham-nghiem",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "giai-pt-bac-hai"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-MENTAL-068-072",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, phương trình \\(2x^2-5x+3=0\\) có thể nhẩm nhanh nghiệm nào?",
+      "correct_option": "\\(x_1=1,\\ x_2=\\frac{3}{2}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_070",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "nham-nghiem",
+        "giai-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nham-nghiem",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "giai-pt-bac-hai"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-MENTAL-068-072",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, phương trình \\(x^2+2x-3=0\\) có thể nhẩm nhanh nghiệm nào?",
+      "correct_option": "\\(x_1=1,\\ x_2=-3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_071",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "nham-nghiem",
+        "giai-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nham-nghiem",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "giai-pt-bac-hai"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-MENTAL-068-072",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, phương trình \\(3x^2-8x+5=0\\) có thể nhẩm nhanh nghiệm nào?",
+      "correct_option": "\\(x_1=1,\\ x_2=\\frac{5}{3}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_072",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "nham-nghiem",
+        "giai-pt-bac-hai"
+      ],
+      "canonical_assessed_skill_candidate": "nham-nghiem",
+      "learner_family_candidate": "QUAD-SOLVE",
+      "supporting_skills": [
+        "giai-pt-bac-hai"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-MENTAL-068-072",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, phương trình \\(2x^2+x-3=0\\) có thể nhẩm nhanh nghiệm nào?",
+      "correct_option": "\\(x_1=1,\\ x_2=\\frac{-3}{2}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_073",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tong-tich-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-VIETE-073-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cho phương trình \\(x^2-5x+6=0\\) có hai nghiệm \\(x_1,x_2\\). Theo Viète, \\(x_1+x_2=\\ ?\\)",
+      "correct_option": "\\(5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_074",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tong-tich-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-VIETE-073-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cho phương trình \\(2x^2-7x+3=0\\) có hai nghiệm \\(x_1,x_2\\). Theo Viète, \\(x_1x_2=\\ ?\\)",
+      "correct_option": "\\(\\frac{3}{2}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_075",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tong-tich-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-VIETE-073-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cho phương trình \\(3x^2+4x-2=0\\) có hai nghiệm \\(x_1,x_2\\). Theo Viète, \\(x_1+x_2=\\ ?\\)",
+      "correct_option": "\\(\\frac{-4}{3}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_076",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tong-tich-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-VIETE-073-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cho phương trình \\(x^2+3x-4=0\\) có hai nghiệm \\(x_1,x_2\\). Theo Viète, \\(x_1x_2=\\ ?\\)",
+      "correct_option": "\\(-4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_077",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tong-tich-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-VIETE-073-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cho phương trình \\(2x^2-2x-8=0\\) có hai nghiệm \\(x_1,x_2\\). Theo Viète, \\(x_1+x_2=\\ ?\\)",
+      "correct_option": "\\(1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_078",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tong-tich-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-VIETE-073-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cho phương trình \\(4x^2+x-3=0\\) có hai nghiệm \\(x_1,x_2\\). Theo Viète, \\(x_1x_2=\\ ?\\)",
+      "correct_option": "\\(\\frac{-3}{4}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_079",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tong-tich-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-VIETE-073-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cho phương trình \\(x^2-5x+6=0\\) có hai nghiệm \\(x_1,x_2\\). Theo Viète, \\(x_1+x_2=\\ ?\\)",
+      "correct_option": "\\(5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_080",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tong-tich-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-VIETE-073-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cho phương trình \\(2x^2-7x+3=0\\) có hai nghiệm \\(x_1,x_2\\). Theo Viète, \\(x_1x_2=\\ ?\\)",
+      "correct_option": "\\(\\frac{3}{2}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_081",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tong-tich-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-VIETE-073-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cho phương trình \\(3x^2+4x-2=0\\) có hai nghiệm \\(x_1,x_2\\). Theo Viète, \\(x_1+x_2=\\ ?\\)",
+      "correct_option": "\\(\\frac{-4}{3}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_082",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tong-tich-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-VIETE-073-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cho phương trình \\(x^2+3x-4=0\\) có hai nghiệm \\(x_1,x_2\\). Theo Viète, \\(x_1x_2=\\ ?\\)",
+      "correct_option": "\\(-4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_083",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tong-tich-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-VIETE-073-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cho phương trình \\(2x^2-2x-8=0\\) có hai nghiệm \\(x_1,x_2\\). Theo Viète, \\(x_1+x_2=\\ ?\\)",
+      "correct_option": "\\(1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_084",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tong-tich-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-VIETE-073-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cho phương trình \\(4x^2+x-3=0\\) có hai nghiệm \\(x_1,x_2\\). Theo Viète, \\(x_1x_2=\\ ?\\)",
+      "correct_option": "\\(\\frac{-3}{4}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_085",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-doi-xung",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-thuc-doi-xung",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SYMMETRIC-085-096",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-3x+1=0\\) có hai nghiệm \\(x_1,x_2\\). Tính \\(x_1^2+x_2^2\\) mà không giải phương trình.",
+      "correct_option": "\\(7\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_086",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-doi-xung",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-thuc-doi-xung",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SYMMETRIC-085-096",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-4x+2=0\\) có hai nghiệm \\(x_1,x_2\\). Tính \\(x_1^2+x_2^2\\) mà không giải phương trình.",
+      "correct_option": "\\(12\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_087",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-doi-xung",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-thuc-doi-xung",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SYMMETRIC-085-096",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-5x+3=0\\) có hai nghiệm \\(x_1,x_2\\). Tính \\(x_1^2+x_2^2\\) mà không giải phương trình.",
+      "correct_option": "\\(19\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_088",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-doi-xung",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-thuc-doi-xung",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SYMMETRIC-085-096",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-6x+4=0\\) có hai nghiệm \\(x_1,x_2\\). Tính \\(x_1^2+x_2^2\\) mà không giải phương trình.",
+      "correct_option": "\\(28\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_089",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-doi-xung",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-thuc-doi-xung",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SYMMETRIC-085-096",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-7x+1=0\\) có hai nghiệm \\(x_1,x_2\\). Tính \\(x_1^2+x_2^2\\) mà không giải phương trình.",
+      "correct_option": "\\(47\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_090",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-03.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-doi-xung",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-thuc-doi-xung",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SYMMETRIC-085-096",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-3x+2=0\\) có hai nghiệm \\(x_1,x_2\\). Tính \\(x_1^2+x_2^2\\) mà không giải phương trình.",
+      "correct_option": "\\(5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_091",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-doi-xung",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-thuc-doi-xung",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SYMMETRIC-085-096",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-4x+3=0\\) có hai nghiệm \\(x_1,x_2\\). Tính \\(x_1^2+x_2^2\\) mà không giải phương trình.",
+      "correct_option": "\\(10\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_092",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-doi-xung",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-thuc-doi-xung",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SYMMETRIC-085-096",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-5x+4=0\\) có hai nghiệm \\(x_1,x_2\\). Tính \\(x_1^2+x_2^2\\) mà không giải phương trình.",
+      "correct_option": "\\(17\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_093",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-doi-xung",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-thuc-doi-xung",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SYMMETRIC-085-096",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-6x+1=0\\) có hai nghiệm \\(x_1,x_2\\). Tính \\(x_1^2+x_2^2\\) mà không giải phương trình.",
+      "correct_option": "\\(34\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_094",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-doi-xung",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-thuc-doi-xung",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SYMMETRIC-085-096",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-7x+2=0\\) có hai nghiệm \\(x_1,x_2\\). Tính \\(x_1^2+x_2^2\\) mà không giải phương trình.",
+      "correct_option": "\\(45\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_095",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-doi-xung",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-thuc-doi-xung",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SYMMETRIC-085-096",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-3x+3=0\\) có hai nghiệm \\(x_1,x_2\\). Tính \\(x_1^2+x_2^2\\) mà không giải phương trình.",
+      "correct_option": "\\(3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_096",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "bieu-thuc-doi-xung",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "bieu-thuc-doi-xung",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SYMMETRIC-085-096",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-4x+4=0\\) có hai nghiệm \\(x_1,x_2\\). Tính \\(x_1^2+x_2^2\\) mà không giải phương trình.",
+      "correct_option": "\\(8\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_097",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-pt-tu-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "lap-pt-tu-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_CONSTRUCTION_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-BUILD-097-104",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lập phương trình bậc hai hệ số đầu bằng 1 có hai nghiệm -2 và 3.",
+      "correct_option": "\\(x^2-1x-6=0\\)",
+      "note": "Constructed equation is useful evidence, but full method is better evidenced by written work already present in the library.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_098",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-pt-tu-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "lap-pt-tu-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_CONSTRUCTION_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-BUILD-097-104",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lập phương trình bậc hai hệ số đầu bằng 1 có hai nghiệm -1 và 4.",
+      "correct_option": "\\(x^2-3x-4=0\\)",
+      "note": "Constructed equation is useful evidence, but full method is better evidenced by written work already present in the library.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_099",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-pt-tu-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "lap-pt-tu-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_CONSTRUCTION_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-BUILD-097-104",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lập phương trình bậc hai hệ số đầu bằng 1 có hai nghiệm 0 và 5.",
+      "correct_option": "\\(x^2-5x+0=0\\)",
+      "note": "Constructed equation is useful evidence, but full method is better evidenced by written work already present in the library.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_100",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-pt-tu-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "lap-pt-tu-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_CONSTRUCTION_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-BUILD-097-104",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lập phương trình bậc hai hệ số đầu bằng 1 có hai nghiệm 1 và 6.",
+      "correct_option": "\\(x^2-7x+6=0\\)",
+      "note": "Constructed equation is useful evidence, but full method is better evidenced by written work already present in the library.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_101",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-pt-tu-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "lap-pt-tu-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_CONSTRUCTION_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-BUILD-097-104",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lập phương trình bậc hai hệ số đầu bằng 1 có hai nghiệm 2 và 3.",
+      "correct_option": "\\(x^2-5x+6=0\\)",
+      "note": "Constructed equation is useful evidence, but full method is better evidenced by written work already present in the library.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_102",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-pt-tu-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "lap-pt-tu-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_CONSTRUCTION_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-BUILD-097-104",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lập phương trình bậc hai hệ số đầu bằng 1 có hai nghiệm -2 và 4.",
+      "correct_option": "\\(x^2-2x-8=0\\)",
+      "note": "Constructed equation is useful evidence, but full method is better evidenced by written work already present in the library.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_103",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-pt-tu-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "lap-pt-tu-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_CONSTRUCTION_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-BUILD-097-104",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lập phương trình bậc hai hệ số đầu bằng 1 có hai nghiệm -1 và 5.",
+      "correct_option": "\\(x^2-4x-5=0\\)",
+      "note": "Constructed equation is useful evidence, but full method is better evidenced by written work already present in the library.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_104",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-pt-tu-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "lap-pt-tu-nghiem",
+      "learner_family_candidate": "VIETE-CORE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_CONSTRUCTION_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-BUILD-097-104",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lập phương trình bậc hai hệ số đầu bằng 1 có hai nghiệm 0 và 6.",
+      "correct_option": "\\(x^2-6x+0=0\\)",
+      "note": "Constructed equation is useful evidence, but full method is better evidenced by written work already present in the library.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_105",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "tham-so-so-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-so-nghiem",
+      "learner_family_candidate": "QUAD-PARAM",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MULTISTEP_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-PARAM-105-112",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với phương trình \\(x^2-2x+m=0\\), điều kiện để phương trình có hai nghiệm phân biệt là:",
+      "correct_option": "\\(m<1\\)",
+      "note": "Parameter-condition MCQ is partial evidence; full justification requires written reasoning.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_106",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "tham-so-so-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-so-nghiem",
+      "learner_family_candidate": "QUAD-PARAM",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MULTISTEP_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-PARAM-105-112",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với phương trình \\(x^2-2x+m=0\\), điều kiện để phương trình có một nghiệm kép là:",
+      "correct_option": "\\(m=1\\)",
+      "note": "Parameter-condition MCQ is partial evidence; full justification requires written reasoning.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_107",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "tham-so-so-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-so-nghiem",
+      "learner_family_candidate": "QUAD-PARAM",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MULTISTEP_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-PARAM-105-112",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với phương trình \\(x^2-2x+m=0\\), điều kiện để phương trình có vô nghiệm thực là:",
+      "correct_option": "\\(m>1\\)",
+      "note": "Parameter-condition MCQ is partial evidence; full justification requires written reasoning.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_108",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "tham-so-so-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-so-nghiem",
+      "learner_family_candidate": "QUAD-PARAM",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MULTISTEP_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-PARAM-105-112",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, với phương trình \\(x^2-2x+m=0\\), điều kiện để phương trình có hai nghiệm phân biệt là:",
+      "correct_option": "\\(m<1\\)",
+      "note": "Parameter-condition MCQ is partial evidence; full justification requires written reasoning.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_109",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "tham-so-so-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-so-nghiem",
+      "learner_family_candidate": "QUAD-PARAM",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MULTISTEP_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-PARAM-105-112",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, với phương trình \\(x^2-2x+m=0\\), điều kiện để phương trình có một nghiệm kép là:",
+      "correct_option": "\\(m=1\\)",
+      "note": "Parameter-condition MCQ is partial evidence; full justification requires written reasoning.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_110",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "tham-so-so-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-so-nghiem",
+      "learner_family_candidate": "QUAD-PARAM",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MULTISTEP_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-PARAM-105-112",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, với phương trình \\(x^2-2x+m=0\\), điều kiện để phương trình có vô nghiệm thực là:",
+      "correct_option": "\\(m>1\\)",
+      "note": "Parameter-condition MCQ is partial evidence; full justification requires written reasoning.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_111",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "tham-so-so-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-so-nghiem",
+      "learner_family_candidate": "QUAD-PARAM",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MULTISTEP_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-PARAM-105-112",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không cần biến đổi dài, với phương trình \\(x^2-2x+m=0\\), điều kiện để phương trình có hai nghiệm phân biệt là:",
+      "correct_option": "\\(m<1\\)",
+      "note": "Parameter-condition MCQ is partial evidence; full justification requires written reasoning.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_112",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "tham-so-so-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-so-nghiem",
+      "learner_family_candidate": "QUAD-PARAM",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MULTISTEP_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUA12-PARAM-105-112",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không cần biến đổi dài, với phương trình \\(x^2-2x+m=0\\), điều kiện để phương trình có một nghiệm kép là:",
+      "correct_option": "\\(m=1\\)",
+      "note": "Parameter-condition MCQ is partial evidence; full justification requires written reasoning.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_113",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-nghiem",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "dau-nghiem",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SIGN-113-118",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-5x+6=0\\) có hai nghiệm thực. Dựa vào Viète, dấu của hai nghiệm là:",
+      "correct_option": "Hai nghiệm cùng dương",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_114",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-nghiem",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "dau-nghiem",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SIGN-113-118",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2+5x+6=0\\) có hai nghiệm thực. Dựa vào Viète, dấu của hai nghiệm là:",
+      "correct_option": "Hai nghiệm cùng âm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_115",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-nghiem",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "dau-nghiem",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SIGN-113-118",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phương trình \\(x^2-1x-6=0\\) có hai nghiệm thực. Dựa vào Viète, dấu của hai nghiệm là:",
+      "correct_option": "Hai nghiệm trái dấu",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_116",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-nghiem",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "dau-nghiem",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SIGN-113-118",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, phương trình \\(x^2-5x+6=0\\) có hai nghiệm thực. Dựa vào Viète, dấu của hai nghiệm là:",
+      "correct_option": "Hai nghiệm cùng dương",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_117",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-nghiem",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "dau-nghiem",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SIGN-113-118",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, phương trình \\(x^2+5x+6=0\\) có hai nghiệm thực. Dựa vào Viète, dấu của hai nghiệm là:",
+      "correct_option": "Hai nghiệm cùng âm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_118",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-nghiem",
+        "tong-tich-nghiem"
+      ],
+      "canonical_assessed_skill_candidate": "dau-nghiem",
+      "learner_family_candidate": "VIETE-APPLY",
+      "supporting_skills": [
+        "tong-tich-nghiem"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUA12-SIGN-113-118",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, phương trình \\(x^2-1x-6=0\\) có hai nghiệm thực. Dựa vào Viète, dấu của hai nghiệm là:",
+      "correct_option": "Hai nghiệm trái dấu",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_119",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "lien-he-do-thi",
+        "so-nghiem-delta"
+      ],
+      "canonical_assessed_skill_candidate": "lien-he-do-thi",
+      "learner_family_candidate": "QUAD-GRAPH",
+      "supporting_skills": [
+        "so-nghiem-delta"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-GRAPH-119-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đồ thị \\(y=x^2-3x+2\\) và trục \\(Ox\\) có quan hệ nào?",
+      "correct_option": "Hai giao điểm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "QUA12V1_120",
+      "source_file": "12-phuong-trinh-bac-hai-viete-v1-04.json",
+      "legacy_skill_tags": [
+        "lien-he-do-thi",
+        "so-nghiem-delta"
+      ],
+      "canonical_assessed_skill_candidate": "lien-he-do-thi",
+      "learner_family_candidate": "QUAD-GRAPH",
+      "supporting_skills": [
+        "so-nghiem-delta"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUA12-GRAPH-119-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đồ thị \\(y=x^2-2x+1\\) và trục \\(Ox\\) có quan hệ nào?",
+      "correct_option": "Một tiếp điểm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    }
+  ]
+}
