@@ -9,6 +9,8 @@ const read = (p) => fs.readFileSync(path.join(ROOT, p), "utf8");
 const logic = require("../docs/assets/javascripts/skill-map-v2-preview.js");
 
 assert.equal(logic.CONTROLLED_BUILD, "skill-map-v2-i6-controlled-r1-20261003");
+assert.ok(logic.NO_DIRECT_EVIDENCE_FAMILIES.has("RATIO-MODEL"));
+assert.ok(logic.NO_DIRECT_EVIDENCE_FAMILIES.has("ID-PROOF"));
 
 const none = logic.evidenceDisplay({ independent_units: 0, independent_correct: 0 });
 assert.equal(none.state, "NO_EVIDENCE");
