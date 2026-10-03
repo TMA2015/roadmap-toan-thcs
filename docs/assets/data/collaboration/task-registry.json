@@ -1,5 +1,5 @@
 {
-  "version": "1.0.174",
+  "version": "1.0.176",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1063,9 +1063,9 @@
       "title": "Academic Depth CT09 pilot — source-backed self-learning audit",
       "routing": "CHATGPT_SOURCE_ANALYSIS+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.174",
+      "context_version": "1.0.176",
       "review_verdict": "NOTEBOOKLM_10_OF_10_PASS_CT09_IMPLEMENTATION_AUTHORIZED",
-      "review_notes": "CT09 pilot IN_PROGRESS. P1-A and P1-B closed Owner QA PASS. P1-C1 anti-clone selector is live with CI/deploy PASS and owner production QA pending. P1-C2 nine-item targeted interactive packet received NotebookLM PASS with 0 revisions and is cleared for integration only.",
+      "review_notes": "CT09 pilot IN_PROGRESS. P1-A, P1-B and P1-C1 are closed Owner QA PASS. P1-C2 academic review PASS and implementation complete on PR #300; final production release awaits exact-head CI after recording P1-C1 owner QA.",
       "review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md"
     },
     {
@@ -1101,20 +1101,21 @@
       "id": "MATH-ACADEMIC-DEPTH-CT09-P1C1-001",
       "title": "CT09 Academic Depth P1-C1 — anti-clone variant grouping and session diversity",
       "routing": "GITHUB_QA+OWNER_PRODUCTION_QA",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.172",
-      "review_verdict": "LIVE_OWNER_PRODUCTION_QA_PENDING",
-      "review_notes": "PR #298 exact-head e4437d0b... passed Roadmap PR Quality #635 and merged as 9bae4667.... Deploy MkDocs #550 SUCCESS. gh-pages c406cda1... verified buildDiverseSession + variant_group + 18-group manifest. All 120 IDs/content preserved under a CT09 academic payload lock; variant_group is non-evidence metadata. Owner learner-UI spot check remains the final P1-C1 gate.",
-      "release_receipt": "review-packets/academic-depth/ct09-p1c1/02_CT09_P1C1_RELEASE_RECEIPT.md"
+      "status": "DONE",
+      "context_version": "1.0.176",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "P1-C1 anti-clone selector is live and owner production QA PASS is now explicitly confirmed. Automated exact-head/browser/deploy gates were already PASS. variant_group remains non-evidence delivery metadata; original 120 CT09 IDs/content/history preserved; no Mastery/Readiness or backfill/regrade.",
+      "release_receipt": "review-packets/academic-depth/ct09-p1c1/02_CT09_P1C1_RELEASE_RECEIPT.md",
+      "owner_qa_receipt": "review-packets/academic-depth/ct09-p1c1/03_CT09_P1C1_OWNER_QA_PASS.md"
     },
     {
       "id": "MATH-ACADEMIC-DEPTH-CT09-P1C2-001",
       "title": "CT09 Academic Depth P1-C2 — targeted interactive coverage",
       "routing": "NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_PRODUCTION_QA",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.174",
-      "review_verdict": "NOTEBOOKLM_PASS_CLEARED_FOR_INTEGRATION_ONLY",
-      "review_notes": "NotebookLM independently reviewed SYS09V1_121..129 and C1-C10: all PASS, 0 revisions. Authorization CLEARED_FOR_CT09_P1C2_INTEGRATION_ONLY. Integration may proceed on a separate implementation branch; no Mastery/Readiness, backfill/regrade, attempt migration or mass-edit authorization.",
+      "context_version": "1.0.176",
+      "review_verdict": "READY_FOR_PRODUCTION_AFTER_EXACT_HEAD_CI",
+      "review_notes": "NotebookLM PASS 9/9 + C1-C10, 0 revisions. P1-C1 owner production QA prerequisite is now closed. P1-C2 implementation is complete on PR #300; production merge is authorized only after the new exact HEAD created by this QA receipt passes full Roadmap PR Quality.",
       "review_packet": "review-packets/academic-depth/ct09-p1c2/01_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_CANDIDATES_R1.md",
       "review_receipt": "review-packets/academic-depth/ct09-p1c2/02_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_R1_PASS_RECEIPT.md"
     }

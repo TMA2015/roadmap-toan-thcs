@@ -14,6 +14,9 @@
   const I3E_POLICY_SCHEMA = "skill-taxonomy-v2-i3e-ct02-12-policy-r1";
   const I3F_POLICY_SCHEMA = "skill-taxonomy-v2-i3f-ct02-20-policy-r1";
   const I3G_POLICY_SCHEMA = "skill-taxonomy-v2-i3g-ct02-25-policy-r1";
+  const CT09_P1C2_EXTENSION_SCHEMA = "skill-taxonomy-v2-ct09-p1c2-extension-r1";
+  const EXPECTED_CT09_P1C2_EXTENSION_BLOB = "40cefdbd5fc6975e2a2b35ae41fe93d6b3541483";
+  const EXPECTED_CT09_P1C2_SOURCE_BLOB = "ad330dac682d6cb271748c85ef900dcbe7b9b439";
   const ACTIVE_STATUS = "I2_CANARY_ACTIVE";
   const GUARD_STATUS = "I2_CANARY_NO_CAPTURE_GUARD";
   const I3A_ACTIVE_STATUS = "I3A_CT02_ACTIVE";
@@ -163,6 +166,7 @@
   };
 
   const sourceTopicPolicyBlob = (policy, row) => {
+    if (row?.source_topic_policy_blob_override) return row.source_topic_policy_blob_override;
     if (policy?.source_topic_policy?.blob_sha) return policy.source_topic_policy.blob_sha;
     if (Array.isArray(policy?.source_topic_policies)) {
       return policy.source_topic_policies.find((item) => item.topic_id === row.topic_id)?.blob_sha || null;
@@ -469,16 +473,82 @@
     return { policy: Object.freeze(policy), rows: map, profile: Object.freeze(profile) };
   };
 
+  const extendWithCt09P1c2 = (baseState, extension, extensionBlob = EXPECTED_CT09_P1C2_EXTENSION_BLOB) => {
+    if (!baseState?.policy || !(baseState.rows instanceof Map) || !baseState.profile) {
+      throw new Error("invalid_p1c2_base_state");
+    }
+    if (!plainObject(extension) ||
+        extension.schema !== CT09_P1C2_EXTENSION_SCHEMA ||
+        extension.status !== "P1C2_REVIEWED_SHADOW_EXTENSION" ||
+        extension.topic_id !== "CT09" ||
+        extension.shadow_capture_enabled !== true ||
+        extension.learner_mastery_write_enabled !== false ||
+        extension.mastery_readiness_credit !== false ||
+        extension.backfill_existing_attempts !== false ||
+        extension.source_review?.verdict !== "PASS" ||
+        extension.source_review?.authorization !== "CLEARED_FOR_CT09_P1C2_INTEGRATION_ONLY" ||
+        extension.source_file?.blob_sha !== EXPECTED_CT09_P1C2_SOURCE_BLOB ||
+        extension.source_file?.question_count !== 9 ||
+        !Array.isArray(extension.rows) || extension.rows.length !== 9 ||
+        extensionBlob !== EXPECTED_CT09_P1C2_EXTENSION_BLOB) {
+      throw new Error("invalid_ct09_p1c2_extension");
+    }
+
+    const rows = new Map(baseState.rows);
+    const ids = new Set();
+    const clones = new Set();
+    for (const rawRow of extension.rows) {
+      if (!rawRow?.question_id || ids.has(rawRow.question_id) || rows.has(rawRow.question_id) ||
+          rawRow.topic_id !== "CT09" ||
+          rawRow.source_file !== extension.source_file.name ||
+          rawRow.source_blob !== EXPECTED_CT09_P1C2_SOURCE_BLOB ||
+          !Array.isArray(rawRow.legacy_skill_tags) || !rawRow.legacy_skill_tags.length ||
+          !rawRow.diagnostic_skill_id ||
+          !["SYS-CONCEPT","SYS-SOLVE","SYS-MODEL"].includes(rawRow.family_id) ||
+          rawRow.family_layer !== "KNTT-Core" ||
+          rawRow.mapping_role !== "ASSESSED_SKILL" ||
+          rawRow.policy_disposition !== "FAMILY_LINK_REVIEWED" ||
+          !rawRow.evidence_class ||
+          !rawRow.clone_family ||
+          rawRow.independent_credit_authorized !== false ||
+          rawRow.capture_status !== I3G_ACTIVE_STATUS) {
+        throw new Error("invalid_ct09_p1c2_row");
+      }
+      ids.add(rawRow.question_id);
+      clones.add(rawRow.clone_family);
+      rows.set(rawRow.question_id, Object.freeze({
+        ...rawRow,
+        source_topic_policy_blob_override: extensionBlob,
+        legacy_skill_tags: Object.freeze([...rawRow.legacy_skill_tags])
+      }));
+    }
+    if (ids.size !== 9 || clones.size !== 9) throw new Error("invalid_ct09_p1c2_units");
+
+    return {
+      policy: baseState.policy,
+      rows,
+      profile: baseState.profile,
+      extension: Object.freeze({
+        schema: extension.schema,
+        blob_sha: extensionBlob,
+        topic_id: extension.topic_id,
+        rows: extension.rows.length,
+        clone_families: clones.size
+      })
+    };
+  };
+
   const api = {
     BUILD, STORE_KEY, STORE_SCHEMA, EVENT_SCHEMA,
     I2_POLICY_SCHEMA, I3A_POLICY_SCHEMA, I3B_POLICY_SCHEMA, I3C_POLICY_SCHEMA, I3D_POLICY_SCHEMA, I3E_POLICY_SCHEMA, I3F_POLICY_SCHEMA, I3G_POLICY_SCHEMA,
+    CT09_P1C2_EXTENSION_SCHEMA, EXPECTED_CT09_P1C2_EXTENSION_BLOB, EXPECTED_CT09_P1C2_SOURCE_BLOB,
     ACTIVE_STATUS, GUARD_STATUS, I3A_ACTIVE_STATUS, I3A_GUARD_STATUS,
     I3B_ACTIVE_STATUS, I3B_GUARD_STATUS, I3C_ACTIVE_STATUS, I3C_GUARD_STATUS,
     I3D_ACTIVE_STATUS, I3D_GUARD_STATUS, I3E_ACTIVE_STATUS, I3E_GUARD_STATUS,
     I3F_ACTIVE_STATUS, I3F_GUARD_STATUS, I3G_ACTIVE_STATUS, I3G_GUARD_STATUS, MAX_RECENT,
     emptyStore, normalizedStore, seenQuestionKey, evidenceUnitKey,
     assistanceKind, classifyAttempt, sourceTopicPolicyBlob, makeEvent, appendEvent,
-    recordAttemptToStore, validatePolicy
+    recordAttemptToStore, validatePolicy, extendWithCt09P1c2
   };
 
   if (isNode) {
@@ -489,12 +559,16 @@
 
   let policyState = null;
   let policyError = null;
+  let extensionError = null;
   let lastCapture = null;
 
   const scriptUrl = document.currentScript?.src || "";
   const policyUrl = scriptUrl
     ? new URL("../data/curriculum/taxonomy-v2-runtime/i3g-ct02-25-r1.json", scriptUrl).href
     : new URL("assets/data/curriculum/taxonomy-v2-runtime/i3g-ct02-25-r1.json", document.baseURI).href;
+  const ct09P1c2ExtensionUrl = scriptUrl
+    ? new URL("../data/curriculum/taxonomy-v2-runtime/ct09-p1c2-extension-r1.json", scriptUrl).href
+    : new URL("assets/data/curriculum/taxonomy-v2-runtime/ct09-p1c2-extension-r1.json", document.baseURI).href;
 
   const loadStore = () => {
     try {
@@ -541,6 +615,8 @@
       recent_events: store.recent_events.length,
       seen_questions: Object.keys(store.seen_questions).length,
       independent_units: Object.keys(store.independent_units).length,
+      ct09_p1c2_extension: policyState?.extension || null,
+      ct09_p1c2_extension_error: extensionError,
       last_capture: lastCapture
     }, null, 2);
   };
@@ -550,8 +626,20 @@
       if (!response.ok) throw new Error("policy_http_" + response.status);
       return response.json();
     })
-    .then((policy) => {
-      policyState = validatePolicy(policy);
+    .then(async (policy) => {
+      const baseState = validatePolicy(policy);
+      try {
+        const extensionResponse = await fetch(ct09P1c2ExtensionUrl, { cache: "no-store" });
+        if (!extensionResponse.ok) throw new Error("ct09_p1c2_http_" + extensionResponse.status);
+        const extension = await extensionResponse.json();
+        extensionError = null;
+        policyState = extendWithCt09P1c2(baseState, extension);
+      } catch (error) {
+        // The additive P1-C2 lane is fail-open. A transient extension failure
+        // must never disable the already-approved I3G CT02-CT25 shadow lane.
+        extensionError = String(error?.message || error);
+        policyState = baseState;
+      }
       refreshDebug();
       return policyState;
     })
@@ -622,6 +710,8 @@
     debugSnapshot: () => ({
       policy_ready: Boolean(policyState),
       policy_error: policyError,
+      ct09_p1c2_extension: policyState?.extension || null,
+      ct09_p1c2_extension_error: extensionError,
       last_capture: lastCapture,
       store: loadStore()
     })

@@ -9,18 +9,27 @@ const ok = (value, message) => { if (!value) throw new Error(message); };
 
 const base = "docs/assets/data/practice";
 const manifest = json(path.join(base, "09-he-phuong-trinh-v1.manifest.json"));
-const questions = manifest.sources.flatMap((source) => json(path.join(base, source)).questions || []);
+const sourceQuestions = Object.fromEntries(
+  manifest.sources.map((source) => [source, json(path.join(base, source)).questions || []])
+);
+const questions = manifest.sources.flatMap((source) => sourceQuestions[source]);
+const historicalSources = manifest.sources.slice(0, 4);
+const historicalQuestions = historicalSources.flatMap((source) => sourceQuestions[source]);
 
-ok(manifest.question_count === 120, "CT09 manifest count must stay 120");
-ok(questions.length === 120, "CT09 loaded question count must stay 120");
+ok(manifest.question_count === 129, "CT09 manifest count must be 129 after reviewed P1-C2 append");
+ok(questions.length === 129, "CT09 loaded question count must be 129");
+ok(historicalQuestions.length === 120, "CT09 historical four chunks must stay 120");
 
 const expectedIds = Array.from({length:120}, (_,i) => `SYS09V1_${String(i+1).padStart(3,"0")}`);
-ok(JSON.stringify(questions.map(q=>q.id)) === JSON.stringify(expectedIds), "CT09 historical question IDs/order changed");
+ok(JSON.stringify(historicalQuestions.map(q=>q.id)) === JSON.stringify(expectedIds), "CT09 historical question IDs/order changed");
+ok(JSON.stringify(questions.slice(120).map(q=>q.id)) === JSON.stringify(
+  Array.from({length:9},(_,i)=>`SYS09V1_${String(i+121).padStart(3,"0")}`)
+), "CT09 P1-C2 append IDs/order changed");
 
-const difficulty = questions.reduce((acc,q)=>{acc[q.difficulty]=(acc[q.difficulty]||0)+1;return acc;},{});
-ok(difficulty.basic===36 && difficulty.intermediate===78 && difficulty.advanced===6, "CT09 difficulty distribution changed");
+const difficulty = historicalQuestions.reduce((acc,q)=>{acc[q.difficulty]=(acc[q.difficulty]||0)+1;return acc;},{});
+ok(difficulty.basic===36 && difficulty.intermediate===78 && difficulty.advanced===6, "CT09 historical difficulty distribution changed");
 
-const typeCounts = questions.reduce((acc,q)=>{const t=q.tags?.type||"";acc[t]=(acc[t]||0)+1;return acc;},{});
+const typeCounts = historicalQuestions.reduce((acc,q)=>{const t=q.tags?.type||"";acc[t]=(acc[t]||0)+1;return acc;},{});
 const expectedTypes = {
   "kiem-tra-nghiem-pt-hai-an":12,
   "giai-he-the":12,
@@ -42,8 +51,9 @@ for(const q of questions){
   if(!groups.has(q.variant_group)) groups.set(q.variant_group,[]);
   groups.get(q.variant_group).push(q.id);
 }
-ok(groups.size===18, "CT09 must have exactly 18 P1-C1 structural variant groups");
-ok(manifest.variant_group_policy?.group_count===18, "manifest variant group count");
+ok(groups.size===27, "CT09 must have 18 historical + 9 reviewed P1-C2 structural variant groups");
+ok(manifest.variant_group_policy?.group_count===27, "manifest variant group count");
+ok(manifest.variant_group_policy?.status==="ACTIVE_CT09_P1C2","manifest variant-group policy status");
 ok(manifest.variant_group_policy?.preserves_question_ids===true, "manifest must preserve question IDs");
 ok(manifest.variant_group_policy?.affects_evidence===false, "variant grouping must not affect evidence semantics");
 
@@ -75,6 +85,6 @@ ok(engine.includes("dataset.sessionVariantGroups"), "engine must expose nonvisua
 ok(!engine.includes("pool.slice(0, Math.min(this.sessionSize, pool.length))"), "normal/skill selector must not bypass diversity helper");
 ok(!engine.includes("pool.slice(0, Math.min(REMEDIATION_SESSION_SIZE, pool.length))"), "remediation selector must not bypass diversity helper");
 
-console.log("PASS: CT09 P1-C1 keeps 120 historical IDs and original difficulty/type inventory.");
-console.log("PASS: all 120 items are assigned to 18 structural variant groups.");
+console.log("PASS: CT09 keeps the original 120 IDs/difficulty/type inventory and appends 9 reviewed P1-C2 IDs.");
+console.log("PASS: all 129 items are assigned to 27 structural variant groups.");
 console.log("PASS: shared Practice Engine prefers unseen variant groups without changing evidence semantics.");

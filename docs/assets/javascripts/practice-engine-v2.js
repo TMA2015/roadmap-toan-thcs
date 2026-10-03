@@ -1262,6 +1262,7 @@
       root.dataset.practiceReadyV2 = "true";
       try {
         const bank = await loadBank(root.dataset.practiceBankV2);
+        root.dataset.practiceQuestionCount = String(bank.questions.length);
         new PracticeEngineV2(root, bank);
       } catch (error) {
         root.classList.add("practice-engine", "practice-load-error");
