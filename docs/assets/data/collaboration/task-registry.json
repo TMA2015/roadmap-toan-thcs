@@ -1,5 +1,5 @@
 {
-  "version": "1.0.158",
+  "version": "1.0.159",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1052,10 +1052,20 @@
       "id": "MATH-ACADEMIC-DEPTH-001",
       "title": "Academic Depth & Self-Learning Readiness — source framework and 25-topic audit",
       "routing": "CHATGPT_LEAD+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
-      "status": "CHATGPT-REVIEW",
-      "context_version": "1.0.158",
-      "review_verdict": "FRAMEWORK_R1_DRAFTED",
-      "review_notes": "New primary phase after Skill Taxonomy v2 closure. Drafted source hierarchy S1–S5, six-dimension depth audit, 25-topic master matrix, source-intake template, copyright/reuse rules, problem-type normalization, frequency/curriculum/pedagogical-value separation, and NotebookLM workflow. First deep pilot proposed for CT09 before any mass content expansion."
+      "status": "DONE",
+      "context_version": "1.0.159",
+      "review_verdict": "NOTEBOOKLM_10_OF_10_PASS_CT09_PILOT_ONLY",
+      "review_notes": "Framework R1 independently reviewed by NotebookLM: F1-F10 all PASS, zero revisions. Authorized for CT09 pilot only. No mass edit across 25 topics and no Mastery/Readiness expansion.",
+      "review_receipt": "review-packets/academic-depth/framework-r1/01_NOTEBOOKLM_FRAMEWORK_R1_PASS_RECEIPT.md"
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-CT09-001",
+      "title": "Academic Depth CT09 pilot — source-backed self-learning audit",
+      "routing": "CHATGPT_SOURCE_ANALYSIS+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
+      "status": "OPEN",
+      "context_version": "1.0.159",
+      "review_verdict": "AUTHORIZED_TO_START_SOURCE_INTAKE",
+      "review_notes": "Framework R1 PASS authorizes CT09 only. Build S1/S2/S3 source corpus, normalize problem types, create coverage/frequency matrix, audit D1-D6, then create Content Delta Plan. No content implementation until source-backed audit is reviewed."
     }
   ]
 }
