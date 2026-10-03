@@ -36,7 +36,7 @@ with sync_playwright() as p:
     page.evaluate("([k,v]) => localStorage.setItem(k,v)", [SENTINEL, json.dumps({"stable": True})])
     before = page.evaluate("(k) => localStorage.getItem(k)", SENTINEL)
 
-    # Initial mixed session: CT09 has 18 available groups, so all 10 picks should be distinct.
+    # Initial mixed session: CT09 has 27 available groups after P1-C2, so all 10 picks should be distinct.
     ids, groups = session_meta(root)
     assert len(ids) == 10, ("initial", ids)
     assert len(groups) == 10 and len(set(groups)) == 10, ("initial variant diversity", groups)
