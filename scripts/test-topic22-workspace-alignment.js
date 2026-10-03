@@ -15,7 +15,8 @@ assert.ok(js.includes('primaryLearningHref=config.bridgeOnly?"#core"'));
 assert.ok(js.includes('primaryLearningLabel=config.bridgeOnly?"📖 Kiến thức chuyển tiếp"'));
 assert.ok(js.includes('if(config.bridgeOnly){'));
 assert.ok(js.includes('const findHeading=(label,ordinal)=>'));
-assert.ok(js.includes('new RegExp("(?:^|\\s)"+ordinal+"\\.\\s")'));
+assert.ok(js.includes("const byNumber=headings.find"));
+assert.ok(js.includes("ordinal+\"\\\\.\\\\s\""));
 
 for (const heading of [
   "## 🧭 1. Bản đồ kiến thức",
