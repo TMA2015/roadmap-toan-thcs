@@ -185,15 +185,22 @@
 .topic-core-teaching-row p{margin:0;white-space:pre-wrap;line-height:1.7;font-size:.8rem}
 .topic-core-teaching-row mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
 .topic-core-to-practice{min-height:44px;justify-self:stretch;padding:.6rem .8rem;font-size:.8rem;font-weight:800;border:1px solid var(--md-primary-fg-color);border-radius:.5rem}
-.topic-core-skill-overview{display:grid;grid-template-columns:1fr auto;gap:.35rem .6rem;align-items:center;padding:.6rem .7rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:.55rem;background:var(--md-code-bg-color);font-size:.75rem}
-.topic-core-skill-overview>strong{font-size:.79rem}
-.topic-core-coverage-count{font-weight:750;text-align:right;opacity:.85}
+.topic-core-skill-overview{margin:.45rem 0;border:1px solid var(--md-default-fg-color--lightest);border-radius:.55rem;background:var(--md-code-bg-color);font-size:.75rem}
+.topic-core-skill-overview>summary,.topic-micro-skill-details>summary{cursor:pointer;list-style:none;font-weight:700;opacity:.78}
+.topic-core-skill-overview>summary::-webkit-details-marker,.topic-micro-skill-details>summary::-webkit-details-marker{display:none}
+.topic-core-skill-summary{padding:.55rem .7rem}
+.topic-core-skill-summary::before,.topic-micro-skill-details>summary::before{content:"▸";display:inline-block;margin-right:.4rem;transition:transform .16s ease}
+.topic-core-skill-overview[open]>.topic-core-skill-summary::before,.topic-micro-skill-details[open]>summary::before{transform:rotate(90deg)}
+.topic-core-skill-body{display:grid;grid-template-columns:1fr auto;gap:.35rem .6rem;align-items:center;padding:0 .7rem .65rem}
+.topic-core-coverage-count{font-weight:700;text-align:right;opacity:.72}
 .topic-core-skill-list{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:.3rem}
 .topic-core-skill-chip{display:inline-flex;align-items:center;min-height:1.9rem;padding:.25rem .45rem;border:1px solid var(--md-default-fg-color--lighter);border-radius:999px;background:var(--md-default-bg-color);font-size:.7rem;line-height:1.35;overflow-wrap:anywhere}
-.topic-core-skill-chip[data-covered="no"]{border-color:color-mix(in srgb,#c28419 50%,var(--md-default-bg-color));background:color-mix(in srgb,#c28419 9%,var(--md-default-bg-color))}
-.topic-core-coverage-gap{grid-column:1/-1;margin:.1rem 0 0;font-size:.73rem;line-height:1.6}
-.topic-micro-assessed-skill{font-size:.76rem;font-weight:750;line-height:1.5;margin:.42rem 0;padding:.35rem .55rem;border-left:.2rem solid var(--md-primary-fg-color);background:var(--md-code-bg-color);overflow-wrap:anywhere}
-@media(max-width:35rem){.topic-core-skill-overview{grid-template-columns:minmax(0,1fr)}.topic-core-coverage-count{text-align:left}.topic-core-skill-list,.topic-core-coverage-gap{grid-column:1}.topic-core-card-actions .practice-btn{font-size:.7rem}}
+.topic-core-skill-chip[data-covered="no"]{border-color:color-mix(in srgb,#c28419 45%,var(--md-default-bg-color));background:color-mix(in srgb,#c28419 7%,var(--md-default-bg-color))}
+.topic-core-coverage-gap{grid-column:1/-1;margin:.1rem 0 0;font-size:.73rem;line-height:1.55;opacity:.78}
+.topic-micro-skill-details{margin:.35rem 0;font-size:.72rem}
+.topic-micro-skill-details>summary{display:inline-block;padding:.15rem 0}
+.topic-micro-assessed-skill{font-size:.74rem;line-height:1.5;margin:.25rem 0 0;padding:.3rem .5rem;border-left:.18rem solid var(--md-primary-fg-color);background:var(--md-code-bg-color);overflow-wrap:anywhere;opacity:.78}
+@media(max-width:35rem){.topic-core-skill-body{grid-template-columns:minmax(0,1fr)}.topic-core-coverage-count{text-align:left}.topic-core-skill-list,.topic-core-coverage-gap{grid-column:1}.topic-core-card-actions .practice-btn{font-size:.7rem}}
 @media print{.topic-core-modal-modes{display:none!important}}
 
 /* Academic soft cards · visual-only enhancement (2026-09-29).

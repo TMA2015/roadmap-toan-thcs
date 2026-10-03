@@ -32,7 +32,8 @@ with sync_playwright() as p:
         dialog.locator('.topic-core-modal-mode[data-mode="practice"]').click()
         assert dialog.get_attribute("data-mode")=="practice"
         assert dialog.locator(".topic-micro-page").count()==4
-        assert dialog.get_by_text("4/4 kỹ năng có câu riêng").count()>0
+        assert dialog.locator(".topic-core-coverage-count").text_content()=="4/4 kỹ năng có câu luyện riêng"
+        assert not dialog.locator(".topic-core-skill-overview").evaluate("el => el.open")
         dialog.locator(".topic-micro-page").last.click()
         assert dialog.get_by_text("GEO19MICRO_016",exact=False).count()==0
         assert dialog.locator('[data-primary-skill="do-dai-duong-tron"]').count()==1

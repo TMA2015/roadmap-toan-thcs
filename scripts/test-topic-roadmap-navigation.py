@@ -35,8 +35,8 @@ for slug in affected:
     transformed = unwrap(source)
     if '<div class="topic-workspace-actions" markdown>' in transformed:
         raise SystemExit(f"Build hook failed to unwrap continuation block: {path}")
-    if "Sang Phòng Luyện Tập" not in transformed or "Kiểm Tra Độ Sẵn Sàng" not in transformed:
-        raise SystemExit(f"Build hook lost continuation links: {path}")
+    if "](bai-tap.md)" not in transformed or "](tu-kiem-tra.md)" not in transformed:
+        raise SystemExit(f"Build hook lost continuation destinations: {path}")
 
 # Practice footer contract:
 # previous topic first -> same-topic navigation in the middle -> next topic last.
@@ -87,8 +87,8 @@ if "--built" in sys.argv:
         html = path.read_text(encoding="utf-8")
         if "[🎯 Sang Phòng Luyện Tập]" in html or "{ .md-button" in html:
             raise SystemExit(f"Raw Markdown leaked into built continuation block: {path}")
-        if "Sang Phòng Luyện Tập" not in html or "Kiểm Tra Độ Sẵn Sàng" not in html:
-            raise SystemExit(f"Built continuation links missing: {path}")
+        if "/bai-tap/" not in html or "/tu-kiem-tra/" not in html:
+            raise SystemExit(f"Built continuation destinations missing: {path}")
         if 'class="md-button' not in html:
             raise SystemExit(f"Continuation button attributes were not rendered: {path}")
     print("PASS: built continuation links render as HTML buttons without raw Markdown leakage.")
