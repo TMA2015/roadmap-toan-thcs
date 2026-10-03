@@ -1,8 +1,9 @@
 # Academic Source Framework v1 — Self-Learning Math
 
 Date: 2026-10-03  
-Status: **DRAFT FOR IMPLEMENTATION / ACADEMIC CONTENT FIRST**  
+Status: **ACCEPTED FOR CT09 PILOT / ACADEMIC CONTENT FIRST**  
 Scope: Toán THCS, 25 chuyên đề, chuẩn bị thi tuyển sinh lớp 10.
+Independent review: 10/10 PASS — `review-packets/academic-depth/framework-r1/01_NOTEBOOKLM_FRAMEWORK_R1_PASS_RECEIPT.md`
 
 ## 1. Mục đích
 
