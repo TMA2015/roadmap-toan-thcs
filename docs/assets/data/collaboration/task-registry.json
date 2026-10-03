@@ -1,5 +1,5 @@
 {
-  "version": "1.0.184",
+  "version": "1.0.185",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1146,10 +1146,11 @@
       "title": "Academic Depth CT08 — source-backed self-learning audit",
       "routing": "SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_QA",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.184",
-      "review_verdict": "R1_NOTEBOOKLM_REVIEW_PACKET_READY_WITH_OWNER_CORPUS",
-      "review_notes": "Owner supplied four ZIP archives. Ingest: 85 raw files → 80 unique docs after 5 exact duplicates; 79 PDFs + 1 DOC / 2,051 unique PDF pages. Grade-6 ZIP includes six Grade-7 files, five duplicated in Grade-7 ZIP. Grade 6-8 semester sets are overwhelmingly Loigiaihay-compiled S2 exam-like practice, not authentic school-exam S3; school-semester frequency remains INSUFFICIENT_SOURCE. New verified transfer evidence: Cầu Giấy general mock and Hanoi inter-school mock both contain inequality modeling/minimum-bound problems; official KHXH&NV 2026 tests order/inequality solution recognition. CT08 R1 NotebookLM packet incorporates this without broadening the Delta.",
-      "review_packet": "review-packets/academic-depth/ct08-r1/02_NOTEBOOKLM_CT08_GAP_DELTA_R1.md"
+      "context_version": "1.0.185",
+      "review_verdict": "NOTEBOOKLM_R1_PASS_CLEARED_FOR_CT08_P1_IMPLEMENTATION_ONLY",
+      "review_notes": "NotebookLM R1 independent review PASS: C1-C12 all PASS. Authorized decisions: inequality modeling = KNTT-Core application; multi-condition intersection = Core-Support; remove row-level star table; keep generic topic priority badge; selective hints PASS; bounded EQ08V1_047..050 notation cleanup is safe without re-ID/regrade. P1 implementation may proceed slice-by-slice only.",
+      "review_packet": "review-packets/academic-depth/ct08-r1/02_NOTEBOOKLM_CT08_GAP_DELTA_R1.md",
+      "review_receipt": "review-packets/academic-depth/ct08-r1/03_CT08_R1_NOTEBOOKLM_PASS_RECEIPT.md"
     }
   ]
 }
