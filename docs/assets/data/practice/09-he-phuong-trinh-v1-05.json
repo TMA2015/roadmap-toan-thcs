@@ -1,0 +1,242 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "SYS09-V1",
+  "topic": {
+    "id": "09-he-phuong-trinh",
+    "title": "Hệ phương trình bậc nhất hai ẩn"
+  },
+  "source_packet": "MATH-ACADEMIC-DEPTH-CT09-P1C2-INTERACTIVE-R1-20261003",
+  "academic_review": {
+    "status": "APPROVED",
+    "method": "NOTEBOOKLM_R1",
+    "receipt": "review-packets/academic-depth/ct09-p1c2/02_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_R1_PASS_RECEIPT.md"
+  },
+  "questions": [
+    {
+      "id": "SYS09V1_121",
+      "question": "Phương trình nào dưới đây là **phương trình bậc nhất hai ẩn**?",
+      "options": [
+        "\\(2x-3y=7\\)",
+        "\\(x^2+y=7\\)",
+        "\\(xy=6\\)",
+        "\\(0x+0y=5\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "nghiem-pt-hai-an"
+        ],
+        "type": "nhan-biet-pt-bac-nhat-hai-an"
+      },
+      "difficulty": "basic",
+      "hints": [
+        "Dạng cần nhận ra là \\(ax+by=c\\), trong đó \\(a,b\\) không đồng thời bằng \\(0\\).",
+        "Không được có \\(x^2\\), tích \\(xy\\), và hai hệ số của \\(x,y\\) không thể cùng bằng \\(0\\)."
+      ],
+      "explanation": "A có đúng dạng \\(ax+by=c\\) với \\(a=2,b=-3\\). B có \\(x^2\\), C có tích \\(xy\\), còn D có cả hai hệ số \\(a=b=0\\), nên không thỏa định nghĩa.",
+      "variant_group": "SYS09-CONCEPT-EQ-RECOGNITION"
+    },
+    {
+      "id": "SYS09V1_122",
+      "question": "Muốn vẽ đường thẳng biểu diễn tập nghiệm của \\(2x+y=4\\), cặp hai điểm nào có thể dùng ngay?",
+      "options": [
+        "\\((0;4)\\) và \\((2;0)\\)",
+        "\\((0;2)\\) và \\((4;0)\\)",
+        "\\((1;1)\\) và \\((2;2)\\)",
+        "\\((0;0)\\) và \\((2;0)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "y-nghia-hinh-hoc"
+        ],
+        "type": "duong-thang-nghiem-hai-diem"
+      },
+      "difficulty": "intermediate",
+      "hints": [
+        "Mỗi điểm dùng để vẽ phải thỏa phương trình.",
+        "Thay từng cặp vào \\(2x+y=4\\)."
+      ],
+      "explanation": "\\((0;4)\\) cho \\(0+4=4\\); \\((2;0)\\) cho \\(4+0=4\\). Hai điểm phân biệt này xác định đường thẳng nghiệm.",
+      "variant_group": "SYS09-GRAPH-TWO-POINTS"
+    },
+    {
+      "id": "SYS09V1_123",
+      "question": "Xét hệ \\(\\begin{cases}2x+y=7\\\\3x-2y=0\\end{cases}\\). Để khử \\(y\\) bằng cộng đại số, bước chuẩn bị nào phù hợp nhất?",
+      "options": [
+        "Nhân **cả hai vế** phương trình thứ nhất với \\(2\\), rồi cộng với phương trình thứ hai.",
+        "Nhân cả hai vế phương trình thứ nhất với \\(-2\\), rồi cộng.",
+        "Nhân cả hai vế phương trình thứ hai với \\(2\\), rồi cộng.",
+        "Cộng ngay hai phương trình, không cần biến đổi."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "giai-he-cong"
+        ],
+        "type": "giai-he-cong"
+      },
+      "difficulty": "intermediate",
+      "hints": [
+        "Muốn cộng để khử \\(y\\), hai hệ số của \\(y\\) phải đối nhau.",
+        "Từ \\(y\\) và \\(-2y\\), hãy tạo \\(2y\\) ở phương trình thứ nhất."
+      ],
+      "explanation": "Nhân phương trình đầu với 2 được \\(4x+2y=14\\). Cộng với \\(3x-2y=0\\) thì \\(y\\) bị khử và thu được \\(7x=14\\).",
+      "variant_group": "SYS09-ELIM-SCALE-ONE"
+    },
+    {
+      "id": "SYS09V1_124",
+      "question": "Với hệ \\(\\begin{cases}3x+2y=11\\\\3x-4y=-1\\end{cases}\\), lấy phương trình thứ nhất **trừ** phương trình thứ hai để khử \\(x\\). Phương trình một ẩn thu được là:",
+      "options": [
+        "\\(6y=12\\)",
+        "\\(-2y=10\\)",
+        "\\(6y=10\\)",
+        "\\(6x=12\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "giai-he-cong"
+        ],
+        "type": "giai-he-cong"
+      },
+      "difficulty": "intermediate",
+      "hints": [
+        "\\(3x-3x=0\\).",
+        "\\(2y-(-4y)=6y\\) và \\(11-(-1)=12\\)."
+      ],
+      "explanation": "Trừ từng vế: \\((3x+2y)-(3x-4y)=11-(-1)\\), nên \\(6y=12\\).",
+      "variant_group": "SYS09-ELIM-EQUAL-X"
+    },
+    {
+      "id": "SYS09V1_125",
+      "question": "Trong hệ \\(\\begin{cases}0{,}2x+0{,}5y=2{,}4\\\\x-y=3\\end{cases}\\), biến đổi tương đương thuận tiện nhất của phương trình đầu là:",
+      "options": [
+        "\\(2x+5y=24\\)",
+        "\\(2x+5y=2{,}4\\)",
+        "\\(0{,}2x+5y=24\\)",
+        "\\(2x+0{,}5y=24\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "bien-doi-truoc-giai"
+        ],
+        "type": "bien-doi-truoc-giai"
+      },
+      "difficulty": "intermediate",
+      "hints": [
+        "Có thể nhân toàn bộ hai vế với cùng một số khác 0.",
+        "Nhân cả phương trình với \\(10\\)."
+      ],
+      "explanation": "Nhân **mọi hạng tử ở cả hai vế** với 10: \\(0{,}2x+0{,}5y=2{,}4\\Rightarrow2x+5y=24\\).",
+      "variant_group": "SYS09-COEFF-DECIMAL-SCALE"
+    },
+    {
+      "id": "SYS09V1_126",
+      "question": "Với hệ \\(\\begin{cases}\\sqrt{2}x+y=3\\\\\\sqrt{2}x-y=1\\end{cases}\\), cộng hai phương trình ta được:",
+      "options": [
+        "\\(2\\sqrt{2}\\,x=4\\)",
+        "\\(2\\sqrt{2}\\,x=2\\)",
+        "\\(2y=4\\)",
+        "\\(\\sqrt{2}\\,x=4\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "bien-doi-truoc-giai"
+        ],
+        "type": "bien-doi-truoc-giai"
+      },
+      "difficulty": "intermediate",
+      "hints": [
+        "Hai hệ số của \\(y\\) đang đối nhau.",
+        "Cộng từng vế và giữ nguyên chính xác hệ số \\(\\sqrt{2}\\)."
+      ],
+      "explanation": "\\((\\sqrt{2}x+y)+(\\sqrt{2}x-y)=3+1\\), nên \\(2\\sqrt{2}\\,x=4\\).",
+      "variant_group": "SYS09-COEFF-IRRATIONAL-CANCEL"
+    },
+    {
+      "id": "SYS09V1_127",
+      "question": "Hai món hàng có giá niêm yết lần lượt là \\(x\\) và \\(y\\) nghìn đồng, tổng cộng **1 800 nghìn đồng**. Món thứ nhất giảm **15%**, món thứ hai giảm **25%**; tổng tiền thực trả là **1 450 nghìn đồng**. Hệ nào mô tả đúng?",
+      "options": [
+        "\\(\\begin{cases}x+y=1800\\\\0{,}85x+0{,}75y=1450\\end{cases}\\)",
+        "\\(\\begin{cases}x+y=1800\\\\0{,}15x+0{,}25y=1450\\end{cases}\\)",
+        "\\(\\begin{cases}x+y=1450\\\\0{,}85x+0{,}75y=1800\\end{cases}\\)",
+        "\\(\\begin{cases}x+y=1800\\\\0{,}85x+0{,}25y=1450\\end{cases}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "lap-he-bai-toan"
+        ],
+        "type": "gia-chiet-khau"
+      },
+      "difficulty": "intermediate",
+      "hints": [
+        "Giảm 15% nghĩa là trả 85%; giảm 25% nghĩa là trả 75%.",
+        "Phương trình thứ hai phải biểu diễn **tổng tiền thực trả**."
+      ],
+      "explanation": "Giá niêm yết cho \\(x+y=1800\\). Sau giảm giá, hai khoản phải trả là \\(0{,}85x\\) và \\(0{,}75y\\), tổng bằng 1450.",
+      "variant_group": "SYS09-MODEL-DISCOUNT"
+    },
+    {
+      "id": "SYS09V1_128",
+      "question": "Trộn \\(x\\) lít dung dịch muối 12% với \\(y\\) lít dung dịch muối 30% để được **15 lít** dung dịch muối **18%**. Hệ nào mô tả đúng?",
+      "options": [
+        "\\(\\begin{cases}x+y=15\\\\0{,}12x+0{,}30y=2{,}7\\end{cases}\\)",
+        "\\(\\begin{cases}x+y=15\\\\0{,}12+0{,}30=0{,}18\\end{cases}\\)",
+        "\\(\\begin{cases}x+y=15\\\\0{,}12x+0{,}30y=0{,}18\\end{cases}\\)",
+        "\\(\\begin{cases}x+y=2{,}7\\\\0{,}12x+0{,}30y=15\\end{cases}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "lap-he-bai-toan"
+        ],
+        "type": "pha-tron-nong-do"
+      },
+      "difficulty": "intermediate",
+      "hints": [
+        "Một phương trình là tổng thể tích.",
+        "Lượng muối cuối là \\(0{,}18\\times15=2{,}7\\) theo cùng đơn vị lượng chất trong mô hình."
+      ],
+      "explanation": "Bảo toàn tổng thể tích cho \\(x+y=15\\). Bảo toàn lượng muối cho \\(0{,}12x+0{,}30y=0{,}18\\cdot15=2{,}7\\).",
+      "variant_group": "SYS09-MODEL-MIXTURE"
+    },
+    {
+      "id": "SYS09V1_129",
+      "question": "Máy A và B có năng suất không đổi lần lượt là \\(x,y\\) chi tiết/giờ. Cả hai cùng làm 4 giờ được 200 chi tiết; A làm 3 giờ và B làm 2 giờ được 130 chi tiết. Hệ nào biểu diễn đúng dữ kiện?",
+      "options": [
+        "\\(\\begin{cases}4x+4y=200\\\\3x+2y=130\\end{cases}\\)",
+        "\\(\\begin{cases}x+y=200\\\\3x+2y=130\\end{cases}\\)",
+        "\\(\\begin{cases}4x+4y=200\\\\3x-2y=130\\end{cases}\\)",
+        "\\(\\begin{cases}4x+4y=50\\\\3x+2y=130\\end{cases}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "he-phuong-trinh",
+        "skill": [
+          "lap-he-bai-toan"
+        ],
+        "type": "nang-suat-thoi-gian"
+      },
+      "difficulty": "intermediate",
+      "hints": [
+        "Số chi tiết = năng suất × thời gian.",
+        "Mỗi máy phải được nhân với đúng số giờ của chính máy đó."
+      ],
+      "explanation": "Trong 4 giờ: A làm \\(4x\\), B làm \\(4y\\), tổng 200. Ở dữ kiện hai: A làm \\(3x\\), B làm \\(2y\\), tổng 130.",
+      "variant_group": "SYS09-MODEL-WORKRATE"
+    }
+  ]
+}
