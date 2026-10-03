@@ -1,5 +1,5 @@
 {
-  "version": "1.0.156",
+  "version": "1.0.157",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "I6B broader learner-facing Skill Map activation is implemented on a dedicated branch and awaiting exact-head QA. The public route is /ban-do-ky-nang/, the main navigation label is 'Bản đồ kỹ năng', learner-visible I6/Controlled QA jargon is removed from the public surface, and the old controlled QA page is removed from navigation but retained as an internal rollback/verification route. Evidence semantics remain unchanged: N<=2 hides percentage, N>=3 is descriptive only, no-direct-evidence families are explicit, legacy Practice stays separate, and Mastery/Readiness/backfill/regrade remain OFF. Next step: exact-head CI + desktop/mobile browser QA, then deploy and owner visual QA.",
+    "next_priority": "I6B public learner-facing Skill Map is deployed and owner visual QA PASS. The initial Skill Taxonomy v2 learner-facing activation cycle is complete. Public route /ban-do-ky-nang/ is live; topic/layer/evidence-only filters, sparse-data wording and learner-friendly copy are visually verified. Mastery, Readiness, historical backfill/regrade and automatic written scoring remain OFF. Do not start a new Mastery/Readiness phase without a separately reviewed gate; next product/academic priority should be explicitly chosen after reviewing live usage/data quality.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1381,7 +1381,7 @@
       ]
     },
     "skill_taxonomy_v2": {
-      "status": "I5_POLICY_CLOSED_I6_CONTROLLED_RELEASE_NEXT",
+      "status": "I6B_PUBLIC_SKILL_MAP_LIVE_OWNER_QA_PASS",
       "runtime_enabled": false,
       "mastery_readiness_migration_authorized": false,
       "exam_frequency": "PENDING_OFFICIAL_CORPUS",
@@ -2080,7 +2080,7 @@
         "owner_qa_receipt": "review-packets/skill-taxonomy/phase-i6/01_I6_OWNER_QA_PASS.md"
       },
       "i6b": {
-        "status": "IMPLEMENTED_PRE_CI",
+        "status": "DONE_PUBLIC_ACTIVATION_OWNER_QA_PASS",
         "phase": "BROADER_LEARNER_FACING_ACTIVATION",
         "prerequisite": "I6_CONTROLLED_RELEASE_OWNER_QA_PASS",
         "branch": "i6b-public-skill-map-20261003",
@@ -2095,7 +2095,14 @@
         "mastery_enabled": false,
         "readiness_enabled": false,
         "history_backfill_enabled": false,
-        "automatic_written_scoring_enabled": false
+        "automatic_written_scoring_enabled": false,
+        "owner_qa": "PASS",
+        "exact_head_ci": "PASS",
+        "deploy": "PASS",
+        "merge_sha": "95b86cd6015dc4437686d60cc6d15ca879565213",
+        "gh_pages_sha": "ed2275f5a711208b18be0c14208f9befba7f689b",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/phase-i6b/01_I6B_OWNER_QA_PASS.md",
+        "public_activation_complete": true
       }
     },
     "notebooklm_taxonomy_workflow": {
