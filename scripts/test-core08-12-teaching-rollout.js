@@ -4,7 +4,7 @@ const fs=require("fs"),crypto=require("crypto"),assert=(v,m)=>{if(!v)throw Error
 const read=p=>fs.readFileSync(p,"utf8"),json=p=>JSON.parse(read(p));
 const gitSha=s=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+Buffer.byteLength(s)+"\0"),Buffer.from(s)])).digest("hex");
 const specs=[
-{n:"08",slug:"08-phuong-trinh-bat-phuong-trinh",b:"6b226a417d0bb2d6498b74d9206b85c942499a54",lesson:"99c6f055a382c0dbcef41dbc79bac39f4c1c53b1",manifest:"08-phuong-trinh-bat-phuong-trinh-v1.manifest.json",count:16,declared:14,additional:[["EQ08MICRO_016","eq08-core-2","khu-mau-phuong-trinh"]]},
+{n:"08",slug:"08-phuong-trinh-bat-phuong-trinh",b:"6b226a417d0bb2d6498b74d9206b85c942499a54",lesson:"4095b989dbe7aacc4c76ad41121b03524dd6765f",manifest:"08-phuong-trinh-bat-phuong-trinh-v1.manifest.json",count:16,declared:14,additional:[["EQ08MICRO_016","eq08-core-2","khu-mau-phuong-trinh"]]},
 {n:"09",slug:"09-he-phuong-trinh",b:"39b7154b7da71b818a367fdfe1d869caaa1bbfbd",lesson:"07fec7c41abda3714e9ce528076d4930d507d5a3",manifest:"09-he-phuong-trinh-v1.manifest.json",count:17,declared:14,additional:[["SYS09MICRO_016","sys09-core-1","so-nghiem-he"],["SYS09MICRO_017","sys09-core-5","nang-suat-he"]]},
 {n:"10",slug:"10-ham-so-do-thi",b:"5ed48b26af58f0104d18b2a1d04210773fb38434",lesson:"bbba2357371803f641410ad8b5cf61980d7c3081",manifest:"10-ham-so-do-thi-v1.manifest.json",count:15,declared:13,additional:[]},
 {n:"11",slug:"11-can-thuc",b:"daa537d24635cb525f04b3b809022f40e2821dc9",lesson:"244f6f4267614cb3624a34928507431e3c8e5383",manifest:"11-can-thuc-v1.manifest.json",count:16,declared:12,additional:[["RAD11MICRO_016","rad11-core-4","truc-can-mau-don"]]},
