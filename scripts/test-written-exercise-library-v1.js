@@ -85,6 +85,10 @@ ok(byId["WX19-CIR-001"].solution_steps.some(s=>s.content_markdown.includes("60\\
 ok(byId["WX19-CIR-002"].solution_steps.at(-1).content_markdown.includes("62^\\circ"),"WX19-002 result");
 ok(byId["WX09-SYS-001"].solution_steps.at(-1).content_markdown.includes("(5;1)"),"WX09-001 result");
 ok(byId["WX09-SYS-002"].solution_steps.at(-1).content_markdown.includes("8 nghìn")&&byId["WX09-SYS-002"].solution_steps.at(-1).content_markdown.includes("10 nghìn"),"WX09-002 result");
+ok(byId["WX09-SYS-001"].learner_label==="Nền tảng","WX09-001 learner label");
+ok(byId["WX09-SYS-001"].learning_layer==="KNTT-Core"&&byId["WX09-SYS-001"].level==="CORE_BASE","WX09-001 internal metadata preserved");
+ok(byId["WX09-SYS-002"].learner_label==="Củng cố","WX09-002 learner label");
+ok(byId["WX09-SYS-002"].learning_layer==="KNTT-Core"&&byId["WX09-SYS-002"].level==="CORE_APPLY","WX09-002 internal metadata preserved");
 ok(byId["WX16-QUAD-001"].solution_steps.at(-1).content_markdown.includes("hình chữ nhật"),"WX16-001 conclusion");
 ok(byId["WX16-QUAD-002"].solution_steps.at(-1).content_markdown.includes("hình vuông"),"WX16-002 conclusion");
 ok(byId["WX18-TRI-001"].solution_steps.at(-1).content_markdown.includes("10\\sqrt3"),"WX18-001 result");
