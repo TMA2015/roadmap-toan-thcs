@@ -1,5 +1,5 @@
 {
-  "version": "1.0.162",
+  "version": "1.0.163",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "CT09 now has complete KNTT S1 intake plus a high-value advanced/pedagogical reference (Vũ Hữu Bình, Nâng cao và phát triển Toán 9 tập 2) extracted with strict Core/Entrance10/Challenge boundaries. The generic 'Bài Tập Toán Nâng Cao Lớp 9' compilation is S5 idea-only due weak provenance. Next priority: extract the verified Hanoi Grade-10 entrance S3 corpus, then normalize S1/S2/S3 problem types and build the CT09 Coverage/Frequency Matrix before any learner-facing edits.",
+    "next_priority": "CT09 source normalization R0 is complete. S1 KNTT, Vũ Hữu Bình pedagogical/advanced reference and verified Hà Nội entrance evidence have been normalized into a 22-family problem-type matrix with current-program frequency (2025–2026) kept separate from historical continuity (2023–2024). Current sample shows two-unknown system modeling in 2/2 current exams and no standalone direct-system item in those two papers; direct solving remains Core by S1. Next: audit the current CT09 site against D1–D6 and this problem-type matrix, identify exact content gaps/excess, then prepare a small pilot patch only after audit.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -2131,7 +2131,7 @@
       ]
     },
     "academic_depth_phase": {
-      "status": "CT09_S1_AND_REFERENCE_INTAKE_COMPLETE_S3_NEXT",
+      "status": "CT09_SOURCE_NORMALIZATION_R0_COMPLETE_SITE_GAP_AUDIT_NEXT",
       "branch": "academic-depth-framework-r1-20261003",
       "source_framework": "docs/roadmap/academic-source-framework-v1.md",
       "audit_standard": "docs/roadmap/academic-depth-audit-standard-v1.md",
@@ -2175,7 +2175,12 @@
         "vhb_t1_sha256": "21bf8ae95f1272d507bd134a2d99fcb65db6f8fb8861f1c99cef78a7e3faefd8",
         "vhb_t2_sha256": "043b5dc6f93429f811b8949b618b56b2af30cfada508d5256e8a9f761f520893",
         "gstnv_advanced9_sha256": "bf861f427ee8ae2f4535fb75c7361a4830910bf43782479d6c39b54002975aa1",
-        "gstnv_classification": "S5_IDEA_DRAFT_ONLY"
+        "gstnv_classification": "S5_IDEA_DRAFT_ONLY",
+        "s3_status": "HANOI_ENTRANCE_2023_2026_EXTRACTED_WITH_CURRENT_VS_HISTORICAL_SPLIT",
+        "s3_ct09_extraction": "review-packets/academic-depth/ct09-r0/08_S3_HANOI_ENTRANCE_CT09_EXTRACTION_R0.md",
+        "problem_type_matrix": "review-packets/academic-depth/ct09-r0/09_CT09_PROBLEM_TYPE_CATALOGUE_COVERAGE_MATRIX_R0.md",
+        "current_program_entrance_population": "HANOI_2025_2026_N2",
+        "historical_entrance_population": "HANOI_2023_2024_N2_NOT_POOLED"
       }
     }
   },
