@@ -1,5 +1,5 @@
 {
-  "version": "1.0.168",
+  "version": "1.0.169",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1072,10 +1072,19 @@
       "id": "MATH-ACADEMIC-DEPTH-CT09-P1A-001",
       "title": "CT09 Academic Depth P1-A — framing and theory depth",
       "routing": "GITHUB_QA+OWNER_PRODUCTION_QA",
+      "status": "DONE",
+      "context_version": "1.0.169",
+      "review_verdict": "OWNER_QA_PASS_DESKTOP_IPAD",
+      "review_notes": "Owner confirmed the final P1-A UI on desktop and iPad is reasonable and much improved. Navigation, collapsible TOC, calculator disclosure, reading size and background skill metadata are accepted. P1-A closed."
+    },
+    {
+      "id": "MATH-TOPIC22-WORKSPACE-ALIGN-001",
+      "title": "Align CĐ22 with shared learner workspace",
+      "routing": "GITHUB_QA+OWNER_SPOT_CHECK",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.168",
-      "review_verdict": "SECOND_OWNER_QA_FIXES_IMPLEMENTED_PRE_CI",
-      "review_notes": "After first owner hotfix deploy PASS, owner QA found quick-nav exam failure, broken right TOC anchors caused by H2 wrapping, dense always-open TOC children, overly long calculator guidance, and small reading text. Fix branch adds robust numbered-section routing, anchor preservation/reveal, default-closed +/- TOC groups, concise collapsible calculator note and larger topic body text. New browser regression covers these interactions. Await exact-head CI."
+      "context_version": "1.0.169",
+      "review_verdict": "IMPLEMENTED_PRE_CI",
+      "review_notes": "Register CĐ22 in topic-workspace-v1 so it inherits shared quick-nav, anchor-preserving right TOC, +/- child disclosure and reading-size improvements. Preserve CĐ22 as optional THPT-Bridge; no KNTT-Core journey or standalone Core page is introduced."
     }
   ]
 }
