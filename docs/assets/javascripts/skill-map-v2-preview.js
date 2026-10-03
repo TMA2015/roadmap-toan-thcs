@@ -180,7 +180,7 @@
     }
     return Object.freeze({
       state: "PRACTICE_TREND_REVIEWABLE",
-      label: "Đã có đủ lượt luyện để xem xu hướng",
+      label: "Đã có dữ liệu để xem xu hướng",
       show_percent: true,
       evidence_accuracy: evidenceAccuracy
     });
