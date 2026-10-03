@@ -38,10 +38,10 @@ with sync_playwright() as p:
 
     # Right TOC children start closed; + opens, - closes.
     core_item = page.locator('.md-sidebar--secondary nav.md-nav--secondary > ul.md-nav__list > li').filter(
-        has=page.locator('> a[href="#3-kien-thuc-cot-loi"]')
+        has=page.locator('a[href="#3-kien-thuc-cot-loi"]')
     )
-    toggle = core_item.locator("> button.topic-toc-toggle")
-    children = core_item.locator("> nav.topic-toc-children")
+    toggle = core_item.locator(":scope > button.topic-toc-toggle")
+    children = core_item.locator(":scope > nav.topic-toc-children")
     assert toggle.count() == 1 and children.count() == 1, "missing collapsible TOC control"
     assert children.is_hidden(), "TOC children should be closed by default"
     assert toggle.inner_text().strip() == "+", "closed TOC should show +"
@@ -61,7 +61,7 @@ with sync_playwright() as p:
     assert toggle.inner_text().strip() == "+", "closed TOC should restore +"
 
     # Calculator guidance is concise and closed by default.
-    calculator = page.locator("details").filter(has=page.locator("summary", has_text="Máy tính cầm tay – mở khi cần"))
+    calculator = page.locator("details.info", has_text="Máy tính cầm tay – mở khi cần")
     assert calculator.count() == 1, "calculator disclosure missing"
     assert not calculator.evaluate("(el) => el.open"), "calculator note should be closed by default"
     calculator.locator("summary").click()
