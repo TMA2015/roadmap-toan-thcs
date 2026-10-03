@@ -73,7 +73,7 @@ def validate(page):
     assert intro.startswith("Bản đồ kỹ năng")
     assert "Thử nghiệm có kiểm soát" not in intro
 
-    article_text = page.locator("article").inner_text()
+    article_text = page.locator("article.md-content__inner").inner_text()
     for forbidden in ("Controlled learner-facing release", "Skill Map v2 I6 Controlled QA", "Skill Taxonomy v2"):
         assert forbidden not in article_text
 
