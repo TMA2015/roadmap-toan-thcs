@@ -20,7 +20,7 @@ with sync_playwright() as p:
     page = context.new_page()
 
     page.goto(BASE, wait_until="networkidle")
-    body = page.locator("body").inner_text()
+    body = page.locator("body").text_content() or ""
 
     assert "Mức ưu tiên: ⭐⭐⭐⭐⭐" in body
     assert "Ôn tập và chuyển giao thi vào lớp 10" in body
@@ -44,7 +44,7 @@ with sync_playwright() as p:
     assert "Thử thách: Tham số trong phương trình/bất phương trình" in chips
 
     page.goto(PRACTICE, wait_until="networkidle")
-    practice_text = page.locator("body").inner_text()
+    practice_text = page.locator("body").text_content() or ""
     assert "Ứng dụng" in practice_text
     assert "08-APP-01 · Lập bất phương trình" in practice_text
     assert "Củng cố" in practice_text
