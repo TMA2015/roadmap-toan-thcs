@@ -16,7 +16,7 @@ assert.ok(page.includes("Không bắt buộc nếu em đang học phần nền t
 assert.ok(page.includes("Ví dụ sâu – nhìn nghiệm hệ trên đồ thị rồi kiểm tra lại bằng đại số"));
 assert.ok(page.includes("Ví dụ sâu – từ dữ kiện thực tế đến hai phương trình"));
 assert.ok(page.includes("16 quyển sổ và 12 bút chì"));
-assert.ok(page.includes("Máy tính cầm tay dùng để hỗ trợ, không thay thế phương pháp"));
+assert.ok(page.includes("Máy tính cầm tay – mở khi cần"));\nassert.ok(page.includes("nên hạn chế khi đang học phương pháp"));
 
 // The P1-A examples must use valid display-math delimiters.
 const graph = page.slice(
@@ -49,4 +49,4 @@ for (const internal of ["Practice Engine", "formative evidence", "Soft Mastery",
   assert.ok(!page.includes(internal), "learner page leaks internal wording: " + internal);
 }
 
-console.log("PASS CT09 P1-A learner-focused copy, math rendering and academic-boundary checks.");
+assert.ok(page.includes('??? info "🧮 Máy tính cầm tay – mở khi cần"'));\nconsole.log("PASS CT09 P1-A learner-focused copy, math rendering, calculator disclosure and academic-boundary checks.");
