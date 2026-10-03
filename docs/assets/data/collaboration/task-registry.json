@@ -1,5 +1,5 @@
 {
-  "version": "1.0.166",
+  "version": "1.0.167",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1073,9 +1073,9 @@
       "title": "CT09 Academic Depth P1-A — framing and theory depth",
       "routing": "GITHUB_QA+OWNER_PRODUCTION_QA",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.166",
-      "review_verdict": "IMPLEMENTED_PRE_CI",
-      "review_notes": "Implements the independently approved P1-A slice only: parameter-lite Core-Support vs Entrance10 split, source-ground exam wording replacing unsupported stars, deep graph example, deep original count/value modeling example, and calculator-support note. No learner history, readiness scoring, Mastery/Readiness, or non-CT09 content changes."
+      "context_version": "1.0.167",
+      "review_verdict": "OWNER_QA_FIXES_IMPLEMENTED_PRE_CI",
+      "review_notes": "Owner QA found raw display-math rendering, learner-facing source/product jargon, and overly prominent skill metadata during Core practice. Fix branch repairs MathJax delimiters, simplifies CT09 learner copy, removes corpus-count/management wording from the learner surface, and collapses skill overview + per-question skill metadata by default while preserving evidence recording. Await exact-head CI and redeploy for owner recheck."
     }
   ]
 }
