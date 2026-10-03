@@ -1,5 +1,5 @@
 {
-  "version": "1.0.167",
+  "version": "1.0.168",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1073,9 +1073,9 @@
       "title": "CT09 Academic Depth P1-A — framing and theory depth",
       "routing": "GITHUB_QA+OWNER_PRODUCTION_QA",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.167",
-      "review_verdict": "OWNER_QA_FIXES_IMPLEMENTED_PRE_CI",
-      "review_notes": "Owner QA found raw display-math rendering, learner-facing source/product jargon, and overly prominent skill metadata during Core practice. Fix branch repairs MathJax delimiters, simplifies CT09 learner copy, removes corpus-count/management wording from the learner surface, and collapses skill overview + per-question skill metadata by default while preserving evidence recording. Await exact-head CI and redeploy for owner recheck."
+      "context_version": "1.0.168",
+      "review_verdict": "SECOND_OWNER_QA_FIXES_IMPLEMENTED_PRE_CI",
+      "review_notes": "After first owner hotfix deploy PASS, owner QA found quick-nav exam failure, broken right TOC anchors caused by H2 wrapping, dense always-open TOC children, overly long calculator guidance, and small reading text. Fix branch adds robust numbered-section routing, anchor preservation/reveal, default-closed +/- TOC groups, concise collapsible calculator note and larger topic body text. New browser regression covers these interactions. Await exact-head CI."
     }
   ]
 }
