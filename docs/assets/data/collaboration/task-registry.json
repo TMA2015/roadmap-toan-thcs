@@ -1,5 +1,5 @@
 {
-  "version": "1.0.180",
+  "version": "1.0.185",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1136,10 +1136,21 @@
       "id": "MATH-ACADEMIC-DEPTH-ROLLOUT-001",
       "title": "Academic Depth controlled rollout after CT09 pilot",
       "routing": "SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_QA",
-      "status": "PLANNING",
-      "context_version": "1.0.180",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.181",
       "review_verdict": "CT09_PILOT_VALIDATED_CONTROLLED_ROLLOUT_ONLY",
-      "review_notes": "CT09 validates the audit method. Remaining topics must be audited from source evidence topic-by-topic or in controlled batches; no automatic CT09 content cloning. Next topic/batch selection should follow the Master Matrix and source readiness."
+      "review_notes": "Controlled rollout has started with CT08 audit-only/source phase. No CT08 learner-facing edits until source census, normalized problem catalogue, D1-D6 audit and independent review authorize a delta."
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-CT08-001",
+      "title": "Academic Depth CT08 — source-backed self-learning audit",
+      "routing": "SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_QA",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.185",
+      "review_verdict": "NOTEBOOKLM_R1_PASS_CLEARED_FOR_CT08_P1_IMPLEMENTATION_ONLY",
+      "review_notes": "NotebookLM R1 independent review PASS: C1-C12 all PASS. Authorized decisions: inequality modeling = KNTT-Core application; multi-condition intersection = Core-Support; remove row-level star table; keep generic topic priority badge; selective hints PASS; bounded EQ08V1_047..050 notation cleanup is safe without re-ID/regrade. P1 implementation may proceed slice-by-slice only.",
+      "review_packet": "review-packets/academic-depth/ct08-r1/02_NOTEBOOKLM_CT08_GAP_DELTA_R1.md",
+      "review_receipt": "review-packets/academic-depth/ct08-r1/03_CT08_R1_NOTEBOOKLM_PASS_RECEIPT.md"
     }
   ]
 }
