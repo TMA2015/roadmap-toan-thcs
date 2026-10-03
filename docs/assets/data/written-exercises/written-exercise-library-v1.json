@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "catalog_id": "MATH-WRITTEN-EXERCISE-LIBRARY-V1",
-  "snapshot_date": "2026-10-01",
+  "snapshot_date": "2026-10-03",
   "status": "ACTIVE_APPEND_ONLY",
   "auto_readiness_credit": false,
   "self_marking_only": true,
@@ -4303,6 +4303,538 @@
         "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-R1-20261001",
         "receipt": "review-packets/written-exercise-library/48_NOTEBOOKLM_EXPANSION_B7_R1_PASS_RECEIPT.md"
       }
+    },
+    {
+      "exercise_kind": "anchor",
+      "topic_id": "CT09",
+      "topic_slug": "09-he-phuong-trinh",
+      "topic_title": "Hệ phương trình bậc nhất hai ẩn",
+      "grade_overlay": [
+        9
+      ],
+      "figure_uri": null,
+      "figure_alt": null,
+      "source_refs": [
+        "review-packets/academic-depth/ct09-p1b/01_NOTEBOOKLM_CT09_P1B_WRITTEN_ANCHORS_R1.md",
+        "docs/assets/data/curriculum/topic09-learning-workspace.json#sys09-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-ACADEMIC-DEPTH-CT09-P1B-WRITTEN-R1-20261003",
+        "receipt": "review-packets/academic-depth/ct09-p1b/02_NOTEBOOKLM_CT09_P1B_WRITTEN_R1_PASS_RECEIPT.md"
+      },
+      "exercise_id": "WX09-SYS-003",
+      "problem_type_id": "system-modelling-count-value",
+      "problem_type_title": "Lập hệ từ số lượng và tổng giá trị",
+      "title": "Từ tổng số vé và tổng tiền đến hệ phương trình",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "learner_label": "Nền tảng",
+      "skills": [
+        "lap-he-bai-toan",
+        "bai-toan-so",
+        "giai-he-cong",
+        "kiem-tra-nghiem-he"
+      ],
+      "prerequisites": [
+        "giai-he-cong"
+      ],
+      "estimated_minutes": 15,
+      "problem_markdown": "Một khu tham quan bán tổng cộng **40 vé** trong một lượt khách. Vé người lớn giá **15 nghìn đồng**, vé học sinh giá **8 nghìn đồng**. Tổng số tiền thu được là **488 nghìn đồng**.\n\nHỏi đã bán bao nhiêu vé người lớn và bao nhiêu vé học sinh?",
+      "hint_steps": [
+        "Có hai loại vé và cần tìm **số lượng của từng loại**. Hãy chọn hai ẩn theo số vé.",
+        "Bài cho hai quan hệ độc lập:\n- tổng số vé;\n- tổng số tiền.",
+        "Nếu gọi $x$ là số vé người lớn và $y$ là số vé học sinh, hãy bắt đầu bằng\n\n$$x+y=40.$$\n\nPhương trình tiền phải có đơn vị nghìn đồng."
+      ],
+      "full_solution_markdown": "Gọi $x$ là số vé người lớn và $y$ là số vé học sinh. Điều kiện: $x,y$ là các số nguyên không âm.\n\nTừ tổng số vé:\n\n$$x+y=40.$$\n\nTừ tổng số tiền, tính theo nghìn đồng:\n\n$$15x+8y=488.$$\n\nTa có hệ:\n\n$$\\begin{cases}x+y=40\\\\15x+8y=488\\end{cases}$$\n\nNhân phương trình đầu với $8$:\n\n$$8x+8y=320.$$\n\nLấy phương trình tiền trừ phương trình này:\n\n$$7x=168\\Rightarrow x=24.$$\n\nSuy ra\n\n$$y=40-24=16.$$\n\nKiểm tra:\n\n$$24+16=40,$$\n\n$$15\\cdot24+8\\cdot16=360+128=488.$$\n\nVậy đã bán **24 vé người lớn** và **16 vé học sinh**.",
+      "method_rationale_markdown": "Cộng đại số thuận tiện vì phương trình số lượng có thể nhân với $8$ để khử ngay $y$. Phần khó chính của bài không phải phép khử mà là **dịch đúng hai dữ kiện sang hai phương trình cùng đơn vị**.",
+      "rubric": [
+        {
+          "criterion": "Chọn đúng hai ẩn và điều kiện.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng $x+y=40$.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng $15x+8y=488$.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải đúng $x=24, y=16$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra và kết luận đúng ngữ cảnh.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Viết $15x+8y=40$, làm hai vế khác đại lượng.",
+        "Quên ghi đơn vị nghìn đồng.",
+        "Giải ra $x,y$ nhưng không kiểm tra chúng là số nguyên không âm.",
+        "Chỉ kiểm tra tổng số vé mà không kiểm tra tổng tiền."
+      ],
+      "remediation_markdown": "- Nếu chưa biết đặt ẩn/lập hệ: quay lại CĐ09 → “Bài toán bằng cách lập hệ”.\n- Nếu lập được hệ nhưng giải chậm: ôn “phương pháp cộng đại số”.\n- Bài anh em dễ hơn: tổng 20 vé, hai mức giá, số tiền được chọn để nghiệm nguyên nhỏ.",
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ09 – Hệ phương trình",
+          "href": "../kien-thuc/09-he-phuong-trinh/core/"
+        },
+        {
+          "label": "Practice Room CĐ09",
+          "href": "../kien-thuc/09-he-phuong-trinh/bai-tap/"
+        }
+      ]
+    },
+    {
+      "exercise_kind": "anchor",
+      "topic_id": "CT09",
+      "topic_slug": "09-he-phuong-trinh",
+      "topic_title": "Hệ phương trình bậc nhất hai ẩn",
+      "grade_overlay": [
+        9
+      ],
+      "figure_uri": null,
+      "figure_alt": null,
+      "source_refs": [
+        "review-packets/academic-depth/ct09-p1b/01_NOTEBOOKLM_CT09_P1B_WRITTEN_ANCHORS_R1.md",
+        "docs/assets/data/curriculum/topic09-learning-workspace.json#sys09-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-ACADEMIC-DEPTH-CT09-P1B-WRITTEN-R1-20261003",
+        "receipt": "review-packets/academic-depth/ct09-p1b/02_NOTEBOOKLM_CT09_P1B_WRITTEN_R1_PASS_RECEIPT.md"
+      },
+      "exercise_id": "WX09-SYS-004",
+      "problem_type_id": "system-modelling-price-discount",
+      "problem_type_title": "Lập hệ từ giá niêm yết và phần trăm giảm",
+      "title": "Giá niêm yết và hai mức giảm giá",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Nền tảng",
+      "skills": [
+        "lap-he-bai-toan",
+        "giai-he-cong",
+        "kiem-tra-nghiem-he"
+      ],
+      "prerequisites": [
+        "phan-tram",
+        "giai-he-cong"
+      ],
+      "estimated_minutes": 15,
+      "problem_markdown": "Một cửa hàng bán một **đèn bàn học** và một **tai nghe**. Tổng giá niêm yết của hai sản phẩm là **2 400 nghìn đồng**.\n\nTrong chương trình khuyến mại:\n- đèn bàn được giảm **10%**;\n- tai nghe được giảm **20%**.\n\nSau giảm giá, tổng số tiền khách phải trả là **2 100 nghìn đồng**.\n\nTìm giá niêm yết của mỗi sản phẩm.",
+      "hint_steps": [
+        "Hai ẩn nên là **hai giá niêm yết**, không phải số tiền được giảm.",
+        "Giảm 10% nghĩa là trả 90% giá niêm yết; giảm 20% nghĩa là trả 80%.",
+        "Nếu $x,y$ lần lượt là hai giá niêm yết tính theo nghìn đồng:\n\n$$x+y=2400.$$\n\nHãy viết phương trình số tiền đã trả bằng $0{,}9x$ và $0{,}8y$."
+      ],
+      "full_solution_markdown": "Gọi $x$ là giá niêm yết của đèn bàn và $y$ là giá niêm yết của tai nghe, đơn vị nghìn đồng. Điều kiện: $x>0, y>0$.\n\nTa có:\n\n$$x+y=2400.$$\n\nSau giảm giá, khách trả:\n\n$$0{,}9x+0{,}8y=2100.$$\n\nNhân phương trình hai với $10$:\n\n$$9x+8y=21000.$$\n\nNhân phương trình đầu với $8$:\n\n$$8x+8y=19200.$$\n\nLấy hai phương trình trừ nhau:\n\n$$x=1800.$$\n\nSuy ra:\n\n$$y=2400-1800=600.$$\n\nKiểm tra tiền sau giảm:\n\n$$0{,}9\\cdot1800+0{,}8\\cdot600=1620+480=2100.$$\n\nVậy giá niêm yết là **1 800 nghìn đồng** cho đèn bàn và **600 nghìn đồng** cho tai nghe.",
+      "method_rationale_markdown": "Mô hình hóa bằng hệ giúp giữ riêng hai giá chưa biết. Cần phân biệt rõ **giá niêm yết**, **phần trăm được giảm** và **số tiền thực trả**.",
+      "rubric": [
+        {
+          "criterion": "Chọn đúng ẩn, đơn vị và điều kiện.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng phương trình tổng giá niêm yết.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng phương trình sau giảm giá.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải đúng $x=1800, y=600$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra phần trăm và kết luận.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Dùng $0{,}1x$ và $0{,}2y$ làm số tiền phải trả thay vì số tiền được giảm.",
+        "Trộn đơn vị đồng và nghìn đồng.",
+        "Viết $x+y=2100$ dù 2100 là tổng sau giảm.",
+        "Không kiểm tra lại bằng số tiền thực trả."
+      ],
+      "remediation_markdown": "- Nếu nhầm phần trăm: ôn CĐ02/CĐ03 phần phần trăm.\n- Nếu khó lập phương trình: quay lại ví dụ “hai quan hệ độc lập” của CĐ09.",
+      "remediation_links": [
+        {
+          "label": "Ôn phần trăm – CĐ03",
+          "href": "../kien-thuc/03-ti-le-ti-le-thuc/core/"
+        },
+        {
+          "label": "Ôn CĐ09 – Hệ phương trình",
+          "href": "../kien-thuc/09-he-phuong-trinh/core/"
+        },
+        {
+          "label": "Practice Room CĐ09",
+          "href": "../kien-thuc/09-he-phuong-trinh/bai-tap/"
+        }
+      ]
+    },
+    {
+      "exercise_kind": "anchor",
+      "topic_id": "CT09",
+      "topic_slug": "09-he-phuong-trinh",
+      "topic_title": "Hệ phương trình bậc nhất hai ẩn",
+      "grade_overlay": [
+        9
+      ],
+      "figure_uri": null,
+      "figure_alt": null,
+      "source_refs": [
+        "review-packets/academic-depth/ct09-p1b/01_NOTEBOOKLM_CT09_P1B_WRITTEN_ANCHORS_R1.md",
+        "docs/assets/data/curriculum/topic09-learning-workspace.json#sys09-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-ACADEMIC-DEPTH-CT09-P1B-WRITTEN-R1-20261003",
+        "receipt": "review-packets/academic-depth/ct09-p1b/02_NOTEBOOKLM_CT09_P1B_WRITTEN_R1_PASS_RECEIPT.md"
+      },
+      "exercise_id": "WX09-SYS-005",
+      "problem_type_id": "system-modelling-mixture-concentration",
+      "problem_type_title": "Lập hệ từ tổng lượng và nồng độ",
+      "title": "Pha dung dịch bằng bảo toàn lượng chất",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "skills": [
+        "lap-he-bai-toan",
+        "giai-he-the",
+        "kiem-tra-nghiem-he"
+      ],
+      "prerequisites": [
+        "phan-tram",
+        "giai-he-the"
+      ],
+      "estimated_minutes": 15,
+      "problem_markdown": "Cần pha **20 lít** dung dịch muối nồng độ **19%** từ hai loại dung dịch có nồng độ **10%** và **25%**.\n\nHỏi cần bao nhiêu lít mỗi loại?",
+      "hint_steps": [
+        "Một phương trình đến từ **tổng thể tích**.",
+        "Phương trình còn lại phải theo **lượng muối**, không phải cộng trực tiếp các phần trăm.",
+        "Nếu $x,y$ là số lít dung dịch 10% và 25%:\n\n$$x+y=20.$$\n\nLượng muối trong hỗn hợp cuối là\n\n$$19\\%\\cdot20=3{,}8.$$"
+      ],
+      "full_solution_markdown": "Gọi $x$ lít dung dịch 10% và $y$ lít dung dịch 25%. Điều kiện: $x\\ge0, y\\ge0$.\n\nTổng thể tích:\n\n$$x+y=20.$$\n\nLượng muối trong hai phần là $0{,}10x+0{,}25y$. Dung dịch cuối 20 lít, nồng độ 19%, nên lượng muối là\n\n$$0{,}19\\cdot20=3{,}8.$$\n\nTa có hệ:\n\n$$\\begin{cases}x+y=20\\\\0{,}10x+0{,}25y=3{,}8\\end{cases}$$\n\nThế $x=20-y$:\n\n$$0{,}10(20-y)+0{,}25y=3{,}8.$$\n\n$$2+0{,}15y=3{,}8\\Rightarrow0{,}15y=1{,}8\\Rightarrow y=12.$$\n\nSuy ra $x=8$.\n\nKiểm tra:\n\n$$0{,}10\\cdot8+0{,}25\\cdot12=0{,}8+3=3{,}8.$$\n\nVậy cần **8 lít dung dịch 10%** và **12 lít dung dịch 25%**.",
+      "method_rationale_markdown": "Hai quan hệ độc lập là **bảo toàn tổng thể tích** và **bảo toàn lượng chất đang xét**. Không thể lập phương trình bằng cách cộng $10\\%+25\\%=19\\%$.",
+      "rubric": [
+        {
+          "criterion": "Chọn hai ẩn và điều kiện.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng $x+y=20$.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng phương trình lượng muối.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải đúng $x=8, y=12$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra và kết luận đúng đơn vị.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Cộng trực tiếp hai nồng độ.",
+        "Quên nhân nồng độ với thể tích tương ứng.",
+        "Dùng 19 thay vì $0{,}19$.",
+        "Không kiểm tra tổng thể tích sau khi giải."
+      ],
+      "remediation_markdown": "- Nếu nhầm phần trăm: ôn phần trăm trước.\n- Nếu chưa hiểu phương trình thứ hai: xem lại khái niệm “lượng thành phần = tỉ lệ × tổng lượng”.",
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ09 – Hệ phương trình",
+          "href": "../kien-thuc/09-he-phuong-trinh/core/"
+        },
+        {
+          "label": "Practice Room CĐ09",
+          "href": "../kien-thuc/09-he-phuong-trinh/bai-tap/"
+        }
+      ]
+    },
+    {
+      "exercise_kind": "anchor",
+      "topic_id": "CT09",
+      "topic_slug": "09-he-phuong-trinh",
+      "topic_title": "Hệ phương trình bậc nhất hai ẩn",
+      "grade_overlay": [
+        9
+      ],
+      "figure_uri": null,
+      "figure_alt": null,
+      "source_refs": [
+        "review-packets/academic-depth/ct09-p1b/01_NOTEBOOKLM_CT09_P1B_WRITTEN_ANCHORS_R1.md",
+        "docs/assets/data/curriculum/topic09-learning-workspace.json#sys09-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-ACADEMIC-DEPTH-CT09-P1B-WRITTEN-R1-20261003",
+        "receipt": "review-packets/academic-depth/ct09-p1b/02_NOTEBOOKLM_CT09_P1B_WRITTEN_R1_PASS_RECEIPT.md"
+      },
+      "exercise_id": "WX09-SYS-006",
+      "problem_type_id": "system-modelling-work-rate",
+      "problem_type_title": "Lập hệ từ năng suất và thời gian",
+      "title": "Năng suất thực sự: lượng công việc = năng suất × thời gian",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "skills": [
+        "lap-he-bai-toan",
+        "nang-suat-he",
+        "giai-he-the",
+        "kiem-tra-nghiem-he"
+      ],
+      "prerequisites": [
+        "giai-he-the"
+      ],
+      "estimated_minutes": 15,
+      "problem_markdown": "Hai máy A và B làm việc với năng suất không đổi.\n\n- Nếu cả hai cùng hoạt động trong **4 giờ**, tổng cộng làm được **200 chi tiết**.\n- Trong **3 giờ**, máy A làm được nhiều hơn lượng máy B làm trong **2 giờ** là **50 chi tiết**.\n\nTìm năng suất của mỗi máy, tính theo chi tiết/giờ.",
+      "hint_steps": [
+        "Ẩn nên là **năng suất mỗi giờ**, không phải tổng số sản phẩm.",
+        "Số sản phẩm = năng suất × thời gian.",
+        "Nếu năng suất A, B là $x,y$:\n\n$$4x+4y=200.$$\n\nQuan hệ thứ hai là\n\n$$3x-2y=50.$$"
+      ],
+      "full_solution_markdown": "Gọi $x$ là năng suất máy A và $y$ là năng suất máy B, đơn vị chi tiết/giờ. Điều kiện: $x>0, y>0$.\n\nTrong 4 giờ, hai máy làm:\n\n$$4x+4y=200\\Rightarrow x+y=50.$$\n\nTheo dữ kiện thứ hai:\n\n$$3x-2y=50.$$\n\nTa có hệ:\n\n$$\\begin{cases}x+y=50\\\\3x-2y=50\\end{cases}$$\n\nTừ $y=50-x$:\n\n$$3x-2(50-x)=50.$$\n\n$$3x-100+2x=50\\Rightarrow5x=150\\Rightarrow x=30.$$\n\nSuy ra $y=20$.\n\nKiểm tra:\n\n$$4\\cdot30+4\\cdot20=200,$$\n\n$$3\\cdot30-2\\cdot20=90-40=50.$$\n\nVậy máy A có năng suất **30 chi tiết/giờ**, máy B có năng suất **20 chi tiết/giờ**.",
+      "method_rationale_markdown": "Bài này buộc người học phân biệt **năng suất**, **thời gian** và **lượng công việc hoàn thành**. Nó không chỉ là bài “tổng và hiệu hai số” đổi tên.",
+      "rubric": [
+        {
+          "criterion": "Đặt đúng năng suất làm ẩn và ghi đơn vị.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng $4x+4y=200$.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng $3x-2y=50$.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải đúng $x=30, y=20$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra và kết luận đúng.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Dùng $x+y=200$ dù $x,y$ là năng suất mỗi giờ.",
+        "Viết $3x-y=50$ và bỏ mất 2 giờ của máy B.",
+        "Quên đơn vị chi tiết/giờ.",
+        "Không kiểm tra cả hai dữ kiện thời gian."
+      ],
+      "remediation_markdown": "- Nếu nhầm đại lượng: quay lại công thức “lượng công việc = năng suất × thời gian”.\n- Nếu hệ đúng nhưng giải sai: ôn thế/cộng đại số.",
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ09 – Hệ phương trình",
+          "href": "../kien-thuc/09-he-phuong-trinh/core/"
+        },
+        {
+          "label": "Practice Room CĐ09",
+          "href": "../kien-thuc/09-he-phuong-trinh/bai-tap/"
+        }
+      ]
+    },
+    {
+      "exercise_kind": "anchor",
+      "topic_id": "CT09",
+      "topic_slug": "09-he-phuong-trinh",
+      "topic_title": "Hệ phương trình bậc nhất hai ẩn",
+      "grade_overlay": [
+        9
+      ],
+      "figure_uri": null,
+      "figure_alt": null,
+      "source_refs": [
+        "review-packets/academic-depth/ct09-p1b/01_NOTEBOOKLM_CT09_P1B_WRITTEN_ANCHORS_R1.md",
+        "docs/assets/data/curriculum/topic09-learning-workspace.json#sys09-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-ACADEMIC-DEPTH-CT09-P1B-WRITTEN-R1-20261003",
+        "receipt": "review-packets/academic-depth/ct09-p1b/02_NOTEBOOKLM_CT09_P1B_WRITTEN_R1_PASS_RECEIPT.md"
+      },
+      "exercise_id": "WX09-SYS-007",
+      "problem_type_id": "system-repeated-expression-substitution",
+      "problem_type_title": "Đặt ẩn phụ cho biểu thức lặp lại",
+      "title": "Nhận ra biểu thức lặp và quay lại biến ban đầu",
+      "learning_layer": "Entrance10",
+      "level": "ENTRANCE10",
+      "learner_label": "Ôn thi vào 10",
+      "skills": [
+        "bien-doi-truoc-giai",
+        "giai-he-the",
+        "kiem-tra-nghiem-he"
+      ],
+      "prerequisites": [
+        "can-thuc",
+        "giai-he-the"
+      ],
+      "estimated_minutes": 15,
+      "problem_markdown": "Giải hệ:\n\n$$\\begin{cases}\\sqrt{x+1}+y=5\\\\2\\sqrt{x+1}-3y=0\\end{cases}$$",
+      "hint_steps": [
+        "Hai phương trình cùng chứa biểu thức $\\sqrt{x+1}$.",
+        "Hãy đặt\n\n$$u=\\sqrt{x+1},\\qquad u\\ge0.$$",
+        "Sau khi đặt $u$, hệ trở thành\n\n$$\\begin{cases}u+y=5\\\\2u-3y=0\\end{cases}$$\n\nHãy giải hệ này trước."
+      ],
+      "full_solution_markdown": "Điều kiện:\n\n$$x+1\\ge0\\Rightarrow x\\ge-1.$$\n\nĐặt\n\n$$u=\\sqrt{x+1},\\qquad u\\ge0.$$\n\nHệ trở thành\n\n$$\\begin{cases}u+y=5\\\\2u-3y=0\\end{cases}$$\n\nTừ phương trình đầu, $y=5-u$. Thế vào phương trình hai:\n\n$$2u-3(5-u)=0.$$\n\n$$2u-15+3u=0\\Rightarrow5u=15\\Rightarrow u=3.$$\n\nSuy ra $y=2$.\n\nQuay lại biến $x$:\n\n$$\\sqrt{x+1}=3\\Rightarrow x+1=9\\Rightarrow x=8.$$\n\nKiểm tra:\n\n$$\\sqrt{8+1}+2=3+2=5,$$\n\n$$2\\sqrt9-3\\cdot2=6-6=0.$$\n\nVậy nghiệm là\n\n$$(x;y)=(8;2).$$",
+      "method_rationale_markdown": "Mục tiêu không phải học một “hệ căn mới”, mà là nhận ra **cùng một biểu thức lặp lại** và tạm coi nó như một ẩn. Sau khi giải hệ tuyến tính, phải quay lại biến ban đầu và kiểm tra điều kiện.",
+      "rubric": [
+        {
+          "criterion": "Nêu đúng điều kiện.",
+          "points": 1
+        },
+        {
+          "criterion": "Đặt $u=\\sqrt{x+1}$, ghi $u\\ge0$.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng hệ theo $u,y$.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải đúng $u=3, y=2$.",
+          "points": 1
+        },
+        {
+          "criterion": "Quay lại tìm đúng $x=8$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kiểm tra và kết luận.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 6,
+      "common_mistakes": [
+        "Đặt $u$ nhưng quên $u\\ge0$.",
+        "Giải được $u,y$ rồi kết luận luôn $(u;y)$ là nghiệm cần tìm.",
+        "Bình phương $\\sqrt{x+1}=3$ nhưng không quay lại kiểm tra.",
+        "Không nêu điều kiện $x\\ge-1$."
+      ],
+      "remediation_markdown": "- Nếu chưa nhận ra biểu thức lặp: xem lại bài biến đổi trước khi giải.\n- Nếu khó giải hệ mới: ôn phương pháp thế/cộng đại số.\n- Nếu quên điều kiện căn: ôn CĐ11 về căn thức.",
+      "remediation_links": [
+        {
+          "label": "Ôn căn thức – CĐ11",
+          "href": "../kien-thuc/11-can-thuc/core/"
+        },
+        {
+          "label": "Ôn CĐ09 – Hệ phương trình",
+          "href": "../kien-thuc/09-he-phuong-trinh/core/"
+        },
+        {
+          "label": "Practice Room CĐ09",
+          "href": "../kien-thuc/09-he-phuong-trinh/bai-tap/"
+        }
+      ]
+    },
+    {
+      "exercise_kind": "anchor",
+      "topic_id": "CT09",
+      "topic_slug": "09-he-phuong-trinh",
+      "topic_title": "Hệ phương trình bậc nhất hai ẩn",
+      "grade_overlay": [
+        9
+      ],
+      "figure_uri": null,
+      "figure_alt": null,
+      "source_refs": [
+        "review-packets/academic-depth/ct09-p1b/01_NOTEBOOKLM_CT09_P1B_WRITTEN_ANCHORS_R1.md",
+        "docs/assets/data/curriculum/topic09-learning-workspace.json#sys09-core-5"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-ACADEMIC-DEPTH-CT09-P1B-WRITTEN-R1-20261003",
+        "receipt": "review-packets/academic-depth/ct09-p1b/02_NOTEBOOKLM_CT09_P1B_WRITTEN_R1_PASS_RECEIPT.md"
+      },
+      "exercise_id": "WX09-SYS-008",
+      "problem_type_id": "system-parameter-classification",
+      "problem_type_title": "Biện luận tham số và tách trường hợp an toàn",
+      "title": "Không chia cho biểu thức tham số trước khi xét bằng 0",
+      "learning_layer": "Entrance10",
+      "level": "ENTRANCE10",
+      "learner_label": "Ôn thi vào 10",
+      "skills": [
+        "tham-so-he",
+        "so-nghiem-he",
+        "bien-doi-truoc-giai"
+      ],
+      "prerequisites": [
+        "so-nghiem-he",
+        "giai-he-cong"
+      ],
+      "estimated_minutes": 18,
+      "problem_markdown": "Biện luận số nghiệm của hệ theo tham số $m$:\n\n$$\\begin{cases}x+y=2\\\\(m-1)\\big((m+1)x+y\\big)=m-1\\end{cases}$$",
+      "hint_steps": [
+        "Trước khi chia hai vế phương trình hai cho $m-1$, phải xét riêng giá trị nào?",
+        "Xét $m=1$ trước. Sau đó mới làm việc với trường hợp $m\\ne1$.",
+        "Khi $m\\ne1$, phương trình hai trở thành\n\n$$(m+1)x+y=1.$$\n\nTrừ phương trình $x+y=2$, ta được\n\n$$mx=-1.$$\n\nHãy tiếp tục tách trường hợp $m=0$ và $m\\ne0$."
+      ],
+      "full_solution_markdown": "Xét hai trường hợp.\n\n### Trường hợp 1: $m=1$\n\nPhương trình hai trở thành\n\n$$0=0.$$\n\nHệ chỉ còn\n\n$$x+y=2.$$\n\nĐây là một phương trình bậc nhất hai ẩn nên có vô số cặp nghiệm. Vì vậy, khi $m=1$, hệ có **vô số nghiệm**.\n\n### Trường hợp 2: $m\\ne1$\n\nTa được phép chia phương trình hai cho $m-1$:\n\n$$(m+1)x+y=1.$$\n\nKết hợp với\n\n$$x+y=2,$$\n\nlấy phương trình mới trừ phương trình đầu:\n\n$$mx=-1.$$\n\n#### Nếu $m=0$\n\nTa được $0=-1$, vô lý. Hệ **vô nghiệm**.\n\n#### Nếu $m\\ne0$ và $m\\ne1$\n\nTa có\n\n$$x=-\\frac1m,$$\n\nvà từ $x+y=2$:\n\n$$y=2+\\frac1m.$$\n\nVậy hệ có **một nghiệm duy nhất**.\n\n### Phân loại cuối cùng\n\n- $m=1$: vô số nghiệm.\n- $m=0$: vô nghiệm.\n- $m\\ne0,1$: một nghiệm duy nhất,\n\nvới\n\n$$(x;y)=\\left(-\\frac1m;2+\\frac1m\\right).$$",
+      "method_rationale_markdown": "Điểm trọng tâm là **không được chia cho biểu thức chứa tham số trước khi kiểm tra nó có thể bằng 0 hay không**. Việc tách trường hợp bảo vệ lời giải khỏi làm mất trường hợp đặc biệt.",
+      "rubric": [
+        {
+          "criterion": "Xét riêng $m=1$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kết luận đúng vô số nghiệm khi $m=1$.",
+          "points": 1
+        },
+        {
+          "criterion": "Với $m\\ne1$, chia hợp lệ và đưa về hệ mới.",
+          "points": 1
+        },
+        {
+          "criterion": "Suy ra đúng $mx=-1$.",
+          "points": 1
+        },
+        {
+          "criterion": "Xét đúng $m=0$ → vô nghiệm.",
+          "points": 1
+        },
+        {
+          "criterion": "Với $m\\ne0,1$, kết luận một nghiệm duy nhất và viết đúng nghiệm.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 6,
+      "common_mistakes": [
+        "Chia ngay cho $m-1$, làm mất trường hợp $m=1$.",
+        "Từ $mx=-1$ chia tiếp cho $m$ mà không xét $m=0$.",
+        "Kết luận $m=0$ có nghiệm vì quên kiểm tra mâu thuẫn $0=-1$.",
+        "Nêu số nghiệm nhưng không tổng hợp đầy đủ các trường hợp."
+      ],
+      "remediation_markdown": "- Nếu chưa hiểu số nghiệm: quay lại ý nghĩa hình học hai đường thẳng.\n- Nếu hay chia mất trường hợp: ôn nguyên tắc điều kiện trước khi chia.\n- Nếu biến đổi hệ chậm: ôn cộng đại số.",
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ09 – Hệ phương trình",
+          "href": "../kien-thuc/09-he-phuong-trinh/core/"
+        },
+        {
+          "label": "Practice Room CĐ09",
+          "href": "../kien-thuc/09-he-phuong-trinh/bai-tap/"
+        }
+      ]
     }
   ],
   "extension_policy": [
@@ -4337,7 +4869,7 @@
       "CT23",
       "CT24"
     ],
-    "exercise_count": 44,
+    "exercise_count": 50,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -4385,6 +4917,12 @@
         "batch_id": "EXPANSION_B7_R1",
         "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-R1-20261001",
         "count": 2,
+        "status": "PUBLISHED"
+      },
+      {
+        "batch_id": "CT09_P1B_R1",
+        "packet_id": "MATH-ACADEMIC-DEPTH-CT09-P1B-WRITTEN-R1-20261003",
+        "count": 6,
         "status": "PUBLISHED"
       }
     ],

@@ -29,7 +29,7 @@ with sync_playwright() as p:
         )
 
         cards = page.locator(".written-exercise-card")
-        assert cards.count() == 44, (device, "forty-four published cards")
+        assert cards.count() == 50, (device, "fifty published cards")
         assert page.locator(".written-exercise-card#wx07-rat-001").count() == 1
         assert page.locator(".written-exercise-card#wx14-tri-001 img").is_visible(), (device, "geometry figure")
 
@@ -78,6 +78,42 @@ with sync_playwright() as p:
         assert cards.count() == 1, (device, "problem type filter")
         assert page.locator(".written-exercise-card#wx07-rat-002").count() == 1
         problem_type.select_option("all")
+
+        # CT09 P1-B deep anchors: progressive help and friendly learner labels.
+        topic.select_option("CT09")
+        assert cards.count() == 8, (device, "CT09 has two existing items plus six P1-B anchors")
+        anchor = page.locator(".written-exercise-card#wx09-sys-003")
+        assert anchor.count() == 1, (device, "CT09 first deep anchor")
+        meta_text = anchor.locator(".written-exercise-meta").inner_text()
+        assert "Nền tảng" in meta_text and "KNTT-Core" not in meta_text and "CORE_BASE" not in meta_text, (device, "friendly anchor metadata")
+
+        deep_actions = anchor.locator(".written-help-action")
+        assert deep_actions.count() == 5, (device, "five deep-anchor support actions")
+        hint_button = anchor.locator('[data-help-target="hints"]')
+        hint_panel = anchor.locator('[data-help-panel="hints"]')
+        hint_button.click()
+        assert hint_panel.is_visible() and anchor.locator(".written-hint-step").count() == 1, (device, "only hint 1 initially")
+        hint_button.click()
+        assert anchor.locator(".written-hint-step").count() == 2, (device, "hint 2 revealed progressively")
+        hint_button.click()
+        assert anchor.locator(".written-hint-step").count() == 3, (device, "hint 3 revealed progressively")
+
+        anchor.locator('[data-help-target="solution"]').click()
+        assert anchor.locator('[data-help-panel="solution"]').is_visible(), (device, "full solution separate")
+        anchor.locator('[data-help-target="rubric"]').click()
+        assert anchor.locator('[data-help-panel="rubric"]').is_visible(), (device, "self-check separate")
+        anchor.locator('[data-help-target="mistakes"]').click()
+        assert anchor.locator('[data-help-panel="mistakes"]').is_visible(), (device, "mistakes separate")
+        anchor.locator('[data-help-target="remediation"]').click()
+        assert anchor.locator('[data-help-panel="remediation"]').is_visible(), (device, "remediation separate")
+        anchor_after = page.evaluate("(k) => localStorage.getItem(k)", SENTINEL_KEY)
+        assert anchor_after == before, (device, "deep-anchor help writes no learner evidence")
+
+        level.select_option("ENTRANCE10")
+        assert cards.count() == 2, (device, "two CT09 Entrance10 anchors")
+        level.select_option("all")
+        topic.select_option("all")
+
         search = page.locator('input[aria-label="Tìm bài tự luận"]')
         search.fill("chuyển động")
         assert cards.count() == 1, (device, "search filter")
@@ -148,13 +184,16 @@ with sync_playwright() as p:
                 timeout=15000,
             )
             assert new_topic_page.locator('select[aria-label="Lọc theo chuyên đề"]').input_value() == topic_id, (device, topic_id, "filter auto-applied")
-            assert new_topic_page.locator(".written-exercise-card").count() == 2, (device, topic_id, "two published items")
+            expected_count = 8 if topic_id == "CT09" else 2
+            assert new_topic_page.locator(".written-exercise-card").count() == expected_count, (device, topic_id, "published item count")
             new_topic_page.close()
         context.close()
 
     browser.close()
 
-print("PASS: Written Exercise Library renders forty-four published items on desktop/mobile.")
+print("PASS: Written Exercise Library renders fifty published items on desktop/mobile.")
 print("PASS: topic/level/search filters, geometry figure and MathJax work.")
 print("PASS: compact 3-action help row is presentation-only with no localStorage write.")
 print("PASS: quick shortcut and topic deep link open the written library with CT07 auto-filter.")
+
+print("PASS: CT09 P1-B six deep anchors expose progressive hints and friendly learner labels without evidence writes.")
