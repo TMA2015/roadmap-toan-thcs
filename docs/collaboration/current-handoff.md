@@ -1,15 +1,15 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 02/10/2026, SKILL TAXONOMY V2 I3B CT02–CT03 SHADOW LIVE; OWNER PRODUCTION QA PENDING.**  
-> Academic taxonomy: **131/131 family definitions PASS; 386/386 mappings PASS**.  
-> I0 durable registry: **DONE**. I1 topic policies: **DONE — 24 policies / 3,114 questions / 2,900 family-linked + 214 formative/NO_FAMILY**.  
-> I2 CT02 canary: **DONE / OWNER QA PASS**. I3A full CT02: **DONE / OWNER QA PASS**.  
-> I3B CT02–CT03 shadow: **LIVE** — **240 rows = 221 family-linked active + 19 NO_FAMILY guards / 16 Core families / max 149 independent units**.  
-> Exact I3B tested HEAD `b3c650955fc4481cff121702542ba57c4296140d` passed Roadmap PR Quality **37030103708**; merged as `a49ea5832206e7cd43df0440e241799d246a9916`; production deploy **37030799961 SUCCESS**.  
-> Post-deploy `gh-pages` verification: **PASS** @ `31e5074e82d87586501d24a8b04226859aee87c8` — I3B observer/policy present and both CT02/CT03 Practice HTML load the observer.  
-> Store remains `toan-thcs-taxonomy-v2-evidence-v1`; all prior CT02 evidence is preserved. Cross-topic `NUM-PERCENT` reuse remains topic-scoped for independent units.  
-> **No mastery, no Readiness, no backfill/regrade, no normal learner-facing Taxonomy v2 UI. G2 remains unchanged.**  
-> **Do not expand to CT04 or beyond until owner production QA closes I3B.**
+> **CURRENT CHECKPOINT — 03/10/2026, CT09 ACADEMIC DEPTH PILOT CLOSED: SELF_LEARNING_READY_V1.**  
+> CT09 final independent closure: **D1–D6 PASS; A1–A9 PASS**.  
+> Decisions: `PRIORITY_BADGE|KEEP`; `SELECTIVE_HINT_POLICY|PASS`; school-semester/final-test frequency remains **NON_BLOCKING_INSUFFICIENT_SOURCE**.  
+> Authorization: `CLEARED_FOR_CT09_SELF_LEARNING_READY_V1_CLOSURE`.  
+> Durable receipt: `review-packets/academic-depth/ct09-closure/02_CT09_SELF_LEARNING_READY_V1_PASS_RECEIPT.md`.  
+> CT09 implementation slices P1-A / P1-B / P1-C1 / P1-C2 are all **DONE / Owner QA PASS**. Production Practice = **129 questions / 27 structural groups** with original IDs/history preserved.  
+> Academic Depth Standard now codifies **selective static hints**: no 100% hint quota; important written/modeling bottlenecks must have a reliable non-AI help path.  
+> **Controlled rollout only:** CT09 validates the audit method; do not mass-copy CT09 edits to other topics. Remaining topics must be source-audited topic-by-topic or in controlled batches.
+>
+> Skill Taxonomy v2 remains a separate protected program. Existing shadow evidence store/boundaries, no Mastery/Readiness, no backfill/regrade, and G2 protection remain unchanged unless a separately authorized taxonomy task changes them.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
