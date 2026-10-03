@@ -1,5 +1,5 @@
 {
-  "version": "1.0.161",
+  "version": "1.0.162",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "CT09 S1 intake is complete: SGK + SBT KNTT Grade 9 Chapter I have been registered and extracted. The source-backed Core/progression catalogue now includes concept/graph meaning, substitution/elimination, solution-count structures, calculator support, coefficient/parameter-lite practice, and diverse two-unknown modeling contexts. Next: register at least one trusted S2 pedagogical/reference source and extract the verified S3 Hà Nội entrance corpus, then normalize problem types and build the CT09 Coverage/Frequency Matrix. No learner-facing content change yet.",
+    "next_priority": "CT09 now has complete KNTT S1 intake plus a high-value advanced/pedagogical reference (Vũ Hữu Bình, Nâng cao và phát triển Toán 9 tập 2) extracted with strict Core/Entrance10/Challenge boundaries. The generic 'Bài Tập Toán Nâng Cao Lớp 9' compilation is S5 idea-only due weak provenance. Next priority: extract the verified Hanoi Grade-10 entrance S3 corpus, then normalize S1/S2/S3 problem types and build the CT09 Coverage/Frequency Matrix before any learner-facing edits.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -2131,7 +2131,7 @@
       ]
     },
     "academic_depth_phase": {
-      "status": "CT09_S1_COMPLETE_S2_S3_NEXT",
+      "status": "CT09_S1_AND_REFERENCE_INTAKE_COMPLETE_S3_NEXT",
       "branch": "academic-depth-framework-r1-20261003",
       "source_framework": "docs/roadmap/academic-source-framework-v1.md",
       "audit_standard": "docs/roadmap/academic-depth-audit-standard-v1.md",
@@ -2164,12 +2164,18 @@
       "ct09_source_branch": "academic-depth-ct09-source-intake-r1-20261003",
       "ct09_sources": {
         "s1_status": "KNTT_SGK_AND_SBT_GRADE9_REGISTERED_AND_EXTRACTED",
-        "s2_status": "AWAITING_TRUSTED_PEDAGOGICAL_SOURCE",
+        "s2_status": "VHB_NCPT9_T2_REGISTERED_AND_EXTRACTED_AS_S2_S4_HYBRID",
         "s3_primary": "HANOI_ENTRANCE_2023_2024_2025_2026_REGISTERED",
         "s3_secondary_discovery": "LOIGIAIHAY_KNTT_G9_REGISTERED_WITH_PROVENANCE_GUARD",
         "sbt9_t1_sha256": "ae9a23c66c5d9d273a0726d322c48be4cefa813bc6be9e69fc5d64a40e70a986",
         "sbt9_t2_sha256": "5ff01fd213d1adc75f9c54b4408d6a9642a4d8038e685040efef3311a196196c",
-        "s1_ct09_extraction": "review-packets/academic-depth/ct09-r0/05_S1_KNTT_SBT_CT09_EXTRACTION_R0.md"
+        "s1_ct09_extraction": "review-packets/academic-depth/ct09-r0/05_S1_KNTT_SBT_CT09_EXTRACTION_R0.md",
+        "s2_registry": "review-packets/academic-depth/ct09-r0/06_REFERENCE_SOURCE_REGISTRY_R0.md",
+        "s2_ct09_extraction": "review-packets/academic-depth/ct09-r0/07_S2_S4_VU_HUU_BINH_CT09_EXTRACTION_R0.md",
+        "vhb_t1_sha256": "21bf8ae95f1272d507bd134a2d99fcb65db6f8fb8861f1c99cef78a7e3faefd8",
+        "vhb_t2_sha256": "043b5dc6f93429f811b8949b618b56b2af30cfada508d5256e8a9f761f520893",
+        "gstnv_advanced9_sha256": "bf861f427ee8ae2f4535fb75c7361a4830910bf43782479d6c39b54002975aa1",
+        "gstnv_classification": "S5_IDEA_DRAFT_ONLY"
       }
     }
   },
