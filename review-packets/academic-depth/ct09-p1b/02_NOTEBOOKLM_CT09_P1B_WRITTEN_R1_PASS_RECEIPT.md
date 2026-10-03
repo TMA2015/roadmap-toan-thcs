@@ -48,3 +48,7 @@ This PASS does not authorize:
 - mass-edit of other topics.
 
 Recorded from the owner-supplied independent NotebookLM review on 2026-10-03.
+
+## CI retry note
+
+Exact-head PR Quality was retriggered after the first post-receipt browser suite stalled well beyond the recent successful baseline. No academic candidate content, verdict, scope, or authorization changed.
