@@ -751,7 +751,7 @@ Trong phần Luyện tập:
 - Phần nền tảng, ôn thi vào 10 và thử thách được tách riêng để em chọn mức phù hợp.
 
 !!! info "Cách dùng phần luyện tập"
-    Câu hỏi ngắn giúp em kiểm tra ngay sau khi học. Practice Room dùng để **luyện sâu hơn** và xem giải thích khi cần.
+    Câu hỏi ngắn giúp em kiểm tra ngay sau khi học. Phần Luyện tập dùng để **luyện sâu hơn** và xem giải thích khi cần.
 
 ---
 
