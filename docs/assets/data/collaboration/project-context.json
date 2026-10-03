@@ -1,5 +1,5 @@
 {
-  "version": "1.0.158",
+  "version": "1.0.159",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Academic Depth & Self-Learning Readiness becomes the primary project focus after Skill Taxonomy v2 closure. Framework R1 is drafted: Academic Source Framework, Academic Depth Audit Standard, 25-topic master matrix and source-intake template. Do not expand Mastery/Readiness. Next gate: owner review of the framework, then a deep CT09 pilot using a source corpus (S1 curriculum + selected S2 pedagogy + S3 authentic assessment) before any mass edits across 25 topics.",
+    "next_priority": "Academic Depth Framework R1 is independently reviewed 10/10 PASS and authorized for CT09 pilot only. Next: execute CT09 source intake and source-backed audit using S1 curriculum/KNTT, selected S2 pedagogy/reference sources and S3 authentic assessment. No mass-edit across 25 topics and no Mastery/Readiness expansion.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -2131,7 +2131,7 @@
       ]
     },
     "academic_depth_phase": {
-      "status": "FRAMEWORK_R1_DRAFTED_AWAITING_OWNER_REVIEW",
+      "status": "FRAMEWORK_R1_ACCEPTED_CT09_PILOT_AUTHORIZED",
       "branch": "academic-depth-framework-r1-20261003",
       "source_framework": "docs/roadmap/academic-source-framework-v1.md",
       "audit_standard": "docs/roadmap/academic-depth-audit-standard-v1.md",
@@ -2156,7 +2156,11 @@
       "prior_audit_pass_carries_forward": false,
       "mastery_expansion": false,
       "readiness_expansion": false,
-      "mass_content_expansion_before_gap_audit": false
+      "mass_content_expansion_before_gap_audit": false,
+      "notebooklm_review": "10/10 PASS",
+      "authorization": "CT09_PILOT_ONLY",
+      "review_receipt": "review-packets/academic-depth/framework-r1/01_NOTEBOOKLM_FRAMEWORK_R1_PASS_RECEIPT.md",
+      "mass_edit_authorized": false
     }
   },
   "handoff_required_fields": [
