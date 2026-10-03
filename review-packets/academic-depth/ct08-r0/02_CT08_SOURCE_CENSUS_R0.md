@@ -60,15 +60,17 @@ Project/Library contains:
 
 The Gemini relay is **prior mapping evidence only**, not the independent academic reviewer and not a substitute for the source text.
 
-### S1 still needed
+### S1 durable extraction status
 
-Before final CT08 audit:
-- register/extract relevant KNTT SBT/workbook evidence if available;
-- produce a concise source-locked CT08 S1 extraction file rather than relying on live web pages during NotebookLM review.
+Completed R0 artifacts:
+- `03_S1_KNTT_CT08_EXTRACTION_R0.md`
+- `04_S1_SBT_CT08_EXTRACTION_R0.md`
+
+These provide a durable summarized source basis for NotebookLM review; live retrieval pages remain provenance pointers, not the review source itself.
 
 ## S2 — pedagogical/reference corpus
 
-Status: **NOT YET LOCKED FOR CT08**
+Status: **EXTRACTED R0 / REFERENCE-ONLY**
 
 The CT09 pilot used a selected reference corpus to normalize richer problem types and teaching progression.
 
@@ -86,7 +88,7 @@ Commercial/reference wording remains REFERENCE_ONLY; new learner-facing items mu
 
 ## S3 — authentic assessment corpus
 
-Status: **NOT YET NORMALIZED FOR CT08**
+Status: **HÀ NỘI CURRENT-PROGRAM SAMPLE EXTRACTED R0 (2025–2026, n=2)**
 
 The project already has an established source-discipline rule:
 - exam-frequency claims require a declared corpus;
@@ -125,3 +127,21 @@ Therefore:
 `CT08_ACADEMIC_DEPTH = SOURCE_AUDIT_IN_PROGRESS`
 
 No learner-facing correction is authorized from this census alone.
+
+
+---
+
+## Census update — 2026-10-03
+
+Additional durable artifacts:
+- `04_S1_SBT_CT08_EXTRACTION_R0.md`
+- `05_S2_PEDAGOGICAL_CT08_EXTRACTION_R0.md`
+- `06_S3_HANOI_ENTRANCE_CT08_EXTRACTION_R0.md`
+
+Current minimum source basis is sufficient to draft the normalized problem catalogue and D1–D6 gap audit.
+
+Still intentionally `INSUFFICIENT_SOURCE`:
+- school-semester/final-test frequency;
+- broad statistical claims about exam frequency beyond the official Hà Nội current sample `n=2`.
+
+No learner-facing edit is authorized by this source-census update.
