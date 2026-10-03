@@ -9,6 +9,10 @@ const indexPath = path.join(ROOT, "docs/assets/data/curriculum/taxonomy-v2-runti
 const registryPath = path.join(ROOT, "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json");
 const g2Path = path.join(ROOT, "docs/assets/data/curriculum/canonical-evidence-runtime-policy-04-07-v1.json");
 const jsRoot = path.join(ROOT, "docs/assets/javascripts");
+const ct09P1cAcademicLockPath = path.join(
+  ROOT,
+  "review-packets/academic-depth/ct09-p1c1/01_CT09_PRACTICE_ACADEMIC_LOCK_R1.json"
+);
 
 const readJson = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const gitBlobSha = (p) => {
@@ -25,6 +29,7 @@ const sorted = (a) => [...a].sort();
 const index = readJson(indexPath);
 const registry = readJson(registryPath);
 const g2 = readJson(g2Path);
+const ct09P1cAcademicLock = readJson(ct09P1cAcademicLockPath);
 const familyById = new Map(registry.families.map((f) => [f.family_id, f]));
 const allowedRoles = new Set(registry.legacy_mappings.map((m) => m.role).filter(Boolean));
 
@@ -75,9 +80,33 @@ for (const entry of index.topics) {
   for (const [name, meta] of Object.entries(policy.source_files)) {
     const sourcePath = path.join(ROOT, meta.path);
     assert(fs.existsSync(sourcePath), `${entry.topic_id} missing bank file ${meta.path}`);
-    assert(gitBlobSha(sourcePath) === meta.blob_sha, `${entry.topic_id} source blob drift ${name}`);
+    const currentBlob = gitBlobSha(sourcePath);
     const bank = readJson(sourcePath);
     const questions = bank.questions || [];
+
+    if (currentBlob !== meta.blob_sha) {
+      // CT09 P1-C1 is a deliberately narrow metadata-only exception:
+      // the independently reviewed I1 academic payload remains frozen, while
+      // additive variant_group metadata is allowed for anti-clone delivery.
+      assert(entry.topic_id === "CT09", `${entry.topic_id} source blob drift ${name}`);
+      assert(ct09P1cAcademicLock.schema === "ct09-p1c1-academic-payload-lock-r1", "CT09 P1-C1 academic lock schema");
+      assert(ct09P1cAcademicLock.allowed_additive_question_fields?.length === 1
+        && ct09P1cAcademicLock.allowed_additive_question_fields[0] === "variant_group",
+        "CT09 P1-C1 must allow only variant_group metadata");
+      const locked = ct09P1cAcademicLock.sources?.[name];
+      assert(locked, `CT09 P1-C1 missing academic lock for ${name}`);
+      assert(locked.audited_blob_sha === meta.blob_sha, `CT09 P1-C1 audited blob mismatch ${name}`);
+      const stripped = questions.map((question) => {
+        const copy = { ...question };
+        delete copy.variant_group;
+        return copy;
+      });
+      assert(JSON.stringify(stripped) === JSON.stringify(locked.questions),
+        `CT09 P1-C1 academic payload drift beyond variant_group ${name}`);
+      assert(questions.every((question) => typeof question.variant_group === "string" && question.variant_group.trim()),
+        `CT09 P1-C1 missing variant_group ${name}`);
+    }
+
     assert(questions.length === meta.question_count, `${entry.topic_id} source question count drift ${name}`);
     idsByFile.set(name, new Map(questions.map((q) => [q.id || q.question_id, q])));
   }
