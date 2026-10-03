@@ -9,7 +9,7 @@ const practice=read(folder+"bai-tap.md"),self=read(folder+"tu-kiem-tra.md");
 
 const nav=read("mkdocs.yml"),overview=read(folder+"index.md");
 check(lesson.includes('const topicRoot="/kien-thuc/"+config.slug+"/"')&&lesson.includes('const isCapstone=config.number==="25"')&&lesson.includes("if(!isCapstone){"),"hero/nav must stay only on topic landing pages and no sticky quick nav for CĐ25");
-check(lesson.includes('if(target?.tagName==="DETAILS")target.open=true'),"anchors open the relevant collapsed section");
+check(lesson.includes('const revealAnchor=id=>')&&lesson.includes('if(card)card.open=true'),"anchors open the relevant collapsed section");
 check(loader.includes('slug === "25-tong-hop-on-thi-10" ? "A. 🎯 Luyện tập tương tác"'),"CĐ25 interactive lane is A");
 check(practice.includes("## B. Bài tập tự luận bổ sung")&&[..."ABCDEF"].every(x=>practice.includes("### Nhóm "+x+". ")), "paper exercises B and six distinct topic strands");
 check([..."ABCDEF"].every(x=>practice.includes("#### 25-"+x+"1")), "legacy exercise IDs preserved under groups");

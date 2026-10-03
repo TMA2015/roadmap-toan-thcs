@@ -19,7 +19,7 @@
 .topic-learning-card>summary::-webkit-details-marker{display:none}
 .topic-learning-card>summary:after{content:"＋";float:right;opacity:.6}
 .topic-learning-card[open]>summary:after{content:"−"}
-.topic-learning-card-body{padding:.2rem 1rem 1rem}
+.topic-learning-card-body{padding:.2rem 1rem 1rem;font-size:.86rem;line-height:1.72}
 .topic-section-badge{font-size:.68rem;opacity:.68;margin-left:.45rem;font-weight:500}
 .topic-workspace-fab{position:fixed;right:1rem;bottom:1rem;z-index:8;padding:.65rem .8rem;border:0;border-radius:999px;background:var(--md-primary-fg-color);color:var(--md-primary-bg-color);box-shadow:0 .3rem 1rem rgba(0,0,0,.18);font:inherit;font-size:.78rem;font-weight:700;cursor:pointer}
 .topic-workspace-fab-panel{position:fixed;right:1rem;bottom:4.5rem;z-index:8;width:min(22rem,calc(100vw - 2rem));padding:.9rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:.8rem;background:var(--md-default-bg-color);box-shadow:0 .4rem 1.4rem rgba(0,0,0,.16)}
@@ -342,3 +342,14 @@
 @media(prefers-reduced-motion:reduce){
  .topic-core-card,.topic-core-card-actions .practice-btn{transition:none;transform:none}
 }
+
+
+/* Topic right-hand TOC: keep subitems quiet until the learner asks for them. */
+.md-sidebar--secondary .topic-toc-collapsible{position:relative}
+.md-sidebar--secondary .topic-toc-collapsible>.md-nav__link{padding-right:1.75rem}
+.md-sidebar--secondary .topic-toc-toggle{position:absolute;right:.05rem;top:.18rem;z-index:2;display:grid;place-items:center;width:1.35rem;height:1.35rem;padding:0;border:1px solid var(--md-default-fg-color--lighter);border-radius:.35rem;background:var(--md-default-bg-color);color:var(--md-default-fg-color);font:inherit;font-size:.78rem;font-weight:800;line-height:1;cursor:pointer}
+.md-sidebar--secondary .topic-toc-toggle:hover,.md-sidebar--secondary .topic-toc-toggle:focus-visible{border-color:var(--md-primary-fg-color);color:var(--md-primary-fg-color);outline:none}
+.md-sidebar--secondary .topic-toc-children[hidden]{display:none!important}
+.md-sidebar--secondary .topic-toc-children{margin-left:.15rem}
+.md-sidebar--secondary .topic-toc-collapsible>.topic-toc-children{padding-top:.12rem}
+@media(max-width:44rem){.topic-learning-card-body{font-size:.84rem}}

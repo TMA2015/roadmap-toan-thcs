@@ -311,19 +311,16 @@ $$
 
 Không có quy định bắt buộc phải dùng một phương pháp cố định. Mục tiêu là **đúng, rõ và gọn**.
 
-#### Máy tính cầm tay dùng để hỗ trợ, không thay thế phương pháp
+??? info "🧮 Máy tính cầm tay – mở khi cần"
+    Tùy quy định của trường, giáo viên và bài kiểm tra, máy tính có thể được cho phép nhưng **nên hạn chế khi đang học phương pháp**, để em thật sự nắm được cách thế và cộng đại số.
 
-SGK/SBT Kết nối tri thức có sử dụng máy tính cầm tay như một công cụ hỗ trợ giải hoặc kiểm tra hệ.
+    Khi được phép sử dụng, nên dùng máy chủ yếu để **kiểm tra kết quả**:
 
-Có thể dùng theo nguyên tắc:
+    1. nhập đúng các hệ số;
+    2. đọc nghiệm;
+    3. thay nghiệm vào hệ ban đầu để kiểm tra.
 
-1. nhập đúng các hệ số của hai phương trình theo hướng dẫn của loại máy đang dùng;
-2. đọc nghiệm máy trả về;
-3. thay nghiệm vào hệ ban đầu để kiểm tra;
-4. nếu đang học phương pháp thế/cộng đại số, vẫn phải hiểu và trình bày được cách giải bằng tay.
-
-!!! warning "Đừng để máy tính che mất lỗi mô hình"
-    Máy tính chỉ giải **hệ em đã nhập**. Nếu em lập sai phương trình từ bài toán thực tế thì máy vẫn có thể cho ra một cặp số hợp lệ đối với hệ sai đó.
+    Máy tính chỉ giải **hệ em đã nhập**. Nếu em lập sai hệ từ bài toán thực tế thì máy vẫn có thể cho ra đáp án của chính hệ sai đó.
 
 ---
 
