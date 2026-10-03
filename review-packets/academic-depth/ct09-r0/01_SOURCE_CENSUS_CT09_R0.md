@@ -66,8 +66,8 @@ The following are official Hanoi Department of Education publication pages with 
 - Publication date: 2026-06-02
 - Provenance:
   https://hanoi.edu.vn/phong-quan-ly-thi-va-kdcl/ha-noi-cong-bo-de-thi-va-dap-an-cac-mon-toan-ngu-van-ngoai-ngu-khong-chuyen-ky/ctfull/552/16984
-- Status: CANDIDATE_ACCEPTED_FOR_CORPUS
-- Extraction: NOT_STARTED
+- Status: **EXTRACTED_FOR_CT09**
+- Extraction: `08_S3_HANOI_ENTRANCE_CT09_EXTRACTION_R0.md`
 
 ### S3-HN10-2025
 - Exam year: entrance for school year 2025–2026
@@ -75,8 +75,8 @@ The following are official Hanoi Department of Education publication pages with 
 - Publication date: 2025-06-11
 - Provenance:
   https://hanoi.edu.vn/phong-quan-ly-thi-va-kdcl/ha-noi-cong-bo-de-thi-va-dap-an-cac-mon-toan-ngu-van-ngoai-ngu-khong-chuyen-ky/ctfull/552/16329
-- Status: CANDIDATE_ACCEPTED_FOR_CORPUS
-- Extraction: NOT_STARTED
+- Status: **EXTRACTED_FOR_CT09**
+- Extraction: `08_S3_HANOI_ENTRANCE_CT09_EXTRACTION_R0.md`
 
 ### S3-HN10-2024
 - Exam year: entrance for school year 2024–2025
@@ -84,8 +84,8 @@ The following are official Hanoi Department of Education publication pages with 
 - Publication date: 2024-06-13
 - Provenance:
   https://www.hanoi.edu.vn/phong-quan-ly-thi-va-kdcl/ha-noi-cong-bo-de-thi-va-dap-an-cac-mon-toan-ngu-van-ngoai-ngu-khong-chuyen-ky/ctfull/552/15448
-- Status: CANDIDATE_ACCEPTED_FOR_CORPUS
-- Extraction: NOT_STARTED
+- Status: **EXTRACTED_FOR_CT09**
+- Extraction: `08_S3_HANOI_ENTRANCE_CT09_EXTRACTION_R0.md`
 
 ### S3-HN10-2023
 - Exam year: entrance for school year 2023–2024
@@ -93,8 +93,8 @@ The following are official Hanoi Department of Education publication pages with 
 - Publication date: 2023-06-15
 - Provenance:
   https://www.hanoi.edu.vn/phong-quan-ly-thi-va-kdcl/ha-noi-de-thi-va-dap-an-cac-mon-toan-ngu-van-ngoai-ngu-khong-chuyen-ky-thi-tuye/ctfull/552/14551
-- Status: CANDIDATE_ACCEPTED_FOR_CORPUS
-- Extraction: NOT_STARTED
+- Status: **EXTRACTED_FOR_CT09**
+- Extraction: `08_S3_HANOI_ENTRANCE_CT09_EXTRACTION_R0.md`
 
 ## S3 — Hanoi school semester/final exams
 
@@ -157,20 +157,22 @@ Use only if the owner later wants a separate Specialized-Challenge audit.
 Do not start final CT09 frequency/coverage claims until:
 - S1 SGK + SBT extraction is complete — **DONE**;
 - at least one S2 pedagogical/reference source is registered — **DONE**;
-- S3 Hanoi entrance corpus is extracted;
+- S3 Hanoi entrance corpus is extracted — **DONE**;
 - selected school-test S3 sample is documented, or explicitly deferred.
 
 S1 source sufficiency for CT09 is now adequate for the next comparison stage.
 
-## Next extraction output
+## Next normalization output
 
-For each accepted source, extract only:
-- distinct CT09 problem types;
-- structural variants;
-- canonical/classical candidates;
-- common errors;
-- direct/multistep/synthesis role;
-- source location;
-- evidence for curriculum/frequency/pedagogical claims.
+S1 + S2/S4 + Hanoi entrance S3 are now available for CT09.
 
-Do not copy the full source into the site.
+Next:
+- normalize distinct CT09 problem types;
+- keep current-program frequency separate from historical continuity;
+- score pedagogical value independently of frequency;
+- build the CT09 Coverage/Frequency Matrix;
+- then audit current site D1–D6 before any learner-facing edit.
+
+The selected school-semester S3 sample may be added after this entrance-only R0 matrix; it must not be silently mixed into the current entrance counts.
+
+Do not copy full source exercises into the site.
