@@ -154,6 +154,8 @@ const uiCss=read("docs/assets/stylesheets/written-exercise-library-v1.css");
 ok(ui.includes("written-help-actions")&&ui.includes("dataset.helpTarget")&&ui.includes("written-help-panel"),"compact support UI wired");
 ok(ui.includes("hint_steps")&&ui.includes("Gợi ý 1/3")&&ui.includes("Ôn bù kiến thức"),"CT09 P1-B progressive help wired");
 ok(ui.includes("learner_label"),"learner-facing anchor labels wired");
+ok(!ui.includes("${x.estimated_minutes} phút"),"estimated minutes hidden from learner-facing written cards");
+ok(data.exercises.every(x=>Number.isFinite(Number(x.estimated_minutes))&&Number(x.estimated_minutes)>0),"estimated minutes retained as internal scheduling metadata");
 ok(ui.includes("initTopicLibraryLink")&&ui.includes('luyen-tap/?topic='),"topic lesson deep link with topic auto-filter wired");
 ok(uiCss.includes("grid-template-columns:repeat(3,minmax(0,1fr))"),"help actions use one three-column row");
 ok(uiCss.includes(".written-topic-library-link"),"topic-to-library CTA styled");
