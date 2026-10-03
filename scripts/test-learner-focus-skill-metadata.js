@@ -13,7 +13,7 @@ assert.ok(js.includes('const wrap=document.createElement("details");wrap.classNa
 assert.ok(js.includes('summary.textContent=asTeaching?"Xem kỹ năng của bài":"Xem kỹ năng đang luyện"'));
 assert.ok(js.includes('const skill=document.createElement("details");skill.className="topic-micro-skill-details"'));
 assert.ok(js.includes('skillSummary.textContent="Xem kỹ năng đang luyện"'));
-assert.ok(js.includes('skill.dataset.primarySkill=assessed||"unmapped"'));
+assert.ok(js.includes('skillText.dataset.primarySkill=assessed||"unmapped"'));
 assert.ok(js.includes("recordAnswer?.("));
 
 // The old always-visible labels must no longer be emitted.
