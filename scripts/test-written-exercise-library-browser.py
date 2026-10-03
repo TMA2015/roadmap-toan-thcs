@@ -82,6 +82,14 @@ with sync_playwright() as p:
         # CT09 P1-B deep anchors: progressive help and friendly learner labels.
         topic.select_option("CT09")
         assert cards.count() == 8, (device, "CT09 has two existing items plus six P1-B anchors")
+
+        legacy_base = page.locator(".written-exercise-card#wx09-sys-001")
+        legacy_apply = page.locator(".written-exercise-card#wx09-sys-002")
+        legacy_base_meta = legacy_base.locator(".written-exercise-meta").inner_text()
+        legacy_apply_meta = legacy_apply.locator(".written-exercise-meta").inner_text()
+        assert "Nền tảng" in legacy_base_meta and "KNTT-Core" not in legacy_base_meta and "CORE_BASE" not in legacy_base_meta, (device, "WX09-001 friendly learner label")
+        assert "Củng cố" in legacy_apply_meta and "KNTT-Core" not in legacy_apply_meta and "CORE_APPLY" not in legacy_apply_meta, (device, "WX09-002 friendly learner label")
+
         anchor = page.locator(".written-exercise-card#wx09-sys-003")
         assert anchor.count() == 1, (device, "CT09 first deep anchor")
         meta_text = anchor.locator(".written-exercise-meta").inner_text()
