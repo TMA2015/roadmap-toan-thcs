@@ -1,5 +1,5 @@
 {
-  "version": "1.0.166",
+  "version": "1.0.167",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "CT09 P1-A framing/theory slice is implemented on a dedicated branch and awaiting exact-head CI. Scope is intentionally small: parameter boundary, source-ground entrance framing, deep graph/modeling examples, calculator support. No Practice IDs/history, readiness scoring, Mastery/Readiness or other topics are changed. Next gate: merge accepted audit PR #289, run clean P1-A exact-head CI, controlled production deploy, then owner QA before P1-B.",
+    "next_priority": "Owner QA identified learner-focus issues in CT09 P1-A. Fixes are implemented on a dedicated QA branch: repaired MathJax delimiters, simplified student-facing copy, moved corpus/source-management detail back to the system layer, and made skill metadata optional/collapsed by default during Core practice while preserving evidence tracking. Next gate: exact-head CI, deploy, then owner visual QA before P1-B.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -2131,7 +2131,7 @@
       ]
     },
     "academic_depth_phase": {
-      "status": "CT09_P1A_IMPLEMENTED_PRE_CI",
+      "status": "CT09_P1A_OWNER_QA_FIXES_IMPLEMENTED_PRE_CI",
       "branch": "academic-depth-framework-r1-20261003",
       "source_framework": "docs/roadmap/academic-source-framework-v1.md",
       "audit_standard": "docs/roadmap/academic-depth-audit-standard-v1.md",
@@ -2199,7 +2199,7 @@
       "ct09_gap_delta_authorization": "CT09_PILOT_ONLY",
       "ct09_gap_delta_review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md",
       "ct09_p1a": {
-        "status": "IMPLEMENTED_PRE_CI",
+        "status": "OWNER_QA_FIXES_IMPLEMENTED_PRE_CI",
         "scope": [
           "parameter-lite Core-Support vs Entrance10 split",
           "remove unsupported entrance-exam star-frequency labels",
@@ -2211,7 +2211,25 @@
         "learner_history_mutation": false,
         "mastery_readiness_change": false,
         "backfill_regrade": false,
-        "owner_qa_required": true
+        "owner_qa_required": true,
+        "owner_qa_findings": [
+          "display math in new worked examples rendered as raw dollar/LaTeX text",
+          "learner-facing CT09 copy exposed too much source-management and product terminology",
+          "Core practice skill overview was too prominent during learning"
+        ],
+        "owner_qa_fixes": [
+          "repair display-math delimiters",
+          "move corpus counts/years and internal layer terminology out of learner-facing CT09 copy",
+          "simplify learner practice/self-check wording",
+          "make skill overview and per-question skill metadata optional and collapsed by default across Core workspaces"
+        ]
+      },
+      "learner_focus_rule": {
+        "academic_content_first": true,
+        "internal_evidence_metadata_background": true,
+        "skill_metadata_default_collapsed": true,
+        "source_frequency_counts_not_default_learner_copy": true,
+        "management_terms_avoid_on_learner_surface": true
       }
     }
   },
