@@ -20,49 +20,18 @@
   };
 
   const makeHelpPanel=(card,x)=>{
-    const wrap=el("div","written-help");
+    const deep=Array.isArray(x.hint_steps)&&x.hint_steps.length>0;
+    const wrap=el("div",deep?"written-help is-deep-anchor":"written-help");
     const actions=el("div","written-help-actions");
     actions.setAttribute("role","group");
     actions.setAttribute("aria-label","Hỗ trợ cho "+x.exercise_id);
     const panels=el("div","written-help-panels");
 
-    const defs=[
-      ["solution","Hướng dẫn",()=>{
-        const body=el("div","written-disclosure-body");
-        x.solution_steps.forEach((s,i)=>{
-          const step=el("section","written-solution-step");
-          step.appendChild(el("h3","",`Bước ${i+1} · ${s.title}`));
-          const rich=el("div","written-rich");renderRich(rich,s.content_markdown);step.appendChild(rich);body.appendChild(step);
-        });
-        return body;
-      }],
-      ["rubric",`Rubric · ${x.rubric_total}đ`,()=>{
-        const body=el("div","written-disclosure-body");
-        const table=document.createElement("table");table.className="written-rubric-table";
-        const thead=document.createElement("thead"),hr=document.createElement("tr");
-        ["Tiêu chí","Điểm"].forEach(t=>hr.appendChild(el("th","",t)));thead.appendChild(hr);
-        const tbody=document.createElement("tbody");
-        x.rubric.forEach(r=>{
-          const tr=document.createElement("tr"),td=document.createElement("td");
-          renderRich(td,r.criterion);tr.append(td,el("td","",String(r.points)));tbody.appendChild(tr);
-        });
-        table.append(thead,tbody);body.appendChild(table);return body;
-      }],
-      ["mistakes","Lỗi thường gặp",()=>{
-        const body=el("div","written-disclosure-body written-mistakes-body");
-        const ul=document.createElement("ul");
-        x.common_mistakes.forEach(m=>{const li=document.createElement("li");renderRich(li,m);ul.appendChild(li);});
-        body.appendChild(ul);return body;
-      }]
-    ];
-
-    defs.forEach(([key,label,build])=>{
+    const addDisclosure=(key,label,build)=>{
       const id=`${x.exercise_id.toLowerCase()}-${key}`;
       const button=el("button","written-help-action",label);
-      button.type="button";
-      button.dataset.helpTarget=key;
-      button.setAttribute("aria-expanded","false");
-      button.setAttribute("aria-controls",id);
+      button.type="button";button.dataset.helpTarget=key;
+      button.setAttribute("aria-expanded","false");button.setAttribute("aria-controls",id);
       const panel=el("section","written-help-panel");
       panel.id=id;panel.dataset.helpPanel=key;panel.hidden=true;panel.appendChild(build());
       button.addEventListener("click",()=>{
@@ -73,7 +42,77 @@
         if(opening)typeset(panel);
       });
       actions.appendChild(button);panels.appendChild(panel);
-    });
+      return {button,panel};
+    };
+
+    if(deep){
+      const id=`${x.exercise_id.toLowerCase()}-hints`;
+      const hintButton=el("button","written-help-action","Gợi ý 1/3");
+      hintButton.type="button";hintButton.dataset.helpTarget="hints";
+      hintButton.setAttribute("aria-expanded","false");hintButton.setAttribute("aria-controls",id);
+      const hintPanel=el("section","written-help-panel");
+      hintPanel.id=id;hintPanel.dataset.helpPanel="hints";hintPanel.hidden=true;
+      const hintBody=el("div","written-disclosure-body written-hints-body");hintPanel.appendChild(hintBody);
+      let revealed=0;
+      const revealNext=()=>{
+        if(revealed<x.hint_steps.length){
+          const sec=el("section","written-hint-step");
+          sec.appendChild(el("h3","",`Gợi ý ${revealed+1}`));
+          const rich=el("div","written-rich");renderRich(rich,x.hint_steps[revealed]);sec.appendChild(rich);hintBody.appendChild(sec);
+          revealed+=1;typeset(sec);
+        }
+        hintButton.textContent=revealed<x.hint_steps.length?`Gợi ý tiếp ${revealed+1}/${x.hint_steps.length}`:`Đã mở ${x.hint_steps.length}/${x.hint_steps.length} gợi ý`;
+      };
+      hintButton.addEventListener("click",()=>{
+        if(hintPanel.hidden){hintPanel.hidden=false;hintButton.setAttribute("aria-expanded","true");hintButton.classList.add("is-active");if(revealed===0)revealNext();return;}
+        if(revealed<x.hint_steps.length){revealNext();return;}
+        hintPanel.hidden=true;hintButton.setAttribute("aria-expanded","false");hintButton.classList.remove("is-active");
+      });
+      actions.appendChild(hintButton);panels.appendChild(hintPanel);
+
+      addDisclosure("solution","Lời giải",()=>{
+        const body=el("div","written-disclosure-body");
+        const rich=el("div","written-rich");renderRich(rich,x.full_solution_markdown||"");body.appendChild(rich);
+        if(x.method_rationale_markdown){
+          const method=el("section","written-anchor-method");method.appendChild(el("h3","","Vì sao chọn cách này"));
+          const methodRich=el("div","written-rich");renderRich(methodRich,x.method_rationale_markdown);method.appendChild(methodRich);body.appendChild(method);
+        }
+        return body;
+      });
+      addDisclosure("rubric",`Tự chấm · ${x.rubric_total}đ`,()=>{
+        const body=el("div","written-disclosure-body");
+        const table=document.createElement("table");table.className="written-rubric-table";
+        const thead=document.createElement("thead"),hr=document.createElement("tr");["Tiêu chí","Điểm"].forEach(t=>hr.appendChild(el("th","",t)));thead.appendChild(hr);
+        const tbody=document.createElement("tbody");
+        x.rubric.forEach(item=>{const tr=document.createElement("tr"),td=document.createElement("td");renderRich(td,item.criterion);tr.append(td,el("td","",String(item.points)));tbody.appendChild(tr);});
+        table.append(thead,tbody);body.appendChild(table);return body;
+      });
+      addDisclosure("mistakes","Lỗi thường gặp",()=>{
+        const body=el("div","written-disclosure-body written-mistakes-body"),ul=document.createElement("ul");
+        x.common_mistakes.forEach(m=>{const li=document.createElement("li");renderRich(li,m);ul.appendChild(li);});body.appendChild(ul);return body;
+      });
+      addDisclosure("remediation","Ôn bù kiến thức",()=>{
+        const body=el("div","written-disclosure-body"),rich=el("div","written-rich");renderRich(rich,x.remediation_markdown||"");body.appendChild(rich);return body;
+      });
+    }else{
+      addDisclosure("solution","Hướng dẫn",()=>{
+        const body=el("div","written-disclosure-body");
+        x.solution_steps.forEach((s,i)=>{const step=el("section","written-solution-step");step.appendChild(el("h3","",`Bước ${i+1} · ${s.title}`));const rich=el("div","written-rich");renderRich(rich,s.content_markdown);step.appendChild(rich);body.appendChild(step);});
+        return body;
+      });
+      addDisclosure("rubric",`Rubric · ${x.rubric_total}đ`,()=>{
+        const body=el("div","written-disclosure-body");
+        const table=document.createElement("table");table.className="written-rubric-table";
+        const thead=document.createElement("thead"),hr=document.createElement("tr");["Tiêu chí","Điểm"].forEach(t=>hr.appendChild(el("th","",t)));thead.appendChild(hr);
+        const tbody=document.createElement("tbody");
+        x.rubric.forEach(item=>{const tr=document.createElement("tr"),td=document.createElement("td");renderRich(td,item.criterion);tr.append(td,el("td","",String(item.points)));tbody.appendChild(tr);});
+        table.append(thead,tbody);body.appendChild(table);return body;
+      });
+      addDisclosure("mistakes","Lỗi thường gặp",()=>{
+        const body=el("div","written-disclosure-body written-mistakes-body"),ul=document.createElement("ul");
+        x.common_mistakes.forEach(m=>{const li=document.createElement("li");renderRich(li,m);ul.appendChild(li);});body.appendChild(ul);return body;
+      });
+    }
     wrap.append(actions,panels);return wrap;
   };
 
@@ -108,7 +147,7 @@
     [["all","Tất cả dạng bài"],...[...typeMap.entries()]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;typeSelect.appendChild(o);});
 
     const levelSelect=document.createElement("select");levelSelect.className="written-library-select";levelSelect.setAttribute("aria-label","Lọc theo mức");
-    [["all","Tất cả mức"],["CORE_BASE","Core Base"],["CORE_APPLY","Core Apply"]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;levelSelect.appendChild(o);});
+    [["all","Tất cả mức"],["CORE_BASE","Nền tảng"],["CORE_APPLY","Củng cố"],["ENTRANCE10","Ôn thi vào 10"]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;levelSelect.appendChild(o);});
 
     if([...topicSelect.options].some(o=>o.value===topic))topicSelect.value=topic;else topic="all";
     if([...typeSelect.options].some(o=>o.value===type))typeSelect.value=type;else type="all";
@@ -133,7 +172,7 @@
         const card=el("article","written-exercise-card");card.id=x.exercise_id.toLowerCase();
         const top=el("div","written-exercise-head");
         const meta=el("div","written-exercise-meta");
-        [x.exercise_id,x.topic_id,x.learning_layer,x.level,`${x.estimated_minutes} phút`].forEach(t=>meta.appendChild(el("span","written-chip",t)));
+        const metaValues=x.learner_label?[x.exercise_id,x.topic_id,x.learner_label,`${x.estimated_minutes} phút`]:[x.exercise_id,x.topic_id,x.learning_layer,x.level,`${x.estimated_minutes} phút`];\n        metaValues.forEach(t=>meta.appendChild(el("span","written-chip",t)));
         top.append(meta,el("h2","",x.title),el("p","written-exercise-type",x.problem_type_title));
 
         const prompt=el("div","written-exercise-problem");
