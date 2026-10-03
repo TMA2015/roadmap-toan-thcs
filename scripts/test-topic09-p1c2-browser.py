@@ -24,9 +24,10 @@ with sync_playwright() as p:
     root = page.locator("[data-practice-bank-v2]")
     root.wait_for(state="attached", timeout=15000)
     page.wait_for_function(
-        """document.querySelector('[data-practice-bank-v2]')?.dataset.practiceReadyV2 === 'true'""",
+        """document.querySelector('[data-practice-bank-v2]')?.dataset.practiceQuestionCount === '129'""",
         timeout=15000,
     )
+    assert root.get_attribute("data-practice-ready-v2") == "true"
     assert root.get_attribute("data-practice-question-count") == "129"
 
     page.evaluate("(k) => localStorage.removeItem(k)", STORE_KEY)
@@ -63,6 +64,8 @@ with sync_playwright() as p:
     assert result["second"]["independent_evidence"] is False
     assert result["second"]["independent_reason"] == "repeat_question"
     assert result["debug"]["policy_error"] is None
+    assert result["debug"]["ct09_p1c2_extension_error"] is None
+    assert result["debug"]["ct09_p1c2_extension"]["rows"] == 9
     assert result["debug"]["store"]["recent_events"][-1]["source_topic_policy_blob"] == EXT_BLOB
     assert result["debug"]["store"]["recent_events"][-1]["question_id"] == "SYS09V1_121"
 
