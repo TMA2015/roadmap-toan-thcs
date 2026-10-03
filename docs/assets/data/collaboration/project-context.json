@@ -1,5 +1,5 @@
 {
-  "version": "1.0.163",
+  "version": "1.0.165",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "CT09 source normalization R0 is complete. S1 KNTT, Vũ Hữu Bình pedagogical/advanced reference and verified Hà Nội entrance evidence have been normalized into a 22-family problem-type matrix with current-program frequency (2025–2026) kept separate from historical continuity (2023–2024). Current sample shows two-unknown system modeling in 2/2 current exams and no standalone direct-system item in those two papers; direct solving remains Core by S1. Next: audit the current CT09 site against D1–D6 and this problem-type matrix, identify exact content gaps/excess, then prepare a small pilot patch only after audit.",
+    "next_priority": "CT09 Gap Audit + Content Delta R1 passed independent review 10/10 with zero revisions and is authorized for CT09 pilot implementation only. Implement in slices: P1-A framing/theory first, then owner QA; P1-B written anchors/hint ladders second; P1-C interactive anti-clone rebalance third. No mass edit, no Mastery/Readiness expansion, no regrade/backfill.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -2131,7 +2131,7 @@
       ]
     },
     "academic_depth_phase": {
-      "status": "CT09_SOURCE_NORMALIZATION_R0_COMPLETE_SITE_GAP_AUDIT_NEXT",
+      "status": "CT09_GAP_DELTA_R1_ACCEPTED_IMPLEMENTATION_AUTHORIZED",
       "branch": "academic-depth-framework-r1-20261003",
       "source_framework": "docs/roadmap/academic-source-framework-v1.md",
       "audit_standard": "docs/roadmap/academic-depth-audit-standard-v1.md",
@@ -2181,7 +2181,23 @@
         "problem_type_matrix": "review-packets/academic-depth/ct09-r0/09_CT09_PROBLEM_TYPE_CATALOGUE_COVERAGE_MATRIX_R0.md",
         "current_program_entrance_population": "HANOI_2025_2026_N2",
         "historical_entrance_population": "HANOI_2023_2024_N2_NOT_POOLED"
-      }
+      },
+      "ct09_gap_audit": "review-packets/academic-depth/ct09-r1/10_CT09_CURRENT_SITE_D1_D6_GAP_AUDIT_R1.md",
+      "ct09_content_delta_plan": "review-packets/academic-depth/ct09-r1/11_CT09_CONTENT_DELTA_PLAN_R1.md",
+      "ct09_notebooklm_review_source": "review-packets/academic-depth/ct09-r1/12_NOTEBOOKLM_CT09_GAP_DELTA_R1.md",
+      "ct09_self_learning_ready_v1": false,
+      "ct09_p0_blockers": 0,
+      "ct09_dimension_verdicts": {
+        "D1": "REVISE_P1",
+        "D2": "REVISE_P1",
+        "D3": "REVISE_P1",
+        "D4": "REVISE_P1",
+        "D5": "REVISE_P1",
+        "D6": "REVISE_P1"
+      },
+      "ct09_notebooklm_gap_delta_review": "10/10 PASS",
+      "ct09_gap_delta_authorization": "CT09_PILOT_ONLY",
+      "ct09_gap_delta_review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md"
     }
   },
   "handoff_required_fields": [
