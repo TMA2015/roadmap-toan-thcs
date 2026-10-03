@@ -1,5 +1,5 @@
 {
-  "version": "1.0.159",
+  "version": "1.0.160",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1062,10 +1062,10 @@
       "id": "MATH-ACADEMIC-DEPTH-CT09-001",
       "title": "Academic Depth CT09 pilot — source-backed self-learning audit",
       "routing": "CHATGPT_SOURCE_ANALYSIS+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
-      "status": "OPEN",
-      "context_version": "1.0.159",
-      "review_verdict": "AUTHORIZED_TO_START_SOURCE_INTAKE",
-      "review_notes": "Framework R1 PASS authorizes CT09 only. Build S1/S2/S3 source corpus, normalize problem types, create coverage/frequency matrix, audit D1-D6, then create Content Delta Plan. No content implementation until source-backed audit is reviewed."
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.160",
+      "review_verdict": "SOURCE_INTAKE_ACTIVE",
+      "review_notes": "Official Hà Nội grade-10 entrance exams 2023–2026 are registered as primary S3. Loigiaihay Grade 9 KNTT exam index is accessible and registered as a secondary discovery/reference source. Generic numbered sets are S2 exam-style reference only; named-school items become S3 candidates only after provenance verification. A QC sample found an internally contradictory explanation on a generic page, so Loigiaihay solution text is not curriculum authority. Await S1 KNTT textbook/workbook and at least one trusted S2 source before final problem-type/frequency audit."
     }
   ]
 }
