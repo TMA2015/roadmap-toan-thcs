@@ -30,13 +30,31 @@ This file registers candidate sources for the CT09 pilot. It does not yet classi
 
 ## S2 — Pedagogical/reference sources
 
-Status: AWAITING_OWNER_SELECTION.
+Status: **OWNER_REFERENCE_INTAKE_STARTED / ONE HIGH-VALUE REFERENCE EXTRACTED**.
 
-Target:
-- 1–3 trusted reference/advanced-practice sources;
-- prefer sources explaining methods/problem types, not only answer dumps.
+### REF-VHB-NCPT9-T2 — Vũ Hữu Bình, Nâng cao và phát triển Toán 9 tập hai
+- Source role: **S2/S4 HYBRID REFERENCE**
+- Publisher shown: NXB Giáo dục Việt Nam
+- Owner-upload SHA-256: `043b5dc6f93429f811b8949b618b56b2af30cfada508d5256e8a9f761f520893`
+- CT09 chapter: Chương III — Hệ hai phương trình bậc nhất hai ẩn; §12–§14.
+- Status: **REGISTERED_AND_EXTRACTED**
+- Use: pedagogy, classical problem structures, method depth, Core/Entrance10/Challenge boundary refinement.
+- Not allowed: current KNTT authority or frequency evidence.
+- Extraction: `07_S2_S4_VU_HUU_BINH_CT09_EXTRACTION_R0.md`
 
-Each source will be registered separately before extraction.
+### REF-VHB-NCPT9-T1
+- Same series, tập một.
+- Owner-upload SHA-256: `21bf8ae95f1272d507bd134a2d99fcb65db6f8fb8861f1c99cef78a7e3faefd8`
+- Retained for later Grade 9 audits; no direct CT09 extraction needed.
+
+### REF-GSTNV-BTNC9
+- Title shown: Bài Tập Toán Nâng Cao Lớp 9.
+- Visible source/distributor: Gia sư Tài Năng Việt / giasudaykem.com.vn.
+- Owner-upload SHA-256: `bf861f427ee8ae2f4535fb75c7361a4830910bf43782479d6c39b54002975aa1`
+- Classification: **S5 IDEA/DRAFT POOL**, not S2 authority.
+- Use: idea discovery/cross-check only; cannot define Core or frequency.
+
+Registry: `06_REFERENCE_SOURCE_REGISTRY_R0.md`.
 
 ## S3 — Authentic assessment: Hanoi grade-10 entrance exams
 
@@ -138,7 +156,7 @@ Use only if the owner later wants a separate Specialized-Challenge audit.
 
 Do not start final CT09 frequency/coverage claims until:
 - S1 SGK + SBT extraction is complete — **DONE**;
-- at least one S2 pedagogical source is registered;
+- at least one S2 pedagogical/reference source is registered — **DONE**;
 - S3 Hanoi entrance corpus is extracted;
 - selected school-test S3 sample is documented, or explicitly deferred.
 
