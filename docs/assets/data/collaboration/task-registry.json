@@ -1,5 +1,5 @@
 {
-  "version": "1.0.156",
+  "version": "1.0.157",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1040,10 +1040,13 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I6B-001",
       "title": "Skill Taxonomy v2 I6B — broader learner-facing activation",
       "routing": "CHATGPT_PRODUCT_POLISH+GITHUB_QA+OWNER_APPROVAL",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.156",
-      "review_verdict": "IMPLEMENTED_PRE_CI",
-      "review_notes": "Public learner route /ban-do-ky-nang/ and main navigation entry are implemented. Internal controlled QA route is hidden from navigation but retained. Learner-visible I6/Controlled/QA jargon is removed from the public surface; action links are made site-root-safe from both public and internal routes. Evidence semantics are unchanged and Mastery/Readiness/backfill remain OFF."
+      "status": "DONE",
+      "context_version": "1.0.157",
+      "review_verdict": "OWNER_QA_PASS_PUBLIC_ACTIVATION_CLOSED",
+      "review_notes": "Public /ban-do-ky-nang/ release passed exact-head CI, deploy and owner visual QA. Screenshots confirm learner-friendly naming, coherent 42/18/28/103 summary counts, topic/layer/evidence-only filters, sparse N<=2 without raw percentage, support-layer rendering, learner-facing evidence explanations and separate legacy Practice. No visible font/layout/card overflow problem. Mastery, Readiness, backfill/regrade and automatic written scoring remain OFF.",
+      "merge_sha": "95b86cd6015dc4437686d60cc6d15ca879565213",
+      "gh_pages_sha": "ed2275f5a711208b18be0c14208f9befba7f689b",
+      "owner_qa_receipt": "review-packets/skill-taxonomy/phase-i6b/01_I6B_OWNER_QA_PASS.md"
     }
   ]
 }
