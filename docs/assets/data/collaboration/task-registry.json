@@ -1,5 +1,5 @@
 {
-  "version": "1.0.173",
+  "version": "1.0.174",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1063,9 +1063,9 @@
       "title": "Academic Depth CT09 pilot — source-backed self-learning audit",
       "routing": "CHATGPT_SOURCE_ANALYSIS+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.173",
+      "context_version": "1.0.174",
       "review_verdict": "NOTEBOOKLM_10_OF_10_PASS_CT09_IMPLEMENTATION_AUTHORIZED",
-      "review_notes": "CT09 pilot remains IN_PROGRESS. P1-A closed owner QA PASS; P1-B closed owner QA PASS; P1-C1 anti-clone selector is live with exact-head CI/deploy PASS and owner production QA pending; P1-C2 nine-item targeted interactive packet is review-only and awaiting NotebookLM independent review. No Mastery/Readiness expansion, backfill/regrade or mass topic edit.",
+      "review_notes": "CT09 pilot IN_PROGRESS. P1-A and P1-B closed Owner QA PASS. P1-C1 anti-clone selector is live with CI/deploy PASS and owner production QA pending. P1-C2 nine-item targeted interactive packet received NotebookLM PASS with 0 revisions and is cleared for integration only.",
       "review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md"
     },
     {
@@ -1112,10 +1112,11 @@
       "title": "CT09 Academic Depth P1-C2 — targeted interactive coverage",
       "routing": "NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_PRODUCTION_QA",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.173",
-      "review_verdict": "REVIEW_PACKET_READY_NO_LEARNER_RELEASE",
-      "review_notes": "Review-only R1 packet proposes exactly 9 append-only candidates SYS09V1_121..129: PT01 x1, PT03 x1, PT07 x2, PT09 x2, PT13 x1, PT14 x1, PT16 x1. PT12 gets no new item because existing 10 main-bank variants plus P1-B written anchor are sufficient. No learner-facing bank edit is authorized before NotebookLM PASS.",
-      "review_packet": "review-packets/academic-depth/ct09-p1c2/01_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_CANDIDATES_R1.md"
+      "context_version": "1.0.174",
+      "review_verdict": "NOTEBOOKLM_PASS_CLEARED_FOR_INTEGRATION_ONLY",
+      "review_notes": "NotebookLM independently reviewed SYS09V1_121..129 and C1-C10: all PASS, 0 revisions. Authorization CLEARED_FOR_CT09_P1C2_INTEGRATION_ONLY. Integration may proceed on a separate implementation branch; no Mastery/Readiness, backfill/regrade, attempt migration or mass-edit authorization.",
+      "review_packet": "review-packets/academic-depth/ct09-p1c2/01_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_CANDIDATES_R1.md",
+      "review_receipt": "review-packets/academic-depth/ct09-p1c2/02_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_R1_PASS_RECEIPT.md"
     }
   ]
 }
