@@ -95,8 +95,9 @@ def validate(page):
     unseen = root.locator('[data-family-id="RATIO-MODEL"]')
     assert unseen.count() == 1
     unseen_text = unseen.inner_text()
-    assert "Chưa có bằng chứng" in unseen_text
+    assert "Hiện chưa có bài luyện trực tiếp" in unseen_text
     assert "không có nghĩa là em yếu" in unseen_text
+    assert unseen.get_attribute("data-evidence-state") == "NO_DIRECT_EVIDENCE"
 
     # Learner mode hides technical family IDs from the card copy.
     assert "TRI-PERPBISECTOR" not in sparse_text
