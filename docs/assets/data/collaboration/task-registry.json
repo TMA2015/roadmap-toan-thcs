@@ -1,5 +1,5 @@
 {
-  "version": "1.0.178",
+  "version": "1.0.179",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1063,9 +1063,9 @@
       "title": "Academic Depth CT09 pilot — source-backed self-learning audit",
       "routing": "CHATGPT_SOURCE_ANALYSIS+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.178",
+      "context_version": "1.0.179",
       "review_verdict": "NOTEBOOKLM_10_OF_10_PASS_CT09_IMPLEMENTATION_AUTHORIZED",
-      "review_notes": "CT09 pilot IN_PROGRESS pending next Academic Depth decision. P1-A, P1-B, P1-C1 and P1-C2 are all closed Owner QA PASS. P1-C delivered anti-clone session diversity plus nine targeted reviewed interactive additions without Mastery/Readiness expansion, backfill/regrade or historical migration.",
+      "review_notes": "CT09 pilot has completed and owner-QA closed P1-A/P1-B/P1-C1/P1-C2. Final Self-Learning Readiness closure audit is now review-only. It will reassess D1-D6, A1-A9, selective-hint policy, generic priority badge, and the non-blocking school-semester frequency evidence gap before any SELF_LEARNING_READY_V1 classification.",
       "review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md"
     },
     {
@@ -1120,6 +1120,16 @@
       "review_receipt": "review-packets/academic-depth/ct09-p1c2/02_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_R1_PASS_RECEIPT.md",
       "release_receipt": "review-packets/academic-depth/ct09-p1c2/03_CT09_P1C2_PRODUCTION_RELEASE.md",
       "owner_qa_receipt": "review-packets/academic-depth/ct09-p1c2/04_CT09_P1C2_OWNER_QA_PASS.md"
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-CT09-CLOSURE-001",
+      "title": "CT09 Academic Depth — Self-Learning Readiness closure audit",
+      "routing": "NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_DECISION",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.179",
+      "review_verdict": "REVIEW_PACKET_READY_NO_NEW_CONTENT_RELEASE",
+      "review_notes": "P1-A, P1-B, P1-C1 and P1-C2 are all closed Owner QA PASS. Closure audit now asks NotebookLM to reassess D1-D6 and Delta acceptance A1-A9 for SELF_LEARNING_READY_V1. Selective static hints are owner-approved: no 100% hint-coverage quota; deep written/modeling anchors must retain static progressive help. Generic learner-facing 'Mức ưu tiên: ⭐⭐⭐⭐⭐' badge is explicitly sent for independent keep/remove decision.",
+      "review_packet": "review-packets/academic-depth/ct09-closure/01_NOTEBOOKLM_CT09_SELF_LEARNING_READY_CLOSURE_R1.md"
     }
   ]
 }
