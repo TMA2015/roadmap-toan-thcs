@@ -1,5 +1,5 @@
 {
-  "version": "1.0.155",
+  "version": "1.0.156",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1040,10 +1040,10 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I6B-001",
       "title": "Skill Taxonomy v2 I6B — broader learner-facing activation",
       "routing": "CHATGPT_PRODUCT_POLISH+GITHUB_QA+OWNER_APPROVAL",
-      "status": "OPEN",
-      "context_version": "1.0.155",
-      "review_verdict": "AWAITING_OWNER_AUTHORIZATION",
-      "review_notes": "Controlled I6 release is owner-QA PASS. Before broad activation, remove internal QA/I6 terminology from learner-visible title/copy, use a learner-friendly route/navigation entry, preserve R2 sparse-evidence semantics, and keep Mastery/Readiness/backfill/regrade OFF."
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.156",
+      "review_verdict": "IMPLEMENTED_PRE_CI",
+      "review_notes": "Public learner route /ban-do-ky-nang/ and main navigation entry are implemented. Internal controlled QA route is hidden from navigation but retained. Learner-visible I6/Controlled/QA jargon is removed from the public surface; action links are made site-root-safe from both public and internal routes. Evidence semantics are unchanged and Mastery/Readiness/backfill remain OFF."
     }
   ]
 }
