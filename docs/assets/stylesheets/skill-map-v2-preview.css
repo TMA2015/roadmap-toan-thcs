@@ -42,3 +42,8 @@ details.skill-map-v2-layer>summary{cursor:pointer;list-style-position:outside}
 @media(max-width:850px){.skill-map-v2-totals{grid-template-columns:repeat(2,minmax(0,1fr))}.skill-map-v2-controls{grid-template-columns:1fr 1fr}.skill-map-v2-check{grid-column:1/-1}.skill-map-v2-cards{grid-template-columns:1fr}}
 @media(max-width:520px){.skill-map-v2-totals,.skill-map-v2-controls{grid-template-columns:1fr}.skill-map-v2-check{grid-column:auto}.skill-map-v2-card-header{display:block}.skill-map-v2-layer-badge{display:inline-block;margin-top:.35rem}.skill-map-v2-preview{font-size:.96rem}}
 @media(prefers-reduced-motion:reduce){.skill-map-v2-preview *{scroll-behavior:auto!important}}
+
+.skill-map-v2-status{display:inline-block;margin:.25rem 0 .15rem;padding:.22rem .5rem;border-radius:999px;font-size:.72rem;font-weight:700;line-height:1.35}
+.skill-map-v2-status.is-sparse{background:color-mix(in srgb,#b7791f 10%,transparent);border:1px solid color-mix(in srgb,#b7791f 28%,transparent)}
+.skill-map-v2-status.is-trend{background:color-mix(in srgb,var(--md-primary-fg-color) 9%,transparent);border:1px solid color-mix(in srgb,var(--md-primary-fg-color) 22%,transparent)}
+[data-skill-map-v2-controlled] .skill-map-v2-family-id{display:none}
