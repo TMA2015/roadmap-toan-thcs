@@ -125,8 +125,17 @@ for (const topic of topics) {
 
   const coreWritten = (practice.match(/^####\s+\d{2}-WR-\d+/gm) || []).length;
   if (coreWritten < 8) errors.push(`${topic.slug}: expected at least 8 Core written exercises`);
-  if (!/Entrance10/.test(practice)) errors.push(`${topic.slug}: missing Entrance10 section`);
-  if (!/Challenge/.test(practice)) errors.push(`${topic.slug}: missing Challenge section`);
+  if (topic.slug === "08-phuong-trinh-bat-phuong-trinh") {
+    // CT08 Academic Depth R1 reviewed a learner-facing layer correction:
+    // inequality modeling = KNTT Core application; multi-condition = Core-Support;
+    // parameter work remains Challenge/Thử thách. These labels are non-gating.
+    if (!/###\s+Ứng dụng/.test(practice)) errors.push(`${topic.slug}: missing reviewed Ứng dụng section`);
+    if (!/###\s+Củng cố/.test(practice)) errors.push(`${topic.slug}: missing reviewed Củng cố section`);
+    if (!/###\s+Thử thách/.test(practice)) errors.push(`${topic.slug}: missing reviewed Thử thách section`);
+  } else {
+    if (!/Entrance10/.test(practice)) errors.push(`${topic.slug}: missing Entrance10 section`);
+    if (!/Challenge/.test(practice)) errors.push(`${topic.slug}: missing Challenge section`);
+  }
   if (!/\?\?\?\s+example\s+"Xem lời giải"/.test(practice)) errors.push(`${topic.slug}: missing collapsed solutions`);
   if (!lesson.includes("(bai-tap.md)") || !lesson.includes("(tu-kiem-tra.md)")) errors.push(`${topic.slug}: lesson gateways missing`);
   if (!selfcheck.includes("data-readiness-check-v1")) errors.push(`${topic.slug}: readiness marker missing`);
