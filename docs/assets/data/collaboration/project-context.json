@@ -1,5 +1,5 @@
 {
-  "version": "1.0.164",
+  "version": "1.0.165",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "CT09 current-site Academic Depth audit is complete. D1-D6 all require P1 revision; no P0 correctness blocker was found. Main findings: 120-item bank collapses to ~21 structural templates, written modeling depth is too shallow, current entrance-star claims are unsupported, parameter-lite vs Entrance10 needs re-layering, and static remediation is insufficient. A small Content Delta Plan R1 plus a single NotebookLM review source are ready. Next gate: independent NotebookLM review before any learner-facing CT09 edit.",
+    "next_priority": "CT09 Gap Audit + Content Delta R1 passed independent review 10/10 with zero revisions and is authorized for CT09 pilot implementation only. Implement in slices: P1-A framing/theory first, then owner QA; P1-B written anchors/hint ladders second; P1-C interactive anti-clone rebalance third. No mass edit, no Mastery/Readiness expansion, no regrade/backfill.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -2131,7 +2131,7 @@
       ]
     },
     "academic_depth_phase": {
-      "status": "CT09_D1_D6_GAP_AUDIT_COMPLETE_NOTEBOOKLM_REVIEW_PENDING",
+      "status": "CT09_GAP_DELTA_R1_ACCEPTED_IMPLEMENTATION_AUTHORIZED",
       "branch": "academic-depth-framework-r1-20261003",
       "source_framework": "docs/roadmap/academic-source-framework-v1.md",
       "audit_standard": "docs/roadmap/academic-depth-audit-standard-v1.md",
@@ -2194,7 +2194,10 @@
         "D4": "REVISE_P1",
         "D5": "REVISE_P1",
         "D6": "REVISE_P1"
-      }
+      },
+      "ct09_notebooklm_gap_delta_review": "10/10 PASS",
+      "ct09_gap_delta_authorization": "CT09_PILOT_ONLY",
+      "ct09_gap_delta_review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md"
     }
   },
   "handoff_required_fields": [
