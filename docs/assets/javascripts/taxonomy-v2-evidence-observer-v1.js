@@ -559,6 +559,7 @@
 
   let policyState = null;
   let policyError = null;
+  let extensionError = null;
   let lastCapture = null;
 
   const scriptUrl = document.currentScript?.src || "";
@@ -615,23 +616,30 @@
       seen_questions: Object.keys(store.seen_questions).length,
       independent_units: Object.keys(store.independent_units).length,
       ct09_p1c2_extension: policyState?.extension || null,
+      ct09_p1c2_extension_error: extensionError,
       last_capture: lastCapture
     }, null, 2);
   };
 
-  const ready = Promise.all([
-    fetch(policyUrl, { cache: "no-store" }),
-    fetch(ct09P1c2ExtensionUrl, { cache: "no-store" })
-  ])
-    .then(async ([policyResponse, extensionResponse]) => {
-      if (!policyResponse.ok) throw new Error("policy_http_" + policyResponse.status);
-      if (!extensionResponse.ok) throw new Error("ct09_p1c2_http_" + extensionResponse.status);
-      const [policy, extension] = await Promise.all([policyResponse.json(), extensionResponse.json()]);
-      return { policy, extension };
+  const ready = fetch(policyUrl, { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) throw new Error("policy_http_" + response.status);
+      return response.json();
     })
-    .then(({ policy, extension }) => {
+    .then(async (policy) => {
       const baseState = validatePolicy(policy);
-      policyState = extendWithCt09P1c2(baseState, extension);
+      try {
+        const extensionResponse = await fetch(ct09P1c2ExtensionUrl, { cache: "no-store" });
+        if (!extensionResponse.ok) throw new Error("ct09_p1c2_http_" + extensionResponse.status);
+        const extension = await extensionResponse.json();
+        extensionError = null;
+        policyState = extendWithCt09P1c2(baseState, extension);
+      } catch (error) {
+        // The additive P1-C2 lane is fail-open. A transient extension failure
+        // must never disable the already-approved I3G CT02-CT25 shadow lane.
+        extensionError = String(error?.message || error);
+        policyState = baseState;
+      }
       refreshDebug();
       return policyState;
     })
@@ -702,6 +710,8 @@
     debugSnapshot: () => ({
       policy_ready: Boolean(policyState),
       policy_error: policyError,
+      ct09_p1c2_extension: policyState?.extension || null,
+      ct09_p1c2_extension_error: extensionError,
       last_capture: lastCapture,
       store: loadStore()
     })
