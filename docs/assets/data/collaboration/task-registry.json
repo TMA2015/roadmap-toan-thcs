@@ -1,5 +1,5 @@
 {
-  "version": "1.0.153",
+  "version": "1.0.154",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1028,10 +1028,10 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I6-001",
       "title": "Skill Taxonomy v2 I6 — controlled learner-facing release",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
-      "status": "OPEN",
-      "context_version": "1.0.153",
-      "review_verdict": "AWAITING_CONTROLLED_IMPLEMENTATION_GATE",
-      "review_notes": "I5 policy is closed PASS. I6 may implement only the accepted R2 descriptive/sparse-data safeguards for a controlled learner-facing Skill Map release. Mastery/Readiness remain OFF; no backfill/regrade; preserve Practice v1 and frozen G2 stores; require rollback, exact-head automated QA and owner-controlled release before broader activation."
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.154",
+      "review_verdict": "IMPLEMENTATION_BRANCH_PRE_CI",
+      "review_notes": "I6 candidate implemented on impl/skill-taxonomy-v2-i6-controlled-release-r1-20261003. Adds a separate controlled learner page/mode while preserving I4 owner preview. R2 safeguards: N=0 no evidence; N=1–2 counts + sparse caution with no raw percentage; N>=3 descriptive percentage; no technical family IDs in learner cards; legacy Practice remains separate; read-only localStorage; Mastery/Readiness/backfill/regrade remain OFF. Await exact-head CI, desktop/mobile browser QA and owner-controlled release."
     }
   ]
 }

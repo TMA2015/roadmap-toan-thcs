@@ -4,14 +4,23 @@
   const STORE_KEY = "toan-thcs-taxonomy-v2-evidence-v1";
   const LEGACY_KEY = "toan-thcs-practice-v1";
   const BUILD = "skill-map-v2-preview-i4-r1-20261003";
+  const CONTROLLED_BUILD = "skill-map-v2-i6-controlled-r1-20261003";
   const LAYER_ORDER = ["KNTT-Core", "Core-Support", "Entrance10", "THPT-Bridge", "Specialized-Challenge"];
   const OPTIONAL_LAYERS = new Set(["Entrance10", "THPT-Bridge", "Specialized-Challenge"]);
+  const NO_DIRECT_EVIDENCE_FAMILIES = new Set(["RATIO-MODEL", "ID-APPLY", "ID-PROOF", "RATEX-INTEGER"]);
   const LAYER_LABELS = Object.freeze({
     "KNTT-Core": "KNTT Core",
     "Core-Support": "Core Support",
     "Entrance10": "Ôn thi vào 10",
     "THPT-Bridge": "Cầu nối THPT",
     "Specialized-Challenge": "Chuyên / Challenge"
+  });
+  const LEARNER_LAYER_LABELS = Object.freeze({
+    "KNTT-Core": "Kiến thức cốt lõi",
+    "Core-Support": "Kiến thức hỗ trợ",
+    "Entrance10": "Ôn thi vào 10",
+    "THPT-Bridge": "Cầu nối THPT",
+    "Specialized-Challenge": "Chuyên / Thử thách"
   });
   const TOPIC_LABELS = Object.freeze({
     CT02: "02 · Số và phép tính",
@@ -142,9 +151,39 @@
         seen_questions: Object.keys(store.seen_questions).length,
         independent_units: Object.keys(store.independent_units).length,
         independent_correct: Object.values(store.independent_units).filter((unit) => unit?.correct === true).length,
-        assisted_recent_events: store.recent_events.filter((event) => event?.assisted === true).length
+        assisted_recent_events: store.recent_events.filter((event) => event?.assisted === true).length,
+        evidence_families: [...summaries.values()].filter((row) => row.independent_units > 0).length,
+        no_evidence_families: [...summaries.values()].filter((row) => row.independent_units === 0).length
       }
     };
+  };
+
+  const evidenceDisplay = (summaryLike) => {
+    const independentUnits = safeNumber(summaryLike?.independent_units);
+    const independentCorrect = safeNumber(summaryLike?.independent_correct);
+    const evidenceAccuracy = independentUnits > 0 ? independentCorrect / independentUnits : null;
+    if (independentUnits <= 0) {
+      return Object.freeze({
+        state: "NO_EVIDENCE",
+        label: "Chưa có bằng chứng",
+        show_percent: false,
+        evidence_accuracy: null
+      });
+    }
+    if (independentUnits <= 2) {
+      return Object.freeze({
+        state: "SPARSE_DATA",
+        label: "Dữ liệu còn ít",
+        show_percent: false,
+        evidence_accuracy: evidenceAccuracy
+      });
+    }
+    return Object.freeze({
+      state: "PRACTICE_TREND_REVIEWABLE",
+      label: "Đã có dữ liệu để xem xu hướng",
+      show_percent: true,
+      evidence_accuracy: evidenceAccuracy
+    });
   };
 
   const filterFamilies = (families, filters = {}) => {
@@ -188,14 +227,18 @@
     STORE_KEY,
     LEGACY_KEY,
     BUILD,
+    CONTROLLED_BUILD,
     LAYER_ORDER,
     LAYER_LABELS,
+    LEARNER_LAYER_LABELS,
     OPTIONAL_LAYERS,
+    NO_DIRECT_EVIDENCE_FAMILIES,
     TOPIC_LABELS,
     normalizedStore,
     normalizedLegacy,
     topicMetaFromSpine,
     summarizeEvidence,
+    evidenceDisplay,
     filterFamilies,
     familySort,
     legacyRows,
@@ -231,6 +274,7 @@
   class Preview {
     constructor(root, registry, spine, storage) {
       this.root = root;
+      this.mode = root.dataset.skillMapV2Mode === "learner" ? "learner" : "owner";
       this.registry = registry;
       this.topicMeta = topicMetaFromSpine(spine);
       this.storage = storage;
@@ -242,18 +286,31 @@
     }
 
     render() {
-      this.root.dataset.skillMapBuild = BUILD;
+      const learnerMode = this.mode === "learner";
+      this.root.dataset.skillMapBuild = learnerMode ? CONTROLLED_BUILD : BUILD;
       this.root.replaceChildren();
 
       const intro = el("div", "skill-map-v2-intro");
-      intro.append(
-        el("strong", "", "Preview I4 · Bằng chứng kỹ năng, chưa phải Mastery"),
-        el("p", "", "Trang này chỉ đọc dữ liệu shadow Taxonomy v2 trên trình duyệt hiện tại. Không backfill, không chấm Readiness, không sửa thống kê Practice cũ.")
-      );
+      if (learnerMode) {
+        intro.append(
+          el("strong", "", "Bản đồ kỹ năng · Thử nghiệm có kiểm soát"),
+          el("p", "", "Trang này giúp em xem dữ liệu luyện tập đã ghi nhận. Đây là xu hướng luyện tập, không phải kết luận thành thạo hay điểm sẵn sàng.")
+        );
+      } else {
+        intro.append(
+          el("strong", "", "Preview I4 · Bằng chứng kỹ năng, chưa phải Mastery"),
+          el("p", "", "Trang này chỉ đọc dữ liệu shadow Taxonomy v2 trên trình duyệt hiện tại. Không backfill, không chấm Readiness, không sửa thống kê Practice cũ.")
+        );
+      }
       this.root.append(intro);
 
       const totals = el("section", "skill-map-v2-totals");
-      const totalCards = [
+      const totalCards = learnerMode ? [
+        ["Lượt luyện độc lập", this.evidence.totals.independent_units],
+        ["Lượt làm đúng", this.evidence.totals.independent_correct],
+        ["Kỹ năng đã có dữ liệu", this.evidence.totals.evidence_families],
+        ["Kỹ năng chưa có dữ liệu", this.evidence.totals.no_evidence_families]
+      ] : [
         ["Đơn vị độc lập", this.evidence.totals.independent_units],
         ["Đúng trên đơn vị độc lập", this.evidence.totals.independent_correct],
         ["Câu đã thấy", this.evidence.totals.seen_questions],
@@ -271,7 +328,8 @@
       layerWrap.append(el("span", "", "Tầng"));
       this.layerSelect = document.createElement("select");
       this.layerSelect.append(option("ALL", "Tất cả tầng"));
-      for (const layer of LAYER_ORDER) this.layerSelect.append(option(layer, LAYER_LABELS[layer] || layer));
+      const layerLabels = learnerMode ? LEARNER_LAYER_LABELS : LAYER_LABELS;
+      for (const layer of LAYER_ORDER) this.layerSelect.append(option(layer, layerLabels[layer] || layer));
       this.layerSelect.addEventListener("change", () => { this.filters.layer = this.layerSelect.value; this.renderFamilies(); });
       layerWrap.append(this.layerSelect);
 
@@ -290,7 +348,7 @@
       this.evidenceOnly = document.createElement("input");
       this.evidenceOnly.type = "checkbox";
       this.evidenceOnly.addEventListener("change", () => { this.filters.evidenceOnly = this.evidenceOnly.checked; this.renderFamilies(); });
-      evidenceWrap.append(this.evidenceOnly, el("span", "", "Chỉ kỹ năng đã có bằng chứng độc lập"));
+      evidenceWrap.append(this.evidenceOnly, el("span", "", learnerMode ? "Chỉ kỹ năng đã có dữ liệu luyện tập" : "Chỉ kỹ năng đã có bằng chứng độc lập"));
 
       this.controls.append(layerWrap, topicWrap, evidenceWrap);
       this.root.append(this.controls);
@@ -305,11 +363,13 @@
       this.list.replaceChildren();
       const families = filterFamilies(this.registry.families, this.filters).sort(familySort);
       const count = el("p", "skill-map-v2-count",
-        "Hiển thị " + families.length + "/" + (this.registry.families?.length || 0) + " family.");
+        this.mode === "learner"
+          ? "Hiển thị " + families.length + "/" + (this.registry.families?.length || 0) + " kỹ năng."
+          : "Hiển thị " + families.length + "/" + (this.registry.families?.length || 0) + " family.");
       this.list.append(count);
 
       if (!families.length) {
-        this.list.append(el("p", "skill-map-v2-empty", "Không có family phù hợp bộ lọc hiện tại."));
+        this.list.append(el("p", "skill-map-v2-empty", this.mode === "learner" ? "Không có kỹ năng phù hợp bộ lọc hiện tại." : "Không có family phù hợp bộ lọc hiện tại."));
         return;
       }
 
@@ -327,7 +387,8 @@
         const container = isOptional ? document.createElement("details") : el("section", "skill-map-v2-layer");
         container.className = "skill-map-v2-layer" + (isOptional ? " is-optional" : "");
         if (isOptional && forceOpen) container.open = true;
-        const headingText = (LAYER_LABELS[layer] || layer) + " · " + rows.length + " family";
+        const layerLabels = this.mode === "learner" ? LEARNER_LAYER_LABELS : LAYER_LABELS;
+        const headingText = (layerLabels[layer] || layer) + " · " + rows.length + (this.mode === "learner" ? " kỹ năng" : " family");
         if (isOptional) {
           const summary = el("summary", "skill-map-v2-layer-title", headingText);
           container.append(summary);
@@ -370,15 +431,40 @@
       card.dataset.familyId = family.family_id;
       const header = el("div", "skill-map-v2-card-header");
       const title = el("h4", "skill-map-v2-card-title", family.label_vi || family.family_id);
-      const badge = el("span", "skill-map-v2-layer-badge", LAYER_LABELS[family.layer] || family.layer);
+      const layerLabels = this.mode === "learner" ? LEARNER_LAYER_LABELS : LAYER_LABELS;
+      const badge = el("span", "skill-map-v2-layer-badge", layerLabels[family.layer] || family.layer);
       header.append(title, badge);
-      card.append(header, el("p", "skill-map-v2-family-id", family.family_id));
+      card.append(header);
+      if (this.mode !== "learner") card.append(el("p", "skill-map-v2-family-id", family.family_id));
 
       const topics = Array.isArray(family.topics) ? family.topics : [];
       card.append(el("p", "skill-map-v2-topics",
         "Chuyên đề: " + topics.map((id) => TOPIC_LABELS[id] || id).join(" · ")));
 
-      if (summary.independent_units > 0) {
+      if (this.mode === "learner") {
+        const display = evidenceDisplay(summary);
+        card.dataset.evidenceState = display.state;
+        if (summary.independent_units > 0) {
+          const status = el("p", "skill-map-v2-status " + (display.show_percent ? "is-trend" : "is-sparse"), display.label);
+          const metrics = el("div", "skill-map-v2-metrics");
+          metrics.append(
+            el("span", "skill-map-v2-metric", summary.independent_units + " lượt luyện độc lập"),
+            el("span", "skill-map-v2-metric", summary.independent_correct + "/" + summary.independent_units + " đúng")
+          );
+          if (display.show_percent) {
+            metrics.append(el("span", "skill-map-v2-metric", "Tỷ lệ đúng quan sát " + formatPercent(display.evidence_accuracy)));
+          }
+          card.append(status, metrics);
+          card.append(el("p", "skill-map-v2-recent", "Lần luyện gần nhất: " + formatDate(summary.latest_at)));
+        } else if (NO_DIRECT_EVIDENCE_FAMILIES.has(family.family_id)) {
+          card.dataset.evidenceState = "NO_DIRECT_EVIDENCE";
+          card.append(el("p", "skill-map-v2-no-evidence",
+            "Hiện chưa có bài luyện trực tiếp cho kỹ năng này. Trạng thái này không có nghĩa là em yếu."));
+        } else {
+          card.append(el("p", "skill-map-v2-no-evidence",
+            "Chưa có bằng chứng. Trạng thái này không có nghĩa là em yếu; hãy luyện tập để bắt đầu ghi nhận xu hướng."));
+        }
+      } else if (summary.independent_units > 0) {
         const metrics = el("div", "skill-map-v2-metrics");
         metrics.append(
           el("span", "skill-map-v2-metric", summary.independent_units + " đơn vị độc lập"),
@@ -415,9 +501,11 @@
       details.className = "skill-map-v2-legacy";
       details.dataset.skillMapLegacy = "true";
       const rows = legacyRows(this.legacy);
-      details.append(el("summary", "", "Thống kê Practice cũ — tách riêng (" + rows.length + " tag)"));
-      details.append(el("p", "skill-map-v2-legacy-note",
-        "Các số dưới đây lấy từ toan-thcs-practice-v1. Không cộng gộp với Evidence accuracy của Taxonomy v2."));
+      const learnerMode = this.mode === "learner";
+      details.append(el("summary", "", learnerMode ? "Thống kê luyện tập cũ — xem riêng (" + rows.length + " nhóm)" : "Thống kê Practice cũ — tách riêng (" + rows.length + " tag)"));
+      details.append(el("p", "skill-map-v2-legacy-note", learnerMode
+        ? "Phần này là thống kê cũ và được giữ riêng. Hệ thống không cộng các số này vào Bản đồ kỹ năng mới."
+        : "Các số dưới đây lấy từ toan-thcs-practice-v1. Không cộng gộp với Evidence accuracy của Taxonomy v2."));
       if (!rows.length) {
         details.append(el("p", "skill-map-v2-empty", "Chưa có thống kê tag Practice cũ trên trình duyệt này."));
       } else {
@@ -441,10 +529,10 @@
   };
 
   const init = async () => {
-    for (const root of document.querySelectorAll("[data-skill-map-v2-preview]")) {
+    for (const root of document.querySelectorAll("[data-skill-map-v2-preview], [data-skill-map-v2-controlled]")) {
       if (root.dataset.skillMapReady) continue;
       root.dataset.skillMapReady = "loading";
-      root.textContent = "Đang tải Skill Map v2 preview…";
+      root.textContent = root.dataset.skillMapV2Mode === "learner" ? "Đang tải Bản đồ kỹ năng…" : "Đang tải Skill Map v2 preview…";
       try {
         const assets = new URL(root.dataset.assetsBase || "../../assets/", document.baseURI);
         const [registry, spine] = await Promise.all([
@@ -459,7 +547,7 @@
       } catch (error) {
         root.dataset.skillMapReady = "error";
         root.replaceChildren(el("p", "skill-map-v2-error",
-          "Không tải được Skill Map v2 preview: " + error.message + ". Practice bình thường không bị ảnh hưởng."));
+          (root.dataset.skillMapV2Mode === "learner" ? "Không tải được Bản đồ kỹ năng: " : "Không tải được Skill Map v2 preview: ") + error.message + ". Practice bình thường không bị ảnh hưởng."));
       }
     }
   };
