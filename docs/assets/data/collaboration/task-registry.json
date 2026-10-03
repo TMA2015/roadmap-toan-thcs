@@ -1,5 +1,5 @@
 {
-  "version": "1.0.151",
+  "version": "1.0.153",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1007,10 +1007,31 @@
       "id": "MATH-SKILL-TAXONOMY-V2-I4-001",
       "title": "Skill Taxonomy v2 I4 — owner/opt-in Skill Map preview",
       "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.151",
-      "review_verdict": "IMPLEMENTATION_BRANCH_PRE_CI",
-      "review_notes": "Read-only owner/internal preview of Taxonomy v2 shadow evidence. Renders all 131 registry families, aggregates direct evidence for 127 evidence-bearing families from the isolated store, shows independent-unit count and evidence accuracy without mastery/readiness labels, supports layer/topic/evidence filters, collapses optional layers by default, aggregates cross-topic reuse to one family card, relies on independent_units so clone repeats cannot inflate counts, and exposes legacy Practice tag statistics only in a separate disclosure. No localStorage writes, no backfill/regrade, no readiness gating."
+      "status": "DONE",
+      "context_version": "1.0.152",
+      "review_verdict": "OWNER_PREVIEW_QA_PASS_CLOSED",
+      "review_notes": "Owner production screenshots confirm I4 preview behavior with the real browser profile: 42 independent units, 18 correct independent units, 51 seen questions, 51 recent events; evidence-only filter shows 28/131 families with 23 KNTT-Core visible; representative cards show independent counts/accuracy without mastery; legacy Practice remains in a separate 74-tag disclosure with explicit no-merge wording. Automated release QA already proved read-only localStorage behavior. I4 closed."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I5-001",
+      "title": "Skill Taxonomy v2 I5 — evidence sufficiency/mastery/readiness policy review",
+      "routing": "CHATGPT_POLICY_DRAFT+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
+      "status": "DONE",
+      "context_version": "1.0.153",
+      "review_verdict": "NOTEBOOKLM_R2_8_OF_8_PASS_POLICY_CLOSED",
+      "review_notes": "I5 R1 was directionally PASS but reconciled to R2 because R1 incorrectly made independent evidence correct-only and blurred Practice sufficiency with Mastery/Readiness. R2 preserves negative first-unassisted evidence as independent and immutable, keeps Practice sufficiency formative/descriptive, handles sparse capacities 0/1/2/>=3, separates unseen-Core coverage from observed performance, keeps paper self-check non-verified, applies no time decay, and requires no UI/runtime activation for policy closure. NotebookLM compact R2 recheck returned 8/8 PASS, 0 revisions. Mastery, Readiness, backfill/regrade and general learner-facing release remain OFF.",
+      "integrated_artifact": "docs/roadmap/skill-taxonomy-v2-evidence-policy-r2.md",
+      "review_receipt": "review-packets/skill-taxonomy/phase-i5/08_NOTEBOOKLM_I5_R2_PASS_RECEIPT.md",
+      "closure_receipt": "review-packets/skill-taxonomy/phase-i5/09_I5_POLICY_CLOSURE.md"
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I6-001",
+      "title": "Skill Taxonomy v2 I6 — controlled learner-facing release",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "OPEN",
+      "context_version": "1.0.153",
+      "review_verdict": "AWAITING_CONTROLLED_IMPLEMENTATION_GATE",
+      "review_notes": "I5 policy is closed PASS. I6 may implement only the accepted R2 descriptive/sparse-data safeguards for a controlled learner-facing Skill Map release. Mastery/Readiness remain OFF; no backfill/regrade; preserve Practice v1 and frozen G2 stores; require rollback, exact-head automated QA and owner-controlled release before broader activation."
     }
   ]
 }

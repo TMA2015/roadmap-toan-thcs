@@ -1,0 +1,51 @@
+Review packet: MATH-SKILL-TAXONOMY-V2-I5-EVIDENCE-POLICY-R1-20261003
+
+Use ONLY the selected Notebook sources for this review. Treat the permanent Math project sources as governing constraints and the I5 packet + machine preflight as the current batch evidence.
+
+Task:
+Review the I5 evidence policy for Self-Learning Math Skill Taxonomy v2. Do NOT redesign the taxonomy, remap questions, or authorize runtime/mastery/readiness activation.
+
+Required:
+1. Check all decisions D1–D12 one by one.
+2. Check ARCH_1–ARCH_12 one by one.
+3. Account for the real family-capacity asymmetry:
+   - 131 registry families
+   - 127 with direct runtime evidence
+   - max-unit capacity distribution includes 4 families at 0, 12 at 1, 29 at 2
+   - therefore a universal minimum-count rule may be impossible for many families.
+4. Account for evidence-class strength; do not treat recognition, final answer, proof partial, modeling partial, supporting/context/method evidence as automatically equivalent.
+5. Preserve the accepted rules: assisted/repeat/clone attempts do not create new independent units; NO_FAMILY never creates family evidence; legacy Practice remains separate.
+6. Explicitly decide the written-evidence boundary for proof/modeling/justification families.
+7. Explicitly decide how to display 1/1, 0/1, 2/2 and 0/2 without overclaiming mastery or weakness.
+8. Optional / Bridge / Challenge must never lower Core Readiness.
+9. Do not invent automatic written scoring or historical backfill.
+10. If the current event schema lacks metadata required for a defensible policy, list the exact missing metadata instead of assuming it exists.
+
+Output exactly these top-level sections:
+- packet_id
+- overall_verdict
+- decision_matrix
+- architecture_checks
+- recommended_policy_r1
+- family_capacity_policy
+- evidence_class_policy
+- written_evidence_policy
+- readiness_layer_policy
+- learner_facing_wording
+- metadata_gaps
+- implementation_risks
+- required_changes_before_i5_close
+
+For each D1–D12 use:
+- decision_id
+- verdict: APPROVE | APPROVE_WITH_CHANGES | REJECT | INSUFFICIENT_EVIDENCE
+- recommendation
+- rationale
+- implementation_consequence
+
+For each ARCH_1–ARCH_12 use:
+- check_id
+- verdict: PASS | FAIL
+- rationale
+
+End with a clear statement that the review does or does not clear I5 policy closure. Do not clear any runtime activation.

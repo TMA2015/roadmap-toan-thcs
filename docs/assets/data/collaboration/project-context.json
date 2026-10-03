@@ -1,5 +1,5 @@
 {
-  "version": "1.0.151",
+  "version": "1.0.153",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "I3G full CT02–CT25 shadow rollout owner QA is PASS and closed. Next gate is I4: an owner/internal, read-only Skill Map v2 preview. It must read the isolated Taxonomy v2 shadow store only; render the 131-family registry while showing evidence only where direct runtime units exist; aggregate cross-topic reuse to one family; use independent_units so clone/repeat attempts cannot inflate evidence; keep Practice v1 statistics visibly separate; support layer/topic filtering; keep optional layers collapsed by default; and expose no mastery labels, readiness gates, backfill/regrade, or learner-data writes.",
+    "next_priority": "I5 Evidence Policy R2 is independently rechecked 8/8 PASS and policy-closed. Practice sufficiency remains formative/descriptive and separate from Mastery/Readiness; first unseen unassisted wrong answers remain immutable negative independent evidence; sparse family capacity 0/1/2 is handled explicitly; proof/modeling/constructed-response limits are preserved; unseen Core is no-evidence rather than weak and future Readiness must separate coverage from observed performance. Mastery, Readiness, backfill/regrade and general learner-facing release remain OFF. Next gate is I6 Controlled learner-facing release planning/technical QA under the accepted R2 policy, with owner-controlled release and rollback.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -1381,7 +1381,7 @@
       ]
     },
     "skill_taxonomy_v2": {
-      "status": "ACADEMIC_PROGRAM_CLOSED_IMPLEMENTATION_PLANNING_AUTHORIZED",
+      "status": "I5_POLICY_CLOSED_I6_CONTROLLED_RELEASE_NEXT",
       "runtime_enabled": false,
       "mastery_readiness_migration_authorized": false,
       "exam_frequency": "PENDING_OFFICIAL_CORPUS",
@@ -1987,7 +1987,7 @@
         }
       },
       "i4": {
-        "status": "IMPLEMENTATION_BRANCH_PRE_CI",
+        "status": "DONE_OWNER_PREVIEW_QA_PASS",
         "phase": "I4_SKILL_MAP_V2_OWNER_PREVIEW",
         "branch": "impl/skill-taxonomy-v2-i4-skill-map-preview-r1-20261003",
         "page": "docs/collaboration/skill-map-v2-preview.md",
@@ -2007,7 +2007,57 @@
         "readiness_enabled": false,
         "history_backfill_enabled": false,
         "learner_data_write_enabled": false,
-        "learner_facing_general_release": false
+        "learner_facing_general_release": false,
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I4_SKILL_MAP_V2_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "independent_units": 42,
+          "independent_correct": 18,
+          "seen_questions": 51,
+          "recent_events": 51,
+          "evidence_bearing_families_in_profile": 28,
+          "visible_kntt_core_families_in_evidence_filter": 23,
+          "legacy_practice_tags": 74
+        }
+      },
+      "i5": {
+        "status": "DONE_POLICY_REVIEW_PASS",
+        "branch": "review/skill-taxonomy-v2-i5-evidence-policy-r1-20261003",
+        "review_pr": 282,
+        "accepted_policy": "docs/roadmap/skill-taxonomy-v2-evidence-policy-r2.md",
+        "r1_review_result": "review-packets/skill-taxonomy/phase-i5/05_NOTEBOOKLM_I5_R1_RESULT.md",
+        "r1_reconciliation": "review-packets/skill-taxonomy/phase-i5/06_CHATGPT_RECONCILIATION_I5_R1.md",
+        "r2_recheck_source": "review-packets/skill-taxonomy/phase-i5/07_NOTEBOOKLM_I5_R2_RECHECK.md",
+        "r2_pass_receipt": "review-packets/skill-taxonomy/phase-i5/08_NOTEBOOKLM_I5_R2_PASS_RECEIPT.md",
+        "closure_receipt": "review-packets/skill-taxonomy/phase-i5/09_I5_POLICY_CLOSURE.md",
+        "independent_recheck": "8/8 PASS",
+        "revisions_required": 0,
+        "policy_effect": "POLICY_ACCEPTED_ONLY",
+        "runtime_activation_authorized": false,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "learner_facing_general_release": false,
+        "accepted_boundaries": {
+          "practice_sufficiency_not_mastery": true,
+          "negative_first_unassisted_is_independent": true,
+          "prior_evidence_immutable": true,
+          "sparse_capacity_policy": "0/1/2/>=3",
+          "recency": "NO_DECAY_UP_TO_LATEST_5_DESCRIPTIVE_ONLY",
+          "unseen_core": "NO_EVIDENCE_MORE_EVIDENCE_NEEDED",
+          "readiness_requires_coverage_separate_from_observed_performance": true,
+          "paper_self_check_is_verified_mastery": false
+        }
+      },
+      "i6": {
+        "status": "NOT_STARTED_AWAITING_CONTROLLED_IMPLEMENTATION_GATE",
+        "phase": "I6_CONTROLLED_LEARNER_FACING_RELEASE",
+        "prerequisite": "I5_POLICY_REVIEW_PASS",
+        "scope_boundary": "Implement accepted R2 descriptive/sparse-data safeguards for controlled learner-facing Skill Map release only; do not enable Mastery or Readiness.",
+        "owner_controlled_release_required": true,
+        "rollback_required": true,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false
       }
     },
     "notebooklm_taxonomy_workflow": {
