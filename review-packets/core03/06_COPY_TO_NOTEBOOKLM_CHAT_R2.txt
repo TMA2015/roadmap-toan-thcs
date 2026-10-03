@@ -1,0 +1,18 @@
+Bạn đang thực hiện targeted R2 cho Self-Learning Math CĐ03. Chỉ dùng source “05_UPLOAD_TO_NOTEBOOKLM_CORE03_R2.md” (packet MATH-CORE03-R2-20260930, Git blob a84c2740169070d6919bc8d2f274d10fb914fa32). Không dùng lại kết luận R1 như bằng chứng nếu nội dung R2 đã đổi.
+
+Hãy kiểm tra chính xác:
+1) rat03-core-g6-1: Core skills chỉ còn ti-so + ti-so-phan-tram; doi-don-vi-ti-so chỉ ở supporting_skills / Prerequisite-Support; worked_example phần b đổi 2 m=200 cm rồi 200/50=4.
+2) RAT03MICRO_002: toán vẫn đúng, nhưng layer/evidence chỉ Core-Support + FORMATIVE_SUPPORT_ONLY, không cấp Grade-6 Core readiness.
+3) RAT03MICRO_003: 15/25=60%, correct option text 60%, index 2.
+4) RAT03MICRO_005: x/8=3/4 => x=6; bốn lựa chọn duy nhất; correct option index 0; hint/explanation đồng nhất.
+5) RAT03MICRO_011: x 2,4,5; y 6,12,15 => k=3; correct option text 3, index 2.
+6) RAT03MICRO_015: x 2,3,6; y 18,12,6 => xy=36; correct option “Tỉ lệ nghịch vì xy=36”, index 2.
+7) Xác nhận bốn card còn lại và mười micro còn lại không bị collateral regression so với nội dung trong source; kiểm lại điều kiện b,d≠0, a+b+c≠0, y=kx tại x=0 và xy=a≠0.
+8) Ranh giới: PROPOSAL_ONLY; không tuyên bố runtime/browser/deploy; không thay 120 RAT03V1 cũ hoặc localStorage.
+
+Trả về:
+- Packet ID + verdict cuối (PASS / REVISIONS_REQUIRED / INSUFFICIENT_EVIDENCE).
+- Bảng 6 target thay đổi: ID | PASS/FAIL | oracle/field verified | correction nếu còn.
+- Dòng “unchanged regression check”: 4/4 unchanged cards và 10/10 unchanged micro, hoặc liệt kê ID lỗi.
+- Xác nhận final scope: Grade6 Core vs Support, Grade7 Core.
+- Coverage R2 chính xác; nếu có lỗi thì không tuyên bố toàn bộ PASS.
