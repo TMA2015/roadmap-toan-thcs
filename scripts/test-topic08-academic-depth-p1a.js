@@ -34,7 +34,7 @@ assert.ok(index.includes("không phải dự đoán tần suất đề thi"), "m
 // P1-A theory depth.
 for (const phrase of [
   "### 3.4. Bất đẳng thức và tính chất thứ tự",
-  "### 3.6. Ứng dụng Core – lập bất phương trình từ bài toán",
+  "### 3.6. Ứng dụng – lập bất phương trình từ bài toán",
   "### 3.7. Củng cố – nhiều điều kiện đồng thời",
   "#### Ví dụ 2 — Biến đổi rồi mới dùng tính chất tích bằng",
   "#### Ví dụ 3 — Thu gọn rồi mới giải bất phương trình",
@@ -47,9 +47,9 @@ assert.match(index, /4x\+6\(x\+3\)=238/);
 assert.match(index, /6\+1\{,\}5x\\le18/);
 
 // Practice Room learner layers.
-assert.match(room, /Ứng dụng KNTT-Core/);
+assert.match(room, /### Ứng dụng/);
 assert.match(room, /08-APP-01 · Lập bất phương trình/);
-assert.match(room, /Củng cố \/ Core-Support/);
+assert.match(room, /### Củng cố/);
 assert.match(room, /08-SUP-01 · Giao tập nghiệm/);
 assert.doesNotMatch(room, /### Entrance10 \/ Extension/);
 assert.match(room, /### Thử thách/);
@@ -57,7 +57,7 @@ assert.match(room, /### Thử thách/);
 // Workspace layer correction remains non-gating.
 const byExt = new Map(workspace.extensions.map((x) => [x.id, x]));
 assert.equal(byExt.get("eq08-ent10-1").layer, "KNTT-Core");
-assert.equal(byExt.get("eq08-ent10-1").learner_label, "Ứng dụng Core");
+assert.equal(byExt.get("eq08-ent10-1").learner_label, "Ứng dụng");
 assert.equal(byExt.get("eq08-ent10-1").gates_core, false);
 assert.equal(byExt.get("eq08-ent10-2").layer, "Core-Support");
 assert.equal(byExt.get("eq08-ent10-2").learner_label, "Củng cố");
