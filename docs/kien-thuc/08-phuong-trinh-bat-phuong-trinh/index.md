@@ -172,7 +172,7 @@ Hình trên giúp phân biệt nhanh:
 
 > Khi biểu diễn trên trục số, cần kiểm tra đồng thời **mốc biên** và **hướng của tập nghiệm**; chỉ đúng một trong hai vẫn là sai.
 
-### 3.6. Ứng dụng Core – lập bất phương trình từ bài toán
+### 3.6. Ứng dụng – lập bất phương trình từ bài toán
 
 Khi một bài toán có các từ như **không vượt quá**, **ít nhất**, **tối đa**, **tối thiểu**, dữ kiện thường dẫn đến một bất phương trình.
 
@@ -190,7 +190,7 @@ suy ra (x\le8). Vì (x) là số hộp nên nhiều nhất có thể thêm **8 h
 
 Khi cần tìm các giá trị thỏa mãn đồng thời nhiều bất phương trình một ẩn, giải từng bất phương trình rồi lấy **giao** các tập nghiệm.
 
-> Đây là **Core-Support / Củng cố**: hữu ích cho bài toán có nhiều điều kiện nhưng không tạo thêm một chuẩn Core Readiness riêng trong phiên bản hiện tại.
+> Đây là phần **Củng cố**: hữu ích cho bài toán có nhiều điều kiện nhưng không tạo thêm một chuẩn đánh giá bắt buộc riêng trong phiên bản hiện tại.
 
 #### Trực quan – giao các tập nghiệm
 
@@ -365,7 +365,7 @@ Kiểm tra: (4\cdot22+6\cdot25=88+150=238). Vậy theo kế hoạch tổ làm **
 | Bất đẳng thức và bất phương trình bậc nhất | **Nền tảng KNTT** | Dùng đúng tính chất thứ tự, đổi chiều đúng lúc, biểu diễn nghiệm |
 | Lập phương trình từ bài toán | **Ứng dụng KNTT · có giá trị chuyển giao** | Chọn ẩn, lập quan hệ, giải và kiểm tra bối cảnh |
 | Lập bất phương trình từ bài toán | **Ứng dụng KNTT** | Nhận ra ràng buộc tối đa/tối thiểu, giải và diễn giải cận |
-| Nhiều điều kiện đồng thời | **Củng cố / Core-Support** | Lấy giao các điều kiện và đọc khoảng nghiệm |
+| Nhiều điều kiện đồng thời | **Củng cố** | Lấy giao các điều kiện và đọc khoảng nghiệm |
 | Bài toán tham số | **Ôn thi vào 10 / Thử thách** | Xét trường hợp an toàn, không chia cho biểu thức chưa biết khác 0 |
 
 > **Bằng chứng chuyển giao:** trong 2 đề Toán tuyển sinh lớp 10 không chuyên Hà Nội chương trình mới 2025–2026 đã rà soát, mô hình hóa bằng phương trình một ẩn xuất hiện ở cả 2 đề. Đây là mô tả một mẫu nhỏ (n=2), **không phải dự đoán tần suất đề thi**.
