@@ -485,6 +485,7 @@ const mountMicro=(host,card,questions,graph)=>{
   skill.dataset.primarySkill=assessed||"unmapped";
   const skillSummary=document.createElement("summary");skillSummary.textContent="Xem kỹ năng đang luyện";
   const skillText=document.createElement("div");skillText.className="topic-micro-assessed-skill";
+  skillText.dataset.primarySkill=assessed||"unmapped";
   skillText.textContent=assessed?skillLabel(assessed):"Kỹ năng đang được hệ thống ghi nhận";
   skill.append(skillSummary,skillText);
   const meta=document.createElement("div");meta.className="topic-micro-meta";
