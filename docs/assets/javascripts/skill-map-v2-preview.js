@@ -369,7 +369,7 @@
       this.list.append(count);
 
       if (!families.length) {
-        this.list.append(el("p", "skill-map-v2-empty", "Không có family phù hợp bộ lọc hiện tại."));
+        this.list.append(el("p", "skill-map-v2-empty", this.mode === "learner" ? "Không có kỹ năng phù hợp bộ lọc hiện tại." : "Không có family phù hợp bộ lọc hiện tại."));
         return;
       }
 
