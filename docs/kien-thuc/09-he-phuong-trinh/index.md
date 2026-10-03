@@ -37,8 +37,8 @@ HỆ PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN
 │
 ├── 4. Vận dụng và mở rộng
 │   ├── Nhận biết số nghiệm
-│   ├── Tham số nhẹ / hệ số chưa biết (Core-Support)
-│   └── Biện luận tham số (Entrance10)
+│   ├── Tham số nhẹ / hệ số chưa biết
+│   └── Biện luận tham số mở rộng
 │
 └── 5. Bài toán thực tế
     ├── Chọn ẩn
@@ -61,7 +61,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 - [ ] Kiểm tra nghiệm bằng cách thay ngược vào hệ ban đầu.
 - [ ] Nhận biết trường hợp hệ có một nghiệm, vô nghiệm hoặc vô số nghiệm.
 - [ ] Lập được hệ từ bài toán thực tế đơn giản và trung bình.
-- [ ] Làm được bài tham số nhẹ ở mức Core-Support; nhận biết bài biện luận tham số đầy đủ là nội dung Entrance10.
+- [ ] Làm được bài tham số nhẹ ở mức củng cố; nhận biết bài biện luận tham số đầy đủ là phần ôn thi vào 10.
 
 ---
 
@@ -543,7 +543,7 @@ Với hệ bậc nhất hai ẩn có **hệ số phân số**, có thể:
 
 ---
 
-### Dạng 6 – Tham số nhẹ / hệ số chưa biết (Core-Support)
+### Dạng 6 – Tham số nhẹ / hệ số chưa biết (Củng cố nền tảng)
 
 Ví dụ: tìm `m` để `(2;1)` là nghiệm của hệ.
 
@@ -552,13 +552,13 @@ Phương pháp:
 - Thay `x=2`, `y=1` vào các phương trình.
 - Giải điều kiện thu được đối với `m`.
 
-> Dạng này củng cố khái niệm **nghiệm của hệ**. Nó khác với bài biện luận tham số đầy đủ.
+> Dạng này giúp em củng cố khái niệm **nghiệm của hệ**. Chỉ cần biết thay dữ kiện và kiểm tra điều kiện đơn giản.
 
 ---
 
-### Dạng 7 – Biện luận hệ theo tham số (Entrance10)
+### Dạng 7 – Biện luận hệ theo tham số (Ôn thi vào 10)
 
-> **Tầng học:** Entrance10. Đây không phải yêu cầu bắt buộc để hoàn thành KNTT Core.
+ > **Mức học:** Mở rộng để ôn thi vào 10. Không bắt buộc nếu em đang học phần nền tảng.
 >
 > **Mức vận dụng:** cần xét cẩn thận các giá trị tham số làm thay đổi hệ số hoặc làm một phương trình suy biến.
 
@@ -661,47 +661,45 @@ Vậy câu lạc bộ mua **16 quyển sổ và 12 bút chì**.
 
 ---
 
-## 🚀 6. Liên hệ với thi vào lớp 10 – đọc bằng chứng đúng cách
+## 🚀 6. Liên hệ với thi vào lớp 10
 
-Các bài dưới đây không được xếp hạng bằng “số sao”. Tần suất thi phải được mô tả theo **tập đề đã kiểm tra**, còn phạm vi Core được xác định bởi chương trình KNTT.
+Khi ôn thi vào 10, em nên ưu tiên **hiểu cách lập và giải hệ**, thay vì cố nhớ thật nhiều mẫu đề.
 
-### Nền tảng bắt buộc: giải hệ bằng thế và cộng đại số
+### Nền tảng cần chắc: giải hệ bằng thế và cộng đại số
 
-Đây là kiến thức KNTT Core, dù trong mẫu nhỏ đề tuyển sinh Hà Nội chương trình hiện hành mà dự án đã rà soát (2025–2026, `n=2`) **không có câu giải hệ trực tiếp đứng độc lập**.
+Hai phương pháp này là công cụ chính để:
+- giải hệ trực tiếp;
+- xử lý các bài cần biến đổi;
+- giải bài toán thực tế sau khi đã lập được hệ;
+- kiểm tra và trình bày lời giải tự luận.
 
-Học sinh vẫn cần thành thạo vì đây là công cụ để:
-- giải bài toán lập hệ;
-- xử lý các bài biến đổi;
-- kiểm tra và giải thích lời giải tự luận.
+### Dạng rất đáng luyện: bài toán thực tế lập hệ hai ẩn
 
-### Đã quan sát trong mẫu Hà Nội 2025–2026: mô hình hóa bằng hệ hai ẩn
+Những bài kiểu **số lượng – giá trị**, **giá – giảm giá**, **chuyển động**, **năng suất**, **hỗn hợp** đều có chung một kỹ năng quan trọng:
 
-Trong đúng **2 đề chương trình hiện hành** đã rà soát:
-- bài toán mô hình hóa bằng hệ hai ẩn xuất hiện ở **2/2 đề**;
-- một đề có cấu trúc **giá / chiết khấu**;
-- một đề có cấu trúc **số lượng / giá trị**.
+1. chọn đúng hai ẩn;
+2. xác định đơn vị và điều kiện;
+3. tìm hai quan hệ độc lập;
+4. lập hệ;
+5. giải và kiểm tra kết quả trong bối cảnh bài toán.
 
-!!! info "Cách hiểu con số 2/2"
-    Đây chỉ là mô tả của **một mẫu rất nhỏ gồm hai đề**, không phải dự đoán rằng năm nào cũng sẽ ra dạng này.
+### Dạng mở rộng: biến đổi rồi đưa về hệ tuyến tính
 
-### Dấu hiệu lịch sử 2023–2024: biến đổi rồi đưa về hệ tuyến tính
+Một số bài khó hơn không cho sẵn hệ ở dạng quen thuộc. Em có thể phải:
 
-Hai đề lịch sử 2023–2024 được giữ riêng để quan sát tính nối tiếp. Cả hai có dạng:
-- nhận ra một biểu thức lặp;
+- nhận ra một biểu thức lặp lại;
 - đặt ẩn phụ;
-- đưa về hệ phương trình bậc nhất;
-- giải rồi quay lại biến ban đầu.
-
-Các đề này thuộc giai đoạn trước chương trình hiện hành nên **không cộng chung mẫu số** với 2025–2026. Chúng chỉ gợi ý một hướng Entrance10 đáng luyện.
+- đưa bài toán về hệ bậc nhất hai ẩn;
+- giải hệ rồi quay lại biến ban đầu.
 
 ### Hệ có tham số
 
-- Bài tham số nhẹ để củng cố khái niệm nghiệm: **Core-Support**.
-- Biện luận số nghiệm, nghiệm nguyên/dương hoặc điều kiện sâu theo tham số: **Entrance10**.
+- **Mức củng cố:** thay giá trị tham số hoặc tìm hệ số để một cặp số là nghiệm.
+- **Mức ôn thi vào 10:** biện luận số nghiệm hoặc thêm điều kiện về nghiệm.
 
 ### Kết nối với hàm số
 
-Nghiệm của hệ là giao điểm của hai đường thẳng. Đây là mối nối trực tiếp sang Chuyên đề 10 và giúp học sinh hiểu vì sao hệ có một nghiệm, vô nghiệm hoặc vô số nghiệm.
+Nghiệm của hệ là giao điểm của hai đường thẳng. Hiểu mối liên hệ này sẽ giúp em học Chuyên đề 10 dễ hơn và nhìn rõ vì sao hệ có một nghiệm, vô nghiệm hoặc vô số nghiệm.
 
 
 ## ⚠️ 7. Lỗi sai thường gặp
@@ -752,25 +750,24 @@ Trong Practice Room:
 - **Luyện tự luận & trình bày:** tự giải trên giấy/vở rồi mở gợi ý hoặc lời giải để tự đối chiếu.
 - Core / Entrance10 / Challenge được tách rõ.
 
-!!! info "Phân biệt mục đích"
-    Micro-practice kiểm tra hiểu ngay; Practice Room dùng để **rèn kỹ năng**. Kết quả luyện tập là formative evidence, không phải điểm kiểm tra cuối chuyên đề.
+!!! info "Cách dùng phần luyện tập"
+    Câu hỏi ngắn giúp em kiểm tra ngay sau khi học. Practice Room dùng để **luyện sâu hơn** và xem giải thích khi cần.
 
 ---
 
-## ✅ 9. Tự kiểm tra mức độ sẵn sàng
+## ✅ 9. Tự kiểm tra
 
-Khi đã luyện tương đối chắc, hãy làm **Core Readiness Check**.
+Khi đã luyện tương đối chắc, hãy làm **bài tự kiểm tra**.
 
-[✅ Bắt đầu Core Readiness Check](tu-kiem-tra.md){ .md-button .md-button--primary }
+[✅ Bắt đầu bài tự kiểm tra](tu-kiem-tra.md){ .md-button .md-button--primary }
 
-Trong Readiness Check:
+Trong bài tự kiểm tra:
 
-- không hint và không Tutor khi đang làm;
+- không mở gợi ý hoặc lời giải khi đang làm;
 - không báo đúng/sai từng câu;
 - chỉ chấm sau khi bấm **Nộp bài**;
-- kết quả phân tích theo assessed skill;
-- là **Soft Mastery**: không khóa chuyên đề tiếp theo;
-- Entrance10 / Challenge không tính vào Core readiness.
+- kết quả giúp em biết phần nào nên ôn lại;
+- bài kiểm tra không khóa việc học chuyên đề tiếp theo.
 
 ---
 
@@ -795,14 +792,14 @@ Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi họ
 - [ ] Hiểu và giải thích được các quy tắc Core của chuyên đề.
 - [ ] Làm tương đối ổn định các skill Core trong Practice Room.
 - [ ] Không lặp lại ổn định cùng một lỗi nền tảng sau khi đã được chữa.
-- [ ] Core Readiness Check đạt khoảng **80%** hoặc học sinh đã hiểu và chữa được các lỗi còn lại.
+- [ ] Bài tự kiểm tra đạt khoảng **80%** hoặc em đã hiểu và chữa được các lỗi còn lại.
 - [ ] Có thể trình bày ít nhất một số bài tự luận Core mà không mở lời giải trước.
 
-!!! note "Soft Mastery"
-    Không cần đạt 100% mới được học tiếp. Nếu Readiness Check cho thấy một vài kỹ năng còn yếu, hệ thống khuyến nghị luyện lại đúng kỹ năng đó; học sinh vẫn có thể chuyển sang chuyên đề tiếp theo.
+!!! note "Không cần hoàn hảo mới học tiếp"
+    Không cần đạt 100% mới chuyển sang chuyên đề sau. Nếu còn phần chưa chắc, em có thể đánh dấu để quay lại luyện thêm.
 
-!!! warning "Core độc lập Extension"
-    Entrance10 và Specialized-Challenge không phải điều kiện để hoàn thành KNTT Core.
+!!! warning "Phần mở rộng là tùy chọn"
+    Nội dung ôn thi vào 10 và bài thử thách không phải điều kiện bắt buộc để hoàn thành phần kiến thức nền tảng.
 
 ---
 
@@ -812,7 +809,7 @@ Chuyên đề được xem là **đủ sẵn sàng để học tiếp** khi họ
 
 [🎯 Sang Phòng Luyện Tập](bai-tap.md){ .md-button .md-button--primary }
 
-[✅ Kiểm Tra Độ Sẵn Sàng](tu-kiem-tra.md){ .md-button }
+[✅ Tự kiểm tra](tu-kiem-tra.md){ .md-button }
 
 [→ 10 – Hàm số và đồ thị](../10-ham-so-do-thi/index.md){ .md-button }
 
