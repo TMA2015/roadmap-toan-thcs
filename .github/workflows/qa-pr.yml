@@ -158,6 +158,8 @@ jobs:
           python scripts/test-topic-roadmap-navigation.py
           node --check docs/assets/javascripts/written-exercise-library-v1.js
           node scripts/test-written-exercise-library-v1.js
+      - name: Validate CT09 Academic Depth P1-A
+        run: node scripts/test-topic09-academic-depth-p1a.js
       - name: Validate CĐ25 display math source
         run: node scripts/test-topic25-math-render.js
       - name: Validate CĐ25 student journey
