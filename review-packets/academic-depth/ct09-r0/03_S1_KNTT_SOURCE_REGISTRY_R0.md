@@ -45,7 +45,11 @@ Contains:
 - SGK Toán 9 tập 1 — SHA-256 `202bfd0af29fd14fc9e923e2545cb835cdd56cab62d90f0351440b1955145db7`
 - SGK Toán 9 tập 2 — SHA-256 `eda1f0014afff53915190cf893345221b1a5bfa35407d58cec67b527655b597c`
 
-**Missing from the uploaded Grade 9 package:** SBT Toán 9 tập 1 / tập 2.
+Additional owner uploads received on 2026-10-03:
+- SBT Toán 9 tập 1 — SHA-256 `ae9a23c66c5d9d273a0726d322c48be4cefa813bc6be9e69fc5d64a40e70a986` — 124 PDF pages
+- SBT Toán 9 tập 2 — SHA-256 `5ff01fd213d1adc75f9c54b4408d6a9642a4d8038e685040efef3311a196196c` — 144 PDF pages
+
+Grade 9 S1 set is now complete for SGK + SBT, both terms.
 
 ## 2. Source classification
 
@@ -97,11 +101,12 @@ This is sufficient to start the **SGK-side CT09 Core-boundary audit**.
 
 Status:
 - SGK Toán 9: **AVAILABLE**
-- SBT Toán 9: **MISSING**
+- SBT Toán 9: **AVAILABLE**
 - CT09 SGK chapter mapping: **CONFIRMED**
-- CT09 S1 extraction: **READY_TO_PROCEED**
+- CT09 SBT chapter mapping: **CONFIRMED**
+- CT09 S1 extraction: **ACTIVE**
 
-The pilot can now begin D1/Core-scope analysis from SGK. SBT Toán 9 remains highly useful for official exercise progression and should be added if the owner has it, but its absence no longer blocks initial SGK mapping.
+The Grade 9 S1 corpus is now sufficient to audit both curriculum scope and official exercise progression before bringing in S2/S3 comparison.
 
 ## 6. Future reuse across 25-topic audit
 
