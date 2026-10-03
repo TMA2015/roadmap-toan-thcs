@@ -160,6 +160,10 @@ jobs:
           node scripts/test-written-exercise-library-v1.js
       - name: Validate CT09 Academic Depth P1-A
         run: node scripts/test-topic09-academic-depth-p1a.js
+      - name: Validate CT09 Academic Depth P1-C1
+        run: |
+          node --check docs/assets/javascripts/practice-engine-v2.js
+          node scripts/test-topic09-p1c1-variant-groups.js
       - name: Validate Topic 22 shared workspace alignment
         run: node scripts/test-topic22-workspace-alignment.js
       - name: Validate learner-focused skill metadata
@@ -199,6 +203,7 @@ jobs:
           python scripts/test-skill-map-v2-i6b-public-browser.py
           python scripts/test-help-disclosure-toggle-browser.py
           python scripts/test-topic09-navigation-reading-browser.py
+          python scripts/test-topic09-p1c1-variant-browser.py
           python scripts/test-written-exercise-library-browser.py
       - name: Upload visual preview screenshots
         uses: actions/upload-artifact@v4
