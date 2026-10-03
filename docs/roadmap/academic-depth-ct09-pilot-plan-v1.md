@@ -1,7 +1,7 @@
 # CT09 Academic Depth Pilot Plan v1 — Hệ phương trình
 
 Date: 2026-10-03  
-Status: **PILOT PLAN / NO CONTENT EDIT YET**
+Status: **PILOT COMPLETE / SELF_LEARNING_READY_V1**
 
 ## 1. Why CT09
 
@@ -167,3 +167,23 @@ The most useful next owner inputs are:
 4. any existing grade-10 entrance exam collection the owner wants treated as the primary corpus.
 
 If multiple files belong to one source collection, they can be uploaded together; the project will register provenance first, then extract problem types rather than copying all questions into the site.
+
+
+---
+
+## 9. Pilot closure — 2026-10-03
+
+Final independent closure audit:
+
+- D1–D6: **PASS**
+- A1–A9: **PASS**
+- `PRIORITY_BADGE|KEEP`
+- `SELECTIVE_HINT_POLICY|PASS`
+- `SCHOOL_SEMESTER_FREQUENCY_GAP|NON_BLOCKING_INSUFFICIENT_SOURCE`
+- `OVERALL|SELF_LEARNING_READY_V1`
+- authorization: `CLEARED_FOR_CT09_SELF_LEARNING_READY_V1_CLOSURE`
+
+Durable receipt:
+- `review-packets/academic-depth/ct09-closure/02_CT09_SELF_LEARNING_READY_V1_PASS_RECEIPT.md`
+
+The pilot validates the Academic Depth Audit Standard as practical for controlled rollout. It does **not** authorize blind replication of CT09 content or mass edits across the other topics.
