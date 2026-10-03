@@ -1,5 +1,5 @@
 {
-  "version": "1.0.167",
+  "version": "1.0.168",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "Owner QA identified learner-focus issues in CT09 P1-A. Fixes are implemented on a dedicated QA branch: repaired MathJax delimiters, simplified student-facing copy, moved corpus/source-management detail back to the system layer, and made skill metadata optional/collapsed by default during Core practice while preserving evidence tracking. Next gate: exact-head CI, deploy, then owner visual QA before P1-B.",
+    "next_priority": "Second owner QA for CT09 P1-A found navigation and reading-UX issues after the first hotfix. A dedicated branch now fixes quick-nav routing, preserves Material TOC anchors through the H2→details transform, adds default-closed +/- TOC child groups, simplifies/collapses calculator guidance, and enlarges topic reading text. Next gate: exact-head CI with a new CT09 browser regression, then controlled deploy and owner recheck before P1-B.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -2131,7 +2131,7 @@
       ]
     },
     "academic_depth_phase": {
-      "status": "CT09_P1A_OWNER_QA_FIXES_IMPLEMENTED_PRE_CI",
+      "status": "CT09_P1A_OWNER_QA_NAV_READING_FIXES_PRE_CI",
       "branch": "academic-depth-framework-r1-20261003",
       "source_framework": "docs/roadmap/academic-source-framework-v1.md",
       "audit_standard": "docs/roadmap/academic-depth-audit-standard-v1.md",
@@ -2199,7 +2199,7 @@
       "ct09_gap_delta_authorization": "CT09_PILOT_ONLY",
       "ct09_gap_delta_review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md",
       "ct09_p1a": {
-        "status": "OWNER_QA_FIXES_IMPLEMENTED_PRE_CI",
+        "status": "OWNER_QA_NAV_READING_FIXES_PRE_CI",
         "scope": [
           "parameter-lite Core-Support vs Entrance10 split",
           "remove unsupported entrance-exam star-frequency labels",
@@ -2207,7 +2207,7 @@
           "deep original count/value modeling worked example",
           "calculator-support note"
         ],
-        "branch": "academic-depth-ct09-p1a-release-20261003",
+        "branch": "fix/ct09-navigation-reading-ux-20261003",
         "learner_history_mutation": false,
         "mastery_readiness_change": false,
         "backfill_regrade": false,
@@ -2222,6 +2222,22 @@
           "move corpus counts/years and internal layer terminology out of learner-facing CT09 copy",
           "simplify learner practice/self-check wording",
           "make skill overview and per-question skill metadata optional and collapsed by default across Core workspaces"
+        ],
+        "first_owner_hotfix_merge_sha": "daf3784d91333ce45445312ef109e111830b9c0f",
+        "first_owner_hotfix_deploy": "PASS",
+        "second_owner_qa_findings": [
+          "top quick-nav exam anchor did not activate after the H2 title changed",
+          "right-hand Material TOC anchors were broken by the H2-to-details transform except the unwrapped exam section",
+          "right-hand TOC subitems were too dense and needed default-closed +/- disclosure",
+          "calculator guidance should be shorter, policy-neutral and collapsible",
+          "topic reading text was visually too small relative to the infographic"
+        ],
+        "second_owner_qa_fixes": [
+          "map topic sections by numbered H2 fallback so renamed headings remain routable",
+          "preserve original H2 anchor IDs on section summaries and reveal closed parent cards for hash navigation",
+          "make right-hand TOC child groups default-closed with explicit +/− buttons",
+          "replace calculator subsection with a concise default-closed disclosure",
+          "increase topic lesson body text size to improve reading comfort"
         ]
       },
       "learner_focus_rule": {
