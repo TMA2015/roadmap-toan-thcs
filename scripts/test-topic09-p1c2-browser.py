@@ -9,7 +9,7 @@ if not CHROME:
 
 BASE = "http://127.0.0.1:8765/kien-thuc/09-he-phuong-trinh/bai-tap/"
 STORE_KEY = "toan-thcs-taxonomy-v2-evidence-v1"
-EXT_BLOB = "1b351a1a7532e669e662a073c202acd12aaed284"
+EXT_BLOB = "40cefdbd5fc6975e2a2b35ae41fe93d6b3541483"
 
 with sync_playwright() as p:
     browser = p.chromium.launch(
