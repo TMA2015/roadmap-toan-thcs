@@ -159,6 +159,8 @@ jobs:
 
       - name: Validate CT09 Academic Depth P1-A
         run: node scripts/test-topic09-academic-depth-p1a.js
+      - name: Validate Topic 22 shared workspace alignment
+        run: node scripts/test-topic22-workspace-alignment.js
       - name: Validate learner-focused skill metadata
         run: node scripts/test-learner-focus-skill-metadata.js
 
