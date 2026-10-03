@@ -408,6 +408,8 @@
       this.session = session;
       this.mode = mode;
       this.focusSkills = focusSkills;
+      this.root.dataset.sessionQuestionIds = session.map((question) => question.id).join(",");
+      this.root.dataset.sessionVariantGroups = session.map(questionVariantGroup).filter(Boolean).join(",");
       this.index = 0;
       this.score = 0;
       this.answered = false;
