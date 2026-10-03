@@ -7,6 +7,7 @@
   const CONTROLLED_BUILD = "skill-map-v2-i6-controlled-r1-20261003";
   const LAYER_ORDER = ["KNTT-Core", "Core-Support", "Entrance10", "THPT-Bridge", "Specialized-Challenge"];
   const OPTIONAL_LAYERS = new Set(["Entrance10", "THPT-Bridge", "Specialized-Challenge"]);
+  const NO_DIRECT_EVIDENCE_FAMILIES = new Set(["RATIO-MODEL", "ID-APPLY", "ID-PROOF", "RATEX-INTEGER"]);
   const LAYER_LABELS = Object.freeze({
     "KNTT-Core": "KNTT Core",
     "Core-Support": "Core Support",
@@ -231,6 +232,7 @@
     LAYER_LABELS,
     LEARNER_LAYER_LABELS,
     OPTIONAL_LAYERS,
+    NO_DIRECT_EVIDENCE_FAMILIES,
     TOPIC_LABELS,
     normalizedStore,
     normalizedLegacy,
@@ -454,6 +456,10 @@
           }
           card.append(status, metrics);
           card.append(el("p", "skill-map-v2-recent", "Lần luyện gần nhất: " + formatDate(summary.latest_at)));
+        } else if (NO_DIRECT_EVIDENCE_FAMILIES.has(family.family_id)) {
+          card.dataset.evidenceState = "NO_DIRECT_EVIDENCE";
+          card.append(el("p", "skill-map-v2-no-evidence",
+            "Hiện chưa có bài luyện trực tiếp cho kỹ năng này. Trạng thái này không có nghĩa là em yếu."));
         } else {
           card.append(el("p", "skill-map-v2-no-evidence",
             "Chưa có bằng chứng. Trạng thái này không có nghĩa là em yếu; hãy luyện tập để bắt đầu ghi nhận xu hướng."));
