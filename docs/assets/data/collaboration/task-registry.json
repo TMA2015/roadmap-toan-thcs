@@ -1,5 +1,5 @@
 {
-  "version": "1.0.159",
+  "version": "1.0.163",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1062,10 +1062,10 @@
       "id": "MATH-ACADEMIC-DEPTH-CT09-001",
       "title": "Academic Depth CT09 pilot — source-backed self-learning audit",
       "routing": "CHATGPT_SOURCE_ANALYSIS+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
-      "status": "OPEN",
-      "context_version": "1.0.159",
-      "review_verdict": "AUTHORIZED_TO_START_SOURCE_INTAKE",
-      "review_notes": "Framework R1 PASS authorizes CT09 only. Build S1/S2/S3 source corpus, normalize problem types, create coverage/frequency matrix, audit D1-D6, then create Content Delta Plan. No content implementation until source-backed audit is reviewed."
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.163",
+      "review_verdict": "SOURCE_NORMALIZATION_R0_COMPLETE_SITE_D1_D6_GAP_AUDIT_NEXT",
+      "review_notes": "CT09 source intake now includes complete S1 KNTT, VHB advanced/pedagogical extraction, S5 guard for generic advanced compilation, and official Hanoi entrance extraction with 2025–2026 current-program evidence separated from 2023–2024 historical continuity. Normalized 22 problem types in Coverage/Frequency Matrix R0. Exact current observation: system modeling 2/2 current exams; standalone direct system 0/2 current; transformed systems 2/2 historical. Next: audit current site D1–D6 and decide minimal pilot patch; no learner-facing edit yet."
     }
   ]
 }
