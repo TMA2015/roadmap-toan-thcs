@@ -138,7 +138,19 @@ Quy trình bắt buộc:
 !!! warning "Khử mẫu chỉ tương đương trên miền xác định"
     Khi nhân hai vế với mẫu chung, phép biến đổi chỉ được hiểu trên các giá trị đã thỏa **điều kiện xác định**. Vì vậy giá trị bị loại từ đầu không được lấy lại dù sau khi khử mẫu biểu thức mới có nghĩa tại giá trị đó.
 
-### 3.4. Bất phương trình bậc nhất một ẩn
+### 3.4. Bất đẳng thức và tính chất thứ tự
+
+Bất đẳng thức dùng các dấu (<,>,\le,\ge) để so sánh hai biểu thức. Ba quy tắc cần nhớ:
+
+- cộng hoặc trừ cùng một biểu thức ở hai vế → **giữ nguyên chiều**;
+- nhân hoặc chia hai vế với một **số dương** → **giữ nguyên chiều**;
+- nhân hoặc chia hai vế với một **số âm** → **đổi chiều**.
+
+Ví dụ, từ (a>b) suy ra (a+3>b+3), nhưng (-2a<-2b).
+
+> Không nhân/chia hai vế với một biểu thức chưa biết dấu rồi tự quyết định giữ hay đổi chiều. Nếu dấu chưa xác định, phải xét dấu hoặc tách trường hợp.
+
+### 3.5. Bất phương trình bậc nhất một ẩn
 
 Khi cộng hoặc trừ cùng một biểu thức vào hai vế, chiều bất phương trình được giữ nguyên. Khi nhân hoặc chia hai vế với một **số dương**, chiều được giữ nguyên; với một **số âm**, phải **đổi chiều bất phương trình**.
 
@@ -160,11 +172,25 @@ Hình trên giúp phân biệt nhanh:
 
 > Khi biểu diễn trên trục số, cần kiểm tra đồng thời **mốc biên** và **hướng của tập nghiệm**; chỉ đúng một trong hai vẫn là sai.
 
-### 3.5. Mở rộng – nhiều bất phương trình cùng điều kiện
+### 3.6. Ứng dụng Core – lập bất phương trình từ bài toán
+
+Khi một bài toán có các từ như **không vượt quá**, **ít nhất**, **tối đa**, **tối thiểu**, dữ kiện thường dẫn đến một bất phương trình.
+
+Ví dụ, một thùng chịu tối đa (18) kg, trong thùng đã có (6) kg. Mỗi hộp hàng thêm vào nặng (1{,}5) kg. Gọi (x) là số hộp thêm vào, với (x\in\mathbb N). Khi đó:
+
+[
+6+1{,}5x\le18
+]
+
+suy ra (x\le8). Vì (x) là số hộp nên nhiều nhất có thể thêm **8 hộp**.
+
+> Không dừng ở nghiệm đại số: cần đối chiếu đơn vị, điều kiện nguyên/không âm và ý nghĩa “tối đa / tối thiểu” trong ngữ cảnh.
+
+### 3.7. Củng cố – nhiều điều kiện đồng thời
 
 Khi cần tìm các giá trị thỏa mãn đồng thời nhiều bất phương trình một ẩn, giải từng bất phương trình rồi lấy **giao** các tập nghiệm.
 
-> Phần này dùng để rèn tư duy về giao tập nghiệm và hỗ trợ bài toán có nhiều điều kiện; không xem là trọng tâm cốt lõi ngang với phương trình và bất phương trình bậc nhất một ẩn.
+> Đây là **Core-Support / Củng cố**: hữu ích cho bài toán có nhiều điều kiện nhưng không tạo thêm một chuẩn Core Readiness riêng trong phiên bản hiện tại.
 
 #### Trực quan – giao các tập nghiệm
 
@@ -241,39 +267,108 @@ Nếu bài toán yêu cầu nhiều điều kiện phải đúng **đồng thờ
 
 #### Ví dụ 1 — Phương trình bậc nhất
 
-$$3x-5=10$$
+[
+3x-5=10
+]
 
-$$3x=15\Rightarrow x=5.$$
+[
+3x=15\Rightarrow x=5.
+]
 
-#### Ví dụ 2 — Phương trình tích
+#### Ví dụ 2 — Biến đổi rồi mới dùng tính chất tích bằng (0)
 
-$$x(x-3)=0$$
+Giải:
 
-$$x=0\quad\text{hoặc}\quad x=3.$$
+[
+x^2-5x+6=0.
+]
 
-#### Ví dụ 3 — Bất phương trình
+Ta chưa có dạng tích ngay. Phân tích:
 
-$$-2x+4>0$$
+[
+x^2-5x+6=(x-2)(x-3).
+]
 
-$$-2x>-4\Rightarrow x<2.$$
+Do đó:
 
-> Khi nhân/chia với số âm, **đổi chiều**.
+[
+(x-2)(x-3)=0
+]
+
+nên:
+
+[
+x=2\quad\text{hoặc}\quad x=3.
+]
+
+> Điểm cần học ở ví dụ này là **tạo được dạng tích**; chỉ sau đó mới dùng tính chất tích bằng (0).
+
+#### Ví dụ 3 — Thu gọn rồi mới giải bất phương trình
+
+Giải:
+
+[
+3(x-2)-5x\le4.
+]
+
+Thu gọn:
+
+[
+3x-6-5x\le4
+]
+
+[
+-2x\le10.
+]
+
+Chia hai vế cho (-2) nên phải đổi chiều:
+
+[
+x\ge-5.
+]
+
+> Không đổi chiều ở bước bỏ ngoặc hay chuyển vế; chỉ đổi chiều khi **nhân hoặc chia hai vế cho số âm**.
+
+#### Ví dụ 4 — Mô hình hóa bằng một ẩn
+
+Một tổ dự định làm cùng một số sản phẩm mỗi ngày. Trong 4 ngày đầu tổ làm đúng kế hoạch; 6 ngày sau, mỗi ngày làm nhiều hơn kế hoạch 3 sản phẩm. Sau 10 ngày tổ làm được 238 sản phẩm. Hỏi theo kế hoạch mỗi ngày tổ làm bao nhiêu sản phẩm?
+
+Gọi (x) là số sản phẩm dự định làm mỗi ngày, (x\in\mathbb N^*).
+
+- 4 ngày đầu làm (4x) sản phẩm;
+- 6 ngày sau làm (6(x+3)) sản phẩm.
+
+Theo tổng số sản phẩm:
+
+[
+4x+6(x+3)=238.
+]
+
+Giải:
+
+[
+10x+18=238\Rightarrow10x=220\Rightarrow x=22.
+]
+
+Kiểm tra: (4\cdot22+6\cdot25=88+150=238). Vậy theo kế hoạch tổ làm **22 sản phẩm/ngày**.
+
+!!! warning "Mô hình dễ nhầm"
+    Không viết (10(x+3)=238), vì chỉ **6 ngày sau** mới tăng thêm 3 sản phẩm/ngày; 4 ngày đầu vẫn làm theo mức (x).
 
 ---
 
-## 🚀 6. Dạng bài thi vào lớp 10
+## 🚀 6. Ôn tập và chuyển giao thi vào lớp 10
 
-| Dạng | Ưu tiên | Kỹ năng cần đạt |
-|---|---:|---|
-| Phương trình cơ bản | ⭐⭐⭐⭐⭐ | Giải nhanh, chính xác |
-| Phương trình tích | ⭐⭐⭐⭐ | Phân tích và giải đúng |
-| Phương trình chứa ẩn ở mẫu | ⭐⭐⭐⭐⭐ | ĐKXĐ + khử mẫu + đối chiếu |
-| Bất phương trình | ⭐⭐⭐⭐ | Biến đổi và biểu diễn nghiệm |
-| Nhiều bất phương trình cùng điều kiện (mở rộng) | ⭐⭐⭐ | Lấy giao tập nghiệm |
-| Lập phương trình từ bài toán | ⭐⭐⭐⭐⭐ | Mô hình hóa |
-| Bài toán tham số/nâng cao | ⭐⭐⭐ | Biện luận |
+| Nhóm bài | Vai trò trong lộ trình | Kỹ năng cần đạt |
+|---|---|---|
+| Phương trình bậc nhất, phương trình tích, phương trình chứa ẩn ở mẫu | **Nền tảng KNTT** | Biến đổi đúng, kiểm soát điều kiện, kết luận đủ nghiệm |
+| Bất đẳng thức và bất phương trình bậc nhất | **Nền tảng KNTT** | Dùng đúng tính chất thứ tự, đổi chiều đúng lúc, biểu diễn nghiệm |
+| Lập phương trình từ bài toán | **Ứng dụng KNTT · có giá trị chuyển giao** | Chọn ẩn, lập quan hệ, giải và kiểm tra bối cảnh |
+| Lập bất phương trình từ bài toán | **Ứng dụng KNTT** | Nhận ra ràng buộc tối đa/tối thiểu, giải và diễn giải cận |
+| Nhiều điều kiện đồng thời | **Củng cố / Core-Support** | Lấy giao các điều kiện và đọc khoảng nghiệm |
+| Bài toán tham số | **Ôn thi vào 10 / Thử thách** | Xét trường hợp an toàn, không chia cho biểu thức chưa biết khác 0 |
 
-> ⭐ là **mức độ ưu tiên ôn tập của Roadmap**, không phải cam kết dạng bài sẽ xuất hiện trong mọi đề thi địa phương.
+> **Bằng chứng chuyển giao:** trong 2 đề Toán tuyển sinh lớp 10 không chuyên Hà Nội chương trình mới 2025–2026 đã rà soát, mô hình hóa bằng phương trình một ẩn xuất hiện ở cả 2 đề. Đây là mô tả một mẫu nhỏ (n=2), **không phải dự đoán tần suất đề thi**.
 
 ---
 
