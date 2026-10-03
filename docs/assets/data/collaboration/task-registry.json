@@ -1,5 +1,5 @@
 {
-  "version": "1.0.182",
+  "version": "1.0.183",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1146,9 +1146,9 @@
       "title": "Academic Depth CT08 — source-backed self-learning audit",
       "routing": "SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_QA",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.182",
-      "review_verdict": "R0_NOTEBOOKLM_REVIEW_PACKET_READY",
-      "review_notes": "CT08 R0 source-backed packet is ready. S1 SGK/SBT, S2 pedagogical reference and official Hanoi 2025-2026 S3 (n=2) are extracted. Candidate D1-D6 all REVISE/P1 pending independent review. Key proposed corrections: inequality modeling layer Entrance10→KNTT-Core application; reconcile multi-condition layer; replace row-level star ranking; bounded x--n notation cleanup; deepen transform-to-product/transformed inequality/modeling examples; ~3-4 deep written anchors; variant-group anti-clone delivery + only ~3-5 targeted interactive additions; selective hints only. No learner-facing edit yet.",
+      "context_version": "1.0.183",
+      "review_verdict": "R0_CI_PASS_AWAITING_SUPPLEMENTAL_CORPUS_AND_NOTEBOOKLM",
+      "review_notes": "Draft PR #303 exact-head CI #655 PASS. Owner offered a ZIP of Grade 6-9 school exams, Grade-10 entrance exams and study materials. Ingest plan added: inventory/provenance/deduplicate, classify S1/S2/S3/S4, extract CT08 problem types, and revise packet to R1 before NotebookLM if evidence materially changes. No learner-facing edit yet.",
       "review_packet": "review-packets/academic-depth/ct08-r0/10_NOTEBOOKLM_CT08_GAP_DELTA_R0.md"
     }
   ]
