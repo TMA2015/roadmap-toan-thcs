@@ -9,17 +9,22 @@ This file registers candidate sources for the CT09 pilot. It does not yet classi
 
 ### S1-KNTT9-SYSTEMS
 - Class: S1
-- Status: AWAITING_OWNER_SOURCE
-- Needed: relevant Grade 9 KNTT textbook pages/lesson(s) on systems of equations.
+- Status: AVAILABLE_AND_MAPPED
+- Owner package: `KNTT TOAN 9.zip`
+- Source: SGK Toán 9 tập 1 — Kết nối tri thức với cuộc sống.
+- CT09 mapping: Chapter I, printed pp.5–25.
+- Scope visibly confirmed: concept of linear equations/systems, substitution, elimination, common practice, solving problems by setting up systems, end-of-chapter exercises.
 - Intended use: confirm Core scope, terminology, method expectations and layer boundaries.
-- Reuse mode: REFERENCE_ONLY unless usage rights are explicitly clear.
+- Reuse mode: REFERENCE_ONLY.
+- Registry: `03_S1_KNTT_SOURCE_REGISTRY_R0.md`
 
 ### S1-KNTT9-WORKBOOK-SYSTEMS
 - Class: S1
-- Status: AWAITING_OWNER_SOURCE
-- Needed: relevant KNTT workbook/exercise material.
+- Status: NOT_PRESENT_IN_OWNER_GRADE9_PACKAGE
+- Needed: SBT Toán 9 KNTT tập 1 / relevant system-equation chapter if available.
 - Intended use: observe official practice progression and representative problem forms.
 - Reuse mode: REFERENCE_ONLY by default.
+- Blocking: does not block initial SGK Core-boundary analysis; remains desirable before final source sufficiency closure.
 
 ## S2 — Pedagogical/reference sources
 
@@ -130,10 +135,12 @@ Use only if the owner later wants a separate Specialized-Challenge audit.
 ## Source sufficiency checkpoint
 
 Do not start final CT09 frequency/coverage claims until:
-- S1 textbook scope is available;
+- S1 SGK Core scope is extracted from the now-available KNTT Grade 9 source;
 - at least one S2 pedagogical source is registered;
 - S3 Hanoi entrance corpus is extracted;
 - selected school-test S3 sample is documented, or explicitly deferred.
+
+SBT Toán 9 remains desirable for official exercise-progression evidence but does not block the initial SGK-side audit.
 
 ## Next extraction output
 
