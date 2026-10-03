@@ -29,7 +29,7 @@ with sync_playwright() as p:
     root = page.locator("[data-practice-bank-v2]")
     root.wait_for(state="attached", timeout=15000)
     page.wait_for_function(
-        """document.querySelector('[data-practice-bank-v2]')?.dataset.practiceReadyV2 === '1'""",
+        """document.querySelector('[data-practice-bank-v2]')?.dataset.practiceReadyV2 === 'true'""",
         timeout=15000,
     )
 
