@@ -111,7 +111,7 @@ const TOPICS={
    bridgeOnly:true,
    description:"Nhánh tự chọn chuẩn bị Toán 10: trung bình, trung vị, mốt, khoảng biến thiên và cách chọn đại lượng đại diện.",
    chips:["THPT-Bridge","Tự chọn","Thống kê","Chuẩn bị Toán 10"],
-   progressSkills:["mean","median","mode","range","outlier","representative-measure"]
+   progressSkills:["trung-binh-tho","trung-binh-tan-so","trung-vi","mot","nhieu-mot","khoang-bien-thien","ngoai-lai","so-sanh-trung-binh-trung-vi","chon-dai-luong","so-sanh-hai-bo"]
  },
  "24-bai-toan-thuc-te":{number:"24",data:"assets/data/curriculum/topic24-learning-workspace.json",description:"Đọc dữ kiện, chọn mô hình, tính toán rồi kiểm tra đáp án trong thực tế.",chips:["Ứng dụng xuyên lớp","Lớp 6–9","Mô hình hóa","⭐⭐⭐⭐⭐"],progressSkills:["doc-de-du-kien","doi-don-vi","phan-tram","lap-phuong-trinh","lap-he","kiem-tra-ket-luan"]},
  "25-tong-hop-on-thi-10":{number:"25",data:"assets/data/curriculum/topic25-learning-workspace.json",description:"Nhận dạng dạng bài, ôn liên mạch và xây chu trình làm đề – chữa lỗi.",chips:["Entrance10","Ôn tập lớp 9","Tổng hợp","⭐⭐⭐⭐⭐"],progressSkills:["nhan-dien-chuyen-de","on-thi-bieu-thuc-can","on-thi-phuong-trinh","on-thi-he","on-thi-ham-so","on-thi-hinh-hoc","on-thi-thong-ke","on-thi-xac-suat","phan-loai-loi","checklist-chua-de"]},
