@@ -59,3 +59,10 @@
   .written-exercise-card{break-inside:avoid;box-shadow:none}
   .written-help-panel[hidden]{display:block!important}
 }
+
+/* CT09 P1-B deep written anchors: progressive help without learner-evidence writes. */
+.written-help.is-deep-anchor .written-help-actions{grid-template-columns:repeat(5,minmax(0,1fr))}
+.written-hint-step+.written-hint-step{border-top:1px solid var(--md-default-fg-color--lightest);margin-top:.7rem;padding-top:.7rem}
+.written-hint-step h3,.written-anchor-method h3{margin:.1rem 0 .35rem;font-size:.82rem}
+.written-anchor-method{margin-top:.8rem;padding-top:.75rem;border-top:1px solid var(--md-default-fg-color--lightest)}
+@media (max-width:760px){.written-help.is-deep-anchor .written-help-actions{grid-template-columns:repeat(2,minmax(0,1fr))}}
