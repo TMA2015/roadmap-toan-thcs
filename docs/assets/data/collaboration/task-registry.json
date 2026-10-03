@@ -1,5 +1,5 @@
 {
-  "version": "1.0.160",
+  "version": "1.0.161",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1063,9 +1063,9 @@
       "title": "Academic Depth CT09 pilot — source-backed self-learning audit",
       "routing": "CHATGPT_SOURCE_ANALYSIS+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.160",
-      "review_verdict": "SOURCE_INTAKE_ACTIVE",
-      "review_notes": "Official Hà Nội grade-10 entrance exams 2023–2026 are registered as primary S3. Loigiaihay Grade 9 KNTT exam index is accessible and registered as a secondary discovery/reference source. Generic numbered sets are S2 exam-style reference only; named-school items become S3 candidates only after provenance verification. A QC sample found an internally contradictory explanation on a generic page, so Loigiaihay solution text is not curriculum authority. Await S1 KNTT textbook/workbook and at least one trusted S2 source before final problem-type/frequency audit."
+      "context_version": "1.0.161",
+      "review_verdict": "S1_KNTT_COMPLETE_S2_S3_NEXT",
+      "review_notes": "Owner supplied SBT Toán 9 tập 1 and tập 2. CT09 S1 now includes SGK + SBT Chapter I. SBT extraction confirms official exercise progression across concept/representation, substitution/elimination, solution-count structures, calculator use, coefficient/parameter-lite tasks and varied real-world modeling. No learner-facing content changes yet. Next: S2 pedagogical source + verified S3 extraction, then normalized problem-type catalogue and Coverage/Frequency Matrix."
     }
   ]
 }
