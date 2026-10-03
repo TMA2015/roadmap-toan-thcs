@@ -196,6 +196,7 @@ jobs:
           python scripts/test-skill-map-v2-i6-controlled-browser.py
           python scripts/test-skill-map-v2-i6b-public-browser.py
           python scripts/test-help-disclosure-toggle-browser.py
+          python scripts/test-topic09-navigation-reading-browser.py
           python scripts/test-written-exercise-library-browser.py
       - name: Upload visual preview screenshots
         uses: actions/upload-artifact@v4
