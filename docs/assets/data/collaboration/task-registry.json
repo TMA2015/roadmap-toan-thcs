@@ -1,5 +1,5 @@
 {
-  "version": "1.0.177",
+  "version": "1.0.178",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1063,9 +1063,9 @@
       "title": "Academic Depth CT09 pilot — source-backed self-learning audit",
       "routing": "CHATGPT_SOURCE_ANALYSIS+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.177",
+      "context_version": "1.0.178",
       "review_verdict": "NOTEBOOKLM_10_OF_10_PASS_CT09_IMPLEMENTATION_AUTHORIZED",
-      "review_notes": "CT09 pilot IN_PROGRESS. P1-A/P1-B/P1-C1 are closed Owner QA PASS. P1-C2 is live: academic review PASS, exact-head CI #644 PASS, deploy #552 PASS, 129 Practice questions / 27 structural groups verified. P1-C2 owner production QA is the remaining gate.",
+      "review_notes": "CT09 pilot IN_PROGRESS pending next Academic Depth decision. P1-A, P1-B, P1-C1 and P1-C2 are all closed Owner QA PASS. P1-C delivered anti-clone session diversity plus nine targeted reviewed interactive additions without Mastery/Readiness expansion, backfill/regrade or historical migration.",
       "review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md"
     },
     {
@@ -1112,13 +1112,14 @@
       "id": "MATH-ACADEMIC-DEPTH-CT09-P1C2-001",
       "title": "CT09 Academic Depth P1-C2 — targeted interactive coverage",
       "routing": "NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_PRODUCTION_QA",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.177",
-      "review_verdict": "LIVE_OWNER_PRODUCTION_QA_PENDING",
-      "review_notes": "P1-C2 is live in production after exact-head Roadmap PR Quality #644 PASS, merge 6709e1a..., Deploy MkDocs #552 PASS, and gh-pages verification at 4fe2f34.... CT09 now has 129 Practice questions and 27 structural groups; SYS09V1_121..129 are present. Owner production QA remains the final gate. Mastery/Readiness, backfill/regrade, attempt migration and historical IDs remain unchanged.",
+      "status": "DONE",
+      "context_version": "1.0.178",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "P1-C2 learner-facing production QA is explicitly PASS. Nine reviewed append-only questions SYS09V1_121..129 are live; CT09 Practice has 129 questions / 27 structural groups. Exact-head CI #644 and deploy #552 passed. No Mastery/Readiness, backfill/regrade or attempt migration.",
       "review_packet": "review-packets/academic-depth/ct09-p1c2/01_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_CANDIDATES_R1.md",
       "review_receipt": "review-packets/academic-depth/ct09-p1c2/02_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_R1_PASS_RECEIPT.md",
-      "release_receipt": "review-packets/academic-depth/ct09-p1c2/03_CT09_P1C2_PRODUCTION_RELEASE.md"
+      "release_receipt": "review-packets/academic-depth/ct09-p1c2/03_CT09_P1C2_PRODUCTION_RELEASE.md",
+      "owner_qa_receipt": "review-packets/academic-depth/ct09-p1c2/04_CT09_P1C2_OWNER_QA_PASS.md"
     }
   ]
 }
