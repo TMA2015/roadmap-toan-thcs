@@ -1,0 +1,103 @@
+{
+  "schema": "roadmap-stat22-layer-audit-v1",
+  "version": 1,
+  "topic_id": "22-dai-luong-dac-trung",
+  "review_packet_id": "STAT22-MAP-GEMINI-REVIEW-001-RESULT",
+  "review_verdict": "ACCEPT_WITH_CORRECTIONS",
+  "topic_primary_layer": "THPT-Bridge",
+  "core_readiness_eligible": false,
+  "grade_6_to_9_primary_map_refs": 0,
+  "skills": [
+    {
+      "id": "trung-binh-tho",
+      "topic_layer": "THPT-Bridge",
+      "grade10_book": "Toán 10 KNTT tập 1",
+      "source_lesson": "Chương V – Bài 13",
+      "notes": "Basic arithmetic mean is prior Grade-4 knowledge; its use as a formal descriptive-statistics indicator is revisited in Grade 10. Keep Grade-4 prerequisite separate from this topic's Bridge layer."
+    },
+    {
+      "id": "trung-binh-tan-so",
+      "topic_layer": "THPT-Bridge",
+      "grade10_book": "Toán 10 KNTT tập 1",
+      "source_lesson": "Chương V – Bài 13",
+      "notes": null
+    },
+    {
+      "id": "trung-vi",
+      "topic_layer": "THPT-Bridge",
+      "grade10_book": "Toán 10 KNTT tập 1",
+      "source_lesson": "Chương V – Bài 13",
+      "notes": null
+    },
+    {
+      "id": "mot",
+      "topic_layer": "THPT-Bridge",
+      "grade10_book": "Toán 10 KNTT tập 1",
+      "source_lesson": "Chương V – Bài 13",
+      "notes": null
+    },
+    {
+      "id": "nhieu-mot",
+      "topic_layer": "THPT-Bridge",
+      "grade10_book": "Toán 10 KNTT tập 1",
+      "source_lesson": "Chương V – Bài 13",
+      "notes": "Distinguish multiple modes and a sample with no dominant mode; wording follows book convention rather than asserting a universal mathematical definition."
+    },
+    {
+      "id": "khoang-bien-thien",
+      "topic_layer": "THPT-Bridge",
+      "grade10_book": "Toán 10 KNTT tập 1",
+      "source_lesson": "Chương V – Bài 14",
+      "notes": null
+    },
+    {
+      "id": "ngoai-lai",
+      "topic_layer": "THPT-Bridge",
+      "grade10_book": "Toán 10 KNTT tập 1",
+      "source_lesson": "Chương V – Bài 14",
+      "notes": "Only informal unusually different values in the current topic; quantitative outlier detection must be source-locked and reviewed separately."
+    },
+    {
+      "id": "so-sanh-trung-binh-trung-vi",
+      "topic_layer": "THPT-Bridge",
+      "grade10_book": "Toán 10 KNTT tập 1",
+      "source_lesson": "Chương V – Bài 13",
+      "notes": null
+    },
+    {
+      "id": "chon-dai-luong",
+      "topic_layer": "THPT-Bridge",
+      "grade10_book": "Toán 10 KNTT tập 1",
+      "source_lesson": "Chương V – Bài 13",
+      "notes": null
+    },
+    {
+      "id": "so-sanh-hai-bo",
+      "topic_layer": "THPT-Bridge",
+      "grade10_book": "Toán 10 KNTT tập 1",
+      "source_lesson": "Chương V – Bài 13–14",
+      "notes": null
+    }
+  ],
+  "grade4_prerequisite": {
+    "skill": "trung-binh-tho",
+    "scope": "basic arithmetic mean (sum / number of terms)",
+    "source": "Toán 4 KNTT tập 2, Bài 46: Tìm số trung bình cộng",
+    "relation": "prior-knowledge/Core-Support; not proof that the entire CĐ22 statistical curriculum is THCS Core"
+  },
+  "sources": [
+    {
+      "title": "Toán 4 KNTT, Bài 46",
+      "url": "https://www.sachgiaokhoa.online/lop-4-7/ket-noi-tri-thuc-voi-cuoc-song-3/chu-de-8-phep-nhan-va-phep-chia-2055/bai-46-tim-so-trung-binh-cong-6950.html"
+    },
+    {
+      "title": "Toán 10 KNTT, Chương V Bài 13–14",
+      "url": "https://www.sachgiaokhoa.online/lop-10-13/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-v-cac-so-dac-trung-cua-mau-so-lieu-khong-ghep-nhom-3101.html"
+    },
+    {
+      "title": "Toán 9 KNTT, bảng tần số/tần số tương đối ghép nhóm",
+      "url": "https://loigiaihay.com/ly-thuyet-bang-tan-so-tan-so-tuong-doi-ghep-nhom-va-bieu-do-toan-9-ket-noi-tri-thuc-a174019.html"
+    }
+  ],
+  "rule": "CĐ22 is an optional transition topic, not a required Grade-6–9 KNTT Core milestone; no hard mastery gate. Preserve all old practice content and attempt evidence. Avoid claiming all ten concepts were first encountered in Grade 10."
+}

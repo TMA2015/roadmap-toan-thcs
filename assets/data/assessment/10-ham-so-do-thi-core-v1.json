@@ -1,0 +1,200 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "FUN10-CORE-READY-V1",
+  "topic": {
+    "id": "10-ham-so-do-thi",
+    "title": "Chuyên đề 10 – Hàm số và đồ thị"
+  },
+  "layer": "KNTT-Core",
+  "title": "Core Readiness Check – Chuyên đề 10 – Hàm số và đồ thị",
+  "skill_labels": {
+    "khai-niem-ham-so": "Khái niệm hàm số",
+    "tinh-gia-tri-ham": "Tính giá trị hàm",
+    "bang-gia-tri": "Bảng giá trị",
+    "toa-do-diem": "Tọa độ điểm",
+    "diem-thuoc-do-thi": "Điểm thuộc đồ thị",
+    "nhan-biet-ham-bac-nhat": "Nhận biết hàm bậc nhất",
+    "he-so-goc": "Hệ số góc",
+    "tung-do-goc": "Tung độ gốc",
+    "dong-nghich-bien": "Đồng/nghịch biến",
+    "ve-do-thi-ham-bac-nhat": "Vẽ đồ thị bậc nhất",
+    "ham-y-ax2": "Hàm y=ax²",
+    "doi-xung-parabol": "Đối xứng parabol",
+    "diem-thuoc-parabol": "Điểm thuộc parabol"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "FUN10READY_001",
+      "type": "mcq",
+      "skill": "tinh-gia-tri-ham",
+      "points": 1,
+      "question": "Cho \\(f(x)=3x-1\\). \\(f(2)=\\)",
+      "options": [
+        "5",
+        "7",
+        "3",
+        "-5"
+      ],
+      "answer": 0,
+      "explanation": "3·2-1=5."
+    },
+    {
+      "id": "FUN10READY_002",
+      "type": "mcq",
+      "skill": "bang-gia-tri",
+      "points": 1,
+      "question": "Với \\(y=2x+1\\), khi \\(x=-1\\) thì cặp giá trị là:",
+      "options": [
+        "\\((-1;-1)\\)",
+        "\\((-1;1)\\)",
+        "\\((1;-1)\\)",
+        "\\((1;3)\\)"
+      ],
+      "answer": 0,
+      "explanation": "y=2(-1)+1=-1."
+    },
+    {
+      "id": "FUN10READY_003",
+      "type": "mcq",
+      "skill": "toa-do-diem",
+      "points": 1,
+      "question": "Điểm \\(M(3;-2)\\) có tung độ là:",
+      "options": [
+        "-2",
+        "3",
+        "2",
+        "-3"
+      ],
+      "answer": 0,
+      "explanation": "Tung độ là tọa độ thứ hai."
+    },
+    {
+      "id": "FUN10READY_004",
+      "type": "mcq",
+      "skill": "diem-thuoc-do-thi",
+      "points": 1,
+      "question": "Điểm nào thuộc \\(y=3x+1\\)?",
+      "options": [
+        "\\((2;7)\\)",
+        "\\((2;6)\\)",
+        "\\((1;3)\\)",
+        "\\((0;0)\\)"
+      ],
+      "answer": 0,
+      "explanation": "3·2+1=7."
+    },
+    {
+      "id": "FUN10READY_005",
+      "type": "mcq",
+      "skill": "nhan-biet-ham-bac-nhat",
+      "points": 1,
+      "question": "Hàm số nào là bậc nhất?",
+      "options": [
+        "\\(y=-2x+4\\)",
+        "\\(y=x^2\\)",
+        "\\(y=4\\)",
+        "\\(y=1/x\\)"
+      ],
+      "answer": 0,
+      "explanation": "Dạng ax+b với a≠0."
+    },
+    {
+      "id": "FUN10READY_006",
+      "type": "mcq",
+      "skill": "he-so-goc",
+      "points": 1,
+      "question": "Hệ số góc của \\(y=5-4x\\) là:",
+      "options": [
+        "-4",
+        "5",
+        "4",
+        "-5"
+      ],
+      "answer": 0,
+      "explanation": "Viết y=-4x+5 nên a=-4."
+    },
+    {
+      "id": "FUN10READY_007",
+      "type": "mcq",
+      "skill": "dong-nghich-bien",
+      "points": 1,
+      "question": "Hàm \\(y=3x-2\\) là:",
+      "options": [
+        "Đồng biến",
+        "Nghịch biến",
+        "Hàm hằng",
+        "Không xác định"
+      ],
+      "answer": 0,
+      "explanation": "a=3>0."
+    },
+    {
+      "id": "FUN10READY_008",
+      "type": "mcq",
+      "skill": "ve-do-thi-ham-bac-nhat",
+      "points": 1,
+      "question": "Hai điểm nào cùng thuộc \\(y=x+1\\)?",
+      "options": [
+        "\\((0;1)\\), \\((1;2)\\)",
+        "\\((0;0)\\), \\((1;1)\\)",
+        "\\((0;1)\\), \\((1;1)\\)",
+        "\\((1;0)\\), \\((2;1)\\)"
+      ],
+      "answer": 0,
+      "explanation": "Thay x=0,1 cho y lần lượt 1,2."
+    },
+    {
+      "id": "FUN10READY_009",
+      "type": "mcq",
+      "skill": "ham-y-ax2",
+      "points": 1,
+      "question": "Với \\(y=-2x^2\\), khi \\(x=2\\) thì y bằng:",
+      "options": [
+        "-8",
+        "8",
+        "-4",
+        "4"
+      ],
+      "answer": 0,
+      "explanation": "-2·2²=-8."
+    },
+    {
+      "id": "FUN10READY_010",
+      "type": "mcq",
+      "skill": "doi-xung-parabol",
+      "points": 1,
+      "question": "Đồ thị \\(y=3x^2\\) có:",
+      "options": [
+        "Trục đối xứng Oy và mở lên.",
+        "Trục đối xứng Ox và mở lên.",
+        "Trục đối xứng Oy và mở xuống.",
+        "Không đối xứng."
+      ],
+      "answer": 0,
+      "explanation": "Dạng y=ax² có trục Oy; a>0 mở lên."
+    }
+  ],
+  "next_topic": {
+    "id": "11-can-thuc",
+    "title": "Chuyên đề 11 – Căn thức và biến đổi căn thức"
+  }
+}

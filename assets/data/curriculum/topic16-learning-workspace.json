@@ -1,0 +1,250 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "16-tu-giac",
+  "title": "Tứ giác và các hình đặc biệt",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only mapped Core cards contribute to readiness; support/extension content never gates Core."
+  },
+  "cards": [
+    {
+      "id": "geo16-core-1",
+      "order": 1,
+      "title": "Tứ giác, hình thang và hình thang cân",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tong-goc-tu-giac",
+        "hinh-thang",
+        "hinh-thang-can"
+      ],
+      "prerequisites": [
+        "tinh-chat-song-song"
+      ],
+      "micro_practice": [
+        "GEO16MICRO_001",
+        "GEO16MICRO_002",
+        "GEO16MICRO_003"
+      ],
+      "teaching_copy": {
+        "key_idea": "Tổng bốn góc trong một tứ giác là \\(360^\\circ\\). Theo định nghĩa đang dùng trong bài học, hình thang có ít nhất một cặp cạnh đối song song; hình bình hành cũng thỏa định nghĩa rộng này. Hình thang cân có hai góc kề một đáy bằng nhau, hai cạnh bên và hai đường chéo bằng nhau. Đường trung bình nối trung điểm hai cạnh bên, song song hai đáy và dài bằng nửa tổng hai đáy.",
+        "worked_example": {
+          "problem": "Cho hình thang ABCD với \\(AB\\parallel CD\\), \\(AB=6\\) cm, \\(CD=10\\) cm. M, N lần lượt là trung điểm AD và BC. Tính MN.",
+          "solution": "Bước 1: Vì M, N là trung điểm hai cạnh bên, MN là đường trung bình hình thang.\nBước 2: \\(MN=\\dfrac{AB+CD}{2}=\\dfrac{6+10}{2}=8\\) cm.\nBước 3: \\(MN\\parallel AB\\parallel CD\\). Không dùng công thức nửa một đáy của đường trung bình tam giác."
+        },
+        "misconception": "Dùng (MN=CD/2) như trong tam giác, hoặc suy ra hai cạnh bên bằng nhau chỉ từ giả thiết hình thang chưa cân.",
+        "summary": "Hình thang: một cặp cạnh đối song song; đường trung bình bằng nửa tổng hai đáy.",
+        "source_reference": "docs/kien-thuc/16-tu-giac/index.md",
+        "source_sections": [
+          "3.1",
+          "3.2",
+          "3.2A"
+        ],
+        "source_question_ids": [
+          "GEO16MICRO_001",
+          "GEO16MICRO_002",
+          "GEO16MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "geo16-core-2",
+      "order": 2,
+      "title": "Hình bình hành",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "hbh-tinh-chat",
+        "hbh-dau-hieu"
+      ],
+      "prerequisites": [
+        "trung-diem"
+      ],
+      "micro_practice": [
+        "GEO16MICRO_004",
+        "GEO16MICRO_005",
+        "GEO16MICRO_006"
+      ],
+      "teaching_copy": {
+        "key_idea": "Hình bình hành có hai cặp cạnh đối song song; cạnh đối/góc đối bằng nhau, hai góc kề bù nhau, hai đường chéo cắt nhau tại trung điểm của mỗi đường. Các dấu hiệu đủ thường dùng: hai cặp cạnh đối song song, hai cặp cạnh đối bằng nhau, một cặp cạnh đối vừa song song vừa bằng nhau, hoặc hai đường chéo cắt nhau tại trung điểm mỗi đường.",
+        "worked_example": {
+          "problem": "Tứ giác ABCD có hai đường chéo AC, BD cắt tại O và \\(OA=OC=4\\) cm, \\(OB=OD=3\\) cm. Kết luận hình gì?",
+          "solution": "Bước 1: Từ \\(OA=OC\\) suy ra O là trung điểm AC; từ \\(OB=OD\\) suy ra O là trung điểm BD (O nằm trên mỗi đường chéo).\nBước 2: Hai đường chéo cắt nhau tại trung điểm mỗi đường nên ABCD là hình bình hành.\nBước 3: Không có giả thiết AC=BD hay AC vuông góc BD để suy ra hình chữ nhật hoặc hình thoi."
+        },
+        "misconception": "Thấy hai đường chéo cắt nhau rồi kết luận hình bình hành mà chưa chứng minh chúng chia đôi nhau.",
+        "summary": "Hai đường chéo cùng bị chia đôi tại giao điểm là dấu hiệu đủ của hình bình hành.",
+        "source_reference": "docs/kien-thuc/16-tu-giac/index.md",
+        "source_sections": [
+          "3.3"
+        ],
+        "source_question_ids": [
+          "GEO16MICRO_004",
+          "GEO16MICRO_005",
+          "GEO16MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "geo16-core-3",
+      "order": 3,
+      "title": "Hình chữ nhật",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "hcn-tinh-chat",
+        "hcn-dau-hieu"
+      ],
+      "prerequisites": [
+        "hbh-dau-hieu",
+        "duong-vuong-goc"
+      ],
+      "micro_practice": [
+        "GEO16MICRO_007",
+        "GEO16MICRO_008",
+        "GEO16MICRO_009"
+      ],
+      "teaching_copy": {
+        "key_idea": "Hình chữ nhật là hình bình hành có một góc vuông, tương đương tứ giác có ba góc vuông. Hai đường chéo hình chữ nhật bằng nhau và chia đôi nhau. Chiều ngược cần tiền đề: **hình bình hành** có hai đường chéo bằng nhau là hình chữ nhật; một tứ giác bất kỳ có hai đường chéo bằng nhau chưa đủ.",
+        "worked_example": {
+          "problem": "Cho ABCD là hình bình hành có \\(AC=BD=10\\) cm. Chứng minh ABCD là hình chữ nhật và tính \\(OA\\) nếu O là giao điểm hai đường chéo.",
+          "solution": "Bước 1: ABCD là hình bình hành, đồng thời có hai đường chéo bằng nhau, nên theo dấu hiệu nhận biết ABCD là hình chữ nhật.\nBước 2: Đường chéo hình bình hành bị giao điểm chia đôi, nên \\(OA=\\frac12 AC=5\\) cm.\nBước 3: Không chỉ dùng giả thiết \\(AC=BD\\) khi chưa biết ABCD là hình bình hành."
+        },
+        "misconception": "Áp dụng dấu hiệu hình chữ nhật cho tứ giác tùy ý chỉ vì hai đường chéo bằng nhau.",
+        "summary": "Hình bình hành + hai đường chéo bằng nhau → hình chữ nhật.",
+        "source_reference": "docs/kien-thuc/16-tu-giac/index.md",
+        "source_sections": [
+          "3.4"
+        ],
+        "source_question_ids": [
+          "GEO16MICRO_007",
+          "GEO16MICRO_008",
+          "GEO16MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "geo16-core-4",
+      "order": 4,
+      "title": "Hình thoi",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "hthoi-tinh-chat",
+        "hthoi-dau-hieu"
+      ],
+      "prerequisites": [
+        "hbh-dau-hieu",
+        "tia-phan-giac"
+      ],
+      "micro_practice": [
+        "GEO16MICRO_010",
+        "GEO16MICRO_011",
+        "GEO16MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Hình thoi là hình bình hành có bốn cạnh bằng nhau. Hai đường chéo vuông góc, chia đôi nhau và phân giác các góc ở đỉnh. Dấu hiệu đủ: tứ giác có bốn cạnh bằng nhau; hoặc hình bình hành có hai cạnh kề bằng nhau, hai đường chéo vuông góc, hay một đường chéo phân giác một góc.",
+        "worked_example": {
+          "problem": "ABCD là hình bình hành có \\(AC\\perp BD\\). Chứng minh ABCD là hình thoi.",
+          "solution": "Bước 1: Đã có giả thiết ABCD là hình bình hành.\nBước 2: Theo dấu hiệu nhận biết, hình bình hành có hai đường chéo vuông góc là hình thoi.\nBước 3: Suy ra \\(AB=BC=CD=DA\\). Không cần giả định trước bốn cạnh bằng nhau."
+        },
+        "misconception": "Dùng hai đường chéo vuông góc để kết luận hình thoi khi chỉ biết tứ giác bất kỳ (có thể là hình diều).",
+        "summary": "Đường chéo vuông góc là dấu hiệu hình thoi khi đi kèm điều kiện hình bình hành.",
+        "source_reference": "docs/kien-thuc/16-tu-giac/index.md",
+        "source_sections": [
+          "3.5"
+        ],
+        "source_question_ids": [
+          "GEO16MICRO_010",
+          "GEO16MICRO_011",
+          "GEO16MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "geo16-core-5",
+      "order": 5,
+      "title": "Hình vuông và quan hệ bao hàm",
+      "kntt_lessons": [
+        "Lớp 8"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "hvuong-tinh-chat",
+        "hvuong-dau-hieu",
+        "quan-he-bao-ham",
+        "duong-cheo-suy-luan"
+      ],
+      "prerequisites": [
+        "hcn-tinh-chat",
+        "hthoi-tinh-chat"
+      ],
+      "micro_practice": [
+        "GEO16MICRO_013",
+        "GEO16MICRO_014",
+        "GEO16MICRO_015",
+        "GEO16MICRO_016"
+      ],
+      "teaching_copy": {
+        "key_idea": "Hình vuông đồng thời là hình chữ nhật và hình thoi. Dấu hiệu đủ: hình chữ nhật có hai cạnh kề bằng nhau hoặc hai đường chéo vuông góc; hình thoi có một góc vuông hoặc hai đường chéo bằng nhau. Cần kiểm tra tiền đề loại hình trước khi nâng cấp. Quan hệ bao hàm: mọi hình vuông đều là hình chữ nhật và hình thoi, chiều đảo không đúng nói chung.",
+        "worked_example": {
+          "problem": "Cho ABCD là hình thoi và hai đường chéo \\(AC=BD\\). Kết luận loại tứ giác và nêu căn cứ.",
+          "solution": "Bước 1: Theo giả thiết, ABCD là hình thoi.\nBước 2: Hình thoi có hai đường chéo bằng nhau là hình vuông.\nBước 3: ABCD vừa có bốn cạnh bằng nhau vừa có bốn góc vuông; không phải chỉ là hình chữ nhật tùy ý."
+        },
+        "misconception": "Chỉ dựa vào hai đường chéo bằng nhau để kết luận hình vuông, hoặc dùng sai chiều 'mọi hình thoi đều là hình vuông'.",
+        "summary": "Hình thoi + hai đường chéo bằng nhau → hình vuông; nêu rõ tiền đề.",
+        "source_reference": "docs/kien-thuc/16-tu-giac/index.md",
+        "source_sections": [
+          "3.6",
+          "3.7"
+        ],
+        "source_question_ids": [
+          "GEO16MICRO_013",
+          "GEO16MICRO_014",
+          "GEO16MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE16-18-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "id": "geo16-ext-1",
+      "layer": "Entrance10",
+      "title": "Chuỗi chứng minh nâng cấp tứ giác đặc biệt",
+      "gates_core": false
+    },
+    {
+      "id": "geo16-ext-2",
+      "layer": "Challenge",
+      "title": "Bài hình tổng hợp khai thác đường chéo",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/16-tu-giac-micro-v1.json",
+  "geometry_contract": "assets/data/curriculum/geometry-architecture-v1.json",
+  "qa_notes": [
+    "Original GEO16MICRO_001…015 remain unchanged. GEO16MICRO_016 is appended to Core5 with a singleton assessed hvuong-dau-hieu skill; teaching source IDs remain original three; coverage is not mastery."
+  ]
+}

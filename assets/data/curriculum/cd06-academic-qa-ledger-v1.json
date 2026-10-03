@@ -1,0 +1,1786 @@
+{
+  "schema": "cd06-academic-qa-ledger-v1",
+  "as_of": "2026-09-26",
+  "topic": "06-phan-tich-da-thuc",
+  "status": "mathematical_qa_passed_primary_overlay_review_only",
+  "source_overlay": "docs/assets/data/curriculum/primary-skill-overlay-draft-06-phan-tich-da-thuc-v1.json",
+  "source_files": {
+    "06-phan-tich-da-thuc-v1-01.json": {
+      "github_blob_sha": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "question_count": 30
+    },
+    "06-phan-tich-da-thuc-v1-02.json": {
+      "github_blob_sha": "fb9459c3728f2679a3f5eb74f14a6df35be9f63d",
+      "question_count": 30
+    },
+    "06-phan-tich-da-thuc-v1-03.json": {
+      "github_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+      "question_count": 30
+    },
+    "06-phan-tich-da-thuc-v1-04.json": {
+      "github_blob_sha": "281e90b8c791d3047c4c0413a2fea58958bd2323",
+      "question_count": 30
+    }
+  },
+  "source_sha_requirement": "Rebuild and rerun audit whenever any raw question file changes.",
+  "counts": {
+    "total": 120,
+    "exact_polynomial_factorization": 92,
+    "exact_polynomial_identity": 8,
+    "equations": 12,
+    "divisibility": 4,
+    "numeric_application": 4,
+    "review_flagged": 24,
+    "primary_null": 24,
+    "answer_text_corrected": 4,
+    "equivalent_unfactored_distractors": 13,
+    "equivalent_partial_distractors": 7,
+    "unique_item_revisions": 46
+  },
+  "limitations": [
+    "Mathematical correctness of the checked answer and expected factorization is distinct from what an MCQ proves about the student's independent problem-solving process.",
+    "Sixteen complete-factorization outcomes are composite evidence; their separate intermediate methods cannot be independently credited from one answer.",
+    "Four divisibility questions ask recognition of valid reasoning, not independent written proof. Four numeric outputs do not reveal whether a factorization shortcut was actually used.",
+    "No historical learner statistics are migrated or reinterpreted; four answer-text fixes have a different question content version despite retaining the same legacy ID.",
+    "Overlays are review-only; do not automatically convert null primary into a new skill.",
+    "No independent external Gemini review is claimed."
+  ],
+  "items": [
+    {
+      "question_id": "FAC06V1_001",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_002",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_003",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_004",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "corrected_greatest_common_factor_answer_and_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_005",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_006",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_007",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "corrected_greatest_common_factor_answer_and_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_008",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_009",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_010",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_011",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "corrected_greatest_common_factor_answer_and_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_012",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "corrected_greatest_common_factor_answer_and_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_013",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_014",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_015",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_016",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_017",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_018",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_019",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_020",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhan-tu-chung",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_021",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "hieu-hai-binh-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_022",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "hieu-hai-binh-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_023",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "hieu-hai-binh-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_024",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "hieu-hai-binh-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_025",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "hieu-hai-binh-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_026",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "hieu-hai-binh-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_027",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "hieu-hai-binh-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_028",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "hieu-hai-binh-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_029",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "hieu-hai-binh-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_030",
+      "source_file": "06-phan-tich-da-thuc-v1-01.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "hieu-hai-binh-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_031",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "hieu-hai-binh-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_032",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "hieu-hai-binh-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_033",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "binh-phuong-hoan-chinh",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_034",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "binh-phuong-hoan-chinh",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_035",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "binh-phuong-hoan-chinh",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_036",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "binh-phuong-hoan-chinh",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_037",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "binh-phuong-hoan-chinh",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "explain_equivalent_but_not_product_answer"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_unfactored_sum",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_038",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "binh-phuong-hoan-chinh",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_039",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "binh-phuong-hoan-chinh",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_040",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "binh-phuong-hoan-chinh",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_041",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "binh-phuong-hoan-chinh",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_042",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "binh-phuong-hoan-chinh",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_043",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tong-hieu-lap-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_044",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tong-hieu-lap-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_045",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tong-hieu-lap-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_046",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tong-hieu-lap-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_047",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tong-hieu-lap-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_048",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tong-hieu-lap-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_049",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tong-hieu-lap-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_050",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tong-hieu-lap-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_051",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tong-hieu-lap-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_052",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tong-hieu-lap-phuong",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_053",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhom-hang-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "explain_equivalent_but_not_product_answer",
+        "normalize_malformed_signs_in_distractor_if_present"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_unfactored_sum",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_054",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhom-hang-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "explain_equivalent_but_not_product_answer",
+        "normalize_malformed_signs_in_distractor_if_present"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_unfactored_sum",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_055",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhom-hang-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "explain_equivalent_but_not_product_answer",
+        "normalize_malformed_signs_in_distractor_if_present"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_unfactored_sum",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_056",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhom-hang-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "explain_equivalent_but_not_product_answer",
+        "normalize_malformed_signs_in_distractor_if_present"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_unfactored_sum",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_057",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhom-hang-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "explain_equivalent_but_not_product_answer",
+        "normalize_malformed_signs_in_distractor_if_present"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_unfactored_sum",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_058",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhom-hang-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "explain_equivalent_but_not_product_answer",
+        "normalize_malformed_signs_in_distractor_if_present"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_unfactored_sum",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_059",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhom-hang-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "explain_equivalent_but_not_product_answer",
+        "normalize_malformed_signs_in_distractor_if_present"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_unfactored_sum",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_060",
+      "source_file": "06-phan-tich-da-thuc-v1-02.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhom-hang-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "explain_equivalent_but_not_product_answer",
+        "normalize_malformed_signs_in_distractor_if_present"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_unfactored_sum",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_061",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhom-hang-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "explain_equivalent_but_not_product_answer",
+        "normalize_malformed_signs_in_distractor_if_present"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_unfactored_sum",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_062",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhom-hang-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "explain_equivalent_but_not_product_answer",
+        "normalize_malformed_signs_in_distractor_if_present"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_unfactored_sum",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_063",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhom-hang-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "explain_equivalent_but_not_product_answer",
+        "normalize_malformed_signs_in_distractor_if_present"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_unfactored_sum",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_064",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "nhom-hang-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "explain_equivalent_but_not_product_answer",
+        "normalize_malformed_signs_in_distractor_if_present"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_unfactored_sum",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_065",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tach-hang-tu-giua",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_066",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tach-hang-tu-giua",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_067",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tach-hang-tu-giua",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_068",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tach-hang-tu-giua",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_069",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tach-hang-tu-giua",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_070",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tach-hang-tu-giua",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_071",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tach-hang-tu-giua",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_072",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tach-hang-tu-giua",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_073",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tach-hang-tu-giua",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_074",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tach-hang-tu-giua",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_075",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tach-hang-tu-giua",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_076",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "tach-hang-tu-giua",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_077",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_not_fully_factored",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_078",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_079",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_not_fully_factored",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_080",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_081",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_not_fully_factored",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_082",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_083",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_not_fully_factored",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_084",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_085",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_not_fully_factored",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_086",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_087",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_088",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_089",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_not_fully_factored",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_090",
+      "source_file": "06-phan-tich-da-thuc-v1-03.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_091",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": "algebraically_equivalent_but_not_fully_factored",
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_092",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_polynomial_equivalence_and_factorization_form",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "composite_factorization_result",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "broad_multistep_skill_needs_rubric",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "worked_complete_factorization_solution"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_093",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_polynomial_identity",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "kiem-tra-phan-tich",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_094",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_polynomial_identity",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "kiem-tra-phan-tich",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_095",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_polynomial_identity",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "kiem-tra-phan-tich",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_096",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_polynomial_identity",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "kiem-tra-phan-tich",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_097",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_polynomial_identity",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "kiem-tra-phan-tich",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_098",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_polynomial_identity",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "kiem-tra-phan-tich",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_099",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_polynomial_identity",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "kiem-tra-phan-tich",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_100",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_polynomial_identity",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "kiem-tra-phan-tich",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_101",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "quadratic_discriminant_and_exact_integer_roots",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "giai-pt-bang-nhan-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "correct_quadratic_factorization_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_102",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "quadratic_discriminant_and_exact_integer_roots",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "giai-pt-bang-nhan-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "correct_quadratic_factorization_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_103",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "quadratic_discriminant_and_exact_integer_roots",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "giai-pt-bang-nhan-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "correct_quadratic_factorization_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_104",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "quadratic_discriminant_and_exact_integer_roots",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "giai-pt-bang-nhan-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "correct_quadratic_factorization_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_105",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "quadratic_discriminant_and_exact_integer_roots",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "giai-pt-bang-nhan-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "correct_quadratic_factorization_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_106",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "quadratic_discriminant_and_exact_integer_roots",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "giai-pt-bang-nhan-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "correct_quadratic_factorization_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_107",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "quadratic_discriminant_and_exact_integer_roots",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "giai-pt-bang-nhan-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "correct_quadratic_factorization_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_108",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "quadratic_discriminant_and_exact_integer_roots",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "giai-pt-bang-nhan-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "correct_quadratic_factorization_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_109",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "quadratic_discriminant_and_exact_integer_roots",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "giai-pt-bang-nhan-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "correct_quadratic_factorization_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_110",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "quadratic_discriminant_and_exact_integer_roots",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "giai-pt-bang-nhan-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "correct_quadratic_factorization_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_111",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "quadratic_discriminant_and_exact_integer_roots",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "giai-pt-bang-nhan-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "correct_quadratic_factorization_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_112",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "quadratic_discriminant_and_exact_integer_roots",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": "giai-pt-bang-nhan-tu",
+      "assessment_scope": "proposed_single_primary_pending_semantic_QA",
+      "semantic_review_status": "pattern_candidate_only",
+      "flags": [],
+      "revision_notes": [
+        "correct_quadratic_factorization_explanation"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_113",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_factorization_and_modular_residue_check",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "select_divisibility_reason",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_114",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_factorization_and_modular_residue_check",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "select_divisibility_reason",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_115",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_factorization_and_modular_residue_check",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "select_divisibility_reason",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_116",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_factorization_and_modular_residue_check",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "select_divisibility_reason",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [
+        "replace_ambiguous_parity_distractor"
+      ],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_117",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_arithmetic",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "numeric_result_not_method_evidence",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_118",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_arithmetic",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "numeric_result_not_method_evidence",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_119",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_arithmetic",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "numeric_result_not_method_evidence",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    },
+    {
+      "question_id": "FAC06V1_120",
+      "source_file": "06-phan-tich-da-thuc-v1-04.json",
+      "qa_method": "exact_integer_arithmetic",
+      "answer_qa": "checked_in_ci",
+      "proposed_primary": null,
+      "assessment_scope": "numeric_result_not_method_evidence",
+      "semantic_review_status": "needs_item_or_layer_review",
+      "flags": [
+        "application_tag_not_atomic_divisibility_target",
+        "no_production_primary_selected"
+      ],
+      "revision_notes": [],
+      "distinguish_wrong_option": null,
+      "source_version_key": "question_id+source_file_blob_sha"
+    }
+  ]
+}

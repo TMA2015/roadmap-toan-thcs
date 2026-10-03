@@ -1,0 +1,158 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "ALG-BATCH-04-06-CHATGPT-INTEGRATION-001",
+  "task_id": "ALG-BATCH-04-06-001",
+  "context_version": "1.0.24",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "INTEGRATION_DECISION",
+  "scope": {
+    "layer": [
+      "KNTT-Core",
+      "Entrance10",
+      "Specialized-Challenge",
+      "SYSTEM"
+    ],
+    "topics": [
+      "04-bieu-thuc-dai-so",
+      "05-7-hang-dang-thuc",
+      "06-phan-tich-da-thuc"
+    ],
+    "skills": []
+  },
+  "source_artifacts": [
+    "docs/assets/data/curriculum/golden-template-v1.json",
+    "docs/assets/data/curriculum/kntt-grade7-map.json",
+    "docs/assets/data/curriculum/kntt-grade8-map.json",
+    "docs/assets/data/collaboration/packets/ALG-BATCH-04-06-CHATGPT-REVIEW-001.json",
+    "docs/assets/data/collaboration/packets/ALG-BATCH-04-06-CHATGPT-REVIEW-002.json"
+  ],
+  "claims": [
+    {
+      "id": "I1",
+      "status": "FACT_VERIFIED",
+      "statement": "CĐ04–CĐ06 are migrated as one Golden Template batch with Learn, Practice Room and Core Readiness layers.",
+      "evidence": [
+        "topic04/05/06 learning workspace data",
+        "Practice Room pages",
+        "assessment JSON"
+      ]
+    },
+    {
+      "id": "I2",
+      "status": "FACT_VERIFIED",
+      "statement": "Each topic has five Core Learning Cards and exactly 15 authored micro-practice items in Base → Trap → Apply order.",
+      "evidence": [
+        "batch Golden validator"
+      ]
+    },
+    {
+      "id": "I3",
+      "status": "FACT_VERIFIED",
+      "statement": "Each topic has 10 actual Core written exercises with collapsed solutions, plus separated Entrance10 and Challenge work.",
+      "evidence": [
+        "bai-tap.md CĐ04–CĐ06"
+      ]
+    },
+    {
+      "id": "I4",
+      "status": "FACT_VERIFIED",
+      "statement": "Each topic has 10 MCQ-only Core Readiness items using Assessment Engine v1 semantics.",
+      "evidence": [
+        "assessment JSON CĐ04–CĐ06"
+      ]
+    },
+    {
+      "id": "I5",
+      "status": "FACT_VERIFIED",
+      "statement": "CĐ06 Core contains neither tach-hang-tu-giua nor giai-pt-bang-nhan-tu. Those are explicitly Extension/Entrance10.",
+      "evidence": [
+        "topic06 workspace",
+        "FAC06 micro bank",
+        "FAC06 readiness",
+        "CĐ06 Practice Room"
+      ]
+    },
+    {
+      "id": "I6",
+      "status": "FACT_VERIFIED",
+      "statement": "CĐ05 Core does not assess giai-phuong-trinh-hdt/chung-minh-hdt/phan-tich-hdt as generic skills.",
+      "evidence": [
+        "topic05 workspace",
+        "ID05 micro/readiness"
+      ]
+    },
+    {
+      "id": "I7",
+      "status": "FACT_VERIFIED",
+      "statement": "CĐ04 Practice Bank gains 12 real division-by-monomial questions so the new Core skill is not orphaned.",
+      "evidence": [
+        "04-bieu-thuc-dai-so-v2-05.json",
+        "updated manifest question_count 132"
+      ]
+    },
+    {
+      "id": "I8",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "The Learning Workspace runtime is generalized from CĐ07 to CĐ04–CĐ07 using topic-specific data rather than separate JavaScript implementations.",
+      "evidence": [
+        "topic-workspace-v1.js"
+      ]
+    },
+    {
+      "id": "I9",
+      "status": "PEDAGOGICAL_PROPOSAL",
+      "statement": "CĐ04 preserves the Grade 7 → Grade 8 Vertical Spine; one-variable polynomial recognition remains within nhan-biet-da-thuc while division by monomial is modeled explicitly.",
+      "evidence": [
+        "topic04 workspace",
+        "KNTT grade overlays"
+      ]
+    }
+  ],
+  "proposed_changes": [
+    {
+      "artifact": "Golden Template rollout",
+      "change": "Publish CĐ04–CĐ06 as one production batch if CI, strict MkDocs build and deploy QA pass.",
+      "rationale": "Golden Template v1 is frozen and the same runtime/data contracts are reused."
+    }
+  ],
+  "tests": [
+    {
+      "id": "T1",
+      "expected": "JS syntax and workspace↔micro↔assessment structural checks pass.",
+      "result": "PASS"
+    },
+    {
+      "id": "T2",
+      "expected": "45 micro items: exactly one assessed skill, 4 unique options, 2-level hints, no forbidden Core skills.",
+      "result": "PASS"
+    },
+    {
+      "id": "T3",
+      "expected": "30 Readiness items: MCQ-only, 10/topic, no forbidden Core skills.",
+      "result": "PASS"
+    },
+    {
+      "id": "T4",
+      "expected": "CĐ04 manifest declares and actually loads 132 unique questions including 12 division items.",
+      "result": "PASS"
+    },
+    {
+      "id": "T5",
+      "expected": "Practice Room provides >=8 actual Core written exercises/topic with hidden solutions plus Extension/Challenge.",
+      "result": "PASS"
+    },
+    {
+      "id": "T6",
+      "expected": "Deploy CI + strict MkDocs build pass.",
+      "result": "NOT_RUN"
+    }
+  ],
+  "uncertainties": [
+    "Browser smoke QA after deploy is still useful, but no new UI schema is introduced beyond the already frozen CĐ07 Golden Template."
+  ],
+  "acceptance": {
+    "verdict": "PASS-WITH-CHANGES",
+    "notes": "Content/schema/structural QA passed. Publish as one batch after CI/deploy; rejected Gemini scope/schema items remain excluded."
+  }
+}

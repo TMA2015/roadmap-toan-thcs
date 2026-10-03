@@ -1,0 +1,597 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "QUA12-MICRO-V1",
+  "topic": {
+    "id": "12-phuong-trinh-bac-hai-viete",
+    "title": "Phương trình bậc hai & Viète"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "QUA12MICRO_001",
+      "card_id": "qua12-core-1",
+      "micro_role": "base",
+      "question": "Phương trình nào là phương trình bậc hai một ẩn?",
+      "options": [
+        "\\(2x^2-3x+1=0\\)",
+        "\\(2x+1=0\\)",
+        "\\(x^3-x=0\\)",
+        "\\(1/x=2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "nhan-dang-pt-bac-hai"
+        ],
+        "type": "nhan-dang-pt-bac-hai",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Dạng \\(ax^2+bx+c=0\\), \\(a\\ne0\\).",
+      "hints": [
+        "Tìm số mũ cao nhất của x.",
+        "Hệ số của x² phải khác 0."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_002",
+      "card_id": "qua12-core-1",
+      "micro_role": "trap",
+      "question": "Với \\(3x^2-5x+2=0\\), bộ \\((a,b,c)\\) là:",
+      "options": [
+        "\\((3,-5,2)\\)",
+        "\\((3,5,2)\\)",
+        "\\((-3,-5,2)\\)",
+        "\\((3,-5,-2)\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "he-so-abc"
+        ],
+        "type": "he-so-abc",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(a=3,b=-5,c=2\\).",
+      "hints": [
+        "Giữ nguyên dấu của từng hạng tử.",
+        "Hệ số b là -5."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_003",
+      "card_id": "qua12-core-1",
+      "micro_role": "apply",
+      "question": "\\(mx^2+x+1=0\\) là phương trình bậc hai khi:",
+      "options": [
+        "\\(m\\ne0\\)",
+        "\\(m=0\\)",
+        "\\(m>0\\)",
+        "Mọi \\(m\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "nhan-dang-pt-bac-hai"
+        ],
+        "type": "nhan-dang-pt-bac-hai",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hệ số của x² phải khác 0.",
+      "hints": [
+        "Xác định hệ số a.",
+        "Điều kiện là a≠0."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_004",
+      "card_id": "qua12-core-2",
+      "micro_role": "base",
+      "question": "Biệt thức \\(\\Delta\\) của \\(x^2-4x+3=0\\) bằng:",
+      "options": [
+        "4",
+        "16",
+        "1",
+        "-4"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "tinh-delta"
+        ],
+        "type": "tinh-delta",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "\\(16-12=4\\).",
+      "hints": [
+        "Dùng \\(b^2-4ac\\).",
+        "a=1,b=-4,c=3."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_005",
+      "card_id": "qua12-core-2",
+      "micro_role": "trap",
+      "question": "Nếu \\(\\Delta<0\\), phương trình bậc hai có:",
+      "options": [
+        "Không có nghiệm thực",
+        "Một nghiệm kép",
+        "Hai nghiệm thực phân biệt",
+        "Luôn có nghiệm 0"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "so-nghiem-delta"
+        ],
+        "type": "so-nghiem-delta",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Δ âm → không có nghiệm thực.",
+      "hints": [
+        "Nhớ ba trường hợp theo dấu Δ.",
+        "Δ âm → không có nghiệm thực."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_006",
+      "card_id": "qua12-core-2",
+      "micro_role": "apply",
+      "question": "Với \\(x^2-6x+5=0\\), \\(b'\\) và \\(\\Delta'\\) là:",
+      "options": [
+        "\\(b'=-3,\\ \\Delta'=4\\)",
+        "\\(b'=3,\\ \\Delta'=4\\)",
+        "\\(b'=-3,\\ \\Delta'=14\\)",
+        "\\(b'=-6,\\ \\Delta'=16\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "delta-phay"
+        ],
+        "type": "delta-phay",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(b'=-3,\\Delta'=9-5=4\\).",
+      "hints": [
+        "Tính b'=b/2 trước.",
+        "Dùng Δ'=b'²-ac."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_007",
+      "card_id": "qua12-core-3",
+      "micro_role": "base",
+      "question": "Khi \\(\\Delta>0\\), công thức nghiệm là:",
+      "options": [
+        "\\(x=\\dfrac{-b\\pm\\sqrt\\Delta}{2a}\\)",
+        "\\(x=\\dfrac{b\\pm\\sqrt\\Delta}{2a}\\)",
+        "\\(x=\\dfrac{-b\\pm\\Delta}{a}\\)",
+        "\\(x=\\dfrac{-b}{2a}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "cong-thuc-nghiem"
+        ],
+        "type": "cong-thuc-nghiem",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Công thức đúng là \\((-b\\pm\\sqrt\\Delta)/(2a)\\).",
+      "hints": [
+        "Chú ý dấu - trước b.",
+        "Mẫu là 2a."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_008",
+      "card_id": "qua12-core-3",
+      "micro_role": "trap",
+      "question": "Giải \\(2x^2-5x+2=0\\).",
+      "options": [
+        "\\(x=2,\\ \\frac12\\)",
+        "\\(x=-2,\\ -\\frac12\\)",
+        "\\(x=1,\\ 2\\)",
+        "\\(x=\\frac52\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "giai-pt-bac-hai"
+        ],
+        "type": "giai-pt-bac-hai",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(\\Delta=9\\), nghiệm 2 và 1/2.",
+      "hints": [
+        "Tính Δ trước.",
+        "\\(\\Delta=25-16=9\\)."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_009",
+      "card_id": "qua12-core-3",
+      "micro_role": "apply",
+      "question": "Giải \\(x^2-9=0\\).",
+      "options": [
+        "\\(x=\\pm3\\)",
+        "\\(x=3\\)",
+        "\\(x=-3\\)",
+        "\\(x=9\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "giai-pt-bac-hai"
+        ],
+        "type": "giai-pt-bac-hai",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\((x-3)(x+3)=0\\).",
+      "hints": [
+        "Dùng hiệu hai bình phương.",
+        "Có hai nghiệm."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_010",
+      "card_id": "qua12-core-4",
+      "micro_role": "base",
+      "question": "Nhẩm nghiệm của \\(x^2-5x+6=0\\).",
+      "options": [
+        "2 và 3",
+        "-2 và -3",
+        "1 và 6",
+        "-1 và -6"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "nham-nghiem"
+        ],
+        "type": "nham-nghiem",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Tổng 5, tích 6.",
+      "hints": [
+        "Tìm hai số có tổng 5.",
+        "Tích bằng 6."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_011",
+      "card_id": "qua12-core-4",
+      "micro_role": "trap",
+      "question": "Nhẩm nghiệm của \\(x^2+5x+6=0\\).",
+      "options": [
+        "-2 và -3",
+        "2 và 3",
+        "-1 và -6",
+        "1 và 6"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "nham-nghiem"
+        ],
+        "type": "nham-nghiem",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tổng -5, tích 6.",
+      "hints": [
+        "Tích dương nhưng tổng âm → cả hai âm.",
+        "(-2)+(-3)=-5."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_012",
+      "card_id": "qua12-core-4",
+      "micro_role": "apply",
+      "question": "Nhẩm nghiệm của \\(x^2-x-6=0\\).",
+      "options": [
+        "3 và -2",
+        "-3 và 2",
+        "6 và -1",
+        "-6 và 1"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "nham-nghiem"
+        ],
+        "type": "nham-nghiem",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tổng 1, tích -6.",
+      "hints": [
+        "Tích âm → hai số trái dấu.",
+        "Tổng bằng 1."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_013",
+      "card_id": "qua12-core-5",
+      "micro_role": "base",
+      "question": "Với \\(x^2-7x+10=0\\), theo Viète \\(S,P\\) bằng:",
+      "options": [
+        "7 và 10",
+        "-7 và 10",
+        "7 và -10",
+        "-7 và -10"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "tong-tich-nghiem"
+        ],
+        "type": "tong-tich-nghiem",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "S=7, P=10.",
+      "hints": [
+        "S=-b/a, P=c/a.",
+        "Giữ đúng dấu của b."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_014",
+      "card_id": "qua12-core-5",
+      "micro_role": "trap",
+      "question": "Phương trình hệ số đầu 1 có hai nghiệm 2 và 3 là:",
+      "options": [
+        "\\(x^2-5x+6=0\\)",
+        "\\(x^2+5x+6=0\\)",
+        "\\(x^2-6x+5=0\\)",
+        "\\(x^2-5x-6=0\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "lap-pt-tu-nghiem"
+        ],
+        "type": "lap-pt-tu-nghiem",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "S=5, P=6.",
+      "hints": [
+        "Tính tổng và tích.",
+        "Dùng x²-Sx+P=0."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_015",
+      "card_id": "qua12-core-5",
+      "micro_role": "apply",
+      "question": "Phương trình hệ số đầu 1 có hai nghiệm -1 và 4 là:",
+      "options": [
+        "\\(x^2-3x-4=0\\)",
+        "\\(x^2+3x-4=0\\)",
+        "\\(x^2-4x-3=0\\)",
+        "\\(x^2-3x+4=0\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "lap-pt-tu-nghiem"
+        ],
+        "type": "lap-pt-tu-nghiem",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "S=3, P=-4.",
+      "hints": [
+        "Tổng là 3, tích là -4.",
+        "Dùng x²-Sx+P=0."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

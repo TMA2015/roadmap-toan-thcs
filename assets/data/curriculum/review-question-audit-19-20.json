@@ -1,0 +1,392 @@
+{
+  "schema": "skill-question-audit-v1",
+  "question_level": true,
+  "topics": [
+    {
+      "topic": "19-duong-tron",
+      "declared": 147,
+      "actual": 147,
+      "tag_counts": {
+        "goc-o-tam": 10,
+        "goc-noi-tiep": 10,
+        "nua-duong-tron": 10,
+        "day-va-tam": 9,
+        "tiep-tuyen-ban-kinh": 9,
+        "hai-tiep-tuyen": 9,
+        "tu-giac-noi-tiep": 9,
+        "dau-hieu-noi-tiep": 9,
+        "hai-day-cat-nhau": 9,
+        "tiep-tuyen-cat-tuyen": 9,
+        "chung-minh-tiep-tuyen": 9,
+        "goc-cung": 9,
+        "do-dai-duong-tron": 9,
+        "cung-va-day": 3,
+        "do-dai-cung": 3,
+        "dien-tich-quat-tron": 3,
+        "dien-tich-vanh-khuyen": 3,
+        "vi-tri-tuong-doi-duong-thang-duong-tron": 3,
+        "vi-tri-tuong-doi-hai-duong-tron": 3,
+        "duong-tron-ngoai-tiep-tam-giac": 3,
+        "duong-tron-noi-tiep-tam-giac": 3,
+        "da-giac-deu": 3
+      },
+      "tag_examples": {
+        "goc-o-tam": [
+          "GEO19V1_001",
+          "GEO19V1_014",
+          "GEO19V1_027"
+        ],
+        "goc-noi-tiep": [
+          "GEO19V1_002",
+          "GEO19V1_015",
+          "GEO19V1_028"
+        ],
+        "nua-duong-tron": [
+          "GEO19V1_003",
+          "GEO19V1_016",
+          "GEO19V1_029"
+        ],
+        "day-va-tam": [
+          "GEO19V1_004",
+          "GEO19V1_017",
+          "GEO19V1_030"
+        ],
+        "tiep-tuyen-ban-kinh": [
+          "GEO19V1_005",
+          "GEO19V1_018",
+          "GEO19V1_031"
+        ],
+        "hai-tiep-tuyen": [
+          "GEO19V1_006",
+          "GEO19V1_019",
+          "GEO19V1_032"
+        ],
+        "tu-giac-noi-tiep": [
+          "GEO19V1_007",
+          "GEO19V1_020",
+          "GEO19V1_033"
+        ],
+        "dau-hieu-noi-tiep": [
+          "GEO19V1_008",
+          "GEO19V1_021",
+          "GEO19V1_034"
+        ],
+        "hai-day-cat-nhau": [
+          "GEO19V1_009",
+          "GEO19V1_022",
+          "GEO19V1_035"
+        ],
+        "tiep-tuyen-cat-tuyen": [
+          "GEO19V1_010",
+          "GEO19V1_023",
+          "GEO19V1_036"
+        ],
+        "chung-minh-tiep-tuyen": [
+          "GEO19V1_011",
+          "GEO19V1_024",
+          "GEO19V1_037"
+        ],
+        "goc-cung": [
+          "GEO19V1_012",
+          "GEO19V1_025",
+          "GEO19V1_038"
+        ],
+        "do-dai-duong-tron": [
+          "GEO19V1_013",
+          "GEO19V1_026",
+          "GEO19V1_039"
+        ],
+        "cung-va-day": [
+          "CIR19V1_121",
+          "CIR19V1_122",
+          "CIR19V1_123"
+        ],
+        "do-dai-cung": [
+          "CIR19V1_124",
+          "CIR19V1_125",
+          "CIR19V1_126"
+        ],
+        "dien-tich-quat-tron": [
+          "CIR19V1_127",
+          "CIR19V1_128",
+          "CIR19V1_129"
+        ],
+        "dien-tich-vanh-khuyen": [
+          "CIR19V1_130",
+          "CIR19V1_131",
+          "CIR19V1_132"
+        ],
+        "vi-tri-tuong-doi-duong-thang-duong-tron": [
+          "CIR19V1_133",
+          "CIR19V1_134",
+          "CIR19V1_135"
+        ],
+        "vi-tri-tuong-doi-hai-duong-tron": [
+          "CIR19V1_136",
+          "CIR19V1_137",
+          "CIR19V1_138"
+        ],
+        "duong-tron-ngoai-tiep-tam-giac": [
+          "CIR19V1_139",
+          "CIR19V1_140",
+          "CIR19V1_141"
+        ],
+        "duong-tron-noi-tiep-tam-giac": [
+          "CIR19V1_142",
+          "CIR19V1_143",
+          "CIR19V1_144"
+        ],
+        "da-giac-deu": [
+          "CIR19V1_145",
+          "CIR19V1_146",
+          "CIR19V1_147"
+        ]
+      },
+      "missing_skill_ids": [],
+      "unknown_tags": [],
+      "declared_unused": [],
+      "duplicate_question_ids": []
+    },
+    {
+      "topic": "20-hinh-hoc-tong-hop",
+      "declared": 195,
+      "actual": 195,
+      "tag_counts": {
+        "nhan-dang-cong-cu": 10,
+        "song-song-dong-dang": 10,
+        "hai-goc-vuong-noi-tiep": 10,
+        "noi-tiep-dong-dang": 9,
+        "dong-dang-he-thuc-tich": 9,
+        "tam-giac-vuong-dong-dang": 9,
+        "tiep-tuyen-chung-minh": 9,
+        "chuoi-suy-luan": 9,
+        "the-tich-hop-chu-nhat": 9,
+        "the-tich-lang-tru": 9,
+        "dien-tich-day": 9,
+        "doi-don-vi-do-luong": 9,
+        "bai-toan-tong-hop": 9,
+        "nhan-biet-tam-giac-deu": 3,
+        "nhan-biet-hinh-vuong": 3,
+        "nhan-biet-luc-giac-deu": 3,
+        "nhan-biet-tu-giac-dac-biet": 3,
+        "chu-vi-tu-giac": 3,
+        "dien-tich-tu-giac": 3,
+        "do-luong-thuc-te": 3,
+        "truc-doi-xung": 3,
+        "tam-doi-xung": 3,
+        "nhan-biet-hinh-hop-lap-phuong": 3,
+        "dien-tich-xung-quanh-hop-chu-nhat": 3,
+        "nhan-biet-lang-tru-dung": 3,
+        "dien-tich-xung-quanh-lang-tru": 3,
+        "nhan-biet-hinh-chop-deu": 3,
+        "dien-tich-xung-quanh-hinh-chop": 3,
+        "the-tich-hinh-chop": 3,
+        "nhan-biet-hinh-tru": 3,
+        "dien-tich-xung-quanh-hinh-tru": 3,
+        "the-tich-hinh-tru": 3,
+        "nhan-biet-hinh-non": 3,
+        "dien-tich-xung-quanh-hinh-non": 3,
+        "the-tich-hinh-non": 3,
+        "nhan-biet-hinh-cau": 3,
+        "dien-tich-mat-cau": 3,
+        "the-tich-hinh-cau": 3
+      },
+      "tag_examples": {
+        "nhan-dang-cong-cu": [
+          "GEO20V1_001",
+          "GEO20V1_014",
+          "GEO20V1_027"
+        ],
+        "song-song-dong-dang": [
+          "GEO20V1_002",
+          "GEO20V1_015",
+          "GEO20V1_028"
+        ],
+        "hai-goc-vuong-noi-tiep": [
+          "GEO20V1_003",
+          "GEO20V1_016",
+          "GEO20V1_029"
+        ],
+        "noi-tiep-dong-dang": [
+          "GEO20V1_004",
+          "GEO20V1_017",
+          "GEO20V1_030"
+        ],
+        "dong-dang-he-thuc-tich": [
+          "GEO20V1_005",
+          "GEO20V1_018",
+          "GEO20V1_031"
+        ],
+        "tam-giac-vuong-dong-dang": [
+          "GEO20V1_006",
+          "GEO20V1_019",
+          "GEO20V1_032"
+        ],
+        "tiep-tuyen-chung-minh": [
+          "GEO20V1_007",
+          "GEO20V1_020",
+          "GEO20V1_033"
+        ],
+        "chuoi-suy-luan": [
+          "GEO20V1_008",
+          "GEO20V1_021",
+          "GEO20V1_034"
+        ],
+        "the-tich-hop-chu-nhat": [
+          "GEO20V1_009",
+          "GEO20V1_022",
+          "GEO20V1_035"
+        ],
+        "the-tich-lang-tru": [
+          "GEO20V1_010",
+          "GEO20V1_023",
+          "GEO20V1_036"
+        ],
+        "dien-tich-day": [
+          "GEO20V1_011",
+          "GEO20V1_024",
+          "GEO20V1_037"
+        ],
+        "doi-don-vi-do-luong": [
+          "GEO20V1_012",
+          "GEO20V1_025",
+          "GEO20V1_038"
+        ],
+        "bai-toan-tong-hop": [
+          "GEO20V1_013",
+          "GEO20V1_026",
+          "GEO20V1_039"
+        ],
+        "nhan-biet-tam-giac-deu": [
+          "SYN20V1_121",
+          "SYN20V1_122",
+          "SYN20V1_123"
+        ],
+        "nhan-biet-hinh-vuong": [
+          "SYN20V1_124",
+          "SYN20V1_125",
+          "SYN20V1_126"
+        ],
+        "nhan-biet-luc-giac-deu": [
+          "SYN20V1_127",
+          "SYN20V1_128",
+          "SYN20V1_129"
+        ],
+        "nhan-biet-tu-giac-dac-biet": [
+          "SYN20V1_130",
+          "SYN20V1_131",
+          "SYN20V1_132"
+        ],
+        "chu-vi-tu-giac": [
+          "SYN20V1_133",
+          "SYN20V1_134",
+          "SYN20V1_135"
+        ],
+        "dien-tich-tu-giac": [
+          "SYN20V1_136",
+          "SYN20V1_137",
+          "SYN20V1_138"
+        ],
+        "do-luong-thuc-te": [
+          "SYN20V1_139",
+          "SYN20V1_140",
+          "SYN20V1_141"
+        ],
+        "truc-doi-xung": [
+          "SYN20V1_142",
+          "SYN20V1_143",
+          "SYN20V1_144"
+        ],
+        "tam-doi-xung": [
+          "SYN20V1_145",
+          "SYN20V1_146",
+          "SYN20V1_147"
+        ],
+        "nhan-biet-hinh-hop-lap-phuong": [
+          "SYN20V1_148",
+          "SYN20V1_149",
+          "SYN20V1_150"
+        ],
+        "dien-tich-xung-quanh-hop-chu-nhat": [
+          "SYN20V1_151",
+          "SYN20V1_152",
+          "SYN20V1_153"
+        ],
+        "nhan-biet-lang-tru-dung": [
+          "SYN20V1_154",
+          "SYN20V1_155",
+          "SYN20V1_156"
+        ],
+        "dien-tich-xung-quanh-lang-tru": [
+          "SYN20V1_157",
+          "SYN20V1_158",
+          "SYN20V1_159"
+        ],
+        "nhan-biet-hinh-chop-deu": [
+          "SYN20V1_160",
+          "SYN20V1_161",
+          "SYN20V1_162"
+        ],
+        "dien-tich-xung-quanh-hinh-chop": [
+          "SYN20V1_163",
+          "SYN20V1_164",
+          "SYN20V1_165"
+        ],
+        "the-tich-hinh-chop": [
+          "SYN20V1_166",
+          "SYN20V1_167",
+          "SYN20V1_168"
+        ],
+        "nhan-biet-hinh-tru": [
+          "SYN20V1_169",
+          "SYN20V1_170",
+          "SYN20V1_171"
+        ],
+        "dien-tich-xung-quanh-hinh-tru": [
+          "SYN20V1_172",
+          "SYN20V1_173",
+          "SYN20V1_174"
+        ],
+        "the-tich-hinh-tru": [
+          "SYN20V1_175",
+          "SYN20V1_176",
+          "SYN20V1_177"
+        ],
+        "nhan-biet-hinh-non": [
+          "SYN20V1_178",
+          "SYN20V1_179",
+          "SYN20V1_180"
+        ],
+        "dien-tich-xung-quanh-hinh-non": [
+          "SYN20V1_181",
+          "SYN20V1_182",
+          "SYN20V1_183"
+        ],
+        "the-tich-hinh-non": [
+          "SYN20V1_184",
+          "SYN20V1_185",
+          "SYN20V1_186"
+        ],
+        "nhan-biet-hinh-cau": [
+          "SYN20V1_187",
+          "SYN20V1_188",
+          "SYN20V1_189"
+        ],
+        "dien-tich-mat-cau": [
+          "SYN20V1_190",
+          "SYN20V1_191",
+          "SYN20V1_192"
+        ],
+        "the-tich-hinh-cau": [
+          "SYN20V1_193",
+          "SYN20V1_194",
+          "SYN20V1_195"
+        ]
+      },
+      "missing_skill_ids": [],
+      "unknown_tags": [],
+      "declared_unused": [],
+      "duplicate_question_ids": []
+    }
+  ]
+}

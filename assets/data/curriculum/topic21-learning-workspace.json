@@ -1,0 +1,177 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "21-thong-ke",
+  "title": "Thống kê và thu thập dữ liệu",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Five grade-mapped Core cards only; Core-Support, Entrance10 and Challenge never gate Core."
+  },
+  "cards": [
+    {
+      "id": "sta21-core-1",
+      "order": 1,
+      "title": "Dữ liệu và phương pháp thu thập",
+      "kntt_lessons": [
+        "Lớp 6: Bài 38–41",
+        "Lớp 7: Bài 17"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "du-lieu-phan-loai",
+        "thu-thap-du-lieu"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "STA21MICRO_001",
+        "STA21MICRO_002",
+        "STA21MICRO_003"
+      ],
+      "teaching_copy": {
+        "key_idea": "Dữ liệu thống kê được chia thành hai loại chính: dữ liệu số (đo đạc, đếm số lượng có giá trị số tính toán được) và dữ liệu không là số / dữ liệu phân loại (tên nhóm, nhãn, màu sắc, trình độ). Phương pháp thu thập dữ liệu gồm thu thập trực tiếp (quan sát, đo đạc, lập phiếu hỏi/phỏng vấn) và thu thập gián tiếp (trích xuất từ sách báo, tài liệu, cơ sở dữ liệu có sẵn).",
+        "worked_example": {
+          "problem": "Cho các dãy dữ liệu thu được từ một lớp học: (A) Điểm trung bình môn Toán; (B) Tên các môn học tự chọn; (C) Biển số xe máy của phụ huynh. Hãy phân loại các dãy dữ liệu này.",
+          "solution": "(A) Điểm trung bình môn Toán là dữ liệu số vì là các con số định lượng có thể so sánh và tính toán trung bình.\n(B) Tên các môn học tự chọn là dữ liệu phân loại vì là tên các nhóm/danh mục chữ.\n(C) Biển số xe máy là dữ liệu phân loại vì mặc dù có chứa con số nhưng đóng vai trò là mã định danh, không thể cộng trừ hay tính trung bình."
+        },
+        "misconception": "Cho rằng mọi dãy thông tin chứa con số (như mã số học sinh, số nhà, biển số xe, số tuyến xe buýt) đều là dữ liệu số.",
+        "summary": "Phân biệt dữ liệu số vs phân loại dựa vào khả năng thực hiện phép tính định lượng; chọn phương pháp thu thập phù hợp với đối tượng cần quan sát."
+      }
+    },
+    {
+      "id": "sta21-core-2",
+      "order": 2,
+      "title": "Đọc bảng dữ liệu, biểu đồ cột và cột kép",
+      "kntt_lessons": [
+        "Lớp 6: Bài 38–41",
+        "Lớp 8: Bài 18–20"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "doc-bieu-do-cot",
+        "doc-bieu-do-cot-kep"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "STA21MICRO_004",
+        "STA21MICRO_005",
+        "STA21MICRO_006"
+      ],
+      "teaching_copy": {
+        "key_idea": "Bảng dữ liệu, biểu đồ cột và cột kép giúp trình bày và so sánh số liệu trực quan giữa các đối tượng. Biểu đồ cột kép sử dụng hai cột đặt cạnh nhau (có chú giải phân biệt) để so sánh hai dãy dữ liệu tương ứng của cùng các đối tượng trên cùng một thang đo.",
+        "worked_example": {
+          "problem": "Biểu đồ cột kép thống kê số học sinh giỏi Học kỳ 1 và Học kỳ 2 của Lớp 6A: Học kỳ 1 = 12 em, Học kỳ 2 = 18 em. Hỏi số học sinh giỏi Học kỳ 2 tăng bao nhiêu phần trăm so với Học kỳ 1?",
+          "solution": "Mức tăng số lượng học sinh giỏi là: 18 - 12 = 6 (học sinh).\nTỉ lệ phần trăm tăng so với Học kỳ 1 là: (6 / 12) x 100% = 50%."
+        },
+        "misconception": "Đọc nhầm màu/ký hiệu chú giải trong biểu đồ cột kép dẫn đến so sánh nhầm hai dãy số liệu hoặc nhầm lẫn giữa giá trị cột với chênh lệch giữa hai cột.",
+        "summary": "Luôn đọc kỹ tiêu đề, trục tọa độ, đơn vị và chú giải màu sắc trước khi thực hiện các phép tính cộng, trừ, chênh lệch hay tỉ lệ."
+      }
+    },
+    {
+      "id": "sta21-core-3",
+      "order": 3,
+      "title": "Đọc biểu đồ đoạn thẳng và hình quạt tròn",
+      "kntt_lessons": [
+        "Lớp 7: Bài 18–19",
+        "Lớp 8: Bài 18–20"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "doc-bieu-do-doan-thang",
+        "bieu-do-quat-tron"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "STA21MICRO_007",
+        "STA21MICRO_008",
+        "STA21MICRO_009"
+      ],
+      "teaching_copy": {
+        "key_idea": "Biểu đồ đoạn thẳng dùng để biểu diễn xu hướng thay đổi của dữ liệu theo thời gian (chuỗi thời gian). Biểu đồ hình quạt tròn dùng để biểu diễn tỉ lệ phần trăm của các thành phần so với toàn bộ tổng thể (100% tương ứng với 360°).",
+        "worked_example": {
+          "problem": "Trên biểu đồ hình quạt tròn biểu diễn cơ cấu các loại cây trồng trong một trang trại, phần diện tích trồng Cây ăn quả chiếm 35%. Tính số đo góc ở tâm tương ứng với phần Cây ăn quả.",
+          "solution": "Số đo góc ở tâm tương ứng với 35% là: 35% x 360° = 0,35 x 360° = 126°."
+        },
+        "misconception": "Nhầm lẫn giữa giá trị phần trăm (%), số đo góc ở tâm (°) và số lượng thực tế của đối tượng.",
+        "summary": "Đoạn thẳng dùng cho xu hướng thời gian; quạt tròn dùng cho tỉ lệ phần thể hiện trên tổng thể (100% <-> 360°)."
+      }
+    },
+    {
+      "id": "sta21-core-4",
+      "order": 4,
+      "title": "Chọn và chuyển dạng biểu diễn dữ liệu",
+      "kntt_lessons": [
+        "Lớp 7: Bài 18–19",
+        "Lớp 8: Bài 18–20"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "chon-bieu-do",
+        "chuyen-bang-bieu-do"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "STA21MICRO_010",
+        "STA21MICRO_011",
+        "STA21MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Lựa chọn dạng biểu đồ phù hợp phụ thuộc vào mục tiêu biểu diễn: So sánh các nhóm (Biểu đồ cột), So sánh 2 tập dữ liệu song song (Biểu đồ cột kép), Theo dõi xu hướng qua thời gian (Biểu đồ đoạn thẳng), Thể hiện cơ cấu/tỉ lệ phần trăm trong tổng thể (Biểu đồ hình quạt tròn). Khi chuyển bảng dữ liệu sang biểu đồ, cần chọn thang đo hợp lý và giữ đúng tỉ lệ.",
+        "worked_example": {
+          "problem": "Một nhóm nghiên cứu muốn theo dõi diễn biến nhiệt độ trung bình hàng tháng trong năm 2025. Nên chọn dạng biểu đồ nào và giải thích lý do?",
+          "solution": "Nên chọn biểu đồ đoạn thẳng vì dữ liệu thể hiện sự biến đổi của nhiệt độ theo các mốc thời gian liên tiếp (các tháng trong năm), giúp dễ dàng quan sát xu hướng tăng/giảm."
+        },
+        "misconception": "Lựa chọn biểu đồ hình quạt tròn cho chuỗi thời gian hoặc chọn biểu đồ đoạn thẳng cho các danh mục phân loại độc lập không có thứ tự thời gian.",
+        "summary": "Xác định rõ mục tiêu: So sánh -> Cột; Xu hướng thời gian -> Đoạn thẳng; Cơ cấu tổng thể -> Quạt tròn."
+      }
+    },
+    {
+      "id": "sta21-core-5",
+      "order": 5,
+      "title": "Đọc số liệu và kết luận có căn cứ",
+      "kntt_lessons": [
+        "Lớp 6: Bài 38–41",
+        "Lớp 7: Bài 18–19",
+        "Lớp 8: Bài 18–20"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-xet-du-lieu"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "STA21MICRO_013",
+        "STA21MICRO_014",
+        "STA21MICRO_015"
+      ],
+      "teaching_copy": {
+        "key_idea": "Khi đọc số liệu từ bảng hoặc biểu đồ, mọi nhận xét và kết luận phải dựa trực tiếp vào dữ kiện đã cho trong phạm vi mẫu khảo sát. Không tự ý suy diễn nguyên nhân nhân quả, không nhầm lẫn giữa chênh lệch tuyệt đối và tỉ số tương đối, không quy chụp kết quả của mẫu hẹp cho toàn bộ quần thể lớn khi chưa đủ bằng chứng.",
+        "worked_example": {
+          "problem": "Thống kê số lượng máy tính bán ra của một cửa hàng trong hai quý: Quý 1 = 100 chiếc, Quý 2 = 150 chiếc. Một nhân viên kết luận: 'Chất lượng máy tính ở Quý 2 tốt hơn Quý 1 nên bán được nhiều hơn'. Nhận xét này có căn cứ không?",
+          "solution": "Nhận xét này KHÔNG CÓ CĂN CỨ từ số liệu. Số liệu chỉ phản ánh số lượng máy bán ra tăng 50 chiếc (50%), không cung cấp thông tin về nguyên nhân (chất lượng, khuyến mãi hay nhu cầu thị trường)."
+        },
+        "misconception": "Suy diễn cảm tính về nguyên nhân nhân quả hoặc đưa ra nhận xét vượt ngoài phạm vi số liệu thực tế được cung cấp.",
+        "summary": "Chỉ kết luận những gì số liệu trực tiếp thể hiện; tuyệt đối không đưa giả định hay cảm tính ngoài phạm vi dữ liệu."
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "id": "sta21-ext-1",
+      "layer": "Core-Support",
+      "title": "Bảng tần số, tần suất và chất lượng dữ liệu: học theo bài/lớp phù hợp",
+      "gates_core": false
+    },
+    {
+      "id": "sta21-ext-2",
+      "layer": "Entrance10",
+      "title": "Thống kê nhiều bước và dữ liệu ghép nhóm",
+      "gates_core": false
+    },
+    {
+      "id": "sta21-ext-3",
+      "layer": "Specialized-Challenge",
+      "title": "Diễn giải đa nguồn và các bẫy về thang đo",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/21-thong-ke-micro-v1.json"
+}

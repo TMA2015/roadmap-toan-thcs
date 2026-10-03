@@ -1,0 +1,6441 @@
+{
+  "schema": "skill-taxonomy-v2-registry-r1",
+  "version": 1,
+  "status": "I0_DURABLE_REGISTRY_RUNTIME_DISABLED",
+  "as_of": "2026-10-02",
+  "academic_authorization": "CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING",
+  "runtime_enabled": false,
+  "learner_data_write_enabled": false,
+  "history_backfill_enabled": false,
+  "mastery_thresholds_enabled": false,
+  "readiness_enabled": false,
+  "counts": {
+    "families": 131,
+    "unique_family_ids": 131,
+    "legacy_mappings": 386,
+    "intentional_no_family_mappings": 20,
+    "cross_topic_reuse_mappings_total": 14,
+    "ct24_explicit_reuse_mappings": 5,
+    "reviewed_practice_questions": 3114
+  },
+  "family_layer_counts": {
+    "KNTT-Core": 98,
+    "Entrance10": 20,
+    "Specialized-Challenge": 4,
+    "Core-Support": 6,
+    "THPT-Bridge": 3
+  },
+  "mapping_role_counts": {
+    "ASSESSED_SKILL": 273,
+    "REVIEW_REQUIRED": 1,
+    "SUPPORTING_SKILL": 36,
+    "CONTEXT": 14,
+    "METHOD": 15,
+    "COMPOSITE_TASK": 13,
+    "CATEGORY": 11,
+    "EXTENSION_SKILL": 4,
+    "REPRESENTATION": 1,
+    "CROSS_TOPIC_LINK": 1,
+    "CROSS_TOPIC_REUSE": 14,
+    "EXAM_SKILL": 3
+  },
+  "source_registries": [
+    {
+      "batch": "S1",
+      "topics": [
+        "CT02",
+        "CT03",
+        "CT04",
+        "CT05",
+        "CT06",
+        "CT07"
+      ],
+      "path": "review-packets/skill-taxonomy/S1_FAMILY_CONSOLIDATION_RECONCILED_R1.json",
+      "ref": "review/skill-taxonomy-v2-s1-family-consolidation-r1-20261002",
+      "blob_sha": "71904e9767e7f25f7e0162b916f763d68fab2031",
+      "status": "NOTEBOOKLM_PASS_CLEARED_FOR_S1_FAMILY_RECONCILIATION"
+    },
+    {
+      "batch": "S2",
+      "topics": [
+        "CT08",
+        "CT09",
+        "CT10",
+        "CT11",
+        "CT12"
+      ],
+      "path": "review-packets/skill-taxonomy/S2_FINAL_ACADEMIC_REGISTRY_R1.json",
+      "ref": "review/skill-taxonomy-v2-s2-family-provisional-r1-20261002",
+      "blob_sha": "2f2f862c5e571dd4dcf1a095cc799ab5a24139f5",
+      "status": "ACADEMICALLY_CLOSED_AFTER_FULL_BANK_ITEM_AUDITS"
+    },
+    {
+      "batch": "S3",
+      "topics": [
+        "CT13",
+        "CT14",
+        "CT15",
+        "CT16",
+        "CT17",
+        "CT18",
+        "CT19",
+        "CT20"
+      ],
+      "path": "review-packets/skill-taxonomy/S3_FINAL_ACADEMIC_REGISTRY_R1.json",
+      "ref": "review/skill-taxonomy-v2-s3-geometry-family-r1-20261002",
+      "blob_sha": "ab6d45fe385a56387336556ba146c4b7c500626e",
+      "status": "ACADEMICALLY_CLOSED_AFTER_FULL_BANK_ITEM_AUDITS"
+    },
+    {
+      "batch": "S4",
+      "topics": [
+        "CT21",
+        "CT22",
+        "CT23",
+        "CT24",
+        "CT25"
+      ],
+      "path": "review-packets/skill-taxonomy/S4_FINAL_ACADEMIC_REGISTRY_R1.json",
+      "ref": "review/skill-taxonomy-v2-s4-ct21-25-combined-r1-20261002",
+      "blob_sha": "fedac0a5c1598ea2f18f62e892f80fe77439c143",
+      "status": "ACADEMICALLY_CLOSED_AFTER_FULL_BANK_ITEM_AUDITS"
+    }
+  ],
+  "academic_closure": {
+    "path": "review-packets/skill-taxonomy/TAXONOMY_V2_ACADEMIC_CLOSURE_20261002.md",
+    "merged_via_pr": 269,
+    "whole_project_result": "131/131 families PASS; 386/386 mappings PASS; 0 fixes"
+  },
+  "protected_runtime_boundaries": {
+    "legacy_practice_store": "toan-thcs-practice-v1",
+    "canonical_evidence_g2_store": "toan-thcs-canonical-evidence-v2",
+    "canonical_evidence_g2_scope": "101 items / 7 canonical skills / CT04–CT07",
+    "taxonomy_v2_evidence_store_proposed": "toan-thcs-taxonomy-v2-evidence-v1",
+    "no_backfill_or_regrade": true
+  },
+  "families": [
+    {
+      "family_id": "NUM-SETS",
+      "label_vi": "Tập hợp số và biểu diễn số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "tap-hop-so",
+        "so-huu-ti-thap-phan"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "NUM-INTEGER-OPS",
+      "label_vi": "Số nguyên và phép tính",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "so-nguyen-phep-tinh"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "NUM-ABS",
+      "label_vi": "Giá trị tuyệt đối",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "gia-tri-tuyet-doi"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "NUM-ORDER",
+      "label_vi": "Thứ tự thực hiện phép tính",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "thu-tu-phep-tinh"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "NUM-POWER",
+      "label_vi": "Lũy thừa",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "luy-thua"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "NUM-DIV-PRIME",
+      "label_vi": "Chia hết, số nguyên tố và phân tích thừa số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "dau-hieu-chia-het",
+        "so-nguyen-to",
+        "phan-tich-thua-so-nguyen-to"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "NUM-GCD-LCM",
+      "label_vi": "ƯCLN và BCNN",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "ucln",
+        "bcnn"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "NUM-FRACTION-FORM",
+      "label_vi": "Rút gọn, quy đồng và so sánh phân số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "rut-gon-phan-so",
+        "quy-dong-so-sanh-phan-so"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "NUM-FRACTION-OPS",
+      "label_vi": "Phép tính phân số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "phep-tinh-phan-so"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "NUM-PERCENT",
+      "label_vi": "Phần trăm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02",
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "phan-tram",
+        "ti-so-phan-tram"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATIO-BASIC",
+      "label_vi": "Tỉ số và ứng dụng tỉ số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "ti-so",
+        "doi-don-vi-ti-so",
+        "ti-le-ban-do"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATIO-PROP",
+      "label_vi": "Tỉ lệ thức và tìm số chưa biết",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "ti-le-thuc",
+        "tim-x-ti-le-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATIO-SPLIT",
+      "label_vi": "Dãy tỉ số bằng nhau và chia theo tỉ lệ",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "day-ti-so-bang-nhau",
+        "chia-theo-ti-le"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATIO-DIRECT",
+      "label_vi": "Đại lượng tỉ lệ thuận",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "ti-le-thuan",
+        "he-so-ti-le-thuan"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATIO-INVERSE",
+      "label_vi": "Đại lượng tỉ lệ nghịch",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "ti-le-nghich",
+        "he-so-ti-le-nghich"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATIO-DISTINGUISH",
+      "label_vi": "Phân biệt tỉ lệ thuận và tỉ lệ nghịch",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "phan-biet-thuan-nghich"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATIO-MODEL",
+      "label_vi": "Mô hình hóa bằng tỉ lệ",
+      "layer": "Entrance10",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "mo-hinh-ti-le"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "ALG-STRUCTURE",
+      "label_vi": "Cấu trúc đơn thức và đa thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-don-thuc",
+        "nhan-biet-da-thuc",
+        "he-so-bac"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "ALG-SIMPLIFY-ADD-SUB",
+      "label_vi": "Thu gọn, bỏ ngoặc và cộng trừ đa thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "hang-tu-dong-dang",
+        "thu-gon-da-thuc",
+        "bo-ngoac-dau",
+        "cong-tru-da-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "ALG-MULTIPLY",
+      "label_vi": "Nhân biểu thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "ALG-EVALUATE",
+      "label_vi": "Tính giá trị biểu thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "ALG-DIV-MONOMIAL",
+      "label_vi": "Chia đa thức cho đơn thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "ALG-MODEL-EXPR",
+      "label_vi": "Lập biểu thức từ bài toán",
+      "layer": "Entrance10",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "lap-bieu-thuc",
+        "bai-toan-thuc-te"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "ID-STRUCTURE",
+      "label_vi": "Nhận dạng và vận dụng các hằng đẳng thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT05"
+      ],
+      "diagnostic_subskills": [
+        "binh-phuong-tong",
+        "binh-phuong-hieu",
+        "hieu-hai-binh-phuong",
+        "lap-phuong-tong",
+        "lap-phuong-hieu",
+        "tong-hai-lap-phuong",
+        "hieu-hai-lap-phuong",
+        "nhan-dang-hdt",
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "ID-APPLY",
+      "label_vi": "Rút gọn và tính nhanh bằng hằng đẳng thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT05"
+      ],
+      "diagnostic_subskills": [
+        "tinh-nhanh-hdt",
+        "rut-gon-hdt"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "ID-PROOF",
+      "label_vi": "Chứng minh đẳng thức",
+      "layer": "Entrance10",
+      "topics": [
+        "CT05"
+      ],
+      "diagnostic_subskills": [
+        "chung-minh-hdt"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "FAC-COMMON",
+      "label_vi": "Phân tích bằng đặt nhân tử chung",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "nhan-tu-chung",
+        "doi-dau-nhan-tu-chung"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "FAC-GROUP",
+      "label_vi": "Phân tích bằng nhóm hạng tử",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "nhom-hang-tu"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "FAC-IDENTITY",
+      "label_vi": "Phân tích bằng hằng đẳng thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "hieu-hai-binh-phuong",
+        "binh-phuong-hoan-chinh",
+        "tong-hieu-lap-phuong"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "FAC-COMBINE",
+      "label_vi": "Phối hợp các phương pháp phân tích đa thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "phoi-hop-phuong-phap",
+        "kiem-tra-phan-tich"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "FAC-SPLIT-MIDDLE",
+      "label_vi": "Tách hạng tử giữa",
+      "layer": "Entrance10",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "tach-hang-tu-giua"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "EQ-ZERO-PRODUCT",
+      "label_vi": "Giải phương trình bằng phân tích nhân tử",
+      "layer": "Entrance10",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "giai-pt-bang-nhan-tu"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATEX-CONCEPT",
+      "label_vi": "Khái niệm và tính chất cơ bản của phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-phan-thuc",
+        "hai-phan-thuc-bang-nhau"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATEX-DOMAIN",
+      "label_vi": "Điều kiện xác định và bảo toàn điều kiện",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04",
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "dieu-kien-xac-dinh",
+        "giu-dieu-kien-ban-dau"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATEX-SIMPLIFY",
+      "label_vi": "Phân tích và rút gọn phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "doi-dau-phan-thuc",
+        "phan-tich-tu-mau",
+        "rut-gon-phan-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATEX-ADD-SUB",
+      "label_vi": "Quy đồng, cộng và trừ phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "quy-dong-mau-thuc",
+        "cong-tru-phan-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATEX-MULT-DIV",
+      "label_vi": "Nhân và chia phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "nhan-phan-thuc",
+        "chia-phan-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATEX-EVALUATE",
+      "label_vi": "Tính giá trị phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "RATEX-INTEGER",
+      "label_vi": "Tìm giá trị nguyên của biểu thức hữu tỉ",
+      "layer": "Specialized-Challenge",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "tim-gia-tri-nguyen"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "runtime_enabled": false,
+      "source_batch": "S1"
+    },
+    {
+      "family_id": "EQ-BASIC",
+      "label_vi": "Giải phương trình cơ bản",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "nghiem-phuong-trinh",
+        "pt-bac-nhat",
+        "bien-doi-pt-nhieu-buoc",
+        "pt-tich"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "EQ-RATIONAL",
+      "label_vi": "Phương trình chứa ẩn ở mẫu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "dkxd-phuong-trinh-mau",
+        "khu-mau-phuong-trinh",
+        "doi-chieu-nghiem"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "INEQ-ORDER",
+      "label_vi": "Bất đẳng thức và tính chất thứ tự",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "bat-dang-thuc",
+        "tinh-chat-thu-tu-phep-cong",
+        "tinh-chat-thu-tu-phep-nhan"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "INEQ-SOLVE",
+      "label_vi": "Giải và biểu diễn bất phương trình",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "bpt-bac-nhat",
+        "doi-chieu-bpt",
+        "bieu-dien-tap-nghiem",
+        "giao-tap-nghiem"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "EQ-MODEL",
+      "label_vi": "Lập phương trình từ bài toán",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "lap-phuong-trinh"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "INEQ-MODEL",
+      "label_vi": "Lập bất phương trình từ bài toán",
+      "layer": "Entrance10",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "lap-bat-phuong-trinh"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "EQ-PARAM",
+      "label_vi": "Phương trình/bất phương trình có tham số",
+      "layer": "Specialized-Challenge",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "tham-so-co-ban"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "SYS-CONCEPT",
+      "label_vi": "Nghiệm và ý nghĩa của hệ phương trình",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT09"
+      ],
+      "diagnostic_subskills": [
+        "nghiem-pt-hai-an",
+        "nghiem-he",
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "SYS-SOLVE",
+      "label_vi": "Giải và kiểm tra hệ phương trình",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT09"
+      ],
+      "diagnostic_subskills": [
+        "giai-he-the",
+        "giai-he-cong",
+        "chon-phuong-phap",
+        "bien-doi-truoc-giai",
+        "kiem-tra-nghiem-he"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "SYS-MODEL",
+      "label_vi": "Lập hệ từ bài toán",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT09"
+      ],
+      "diagnostic_subskills": [
+        "lap-he-bai-toan",
+        "bai-toan-so",
+        "chuyen-dong-he",
+        "nang-suat-he"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "SYS-PARAM",
+      "label_vi": "Hệ phương trình có tham số",
+      "layer": "Entrance10",
+      "topics": [
+        "CT09"
+      ],
+      "diagnostic_subskills": [
+        "tham-so-he"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "FUNC-BASIC",
+      "label_vi": "Hàm số, giá trị và bảng giá trị",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "khai-niem-ham-so",
+        "tinh-gia-tri-ham",
+        "bang-gia-tri"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "GRAPH-POINT",
+      "label_vi": "Tọa độ và điểm thuộc đồ thị",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "toa-do-diem",
+        "diem-thuoc-do-thi"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "LINEAR-FUNC",
+      "label_vi": "Hàm số bậc nhất và đồ thị đường thẳng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-ham-bac-nhat",
+        "he-so-goc",
+        "tung-do-goc",
+        "dong-nghich-bien",
+        "ve-do-thi-ham-bac-nhat"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "GRAPH-INTERSECTION",
+      "label_vi": "Vị trí và giao điểm các đồ thị",
+      "layer": "Entrance10",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "vi-tri-hai-duong-thang",
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "PARABOLA-BASIC",
+      "label_vi": "Parabol y=ax²",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "ham-y-ax2",
+        "doi-xung-parabol",
+        "diem-thuoc-parabol"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "RAD-BASIC",
+      "label_vi": "Căn bậc hai và điều kiện xác định",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "can-bac-hai-so-hoc",
+        "dkxd-can",
+        "can-binh-phuong"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "RAD-TRANSFORM",
+      "label_vi": "Biến đổi căn thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "khai-phuong-tich",
+        "khai-phuong-thuong",
+        "dua-thua-so-ra",
+        "dua-thua-so-vao"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "RAD-OPERATE",
+      "label_vi": "Phép tính với căn thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "can-dong-dang",
+        "nhan-chia-can"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "RAD-RATIONALIZE",
+      "label_vi": "Trục căn thức ở mẫu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "truc-can-mau-don",
+        "truc-can-lien-hop"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "RAD-CUBEROOT",
+      "label_vi": "Căn bậc ba",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "can-bac-ba"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "RAD-EQUATION",
+      "label_vi": "Phương trình chứa căn",
+      "layer": "Entrance10",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "tim-x-can"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "RAD-COMPARE",
+      "label_vi": "So sánh biểu thức căn",
+      "layer": "Entrance10",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "so-sanh-can"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "QUAD-STRUCTURE",
+      "label_vi": "Nhận dạng phương trình bậc hai và hệ số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "nhan-dang-pt-bac-hai",
+        "he-so-abc"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "QUAD-SOLVE",
+      "label_vi": "Biệt thức và giải phương trình bậc hai",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "tinh-delta",
+        "so-nghiem-delta",
+        "cong-thuc-nghiem",
+        "delta-phay",
+        "giai-pt-bac-hai",
+        "nham-nghiem"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "VIETE-CORE",
+      "label_vi": "Viète và lập phương trình từ nghiệm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "tong-tich-nghiem",
+        "lap-pt-tu-nghiem"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "VIETE-APPLY",
+      "label_vi": "Vận dụng Viète với biểu thức và dấu nghiệm",
+      "layer": "Entrance10",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "bieu-thuc-doi-xung",
+        "dau-nghiem"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "QUAD-GRAPH",
+      "label_vi": "Liên hệ nghiệm với đồ thị",
+      "layer": "Entrance10",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "lien-he-do-thi"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "QUAD-PARAM",
+      "label_vi": "Tham số và số nghiệm",
+      "layer": "Specialized-Challenge",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "tham-so-so-nghiem"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S2"
+    },
+    {
+      "family_id": "GEO-LINE-FOUND",
+      "label_vi": "Điểm, tia, đoạn thẳng và trung điểm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT13"
+      ],
+      "diagnostic_subskills": [
+        "diem-thuoc-duong",
+        "diem-nam-giua",
+        "tia",
+        "tia-doi",
+        "doan-thang-do-dai",
+        "trung-diem"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "GEO-ANGLE-REL",
+      "label_vi": "Góc và các quan hệ góc",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT13"
+      ],
+      "diagnostic_subskills": [
+        "khai-niem-goc",
+        "do-goc",
+        "phan-loai-goc",
+        "goc-phu-bu",
+        "goc-doi-dinh",
+        "tia-phan-giac",
+        "nhan-dang-goc-dac-biet",
+        "duong-vuong-goc"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "GEO-TRANSVERSAL",
+      "label_vi": "Góc tạo bởi một đường cắt",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT13"
+      ],
+      "diagnostic_subskills": [
+        "goc-so-le-trong",
+        "goc-dong-vi",
+        "goc-trong-cung-phia"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "GEO-PARALLEL",
+      "label_vi": "Song song, dấu hiệu và quan hệ vuông góc",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT13"
+      ],
+      "diagnostic_subskills": [
+        "tinh-chat-song-song",
+        "dau-hieu-song-song",
+        "tien-de-euclid",
+        "vuong-goc-song-song"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "GEO-PROOF-BASIC",
+      "label_vi": "Giả thiết – kết luận và chứng minh hình học ngắn",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT13"
+      ],
+      "diagnostic_subskills": [
+        "gia-thiet-ket-luan",
+        "lap-luan-chung-minh-ngan"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "TRI-ANGLE-SIDE",
+      "label_vi": "Góc, cạnh và bất đẳng thức trong tam giác",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT14"
+      ],
+      "diagnostic_subskills": [
+        "tong-goc-tam-giac",
+        "goc-ngoai",
+        "so-sanh-canh-goc",
+        "bat-dang-thuc-tam-giac",
+        "duong-vuong-goc-duong-xien"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "TRI-SPECIAL",
+      "label_vi": "Nhận biết và tính chất tam giác đặc biệt",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT14",
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "phan-loai-tam-giac",
+        "tam-giac-can",
+        "tam-giac-deu",
+        "nhan-biet-tam-giac-deu"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "TRI-PERPBISECTOR",
+      "label_vi": "Đường trung trực và tính chất cách đều",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT14",
+        "CT15"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-trung-truc",
+        "cach-deu-dinh",
+        "tinh-chat-duong-trung-truc"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "TRI-CONGRUENCE",
+      "label_vi": "Các trường hợp tam giác bằng nhau và tương ứng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT14"
+      ],
+      "diagnostic_subskills": [
+        "bang-nhau-ccc",
+        "bang-nhau-cgc",
+        "bang-nhau-gcg",
+        "bang-nhau-tam-giac-vuong",
+        "viet-tuong-ung-tam-giac-bang-nhau"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "GEO-PLANE-MEASURE",
+      "label_vi": "Chu vi, diện tích và đo lường hình phẳng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT14",
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "chu-vi-dien-tich",
+        "chu-vi-tu-giac",
+        "dien-tich-tu-giac",
+        "do-luong-thuc-te"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "TRI-CENTROID",
+      "label_vi": "Trung tuyến và trọng tâm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT15"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-trung-tuyen",
+        "trong-tam",
+        "ti-so-trong-tam"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "TRI-ORTHOCENTER",
+      "label_vi": "Đường cao và trực tâm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT15"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-duong-cao",
+        "truc-tam",
+        "vi-tri-truc-tam"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "TRI-INCENTER",
+      "label_vi": "Phân giác và tâm nội tiếp",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT15",
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-phan-giac",
+        "tam-noi-tiep",
+        "cach-deu-canh",
+        "duong-tron-noi-tiep-tam-giac"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "TRI-CIRCUMCENTER",
+      "label_vi": "Tâm ngoại tiếp và các đường trung trực",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT15",
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "tam-ngoai-tiep",
+        "vi-tri-tam-ngoai-tiep",
+        "duong-tron-ngoai-tiep-tam-giac"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "TRI-CENTERS",
+      "label_vi": "Phân biệt bốn tâm và tính đồng quy",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT15"
+      ],
+      "diagnostic_subskills": [
+        "phan-biet-bon-tam",
+        "dong-quy-bon-duong-dac-biet"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "QUAD-TRAPEZOID",
+      "label_vi": "Tứ giác, hình thang và hình thang cân",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT16"
+      ],
+      "diagnostic_subskills": [
+        "tong-goc-tu-giac",
+        "hinh-thang",
+        "hinh-thang-can"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "QUAD-PARALLELOGRAM",
+      "label_vi": "Hình bình hành: tính chất và dấu hiệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT16"
+      ],
+      "diagnostic_subskills": [
+        "hbh-tinh-chat",
+        "hbh-dau-hieu"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "QUAD-RECTANGLE",
+      "label_vi": "Hình chữ nhật: tính chất và dấu hiệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT16"
+      ],
+      "diagnostic_subskills": [
+        "hcn-tinh-chat",
+        "hcn-dau-hieu"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "QUAD-RHOMBUS",
+      "label_vi": "Hình thoi: tính chất và dấu hiệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT16"
+      ],
+      "diagnostic_subskills": [
+        "hthoi-tinh-chat",
+        "hthoi-dau-hieu"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "QUAD-SQUARE-HIER",
+      "label_vi": "Hình vuông, quan hệ bao hàm và suy luận đường chéo",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT16",
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "hvuong-tinh-chat",
+        "hvuong-dau-hieu",
+        "quan-he-bao-ham",
+        "duong-cheo-suy-luan",
+        "nhan-biet-hinh-vuong",
+        "nhan-biet-tu-giac-dac-biet"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "SIM-THALES",
+      "label_vi": "Thales và tỉ lệ đoạn thẳng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT17"
+      ],
+      "diagnostic_subskills": [
+        "thales-thuan",
+        "thales-dao",
+        "ti-le-doan-thang"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "SIM-MID-BISECTOR",
+      "label_vi": "Đường trung bình và tính chất đường phân giác",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT17"
+      ],
+      "diagnostic_subskills": [
+        "duong-trung-binh",
+        "tinh-chat-duong-phan-giac"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "SIM-CRITERIA",
+      "label_vi": "Nhận biết và các trường hợp tam giác đồng dạng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT17"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-dong-dang",
+        "dong-dang-gg",
+        "dong-dang-cgc",
+        "dong-dang-ccc",
+        "thu-tu-tuong-ung"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "SIM-LENGTH",
+      "label_vi": "Tính độ dài bằng đồng dạng và hình đồng dạng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT17"
+      ],
+      "diagnostic_subskills": [
+        "tinh-do-dai-dong-dang",
+        "hinh-dong-dang"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "SIM-RATIO-EXT",
+      "label_vi": "Tỉ số chu vi, diện tích và hệ thức tích từ đồng dạng",
+      "layer": "Core-Support",
+      "topics": [
+        "CT17"
+      ],
+      "diagnostic_subskills": [
+        "ti-so-chu-vi",
+        "ti-so-dien-tich",
+        "he-thuc-tich"
+      ],
+      "learner_visible_default": false,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "SIM-CHAIN",
+      "label_vi": "Kết hợp song song và đồng dạng trong chuỗi suy luận",
+      "layer": "Entrance10",
+      "topics": [
+        "CT17",
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "ket-hop-song-song-dong-dang",
+        "song-song-dong-dang"
+      ],
+      "learner_visible_default": false,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "RIGHT-PYTHAGORE",
+      "label_vi": "Pythagore và nhận biết tam giác vuông",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT14",
+        "CT18"
+      ],
+      "diagnostic_subskills": [
+        "pythagore",
+        "pythagore-dao",
+        "canh-huyen"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "RIGHT-TRIG-RATIO",
+      "label_vi": "Tỉ số lượng giác trong tam giác vuông",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT18"
+      ],
+      "diagnostic_subskills": [
+        "doi-ke-huyen",
+        "sin",
+        "cos",
+        "tan",
+        "cot"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "RIGHT-SOLVE",
+      "label_vi": "Tìm cạnh và tìm góc bằng lượng giác",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT18"
+      ],
+      "diagnostic_subskills": [
+        "tim-canh-luong-giac",
+        "tim-goc-luong-giac"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "RIGHT-APPLICATION",
+      "label_vi": "Góc nâng, góc hạ, chiều cao và khoảng cách",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT18"
+      ],
+      "diagnostic_subskills": [
+        "goc-nang-ha",
+        "chieu-cao-khoang-cach"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "RIGHT-ALTITUDE",
+      "label_vi": "Hệ thức cạnh và đường cao trong tam giác vuông",
+      "layer": "Entrance10",
+      "topics": [
+        "CT18"
+      ],
+      "diagnostic_subskills": [
+        "he-thuc-canh",
+        "he-thuc-duong-cao",
+        "dien-tich-duong-cao",
+        "ket-hop-he-thuc"
+      ],
+      "learner_visible_default": false,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "CIRCLE-CHORD-ARC",
+      "label_vi": "Dây và cung trong đường tròn",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "day-va-tam",
+        "cung-va-day"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "CIRCLE-ANGLES",
+      "label_vi": "Góc ở tâm, góc nội tiếp và quan hệ góc–cung",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "goc-o-tam",
+        "goc-noi-tiep",
+        "nua-duong-tron",
+        "goc-cung"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "CIRCLE-MEASURE",
+      "label_vi": "Độ dài đường tròn, cung và diện tích phần tròn",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "do-dai-duong-tron",
+        "do-dai-cung",
+        "dien-tich-quat-tron",
+        "dien-tich-vanh-khuyen"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "CIRCLE-POSITION",
+      "label_vi": "Vị trí tương đối với đường tròn",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "vi-tri-tuong-doi-duong-thang-duong-tron",
+        "vi-tri-tuong-doi-hai-duong-tron"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "CIRCLE-CYCLIC",
+      "label_vi": "Tứ giác nội tiếp và dấu hiệu nội tiếp",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "tu-giac-noi-tiep",
+        "dau-hieu-noi-tiep"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "CIRCLE-TANGENT",
+      "label_vi": "Tiếp tuyến: tính chất và chứng minh",
+      "layer": "Entrance10",
+      "topics": [
+        "CT19",
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "tiep-tuyen-ban-kinh",
+        "hai-tiep-tuyen",
+        "chung-minh-tiep-tuyen",
+        "tiep-tuyen-chung-minh"
+      ],
+      "learner_visible_default": false,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "CIRCLE-POWER",
+      "label_vi": "Hệ thức hai dây và tiếp tuyến–cát tuyến",
+      "layer": "Specialized-Challenge",
+      "topics": [
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "hai-day-cat-nhau",
+        "tiep-tuyen-cat-tuyen"
+      ],
+      "learner_visible_default": false,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "GEO-REGULAR-SYMM",
+      "label_vi": "Đa giác đều và đối xứng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT19",
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "da-giac-deu",
+        "nhan-biet-luc-giac-deu",
+        "truc-doi-xung",
+        "tam-doi-xung"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "SOLID-PRISM",
+      "label_vi": "Hình hộp, lập phương và lăng trụ đứng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-hinh-hop-lap-phuong",
+        "dien-tich-xung-quanh-hop-chu-nhat",
+        "the-tich-hop-chu-nhat",
+        "nhan-biet-lang-tru-dung",
+        "dien-tich-xung-quanh-lang-tru",
+        "the-tich-lang-tru",
+        "dien-tich-day",
+        "doi-don-vi-do-luong"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "SOLID-PYRAMID",
+      "label_vi": "Hình chóp đều",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-hinh-chop-deu",
+        "dien-tich-xung-quanh-hinh-chop",
+        "the-tich-hinh-chop"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "SOLID-CYL-CONE",
+      "label_vi": "Hình trụ và hình nón",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-hinh-tru",
+        "dien-tich-xung-quanh-hinh-tru",
+        "the-tich-hinh-tru",
+        "nhan-biet-hinh-non",
+        "dien-tich-xung-quanh-hinh-non",
+        "the-tich-hinh-non"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "SOLID-SPHERE",
+      "label_vi": "Hình cầu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-hinh-cau",
+        "dien-tich-mat-cau",
+        "the-tich-hinh-cau"
+      ],
+      "learner_visible_default": true,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "GEO-SYNTHESIS",
+      "label_vi": "Hình học tổng hợp nhiều bước",
+      "layer": "Entrance10",
+      "topics": [
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "hai-goc-vuong-noi-tiep",
+        "noi-tiep-dong-dang",
+        "dong-dang-he-thuc-tich",
+        "tam-giac-vuong-dong-dang",
+        "chuoi-suy-luan",
+        "bai-toan-tong-hop"
+      ],
+      "learner_visible_default": false,
+      "runtime_enabled": false,
+      "source_batch": "S3"
+    },
+    {
+      "family_id": "STAT-DATA",
+      "label_vi": "Dữ liệu và thu thập dữ liệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "du-lieu-phan-loai",
+        "thu-thap-du-lieu"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "STAT-QUALITY",
+      "label_vi": "Chất lượng dữ liệu và mẫu thiên lệch",
+      "layer": "Core-Support",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "kiem-tra-chat-luong",
+        "mau-thien-lech"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "STAT-FREQUENCY",
+      "label_vi": "Bảng tần số và tần suất",
+      "layer": "Core-Support",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "bang-tan-so",
+        "tan-suat"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "STAT-CHART-READ",
+      "label_vi": "Đọc và so sánh các biểu đồ",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "doc-bieu-do-cot",
+        "doc-bieu-do-doan-thang",
+        "doc-bieu-do-cot-kep",
+        "bieu-do-quat-tron"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "STAT-REPRESENT",
+      "label_vi": "Chọn và chuyển dạng biểu diễn dữ liệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "chon-bieu-do",
+        "chuyen-bang-bieu-do"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "STAT-INFER",
+      "label_vi": "Nhận xét và kết luận từ dữ liệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "nhan-xet-du-lieu"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "STAT-ADVANCED-DATA",
+      "label_vi": "Dữ liệu ghép nhóm và bẫy thang đo",
+      "layer": "Entrance10",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "du-lieu-ghep-nhom",
+        "don-vi-thang-do"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "STAT-CENTER",
+      "label_vi": "Các đại lượng xu thế trung tâm",
+      "layer": "THPT-Bridge",
+      "topics": [
+        "CT22"
+      ],
+      "diagnostic_subskills": [
+        "trung-binh-tho",
+        "trung-binh-tan-so",
+        "trung-vi",
+        "mot",
+        "nhieu-mot"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "STAT-SPREAD-OUTLIER",
+      "label_vi": "Khoảng biến thiên và giá trị ngoại lai",
+      "layer": "THPT-Bridge",
+      "topics": [
+        "CT22"
+      ],
+      "diagnostic_subskills": [
+        "khoang-bien-thien",
+        "ngoai-lai"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "STAT-COMPARE-MEASURE",
+      "label_vi": "Chọn đại lượng đại diện và so sánh dữ liệu",
+      "layer": "THPT-Bridge",
+      "topics": [
+        "CT22"
+      ],
+      "diagnostic_subskills": [
+        "so-sanh-trung-binh-trung-vi",
+        "chon-dai-luong",
+        "so-sanh-hai-bo"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "PROB-EVENT",
+      "label_vi": "Phép thử và biến cố",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "phep-thu-ngau-nhien",
+        "bien-co",
+        "bien-co-chac-chan-khong-the"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "PROB-CLASSICAL",
+      "label_vi": "Xác suất cổ điển và kiểm tra tính hợp lý",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "PROB-EXPERIMENTAL",
+      "label_vi": "Xác suất thực nghiệm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "xac-suat-thuc-nghiem"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "PROB-SPACE-SUPPORT",
+      "label_vi": "Không gian mẫu, biến cố đối và lặp phép thử",
+      "layer": "Core-Support",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "khong-gian-mau",
+        "bien-co-doi",
+        "dong-xu-nhieu-lan"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "PROB-MULTISTEP",
+      "label_vi": "Xác suất nhiều bước",
+      "layer": "Entrance10",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "xuc-xac-hai-lan",
+        "so-do-cay",
+        "nhieu-buoc-doc-lap",
+        "khong-hoan-lai"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "MODEL-SETUP",
+      "label_vi": "Đọc dữ kiện và chuẩn hóa đơn vị",
+      "layer": "Core-Support",
+      "topics": [
+        "CT24"
+      ],
+      "diagnostic_subskills": [
+        "doc-de-du-kien",
+        "doi-don-vi"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "MODEL-VALIDATE",
+      "label_vi": "Kiểm tra nghiệm, đơn vị và kết luận thực tế",
+      "layer": "Core-Support",
+      "topics": [
+        "CT24"
+      ],
+      "diagnostic_subskills": [
+        "kiem-tra-ket-luan"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "EXAM-STRATEGY",
+      "label_vi": "Nhận diện dạng bài và quản lý thời gian",
+      "layer": "Entrance10",
+      "topics": [
+        "CT25"
+      ],
+      "diagnostic_subskills": [
+        "nhan-dien-chuyen-de",
+        "quan-ly-thoi-gian"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    },
+    {
+      "family_id": "EXAM-REVIEW",
+      "label_vi": "Phân loại lỗi và chữa đề",
+      "layer": "Entrance10",
+      "topics": [
+        "CT25"
+      ],
+      "diagnostic_subskills": [
+        "phan-loai-loi",
+        "checklist-chua-de"
+      ],
+      "runtime_enabled": false,
+      "source_batch": "S4"
+    }
+  ],
+  "legacy_mappings": [
+    {
+      "topic_id": "CT02",
+      "legacy_id": "tap-hop-so",
+      "label": "Tập hợp số",
+      "family_id": "NUM-SETS",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tap-hop-so",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "so-nguyen-phep-tinh",
+      "label": "Số nguyên và phép tính",
+      "family_id": "NUM-INTEGER-OPS",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "so-nguyen-phep-tinh",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "gia-tri-tuyet-doi",
+      "label": "Giá trị tuyệt đối",
+      "family_id": "NUM-ABS",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "gia-tri-tuyet-doi",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "thu-tu-phep-tinh",
+      "label": "Thứ tự thực hiện phép tính",
+      "family_id": "NUM-ORDER",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "thu-tu-phep-tinh",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "luy-thua",
+      "label": "Lũy thừa",
+      "family_id": "NUM-POWER",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "luy-thua",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "dau-hieu-chia-het",
+      "label": "Dấu hiệu chia hết",
+      "family_id": "NUM-DIV-PRIME",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "dau-hieu-chia-het",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "so-nguyen-to",
+      "label": "Số nguyên tố – hợp số",
+      "family_id": "NUM-DIV-PRIME",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "so-nguyen-to",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "phan-tich-thua-so-nguyen-to",
+      "label": "Phân tích thừa số nguyên tố",
+      "family_id": "NUM-DIV-PRIME",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "phan-tich-thua-so-nguyen-to",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "ucln",
+      "label": "ƯCLN",
+      "family_id": "NUM-GCD-LCM",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "ucln",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "bcnn",
+      "label": "BCNN",
+      "family_id": "NUM-GCD-LCM",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "bcnn",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "rut-gon-phan-so",
+      "label": "Rút gọn phân số",
+      "family_id": "NUM-FRACTION-FORM",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "rut-gon-phan-so",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "quy-dong-so-sanh-phan-so",
+      "label": "Quy đồng – so sánh phân số",
+      "family_id": "NUM-FRACTION-FORM",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "quy-dong-so-sanh-phan-so",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "phep-tinh-phan-so",
+      "label": "Phép tính phân số",
+      "family_id": "NUM-FRACTION-OPS",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "phep-tinh-phan-so",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "so-huu-ti-thap-phan",
+      "label": "Số hữu tỉ – số thập phân",
+      "family_id": "NUM-SETS",
+      "role": "REVIEW_REQUIRED",
+      "canonical_candidate": null,
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "phan-tram",
+      "label": "Phần trăm",
+      "family_id": "NUM-PERCENT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "phan-tram",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT02",
+      "legacy_id": "can-bac-hai",
+      "label": "Căn bậc hai nền tảng",
+      "family_id": null,
+      "role": "SUPPORTING_SKILL",
+      "canonical_candidate": "can-bac-hai-so-hoc",
+      "layer": "Core-Support",
+      "note": "Core-Support square-root content; excluded from normal S1 learner-facing skill families.",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "ti-so",
+      "label": "Tỉ số",
+      "family_id": "RATIO-BASIC",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "ti-so",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "doi-don-vi-ti-so",
+      "label": "Đổi đơn vị khi lập tỉ số",
+      "family_id": "RATIO-BASIC",
+      "role": "SUPPORTING_SKILL",
+      "canonical_candidate": "ti-so",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "ti-le-thuc",
+      "label": "Tỉ lệ thức",
+      "family_id": "RATIO-PROP",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "ti-le-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "tim-x-ti-le-thuc",
+      "label": "Tìm số chưa biết trong tỉ lệ thức",
+      "family_id": "RATIO-PROP",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tim-x-ti-le-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "day-ti-so-bang-nhau",
+      "label": "Dãy tỉ số bằng nhau",
+      "family_id": "RATIO-SPLIT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "day-ti-so-bang-nhau",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "chia-theo-ti-le",
+      "label": "Chia theo tỉ lệ",
+      "family_id": "RATIO-SPLIT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "chia-theo-ti-le",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "ti-le-thuan",
+      "label": "Đại lượng tỉ lệ thuận",
+      "family_id": "RATIO-DIRECT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "ti-le-thuan",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "he-so-ti-le-thuan",
+      "label": "Hệ số tỉ lệ thuận",
+      "family_id": "RATIO-DIRECT",
+      "role": "SUPPORTING_SKILL",
+      "canonical_candidate": "ti-le-thuan",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "ti-le-nghich",
+      "label": "Đại lượng tỉ lệ nghịch",
+      "family_id": "RATIO-INVERSE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "ti-le-nghich",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "he-so-ti-le-nghich",
+      "label": "Hệ số tỉ lệ nghịch",
+      "family_id": "RATIO-INVERSE",
+      "role": "SUPPORTING_SKILL",
+      "canonical_candidate": "ti-le-nghich",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "phan-biet-thuan-nghich",
+      "label": "Phân biệt tỉ lệ thuận – nghịch",
+      "family_id": "RATIO-DISTINGUISH",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "phan-biet-thuan-nghich",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "ti-le-ban-do",
+      "label": "Tỉ lệ bản đồ",
+      "family_id": "RATIO-BASIC",
+      "role": "CONTEXT",
+      "canonical_candidate": "ti-so",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "ti-so-phan-tram",
+      "label": "Tỉ số phần trăm",
+      "family_id": "NUM-PERCENT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "phan-tram",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "chuyen-dong-ti-le",
+      "label": "Tỉ lệ trong bài toán chuyển động",
+      "family_id": null,
+      "role": "CONTEXT",
+      "canonical_candidate": null,
+      "layer": "KNTT-Core",
+      "note": "Motion context only.",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "nang-suat-ti-le",
+      "label": "Tỉ lệ trong bài toán năng suất",
+      "family_id": null,
+      "role": "CONTEXT",
+      "canonical_candidate": null,
+      "layer": "KNTT-Core",
+      "note": "Productivity context only.",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT03",
+      "legacy_id": "mo-hinh-ti-le",
+      "label": "Mô hình hóa bằng tỉ lệ",
+      "family_id": "RATIO-MODEL",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "mo-hinh-ti-le",
+      "layer": "Entrance10",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "nhan-biet-don-thuc",
+      "label": "Nhận biết đơn thức",
+      "family_id": "ALG-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhan-biet-don-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "nhan-biet-da-thuc",
+      "label": "Nhận biết đa thức",
+      "family_id": "ALG-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhan-biet-da-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "he-so-bac",
+      "label": "Hệ số và bậc",
+      "family_id": "ALG-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "he-so-bac",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "hang-tu-dong-dang",
+      "label": "Hạng tử đồng dạng",
+      "family_id": "ALG-SIMPLIFY-ADD-SUB",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "hang-tu-dong-dang",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "thu-gon-da-thuc",
+      "label": "Thu gọn đa thức",
+      "family_id": "ALG-SIMPLIFY-ADD-SUB",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "thu-gon-da-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "cong-tru-da-thuc",
+      "label": "Cộng – trừ đa thức",
+      "family_id": "ALG-SIMPLIFY-ADD-SUB",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "cong-tru-da-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "bo-ngoac-dau",
+      "label": "Bỏ ngoặc và dấu",
+      "family_id": "ALG-SIMPLIFY-ADD-SUB",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "bo-ngoac-dau",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "nhan-bieu-thuc",
+      "label": "Nhân biểu thức",
+      "family_id": "ALG-MULTIPLY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhan-bieu-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "tinh-phan-phoi",
+      "label": "Tính phân phối",
+      "family_id": "ALG-MULTIPLY",
+      "role": "METHOD",
+      "canonical_candidate": "nhan-bieu-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "tinh-gia-tri-bieu-thuc",
+      "label": "Tính giá trị biểu thức",
+      "family_id": "ALG-EVALUATE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tinh-gia-tri-bieu-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "dieu-kien-xac-dinh",
+      "label": "Điều kiện xác định",
+      "family_id": "RATEX-DOMAIN",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "dieu-kien-xac-dinh",
+      "layer": "Core-Support",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "bien-doi-nhieu-buoc",
+      "label": "Biến đổi nhiều bước",
+      "family_id": null,
+      "role": "COMPOSITE_TASK",
+      "canonical_candidate": null,
+      "layer": "Entrance10",
+      "note": "Composite task demand, not a standalone family.",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "lap-bieu-thuc",
+      "label": "Lập biểu thức",
+      "family_id": "ALG-MODEL-EXPR",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "lap-bieu-thuc",
+      "layer": "Entrance10",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "bai-toan-thuc-te",
+      "label": "Bài toán thực tế",
+      "family_id": "ALG-MODEL-EXPR",
+      "role": "CONTEXT",
+      "canonical_candidate": null,
+      "layer": "Entrance10",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT04",
+      "legacy_id": "chia-da-thuc-cho-don-thuc",
+      "label": "Chia đa thức cho đơn thức",
+      "family_id": "ALG-DIV-MONOMIAL",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "chia-da-thuc-cho-don-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "binh-phuong-tong",
+      "label": "Bình phương của một tổng",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "binh-phuong-tong-hieu",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "binh-phuong-hieu",
+      "label": "Bình phương của một hiệu",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "binh-phuong-tong-hieu",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "hieu-hai-binh-phuong",
+      "label": "Hiệu hai bình phương",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "hieu-hai-binh-phuong",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "lap-phuong-tong",
+      "label": "Lập phương của một tổng",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "lap-phuong-tong-hieu",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "lap-phuong-hieu",
+      "label": "Lập phương của một hiệu",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "lap-phuong-tong-hieu",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "tong-hai-lap-phuong",
+      "label": "Tổng hai lập phương",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tong-hieu-hai-lap-phuong",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "hieu-hai-lap-phuong",
+      "label": "Hiệu hai lập phương",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tong-hieu-hai-lap-phuong",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "nhan-dang-hdt",
+      "label": "Nhận dạng cấu trúc hằng đẳng thức",
+      "family_id": "ID-STRUCTURE",
+      "role": "CATEGORY",
+      "canonical_candidate": null,
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "binh-phuong-hoan-chinh",
+      "label": "Nhận dạng bình phương hoàn chỉnh",
+      "family_id": "ID-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "binh-phuong-hoan-chinh",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "nhan-dang-lap-phuong",
+      "label": "Nhận dạng cấu trúc lập phương",
+      "family_id": "ID-STRUCTURE",
+      "role": "CATEGORY",
+      "canonical_candidate": "lap-phuong-tong-hieu",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "phan-tich-hdt",
+      "label": "Phân tích biểu thức bằng hằng đẳng thức",
+      "family_id": "ID-STRUCTURE",
+      "role": "CATEGORY",
+      "canonical_candidate": null,
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "tinh-nhanh-hdt",
+      "label": "Tính nhanh bằng hằng đẳng thức",
+      "family_id": "ID-APPLY",
+      "role": "METHOD",
+      "canonical_candidate": null,
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "rut-gon-hdt",
+      "label": "Rút gọn bằng hằng đẳng thức",
+      "family_id": "ID-APPLY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "rut-gon-hdt",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "chung-minh-hdt",
+      "label": "Chứng minh đẳng thức",
+      "family_id": "ID-PROOF",
+      "role": "EXTENSION_SKILL",
+      "canonical_candidate": "chung-minh-dang-thuc",
+      "layer": "Entrance10",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT05",
+      "legacy_id": "giai-phuong-trinh-hdt",
+      "label": "Giải phương trình bằng hằng đẳng thức",
+      "family_id": null,
+      "role": "METHOD",
+      "canonical_candidate": "pt-bac-nhat",
+      "layer": "Entrance10",
+      "note": "Identity use inside equation solving; no separate family.",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "nhan-tu-chung",
+      "label": "Đặt nhân tử chung",
+      "family_id": "FAC-COMMON",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhan-tu-chung",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "doi-dau-nhan-tu-chung",
+      "label": "Đổi dấu để tạo nhân tử chung",
+      "family_id": "FAC-COMMON",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "doi-dau-nhan-tu-chung",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "hieu-hai-binh-phuong",
+      "label": "Hiệu hai bình phương",
+      "family_id": "FAC-IDENTITY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "hieu-hai-binh-phuong",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "binh-phuong-hoan-chinh",
+      "label": "Bình phương hoàn chỉnh",
+      "family_id": "FAC-IDENTITY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "binh-phuong-hoan-chinh",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "tong-hieu-lap-phuong",
+      "label": "Tổng – hiệu hai lập phương",
+      "family_id": "FAC-IDENTITY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tong-hieu-hai-lap-phuong",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "nhom-hang-tu",
+      "label": "Nhóm hạng tử",
+      "family_id": "FAC-GROUP",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhom-hang-tu",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "tach-hang-tu-giua",
+      "label": "Tách hạng tử giữa",
+      "family_id": "FAC-SPLIT-MIDDLE",
+      "role": "EXTENSION_SKILL",
+      "canonical_candidate": "tach-hang-tu-giua",
+      "layer": "Entrance10",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "phoi-hop-phuong-phap",
+      "label": "Phối hợp nhiều phương pháp",
+      "family_id": "FAC-COMBINE",
+      "role": "COMPOSITE_TASK",
+      "canonical_candidate": "phan-tich-da-thuc-hoan-toan",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "kiem-tra-phan-tich",
+      "label": "Kiểm tra kết quả phân tích",
+      "family_id": "FAC-COMBINE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "kiem-tra-phan-tich",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "giai-pt-bang-nhan-tu",
+      "label": "Giải phương trình bằng nhân tử",
+      "family_id": "EQ-ZERO-PRODUCT",
+      "role": "EXTENSION_SKILL",
+      "canonical_candidate": "pt-tich",
+      "layer": "Entrance10",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT06",
+      "legacy_id": "ung-dung-phan-tich",
+      "label": "Vận dụng phân tích nhân tử",
+      "family_id": null,
+      "role": "CONTEXT",
+      "canonical_candidate": null,
+      "layer": "Core-Support",
+      "note": "Broad application label, not a standalone family.",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "nhan-biet-phan-thuc",
+      "label": "Nhận biết phân thức",
+      "family_id": "RATEX-CONCEPT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhan-biet-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "dieu-kien-xac-dinh",
+      "label": "Điều kiện xác định",
+      "family_id": "RATEX-DOMAIN",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "dieu-kien-xac-dinh",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "hai-phan-thuc-bang-nhau",
+      "label": "Hai phân thức bằng nhau",
+      "family_id": "RATEX-CONCEPT",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "hai-phan-thuc-bang-nhau",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "doi-dau-phan-thuc",
+      "label": "Đổi dấu phân thức",
+      "family_id": "RATEX-SIMPLIFY",
+      "role": "METHOD",
+      "canonical_candidate": "rut-gon-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "phan-tich-tu-mau",
+      "label": "Phân tích tử và mẫu",
+      "family_id": "RATEX-SIMPLIFY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "phan-tich-tu-mau",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "rut-gon-phan-thuc",
+      "label": "Rút gọn phân thức",
+      "family_id": "RATEX-SIMPLIFY",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "rut-gon-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "giu-dieu-kien-ban-dau",
+      "label": "Giữ điều kiện xác định ban đầu",
+      "family_id": "RATEX-DOMAIN",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "giu-dieu-kien-ban-dau",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "quy-dong-mau-thuc",
+      "label": "Quy đồng mẫu thức",
+      "family_id": "RATEX-ADD-SUB",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "quy-dong-mau-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "cong-tru-phan-thuc",
+      "label": "Cộng – trừ phân thức",
+      "family_id": "RATEX-ADD-SUB",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "cong-tru-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "nhan-phan-thuc",
+      "label": "Nhân phân thức",
+      "family_id": "RATEX-MULT-DIV",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "nhan-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "chia-phan-thuc",
+      "label": "Chia phân thức",
+      "family_id": "RATEX-MULT-DIV",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "chia-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "bieu-thuc-nhieu-phep-tinh",
+      "label": "Biểu thức hữu tỉ nhiều phép tính",
+      "family_id": null,
+      "role": "COMPOSITE_TASK",
+      "canonical_candidate": null,
+      "layer": "Entrance10",
+      "note": "Composite rational-expression task, not a standalone family.",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "tinh-gia-tri-phan-thuc",
+      "label": "Tính giá trị phân thức",
+      "family_id": "RATEX-EVALUATE",
+      "role": "ASSESSED_SKILL",
+      "canonical_candidate": "tinh-gia-tri-phan-thuc",
+      "layer": "KNTT-Core",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT07",
+      "legacy_id": "tim-gia-tri-nguyen",
+      "label": "Tìm giá trị nguyên",
+      "family_id": "RATEX-INTEGER",
+      "role": "EXTENSION_SKILL",
+      "canonical_candidate": "tim-gia-tri-nguyen",
+      "layer": "Specialized-Challenge",
+      "note": "",
+      "source_batch": "S1"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "nghiem-phuong-trinh",
+      "label": "Khái niệm nghiệm phương trình",
+      "question_count": 6,
+      "family_id": "EQ-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "pt-bac-nhat",
+      "label": "Phương trình bậc nhất",
+      "question_count": 28,
+      "family_id": "EQ-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "bien-doi-pt-nhieu-buoc",
+      "label": "Biến đổi phương trình nhiều bước",
+      "question_count": 12,
+      "family_id": "EQ-BASIC",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "pt-tich",
+      "label": "Phương trình tích",
+      "question_count": 12,
+      "family_id": "EQ-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "dkxd-phuong-trinh-mau",
+      "label": "Điều kiện xác định phương trình chứa mẫu",
+      "question_count": 26,
+      "family_id": "EQ-RATIONAL",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "khu-mau-phuong-trinh",
+      "label": "Khử mẫu và giải phương trình",
+      "question_count": 12,
+      "family_id": "EQ-RATIONAL",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "doi-chieu-nghiem",
+      "label": "Đối chiếu nghiệm với điều kiện",
+      "question_count": 6,
+      "family_id": "EQ-RATIONAL",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "bpt-bac-nhat",
+      "label": "Bất phương trình bậc nhất",
+      "question_count": 22,
+      "family_id": "INEQ-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "doi-chieu-bpt",
+      "label": "Đổi chiều bất phương trình",
+      "question_count": 8,
+      "family_id": "INEQ-SOLVE",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "bieu-dien-tap-nghiem",
+      "label": "Biểu diễn tập nghiệm",
+      "question_count": 6,
+      "family_id": "INEQ-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "giao-tap-nghiem",
+      "label": "Giao các tập nghiệm",
+      "question_count": 6,
+      "family_id": "INEQ-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "lap-phuong-trinh",
+      "label": "Lập phương trình từ bài toán",
+      "question_count": 6,
+      "family_id": "EQ-MODEL",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "lap-bat-phuong-trinh",
+      "label": "Lập bất phương trình từ bài toán",
+      "question_count": 4,
+      "family_id": "INEQ-MODEL",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "tham-so-co-ban",
+      "label": "Biện luận tham số cơ bản",
+      "question_count": 4,
+      "family_id": "EQ-PARAM",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Specialized-Challenge",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "Specialized-Challenge"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "bat-dang-thuc",
+      "label": "Khái niệm bất đẳng thức",
+      "question_count": 4,
+      "family_id": "INEQ-ORDER",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "tinh-chat-thu-tu-phep-cong",
+      "label": "Tính chất thứ tự với phép cộng",
+      "question_count": 4,
+      "family_id": "INEQ-ORDER",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT08",
+      "legacy_id": "tinh-chat-thu-tu-phep-nhan",
+      "label": "Tính chất thứ tự với phép nhân",
+      "question_count": 4,
+      "family_id": "INEQ-ORDER",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "nghiem-pt-hai-an",
+      "label": "Nghiệm của phương trình bậc nhất hai ẩn",
+      "question_count": 12,
+      "family_id": "SYS-CONCEPT",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "nghiem-he",
+      "label": "Nghiệm của hệ phương trình",
+      "question_count": 16,
+      "family_id": "SYS-CONCEPT",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "so-nghiem-he",
+      "label": "Số nghiệm của hệ",
+      "question_count": 12,
+      "family_id": "SYS-CONCEPT",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "y-nghia-hinh-hoc",
+      "label": "Ý nghĩa hình học của hệ",
+      "question_count": 12,
+      "family_id": "SYS-CONCEPT",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "giai-he-the",
+      "label": "Giải hệ bằng phương pháp thế",
+      "question_count": 24,
+      "family_id": "SYS-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "giai-he-cong",
+      "label": "Giải hệ bằng cộng đại số",
+      "question_count": 4,
+      "family_id": "SYS-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "chon-phuong-phap",
+      "label": "Chọn phương pháp giải phù hợp",
+      "question_count": 12,
+      "family_id": "SYS-SOLVE",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "bien-doi-truoc-giai",
+      "label": "Biến đổi hệ trước khi giải",
+      "question_count": 12,
+      "family_id": "SYS-SOLVE",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "kiem-tra-nghiem-he",
+      "label": "Kiểm tra nghiệm của hệ",
+      "question_count": 24,
+      "family_id": "SYS-SOLVE",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "tham-so-he",
+      "label": "Hệ phương trình có tham số",
+      "question_count": 12,
+      "family_id": "SYS-PARAM",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "lap-he-bai-toan",
+      "label": "Lập hệ từ bài toán",
+      "question_count": 32,
+      "family_id": "SYS-MODEL",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "bai-toan-so",
+      "label": "Bài toán về số",
+      "question_count": 12,
+      "family_id": "SYS-MODEL",
+      "role": "CONTEXT",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "chuyen-dong-he",
+      "label": "Bài toán chuyển động",
+      "question_count": 10,
+      "family_id": "SYS-MODEL",
+      "role": "CONTEXT",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT09",
+      "legacy_id": "nang-suat-he",
+      "label": "Bài toán năng suất – giá trị",
+      "question_count": 10,
+      "family_id": "SYS-MODEL",
+      "role": "CONTEXT",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "khai-niem-ham-so",
+      "label": "Khái niệm hàm số",
+      "question_count": 8,
+      "family_id": "FUNC-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "tinh-gia-tri-ham",
+      "label": "Tính giá trị hàm số",
+      "question_count": 22,
+      "family_id": "FUNC-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "bang-gia-tri",
+      "label": "Bảng giá trị",
+      "question_count": 10,
+      "family_id": "FUNC-BASIC",
+      "role": "REPRESENTATION",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "toa-do-diem",
+      "label": "Tọa độ điểm",
+      "question_count": 10,
+      "family_id": "GRAPH-POINT",
+      "role": "SUPPORTING_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "diem-thuoc-do-thi",
+      "label": "Điểm thuộc đồ thị",
+      "question_count": 20,
+      "family_id": "GRAPH-POINT",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "nhan-biet-ham-bac-nhat",
+      "label": "Nhận biết hàm số bậc nhất",
+      "question_count": 10,
+      "family_id": "LINEAR-FUNC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "he-so-goc",
+      "label": "Hệ số góc",
+      "question_count": 16,
+      "family_id": "LINEAR-FUNC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "tung-do-goc",
+      "label": "Tung độ gốc",
+      "question_count": 6,
+      "family_id": "LINEAR-FUNC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "dong-nghich-bien",
+      "label": "Đồng biến – nghịch biến",
+      "question_count": 10,
+      "family_id": "LINEAR-FUNC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "ve-do-thi-ham-bac-nhat",
+      "label": "Vẽ đồ thị hàm số bậc nhất",
+      "question_count": 10,
+      "family_id": "LINEAR-FUNC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "vi-tri-hai-duong-thang",
+      "label": "Vị trí tương đối hai đường thẳng",
+      "question_count": 10,
+      "family_id": "GRAPH-INTERSECTION",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "giao-diem-do-thi",
+      "label": "Giao điểm hai đồ thị",
+      "question_count": 8,
+      "family_id": "GRAPH-INTERSECTION",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "lien-he-he-phuong-trinh",
+      "label": "Liên hệ với hệ phương trình",
+      "question_count": 8,
+      "family_id": "GRAPH-INTERSECTION",
+      "role": "CROSS_TOPIC_LINK",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "ham-y-ax2",
+      "label": "Hàm số y = ax²",
+      "question_count": 10,
+      "family_id": "PARABOLA-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "doi-xung-parabol",
+      "label": "Tính đối xứng và hướng mở parabol",
+      "question_count": 5,
+      "family_id": "PARABOLA-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT10",
+      "legacy_id": "diem-thuoc-parabol",
+      "label": "Điểm thuộc parabol",
+      "question_count": 5,
+      "family_id": "PARABOLA-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "can-bac-hai-so-hoc",
+      "label": "Căn bậc hai số học",
+      "question_count": 10,
+      "family_id": "RAD-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "dkxd-can",
+      "label": "Điều kiện xác định của căn thức",
+      "question_count": 22,
+      "family_id": "RAD-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "can-binh-phuong",
+      "label": "Căn của bình phương và giá trị tuyệt đối",
+      "question_count": 10,
+      "family_id": "RAD-BASIC",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "khai-phuong-tich",
+      "label": "Khai phương một tích",
+      "question_count": 12,
+      "family_id": "RAD-TRANSFORM",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "khai-phuong-thuong",
+      "label": "Khai phương một thương",
+      "question_count": 10,
+      "family_id": "RAD-TRANSFORM",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "dua-thua-so-ra",
+      "label": "Đưa thừa số ra ngoài dấu căn",
+      "question_count": 12,
+      "family_id": "RAD-TRANSFORM",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "dua-thua-so-vao",
+      "label": "Đưa thừa số vào trong dấu căn",
+      "question_count": 10,
+      "family_id": "RAD-TRANSFORM",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "can-dong-dang",
+      "label": "Cộng trừ căn đồng dạng",
+      "question_count": 12,
+      "family_id": "RAD-OPERATE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "nhan-chia-can",
+      "label": "Nhân chia căn thức",
+      "question_count": 10,
+      "family_id": "RAD-OPERATE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "truc-can-mau-don",
+      "label": "Trục căn thức ở mẫu dạng đơn",
+      "question_count": 10,
+      "family_id": "RAD-RATIONALIZE",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "truc-can-lien-hop",
+      "label": "Trục căn thức bằng liên hợp",
+      "question_count": 8,
+      "family_id": "RAD-RATIONALIZE",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "tim-x-can",
+      "label": "Tìm x trong phương trình chứa căn",
+      "question_count": 3,
+      "family_id": "RAD-EQUATION",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "so-sanh-can",
+      "label": "So sánh biểu thức căn",
+      "question_count": 3,
+      "family_id": "RAD-COMPARE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT11",
+      "legacy_id": "can-bac-ba",
+      "label": "Căn bậc ba",
+      "question_count": 12,
+      "family_id": "RAD-CUBEROOT",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "nhan-dang-pt-bac-hai",
+      "label": "Nhận dạng phương trình bậc hai",
+      "question_count": 10,
+      "family_id": "QUAD-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "he-so-abc",
+      "label": "Xác định hệ số a, b, c",
+      "question_count": 10,
+      "family_id": "QUAD-STRUCTURE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "tinh-delta",
+      "label": "Tính biệt thức Δ",
+      "question_count": 14,
+      "family_id": "QUAD-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "so-nghiem-delta",
+      "label": "Số nghiệm theo Δ",
+      "question_count": 9,
+      "family_id": "QUAD-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "cong-thuc-nghiem",
+      "label": "Công thức nghiệm",
+      "question_count": 18,
+      "family_id": "QUAD-SOLVE",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "delta-phay",
+      "label": "Công thức nghiệm thu gọn Δ'",
+      "question_count": 10,
+      "family_id": "QUAD-SOLVE",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "giai-pt-bac-hai",
+      "label": "Giải phương trình bậc hai",
+      "question_count": 28,
+      "family_id": "QUAD-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "nham-nghiem",
+      "label": "Nhẩm nghiệm",
+      "question_count": 10,
+      "family_id": "QUAD-SOLVE",
+      "role": "METHOD",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "tham-so-so-nghiem",
+      "label": "Tham số và số nghiệm",
+      "question_count": 8,
+      "family_id": "QUAD-PARAM",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Specialized-Challenge",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "Specialized-Challenge"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "tong-tich-nghiem",
+      "label": "Tổng – tích nghiệm theo Viète",
+      "question_count": 30,
+      "family_id": "VIETE-CORE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "bieu-thuc-doi-xung",
+      "label": "Biểu thức đối xứng theo nghiệm",
+      "question_count": 12,
+      "family_id": "VIETE-APPLY",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "lap-pt-tu-nghiem",
+      "label": "Lập phương trình từ nghiệm",
+      "question_count": 8,
+      "family_id": "VIETE-CORE",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "dau-nghiem",
+      "label": "Xét dấu hai nghiệm",
+      "question_count": 6,
+      "family_id": "VIETE-APPLY",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT12",
+      "legacy_id": "lien-he-do-thi",
+      "label": "Liên hệ nghiệm với đồ thị",
+      "question_count": 2,
+      "family_id": "QUAD-GRAPH",
+      "role": "ASSESSED_SKILL",
+      "proposed_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S2",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "diem-thuoc-duong",
+      "label": "Điểm thuộc / không thuộc đường thẳng",
+      "family_id": "GEO-LINE-FOUND",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "tia-doi",
+      "label": "Hai tia đối nhau",
+      "family_id": "GEO-LINE-FOUND",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "trung-diem",
+      "label": "Trung điểm đoạn thẳng",
+      "family_id": "GEO-LINE-FOUND",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "phan-loai-goc",
+      "label": "Phân loại góc",
+      "family_id": "GEO-ANGLE-REL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "goc-phu-bu",
+      "label": "Góc phụ nhau – bù nhau",
+      "family_id": "GEO-ANGLE-REL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "tia-phan-giac",
+      "label": "Tia phân giác",
+      "family_id": "GEO-ANGLE-REL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "goc-doi-dinh",
+      "label": "Góc đối đỉnh",
+      "family_id": "GEO-ANGLE-REL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "duong-vuong-goc",
+      "label": "Hai đường thẳng vuông góc",
+      "family_id": "GEO-ANGLE-REL",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "goc-so-le-trong",
+      "label": "Góc so le trong",
+      "family_id": "GEO-TRANSVERSAL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "goc-dong-vi",
+      "label": "Góc đồng vị",
+      "family_id": "GEO-TRANSVERSAL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "goc-trong-cung-phia",
+      "label": "Góc trong cùng phía",
+      "family_id": "GEO-TRANSVERSAL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "tinh-chat-song-song",
+      "label": "Tính chất hai đường thẳng song song",
+      "family_id": "GEO-PARALLEL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "dau-hieu-song-song",
+      "label": "Dấu hiệu nhận biết song song",
+      "family_id": "GEO-PARALLEL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "vuong-goc-song-song",
+      "label": "Quan hệ vuông góc – song song",
+      "family_id": "GEO-PARALLEL",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "diem-nam-giua",
+      "label": "Điểm nằm giữa hai điểm",
+      "family_id": "GEO-LINE-FOUND",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "tia",
+      "label": "Khái niệm tia",
+      "family_id": "GEO-LINE-FOUND",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "doan-thang-do-dai",
+      "label": "Đoạn thẳng và độ dài",
+      "family_id": "GEO-LINE-FOUND",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "khai-niem-goc",
+      "label": "Khái niệm góc",
+      "family_id": "GEO-ANGLE-REL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "do-goc",
+      "label": "Số đo góc",
+      "family_id": "GEO-ANGLE-REL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "nhan-dang-goc-dac-biet",
+      "label": "Nhận dạng góc ở vị trí đặc biệt",
+      "family_id": "GEO-ANGLE-REL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "tien-de-euclid",
+      "label": "Tiên đề Euclid",
+      "family_id": "GEO-PARALLEL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "gia-thiet-ket-luan",
+      "label": "Giả thiết – kết luận",
+      "family_id": "GEO-PROOF-BASIC",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT13",
+      "legacy_id": "lap-luan-chung-minh-ngan",
+      "label": "Lập luận chứng minh ngắn",
+      "family_id": "GEO-PROOF-BASIC",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "phan-loai-tam-giac",
+      "label": "Phân loại tam giác",
+      "family_id": "TRI-SPECIAL",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "chu-vi-dien-tich",
+      "label": "Chu vi – diện tích tam giác",
+      "family_id": "GEO-PLANE-MEASURE",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "tong-goc-tam-giac",
+      "label": "Tổng ba góc trong tam giác",
+      "family_id": "TRI-ANGLE-SIDE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "goc-ngoai",
+      "label": "Góc ngoài của tam giác",
+      "family_id": "TRI-ANGLE-SIDE",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "so-sanh-canh-goc",
+      "label": "Quan hệ cạnh – góc đối diện",
+      "family_id": "TRI-ANGLE-SIDE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "bat-dang-thuc-tam-giac",
+      "label": "Bất đẳng thức tam giác",
+      "family_id": "TRI-ANGLE-SIDE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "tam-giac-can",
+      "label": "Tam giác cân",
+      "family_id": "TRI-SPECIAL",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "tam-giac-deu",
+      "label": "Tam giác đều",
+      "family_id": "TRI-SPECIAL",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "pythagore",
+      "label": "Định lý Pythagore",
+      "family_id": "RIGHT-PYTHAGORE",
+      "role": "CROSS_TOPIC_REUSE",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "pythagore-dao",
+      "label": "Định lý Pythagore đảo",
+      "family_id": "RIGHT-PYTHAGORE",
+      "role": "CROSS_TOPIC_REUSE",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "bang-nhau-ccc",
+      "label": "Hai tam giác bằng nhau c.c.c",
+      "family_id": "TRI-CONGRUENCE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "bang-nhau-cgc",
+      "label": "Hai tam giác bằng nhau c.g.c",
+      "family_id": "TRI-CONGRUENCE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "bang-nhau-gcg",
+      "label": "Hai tam giác bằng nhau g.c.g",
+      "family_id": "TRI-CONGRUENCE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "bang-nhau-tam-giac-vuong",
+      "label": "Bằng nhau của hai tam giác vuông",
+      "family_id": "TRI-CONGRUENCE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "viet-tuong-ung-tam-giac-bang-nhau",
+      "label": "Viết đúng thứ tự tương ứng của hai tam giác bằng nhau",
+      "family_id": "TRI-CONGRUENCE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "nhan-biet-trung-truc",
+      "label": "Nhận biết đường trung trực",
+      "family_id": "TRI-PERPBISECTOR",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "cach-deu-dinh",
+      "label": "Điểm cách đều hai đầu mút",
+      "family_id": "TRI-PERPBISECTOR",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "tinh-chat-duong-trung-truc",
+      "label": "Tính chất và dấu hiệu đường trung trực",
+      "family_id": "TRI-PERPBISECTOR",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT14",
+      "legacy_id": "duong-vuong-goc-duong-xien",
+      "label": "Đường vuông góc và đường xiên",
+      "family_id": "TRI-ANGLE-SIDE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "nhan-biet-trung-tuyen",
+      "label": "Nhận biết đường trung tuyến",
+      "family_id": "TRI-CENTROID",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "trong-tam",
+      "label": "Trọng tâm",
+      "family_id": "TRI-CENTROID",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "ti-so-trong-tam",
+      "label": "Tỉ số trọng tâm 2 : 1",
+      "family_id": "TRI-CENTROID",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "nhan-biet-duong-cao",
+      "label": "Nhận biết đường cao",
+      "family_id": "TRI-ORTHOCENTER",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "truc-tam",
+      "label": "Trực tâm",
+      "family_id": "TRI-ORTHOCENTER",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "vi-tri-truc-tam",
+      "label": "Vị trí trực tâm",
+      "family_id": "TRI-ORTHOCENTER",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "nhan-biet-phan-giac",
+      "label": "Nhận biết đường phân giác",
+      "family_id": "TRI-INCENTER",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "tam-noi-tiep",
+      "label": "Tâm nội tiếp",
+      "family_id": "TRI-INCENTER",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "cach-deu-canh",
+      "label": "Tính chất cách đều ba cạnh",
+      "family_id": "TRI-INCENTER",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "nhan-biet-trung-truc",
+      "label": "Nhận biết đường trung trực",
+      "family_id": "TRI-PERPBISECTOR",
+      "role": "CROSS_TOPIC_REUSE",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "tam-ngoai-tiep",
+      "label": "Tâm ngoại tiếp",
+      "family_id": "TRI-CIRCUMCENTER",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "cach-deu-dinh",
+      "label": "Tính chất cách đều ba đỉnh",
+      "family_id": "TRI-PERPBISECTOR",
+      "role": "CROSS_TOPIC_REUSE",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "vi-tri-tam-ngoai-tiep",
+      "label": "Vị trí tâm ngoại tiếp",
+      "family_id": "TRI-CIRCUMCENTER",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "phan-biet-bon-tam",
+      "label": "Phân biệt G – H – I – O",
+      "family_id": "TRI-CENTERS",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT15",
+      "legacy_id": "dong-quy-bon-duong-dac-biet",
+      "label": "Tính đồng quy của bốn họ đường đặc biệt",
+      "family_id": "TRI-CENTERS",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT16",
+      "legacy_id": "tong-goc-tu-giac",
+      "label": "Tổng các góc trong tứ giác",
+      "family_id": "QUAD-TRAPEZOID",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT16",
+      "legacy_id": "hinh-thang",
+      "label": "Hình thang",
+      "family_id": "QUAD-TRAPEZOID",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT16",
+      "legacy_id": "hinh-thang-can",
+      "label": "Hình thang cân",
+      "family_id": "QUAD-TRAPEZOID",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT16",
+      "legacy_id": "hbh-tinh-chat",
+      "label": "Tính chất hình bình hành",
+      "family_id": "QUAD-PARALLELOGRAM",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT16",
+      "legacy_id": "hbh-dau-hieu",
+      "label": "Dấu hiệu hình bình hành",
+      "family_id": "QUAD-PARALLELOGRAM",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT16",
+      "legacy_id": "hcn-tinh-chat",
+      "label": "Tính chất hình chữ nhật",
+      "family_id": "QUAD-RECTANGLE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT16",
+      "legacy_id": "hcn-dau-hieu",
+      "label": "Dấu hiệu hình chữ nhật",
+      "family_id": "QUAD-RECTANGLE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT16",
+      "legacy_id": "hthoi-tinh-chat",
+      "label": "Tính chất hình thoi",
+      "family_id": "QUAD-RHOMBUS",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT16",
+      "legacy_id": "hthoi-dau-hieu",
+      "label": "Dấu hiệu hình thoi",
+      "family_id": "QUAD-RHOMBUS",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT16",
+      "legacy_id": "hvuong-tinh-chat",
+      "label": "Tính chất hình vuông",
+      "family_id": "QUAD-SQUARE-HIER",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT16",
+      "legacy_id": "hvuong-dau-hieu",
+      "label": "Dấu hiệu hình vuông",
+      "family_id": "QUAD-SQUARE-HIER",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT16",
+      "legacy_id": "quan-he-bao-ham",
+      "label": "Quan hệ bao hàm giữa các tứ giác đặc biệt",
+      "family_id": "QUAD-SQUARE-HIER",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT16",
+      "legacy_id": "duong-cheo-suy-luan",
+      "label": "Suy luận từ tính chất đường chéo",
+      "family_id": "QUAD-SQUARE-HIER",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "thales-thuan",
+      "label": "Thales thuận",
+      "family_id": "SIM-THALES",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "thales-dao",
+      "label": "Thales đảo",
+      "family_id": "SIM-THALES",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "ti-le-doan-thang",
+      "label": "Tỉ lệ các đoạn thẳng",
+      "family_id": "SIM-THALES",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "duong-trung-binh",
+      "label": "Đường trung bình tam giác",
+      "family_id": "SIM-MID-BISECTOR",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "nhan-biet-dong-dang",
+      "label": "Nhận biết tam giác đồng dạng",
+      "family_id": "SIM-CRITERIA",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "dong-dang-gg",
+      "label": "Đồng dạng g-g",
+      "family_id": "SIM-CRITERIA",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "dong-dang-cgc",
+      "label": "Đồng dạng c-g-c",
+      "family_id": "SIM-CRITERIA",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "dong-dang-ccc",
+      "label": "Đồng dạng c-c-c",
+      "family_id": "SIM-CRITERIA",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "thu-tu-tuong-ung",
+      "label": "Thứ tự đỉnh tương ứng",
+      "family_id": "SIM-CRITERIA",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "tinh-do-dai-dong-dang",
+      "label": "Tính độ dài bằng đồng dạng",
+      "family_id": "SIM-LENGTH",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "ti-so-chu-vi",
+      "label": "Tỉ số chu vi",
+      "family_id": "SIM-RATIO-EXT",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "Core-Support",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Core-Support"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "ti-so-dien-tich",
+      "label": "Tỉ số diện tích",
+      "family_id": "SIM-RATIO-EXT",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "Core-Support",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Core-Support"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "he-thuc-tich",
+      "label": "Hệ thức tích từ đồng dạng",
+      "family_id": "SIM-RATIO-EXT",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "Core-Support",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Core-Support"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "ket-hop-song-song-dong-dang",
+      "label": "Kết hợp song song – đồng dạng",
+      "family_id": "SIM-CHAIN",
+      "role": "COMPOSITE_TASK",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "tinh-chat-duong-phan-giac",
+      "label": "Tính chất đường phân giác trong tam giác",
+      "family_id": "SIM-MID-BISECTOR",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT17",
+      "legacy_id": "hinh-dong-dang",
+      "label": "Hình đồng dạng",
+      "family_id": "SIM-LENGTH",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "pythagore",
+      "label": "Định lý Pythagore",
+      "family_id": "RIGHT-PYTHAGORE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "pythagore-dao",
+      "label": "Pythagore đảo",
+      "family_id": "RIGHT-PYTHAGORE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "canh-huyen",
+      "label": "Cạnh huyền – cạnh góc vuông",
+      "family_id": "RIGHT-PYTHAGORE",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "he-thuc-canh",
+      "label": "Hệ thức cạnh góc vuông",
+      "family_id": "RIGHT-ALTITUDE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "he-thuc-duong-cao",
+      "label": "Hệ thức đường cao",
+      "family_id": "RIGHT-ALTITUDE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "dien-tich-duong-cao",
+      "label": "Diện tích và đường cao",
+      "family_id": "RIGHT-ALTITUDE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "doi-ke-huyen",
+      "label": "Nhận biết cạnh đối – kề – huyền",
+      "family_id": "RIGHT-TRIG-RATIO",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "sin",
+      "label": "Tỉ số sin",
+      "family_id": "RIGHT-TRIG-RATIO",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "cos",
+      "label": "Tỉ số cos",
+      "family_id": "RIGHT-TRIG-RATIO",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "tan",
+      "label": "Tỉ số tan",
+      "family_id": "RIGHT-TRIG-RATIO",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "tim-canh-luong-giac",
+      "label": "Tìm cạnh bằng lượng giác",
+      "family_id": "RIGHT-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "tim-goc-luong-giac",
+      "label": "Tìm góc bằng lượng giác",
+      "family_id": "RIGHT-SOLVE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "goc-nang-ha",
+      "label": "Góc nâng – góc hạ",
+      "family_id": "RIGHT-APPLICATION",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "chieu-cao-khoang-cach",
+      "label": "Chiều cao – khoảng cách",
+      "family_id": "RIGHT-APPLICATION",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "ket-hop-he-thuc",
+      "label": "Kết hợp hệ thức lượng",
+      "family_id": "RIGHT-ALTITUDE",
+      "role": "COMPOSITE_TASK",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT18",
+      "legacy_id": "cot",
+      "label": "Tỉ số cot",
+      "family_id": "RIGHT-TRIG-RATIO",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "goc-o-tam",
+      "label": "Góc ở tâm",
+      "family_id": "CIRCLE-ANGLES",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "goc-noi-tiep",
+      "label": "Góc nội tiếp",
+      "family_id": "CIRCLE-ANGLES",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "nua-duong-tron",
+      "label": "Góc chắn nửa đường tròn",
+      "family_id": "CIRCLE-ANGLES",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "day-va-tam",
+      "label": "Dây và khoảng cách đến tâm",
+      "family_id": "CIRCLE-CHORD-ARC",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "tiep-tuyen-ban-kinh",
+      "label": "Tiếp tuyến và bán kính",
+      "family_id": "CIRCLE-TANGENT",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "hai-tiep-tuyen",
+      "label": "Hai tiếp tuyến từ một điểm",
+      "family_id": "CIRCLE-TANGENT",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "tu-giac-noi-tiep",
+      "label": "Tứ giác nội tiếp",
+      "family_id": "CIRCLE-CYCLIC",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "dau-hieu-noi-tiep",
+      "label": "Dấu hiệu nội tiếp",
+      "family_id": "CIRCLE-CYCLIC",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "hai-day-cat-nhau",
+      "label": "Hai dây cắt nhau",
+      "family_id": "CIRCLE-POWER",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "Specialized-Challenge",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Specialized-Challenge"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "tiep-tuyen-cat-tuyen",
+      "label": "Tiếp tuyến – cát tuyến",
+      "family_id": "CIRCLE-POWER",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "Specialized-Challenge",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Specialized-Challenge"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "chung-minh-tiep-tuyen",
+      "label": "Chứng minh tiếp tuyến",
+      "family_id": "CIRCLE-TANGENT",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "goc-cung",
+      "label": "Góc và cung tổng hợp",
+      "family_id": "CIRCLE-ANGLES",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "do-dai-duong-tron",
+      "label": "Hệ thức độ dài trong đường tròn",
+      "family_id": "CIRCLE-MEASURE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "cung-va-day",
+      "label": "Quan hệ cung và dây",
+      "family_id": "CIRCLE-CHORD-ARC",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "do-dai-cung",
+      "label": "Độ dài cung",
+      "family_id": "CIRCLE-MEASURE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "dien-tich-quat-tron",
+      "label": "Diện tích quạt tròn",
+      "family_id": "CIRCLE-MEASURE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "dien-tich-vanh-khuyen",
+      "label": "Diện tích vành khuyên",
+      "family_id": "CIRCLE-MEASURE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "vi-tri-tuong-doi-duong-thang-duong-tron",
+      "label": "Vị trí tương đối đường thẳng – đường tròn",
+      "family_id": "CIRCLE-POSITION",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "vi-tri-tuong-doi-hai-duong-tron",
+      "label": "Vị trí tương đối hai đường tròn",
+      "family_id": "CIRCLE-POSITION",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "duong-tron-ngoai-tiep-tam-giac",
+      "label": "Đường tròn ngoại tiếp tam giác",
+      "family_id": "TRI-CIRCUMCENTER",
+      "role": "CROSS_TOPIC_REUSE",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "duong-tron-noi-tiep-tam-giac",
+      "label": "Đường tròn nội tiếp tam giác",
+      "family_id": "TRI-INCENTER",
+      "role": "CROSS_TOPIC_REUSE",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT19",
+      "legacy_id": "da-giac-deu",
+      "label": "Đa giác đều",
+      "family_id": "GEO-REGULAR-SYMM",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "nhan-dang-cong-cu",
+      "label": "Nhận dạng công cụ",
+      "family_id": null,
+      "role": "METHOD",
+      "family_layer": null,
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": null
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "song-song-dong-dang",
+      "label": "Song song → đồng dạng",
+      "family_id": "SIM-CHAIN",
+      "role": "COMPOSITE_TASK",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "hai-goc-vuong-noi-tiep",
+      "label": "Hai góc vuông → nội tiếp",
+      "family_id": "GEO-SYNTHESIS",
+      "role": "COMPOSITE_TASK",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "noi-tiep-dong-dang",
+      "label": "Nội tiếp → đồng dạng",
+      "family_id": "GEO-SYNTHESIS",
+      "role": "COMPOSITE_TASK",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "dong-dang-he-thuc-tich",
+      "label": "Đồng dạng → hệ thức tích",
+      "family_id": "GEO-SYNTHESIS",
+      "role": "COMPOSITE_TASK",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "tam-giac-vuong-dong-dang",
+      "label": "Đồng dạng trong tam giác vuông",
+      "family_id": "GEO-SYNTHESIS",
+      "role": "COMPOSITE_TASK",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "tiep-tuyen-chung-minh",
+      "label": "Chứng minh tiếp tuyến",
+      "family_id": "CIRCLE-TANGENT",
+      "role": "COMPOSITE_TASK",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "chuoi-suy-luan",
+      "label": "Chuỗi suy luận hình học",
+      "family_id": "GEO-SYNTHESIS",
+      "role": "COMPOSITE_TASK",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "the-tich-hop-chu-nhat",
+      "label": "Thể tích hình hộp chữ nhật",
+      "family_id": "SOLID-PRISM",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "the-tich-lang-tru",
+      "label": "Thể tích lăng trụ đứng",
+      "family_id": "SOLID-PRISM",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "dien-tich-day",
+      "label": "Diện tích đáy",
+      "family_id": "SOLID-PRISM",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "doi-don-vi-do-luong",
+      "label": "Đổi đơn vị đo lường",
+      "family_id": "SOLID-PRISM",
+      "role": "SUPPORTING_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "bai-toan-tong-hop",
+      "label": "Bài toán tổng hợp",
+      "family_id": "GEO-SYNTHESIS",
+      "role": "COMPOSITE_TASK",
+      "family_layer": "Entrance10",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "Entrance10"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "nhan-biet-tam-giac-deu",
+      "label": "Nhận biết tam giác đều",
+      "family_id": "TRI-SPECIAL",
+      "role": "CROSS_TOPIC_REUSE",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "nhan-biet-hinh-vuong",
+      "label": "Nhận biết hình vuông",
+      "family_id": "QUAD-SQUARE-HIER",
+      "role": "CROSS_TOPIC_REUSE",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "nhan-biet-luc-giac-deu",
+      "label": "Nhận biết lục giác đều",
+      "family_id": "GEO-REGULAR-SYMM",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "nhan-biet-tu-giac-dac-biet",
+      "label": "Nhận biết tứ giác đặc biệt",
+      "family_id": "QUAD-SQUARE-HIER",
+      "role": "CROSS_TOPIC_REUSE",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "chu-vi-tu-giac",
+      "label": "Chu vi tứ giác",
+      "family_id": "GEO-PLANE-MEASURE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "dien-tich-tu-giac",
+      "label": "Diện tích tứ giác",
+      "family_id": "GEO-PLANE-MEASURE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "do-luong-thuc-te",
+      "label": "Đo lường thực tế",
+      "family_id": "GEO-PLANE-MEASURE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "truc-doi-xung",
+      "label": "Trục đối xứng",
+      "family_id": "GEO-REGULAR-SYMM",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "tam-doi-xung",
+      "label": "Tâm đối xứng",
+      "family_id": "GEO-REGULAR-SYMM",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "nhan-biet-hinh-hop-lap-phuong",
+      "label": "Nhận biết hình hộp chữ nhật và lập phương",
+      "family_id": "SOLID-PRISM",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "dien-tich-xung-quanh-hop-chu-nhat",
+      "label": "Diện tích xung quanh hình hộp chữ nhật",
+      "family_id": "SOLID-PRISM",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "nhan-biet-lang-tru-dung",
+      "label": "Nhận biết lăng trụ đứng",
+      "family_id": "SOLID-PRISM",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "dien-tich-xung-quanh-lang-tru",
+      "label": "Diện tích xung quanh lăng trụ đứng",
+      "family_id": "SOLID-PRISM",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "nhan-biet-hinh-chop-deu",
+      "label": "Nhận biết hình chóp đều",
+      "family_id": "SOLID-PYRAMID",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "dien-tich-xung-quanh-hinh-chop",
+      "label": "Diện tích xung quanh hình chóp đều",
+      "family_id": "SOLID-PYRAMID",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "the-tich-hinh-chop",
+      "label": "Thể tích hình chóp",
+      "family_id": "SOLID-PYRAMID",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "nhan-biet-hinh-tru",
+      "label": "Nhận biết hình trụ",
+      "family_id": "SOLID-CYL-CONE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "dien-tich-xung-quanh-hinh-tru",
+      "label": "Diện tích xung quanh hình trụ",
+      "family_id": "SOLID-CYL-CONE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "the-tich-hinh-tru",
+      "label": "Thể tích hình trụ",
+      "family_id": "SOLID-CYL-CONE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "nhan-biet-hinh-non",
+      "label": "Nhận biết hình nón",
+      "family_id": "SOLID-CYL-CONE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "dien-tich-xung-quanh-hinh-non",
+      "label": "Diện tích xung quanh hình nón",
+      "family_id": "SOLID-CYL-CONE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "the-tich-hinh-non",
+      "label": "Thể tích hình nón",
+      "family_id": "SOLID-CYL-CONE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "nhan-biet-hinh-cau",
+      "label": "Nhận biết hình cầu",
+      "family_id": "SOLID-SPHERE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "dien-tich-mat-cau",
+      "label": "Diện tích mặt cầu",
+      "family_id": "SOLID-SPHERE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT20",
+      "legacy_id": "the-tich-hinh-cau",
+      "label": "Thể tích hình cầu",
+      "family_id": "SOLID-SPHERE",
+      "role": "ASSESSED_SKILL",
+      "family_layer": "KNTT-Core",
+      "runtime_change": false,
+      "source_batch": "S3",
+      "layer": "KNTT-Core"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "du-lieu-phan-loai",
+      "label": "Dữ liệu và phân loại dữ liệu",
+      "family_id": "STAT-DATA",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "thu-thap-du-lieu",
+      "label": "Thu thập dữ liệu",
+      "family_id": "STAT-DATA",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "kiem-tra-chat-luong",
+      "label": "Kiểm tra chất lượng dữ liệu",
+      "family_id": "STAT-QUALITY",
+      "role": "SUPPORTING_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "mau-thien-lech",
+      "label": "Nhận biết mẫu thiên lệch",
+      "family_id": "STAT-QUALITY",
+      "role": "SUPPORTING_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "bang-tan-so",
+      "label": "Bảng tần số",
+      "family_id": "STAT-FREQUENCY",
+      "role": "ASSESSED_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "tan-suat",
+      "label": "Tần suất và phần trăm",
+      "family_id": "STAT-FREQUENCY",
+      "role": "ASSESSED_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "doc-bieu-do-cot",
+      "label": "Đọc biểu đồ cột",
+      "family_id": "STAT-CHART-READ",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "doc-bieu-do-doan-thang",
+      "label": "Đọc biểu đồ đoạn thẳng",
+      "family_id": "STAT-CHART-READ",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "chon-bieu-do",
+      "label": "Chọn dạng biểu diễn",
+      "family_id": "STAT-REPRESENT",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "chuyen-bang-bieu-do",
+      "label": "Chuyển đổi bảng – biểu đồ",
+      "family_id": "STAT-REPRESENT",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "nhan-xet-du-lieu",
+      "label": "Nhận xét và kết luận từ dữ liệu",
+      "family_id": "STAT-INFER",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "don-vi-thang-do",
+      "label": "Đơn vị và thang đo",
+      "family_id": "STAT-ADVANCED-DATA",
+      "role": "SUPPORTING_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "doc-bieu-do-cot-kep",
+      "label": "Đọc và so sánh biểu đồ cột kép",
+      "family_id": "STAT-CHART-READ",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "bieu-do-quat-tron",
+      "label": "Biểu đồ hình quạt tròn",
+      "family_id": "STAT-CHART-READ",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "du-lieu-ghep-nhom",
+      "label": "Dữ liệu và tần số ghép nhóm",
+      "family_id": "STAT-ADVANCED-DATA",
+      "role": "ASSESSED_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "trung-binh-tho",
+      "label": "Số trung bình từ dữ liệu thô",
+      "family_id": "STAT-CENTER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "trung-binh-tan-so",
+      "label": "Số trung bình từ bảng tần số",
+      "family_id": "STAT-CENTER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "trung-vi",
+      "label": "Trung vị",
+      "family_id": "STAT-CENTER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "mot",
+      "label": "Mốt",
+      "family_id": "STAT-CENTER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "nhieu-mot",
+      "label": "Nhiều mốt và không có mốt nổi bật",
+      "family_id": "STAT-CENTER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "khoang-bien-thien",
+      "label": "Khoảng biến thiên",
+      "family_id": "STAT-SPREAD-OUTLIER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "ngoai-lai",
+      "label": "Ảnh hưởng của giá trị ngoại lai",
+      "family_id": "STAT-SPREAD-OUTLIER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "so-sanh-trung-binh-trung-vi",
+      "label": "So sánh trung bình và trung vị",
+      "family_id": "STAT-COMPARE-MEASURE",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "chon-dai-luong",
+      "label": "Chọn đại lượng đại diện",
+      "family_id": "STAT-COMPARE-MEASURE",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "so-sanh-hai-bo",
+      "label": "So sánh hai bộ dữ liệu",
+      "family_id": "STAT-COMPARE-MEASURE",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "phep-thu-ngau-nhien",
+      "label": "Phép thử ngẫu nhiên",
+      "family_id": "PROB-EVENT",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "khong-gian-mau",
+      "label": "Không gian mẫu",
+      "family_id": "PROB-SPACE-SUPPORT",
+      "role": "ASSESSED_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "bien-co",
+      "label": "Biến cố",
+      "family_id": "PROB-EVENT",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "bien-co-chac-chan-khong-the",
+      "label": "Biến cố chắc chắn và không thể",
+      "family_id": "PROB-EVENT",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "xac-suat-co-dien",
+      "label": "Xác suất cổ điển",
+      "family_id": "PROB-CLASSICAL",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "bien-co-doi",
+      "label": "Biến cố đối",
+      "family_id": "PROB-SPACE-SUPPORT",
+      "role": "ASSESSED_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "dong-xu-nhieu-lan",
+      "label": "Đồng xu nhiều lần",
+      "family_id": "PROB-SPACE-SUPPORT",
+      "role": "CONTEXT",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "xuc-xac-hai-lan",
+      "label": "Hai xúc xắc",
+      "family_id": "PROB-MULTISTEP",
+      "role": "CONTEXT",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "so-do-cay",
+      "label": "Sơ đồ cây",
+      "family_id": "PROB-MULTISTEP",
+      "role": "METHOD",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "nhieu-buoc-doc-lap",
+      "label": "Thí nghiệm nhiều bước độc lập",
+      "family_id": "PROB-MULTISTEP",
+      "role": "ASSESSED_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "khong-hoan-lai",
+      "label": "Rút không hoàn lại",
+      "family_id": "PROB-MULTISTEP",
+      "role": "ASSESSED_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "kiem-tra-xac-suat",
+      "label": "Kiểm tra tính hợp lý của xác suất",
+      "family_id": "PROB-CLASSICAL",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "xac-suat-thuc-nghiem",
+      "label": "Xác suất thực nghiệm và tần số tương đối",
+      "family_id": "PROB-EXPERIMENTAL",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "doc-de-du-kien",
+      "label": "Đọc đề và xác định đại lượng",
+      "family_id": "MODEL-SETUP",
+      "role": "ASSESSED_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "doi-don-vi",
+      "label": "Đổi và thống nhất đơn vị",
+      "family_id": "MODEL-SETUP",
+      "role": "SUPPORTING_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "chuyen-dong",
+      "label": "Bài toán chuyển động",
+      "family_id": null,
+      "role": "CONTEXT",
+      "layer": "Core-Support",
+      "source": "NO_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "nang-suat",
+      "label": "Bài toán năng suất",
+      "family_id": null,
+      "role": "CONTEXT",
+      "layer": "Core-Support",
+      "source": "NO_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "phan-tram",
+      "label": "Bài toán phần trăm",
+      "family_id": "NUM-PERCENT",
+      "role": "CROSS_TOPIC_REUSE",
+      "layer": "KNTT-Core",
+      "source": "REUSE_EXISTING_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "lap-phuong-trinh",
+      "label": "Lập phương trình thực tế",
+      "family_id": "EQ-MODEL",
+      "role": "CROSS_TOPIC_REUSE",
+      "layer": "KNTT-Core",
+      "source": "REUSE_EXISTING_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "lap-he",
+      "label": "Lập hệ phương trình thực tế",
+      "family_id": "SYS-MODEL",
+      "role": "CROSS_TOPIC_REUSE",
+      "layer": "KNTT-Core",
+      "source": "REUSE_EXISTING_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "hinh-hoc-do-luong",
+      "label": "Hình học và đo lường thực tế",
+      "family_id": null,
+      "role": "CONTEXT",
+      "layer": "Core-Support",
+      "source": "NO_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "luong-giac-thuc-te",
+      "label": "Lượng giác trong thực tế",
+      "family_id": "RIGHT-APPLICATION",
+      "role": "CROSS_TOPIC_REUSE",
+      "layer": "KNTT-Core",
+      "source": "REUSE_EXISTING_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "thong-ke-thuc-te",
+      "label": "Thống kê trong tình huống thực tế",
+      "family_id": null,
+      "role": "CONTEXT",
+      "layer": "Core-Support",
+      "source": "NO_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "xac-suat-thuc-te",
+      "label": "Xác suất trong tình huống thực tế",
+      "family_id": "PROB-EXPERIMENTAL",
+      "role": "CROSS_TOPIC_REUSE",
+      "layer": "KNTT-Core",
+      "source": "REUSE_EXISTING_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "kiem-tra-ket-luan",
+      "label": "Kiểm tra nghiệm, đơn vị và kết luận",
+      "family_id": "MODEL-VALIDATE",
+      "role": "ASSESSED_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "nhan-dien-chuyen-de",
+      "label": "Nhận diện chuyên đề và công cụ",
+      "family_id": "EXAM-STRATEGY",
+      "role": "METHOD",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-bieu-thuc-can",
+      "label": "Ôn biểu thức và căn thức",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-phuong-trinh",
+      "label": "Ôn phương trình và bất phương trình",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-he",
+      "label": "Ôn hệ phương trình",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-ham-so",
+      "label": "Ôn hàm số và đồ thị",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-hinh-hoc",
+      "label": "Ôn hình học trọng tâm",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-thong-ke",
+      "label": "Ôn thống kê",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-xac-suat",
+      "label": "Ôn xác suất",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-mo-hinh-hoa",
+      "label": "Ôn bài toán thực tế",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "quan-ly-thoi-gian",
+      "label": "Quản lý thời gian làm bài",
+      "family_id": "EXAM-STRATEGY",
+      "role": "EXAM_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "phan-loai-loi",
+      "label": "Phân loại và sửa lỗi",
+      "family_id": "EXAM-REVIEW",
+      "role": "EXAM_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "checklist-chua-de",
+      "label": "Checklist chữa đề và kế hoạch ôn",
+      "family_id": "EXAM-REVIEW",
+      "role": "EXAM_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY",
+      "source_batch": "S4"
+    }
+  ]
+}

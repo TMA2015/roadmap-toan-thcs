@@ -1,0 +1,74 @@
+{
+  "version": 2,
+  "schema": "practice-bank-manifest-v1",
+  "bank_id": "RAD11-V1",
+  "topic": {
+    "id": "11-can-thuc",
+    "title": "Căn thức và biến đổi căn thức"
+  },
+  "session_size": 10,
+  "question_count": 132,
+  "skill_labels": {
+    "can-bac-hai-so-hoc": "Căn bậc hai số học",
+    "dkxd-can": "Điều kiện xác định của căn thức",
+    "can-binh-phuong": "Căn của bình phương và giá trị tuyệt đối",
+    "khai-phuong-tich": "Khai phương một tích",
+    "khai-phuong-thuong": "Khai phương một thương",
+    "dua-thua-so-ra": "Đưa thừa số ra ngoài dấu căn",
+    "dua-thua-so-vao": "Đưa thừa số vào trong dấu căn",
+    "can-dong-dang": "Cộng trừ căn đồng dạng",
+    "nhan-chia-can": "Nhân chia căn thức",
+    "truc-can-mau-don": "Trục căn thức ở mẫu dạng đơn",
+    "truc-can-lien-hop": "Trục căn thức bằng liên hợp",
+    "tim-x-can": "Tìm x trong phương trình chứa căn",
+    "so-sanh-can": "So sánh biểu thức căn",
+    "can-bac-ba": "Căn bậc ba"
+  },
+  "skill_groups": [
+    {
+      "id": "A",
+      "label": "A. Căn bậc hai và điều kiện",
+      "skills": [
+        "can-bac-hai-so-hoc",
+        "dkxd-can",
+        "can-binh-phuong",
+        "can-bac-ba"
+      ]
+    },
+    {
+      "id": "B",
+      "label": "B. Biến đổi căn thức",
+      "skills": [
+        "khai-phuong-tich",
+        "khai-phuong-thuong",
+        "dua-thua-so-ra",
+        "dua-thua-so-vao"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "C. Phép tính và trục căn thức",
+      "skills": [
+        "can-dong-dang",
+        "nhan-chia-can",
+        "truc-can-mau-don",
+        "truc-can-lien-hop"
+      ]
+    },
+    {
+      "id": "D",
+      "label": "D. Vận dụng căn thức",
+      "skills": [
+        "tim-x-can",
+        "so-sanh-can"
+      ]
+    }
+  ],
+  "sources": [
+    "11-can-thuc-v1-01.json",
+    "11-can-thuc-v1-02.json",
+    "11-can-thuc-v1-03.json",
+    "11-can-thuc-v1-04.json",
+    "11-can-thuc-v1-05.json"
+  ]
+}

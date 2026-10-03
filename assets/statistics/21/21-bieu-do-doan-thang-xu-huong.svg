@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="500" viewBox="0 0 820 500" role="img" aria-labelledby="title desc">
+  <title id="title">Đọc xu hướng trên biểu đồ đoạn thẳng</title>
+  <desc id="desc">Biểu đồ đoạn thẳng minh họa các điểm dữ liệu theo thời gian và cách nhận biết đoạn tăng, giảm, điểm cao nhất.</desc>
+  <rect width="820" height="500" fill="white"/>
+  <text x="410" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700">Đọc xu hướng trên biểu đồ đoạn thẳng</text>
+  <text x="410" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-size="15">Ví dụ: nhiệt độ trung bình theo ngày</text>
+  <g stroke="#222" stroke-width="2" fill="none">
+    <line x1="120" y1="390" x2="680" y2="390"/>
+    <line x1="120" y1="390" x2="120" y2="105"/>
+  </g>
+  <g stroke="#d0d0d0" stroke-width="1">
+    <line x1="120" y1="330" x2="680" y2="330"/>
+    <line x1="120" y1="270" x2="680" y2="270"/>
+    <line x1="120" y1="210" x2="680" y2="210"/>
+    <line x1="120" y1="150" x2="680" y2="150"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="15" fill="#222">
+    <text x="100" y="335" text-anchor="end">26</text>
+    <text x="100" y="275" text-anchor="end">27</text>
+    <text x="100" y="215" text-anchor="end">28</text>
+    <text x="100" y="155" text-anchor="end">29</text>
+    <text x="95" y="120" text-anchor="end">°C</text>
+  </g>
+  <polyline points="175,330 285,270 395,210 505,270 615,150" fill="none" stroke="#244b74" stroke-width="4"/>
+  <g fill="white" stroke="#244b74" stroke-width="3">
+    <circle cx="175" cy="330" r="7"/>
+    <circle cx="285" cy="270" r="7"/>
+    <circle cx="395" cy="210" r="7"/>
+    <circle cx="505" cy="270" r="7"/>
+    <circle cx="615" cy="150" r="7"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="16" fill="#222">
+    <text x="175" y="420" text-anchor="middle">Ngày 1</text>
+    <text x="285" y="420" text-anchor="middle">Ngày 2</text>
+    <text x="395" y="420" text-anchor="middle">Ngày 3</text>
+    <text x="505" y="420" text-anchor="middle">Ngày 4</text>
+    <text x="615" y="420" text-anchor="middle">Ngày 5</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="15" fill="#8a3b12" stroke="#8a3b12" stroke-width="1.5">
+    <line x1="260" y1="190" x2="335" y2="235"/>
+    <text x="245" y="184" text-anchor="end" stroke="none">Đoạn tăng</text>
+    <line x1="470" y1="185" x2="500" y2="250"/>
+    <text x="460" y="178" text-anchor="end" stroke="none">Đoạn giảm</text>
+    <line x1="700" y1="115" x2="620" y2="145"/>
+    <text x="705" y="108" stroke="none">Điểm cao nhất</text>
+  </g>
+  <text x="410" y="468" text-anchor="middle" font-family="Arial, sans-serif" font-size="16">So sánh vị trí các điểm để nhận ra xu hướng theo thời gian.</text>
+</svg>

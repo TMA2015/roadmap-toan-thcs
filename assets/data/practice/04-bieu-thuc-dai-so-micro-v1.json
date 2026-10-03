@@ -1,0 +1,685 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "ALG04-MICRO-V1",
+  "topic": {
+    "id": "04-bieu-thuc-dai-so",
+    "title": "Biểu thức và biến đổi đại số"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "ALG04MICRO_001",
+      "card_id": "alg04-core-1",
+      "micro_role": "base",
+      "question": "Biểu thức nào là đơn thức đã thu gọn?",
+      "options": [
+        "\\(-2x^2y^3\\)",
+        "\\(3x^2y\\cdot y\\)",
+        "\\(x+y\\)",
+        "\\(\\frac1x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "nhan-biet-don-thuc"
+        ],
+        "type": "nhan-biet-don-thuc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "\\(-2x^2y^3\\) đã ở dạng một tích giữa hệ số và các biến có số mũ nguyên không âm.",
+      "hints": [
+        "Đơn thức không có phép cộng/trừ giữa các hạng tử.",
+        "Kiểm tra xem phần biến đã được gộp hết lũy thừa cùng cơ số chưa."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "don-thuc-chua-thu-gon",
+          "signal_weight": 1,
+          "feedback_hint": "Biểu thức này vẫn còn phép nhân các phần biến có thể gộp lại."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_002",
+      "card_id": "alg04-core-1",
+      "micro_role": "trap",
+      "question": "Sau khi thu gọn, bậc của \\(P=2x^4-2x^4+3x^2+1\\) là bao nhiêu?",
+      "options": [
+        "2",
+        "4",
+        "1",
+        "0"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "he-so-bac"
+        ],
+        "type": "he-so-bac",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai hạng tử \\(2x^4\\) và \\(-2x^4\\) triệt tiêu. Còn \\(3x^2+1\\), nên bậc là 2.",
+      "hints": [
+        "Phải thu gọn đa thức trước khi xác định bậc.",
+        "Hai hạng tử bậc 4 có hệ số đối nhau."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "bac-da-thuc-chua-thu-gon",
+          "signal_weight": 2,
+          "feedback_hint": "Em đang lấy bậc trước khi thu gọn các hạng tử đồng dạng."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_003",
+      "card_id": "alg04-core-1",
+      "micro_role": "apply",
+      "question": "Khẳng định nào đúng với \\(P(x)=3x^3-2x+5\\)?",
+      "options": [
+        "Đây là đa thức một biến bậc 3.",
+        "Đây là đơn thức bậc 3.",
+        "Đây là đa thức hai biến.",
+        "Đây không phải đa thức vì có hạng tử tự do."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "nhan-biet-da-thuc"
+        ],
+        "type": "nhan-biet-da-thuc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Biểu thức chỉ chứa biến \\(x\\) với số mũ nguyên không âm; số mũ lớn nhất là 3.",
+      "hints": [
+        "Đếm số biến xuất hiện trong biểu thức.",
+        "Hạng tử tự do vẫn là một hạng tử hợp lệ của đa thức."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_004",
+      "card_id": "alg04-core-2",
+      "micro_role": "base",
+      "question": "Hạng tử nào đồng dạng với \\(3x^2y\\)?",
+      "options": [
+        "\\(-5x^2y\\)",
+        "\\(3xy^2\\)",
+        "\\(x^2\\)",
+        "\\(3x^3y\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "hang-tu-dong-dang"
+        ],
+        "type": "hang-tu-dong-dang",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Hạng tử đồng dạng phải có đúng cùng phần biến \\(x^2y\\); hệ số có thể khác.",
+      "hints": [
+        "Bỏ qua hệ số và so sánh phần biến.",
+        "Số mũ của từng biến phải giống nhau."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_005",
+      "card_id": "alg04-core-2",
+      "micro_role": "trap",
+      "question": "Thu gọn \\(3x^2y-5xy^2+2x^2y+xy^2\\).",
+      "options": [
+        "\\(5x^2y-4xy^2\\)",
+        "\\(5x^2y-6xy^2\\)",
+        "\\(x^2y-4xy^2\\)",
+        "\\(5x^2y+4xy^2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "thu-gon-da-thuc"
+        ],
+        "type": "thu-gon-da-thuc",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Nhóm hạng tử đồng dạng: \\(3x^2y+2x^2y=5x^2y\\), còn \\(-5xy^2+xy^2=-4xy^2\\).",
+      "hints": [
+        "Chỉ cộng các hạng tử có cùng phần biến.",
+        "Với nhóm \\(xy^2\\), hãy tính \\(-5+1\\)."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "cong-tru-he-so-sai-dau",
+          "signal_weight": 2,
+          "feedback_hint": "Kiểm tra lại phép cộng hệ số âm \\(-5+1\\)."
+        },
+        "2": {
+          "signal": "gom-hang-tu-khong-dong-dang",
+          "signal_weight": 2,
+          "feedback_hint": "Không được gộp các hạng tử có phần biến khác nhau."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_006",
+      "card_id": "alg04-core-2",
+      "micro_role": "apply",
+      "question": "Thu gọn \\(2a^2b-3ab^2-a^2b+5ab^2\\).",
+      "options": [
+        "\\(a^2b+2ab^2\\)",
+        "\\(a^2b-8ab^2\\)",
+        "\\(3a^2b+2ab^2\\)",
+        "\\(a^2b+8ab^2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "thu-gon-da-thuc"
+        ],
+        "type": "thu-gon-da-thuc",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(2a^2b-a^2b=a^2b\\) và \\(-3ab^2+5ab^2=2ab^2\\).",
+      "hints": [
+        "Tạo hai nhóm theo phần biến.",
+        "Giữ nguyên phần biến, chỉ cộng hệ số trong mỗi nhóm."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_007",
+      "card_id": "alg04-core-3",
+      "micro_role": "base",
+      "question": "Cho \\(A=2x^2-x\\), \\(B=x^2+3x\\). Khi đó \\(A+B\\) bằng:",
+      "options": [
+        "\\(3x^2+2x\\)",
+        "\\(3x^2-4x\\)",
+        "\\(x^2+2x\\)",
+        "\\(3x^2+4x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "cong-tru-da-thuc"
+        ],
+        "type": "cong-tru-da-thuc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Cộng các hạng tử đồng dạng: \\(2x^2+x^2=3x^2\\), \\(-x+3x=2x\\).",
+      "hints": [
+        "Bỏ ngoặc rồi nhóm theo bậc.",
+        "Tính riêng hệ số của \\(x^2\\) và \\(x\\)."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_008",
+      "card_id": "alg04-core-3",
+      "micro_role": "trap",
+      "question": "Rút gọn \\((3x^2-y^2)-(x^2-3xy+y^2)\\).",
+      "options": [
+        "\\(2x^2+3xy-2y^2\\)",
+        "\\(2x^2-3xy-2y^2\\)",
+        "\\(2x^2+3xy\\)",
+        "\\(4x^2-3xy\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "bo-ngoac-dau"
+        ],
+        "type": "bo-ngoac-dau",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dấu trừ trước ngoặc đổi dấu tất cả hạng tử: \\(3x^2-y^2-x^2+3xy-y^2\\).",
+      "hints": [
+        "Viết dấu trừ vào từng hạng tử của ngoặc thứ hai.",
+        "Đặc biệt \\(-(-3xy)=+3xy\\)."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "bo-ngoac-dau-tru-da-thuc",
+          "signal_weight": 2,
+          "feedback_hint": "Dấu trừ trước ngoặc phải đổi dấu cả hạng tử \\(-3xy\\)."
+        },
+        "2": {
+          "signal": "bo-ngoac-thieu-hang-tu",
+          "signal_weight": 2,
+          "feedback_hint": "Kiểm tra xem em đã đổi dấu và giữ đủ mọi hạng tử chưa."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_009",
+      "card_id": "alg04-core-3",
+      "micro_role": "apply",
+      "question": "Rút gọn \\((2x-y)-(x-3y)+(3x+y)\\).",
+      "options": [
+        "\\(4x+3y\\)",
+        "\\(4x-3y\\)",
+        "\\(2x+3y\\)",
+        "\\(4x+y\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "cong-tru-da-thuc"
+        ],
+        "type": "cong-tru-da-thuc",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Bỏ ngoặc đúng dấu: \\(2x-y-x+3y+3x+y=4x+3y\\).",
+      "hints": [
+        "Xử lý riêng ngoặc có dấu trừ.",
+        "Sau đó nhóm các hạng tử chứa \\(x\\) và \\(y\\)."
+      ],
+      "supporting_skills": [
+        "bo-ngoac-dau"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_010",
+      "card_id": "alg04-core-4",
+      "micro_role": "base",
+      "question": "Khai triển \\(2x(x-3y)\\).",
+      "options": [
+        "\\(2x^2-6xy\\)",
+        "\\(2x^2-3y\\)",
+        "\\(2x^2-3xy\\)",
+        "\\(x^2-6xy\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "tinh-phan-phoi"
+        ],
+        "type": "tinh-phan-phoi",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Nhân \\(2x\\) với từng hạng tử: \\(2x\\cdot x=2x^2\\), \\(2x\\cdot(-3y)=-6xy\\).",
+      "hints": [
+        "Đơn thức ngoài ngoặc phải nhân với từng hạng tử.",
+        "Đừng quên nhân cả hệ số 2 với 3."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "phan-phoi-bo-sot-thua-so",
+          "signal_weight": 2,
+          "feedback_hint": "Hạng tử thứ hai cũng phải nhân với toàn bộ \\(2x\\)."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_011",
+      "card_id": "alg04-core-4",
+      "micro_role": "trap",
+      "question": "Khai triển \\(-3x(x-2)\\).",
+      "options": [
+        "\\(-3x^2+6x\\)",
+        "\\(-3x^2-6x\\)",
+        "\\(3x^2-6x\\)",
+        "\\(-3x^2+2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "tinh-phan-phoi"
+        ],
+        "type": "tinh-phan-phoi",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "\\(-3x\\cdot x=-3x^2\\) và \\(-3x\\cdot(-2)=+6x\\).",
+      "hints": [
+        "Theo dõi dấu khi nhân số âm với số âm.",
+        "Hạng tử thứ hai là tích \\((-3x)(-2)\\)."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "nhan-hai-so-am-sai-dau",
+          "signal_weight": 2,
+          "feedback_hint": "Âm nhân âm phải cho kết quả dương."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_012",
+      "card_id": "alg04-core-4",
+      "micro_role": "apply",
+      "question": "Khai triển rồi thu gọn \\((x+1)(x-2)\\).",
+      "options": [
+        "\\(x^2-x-2\\)",
+        "\\(x^2-2\\)",
+        "\\(x^2+x-2\\)",
+        "\\(x^2-3x-2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "nhan-bieu-thuc"
+        ],
+        "type": "nhan-bieu-thuc",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Nhân từng hạng tử: \\(x^2-2x+x-2=x^2-x-2\\).",
+      "hints": [
+        "Mỗi hạng tử của ngoặc thứ nhất phải nhân với cả ngoặc thứ hai.",
+        "Sau khi khai triển, thu gọn hai hạng tử chứa \\(x\\)."
+      ],
+      "supporting_skills": [
+        "tinh-phan-phoi"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_013",
+      "card_id": "alg04-core-5",
+      "micro_role": "base",
+      "question": "Thực hiện \\((6x^3-3x^2):3x\\), với \\(x\\ne0\\).",
+      "options": [
+        "\\(2x^2-x\\)",
+        "\\(2x^2-1\\)",
+        "\\(3x^2-x\\)",
+        "\\(2x-x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "basic",
+      "explanation": "Chia từng hạng tử cho \\(3x\\): \\(6x^3:3x=2x^2\\), \\(-3x^2:3x=-x\\).",
+      "hints": [
+        "Chia từng hạng tử của đa thức cho đơn thức.",
+        "Khi chia lũy thừa cùng cơ số, trừ số mũ."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_014",
+      "card_id": "alg04-core-5",
+      "micro_role": "trap",
+      "question": "Thực hiện \\((8x^3y-4x^2y+2xy):(2xy)\\).",
+      "options": [
+        "\\(4x^2-2x+1\\)",
+        "\\(4x^2-2x\\)",
+        "\\(4x^2+2x+1\\)",
+        "\\(4x-2+1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "type": "chia-da-thuc-cho-don-thuc",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Chia đủ cả ba hạng tử cho \\(2xy\\); hạng tử cuối cho kết quả 1.",
+      "hints": [
+        "Đừng bỏ sót hạng tử cuối.",
+        "\\(2xy:(2xy)=1\\), không phải 0."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "chia-da-thuc-bo-sot-hang-tu",
+          "signal_weight": 2,
+          "feedback_hint": "Khi chia đa thức cho đơn thức phải chia từng hạng tử, kể cả hạng tử cuối."
+        },
+        "3": {
+          "signal": "chia-luy-thua-sai-so-mu",
+          "signal_weight": 2,
+          "feedback_hint": "Kiểm tra lại phép chia \\(x^3:x\\)."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_015",
+      "card_id": "alg04-core-5",
+      "micro_role": "apply",
+      "question": "Cho \\(A=(x^3-2x^2):x^2\\), \\(x\\ne0\\). Giá trị của \\(A\\) tại \\(x=3\\) là:",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "tinh-gia-tri-bieu-thuc"
+        ],
+        "type": "tinh-gia-tri-bieu-thuc",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Rút gọn trước: \\(A=x-2\\). Thay \\(x=3\\) được \\(A=1\\).",
+      "hints": [
+        "Hãy chia từng hạng tử cho \\(x^2\\) trước khi thay số.",
+        "Sau khi rút gọn, biểu thức chỉ còn \\(x-2\\)."
+      ],
+      "supporting_skills": [
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7,
+          8
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

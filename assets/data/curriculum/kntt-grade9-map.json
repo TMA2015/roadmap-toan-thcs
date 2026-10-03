@@ -1,0 +1,286 @@
+{
+  "version": 1,
+  "schema": "roadmap-kntt-grade-map-v1",
+  "grade": 9,
+  "book": "Kết nối tri thức",
+  "status": "reviewed",
+  "context_version": "1.0.5",
+  "source_task": "KNTT-MAP-G9-001",
+  "source_verdict": "PASS",
+  "review_verdict": "PASS-WITH-CHANGES",
+  "design_rules": [
+    "Grade 9 is the final KNTT overlay on the 25-topic Vertical Spine.",
+    "Core is determined by KNTT content, not by Entrance10 frequency.",
+    "Existing Practice Banks may be broader than the Grade 9 Core subset.",
+    "Soft mastery only: diagnose and remediate weak prerequisites without absolute 100% locks."
+  ],
+  "corrections": [
+    "CĐ09: so-nghiem-he and y-nghia-hinh-hoc are not blanket-excluded; KNTT Grade 9 explicitly connects solutions to line intersections and includes systems with no solution/infinite solutions.",
+    "CĐ12: Viète applications are broader than only mental roots; do not blanket-exclude lap-pt-tu-nghiem or all root-expression work without item-level review.",
+    "CĐ18: cot is explicitly present in KNTT Grade 9 and needs its own skill coverage.",
+    "CĐ08: Bài 5 inequalities and their order properties need explicit skill coverage, not only bpt-bac-nhat.",
+    "CĐ22 remains outside the KNTT Grade 9 overlay; this does not by itself prove it is outside all KNTT THCS grades."
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Phương trình và hệ hai phương trình bậc nhất hai ẩn",
+      "roadmap": [
+        "09-he-phuong-trinh",
+        "24-bai-toan-thuc-te"
+      ],
+      "core_existing": [
+        "nghiem-pt-hai-an",
+        "nghiem-he",
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc",
+        "giai-he-the",
+        "giai-he-cong",
+        "chon-phuong-phap",
+        "bien-doi-truoc-giai",
+        "kiem-tra-nghiem-he",
+        "lap-he-bai-toan",
+        "bai-toan-so",
+        "chuyen-dong-he",
+        "nang-suat-he"
+      ],
+      "exclude": [
+        "tham-so-he"
+      ],
+      "proposed": []
+    },
+    {
+      "chapter": 2,
+      "title": "Phương trình và bất phương trình bậc nhất một ẩn",
+      "roadmap": [
+        "08-phuong-trinh-bat-phuong-trinh"
+      ],
+      "core_existing": [
+        "pt-tich",
+        "dkxd-phuong-trinh-mau",
+        "khu-mau-phuong-trinh",
+        "doi-chieu-nghiem",
+        "bpt-bac-nhat",
+        "doi-chieu-bpt",
+        "bieu-dien-tap-nghiem"
+      ],
+      "proposed": [
+        "bat-dang-thuc",
+        "tinh-chat-thu-tu-phep-cong",
+        "tinh-chat-thu-tu-phep-nhan"
+      ],
+      "exclude": [
+        "tham-so-co-ban",
+        "giao-tap-nghiem"
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "Căn bậc hai và căn bậc ba",
+      "roadmap": [
+        "11-can-thuc"
+      ],
+      "core_existing": [
+        "can-bac-hai-so-hoc",
+        "dkxd-can",
+        "can-binh-phuong",
+        "khai-phuong-tich",
+        "khai-phuong-thuong",
+        "dua-thua-so-ra",
+        "dua-thua-so-vao",
+        "can-dong-dang",
+        "nhan-chia-can",
+        "truc-can-mau-don",
+        "truc-can-lien-hop"
+      ],
+      "proposed": [
+        "can-bac-ba"
+      ],
+      "exclude": []
+    },
+    {
+      "chapter": 4,
+      "title": "Hệ thức lượng trong tam giác vuông",
+      "roadmap": [
+        "18-he-thuc-luong",
+        "24-bai-toan-thuc-te"
+      ],
+      "core_existing": [
+        "sin",
+        "cos",
+        "tan",
+        "tim-canh-luong-giac",
+        "tim-goc-luong-giac",
+        "goc-nang-ha",
+        "chieu-cao-khoang-cach"
+      ],
+      "proposed": [
+        "cot"
+      ],
+      "exclude": [],
+      "note": "Do not classify he-thuc-canh/he-thuc-duong-cao as Grade 9 Core merely from the topic name; KNTT Ch.4 centers on trigonometric ratios and side-angle relations."
+    },
+    {
+      "chapter": 5,
+      "title": "Đường tròn",
+      "roadmap": [
+        "19-duong-tron"
+      ],
+      "core_existing": [
+        "day-va-tam",
+        "do-dai-duong-tron"
+      ],
+      "proposed": [
+        "cung-va-day",
+        "do-dai-cung",
+        "dien-tich-quat-tron",
+        "dien-tich-vanh-khuyen",
+        "vi-tri-tuong-doi-duong-thang-duong-tron",
+        "vi-tri-tuong-doi-hai-duong-tron"
+      ],
+      "exclude": []
+    },
+    {
+      "chapter": 6,
+      "title": "Hàm số y=ax² và phương trình bậc hai",
+      "roadmap": [
+        "10-ham-so-do-thi",
+        "12-phuong-trinh-bac-hai-viete",
+        "24-bai-toan-thuc-te"
+      ],
+      "core_existing": [
+        "ham-y-ax2",
+        "doi-xung-parabol",
+        "diem-thuoc-parabol",
+        "nhan-dang-pt-bac-hai",
+        "he-so-abc",
+        "tinh-delta",
+        "so-nghiem-delta",
+        "cong-thuc-nghiem",
+        "delta-phay",
+        "giai-pt-bac-hai",
+        "nham-nghiem",
+        "tong-tich-nghiem",
+        "lap-pt-tu-nghiem"
+      ],
+      "exclude": [
+        "tham-so-so-nghiem"
+      ],
+      "needs_item_review": [
+        "bieu-thuc-doi-xung",
+        "dau-nghiem",
+        "lien-he-do-thi"
+      ]
+    },
+    {
+      "chapter": 7,
+      "title": "Tần số và tần số tương đối",
+      "roadmap": [
+        "21-thong-ke"
+      ],
+      "core_existing": [
+        "bang-tan-so",
+        "tan-suat",
+        "du-lieu-ghep-nhom"
+      ],
+      "proposed": [
+        "bang-tan-so-tuong-doi",
+        "bieu-do-tan-so",
+        "bieu-do-tan-so-tuong-doi",
+        "bang-tan-so-ghep-nhom"
+      ],
+      "exclude": []
+    },
+    {
+      "chapter": 8,
+      "title": "Xác suất của biến cố trong một số mô hình xác suất đơn giản",
+      "roadmap": [
+        "23-xac-suat"
+      ],
+      "core_existing": [
+        "phep-thu-ngau-nhien",
+        "khong-gian-mau",
+        "bien-co",
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat"
+      ],
+      "proposed": [],
+      "needs_item_review": [
+        "dong-xu-nhieu-lan",
+        "xuc-xac-hai-lan",
+        "so-do-cay",
+        "nhieu-buoc-doc-lap",
+        "khong-hoan-lai"
+      ]
+    },
+    {
+      "chapter": 9,
+      "title": "Đường tròn ngoại tiếp và đường tròn nội tiếp",
+      "roadmap": [
+        "19-duong-tron"
+      ],
+      "core_existing": [
+        "goc-noi-tiep",
+        "tu-giac-noi-tiep",
+        "dau-hieu-noi-tiep"
+      ],
+      "proposed": [
+        "duong-tron-ngoai-tiep-tam-giac",
+        "duong-tron-noi-tiep-tam-giac",
+        "da-giac-deu"
+      ],
+      "exclude": [
+        "hai-day-cat-nhau",
+        "tiep-tuyen-cat-tuyen"
+      ]
+    },
+    {
+      "chapter": 10,
+      "title": "Một số hình khối trong thực tiễn",
+      "roadmap": [
+        "20-hinh-hoc-tong-hop",
+        "24-bai-toan-thuc-te"
+      ],
+      "core_existing": [
+        "doi-don-vi-do-luong"
+      ],
+      "proposed": [
+        "nhan-biet-hinh-tru",
+        "dien-tich-xung-quanh-hinh-tru",
+        "the-tich-hinh-tru",
+        "nhan-biet-hinh-non",
+        "dien-tich-xung-quanh-hinh-non",
+        "the-tich-hinh-non",
+        "nhan-biet-hinh-cau",
+        "dien-tich-mat-cau",
+        "the-tich-hinh-cau"
+      ],
+      "exclude": []
+    }
+  ],
+  "vertical_spine_audit": {
+    "grade9_overlay_excluded_topic_ids": [
+      "22-dai-luong-dac-trung"
+    ],
+    "missing_core_concentrations": [
+      "19-duong-tron",
+      "20-hinh-hoc-tong-hop"
+    ],
+    "relayer_candidates": {
+      "08-phuong-trinh-bat-phuong-trinh": [
+        "tham-so-co-ban"
+      ],
+      "09-he-phuong-trinh": [
+        "tham-so-he"
+      ],
+      "12-phuong-trinh-bac-hai-viete": [
+        "tham-so-so-nghiem"
+      ],
+      "19-duong-tron": [
+        "hai-day-cat-nhau",
+        "tiep-tuyen-cat-tuyen"
+      ]
+    },
+    "caution": "Do not infer from Grade 9 TOC alone that Topic 22 is outside all KNTT THCS Core. Cross-grade audit is required before relayering the whole topic."
+  }
+}

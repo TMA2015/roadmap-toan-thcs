@@ -1,0 +1,655 @@
+{
+  "schema": "canonical-evidence-phase-f-expansion-r1",
+  "status": "DESIGN_ONLY_REVIEW_REQUIRED_RUNTIME_DISABLED",
+  "as_of": "2026-09-30",
+  "packet_id": "MATH-SKILL-PHASE-F-EXPANSION-R1-20260930",
+  "purpose": "Bounded prospective multi-topic expansion of the accepted canonical evidence pilot. Tests cross-topic canonical identity and heterogeneous evidence classes without mastery, backfill or Practice Engine integration.",
+  "baseline": {
+    "project_context_version": "1.0.74",
+    "accepted_phase_e_status": "PRODUCTION_RELEASED_OWNER_QA_PASS",
+    "phase_e_v4_config_blob": "bdb1239c6d032f47183f8b9b70dd82e9b4aff9e4",
+    "phase_e_v4_manifest_blob": "f962acaff602b9b6bbe827bb2667f68004b5b109",
+    "canonical_store_key": "toan-thcs-canonical-evidence-v1",
+    "phase_e_scope": "12 CĐ07 items; 3 canonical skills; max 7 independent evidence units",
+    "phase_e_rule": "Accepted v4 remains unchanged as a frozen control page. Phase F may append only new prospective canonical events."
+  },
+  "source_lock": {
+    "overlays": {
+      "CĐ04": {
+        "blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+        "branch": "review/skill-taxonomy-phase-d-core04-r1-20260930",
+        "path": "docs/assets/data/curriculum/primary-skill-overlay-core04-phase-d-r1.json"
+      },
+      "CĐ05": {
+        "blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+        "branch": "review/skill-taxonomy-phase-d-core05-r1-20260930",
+        "path": "docs/assets/data/curriculum/primary-skill-overlay-core05-phase-d-r1.json"
+      },
+      "CĐ06": {
+        "blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+        "branch": "review/skill-taxonomy-phase-d-core06-r1-20260930",
+        "path": "docs/assets/data/curriculum/primary-skill-overlay-core06-phase-d-r1.json"
+      },
+      "CĐ07": {
+        "blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+        "branch": "review/skill-taxonomy-phase-d-core07-r1-20260930",
+        "path": "docs/assets/data/curriculum/primary-skill-overlay-core07-phase-d-r1.json"
+      }
+    },
+    "source_files": {
+      "04-bieu-thuc-dai-so-v2-01.json": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+      "04-bieu-thuc-dai-so-v2-03.json": "42d57ec1c5a65cf331eb07d7b681b479dc203775",
+      "05-7-hang-dang-thuc-v1-01.json": "6bb054851b281e495b02a55bf65008a08ad82218",
+      "05-7-hang-dang-thuc-v1-03.json": "fa18b11a46d5aad8e47813d3cc83549cd5769ac4",
+      "05-7-hang-dang-thuc-v1-04.json": "c1edbbe7eba0d144a32d54cb384eb1ec09f156c8",
+      "06-phan-tich-da-thuc-v1-01.json": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+      "07-phan-thuc-dai-so-v1-03.json": "9297d644a65c09b8c8ca8cc4b3f81cc194764360"
+    }
+  },
+  "scope": {
+    "new_items": 15,
+    "topics": 4,
+    "canonical_skills_in_batch": 5,
+    "existing_v4_skill_extended": [
+      "dieu-kien-xac-dinh"
+    ],
+    "new_canonical_skills": [
+      "hang-tu-dong-dang",
+      "hieu-hai-binh-phuong",
+      "nhan-tu-chung",
+      "quy-dong-mau-thuc"
+    ],
+    "projected_total_canonical_skills_after_acceptance": 7,
+    "max_new_independent_evidence_units": 9,
+    "clone_family_groups": 6,
+    "singleton_units": 3,
+    "supporting_skill_occurrences": 0,
+    "evidence_class_counts": {
+      "MCQ_FINAL_OUTPUT_ONLY": 7,
+      "MCQ_FINAL_ANSWER_ONLY": 2,
+      "MCQ_RECOGNITION_ONLY": 3,
+      "MCQ_METHOD_SELECTION_ONLY": 3
+    },
+    "selected_items": [
+      {
+        "topic_code": "CĐ04",
+        "topic_label": "Biểu thức đại số",
+        "question_id": "ALG04V2_013",
+        "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+        "source_blob": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+        "overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+        "canonical_skill_id": "hang-tu-dong-dang",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_RECOGNITION_ONLY",
+        "clone_family": "ALG04-DONGDANG-013-020",
+        "legacy_skill_tags": [
+          "hang-tu-dong-dang"
+        ],
+        "difficulty": "basic",
+        "question": "Hạng tử nào đồng dạng với \\(3 x^{2} y\\)?",
+        "options": [
+          "\\(- 2 x^{2} y\\)",
+          "\\(5 x y^{2}\\)",
+          "\\(7 x^{2}\\)",
+          "\\(x^{3} y\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\(- 2 x^{2} y\\)",
+        "explanation": "Hạng tử đồng dạng phải có đúng cùng phần biến. \\(- 2 x^{2} y\\) có cùng phần biến với \\(3 x^{2} y\\).",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ04",
+        "topic_label": "Biểu thức đại số",
+        "question_id": "ALG04V2_014",
+        "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+        "source_blob": "216a464a1935bd5d1d00147e9386eb2ee224f27b",
+        "overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+        "canonical_skill_id": "hang-tu-dong-dang",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_RECOGNITION_ONLY",
+        "clone_family": "ALG04-DONGDANG-013-020",
+        "legacy_skill_tags": [
+          "hang-tu-dong-dang"
+        ],
+        "difficulty": "basic",
+        "question": "Hạng tử nào đồng dạng với \\(- 4 a b^{3}\\)?",
+        "options": [
+          "\\(9 a b^{3}\\)",
+          "\\(- 4 a^{2} b^{3}\\)",
+          "\\(2 a b^{2}\\)",
+          "\\(4 a^{3} b\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\(9 a b^{3}\\)",
+        "explanation": "Hạng tử đồng dạng phải có đúng cùng phần biến. \\(9 a b^{3}\\) có cùng phần biến với \\(- 4 a b^{3}\\).",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ04",
+        "topic_label": "Biểu thức đại số",
+        "question_id": "ALG04V2_089",
+        "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+        "source_blob": "42d57ec1c5a65cf331eb07d7b681b479dc203775",
+        "overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+        "canonical_skill_id": "dieu-kien-xac-dinh",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+        "clone_family": "ALG04-DKXD-LINEAR-089-098",
+        "legacy_skill_tags": [
+          "dieu-kien-xac-dinh"
+        ],
+        "difficulty": "basic",
+        "question": "Biểu thức \\(\\dfrac{x+1}{x - 2}\\) xác định khi nào?",
+        "options": [
+          "\\(x\\ne 2\\)",
+          "\\(x=2\\)",
+          "\\(x\\ne -2\\)",
+          "\\(x>2\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\(x\\ne 2\\)",
+        "explanation": "Mẫu phải khác 0: \\(x - 2\\ne0\\). Suy ra \\(x\\ne 2\\).",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ04",
+        "topic_label": "Biểu thức đại số",
+        "question_id": "ALG04V2_090",
+        "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+        "source_blob": "42d57ec1c5a65cf331eb07d7b681b479dc203775",
+        "overlay_blob": "badef3ac1d335ed727c1a017dd295ed8ce46298f",
+        "canonical_skill_id": "dieu-kien-xac-dinh",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+        "clone_family": "ALG04-DKXD-LINEAR-089-098",
+        "legacy_skill_tags": [
+          "dieu-kien-xac-dinh"
+        ],
+        "difficulty": "basic",
+        "question": "Biểu thức \\(\\dfrac{x+1}{2x + 6}\\) xác định khi nào?",
+        "options": [
+          "\\(x\\ne -3\\)",
+          "\\(x=-3\\)",
+          "\\(x\\ne 3\\)",
+          "\\(x>-3\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\(x\\ne -3\\)",
+        "explanation": "Mẫu phải khác 0: \\(2x + 6\\ne0\\). Suy ra \\(x\\ne -3\\).",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ05",
+        "topic_label": "7 hằng đẳng thức",
+        "question_id": "ID05V1_021",
+        "source_file": "05-7-hang-dang-thuc-v1-01.json",
+        "source_blob": "6bb054851b281e495b02a55bf65008a08ad82218",
+        "overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+        "canonical_skill_id": "hieu-hai-binh-phuong",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+        "clone_family": "ID05-HIEU-HAI-BP-021-030",
+        "legacy_skill_tags": [
+          "hieu-hai-binh-phuong",
+          "phan-tich-hdt"
+        ],
+        "difficulty": "basic",
+        "question": "Phân tích \\(x^{2} - 16\\) thành nhân tử.",
+        "options": [
+          "\\((x - 4)(x + 4)\\)",
+          "\\((x - 4)^2\\)",
+          "\\((x + 4)^2\\)",
+          "\\((x - 4)(x - 4)\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\((x - 4)(x + 4)\\)",
+        "explanation": "Nhận dạng \\(A^2-B^2=(A-B)(A+B)\\) với \\(A=x,\\ B=4\\).",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ05",
+        "topic_label": "7 hằng đẳng thức",
+        "question_id": "ID05V1_022",
+        "source_file": "05-7-hang-dang-thuc-v1-01.json",
+        "source_blob": "6bb054851b281e495b02a55bf65008a08ad82218",
+        "overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+        "canonical_skill_id": "hieu-hai-binh-phuong",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+        "clone_family": "ID05-HIEU-HAI-BP-021-030",
+        "legacy_skill_tags": [
+          "hieu-hai-binh-phuong",
+          "phan-tich-hdt"
+        ],
+        "difficulty": "basic",
+        "question": "Phân tích \\(x^{2} - 81\\) thành nhân tử.",
+        "options": [
+          "\\((x - 9)(x + 9)\\)",
+          "\\((x - 9)^2\\)",
+          "\\((x + 9)^2\\)",
+          "\\((x - 9)(x - 9)\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\((x - 9)(x + 9)\\)",
+        "explanation": "Nhận dạng \\(A^2-B^2=(A-B)(A+B)\\) với \\(A=x,\\ B=9\\).",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ05",
+        "topic_label": "7 hằng đẳng thức",
+        "question_id": "ID05V1_081",
+        "source_file": "05-7-hang-dang-thuc-v1-03.json",
+        "source_blob": "fa18b11a46d5aad8e47813d3cc83549cd5769ac4",
+        "overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+        "canonical_skill_id": "hieu-hai-binh-phuong",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_RECOGNITION_ONLY",
+        "clone_family": null,
+        "legacy_skill_tags": [
+          "hieu-hai-binh-phuong",
+          "nhan-dang-hdt"
+        ],
+        "difficulty": "basic",
+        "question": "Khi áp dụng hằng đẳng thức cho \\(4x^2-25\\), chọn đúng \\(A,B\\).",
+        "options": [
+          "\\(A=2x,\\ B=5\\)",
+          "\\(A=4x,\\ B=25\\)",
+          "\\(A=2x,\\ B=25\\)",
+          "\\(A=4x,\\ B=5\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\(A=2x,\\ B=5\\)",
+        "explanation": "Xác định toàn bộ biểu thức đóng vai trò \\(A\\) và \\(B\\), không chỉ lấy hệ số hay biến riêng lẻ.",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ05",
+        "topic_label": "7 hằng đẳng thức",
+        "question_id": "ID05V1_087",
+        "source_file": "05-7-hang-dang-thuc-v1-03.json",
+        "source_blob": "fa18b11a46d5aad8e47813d3cc83549cd5769ac4",
+        "overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+        "canonical_skill_id": "hieu-hai-binh-phuong",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+        "clone_family": null,
+        "legacy_skill_tags": [
+          "hieu-hai-binh-phuong",
+          "phan-tich-hdt"
+        ],
+        "difficulty": "intermediate",
+        "question": "Nhận dạng và viết \\(25x^2-49\\) dưới dạng gọn nhất bằng hằng đẳng thức.",
+        "options": [
+          "\\((5x-7)(5x+7)\\)",
+          "\\((5x-7)^2\\)",
+          "\\((25x-49)(25x+49)\\)",
+          "\\((5x+7)^2\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\((5x-7)(5x+7)\\)",
+        "explanation": "So sánh biểu thức với đúng mẫu hằng đẳng thức và kiểm tra hệ số/dấu.",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ05",
+        "topic_label": "7 hằng đẳng thức",
+        "question_id": "ID05V1_120",
+        "source_file": "05-7-hang-dang-thuc-v1-04.json",
+        "source_blob": "c1edbbe7eba0d144a32d54cb384eb1ec09f156c8",
+        "overlay_blob": "6d2a872d229c8c34cf2232ed55c9ef2a2a64468e",
+        "canonical_skill_id": "hieu-hai-binh-phuong",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+        "clone_family": null,
+        "legacy_skill_tags": [
+          "phan-tich-hdt",
+          "hieu-hai-binh-phuong"
+        ],
+        "difficulty": "intermediate",
+        "question": "Bước ĐẦU TIÊN thích hợp khi phân tích \\(x^4-16\\) thành nhân tử là:",
+        "options": [
+          "Hiệu hai bình phương: \\((x^2-4)(x^2+4)\\)",
+          "Tổng hai bình phương",
+          "Bình phương của một tổng",
+          "Lập phương của một hiệu"
+        ],
+        "answer_index": 0,
+        "correct_option": "Hiệu hai bình phương: \\((x^2-4)(x^2+4)\\)",
+        "explanation": "Trước hết nhận dạng \\(x^4-16=(x^2)^2-4^2=(x^2-4)(x^2+4)\\) (hiệu hai bình phương). Nếu yêu cầu phân tích hoàn toàn thì còn \\(x^2-4=(x-2)(x+2)\\), nên kết quả cuối là \\((x-2)(x+2)(x^2+4)\\). Câu trắc nghiệm hiện chỉ đo bước đầu.",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ06",
+        "topic_label": "Phân tích đa thức",
+        "question_id": "FAC06V1_001",
+        "source_file": "06-phan-tich-da-thuc-v1-01.json",
+        "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+        "overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+        "canonical_skill_id": "nhan-tu-chung",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+        "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+        "legacy_skill_tags": [
+          "nhan-tu-chung"
+        ],
+        "difficulty": "basic",
+        "question": "Phân tích đa thức \\(20 x^{4} - 5 x^{2}\\) thành nhân tử bằng cách đặt nhân tử chung lớn nhất.",
+        "options": [
+          "\\(5x^2(4x^2-1)\\)",
+          "\\(5x^2(4x^2+1)\\)",
+          "\\(4x^2(4x^2-1)\\)",
+          "\\(5x^3(4x^2-1)\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\(5x^2(4x^2-1)\\)",
+        "explanation": "Nhân tử chung lớn nhất là \\(5x^2\\). Đưa nhân tử đó ra ngoài ngoặc rồi chia từng hạng tử cho nó.",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ06",
+        "topic_label": "Phân tích đa thức",
+        "question_id": "FAC06V1_002",
+        "source_file": "06-phan-tich-da-thuc-v1-01.json",
+        "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+        "overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+        "canonical_skill_id": "nhan-tu-chung",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+        "clone_family": "FAC06-NHAN-TU-CHUNG-001-012",
+        "legacy_skill_tags": [
+          "nhan-tu-chung"
+        ],
+        "difficulty": "basic",
+        "question": "Phân tích đa thức \\(24 x^{3} + 6 x\\) thành nhân tử bằng cách đặt nhân tử chung lớn nhất.",
+        "options": [
+          "\\(6x(4x^2+1)\\)",
+          "\\(6x(4x^2-1)\\)",
+          "\\(5x(4x^2+1)\\)",
+          "\\(6x^2(4x^2+1)\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\(6x(4x^2+1)\\)",
+        "explanation": "Nhân tử chung lớn nhất là \\(6x\\). Đưa nhân tử đó ra ngoài ngoặc rồi chia từng hạng tử cho nó.",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ06",
+        "topic_label": "Phân tích đa thức",
+        "question_id": "FAC06V1_021",
+        "source_file": "06-phan-tich-da-thuc-v1-01.json",
+        "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+        "overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+        "canonical_skill_id": "hieu-hai-binh-phuong",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+        "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+        "legacy_skill_tags": [
+          "hieu-hai-binh-phuong"
+        ],
+        "difficulty": "basic",
+        "question": "Phân tích \\(4 x^{2} - 25\\) thành nhân tử.",
+        "options": [
+          "\\((2x-5)(2x+5)\\)",
+          "\\((2x-5)^2\\)",
+          "\\((2x+5)^2\\)",
+          "\\((2x-5)(2x-5)\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\((2x-5)(2x+5)\\)",
+        "explanation": "Đây là hiệu hai bình phương: \\((2x)^2-5^2=(2x-5)(2x+5)\\).",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ06",
+        "topic_label": "Phân tích đa thức",
+        "question_id": "FAC06V1_022",
+        "source_file": "06-phan-tich-da-thuc-v1-01.json",
+        "source_blob": "1c2dd47977aa016cd24ce07d64215c213641f27f",
+        "overlay_blob": "a64ec780b62ef6fd40668eb4bbad331024b470aa",
+        "canonical_skill_id": "hieu-hai-binh-phuong",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+        "clone_family": "FAC06-HIEU-HAI-BP-021-032",
+        "legacy_skill_tags": [
+          "hieu-hai-binh-phuong"
+        ],
+        "difficulty": "basic",
+        "question": "Phân tích \\(16 x^{2} - 9\\) thành nhân tử.",
+        "options": [
+          "\\((4x-3)(4x+3)\\)",
+          "\\((4x-3)^2\\)",
+          "\\((4x+3)^2\\)",
+          "\\((4x-3)(4x-3)\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\((4x-3)(4x+3)\\)",
+        "explanation": "Đây là hiệu hai bình phương: \\((4x)^2-3^2=(4x-3)(4x+3)\\).",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ07",
+        "topic_label": "Phân thức đại số",
+        "question_id": "RAT07V1_071",
+        "source_file": "07-phan-thuc-dai-so-v1-03.json",
+        "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+        "overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+        "canonical_skill_id": "quy-dong-mau-thuc",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+        "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+        "legacy_skill_tags": [
+          "quy-dong-mau-thuc"
+        ],
+        "difficulty": "basic",
+        "question": "Mẫu thức chung phù hợp của \\(\\frac1{x-1}\\) và \\(\\frac1{x-2}\\) là:",
+        "options": [
+          "\\((x-1)(x-2)\\)",
+          "\\(x-3\\)",
+          "\\((x-3)^2\\)",
+          "\\(x^2-2\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\((x-1)(x-2)\\)",
+        "explanation": "Hai mẫu \\(x-1\\) và \\(x-2\\) là hai nhân tử khác nhau, nên chọn mẫu thức chung \\((x-1)(x-2)\\), với \\(x\\ne1,\\;x\\ne2\\).",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      },
+      {
+        "topic_code": "CĐ07",
+        "topic_label": "Phân thức đại số",
+        "question_id": "RAT07V1_072",
+        "source_file": "07-phan-thuc-dai-so-v1-03.json",
+        "source_blob": "9297d644a65c09b8c8ca8cc4b3f81cc194764360",
+        "overlay_blob": "0318bde17dd140ad2e94563abdbddca90343cc77",
+        "canonical_skill_id": "quy-dong-mau-thuc",
+        "supporting_skills": [],
+        "evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+        "clone_family": "RAT07-COMMON-DENOMINATOR-071-080",
+        "legacy_skill_tags": [
+          "quy-dong-mau-thuc"
+        ],
+        "difficulty": "basic",
+        "question": "Mẫu thức chung phù hợp của \\(\\frac1{x-1}\\) và \\(\\frac1{x-3}\\) là:",
+        "options": [
+          "\\((x-1)(x-3)\\)",
+          "\\(x-4\\)",
+          "\\((x-4)^2\\)",
+          "\\(x^2-3\\)"
+        ],
+        "answer_index": 0,
+        "correct_option": "\\((x-1)(x-3)\\)",
+        "explanation": "Hai mẫu \\(x-1\\) và \\(x-3\\) là hai nhân tử khác nhau, nên chọn mẫu thức chung \\((x-1)(x-3)\\), với \\(x\\ne1,\\;x\\ne3\\).",
+        "runtime_enabled": false,
+        "core_readiness_credit": false
+      }
+    ]
+  },
+  "skill_plan": [
+    {
+      "canonical_skill_id": "dieu-kien-xac-dinh",
+      "role": "EXTEND_EXISTING_V4_SKILL",
+      "topics": [
+        "CĐ04",
+        "CĐ07-existing-v4"
+      ],
+      "new_item_ids": [
+        "ALG04V2_089",
+        "ALG04V2_090"
+      ],
+      "new_evidence_units_max": 1,
+      "design_reason": "Test prospective cross-topic aggregation under the same canonical skill. CĐ04 final-answer evidence must remain distinguishable from existing CĐ07 final-output evidence; no old CĐ04 history is backfilled."
+    },
+    {
+      "canonical_skill_id": "hang-tu-dong-dang",
+      "role": "NEW_CANONICAL_SKILL",
+      "topics": [
+        "CĐ04"
+      ],
+      "new_item_ids": [
+        "ALG04V2_013",
+        "ALG04V2_014"
+      ],
+      "new_evidence_units_max": 1,
+      "design_reason": "Introduce recognition-only evidence while retaining clone-family de-dup."
+    },
+    {
+      "canonical_skill_id": "hieu-hai-binh-phuong",
+      "role": "NEW_SHARED_CANONICAL_SKILL",
+      "topics": [
+        "CĐ05",
+        "CĐ06"
+      ],
+      "new_item_ids": [
+        "ID05V1_021",
+        "ID05V1_022",
+        "ID05V1_081",
+        "ID05V1_087",
+        "ID05V1_120",
+        "FAC06V1_021",
+        "FAC06V1_022"
+      ],
+      "new_evidence_units_max": 5,
+      "design_reason": "Stress-test one canonical skill across two topics and three evidence classes: final-output, recognition-only and method-selection-only. Legacy secondary tags must not create second canonical events."
+    },
+    {
+      "canonical_skill_id": "nhan-tu-chung",
+      "role": "NEW_CANONICAL_SKILL",
+      "topics": [
+        "CĐ06"
+      ],
+      "new_item_ids": [
+        "FAC06V1_001",
+        "FAC06V1_002"
+      ],
+      "new_evidence_units_max": 1,
+      "design_reason": "Add a clean procedural final-output skill as a control for the multi-topic expansion."
+    },
+    {
+      "canonical_skill_id": "quy-dong-mau-thuc",
+      "role": "NEW_CANONICAL_SKILL",
+      "topics": [
+        "CĐ07"
+      ],
+      "new_item_ids": [
+        "RAT07V1_071",
+        "RAT07V1_072"
+      ],
+      "new_evidence_units_max": 1,
+      "design_reason": "Introduce method-selection-only evidence as a distinct descriptive evidence type, never equivalent to full execution."
+    }
+  ],
+  "prospective_aggregation_policy": {
+    "same_canonical_skill_across_topics": "ALLOW_FOR_NEW_CANONICAL_EVENTS_ONLY",
+    "historical_legacy_backfill": false,
+    "existing_v4_canonical_events": "PRESERVE_AND_MAY_DISPLAY_WITH_NEW_EVENTS",
+    "topic_field": "MUST_REMAIN_ON_EACH_EVENT_AND_VISIBLE_IN_DETAIL",
+    "evidence_class_field": "MUST_REMAIN_ON_EACH_EVENT_AND_VISIBLE_IN_DETAIL",
+    "cross_topic_clone_dedup": "PROHIBITED_UNLESS_EXPLICITLY_REVIEWED; current clone-family IDs remain topic-specific",
+    "unit_key": "clone_family when present; otherwise question_id"
+  },
+  "evidence_class_display_policy": {
+    "rationale": "Phase F intentionally mixes evidence classes. A raw total by canonical skill can hide the difference between recognition, method selection and final output.",
+    "learner_labels": {
+      "MCQ_RECOGNITION_ONLY": "Nhận biết",
+      "MCQ_METHOD_SELECTION_ONLY": "Chọn cách làm",
+      "MCQ_FINAL_OUTPUT_ONLY": "Kết quả cuối",
+      "MCQ_FINAL_ANSWER_ONLY": "Đáp án cuối"
+    },
+    "summary_rule": "Skill-level totals may be shown only with an evidence-class breakdown available in the same summary/detail. No weighted score or mastery interpretation.",
+    "equal_weight_mastery_score": false,
+    "mastery_threshold": null
+  },
+  "legacy_tag_boundary": {
+    "rule": "Canonical primary skill comes from the reviewed Phase D overlay, never from tag order or every legacy skill tag.",
+    "special_cases": [
+      {
+        "question_id": "ID05V1_021",
+        "legacy_skill_tags": [
+          "hieu-hai-binh-phuong",
+          "phan-tich-hdt"
+        ],
+        "canonical_primary": "hieu-hai-binh-phuong",
+        "second_event_for_phan_tich_hdt": false
+      },
+      {
+        "question_id": "ID05V1_081",
+        "legacy_skill_tags": [
+          "hieu-hai-binh-phuong",
+          "nhan-dang-hdt"
+        ],
+        "canonical_primary": "hieu-hai-binh-phuong",
+        "second_event_for_nhan_dang_hdt": false
+      },
+      {
+        "question_id": "ID05V1_120",
+        "legacy_skill_tags": [
+          "phan-tich-hdt",
+          "hieu-hai-binh-phuong"
+        ],
+        "canonical_primary": "hieu-hai-binh-phuong",
+        "note": "Canonical primary is deliberately NOT the first legacy tag.",
+        "second_event_for_phan_tich_hdt": false
+      }
+    ]
+  },
+  "implementation_after_review_only": {
+    "proposed_surface": "Separate opt-in Beta v5 multi-topic page; accepted Beta v4 remains unchanged.",
+    "storage": "Append to existing toan-thcs-canonical-evidence-v1 using the same event schema; do not create a competing canonical store.",
+    "pilot_version": "phase-f-beta-v5-r1-20260930",
+    "topic_labeling": "Dynamic per item; remove any CĐ07 hard-code from the new surface.",
+    "v4_history": "Read-only existing canonical events may participate in prospective skill history; no conversion of legacy stores.",
+    "runtime_enabled_now": false
+  },
+  "safety_boundaries": [
+    "No production runtime in this design PR",
+    "No mastery or readiness score",
+    "No historical backfill/regrade/migration",
+    "No Practice Engine interception",
+    "No PENDING/NO/Extension nodes",
+    "No automatic expansion beyond the 15 selected items",
+    "No exam-frequency or importance weighting inferred from authored-bank frequency"
+  ],
+  "review_questions": [
+    "Are all 15 mappings and clone families consistent with the already-PASS Phase D overlays?",
+    "Is prospective cross-topic aggregation for dieu-kien-xac-dinh and hieu-hai-binh-phuong academically defensible when topic and evidence_class remain explicit?",
+    "Should recognition-only and method-selection-only events be retained under the same canonical skill as final-output events if the UI always exposes evidence-class breakdown and never computes mastery?",
+    "Is append-only reuse of toan-thcs-canonical-evidence-v1 preferable to a new store, given the event schema is unchanged and v4 is already accepted?",
+    "Do any legacy secondary tags in the selected CĐ05 items warrant a second event? The proposal says no.",
+    "Is 15 items / 5 skills / max 9 new evidence units still appropriately bounded for Phase F?",
+    "What exact revisions, if any, are required before technical implementation?"
+  ]
+}

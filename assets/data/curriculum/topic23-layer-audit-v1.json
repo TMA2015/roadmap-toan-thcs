@@ -1,0 +1,108 @@
+{
+  "schema": "roadmap-prob23-layer-audit-v1",
+  "topic": "23-xac-suat",
+  "reviewed_mapping": "docs/assets/data/curriculum/kntt-grade{6,7,8,9}-map.json",
+  "primary_grades": [
+    6,
+    7,
+    8
+  ],
+  "grade9_note": "No PRIMARY topic23 relation in current KNTT Grade9 project overlay. This is a statement about this mapping, not a claim that every Grade9 probability-related exercise is outside the school curriculum.",
+  "core_skills": [
+    "phep-thu-ngau-nhien",
+    "bien-co",
+    "bien-co-chac-chan-khong-the",
+    "xac-suat-co-dien",
+    "kiem-tra-xac-suat",
+    "xac-suat-thuc-nghiem"
+  ],
+  "core_support_skills": [
+    "khong-gian-mau",
+    "bien-co-doi",
+    "dong-xu-nhieu-lan"
+  ],
+  "entrance10_skills": [
+    "xuc-xac-hai-lan",
+    "so-do-cay",
+    "nhieu-buoc-doc-lap",
+    "khong-hoan-lai"
+  ],
+  "grade_boundaries": {
+    "6": {
+      "lesson": "KNTT Bài 42–43",
+      "scored": [
+        "xac-suat-thuc-nghiem"
+      ],
+      "unscored_prerequisite": [
+        "ket-qua-co-the",
+        "su-kien-don-gian"
+      ],
+      "note": "These two grade6 proposed IDs do not exist in the 120-item manifest and must not be promoted to scored without approved migration."
+    },
+    "7": {
+      "lesson": "KNTT Bài 29–30",
+      "scored": [
+        "bien-co",
+        "bien-co-chac-chan-khong-the",
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat"
+      ]
+    },
+    "8": {
+      "lesson": "KNTT Bài 30–32",
+      "scored": [
+        "phep-thu-ngau-nhien",
+        "bien-co",
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat",
+        "xac-suat-thuc-nghiem"
+      ]
+    }
+  },
+  "classification_rule": "Whitelist at skill-level conservatively, keep advanced / multi-stage in separate non-gating layers. Existing item wording and mathematics require independent QA before Core readiness selection; this audit is not a full per-item academic review. Manual exceptions move repeated-coin outcomes, complement check, and union/intersection checks outside scored Core even when their broad skill is otherwise Core.",
+  "legacy_bank_count": 120,
+  "counts": {
+    "KNTT-Core": 52,
+    "Core-Support": 30,
+    "Entrance10": 38
+  },
+  "by_skill": {
+    "phep-thu-ngau-nhien": 9,
+    "khong-gian-mau": 9,
+    "bien-co": 9,
+    "xac-suat-thuc-nghiem": 10,
+    "bien-co-chac-chan-khong-the": 9,
+    "xac-suat-co-dien": 10,
+    "bien-co-doi": 9,
+    "dong-xu-nhieu-lan": 9,
+    "xuc-xac-hai-lan": 9,
+    "so-do-cay": 9,
+    "nhieu-buoc-doc-lap": 9,
+    "khong-hoan-lai": 10,
+    "kiem-tra-xac-suat": 9
+  },
+  "source_links": [
+    {
+      "name": "KNTT grade6 Bài42–43",
+      "url": "https://www.vietjack.com/toan-6-ket-noi/bai-42-ket-qua-co-the-va-su-kien-trong-tro-choi-thi-nghiem-ddkntt.jsp"
+    },
+    {
+      "name": "KNTT grade7 Bài29–30",
+      "url": "https://sgkvn.com/lop-7-10/ket-noi-tri-thuc-voi-cuoc-song-3/toan-7-tap-2-892.html"
+    }
+  ],
+  "next": "Golden Learn: 5 cards / 15 micro; only mapped grades, one scored skill per micro. Non-Core items remain practice only and never gate Core.",
+  "item_layer_overrides": {
+    "PRO23V1__024": "Core-Support",
+    "PRO23V1__025": "Core-Support",
+    "PRO23V1__114": "Core-Support",
+    "PRO23V1__119": "Entrance10"
+  },
+  "item_wording_fixes": [
+    "PRO23V1__043",
+    "PRO23V1__046",
+    "PRO23V1__047",
+    "PRO23V1__049",
+    "PRO23V1__050"
+  ]
+}

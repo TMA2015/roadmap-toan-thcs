@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Hình trụ với bán kính r và chiều cao h</title>
+  <desc id="desc">Hình trụ tròn xoay có hai đáy tròn song song; bán kính đáy ký hiệu r và chiều cao ký hiệu h.</desc>
+  <rect width="640" height="420" fill="white"/>
+  <g fill="#eef4fb" stroke="#1f2937" stroke-width="4">
+    <path d="M190 115 C190 70 450 70 450 115 L450 300 C450 345 190 345 190 300 Z" fill="#f8fafc"/>
+    <ellipse cx="320" cy="115" rx="130" ry="42" fill="#dbeafe"/>
+    <path d="M190 300 C190 345 450 345 450 300" fill="none"/>
+    <path d="M190 300 C190 255 450 255 450 300" fill="none" stroke-dasharray="10 8"/>
+  </g>
+  <g stroke="#2563eb" stroke-width="3.5" fill="none" stroke-linecap="round">
+    <path d="M320 115 L430 115"/>
+  </g>
+  <g stroke="#c2410c" stroke-width="3.5" fill="none" stroke-linecap="round">
+    <path d="M485 115 L485 300"/>
+    <path d="M475 115 L495 115 M475 300 L495 300"/>
+  </g>
+  <g fill="#111827" font-family="Arial, sans-serif" font-size="30" font-weight="700">
+    <text x="370" y="103" fill="#2563eb">r</text>
+    <text x="505" y="220" fill="#c2410c">h</text>
+  </g>
+</svg>

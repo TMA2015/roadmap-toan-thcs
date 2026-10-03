@@ -1,0 +1,84 @@
+{
+  "schema": "roadmap-geometry-cd18-pilot-addendum-v1",
+  "topic": "18-he-thuc-luong",
+  "figures": [
+    {
+      "id": "18-ti-so-sin-cos-v1",
+      "points": {
+        "A": [
+          160,
+          295
+        ],
+        "B": [
+          160,
+          105
+        ],
+        "C": [
+          465,
+          295
+        ]
+      },
+      "angle_at": "C",
+      "opposite": "AB",
+      "adjacent": "AC",
+      "hypotenuse": "BC",
+      "identities": [
+        "sin(alpha)=AB/BC",
+        "cos(alpha)=AC/BC"
+      ]
+    },
+    {
+      "id": "18-ti-so-tan-cot-v1",
+      "points": {
+        "A": [
+          160,
+          295
+        ],
+        "B": [
+          160,
+          105
+        ],
+        "C": [
+          465,
+          295
+        ]
+      },
+      "angle_at": "C",
+      "opposite": "AB",
+      "adjacent": "AC",
+      "hypotenuse": "BC",
+      "identities": [
+        "tan(alpha)=AB/AC",
+        "cot(alpha)=AC/AB"
+      ]
+    },
+    {
+      "id": "18-he-thuc-canh-hinh-chieu-v1",
+      "points": {
+        "A": [
+          244,
+          102
+        ],
+        "B": [
+          100,
+          294
+        ],
+        "C": [
+          500,
+          294
+        ],
+        "H": [
+          244,
+          294
+        ]
+      },
+      "right_angle_at": "A",
+      "altitude": "AH",
+      "foot_on_segment": "BC",
+      "identities": [
+        "AB^2=BH*BC",
+        "AC^2=CH*BC"
+      ]
+    }
+  ]
+}

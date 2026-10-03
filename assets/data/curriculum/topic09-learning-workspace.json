@@ -1,0 +1,268 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "09-he-phuong-trinh",
+  "title": "Hệ phương trình bậc nhất hai ẩn",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only Core cards contribute to readiness. Entrance10 and Challenge never gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "sys09-core-1",
+      "order": 1,
+      "title": "Phương trình hai ẩn & nghiệm hệ",
+      "kntt_lessons": [
+        "Lớp 9"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nghiem-pt-hai-an",
+        "nghiem-he",
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_001",
+        "SYS09MICRO_002",
+        "SYS09MICRO_003",
+        "SYS09MICRO_016"
+      ],
+      "teaching_copy": {
+        "key_idea": "Một phương trình bậc nhất hai ẩn \\(ax+by=c\\), \\(a,b\\) không đồng thời \\(0\\), có vô số cặp nghiệm thực. Nghiệm của **hệ** phải thỏa cả hai phương trình. Hai đường thẳng cắt nhau, song song phân biệt, hoặc trùng nhau lần lượt cho một nghiệm, vô nghiệm, hoặc vô số nghiệm.",
+        "worked_example": {
+          "problem": "Xét hệ \\(\\begin{cases}x+y=4\\\\2x-y=5\\end{cases}\\). Kiểm tra \\((3;1)\\) và kết luận số nghiệm.",
+          "solution": "Bước 1: Với \\((3;1)\\): \\(3+1=4\\) và \\(2\\cdot3-1=5\\), nên cặp này thỏa cả hai phương trình.\nBước 2: Cộng hai phương trình được \\(3x=9\\Rightarrow x=3\\), rồi \\(y=1\\).\nBước 3: Hai đường thẳng cắt nhau tại \\((3;1)\\), hệ có đúng một nghiệm."
+        },
+        "misconception": "Chỉ thử cặp số vào một phương trình, hoặc nhầm số nghiệm của một phương trình đơn với số nghiệm của hệ.",
+        "summary": "Một nghiệm của hệ là một cặp thỏa đồng thời cả hai phương trình.",
+        "source_reference": "docs/kien-thuc/09-he-phuong-trinh/index.md",
+        "source_sections": [
+          "3.1",
+          "3.2",
+          "3.3",
+          "3.5"
+        ],
+        "source_question_ids": [
+          "SYS09MICRO_001",
+          "SYS09MICRO_002",
+          "SYS09MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "sys09-core-2",
+      "order": 2,
+      "title": "Giải hệ bằng phương pháp thế",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "giai-he-the"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_004",
+        "SYS09MICRO_005",
+        "SYS09MICRO_006"
+      ],
+      "teaching_copy": {
+        "key_idea": "Phương pháp thế: từ một phương trình, rút ẩn thuận tiện (ưu tiên hệ số \\(1\\) hoặc \\(-1\\)), thay vào phương trình kia, giải một ẩn rồi tìm ẩn còn lại. Thử lại trong cả hai phương trình.",
+        "worked_example": {
+          "problem": "Giải hệ \\(\\begin{cases}x+y=7\\\\2x-y=2\\end{cases}\\) bằng phương pháp thế.",
+          "solution": "Bước 1: \\(y=7-x\\).\nBước 2: Thế vào phương trình hai: \\(2x-(7-x)=2\\Rightarrow3x=9\\Rightarrow x=3\\).\nBước 3: \\(y=7-3=4\\).\nBước 4: \\(3+4=7\\) và \\(2\\cdot3-4=2\\), nên nghiệm là \\((3;4)\\)."
+        },
+        "misconception": "Thế vào chính phương trình đã rút ẩn thay vì phương trình còn lại; bỏ ngoặc sai dấu.",
+        "summary": "Rút ẩn → thế vào phương trình còn lại → giải → tìm ẩn kia → thử lại.",
+        "source_reference": "docs/kien-thuc/09-he-phuong-trinh/index.md",
+        "source_sections": [
+          "3.4",
+          "Dạng 2"
+        ],
+        "source_question_ids": [
+          "SYS09MICRO_004",
+          "SYS09MICRO_005",
+          "SYS09MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "sys09-core-3",
+      "order": 3,
+      "title": "Cộng đại số & biến đổi trước giải",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "giai-he-cong",
+        "bien-doi-truoc-giai"
+      ],
+      "prerequisites": [
+        "pt-bac-nhat"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_007",
+        "SYS09MICRO_008",
+        "SYS09MICRO_009"
+      ],
+      "teaching_copy": {
+        "key_idea": "Phương pháp cộng đại số tạo hệ số đối nhau để cộng và khử một ẩn; có thể nhân **toàn bộ hai vế** của một phương trình với số khác \\(0\\) trước đó. Nếu phương trình có hệ số phân số, nhân hai vế với mẫu chung là số khác \\(0\\) trước khi giải.",
+        "worked_example": {
+          "problem": "Giải \\(\\begin{cases}2x+3y=12\\\\4x-3y=6\\end{cases}\\) bằng cộng đại số.",
+          "solution": "Bước 1: Cộng hai phương trình để khử \\(y\\): \\(6x=18\\Rightarrow x=3\\).\nBước 2: Thay vào phương trình đầu: \\(6+3y=12\\Rightarrow y=2\\).\nBước 3: Kiểm tra \\(4\\cdot3-3\\cdot2=6\\), nghiệm \\((3;2)\\)."
+        },
+        "misconception": "Cộng vế trái nhưng quên cộng vế phải hoặc nhân hệ số mà không nhân toàn bộ phương trình.",
+        "summary": "Làm hệ số một ẩn đối nhau, cộng đủ hai vế, giải và kiểm tra.",
+        "source_reference": "docs/kien-thuc/09-he-phuong-trinh/index.md",
+        "source_sections": [
+          "3.3A",
+          "3.4",
+          "Dạng 3",
+          "Dạng 5"
+        ],
+        "source_question_ids": [
+          "SYS09MICRO_007",
+          "SYS09MICRO_008",
+          "SYS09MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "sys09-core-4",
+      "order": 4,
+      "title": "Chọn phương pháp & kiểm tra nghiệm",
+      "kntt_lessons": [
+        "Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "chon-phuong-phap",
+        "kiem-tra-nghiem-he",
+        "so-nghiem-he"
+      ],
+      "prerequisites": [
+        "giai-he-the",
+        "giai-he-cong"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_010",
+        "SYS09MICRO_011",
+        "SYS09MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Có hệ số \\(1\\) dễ rút ẩn thì cân nhắc thế; có hai hệ số đối nhau/bằng nhau hoặc bội nhỏ thì dùng cộng đại số. Nghiệm tìm được phải được thay vào **cả hai** phương trình. Khi hai đường thẳng song song/trùng, cần kết luận số nghiệm đúng.",
+        "worked_example": {
+          "problem": "Chọn phương pháp và giải \\(\\begin{cases}y=3x-1\\\\x+y=7\\end{cases}\\).",
+          "solution": "Bước 1: Chọn thế vì \\(y\\) đã biểu diễn theo \\(x\\).\nBước 2: \\(x+3x-1=7\\Rightarrow4x=8\\Rightarrow x=2\\).\nBước 3: \\(y=3\\cdot2-1=5\\); kiểm tra \\(2+5=7\\). Vậy hệ có nghiệm \\((2;5)\\)."
+        },
+        "misconception": "Chọn cách giải dài không cần thiết hoặc chỉ kiểm tra một trong hai phương trình.",
+        "summary": "Chọn cách ngắn, nhưng vẫn kiểm tra nghiệm trong toàn bộ hệ.",
+        "source_reference": "docs/kien-thuc/09-he-phuong-trinh/index.md",
+        "source_sections": [
+          "3.3",
+          "3.4",
+          "3.5"
+        ],
+        "source_question_ids": [
+          "SYS09MICRO_010",
+          "SYS09MICRO_011",
+          "SYS09MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "sys09-core-5",
+      "order": 5,
+      "title": "Lập hệ từ bài toán",
+      "kntt_lessons": [
+        "Ứng dụng Core"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "lap-he-bai-toan",
+        "bai-toan-so",
+        "chuyen-dong-he",
+        "nang-suat-he"
+      ],
+      "prerequisites": [
+        "giai-he-the",
+        "giai-he-cong"
+      ],
+      "micro_practice": [
+        "SYS09MICRO_013",
+        "SYS09MICRO_014",
+        "SYS09MICRO_015",
+        "SYS09MICRO_017"
+      ],
+      "teaching_copy": {
+        "key_idea": "Lập hệ từ bài toán: đặt hai ẩn với đơn vị và điều kiện, lập hai phương trình độc lập từ hai dữ kiện, giải và đối chiếu điều kiện. Với bài năng suất không đổi, sản lượng bằng năng suất nhân thời gian; với chuyển động đều, quãng đường bằng vận tốc nhân thời gian.",
+        "worked_example": {
+          "problem": "Đội A và B mỗi giờ làm lần lượt \\(x,y\\) sản phẩm. Cùng làm 1 giờ được 50 sản phẩm; A làm 3 giờ và B làm 1 giờ được 90 sản phẩm. Tìm năng suất từng đội.",
+          "solution": "Bước 1: Đặt \\(x,y>0\\) (sản phẩm/giờ), giả sử năng suất mỗi đội không đổi.\nBước 2: Lập hệ \\(\\begin{cases}x+y=50\\\\3x+y=90\\end{cases}\\).\nBước 3: Lấy phương trình hai trừ phương trình một: \\(2x=40\\Rightarrow x=20\\), \\(y=30\\).\nBước 4: Thử \\(20+30=50\\), \\(3\\cdot20+30=90\\). Vậy A 20, B 30 sản phẩm/giờ."
+        },
+        "misconception": "Nhầm năng suất với sản lượng, quên nhân theo thời gian hoặc lập hai phương trình diễn đạt cùng một dữ kiện.",
+        "summary": "Sản lượng = năng suất × thời gian; hai dữ kiện → hai phương trình → giải và đối chiếu.",
+        "source_reference": "docs/kien-thuc/09-he-phuong-trinh/index.md",
+        "source_sections": [
+          "Dạng 8"
+        ],
+        "source_question_ids": [
+          "SYS09MICRO_013",
+          "SYS09MICRO_014",
+          "SYS09MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "id": "sys09-ent10-1",
+      "layer": "Entrance10",
+      "title": "Hệ có tham số",
+      "gates_core": false
+    },
+    {
+      "id": "sys09-ent10-2",
+      "layer": "Entrance10",
+      "title": "Bài toán thực tế nhiều bước",
+      "gates_core": false
+    },
+    {
+      "id": "sys09-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Hệ biến đổi cấu trúc nâng cao",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/09-he-phuong-trinh-micro-v1.json",
+  "observed_signal_policy": {
+    "rule": "Signals are observations only; they never create causal remediation without sufficient learner evidence and a reviewed rule."
+  },
+  "qa_notes": [
+    "tham-so-he is excluded from Core readiness.",
+    "Geometric interpretation of a system is kept as Core Grade 9 knowledge.",
+    "Card 4 now declares the original SYS09MICRO_012 primary assessed skill so-nghiem-he. This is metadata reconciliation only: original question ID, card ID, key, attempts, and three source-locked lecture question IDs remain unchanged.",
+    "Dedicated coverage items are appended after the three original base/trap/apply items without changing R2/previously reviewed teaching content or learner-evidence semantics; each item assesses exactly one declared primary skill."
+  ]
+}

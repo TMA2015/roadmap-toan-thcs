@@ -1,0 +1,2302 @@
+{
+  "version": "1.0.169",
+  "updated": "2026-10-03",
+  "schema": "roadmap-ai-collaboration-context-v1",
+  "project": {
+    "name": "Self-Learning Math",
+    "public_site": "https://tma2015.github.io/roadmap-toan-thcs/",
+    "repository": "TMA2015/roadmap-toan-thcs",
+    "purpose": "Hệ thống tự học Toán THCS theo mạch kiến thức dọc xuyên suốt lớp 6-9; 25 chuyên đề là Vertical Spine, KNTT là lớp mapping/định vị, đồng thời hỗ trợ luyện tập, ôn thi vào 10 và mở rộng Challenge/thi chuyên.",
+    "legacy_technical_name": "Roadmap Toán THCS",
+    "product_family": "G Learning"
+  },
+  "source_of_truth": [
+    {
+      "name": "Current Project Handoff — state and next actions",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/current-handoff/"
+    },
+    {
+      "name": "Master Plan v1.1.1",
+      "url": "https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md"
+    },
+    {
+      "name": "Triết lý mạch kiến thức dọc",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/triet-ly-mach-kien-thuc-doc/"
+    },
+    {
+      "name": "Blueprint 25 chuyên đề",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/blueprint-25-chuyen-de/"
+    },
+    {
+      "name": "Ma trận kiến thức",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/ma-tran-kien-thuc/"
+    },
+    {
+      "name": "Chuẩn KNTT và các tầng học",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/chuan-kntt-va-cac-tang-hoc/"
+    },
+    {
+      "name": "Quy trình biên soạn và QA",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/quy-trinh-bien-soan-noi-dung/"
+    },
+    {
+      "name": "Chuẩn ngân hàng câu hỏi",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/chuan-ngan-hang-cau-hoi/"
+    },
+    {
+      "name": "Thư viện hình và QA",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/qa-diagram-practice/"
+    },
+    {
+      "name": "Mapping KNTT lớp 6 đã review",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-6-mapping/"
+    },
+    {
+      "name": "Mapping KNTT lớp 7 đã review",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-7-mapping/"
+    },
+    {
+      "name": "Mapping KNTT lớp 8 đã review",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-8-mapping/"
+    },
+    {
+      "name": "Mapping KNTT lớp 9 đã review",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/kntt-lop-9-mapping/"
+    },
+    {
+      "name": "Knowledge Graph v1",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/roadmap/knowledge-graph/"
+    },
+    {
+      "name": "Golden Template Học – Luyện – Tự kiểm tra",
+      "url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/golden-template-hoc-luyen-kiem-tra/"
+    }
+  ],
+  "curriculum": {
+    "primary_textbook": "Kết nối tri thức",
+    "layers": [
+      {
+        "id": "KNTT-Core",
+        "required": true,
+        "description": "Kiến thức và kỹ năng cốt lõi."
+      },
+      {
+        "id": "Entrance10",
+        "required": false,
+        "description": "Ôn thi vào 10 dựa trên Core và dữ liệu đề thật."
+      },
+      {
+        "id": "Specialized-Challenge",
+        "required": false,
+        "description": "Mở rộng cho học sinh khá giỏi/thi chuyên; không dùng để khóa Core."
+      }
+    ]
+  },
+  "architecture": {
+    "roadmap_topics": 25,
+    "practice_engine": "v2",
+    "adaptive_features": [
+      "skill tags",
+      "weak-skill practice",
+      "localStorage progress",
+      "multi-level hints",
+      "hint-usage tracking",
+      "knowledge-graph remediation recommender",
+      "remediation recovery events",
+      "post-remediation target recheck"
+    ],
+    "content_pipeline": "content-staging -> academic QA -> technical QA -> visual QA -> approved -> published",
+    "geometry_policy": "SVG-first from verified diagram spec; semantic QA required for core geometric relations.",
+    "vertical_spine": {
+      "primary": true,
+      "topics": 25,
+      "data_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/vertical-spine.json",
+      "rule": "Grade/book mappings are overlays on the same knowledge graph, not separate hierarchies."
+    },
+    "mastery_policy": "soft mastery: diagnose weak prerequisites, recommend remediation, allow continued learning, and use accuracy + hint usage + history; no absolute 100% hard gate.",
+    "knowledge_graph": {
+      "version": 1.1,
+      "data_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/knowledge-graph-v1.json",
+      "policy": "independently reviewed; PREREQUISITE separated from SEQUENCE/CROSS_LINK/REMEDIATION; soft mastery only"
+    },
+    "ai_tutor": {
+      "policy_version": "1.0",
+      "provider_neutral": true,
+      "policy_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/ai/tutor-policy-v1.json",
+      "rule": "LLM explains/guides; curriculum layer, learner evidence, reviewed graph and remediation engine remain source of truth.",
+      "context_schema": "roadmap-tutor-context-v1",
+      "runtime": "Provider-neutral Tutor contract with live user-initiated Firebase AI Logic Gemini transport, reCAPTCHA Enterprise App Check enforced on the production origin; mock/local fallback retained; safe Markdown and MathJax renderer.",
+      "privacy": "minimum relevant evidence only; no full localStorage/provider memory",
+      "reading_scope": "Main topic lessons and Topic25 classic-problem/anchor deep-reading pages; excludes practice, readiness/self-check, timed exams and answer keys."
+    },
+    "learning_flow": {
+      "version": "1.0",
+      "pattern": "Learn Workspace -> Practice Room -> Core Readiness Check",
+      "rule": "Micro-practice and Practice Engine are formative; Readiness Check is after-submit assessment evidence; no hard gate."
+    },
+    "assessment_engine": {
+      "version": "v1",
+      "schema": "roadmap-readiness-assessment-v1",
+      "storage": "toan-thcs-assessment-v1",
+      "policy": "after-submit only; no hints/Tutor; separate from practice evidence; READY is not Mastered"
+    },
+    "golden_template": {
+      "version": "1.0",
+      "status": "FROZEN",
+      "contract": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/golden-template-v1.json",
+      "pilot": "07-phan-thuc-dai-so",
+      "evidence": "automated QA + successful deploy + real iPad UX validation",
+      "maintenance_revision": "1.0.1"
+    },
+    "geometry_architecture": {
+      "version": "1.0",
+      "status": "FROZEN-V1",
+      "contract": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/geometry-architecture-v1.json",
+      "freeze_evidence": "content-staging/reviews/GEO-ARCH-V1-FREEZE-AUDIT-001.json"
+    }
+  },
+  "roles": {
+    "project_owner": {
+      "lead_on": [
+        "product priorities",
+        "learning experience goals",
+        "final product direction"
+      ],
+      "not_expected_to_do": [
+        "technical QA",
+        "manual GitHub integration",
+        "mathematical cross-checking between AIs"
+      ]
+    },
+    "gemini": {
+      "lead_on": [
+        "pedagogical critique",
+        "academic drafting",
+        "examples and exercise generation",
+        "independent solution of difficult math problems"
+      ],
+      "review_on": [
+        "curriculum mapping",
+        "geometry reasoning",
+        "student-facing explanations"
+      ],
+      "constraints": [
+        "Do not assume repository state that is not in context.",
+        "Do not mix Specialized-Challenge into KNTT-Core.",
+        "Mark uncertainty explicitly."
+      ]
+    },
+    "chatgpt": {
+      "lead_on": [
+        "repository architecture",
+        "GitHub integration",
+        "schemas and metadata",
+        "technical QA",
+        "practice engine",
+        "SVG generation from verified specs",
+        "release and deploy"
+      ],
+      "review_on": [
+        "academic correctness",
+        "pedagogical consistency",
+        "hard-problem independent verification"
+      ],
+      "constraints": [
+        "Do not self-certify high-risk geometry or advanced proofs without an independent check when feasible.",
+        "Preserve backward compatibility unless migration is deliberate."
+      ]
+    }
+  },
+  "dual_review_required_for": [
+    "multi-step geometry proofs",
+    "specialized/high-achievement problems",
+    "solutions with non-obvious theorem use",
+    "canonical answer keys reused across the bank",
+    "areas where prior AI answers were unstable or conflicting"
+  ],
+  "current_state": {
+    "roadmap": "25/25 topic pages exist",
+    "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
+    "content_staging": "available",
+    "geometry_qa": "available with benchmark and SVG-first policy",
+    "next_priority": "CT09 P1-A is OWNER QA PASS on desktop and iPad and is closed. CĐ22 is being aligned to the same shared learner workspace as the other standard topics while preserving its optional THPT-Bridge status and without inventing a Core journey. After CĐ22 exact-head CI/deploy verification, start CT09 P1-B written anchors and hint/rubric/remediation implementation.",
+    "grade6_mapping": "reviewed and integrated as curriculum metadata",
+    "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
+    "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
+    "grade9_mapping": "reviewed and integrated as final KNTT grade overlay",
+    "kntt_grade_mapping": "Grades 6-9 complete",
+    "knowledge_graph": "v1.1 independently reviewed",
+    "remediation_recommender": "MVP implemented locally from learner evidence + Knowledge Graph v1.1; minimum-evidence safeguards enabled",
+    "remediation_loop": "targeted remediation sessions implemented: 6-question local session or cross-topic focus navigation",
+    "recovery_measurement": "tracks prerequisite before/after remediation and later target-skill recheck without claiming causality from one session",
+    "ai_tutor_contract": "v1 provider-neutral policy defined; not yet connected to an AI provider",
+    "ai_tutor_adapter": "LIVE: Firebase AI Logic Gemini 3.5 Flash-Lite through App Check on production origin; transport remains provider-neutral, user click required, no private provider key in repo or browser storage. Mock/local adapter remains available for QA.",
+    "ai_tutor_ui": "Practice: four learner-selected help levels with assisted evidence tracking. Reading: floating approved student-avatar Tutor on main lesson and Topic25 anchor/library pages with selected text/active heading; not on self-checks, timed exam pages or answer keys. Safe rich-math rendering; no auto inference.",
+    "ui_ux_pilot": "CĐ07 responsive Learning Card grid fixed to size from available content width rather than viewport width; learner-facing technical labels simplified.",
+    "micro_practice_evidence": "Observed signals are stored separately from attempted/correct counters. signal_weight 1–2 is salience only and cannot independently create weak-skill/remediation conclusions.",
+    "golden_template": "Frozen v1.0 with maintenance hardening v1.0.1: MathJax details re-typeset, touch-safe targets, bottom CTAs and JSON control-character QA. Frozen invariants unchanged.",
+    "golden_rollout": "CĐ04–CĐ12 DEPLOYED-PASS under Golden Template. CĐ11 adds source-mapped căn bậc ba with 12 real Practice Bank items (120→132); CĐ12 keeps parameter/extended Viète applications outside Core readiness pending item-level review. CI, strict MkDocs build and Pages deploy pass.",
+    "geometry_architecture": "v1 FROZEN after Gemini architecture PASS, coverage 124/124, BENCH PASS, successful CI and owner-reported cross-device geometry flow acceptance (explicit iPhone/iPad). Automatic geometry renderer remains separate scope.",
+    "geometry_rollout": "CĐ13–CĐ20 DEPLOYED-PASS; CĐ19–CĐ20 Gemini batch review PASS with corrections []. Geometry exact-ID coverage 124/124, 0 gaps; CĐ19 bank 147 and CĐ20 bank 195.",
+    "geometry_visuals": "Main-lesson SVG refresh CĐ13–20 delivered: 33 internal diagrams; CĐ19–20 folder-path repair PR #84 and CI run 36105090022 PASS. Older diagrams retained for rollback; CĐ21–25 internal diagrams retained. Owner device visual QA of new CĐ13–17/19–20 pending; reusable renderer still open. Owner accepted updated figures on 2026-09-25.",
+    "statistics_rollout": {
+      "topic": "21-thong-ke",
+      "practice_bank_count": 132,
+      "learn_card_count": 5,
+      "micro_practice_count": 15,
+      "learn_integration": "STA21-LEARN-CHATGPT-INTEGRATION-001",
+      "readiness": "DEPLOYED_CI_PASS_OWNER_PC_IPHONE_ACCEPTED",
+      "language_standard": "docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md",
+      "responsive_fix": "STA21-UX-LANGUAGE-001",
+      "readiness_item_count": 12,
+      "readiness_skill_count": 9,
+      "readiness_id": "STA21-CORE-READY-V1",
+      "readiness_review": "STA21-READY-CHATGPT-INTEGRATION-001",
+      "owner_device_qa": "PC and iPhone confirmed by user 2026-09-25"
+    },
+    "statistics_topic22": {
+      "bank_count": 120,
+      "primary_layer": "THPT-Bridge",
+      "grade4_average_prerequisite": true,
+      "grade6_9_primary_map_refs": 0,
+      "readiness_eligible": false,
+      "source_review": "STAT22-MAP-CHATGPT-REVIEW-001",
+      "progression_hard_gate": false,
+      "optional_learning": "PENDING_SEPARATE_BRIDGE_CARDS",
+      "question_meta_layer_label": "SHOW_THPT_BRIDGE"
+    },
+    "probability_topic23": {
+      "primary_grade_scope": [
+        6,
+        7,
+        8
+      ],
+      "existing_bank_count": 120,
+      "practice_layer_counts": {
+        "KNTT-Core": 52,
+        "Core-Support": 30,
+        "Entrance10": 38
+      },
+      "layer_audit": "docs/assets/data/curriculum/topic23-layer-audit-v1.json",
+      "learning_cards": "DEPLOYED",
+      "micro_count_target": 15,
+      "readiness": "DEPLOYED_CI_PASS_OWNER_QA_NOT_RECORDED",
+      "grade9_mapping": "NO_PRIMARY_REF_CURRENT_OVERLAY",
+      "learning_card_count": 5,
+      "micro_count": 15,
+      "learn_review": "PROB23-LEARN-CHATGPT-INTEGRATION-001",
+      "readiness_id": "PROB23-CORE-READY-V1",
+      "readiness_item_count": 12,
+      "readiness_skill_count": 5
+    },
+    "topic24": {
+      "learning_card_count": 5,
+      "micro_practice_count": 15,
+      "cross_topic_learning": "DEPLOYED_CI_PASS"
+    },
+    "topic25": {
+      "learning_card_count": 5,
+      "micro_practice_count": 15,
+      "academic_lanes": [
+        "academic practice by strand",
+        "classic anchor problems",
+        "three complete written mock exams",
+        "separate exam skills"
+      ],
+      "anchor_catalog_count": 11,
+      "representative_anchor_count": 10,
+      "expanded_anchor_ids": [
+        "A25-004",
+        "A25-006",
+        "A25-007",
+        "A25-008",
+        "A25-009",
+        "A25-010",
+        "A25-011"
+      ],
+      "original_mock_exam_count": 3,
+      "mock_duration_minutes": 120,
+      "mock_total_points": 10,
+      "exam_engine": "localStorage-backed timed written exam with learner self-marked rubric and gap links; not AI/teacher graded",
+      "release": "PR #122 CI run 36233772681 success, Deploy MkDocs run 36233855045 success. Previous PRs #104 and #109–113 remain history.",
+      "independent_math_review": "DOCUMENTED_COMPLETE_R2_R3: Gemini R2 reported APPROVE with 17/23 source paths listed (snapshot 04b275cb). Targeted Gemini R3 APPROVE with all nine named target files PASS (six omitted R2 source files + three new deep A25-006/007/010) at source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536. R3 lists only five of eight context files; do not claim eight context files independently reviewed in R3. No critical corrections; findings are AI cross-review not formal exam certification. See review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md.",
+      "learning_ai": "contextual Tutor on Topic25 main and deep-reading pages, not assessment/answer pages",
+      "deep_solution_new_release": "DEPLOYED: PR #122 merge 2865e1e82749484300244234e95cad8b6ca05f7a; academic/source QA, browser and MkDocs deploy success. A25-006/007/010 new deep pages; source original unchanged, Gemini R2 did NOT independently review these post-snapshot pages. Subsequent direct Gemini R3 review confirmed PASS for 006/007/010 at snapshot 5f74d7c; metadata records R3 separately from historical R2.",
+      "gemini_review_packet": "TOPIC25-GEMINI-TARGETED-R3-20260926 (R2 historical limited list remains archived)"
+    },
+    "grade6_topic02_pilot": "DEPLOYED_CI_BROWSER_PASS_OWNER_DEVICE_QA_PENDING: PR #120, 5 grade6 cards, 15 micro, 10 independent readiness; legacy 120-bank and written test preserved; class7 content excluded from grade6 readiness. Technical CI/build/deploy passed; owner real-device acceptance separate OPEN task G6-T02-OWNER-UX-001.",
+    "grade6_topic03_next": "OPEN G6-T03-SCOPE-001: grade6 B31 tỉ số/phần trăm vs grade7 B20–23 tỉ lệ thức, thuận/nghịch; current 120-bank lacks grade metadata, needs scoped next batch.",
+    "topic25_followup": "CLOSED: Gemini Targeted R3 delivered 9/9 target PASS (six omitted R2 + three new deep pages) with zero critical corrections, source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536. Five of eight optional context source paths explicitly listed; figure decimal-coordinate rounding qualified. See review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md. No pending source-coverage task for CĐ25 in current review cycle.",
+    "standalone_core_rollout": "CĐ02 and CĐ04–21 and CĐ23–25 have dedicated learning routes. CĐ03 has no approved card/micro; CĐ22 THPT bridge no compulsory Core. CĐ24 Core-Support and CĐ25 Entrance10. PR #178 owner device acceptance pending.",
+    "canonical_handoff": "docs/collaboration/current-handoff.md",
+    "canonical_evidence_beta_v4": {
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PASS",
+      "audit_pr": 202,
+      "implementation_pr": 203,
+      "tested_head": "175b12499ed6df3155af4d83a33a7afa6d8c4043",
+      "notebooklm_verdict": "PASS_12_OF_12_ZERO_REVISIONS",
+      "scope": "CĐ07; 12 items; 3 canonical skills; max 7 independent evidence units",
+      "storage_key": "toan-thcs-canonical-evidence-v1",
+      "immutable_old_stores": [
+        "toan-thcs-practice-v1",
+        "toan-thcs-assessment-v1",
+        "toan-thcs-assessment-v2"
+      ],
+      "roadmap_pr_quality_run": 36681119202,
+      "skill_assessment_qa_run": 36681119234,
+      "branding_qa_run": 36681119312,
+      "owner_device_qa": "PASS",
+      "production_release": true,
+      "release_head": "83bcd263f36c45f007bcaf67f19c19f272541f77",
+      "merge_commit": "5873253c3f3dad1d9066a61e408ff0bc760b5a74",
+      "deploy_run": 36681408115,
+      "deploy_status": "SUCCESS",
+      "production_url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/thu-nghiem-bang-chung-ky-nang-v4/",
+      "owner_qa_date": "2026-09-30",
+      "owner_qa_evidence": "six production screenshots from a completed 12-item session",
+      "owner_qa_observed": [
+        "submitted questions locked read-only with navigation",
+        "first unseen evidence unit behavior visible",
+        "clone-family repeat does not add independent unit",
+        "supporting skill remains metadata-only",
+        "12 attempts summarize to max 7 independent units",
+        "descriptive summary avoids mastery/readiness claims"
+      ],
+      "ux_polish_candidate": "Replace or progressively disclose technical learner-facing terms such as metadata and independent evidence unit without changing semantics.",
+      "student_copy_polish": {
+        "status": "RELEASED_QA_PASS",
+        "pr": 207,
+        "merge_commit": "197c990903d2be6f7df2d49483a24b4c75038c92",
+        "deploy_run": 36685589573,
+        "deploy_status": "SUCCESS",
+        "semantics_changed": false,
+        "changes": [
+          "student-friendly evidence wording",
+          "raw clone-family ID hidden from learner card",
+          "technical details moved to collapsed parent/QA note"
+        ]
+      }
+    },
+    "canonical_evidence_phase_f": {
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PASS",
+      "review_pr": 208,
+      "packet_id": "MATH-SKILL-PHASE-F-EXPANSION-R1-20260930",
+      "notebooklm_source_blob": "70d044f1de98f5b283a3e54fdecfd07fb25d82bd",
+      "manifest_blob": "5a5b339d7372068dd692b9a03dc1277758a6b6d5",
+      "scope": "15 new items; CĐ04–07; 5 canonical skills; max 9 new independent evidence units",
+      "runtime_enabled": false,
+      "implementation_pr": 210,
+      "notebooklm_verdict": "PASS_15_OF_15_ZERO_REVISIONS",
+      "tested_head": "1614bf89d8f85a8c40f950fefea7501a4c5cc9ea",
+      "store_key": "toan-thcs-canonical-evidence-v1",
+      "roadmap_pr_quality_run": 36690938386,
+      "skill_assessment_qa_run": 36690938362,
+      "branding_qa_run": 36690938341,
+      "browser_artifact_id": 11085062148,
+      "owner_release_decision": "PENDING",
+      "production_release": true,
+      "release_head": "5017ffc134b9bd076771fa5496d8fb23149fb20b",
+      "merge_commit": "371b4980586ae684729060ae1a4c8dc1443cb45d",
+      "deploy_run": 36691324129,
+      "deploy_status": "SUCCESS",
+      "production_url": "https://tma2015.github.io/roadmap-toan-thcs/huong-dan/thu-nghiem-bang-chung-da-chuyen-de-v5/",
+      "owner_device_qa": "PASS",
+      "owner_qa_date": "2026-09-30",
+      "owner_qa_evidence": "seven production screenshots from a completed 15-item Beta v5 session in the same browser/profile as prior Beta v4, opened in a new page",
+      "owner_qa_observed": [
+        "dynamic CĐ04–CĐ07 topic labels",
+        "ID05V1_120 primary hieu-hai-binh-phuong despite legacy tag order",
+        "same hieu-hai-binh-phuong canonical skill across CĐ05 and CĐ06",
+        "clone-family repeat does not add independent unit",
+        "15-item session reports exactly 9 new independent checks",
+        "canonical history shows 27 events = prior 12 Beta v4 + current 15 Beta v5",
+        "no mastery/readiness claim"
+      ]
+    },
+    "canonical_evidence_phase_g": {
+      "status": "G2_PRODUCTION_RELEASED_OWNER_QA_PASS",
+      "audit_pr": 214,
+      "packet_id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-R1-20260930",
+      "source_blob": "1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1",
+      "design_blob": "9302ba28e1c9bf506a290b7b05f6defee2d38e92",
+      "notebooklm_verdict": "PASS_ZERO_REVISIONS_9_OF_9_ARCHITECTURE_QUESTIONS",
+      "authorized_scope": "G1 shadow canary only: 27 Beta-proven items, 7 skills, max 16 skill/topic-scoped units",
+      "proposed_store": "toan-thcs-canonical-evidence-v2",
+      "beta_v1_policy": "freeze read-only provenance; no migration/backfill",
+      "production_release": true,
+      "g2_g3_authorized": false,
+      "implementation_pr": 217,
+      "tested_head": "540be8b17ffb12dd26c8dee459ff8874a57156b5",
+      "g1_scope": "27 Beta-proven Practice items; 7 skills; max 16 skill/topic units; shadow capture only",
+      "production_store": "toan-thcs-canonical-evidence-v2",
+      "roadmap_pr_quality_run": 36698929683,
+      "skill_assessment_qa_run": 36698929574,
+      "branding_qa_run": 36698929696,
+      "browser_artifact_id": 11089467337,
+      "owner_release_decision": "PENDING",
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-09-30",
+      "release_precondition": "reconcile with latest main and exact-head Roadmap + Skill assessment + Branding QA SUCCESS before merge",
+      "release_scope": "exact 27 Beta-proven Practice items; 7 canonical skills; max 16 skill/topic units; shadow capture only",
+      "owner_production_qa": "PASS",
+      "exact_release_head": "3473f4383df990da04404a24659732e38c5422c6",
+      "production_merge": "74b38fd2361c11ebc76eee743bf505e938bc48b0",
+      "deploy_run": 36701320498,
+      "deploy_conclusion": "SUCCESS",
+      "owner_qa_evidence": {
+        "device": "desktop browser",
+        "debug_policy_ready": true,
+        "debug_policy_error": null,
+        "debug_store_key": "toan-thcs-canonical-evidence-v2",
+        "debug_recent_events": 3,
+        "debug_seen_questions": 3,
+        "debug_independent_units": 3,
+        "last_capture": {
+          "captured": true,
+          "question_id": "RAT07V1_055",
+          "canonical_skill_id": "rut-gon-phan-thuc",
+          "independent_evidence": true,
+          "independent_reason": "first_unseen_unit"
+        }
+      },
+      "owner_qa_date": "2026-09-30",
+      "g1_complete": true,
+      "g2_authorized": true,
+      "g3_authorized": false,
+      "g2_review_pr": 223,
+      "g2_packet_id": "MATH-CANONICAL-EVIDENCE-G2-PROVEN-SKILLS-R1-20260930",
+      "g2_source_blob": "95b32fa4b5ebebdc88886cc9725b7b90ae991e46",
+      "g2_notebooklm_verdict": "PASS_74_OF_74_8_OF_8",
+      "g2_scope": "101 Practice items total = 27 existing G1 + 74 G2 delta; same 7 proven canonical skills; max 23 topic-scoped independent units; CĐ04–07; shadow capture only",
+      "g2_implementation_pr": 224,
+      "g2_exact_tested_head": "56892b0d5b8a9791e99e48e4f9022412097e764b",
+      "g2_roadmap_pr_quality_run": 36708260947,
+      "g2_browser_artifact_id": 11093235811,
+      "g2_browser_artifact_digest": "sha256:e1a971357be742e5f3da39c93fea0326e199152902c96fc169c8506b960eb916",
+      "g2_production_merge": "3c235e4e23ed6adf33fbba8ff7f01737b709fac7",
+      "g2_deploy_run": 36713507743,
+      "g2_deploy_conclusion": "SUCCESS",
+      "g2_owner_production_qa": "PASS",
+      "g2_release_date": "2026-09-30",
+      "mastery_readiness_remediation": "OFF",
+      "g2_complete": true,
+      "g2_owner_qa_date": "2026-09-30",
+      "g2_owner_qa_evidence": {
+        "device": "desktop browser",
+        "build": "canonical-evidence-g2-proven-skills-20260930",
+        "policy_ready": true,
+        "policy_error": null,
+        "store_key": "toan-thcs-canonical-evidence-v2",
+        "observed_recent_events": 5,
+        "observed_seen_questions": 5,
+        "observed_independent_units": 5,
+        "positive_capture": {
+          "question_id": "RAT07V1_115",
+          "scope": "G1_EXISTING_ACTIVE",
+          "canonical_skill_id": "tinh-gia-tri-phan-thuc",
+          "independent_evidence": true,
+          "independent_reason": "first_unseen_unit"
+        },
+        "negative_boundary": {
+          "question_id": "RAT07V1_114",
+          "expected_scope": "OUTSIDE_G2_POLICY",
+          "captured": false,
+          "reason": "not_in_g2_policy"
+        },
+        "delta_positive_capture_basis": "exact-head automated real-Practice browser QA on release HEAD 56892b0d5b8a9791e99e48e4f9022412097e764b"
+      }
+    },
+    "help_disclosure_toggle": {
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
+      "task_id": "MATH-HELP-DISCLOSURE-TOGGLE-001",
+      "implementation_pr": 227,
+      "exact_tested_head": "e55667c5a0db5b034e832feeef1d95334d63aa01",
+      "roadmap_pr_quality_run": 36719189942,
+      "production_merge": "fb571ec78cfaf56f82d7dd81b719481dc4296e2b",
+      "deploy_run": 36719709094,
+      "deploy_conclusion": "SUCCESS",
+      "semantics_changed": false,
+      "verified_qa": [
+        "Practice help opens/closes/reopens with one button on desktop/mobile",
+        "Core hints reveal sequentially then collapse/reopen",
+        "collapsed hints remain counted as viewed",
+        "no phantom attempts from disclosure-only actions",
+        "legacy learner data preserved"
+      ],
+      "owner_qa": "PASS",
+      "owner_qa_devices": [
+        "desktop",
+        "iPad"
+      ],
+      "owner_qa_date": "2026-09-30",
+      "task_closed": true
+    },
+    "end_of_day_pause_20260930": {
+      "status": "PAUSED_STABLE_BASELINE",
+      "main_before_checkpoint": "f5d2979164e919d56ef79b697bbe85b993c4a1ef",
+      "project_context_version": "1.0.90",
+      "closed_as_superseded": [
+        "CONTENT-PILOT-001",
+        "GEO-BATCH-16-18-GEMINI-REVIEW-001"
+      ],
+      "owner_qa_debts": [
+        "MATH-CORE03-OWNER-QA-001",
+        "C07-MICRO15-001",
+        "G6-T02-OWNER-UX-001",
+        "MATH-UI-BATCH-A-OWNER-QA-001"
+      ],
+      "non_blocking_backlog": [
+        "BENCH-CAP-001",
+        "GEO-LIB-001",
+        "ALG-REVIEW-04-11-GEMINI-001",
+        "GEO13-GEMINI-REVIEW-001",
+        "G6-T03-SCOPE-001"
+      ],
+      "canonical_next_gate": "NONE_OPEN",
+      "g3_authorized": false,
+      "mastery_readiness_expansion_authorized": false,
+      "note": "Resume tomorrow by clearing owner QA debt before opening a new large academic/runtime phase."
+    },
+    "owner_qa_progress_20261001": {
+      "status": "4_OF_4_CLEARED",
+      "passed": [
+        {
+          "task_id": "MATH-CORE03-OWNER-QA-001",
+          "scope": "CĐ03 standalone Core",
+          "devices": [
+            "desktop",
+            "iPad"
+          ],
+          "result": "PASS"
+        },
+        {
+          "task_id": "C07-MICRO15-001",
+          "scope": "CĐ07 current 17-item Core baseline",
+          "devices": [
+            "desktop",
+            "iPad"
+          ],
+          "result": "PASS"
+        },
+        {
+          "task_id": "G6-T02-OWNER-UX-001",
+          "scope": "CĐ02 Grade6 end-to-end learning + Readiness",
+          "devices": [
+            "desktop",
+            "iPad"
+          ],
+          "result": "PASS"
+        },
+        {
+          "task_id": "MATH-UI-BATCH-A-OWNER-QA-001",
+          "scope": "Batch A remaining CĐ21/CĐ24/CĐ25; CĐ02/CĐ23 previously accepted",
+          "devices": [
+            "desktop",
+            "iPad"
+          ],
+          "result": "PASS"
+        }
+      ],
+      "remaining": []
+    },
+    "product_completeness_next": {
+      "navigation_render_fix": "OWNER_QA_PASS_CLOSED_DONE",
+      "duplicate_topic_menu": "BACKLOG_NON_BLOCKING",
+      "written_exercise_library_v1": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "g3_authorized": false,
+      "navigation_release": {
+        "implementation_pr": 232,
+        "exact_tested_head": "891c1dea7eda264f1da918590ddf1c7ad1aa8fb2",
+        "roadmap_pr_quality_run": 36821844162,
+        "skill_assessment_run": 36821844031,
+        "branding_run": 36821844317,
+        "merge_commit": "a1dce90e0436351ea109bd6dbe4c6697dafcff3f",
+        "deploy_run": 36822248798,
+        "deploy_conclusion": "SUCCESS"
+      },
+      "navigation_owner_qa": {
+        "result": "PASS",
+        "date": "2026-10-01",
+        "checks": [
+          "CĐ02 continuation block renders as buttons with no raw Markdown",
+          "CĐ07 Practice footer order is previous topic -> same-topic learning/self-check -> next topic"
+        ]
+      },
+      "written_exercise_library_release": {
+        "implementation_pr": 234,
+        "authorized_exact_head": "ad0234e4bf367b4b28d17664a687fbf3a0931a02",
+        "notebooklm_result": "PASS_6_OF_6_ARCH_6_OF_6",
+        "roadmap_pr_quality_run": 36832354851,
+        "skill_assessment_run": 36832355939,
+        "branding_run": 36832354918,
+        "merge_commit": "56739479516bafe00340594cb161f5251fb9e3e9",
+        "deploy_run": 36833487797,
+        "deploy_conclusion": "SUCCESS",
+        "owner_qa": "PENDING"
+      }
+    },
+    "written_exercise_library_pilot": {
+      "status": "PRODUCTION_RELEASED_OWNER_QA_PENDING",
+      "task_id": "MATH-WRITTEN-EXERCISE-LIBRARY-001",
+      "branch": "feature/written-exercise-library-pilot-20261001",
+      "item_ids": [
+        "WX07-RAT-001",
+        "WX07-RAT-002",
+        "WX14-TRI-001",
+        "WX14-TRI-002",
+        "WX24-MOD-001",
+        "WX24-MOD-002"
+      ],
+      "topics": [
+        "CT07",
+        "CT14",
+        "CT24"
+      ],
+      "count": 6,
+      "catalog_blob": "bf926501b512a85fc2f0b73786784aa4cbe26f81",
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-PILOT-R1-20261001",
+      "source_packet": "review-packets/written-exercise-library/01_UPLOAD_TO_NOTEBOOKLM_WRITTEN_PILOT_R1.md",
+      "prompt": "review-packets/written-exercise-library/02_COPY_TO_NOTEBOOKLM_WRITTEN_PILOT_R1.txt",
+      "production_released": true,
+      "readiness_credit": false,
+      "notebooklm_r1": {
+        "result": "PASS",
+        "coverage": "6/6",
+        "architecture": "6/6",
+        "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+        "date": "2026-10-01",
+        "packet_blob": "45aefb0ddbaef15ca05d802d141fbb070b742e05"
+      },
+      "prior_exact_head_technical_qa": {
+        "head": "c4616821fb6ce491977b9c1fe1e791bcb3e50e39",
+        "roadmap_pr_quality": 36825618122,
+        "skill_assessment": 36825618194,
+        "branding": 36825617988,
+        "result": "PASS"
+      },
+      "production_merge": "56739479516bafe00340594cb161f5251fb9e3e9",
+      "deploy_run": 36833487797,
+      "deploy_conclusion": "SUCCESS",
+      "owner_qa": "PASS_WITH_APPROVED_UX_FOLLOWUP",
+      "owner_qa_devices": [
+        "desktop",
+        "iPad"
+      ],
+      "owner_qa_date": "2026-10-01",
+      "owner_notes": [
+        "Pilot is the intended paper-first written-practice experience.",
+        "Compact Hướng dẫn/Rubric/Lỗi thường gặp into a single horizontal row.",
+        "Add Thư viện bài tập to quick shortcuts.",
+        "Link topic 'Các dạng bài' to the library; auto-filter by topic where supported."
+      ]
+    },
+    "written_library_patch_1": {
+      "status": "PRODUCTION_RELEASED_OWNER_SPOT_QA_PENDING",
+      "task_id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
+      "branch": "fix/written-library-compact-links-shortcut-20261001",
+      "scope": [
+        "3-button compact support row with full-width revealed panels",
+        "quick shortcut changes from 6+25 to 7+25 and adds Thư viện bài tập",
+        "topic 'Các dạng bài' CTA to /luyen-tap/?topic=CTxx only when catalog has published items",
+        "no learner-data write from support-panel toggles"
+      ],
+      "academic_content_changed": false,
+      "readiness_mastery_changed": false,
+      "tested_head": "8be3c40482dcf48545fa49e27cfccaa1822b8b16",
+      "qa_run": 36841009154,
+      "qa_conclusion": "SUCCESS",
+      "implementation_pr": 237,
+      "merge_commit": "a80343a5ceba56957af3002f4b128e9fb5545c8e",
+      "deploy_run": 36841498180,
+      "deploy_conclusion": "SUCCESS",
+      "owner_spot_qa": "PARTIAL_PASS_2_OF_3",
+      "owner_spot_qa_passed": [
+        "quick shortcut shows 7 + 25 and includes Thư viện bài tập",
+        "compact horizontal Hướng dẫn / Rubric / Lỗi thường gặp row is visually approved"
+      ],
+      "owner_spot_qa_remaining": [
+        "topic Các dạng bài deep link auto-filters library"
+      ]
+    },
+    "written_library_expansion_b1": {
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
+      "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-001",
+      "review_pr": 239,
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-R1-20261001",
+      "candidate_blob": "afa995465f875acf4cf1cb838df6ddfb885ea206",
+      "notebooklm_result": "PASS_6_OF_6_ARCH_8_OF_8",
+      "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "topics": [
+        "CT08",
+        "CT17",
+        "CT19"
+      ],
+      "item_ids": [
+        "WX08-EQI-001",
+        "WX08-EQI-002",
+        "WX17-SIM-001",
+        "WX17-SIM-002",
+        "WX19-CIR-001",
+        "WX19-CIR-002"
+      ],
+      "implementation_branch": "feature/written-library-expansion-b1-20261001",
+      "production_release": true,
+      "auto_readiness_credit": false,
+      "canonical_evidence_g3_changed": false,
+      "technical_qa": {
+        "exact_tested_head": "bc5cbd9a3c9971ff5d20ef1bc446d6d0f212da09",
+        "roadmap_pr_quality_run": 36859348005,
+        "result": "PASS",
+        "first_failed_run": 36859229839,
+        "first_failure_reason": "test harness expected-ID list still locked to six pilot IDs; catalog already contained correct 12 IDs"
+      },
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-10-01",
+      "final_exact_tested_head": "86b065ec8479688ea7e4eb643202e1ae18556a63",
+      "final_roadmap_pr_quality_run": 36860254512,
+      "final_qa_result": "SUCCESS",
+      "implementation_pr": 240,
+      "production_merge": "6f506f1f0434d1f06099a4e78c2f669ffe2e9257",
+      "deploy_run": 36860706849,
+      "deploy_conclusion": "SUCCESS",
+      "owner_production_qa": "PASS_COUNTS_NEW_TOPICS",
+      "expected_production_catalog": {
+        "exercise_count": 12,
+        "topics": [
+          "CT07",
+          "CT08",
+          "CT14",
+          "CT17",
+          "CT19",
+          "CT24"
+        ]
+      },
+      "owner_qa_observed": [
+        "CT08, CT17 and CT19 appear in the topic filter",
+        "each newly added topic exposes exactly 2 exercises"
+      ]
+    },
+    "written_library_topic_sort": {
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
+      "task_id": "MATH-WRITTEN-LIBRARY-TOPIC-SORT-001",
+      "rule": "Topic filter options are sorted numerically by CT number, independent of catalog append order.",
+      "implementation_pr": 241,
+      "exact_tested_head": "f7d6954a404542f08efa6e2928a21e925a004abb",
+      "qa_run": 36862512366,
+      "qa_conclusion": "SUCCESS",
+      "production_merge": "3e30e66b041b0ca92f8b706e07f8568511471e9b",
+      "deploy_run": 36863005816,
+      "deploy_conclusion": "SUCCESS",
+      "owner_spot_qa": "PASS",
+      "expected_current_order": [
+        "CT07",
+        "CT08",
+        "CT14",
+        "CT17",
+        "CT19",
+        "CT24"
+      ],
+      "owner_qa_date": "2026-10-01"
+    },
+    "written_library_expansion_b2": {
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
+      "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B2-001",
+      "review_pr": 242,
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B2-R1-20261001",
+      "candidate_blob": "334f2c31e43a219bb4917fc8ef0dcf52fdc2de1b",
+      "notebooklm_result": "PASS_6_OF_6_ARCH_10_OF_10",
+      "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "topics": [
+        "CT09",
+        "CT16",
+        "CT18"
+      ],
+      "item_ids": [
+        "WX09-SYS-001",
+        "WX09-SYS-002",
+        "WX16-QUAD-001",
+        "WX16-QUAD-002",
+        "WX18-TRI-001",
+        "WX18-TRI-002"
+      ],
+      "implementation_branch": "feature/written-library-expansion-b2-20261001",
+      "intended_catalog": {
+        "exercise_count": 18,
+        "topic_count": 9,
+        "topics": [
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT14",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT24"
+        ]
+      },
+      "production_release": true,
+      "auto_readiness_credit": false,
+      "canonical_evidence_g3_changed": false,
+      "technical_qa": {
+        "exact_tested_head": "e1598d6febb719ead3de2a42fe78436ccb0eedb1",
+        "roadmap_pr_quality_run": 36865069195,
+        "result": "PASS"
+      },
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-10-01",
+      "final_exact_tested_head": "de16484dc41e32a48515ba853c5d40c4c0ba1a83",
+      "final_roadmap_pr_quality_run": 36866360773,
+      "final_qa_result": "SUCCESS",
+      "implementation_pr": 243,
+      "production_merge": "ebd8c5e3f17805ddfd281826956c4d4de799cd5e",
+      "deploy_run": 36866917887,
+      "deploy_conclusion": "SUCCESS",
+      "owner_production_qa": "PASS",
+      "expected_production_catalog": {
+        "exercise_count": 18,
+        "topic_count": 9,
+        "topics": [
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT14",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT24"
+        ]
+      },
+      "owner_qa_observed": [
+        "CT09, CT16 and CT18 appear in the production topic filter",
+        "each B2 topic exposes exactly 2 exercises"
+      ]
+    },
+    "written_library_intro_copy": {
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
+      "task_id": "MATH-WRITTEN-LIBRARY-INTRO-COPY-001",
+      "rule": "Library intro must not hard-code a pilot count or fixed topic list; live catalog/filter UI is the source of current coverage.",
+      "branch": "fix/written-library-durable-intro-20261001",
+      "production_release": true,
+      "implementation_pr": 244,
+      "exact_tested_head": "3f459683f8fe1bff52c1f32eb645e3b24a792b89",
+      "qa_run": 36869043055,
+      "qa_conclusion": "SUCCESS",
+      "production_merge": "aa813c19fab105c5e0f3ef12a982f98406fac5de",
+      "deploy_run": 36869588454,
+      "deploy_conclusion": "SUCCESS",
+      "owner_spot_qa": "PASS",
+      "owner_qa_date": "2026-10-01"
+    },
+    "written_library_expansion_b3": {
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
+      "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-001",
+      "review_pr": 245,
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-R1-20261001",
+      "candidate_blob": "4fae4c2535c7ad0ae608935c72030ee924924f5b",
+      "notebooklm_result": "PASS_6_OF_6_ARCH_10_OF_10",
+      "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "topics": [
+        "CT10",
+        "CT11",
+        "CT12"
+      ],
+      "item_ids": [
+        "WX10-FUN-001",
+        "WX10-FUN-002",
+        "WX11-RAD-001",
+        "WX11-RAD-002",
+        "WX12-QUA-001",
+        "WX12-QUA-002"
+      ],
+      "implementation_branch": "feature/written-library-expansion-b3-20261001",
+      "intended_catalog": {
+        "exercise_count": 24,
+        "topic_count": 12,
+        "topics": [
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT14",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT24"
+        ]
+      },
+      "production_release": true,
+      "auto_readiness_credit": false,
+      "canonical_evidence_g3_changed": false,
+      "implementation_pr": 246,
+      "technical_qa": {
+        "exact_tested_head": "030687f95a6a174b4ae42a54c0d32acbfc728ed1",
+        "roadmap_pr_quality_run": 36875117900,
+        "duplicate_same_head_run": 36875088705,
+        "result": "PASS"
+      },
+      "technical_notes": [
+        "Legacy regression required >=4 solution steps although the written-library design contract does not specify a 4-step minimum; harness now accepts >=3 while requiring unique step IDs and non-empty titles/content.",
+        "Proposed B3 batch metadata inside published_scope was reconciled to PUBLISHED; no academic exercise content changed."
+      ],
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-10-01",
+      "final_exact_tested_head": "1795377603e40b1b41d22a20ffc4f518d8afbf35",
+      "final_roadmap_pr_quality_run": 36876254236,
+      "final_qa_result": "SUCCESS",
+      "production_merge": "2a6204c9ee4134471ea678fcc07347439e22faae",
+      "deploy_run": 36876967991,
+      "deploy_conclusion": "SUCCESS",
+      "owner_production_qa": "PASS_IPAD_DESKTOP",
+      "expected_production_catalog": {
+        "exercise_count": 24,
+        "topic_count": 12,
+        "topics": [
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT14",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT24"
+        ]
+      },
+      "owner_qa_observed": [
+        "CT10, CT11 and CT12 are present in production",
+        "each B3 topic exposes exactly 2 exercises",
+        "owner checked on both iPad and desktop"
+      ]
+    },
+    "written_library_expansion_b4": {
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
+      "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-001",
+      "review_pr": 247,
+      "review_branch": "review/written-library-expansion-b4-r1-20261001",
+      "base_main": "28b1561a49ab4d935ba6167aa9d7bf1350fc0788",
+      "review_head": "fc11593309acc9a4aa6926a7d28b387263cbe6f8",
+      "candidate_blob": "1184135a82b038cd1d03623107ed8cccc33837da",
+      "packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-R1-20261001",
+      "topics": [
+        "CT13",
+        "CT15",
+        "CT23"
+      ],
+      "item_ids": [
+        "WX13-LIN-001",
+        "WX13-LIN-002",
+        "WX15-CEN-001",
+        "WX15-CEN-002",
+        "WX23-PRO-001",
+        "WX23-PRO-002"
+      ],
+      "review_files": {
+        "candidate": "review-packets/written-exercise-library/26_WRITTEN_EXPANSION_B4_CANDIDATE.json",
+        "notebooklm_upload": "review-packets/written-exercise-library/27_UPLOAD_TO_NOTEBOOKLM_WRITTEN_EXPANSION_B4_R1.md",
+        "notebooklm_prompt": "review-packets/written-exercise-library/28_COPY_TO_NOTEBOOKLM_WRITTEN_EXPANSION_B4_R1.txt",
+        "readme": "review-packets/written-exercise-library/29_README_EXPANSION_B4_NOT_SOURCE.md"
+      },
+      "academic_review": "PENDING_NOTEBOOKLM_R1",
+      "production_catalog_unchanged": true,
+      "production_exercise_count": 24,
+      "production_topic_count": 12,
+      "auto_readiness_credit": false,
+      "canonical_evidence_g3_changed": false,
+      "preflight": {
+        "roadmap_pr_quality_run": 36879068239,
+        "status": "SUCCESS"
+      },
+      "next_gate": "NOTEBOOKLM_R1_RESULT",
+      "notebooklm_result": "PASS_6_OF_6_ARCH_10_OF_10",
+      "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "implementation_branch": "feature/written-library-expansion-b4-20261001",
+      "intended_catalog": {
+        "exercise_count": 30,
+        "topic_count": 15,
+        "topics": [
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT13",
+          "CT14",
+          "CT15",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT23",
+          "CT24"
+        ]
+      },
+      "production_release": true,
+      "technical_qa": {
+        "exact_tested_head": "9dc51f28a670fc8748a670f3d876793940623114",
+        "roadmap_pr_quality_run": 36880519503,
+        "result": "PASS"
+      },
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-10-01",
+      "final_exact_tested_head": "027e18ea8953de4986399d999363a5e13be6db93",
+      "final_roadmap_pr_quality_run": 36881591932,
+      "final_qa_result": "SUCCESS",
+      "implementation_pr": 248,
+      "production_merge": "83db880966bd0dcfaf594811ff30abff1e9edd9a",
+      "deploy_run": 36882280354,
+      "deploy_conclusion": "SUCCESS",
+      "owner_production_qa": "PASS_IPAD_DESKTOP",
+      "expected_production_catalog": {
+        "exercise_count": 30,
+        "topic_count": 15,
+        "topics": [
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT13",
+          "CT14",
+          "CT15",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT23",
+          "CT24"
+        ]
+      },
+      "owner_qa_observed": [
+        "CT13, CT15 and CT23 are present in production",
+        "each B4 topic exposes exactly 2 exercises",
+        "owner checked on both iPad and desktop"
+      ]
+    },
+    "written_library_expansion_b5": {
+      "status": "OWNER_QA_PASS_CLOSED_DONE",
+      "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-001",
+      "review_pr": 249,
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-R1-20261001",
+      "candidate_blob": "f64f038516a1bdcf76c51c5863f001bee688050d",
+      "notebooklm_result": "PASS_6_OF_6_ARCH_10_OF_10",
+      "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "topics": [
+        "CT04",
+        "CT05",
+        "CT06"
+      ],
+      "item_ids": [
+        "WX04-ALG-001",
+        "WX04-ALG-002",
+        "WX05-IDN-001",
+        "WX05-IDN-002",
+        "WX06-FAC-001",
+        "WX06-FAC-002"
+      ],
+      "implementation_branch": "feature/written-library-expansion-b5-20261001",
+      "intended_catalog": {
+        "exercise_count": 36,
+        "topic_count": 18,
+        "topics": [
+          "CT04",
+          "CT05",
+          "CT06",
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT13",
+          "CT14",
+          "CT15",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT23",
+          "CT24"
+        ]
+      },
+      "production_release": true,
+      "auto_readiness_credit": false,
+      "canonical_evidence_g3_changed": false,
+      "architecture_note": "CT22 remains THPT-Bridge and is not promoted into the THCS Core Written Library.",
+      "technical_qa": {
+        "exact_tested_head": "6d1fe8c752f98477f2790555a5d452b58e477928",
+        "roadmap_pr_quality_run": 36885670750,
+        "result": "PASS"
+      },
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-10-01",
+      "final_exact_tested_head": "6f5ad2fb23e6cbce07e26b80901ca05297a73978",
+      "final_roadmap_pr_quality_run": 36886706322,
+      "final_qa_result": "SUCCESS",
+      "implementation_pr": 250,
+      "production_merge": "798cc58919aa15cd69fa28aeb5132929047f3113",
+      "deploy_run": 36887406960,
+      "deploy_conclusion": "SUCCESS",
+      "owner_production_qa": "PASS_IPAD_DESKTOP",
+      "expected_production_catalog": {
+        "exercise_count": 36,
+        "topic_count": 18,
+        "topics": [
+          "CT04",
+          "CT05",
+          "CT06",
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT13",
+          "CT14",
+          "CT15",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT23",
+          "CT24"
+        ]
+      },
+      "owner_qa_observed": [
+        "CT04, CT05 and CT06 are present in production",
+        "each B5 topic exposes exactly 2 exercises",
+        "owner checked on both iPad and desktop"
+      ]
+    },
+    "written_library_expansion_b6": {
+      "status": "DONE",
+      "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-001",
+      "review_pr": 251,
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-R1-20261001",
+      "candidate_blob": "acf731914d8314a654609fba5789ed9878a14ca6",
+      "notebooklm_result": "PASS_6_OF_6_ARCH_10_OF_10",
+      "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "topics": [
+        "CT02",
+        "CT03",
+        "CT20"
+      ],
+      "item_ids": [
+        "WX02-NUM-001",
+        "WX02-NUM-002",
+        "WX03-RAT-001",
+        "WX03-RAT-002",
+        "WX20-GEO-001",
+        "WX20-GEO-002"
+      ],
+      "implementation_branch": "feature/written-library-expansion-b6-20261001",
+      "intended_catalog": {
+        "exercise_count": 42,
+        "topic_count": 21,
+        "topics": [
+          "CT02",
+          "CT03",
+          "CT04",
+          "CT05",
+          "CT06",
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT13",
+          "CT14",
+          "CT15",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT20",
+          "CT23",
+          "CT24"
+        ]
+      },
+      "production_release": true,
+      "auto_readiness_credit": false,
+      "canonical_evidence_g3_changed": false,
+      "architecture_notes": [
+        "CT02 remains scoped to the grade-6 Core journey; no full cross-grade completion claim.",
+        "CT20 remains Core measurement/solid geometry; no Entrance10 proof-chain promotion.",
+        "CT01 roadmap-only, CT22 THPT-Bridge, CT25 Entrance10 remain outside the normal Core append."
+      ],
+      "preflight": {
+        "roadmap_pr_quality_run": 36889335146,
+        "status": "SUCCESS"
+      },
+      "technical_qa": {
+        "exact_tested_head": "39b2bd2b1cf260a7a57cc695eee898b1e9cdd5c7",
+        "roadmap_pr_quality_run": 36890766907,
+        "result": "PASS",
+        "earlier_failed_run": 36890557226,
+        "earlier_failure_reason": "Regression assertion for WX03-RAT-001 searched for shortened result strings; test-only fix, no academic-content change."
+      },
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-10-01",
+      "final_exact_tested_head": "1d195ee31302419927d6e03616af82bea5e1bef1",
+      "final_roadmap_pr_quality_run": 36892813423,
+      "final_qa_result": "SUCCESS",
+      "implementation_pr": 252,
+      "production_merge": "6dadcb1fb969380dc6fb5f7c241740dc769ae919",
+      "deploy_run": 36893580607,
+      "deploy_conclusion": "SUCCESS",
+      "owner_production_qa": "PASS_IPAD_DESKTOP",
+      "expected_production_catalog": {
+        "exercise_count": 42,
+        "topic_count": 21,
+        "topics": [
+          "CT02",
+          "CT03",
+          "CT04",
+          "CT05",
+          "CT06",
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT13",
+          "CT14",
+          "CT15",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT20",
+          "CT23",
+          "CT24"
+        ]
+      },
+      "owner_qa_observed": [
+        "CT02, CT03 and CT20 are present in production",
+        "each B6 topic exposes exactly 2 exercises",
+        "owner checked on both iPad and desktop on 2026-10-01"
+      ]
+    },
+    "written_library_expansion_b7": {
+      "status": "DONE",
+      "task_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-001",
+      "review_pr": 254,
+      "review_packet_id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-R1-20261001",
+      "candidate_blob": "9b27714fdb9f96c5f4512759c6e9766629838dc9",
+      "notebooklm_result": "PASS_2_OF_2_ARCH_10_OF_10",
+      "authorization": "CLEARED_FOR_SEPARATE_TECHNICAL_IMPLEMENTATION_QA",
+      "topics": [
+        "CT21"
+      ],
+      "item_ids": [
+        "WX21-STA-001",
+        "WX21-STA-002"
+      ],
+      "implementation_branch": "feature/written-library-expansion-b7-20261001",
+      "intended_catalog": {
+        "exercise_count": 44,
+        "topic_count": 22,
+        "topics": [
+          "CT02",
+          "CT03",
+          "CT04",
+          "CT05",
+          "CT06",
+          "CT07",
+          "CT08",
+          "CT09",
+          "CT10",
+          "CT11",
+          "CT12",
+          "CT13",
+          "CT14",
+          "CT15",
+          "CT16",
+          "CT17",
+          "CT18",
+          "CT19",
+          "CT20",
+          "CT21",
+          "CT23",
+          "CT24"
+        ]
+      },
+      "production_release": true,
+      "auto_readiness_credit": false,
+      "canonical_evidence_g3_changed": false,
+      "architecture_notes": [
+        "CT21 stays inside the locked five-card KNTT-Core skill boundary.",
+        "Frequency/tần suất and grouped data remain outside this B7 Core append.",
+        "CT22 remains separate THPT-Bridge/characteristic-measure scope; CT25 remains Entrance10/tổng hợp."
+      ],
+      "review_preflight": {
+        "exact_tested_head": "15eb19db0073455483b9576998cb1f9f93846ca6",
+        "roadmap_pr_quality_run": 36897216442,
+        "status": "SUCCESS"
+      },
+      "academic_review_receipt": "review-packets/written-exercise-library/48_NOTEBOOKLM_EXPANSION_B7_R1_PASS_RECEIPT.md",
+      "technical_qa": {
+        "exact_tested_head": "b8aa8617212d5435d6e92311f2599e55880c1630",
+        "roadmap_pr_quality_run": 36898694706,
+        "result": "PASS",
+        "strict_mkdocs_build": "PASS",
+        "browser_visual_qa": "PASS"
+      },
+      "owner_release_authorized": true,
+      "owner_release_authorized_at": "2026-10-02",
+      "final_release_qa": {
+        "exact_tested_head": "f0df2011ab9694b06c30ffda1b7fa872d2dc1fda",
+        "roadmap_pr_quality_run": 36899579636,
+        "result": "PASS",
+        "strict_mkdocs_build": "PASS",
+        "browser_visual_qa": "PASS",
+        "main_base_before_merge": "0bb3ee85e6bb57a7ab86dce88bf25eeee16a677d",
+        "base_drift": false
+      },
+      "production": {
+        "implementation_pr": 255,
+        "merge_commit": "47adffd87b654a1bd2b6854ddbc270bbf31dfa62",
+        "deploy_run": 36900375742,
+        "deploy_result": "SUCCESS",
+        "pages_step": "SUCCESS",
+        "catalog_exercise_count": 44,
+        "catalog_topic_count": 22
+      },
+      "owner_production_qa": "PASS_IPAD_DESKTOP",
+      "owner_qa_observed": [
+        "owner checked production on both iPad and desktop on 2026-10-02",
+        "CT21 Written Library content opened and rendered correctly",
+        "WX21-STA-002 guidance, 50% calculation, 5-point rubric and evidence-boundary explanation rendered correctly in supplied production screenshots"
+      ]
+    },
+    "skill_taxonomy_v2": {
+      "status": "I6B_PUBLIC_SKILL_MAP_LIVE_OWNER_QA_PASS",
+      "runtime_enabled": false,
+      "mastery_readiness_migration_authorized": false,
+      "exam_frequency": "PENDING_OFFICIAL_CORPUS",
+      "s1": {
+        "topics": "CT02–CT07",
+        "legacy_tags": 87,
+        "learner_families": 39,
+        "family_review": "NOTEBOOKLM_PASS_39_OF_39_ZERO_MAPPING_FIXES",
+        "question_level_review": "CT02+CT03 240/240 PASS plus prior CT04–CT07 Phase D 492/492 reviewed",
+        "total_question_basis": 732,
+        "status": "ACADEMICALLY_CLOSED"
+      },
+      "s2": {
+        "topics": "CT08–CT12",
+        "legacy_tags": 75,
+        "learner_families": 29,
+        "family_review": "NOTEBOOKLM_PASS_29_OF_29_ZERO_MAPPING_FIXES",
+        "full_bank_review": "624/624 PASS_ZERO_REVISIONS",
+        "status": "ACADEMICALLY_CLOSED",
+        "final_registry": "review-packets/skill-taxonomy/S2_FINAL_ACADEMIC_REGISTRY_R1.json"
+      },
+      "s3": {
+        "topics": "CT13–CT20",
+        "legacy_tags": 162,
+        "learner_families": 44,
+        "family_review": "NOTEBOOKLM_PASS_44_OF_44_ZERO_MAPPING_FIXES",
+        "full_bank_review": "1146/1146 PASS_ZERO_REVISIONS",
+        "mapped_family_items": 1136,
+        "formative_no_family_items": 10,
+        "clone_family_candidates_pass": "165/165",
+        "topic_checks_pass": "20/20",
+        "architecture_checks_pass": "14/14",
+        "authorization": "CLEARED_FOR_S3_CT13_20_RECONCILIATION",
+        "status": "ACADEMICALLY_CLOSED",
+        "final_registry": "review-packets/skill-taxonomy/S3_FINAL_ACADEMIC_REGISTRY_R1.json",
+        "review_pr": 266
+      },
+      "s4": {
+        "topics": "CT21–CT25",
+        "practice_questions": 612,
+        "legacy_tags": 62,
+        "proposed_new_families": 19,
+        "layers": {
+          "core": 7,
+          "core_support": 5,
+          "thpt_bridge": 3,
+          "entrance10": 4
+        },
+        "cross_topic_reuse_mappings": 5,
+        "no_new_family_context_category_mappings": 12,
+        "proposed_written_gaps": 4,
+        "review_branch": "review/skill-taxonomy-v2-s4-family-r1-20261002",
+        "review_pr": 267,
+        "status": "ACADEMICALLY_CLOSED",
+        "next_gate": "WHOLE_PROJECT_CT02_CT25_CROSS_BATCH_RECONCILIATION",
+        "family_review": "NOTEBOOKLM_PASS_19_OF_19_ZERO_MAPPING_FIXES",
+        "written_gap_review": "4_OF_4_PASS",
+        "family_authorization": "CLEARED_FOR_S4_ITEM_AUDITS",
+        "item_audit_branch": "review/skill-taxonomy-v2-s4-ct21-25-combined-r1-20261002",
+        "item_audit_pr": 268,
+        "item_audit_scope": {
+          "total": 612,
+          "approved_family_rows": 492,
+          "intentional_no_family_rows": 120,
+          "clone_family_candidates": 66,
+          "unique_ids": 612
+        },
+        "full_bank_review": "612/612 PASS_ZERO_REVISIONS",
+        "mapped_family_items": 492,
+        "intentional_no_family_items": 120,
+        "clone_family_candidates_pass": "66/66",
+        "boundary_checks_pass": "8/8",
+        "architecture_checks_pass": "12/12",
+        "authorization": "CLEARED_FOR_S4_CT21_25_RECONCILIATION",
+        "final_registry": "review-packets/skill-taxonomy/S4_FINAL_ACADEMIC_REGISTRY_R1.json",
+        "academic_closure": "review-packets/skill-taxonomy/S4_ACADEMIC_CLOSURE_20261002.md"
+      },
+      "cross_batch": {
+        "scope": "CT02–CT25",
+        "status": "ACADEMICALLY_CLOSED_PASS",
+        "branch": "review/skill-taxonomy-v2-cross-batch-ct02-25-r1-20261002",
+        "review_pr": 269,
+        "family_definitions": 131,
+        "unique_family_ids": 131,
+        "legacy_mapping_rows": 386,
+        "intentional_no_family_rows": 20,
+        "explicit_reuse_rows": 5,
+        "duplicate_family_ids": 0,
+        "duplicate_topic_legacy_keys": 0,
+        "unknown_family_mappings": 0,
+        "machine_overlap_candidates": 2,
+        "family_coverage": "131/131 PASS",
+        "mapping_coverage": "386/386 PASS",
+        "reuse_checks": "5/5 PASS",
+        "overlap_checks": "2/2 PASS_AS_CONTEXTUAL_REUSE",
+        "architecture_checks": "16/16 PASS",
+        "fixes": 0,
+        "authorization": "CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING",
+        "academic_closure": "review-packets/skill-taxonomy/TAXONOMY_V2_ACADEMIC_CLOSURE_20261002.md",
+        "pass_effect": "IMPLEMENTATION_PLANNING_ONLY_NOT_RUNTIME_ACTIVATION"
+      },
+      "implementation_planning": {
+        "status": "PLAN_R1_ACCEPTED_I0_DONE",
+        "branch": "plan/skill-taxonomy-v2-implementation-r1-20261002",
+        "review_pr": 271,
+        "plan": "docs/roadmap/skill-taxonomy-v2-implementation-plan-r1.md",
+        "registry_schema_candidate": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.schema.json",
+        "protected_runtime_boundary": "Canonical Evidence G2: 101 items / 7 skills / CT04–CT07 / store toan-thcs-canonical-evidence-v2",
+        "proposed_new_store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "runtime_policy_layout": "topic_sharded_ct02_ct25",
+        "first_coding_gate": "I0_DONE",
+        "mastery_thresholds_authorized": false,
+        "readiness_authorized": false,
+        "history_backfill_authorized": false,
+        "runtime_activation_authorized": false
+      },
+      "i0": {
+        "status": "DONE",
+        "pr": 271,
+        "tested_head": "ae8b7264fedbbe62e16b7d2d6a98634341554aa1",
+        "ci_run": 37013490363,
+        "ci_result": "SUCCESS",
+        "merge_sha": "a8b619a2b1ed5d572f615cd7178e0906978eaa6a",
+        "registry_path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+        "registry_blob": "c2f2e5b8d78a58d874f88524861326223fdbdf45",
+        "families": 131,
+        "mappings": 386,
+        "intentional_no_family": 20,
+        "cross_topic_reuse_total": 14,
+        "ct24_reuse": 5,
+        "runtime_enabled": false,
+        "learner_data_write_enabled": false,
+        "checkpoint": "review-packets/skill-taxonomy/implementation/I0_DURABLE_REGISTRY_TECHNICAL_CHECKPOINT.md"
+      },
+      "i1": {
+        "status": "DONE",
+        "pr": 272,
+        "tested_head": "35128a591e60e7737c00d2f63d3713b8d50d43ad",
+        "ci_run": 37016671647,
+        "ci_result": "SUCCESS",
+        "merge_sha": "144772d4464aa03d79ddcaf543dcc4fc7a956145",
+        "index_path": "docs/assets/data/curriculum/taxonomy-v2-runtime/index-r1.json",
+        "index_blob": "592075ed951a55c7b0c6b81255e1ca51c9672339",
+        "topic_policies": 24,
+        "questions": 3114,
+        "family_link_rows": 2900,
+        "no_family_rows": 214,
+        "max_topic_rows": 195,
+        "runtime_enabled": false,
+        "learner_data_write_enabled": false,
+        "independent_credit_authorized": false,
+        "checkpoint": "review-packets/skill-taxonomy/implementation/I1_TOPIC_POLICY_COMPILATION_TECHNICAL_CHECKPOINT.md"
+      },
+      "i2": {
+        "status": "DONE_OWNER_PRODUCTION_QA_PASS",
+        "pr": 273,
+        "tested_head": "53d6e0b90a6ceded5ace55b1c6d616c667928b3a",
+        "ci_runs": {
+          "roadmap_pr_quality": 37019025938,
+          "skill_assessment_pilot_qa": 37019026358,
+          "branding_qa": 37019026822
+        },
+        "ci_result": "SUCCESS",
+        "merge_sha": "e45ec7e4c5f8900f96a61ba82f9c060b94e7c8cb",
+        "deploy_run": 37019804305,
+        "deploy_result": "SUCCESS",
+        "scope": {
+          "topic": "CT02",
+          "active_questions": 12,
+          "no_family_guards": 2,
+          "families": [
+            "NUM-SETS",
+            "NUM-INTEGER-OPS",
+            "NUM-ABS",
+            "NUM-ORDER"
+          ],
+          "max_independent_units": 8
+        },
+        "store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "observer": "docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js",
+        "policy": "docs/assets/data/curriculum/taxonomy-v2-runtime/i2-canary-ct02-r1.json",
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "normal_learner_ui_change": false,
+        "history_backfill_enabled": false,
+        "expansion_authorized": false,
+        "checkpoint": "review-packets/skill-taxonomy/implementation/I2_CT02_SHADOW_CANARY_RELEASE_RECEIPT.md",
+        "gh_pages_sha": "3b04dce9ec61211818732d6cbb6d387afe893606",
+        "deployed_artifact_verified": true,
+        "deployed_observer_verified": true,
+        "deployed_policy_verified": true,
+        "deployed_ct02_loader_verified": true,
+        "owner_production_qa": "PASS",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I2_CT02_SHADOW_CANARY_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "policy_ready": true,
+          "policy_error": null,
+          "non_canary_question_id": "NUM02V1_119",
+          "non_canary_result": "not_in_i2_canary",
+          "normal_ui_debug_panel_absent": true
+        }
+      },
+      "i3": {
+        "status": "I3A_DONE_OWNER_PRODUCTION_QA_PASS",
+        "phase": "I3A_FULL_CT02",
+        "pr": 274,
+        "tested_head": "02b39d0cf27ad2815b4f0305cda506a21ab032b7",
+        "ci_run": 37025889031,
+        "ci_result": "SUCCESS",
+        "merge_sha": "c1940bda496caeed2e4f269c1e9e087145a96275",
+        "deploy_run": 37026596985,
+        "deploy_result": "SUCCESS",
+        "gh_pages_sha": "dad1d90995c908a8e51258f04e2cb8ba74329f67",
+        "deployed_artifact_verified": true,
+        "scope": {
+          "topic": "CT02",
+          "total_rows": 120,
+          "active_family_rows": 103,
+          "no_family_guards": 17,
+          "family_count": 10,
+          "max_independent_units": 75
+        },
+        "store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "policy": "docs/assets/data/curriculum/taxonomy-v2-runtime/i3a-full-ct02-r1.json",
+        "observer": "docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js",
+        "prior_i2_store_continuity": true,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "normal_learner_ui_change": false,
+        "owner_production_qa": "PASS",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I3A_FULL_CT02_SHADOW_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "policy_ready": true,
+          "policy_error": null,
+          "recent_events": 8,
+          "seen_questions": 8,
+          "independent_units": 7,
+          "last_capture": {
+            "captured": true,
+            "question_id": "NUM02V1_100",
+            "family_id": "NUM-FRACTION-OPS",
+            "diagnostic_skill_id": "phep-tinh-phan-so",
+            "independent_evidence": true,
+            "independent_reason": "first_unseen_unit"
+          },
+          "normal_ui_debug_panel_absent": true
+        },
+        "ct03_plus_expansion_authorized": false
+      },
+      "i3b": {
+        "status": "DONE_OWNER_PRODUCTION_QA_PASS",
+        "phase": "I3B_CT02_CT03",
+        "pr": 275,
+        "tested_head": "b3c650955fc4481cff121702542ba57c4296140d",
+        "ci_run": 37030103708,
+        "ci_result": "SUCCESS",
+        "merge_sha": "a49ea5832206e7cd43df0440e241799d246a9916",
+        "deploy_run": 37030799961,
+        "deploy_result": "SUCCESS",
+        "gh_pages_sha": "31e5074e82d87586501d24a8b04226859aee87c8",
+        "deployed_artifact_verified": true,
+        "scope": {
+          "topics": [
+            "CT02",
+            "CT03"
+          ],
+          "total_rows": 240,
+          "active_family_rows": 221,
+          "no_family_guards": 19,
+          "family_count": 16,
+          "max_independent_units": 149,
+          "per_topic": {
+            "CT02": {
+              "total_rows": 120,
+              "active_family_rows": 103,
+              "no_family_guards": 17
+            },
+            "CT03": {
+              "total_rows": 120,
+              "active_family_rows": 118,
+              "no_family_guards": 2
+            }
+          }
+        },
+        "store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "policy": "docs/assets/data/curriculum/taxonomy-v2-runtime/i3b-ct02-03-r1.json",
+        "observer": "docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js",
+        "prior_evidence_continuity": true,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "normal_learner_ui_change": false,
+        "ct04_plus_expansion_authorized": true,
+        "owner_production_qa": "PASS",
+        "checkpoint": "review-packets/skill-taxonomy/implementation/I3B_CT02_03_SHADOW_RELEASE_RECEIPT.md",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I3B_CT02_03_SHADOW_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "build": "taxonomy-v2-i3b-ct02-03-20261002",
+          "policy_ready": true,
+          "policy_error": null,
+          "recent_events": 18,
+          "seen_questions": 18,
+          "independent_units": 16,
+          "last_capture": {
+            "captured": true,
+            "question_id": "RAT03V1_088",
+            "family_id": "RATIO-DISTINGUISH",
+            "diagnostic_skill_id": "phan-biet-thuan-nghich",
+            "independent_evidence": true,
+            "independent_reason": "first_unseen_unit"
+          }
+        }
+      },
+      "i3c": {
+        "status": "DONE_OWNER_PRODUCTION_QA_PASS",
+        "phase": "I3C_CT02_CT04",
+        "branch": "impl/skill-taxonomy-v2-i3c-ct02-04-shadow-r1-20261002",
+        "scope": {
+          "topics": [
+            "CT02",
+            "CT03",
+            "CT04"
+          ],
+          "total_rows": 372,
+          "active_family_rows": 341,
+          "no_family_guards": 31,
+          "family_count": 23,
+          "max_independent_units": 177,
+          "per_topic": {
+            "CT02": {
+              "total_rows": 120,
+              "active_family_rows": 103,
+              "no_family_guards": 17
+            },
+            "CT03": {
+              "total_rows": 120,
+              "active_family_rows": 118,
+              "no_family_guards": 2
+            },
+            "CT04": {
+              "total_rows": 132,
+              "active_family_rows": 120,
+              "no_family_guards": 12
+            }
+          }
+        },
+        "ct04_families": [
+          "ALG-STRUCTURE",
+          "ALG-SIMPLIFY-ADD-SUB",
+          "ALG-MULTIPLY",
+          "ALG-EVALUATE",
+          "RATEX-DOMAIN",
+          "ALG-MODEL-EXPR",
+          "ALG-DIV-MONOMIAL"
+        ],
+        "store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "policy": "docs/assets/data/curriculum/taxonomy-v2-runtime/i3c-ct02-04-r1.json",
+        "observer": "docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js",
+        "prior_evidence_continuity": true,
+        "g2_store_isolation_required": true,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "normal_learner_ui_change": false,
+        "ct05_plus_expansion_authorized": true,
+        "owner_production_qa": "PASS",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I3C_CT02_04_SHADOW_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "build": "taxonomy-v2-i3c-ct02-04-20261002",
+          "policy_ready": true,
+          "policy_error": null,
+          "recent_events": 21,
+          "seen_questions": 21,
+          "independent_units": 19,
+          "last_capture": {
+            "captured": true,
+            "question_id": "ALG04V2_053",
+            "family_id": "ALG-MULTIPLY",
+            "diagnostic_skill_id": "nhan-bieu-thuc",
+            "independent_evidence": true,
+            "independent_reason": "first_unseen_unit"
+          }
+        }
+      },
+      "i3d": {
+        "status": "DONE_OWNER_PRODUCTION_QA_PASS",
+        "phase": "I3D_CT02_CT07",
+        "branch": "impl/skill-taxonomy-v2-i3d-ct02-07-shadow-r1-20261002",
+        "scope": {
+          "topics": [
+            "CT02",
+            "CT03",
+            "CT04",
+            "CT05",
+            "CT06",
+            "CT07"
+          ],
+          "total_rows": 732,
+          "active_family_rows": 648,
+          "no_family_guards": 84,
+          "family_count": 35,
+          "max_independent_units": 240,
+          "per_topic": {
+            "CT02": {
+              "total_rows": 120,
+              "active_family_rows": 103,
+              "no_family_guards": 17
+            },
+            "CT03": {
+              "total_rows": 120,
+              "active_family_rows": 118,
+              "no_family_guards": 2
+            },
+            "CT04": {
+              "total_rows": 132,
+              "active_family_rows": 120,
+              "no_family_guards": 12
+            },
+            "CT05": {
+              "total_rows": 120,
+              "active_family_rows": 91,
+              "no_family_guards": 29
+            },
+            "CT06": {
+              "total_rows": 120,
+              "active_family_rows": 104,
+              "no_family_guards": 16
+            },
+            "CT07": {
+              "total_rows": 120,
+              "active_family_rows": 112,
+              "no_family_guards": 8
+            }
+          }
+        },
+        "new_topic_families": {
+          "CT05": [
+            "ID-STRUCTURE"
+          ],
+          "CT06": [
+            "FAC-COMMON",
+            "FAC-IDENTITY",
+            "FAC-GROUP",
+            "FAC-SPLIT-MIDDLE",
+            "FAC-COMBINE",
+            "EQ-ZERO-PRODUCT"
+          ],
+          "CT07": [
+            "RATEX-CONCEPT",
+            "RATEX-DOMAIN",
+            "RATEX-SIMPLIFY",
+            "RATEX-ADD-SUB",
+            "RATEX-MULT-DIV",
+            "RATEX-EVALUATE"
+          ]
+        },
+        "store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "policy": "docs/assets/data/curriculum/taxonomy-v2-runtime/i3d-ct02-07-r1.json",
+        "observer": "docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js",
+        "prior_evidence_continuity": true,
+        "g2_overlap_band": "CT04–CT07",
+        "g2_store_isolation_required": true,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "normal_learner_ui_change": false,
+        "ct08_plus_expansion_authorized": true,
+        "owner_production_qa": "PASS",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I3D_CT02_07_SHADOW_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "build": "taxonomy-v2-i3d-ct02-07-20261002",
+          "policy_ready": true,
+          "policy_error": null,
+          "recent_events": 25,
+          "seen_questions": 25,
+          "independent_units": 21,
+          "last_capture": {
+            "captured": true,
+            "question_id": "FAC06V1_081",
+            "family_id": "FAC-COMBINE",
+            "diagnostic_skill_id": "phan-tich-da-thuc-hoan-toan",
+            "independent_evidence": false,
+            "independent_reason": "clone_family_repeat"
+          }
+        }
+      },
+      "i3e": {
+        "status": "IMPLEMENTATION_BRANCH_PRE_CI",
+        "phase": "I3E_CT02_CT12",
+        "branch": "impl/skill-taxonomy-v2-i3e-ct02-12-shadow-r1-20261002",
+        "scope": {
+          "topics": [
+            "CT02",
+            "CT03",
+            "CT04",
+            "CT05",
+            "CT06",
+            "CT07",
+            "CT08",
+            "CT09",
+            "CT10",
+            "CT11",
+            "CT12"
+          ],
+          "total_rows": 1356,
+          "active_family_rows": 1272,
+          "no_family_guards": 84,
+          "family_count": 64,
+          "max_independent_units": 375
+        },
+        "s2_delta": {
+          "topics": [
+            "CT08",
+            "CT09",
+            "CT10",
+            "CT11",
+            "CT12"
+          ],
+          "total_rows": 624,
+          "active_family_rows": 624,
+          "no_family_guards": 0,
+          "family_count": 29,
+          "max_independent_units": 135
+        },
+        "store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "policy": "docs/assets/data/curriculum/taxonomy-v2-runtime/i3e-ct02-12-r1.json",
+        "observer": "docs/assets/javascripts/taxonomy-v2-evidence-observer-v1.js",
+        "prior_evidence_continuity": true,
+        "g2_status": "FROZEN_TO_CT04_CT07_ONLY",
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "normal_learner_ui_change": false,
+        "ct13_plus_expansion_authorized": false
+      },
+      "i3f": {
+        "status": "DONE_OWNER_PRODUCTION_QA_PASS",
+        "owner_production_qa": "PASS",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I3F_CT02_20_SHADOW_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "build": "taxonomy-v2-i3f-ct02-20-20261003",
+          "policy_ready": true,
+          "policy_error": null,
+          "recent_events": 41,
+          "seen_questions": 41,
+          "independent_units": 34,
+          "last_capture": {
+            "question_id": "GEO19V1_060",
+            "family_id": "CIRCLE-CYCLIC",
+            "diagnostic_skill_id": "dau-hieu-noi-tiep",
+            "independent_evidence": false,
+            "independent_reason": "clone_family_repeat"
+          }
+        }
+      },
+      "i3g": {
+        "status": "DONE_OWNER_PRODUCTION_QA_PASS",
+        "phase": "I3G_FULL_CT02_CT25",
+        "branch": "impl/skill-taxonomy-v2-i3g-ct02-25-shadow-r1-20261003",
+        "scope": {
+          "total_rows": 3114,
+          "active_family_rows": 2900,
+          "no_family_guards": 214,
+          "evidence_family_count": 127,
+          "registry_family_count": 131,
+          "max_independent_units": 650
+        },
+        "no_direct_runtime_evidence_families": [
+          "RATIO-MODEL",
+          "ID-APPLY",
+          "ID-PROOF",
+          "RATEX-INTEGER"
+        ],
+        "final_batch": {
+          "topics": "CT21–CT25",
+          "total_rows": 612,
+          "active_family_rows": 492,
+          "no_family_guards": 120
+        },
+        "store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "policy": "docs/assets/data/curriculum/taxonomy-v2-runtime/i3g-ct02-25-r1.json",
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "normal_learner_ui_change": false,
+        "owner_production_qa": "PASS",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I3G_FULL_CT02_25_SHADOW_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "build": "taxonomy-v2-i3g-ct02-25-20261003",
+          "policy_ready": true,
+          "policy_error": null,
+          "recent_events": 51,
+          "seen_questions": 51,
+          "independent_units": 42,
+          "last_capture": {
+            "question_id": "PRO23V1__021",
+            "family_id": "PROB-EVENT",
+            "diagnostic_skill_id": "bien-co",
+            "independent_evidence": true,
+            "independent_reason": "first_unseen_unit"
+          }
+        }
+      },
+      "i4": {
+        "status": "DONE_OWNER_PREVIEW_QA_PASS",
+        "phase": "I4_SKILL_MAP_V2_OWNER_PREVIEW",
+        "branch": "impl/skill-taxonomy-v2-i4-skill-map-preview-r1-20261003",
+        "page": "docs/collaboration/skill-map-v2-preview.md",
+        "script": "docs/assets/javascripts/skill-map-v2-preview.js",
+        "style": "docs/assets/stylesheets/skill-map-v2-preview.css",
+        "registry_family_count": 131,
+        "direct_evidence_family_count": 127,
+        "read_only": true,
+        "source_store": "toan-thcs-taxonomy-v2-evidence-v1",
+        "legacy_store_separate": "toan-thcs-practice-v1",
+        "cross_topic_aggregation": true,
+        "clone_safe_via_independent_units": true,
+        "layer_filter": true,
+        "topic_filter": true,
+        "optional_layers_collapsed": true,
+        "mastery_labels_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "learner_data_write_enabled": false,
+        "learner_facing_general_release": false,
+        "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I4_SKILL_MAP_V2_OWNER_QA_PASS.md",
+        "owner_qa_observations": {
+          "independent_units": 42,
+          "independent_correct": 18,
+          "seen_questions": 51,
+          "recent_events": 51,
+          "evidence_bearing_families_in_profile": 28,
+          "visible_kntt_core_families_in_evidence_filter": 23,
+          "legacy_practice_tags": 74
+        }
+      },
+      "i5": {
+        "status": "DONE_POLICY_REVIEW_PASS",
+        "branch": "review/skill-taxonomy-v2-i5-evidence-policy-r1-20261003",
+        "review_pr": 282,
+        "accepted_policy": "docs/roadmap/skill-taxonomy-v2-evidence-policy-r2.md",
+        "r1_review_result": "review-packets/skill-taxonomy/phase-i5/05_NOTEBOOKLM_I5_R1_RESULT.md",
+        "r1_reconciliation": "review-packets/skill-taxonomy/phase-i5/06_CHATGPT_RECONCILIATION_I5_R1.md",
+        "r2_recheck_source": "review-packets/skill-taxonomy/phase-i5/07_NOTEBOOKLM_I5_R2_RECHECK.md",
+        "r2_pass_receipt": "review-packets/skill-taxonomy/phase-i5/08_NOTEBOOKLM_I5_R2_PASS_RECEIPT.md",
+        "closure_receipt": "review-packets/skill-taxonomy/phase-i5/09_I5_POLICY_CLOSURE.md",
+        "independent_recheck": "8/8 PASS",
+        "revisions_required": 0,
+        "policy_effect": "POLICY_ACCEPTED_ONLY",
+        "runtime_activation_authorized": false,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "learner_facing_general_release": false,
+        "accepted_boundaries": {
+          "practice_sufficiency_not_mastery": true,
+          "negative_first_unassisted_is_independent": true,
+          "prior_evidence_immutable": true,
+          "sparse_capacity_policy": "0/1/2/>=3",
+          "recency": "NO_DECAY_UP_TO_LATEST_5_DESCRIPTIVE_ONLY",
+          "unseen_core": "NO_EVIDENCE_MORE_EVIDENCE_NEEDED",
+          "readiness_requires_coverage_separate_from_observed_performance": true,
+          "paper_self_check_is_verified_mastery": false
+        }
+      },
+      "i6": {
+        "status": "DONE_CONTROLLED_RELEASE_OWNER_QA_PASS",
+        "phase": "I6_CONTROLLED_LEARNER_FACING_RELEASE",
+        "prerequisite": "I5_POLICY_REVIEW_PASS",
+        "branch": "impl/skill-taxonomy-v2-i6-controlled-release-r1-20261003",
+        "controlled_page": "docs/collaboration/skill-map-v2-i6-controlled.md",
+        "shared_script": "docs/assets/javascripts/skill-map-v2-preview.js",
+        "policy": "docs/roadmap/skill-taxonomy-v2-evidence-policy-r2.md",
+        "learner_mode_rules": {
+          "n0": "NO_EVIDENCE_NO_PERCENT",
+          "n1_2": "SPARSE_COUNTS_ONLY_NO_PERCENT",
+          "n3_plus": "DESCRIPTIVE_PERCENT_WITH_DENOMINATOR",
+          "technical_family_id_hidden": true,
+          "legacy_practice_separate": true
+        },
+        "owner_preview_regression_required": true,
+        "desktop_mobile_browser_qa_required": true,
+        "owner_controlled_release_required": true,
+        "rollback_required": true,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "learner_data_write_enabled": false,
+        "broader_navigation_release": false,
+        "owner_qa": "PASS",
+        "exact_head_ci": "PASS",
+        "deploy": "PASS",
+        "merge_sha": "56b56aa03a486d0b78de767b02fa778dd5303ce8",
+        "gh_pages_sha": "15e245b22d5947b4c3a9d55ed0776998bde9fa9a",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/phase-i6/01_I6_OWNER_QA_PASS.md"
+      },
+      "i6b": {
+        "status": "DONE_PUBLIC_ACTIVATION_OWNER_QA_PASS",
+        "phase": "BROADER_LEARNER_FACING_ACTIVATION",
+        "prerequisite": "I6_CONTROLLED_RELEASE_OWNER_QA_PASS",
+        "branch": "i6b-public-skill-map-20261003",
+        "public_route": "docs/ban-do-ky-nang/index.md",
+        "public_url_path": "/ban-do-ky-nang/",
+        "main_nav_label": "Bản đồ kỹ năng",
+        "internal_controlled_route_hidden_from_navigation": true,
+        "learner_jargon_removed": true,
+        "public_route_action_links_site_root_safe": true,
+        "desktop_mobile_browser_qa_required": true,
+        "owner_visual_qa_required": true,
+        "mastery_enabled": false,
+        "readiness_enabled": false,
+        "history_backfill_enabled": false,
+        "automatic_written_scoring_enabled": false,
+        "owner_qa": "PASS",
+        "exact_head_ci": "PASS",
+        "deploy": "PASS",
+        "merge_sha": "95b86cd6015dc4437686d60cc6d15ca879565213",
+        "gh_pages_sha": "ed2275f5a711208b18be0c14208f9befba7f689b",
+        "owner_qa_receipt": "review-packets/skill-taxonomy/phase-i6b/01_I6B_OWNER_QA_PASS.md",
+        "public_activation_complete": true
+      }
+    },
+    "notebooklm_taxonomy_workflow": {
+      "reviewer": "NotebookLM",
+      "permanent_sources": [
+        "00_NOTEBOOK_MATH_PERMANENT_v1.1.md",
+        "01_TOAN_THCS_MASTER_PLAN_v1.1.md"
+      ],
+      "source_selection_rule": "Prompts must state exact selected-source arithmetic: 2 permanent + N batch = total selected Sources.",
+      "preferred_batch_source_formats": [
+        "md",
+        "txt",
+        "csv"
+      ],
+      "json_policy": "Keep JSON in GitHub for provenance/machine-check only; do not upload JSON as NotebookLM Source.",
+      "large_batch_policy": "Allowed when topic-local overlays/sources are retained for repairability and output remains machine-checkable.",
+      "validated_large_batches": [
+        "S2 CT09–CT12 combined 492/492 PASS",
+        "S3 CT13–CT20 combined 1146/1146 PASS"
+      ],
+      "output_policy": "Strict machine-checkable contract; if chat may truncate, NotebookLM may return a Markdown artifact with the exact same output.",
+      "unselected_by_default": [
+        "gemini-catalogue-04-11.md",
+        "gemini-catalogue-12-18.md",
+        "gemini-catalogue-19-25.md"
+      ]
+    },
+    "academic_depth_phase": {
+      "status": "CT09_P1A_OWNER_QA_PASS_TOPIC22_ALIGNMENT_PRE_CI",
+      "branch": "academic-depth-framework-r1-20261003",
+      "source_framework": "docs/roadmap/academic-source-framework-v1.md",
+      "audit_standard": "docs/roadmap/academic-depth-audit-standard-v1.md",
+      "master_matrix": "docs/roadmap/academic-depth-audit-master-matrix-v1.md",
+      "source_intake_template": "docs/roadmap/academic-source-intake-template-v1.md",
+      "six_dimensions": [
+        "THEORY_DEPTH",
+        "WORKED_EXAMPLES",
+        "INTERACTIVE_PRACTICE",
+        "WRITTEN_PROBLEM_SOLVING",
+        "EXAM_AUTHENTIC_COVERAGE",
+        "HELP_REMEDIATION"
+      ],
+      "source_classes": [
+        "S1_CURRICULUM",
+        "S2_PEDAGOGY",
+        "S3_AUTHENTIC_ASSESSMENT",
+        "S4_EXTENSION",
+        "S5_DRAFT_ONLY"
+      ],
+      "first_deep_pilot": "CT09",
+      "prior_audit_pass_carries_forward": false,
+      "mastery_expansion": false,
+      "readiness_expansion": false,
+      "mass_content_expansion_before_gap_audit": false,
+      "notebooklm_review": "10/10 PASS",
+      "authorization": "CT09_PILOT_ONLY",
+      "review_receipt": "review-packets/academic-depth/framework-r1/01_NOTEBOOKLM_FRAMEWORK_R1_PASS_RECEIPT.md",
+      "mass_edit_authorized": false,
+      "ct09_source_branch": "academic-depth-ct09-source-intake-r1-20261003",
+      "ct09_sources": {
+        "s1_status": "KNTT_SGK_AND_SBT_GRADE9_REGISTERED_AND_EXTRACTED",
+        "s2_status": "VHB_NCPT9_T2_REGISTERED_AND_EXTRACTED_AS_S2_S4_HYBRID",
+        "s3_primary": "HANOI_ENTRANCE_2023_2024_2025_2026_REGISTERED",
+        "s3_secondary_discovery": "LOIGIAIHAY_KNTT_G9_REGISTERED_WITH_PROVENANCE_GUARD",
+        "sbt9_t1_sha256": "ae9a23c66c5d9d273a0726d322c48be4cefa813bc6be9e69fc5d64a40e70a986",
+        "sbt9_t2_sha256": "5ff01fd213d1adc75f9c54b4408d6a9642a4d8038e685040efef3311a196196c",
+        "s1_ct09_extraction": "review-packets/academic-depth/ct09-r0/05_S1_KNTT_SBT_CT09_EXTRACTION_R0.md",
+        "s2_registry": "review-packets/academic-depth/ct09-r0/06_REFERENCE_SOURCE_REGISTRY_R0.md",
+        "s2_ct09_extraction": "review-packets/academic-depth/ct09-r0/07_S2_S4_VU_HUU_BINH_CT09_EXTRACTION_R0.md",
+        "vhb_t1_sha256": "21bf8ae95f1272d507bd134a2d99fcb65db6f8fb8861f1c99cef78a7e3faefd8",
+        "vhb_t2_sha256": "043b5dc6f93429f811b8949b618b56b2af30cfada508d5256e8a9f761f520893",
+        "gstnv_advanced9_sha256": "bf861f427ee8ae2f4535fb75c7361a4830910bf43782479d6c39b54002975aa1",
+        "gstnv_classification": "S5_IDEA_DRAFT_ONLY",
+        "s3_status": "HANOI_ENTRANCE_2023_2026_EXTRACTED_WITH_CURRENT_VS_HISTORICAL_SPLIT",
+        "s3_ct09_extraction": "review-packets/academic-depth/ct09-r0/08_S3_HANOI_ENTRANCE_CT09_EXTRACTION_R0.md",
+        "problem_type_matrix": "review-packets/academic-depth/ct09-r0/09_CT09_PROBLEM_TYPE_CATALOGUE_COVERAGE_MATRIX_R0.md",
+        "current_program_entrance_population": "HANOI_2025_2026_N2",
+        "historical_entrance_population": "HANOI_2023_2024_N2_NOT_POOLED"
+      },
+      "ct09_gap_audit": "review-packets/academic-depth/ct09-r1/10_CT09_CURRENT_SITE_D1_D6_GAP_AUDIT_R1.md",
+      "ct09_content_delta_plan": "review-packets/academic-depth/ct09-r1/11_CT09_CONTENT_DELTA_PLAN_R1.md",
+      "ct09_notebooklm_review_source": "review-packets/academic-depth/ct09-r1/12_NOTEBOOKLM_CT09_GAP_DELTA_R1.md",
+      "ct09_self_learning_ready_v1": false,
+      "ct09_p0_blockers": 0,
+      "ct09_dimension_verdicts": {
+        "D1": "REVISE_P1",
+        "D2": "REVISE_P1",
+        "D3": "REVISE_P1",
+        "D4": "REVISE_P1",
+        "D5": "REVISE_P1",
+        "D6": "REVISE_P1"
+      },
+      "ct09_notebooklm_gap_delta_review": "10/10 PASS",
+      "ct09_gap_delta_authorization": "CT09_PILOT_ONLY",
+      "ct09_gap_delta_review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md",
+      "ct09_p1a": {
+        "status": "OWNER_QA_PASS_CLOSED",
+        "scope": [
+          "parameter-lite Core-Support vs Entrance10 split",
+          "remove unsupported entrance-exam star-frequency labels",
+          "deep graph worked example",
+          "deep original count/value modeling worked example",
+          "calculator-support note"
+        ],
+        "branch": "fix/ct09-navigation-reading-ux-20261003",
+        "learner_history_mutation": false,
+        "mastery_readiness_change": false,
+        "backfill_regrade": false,
+        "owner_qa_required": true,
+        "owner_qa_findings": [
+          "display math in new worked examples rendered as raw dollar/LaTeX text",
+          "learner-facing CT09 copy exposed too much source-management and product terminology",
+          "Core practice skill overview was too prominent during learning"
+        ],
+        "owner_qa_fixes": [
+          "repair display-math delimiters",
+          "move corpus counts/years and internal layer terminology out of learner-facing CT09 copy",
+          "simplify learner practice/self-check wording",
+          "make skill overview and per-question skill metadata optional and collapsed by default across Core workspaces"
+        ],
+        "first_owner_hotfix_merge_sha": "daf3784d91333ce45445312ef109e111830b9c0f",
+        "first_owner_hotfix_deploy": "PASS",
+        "second_owner_qa_findings": [
+          "top quick-nav exam anchor did not activate after the H2 title changed",
+          "right-hand Material TOC anchors were broken by the H2-to-details transform except the unwrapped exam section",
+          "right-hand TOC subitems were too dense and needed default-closed +/- disclosure",
+          "calculator guidance should be shorter, policy-neutral and collapsible",
+          "topic reading text was visually too small relative to the infographic"
+        ],
+        "second_owner_qa_fixes": [
+          "map topic sections by numbered H2 fallback so renamed headings remain routable",
+          "preserve original H2 anchor IDs on section summaries and reveal closed parent cards for hash navigation",
+          "make right-hand TOC child groups default-closed with explicit +/− buttons",
+          "replace calculator subsection with a concise default-closed disclosure",
+          "increase topic lesson body text size to improve reading comfort"
+        ],
+        "owner_qa_pass": {
+          "date": "2026-10-03",
+          "devices": [
+            "desktop",
+            "iPad"
+          ],
+          "verdict": "PASS",
+          "notes": "Owner confirmed the interface is reasonable and much improved after the second navigation/reading UX fix."
+        }
+      },
+      "learner_focus_rule": {
+        "academic_content_first": true,
+        "internal_evidence_metadata_background": true,
+        "skill_metadata_default_collapsed": true,
+        "source_frequency_counts_not_default_learner_copy": true,
+        "management_terms_avoid_on_learner_surface": true
+      },
+      "topic22_workspace_alignment": {
+        "status": "IMPLEMENTED_PRE_CI",
+        "branch": "fix/topic22-workspace-alignment-20261003",
+        "scope": [
+          "register CĐ22 in shared topic workspace",
+          "retain THPT-Bridge / optional positioning",
+          "reuse shared quick-nav, anchor-preserving TOC and reading-size improvements",
+          "do not invent a KNTT-Core journey or standalone Core route"
+        ]
+      }
+    }
+  },
+  "handoff_required_fields": [
+    "TASK_ID",
+    "CONTEXT_VERSION",
+    "ROLE",
+    "LAYER",
+    "TOPIC",
+    "RESULT",
+    "UNCERTAINTIES"
+  ],
+  "do_not_assume": [
+    "An AI-generated draft is not source of truth.",
+    "Difficulty is not the same as curriculum layer.",
+    "A visually plausible geometry diagram is not necessarily geometrically valid.",
+    "Exam frequency claims require evidence from an exam corpus.",
+    "A grade mapping is an index over the Vertical Spine, not a separate curriculum tree."
+  ],
+  "collaboration": {
+    "hub_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/",
+    "handoff_protocol_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/handoff-protocol/",
+    "capability_benchmark_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/capability-benchmark/",
+    "task_board_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/task-board/",
+    "task_registry_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/task-registry.json",
+    "first_public_task": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G6-001/",
+    "offline_relay_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/offline-relay/",
+    "capability_profile_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/capability-profile.json",
+    "first_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
+    "next_public_task": "PROB23-READY-001",
+    "next_relay_packet": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/prob23-learn-gemini-author-001.json",
+    "protocol_version": "2.0",
+    "relay_v2": "All new author/reviewer batches MUST apply docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md: direct language, explicit units/population, never infer data or leave absent chart. Golden Template frozen."
+  }
+}

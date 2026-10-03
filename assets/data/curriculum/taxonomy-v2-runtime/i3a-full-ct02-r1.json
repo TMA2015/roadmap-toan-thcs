@@ -1,0 +1,2122 @@
+{
+  "schema": "skill-taxonomy-v2-i3a-ct02-policy-r1",
+  "version": 1,
+  "state": "I3A_FULL_CT02_SHADOW_ACTIVE",
+  "as_of": "2026-10-02",
+  "policy_id": "skill-taxonomy-v2-i3a-full-ct02-r1",
+  "capture_version": "taxonomy-v2-i3a-full-ct02-v1",
+  "runtime_enabled": true,
+  "normal_learner_ui_change": false,
+  "source_registry": {
+    "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+    "blob_sha": "c2f2e5b8d78a58d874f88524861326223fdbdf45"
+  },
+  "source_topic_policy": {
+    "path": "docs/assets/data/curriculum/taxonomy-v2-runtime/ct02-r1.json",
+    "blob_sha": "30a4ede71d6119ffd612aef8b153f1c7d2a786d2"
+  },
+  "prior_phase": {
+    "phase": "I2",
+    "owner_qa_receipt": "review-packets/skill-taxonomy/implementation/I2_CT02_SHADOW_CANARY_OWNER_QA_PASS.md",
+    "owner_qa_receipt_blob": "d06f811bc382d745f93faee3086043c38ceba551",
+    "store_continuity": true
+  },
+  "production_store": {
+    "key": "toan-thcs-taxonomy-v2-evidence-v1",
+    "schema": "taxonomy-v2-evidence-store-v1",
+    "recent_events_max": 500,
+    "migrate_from": null,
+    "backfill_existing_attempts": false,
+    "preserve_existing_i2_events": true
+  },
+  "runtime_rules": {
+    "default_capture": "NO_CAPTURE",
+    "legacy_write_first": true,
+    "fail_open": true,
+    "auto_retry_backfill": false,
+    "assisted_event_stored": true,
+    "assisted_event_independent": false,
+    "same_question_after_any_prior_exposure_independent": false,
+    "unseen_sibling_after_assisted_exposure_may_be_independent": true,
+    "negative_first_unassisted_is_independent": true,
+    "no_family_rows_never_write_events": true,
+    "family_mastery_threshold": null,
+    "core_readiness_credit": false,
+    "normal_learner_ui_change": false
+  },
+  "scope": {
+    "topic_id": "CT02",
+    "active_rows": 103,
+    "no_capture_guard_rows": 17,
+    "family_count": 10,
+    "families": [
+      "NUM-SETS",
+      "NUM-INTEGER-OPS",
+      "NUM-ABS",
+      "NUM-ORDER",
+      "NUM-POWER",
+      "NUM-DIV-PRIME",
+      "NUM-GCD-LCM",
+      "NUM-FRACTION-FORM",
+      "NUM-FRACTION-OPS",
+      "NUM-PERCENT"
+    ],
+    "max_independent_units": 75
+  },
+  "rows": [
+    {
+      "question_id": "NUM02V1_001",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "tap-hop-so"
+      ],
+      "diagnostic_skill_id": "tap-hop-so",
+      "family_id": "NUM-SETS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "NUM02-SET-RECOG-001-005",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_002",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "tap-hop-so"
+      ],
+      "diagnostic_skill_id": "tap-hop-so",
+      "family_id": "NUM-SETS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "NUM02-SET-RECOG-001-005",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_003",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "tap-hop-so"
+      ],
+      "diagnostic_skill_id": "tap-hop-so",
+      "family_id": "NUM-SETS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "NUM02-SET-RECOG-001-005",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_004",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "tap-hop-so"
+      ],
+      "diagnostic_skill_id": "tap-hop-so",
+      "family_id": "NUM-SETS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_005",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "tap-hop-so"
+      ],
+      "diagnostic_skill_id": "tap-hop-so",
+      "family_id": "NUM-SETS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": "NUM02-SET-RECOG-001-005",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_006",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_007",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-INT-ADD-007-008",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_008",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-INT-ADD-007-008",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_009",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-INT-MUL-009-010",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_010",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-INT-MUL-009-010",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_011",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_012",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-INT-ADDSUB-012-014",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_013",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-INT-ADDSUB-012-014",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_014",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-INT-ADDSUB-012-014",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_015",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "gia-tri-tuyet-doi"
+      ],
+      "diagnostic_skill_id": "gia-tri-tuyet-doi",
+      "family_id": "NUM-ABS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-ABS-EVAL-015-016",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_016",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "gia-tri-tuyet-doi"
+      ],
+      "diagnostic_skill_id": "gia-tri-tuyet-doi",
+      "family_id": "NUM-ABS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-ABS-EVAL-015-016",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_017",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "gia-tri-tuyet-doi"
+      ],
+      "diagnostic_skill_id": "gia-tri-tuyet-doi",
+      "family_id": "NUM-ABS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_018",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "thu-tu-phep-tinh",
+        "luy-thua"
+      ],
+      "diagnostic_skill_id": "thu-tu-phep-tinh",
+      "family_id": "NUM-ORDER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_019",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "thu-tu-phep-tinh"
+      ],
+      "diagnostic_skill_id": "thu-tu-phep-tinh",
+      "family_id": "NUM-ORDER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_020",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "thu-tu-phep-tinh"
+      ],
+      "diagnostic_skill_id": "thu-tu-phep-tinh",
+      "family_id": "NUM-ORDER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_021",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "luy-thua"
+      ],
+      "diagnostic_skill_id": "luy-thua",
+      "family_id": "NUM-POWER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_022",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "luy-thua"
+      ],
+      "diagnostic_skill_id": "luy-thua",
+      "family_id": "NUM-POWER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_023",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "luy-thua"
+      ],
+      "diagnostic_skill_id": "luy-thua",
+      "family_id": "NUM-POWER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_024",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "luy-thua"
+      ],
+      "diagnostic_skill_id": "luy-thua",
+      "family_id": "NUM-POWER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_025",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "luy-thua"
+      ],
+      "diagnostic_skill_id": "luy-thua",
+      "family_id": "NUM-POWER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_026",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "luy-thua"
+      ],
+      "diagnostic_skill_id": "luy-thua",
+      "family_id": "NUM-POWER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_027",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "luy-thua"
+      ],
+      "diagnostic_skill_id": "luy-thua",
+      "family_id": "NUM-POWER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_028",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "luy-thua",
+        "thu-tu-phep-tinh"
+      ],
+      "diagnostic_skill_id": "luy-thua",
+      "family_id": "NUM-POWER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_029",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "luy-thua",
+        "thu-tu-phep-tinh"
+      ],
+      "diagnostic_skill_id": "thu-tu-phep-tinh",
+      "family_id": "NUM-ORDER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_030",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-01.json",
+      "source_blob": "42bbc54fafede2294ae3d2a39b6196533a886463",
+      "legacy_skill_tags": [
+        "thu-tu-phep-tinh"
+      ],
+      "diagnostic_skill_id": "thu-tu-phep-tinh",
+      "family_id": "NUM-ORDER",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_031",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "dau-hieu-chia-het"
+      ],
+      "diagnostic_skill_id": "dau-hieu-chia-het",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_032",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "dau-hieu-chia-het"
+      ],
+      "diagnostic_skill_id": "dau-hieu-chia-het",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_033",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "dau-hieu-chia-het"
+      ],
+      "diagnostic_skill_id": "dau-hieu-chia-het",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_034",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "dau-hieu-chia-het"
+      ],
+      "diagnostic_skill_id": "dau-hieu-chia-het",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_035",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "dau-hieu-chia-het"
+      ],
+      "diagnostic_skill_id": "dau-hieu-chia-het",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_036",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "dau-hieu-chia-het"
+      ],
+      "diagnostic_skill_id": "dau-hieu-chia-het",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_037",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "dau-hieu-chia-het"
+      ],
+      "diagnostic_skill_id": "dau-hieu-chia-het",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_038",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "dau-hieu-chia-het"
+      ],
+      "diagnostic_skill_id": "dau-hieu-chia-het",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_039",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "so-nguyen-to"
+      ],
+      "diagnostic_skill_id": "so-nguyen-to",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_040",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "so-nguyen-to"
+      ],
+      "diagnostic_skill_id": "so-nguyen-to",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_041",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "phan-tich-thua-so-nguyen-to"
+      ],
+      "diagnostic_skill_id": "phan-tich-thua-so-nguyen-to",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-PRIME-FACTOR-041-042",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_042",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "phan-tich-thua-so-nguyen-to"
+      ],
+      "diagnostic_skill_id": "phan-tich-thua-so-nguyen-to",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-PRIME-FACTOR-041-042",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_043",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "so-nguyen-to"
+      ],
+      "diagnostic_skill_id": "so-nguyen-to",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_044",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "so-nguyen-to"
+      ],
+      "diagnostic_skill_id": "so-nguyen-to",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_045",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "ucln"
+      ],
+      "diagnostic_skill_id": "ucln",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-GCD-CALC-045-047-051-052",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_046",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "ucln"
+      ],
+      "diagnostic_skill_id": "ucln",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-GCD-CALC-045-047-051-052",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_047",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "ucln"
+      ],
+      "diagnostic_skill_id": "ucln",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-GCD-CALC-045-047-051-052",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_048",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "ucln"
+      ],
+      "diagnostic_skill_id": "ucln",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_049",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "ucln"
+      ],
+      "diagnostic_skill_id": "ucln",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-GCD-GROUP-049-050-114",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_050",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "ucln"
+      ],
+      "diagnostic_skill_id": "ucln",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-GCD-GROUP-049-050-114",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_051",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "ucln"
+      ],
+      "diagnostic_skill_id": "ucln",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-GCD-CALC-045-047-051-052",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_052",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "ucln"
+      ],
+      "diagnostic_skill_id": "ucln",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-GCD-CALC-045-047-051-052",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_053",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "bcnn"
+      ],
+      "diagnostic_skill_id": "bcnn",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-LCM-CALC-053-055",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_054",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "bcnn"
+      ],
+      "diagnostic_skill_id": "bcnn",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-LCM-CALC-053-055",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_055",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "bcnn"
+      ],
+      "diagnostic_skill_id": "bcnn",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-LCM-CALC-053-055",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_056",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "bcnn"
+      ],
+      "diagnostic_skill_id": "bcnn",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-LCM-CYCLE-056-057-115",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_057",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "bcnn"
+      ],
+      "diagnostic_skill_id": "bcnn",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-LCM-CYCLE-056-057-115",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_058",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "bcnn"
+      ],
+      "diagnostic_skill_id": "bcnn",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_059",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "ucln",
+        "bcnn"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_060",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-02.json",
+      "source_blob": "34cd88e67336ef7fec0d4d45201a786f3450657b",
+      "legacy_skill_tags": [
+        "so-nguyen-to",
+        "phan-tich-thua-so-nguyen-to"
+      ],
+      "diagnostic_skill_id": "phan-tich-thua-so-nguyen-to",
+      "family_id": "NUM-DIV-PRIME",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_061",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "rut-gon-phan-so"
+      ],
+      "diagnostic_skill_id": "rut-gon-phan-so",
+      "family_id": "NUM-FRACTION-FORM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-FRAC-SIMPLIFY-061-062-064-066",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_062",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "rut-gon-phan-so"
+      ],
+      "diagnostic_skill_id": "rut-gon-phan-so",
+      "family_id": "NUM-FRACTION-FORM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-FRAC-SIMPLIFY-061-062-064-066",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_063",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "rut-gon-phan-so"
+      ],
+      "diagnostic_skill_id": "rut-gon-phan-so",
+      "family_id": "NUM-FRACTION-FORM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_064",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "rut-gon-phan-so"
+      ],
+      "diagnostic_skill_id": "rut-gon-phan-so",
+      "family_id": "NUM-FRACTION-FORM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-FRAC-SIMPLIFY-061-062-064-066",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_065",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "rut-gon-phan-so"
+      ],
+      "diagnostic_skill_id": "rut-gon-phan-so",
+      "family_id": "NUM-FRACTION-FORM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_066",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "rut-gon-phan-so"
+      ],
+      "diagnostic_skill_id": "rut-gon-phan-so",
+      "family_id": "NUM-FRACTION-FORM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-FRAC-SIMPLIFY-061-062-064-066",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_067",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "quy-dong-so-sanh-phan-so"
+      ],
+      "diagnostic_skill_id": "quy-dong-so-sanh-phan-so",
+      "family_id": "NUM-FRACTION-FORM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_068",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "quy-dong-so-sanh-phan-so"
+      ],
+      "diagnostic_skill_id": "quy-dong-so-sanh-phan-so",
+      "family_id": "NUM-FRACTION-FORM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_069",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "quy-dong-so-sanh-phan-so",
+        "so-huu-ti-thap-phan"
+      ],
+      "diagnostic_skill_id": "quy-dong-so-sanh-phan-so",
+      "family_id": "NUM-FRACTION-FORM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_070",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "quy-dong-so-sanh-phan-so"
+      ],
+      "diagnostic_skill_id": "quy-dong-so-sanh-phan-so",
+      "family_id": "NUM-FRACTION-FORM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_071",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "quy-dong-so-sanh-phan-so"
+      ],
+      "diagnostic_skill_id": "quy-dong-so-sanh-phan-so",
+      "family_id": "NUM-FRACTION-FORM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_072",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "quy-dong-so-sanh-phan-so"
+      ],
+      "diagnostic_skill_id": "quy-dong-so-sanh-phan-so",
+      "family_id": "NUM-FRACTION-FORM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_073",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so"
+      ],
+      "diagnostic_skill_id": "phep-tinh-phan-so",
+      "family_id": "NUM-FRACTION-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-FRAC-ADD-073-075",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_074",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so"
+      ],
+      "diagnostic_skill_id": "phep-tinh-phan-so",
+      "family_id": "NUM-FRACTION-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_075",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so"
+      ],
+      "diagnostic_skill_id": "phep-tinh-phan-so",
+      "family_id": "NUM-FRACTION-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-FRAC-ADD-073-075",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_076",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so"
+      ],
+      "diagnostic_skill_id": "phep-tinh-phan-so",
+      "family_id": "NUM-FRACTION-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_077",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so"
+      ],
+      "diagnostic_skill_id": "phep-tinh-phan-so",
+      "family_id": "NUM-FRACTION-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_078",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so"
+      ],
+      "diagnostic_skill_id": "phep-tinh-phan-so",
+      "family_id": "NUM-FRACTION-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_079",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so"
+      ],
+      "diagnostic_skill_id": "phep-tinh-phan-so",
+      "family_id": "NUM-FRACTION-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_080",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so"
+      ],
+      "diagnostic_skill_id": "phep-tinh-phan-so",
+      "family_id": "NUM-FRACTION-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_081",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so",
+        "thu-tu-phep-tinh"
+      ],
+      "diagnostic_skill_id": "phep-tinh-phan-so",
+      "family_id": "NUM-FRACTION-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_082",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so",
+        "luy-thua",
+        "thu-tu-phep-tinh"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_083",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "so-huu-ti-thap-phan"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_084",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "so-huu-ti-thap-phan"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_085",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "so-huu-ti-thap-phan"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_086",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "so-huu-ti-thap-phan",
+        "tap-hop-so"
+      ],
+      "diagnostic_skill_id": "tap-hop-so",
+      "family_id": "NUM-SETS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_087",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "so-huu-ti-thap-phan"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_088",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "so-huu-ti-thap-phan"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_089",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "so-huu-ti-thap-phan",
+        "quy-dong-so-sanh-phan-so"
+      ],
+      "diagnostic_skill_id": "quy-dong-so-sanh-phan-so",
+      "family_id": "NUM-FRACTION-FORM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_090",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-03.json",
+      "source_blob": "7ec0f1ef494acb96be3863101d86721a87ef09cf",
+      "legacy_skill_tags": [
+        "so-huu-ti-thap-phan",
+        "phep-tinh-phan-so"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_091",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-PERCENT-CONVERT-091-092",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_092",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-PERCENT-CONVERT-091-092",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_093",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-PERCENT-OF-093-094-110-118",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_094",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-PERCENT-OF-093-094-110-118",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_095",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_096",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_097",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_098",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_099",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_100",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_101",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_102",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_103",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "can-bac-hai"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": "Core-Support",
+      "mapping_role": "SUPPORTING_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-ROOT-CALC-103-104",
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_104",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "can-bac-hai"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": "Core-Support",
+      "mapping_role": "SUPPORTING_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-ROOT-CALC-103-104",
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_105",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "can-bac-hai"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": "Core-Support",
+      "mapping_role": "SUPPORTING_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_106",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "can-bac-hai"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": "Core-Support",
+      "mapping_role": "SUPPORTING_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_107",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "can-bac-hai"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": "Core-Support",
+      "mapping_role": "SUPPORTING_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_108",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "can-bac-hai"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": "Core-Support",
+      "mapping_role": "SUPPORTING_SKILL",
+      "evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_109",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so"
+      ],
+      "diagnostic_skill_id": "phep-tinh-phan-so",
+      "family_id": "NUM-FRACTION-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_110",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-PERCENT-OF-093-094-110-118",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_111",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so"
+      ],
+      "diagnostic_skill_id": "phep-tinh-phan-so",
+      "family_id": "NUM-FRACTION-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_112",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-INTEGER-CONTEXT-112-113",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_113",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "so-nguyen-phep-tinh"
+      ],
+      "diagnostic_skill_id": "so-nguyen-phep-tinh",
+      "family_id": "NUM-INTEGER-OPS",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-INTEGER-CONTEXT-112-113",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_114",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "ucln"
+      ],
+      "diagnostic_skill_id": "ucln",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-GCD-GROUP-049-050-114",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_115",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "bcnn"
+      ],
+      "diagnostic_skill_id": "bcnn",
+      "family_id": "NUM-GCD-LCM",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-LCM-CYCLE-056-057-115",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_116",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_117",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "can-bac-hai"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": "Core-Support",
+      "mapping_role": "SUPPORTING_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_118",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": "phan-tram",
+      "family_id": "NUM-PERCENT",
+      "family_layer": "KNTT-Core",
+      "mapping_role": "ASSESSED_SKILL",
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": "NUM02-PERCENT-OF-093-094-110-118",
+      "policy_disposition": "FAMILY_LINK_REVIEWED",
+      "capture_status": "I3A_CT02_ACTIVE"
+    },
+    {
+      "question_id": "NUM02V1_119",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so",
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    },
+    {
+      "question_id": "NUM02V1_120",
+      "topic_id": "CT02",
+      "source_file": "02-so-va-phep-tinh-v1-04.json",
+      "source_blob": "556fca88c5aef7b207e57153330c1dc284ac3955",
+      "legacy_skill_tags": [
+        "phep-tinh-phan-so",
+        "phan-tram"
+      ],
+      "diagnostic_skill_id": null,
+      "family_id": null,
+      "family_layer": null,
+      "mapping_role": null,
+      "evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family": null,
+      "policy_disposition": "FORMATIVE_ONLY_NO_FAMILY",
+      "capture_status": "I3A_CT02_NO_FAMILY_GUARD"
+    }
+  ]
+}

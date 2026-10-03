@@ -1,0 +1,33 @@
+{
+  "schema": "complete-factorization-preview-v1",
+  "status": "opt_in_unscored_no_storage",
+  "as_of": "2026-09-27",
+  "topic": "06-phan-tich-da-thuc",
+  "candidate_assessed_skill": "phan-tich-da-thuc-hoan-toan",
+  "display_label": "Nhận diện kết quả phân tích đa thức hoàn toàn",
+  "legacy_source_tag": "phoi-hop-phuong-phap",
+  "source_file": "06-phan-tich-da-thuc-v1-03.json",
+  "source_file_blob_sha": "ce11cc3aa3e9e7511cbe3ccd06af703ec0bef457",
+  "question_ids": [
+    "FAC06V1_077",
+    "FAC06V1_078",
+    "FAC06V1_079",
+    "FAC06V1_080",
+    "FAC06V1_081",
+    "FAC06V1_082",
+    "FAC06V1_083",
+    "FAC06V1_084"
+  ],
+  "question_family_coverage": [
+    "Đặt nhân tử chung + hiệu hai bình phương",
+    "Đặt nhân tử chung + bình phương hoàn chỉnh",
+    "Nhóm hạng tử + hiệu hai bình phương",
+    "Đặt nhân tử chung + phân tích tam thức"
+  ],
+  "warnings": [
+    "One point only checks identification of the fully factored result; it does not reveal the learner's unobserved steps.",
+    "This preview does not write localStorage, v1, assessment v2 or Core Readiness.",
+    "Retry after seeing the answer is review, not fresh independent evidence.",
+    "The proposed new assessment code is not yet registered in the canonical live skill catalog."
+  ]
+}

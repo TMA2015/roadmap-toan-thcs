@@ -1,0 +1,306 @@
+{
+  "version": 1,
+  "schema": "roadmap-readiness-assessment-v1",
+  "assessment_id": "PROB23-CORE-READY-V1",
+  "title": "Core Readiness Check – Chuyên đề 23 – Xác suất",
+  "topic": {
+    "id": "23-xac-suat",
+    "title": "Chuyên đề 23 – Xác suất"
+  },
+  "layer": "KNTT-Core",
+  "skill_labels": {
+    "xac-suat-thuc-nghiem": "Xác suất thực nghiệm",
+    "bien-co-chac-chan-khong-the": "Biến cố chắc chắn và không thể",
+    "xac-suat-co-dien": "Xác suất với các kết quả đồng khả năng",
+    "phep-thu-ngau-nhien": "Phép thử ngẫu nhiên",
+    "kiem-tra-xac-suat": "Kiểm tra giá trị xác suất"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "PRO23READY_001",
+      "type": "mcq",
+      "skill": "xac-suat-thuc-nghiem",
+      "points": 1,
+      "question": "Tung đồng xu 40 lần, mặt ngửa xuất hiện 12 lần. Xác suất thực nghiệm của mặt ngửa là bao nhiêu?",
+      "options": [
+        "3/10",
+        "1/2",
+        "12/28",
+        "28/40"
+      ],
+      "answer": 0,
+      "explanation": "Tỉ số quan sát là 12/40 = 3/10.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "PRO23READY_002",
+      "type": "mcq",
+      "skill": "xac-suat-thuc-nghiem",
+      "points": 1,
+      "question": "Trong 20 lượt quay có 7 lượt đỏ và 13 lượt xanh. Xác suất thực nghiệm của ô xanh là bao nhiêu?",
+      "options": [
+        "7/20",
+        "13/7",
+        "13/20",
+        "1/2"
+      ],
+      "answer": 2,
+      "explanation": "Có 13 lần xanh trong tổng 20 lượt: 13/20.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "PRO23READY_003",
+      "type": "mcq",
+      "skill": "xac-suat-thuc-nghiem",
+      "points": 1,
+      "question": "Một thí nghiệm thực hiện 60 lần, sự kiện A xuất hiện 18 lần. Tần số tương đối của A là bao nhiêu?",
+      "options": [
+        "0,18",
+        "0,3",
+        "0,6",
+        "3,0"
+      ],
+      "answer": 1,
+      "explanation": "Tần số tương đối bằng 18/60 = 0,3.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "PRO23READY_004",
+      "type": "mcq",
+      "skill": "xac-suat-thuc-nghiem",
+      "points": 1,
+      "question": "Một đồng xu được tung 30 lần, có 12 lần ngửa. Kết luận nào đúng về dãy thử này?",
+      "options": [
+        "Xác suất thực nghiệm của ngửa bằng 12/30",
+        "Lần tiếp theo chắc chắn ra sấp",
+        "Xác suất thực nghiệm của ngửa bằng 12/18",
+        "Tung thêm 10 lần phải có đúng 5 lần ngửa"
+      ],
+      "answer": 0,
+      "explanation": "Giá trị thực nghiệm chỉ mô tả 12 lần ngửa trong 30 lần quan sát, không bảo đảm kết quả tiếp theo.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "PRO23READY_005",
+      "type": "mcq",
+      "skill": "bien-co-chac-chan-khong-the",
+      "points": 1,
+      "question": "Gieo xúc xắc sáu mặt đánh số 1 đến 6. Biến cố “số chấm không lớn hơn 6” thuộc loại nào?",
+      "options": [
+        "Không thể",
+        "Ngẫu nhiên",
+        "Chắc chắn",
+        "Không xác định"
+      ],
+      "answer": 2,
+      "explanation": "Mọi mặt đều ghi số từ 1 đến 6; biến cố luôn xảy ra.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "PRO23READY_006",
+      "type": "mcq",
+      "skill": "bien-co-chac-chan-khong-the",
+      "points": 1,
+      "question": "Gieo xúc xắc sáu mặt đánh số 1 đến 6. Biến cố “ra số chấm bằng 8” thuộc loại nào?",
+      "options": [
+        "Chắc chắn",
+        "Không thể",
+        "Ngẫu nhiên",
+        "Phụ thuộc số lần gieo"
+      ],
+      "answer": 1,
+      "explanation": "Xúc xắc không có mặt ghi số 8.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "PRO23READY_007",
+      "type": "mcq",
+      "skill": "xac-suat-co-dien",
+      "points": 1,
+      "question": "Rút ngẫu nhiên một trong tám thẻ giống nhau ghi số từ 1 đến 8. Xác suất rút số chia hết cho 3 là bao nhiêu?",
+      "options": [
+        "3/8",
+        "1/8",
+        "2/3",
+        "1/4"
+      ],
+      "answer": 3,
+      "explanation": "Các số 3 và 6 thuận lợi trong 8 thẻ đồng khả năng: 2/8 = 1/4.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "PRO23READY_008",
+      "type": "mcq",
+      "skill": "xac-suat-co-dien",
+      "points": 1,
+      "question": "Gieo xúc xắc cân đối sáu mặt. Xác suất ra số chấm lẻ là bao nhiêu?",
+      "options": [
+        "1/6",
+        "1/2",
+        "2/3",
+        "1/3"
+      ],
+      "answer": 1,
+      "explanation": "Có ba mặt lẻ 1, 3, 5 trong 6 mặt đồng khả năng.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "PRO23READY_009",
+      "type": "mcq",
+      "skill": "phep-thu-ngau-nhien",
+      "points": 1,
+      "question": "Hoạt động nào dưới đây là một phép thử ngẫu nhiên theo mô tả?",
+      "options": [
+        "Đọc số ghi sẵn trên bảng",
+        "Đếm số chân của bàn có bốn chân",
+        "Rút một thẻ từ hộp kín ghi số 1 đến 5 mà không nhìn",
+        "Tính 2 + 3"
+      ],
+      "answer": 2,
+      "explanation": "Biết các kết quả có thể nhưng không biết chắc kết quả trước khi rút.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "PRO23READY_010",
+      "type": "mcq",
+      "skill": "xac-suat-co-dien",
+      "points": 1,
+      "question": "Vòng quay có 8 ô bằng nhau, trong đó 3 ô xanh. Mỗi ô đồng khả năng. Xác suất kim dừng ở màu xanh là bao nhiêu?",
+      "options": [
+        "3/8",
+        "3/5",
+        "1/8",
+        "5/8"
+      ],
+      "answer": 0,
+      "explanation": "Ba ô thuận lợi trong tám ô đồng khả năng: 3/8.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "PRO23READY_011",
+      "type": "mcq",
+      "skill": "xac-suat-thuc-nghiem",
+      "points": 1,
+      "question": "Mô hình đồng xu cân đối cho P(ngửa) = 1/2. Sau 20 lượt tung có 11 lần ngửa. Phát biểu nào đúng?",
+      "options": [
+        "Xác suất thực nghiệm bằng 1/2",
+        "Dữ liệu 11 lần ngửa là không thể",
+        "Xác suất thực nghiệm bằng 11/20, khác giá trị mô hình 1/2",
+        "Lần sau chắc chắn ra sấp"
+      ],
+      "answer": 2,
+      "explanation": "Tỉ lệ quan sát 11/20 = 0,55, không nhất thiết bằng xác suất mô hình 1/2.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      }
+    },
+    {
+      "id": "PRO23READY_012",
+      "type": "mcq",
+      "skill": "kiem-tra-xac-suat",
+      "points": 1,
+      "question": "Một bạn tính được xác suất của biến cố A bằng -0,2. Nhận xét nào đúng?",
+      "options": [
+        "Hợp lệ vì có thể âm",
+        "Hợp lệ nếu A không thể",
+        "Hợp lệ vì trị tuyệt đối nhỏ hơn 1",
+        "Không hợp lệ vì xác suất luôn từ 0 đến 1"
+      ],
+      "answer": 3,
+      "explanation": "Mọi xác suất thỏa mãn 0 ≤ P(A) ≤ 1; giá trị âm cho thấy phép tính sai.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core"
+      }
+    }
+  ],
+  "next_topic": {
+    "id": "24-bai-toan-thuc-te",
+    "title": "Chuyên đề 24 – Bài toán thực tế"
+  }
+}

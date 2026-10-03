@@ -1,0 +1,31 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "ALG-REVIEW-04-11-GEMINI-001",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "REVIEW",
+  "scope": {
+    "topics": [
+      "04-bieu-thuc-dai-so",
+      "05-7-hang-dang-thuc",
+      "06-phan-tich-da-thuc",
+      "07-phan-thuc-dai-so",
+      "08-phuong-trinh-bat-phuong-trinh",
+      "09-he-phuong-trinh",
+      "10-ham-so-do-thi",
+      "11-can-thuc"
+    ]
+  },
+  "bundle_builder": "scripts/build-gemini-review-bundle-04-11.js",
+  "bundle_output": "gemini-review-04-11.json",
+  "rules": [
+    "Repository source embedded by the builder is authoritative.",
+    "Every issue must cite an existing item ID and quote the current prompt exactly; prose issues use source_path + heading + exact quote.",
+    "Do not invent IDs or reconstruct questions from memory.",
+    "Do not redesign frozen Golden Template or Core/Extension boundaries in this review.",
+    "Return only verified corrections and clearly labeled optional suggestions."
+  ],
+  "acceptance": {
+    "verdict": "PENDING"
+  }
+}

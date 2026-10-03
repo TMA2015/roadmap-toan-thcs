@@ -1,0 +1,197 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "SYS09-CORE-READY-V1",
+  "topic": {
+    "id": "09-he-phuong-trinh",
+    "title": "Chuyên đề 09 – Hệ phương trình bậc nhất hai ẩn"
+  },
+  "layer": "KNTT-Core",
+  "title": "Core Readiness Check – Chuyên đề 09 – Hệ phương trình bậc nhất hai ẩn",
+  "skill_labels": {
+    "nghiem-pt-hai-an": "Nghiệm phương trình hai ẩn",
+    "nghiem-he": "Nghiệm hệ",
+    "so-nghiem-he": "Số nghiệm của hệ",
+    "y-nghia-hinh-hoc": "Ý nghĩa hình học",
+    "giai-he-the": "Phương pháp thế",
+    "giai-he-cong": "Cộng đại số",
+    "bien-doi-truoc-giai": "Biến đổi trước giải",
+    "chon-phuong-phap": "Chọn phương pháp",
+    "kiem-tra-nghiem-he": "Kiểm tra nghiệm",
+    "lap-he-bai-toan": "Lập hệ từ bài toán"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "SYS09READY_001",
+      "type": "mcq",
+      "skill": "nghiem-pt-hai-an",
+      "points": 1,
+      "question": "Cặp nào thỏa \\(2x+y=7\\)?",
+      "options": [
+        "\\((3;1)\\)",
+        "\\((2;1)\\)",
+        "\\((1;3)\\)",
+        "\\((0;7)\\)"
+      ],
+      "answer": 0,
+      "explanation": "2·3+1=7."
+    },
+    {
+      "id": "SYS09READY_002",
+      "type": "mcq",
+      "skill": "nghiem-he",
+      "points": 1,
+      "question": "Cặp \\((2;1)\\) có là nghiệm của hệ \\(x+y=3,\\ 2x-y=3\\) không?",
+      "options": [
+        "Có",
+        "Không vì sai phương trình đầu",
+        "Không vì sai phương trình hai",
+        "Không thể biết"
+      ],
+      "answer": 0,
+      "explanation": "Cặp này thỏa cả hai phương trình."
+    },
+    {
+      "id": "SYS09READY_003",
+      "type": "mcq",
+      "skill": "y-nghia-hinh-hoc",
+      "points": 1,
+      "question": "Hệ có đúng một nghiệm khi hai đường thẳng tương ứng:",
+      "options": [
+        "Cắt nhau tại một điểm",
+        "Song song phân biệt",
+        "Trùng nhau",
+        "Không cùng mặt phẳng"
+      ],
+      "answer": 0,
+      "explanation": "Một giao điểm chung tương ứng một nghiệm."
+    },
+    {
+      "id": "SYS09READY_004",
+      "type": "mcq",
+      "skill": "giai-he-the",
+      "points": 1,
+      "question": "Hệ \\(y=x+1,\\ x+y=7\\) có nghiệm:",
+      "options": [
+        "\\((3;4)\\)",
+        "\\((4;3)\\)",
+        "\\((2;5)\\)",
+        "\\((1;6)\\)"
+      ],
+      "answer": 0,
+      "explanation": "Thế y=x+1 được 2x+1=7."
+    },
+    {
+      "id": "SYS09READY_005",
+      "type": "mcq",
+      "skill": "giai-he-cong",
+      "points": 1,
+      "question": "Hệ \\(x+y=8,\\ x-y=2\\) có nghiệm:",
+      "options": [
+        "\\((5;3)\\)",
+        "\\((3;5)\\)",
+        "\\((4;4)\\)",
+        "\\((6;2)\\)"
+      ],
+      "answer": 0,
+      "explanation": "Cộng hai phương trình được 2x=10."
+    },
+    {
+      "id": "SYS09READY_006",
+      "type": "mcq",
+      "skill": "bien-doi-truoc-giai",
+      "points": 1,
+      "question": "Để khử mẫu trong \\(x/2+y/3=1\\), nên nhân cả hai vế với:",
+      "options": [
+        "6",
+        "3",
+        "2",
+        "5"
+      ],
+      "answer": 0,
+      "explanation": "BCNN của 2 và 3 là 6."
+    },
+    {
+      "id": "SYS09READY_007",
+      "type": "mcq",
+      "skill": "chon-phuong-phap",
+      "points": 1,
+      "question": "Hệ \\(x=2y+1,\\ 3x+y=10\\) thuận tiện nhất dùng:",
+      "options": [
+        "Phương pháp thế",
+        "Cộng đại số bắt buộc",
+        "Đồ thị bắt buộc",
+        "Không giải được"
+      ],
+      "answer": 0,
+      "explanation": "x đã được biểu diễn theo y."
+    },
+    {
+      "id": "SYS09READY_008",
+      "type": "mcq",
+      "skill": "kiem-tra-nghiem-he",
+      "points": 1,
+      "question": "Muốn xác nhận một cặp là nghiệm hệ, cần:",
+      "options": [
+        "Thay vào tất cả phương trình của hệ.",
+        "Chỉ thay vào một phương trình.",
+        "Chỉ kiểm tra hoành độ.",
+        "Chỉ kiểm tra tung độ."
+      ],
+      "answer": 0,
+      "explanation": "Nghiệm hệ phải thỏa đồng thời tất cả phương trình."
+    },
+    {
+      "id": "SYS09READY_009",
+      "type": "mcq",
+      "skill": "so-nghiem-he",
+      "points": 1,
+      "question": "Hai đường thẳng song song phân biệt cho hệ:",
+      "options": [
+        "Vô nghiệm",
+        "Một nghiệm",
+        "Vô số nghiệm",
+        "Hai nghiệm"
+      ],
+      "answer": 0,
+      "explanation": "Không có giao điểm chung."
+    },
+    {
+      "id": "SYS09READY_010",
+      "type": "mcq",
+      "skill": "lap-he-bai-toan",
+      "points": 1,
+      "question": "Tổng hai số là 30, hiệu số lớn trừ số bé là 6. Gọi số lớn x, số bé y. Hệ đúng là:",
+      "options": [
+        "\\(x+y=30,\\ x-y=6\\)",
+        "\\(x-y=30,\\ x+y=6\\)",
+        "\\(xy=30,\\ x-y=6\\)",
+        "\\(x+y=36,\\ x-y=30\\)"
+      ],
+      "answer": 0,
+      "explanation": "Dịch trực tiếp quan hệ tổng và hiệu."
+    }
+  ],
+  "next_topic": {
+    "id": "10-ham-so-do-thi",
+    "title": "Chuyên đề 10 – Hàm số và đồ thị"
+  }
+}

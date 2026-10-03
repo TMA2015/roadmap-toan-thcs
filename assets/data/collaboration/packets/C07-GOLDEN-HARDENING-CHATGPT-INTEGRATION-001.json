@@ -1,0 +1,104 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "C07-GOLDEN-HARDENING-CHATGPT-INTEGRATION-001",
+  "task_id": "C07-GOLDEN-HARDENING-001",
+  "context_version": "1.0.21",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "INTEGRATION_DECISION",
+  "scope": {
+    "layer": [
+      "KNTT-Core",
+      "SYSTEM"
+    ],
+    "topics": [
+      "07-phan-thuc-dai-so"
+    ],
+    "skills": []
+  },
+  "source_artifacts": [
+    "docs/assets/javascripts/math-details-v1.js",
+    "docs/assets/stylesheets/topic-workspace.css",
+    "docs/assets/stylesheets/assessment-engine.css",
+    "scripts/test-golden-template.js",
+    "scripts/test-learning-card-micro-practice.js",
+    "docs/assets/data/curriculum/golden-template-v1.json"
+  ],
+  "claims": [
+    {
+      "id": "I1",
+      "status": "FACT_VERIFIED",
+      "statement": "Readiness Engine v1 remains MCQ-only; no free-form expression input exists.",
+      "evidence": [
+        "assessment-engine-v1.js",
+        "readiness-assessment-v1.schema.json"
+      ]
+    },
+    {
+      "id": "I2",
+      "status": "FACT_VERIFIED",
+      "statement": "Practice and assessment evidence use separate localStorage keys.",
+      "evidence": [
+        "learner-evidence-v1.js",
+        "assessment-engine-v1.js"
+      ]
+    },
+    {
+      "id": "I3",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "MORE_EVIDENCE_NEEDED remains tied to insufficient answered coverage, not low score.",
+      "evidence": [
+        "Soft Mastery semantics"
+      ]
+    },
+    {
+      "id": "I4",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Golden Template v1.0.1 adds non-breaking mobile/math hardening without changing frozen invariants.",
+      "evidence": [
+        "golden-template-v1.json"
+      ]
+    }
+  ],
+  "proposed_changes": [
+    {
+      "artifact": "Golden Template maintenance",
+      "change": "Apply details MathJax re-typeset, 44px touch targets, 8px micro-option gap, bottom CTAs and JSON control-character CI checks.",
+      "rationale": "Safe production hardening before CĐ04–CĐ06 rollout."
+    }
+  ],
+  "tests": [
+    {
+      "id": "T1",
+      "expected": "Modified JavaScript parses.",
+      "result": "PASS"
+    },
+    {
+      "id": "T2",
+      "expected": "Current CĐ07 micro/assessment JSON has no hidden control characters or suspicious single TeX backslashes.",
+      "result": "PASS"
+    },
+    {
+      "id": "T3",
+      "expected": "Bottom Practice/Readiness CTAs exist.",
+      "result": "PASS"
+    },
+    {
+      "id": "T4",
+      "expected": "Touch targets are explicitly >=44px and micro gap >=8px.",
+      "result": "PASS"
+    },
+    {
+      "id": "T5",
+      "expected": "Deploy CI runs both Golden Template and micro-practice validators.",
+      "result": "PASS"
+    }
+  ],
+  "uncertainties": [
+    "Real-device behavior was already reported good before hardening; post-patch deploy smoke check remains appropriate."
+  ],
+  "acceptance": {
+    "verdict": "PASS-WITH-CHANGES",
+    "notes": "Accepted all non-breaking hardening items; rejected score-band redefinition of MORE_EVIDENCE_NEEDED."
+  }
+}

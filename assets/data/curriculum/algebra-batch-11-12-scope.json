@@ -1,0 +1,93 @@
+{
+  "schema": "roadmap-golden-batch-scope-v1",
+  "batch_id": "ALG-BATCH-11-12-001",
+  "context_version": "1.0.29",
+  "title": "Căn thức → Phương trình bậc hai & Viète",
+  "topics": [
+    {
+      "id": "11-can-thuc",
+      "vertical_story": "Grade 9 căn bậc hai/biến đổi căn thức → căn bậc ba → chuẩn bị cho phương trình bậc hai và biểu thức thi vào 10",
+      "core_existing": [
+        "can-bac-hai-so-hoc",
+        "dkxd-can",
+        "can-binh-phuong",
+        "khai-phuong-tich",
+        "khai-phuong-thuong",
+        "dua-thua-so-ra",
+        "dua-thua-so-vao",
+        "can-dong-dang",
+        "nhan-chia-can",
+        "truc-can-mau-don",
+        "truc-can-lien-hop"
+      ],
+      "core_gaps_to_model": [
+        "can-bac-ba"
+      ],
+      "exclude_from_core": [],
+      "layer_review": [
+        "tim-x-can",
+        "so-sanh-can"
+      ],
+      "upstream": [
+        "phep-tinh-so-thuc",
+        "hang-dang-thuc"
+      ],
+      "downstream": [
+        "phuong-trinh-bac-hai-viete"
+      ]
+    },
+    {
+      "id": "12-phuong-trinh-bac-hai-viete",
+      "vertical_story": "Grade 9 y=ax² → phương trình bậc hai → Viète và lập phương trình từ nghiệm",
+      "core_existing": [
+        "nhan-dang-pt-bac-hai",
+        "he-so-abc",
+        "tinh-delta",
+        "so-nghiem-delta",
+        "cong-thuc-nghiem",
+        "delta-phay",
+        "giai-pt-bac-hai",
+        "nham-nghiem",
+        "tong-tich-nghiem",
+        "lap-pt-tu-nghiem"
+      ],
+      "core_gaps_to_model": [],
+      "exclude_from_core": [
+        "tham-so-so-nghiem"
+      ],
+      "layer_review": [
+        "bieu-thuc-doi-xung",
+        "dau-nghiem",
+        "lien-he-do-thi"
+      ],
+      "upstream": [
+        "ham-y-ax2",
+        "can-bac-hai-so-hoc"
+      ],
+      "downstream": [
+        "entrance10-algebra",
+        "high-school-quadratics"
+      ]
+    }
+  ],
+  "golden_template": {
+    "contract": "docs/assets/data/curriculum/golden-template-v1.json",
+    "invariants": "unchanged",
+    "target": "Learn Workspace + Practice Room + MCQ-only Core Readiness"
+  },
+  "production_rules": [
+    "ChatGPT authors/integrates from reviewed KNTT maps + existing Practice manifests as source-of-truth.",
+    "Gemini reviews pedagogy/math after a complete production draft; every correction must cite an existing item ID and quote the current prompt.",
+    "Each scored Core item has exactly one assessed skill.",
+    "New Core gap can-bac-ba requires real Practice Bank coverage before rollout.",
+    "Layer-review skills are not promoted to Core without item-level source evidence.",
+    "Entrance10/Challenge never affect Core readiness."
+  ],
+  "acceptance": [
+    "Both topics follow frozen Golden Template invariants.",
+    "CĐ11 can-bac-ba has actual interactive Practice Bank coverage.",
+    "Core Readiness is MCQ-only and after-submit.",
+    "Excluded/layer-review skills are absent from Core.",
+    "CI + strict MkDocs build + Pages smoke check pass."
+  ]
+}

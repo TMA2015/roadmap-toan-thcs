@@ -1,0 +1,54 @@
+{
+  "schema": "canonical-evidence-beta-v4-config-v1",
+  "status": "TECHNICAL_QA_ONLY_NOT_PRODUCTION_RELEASED",
+  "as_of": "2026-09-30",
+  "pilot_id": "core07-canonical-evidence-beta-v4",
+  "pilot_version": "beta-v4-core07-r1-20260930",
+  "reviewed_manifest": "data/curriculum/canonical-evidence-pilot-core07-r1.json",
+  "reviewed_manifest_blob": "f962acaff602b9b6bbe827bb2667f68004b5b109",
+  "notebook_review": {
+    "packet_id": "MATH-SKILL-CANONICAL-EVIDENCE-PILOT-R1-20260930",
+    "source_blob": "18c58eb3c11c7c8ca7e3da1091b6a87787ffa75b",
+    "verdict": "PASS",
+    "item_coverage": "12/12",
+    "revisions": 0
+  },
+  "storage_key": "toan-thcs-canonical-evidence-v1",
+  "immutable_existing_storage_keys": [
+    "toan-thcs-practice-v1",
+    "toan-thcs-assessment-v1",
+    "toan-thcs-assessment-v2"
+  ],
+  "content_version": "core07-source-locked-20260930",
+  "selected_item_ids": [
+    "RAT07V1_009",
+    "RAT07V1_010",
+    "RAT07V1_017",
+    "RAT07V1_018",
+    "RAT07V1_047",
+    "RAT07V1_055",
+    "RAT07V1_048",
+    "RAT07V1_056",
+    "RAT07V1_049",
+    "RAT07V1_057",
+    "RAT07V1_115",
+    "RAT07V1_116"
+  ],
+  "labels": {
+    "dieu-kien-xac-dinh": "Điều kiện xác định",
+    "rut-gon-phan-thuc": "Rút gọn phân thức",
+    "tinh-gia-tri-phan-thuc": "Tính giá trị phân thức",
+    "phan-tich-tu-mau": "Phân tích tử / mẫu"
+  },
+  "policy": {
+    "one_assessed_skill_per_event": true,
+    "supporting_skills_metadata_only": true,
+    "clone_family_dedup": true,
+    "correct_answer_does_not_equal_mastery": true,
+    "mastery_threshold": null,
+    "core_readiness_credit": false,
+    "historical_backfill": false,
+    "dual_write": false,
+    "practice_engine_integration": false
+  }
+}

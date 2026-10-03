@@ -1,0 +1,671 @@
+{
+  "version": 2,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "TRI14-V1-05",
+  "topic": {
+    "id": "14-tam-giac",
+    "title": "Tam giác"
+  },
+  "questions": [
+    {
+      "id": "TRI14V1_121",
+      "question": "Nếu \\(\\triangle ABC=\\triangle DEF\\), cặp đỉnh tương ứng đúng là:",
+      "options": [
+        "A↔D, B↔E, C↔F",
+        "A↔E, B↔D, C↔F",
+        "A↔F, B↔E, C↔D",
+        "A↔D, B↔F, C↔E"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "viet-tuong-ung-tam-giac-bang-nhau"
+        ],
+        "type": "viet-tuong-ung-tam-giac-bang-nhau",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Thứ tự ký hiệu hai tam giác bằng nhau cho biết trực tiếp các đỉnh tương ứng.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_122",
+      "question": "Biết A↔M, B↔N, C↔P. Cách viết đúng là:",
+      "options": [
+        "\\(\\triangle ABC=\\triangle MNP\\)",
+        "\\(\\triangle ABC=\\triangle NMP\\)",
+        "\\(\\triangle ACB=\\triangle MNP\\)",
+        "\\(\\triangle BAC=\\triangle MNP\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "viet-tuong-ung-tam-giac-bang-nhau"
+        ],
+        "type": "viet-tuong-ung-tam-giac-bang-nhau",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Phải giữ đúng thứ tự các cặp đỉnh tương ứng.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_123",
+      "question": "Nếu \\(\\triangle ABC=\\triangle MNP\\), cạnh tương ứng với AC là:",
+      "options": [
+        "MP",
+        "MN",
+        "NP",
+        "NM"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "viet-tuong-ung-tam-giac-bang-nhau"
+        ],
+        "type": "viet-tuong-ung-tam-giac-bang-nhau",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "A↔M và C↔P nên AC tương ứng MP.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_124",
+      "question": "Nếu \\(\\triangle ABC=\\triangle DEF\\), góc tương ứng với \\(\\angle B\\) là:",
+      "options": [
+        "\\(\\angle E\\)",
+        "\\(\\angle D\\)",
+        "\\(\\angle F\\)",
+        "Không xác định"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "viet-tuong-ung-tam-giac-bang-nhau"
+        ],
+        "type": "viet-tuong-ung-tam-giac-bang-nhau",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "B↔E theo thứ tự ký hiệu.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_125",
+      "question": "Đường trung trực của đoạn AB là đường thẳng:",
+      "options": [
+        "Vuông góc AB tại trung điểm của AB",
+        "Đi qua A và B",
+        "Qua trung điểm nhưng không cần vuông góc",
+        "Vuông góc AB tại A"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "nhan-biet-trung-truc"
+        ],
+        "type": "nhan-biet-trung-truc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Định nghĩa đường trung trực: vuông góc với đoạn tại trung điểm.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_126",
+      "question": "Muốn chứng minh d là trung trực AB, cần chứng minh:",
+      "options": [
+        "d vuông góc AB và đi qua trung điểm AB",
+        "d đi qua A",
+        "d song song AB",
+        "d chỉ đi qua trung điểm AB"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "nhan-biet-trung-truc"
+        ],
+        "type": "nhan-biet-trung-truc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Cần cả tính vuông góc và đi qua trung điểm.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_127",
+      "question": "M là trung điểm AB và d đi qua M, d⊥AB. Khi đó:",
+      "options": [
+        "d là trung trực AB",
+        "d là trung tuyến",
+        "d song song AB",
+        "d là phân giác AB"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "nhan-biet-trung-truc"
+        ],
+        "type": "nhan-biet-trung-truc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Hai điều kiện đúng theo định nghĩa đường trung trực.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_128",
+      "question": "Một đường thẳng vuông góc AB nhưng không đi qua trung điểm AB thì:",
+      "options": [
+        "Chưa phải trung trực AB",
+        "Luôn là trung trực AB",
+        "Luôn song song AB",
+        "Luôn đi qua trung điểm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "nhan-biet-trung-truc"
+        ],
+        "type": "nhan-biet-trung-truc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Vuông góc thôi chưa đủ.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_129",
+      "question": "P nằm trên trung trực AB. Khi đó:",
+      "options": [
+        "PA=PB",
+        "PA>PB",
+        "PA<PB",
+        "Không thể so sánh"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "cach-deu-dinh"
+        ],
+        "type": "cach-deu-dinh",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Mọi điểm trên trung trực của đoạn thẳng cách đều hai đầu mút.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_130",
+      "question": "Nếu PA=PB thì P nằm trên:",
+      "options": [
+        "Đường trung trực AB",
+        "Đường thẳng AB bắt buộc",
+        "Tia AB",
+        "Đường song song AB bất kỳ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "cach-deu-dinh"
+        ],
+        "type": "cach-deu-dinh",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Tập hợp các điểm cách đều A và B là đường trung trực AB.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_131",
+      "question": "P cách đều A và B nghĩa là:",
+      "options": [
+        "PA=PB",
+        "P là trung điểm AB",
+        "P nằm giữa A,B",
+        "PA+PB=AB"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "cach-deu-dinh"
+        ],
+        "type": "cach-deu-dinh",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Cách đều hai điểm chỉ có nghĩa hai khoảng cách bằng nhau.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_132",
+      "question": "Nếu OA=OB=OC thì O nằm trên:",
+      "options": [
+        "Các đường trung trực của AB, BC, CA",
+        "Ba đường cao",
+        "Ba trung tuyến",
+        "Ba phân giác trong"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "cach-deu-dinh"
+        ],
+        "type": "cach-deu-dinh",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Từ OA=OB suy ra O trên trung trực AB; tương tự cho các cặp còn lại.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_133",
+      "question": "Mệnh đề thuận của tính chất đường trung trực là:",
+      "options": [
+        "Điểm trên trung trực AB thì cách đều A,B",
+        "Điểm cách đều A,B thì là trung điểm AB",
+        "Mọi điểm trên AB cách đều A,B",
+        "Điểm trên trung trực AB thì nằm giữa A,B"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "tinh-chat-duong-trung-truc"
+        ],
+        "type": "tinh-chat-duong-trung-truc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Đây là chiều từ vị trí trên trung trực đến hai khoảng cách bằng nhau.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_134",
+      "question": "Mệnh đề đảo đúng là:",
+      "options": [
+        "Nếu PA=PB thì P nằm trên trung trực AB",
+        "Nếu P nằm trên AB thì PA=PB",
+        "Nếu PA+PB=AB thì P trên trung trực",
+        "Nếu PA⊥PB thì P trên trung trực"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "tinh-chat-duong-trung-truc"
+        ],
+        "type": "tinh-chat-duong-trung-truc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Điểm cách đều hai đầu mút nằm trên trung trực.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_135",
+      "question": "Để chứng minh P nằm trên trung trực AB, cách trực tiếp là chứng minh:",
+      "options": [
+        "PA=PB",
+        "P nằm trên AB",
+        "PA+PB=AB",
+        "\\(\\angle APB=90^\\circ\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "tinh-chat-duong-trung-truc"
+        ],
+        "type": "tinh-chat-duong-trung-truc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Dùng mệnh đề đảo của tính chất đường trung trực.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_136",
+      "question": "Nếu d là trung trực AB và P∈d, kết luận nào có căn cứ?",
+      "options": [
+        "PA=PB",
+        "P là trung điểm AB",
+        "PA⊥PB",
+        "P nằm trên đoạn AB"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "tinh-chat-duong-trung-truc"
+        ],
+        "type": "tinh-chat-duong-trung-truc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dùng tính chất đường trung trực.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_137",
+      "question": "Từ điểm A ngoài đường thẳng d, AH⊥d và B∈d, B≠H. So sánh:",
+      "options": [
+        "AH<AB",
+        "AH>AB",
+        "AH=AB",
+        "Không so sánh được"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "duong-vuong-goc-duong-xien"
+        ],
+        "type": "duong-vuong-goc-duong-xien",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Đoạn vuông góc là khoảng cách ngắn nhất từ điểm đến đường thẳng.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_138",
+      "question": "Trong các đoạn nối A với các điểm trên d, nếu AH⊥d thì AH là:",
+      "options": [
+        "Ngắn nhất",
+        "Dài nhất",
+        "Luôn bằng mọi đường xiên",
+        "Không có vai trò đặc biệt"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "duong-vuong-goc-duong-xien"
+        ],
+        "type": "duong-vuong-goc-duong-xien",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Đường vuông góc ngắn hơn mọi đường xiên.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_139",
+      "question": "AH⊥d, B,C∈d. Nếu HB<HC thì quan hệ đường xiên tương ứng là:",
+      "options": [
+        "AB<AC",
+        "AB>AC",
+        "AB=AC",
+        "Không thể so sánh"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "duong-vuong-goc-duong-xien"
+        ],
+        "type": "duong-vuong-goc-duong-xien",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trong cấu hình cùng đường vuông góc, hình chiếu lớn hơn tương ứng đường xiên lớn hơn.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "TRI14V1_140",
+      "question": "AH⊥d, B,C∈d và AB=AC. Khi đó:",
+      "options": [
+        "HB=HC",
+        "HB>HC",
+        "HB<HC",
+        "H=B"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "tam-giac",
+        "skill": [
+          "duong-vuong-goc-duong-xien"
+        ],
+        "type": "duong-vuong-goc-duong-xien",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai đường xiên bằng nhau có các hình chiếu tương ứng bằng nhau.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

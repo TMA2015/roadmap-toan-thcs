@@ -1,0 +1,71 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "C07-PRACTICE-ARCHITECTURE-001",
+  "task_id": "GOLDEN-TEMPLATE-001",
+  "context_version": "1.0.16",
+  "from": "GEMINI",
+  "to": "CHATGPT",
+  "mode": "REVIEW",
+  "scope": {
+    "layer": [
+      "KNTT-Core",
+      "Entrance10",
+      "Specialized-Challenge",
+      "SYSTEM"
+    ],
+    "topics": [
+      "07-phan-thuc-dai-so"
+    ],
+    "skills": []
+  },
+  "source_artifacts": [
+    "docs/kien-thuc/07-phan-thuc-dai-so/index.md",
+    "docs/kien-thuc/07-phan-thuc-dai-so/bai-tap.md",
+    "docs/kien-thuc/07-phan-thuc-dai-so/tu-kiem-tra.md"
+  ],
+  "claims": [
+    {
+      "id": "G1",
+      "status": "PEDAGOGICAL_PROPOSAL",
+      "statement": "Static exercise blocks without a feedback loop should not remain as duplicated learning activities on a self-study platform.",
+      "evidence": []
+    },
+    {
+      "id": "G2",
+      "status": "PEDAGOGICAL_PROPOSAL",
+      "statement": "Use three distinct layers: Micro-Practice in Learning Workspace, Practice Room for fluency/self-correction, and Readiness Check for end-of-topic assessment.",
+      "evidence": []
+    },
+    {
+      "id": "G3",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Readiness assessment should score only after final submission and may use a dedicated static-site JavaScript component.",
+      "evidence": []
+    }
+  ],
+  "proposed_changes": [
+    {
+      "artifact": "Learning Workspace",
+      "change": "Keep micro-practice inline and remove duplicated static practice/self-test blocks.",
+      "rationale": "Reduce overlap and restore clear feedback loop."
+    },
+    {
+      "artifact": "Practice Room",
+      "change": "Use written problems with collapsible solutions.",
+      "rationale": "Support procedural fluency and self-correction."
+    },
+    {
+      "artifact": "Readiness Check",
+      "change": "Create end-of-topic assessment scored only after submission.",
+      "rationale": "Separate summative evidence from formative practice."
+    }
+  ],
+  "tests": [],
+  "uncertainties": [
+    "Static GitHub Pages needs a reusable client-side readiness engine."
+  ],
+  "acceptance": {
+    "verdict": "PASS-WITH-CHANGES",
+    "notes": "Integrated with Practice Engine retained, Soft Mastery preserved, assessment evidence separated from practice evidence, and no hard Knowledge Graph unlock."
+  }
+}

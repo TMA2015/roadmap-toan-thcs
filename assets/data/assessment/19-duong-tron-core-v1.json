@@ -1,0 +1,231 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "GEO19-CORE-READY-V1",
+  "topic": {
+    "id": "19-duong-tron",
+    "title": "Chuyên đề 19 – Đường tròn"
+  },
+  "layer": "KNTT-Core",
+  "title": "Core Readiness Check – Chuyên đề 19 – Đường tròn",
+  "skill_labels": {
+    "day-va-tam": "Dây và khoảng cách đến tâm",
+    "cung-va-day": "Quan hệ cung và dây",
+    "do-dai-duong-tron": "Hệ thức độ dài trong đường tròn",
+    "do-dai-cung": "Độ dài cung",
+    "vi-tri-tuong-doi-duong-thang-duong-tron": "Vị trí tương đối đường thẳng – đường tròn",
+    "vi-tri-tuong-doi-hai-duong-tron": "Vị trí tương đối hai đường tròn",
+    "goc-noi-tiep": "Góc nội tiếp",
+    "tu-giac-noi-tiep": "Tứ giác nội tiếp",
+    "dau-hieu-noi-tiep": "Dấu hiệu nội tiếp",
+    "duong-tron-ngoai-tiep-tam-giac": "Đường tròn ngoại tiếp tam giác",
+    "duong-tron-noi-tiep-tam-giac": "Đường tròn nội tiếp tam giác",
+    "da-giac-deu": "Đa giác đều",
+    "dien-tich-quat-tron": "Diện tích quạt tròn",
+    "dien-tich-vanh-khuyen": "Diện tích vành khuyên"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "GEO19READY_001",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "cung-va-day",
+      "skill": "cung-va-day",
+      "points": 1,
+      "question": "Trong cùng đường tròn, hai dây bằng nhau thì:",
+      "options": [
+        "Hai cung nhỏ tương ứng bằng nhau",
+        "Hai cung bù nhau",
+        "Hai dây vuông góc",
+        "Một dây là đường kính"
+      ],
+      "answer": 0,
+      "explanation": "Dây bằng nhau chắn cung bằng nhau."
+    },
+    {
+      "id": "GEO19READY_002",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "do-dai-cung",
+      "skill": "do-dai-cung",
+      "points": 1,
+      "question": "R=6 cm, cung 60°. Độ dài cung:",
+      "options": [
+        "2π cm",
+        "6π cm",
+        "12π cm",
+        "π cm"
+      ],
+      "answer": 0,
+      "explanation": "60/360·12π=2π."
+    },
+    {
+      "id": "GEO19READY_003",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "vi-tri-tuong-doi-duong-thang-duong-tron",
+      "skill": "vi-tri-tuong-doi-duong-thang-duong-tron",
+      "points": 1,
+      "question": "Khoảng cách từ tâm đến đường thẳng bằng R. Đường thẳng:",
+      "options": [
+        "Tiếp xúc đường tròn",
+        "Cắt hai điểm",
+        "Không giao",
+        "Đi qua tâm"
+      ],
+      "answer": 0,
+      "explanation": "d=R → tiếp tuyến."
+    },
+    {
+      "id": "GEO19READY_004",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "vi-tri-tuong-doi-hai-duong-tron",
+      "skill": "vi-tri-tuong-doi-hai-duong-tron",
+      "points": 1,
+      "question": "R=5,r=3,d=8. Hai đường tròn:",
+      "options": [
+        "Tiếp xúc ngoài",
+        "Cắt hai điểm",
+        "Tiếp xúc trong",
+        "Không giao"
+      ],
+      "answer": 0,
+      "explanation": "d=R+r."
+    },
+    {
+      "id": "GEO19READY_005",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "goc-noi-tiep",
+      "skill": "goc-noi-tiep",
+      "points": 1,
+      "question": "Góc nội tiếp chắn cung 80°:",
+      "options": [
+        "40°",
+        "80°",
+        "160°",
+        "20°"
+      ],
+      "answer": 0,
+      "explanation": "Bằng nửa cung bị chắn."
+    },
+    {
+      "id": "GEO19READY_006",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dau-hieu-noi-tiep",
+      "skill": "dau-hieu-noi-tiep",
+      "points": 1,
+      "question": "Tứ giác có hai góc đối bù nhau thì:",
+      "options": [
+        "Nội tiếp được một đường tròn",
+        "Luôn là hình chữ nhật",
+        "Luôn là hình thoi",
+        "Không thể nội tiếp"
+      ],
+      "answer": 0,
+      "explanation": "Đây là dấu hiệu nội tiếp."
+    },
+    {
+      "id": "GEO19READY_007",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "duong-tron-ngoai-tiep-tam-giac",
+      "skill": "duong-tron-ngoai-tiep-tam-giac",
+      "points": 1,
+      "question": "Tâm ngoại tiếp là giao của:",
+      "options": [
+        "Ba trung trực",
+        "Ba phân giác",
+        "Ba trung tuyến",
+        "Ba đường cao"
+      ],
+      "answer": 0,
+      "explanation": "Giao trung trực."
+    },
+    {
+      "id": "GEO19READY_008",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "duong-tron-noi-tiep-tam-giac",
+      "skill": "duong-tron-noi-tiep-tam-giac",
+      "points": 1,
+      "question": "Tâm nội tiếp là giao của:",
+      "options": [
+        "Ba phân giác",
+        "Ba trung trực",
+        "Ba trung tuyến",
+        "Ba đường cao"
+      ],
+      "answer": 0,
+      "explanation": "Giao phân giác."
+    },
+    {
+      "id": "GEO19READY_009",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-quat-tron",
+      "skill": "dien-tich-quat-tron",
+      "points": 1,
+      "question": "R=4, quạt 90°. Diện tích:",
+      "options": [
+        "4π",
+        "8π",
+        "16π",
+        "2π"
+      ],
+      "answer": 0,
+      "explanation": "1/4·16π=4π."
+    },
+    {
+      "id": "GEO19READY_010",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dien-tich-vanh-khuyen",
+      "skill": "dien-tich-vanh-khuyen",
+      "points": 1,
+      "question": "R=5,r=3. Diện tích vành khuyên:",
+      "options": [
+        "16π",
+        "8π",
+        "34π",
+        "25π"
+      ],
+      "answer": 0,
+      "explanation": "π(25-9)=16π."
+    }
+  ],
+  "next_topic": {
+    "id": "20-hinh-hoc-tong-hop",
+    "title": "Chuyên đề 20 – Hình học tổng hợp, đo lường và hình khối"
+  }
+}

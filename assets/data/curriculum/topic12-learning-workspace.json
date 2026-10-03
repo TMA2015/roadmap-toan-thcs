@@ -1,0 +1,254 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "12-phuong-trinh-bac-hai-viete",
+  "title": "Phương trình bậc hai & Viète",
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Only Core cards contribute to readiness. Entrance10 and Challenge never gate Core completion."
+  },
+  "cards": [
+    {
+      "id": "qua12-core-1",
+      "order": 1,
+      "title": "Nhận dạng & hệ số",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 6"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nhan-dang-pt-bac-hai",
+        "he-so-abc"
+      ],
+      "prerequisites": [
+        "thu-gon-da-thuc"
+      ],
+      "micro_practice": [
+        "QUA12MICRO_001",
+        "QUA12MICRO_002",
+        "QUA12MICRO_003"
+      ],
+      "teaching_copy": {
+        "key_idea": "Phương trình bậc hai một ẩn phải đưa về dạng \\(ax^2+bx+c=0\\), với \\(a\\ne0\\). Chỉ đọc \\(a,b,c\\) **sau khi** đã thu gọn về một vế; chú ý dấu của hệ số. Nếu hệ số \\(a=0\\), phương trình không còn bậc hai.",
+        "worked_example": {
+          "problem": "Đưa \\(2x(x-1)=5-x\\) về dạng chuẩn và xác định hệ số.",
+          "solution": "Bước 1: \\(2x^2-2x=5-x\\).\nBước 2: Chuyển hết sang trái: \\(2x^2-x-5=0\\).\nBước 3: \\(a=2\\ne0,\\ b=-1,\\ c=-5\\), là phương trình bậc hai."
+        },
+        "misconception": "Đọc hệ số trước khi chuyển vế hoặc quên dấu âm ở c.",
+        "summary": "Thu gọn về ax²+bx+c=0 trước, kiểm tra a khác 0.",
+        "source_reference": "docs/kien-thuc/12-phuong-trinh-bac-hai-viete/index.md",
+        "source_sections": [
+          "3.1"
+        ],
+        "source_question_ids": [
+          "QUA12MICRO_001",
+          "QUA12MICRO_002",
+          "QUA12MICRO_003"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "qua12-core-2",
+      "order": 2,
+      "title": "Biệt thức & số nghiệm",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 6"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tinh-delta",
+        "so-nghiem-delta",
+        "delta-phay"
+      ],
+      "prerequisites": [
+        "he-so-abc"
+      ],
+      "micro_practice": [
+        "QUA12MICRO_004",
+        "QUA12MICRO_005",
+        "QUA12MICRO_006"
+      ],
+      "teaching_copy": {
+        "key_idea": "Với \\(a\\ne0\\), biệt thức \\(\\Delta=b^2-4ac\\): \\(\\Delta>0\\) có hai nghiệm thực phân biệt; \\(\\Delta=0\\) nghiệm kép; \\(\\Delta<0\\) không có nghiệm thực. Nếu \\(b=2b'\\), có thể tính \\(\\Delta'=b'^2-ac\\) để giảm phép tính.",
+        "worked_example": {
+          "problem": "Xét số nghiệm của \\(2x^2-4x+2=0\\) bằng cả \\(\\Delta\\) và \\(\\Delta'\\).",
+          "solution": "Bước 1: \\(a=2,b=-4,c=2\\). \\(\\Delta=(-4)^2-4\\cdot2\\cdot2=0\\).\nBước 2: \\(b'=-2\\), \\(\\Delta'=(-2)^2-2\\cdot2=0\\).\nBước 3: Có nghiệm kép \\(x=\\frac4{4}=1\\); hai cách tính thống nhất."
+        },
+        "misconception": "Nhầm dấu b hoặc quên dấu trừ trong -4ac; kết luận hai nghiệm phân biệt khi Δ=0.",
+        "summary": "Tính đúng biệt thức và xét dấu trước khi dùng công thức nghiệm.",
+        "source_reference": "docs/kien-thuc/12-phuong-trinh-bac-hai-viete/index.md",
+        "source_sections": [
+          "3.2",
+          "3.4"
+        ],
+        "source_question_ids": [
+          "QUA12MICRO_004",
+          "QUA12MICRO_005",
+          "QUA12MICRO_006"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "qua12-core-3",
+      "order": 3,
+      "title": "Công thức nghiệm & giải",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 6"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "cong-thuc-nghiem",
+        "giai-pt-bac-hai"
+      ],
+      "prerequisites": [
+        "tinh-delta",
+        "can-bac-hai-so-hoc"
+      ],
+      "micro_practice": [
+        "QUA12MICRO_007",
+        "QUA12MICRO_008",
+        "QUA12MICRO_009"
+      ],
+      "teaching_copy": {
+        "key_idea": "Khi \\(\\Delta\\ge0\\), công thức nghiệm là \\(x=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\); nếu \\(\\Delta=0\\) hai giá trị trùng nhau. Thay đúng hệ số \\(a,b,c\\), tính \\(\\sqrt\\Delta\\) rồi kiểm tra nghiệm bằng thay lại.",
+        "worked_example": {
+          "problem": "Giải \\(x^2-4x-5=0\\) bằng công thức nghiệm.",
+          "solution": "Bước 1: \\(a=1,b=-4,c=-5\\); \\(\\Delta=16+20=36>0\\).\nBước 2: \\(x_{1,2}=\\frac{4\\pm6}{2}\\), nên \\(x_1=5,\\ x_2=-1\\).\nBước 3: Thay lại: \\(25-20-5=0\\) và \\(1+4-5=0\\)."
+        },
+        "misconception": "Bỏ dấu âm của b, viết mẫu 2 thay vì 2a, hoặc quên xét Δ trước khi lấy căn.",
+        "summary": "Δ → số nghiệm → công thức đúng mẫu 2a → thử lại.",
+        "source_reference": "docs/kien-thuc/12-phuong-trinh-bac-hai-viete/index.md",
+        "source_sections": [
+          "3.3",
+          "Dạng 1"
+        ],
+        "source_question_ids": [
+          "QUA12MICRO_007",
+          "QUA12MICRO_008",
+          "QUA12MICRO_009"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "qua12-core-4",
+      "order": 4,
+      "title": "Nhẩm nghiệm có cấu trúc",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 6"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "nham-nghiem"
+      ],
+      "prerequisites": [
+        "phan-tich-da-thuc"
+      ],
+      "micro_practice": [
+        "QUA12MICRO_010",
+        "QUA12MICRO_011",
+        "QUA12MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Có thể nhẩm nghiệm khi nhận ra nhân tử hoặc tổng và tích của hai số. Nếu \\(a+b+c=0\\), nghiệm \\(1\\) và nghiệm còn lại \\(c/a\\); nếu \\(a-b+c=0\\), nghiệm \\(-1\\) và nghiệm còn lại \\(-c/a\\). Khi không nhận nhanh được, dùng công thức nghiệm.",
+        "worked_example": {
+          "problem": "Nhẩm nghiệm \\(2x^2-7x+3=0\\).",
+          "solution": "Bước 1: Nhận thấy \\(2x^2-7x+3=(2x-1)(x-3)\\).\nBước 2: \\((2x-1)(x-3)=0\\Rightarrow x=\\frac12\\) hoặc \\(x=3\\).\nBước 3: Kiểm tra tích hai nghiệm là \\(\\frac32=c/a\\), tổng là \\(\\frac72=-b/a\\)."
+        },
+        "misconception": "Chỉ nhẩm một nghiệm rồi bỏ quên nghiệm còn lại, hoặc nhầm điều kiện a+b+c=0 và a-b+c=0.",
+        "summary": "Nhận dạng nhanh nhưng vẫn lấy đủ nghiệm và kiểm tra lại.",
+        "source_reference": "docs/kien-thuc/12-phuong-trinh-bac-hai-viete/index.md",
+        "source_sections": [
+          "Dạng 2"
+        ],
+        "source_question_ids": [
+          "QUA12MICRO_010",
+          "QUA12MICRO_011",
+          "QUA12MICRO_012"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "qua12-core-5",
+      "order": 5,
+      "title": "Viète & lập phương trình",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 6"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "tong-tich-nghiem",
+        "lap-pt-tu-nghiem"
+      ],
+      "prerequisites": [
+        "giai-pt-bac-hai"
+      ],
+      "micro_practice": [
+        "QUA12MICRO_013",
+        "QUA12MICRO_014",
+        "QUA12MICRO_015"
+      ],
+      "teaching_copy": {
+        "key_idea": "Với phương trình bậc hai thực sự \\(ax^2+bx+c=0\\) có nghiệm thực \\(x_1,x_2\\), Viète cho \\(S=x_1+x_2=-b/a\\), \\(P=x_1x_2=c/a\\). Muốn lập phương trình hệ số đầu 1 từ hai nghiệm cho trước, dùng \\(x^2-Sx+P=0\\).",
+        "worked_example": {
+          "problem": "Dùng Viète xác định tổng–tích nghiệm của \\(2x^2-5x+2=0\\); sau đó lập phương trình hệ số đầu 1 có nghiệm \\(-2\\) và \\(5\\).",
+          "solution": "Bước 1: \\(\\Delta=25-16=9>0\\), nên phương trình thứ nhất có hai nghiệm thực. Theo Viète, \\(S=\\frac52,\\ P=1\\).\nBước 2: Với nghiệm mới \\(-2,5\\), tổng \\(S'=3\\), tích \\(P'=-10\\).\nBước 3: Phương trình cần lập là \\(x^2-3x-10=0\\); có thể kiểm tra \\((x+2)(x-5)=0\\)."
+        },
+        "misconception": "Quên kiểm tra phương trình có nghiệm thực, đổi nhầm dấu của S khi lập phương trình hoặc nhầm P với -P.",
+        "summary": "Viète: S=-b/a, P=c/a; lập phương trình: x²-Sx+P=0.",
+        "source_reference": "docs/kien-thuc/12-phuong-trinh-bac-hai-viete/index.md",
+        "source_sections": [
+          "Dạng 4",
+          "Dạng 8"
+        ],
+        "source_question_ids": [
+          "QUA12MICRO_013",
+          "QUA12MICRO_014",
+          "QUA12MICRO_015"
+        ],
+        "review_status": "SELF_AUDITED",
+        "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
+        "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "id": "qua12-ent10-1",
+      "layer": "Entrance10",
+      "title": "Biểu thức đối xứng theo nghiệm",
+      "gates_core": false
+    },
+    {
+      "id": "qua12-ent10-2",
+      "layer": "Entrance10",
+      "title": "Dấu nghiệm & liên hệ đồ thị",
+      "gates_core": false
+    },
+    {
+      "id": "qua12-challenge-1",
+      "layer": "Specialized-Challenge",
+      "title": "Tham số và điều kiện số nghiệm",
+      "gates_core": false
+    }
+  ],
+  "micro_practice_bank": "assets/data/practice/12-phuong-trinh-bac-hai-viete-micro-v1.json",
+  "observed_signal_policy": {
+    "rule": "Signals are observations only; they never create causal remediation without sufficient learner evidence and a reviewed rule."
+  },
+  "qa_notes": [
+    "tham-so-so-nghiem is excluded from Grade 9 Core in the reviewed map.",
+    "bieu-thuc-doi-xung, dau-nghiem and lien-he-do-thi stay outside Core readiness pending item-level source review.",
+    "lap-pt-tu-nghiem is retained in Core per the reviewed Grade 9 correction."
+  ]
+}

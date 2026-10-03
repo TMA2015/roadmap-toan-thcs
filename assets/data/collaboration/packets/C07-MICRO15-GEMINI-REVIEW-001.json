@@ -1,0 +1,117 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "C07-MICRO15-GEMINI-REVIEW-001",
+  "task_id": "C07-MICRO15-001",
+  "context_version": "1.0.16",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "REVIEW",
+  "scope": {
+    "layer": [
+      "KNTT-Core"
+    ],
+    "topics": [
+      "07-phan-thuc-dai-so"
+    ],
+    "skills": [
+      "khai-niem-phan-thuc",
+      "dieu-kien-xac-dinh",
+      "rut-gon-phan-thuc",
+      "quy-dong-mau-thuc",
+      "cong-tru-phan-thuc",
+      "nhan-chia-phan-thuc"
+    ]
+  },
+  "source_artifacts": [
+    "docs/assets/data/curriculum/topic07-learning-workspace.json",
+    "docs/assets/data/curriculum/knowledge-graph-v1.json",
+    "docs/huong-dan/chuan-ngan-hang-cau-hoi.md"
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "status": "FACT_VERIFIED",
+      "statement": "KNTT Bài 22 includes basic properties, reduction and common-denominator work; common-denominator work is framed for favorable cases.",
+      "evidence": [
+        "KNTT Bài 22 source verification 2026-09-25"
+      ]
+    },
+    {
+      "id": "C2",
+      "status": "FACT_VERIFIED",
+      "statement": "KNTT Bài 23 includes addition/subtraction of multiple rational expressions and bracket-rule use.",
+      "evidence": [
+        "KNTT Bài 23 source verification 2026-09-25"
+      ]
+    },
+    {
+      "id": "C3",
+      "status": "FACT_VERIFIED",
+      "statement": "KNTT Bài 24 includes multiplication/division and use of multiplication properties.",
+      "evidence": [
+        "KNTT Bài 24 source verification 2026-09-25"
+      ]
+    },
+    {
+      "id": "C4",
+      "status": "PEDAGOGICAL_PROPOSAL",
+      "statement": "Use exactly three diagnostic micro-practice items per Core card: base knowledge, misconception trap, Core application.",
+      "evidence": []
+    },
+    {
+      "id": "C5",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Distractor-level misconception triggers are evidence signals, not causal diagnoses.",
+      "evidence": [
+        "Tutor Contract evidence-first policy",
+        "Knowledge Graph v1.1 causal-edge policy"
+      ]
+    }
+  ],
+  "proposed_changes": [
+    {
+      "artifact": "15-item CĐ07 micro-practice bank",
+      "change": "Return all 15 authored MCQ items as one batch, each with skill_id, layer, options, answer, hint ladder, explanation and option-level misconception_signal where justified.",
+      "rationale": "Pilot the complete closed loop before rollout."
+    },
+    {
+      "artifact": "misconception registry",
+      "change": "Use stable codes. Do not assign a causal remediation target unless supported by reviewed Knowledge Graph/rule.",
+      "rationale": "Avoid diagnosis from a single distractor."
+    }
+  ],
+  "tests": [
+    {
+      "id": "T1",
+      "expected": "Exactly 15 Core questions: 3 per card.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "T2",
+      "expected": "Every distractor is mathematically plausible and maps to at most one primary misconception signal.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "T3",
+      "expected": "No Extension/Entrance10 item gates or contaminates Core.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "T4",
+      "expected": "MTC wording uses largest required exponent/power, never smallest.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "T5",
+      "expected": "All canonical answers independently recomputed before PASS.",
+      "result": "NOT_RUN"
+    }
+  ],
+  "uncertainties": [
+    "Whether MTC_NOT_OPTIMAL should ever remediate to UCLN/BCNN is unresolved; treat it as a signal until graph evidence supports a target."
+  ],
+  "acceptance": {
+    "verdict": "PENDING",
+    "notes": "Gemini should return one packet covering the full 15-item batch, not incremental prose feedback."
+  }
+}

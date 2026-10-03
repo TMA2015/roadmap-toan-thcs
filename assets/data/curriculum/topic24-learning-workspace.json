@@ -1,0 +1,150 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "24-bai-toan-thuc-te",
+  "title": "Bài toán thực tế và mô hình hóa",
+  "core_progress_policy": {
+    "layer": "Core-Support",
+    "rule": "This is a non-gating cross-topic learning layer; never scored as grade-specific KNTT Core."
+  },
+  "learning_layer_label": "Ứng dụng xuyên lớp",
+  "cards": [
+    {
+      "id": "topic24-journey-1",
+      "order": 1,
+      "title": "Đọc đề và xác định đại lượng",
+      "kntt_lessons": [
+        "Ứng dụng lớp 6–9"
+      ],
+      "layer": "Core-Support",
+      "skills": [
+        "doc-de-du-kien"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "MOD24MICRO_001",
+        "MOD24MICRO_002",
+        "MOD24MICRO_003"
+      ],
+      "teaching_copy": {
+        "key_idea": "Đọc đề thành ba cột: đã biết, cần tìm, mối quan hệ.",
+        "worked_example": {
+          "problem": "Một bài có quãng đường 180 km và vận tốc 60 km/h, yêu cầu tìm đại lượng nào?",
+          "solution": "Thời gian là đại lượng cần tìm, tính bằng quãng đường chia vận tốc."
+        },
+        "misconception": "Chọn sai đại lượng dù dữ kiện số đều đúng.",
+        "summary": "Đọc câu hỏi cuối cùng trước khi đặt ẩn."
+      }
+    },
+    {
+      "id": "topic24-journey-2",
+      "order": 2,
+      "title": "Đổi đơn vị trước khi tính",
+      "kntt_lessons": [
+        "Ứng dụng lớp 6–9"
+      ],
+      "layer": "Core-Support",
+      "skills": [
+        "doi-don-vi"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "MOD24MICRO_004",
+        "MOD24MICRO_005",
+        "MOD24MICRO_006"
+      ],
+      "teaching_copy": {
+        "key_idea": "Các đại lượng trong cùng công thức phải có hệ đơn vị tương thích.",
+        "worked_example": {
+          "problem": "Một xe đi với vận tốc 72 km/h. Đổi vận tốc sang m/s.",
+          "solution": "72 : 3,6 = 20 m/s."
+        },
+        "misconception": "Dùng 72 như m/s, khiến kết quả sai 3,6 lần.",
+        "summary": "Viết rõ đơn vị mỗi đại lượng trước và sau phép đổi."
+      }
+    },
+    {
+      "id": "topic24-journey-3",
+      "order": 3,
+      "title": "Phần trăm và giá trị gốc",
+      "kntt_lessons": [
+        "Ứng dụng lớp 6–9"
+      ],
+      "layer": "Core-Support",
+      "skills": [
+        "phan-tram"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "MOD24MICRO_007",
+        "MOD24MICRO_008",
+        "MOD24MICRO_009"
+      ],
+      "teaching_copy": {
+        "key_idea": "Tăng giảm phần trăm luôn tính theo giá trị gốc tại đúng thời điểm.",
+        "worked_example": {
+          "problem": "Một món hàng 800.000 đồng giảm 15%, giá còn bao nhiêu?",
+          "solution": "800.000 × (1 − 0,15) = 680.000 đồng."
+        },
+        "misconception": "Nhầm giá sau giảm với số tiền giảm hoặc dùng nhầm gốc.",
+        "summary": "Xác định giá gốc rồi mới nhân tỉ lệ."
+      }
+    },
+    {
+      "id": "topic24-journey-4",
+      "order": 4,
+      "title": "Lập phương trình và hệ từ dữ kiện",
+      "kntt_lessons": [
+        "Ứng dụng lớp 6–9"
+      ],
+      "layer": "Core-Support",
+      "skills": [
+        "lap-phuong-trinh",
+        "lap-he"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "MOD24MICRO_010",
+        "MOD24MICRO_011",
+        "MOD24MICRO_012"
+      ],
+      "teaching_copy": {
+        "key_idea": "Đặt ẩn theo đại lượng đề hỏi và dịch từng quan hệ thành phương trình.",
+        "worked_example": {
+          "problem": "Có 120 vé người lớn và trẻ em; gọi x, y lần lượt là số vé. Viết quan hệ tổng số vé.",
+          "solution": "x + y = 120; kết hợp quan hệ doanh thu để lập hệ nếu đề cung cấp giá vé."
+        },
+        "misconception": "Lập đúng phương trình nhưng thiếu đơn vị/điều kiện của ẩn.",
+        "summary": "Ghi ý nghĩa và điều kiện ẩn, sau đó lập đủ quan hệ."
+      }
+    },
+    {
+      "id": "topic24-journey-5",
+      "order": 5,
+      "title": "Kiểm tra nghiệm, đơn vị và kết luận",
+      "kntt_lessons": [
+        "Ứng dụng lớp 6–9"
+      ],
+      "layer": "Core-Support",
+      "skills": [
+        "kiem-tra-ket-luan"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "MOD24MICRO_013",
+        "MOD24MICRO_014",
+        "MOD24MICRO_015"
+      ],
+      "teaching_copy": {
+        "key_idea": "Nghiệm toán học còn phải hợp điều kiện thực tế và đơn vị đề yêu cầu.",
+        "worked_example": {
+          "problem": "Bài hỏi số sản phẩm mà phương trình có nghiệm −5 và 12. Chọn kết quả phù hợp.",
+          "solution": "Loại −5 vì số sản phẩm không âm; nhận 12 sản phẩm."
+        },
+        "misconception": "Chỉ lấy nghiệm đại số mà không thử lại điều kiện.",
+        "summary": "Kết luận bằng câu đầy đủ có đại lượng và đơn vị."
+      }
+    }
+  ],
+  "extensions": [],
+  "micro_practice_bank": "assets/data/practice/24-bai-toan-thuc-te-micro-v1.json"
+}
