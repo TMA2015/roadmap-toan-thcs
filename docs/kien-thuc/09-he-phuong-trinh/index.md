@@ -35,10 +35,10 @@ HỆ PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN
 │   ├── Cộng đại số
 │   └── Chọn phương pháp phù hợp
 │
-├── 4. Vận dụng: số nghiệm và tham số
+├── 4. Vận dụng và mở rộng
 │   ├── Nhận biết số nghiệm
-│   ├── Điều kiện để có nghiệm đặc biệt
-│   └── Tìm tham số
+│   ├── Tham số nhẹ / hệ số chưa biết (Core-Support)
+│   └── Biện luận tham số (Entrance10)
 │
 └── 5. Bài toán thực tế
     ├── Chọn ẩn
@@ -61,7 +61,7 @@ Sau khi hoàn thành chuyên đề, học sinh cần có thể:
 - [ ] Kiểm tra nghiệm bằng cách thay ngược vào hệ ban đầu.
 - [ ] Nhận biết trường hợp hệ có một nghiệm, vô nghiệm hoặc vô số nghiệm.
 - [ ] Lập được hệ từ bài toán thực tế đơn giản và trung bình.
-- [ ] Xử lý được bài toán có tham số ở mức vận dụng phù hợp với THCS.
+- [ ] Làm được bài tham số nhẹ ở mức Core-Support; nhận biết bài biện luận tham số đầy đủ là nội dung Entrance10.
 
 ---
 
@@ -152,6 +152,46 @@ Có thể đọc hình theo một quy tắc duy nhất:
 - trùng nhau → mọi điểm trên đường thẳng đều là điểm chung, nên có vô số nghiệm.
 
 > Đây không phải một quy tắc mới tách biệt với đại số: nó là cách nhìn hình học của chính điều kiện “một cặp `(x; y)` phải thỏa đồng thời cả hai phương trình”.
+
+#### Ví dụ sâu – nhìn nghiệm hệ trên đồ thị rồi kiểm tra lại bằng đại số
+
+Xét hệ:
+
+$
+\begin{cases}
+x+y=4\\
+x-y=0
+\end{cases}
+$
+
+**Bước 1 – Viết mỗi phương trình dưới dạng dễ vẽ.**
+
+- Đường thẳng thứ nhất: `y=4-x`.
+- Đường thẳng thứ hai: `y=x`.
+
+**Bước 2 – Chọn hai điểm cho mỗi đường thẳng.**
+
+| Đường thẳng | Điểm 1 | Điểm 2 |
+|---|---|---|
+| `y=4-x` | `(0;4)` | `(4;0)` |
+| `y=x` | `(0;0)` | `(3;3)` |
+
+Khi biểu diễn trên cùng hệ trục, hai đường thẳng cắt nhau tại `(2;2)`.
+
+**Bước 3 – Đọc ý nghĩa của giao điểm.**
+
+Giao điểm `(2;2)` là nghiệm của hệ vì cùng nằm trên **cả hai** đường thẳng.
+
+**Bước 4 – Kiểm tra bằng đại số.**
+
+$
+2+2=4,\qquad 2-2=0.
+$
+
+Vì `(2;2)` thỏa đồng thời hai phương trình nên nghiệm đọc từ đồ thị là đúng.
+
+!!! tip "Điều cần hiểu"
+    Đồ thị không tạo ra một loại nghiệm mới. Nó cho ta **một cách nhìn khác của cùng nghiệm đại số**. Khi hai đường song song sẽ không có giao điểm; khi hai đường trùng nhau sẽ có vô số điểm chung.
 
 Đây là cầu nối quan trọng sang [Chuyên đề 10 – Hàm số và đồ thị](../10-ham-so-do-thi/index.md).
 
@@ -270,6 +310,20 @@ $$
 | Rút ẩn tạo phân số phức tạp | Tránh thế nếu có lựa chọn khác |
 
 Không có quy định bắt buộc phải dùng một phương pháp cố định. Mục tiêu là **đúng, rõ và gọn**.
+
+#### Máy tính cầm tay dùng để hỗ trợ, không thay thế phương pháp
+
+SGK/SBT Kết nối tri thức có sử dụng máy tính cầm tay như một công cụ hỗ trợ giải hoặc kiểm tra hệ.
+
+Có thể dùng theo nguyên tắc:
+
+1. nhập đúng các hệ số của hai phương trình theo hướng dẫn của loại máy đang dùng;
+2. đọc nghiệm máy trả về;
+3. thay nghiệm vào hệ ban đầu để kiểm tra;
+4. nếu đang học phương pháp thế/cộng đại số, vẫn phải hiểu và trình bày được cách giải bằng tay.
+
+!!! warning "Đừng để máy tính che mất lỗi mô hình"
+    Máy tính chỉ giải **hệ em đã nhập**. Nếu em lập sai phương trình từ bài toán thực tế thì máy vẫn có thể cho ra một cặp số hợp lệ đối với hệ sai đó.
 
 ---
 
@@ -489,7 +543,7 @@ Với hệ bậc nhất hai ẩn có **hệ số phân số**, có thể:
 
 ---
 
-### Dạng 6 – Tìm tham số để hệ có nghiệm cho trước
+### Dạng 6 – Tham số nhẹ / hệ số chưa biết (Core-Support)
 
 Ví dụ: tìm `m` để `(2;1)` là nghiệm của hệ.
 
@@ -498,10 +552,14 @@ Phương pháp:
 - Thay `x=2`, `y=1` vào các phương trình.
 - Giải điều kiện thu được đối với `m`.
 
+> Dạng này củng cố khái niệm **nghiệm của hệ**. Nó khác với bài biện luận tham số đầy đủ.
+
 ---
 
-### Dạng 7 – Tìm tham số để hệ có một nghiệm, vô nghiệm hoặc vô số nghiệm
+### Dạng 7 – Biện luận hệ theo tham số (Entrance10)
 
+> **Tầng học:** Entrance10. Đây không phải yêu cầu bắt buộc để hoàn thành KNTT Core.
+>
 > **Mức vận dụng:** cần xét cẩn thận các giá trị tham số làm thay đổi hệ số hoặc làm một phương trình suy biến.
 
 Cách làm phù hợp ở THCS:
@@ -520,50 +578,131 @@ Quy trình 5 bước:
 
 1. **Chọn hai ẩn** và ghi rõ đơn vị.
 2. **Đặt điều kiện** cho ẩn.
-3. Chuyển dữ kiện thành **hai phương trình**.
+3. Chuyển dữ kiện thành **hai phương trình độc lập**.
 4. Giải hệ.
 5. Đối chiếu điều kiện và trả lời bằng lời.
 
+#### Ví dụ sâu – từ dữ kiện thực tế đến hai phương trình
+
+Một câu lạc bộ mua tổng cộng **28 quyển sổ và bút chì**. Mỗi quyển sổ giá **15 000 đồng**, mỗi bút chì giá **5 000 đồng**. Tổng số tiền là **300 000 đồng**. Hỏi câu lạc bộ mua bao nhiêu quyển sổ và bao nhiêu bút chì?
+
+**Bước 1 – Chọn ẩn và điều kiện.**
+
+Gọi:
+
+- `x` là số quyển sổ;
+- `y` là số bút chì.
+
+Vì đây là số lượng đồ vật nên `x,y` là các số nguyên không âm.
+
+**Bước 2 – Tổ chức dữ kiện.**
+
+| Đại lượng | Sổ | Bút chì | Tổng |
+|---|---:|---:|---:|
+| Số lượng | `x` | `y` | `28` |
+| Đơn giá (đồng) | `15 000` | `5 000` |  |
+| Thành tiền (đồng) | `15 000x` | `5 000y` | `300 000` |
+
+**Bước 3 – Lập hai quan hệ độc lập.**
+
+Từ tổng số đồ vật:
+
+$
+x+y=28.
+$
+
+Từ tổng số tiền:
+
+$
+15000x+5000y=300000.
+$
+
+Chia phương trình hai cho `5000`:
+
+$
+3x+y=60.
+$
+
+Ta có hệ:
+
+$
+\begin{cases}
+x+y=28\\
+3x+y=60
+\end{cases}
+$
+
+**Bước 4 – Giải hệ.**
+
+Lấy phương trình hai trừ phương trình một:
+
+$
+2x=32\Rightarrow x=16.
+$
+
+Suy ra:
+
+$
+y=28-16=12.
+$
+
+**Bước 5 – Kiểm tra và kết luận.**
+
+`x=16, y=12` thỏa điều kiện và:
+
+$
+16\cdot15000+12\cdot5000=300000.
+$
+
+Vậy câu lạc bộ mua **16 quyển sổ và 12 bút chì**.
+
+!!! danger "Một mô hình sai dễ mắc"
+    Viết `15000x+5000y=28` là sai vì hai vế đang khác đơn vị: vế trái là **đồng**, còn `28` là **số đồ vật**. Trước khi lập phương trình, hãy hỏi: *hai vế đang biểu diễn cùng một đại lượng chưa?*
+
 ---
 
-## 🚀 6. Dạng bài thi vào lớp 10
+## 🚀 6. Liên hệ với thi vào lớp 10 – đọc bằng chứng đúng cách
 
-### Giải hệ trực tiếp – ⭐⭐⭐⭐⭐
+Các bài dưới đây không được xếp hạng bằng “số sao”. Tần suất thi phải được mô tả theo **tập đề đã kiểm tra**, còn phạm vi Core được xác định bởi chương trình KNTT.
 
-Đây là kỹ năng nền tảng và có thể xuất hiện độc lập hoặc được dùng như một bước trong bài toán lớn hơn.
+### Nền tảng bắt buộc: giải hệ bằng thế và cộng đại số
 
-Học sinh cần thành thạo:
+Đây là kiến thức KNTT Core, dù trong mẫu nhỏ đề tuyển sinh Hà Nội chương trình hiện hành mà dự án đã rà soát (2025–2026, `n=2`) **không có câu giải hệ trực tiếp đứng độc lập**.
 
-- hệ hệ số nguyên;
-- hệ cần nhân để khử;
-- hệ có phân số đơn giản;
-- hệ cần biến đổi trước.
+Học sinh vẫn cần thành thạo vì đây là công cụ để:
+- giải bài toán lập hệ;
+- xử lý các bài biến đổi;
+- kiểm tra và giải thích lời giải tự luận.
 
-### Hệ có tham số – ⭐⭐⭐⭐
+### Đã quan sát trong mẫu Hà Nội 2025–2026: mô hình hóa bằng hệ hai ẩn
 
-Các yêu cầu luyện tập có thể gồm:
+Trong đúng **2 đề chương trình hiện hành** đã rà soát:
+- bài toán mô hình hóa bằng hệ hai ẩn xuất hiện ở **2/2 đề**;
+- một đề có cấu trúc **giá / chiết khấu**;
+- một đề có cấu trúc **số lượng / giá trị**.
 
-- tìm `m` để hệ có nghiệm thỏa điều kiện;
-- tìm `m` để nghiệm có quan hệ như `x+y=k`, `x>0`, `x=y`, ...;
-- xác định số nghiệm của hệ.
+!!! info "Cách hiểu con số 2/2"
+    Đây chỉ là mô tả của **một mẫu rất nhỏ gồm hai đề**, không phải dự đoán rằng năm nào cũng sẽ ra dạng này.
 
-### Lập hệ từ bài toán thực tế – ⭐⭐⭐⭐⭐
+### Dấu hiệu lịch sử 2023–2024: biến đổi rồi đưa về hệ tuyến tính
 
-Các nhóm quen thuộc:
+Hai đề lịch sử 2023–2024 được giữ riêng để quan sát tính nối tiếp. Cả hai có dạng:
+- nhận ra một biểu thức lặp;
+- đặt ẩn phụ;
+- đưa về hệ phương trình bậc nhất;
+- giải rồi quay lại biến ban đầu.
 
-- chuyển động;
-- năng suất;
-- số học;
-- phần trăm;
-- mua bán;
-- hình học;
-- bài toán hai đại lượng có tổng và quan hệ khác.
+Các đề này thuộc giai đoạn trước chương trình hiện hành nên **không cộng chung mẫu số** với 2025–2026. Chúng chỉ gợi ý một hướng Entrance10 đáng luyện.
 
-### Kết hợp hệ phương trình với hàm số – ⭐⭐⭐⭐
+### Hệ có tham số
 
-Nghiệm của hệ có thể được hiểu là giao điểm của hai đường thẳng. Đây là mối nối trực tiếp sang Chuyên đề 10.
+- Bài tham số nhẹ để củng cố khái niệm nghiệm: **Core-Support**.
+- Biện luận số nghiệm, nghiệm nguyên/dương hoặc điều kiện sâu theo tham số: **Entrance10**.
 
----
+### Kết nối với hàm số
+
+Nghiệm của hệ là giao điểm của hai đường thẳng. Đây là mối nối trực tiếp sang Chuyên đề 10 và giúp học sinh hiểu vì sao hệ có một nghiệm, vô nghiệm hoặc vô số nghiệm.
+
 
 ## ⚠️ 7. Lỗi sai thường gặp
 

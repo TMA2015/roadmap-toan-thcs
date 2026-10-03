@@ -1,5 +1,5 @@
 {
-  "version": "1.0.165",
+  "version": "1.0.166",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-03",
   "statuses": [
@@ -1067,6 +1067,15 @@
       "review_verdict": "NOTEBOOKLM_10_OF_10_PASS_CT09_IMPLEMENTATION_AUTHORIZED",
       "review_notes": "Gap Audit + Content Delta R1 independently reviewed: C1-C10 all PASS, 0 revisions, no missing P0 blocker. Authorized for CT09 pilot only. Implement in gated slices P1-A → owner QA → P1-B → owner QA → P1-C. No mass edit, Mastery/Readiness expansion or backfill/regrade.",
       "review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md"
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-CT09-P1A-001",
+      "title": "CT09 Academic Depth P1-A — framing and theory depth",
+      "routing": "GITHUB_QA+OWNER_PRODUCTION_QA",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.166",
+      "review_verdict": "IMPLEMENTED_PRE_CI",
+      "review_notes": "Implements the independently approved P1-A slice only: parameter-lite Core-Support vs Entrance10 split, source-ground exam wording replacing unsupported stars, deep graph example, deep original count/value modeling example, and calculator-support note. No learner history, readiness scoring, Mastery/Readiness, or non-CT09 content changes."
     }
   ]
 }

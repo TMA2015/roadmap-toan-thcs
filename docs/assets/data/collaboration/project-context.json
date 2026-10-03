@@ -1,5 +1,5 @@
 {
-  "version": "1.0.165",
+  "version": "1.0.166",
   "updated": "2026-10-03",
   "schema": "roadmap-ai-collaboration-context-v1",
   "project": {
@@ -219,7 +219,7 @@
     "practice": "Practice Engine v2 active; hint engine and hint usage tracking available",
     "content_staging": "available",
     "geometry_qa": "available with benchmark and SVG-first policy",
-    "next_priority": "CT09 Gap Audit + Content Delta R1 passed independent review 10/10 with zero revisions and is authorized for CT09 pilot implementation only. Implement in slices: P1-A framing/theory first, then owner QA; P1-B written anchors/hint ladders second; P1-C interactive anti-clone rebalance third. No mass edit, no Mastery/Readiness expansion, no regrade/backfill.",
+    "next_priority": "CT09 P1-A framing/theory slice is implemented on a dedicated branch and awaiting exact-head CI. Scope is intentionally small: parameter boundary, source-ground entrance framing, deep graph/modeling examples, calculator support. No Practice IDs/history, readiness scoring, Mastery/Readiness or other topics are changed. Next gate: merge accepted audit PR #289, run clean P1-A exact-head CI, controlled production deploy, then owner QA before P1-B.",
     "grade6_mapping": "reviewed and integrated as curriculum metadata",
     "grade7_mapping": "reviewed and integrated as Vertical Spine overlay",
     "grade8_mapping": "reviewed and integrated as Vertical Spine overlay",
@@ -2131,7 +2131,7 @@
       ]
     },
     "academic_depth_phase": {
-      "status": "CT09_GAP_DELTA_R1_ACCEPTED_IMPLEMENTATION_AUTHORIZED",
+      "status": "CT09_P1A_IMPLEMENTED_PRE_CI",
       "branch": "academic-depth-framework-r1-20261003",
       "source_framework": "docs/roadmap/academic-source-framework-v1.md",
       "audit_standard": "docs/roadmap/academic-depth-audit-standard-v1.md",
@@ -2197,7 +2197,22 @@
       },
       "ct09_notebooklm_gap_delta_review": "10/10 PASS",
       "ct09_gap_delta_authorization": "CT09_PILOT_ONLY",
-      "ct09_gap_delta_review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md"
+      "ct09_gap_delta_review_receipt": "review-packets/academic-depth/ct09-r1/13_NOTEBOOKLM_CT09_GAP_DELTA_R1_PASS_RECEIPT.md",
+      "ct09_p1a": {
+        "status": "IMPLEMENTED_PRE_CI",
+        "scope": [
+          "parameter-lite Core-Support vs Entrance10 split",
+          "remove unsupported entrance-exam star-frequency labels",
+          "deep graph worked example",
+          "deep original count/value modeling worked example",
+          "calculator-support note"
+        ],
+        "branch": "academic-depth-ct09-p1a-release-20261003",
+        "learner_history_mutation": false,
+        "mastery_readiness_change": false,
+        "backfill_regrade": false,
+        "owner_qa_required": true
+      }
     }
   },
   "handoff_required_fields": [
