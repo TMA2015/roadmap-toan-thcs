@@ -31,6 +31,7 @@ with sync_playwright() as p:
     assert "Phương trình cơ bản ⭐⭐⭐⭐⭐" not in body
     assert "mức độ ưu tiên ôn tập của Roadmap" not in body
 
+    page.goto(BASE + "core/", wait_until="networkidle")
     ext = page.locator(".topic-extension-zone")
     ext.wait_for(state="attached", timeout=15000)
     summary = ext.locator("summary").inner_text()
