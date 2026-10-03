@@ -203,7 +203,9 @@ with sync_playwright() as p:
                       "reviewed teaching example/steps/error/summary appear inside modal")
                 check(lecture.locator(".topic-core-skill-chip").count() == 4
                       and lecture.locator('.topic-core-skill-chip[data-covered="no"]').count() == 0,
-                      "lecture displays four skills with dedicated formative questions")
+                      "lecture retains four skill mappings in the background")
+                check(not lecture.locator(".topic-core-skill-overview").evaluate("el => el.open"),
+                      "lecture skill metadata is collapsed by default")
                 check(lecture.locator(".topic-micro-option").count() == 0,
                       "lecture contains no scored question")
                 shot(core_page, "topic07-lecture-modal-desktop.png")
@@ -212,7 +214,9 @@ with sync_playwright() as p:
                       and lecture.locator(".topic-micro-option").count() == 4,
                       "lecture switches directly to practice in same modal")
                 check(lecture.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill") == "nhan-biet-phan-thuc",
-                      "first question shows its real primary skill")
+                      "first question retains its real primary skill mapping")
+                check(not lecture.locator(".topic-micro-skill-details").evaluate("el => el.open"),
+                      "per-question skill metadata is collapsed by default")
                 lecture.locator('.topic-core-modal-mode[data-mode="teach"]').click()
                 check(lecture.get_attribute("data-mode") == "teach", "practice can return to lecture")
                 lecture.locator(".topic-core-dialog__close").click()
