@@ -92,12 +92,23 @@ def validate(page):
     assert "Tỷ lệ đúng quan sát 67%" in trend_text
     assert trend.get_attribute("data-evidence-state") == "PRACTICE_TREND_REVIEWABLE"
 
-    unseen = root.locator('[data-family-id="RATIO-MODEL"]')
+    # A visible Core family with no direct Practice capacity gets explicit wording.
+    unseen = root.locator('[data-family-id="ID-APPLY"]')
     assert unseen.count() == 1
     unseen_text = unseen.inner_text()
     assert "Hiện chưa có bài luyện trực tiếp" in unseen_text
     assert "không có nghĩa là em yếu" in unseen_text
     assert unseen.get_attribute("data-evidence-state") == "NO_DIRECT_EVIDENCE"
+
+    # Optional layers remain collapsed by default; selecting the layer opens it and
+    # preserves the same no-direct-evidence wording.
+    root.locator(".skill-map-v2-controls select").nth(0).select_option("Entrance10")
+    ratio_model = root.locator('[data-family-id="RATIO-MODEL"]')
+    assert ratio_model.count() == 1
+    ratio_text = ratio_model.inner_text()
+    assert "Hiện chưa có bài luyện trực tiếp" in ratio_text
+    assert ratio_model.get_attribute("data-evidence-state") == "NO_DIRECT_EVIDENCE"
+    root.locator(".skill-map-v2-controls select").nth(0).select_option("ALL")
 
     # Learner mode hides technical family IDs from the card copy.
     assert "TRI-PERPBISECTOR" not in sparse_text
