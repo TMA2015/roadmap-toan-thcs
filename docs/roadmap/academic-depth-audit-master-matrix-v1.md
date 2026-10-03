@@ -2,7 +2,7 @@
 
 Date: 2026-10-03  
 Framework: Academic Source Framework v1 + Academic Depth Audit Standard v1  
-Status: **SCAFFOLD / NOT YET ACADEMICALLY REVIEWED**
+Status: **ACTIVE — CT09 PILOT CLOSED SELF_LEARNING_READY_V1; remaining topics not yet depth-audited**
 
 This matrix is the control surface for the next academic phase. Existing older audits are prior evidence only; they do not automatically carry PASS into this matrix.
 
@@ -26,7 +26,7 @@ This matrix is the control surface for the next academic phase. Existing older a
 | CT06 · Phân tích đa thức | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | TBD | TBD | NOT_REVIEWED |
 | CT07 · Phân thức đại số | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | TBD | TBD | NOT_REVIEWED |
 | CT08 · Phương trình – Bất phương trình | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | TBD | TBD | NOT_REVIEWED |
-| CT09 · Hệ phương trình | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | TBD | TBD | NOT_REVIEWED |
+| CT09 · Hệ phương trình | PASS | PASS | PASS | PASS | PASS | PASS | CT09 R0/R1 + P1-A/B/C + Closure R1 | NONE; school-semester frequency = non-blocking INSUFFICIENT_SOURCE | SELF_LEARNING_READY_V1 |
 | CT10 · Hàm số và đồ thị | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | TBD | TBD | NOT_REVIEWED |
 | CT11 · Căn thức | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | TBD | TBD | NOT_REVIEWED |
 | CT12 · Phương trình bậc hai & Viète | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | NOT_REVIEWED | TBD | TBD | NOT_REVIEWED |
@@ -49,7 +49,7 @@ This matrix is the control surface for the next academic phase. Existing older a
 | Batch | Scope | Purpose | Status |
 |---|---|---|---|
 | A | CT02–CT07 | Số/đại số nền tảng; validate standard on first deep batch | NOT_STARTED |
-| B | CT08–CT12 | Đại số lớp 8–9 / Entrance10-heavy | NOT_STARTED |
+| B | CT08–CT12 | Đại số lớp 8–9 / Entrance10-heavy | IN_PROGRESS — CT09 pilot SELF_LEARNING_READY_V1; CT08/10/11/12 not yet depth-audited |
 | C | CT13–CT20 | Hình học và đo lường | NOT_STARTED |
 | D | CT21–CT25 | Thống kê, xác suất, modeling, tổng hợp thi 10 | NOT_STARTED |
 | O | CT01 | Orientation / learner navigation special audit | NOT_STARTED |
