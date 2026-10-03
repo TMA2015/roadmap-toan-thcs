@@ -353,9 +353,9 @@ def check_golden_template(num, folder, lesson_text, practice_text, self_text):
         # is Core-Support; parameter work remains Challenge. These pedagogical labels
         # are non-gating and do not change the protected Core Readiness assessment.
         if (
-            "Ứng dụng KNTT-Core" not in practice_text
-            or "Core-Support" not in practice_text
-            or "Thử thách" not in practice_text
+            "### Ứng dụng" not in practice_text
+            or "### Củng cố" not in practice_text
+            or "### Thử thách" not in practice_text
         ):
             issues.append(f"{num:02d}: Practice Room chưa tách rõ Core application / Core-Support / Challenge")
     elif "Entrance10" not in practice_text or "Challenge" not in practice_text:
