@@ -1,5 +1,5 @@
 {
-  "version": "1.0.199",
+  "version": "1.0.201",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1239,6 +1239,26 @@
         "deploy_run": 37198340047,
         "deploy_conclusion": "SUCCESS"
       }
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI42-EVENT-OUTCOME-R1-001",
+      "title": "Grade 6 KNTT Bài 42 — outcome/event lesson-local evidence repair R1",
+      "routing": "CONTENT_REPAIR+NOTEBOOKLM_ACADEMIC_REVIEW",
+      "status": "ACADEMIC-PASS-TECH-QA-PENDING",
+      "context_version": "1.0.201",
+      "review_verdict": "NOTEBOOKLM_PASS_G6_BAI42_EVENT_OUTCOME_CONTENT_REVIEW_COMPLETE",
+      "review_notes": "NotebookLM PASS with exact clearance G6_BAI42_EVENT_OUTCOME_CONTENT_REVIEW_COMPLETE. Learn PASS; 3/3 Micro PASS; Grade-6 sự kiện terminology PASS; Bài 42/Bài 43 boundary PASS; lesson-local/no-canonical-skill boundary PASS; Practice Bank change NONE; missing/duplicate/unexpected IDs NONE. No academic corrections required. ket-qua-co-the and su-kien-don-gian remain lesson-local under PROB-EVENT using LESSON_LOCAL_CORE_FORMATIVE, tags.skill=[], gates_core=false. Grade-6 Dimension Audit reconciled to Learn=VERIFIED_LESSON_LOCAL, Micro=VERIFIED_LESSON_LOCAL; Practice remains FAMILY_LEVEL_TOPIC_EVIDENCE; Written=NONE; Readiness=PENDING_REVIEW. Technical CI/PR gate remains required.",
+      "artifacts": [
+        "review-packets/kntt-g6-bai42-event-outcome-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "docs/assets/data/curriculum/topic23-learning-workspace.json",
+        "docs/assets/data/practice/23-xac-suat-micro-v1.json",
+        "scripts/test-kntt-g6-bai42-event-outcome-r1.js",
+        "scripts/test-learning-card-micro-practice.js",
+        "review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
+      ],
+      "review_receipt": "review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md"
     }
   ]
 }

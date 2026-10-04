@@ -27,7 +27,14 @@ for (const q of bank.questions) {
   ids.add(q.id);
   if (!Array.isArray(q.options) || q.options.length !== 4) errors.push(`${q.id}: expected 4 options`);
   if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= q.options.length) errors.push(`${q.id}: invalid answer`);
-  if (!Array.isArray(q.tags?.skill) || q.tags.skill.length !== 1) errors.push(`${q.id}: expected exactly one assessed skill`);
+  const lessonLocal = q.evidence_role === "LESSON_LOCAL_CORE_FORMATIVE";
+  if (lessonLocal) {
+    if (!Array.isArray(q.tags?.skill) || q.tags.skill.length !== 0) errors.push(`${q.id}: lesson-local formative item must not write a skill tag`);
+    if (!Array.isArray(q.lesson_local_targets) || q.lesson_local_targets.length < 1) errors.push(`${q.id}: lesson-local targets required`);
+    if (q.gates_core !== false) errors.push(`${q.id}: lesson-local formative item must not gate Core mastery`);
+  } else if (!Array.isArray(q.tags?.skill) || q.tags.skill.length !== 1) {
+    errors.push(`${q.id}: expected exactly one assessed skill`);
+  }
   for (const [idx, ev] of Object.entries(q.option_evidence || {})) {
     if (Number(idx) === q.answer) errors.push(`${q.id}: observed signal attached to correct option`);
     if (![1, 2].includes(Number(ev.signal_weight || 1))) errors.push(`${q.id}: signal_weight must be 1 or 2`);
@@ -41,11 +48,17 @@ for (const card of workspace.cards || []) {
   if (qs.slice(3).some(q => q.micro_role !== "coverage")) errors.push(`${card.id}: extra questions must be marked coverage`);
   for (const q of qs) {
     if (q.card_id !== card.id) errors.push(`${q.id}: question/card ID mismatch`);
-    const skill = q.tags.skill[0];
-    const core = (card.skills || []).includes(skill);
-    const support = (card.supporting_skills || []).includes(skill);
-    if (!core && !support) errors.push(`${q.id}: assessed skill not declared by card`);
-    if (support && (q.tags.layer === "KNTT-Core" || q.gates_core !== false)) errors.push(`${q.id}: supporting skill must be non-Core and gates_core=false`);
+    const lessonLocal = q.evidence_role === "LESSON_LOCAL_CORE_FORMATIVE";
+    if (lessonLocal) {
+      const declared = new Set((card.lesson_local_concepts || []).map(x => typeof x === "string" ? x : x?.id).filter(Boolean));
+      for (const target of q.lesson_local_targets || []) if (!declared.has(target)) errors.push(`${q.id}: lesson-local target not declared by card: ${target}`);
+    } else {
+      const skill = q.tags.skill[0];
+      const core = (card.skills || []).includes(skill);
+      const support = (card.supporting_skills || []).includes(skill);
+      if (!core && !support) errors.push(`${q.id}: assessed skill not declared by card`);
+      if (support && (q.tags.layer === "KNTT-Core" || q.gates_core !== false)) errors.push(`${q.id}: supporting skill must be non-Core and gates_core=false`);
+    }
   }
 }
 

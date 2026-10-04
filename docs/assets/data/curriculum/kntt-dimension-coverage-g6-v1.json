@@ -3,7 +3,7 @@
   "version": 1,
   "as_of": "2026-10-04",
   "grade": 6,
-  "status": "G6_PILOT_AUDIT_BAI30_REPAIRED_R1",
+  "status": "G6_PILOT_AUDIT_BAI30_BAI42_REPAIRED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -13,7 +13,7 @@
     },
     "grade6_reconciliation": {
       "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
-      "blob_sha": "f351524183f847f44af56872d28c7ddd7d5e788a"
+      "blob_sha": "5db354e6bdfd1a20ddb4a7ddf833e5f4d676f8e4"
     },
     "taxonomy": {
       "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
@@ -250,13 +250,22 @@
         "placement": "EXACT",
         "workspace": {
           "path": "docs/assets/data/curriculum/topic23-learning-workspace.json",
-          "sha": "7b2659c78e298017d16ec52f2a45cd57d3d88191"
+          "sha": "443169587e0ba663bc694122ee4a37e456793c70"
         },
         "micro": {
           "path": "docs/assets/data/practice/23-xac-suat-micro-v1.json",
-          "sha": "ef8e6f27456591ddc42e606575abeb8d5fd28437",
+          "sha": "10f6dfcc41040da16b351a8c607c10fe82e6e4b3",
           "grade6Skills": [
             "xac-suat-thuc-nghiem"
+          ],
+          "grade6LessonLocalTargets": [
+            "ket-qua-co-the",
+            "su-kien-don-gian"
+          ],
+          "grade6LessonLocalItemIds": [
+            "PRO23MICRO_018",
+            "PRO23MICRO_019",
+            "PRO23MICRO_020"
           ]
         },
         "manifest": {
@@ -304,17 +313,19 @@
         "VERIFIED_SEMANTIC": 31
       },
       "LEARN_CONTENT": {
-        "PARTIAL_LOCAL_OR_FAMILY": 8,
+        "PARTIAL_LOCAL_OR_FAMILY": 7,
         "VERIFIED_DIRECT": 10,
         "PARTIAL_SHARED_SKILL": 7,
         "PARTIAL_PLACEMENT": 5,
-        "PARTIAL_MISSING_DIRECT_SKILL": 1
+        "PARTIAL_MISSING_DIRECT_SKILL": 1,
+        "VERIFIED_LESSON_LOCAL": 1
       },
       "MICRO_PRACTICE": {
         "PARTIAL": 12,
         "FAMILY_LEVEL_ONLY": 3,
         "VERIFIED_DIRECT": 15,
-        "NONE": 1
+        "NONE": 0,
+        "VERIFIED_LESSON_LOCAL": 1
       },
       "PRACTICE_BANK": {
         "PARTIAL_TOPIC_EVIDENCE": 5,
@@ -369,15 +380,6 @@
         "micro": "PARTIAL",
         "practice": "PARTIAL_TOPIC_EVIDENCE",
         "readiness": "AUTHORIZED_TOPIC_LEVEL"
-      },
-      {
-        "chapter": 9,
-        "lesson_ref": "Bài 42",
-        "summary": "Kết quả có thể và sự kiện trong trò chơi, thí nghiệm",
-        "learn": "PARTIAL_LOCAL_OR_FAMILY",
-        "micro": "NONE",
-        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
-        "readiness": "PENDING_REVIEW"
       }
     ],
     "repaired_rows": [
@@ -390,6 +392,17 @@
         "micro": "VERIFIED_DIRECT",
         "practice": "TOPIC_SKILL_EVIDENCE",
         "review_receipt": "review-packets/kntt-g6-bai30-rounding-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      },
+      {
+        "chapter": 9,
+        "lesson_ref": "Bài 42",
+        "summary": "Kết quả có thể và sự kiện trong trò chơi, thí nghiệm",
+        "repair_status": "REPAIRED_REVIEWED_R1",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "readiness": "PENDING_REVIEW",
+        "review_receipt": "review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md"
       }
     ]
   },
@@ -2812,7 +2825,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_LOCAL_OR_FAMILY",
+          "status": "VERIFIED_LESSON_LOCAL",
           "card_skill_evidence": [
             "xac-suat-thuc-nghiem"
           ],
@@ -2820,17 +2833,34 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic23-learning-workspace.json",
-            "sha": "7b2659c78e298017d16ec52f2a45cd57d3d88191"
-          }
+            "sha": "443169587e0ba663bc694122ee4a37e456793c70"
+          },
+          "lesson_local_hits": [
+            "ket-qua-co-the",
+            "su-kien-don-gian"
+          ],
+          "note": "Bài 42 concepts are explicitly taught as reviewed Grade-6 lesson-local content under PROB-EVENT; no canonical skill is created."
         },
         "MICRO_PRACTICE": {
-          "status": "NONE",
+          "status": "VERIFIED_LESSON_LOCAL",
           "direct_skill_hits": [],
           "family_skill_hits": [],
           "micro": {
             "path": "docs/assets/data/practice/23-xac-suat-micro-v1.json",
-            "sha": "ef8e6f27456591ddc42e606575abeb8d5fd28437"
-          }
+            "sha": "10f6dfcc41040da16b351a8c607c10fe82e6e4b3"
+          },
+          "lesson_local_hits": [
+            "ket-qua-co-the",
+            "su-kien-don-gian"
+          ],
+          "item_ids": [
+            "PRO23MICRO_018",
+            "PRO23MICRO_019",
+            "PRO23MICRO_020"
+          ],
+          "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "gates_core": false,
+          "note": "Direct Grade-6 lesson-local formative evidence is present without canonical skill writes or mastery/readiness credit."
         },
         "PRACTICE_BANK": {
           "status": "FAMILY_LEVEL_TOPIC_EVIDENCE",
@@ -2859,6 +2889,18 @@
             "note": "AUTHOR_DRAFT_AWAITING_SECOND_PERSON_ACADEMIC_REVIEW."
           }
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-BAI42-EVENT-OUTCOME-R1-20261004",
+        "clearance": "G6_BAI42_EVENT_OUTCOME_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "written": "NONE",
+        "readiness": "PENDING_REVIEW",
+        "note": "Bài 42 Learn + Grade-6 lesson-local Micro evidence repaired. Practice remains topic/family-level; Written and Readiness dimensions are unchanged."
       }
     },
     {

@@ -10,7 +10,7 @@
     {
       "id": "prob23-core-1",
       "order": 1,
-      "title": "Kết quả có thể và xác suất thực nghiệm",
+      "title": "Kết quả có thể, sự kiện và xác suất thực nghiệm",
       "kntt_lessons": [
         "Lớp 6: Bài 42–43"
       ],
@@ -22,17 +22,38 @@
       "micro_practice": [
         "PRO23MICRO_001",
         "PRO23MICRO_002",
-        "PRO23MICRO_003"
+        "PRO23MICRO_003",
+        "PRO23MICRO_018",
+        "PRO23MICRO_019",
+        "PRO23MICRO_020"
       ],
       "teaching_copy": {
-        "key_idea": "Xác suất thực nghiệm (tần số tương đối) của một sự kiện là tỉ số giữa số lần sự kiện đó xảy ra và tổng số lần thực hiện phép thử.",
+        "key_idea": "Trong một trò chơi hoặc thí nghiệm, trước hết ta liệt kê các kết quả có thể xảy ra. Một sự kiện là điều ta quan tâm; sự kiện xảy ra khi kết quả nhận được thỏa điều mô tả. Khi lặp lại thí nghiệm nhiều lần, xác suất thực nghiệm của một sự kiện bằng số lần sự kiện xảy ra chia cho tổng số lần thực hiện.",
         "worked_example": {
-          "problem": "Tung một đồng xu 20 lần, mặt ngửa xuất hiện 12 lần. Xác suất thực nghiệm của mặt ngửa bằng bao nhiêu?",
-          "solution": "Có 12 lần ngửa trên 20 lần thử. Xác suất thực nghiệm là 12/20 = 3/5."
+          "problem": "Gieo một xúc xắc sáu mặt. a) Nêu các kết quả có thể. b) Xét sự kiện “số chấm lớn hơn 4”; những kết quả nào làm sự kiện xảy ra? c) Nếu gieo 20 lần và sự kiện xảy ra 7 lần thì xác suất thực nghiệm của sự kiện bằng bao nhiêu?",
+          "solution": "a) Các kết quả có thể là 1, 2, 3, 4, 5, 6. b) Sự kiện xảy ra khi kết quả là 5 hoặc 6. c) Xác suất thực nghiệm là 7/20."
         },
-        "misconception": "Học sinh thường lấy nhầm số lần sự kiện 'không xảy ra' để chia, hoặc chia cho số lần của kết quả khác thay vì tổng số lần thử.",
-        "summary": "Để tính xác suất thực nghiệm, ta đếm số lần kết quả thuận lợi xuất hiện trên thực tế rồi chia cho tổng số lần đã thực hiện thí nghiệm."
-      }
+        "misconception": "Không nhầm một kết quả cụ thể với một sự kiện: một sự kiện có thể xảy ra bởi một hoặc nhiều kết quả. Cũng không dùng số kết quả có thể để thay cho số lần sự kiện thực sự xảy ra khi tính xác suất thực nghiệm.",
+        "summary": "Bài 42: xác định kết quả có thể và nhận biết khi một sự kiện xảy ra. Bài 43: sau nhiều lần thử, dùng tần số xảy ra thực tế để tính xác suất thực nghiệm."
+      },
+      "lesson_local_concepts": [
+        {
+          "id": "ket-qua-co-the",
+          "label": "Kết quả có thể",
+          "family_id": "PROB-EVENT",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 42"
+        },
+        {
+          "id": "su-kien-don-gian",
+          "label": "Sự kiện đơn giản",
+          "family_id": "PROB-EVENT",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 42"
+        }
+      ]
     },
     {
       "id": "prob23-core-2",
