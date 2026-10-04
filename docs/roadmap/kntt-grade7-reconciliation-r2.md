@@ -1,69 +1,96 @@
 # KNTT Grade 7 — Reconciliation R2
 
 **Date:** 2026-10-04  
-**State:** DRAFT RECONCILIATION · ACADEMIC REVIEW PENDING · NO RUNTIME CHANGE  
-**Input:** 11 Grade-7 historical exact-ID mismatches from Coverage Matrix v1
+**State:** RECONCILED · NOTEBOOKLM PASS · NO RUNTIME CHANGE  
+**Review clearance:** `G7_R2_RECONCILIATION_REVIEW_COMPLETE`
 
-## 1. Draft result
+## 1. Final result
 
-- **3 CANONICAL_SKILL**
-- **3 CANONICAL_FAMILY**
-- **5 NEEDS_REVIEW**
-- **6/11** can be reconciled without a new global identity before independent review.
+The Grade-7 Coverage Matrix contained **11 historical exact-ID mismatches**. After repository reconciliation plus independent NotebookLM review of the five ambiguous cases, Grade 7 R2 is now semantically closed:
 
-| # | Historical ref | R2 draft | Current target / review candidate |
-|---:|---|---|---|
-| 1 | `phep-tinh-so-huu-ti` | NEEDS_REVIEW | `so-huu-ti-thap-phan`, `NUM-SETS` |
-| 2 | `quy-tac-chuyen-ve` | NEEDS_REVIEW | `bien-doi-pt-nhieu-buoc`, `EQ-BASIC` |
-| 3 | `can-bac-hai` | CANONICAL_SKILL | `can-bac-hai-so-hoc` |
-| 4 | `so-thap-phan-vo-han-tuan-hoan` | CANONICAL_SKILL | `so-huu-ti-thap-phan` |
-| 5 | `so-vo-ti` | NEEDS_REVIEW | `NUM-SETS` |
-| 6 | `tap-hop-so-thuc` | NEEDS_REVIEW | `NUM-SETS` |
-| 7 | `ve-bieu-do-quat-tron` | CANONICAL_FAMILY | `STAT-REPRESENT` |
-| 8 | `ve-bieu-do-doan-thang` | CANONICAL_FAMILY | `STAT-REPRESENT` |
-| 9 | `da-thuc-mot-bien` | CANONICAL_FAMILY | `ALG-STRUCTURE` |
-| 10 | `chia-da-thuc-mot-bien` | NEEDS_REVIEW | `chia-da-thuc-cho-don-thuc`, `ALG-DIV-MONOMIAL` |
-| 11 | `xac-suat-bien-co-don-gian` | CANONICAL_SKILL | `xac-suat-co-dien` |
+- **6 CANONICAL_SKILL**
+- **4 CANONICAL_FAMILY**
+- **1 LESSON_LOCAL**
+- **0 remaining review cases**
+- **0 remaining gap candidates**
 
-## 2. Safe closures
+Three new global identities were justified:
 
-- `can-bac-hai` -> `can-bac-hai-so-hoc` / RAD-BASIC, using the registry's existing canonical candidate.
-- `so-thap-phan-vo-han-tuan-hoan` -> `so-huu-ti-thap-phan` / NUM-SETS.
-- chart construction refs -> STAT-REPRESENT family.
-- `da-thuc-mot-bien` -> ALG-STRUCTURE family.
-- `xac-suat-bien-co-don-gian` -> `xac-suat-co-dien` / PROB-CLASSICAL.
+- `phep-tinh-so-huu-ti` → family `NUM-FRACTION-OPS`
+- `so-vo-ti` → family `NUM-SETS`
+- `chia-da-thuc-mot-bien` → current division family `ALG-DIV-MONOMIAL`
 
-## 3. Five cases requiring independent review
+The other eight refs reconcile without a new global skill.
 
-1. `phep-tinh-so-huu-ti`
-2. `quy-tac-chuyen-ve`
-3. `so-vo-ti`
-4. `tap-hop-so-thuc`
-5. `chia-da-thuc-mot-bien`
+## 2. Independent review result
 
-The Grade-7 mapping previously identified `chia-da-thuc-mot-bien` as lacking a sufficiently clear Practice skill; R2 therefore does not collapse it into the narrower `chia-da-thuc-cho-don-thuc` without review.
+Packet: `MATH-KNTT-G7-RECON-R2-20261004`
 
-## 4. Anti-inflation rule
+NotebookLM reviewed **5/5** expected refs and returned **PASS**:
 
-Do not create a global skill merely because KNTT uses a lesson phrase. Review each case for:
-- S1 curriculum identity;
-- diagnostic value;
-- overlap with existing family/skill;
-- cross-grade stability;
-- problem type vs skill;
-- granularity.
+| Historical ref | Review decision | Final target |
+|---|---|---|
+| `phep-tinh-so-huu-ti` | ADD_CANONICAL_SKILL | `phep-tinh-so-huu-ti` |
+| `quy-tac-chuyen-ve` | KEEP_LESSON_LOCAL | — |
+| `so-vo-ti` | ADD_CANONICAL_SKILL | `so-vo-ti` |
+| `tap-hop-so-thuc` | MAP_TO_FAMILY | `NUM-SETS` |
+| `chia-da-thuc-mot-bien` | ADD_CANONICAL_SKILL | `chia-da-thuc-mot-bien` |
 
-## 5. Protected boundaries
+Review receipt:
+`review-packets/kntt-grade7-reconciliation-r2/01_NOTEBOOKLM_RESULT_R2.md`
 
-No learner-facing change, Taxonomy runtime activation, history migration/backfill/regrade, Mastery/Readiness change, or new-skill creation occurs in this draft.
+## 3. Final reconciliation table
 
-## 6. Next gate
+| Historical ref | Final resolution | Canonical target |
+|---|---|---|
+| `phep-tinh-so-huu-ti` | CANONICAL_SKILL | `phep-tinh-so-huu-ti` / `NUM-FRACTION-OPS` |
+| `quy-tac-chuyen-ve` | LESSON_LOCAL | prerequisite technique |
+| `can-bac-hai` | CANONICAL_SKILL | `can-bac-hai-so-hoc` / `RAD-BASIC` |
+| `so-thap-phan-vo-han-tuan-hoan` | CANONICAL_SKILL | `so-huu-ti-thap-phan` / `NUM-SETS` |
+| `so-vo-ti` | CANONICAL_SKILL | `so-vo-ti` / `NUM-SETS` |
+| `tap-hop-so-thuc` | CANONICAL_FAMILY | `NUM-SETS` |
+| `ve-bieu-do-quat-tron` | CANONICAL_FAMILY | `STAT-REPRESENT` |
+| `ve-bieu-do-doan-thang` | CANONICAL_FAMILY | `STAT-REPRESENT` |
+| `da-thuc-mot-bien` | CANONICAL_FAMILY | `ALG-STRUCTURE` |
+| `chia-da-thuc-mot-bien` | CANONICAL_SKILL | `chia-da-thuc-mot-bien` / `ALG-DIV-MONOMIAL` |
+| `xac-suat-bien-co-don-gian` | CANONICAL_SKILL | `xac-suat-co-dien` / `PROB-CLASSICAL` |
 
-Independent NotebookLM review of exactly the five review-queue refs using:
-- current NotebookLM Math Review Rules v1.2;
-- current Master Plan v1.2.1;
-- official/reusable SGK Toán 7 tập một;
-- official/reusable SGK Toán 7 tập hai;
-- the R2 packet.
+## 4. Family placement boundary
 
-After review, reconcile the result into this artifact before any taxonomy change.
+The review authorizes three **skills**, not a broad family restructuring.
+
+Therefore:
+- rational arithmetic is placed under the existing operations family `NUM-FRACTION-OPS`;
+- irrational numbers are placed under `NUM-SETS`;
+- general univariate-polynomial division is attached to current `ALG-DIV-MONOMIAL` for this bounded reconciliation.
+
+The last placement is intentionally conservative. The family ID/label remains unchanged in R2; any future family rename/split requires a separate reviewed taxonomy task.
+
+## 5. Why the raw Matrix still shows 11 unresolved IDs
+
+Coverage Matrix v1 preserves its original exact-ID comparison for audit traceability.
+
+The Grade-7 semantic overlay now states:
+
+`RECONCILED_REVIEWED_R2`
+
+Thus exact-ID mismatch does not imply a curriculum gap.
+
+## 6. Taxonomy integration
+
+Durable Taxonomy v2 adds three diagnostic skill identities only. It does **not** add fake Practice mappings or evidence.
+
+This change does **not**:
+- activate Taxonomy v2 runtime;
+- write learner data;
+- backfill/regrade learner history;
+- alter Mastery/Readiness;
+- claim Practice Bank or Readiness evidence for the three new skills;
+- rename/restructure canonical families;
+- change learner-facing UI.
+
+## 7. Next step
+
+Grade 7 identity/granularity reconciliation is closed.
+
+Proceed to **Grade 8 reconciliation R3** using the same discipline. Do not infer Grade-8 decisions from Grade 6/7; reconcile the three Grade-8 exact-ID mismatches against Grade-8 KNTT placement and the current registry.
