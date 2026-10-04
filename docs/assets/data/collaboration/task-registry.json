@@ -1,7 +1,7 @@
 {
-  "version": "1.0.186",
+  "version": "1.0.187",
   "schema": "roadmap-collaboration-task-registry-v1",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "statuses": [
     "OPEN",
     "GEMINI-DRAFT",
@@ -1146,9 +1146,9 @@
       "title": "Academic Depth CT08 — source-backed self-learning audit",
       "routing": "SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_QA",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.186",
+      "context_version": "1.0.187",
       "review_verdict": "P1A_IMPLEMENTATION_IN_PROGRESS",
-      "review_notes": "R1 academic review PASS. P1-A implementation is in progress on a separate branch; P1-B/P1-C remain blocked until P1-A technical/owner QA. No Mastery/Readiness change.",
+      "review_notes": "R1 academic review PASS. P1-A implementation is in progress on a separate branch; P1-B/P1-C remain blocked until P1-A technical/owner QA. No Mastery/Readiness change. Architecture checkpoint 2026-10-04: pause further CT08 P1-B/P1-C expansion until Master Plan v1.2.1 shared-library/two-path implications are reconciled with CT08 naming, Practice Room and Written Library placement.",
       "review_packet": "review-packets/academic-depth/ct08-r1/02_NOTEBOOKLM_CT08_GAP_DELTA_R1.md",
       "review_receipt": "review-packets/academic-depth/ct08-r1/03_CT08_R1_NOTEBOOKLM_PASS_RECEIPT.md"
     },
@@ -1161,6 +1161,15 @@
       "review_verdict": "IMPLEMENTATION_IN_PROGRESS_AFTER_NOTEBOOKLM_R1_PASS",
       "review_notes": "Authorized by CT08 R1 NotebookLM PASS. Scope: learner-layer correction (inequality modeling = KNTT-Core application; multi-condition = Core-Support, both non-gating), remove row-level star ranking but keep generic topic badge, add targeted worked examples (transform-to-product, transformed inequality, deeper one-variable model), add Core inequality-model teaching block, and notation-only cleanup EQ08V1_047..050 under academic lock. Taxonomy v2 registry/runtime remains protected and unchanged; no Mastery/Readiness, backfill/regrade or history migration.",
       "review_receipt": "review-packets/academic-depth/ct08-r1/03_CT08_R1_NOTEBOOKLM_PASS_RECEIPT.md"
+    },
+    {
+      "id": "MATH-GOVERNANCE-MASTER-PLAN-1.2.1-001",
+      "title": "Master Plan v1.2.1 — shared Written Exercise Library",
+      "routing": "GOVERNANCE+ARCHITECTURE",
+      "status": "DONE",
+      "context_version": "1.0.187",
+      "review_verdict": "OWNER_APPROVED_GOVERNANCE_UPDATE",
+      "review_notes": "Master Plan v1.2.1 defines one canonical Written Exercise Library with two learner paths: Học theo lớp/KNTT and Học theo chuyên đề. Adds kntt_placements, topic_placements, prerequisite_skills and written_role; curriculum placement is explicitly distinct from prerequisite knowledge. No learner-facing UI/data migration is authorized by this governance update. NotebookLM permanent Master Plan source must be refreshed from v1.1 to the new canonical version before the next independent review, but refresh is intentionally deferred for now."
     }
   ]
 }
