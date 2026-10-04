@@ -2,13 +2,13 @@
   "schema": "kntt-grade6-reconciliation-r1",
   "version": 1,
   "as_of": "2026-10-04",
-  "status": "DRAFT_RECONCILIATION_NO_RUNTIME_CHANGE",
+  "status": "RECONCILED_REVIEWED_NO_RUNTIME_CHANGE",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Reconcile the 35 unresolved historical Grade-6 KNTT skill references against the current canonical skill/family universe without inflating the taxonomy or changing learner runtime.",
   "source_locks": {
     "coverage_matrix": {
       "path": "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
-      "blob_sha": "8a428370daf18b46d2a0ca8f6d2f52b17687da59"
+      "blob_sha": "9f5072d245ed77bffc1543450b3f745583c649da"
     },
     "grade6_map": {
       "path": "docs/assets/data/curriculum/kntt-grade6-map.json",
@@ -16,7 +16,8 @@
     },
     "taxonomy_v2": {
       "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
-      "blob_sha": "c2f2e5b8d78a58d874f88524861326223fdbdf45"
+      "review_input_blob_sha": "c2f2e5b8d78a58d874f88524861326223fdbdf45",
+      "integrated_blob_sha": "16113e910cc451cd69b72c5f2f86f579237bf60f"
     },
     "knowledge_graph": {
       "path": "docs/assets/data/curriculum/knowledge-graph-v1.json",
@@ -40,38 +41,24 @@
   "resolution_definitions": {
     "CANONICAL_SKILL": "Historical ref can map to an existing canonical diagnostic skill. Many-to-one mapping is allowed when current taxonomy intentionally uses broader granularity.",
     "CANONICAL_FAMILY": "The concept belongs in an existing family, but should remain lesson-local/problem-type/representation granularity rather than becoming a new global assessed skill.",
-    "NEEDS_REVIEW": "A plausible current target exists, but scope/granularity/grade-language ambiguity is material enough that R1 does not assert a canonical mapping.",
-    "GAP_CANDIDATE": "No suitable current canonical skill/family was found in the locked taxonomy. This is a review candidate only, not authorization to create a new skill."
-  },
-  "protected_boundaries": {
-    "learner_facing_change": false,
-    "canonical_skill_creation": false,
-    "canonical_skill_rename": false,
-    "taxonomy_runtime_activation": false,
-    "mastery_readiness_change": false,
-    "learner_history_migration": false,
-    "item_regrade": false
+    "LESSON_LOCAL": "The concept is confirmed Core/lesson content but remains a lesson-local application technique/problem type rather than a global assessed-skill identity."
   },
   "summary": {
     "unresolved_input_count": 35,
-    "resolved_without_new_skill": 28,
+    "reconciled_count": 35,
     "resolution_counts": {
-      "CANONICAL_SKILL": 16,
-      "CANONICAL_FAMILY": 12,
-      "NEEDS_REVIEW": 5,
-      "GAP_CANDIDATE": 2
+      "CANONICAL_SKILL": 18,
+      "CANONICAL_FAMILY": 16,
+      "LESSON_LOCAL": 1
     },
-    "gap_candidates": [
-      "lam-tron",
-      "uoc-luong"
+    "remaining_review_queue": [],
+    "remaining_gap_candidates": [],
+    "new_canonical_skills": [
+      "lam-tron-so"
     ],
-    "review_queue": [
-      "cong-tru-so-tu-nhien",
-      "nhan-chia-so-tu-nhien",
-      "hon-so-duong",
-      "phep-tinh-so-thap-phan",
-      "bang-thong-ke"
-    ]
+    "new_canonical_skill_count": 1,
+    "resolved_without_new_global_skill": 34,
+    "note": "All 35 Grade-6 historical refs are semantically reconciled. The raw exact-ID mismatch count remains preserved in the Coverage Matrix for traceability."
   },
   "entries": [
     {
@@ -120,38 +107,26 @@
       "chapter": 1,
       "lesson_ref": "Bài 4-5",
       "curriculum_summary": "Cộng, trừ, nhân, chia số tự nhiên và tính chất",
-      "resolution": "NEEDS_REVIEW",
+      "resolution": "CANONICAL_FAMILY",
       "canonical_skill_ids": [],
-      "canonical_family_ids": [],
-      "local_role": null,
-      "reason": "Có ứng viên `NUM-INTEGER-OPS` / `so-nguyen-phep-tinh`, nhưng family hiện hành được đóng khung ở số nguyên và Learning Workspace dùng nó cho Bài 13–17; không ép map Bài 4–5 khi chưa review scope.",
-      "review_candidates": {
-        "canonical_skill_ids": [
-          "so-nguyen-phep-tinh"
-        ],
-        "canonical_family_ids": [
-          "NUM-INTEGER-OPS"
-        ]
-      }
+      "canonical_family_ids": [
+        "NUM-INTEGER-OPS"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "NotebookLM PASS: phép cộng và phép trừ số tự nhiên thuộc family NUM-INTEGER-OPS; sắc thái miền số tự nhiên giữ ở lesson-local để tránh trùng taxonomy."
     },
     {
       "historical_ref": "nhan-chia-so-tu-nhien",
       "chapter": 1,
       "lesson_ref": "Bài 4-5",
       "curriculum_summary": "Cộng, trừ, nhân, chia số tự nhiên và tính chất",
-      "resolution": "NEEDS_REVIEW",
+      "resolution": "CANONICAL_FAMILY",
       "canonical_skill_ids": [],
-      "canonical_family_ids": [],
-      "local_role": null,
-      "reason": "Tương tự cộng/trừ số tự nhiên: phép toán có liên hệ với `NUM-INTEGER-OPS`, nhưng domain/scope hiện hành chưa đủ rõ để coi là canonical match.",
-      "review_candidates": {
-        "canonical_skill_ids": [
-          "so-nguyen-phep-tinh"
-        ],
-        "canonical_family_ids": [
-          "NUM-INTEGER-OPS"
-        ]
-      }
+      "canonical_family_ids": [
+        "NUM-INTEGER-OPS"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "NotebookLM PASS: phép nhân và phép chia số tự nhiên thuộc family NUM-INTEGER-OPS; không tạo global skill riêng."
     },
     {
       "historical_ref": "quan-he-chia-het",
@@ -375,17 +350,13 @@
       "chapter": 6,
       "lesson_ref": "Bài 23-24",
       "curriculum_summary": "Mở rộng phân số, phân số bằng nhau; so sánh phân số; hỗn số dương",
-      "resolution": "NEEDS_REVIEW",
+      "resolution": "CANONICAL_FAMILY",
       "canonical_skill_ids": [],
-      "canonical_family_ids": [],
-      "local_role": null,
-      "reason": "KNTT Core có hỗn số dương nhưng taxonomy hiện không có skill/family label rõ ràng cho mixed-number representation; `NUM-FRACTION-FORM` là ứng viên gần nhất nhưng chưa đủ để auto-map.",
-      "review_candidates": {
-        "canonical_skill_ids": [],
-        "canonical_family_ids": [
-          "NUM-FRACTION-FORM"
-        ]
-      }
+      "canonical_family_ids": [
+        "NUM-FRACTION-FORM"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "NotebookLM PASS: hỗn số dương là một hình thức biểu diễn phân số; map family NUM-FRACTION-FORM và giữ chi tiết ở lesson-local."
     },
     {
       "historical_ref": "cong-tru-phan-so",
@@ -463,50 +434,42 @@
       "chapter": 7,
       "lesson_ref": "Bài 28-29",
       "curriculum_summary": "Số thập phân và tính toán với số thập phân",
-      "resolution": "NEEDS_REVIEW",
-      "canonical_skill_ids": [],
-      "canonical_family_ids": [],
-      "local_role": null,
-      "reason": "Learning Workspace có dạy tính số thập phân nhưng registry chỉ có `so-huu-ti-thap-phan` dưới NUM-SETS và mapping của chính code đó từng được đánh REVIEW_REQUIRED; cần review trước khi coi phép tính là cùng skill.",
-      "review_candidates": {
-        "canonical_skill_ids": [
-          "so-huu-ti-thap-phan"
-        ],
-        "canonical_family_ids": [
-          "NUM-SETS"
-        ]
-      }
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-huu-ti-thap-phan"
+      ],
+      "canonical_family_ids": [
+        "NUM-SETS"
+      ],
+      "local_role": "AGGREGATED_GRANULARITY",
+      "reason": "NotebookLM PASS: tính toán với số thập phân được hấp thụ vào canonical skill so-huu-ti-thap-phan dưới NUM-SETS."
     },
     {
       "historical_ref": "lam-tron",
       "chapter": 7,
       "lesson_ref": "Bài 30",
       "curriculum_summary": "Làm tròn và ước lượng",
-      "resolution": "GAP_CANDIDATE",
-      "canonical_skill_ids": [],
-      "canonical_family_ids": [],
-      "local_role": null,
-      "reason": "KNTT Bài 30 và tiêu đề Grade-6 Core card đều có làm tròn, nhưng taxonomy hiện không có skill/family chứa `lam-tron`/`xap-xi` tương ứng.",
-      "candidate_topics": [
-        "CT02"
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "lam-tron-so"
       ],
-      "new_skill_authorized": false
+      "canonical_family_ids": [
+        "NUM-SETS"
+      ],
+      "local_role": "NEW_CANONICAL_SKILL_S1_REVIEWED",
+      "reason": "NotebookLM PASS: S1 Bài 30 và giá trị chẩn đoán biện minh canonical skill riêng lam-tron-so dưới NUM-SETS.",
+      "created_in_this_reconciliation": true
     },
     {
       "historical_ref": "uoc-luong",
       "chapter": 7,
       "lesson_ref": "Bài 30",
       "curriculum_summary": "Làm tròn và ước lượng",
-      "resolution": "GAP_CANDIDATE",
+      "resolution": "LESSON_LOCAL",
       "canonical_skill_ids": [],
       "canonical_family_ids": [],
-      "local_role": null,
-      "reason": "KNTT Bài 30 có ước lượng; taxonomy hiện không có canonical skill/family trực tiếp. Chỉ ghi gap candidate, chưa tạo skill.",
-      "candidate_topics": [
-        "CT02",
-        "CT24"
-      ],
-      "new_skill_authorized": false
+      "local_role": "APPLICATION_TECHNIQUE",
+      "reason": "NotebookLM PASS: ước lượng là kỹ thuật ứng dụng dựa trên làm tròn, giữ lesson-local/problem type; không tạo canonical skill riêng."
     },
     {
       "historical_ref": "bai-toan-phan-tram",
@@ -541,18 +504,13 @@
       "chapter": 9,
       "lesson_ref": "Bài 38-41",
       "curriculum_summary": "Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép",
-      "resolution": "NEEDS_REVIEW",
+      "resolution": "CANONICAL_FAMILY",
       "canonical_skill_ids": [],
-      "canonical_family_ids": [],
-      "local_role": null,
-      "reason": "Learning Workspace hiện có card `Đọc bảng dữ liệu...` nhưng taxonomy không có skill đọc bảng riêng; cần quyết định giữ lesson-local dưới STAT-REPRESENT/STAT-CHART-READ hay bổ sung identity.",
-      "review_candidates": {
-        "canonical_skill_ids": [],
-        "canonical_family_ids": [
-          "STAT-REPRESENT",
-          "STAT-CHART-READ"
-        ]
-      }
+      "canonical_family_ids": [
+        "STAT-REPRESENT"
+      ],
+      "local_role": "LESSON_LOCAL_REPRESENTATION",
+      "reason": "NotebookLM PASS: bảng thống kê là dạng biểu diễn dữ liệu cơ bản, map family STAT-REPRESENT."
     },
     {
       "historical_ref": "bieu-do-tranh",
@@ -593,5 +551,63 @@
       "local_role": "LESSON_LOCAL_CONCEPT",
       "reason": "`Sự kiện` lớp 6 là tiền thân ngôn ngữ của biến cố; map family thay vì ép trực tiếp sang `bien-co` và làm mờ ranh giới lớp."
     }
-  ]
+  ],
+  "review": {
+    "packet_id": "MATH-KNTT-G6-RECON-R1-20261004",
+    "result": "PASS",
+    "expected_ids": 7,
+    "reviewed_ids": 7,
+    "clearance": "G6_R1_RECONCILIATION_REVIEW_COMPLETE",
+    "result_path": "review-packets/kntt-grade6-reconciliation-r1/01_NOTEBOOKLM_RESULT_R1.md",
+    "decisions": {
+      "cong-tru-so-tu-nhien": {
+        "decision": "MAP_TO_FAMILY",
+        "target": "NUM-INTEGER-OPS",
+        "priority": "P1"
+      },
+      "nhan-chia-so-tu-nhien": {
+        "decision": "MAP_TO_FAMILY",
+        "target": "NUM-INTEGER-OPS",
+        "priority": "P1"
+      },
+      "hon-so-duong": {
+        "decision": "MAP_TO_FAMILY",
+        "target": "NUM-FRACTION-FORM",
+        "priority": "P1"
+      },
+      "phep-tinh-so-thap-phan": {
+        "decision": "MAP_TO_SKILL",
+        "target": "so-huu-ti-thap-phan",
+        "priority": "P1"
+      },
+      "bang-thong-ke": {
+        "decision": "MAP_TO_FAMILY",
+        "target": "STAT-REPRESENT",
+        "priority": "P1"
+      },
+      "lam-tron": {
+        "decision": "ADD_CANONICAL_SKILL",
+        "target": "lam-tron-so",
+        "priority": "P1"
+      },
+      "uoc-luong": {
+        "decision": "KEEP_LESSON_LOCAL",
+        "target": null,
+        "priority": "P1"
+      }
+    }
+  },
+  "implementation_scope": {
+    "canonical_skill_additions": [
+      "lam-tron-so"
+    ],
+    "canonical_family_additions": [],
+    "canonical_skill_renames": [],
+    "learner_facing_change": false,
+    "taxonomy_runtime_activation": false,
+    "mastery_readiness_change": false,
+    "learner_history_migration": false,
+    "item_regrade": false,
+    "note": "The new canonical skill identity is added to the durable registry only. No Practice/Readiness evidence, runtime activation, or learner-facing rollout is implied."
+  }
 }
