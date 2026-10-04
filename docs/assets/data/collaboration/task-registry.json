@@ -1,5 +1,5 @@
 {
-  "version": "1.0.214",
+  "version": "1.0.215",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.214",
-      "review_verdict": "G6_BAI31_RECONCILED_RELEASED_NEXT_LOCAL_WAVE",
-      "review_notes": "Bài 31 multi-topic evidence reconciliation is released. The next clean Grade-6 content work is the remaining PARTIAL_LOCAL_OR_FAMILY wave: Bài 1–3 (ghi-so-tu-nhien, thu-tu-so-tu-nhien), Bài 11–12 (bai-toan-ucln-bcnn), and Bài 23–24 (phan-so-bang-nhau, hon-so-duong). These identities are already semantically reviewed as lesson-local/problem-type and should not inflate taxonomy.",
+      "context_version": "1.0.215",
+      "review_verdict": "G6_BAI1_3_REPAIRED_NEXT_BAI11_12",
+      "review_notes": "Bài 31 multi-topic audit reconciliation is released. Bài 1–3 direct/local Learn-Micro repair is source-confirmed and ready for technical QA. Next clear lesson-local gap after release is Bài 11–12 (bai-toan-ucln-bcnn), then Bài 23–24.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1414,6 +1414,22 @@
         "deploy_run": 37216769394,
         "deploy_conclusion": "SUCCESS"
       }
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI1_3-NATURAL-NUMBER-BASICS-R1-001",
+      "title": "Grade 6 KNTT Bài 1–3 — natural-number notation/order evidence repair R1",
+      "routing": "CONTENT_REPAIR+LOW_RISK_SOURCE_CONFIRMED",
+      "status": "TECH-QA-PENDING",
+      "context_version": "1.0.215",
+      "review_verdict": "SOURCE_CONFIRMED_LOW_RISK_READY_FOR_TECH_QA",
+      "review_notes": "Grade-6 reconciliation already keeps ghi-so-tu-nhien and thu-tu-so-tu-nhien as LESSON_LOCAL_CONCEPT under NUM-SETS. Candidate expands num02-g6-core-1 and adds NUM02MICRO_033–035 for place value, comparison and successor of a natural number. Deterministic oracles: 5 000; 58 203 < 58 230; 10 000. Items use LESSON_LOCAL_CORE_FORMATIVE, tags.skill=[], gates_core=false. No taxonomy/Practice/Written/Readiness/runtime/history semantic change. Under the owner-approved risk-based review policy, no new NotebookLM round is required. Dimension Audit now records Learn=VERIFIED_DIRECT_AND_LOCAL and Micro=VERIFIED_DIRECT_AND_LOCAL; Practice remains PARTIAL_TOPIC_EVIDENCE, Written=NONE, Readiness=NOT_VERIFIED_STRUCTURED. Next gate: full Roadmap PR Quality.",
+      "artifacts": [
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "scripts/test-kntt-g6-bai1-3-natural-number-basics-r1.js"
+      ]
     }
   ]
 }
