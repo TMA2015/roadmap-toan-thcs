@@ -171,11 +171,11 @@ until the library adopts the placement contract. Topic + grade overlay must not 
 1. Complete Grade-6 statistics micro coverage for Bài 38–41.
 2. Migrate the Shared Written Exercise Library toward canonical `kntt_placements` before claiming KNTT written coverage.
 3. Only after Learn/Practice gaps are reconciled should Readiness expansion be considered.
-5. Keep Bài 30 Written/Readiness dimensions open until they receive their own evidence; the R1 repair must not be promoted into a mastery/readiness claim.
-6. Keep Bài 42 Practice at family/topic level and Readiness pending until separate evidence is reviewed; the lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
-7. Keep Bài 4–5 Practice at family/topic level and Readiness open; the source-confirmed lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
-8. Keep Bài 8 Practice at family/topic level and Readiness open; the source-confirmed lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
-9. Keep Bài 27 Practice at family/topic level and Readiness open; its problem-type evidence must not be promoted into canonical skills or mastery/readiness credit.
+4. Keep Bài 30 Written/Readiness dimensions open until they receive their own evidence; the R1 repair must not be promoted into a mastery/readiness claim.
+5. Keep Bài 42 Practice at family/topic level and Readiness pending until separate evidence is reviewed; the lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
+6. Keep Bài 4–5 Practice at family/topic level and Readiness open; the source-confirmed lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
+7. Keep Bài 8 Practice at family/topic level and Readiness open; the source-confirmed lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
+8. Keep Bài 27 Practice at family/topic level and Readiness open; its problem-type evidence must not be promoted into canonical skills or mastery/readiness credit.
 
 ## 8. Protected boundaries
 
