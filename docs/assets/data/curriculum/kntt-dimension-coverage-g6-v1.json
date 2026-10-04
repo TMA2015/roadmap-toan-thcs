@@ -3,7 +3,7 @@
   "version": 1,
   "as_of": "2026-10-04",
   "grade": 6,
-  "status": "G6_PILOT_AUDIT_BAI31_MULTI_TOPIC_RECONCILED_R1",
+  "status": "G6_PILOT_AUDIT_BAI1_3_REPAIRED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -13,7 +13,7 @@
     },
     "grade6_reconciliation": {
       "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
-      "blob_sha": "88c35941bcd63186b3c1a31c217fa56d15398f31"
+      "blob_sha": "76fba982125577adabaa115222d2e2aaa943d5f3"
     },
     "taxonomy": {
       "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
@@ -29,11 +29,11 @@
         "placement": "EXACT",
         "workspace": {
           "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-          "sha": "9b67e22d0f6d4fd1727a3167639c506d201a3c66"
+          "sha": "05dc22c82a7c992b6ab19343caebd19d03740ac6"
         },
         "micro": {
           "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-          "sha": "2d2be5e269d9c63e8a059de41737abb0607c2c98",
+          "sha": "eac1a13cd56df68c0f98b93b8eb211792cb779b4",
           "grade6Skills": [
             "tap-hop-so",
             "thu-tu-phep-tinh",
@@ -58,7 +58,9 @@
             "quan-he-chia-het",
             "tinh-chat-chia-het",
             "tim-gia-tri-phan-so-cua-so",
-            "tim-so-khi-biet-gia-tri-phan-so"
+            "tim-so-khi-biet-gia-tri-phan-so",
+            "ghi-so-tu-nhien",
+            "thu-tu-so-tu-nhien"
           ],
           "grade6LessonLocalItemIds": [
             "NUM02MICRO_024",
@@ -69,7 +71,10 @@
             "NUM02MICRO_029",
             "NUM02MICRO_030",
             "NUM02MICRO_031",
-            "NUM02MICRO_032"
+            "NUM02MICRO_032",
+            "NUM02MICRO_033",
+            "NUM02MICRO_034",
+            "NUM02MICRO_035"
           ]
         },
         "manifest": {
@@ -344,21 +349,21 @@
         "VERIFIED_SEMANTIC": 31
       },
       "LEARN_CONTENT": {
-        "PARTIAL_LOCAL_OR_FAMILY": 3,
+        "PARTIAL_LOCAL_OR_FAMILY": 2,
         "VERIFIED_DIRECT": 11,
         "PARTIAL_SHARED_SKILL": 7,
         "PARTIAL_PLACEMENT": 5,
         "PARTIAL_MISSING_DIRECT_SKILL": 0,
         "VERIFIED_LESSON_LOCAL": 4,
-        "VERIFIED_DIRECT_AND_LOCAL": 1
+        "VERIFIED_DIRECT_AND_LOCAL": 2
       },
       "MICRO_PRACTICE": {
-        "PARTIAL": 10,
+        "PARTIAL": 9,
         "FAMILY_LEVEL_ONLY": 0,
         "VERIFIED_DIRECT": 16,
         "NONE": 0,
         "VERIFIED_LESSON_LOCAL": 4,
-        "VERIFIED_DIRECT_AND_LOCAL": 1
+        "VERIFIED_DIRECT_AND_LOCAL": 2
       },
       "PRACTICE_BANK": {
         "PARTIAL_TOPIC_EVIDENCE": 4,
@@ -379,14 +384,14 @@
     "written_library_kntt_placement_count": 0,
     "priority_gap_rows": [
       {
-        "chapter": 1,
-        "lesson_ref": "Bài 1-3",
-        "summary": "Tập hợp; cách ghi và thứ tự số tự nhiên",
+        "chapter": 2,
+        "lesson_ref": "Bài 11-12",
+        "summary": "ƯCLN, BCNN và bài toán áp dụng",
         "learn": "PARTIAL_LOCAL_OR_FAMILY",
         "micro": "PARTIAL",
         "practice": "PARTIAL_TOPIC_EVIDENCE",
         "readiness": "NOT_VERIFIED_STRUCTURED",
-        "priority_reason": "Next clean lesson-local gap: direct tap-hop-so evidence exists, while ghi-so-tu-nhien and thu-tu-so-tu-nhien remain reviewed lesson-local concepts without explicit Learn/Micro evidence."
+        "priority_reason": "Next clear lesson-local gap after Bài 1–3: direct UCLN/BCNN evidence exists, while the reviewed local application identity still lacks explicit lesson-local Learn/Micro evidence."
       }
     ],
     "repaired_rows": [
@@ -465,6 +470,17 @@
         "practice": "TOPIC_SKILL_EVIDENCE",
         "readiness": "NOT_VERIFIED_STRUCTURED",
         "review_basis": "Existing reviewed semantic reconciliation + deployed Topic02/Topic03 evidence; no new content"
+      },
+      {
+        "chapter": 1,
+        "lesson_ref": "Bài 1-3",
+        "summary": "Tập hợp; cách ghi và thứ tự số tự nhiên",
+        "repair_status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "review_basis": "Reviewed semantic reconciliation + deterministic natural-number representation/order"
       }
     ]
   },
@@ -504,7 +520,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_LOCAL_OR_FAMILY",
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
           "card_skill_evidence": [
             "tap-hop-so",
             "thu-tu-phep-tinh",
@@ -514,11 +530,19 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
-          }
+            "sha": "05dc22c82a7c992b6ab19343caebd19d03740ac6"
+          },
+          "direct_skill_hits": [
+            "tap-hop-so"
+          ],
+          "lesson_local_hits": [
+            "ghi-so-tu-nhien",
+            "thu-tu-so-tu-nhien"
+          ],
+          "note": "Bài 1–3 now explicitly covers the direct set/natural-number identity plus the reviewed lesson-local concepts for writing natural numbers and ordering natural numbers under NUM-SETS."
         },
         "MICRO_PRACTICE": {
-          "status": "PARTIAL",
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
           "direct_skill_hits": [
             "tap-hop-so"
           ],
@@ -528,8 +552,23 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
-          }
+            "sha": "eac1a13cd56df68c0f98b93b8eb211792cb779b4"
+          },
+          "lesson_local_hits": [
+            "ghi-so-tu-nhien",
+            "thu-tu-so-tu-nhien"
+          ],
+          "direct_item_ids": [
+            "NUM02MICRO_001"
+          ],
+          "lesson_local_item_ids": [
+            "NUM02MICRO_033",
+            "NUM02MICRO_034",
+            "NUM02MICRO_035"
+          ],
+          "lesson_local_evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "lesson_local_gates_core": false,
+          "note": "Existing direct tap-hop-so Micro plus three deterministic lesson-local items now cover the row's direct and local demands without new skill writes."
         },
         "PRACTICE_BANK": {
           "status": "PARTIAL_TOPIC_EVIDENCE",
@@ -555,6 +594,16 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "review_basis": "Existing NotebookLM-reviewed Grade-6 reconciliation + deterministic natural-number representation/order content under owner-approved risk-based review policy",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "Learn + Micro direct/local gap repaired. Practice remains topic-level partial evidence; Written and Readiness remain open."
       }
     },
     {
