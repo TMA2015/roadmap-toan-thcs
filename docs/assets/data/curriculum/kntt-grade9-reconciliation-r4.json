@@ -2,7 +2,7 @@
   "schema": "kntt-grade9-reconciliation-r4",
   "version": 1,
   "as_of": "2026-10-04",
-  "status": "DRAFT_RECONCILIATION_REVIEW_PENDING_NO_RUNTIME_CHANGE",
+  "status": "RECONCILED_REVIEWED_LAYER_CORRECTED_NO_RUNTIME_CHANGE",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Reconcile the final four Grade-9 historical exact-ID mismatches and audit a possible KNTT-Core layer conflict in statistics before declaring the 6–9 Coverage Matrix semantically closed.",
   "source_locks": {
@@ -16,7 +16,8 @@
     },
     "taxonomy_v2": {
       "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
-      "blob_sha": "cde746a448d8e1dff3a852f6fa027501e15c228f"
+      "review_input_blob_sha": "cde746a448d8e1dff3a852f6fa027501e15c228f",
+      "integrated_blob_sha": "90e58fa666a0cea4ae41ff7ef82a3cbf80ca11e4"
     },
     "knowledge_graph": {
       "path": "docs/assets/data/curriculum/knowledge-graph-v1.json",
@@ -27,43 +28,30 @@
       "blob_sha": "2812085ab0dd0800196eee7d44562f2ced4294e1"
     }
   },
-  "protected_boundaries": {
-    "learner_facing_change": false,
-    "canonical_skill_creation": false,
-    "canonical_skill_rename": false,
-    "canonical_family_creation": false,
-    "canonical_family_rename": false,
-    "taxonomy_runtime_activation": false,
-    "mastery_readiness_change": false,
-    "learner_history_migration": false,
-    "item_regrade": false,
-    "layer_change": false
-  },
   "summary": {
     "exact_id_unresolved_input_count": 4,
-    "closed_before_review": 0,
+    "reconciled_count": 4,
     "resolution_counts": {
-      "NEEDS_REVIEW": 4
+      "CANONICAL_SKILL": 2,
+      "CANONICAL_FAMILY": 2
     },
-    "review_queue": [
-      "bang-tan-so-tuong-doi",
-      "bieu-do-tan-so",
-      "bieu-do-tan-so-tuong-doi",
-      "bang-tan-so-ghep-nhom"
-    ],
-    "layer_audit_required": true,
-    "layer_conflicts_to_review": [
+    "remaining_review_queue": [],
+    "remaining_gap_candidates": [],
+    "new_canonical_skills": [],
+    "new_canonical_families": [],
+    "layer_changes": [
       {
-        "target": "STAT-FREQUENCY",
-        "current_layer": "Core-Support",
-        "grade9_kntt_context": "Chapter 7 Core content: frequency and relative frequency"
+        "family_id": "STAT-FREQUENCY",
+        "from": "Core-Support",
+        "to": "KNTT-Core"
       },
       {
-        "target": "STAT-ADVANCED-DATA",
-        "current_layer": "Entrance10",
-        "grade9_kntt_context": "Chapter 7 Core map currently includes du-lieu-ghep-nhom"
+        "family_id": "STAT-ADVANCED-DATA",
+        "from": "Entrance10",
+        "to": "KNTT-Core"
       }
-    ]
+    ],
+    "semantic_matrix_6_9_closure_candidate": true
   },
   "entries": [
     {
@@ -71,82 +59,127 @@
       "chapter": 7,
       "lesson_ref": null,
       "curriculum_summary": "Tần số và tần số tương đối",
-      "resolution": "NEEDS_REVIEW",
-      "canonical_skill_ids": [],
-      "canonical_family_ids": [],
-      "review_candidates": {
-        "canonical_skill_ids": [
-          "tan-suat"
-        ],
-        "canonical_family_ids": [
-          "STAT-FREQUENCY"
-        ],
-        "new_identity_candidate": null
-      },
-      "reason": "Relative-frequency tables may be a representation of existing `tan-suat`, but the current family is Core-Support while Grade-9 KNTT places this in Chapter 7 Core. Identity and layer must be reviewed together."
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "tan-suat"
+      ],
+      "canonical_family_ids": [
+        "STAT-FREQUENCY"
+      ],
+      "reason": "NotebookLM PASS: relative-frequency table is canonically represented by existing skill `tan-suat`.",
+      "local_role": "REVIEWED_ALIAS"
     },
     {
       "historical_ref": "bieu-do-tan-so",
       "chapter": 7,
       "lesson_ref": null,
       "curriculum_summary": "Tần số và tần số tương đối",
-      "resolution": "NEEDS_REVIEW",
+      "resolution": "CANONICAL_FAMILY",
       "canonical_skill_ids": [],
-      "canonical_family_ids": [],
-      "review_candidates": {
-        "canonical_skill_ids": [
-          "chon-bieu-do",
-          "chuyen-bang-bieu-do"
-        ],
-        "canonical_family_ids": [
-          "STAT-REPRESENT",
-          "STAT-CHART-READ"
-        ],
-        "new_identity_candidate": null
-      },
-      "reason": "Frequency charts are a representation task; current chart/representation families may already cover it, but Grade-9 S1 scope should determine whether family-level mapping is sufficient."
+      "canonical_family_ids": [
+        "STAT-REPRESENT"
+      ],
+      "reason": "NotebookLM PASS: frequency-chart representation belongs to STAT-REPRESENT under anti-inflation rule.",
+      "local_role": "REPRESENTATION_VARIANT"
     },
     {
       "historical_ref": "bieu-do-tan-so-tuong-doi",
       "chapter": 7,
       "lesson_ref": null,
       "curriculum_summary": "Tần số và tần số tương đối",
-      "resolution": "NEEDS_REVIEW",
+      "resolution": "CANONICAL_FAMILY",
       "canonical_skill_ids": [],
-      "canonical_family_ids": [],
-      "review_candidates": {
-        "canonical_skill_ids": [
-          "chon-bieu-do",
-          "chuyen-bang-bieu-do",
-          "tan-suat"
-        ],
-        "canonical_family_ids": [
-          "STAT-REPRESENT",
-          "STAT-FREQUENCY"
-        ],
-        "new_identity_candidate": null
-      },
-      "reason": "Relative-frequency charts combine frequency/relative-frequency concepts with representation. Review must avoid creating a duplicate skill if existing families are sufficient."
+      "canonical_family_ids": [
+        "STAT-REPRESENT"
+      ],
+      "reason": "NotebookLM PASS: relative-frequency chart representation belongs to STAT-REPRESENT under anti-inflation rule.",
+      "local_role": "REPRESENTATION_VARIANT"
     },
     {
       "historical_ref": "bang-tan-so-ghep-nhom",
       "chapter": 7,
       "lesson_ref": null,
       "curriculum_summary": "Tần số và tần số tương đối",
-      "resolution": "NEEDS_REVIEW",
-      "canonical_skill_ids": [],
-      "canonical_family_ids": [],
-      "review_candidates": {
-        "canonical_skill_ids": [
-          "du-lieu-ghep-nhom"
-        ],
-        "canonical_family_ids": [
-          "STAT-ADVANCED-DATA",
-          "STAT-FREQUENCY"
-        ],
-        "new_identity_candidate": null
-      },
-      "reason": "Current `du-lieu-ghep-nhom` exists but is classified Entrance10. Grade-9 KNTT mapping currently places grouped-frequency work inside Chapter 7, creating a potential layer conflict that requires S1 review."
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "du-lieu-ghep-nhom"
+      ],
+      "canonical_family_ids": [
+        "STAT-ADVANCED-DATA"
+      ],
+      "reason": "NotebookLM PASS: grouped frequency table maps to existing canonical skill `du-lieu-ghep-nhom`.",
+      "local_role": "REVIEWED_ALIAS"
     }
-  ]
+  ],
+  "review": {
+    "packet_id": "MATH-KNTT-G9-RECON-R4-20261004",
+    "result": "PASS",
+    "expected_ids": 4,
+    "reviewed_ids": 4,
+    "layer_decisions_reviewed": 2,
+    "clearance": "G9_R4_RECONCILIATION_REVIEW_COMPLETE",
+    "result_path": "review-packets/kntt-grade9-reconciliation-r4/01_NOTEBOOKLM_RESULT_R4.md",
+    "decisions": {
+      "bang-tan-so-tuong-doi": {
+        "decision": "MAP_TO_SKILL",
+        "target": "tan-suat",
+        "priority": "P1"
+      },
+      "bieu-do-tan-so": {
+        "decision": "MAP_TO_FAMILY",
+        "target": "STAT-REPRESENT",
+        "priority": "P1"
+      },
+      "bieu-do-tan-so-tuong-doi": {
+        "decision": "MAP_TO_FAMILY",
+        "target": "STAT-REPRESENT",
+        "priority": "P1"
+      },
+      "bang-tan-so-ghep-nhom": {
+        "decision": "MAP_TO_SKILL",
+        "target": "du-lieu-ghep-nhom",
+        "priority": "P1"
+      }
+    },
+    "layer_decisions": {
+      "STAT-FREQUENCY": {
+        "from": "Core-Support",
+        "decision": "CHANGE_TO_KNTT_CORE",
+        "to": "KNTT-Core"
+      },
+      "STAT-ADVANCED-DATA": {
+        "from": "Entrance10",
+        "decision": "CHANGE_TO_KNTT_CORE",
+        "to": "KNTT-Core"
+      }
+    }
+  },
+  "implementation_scope": {
+    "canonical_skill_additions": [],
+    "canonical_family_additions": [],
+    "canonical_skill_renames": [],
+    "canonical_family_renames": [],
+    "layer_changes": [
+      {
+        "family_id": "STAT-FREQUENCY",
+        "from": "Core-Support",
+        "to": "KNTT-Core"
+      },
+      {
+        "family_id": "STAT-ADVANCED-DATA",
+        "from": "Entrance10",
+        "to": "KNTT-Core"
+      }
+    ],
+    "learner_facing_change": false,
+    "taxonomy_runtime_activation": false,
+    "mastery_readiness_change": false,
+    "learner_history_migration": false,
+    "item_regrade": false,
+    "note": "Only the two reviewed layer corrections are applied. No new identity, runtime activation, historical migration, Mastery/Readiness change, or evidence reinterpretation."
+  },
+  "resolution_definitions": {
+    "CANONICAL_SKILL": "Historical ref maps to an existing canonical skill identity.",
+    "CANONICAL_FAMILY": "Historical ref maps to an existing canonical family; chart/table variant remains representation detail rather than a new global skill."
+  }
 }
