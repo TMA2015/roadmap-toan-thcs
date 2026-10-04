@@ -20,6 +20,8 @@ jobs:
         run: pip install mkdocs-material
       - name: Validate curriculum dependencies
         run: python check_roadmap_dependencies.py
+      - name: Validate KNTT Coverage Matrix 6-9
+        run: node scripts/test-kntt-coverage-matrix-6-9-v1.js
       - name: Validate new CĐ23 readiness and CĐ24–25 learning
         run: |
           node --check docs/assets/javascripts/topic-workspace-v1.js
