@@ -1,19 +1,16 @@
 # Project Handoff — Self-Learning Math
 
-> **CURRENT CHECKPOINT — 03/10/2026, CT09 ACADEMIC DEPTH PILOT CLOSED: SELF_LEARNING_READY_V1.**  
-> CT09 final independent closure: **D1–D6 PASS; A1–A9 PASS**.  
-> Decisions: `PRIORITY_BADGE|KEEP`; `SELECTIVE_HINT_POLICY|PASS`; school-semester/final-test frequency remains **NON_BLOCKING_INSUFFICIENT_SOURCE**.  
-> Authorization: `CLEARED_FOR_CT09_SELF_LEARNING_READY_V1_CLOSURE`.  
-> Durable receipt: `review-packets/academic-depth/ct09-closure/02_CT09_SELF_LEARNING_READY_V1_PASS_RECEIPT.md`.  
-> CT09 implementation slices P1-A / P1-B / P1-C1 / P1-C2 are all **DONE / Owner QA PASS**. Production Practice = **129 questions / 27 structural groups** with original IDs/history preserved.  
-> Academic Depth Standard now codifies **selective static hints**: no 100% hint quota; important written/modeling bottlenecks must have a reliable non-AI help path.  
-> **Controlled rollout only:** CT09 validates the audit method; do not mass-copy CT09 edits to other topics. Remaining topics must be source-audited topic-by-topic or in controlled batches.
->
-> Skill Taxonomy v2 remains a separate protected program. Existing shadow evidence store/boundaries, no Mastery/Readiness, no backfill/regrade, and G2 protection remain unchanged unless a separately authorized taxonomy task changes them.
+> **CURRENT ARCHITECTURE CHECKPOINT — 04/10/2026.**  
+> Canonical Master Plan: **v1.2.1 — One Knowledge Graph · Two Learning Paths + Shared Written Exercise Library**.  
+> Path A = **Học theo lớp / KNTT Course Map**; Path B = **Học theo chuyên đề / 25 Vertical Spine**. Both reuse the same canonical skills/items; do not build parallel knowledge banks.  
+> Written Exercise Library is one canonical store with two learner entry paths. KNTT filtering uses curriculum placement (`kntt_placements`); topic filtering uses `topic_placements`; lower-grade knowledge used inside a problem belongs in `prerequisite_skills` unless it is a true curriculum placement.  
+> Core Cards prioritize concept essence / Base→Trap→Apply. Topic Practice prioritizes foundation, connections, transfer, mixed skills and remediation; do not rebuild a second Core curriculum inside Practice Room.  
+> **NotebookLM:** the current permanent Master Plan source in the existing Notebook is still v1.1. **Do not use it for the next new independent review.** Before the next NotebookLM review, export the canonical Master Plan as the matching new permanent source and replace the old v1.1 source. This refresh is intentionally deferred until that review is actually needed.  
+> CT08 P1-A is live, but Owner QA remains open due to UX/render/navigation/naming/Practice-room issues discovered after release. Do not start CT08 P1-B/P1-C until those architecture/UX issues are reconciled with v1.2.1.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
-Đọc tài liệu này trước, cùng [Master Plan v1.1.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
+Đọc tài liệu này trước, cùng [Master Plan canonical v1.2.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
 
 ## Skill Taxonomy v2 — ACTIVE PROGRAM CHECKPOINT (02/10/2026)
 
@@ -27,11 +24,10 @@
 - Tất cả legacy IDs, learner history và old tags được bảo toàn; không backfill/regrade.
 - Canonical Evidence G2 hiện tại vẫn là protected boundary; Skill Taxonomy v2 chưa được phép bật runtime.
 
-### NotebookLM review workflow — frozen for current taxonomy program
-- **NotebookLM** là independent academic reviewer cho Skill Taxonomy v2; không dùng Gemini thay thế cho vòng audit này.
-- Hai permanent Sources cố định:
-  1. `00_NOTEBOOK_MATH_PERMANENT_v1.1.md`
-  2. `01_TOAN_THCS_MASTER_PLAN_v1.1.md`
+### NotebookLM review workflow — source-version rule updated 04/10/2026
+- **NotebookLM** là independent academic reviewer; không dùng Gemini thay thế cho vòng audit này.
+- Permanent rules source hiện hành vẫn là `00_NOTEBOOK_MATH_PERMANENT_v1.1.md` trừ khi quy tắc riêng được tăng phiên bản.
+- **Master Plan permanent source phải khớp canonical Master Plan.** File `01_TOAN_THCS_MASTER_PLAN_v1.1.md` trong Notebook hiện đã lỗi thời sau Master Plan v1.2.x; phải thay bằng bản phát hành đồng phiên bản trước vòng review mới tiếp theo. Không chọn cả bản cũ và bản mới cùng lúc.
 - Prompt phải ghi **đúng tổng số selected Sources** theo dạng: `2 permanent + N batch = total`.
 - Chỉ upload các định dạng NotebookLM hỗ trợ; với pipeline hiện tại ưu tiên **Markdown/TXT/CSV**. JSON chỉ giữ trong GitHub cho provenance/machine-check, **không dùng làm NotebookLM Source**.
 - Batch lớn được phép nếu vẫn giữ topic-local source/overlay để sửa cục bộ. Đã xác nhận:
