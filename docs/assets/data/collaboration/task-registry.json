@@ -1,5 +1,5 @@
 {
-  "version": "1.0.202",
+  "version": "1.0.203",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1268,6 +1268,33 @@
         "deploy_run": 37200951441,
         "deploy_conclusion": "SUCCESS"
       }
+    },
+    {
+      "id": "MATH-G-LEARNING-FIREBASE-SHARED-PROJECT-001",
+      "title": "G-Learning shared Firebase project architecture",
+      "routing": "TECHNICAL_GOVERNANCE+CROSS_APP_ARCHITECTURE",
+      "status": "DONE",
+      "context_version": "1.0.203",
+      "review_verdict": "OWNER_APPROVED_SHARED_PROJECT_TWO_WEB_APPS",
+      "review_notes": "Firebase Project display name is G-Learning while stable Project ID remains roadmap-toan-ai. Existing Math Web App nickname is Self-Learning-Math and App ID remains 1:789845564404:web:a066df0deed80d2d58b7a1. Planned English site will register a separate Firebase Web App named Self-Learning-English inside the same Firebase project, with its own App ID/config. Shared project-level services may be reused, but Math and English learner data must be explicitly namespaced. No Math runtime/config migration is required solely for the display-name/nickname change; no Auth/Firestore/history migration is authorized now.",
+      "artifacts": [
+        "docs/roadmap/g-learning-firebase-architecture-v1.md",
+        "docs/assets/javascripts/firebase-gemini-config.js"
+      ]
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI45-NATURAL-OPS-R1-001",
+      "title": "Grade 6 KNTT Bài 4–5 — natural-number operations lesson-local evidence repair R1",
+      "routing": "CONTENT_REPAIR+LOW_RISK_SOURCE_CONFIRMED",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.203",
+      "review_verdict": "LOW_RISK_REPAIR_AUTHORED_FROM_REVIEWED_RECONCILIATION",
+      "review_notes": "Bài 4–5 refs cong-tru-so-tu-nhien and nhan-chia-so-tu-nhien are already independently reconciled as LESSON_LOCAL_CONCEPT under NUM-INTEGER-OPS. Planned repair is limited to explicit Learn + deterministic Grade-6 lesson-local Micro evidence with no taxonomy/layer/Practice/Readiness semantic change. Under the owner-approved risk-based review policy, a new NotebookLM round is not required unless implementation reveals a substantive academic ambiguity.",
+      "artifacts": [
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json"
+      ]
     }
   ]
 }
