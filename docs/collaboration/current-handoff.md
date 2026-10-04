@@ -7,6 +7,7 @@
 > Core Cards prioritize concept essence / Base→Trap→Apply. Topic Practice prioritizes foundation, connections, transfer, mixed skills and remediation; do not rebuild a second Core curriculum inside Practice Room.  
 > **NotebookLM:** the current permanent Master Plan source in the existing Notebook is still v1.1. **Do not use it for the next new independent review.** Before the next NotebookLM review, export the canonical Master Plan as the matching new permanent source and replace the old v1.1 source. This refresh is intentionally deferred until that review is actually needed.  
 > CT08 P1-A is live, but Owner QA remains open due to UX/render/navigation/naming/Practice-room issues discovered after release. Do not start CT08 P1-B/P1-C until those architecture/UX issues are reconciled with v1.2.1.
+> **KNTT Coverage Matrix 6–9 v1 framework is now created.** It reconciles the four reviewed grade overlays against the current Taxonomy v2 + Knowledge Graph skill universe. Do not interpret unresolved refs as confirmed missing curriculum; Grade 6 especially contains legacy-ID/granularity noise. Next mapping task is explicit ID/family/gap reconciliation, starting Grade 6.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
