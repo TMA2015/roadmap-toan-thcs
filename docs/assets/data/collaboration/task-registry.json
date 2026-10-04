@@ -1,5 +1,5 @@
 {
-  "version": "1.0.191",
+  "version": "1.0.192",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1176,9 +1176,9 @@
       "title": "KNTT Coverage Matrix 6–9 — current-skill reconciliation",
       "routing": "GOVERNANCE+CURRICULUM_MAPPING",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.191",
-      "review_verdict": "G7_R2_DRAFT_RECONCILIATION_READY",
-      "review_notes": "Grade 6 R1 is merged/closed. Grade 7 R2 draft covers all 11 exact-ID mismatches: 3 CANONICAL_SKILL, 3 CANONICAL_FAMILY, 5 NEEDS_REVIEW. Six close without a new identity. NotebookLM packet MATH-KNTT-G7-RECON-R2-20261004 is prepared for exactly five refs. No taxonomy/runtime/history/Mastery/Readiness change is authorized before review.",
+      "context_version": "1.0.192",
+      "review_verdict": "G7_R2_RECONCILED_REVIEWED",
+      "review_notes": "Grade 7 R2 closed after NotebookLM PASS 5/5 with clearance G7_R2_RECONCILIATION_REVIEW_COMPLETE. Final semantic split: 6 CANONICAL_SKILL, 4 CANONICAL_FAMILY, 1 LESSON_LOCAL; 0 review/gap cases. Three reviewed identities added to durable registry: phep-tinh-so-huu-ti under NUM-FRACTION-OPS, so-vo-ti under NUM-SETS, chia-da-thuc-mot-bien under current ALG-DIV-MONOMIAL. No runtime/history/Mastery/Readiness or learner-facing change. Next: Grade 8 reconciliation R3.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
         "docs/roadmap/kntt-coverage-matrix-6-9-v1.md",
@@ -1188,7 +1188,8 @@
         "review-packets/kntt-grade6-reconciliation-r1/01_NOTEBOOKLM_RESULT_R1.md",
         "docs/assets/data/curriculum/kntt-grade7-reconciliation-r2.json",
         "docs/roadmap/kntt-grade7-reconciliation-r2.md",
-        "review-packets/kntt-grade7-reconciliation-r2/00_NOTEBOOKLM_PACKET_R2.md"
+        "review-packets/kntt-grade7-reconciliation-r2/00_NOTEBOOKLM_PACKET_R2.md",
+        "review-packets/kntt-grade7-reconciliation-r2/01_NOTEBOOKLM_RESULT_R2.md"
       ]
     }
   ]
