@@ -1,5 +1,5 @@
 {
-  "version": "1.0.204",
+  "version": "1.0.205",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.204",
+      "context_version": "1.0.205",
       "review_verdict": "G6_DIMENSION_AUDIT_BAI30_BAI42_BAI45_REPAIRED_NEXT_BAI8_BAI27",
-      "review_notes": "Grade-6 dimension audit remains IN_PROGRESS. Bài 30 direct evidence, Bài 42 lesson-local evidence, and Bài 4–5 lesson-local evidence are repaired within their respective reviewed/source-confirmed boundaries. Next priority rows: Bài 8 and Bài 27 for lesson-specific Learn/Micro evidence, then Bài 38–41 statistics micro coverage. Practice/Written/Readiness remain conservatively scoped and are not inferred from these repairs.",
+      "review_notes": "Grade-6 dimension audit remains IN_PROGRESS. Bài 30 direct evidence, Bài 42 lesson-local evidence, and Bài 4–5 lesson-local evidence are repaired/released within their reviewed/source-confirmed boundaries. Next priority content rows: Bài 8 and Bài 27 for lesson-specific Learn/Micro evidence, then Bài 38–41 statistics micro coverage. Practice/Written/Readiness remain conservatively scoped.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1286,17 +1286,26 @@
       "id": "MATH-KNTT-G6-BAI45-NATURAL-OPS-R1-001",
       "title": "Grade 6 KNTT Bài 4–5 — natural-number operations lesson-local evidence repair R1",
       "routing": "CONTENT_REPAIR+LOW_RISK_SOURCE_CONFIRMED",
-      "status": "TECH-QA-PENDING",
-      "context_version": "1.0.204",
-      "review_verdict": "SOURCE_CONFIRMED_LOW_RISK_READY_FOR_TECH_QA",
-      "review_notes": "Existing Grade-6 semantic reconciliation already NotebookLM-PASSed cong-tru-so-tu-nhien and nhan-chia-so-tu-nhien as LESSON_LOCAL_CONCEPT under NUM-INTEGER-OPS. Candidate adds explicit Learn teaching copy plus NUM02MICRO_024–026 with LESSON_LOCAL_CORE_FORMATIVE, tags.skill=[], gates_core=false. Arithmetic/oracles are deterministic (5 625; 3 700; 2 500), no taxonomy/layer/Practice/Readiness semantic change, and under the owner-approved risk-based review policy no new NotebookLM round is required. Dimension Audit now records Learn=VERIFIED_LESSON_LOCAL, Micro=VERIFIED_LESSON_LOCAL; Practice remains FAMILY_LEVEL_TOPIC_EVIDENCE, Written=NONE, Readiness=NOT_VERIFIED_STRUCTURED. Next gate: full Roadmap PR Quality.",
+      "status": "DONE",
+      "context_version": "1.0.205",
+      "review_verdict": "DONE_SOURCE_CONFIRMED_CI_PASS_PR318_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Existing Grade-6 semantic reconciliation had already NotebookLM-PASSed cong-tru-so-tu-nhien and nhan-chia-so-tu-nhien as LESSON_LOCAL_CONCEPT under NUM-INTEGER-OPS. Low-risk candidate added explicit Learn teaching copy plus NUM02MICRO_024–026 with deterministic answer oracles 5 625, 3 700 and 2 500; LESSON_LOCAL_CORE_FORMATIVE, tags.skill=[], gates_core=false. No new NotebookLM round was required under the owner-approved risk-based review policy. Dimension Audit records Bài 4–5 Learn=VERIFIED_LESSON_LOCAL, Micro=VERIFIED_LESSON_LOCAL; Practice=FAMILY_LEVEL_TOPIC_EVIDENCE, Written=NONE, Readiness=NOT_VERIFIED_STRUCTURED remain intentionally open. Exact PR head 57c7b0d3e7a66ead2c03e3c1add7e7eee500ffa0 passed Roadmap PR Quality run 37202435362. PR #318 squash-merged to main as 5a9e5a6640351eb10ed7ea4a2844559e12908ec8. Deploy MkDocs run 37202741012 SUCCESS. No taxonomy/runtime/history/Mastery/Readiness semantic change.",
       "artifacts": [
         "docs/assets/data/curriculum/topic02-learning-workspace.json",
         "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "scripts/test-kntt-g6-bai45-natural-ops-r1.js",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
-      ]
+      ],
+      "release": {
+        "pr": 318,
+        "exact_head": "57c7b0d3e7a66ead2c03e3c1add7e7eee500ffa0",
+        "qa_run": 37202435362,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "5a9e5a6640351eb10ed7ea4a2844559e12908ec8",
+        "deploy_run": 37202741012,
+        "deploy_conclusion": "SUCCESS"
+      }
     }
   ]
 }
