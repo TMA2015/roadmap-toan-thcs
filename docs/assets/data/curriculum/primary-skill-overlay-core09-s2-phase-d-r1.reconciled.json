@@ -1,0 +1,3203 @@
+{
+  "schema": "primary-skill-overlay-core09-s2-phase-d-r1",
+  "status": "NOTEBOOKLM_PASS_CLEARED_FOR_CT09_S2_RECONCILIATION",
+  "as_of": "2026-10-02",
+  "topic": "09-he-phuong-trinh",
+  "source_manifest": "docs/assets/data/practice/09-he-phuong-trinh-v1.manifest.json",
+  "source_manifest_blob": "55d912926602a532120e13f7ef7cb38e720103fd",
+  "source_files": {
+    "09-he-phuong-trinh-v1-01.json": {
+      "blob": "f74f701f23c2c2fa03e7e6f2162954d52ec0586f",
+      "question_count": 30
+    },
+    "09-he-phuong-trinh-v1-02.json": {
+      "blob": "ea101b62695d37174dfc257e6d49e5b09a45893e",
+      "question_count": 30
+    },
+    "09-he-phuong-trinh-v1-03.json": {
+      "blob": "18e4f5e4d00956e3f6a0a979cf5d59f5afb506e3",
+      "question_count": 30
+    },
+    "09-he-phuong-trinh-v1-04.json": {
+      "blob": "09e3c0269d42addb9a21b3fecf6fe4c3e811ce2f",
+      "question_count": 30
+    }
+  },
+  "academic_basis": {
+    "s2_family_blob": "867d1b6fee2676cceff64117fc6c7983abec8233"
+  },
+  "rules": {
+    "one_primary_max_per_mcq": true,
+    "context_not_mastery": true,
+    "modeling_mcq_partial_only": true,
+    "runtime_enabled": false,
+    "no_history_backfill": true
+  },
+  "summary": {
+    "questions": 120,
+    "mapped_primary": 120,
+    "formative_only_without_primary": 0,
+    "primary_counts": {
+      "nghiem-pt-hai-an": 12,
+      "giai-he-the": 12,
+      "giai-he-cong": 4,
+      "so-nghiem-he": 12,
+      "chon-phuong-phap": 12,
+      "bien-doi-truoc-giai": 12,
+      "kiem-tra-nghiem-he": 12,
+      "tham-so-he": 12,
+      "lap-he-bai-toan": 32
+    },
+    "family_counts": {
+      "SYS-CONCEPT": 24,
+      "SYS-SOLVE": 52,
+      "SYS-PARAM": 12,
+      "SYS-MODEL": 32
+    },
+    "clone_families": [
+      {
+        "id": "SYS09-TWO-VAR-001-006",
+        "count": 6,
+        "ids": [
+          "SYS09V1_001",
+          "SYS09V1_002",
+          "SYS09V1_003",
+          "SYS09V1_004",
+          "SYS09V1_005",
+          "SYS09V1_006"
+        ]
+      },
+      {
+        "id": "SYS09-TWO-VAR-007-012",
+        "count": 6,
+        "ids": [
+          "SYS09V1_007",
+          "SYS09V1_008",
+          "SYS09V1_009",
+          "SYS09V1_010",
+          "SYS09V1_011",
+          "SYS09V1_012"
+        ]
+      },
+      {
+        "id": "SYS09-SOLVE-013-028",
+        "count": 16,
+        "ids": [
+          "SYS09V1_013",
+          "SYS09V1_014",
+          "SYS09V1_015",
+          "SYS09V1_016",
+          "SYS09V1_017",
+          "SYS09V1_018",
+          "SYS09V1_019",
+          "SYS09V1_020",
+          "SYS09V1_021",
+          "SYS09V1_022",
+          "SYS09V1_023",
+          "SYS09V1_024",
+          "SYS09V1_025",
+          "SYS09V1_026",
+          "SYS09V1_027",
+          "SYS09V1_028"
+        ]
+      },
+      {
+        "id": "SYS09-SOLUTION-COUNT-029-040",
+        "count": 12,
+        "ids": [
+          "SYS09V1_029",
+          "SYS09V1_030",
+          "SYS09V1_031",
+          "SYS09V1_032",
+          "SYS09V1_033",
+          "SYS09V1_034",
+          "SYS09V1_035",
+          "SYS09V1_036",
+          "SYS09V1_037",
+          "SYS09V1_038",
+          "SYS09V1_039",
+          "SYS09V1_040"
+        ]
+      },
+      {
+        "id": "SYS09-METHOD-041-044",
+        "count": 4,
+        "ids": [
+          "SYS09V1_041",
+          "SYS09V1_042",
+          "SYS09V1_043",
+          "SYS09V1_044"
+        ]
+      },
+      {
+        "id": "SYS09-METHOD-045-048",
+        "count": 4,
+        "ids": [
+          "SYS09V1_045",
+          "SYS09V1_046",
+          "SYS09V1_047",
+          "SYS09V1_048"
+        ]
+      },
+      {
+        "id": "SYS09-METHOD-049-052",
+        "count": 4,
+        "ids": [
+          "SYS09V1_049",
+          "SYS09V1_050",
+          "SYS09V1_051",
+          "SYS09V1_052"
+        ]
+      },
+      {
+        "id": "SYS09-PRETRANSFORM-053-058",
+        "count": 6,
+        "ids": [
+          "SYS09V1_053",
+          "SYS09V1_054",
+          "SYS09V1_055",
+          "SYS09V1_056",
+          "SYS09V1_057",
+          "SYS09V1_058"
+        ]
+      },
+      {
+        "id": "SYS09-PRETRANSFORM-059-064",
+        "count": 6,
+        "ids": [
+          "SYS09V1_059",
+          "SYS09V1_060",
+          "SYS09V1_061",
+          "SYS09V1_062",
+          "SYS09V1_063",
+          "SYS09V1_064"
+        ]
+      },
+      {
+        "id": "SYS09-CHECK-065-070",
+        "count": 6,
+        "ids": [
+          "SYS09V1_065",
+          "SYS09V1_066",
+          "SYS09V1_067",
+          "SYS09V1_068",
+          "SYS09V1_069",
+          "SYS09V1_070"
+        ]
+      },
+      {
+        "id": "SYS09-CHECK-071-076",
+        "count": 6,
+        "ids": [
+          "SYS09V1_071",
+          "SYS09V1_072",
+          "SYS09V1_073",
+          "SYS09V1_074",
+          "SYS09V1_075",
+          "SYS09V1_076"
+        ]
+      },
+      {
+        "id": "SYS09-PARAM-077-088",
+        "count": 12,
+        "ids": [
+          "SYS09V1_077",
+          "SYS09V1_078",
+          "SYS09V1_079",
+          "SYS09V1_080",
+          "SYS09V1_081",
+          "SYS09V1_082",
+          "SYS09V1_083",
+          "SYS09V1_084",
+          "SYS09V1_085",
+          "SYS09V1_086",
+          "SYS09V1_087",
+          "SYS09V1_088"
+        ]
+      },
+      {
+        "id": "SYS09-MODEL-NUMBER-089-100",
+        "count": 12,
+        "ids": [
+          "SYS09V1_089",
+          "SYS09V1_090",
+          "SYS09V1_091",
+          "SYS09V1_092",
+          "SYS09V1_093",
+          "SYS09V1_094",
+          "SYS09V1_095",
+          "SYS09V1_096",
+          "SYS09V1_097",
+          "SYS09V1_098",
+          "SYS09V1_099",
+          "SYS09V1_100"
+        ]
+      },
+      {
+        "id": "SYS09-MODEL-MOTION-101-110",
+        "count": 10,
+        "ids": [
+          "SYS09V1_101",
+          "SYS09V1_102",
+          "SYS09V1_103",
+          "SYS09V1_104",
+          "SYS09V1_105",
+          "SYS09V1_106",
+          "SYS09V1_107",
+          "SYS09V1_108",
+          "SYS09V1_109",
+          "SYS09V1_110"
+        ]
+      },
+      {
+        "id": "SYS09-MODEL-RATE-111-120",
+        "count": 10,
+        "ids": [
+          "SYS09V1_111",
+          "SYS09V1_112",
+          "SYS09V1_113",
+          "SYS09V1_114",
+          "SYS09V1_115",
+          "SYS09V1_116",
+          "SYS09V1_117",
+          "SYS09V1_118",
+          "SYS09V1_119",
+          "SYS09V1_120"
+        ]
+      }
+    ],
+    "runtime_enabled": 0
+  },
+  "items": [
+    {
+      "question_id": "SYS09V1_001",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-pt-hai-an",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-TWO-VAR-001-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cặp số nào là nghiệm của phương trình \\(2x+1y=4\\)?",
+      "correct_option": "\\((1;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_002",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-pt-hai-an",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-TWO-VAR-001-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cặp số nào là nghiệm của phương trình \\(1x-2y=4\\)?",
+      "correct_option": "\\((2;-1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_003",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-pt-hai-an",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-TWO-VAR-001-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cặp số nào là nghiệm của phương trình \\(3x+2y=3\\)?",
+      "correct_option": "\\((-1;3)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_004",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-pt-hai-an",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-TWO-VAR-001-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cặp số nào là nghiệm của phương trình \\(2x-3y=3\\)?",
+      "correct_option": "\\((3;1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_005",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-pt-hai-an",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-TWO-VAR-001-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cặp số nào là nghiệm của phương trình \\(-1x+2y=4\\)?",
+      "correct_option": "\\((0;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_006",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-pt-hai-an",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-TWO-VAR-001-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cặp số nào là nghiệm của phương trình \\(4x+1y=-7\\)?",
+      "correct_option": "\\((-2;1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_007",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-pt-hai-an",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-TWO-VAR-007-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cặp số nào là nghiệm của phương trình \\(2x+1y=4\\)?",
+      "correct_option": "\\((1;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_008",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-pt-hai-an",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-TWO-VAR-007-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cặp số nào là nghiệm của phương trình \\(1x-2y=4\\)?",
+      "correct_option": "\\((2;-1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_009",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-pt-hai-an",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-TWO-VAR-007-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cặp số nào là nghiệm của phương trình \\(3x+2y=3\\)?",
+      "correct_option": "\\((-1;3)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_010",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-pt-hai-an",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-TWO-VAR-007-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cặp số nào là nghiệm của phương trình \\(2x-3y=3\\)?",
+      "correct_option": "\\((3;1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_011",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-pt-hai-an",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-TWO-VAR-007-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cặp số nào là nghiệm của phương trình \\(-1x+2y=4\\)?",
+      "correct_option": "\\((0;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_012",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "nghiem-pt-hai-an"
+      ],
+      "canonical_assessed_skill_candidate": "nghiem-pt-hai-an",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-TWO-VAR-007-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cặp số nào là nghiệm của phương trình \\(4x+1y=-7\\)?",
+      "correct_option": "\\((-2;1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_013",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-the",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}1x+1y=3\\\\2x-1y=0\\end{cases}\\).",
+      "correct_option": "\\((1;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_014",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-the",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}2x+1y=4\\\\1x-1y=-1\\end{cases}\\).",
+      "correct_option": "\\((1;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_015",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-the",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}1x-2y=-3\\\\3x+1y=5\\end{cases}\\).",
+      "correct_option": "\\((1;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_016",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-cong",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-cong",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}2x+3y=8\\\\1x-1y=-1\\end{cases}\\).",
+      "correct_option": "\\((1;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_017",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-the",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}1x+1y=5\\\\2x-1y=1\\end{cases}\\).",
+      "correct_option": "\\((2;3)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_018",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-the",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}2x+1y=7\\\\1x-1y=-1\\end{cases}\\).",
+      "correct_option": "\\((2;3)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_019",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-the",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}1x-2y=-4\\\\3x+1y=9\\end{cases}\\).",
+      "correct_option": "\\((2;3)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_020",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-cong",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-cong",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}2x+3y=13\\\\1x-1y=-1\\end{cases}\\).",
+      "correct_option": "\\((2;3)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_021",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-the",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}1x+1y=2\\\\2x-1y=7\\end{cases}\\).",
+      "correct_option": "\\((3;-1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_022",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-the",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}2x+1y=5\\\\1x-1y=4\\end{cases}\\).",
+      "correct_option": "\\((3;-1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_023",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-the",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}1x-2y=5\\\\3x+1y=8\\end{cases}\\).",
+      "correct_option": "\\((3;-1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_024",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-cong",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-cong",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}2x+3y=3\\\\1x-1y=4\\end{cases}\\).",
+      "correct_option": "\\((3;-1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_025",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-the",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}1x+1y=1\\\\2x-1y=-4\\end{cases}\\).",
+      "correct_option": "\\((-1;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_026",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-the",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}2x+1y=0\\\\1x-1y=-3\\end{cases}\\).",
+      "correct_option": "\\((-1;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_027",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-the",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-the",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}1x-2y=-5\\\\3x+1y=-1\\end{cases}\\).",
+      "correct_option": "\\((-1;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_028",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "giai-he-cong",
+        "nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "giai-he-cong",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-SOLVE-013-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giải hệ \\(\\begin{cases}2x+3y=4\\\\1x-1y=-3\\end{cases}\\).",
+      "correct_option": "\\((-1;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_029",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-he",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-SOLUTION-COUNT-029-040",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hệ \\(\\begin{cases}1x+1y=3\\\\1x-1y=2\\end{cases}\\) có bao nhiêu nghiệm?",
+      "correct_option": "Hệ có đúng một nghiệm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_030",
+      "source_file": "09-he-phuong-trinh-v1-01.json",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-he",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-SOLUTION-COUNT-029-040",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hệ \\(\\begin{cases}2x-1y=3\\\\6x-3y=10\\end{cases}\\) có bao nhiêu nghiệm?",
+      "correct_option": "Hệ vô nghiệm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_031",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-he",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-SOLUTION-COUNT-029-040",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hệ \\(\\begin{cases}3x+2y=3\\\\12x+8y=12\\end{cases}\\) có bao nhiêu nghiệm?",
+      "correct_option": "Hệ có vô số nghiệm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_032",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-he",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-SOLUTION-COUNT-029-040",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hệ \\(\\begin{cases}1x-3y=6\\\\-3x-1y=5\\end{cases}\\) có bao nhiêu nghiệm?",
+      "correct_option": "Hệ có đúng một nghiệm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_033",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-he",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-SOLUTION-COUNT-029-040",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hệ \\(\\begin{cases}1x+1y=2\\\\2x+2y=5\\end{cases}\\) có bao nhiêu nghiệm?",
+      "correct_option": "Hệ vô nghiệm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_034",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-he",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-SOLUTION-COUNT-029-040",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hệ \\(\\begin{cases}2x-1y=1\\\\8x-4y=4\\end{cases}\\) có bao nhiêu nghiệm?",
+      "correct_option": "Hệ có vô số nghiệm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_035",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-he",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-SOLUTION-COUNT-029-040",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hệ \\(\\begin{cases}3x+2y=4\\\\2x-3y=4\\end{cases}\\) có bao nhiêu nghiệm?",
+      "correct_option": "Hệ có đúng một nghiệm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_036",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-he",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-SOLUTION-COUNT-029-040",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hệ \\(\\begin{cases}1x-3y=5\\\\3x-9y=16\\end{cases}\\) có bao nhiêu nghiệm?",
+      "correct_option": "Hệ vô nghiệm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_037",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-he",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-SOLUTION-COUNT-029-040",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hệ \\(\\begin{cases}1x+1y=4\\\\4x+4y=16\\end{cases}\\) có bao nhiêu nghiệm?",
+      "correct_option": "Hệ có vô số nghiệm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_038",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-he",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-SOLUTION-COUNT-029-040",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hệ \\(\\begin{cases}2x-1y=7\\\\-1x-2y=3\\end{cases}\\) có bao nhiêu nghiệm?",
+      "correct_option": "Hệ có đúng một nghiệm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_039",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-he",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-SOLUTION-COUNT-029-040",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hệ \\(\\begin{cases}3x+2y=4\\\\6x+4y=9\\end{cases}\\) có bao nhiêu nghiệm?",
+      "correct_option": "Hệ vô nghiệm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_040",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "canonical_assessed_skill_candidate": "so-nghiem-he",
+      "learner_family_candidate": "SYS-CONCEPT",
+      "supporting_skills": [
+        "y-nghia-hinh-hoc"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-SOLUTION-COUNT-029-040",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hệ \\(\\begin{cases}1x-3y=2\\\\4x-12y=8\\end{cases}\\) có bao nhiêu nghiệm?",
+      "correct_option": "Hệ có vô số nghiệm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_041",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "canonical_assessed_skill_candidate": "chon-phuong-phap",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": "SYS09-METHOD-041-044",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với hệ \\(\\begin{cases}x+2y=7\\\\3x-y=5\\end{cases}\\), phương pháp nào thường gọn hơn?",
+      "correct_option": "Phương pháp thế",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_042",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "canonical_assessed_skill_candidate": "chon-phuong-phap",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": "SYS09-METHOD-041-044",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với hệ \\(\\begin{cases}2x+3y=7\\\\5x-3y=2\\end{cases}\\), phương pháp nào thường gọn hơn?",
+      "correct_option": "Phương pháp cộng đại số",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_043",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "canonical_assessed_skill_candidate": "chon-phuong-phap",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": "SYS09-METHOD-041-044",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với hệ \\(\\begin{cases}4x+y=9\\\\2x-3y=1\\end{cases}\\), phương pháp nào thường gọn hơn?",
+      "correct_option": "Phương pháp thế",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_044",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "canonical_assessed_skill_candidate": "chon-phuong-phap",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": "SYS09-METHOD-041-044",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Với hệ \\(\\begin{cases}3x+2y=8\\\\3x-5y=1\\end{cases}\\), phương pháp nào thường gọn hơn?",
+      "correct_option": "Phương pháp cộng đại số",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_045",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "canonical_assessed_skill_candidate": "chon-phuong-phap",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": "SYS09-METHOD-045-048",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, với hệ \\(\\begin{cases}x+2y=7\\\\3x-y=5\\end{cases}\\), phương pháp nào thường gọn hơn?",
+      "correct_option": "Phương pháp thế",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_046",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "canonical_assessed_skill_candidate": "chon-phuong-phap",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": "SYS09-METHOD-045-048",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, với hệ \\(\\begin{cases}2x+3y=7\\\\5x-3y=2\\end{cases}\\), phương pháp nào thường gọn hơn?",
+      "correct_option": "Phương pháp cộng đại số",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_047",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "canonical_assessed_skill_candidate": "chon-phuong-phap",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": "SYS09-METHOD-045-048",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, với hệ \\(\\begin{cases}4x+y=9\\\\2x-3y=1\\end{cases}\\), phương pháp nào thường gọn hơn?",
+      "correct_option": "Phương pháp thế",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_048",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "canonical_assessed_skill_candidate": "chon-phuong-phap",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": "SYS09-METHOD-045-048",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, với hệ \\(\\begin{cases}3x+2y=8\\\\3x-5y=1\\end{cases}\\), phương pháp nào thường gọn hơn?",
+      "correct_option": "Phương pháp cộng đại số",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_049",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "canonical_assessed_skill_candidate": "chon-phuong-phap",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": "SYS09-METHOD-049-052",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không cần biến đổi dài, với hệ \\(\\begin{cases}x+2y=7\\\\3x-y=5\\end{cases}\\), phương pháp nào thường gọn hơn?",
+      "correct_option": "Phương pháp thế",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_050",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "canonical_assessed_skill_candidate": "chon-phuong-phap",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": "SYS09-METHOD-049-052",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không cần biến đổi dài, với hệ \\(\\begin{cases}2x+3y=7\\\\5x-3y=2\\end{cases}\\), phương pháp nào thường gọn hơn?",
+      "correct_option": "Phương pháp cộng đại số",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_051",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "canonical_assessed_skill_candidate": "chon-phuong-phap",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": "SYS09-METHOD-049-052",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không cần biến đổi dài, với hệ \\(\\begin{cases}4x+y=9\\\\2x-3y=1\\end{cases}\\), phương pháp nào thường gọn hơn?",
+      "correct_option": "Phương pháp thế",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_052",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "chon-phuong-phap"
+      ],
+      "canonical_assessed_skill_candidate": "chon-phuong-phap",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": "SYS09-METHOD-049-052",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không cần biến đổi dài, với hệ \\(\\begin{cases}3x+2y=8\\\\3x-5y=1\\end{cases}\\), phương pháp nào thường gọn hơn?",
+      "correct_option": "Phương pháp cộng đại số",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_053",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "canonical_assessed_skill_candidate": "bien-doi-truoc-giai",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PRETRANSFORM-053-058",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Thu gọn rồi giải hệ \\(\\begin{cases}2(x+y)-y=5\\\\x-y=1\\end{cases}\\).",
+      "correct_option": "\\((2;1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_054",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "canonical_assessed_skill_candidate": "bien-doi-truoc-giai",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PRETRANSFORM-053-058",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Thu gọn rồi giải hệ \\(\\begin{cases}2(x+y)-y=8\\\\x-y=1\\end{cases}\\).",
+      "correct_option": "\\((3;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_055",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "canonical_assessed_skill_candidate": "bien-doi-truoc-giai",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PRETRANSFORM-053-058",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Thu gọn rồi giải hệ \\(\\begin{cases}2(x+y)-y=2\\\\x-y=-5\\end{cases}\\).",
+      "correct_option": "\\((-1;4)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_056",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "canonical_assessed_skill_candidate": "bien-doi-truoc-giai",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PRETRANSFORM-053-058",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Thu gọn rồi giải hệ \\(\\begin{cases}2(x+y)-y=6\\\\x-y=6\\end{cases}\\).",
+      "correct_option": "\\((4;-2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_057",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "canonical_assessed_skill_candidate": "bien-doi-truoc-giai",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PRETRANSFORM-053-058",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Thu gọn rồi giải hệ \\(\\begin{cases}2(x+y)-y=5\\\\x-y=-2\\end{cases}\\).",
+      "correct_option": "\\((1;3)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_058",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "canonical_assessed_skill_candidate": "bien-doi-truoc-giai",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PRETRANSFORM-053-058",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Thu gọn rồi giải hệ \\(\\begin{cases}2(x+y)-y=11\\\\x-y=4\\end{cases}\\).",
+      "correct_option": "\\((5;1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_059",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "canonical_assessed_skill_candidate": "bien-doi-truoc-giai",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PRETRANSFORM-059-064",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, thu gọn rồi giải hệ \\(\\begin{cases}2(x+y)-y=5\\\\x-y=1\\end{cases}\\).",
+      "correct_option": "\\((2;1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_060",
+      "source_file": "09-he-phuong-trinh-v1-02.json",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "canonical_assessed_skill_candidate": "bien-doi-truoc-giai",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PRETRANSFORM-059-064",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, thu gọn rồi giải hệ \\(\\begin{cases}2(x+y)-y=8\\\\x-y=1\\end{cases}\\).",
+      "correct_option": "\\((3;2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_061",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "canonical_assessed_skill_candidate": "bien-doi-truoc-giai",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PRETRANSFORM-059-064",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, thu gọn rồi giải hệ \\(\\begin{cases}2(x+y)-y=2\\\\x-y=-5\\end{cases}\\).",
+      "correct_option": "\\((-1;4)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_062",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "canonical_assessed_skill_candidate": "bien-doi-truoc-giai",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PRETRANSFORM-059-064",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, thu gọn rồi giải hệ \\(\\begin{cases}2(x+y)-y=6\\\\x-y=6\\end{cases}\\).",
+      "correct_option": "\\((4;-2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_063",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "canonical_assessed_skill_candidate": "bien-doi-truoc-giai",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PRETRANSFORM-059-064",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, thu gọn rồi giải hệ \\(\\begin{cases}2(x+y)-y=5\\\\x-y=-2\\end{cases}\\).",
+      "correct_option": "\\((1;3)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_064",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "bien-doi-truoc-giai",
+        "giai-he-the"
+      ],
+      "canonical_assessed_skill_candidate": "bien-doi-truoc-giai",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [
+        "giai-he-the"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PRETRANSFORM-059-064",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, thu gọn rồi giải hệ \\(\\begin{cases}2(x+y)-y=11\\\\x-y=4\\end{cases}\\).",
+      "correct_option": "\\((5;1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_065",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "kiem-tra-nghiem-he",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-CHECK-065-070",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cặp \\((1;1)\\) có là nghiệm của hệ \\(\\begin{cases}2x+y=3\\\\x-2y=-1\\end{cases}\\) không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_066",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "kiem-tra-nghiem-he",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-CHECK-065-070",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cặp \\((3;-1)\\) có là nghiệm của hệ \\(\\begin{cases}3x+y=5\\\\x-3y=5\\end{cases}\\) không?",
+      "correct_option": "Không",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_067",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "kiem-tra-nghiem-he",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-CHECK-065-070",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cặp \\((-2;3)\\) có là nghiệm của hệ \\(\\begin{cases}2x+y=-1\\\\x-4y=-14\\end{cases}\\) không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_068",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "kiem-tra-nghiem-he",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-CHECK-065-070",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cặp \\((4;0)\\) có là nghiệm của hệ \\(\\begin{cases}3x+y=9\\\\x-2y=3\\end{cases}\\) không?",
+      "correct_option": "Không",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_069",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "kiem-tra-nghiem-he",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-CHECK-065-070",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cặp \\((4;2)\\) có là nghiệm của hệ \\(\\begin{cases}2x+y=10\\\\x-3y=-2\\end{cases}\\) không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_070",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "kiem-tra-nghiem-he",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-CHECK-065-070",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cặp \\((1;-2)\\) có là nghiệm của hệ \\(\\begin{cases}3x+y=-2\\\\x-4y=8\\end{cases}\\) không?",
+      "correct_option": "Không",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_071",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "kiem-tra-nghiem-he",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-CHECK-071-076",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cặp \\((1;1)\\) có là nghiệm của hệ \\(\\begin{cases}2x+y=3\\\\x-2y=-1\\end{cases}\\) không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_072",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "kiem-tra-nghiem-he",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-CHECK-071-076",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cặp \\((3;-1)\\) có là nghiệm của hệ \\(\\begin{cases}3x+y=5\\\\x-3y=5\\end{cases}\\) không?",
+      "correct_option": "Không",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_073",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "kiem-tra-nghiem-he",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-CHECK-071-076",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cặp \\((-2;3)\\) có là nghiệm của hệ \\(\\begin{cases}2x+y=-1\\\\x-4y=-14\\end{cases}\\) không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_074",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "kiem-tra-nghiem-he",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-CHECK-071-076",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cặp \\((4;0)\\) có là nghiệm của hệ \\(\\begin{cases}3x+y=9\\\\x-2y=3\\end{cases}\\) không?",
+      "correct_option": "Không",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_075",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "kiem-tra-nghiem-he",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-CHECK-071-076",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cặp \\((4;2)\\) có là nghiệm của hệ \\(\\begin{cases}2x+y=10\\\\x-3y=-2\\end{cases}\\) không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_076",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "kiem-tra-nghiem-he",
+      "learner_family_candidate": "SYS-SOLVE",
+      "supporting_skills": [],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYS09-CHECK-071-076",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dựa vào kiến thức cốt lõi, cặp \\((1;-2)\\) có là nghiệm của hệ \\(\\begin{cases}3x+y=-2\\\\x-4y=8\\end{cases}\\) không?",
+      "correct_option": "Không",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_077",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-he",
+      "learner_family_candidate": "SYS-PARAM",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PARAM-077-088",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(m\\) để cặp \\((1;2)\\) là nghiệm của hệ \\(\\begin{cases}x+y=3\\\\x+my=-3\\end{cases}\\).",
+      "correct_option": "\\(m=-2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_078",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-he",
+      "learner_family_candidate": "SYS-PARAM",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PARAM-077-088",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(m\\) để cặp \\((2;1)\\) là nghiệm của hệ \\(\\begin{cases}x+y=3\\\\x+my=1\\end{cases}\\).",
+      "correct_option": "\\(m=-1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_079",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-he",
+      "learner_family_candidate": "SYS-PARAM",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PARAM-077-088",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(m\\) để cặp \\((3;2)\\) là nghiệm của hệ \\(\\begin{cases}x+y=5\\\\x+my=3\\end{cases}\\).",
+      "correct_option": "\\(m=0\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_080",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-he",
+      "learner_family_candidate": "SYS-PARAM",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PARAM-077-088",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(m\\) để cặp \\((1;1)\\) là nghiệm của hệ \\(\\begin{cases}x+y=2\\\\x+my=2\\end{cases}\\).",
+      "correct_option": "\\(m=1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_081",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-he",
+      "learner_family_candidate": "SYS-PARAM",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PARAM-077-088",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(m\\) để cặp \\((2;2)\\) là nghiệm của hệ \\(\\begin{cases}x+y=4\\\\x+my=6\\end{cases}\\).",
+      "correct_option": "\\(m=2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_082",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-he",
+      "learner_family_candidate": "SYS-PARAM",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PARAM-077-088",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(m\\) để cặp \\((3;1)\\) là nghiệm của hệ \\(\\begin{cases}x+y=4\\\\x+my=1\\end{cases}\\).",
+      "correct_option": "\\(m=-2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_083",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-he",
+      "learner_family_candidate": "SYS-PARAM",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PARAM-077-088",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(m\\) để cặp \\((1;2)\\) là nghiệm của hệ \\(\\begin{cases}x+y=3\\\\x+my=-1\\end{cases}\\).",
+      "correct_option": "\\(m=-1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_084",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-he",
+      "learner_family_candidate": "SYS-PARAM",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PARAM-077-088",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(m\\) để cặp \\((2;1)\\) là nghiệm của hệ \\(\\begin{cases}x+y=3\\\\x+my=2\\end{cases}\\).",
+      "correct_option": "\\(m=0\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_085",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-he",
+      "learner_family_candidate": "SYS-PARAM",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PARAM-077-088",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(m\\) để cặp \\((3;2)\\) là nghiệm của hệ \\(\\begin{cases}x+y=5\\\\x+my=5\\end{cases}\\).",
+      "correct_option": "\\(m=1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_086",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-he",
+      "learner_family_candidate": "SYS-PARAM",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PARAM-077-088",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(m\\) để cặp \\((1;1)\\) là nghiệm của hệ \\(\\begin{cases}x+y=2\\\\x+my=3\\end{cases}\\).",
+      "correct_option": "\\(m=2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_087",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-he",
+      "learner_family_candidate": "SYS-PARAM",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PARAM-077-088",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(m\\) để cặp \\((2;2)\\) là nghiệm của hệ \\(\\begin{cases}x+y=4\\\\x+my=-2\\end{cases}\\).",
+      "correct_option": "\\(m=-2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_088",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "tham-so-he",
+        "kiem-tra-nghiem-he"
+      ],
+      "canonical_assessed_skill_candidate": "tham-so-he",
+      "learner_family_candidate": "SYS-PARAM",
+      "supporting_skills": [
+        "kiem-tra-nghiem-he"
+      ],
+      "context_tags": [],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYS09-PARAM-077-088",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(m\\) để cặp \\((3;1)\\) là nghiệm của hệ \\(\\begin{cases}x+y=4\\\\x+my=2\\end{cases}\\).",
+      "correct_option": "\\(m=-1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_089",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-NUMBER-089-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tổng của hai số là 14 và hiệu của số lớn với số bé là 6. Nếu gọi số lớn là \\(x\\), số bé là \\(y\\), hệ nào mô tả bài toán?",
+      "correct_option": "\\(\\begin{cases}x+y=14\\\\x-y=6\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_090",
+      "source_file": "09-he-phuong-trinh-v1-03.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-NUMBER-089-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tổng của hai số là 16 và hiệu của số lớn với số bé là 6. Nếu gọi số lớn là \\(x\\), số bé là \\(y\\), hệ nào mô tả bài toán?",
+      "correct_option": "\\(\\begin{cases}x+y=16\\\\x-y=6\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_091",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-NUMBER-089-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tổng của hai số là 18 và hiệu của số lớn với số bé là 6. Nếu gọi số lớn là \\(x\\), số bé là \\(y\\), hệ nào mô tả bài toán?",
+      "correct_option": "\\(\\begin{cases}x+y=18\\\\x-y=6\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_092",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-NUMBER-089-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tổng của hai số là 20 và hiệu của số lớn với số bé là 6. Nếu gọi số lớn là \\(x\\), số bé là \\(y\\), hệ nào mô tả bài toán?",
+      "correct_option": "\\(\\begin{cases}x+y=20\\\\x-y=6\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_093",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-NUMBER-089-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tổng của hai số là 22 và hiệu của số lớn với số bé là 6. Nếu gọi số lớn là \\(x\\), số bé là \\(y\\), hệ nào mô tả bài toán?",
+      "correct_option": "\\(\\begin{cases}x+y=22\\\\x-y=6\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_094",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-NUMBER-089-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tổng của hai số là 19 và hiệu của số lớn với số bé là 11. Nếu gọi số lớn là \\(x\\), số bé là \\(y\\), hệ nào mô tả bài toán?",
+      "correct_option": "\\(\\begin{cases}x+y=19\\\\x-y=11\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_095",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-NUMBER-089-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tổng của hai số là 15 và hiệu của số lớn với số bé là 5. Nếu gọi số lớn là \\(x\\), số bé là \\(y\\), hệ nào mô tả bài toán?",
+      "correct_option": "\\(\\begin{cases}x+y=15\\\\x-y=5\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_096",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-NUMBER-089-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tổng của hai số là 17 và hiệu của số lớn với số bé là 5. Nếu gọi số lớn là \\(x\\), số bé là \\(y\\), hệ nào mô tả bài toán?",
+      "correct_option": "\\(\\begin{cases}x+y=17\\\\x-y=5\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_097",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-NUMBER-089-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tổng của hai số là 19 và hiệu của số lớn với số bé là 5. Nếu gọi số lớn là \\(x\\), số bé là \\(y\\), hệ nào mô tả bài toán?",
+      "correct_option": "\\(\\begin{cases}x+y=19\\\\x-y=5\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_098",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-NUMBER-089-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tổng của hai số là 21 và hiệu của số lớn với số bé là 5. Nếu gọi số lớn là \\(x\\), số bé là \\(y\\), hệ nào mô tả bài toán?",
+      "correct_option": "\\(\\begin{cases}x+y=21\\\\x-y=5\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_099",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-NUMBER-089-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tổng của hai số là 18 và hiệu của số lớn với số bé là 10. Nếu gọi số lớn là \\(x\\), số bé là \\(y\\), hệ nào mô tả bài toán?",
+      "correct_option": "\\(\\begin{cases}x+y=18\\\\x-y=10\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_100",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "bai-toan-so"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "bai-toan-so"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-NUMBER-089-100",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tổng của hai số là 20 và hiệu của số lớn với số bé là 10. Nếu gọi số lớn là \\(x\\), số bé là \\(y\\), hệ nào mô tả bài toán?",
+      "correct_option": "\\(\\begin{cases}x+y=20\\\\x-y=10\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_101",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-MOTION-101-110",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai xe đi ngược chiều với vận tốc \\(x,y\\) km/h trong 2 giờ và đi được tổng quãng đường 100 km. Biết \\(x-y=10\\). Hệ nào phù hợp?",
+      "correct_option": "\\(\\begin{cases}2x+2y=100\\\\x-y=10\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_102",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-MOTION-101-110",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai xe đi ngược chiều với vận tốc \\(x,y\\) km/h trong 3 giờ và đi được tổng quãng đường 180 km. Biết \\(x-y=10\\). Hệ nào phù hợp?",
+      "correct_option": "\\(\\begin{cases}3x+3y=180\\\\x-y=10\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_103",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-MOTION-101-110",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai xe đi ngược chiều với vận tốc \\(x,y\\) km/h trong 4 giờ và đi được tổng quãng đường 280 km. Biết \\(x-y=10\\). Hệ nào phù hợp?",
+      "correct_option": "\\(\\begin{cases}4x+4y=280\\\\x-y=10\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_104",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-MOTION-101-110",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai xe đi ngược chiều với vận tốc \\(x,y\\) km/h trong 2 giờ và đi được tổng quãng đường 130 km. Biết \\(x-y=25\\). Hệ nào phù hợp?",
+      "correct_option": "\\(\\begin{cases}2x+2y=130\\\\x-y=25\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_105",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-MOTION-101-110",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai xe đi ngược chiều với vận tốc \\(x,y\\) km/h trong 3 giờ và đi được tổng quãng đường 165 km. Biết \\(x-y=5\\). Hệ nào phù hợp?",
+      "correct_option": "\\(\\begin{cases}3x+3y=165\\\\x-y=5\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_106",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-MOTION-101-110",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai xe đi ngược chiều với vận tốc \\(x,y\\) km/h trong 4 giờ và đi được tổng quãng đường 260 km. Biết \\(x-y=5\\). Hệ nào phù hợp?",
+      "correct_option": "\\(\\begin{cases}4x+4y=260\\\\x-y=5\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_107",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-MOTION-101-110",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai xe đi ngược chiều với vận tốc \\(x,y\\) km/h trong 2 giờ và đi được tổng quãng đường 120 km. Biết \\(x-y=20\\). Hệ nào phù hợp?",
+      "correct_option": "\\(\\begin{cases}2x+2y=120\\\\x-y=20\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_108",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-MOTION-101-110",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai xe đi ngược chiều với vận tốc \\(x,y\\) km/h trong 3 giờ và đi được tổng quãng đường 210 km. Biết \\(x-y=20\\). Hệ nào phù hợp?",
+      "correct_option": "\\(\\begin{cases}3x+3y=210\\\\x-y=20\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_109",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-MOTION-101-110",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai xe đi ngược chiều với vận tốc \\(x,y\\) km/h trong 4 giờ và đi được tổng quãng đường 240 km. Biết \\(x-y=0\\). Hệ nào phù hợp?",
+      "correct_option": "\\(\\begin{cases}4x+4y=240\\\\x-y=0\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_110",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "chuyen-dong-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "chuyen-dong-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-MOTION-101-110",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai xe đi ngược chiều với vận tốc \\(x,y\\) km/h trong 2 giờ và đi được tổng quãng đường 110 km. Biết \\(x-y=15\\). Hệ nào phù hợp?",
+      "correct_option": "\\(\\begin{cases}2x+2y=110\\\\x-y=15\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_111",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-RATE-111-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một cửa hàng bán \\(x\\) sản phẩm loại A giá 2 đơn vị và \\(y\\) sản phẩm loại B giá 3 đơn vị. Tổng số sản phẩm là 16, doanh thu 38. Hệ nào đúng?",
+      "correct_option": "\\(\\begin{cases}x+y=16\\\\2x+3y=38\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_112",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-RATE-111-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một cửa hàng bán \\(x\\) sản phẩm loại A giá 3 đơn vị và \\(y\\) sản phẩm loại B giá 4 đơn vị. Tổng số sản phẩm là 18, doanh thu 61. Hệ nào đúng?",
+      "correct_option": "\\(\\begin{cases}x+y=18\\\\3x+4y=61\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_113",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-RATE-111-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một cửa hàng bán \\(x\\) sản phẩm loại A giá 4 đơn vị và \\(y\\) sản phẩm loại B giá 5 đơn vị. Tổng số sản phẩm là 20, doanh thu 88. Hệ nào đúng?",
+      "correct_option": "\\(\\begin{cases}x+y=20\\\\4x+5y=88\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_114",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-RATE-111-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một cửa hàng bán \\(x\\) sản phẩm loại A giá 2 đơn vị và \\(y\\) sản phẩm loại B giá 6 đơn vị. Tổng số sản phẩm là 22, doanh thu 80. Hệ nào đúng?",
+      "correct_option": "\\(\\begin{cases}x+y=22\\\\2x+6y=80\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_115",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-RATE-111-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một cửa hàng bán \\(x\\) sản phẩm loại A giá 3 đơn vị và \\(y\\) sản phẩm loại B giá 3 đơn vị. Tổng số sản phẩm là 24, doanh thu 72. Hệ nào đúng?",
+      "correct_option": "\\(\\begin{cases}x+y=24\\\\3x+3y=72\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_116",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-RATE-111-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một cửa hàng bán \\(x\\) sản phẩm loại A giá 4 đơn vị và \\(y\\) sản phẩm loại B giá 4 đơn vị. Tổng số sản phẩm là 21, doanh thu 84. Hệ nào đúng?",
+      "correct_option": "\\(\\begin{cases}x+y=21\\\\4x+4y=84\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_117",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-RATE-111-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một cửa hàng bán \\(x\\) sản phẩm loại A giá 2 đơn vị và \\(y\\) sản phẩm loại B giá 5 đơn vị. Tổng số sản phẩm là 23, doanh thu 67. Hệ nào đúng?",
+      "correct_option": "\\(\\begin{cases}x+y=23\\\\2x+5y=67\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_118",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-RATE-111-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một cửa hàng bán \\(x\\) sản phẩm loại A giá 3 đơn vị và \\(y\\) sản phẩm loại B giá 6 đơn vị. Tổng số sản phẩm là 25, doanh thu 99. Hệ nào đúng?",
+      "correct_option": "\\(\\begin{cases}x+y=25\\\\3x+6y=99\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_119",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-RATE-111-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một cửa hàng bán \\(x\\) sản phẩm loại A giá 4 đơn vị và \\(y\\) sản phẩm loại B giá 3 đơn vị. Tổng số sản phẩm là 27, doanh thu 99. Hệ nào đúng?",
+      "correct_option": "\\(\\begin{cases}x+y=27\\\\4x+3y=99\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "SYS09V1_120",
+      "source_file": "09-he-phuong-trinh-v1-04.json",
+      "legacy_skill_tags": [
+        "lap-he-bai-toan",
+        "nang-suat-he"
+      ],
+      "canonical_assessed_skill_candidate": "lap-he-bai-toan",
+      "learner_family_candidate": "SYS-MODEL",
+      "supporting_skills": [],
+      "context_tags": [
+        "nang-suat-he"
+      ],
+      "method_tags": [],
+      "observable_evidence_class": "MCQ_MODELING_PARTIAL_SYSTEM_SELECTION",
+      "clone_family_candidate": "SYS09-MODEL-RATE-111-120",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một cửa hàng bán \\(x\\) sản phẩm loại A giá 2 đơn vị và \\(y\\) sản phẩm loại B giá 4 đơn vị. Tổng số sản phẩm là 29, doanh thu 78. Hệ nào đúng?",
+      "correct_option": "\\(\\begin{cases}x+y=29\\\\2x+4y=78\\end{cases}\\)",
+      "note": "Selecting the correct system is partial modeling evidence only; full modeling requires written construction/explanation.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    }
+  ],
+  "academic_review": {
+    "reviewer": "NotebookLM",
+    "result": "PASS",
+    "combined_packet": "MATH-SKILL-S2-CT09-12-COMBINED-R1-20261002",
+    "coverage": {
+      "expected": 120,
+      "reviewed": 120,
+      "revisions": 0,
+      "missing": 0
+    },
+    "clone_families": {
+      "expected": 15,
+      "pass": 15,
+      "revise": 0
+    },
+    "counts_verified": {
+      "mapped_primary": 120,
+      "formative_only": 0,
+      "primary_counts": {
+        "nghiem-pt-hai-an": 12,
+        "giai-he-the": 12,
+        "giai-he-cong": 4,
+        "so-nghiem-he": 12,
+        "chon-phuong-phap": 12,
+        "bien-doi-truoc-giai": 12,
+        "kiem-tra-nghiem-he": 12,
+        "tham-so-he": 12,
+        "lap-he-bai-toan": 32
+      }
+    },
+    "architecture_checks": {
+      "batch_expected": 12,
+      "batch_pass": 12
+    },
+    "authorization": "CLEARED_FOR_S2_CT09_12_RECONCILIATION",
+    "reviewed_at": "2026-10-02",
+    "runtime_activation_authorized": false
+  }
+}
