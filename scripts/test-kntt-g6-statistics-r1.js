@@ -33,7 +33,8 @@ for(const id of expected){
   assert.equal(q.tags.layer,"KNTT-Core");
   assert.equal(q.tags.grade,6);
   assert.equal(q.authoring_review.packet,"MATH-KNTT-G6-STATISTICS-R1-20261004");
-  assert.equal(q.authoring_review.verdict,"PENDING_NOTEBOOKLM");
+  assert.equal(q.authoring_review.verdict,"PASS");
+  assert.equal(q.authoring_review.clearance,"G6_STATISTICS_CONTENT_REVIEW_COMPLETE");
   assert.equal(q.options.length,4);
   assert.equal(new Set(q.options).size,4);
   assert.ok(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4);
@@ -58,10 +59,11 @@ assert.ok(!manifest.skill_labels["bang-thong-ke"]);
 assert.ok(!manifest.skill_labels["bieu-do-tranh"]);
 
 const row=audit.rows.find(r=>r.lesson_ref==="Bài 38-41");
-assert.equal(row.dimensions.LEARN_CONTENT.status,"PARTIAL_LOCAL_OR_FAMILY");
-assert.equal(row.dimensions.MICRO_PRACTICE.status,"PARTIAL");
+assert.equal(row.dimensions.LEARN_CONTENT.status,"VERIFIED_DIRECT_AND_LOCAL");
+assert.equal(row.dimensions.MICRO_PRACTICE.status,"VERIFIED_DIRECT_AND_LOCAL");
+assert.equal(row.repair_evidence.clearance,"G6_STATISTICS_CONTENT_REVIEW_COMPLETE");
 assert.equal(row.dimensions.PRACTICE_BANK.status,"PARTIAL_TOPIC_EVIDENCE");
 assert.equal(row.dimensions.READINESS.status,"AUTHORIZED_TOPIC_LEVEL");
 
-console.log("PASS: Grade-6 statistics candidate adds 2 missing direct-skill Micro items + 3 local concept/representation items.");
-console.log("PASS: Practice Bank and Readiness remain unchanged; audit stays unreconciled until NotebookLM clearance.");
+console.log("PASS: Grade-6 statistics reviewed repair adds 2 missing direct-skill Micro items + 3 local concept/representation items.");
+console.log("PASS: NotebookLM clearance recorded; Practice Bank and Readiness remain unchanged in scope.");
