@@ -1,5 +1,5 @@
 {
-  "version": "1.0.210",
+  "version": "1.0.211",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.210",
-      "review_verdict": "G6_STATISTICS_CANDIDATE_NOTEBOOKLM_PENDING",
-      "review_notes": "Bài 30 direct evidence and Bài 42/Bài 4–5/Bài 8/Bài 27 lesson-local/problem-type evidence are released. FAMILY_LEVEL_ONLY Micro rows are 0. Bài 38–41 statistics candidate now proposes two missing direct Grade-6 skill items plus three local concept/representation items, but the audit must remain PARTIAL until NotebookLM clearance because the candidate spans four Grade-6 lessons and cross-grade shared cards.",
+      "context_version": "1.0.211",
+      "review_verdict": "G6_STATISTICS_REPAIRED_NEXT_BAI31_DIRECT_GAP",
+      "review_notes": "Grade-6 statistics Learn/Micro repair passed NotebookLM and is ready for technical QA. After release, Bài 31 becomes the clearest remaining direct Learn gap because phan-tram is a direct semantic target but missing from the exact Bài 31 Learn evidence. Other PARTIAL rows still require re-ranking; Practice/Written/Readiness remain conservatively scoped.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1361,16 +1361,20 @@
       "id": "MATH-KNTT-G6-STATISTICS-R1-001",
       "title": "Grade 6 KNTT Bài 38–41 — statistics direct/local evidence repair R1",
       "routing": "CONTENT_REPAIR+NOTEBOOKLM_ACADEMIC_REVIEW",
-      "status": "BLOCKED-ACADEMIC",
-      "context_version": "1.0.210",
-      "review_verdict": "CANDIDATE_READY_NOTEBOOKLM_PENDING",
-      "review_notes": "Bài 38–41 is the remaining Grade-6 priority Micro row. Candidate keeps existing direct Grade-6 evidence for doc-bieu-do-cot and nhan-xet-du-lieu, adds missing direct Micro STA21MICRO_016 for thu-thap-du-lieu and STA21MICRO_017 for doc-bieu-do-cot-kep, and adds lesson-local formative STA21MICRO_018–020 for du-lieu, bang-thong-ke and bieu-do-tranh. Local refs remain under STAT-DATA / STAT-REPRESENT / STAT-CHART-READ with tags.skill=[] and gates_core=false. Practice Bank remains 132 unchanged and existing STA21 Readiness remains AUTHORIZED_TOPIC_LEVEL with no change. Because this row aggregates four Grade-6 lessons, adds both direct canonical evidence and local representations, and modifies a cross-grade shared card, NotebookLM review is required before audit reconciliation or release.",
+      "status": "ACADEMIC-PASS-TECH-QA-PENDING",
+      "context_version": "1.0.211",
+      "review_verdict": "NOTEBOOKLM_PASS_G6_STATISTICS_CONTENT_REVIEW_COMPLETE",
+      "review_notes": "NotebookLM PASS with clearance G6_STATISTICS_CONTENT_REVIEW_COMPLETE. Both Learn cards PASS; 5/5 new Micro PASS; direct mappings thu-thap-du-lieu and doc-bieu-do-cot-kep PASS; lesson-local du-lieu, bang-thong-ke and bieu-do-tranh PASS; shared Grade-6/Grade-8 card boundary PASS; no missing/duplicate/unexpected IDs. No academic correction required. Dimension Audit now records Bài 38–41 Learn=VERIFIED_DIRECT_AND_LOCAL and Micro=VERIFIED_DIRECT_AND_LOCAL. Practice remains PARTIAL_TOPIC_EVIDENCE; Written=NONE; Readiness remains AUTHORIZED_TOPIC_LEVEL at full-topic Grade 6–8 scope. Technical CI/PR gate remains required.",
       "artifacts": [
         "review-packets/kntt-g6-statistics-r1/00_NOTEBOOKLM_PACKET_R1.md",
         "docs/assets/data/curriculum/topic21-learning-workspace.json",
         "docs/assets/data/practice/21-thong-ke-micro-v1.json",
-        "scripts/test-kntt-g6-statistics-r1.js"
-      ]
+        "scripts/test-kntt-g6-statistics-r1.js",
+        "review-packets/kntt-g6-statistics-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
+      ],
+      "review_receipt": "review-packets/kntt-g6-statistics-r1/01_NOTEBOOKLM_RESULT_R1.md"
     }
   ]
 }
