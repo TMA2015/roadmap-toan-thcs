@@ -6,7 +6,7 @@
     "id": "21-thong-ke",
     "title": "Thống kê và thu thập dữ liệu"
   },
-  "question_count": 15,
+  "question_count": 20,
   "questions": [
     {
       "id": "STA21MICRO_001",
@@ -622,6 +622,237 @@
         "specialized": "none"
       },
       "target": "nhan-xet-du-lieu"
+    },
+    {
+      "id": "STA21MICRO_016",
+      "card_id": "sta21-core-1",
+      "micro_role": "coverage",
+      "question": "Muốn biết số cuốn sách mỗi bạn lớp 6A đã đọc trong tháng 9, cách thu thập dữ liệu nào phù hợp nhất?",
+      "options": [
+        "Phát phiếu hỏi từng bạn và ghi lại số cuốn sách đã đọc",
+        "Hỏi một bạn đoán số sách của cả lớp",
+        "Dùng số liệu của một lớp khác",
+        "Ước lượng số sách dựa vào chiều cao của từng bạn"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "thu-thap-du-lieu"
+        ],
+        "type": "thu-thap-du-lieu-g6",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Cần thu thập đúng thông tin từ từng bạn trong lớp 6A; phiếu hỏi trực tiếp từng bạn là cách phù hợp với dữ liệu cần khảo sát.",
+      "hints": [
+        "Xác định đúng đối tượng cần hỏi: từng bạn lớp 6A.",
+        "Chọn cách thu thập trực tiếp số sách mỗi bạn đã đọc."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 38"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "thu-thap-du-lieu",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-STATISTICS-R1-20261004",
+        "verdict": "PENDING_NOTEBOOKLM"
+      }
+    },
+    {
+      "id": "STA21MICRO_017",
+      "card_id": "sta21-core-2",
+      "micro_role": "coverage",
+      "question": "Dữ liệu từ một biểu đồ cột kép được chép lại: tuần 2, lớp 6A trồng 18 cây và lớp 6B trồng 16 cây. Tuần 2 lớp 6A trồng nhiều hơn lớp 6B bao nhiêu cây?",
+      "options": [
+        "2 cây",
+        "3 cây",
+        "4 cây",
+        "34 cây"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "doc-bieu-do-cot-kep"
+        ],
+        "type": "doc-bieu-do-cot-kep-g6",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Tuần 2, lớp 6A có 18 cây và lớp 6B có 16 cây; chênh lệch là 18 − 16 = 2 cây.",
+      "hints": [
+        "Đọc đúng hai giá trị của cùng tuần 2.",
+        "Lấy 18 trừ 16."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 41"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "doc-bieu-do-cot-kep",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-STATISTICS-R1-20261004",
+        "verdict": "PENDING_NOTEBOOKLM"
+      }
+    },
+    {
+      "id": "STA21MICRO_018",
+      "card_id": "sta21-core-1",
+      "micro_role": "coverage",
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [],
+        "layer": "KNTT-Core",
+        "grade": 6,
+        "type": "du-lieu-g6"
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 38-41"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+      "gates_core": false,
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-STATISTICS-R1-20261004",
+        "verdict": "PENDING_NOTEBOOKLM"
+      },
+      "question": "Trong một khảo sát về màu yêu thích, bốn câu trả lời là: xanh, đỏ, xanh, vàng. Dãy “xanh, đỏ, xanh, vàng” là gì?",
+      "options": [
+        "Dữ liệu thu được",
+        "Phương pháp thu thập dữ liệu",
+        "Đơn vị đo",
+        "Một biểu đồ cột"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "Các câu trả lời ghi nhận được từ khảo sát chính là dữ liệu thu được.",
+      "hints": [
+        "Hãy phân biệt thông tin đã ghi nhận với cách dùng để thu thập thông tin.",
+        "Các giá trị xanh, đỏ, xanh, vàng là kết quả của khảo sát."
+      ],
+      "lesson_local_targets": [
+        "du-lieu"
+      ]
+    },
+    {
+      "id": "STA21MICRO_019",
+      "card_id": "sta21-core-2",
+      "micro_role": "coverage",
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [],
+        "layer": "KNTT-Core",
+        "grade": 6,
+        "type": "bang-thong-ke-g6"
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 38-41"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+      "gates_core": false,
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-STATISTICS-R1-20261004",
+        "verdict": "PENDING_NOTEBOOKLM"
+      },
+      "question": "Một bảng thống kê ghi: Toán — 12 bạn; Khoa học — 8 bạn; Mỹ thuật — 10 bạn. Có bao nhiêu bạn chọn Khoa học?",
+      "options": [
+        "8 bạn",
+        "10 bạn",
+        "12 bạn",
+        "30 bạn"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "Đọc đúng hàng “Khoa học” trong bảng thống kê, ta được 8 bạn.",
+      "hints": [
+        "Tìm đúng tên mục Khoa học trong bảng.",
+        "Giá trị đi cùng Khoa học là 8."
+      ],
+      "lesson_local_targets": [
+        "bang-thong-ke"
+      ]
+    },
+    {
+      "id": "STA21MICRO_020",
+      "card_id": "sta21-core-2",
+      "micro_role": "coverage",
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [],
+        "layer": "KNTT-Core",
+        "grade": 6,
+        "type": "bieu-do-tranh-g6"
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 38-41"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+      "gates_core": false,
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-STATISTICS-R1-20261004",
+        "verdict": "PENDING_NOTEBOOKLM"
+      },
+      "question": "Trong một biểu đồ tranh, mỗi ★ đại diện 2 cuốn sách. Hàng của Lan có ★★★★. Lan đã đọc bao nhiêu cuốn sách?",
+      "options": [
+        "8 cuốn",
+        "4 cuốn",
+        "6 cuốn",
+        "10 cuốn"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "Có 4 ký hiệu ★, mỗi ký hiệu đại diện 2 cuốn sách nên số sách là 4 × 2 = 8 cuốn.",
+      "hints": [
+        "Đếm số ký hiệu ★ trước.",
+        "Nhân số ký hiệu với 2 cuốn cho mỗi ký hiệu."
+      ],
+      "lesson_local_targets": [
+        "bieu-do-tranh"
+      ]
     }
   ]
 }
