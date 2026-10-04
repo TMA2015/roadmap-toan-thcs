@@ -289,7 +289,7 @@ with sync_playwright() as p:
                 shot(core_page, slug + "-lecture-modal-desktop.png")
                 dlg.locator(".topic-core-to-practice").click()
                 check(dlg.get_attribute("data-mode") == "practice"
-                      and dlg.locator(".topic-micro-pager button").count() == {"02-so-va-phep-tinh":7,"09-he-phuong-trinh":4,"13-goc-va-duong-thang":6,"14-tam-giac":4,"19-duong-tron":4,"21-thong-ke":5,"23-xac-suat":6}.get(slug,3),
+                      and dlg.locator(".topic-micro-pager button").count() == {"02-so-va-phep-tinh":10,"09-he-phuong-trinh":4,"13-goc-va-duong-thang":6,"14-tam-giac":4,"19-duong-tron":4,"21-thong-ke":5,"23-xac-suat":6}.get(slug,3),
                       "lecture opens the actual card question count " + slug)
                 dlg.locator(".topic-core-dialog__close").click()
                 check(not dlg.is_visible() and core_page.evaluate(
