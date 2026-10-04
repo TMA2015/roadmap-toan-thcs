@@ -19,10 +19,10 @@
     "reviewed_practice_questions": 3114
   },
   "family_layer_counts": {
-    "KNTT-Core": 98,
-    "Entrance10": 20,
+    "KNTT-Core": 100,
+    "Entrance10": 19,
     "Specialized-Challenge": 4,
-    "Core-Support": 6,
+    "Core-Support": 5,
     "THPT-Bridge": 3
   },
   "mapping_role_counts": {
@@ -1938,7 +1938,7 @@
     {
       "family_id": "STAT-FREQUENCY",
       "label_vi": "Bảng tần số và tần suất",
-      "layer": "Core-Support",
+      "layer": "KNTT-Core",
       "topics": [
         "CT21"
       ],
@@ -1995,7 +1995,7 @@
     {
       "family_id": "STAT-ADVANCED-DATA",
       "label_vi": "Dữ liệu ghép nhóm và bẫy thang đo",
-      "layer": "Entrance10",
+      "layer": "KNTT-Core",
       "topics": [
         "CT21"
       ],
@@ -6498,6 +6498,30 @@
       "learner_history_effect": false,
       "mastery_readiness_effect": false,
       "family_restructure_effect": false
+    },
+    {
+      "id": "MATH-KNTT-G9-RECON-R4-20261004",
+      "status": "NOTEBOOKLM_PASS_LAYER_RECONCILIATION_APPLIED",
+      "source_class": "S1",
+      "review_result_path": "review-packets/kntt-grade9-reconciliation-r4/01_NOTEBOOKLM_RESULT_R4.md",
+      "clearance": "G9_R4_RECONCILIATION_REVIEW_COMPLETE",
+      "changes": [
+        {
+          "family_id": "STAT-FREQUENCY",
+          "from_layer": "Core-Support",
+          "to_layer": "KNTT-Core",
+          "rationale": "S1 Grade-9 Chapter 7 requires frequency and relative frequency in standard Core."
+        },
+        {
+          "family_id": "STAT-ADVANCED-DATA",
+          "from_layer": "Entrance10",
+          "to_layer": "KNTT-Core",
+          "rationale": "S1 Grade-9 Chapter 7 Bài 24 includes grouped frequency data in standard Core."
+        }
+      ],
+      "runtime_effect": false,
+      "learner_history_effect": false,
+      "mastery_readiness_effect": false
     }
   ]
 }
