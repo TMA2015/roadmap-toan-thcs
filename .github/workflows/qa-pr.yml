@@ -28,6 +28,8 @@ jobs:
         run: node scripts/test-kntt-grade7-reconciliation-r2.js
       - name: Validate Grade 8 KNTT reconciliation R3
         run: node scripts/test-kntt-grade8-reconciliation-r3.js
+      - name: Validate Grade 9 KNTT reconciliation R4
+        run: node scripts/test-kntt-grade9-reconciliation-r4.js
       - name: Validate new CĐ23 readiness and CĐ24–25 learning
         run: |
           node --check docs/assets/javascripts/topic-workspace-v1.js
