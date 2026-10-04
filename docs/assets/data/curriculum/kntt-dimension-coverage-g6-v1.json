@@ -3,7 +3,7 @@
   "version": 1,
   "as_of": "2026-10-04",
   "grade": 6,
-  "status": "G6_PILOT_AUDIT_BAI30_BAI42_BAI45_REPAIRED_R1",
+  "status": "G6_PILOT_AUDIT_BAI30_BAI42_BAI45_BAI8_REPAIRED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -13,7 +13,7 @@
     },
     "grade6_reconciliation": {
       "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
-      "blob_sha": "d797c98795dd9aaba7c783a6f440cb93530b2c24"
+      "blob_sha": "c25411b95f6cb1ba914002a61c316048be6dd777"
     },
     "taxonomy": {
       "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
@@ -29,11 +29,11 @@
         "placement": "EXACT",
         "workspace": {
           "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-          "sha": "d704f98ba515edbf5217386baf33a04dbccec028"
+          "sha": "29408b03d53d47bca74d22ec210f24dad1be037b"
         },
         "micro": {
           "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-          "sha": "48040ce6fc8b47caee112810a497e5b4e87fc836",
+          "sha": "cd4d1553afbb075f5edeb7ad2ae801fa52bd8159",
           "grade6Skills": [
             "tap-hop-so",
             "thu-tu-phep-tinh",
@@ -54,12 +54,17 @@
           ],
           "grade6LessonLocalTargets": [
             "cong-tru-so-tu-nhien",
-            "nhan-chia-so-tu-nhien"
+            "nhan-chia-so-tu-nhien",
+            "quan-he-chia-het",
+            "tinh-chat-chia-het"
           ],
           "grade6LessonLocalItemIds": [
             "NUM02MICRO_024",
             "NUM02MICRO_025",
-            "NUM02MICRO_026"
+            "NUM02MICRO_026",
+            "NUM02MICRO_027",
+            "NUM02MICRO_028",
+            "NUM02MICRO_029"
           ]
         },
         "manifest": {
@@ -322,19 +327,19 @@
         "VERIFIED_SEMANTIC": 31
       },
       "LEARN_CONTENT": {
-        "PARTIAL_LOCAL_OR_FAMILY": 6,
+        "PARTIAL_LOCAL_OR_FAMILY": 5,
         "VERIFIED_DIRECT": 10,
         "PARTIAL_SHARED_SKILL": 7,
         "PARTIAL_PLACEMENT": 5,
         "PARTIAL_MISSING_DIRECT_SKILL": 1,
-        "VERIFIED_LESSON_LOCAL": 2
+        "VERIFIED_LESSON_LOCAL": 3
       },
       "MICRO_PRACTICE": {
         "PARTIAL": 12,
-        "FAMILY_LEVEL_ONLY": 2,
+        "FAMILY_LEVEL_ONLY": 1,
         "VERIFIED_DIRECT": 15,
         "NONE": 0,
-        "VERIFIED_LESSON_LOCAL": 2
+        "VERIFIED_LESSON_LOCAL": 3
       },
       "PRACTICE_BANK": {
         "PARTIAL_TOPIC_EVIDENCE": 5,
@@ -354,15 +359,6 @@
     },
     "written_library_kntt_placement_count": 0,
     "priority_gap_rows": [
-      {
-        "chapter": 2,
-        "lesson_ref": "Bài 8",
-        "summary": "Quan hệ chia hết và tính chất",
-        "learn": "PARTIAL_LOCAL_OR_FAMILY",
-        "micro": "FAMILY_LEVEL_ONLY",
-        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
-        "readiness": "NOT_VERIFIED_STRUCTURED"
-      },
       {
         "chapter": 6,
         "lesson_ref": "Bài 27",
@@ -414,6 +410,17 @@
         "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
         "readiness": "NOT_VERIFIED_STRUCTURED",
         "review_basis": "Existing Grade-6 reconciliation NotebookLM PASS + deterministic arithmetic"
+      },
+      {
+        "chapter": 2,
+        "lesson_ref": "Bài 8",
+        "summary": "Quan hệ chia hết và tính chất",
+        "repair_status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "review_basis": "KNTT Grade-6 map + reviewed semantic reconciliation + deterministic divisibility"
       }
     ]
   },
@@ -784,7 +791,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_LOCAL_OR_FAMILY",
+          "status": "VERIFIED_LESSON_LOCAL",
           "card_skill_evidence": [
             "dau-hieu-chia-het",
             "so-nguyen-to",
@@ -796,11 +803,16 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
-          }
+            "sha": "29408b03d53d47bca74d22ec210f24dad1be037b"
+          },
+          "lesson_local_hits": [
+            "quan-he-chia-het",
+            "tinh-chat-chia-het"
+          ],
+          "note": "Bài 8 explicitly teaches the reviewed lesson-local divisibility relation and divisibility properties under NUM-DIV-PRIME; no duplicate canonical skill is created."
         },
         "MICRO_PRACTICE": {
-          "status": "FAMILY_LEVEL_ONLY",
+          "status": "VERIFIED_LESSON_LOCAL",
           "direct_skill_hits": [],
           "family_skill_hits": [
             "dau-hieu-chia-het",
@@ -809,8 +821,20 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
-          }
+            "sha": "cd4d1553afbb075f5edeb7ad2ae801fa52bd8159"
+          },
+          "lesson_local_hits": [
+            "quan-he-chia-het",
+            "tinh-chat-chia-het"
+          ],
+          "item_ids": [
+            "NUM02MICRO_027",
+            "NUM02MICRO_028",
+            "NUM02MICRO_029"
+          ],
+          "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "gates_core": false,
+          "note": "Direct Grade-6 lesson-local formative evidence covers divisibility relation plus sum/difference properties without canonical skill writes or mastery/readiness credit."
         },
         "PRACTICE_BANK": {
           "status": "FAMILY_LEVEL_TOPIC_EVIDENCE",
@@ -835,6 +859,16 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "review_basis": "KNTT Grade-6 map + reviewed Grade-6 semantic reconciliation + deterministic divisibility arithmetic; owner-approved low-risk review policy",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "Bài 8 Learn + lesson-local Micro gap repaired. Practice remains family/topic-level; Written and Readiness dimensions are unchanged."
       }
     },
     {
