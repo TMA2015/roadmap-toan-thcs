@@ -50,7 +50,7 @@ Hệ thống chỉ có **một mạng kiến thức và kỹ năng chuẩn**. Tr
 **Path A — Học theo lớp / KNTT Course Map**
 - Tổ chức theo **Lớp → Chương → Bài → Core Cards** để học sinh tìm đúng nội dung đang học ở trường.
 - Mục tiêu dài hạn là bao phủ các **mục tiêu kiến thức/kỹ năng chủ đạo KNTT lớp 6–9**, không sao chép SGK theo từng trang hay từng hoạt động.
-- Ưu tiên làm rõ **bản chất của bài học hiện tại**, dấu hiệu nhận biết, lỗi điển hình và luyện \`Base → Trap → Apply\`.
+- Ưu tiên làm rõ **bản chất của bài học hiện tại**, dấu hiệu nhận biết, lỗi điển hình và luyện `Base → Trap → Apply`.
 - Dùng tốt cho học hằng ngày, ôn bài trên lớp, chuẩn bị kiểm tra và tìm lại phần nền gần nhất.
 
 **Path B — Học theo chuyên đề / Vertical Spine**
@@ -91,14 +91,14 @@ Mapping KNTT 6–9 là **đường học ngang đầy đủ theo lớp**, dẫn 
 
 Quy tắc:
 - Mỗi **skill** có một định danh học thuật chuẩn dùng chung; không tạo một skill KNTT khác chỉ vì nó xuất hiện trong Course Map.
-- **Card/Lesson ID** là định danh của đơn vị trình bày học; \`card_id\` không đồng nghĩa với \`skill_id\`.
+- **Card/Lesson ID** là định danh của đơn vị trình bày học; `card_id` không đồng nghĩa với `skill_id`.
 - Một bài KNTT có thể dùng nhiều skill từ một hoặc nhiều chuyên đề; một skill có thể xuất hiện ở nhiều bài/lớp nếu chương trình yêu cầu.
 - Kiến thức KNTT cần cho lớp học nhưng không phải trọng tâm của Vertical Spine vẫn được biểu diễn trong graph với vai trò hỗ trợ/local phù hợp; không làm phình 25 chuyên đề chỉ để đủ mapping.
 - Trong một chuyên đề dùng chung nhiều lớp, **không mặc định toàn bộ thẻ đều thuộc lớp đang chọn**.
 - Khi thay đổi mapping phải kiểm tra nguồn SGK/SBT, ID và ranh giới Core/Support/Bridge.
 - Không nhân bản nội dung chỉ để phục vụ hai path; ưu tiên reference/reuse và giữ một nguồn canonical cho skill/item.
 
-Khi mở rộng Course Map, duy trì **KNTT Coverage Matrix 6–9** ở mức: \`Lớp → Chương → Bài → skill → chuyên đề liên quan → trạng thái coverage\`. Matrix dùng để phát hiện phần thiếu, không phải danh sách learner-facing bắt buộc.
+Khi mở rộng Course Map, duy trì **KNTT Coverage Matrix 6–9** ở mức: `Lớp → Chương → Bài → skill → chuyên đề liên quan → trạng thái coverage`. Matrix dùng để phát hiện phần thiếu, không phải danh sách learner-facing bắt buộc.
 
 ### 2.4. Knowledge Graph
 
@@ -364,6 +364,5 @@ Tài liệu này chỉ cập nhật khi có **thay đổi quyết định thiế
 
 - **v1.0:** Kiến trúc 25 chuyên đề, quy tắc nguồn, phân tầng học tập và QA nền.
 - **v1.1 — 28/09/2026:** Bổ sung hai loại infographic, thử nghiệm hiểu bản chất, cây cầu kỹ năng–bài tổng hợp, chuẩn bài mỏ neo, bộ đề tự luận giấy/rubric và quy trình NotebookLM. Không đổi cấu trúc 25 chuyên đề, ID câu hỏi hoặc dữ liệu học sinh.
-- **v1.1.1 — 29/09/2026:** Chốt định danh sản phẩm **Self-Learning Math** trong hệ sinh thái G Learning; giữ repository/URL kỹ thuật để bảo toàn tích hợp và dữ liệu.
+- **v1.1.1 — 29/09/2026:** Chuẩn hóa tên **Self-Learning Math / G Learning**; xác định AI Tutor là tính năng, giữ nguyên repo và URL kỹ thuật. Không đổi nội dung học thuật hay dữ liệu.
 - **v1.2.0 — 04/10/2026:** Chốt kiến trúc **One Knowledge Graph · Two Learning Paths**: (A) KNTT Course Map theo lớp 6–9 để học đúng chương trình đang học; (B) 25 Vertical Spine để học xuyên lớp, truy prerequisite và luyện chuyển giao. Chuẩn hóa vai trò bài tập giữa Core Cards và Practice theo chuyên đề, nguyên tắc một skill/ID canonical dùng lại nhiều path, vocabulary dạng bài nhất quán và quy tắc cập nhật permanent source NotebookLM khi Master Plan tăng phiên bản.
-- **v1.1.1 — 29/09/2026:** Chuẩn hóa tên Self-Learning Math / G Learning; xác định AI Tutor là tính năng, giữ nguyên repo và URL kỹ thuật. Không đổi nội dung học thuật hay dữ liệu.
