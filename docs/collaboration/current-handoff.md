@@ -11,6 +11,7 @@
 
 > **KNTT Coverage Matrix PR #308 merged:** exact framework head `c573f0656e4439e1487a1627b1549abe51e9c529` passed full CI/browser QA and was squash-merged to main as `cc214f5be75ff1da490b177dce91cc5af5954223`.
 > **Grade 6 reconciliation R1 is now drafted on a separate governance branch.** 35 unresolved refs are classified as 16 canonical-skill matches, 12 canonical-family/lesson-local matches, 5 needs-review and 2 gap candidates (`lam-tron`, `uoc-luong`). Do not create new skills yet; independently review the 7 non-closed cases first.
+> **NotebookLM packet prepared:** `review-packets/kntt-grade6-reconciliation-r1/00_NOTEBOOKLM_PACKET_R1.md`. Review exactly the 5 NEEDS_REVIEW + 2 GAP_CANDIDATE cases; use current Rules v1.2 + Master Plan v1.2.1 + official NXB GDVN SGK Toán 6 tập một/tập hai. No S1 evidence = no Core taxonomy addition.
 
 ## Khôi phục trong cuộc trò chuyện mới
 
