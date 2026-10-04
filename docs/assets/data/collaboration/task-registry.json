@@ -1,5 +1,5 @@
 {
-  "version": "1.0.192",
+  "version": "1.0.193",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1176,9 +1176,9 @@
       "title": "KNTT Coverage Matrix 6–9 — current-skill reconciliation",
       "routing": "GOVERNANCE+CURRICULUM_MAPPING",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.192",
-      "review_verdict": "G7_R2_RECONCILED_REVIEWED",
-      "review_notes": "Grade 7 R2 closed after NotebookLM PASS 5/5 with clearance G7_R2_RECONCILIATION_REVIEW_COMPLETE. Final semantic split: 6 CANONICAL_SKILL, 4 CANONICAL_FAMILY, 1 LESSON_LOCAL; 0 review/gap cases. Three reviewed identities added to durable registry: phep-tinh-so-huu-ti under NUM-FRACTION-OPS, so-vo-ti under NUM-SETS, chia-da-thuc-mot-bien under current ALG-DIV-MONOMIAL. No runtime/history/Mastery/Readiness or learner-facing change. Next: Grade 8 reconciliation R3.",
+      "context_version": "1.0.193",
+      "review_verdict": "G8_R3_RECONCILED_NO_NEW_IDENTITY",
+      "review_notes": "Grade 8 R3 closed all 3 exact-ID mismatches without a new taxonomy identity: bieu-thuc-nhieu-phep-tinh remains reviewed COMPOSITE_TASK/lesson-local; ket-qua-co-the and ket-qua-thuan-loi map to PROB-EVENT family as lesson-level outcome concepts. No independent NotebookLM round is required because no new skill/family/Core promotion is proposed. No runtime/history/Mastery/Readiness or learner-facing change. Next: Grade 9 R4.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
         "docs/roadmap/kntt-coverage-matrix-6-9-v1.md",
@@ -1189,7 +1189,9 @@
         "docs/assets/data/curriculum/kntt-grade7-reconciliation-r2.json",
         "docs/roadmap/kntt-grade7-reconciliation-r2.md",
         "review-packets/kntt-grade7-reconciliation-r2/00_NOTEBOOKLM_PACKET_R2.md",
-        "review-packets/kntt-grade7-reconciliation-r2/01_NOTEBOOKLM_RESULT_R2.md"
+        "review-packets/kntt-grade7-reconciliation-r2/01_NOTEBOOKLM_RESULT_R2.md",
+        "docs/assets/data/curriculum/kntt-grade8-reconciliation-r3.json",
+        "docs/roadmap/kntt-grade8-reconciliation-r3.md"
       ]
     }
   ]

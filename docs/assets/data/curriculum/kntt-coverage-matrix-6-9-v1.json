@@ -3062,7 +3062,20 @@
           ],
           "exclusions": []
         }
-      ]
+      ],
+      "semantic_reconciliation": {
+        "status": "RECONCILED_R3_NO_NEW_IDENTITY",
+        "artifact": "docs/assets/data/curriculum/kntt-grade8-reconciliation-r3.json",
+        "historical_exact_id_unresolved_count": 3,
+        "semantic_resolution_counts": {
+          "CANONICAL_FAMILY": 2,
+          "LESSON_LOCAL": 1
+        },
+        "new_canonical_skills": [],
+        "remaining_review_queue": [],
+        "basis": "Existing reviewed Taxonomy v2 + reviewed Grade-8 KNTT map + current Topic07/Topic23 Learning Workspaces; no new taxonomy identity decision required.",
+        "note": "All three current exact-ID mismatches are semantically resolved without creating or renaming a canonical skill/family."
+      }
     },
     {
       "grade": 9,
@@ -3732,10 +3745,11 @@
       "8": 3,
       "9": 4
     },
-    "note": "Exact-ID unresolved refs are reconciliation candidates, not confirmed curriculum gaps. Grades 6 and 7 have semantic reconciliation overlays; current-match counts reflect the latest durable taxonomy registry. Grades 8-9 still require reconciliation passes.",
+    "note": "Exact-ID unresolved refs are reconciliation candidates, not confirmed curriculum gaps. Grades 6-8 now have semantic reconciliation overlays; Grade 9 remains the final reconciliation pass.",
     "semantic_reconciliation_status": {
       "6": "RECONCILED_REVIEWED_R1",
-      "7": "RECONCILED_REVIEWED_R2"
+      "7": "RECONCILED_REVIEWED_R2",
+      "8": "RECONCILED_R3_NO_NEW_IDENTITY"
     }
   }
 }
