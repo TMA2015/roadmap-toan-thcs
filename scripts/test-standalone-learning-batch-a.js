@@ -29,7 +29,7 @@ const specs=[
     "23-xac-suat",
     "KNTT-Core",
     "443169587e0ba663bc694122ee4a37e456793c70",
-    "022034fc2a4ad4991197fe60d5f936f8ecd4faca",
+    "10f6dfcc41040da16b351a8c607c10fe82e6e4b3",
     "Core theo chặng",
     20
   ],
