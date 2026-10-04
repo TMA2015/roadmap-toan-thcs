@@ -1,5 +1,5 @@
 {
-  "version": "1.0.194",
+  "version": "1.0.195",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1175,10 +1175,10 @@
       "id": "MATH-KNTT-COVERAGE-MATRIX-6-9-001",
       "title": "KNTT Coverage Matrix 6–9 — current-skill reconciliation",
       "routing": "GOVERNANCE+CURRICULUM_MAPPING",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.194",
-      "review_verdict": "G9_R4_DRAFT_RECONCILIATION_REVIEW_REQUIRED",
-      "review_notes": "Grade 8 R3 merged/closed. Grade 9 R4 isolates the final 4 exact-ID mismatches in statistics and flags a mandatory S1 layer audit: STAT-FREQUENCY is currently Core-Support and STAT-ADVANCED-DATA is Entrance10 while Grade-9 KNTT Chapter 7 covers frequency/relative frequency. NotebookLM packet MATH-KNTT-G9-RECON-R4-20261004 prepared. No layer/taxonomy/runtime/history/Mastery/Readiness change is authorized before review.",
+      "status": "DONE",
+      "context_version": "1.0.195",
+      "review_verdict": "KNTT_6_9_SEMANTIC_RECONCILIATION_CLOSED",
+      "review_notes": "Grade 9 R4 closed after NotebookLM PASS 4/4 plus 2/2 layer audit with clearance G9_R4_RECONCILIATION_REVIEW_COMPLETE. Final G9 split: 2 CANONICAL_SKILL + 2 CANONICAL_FAMILY, no new identity. S1 corrected STAT-FREQUENCY Core-Support→KNTT-Core and STAT-ADVANCED-DATA Entrance10→KNTT-Core. Grades 6–9 semantic reconciliation is now complete. Raw exact-ID mismatches remain only for traceability. No runtime/history/Mastery/Readiness or learner-facing change. Next matrix phase: dimension coverage audit (SKILL_MAP, LEARN_CONTENT, MICRO_PRACTICE, PRACTICE_BANK, WRITTEN_LIBRARY, READINESS where authorized).",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
         "docs/roadmap/kntt-coverage-matrix-6-9-v1.md",
@@ -1194,7 +1194,8 @@
         "docs/roadmap/kntt-grade8-reconciliation-r3.md",
         "docs/assets/data/curriculum/kntt-grade9-reconciliation-r4.json",
         "docs/roadmap/kntt-grade9-reconciliation-r4.md",
-        "review-packets/kntt-grade9-reconciliation-r4/00_NOTEBOOKLM_PACKET_R4.md"
+        "review-packets/kntt-grade9-reconciliation-r4/00_NOTEBOOKLM_PACKET_R4.md",
+        "review-packets/kntt-grade9-reconciliation-r4/01_NOTEBOOKLM_RESULT_R4.md"
       ]
     }
   ]
