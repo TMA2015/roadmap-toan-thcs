@@ -39,9 +39,13 @@ assert.match(r.source_locks.taxonomy_v2.review_input_blob_sha, /^[0-9a-f]{40}$/)
 const matrix = json(r.source_locks.coverage_matrix.path);
 const grade7 = matrix.grades.find(g => g.grade === 7);
 assert.ok(grade7, "Grade 7 matrix missing");
-const unresolved = [...new Set(grade7.rows.flatMap(row => row.unresolved_skill_refs || []))].sort();
+const currentUnresolved = [...new Set(grade7.rows.flatMap(row => row.unresolved_skill_refs || []))].sort();
+const allHistoricalRefs = new Set(grade7.rows.flatMap(row => row.historical_skill_refs || []));
 const reconciled = r.entries.map(e => e.historical_ref).sort();
-assert.deepEqual(reconciled, unresolved, "R2 must reconcile exactly the 11 original Grade-7 exact-ID mismatches");
+assert.equal(reconciled.length, 11, "R2 historical reconciliation scope must stay 11 refs");
+assert.ok(reconciled.every(ref => allHistoricalRefs.has(ref)), "R2 ref missing from Grade-7 historical map");
+assert.ok(currentUnresolved.every(ref => reconciled.includes(ref)), "current unresolved ref falls outside R2 historical scope");
+assert.equal(grade7.semantic_reconciliation?.historical_exact_id_unresolved_count, 11);
 assert.equal(grade7.semantic_reconciliation?.status, "RECONCILED_REVIEWED_R2");
 assert.equal(grade7.semantic_reconciliation?.clearance, "G7_R2_RECONCILIATION_REVIEW_COMPLETE");
 assert.deepEqual(grade7.semantic_reconciliation?.new_canonical_skills, [
