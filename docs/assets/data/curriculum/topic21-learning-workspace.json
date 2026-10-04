@@ -24,7 +24,9 @@
       "micro_practice": [
         "STA21MICRO_001",
         "STA21MICRO_002",
-        "STA21MICRO_003"
+        "STA21MICRO_003",
+        "STA21MICRO_016",
+        "STA21MICRO_018"
       ],
       "teaching_copy": {
         "key_idea": "Dữ liệu thống kê được chia thành hai loại chính: dữ liệu số (đo đạc, đếm số lượng có giá trị số tính toán được) và dữ liệu không là số / dữ liệu phân loại (tên nhóm, nhãn, màu sắc, trình độ). Phương pháp thu thập dữ liệu gồm thu thập trực tiếp (quan sát, đo đạc, lập phiếu hỏi/phỏng vấn) và thu thập gián tiếp (trích xuất từ sách báo, tài liệu, cơ sở dữ liệu có sẵn).",
@@ -34,12 +36,22 @@
         },
         "misconception": "Cho rằng mọi dãy thông tin chứa con số (như mã số học sinh, số nhà, biển số xe, số tuyến xe buýt) đều là dữ liệu số.",
         "summary": "Phân biệt dữ liệu số vs phân loại dựa vào khả năng thực hiện phép tính định lượng; chọn phương pháp thu thập phù hợp với đối tượng cần quan sát."
-      }
+      },
+      "lesson_local_concepts": [
+        {
+          "id": "du-lieu",
+          "label": "Dữ liệu",
+          "family_id": "STAT-DATA",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 38-41"
+        }
+      ]
     },
     {
       "id": "sta21-core-2",
       "order": 2,
-      "title": "Đọc bảng dữ liệu, biểu đồ cột và cột kép",
+      "title": "Bảng thống kê, biểu đồ tranh, cột và cột kép",
       "kntt_lessons": [
         "Lớp 6: Bài 38–41",
         "Lớp 8: Bài 18–20"
@@ -53,17 +65,38 @@
       "micro_practice": [
         "STA21MICRO_004",
         "STA21MICRO_005",
-        "STA21MICRO_006"
+        "STA21MICRO_006",
+        "STA21MICRO_017",
+        "STA21MICRO_019",
+        "STA21MICRO_020"
       ],
       "teaching_copy": {
-        "key_idea": "Bảng dữ liệu, biểu đồ cột và cột kép giúp trình bày và so sánh số liệu trực quan giữa các đối tượng. Biểu đồ cột kép sử dụng hai cột đặt cạnh nhau (có chú giải phân biệt) để so sánh hai dãy dữ liệu tương ứng của cùng các đối tượng trên cùng một thang đo.",
+        "key_idea": "Bảng thống kê sắp xếp dữ liệu theo hàng và cột để dễ đọc, đối chiếu. Biểu đồ tranh dùng hình hoặc ký hiệu và phải đọc chú giải để biết mỗi hình đại diện bao nhiêu đơn vị. Biểu đồ cột biểu diễn số liệu bằng chiều cao cột. Biểu đồ cột kép dùng hai cột đặt cạnh nhau, có chú giải phân biệt, để so sánh hai dãy dữ liệu tương ứng của cùng các đối tượng trên cùng một thang đo.",
         "worked_example": {
           "problem": "Biểu đồ cột kép thống kê số học sinh giỏi Học kỳ 1 và Học kỳ 2 của Lớp 6A: Học kỳ 1 = 12 em, Học kỳ 2 = 18 em. Hỏi số học sinh giỏi Học kỳ 2 tăng bao nhiêu phần trăm so với Học kỳ 1?",
           "solution": "Mức tăng số lượng học sinh giỏi là: 18 - 12 = 6 (học sinh).\nTỉ lệ phần trăm tăng so với Học kỳ 1 là: (6 / 12) x 100% = 50%."
         },
-        "misconception": "Đọc nhầm màu/ký hiệu chú giải trong biểu đồ cột kép dẫn đến so sánh nhầm hai dãy số liệu hoặc nhầm lẫn giữa giá trị cột với chênh lệch giữa hai cột.",
-        "summary": "Luôn đọc kỹ tiêu đề, trục tọa độ, đơn vị và chú giải màu sắc trước khi thực hiện các phép tính cộng, trừ, chênh lệch hay tỉ lệ."
-      }
+        "misconception": "Không đếm số hình trong biểu đồ tranh như số lượng thật nếu chú giải cho biết mỗi hình đại diện nhiều đơn vị. Với biểu đồ cột kép, đọc nhầm màu/ký hiệu chú giải có thể làm so sánh nhầm hai dãy số liệu.",
+        "summary": "Luôn đọc kỹ tiêu đề, hàng/cột hoặc chú giải, trục, đơn vị và thang đo trước khi lấy số liệu hay thực hiện phép so sánh."
+      },
+      "lesson_local_representations": [
+        {
+          "id": "bang-thong-ke",
+          "label": "Bảng thống kê",
+          "family_id": "STAT-REPRESENT",
+          "role": "LESSON_LOCAL_REPRESENTATION",
+          "grade": 6,
+          "lesson": "Bài 38-41"
+        },
+        {
+          "id": "bieu-do-tranh",
+          "label": "Biểu đồ tranh",
+          "family_id": "STAT-CHART-READ",
+          "role": "LESSON_LOCAL_REPRESENTATION",
+          "grade": 6,
+          "lesson": "Bài 38-41"
+        }
+      ]
     },
     {
       "id": "sta21-core-3",

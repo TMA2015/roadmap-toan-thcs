@@ -8,7 +8,7 @@ ok(css.includes(".topic-core-card-lesson{display:block;min-width:0;max-width:100
 for(const [n,count] of [[24,2],[34,3],[48,4],[64,5]])ok(css.includes("@container corejourney (min-width:"+n+"rem)")&&css.includes("grid-template-columns:repeat("+count+",minmax(0,1fr))"),"missing responsive "+n+"rem");
 ok(!css.includes("@container corejourney (min-width:32rem)"),"old 5-column compact breakpoint remains");
 ok(js.includes('"21-thong-ke":{number:"21"'),"CĐ21 UI config lost");
-ok(items.length===15&&guide.includes("## 12 quy tắc bắt buộc"),"wording policy not installed");
+ok(items.length===20&&guide.includes("## 12 quy tắc bắt buộc"),"wording policy not installed");
 for(let i=0;i<items.length;i++){const q=items[i],body=[q.question,...q.options,q.explanation,...q.hints].join(" ");
 ok(q.id==="STA21MICRO_"+String(i+1).padStart(3,"0"),"ID "+i);
 ok(q.options.length===4&&new Set(q.options).size===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<=3,"MCQ shape "+q.id);
@@ -19,4 +19,4 @@ ok(items[5].question.includes("số lượt")&&!items[5].question.includes("số
 ok(items[13].options[0].includes("10 chiếc tivi")&&items[13].answer===2,"count/revenue mismatch");
 ok(items[14].question.includes("40 học sinh")&&items[14].answer===0,"sample and answer mismatch");
 if(errors.length){console.error(errors.join("\n"));process.exit(1)}
-console.log("PASS: responsive lesson captions and 15 direct-language MCQs; math answer indexes retained");
+console.log("PASS: responsive lesson captions and 20 direct-language MCQs; math answer indexes retained");

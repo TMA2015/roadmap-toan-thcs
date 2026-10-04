@@ -3,7 +3,7 @@
   "version": 1,
   "as_of": "2026-10-04",
   "grade": 6,
-  "status": "G6_PILOT_AUDIT_BAI30_BAI42_BAI45_BAI8_BAI27_REPAIRED_R1",
+  "status": "G6_PILOT_AUDIT_STATISTICS_REPAIRED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -13,7 +13,7 @@
     },
     "grade6_reconciliation": {
       "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
-      "blob_sha": "4c16bf690a08225b79ee54234983c766d175db34"
+      "blob_sha": "88c35941bcd63186b3c1a31c217fa56d15398f31"
     },
     "taxonomy": {
       "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
@@ -231,15 +231,27 @@
         "placement": "EXACT",
         "workspace": {
           "path": "docs/assets/data/curriculum/topic21-learning-workspace.json",
-          "sha": "2812085ab0dd0800196eee7d44562f2ced4294e1"
+          "sha": "2e1a0dc26890ae06e4046d633637e5409af2cc3b"
         },
         "micro": {
           "path": "docs/assets/data/practice/21-thong-ke-micro-v1.json",
-          "sha": "f8309442663408f5d75b57c6d62f9887ab7df4a9",
+          "sha": "7ca07feda16ea97bb25eb85f62030e0cee4d286f",
           "grade6Skills": [
             "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
             "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep",
             "nhan-xet-du-lieu"
+          ],
+          "grade6LessonLocalTargets": [
+            "du-lieu",
+            "bang-thong-ke",
+            "bieu-do-tranh"
+          ],
+          "grade6LessonLocalItemIds": [
+            "STA21MICRO_018",
+            "STA21MICRO_019",
+            "STA21MICRO_020"
           ]
         },
         "manifest": {
@@ -332,19 +344,21 @@
         "VERIFIED_SEMANTIC": 31
       },
       "LEARN_CONTENT": {
-        "PARTIAL_LOCAL_OR_FAMILY": 4,
+        "PARTIAL_LOCAL_OR_FAMILY": 3,
         "VERIFIED_DIRECT": 10,
         "PARTIAL_SHARED_SKILL": 7,
         "PARTIAL_PLACEMENT": 5,
         "PARTIAL_MISSING_DIRECT_SKILL": 1,
-        "VERIFIED_LESSON_LOCAL": 4
+        "VERIFIED_LESSON_LOCAL": 4,
+        "VERIFIED_DIRECT_AND_LOCAL": 1
       },
       "MICRO_PRACTICE": {
-        "PARTIAL": 12,
+        "PARTIAL": 11,
         "FAMILY_LEVEL_ONLY": 0,
         "VERIFIED_DIRECT": 15,
         "NONE": 0,
-        "VERIFIED_LESSON_LOCAL": 4
+        "VERIFIED_LESSON_LOCAL": 4,
+        "VERIFIED_DIRECT_AND_LOCAL": 1
       },
       "PRACTICE_BANK": {
         "PARTIAL_TOPIC_EVIDENCE": 5,
@@ -365,13 +379,14 @@
     "written_library_kntt_placement_count": 0,
     "priority_gap_rows": [
       {
-        "chapter": 9,
-        "lesson_ref": "Bài 38-41",
-        "summary": "Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép",
-        "learn": "PARTIAL_LOCAL_OR_FAMILY",
+        "chapter": 7,
+        "lesson_ref": "Bài 31",
+        "summary": "Tỉ số và tỉ số phần trăm; bài toán phần trăm",
+        "learn": "PARTIAL_MISSING_DIRECT_SKILL",
         "micro": "PARTIAL",
         "practice": "PARTIAL_TOPIC_EVIDENCE",
-        "readiness": "AUTHORIZED_TOPIC_LEVEL"
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "priority_reason": "Only remaining Grade-6 row explicitly missing a direct canonical Learn skill in the current audit."
       }
     ],
     "repaired_rows": [
@@ -428,6 +443,17 @@
         "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
         "readiness": "NOT_VERIFIED_STRUCTURED",
         "review_basis": "KNTT Grade-6 map + reviewed semantic reconciliation + deterministic fraction arithmetic"
+      },
+      {
+        "chapter": 9,
+        "lesson_ref": "Bài 38-41",
+        "summary": "Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép",
+        "repair_status": "REPAIRED_REVIEWED_R1",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "readiness": "AUTHORIZED_TOPIC_LEVEL",
+        "review_receipt": "review-packets/kntt-g6-statistics-r1/01_NOTEBOOKLM_RESULT_R1.md"
       }
     ]
   },
@@ -2829,7 +2855,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_LOCAL_OR_FAMILY",
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
           "card_skill_evidence": [
             "du-lieu-phan-loai",
             "thu-thap-du-lieu",
@@ -2841,13 +2867,27 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic21-learning-workspace.json",
-            "sha": "2812085ab0dd0800196eee7d44562f2ced4294e1"
-          }
+            "sha": "2e1a0dc26890ae06e4046d633637e5409af2cc3b"
+          },
+          "direct_skill_hits": [
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep",
+            "nhan-xet-du-lieu"
+          ],
+          "lesson_local_hits": [
+            "du-lieu",
+            "bang-thong-ke",
+            "bieu-do-tranh"
+          ],
+          "note": "Reviewed Learn evidence covers all Grade-6 direct skills and the three lesson-local data/representation identities."
         },
         "MICRO_PRACTICE": {
-          "status": "PARTIAL",
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
           "direct_skill_hits": [
+            "thu-thap-du-lieu",
             "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep",
             "nhan-xet-du-lieu"
           ],
           "family_skill_hits": [
@@ -2856,8 +2896,27 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/21-thong-ke-micro-v1.json",
-            "sha": "f8309442663408f5d75b57c6d62f9887ab7df4a9"
-          }
+            "sha": "7ca07feda16ea97bb25eb85f62030e0cee4d286f"
+          },
+          "direct_item_ids": [
+            "STA21MICRO_016",
+            "STA21MICRO_004",
+            "STA21MICRO_017",
+            "STA21MICRO_013"
+          ],
+          "lesson_local_hits": [
+            "du-lieu",
+            "bang-thong-ke",
+            "bieu-do-tranh"
+          ],
+          "lesson_local_item_ids": [
+            "STA21MICRO_018",
+            "STA21MICRO_019",
+            "STA21MICRO_020"
+          ],
+          "lesson_local_evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "lesson_local_gates_core": false,
+          "note": "Reviewed Grade-6 Micro covers all direct row skills and the three local identities without creating new skill writes."
         },
         "PRACTICE_BANK": {
           "status": "PARTIAL_TOPIC_EVIDENCE",
@@ -2896,6 +2955,18 @@
             "note": "Full-topic Core grade 6–8; not a Grade-6-only lesson assessment."
           }
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-STATISTICS-R1-20261004",
+        "clearance": "G6_STATISTICS_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-statistics-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "written": "NONE",
+        "readiness": "AUTHORIZED_TOPIC_LEVEL",
+        "note": "Learn and Grade-6 Micro gap repaired. Practice and Readiness scope are unchanged."
       }
     },
     {
