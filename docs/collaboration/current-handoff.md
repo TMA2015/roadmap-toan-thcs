@@ -812,6 +812,18 @@ There are still many historical open PRs, mostly **audit/provenance drafts**. Do
 
 **B01–B07 evidence ledger (read-only):** [bản tổng hợp và kiểm tra mười câu sửa nguồn](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/review-packets/skill-taxonomy/B01-B07-CURRENT-RECONCILIATION-20260930.md). Bản này chỉ tổng hợp phản biện và preflight, chưa bật taxonomy hay sửa ngân hàng.
 
+
+> **NotebookLM source-transfer + selection protocol (owner-confirmed 2026-10-04):**
+> - The owner keeps a persistent Math Notebook containing permanent governance sources plus reusable Grade 6–9 textbook PDFs.
+> - For each review, always state explicitly: **KEEP**, **REPLACE/ADD**, **SELECT FOR THIS REVIEW**, and **DESELECT / leave unselected**.
+> - If exactly **1 new local/project source file** is needed, provide a direct download link to that file.
+> - If **2 or more new local/project source files** are needed, package them into one directly downloadable ZIP to reduce source-selection mistakes.
+> - Do not make the owner search the repo or web for named files.
+> - NotebookLM prompts should be short and pasted directly into ChatGPT chat for easy copy/paste; do not hide the only usable prompt inside a packet file.
+> - Permanent sources normally retained: current NotebookLM Math Review Rules + current Master Plan. When either canonical permanent source is superseded, explicitly say which old file to replace/remove and provide the new file.
+> - Reusable SGK PDFs may stay in the Notebook across batches; only the grade/volume(s) relevant to the current review should be selected.
+> - Batch review packet/source files are temporary and should be replaced by the next batch packet unless explicitly reused.
+
 ## Duy trì trạng thái
 
 Cập nhật GitHub sau mỗi mốc quyết định, QA, merge, deploy hoặc nghiệm thu; lịch sử Git giữ bản cũ. Không có bộ đếm đáng tin cậy để cảnh báo chính xác giới hạn chat; chủ động chốt checkpoint khi phiên dài. Câu khôi phục: **“Đọc Project Handoff trên GitHub, đối chiếu main và tiếp tục.”**
