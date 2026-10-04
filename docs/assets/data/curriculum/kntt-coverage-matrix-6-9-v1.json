@@ -1,0 +1,3703 @@
+{
+  "schema": "kntt-coverage-matrix-6-9-v1",
+  "version": 1,
+  "as_of": "2026-10-04",
+  "status": "FRAMEWORK_RECONCILIATION_ONLY_NOT_LEARNER_RUNTIME",
+  "architecture": "One Knowledge Graph · Two Learning Paths",
+  "purpose": "Reconcile reviewed KNTT Grade 6-9 overlays with the current canonical skill universe before expanding the horizontal Course Map.",
+  "protected_boundaries": {
+    "learner_facing_change": false,
+    "mastery_readiness_change": false,
+    "history_migration": false,
+    "item_regrade": false,
+    "taxonomy_runtime_activation": false
+  },
+  "status_definitions": {
+    "CURRENT_MAPPED": "All mapped curriculum skill references for this row exist in the current skill universe. This does not by itself prove learner-facing lesson/card completeness.",
+    "CURRENT_MAPPED_ITEM_REVIEW": "All mapped references exist, but the historical KNTT map explicitly requires item-level review for some skills.",
+    "PARTIAL_RECONCILE": "Some curriculum skill references exist in the current skill universe and some do not. Missing refs may be legacy aliases or genuine coverage gaps; do not treat them as confirmed gaps without reconciliation.",
+    "RECONCILE_REQUIRED": "None of the row's historical skill references match the current skill universe directly. This is an ID/schema reconciliation flag, not proof that the curriculum content is absent."
+  },
+  "source_universe": {
+    "taxonomy_v2": {
+      "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+      "blob_sha": "c2f2e5b8d78a58d874f88524861326223fdbdf45",
+      "status": "I0_DURABLE_REGISTRY_RUNTIME_DISABLED"
+    },
+    "knowledge_graph": {
+      "path": "docs/assets/data/curriculum/knowledge-graph-v1.json",
+      "blob_sha": "64a7acf13a25aaf4a8f2501d3a63f48f7391134d",
+      "status": "independently-reviewed"
+    }
+  },
+  "grades": [
+    {
+      "grade": 6,
+      "source_map": {
+        "path": "docs/assets/data/curriculum/kntt-grade6-map.json",
+        "blob_sha": "6b63ca1a122b7ea2a68eefa364c0a8074235a9ba",
+        "status": "reviewed",
+        "source_task": "KNTT-MAP-G6-001"
+      },
+      "row_count": 31,
+      "chapter_count": 9,
+      "unique_skill_refs": 66,
+      "unique_current_matches": 31,
+      "unique_unresolved_refs": 35,
+      "historical_proposed_count": 0,
+      "historical_proposed_now_current": [],
+      "historical_proposed_still_unresolved": [],
+      "coverage_status_counts": {
+        "RECONCILE_REQUIRED": 13,
+        "CURRENT_MAPPED": 13,
+        "PARTIAL_RECONCILE": 5
+      },
+      "rows": [
+        {
+          "grade": 6,
+          "chapter": 1,
+          "chapter_title": "Tập hợp các số tự nhiên",
+          "lesson_ref": "Bài 1-3",
+          "curriculum_summary": "Tập hợp; cách ghi và thứ tự số tự nhiên",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "tap-hop",
+            "ghi-so-tu-nhien",
+            "thu-tu-so-tu-nhien"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [],
+          "unresolved_skill_refs": [
+            "tap-hop",
+            "ghi-so-tu-nhien",
+            "thu-tu-so-tu-nhien"
+          ],
+          "coverage_status": "RECONCILE_REQUIRED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 1,
+          "chapter_title": "Tập hợp các số tự nhiên",
+          "lesson_ref": "Bài 4-5",
+          "curriculum_summary": "Cộng, trừ, nhân, chia số tự nhiên và tính chất",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "cong-tru-so-tu-nhien",
+            "nhan-chia-so-tu-nhien"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [],
+          "unresolved_skill_refs": [
+            "cong-tru-so-tu-nhien",
+            "nhan-chia-so-tu-nhien"
+          ],
+          "coverage_status": "RECONCILE_REQUIRED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 1,
+          "chapter_title": "Tập hợp các số tự nhiên",
+          "lesson_ref": "Bài 6",
+          "curriculum_summary": "Lũy thừa với số mũ tự nhiên",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "luy-thua"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "luy-thua"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 1,
+          "chapter_title": "Tập hợp các số tự nhiên",
+          "lesson_ref": "Bài 7",
+          "curriculum_summary": "Thứ tự thực hiện phép tính",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "thu-tu-phep-tinh"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "thu-tu-phep-tinh"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 2,
+          "chapter_title": "Tính chia hết trong tập hợp các số tự nhiên",
+          "lesson_ref": "Bài 8",
+          "curriculum_summary": "Quan hệ chia hết và tính chất",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "quan-he-chia-het",
+            "tinh-chat-chia-het"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [],
+          "unresolved_skill_refs": [
+            "quan-he-chia-het",
+            "tinh-chat-chia-het"
+          ],
+          "coverage_status": "RECONCILE_REQUIRED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 2,
+          "chapter_title": "Tính chia hết trong tập hợp các số tự nhiên",
+          "lesson_ref": "Bài 9",
+          "curriculum_summary": "Dấu hiệu chia hết",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "dau-hieu-chia-het"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "dau-hieu-chia-het"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 2,
+          "chapter_title": "Tính chia hết trong tập hợp các số tự nhiên",
+          "lesson_ref": "Bài 10",
+          "curriculum_summary": "Số nguyên tố và hợp số; phân tích ra thừa số nguyên tố",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "so-nguyen-to-hop-so",
+            "phan-tich-thua-so-nguyen-to"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "phan-tich-thua-so-nguyen-to"
+          ],
+          "unresolved_skill_refs": [
+            "so-nguyen-to-hop-so"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 2,
+          "chapter_title": "Tính chia hết trong tập hợp các số tự nhiên",
+          "lesson_ref": "Bài 11-12",
+          "curriculum_summary": "Ước chung, ƯCLN; bội chung, BCNN và ứng dụng",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "uoc-chung-ucln",
+            "boi-chung-bcnn",
+            "bai-toan-ucln-bcnn"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [],
+          "unresolved_skill_refs": [
+            "uoc-chung-ucln",
+            "boi-chung-bcnn",
+            "bai-toan-ucln-bcnn"
+          ],
+          "coverage_status": "RECONCILE_REQUIRED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 3,
+          "chapter_title": "Số nguyên",
+          "lesson_ref": "Bài 13",
+          "curriculum_summary": "Tập hợp số nguyên, số đối, trục số, thứ tự và giá trị tuyệt đối",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "so-nguyen-truc-so",
+            "so-sanh-so-nguyen",
+            "gia-tri-tuyet-doi"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "gia-tri-tuyet-doi"
+          ],
+          "unresolved_skill_refs": [
+            "so-nguyen-truc-so",
+            "so-sanh-so-nguyen"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 3,
+          "chapter_title": "Số nguyên",
+          "lesson_ref": "Bài 14",
+          "curriculum_summary": "Cộng và trừ số nguyên",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "cong-tru-so-nguyen"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [],
+          "unresolved_skill_refs": [
+            "cong-tru-so-nguyen"
+          ],
+          "coverage_status": "RECONCILE_REQUIRED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 3,
+          "chapter_title": "Số nguyên",
+          "lesson_ref": "Bài 15",
+          "curriculum_summary": "Quy tắc dấu ngoặc",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "quy-tac-dau-ngoac"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [],
+          "unresolved_skill_refs": [
+            "quy-tac-dau-ngoac"
+          ],
+          "coverage_status": "RECONCILE_REQUIRED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 3,
+          "chapter_title": "Số nguyên",
+          "lesson_ref": "Bài 16",
+          "curriculum_summary": "Nhân số nguyên",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "nhan-so-nguyen"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [],
+          "unresolved_skill_refs": [
+            "nhan-so-nguyen"
+          ],
+          "coverage_status": "RECONCILE_REQUIRED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 3,
+          "chapter_title": "Số nguyên",
+          "lesson_ref": "Bài 17",
+          "curriculum_summary": "Phép chia hết; ước và bội của một số nguyên",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "chia-het-so-nguyen",
+            "uoc-boi-so-nguyen"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [],
+          "unresolved_skill_refs": [
+            "chia-het-so-nguyen",
+            "uoc-boi-so-nguyen"
+          ],
+          "coverage_status": "RECONCILE_REQUIRED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 4,
+          "chapter_title": "Một số hình phẳng trong thực tiễn",
+          "lesson_ref": "Bài 18",
+          "curriculum_summary": "Tam giác đều, hình vuông, lục giác đều: nhận biết và tính chất trực quan",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "14-tam-giac",
+              "relation": "PREREQUISITE"
+            },
+            {
+              "topic_id": "16-tu-giac",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "historical_skill_refs": [
+            "nhan-biet-tam-giac-deu",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "nhan-biet-tam-giac-deu",
+            "nhan-biet-hinh-vuong",
+            "nhan-biet-luc-giac-deu"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 4,
+          "chapter_title": "Một số hình phẳng trong thực tiễn",
+          "lesson_ref": "Bài 19",
+          "curriculum_summary": "Hình chữ nhật, hình thoi, hình bình hành, hình thang cân: nhận biết và tính chất trực quan",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "16-tu-giac",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "historical_skill_refs": [
+            "nhan-biet-tu-giac-dac-biet"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "nhan-biet-tu-giac-dac-biet"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 4,
+          "chapter_title": "Một số hình phẳng trong thực tiễn",
+          "lesson_ref": "Bài 20",
+          "curriculum_summary": "Chu vi và diện tích một số tứ giác đã học",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "chu-vi-tu-giac",
+            "dien-tich-tu-giac",
+            "do-luong-thuc-te"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "chu-vi-tu-giac",
+            "dien-tich-tu-giac",
+            "do-luong-thuc-te"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 5,
+          "chapter_title": "Tính đối xứng của hình phẳng trong tự nhiên",
+          "lesson_ref": "Bài 21",
+          "curriculum_summary": "Hình có trục đối xứng",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "truc-doi-xung"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "truc-doi-xung"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 5,
+          "chapter_title": "Tính đối xứng của hình phẳng trong tự nhiên",
+          "lesson_ref": "Bài 22",
+          "curriculum_summary": "Hình có tâm đối xứng",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "tam-doi-xung"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "tam-doi-xung"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 6,
+          "chapter_title": "Phân số",
+          "lesson_ref": "Bài 23-24",
+          "curriculum_summary": "Mở rộng phân số, phân số bằng nhau; so sánh phân số; hỗn số dương",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "phan-so-bang-nhau",
+            "rut-gon-phan-so",
+            "so-sanh-phan-so",
+            "hon-so-duong"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "rut-gon-phan-so"
+          ],
+          "unresolved_skill_refs": [
+            "phan-so-bang-nhau",
+            "so-sanh-phan-so",
+            "hon-so-duong"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 6,
+          "chapter_title": "Phân số",
+          "lesson_ref": "Bài 25-26",
+          "curriculum_summary": "Cộng, trừ, nhân, chia phân số",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "cong-tru-phan-so",
+            "nhan-chia-phan-so"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [],
+          "unresolved_skill_refs": [
+            "cong-tru-phan-so",
+            "nhan-chia-phan-so"
+          ],
+          "coverage_status": "RECONCILE_REQUIRED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 6,
+          "chapter_title": "Phân số",
+          "lesson_ref": "Bài 27",
+          "curriculum_summary": "Hai bài toán về phân số",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "tim-gia-tri-phan-so-cua-so",
+            "tim-so-khi-biet-gia-tri-phan-so"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [],
+          "unresolved_skill_refs": [
+            "tim-gia-tri-phan-so-cua-so",
+            "tim-so-khi-biet-gia-tri-phan-so"
+          ],
+          "coverage_status": "RECONCILE_REQUIRED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 7,
+          "chapter_title": "Số thập phân",
+          "lesson_ref": "Bài 28-29",
+          "curriculum_summary": "Số thập phân và tính toán với số thập phân",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "so-thap-phan",
+            "phep-tinh-so-thap-phan"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [],
+          "unresolved_skill_refs": [
+            "so-thap-phan",
+            "phep-tinh-so-thap-phan"
+          ],
+          "coverage_status": "RECONCILE_REQUIRED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 7,
+          "chapter_title": "Số thập phân",
+          "lesson_ref": "Bài 30",
+          "curriculum_summary": "Làm tròn và ước lượng",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "lam-tron",
+            "uoc-luong"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [],
+          "unresolved_skill_refs": [
+            "lam-tron",
+            "uoc-luong"
+          ],
+          "coverage_status": "RECONCILE_REQUIRED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 7,
+          "chapter_title": "Số thập phân",
+          "lesson_ref": "Bài 31",
+          "curriculum_summary": "Tỉ số và tỉ số phần trăm; bài toán phần trăm",
+          "roadmap": [
+            {
+              "topic_id": "03-ti-le-ti-le-thuc",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "SECONDARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "ti-so",
+            "ti-so-phan-tram",
+            "bai-toan-phan-tram"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "ti-so",
+            "ti-so-phan-tram"
+          ],
+          "unresolved_skill_refs": [
+            "bai-toan-phan-tram"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 8,
+          "chapter_title": "Những hình học cơ bản",
+          "lesson_ref": "Bài 32",
+          "curriculum_summary": "Điểm và đường thẳng",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "diem-thuoc-duong"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "diem-thuoc-duong"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 8,
+          "chapter_title": "Những hình học cơ bản",
+          "lesson_ref": "Bài 33",
+          "curriculum_summary": "Điểm nằm giữa hai điểm; tia",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "diem-nam-giua",
+            "tia",
+            "tia-doi"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "diem-nam-giua",
+            "tia",
+            "tia-doi"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 8,
+          "chapter_title": "Những hình học cơ bản",
+          "lesson_ref": "Bài 34-35",
+          "curriculum_summary": "Đoạn thẳng, độ dài đoạn thẳng, trung điểm",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "doan-thang-do-dai",
+            "trung-diem"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "doan-thang-do-dai",
+            "trung-diem"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 8,
+          "chapter_title": "Những hình học cơ bản",
+          "lesson_ref": "Bài 36-37",
+          "curriculum_summary": "Góc, số đo góc, góc nhọn/vuông/tù/bẹt",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "khai-niem-goc",
+            "do-goc",
+            "phan-loai-goc"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "khai-niem-goc",
+            "do-goc",
+            "phan-loai-goc"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 9,
+          "chapter_title": "Dữ liệu và xác suất thực nghiệm",
+          "lesson_ref": "Bài 38-41",
+          "curriculum_summary": "Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép",
+          "roadmap": [
+            {
+              "topic_id": "21-thong-ke",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "du-lieu",
+            "thu-thap-du-lieu",
+            "bang-thong-ke",
+            "bieu-do-tranh",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep",
+            "nhan-xet-du-lieu"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep",
+            "nhan-xet-du-lieu"
+          ],
+          "unresolved_skill_refs": [
+            "du-lieu",
+            "bang-thong-ke",
+            "bieu-do-tranh"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 9,
+          "chapter_title": "Dữ liệu và xác suất thực nghiệm",
+          "lesson_ref": "Bài 42",
+          "curriculum_summary": "Kết quả có thể và sự kiện trong trò chơi, thí nghiệm",
+          "roadmap": [
+            {
+              "topic_id": "23-xac-suat",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "ket-qua-co-the",
+            "su-kien-don-gian"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [],
+          "unresolved_skill_refs": [
+            "ket-qua-co-the",
+            "su-kien-don-gian"
+          ],
+          "coverage_status": "RECONCILE_REQUIRED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 6,
+          "chapter": 9,
+          "chapter_title": "Dữ liệu và xác suất thực nghiệm",
+          "lesson_ref": "Bài 43",
+          "curriculum_summary": "Xác suất thực nghiệm",
+          "roadmap": [
+            {
+              "topic_id": "23-xac-suat",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "xac-suat-thuc-nghiem"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "xac-suat-thuc-nghiem"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "source_map": {
+        "path": "docs/assets/data/curriculum/kntt-grade7-map.json",
+        "blob_sha": "de3fba60557981f665fea26d621bc7c31e448e40",
+        "status": "reviewed",
+        "source_task": "KNTT-MAP-G7-001"
+      },
+      "row_count": 21,
+      "chapter_count": 10,
+      "unique_skill_refs": 87,
+      "unique_current_matches": 76,
+      "unique_unresolved_refs": 11,
+      "historical_proposed_count": 22,
+      "historical_proposed_now_current": [
+        "nhan-dang-goc-dac-biet",
+        "tien-de-euclid",
+        "gia-thiet-ket-luan",
+        "lap-luan-chung-minh-ngan",
+        "viet-tuong-ung-tam-giac-bang-nhau",
+        "tinh-chat-duong-trung-truc",
+        "duong-vuong-goc-duong-xien",
+        "dong-quy-bon-duong-dac-biet",
+        "nhan-biet-hinh-hop-lap-phuong",
+        "dien-tich-xung-quanh-hop-chu-nhat",
+        "nhan-biet-lang-tru-dung",
+        "dien-tich-xung-quanh-lang-tru"
+      ],
+      "historical_proposed_still_unresolved": [
+        "phep-tinh-so-huu-ti",
+        "quy-tac-chuyen-ve",
+        "so-thap-phan-vo-han-tuan-hoan",
+        "so-vo-ti",
+        "tap-hop-so-thuc",
+        "ve-bieu-do-quat-tron",
+        "ve-bieu-do-doan-thang",
+        "da-thuc-mot-bien",
+        "chia-da-thuc-mot-bien",
+        "xac-suat-bien-co-don-gian"
+      ],
+      "coverage_status_counts": {
+        "PARTIAL_RECONCILE": 7,
+        "CURRENT_MAPPED": 14
+      },
+      "rows": [
+        {
+          "grade": 7,
+          "chapter": 1,
+          "chapter_title": "Số hữu tỉ",
+          "lesson_ref": "Bài 1-3",
+          "curriculum_summary": "Tập hợp số hữu tỉ; cộng, trừ, nhân, chia số hữu tỉ; lũy thừa với số mũ tự nhiên của số hữu tỉ.",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "so-huu-ti-thap-phan",
+            "luy-thua",
+            "phep-tinh-so-huu-ti"
+          ],
+          "historical_existing_refs": [
+            "so-huu-ti-thap-phan",
+            "luy-thua"
+          ],
+          "historical_proposed_refs": [
+            "phep-tinh-so-huu-ti"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "so-huu-ti-thap-phan",
+            "luy-thua"
+          ],
+          "unresolved_skill_refs": [
+            "phep-tinh-so-huu-ti"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [
+            "phep-tinh-phan-so",
+            "so-nguyen-phep-tinh",
+            "thu-tu-phep-tinh"
+          ],
+          "downstream": [
+            "bieu-thuc-dai-so",
+            "ti-le-thuc",
+            "phuong-trinh-bac-nhat"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 1,
+          "chapter_title": "Số hữu tỉ",
+          "lesson_ref": "Bài 4",
+          "curriculum_summary": "Thứ tự thực hiện phép tính; quy tắc chuyển vế trong các bài toán tìm số hữu tỉ chưa biết.",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "08-phuong-trinh-bat-phuong-trinh",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "historical_skill_refs": [
+            "thu-tu-phep-tinh",
+            "quy-tac-chuyen-ve"
+          ],
+          "historical_existing_refs": [
+            "thu-tu-phep-tinh"
+          ],
+          "historical_proposed_refs": [
+            "quy-tac-chuyen-ve"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "thu-tu-phep-tinh"
+          ],
+          "unresolved_skill_refs": [
+            "quy-tac-chuyen-ve"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [
+            "phep-tinh-so-huu-ti"
+          ],
+          "downstream": [
+            "pt-bac-nhat",
+            "bien-doi-pt-nhieu-buoc"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 2,
+          "chapter_title": "Số thực",
+          "lesson_ref": "Bài 5-7",
+          "curriculum_summary": "Số thập phân vô hạn tuần hoàn; số vô tỉ; căn bậc hai số học; tập hợp số thực.",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "11-can-thuc",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "historical_skill_refs": [
+            "so-huu-ti-thap-phan",
+            "can-bac-hai",
+            "so-thap-phan-vo-han-tuan-hoan",
+            "so-vo-ti",
+            "tap-hop-so-thuc"
+          ],
+          "historical_existing_refs": [
+            "so-huu-ti-thap-phan",
+            "can-bac-hai"
+          ],
+          "historical_proposed_refs": [
+            "so-thap-phan-vo-han-tuan-hoan",
+            "so-vo-ti",
+            "tap-hop-so-thuc"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "so-huu-ti-thap-phan"
+          ],
+          "unresolved_skill_refs": [
+            "can-bac-hai",
+            "so-thap-phan-vo-han-tuan-hoan",
+            "so-vo-ti",
+            "tap-hop-so-thuc"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [
+            "phan-so",
+            "so-huu-ti-thap-phan"
+          ],
+          "downstream": [
+            "can-bac-hai-so-hoc",
+            "so-sanh-can",
+            "ham-so-do-thi"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 3,
+          "chapter_title": "Góc và đường thẳng song song",
+          "lesson_ref": "Bài 8",
+          "curriculum_summary": "Góc ở vị trí đặc biệt và tia phân giác của một góc.",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "goc-phu-bu",
+            "goc-doi-dinh",
+            "tia-phan-giac",
+            "nhan-dang-goc-dac-biet"
+          ],
+          "historical_existing_refs": [
+            "goc-phu-bu",
+            "goc-doi-dinh",
+            "tia-phan-giac"
+          ],
+          "historical_proposed_refs": [
+            "nhan-dang-goc-dac-biet"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "goc-phu-bu",
+            "goc-doi-dinh",
+            "tia-phan-giac",
+            "nhan-dang-goc-dac-biet"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "phan-loai-goc",
+            "do-goc"
+          ],
+          "downstream": [
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "tong-goc-tam-giac"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 3,
+          "chapter_title": "Góc và đường thẳng song song",
+          "lesson_ref": "Bài 9-10",
+          "curriculum_summary": "Dấu hiệu nhận biết hai đường thẳng song song; tiên đề Euclid; tính chất của hai đường thẳng song song.",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "goc-trong-cung-phia",
+            "tinh-chat-song-song",
+            "dau-hieu-song-song",
+            "tien-de-euclid"
+          ],
+          "historical_existing_refs": [
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "goc-trong-cung-phia",
+            "tinh-chat-song-song",
+            "dau-hieu-song-song"
+          ],
+          "historical_proposed_refs": [
+            "tien-de-euclid"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "goc-trong-cung-phia",
+            "tinh-chat-song-song",
+            "dau-hieu-song-song",
+            "tien-de-euclid"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "goc-doi-dinh",
+            "goc-phu-bu"
+          ],
+          "downstream": [
+            "tong-goc-tam-giac",
+            "thales",
+            "dong-dang"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 3,
+          "chapter_title": "Góc và đường thẳng song song",
+          "lesson_ref": "Bài 11",
+          "curriculum_summary": "Khái niệm định lí; giả thiết, kết luận; bước đầu chứng minh định lí.",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "14-tam-giac",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "historical_skill_refs": [
+            "gia-thiet-ket-luan",
+            "lap-luan-chung-minh-ngan"
+          ],
+          "historical_existing_refs": [],
+          "historical_proposed_refs": [
+            "gia-thiet-ket-luan",
+            "lap-luan-chung-minh-ngan"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "gia-thiet-ket-luan",
+            "lap-luan-chung-minh-ngan"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "quan-he-goc",
+            "tinh-chat-song-song"
+          ],
+          "downstream": [
+            "chung-minh-tam-giac",
+            "chung-minh-tu-giac",
+            "chuoi-suy-luan"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 4,
+          "chapter_title": "Tam giác bằng nhau",
+          "lesson_ref": "Bài 12",
+          "curriculum_summary": "Tổng các góc trong một tam giác.",
+          "roadmap": [
+            {
+              "topic_id": "14-tam-giac",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "tong-goc-tam-giac"
+          ],
+          "historical_existing_refs": [
+            "tong-goc-tam-giac"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "tong-goc-tam-giac"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "goc-phu-bu",
+            "tinh-chat-song-song"
+          ],
+          "downstream": [
+            "goc-ngoai",
+            "tam-giac-can",
+            "bang-nhau-gcg"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 4,
+          "chapter_title": "Tam giác bằng nhau",
+          "lesson_ref": "Bài 13-15",
+          "curriculum_summary": "Hai tam giác bằng nhau; các trường hợp c-c-c, c-g-c, g-c-g và các trường hợp bằng nhau của tam giác vuông.",
+          "roadmap": [
+            {
+              "topic_id": "14-tam-giac",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "bang-nhau-ccc",
+            "bang-nhau-cgc",
+            "bang-nhau-gcg",
+            "bang-nhau-tam-giac-vuong",
+            "viet-tuong-ung-tam-giac-bang-nhau"
+          ],
+          "historical_existing_refs": [
+            "bang-nhau-ccc",
+            "bang-nhau-cgc",
+            "bang-nhau-gcg",
+            "bang-nhau-tam-giac-vuong"
+          ],
+          "historical_proposed_refs": [
+            "viet-tuong-ung-tam-giac-bang-nhau"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "bang-nhau-ccc",
+            "bang-nhau-cgc",
+            "bang-nhau-gcg",
+            "bang-nhau-tam-giac-vuong",
+            "viet-tuong-ung-tam-giac-bang-nhau"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "tong-goc-tam-giac",
+            "quan-he-goc"
+          ],
+          "downstream": [
+            "tam-giac-can",
+            "chung-minh-doan-bang-nhau",
+            "chung-minh-goc-bang-nhau",
+            "tu-giac"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 4,
+          "chapter_title": "Tam giác bằng nhau",
+          "lesson_ref": "Bài 16",
+          "curriculum_summary": "Tam giác cân; đường trung trực của đoạn thẳng và tính chất cách đều hai đầu mút.",
+          "roadmap": [
+            {
+              "topic_id": "14-tam-giac",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "15-duong-dong-quy",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "historical_skill_refs": [
+            "tam-giac-can",
+            "nhan-biet-trung-truc",
+            "cach-deu-dinh",
+            "tinh-chat-duong-trung-truc"
+          ],
+          "historical_existing_refs": [
+            "tam-giac-can",
+            "nhan-biet-trung-truc",
+            "cach-deu-dinh"
+          ],
+          "historical_proposed_refs": [
+            "tinh-chat-duong-trung-truc"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "tam-giac-can",
+            "nhan-biet-trung-truc",
+            "cach-deu-dinh",
+            "tinh-chat-duong-trung-truc"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "bang-nhau-tam-giac",
+            "trung-diem"
+          ],
+          "downstream": [
+            "tam-ngoai-tiep",
+            "phan-biet-bon-tam",
+            "chung-minh-hinh-hoc"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 5,
+          "chapter_title": "Thu thập và biểu diễn dữ liệu",
+          "lesson_ref": "Bài 17",
+          "curriculum_summary": "Thu thập và phân loại dữ liệu.",
+          "roadmap": [
+            {
+              "topic_id": "21-thong-ke",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu"
+          ],
+          "historical_existing_refs": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "du-lieu",
+            "bang-thong-ke"
+          ],
+          "downstream": [
+            "chon-bieu-do",
+            "nhan-xet-du-lieu",
+            "dai-luong-dac-trung"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 5,
+          "chapter_title": "Thu thập và biểu diễn dữ liệu",
+          "lesson_ref": "Bài 18-19",
+          "curriculum_summary": "Biểu đồ hình quạt tròn và biểu đồ đoạn thẳng; đọc, biểu diễn và nhận xét dữ liệu.",
+          "roadmap": [
+            {
+              "topic_id": "21-thong-ke",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "03-ti-le-ti-le-thuc",
+              "relation": "SECONDARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "bieu-do-quat-tron",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu",
+            "ve-bieu-do-quat-tron",
+            "ve-bieu-do-doan-thang"
+          ],
+          "historical_existing_refs": [
+            "bieu-do-quat-tron",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu"
+          ],
+          "historical_proposed_refs": [
+            "ve-bieu-do-quat-tron",
+            "ve-bieu-do-doan-thang"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "bieu-do-quat-tron",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu"
+          ],
+          "unresolved_skill_refs": [
+            "ve-bieu-do-quat-tron",
+            "ve-bieu-do-doan-thang"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [
+            "ti-so-phan-tram",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep"
+          ],
+          "downstream": [
+            "tan-suat",
+            "dai-luong-dac-trung",
+            "thong-ke-thuc-te"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 6,
+          "chapter_title": "Tỉ lệ thức và đại lượng tỉ lệ",
+          "lesson_ref": "Bài 20-21",
+          "curriculum_summary": "Tỉ lệ thức; tính chất dãy tỉ số bằng nhau.",
+          "roadmap": [
+            {
+              "topic_id": "03-ti-le-ti-le-thuc",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "ti-le-thuc",
+            "tim-x-ti-le-thuc",
+            "day-ti-so-bang-nhau",
+            "chia-theo-ti-le"
+          ],
+          "historical_existing_refs": [
+            "ti-le-thuc",
+            "tim-x-ti-le-thuc",
+            "day-ti-so-bang-nhau",
+            "chia-theo-ti-le"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "ti-le-thuc",
+            "tim-x-ti-le-thuc",
+            "day-ti-so-bang-nhau",
+            "chia-theo-ti-le"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "ti-so",
+            "phep-tinh-so-huu-ti"
+          ],
+          "downstream": [
+            "ti-le-thuan",
+            "ti-le-nghich",
+            "mo-hinh-ti-le"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 6,
+          "chapter_title": "Tỉ lệ thức và đại lượng tỉ lệ",
+          "lesson_ref": "Bài 22-23",
+          "curriculum_summary": "Đại lượng tỉ lệ thuận, tỉ lệ nghịch và các bài toán ứng dụng.",
+          "roadmap": [
+            {
+              "topic_id": "03-ti-le-ti-le-thuc",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "ti-le-thuan",
+            "he-so-ti-le-thuan",
+            "ti-le-nghich",
+            "he-so-ti-le-nghich",
+            "phan-biet-thuan-nghich",
+            "mo-hinh-ti-le"
+          ],
+          "historical_existing_refs": [
+            "ti-le-thuan",
+            "he-so-ti-le-thuan",
+            "ti-le-nghich",
+            "he-so-ti-le-nghich",
+            "phan-biet-thuan-nghich",
+            "mo-hinh-ti-le"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "ti-le-thuan",
+            "he-so-ti-le-thuan",
+            "ti-le-nghich",
+            "he-so-ti-le-nghich",
+            "phan-biet-thuan-nghich",
+            "mo-hinh-ti-le"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "ti-le-thuc",
+            "day-ti-so-bang-nhau"
+          ],
+          "downstream": [
+            "ham-so-bac-nhat",
+            "chuyen-dong",
+            "nang-suat",
+            "bai-toan-thuc-te"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 7,
+          "chapter_title": "Biểu thức đại số và đa thức một biến",
+          "lesson_ref": "Bài 24-25",
+          "curriculum_summary": "Biểu thức đại số; giá trị biểu thức; đa thức một biến, hệ số và bậc.",
+          "roadmap": [
+            {
+              "topic_id": "04-bieu-thuc-dai-so",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "tinh-gia-tri-bieu-thuc",
+            "da-thuc-mot-bien"
+          ],
+          "historical_existing_refs": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "tinh-gia-tri-bieu-thuc"
+          ],
+          "historical_proposed_refs": [
+            "da-thuc-mot-bien"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "tinh-gia-tri-bieu-thuc"
+          ],
+          "unresolved_skill_refs": [
+            "da-thuc-mot-bien"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [
+            "phep-tinh-so-huu-ti",
+            "thu-tu-phep-tinh"
+          ],
+          "downstream": [
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "hang-dang-thuc"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 7,
+          "chapter_title": "Biểu thức đại số và đa thức một biến",
+          "lesson_ref": "Bài 26-28",
+          "curriculum_summary": "Cộng, trừ, nhân và chia đa thức một biến.",
+          "roadmap": [
+            {
+              "topic_id": "04-bieu-thuc-dai-so",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "05-7-hang-dang-thuc",
+              "relation": "PREREQUISITE"
+            },
+            {
+              "topic_id": "06-phan-tich-da-thuc",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "historical_skill_refs": [
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi",
+            "chia-da-thuc-mot-bien"
+          ],
+          "historical_existing_refs": [
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi"
+          ],
+          "historical_proposed_refs": [
+            "chia-da-thuc-mot-bien"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi"
+          ],
+          "unresolved_skill_refs": [
+            "chia-da-thuc-mot-bien"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [
+            "da-thuc-mot-bien",
+            "phep-tinh-so-huu-ti"
+          ],
+          "downstream": [
+            "hang-dang-thuc",
+            "phan-tich-da-thuc",
+            "phan-thuc-dai-so"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 8,
+          "chapter_title": "Làm quen với biến cố và xác suất của biến cố",
+          "lesson_ref": "Bài 29",
+          "curriculum_summary": "Làm quen với biến cố; biến cố chắc chắn, không thể và ngẫu nhiên trong các tình huống đơn giản.",
+          "roadmap": [
+            {
+              "topic_id": "23-xac-suat",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "bien-co",
+            "bien-co-chac-chan-khong-the"
+          ],
+          "historical_existing_refs": [
+            "bien-co",
+            "bien-co-chac-chan-khong-the"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "bien-co",
+            "bien-co-chac-chan-khong-the"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "ket-qua-co-the",
+            "xac-suat-thuc-nghiem"
+          ],
+          "downstream": [
+            "xac-suat-co-dien",
+            "khong-gian-mau"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 8,
+          "chapter_title": "Làm quen với biến cố và xác suất của biến cố",
+          "lesson_ref": "Bài 30",
+          "curriculum_summary": "Làm quen với xác suất của biến cố trong các mô hình đơn giản.",
+          "roadmap": [
+            {
+              "topic_id": "23-xac-suat",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat",
+            "xac-suat-bien-co-don-gian"
+          ],
+          "historical_existing_refs": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat"
+          ],
+          "historical_proposed_refs": [
+            "xac-suat-bien-co-don-gian"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat"
+          ],
+          "unresolved_skill_refs": [
+            "xac-suat-bien-co-don-gian"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [
+            "bien-co",
+            "phan-so",
+            "ti-so"
+          ],
+          "downstream": [
+            "khong-gian-mau",
+            "so-do-cay",
+            "nhieu-buoc-doc-lap"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 9,
+          "chapter_title": "Quan hệ giữa các yếu tố trong một tam giác",
+          "lesson_ref": "Bài 31-33",
+          "curriculum_summary": "Quan hệ góc–cạnh đối diện; đường vuông góc và đường xiên; bất đẳng thức tam giác.",
+          "roadmap": [
+            {
+              "topic_id": "14-tam-giac",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "so-sanh-canh-goc",
+            "bat-dang-thuc-tam-giac",
+            "duong-vuong-goc-duong-xien"
+          ],
+          "historical_existing_refs": [
+            "so-sanh-canh-goc",
+            "bat-dang-thuc-tam-giac"
+          ],
+          "historical_proposed_refs": [
+            "duong-vuong-goc-duong-xien"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "so-sanh-canh-goc",
+            "bat-dang-thuc-tam-giac",
+            "duong-vuong-goc-duong-xien"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "tong-goc-tam-giac",
+            "tam-giac-bang-nhau"
+          ],
+          "downstream": [
+            "chung-minh-bat-dang-thuc-hinh-hoc",
+            "hinh-hoc-tong-hop"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 9,
+          "chapter_title": "Quan hệ giữa các yếu tố trong một tam giác",
+          "lesson_ref": "Bài 34-35",
+          "curriculum_summary": "Sự đồng quy và tính chất cơ bản của trung tuyến, phân giác, trung trực, đường cao.",
+          "roadmap": [
+            {
+              "topic_id": "15-duong-dong-quy",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "nhan-biet-trung-tuyen",
+            "trong-tam",
+            "ti-so-trong-tam",
+            "nhan-biet-phan-giac",
+            "nhan-biet-trung-truc",
+            "nhan-biet-duong-cao",
+            "truc-tam",
+            "tam-noi-tiep",
+            "tam-ngoai-tiep",
+            "phan-biet-bon-tam",
+            "dong-quy-bon-duong-dac-biet"
+          ],
+          "historical_existing_refs": [
+            "nhan-biet-trung-tuyen",
+            "trong-tam",
+            "ti-so-trong-tam",
+            "nhan-biet-phan-giac",
+            "nhan-biet-trung-truc",
+            "nhan-biet-duong-cao",
+            "truc-tam",
+            "tam-noi-tiep",
+            "tam-ngoai-tiep",
+            "phan-biet-bon-tam"
+          ],
+          "historical_proposed_refs": [
+            "dong-quy-bon-duong-dac-biet"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "nhan-biet-trung-tuyen",
+            "trong-tam",
+            "ti-so-trong-tam",
+            "nhan-biet-phan-giac",
+            "nhan-biet-trung-truc",
+            "nhan-biet-duong-cao",
+            "truc-tam",
+            "tam-noi-tiep",
+            "tam-ngoai-tiep",
+            "phan-biet-bon-tam",
+            "dong-quy-bon-duong-dac-biet"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "tam-giac-can",
+            "duong-trung-truc",
+            "tam-giac-bang-nhau"
+          ],
+          "downstream": [
+            "duong-tron",
+            "hinh-hoc-tong-hop",
+            "chung-minh-dong-quy"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 10,
+          "chapter_title": "Một số hình khối trong thực tiễn",
+          "lesson_ref": "Bài 36",
+          "curriculum_summary": "Hình hộp chữ nhật và hình lập phương; yếu tố hình, diện tích xung quanh/toàn phần và thể tích.",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "the-tich-hop-chu-nhat",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-hop-lap-phuong",
+            "dien-tich-xung-quanh-hop-chu-nhat"
+          ],
+          "historical_existing_refs": [
+            "the-tich-hop-chu-nhat",
+            "dien-tich-day",
+            "doi-don-vi-do-luong"
+          ],
+          "historical_proposed_refs": [
+            "nhan-biet-hinh-hop-lap-phuong",
+            "dien-tich-xung-quanh-hop-chu-nhat"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "the-tich-hop-chu-nhat",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-hop-lap-phuong",
+            "dien-tich-xung-quanh-hop-chu-nhat"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "dien-tich-hinh-phang",
+            "doi-don-vi"
+          ],
+          "downstream": [
+            "the-tich-lang-tru",
+            "hinh-hoc-do-luong"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 7,
+          "chapter": 10,
+          "chapter_title": "Một số hình khối trong thực tiễn",
+          "lesson_ref": "Bài 37",
+          "curriculum_summary": "Hình lăng trụ đứng tam giác, tứ giác; yếu tố hình, diện tích xung quanh và thể tích; vận dụng thực tế.",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "the-tich-lang-tru",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-lang-tru-dung",
+            "dien-tich-xung-quanh-lang-tru"
+          ],
+          "historical_existing_refs": [
+            "the-tich-lang-tru",
+            "dien-tich-day",
+            "doi-don-vi-do-luong"
+          ],
+          "historical_proposed_refs": [
+            "nhan-biet-lang-tru-dung",
+            "dien-tich-xung-quanh-lang-tru"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "the-tich-lang-tru",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-lang-tru-dung",
+            "dien-tich-xung-quanh-lang-tru"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "the-tich-hop-chu-nhat",
+            "chu-vi-dien-tich"
+          ],
+          "downstream": [
+            "hinh-hoc-do-luong",
+            "bai-toan-tong-hop"
+          ],
+          "exclusions": []
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "source_map": {
+        "path": "docs/assets/data/curriculum/kntt-grade8-map.json",
+        "blob_sha": "7d91f1c8e15639b5da8e7da72845150424a0a104",
+        "status": "reviewed",
+        "source_task": "KNTT-MAP-G8-001"
+      },
+      "row_count": 16,
+      "chapter_count": 10,
+      "unique_skill_refs": 103,
+      "unique_current_matches": 100,
+      "unique_unresolved_refs": 3,
+      "historical_proposed_count": 8,
+      "historical_proposed_now_current": [
+        "chia-da-thuc-cho-don-thuc",
+        "tinh-chat-duong-phan-giac",
+        "hinh-dong-dang",
+        "nhan-biet-hinh-chop-deu",
+        "dien-tich-xung-quanh-hinh-chop",
+        "the-tich-hinh-chop"
+      ],
+      "historical_proposed_still_unresolved": [
+        "ket-qua-co-the",
+        "ket-qua-thuan-loi"
+      ],
+      "coverage_status_counts": {
+        "CURRENT_MAPPED": 14,
+        "PARTIAL_RECONCILE": 2
+      },
+      "rows": [
+        {
+          "grade": 8,
+          "chapter": 1,
+          "chapter_title": "Đa thức",
+          "lesson_ref": "Bài 1-5",
+          "curriculum_summary": "Đơn thức và đa thức nhiều biến; hệ số, bậc, hạng tử đồng dạng; thu gọn; cộng, trừ, nhân đa thức; chia đa thức cho đơn thức.",
+          "roadmap": [
+            {
+              "topic_id": "04-bieu-thuc-dai-so",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi",
+            "chia-da-thuc-cho-don-thuc"
+          ],
+          "historical_existing_refs": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi"
+          ],
+          "historical_proposed_refs": [
+            "chia-da-thuc-cho-don-thuc"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi",
+            "chia-da-thuc-cho-don-thuc"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "phep-tinh-so-huu-ti",
+            "quy-tac-dau-ngoac",
+            "da-thuc-mot-bien"
+          ],
+          "downstream": [
+            "binh-phuong-tong",
+            "nhan-tu-chung",
+            "phan-thuc-dai-so"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 8,
+          "chapter": 2,
+          "chapter_title": "Hằng đẳng thức đáng nhớ và ứng dụng",
+          "lesson_ref": "Bài 6-8",
+          "curriculum_summary": "Nhận dạng, khai triển, biến đổi và vận dụng 7 hằng đẳng thức đáng nhớ.",
+          "roadmap": [
+            {
+              "topic_id": "05-7-hang-dang-thuc",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "binh-phuong-tong",
+            "binh-phuong-hieu",
+            "hieu-hai-binh-phuong",
+            "lap-phuong-tong",
+            "lap-phuong-hieu",
+            "tong-hai-lap-phuong",
+            "hieu-hai-lap-phuong",
+            "nhan-dang-hdt",
+            "binh-phuong-hoan-chinh",
+            "nhan-dang-lap-phuong",
+            "tinh-nhanh-hdt",
+            "rut-gon-hdt"
+          ],
+          "historical_existing_refs": [
+            "binh-phuong-tong",
+            "binh-phuong-hieu",
+            "hieu-hai-binh-phuong",
+            "lap-phuong-tong",
+            "lap-phuong-hieu",
+            "tong-hai-lap-phuong",
+            "hieu-hai-lap-phuong",
+            "nhan-dang-hdt",
+            "binh-phuong-hoan-chinh",
+            "nhan-dang-lap-phuong",
+            "tinh-nhanh-hdt",
+            "rut-gon-hdt"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "binh-phuong-tong",
+            "binh-phuong-hieu",
+            "hieu-hai-binh-phuong",
+            "lap-phuong-tong",
+            "lap-phuong-hieu",
+            "tong-hai-lap-phuong",
+            "hieu-hai-lap-phuong",
+            "nhan-dang-hdt",
+            "binh-phuong-hoan-chinh",
+            "nhan-dang-lap-phuong",
+            "tinh-nhanh-hdt",
+            "rut-gon-hdt"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi",
+            "thu-gon-da-thuc"
+          ],
+          "downstream": [
+            "phan-tich-hdt",
+            "rut-gon-phan-thuc",
+            "phuong-trinh-bac-hai"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 8,
+          "chapter": 2,
+          "chapter_title": "Hằng đẳng thức đáng nhớ và ứng dụng",
+          "lesson_ref": "Bài 9",
+          "curriculum_summary": "Phân tích đa thức thành nhân tử bằng đặt nhân tử chung, nhóm hạng tử, dùng hằng đẳng thức và phối hợp các phương pháp ở mức KNTT Core.",
+          "roadmap": [
+            {
+              "topic_id": "06-phan-tich-da-thuc",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "nhan-tu-chung",
+            "doi-dau-nhan-tu-chung",
+            "hieu-hai-binh-phuong",
+            "binh-phuong-hoan-chinh",
+            "tong-hieu-lap-phuong",
+            "nhom-hang-tu",
+            "phoi-hop-phuong-phap",
+            "kiem-tra-phan-tich"
+          ],
+          "historical_existing_refs": [
+            "nhan-tu-chung",
+            "doi-dau-nhan-tu-chung",
+            "hieu-hai-binh-phuong",
+            "binh-phuong-hoan-chinh",
+            "tong-hieu-lap-phuong",
+            "nhom-hang-tu",
+            "phoi-hop-phuong-phap",
+            "kiem-tra-phan-tich"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "nhan-tu-chung",
+            "doi-dau-nhan-tu-chung",
+            "hieu-hai-binh-phuong",
+            "binh-phuong-hoan-chinh",
+            "tong-hieu-lap-phuong",
+            "nhom-hang-tu",
+            "phoi-hop-phuong-phap",
+            "kiem-tra-phan-tich"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "bay-hang-dang-thuc",
+            "nhan-bieu-thuc",
+            "thu-gon-da-thuc"
+          ],
+          "downstream": [
+            "phan-tich-tu-mau",
+            "rut-gon-phan-thuc",
+            "pt-tich"
+          ],
+          "exclusions": [
+            "tach-hang-tu-giua"
+          ]
+        },
+        {
+          "grade": 8,
+          "chapter": 3,
+          "chapter_title": "Tứ giác",
+          "lesson_ref": "Bài 10-14",
+          "curriculum_summary": "Tứ giác và tổng góc; hình thang cân, hình bình hành, hình chữ nhật, hình thoi, hình vuông: tính chất, dấu hiệu nhận biết và quan hệ bao hàm.",
+          "roadmap": [
+            {
+              "topic_id": "16-tu-giac",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "tong-goc-tu-giac",
+            "hinh-thang",
+            "hinh-thang-can",
+            "hbh-tinh-chat",
+            "hbh-dau-hieu",
+            "hcn-tinh-chat",
+            "hcn-dau-hieu",
+            "hthoi-tinh-chat",
+            "hthoi-dau-hieu",
+            "hvuong-tinh-chat",
+            "hvuong-dau-hieu",
+            "quan-he-bao-ham",
+            "duong-cheo-suy-luan"
+          ],
+          "historical_existing_refs": [
+            "tong-goc-tu-giac",
+            "hinh-thang",
+            "hinh-thang-can",
+            "hbh-tinh-chat",
+            "hbh-dau-hieu",
+            "hcn-tinh-chat",
+            "hcn-dau-hieu",
+            "hthoi-tinh-chat",
+            "hthoi-dau-hieu",
+            "hvuong-tinh-chat",
+            "hvuong-dau-hieu",
+            "quan-he-bao-ham",
+            "duong-cheo-suy-luan"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "tong-goc-tu-giac",
+            "hinh-thang",
+            "hinh-thang-can",
+            "hbh-tinh-chat",
+            "hbh-dau-hieu",
+            "hcn-tinh-chat",
+            "hcn-dau-hieu",
+            "hthoi-tinh-chat",
+            "hthoi-dau-hieu",
+            "hvuong-tinh-chat",
+            "hvuong-dau-hieu",
+            "quan-he-bao-ham",
+            "duong-cheo-suy-luan"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "bang-nhau-tam-giac",
+            "tinh-chat-song-song",
+            "duong-trung-truc"
+          ],
+          "downstream": [
+            "thales-thuan",
+            "duong-trung-binh",
+            "hinh-hoc-tong-hop",
+            "duong-tron"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 8,
+          "chapter": 4,
+          "chapter_title": "Định lí Thalès",
+          "lesson_ref": "Bài 15-16",
+          "curriculum_summary": "Định lí Thalès thuận, đảo; tỉ lệ đoạn thẳng; đường trung bình của tam giác.",
+          "roadmap": [
+            {
+              "topic_id": "17-thales-dong-dang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "thales-thuan",
+            "thales-dao",
+            "ti-le-doan-thang",
+            "duong-trung-binh"
+          ],
+          "historical_existing_refs": [
+            "thales-thuan",
+            "thales-dao",
+            "ti-le-doan-thang",
+            "duong-trung-binh"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "thales-thuan",
+            "thales-dao",
+            "ti-le-doan-thang",
+            "duong-trung-binh"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "ti-le-thuc",
+            "day-ti-so-bang-nhau",
+            "tinh-chat-song-song"
+          ],
+          "downstream": [
+            "nhan-biet-dong-dang",
+            "dong-dang-gg",
+            "tinh-do-dai-dong-dang",
+            "hinh-hoc-do-luong"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 8,
+          "chapter": 4,
+          "chapter_title": "Định lí Thalès",
+          "lesson_ref": "Bài 17",
+          "curriculum_summary": "Tính chất đường phân giác trong tam giác và sử dụng tỉ lệ đoạn thẳng.",
+          "roadmap": [
+            {
+              "topic_id": "17-thales-dong-dang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "ti-le-doan-thang",
+            "tinh-chat-duong-phan-giac"
+          ],
+          "historical_existing_refs": [
+            "ti-le-doan-thang"
+          ],
+          "historical_proposed_refs": [
+            "tinh-chat-duong-phan-giac"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "ti-le-doan-thang",
+            "tinh-chat-duong-phan-giac"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "tia-phan-giac",
+            "ti-le-thuc",
+            "tam-giac"
+          ],
+          "downstream": [
+            "dong-dang",
+            "hinh-hoc-tong-hop",
+            "chung-minh-ti-le"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 8,
+          "chapter": 5,
+          "chapter_title": "Dữ liệu và biểu đồ",
+          "lesson_ref": "Bài 18-20",
+          "curriculum_summary": "Thu thập, phân loại, biểu diễn và phân tích dữ liệu; chọn/đọc/chuyển dạng biểu đồ; nhận xét số liệu từ biểu đồ.",
+          "roadmap": [
+            {
+              "topic_id": "21-thong-ke",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu",
+            "doc-bieu-do-cot-kep",
+            "bieu-do-quat-tron"
+          ],
+          "historical_existing_refs": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu",
+            "doc-bieu-do-cot-kep",
+            "bieu-do-quat-tron"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu",
+            "doc-bieu-do-cot-kep",
+            "bieu-do-quat-tron"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "bang-thong-ke",
+            "bieu-do-cot",
+            "bieu-do-quat-tron",
+            "ti-so-phan-tram"
+          ],
+          "downstream": [
+            "trung-binh-tho",
+            "trung-vi",
+            "mot",
+            "thong-ke-thuc-te"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 8,
+          "chapter": 6,
+          "chapter_title": "Phân thức đại số",
+          "lesson_ref": "Bài 21-24",
+          "curriculum_summary": "Phân thức đại số; điều kiện mẫu khác 0; tính chất cơ bản; rút gọn, quy đồng; cộng, trừ, nhân, chia phân thức.",
+          "roadmap": [
+            {
+              "topic_id": "07-phan-thuc-dai-so",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "nhan-biet-phan-thuc",
+            "dieu-kien-xac-dinh",
+            "hai-phan-thuc-bang-nhau",
+            "doi-dau-phan-thuc",
+            "phan-tich-tu-mau",
+            "rut-gon-phan-thuc",
+            "giu-dieu-kien-ban-dau",
+            "quy-dong-mau-thuc",
+            "cong-tru-phan-thuc",
+            "nhan-phan-thuc",
+            "chia-phan-thuc",
+            "bieu-thuc-nhieu-phep-tinh",
+            "tinh-gia-tri-phan-thuc"
+          ],
+          "historical_existing_refs": [
+            "nhan-biet-phan-thuc",
+            "dieu-kien-xac-dinh",
+            "hai-phan-thuc-bang-nhau",
+            "doi-dau-phan-thuc",
+            "phan-tich-tu-mau",
+            "rut-gon-phan-thuc",
+            "giu-dieu-kien-ban-dau",
+            "quy-dong-mau-thuc",
+            "cong-tru-phan-thuc",
+            "nhan-phan-thuc",
+            "chia-phan-thuc",
+            "bieu-thuc-nhieu-phep-tinh",
+            "tinh-gia-tri-phan-thuc"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "nhan-biet-phan-thuc",
+            "dieu-kien-xac-dinh",
+            "hai-phan-thuc-bang-nhau",
+            "doi-dau-phan-thuc",
+            "phan-tich-tu-mau",
+            "rut-gon-phan-thuc",
+            "giu-dieu-kien-ban-dau",
+            "quy-dong-mau-thuc",
+            "cong-tru-phan-thuc",
+            "nhan-phan-thuc",
+            "chia-phan-thuc",
+            "tinh-gia-tri-phan-thuc"
+          ],
+          "unresolved_skill_refs": [
+            "bieu-thuc-nhieu-phep-tinh"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [
+            "phan-tich-da-thuc",
+            "phep-tinh-phan-so",
+            "quy-dong-mau-so"
+          ],
+          "downstream": [
+            "dkxd-phuong-trinh-mau",
+            "khu-mau-phuong-trinh",
+            "can-thuc",
+            "bien-doi-dai-so-vao10"
+          ],
+          "exclusions": [
+            "tim-gia-tri-nguyen"
+          ]
+        },
+        {
+          "grade": 8,
+          "chapter": 7,
+          "chapter_title": "Phương trình bậc nhất và hàm số bậc nhất",
+          "lesson_ref": "Bài 25-26",
+          "curriculum_summary": "Khái niệm và nghiệm phương trình bậc nhất một ẩn; biến đổi về ax+b=0; giải bài toán bằng cách lập phương trình.",
+          "roadmap": [
+            {
+              "topic_id": "08-phuong-trinh-bat-phuong-trinh",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "nghiem-phuong-trinh",
+            "pt-bac-nhat",
+            "bien-doi-pt-nhieu-buoc",
+            "lap-phuong-trinh"
+          ],
+          "historical_existing_refs": [
+            "nghiem-phuong-trinh",
+            "pt-bac-nhat",
+            "bien-doi-pt-nhieu-buoc",
+            "lap-phuong-trinh"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "nghiem-phuong-trinh",
+            "pt-bac-nhat",
+            "bien-doi-pt-nhieu-buoc",
+            "lap-phuong-trinh"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "quy-tac-chuyen-ve",
+            "thu-gon-da-thuc",
+            "phep-tinh-so-huu-ti"
+          ],
+          "downstream": [
+            "pt-tich",
+            "phuong-trinh-an-mau",
+            "he-phuong-trinh",
+            "phuong-trinh-bac-hai"
+          ],
+          "exclusions": [
+            "pt-tich",
+            "dkxd-phuong-trinh-mau",
+            "khu-mau-phuong-trinh",
+            "bpt-bac-nhat",
+            "doi-chieu-bpt",
+            "bieu-dien-tap-nghiem",
+            "giao-tap-nghiem",
+            "lap-bat-phuong-trinh",
+            "tham-so-co-ban"
+          ]
+        },
+        {
+          "grade": 8,
+          "chapter": 7,
+          "chapter_title": "Phương trình bậc nhất và hàm số bậc nhất",
+          "lesson_ref": "Bài 27-29",
+          "curriculum_summary": "Khái niệm hàm số; giá trị và bảng giá trị; điểm/đồ thị; hàm số bậc nhất y=ax+b và đồ thị; hệ số góc.",
+          "roadmap": [
+            {
+              "topic_id": "10-ham-so-do-thi",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "khai-niem-ham-so",
+            "tinh-gia-tri-ham",
+            "bang-gia-tri",
+            "toa-do-diem",
+            "diem-thuoc-do-thi",
+            "nhan-biet-ham-bac-nhat",
+            "he-so-goc",
+            "tung-do-goc",
+            "dong-nghich-bien",
+            "ve-do-thi-ham-bac-nhat"
+          ],
+          "historical_existing_refs": [
+            "khai-niem-ham-so",
+            "tinh-gia-tri-ham",
+            "bang-gia-tri",
+            "toa-do-diem",
+            "diem-thuoc-do-thi",
+            "nhan-biet-ham-bac-nhat",
+            "he-so-goc",
+            "tung-do-goc",
+            "dong-nghich-bien",
+            "ve-do-thi-ham-bac-nhat"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "khai-niem-ham-so",
+            "tinh-gia-tri-ham",
+            "bang-gia-tri",
+            "toa-do-diem",
+            "diem-thuoc-do-thi",
+            "nhan-biet-ham-bac-nhat",
+            "he-so-goc",
+            "tung-do-goc",
+            "dong-nghich-bien",
+            "ve-do-thi-ham-bac-nhat"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "ti-le-thuan",
+            "bieu-thuc-dai-so",
+            "mat-phang-toa-do"
+          ],
+          "downstream": [
+            "vi-tri-hai-duong-thang",
+            "giao-diem-do-thi",
+            "he-phuong-trinh",
+            "ham-y-ax2"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 8,
+          "chapter": 8,
+          "chapter_title": "Mở đầu về tính xác suất của biến cố",
+          "lesson_ref": "Bài 30",
+          "curriculum_summary": "Kết quả có thể của hành động/thực nghiệm và kết quả thuận lợi cho một biến cố.",
+          "roadmap": [
+            {
+              "topic_id": "23-xac-suat",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "phep-thu-ngau-nhien",
+            "bien-co",
+            "ket-qua-co-the",
+            "ket-qua-thuan-loi"
+          ],
+          "historical_existing_refs": [
+            "phep-thu-ngau-nhien",
+            "bien-co"
+          ],
+          "historical_proposed_refs": [
+            "ket-qua-co-the",
+            "ket-qua-thuan-loi"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "phep-thu-ngau-nhien",
+            "bien-co"
+          ],
+          "unresolved_skill_refs": [
+            "ket-qua-co-the",
+            "ket-qua-thuan-loi"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [
+            "bien-co",
+            "xac-suat-thuc-nghiem"
+          ],
+          "downstream": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 8,
+          "chapter": 8,
+          "chapter_title": "Mở đầu về tính xác suất của biến cố",
+          "lesson_ref": "Bài 31-32",
+          "curriculum_summary": "Tính xác suất của biến cố bằng tỉ số trong mô hình đơn giản; liên hệ xác suất thực nghiệm với xác suất.",
+          "roadmap": [
+            {
+              "topic_id": "23-xac-suat",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat",
+            "xac-suat-thuc-nghiem"
+          ],
+          "historical_existing_refs": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat",
+            "xac-suat-thuc-nghiem"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat",
+            "xac-suat-thuc-nghiem"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "ket-qua-co-the",
+            "ket-qua-thuan-loi",
+            "phan-so",
+            "ti-so"
+          ],
+          "downstream": [
+            "so-do-cay",
+            "nhieu-buoc-doc-lap",
+            "xac-suat-tong-hop"
+          ],
+          "exclusions": [
+            "bien-co-doi",
+            "dong-xu-nhieu-lan",
+            "xuc-xac-hai-lan",
+            "so-do-cay",
+            "nhieu-buoc-doc-lap",
+            "khong-hoan-lai"
+          ]
+        },
+        {
+          "grade": 8,
+          "chapter": 9,
+          "chapter_title": "Tam giác đồng dạng",
+          "lesson_ref": "Bài 33-34, 36",
+          "curriculum_summary": "Hai tam giác đồng dạng; ba trường hợp đồng dạng; đồng dạng của tam giác vuông; thứ tự tương ứng và tính độ dài.",
+          "roadmap": [
+            {
+              "topic_id": "17-thales-dong-dang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "nhan-biet-dong-dang",
+            "dong-dang-gg",
+            "dong-dang-cgc",
+            "dong-dang-ccc",
+            "thu-tu-tuong-ung",
+            "tinh-do-dai-dong-dang"
+          ],
+          "historical_existing_refs": [
+            "nhan-biet-dong-dang",
+            "dong-dang-gg",
+            "dong-dang-cgc",
+            "dong-dang-ccc",
+            "thu-tu-tuong-ung",
+            "tinh-do-dai-dong-dang"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "nhan-biet-dong-dang",
+            "dong-dang-gg",
+            "dong-dang-cgc",
+            "dong-dang-ccc",
+            "thu-tu-tuong-ung",
+            "tinh-do-dai-dong-dang"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "thales-thuan",
+            "thales-dao",
+            "ti-le-doan-thang",
+            "tam-giac-bang-nhau"
+          ],
+          "downstream": [
+            "he-thuc-canh",
+            "he-thuc-duong-cao",
+            "song-song-dong-dang",
+            "hinh-hoc-tong-hop"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 8,
+          "chapter": 9,
+          "chapter_title": "Tam giác đồng dạng",
+          "lesson_ref": "Bài 35",
+          "curriculum_summary": "Định lí Pythagore thuận và đảo, tính độ dài trong tam giác vuông.",
+          "roadmap": [
+            {
+              "topic_id": "18-he-thuc-luong",
+              "relation": "PRIMARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "pythagore",
+            "pythagore-dao",
+            "canh-huyen"
+          ],
+          "historical_existing_refs": [
+            "pythagore",
+            "pythagore-dao",
+            "canh-huyen"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "pythagore",
+            "pythagore-dao",
+            "canh-huyen"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "binh-phuong",
+            "can-bac-hai-so-hoc",
+            "tam-giac-vuong"
+          ],
+          "downstream": [
+            "he-thuc-canh",
+            "he-thuc-duong-cao",
+            "sin",
+            "cos",
+            "tan",
+            "chieu-cao-khoang-cach"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 8,
+          "chapter": 9,
+          "chapter_title": "Tam giác đồng dạng",
+          "lesson_ref": "Bài 37",
+          "curriculum_summary": "Nhận biết và mô tả hình đồng dạng ở mức KNTT lớp 8.",
+          "roadmap": [
+            {
+              "topic_id": "17-thales-dong-dang",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "SECONDARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "nhan-biet-dong-dang",
+            "hinh-dong-dang"
+          ],
+          "historical_existing_refs": [
+            "nhan-biet-dong-dang"
+          ],
+          "historical_proposed_refs": [
+            "hinh-dong-dang"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "nhan-biet-dong-dang",
+            "hinh-dong-dang"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "tam-giac-dong-dang",
+            "ti-so-doan-thang"
+          ],
+          "downstream": [
+            "ti-so-chu-vi",
+            "ti-so-dien-tich",
+            "mo-hinh-hinh-hoc"
+          ],
+          "exclusions": []
+        },
+        {
+          "grade": 8,
+          "chapter": 10,
+          "chapter_title": "Một số hình khối trong thực tiễn",
+          "lesson_ref": "Bài 38-39",
+          "curriculum_summary": "Hình chóp tam giác đều, hình chóp tứ giác đều; nhận biết yếu tố hình; diện tích xung quanh và thể tích.",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "historical_skill_refs": [
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-chop-deu",
+            "dien-tich-xung-quanh-hinh-chop",
+            "the-tich-hinh-chop"
+          ],
+          "historical_existing_refs": [
+            "dien-tich-day",
+            "doi-don-vi-do-luong"
+          ],
+          "historical_proposed_refs": [
+            "nhan-biet-hinh-chop-deu",
+            "dien-tich-xung-quanh-hinh-chop",
+            "the-tich-hinh-chop"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-chop-deu",
+            "dien-tich-xung-quanh-hinh-chop",
+            "the-tich-hinh-chop"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [
+            "hinh-lang-tru",
+            "dien-tich-hinh-phang",
+            "pythagore"
+          ],
+          "downstream": [
+            "hinh-hoc-do-luong",
+            "bai-toan-tong-hop",
+            "hinh-tru-non-cau"
+          ],
+          "exclusions": []
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "source_map": {
+        "path": "docs/assets/data/curriculum/kntt-grade9-map.json",
+        "blob_sha": "926ac6ff69e07e61448633bc107aaeefc303d1e9",
+        "status": "reviewed",
+        "source_task": "KNTT-MAP-G9-001"
+      },
+      "row_count": 10,
+      "chapter_count": 10,
+      "unique_skill_refs": 100,
+      "unique_current_matches": 96,
+      "unique_unresolved_refs": 4,
+      "historical_proposed_count": 27,
+      "historical_proposed_now_current": [
+        "bat-dang-thuc",
+        "tinh-chat-thu-tu-phep-cong",
+        "tinh-chat-thu-tu-phep-nhan",
+        "can-bac-ba",
+        "cot",
+        "cung-va-day",
+        "do-dai-cung",
+        "dien-tich-quat-tron",
+        "dien-tich-vanh-khuyen",
+        "vi-tri-tuong-doi-duong-thang-duong-tron",
+        "vi-tri-tuong-doi-hai-duong-tron",
+        "duong-tron-ngoai-tiep-tam-giac",
+        "duong-tron-noi-tiep-tam-giac",
+        "da-giac-deu",
+        "nhan-biet-hinh-tru",
+        "dien-tich-xung-quanh-hinh-tru",
+        "the-tich-hinh-tru",
+        "nhan-biet-hinh-non",
+        "dien-tich-xung-quanh-hinh-non",
+        "the-tich-hinh-non",
+        "nhan-biet-hinh-cau",
+        "dien-tich-mat-cau",
+        "the-tich-hinh-cau"
+      ],
+      "historical_proposed_still_unresolved": [
+        "bang-tan-so-tuong-doi",
+        "bieu-do-tan-so",
+        "bieu-do-tan-so-tuong-doi",
+        "bang-tan-so-ghep-nhom"
+      ],
+      "coverage_status_counts": {
+        "CURRENT_MAPPED": 7,
+        "CURRENT_MAPPED_ITEM_REVIEW": 2,
+        "PARTIAL_RECONCILE": 1
+      },
+      "rows": [
+        {
+          "grade": 9,
+          "chapter": 1,
+          "chapter_title": "Phương trình và hệ hai phương trình bậc nhất hai ẩn",
+          "lesson_ref": null,
+          "curriculum_summary": "Phương trình và hệ hai phương trình bậc nhất hai ẩn",
+          "roadmap": [
+            {
+              "topic_id": "09-he-phuong-trinh",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            }
+          ],
+          "historical_skill_refs": [
+            "nghiem-pt-hai-an",
+            "nghiem-he",
+            "so-nghiem-he",
+            "y-nghia-hinh-hoc",
+            "giai-he-the",
+            "giai-he-cong",
+            "chon-phuong-phap",
+            "bien-doi-truoc-giai",
+            "kiem-tra-nghiem-he",
+            "lap-he-bai-toan",
+            "bai-toan-so",
+            "chuyen-dong-he",
+            "nang-suat-he"
+          ],
+          "historical_existing_refs": [
+            "nghiem-pt-hai-an",
+            "nghiem-he",
+            "so-nghiem-he",
+            "y-nghia-hinh-hoc",
+            "giai-he-the",
+            "giai-he-cong",
+            "chon-phuong-phap",
+            "bien-doi-truoc-giai",
+            "kiem-tra-nghiem-he",
+            "lap-he-bai-toan",
+            "bai-toan-so",
+            "chuyen-dong-he",
+            "nang-suat-he"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "nghiem-pt-hai-an",
+            "nghiem-he",
+            "so-nghiem-he",
+            "y-nghia-hinh-hoc",
+            "giai-he-the",
+            "giai-he-cong",
+            "chon-phuong-phap",
+            "bien-doi-truoc-giai",
+            "kiem-tra-nghiem-he",
+            "lap-he-bai-toan",
+            "bai-toan-so",
+            "chuyen-dong-he",
+            "nang-suat-he"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": [
+            "tham-so-he"
+          ]
+        },
+        {
+          "grade": 9,
+          "chapter": 2,
+          "chapter_title": "Phương trình và bất phương trình bậc nhất một ẩn",
+          "lesson_ref": null,
+          "curriculum_summary": "Phương trình và bất phương trình bậc nhất một ẩn",
+          "roadmap": [
+            {
+              "topic_id": "08-phuong-trinh-bat-phuong-trinh",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            }
+          ],
+          "historical_skill_refs": [
+            "pt-tich",
+            "dkxd-phuong-trinh-mau",
+            "khu-mau-phuong-trinh",
+            "doi-chieu-nghiem",
+            "bpt-bac-nhat",
+            "doi-chieu-bpt",
+            "bieu-dien-tap-nghiem",
+            "bat-dang-thuc",
+            "tinh-chat-thu-tu-phep-cong",
+            "tinh-chat-thu-tu-phep-nhan"
+          ],
+          "historical_existing_refs": [
+            "pt-tich",
+            "dkxd-phuong-trinh-mau",
+            "khu-mau-phuong-trinh",
+            "doi-chieu-nghiem",
+            "bpt-bac-nhat",
+            "doi-chieu-bpt",
+            "bieu-dien-tap-nghiem"
+          ],
+          "historical_proposed_refs": [
+            "bat-dang-thuc",
+            "tinh-chat-thu-tu-phep-cong",
+            "tinh-chat-thu-tu-phep-nhan"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "pt-tich",
+            "dkxd-phuong-trinh-mau",
+            "khu-mau-phuong-trinh",
+            "doi-chieu-nghiem",
+            "bpt-bac-nhat",
+            "doi-chieu-bpt",
+            "bieu-dien-tap-nghiem",
+            "bat-dang-thuc",
+            "tinh-chat-thu-tu-phep-cong",
+            "tinh-chat-thu-tu-phep-nhan"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": [
+            "tham-so-co-ban",
+            "giao-tap-nghiem"
+          ]
+        },
+        {
+          "grade": 9,
+          "chapter": 3,
+          "chapter_title": "Căn bậc hai và căn bậc ba",
+          "lesson_ref": null,
+          "curriculum_summary": "Căn bậc hai và căn bậc ba",
+          "roadmap": [
+            {
+              "topic_id": "11-can-thuc",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            }
+          ],
+          "historical_skill_refs": [
+            "can-bac-hai-so-hoc",
+            "dkxd-can",
+            "can-binh-phuong",
+            "khai-phuong-tich",
+            "khai-phuong-thuong",
+            "dua-thua-so-ra",
+            "dua-thua-so-vao",
+            "can-dong-dang",
+            "nhan-chia-can",
+            "truc-can-mau-don",
+            "truc-can-lien-hop",
+            "can-bac-ba"
+          ],
+          "historical_existing_refs": [
+            "can-bac-hai-so-hoc",
+            "dkxd-can",
+            "can-binh-phuong",
+            "khai-phuong-tich",
+            "khai-phuong-thuong",
+            "dua-thua-so-ra",
+            "dua-thua-so-vao",
+            "can-dong-dang",
+            "nhan-chia-can",
+            "truc-can-mau-don",
+            "truc-can-lien-hop"
+          ],
+          "historical_proposed_refs": [
+            "can-bac-ba"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "can-bac-hai-so-hoc",
+            "dkxd-can",
+            "can-binh-phuong",
+            "khai-phuong-tich",
+            "khai-phuong-thuong",
+            "dua-thua-so-ra",
+            "dua-thua-so-vao",
+            "can-dong-dang",
+            "nhan-chia-can",
+            "truc-can-mau-don",
+            "truc-can-lien-hop",
+            "can-bac-ba"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 9,
+          "chapter": 4,
+          "chapter_title": "Hệ thức lượng trong tam giác vuông",
+          "lesson_ref": null,
+          "curriculum_summary": "Hệ thức lượng trong tam giác vuông",
+          "roadmap": [
+            {
+              "topic_id": "18-he-thuc-luong",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            }
+          ],
+          "historical_skill_refs": [
+            "sin",
+            "cos",
+            "tan",
+            "tim-canh-luong-giac",
+            "tim-goc-luong-giac",
+            "goc-nang-ha",
+            "chieu-cao-khoang-cach",
+            "cot"
+          ],
+          "historical_existing_refs": [
+            "sin",
+            "cos",
+            "tan",
+            "tim-canh-luong-giac",
+            "tim-goc-luong-giac",
+            "goc-nang-ha",
+            "chieu-cao-khoang-cach"
+          ],
+          "historical_proposed_refs": [
+            "cot"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "sin",
+            "cos",
+            "tan",
+            "tim-canh-luong-giac",
+            "tim-goc-luong-giac",
+            "goc-nang-ha",
+            "chieu-cao-khoang-cach",
+            "cot"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 9,
+          "chapter": 5,
+          "chapter_title": "Đường tròn",
+          "lesson_ref": null,
+          "curriculum_summary": "Đường tròn",
+          "roadmap": [
+            {
+              "topic_id": "19-duong-tron",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            }
+          ],
+          "historical_skill_refs": [
+            "day-va-tam",
+            "do-dai-duong-tron",
+            "cung-va-day",
+            "do-dai-cung",
+            "dien-tich-quat-tron",
+            "dien-tich-vanh-khuyen",
+            "vi-tri-tuong-doi-duong-thang-duong-tron",
+            "vi-tri-tuong-doi-hai-duong-tron"
+          ],
+          "historical_existing_refs": [
+            "day-va-tam",
+            "do-dai-duong-tron"
+          ],
+          "historical_proposed_refs": [
+            "cung-va-day",
+            "do-dai-cung",
+            "dien-tich-quat-tron",
+            "dien-tich-vanh-khuyen",
+            "vi-tri-tuong-doi-duong-thang-duong-tron",
+            "vi-tri-tuong-doi-hai-duong-tron"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "day-va-tam",
+            "do-dai-duong-tron",
+            "cung-va-day",
+            "do-dai-cung",
+            "dien-tich-quat-tron",
+            "dien-tich-vanh-khuyen",
+            "vi-tri-tuong-doi-duong-thang-duong-tron",
+            "vi-tri-tuong-doi-hai-duong-tron"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 9,
+          "chapter": 6,
+          "chapter_title": "Hàm số y=ax² và phương trình bậc hai",
+          "lesson_ref": null,
+          "curriculum_summary": "Hàm số y=ax² và phương trình bậc hai",
+          "roadmap": [
+            {
+              "topic_id": "10-ham-so-do-thi",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            },
+            {
+              "topic_id": "12-phuong-trinh-bac-hai-viete",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            }
+          ],
+          "historical_skill_refs": [
+            "ham-y-ax2",
+            "doi-xung-parabol",
+            "diem-thuoc-parabol",
+            "nhan-dang-pt-bac-hai",
+            "he-so-abc",
+            "tinh-delta",
+            "so-nghiem-delta",
+            "cong-thuc-nghiem",
+            "delta-phay",
+            "giai-pt-bac-hai",
+            "nham-nghiem",
+            "tong-tich-nghiem",
+            "lap-pt-tu-nghiem",
+            "bieu-thuc-doi-xung",
+            "dau-nghiem",
+            "lien-he-do-thi"
+          ],
+          "historical_existing_refs": [
+            "ham-y-ax2",
+            "doi-xung-parabol",
+            "diem-thuoc-parabol",
+            "nhan-dang-pt-bac-hai",
+            "he-so-abc",
+            "tinh-delta",
+            "so-nghiem-delta",
+            "cong-thuc-nghiem",
+            "delta-phay",
+            "giai-pt-bac-hai",
+            "nham-nghiem",
+            "tong-tich-nghiem",
+            "lap-pt-tu-nghiem"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [
+            "bieu-thuc-doi-xung",
+            "dau-nghiem",
+            "lien-he-do-thi"
+          ],
+          "current_skill_matches": [
+            "ham-y-ax2",
+            "doi-xung-parabol",
+            "diem-thuoc-parabol",
+            "nhan-dang-pt-bac-hai",
+            "he-so-abc",
+            "tinh-delta",
+            "so-nghiem-delta",
+            "cong-thuc-nghiem",
+            "delta-phay",
+            "giai-pt-bac-hai",
+            "nham-nghiem",
+            "tong-tich-nghiem",
+            "lap-pt-tu-nghiem",
+            "bieu-thuc-doi-xung",
+            "dau-nghiem",
+            "lien-he-do-thi"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED_ITEM_REVIEW",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": [
+            "tham-so-so-nghiem"
+          ]
+        },
+        {
+          "grade": 9,
+          "chapter": 7,
+          "chapter_title": "Tần số và tần số tương đối",
+          "lesson_ref": null,
+          "curriculum_summary": "Tần số và tần số tương đối",
+          "roadmap": [
+            {
+              "topic_id": "21-thong-ke",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            }
+          ],
+          "historical_skill_refs": [
+            "bang-tan-so",
+            "tan-suat",
+            "du-lieu-ghep-nhom",
+            "bang-tan-so-tuong-doi",
+            "bieu-do-tan-so",
+            "bieu-do-tan-so-tuong-doi",
+            "bang-tan-so-ghep-nhom"
+          ],
+          "historical_existing_refs": [
+            "bang-tan-so",
+            "tan-suat",
+            "du-lieu-ghep-nhom"
+          ],
+          "historical_proposed_refs": [
+            "bang-tan-so-tuong-doi",
+            "bieu-do-tan-so",
+            "bieu-do-tan-so-tuong-doi",
+            "bang-tan-so-ghep-nhom"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "bang-tan-so",
+            "tan-suat",
+            "du-lieu-ghep-nhom"
+          ],
+          "unresolved_skill_refs": [
+            "bang-tan-so-tuong-doi",
+            "bieu-do-tan-so",
+            "bieu-do-tan-so-tuong-doi",
+            "bang-tan-so-ghep-nhom"
+          ],
+          "coverage_status": "PARTIAL_RECONCILE",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 9,
+          "chapter": 8,
+          "chapter_title": "Xác suất của biến cố trong một số mô hình xác suất đơn giản",
+          "lesson_ref": null,
+          "curriculum_summary": "Xác suất của biến cố trong một số mô hình xác suất đơn giản",
+          "roadmap": [
+            {
+              "topic_id": "23-xac-suat",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            }
+          ],
+          "historical_skill_refs": [
+            "phep-thu-ngau-nhien",
+            "khong-gian-mau",
+            "bien-co",
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat",
+            "dong-xu-nhieu-lan",
+            "xuc-xac-hai-lan",
+            "so-do-cay",
+            "nhieu-buoc-doc-lap",
+            "khong-hoan-lai"
+          ],
+          "historical_existing_refs": [
+            "phep-thu-ngau-nhien",
+            "khong-gian-mau",
+            "bien-co",
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat"
+          ],
+          "historical_proposed_refs": [],
+          "explicit_item_review_refs": [
+            "dong-xu-nhieu-lan",
+            "xuc-xac-hai-lan",
+            "so-do-cay",
+            "nhieu-buoc-doc-lap",
+            "khong-hoan-lai"
+          ],
+          "current_skill_matches": [
+            "phep-thu-ngau-nhien",
+            "khong-gian-mau",
+            "bien-co",
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat",
+            "dong-xu-nhieu-lan",
+            "xuc-xac-hai-lan",
+            "so-do-cay",
+            "nhieu-buoc-doc-lap",
+            "khong-hoan-lai"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED_ITEM_REVIEW",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        },
+        {
+          "grade": 9,
+          "chapter": 9,
+          "chapter_title": "Đường tròn ngoại tiếp và đường tròn nội tiếp",
+          "lesson_ref": null,
+          "curriculum_summary": "Đường tròn ngoại tiếp và đường tròn nội tiếp",
+          "roadmap": [
+            {
+              "topic_id": "19-duong-tron",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            }
+          ],
+          "historical_skill_refs": [
+            "goc-noi-tiep",
+            "tu-giac-noi-tiep",
+            "dau-hieu-noi-tiep",
+            "duong-tron-ngoai-tiep-tam-giac",
+            "duong-tron-noi-tiep-tam-giac",
+            "da-giac-deu"
+          ],
+          "historical_existing_refs": [
+            "goc-noi-tiep",
+            "tu-giac-noi-tiep",
+            "dau-hieu-noi-tiep"
+          ],
+          "historical_proposed_refs": [
+            "duong-tron-ngoai-tiep-tam-giac",
+            "duong-tron-noi-tiep-tam-giac",
+            "da-giac-deu"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "goc-noi-tiep",
+            "tu-giac-noi-tiep",
+            "dau-hieu-noi-tiep",
+            "duong-tron-ngoai-tiep-tam-giac",
+            "duong-tron-noi-tiep-tam-giac",
+            "da-giac-deu"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": [
+            "hai-day-cat-nhau",
+            "tiep-tuyen-cat-tuyen"
+          ]
+        },
+        {
+          "grade": 9,
+          "chapter": 10,
+          "chapter_title": "Một số hình khối trong thực tiễn",
+          "lesson_ref": null,
+          "curriculum_summary": "Một số hình khối trong thực tiễn",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "PRIMARY_OR_UNSPECIFIED"
+            }
+          ],
+          "historical_skill_refs": [
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-tru",
+            "dien-tich-xung-quanh-hinh-tru",
+            "the-tich-hinh-tru",
+            "nhan-biet-hinh-non",
+            "dien-tich-xung-quanh-hinh-non",
+            "the-tich-hinh-non",
+            "nhan-biet-hinh-cau",
+            "dien-tich-mat-cau",
+            "the-tich-hinh-cau"
+          ],
+          "historical_existing_refs": [
+            "doi-don-vi-do-luong"
+          ],
+          "historical_proposed_refs": [
+            "nhan-biet-hinh-tru",
+            "dien-tich-xung-quanh-hinh-tru",
+            "the-tich-hinh-tru",
+            "nhan-biet-hinh-non",
+            "dien-tich-xung-quanh-hinh-non",
+            "the-tich-hinh-non",
+            "nhan-biet-hinh-cau",
+            "dien-tich-mat-cau",
+            "the-tich-hinh-cau"
+          ],
+          "explicit_item_review_refs": [],
+          "current_skill_matches": [
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-tru",
+            "dien-tich-xung-quanh-hinh-tru",
+            "the-tich-hinh-tru",
+            "nhan-biet-hinh-non",
+            "dien-tich-xung-quanh-hinh-non",
+            "the-tich-hinh-non",
+            "nhan-biet-hinh-cau",
+            "dien-tich-mat-cau",
+            "the-tich-hinh-cau"
+          ],
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
+          "upstream": [],
+          "downstream": [],
+          "exclusions": []
+        }
+      ]
+    }
+  ],
+  "global_summary": {
+    "total_rows": 78,
+    "status_counts": {
+      "RECONCILE_REQUIRED": 13,
+      "CURRENT_MAPPED": 48,
+      "PARTIAL_RECONCILE": 15,
+      "CURRENT_MAPPED_ITEM_REVIEW": 2
+    },
+    "unresolved_refs_by_grade": {
+      "6": 35,
+      "7": 11,
+      "8": 3,
+      "9": 4
+    },
+    "note": "Unresolved refs are reconciliation candidates. They must be separated into legacy-ID aliases vs genuine curriculum coverage gaps before learner-facing Course Map expansion."
+  }
+}
