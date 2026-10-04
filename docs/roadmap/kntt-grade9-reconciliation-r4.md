@@ -1,43 +1,83 @@
 # KNTT Grade 9 — Reconciliation R4
 
 **Date:** 2026-10-04  
-**State:** DRAFT · INDEPENDENT REVIEW REQUIRED · NO RUNTIME CHANGE  
-**Input:** final 4 Grade-9 historical exact-ID mismatches
+**State:** RECONCILED · NOTEBOOKLM PASS · LAYER CORRECTED · NO RUNTIME CHANGE  
+**Review clearance:** `G9_R4_RECONCILIATION_REVIEW_COMPLETE`
 
-## Why R4 requires review
+## 1. Final result
 
-The four remaining refs are all in Grade-9 statistics, but the issue is not just naming.
+Grade 9 began with the final **4 historical exact-ID mismatches** in the KNTT Coverage Matrix.
 
-Current Taxonomy v2 classifies:
-- `STAT-FREQUENCY` as **Core-Support**;
-- `STAT-ADVANCED-DATA` as **Entrance10**.
+After independent review:
 
-The current Grade-9 KNTT map places **Tần số và tần số tương đối** in Chapter 7 and already lists `bang-tan-so`, `tan-suat`, and `du-lieu-ghep-nhom`.
+- **2 CANONICAL_SKILL**
+- **2 CANONICAL_FAMILY**
+- **0 new skills**
+- **0 new families**
+- **0 remaining review cases**
+- **0 remaining gap candidates**
 
-Therefore R4 must review both:
-1. identity/granularity of the four historical refs; and
-2. whether the current family/skill layers conflict with S1 Grade-9 Core placement.
+Final mappings:
 
-## Four review refs
+| Historical ref | Final resolution | Target |
+|---|---|---|
+| `bang-tan-so-tuong-doi` | CANONICAL_SKILL | `tan-suat` |
+| `bieu-do-tan-so` | CANONICAL_FAMILY | `STAT-REPRESENT` |
+| `bieu-do-tan-so-tuong-doi` | CANONICAL_FAMILY | `STAT-REPRESENT` |
+| `bang-tan-so-ghep-nhom` | CANONICAL_SKILL | `du-lieu-ghep-nhom` |
 
-| Historical ref | Current candidates |
-|---|---|
-| `bang-tan-so-tuong-doi` | `tan-suat`, `STAT-FREQUENCY` |
-| `bieu-do-tan-so` | `STAT-REPRESENT`, `STAT-CHART-READ` |
-| `bieu-do-tan-so-tuong-doi` | `STAT-REPRESENT`, `STAT-FREQUENCY` |
-| `bang-tan-so-ghep-nhom` | `du-lieu-ghep-nhom`, `STAT-ADVANCED-DATA`, `STAT-FREQUENCY` |
+## 2. Layer audit
 
-## Protected boundary
+NotebookLM also reviewed two taxonomy-layer conflicts against S1 Grade-9 KNTT:
 
-No skill/family creation, rename, layer change, runtime activation, history migration, regrade, Mastery/Readiness change, or learner-facing change occurs before independent review.
+| Family | Before | After |
+|---|---|---|
+| `STAT-FREQUENCY` | Core-Support | **KNTT-Core** |
+| `STAT-ADVANCED-DATA` | Entrance10 | **KNTT-Core** |
 
-## Next gate
+This is a curriculum-layer correction only. No canonical identity is created or renamed.
 
-NotebookLM review using:
-- Review Rules v1.2;
-- Master Plan v1.2.1;
-- SGK Toán 9 tập một;
-- SGK Toán 9 tập hai;
-- packet `MATH-KNTT-G9-RECON-R4-20261004`.
+## 3. Taxonomy counts after correction
 
-This is the final grade-level reconciliation gate before the 6–9 Matrix can be declared semantically closed.
+- KNTT-Core: **100**
+- Entrance10: **19**
+- Specialized-Challenge: **4**
+- Core-Support: **5**
+- THPT-Bridge: **3**
+
+Total families remain **131**.
+
+## 4. Full Matrix closure
+
+With R4 complete, all four grades are semantically reconciled:
+
+- Grade 6: `RECONCILED_REVIEWED_R1`
+- Grade 7: `RECONCILED_REVIEWED_R2`
+- Grade 8: `RECONCILED_R3_NO_NEW_IDENTITY`
+- Grade 9: `RECONCILED_REVIEWED_R4`
+
+The Coverage Matrix intentionally preserves raw historical exact-ID mismatches for traceability. They are **not curriculum gaps** after semantic reconciliation.
+
+## 5. Protected boundaries
+
+This release does not:
+- activate Taxonomy v2 runtime;
+- write or migrate learner history;
+- backfill/regrade attempts;
+- alter Mastery/Readiness semantics;
+- invent Practice/Readiness evidence;
+- change learner-facing UI.
+
+## 6. Next architecture step
+
+The KNTT identity/granularity reconciliation phase is closed.
+
+The next matrix phase should audit **coverage dimensions separately**:
+- SKILL_MAP
+- LEARN_CONTENT
+- MICRO_PRACTICE
+- PRACTICE_BANK
+- WRITTEN_LIBRARY
+- READINESS where authorized
+
+This prevents “skill ID exists” from being mistaken for “the learner has complete self-learning coverage.”
