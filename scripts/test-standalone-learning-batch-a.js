@@ -28,10 +28,10 @@ const specs=[
     "23",
     "23-xac-suat",
     "KNTT-Core",
-    "7b2659c78e298017d16ec52f2a45cd57d3d88191",
-    "ef8e6f27456591ddc42e606575abeb8d5fd28437",
+    "443169587e0ba663bc694122ee4a37e456793c70",
+    "022034fc2a4ad4991197fe60d5f936f8ecd4faca",
     "Core theo chặng",
-    17
+    20
   ],
   [
     "24",
@@ -75,7 +75,9 @@ for(const [num,slug,layer,wsSha,bankSha,label,expectedCount] of specs){
    ok(card.layer===layer&&card.teaching_copy?.key_idea&&card.teaching_copy?.worked_example?.solution&&card.teaching_copy?.misconception,"teaching and tier "+card.id);
    for(const id of card.micro_practice){
      const q=bank.get(id);
-     ok(q&&!ids.has(id)&&q.card_id===card.id&&q.tags?.layer===layer&&q.tags.skill.length===1&&card.skills.includes(q.tags.skill[0]),"stable question/skill association "+id);
+     const lessonLocal=q?.evidence_role==="LESSON_LOCAL_CORE_FORMATIVE";
+     const localDeclared=new Set((card.lesson_local_concepts||[]).map(x=>x.id));
+     ok(q&&!ids.has(id)&&q.card_id===card.id&&q.tags?.layer===layer&&(lessonLocal?(q.tags.skill.length===0&&q.gates_core===false&&q.lesson_local_targets?.every(t=>localDeclared.has(t))):(q.tags.skill.length===1&&card.skills.includes(q.tags.skill[0]))),"stable question/skill or lesson-local association "+id);
      ids.add(id);
    }
  }
