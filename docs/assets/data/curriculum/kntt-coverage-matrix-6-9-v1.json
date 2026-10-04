@@ -1035,8 +1035,8 @@
       "row_count": 21,
       "chapter_count": 10,
       "unique_skill_refs": 87,
-      "unique_current_matches": 76,
-      "unique_unresolved_refs": 11,
+      "unique_current_matches": 79,
+      "unique_unresolved_refs": 8,
       "historical_proposed_count": 22,
       "historical_proposed_now_current": [
         "nhan-dang-goc-dac-biet",
@@ -1096,12 +1096,11 @@
           "explicit_item_review_refs": [],
           "current_skill_matches": [
             "so-huu-ti-thap-phan",
-            "luy-thua"
-          ],
-          "unresolved_skill_refs": [
+            "luy-thua",
             "phep-tinh-so-huu-ti"
           ],
-          "coverage_status": "PARTIAL_RECONCILE",
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
           "upstream": [
             "phep-tinh-phan-so",
             "so-nguyen-phep-tinh",
@@ -1191,12 +1190,12 @@
           ],
           "explicit_item_review_refs": [],
           "current_skill_matches": [
-            "so-huu-ti-thap-phan"
+            "so-huu-ti-thap-phan",
+            "so-vo-ti"
           ],
           "unresolved_skill_refs": [
             "can-bac-hai",
             "so-thap-phan-vo-han-tuan-hoan",
-            "so-vo-ti",
             "tap-hop-so-thuc"
           ],
           "coverage_status": "PARTIAL_RECONCILE",
@@ -1783,12 +1782,11 @@
             "thu-gon-da-thuc",
             "cong-tru-da-thuc",
             "nhan-bieu-thuc",
-            "tinh-phan-phoi"
-          ],
-          "unresolved_skill_refs": [
+            "tinh-phan-phoi",
             "chia-da-thuc-mot-bien"
           ],
-          "coverage_status": "PARTIAL_RECONCILE",
+          "unresolved_skill_refs": [],
+          "coverage_status": "CURRENT_MAPPED",
           "upstream": [
             "da-thuc-mot-bien",
             "phep-tinh-so-huu-ti"
@@ -3724,8 +3722,8 @@
     "total_rows": 78,
     "status_counts": {
       "RECONCILE_REQUIRED": 13,
-      "CURRENT_MAPPED": 48,
-      "PARTIAL_RECONCILE": 15,
+      "CURRENT_MAPPED": 50,
+      "PARTIAL_RECONCILE": 13,
       "CURRENT_MAPPED_ITEM_REVIEW": 2
     },
     "unresolved_refs_by_grade": {
@@ -3734,7 +3732,7 @@
       "8": 3,
       "9": 4
     },
-    "note": "Exact-ID unresolved refs are reconciliation candidates, not confirmed curriculum gaps. Grades 6 and 7 are semantically reconciled; Grades 8-9 still require their own reconciliation passes.",
+    "note": "Exact-ID unresolved refs are reconciliation candidates, not confirmed curriculum gaps. Grades 6 and 7 have semantic reconciliation overlays; current-match counts reflect the latest durable taxonomy registry. Grades 8-9 still require reconciliation passes.",
     "semantic_reconciliation_status": {
       "6": "RECONCILED_REVIEWED_R1",
       "7": "RECONCILED_REVIEWED_R2"
