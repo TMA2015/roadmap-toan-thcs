@@ -1,5 +1,5 @@
 {
-  "version": "1.0.209",
+  "version": "1.0.210",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.209",
-      "review_verdict": "G6_DIMENSION_AUDIT_FAMILY_LEVEL_MICRO_QUEUE_CLOSED_NEXT_STATISTICS",
-      "review_notes": "Grade-6 dimension audit remains IN_PROGRESS. Bài 30 direct evidence and Bài 42/Bài 4–5/Bài 8/Bài 27 lesson-local/problem-type evidence are repaired/released. FAMILY_LEVEL_ONLY Micro rows are now 0. Next priority row is Bài 38–41 statistics, where Grade-6 Micro is still PARTIAL and the row also contains lesson-local representation concepts. Practice/Written/Readiness remain conservatively scoped.",
+      "context_version": "1.0.210",
+      "review_verdict": "G6_STATISTICS_CANDIDATE_NOTEBOOKLM_PENDING",
+      "review_notes": "Bài 30 direct evidence and Bài 42/Bài 4–5/Bài 8/Bài 27 lesson-local/problem-type evidence are released. FAMILY_LEVEL_ONLY Micro rows are 0. Bài 38–41 statistics candidate now proposes two missing direct Grade-6 skill items plus three local concept/representation items, but the audit must remain PARTIAL until NotebookLM clearance because the candidate spans four Grade-6 lessons and cross-grade shared cards.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1356,6 +1356,21 @@
         "deploy_run": 37208859308,
         "deploy_conclusion": "SUCCESS"
       }
+    },
+    {
+      "id": "MATH-KNTT-G6-STATISTICS-R1-001",
+      "title": "Grade 6 KNTT Bài 38–41 — statistics direct/local evidence repair R1",
+      "routing": "CONTENT_REPAIR+NOTEBOOKLM_ACADEMIC_REVIEW",
+      "status": "BLOCKED-ACADEMIC",
+      "context_version": "1.0.210",
+      "review_verdict": "CANDIDATE_READY_NOTEBOOKLM_PENDING",
+      "review_notes": "Bài 38–41 is the remaining Grade-6 priority Micro row. Candidate keeps existing direct Grade-6 evidence for doc-bieu-do-cot and nhan-xet-du-lieu, adds missing direct Micro STA21MICRO_016 for thu-thap-du-lieu and STA21MICRO_017 for doc-bieu-do-cot-kep, and adds lesson-local formative STA21MICRO_018–020 for du-lieu, bang-thong-ke and bieu-do-tranh. Local refs remain under STAT-DATA / STAT-REPRESENT / STAT-CHART-READ with tags.skill=[] and gates_core=false. Practice Bank remains 132 unchanged and existing STA21 Readiness remains AUTHORIZED_TOPIC_LEVEL with no change. Because this row aggregates four Grade-6 lessons, adds both direct canonical evidence and local representations, and modifies a cross-grade shared card, NotebookLM review is required before audit reconciliation or release.",
+      "artifacts": [
+        "review-packets/kntt-g6-statistics-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "docs/assets/data/curriculum/topic21-learning-workspace.json",
+        "docs/assets/data/practice/21-thong-ke-micro-v1.json",
+        "scripts/test-kntt-g6-statistics-r1.js"
+      ]
     }
   ]
 }
