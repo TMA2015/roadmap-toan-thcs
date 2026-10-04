@@ -1,5 +1,5 @@
 {
-  "version": "1.0.196",
+  "version": "1.0.197",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1209,6 +1209,22 @@
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
+      ]
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI30-ROUNDING-R1-001",
+      "title": "Grade 6 KNTT Bài 30 — rounding evidence repair R1",
+      "routing": "CONTENT_REPAIR+NOTEBOOKLM_ACADEMIC_REVIEW",
+      "status": "BLOCKED-ACADEMIC",
+      "context_version": "1.0.197",
+      "review_verdict": "CANDIDATE_READY_NOTEBOOKLM_PENDING",
+      "review_notes": "Candidate closes the Grade-6 dimension-audit gap for Bài 30: adds lam-tron-so to Learn card 5, rewrites teaching copy to explicitly teach rounding/estimation distinction, adds 3 Grade-6 micro items and 12 Practice items in new chunk 02-so-va-phep-tinh-v1-05.json. uoc-luong remains lesson-local; no new taxonomy identity. Candidate is not release-authorized until NotebookLM packet MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004 passes. No runtime/history/Mastery/Readiness change.",
+      "artifacts": [
+        "review-packets/kntt-g6-bai30-rounding-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-v1-05.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json"
       ]
     }
   ]
