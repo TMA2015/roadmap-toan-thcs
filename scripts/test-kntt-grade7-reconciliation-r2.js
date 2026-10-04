@@ -16,26 +16,40 @@ const r = json(path);
 
 assert.equal(r.schema, "kntt-grade7-reconciliation-r2");
 assert.equal(r.version, 1);
-assert.equal(r.status, "DRAFT_RECONCILIATION_REVIEW_PENDING_NO_RUNTIME_CHANGE");
+assert.equal(r.status, "RECONCILED_REVIEWED_NO_RUNTIME_CHANGE");
 assert.equal(r.summary.exact_id_unresolved_input_count, 11);
+assert.equal(r.summary.reconciled_count, 11);
 assert.equal(r.entries.length, 11);
 
 for (const lock of [
   r.source_locks.coverage_matrix,
   r.source_locks.grade7_map,
-  r.source_locks.taxonomy_v2,
   r.source_locks.knowledge_graph,
   ...r.source_locks.learning_workspaces
 ]) {
   assert.equal(gitBlobSha(read(lock.path)), lock.blob_sha, "source drift: " + lock.path);
 }
+assert.equal(
+  gitBlobSha(read(r.source_locks.taxonomy_v2.path)),
+  r.source_locks.taxonomy_v2.integrated_blob_sha,
+  "integrated taxonomy drift"
+);
+assert.match(r.source_locks.taxonomy_v2.review_input_blob_sha, /^[0-9a-f]{40}$/);
 
 const matrix = json(r.source_locks.coverage_matrix.path);
 const grade7 = matrix.grades.find(g => g.grade === 7);
 assert.ok(grade7, "Grade 7 matrix missing");
 const unresolved = [...new Set(grade7.rows.flatMap(row => row.unresolved_skill_refs || []))].sort();
 const reconciled = r.entries.map(e => e.historical_ref).sort();
-assert.deepEqual(reconciled, unresolved, "R2 must cover exactly the current 11 Grade-7 exact-ID mismatches");
+assert.deepEqual(reconciled, unresolved, "R2 must reconcile exactly the 11 original Grade-7 exact-ID mismatches");
+assert.equal(grade7.semantic_reconciliation?.status, "RECONCILED_REVIEWED_R2");
+assert.equal(grade7.semantic_reconciliation?.clearance, "G7_R2_RECONCILIATION_REVIEW_COMPLETE");
+assert.deepEqual(grade7.semantic_reconciliation?.new_canonical_skills, [
+  "phep-tinh-so-huu-ti",
+  "so-vo-ti",
+  "chia-da-thuc-mot-bien"
+]);
+assert.deepEqual(grade7.semantic_reconciliation?.remaining_review_queue, []);
 
 const tax = json(r.source_locks.taxonomy_v2.path);
 const kg = json(r.source_locks.knowledge_graph.path);
@@ -43,13 +57,23 @@ const familyIds = new Set((tax.families || []).map(f => f.family_id));
 const skillIds = new Set(Object.keys(kg.nodes || {}));
 for (const f of tax.families || []) for (const s of f.diagnostic_subskills || []) skillIds.add(s);
 
-const expectedReview = new Set([
-  "phep-tinh-so-huu-ti",
-  "quy-tac-chuyen-ve",
-  "so-vo-ti",
-  "tap-hop-so-thuc",
-  "chia-da-thuc-mot-bien"
-]);
+const fam = id => (tax.families || []).find(f => f.family_id === id);
+assert.ok(fam("NUM-FRACTION-OPS")?.diagnostic_subskills.includes("phep-tinh-so-huu-ti"));
+assert.ok(fam("NUM-SETS")?.diagnostic_subskills.includes("so-vo-ti"));
+assert.ok(fam("ALG-DIV-MONOMIAL")?.diagnostic_subskills.includes("chia-da-thuc-mot-bien"));
+
+assert.equal(tax.runtime_enabled, false);
+assert.equal(tax.learner_data_write_enabled, false);
+assert.equal(tax.history_backfill_enabled, false);
+assert.equal(tax.mastery_thresholds_enabled, false);
+assert.equal(tax.readiness_enabled, false);
+
+assert.equal(r.review?.packet_id, "MATH-KNTT-G7-RECON-R2-20261004");
+assert.equal(r.review?.result, "PASS");
+assert.equal(r.review?.expected_ids, 5);
+assert.equal(r.review?.reviewed_ids, 5);
+assert.equal(r.review?.clearance, "G7_R2_RECONCILIATION_REVIEW_COMPLETE");
+assert.ok(read(r.review.result_path).includes("CLEARANCE|G7_R2_RECONCILIATION_REVIEW_COMPLETE"));
 
 const seen = new Set();
 const counts = {};
@@ -63,26 +87,49 @@ for (const e of r.entries) {
     for (const s of e.canonical_skill_ids) assert.ok(skillIds.has(s), "unknown canonical skill: " + s);
     for (const f of e.canonical_family_ids) assert.ok(familyIds.has(f), "unknown canonical family: " + f);
   } else if (e.resolution === "CANONICAL_FAMILY") {
-    assert.equal(e.canonical_skill_ids.length, 0, "family mapping must not assert a skill");
+    assert.equal(e.canonical_skill_ids.length, 0);
     assert.ok(e.canonical_family_ids.length > 0, e.historical_ref + " needs canonical family");
     for (const f of e.canonical_family_ids) assert.ok(familyIds.has(f), "unknown canonical family: " + f);
-  } else if (e.resolution === "NEEDS_REVIEW") {
-    assert.ok(expectedReview.has(e.historical_ref), "unexpected review ref: " + e.historical_ref);
-    assert.equal(e.canonical_skill_ids.length, 0, "review item must not assert skill mapping");
-    assert.equal(e.canonical_family_ids.length, 0, "review item must not assert family mapping");
-    const c=e.review_candidates || {};
-    for (const s of c.canonical_skill_ids || []) assert.ok(skillIds.has(s), "unknown review skill: " + s);
-    for (const f of c.canonical_family_ids || []) assert.ok(familyIds.has(f), "unknown review family: " + f);
+  } else if (e.resolution === "LESSON_LOCAL") {
+    assert.equal(e.canonical_skill_ids.length, 0);
+    assert.equal(e.canonical_family_ids.length, 0);
   } else {
-    assert.fail("unknown resolution: " + e.resolution);
+    assert.fail("unclosed/unknown resolution: " + e.resolution);
   }
 }
-assert.deepEqual(new Set(r.summary.review_queue), expectedReview);
+
 assert.deepEqual(counts, r.summary.resolution_counts);
-assert.deepEqual(counts, { NEEDS_REVIEW: 5, CANONICAL_SKILL: 3, CANONICAL_FAMILY: 3 });
-assert.equal(r.summary.closed_without_new_identity, 6);
+assert.deepEqual(counts, {
+  CANONICAL_SKILL: 6,
+  LESSON_LOCAL: 1,
+  CANONICAL_FAMILY: 4
+});
+assert.deepEqual(r.summary.remaining_review_queue, []);
+assert.deepEqual(r.summary.remaining_gap_candidates, []);
+assert.equal(r.summary.new_canonical_skill_count, 3);
+assert.deepEqual(r.summary.new_canonical_skills, [
+  "phep-tinh-so-huu-ti",
+  "so-vo-ti",
+  "chia-da-thuc-mot-bien"
+]);
+assert.equal(r.summary.resolved_without_new_global_skill, 8);
 
-for (const [k,v] of Object.entries(r.protected_boundaries)) assert.equal(v, false, "protected boundary changed: " + k);
+assert.deepEqual(r.implementation_scope.canonical_skill_additions, [
+  "phep-tinh-so-huu-ti",
+  "so-vo-ti",
+  "chia-da-thuc-mot-bien"
+]);
+assert.deepEqual(r.implementation_scope.canonical_family_additions, []);
+assert.deepEqual(r.implementation_scope.canonical_family_renames, []);
+assert.deepEqual(r.implementation_scope.canonical_skill_renames, []);
+for (const key of [
+  "learner_facing_change",
+  "taxonomy_runtime_activation",
+  "mastery_readiness_change",
+  "learner_history_migration",
+  "item_regrade"
+]) assert.equal(r.implementation_scope[key], false, "protected implementation boundary changed: " + key);
 
-console.log("PASS: Grade-7 R2 covers exactly 11 historical exact-ID mismatches.");
-console.log("PASS: 3 skill + 3 family + 5 review; no runtime or new-identity authorization.");
+console.log("PASS: Grade-7 R2 semantically reconciles all 11 historical refs after NotebookLM 5/5 PASS.");
+console.log("PASS: 6 skill + 4 family + 1 lesson-local; exactly 3 reviewed canonical skills added.");
+console.log("PASS: runtime, learner history, Mastery and Readiness remain unchanged.");
