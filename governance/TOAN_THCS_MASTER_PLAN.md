@@ -1,7 +1,7 @@
 # TOÁN THCS — KẾ HOẠCH TỔNG THỂ VÀ QUY TẮC NGUỒN
 
 **Loại tài liệu:** Project Charter / Master Plan — tài liệu định hướng dài hạn dùng làm nguồn Project  
-**Phiên bản:** 1.1.1 — bổ sung định danh sản phẩm ngày 29/09/2026  
+**Phiên bản:** 1.2.0 — One Knowledge Graph · Two Learning Paths, ngày 04/10/2026  
 **Phạm vi:** Nền tảng tự học Toán từ THCS, thiết kế mở cho THPT, SAT/ACT Math và tư duy logic  
 **Tính chất:** Quy tắc và định hướng bền vững; **không phải nhật ký tiến độ, biên bản lỗi hay báo cáo phiên làm việc**.
 **Nguồn chuẩn trong repository:** governance/TOAN_THCS_MASTER_PLAN.md. Bản dùng trong NotebookLM hoặc Project phải ghi cùng phiên bản, không duy trì một bản Master Plan thứ hai khác nội dung.
@@ -30,7 +30,7 @@ Về dài hạn, cùng nền tảng có thể bổ sung Toán THPT lớp 10–12
 ### 1.2. Người dùng và tiêu chuẩn tự học
 
 - Học sinh có thể bắt đầu từ lớp 6, chưa biết cấu trúc toàn bộ chương trình; giao diện, thuật ngữ và hướng dẫn phải tự giải thích được.
-- Có đường vào theo **lớp/chương/bài đang học ở trường** và đường vào theo **25 chuyên đề**; hai đường dùng lại cùng nội dung và skill.
+- Có hai đường học chính: **Học theo lớp/KNTT** và **Học theo chuyên đề/25 Vertical Spine**. Đây là hai cách đi qua **cùng một Knowledge Graph**, không phải hai kho kiến thức độc lập.
 - Học sinh muốn học trước phải được cho biết điều kiện tiên quyết, không bị đẩy tới bài vượt nền.
 - Phụ huynh có thể thấy tiến trình và điểm cần hỗ trợ mà không cần hiểu cấu trúc dữ liệu kỹ thuật.
 - Học sinh tự chủ: hệ thống đề nghị ôn bù, không dùng một bài kiểm tra hay điểm số để khóa cứng quyền học tiếp.
@@ -41,7 +41,24 @@ Một học sinh phải trả lời được năm câu hỏi: **(1) Em đang h�
 
 ---
 
-## 2. Kiến trúc học thuật: một mạch kiến thức dọc
+## 2. Kiến trúc học thuật: một Knowledge Graph, hai đường học
+
+### 2.0. One Knowledge Graph — Two Learning Paths
+
+Hệ thống chỉ có **một mạng kiến thức và kỹ năng chuẩn**. Trục dọc 25 chuyên đề và đường học theo KNTT là **hai cách tổ chức trải nghiệm học** trên cùng mạng đó; không duy trì hai bộ skill, hai ngân hàng kiến thức hoặc hai chuẩn đánh giá song song.
+
+**Path A — Học theo lớp / KNTT Course Map**
+- Tổ chức theo **Lớp → Chương → Bài → Core Cards** để học sinh tìm đúng nội dung đang học ở trường.
+- Mục tiêu dài hạn là bao phủ các **mục tiêu kiến thức/kỹ năng chủ đạo KNTT lớp 6–9**, không sao chép SGK theo từng trang hay từng hoạt động.
+- Ưu tiên làm rõ **bản chất của bài học hiện tại**, dấu hiệu nhận biết, lỗi điển hình và luyện \`Base → Trap → Apply\`.
+- Dùng tốt cho học hằng ngày, ôn bài trên lớp, chuẩn bị kiểm tra và tìm lại phần nền gần nhất.
+
+**Path B — Học theo chuyên đề / Vertical Spine**
+- Tổ chức theo **25 chuyên đề xuyên lớp 6–9**, chú trọng tiến triển khái niệm, prerequisite, liên kết nhiều tầng và chuyển giao.
+- Ưu tiên bài tập có tính **liên kết, lựa chọn công cụ, phối hợp nhiều skill và truy nguyên điểm yếu**.
+- Dùng tốt cho củng cố nền, học trước có định hướng, ôn tổng hợp và chuẩn bị thi cuối cấp.
+
+Hai path có thể dùng chung một skill, một bài tập hoặc một ví dụ khi hợp lý. Khác biệt nằm ở **vai trò sư phạm và cách dẫn đường**, không phải cố chia toán học thành hai phần không giao nhau.
 
 ### 2.1. Vertical Spine
 
@@ -68,9 +85,20 @@ Không coi số thứ tự chuyên đề là thứ tự bắt buộc học tuy�
 
 **Độ khó của câu hỏi không đồng nghĩa với tầng chương trình.** Việc một dạng hay xuất hiện trong đề thi không làm nó trở thành yêu cầu bắt buộc của SGK. Khẳng định tần suất đề thi phải dựa trên tập đề cụ thể theo địa phương/năm.
 
-### 2.3. Mapping theo sách và lớp
+### 2.3. Mapping theo sách và lớp — KNTT Course Map
 
-Mapping KNTT 6–9 là chỉ mục để dẫn học sinh từ chương/bài trong SGK đến các thẻ kiến thức, kỹ năng và bài luyện phù hợp. Trong một chuyên đề dùng chung nhiều lớp, **không mặc định toàn bộ thẻ đều thuộc lớp đang chọn**. Khi thay đổi mapping phải kiểm tra nguồn SGK, ID và ranh giới Core/Support/Bridge.
+Mapping KNTT 6–9 là **đường học ngang đầy đủ theo lớp**, dẫn học sinh từ chương/bài trong SGK đến các thẻ kiến thức, kỹ năng và bài luyện phù hợp. Mục tiêu sản phẩm là để học sinh lớp 6, 7, 8 hoặc 9 có thể tìm được hầu hết **kiến thức chủ đạo đang học trên lớp** mà không cần biết trước cấu trúc 25 chuyên đề.
+
+Quy tắc:
+- Mỗi **skill** có một định danh học thuật chuẩn dùng chung; không tạo một skill KNTT khác chỉ vì nó xuất hiện trong Course Map.
+- **Card/Lesson ID** là định danh của đơn vị trình bày học; \`card_id\` không đồng nghĩa với \`skill_id\`.
+- Một bài KNTT có thể dùng nhiều skill từ một hoặc nhiều chuyên đề; một skill có thể xuất hiện ở nhiều bài/lớp nếu chương trình yêu cầu.
+- Kiến thức KNTT cần cho lớp học nhưng không phải trọng tâm của Vertical Spine vẫn được biểu diễn trong graph với vai trò hỗ trợ/local phù hợp; không làm phình 25 chuyên đề chỉ để đủ mapping.
+- Trong một chuyên đề dùng chung nhiều lớp, **không mặc định toàn bộ thẻ đều thuộc lớp đang chọn**.
+- Khi thay đổi mapping phải kiểm tra nguồn SGK/SBT, ID và ranh giới Core/Support/Bridge.
+- Không nhân bản nội dung chỉ để phục vụ hai path; ưu tiên reference/reuse và giữ một nguồn canonical cho skill/item.
+
+Khi mở rộng Course Map, duy trì **KNTT Coverage Matrix 6–9** ở mức: \`Lớp → Chương → Bài → skill → chuyên đề liên quan → trạng thái coverage\`. Matrix dùng để phát hiện phần thiếu, không phải danh sách learner-facing bắt buộc.
 
 ### 2.4. Knowledge Graph
 
@@ -83,6 +111,8 @@ Mapping KNTT 6–9 là chỉ mục để dẫn học sinh từ chương/bài tro
 - quan hệ ứng dụng/mở khóa/mở rộng khi phù hợp với schema.
 
 Chỉ kích hoạt quan hệ đủ tin cậy sau kiểm định. Không kết luận "vì A học trước B nên học sinh sai B là do yếu A". Đồ thị đề nghị cách học, không quyết định cứng số phận tiến độ của học sinh.
+
+**Graph có thể giàu bên trong nhưng phải nghèo trên giao diện.** Không hiển thị mọi cạnh quan hệ cho học sinh. Learner-facing mặc định chỉ ưu tiên những đường thật sự giúp hành động tiếp theo như **Cần biết trước / Nếu đang yếu, ôn lại / Học tiếp**; thêm liên kết khác chỉ khi có ích rõ ràng.
 
 ---
 
