@@ -9,6 +9,9 @@
 > CT08 P1-A is live, but Owner QA remains open due to UX/render/navigation/naming/Practice-room issues discovered after release. Do not start CT08 P1-B/P1-C until those architecture/UX issues are reconciled with v1.2.1.
 > **KNTT Coverage Matrix 6–9 v1 framework is now created.** It reconciles the four reviewed grade overlays against the current Taxonomy v2 + Knowledge Graph skill universe. Do not interpret unresolved refs as confirmed missing curriculum; Grade 6 especially contains legacy-ID/granularity noise. Next mapping task is explicit ID/family/gap reconciliation, starting Grade 6.
 
+> **KNTT Coverage Matrix PR #308 merged:** exact framework head `c573f0656e4439e1487a1627b1549abe51e9c529` passed full CI/browser QA and was squash-merged to main as `cc214f5be75ff1da490b177dce91cc5af5954223`.
+> **Grade 6 reconciliation R1 is now drafted on a separate governance branch.** 35 unresolved refs are classified as 16 canonical-skill matches, 12 canonical-family/lesson-local matches, 5 needs-review and 2 gap candidates (`lam-tron`, `uoc-luong`). Do not create new skills yet; independently review the 7 non-closed cases first.
+
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan canonical v1.2.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
