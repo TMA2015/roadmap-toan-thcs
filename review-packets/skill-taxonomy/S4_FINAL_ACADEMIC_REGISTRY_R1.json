@@ -1,0 +1,945 @@
+{
+  "schema": "skill-taxonomy-v2-s4-family-r1",
+  "status": "ACADEMICALLY_CLOSED_AFTER_FULL_BANK_ITEM_AUDITS",
+  "as_of": "2026-10-02",
+  "scope": {
+    "topics": [
+      "CT21",
+      "CT22",
+      "CT23",
+      "CT24",
+      "CT25"
+    ],
+    "practice_questions": 612,
+    "legacy_rows": 62,
+    "current_written_items": 6
+  },
+  "design": {
+    "proposed_new_family_count": 19,
+    "core_family_count": 7,
+    "support_family_count": 5,
+    "bridge_family_count": 3,
+    "optional_family_count": 4,
+    "reused_existing_family_mappings": 5,
+    "no_new_family_mappings": 12,
+    "runtime_enabled": false,
+    "item_level_audit_status": "612_OF_612_PASS_ZERO_REVISIONS"
+  },
+  "source_manifests": {
+    "CT21": {
+      "file": "21-thong-ke-v1.manifest.json",
+      "sha": "3d88c1ce48ac1129648980de3f0544e6024251b9",
+      "questions": 132
+    },
+    "CT22": {
+      "file": "22-dai-luong-dac-trung-v1.manifest.json",
+      "sha": "bb7c8f353100ae8b1a55b56cd103e8ec820d0d6c",
+      "questions": 120
+    },
+    "CT23": {
+      "file": "23-xac-suat-v1.manifest.json",
+      "sha": "7b936f2e5a01ce0937fc2cfd6ae391d4cbf741fb",
+      "questions": 120
+    },
+    "CT24": {
+      "file": "24-bai-toan-thuc-te-v1.manifest.json",
+      "sha": "52eb0407dd2ee8876e59ef77959fcac64d00379b",
+      "questions": 120
+    },
+    "CT25": {
+      "file": "25-tong-hop-on-thi-10-v1.manifest.json",
+      "sha": "b3e698e3cb3cffc6e42b2f180f70e4a458e070cf",
+      "questions": 120
+    }
+  },
+  "families": [
+    {
+      "family_id": "STAT-DATA",
+      "label_vi": "Dữ liệu và thu thập dữ liệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "du-lieu-phan-loai",
+        "thu-thap-du-lieu"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "STAT-QUALITY",
+      "label_vi": "Chất lượng dữ liệu và mẫu thiên lệch",
+      "layer": "Core-Support",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "kiem-tra-chat-luong",
+        "mau-thien-lech"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "STAT-FREQUENCY",
+      "label_vi": "Bảng tần số và tần suất",
+      "layer": "Core-Support",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "bang-tan-so",
+        "tan-suat"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "STAT-CHART-READ",
+      "label_vi": "Đọc và so sánh các biểu đồ",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "doc-bieu-do-cot",
+        "doc-bieu-do-doan-thang",
+        "doc-bieu-do-cot-kep",
+        "bieu-do-quat-tron"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "STAT-REPRESENT",
+      "label_vi": "Chọn và chuyển dạng biểu diễn dữ liệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "chon-bieu-do",
+        "chuyen-bang-bieu-do"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "STAT-INFER",
+      "label_vi": "Nhận xét và kết luận từ dữ liệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "nhan-xet-du-lieu"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "STAT-ADVANCED-DATA",
+      "label_vi": "Dữ liệu ghép nhóm và bẫy thang đo",
+      "layer": "Entrance10",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "du-lieu-ghep-nhom",
+        "don-vi-thang-do"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "STAT-CENTER",
+      "label_vi": "Các đại lượng xu thế trung tâm",
+      "layer": "THPT-Bridge",
+      "topics": [
+        "CT22"
+      ],
+      "diagnostic_subskills": [
+        "trung-binh-tho",
+        "trung-binh-tan-so",
+        "trung-vi",
+        "mot",
+        "nhieu-mot"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "STAT-SPREAD-OUTLIER",
+      "label_vi": "Khoảng biến thiên và giá trị ngoại lai",
+      "layer": "THPT-Bridge",
+      "topics": [
+        "CT22"
+      ],
+      "diagnostic_subskills": [
+        "khoang-bien-thien",
+        "ngoai-lai"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "STAT-COMPARE-MEASURE",
+      "label_vi": "Chọn đại lượng đại diện và so sánh dữ liệu",
+      "layer": "THPT-Bridge",
+      "topics": [
+        "CT22"
+      ],
+      "diagnostic_subskills": [
+        "so-sanh-trung-binh-trung-vi",
+        "chon-dai-luong",
+        "so-sanh-hai-bo"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "PROB-EVENT",
+      "label_vi": "Phép thử và biến cố",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "phep-thu-ngau-nhien",
+        "bien-co",
+        "bien-co-chac-chan-khong-the"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "PROB-CLASSICAL",
+      "label_vi": "Xác suất cổ điển và kiểm tra tính hợp lý",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "PROB-EXPERIMENTAL",
+      "label_vi": "Xác suất thực nghiệm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "xac-suat-thuc-nghiem"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "PROB-SPACE-SUPPORT",
+      "label_vi": "Không gian mẫu, biến cố đối và lặp phép thử",
+      "layer": "Core-Support",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "khong-gian-mau",
+        "bien-co-doi",
+        "dong-xu-nhieu-lan"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "PROB-MULTISTEP",
+      "label_vi": "Xác suất nhiều bước",
+      "layer": "Entrance10",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "xuc-xac-hai-lan",
+        "so-do-cay",
+        "nhieu-buoc-doc-lap",
+        "khong-hoan-lai"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "MODEL-SETUP",
+      "label_vi": "Đọc dữ kiện và chuẩn hóa đơn vị",
+      "layer": "Core-Support",
+      "topics": [
+        "CT24"
+      ],
+      "diagnostic_subskills": [
+        "doc-de-du-kien",
+        "doi-don-vi"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "MODEL-VALIDATE",
+      "label_vi": "Kiểm tra nghiệm, đơn vị và kết luận thực tế",
+      "layer": "Core-Support",
+      "topics": [
+        "CT24"
+      ],
+      "diagnostic_subskills": [
+        "kiem-tra-ket-luan"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "EXAM-STRATEGY",
+      "label_vi": "Nhận diện dạng bài và quản lý thời gian",
+      "layer": "Entrance10",
+      "topics": [
+        "CT25"
+      ],
+      "diagnostic_subskills": [
+        "nhan-dien-chuyen-de",
+        "quan-ly-thoi-gian"
+      ],
+      "runtime_enabled": false
+    },
+    {
+      "family_id": "EXAM-REVIEW",
+      "label_vi": "Phân loại lỗi và chữa đề",
+      "layer": "Entrance10",
+      "topics": [
+        "CT25"
+      ],
+      "diagnostic_subskills": [
+        "phan-loai-loi",
+        "checklist-chua-de"
+      ],
+      "runtime_enabled": false
+    }
+  ],
+  "legacy_mappings": [
+    {
+      "topic_id": "CT21",
+      "legacy_id": "du-lieu-phan-loai",
+      "label": "Dữ liệu và phân loại dữ liệu",
+      "family_id": "STAT-DATA",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "thu-thap-du-lieu",
+      "label": "Thu thập dữ liệu",
+      "family_id": "STAT-DATA",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "kiem-tra-chat-luong",
+      "label": "Kiểm tra chất lượng dữ liệu",
+      "family_id": "STAT-QUALITY",
+      "role": "SUPPORTING_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "mau-thien-lech",
+      "label": "Nhận biết mẫu thiên lệch",
+      "family_id": "STAT-QUALITY",
+      "role": "SUPPORTING_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "bang-tan-so",
+      "label": "Bảng tần số",
+      "family_id": "STAT-FREQUENCY",
+      "role": "ASSESSED_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "tan-suat",
+      "label": "Tần suất và phần trăm",
+      "family_id": "STAT-FREQUENCY",
+      "role": "ASSESSED_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "doc-bieu-do-cot",
+      "label": "Đọc biểu đồ cột",
+      "family_id": "STAT-CHART-READ",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "doc-bieu-do-doan-thang",
+      "label": "Đọc biểu đồ đoạn thẳng",
+      "family_id": "STAT-CHART-READ",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "chon-bieu-do",
+      "label": "Chọn dạng biểu diễn",
+      "family_id": "STAT-REPRESENT",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "chuyen-bang-bieu-do",
+      "label": "Chuyển đổi bảng – biểu đồ",
+      "family_id": "STAT-REPRESENT",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "nhan-xet-du-lieu",
+      "label": "Nhận xét và kết luận từ dữ liệu",
+      "family_id": "STAT-INFER",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "don-vi-thang-do",
+      "label": "Đơn vị và thang đo",
+      "family_id": "STAT-ADVANCED-DATA",
+      "role": "SUPPORTING_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "doc-bieu-do-cot-kep",
+      "label": "Đọc và so sánh biểu đồ cột kép",
+      "family_id": "STAT-CHART-READ",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "bieu-do-quat-tron",
+      "label": "Biểu đồ hình quạt tròn",
+      "family_id": "STAT-CHART-READ",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT21",
+      "legacy_id": "du-lieu-ghep-nhom",
+      "label": "Dữ liệu và tần số ghép nhóm",
+      "family_id": "STAT-ADVANCED-DATA",
+      "role": "ASSESSED_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "trung-binh-tho",
+      "label": "Số trung bình từ dữ liệu thô",
+      "family_id": "STAT-CENTER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "trung-binh-tan-so",
+      "label": "Số trung bình từ bảng tần số",
+      "family_id": "STAT-CENTER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "trung-vi",
+      "label": "Trung vị",
+      "family_id": "STAT-CENTER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "mot",
+      "label": "Mốt",
+      "family_id": "STAT-CENTER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "nhieu-mot",
+      "label": "Nhiều mốt và không có mốt nổi bật",
+      "family_id": "STAT-CENTER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "khoang-bien-thien",
+      "label": "Khoảng biến thiên",
+      "family_id": "STAT-SPREAD-OUTLIER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "ngoai-lai",
+      "label": "Ảnh hưởng của giá trị ngoại lai",
+      "family_id": "STAT-SPREAD-OUTLIER",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "so-sanh-trung-binh-trung-vi",
+      "label": "So sánh trung bình và trung vị",
+      "family_id": "STAT-COMPARE-MEASURE",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "chon-dai-luong",
+      "label": "Chọn đại lượng đại diện",
+      "family_id": "STAT-COMPARE-MEASURE",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT22",
+      "legacy_id": "so-sanh-hai-bo",
+      "label": "So sánh hai bộ dữ liệu",
+      "family_id": "STAT-COMPARE-MEASURE",
+      "role": "ASSESSED_SKILL",
+      "layer": "THPT-Bridge",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "phep-thu-ngau-nhien",
+      "label": "Phép thử ngẫu nhiên",
+      "family_id": "PROB-EVENT",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "khong-gian-mau",
+      "label": "Không gian mẫu",
+      "family_id": "PROB-SPACE-SUPPORT",
+      "role": "ASSESSED_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "bien-co",
+      "label": "Biến cố",
+      "family_id": "PROB-EVENT",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "bien-co-chac-chan-khong-the",
+      "label": "Biến cố chắc chắn và không thể",
+      "family_id": "PROB-EVENT",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "xac-suat-co-dien",
+      "label": "Xác suất cổ điển",
+      "family_id": "PROB-CLASSICAL",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "bien-co-doi",
+      "label": "Biến cố đối",
+      "family_id": "PROB-SPACE-SUPPORT",
+      "role": "ASSESSED_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "dong-xu-nhieu-lan",
+      "label": "Đồng xu nhiều lần",
+      "family_id": "PROB-SPACE-SUPPORT",
+      "role": "CONTEXT",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "xuc-xac-hai-lan",
+      "label": "Hai xúc xắc",
+      "family_id": "PROB-MULTISTEP",
+      "role": "CONTEXT",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "so-do-cay",
+      "label": "Sơ đồ cây",
+      "family_id": "PROB-MULTISTEP",
+      "role": "METHOD",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "nhieu-buoc-doc-lap",
+      "label": "Thí nghiệm nhiều bước độc lập",
+      "family_id": "PROB-MULTISTEP",
+      "role": "ASSESSED_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "khong-hoan-lai",
+      "label": "Rút không hoàn lại",
+      "family_id": "PROB-MULTISTEP",
+      "role": "ASSESSED_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "kiem-tra-xac-suat",
+      "label": "Kiểm tra tính hợp lý của xác suất",
+      "family_id": "PROB-CLASSICAL",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT23",
+      "legacy_id": "xac-suat-thuc-nghiem",
+      "label": "Xác suất thực nghiệm và tần số tương đối",
+      "family_id": "PROB-EXPERIMENTAL",
+      "role": "ASSESSED_SKILL",
+      "layer": "KNTT-Core",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "doc-de-du-kien",
+      "label": "Đọc đề và xác định đại lượng",
+      "family_id": "MODEL-SETUP",
+      "role": "ASSESSED_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "doi-don-vi",
+      "label": "Đổi và thống nhất đơn vị",
+      "family_id": "MODEL-SETUP",
+      "role": "SUPPORTING_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "chuyen-dong",
+      "label": "Bài toán chuyển động",
+      "family_id": null,
+      "role": "CONTEXT",
+      "layer": "Core-Support",
+      "source": "NO_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "nang-suat",
+      "label": "Bài toán năng suất",
+      "family_id": null,
+      "role": "CONTEXT",
+      "layer": "Core-Support",
+      "source": "NO_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "phan-tram",
+      "label": "Bài toán phần trăm",
+      "family_id": "NUM-PERCENT",
+      "role": "CROSS_TOPIC_REUSE",
+      "layer": "KNTT-Core",
+      "source": "REUSE_EXISTING_FAMILY"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "lap-phuong-trinh",
+      "label": "Lập phương trình thực tế",
+      "family_id": "EQ-MODEL",
+      "role": "CROSS_TOPIC_REUSE",
+      "layer": "KNTT-Core",
+      "source": "REUSE_EXISTING_FAMILY"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "lap-he",
+      "label": "Lập hệ phương trình thực tế",
+      "family_id": "SYS-MODEL",
+      "role": "CROSS_TOPIC_REUSE",
+      "layer": "KNTT-Core",
+      "source": "REUSE_EXISTING_FAMILY"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "hinh-hoc-do-luong",
+      "label": "Hình học và đo lường thực tế",
+      "family_id": null,
+      "role": "CONTEXT",
+      "layer": "Core-Support",
+      "source": "NO_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "luong-giac-thuc-te",
+      "label": "Lượng giác trong thực tế",
+      "family_id": "RIGHT-APPLICATION",
+      "role": "CROSS_TOPIC_REUSE",
+      "layer": "KNTT-Core",
+      "source": "REUSE_EXISTING_FAMILY"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "thong-ke-thuc-te",
+      "label": "Thống kê trong tình huống thực tế",
+      "family_id": null,
+      "role": "CONTEXT",
+      "layer": "Core-Support",
+      "source": "NO_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "xac-suat-thuc-te",
+      "label": "Xác suất trong tình huống thực tế",
+      "family_id": "PROB-EXPERIMENTAL",
+      "role": "CROSS_TOPIC_REUSE",
+      "layer": "KNTT-Core",
+      "source": "REUSE_EXISTING_FAMILY"
+    },
+    {
+      "topic_id": "CT24",
+      "legacy_id": "kiem-tra-ket-luan",
+      "label": "Kiểm tra nghiệm, đơn vị và kết luận",
+      "family_id": "MODEL-VALIDATE",
+      "role": "ASSESSED_SKILL",
+      "layer": "Core-Support",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "nhan-dien-chuyen-de",
+      "label": "Nhận diện chuyên đề và công cụ",
+      "family_id": "EXAM-STRATEGY",
+      "role": "METHOD",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-bieu-thuc-can",
+      "label": "Ôn biểu thức và căn thức",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-phuong-trinh",
+      "label": "Ôn phương trình và bất phương trình",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-he",
+      "label": "Ôn hệ phương trình",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-ham-so",
+      "label": "Ôn hàm số và đồ thị",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-hinh-hoc",
+      "label": "Ôn hình học trọng tâm",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-thong-ke",
+      "label": "Ôn thống kê",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-xac-suat",
+      "label": "Ôn xác suất",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "on-thi-mo-hinh-hoa",
+      "label": "Ôn bài toán thực tế",
+      "family_id": null,
+      "role": "CATEGORY",
+      "layer": "Entrance10",
+      "source": "NO_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "quan-ly-thoi-gian",
+      "label": "Quản lý thời gian làm bài",
+      "family_id": "EXAM-STRATEGY",
+      "role": "EXAM_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "phan-loai-loi",
+      "label": "Phân loại và sửa lỗi",
+      "family_id": "EXAM-REVIEW",
+      "role": "EXAM_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY"
+    },
+    {
+      "topic_id": "CT25",
+      "legacy_id": "checklist-chua-de",
+      "label": "Checklist chữa đề và kế hoạch ôn",
+      "family_id": "EXAM-REVIEW",
+      "role": "EXAM_SKILL",
+      "layer": "Entrance10",
+      "source": "S4_NEW_FAMILY"
+    }
+  ],
+  "proposed_written_gaps": [
+    {
+      "id": "S4-WR-CT21-BIAS-001",
+      "topic_id": "CT21",
+      "family_id": "STAT-QUALITY",
+      "layer": "Core-Support",
+      "problem_type": "Đánh giá cách thu thập dữ liệu và nhận diện thiên lệch",
+      "need": "WRITTEN_RECOMMENDED"
+    },
+    {
+      "id": "S4-WR-CT22-COMPARE-001",
+      "topic_id": "CT22",
+      "family_id": "STAT-COMPARE-MEASURE",
+      "layer": "THPT-Bridge",
+      "problem_type": "So sánh hai bộ dữ liệu và chọn đại lượng đại diện phù hợp",
+      "need": "WRITTEN_RECOMMENDED_NON_GATING"
+    },
+    {
+      "id": "S4-WR-CT23-TREE-001",
+      "topic_id": "CT23",
+      "family_id": "PROB-MULTISTEP",
+      "layer": "Entrance10",
+      "problem_type": "Lập sơ đồ cây và tính xác suất nhiều bước",
+      "need": "WRITTEN_REQUIRED_FOR_MULTI_STEP"
+    },
+    {
+      "id": "S4-WR-CT24-VALIDATE-001",
+      "topic_id": "CT24",
+      "family_id": "MODEL-VALIDATE",
+      "layer": "Core-Support",
+      "problem_type": "Mô hình hóa nhiều bước có kiểm tra điều kiện, đơn vị và kết luận",
+      "need": "WRITTEN_REQUIRED_FOR_FULL_MODELING"
+    }
+  ],
+  "explicit_boundaries": [
+    "CT22 is THPT-Bridge, non-gating for THCS Core.",
+    "CT24 is cross-topic Core-Support; reuse existing mathematics families instead of duplicating them.",
+    "CT25 academic review tags are CATEGORY labels, not new mastery families.",
+    "CT25 exam strategy/review skills are optional Entrance10 skills and never gate Core.",
+    "Real-exam frequency remains PENDING_OFFICIAL_CORPUS."
+  ],
+  "safety": {
+    "legacy_ids_unchanged": true,
+    "runtime_unchanged": true,
+    "no_history_backfill": true,
+    "full_bank_item_audits_required_before_final_s4_reconciliation": false,
+    "full_bank_item_audits_completed": true
+  },
+  "review_result": {
+    "reviewer": "NotebookLM",
+    "result": "PASS",
+    "family_coverage": "19/19",
+    "mapping_fixes": 0,
+    "written_gaps": "4/4 PASS",
+    "cross_checks": "4/4 PASS",
+    "architecture_checks": "12/12 PASS",
+    "authorization": "CLEARED_FOR_S4_ITEM_AUDITS",
+    "recorded_date": "2026-10-02",
+    "receipt": "review-packets/skill-taxonomy/S4_FAMILY_NOTEBOOKLM_R1_PASS_RECEIPT.md",
+    "full_bank_audit": {
+      "packet": "MATH-SKILL-S4-CT21-25-COMBINED-R1-20261002",
+      "result": "PASS",
+      "coverage": "612/612",
+      "revisions": 0,
+      "missing": 0,
+      "mapped_family_rows": 492,
+      "intentional_no_family_rows": 120,
+      "clone_family_candidates": "66/66 PASS",
+      "boundary_checks": "8/8 PASS",
+      "architecture_checks": "12/12 PASS",
+      "authorization": "CLEARED_FOR_S4_CT21_25_RECONCILIATION",
+      "receipt": "review-packets/skill-taxonomy/phase-d-s4-ct21-25/09_NOTEBOOKLM_COMBINED_PASS_RECEIPT.md"
+    }
+  }
+}
