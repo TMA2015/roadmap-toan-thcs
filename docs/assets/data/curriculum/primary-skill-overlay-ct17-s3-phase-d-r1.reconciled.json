@@ -1,0 +1,3121 @@
+{
+  "schema": "primary-skill-overlay-ct17-s3-phase-d-r1",
+  "status": "NOTEBOOKLM_PASS_CLEARED_FOR_CT17_S3_RECONCILIATION",
+  "as_of": "2026-10-02",
+  "topic": "17-thales-dong-dang",
+  "source_manifest": "docs/assets/data/practice/17-thales-dong-dang-v1.manifest.json",
+  "source_manifest_blob": "3295479db8646dd050ddd7854f116dd9cc7c3b1b",
+  "source_files": {
+    "17-thales-dong-dang-v1-01.json": {
+      "blob": "44225bdea6fe999dc9e25f7103a0b73a0da10d6b",
+      "question_count": 30
+    },
+    "17-thales-dong-dang-v1-02.json": {
+      "blob": "16f128998ae8f85eccbd6bb7c6971611cc1df50f",
+      "question_count": 30
+    },
+    "17-thales-dong-dang-v1-03.json": {
+      "blob": "40c65446ec5229db48f5d2e265617d1458f62701",
+      "question_count": 30
+    },
+    "17-thales-dong-dang-v1-04.json": {
+      "blob": "ec68bea63f5aebdd3d009dae473edf7112c797ea",
+      "question_count": 30
+    },
+    "17-thales-dong-dang-v1-05.json": {
+      "blob": "db6cde6130fc051fab1d0f7be35802d084dffc5c",
+      "question_count": 12
+    }
+  },
+  "academic_basis": {
+    "s3_family_blob": "7c817ecc064873135ae05b40ded30661bff6434a"
+  },
+  "rules": {
+    "one_primary_max_per_mcq": true,
+    "learner_family_broader_than_diagnostic": true,
+    "proof_mcq_partial_only": true,
+    "no_family_method_formative_only": true,
+    "auto_clone_key": "primary diagnostic + exact question type",
+    "runtime_enabled": false,
+    "no_history_backfill": true
+  },
+  "summary": {
+    "questions": 132,
+    "mapped_primary": 132,
+    "formative_only_without_family": 0,
+    "primary_counts": {
+      "thales-thuan": 9,
+      "thales-dao": 9,
+      "ti-le-doan-thang": 9,
+      "duong-trung-binh": 9,
+      "nhan-biet-dong-dang": 9,
+      "dong-dang-gg": 9,
+      "dong-dang-cgc": 9,
+      "dong-dang-ccc": 9,
+      "thu-tu-tuong-ung": 8,
+      "tinh-do-dai-dong-dang": 8,
+      "ti-so-chu-vi": 8,
+      "ti-so-dien-tich": 8,
+      "he-thuc-tich": 8,
+      "ket-hop-song-song-dong-dang": 8,
+      "tinh-chat-duong-phan-giac": 6,
+      "hinh-dong-dang": 6
+    },
+    "family_counts": {
+      "SIM-THALES": 27,
+      "SIM-MID-BISECTOR": 15,
+      "SIM-CRITERIA": 44,
+      "SIM-LENGTH": 14,
+      "SIM-RATIO-EXT": 24,
+      "SIM-CHAIN": 8
+    },
+    "clone_families": [
+      {
+        "id": "SIM17-AUTO-001",
+        "key": "thales-thuan__tinh-do-dai",
+        "count": 9,
+        "ids": [
+          "GEO17V1_001",
+          "GEO17V1_015",
+          "GEO17V1_029",
+          "GEO17V1_043",
+          "GEO17V1_057",
+          "GEO17V1_071",
+          "GEO17V1_085",
+          "GEO17V1_099",
+          "GEO17V1_113"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-002",
+        "key": "thales-dao__chung-minh-song-song",
+        "count": 9,
+        "ids": [
+          "GEO17V1_002",
+          "GEO17V1_016",
+          "GEO17V1_030",
+          "GEO17V1_044",
+          "GEO17V1_058",
+          "GEO17V1_072",
+          "GEO17V1_086",
+          "GEO17V1_100",
+          "GEO17V1_114"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-003",
+        "key": "ti-le-doan-thang__ti-le-doan",
+        "count": 9,
+        "ids": [
+          "GEO17V1_003",
+          "GEO17V1_017",
+          "GEO17V1_031",
+          "GEO17V1_045",
+          "GEO17V1_059",
+          "GEO17V1_073",
+          "GEO17V1_087",
+          "GEO17V1_101",
+          "GEO17V1_115"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-004",
+        "key": "duong-trung-binh__tinh-duong-trung-binh",
+        "count": 9,
+        "ids": [
+          "GEO17V1_004",
+          "GEO17V1_018",
+          "GEO17V1_032",
+          "GEO17V1_046",
+          "GEO17V1_060",
+          "GEO17V1_074",
+          "GEO17V1_088",
+          "GEO17V1_102",
+          "GEO17V1_116"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-005",
+        "key": "nhan-biet-dong-dang__nhan-biet",
+        "count": 9,
+        "ids": [
+          "GEO17V1_005",
+          "GEO17V1_019",
+          "GEO17V1_033",
+          "GEO17V1_047",
+          "GEO17V1_061",
+          "GEO17V1_075",
+          "GEO17V1_089",
+          "GEO17V1_103",
+          "GEO17V1_117"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-006",
+        "key": "dong-dang-gg__gg",
+        "count": 9,
+        "ids": [
+          "GEO17V1_006",
+          "GEO17V1_020",
+          "GEO17V1_034",
+          "GEO17V1_048",
+          "GEO17V1_062",
+          "GEO17V1_076",
+          "GEO17V1_090",
+          "GEO17V1_104",
+          "GEO17V1_118"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-007",
+        "key": "dong-dang-cgc__cgc",
+        "count": 9,
+        "ids": [
+          "GEO17V1_007",
+          "GEO17V1_021",
+          "GEO17V1_035",
+          "GEO17V1_049",
+          "GEO17V1_063",
+          "GEO17V1_077",
+          "GEO17V1_091",
+          "GEO17V1_105",
+          "GEO17V1_119"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-008",
+        "key": "dong-dang-ccc__ccc",
+        "count": 9,
+        "ids": [
+          "GEO17V1_008",
+          "GEO17V1_022",
+          "GEO17V1_036",
+          "GEO17V1_050",
+          "GEO17V1_064",
+          "GEO17V1_078",
+          "GEO17V1_092",
+          "GEO17V1_106",
+          "GEO17V1_120"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-009",
+        "key": "thu-tu-tuong-ung__tuong-ung",
+        "count": 8,
+        "ids": [
+          "GEO17V1_009",
+          "GEO17V1_023",
+          "GEO17V1_037",
+          "GEO17V1_051",
+          "GEO17V1_065",
+          "GEO17V1_079",
+          "GEO17V1_093",
+          "GEO17V1_107"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-010",
+        "key": "tinh-do-dai-dong-dang__tinh-canh",
+        "count": 8,
+        "ids": [
+          "GEO17V1_010",
+          "GEO17V1_024",
+          "GEO17V1_038",
+          "GEO17V1_052",
+          "GEO17V1_066",
+          "GEO17V1_080",
+          "GEO17V1_094",
+          "GEO17V1_108"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-011",
+        "key": "ti-so-chu-vi__chu-vi",
+        "count": 8,
+        "ids": [
+          "GEO17V1_011",
+          "GEO17V1_025",
+          "GEO17V1_039",
+          "GEO17V1_053",
+          "GEO17V1_067",
+          "GEO17V1_081",
+          "GEO17V1_095",
+          "GEO17V1_109"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-012",
+        "key": "ti-so-dien-tich__dien-tich",
+        "count": 8,
+        "ids": [
+          "GEO17V1_012",
+          "GEO17V1_026",
+          "GEO17V1_040",
+          "GEO17V1_054",
+          "GEO17V1_068",
+          "GEO17V1_082",
+          "GEO17V1_096",
+          "GEO17V1_110"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-013",
+        "key": "he-thuc-tich__nhan-cheo",
+        "count": 8,
+        "ids": [
+          "GEO17V1_013",
+          "GEO17V1_027",
+          "GEO17V1_041",
+          "GEO17V1_055",
+          "GEO17V1_069",
+          "GEO17V1_083",
+          "GEO17V1_097",
+          "GEO17V1_111"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-014",
+        "key": "ket-hop-song-song-dong-dang__song-song-dong-dang",
+        "count": 8,
+        "ids": [
+          "GEO17V1_014",
+          "GEO17V1_028",
+          "GEO17V1_042",
+          "GEO17V1_056",
+          "GEO17V1_070",
+          "GEO17V1_084",
+          "GEO17V1_098",
+          "GEO17V1_112"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-015",
+        "key": "tinh-chat-duong-phan-giac__tinh-chat-duong-phan-giac",
+        "count": 6,
+        "ids": [
+          "SIM17V1_121",
+          "SIM17V1_122",
+          "SIM17V1_123",
+          "SIM17V1_124",
+          "SIM17V1_125",
+          "SIM17V1_126"
+        ]
+      },
+      {
+        "id": "SIM17-AUTO-016",
+        "key": "hinh-dong-dang__hinh-dong-dang",
+        "count": 6,
+        "ids": [
+          "SIM17V1_127",
+          "SIM17V1_128",
+          "SIM17V1_129",
+          "SIM17V1_130",
+          "SIM17V1_131",
+          "SIM17V1_132"
+        ]
+      }
+    ],
+    "runtime_enabled": 0
+  },
+  "items": [
+    {
+      "question_id": "GEO17V1_001",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "thales-thuan"
+      ],
+      "canonical_assessed_skill_candidate": "thales-thuan",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D thuộc AB, E thuộc AC và DE ∥ BC. Biết AD=2, AB=4, AC=12. Tính AE.",
+      "correct_option": "6",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-do-dai"
+    },
+    {
+      "question_id": "GEO17V1_002",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "thales-dao"
+      ],
+      "canonical_assessed_skill_candidate": "thales-dao",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D∈AB, E∈AC. Biết AD=2, DB=3, AE=4, EC=6. Kết luận đúng là:",
+      "correct_option": "DE ∥ BC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO17V1_003",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-le-doan-thang"
+      ],
+      "canonical_assessed_skill_candidate": "ti-le-doan-thang",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "DE ∥ BC trong tam giác ABC. Nếu AD=2, DB=3, AE=4, thì EC bằng bao nhiêu?",
+      "correct_option": "6",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-le-doan"
+    },
+    {
+      "question_id": "GEO17V1_004",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "duong-trung-binh"
+      ],
+      "canonical_assessed_skill_candidate": "duong-trung-binh",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "M, N lần lượt là trung điểm của AB, AC trong tam giác ABC. Nếu BC=12 cm thì MN bằng:",
+      "correct_option": "6 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-duong-trung-binh"
+    },
+    {
+      "question_id": "GEO17V1_005",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-biet-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-dong-dang",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có một cặp góc bằng 35° và một cặp góc bằng 85°. Có thể kết luận đồng dạng theo trường hợp nào?",
+      "correct_option": "g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO17V1_006",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "dong-dang-gg"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-gg",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC và ΔDEF có ∠A=∠D=40°, ∠B=∠E=70°. Kết luận nào đúng?",
+      "correct_option": "ΔABC ∼ ΔDEF theo g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "gg"
+    },
+    {
+      "question_id": "GEO17V1_007",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "dong-dang-cgc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-cgc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biết AB/DE = AC/DF = 2/4 và ∠A = ∠D. Trường hợp đồng dạng phù hợp là:",
+      "correct_option": "c-g-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cgc"
+    },
+    {
+      "question_id": "GEO17V1_008",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "dong-dang-ccc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-ccc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có ba cạnh lần lượt 3, 4, 5 và 6, 8, 10. Kết luận đúng:",
+      "correct_option": "Hai tam giác đồng dạng theo c-c-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ccc"
+    },
+    {
+      "question_id": "GEO17V1_009",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "thu-tu-tuong-ung"
+      ],
+      "canonical_assessed_skill_candidate": "thu-tu-tuong-ung",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cho ΔABC ∼ ΔDEF theo đúng thứ tự. Yếu tố tương ứng với AB là:",
+      "correct_option": "DE",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tuong-ung"
+    },
+    {
+      "question_id": "GEO17V1_010",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "tinh-do-dai-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-do-dai-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : cạnh nhỏ = 2:1. Cạnh tương ứng ở tam giác nhỏ dài 4. Cạnh ở tam giác lớn dài:",
+      "correct_option": "8",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh"
+    },
+    {
+      "question_id": "GEO17V1_011",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-chu-vi"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-chu-vi",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số đồng dạng lớn : nhỏ = 2:1. Chu vi tam giác nhỏ là 18. Chu vi tam giác lớn là:",
+      "correct_option": "36",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chu-vi"
+    },
+    {
+      "question_id": "GEO17V1_012",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-dien-tich"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-dien-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : nhỏ = 2:1. Diện tích tam giác nhỏ là 10. Diện tích tam giác lớn là:",
+      "correct_option": "40",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO17V1_013",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ tỉ lệ AB/DE = AC/DF của hai tam giác đồng dạng, hệ thức tích đúng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-cheo"
+    },
+    {
+      "question_id": "GEO17V1_014",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "ket-hop-song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D∈AB, E∈AC và DE ∥ BC. Cặp tam giác nào đồng dạng trực tiếp từ các góc tương ứng?",
+      "correct_option": "ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "song-song-dong-dang"
+    },
+    {
+      "question_id": "GEO17V1_015",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "thales-thuan"
+      ],
+      "canonical_assessed_skill_candidate": "thales-thuan",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D thuộc AB, E thuộc AC và DE ∥ BC. Biết AD=3, AB=5, AC=20. Tính AE.",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-do-dai"
+    },
+    {
+      "question_id": "GEO17V1_016",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "thales-dao"
+      ],
+      "canonical_assessed_skill_candidate": "thales-dao",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D∈AB, E∈AC. Biết AD=3, DB=5, AE=9, EC=15. Kết luận đúng là:",
+      "correct_option": "DE ∥ BC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO17V1_017",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-le-doan-thang"
+      ],
+      "canonical_assessed_skill_candidate": "ti-le-doan-thang",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "DE ∥ BC trong tam giác ABC. Nếu AD=3, DB=4, AE=6, thì EC bằng bao nhiêu?",
+      "correct_option": "8",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-le-doan"
+    },
+    {
+      "question_id": "GEO17V1_018",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "duong-trung-binh"
+      ],
+      "canonical_assessed_skill_candidate": "duong-trung-binh",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "M, N lần lượt là trung điểm của AB, AC trong tam giác ABC. Nếu BC=14 cm thì MN bằng:",
+      "correct_option": "7 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-duong-trung-binh"
+    },
+    {
+      "question_id": "GEO17V1_019",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-biet-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-dong-dang",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có một cặp góc bằng 40° và một cặp góc bằng 80°. Có thể kết luận đồng dạng theo trường hợp nào?",
+      "correct_option": "g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO17V1_020",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "dong-dang-gg"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-gg",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC và ΔDEF có ∠A=∠D=45°, ∠B=∠E=65°. Kết luận nào đúng?",
+      "correct_option": "ΔABC ∼ ΔDEF theo g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "gg"
+    },
+    {
+      "question_id": "GEO17V1_021",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "dong-dang-cgc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-cgc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biết AB/DE = AC/DF = 3/5 và ∠A = ∠D. Trường hợp đồng dạng phù hợp là:",
+      "correct_option": "c-g-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cgc"
+    },
+    {
+      "question_id": "GEO17V1_022",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "dong-dang-ccc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-ccc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có ba cạnh lần lượt 4, 5, 6 và 12, 15, 18. Kết luận đúng:",
+      "correct_option": "Hai tam giác đồng dạng theo c-c-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ccc"
+    },
+    {
+      "question_id": "GEO17V1_023",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "thu-tu-tuong-ung"
+      ],
+      "canonical_assessed_skill_candidate": "thu-tu-tuong-ung",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cho ΔABC ∼ ΔDEF theo đúng thứ tự. Yếu tố tương ứng với BC là:",
+      "correct_option": "EF",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tuong-ung"
+    },
+    {
+      "question_id": "GEO17V1_024",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "tinh-do-dai-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-do-dai-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : cạnh nhỏ = 3:1. Cạnh tương ứng ở tam giác nhỏ dài 6. Cạnh ở tam giác lớn dài:",
+      "correct_option": "18",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh"
+    },
+    {
+      "question_id": "GEO17V1_025",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-chu-vi"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-chu-vi",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số đồng dạng lớn : nhỏ = 3:1. Chu vi tam giác nhỏ là 21. Chu vi tam giác lớn là:",
+      "correct_option": "63",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chu-vi"
+    },
+    {
+      "question_id": "GEO17V1_026",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-dien-tich"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-dien-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : nhỏ = 3:1. Diện tích tam giác nhỏ là 12. Diện tích tam giác lớn là:",
+      "correct_option": "108",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO17V1_027",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Hệ thức tích từ đồng dạng”: Từ tỉ lệ AB/DE = AC/DF của hai tam giác đồng dạng, hệ thức tích đúng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-cheo"
+    },
+    {
+      "question_id": "GEO17V1_028",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "ket-hop-song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Kết hợp song song – đồng dạng”: Trong tam giác ABC, D∈AB, E∈AC và DE ∥ BC. Cặp tam giác nào đồng dạng trực tiếp từ các góc tương ứng?",
+      "correct_option": "ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "song-song-dong-dang"
+    },
+    {
+      "question_id": "GEO17V1_029",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "thales-thuan"
+      ],
+      "canonical_assessed_skill_candidate": "thales-thuan",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D thuộc AB, E thuộc AC và DE ∥ BC. Biết AD=4, AB=6, AC=30. Tính AE.",
+      "correct_option": "20",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-do-dai"
+    },
+    {
+      "question_id": "GEO17V1_030",
+      "source_file": "17-thales-dong-dang-v1-01.json",
+      "legacy_skill_tags": [
+        "thales-dao"
+      ],
+      "canonical_assessed_skill_candidate": "thales-dao",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D∈AB, E∈AC. Biết AD=4, DB=7, AE=16, EC=28. Kết luận đúng là:",
+      "correct_option": "DE ∥ BC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO17V1_031",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "ti-le-doan-thang"
+      ],
+      "canonical_assessed_skill_candidate": "ti-le-doan-thang",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "DE ∥ BC trong tam giác ABC. Nếu AD=4, DB=5, AE=8, thì EC bằng bao nhiêu?",
+      "correct_option": "10",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-le-doan"
+    },
+    {
+      "question_id": "GEO17V1_032",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "duong-trung-binh"
+      ],
+      "canonical_assessed_skill_candidate": "duong-trung-binh",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "M, N lần lượt là trung điểm của AB, AC trong tam giác ABC. Nếu BC=16 cm thì MN bằng:",
+      "correct_option": "8 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-duong-trung-binh"
+    },
+    {
+      "question_id": "GEO17V1_033",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-dong-dang",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có một cặp góc bằng 45° và một cặp góc bằng 75°. Có thể kết luận đồng dạng theo trường hợp nào?",
+      "correct_option": "g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO17V1_034",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "dong-dang-gg"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-gg",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC và ΔDEF có ∠A=∠D=50°, ∠B=∠E=60°. Kết luận nào đúng?",
+      "correct_option": "ΔABC ∼ ΔDEF theo g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "gg"
+    },
+    {
+      "question_id": "GEO17V1_035",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "dong-dang-cgc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-cgc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biết AB/DE = AC/DF = 4/6 và ∠A = ∠D. Trường hợp đồng dạng phù hợp là:",
+      "correct_option": "c-g-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cgc"
+    },
+    {
+      "question_id": "GEO17V1_036",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "dong-dang-ccc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-ccc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có ba cạnh lần lượt 5, 7, 8 và 20, 28, 32. Kết luận đúng:",
+      "correct_option": "Hai tam giác đồng dạng theo c-c-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ccc"
+    },
+    {
+      "question_id": "GEO17V1_037",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "thu-tu-tuong-ung"
+      ],
+      "canonical_assessed_skill_candidate": "thu-tu-tuong-ung",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cho ΔABC ∼ ΔDEF theo đúng thứ tự. Yếu tố tương ứng với AC là:",
+      "correct_option": "DF",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tuong-ung"
+    },
+    {
+      "question_id": "GEO17V1_038",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "tinh-do-dai-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-do-dai-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : cạnh nhỏ = 4:1. Cạnh tương ứng ở tam giác nhỏ dài 8. Cạnh ở tam giác lớn dài:",
+      "correct_option": "32",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh"
+    },
+    {
+      "question_id": "GEO17V1_039",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "ti-so-chu-vi"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-chu-vi",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số đồng dạng lớn : nhỏ = 4:1. Chu vi tam giác nhỏ là 24. Chu vi tam giác lớn là:",
+      "correct_option": "96",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chu-vi"
+    },
+    {
+      "question_id": "GEO17V1_040",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "ti-so-dien-tich"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-dien-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : nhỏ = 4:1. Diện tích tam giác nhỏ là 14. Diện tích tam giác lớn là:",
+      "correct_option": "224",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO17V1_041",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Hệ thức tích từ đồng dạng”: Từ tỉ lệ AB/DE = AC/DF của hai tam giác đồng dạng, hệ thức tích đúng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-cheo"
+    },
+    {
+      "question_id": "GEO17V1_042",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "ket-hop-song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Kết hợp song song – đồng dạng”: Trong tam giác ABC, D∈AB, E∈AC và DE ∥ BC. Cặp tam giác nào đồng dạng trực tiếp từ các góc tương ứng?",
+      "correct_option": "ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "song-song-dong-dang"
+    },
+    {
+      "question_id": "GEO17V1_043",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "thales-thuan"
+      ],
+      "canonical_assessed_skill_candidate": "thales-thuan",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D thuộc AB, E thuộc AC và DE ∥ BC. Biết AD=2, AB=4, AC=24. Tính AE.",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-do-dai"
+    },
+    {
+      "question_id": "GEO17V1_044",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "thales-dao"
+      ],
+      "canonical_assessed_skill_candidate": "thales-dao",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D∈AB, E∈AC. Biết AD=5, DB=4, AE=10, EC=8. Kết luận đúng là:",
+      "correct_option": "DE ∥ BC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO17V1_045",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "ti-le-doan-thang"
+      ],
+      "canonical_assessed_skill_candidate": "ti-le-doan-thang",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "DE ∥ BC trong tam giác ABC. Nếu AD=5, DB=6, AE=10, thì EC bằng bao nhiêu?",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-le-doan"
+    },
+    {
+      "question_id": "GEO17V1_046",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "duong-trung-binh"
+      ],
+      "canonical_assessed_skill_candidate": "duong-trung-binh",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "M, N lần lượt là trung điểm của AB, AC trong tam giác ABC. Nếu BC=18 cm thì MN bằng:",
+      "correct_option": "9 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-duong-trung-binh"
+    },
+    {
+      "question_id": "GEO17V1_047",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-dong-dang",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có một cặp góc bằng 50° và một cặp góc bằng 70°. Có thể kết luận đồng dạng theo trường hợp nào?",
+      "correct_option": "g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO17V1_048",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "dong-dang-gg"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-gg",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC và ΔDEF có ∠A=∠D=55°, ∠B=∠E=55°. Kết luận nào đúng?",
+      "correct_option": "ΔABC ∼ ΔDEF theo g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "gg"
+    },
+    {
+      "question_id": "GEO17V1_049",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "dong-dang-cgc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-cgc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Đồng dạng c-g-c”: Biết AB/DE = AC/DF = 2/4 và ∠A = ∠D. Trường hợp đồng dạng phù hợp là:",
+      "correct_option": "c-g-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cgc"
+    },
+    {
+      "question_id": "GEO17V1_050",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "dong-dang-ccc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-ccc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có ba cạnh lần lượt 6, 8, 10 và 12, 16, 20. Kết luận đúng:",
+      "correct_option": "Hai tam giác đồng dạng theo c-c-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ccc"
+    },
+    {
+      "question_id": "GEO17V1_051",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "thu-tu-tuong-ung"
+      ],
+      "canonical_assessed_skill_candidate": "thu-tu-tuong-ung",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cho ΔABC ∼ ΔDEF theo đúng thứ tự. Yếu tố tương ứng với ∠B là:",
+      "correct_option": "∠E",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tuong-ung"
+    },
+    {
+      "question_id": "GEO17V1_052",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "tinh-do-dai-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-do-dai-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : cạnh nhỏ = 2:1. Cạnh tương ứng ở tam giác nhỏ dài 10. Cạnh ở tam giác lớn dài:",
+      "correct_option": "20",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh"
+    },
+    {
+      "question_id": "GEO17V1_053",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "ti-so-chu-vi"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-chu-vi",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số đồng dạng lớn : nhỏ = 5:1. Chu vi tam giác nhỏ là 27. Chu vi tam giác lớn là:",
+      "correct_option": "135",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chu-vi"
+    },
+    {
+      "question_id": "GEO17V1_054",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "ti-so-dien-tich"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-dien-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : nhỏ = 2:1. Diện tích tam giác nhỏ là 16. Diện tích tam giác lớn là:",
+      "correct_option": "64",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO17V1_055",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Hệ thức tích từ đồng dạng”: Từ tỉ lệ AB/DE = AC/DF của hai tam giác đồng dạng, hệ thức tích đúng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-cheo"
+    },
+    {
+      "question_id": "GEO17V1_056",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "ket-hop-song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Kết hợp song song – đồng dạng”: Trong tam giác ABC, D∈AB, E∈AC và DE ∥ BC. Cặp tam giác nào đồng dạng trực tiếp từ các góc tương ứng?",
+      "correct_option": "ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "song-song-dong-dang"
+    },
+    {
+      "question_id": "GEO17V1_057",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "thales-thuan"
+      ],
+      "canonical_assessed_skill_candidate": "thales-thuan",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D thuộc AB, E thuộc AC và DE ∥ BC. Biết AD=3, AB=5, AC=15. Tính AE.",
+      "correct_option": "9",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-do-dai"
+    },
+    {
+      "question_id": "GEO17V1_058",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "thales-dao"
+      ],
+      "canonical_assessed_skill_candidate": "thales-dao",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D∈AB, E∈AC. Biết AD=2, DB=6, AE=6, EC=18. Kết luận đúng là:",
+      "correct_option": "DE ∥ BC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO17V1_059",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "ti-le-doan-thang"
+      ],
+      "canonical_assessed_skill_candidate": "ti-le-doan-thang",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "DE ∥ BC trong tam giác ABC. Nếu AD=6, DB=3, AE=12, thì EC bằng bao nhiêu?",
+      "correct_option": "6",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-le-doan"
+    },
+    {
+      "question_id": "GEO17V1_060",
+      "source_file": "17-thales-dong-dang-v1-02.json",
+      "legacy_skill_tags": [
+        "duong-trung-binh"
+      ],
+      "canonical_assessed_skill_candidate": "duong-trung-binh",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "M, N lần lượt là trung điểm của AB, AC trong tam giác ABC. Nếu BC=20 cm thì MN bằng:",
+      "correct_option": "10 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-duong-trung-binh"
+    },
+    {
+      "question_id": "GEO17V1_061",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-biet-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-dong-dang",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có một cặp góc bằng 55° và một cặp góc bằng 65°. Có thể kết luận đồng dạng theo trường hợp nào?",
+      "correct_option": "g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO17V1_062",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "dong-dang-gg"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-gg",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC và ΔDEF có ∠A=∠D=60°, ∠B=∠E=70°. Kết luận nào đúng?",
+      "correct_option": "ΔABC ∼ ΔDEF theo g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "gg"
+    },
+    {
+      "question_id": "GEO17V1_063",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "dong-dang-cgc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-cgc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Đồng dạng c-g-c”: Biết AB/DE = AC/DF = 3/5 và ∠A = ∠D. Trường hợp đồng dạng phù hợp là:",
+      "correct_option": "c-g-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cgc"
+    },
+    {
+      "question_id": "GEO17V1_064",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "dong-dang-ccc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-ccc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có ba cạnh lần lượt 3, 4, 5 và 9, 12, 15. Kết luận đúng:",
+      "correct_option": "Hai tam giác đồng dạng theo c-c-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ccc"
+    },
+    {
+      "question_id": "GEO17V1_065",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "thu-tu-tuong-ung"
+      ],
+      "canonical_assessed_skill_candidate": "thu-tu-tuong-ung",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Thứ tự đỉnh tương ứng”: Cho ΔABC ∼ ΔDEF theo đúng thứ tự. Yếu tố tương ứng với AB là:",
+      "correct_option": "DE",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tuong-ung"
+    },
+    {
+      "question_id": "GEO17V1_066",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "tinh-do-dai-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-do-dai-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : cạnh nhỏ = 3:1. Cạnh tương ứng ở tam giác nhỏ dài 12. Cạnh ở tam giác lớn dài:",
+      "correct_option": "36",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh"
+    },
+    {
+      "question_id": "GEO17V1_067",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "ti-so-chu-vi"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-chu-vi",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số đồng dạng lớn : nhỏ = 2:1. Chu vi tam giác nhỏ là 30. Chu vi tam giác lớn là:",
+      "correct_option": "60",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chu-vi"
+    },
+    {
+      "question_id": "GEO17V1_068",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "ti-so-dien-tich"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-dien-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : nhỏ = 3:1. Diện tích tam giác nhỏ là 18. Diện tích tam giác lớn là:",
+      "correct_option": "162",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO17V1_069",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Hệ thức tích từ đồng dạng”: Từ tỉ lệ AB/DE = AC/DF của hai tam giác đồng dạng, hệ thức tích đúng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-cheo"
+    },
+    {
+      "question_id": "GEO17V1_070",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "ket-hop-song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Kết hợp song song – đồng dạng”: Trong tam giác ABC, D∈AB, E∈AC và DE ∥ BC. Cặp tam giác nào đồng dạng trực tiếp từ các góc tương ứng?",
+      "correct_option": "ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "song-song-dong-dang"
+    },
+    {
+      "question_id": "GEO17V1_071",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "thales-thuan"
+      ],
+      "canonical_assessed_skill_candidate": "thales-thuan",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D thuộc AB, E thuộc AC và DE ∥ BC. Biết AD=4, AB=6, AC=24. Tính AE.",
+      "correct_option": "16",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-do-dai"
+    },
+    {
+      "question_id": "GEO17V1_072",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "thales-dao"
+      ],
+      "canonical_assessed_skill_candidate": "thales-dao",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D∈AB, E∈AC. Biết AD=3, DB=3, AE=12, EC=12. Kết luận đúng là:",
+      "correct_option": "DE ∥ BC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO17V1_073",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "ti-le-doan-thang"
+      ],
+      "canonical_assessed_skill_candidate": "ti-le-doan-thang",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "DE ∥ BC trong tam giác ABC. Nếu AD=2, DB=4, AE=4, thì EC bằng bao nhiêu?",
+      "correct_option": "8",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-le-doan"
+    },
+    {
+      "question_id": "GEO17V1_074",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "duong-trung-binh"
+      ],
+      "canonical_assessed_skill_candidate": "duong-trung-binh",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "M, N lần lượt là trung điểm của AB, AC trong tam giác ABC. Nếu BC=22 cm thì MN bằng:",
+      "correct_option": "11 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-duong-trung-binh"
+    },
+    {
+      "question_id": "GEO17V1_075",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-biet-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-dong-dang",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có một cặp góc bằng 60° và một cặp góc bằng 60°. Có thể kết luận đồng dạng theo trường hợp nào?",
+      "correct_option": "g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO17V1_076",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "dong-dang-gg"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-gg",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC và ΔDEF có ∠A=∠D=65°, ∠B=∠E=65°. Kết luận nào đúng?",
+      "correct_option": "ΔABC ∼ ΔDEF theo g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "gg"
+    },
+    {
+      "question_id": "GEO17V1_077",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "dong-dang-cgc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-cgc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Đồng dạng c-g-c”: Biết AB/DE = AC/DF = 4/6 và ∠A = ∠D. Trường hợp đồng dạng phù hợp là:",
+      "correct_option": "c-g-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cgc"
+    },
+    {
+      "question_id": "GEO17V1_078",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "dong-dang-ccc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-ccc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có ba cạnh lần lượt 4, 5, 6 và 16, 20, 24. Kết luận đúng:",
+      "correct_option": "Hai tam giác đồng dạng theo c-c-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ccc"
+    },
+    {
+      "question_id": "GEO17V1_079",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "thu-tu-tuong-ung"
+      ],
+      "canonical_assessed_skill_candidate": "thu-tu-tuong-ung",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Thứ tự đỉnh tương ứng”: Cho ΔABC ∼ ΔDEF theo đúng thứ tự. Yếu tố tương ứng với BC là:",
+      "correct_option": "EF",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tuong-ung"
+    },
+    {
+      "question_id": "GEO17V1_080",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "tinh-do-dai-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-do-dai-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : cạnh nhỏ = 4:1. Cạnh tương ứng ở tam giác nhỏ dài 4. Cạnh ở tam giác lớn dài:",
+      "correct_option": "16",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh"
+    },
+    {
+      "question_id": "GEO17V1_081",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "ti-so-chu-vi"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-chu-vi",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số đồng dạng lớn : nhỏ = 3:1. Chu vi tam giác nhỏ là 18. Chu vi tam giác lớn là:",
+      "correct_option": "54",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chu-vi"
+    },
+    {
+      "question_id": "GEO17V1_082",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "ti-so-dien-tich"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-dien-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : nhỏ = 4:1. Diện tích tam giác nhỏ là 20. Diện tích tam giác lớn là:",
+      "correct_option": "320",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO17V1_083",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Hệ thức tích từ đồng dạng”: Từ tỉ lệ AB/DE = AC/DF của hai tam giác đồng dạng, hệ thức tích đúng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-cheo"
+    },
+    {
+      "question_id": "GEO17V1_084",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "ket-hop-song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Kết hợp song song – đồng dạng”: Trong tam giác ABC, D∈AB, E∈AC và DE ∥ BC. Cặp tam giác nào đồng dạng trực tiếp từ các góc tương ứng?",
+      "correct_option": "ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "song-song-dong-dang"
+    },
+    {
+      "question_id": "GEO17V1_085",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "thales-thuan"
+      ],
+      "canonical_assessed_skill_candidate": "thales-thuan",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D thuộc AB, E thuộc AC và DE ∥ BC. Biết AD=2, AB=4, AC=20. Tính AE.",
+      "correct_option": "10",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-do-dai"
+    },
+    {
+      "question_id": "GEO17V1_086",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "thales-dao"
+      ],
+      "canonical_assessed_skill_candidate": "thales-dao",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D∈AB, E∈AC. Biết AD=4, DB=5, AE=8, EC=10. Kết luận đúng là:",
+      "correct_option": "DE ∥ BC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO17V1_087",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "ti-le-doan-thang"
+      ],
+      "canonical_assessed_skill_candidate": "ti-le-doan-thang",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "DE ∥ BC trong tam giác ABC. Nếu AD=3, DB=5, AE=6, thì EC bằng bao nhiêu?",
+      "correct_option": "10",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-le-doan"
+    },
+    {
+      "question_id": "GEO17V1_088",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "duong-trung-binh"
+      ],
+      "canonical_assessed_skill_candidate": "duong-trung-binh",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "M, N lần lượt là trung điểm của AB, AC trong tam giác ABC. Nếu BC=24 cm thì MN bằng:",
+      "correct_option": "12 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-duong-trung-binh"
+    },
+    {
+      "question_id": "GEO17V1_089",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-biet-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-dong-dang",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có một cặp góc bằng 65° và một cặp góc bằng 55°. Có thể kết luận đồng dạng theo trường hợp nào?",
+      "correct_option": "g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO17V1_090",
+      "source_file": "17-thales-dong-dang-v1-03.json",
+      "legacy_skill_tags": [
+        "dong-dang-gg"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-gg",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC và ΔDEF có ∠A=∠D=40°, ∠B=∠E=60°. Kết luận nào đúng?",
+      "correct_option": "ΔABC ∼ ΔDEF theo g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "gg"
+    },
+    {
+      "question_id": "GEO17V1_091",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "dong-dang-cgc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-cgc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Đồng dạng c-g-c”: Biết AB/DE = AC/DF = 2/4 và ∠A = ∠D. Trường hợp đồng dạng phù hợp là:",
+      "correct_option": "c-g-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cgc"
+    },
+    {
+      "question_id": "GEO17V1_092",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "dong-dang-ccc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-ccc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có ba cạnh lần lượt 5, 7, 8 và 10, 14, 16. Kết luận đúng:",
+      "correct_option": "Hai tam giác đồng dạng theo c-c-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ccc"
+    },
+    {
+      "question_id": "GEO17V1_093",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "thu-tu-tuong-ung"
+      ],
+      "canonical_assessed_skill_candidate": "thu-tu-tuong-ung",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Thứ tự đỉnh tương ứng”: Cho ΔABC ∼ ΔDEF theo đúng thứ tự. Yếu tố tương ứng với AC là:",
+      "correct_option": "DF",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tuong-ung"
+    },
+    {
+      "question_id": "GEO17V1_094",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-do-dai-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-do-dai-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : cạnh nhỏ = 2:1. Cạnh tương ứng ở tam giác nhỏ dài 6. Cạnh ở tam giác lớn dài:",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh"
+    },
+    {
+      "question_id": "GEO17V1_095",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "ti-so-chu-vi"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-chu-vi",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số đồng dạng lớn : nhỏ = 4:1. Chu vi tam giác nhỏ là 21. Chu vi tam giác lớn là:",
+      "correct_option": "84",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chu-vi"
+    },
+    {
+      "question_id": "GEO17V1_096",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "ti-so-dien-tich"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-dien-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Tỉ số diện tích”: Hai tam giác đồng dạng có tỉ số cạnh lớn : nhỏ = 2:1. Diện tích tam giác nhỏ là 10. Diện tích tam giác lớn là:",
+      "correct_option": "40",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO17V1_097",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Hệ thức tích từ đồng dạng”: Từ tỉ lệ AB/DE = AC/DF của hai tam giác đồng dạng, hệ thức tích đúng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-cheo"
+    },
+    {
+      "question_id": "GEO17V1_098",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "ket-hop-song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Kết hợp song song – đồng dạng”: Trong tam giác ABC, D∈AB, E∈AC và DE ∥ BC. Cặp tam giác nào đồng dạng trực tiếp từ các góc tương ứng?",
+      "correct_option": "ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "song-song-dong-dang"
+    },
+    {
+      "question_id": "GEO17V1_099",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "thales-thuan"
+      ],
+      "canonical_assessed_skill_candidate": "thales-thuan",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D thuộc AB, E thuộc AC và DE ∥ BC. Biết AD=3, AB=5, AC=30. Tính AE.",
+      "correct_option": "18",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-do-dai"
+    },
+    {
+      "question_id": "GEO17V1_100",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "thales-dao"
+      ],
+      "canonical_assessed_skill_candidate": "thales-dao",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D∈AB, E∈AC. Biết AD=5, DB=7, AE=15, EC=21. Kết luận đúng là:",
+      "correct_option": "DE ∥ BC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO17V1_101",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "ti-le-doan-thang"
+      ],
+      "canonical_assessed_skill_candidate": "ti-le-doan-thang",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "DE ∥ BC trong tam giác ABC. Nếu AD=4, DB=6, AE=8, thì EC bằng bao nhiêu?",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-le-doan"
+    },
+    {
+      "question_id": "GEO17V1_102",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "duong-trung-binh"
+      ],
+      "canonical_assessed_skill_candidate": "duong-trung-binh",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "M, N lần lượt là trung điểm của AB, AC trong tam giác ABC. Nếu BC=26 cm thì MN bằng:",
+      "correct_option": "13 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-duong-trung-binh"
+    },
+    {
+      "question_id": "GEO17V1_103",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "nhan-biet-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-dong-dang",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Nhận biết tam giác đồng dạng”: Hai tam giác có một cặp góc bằng 35° và một cặp góc bằng 85°. Có thể kết luận đồng dạng theo trường hợp nào?",
+      "correct_option": "g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO17V1_104",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "dong-dang-gg"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-gg",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC và ΔDEF có ∠A=∠D=45°, ∠B=∠E=55°. Kết luận nào đúng?",
+      "correct_option": "ΔABC ∼ ΔDEF theo g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "gg"
+    },
+    {
+      "question_id": "GEO17V1_105",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "dong-dang-cgc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-cgc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Đồng dạng c-g-c”: Biết AB/DE = AC/DF = 3/5 và ∠A = ∠D. Trường hợp đồng dạng phù hợp là:",
+      "correct_option": "c-g-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cgc"
+    },
+    {
+      "question_id": "GEO17V1_106",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "dong-dang-ccc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-ccc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có ba cạnh lần lượt 6, 8, 10 và 18, 24, 30. Kết luận đúng:",
+      "correct_option": "Hai tam giác đồng dạng theo c-c-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ccc"
+    },
+    {
+      "question_id": "GEO17V1_107",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "thu-tu-tuong-ung"
+      ],
+      "canonical_assessed_skill_candidate": "thu-tu-tuong-ung",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Thứ tự đỉnh tương ứng”: Cho ΔABC ∼ ΔDEF theo đúng thứ tự. Yếu tố tương ứng với ∠B là:",
+      "correct_option": "∠E",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tuong-ung"
+    },
+    {
+      "question_id": "GEO17V1_108",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-do-dai-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-do-dai-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số cạnh lớn : cạnh nhỏ = 3:1. Cạnh tương ứng ở tam giác nhỏ dài 8. Cạnh ở tam giác lớn dài:",
+      "correct_option": "24",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-canh"
+    },
+    {
+      "question_id": "GEO17V1_109",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "ti-so-chu-vi"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-chu-vi",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác đồng dạng có tỉ số đồng dạng lớn : nhỏ = 5:1. Chu vi tam giác nhỏ là 24. Chu vi tam giác lớn là:",
+      "correct_option": "120",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chu-vi"
+    },
+    {
+      "question_id": "GEO17V1_110",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "ti-so-dien-tich"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-dien-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Tỉ số diện tích”: Hai tam giác đồng dạng có tỉ số cạnh lớn : nhỏ = 3:1. Diện tích tam giác nhỏ là 12. Diện tích tam giác lớn là:",
+      "correct_option": "108",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich"
+    },
+    {
+      "question_id": "GEO17V1_111",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "he-thuc-tich",
+      "learner_family_candidate": "SIM-RATIO-EXT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Hệ thức tích từ đồng dạng”: Từ tỉ lệ AB/DE = AC/DF của hai tam giác đồng dạng, hệ thức tích đúng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-cheo"
+    },
+    {
+      "question_id": "GEO17V1_112",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "ket-hop-song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "ket-hop-song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Kết hợp song song – đồng dạng”: Trong tam giác ABC, D∈AB, E∈AC và DE ∥ BC. Cặp tam giác nào đồng dạng trực tiếp từ các góc tương ứng?",
+      "correct_option": "ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "song-song-dong-dang"
+    },
+    {
+      "question_id": "GEO17V1_113",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "thales-thuan"
+      ],
+      "canonical_assessed_skill_candidate": "thales-thuan",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D thuộc AB, E thuộc AC và DE ∥ BC. Biết AD=4, AB=6, AC=18. Tính AE.",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-do-dai"
+    },
+    {
+      "question_id": "GEO17V1_114",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "thales-dao"
+      ],
+      "canonical_assessed_skill_candidate": "thales-dao",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác ABC, D∈AB, E∈AC. Biết AD=2, DB=4, AE=8, EC=16. Kết luận đúng là:",
+      "correct_option": "DE ∥ BC",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chung-minh-song-song"
+    },
+    {
+      "question_id": "GEO17V1_115",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "ti-le-doan-thang"
+      ],
+      "canonical_assessed_skill_candidate": "ti-le-doan-thang",
+      "learner_family_candidate": "SIM-THALES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "DE ∥ BC trong tam giác ABC. Nếu AD=5, DB=3, AE=10, thì EC bằng bao nhiêu?",
+      "correct_option": "6",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-le-doan"
+    },
+    {
+      "question_id": "GEO17V1_116",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "duong-trung-binh"
+      ],
+      "canonical_assessed_skill_candidate": "duong-trung-binh",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Đường trung bình tam giác”: M, N lần lượt là trung điểm của AB, AC trong tam giác ABC. Nếu BC=12 cm thì MN bằng:",
+      "correct_option": "6 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-duong-trung-binh"
+    },
+    {
+      "question_id": "GEO17V1_117",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "nhan-biet-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-dong-dang",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Nhận biết tam giác đồng dạng”: Hai tam giác có một cặp góc bằng 40° và một cặp góc bằng 80°. Có thể kết luận đồng dạng theo trường hợp nào?",
+      "correct_option": "g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO17V1_118",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "dong-dang-gg"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-gg",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "ΔABC và ΔDEF có ∠A=∠D=50°, ∠B=∠E=70°. Kết luận nào đúng?",
+      "correct_option": "ΔABC ∼ ΔDEF theo g-g",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "gg"
+    },
+    {
+      "question_id": "GEO17V1_119",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "dong-dang-cgc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-cgc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Đồng dạng c-g-c”: Biết AB/DE = AC/DF = 4/6 và ∠A = ∠D. Trường hợp đồng dạng phù hợp là:",
+      "correct_option": "c-g-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cgc"
+    },
+    {
+      "question_id": "GEO17V1_120",
+      "source_file": "17-thales-dong-dang-v1-04.json",
+      "legacy_skill_tags": [
+        "dong-dang-ccc"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-ccc",
+      "learner_family_candidate": "SIM-CRITERIA",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai tam giác có ba cạnh lần lượt 3, 4, 5 và 12, 16, 20. Kết luận đúng:",
+      "correct_option": "Hai tam giác đồng dạng theo c-c-c",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ccc"
+    },
+    {
+      "question_id": "SIM17V1_121",
+      "source_file": "17-thales-dong-dang-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-duong-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-duong-phan-giac",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "AD phân giác góc A. Hệ thức:",
+      "correct_option": "BD/DC=AB/AC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-chat-duong-phan-giac"
+    },
+    {
+      "question_id": "SIM17V1_122",
+      "source_file": "17-thales-dong-dang-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-duong-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-duong-phan-giac",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "AB=8, AC=12. BD:DC=",
+      "correct_option": "2:3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-chat-duong-phan-giac"
+    },
+    {
+      "question_id": "SIM17V1_123",
+      "source_file": "17-thales-dong-dang-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-duong-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-duong-phan-giac",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "BD=6, DC=9, AB=8. AC=",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-chat-duong-phan-giac"
+    },
+    {
+      "question_id": "SIM17V1_124",
+      "source_file": "17-thales-dong-dang-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-duong-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-duong-phan-giac",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "AD phân giác, AB=AC. D là:",
+      "correct_option": "Trung điểm BC",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-chat-duong-phan-giac"
+    },
+    {
+      "question_id": "SIM17V1_125",
+      "source_file": "17-thales-dong-dang-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-duong-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-duong-phan-giac",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "AB/AC=3/5. Khi AD phân giác:",
+      "correct_option": "BD/DC=3/5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-chat-duong-phan-giac"
+    },
+    {
+      "question_id": "SIM17V1_126",
+      "source_file": "17-thales-dong-dang-v1-05.json",
+      "legacy_skill_tags": [
+        "tinh-chat-duong-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tinh-chat-duong-phan-giac",
+      "learner_family_candidate": "SIM-MID-BISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SIM17-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "AB=10, AC=15, BC=20, AD phân giác. BD=",
+      "correct_option": "8",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-chat-duong-phan-giac"
+    },
+    {
+      "question_id": "SIM17V1_127",
+      "source_file": "17-thales-dong-dang-v1-05.json",
+      "legacy_skill_tags": [
+        "hinh-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai hình đồng dạng tỉ số 2:5 nghĩa là:",
+      "correct_option": "Mọi độ dài tương ứng cùng tỉ số 2/5",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-dong-dang"
+    },
+    {
+      "question_id": "SIM17V1_128",
+      "source_file": "17-thales-dong-dang-v1-05.json",
+      "legacy_skill_tags": [
+        "hinh-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phóng hình theo tỉ số 3 giữ nguyên:",
+      "correct_option": "Hình dạng và góc tương ứng",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-dong-dang"
+    },
+    {
+      "question_id": "SIM17V1_129",
+      "source_file": "17-thales-dong-dang-v1-05.json",
+      "legacy_skill_tags": [
+        "hinh-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Bản đồ 1:50 000, đoạn 2 cm ứng với:",
+      "correct_option": "1 km",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-dong-dang"
+    },
+    {
+      "question_id": "SIM17V1_130",
+      "source_file": "17-thales-dong-dang-v1-05.json",
+      "legacy_skill_tags": [
+        "hinh-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình chữ nhật 2×3 và 4×6:",
+      "correct_option": "Đồng dạng tỉ số 1:2",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-dong-dang"
+    },
+    {
+      "question_id": "SIM17V1_131",
+      "source_file": "17-thales-dong-dang-v1-05.json",
+      "legacy_skill_tags": [
+        "hinh-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai hình vuông cạnh 3 và 5:",
+      "correct_option": "Đồng dạng",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-dong-dang"
+    },
+    {
+      "question_id": "SIM17V1_132",
+      "source_file": "17-thales-dong-dang-v1-05.json",
+      "legacy_skill_tags": [
+        "hinh-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-dong-dang",
+      "learner_family_candidate": "SIM-LENGTH",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SIM17-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Mô hình 1:20 dài 15 cm. Vật thật:",
+      "correct_option": "3 m",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hinh-dong-dang"
+    }
+  ],
+  "academic_review": {
+    "reviewer": "NotebookLM",
+    "result": "PASS",
+    "selected_sources": {
+      "total": 11,
+      "permanent": [
+        "00_NOTEBOOK_MATH_PERMANENT_v1.1.md",
+        "01_TOAN_THCS_MASTER_PLAN_v1.1.md"
+      ],
+      "batch_count": 9
+    },
+    "combined_packet": "MATH-SKILL-S3-CT13-20-COMBINED-R1-20261002",
+    "coverage": {
+      "expected": 132,
+      "reviewed": 132,
+      "revisions": 0,
+      "missing": 0
+    },
+    "counts_verified": true,
+    "architecture_checks": {
+      "batch_expected": 14,
+      "batch_pass": 14
+    },
+    "authorization": "CLEARED_FOR_S3_CT13_20_RECONCILIATION",
+    "reviewed_at": "2026-10-02",
+    "runtime_activation_authorized": false
+  }
+}

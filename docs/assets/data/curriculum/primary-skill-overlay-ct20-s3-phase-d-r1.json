@@ -1,0 +1,4662 @@
+{
+  "schema": "primary-skill-overlay-ct20-s3-phase-d-r1",
+  "status": "CHATGPT_CANDIDATE_PENDING_NOTEBOOKLM_REVIEW",
+  "as_of": "2026-10-02",
+  "topic": "20-hinh-hoc-tong-hop",
+  "source_manifest": "docs/assets/data/practice/20-hinh-hoc-tong-hop-v1.manifest.json",
+  "source_manifest_blob": "7fc4157bd2e56fa243b428ef0949583c589a3eb9",
+  "source_files": {
+    "20-hinh-hoc-tong-hop-v1-01.json": {
+      "blob": "744bac663fac24bb02cd0625fb4213a1b451cdb7",
+      "question_count": 30
+    },
+    "20-hinh-hoc-tong-hop-v1-02.json": {
+      "blob": "150802b5f6be5dc24ec3efce046c2144f2f75501",
+      "question_count": 30
+    },
+    "20-hinh-hoc-tong-hop-v1-03.json": {
+      "blob": "b1f7043de9c4045a8ca8118cc8d73d14a85fff7f",
+      "question_count": 30
+    },
+    "20-hinh-hoc-tong-hop-v1-04.json": {
+      "blob": "dd4c8ef16a290bbc7d37c5093ce0f9e956066a8f",
+      "question_count": 30
+    },
+    "20-hinh-hoc-tong-hop-v1-05.json": {
+      "blob": "5b124db0c1f4d6a4c7ff6e08b9f1a6cbf0ba2a5d",
+      "question_count": 75
+    }
+  },
+  "academic_basis": {
+    "s3_family_blob": "7c817ecc064873135ae05b40ded30661bff6434a"
+  },
+  "rules": {
+    "one_primary_max_per_mcq": true,
+    "learner_family_broader_than_diagnostic": true,
+    "proof_and_synthesis_mcq_partial_only": true,
+    "no_family_method_formative_only": true,
+    "auto_clone_key": "primary diagnostic + exact question type",
+    "runtime_enabled": false,
+    "no_history_backfill": true
+  },
+  "summary": {
+    "questions": 195,
+    "mapped_primary": 185,
+    "formative_only_without_family": 10,
+    "primary_counts": {
+      "nhan-dang-cong-cu": 10,
+      "song-song-dong-dang": 10,
+      "hai-goc-vuong-noi-tiep": 10,
+      "noi-tiep-dong-dang": 9,
+      "dong-dang-he-thuc-tich": 9,
+      "tam-giac-vuong-dong-dang": 9,
+      "tiep-tuyen-chung-minh": 9,
+      "chuoi-suy-luan": 9,
+      "the-tich-hop-chu-nhat": 9,
+      "the-tich-lang-tru": 9,
+      "dien-tich-day": 9,
+      "doi-don-vi-do-luong": 9,
+      "bai-toan-tong-hop": 9,
+      "nhan-biet-tam-giac-deu": 3,
+      "nhan-biet-hinh-vuong": 3,
+      "nhan-biet-luc-giac-deu": 3,
+      "nhan-biet-tu-giac-dac-biet": 3,
+      "chu-vi-tu-giac": 3,
+      "dien-tich-tu-giac": 3,
+      "do-luong-thuc-te": 3,
+      "truc-doi-xung": 3,
+      "tam-doi-xung": 3,
+      "nhan-biet-hinh-hop-lap-phuong": 3,
+      "dien-tich-xung-quanh-hop-chu-nhat": 3,
+      "nhan-biet-lang-tru-dung": 3,
+      "dien-tich-xung-quanh-lang-tru": 3,
+      "nhan-biet-hinh-chop-deu": 3,
+      "dien-tich-xung-quanh-hinh-chop": 3,
+      "the-tich-hinh-chop": 3,
+      "nhan-biet-hinh-tru": 3,
+      "dien-tich-xung-quanh-hinh-tru": 3,
+      "the-tich-hinh-tru": 3,
+      "nhan-biet-hinh-non": 3,
+      "dien-tich-xung-quanh-hinh-non": 3,
+      "the-tich-hinh-non": 3,
+      "nhan-biet-hinh-cau": 3,
+      "dien-tich-mat-cau": 3,
+      "the-tich-hinh-cau": 3
+    },
+    "family_counts": {
+      "NO_FAMILY": 10,
+      "SIM-CHAIN": 10,
+      "GEO-SYNTHESIS": 55,
+      "CIRCLE-TANGENT": 9,
+      "SOLID-PRISM": 48,
+      "TRI-SPECIAL": 3,
+      "QUAD-SQUARE-HIER": 6,
+      "GEO-REGULAR-SYMM": 9,
+      "GEO-PLANE-MEASURE": 9,
+      "SOLID-PYRAMID": 9,
+      "SOLID-CYL-CONE": 18,
+      "SOLID-SPHERE": 9
+    },
+    "clone_families": [
+      {
+        "id": "SYN20-AUTO-001",
+        "key": "nhan-dang-cong-cu__chon-cong-cu",
+        "count": 10,
+        "ids": [
+          "GEO20V1_001",
+          "GEO20V1_014",
+          "GEO20V1_027",
+          "GEO20V1_040",
+          "GEO20V1_053",
+          "GEO20V1_066",
+          "GEO20V1_079",
+          "GEO20V1_092",
+          "GEO20V1_105",
+          "GEO20V1_118"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-002",
+        "key": "song-song-dong-dang__chuoi-song-song",
+        "count": 10,
+        "ids": [
+          "GEO20V1_002",
+          "GEO20V1_015",
+          "GEO20V1_028",
+          "GEO20V1_041",
+          "GEO20V1_054",
+          "GEO20V1_067",
+          "GEO20V1_080",
+          "GEO20V1_093",
+          "GEO20V1_106",
+          "GEO20V1_119"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-003",
+        "key": "hai-goc-vuong-noi-tiep__noi-tiep-duong-kinh",
+        "count": 10,
+        "ids": [
+          "GEO20V1_003",
+          "GEO20V1_016",
+          "GEO20V1_029",
+          "GEO20V1_042",
+          "GEO20V1_055",
+          "GEO20V1_068",
+          "GEO20V1_081",
+          "GEO20V1_094",
+          "GEO20V1_107",
+          "GEO20V1_120"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-004",
+        "key": "noi-tiep-dong-dang__noi-tiep-goc",
+        "count": 9,
+        "ids": [
+          "GEO20V1_004",
+          "GEO20V1_017",
+          "GEO20V1_030",
+          "GEO20V1_043",
+          "GEO20V1_056",
+          "GEO20V1_069",
+          "GEO20V1_082",
+          "GEO20V1_095",
+          "GEO20V1_108"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-005",
+        "key": "dong-dang-he-thuc-tich__he-thuc-tich",
+        "count": 9,
+        "ids": [
+          "GEO20V1_005",
+          "GEO20V1_018",
+          "GEO20V1_031",
+          "GEO20V1_044",
+          "GEO20V1_057",
+          "GEO20V1_070",
+          "GEO20V1_083",
+          "GEO20V1_096",
+          "GEO20V1_109"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-006",
+        "key": "tam-giac-vuong-dong-dang__dong-dang-duong-cao",
+        "count": 9,
+        "ids": [
+          "GEO20V1_006",
+          "GEO20V1_019",
+          "GEO20V1_032",
+          "GEO20V1_045",
+          "GEO20V1_058",
+          "GEO20V1_071",
+          "GEO20V1_084",
+          "GEO20V1_097",
+          "GEO20V1_110"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-007",
+        "key": "tiep-tuyen-chung-minh__tiep-tuyen",
+        "count": 9,
+        "ids": [
+          "GEO20V1_007",
+          "GEO20V1_020",
+          "GEO20V1_033",
+          "GEO20V1_046",
+          "GEO20V1_059",
+          "GEO20V1_072",
+          "GEO20V1_085",
+          "GEO20V1_098",
+          "GEO20V1_111"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-008",
+        "key": "chuoi-suy-luan__chien-luoc",
+        "count": 9,
+        "ids": [
+          "GEO20V1_008",
+          "GEO20V1_021",
+          "GEO20V1_034",
+          "GEO20V1_047",
+          "GEO20V1_060",
+          "GEO20V1_073",
+          "GEO20V1_086",
+          "GEO20V1_099",
+          "GEO20V1_112"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-009",
+        "key": "the-tich-hop-chu-nhat__the-tich",
+        "count": 9,
+        "ids": [
+          "GEO20V1_009",
+          "GEO20V1_022",
+          "GEO20V1_035",
+          "GEO20V1_048",
+          "GEO20V1_061",
+          "GEO20V1_074",
+          "GEO20V1_087",
+          "GEO20V1_100",
+          "GEO20V1_113"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-010",
+        "key": "the-tich-lang-tru__the-tich",
+        "count": 9,
+        "ids": [
+          "GEO20V1_010",
+          "GEO20V1_023",
+          "GEO20V1_036",
+          "GEO20V1_049",
+          "GEO20V1_062",
+          "GEO20V1_075",
+          "GEO20V1_088",
+          "GEO20V1_101",
+          "GEO20V1_114"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-011",
+        "key": "dien-tich-day__tim-dien-tich-day",
+        "count": 9,
+        "ids": [
+          "GEO20V1_011",
+          "GEO20V1_024",
+          "GEO20V1_037",
+          "GEO20V1_050",
+          "GEO20V1_063",
+          "GEO20V1_076",
+          "GEO20V1_089",
+          "GEO20V1_102",
+          "GEO20V1_115"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-012",
+        "key": "doi-don-vi-do-luong__doi-don-vi",
+        "count": 9,
+        "ids": [
+          "GEO20V1_012",
+          "GEO20V1_025",
+          "GEO20V1_038",
+          "GEO20V1_051",
+          "GEO20V1_064",
+          "GEO20V1_077",
+          "GEO20V1_090",
+          "GEO20V1_103",
+          "GEO20V1_116"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-013",
+        "key": "bai-toan-tong-hop__chien-luoc-tong-hop",
+        "count": 9,
+        "ids": [
+          "GEO20V1_013",
+          "GEO20V1_026",
+          "GEO20V1_039",
+          "GEO20V1_052",
+          "GEO20V1_065",
+          "GEO20V1_078",
+          "GEO20V1_091",
+          "GEO20V1_104",
+          "GEO20V1_117"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-014",
+        "key": "nhan-biet-tam-giac-deu__nhan-biet-tam-giac-deu",
+        "count": 3,
+        "ids": [
+          "SYN20V1_121",
+          "SYN20V1_122",
+          "SYN20V1_123"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-015",
+        "key": "nhan-biet-hinh-vuong__nhan-biet-hinh-vuong",
+        "count": 3,
+        "ids": [
+          "SYN20V1_124",
+          "SYN20V1_125",
+          "SYN20V1_126"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-016",
+        "key": "nhan-biet-luc-giac-deu__nhan-biet-luc-giac-deu",
+        "count": 3,
+        "ids": [
+          "SYN20V1_127",
+          "SYN20V1_128",
+          "SYN20V1_129"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-017",
+        "key": "nhan-biet-tu-giac-dac-biet__nhan-biet-tu-giac-dac-biet",
+        "count": 3,
+        "ids": [
+          "SYN20V1_130",
+          "SYN20V1_131",
+          "SYN20V1_132"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-018",
+        "key": "chu-vi-tu-giac__chu-vi-tu-giac",
+        "count": 3,
+        "ids": [
+          "SYN20V1_133",
+          "SYN20V1_134",
+          "SYN20V1_135"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-019",
+        "key": "dien-tich-tu-giac__dien-tich-tu-giac",
+        "count": 3,
+        "ids": [
+          "SYN20V1_136",
+          "SYN20V1_137",
+          "SYN20V1_138"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-020",
+        "key": "do-luong-thuc-te__do-luong-thuc-te",
+        "count": 3,
+        "ids": [
+          "SYN20V1_139",
+          "SYN20V1_140",
+          "SYN20V1_141"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-021",
+        "key": "truc-doi-xung__truc-doi-xung",
+        "count": 3,
+        "ids": [
+          "SYN20V1_142",
+          "SYN20V1_143",
+          "SYN20V1_144"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-022",
+        "key": "tam-doi-xung__tam-doi-xung",
+        "count": 3,
+        "ids": [
+          "SYN20V1_145",
+          "SYN20V1_146",
+          "SYN20V1_147"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-023",
+        "key": "nhan-biet-hinh-hop-lap-phuong__nhan-biet-hinh-hop-lap-phuong",
+        "count": 3,
+        "ids": [
+          "SYN20V1_148",
+          "SYN20V1_149",
+          "SYN20V1_150"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-024",
+        "key": "dien-tich-xung-quanh-hop-chu-nhat__dien-tich-xung-quanh-hop-chu-nhat",
+        "count": 3,
+        "ids": [
+          "SYN20V1_151",
+          "SYN20V1_152",
+          "SYN20V1_153"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-025",
+        "key": "nhan-biet-lang-tru-dung__nhan-biet-lang-tru-dung",
+        "count": 3,
+        "ids": [
+          "SYN20V1_154",
+          "SYN20V1_155",
+          "SYN20V1_156"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-026",
+        "key": "dien-tich-xung-quanh-lang-tru__dien-tich-xung-quanh-lang-tru",
+        "count": 3,
+        "ids": [
+          "SYN20V1_157",
+          "SYN20V1_158",
+          "SYN20V1_159"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-027",
+        "key": "nhan-biet-hinh-chop-deu__nhan-biet-hinh-chop-deu",
+        "count": 3,
+        "ids": [
+          "SYN20V1_160",
+          "SYN20V1_161",
+          "SYN20V1_162"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-028",
+        "key": "dien-tich-xung-quanh-hinh-chop__dien-tich-xung-quanh-hinh-chop",
+        "count": 3,
+        "ids": [
+          "SYN20V1_163",
+          "SYN20V1_164",
+          "SYN20V1_165"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-029",
+        "key": "the-tich-hinh-chop__the-tich-hinh-chop",
+        "count": 3,
+        "ids": [
+          "SYN20V1_166",
+          "SYN20V1_167",
+          "SYN20V1_168"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-030",
+        "key": "nhan-biet-hinh-tru__nhan-biet-hinh-tru",
+        "count": 3,
+        "ids": [
+          "SYN20V1_169",
+          "SYN20V1_170",
+          "SYN20V1_171"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-031",
+        "key": "dien-tich-xung-quanh-hinh-tru__dien-tich-xung-quanh-hinh-tru",
+        "count": 3,
+        "ids": [
+          "SYN20V1_172",
+          "SYN20V1_173",
+          "SYN20V1_174"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-032",
+        "key": "the-tich-hinh-tru__the-tich-hinh-tru",
+        "count": 3,
+        "ids": [
+          "SYN20V1_175",
+          "SYN20V1_176",
+          "SYN20V1_177"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-033",
+        "key": "nhan-biet-hinh-non__nhan-biet-hinh-non",
+        "count": 3,
+        "ids": [
+          "SYN20V1_178",
+          "SYN20V1_179",
+          "SYN20V1_180"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-034",
+        "key": "dien-tich-xung-quanh-hinh-non__dien-tich-xung-quanh-hinh-non",
+        "count": 3,
+        "ids": [
+          "SYN20V1_181",
+          "SYN20V1_182",
+          "SYN20V1_183"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-035",
+        "key": "the-tich-hinh-non__the-tich-hinh-non",
+        "count": 3,
+        "ids": [
+          "SYN20V1_184",
+          "SYN20V1_185",
+          "SYN20V1_186"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-036",
+        "key": "nhan-biet-hinh-cau__nhan-biet-hinh-cau",
+        "count": 3,
+        "ids": [
+          "SYN20V1_187",
+          "SYN20V1_188",
+          "SYN20V1_189"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-037",
+        "key": "dien-tich-mat-cau__dien-tich-mat-cau",
+        "count": 3,
+        "ids": [
+          "SYN20V1_190",
+          "SYN20V1_191",
+          "SYN20V1_192"
+        ]
+      },
+      {
+        "id": "SYN20-AUTO-038",
+        "key": "the-tich-hinh-cau__the-tich-hinh-cau",
+        "count": 3,
+        "ids": [
+          "SYN20V1_193",
+          "SYN20V1_194",
+          "SYN20V1_195"
+        ]
+      }
+    ],
+    "runtime_enabled": 0
+  },
+  "items": [
+    {
+      "question_id": "GEO20V1_001",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-dang-cong-cu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-cong-cu",
+      "learner_family_candidate": null,
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_METHOD_OR_NO_FAMILY_FORMATIVE",
+      "clone_family_candidate": "SYN20-AUTO-001",
+      "credit_mode_candidate": "FORMATIVE_ONLY_NO_LEARNER_FAMILY",
+      "correct_option_index": 0,
+      "question": "Dấu hiệu: Có hai góc vuông cùng nhìn đoạn AB. Công cụ ưu tiên là:",
+      "correct_option": "Tứ giác nội tiếp",
+      "note": "No learner-facing family by S3 family PASS; keep formative/method evidence only.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chon-cong-cu"
+    },
+    {
+      "question_id": "GEO20V1_002",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong ΔABC, D∈AB, E∈AC và DE ∥ BC. Chuỗi suy luận hợp lý nhất là:",
+      "correct_option": "Góc tương ứng bằng nhau → ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chuoi-song-song"
+    },
+    {
+      "question_id": "GEO20V1_003",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "hai-goc-vuong-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "hai-goc-vuong-noi-tiep",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu ∠AEB = ∠AFB = 90°, kết luận tự nhiên nhất là:",
+      "correct_option": "A,E,B,F cùng thuộc đường tròn đường kính AB",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-duong-kinh"
+    },
+    {
+      "question_id": "GEO20V1_004",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "noi-tiep-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "noi-tiep-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Sau khi chứng minh A,B,C,D nội tiếp, muốn tạo hai tam giác đồng dạng nên ưu tiên khai thác:",
+      "correct_option": "Các góc nội tiếp cùng chắn một cung",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-goc"
+    },
+    {
+      "question_id": "GEO20V1_005",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "dong-dang-he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-he-thuc-tich",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ AB/DE = AC/DF, hệ thức tích tương ứng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO20V1_006",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "tam-giac-vuong-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tam-giac-vuong-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong ΔABC vuông tại A, AH⊥BC. Cặp đồng dạng dùng để suy ra AB²=BH·BC là:",
+      "correct_option": "ΔABH ∼ ΔCBA",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dong-dang-duong-cao"
+    },
+    {
+      "question_id": "GEO20V1_007",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-chung-minh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-chung-minh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "A thuộc đường tròn tâm O, d đi qua A. Nếu OA ⟂ d thì kết luận:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO20V1_008",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "chuoi-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "chuoi-suy-luan",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chuỗi nào phù hợp với một bài hình tổng hợp có song song, sau đó cần chứng minh hệ thức tích?",
+      "correct_option": "Song song → góc bằng nhau → đồng dạng → tỉ lệ → nhân chéo",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc"
+    },
+    {
+      "question_id": "GEO20V1_009",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "the-tich-hop-chu-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hop-chu-nhat",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình hộp chữ nhật có kích thước 3 cm × 4 cm × 2 cm. Thể tích bằng:",
+      "correct_option": "24 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_010",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "the-tich-lang-tru"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-lang-tru",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có diện tích đáy 12 cm² và chiều cao 5 cm. Thể tích là:",
+      "correct_option": "60 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_011",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "dien-tich-day"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-day",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có thể tích 120 cm³ và chiều cao 5 cm. Diện tích đáy bằng:",
+      "correct_option": "24 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-dien-tich-day"
+    },
+    {
+      "question_id": "GEO20V1_012",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "doi-don-vi-do-luong"
+      ],
+      "canonical_assessed_skill_candidate": "doi-don-vi-do-luong",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đổi 5 cm sang milimét:",
+      "correct_option": "50 mm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "doi-don-vi"
+    },
+    {
+      "question_id": "GEO20V1_013",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "bai-toan-tong-hop"
+      ],
+      "canonical_assessed_skill_candidate": "bai-toan-tong-hop",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bài hình tổng hợp đã có một tứ giác nội tiếp và mục tiêu cuối là chứng minh tích hai đoạn bằng nhau. Bước trung gian đáng ưu tiên là:",
+      "correct_option": "Tìm hai tam giác đồng dạng để tạo tỉ lệ",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc-tong-hop"
+    },
+    {
+      "question_id": "GEO20V1_014",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-dang-cong-cu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-cong-cu",
+      "learner_family_candidate": null,
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_METHOD_OR_NO_FAMILY_FORMATIVE",
+      "clone_family_candidate": "SYN20-AUTO-001",
+      "credit_mode_candidate": "FORMATIVE_ONLY_NO_LEARNER_FAMILY",
+      "correct_option_index": 0,
+      "question": "Dấu hiệu: Có DE ∥ BC trong tam giác ABC. Công cụ ưu tiên là:",
+      "correct_option": "Thales hoặc đồng dạng",
+      "note": "No learner-facing family by S3 family PASS; keep formative/method evidence only.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chon-cong-cu"
+    },
+    {
+      "question_id": "GEO20V1_015",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Song song → đồng dạng”: Trong ΔABC, D∈AB, E∈AC và DE ∥ BC. Chuỗi suy luận hợp lý nhất là:",
+      "correct_option": "Góc tương ứng bằng nhau → ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chuoi-song-song"
+    },
+    {
+      "question_id": "GEO20V1_016",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "hai-goc-vuong-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "hai-goc-vuong-noi-tiep",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Hai góc vuông → nội tiếp”: Nếu ∠AEB = ∠AFB = 90°, kết luận tự nhiên nhất là:",
+      "correct_option": "A,E,B,F cùng thuộc đường tròn đường kính AB",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-duong-kinh"
+    },
+    {
+      "question_id": "GEO20V1_017",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "noi-tiep-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "noi-tiep-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Nội tiếp → đồng dạng”: Sau khi chứng minh A,B,C,D nội tiếp, muốn tạo hai tam giác đồng dạng nên ưu tiên khai thác:",
+      "correct_option": "Các góc nội tiếp cùng chắn một cung",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-goc"
+    },
+    {
+      "question_id": "GEO20V1_018",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "dong-dang-he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-he-thuc-tich",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Đồng dạng → hệ thức tích”: Từ AB/DE = AC/DF, hệ thức tích tương ứng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO20V1_019",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "tam-giac-vuong-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tam-giac-vuong-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Đồng dạng trong tam giác vuông”: Trong ΔABC vuông tại A, AH⊥BC. Cặp đồng dạng dùng để suy ra AB²=BH·BC là:",
+      "correct_option": "ΔABH ∼ ΔCBA",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dong-dang-duong-cao"
+    },
+    {
+      "question_id": "GEO20V1_020",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-chung-minh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-chung-minh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O, d đi qua A. Nếu OA ⟂ d thì kết luận:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO20V1_021",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "chuoi-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "chuoi-suy-luan",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Chuỗi suy luận hình học”: Chuỗi nào phù hợp với một bài hình tổng hợp có song song, sau đó cần chứng minh hệ thức tích?",
+      "correct_option": "Song song → góc bằng nhau → đồng dạng → tỉ lệ → nhân chéo",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc"
+    },
+    {
+      "question_id": "GEO20V1_022",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "the-tich-hop-chu-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hop-chu-nhat",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình hộp chữ nhật có kích thước 4 cm × 6 cm × 3 cm. Thể tích bằng:",
+      "correct_option": "72 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_023",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "the-tich-lang-tru"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-lang-tru",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có diện tích đáy 15 cm² và chiều cao 6 cm. Thể tích là:",
+      "correct_option": "90 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_024",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "dien-tich-day"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-day",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có thể tích 150 cm³ và chiều cao 6 cm. Diện tích đáy bằng:",
+      "correct_option": "25 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-dien-tich-day"
+    },
+    {
+      "question_id": "GEO20V1_025",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "doi-don-vi-do-luong"
+      ],
+      "canonical_assessed_skill_candidate": "doi-don-vi-do-luong",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đổi 6 cm sang milimét:",
+      "correct_option": "60 mm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "doi-don-vi"
+    },
+    {
+      "question_id": "GEO20V1_026",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "bai-toan-tong-hop"
+      ],
+      "canonical_assessed_skill_candidate": "bai-toan-tong-hop",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Bài toán tổng hợp”: Trong bài hình tổng hợp đã có một tứ giác nội tiếp và mục tiêu cuối là chứng minh tích hai đoạn bằng nhau. Bước trung gian đáng ưu tiên là:",
+      "correct_option": "Tìm hai tam giác đồng dạng để tạo tỉ lệ",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc-tong-hop"
+    },
+    {
+      "question_id": "GEO20V1_027",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-dang-cong-cu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-cong-cu",
+      "learner_family_candidate": null,
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_METHOD_OR_NO_FAMILY_FORMATIVE",
+      "clone_family_candidate": "SYN20-AUTO-001",
+      "credit_mode_candidate": "FORMATIVE_ONLY_NO_LEARNER_FAMILY",
+      "correct_option_index": 0,
+      "question": "Dấu hiệu: Cần chứng minh tích hai đoạn bằng tích hai đoạn. Công cụ ưu tiên là:",
+      "correct_option": "Tìm tỉ số từ tam giác đồng dạng",
+      "note": "No learner-facing family by S3 family PASS; keep formative/method evidence only.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chon-cong-cu"
+    },
+    {
+      "question_id": "GEO20V1_028",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Song song → đồng dạng”: Trong ΔABC, D∈AB, E∈AC và DE ∥ BC. Chuỗi suy luận hợp lý nhất là:",
+      "correct_option": "Góc tương ứng bằng nhau → ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chuoi-song-song"
+    },
+    {
+      "question_id": "GEO20V1_029",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "hai-goc-vuong-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "hai-goc-vuong-noi-tiep",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Hai góc vuông → nội tiếp”: Nếu ∠AEB = ∠AFB = 90°, kết luận tự nhiên nhất là:",
+      "correct_option": "A,E,B,F cùng thuộc đường tròn đường kính AB",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-duong-kinh"
+    },
+    {
+      "question_id": "GEO20V1_030",
+      "source_file": "20-hinh-hoc-tong-hop-v1-01.json",
+      "legacy_skill_tags": [
+        "noi-tiep-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "noi-tiep-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Nội tiếp → đồng dạng”: Sau khi chứng minh A,B,C,D nội tiếp, muốn tạo hai tam giác đồng dạng nên ưu tiên khai thác:",
+      "correct_option": "Các góc nội tiếp cùng chắn một cung",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-goc"
+    },
+    {
+      "question_id": "GEO20V1_031",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "dong-dang-he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-he-thuc-tich",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Đồng dạng → hệ thức tích”: Từ AB/DE = AC/DF, hệ thức tích tương ứng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO20V1_032",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "tam-giac-vuong-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tam-giac-vuong-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Đồng dạng trong tam giác vuông”: Trong ΔABC vuông tại A, AH⊥BC. Cặp đồng dạng dùng để suy ra AB²=BH·BC là:",
+      "correct_option": "ΔABH ∼ ΔCBA",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dong-dang-duong-cao"
+    },
+    {
+      "question_id": "GEO20V1_033",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-chung-minh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-chung-minh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O, d đi qua A. Nếu OA ⟂ d thì kết luận:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO20V1_034",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "chuoi-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "chuoi-suy-luan",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Chuỗi suy luận hình học”: Chuỗi nào phù hợp với một bài hình tổng hợp có song song, sau đó cần chứng minh hệ thức tích?",
+      "correct_option": "Song song → góc bằng nhau → đồng dạng → tỉ lệ → nhân chéo",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc"
+    },
+    {
+      "question_id": "GEO20V1_035",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "the-tich-hop-chu-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hop-chu-nhat",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình hộp chữ nhật có kích thước 5 cm × 8 cm × 4 cm. Thể tích bằng:",
+      "correct_option": "160 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_036",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "the-tich-lang-tru"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-lang-tru",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có diện tích đáy 18 cm² và chiều cao 7 cm. Thể tích là:",
+      "correct_option": "126 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_037",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "dien-tich-day"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-day",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có thể tích 168 cm³ và chiều cao 7 cm. Diện tích đáy bằng:",
+      "correct_option": "24 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-dien-tich-day"
+    },
+    {
+      "question_id": "GEO20V1_038",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "doi-don-vi-do-luong"
+      ],
+      "canonical_assessed_skill_candidate": "doi-don-vi-do-luong",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đổi 7 cm sang milimét:",
+      "correct_option": "70 mm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "doi-don-vi"
+    },
+    {
+      "question_id": "GEO20V1_039",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "bai-toan-tong-hop"
+      ],
+      "canonical_assessed_skill_candidate": "bai-toan-tong-hop",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Bài toán tổng hợp”: Trong bài hình tổng hợp đã có một tứ giác nội tiếp và mục tiêu cuối là chứng minh tích hai đoạn bằng nhau. Bước trung gian đáng ưu tiên là:",
+      "correct_option": "Tìm hai tam giác đồng dạng để tạo tỉ lệ",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc-tong-hop"
+    },
+    {
+      "question_id": "GEO20V1_040",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-dang-cong-cu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-cong-cu",
+      "learner_family_candidate": null,
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_METHOD_OR_NO_FAMILY_FORMATIVE",
+      "clone_family_candidate": "SYN20-AUTO-001",
+      "credit_mode_candidate": "FORMATIVE_ONLY_NO_LEARNER_FAMILY",
+      "correct_option_index": 0,
+      "question": "Dấu hiệu: Đường thẳng qua A trên đường tròn và vuông góc OA. Công cụ ưu tiên là:",
+      "correct_option": "Tiếp tuyến",
+      "note": "No learner-facing family by S3 family PASS; keep formative/method evidence only.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chon-cong-cu"
+    },
+    {
+      "question_id": "GEO20V1_041",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Song song → đồng dạng”: Trong ΔABC, D∈AB, E∈AC và DE ∥ BC. Chuỗi suy luận hợp lý nhất là:",
+      "correct_option": "Góc tương ứng bằng nhau → ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chuoi-song-song"
+    },
+    {
+      "question_id": "GEO20V1_042",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "hai-goc-vuong-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "hai-goc-vuong-noi-tiep",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Hai góc vuông → nội tiếp”: Nếu ∠AEB = ∠AFB = 90°, kết luận tự nhiên nhất là:",
+      "correct_option": "A,E,B,F cùng thuộc đường tròn đường kính AB",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-duong-kinh"
+    },
+    {
+      "question_id": "GEO20V1_043",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "noi-tiep-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "noi-tiep-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Nội tiếp → đồng dạng”: Sau khi chứng minh A,B,C,D nội tiếp, muốn tạo hai tam giác đồng dạng nên ưu tiên khai thác:",
+      "correct_option": "Các góc nội tiếp cùng chắn một cung",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-goc"
+    },
+    {
+      "question_id": "GEO20V1_044",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "dong-dang-he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-he-thuc-tich",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Đồng dạng → hệ thức tích”: Từ AB/DE = AC/DF, hệ thức tích tương ứng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO20V1_045",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "tam-giac-vuong-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tam-giac-vuong-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Đồng dạng trong tam giác vuông”: Trong ΔABC vuông tại A, AH⊥BC. Cặp đồng dạng dùng để suy ra AB²=BH·BC là:",
+      "correct_option": "ΔABH ∼ ΔCBA",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dong-dang-duong-cao"
+    },
+    {
+      "question_id": "GEO20V1_046",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-chung-minh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-chung-minh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O, d đi qua A. Nếu OA ⟂ d thì kết luận:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO20V1_047",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "chuoi-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "chuoi-suy-luan",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Chuỗi suy luận hình học”: Chuỗi nào phù hợp với một bài hình tổng hợp có song song, sau đó cần chứng minh hệ thức tích?",
+      "correct_option": "Song song → góc bằng nhau → đồng dạng → tỉ lệ → nhân chéo",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc"
+    },
+    {
+      "question_id": "GEO20V1_048",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "the-tich-hop-chu-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hop-chu-nhat",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình hộp chữ nhật có kích thước 6 cm × 5 cm × 5 cm. Thể tích bằng:",
+      "correct_option": "150 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_049",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "the-tich-lang-tru"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-lang-tru",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có diện tích đáy 21 cm² và chiều cao 8 cm. Thể tích là:",
+      "correct_option": "168 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_050",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "dien-tich-day"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-day",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có thể tích 192 cm³ và chiều cao 8 cm. Diện tích đáy bằng:",
+      "correct_option": "24 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-dien-tich-day"
+    },
+    {
+      "question_id": "GEO20V1_051",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "doi-don-vi-do-luong"
+      ],
+      "canonical_assessed_skill_candidate": "doi-don-vi-do-luong",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đổi 8 cm sang milimét:",
+      "correct_option": "80 mm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "doi-don-vi"
+    },
+    {
+      "question_id": "GEO20V1_052",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "bai-toan-tong-hop"
+      ],
+      "canonical_assessed_skill_candidate": "bai-toan-tong-hop",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Bài toán tổng hợp”: Trong bài hình tổng hợp đã có một tứ giác nội tiếp và mục tiêu cuối là chứng minh tích hai đoạn bằng nhau. Bước trung gian đáng ưu tiên là:",
+      "correct_option": "Tìm hai tam giác đồng dạng để tạo tỉ lệ",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc-tong-hop"
+    },
+    {
+      "question_id": "GEO20V1_053",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-dang-cong-cu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-cong-cu",
+      "learner_family_candidate": null,
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_METHOD_OR_NO_FAMILY_FORMATIVE",
+      "clone_family_candidate": "SYN20-AUTO-001",
+      "credit_mode_candidate": "FORMATIVE_ONLY_NO_LEARNER_FAMILY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Nhận dạng công cụ”: Dấu hiệu: Có hai góc vuông cùng nhìn đoạn AB. Công cụ ưu tiên là:",
+      "correct_option": "Tứ giác nội tiếp",
+      "note": "No learner-facing family by S3 family PASS; keep formative/method evidence only.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chon-cong-cu"
+    },
+    {
+      "question_id": "GEO20V1_054",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Song song → đồng dạng”: Trong ΔABC, D∈AB, E∈AC và DE ∥ BC. Chuỗi suy luận hợp lý nhất là:",
+      "correct_option": "Góc tương ứng bằng nhau → ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chuoi-song-song"
+    },
+    {
+      "question_id": "GEO20V1_055",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "hai-goc-vuong-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "hai-goc-vuong-noi-tiep",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Hai góc vuông → nội tiếp”: Nếu ∠AEB = ∠AFB = 90°, kết luận tự nhiên nhất là:",
+      "correct_option": "A,E,B,F cùng thuộc đường tròn đường kính AB",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-duong-kinh"
+    },
+    {
+      "question_id": "GEO20V1_056",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "noi-tiep-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "noi-tiep-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Nội tiếp → đồng dạng”: Sau khi chứng minh A,B,C,D nội tiếp, muốn tạo hai tam giác đồng dạng nên ưu tiên khai thác:",
+      "correct_option": "Các góc nội tiếp cùng chắn một cung",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-goc"
+    },
+    {
+      "question_id": "GEO20V1_057",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "dong-dang-he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-he-thuc-tich",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Đồng dạng → hệ thức tích”: Từ AB/DE = AC/DF, hệ thức tích tương ứng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO20V1_058",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "tam-giac-vuong-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tam-giac-vuong-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Đồng dạng trong tam giác vuông”: Trong ΔABC vuông tại A, AH⊥BC. Cặp đồng dạng dùng để suy ra AB²=BH·BC là:",
+      "correct_option": "ΔABH ∼ ΔCBA",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dong-dang-duong-cao"
+    },
+    {
+      "question_id": "GEO20V1_059",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-chung-minh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-chung-minh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O, d đi qua A. Nếu OA ⟂ d thì kết luận:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO20V1_060",
+      "source_file": "20-hinh-hoc-tong-hop-v1-02.json",
+      "legacy_skill_tags": [
+        "chuoi-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "chuoi-suy-luan",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Chuỗi suy luận hình học”: Chuỗi nào phù hợp với một bài hình tổng hợp có song song, sau đó cần chứng minh hệ thức tích?",
+      "correct_option": "Song song → góc bằng nhau → đồng dạng → tỉ lệ → nhân chéo",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc"
+    },
+    {
+      "question_id": "GEO20V1_061",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "the-tich-hop-chu-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hop-chu-nhat",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình hộp chữ nhật có kích thước 7 cm × 7 cm × 2 cm. Thể tích bằng:",
+      "correct_option": "98 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_062",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "the-tich-lang-tru"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-lang-tru",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có diện tích đáy 24 cm² và chiều cao 9 cm. Thể tích là:",
+      "correct_option": "216 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_063",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "dien-tich-day"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-day",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có thể tích 216 cm³ và chiều cao 9 cm. Diện tích đáy bằng:",
+      "correct_option": "24 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-dien-tich-day"
+    },
+    {
+      "question_id": "GEO20V1_064",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-don-vi-do-luong"
+      ],
+      "canonical_assessed_skill_candidate": "doi-don-vi-do-luong",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đổi 9 cm sang milimét:",
+      "correct_option": "90 mm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "doi-don-vi"
+    },
+    {
+      "question_id": "GEO20V1_065",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "bai-toan-tong-hop"
+      ],
+      "canonical_assessed_skill_candidate": "bai-toan-tong-hop",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Bài toán tổng hợp”: Trong bài hình tổng hợp đã có một tứ giác nội tiếp và mục tiêu cuối là chứng minh tích hai đoạn bằng nhau. Bước trung gian đáng ưu tiên là:",
+      "correct_option": "Tìm hai tam giác đồng dạng để tạo tỉ lệ",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc-tong-hop"
+    },
+    {
+      "question_id": "GEO20V1_066",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-dang-cong-cu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-cong-cu",
+      "learner_family_candidate": null,
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_METHOD_OR_NO_FAMILY_FORMATIVE",
+      "clone_family_candidate": "SYN20-AUTO-001",
+      "credit_mode_candidate": "FORMATIVE_ONLY_NO_LEARNER_FAMILY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Nhận dạng công cụ”: Dấu hiệu: Có DE ∥ BC trong tam giác ABC. Công cụ ưu tiên là:",
+      "correct_option": "Thales hoặc đồng dạng",
+      "note": "No learner-facing family by S3 family PASS; keep formative/method evidence only.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chon-cong-cu"
+    },
+    {
+      "question_id": "GEO20V1_067",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Song song → đồng dạng”: Trong ΔABC, D∈AB, E∈AC và DE ∥ BC. Chuỗi suy luận hợp lý nhất là:",
+      "correct_option": "Góc tương ứng bằng nhau → ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chuoi-song-song"
+    },
+    {
+      "question_id": "GEO20V1_068",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "hai-goc-vuong-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "hai-goc-vuong-noi-tiep",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Hai góc vuông → nội tiếp”: Nếu ∠AEB = ∠AFB = 90°, kết luận tự nhiên nhất là:",
+      "correct_option": "A,E,B,F cùng thuộc đường tròn đường kính AB",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-duong-kinh"
+    },
+    {
+      "question_id": "GEO20V1_069",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "noi-tiep-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "noi-tiep-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Nội tiếp → đồng dạng”: Sau khi chứng minh A,B,C,D nội tiếp, muốn tạo hai tam giác đồng dạng nên ưu tiên khai thác:",
+      "correct_option": "Các góc nội tiếp cùng chắn một cung",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-goc"
+    },
+    {
+      "question_id": "GEO20V1_070",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "dong-dang-he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-he-thuc-tich",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Đồng dạng → hệ thức tích”: Từ AB/DE = AC/DF, hệ thức tích tương ứng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO20V1_071",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-giac-vuong-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tam-giac-vuong-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Đồng dạng trong tam giác vuông”: Trong ΔABC vuông tại A, AH⊥BC. Cặp đồng dạng dùng để suy ra AB²=BH·BC là:",
+      "correct_option": "ΔABH ∼ ΔCBA",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dong-dang-duong-cao"
+    },
+    {
+      "question_id": "GEO20V1_072",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-chung-minh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-chung-minh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O, d đi qua A. Nếu OA ⟂ d thì kết luận:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO20V1_073",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "chuoi-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "chuoi-suy-luan",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Chuỗi suy luận hình học”: Chuỗi nào phù hợp với một bài hình tổng hợp có song song, sau đó cần chứng minh hệ thức tích?",
+      "correct_option": "Song song → góc bằng nhau → đồng dạng → tỉ lệ → nhân chéo",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc"
+    },
+    {
+      "question_id": "GEO20V1_074",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "the-tich-hop-chu-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hop-chu-nhat",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình hộp chữ nhật có kích thước 8 cm × 4 cm × 3 cm. Thể tích bằng:",
+      "correct_option": "96 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_075",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "the-tich-lang-tru"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-lang-tru",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có diện tích đáy 27 cm² và chiều cao 10 cm. Thể tích là:",
+      "correct_option": "270 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_076",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "dien-tich-day"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-day",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có thể tích 270 cm³ và chiều cao 5 cm. Diện tích đáy bằng:",
+      "correct_option": "54 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-dien-tich-day"
+    },
+    {
+      "question_id": "GEO20V1_077",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-don-vi-do-luong"
+      ],
+      "canonical_assessed_skill_candidate": "doi-don-vi-do-luong",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đổi 10 cm sang milimét:",
+      "correct_option": "100 mm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "doi-don-vi"
+    },
+    {
+      "question_id": "GEO20V1_078",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "bai-toan-tong-hop"
+      ],
+      "canonical_assessed_skill_candidate": "bai-toan-tong-hop",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Bài toán tổng hợp”: Trong bài hình tổng hợp đã có một tứ giác nội tiếp và mục tiêu cuối là chứng minh tích hai đoạn bằng nhau. Bước trung gian đáng ưu tiên là:",
+      "correct_option": "Tìm hai tam giác đồng dạng để tạo tỉ lệ",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc-tong-hop"
+    },
+    {
+      "question_id": "GEO20V1_079",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-dang-cong-cu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-cong-cu",
+      "learner_family_candidate": null,
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_METHOD_OR_NO_FAMILY_FORMATIVE",
+      "clone_family_candidate": "SYN20-AUTO-001",
+      "credit_mode_candidate": "FORMATIVE_ONLY_NO_LEARNER_FAMILY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Nhận dạng công cụ”: Dấu hiệu: Cần chứng minh tích hai đoạn bằng tích hai đoạn. Công cụ ưu tiên là:",
+      "correct_option": "Tìm tỉ số từ tam giác đồng dạng",
+      "note": "No learner-facing family by S3 family PASS; keep formative/method evidence only.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chon-cong-cu"
+    },
+    {
+      "question_id": "GEO20V1_080",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Song song → đồng dạng”: Trong ΔABC, D∈AB, E∈AC và DE ∥ BC. Chuỗi suy luận hợp lý nhất là:",
+      "correct_option": "Góc tương ứng bằng nhau → ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chuoi-song-song"
+    },
+    {
+      "question_id": "GEO20V1_081",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "hai-goc-vuong-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "hai-goc-vuong-noi-tiep",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Hai góc vuông → nội tiếp”: Nếu ∠AEB = ∠AFB = 90°, kết luận tự nhiên nhất là:",
+      "correct_option": "A,E,B,F cùng thuộc đường tròn đường kính AB",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-duong-kinh"
+    },
+    {
+      "question_id": "GEO20V1_082",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "noi-tiep-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "noi-tiep-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Nội tiếp → đồng dạng”: Sau khi chứng minh A,B,C,D nội tiếp, muốn tạo hai tam giác đồng dạng nên ưu tiên khai thác:",
+      "correct_option": "Các góc nội tiếp cùng chắn một cung",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-goc"
+    },
+    {
+      "question_id": "GEO20V1_083",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "dong-dang-he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-he-thuc-tich",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Đồng dạng → hệ thức tích”: Từ AB/DE = AC/DF, hệ thức tích tương ứng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO20V1_084",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-giac-vuong-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tam-giac-vuong-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Đồng dạng trong tam giác vuông”: Trong ΔABC vuông tại A, AH⊥BC. Cặp đồng dạng dùng để suy ra AB²=BH·BC là:",
+      "correct_option": "ΔABH ∼ ΔCBA",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dong-dang-duong-cao"
+    },
+    {
+      "question_id": "GEO20V1_085",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-chung-minh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-chung-minh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O, d đi qua A. Nếu OA ⟂ d thì kết luận:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO20V1_086",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "chuoi-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "chuoi-suy-luan",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Chuỗi suy luận hình học”: Chuỗi nào phù hợp với một bài hình tổng hợp có song song, sau đó cần chứng minh hệ thức tích?",
+      "correct_option": "Song song → góc bằng nhau → đồng dạng → tỉ lệ → nhân chéo",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc"
+    },
+    {
+      "question_id": "GEO20V1_087",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "the-tich-hop-chu-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hop-chu-nhat",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình hộp chữ nhật có kích thước 3 cm × 6 cm × 4 cm. Thể tích bằng:",
+      "correct_option": "72 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_088",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "the-tich-lang-tru"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-lang-tru",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có diện tích đáy 30 cm² và chiều cao 5 cm. Thể tích là:",
+      "correct_option": "150 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_089",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "dien-tich-day"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-day",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có thể tích 120 cm³ và chiều cao 6 cm. Diện tích đáy bằng:",
+      "correct_option": "20 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-dien-tich-day"
+    },
+    {
+      "question_id": "GEO20V1_090",
+      "source_file": "20-hinh-hoc-tong-hop-v1-03.json",
+      "legacy_skill_tags": [
+        "doi-don-vi-do-luong"
+      ],
+      "canonical_assessed_skill_candidate": "doi-don-vi-do-luong",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đổi 11 cm sang milimét:",
+      "correct_option": "110 mm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "doi-don-vi"
+    },
+    {
+      "question_id": "GEO20V1_091",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "bai-toan-tong-hop"
+      ],
+      "canonical_assessed_skill_candidate": "bai-toan-tong-hop",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Bài toán tổng hợp”: Trong bài hình tổng hợp đã có một tứ giác nội tiếp và mục tiêu cuối là chứng minh tích hai đoạn bằng nhau. Bước trung gian đáng ưu tiên là:",
+      "correct_option": "Tìm hai tam giác đồng dạng để tạo tỉ lệ",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc-tong-hop"
+    },
+    {
+      "question_id": "GEO20V1_092",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "nhan-dang-cong-cu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-cong-cu",
+      "learner_family_candidate": null,
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_METHOD_OR_NO_FAMILY_FORMATIVE",
+      "clone_family_candidate": "SYN20-AUTO-001",
+      "credit_mode_candidate": "FORMATIVE_ONLY_NO_LEARNER_FAMILY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Nhận dạng công cụ”: Dấu hiệu: Đường thẳng qua A trên đường tròn và vuông góc OA. Công cụ ưu tiên là:",
+      "correct_option": "Tiếp tuyến",
+      "note": "No learner-facing family by S3 family PASS; keep formative/method evidence only.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chon-cong-cu"
+    },
+    {
+      "question_id": "GEO20V1_093",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Song song → đồng dạng”: Trong ΔABC, D∈AB, E∈AC và DE ∥ BC. Chuỗi suy luận hợp lý nhất là:",
+      "correct_option": "Góc tương ứng bằng nhau → ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chuoi-song-song"
+    },
+    {
+      "question_id": "GEO20V1_094",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "hai-goc-vuong-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "hai-goc-vuong-noi-tiep",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Hai góc vuông → nội tiếp”: Nếu ∠AEB = ∠AFB = 90°, kết luận tự nhiên nhất là:",
+      "correct_option": "A,E,B,F cùng thuộc đường tròn đường kính AB",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-duong-kinh"
+    },
+    {
+      "question_id": "GEO20V1_095",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "noi-tiep-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "noi-tiep-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Nội tiếp → đồng dạng”: Sau khi chứng minh A,B,C,D nội tiếp, muốn tạo hai tam giác đồng dạng nên ưu tiên khai thác:",
+      "correct_option": "Các góc nội tiếp cùng chắn một cung",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-goc"
+    },
+    {
+      "question_id": "GEO20V1_096",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "dong-dang-he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-he-thuc-tich",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Đồng dạng → hệ thức tích”: Từ AB/DE = AC/DF, hệ thức tích tương ứng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO20V1_097",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "tam-giac-vuong-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tam-giac-vuong-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Đồng dạng trong tam giác vuông”: Trong ΔABC vuông tại A, AH⊥BC. Cặp đồng dạng dùng để suy ra AB²=BH·BC là:",
+      "correct_option": "ΔABH ∼ ΔCBA",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dong-dang-duong-cao"
+    },
+    {
+      "question_id": "GEO20V1_098",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-chung-minh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-chung-minh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O, d đi qua A. Nếu OA ⟂ d thì kết luận:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO20V1_099",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "chuoi-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "chuoi-suy-luan",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Chuỗi suy luận hình học”: Chuỗi nào phù hợp với một bài hình tổng hợp có song song, sau đó cần chứng minh hệ thức tích?",
+      "correct_option": "Song song → góc bằng nhau → đồng dạng → tỉ lệ → nhân chéo",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc"
+    },
+    {
+      "question_id": "GEO20V1_100",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "the-tich-hop-chu-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hop-chu-nhat",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình hộp chữ nhật có kích thước 4 cm × 8 cm × 5 cm. Thể tích bằng:",
+      "correct_option": "160 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_101",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "the-tich-lang-tru"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-lang-tru",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có diện tích đáy 12 cm² và chiều cao 6 cm. Thể tích là:",
+      "correct_option": "72 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_102",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "dien-tich-day"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-day",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Diện tích đáy”: Lăng trụ đứng có thể tích 168 cm³ và chiều cao 7 cm. Diện tích đáy bằng:",
+      "correct_option": "24 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-dien-tich-day"
+    },
+    {
+      "question_id": "GEO20V1_103",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "doi-don-vi-do-luong"
+      ],
+      "canonical_assessed_skill_candidate": "doi-don-vi-do-luong",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đổi 12 cm sang milimét:",
+      "correct_option": "120 mm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "doi-don-vi"
+    },
+    {
+      "question_id": "GEO20V1_104",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "bai-toan-tong-hop"
+      ],
+      "canonical_assessed_skill_candidate": "bai-toan-tong-hop",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Bài toán tổng hợp”: Trong bài hình tổng hợp đã có một tứ giác nội tiếp và mục tiêu cuối là chứng minh tích hai đoạn bằng nhau. Bước trung gian đáng ưu tiên là:",
+      "correct_option": "Tìm hai tam giác đồng dạng để tạo tỉ lệ",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc-tong-hop"
+    },
+    {
+      "question_id": "GEO20V1_105",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "nhan-dang-cong-cu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-cong-cu",
+      "learner_family_candidate": null,
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_METHOD_OR_NO_FAMILY_FORMATIVE",
+      "clone_family_candidate": "SYN20-AUTO-001",
+      "credit_mode_candidate": "FORMATIVE_ONLY_NO_LEARNER_FAMILY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Nhận dạng công cụ”: Dấu hiệu: Có hai góc vuông cùng nhìn đoạn AB. Công cụ ưu tiên là:",
+      "correct_option": "Tứ giác nội tiếp",
+      "note": "No learner-facing family by S3 family PASS; keep formative/method evidence only.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chon-cong-cu"
+    },
+    {
+      "question_id": "GEO20V1_106",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không thêm giả thiết, xét “Song song → đồng dạng”: Trong ΔABC, D∈AB, E∈AC và DE ∥ BC. Chuỗi suy luận hợp lý nhất là:",
+      "correct_option": "Góc tương ứng bằng nhau → ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chuoi-song-song"
+    },
+    {
+      "question_id": "GEO20V1_107",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "hai-goc-vuong-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "hai-goc-vuong-noi-tiep",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không thêm giả thiết, xét “Hai góc vuông → nội tiếp”: Nếu ∠AEB = ∠AFB = 90°, kết luận tự nhiên nhất là:",
+      "correct_option": "A,E,B,F cùng thuộc đường tròn đường kính AB",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-duong-kinh"
+    },
+    {
+      "question_id": "GEO20V1_108",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "noi-tiep-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "noi-tiep-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không thêm giả thiết, xét “Nội tiếp → đồng dạng”: Sau khi chứng minh A,B,C,D nội tiếp, muốn tạo hai tam giác đồng dạng nên ưu tiên khai thác:",
+      "correct_option": "Các góc nội tiếp cùng chắn một cung",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-goc"
+    },
+    {
+      "question_id": "GEO20V1_109",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "dong-dang-he-thuc-tich"
+      ],
+      "canonical_assessed_skill_candidate": "dong-dang-he-thuc-tich",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không thêm giả thiết, xét “Đồng dạng → hệ thức tích”: Từ AB/DE = AC/DF, hệ thức tích tương ứng là:",
+      "correct_option": "AB·DF = AC·DE",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO20V1_110",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "tam-giac-vuong-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "tam-giac-vuong-dong-dang",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không thêm giả thiết, xét “Đồng dạng trong tam giác vuông”: Trong ΔABC vuông tại A, AH⊥BC. Cặp đồng dạng dùng để suy ra AB²=BH·BC là:",
+      "correct_option": "ΔABH ∼ ΔCBA",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dong-dang-duong-cao"
+    },
+    {
+      "question_id": "GEO20V1_111",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-chung-minh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-chung-minh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không thêm giả thiết, xét “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O, d đi qua A. Nếu OA ⟂ d thì kết luận:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO20V1_112",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "chuoi-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "chuoi-suy-luan",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không thêm giả thiết, xét “Chuỗi suy luận hình học”: Chuỗi nào phù hợp với một bài hình tổng hợp có song song, sau đó cần chứng minh hệ thức tích?",
+      "correct_option": "Song song → góc bằng nhau → đồng dạng → tỉ lệ → nhân chéo",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc"
+    },
+    {
+      "question_id": "GEO20V1_113",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "the-tich-hop-chu-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hop-chu-nhat",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình hộp chữ nhật có kích thước 5 cm × 5 cm × 2 cm. Thể tích bằng:",
+      "correct_option": "50 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_114",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "the-tich-lang-tru"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-lang-tru",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có diện tích đáy 15 cm² và chiều cao 7 cm. Thể tích là:",
+      "correct_option": "105 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich"
+    },
+    {
+      "question_id": "GEO20V1_115",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "dien-tich-day"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-day",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Diện tích đáy”: Lăng trụ đứng có thể tích 192 cm³ và chiều cao 8 cm. Diện tích đáy bằng:",
+      "correct_option": "24 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tim-dien-tich-day"
+    },
+    {
+      "question_id": "GEO20V1_116",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "doi-don-vi-do-luong"
+      ],
+      "canonical_assessed_skill_candidate": "doi-don-vi-do-luong",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đổi 13 cm sang milimét:",
+      "correct_option": "130 mm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "doi-don-vi"
+    },
+    {
+      "question_id": "GEO20V1_117",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "bai-toan-tong-hop"
+      ],
+      "canonical_assessed_skill_candidate": "bai-toan-tong-hop",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không thêm giả thiết, xét “Bài toán tổng hợp”: Trong bài hình tổng hợp đã có một tứ giác nội tiếp và mục tiêu cuối là chứng minh tích hai đoạn bằng nhau. Bước trung gian đáng ưu tiên là:",
+      "correct_option": "Tìm hai tam giác đồng dạng để tạo tỉ lệ",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chien-luoc-tong-hop"
+    },
+    {
+      "question_id": "GEO20V1_118",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "nhan-dang-cong-cu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-cong-cu",
+      "learner_family_candidate": null,
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_METHOD_OR_NO_FAMILY_FORMATIVE",
+      "clone_family_candidate": "SYN20-AUTO-001",
+      "credit_mode_candidate": "FORMATIVE_ONLY_NO_LEARNER_FAMILY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Nhận dạng công cụ”: Dấu hiệu: Có DE ∥ BC trong tam giác ABC. Công cụ ưu tiên là:",
+      "correct_option": "Thales hoặc đồng dạng",
+      "note": "No learner-facing family by S3 family PASS; keep formative/method evidence only.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chon-cong-cu"
+    },
+    {
+      "question_id": "GEO20V1_119",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "song-song-dong-dang"
+      ],
+      "canonical_assessed_skill_candidate": "song-song-dong-dang",
+      "learner_family_candidate": "SIM-CHAIN",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Xét một cách hỏi khác của “Song song → đồng dạng”: Trong ΔABC, D∈AB, E∈AC và DE ∥ BC. Chuỗi suy luận hợp lý nhất là:",
+      "correct_option": "Góc tương ứng bằng nhau → ΔADE ∼ ΔABC",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chuoi-song-song"
+    },
+    {
+      "question_id": "GEO20V1_120",
+      "source_file": "20-hinh-hoc-tong-hop-v1-04.json",
+      "legacy_skill_tags": [
+        "hai-goc-vuong-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "hai-goc-vuong-noi-tiep",
+      "learner_family_candidate": "GEO-SYNTHESIS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "SYN20-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Xét một cách hỏi khác của “Hai góc vuông → nội tiếp”: Nếu ∠AEB = ∠AFB = 90°, kết luận tự nhiên nhất là:",
+      "correct_option": "A,E,B,F cùng thuộc đường tròn đường kính AB",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "noi-tiep-duong-kinh"
+    },
+    {
+      "question_id": "SYN20V1_121",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-tam-giac-deu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-tam-giac-deu",
+      "learner_family_candidate": "TRI-SPECIAL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác có ba cạnh bằng nhau là:",
+      "correct_option": "Tam giác đều",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-tam-giac-deu"
+    },
+    {
+      "question_id": "SYN20V1_122",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-tam-giac-deu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-tam-giac-deu",
+      "learner_family_candidate": "TRI-SPECIAL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Mỗi góc của tam giác đều bằng:",
+      "correct_option": "60°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-tam-giac-deu"
+    },
+    {
+      "question_id": "SYN20V1_123",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-tam-giac-deu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-tam-giac-deu",
+      "learner_family_candidate": "TRI-SPECIAL",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác ABC có AB=BC=CA. Kết luận:",
+      "correct_option": "ABC đều",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-tam-giac-deu"
+    },
+    {
+      "question_id": "SYN20V1_124",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-vuong"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-vuong",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác có bốn cạnh bằng nhau và bốn góc vuông là:",
+      "correct_option": "Hình vuông",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-vuong"
+    },
+    {
+      "question_id": "SYN20V1_125",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-vuong"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-vuong",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình vuông có số góc vuông:",
+      "correct_option": "4",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-vuong"
+    },
+    {
+      "question_id": "SYN20V1_126",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-vuong"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-vuong",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình chữ nhật có hai cạnh kề bằng nhau là:",
+      "correct_option": "Hình vuông",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-vuong"
+    },
+    {
+      "question_id": "SYN20V1_127",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-luc-giac-deu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-luc-giac-deu",
+      "learner_family_candidate": "GEO-REGULAR-SYMM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lục giác đều có:",
+      "correct_option": "6 cạnh bằng nhau và 6 góc bằng nhau",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-luc-giac-deu"
+    },
+    {
+      "question_id": "SYN20V1_128",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-luc-giac-deu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-luc-giac-deu",
+      "learner_family_candidate": "GEO-REGULAR-SYMM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Mỗi góc trong lục giác đều:",
+      "correct_option": "120°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-luc-giac-deu"
+    },
+    {
+      "question_id": "SYN20V1_129",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-luc-giac-deu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-luc-giac-deu",
+      "learner_family_candidate": "GEO-REGULAR-SYMM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lục giác đều có bao nhiêu cạnh?",
+      "correct_option": "6",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-luc-giac-deu"
+    },
+    {
+      "question_id": "SYN20V1_130",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-tu-giac-dac-biet"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-tu-giac-dac-biet",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-017",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác có hai cặp cạnh đối song song là:",
+      "correct_option": "Hình bình hành",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-tu-giac-dac-biet"
+    },
+    {
+      "question_id": "SYN20V1_131",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-tu-giac-dac-biet"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-tu-giac-dac-biet",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-017",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình bình hành có một góc vuông là:",
+      "correct_option": "Hình chữ nhật",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-tu-giac-dac-biet"
+    },
+    {
+      "question_id": "SYN20V1_132",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-tu-giac-dac-biet"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-tu-giac-dac-biet",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-017",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình bình hành có hai cạnh kề bằng nhau là:",
+      "correct_option": "Hình thoi",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-tu-giac-dac-biet"
+    },
+    {
+      "question_id": "SYN20V1_133",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "chu-vi-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "chu-vi-tu-giac",
+      "learner_family_candidate": "GEO-PLANE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-018",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình chữ nhật 5 cm × 3 cm có chu vi:",
+      "correct_option": "16 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chu-vi-tu-giac"
+    },
+    {
+      "question_id": "SYN20V1_134",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "chu-vi-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "chu-vi-tu-giac",
+      "learner_family_candidate": "GEO-PLANE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-018",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình vuông cạnh 7 cm có chu vi:",
+      "correct_option": "28 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chu-vi-tu-giac"
+    },
+    {
+      "question_id": "SYN20V1_135",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "chu-vi-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "chu-vi-tu-giac",
+      "learner_family_candidate": "GEO-PLANE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-018",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác có các cạnh 2,3,4,5 cm. Chu vi:",
+      "correct_option": "14 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "chu-vi-tu-giac"
+    },
+    {
+      "question_id": "SYN20V1_136",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-tu-giac",
+      "learner_family_candidate": "GEO-PLANE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-019",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình chữ nhật 7×4 cm có diện tích:",
+      "correct_option": "28 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-tu-giac"
+    },
+    {
+      "question_id": "SYN20V1_137",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-tu-giac",
+      "learner_family_candidate": "GEO-PLANE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-019",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình vuông cạnh 6 cm có diện tích:",
+      "correct_option": "36 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-tu-giac"
+    },
+    {
+      "question_id": "SYN20V1_138",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-tu-giac",
+      "learner_family_candidate": "GEO-PLANE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-019",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình thang có hai đáy 6,10 cm và cao 4 cm. Diện tích:",
+      "correct_option": "32 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-tu-giac"
+    },
+    {
+      "question_id": "SYN20V1_139",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "do-luong-thuc-te"
+      ],
+      "canonical_assessed_skill_candidate": "do-luong-thuc-te",
+      "learner_family_candidate": "GEO-PLANE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phòng dài 5 m, rộng 4 m. Diện tích sàn:",
+      "correct_option": "20 m²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-luong-thuc-te"
+    },
+    {
+      "question_id": "SYN20V1_140",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "do-luong-thuc-te"
+      ],
+      "canonical_assessed_skill_candidate": "do-luong-thuc-te",
+      "learner_family_candidate": "GEO-PLANE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một hàng rào quanh sân vuông cạnh 8 m cần tối thiểu:",
+      "correct_option": "32 m",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-luong-thuc-te"
+    },
+    {
+      "question_id": "SYN20V1_141",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "do-luong-thuc-te"
+      ],
+      "canonical_assessed_skill_candidate": "do-luong-thuc-te",
+      "learner_family_candidate": "GEO-PLANE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tấm bìa 200 cm × 50 cm có diện tích theo m²:",
+      "correct_option": "1 m²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-luong-thuc-te"
+    },
+    {
+      "question_id": "SYN20V1_142",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "truc-doi-xung"
+      ],
+      "canonical_assessed_skill_candidate": "truc-doi-xung",
+      "learner_family_candidate": "GEO-REGULAR-SYMM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-021",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình vuông có số trục đối xứng:",
+      "correct_option": "4",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "truc-doi-xung"
+    },
+    {
+      "question_id": "SYN20V1_143",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "truc-doi-xung"
+      ],
+      "canonical_assessed_skill_candidate": "truc-doi-xung",
+      "learner_family_candidate": "GEO-REGULAR-SYMM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-021",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình chữ nhật không phải hình vuông có số trục đối xứng:",
+      "correct_option": "2",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "truc-doi-xung"
+    },
+    {
+      "question_id": "SYN20V1_144",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "truc-doi-xung"
+      ],
+      "canonical_assessed_skill_candidate": "truc-doi-xung",
+      "learner_family_candidate": "GEO-REGULAR-SYMM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-021",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một đường thẳng là trục đối xứng nếu phép đối xứng qua nó:",
+      "correct_option": "Biến hình thành chính nó",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "truc-doi-xung"
+    },
+    {
+      "question_id": "SYN20V1_145",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "tam-doi-xung"
+      ],
+      "canonical_assessed_skill_candidate": "tam-doi-xung",
+      "learner_family_candidate": "GEO-REGULAR-SYMM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tâm hình bình hành là:",
+      "correct_option": "Giao điểm hai đường chéo",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-doi-xung"
+    },
+    {
+      "question_id": "SYN20V1_146",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "tam-doi-xung"
+      ],
+      "canonical_assessed_skill_candidate": "tam-doi-xung",
+      "learner_family_candidate": "GEO-REGULAR-SYMM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình chữ nhật có tâm đối xứng tại:",
+      "correct_option": "Giao điểm hai đường chéo",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-doi-xung"
+    },
+    {
+      "question_id": "SYN20V1_147",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "tam-doi-xung"
+      ],
+      "canonical_assessed_skill_candidate": "tam-doi-xung",
+      "learner_family_candidate": "GEO-REGULAR-SYMM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đối xứng tâm O biến điểm A thành A' khi:",
+      "correct_option": "O là trung điểm AA'",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-doi-xung"
+    },
+    {
+      "question_id": "SYN20V1_148",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-hop-lap-phuong"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-hop-lap-phuong",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-023",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình hộp chữ nhật có:",
+      "correct_option": "6 mặt là hình chữ nhật",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-hop-lap-phuong"
+    },
+    {
+      "question_id": "SYN20V1_149",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-hop-lap-phuong"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-hop-lap-phuong",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-023",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình lập phương có:",
+      "correct_option": "6 mặt vuông bằng nhau",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-hop-lap-phuong"
+    },
+    {
+      "question_id": "SYN20V1_150",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-hop-lap-phuong"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-hop-lap-phuong",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-023",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Mọi hình lập phương là:",
+      "correct_option": "Hình hộp chữ nhật đặc biệt",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-hop-lap-phuong"
+    },
+    {
+      "question_id": "SYN20V1_151",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-hop-chu-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-hop-chu-nhat",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-024",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hộp chữ nhật đáy 3×4 cm, cao 5 cm. Sxq:",
+      "correct_option": "70 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-hop-chu-nhat"
+    },
+    {
+      "question_id": "SYN20V1_152",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-hop-chu-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-hop-chu-nhat",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-024",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình lập phương cạnh 2 cm. Sxq (4 mặt bên):",
+      "correct_option": "16 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-hop-chu-nhat"
+    },
+    {
+      "question_id": "SYN20V1_153",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-hop-chu-nhat"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-hop-chu-nhat",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-024",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hộp chữ nhật có chu vi đáy 18 cm, cao 4 cm. Sxq:",
+      "correct_option": "72 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-hop-chu-nhat"
+    },
+    {
+      "question_id": "SYN20V1_154",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-lang-tru-dung"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-lang-tru-dung",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-025",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có các cạnh bên:",
+      "correct_option": "Vuông góc với hai mặt đáy",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-lang-tru-dung"
+    },
+    {
+      "question_id": "SYN20V1_155",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-lang-tru-dung"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-lang-tru-dung",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-025",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai mặt đáy của lăng trụ đứng:",
+      "correct_option": "Là hai đa giác bằng nhau và song song",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-lang-tru-dung"
+    },
+    {
+      "question_id": "SYN20V1_156",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-lang-tru-dung"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-lang-tru-dung",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-025",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Mặt bên lăng trụ đứng là:",
+      "correct_option": "Hình chữ nhật",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-lang-tru-dung"
+    },
+    {
+      "question_id": "SYN20V1_157",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-lang-tru"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-lang-tru",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-026",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng Pđáy=14 cm,h=6 cm. Sxq:",
+      "correct_option": "84 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-lang-tru"
+    },
+    {
+      "question_id": "SYN20V1_158",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-lang-tru"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-lang-tru",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-026",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng có Sxq=60 cm²,h=5 cm. Pđáy:",
+      "correct_option": "12 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-lang-tru"
+    },
+    {
+      "question_id": "SYN20V1_159",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-lang-tru"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-lang-tru",
+      "learner_family_candidate": "SOLID-PRISM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-026",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lăng trụ đứng đáy tam giác cạnh 3,4,5 cm, h=10 cm. Sxq:",
+      "correct_option": "120 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-lang-tru"
+    },
+    {
+      "question_id": "SYN20V1_160",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-chop-deu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-chop-deu",
+      "learner_family_candidate": "SOLID-PYRAMID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-027",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình chóp đều có đáy:",
+      "correct_option": "Đa giác đều",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-chop-deu"
+    },
+    {
+      "question_id": "SYN20V1_161",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-chop-deu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-chop-deu",
+      "learner_family_candidate": "SOLID-PYRAMID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-027",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chân đường cao của hình chóp đều nằm tại:",
+      "correct_option": "Tâm của đa giác đáy",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-chop-deu"
+    },
+    {
+      "question_id": "SYN20V1_162",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-chop-deu"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-chop-deu",
+      "learner_family_candidate": "SOLID-PYRAMID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-027",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Các mặt bên của hình chóp đều là:",
+      "correct_option": "Các tam giác cân bằng nhau",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-chop-deu"
+    },
+    {
+      "question_id": "SYN20V1_163",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-hinh-chop"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-hinh-chop",
+      "learner_family_candidate": "SOLID-PYRAMID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình chóp đều có nửa chu vi đáy p=10 cm, trung đoạn d=6 cm. Sxq:",
+      "correct_option": "60 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-hinh-chop"
+    },
+    {
+      "question_id": "SYN20V1_164",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-hinh-chop"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-hinh-chop",
+      "learner_family_candidate": "SOLID-PYRAMID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu chu vi đáy P=24 cm và trung đoạn d=5 cm, Sxq:",
+      "correct_option": "60 cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-hinh-chop"
+    },
+    {
+      "question_id": "SYN20V1_165",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-hinh-chop"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-hinh-chop",
+      "learner_family_candidate": "SOLID-PYRAMID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-028",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình chóp đều có Sxq=48 cm²,p=8 cm. Trung đoạn:",
+      "correct_option": "6 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-hinh-chop"
+    },
+    {
+      "question_id": "SYN20V1_166",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "the-tich-hinh-chop"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hinh-chop",
+      "learner_family_candidate": "SOLID-PYRAMID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-029",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Sđáy=24 cm²,h=9 cm. V chóp:",
+      "correct_option": "72 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich-hinh-chop"
+    },
+    {
+      "question_id": "SYN20V1_167",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "the-tich-hinh-chop"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hinh-chop",
+      "learner_family_candidate": "SOLID-PYRAMID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-029",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "V=100 cm³,Sđáy=25 cm². h:",
+      "correct_option": "12 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich-hinh-chop"
+    },
+    {
+      "question_id": "SYN20V1_168",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "the-tich-hinh-chop"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hinh-chop",
+      "learner_family_candidate": "SOLID-PYRAMID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-029",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chóp đáy vuông cạnh 6 cm,h=5 cm. V:",
+      "correct_option": "60 cm³",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich-hinh-chop"
+    },
+    {
+      "question_id": "SYN20V1_169",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-tru"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-tru",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-030",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình trụ có hai đáy:",
+      "correct_option": "Hai hình tròn bằng nhau song song",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-tru"
+    },
+    {
+      "question_id": "SYN20V1_170",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-tru"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-tru",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-030",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khi quay hình chữ nhật quanh một cạnh cố định, có thể tạo:",
+      "correct_option": "Hình trụ",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-tru"
+    },
+    {
+      "question_id": "SYN20V1_171",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-tru"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-tru",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-030",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chiều cao hình trụ là:",
+      "correct_option": "Khoảng cách giữa hai mặt phẳng đáy",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-tru"
+    },
+    {
+      "question_id": "SYN20V1_172",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-hinh-tru"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-hinh-tru",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-031",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình trụ r=3,h=5. Sxq:",
+      "correct_option": "30π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-hinh-tru"
+    },
+    {
+      "question_id": "SYN20V1_173",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-hinh-tru"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-hinh-tru",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-031",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình trụ đường kính 8,h=2. Sxq:",
+      "correct_option": "16π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-hinh-tru"
+    },
+    {
+      "question_id": "SYN20V1_174",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-hinh-tru"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-hinh-tru",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-031",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Sxq=40π,r=4. h:",
+      "correct_option": "5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-hinh-tru"
+    },
+    {
+      "question_id": "SYN20V1_175",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "the-tich-hinh-tru"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hinh-tru",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-032",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình trụ r=2,h=7. V:",
+      "correct_option": "28π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich-hinh-tru"
+    },
+    {
+      "question_id": "SYN20V1_176",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "the-tich-hinh-tru"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hinh-tru",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-032",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình trụ diện tích đáy 9π,h=10. V:",
+      "correct_option": "90π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich-hinh-tru"
+    },
+    {
+      "question_id": "SYN20V1_177",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "the-tich-hinh-tru"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hinh-tru",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-032",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "V=48π,r=4. h:",
+      "correct_option": "3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich-hinh-tru"
+    },
+    {
+      "question_id": "SYN20V1_178",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-non"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-non",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-033",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình nón có:",
+      "correct_option": "Một đáy tròn và một đỉnh",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-non"
+    },
+    {
+      "question_id": "SYN20V1_179",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-non"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-non",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-033",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đường sinh l của hình nón là đoạn:",
+      "correct_option": "Từ đỉnh tới một điểm trên đường tròn đáy dọc mặt bên",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-non"
+    },
+    {
+      "question_id": "SYN20V1_180",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-non"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-non",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-033",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong nón tròn xoay vuông, r,h,l thỏa:",
+      "correct_option": "l²=r²+h²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-non"
+    },
+    {
+      "question_id": "SYN20V1_181",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-hinh-non"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-hinh-non",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nón r=3,l=5. Sxq:",
+      "correct_option": "15π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-hinh-non"
+    },
+    {
+      "question_id": "SYN20V1_182",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-hinh-non"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-hinh-non",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nón r=4,l=6. Sxq:",
+      "correct_option": "24π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-hinh-non"
+    },
+    {
+      "question_id": "SYN20V1_183",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-xung-quanh-hinh-non"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-xung-quanh-hinh-non",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-034",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Sxq=20π,r=4. l:",
+      "correct_option": "5",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-xung-quanh-hinh-non"
+    },
+    {
+      "question_id": "SYN20V1_184",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "the-tich-hinh-non"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hinh-non",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-035",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nón r=3,h=4. V:",
+      "correct_option": "12π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich-hinh-non"
+    },
+    {
+      "question_id": "SYN20V1_185",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "the-tich-hinh-non"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hinh-non",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-035",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nón Sđáy=25π,h=6. V:",
+      "correct_option": "50π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich-hinh-non"
+    },
+    {
+      "question_id": "SYN20V1_186",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "the-tich-hinh-non"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hinh-non",
+      "learner_family_candidate": "SOLID-CYL-CONE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-035",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "V=16π,r=2. h:",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich-hinh-non"
+    },
+    {
+      "question_id": "SYN20V1_187",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-cau"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-cau",
+      "learner_family_candidate": "SOLID-SPHERE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-036",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Mặt cầu tâm O bán kính R gồm các điểm:",
+      "correct_option": "Cách O đúng R",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-cau"
+    },
+    {
+      "question_id": "SYN20V1_188",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-cau"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-cau",
+      "learner_family_candidate": "SOLID-SPHERE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-036",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình cầu bán kính R gồm các điểm:",
+      "correct_option": "Cách tâm O không quá R",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-cau"
+    },
+    {
+      "question_id": "SYN20V1_189",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "nhan-biet-hinh-cau"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-hinh-cau",
+      "learner_family_candidate": "SOLID-SPHERE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-036",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đường kính hình cầu bán kính 7 cm:",
+      "correct_option": "14 cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-cau"
+    },
+    {
+      "question_id": "SYN20V1_190",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-mat-cau"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-mat-cau",
+      "learner_family_candidate": "SOLID-SPHERE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-037",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Mặt cầu r=2. Diện tích:",
+      "correct_option": "16π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-mat-cau"
+    },
+    {
+      "question_id": "SYN20V1_191",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-mat-cau"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-mat-cau",
+      "learner_family_candidate": "SOLID-SPHERE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-037",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Mặt cầu r=5. Diện tích:",
+      "correct_option": "100π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-mat-cau"
+    },
+    {
+      "question_id": "SYN20V1_192",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-mat-cau"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-mat-cau",
+      "learner_family_candidate": "SOLID-SPHERE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-037",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Diện tích mặt cầu 36π. Bán kính:",
+      "correct_option": "3",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-mat-cau"
+    },
+    {
+      "question_id": "SYN20V1_193",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "the-tich-hinh-cau"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hinh-cau",
+      "learner_family_candidate": "SOLID-SPHERE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-038",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình cầu r=3. V:",
+      "correct_option": "36π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich-hinh-cau"
+    },
+    {
+      "question_id": "SYN20V1_194",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "the-tich-hinh-cau"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hinh-cau",
+      "learner_family_candidate": "SOLID-SPHERE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-038",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình cầu r=6. V:",
+      "correct_option": "288π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich-hinh-cau"
+    },
+    {
+      "question_id": "SYN20V1_195",
+      "source_file": "20-hinh-hoc-tong-hop-v1-05.json",
+      "legacy_skill_tags": [
+        "the-tich-hinh-cau"
+      ],
+      "canonical_assessed_skill_candidate": "the-tich-hinh-cau",
+      "learner_family_candidate": "SOLID-SPHERE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "SYN20-AUTO-038",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu bán kính hình cầu tăng gấp 2 thì thể tích:",
+      "correct_option": "Tăng gấp 8",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "the-tich-hinh-cau"
+    }
+  ]
+}
