@@ -1,5 +1,5 @@
 {
-  "version": "1.0.196",
+  "version": "1.0.198",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1210,6 +1210,26 @@
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
       ]
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI30-ROUNDING-R1-001",
+      "title": "Grade 6 KNTT Bài 30 — rounding evidence repair R1",
+      "routing": "CONTENT_REPAIR+NOTEBOOKLM_ACADEMIC_REVIEW",
+      "status": "ACADEMIC-PASS-TECH-QA-PENDING",
+      "context_version": "1.0.198",
+      "review_verdict": "NOTEBOOKLM_PASS_G6_BAI30_ROUNDING_CONTENT_REVIEW_COMPLETE",
+      "review_notes": "NotebookLM PASS with exact clearance G6_BAI30_ROUNDING_CONTENT_REVIEW_COMPLETE. Learn PASS; 3/3 Micro PASS; 12/12 Practice PASS; manifest PASS; missing/duplicate/unexpected IDs NONE. No academic corrections required. uoc-luong remains lesson-local. Candidate review metadata and Grade-6 Dimension Audit are reconciled from gap to repaired Learn/Micro/Practice evidence. Technical CI/PR gate remains required; Written/Readiness and runtime/history/Mastery semantics remain unchanged.",
+      "artifacts": [
+        "review-packets/kntt-g6-bai30-rounding-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-v1-05.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+        "review-packets/kntt-g6-bai30-rounding-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
+      ],
+      "review_receipt": "review-packets/kntt-g6-bai30-rounding-r1/01_NOTEBOOKLM_RESULT_R1.md"
     }
   ]
 }

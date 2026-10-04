@@ -1,7 +1,7 @@
 # KNTT Dimension Coverage Audit — Grade 6 v1
 
 **Date:** 2026-10-04  
-**State:** READ-ONLY PILOT AUDIT · NO CONTENT / RUNTIME CHANGE  
+**State:** ACTIVE EVIDENCE AUDIT · BÀI 30 REPAIRED R1 · NO RUNTIME / MASTERY / READINESS CHANGE  
 **Input:** semantically reconciled Grade-6 KNTT matrix (31 rows)
 
 ## 1. Why this audit exists
@@ -24,25 +24,27 @@ The audit is deliberately conservative. Topic-level evidence is not promoted to 
 | Dimension | Current result |
 |---|---|
 | SKILL_MAP | 31/31 `VERIFIED_SEMANTIC` |
-| LEARN_CONTENT | 9 VERIFIED_DIRECT; 22 partial in different forms |
-| MICRO_PRACTICE | 14 VERIFIED_DIRECT; 12 PARTIAL; 3 FAMILY_LEVEL_ONLY; 2 NONE |
-| PRACTICE_BANK | 21 TOPIC_SKILL_EVIDENCE; 5 PARTIAL_TOPIC_EVIDENCE; 4 FAMILY_LEVEL_TOPIC_EVIDENCE; 1 NONE |
+| LEARN_CONTENT | 10 VERIFIED_DIRECT; 21 partial in different forms |
+| MICRO_PRACTICE | 15 VERIFIED_DIRECT; 12 PARTIAL; 3 FAMILY_LEVEL_ONLY; 1 NONE |
+| PRACTICE_BANK | 22 TOPIC_SKILL_EVIDENCE; 5 PARTIAL_TOPIC_EVIDENCE; 4 FAMILY_LEVEL_TOPIC_EVIDENCE; 0 NONE |
 | WRITTEN_LIBRARY | 5 CANDIDATE_ONLY_NO_KNTT_PLACEMENT; 26 NONE |
 | READINESS | 1 AUTHORIZED_TOPIC_LEVEL; 2 PENDING_REVIEW; 28 NOT_VERIFIED_STRUCTURED |
 
 ## 3. Most important findings
 
-### A. Bài 30 — Làm tròn và ước lượng
+### A. Bài 30 — Làm tròn và ước lượng — REPAIRED R1
 
-This is the clearest real coverage gap.
+The original direct-evidence gap is now repaired and independently reviewed.
 
-- `lam-tron-so` is already a reviewed canonical skill.
-- The current Grade-6 Learning Workspace card for Bài 28–31 does **not** list `lam-tron-so`.
-- Grade-6 micro-practice has no `lam-tron-so` item.
-- The Topic02 Practice manifest has no `lam-tron-so` skill.
-- `uoc-luong` correctly remains lesson-local, so it should be taught/practised without creating a second global skill.
+- `lam-tron-so` remains the reviewed canonical skill under `NUM-SETS`.
+- Learn card `num02-g6-core-5` now explicitly includes `lam-tron-so` and teaches the rounding rule plus estimation distinction.
+- Grade-6 Micro now contains reviewed items `NUM02MICRO_021–023`.
+- Topic02 Practice now contains reviewed items `NUM02V1_121–132` in chunk `02-so-va-phep-tinh-v1-05.json`.
+- `uoc-luong` remains lesson-local; no `uoc-luong` canonical skill was created.
+- NotebookLM result: **PASS**, 3/3 Micro + 12/12 Practice, clearance `G6_BAI30_ROUNDING_CONTENT_REVIEW_COMPLETE`.
+- Review receipt: `review-packets/kntt-g6-bai30-rounding-r1/01_NOTEBOOKLM_RESULT_R1.md`.
 
-This row should be the first repair target after the audit is accepted.
+This repair closes **Learn / Micro / Practice direct evidence only**. Written Library remains `NONE` and Readiness remains `NOT_VERIFIED_STRUCTURED`; no mastery/readiness claim is inferred.
 
 ### B. Bài 42 — Kết quả có thể và sự kiện
 
@@ -79,7 +81,6 @@ until the library adopts the placement contract. Topic + grade overlay must not 
 - **Ch.1 Bài 4-5 — Cộng, trừ, nhân, chia số tự nhiên và tính chất:** Learn=PARTIAL_LOCAL_OR_FAMILY; Micro=FAMILY_LEVEL_ONLY; Practice=FAMILY_LEVEL_TOPIC_EVIDENCE; Readiness=NOT_VERIFIED_STRUCTURED.
 - **Ch.2 Bài 8 — Quan hệ chia hết và tính chất:** Learn=PARTIAL_LOCAL_OR_FAMILY; Micro=FAMILY_LEVEL_ONLY; Practice=FAMILY_LEVEL_TOPIC_EVIDENCE; Readiness=NOT_VERIFIED_STRUCTURED.
 - **Ch.6 Bài 27 — Hai bài toán về phân số:** Learn=PARTIAL_LOCAL_OR_FAMILY; Micro=FAMILY_LEVEL_ONLY; Practice=FAMILY_LEVEL_TOPIC_EVIDENCE; Readiness=NOT_VERIFIED_STRUCTURED.
-- **Ch.7 Bài 30 — Làm tròn và ước lượng:** Learn=PARTIAL_MISSING_DIRECT_SKILL; Micro=NONE; Practice=NONE; Readiness=NOT_VERIFIED_STRUCTURED.
 - **Ch.9 Bài 38-41 — Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép:** Learn=PARTIAL_LOCAL_OR_FAMILY; Micro=PARTIAL; Practice=PARTIAL_TOPIC_EVIDENCE; Readiness=AUTHORIZED_TOPIC_LEVEL.
 - **Ch.9 Bài 42 — Kết quả có thể và sự kiện trong trò chơi, thí nghiệm:** Learn=PARTIAL_LOCAL_OR_FAMILY; Micro=NONE; Practice=FAMILY_LEVEL_TOPIC_EVIDENCE; Readiness=PENDING_REVIEW.
 
@@ -109,7 +110,7 @@ until the library adopts the placement contract. Topic + grade overlay must not 
 | 6 | Bài 25-26 | PARTIAL_SHARED_SKILL | PARTIAL | TOPIC_SKILL_EVIDENCE | NONE | NOT_VERIFIED_STRUCTURED |
 | 6 | Bài 27 | PARTIAL_LOCAL_OR_FAMILY | FAMILY_LEVEL_ONLY | FAMILY_LEVEL_TOPIC_EVIDENCE | NONE | NOT_VERIFIED_STRUCTURED |
 | 7 | Bài 28-29 | PARTIAL_SHARED_SKILL | PARTIAL | TOPIC_SKILL_EVIDENCE | CANDIDATE_ONLY_NO_KNTT_PLACEMENT | NOT_VERIFIED_STRUCTURED |
-| 7 | Bài 30 | PARTIAL_MISSING_DIRECT_SKILL | NONE | NONE | NONE | NOT_VERIFIED_STRUCTURED |
+| 7 | Bài 30 | VERIFIED_DIRECT | VERIFIED_DIRECT | TOPIC_SKILL_EVIDENCE | NONE | NOT_VERIFIED_STRUCTURED |
 | 7 | Bài 31 | PARTIAL_MISSING_DIRECT_SKILL | PARTIAL | PARTIAL_TOPIC_EVIDENCE | CANDIDATE_ONLY_NO_KNTT_PLACEMENT | NOT_VERIFIED_STRUCTURED |
 | 8 | Bài 32 | VERIFIED_DIRECT | VERIFIED_DIRECT | TOPIC_SKILL_EVIDENCE | NONE | NOT_VERIFIED_STRUCTURED |
 | 8 | Bài 33 | VERIFIED_DIRECT | VERIFIED_DIRECT | TOPIC_SKILL_EVIDENCE | NONE | NOT_VERIFIED_STRUCTURED |
@@ -131,12 +132,12 @@ until the library adopts the placement contract. Topic + grade overlay must not 
 
 ## 7. Recommended next order
 
-1. **Repair Bài 30 first**: add `lam-tron-so` to Learn metadata/content, Grade-6 micro-practice and appropriately scoped Practice Bank evidence; keep `uoc-luong` lesson-local.
-2. **Repair Bài 42 next**: add direct Grade-6 micro evidence for outcome/event vocabulary; do not reuse Bài 43 experimental-probability evidence as a substitute.
-3. Review Bài 4–5, Bài 8 and Bài 27 for lesson-specific micro/problem-type evidence without inflating taxonomy.
-4. Complete Grade-6 statistics micro coverage.
-5. Migrate the Shared Written Exercise Library toward canonical `kntt_placements` before claiming KNTT written coverage.
-6. Only after Learn/Practice gaps are reconciled should Readiness expansion be considered.
+1. **Repair Bài 42 next**: add direct Grade-6 micro evidence for outcome/event vocabulary; do not reuse Bài 43 experimental-probability evidence as a substitute.
+2. Review Bài 4–5, Bài 8 and Bài 27 for lesson-specific micro/problem-type evidence without inflating taxonomy.
+3. Complete Grade-6 statistics micro coverage.
+4. Migrate the Shared Written Exercise Library toward canonical `kntt_placements` before claiming KNTT written coverage.
+5. Only after Learn/Practice gaps are reconciled should Readiness expansion be considered.
+6. Keep Bài 30 Written/Readiness dimensions open until they receive their own evidence; the R1 repair must not be promoted into a mastery/readiness claim.
 
 ## 8. Protected boundaries
 

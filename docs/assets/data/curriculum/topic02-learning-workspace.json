@@ -165,6 +165,7 @@
       ],
       "skills": [
         "so-huu-ti-thap-phan",
+        "lam-tron-so",
         "phan-tram"
       ],
       "prerequisites": [
@@ -173,16 +174,19 @@
       "micro_practice": [
         "NUM02MICRO_013",
         "NUM02MICRO_014",
-        "NUM02MICRO_015"
+        "NUM02MICRO_015",
+        "NUM02MICRO_021",
+        "NUM02MICRO_022",
+        "NUM02MICRO_023"
       ],
       "teaching_copy": {
-        "key_idea": "Tính số thập phân cần đặt đúng dấu phẩy. p% = p/100. Khi giảm p%, lấy giá ban đầu nhân (1 − p/100).",
+        "key_idea": "Khi tính số thập phân, đặt dấu phẩy thẳng cột. Khi làm tròn đến một hàng, nhìn chữ số ngay bên phải: nhỏ hơn 5 thì giữ nguyên, từ 5 trở lên thì tăng chữ số ở hàng làm tròn thêm 1. Ước lượng có thể làm tròn các số trước rồi tính. Với phần trăm, p% = p/100.",
         "worked_example": {
-          "problem": "Áo giá 120 000 đồng giảm 10%. Giá còn bao nhiêu?",
-          "solution": "Số tiền giảm: 120 000 × 10/100 = 12 000 đồng; giá mới 108 000 đồng."
+          "problem": "Làm tròn 12,347 đến hàng phần trăm, rồi dùng các số đã làm tròn để ước lượng 12,347 + 5,12.",
+          "solution": "Chữ số hàng phần nghìn của 12,347 là 7 nên 12,347 ≈ 12,35. Số 5,12 đã có hai chữ số thập phân nên giữ 5,12. Tổng ước lượng là 12,35 + 5,12 = 17,47."
         },
-        "misconception": "Không nhầm tiền giảm với giá mới; khi cộng số thập phân phải đặt dấu phẩy thẳng cột.",
-        "summary": "Ghi rõ số tiền giảm và số tiền phải trả, kèm đơn vị."
+        "misconception": "Khi làm tròn, chỉ nhìn chữ số ngay bên phải hàng cần làm tròn; không được chỉ cắt bỏ rồi giữ nguyên nếu chữ số đó từ 5 trở lên. Ước lượng cho kết quả gần đúng, không phải đáp số chính xác.",
+        "summary": "Xác định đúng hàng cần làm tròn, áp dụng quy tắc <5 / ≥5 và dùng dấu ≈ cho kết quả gần đúng. Với phần trăm, luôn phân biệt phần trăm giảm với giá trị còn lại."
       }
     }
   ],
@@ -192,6 +196,7 @@
     "Nguồn phân đoạn: docs/assets/data/curriculum/kntt-grade6-map.json, bài 1–17 và 23–31.",
     "Bộ câu hỏi này không lấy kỹ năng số hữu tỉ/số thực/căn bậc hai lớp 7 làm điều kiện hoàn thành lớp 6.",
     "Practice Bank v1 có 120 câu chưa gắn grade metadata từng item: không tuyên bố toàn bộ ngân hàng là Core lớp 6.",
-    "Seven-gap R1 PASS: appended five coverage items NUM02MICRO_016–020; original 15 records and learner history remain immutable."
+    "Seven-gap R1 PASS: appended five coverage items NUM02MICRO_016–020; original 15 records and learner history remain immutable.",
+    "Bài 30 rounding repair R1 candidate: adds canonical skill lam-tron-so to Grade-6 card 5 and micro candidates NUM02MICRO_021–023; uoc-luong remains lesson-local. Academic review pending."
   ]
 }

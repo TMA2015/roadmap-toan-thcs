@@ -1,0 +1,299 @@
+{
+  "version": 2,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "NUM02-V1-05",
+  "topic": {
+    "id": "02-so-va-phep-tinh",
+    "title": "Số và phép tính"
+  },
+  "questions": [
+    {
+      "id": "NUM02V1_121",
+      "question": "Làm tròn 5,83 đến hàng phần mười.",
+      "options": [
+        "5,8",
+        "5,9",
+        "5,83",
+        "6,0"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "lam-tron-so"
+        ],
+        "type": "lam-tron-phan-muoi"
+      },
+      "difficulty": "basic",
+      "explanation": "Chữ số hàng phần trăm là 3 < 5 nên giữ nguyên hàng phần mười: 5,83 ≈ 5,8.",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "NUM02V1_122",
+      "question": "Làm tròn 12,349 đến hàng phần trăm.",
+      "options": [
+        "12,34",
+        "12,35",
+        "12,3",
+        "12,349"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "lam-tron-so"
+        ],
+        "type": "lam-tron-phan-tram"
+      },
+      "difficulty": "basic",
+      "explanation": "Chữ số hàng phần nghìn là 9 ≥ 5 nên tăng hàng phần trăm từ 4 lên 5: 12,349 ≈ 12,35.",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "NUM02V1_123",
+      "question": "Làm tròn 4,265 đến hàng phần trăm.",
+      "options": [
+        "4,26",
+        "4,27",
+        "4,3",
+        "4,265"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "lam-tron-so"
+        ],
+        "type": "lam-tron-moc-5"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Chữ số hàng phần nghìn là 5 nên tăng hàng phần trăm từ 6 lên 7: 4,265 ≈ 4,27.",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "NUM02V1_124",
+      "question": "Làm tròn 0,996 đến hàng phần trăm.",
+      "options": [
+        "0,99",
+        "1,00",
+        "0,996",
+        "1,06"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "lam-tron-so"
+        ],
+        "type": "lam-tron-nho-nho"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hàng phần nghìn là 6 nên 0,99 được làm tròn tăng lên thành 1,00.",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "NUM02V1_125",
+      "question": "Làm tròn 73,486 đến hàng đơn vị.",
+      "options": [
+        "73",
+        "74",
+        "73,5",
+        "74,5"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "lam-tron-so"
+        ],
+        "type": "lam-tron-don-vi"
+      },
+      "difficulty": "basic",
+      "explanation": "Chữ số hàng phần mười là 4 < 5 nên giữ nguyên hàng đơn vị: 73,486 ≈ 73.",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "NUM02V1_126",
+      "question": "Làm tròn 73,586 đến hàng đơn vị.",
+      "options": [
+        "73",
+        "74",
+        "73,6",
+        "74,6"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "lam-tron-so"
+        ],
+        "type": "lam-tron-don-vi"
+      },
+      "difficulty": "basic",
+      "explanation": "Chữ số hàng phần mười là 5 nên tăng hàng đơn vị từ 3 lên 4: 73,586 ≈ 74.",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "NUM02V1_127",
+      "question": "Một đoạn dây dài 2,746 m. Làm tròn độ dài đến hàng phần trăm mét.",
+      "options": [
+        "2,74 m",
+        "2,75 m",
+        "2,7 m",
+        "2,746 m"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "lam-tron-so"
+        ],
+        "type": "lam-tron-do-luong"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Chữ số hàng phần nghìn là 6 ≥ 5 nên 2,746 m ≈ 2,75 m.",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "NUM02V1_128",
+      "question": "Một món hàng có giá 48.650 đồng. Làm tròn giá đến nghìn đồng gần nhất.",
+      "options": [
+        "48.000 đồng",
+        "49.000 đồng",
+        "48.650 đồng",
+        "50.000 đồng"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "lam-tron-so"
+        ],
+        "type": "lam-tron-thuc-te"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Khi làm tròn đến nghìn đồng, nhìn hàng trăm: 6 ≥ 5 nên 48.650 đồng ≈ 49.000 đồng.",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "NUM02V1_129",
+      "question": "Ước lượng 19,8 + 30,3 bằng cách làm tròn mỗi số đến số nguyên gần nhất.",
+      "options": [
+        "40",
+        "49",
+        "50",
+        "51"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "lam-tron-so"
+        ],
+        "type": "uoc-luong-tong"
+      },
+      "difficulty": "intermediate",
+      "explanation": "19,8 ≈ 20 và 30,3 ≈ 30, nên tổng được ước lượng là 20 + 30 = 50.",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "NUM02V1_130",
+      "question": "Ước lượng 4,98 × 20,1 bằng cách làm tròn mỗi thừa số đến số nguyên gần nhất.",
+      "options": [
+        "80",
+        "90",
+        "100",
+        "110"
+      ],
+      "answer": 2,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "lam-tron-so"
+        ],
+        "type": "uoc-luong-tich"
+      },
+      "difficulty": "intermediate",
+      "explanation": "4,98 ≈ 5 và 20,1 ≈ 20, nên tích được ước lượng là 5 × 20 = 100.",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "NUM02V1_131",
+      "question": "Vì sao 6,241 làm tròn đến hàng phần trăm bằng 6,24?",
+      "options": [
+        "Vì chữ số hàng phần nghìn là 1 < 5 nên giữ nguyên hàng phần trăm.",
+        "Vì luôn bỏ tất cả chữ số sau hàng phần trăm.",
+        "Vì chữ số hàng phần mười là 2 < 5.",
+        "Vì 6,241 nhỏ hơn 6,25."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "lam-tron-so"
+        ],
+        "type": "giai-thich-quy-tac"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Muốn làm tròn đến hàng phần trăm, phải nhìn chữ số ngay bên phải là hàng phần nghìn. Ở đây chữ số đó là 1 < 5.",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "NUM02V1_132",
+      "question": "Số nào sau đây khi làm tròn đến hàng phần mười thì được 6,4?",
+      "options": [
+        "6,34",
+        "6,36",
+        "6,45",
+        "6,52"
+      ],
+      "answer": 1,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "lam-tron-so"
+        ],
+        "type": "dao-nguoc-lam-tron"
+      },
+      "difficulty": "advanced",
+      "explanation": "6,36 có chữ số hàng phần trăm là 6 nên làm tròn đến hàng phần mười được 6,4. Các lựa chọn còn lại lần lượt cho 6,3; 6,5; 6,5.",
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "verdict": "PASS"
+      }
+    }
+  ]
+}
