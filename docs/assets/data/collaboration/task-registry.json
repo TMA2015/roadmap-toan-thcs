@@ -1,5 +1,5 @@
 {
-  "version": "1.0.187",
+  "version": "1.0.188",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1170,6 +1170,19 @@
       "context_version": "1.0.187",
       "review_verdict": "OWNER_APPROVED_GOVERNANCE_UPDATE",
       "review_notes": "Master Plan v1.2.1 defines one canonical Written Exercise Library with two learner paths: Học theo lớp/KNTT and Học theo chuyên đề. Adds kntt_placements, topic_placements, prerequisite_skills and written_role; curriculum placement is explicitly distinct from prerequisite knowledge. No learner-facing UI/data migration is authorized by this governance update. NotebookLM permanent Master Plan source must be refreshed from v1.1 to the new canonical version before the next independent review, but refresh is intentionally deferred for now."
+    },
+    {
+      "id": "MATH-KNTT-COVERAGE-MATRIX-6-9-001",
+      "title": "KNTT Coverage Matrix 6–9 — current-skill reconciliation",
+      "routing": "GOVERNANCE+CURRICULUM_MAPPING",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.188",
+      "review_verdict": "FRAMEWORK_READY_RECONCILIATION_PENDING",
+      "review_notes": "Framework v1 created from the four reviewed KNTT grade maps and current Taxonomy v2 + Knowledge Graph skill universe. 78 curriculum rows: 48 CURRENT_MAPPED, 2 CURRENT_MAPPED_ITEM_REVIEW, 15 PARTIAL_RECONCILE, 13 RECONCILE_REQUIRED. Unresolved refs are reconciliation candidates, not confirmed curriculum gaps. Grade 6 has the most legacy-ID noise (35 unresolved refs); Grade 7 has 11, Grade 8 has 3, Grade 9 has 4. Historical proposed refs already resolved by later work: G7 12/22, G8 6/8, G9 23/27. Next: explicit historical_ref → canonical_skill/family/genuine_gap reconciliation, starting Grade 6. No learner-facing/runtime change.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
+        "docs/roadmap/kntt-coverage-matrix-6-9-v1.md"
+      ]
     }
   ]
 }
