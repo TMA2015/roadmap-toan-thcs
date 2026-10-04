@@ -13,6 +13,9 @@
 > **Grade 6 reconciliation R1 is now drafted on a separate governance branch.** 35 unresolved refs are classified as 16 canonical-skill matches, 12 canonical-family/lesson-local matches, 5 needs-review and 2 gap candidates (`lam-tron`, `uoc-luong`). Do not create new skills yet; independently review the 7 non-closed cases first.
 > **NotebookLM packet prepared:** `review-packets/kntt-grade6-reconciliation-r1/00_NOTEBOOKLM_PACKET_R1.md`. Review exactly the 5 NEEDS_REVIEW + 2 GAP_CANDIDATE cases; use current Rules v1.2 + Master Plan v1.2.1 + official NXB GDVN SGK Toán 6 tập một/tập hai. No S1 evidence = no Core taxonomy addition.
 
+
+> **Owner transfer rule:** whenever the owner must move review/source files manually (especially NotebookLM), do not only name paths. If multiple local/project files are required, provide a directly downloadable ZIP. For external sources, provide exact clickable source links. Avoid making the owner search the repository or web for named files.
+
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan canonical v1.2.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
