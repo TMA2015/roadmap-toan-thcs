@@ -1005,7 +1005,24 @@
           "downstream": [],
           "exclusions": []
         }
-      ]
+      ],
+      "semantic_reconciliation": {
+        "status": "RECONCILED_REVIEWED_R1",
+        "artifact": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
+        "review_result": "review-packets/kntt-grade6-reconciliation-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "clearance": "G6_R1_RECONCILIATION_REVIEW_COMPLETE",
+        "historical_exact_id_unresolved_count": 35,
+        "semantic_resolution_counts": {
+          "CANONICAL_SKILL": 18,
+          "CANONICAL_FAMILY": 16,
+          "LESSON_LOCAL": 1
+        },
+        "new_canonical_skills": [
+          "lam-tron-so"
+        ],
+        "remaining_review_queue": [],
+        "note": "The 35 exact-ID mismatches remain visible in the framework fields for traceability; this semantic overlay closes Grade-6 R1 after reviewed alias/family/lesson-local reconciliation."
+      }
     },
     {
       "grade": 7,
@@ -3698,6 +3715,9 @@
       "8": 3,
       "9": 4
     },
-    "note": "Unresolved refs are reconciliation candidates. They must be separated into legacy-ID aliases vs genuine curriculum coverage gaps before learner-facing Course Map expansion."
+    "note": "Exact-ID unresolved refs are reconciliation candidates, not confirmed curriculum gaps. Grade 6 is semantically reconciled in R1; Grades 7-9 still require their own reconciliation passes.",
+    "semantic_reconciliation_status": {
+      "6": "RECONCILED_REVIEWED_R1"
+    }
   }
 }
