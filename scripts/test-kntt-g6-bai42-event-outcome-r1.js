@@ -7,6 +7,8 @@ const json=p=>JSON.parse(fs.readFileSync(p,"utf8"));
 const workspace=json("docs/assets/data/curriculum/topic23-learning-workspace.json");
 const micro=json("docs/assets/data/practice/23-xac-suat-micro-v1.json");
 const manifest=json("docs/assets/data/practice/23-xac-suat-v1.manifest.json");
+const audit=json("docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json");
+const receipt=fs.readFileSync("review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md","utf8");
 
 const card=workspace.cards.find(c=>c.id==="prob23-core-1");
 assert.ok(card);
@@ -39,7 +41,8 @@ for(const q of local){
   assert.deepEqual(q.curriculum.grades,[6]);
   assert.equal(q.curriculum.lesson,"Bài 42");
   assert.equal(q.authoring_review.packet,"MATH-KNTT-G6-BAI42-EVENT-OUTCOME-R1-20261004");
-  assert.equal(q.authoring_review.verdict,"PENDING_NOTEBOOKLM");
+  assert.equal(q.authoring_review.verdict,"PASS");
+  assert.equal(q.authoring_review.clearance,"G6_BAI42_EVENT_OUTCOME_CONTENT_REVIEW_COMPLETE");
   assert.ok(q.lesson_local_targets.length>=1);
   assert.ok(q.lesson_local_targets.every(x=>["ket-qua-co-the","su-kien-don-gian"].includes(x)));
   assert.equal(q.options.length,4);
@@ -56,6 +59,17 @@ assert.equal(manifest.sources.length,4);
 assert.ok(!manifest.skill_labels["ket-qua-co-the"]);
 assert.ok(!manifest.skill_labels["su-kien-don-gian"]);
 
-console.log("PASS: Bài 42 candidate adds explicit Learn + 3 Grade-6 lesson-local Micro items.");
+const bai42=audit.rows.find(r=>r.lesson_ref==="Bài 42");
+assert.equal(bai42.dimensions.LEARN_CONTENT.status,"VERIFIED_LESSON_LOCAL");
+assert.equal(bai42.dimensions.MICRO_PRACTICE.status,"VERIFIED_LESSON_LOCAL");
+assert.equal(bai42.dimensions.PRACTICE_BANK.status,"FAMILY_LEVEL_TOPIC_EVIDENCE");
+assert.equal(bai42.dimensions.READINESS.status,"PENDING_REVIEW");
+assert.match(receipt,/OVERALL\|PASS/);
+assert.match(receipt,/BOUNDARY\|LESSON_LOCAL_NO_CANONICAL_SKILL\|PASS/);
+assert.match(receipt,/TERMINOLOGY\|G6_SU_KIEN_NOT_G7_BIEN_CO\|PASS/);
+assert.match(receipt,/B42_B43_BOUNDARY\|PASS/);
+assert.match(receipt,/CLEARANCE\|G6_BAI42_EVENT_OUTCOME_CONTENT_REVIEW_COMPLETE/);
+
+console.log("PASS: Bài 42 reviewed candidate adds explicit Learn + 3 Grade-6 lesson-local Micro items.");
 console.log("PASS: ket-qua-co-the and su-kien-don-gian remain PROB-EVENT lesson-local concepts with no canonical skill write.");
-console.log("PASS: Practice Bank stays 120 and candidate remains NotebookLM-pending before release.");
+console.log("PASS: Practice Bank stays 120; NotebookLM academic review is complete and technical CI remains the release gate.");
