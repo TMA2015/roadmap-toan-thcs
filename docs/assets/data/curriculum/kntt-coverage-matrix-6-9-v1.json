@@ -21,7 +21,7 @@
   "source_universe": {
     "taxonomy_v2": {
       "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
-      "blob_sha": "cde746a448d8e1dff3a852f6fa027501e15c228f",
+      "blob_sha": "90e58fa666a0cea4ae41ff7ef82a3cbf80ca11e4",
       "status": "I0_DURABLE_REGISTRY_RUNTIME_DISABLED"
     },
     "knowledge_graph": {
@@ -3728,7 +3728,34 @@
           "downstream": [],
           "exclusions": []
         }
-      ]
+      ],
+      "semantic_reconciliation": {
+        "status": "RECONCILED_REVIEWED_R4",
+        "artifact": "docs/assets/data/curriculum/kntt-grade9-reconciliation-r4.json",
+        "review_result": "review-packets/kntt-grade9-reconciliation-r4/01_NOTEBOOKLM_RESULT_R4.md",
+        "clearance": "G9_R4_RECONCILIATION_REVIEW_COMPLETE",
+        "historical_exact_id_unresolved_count": 4,
+        "semantic_resolution_counts": {
+          "CANONICAL_SKILL": 2,
+          "CANONICAL_FAMILY": 2
+        },
+        "new_canonical_skills": [],
+        "new_canonical_families": [],
+        "layer_changes": [
+          {
+            "family_id": "STAT-FREQUENCY",
+            "from": "Core-Support",
+            "to": "KNTT-Core"
+          },
+          {
+            "family_id": "STAT-ADVANCED-DATA",
+            "from": "Entrance10",
+            "to": "KNTT-Core"
+          }
+        ],
+        "remaining_review_queue": [],
+        "note": "The 4 exact-ID mismatches remain visible for traceability; Grade 9 semantic reconciliation is closed after reviewed alias/family reconciliation and S1-backed layer correction."
+      }
     }
   ],
   "global_summary": {
@@ -3745,11 +3772,20 @@
       "8": 3,
       "9": 4
     },
-    "note": "Exact-ID unresolved refs are reconciliation candidates, not confirmed curriculum gaps. Grades 6-8 now have semantic reconciliation overlays; Grade 9 remains the final reconciliation pass.",
+    "note": "All Grades 6–9 are now semantically reconciled. Raw exact-ID unresolved refs remain preserved for historical traceability and must not be interpreted as curriculum gaps.",
     "semantic_reconciliation_status": {
       "6": "RECONCILED_REVIEWED_R1",
       "7": "RECONCILED_REVIEWED_R2",
-      "8": "RECONCILED_R3_NO_NEW_IDENTITY"
-    }
+      "8": "RECONCILED_R3_NO_NEW_IDENTITY",
+      "9": "RECONCILED_REVIEWED_R4"
+    },
+    "semantic_reconciliation_complete": true,
+    "semantic_reconciliation_complete_grades": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "remaining_semantic_reconciliation_queue": []
   }
 }
