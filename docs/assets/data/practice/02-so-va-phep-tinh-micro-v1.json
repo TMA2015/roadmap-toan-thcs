@@ -6,7 +6,7 @@
     "id": "02-so-va-phep-tinh",
     "title": "Số và phép tính · Core lớp 6"
   },
-  "question_count": 32,
+  "question_count": 35,
   "questions": [
     {
       "id": "NUM02MICRO_001",
@@ -1411,6 +1411,153 @@
       "option_evidence": {},
       "lesson_local_targets": [
         "tim-so-khi-biet-gia-tri-phan-so"
+      ]
+    },
+    {
+      "id": "NUM02MICRO_033",
+      "card_id": "num02-g6-core-1",
+      "micro_role": "coverage",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [],
+        "layer": "KNTT-Core",
+        "grade": 6,
+        "type": "ghi-so-tu-nhien-gia-tri-hang"
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 1-3"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+      "gates_core": false,
+      "authoring_review": {
+        "verdict": "SOURCE_CONFIRMED_LOW_RISK",
+        "method": "OWNER_APPROVED_RISK_BASED_REVIEW_POLICY",
+        "basis": "KNTT_G6_RECONCILIATION_R1_NOTEBOOKLM_PASS_PLUS_DETERMINISTIC_NATURAL_NUMBER_REPRESENTATION"
+      },
+      "question": "Trong số 35 407, chữ số 5 có giá trị bằng bao nhiêu?",
+      "options": [
+        "5 000",
+        "500",
+        "50",
+        "5"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "Trong 35 407, chữ số 5 ở hàng nghìn nên có giá trị 5 000.",
+      "hints": [
+        "Xác định vị trí của chữ số 5 tính từ phải sang trái.",
+        "Các hàng lần lượt là đơn vị, chục, trăm, nghìn, chục nghìn."
+      ],
+      "option_evidence": {},
+      "lesson_local_targets": [
+        "ghi-so-tu-nhien"
+      ]
+    },
+    {
+      "id": "NUM02MICRO_034",
+      "card_id": "num02-g6-core-1",
+      "micro_role": "coverage",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [],
+        "layer": "KNTT-Core",
+        "grade": 6,
+        "type": "thu-tu-so-tu-nhien-so-sanh"
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 1-3"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+      "gates_core": false,
+      "authoring_review": {
+        "verdict": "SOURCE_CONFIRMED_LOW_RISK",
+        "method": "OWNER_APPROVED_RISK_BASED_REVIEW_POLICY",
+        "basis": "KNTT_G6_RECONCILIATION_R1_NOTEBOOKLM_PASS_PLUS_DETERMINISTIC_NATURAL_NUMBER_REPRESENTATION"
+      },
+      "question": "Khẳng định nào đúng?",
+      "options": [
+        "58 203 < 58 230",
+        "58 203 > 58 230",
+        "58 203 = 58 230",
+        "Không thể so sánh"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "Hai số giống nhau đến hàng trăm; ở hàng chục có 0 < 3 nên 58 203 < 58 230.",
+      "hints": [
+        "Hai số có cùng số chữ số nên so từ trái sang phải.",
+        "Chữ số khác nhau đầu tiên là ở hàng chục: 0 và 3."
+      ],
+      "option_evidence": {},
+      "lesson_local_targets": [
+        "thu-tu-so-tu-nhien"
+      ]
+    },
+    {
+      "id": "NUM02MICRO_035",
+      "card_id": "num02-g6-core-1",
+      "micro_role": "coverage",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [],
+        "layer": "KNTT-Core",
+        "grade": 6,
+        "type": "thu-tu-so-tu-nhien-lien-sau"
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 1-3"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+      "gates_core": false,
+      "authoring_review": {
+        "verdict": "SOURCE_CONFIRMED_LOW_RISK",
+        "method": "OWNER_APPROVED_RISK_BASED_REVIEW_POLICY",
+        "basis": "KNTT_G6_RECONCILIATION_R1_NOTEBOOKLM_PASS_PLUS_DETERMINISTIC_NATURAL_NUMBER_REPRESENTATION"
+      },
+      "question": "Số liền sau của 9 999 là số nào?",
+      "options": [
+        "10 000",
+        "9 998",
+        "9 999",
+        "10 001"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "Số liền sau của một số tự nhiên n là n + 1, nên 9 999 + 1 = 10 000.",
+      "hints": [
+        "Số liền sau lớn hơn số đã cho đúng 1 đơn vị.",
+        "Tính 9 999 + 1."
+      ],
+      "option_evidence": {},
+      "lesson_local_targets": [
+        "thu-tu-so-tu-nhien"
       ]
     }
   ]
