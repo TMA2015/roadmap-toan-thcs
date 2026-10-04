@@ -124,9 +124,11 @@ Chỉ kích hoạt quan hệ đủ tin cậy sau kiểm định. Không kết lu
 
 ### 3.2. Golden Template: ba không gian rõ ràng
 
-1. **Học / Learning Workspace:** thẻ kiến thức ngắn, giải thích vì sao, khi nào áp dụng, ví dụ trực quan, lỗi thường gặp; mỗi thẻ có micro-practice kiểu `Base → Trap → Apply`, phản hồi ngay. Có thể xin gợi ý hoặc Tutor. Mục luyện tập/tự kiểm tra trên trang kiến thức chỉ dẫn sang không gian riêng, không nhân bản ngân hàng bài tập dài.
-2. **Luyện / Practice Room:** ngân hàng câu hỏi tương tác theo skill, bài luyện điểm yếu, phản hồi và gợi ý từng mức; song song giữ bài tự luận để học sinh trình bày trên giấy/vở, lời giải mở khi chủ động xem. Hiển thị Core/Entrance10/Challenge rõ ràng.
+1. **Học / Learning Workspace:** thẻ kiến thức ngắn, giải thích vì sao, khi nào áp dụng, ví dụ trực quan, lỗi thường gặp; mỗi thẻ có micro-practice kiểu `Base → Trap → Apply`, phản hồi ngay. Có thể xin gợi ý hoặc Tutor. Với đường KNTT, đây là nơi ưu tiên làm rõ **bản chất của bài học đang học ở trường**. Mục luyện tập/tự kiểm tra trên trang kiến thức chỉ dẫn sang không gian riêng, không nhân bản ngân hàng bài tập dài.
+2. **Luyện / Practice Room:** ngân hàng câu hỏi tương tác theo skill, bài luyện điểm yếu, luyện nền tảng và bài chuyển giao/tổng hợp; song song giữ bài tự luận để học sinh trình bày trên giấy/vở, lời giải mở khi chủ động xem. Practice Room **không dựng một curriculum “Core KNTT” thứ hai** cạnh các Core Cards. Bài nào chủ yếu giúp hiểu trực tiếp một Core Card nên được gắn với card hoặc dùng lại từ card; bài vẫn hữu ích cho chuyên đề có thể giữ trong Practice Room dưới vai trò luyện phù hợp.
 3. **Tự kiểm tra / Core Readiness:** làm độc lập, không hint/Tutor, không hiện đúng sai từng câu, phản hồi **sau khi nộp**; tính theo kỹ năng được đánh giá, dữ liệu tách khỏi dữ liệu luyện tập. Trạng thái gợi ý như `READY`, `REVIEW_RECOMMENDED`, `MORE_EVIDENCE_NEEDED` không được diễn đạt thành chứng chỉ nắm vững tuyệt đối hoặc khóa quyền học.
+
+Các tầng nội bộ như `KNTT-Core`, `Core-Support`, `Entrance10`, `Specialized-Challenge` phải được dịch sang nhãn learner-facing ngắn và có ích khi cần; không lộ metadata chỉ để phản ánh schema.
 
 Bất cứ thay đổi phá vỡ Golden Template đã đóng băng phải tạo phiên bản quy chuẩn mới và kiểm định tương thích, không sửa ngầm riêng từng chuyên đề.
 
@@ -152,13 +154,53 @@ Một đáp án cuối đúng của bài tổng hợp không chứng minh học 
 
 Sau khi học khái niệm nền mà không mở lời giải, quan sát học sinh: **(1) giải thích bằng lời của mình; (2) phát hiện và giải thích ví dụ sai/phản ví dụ; (3) vận dụng vào tình huống chưa gặp**. Ghi lại chỗ vướng, mức hỗ trợ và điều chỉnh nội dung. CI xanh, infographic đẹp, tỷ lệ trắc nghiệm đúng hoặc việc học sinh nhận ra công thức không đủ để kết luận đã hiểu sâu. Đây là kế hoạch kiểm thử thực tế; không khẳng định toàn bộ 25 chuyên đề đã vượt qua.
 
+### 3.7. Vai trò bài tập giữa hai đường học
+
+Không cố chia tuyệt đối bài tập thành “của KNTT” và “của chuyên đề”. Một item có thể được dùng ở cả hai path nếu vai trò rõ ràng.
+
+**Trong bài KNTT/Core Card**, ưu tiên:
+- kiểm tra một khái niệm hoặc một điểm bản chất vừa học;
+- phản ví dụ/lỗi sai thường gặp;
+- `Base → Trap → Apply`;
+- giúp học sinh trả lời “em có thật sự hiểu bài này không?”.
+
+**Trong Practice theo chuyên đề**, ưu tiên:
+- liên kết kiến thức nhiều lớp/tầng;
+- lựa chọn công cụ thay vì được chỉ sẵn phương pháp;
+- ghép nhiều skill và kiểm tra điều kiện/ngữ cảnh;
+- bài chuyển giao, luyện điểm yếu, ôn thi hoặc truy nguyên prerequisite.
+
+Ở lớp thấp, bài chuyên đề có thể còn gần một skill đơn lẻ; không cần ép mọi câu thành bài tổng hợp. Từ lớp 8–9, tăng dần vai trò liên kết và chuyển giao.
+
+Nếu cùng một item được dùng ở nhiều nơi, chỉ có **một ID và một nội dung canonical**; metadata/placement cho biết vai trò hiển thị. Không tạo bản sao chỉ để “đủ bài” cho từng path.
+
+### 3.8. Một hệ tên học thuật, nhiều cách trình bày
+
+Mỗi chuyên đề cần có **một vocabulary/catalogue dạng bài chuẩn** đủ ổn định để infographic, ví dụ mẫu, Practice, bài tự luận và Core Cards cùng tham chiếu.
+
+- **Dạng bài** là phân loại cấu trúc toán học.
+- **Ví dụ mẫu** chỉ là ví dụ minh họa cho một hoặc nhiều dạng; không mặc nhiên là danh sách dạng bài đầy đủ.
+- **Mức 1–4 / độ khó / tầng vận dụng** là chiều khác với dạng bài; không tạo một taxonomy thứ hai bằng cách liệt kê tên không đồng nhất.
+- Infographic tóm tắt phải dùng cùng tên canonical hoặc ghi rõ đang rút gọn/nhóm gộp.
+- Learner-facing ưu tiên từ ngữ ngắn, nhất quán; thuật ngữ nội bộ có thể chi tiết hơn nhưng phải có mapping rõ.
+
+Khi học sinh thấy cùng một chuyên đề ở nhiều nơi, họ phải nhận ra đó là **cùng hệ kiến thức được nhìn ở vai trò khác**, không phải nhiều chương trình mâu thuẫn.
+
 ---
 
 ## 4. Ngân hàng bài tập, đánh giá và learner evidence
 
 ### 4.1. Định danh và dữ liệu
 
-Mỗi item có ID ổn định, phiên bản, chuyên đề, skill được đánh giá chính, tag/dạng bài, tầng chương trình, đáp án/lời giải/gợi ý và nguồn/QA thích hợp. Không tự ý đổi ID cũ hoặc xóa bằng chứng học tập khi sửa câu hỏi; nếu thay nội dung ảnh hưởng nghĩa đáp án cần migration hoặc phiên bản mới có truy vết.
+Mỗi item có ID ổn định, phiên bản, chuyên đề, skill được đánh giá chính, tag/dạng bài, tầng chương trình, đáp án/lời giải/gợi ý và nguồn/QA thích hợp. Một item có thể được **tham chiếu từ cả KNTT Course Map và Vertical Spine** mà không cần nhân bản ID.
+
+Phân biệt:
+- `skill_id`: định danh năng lực/kiến thức toán học;
+- `card_id` / `lesson_id`: đơn vị học/trình bày;
+- `item_id`: câu hỏi/bài tập;
+- metadata placement/role: cho biết item đang được dùng như micro-practice, luyện nền tảng, chuyển giao, Entrance10, v.v.
+
+Không tự ý đổi ID cũ hoặc xóa bằng chứng học tập khi sửa câu hỏi; nếu thay nội dung ảnh hưởng nghĩa đáp án cần migration hoặc phiên bản mới có truy vết.
 
 ### 4.2. Hai nguồn bằng chứng khác nhau
 
