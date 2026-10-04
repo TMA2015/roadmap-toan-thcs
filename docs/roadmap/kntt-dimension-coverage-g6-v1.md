@@ -1,7 +1,7 @@
 # KNTT Dimension Coverage Audit — Grade 6 v1
 
 **Date:** 2026-10-04  
-**State:** ACTIVE EVIDENCE AUDIT · BÀI 30 + BÀI 42 + BÀI 4–5 + BÀI 8 + BÀI 27 REPAIRED R1 · NO RUNTIME / MASTERY / READINESS CHANGE  
+**State:** ACTIVE EVIDENCE AUDIT · STATISTICS REPAIRED R1 · NO RUNTIME / MASTERY / READINESS CHANGE  
 **Input:** semantically reconciled Grade-6 KNTT matrix (31 rows)
 
 ## 1. Why this audit exists
@@ -24,8 +24,8 @@ The audit is deliberately conservative. Topic-level evidence is not promoted to 
 | Dimension | Current result |
 |---|---|
 | SKILL_MAP | 31/31 `VERIFIED_SEMANTIC` |
-| LEARN_CONTENT | 10 VERIFIED_DIRECT; 4 VERIFIED_LESSON_LOCAL; 17 partial in different forms |
-| MICRO_PRACTICE | 15 VERIFIED_DIRECT; 4 VERIFIED_LESSON_LOCAL; 12 PARTIAL; 0 FAMILY_LEVEL_ONLY; 0 NONE |
+| LEARN_CONTENT | 10 VERIFIED_DIRECT; 4 VERIFIED_LESSON_LOCAL; 1 VERIFIED_DIRECT_AND_LOCAL; 16 partial in different forms |
+| MICRO_PRACTICE | 15 VERIFIED_DIRECT; 4 VERIFIED_LESSON_LOCAL; 1 VERIFIED_DIRECT_AND_LOCAL; 11 PARTIAL; 0 FAMILY_LEVEL_ONLY; 0 NONE |
 | PRACTICE_BANK | 22 TOPIC_SKILL_EVIDENCE; 5 PARTIAL_TOPIC_EVIDENCE; 4 FAMILY_LEVEL_TOPIC_EVIDENCE; 0 NONE |
 | WRITTEN_LIBRARY | 5 CANDIDATE_ONLY_NO_KNTT_PLACEMENT; 26 NONE |
 | READINESS | 1 AUTHORIZED_TOPIC_LEVEL; 2 PENDING_REVIEW; 28 NOT_VERIFIED_STRUCTURED |
@@ -100,10 +100,23 @@ The Grade-6 lesson-local problem-type Learn/Micro gap is now repaired under the 
 
 This repair closes the **Learn + lesson-local problem-type Micro** gap only.
 
-### F. Grade-6 statistics is only partially covered at micro level
+### F. Bài 38–41 — Grade-6 statistics — REPAIRED R1
 
+The Learn/Micro gap for the aggregated Grade-6 statistics row is now repaired and independently reviewed.
 
-Bài 38–41 has a strong topic workspace and Practice Bank, but Grade-6 micro evidence covers only a subset of the row's direct skills. Family-local concepts such as statistical table / pictogram language also remain broader than the current canonical counters.
+- Existing Grade-6 direct Micro evidence remains for `doc-bieu-do-cot` and `nhan-xet-du-lieu`.
+- `STA21MICRO_016` adds direct Grade-6 evidence for `thu-thap-du-lieu`.
+- `STA21MICRO_017` adds direct Grade-6 evidence for `doc-bieu-do-cot-kep`.
+- `STA21MICRO_018–020` add lesson-local formative evidence for `du-lieu`, `bang-thong-ke`, and `bieu-do-tranh`.
+- The three local identities remain under `STAT-DATA`, `STAT-REPRESENT`, and `STAT-CHART-READ`; they do not become new canonical learner skills.
+- Local items use `LESSON_LOCAL_CORE_FORMATIVE`, `tags.skill=[]`, and `gates_core=false`.
+- NotebookLM reviewed both Learn cards, all five new Micro items, both direct skill mappings, all three local boundaries, and the shared Grade-6/Grade-8 card boundary: **PASS**.
+- Clearance: `G6_STATISTICS_CONTENT_REVIEW_COMPLETE`.
+- Review receipt: `review-packets/kntt-g6-statistics-r1/01_NOTEBOOKLM_RESULT_R1.md`.
+- Practice Bank remains unchanged at 132 questions.
+- Existing STA21 Readiness remains `AUTHORIZED_TOPIC_LEVEL` for the full Grade 6–8 topic; it is not promoted into a Grade-6-only readiness claim.
+
+The audit therefore records Learn and Micro as `VERIFIED_DIRECT_AND_LOCAL`. Practice remains `PARTIAL_TOPIC_EVIDENCE`, Written remains `NONE`, and Readiness keeps its existing topic-level scope.
 
 ### G. Written Library placement gap
 
@@ -117,7 +130,7 @@ until the library adopts the placement contract. Topic + grade overlay must not 
 
 ## 4. Priority rows
 
-- **Ch.9 Bài 38-41 — Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép:** Learn=PARTIAL_LOCAL_OR_FAMILY; Micro=PARTIAL; Practice=PARTIAL_TOPIC_EVIDENCE; Readiness=AUTHORIZED_TOPIC_LEVEL.
+- **Ch.7 Bài 31 — Tỉ số và tỉ số phần trăm; bài toán phần trăm:** Learn=PARTIAL_MISSING_DIRECT_SKILL; Micro=PARTIAL; Practice=PARTIAL_TOPIC_EVIDENCE; Readiness=NOT_VERIFIED_STRUCTURED. This is now the clearest remaining direct-Learn gap because `phan-tram` is a direct semantic target but is not yet present in the exact Bài 31 Learn evidence.
 
 ## 5. Full row table
 
@@ -151,7 +164,7 @@ until the library adopts the placement contract. Topic + grade overlay must not 
 | 8 | Bài 33 | VERIFIED_DIRECT | VERIFIED_DIRECT | TOPIC_SKILL_EVIDENCE | NONE | NOT_VERIFIED_STRUCTURED |
 | 8 | Bài 34-35 | VERIFIED_DIRECT | VERIFIED_DIRECT | TOPIC_SKILL_EVIDENCE | NONE | NOT_VERIFIED_STRUCTURED |
 | 8 | Bài 36-37 | VERIFIED_DIRECT | VERIFIED_DIRECT | TOPIC_SKILL_EVIDENCE | NONE | NOT_VERIFIED_STRUCTURED |
-| 9 | Bài 38-41 | PARTIAL_LOCAL_OR_FAMILY | PARTIAL | PARTIAL_TOPIC_EVIDENCE | NONE | AUTHORIZED_TOPIC_LEVEL |
+| 9 | Bài 38-41 | VERIFIED_DIRECT_AND_LOCAL | VERIFIED_DIRECT_AND_LOCAL | PARTIAL_TOPIC_EVIDENCE | NONE | AUTHORIZED_TOPIC_LEVEL |
 | 9 | Bài 42 | VERIFIED_LESSON_LOCAL | VERIFIED_LESSON_LOCAL | FAMILY_LEVEL_TOPIC_EVIDENCE | NONE | PENDING_REVIEW |
 | 9 | Bài 43 | VERIFIED_DIRECT | VERIFIED_DIRECT | TOPIC_SKILL_EVIDENCE | CANDIDATE_ONLY_NO_KNTT_PLACEMENT | PENDING_REVIEW |
 
@@ -159,6 +172,7 @@ until the library adopts the placement contract. Topic + grade overlay must not 
 
 - **VERIFIED_DIRECT** = explicit structured evidence matches the row's direct canonical skill(s).
 - **VERIFIED_LESSON_LOCAL** = explicit structured evidence directly covers reviewed lesson-local concepts or problem types without creating or crediting a canonical assessed skill.
+- **VERIFIED_DIRECT_AND_LOCAL** = all direct canonical skill demands for the row are explicitly evidenced and the reviewed lesson-local concepts/representations are also explicitly evidenced without creating extra canonical skills.
 - **PARTIAL_LOCAL_OR_FAMILY** = lesson exists, but part of its identity remains family/lesson-local rather than directly evidenced.
 - **PARTIAL_SHARED_SKILL** = a broad canonical skill spans multiple KNTT lessons, so evidence cannot distinguish the exact lesson demand.
 - **PARTIAL_PLACEMENT** = content exists but KNTT placement is broad (for example “Lớp 6–9”) rather than exact.
@@ -168,14 +182,16 @@ until the library adopts the placement contract. Topic + grade overlay must not 
 
 ## 7. Recommended next order
 
-1. Complete Grade-6 statistics micro coverage for Bài 38–41.
-2. Migrate the Shared Written Exercise Library toward canonical `kntt_placements` before claiming KNTT written coverage.
-3. Only after Learn/Practice gaps are reconciled should Readiness expansion be considered.
-4. Keep Bài 30 Written/Readiness dimensions open until they receive their own evidence; the R1 repair must not be promoted into a mastery/readiness claim.
-5. Keep Bài 42 Practice at family/topic level and Readiness pending until separate evidence is reviewed; the lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
-6. Keep Bài 4–5 Practice at family/topic level and Readiness open; the source-confirmed lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
-7. Keep Bài 8 Practice at family/topic level and Readiness open; the source-confirmed lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
-8. Keep Bài 27 Practice at family/topic level and Readiness open; its problem-type evidence must not be promoted into canonical skills or mastery/readiness credit.
+1. Repair Bài 31 direct Learn/Micro evidence for `phan-tram` without duplicating the existing Topic02/Topic03 percent identities.
+2. Re-rank the remaining `PARTIAL_*` Grade-6 rows, especially lesson-local/shared-skill gaps, before declaring the Learn/Micro layer complete.
+3. Migrate the Shared Written Exercise Library toward canonical `kntt_placements` before claiming KNTT written coverage.
+4. Only after Learn/Practice gaps are reconciled should Readiness expansion be considered.
+5. Keep Bài 30 Written/Readiness dimensions open until they receive their own evidence; the R1 repair must not be promoted into a mastery/readiness claim.
+6. Keep Bài 42 Practice at family/topic level and Readiness pending until separate evidence is reviewed; the lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
+7. Keep Bài 4–5 Practice at family/topic level and Readiness open; the source-confirmed lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
+8. Keep Bài 8 Practice at family/topic level and Readiness open; the source-confirmed lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
+9. Keep Bài 27 Practice at family/topic level and Readiness open; its problem-type evidence must not be promoted into canonical skills or mastery/readiness credit.
+10. Keep Bài 38–41 Practice at topic-level partial evidence and keep STA21 Readiness at its existing Grade 6–8 topic scope; the reviewed Learn/Micro repair must not be promoted into a Grade-6-only readiness claim.
 
 ## 8. Protected boundaries
 
