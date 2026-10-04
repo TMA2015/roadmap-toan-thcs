@@ -1,5 +1,5 @@
 {
-  "version": "1.0.213",
+  "version": "1.0.214",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.213",
-      "review_verdict": "G6_BAI31_MULTI_TOPIC_EVIDENCE_RECONCILED_NEXT_BAI1_3",
-      "review_notes": "Statistics repair is released. Bài 31 no longer requires content duplication: existing Topic03 + Topic02 reviewed/deployed evidence already covers ti-so, ti-so-phan-tram and phan-tram. The audit-only reconciliation is ready for technical QA. Next clean lesson-local gap is Bài 1–3 (ghi-so-tu-nhien, thu-tu-so-tu-nhien), followed by Bài 11–12 and Bài 23–24.",
+      "context_version": "1.0.214",
+      "review_verdict": "G6_BAI31_RECONCILED_RELEASED_NEXT_LOCAL_WAVE",
+      "review_notes": "Bài 31 multi-topic evidence reconciliation is released. The next clean Grade-6 content work is the remaining PARTIAL_LOCAL_OR_FAMILY wave: Bài 1–3 (ghi-so-tu-nhien, thu-tu-so-tu-nhien), Bài 11–12 (bai-toan-ucln-bcnn), and Bài 23–24 (phan-so-bang-nhau, hon-so-duong). These identities are already semantically reviewed as lesson-local/problem-type and should not inflate taxonomy.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1396,15 +1396,24 @@
       "id": "MATH-KNTT-G6-BAI31-MULTI-TOPIC-EVIDENCE-R1-001",
       "title": "Grade 6 KNTT Bài 31 — reconcile existing multi-topic percent evidence R1",
       "routing": "AUDIT_RECONCILIATION+NO_NEW_CONTENT",
-      "status": "TECH-QA-PENDING",
-      "context_version": "1.0.213",
-      "review_verdict": "EXISTING_REVIEWED_EVIDENCE_RECONCILED_NO_NOTEBOOK_REQUIRED",
-      "review_notes": "The prior Bài 31 gap was caused by a single-primary-topic audit assumption. Existing reviewed/deployed Topic03 evidence covers ti-so and ti-so-phan-tram; Topic02 Grade-6 card num02-g6-core-5 is placed at Bài 28–31 and already covers canonical phan-tram, with NUM02MICRO_014–015 direct Grade-6 Micro evidence. Grade-6 semantic reconciliation already maps historical bai-toan-phan-tram to canonical phan-tram under NUM-PERCENT. No academic content, taxonomy identity, answer, Practice item, Readiness asset, runtime behavior or learner history is changed; therefore no new NotebookLM round is required. Audit now records Learn=VERIFIED_DIRECT, Micro=VERIFIED_DIRECT, Practice=TOPIC_SKILL_EVIDENCE across Topic03 + Topic02. Written and Readiness remain open.",
+      "status": "DONE",
+      "context_version": "1.0.214",
+      "review_verdict": "DONE_EXISTING_EVIDENCE_RECONCILED_CI_PASS_PR327_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Bài 31 required no content duplication. Existing reviewed/deployed Topic03 evidence covers ti-so and ti-so-phan-tram; Topic02 card num02-g6-core-5 covers canonical phan-tram at Grade-6 Bài 28–31 with NUM02MICRO_014–015. The Grade-6 semantic reconciliation already maps bai-toan-phan-tram to phan-tram under NUM-PERCENT. Audit now records Learn=VERIFIED_DIRECT, Micro=VERIFIED_DIRECT, Practice=TOPIC_SKILL_EVIDENCE; Written and Readiness remain intentionally open. Exact PR head ba83342c0728c474826612358fae717d4c8a5923 passed Roadmap PR Quality run 37216371481. PR #327 squash-merged as d359dae54750f7462f861510ce9e019b42c4f818. Deploy MkDocs run 37216769394 SUCCESS. No academic content, taxonomy, runtime, history, Mastery or Readiness semantic change.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
         "scripts/test-kntt-g6-bai31-multi-topic-evidence-r1.js"
-      ]
+      ],
+      "release": {
+        "pr": 327,
+        "exact_head": "ba83342c0728c474826612358fae717d4c8a5923",
+        "qa_run": 37216371481,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "d359dae54750f7462f861510ce9e019b42c4f818",
+        "deploy_run": 37216769394,
+        "deploy_conclusion": "SUCCESS"
+      }
     }
   ]
 }
