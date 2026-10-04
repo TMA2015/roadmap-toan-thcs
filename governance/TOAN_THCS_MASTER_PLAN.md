@@ -1,7 +1,7 @@
 # TOÁN THCS — KẾ HOẠCH TỔNG THỂ VÀ QUY TẮC NGUỒN
 
 **Loại tài liệu:** Project Charter / Master Plan — tài liệu định hướng dài hạn dùng làm nguồn Project  
-**Phiên bản:** 1.1.1 — bổ sung định danh sản phẩm ngày 29/09/2026  
+**Phiên bản:** 1.2.0 — One Knowledge Graph · Two Learning Paths, ngày 04/10/2026  
 **Phạm vi:** Nền tảng tự học Toán từ THCS, thiết kế mở cho THPT, SAT/ACT Math và tư duy logic  
 **Tính chất:** Quy tắc và định hướng bền vững; **không phải nhật ký tiến độ, biên bản lỗi hay báo cáo phiên làm việc**.
 **Nguồn chuẩn trong repository:** governance/TOAN_THCS_MASTER_PLAN.md. Bản dùng trong NotebookLM hoặc Project phải ghi cùng phiên bản, không duy trì một bản Master Plan thứ hai khác nội dung.
@@ -30,7 +30,7 @@ Về dài hạn, cùng nền tảng có thể bổ sung Toán THPT lớp 10–12
 ### 1.2. Người dùng và tiêu chuẩn tự học
 
 - Học sinh có thể bắt đầu từ lớp 6, chưa biết cấu trúc toàn bộ chương trình; giao diện, thuật ngữ và hướng dẫn phải tự giải thích được.
-- Có đường vào theo **lớp/chương/bài đang học ở trường** và đường vào theo **25 chuyên đề**; hai đường dùng lại cùng nội dung và skill.
+- Có hai đường học chính: **Học theo lớp/KNTT** và **Học theo chuyên đề/25 Vertical Spine**. Đây là hai cách đi qua **cùng một Knowledge Graph**, không phải hai kho kiến thức độc lập.
 - Học sinh muốn học trước phải được cho biết điều kiện tiên quyết, không bị đẩy tới bài vượt nền.
 - Phụ huynh có thể thấy tiến trình và điểm cần hỗ trợ mà không cần hiểu cấu trúc dữ liệu kỹ thuật.
 - Học sinh tự chủ: hệ thống đề nghị ôn bù, không dùng một bài kiểm tra hay điểm số để khóa cứng quyền học tiếp.
@@ -41,7 +41,24 @@ Một học sinh phải trả lời được năm câu hỏi: **(1) Em đang h�
 
 ---
 
-## 2. Kiến trúc học thuật: một mạch kiến thức dọc
+## 2. Kiến trúc học thuật: một Knowledge Graph, hai đường học
+
+### 2.0. One Knowledge Graph — Two Learning Paths
+
+Hệ thống chỉ có **một mạng kiến thức và kỹ năng chuẩn**. Trục dọc 25 chuyên đề và đường học theo KNTT là **hai cách tổ chức trải nghiệm học** trên cùng mạng đó; không duy trì hai bộ skill, hai ngân hàng kiến thức hoặc hai chuẩn đánh giá song song.
+
+**Path A — Học theo lớp / KNTT Course Map**
+- Tổ chức theo **Lớp → Chương → Bài → Core Cards** để học sinh tìm đúng nội dung đang học ở trường.
+- Mục tiêu dài hạn là bao phủ các **mục tiêu kiến thức/kỹ năng chủ đạo KNTT lớp 6–9**, không sao chép SGK theo từng trang hay từng hoạt động.
+- Ưu tiên làm rõ **bản chất của bài học hiện tại**, dấu hiệu nhận biết, lỗi điển hình và luyện `Base → Trap → Apply`.
+- Dùng tốt cho học hằng ngày, ôn bài trên lớp, chuẩn bị kiểm tra và tìm lại phần nền gần nhất.
+
+**Path B — Học theo chuyên đề / Vertical Spine**
+- Tổ chức theo **25 chuyên đề xuyên lớp 6–9**, chú trọng tiến triển khái niệm, prerequisite, liên kết nhiều tầng và chuyển giao.
+- Ưu tiên bài tập có tính **liên kết, lựa chọn công cụ, phối hợp nhiều skill và truy nguyên điểm yếu**.
+- Dùng tốt cho củng cố nền, học trước có định hướng, ôn tổng hợp và chuẩn bị thi cuối cấp.
+
+Hai path có thể dùng chung một skill, một bài tập hoặc một ví dụ khi hợp lý. Khác biệt nằm ở **vai trò sư phạm và cách dẫn đường**, không phải cố chia toán học thành hai phần không giao nhau.
 
 ### 2.1. Vertical Spine
 
@@ -68,9 +85,20 @@ Không coi số thứ tự chuyên đề là thứ tự bắt buộc học tuy�
 
 **Độ khó của câu hỏi không đồng nghĩa với tầng chương trình.** Việc một dạng hay xuất hiện trong đề thi không làm nó trở thành yêu cầu bắt buộc của SGK. Khẳng định tần suất đề thi phải dựa trên tập đề cụ thể theo địa phương/năm.
 
-### 2.3. Mapping theo sách và lớp
+### 2.3. Mapping theo sách và lớp — KNTT Course Map
 
-Mapping KNTT 6–9 là chỉ mục để dẫn học sinh từ chương/bài trong SGK đến các thẻ kiến thức, kỹ năng và bài luyện phù hợp. Trong một chuyên đề dùng chung nhiều lớp, **không mặc định toàn bộ thẻ đều thuộc lớp đang chọn**. Khi thay đổi mapping phải kiểm tra nguồn SGK, ID và ranh giới Core/Support/Bridge.
+Mapping KNTT 6–9 là **đường học ngang đầy đủ theo lớp**, dẫn học sinh từ chương/bài trong SGK đến các thẻ kiến thức, kỹ năng và bài luyện phù hợp. Mục tiêu sản phẩm là để học sinh lớp 6, 7, 8 hoặc 9 có thể tìm được hầu hết **kiến thức chủ đạo đang học trên lớp** mà không cần biết trước cấu trúc 25 chuyên đề.
+
+Quy tắc:
+- Mỗi **skill** có một định danh học thuật chuẩn dùng chung; không tạo một skill KNTT khác chỉ vì nó xuất hiện trong Course Map.
+- **Card/Lesson ID** là định danh của đơn vị trình bày học; `card_id` không đồng nghĩa với `skill_id`.
+- Một bài KNTT có thể dùng nhiều skill từ một hoặc nhiều chuyên đề; một skill có thể xuất hiện ở nhiều bài/lớp nếu chương trình yêu cầu.
+- Kiến thức KNTT cần cho lớp học nhưng không phải trọng tâm của Vertical Spine vẫn được biểu diễn trong graph với vai trò hỗ trợ/local phù hợp; không làm phình 25 chuyên đề chỉ để đủ mapping.
+- Trong một chuyên đề dùng chung nhiều lớp, **không mặc định toàn bộ thẻ đều thuộc lớp đang chọn**.
+- Khi thay đổi mapping phải kiểm tra nguồn SGK/SBT, ID và ranh giới Core/Support/Bridge.
+- Không nhân bản nội dung chỉ để phục vụ hai path; ưu tiên reference/reuse và giữ một nguồn canonical cho skill/item.
+
+Khi mở rộng Course Map, duy trì **KNTT Coverage Matrix 6–9** ở mức: `Lớp → Chương → Bài → skill → chuyên đề liên quan → trạng thái coverage`. Matrix dùng để phát hiện phần thiếu, không phải danh sách learner-facing bắt buộc.
 
 ### 2.4. Knowledge Graph
 
@@ -84,6 +112,8 @@ Mapping KNTT 6–9 là chỉ mục để dẫn học sinh từ chương/bài tro
 
 Chỉ kích hoạt quan hệ đủ tin cậy sau kiểm định. Không kết luận "vì A học trước B nên học sinh sai B là do yếu A". Đồ thị đề nghị cách học, không quyết định cứng số phận tiến độ của học sinh.
 
+**Graph có thể giàu bên trong nhưng phải nghèo trên giao diện.** Không hiển thị mọi cạnh quan hệ cho học sinh. Learner-facing mặc định chỉ ưu tiên những đường thật sự giúp hành động tiếp theo như **Cần biết trước / Nếu đang yếu, ôn lại / Học tiếp**; thêm liên kết khác chỉ khi có ích rõ ràng.
+
 ---
 
 ## 3. Cấu trúc chuẩn của trải nghiệm tự học
@@ -94,9 +124,11 @@ Chỉ kích hoạt quan hệ đủ tin cậy sau kiểm định. Không kết lu
 
 ### 3.2. Golden Template: ba không gian rõ ràng
 
-1. **Học / Learning Workspace:** thẻ kiến thức ngắn, giải thích vì sao, khi nào áp dụng, ví dụ trực quan, lỗi thường gặp; mỗi thẻ có micro-practice kiểu `Base → Trap → Apply`, phản hồi ngay. Có thể xin gợi ý hoặc Tutor. Mục luyện tập/tự kiểm tra trên trang kiến thức chỉ dẫn sang không gian riêng, không nhân bản ngân hàng bài tập dài.
-2. **Luyện / Practice Room:** ngân hàng câu hỏi tương tác theo skill, bài luyện điểm yếu, phản hồi và gợi ý từng mức; song song giữ bài tự luận để học sinh trình bày trên giấy/vở, lời giải mở khi chủ động xem. Hiển thị Core/Entrance10/Challenge rõ ràng.
+1. **Học / Learning Workspace:** thẻ kiến thức ngắn, giải thích vì sao, khi nào áp dụng, ví dụ trực quan, lỗi thường gặp; mỗi thẻ có micro-practice kiểu `Base → Trap → Apply`, phản hồi ngay. Có thể xin gợi ý hoặc Tutor. Với đường KNTT, đây là nơi ưu tiên làm rõ **bản chất của bài học đang học ở trường**. Mục luyện tập/tự kiểm tra trên trang kiến thức chỉ dẫn sang không gian riêng, không nhân bản ngân hàng bài tập dài.
+2. **Luyện / Practice Room:** ngân hàng câu hỏi tương tác theo skill, bài luyện điểm yếu, luyện nền tảng và bài chuyển giao/tổng hợp; song song giữ bài tự luận để học sinh trình bày trên giấy/vở, lời giải mở khi chủ động xem. Practice Room **không dựng một curriculum “Core KNTT” thứ hai** cạnh các Core Cards. Bài nào chủ yếu giúp hiểu trực tiếp một Core Card nên được gắn với card hoặc dùng lại từ card; bài vẫn hữu ích cho chuyên đề có thể giữ trong Practice Room dưới vai trò luyện phù hợp.
 3. **Tự kiểm tra / Core Readiness:** làm độc lập, không hint/Tutor, không hiện đúng sai từng câu, phản hồi **sau khi nộp**; tính theo kỹ năng được đánh giá, dữ liệu tách khỏi dữ liệu luyện tập. Trạng thái gợi ý như `READY`, `REVIEW_RECOMMENDED`, `MORE_EVIDENCE_NEEDED` không được diễn đạt thành chứng chỉ nắm vững tuyệt đối hoặc khóa quyền học.
+
+Các tầng nội bộ như `KNTT-Core`, `Core-Support`, `Entrance10`, `Specialized-Challenge` phải được dịch sang nhãn learner-facing ngắn và có ích khi cần; không lộ metadata chỉ để phản ánh schema.
 
 Bất cứ thay đổi phá vỡ Golden Template đã đóng băng phải tạo phiên bản quy chuẩn mới và kiểm định tương thích, không sửa ngầm riêng từng chuyên đề.
 
@@ -122,13 +154,53 @@ Một đáp án cuối đúng của bài tổng hợp không chứng minh học 
 
 Sau khi học khái niệm nền mà không mở lời giải, quan sát học sinh: **(1) giải thích bằng lời của mình; (2) phát hiện và giải thích ví dụ sai/phản ví dụ; (3) vận dụng vào tình huống chưa gặp**. Ghi lại chỗ vướng, mức hỗ trợ và điều chỉnh nội dung. CI xanh, infographic đẹp, tỷ lệ trắc nghiệm đúng hoặc việc học sinh nhận ra công thức không đủ để kết luận đã hiểu sâu. Đây là kế hoạch kiểm thử thực tế; không khẳng định toàn bộ 25 chuyên đề đã vượt qua.
 
+### 3.7. Vai trò bài tập giữa hai đường học
+
+Không cố chia tuyệt đối bài tập thành “của KNTT” và “của chuyên đề”. Một item có thể được dùng ở cả hai path nếu vai trò rõ ràng.
+
+**Trong bài KNTT/Core Card**, ưu tiên:
+- kiểm tra một khái niệm hoặc một điểm bản chất vừa học;
+- phản ví dụ/lỗi sai thường gặp;
+- `Base → Trap → Apply`;
+- giúp học sinh trả lời “em có thật sự hiểu bài này không?”.
+
+**Trong Practice theo chuyên đề**, ưu tiên:
+- liên kết kiến thức nhiều lớp/tầng;
+- lựa chọn công cụ thay vì được chỉ sẵn phương pháp;
+- ghép nhiều skill và kiểm tra điều kiện/ngữ cảnh;
+- bài chuyển giao, luyện điểm yếu, ôn thi hoặc truy nguyên prerequisite.
+
+Ở lớp thấp, bài chuyên đề có thể còn gần một skill đơn lẻ; không cần ép mọi câu thành bài tổng hợp. Từ lớp 8–9, tăng dần vai trò liên kết và chuyển giao.
+
+Nếu cùng một item được dùng ở nhiều nơi, chỉ có **một ID và một nội dung canonical**; metadata/placement cho biết vai trò hiển thị. Không tạo bản sao chỉ để “đủ bài” cho từng path.
+
+### 3.8. Một hệ tên học thuật, nhiều cách trình bày
+
+Mỗi chuyên đề cần có **một vocabulary/catalogue dạng bài chuẩn** đủ ổn định để infographic, ví dụ mẫu, Practice, bài tự luận và Core Cards cùng tham chiếu.
+
+- **Dạng bài** là phân loại cấu trúc toán học.
+- **Ví dụ mẫu** chỉ là ví dụ minh họa cho một hoặc nhiều dạng; không mặc nhiên là danh sách dạng bài đầy đủ.
+- **Mức 1–4 / độ khó / tầng vận dụng** là chiều khác với dạng bài; không tạo một taxonomy thứ hai bằng cách liệt kê tên không đồng nhất.
+- Infographic tóm tắt phải dùng cùng tên canonical hoặc ghi rõ đang rút gọn/nhóm gộp.
+- Learner-facing ưu tiên từ ngữ ngắn, nhất quán; thuật ngữ nội bộ có thể chi tiết hơn nhưng phải có mapping rõ.
+
+Khi học sinh thấy cùng một chuyên đề ở nhiều nơi, họ phải nhận ra đó là **cùng hệ kiến thức được nhìn ở vai trò khác**, không phải nhiều chương trình mâu thuẫn.
+
 ---
 
 ## 4. Ngân hàng bài tập, đánh giá và learner evidence
 
 ### 4.1. Định danh và dữ liệu
 
-Mỗi item có ID ổn định, phiên bản, chuyên đề, skill được đánh giá chính, tag/dạng bài, tầng chương trình, đáp án/lời giải/gợi ý và nguồn/QA thích hợp. Không tự ý đổi ID cũ hoặc xóa bằng chứng học tập khi sửa câu hỏi; nếu thay nội dung ảnh hưởng nghĩa đáp án cần migration hoặc phiên bản mới có truy vết.
+Mỗi item có ID ổn định, phiên bản, chuyên đề, skill được đánh giá chính, tag/dạng bài, tầng chương trình, đáp án/lời giải/gợi ý và nguồn/QA thích hợp. Một item có thể được **tham chiếu từ cả KNTT Course Map và Vertical Spine** mà không cần nhân bản ID.
+
+Phân biệt:
+- `skill_id`: định danh năng lực/kiến thức toán học;
+- `card_id` / `lesson_id`: đơn vị học/trình bày;
+- `item_id`: câu hỏi/bài tập;
+- metadata placement/role: cho biết item đang được dùng như micro-practice, luyện nền tảng, chuyển giao, Entrance10, v.v.
+
+Không tự ý đổi ID cũ hoặc xóa bằng chứng học tập khi sửa câu hỏi; nếu thay nội dung ảnh hưởng nghĩa đáp án cần migration hoặc phiên bản mới có truy vết.
 
 ### 4.2. Hai nguồn bằng chứng khác nhau
 
@@ -196,6 +268,8 @@ Nêu mục tiêu, mức độ, đối tượng, nguồn và phạm vi. Phân bi�
 
 Mỗi môn giữ một file quy tắc cố định và những nguồn tham chiếu thực sự cần. Mỗi đợt chỉ chọn gói REVIEW_PACKET tạm thời, thay nguồn cũ khi đổi Batch; lưu nguồn/hồ sơ đã đóng tại GitHub, không chất nhiều Batch cũ vào Notebook. Gói phải ghi packet_id, batch_id, content_version hoặc source_sha, expected_ids, phạm vi và nguồn được phép. Kiểm kê danh sách ID trước khi đánh giá từng item; kết quả bao phủ 1:1, phân biệt PASS, REVISION_REQUIRED, INSUFFICIENT_EVIDENCE và NOT_REVIEWED. Không coi mục không được nhắc đến là PASS. Mỗi issue cần chứng cứ theo đúng file/ID/phiên bản. Chat AI cũ là tham khảo, không ngang quyền với SGK và đề chính thức. Phản biện không tự phê duyệt; tích hợp chỉ sau kiểm tra chéo và quyết định của chủ dự án.
 
+**Khi Master Plan tăng phiên bản, permanent source tương ứng trong NotebookLM phải được thay bằng đúng bản mới trước vòng phản biện tiếp theo.** Không dùng bản Master Plan cũ làm permanent source cho review mới nếu quyết định kiến trúc liên quan đã thay đổi. Bản canonical luôn là `governance/TOAN_THCS_MASTER_PLAN.md`; file NotebookLM chỉ là bản phát hành đồng phiên bản để tải vào nguồn.
+
 ---
 
 ## 7. Kỹ thuật, giao diện và khả năng bảo trì
@@ -237,7 +311,7 @@ Phân biệt chính xác: **đã chuẩn bị → đã commit/PR → QA đạt �
 
 ## 9. Lộ trình mở rộng theo giai đoạn — không gắn mốc tiến độ cứng
 
-**Giai đoạn A — Chất lượng nền THCS:** kiểm định học thuật các phần rủi ro; hoàn thiện minh họa bản chất, cầu nối kỹ năng, bài mỏ neo, đề–lời giải–rubric và kiểm thử với học sinh. Khép kín luồng tự học cơ bản, hoàn thiện chuyên đề nền chưa đồng nhất Golden Template, bảo đảm hình và câu chữ đúng chuẩn.
+**Giai đoạn A — Chất lượng nền THCS:** kiểm định học thuật các phần rủi ro; hoàn thiện minh họa bản chất, cầu nối kỹ năng, bài mỏ neo, đề–lời giải–rubric và kiểm thử với học sinh. Khép kín luồng tự học cơ bản, hoàn thiện chuyên đề nền chưa đồng nhất Golden Template, đồng thời xây **KNTT Coverage Matrix 6–9** và mở rộng Course Map để bao phủ các mục tiêu kiến thức/kỹ năng chủ đạo theo lớp mà không nhân bản Knowledge Graph.
 
 **Giai đoạn B — Hành trình tự học cá nhân:** từ lớp/chương đến bài hiện tại, prerequisite, bằng chứng học tập, gợi ý ôn bù và bước tiếp theo; đánh giá đầu vào và ôn giãn cách đơn giản, minh bạch.
 
@@ -277,6 +351,9 @@ Không tự xem các giai đoạn tương lai là tính năng đã triển khai.
 9. **Hiểu bản chất và vận dụng độc lập quan trọng hơn nhớ công thức và điểm MCQ**; cần kiểm thử với học sinh.
 10. **Đề tự luận giấy và điểm tự đối chiếu không phải bằng chứng hệ thống tự chấm**.
 11. **NotebookLM phản biện theo ID/SHA và nguồn chọn lọc**, không phải người phê duyệt cuối.
+12. **Một Knowledge Graph, hai Learning Paths**: KNTT Course Map và 25 Vertical Spine không được phát triển thành hai kho kiến thức/skill song song.
+13. **Không dựng một Core curriculum thứ hai trong Practice Room**; Core Cards dạy bản chất bài hiện tại, Practice theo chuyên đề ưu tiên luyện nền, liên kết, chuyển giao và truy nguyên điểm yếu.
+14. **Liên kết nội bộ có thể giàu nhưng giao diện phải tiết chế**; chỉ hiển thị những đường giúp học sinh quyết định hành động tiếp theo.
 
 ---
 
@@ -287,4 +364,5 @@ Tài liệu này chỉ cập nhật khi có **thay đổi quyết định thiế
 
 - **v1.0:** Kiến trúc 25 chuyên đề, quy tắc nguồn, phân tầng học tập và QA nền.
 - **v1.1 — 28/09/2026:** Bổ sung hai loại infographic, thử nghiệm hiểu bản chất, cây cầu kỹ năng–bài tổng hợp, chuẩn bài mỏ neo, bộ đề tự luận giấy/rubric và quy trình NotebookLM. Không đổi cấu trúc 25 chuyên đề, ID câu hỏi hoặc dữ liệu học sinh.
-- **v1.1.1 — 29/09/2026:** Chuẩn hóa tên Self-Learning Math / G Learning; xác định AI Tutor là tính năng, giữ nguyên repo và URL kỹ thuật. Không đổi nội dung học thuật hay dữ liệu.
+- **v1.1.1 — 29/09/2026:** Chuẩn hóa tên **Self-Learning Math / G Learning**; xác định AI Tutor là tính năng, giữ nguyên repo và URL kỹ thuật. Không đổi nội dung học thuật hay dữ liệu.
+- **v1.2.0 — 04/10/2026:** Chốt kiến trúc **One Knowledge Graph · Two Learning Paths**: (A) KNTT Course Map theo lớp 6–9 để học đúng chương trình đang học; (B) 25 Vertical Spine để học xuyên lớp, truy prerequisite và luyện chuyển giao. Chuẩn hóa vai trò bài tập giữa Core Cards và Practice theo chuyên đề, nguyên tắc một skill/ID canonical dùng lại nhiều path, vocabulary dạng bài nhất quán và quy tắc cập nhật permanent source NotebookLM khi Master Plan tăng phiên bản.
