@@ -68,7 +68,7 @@
     {
       "id": "num02-g6-core-2",
       "order": 2,
-      "title": "Chia hết, số nguyên tố, ƯCLN và BCNN",
+      "title": "Quan hệ chia hết, số nguyên tố, ƯCLN và BCNN",
       "kntt_lessons": [
         "Lớp 6 · Bài 8–12"
       ],
@@ -91,17 +91,38 @@
         "NUM02MICRO_005",
         "NUM02MICRO_006",
         "NUM02MICRO_017",
-        "NUM02MICRO_018"
+        "NUM02MICRO_018",
+        "NUM02MICRO_027",
+        "NUM02MICRO_028",
+        "NUM02MICRO_029"
       ],
       "teaching_copy": {
-        "key_idea": "Số chia hết cho 3 hoặc 9 khi tổng các chữ số chia hết cho 3 hoặc 9. Số nguyên tố lớn hơn 1 có đúng hai ước dương. ƯCLN dùng cho chia nhóm nhiều nhất; BCNN cho chu kỳ gặp lại.",
+        "key_idea": "Với các số tự nhiên, a chia hết cho b (b khác 0) nếu có số tự nhiên q sao cho a = b × q. Nếu hai số đều chia hết cho cùng một số thì tổng của chúng cũng chia hết cho số đó; khi lấy số lớn trừ số nhỏ, hiệu cũng chia hết cho số đó. Các dấu hiệu chia hết, số nguyên tố, ƯCLN và BCNN là các công cụ tiếp theo để xử lí bài toán chia hết.",
         "worked_example": {
-          "problem": "Có 24 bút và 36 vở, chia được nhiều nhất bao nhiêu phần quà giống nhau, dùng hết?",
-          "solution": "Số phần quà là ƯCLN(24, 36) = 12; mỗi phần có 2 bút và 3 vở."
+          "problem": "Biết 18 chia hết cho 6 và 30 chia hết cho 6. Không cần chia trực tiếp 48 cho 6, hãy giải thích vì sao 18 + 30 chia hết cho 6.",
+          "solution": "Vì cả 18 và 30 đều chia hết cho 6 nên theo tính chất chia hết của một tổng, 18 + 30 = 48 cũng chia hết cho 6."
         },
-        "misconception": "Tìm nhiều nhóm nhất phải dùng ƯCLN chứ không dùng BCNN.",
-        "summary": "Đọc rõ dấu hiệu của bài toán trước khi chọn ƯCLN hoặc BCNN."
-      }
+        "misconception": "Không được kết luận một tổng chia hết cho m chỉ vì một số hạng chia hết cho m. Muốn dùng tính chất 'cùng chia hết' cho tổng hoặc hiệu, phải kiểm tra các số hạng liên quan đều chia hết cho cùng m.",
+        "summary": "Nhận biết đúng quan hệ chia hết trước, rồi dùng tính chất của tổng/hiệu để suy luận nhanh; sau đó mới dùng các dấu hiệu chia hết, số nguyên tố, ƯCLN hoặc BCNN khi bài toán yêu cầu."
+      },
+      "lesson_local_concepts": [
+        {
+          "id": "quan-he-chia-het",
+          "label": "Quan hệ chia hết",
+          "family_id": "NUM-DIV-PRIME",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 8"
+        },
+        {
+          "id": "tinh-chat-chia-het",
+          "label": "Tính chất chia hết",
+          "family_id": "NUM-DIV-PRIME",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 8"
+        }
+      ]
     },
     {
       "id": "num02-g6-core-3",
