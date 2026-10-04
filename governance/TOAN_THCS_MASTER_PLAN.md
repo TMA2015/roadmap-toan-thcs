@@ -268,6 +268,8 @@ Nêu mục tiêu, mức độ, đối tượng, nguồn và phạm vi. Phân bi�
 
 Mỗi môn giữ một file quy tắc cố định và những nguồn tham chiếu thực sự cần. Mỗi đợt chỉ chọn gói REVIEW_PACKET tạm thời, thay nguồn cũ khi đổi Batch; lưu nguồn/hồ sơ đã đóng tại GitHub, không chất nhiều Batch cũ vào Notebook. Gói phải ghi packet_id, batch_id, content_version hoặc source_sha, expected_ids, phạm vi và nguồn được phép. Kiểm kê danh sách ID trước khi đánh giá từng item; kết quả bao phủ 1:1, phân biệt PASS, REVISION_REQUIRED, INSUFFICIENT_EVIDENCE và NOT_REVIEWED. Không coi mục không được nhắc đến là PASS. Mỗi issue cần chứng cứ theo đúng file/ID/phiên bản. Chat AI cũ là tham khảo, không ngang quyền với SGK và đề chính thức. Phản biện không tự phê duyệt; tích hợp chỉ sau kiểm tra chéo và quyết định của chủ dự án.
 
+**Khi Master Plan tăng phiên bản, permanent source tương ứng trong NotebookLM phải được thay bằng đúng bản mới trước vòng phản biện tiếp theo.** Không dùng bản Master Plan cũ làm permanent source cho review mới nếu quyết định kiến trúc liên quan đã thay đổi. Bản canonical luôn là `governance/TOAN_THCS_MASTER_PLAN.md`; file NotebookLM chỉ là bản phát hành đồng phiên bản để tải vào nguồn.
+
 ---
 
 ## 7. Kỹ thuật, giao diện và khả năng bảo trì
@@ -309,7 +311,7 @@ Phân biệt chính xác: **đã chuẩn bị → đã commit/PR → QA đạt �
 
 ## 9. Lộ trình mở rộng theo giai đoạn — không gắn mốc tiến độ cứng
 
-**Giai đoạn A — Chất lượng nền THCS:** kiểm định học thuật các phần rủi ro; hoàn thiện minh họa bản chất, cầu nối kỹ năng, bài mỏ neo, đề–lời giải–rubric và kiểm thử với học sinh. Khép kín luồng tự học cơ bản, hoàn thiện chuyên đề nền chưa đồng nhất Golden Template, bảo đảm hình và câu chữ đúng chuẩn.
+**Giai đoạn A — Chất lượng nền THCS:** kiểm định học thuật các phần rủi ro; hoàn thiện minh họa bản chất, cầu nối kỹ năng, bài mỏ neo, đề–lời giải–rubric và kiểm thử với học sinh. Khép kín luồng tự học cơ bản, hoàn thiện chuyên đề nền chưa đồng nhất Golden Template, đồng thời xây **KNTT Coverage Matrix 6–9** và mở rộng Course Map để bao phủ các mục tiêu kiến thức/kỹ năng chủ đạo theo lớp mà không nhân bản Knowledge Graph.
 
 **Giai đoạn B — Hành trình tự học cá nhân:** từ lớp/chương đến bài hiện tại, prerequisite, bằng chứng học tập, gợi ý ôn bù và bước tiếp theo; đánh giá đầu vào và ôn giãn cách đơn giản, minh bạch.
 
@@ -349,6 +351,9 @@ Không tự xem các giai đoạn tương lai là tính năng đã triển khai.
 9. **Hiểu bản chất và vận dụng độc lập quan trọng hơn nhớ công thức và điểm MCQ**; cần kiểm thử với học sinh.
 10. **Đề tự luận giấy và điểm tự đối chiếu không phải bằng chứng hệ thống tự chấm**.
 11. **NotebookLM phản biện theo ID/SHA và nguồn chọn lọc**, không phải người phê duyệt cuối.
+12. **Một Knowledge Graph, hai Learning Paths**: KNTT Course Map và 25 Vertical Spine không được phát triển thành hai kho kiến thức/skill song song.
+13. **Không dựng một Core curriculum thứ hai trong Practice Room**; Core Cards dạy bản chất bài hiện tại, Practice theo chuyên đề ưu tiên luyện nền, liên kết, chuyển giao và truy nguyên điểm yếu.
+14. **Liên kết nội bộ có thể giàu nhưng giao diện phải tiết chế**; chỉ hiển thị những đường giúp học sinh quyết định hành động tiếp theo.
 
 ---
 
@@ -359,4 +364,6 @@ Tài liệu này chỉ cập nhật khi có **thay đổi quyết định thiế
 
 - **v1.0:** Kiến trúc 25 chuyên đề, quy tắc nguồn, phân tầng học tập và QA nền.
 - **v1.1 — 28/09/2026:** Bổ sung hai loại infographic, thử nghiệm hiểu bản chất, cây cầu kỹ năng–bài tổng hợp, chuẩn bài mỏ neo, bộ đề tự luận giấy/rubric và quy trình NotebookLM. Không đổi cấu trúc 25 chuyên đề, ID câu hỏi hoặc dữ liệu học sinh.
+- **v1.1.1 — 29/09/2026:** Chốt định danh sản phẩm **Self-Learning Math** trong hệ sinh thái G Learning; giữ repository/URL kỹ thuật để bảo toàn tích hợp và dữ liệu.
+- **v1.2.0 — 04/10/2026:** Chốt kiến trúc **One Knowledge Graph · Two Learning Paths**: (A) KNTT Course Map theo lớp 6–9 để học đúng chương trình đang học; (B) 25 Vertical Spine để học xuyên lớp, truy prerequisite và luyện chuyển giao. Chuẩn hóa vai trò bài tập giữa Core Cards và Practice theo chuyên đề, nguyên tắc một skill/ID canonical dùng lại nhiều path, vocabulary dạng bài nhất quán và quy tắc cập nhật permanent source NotebookLM khi Master Plan tăng phiên bản.
 - **v1.1.1 — 29/09/2026:** Chuẩn hóa tên Self-Learning Math / G Learning; xác định AI Tutor là tính năng, giữ nguyên repo và URL kỹ thuật. Không đổi nội dung học thuật hay dữ liệu.
