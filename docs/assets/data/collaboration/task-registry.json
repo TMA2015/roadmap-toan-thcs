@@ -1,5 +1,5 @@
 {
-  "version": "1.0.211",
+  "version": "1.0.212",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.211",
-      "review_verdict": "G6_STATISTICS_REPAIRED_NEXT_BAI31_DIRECT_GAP",
-      "review_notes": "Grade-6 statistics Learn/Micro repair passed NotebookLM and is ready for technical QA. After release, Bài 31 becomes the clearest remaining direct Learn gap because phan-tram is a direct semantic target but missing from the exact Bài 31 Learn evidence. Other PARTIAL rows still require re-ranking; Practice/Written/Readiness remain conservatively scoped.",
+      "context_version": "1.0.212",
+      "review_verdict": "G6_STATISTICS_RELEASED_NEXT_BAI31_DIRECT_GAP",
+      "review_notes": "Grade-6 statistics Learn/Micro repair is released. Bài 38–41 now has reviewed direct-and-local Learn/Micro evidence while Practice remains partial topic-level and Readiness remains the existing Grade 6–8 topic authorization. Next clearest direct Learn gap is Bài 31: phan-tram is a direct semantic target but missing from exact Bài 31 Learn evidence. Remaining PARTIAL rows still require re-ranking.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1361,10 +1361,10 @@
       "id": "MATH-KNTT-G6-STATISTICS-R1-001",
       "title": "Grade 6 KNTT Bài 38–41 — statistics direct/local evidence repair R1",
       "routing": "CONTENT_REPAIR+NOTEBOOKLM_ACADEMIC_REVIEW",
-      "status": "ACADEMIC-PASS-TECH-QA-PENDING",
-      "context_version": "1.0.211",
-      "review_verdict": "NOTEBOOKLM_PASS_G6_STATISTICS_CONTENT_REVIEW_COMPLETE",
-      "review_notes": "NotebookLM PASS with clearance G6_STATISTICS_CONTENT_REVIEW_COMPLETE. Both Learn cards PASS; 5/5 new Micro PASS; direct mappings thu-thap-du-lieu and doc-bieu-do-cot-kep PASS; lesson-local du-lieu, bang-thong-ke and bieu-do-tranh PASS; shared Grade-6/Grade-8 card boundary PASS; no missing/duplicate/unexpected IDs. No academic correction required. Dimension Audit now records Bài 38–41 Learn=VERIFIED_DIRECT_AND_LOCAL and Micro=VERIFIED_DIRECT_AND_LOCAL. Practice remains PARTIAL_TOPIC_EVIDENCE; Written=NONE; Readiness remains AUTHORIZED_TOPIC_LEVEL at full-topic Grade 6–8 scope. Technical CI/PR gate remains required.",
+      "status": "DONE",
+      "context_version": "1.0.212",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_CI_PASS_PR324_MERGED_HOTFIX325_DEPLOY_SUCCESS",
+      "review_notes": "NotebookLM PASS with clearance G6_STATISTICS_CONTENT_REVIEW_COMPLETE. Both Learn cards PASS; 5/5 Micro PASS; direct mappings thu-thap-du-lieu and doc-bieu-do-cot-kep PASS; local du-lieu, bang-thong-ke and bieu-do-tranh PASS; shared Grade-6/Grade-8 card boundary PASS. Dimension Audit records Bài 38–41 Learn=VERIFIED_DIRECT_AND_LOCAL and Micro=VERIFIED_DIRECT_AND_LOCAL; Practice=PARTIAL_TOPIC_EVIDENCE, Written=NONE, Readiness=AUTHORIZED_TOPIC_LEVEL remain intentionally scoped. Exact implementation head 148eea8073e0daeebb227e9582d1d508ba3f1ea9 passed Roadmap PR Quality run 37211413748; PR #324 squash-merged as c3ee3cf72b27abd2499935f804b7e36596775e0e. Initial deploy run 37211840991 failed only on a stale CĐ21 readiness-bundle guard expecting 15 Micro items. Hotfix PR #325 updated that technical guard to 20; exact head d7eec7883289b0f513c86530b4bd86cf7bced74f passed Roadmap PR Quality run 37211994829, merged as b09df6c0911b25d75c48570fb6dfcc1fb058398d, and final Deploy MkDocs run 37212404188 SUCCESS. No curriculum, taxonomy, runtime, learner-history, Mastery or Readiness semantic change in the hotfix.",
       "artifacts": [
         "review-packets/kntt-g6-statistics-r1/00_NOTEBOOKLM_PACKET_R1.md",
         "docs/assets/data/curriculum/topic21-learning-workspace.json",
@@ -1374,7 +1374,23 @@
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
       ],
-      "review_receipt": "review-packets/kntt-g6-statistics-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      "review_receipt": "review-packets/kntt-g6-statistics-r1/01_NOTEBOOKLM_RESULT_R1.md",
+      "release": {
+        "implementation_pr": 324,
+        "implementation_exact_head": "148eea8073e0daeebb227e9582d1d508ba3f1ea9",
+        "implementation_qa_run": 37211413748,
+        "implementation_qa_conclusion": "SUCCESS",
+        "implementation_merge_sha": "c3ee3cf72b27abd2499935f804b7e36596775e0e",
+        "initial_deploy_run": 37211840991,
+        "initial_deploy_conclusion": "FAILURE_STALE_READY_BUNDLE_GUARD",
+        "hotfix_pr": 325,
+        "hotfix_exact_head": "d7eec7883289b0f513c86530b4bd86cf7bced74f",
+        "hotfix_qa_run": 37211994829,
+        "hotfix_qa_conclusion": "SUCCESS",
+        "final_merge_sha": "b09df6c0911b25d75c48570fb6dfcc1fb058398d",
+        "final_deploy_run": 37212404188,
+        "final_deploy_conclusion": "SUCCESS"
+      }
     }
   ]
 }
