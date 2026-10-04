@@ -1178,12 +1178,13 @@
       "status": "IN_PROGRESS",
       "context_version": "1.0.189",
       "review_verdict": "G6_R1_DRAFT_RECONCILIATION_READY",
-      "review_notes": "PR #308 framework merged at cc214f5be75ff1da490b177dce91cc5af5954223. Grade-6 R1 draft now classifies the 35 unresolved historical refs as 16 CANONICAL_SKILL, 12 CANONICAL_FAMILY, 5 NEEDS_REVIEW and 2 GAP_CANDIDATE (lam-tron, uoc-luong). 28/35 reconcile without new global skills. R1 does not authorize taxonomy/runtime/mastery/history changes. Next academic gate is independent review of the 5 review cases + 2 gap candidates using current NotebookLM Rules v1.2 + Master Plan v1.2.1.",
+      "review_notes": "PR #308 framework merged at cc214f5be75ff1da490b177dce91cc5af5954223. Grade-6 R1 draft now classifies the 35 unresolved historical refs as 16 CANONICAL_SKILL, 12 CANONICAL_FAMILY, 5 NEEDS_REVIEW and 2 GAP_CANDIDATE (lam-tron, uoc-luong). 28/35 reconcile without new global skills. R1 does not authorize taxonomy/runtime/mastery/history changes. Next academic gate is independent review of the 5 review cases + 2 gap candidates using current NotebookLM Rules v1.2 + Master Plan v1.2.1. NotebookLM batch packet MATH-KNTT-G6-RECON-R1-20261004 is prepared for exactly 7 cases and requires the two official NXB GDVN SGK Toán 6 volumes as S1 alongside the two current permanent sources.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
         "docs/roadmap/kntt-coverage-matrix-6-9-v1.md",
         "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
-        "docs/roadmap/kntt-grade6-reconciliation-r1.md"
+        "docs/roadmap/kntt-grade6-reconciliation-r1.md",
+        "review-packets/kntt-grade6-reconciliation-r1/00_NOTEBOOKLM_PACKET_R1.md"
       ]
     }
   ]
