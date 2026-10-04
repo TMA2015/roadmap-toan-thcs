@@ -829,6 +829,8 @@ There are still many historical open PRs, mostly **audit/provenance drafts**. Do
 > - Reusable SGK PDFs may stay in the Notebook across batches; only the grade/volume(s) relevant to the current review should be selected.
 > - Batch review packet/source files are temporary and should be replaced by the next batch packet unless explicitly reused.
 
+> **KNTT dimension coverage audit — Grade 6 pilot drafted:** after Grades 6–9 semantic reconciliation closed, the matrix now audits six separate dimensions instead of equating skill-ID presence with self-learning readiness. Grade 6 = 31 rows: SKILL_MAP 31/31 semantic; Learn 9 direct-verified / 22 partial; Micro 14 direct-verified / 12 partial / 3 family-level-only / 2 none; Practice 21 topic-skill / 5 partial / 4 family-level / 1 none; Written 5 candidate-only + 26 none because current Written Library has 0 `kntt_placements`; Readiness 1 authorized topic-level / 2 pending / 28 not verified structured. Priority gaps: Bài 30 `lam-tron-so` missing Learn skill metadata + micro + Practice evidence; Bài 42 outcome/event lacks direct Grade-6 micro and CT23 readiness remains pending. This audit is read-only; no content/runtime/history/Mastery/Readiness change. Next gate: CI → merge audit framework → repair Bài 30 first before mass expansion.
+
 ## Duy trì trạng thái
 
 Cập nhật GitHub sau mỗi mốc quyết định, QA, merge, deploy hoặc nghiệm thu; lịch sử Git giữ bản cũ. Không có bộ đếm đáng tin cậy để cảnh báo chính xác giới hạn chat; chủ động chốt checkpoint khi phiên dài. Câu khôi phục: **“Đọc Project Handoff trên GitHub, đối chiếu main và tiếp tục.”**
