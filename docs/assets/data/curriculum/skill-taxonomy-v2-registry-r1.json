@@ -2,7 +2,7 @@
   "schema": "skill-taxonomy-v2-registry-r1",
   "version": 1,
   "status": "I0_DURABLE_REGISTRY_RUNTIME_DISABLED",
-  "as_of": "2026-10-02",
+  "as_of": "2026-10-04",
   "academic_authorization": "CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING",
   "runtime_enabled": false,
   "learner_data_write_enabled": false,
@@ -123,7 +123,8 @@
       ],
       "diagnostic_subskills": [
         "tap-hop-so",
-        "so-huu-ti-thap-phan"
+        "so-huu-ti-thap-phan",
+        "lam-tron-so"
       ],
       "learner_visible_default": true,
       "optional_section": false,
@@ -6436,6 +6437,25 @@
       "layer": "Entrance10",
       "source": "S4_NEW_FAMILY",
       "source_batch": "S4"
+    }
+  ],
+  "academic_addenda": [
+    {
+      "id": "MATH-KNTT-G6-RECON-R1-20261004",
+      "status": "NOTEBOOKLM_PASS_RECONCILIATION_APPLIED",
+      "source_class": "S1",
+      "review_result_path": "review-packets/kntt-grade6-reconciliation-r1/01_NOTEBOOKLM_RESULT_R1.md",
+      "clearance": "G6_R1_RECONCILIATION_REVIEW_COMPLETE",
+      "changes": [
+        {
+          "family_id": "NUM-SETS",
+          "add_diagnostic_subskill": "lam-tron-so",
+          "rationale": "S1 Bài 30 + independent review found rounding diagnostically distinct and cross-grade stable."
+        }
+      ],
+      "runtime_effect": false,
+      "learner_history_effect": false,
+      "mastery_readiness_effect": false
     }
   ]
 }

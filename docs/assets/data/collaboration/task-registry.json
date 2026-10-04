@@ -1,5 +1,5 @@
 {
-  "version": "1.0.188",
+  "version": "1.0.190",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1176,12 +1176,16 @@
       "title": "KNTT Coverage Matrix 6–9 — current-skill reconciliation",
       "routing": "GOVERNANCE+CURRICULUM_MAPPING",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.188",
-      "review_verdict": "FRAMEWORK_READY_RECONCILIATION_PENDING",
-      "review_notes": "Framework v1 created from the four reviewed KNTT grade maps and current Taxonomy v2 + Knowledge Graph skill universe. 78 curriculum rows: 48 CURRENT_MAPPED, 2 CURRENT_MAPPED_ITEM_REVIEW, 15 PARTIAL_RECONCILE, 13 RECONCILE_REQUIRED. Unresolved refs are reconciliation candidates, not confirmed curriculum gaps. Grade 6 has the most legacy-ID noise (35 unresolved refs); Grade 7 has 11, Grade 8 has 3, Grade 9 has 4. Historical proposed refs already resolved by later work: G7 12/22, G8 6/8, G9 23/27. Next: explicit historical_ref → canonical_skill/family/genuine_gap reconciliation, starting Grade 6. No learner-facing/runtime change.",
+      "context_version": "1.0.190",
+      "review_verdict": "G6_R1_RECONCILED_REVIEWED",
+      "review_notes": "Grade 6 R1 closed after NotebookLM PASS 7/7 with clearance G6_R1_RECONCILIATION_REVIEW_COMPLETE. Final semantic split: 18 CANONICAL_SKILL, 16 CANONICAL_FAMILY, 1 LESSON_LOCAL; 0 review/gap cases. Exactly one new canonical identity, lam-tron-so under NUM-SETS, was added to the durable registry. No runtime/history/Mastery/Readiness or learner-facing change. Next: Grade 7 reconciliation R2.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
-        "docs/roadmap/kntt-coverage-matrix-6-9-v1.md"
+        "docs/roadmap/kntt-coverage-matrix-6-9-v1.md",
+        "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
+        "docs/roadmap/kntt-grade6-reconciliation-r1.md",
+        "review-packets/kntt-grade6-reconciliation-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "review-packets/kntt-grade6-reconciliation-r1/01_NOTEBOOKLM_RESULT_R1.md"
       ]
     }
   ]

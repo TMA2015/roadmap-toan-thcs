@@ -1,0 +1,613 @@
+{
+  "schema": "kntt-grade6-reconciliation-r1",
+  "version": 1,
+  "as_of": "2026-10-04",
+  "status": "RECONCILED_REVIEWED_NO_RUNTIME_CHANGE",
+  "architecture": "One Knowledge Graph · Two Learning Paths",
+  "purpose": "Reconcile the 35 unresolved historical Grade-6 KNTT skill references against the current canonical skill/family universe without inflating the taxonomy or changing learner runtime.",
+  "source_locks": {
+    "coverage_matrix": {
+      "path": "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
+      "blob_sha": "6f97a6d78199643948b4c5b7c3bde443f3f549e8"
+    },
+    "grade6_map": {
+      "path": "docs/assets/data/curriculum/kntt-grade6-map.json",
+      "blob_sha": "6b63ca1a122b7ea2a68eefa364c0a8074235a9ba"
+    },
+    "taxonomy_v2": {
+      "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+      "review_input_blob_sha": "c2f2e5b8d78a58d874f88524861326223fdbdf45",
+      "integrated_blob_sha": "16113e910cc451cd69b72c5f2f86f579237bf60f"
+    },
+    "knowledge_graph": {
+      "path": "docs/assets/data/curriculum/knowledge-graph-v1.json",
+      "blob_sha": "64a7acf13a25aaf4a8f2501d3a63f48f7391134d"
+    },
+    "learning_workspaces": [
+      {
+        "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "blob_sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+      },
+      {
+        "path": "docs/assets/data/curriculum/topic21-learning-workspace.json",
+        "blob_sha": "2812085ab0dd0800196eee7d44562f2ced4294e1"
+      },
+      {
+        "path": "docs/assets/data/curriculum/topic23-learning-workspace.json",
+        "blob_sha": "7b2659c78e298017d16ec52f2a45cd57d3d88191"
+      }
+    ]
+  },
+  "resolution_definitions": {
+    "CANONICAL_SKILL": "Historical ref can map to an existing canonical diagnostic skill. Many-to-one mapping is allowed when current taxonomy intentionally uses broader granularity.",
+    "CANONICAL_FAMILY": "The concept belongs in an existing family, but should remain lesson-local/problem-type/representation granularity rather than becoming a new global assessed skill.",
+    "LESSON_LOCAL": "The concept is confirmed Core/lesson content but remains a lesson-local application technique/problem type rather than a global assessed-skill identity."
+  },
+  "summary": {
+    "unresolved_input_count": 35,
+    "reconciled_count": 35,
+    "resolution_counts": {
+      "CANONICAL_SKILL": 18,
+      "CANONICAL_FAMILY": 16,
+      "LESSON_LOCAL": 1
+    },
+    "remaining_review_queue": [],
+    "remaining_gap_candidates": [],
+    "new_canonical_skills": [
+      "lam-tron-so"
+    ],
+    "new_canonical_skill_count": 1,
+    "resolved_without_new_global_skill": 34,
+    "note": "All 35 Grade-6 historical refs are semantically reconciled. The raw exact-ID mismatch count remains preserved in the Coverage Matrix for traceability."
+  },
+  "entries": [
+    {
+      "historical_ref": "tap-hop",
+      "chapter": 1,
+      "lesson_ref": "Bài 1-3",
+      "curriculum_summary": "Tập hợp; cách ghi và thứ tự số tự nhiên",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "tap-hop-so"
+      ],
+      "canonical_family_ids": [
+        "NUM-SETS"
+      ],
+      "local_role": "DIRECT_ALIAS",
+      "reason": "Tên lịch sử ngắn hơn; skill hiện hành `tap-hop-so` là định danh phù hợp."
+    },
+    {
+      "historical_ref": "ghi-so-tu-nhien",
+      "chapter": 1,
+      "lesson_ref": "Bài 1-3",
+      "curriculum_summary": "Tập hợp; cách ghi và thứ tự số tự nhiên",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "NUM-SETS"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "Thuộc biểu diễn số trong family `Tập hợp số và biểu diễn số`; không cần tách thêm global skill chỉ để giữ tên bài KNTT."
+    },
+    {
+      "historical_ref": "thu-tu-so-tu-nhien",
+      "chapter": 1,
+      "lesson_ref": "Bài 1-3",
+      "curriculum_summary": "Tập hợp; cách ghi và thứ tự số tự nhiên",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "NUM-SETS"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "Thuộc biểu diễn/thứ tự số tự nhiên trong family NUM-SETS; giữ chi tiết ở lesson-local."
+    },
+    {
+      "historical_ref": "cong-tru-so-tu-nhien",
+      "chapter": 1,
+      "lesson_ref": "Bài 4-5",
+      "curriculum_summary": "Cộng, trừ, nhân, chia số tự nhiên và tính chất",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "NUM-INTEGER-OPS"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "NotebookLM PASS: phép cộng và phép trừ số tự nhiên thuộc family NUM-INTEGER-OPS; sắc thái miền số tự nhiên giữ ở lesson-local để tránh trùng taxonomy."
+    },
+    {
+      "historical_ref": "nhan-chia-so-tu-nhien",
+      "chapter": 1,
+      "lesson_ref": "Bài 4-5",
+      "curriculum_summary": "Cộng, trừ, nhân, chia số tự nhiên và tính chất",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "NUM-INTEGER-OPS"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "NotebookLM PASS: phép nhân và phép chia số tự nhiên thuộc family NUM-INTEGER-OPS; không tạo global skill riêng."
+    },
+    {
+      "historical_ref": "quan-he-chia-het",
+      "chapter": 2,
+      "lesson_ref": "Bài 8",
+      "curriculum_summary": "Quan hệ chia hết và tính chất",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "NUM-DIV-PRIME"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "Khái niệm quan hệ chia hết nằm trong family `Chia hết, số nguyên tố và phân tích thừa số`; taxonomy không cần một counter riêng cho tên bài này."
+    },
+    {
+      "historical_ref": "tinh-chat-chia-het",
+      "chapter": 2,
+      "lesson_ref": "Bài 8",
+      "curriculum_summary": "Quan hệ chia hết và tính chất",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "NUM-DIV-PRIME"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "Tính chất chia hết là lesson-local concept trong cùng family NUM-DIV-PRIME."
+    },
+    {
+      "historical_ref": "so-nguyen-to-hop-so",
+      "chapter": 2,
+      "lesson_ref": "Bài 10",
+      "curriculum_summary": "Số nguyên tố và hợp số; phân tích ra thừa số nguyên tố",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-nguyen-to"
+      ],
+      "canonical_family_ids": [
+        "NUM-DIV-PRIME"
+      ],
+      "local_role": "DIRECT_ALIAS",
+      "reason": "Canonical `so-nguyen-to` đã có nhãn `Số nguyên tố – hợp số`."
+    },
+    {
+      "historical_ref": "uoc-chung-ucln",
+      "chapter": 2,
+      "lesson_ref": "Bài 11-12",
+      "curriculum_summary": "Ước chung, ƯCLN; bội chung, BCNN và ứng dụng",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "ucln"
+      ],
+      "canonical_family_ids": [
+        "NUM-GCD-LCM"
+      ],
+      "local_role": "DIRECT_ALIAS",
+      "reason": "Tên KNTT gộp khái niệm ước chung với kỹ năng đích ƯCLN; canonical skill hiện hành là `ucln`."
+    },
+    {
+      "historical_ref": "boi-chung-bcnn",
+      "chapter": 2,
+      "lesson_ref": "Bài 11-12",
+      "curriculum_summary": "Ước chung, ƯCLN; bội chung, BCNN và ứng dụng",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "bcnn"
+      ],
+      "canonical_family_ids": [
+        "NUM-GCD-LCM"
+      ],
+      "local_role": "DIRECT_ALIAS",
+      "reason": "Tên KNTT gộp bội chung với kỹ năng đích BCNN; canonical skill hiện hành là `bcnn`."
+    },
+    {
+      "historical_ref": "bai-toan-ucln-bcnn",
+      "chapter": 2,
+      "lesson_ref": "Bài 11-12",
+      "curriculum_summary": "Ước chung, ƯCLN; bội chung, BCNN và ứng dụng",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "NUM-GCD-LCM"
+      ],
+      "local_role": "PROBLEM_TYPE",
+      "reason": "Đây là nhóm bài chọn/ứng dụng ƯCLN–BCNN, phù hợp giữ như problem type dưới family thay vì skill độc lập."
+    },
+    {
+      "historical_ref": "so-nguyen-truc-so",
+      "chapter": 3,
+      "lesson_ref": "Bài 13",
+      "curriculum_summary": "Tập hợp số nguyên, số đối, trục số, thứ tự và giá trị tuyệt đối",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-nguyen-phep-tinh"
+      ],
+      "canonical_family_ids": [
+        "NUM-INTEGER-OPS"
+      ],
+      "local_role": "AGGREGATED_GRANULARITY",
+      "reason": "Learning Workspace hiện dùng `so-nguyen-phep-tinh` cho toàn Bài 13–17, gồm số nguyên/số đối/trục số/quy tắc dấu."
+    },
+    {
+      "historical_ref": "so-sanh-so-nguyen",
+      "chapter": 3,
+      "lesson_ref": "Bài 13",
+      "curriculum_summary": "Tập hợp số nguyên, số đối, trục số, thứ tự và giá trị tuyệt đối",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-nguyen-phep-tinh"
+      ],
+      "canonical_family_ids": [
+        "NUM-INTEGER-OPS"
+      ],
+      "local_role": "AGGREGATED_GRANULARITY",
+      "reason": "Được gom vào canonical skill rộng `so-nguyen-phep-tinh` theo Grade-6 Core card hiện hành."
+    },
+    {
+      "historical_ref": "cong-tru-so-nguyen",
+      "chapter": 3,
+      "lesson_ref": "Bài 14",
+      "curriculum_summary": "Cộng và trừ số nguyên",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-nguyen-phep-tinh"
+      ],
+      "canonical_family_ids": [
+        "NUM-INTEGER-OPS"
+      ],
+      "local_role": "AGGREGATED_GRANULARITY",
+      "reason": "Phép cộng/trừ số nguyên là phần trực tiếp của canonical `so-nguyen-phep-tinh`."
+    },
+    {
+      "historical_ref": "quy-tac-dau-ngoac",
+      "chapter": 3,
+      "lesson_ref": "Bài 15",
+      "curriculum_summary": "Quy tắc dấu ngoặc",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-nguyen-phep-tinh"
+      ],
+      "canonical_family_ids": [
+        "NUM-INTEGER-OPS"
+      ],
+      "local_role": "AGGREGATED_GRANULARITY",
+      "reason": "Quy tắc dấu ngoặc trong block số nguyên hiện được gom vào `so-nguyen-phep-tinh`."
+    },
+    {
+      "historical_ref": "nhan-so-nguyen",
+      "chapter": 3,
+      "lesson_ref": "Bài 16",
+      "curriculum_summary": "Nhân số nguyên",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-nguyen-phep-tinh"
+      ],
+      "canonical_family_ids": [
+        "NUM-INTEGER-OPS"
+      ],
+      "local_role": "AGGREGATED_GRANULARITY",
+      "reason": "Phép nhân số nguyên là phần trực tiếp của canonical `so-nguyen-phep-tinh`."
+    },
+    {
+      "historical_ref": "chia-het-so-nguyen",
+      "chapter": 3,
+      "lesson_ref": "Bài 17",
+      "curriculum_summary": "Phép chia hết; ước và bội của một số nguyên",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-nguyen-phep-tinh"
+      ],
+      "canonical_family_ids": [
+        "NUM-INTEGER-OPS"
+      ],
+      "local_role": "AGGREGATED_GRANULARITY",
+      "reason": "Bài 17 đang nằm trong Grade-6 Core card dùng `so-nguyen-phep-tinh`; giữ chi tiết chia hết ở lesson-local."
+    },
+    {
+      "historical_ref": "uoc-boi-so-nguyen",
+      "chapter": 3,
+      "lesson_ref": "Bài 17",
+      "curriculum_summary": "Phép chia hết; ước và bội của một số nguyên",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-nguyen-phep-tinh"
+      ],
+      "canonical_family_ids": [
+        "NUM-INTEGER-OPS"
+      ],
+      "local_role": "AGGREGATED_GRANULARITY",
+      "reason": "Ước/bội trong miền số nguyên đang được bao bởi Grade-6 integer card; không tạo counter riêng ở R1."
+    },
+    {
+      "historical_ref": "phan-so-bang-nhau",
+      "chapter": 6,
+      "lesson_ref": "Bài 23-24",
+      "curriculum_summary": "Mở rộng phân số, phân số bằng nhau; so sánh phân số; hỗn số dương",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "NUM-FRACTION-FORM"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "Phân số bằng nhau là nền của rút gọn/quy đồng; phù hợp family `NUM-FRACTION-FORM` hơn là thêm skill mới."
+    },
+    {
+      "historical_ref": "so-sanh-phan-so",
+      "chapter": 6,
+      "lesson_ref": "Bài 23-24",
+      "curriculum_summary": "Mở rộng phân số, phân số bằng nhau; so sánh phân số; hỗn số dương",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "quy-dong-so-sanh-phan-so"
+      ],
+      "canonical_family_ids": [
+        "NUM-FRACTION-FORM"
+      ],
+      "local_role": "DIRECT_ALIAS",
+      "reason": "Canonical skill đã gộp quy đồng và so sánh phân số."
+    },
+    {
+      "historical_ref": "hon-so-duong",
+      "chapter": 6,
+      "lesson_ref": "Bài 23-24",
+      "curriculum_summary": "Mở rộng phân số, phân số bằng nhau; so sánh phân số; hỗn số dương",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "NUM-FRACTION-FORM"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "NotebookLM PASS: hỗn số dương là một hình thức biểu diễn phân số; map family NUM-FRACTION-FORM và giữ chi tiết ở lesson-local."
+    },
+    {
+      "historical_ref": "cong-tru-phan-so",
+      "chapter": 6,
+      "lesson_ref": "Bài 25-26",
+      "curriculum_summary": "Cộng, trừ, nhân, chia phân số",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "phep-tinh-phan-so"
+      ],
+      "canonical_family_ids": [
+        "NUM-FRACTION-OPS"
+      ],
+      "local_role": "AGGREGATED_GRANULARITY",
+      "reason": "Canonical `phep-tinh-phan-so` bao phép cộng/trừ phân số."
+    },
+    {
+      "historical_ref": "nhan-chia-phan-so",
+      "chapter": 6,
+      "lesson_ref": "Bài 25-26",
+      "curriculum_summary": "Cộng, trừ, nhân, chia phân số",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "phep-tinh-phan-so"
+      ],
+      "canonical_family_ids": [
+        "NUM-FRACTION-OPS"
+      ],
+      "local_role": "AGGREGATED_GRANULARITY",
+      "reason": "Canonical `phep-tinh-phan-so` bao phép nhân/chia phân số."
+    },
+    {
+      "historical_ref": "tim-gia-tri-phan-so-cua-so",
+      "chapter": 6,
+      "lesson_ref": "Bài 27",
+      "curriculum_summary": "Hai bài toán về phân số",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "NUM-FRACTION-OPS"
+      ],
+      "local_role": "PROBLEM_TYPE",
+      "reason": "Một dạng bài ứng dụng phân số; giữ problem type ở KNTT/Practice thay vì tạo assessed skill độc lập."
+    },
+    {
+      "historical_ref": "tim-so-khi-biet-gia-tri-phan-so",
+      "chapter": 6,
+      "lesson_ref": "Bài 27",
+      "curriculum_summary": "Hai bài toán về phân số",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "NUM-FRACTION-OPS"
+      ],
+      "local_role": "PROBLEM_TYPE",
+      "reason": "Dạng bài đảo của ứng dụng phân số; thuộc family, không tự động thành global skill."
+    },
+    {
+      "historical_ref": "so-thap-phan",
+      "chapter": 7,
+      "lesson_ref": "Bài 28-29",
+      "curriculum_summary": "Số thập phân và tính toán với số thập phân",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-huu-ti-thap-phan"
+      ],
+      "canonical_family_ids": [
+        "NUM-SETS"
+      ],
+      "local_role": "DIRECT_ALIAS",
+      "reason": "Grade-6 decimal block hiện dùng `so-huu-ti-thap-phan`; đây là target phù hợp cho khái niệm số thập phân."
+    },
+    {
+      "historical_ref": "phep-tinh-so-thap-phan",
+      "chapter": 7,
+      "lesson_ref": "Bài 28-29",
+      "curriculum_summary": "Số thập phân và tính toán với số thập phân",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-huu-ti-thap-phan"
+      ],
+      "canonical_family_ids": [
+        "NUM-SETS"
+      ],
+      "local_role": "AGGREGATED_GRANULARITY",
+      "reason": "NotebookLM PASS: tính toán với số thập phân được hấp thụ vào canonical skill so-huu-ti-thap-phan dưới NUM-SETS."
+    },
+    {
+      "historical_ref": "lam-tron",
+      "chapter": 7,
+      "lesson_ref": "Bài 30",
+      "curriculum_summary": "Làm tròn và ước lượng",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "lam-tron-so"
+      ],
+      "canonical_family_ids": [
+        "NUM-SETS"
+      ],
+      "local_role": "NEW_CANONICAL_SKILL_S1_REVIEWED",
+      "reason": "NotebookLM PASS: S1 Bài 30 và giá trị chẩn đoán biện minh canonical skill riêng lam-tron-so dưới NUM-SETS.",
+      "created_in_this_reconciliation": true
+    },
+    {
+      "historical_ref": "uoc-luong",
+      "chapter": 7,
+      "lesson_ref": "Bài 30",
+      "curriculum_summary": "Làm tròn và ước lượng",
+      "resolution": "LESSON_LOCAL",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [],
+      "local_role": "APPLICATION_TECHNIQUE",
+      "reason": "NotebookLM PASS: ước lượng là kỹ thuật ứng dụng dựa trên làm tròn, giữ lesson-local/problem type; không tạo canonical skill riêng."
+    },
+    {
+      "historical_ref": "bai-toan-phan-tram",
+      "chapter": 7,
+      "lesson_ref": "Bài 31",
+      "curriculum_summary": "Tỉ số và tỉ số phần trăm; bài toán phần trăm",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "phan-tram"
+      ],
+      "canonical_family_ids": [
+        "NUM-PERCENT"
+      ],
+      "local_role": "PROBLEM_TYPE_TO_SKILL",
+      "reason": "Current Grade-6 Core card dùng `phan-tram` và ví dụ giảm giá; bài toán phần trăm là problem type áp dụng cùng canonical skill."
+    },
+    {
+      "historical_ref": "du-lieu",
+      "chapter": 9,
+      "lesson_ref": "Bài 38-41",
+      "curriculum_summary": "Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "STAT-DATA"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "Tên lịch sử quá rộng; family `STAT-DATA` bao dữ liệu/phân loại và thu thập, phù hợp hơn một skill mới tên `du-lieu`."
+    },
+    {
+      "historical_ref": "bang-thong-ke",
+      "chapter": 9,
+      "lesson_ref": "Bài 38-41",
+      "curriculum_summary": "Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "STAT-REPRESENT"
+      ],
+      "local_role": "LESSON_LOCAL_REPRESENTATION",
+      "reason": "NotebookLM PASS: bảng thống kê là dạng biểu diễn dữ liệu cơ bản, map family STAT-REPRESENT."
+    },
+    {
+      "historical_ref": "bieu-do-tranh",
+      "chapter": 9,
+      "lesson_ref": "Bài 38-41",
+      "curriculum_summary": "Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "STAT-CHART-READ"
+      ],
+      "local_role": "LESSON_LOCAL_REPRESENTATION",
+      "reason": "Biểu đồ tranh là một dạng biểu diễn lớp 6; map family đọc biểu đồ, không tạo global skill chỉ vì khác loại hình."
+    },
+    {
+      "historical_ref": "ket-qua-co-the",
+      "chapter": 9,
+      "lesson_ref": "Bài 42",
+      "curriculum_summary": "Kết quả có thể và sự kiện trong trò chơi, thí nghiệm",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "PROB-EVENT"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "Khái niệm kết quả có thể là vocabulary nền của phép thử/biến cố; giữ Grade-6 wording ở lesson-local dưới family PROB-EVENT."
+    },
+    {
+      "historical_ref": "su-kien-don-gian",
+      "chapter": 9,
+      "lesson_ref": "Bài 42",
+      "curriculum_summary": "Kết quả có thể và sự kiện trong trò chơi, thí nghiệm",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "PROB-EVENT"
+      ],
+      "local_role": "LESSON_LOCAL_CONCEPT",
+      "reason": "`Sự kiện` lớp 6 là tiền thân ngôn ngữ của biến cố; map family thay vì ép trực tiếp sang `bien-co` và làm mờ ranh giới lớp."
+    }
+  ],
+  "review": {
+    "packet_id": "MATH-KNTT-G6-RECON-R1-20261004",
+    "result": "PASS",
+    "expected_ids": 7,
+    "reviewed_ids": 7,
+    "clearance": "G6_R1_RECONCILIATION_REVIEW_COMPLETE",
+    "result_path": "review-packets/kntt-grade6-reconciliation-r1/01_NOTEBOOKLM_RESULT_R1.md",
+    "decisions": {
+      "cong-tru-so-tu-nhien": {
+        "decision": "MAP_TO_FAMILY",
+        "target": "NUM-INTEGER-OPS",
+        "priority": "P1"
+      },
+      "nhan-chia-so-tu-nhien": {
+        "decision": "MAP_TO_FAMILY",
+        "target": "NUM-INTEGER-OPS",
+        "priority": "P1"
+      },
+      "hon-so-duong": {
+        "decision": "MAP_TO_FAMILY",
+        "target": "NUM-FRACTION-FORM",
+        "priority": "P1"
+      },
+      "phep-tinh-so-thap-phan": {
+        "decision": "MAP_TO_SKILL",
+        "target": "so-huu-ti-thap-phan",
+        "priority": "P1"
+      },
+      "bang-thong-ke": {
+        "decision": "MAP_TO_FAMILY",
+        "target": "STAT-REPRESENT",
+        "priority": "P1"
+      },
+      "lam-tron": {
+        "decision": "ADD_CANONICAL_SKILL",
+        "target": "lam-tron-so",
+        "priority": "P1"
+      },
+      "uoc-luong": {
+        "decision": "KEEP_LESSON_LOCAL",
+        "target": null,
+        "priority": "P1"
+      }
+    }
+  },
+  "implementation_scope": {
+    "canonical_skill_additions": [
+      "lam-tron-so"
+    ],
+    "canonical_family_additions": [],
+    "canonical_skill_renames": [],
+    "learner_facing_change": false,
+    "taxonomy_runtime_activation": false,
+    "mastery_readiness_change": false,
+    "learner_history_migration": false,
+    "item_regrade": false,
+    "note": "The new canonical skill identity is added to the durable registry only. No Practice/Readiness evidence, runtime activation, or learner-facing rollout is implied."
+  }
+}

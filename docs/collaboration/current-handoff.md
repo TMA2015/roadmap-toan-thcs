@@ -9,6 +9,14 @@
 > CT08 P1-A is live, but Owner QA remains open due to UX/render/navigation/naming/Practice-room issues discovered after release. Do not start CT08 P1-B/P1-C until those architecture/UX issues are reconciled with v1.2.1.
 > **KNTT Coverage Matrix 6–9 v1 framework is now created.** It reconciles the four reviewed grade overlays against the current Taxonomy v2 + Knowledge Graph skill universe. Do not interpret unresolved refs as confirmed missing curriculum; Grade 6 especially contains legacy-ID/granularity noise. Next mapping task is explicit ID/family/gap reconciliation, starting Grade 6.
 
+> **KNTT Coverage Matrix PR #308 merged:** exact framework head `c573f0656e4439e1487a1627b1549abe51e9c529` passed full CI/browser QA and was squash-merged to main as `cc214f5be75ff1da490b177dce91cc5af5954223`.
+> **Grade 6 reconciliation R1 is now drafted on a separate governance branch.** 35 unresolved refs are classified as 16 canonical-skill matches, 12 canonical-family/lesson-local matches, 5 needs-review and 2 gap candidates (`lam-tron`, `uoc-luong`). Do not create new skills yet; independently review the 7 non-closed cases first.
+> **NotebookLM packet prepared:** `review-packets/kntt-grade6-reconciliation-r1/00_NOTEBOOKLM_PACKET_R1.md`. Review exactly the 5 NEEDS_REVIEW + 2 GAP_CANDIDATE cases; use current Rules v1.2 + Master Plan v1.2.1 + official NXB GDVN SGK Toán 6 tập một/tập hai. No S1 evidence = no Core taxonomy addition.
+> **Grade 6 reconciliation R1 CLOSED / NotebookLM PASS 7/7:** clearance `G6_R1_RECONCILIATION_REVIEW_COMPLETE`. Final: 18 canonical-skill, 16 canonical-family, 1 lesson-local; no remaining review/gap cases. One reviewed identity added to durable Taxonomy v2: `lam-tron-so` under `NUM-SETS`. No runtime, learner-history, Mastery/Readiness or learner-facing change. Next reconciliation pass: Grade 7.
+
+
+> **Owner transfer rule:** whenever the owner must move review/source files manually (especially NotebookLM), do not only name paths. If multiple local/project files are required, provide a directly downloadable ZIP. For external sources, provide exact clickable source links. Avoid making the owner search the repository or web for named files.
+
 ## Khôi phục trong cuộc trò chuyện mới
 
 Đọc tài liệu này trước, cùng [Master Plan canonical v1.2.1](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/governance/TOAN_THCS_MASTER_PLAN.md), [Golden Template](../huong-dan/golden-template-hoc-luyen-kiem-tra.md), `assets/data/collaboration/task-registry.json` và GitHub `main`. Kiểm tra mở/merge/deploy theo commit thực tế. Quyết định được duyệt và trạng thái mới ghi ở đây có ưu tiên cao hơn tường thuật cũ, nhưng không thay được bằng chứng source/code. Sau mỗi mốc QA/định hướng/merge/deploy, cập nhật checkpoint này và registry/context có liên quan.
@@ -804,6 +812,18 @@ There are still many historical open PRs, mostly **audit/provenance drafts**. Do
 4. Lập một bản quyết định read-only đề xuất trước khi thay taxonomy runtime; giữ nguyên ID, tags lịch sử và dữ liệu học sinh cho đến khi có cơ chế compatibility/evidence riêng. Sau quyết định, ghi PR/QA và cập nhật handoff.
 
 **B01–B07 evidence ledger (read-only):** [bản tổng hợp và kiểm tra mười câu sửa nguồn](https://github.com/TMA2015/roadmap-toan-thcs/blob/main/review-packets/skill-taxonomy/B01-B07-CURRENT-RECONCILIATION-20260930.md). Bản này chỉ tổng hợp phản biện và preflight, chưa bật taxonomy hay sửa ngân hàng.
+
+
+> **NotebookLM source-transfer + selection protocol (owner-confirmed 2026-10-04):**
+> - The owner keeps a persistent Math Notebook containing permanent governance sources plus reusable Grade 6–9 textbook PDFs.
+> - For each review, always state explicitly: **KEEP**, **REPLACE/ADD**, **SELECT FOR THIS REVIEW**, and **DESELECT / leave unselected**.
+> - If exactly **1 new local/project source file** is needed, provide a direct download link to that file.
+> - If **2 or more new local/project source files** are needed, package them into one directly downloadable ZIP to reduce source-selection mistakes.
+> - Do not make the owner search the repo or web for named files.
+> - NotebookLM prompts should be short and pasted directly into ChatGPT chat for easy copy/paste; do not hide the only usable prompt inside a packet file.
+> - Permanent sources normally retained: current NotebookLM Math Review Rules + current Master Plan. When either canonical permanent source is superseded, explicitly say which old file to replace/remove and provide the new file.
+> - Reusable SGK PDFs may stay in the Notebook across batches; only the grade/volume(s) relevant to the current review should be selected.
+> - Batch review packet/source files are temporary and should be replaced by the next batch packet unless explicitly reused.
 
 ## Duy trì trạng thái
 
