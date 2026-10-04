@@ -1,7 +1,7 @@
 # TOÁN THCS — KẾ HOẠCH TỔNG THỂ VÀ QUY TẮC NGUỒN
 
 **Loại tài liệu:** Project Charter / Master Plan — tài liệu định hướng dài hạn dùng làm nguồn Project  
-**Phiên bản:** 1.2.0 — One Knowledge Graph · Two Learning Paths, ngày 04/10/2026  
+**Phiên bản:** 1.2.1 — Shared Written Exercise Library, ngày 04/10/2026  
 **Phạm vi:** Nền tảng tự học Toán từ THCS, thiết kế mở cho THPT, SAT/ACT Math và tư duy logic  
 **Tính chất:** Quy tắc và định hướng bền vững; **không phải nhật ký tiến độ, biên bản lỗi hay báo cáo phiên làm việc**.
 **Nguồn chuẩn trong repository:** governance/TOAN_THCS_MASTER_PLAN.md. Bản dùng trong NotebookLM hoặc Project phải ghi cùng phiên bản, không duy trì một bản Master Plan thứ hai khác nội dung.
@@ -186,6 +186,25 @@ Mỗi chuyên đề cần có **một vocabulary/catalogue dạng bài chuẩn**
 
 Khi học sinh thấy cùng một chuyên đề ở nhiều nơi, họ phải nhận ra đó là **cùng hệ kiến thức được nhìn ở vai trò khác**, không phải nhiều chương trình mâu thuẫn.
 
+### 3.9. Shared Written Exercise Library — một kho, hai đường truy cập
+
+Toàn bộ bài tự luận dùng một **Written Exercise Library canonical**. Không tạo kho bài tự luận riêng cho KNTT và kho khác cho Vertical Spine.
+
+Learner-facing có hai cách vào cùng thư viện:
+
+**Học theo lớp**
+- Chọn **Lớp 6 / 7 / 8 / 9**.
+- Sau đó chọn **Chương / Bài / mạch kiến thức** theo KNTT.
+- Phù hợp khi học sinh muốn luyện đúng nội dung đang học trên lớp.
+
+**Học theo chuyên đề**
+- Chọn một trong **25 chuyên đề**.
+- Sau đó có thể lọc tiếp theo skill, dạng bài, mức độ, vai trò luyện hoặc tầng ôn thi.
+- Phù hợp cho học xuyên lớp, củng cố nền, chuyển giao và thi cuối cấp.
+
+Hai đường chỉ là **bộ lọc/placement khác nhau trên cùng một `item_id`**. Không nhân bản đề, lời giải hay rubric để phục vụ hai cách truy cập.
+
+
 ---
 
 ## 4. Ngân hàng bài tập, đánh giá và learner evidence
@@ -199,6 +218,17 @@ Phân biệt:
 - `card_id` / `lesson_id`: đơn vị học/trình bày;
 - `item_id`: câu hỏi/bài tập;
 - metadata placement/role: cho biết item đang được dùng như micro-practice, luyện nền tảng, chuyển giao, Entrance10, v.v.
+
+Riêng bài tự luận, metadata nên tách rõ:
+- `kntt_placements`: một hoặc nhiều vị trí curriculum chính thức, ví dụ `grade → chapter → lesson`; đây là cơ sở cho bộ lọc **Học theo lớp**.
+- `topic_placements`: một hoặc nhiều chuyên đề/skill mà bài phục vụ; đây là cơ sở cho bộ lọc **Học theo chuyên đề**.
+- `prerequisite_skills`: kiến thức nền cần dùng nhưng **không làm thay đổi lớp curriculum của bài**.
+- `written_role`: vai trò như `ROUTINE_PRACTICE`, `DEEP_ANCHOR`, `TRANSFER`, `ENTRANCE10` hoặc tương đương đã được chuẩn hóa.
+- `recommended_for_grades` có thể được bổ sung sau nếu thật sự cần gợi ý đối tượng phù hợp, nhưng **không thay thế `kntt_placements`**.
+
+Ví dụ: một bài lớp 8 sử dụng phân số lớp 6 vẫn được lọc ở **KNTT lớp 8** nếu curriculum placement là lớp 8; phân số lớp 6 chỉ nằm trong `prerequisite_skills`. Không gắn bài vào lớp 6 chỉ vì nó dùng kiến thức lớp 6.
+
+Một bài chỉ có nhiều `kntt_placements` khi mapping chương trình thực sự chứng minh bài đó phù hợp với nhiều vị trí curriculum; không thêm nhiều lớp chỉ vì học sinh lớn hơn vẫn làm được.
 
 Không tự ý đổi ID cũ hoặc xóa bằng chứng học tập khi sửa câu hỏi; nếu thay nội dung ảnh hưởng nghĩa đáp án cần migration hoặc phiên bản mới có truy vết.
 
@@ -222,6 +252,14 @@ Học sinh có thể xem đề nghị và quyết định học tiếp; không �
 ### 4.5. Bài tự luận trên giấy và phạm vi chấm điểm
 
 Phân biệt bài luyện có hệ thống chấm, bài kiểm tra độc lập có hệ thống chấm và bài tự luận **do học sinh tự đối chiếu rubric trên giấy**. Không gộp điểm học sinh tự chấm vào Core Readiness hay kết luận hệ thống đã xác minh được bài làm. Mặc định đề tự luận gồm đề riêng, lời giải đầy đủ, rubric theo bước và đường quay lại ôn lỗi. Không bắt học sinh gõ lời giải dài, nộp ảnh, tạo kho lưu trữ hoặc hứa AI chấm chữ viết tay khi chưa có năng lực đáng tin cậy và nhu cầu thực chất.
+
+Written Exercise Library là **nguồn canonical** của bài tự luận. Core Card, KNTT Course Map, Practice Room và Vertical Spine chỉ tham chiếu/lọc bài từ thư viện này theo ngữ cảnh học. Bài mỏ neo sâu và bài luyện thường khác nhau bằng `written_role` và metadata sư phạm, không bằng việc tách thành các kho riêng.
+
+Khi thiết kế UI thư viện, ưu tiên hai lựa chọn đầu vào dễ hiểu:
+- **Học theo lớp** — “Theo chương trình KNTT lớp 6–9”.
+- **Học theo chuyên đề** — “Luyện xuyên lớp · củng cố · ôn thi”.
+
+Không yêu cầu học sinh hiểu các thuật ngữ kỹ thuật như placement, taxonomy hay schema để sử dụng bộ lọc.
 
 ---
 
@@ -354,6 +392,8 @@ Không tự xem các giai đoạn tương lai là tính năng đã triển khai.
 12. **Một Knowledge Graph, hai Learning Paths**: KNTT Course Map và 25 Vertical Spine không được phát triển thành hai kho kiến thức/skill song song.
 13. **Không dựng một Core curriculum thứ hai trong Practice Room**; Core Cards dạy bản chất bài hiện tại, Practice theo chuyên đề ưu tiên luyện nền, liên kết, chuyển giao và truy nguyên điểm yếu.
 14. **Liên kết nội bộ có thể giàu nhưng giao diện phải tiết chế**; chỉ hiển thị những đường giúp học sinh quyết định hành động tiếp theo.
+15. **Written Exercise Library là một kho canonical dùng chung**; KNTT và Chuyên đề chỉ là hai cách lọc/truy cập, không tạo bản sao bài tự luận.
+16. **Curriculum placement khác prerequisite**: tag lớp/chương/bài phản ánh nơi nội dung được học chính thức; kiến thức nền lớp dưới chỉ nằm ở quan hệ prerequisite nếu không phải placement thực sự.
 
 ---
 
@@ -366,3 +406,4 @@ Tài liệu này chỉ cập nhật khi có **thay đổi quyết định thiế
 - **v1.1 — 28/09/2026:** Bổ sung hai loại infographic, thử nghiệm hiểu bản chất, cây cầu kỹ năng–bài tổng hợp, chuẩn bài mỏ neo, bộ đề tự luận giấy/rubric và quy trình NotebookLM. Không đổi cấu trúc 25 chuyên đề, ID câu hỏi hoặc dữ liệu học sinh.
 - **v1.1.1 — 29/09/2026:** Chuẩn hóa tên **Self-Learning Math / G Learning**; xác định AI Tutor là tính năng, giữ nguyên repo và URL kỹ thuật. Không đổi nội dung học thuật hay dữ liệu.
 - **v1.2.0 — 04/10/2026:** Chốt kiến trúc **One Knowledge Graph · Two Learning Paths**: (A) KNTT Course Map theo lớp 6–9 để học đúng chương trình đang học; (B) 25 Vertical Spine để học xuyên lớp, truy prerequisite và luyện chuyển giao. Chuẩn hóa vai trò bài tập giữa Core Cards và Practice theo chuyên đề, nguyên tắc một skill/ID canonical dùng lại nhiều path, vocabulary dạng bài nhất quán và quy tắc cập nhật permanent source NotebookLM khi Master Plan tăng phiên bản.
+- **v1.2.1 — 04/10/2026:** Chuẩn hóa **Shared Written Exercise Library**: một kho bài tự luận canonical với hai đường truy cập Học theo lớp/KNTT và Học theo chuyên đề; bổ sung `kntt_placements`, `topic_placements`, `prerequisite_skills` và `written_role`; tách curriculum placement khỏi prerequisite để lọc theo lớp chính xác mà không nhân bản bài.
