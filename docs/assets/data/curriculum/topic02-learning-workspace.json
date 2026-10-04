@@ -14,7 +14,7 @@
     {
       "id": "num02-g6-core-1",
       "order": 1,
-      "title": "Số tự nhiên, phép tính và thứ tự thực hiện",
+      "title": "Số tự nhiên: tập hợp, cách ghi, phép tính và thứ tự thực hiện",
       "kntt_lessons": [
         "Lớp 6 · Bài 1–7"
       ],
@@ -35,16 +35,19 @@
         "NUM02MICRO_016",
         "NUM02MICRO_024",
         "NUM02MICRO_025",
-        "NUM02MICRO_026"
+        "NUM02MICRO_026",
+        "NUM02MICRO_033",
+        "NUM02MICRO_034",
+        "NUM02MICRO_035"
       ],
       "teaching_copy": {
-        "key_idea": "Với số tự nhiên, cộng và nhân có tính chất giao hoán, kết hợp; phép nhân phân phối đối với phép cộng. Phép trừ và phép chia không có tính giao hoán. Khi tính biểu thức, làm trong ngoặc, rồi lũy thừa, nhân/chia và cuối cùng cộng/trừ.",
+        "key_idea": "Số tự nhiên dùng để đếm và sắp thứ tự. Khi ghi một số tự nhiên, giá trị của mỗi chữ số phụ thuộc vào hàng của nó; đọc và viết số theo từng lớp, từng hàng từ trái sang phải. Trên tia số, số ở bên trái nhỏ hơn số ở bên phải; với hai số có cùng số chữ số, so sánh lần lượt từ hàng cao nhất. Với phép tính số tự nhiên, cộng và nhân có tính giao hoán, kết hợp; phép nhân phân phối đối với phép cộng. Khi tính biểu thức, làm trong ngoặc, rồi lũy thừa, nhân/chia và cuối cùng cộng/trừ.",
         "worked_example": {
-          "problem": "a) Tính nhanh 25 × 37 × 4. b) Tính 6 + 2 × 3².",
-          "solution": "a) Dùng giao hoán và kết hợp: 25 × 37 × 4 = (25 × 4) × 37 = 100 × 37 = 3700. b) 3² = 9; 2 × 9 = 18; vậy 6 + 18 = 24."
+          "problem": "a) Trong số 35 407, chữ số 5 có giá trị bao nhiêu? b) So sánh 58 203 và 58 230. c) Tính nhanh 25 × 37 × 4.",
+          "solution": "a) Chữ số 5 ở hàng nghìn nên có giá trị 5 000. b) Hai số giống nhau đến hàng trăm; ở hàng chục có 0 < 3 nên 58 203 < 58 230. c) (25 × 4) × 37 = 100 × 37 = 3 700."
         },
-        "misconception": "Không được đổi chỗ tùy ý trong phép trừ hoặc phép chia. Khi tính biểu thức, cũng không cộng/trừ trước nếu còn phép nhân, chia hoặc lũy thừa cần thực hiện trước.",
-        "summary": "Chọn tính chất phù hợp để tính thuận tiện, rồi thực hiện biểu thức đúng thứ tự và kiểm tra kết quả."
+        "misconception": "Không so sánh số tự nhiên chỉ bằng chữ số cuối cùng; phải xét số chữ số rồi so từ hàng cao nhất. Cũng không được đổi chỗ tùy ý trong phép trừ hoặc phép chia.",
+        "summary": "Đọc đúng hàng và giá trị chữ số, so sánh theo giá trị từng hàng; sau đó dùng tính chất phép tính và đúng thứ tự thực hiện để tính nhanh, chính xác."
       },
       "lesson_local_concepts": [
         {
@@ -62,6 +65,22 @@
           "role": "LESSON_LOCAL_CONCEPT",
           "grade": 6,
           "lesson": "Bài 4-5"
+        },
+        {
+          "id": "ghi-so-tu-nhien",
+          "label": "Cách ghi số tự nhiên",
+          "family_id": "NUM-SETS",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 1-3"
+        },
+        {
+          "id": "thu-tu-so-tu-nhien",
+          "label": "Thứ tự số tự nhiên",
+          "family_id": "NUM-SETS",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 1-3"
         }
       ]
     },
