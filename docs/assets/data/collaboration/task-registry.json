@@ -1,5 +1,5 @@
 {
-  "version": "1.0.206",
+  "version": "1.0.207",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.206",
+      "context_version": "1.0.207",
       "review_verdict": "G6_DIMENSION_AUDIT_BAI30_BAI42_BAI45_BAI8_REPAIRED_NEXT_BAI27",
-      "review_notes": "Grade-6 dimension audit remains IN_PROGRESS. Bài 30 direct evidence, Bài 42 lesson-local evidence, Bài 4–5 lesson-local evidence, and Bài 8 lesson-local evidence are repaired within their reviewed/source-confirmed boundaries. Next priority content row is Bài 27 for lesson-specific Learn/Micro evidence, then Bài 38–41 statistics micro coverage. Practice/Written/Readiness remain conservatively scoped.",
+      "review_notes": "Grade-6 dimension audit remains IN_PROGRESS. Bài 30 direct evidence, Bài 42 lesson-local evidence, Bài 4–5 lesson-local evidence, and Bài 8 lesson-local evidence are repaired/released within their reviewed/source-confirmed boundaries. Next priority row is Bài 27 for lesson-specific Learn/Micro evidence, then Bài 38–41 statistics micro coverage. Practice/Written/Readiness remain conservatively scoped.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1311,17 +1311,26 @@
       "id": "MATH-KNTT-G6-BAI8-DIVISIBILITY-R1-001",
       "title": "Grade 6 KNTT Bài 8 — divisibility lesson-local evidence repair R1",
       "routing": "CONTENT_REPAIR+LOW_RISK_SOURCE_CONFIRMED",
-      "status": "TECH-QA-PENDING",
-      "context_version": "1.0.206",
-      "review_verdict": "SOURCE_CONFIRMED_LOW_RISK_READY_FOR_TECH_QA",
-      "review_notes": "Bài 8 refs quan-he-chia-het and tinh-chat-chia-het are already semantically reconciled as LESSON_LOCAL_CONCEPT under NUM-DIV-PRIME. Candidate expands Learn card num02-g6-core-2 and adds NUM02MICRO_027–029 for direct divisibility recognition plus sum/difference properties, using LESSON_LOCAL_CORE_FORMATIVE, tags.skill=[], gates_core=false. Oracles are deterministic: 84 divisible by 7; 18+30 divisible by 6; 72−24 divisible by 8. No taxonomy/layer/Practice/Written/Readiness semantic change. Under the owner-approved risk-based review policy, no new NotebookLM round is required. Dimension Audit now records Learn=VERIFIED_LESSON_LOCAL, Micro=VERIFIED_LESSON_LOCAL; Practice remains FAMILY_LEVEL_TOPIC_EVIDENCE, Written=NONE, Readiness=NOT_VERIFIED_STRUCTURED. Next gate: full Roadmap PR Quality.",
+      "status": "DONE",
+      "context_version": "1.0.207",
+      "review_verdict": "DONE_SOURCE_CONFIRMED_CI_PASS_PR320_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Bài 8 lesson/family placement remained lesson-local under NUM-DIV-PRIME. Candidate added explicit Learn content plus NUM02MICRO_027–029 with deterministic oracles: 84 divisible by 7; 18+30 divisible by 6; 72−24 divisible by 8. Items use LESSON_LOCAL_CORE_FORMATIVE, tags.skill=[], gates_core=false. No new NotebookLM round was required under the owner-approved risk-based review policy. Dimension Audit records Learn=VERIFIED_LESSON_LOCAL, Micro=VERIFIED_LESSON_LOCAL; Practice=FAMILY_LEVEL_TOPIC_EVIDENCE, Written=NONE, Readiness=NOT_VERIFIED_STRUCTURED remain intentionally open. Exact PR head 1b210b43cc19e2fe0a826c96df52394207a4f067 passed Roadmap PR Quality run 37206351120. PR #320 squash-merged to main as 86d2be1d7b3dc2fbf26221b1740aa94a5af96562. Deploy MkDocs run 37207645623 SUCCESS. No taxonomy/runtime/history/Mastery/Readiness semantic change.",
       "artifacts": [
         "docs/assets/data/curriculum/topic02-learning-workspace.json",
         "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
         "scripts/test-kntt-g6-bai8-divisibility-r1.js"
-      ]
+      ],
+      "release": {
+        "pr": 320,
+        "exact_head": "1b210b43cc19e2fe0a826c96df52394207a4f067",
+        "qa_run": 37206351120,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "86d2be1d7b3dc2fbf26221b1740aa94a5af96562",
+        "deploy_run": 37207645623,
+        "deploy_conclusion": "SUCCESS"
+      }
     }
   ]
 }
