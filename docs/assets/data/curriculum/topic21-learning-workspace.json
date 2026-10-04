@@ -29,13 +29,13 @@
         "STA21MICRO_018"
       ],
       "teaching_copy": {
-        "key_idea": "Dữ liệu là những thông tin thu được khi quan sát, đo đạc, đếm hoặc khảo sát. Có thể thu thập dữ liệu trực tiếp bằng quan sát, đo, đếm, hỏi/phiếu khảo sát; hoặc dùng nguồn dữ liệu đã có khi nguồn đó phù hợp và đáng tin cậy. Khi mô tả dữ liệu, cần phân biệt giá trị dùng để đo/đếm với nhãn dùng để phân loại.",
+        "key_idea": "Dữ liệu thống kê được chia thành hai loại chính: dữ liệu số (đo đạc, đếm số lượng có giá trị số tính toán được) và dữ liệu không là số / dữ liệu phân loại (tên nhóm, nhãn, màu sắc, trình độ). Phương pháp thu thập dữ liệu gồm thu thập trực tiếp (quan sát, đo đạc, lập phiếu hỏi/phỏng vấn) và thu thập gián tiếp (trích xuất từ sách báo, tài liệu, cơ sở dữ liệu có sẵn).",
         "worked_example": {
-          "problem": "Muốn biết phương tiện đến trường của từng bạn trong lớp 6A, em nên thu thập dữ liệu bằng cách nào?",
-          "solution": "Có thể hỏi trực tiếp hoặc dùng một phiếu khảo sát cho từng bạn rồi ghi lại câu trả lời như đi bộ, xe đạp, xe buýt... Đây là dữ liệu thu thập trực tiếp từ đúng đối tượng cần khảo sát."
+          "problem": "Cho các dãy dữ liệu thu được từ một lớp học: (A) Điểm trung bình môn Toán; (B) Tên các môn học tự chọn; (C) Biển số xe máy của phụ huynh. Hãy phân loại các dãy dữ liệu này.",
+          "solution": "(A) Điểm trung bình môn Toán là dữ liệu số vì là các con số định lượng có thể so sánh và tính toán trung bình.\n(B) Tên các môn học tự chọn là dữ liệu phân loại vì là tên các nhóm/danh mục chữ.\n(C) Biển số xe máy là dữ liệu phân loại vì mặc dù có chứa con số nhưng đóng vai trò là mã định danh, không thể cộng trừ hay tính trung bình."
         },
-        "misconception": "Không phải cứ thông tin viết bằng chữ số thì là dữ liệu số để tính toán. Mã học sinh, biển số xe hoặc số tuyến xe có thể chỉ là nhãn phân loại.",
-        "summary": "Xác định rõ cần thu thập thông tin gì, từ ai/nguồn nào, rồi chọn cách quan sát, đo, đếm hoặc khảo sát phù hợp."
+        "misconception": "Cho rằng mọi dãy thông tin chứa con số (như mã số học sinh, số nhà, biển số xe, số tuyến xe buýt) đều là dữ liệu số.",
+        "summary": "Phân biệt dữ liệu số vs phân loại dựa vào khả năng thực hiện phép tính định lượng; chọn phương pháp thu thập phù hợp với đối tượng cần quan sát."
       },
       "lesson_local_concepts": [
         {
@@ -71,13 +71,13 @@
         "STA21MICRO_020"
       ],
       "teaching_copy": {
-        "key_idea": "Bảng thống kê sắp xếp dữ liệu theo hàng/cột để dễ đọc và so sánh. Biểu đồ tranh dùng hình hoặc ký hiệu, mỗi hình có thể đại diện cho một số lượng nhất định nên phải đọc chú giải trước. Biểu đồ cột dùng chiều cao cột để biểu diễn số liệu; biểu đồ cột kép đặt hai cột cạnh nhau để so sánh hai dãy dữ liệu của cùng một nhóm trên cùng thang đo.",
+        "key_idea": "Bảng thống kê sắp xếp dữ liệu theo hàng và cột để dễ đọc, đối chiếu. Biểu đồ tranh dùng hình hoặc ký hiệu và phải đọc chú giải để biết mỗi hình đại diện bao nhiêu đơn vị. Biểu đồ cột biểu diễn số liệu bằng chiều cao cột. Biểu đồ cột kép dùng hai cột đặt cạnh nhau, có chú giải phân biệt, để so sánh hai dãy dữ liệu tương ứng của cùng các đối tượng trên cùng một thang đo.",
         "worked_example": {
-          "problem": "Một biểu đồ tranh quy ước mỗi ★ đại diện 2 cuốn sách. Hàng của Lan có ★★★★. Lan đã đọc bao nhiêu cuốn sách?",
-          "solution": "Có 4 ký hiệu ★, mỗi ký hiệu đại diện 2 cuốn nên Lan đã đọc 4 × 2 = 8 cuốn."
+          "problem": "Biểu đồ cột kép thống kê số học sinh giỏi Học kỳ 1 và Học kỳ 2 của Lớp 6A: Học kỳ 1 = 12 em, Học kỳ 2 = 18 em. Hỏi số học sinh giỏi Học kỳ 2 tăng bao nhiêu phần trăm so với Học kỳ 1?",
+          "solution": "Mức tăng số lượng học sinh giỏi là: 18 - 12 = 6 (học sinh).\nTỉ lệ phần trăm tăng so với Học kỳ 1 là: (6 / 12) x 100% = 50%."
         },
-        "misconception": "Không được đếm số hình rồi coi đó là số lượng thật nếu chú giải cho biết mỗi hình đại diện nhiều hơn 1 đơn vị. Với biểu đồ cột kép, phải đọc đúng chú giải của từng dãy trước khi so sánh.",
-        "summary": "Đọc tiêu đề, hàng/cột hoặc chú giải, đơn vị và thang đo trước; sau đó mới lấy số liệu và thực hiện so sánh."
+        "misconception": "Không đếm số hình trong biểu đồ tranh như số lượng thật nếu chú giải cho biết mỗi hình đại diện nhiều đơn vị. Với biểu đồ cột kép, đọc nhầm màu/ký hiệu chú giải có thể làm so sánh nhầm hai dãy số liệu.",
+        "summary": "Luôn đọc kỹ tiêu đề, hàng/cột hoặc chú giải, trục, đơn vị và thang đo trước khi lấy số liệu hay thực hiện phép so sánh."
       },
       "lesson_local_representations": [
         {
