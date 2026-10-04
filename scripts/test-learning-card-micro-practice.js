@@ -50,7 +50,7 @@ for (const card of workspace.cards || []) {
     if (q.card_id !== card.id) errors.push(`${q.id}: question/card ID mismatch`);
     const lessonLocal = q.evidence_role === "LESSON_LOCAL_CORE_FORMATIVE";
     if (lessonLocal) {
-      const declared = new Set((card.lesson_local_concepts || []).map(x => typeof x === "string" ? x : x?.id).filter(Boolean));
+      const declared = new Set([...(card.lesson_local_concepts || []), ...(card.lesson_local_problem_types || [])].map(x => typeof x === "string" ? x : x?.id).filter(Boolean));
       for (const target of q.lesson_local_targets || []) if (!declared.has(target)) errors.push(`${q.id}: lesson-local target not declared by card: ${target}`);
     } else {
       const skill = q.tags.skill[0];

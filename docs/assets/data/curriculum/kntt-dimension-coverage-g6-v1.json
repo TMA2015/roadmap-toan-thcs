@@ -3,7 +3,7 @@
   "version": 1,
   "as_of": "2026-10-04",
   "grade": 6,
-  "status": "G6_PILOT_AUDIT_BAI30_BAI42_BAI45_BAI8_REPAIRED_R1",
+  "status": "G6_PILOT_AUDIT_BAI30_BAI42_BAI45_BAI8_BAI27_REPAIRED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -13,7 +13,7 @@
     },
     "grade6_reconciliation": {
       "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
-      "blob_sha": "c25411b95f6cb1ba914002a61c316048be6dd777"
+      "blob_sha": "4c16bf690a08225b79ee54234983c766d175db34"
     },
     "taxonomy": {
       "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
@@ -29,11 +29,11 @@
         "placement": "EXACT",
         "workspace": {
           "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-          "sha": "29408b03d53d47bca74d22ec210f24dad1be037b"
+          "sha": "9b67e22d0f6d4fd1727a3167639c506d201a3c66"
         },
         "micro": {
           "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-          "sha": "cd4d1553afbb075f5edeb7ad2ae801fa52bd8159",
+          "sha": "2d2be5e269d9c63e8a059de41737abb0607c2c98",
           "grade6Skills": [
             "tap-hop-so",
             "thu-tu-phep-tinh",
@@ -56,7 +56,9 @@
             "cong-tru-so-tu-nhien",
             "nhan-chia-so-tu-nhien",
             "quan-he-chia-het",
-            "tinh-chat-chia-het"
+            "tinh-chat-chia-het",
+            "tim-gia-tri-phan-so-cua-so",
+            "tim-so-khi-biet-gia-tri-phan-so"
           ],
           "grade6LessonLocalItemIds": [
             "NUM02MICRO_024",
@@ -64,7 +66,10 @@
             "NUM02MICRO_026",
             "NUM02MICRO_027",
             "NUM02MICRO_028",
-            "NUM02MICRO_029"
+            "NUM02MICRO_029",
+            "NUM02MICRO_030",
+            "NUM02MICRO_031",
+            "NUM02MICRO_032"
           ]
         },
         "manifest": {
@@ -327,19 +332,19 @@
         "VERIFIED_SEMANTIC": 31
       },
       "LEARN_CONTENT": {
-        "PARTIAL_LOCAL_OR_FAMILY": 5,
+        "PARTIAL_LOCAL_OR_FAMILY": 4,
         "VERIFIED_DIRECT": 10,
         "PARTIAL_SHARED_SKILL": 7,
         "PARTIAL_PLACEMENT": 5,
         "PARTIAL_MISSING_DIRECT_SKILL": 1,
-        "VERIFIED_LESSON_LOCAL": 3
+        "VERIFIED_LESSON_LOCAL": 4
       },
       "MICRO_PRACTICE": {
         "PARTIAL": 12,
-        "FAMILY_LEVEL_ONLY": 1,
+        "FAMILY_LEVEL_ONLY": 0,
         "VERIFIED_DIRECT": 15,
         "NONE": 0,
-        "VERIFIED_LESSON_LOCAL": 3
+        "VERIFIED_LESSON_LOCAL": 4
       },
       "PRACTICE_BANK": {
         "PARTIAL_TOPIC_EVIDENCE": 5,
@@ -359,15 +364,6 @@
     },
     "written_library_kntt_placement_count": 0,
     "priority_gap_rows": [
-      {
-        "chapter": 6,
-        "lesson_ref": "Bài 27",
-        "summary": "Hai bài toán về phân số",
-        "learn": "PARTIAL_LOCAL_OR_FAMILY",
-        "micro": "FAMILY_LEVEL_ONLY",
-        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
-        "readiness": "NOT_VERIFIED_STRUCTURED"
-      },
       {
         "chapter": 9,
         "lesson_ref": "Bài 38-41",
@@ -421,6 +417,17 @@
         "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
         "readiness": "NOT_VERIFIED_STRUCTURED",
         "review_basis": "KNTT Grade-6 map + reviewed semantic reconciliation + deterministic divisibility"
+      },
+      {
+        "chapter": 6,
+        "lesson_ref": "Bài 27",
+        "summary": "Hai bài toán về phân số",
+        "repair_status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "review_basis": "KNTT Grade-6 map + reviewed semantic reconciliation + deterministic fraction arithmetic"
       }
     ]
   },
@@ -2100,7 +2107,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_LOCAL_OR_FAMILY",
+          "status": "VERIFIED_LESSON_LOCAL",
           "card_skill_evidence": [
             "rut-gon-phan-so",
             "quy-dong-so-sanh-phan-so",
@@ -2110,19 +2117,36 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
-          }
+            "sha": "9b67e22d0f6d4fd1727a3167639c506d201a3c66"
+          },
+          "lesson_local_hits": [
+            "tim-gia-tri-phan-so-cua-so",
+            "tim-so-khi-biet-gia-tri-phan-so"
+          ],
+          "note": "Bài 27 explicitly teaches both reviewed fraction application problem types under NUM-FRACTION-OPS; they remain problem types rather than duplicate canonical skills."
         },
         "MICRO_PRACTICE": {
-          "status": "FAMILY_LEVEL_ONLY",
+          "status": "VERIFIED_LESSON_LOCAL",
           "direct_skill_hits": [],
           "family_skill_hits": [
             "phep-tinh-phan-so"
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
-          }
+            "sha": "2d2be5e269d9c63e8a059de41737abb0607c2c98"
+          },
+          "lesson_local_hits": [
+            "tim-gia-tri-phan-so-cua-so",
+            "tim-so-khi-biet-gia-tri-phan-so"
+          ],
+          "item_ids": [
+            "NUM02MICRO_030",
+            "NUM02MICRO_031",
+            "NUM02MICRO_032"
+          ],
+          "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "gates_core": false,
+          "note": "Direct Grade-6 formative evidence covers both Bài 27 problem types without canonical skill writes or mastery/readiness credit."
         },
         "PRACTICE_BANK": {
           "status": "FAMILY_LEVEL_TOPIC_EVIDENCE",
@@ -2145,6 +2169,16 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "review_basis": "KNTT Grade-6 map + reviewed semantic reconciliation + deterministic fraction arithmetic; owner-approved low-risk review policy",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "Bài 27 Learn + problem-type Micro gap repaired. Practice remains family/topic-level; Written and Readiness dimensions are unchanged."
       }
     },
     {

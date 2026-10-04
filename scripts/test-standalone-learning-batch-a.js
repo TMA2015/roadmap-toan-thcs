@@ -10,10 +10,10 @@ const specs=[
     "02",
     "02-so-va-phep-tinh",
     "KNTT-Core",
-    "29408b03d53d47bca74d22ec210f24dad1be037b",
-    "cd4d1553afbb075f5edeb7ad2ae801fa52bd8159",
+    "9b67e22d0f6d4fd1727a3167639c506d201a3c66",
+    "2d2be5e269d9c63e8a059de41737abb0607c2c98",
     "Core theo chặng",
-    29
+    32
   ],
   [
     "21",
@@ -76,7 +76,7 @@ for(const [num,slug,layer,wsSha,bankSha,label,expectedCount] of specs){
    for(const id of card.micro_practice){
      const q=bank.get(id);
      const lessonLocal=q?.evidence_role==="LESSON_LOCAL_CORE_FORMATIVE";
-     const localDeclared=new Set((card.lesson_local_concepts||[]).map(x=>x.id));
+     const localDeclared=new Set([...(card.lesson_local_concepts||[]),...(card.lesson_local_problem_types||[])].map(x=>x.id));
      ok(q&&!ids.has(id)&&q.card_id===card.id&&q.tags?.layer===layer&&(lessonLocal?(q.tags.skill.length===0&&q.gates_core===false&&q.lesson_local_targets?.every(t=>localDeclared.has(t))):(q.tags.skill.length===1&&card.skills.includes(q.tags.skill[0]))),"stable question/skill or lesson-local association "+id);
      ids.add(id);
    }
