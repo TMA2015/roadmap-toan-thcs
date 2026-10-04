@@ -1,5 +1,5 @@
 {
-  "version": "1.0.195",
+  "version": "1.0.196",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1196,6 +1196,19 @@
         "docs/roadmap/kntt-grade9-reconciliation-r4.md",
         "review-packets/kntt-grade9-reconciliation-r4/00_NOTEBOOKLM_PACKET_R4.md",
         "review-packets/kntt-grade9-reconciliation-r4/01_NOTEBOOKLM_RESULT_R4.md"
+      ]
+    },
+    {
+      "id": "MATH-KNTT-DIMENSION-AUDIT-G6-001",
+      "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
+      "routing": "GOVERNANCE+COVERAGE_AUDIT",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.196",
+      "review_verdict": "G6_DIMENSION_AUDIT_V1_DRAFT_READY",
+      "review_notes": "Read-only pilot over 31 Grade-6 KNTT rows after semantic reconciliation. Six dimensions audited separately: SKILL_MAP, LEARN_CONTENT, MICRO_PRACTICE, PRACTICE_BANK, WRITTEN_LIBRARY, READINESS. Key direct-evidence gaps: Bài 30 rounding has lam-tron-so in taxonomy but missing Learn skill metadata/micro/practice evidence; Bài 42 event/outcome lacks direct Grade-6 micro evidence and CT23 readiness remains pending review. Written Library has 50 reviewed exercises but zero kntt_placements, so no lesson-level written coverage is claimed. No content/runtime/history/Mastery/Readiness change.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
       ]
     }
   ]
