@@ -3,7 +3,7 @@
   "version": 1,
   "as_of": "2026-10-04",
   "grade": 6,
-  "status": "READ_ONLY_G6_PILOT_AUDIT_NO_CONTENT_CHANGE",
+  "status": "G6_PILOT_AUDIT_BAI30_REPAIRED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -29,11 +29,11 @@
         "placement": "EXACT",
         "workspace": {
           "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-          "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+          "sha": "25efe793363b1cbc7636a9d83d1b9260030ebf91"
         },
         "micro": {
           "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-          "sha": "60235e77c56fd75a65b1dc5df562baea5150984b",
+          "sha": "a75e685add69bd9d1867f129a18c7ebfbbd09648",
           "grade6Skills": [
             "tap-hop-so",
             "thu-tu-phep-tinh",
@@ -49,12 +49,13 @@
             "phan-tich-thua-so-nguyen-to",
             "bcnn",
             "gia-tri-tuyet-doi",
-            "quy-dong-so-sanh-phan-so"
+            "quy-dong-so-sanh-phan-so",
+            "lam-tron-so"
           ]
         },
         "manifest": {
           "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
-          "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417",
+          "sha": "4609bcd1c34a338cbd456eb4f3219ba7f89f943f",
           "skills": [
             "tap-hop-so",
             "so-nguyen-phep-tinh",
@@ -71,7 +72,8 @@
             "phep-tinh-phan-so",
             "so-huu-ti-thap-phan",
             "phan-tram",
-            "can-bac-hai"
+            "can-bac-hai",
+            "lam-tron-so"
           ]
         }
       },
@@ -303,22 +305,22 @@
       },
       "LEARN_CONTENT": {
         "PARTIAL_LOCAL_OR_FAMILY": 8,
-        "VERIFIED_DIRECT": 9,
+        "VERIFIED_DIRECT": 10,
         "PARTIAL_SHARED_SKILL": 7,
         "PARTIAL_PLACEMENT": 5,
-        "PARTIAL_MISSING_DIRECT_SKILL": 2
+        "PARTIAL_MISSING_DIRECT_SKILL": 1
       },
       "MICRO_PRACTICE": {
         "PARTIAL": 12,
         "FAMILY_LEVEL_ONLY": 3,
-        "VERIFIED_DIRECT": 14,
-        "NONE": 2
+        "VERIFIED_DIRECT": 15,
+        "NONE": 1
       },
       "PRACTICE_BANK": {
         "PARTIAL_TOPIC_EVIDENCE": 5,
         "FAMILY_LEVEL_TOPIC_EVIDENCE": 4,
-        "TOPIC_SKILL_EVIDENCE": 21,
-        "NONE": 1
+        "TOPIC_SKILL_EVIDENCE": 22,
+        "NONE": 0
       },
       "WRITTEN_LIBRARY": {
         "NONE": 26,
@@ -360,15 +362,6 @@
         "readiness": "NOT_VERIFIED_STRUCTURED"
       },
       {
-        "chapter": 7,
-        "lesson_ref": "Bài 30",
-        "summary": "Làm tròn và ước lượng",
-        "learn": "PARTIAL_MISSING_DIRECT_SKILL",
-        "micro": "NONE",
-        "practice": "NONE",
-        "readiness": "NOT_VERIFIED_STRUCTURED"
-      },
-      {
         "chapter": 9,
         "lesson_ref": "Bài 38-41",
         "summary": "Dữ liệu, thu thập dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép",
@@ -385,6 +378,18 @@
         "micro": "NONE",
         "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
         "readiness": "PENDING_REVIEW"
+      }
+    ],
+    "repaired_rows": [
+      {
+        "chapter": 7,
+        "lesson_ref": "Bài 30",
+        "summary": "Làm tròn và ước lượng",
+        "repair_status": "REPAIRED_REVIEWED_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "review_receipt": "review-packets/kntt-g6-bai30-rounding-r1/01_NOTEBOOKLM_RESULT_R1.md"
       }
     ]
   },
@@ -2174,44 +2179,70 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_MISSING_DIRECT_SKILL",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "so-huu-ti-thap-phan",
+            "lam-tron-so",
             "phan-tram"
           ],
-          "missing_direct_skills": [
-            "lam-tron-so"
-          ],
+          "missing_direct_skills": [],
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+            "sha": "25efe793363b1cbc7636a9d83d1b9260030ebf91"
           }
         },
         "MICRO_PRACTICE": {
-          "status": "NONE",
-          "direct_skill_hits": [],
+          "status": "VERIFIED_DIRECT",
+          "direct_skill_hits": [
+            "lam-tron-so"
+          ],
           "family_skill_hits": [
             "tap-hop-so",
             "so-huu-ti-thap-phan"
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
-          }
+            "sha": "a75e685add69bd9d1867f129a18c7ebfbbd09648"
+          },
+          "item_ids": [
+            "NUM02MICRO_021",
+            "NUM02MICRO_022",
+            "NUM02MICRO_023"
+          ]
         },
         "PRACTICE_BANK": {
-          "status": "NONE",
-          "direct_skill_hits": [],
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "direct_skill_hits": [
+            "lam-tron-so"
+          ],
           "family_skill_hits": [
             "tap-hop-so",
             "so-huu-ti-thap-phan"
           ],
           "manifest": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
-            "sha": "c3e592de17203a5ccb9f589fd8501e8dd0a6c417"
+            "sha": "4609bcd1c34a338cbd456eb4f3219ba7f89f943f"
           },
-          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement.",
+          "practice_chunk": {
+            "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1-05.json",
+            "sha": "74e9be4dedcc5c39376455a1c428f1f3ed2bceae",
+            "item_ids": [
+              "NUM02V1_121",
+              "NUM02V1_122",
+              "NUM02V1_123",
+              "NUM02V1_124",
+              "NUM02V1_125",
+              "NUM02V1_126",
+              "NUM02V1_127",
+              "NUM02V1_128",
+              "NUM02V1_129",
+              "NUM02V1_130",
+              "NUM02V1_131",
+              "NUM02V1_132"
+            ]
+          }
         },
         "WRITTEN_LIBRARY": {
           "status": "NONE",
@@ -2222,6 +2253,18 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004",
+        "clearance": "G6_BAI30_ROUNDING_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-bai30-rounding-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "Learn + Grade-6 micro + Topic02 Practice direct evidence repaired. Written and Readiness dimensions remain unchanged."
       }
     },
     {

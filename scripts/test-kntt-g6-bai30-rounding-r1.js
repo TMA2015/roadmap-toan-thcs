@@ -8,6 +8,8 @@ const workspace=json("docs/assets/data/curriculum/topic02-learning-workspace.jso
 const micro=json("docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json");
 const chunk=json("docs/assets/data/practice/02-so-va-phep-tinh-v1-05.json");
 const manifest=json("docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json");
+const audit=json("docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json");
+const receipt=fs.readFileSync("review-packets/kntt-g6-bai30-rounding-r1/01_NOTEBOOKLM_RESULT_R1.md","utf8");
 
 const card=workspace.cards.find(c=>c.id==="num02-g6-core-5");
 assert.ok(card);
@@ -26,7 +28,7 @@ for(const q of newMicro){
   assert.deepEqual(q.tags.skill,["lam-tron-so"]);
   assert.equal(q.tags.grade,6);
   assert.equal(q.tags.layer,"KNTT-Core");
-  assert.equal(q.authoring_review.verdict,"PENDING_NOTEBOOKLM");
+  assert.equal(q.authoring_review.verdict,"PASS");
   assert.ok(q.answer>=0 && q.answer<q.options.length);
 }
 assert.equal(newMicro[2].tags.type,"uoc-luong-tu-lam-tron");
@@ -39,7 +41,7 @@ assert.deepEqual(chunk.questions.map(q=>q.id),Array.from({length:12},(_,i)=>`NUM
 assert.deepEqual(chunk.questions.map(q=>q.answer),[0,1,1,1,0,1,1,1,2,2,0,1]);
 for(const q of chunk.questions){
   assert.deepEqual(q.tags.skill,["lam-tron-so"]);
-  assert.equal(q.authoring_review.verdict,"PENDING_NOTEBOOKLM");
+  assert.equal(q.authoring_review.verdict,"PASS");
   assert.ok(q.answer>=0 && q.answer<q.options.length);
   assert.equal(new Set(q.options).size,q.options.length);
 }
@@ -49,6 +51,15 @@ assert.equal(manifest.skill_labels["lam-tron-so"],"Làm tròn số");
 assert.ok(manifest.sources.includes("02-so-va-phep-tinh-v1-05.json"));
 assert.ok(manifest.skill_groups.some(g=>g.skills.includes("lam-tron-so")));
 
-console.log("PASS: Bài 30 candidate adds Learn + 3 micro + 12 Practice rounding items.");
+const bai30=audit.rows.find(r=>r.lesson_ref==="Bài 30");
+assert.equal(bai30.dimensions.LEARN_CONTENT.status,"VERIFIED_DIRECT");
+assert.equal(bai30.dimensions.MICRO_PRACTICE.status,"VERIFIED_DIRECT");
+assert.equal(bai30.dimensions.PRACTICE_BANK.status,"TOPIC_SKILL_EVIDENCE");
+assert.match(receipt,/OVERALL\|PASS/);
+assert.match(receipt,/EXPECTED_MICRO\|3/);
+assert.match(receipt,/EXPECTED_PRACTICE\|12/);
+assert.match(receipt,/CLEARANCE\|G6_BAI30_ROUNDING_CONTENT_REVIEW_COMPLETE/);
+
+console.log("PASS: Bài 30 reviewed candidate adds Learn + 3 micro + 12 Practice rounding items.");
 console.log("PASS: uoc-luong remains lesson-local; no uoc-luong canonical skill tag is introduced.");
-console.log("PASS: candidate remains academic-review pending before release.");
+console.log("PASS: NotebookLM academic review is complete; technical CI remains the release gate.");

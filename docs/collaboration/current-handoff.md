@@ -836,3 +836,5 @@ There are still many historical open PRs, mostly **audit/provenance drafts**. Do
 ## Duy trì trạng thái
 
 Cập nhật GitHub sau mỗi mốc quyết định, QA, merge, deploy hoặc nghiệm thu; lịch sử Git giữ bản cũ. Không có bộ đếm đáng tin cậy để cảnh báo chính xác giới hạn chat; chủ động chốt checkpoint khi phiên dài. Câu khôi phục: **“Đọc Project Handoff trên GitHub, đối chiếu main và tiếp tục.”**
+
+> **Grade 6 Bài 30 rounding repair R1 — NotebookLM PASS / technical QA pending:** packet `MATH-KNTT-G6-BAI30-ROUNDING-R1-20261004` passed Learn, 3/3 Micro and 12/12 Practice with no missing/duplicate/unexpected IDs; clearance `G6_BAI30_ROUNDING_CONTENT_REVIEW_COMPLETE`. `uoc-luong` remains lesson-local. Candidate review metadata is reconciled and Grade-6 Dimension Audit now marks Bài 30 Learn=`VERIFIED_DIRECT`, Micro=`VERIFIED_DIRECT`, Practice=`TOPIC_SKILL_EVIDENCE`; Written=`NONE` and Readiness=`NOT_VERIFIED_STRUCTURED` remain open. Receipt: `review-packets/kntt-g6-bai30-rounding-r1/01_NOTEBOOKLM_RESULT_R1.md`. Next gate: open PR, run full Roadmap PR Quality, merge only if all required checks pass. No runtime/history/Mastery/Readiness semantic change.
