@@ -3,7 +3,7 @@
   "version": 1,
   "as_of": "2026-10-04",
   "grade": 6,
-  "status": "G6_PILOT_AUDIT_BAI30_BAI42_REPAIRED_R1",
+  "status": "G6_PILOT_AUDIT_BAI30_BAI42_BAI45_REPAIRED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -13,7 +13,7 @@
     },
     "grade6_reconciliation": {
       "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
-      "blob_sha": "5db354e6bdfd1a20ddb4a7ddf833e5f4d676f8e4"
+      "blob_sha": "d797c98795dd9aaba7c783a6f440cb93530b2c24"
     },
     "taxonomy": {
       "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
@@ -29,11 +29,11 @@
         "placement": "EXACT",
         "workspace": {
           "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-          "sha": "25efe793363b1cbc7636a9d83d1b9260030ebf91"
+          "sha": "d704f98ba515edbf5217386baf33a04dbccec028"
         },
         "micro": {
           "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-          "sha": "a75e685add69bd9d1867f129a18c7ebfbbd09648",
+          "sha": "48040ce6fc8b47caee112810a497e5b4e87fc836",
           "grade6Skills": [
             "tap-hop-so",
             "thu-tu-phep-tinh",
@@ -51,6 +51,15 @@
             "gia-tri-tuyet-doi",
             "quy-dong-so-sanh-phan-so",
             "lam-tron-so"
+          ],
+          "grade6LessonLocalTargets": [
+            "cong-tru-so-tu-nhien",
+            "nhan-chia-so-tu-nhien"
+          ],
+          "grade6LessonLocalItemIds": [
+            "NUM02MICRO_024",
+            "NUM02MICRO_025",
+            "NUM02MICRO_026"
           ]
         },
         "manifest": {
@@ -313,19 +322,19 @@
         "VERIFIED_SEMANTIC": 31
       },
       "LEARN_CONTENT": {
-        "PARTIAL_LOCAL_OR_FAMILY": 7,
+        "PARTIAL_LOCAL_OR_FAMILY": 6,
         "VERIFIED_DIRECT": 10,
         "PARTIAL_SHARED_SKILL": 7,
         "PARTIAL_PLACEMENT": 5,
         "PARTIAL_MISSING_DIRECT_SKILL": 1,
-        "VERIFIED_LESSON_LOCAL": 1
+        "VERIFIED_LESSON_LOCAL": 2
       },
       "MICRO_PRACTICE": {
         "PARTIAL": 12,
-        "FAMILY_LEVEL_ONLY": 3,
+        "FAMILY_LEVEL_ONLY": 2,
         "VERIFIED_DIRECT": 15,
         "NONE": 0,
-        "VERIFIED_LESSON_LOCAL": 1
+        "VERIFIED_LESSON_LOCAL": 2
       },
       "PRACTICE_BANK": {
         "PARTIAL_TOPIC_EVIDENCE": 5,
@@ -345,15 +354,6 @@
     },
     "written_library_kntt_placement_count": 0,
     "priority_gap_rows": [
-      {
-        "chapter": 1,
-        "lesson_ref": "Bài 4-5",
-        "summary": "Cộng, trừ, nhân, chia số tự nhiên và tính chất",
-        "learn": "PARTIAL_LOCAL_OR_FAMILY",
-        "micro": "FAMILY_LEVEL_ONLY",
-        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
-        "readiness": "NOT_VERIFIED_STRUCTURED"
-      },
       {
         "chapter": 2,
         "lesson_ref": "Bài 8",
@@ -403,6 +403,17 @@
         "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
         "readiness": "PENDING_REVIEW",
         "review_receipt": "review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      },
+      {
+        "chapter": 1,
+        "lesson_ref": "Bài 4-5",
+        "summary": "Cộng, trừ, nhân, chia số tự nhiên và tính chất",
+        "repair_status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "review_basis": "Existing Grade-6 reconciliation NotebookLM PASS + deterministic arithmetic"
       }
     ]
   },
@@ -528,7 +539,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_LOCAL_OR_FAMILY",
+          "status": "VERIFIED_LESSON_LOCAL",
           "card_skill_evidence": [
             "tap-hop-so",
             "thu-tu-phep-tinh",
@@ -538,19 +549,36 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
-          }
+            "sha": "d704f98ba515edbf5217386baf33a04dbccec028"
+          },
+          "lesson_local_hits": [
+            "cong-tru-so-tu-nhien",
+            "nhan-chia-so-tu-nhien"
+          ],
+          "note": "Bài 4–5 operations/properties are explicitly taught as Grade-6 lesson-local content under NUM-INTEGER-OPS; no duplicate canonical skill is created."
         },
         "MICRO_PRACTICE": {
-          "status": "FAMILY_LEVEL_ONLY",
+          "status": "VERIFIED_LESSON_LOCAL",
           "direct_skill_hits": [],
           "family_skill_hits": [
             "so-nguyen-phep-tinh"
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
-          }
+            "sha": "48040ce6fc8b47caee112810a497e5b4e87fc836"
+          },
+          "lesson_local_hits": [
+            "cong-tru-so-tu-nhien",
+            "nhan-chia-so-tu-nhien"
+          ],
+          "item_ids": [
+            "NUM02MICRO_024",
+            "NUM02MICRO_025",
+            "NUM02MICRO_026"
+          ],
+          "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "gates_core": false,
+          "note": "Direct Grade-6 lesson-local formative evidence is present without canonical skill writes or mastery/readiness credit."
         },
         "PRACTICE_BANK": {
           "status": "FAMILY_LEVEL_TOPIC_EVIDENCE",
@@ -573,6 +601,16 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "review_basis": "Existing Grade-6 reconciliation NotebookLM PASS + KNTT Grade-6 map + deterministic arithmetic; owner-approved low-risk review policy",
+        "learn": "VERIFIED_LESSON_LOCAL",
+        "micro": "VERIFIED_LESSON_LOCAL",
+        "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "Bài 4–5 Learn + lesson-local Micro gap repaired. Practice remains family/topic-level; Written and Readiness dimensions are unchanged."
       }
     },
     {
