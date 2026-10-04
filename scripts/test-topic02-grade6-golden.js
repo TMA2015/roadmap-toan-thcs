@@ -14,7 +14,7 @@ const mapping=json("docs/assets/data/curriculum/kntt-grade6-map.json");
 const older=json("docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json");
 const lesson=read("docs/kien-thuc/"+slug+"/index.md"),practice=read("docs/kien-thuc/"+slug+"/bai-tap.md"),check=read("docs/kien-thuc/"+slug+"/tu-kiem-tra.md"),classhub=read("docs/hoc-theo-lop/index.md"),runtime=read("docs/assets/javascripts/topic-workspace-v1.js");
 ok(workspace.topic===slug && workspace.core_progress_policy.layer==="KNTT-Core" && workspace.cards.length===5,"source-mapped five-card Core pilot");
-ok(bank.questions.length===23 && bank.question_count===23 && assessment.items.length===10,"23 micro and 10 readiness items");
+ok(bank.questions.length===26 && bank.question_count===26 && assessment.items.length===10,"26 micro and 10 readiness items");
 ok(assessment.topic.id===slug && assessment.layer==="KNTT-Core" && assessment.assessment_id==="NUM02-G6-CORE-READY-V1","assessment identity and layer");
 ok(assessment.policy.hints===false && assessment.policy.tutor===false && assessment.policy.feedback==="after_submit" && assessment.policy.hard_gate===false && assessment.readiness.hard_gate===false,"independent soft readiness");
 ok(assessment.readiness.ready_threshold===0.8 && assessment.readiness.minimum_answered_ratio===0.8,"readiness policy");
@@ -24,7 +24,7 @@ const mapSkills=new Set(mapping.chapters.flatMap(c=>c.lessons).filter(l=>l.roadm
 ok(mapSkills.has("tap-hop") && mapSkills.has("so-thap-phan") && mapSkills.has("so-nguyen-truc-so"),"grade6 mapping was consulted");
 const byId=new Map(bank.questions.map(q=>[q.id,q])),seen=new Set(),assessed=new Set();
 const microAnswers=["7","24","20","423","29","12","5","12","3 °C","3/4","1/4","5/6","0,85","50","108 000 đồng"];
-const expectedCardCounts=[4,5,4,4,6];
+const expectedCardCounts=[7,5,4,4,6];
 for (const [i,card] of workspace.cards.entries()){
  ok(card.layer==="KNTT-Core" && JSON.stringify(card.grades)==="[6]" && card.micro_practice.length===expectedCardCounts[i],"card scope and reviewed coverage count "+card.id);
  ok(card.kntt_lessons.length && card.kntt_lessons.every(x=>x.includes("Lớp 6")),"explicit class label "+card.id);
@@ -33,12 +33,14 @@ for (const [i,card] of workspace.cards.entries()){
   const q=byId.get(id);ok(q && !seen.has(id),"unique referenced micro "+id);seen.add(id);
   ok(q.card_id===card.id && (j<3?q.micro_role===["base","trap","apply"][j]:q.micro_role==="coverage"),"role / card mapping "+id);
   ok(q.tags.layer==="KNTT-Core" && q.tags.grade===6 && JSON.stringify(q.curriculum.grades)==="[6]","micro class scope "+id);
-  ok(q.tags.skill.length===1 && card.skills.includes(q.tags.skill[0]),"one assessed skill "+id);
+  const lessonLocal=q.evidence_role==="LESSON_LOCAL_CORE_FORMATIVE";
+  const localDeclared=new Set((card.lesson_local_concepts||[]).map(x=>x.id));
+  ok(lessonLocal?(q.tags.skill.length===0&&q.gates_core===false&&q.lesson_local_targets?.every(t=>localDeclared.has(t))):(q.tags.skill.length===1&&card.skills.includes(q.tags.skill[0])),"assessed skill or lesson-local evidence "+id);
   ok(q.options.length===4 && new Set(q.options).size===4,"four unique options "+id); if(j<3)ok(q.options[q.answer]===microAnswers[i*3+j],"legacy micro answer / distractor "+id);
   ok(q.hints.length>=2 && q.explanation,"two-level hints and explanation "+id);
  }
 }
-ok(seen.size===23,"every micro is attached to exactly one card");
+ok(seen.size===26,"every micro is attached to exactly one card");
 const readinessAnswers=["0","−2","315","31","−8","6","7/10","1/2","0,85","340 000 đồng"];
 for (const [i,q] of assessment.items.entries()){
  ok(!assessed.has(q.id),"unique readiness ID "+q.id);assessed.add(q.id);
@@ -53,4 +55,4 @@ ok(/tự luận/i.test(read("docs/kien-thuc/02-so-va-phep-tinh/tu-kiem-tra-tu-lu
 const panel=classhub.split('data-grade-panel="6"')[1].split('data-grade-panel="7"')[0];
 ok((panel.match(/02-so-va-phep-tinh\/core\//g)||[]).length>=5,"grade6 class hub opens the learning cards");
 ok(runtime.includes('"02-so-va-phep-tinh":{') && runtime.includes("topic02-learning-workspace.json"),"runtime supports topic02");
-console.log("PASS: Topic02 grade6: 5 cards, 23 micro (8 reviewed coverage), 10 readiness, routes, preserved legacy IDs plus reviewed Bài 30 rounding append.");
+console.log("PASS: Topic02 grade6: 5 cards, 26 micro including Bài 30 reviewed rounding and Bài 4-5 lesson-local evidence, 10 readiness, routes, preserved legacy IDs.");
