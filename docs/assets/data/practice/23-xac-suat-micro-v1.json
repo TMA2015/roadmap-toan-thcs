@@ -6,7 +6,7 @@
     "id": "23-xac-suat",
     "title": "Xác suất"
   },
-  "question_count": 17,
+  "question_count": 20,
   "questions": [
     {
       "id": "PRO23MICRO_001",
@@ -718,6 +718,151 @@
         "method": "INDEPENDENT_NOTEBOOKLM_R1"
       },
       "target": "xac-suat-co-dien"
+    },
+    {
+      "id": "PRO23MICRO_018",
+      "card_id": "prob23-core-1",
+      "micro_role": "coverage",
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [],
+        "layer": "KNTT-Core",
+        "grade": 6,
+        "type": "ket-qua-co-the"
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 42"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+      "gates_core": false,
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI42-EVENT-OUTCOME-R1-20261004",
+        "verdict": "PENDING_NOTEBOOKLM"
+      },
+      "question": "Gieo một xúc xắc sáu mặt một lần. Tập hợp đầy đủ các kết quả có thể là:",
+      "options": [
+        "{1; 2; 3; 4; 5; 6}",
+        "{1; 2; 3; 4; 5}",
+        "{0; 1; 2; 3; 4; 5}",
+        "{2; 4; 6}"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "Một xúc xắc sáu mặt có thể xuất hiện 1, 2, 3, 4, 5 hoặc 6 chấm, nên phải liệt kê đủ cả sáu kết quả.",
+      "hints": [
+        "Liệt kê từng số chấm có thể xuất hiện trên xúc xắc.",
+        "Không bỏ sót mặt 6 và không thêm kết quả 0."
+      ],
+      "option_evidence": {},
+      "lesson_local_targets": [
+        "ket-qua-co-the"
+      ]
+    },
+    {
+      "id": "PRO23MICRO_019",
+      "card_id": "prob23-core-1",
+      "micro_role": "coverage",
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [],
+        "layer": "KNTT-Core",
+        "grade": 6,
+        "type": "su-kien-don-gian"
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 42"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+      "gates_core": false,
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI42-EVENT-OUTCOME-R1-20261004",
+        "verdict": "PENDING_NOTEBOOKLM"
+      },
+      "question": "Gieo một xúc xắc sáu mặt một lần. Xét sự kiện “số chấm xuất hiện lớn hơn 4”. Những kết quả nào làm sự kiện xảy ra?",
+      "options": [
+        "{5; 6}",
+        "{4; 5; 6}",
+        "{1; 2; 3; 4}",
+        "{6}"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "Trong các kết quả 1, 2, 3, 4, 5, 6, chỉ 5 và 6 lớn hơn 4. Vì vậy sự kiện xảy ra khi kết quả là 5 hoặc 6.",
+      "hints": [
+        "Liệt kê các kết quả có thể của xúc xắc trước.",
+        "Chọn các kết quả thỏa điều kiện lớn hơn 4."
+      ],
+      "option_evidence": {},
+      "lesson_local_targets": [
+        "su-kien-don-gian"
+      ]
+    },
+    {
+      "id": "PRO23MICRO_020",
+      "card_id": "prob23-core-1",
+      "micro_role": "coverage",
+      "tags": {
+        "topic": "23-xac-suat",
+        "skill": [],
+        "layer": "KNTT-Core",
+        "grade": 6,
+        "type": "ket-qua-va-su-kien"
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 42"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+      "gates_core": false,
+      "authoring_review": {
+        "packet": "MATH-KNTT-G6-BAI42-EVENT-OUTCOME-R1-20261004",
+        "verdict": "PENDING_NOTEBOOKLM"
+      },
+      "question": "Một vòng quay có bốn ô ghi A, B, C, D. Quay một lần. Xét sự kiện “kim không dừng ở A”. Tập hợp các kết quả làm sự kiện xảy ra là:",
+      "options": [
+        "{B; C; D}",
+        "{A}",
+        "{A; B; C; D}",
+        "{C; D}"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "Các kết quả có thể là A, B, C, D. Sự kiện “không dừng ở A” xảy ra khi kết quả là B, C hoặc D.",
+      "hints": [
+        "Liệt kê bốn kết quả có thể trước.",
+        "Loại A vì sự kiện yêu cầu không dừng ở A."
+      ],
+      "option_evidence": {},
+      "lesson_local_targets": [
+        "ket-qua-co-the",
+        "su-kien-don-gian"
+      ]
     }
   ]
 }
