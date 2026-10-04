@@ -14,7 +14,7 @@
     {
       "id": "num02-g6-core-1",
       "order": 1,
-      "title": "Tập hợp số tự nhiên và thứ tự phép tính",
+      "title": "Số tự nhiên, phép tính và thứ tự thực hiện",
       "kntt_lessons": [
         "Lớp 6 · Bài 1–7"
       ],
@@ -32,17 +32,38 @@
         "NUM02MICRO_001",
         "NUM02MICRO_002",
         "NUM02MICRO_003",
-        "NUM02MICRO_016"
+        "NUM02MICRO_016",
+        "NUM02MICRO_024",
+        "NUM02MICRO_025",
+        "NUM02MICRO_026"
       ],
       "teaching_copy": {
-        "key_idea": "Số tự nhiên gồm 0, 1, 2, 3, ...; khi tính biểu thức, làm trong ngoặc, rồi lũy thừa, nhân/chia và cuối cùng cộng/trừ.",
+        "key_idea": "Với số tự nhiên, cộng và nhân có tính chất giao hoán, kết hợp; phép nhân phân phối đối với phép cộng. Phép trừ và phép chia không có tính giao hoán. Khi tính biểu thức, làm trong ngoặc, rồi lũy thừa, nhân/chia và cuối cùng cộng/trừ.",
         "worked_example": {
-          "problem": "Tính 6 + 2 × 3².",
-          "solution": "3² = 9; 2 × 9 = 18; vậy kết quả là 6 + 18 = 24."
+          "problem": "a) Tính nhanh 25 × 37 × 4. b) Tính 6 + 2 × 3².",
+          "solution": "a) Dùng giao hoán và kết hợp: 25 × 37 × 4 = (25 × 4) × 37 = 100 × 37 = 3700. b) 3² = 9; 2 × 9 = 18; vậy 6 + 18 = 24."
         },
-        "misconception": "Không cộng 6 + 2 trước khi nhân; cũng không hiểu 3² là 3 × 2.",
-        "summary": "Viết từng bước theo đúng thứ tự để kiểm soát phép tính."
-      }
+        "misconception": "Không được đổi chỗ tùy ý trong phép trừ hoặc phép chia. Khi tính biểu thức, cũng không cộng/trừ trước nếu còn phép nhân, chia hoặc lũy thừa cần thực hiện trước.",
+        "summary": "Chọn tính chất phù hợp để tính thuận tiện, rồi thực hiện biểu thức đúng thứ tự và kiểm tra kết quả."
+      },
+      "lesson_local_concepts": [
+        {
+          "id": "cong-tru-so-tu-nhien",
+          "label": "Cộng và trừ số tự nhiên",
+          "family_id": "NUM-INTEGER-OPS",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 4-5"
+        },
+        {
+          "id": "nhan-chia-so-tu-nhien",
+          "label": "Nhân và chia số tự nhiên",
+          "family_id": "NUM-INTEGER-OPS",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 4-5"
+        }
+      ]
     },
     {
       "id": "num02-g6-core-2",
