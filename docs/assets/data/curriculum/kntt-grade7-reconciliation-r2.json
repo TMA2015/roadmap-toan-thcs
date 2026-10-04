@@ -1,0 +1,286 @@
+{
+  "schema": "kntt-grade7-reconciliation-r2",
+  "version": 1,
+  "as_of": "2026-10-04",
+  "status": "RECONCILED_REVIEWED_NO_RUNTIME_CHANGE",
+  "architecture": "One Knowledge Graph · Two Learning Paths",
+  "purpose": "Reconcile the 11 Grade-7 historical exact-ID mismatches against the reviewed canonical skill/family universe, closing safe aliases/family mappings while isolating only genuinely ambiguous granularity decisions for independent review.",
+  "source_locks": {
+    "coverage_matrix": {
+      "path": "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
+      "blob_sha": "0bd87b48f761b57e9300bb3fb79f82758ff0d5ab"
+    },
+    "grade7_map": {
+      "path": "docs/assets/data/curriculum/kntt-grade7-map.json",
+      "blob_sha": "de3fba60557981f665fea26d621bc7c31e448e40"
+    },
+    "taxonomy_v2": {
+      "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+      "review_input_blob_sha": "16113e910cc451cd69b72c5f2f86f579237bf60f",
+      "integrated_blob_sha": "cde746a448d8e1dff3a852f6fa027501e15c228f"
+    },
+    "knowledge_graph": {
+      "path": "docs/assets/data/curriculum/knowledge-graph-v1.json",
+      "blob_sha": "64a7acf13a25aaf4a8f2501d3a63f48f7391134d"
+    },
+    "learning_workspaces": [
+      {
+        "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "blob_sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+      },
+      {
+        "path": "docs/assets/data/curriculum/topic04-learning-workspace.json",
+        "blob_sha": "2c9646ef6ca81ec00c2ec89bdb81523bc142cd7e"
+      },
+      {
+        "path": "docs/assets/data/curriculum/topic08-learning-workspace.json",
+        "blob_sha": "c67fb6af4df92e848738dc22bec0059fb4d1a2d1"
+      },
+      {
+        "path": "docs/assets/data/curriculum/topic11-learning-workspace.json",
+        "blob_sha": "5272bd9adb589de428247baa3b834aeba48c4191"
+      },
+      {
+        "path": "docs/assets/data/curriculum/topic21-learning-workspace.json",
+        "blob_sha": "2812085ab0dd0800196eee7d44562f2ced4294e1"
+      },
+      {
+        "path": "docs/assets/data/curriculum/topic23-learning-workspace.json",
+        "blob_sha": "7b2659c78e298017d16ec52f2a45cd57d3d88191"
+      }
+    ]
+  },
+  "resolution_definitions": {
+    "CANONICAL_SKILL": "Historical ref maps to an existing canonical skill identity.",
+    "CANONICAL_FAMILY": "Concept/task belongs to an existing family while finer KNTT wording remains lesson-local or representation detail.",
+    "LESSON_LOCAL": "The concept is confirmed curriculum content but remains a lesson-local technique/problem type rather than a global assessed-skill identity."
+  },
+  "summary": {
+    "exact_id_unresolved_input_count": 11,
+    "reconciled_count": 11,
+    "resolution_counts": {
+      "CANONICAL_SKILL": 6,
+      "LESSON_LOCAL": 1,
+      "CANONICAL_FAMILY": 4
+    },
+    "remaining_review_queue": [],
+    "remaining_gap_candidates": [],
+    "new_canonical_skills": [
+      "phep-tinh-so-huu-ti",
+      "so-vo-ti",
+      "chia-da-thuc-mot-bien"
+    ],
+    "new_canonical_skill_count": 3,
+    "resolved_without_new_global_skill": 8,
+    "note": "All 11 Grade-7 historical refs are semantically reconciled. Raw exact-ID mismatches remain visible in the Coverage Matrix for traceability."
+  },
+  "entries": [
+    {
+      "historical_ref": "phep-tinh-so-huu-ti",
+      "chapter": 1,
+      "lesson_ref": "Bài 1-3",
+      "curriculum_summary": "Tập hợp số hữu tỉ; cộng, trừ, nhân, chia số hữu tỉ; lũy thừa với số mũ tự nhiên của số hữu tỉ.",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "phep-tinh-so-huu-ti"
+      ],
+      "canonical_family_ids": [
+        "NUM-FRACTION-OPS"
+      ],
+      "local_role": "NEW_CANONICAL_SKILL_S1_REVIEWED",
+      "reason": "NotebookLM PASS: S1 Bài 2–3 and diagnostic value justify a distinct rational-arithmetic skill; integrated under operations family NUM-FRACTION-OPS.",
+      "created_in_this_reconciliation": true
+    },
+    {
+      "historical_ref": "quy-tac-chuyen-ve",
+      "chapter": 1,
+      "lesson_ref": "Bài 4",
+      "curriculum_summary": "Thứ tự thực hiện phép tính; quy tắc chuyển vế trong các bài toán tìm số hữu tỉ chưa biết.",
+      "resolution": "LESSON_LOCAL",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [],
+      "local_role": "PREREQUISITE_TECHNIQUE",
+      "reason": "NotebookLM PASS: transposition is an equation-solving technique/problem type kept lesson-local; no global skill created."
+    },
+    {
+      "historical_ref": "can-bac-hai",
+      "chapter": 2,
+      "lesson_ref": "Bài 5-7",
+      "curriculum_summary": "Số thập phân vô hạn tuần hoàn; số vô tỉ; căn bậc hai số học; tập hợp số thực.",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "can-bac-hai-so-hoc"
+      ],
+      "canonical_family_ids": [
+        "RAD-BASIC"
+      ],
+      "local_role": "CROSS_TOPIC_CANONICAL_REUSE",
+      "reason": "Current registry already records CT02 `can-bac-hai` as a supporting skill with canonical_candidate `can-bac-hai-so-hoc`; reuse the same mathematical identity without exposing the full Grade-9 radical bank."
+    },
+    {
+      "historical_ref": "so-thap-phan-vo-han-tuan-hoan",
+      "chapter": 2,
+      "lesson_ref": "Bài 5-7",
+      "curriculum_summary": "Số thập phân vô hạn tuần hoàn; số vô tỉ; căn bậc hai số học; tập hợp số thực.",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-huu-ti-thap-phan"
+      ],
+      "canonical_family_ids": [
+        "NUM-SETS"
+      ],
+      "local_role": "REPRESENTATION_ALIAS",
+      "reason": "Infinite repeating decimals are a representation of rational numbers; current canonical identity `so-huu-ti-thap-phan` is the stable target."
+    },
+    {
+      "historical_ref": "so-vo-ti",
+      "chapter": 2,
+      "lesson_ref": "Bài 5-7",
+      "curriculum_summary": "Số thập phân vô hạn tuần hoàn; số vô tỉ; căn bậc hai số học; tập hợp số thực.",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-vo-ti"
+      ],
+      "canonical_family_ids": [
+        "NUM-SETS"
+      ],
+      "local_role": "NEW_CANONICAL_SKILL_S1_REVIEWED",
+      "reason": "NotebookLM PASS: S1 Bài 6 and cross-grade diagnostic value justify canonical skill so-vo-ti under NUM-SETS.",
+      "created_in_this_reconciliation": true
+    },
+    {
+      "historical_ref": "tap-hop-so-thuc",
+      "chapter": 2,
+      "lesson_ref": "Bài 5-7",
+      "curriculum_summary": "Số thập phân vô hạn tuần hoàn; số vô tỉ; căn bậc hai số học; tập hợp số thực.",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "NUM-SETS"
+      ],
+      "local_role": "NUMBER_SET_CONCEPT",
+      "reason": "NotebookLM PASS: real-number-set identity/properties are managed under family NUM-SETS; no separate global skill."
+    },
+    {
+      "historical_ref": "ve-bieu-do-quat-tron",
+      "chapter": 5,
+      "lesson_ref": "Bài 18-19",
+      "curriculum_summary": "Biểu đồ hình quạt tròn và biểu đồ đoạn thẳng; đọc, biểu diễn và nhận xét dữ liệu.",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "STAT-REPRESENT"
+      ],
+      "local_role": "REPRESENTATION_PRODUCTION",
+      "reason": "Constructing a pie chart is a data-representation task. Keep the production detail under STAT-REPRESENT rather than create a parallel chart-reading skill."
+    },
+    {
+      "historical_ref": "ve-bieu-do-doan-thang",
+      "chapter": 5,
+      "lesson_ref": "Bài 18-19",
+      "curriculum_summary": "Biểu đồ hình quạt tròn và biểu đồ đoạn thẳng; đọc, biểu diễn và nhận xét dữ liệu.",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "STAT-REPRESENT"
+      ],
+      "local_role": "REPRESENTATION_PRODUCTION",
+      "reason": "Constructing a line chart is a representation task under STAT-REPRESENT; current reading skill remains separate."
+    },
+    {
+      "historical_ref": "da-thuc-mot-bien",
+      "chapter": 7,
+      "lesson_ref": "Bài 24-25",
+      "curriculum_summary": "Biểu thức đại số; giá trị biểu thức; đa thức một biến, hệ số và bậc.",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "ALG-STRUCTURE"
+      ],
+      "local_role": "DOMAIN_SPECIALIZATION",
+      "reason": "Univariate-polynomial structure is covered by the stable polynomial/monomial structure family; keep the one-variable qualifier lesson-local."
+    },
+    {
+      "historical_ref": "chia-da-thuc-mot-bien",
+      "chapter": 7,
+      "lesson_ref": "Bài 26-28",
+      "curriculum_summary": "Cộng, trừ, nhân và chia đa thức một biến.",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "chia-da-thuc-mot-bien"
+      ],
+      "canonical_family_ids": [
+        "ALG-DIV-MONOMIAL"
+      ],
+      "local_role": "NEW_CANONICAL_SKILL_S1_REVIEWED",
+      "reason": "NotebookLM PASS: S1 Bài 28 requires general univariate-polynomial division beyond division by monomial. Skill is attached to existing division family without family restructuring in this bounded task.",
+      "created_in_this_reconciliation": true
+    },
+    {
+      "historical_ref": "xac-suat-bien-co-don-gian",
+      "chapter": 8,
+      "lesson_ref": "Bài 30",
+      "curriculum_summary": "Làm quen với xác suất của biến cố trong các mô hình đơn giản.",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "xac-suat-co-dien"
+      ],
+      "canonical_family_ids": [
+        "PROB-CLASSICAL"
+      ],
+      "local_role": "DIRECT_ALIAS",
+      "reason": "Grade-7 simple-event probability aligns with the current canonical skill `xac-suat-co-dien` under PROB-CLASSICAL."
+    }
+  ],
+  "review": {
+    "packet_id": "MATH-KNTT-G7-RECON-R2-20261004",
+    "result": "PASS",
+    "expected_ids": 5,
+    "reviewed_ids": 5,
+    "clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE",
+    "result_path": "review-packets/kntt-grade7-reconciliation-r2/01_NOTEBOOKLM_RESULT_R2.md",
+    "decisions": {
+      "phep-tinh-so-huu-ti": {
+        "decision": "ADD_CANONICAL_SKILL",
+        "target": "phep-tinh-so-huu-ti",
+        "priority": "P1"
+      },
+      "quy-tac-chuyen-ve": {
+        "decision": "KEEP_LESSON_LOCAL",
+        "target": null,
+        "priority": "P1"
+      },
+      "so-vo-ti": {
+        "decision": "ADD_CANONICAL_SKILL",
+        "target": "so-vo-ti",
+        "priority": "P1"
+      },
+      "tap-hop-so-thuc": {
+        "decision": "MAP_TO_FAMILY",
+        "target": "NUM-SETS",
+        "priority": "P1"
+      },
+      "chia-da-thuc-mot-bien": {
+        "decision": "ADD_CANONICAL_SKILL",
+        "target": "chia-da-thuc-mot-bien",
+        "priority": "P1"
+      }
+    }
+  },
+  "implementation_scope": {
+    "canonical_skill_additions": [
+      "phep-tinh-so-huu-ti",
+      "so-vo-ti",
+      "chia-da-thuc-mot-bien"
+    ],
+    "canonical_family_additions": [],
+    "canonical_family_renames": [],
+    "canonical_skill_renames": [],
+    "learner_facing_change": false,
+    "taxonomy_runtime_activation": false,
+    "mastery_readiness_change": false,
+    "learner_history_migration": false,
+    "item_regrade": false,
+    "note": "Three reviewed canonical skill identities are added to the durable registry only. No Practice/Readiness evidence, family restructuring, runtime activation, or learner-facing rollout is implied."
+  }
+}

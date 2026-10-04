@@ -124,7 +124,8 @@
       "diagnostic_subskills": [
         "tap-hop-so",
         "so-huu-ti-thap-phan",
-        "lam-tron-so"
+        "lam-tron-so",
+        "so-vo-ti"
       ],
       "learner_visible_default": true,
       "optional_section": false,
@@ -248,7 +249,8 @@
         "CT02"
       ],
       "diagnostic_subskills": [
-        "phep-tinh-phan-so"
+        "phep-tinh-phan-so",
+        "phep-tinh-so-huu-ti"
       ],
       "learner_visible_default": true,
       "optional_section": false,
@@ -457,7 +459,8 @@
         "CT04"
       ],
       "diagnostic_subskills": [
-        "chia-da-thuc-cho-don-thuc"
+        "chia-da-thuc-cho-don-thuc",
+        "chia-da-thuc-mot-bien"
       ],
       "learner_visible_default": true,
       "optional_section": false,
@@ -6456,6 +6459,45 @@
       "runtime_effect": false,
       "learner_history_effect": false,
       "mastery_readiness_effect": false
+    },
+    {
+      "id": "MATH-KNTT-G7-RECON-R2-20261004",
+      "status": "NOTEBOOKLM_PASS_RECONCILIATION_APPLIED",
+      "source_class": "S1",
+      "review_result_path": "review-packets/kntt-grade7-reconciliation-r2/01_NOTEBOOKLM_RESULT_R2.md",
+      "clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE",
+      "changes": [
+        {
+          "family_id": "NUM-FRACTION-OPS",
+          "add_diagnostic_subskill": "phep-tinh-so-huu-ti",
+          "rationale": "S1 Bài 2-3 + independent review: rational arithmetic has distinct diagnostic value."
+        },
+        {
+          "family_id": "NUM-SETS",
+          "add_diagnostic_subskill": "so-vo-ti",
+          "rationale": "S1 Bài 6 + independent review: irrational-number identity is foundational and cross-grade stable."
+        },
+        {
+          "family_id": "ALG-DIV-MONOMIAL",
+          "add_diagnostic_subskill": "chia-da-thuc-mot-bien",
+          "rationale": "S1 Bài 28 + independent review: general univariate-polynomial division exceeds monomial-only skill scope; family ID retained to avoid unreviewed restructuring."
+        }
+      ],
+      "lesson_local_decisions": [
+        {
+          "historical_ref": "quy-tac-chuyen-ve",
+          "disposition": "KEEP_LESSON_LOCAL"
+        },
+        {
+          "historical_ref": "tap-hop-so-thuc",
+          "disposition": "MAP_TO_FAMILY",
+          "family_id": "NUM-SETS"
+        }
+      ],
+      "runtime_effect": false,
+      "learner_history_effect": false,
+      "mastery_readiness_effect": false,
+      "family_restructure_effect": false
     }
   ]
 }
