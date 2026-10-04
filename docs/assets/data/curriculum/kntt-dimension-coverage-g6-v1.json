@@ -3,7 +3,7 @@
   "version": 1,
   "as_of": "2026-10-04",
   "grade": 6,
-  "status": "G6_PILOT_AUDIT_STATISTICS_REPAIRED_R1",
+  "status": "G6_PILOT_AUDIT_BAI31_MULTI_TOPIC_RECONCILED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -345,25 +345,25 @@
       },
       "LEARN_CONTENT": {
         "PARTIAL_LOCAL_OR_FAMILY": 3,
-        "VERIFIED_DIRECT": 10,
+        "VERIFIED_DIRECT": 11,
         "PARTIAL_SHARED_SKILL": 7,
         "PARTIAL_PLACEMENT": 5,
-        "PARTIAL_MISSING_DIRECT_SKILL": 1,
+        "PARTIAL_MISSING_DIRECT_SKILL": 0,
         "VERIFIED_LESSON_LOCAL": 4,
         "VERIFIED_DIRECT_AND_LOCAL": 1
       },
       "MICRO_PRACTICE": {
-        "PARTIAL": 11,
+        "PARTIAL": 10,
         "FAMILY_LEVEL_ONLY": 0,
-        "VERIFIED_DIRECT": 15,
+        "VERIFIED_DIRECT": 16,
         "NONE": 0,
         "VERIFIED_LESSON_LOCAL": 4,
         "VERIFIED_DIRECT_AND_LOCAL": 1
       },
       "PRACTICE_BANK": {
-        "PARTIAL_TOPIC_EVIDENCE": 5,
+        "PARTIAL_TOPIC_EVIDENCE": 4,
         "FAMILY_LEVEL_TOPIC_EVIDENCE": 4,
-        "TOPIC_SKILL_EVIDENCE": 22,
+        "TOPIC_SKILL_EVIDENCE": 23,
         "NONE": 0
       },
       "WRITTEN_LIBRARY": {
@@ -379,14 +379,14 @@
     "written_library_kntt_placement_count": 0,
     "priority_gap_rows": [
       {
-        "chapter": 7,
-        "lesson_ref": "Bài 31",
-        "summary": "Tỉ số và tỉ số phần trăm; bài toán phần trăm",
-        "learn": "PARTIAL_MISSING_DIRECT_SKILL",
+        "chapter": 1,
+        "lesson_ref": "Bài 1-3",
+        "summary": "Tập hợp; cách ghi và thứ tự số tự nhiên",
+        "learn": "PARTIAL_LOCAL_OR_FAMILY",
         "micro": "PARTIAL",
         "practice": "PARTIAL_TOPIC_EVIDENCE",
         "readiness": "NOT_VERIFIED_STRUCTURED",
-        "priority_reason": "Only remaining Grade-6 row explicitly missing a direct canonical Learn skill in the current audit."
+        "priority_reason": "Next clean lesson-local gap: direct tap-hop-so evidence exists, while ghi-so-tu-nhien and thu-tu-so-tu-nhien remain reviewed lesson-local concepts without explicit Learn/Micro evidence."
       }
     ],
     "repaired_rows": [
@@ -454,6 +454,17 @@
         "practice": "PARTIAL_TOPIC_EVIDENCE",
         "readiness": "AUTHORIZED_TOPIC_LEVEL",
         "review_receipt": "review-packets/kntt-g6-statistics-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      },
+      {
+        "chapter": 7,
+        "lesson_ref": "Bài 31",
+        "summary": "Tỉ số và tỉ số phần trăm; bài toán phần trăm",
+        "repair_status": "RECONCILED_EXISTING_MULTI_TOPIC_EVIDENCE_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "review_basis": "Existing reviewed semantic reconciliation + deployed Topic02/Topic03 evidence; no new content"
       }
     ]
   },
@@ -2441,48 +2452,128 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_MISSING_DIRECT_SKILL",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "ti-so",
-            "ti-so-phan-tram"
-          ],
-          "missing_direct_skills": [
+            "ti-so-phan-tram",
             "phan-tram"
           ],
-          "placement_strength": "GRADE_BROAD",
+          "missing_direct_skills": [],
+          "placement_strength": "MULTI_TOPIC_REVIEWED_PLACEMENT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic03-learning-workspace.json",
             "sha": "f2864fb45bda98422a4b31f5859452c18744159d"
-          }
+          },
+          "workspace_evidence": [
+            {
+              "topic": "03-ti-le-ti-le-thuc",
+              "path": "docs/assets/data/curriculum/topic03-learning-workspace.json",
+              "sha": "f2864fb45bda98422a4b31f5859452c18744159d",
+              "card_id": "rat03-core-g6-1",
+              "skills": [
+                "ti-so",
+                "ti-so-phan-tram"
+              ],
+              "placement": "Lớp 6 · Tỉ số và phần trăm"
+            },
+            {
+              "topic": "02-so-va-phep-tinh",
+              "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+              "sha": "9b67e22d0f6d4fd1727a3167639c506d201a3c66",
+              "card_id": "num02-g6-core-5",
+              "skills": [
+                "phan-tram"
+              ],
+              "placement": "Lớp 6 · Bài 28–31"
+            }
+          ],
+          "note": "Bài 31 is a legitimate multi-topic KNTT row. Topic03 provides direct Learn evidence for ti-so and ti-so-phan-tram, while Topic02 card num02-g6-core-5 explicitly covers phan-tram across Bài 28–31. No duplicate Topic03 percent card is required."
         },
         "MICRO_PRACTICE": {
-          "status": "PARTIAL",
+          "status": "VERIFIED_DIRECT",
           "direct_skill_hits": [
             "ti-so",
-            "ti-so-phan-tram"
+            "ti-so-phan-tram",
+            "phan-tram"
           ],
           "family_skill_hits": [
-            "ti-so-phan-tram"
+            "ti-so-phan-tram",
+            "phan-tram"
           ],
           "micro": {
             "path": "docs/assets/data/practice/03-ti-le-ti-le-thuc-micro-v1.json",
             "sha": "bd817c0ec44ff2c376c542e3d8604c01fb2e282f"
-          }
+          },
+          "item_ids": [
+            "RAT03MICRO_001",
+            "RAT03MICRO_003",
+            "NUM02MICRO_014",
+            "NUM02MICRO_015"
+          ],
+          "micro_evidence": [
+            {
+              "topic": "03-ti-le-ti-le-thuc",
+              "path": "docs/assets/data/practice/03-ti-le-ti-le-thuc-micro-v1.json",
+              "sha": "bd817c0ec44ff2c376c542e3d8604c01fb2e282f",
+              "skills": [
+                "ti-so",
+                "ti-so-phan-tram"
+              ],
+              "item_ids": [
+                "RAT03MICRO_001",
+                "RAT03MICRO_003"
+              ]
+            },
+            {
+              "topic": "02-so-va-phep-tinh",
+              "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+              "sha": "2d2be5e269d9c63e8a059de41737abb0607c2c98",
+              "skills": [
+                "phan-tram"
+              ],
+              "item_ids": [
+                "NUM02MICRO_014",
+                "NUM02MICRO_015"
+              ]
+            }
+          ],
+          "note": "Existing Grade-6 Micro evidence covers all three direct Bài 31 skills when primary and secondary topic evidence are reconciled together."
         },
         "PRACTICE_BANK": {
-          "status": "PARTIAL_TOPIC_EVIDENCE",
+          "status": "TOPIC_SKILL_EVIDENCE",
           "direct_skill_hits": [
             "ti-so",
-            "ti-so-phan-tram"
+            "ti-so-phan-tram",
+            "phan-tram"
           ],
           "family_skill_hits": [
-            "ti-so-phan-tram"
+            "ti-so-phan-tram",
+            "phan-tram"
           ],
           "manifest": {
             "path": "docs/assets/data/practice/03-ti-le-ti-le-thuc-v1.manifest.json",
             "sha": "4645eb69493281702a19a36453f999d1114736f3"
           },
-          "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
+          "note": "All three direct Bài 31 skills exist in the combined Topic03 + Topic02 Practice manifests. This remains topic-level evidence and does not create a new lesson-specific practice bank.",
+          "manifest_evidence": [
+            {
+              "topic": "03-ti-le-ti-le-thuc",
+              "path": "docs/assets/data/practice/03-ti-le-ti-le-thuc-v1.manifest.json",
+              "sha": "4645eb69493281702a19a36453f999d1114736f3",
+              "skills": [
+                "ti-so",
+                "ti-so-phan-tram"
+              ]
+            },
+            {
+              "topic": "02-so-va-phep-tinh",
+              "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+              "sha": "4609bcd1c34a338cbd456eb4f3219ba7f89f943f",
+              "skills": [
+                "phan-tram"
+              ]
+            }
+          ]
         },
         "WRITTEN_LIBRARY": {
           "status": "CANDIDATE_ONLY_NO_KNTT_PLACEMENT",
@@ -2502,6 +2593,16 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "RECONCILED_EXISTING_MULTI_TOPIC_EVIDENCE_R1",
+        "review_basis": "Existing reviewed Grade-6 semantic reconciliation plus already-deployed Topic02/Topic03 Learn and Micro evidence; audit correction only, no new academic content.",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "CANDIDATE_ONLY_NO_KNTT_PLACEMENT",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "The prior gap was caused by auditing only the primary Topic03 workspace. Bài 31 already spans Topic03 and secondary Topic02; existing evidence covers all direct skills."
       }
     },
     {
