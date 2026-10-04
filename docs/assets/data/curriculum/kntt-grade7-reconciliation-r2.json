@@ -1,0 +1,264 @@
+{
+  "schema": "kntt-grade7-reconciliation-r2",
+  "version": 1,
+  "as_of": "2026-10-04",
+  "status": "DRAFT_RECONCILIATION_REVIEW_PENDING_NO_RUNTIME_CHANGE",
+  "architecture": "One Knowledge Graph · Two Learning Paths",
+  "purpose": "Reconcile the 11 Grade-7 historical exact-ID mismatches against the reviewed canonical skill/family universe, closing safe aliases/family mappings while isolating only genuinely ambiguous granularity decisions for independent review.",
+  "source_locks": {
+    "coverage_matrix": {
+      "path": "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
+      "blob_sha": "6f97a6d78199643948b4c5b7c3bde443f3f549e8"
+    },
+    "grade7_map": {
+      "path": "docs/assets/data/curriculum/kntt-grade7-map.json",
+      "blob_sha": "de3fba60557981f665fea26d621bc7c31e448e40"
+    },
+    "taxonomy_v2": {
+      "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+      "blob_sha": "16113e910cc451cd69b72c5f2f86f579237bf60f"
+    },
+    "knowledge_graph": {
+      "path": "docs/assets/data/curriculum/knowledge-graph-v1.json",
+      "blob_sha": "64a7acf13a25aaf4a8f2501d3a63f48f7391134d"
+    },
+    "learning_workspaces": [
+      {
+        "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "blob_sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+      },
+      {
+        "path": "docs/assets/data/curriculum/topic04-learning-workspace.json",
+        "blob_sha": "2c9646ef6ca81ec00c2ec89bdb81523bc142cd7e"
+      },
+      {
+        "path": "docs/assets/data/curriculum/topic08-learning-workspace.json",
+        "blob_sha": "c67fb6af4df92e848738dc22bec0059fb4d1a2d1"
+      },
+      {
+        "path": "docs/assets/data/curriculum/topic11-learning-workspace.json",
+        "blob_sha": "5272bd9adb589de428247baa3b834aeba48c4191"
+      },
+      {
+        "path": "docs/assets/data/curriculum/topic21-learning-workspace.json",
+        "blob_sha": "2812085ab0dd0800196eee7d44562f2ced4294e1"
+      },
+      {
+        "path": "docs/assets/data/curriculum/topic23-learning-workspace.json",
+        "blob_sha": "7b2659c78e298017d16ec52f2a45cd57d3d88191"
+      }
+    ]
+  },
+  "resolution_definitions": {
+    "CANONICAL_SKILL": "Historical ref maps to an existing canonical skill identity.",
+    "CANONICAL_FAMILY": "Concept/task belongs to an existing family while finer KNTT wording remains lesson-local or representation detail.",
+    "NEEDS_REVIEW": "A plausible current target exists, but scope/granularity ambiguity is material enough that R2 does not assert a mapping before S1-backed independent review."
+  },
+  "protected_boundaries": {
+    "learner_facing_change": false,
+    "canonical_skill_creation": false,
+    "canonical_skill_rename": false,
+    "taxonomy_runtime_activation": false,
+    "mastery_readiness_change": false,
+    "learner_history_migration": false,
+    "item_regrade": false
+  },
+  "summary": {
+    "exact_id_unresolved_input_count": 11,
+    "closed_without_new_identity": 6,
+    "resolution_counts": {
+      "NEEDS_REVIEW": 5,
+      "CANONICAL_SKILL": 3,
+      "CANONICAL_FAMILY": 3
+    },
+    "review_queue": [
+      "phep-tinh-so-huu-ti",
+      "quy-tac-chuyen-ve",
+      "so-vo-ti",
+      "tap-hop-so-thuc",
+      "chia-da-thuc-mot-bien"
+    ]
+  },
+  "entries": [
+    {
+      "historical_ref": "phep-tinh-so-huu-ti",
+      "chapter": 1,
+      "lesson_ref": "Bài 1-3",
+      "curriculum_summary": "Tập hợp số hữu tỉ; cộng, trừ, nhân, chia số hữu tỉ; lũy thừa với số mũ tự nhiên của số hữu tỉ.",
+      "resolution": "NEEDS_REVIEW",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [],
+      "local_role": null,
+      "reason": "Grade-7 map explicitly proposed this as a separate skill. Current `so-huu-ti-thap-phan` lives in NUM-SETS and its historical registry mapping was REVIEW_REQUIRED; do not silently equate representation with all rational arithmetic.",
+      "review_candidates": {
+        "canonical_skill_ids": [
+          "so-huu-ti-thap-phan"
+        ],
+        "canonical_family_ids": [
+          "NUM-SETS"
+        ],
+        "new_identity_candidate": "phep-tinh-so-huu-ti"
+      }
+    },
+    {
+      "historical_ref": "quy-tac-chuyen-ve",
+      "chapter": 1,
+      "lesson_ref": "Bài 4",
+      "curriculum_summary": "Thứ tự thực hiện phép tính; quy tắc chuyển vế trong các bài toán tìm số hữu tỉ chưa biết.",
+      "resolution": "NEEDS_REVIEW",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [],
+      "local_role": null,
+      "reason": "KNTT places this in Grade-7 rational-number work and as a prerequisite for equations. EQ-BASIC / bien-doi-pt-nhieu-buoc is a plausible downstream target, but scope is not identical.",
+      "review_candidates": {
+        "canonical_skill_ids": [
+          "bien-doi-pt-nhieu-buoc"
+        ],
+        "canonical_family_ids": [
+          "EQ-BASIC"
+        ],
+        "new_identity_candidate": "quy-tac-chuyen-ve"
+      }
+    },
+    {
+      "historical_ref": "can-bac-hai",
+      "chapter": 2,
+      "lesson_ref": "Bài 5-7",
+      "curriculum_summary": "Số thập phân vô hạn tuần hoàn; số vô tỉ; căn bậc hai số học; tập hợp số thực.",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "can-bac-hai-so-hoc"
+      ],
+      "canonical_family_ids": [
+        "RAD-BASIC"
+      ],
+      "local_role": "CROSS_TOPIC_CANONICAL_REUSE",
+      "reason": "Current registry already records CT02 `can-bac-hai` as a supporting skill with canonical_candidate `can-bac-hai-so-hoc`; reuse the same mathematical identity without exposing the full Grade-9 radical bank."
+    },
+    {
+      "historical_ref": "so-thap-phan-vo-han-tuan-hoan",
+      "chapter": 2,
+      "lesson_ref": "Bài 5-7",
+      "curriculum_summary": "Số thập phân vô hạn tuần hoàn; số vô tỉ; căn bậc hai số học; tập hợp số thực.",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "so-huu-ti-thap-phan"
+      ],
+      "canonical_family_ids": [
+        "NUM-SETS"
+      ],
+      "local_role": "REPRESENTATION_ALIAS",
+      "reason": "Infinite repeating decimals are a representation of rational numbers; current canonical identity `so-huu-ti-thap-phan` is the stable target."
+    },
+    {
+      "historical_ref": "so-vo-ti",
+      "chapter": 2,
+      "lesson_ref": "Bài 5-7",
+      "curriculum_summary": "Số thập phân vô hạn tuần hoàn; số vô tỉ; căn bậc hai số học; tập hợp số thực.",
+      "resolution": "NEEDS_REVIEW",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [],
+      "local_role": null,
+      "reason": "NUM-SETS is a plausible family, but irrational numbers may have enough diagnostic/cross-grade identity to justify a stable skill. R2 does not decide without S1 review.",
+      "review_candidates": {
+        "canonical_skill_ids": [],
+        "canonical_family_ids": [
+          "NUM-SETS"
+        ],
+        "new_identity_candidate": "so-vo-ti"
+      }
+    },
+    {
+      "historical_ref": "tap-hop-so-thuc",
+      "chapter": 2,
+      "lesson_ref": "Bài 5-7",
+      "curriculum_summary": "Số thập phân vô hạn tuần hoàn; số vô tỉ; căn bậc hai số học; tập hợp số thực.",
+      "resolution": "NEEDS_REVIEW",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [],
+      "local_role": null,
+      "reason": "NUM-SETS is a plausible family, but the real-number set is a foundational cross-grade concept; review whether family-level coverage is sufficient.",
+      "review_candidates": {
+        "canonical_skill_ids": [],
+        "canonical_family_ids": [
+          "NUM-SETS"
+        ],
+        "new_identity_candidate": "tap-hop-so-thuc"
+      }
+    },
+    {
+      "historical_ref": "ve-bieu-do-quat-tron",
+      "chapter": 5,
+      "lesson_ref": "Bài 18-19",
+      "curriculum_summary": "Biểu đồ hình quạt tròn và biểu đồ đoạn thẳng; đọc, biểu diễn và nhận xét dữ liệu.",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "STAT-REPRESENT"
+      ],
+      "local_role": "REPRESENTATION_PRODUCTION",
+      "reason": "Constructing a pie chart is a data-representation task. Keep the production detail under STAT-REPRESENT rather than create a parallel chart-reading skill."
+    },
+    {
+      "historical_ref": "ve-bieu-do-doan-thang",
+      "chapter": 5,
+      "lesson_ref": "Bài 18-19",
+      "curriculum_summary": "Biểu đồ hình quạt tròn và biểu đồ đoạn thẳng; đọc, biểu diễn và nhận xét dữ liệu.",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "STAT-REPRESENT"
+      ],
+      "local_role": "REPRESENTATION_PRODUCTION",
+      "reason": "Constructing a line chart is a representation task under STAT-REPRESENT; current reading skill remains separate."
+    },
+    {
+      "historical_ref": "da-thuc-mot-bien",
+      "chapter": 7,
+      "lesson_ref": "Bài 24-25",
+      "curriculum_summary": "Biểu thức đại số; giá trị biểu thức; đa thức một biến, hệ số và bậc.",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "ALG-STRUCTURE"
+      ],
+      "local_role": "DOMAIN_SPECIALIZATION",
+      "reason": "Univariate-polynomial structure is covered by the stable polynomial/monomial structure family; keep the one-variable qualifier lesson-local."
+    },
+    {
+      "historical_ref": "chia-da-thuc-mot-bien",
+      "chapter": 7,
+      "lesson_ref": "Bài 26-28",
+      "curriculum_summary": "Cộng, trừ, nhân và chia đa thức một biến.",
+      "resolution": "NEEDS_REVIEW",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [],
+      "local_role": null,
+      "reason": "The reviewed Grade-7 mapping explicitly noted that the Practice Bank lacked a sufficiently clear skill for this. Current ALG-DIV-MONOMIAL is narrower (`chia-da-thuc-cho-don-thuc`), so do not auto-map general univariate-polynomial division.",
+      "review_candidates": {
+        "canonical_skill_ids": [
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "canonical_family_ids": [
+          "ALG-DIV-MONOMIAL"
+        ],
+        "new_identity_candidate": "chia-da-thuc-mot-bien"
+      }
+    },
+    {
+      "historical_ref": "xac-suat-bien-co-don-gian",
+      "chapter": 8,
+      "lesson_ref": "Bài 30",
+      "curriculum_summary": "Làm quen với xác suất của biến cố trong các mô hình đơn giản.",
+      "resolution": "CANONICAL_SKILL",
+      "canonical_skill_ids": [
+        "xac-suat-co-dien"
+      ],
+      "canonical_family_ids": [
+        "PROB-CLASSICAL"
+      ],
+      "local_role": "DIRECT_ALIAS",
+      "reason": "Grade-7 simple-event probability aligns with the current canonical skill `xac-suat-co-dien` under PROB-CLASSICAL."
+    }
+  ]
+}
