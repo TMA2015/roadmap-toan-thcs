@@ -1,5 +1,5 @@
 {
-  "version": "1.0.199",
+  "version": "1.0.200",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1239,6 +1239,22 @@
         "deploy_run": 37198340047,
         "deploy_conclusion": "SUCCESS"
       }
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI42-EVENT-OUTCOME-R1-001",
+      "title": "Grade 6 KNTT Bài 42 — outcome/event lesson-local evidence repair R1",
+      "routing": "CONTENT_REPAIR+NOTEBOOKLM_ACADEMIC_REVIEW",
+      "status": "BLOCKED-ACADEMIC",
+      "context_version": "1.0.200",
+      "review_verdict": "CANDIDATE_READY_NOTEBOOKLM_PENDING",
+      "review_notes": "Candidate repairs the Grade-6 Bài 42 direct learning-evidence gap without taxonomy inflation. prob23-core-1 now explicitly teaches kết quả có thể + sự kiện before Bài 43 experimental probability, and adds PRO23MICRO_018–020 as LESSON_LOCAL_CORE_FORMATIVE items. ket-qua-co-the and su-kien-don-gian remain lesson-local under PROB-EVENT; tags.skill stays empty and gates_core=false, so no new mastery counter/readiness credit is created. Practice Bank remains 120 unchanged; CT23 Readiness draft remains pending. Do not open/merge release PR until NotebookLM clearance G6_BAI42_EVENT_OUTCOME_CONTENT_REVIEW_COMPLETE.",
+      "artifacts": [
+        "review-packets/kntt-g6-bai42-event-outcome-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "docs/assets/data/curriculum/topic23-learning-workspace.json",
+        "docs/assets/data/practice/23-xac-suat-micro-v1.json",
+        "scripts/test-kntt-g6-bai42-event-outcome-r1.js",
+        "scripts/test-learning-card-micro-practice.js"
+      ]
     }
   ]
 }
