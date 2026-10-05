@@ -74,14 +74,89 @@ hide:
   <div><strong>3</strong><span>bước học – luyện – kiểm tra</span></div>
 </div>
 
-<section class="home-section" aria-labelledby="home-paths">
-  <div class="home-section-intro"><div><span class="home-section-kicker">BẮT ĐẦU TỪ ĐÂU?</span><h2 id="home-paths">Chọn con đường phù hợp</h2><p>Chạm vào một ô để xem mô tả, sau đó chọn lối vào phù hợp.</p></div></div>
-  <div class="home-path-grid">
-    <details class="home-path-card home-path-indigo home-reveal-card"><summary><span class="home-path-icon" aria-hidden="true">◈</span><span class="home-card-label">HỌC THEO LỚP</span><strong>Kết nối tri thức</strong><span class="home-reveal-indicator" aria-hidden="true">＋</span></summary><div class="home-reveal-body"><p>Học Core theo đúng chặng lớp 6–9; phần mở rộng được phân tầng riêng.</p><a href="hoc-theo-lop/">Chọn lớp và chương để học<span aria-hidden="true"> ↗</span></a></div></details>
-    <details class="home-path-card home-path-cyan home-reveal-card"><summary><span class="home-path-icon" aria-hidden="true">⌁</span><span class="home-card-label">HỌC CÓ HỆ THỐNG</span><strong>Roadmap 25 chuyên đề</strong><span class="home-reveal-indicator" aria-hidden="true">＋</span></summary><div class="home-reveal-body"><p>Đi từ kiến thức nền đến ứng dụng; thấy được quan hệ giữa các chủ đề.</p><a href="roadmap/">Mở bản đồ học tập<span aria-hidden="true"> ↗</span></a></div></details>
-    <details class="home-path-card home-path-violet home-reveal-card"><summary><span class="home-path-icon" aria-hidden="true">✳</span><span class="home-card-label">THỰC HÀNH NGAY</span><strong>Luyện tập có phản hồi</strong><span class="home-reveal-indicator" aria-hidden="true">＋</span></summary><div class="home-reveal-body"><p>Thử bài theo kỹ năng, xem giải thích khi sai và ghi nhận kết quả theo tag.</p><a href="kien-thuc/23-xac-suat/bai-tap/">Thử Practice Room<span aria-hidden="true"> ↗</span></a></div></details>
-    <details class="home-path-card home-path-amber home-reveal-card"><summary><span class="home-path-icon" aria-hidden="true">◎</span><span class="home-card-label">ĐÍCH ĐẾN</span><strong>Sẵn sàng vào lớp 10</strong><span class="home-reveal-indicator" aria-hidden="true">＋</span></summary><div class="home-reveal-body"><p>Ôn tổng hợp, luyện đề và sửa lỗi theo yêu cầu thực tế của từng địa phương.</p><a href="kien-thuc/25-tong-hop-on-thi-10/">Xem lộ trình ôn thi<span aria-hidden="true"> ↗</span></a></div></details>
+<section class="home-section home-start-section" aria-labelledby="home-paths">
+  <div class="home-section-intro"><div><span class="home-section-kicker">BẮT ĐẦU TỪ ĐÂU?</span><h2 id="home-paths">Hiểu hệ thống · Chọn lối vào</h2><p>Xem nhanh cách kiến thức kết nối, sau đó chọn điểm vào phù hợp với việc em đang cần làm.</p></div></div>
+
+  <div class="home-orientation-slider" data-home-slider aria-roledescription="carousel" aria-label="Hướng dẫn nhanh cách học">
+    <div class="home-slider-stage">
+      <article class="home-slide home-slide-tree is-active" data-home-slide aria-hidden="false">
+        <div class="home-slide-copy">
+          <span class="home-slide-kicker">01 · NHÌN TOÀN BỘ BẢN ĐỒ</span>
+          <h3>Cây Toán học</h3>
+          <p><strong>Đi ngang</strong> để học bài hiện tại. <strong>Đi dọc</strong> để thấy kiến thức nền và con đường phát triển qua nhiều lớp.</p>
+          <a href="roadmap/">Khám phá bản đồ học tập <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="home-tree-mini" role="img" aria-label="Mô hình cây: thân dọc xuyên lớp, các cành ngang theo lớp và vùng mây bài tự luận">
+          <span class="home-tree-root">KIẾN THỨC NỀN</span>
+          <span class="home-tree-trunk"></span>
+          <span class="home-tree-branch home-tree-branch-6"><i>Lớp 6</i><b></b><b></b></span>
+          <span class="home-tree-branch home-tree-branch-7"><i>Lớp 7</i><b></b><b></b></span>
+          <span class="home-tree-branch home-tree-branch-8"><i>Lớp 8</i><b></b><b></b></span>
+          <span class="home-tree-branch home-tree-branch-9"><i>Lớp 9</i><b></b><b></b></span>
+          <span class="home-tree-cloud">Bài tự luận<br><small>kết nối nhiều kỹ năng</small></span>
+        </div>
+      </article>
+
+      <article class="home-slide home-slide-paths" data-home-slide aria-hidden="true" hidden>
+        <div class="home-slide-copy">
+          <span class="home-slide-kicker">02 · HAI LỘ TRÌNH</span>
+          <h3>Hai đường đi · Một hệ kiến thức</h3>
+          <p>Em có thể bắt đầu từ bài đang học ở trường hoặc đi theo một chuyên đề xuyên nhiều lớp. Hai cách học dùng chung kiến thức và kỹ năng.</p>
+        </div>
+        <div class="home-dual-path" aria-label="Hai lộ trình học">
+          <div><span>📘</span><strong>Học theo lớp</strong><small>Lớp → Chương → Bài → Core</small><a href="hoc-theo-lop/">KNTT lớp 6–9 →</a></div>
+          <div><span>🧭</span><strong>Học theo chuyên đề</strong><small>25 mạch kiến thức xuyên lớp</small><a href="roadmap/">Mở Vertical Spine →</a></div>
+        </div>
+      </article>
+
+      <article class="home-slide home-slide-cycle" data-home-slide aria-hidden="true" hidden>
+        <div class="home-slide-copy">
+          <span class="home-slide-kicker">03 · TỪ HIỂU ĐẾN TỰ LÀM</span>
+          <h3>Core → Luyện tập → Tự kiểm tra</h3>
+          <p>Mỗi không gian có một nhiệm vụ khác nhau: hiểu đúng, làm chắc và cuối cùng thử sức độc lập không cần trợ giúp.</p>
+        </div>
+        <div class="home-cycle-mini" aria-label="Chu trình Core, Luyện tập, Tự kiểm tra">
+          <div><span>💡</span><strong>CORE</strong><small>Hiểu</small></div><i aria-hidden="true">→</i>
+          <div><span>✎</span><strong>LUYỆN TẬP</strong><small>Làm chắc & kết nối</small></div><i aria-hidden="true">→</i>
+          <div><span>✓</span><strong>TỰ KIỂM TRA</strong><small>Tự làm độc lập</small></div>
+        </div>
+      </article>
+
+      <article class="home-slide home-slide-written" data-home-slide aria-hidden="true" hidden>
+        <div class="home-slide-copy">
+          <span class="home-slide-kicker">04 · BÀI TỰ LUẬN KẾT NỐI KỸ NĂNG</span>
+          <h3>Nhiều kỹ năng cùng làm việc</h3>
+          <p>Một bài tự luận có thể cần kỹ năng đang học trên cành ngang và kiến thức nền từ những tầng trước. Nếu còn yếu, em có thể quay lại củng cố.</p>
+          <a href="huong-dan/lo-trinh-tu-hoc/">Xem hướng dẫn tự học <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="home-written-mini" role="img" aria-label="Kỹ năng hiện tại và kiến thức nền cùng đi vào một bài tự luận">
+          <span class="home-written-foundation">Kiến thức nền</span>
+          <span class="home-written-current">Kỹ năng hiện tại</span>
+          <span class="home-written-link home-written-link-a" aria-hidden="true">↗</span>
+          <span class="home-written-link home-written-link-b" aria-hidden="true">↖</span>
+          <span class="home-written-cloud">BÀI TỰ LUẬN<small>Tổng hợp · lựa chọn cách làm · trình bày</small></span>
+        </div>
+      </article>
+    </div>
+
+    <div class="home-slider-controls">
+      <button type="button" class="home-slider-arrow" data-home-slider-prev aria-label="Xem trang hướng dẫn trước">←</button>
+      <div class="home-slider-dots" role="group" aria-label="Chọn trang hướng dẫn">
+        <button type="button" data-home-slider-dot="0" class="is-active" aria-label="Trang 1: Cây Toán học" aria-pressed="true"></button>
+        <button type="button" data-home-slider-dot="1" aria-label="Trang 2: Hai lộ trình" aria-pressed="false"></button>
+        <button type="button" data-home-slider-dot="2" aria-label="Trang 3: Core, Luyện tập, Tự kiểm tra" aria-pressed="false"></button>
+        <button type="button" data-home-slider-dot="3" aria-label="Trang 4: Bài tự luận kết nối kỹ năng" aria-pressed="false"></button>
+      </div>
+      <button type="button" class="home-slider-arrow" data-home-slider-next aria-label="Xem trang hướng dẫn tiếp theo">→</button>
+    </div>
   </div>
+
+  <nav class="home-quick-paths" aria-label="Bốn điểm vào học tập">
+    <a class="home-quick-path home-quick-class" href="hoc-theo-lop/"><span aria-hidden="true">📘</span><span><strong>Học theo lớp</strong><small>KNTT lớp 6–9</small></span><i aria-hidden="true">→</i></a>
+    <a class="home-quick-path home-quick-topic" href="roadmap/"><span aria-hidden="true">🧭</span><span><strong>Học theo chuyên đề</strong><small>25 chuyên đề xuyên lớp</small></span><i aria-hidden="true">→</i></a>
+    <a class="home-quick-path home-quick-practice" href="luyen-tap/"><span aria-hidden="true">✎</span><span><strong>Luyện tập</strong><small>Làm chắc kỹ năng</small></span><i aria-hidden="true">→</i></a>
+    <a class="home-quick-path home-quick-exam" href="kien-thuc/25-tong-hop-on-thi-10/"><span aria-hidden="true">◎</span><span><strong>Ôn thi vào 10</strong><small>Vận dụng & tổng hợp</small></span><i aria-hidden="true">→</i></a>
+  </nav>
 </section>
 
 <section class="home-section home-feature-panel" aria-labelledby="home-process">

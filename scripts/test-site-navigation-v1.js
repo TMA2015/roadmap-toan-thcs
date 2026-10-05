@@ -1,10 +1,15 @@
 #!/usr/bin/env node
 "use strict";
-const fs=require("fs"),path=require("path"),r=path.resolve(__dirname,"..");
+const fs=require("fs"),path=require("path"),cp=require("child_process"),r=path.resolve(__dirname,"..");
 const read=p=>fs.readFileSync(path.join(r,p),"utf8");
-const home=read("docs/index.md"),library=read("docs/kien-thuc/index.md"),css=read("docs/assets/stylesheets/site-design-system.css"),nav=read("docs/assets/javascripts/sticky-nav-v1.js"),yaml=read("mkdocs.yml");
+const home=read("docs/index.md"),library=read("docs/kien-thuc/index.md"),css=read("docs/assets/stylesheets/site-design-system.css"),nav=read("docs/assets/javascripts/sticky-nav-v1.js"),slider=read("docs/assets/javascripts/home-orientation-slider-v1.js"),yaml=read("mkdocs.yml");
 const ok=(v,m)=>{if(!v)throw Error(m)};
-ok((home.match(/class="home-path-card [^"]+ home-reveal-card"/g)||[]).length===4,"four collapsible home cards");
+ok((home.match(/<article class="home-slide [^"]+" data-home-slide/g)||[]).length===4,"four homepage orientation slides");
+ok((home.match(/class="home-quick-path /g)||[]).length===4,"four compact homepage entry points");
+ok(!home.includes("home-reveal-card"),"legacy large collapsible home cards removed");
+ok(home.includes("Hai đường đi · Một hệ kiến thức")&&home.includes("Core → Luyện tập → Tự kiểm tra"),"learner-facing orientation copy");
+ok(slider.includes("data-home-slider-prev")&&slider.includes("touchstart")&&slider.includes("ArrowRight"),"manual slider arrows, swipe and keyboard support");
+cp.execFileSync(process.execPath,["--check",path.join(r,"docs/assets/javascripts/home-orientation-slider-v1.js")],{stdio:"pipe"});
 ok((library.match(/class="library-cluster"/g)||[]).length===4,"four library clusters");
 ok((library.match(/class="library-topic-tile"/g)||[]).length===25,"all 25 topics kept");
 ok(!/class="library-topic-tile" href="[^"]+\\.md"/.test(library),"HTML tile links point to built routes, never source Markdown");
@@ -25,5 +30,6 @@ ok(css.includes(".roadmap-main-quick__links"),"responsive seven-group grid in th
 ok(!css.includes(".roadmap-mobile-shortcuts")&&!css.includes(".md-sidebar--primary > .md-sidebar__scrollwrap"),"remove all injected/sticky drawer styles");
 ok(css.includes("overflow:hidden")&&css.includes("flex:1 1 auto"),"modal header does not disappear while topic list scrolls");
 ok(css.includes(".roadmap-nav-dock.is-visible")&&css.includes(".library-topic-grid"),"style definitions");
-ok(yaml.includes("sticky-nav-v1.js"),"loaded on site");
-console.log("PASS: persistent desktop nav, four home cards, four library clusters, all 25 links.");
+ok(yaml.includes("sticky-nav-v1.js"),"sticky navigation loaded on site");
+ok(yaml.includes("home-orientation-slider-v1.js"),"homepage orientation slider loaded on site");
+console.log("PASS: persistent desktop nav, four orientation slides, four compact entry points, four library clusters, all 25 links.");
