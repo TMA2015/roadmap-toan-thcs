@@ -113,16 +113,19 @@
         "NUM02MICRO_018",
         "NUM02MICRO_027",
         "NUM02MICRO_028",
-        "NUM02MICRO_029"
+        "NUM02MICRO_029",
+        "NUM02MICRO_036",
+        "NUM02MICRO_037",
+        "NUM02MICRO_038"
       ],
       "teaching_copy": {
-        "key_idea": "Với các số tự nhiên, a chia hết cho b (b khác 0) nếu có số tự nhiên q sao cho a = b × q. Nếu hai số đều chia hết cho cùng một số thì tổng của chúng cũng chia hết cho số đó; khi lấy số lớn trừ số nhỏ, hiệu cũng chia hết cho số đó. Các dấu hiệu chia hết, số nguyên tố, ƯCLN và BCNN là các công cụ tiếp theo để xử lí bài toán chia hết.",
+        "key_idea": "Quan hệ chia hết, số nguyên tố và phân tích ra thừa số nguyên tố là nền tảng để tìm ƯCLN và BCNN. Trong bài toán thực tế, thường dùng ƯCLN khi cần chia thành nhiều nhóm giống nhau nhất hoặc tìm kích thước lớn nhất cùng chia hết; thường dùng BCNN khi cần tìm thời điểm/lần đầu hai chu kỳ cùng xảy ra hoặc số nhỏ nhất cùng là bội của nhiều số.",
         "worked_example": {
-          "problem": "Biết 18 chia hết cho 6 và 30 chia hết cho 6. Không cần chia trực tiếp 48 cho 6, hãy giải thích vì sao 18 + 30 chia hết cho 6.",
-          "solution": "Vì cả 18 và 30 đều chia hết cho 6 nên theo tính chất chia hết của một tổng, 18 + 30 = 48 cũng chia hết cho 6."
+          "problem": "a) Có 42 bút đỏ và 56 bút xanh. Chia thành nhiều nhất các phần quà giống nhau, dùng hết cả hai loại. Có thể chia thành bao nhiêu phần quà? b) Hai xe buýt cùng rời bến lúc 7 giờ; xe A cứ 12 phút rời một chuyến, xe B cứ 18 phút rời một chuyến. Sau bao lâu hai xe lại cùng rời bến?",
+          "solution": "a) Số phần quà lớn nhất là ƯCLN(42,56)=14. b) Thời gian ngắn nhất để hai chu kỳ gặp lại là BCNN(12,18)=36 phút."
         },
-        "misconception": "Không được kết luận một tổng chia hết cho m chỉ vì một số hạng chia hết cho m. Muốn dùng tính chất 'cùng chia hết' cho tổng hoặc hiệu, phải kiểm tra các số hạng liên quan đều chia hết cho cùng m.",
-        "summary": "Nhận biết đúng quan hệ chia hết trước, rồi dùng tính chất của tổng/hiệu để suy luận nhanh; sau đó mới dùng các dấu hiệu chia hết, số nguyên tố, ƯCLN hoặc BCNN khi bài toán yêu cầu."
+        "misconception": "Không chọn ƯCLN hay BCNN chỉ vì đề có nhiều số. Nếu bài hỏi 'nhiều nhất/lớn nhất' trong một cách chia đều thì thường là ƯCLN; nếu hỏi 'nhỏ nhất/đầu tiên cùng xảy ra lại' giữa các chu kỳ thì thường là BCNN.",
+        "summary": "Trước tiên xác định cấu trúc bài toán: chia đều tối đa → nghĩ đến ƯCLN; chu kỳ cùng lặp lại sớm nhất → nghĩ đến BCNN. Sau đó mới tính và kiểm tra kết quả theo ngữ cảnh."
       },
       "lesson_local_concepts": [
         {
@@ -140,6 +143,16 @@
           "role": "LESSON_LOCAL_CONCEPT",
           "grade": 6,
           "lesson": "Bài 8"
+        }
+      ],
+      "lesson_local_problem_types": [
+        {
+          "id": "bai-toan-ucln-bcnn",
+          "label": "Bài toán áp dụng ƯCLN–BCNN",
+          "family_id": "NUM-GCD-LCM",
+          "role": "PROBLEM_TYPE",
+          "grade": 6,
+          "lesson": "Bài 11-12"
         }
       ]
     },
