@@ -4,7 +4,12 @@ const fs=require("fs"),path=require("path"),cp=require("child_process"),r=path.r
 const read=p=>fs.readFileSync(path.join(r,p),"utf8");
 const home=read("docs/index.md"),library=read("docs/kien-thuc/index.md"),css=read("docs/assets/stylesheets/site-design-system.css"),nav=read("docs/assets/javascripts/sticky-nav-v1.js"),slider=read("docs/assets/javascripts/home-orientation-slider-v1.js"),yaml=read("mkdocs.yml");
 const ok=(v,m)=>{if(!v)throw Error(m)};
-ok((home.match(/class="home-path-card [^"]+ home-reveal-card"/g)||[]).length===4,"four collapsible home cards");
+ok((home.match(/data-home-slide/g)||[]).length===4,"four homepage orientation slides");
+ok((home.match(/class="home-quick-path /g)||[]).length===4,"four compact homepage entry points");
+ok(!home.includes("home-reveal-card"),"legacy large collapsible home cards removed");
+ok(home.includes("Hai đường đi · Một hệ kiến thức")&&home.includes("Core → Luyện tập → Tự kiểm tra"),"learner-facing orientation copy");
+ok(slider.includes("data-home-slider-prev")&&slider.includes("touchstart")&&slider.includes("ArrowRight"),"manual slider arrows, swipe and keyboard support");
+cp.execFileSync(process.execPath,["--check",path.join(r,"docs/assets/javascripts/home-orientation-slider-v1.js")],{stdio:"pipe"});
 ok((library.match(/class="library-cluster"/g)||[]).length===4,"four library clusters");
 ok((library.match(/class="library-topic-tile"/g)||[]).length===25,"all 25 topics kept");
 ok(!/class="library-topic-tile" href="[^"]+\\.md"/.test(library),"HTML tile links point to built routes, never source Markdown");
