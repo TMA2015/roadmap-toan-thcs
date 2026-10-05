@@ -6,7 +6,7 @@
     "id": "02-so-va-phep-tinh",
     "title": "Số và phép tính · Core lớp 6"
   },
-  "question_count": 35,
+  "question_count": 38,
   "questions": [
     {
       "id": "NUM02MICRO_001",
@@ -1558,6 +1558,153 @@
       "option_evidence": {},
       "lesson_local_targets": [
         "thu-tu-so-tu-nhien"
+      ]
+    },
+    {
+      "id": "NUM02MICRO_036",
+      "card_id": "num02-g6-core-2",
+      "micro_role": "coverage",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [],
+        "layer": "KNTT-Core",
+        "grade": 6,
+        "type": "bai-toan-ucln-chia-deu"
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 11-12"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+      "gates_core": false,
+      "authoring_review": {
+        "verdict": "SOURCE_CONFIRMED_LOW_RISK",
+        "method": "OWNER_APPROVED_RISK_BASED_REVIEW_POLICY",
+        "basis": "KNTT_G6_RECONCILIATION_R1_NOTEBOOKLM_PASS_PLUS_DETERMINISTIC_GCD_LCM_APPLICATIONS"
+      },
+      "question": "Có 42 bút đỏ và 56 bút xanh. Chia thành nhiều nhất các phần quà giống nhau, dùng hết cả hai loại. Có thể chia thành bao nhiêu phần quà?",
+      "options": [
+        "14",
+        "7",
+        "28",
+        "98"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "Số phần quà phải chia hết cả 42 và 56, và cần nhiều nhất nên bằng ƯCLN(42,56)=14.",
+      "hints": [
+        "Tìm số nhóm lớn nhất mà cả 42 và 56 đều chia hết.",
+        "Đây là bài toán ƯCLN."
+      ],
+      "option_evidence": {},
+      "lesson_local_targets": [
+        "bai-toan-ucln-bcnn"
+      ]
+    },
+    {
+      "id": "NUM02MICRO_037",
+      "card_id": "num02-g6-core-2",
+      "micro_role": "coverage",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [],
+        "layer": "KNTT-Core",
+        "grade": 6,
+        "type": "bai-toan-bcnn-chu-ky"
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 11-12"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+      "gates_core": false,
+      "authoring_review": {
+        "verdict": "SOURCE_CONFIRMED_LOW_RISK",
+        "method": "OWNER_APPROVED_RISK_BASED_REVIEW_POLICY",
+        "basis": "KNTT_G6_RECONCILIATION_R1_NOTEBOOKLM_PASS_PLUS_DETERMINISTIC_GCD_LCM_APPLICATIONS"
+      },
+      "question": "Hai xe buýt cùng rời bến lúc 7 giờ. Xe A cứ 12 phút rời một chuyến, xe B cứ 18 phút rời một chuyến. Sau bao nhiêu phút hai xe lại cùng rời bến?",
+      "options": [
+        "36 phút",
+        "30 phút",
+        "6 phút",
+        "216 phút"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "Thời gian cần tìm là bội chung nhỏ nhất của 12 và 18, nên bằng BCNN(12,18)=36 phút.",
+      "hints": [
+        "Tìm thời gian nhỏ nhất đồng thời là bội của 12 và 18.",
+        "Đây là bài toán BCNN."
+      ],
+      "option_evidence": {},
+      "lesson_local_targets": [
+        "bai-toan-ucln-bcnn"
+      ]
+    },
+    {
+      "id": "NUM02MICRO_038",
+      "card_id": "num02-g6-core-2",
+      "micro_role": "coverage",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [],
+        "layer": "KNTT-Core",
+        "grade": 6,
+        "type": "bai-toan-ucln-bcnn-chon-mo-hinh"
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 11-12"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+      "gates_core": false,
+      "authoring_review": {
+        "verdict": "SOURCE_CONFIRMED_LOW_RISK",
+        "method": "OWNER_APPROVED_RISK_BASED_REVIEW_POLICY",
+        "basis": "KNTT_G6_RECONCILIATION_R1_NOTEBOOKLM_PASS_PLUS_DETERMINISTIC_GCD_LCM_APPLICATIONS"
+      },
+      "question": "Bài toán nào sau đây phù hợp dùng BCNN?",
+      "options": [
+        "Tìm thời gian ngắn nhất để hai chu kỳ lặp lại cùng lúc",
+        "Chia 48 bút và 60 vở thành nhiều nhất các phần quà giống nhau",
+        "Tìm ước lớn nhất chung của 24 và 36",
+        "Rút gọn phân số 18/24"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "BCNN phù hợp khi cần tìm thời điểm hoặc số nhỏ nhất để nhiều chu kỳ cùng xảy ra; bài chia đều nhiều nhất thường dùng ƯCLN.",
+      "hints": [
+        "Nhớ từ khóa 'ngắn nhất/đầu tiên cùng xảy ra lại'.",
+        "Chu kỳ cùng lặp lại sớm nhất gợi ý BCNN."
+      ],
+      "option_evidence": {},
+      "lesson_local_targets": [
+        "bai-toan-ucln-bcnn"
       ]
     }
   ]
