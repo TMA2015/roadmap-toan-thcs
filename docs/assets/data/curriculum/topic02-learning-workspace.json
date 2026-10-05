@@ -217,16 +217,19 @@
         "NUM02MICRO_020",
         "NUM02MICRO_030",
         "NUM02MICRO_031",
-        "NUM02MICRO_032"
+        "NUM02MICRO_032",
+        "NUM02MICRO_039",
+        "NUM02MICRO_040",
+        "NUM02MICRO_041"
       ],
       "teaching_copy": {
-        "key_idea": "Rút gọn bằng cách chia tử và mẫu cho cùng ước chung; cộng/trừ phân số khác mẫu phải quy đồng; chia phân số khác 0 bằng nhân với nghịch đảo. Với Bài 27, muốn tìm m/n của số b thì tính b × m/n. Ngược lại, nếu m/n của một số bằng a thì số đó bằng a ÷ m/n.",
+        "key_idea": "Hai phân số bằng nhau nếu chúng biểu diễn cùng một giá trị; nhân hoặc chia cả tử và mẫu cho cùng một số khác 0 tạo một phân số bằng phân số ban đầu. Hỗn số dương gồm phần nguyên và một phân số bé hơn 1; có thể đổi hỗn số sang phân số lớn hơn 1 và ngược lại. Khi rút gọn, quy đồng, so sánh hay tính toán phân số, phải giữ đúng quan hệ tương đương giữa các biểu diễn. Với Bài 27, muốn tìm m/n của số b thì tính b × m/n; muốn tìm số ban đầu khi m/n của nó bằng a thì tính a ÷ m/n.",
         "worked_example": {
-          "problem": "a) Tìm 3/5 của 40. b) Tìm một số biết 2/3 của số đó bằng 18.",
-          "solution": "a) 40 × 3/5 = 24. b) Số cần tìm là 18 ÷ 2/3 = 18 × 3/2 = 27."
+          "problem": "a) Điền số thích hợp: 3/4 = ?/12. b) Đổi 2 1/3 thành phân số và đổi 11/4 thành hỗn số. c) Tìm 3/5 của 40. d) Tìm một số biết 2/3 của số đó bằng 18.",
+          "solution": "a) 3/4 = 9/12 vì nhân cả tử và mẫu với 3. b) 2 1/3 = 7/3; 11/4 = 2 3/4. c) 40 × 3/5 = 24. d) Số cần tìm là 18 ÷ 2/3 = 27."
         },
-        "misconception": "Không dùng cùng một phép tính cho hai dạng bài. Tìm một phân số của một số thì nhân với phân số; tìm số ban đầu khi biết giá trị một phân số của nó thì chia cho phân số đã biết.",
-        "summary": "Nhận dạng bài toán trước: tính giá trị một phân số của số đã cho, hay tìm ngược số ban đầu; sau đó chọn phép nhân hoặc phép chia tương ứng."
+        "misconception": "Không được chỉ nhân hoặc chia tử mà giữ nguyên mẫu khi tạo phân số bằng nhau. Khi đổi hỗn số a b/c sang phân số, tử mới là a×c+b. Với Bài 27, không dùng cùng một phép tính cho hai dạng: tìm một phân số của số đã biết thì nhân; tìm số ban đầu khi biết một phân số của nó thì chia cho phân số.",
+        "summary": "Nhận ra các biểu diễn tương đương của cùng một số, rồi chọn đúng thao tác: rút gọn/quy đồng/so sánh, đổi phân số–hỗn số, hoặc nhân/chia theo đúng dạng bài toán phân số."
       },
       "lesson_local_problem_types": [
         {
@@ -244,6 +247,24 @@
           "role": "PROBLEM_TYPE",
           "grade": 6,
           "lesson": "Bài 27"
+        }
+      ],
+      "lesson_local_concepts": [
+        {
+          "id": "phan-so-bang-nhau",
+          "label": "Phân số bằng nhau",
+          "family_id": "NUM-FRACTION-FORM",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 23-24"
+        },
+        {
+          "id": "hon-so-duong",
+          "label": "Hỗn số dương",
+          "family_id": "NUM-FRACTION-FORM",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 23-24"
         }
       ]
     },
