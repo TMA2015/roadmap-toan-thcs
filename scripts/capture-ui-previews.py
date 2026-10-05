@@ -38,6 +38,9 @@ with sync_playwright() as p:
     guide.scroll_into_view_if_needed()
     check(guide.locator("[data-home-guide-open]").count() == 4, "homepage exposes four learning-guide cards")
     check(guide.evaluate("(el) => el.scrollWidth <= el.clientWidth + 2"), "desktop learning-guide has no horizontal overflow")
+    check(guide.locator(".home-guide-visual").evaluate_all(
+          "(nodes) => nodes.length === 4 && nodes.every(el => Math.abs(el.getBoundingClientRect().width / el.getBoundingClientRect().height - 4/3) < 0.03)"),
+          "desktop learning-guide previews share one 4:3 frame")
     check(guide.locator("img").evaluate_all("(nodes) => nodes.length === 4 && nodes.every(img => img.complete && img.naturalWidth >= 500)"),
           "all four approved infographic assets load on desktop")
     shot(page, "home-learning-guide-desktop.png")
@@ -694,6 +697,9 @@ $$
     first_phone.wait_for_timeout(120)
     check(phone_guide.locator("[data-home-guide-open]").count() == 4, "phone exposes four learning-guide cards")
     check(phone_guide.evaluate("(el) => el.scrollWidth <= el.clientWidth + 2"), "phone learning-guide has no horizontal overflow")
+    check(phone_guide.locator(".home-guide-visual").evaluate_all(
+          "(nodes) => nodes.length === 4 && nodes.every(el => Math.abs(el.getBoundingClientRect().width / el.getBoundingClientRect().height - 4/3) < 0.03)"),
+          "phone learning-guide previews share one 4:3 frame")
     shot(first_phone, "home-learning-guide-phone.png")
     phone_guide.locator("[data-home-guide-open]").nth(1).click()
     phone_guide_dialog = first_phone.locator("[data-home-guide-dialog]")
