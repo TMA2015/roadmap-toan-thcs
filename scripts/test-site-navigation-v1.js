@@ -13,6 +13,12 @@ ok(home.includes("Hai đường đi · Một hệ kiến thức")&&home.includes
 ok(slider.includes("data-home-slider-prev")&&slider.includes("touchstart")&&slider.includes("ArrowRight"),"manual slider arrows, swipe and keyboard support");
 ok(home.includes('id="hieu-cach-hoc"'),"learning-guide section is present below homepage orientation");
 ok((home.match(/data-home-guide-open/g)||[]).length===4,"four approved learning-guide infographics");
+ok((home.match(/home-guide-visual-landscape/g)||[]).length===4&&!home.includes("home-guide-visual-portrait"),"all four learning-guide previews use the same landscape frame");
+ok(home.includes("<strong>25</strong><span>chuyên đề xuyên lớp</span>")&&
+   home.includes("<strong>2</strong><span>lộ trình học</span>")&&
+   home.includes("<strong>6–9</strong><span>học theo KNTT</span>")&&
+   home.includes("<strong>3</strong><span>không gian học</span>"),"canonical homepage stats");
+ok(home.includes("Bốn nhóm nội dung, một bức tranh thống nhất")&&!home.includes("Bốn mạch kiến thức"),"presentation groups do not masquerade as canonical knowledge streams");
 const guideAssets=[
   "docs/assets/images/learning-guide/01-tree-math-roadmap.webp",
   "docs/assets/images/learning-guide/02-kite-skill-example.webp",
@@ -21,7 +27,7 @@ const guideAssets=[
 ];
 guideAssets.forEach(p=>ok(fs.existsSync(path.join(r,p))&&fs.statSync(path.join(r,p)).size>10000,`learning-guide asset present: ${p}`));
 ok(slider.includes("setupGuideGallery")&&slider.includes("data-home-guide-dialog")&&slider.includes('event.key === "Escape"'),"learning-guide modal open/close keyboard behavior");
-ok(css.includes(".home-guide-grid")&&css.includes(".home-guide-dialog-panel"),"learning-guide gallery styles");
+ok(css.includes(".home-guide-grid")&&css.includes(".home-guide-dialog-panel")&&css.includes("aspect-ratio:4/3"),"learning-guide gallery styles");
 cp.execFileSync(process.execPath,["--check",path.join(r,"docs/assets/javascripts/home-orientation-slider-v1.js")],{stdio:"pipe"});
 ok((library.match(/class="library-cluster"/g)||[]).length===4,"four library clusters");
 ok((library.match(/class="library-topic-tile"/g)||[]).length===25,"all 25 topics kept");
