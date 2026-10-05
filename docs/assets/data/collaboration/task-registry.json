@@ -1,7 +1,7 @@
 {
-  "version": "1.0.218",
+  "version": "1.0.219",
   "schema": "roadmap-collaboration-task-registry-v1",
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "statuses": [
     "OPEN",
     "GEMINI-DRAFT",
@@ -1463,6 +1463,33 @@
         "merge_sha": "87f394c42143d20fa13be8a33581351895191812",
         "deploy_run": 37253645516,
         "deploy_conclusion": "SUCCESS"
+      }
+    },
+    {
+      "id": "MATH-HOME-ORIENTATION-SLIDER-V1-001",
+      "title": "Homepage learner orientation slider + compact entry points v1",
+      "routing": "UX+LEARNER_ORIENTATION+LOW_RISK",
+      "status": "DONE",
+      "context_version": "1.0.219",
+      "review_verdict": "DONE_OWNER_APPROVED_CI_PASS_PR334_MERGED_DEPLOY_VERIFIED",
+      "review_notes": "Owner approved the homepage information-architecture change: replace four large start cards with a manual four-frame orientation slider and four compact entry points. Slider frames explain Tree Math vertical/horizontal relationships, two canonical learning paths, Core→Practice→independent self-check roles, and written-work skill integration. Exact head 74b5884a94eeb642500fd48a310883df4216c5ad passed Roadmap PR Quality run 37317335950, G Learning branding QA run 37317335847, and Skill assessment pilot QA run 37317335843. Browser interaction QA passed with 109 previews and no reported horizontal overflow. PR #334 squash-merged to main as 9c73104f11e146c9e759d48a1764b6d7b2eec847. GitHub Pages deployment was verified directly on gh-pages: built index.html contains the new orientation section and deployed slider JS/CSS include swipe, keyboard, and compact-entry styles. No academic-content, Practice, Written Library, taxonomy, learner-history, Mastery or Readiness semantic change.",
+      "artifacts": [
+        "docs/index.md",
+        "docs/assets/stylesheets/site-design-system.css",
+        "docs/assets/javascripts/home-orientation-slider-v1.js",
+        "scripts/test-site-navigation-v1.js",
+        "mkdocs.yml"
+      ],
+      "release": {
+        "pr": 334,
+        "exact_head": "74b5884a94eeb642500fd48a310883df4216c5ad",
+        "qa_run": 37317335950,
+        "qa_conclusion": "SUCCESS",
+        "branding_qa_run": 37317335847,
+        "skill_assessment_qa_run": 37317335843,
+        "merge_sha": "9c73104f11e146c9e759d48a1764b6d7b2eec847",
+        "deploy_conclusion": "SUCCESS",
+        "deploy_evidence": "gh-pages built index + home-orientation-slider-v1.js + site-design-system.css verified"
       }
     }
   ]
