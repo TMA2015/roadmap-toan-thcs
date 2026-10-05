@@ -1,5 +1,5 @@
 {
-  "version": "1.0.219",
+  "version": "1.0.220",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-05",
   "statuses": [
@@ -1490,6 +1490,36 @@
         "merge_sha": "9c73104f11e146c9e759d48a1764b6d7b2eec847",
         "deploy_conclusion": "SUCCESS",
         "deploy_evidence": "gh-pages built index + home-orientation-slider-v1.js + site-design-system.css verified"
+      }
+    },
+    {
+      "id": "MATH-HOME-LEARNING-GUIDE-INFOGRAPHICS-V1-001",
+      "title": "Homepage four-part learning guide infographic gallery v1",
+      "routing": "UX+LEARNER_ORIENTATION+LOW_RISK",
+      "status": "DONE",
+      "context_version": "1.0.220",
+      "review_verdict": "DONE_OWNER_APPROVED_CI_PASS_PR336_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Owner-approved four-part learner guide integrated directly below the homepage orientation slider and compact entry points, before the existing Phương pháp học section. Sequence: (1) Cây Toán học; (2) đời sống — làm diều giấy; (3) hướng dẫn chọn đường học; (4) ví dụ Hỗn số và Phân số lớp 6. Images are local WebP assets with a responsive gallery and accessible lightbox. During final visual QA, an intermediate mobile screenshot showed deferred thumbnail paint; loading/decode behavior was corrected before release and exact final head 246b0e1cecac452a129802b4306709119995259b passed Roadmap PR Quality run 37331382188, including strict MkDocs, browser interaction QA, desktop/phone image-load assertions, no horizontal overflow, and lightbox checks. PR #336 squash-merged as cb2027bebb9973972efed616d5431d08bd4420ad. Deploy MkDocs run 37332567541 SUCCESS. gh-pages verification confirms id=hieu-cach-hoc, four gallery cards, all four image assets, gallery JS and CSS are deployed. No academic-content, Practice, Written Library, taxonomy, learner-history, Mastery or Readiness semantic change.",
+      "artifacts": [
+        "docs/index.md",
+        "docs/assets/images/learning-guide/01-tree-math-roadmap.webp",
+        "docs/assets/images/learning-guide/02-kite-skill-example.webp",
+        "docs/assets/images/learning-guide/03-how-to-learn-system.webp",
+        "docs/assets/images/learning-guide/04-fraction-lesson-connection.webp",
+        "docs/assets/javascripts/home-orientation-slider-v1.js",
+        "docs/assets/stylesheets/site-design-system.css",
+        "scripts/test-site-navigation-v1.js",
+        "scripts/capture-ui-previews.py"
+      ],
+      "release": {
+        "pr": 336,
+        "exact_head": "246b0e1cecac452a129802b4306709119995259b",
+        "qa_run": 37331382188,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "cb2027bebb9973972efed616d5431d08bd4420ad",
+        "deploy_run": 37332567541,
+        "deploy_conclusion": "SUCCESS",
+        "deploy_evidence": "gh-pages index contains #hieu-cach-hoc with four cards; deployed learning-guide WebPs plus gallery JS/CSS verified"
       }
     }
   ]
