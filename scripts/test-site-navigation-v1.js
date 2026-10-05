@@ -3,12 +3,25 @@
 const fs=require("fs"),path=require("path"),cp=require("child_process"),r=path.resolve(__dirname,"..");
 const read=p=>fs.readFileSync(path.join(r,p),"utf8");
 const home=read("docs/index.md"),library=read("docs/kien-thuc/index.md"),css=read("docs/assets/stylesheets/site-design-system.css"),nav=read("docs/assets/javascripts/sticky-nav-v1.js"),slider=read("docs/assets/javascripts/home-orientation-slider-v1.js"),yaml=read("mkdocs.yml");
-const ok=(v,m)=>{if(!v)throw Error(m)};
+const ok=(v,m)=>{if(!v)throw Error(m)}; 
+// The learning-guide gallery is homepage-only and must not alter learner evidence or route semantics.
+// Mobile gallery image loading is browser-gated in capture-ui-previews.py.
 ok((home.match(/<article class="home-slide [^"]+" data-home-slide/g)||[]).length===4,"four homepage orientation slides");
 ok((home.match(/class="home-quick-path /g)||[]).length===4,"four compact homepage entry points");
 ok(!home.includes("home-reveal-card"),"legacy large collapsible home cards removed");
 ok(home.includes("Hai đường đi · Một hệ kiến thức")&&home.includes("Core → Luyện tập → Tự kiểm tra"),"learner-facing orientation copy");
 ok(slider.includes("data-home-slider-prev")&&slider.includes("touchstart")&&slider.includes("ArrowRight"),"manual slider arrows, swipe and keyboard support");
+ok(home.includes('id="hieu-cach-hoc"'),"learning-guide section is present below homepage orientation");
+ok((home.match(/data-home-guide-open/g)||[]).length===4,"four approved learning-guide infographics");
+const guideAssets=[
+  "docs/assets/images/learning-guide/01-tree-math-roadmap.webp",
+  "docs/assets/images/learning-guide/02-kite-skill-example.webp",
+  "docs/assets/images/learning-guide/03-how-to-learn-system.webp",
+  "docs/assets/images/learning-guide/04-fraction-lesson-connection.webp"
+];
+guideAssets.forEach(p=>ok(fs.existsSync(path.join(r,p))&&fs.statSync(path.join(r,p)).size>10000,`learning-guide asset present: ${p}`));
+ok(slider.includes("setupGuideGallery")&&slider.includes("data-home-guide-dialog")&&slider.includes('event.key === "Escape"'),"learning-guide modal open/close keyboard behavior");
+ok(css.includes(".home-guide-grid")&&css.includes(".home-guide-dialog-panel"),"learning-guide gallery styles");
 cp.execFileSync(process.execPath,["--check",path.join(r,"docs/assets/javascripts/home-orientation-slider-v1.js")],{stdio:"pipe"});
 ok((library.match(/class="library-cluster"/g)||[]).length===4,"four library clusters");
 ok((library.match(/class="library-topic-tile"/g)||[]).length===25,"all 25 topics kept");

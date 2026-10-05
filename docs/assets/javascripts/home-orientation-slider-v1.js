@@ -65,7 +65,56 @@
     show(index);
   };
 
-  const init = () => document.querySelectorAll("[data-home-slider]").forEach(setup);
+  const setupGuideGallery = () => {
+    const dialog = document.querySelector("[data-home-guide-dialog]");
+    if (!dialog || dialog.dataset.guideReady === "1") return;
+    dialog.dataset.guideReady = "1";
+    const image = dialog.querySelector("[data-home-guide-dialog-image]");
+    const title = dialog.querySelector("[data-home-guide-dialog-title]");
+    const copy = dialog.querySelector("[data-home-guide-dialog-copy]");
+    const panel = dialog.querySelector(".home-guide-dialog-panel");
+    let returnFocus = null;
+
+    const close = () => {
+      if (dialog.hidden) return;
+      dialog.hidden = true;
+      document.documentElement.classList.remove("home-guide-modal-open");
+      image?.removeAttribute("src");
+      if (returnFocus && typeof returnFocus.focus === "function") returnFocus.focus();
+      returnFocus = null;
+    };
+
+    const open = (trigger) => {
+      returnFocus = trigger;
+      if (image) {
+        image.src = trigger.dataset.guideSrc || "";
+        image.alt = trigger.querySelector("img")?.alt || "";
+      }
+      if (title) title.textContent = trigger.dataset.guideTitle || "";
+      if (copy) copy.textContent = trigger.dataset.guideCopy || "";
+      dialog.hidden = false;
+      document.documentElement.classList.add("home-guide-modal-open");
+      requestAnimationFrame(() => panel?.focus());
+    };
+
+    document.querySelectorAll("[data-home-guide-open]").forEach((trigger) => {
+      trigger.addEventListener("click", () => open(trigger));
+    });
+    dialog.querySelectorAll("[data-home-guide-close]").forEach((button) => {
+      button.addEventListener("click", close);
+    });
+    dialog.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        close();
+      }
+    });
+  };
+
+  const init = () => {
+    document.querySelectorAll("[data-home-slider]").forEach(setup);
+    setupGuideGallery();
+  };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
   if (typeof document$ !== "undefined") document$.subscribe(init);

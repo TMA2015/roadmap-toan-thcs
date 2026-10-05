@@ -34,6 +34,23 @@ with sync_playwright() as p:
     page.locator('[data-home-dialog] [data-home-select="standard"]').click()
     check(page.locator('[data-home-mode="standard"]').is_visible(), "standard orbit must be visible")
     shot(page, "home-standard-desktop.png")
+    guide = page.locator("#hieu-cach-hoc")
+    guide.scroll_into_view_if_needed()
+    check(guide.locator("[data-home-guide-open]").count() == 4, "homepage exposes four learning-guide cards")
+    check(guide.evaluate("(el) => el.scrollWidth <= el.clientWidth + 2"), "desktop learning-guide has no horizontal overflow")
+    check(guide.locator("img").evaluate_all("(nodes) => nodes.length === 4 && nodes.every(img => img.complete && img.naturalWidth >= 500)"),
+          "all four approved infographic assets load on desktop")
+    shot(page, "home-learning-guide-desktop.png")
+    guide.locator("[data-home-guide-open]").first.click()
+    guide_dialog = page.locator("[data-home-guide-dialog]")
+    check(guide_dialog.is_visible(), "desktop infographic lightbox opens")
+    check(guide_dialog.locator("[data-home-guide-dialog-image]").evaluate(
+          "(img) => img.complete && img.naturalWidth >= 500"), "desktop lightbox loads full infographic")
+    check(guide_dialog.locator(".home-guide-dialog-panel").evaluate(
+          "(el) => el.scrollWidth <= el.clientWidth + 2"), "desktop infographic lightbox has no horizontal overflow")
+    shot(page, "home-learning-guide-modal-desktop.png")
+    guide_dialog.locator(".home-guide-dialog-close").click()
+    check(not guide_dialog.is_visible(), "desktop infographic lightbox closes")
     written_page = desktop.new_page()
     written_page.goto(BASE + "kien-thuc/02-so-va-phep-tinh/tu-kiem-tra-tu-luan/", wait_until="networkidle")
     answer_section = written_page.locator(".written-self-check-solution")
@@ -665,6 +682,27 @@ $$
     first_phone.locator('[data-home-dialog] [data-home-select="playful"]').click()
     check(first_phone.locator('[data-home-mode="playful"]').is_visible(), "phone playful selected")
     shot(first_phone, "home-playful-phone.png")
+    phone_guide = first_phone.locator("#hieu-cach-hoc")
+    phone_guide.scroll_into_view_if_needed()
+    first_phone.wait_for_function("""() => [...document.querySelectorAll('#hieu-cach-hoc img')].length === 4 &&
+        [...document.querySelectorAll('#hieu-cach-hoc img')].every(img => img.complete && img.naturalWidth >= 500)""")
+    check(phone_guide.locator("img").evaluate_all(
+          "(nodes) => nodes.length === 4 && nodes.every(img => img.complete && img.naturalWidth >= 500)"),
+          "all four approved infographic assets load on phone")
+    first_phone.locator("#hieu-cach-hoc img").evaluate_all(
+          "(imgs) => Promise.all(imgs.map(img => img.decode ? img.decode() : Promise.resolve()))")
+    first_phone.wait_for_timeout(120)
+    check(phone_guide.locator("[data-home-guide-open]").count() == 4, "phone exposes four learning-guide cards")
+    check(phone_guide.evaluate("(el) => el.scrollWidth <= el.clientWidth + 2"), "phone learning-guide has no horizontal overflow")
+    shot(first_phone, "home-learning-guide-phone.png")
+    phone_guide.locator("[data-home-guide-open]").nth(1).click()
+    phone_guide_dialog = first_phone.locator("[data-home-guide-dialog]")
+    check(phone_guide_dialog.is_visible(), "phone infographic lightbox opens")
+    check(phone_guide_dialog.locator(".home-guide-dialog-panel").evaluate(
+          "(el) => el.scrollWidth <= el.clientWidth + 2"), "phone infographic lightbox fits viewport")
+    shot(first_phone, "home-learning-guide-modal-phone.png")
+    first_phone.keyboard.press("Escape")
+    check(not phone_guide_dialog.is_visible(), "phone infographic lightbox closes with Escape")
     grade_phone = phone.new_page()
     grade_phone.goto(BASE + "hoc-theo-lop/?lop=8", wait_until="networkidle")
     check(grade_phone.locator('[data-grade-panel="8"]').is_visible(), "phone grade 8 direct route")

@@ -22,7 +22,7 @@ hide:
         <strong>Giao diện chuẩn</strong><small>Hiện đại, gọn gàng, tập trung vào nội dung.</small><span class="home-style-cta">Dùng giao diện này →</span>
       </button>
       <button type="button" data-home-select="playful" class="home-style-card home-style-card-playful">
-        <span class="home-style-preview home-style-preview-playful" aria-hidden="true"><img src="assets/images/study-scene-sleep-final.webp" width="320" height="170" alt="" loading="lazy"></span>
+        <span class="home-style-preview home-style-preview-playful" aria-hidden="true"><img src="assets/images/study-scene-sleep-final.webp" width="320" height="170" alt=""></span>
         <strong>Giao diện vui nhộn</strong><small>Góc học tập rực rỡ cùng cô bé ngủ gật đáng yêu.</small><span class="home-style-cta">Dùng giao diện này →</span>
       </button>
     </div>
@@ -55,7 +55,7 @@ hide:
     <div class="study-scene-heading"><span>📖 GÓC HỌC TẬP</span><span class="study-scene-tag">Một chút phép màu ✦</span></div>
     <button type="button" class="study-wake-button" data-study-wake aria-label="Đánh thức cô bé đang ngủ gật để bắt đầu học">
       <span class="study-art-stage">
-        <img class="study-art-image" src="assets/images/study-scene-sleep-final.webp" data-awake-src="assets/images/study-scene-awake-final.webp" width="520" height="276" alt="Cô bé tóc dài đeo kính đang ngáp ngủ bên quyển vở" loading="eager" decoding="async">
+        <img class="study-art-image" src="assets/images/study-scene-sleep-final.webp" data-awake-src="assets/images/study-scene-awake-final.webp" width="520" height="276" alt="Cô bé tóc dài đeo kính đang ngáp ngủ bên quyển vở" loading="eager">
       </span>
       <span class="study-wake-caption"><span class="study-wake-caption-sleep">Suỵt… bạn ấy ngủ gật rồi! <strong>Chạm để đánh thức ✨</strong></span><span class="study-wake-caption-awake">Bạn ấy tỉnh rồi! Cùng bắt đầu học nào ✨</span></span>
     </button>
@@ -84,7 +84,7 @@ hide:
           <span class="home-slide-kicker">01 · NHÌN TOÀN BỘ BẢN ĐỒ</span>
           <h3>Cây Toán học</h3>
           <p><strong>Đi ngang</strong> để học bài hiện tại. <strong>Đi dọc</strong> để thấy kiến thức nền và con đường phát triển qua nhiều lớp.</p>
-          <a href="roadmap/">Khám phá bản đồ học tập <span aria-hidden="true">→</span></a>
+          <a href="#hieu-cach-hoc">Xem Cây Toán học đầy đủ <span aria-hidden="true">↓</span></a>
         </div>
         <div class="home-tree-mini" role="img" aria-label="Mô hình cây: thân dọc xuyên lớp, các cành ngang theo lớp và vùng mây bài tự luận">
           <span class="home-tree-root">KIẾN THỨC NỀN</span>
@@ -127,7 +127,7 @@ hide:
           <span class="home-slide-kicker">04 · BÀI TỰ LUẬN KẾT NỐI KỸ NĂNG</span>
           <h3>Nhiều kỹ năng cùng làm việc</h3>
           <p>Một bài tự luận có thể cần kỹ năng đang học trên cành ngang và kiến thức nền từ những tầng trước. Nếu còn yếu, em có thể quay lại củng cố.</p>
-          <a href="huong-dan/lo-trinh-tu-hoc/">Xem hướng dẫn tự học <span aria-hidden="true">→</span></a>
+          <a href="#hieu-cach-hoc">Xem bộ hướng dẫn đầy đủ <span aria-hidden="true">↓</span></a>
         </div>
         <div class="home-written-mini" role="img" aria-label="Kỹ năng hiện tại và kiến thức nền cùng đi vào một bài tự luận">
           <span class="home-written-foundation">Kiến thức nền</span>
@@ -158,6 +158,77 @@ hide:
     <a class="home-quick-path home-quick-exam" href="kien-thuc/25-tong-hop-on-thi-10/"><span aria-hidden="true">◎</span><span><strong>Ôn thi vào 10</strong><small>Vận dụng & tổng hợp</small></span><i aria-hidden="true">→</i></a>
   </nav>
 </section>
+
+<section class="home-section home-guide-section" id="hieu-cach-hoc" aria-labelledby="home-guide-title">
+  <div class="home-section-intro">
+    <div>
+      <span class="home-section-kicker">HIỂU CÁCH HỌC</span>
+      <h2 id="home-guide-title">Bốn hình · Một bản đồ học tập</h2>
+      <p>Đi từ bức tranh tổng thể đến một bài Toán thật. Em không cần nhớ tất cả — chỉ cần biết mình đang ở đâu, cần củng cố gì và nên đi tiếp theo hướng nào.</p>
+    </div>
+  </div>
+
+  <div class="home-guide-grid">
+    <button class="home-guide-card" type="button" data-home-guide-open
+      data-guide-src="assets/images/learning-guide/01-tree-math-roadmap.webp"
+      data-guide-title="Nhìn toàn bộ bản đồ"
+      data-guide-copy="Đi ngang để học theo lớp; đi dọc để thấy kiến thức nền và con đường phát triển. Vùng mây cho thấy bài tự luận có thể huy động nhiều kỹ năng cùng lúc.">
+      <span class="home-guide-visual home-guide-visual-landscape">
+        <img src="assets/images/learning-guide/01-tree-math-roadmap.webp" width="800" height="600" alt="Roadmap Toán THCS dạng cây với trục dọc, các nhánh ngang theo lớp và vùng mây bài tự luận">
+      </span>
+      <span class="home-guide-card-copy"><small>01 · NHÌN TOÀN BỘ BẢN ĐỒ</small><strong>Cây Toán học</strong><span>Trục dọc · Trục ngang · Core Cards · Bài tự luận</span></span>
+      <span class="home-guide-open-label">Chạm để xem ảnh lớn ↗</span>
+    </button>
+
+    <button class="home-guide-card" type="button" data-home-guide-open
+      data-guide-src="assets/images/learning-guide/02-kite-skill-example.webp"
+      data-guide-title="Hiểu bằng ví dụ đời sống"
+      data-guide-copy="Làm một chiếc diều giấy cần cả kỹ năng nền như đo lường và kỹ năng hiện tại như cắt dán. Nếu một kỹ năng còn yếu, em có thể quay lại củng cố.">
+      <span class="home-guide-visual home-guide-visual-landscape">
+        <img src="assets/images/learning-guide/02-kite-skill-example.webp" width="800" height="600" alt="Minh họa làm diều giấy để giải thích kỹ năng nền, kỹ năng hiện tại và thử thách tổng hợp">
+      </span>
+      <span class="home-guide-card-copy"><small>02 · HIỂU BẰNG VÍ DỤ ĐỜI SỐNG</small><strong>Làm một chiếc diều giấy</strong><span>Kỹ năng nền + kỹ năng hiện tại → thử thách tổng hợp</span></span>
+      <span class="home-guide-open-label">Chạm để xem ảnh lớn ↗</span>
+    </button>
+
+    <button class="home-guide-card" type="button" data-home-guide-open
+      data-guide-src="assets/images/learning-guide/03-how-to-learn-system.webp"
+      data-guide-title="Biết cách chọn đường học"
+      data-guide-copy="Khi nào học theo lớp, khi nào đi theo chuyên đề, và Core – Luyện tập – Bài tự luận giúp em làm gì? Hình này là hướng dẫn sử dụng hệ thống.">
+      <span class="home-guide-visual home-guide-visual-portrait">
+        <img src="assets/images/learning-guide/03-how-to-learn-system.webp" width="520" height="735" alt="Infographic hướng dẫn học Toán theo trục ngang, trục dọc, Core, Luyện tập và Bài tự luận">
+      </span>
+      <span class="home-guide-card-copy"><small>03 · BIẾT CÁCH CHỌN ĐƯỜNG HỌC</small><strong>Học Toán trong hệ thống này như thế nào?</strong><span>Hiểu · Luyện · Kết nối · Tổng hợp</span></span>
+      <span class="home-guide-open-label">Chạm để xem ảnh lớn ↗</span>
+    </button>
+
+    <button class="home-guide-card" type="button" data-home-guide-open
+      data-guide-src="assets/images/learning-guide/04-fraction-lesson-connection.webp"
+      data-guide-title="Xem một bài Toán thật"
+      data-guide-copy="Ví dụ Hỗn số và Phân số lớp 6 cho thấy một kiến thức đi từ Core sang Luyện tập rồi kết nối nhiều kỹ năng trong bài tự luận như thế nào.">
+      <span class="home-guide-visual home-guide-visual-portrait">
+        <img src="assets/images/learning-guide/04-fraction-lesson-connection.webp" width="520" height="735" alt="Infographic ví dụ hỗn số và phân số lớp 6 từ Core đến Luyện tập và Bài tự luận">
+      </span>
+      <span class="home-guide-card-copy"><small>04 · XEM MỘT BÀI TOÁN THẬT</small><strong>Hỗn số và phân số · Lớp 6</strong><span>Từ một ý → nhiều kỹ năng cùng làm việc</span></span>
+      <span class="home-guide-open-label">Chạm để xem ảnh lớn ↗</span>
+    </button>
+  </div>
+
+  <p class="home-guide-note"><strong>Em không cần thuộc cả bản đồ.</strong> Hãy dùng nó như biển chỉ đường: chưa hiểu → về Core; chưa chắc → Luyện tập; hổng gốc → quay xuống tầng kiến thức trước; muốn luyện sâu → Bài tự luận.</p>
+</section>
+
+<div class="home-guide-dialog" data-home-guide-dialog hidden>
+  <div class="home-guide-backdrop" data-home-guide-close></div>
+  <section class="home-guide-dialog-panel" role="dialog" aria-modal="true" aria-labelledby="home-guide-dialog-title" aria-describedby="home-guide-dialog-copy" tabindex="-1">
+    <button class="home-guide-dialog-close" type="button" data-home-guide-close aria-label="Đóng infographic">×</button>
+    <div class="home-guide-dialog-heading">
+      <span>HIỂU CÁCH HỌC</span>
+      <h2 id="home-guide-dialog-title" data-home-guide-dialog-title></h2>
+      <p id="home-guide-dialog-copy" data-home-guide-dialog-copy></p>
+    </div>
+    <div class="home-guide-dialog-image-wrap"><img data-home-guide-dialog-image alt=""></div>
+  </section>
+</div>
 
 <section class="home-section home-feature-panel" aria-labelledby="home-process">
   <div class="home-section-intro"><div><span class="home-section-kicker">PHƯƠNG PHÁP HỌC</span><h2 id="home-process">Mỗi chuyên đề là một hành trình nhỏ</h2><p>Không chỉ đọc bài rồi chuyển trang: mỗi bước đều có mục đích rõ ràng.</p></div><a class="home-text-link" href="huong-dan/nguyen-tac-hoc-moi-chuyen-de/">Xem hướng dẫn học <span aria-hidden="true">↗</span></a></div>
