@@ -10,10 +10,10 @@ const specs=[
     "02",
     "02-so-va-phep-tinh",
     "KNTT-Core",
-    "3b19c40b28920bda70825b4f2df3957048d6d742",
-    "66411b9865cf06a0f48116a81d7fb0c83c815247",
+    "b98a9818594d54a7de9063d5a17c015cde69ed38",
+    "82b7c25588d674649586edee0ef2e7b50507c37c",
     "Core theo chặng",
-    38
+    41
   ],
   [
     "21",
