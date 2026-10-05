@@ -1,5 +1,5 @@
 {
-  "version": "1.0.216",
+  "version": "1.0.217",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-04",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.216",
-      "review_verdict": "G6_BAI1_3_RELEASED_NEXT_BAI11_12",
-      "review_notes": "Bài 31 multi-topic audit reconciliation and Bài 1–3 direct/local repair are released. Next clear Grade-6 lesson-local/problem-type gap is Bài 11–12 (bai-toan-ucln-bcnn), followed by Bài 23–24. Practice/Written/Readiness remain conservatively scoped.",
+      "context_version": "1.0.217",
+      "review_verdict": "G6_BAI11_12_REPAIRED_NEXT_BAI23_24",
+      "review_notes": "Bài 1–3 direct/local repair is released. Bài 11–12 direct + UCLN/BCNN problem-type repair is source-confirmed and ready for technical QA. Next clear lesson-local gap after release is Bài 23–24 (phan-so-bang-nhau, hon-so-duong), then the remaining PARTIAL_SHARED_SKILL/PARTIAL_PLACEMENT rows should be re-ranked.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1439,6 +1439,22 @@
         "deploy_run": 37252652987,
         "deploy_conclusion": "SUCCESS"
       }
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI11_12-GCD-LCM-PROBLEMS-R1-001",
+      "title": "Grade 6 KNTT Bài 11–12 — UCLN/BCNN application problem-type evidence repair R1",
+      "routing": "CONTENT_REPAIR+LOW_RISK_SOURCE_CONFIRMED",
+      "status": "TECH-QA-PENDING",
+      "context_version": "1.0.217",
+      "review_verdict": "SOURCE_CONFIRMED_LOW_RISK_READY_FOR_TECH_QA",
+      "review_notes": "Grade-6 reconciliation already keeps bai-toan-ucln-bcnn as PROBLEM_TYPE under NUM-GCD-LCM. Candidate expands num02-g6-core-2 and adds NUM02MICRO_036–038 for maximum equal grouping, repeated cycles, and model selection. Deterministic oracles: 14 groups; 36 minutes; BCNN for earliest repeated simultaneous cycles. Items use LESSON_LOCAL_CORE_FORMATIVE, tags.skill=[], gates_core=false. Direct ucln/bcnn identities remain unchanged. No taxonomy/Practice/Written/Readiness/runtime/history semantic change. Under the owner-approved risk-based review policy, no new NotebookLM round is required. Dimension Audit now records Learn=VERIFIED_DIRECT_AND_LOCAL and Micro=VERIFIED_DIRECT_AND_LOCAL; Practice remains PARTIAL_TOPIC_EVIDENCE, Written=CANDIDATE_ONLY_NO_KNTT_PLACEMENT, Readiness=NOT_VERIFIED_STRUCTURED. Next gate: full Roadmap PR Quality.",
+      "artifacts": [
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "scripts/test-kntt-g6-bai11-12-gcd-lcm-problems-r1.js"
+      ]
     }
   ]
 }

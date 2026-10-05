@@ -14,7 +14,7 @@ const w23=json("docs/assets/data/curriculum/topic23-learning-workspace.json");
 
 ok(blob(JSON.stringify(b2.questions.slice(0,15)))==="675b1312713c3e040f6695fd20c68db3b49e656a","CĐ02 original 15 records changed");
 ok(blob(JSON.stringify(b23.questions.slice(0,15)))==="8be2c67391b4efe86fbe2f9612fb98588e6d3240","CĐ23 original 15 records changed");
-ok(b2.question_count===35&&b2.questions.length===35,"CĐ02 must have 35 items after Bài 30, Bài 1-3, Bài 4-5, Bài 8 and Bài 27 appends");
+ok(b2.question_count===38&&b2.questions.length===38,"CĐ02 must have 38 items after Bài 30, Bài 1-3, Bài 4-5, Bài 8, Bài 11-12 and Bài 27 appends");
 ok(b23.question_count===20&&b23.questions.length===20,"CĐ23 must have 20 items after pending Bài 42 lesson-local append");
 
 const expected=[
@@ -51,5 +51,5 @@ for(const w of [w2,w23]){
 const skillCoverage=(w,b)=>{const q=new Map(b.questions.map(x=>[x.id,x]));return w.cards.flatMap(c=>c.skills.filter(s=>!c.micro_practice.some(id=>q.get(id)?.tags?.skill?.[0]===s)).map(s=>c.id+":"+s));};
 ok(skillCoverage(w2,b2).length===0,"CĐ02 gap remains: "+skillCoverage(w2,b2).join(","));
 ok(skillCoverage(w23,b23).length===0,"CĐ23 gap remains: "+skillCoverage(w23,b23).join(","));
-ok(new Set(b2.questions.map(q=>q.id)).size===35&&new Set(b23.questions.map(q=>q.id)).size===20,"duplicate IDs");
-console.log("PASS: prior reviewed Core coverage items remain intact; original 30 micro records immutable; CĐ02 adds Bài 1-3, Bài 4-5, Bài 8 and Bài 27 lesson-local/problem-type evidence without changing canonical skill coverage.");
+ok(new Set(b2.questions.map(q=>q.id)).size===38&&new Set(b23.questions.map(q=>q.id)).size===20,"duplicate IDs");
+console.log("PASS: prior reviewed Core coverage items remain intact; original 30 micro records immutable; CĐ02 adds Bài 1-3, Bài 4-5, Bài 8, Bài 11-12 and Bài 27 lesson-local/problem-type evidence without changing canonical skill coverage.");
