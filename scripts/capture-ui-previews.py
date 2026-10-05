@@ -689,6 +689,9 @@ $$
     check(phone_guide.locator("img").evaluate_all(
           "(nodes) => nodes.length === 4 && nodes.every(img => img.complete && img.naturalWidth >= 500)"),
           "all four approved infographic assets load on phone")
+    first_phone.locator("#hieu-cach-hoc img").evaluate_all(
+          "(imgs) => Promise.all(imgs.map(img => img.decode ? img.decode() : Promise.resolve()))")
+    first_phone.wait_for_timeout(120)
     check(phone_guide.locator("[data-home-guide-open]").count() == 4, "phone exposes four learning-guide cards")
     check(phone_guide.evaluate("(el) => el.scrollWidth <= el.clientWidth + 2"), "phone learning-guide has no horizontal overflow")
     shot(first_phone, "home-learning-guide-phone.png")
