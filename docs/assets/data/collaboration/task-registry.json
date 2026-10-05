@@ -1,5 +1,5 @@
 {
-  "version": "1.0.220",
+  "version": "1.0.221",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-05",
   "statuses": [
@@ -1520,6 +1520,33 @@
         "deploy_run": 37332567541,
         "deploy_conclusion": "SUCCESS",
         "deploy_evidence": "gh-pages index contains #hieu-cach-hoc with four cards; deployed learning-guide WebPs plus gallery JS/CSS verified"
+      }
+    },
+    {
+      "id": "MATH-HOME-GUIDE-LANDSCAPE-REFRESH-V1-001",
+      "title": "Homepage learning-guide 4:3 harmonization + canonical stats refresh",
+      "routing": "UX+LEARNER_ORIENTATION+LOW_RISK",
+      "status": "DONE",
+      "context_version": "1.0.221",
+      "review_verdict": "DONE_OWNER_APPROVED_CI_PASS_PR338_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Owner supplied new landscape 4:3 editions for guide 03 (Học Toán trong hệ thống này như thế nào?) and guide 04 (Hỗn số và Phân số lớp 6). Guides 01–02 unchanged. All four homepage guide previews are now standardized to one 4:3 frame on desktop and mobile. Homepage summary labels were aligned with canonical architecture: 25 chuyên đề xuyên lớp; 2 lộ trình học; 6–9 học theo KNTT; 3 không gian học. The discovery section keeps four convenience presentation cards but was renamed from 'Bốn mạch kiến thức' to 'Bốn nhóm nội dung' so presentation grouping is not mistaken for canonical architecture. Exact head a392aa44e4e5e499a91366af64030dc03a775f50 passed Roadmap PR Quality run 37338129617, including strict MkDocs, browser interaction QA, 4:3 ratio assertions on desktop/phone, and no horizontal overflow. PR #338 squash-merged as a67f61c7b8ca0c8d140d5c6964dc4481702dd475. Deploy MkDocs run 37339287162 SUCCESS. gh-pages verification confirms all four landscape frames, updated guide 03/04 WebP hashes, canonical stats, and 'Bốn nhóm nội dung' wording are live. No academic item, Practice, Written Library, taxonomy, learner-history, Mastery or Readiness semantic change.",
+      "artifacts": [
+        "docs/assets/images/learning-guide/03-how-to-learn-system.webp",
+        "docs/assets/images/learning-guide/04-fraction-lesson-connection.webp",
+        "docs/index.md",
+        "docs/assets/stylesheets/site-design-system.css",
+        "scripts/test-site-navigation-v1.js",
+        "scripts/capture-ui-previews.py"
+      ],
+      "release": {
+        "pr": 338,
+        "exact_head": "a392aa44e4e5e499a91366af64030dc03a775f50",
+        "qa_run": 37338129617,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "a67f61c7b8ca0c8d140d5c6964dc4481702dd475",
+        "deploy_run": 37339287162,
+        "deploy_conclusion": "SUCCESS",
+        "deploy_evidence": "gh-pages verified: four landscape guide previews, updated 03/04 assets, canonical stats and content-group wording"
       }
     }
   ]
