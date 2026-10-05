@@ -3,7 +3,7 @@
   "version": 1,
   "as_of": "2026-10-04",
   "grade": 6,
-  "status": "G6_PILOT_AUDIT_BAI11_12_REPAIRED_R1",
+  "status": "G6_PILOT_AUDIT_BAI23_24_REPAIRED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -13,7 +13,7 @@
     },
     "grade6_reconciliation": {
       "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
-      "blob_sha": "e72f48be0f5f8ed67b22537cd4395070dc70d389"
+      "blob_sha": "cd6d18afa067c8e584350804668aa26d96a4a483"
     },
     "taxonomy": {
       "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
@@ -29,11 +29,11 @@
         "placement": "EXACT",
         "workspace": {
           "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-          "sha": "3b19c40b28920bda70825b4f2df3957048d6d742"
+          "sha": "b98a9818594d54a7de9063d5a17c015cde69ed38"
         },
         "micro": {
           "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-          "sha": "66411b9865cf06a0f48116a81d7fb0c83c815247",
+          "sha": "82b7c25588d674649586edee0ef2e7b50507c37c",
           "grade6Skills": [
             "tap-hop-so",
             "thu-tu-phep-tinh",
@@ -61,7 +61,9 @@
             "tim-so-khi-biet-gia-tri-phan-so",
             "ghi-so-tu-nhien",
             "thu-tu-so-tu-nhien",
-            "bai-toan-ucln-bcnn"
+            "bai-toan-ucln-bcnn",
+            "phan-so-bang-nhau",
+            "hon-so-duong"
           ],
           "grade6LessonLocalItemIds": [
             "NUM02MICRO_024",
@@ -78,7 +80,10 @@
             "NUM02MICRO_035",
             "NUM02MICRO_036",
             "NUM02MICRO_037",
-            "NUM02MICRO_038"
+            "NUM02MICRO_038",
+            "NUM02MICRO_039",
+            "NUM02MICRO_040",
+            "NUM02MICRO_041"
           ]
         },
         "manifest": {
@@ -353,21 +358,21 @@
         "VERIFIED_SEMANTIC": 31
       },
       "LEARN_CONTENT": {
-        "PARTIAL_LOCAL_OR_FAMILY": 1,
+        "PARTIAL_LOCAL_OR_FAMILY": 0,
         "VERIFIED_DIRECT": 11,
         "PARTIAL_SHARED_SKILL": 7,
         "PARTIAL_PLACEMENT": 5,
         "PARTIAL_MISSING_DIRECT_SKILL": 0,
         "VERIFIED_LESSON_LOCAL": 4,
-        "VERIFIED_DIRECT_AND_LOCAL": 3
+        "VERIFIED_DIRECT_AND_LOCAL": 4
       },
       "MICRO_PRACTICE": {
-        "PARTIAL": 8,
+        "PARTIAL": 7,
         "FAMILY_LEVEL_ONLY": 0,
         "VERIFIED_DIRECT": 16,
         "NONE": 0,
         "VERIFIED_LESSON_LOCAL": 4,
-        "VERIFIED_DIRECT_AND_LOCAL": 3
+        "VERIFIED_DIRECT_AND_LOCAL": 4
       },
       "PRACTICE_BANK": {
         "PARTIAL_TOPIC_EVIDENCE": 4,
@@ -388,14 +393,14 @@
     "written_library_kntt_placement_count": 0,
     "priority_gap_rows": [
       {
-        "chapter": 6,
-        "lesson_ref": "Bài 23-24",
-        "summary": "Phân số bằng nhau, so sánh và hỗn số dương",
-        "learn": "PARTIAL_LOCAL_OR_FAMILY",
+        "chapter": 3,
+        "lesson_ref": "Bài 13-17",
+        "summary": "Số nguyên: cấu trúc bài học đang dùng shared canonical skill",
+        "learn": "PARTIAL_SHARED_SKILL",
         "micro": "PARTIAL",
-        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "practice": "TOPIC_SKILL_EVIDENCE",
         "readiness": "NOT_VERIFIED_STRUCTURED",
-        "priority_reason": "Next clear Grade-6 lesson-local gap: direct fraction evidence exists, while reviewed local/family refs phan-so-bang-nhau and hon-so-duong still need explicit Learn/Micro evidence."
+        "priority_reason": "All clear lesson-local/family gaps are now closed. Next step is to re-rank and reconcile the aggregated shared-skill rows Bài 13–17 before authoring more content."
       }
     ],
     "repaired_rows": [
@@ -496,6 +501,17 @@
         "practice": "PARTIAL_TOPIC_EVIDENCE",
         "readiness": "NOT_VERIFIED_STRUCTURED",
         "review_basis": "Reviewed semantic reconciliation + deterministic UCLN/BCNN application problem type"
+      },
+      {
+        "chapter": 6,
+        "lesson_ref": "Bài 23-24",
+        "summary": "Mở rộng phân số, phân số bằng nhau; so sánh phân số; hỗn số dương",
+        "repair_status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "review_basis": "Reviewed semantic reconciliation + deterministic equivalent-fraction/mixed-number representations"
       }
     ]
   },
@@ -2076,7 +2092,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_LOCAL_OR_FAMILY",
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
           "card_skill_evidence": [
             "rut-gon-phan-so",
             "quy-dong-so-sanh-phan-so",
@@ -2086,11 +2102,20 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
-          }
+            "sha": "b98a9818594d54a7de9063d5a17c015cde69ed38"
+          },
+          "direct_skill_hits": [
+            "rut-gon-phan-so",
+            "quy-dong-so-sanh-phan-so"
+          ],
+          "lesson_local_hits": [
+            "phan-so-bang-nhau",
+            "hon-so-duong"
+          ],
+          "note": "Bài 23–24 now explicitly teaches the direct fraction-form skills together with reviewed lesson-local equivalent-fraction and positive-mixed-number representations under NUM-FRACTION-FORM."
         },
         "MICRO_PRACTICE": {
-          "status": "PARTIAL",
+          "status": "VERIFIED_DIRECT_AND_LOCAL",
           "direct_skill_hits": [
             "rut-gon-phan-so",
             "quy-dong-so-sanh-phan-so"
@@ -2101,8 +2126,24 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
-          }
+            "sha": "82b7c25588d674649586edee0ef2e7b50507c37c"
+          },
+          "lesson_local_hits": [
+            "phan-so-bang-nhau",
+            "hon-so-duong"
+          ],
+          "direct_item_ids": [
+            "NUM02MICRO_010",
+            "NUM02MICRO_020"
+          ],
+          "lesson_local_item_ids": [
+            "NUM02MICRO_039",
+            "NUM02MICRO_040",
+            "NUM02MICRO_041"
+          ],
+          "lesson_local_evidence_role": "LESSON_LOCAL_CORE_FORMATIVE",
+          "lesson_local_gates_core": false,
+          "note": "Existing direct fraction-form Micro plus three deterministic lesson-local representation items cover the row's direct and local demands without new canonical skill writes."
         },
         "PRACTICE_BANK": {
           "status": "PARTIAL_TOPIC_EVIDENCE",
@@ -2129,6 +2170,16 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_SOURCE_CONFIRMED_R1",
+        "review_basis": "Existing NotebookLM-reviewed Grade-6 reconciliation + deterministic equivalent-fraction/mixed-number representation content under owner-approved risk-based review policy",
+        "learn": "VERIFIED_DIRECT_AND_LOCAL",
+        "micro": "VERIFIED_DIRECT_AND_LOCAL",
+        "practice": "PARTIAL_TOPIC_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "Learn + Micro direct/local gap repaired. Practice remains topic-level partial evidence; Written and Readiness remain open."
       }
     },
     {
