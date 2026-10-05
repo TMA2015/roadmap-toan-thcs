@@ -684,6 +684,11 @@ $$
     shot(first_phone, "home-playful-phone.png")
     phone_guide = first_phone.locator("#hieu-cach-hoc")
     phone_guide.scroll_into_view_if_needed()
+    first_phone.wait_for_function("""() => [...document.querySelectorAll('#hieu-cach-hoc img')].length === 4 &&
+        [...document.querySelectorAll('#hieu-cach-hoc img')].every(img => img.complete && img.naturalWidth >= 500)""")
+    check(phone_guide.locator("img").evaluate_all(
+          "(nodes) => nodes.length === 4 && nodes.every(img => img.complete && img.naturalWidth >= 500)"),
+          "all four approved infographic assets load on phone")
     check(phone_guide.locator("[data-home-guide-open]").count() == 4, "phone exposes four learning-guide cards")
     check(phone_guide.evaluate("(el) => el.scrollWidth <= el.clientWidth + 2"), "phone learning-guide has no horizontal overflow")
     shot(first_phone, "home-learning-guide-phone.png")
