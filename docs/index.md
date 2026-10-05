@@ -68,10 +68,10 @@ hide:
 </section>
 
 <div class="home-stat-strip" aria-label="Tổng quan nội dung">
-  <div><strong>25</strong><span>chuyên đề có nội dung</span></div>
-  <div><strong>4</strong><span>mạch kiến thức</span></div>
-  <div><strong>6–9</strong><span>lộ trình theo lớp</span></div>
-  <div><strong>3</strong><span>bước học – luyện – kiểm tra</span></div>
+  <div><strong>25</strong><span>chuyên đề xuyên lớp</span></div>
+  <div><strong>2</strong><span>lộ trình học</span></div>
+  <div><strong>6–9</strong><span>học theo KNTT</span></div>
+  <div><strong>3</strong><span>không gian học</span></div>
 </div>
 
 <section class="home-section home-start-section" aria-labelledby="home-paths">
@@ -195,8 +195,8 @@ hide:
       data-guide-src="assets/images/learning-guide/03-how-to-learn-system.webp"
       data-guide-title="Biết cách chọn đường học"
       data-guide-copy="Khi nào học theo lớp, khi nào đi theo chuyên đề, và Core – Luyện tập – Bài tự luận giúp em làm gì? Hình này là hướng dẫn sử dụng hệ thống.">
-      <span class="home-guide-visual home-guide-visual-portrait">
-        <img src="assets/images/learning-guide/03-how-to-learn-system.webp" width="520" height="735" alt="Infographic hướng dẫn học Toán theo trục ngang, trục dọc, Core, Luyện tập và Bài tự luận">
+      <span class="home-guide-visual home-guide-visual-landscape">
+        <img src="assets/images/learning-guide/03-how-to-learn-system.webp" width="800" height="600" alt="Infographic hướng dẫn học Toán theo trục ngang, trục dọc, Core, Luyện tập và Bài tự luận">
       </span>
       <span class="home-guide-card-copy"><small>03 · BIẾT CÁCH CHỌN ĐƯỜNG HỌC</small><strong>Học Toán trong hệ thống này như thế nào?</strong><span>Hiểu · Luyện · Kết nối · Tổng hợp</span></span>
       <span class="home-guide-open-label">Chạm để xem ảnh lớn ↗</span>
@@ -206,8 +206,8 @@ hide:
       data-guide-src="assets/images/learning-guide/04-fraction-lesson-connection.webp"
       data-guide-title="Xem một bài Toán thật"
       data-guide-copy="Ví dụ Hỗn số và Phân số lớp 6 cho thấy một kiến thức đi từ Core sang Luyện tập rồi kết nối nhiều kỹ năng trong bài tự luận như thế nào.">
-      <span class="home-guide-visual home-guide-visual-portrait">
-        <img src="assets/images/learning-guide/04-fraction-lesson-connection.webp" width="520" height="735" alt="Infographic ví dụ hỗn số và phân số lớp 6 từ Core đến Luyện tập và Bài tự luận">
+      <span class="home-guide-visual home-guide-visual-landscape">
+        <img src="assets/images/learning-guide/04-fraction-lesson-connection.webp" width="800" height="600" alt="Infographic ví dụ hỗn số và phân số lớp 6 từ Core đến Luyện tập và Bài tự luận">
       </span>
       <span class="home-guide-card-copy"><small>04 · XEM MỘT BÀI TOÁN THẬT</small><strong>Hỗn số và phân số · Lớp 6</strong><span>Từ một ý → nhiều kỹ năng cùng làm việc</span></span>
       <span class="home-guide-open-label">Chạm để xem ảnh lớn ↗</span>
@@ -240,7 +240,7 @@ hide:
 </section>
 
 <section class="home-section" aria-labelledby="home-subjects">
-  <div class="home-section-intro"><div><span class="home-section-kicker">KHÁM PHÁ NỘI DUNG</span><h2 id="home-subjects">Bốn mạch kiến thức, một bức tranh thống nhất</h2><p>Chọn mạch đang học hoặc mở toàn bộ danh mục để xem 25 chuyên đề.</p></div><a class="home-text-link" href="kien-thuc/">Toàn bộ chuyên đề <span aria-hidden="true">↗</span></a></div>
+  <div class="home-section-intro"><div><span class="home-section-kicker">KHÁM PHÁ NỘI DUNG</span><h2 id="home-subjects">Bốn nhóm nội dung, một bức tranh thống nhất</h2><p>Chọn nhóm nội dung đang cần hoặc mở toàn bộ danh mục để xem 25 chuyên đề.</p></div><a class="home-text-link" href="kien-thuc/">Toàn bộ chuyên đề <span aria-hidden="true">↗</span></a></div>
   <div class="home-subject-grid">
     <div class="home-subject-card"><span class="home-subject-mark" aria-hidden="true">x²</span><h3>Số & Đại số</h3><p>Từ số và phép tính đến hàm số, căn thức và phương trình.</p><a href="kien-thuc/04-bieu-thuc-dai-so/">Biểu thức đại số ↗</a><a href="kien-thuc/08-phuong-trinh-bat-phuong-trinh/">Phương trình ↗</a></div>
     <div class="home-subject-card"><span class="home-subject-mark" aria-hidden="true">△</span><h3>Hình học</h3><p>Góc, tam giác, tứ giác, đồng dạng và đường tròn.</p><a href="kien-thuc/14-tam-giac/">Tam giác ↗</a><a href="kien-thuc/19-duong-tron/">Đường tròn ↗</a></div>
