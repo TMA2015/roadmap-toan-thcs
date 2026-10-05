@@ -12,7 +12,7 @@ const a=json(path);
 assert.equal(a.schema,"kntt-dimension-coverage-audit-v1");
 assert.equal(a.version,1);
 assert.equal(a.grade,6);
-assert.equal(a.status,"G6_PILOT_AUDIT_BAI1_3_REPAIRED_R1");
+assert.equal(a.status,"G6_PILOT_AUDIT_BAI11_12_REPAIRED_R1");
 assert.equal(a.rows.length,31);
 
 for(const lock of [
@@ -36,10 +36,10 @@ const counts=a.summary.dimension_status_counts;
 assert.deepEqual(counts.SKILL_MAP,{VERIFIED_SEMANTIC:31});
 assert.equal(counts.LEARN_CONTENT.VERIFIED_DIRECT,11);
 assert.equal(counts.LEARN_CONTENT.VERIFIED_LESSON_LOCAL,4);
-assert.equal(counts.LEARN_CONTENT.VERIFIED_DIRECT_AND_LOCAL,2);
+assert.equal(counts.LEARN_CONTENT.VERIFIED_DIRECT_AND_LOCAL,3);
 assert.equal(counts.MICRO_PRACTICE.NONE,0);
 assert.equal(counts.MICRO_PRACTICE.VERIFIED_LESSON_LOCAL,4);
-assert.equal(counts.MICRO_PRACTICE.VERIFIED_DIRECT_AND_LOCAL,2);
+assert.equal(counts.MICRO_PRACTICE.VERIFIED_DIRECT_AND_LOCAL,3);
 assert.equal(counts.PRACTICE_BANK.NONE,0);
 assert.equal(counts.WRITTEN_LIBRARY.CANDIDATE_ONLY_NO_KNTT_PLACEMENT,5);
 assert.equal(counts.READINESS.AUTHORIZED_TOPIC_LEVEL,1);
@@ -84,6 +84,16 @@ assert.equal(byLesson["Bài 8"].repair_evidence.status,"REPAIRED_SOURCE_CONFIRME
 assert.equal(byLesson["Bài 8"].dimensions.PRACTICE_BANK.status,"FAMILY_LEVEL_TOPIC_EVIDENCE");
 assert.equal(byLesson["Bài 8"].dimensions.READINESS.status,"NOT_VERIFIED_STRUCTURED");
 
+assert.equal(byLesson["Bài 11-12"].dimensions.LEARN_CONTENT.status,"VERIFIED_DIRECT_AND_LOCAL");
+assert.equal(byLesson["Bài 11-12"].dimensions.MICRO_PRACTICE.status,"VERIFIED_DIRECT_AND_LOCAL");
+assert.deepEqual(byLesson["Bài 11-12"].dimensions.MICRO_PRACTICE.lesson_local_item_ids,["NUM02MICRO_036","NUM02MICRO_037","NUM02MICRO_038"]);
+assert.deepEqual(byLesson["Bài 11-12"].dimensions.MICRO_PRACTICE.lesson_local_hits,["bai-toan-ucln-bcnn"]);
+assert.equal(byLesson["Bài 11-12"].dimensions.MICRO_PRACTICE.lesson_local_gates_core,false);
+assert.equal(byLesson["Bài 11-12"].repair_evidence.status,"REPAIRED_SOURCE_CONFIRMED_R1");
+assert.equal(byLesson["Bài 11-12"].dimensions.PRACTICE_BANK.status,"PARTIAL_TOPIC_EVIDENCE");
+assert.equal(byLesson["Bài 11-12"].dimensions.WRITTEN_LIBRARY.status,"CANDIDATE_ONLY_NO_KNTT_PLACEMENT");
+assert.equal(byLesson["Bài 11-12"].dimensions.READINESS.status,"NOT_VERIFIED_STRUCTURED");
+
 assert.equal(byLesson["Bài 27"].dimensions.LEARN_CONTENT.status,"VERIFIED_LESSON_LOCAL");
 assert.equal(byLesson["Bài 27"].dimensions.MICRO_PRACTICE.status,"VERIFIED_LESSON_LOCAL");
 assert.deepEqual(byLesson["Bài 27"].dimensions.MICRO_PRACTICE.item_ids,["NUM02MICRO_030","NUM02MICRO_031","NUM02MICRO_032"]);
@@ -120,5 +130,5 @@ assert.equal(byLesson["Bài 38-41"].dimensions.READINESS.status,"AUTHORIZED_TOPI
 for(const [k,v] of Object.entries(a.protected_boundaries)) assert.equal(v,false,"protected boundary changed: "+k);
 
 console.log("PASS: Grade-6 dimension audit locks 31 KNTT rows against current semantic and learning evidence.");
-console.log("PASS: Grade-6 audit also reconciles Bài 31 multi-topic evidence and repairs Bài 1-3 direct/local Learn-Micro evidence within protected boundaries.");
+console.log("PASS: Grade-6 audit reconciles Bài 31 and repairs Bài 1-3 plus Bài 11-12 direct/local Learn-Micro evidence within protected boundaries.");
 console.log("PASS: Written Library has no verified KNTT lesson placement in v1; readiness evidence is conservatively scoped.");
