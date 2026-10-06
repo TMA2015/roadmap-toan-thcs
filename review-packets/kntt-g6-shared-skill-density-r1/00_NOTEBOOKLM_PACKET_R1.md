@@ -39,8 +39,8 @@ It does **not**:
 
 - Learning Workspace: `docs/assets/data/curriculum/topic02-learning-workspace.json` — blob `956087701533dd50c61f653f61e969392216e57f`
 - Micro bank: `docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json` — blob `b6ec952b786f897ef6f45301208dcd9d55bde98b`
-- Grade-6 semantic reconciliation: `docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json` — blob `2aeb046dab8655bbaa3e1af922239f841c796752`
-- Grade-6 dimension audit candidate: `docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json` — blob `d0fda0114eb04fb1f7946ac0f0c2f62c0bdabd29`
+- Grade-6 semantic reconciliation: `docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json` — blob `38aa6e86781ac63e1481aa0080c3fbc2d819885b`
+- Grade-6 dimension audit candidate: `docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json` — blob `0492cd80ee363a3ea48ee8a2c3a6cc3eb125bb44`
 - Topic02 Practice manifest baseline, unchanged: `docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json` — blob `4609bcd1c34a338cbd456eb4f3219ba7f89f943f`
 
 ## 4. Semantic boundary to verify first
