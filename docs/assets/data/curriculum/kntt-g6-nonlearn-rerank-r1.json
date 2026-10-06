@@ -1,0 +1,114 @@
+{
+  "packet_id": "MATH-KNTT-G6-NONLEARN-RERANK-R1-20261006",
+  "as_of": "2026-10-06",
+  "scope": "Grade 6 Practice / Written / Readiness re-rank after Learn+Micro closure",
+  "source_locks": {
+    "dimension_audit": {
+      "path": "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+      "sha": "39b4894059deb353e31ffef39e5d3ae9f5473a8c"
+    },
+    "written_library": {
+      "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+      "sha": "e9ab1f2ad3a3f5a63461694b0f08271b13fe161f"
+    },
+    "prob23_readiness": {
+      "path": "docs/assets/data/assessment/23-xac-suat-core-v1.json",
+      "sha": "6ecf6eb6545fbb8e01465ccac76db0d5c60b7485"
+    }
+  },
+  "principles": {
+    "practice": "Practice Room is shared topic/skill practice, not a second KNTT curriculum. Topic-level evidence may be pedagogically sufficient even when it does not prove exact lesson placement.",
+    "written": "Written placement must reflect true curriculum placement; prerequisite skill overlap must not create false KNTT placement.",
+    "readiness": "Only controlled structured assessment counts. Formative or written evidence must not be promoted into Readiness."
+  },
+  "practice_rerank": {
+    "conclusion": "NO_IMMEDIATE_AUTHORING_QUEUE",
+    "rationale": "All 31 Grade-6 rows already have topic-level Practice evidence; statuses describe evidence granularity rather than a requirement for a duplicate lesson-specific bank.",
+    "counts": {
+      "TOPIC_SKILL_EVIDENCE": 23,
+      "PARTIAL_TOPIC_EVIDENCE": 4,
+      "FAMILY_LEVEL_TOPIC_EVIDENCE": 4,
+      "NONE": 0
+    },
+    "protected_decision": "Do not build a second KNTT Practice bank merely to turn topic-level evidence into lesson-specific evidence. Revisit only when learner evidence or a reviewed curriculum gap justifies it."
+  },
+  "written_rerank": {
+    "conclusion": "THREE_TRUE_PLACEMENT_CANDIDATES_TWO_FALSE_POSITIVE_ROW_MATCHES",
+    "true_placement_candidates": [
+      {
+        "exercise_id": "WX02-NUM-001",
+        "kntt_lesson_ref": "Bài 11-12",
+        "reason": "The task is an UCLN application; prime-factorization is supporting method/prerequisite, not the curriculum placement."
+      },
+      {
+        "exercise_id": "WX02-NUM-002",
+        "kntt_lesson_ref": "Bài 31",
+        "reason": "The task is a percentage discount problem; decimal arithmetic is supporting computation, not Bài 28-29 placement."
+      },
+      {
+        "exercise_id": "WX23-PRO-001",
+        "kntt_lesson_ref": "Bài 43",
+        "reason": "The task directly assesses experimental probability and interpretation."
+      }
+    ],
+    "false_positive_row_matches": [
+      {
+        "lesson_ref": "Bài 10",
+        "exercise_id": "WX02-NUM-001",
+        "reason": "Prime factorization is used to compute UCLN but the exercise's curriculum purpose is UCLN application."
+      },
+      {
+        "lesson_ref": "Bài 28-29",
+        "exercise_id": "WX02-NUM-002",
+        "reason": "Decimal arithmetic is prerequisite/supporting computation; the curriculum purpose is percentage."
+      }
+    ],
+    "authoring_decision": "Do not author new Written items yet. First reconcile true KNTT placements for the three already reviewed canonical exercises."
+  },
+  "readiness_rerank": {
+    "conclusion": "ONE_AUTHORIZED_TOPIC_LEVEL_ONE_TRUE_G6_REVIEW_CANDIDATE_REMAINDER_UNVERIFIED",
+    "authorized_topic_level": [
+      {
+        "lesson_ref": "Bài 38-41",
+        "topic": "21-thong-ke",
+        "status": "AUTHORIZED_TOPIC_LEVEL"
+      }
+    ],
+    "academic_review_candidate": {
+      "lesson_ref": "Bài 43",
+      "topic": "23-xac-suat",
+      "assessment_id": "PROB23-CORE-READY-V1",
+      "grade6_item_ids": [
+        "PRO23READY_001",
+        "PRO23READY_002",
+        "PRO23READY_003",
+        "PRO23READY_004"
+      ],
+      "skill": "xac-suat-thuc-nghiem",
+      "status": "PENDING_REVIEW",
+      "reason": "The existing readiness assessment contains four explicit Grade-6 items, all on experimental probability."
+    },
+    "corrected_false_pending": [
+      {
+        "lesson_ref": "Bài 42",
+        "new_status": "NOT_VERIFIED_STRUCTURED",
+        "reason": "The current Grade-6 readiness items are all tagged xac-suat-thuc-nghiem and do not directly assess Bài 42 event/outcome content."
+      }
+    ],
+    "remaining_unverified_count": 29,
+    "authoring_decision": "Do not mass-author Readiness checks. Review the existing Bài 43 candidate first; keep all other unsupported rows explicitly unverified."
+  },
+  "next_gate": {
+    "action": "INDEPENDENT_NOTEBOOKLM_REVIEW",
+    "packet": "MATH-KNTT-G6-PROB23-READINESS-R1-20261006",
+    "release_boundary": "Academic review only; no deploy authorization."
+  },
+  "protected_boundaries": [
+    "NO_NEW_CANONICAL_SKILLS",
+    "NO_PRACTICE_BANK_EXPANSION",
+    "NO_NEW_WRITTEN_AUTHORING",
+    "NO_MASTERY_SEMANTIC_CHANGE",
+    "NO_LEARNER_HISTORY_REGRADING",
+    "NO_RUNTIME_TAXONOMY_CHANGE"
+  ]
+}
