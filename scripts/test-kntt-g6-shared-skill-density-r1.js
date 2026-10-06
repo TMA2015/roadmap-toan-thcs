@@ -47,7 +47,7 @@ assert.equal(by.NUM02MICRO_050.curriculum.lesson,"Bài 28-29");
 
 assert.equal(manifest.question_count,132);
 assert.equal(audit.summary.dimension_status_counts.LEARN_CONTENT.PARTIAL_SHARED_SKILL,0);
-assert.equal(audit.summary.dimension_status_counts.LEARN_CONTENT.VERIFIED_DIRECT,18);
+assert.equal(audit.summary.dimension_status_counts.LEARN_CONTENT.VERIFIED_DIRECT,23);
 assert.equal(audit.summary.dimension_status_counts.MICRO_PRACTICE.PARTIAL,0);
 assert.equal(audit.summary.dimension_status_counts.MICRO_PRACTICE.VERIFIED_DIRECT,23);
 assert.equal(audit.summary.shared_skill_rerank_r1.status,"REPAIRED_REVIEWED_R1");

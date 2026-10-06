@@ -329,3 +329,29 @@ Protected dimensions remain unchanged:
 Review receipt: `review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md`.
 
 The reviewed Micro file is kept byte-identical to the candidate reviewed by NotebookLM; review metadata is stored in the separate receipt rather than mutating the reviewed source after clearance.
+
+
+## 6. Topic20 Grade-6 placement re-rank R1 — 2026-10-06
+
+The five remaining `PARTIAL_PLACEMENT` Learn rows are **not content gaps**.
+
+Root cause:
+- `topic20-learning-workspace.json` is intentionally immutable and keeps the historical five broad `Lớp 6–9` cards;
+- the released `topic20-core-display-v2.json` already partitions the same 29 canonical skills into 10 display cards;
+- Grade-6 cards `geo20-core-1a` and `geo20-core-1b` were independently reviewed in the existing CĐ20 Part-B review;
+- legacy `geo20-core-1` remains source-locked and supplies the remaining Grade-6 skills;
+- Grade-6 reconciliation already fixes the exact KNTT semantic targets for Bài 18–22.
+
+The audit-only placement overlay `docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json` therefore maps:
+
+| KNTT lesson | Existing display-card evidence |
+|---|---|
+| Bài 18 | `geo20-core-1` + `geo20-core-1a` |
+| Bài 19 | `geo20-core-1a` |
+| Bài 20 | `geo20-core-1` + `geo20-core-1b` |
+| Bài 21 | `geo20-core-1` |
+| Bài 22 | `geo20-core-1b` |
+
+Every lesson's mapped skill union must equal its reviewed canonical direct-skill target exactly.
+
+This reconciliation changes **audit placement only**. It does not mutate the legacy workspace, display-card content, Micro bank, Practice Bank, Written Library, Readiness, learner history, Mastery, or runtime taxonomy. A new academic review round is not required because no academic content is authored or changed.

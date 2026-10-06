@@ -1,5 +1,5 @@
 {
-  "version": "1.0.226",
+  "version": "1.0.227",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-06",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.226",
-      "review_verdict": "SHARED_SKILL_QUEUE_CLOSED_NEXT_PARTIAL_PLACEMENT_BAI18_22",
-      "review_notes": "Bài 13–17, Bài 25–26 and Bài 28–29 shared-skill density repair is released after NotebookLM PASS and full technical QA. Grade 6 now has 0 PARTIAL_SHARED_SKILL Learn rows and 0 PARTIAL Micro rows. The remaining Learn audit queue is 5 PARTIAL_PLACEMENT rows: Bài 18–22 in Topic20, currently backed by grade-broad geometry cards. Next work is placement re-ranking before any new content authoring.",
+      "context_version": "1.0.227",
+      "review_verdict": "G6_LEARN_QUEUE_CLOSED_TOPIC20_PLACEMENT_RECONCILED_R1",
+      "review_notes": "The final 5 PARTIAL_PLACEMENT Learn rows (Bài 18–22, Topic20) were traced to an audit-source mismatch: the immutable legacy 5-card workspace is intentionally grade-broad, while the already released Topic20 v2 display partition contains Grade-6-specific reviewed cards geo20-core-1a/1b plus the preserved legacy card geo20-core-1. An audit-only exact placement overlay maps each KNTT lesson's already-reviewed semantic targets to those existing card skills. No academic content, canonical skill, Micro, Practice, Written, Readiness, history, Mastery or runtime taxonomy change. Candidate full QA pending.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1603,6 +1603,22 @@
         "deploy_conclusion": "SUCCESS",
         "reviewed_micro_blob": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
       }
+    },
+    {
+      "id": "MATH-KNTT-G6-TOPIC20-PLACEMENT-R1-001",
+      "title": "Grade 6 Topic20 exact KNTT placement reconciliation R1 — Bài 18–22",
+      "routing": "AUDIT_RECONCILIATION+LOW_RISK_SOURCE_CONFIRMED",
+      "status": "TECH-QA-PENDING",
+      "context_version": "1.0.227",
+      "review_verdict": "SOURCE_CONFIRMED_EXISTING_REVIEW_NO_NEW_ACADEMIC_CONTENT",
+      "review_notes": "Bài 18–22 already have complete canonical skill coverage, Grade-6 Micro direct evidence and Topic-level Practice evidence. The remaining Learn PARTIAL_PLACEMENT state came from auditing the immutable broad legacy Topic20 workspace instead of the released v2 display partition. New file kntt-g6-topic20-placement-r1.json supplies exact lesson-to-existing-card mapping only. It references source-locked Topic20 v2 cards and prior reviewed reconciliation; it does not modify legacy workspace, display-card content, micro bank, practice, written, readiness, history, Mastery or runtime taxonomy. No new NotebookLM round required because no academic content is authored or altered.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "scripts/test-kntt-g6-topic20-placement-r1.js",
+        "scripts/test-kntt-dimension-coverage-g6-v1.js"
+      ]
     }
   ]
 }
