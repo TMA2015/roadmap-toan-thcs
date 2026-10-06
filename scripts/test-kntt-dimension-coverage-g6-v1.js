@@ -46,7 +46,8 @@ assert.equal(counts.MICRO_PRACTICE.PARTIAL,0);
 assert.equal(counts.PRACTICE_BANK.NONE,0);
 assert.equal(counts.WRITTEN_LIBRARY.CANDIDATE_ONLY_NO_KNTT_PLACEMENT,5);
 assert.equal(counts.READINESS.AUTHORIZED_TOPIC_LEVEL,1);
-assert.equal(counts.READINESS.PENDING_REVIEW,2);
+assert.equal(counts.READINESS.NOT_VERIFIED_STRUCTURED,29);
+assert.equal(counts.READINESS.PENDING_REVIEW,1);
 
 const written=json(a.source_locks.written_library.path);
 assert.equal((written.exercises||[]).filter(e=>e.kntt_placements).length,0);
@@ -138,7 +139,8 @@ assert.deepEqual(byLesson["Bài 42"].dimensions.MICRO_PRACTICE.item_ids,["PRO23M
 assert.equal(byLesson["Bài 42"].dimensions.MICRO_PRACTICE.gates_core,false);
 assert.equal(byLesson["Bài 42"].repair_evidence.status,"REPAIRED_REVIEWED_R1");
 assert.equal(byLesson["Bài 42"].repair_evidence.clearance,"G6_BAI42_EVENT_OUTCOME_CONTENT_REVIEW_COMPLETE");
-assert.equal(byLesson["Bài 42"].dimensions.READINESS.status,"PENDING_REVIEW");
+assert.equal(byLesson["Bài 42"].dimensions.READINESS.status,"NOT_VERIFIED_STRUCTURED");
+assert.equal(byLesson["Bài 43"].dimensions.READINESS.status,"PENDING_REVIEW");
 assert.equal(byLesson["Bài 31"].dimensions.LEARN_CONTENT.status,"VERIFIED_DIRECT");
 assert.equal(byLesson["Bài 31"].dimensions.MICRO_PRACTICE.status,"VERIFIED_DIRECT");
 assert.equal(byLesson["Bài 31"].dimensions.PRACTICE_BANK.status,"TOPIC_SKILL_EVIDENCE");
@@ -161,4 +163,4 @@ for(const [k,v] of Object.entries(a.protected_boundaries)) assert.equal(v,false,
 
 console.log("PASS: Grade-6 dimension audit locks 31 KNTT rows against current semantic and learning evidence.");
 console.log("PASS: Grade-6 audit closes lesson-local/family, shared-skill and Topic20 placement Learn queues within protected boundaries.");
-console.log("PASS: Written Library has no verified KNTT lesson placement in v1; readiness evidence is conservatively scoped.");
+console.log("PASS: Written Library has no verified KNTT lesson placement in v1; non-Learn rerank narrows Topic23 pending Readiness to Bài 43 only.");
