@@ -1,5 +1,5 @@
 {
-  "version": "1.0.230",
+  "version": "1.0.231",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-06",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.230",
-      "review_verdict": "G6_NONLEARN_RERANK_BAI43_NOTEBOOKLM_PASS_TECH_QA_PENDING",
-      "review_notes": "NotebookLM reviewed PRO23READY_001–004 with 4/4 PASS, 0 REVISE and clearance G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE. Bài 43 is promoted to REVIEWED_STRUCTURED_READINESS; Bài 42 remains NOT_VERIFIED_STRUCTURED. Bài 38-41 remains AUTHORIZED_TOPIC_LEVEL. Practice and Written decisions remain unchanged. Final technical QA is pending.",
+      "context_version": "1.0.231",
+      "review_verdict": "G6_NONLEARN_RERANK_R1_CLOSED_NEXT_WRITTEN_PLACEMENT_REVIEW",
+      "review_notes": "Practice/Written/Readiness re-rank R1 is released. Practice has no immediate authoring queue. Bài43 structured Readiness is independently reviewed and live; Bài42 remains NOT_VERIFIED_STRUCTURED; Bài38-41 remains AUTHORIZED_TOPIC_LEVEL. Next governance target is independent review/reconciliation of the three existing Written placement candidates: WX02-NUM-001→Bài11-12, WX02-NUM-002→Bài31, WX23-PRO-001→Bài43. No new Written authoring should occur before placement review.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1634,17 +1634,28 @@
       "id": "MATH-KNTT-G6-NONLEARN-RERANK-R1-001",
       "title": "Grade 6 Practice/Written/Readiness re-rank R1",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
-      "status": "TECH-QA-PENDING",
-      "context_version": "1.0.230",
-      "review_verdict": "NOTEBOOKLM_PASS_4_OF_4_READINESS_0_REVISE_CLEARED_FOR_RELEASE_QA",
-      "review_notes": "NotebookLM PASS for PRO23READY_001–004; controlled soft readiness policy PASS; Bài43 placement PASS; Bài42-not-covered boundary PASS; clearance G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE. Assessment blob remains 6ecf6eb6545fbb8e01465ccac76db0d5c60b7485. Repository reconciliation changes only Bài43 Readiness status.",
+      "status": "DONE",
+      "context_version": "1.0.231",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_CI_PASS_PR347_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Non-Learn re-rank R1 released after NotebookLM PASS for Bài43 Readiness. Exact PR head 10a93c6722df824f626d251eaca62a7d2f966150 passed Roadmap PR Quality run 37490270815. PR #347 squash-merged as 3d849b7a0c852de83a7cf1dcfbc2a9f1ccfcacf3; Deploy MkDocs run 37491552210 SUCCESS. gh-pages verification confirms Bài43 REVIEWED_STRUCTURED_READINESS, Bài42 NOT_VERIFIED_STRUCTURED, readiness counts 29/1/1/0 and registry v1.0.230 live before this closure update. No new content was authored.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-g6-nonlearn-rerank-r1.json",
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "review-packets/kntt-g6-prob23-readiness-r1/00_NOTEBOOKLM_PACKET_R1.md",
         "scripts/test-kntt-g6-nonlearn-rerank-r1.js",
         "review-packets/kntt-g6-prob23-readiness-r1/01_NOTEBOOKLM_RESULT_R1.md"
-      ]
+      ],
+      "release": {
+        "pr": 347,
+        "exact_head": "10a93c6722df824f626d251eaca62a7d2f966150",
+        "qa_run": 37490270815,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "3d849b7a0c852de83a7cf1dcfbc2a9f1ccfcacf3",
+        "deploy_run": 37491552210,
+        "deploy_conclusion": "SUCCESS",
+        "readiness_clearance": "G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE",
+        "reviewed_assessment_blob": "6ecf6eb6545fbb8e01465ccac76db0d5c60b7485"
+      }
     }
   ]
 }
