@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+// Technical gate only; NotebookLM gate remains external until clearance is reconciled.
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
