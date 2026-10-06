@@ -1,5 +1,5 @@
 {
-  "version": "1.0.227",
+  "version": "1.0.228",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-06",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.227",
-      "review_verdict": "G6_LEARN_QUEUE_CLOSED_TOPIC20_PLACEMENT_RECONCILED_R1",
-      "review_notes": "The final 5 PARTIAL_PLACEMENT Learn rows (Bài 18–22, Topic20) were traced to an audit-source mismatch: the immutable legacy 5-card workspace is intentionally grade-broad, while the already released Topic20 v2 display partition contains Grade-6-specific reviewed cards geo20-core-1a/1b plus the preserved legacy card geo20-core-1. An audit-only exact placement overlay maps each KNTT lesson's already-reviewed semantic targets to those existing card skills. No academic content, canonical skill, Micro, Practice, Written, Readiness, history, Mastery or runtime taxonomy change. Candidate full QA pending.",
+      "context_version": "1.0.228",
+      "review_verdict": "G6_LEARN_AND_MICRO_QUEUES_CLOSED_NEXT_DIMENSION_RERANK",
+      "review_notes": "Grade-6 Learn coverage now has 0 PARTIAL_LOCAL_OR_FAMILY, 0 PARTIAL_SHARED_SKILL, 0 PARTIAL_PLACEMENT and 0 PARTIAL_MISSING_DIRECT_SKILL rows. Grade-6 Micro has 0 PARTIAL/FAMILY_LEVEL_ONLY/NONE rows. Topic20 Bài 18–22 placement was reconciled without new academic content by exact mapping to existing source-locked display cards. Next step is to re-rank remaining non-Learn dimensions (Practice/Written/Readiness) before authoring new material.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1608,17 +1608,27 @@
       "id": "MATH-KNTT-G6-TOPIC20-PLACEMENT-R1-001",
       "title": "Grade 6 Topic20 exact KNTT placement reconciliation R1 — Bài 18–22",
       "routing": "AUDIT_RECONCILIATION+LOW_RISK_SOURCE_CONFIRMED",
-      "status": "TECH-QA-PENDING",
-      "context_version": "1.0.227",
-      "review_verdict": "SOURCE_CONFIRMED_EXISTING_REVIEW_NO_NEW_ACADEMIC_CONTENT",
-      "review_notes": "Bài 18–22 already have complete canonical skill coverage, Grade-6 Micro direct evidence and Topic-level Practice evidence. The remaining Learn PARTIAL_PLACEMENT state came from auditing the immutable broad legacy Topic20 workspace instead of the released v2 display partition. New file kntt-g6-topic20-placement-r1.json supplies exact lesson-to-existing-card mapping only. It references source-locked Topic20 v2 cards and prior reviewed reconciliation; it does not modify legacy workspace, display-card content, micro bank, practice, written, readiness, history, Mastery or runtime taxonomy. No new NotebookLM round required because no academic content is authored or altered.",
+      "status": "DONE",
+      "context_version": "1.0.228",
+      "review_verdict": "DONE_SOURCE_CONFIRMED_CI_PASS_PR345_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "The five remaining Grade-6 Learn PARTIAL_PLACEMENT rows were audit-source mismatch, not content gaps. Exact overlay kntt-g6-topic20-placement-r1.json maps Bài 18–22 to existing source-locked Topic20 v2 display-card skills. Roadmap PR Quality run 37467181880 passed after updating the downstream shared-skill receipt test for the new global VERIFIED_DIRECT count. PR #345 squash-merged as 2dfcee324b73e73a3d20773d078c0f88c96e4ab7; Deploy MkDocs run 37468371063 SUCCESS. gh-pages verifies the placement overlay and Learn counts: VERIFIED_DIRECT=23, PARTIAL_PLACEMENT=0. Legacy workspace, display-card content, Micro, Practice, Written, Readiness, history, Mastery and runtime taxonomy remain unchanged.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
         "scripts/test-kntt-g6-topic20-placement-r1.js",
         "scripts/test-kntt-dimension-coverage-g6-v1.js"
-      ]
+      ],
+      "release": {
+        "pr": 345,
+        "exact_head": "b4dd2cf952ec6e79b133e2b1353acc2698300d3d",
+        "qa_run": 37467181880,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "2dfcee324b73e73a3d20773d078c0f88c96e4ab7",
+        "deploy_run": 37468371063,
+        "deploy_conclusion": "SUCCESS",
+        "placement_overlay_blob": "71734904e6d8dc148e20982f31823d7a8d483150"
+      }
     }
   ]
 }
