@@ -1,5 +1,5 @@
 {
-  "version": "1.0.231",
+  "version": "1.0.232",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-06",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.231",
-      "review_verdict": "G6_NONLEARN_RERANK_R1_CLOSED_NEXT_WRITTEN_PLACEMENT_REVIEW",
-      "review_notes": "Practice/Written/Readiness re-rank R1 is released. Practice has no immediate authoring queue. Bài43 structured Readiness is independently reviewed and live; Bài42 remains NOT_VERIFIED_STRUCTURED; Bài38-41 remains AUTHORIZED_TOPIC_LEVEL. Next governance target is independent review/reconciliation of the three existing Written placement candidates: WX02-NUM-001→Bài11-12, WX02-NUM-002→Bài31, WX23-PRO-001→Bài43. No new Written authoring should occur before placement review.",
+      "context_version": "1.0.232",
+      "review_verdict": "G6_WRITTEN_PLACEMENT_REVIEW_GATE_OPEN",
+      "review_notes": "After Learn/Micro/placement and non-Learn rerank closure, the next governance target is true KNTT placement for three already-approved Written items. Candidate mappings: WX02-NUM-001→Bài 11-12, WX02-NUM-002→Bài 31, WX23-PRO-001→Bài 43. Candidate explicitly rejects prerequisite/supporting-skill false placements to Bài 10, Bài 28-29 and Bài 42. No Written Library mutation before independent NotebookLM clearance.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1656,6 +1656,20 @@
         "readiness_clearance": "G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE",
         "reviewed_assessment_blob": "6ecf6eb6545fbb8e01465ccac76db0d5c60b7485"
       }
+    },
+    {
+      "id": "MATH-KNTT-G6-WRITTEN-PLACEMENT-R1-001",
+      "title": "Grade 6 Written true KNTT placement R1",
+      "routing": "ACADEMIC_REVIEW+GOVERNANCE",
+      "status": "ACADEMIC_REVIEW_PENDING",
+      "context_version": "1.0.232",
+      "review_verdict": "PLACEMENT_CANDIDATE_AUTHORED_AWAITING_NOTEBOOKLM",
+      "review_notes": "Review true curriculum placement for three already academically approved canonical Written exercises. Proposed: WX02-NUM-001→Bài 11-12; WX02-NUM-002→Bài 31; WX23-PRO-001→Bài 43. Explicit false-positive boundaries: not Bài 10, not Bài 28-29, not Bài 42 merely because supporting/prerequisite knowledge appears. No item cloning, no new Written authoring, no Readiness credit, no Mastery/history/runtime taxonomy change.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-g6-written-placement-r1.json",
+        "review-packets/kntt-g6-written-placement-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "scripts/test-kntt-g6-written-placement-r1.js"
+      ]
     }
   ]
 }
