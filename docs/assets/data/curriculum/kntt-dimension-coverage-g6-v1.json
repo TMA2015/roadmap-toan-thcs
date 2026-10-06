@@ -391,41 +391,7 @@
       }
     },
     "written_library_kntt_placement_count": 0,
-    "priority_gap_rows": [
-      {
-        "chapter": 3,
-        "lesson_ref": "Bài 13–17",
-        "summary": "Cụm số nguyên: biểu diễn/thứ tự, cộng-trừ, dấu ngoặc, nhân, chia hết và ước-bội",
-        "learn": "PARTIAL_SHARED_SKILL",
-        "micro": "PARTIAL",
-        "practice": "TOPIC_SKILL_EVIDENCE",
-        "readiness": "NOT_VERIFIED_STRUCTURED",
-        "priority": "P0",
-        "priority_reason": "Một Core Card dùng chung cho 5 bài nhưng evidence hiện tại chỉ rõ một phần của cụm. Bài 15 và Bài 17 thiếu explicit lesson evidence; Bài 13–14 còn thiếu cấu phần; Bài 16 đã có nhân số nguyên nhưng nên được review cùng cụm."
-      },
-      {
-        "chapter": 6,
-        "lesson_ref": "Bài 25-26",
-        "summary": "Cộng, trừ, nhân, chia phân số",
-        "learn": "PARTIAL_SHARED_SKILL",
-        "micro": "PARTIAL",
-        "practice": "TOPIC_SKILL_EVIDENCE",
-        "readiness": "NOT_VERIFIED_STRUCTURED",
-        "priority": "P0",
-        "priority_reason": "Canonical phep-tinh-phan-so đã tồn tại và có cộng/trừ; Learn/Micro chưa explicit nhân/chia phân số."
-      },
-      {
-        "chapter": 7,
-        "lesson_ref": "Bài 28-29",
-        "summary": "Số thập phân và tính toán với số thập phân",
-        "learn": "PARTIAL_SHARED_SKILL",
-        "micro": "PARTIAL",
-        "practice": "TOPIC_SKILL_EVIDENCE",
-        "readiness": "NOT_VERIFIED_STRUCTURED",
-        "priority": "P1",
-        "priority_reason": "Canonical so-huu-ti-thap-phan đã tồn tại; evidence hiện tại chủ yếu là cộng số thập phân, chưa explicit trừ/nhân/chia."
-      }
-    ],
+    "priority_gap_rows": [],
     "repaired_rows": [
       {
         "chapter": 7,
@@ -538,7 +504,7 @@
       }
     ],
     "shared_skill_rerank_r1": {
-      "status": "NOTEBOOKLM_PASS",
+      "status": "REPAIRED_REVIEWED_R1",
       "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
       "conclusion": "The seven PARTIAL_SHARED_SKILL rows are not mere audit noise. They share broad canonical skills but several exact KNTT lesson demands are not explicit in current Learn/Micro evidence. Repair by densifying existing Core cards and direct Micro; do not create new canonical skills.",
       "no_new_skills": true,
@@ -559,7 +525,9 @@
         "num02-g6-core-3",
         "num02-g6-core-4",
         "num02-g6-core-5"
-      ]
+      ],
+      "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+      "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md"
     }
   },
   "rows": [
