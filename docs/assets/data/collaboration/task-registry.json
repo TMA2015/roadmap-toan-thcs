@@ -1,5 +1,5 @@
 {
-  "version": "1.0.229",
+  "version": "1.0.230",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-06",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.229",
-      "review_verdict": "G6_NONLEARN_RERANK_COMPLETE_READINESS_REVIEW_GATE_OPEN",
-      "review_notes": "Grade-6 Learn and Micro queues remain closed. Practice/Written/Readiness re-rank R1 found no need for a duplicate lesson-specific Practice bank; three already-reviewed Written items have plausible true KNTT placements (Bài 11-12, Bài 31, Bài 43) while two prior row matches are prerequisite/skill-overlap false positives; Topic23 Readiness has four explicit Grade-6 experimental-probability items supporting Bài 43 only, so Bài 42 is corrected from PENDING_REVIEW to NOT_VERIFIED_STRUCTURED. Next gate is independent NotebookLM review of the existing Bài 43 Readiness candidate.",
+      "context_version": "1.0.230",
+      "review_verdict": "G6_NONLEARN_RERANK_BAI43_NOTEBOOKLM_PASS_TECH_QA_PENDING",
+      "review_notes": "Practice/Written/Readiness re-rank R1 is academically reconciled for Topic23: NotebookLM reviewed PRO23READY_001–004 with 4/4 PASS, 0 REVISE, clearance G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE. Bài 43 is promoted from PENDING_REVIEW to REVIEWED_STRUCTURED_READINESS; Bài 42 remains NOT_VERIFIED_STRUCTURED. Bài 38-41 remains AUTHORIZED_TOPIC_LEVEL. Practice and Written decisions remain unchanged. Final technical release QA is pending.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1634,15 +1634,16 @@
       "id": "MATH-KNTT-G6-NONLEARN-RERANK-R1-001",
       "title": "Grade 6 Practice/Written/Readiness re-rank R1",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
-      "status": "ACADEMIC_REVIEW_PENDING",
-      "context_version": "1.0.229",
-      "review_verdict": "RERANK_COMPLETE_BAI43_READINESS_NOTEBOOKLM_PENDING",
-      "review_notes": "Practice: no immediate authoring queue because all 31 rows have shared topic-level Practice evidence and the architecture explicitly forbids building a second KNTT Practice curriculum merely for placement symmetry. Written: re-rank identifies true placement candidates WX02-NUM-001→Bài 11-12, WX02-NUM-002→Bài 31, WX23-PRO-001→Bài 43; Bài 10 and Bài 28-29 were false-positive skill-overlap matches. Readiness: Bài 38-41 remains authorized topic-level; Bài 43 has four existing Grade-6 xac-suat-thuc-nghiem items pending review; Bài 42 has no direct readiness item and is corrected to NOT_VERIFIED_STRUCTURED. No new content authored.",
+      "status": "TECH-QA-PENDING",
+      "context_version": "1.0.230",
+      "review_verdict": "NOTEBOOKLM_PASS_4_OF_4_READINESS_0_REVISE_CLEARED_FOR_RELEASE_QA",
+      "review_notes": "NotebookLM PASS for PRO23READY_001–004 with controlled soft readiness policy PASS, Bài43 placement PASS, Bài42-not-covered boundary PASS and clearance G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE. Assessment bytes remain unchanged at blob 6ecf6eb6545fbb8e01465ccac76db0d5c60b7485. Repository reconciliation promotes only Bài43 Readiness to REVIEWED_STRUCTURED_READINESS; Bài42 remains NOT_VERIFIED_STRUCTURED. No Practice expansion, new Written authoring, Mastery change, learner-history regrade or runtime taxonomy change.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-g6-nonlearn-rerank-r1.json",
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "review-packets/kntt-g6-prob23-readiness-r1/00_NOTEBOOKLM_PACKET_R1.md",
-        "scripts/test-kntt-g6-nonlearn-rerank-r1.js"
+        "scripts/test-kntt-g6-nonlearn-rerank-r1.js",
+        "review-packets/kntt-g6-prob23-readiness-r1/01_NOTEBOOKLM_RESULT_R1.md"
       ]
     }
   ]
