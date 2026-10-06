@@ -24,8 +24,8 @@ for(const id of ["NUM02MICRO_039","NUM02MICRO_040","NUM02MICRO_041"]) assert.ok(
 assert.match(card.teaching_copy.key_idea,/phân số bằng nhau/i);
 assert.match(card.teaching_copy.key_idea,/hỗn số dương/i);
 
-assert.equal(micro.question_count,41);
-assert.equal(micro.questions.length,41);
+assert.equal(micro.question_count,52);
+assert.equal(micro.questions.length,52);
 const by=Object.fromEntries(micro.questions.map(q=>[q.id,q]));
 const local=[by.NUM02MICRO_039,by.NUM02MICRO_040,by.NUM02MICRO_041];
 assert.ok(local.every(Boolean));

@@ -278,3 +278,54 @@ This audit does not:
 - change learner-facing UI.
 
 11. Keep Bài 1–3 Practice at topic-level partial evidence and keep Written/Readiness open; its lesson-local repair must not be promoted into new canonical skills or mastery/readiness credit.
+
+## 4. Shared-skill re-rank R1 — 2026-10-06
+
+The remaining `PARTIAL_SHARED_SKILL` rows were re-inspected against the actual Grade-6 Topic02 Learn cards and Micro bank.
+
+| Queue | KNTT rows | Current evidence | Re-rank conclusion |
+|---|---|---|---|
+| P0 | Bài 13–17 | broad canonical `so-nguyen-phep-tinh` + `gia-tri-tuyet-doi`; existing Micro mainly addition, multiplication, application and absolute value | **real explicit-density gap**, not audit noise. Bài 15 and Bài 17 have no exact lesson Micro; Bài 13–14 are incomplete; Bài 16 has existing multiplication evidence but remains in the same review packet. |
+| P0 | Bài 25–26 | canonical `phep-tinh-phan-so`; existing Micro covers addition/subtraction | **real explicit-density gap** for multiplication/division. |
+| P1 | Bài 28–29 | canonical `so-huu-ti-thap-phan`; existing Micro covers decimal addition | **real explicit-density gap** for subtraction/multiplication/division. |
+
+The candidate repair therefore **reuses existing canonical skills** and densifies only Learn + Micro. It does not create a parallel KNTT skill taxonomy.
+
+Candidate scope:
+- Learn cards: `num02-g6-core-3`, `num02-g6-core-4`, `num02-g6-core-5`;
+- new Micro: `NUM02MICRO_042–052`;
+- Practice Bank: unchanged;
+- Written Library: unchanged;
+- Readiness: unchanged;
+- learner history / Mastery / runtime taxonomy: unchanged.
+
+Academic status remains **pending independent NotebookLM review**. Current row statuses stay `PARTIAL_SHARED_SKILL` / `PARTIAL` until a PASS receipt with clearance is reconciled.
+
+
+## 5. Independent academic review result — 2026-10-06
+
+NotebookLM reviewed packet `MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006` and returned **PASS** with clearance:
+
+`G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE`
+
+Review coverage:
+- 3/3 Learn cards passed;
+- 11/11 Micro items `NUM02MICRO_042–052` passed;
+- 0 REVISE;
+- no new canonical skill;
+- existing evidence reuse / anti-inflation passed;
+- audit promotion boundary passed.
+
+Repository reconciliation therefore promotes the seven `PARTIAL_SHARED_SKILL` Learn rows and the seven corresponding `PARTIAL` Micro rows to `VERIFIED_DIRECT`.
+
+Protected dimensions remain unchanged:
+- Practice Bank;
+- Written Library;
+- Readiness;
+- learner history;
+- Mastery;
+- runtime taxonomy.
+
+Review receipt: `review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md`.
+
+The reviewed Micro file is kept byte-identical to the candidate reviewed by NotebookLM; review metadata is stored in the separate receipt rather than mutating the reviewed source after clearance.

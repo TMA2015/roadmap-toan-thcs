@@ -1,7 +1,7 @@
 {
-  "version": "1.0.223",
+  "version": "1.0.225",
   "schema": "roadmap-collaboration-task-registry-v1",
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "statuses": [
     "OPEN",
     "GEMINI-DRAFT",
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.223",
-      "review_verdict": "G6_CLEAR_LOCAL_FAMILY_QUEUE_CLOSED_NEXT_SHARED_SKILL_RERANK",
-      "review_notes": "Bài 1–3, Bài 11–12 and Bài 23–24 direct/local/problem-type repairs are released. Grade 6 now has 0 clear PARTIAL_LOCAL_OR_FAMILY Learn rows in the current Dimension Audit. Next work should re-rank PARTIAL_SHARED_SKILL rows Bài 13–17 and Bài 25–26, then PARTIAL_PLACEMENT rows Bài 18–22 before authoring more content.",
+      "context_version": "1.0.225",
+      "review_verdict": "SHARED_SKILL_NOTEBOOKLM_PASS_RECONCILED_RELEASE_QA_PENDING",
+      "review_notes": "Independent NotebookLM review passed 3/3 Learn cards and 11/11 Micro items for Bài 13–17, Bài 25–26 and Bài 28–29 with 0 REVISE and clearance G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE. The 7 PARTIAL_SHARED_SKILL Learn rows and 7 corresponding PARTIAL Micro rows are promoted to VERIFIED_DIRECT. No new canonical skill. Practice/Written/Readiness/history/Mastery/runtime taxonomy remain unchanged. Final clean release QA is pending.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1574,6 +1574,24 @@
         "deploy_run": 37342413444,
         "deploy_conclusion": "SUCCESS"
       }
+    },
+    {
+      "id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-001",
+      "title": "Grade 6 shared-skill Learn/Micro density repair R1 — Bài 13–17, 25–26, 28–29",
+      "routing": "ACADEMIC_REVIEW+CONTENT_REPAIR",
+      "status": "TECH-QA-PENDING",
+      "context_version": "1.0.225",
+      "review_verdict": "NOTEBOOKLM_PASS_3_OF_3_LEARN_11_OF_11_MICRO_0_REVISE_CLEARED_FOR_RELEASE_QA",
+      "review_notes": "NotebookLM PASS with clearance G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE. All 3 Learn cards and 11 Micro items passed; anti-inflation boundary passed; audit promotion boundary passed. Reviewed Micro candidate bytes remain unchanged at blob b6ec952b786f897ef6f45301208dcd9d55bde98b; the review receipt is stored separately at review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md. Candidate now proceeds to full technical release QA only.",
+      "artifacts": [
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "scripts/test-kntt-g6-shared-skill-density-r1.js",
+        "review-packets/kntt-g6-shared-skill-density-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      ]
     }
   ]
 }

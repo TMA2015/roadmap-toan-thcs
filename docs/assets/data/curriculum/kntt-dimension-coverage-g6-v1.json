@@ -1,7 +1,7 @@
 {
   "schema": "kntt-dimension-coverage-audit-v1",
   "version": 1,
-  "as_of": "2026-10-04",
+  "as_of": "2026-10-06",
   "grade": 6,
   "status": "G6_PILOT_AUDIT_BAI23_24_REPAIRED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
@@ -13,7 +13,7 @@
     },
     "grade6_reconciliation": {
       "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
-      "blob_sha": "2aeb046dab8655bbaa3e1af922239f841c796752"
+      "blob_sha": "38aa6e86781ac63e1481aa0080c3fbc2d819885b"
     },
     "taxonomy": {
       "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
@@ -29,11 +29,11 @@
         "placement": "EXACT",
         "workspace": {
           "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-          "sha": "2878bddfd625d20b78bea1bc60233924e0e321e4"
+          "sha": "956087701533dd50c61f653f61e969392216e57f"
         },
         "micro": {
           "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-          "sha": "82b7c25588d674649586edee0ef2e7b50507c37c",
+          "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b",
           "grade6Skills": [
             "tap-hop-so",
             "thu-tu-phep-tinh",
@@ -359,17 +359,17 @@
       },
       "LEARN_CONTENT": {
         "PARTIAL_LOCAL_OR_FAMILY": 0,
-        "VERIFIED_DIRECT": 11,
-        "PARTIAL_SHARED_SKILL": 7,
+        "VERIFIED_DIRECT": 18,
+        "PARTIAL_SHARED_SKILL": 0,
         "PARTIAL_PLACEMENT": 5,
         "PARTIAL_MISSING_DIRECT_SKILL": 0,
         "VERIFIED_LESSON_LOCAL": 4,
         "VERIFIED_DIRECT_AND_LOCAL": 4
       },
       "MICRO_PRACTICE": {
-        "PARTIAL": 7,
+        "PARTIAL": 0,
         "FAMILY_LEVEL_ONLY": 0,
-        "VERIFIED_DIRECT": 16,
+        "VERIFIED_DIRECT": 23,
         "NONE": 0,
         "VERIFIED_LESSON_LOCAL": 4,
         "VERIFIED_DIRECT_AND_LOCAL": 4
@@ -391,18 +391,7 @@
       }
     },
     "written_library_kntt_placement_count": 0,
-    "priority_gap_rows": [
-      {
-        "chapter": 3,
-        "lesson_ref": "Bài 13",
-        "summary": "Tập hợp số nguyên, số đối, trục số, thứ tự và giá trị tuyệt đối",
-        "learn": "PARTIAL_SHARED_SKILL",
-        "micro": "PARTIAL",
-        "practice": "TOPIC_SKILL_EVIDENCE",
-        "readiness": "NOT_VERIFIED_STRUCTURED",
-        "priority_reason": "Representative start of the Bài 13–17 shared-skill cluster. Next task is to re-rank/reconcile the broad canonical `so-nguyen-phep-tinh` evidence across exact KNTT lesson demands before authoring new content."
-      }
-    ],
+    "priority_gap_rows": [],
     "repaired_rows": [
       {
         "chapter": 7,
@@ -512,8 +501,61 @@
         "practice": "PARTIAL_TOPIC_EVIDENCE",
         "readiness": "NOT_VERIFIED_STRUCTURED",
         "review_basis": "Reviewed semantic reconciliation + deterministic equivalent-fraction/mixed-number representations"
+      },
+      {
+        "chapter": 3,
+        "lesson_ref": "Bài 13–17",
+        "summary": "Số nguyên: biểu diễn, so sánh và phép tính",
+        "repair_status": "REPAIRED_REVIEWED_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      },
+      {
+        "chapter": 6,
+        "lesson_ref": "Bài 25-26",
+        "summary": "Cộng, trừ, nhân, chia phân số",
+        "repair_status": "REPAIRED_REVIEWED_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      },
+      {
+        "chapter": 7,
+        "lesson_ref": "Bài 28-29",
+        "summary": "Số thập phân và tính toán với số thập phân",
+        "repair_status": "REPAIRED_REVIEWED_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md"
       }
-    ]
+    ],
+    "shared_skill_rerank_r1": {
+      "status": "REPAIRED_REVIEWED_R1",
+      "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+      "conclusion": "The seven PARTIAL_SHARED_SKILL rows are not mere audit noise. They share broad canonical skills but several exact KNTT lesson demands are not explicit in current Learn/Micro evidence. Repair by densifying existing Core cards and direct Micro; do not create new canonical skills.",
+      "no_new_skills": true,
+      "proposed_micro_ids": [
+        "NUM02MICRO_042",
+        "NUM02MICRO_043",
+        "NUM02MICRO_044",
+        "NUM02MICRO_045",
+        "NUM02MICRO_046",
+        "NUM02MICRO_047",
+        "NUM02MICRO_048",
+        "NUM02MICRO_049",
+        "NUM02MICRO_050",
+        "NUM02MICRO_051",
+        "NUM02MICRO_052"
+      ],
+      "proposed_card_ids": [
+        "num02-g6-core-3",
+        "num02-g6-core-4",
+        "num02-g6-core-5"
+      ],
+      "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+      "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md"
+    }
   },
   "rows": [
     {
@@ -561,7 +603,7 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "05dc22c82a7c992b6ab19343caebd19d03740ac6"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           },
           "direct_skill_hits": [
             "tap-hop-so"
@@ -583,7 +625,7 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "eac1a13cd56df68c0f98b93b8eb211792cb779b4"
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
           },
           "lesson_local_hits": [
             "ghi-so-tu-nhien",
@@ -680,7 +722,7 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "d704f98ba515edbf5217386baf33a04dbccec028"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           },
           "lesson_local_hits": [
             "cong-tru-so-tu-nhien",
@@ -696,7 +738,7 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "48040ce6fc8b47caee112810a497e5b4e87fc836"
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
           },
           "lesson_local_hits": [
             "cong-tru-so-tu-nhien",
@@ -776,7 +818,7 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           }
         },
         "MICRO_PRACTICE": {
@@ -787,7 +829,7 @@
           "family_skill_hits": [],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
           }
         },
         "PRACTICE_BANK": {
@@ -845,7 +887,7 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           }
         },
         "MICRO_PRACTICE": {
@@ -856,7 +898,7 @@
           "family_skill_hits": [],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
           }
         },
         "PRACTICE_BANK": {
@@ -927,7 +969,7 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "29408b03d53d47bca74d22ec210f24dad1be037b"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           },
           "lesson_local_hits": [
             "quan-he-chia-het",
@@ -945,7 +987,7 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "cd4d1553afbb075f5edeb7ad2ae801fa52bd8159"
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
           },
           "lesson_local_hits": [
             "quan-he-chia-het",
@@ -1029,7 +1071,7 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           }
         },
         "MICRO_PRACTICE": {
@@ -1040,7 +1082,7 @@
           "family_skill_hits": [],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
           }
         },
         "PRACTICE_BANK": {
@@ -1103,7 +1145,7 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           }
         },
         "MICRO_PRACTICE": {
@@ -1119,7 +1161,7 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
           }
         },
         "PRACTICE_BANK": {
@@ -1202,7 +1244,7 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "3b19c40b28920bda70825b4f2df3957048d6d742"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           },
           "direct_skill_hits": [
             "ucln",
@@ -1225,7 +1267,7 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "66411b9865cf06a0f48116a81d7fb0c83c815247"
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
           },
           "lesson_local_hits": [
             "bai-toan-ucln-bcnn"
@@ -1314,7 +1356,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_SHARED_SKILL",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "so-nguyen-phep-tinh",
             "gia-tri-tuyet-doi"
@@ -1323,11 +1365,11 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           }
         },
         "MICRO_PRACTICE": {
-          "status": "PARTIAL",
+          "status": "VERIFIED_DIRECT",
           "direct_skill_hits": [
             "gia-tri-tuyet-doi",
             "so-nguyen-phep-tinh"
@@ -1337,8 +1379,13 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
-          }
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_019",
+            "NUM02MICRO_042",
+            "NUM02MICRO_043"
+          ]
         },
         "PRACTICE_BANK": {
           "status": "TOPIC_SKILL_EVIDENCE",
@@ -1364,6 +1411,18 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
       }
     },
     {
@@ -1390,7 +1449,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_SHARED_SKILL",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "so-nguyen-phep-tinh",
             "gia-tri-tuyet-doi"
@@ -1399,11 +1458,11 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           }
         },
         "MICRO_PRACTICE": {
-          "status": "PARTIAL",
+          "status": "VERIFIED_DIRECT",
           "direct_skill_hits": [
             "so-nguyen-phep-tinh"
           ],
@@ -1412,8 +1471,13 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
-          }
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_007",
+            "NUM02MICRO_009",
+            "NUM02MICRO_044"
+          ]
         },
         "PRACTICE_BANK": {
           "status": "TOPIC_SKILL_EVIDENCE",
@@ -1438,6 +1502,18 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
       }
     },
     {
@@ -1464,7 +1540,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_SHARED_SKILL",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "so-nguyen-phep-tinh",
             "gia-tri-tuyet-doi"
@@ -1473,11 +1549,11 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           }
         },
         "MICRO_PRACTICE": {
-          "status": "PARTIAL",
+          "status": "VERIFIED_DIRECT",
           "direct_skill_hits": [
             "so-nguyen-phep-tinh"
           ],
@@ -1486,8 +1562,11 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
-          }
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_045"
+          ]
         },
         "PRACTICE_BANK": {
           "status": "TOPIC_SKILL_EVIDENCE",
@@ -1512,6 +1591,18 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
       }
     },
     {
@@ -1538,7 +1629,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_SHARED_SKILL",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "so-nguyen-phep-tinh",
             "gia-tri-tuyet-doi"
@@ -1547,11 +1638,11 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           }
         },
         "MICRO_PRACTICE": {
-          "status": "PARTIAL",
+          "status": "VERIFIED_DIRECT",
           "direct_skill_hits": [
             "so-nguyen-phep-tinh"
           ],
@@ -1560,8 +1651,11 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
-          }
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_008"
+          ]
         },
         "PRACTICE_BANK": {
           "status": "TOPIC_SKILL_EVIDENCE",
@@ -1586,6 +1680,18 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
       }
     },
     {
@@ -1612,7 +1718,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_SHARED_SKILL",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "so-nguyen-phep-tinh",
             "gia-tri-tuyet-doi"
@@ -1621,11 +1727,11 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           }
         },
         "MICRO_PRACTICE": {
-          "status": "PARTIAL",
+          "status": "VERIFIED_DIRECT",
           "direct_skill_hits": [
             "so-nguyen-phep-tinh"
           ],
@@ -1634,8 +1740,12 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
-          }
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_046",
+            "NUM02MICRO_047"
+          ]
         },
         "PRACTICE_BANK": {
           "status": "TOPIC_SKILL_EVIDENCE",
@@ -1660,6 +1770,18 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
       }
     },
     {
@@ -2102,7 +2224,7 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "2878bddfd625d20b78bea1bc60233924e0e321e4"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           },
           "direct_skill_hits": [
             "rut-gon-phan-so",
@@ -2126,7 +2248,7 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "82b7c25588d674649586edee0ef2e7b50507c37c"
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
           },
           "lesson_local_hits": [
             "phan-so-bang-nhau",
@@ -2206,7 +2328,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_SHARED_SKILL",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "rut-gon-phan-so",
             "quy-dong-so-sanh-phan-so",
@@ -2216,11 +2338,11 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           }
         },
         "MICRO_PRACTICE": {
-          "status": "PARTIAL",
+          "status": "VERIFIED_DIRECT",
           "direct_skill_hits": [
             "phep-tinh-phan-so"
           ],
@@ -2229,8 +2351,14 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
-          }
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_011",
+            "NUM02MICRO_012",
+            "NUM02MICRO_048",
+            "NUM02MICRO_049"
+          ]
         },
         "PRACTICE_BANK": {
           "status": "TOPIC_SKILL_EVIDENCE",
@@ -2255,6 +2383,18 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
       }
     },
     {
@@ -2302,7 +2442,7 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "9b67e22d0f6d4fd1727a3167639c506d201a3c66"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           },
           "lesson_local_hits": [
             "tim-gia-tri-phan-so-cua-so",
@@ -2318,7 +2458,7 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "2d2be5e269d9c63e8a059de41737abb0607c2c98"
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
           },
           "lesson_local_hits": [
             "tim-gia-tri-phan-so-cua-so",
@@ -2390,7 +2530,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_SHARED_SKILL",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "so-huu-ti-thap-phan",
             "phan-tram"
@@ -2399,11 +2539,11 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "22b2a74908191f1e8be85bf90019c17a3fe1a6a2"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           }
         },
         "MICRO_PRACTICE": {
-          "status": "PARTIAL",
+          "status": "VERIFIED_DIRECT",
           "direct_skill_hits": [
             "so-huu-ti-thap-phan"
           ],
@@ -2413,8 +2553,14 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "60235e77c56fd75a65b1dc5df562baea5150984b"
-          }
+            "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+          },
+          "item_ids": [
+            "NUM02MICRO_013",
+            "NUM02MICRO_050",
+            "NUM02MICRO_051",
+            "NUM02MICRO_052"
+          ]
         },
         "PRACTICE_BANK": {
           "status": "TOPIC_SKILL_EVIDENCE",
@@ -2449,6 +2595,18 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "REPAIRED_REVIEWED_R1",
+        "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+        "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "CANDIDATE_ONLY_NO_KNTT_PLACEMENT",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
       }
     },
     {
@@ -2493,7 +2651,7 @@
           "placement_strength": "EXACT",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-            "sha": "25efe793363b1cbc7636a9d83d1b9260030ebf91"
+            "sha": "956087701533dd50c61f653f61e969392216e57f"
           }
         },
         "MICRO_PRACTICE": {
@@ -2507,7 +2665,7 @@
           ],
           "micro": {
             "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-            "sha": "a75e685add69bd9d1867f129a18c7ebfbbd09648"
+            "sha": "a5b3aca07d88ba836d98938c49479723164ac716"
           },
           "item_ids": [
             "NUM02MICRO_021",
@@ -2627,7 +2785,7 @@
             {
               "topic": "02-so-va-phep-tinh",
               "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
-              "sha": "9b67e22d0f6d4fd1727a3167639c506d201a3c66",
+              "sha": "956087701533dd50c61f653f61e969392216e57f",
               "card_id": "num02-g6-core-5",
               "skills": [
                 "phan-tram"
@@ -2675,7 +2833,7 @@
             {
               "topic": "02-so-va-phep-tinh",
               "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
-              "sha": "2d2be5e269d9c63e8a059de41737abb0607c2c98",
+              "sha": "a5b3aca07d88ba836d98938c49479723164ac716",
               "skills": [
                 "phan-tram"
               ],

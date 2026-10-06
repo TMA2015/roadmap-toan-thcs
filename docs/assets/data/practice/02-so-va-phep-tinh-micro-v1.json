@@ -6,7 +6,7 @@
     "id": "02-so-va-phep-tinh",
     "title": "Số và phép tính · Core lớp 6"
   },
-  "question_count": 41,
+  "question_count": 52,
   "questions": [
     {
       "id": "NUM02MICRO_001",
@@ -1853,6 +1853,512 @@
       "lesson_local_targets": [
         "hon-so-duong"
       ]
+    },
+    {
+      "id": "NUM02MICRO_042",
+      "card_id": "num02-g6-core-3",
+      "micro_role": "coverage",
+      "question": "Số đối của −7 là số nào?",
+      "options": [
+        "7",
+        "−7",
+        "0",
+        "1/7"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-nguyen-phep-tinh"
+        ],
+        "type": "so-doi-so-nguyen",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Hai số đối có tổng bằng 0, nên số đối của −7 là 7.",
+      "hints": [
+        "Tìm số cộng với −7 được 0.",
+        "−7 + 7 = 0."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 13"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "verdict": "PENDING_INDEPENDENT_REVIEW",
+        "method": "NOTEBOOKLM",
+        "packet": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006"
+      }
+    },
+    {
+      "id": "NUM02MICRO_043",
+      "card_id": "num02-g6-core-3",
+      "micro_role": "coverage",
+      "question": "Khẳng định nào đúng?",
+      "options": [
+        "−5 < −2",
+        "−5 > −2",
+        "−5 = −2",
+        "Không thể so sánh −5 và −2"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-nguyen-phep-tinh"
+        ],
+        "type": "thu-tu-so-nguyen",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Trên trục số, −5 nằm bên trái −2 nên −5 < −2.",
+      "hints": [
+        "Số nằm bên trái trên trục số thì nhỏ hơn.",
+        "Trong hai số âm này, −5 nằm xa 0 hơn về phía bên trái."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 13"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "verdict": "PENDING_INDEPENDENT_REVIEW",
+        "method": "NOTEBOOKLM",
+        "packet": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006"
+      }
+    },
+    {
+      "id": "NUM02MICRO_044",
+      "card_id": "num02-g6-core-3",
+      "micro_role": "coverage",
+      "question": "Tính 6 − (−9).",
+      "options": [
+        "15",
+        "−3",
+        "3",
+        "−15"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-nguyen-phep-tinh"
+        ],
+        "type": "tru-so-nguyen",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Trừ một số âm tương đương cộng số đối của nó: 6 − (−9) = 6 + 9 = 15.",
+      "hints": [
+        "Đổi phép trừ số âm thành phép cộng.",
+        "6 − (−9) = 6 + 9."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 14"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "verdict": "PENDING_INDEPENDENT_REVIEW",
+        "method": "NOTEBOOKLM",
+        "packet": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006"
+      }
+    },
+    {
+      "id": "NUM02MICRO_045",
+      "card_id": "num02-g6-core-3",
+      "micro_role": "coverage",
+      "question": "Tính 8 − (3 − 5).",
+      "options": [
+        "10",
+        "6",
+        "0",
+        "−10"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-nguyen-phep-tinh"
+        ],
+        "type": "quy-tac-dau-ngoac",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trong ngoặc: 3 − 5 = −2. Vì vậy 8 − (−2) = 10.",
+      "hints": [
+        "Tính trong ngoặc trước.",
+        "Sau đó dùng quy tắc trừ một số âm."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 15"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "verdict": "PENDING_INDEPENDENT_REVIEW",
+        "method": "NOTEBOOKLM",
+        "packet": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006"
+      }
+    },
+    {
+      "id": "NUM02MICRO_046",
+      "card_id": "num02-g6-core-3",
+      "micro_role": "coverage",
+      "question": "Tính (−24) : 6.",
+      "options": [
+        "−4",
+        "4",
+        "−18",
+        "18"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-nguyen-phep-tinh"
+        ],
+        "type": "chia-so-nguyen",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Hai số khác dấu cho thương âm; 24 : 6 = 4 nên (−24) : 6 = −4.",
+      "hints": [
+        "Xác định dấu của thương trước.",
+        "Hai số khác dấu nên thương âm."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 17"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "verdict": "PENDING_INDEPENDENT_REVIEW",
+        "method": "NOTEBOOKLM",
+        "packet": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006"
+      }
+    },
+    {
+      "id": "NUM02MICRO_047",
+      "card_id": "num02-g6-core-3",
+      "micro_role": "coverage",
+      "question": "Khẳng định nào đúng?",
+      "options": [
+        "3 là ước của −12",
+        "−12 không là bội của 3",
+        "0 là ước của −12",
+        "5 là ước của −12"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-nguyen-phep-tinh"
+        ],
+        "type": "uoc-boi-so-nguyen",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Vì −12 = 3 × (−4), nên 3 là ước của −12 và −12 là bội của 3.",
+      "hints": [
+        "Một số b là ước của a nếu a = b × q với q nguyên.",
+        "Kiểm tra −12 có viết được dưới dạng 3 nhân một số nguyên hay không."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 17"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "verdict": "PENDING_INDEPENDENT_REVIEW",
+        "method": "NOTEBOOKLM",
+        "packet": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006"
+      }
+    },
+    {
+      "id": "NUM02MICRO_048",
+      "card_id": "num02-g6-core-4",
+      "micro_role": "coverage",
+      "question": "Tính 2/3 × 9/4.",
+      "options": [
+        "3/2",
+        "11/7",
+        "1/6",
+        "6/13"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "phep-tinh-phan-so"
+        ],
+        "type": "nhan-phan-so",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "2/3 × 9/4 = 18/12 = 3/2.",
+      "hints": [
+        "Nhân tử với tử và mẫu với mẫu.",
+        "Rút gọn 18/12 về tối giản."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 25-26"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "verdict": "PENDING_INDEPENDENT_REVIEW",
+        "method": "NOTEBOOKLM",
+        "packet": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006"
+      }
+    },
+    {
+      "id": "NUM02MICRO_049",
+      "card_id": "num02-g6-core-4",
+      "micro_role": "coverage",
+      "question": "Tính 5/6 ÷ 10/9.",
+      "options": [
+        "3/4",
+        "4/3",
+        "1/3",
+        "15/16"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "phep-tinh-phan-so"
+        ],
+        "type": "chia-phan-so",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "5/6 ÷ 10/9 = 5/6 × 9/10 = 45/60 = 3/4.",
+      "hints": [
+        "Đổi phép chia thành phép nhân với phân số nghịch đảo.",
+        "5/6 × 9/10 rồi rút gọn."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 25-26"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "verdict": "PENDING_INDEPENDENT_REVIEW",
+        "method": "NOTEBOOKLM",
+        "packet": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006"
+      }
+    },
+    {
+      "id": "NUM02MICRO_050",
+      "card_id": "num02-g6-core-5",
+      "micro_role": "coverage",
+      "question": "Tính 3,7 − 1,85.",
+      "options": [
+        "1,85",
+        "2,15",
+        "1,95",
+        "2,85"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-huu-ti-thap-phan"
+        ],
+        "type": "tru-so-thap-phan",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Viết 3,7 = 3,70 rồi đặt dấu phẩy thẳng cột: 3,70 − 1,85 = 1,85.",
+      "hints": [
+        "Viết 3,7 thành 3,70.",
+        "Đặt dấu phẩy thẳng cột rồi trừ."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 28-29"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "verdict": "PENDING_INDEPENDENT_REVIEW",
+        "method": "NOTEBOOKLM",
+        "packet": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006"
+      }
+    },
+    {
+      "id": "NUM02MICRO_051",
+      "card_id": "num02-g6-core-5",
+      "micro_role": "coverage",
+      "question": "Tính 1,2 × 0,5.",
+      "options": [
+        "0,6",
+        "6",
+        "0,06",
+        "1,7"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-huu-ti-thap-phan"
+        ],
+        "type": "nhan-so-thap-phan",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "12 × 5 = 60. Hai thừa số có tổng cộng hai chữ số ở phần thập phân, nên tích là 0,60 = 0,6.",
+      "hints": [
+        "Tạm bỏ dấu phẩy và tính 12 × 5.",
+        "Đặt lại dấu phẩy để có hai chữ số ở phần thập phân."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 28-29"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "verdict": "PENDING_INDEPENDENT_REVIEW",
+        "method": "NOTEBOOKLM",
+        "packet": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006"
+      }
+    },
+    {
+      "id": "NUM02MICRO_052",
+      "card_id": "num02-g6-core-5",
+      "micro_role": "coverage",
+      "question": "Tính 4,2 ÷ 0,6.",
+      "options": [
+        "7",
+        "0,7",
+        "70",
+        "6"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-huu-ti-thap-phan"
+        ],
+        "type": "chia-so-thap-phan",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dịch dấu phẩy của cả hai số một chữ số: 4,2 ÷ 0,6 = 42 ÷ 6 = 7.",
+      "hints": [
+        "Làm cho số chia 0,6 trở thành số tự nhiên.",
+        "Nhân cả số bị chia và số chia với 10."
+      ],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core",
+        "lesson": "Bài 28-29"
+      },
+      "exam": {
+        "entrance10": "none",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "verdict": "PENDING_INDEPENDENT_REVIEW",
+        "method": "NOTEBOOKLM",
+        "packet": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006"
+      }
     }
   ]
 }

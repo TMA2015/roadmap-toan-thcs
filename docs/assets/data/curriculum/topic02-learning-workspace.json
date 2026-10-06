@@ -159,7 +159,7 @@
     {
       "id": "num02-g6-core-3",
       "order": 3,
-      "title": "Số nguyên, số đối và quy tắc dấu",
+      "title": "Số nguyên: biểu diễn, so sánh và phép tính",
       "kntt_lessons": [
         "Lớp 6 · Bài 13–17"
       ],
@@ -178,16 +178,22 @@
         "NUM02MICRO_007",
         "NUM02MICRO_008",
         "NUM02MICRO_009",
-        "NUM02MICRO_019"
+        "NUM02MICRO_019",
+        "NUM02MICRO_042",
+        "NUM02MICRO_043",
+        "NUM02MICRO_044",
+        "NUM02MICRO_045",
+        "NUM02MICRO_046",
+        "NUM02MICRO_047"
       ],
       "teaching_copy": {
-        "key_idea": "Số nguyên có số âm, số 0 và số dương. Khi cộng hai số khác dấu, so sánh giá trị tuyệt đối; nhân hai số âm được số dương.",
+        "key_idea": "Tập hợp số nguyên gồm số nguyên âm, số 0 và số nguyên dương. Trên trục số, số nằm bên trái nhỏ hơn số nằm bên phải; hai số đối nằm khác phía 0 và có cùng giá trị tuyệt đối. Khi cộng, trừ, nhân và chia số nguyên, phải theo đúng quy tắc dấu. Khi bỏ dấu ngoặc, chú ý dấu đứng trước ngoặc. Với phép chia hết trong số nguyên, nếu a = b × q với q nguyên và b ≠ 0 thì a chia hết cho b; b là ước của a và a là bội của b.",
         "worked_example": {
-          "problem": "Tính −8 + 13 và (−3) × (−4).",
-          "solution": "−8 + 13 = 5; (−3) × (−4) = 12."
+          "problem": "a) Số đối của −7 là gì và so sánh −5 với −2. b) Tính 6 − (−9) và 8 − (3 − 5). c) Tính (−24) : 6. d) 3 có là ước của −12 không?",
+          "solution": "a) Số đối của −7 là 7; trên trục số −5 nằm bên trái −2 nên −5 < −2. b) 6 − (−9) = 15; 8 − (3 − 5) = 8 − (−2) = 10. c) (−24) : 6 = −4. d) Có, vì −12 = 3 × (−4)."
         },
-        "misconception": "Dấu trừ ở phép cộng khác dấu không có nghĩa kết quả luôn âm.",
-        "summary": "Ước lượng dấu trước khi tính, rồi đối chiếu kết quả."
+        "misconception": "Không được xem mọi dấu “−” là giống nhau: dấu âm của một số, phép trừ và dấu đứng trước ngoặc có vai trò khác nhau. Khi chia, không được chia cho 0; dấu của thương tuân theo quy tắc cùng dấu/khác dấu.",
+        "summary": "Đọc đúng vị trí và dấu của số nguyên trước; sau đó chọn đúng quy tắc cho cộng–trừ, dấu ngoặc, nhân–chia và quan hệ ước–bội."
       }
     },
     {
@@ -220,16 +226,18 @@
         "NUM02MICRO_032",
         "NUM02MICRO_039",
         "NUM02MICRO_040",
-        "NUM02MICRO_041"
+        "NUM02MICRO_041",
+        "NUM02MICRO_048",
+        "NUM02MICRO_049"
       ],
       "teaching_copy": {
-        "key_idea": "Hai phân số bằng nhau nếu chúng biểu diễn cùng một giá trị; nhân hoặc chia cả tử và mẫu cho cùng một số khác 0 tạo một phân số bằng phân số ban đầu. Hỗn số dương gồm phần nguyên và một phân số bé hơn 1; có thể đổi hỗn số sang phân số lớn hơn 1 và ngược lại. Khi rút gọn, quy đồng, so sánh hay tính toán phân số, phải giữ đúng quan hệ tương đương giữa các biểu diễn. Với Bài 27, muốn tìm m/n của số b thì tính b × m/n; muốn tìm số ban đầu khi m/n của nó bằng a thì tính a ÷ m/n.",
+        "key_idea": "Hai phân số bằng nhau nếu chúng biểu diễn cùng một giá trị; nhân hoặc chia cả tử và mẫu cho cùng một số khác 0 tạo một phân số bằng phân số ban đầu. Hỗn số dương gồm phần nguyên và một phân số bé hơn 1; có thể đổi hỗn số sang phân số lớn hơn 1 và ngược lại. Khi cộng hoặc trừ phân số, đưa về cùng mẫu; khi nhân, nhân tử với tử và mẫu với mẫu; khi chia cho một phân số khác 0, nhân với phân số nghịch đảo. Với Bài 27, muốn tìm m/n của số b thì tính b × m/n; muốn tìm số ban đầu khi m/n của nó bằng a thì tính a ÷ m/n.",
         "worked_example": {
-          "problem": "a) Điền số thích hợp: 3/4 = ?/12. b) Đổi 2 1/3 thành phân số và đổi 11/4 thành hỗn số. c) Tìm 3/5 của 40. d) Tìm một số biết 2/3 của số đó bằng 18.",
-          "solution": "a) 3/4 = 9/12 vì nhân cả tử và mẫu với 3. b) 2 1/3 = 7/3; 11/4 = 2 3/4. c) 40 × 3/5 = 24. d) Số cần tìm là 18 ÷ 2/3 = 27."
+          "problem": "a) Điền số thích hợp: 3/4 = ?/12. b) Đổi 2 1/3 thành phân số. c) Tính 2/3 × 9/4 và 5/6 ÷ 10/9. d) Tìm 3/5 của 40.",
+          "solution": "a) 3/4 = 9/12. b) 2 1/3 = 7/3. c) 2/3 × 9/4 = 18/12 = 3/2; 5/6 ÷ 10/9 = 5/6 × 9/10 = 3/4. d) 40 × 3/5 = 24."
         },
-        "misconception": "Không được chỉ nhân hoặc chia tử mà giữ nguyên mẫu khi tạo phân số bằng nhau. Khi đổi hỗn số a b/c sang phân số, tử mới là a×c+b. Với Bài 27, không dùng cùng một phép tính cho hai dạng: tìm một phân số của số đã biết thì nhân; tìm số ban đầu khi biết một phân số của nó thì chia cho phân số.",
-        "summary": "Nhận ra các biểu diễn tương đương của cùng một số, rồi chọn đúng thao tác: rút gọn/quy đồng/so sánh, đổi phân số–hỗn số, hoặc nhân/chia theo đúng dạng bài toán phân số."
+        "misconception": "Không cộng hoặc trừ tử với tử, mẫu với mẫu khi hai phân số khác mẫu. Khi chia phân số, phải đổi phép chia thành nhân với phân số nghịch đảo của số chia; số chia phải khác 0.",
+        "summary": "Nhận ra biểu diễn tương đương của phân số, rồi chọn đúng quy tắc: cùng mẫu để cộng–trừ, nhân trực tiếp, chia bằng nghịch đảo, hoặc nhân/chia theo đúng dạng bài toán phân số."
       },
       "lesson_local_problem_types": [
         {
@@ -271,7 +279,7 @@
     {
       "id": "num02-g6-core-5",
       "order": 5,
-      "title": "Số thập phân, làm tròn và phần trăm",
+      "title": "Số thập phân, phép tính, làm tròn và phần trăm",
       "kntt_lessons": [
         "Lớp 6 · Bài 28–31"
       ],
@@ -293,16 +301,19 @@
         "NUM02MICRO_015",
         "NUM02MICRO_021",
         "NUM02MICRO_022",
-        "NUM02MICRO_023"
+        "NUM02MICRO_023",
+        "NUM02MICRO_050",
+        "NUM02MICRO_051",
+        "NUM02MICRO_052"
       ],
       "teaching_copy": {
-        "key_idea": "Khi tính số thập phân, đặt dấu phẩy thẳng cột. Khi làm tròn đến một hàng, nhìn chữ số ngay bên phải: nhỏ hơn 5 thì giữ nguyên, từ 5 trở lên thì tăng chữ số ở hàng làm tròn thêm 1. Ước lượng có thể làm tròn các số trước rồi tính. Với phần trăm, p% = p/100.",
+        "key_idea": "Số thập phân là một cách viết số hữu tỉ theo hệ thập phân. Khi cộng hoặc trừ số thập phân, đặt dấu phẩy thẳng cột. Khi nhân, có thể nhân như số tự nhiên rồi đặt lại dấu phẩy theo tổng số chữ số ở phần thập phân. Khi chia cho một số thập phân khác 0, dịch dấu phẩy của cả số bị chia và số chia cùng số chữ số để số chia trở thành số tự nhiên. Khi làm tròn đến một hàng, nhìn chữ số ngay bên phải: nhỏ hơn 5 thì giữ nguyên, từ 5 trở lên thì tăng chữ số ở hàng làm tròn thêm 1. Với phần trăm, p% = p/100.",
         "worked_example": {
-          "problem": "Làm tròn 12,347 đến hàng phần trăm, rồi dùng các số đã làm tròn để ước lượng 12,347 + 5,12.",
-          "solution": "Chữ số hàng phần nghìn của 12,347 là 7 nên 12,347 ≈ 12,35. Số 5,12 đã có hai chữ số thập phân nên giữ 5,12. Tổng ước lượng là 12,35 + 5,12 = 17,47."
+          "problem": "Tính 3,7 − 1,85; 1,2 × 0,5; 4,2 ÷ 0,6. Sau đó làm tròn 12,347 đến hàng phần trăm.",
+          "solution": "3,70 − 1,85 = 1,85. Ta có 1,2 × 0,5 = 0,60 = 0,6. Với phép chia, 4,2 ÷ 0,6 = 42 ÷ 6 = 7. Vì chữ số hàng phần nghìn của 12,347 là 7 nên 12,347 ≈ 12,35."
         },
-        "misconception": "Khi làm tròn, chỉ nhìn chữ số ngay bên phải hàng cần làm tròn; không được chỉ cắt bỏ rồi giữ nguyên nếu chữ số đó từ 5 trở lên. Ước lượng cho kết quả gần đúng, không phải đáp số chính xác.",
-        "summary": "Xác định đúng hàng cần làm tròn, áp dụng quy tắc <5 / ≥5 và dùng dấu ≈ cho kết quả gần đúng. Với phần trăm, luôn phân biệt phần trăm giảm với giá trị còn lại."
+        "misconception": "Không được căn dấu phẩy theo mép phải khi cộng/trừ; phải đặt dấu phẩy thẳng cột. Khi nhân không đặt dấu phẩy theo cột. Khi chia cho số thập phân, phải dịch dấu phẩy ở cả số bị chia và số chia cùng một số chữ số.",
+        "summary": "Chọn đúng quy tắc cho từng phép tính thập phân, rồi mới dùng làm tròn hoặc phần trăm khi bài toán yêu cầu."
       }
     }
   ],
