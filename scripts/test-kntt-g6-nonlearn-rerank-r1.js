@@ -15,10 +15,13 @@ assert.equal(audit.summary.dimension_status_counts.LEARN_CONTENT.PARTIAL_PLACEME
 assert.equal(audit.summary.dimension_status_counts.MICRO_PRACTICE.PARTIAL,0);
 assert.equal(audit.summary.dimension_status_counts.READINESS.NOT_VERIFIED_STRUCTURED,29);
 assert.equal(audit.summary.dimension_status_counts.READINESS.AUTHORIZED_TOPIC_LEVEL,1);
-assert.equal(audit.summary.dimension_status_counts.READINESS.PENDING_REVIEW,1);
+assert.equal(audit.summary.dimension_status_counts.READINESS.REVIEWED_STRUCTURED_READINESS,1);
+assert.equal(audit.summary.dimension_status_counts.READINESS.PENDING_REVIEW,0);
 
 assert.equal(byLesson["Bài 42"].dimensions.READINESS.status,"NOT_VERIFIED_STRUCTURED");
-assert.equal(byLesson["Bài 43"].dimensions.READINESS.status,"PENDING_REVIEW");
+assert.equal(byLesson["Bài 43"].dimensions.READINESS.status,"REVIEWED_STRUCTURED_READINESS");
+assert.equal(byLesson["Bài 43"].dimensions.READINESS.evidence.clearance,"G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE");
+assert.deepEqual(byLesson["Bài 43"].dimensions.READINESS.evidence.item_ids,["PRO23READY_001","PRO23READY_002","PRO23READY_003","PRO23READY_004"]);
 assert.equal(byLesson["Bài 38-41"].dimensions.READINESS.status,"AUTHORIZED_TOPIC_LEVEL");
 
 assert.equal(rerank.practice_rerank.conclusion,"NO_IMMEDIATE_AUTHORING_QUEUE");
@@ -48,8 +51,11 @@ assert.equal(ready.policy.feedback,"after_submit");
 assert.equal(ready.readiness.hard_gate,false);
 
 assert.equal(rerank.readiness_rerank.academic_review_candidate.lesson_ref,"Bài 43");
+assert.equal(rerank.readiness_rerank.academic_review_candidate.status,"REVIEWED_STRUCTURED_READINESS");
+assert.equal(rerank.readiness_rerank.academic_review_candidate.clearance,"G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE");
 assert.equal(rerank.readiness_rerank.corrected_false_pending[0].lesson_ref,"Bài 42");
 assert.equal(rerank.next_gate.packet,"MATH-KNTT-G6-PROB23-READINESS-R1-20261006");
 assert.ok(fs.existsSync("review-packets/kntt-g6-prob23-readiness-r1/00_NOTEBOOKLM_PACKET_R1.md"));
+assert.ok(fs.existsSync("review-packets/kntt-g6-prob23-readiness-r1/01_NOTEBOOKLM_RESULT_R1.md"));
 
-console.log("PASS: Grade-6 non-Learn rerank keeps Practice shared, separates true Written placement from prerequisite overlap, and narrows Topic23 Readiness review to Bài 43.");
+console.log("PASS: Grade-6 non-Learn rerank keeps Practice shared, separates true Written placement from prerequisite overlap, and records reviewed structured Readiness for Bài 43 while Bài 42 remains unverified.");
