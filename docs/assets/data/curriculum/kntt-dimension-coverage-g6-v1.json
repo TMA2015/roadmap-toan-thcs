@@ -347,7 +347,7 @@
     "MICRO_PRACTICE": "VERIFIED_DIRECT requires Grade-6-tagged micro evidence for every direct skill. FAMILY_LEVEL_ONLY is not equivalent to direct lesson evidence.",
     "PRACTICE_BANK": "Topic-level manifests prove a bank/skill exists but not Grade-6 lesson placement; therefore no Practice status is called FULL.",
     "WRITTEN_LIBRARY": "Current v1 has grade_overlay/topic_id but zero kntt_placements fields, so matching exercises are candidate-only, never verified lesson coverage.",
-    "READINESS": "Only explicit structured assessment evidence is counted. Pending academic review is not readiness coverage."
+    "READINESS": "Only explicit structured assessment evidence is counted. REVIEWED_STRUCTURED_READINESS requires independent academic PASS on lesson-matched assessment items; topic-level authorization remains distinct."
   },
   "protected_boundaries": {
     "learner_facing_change": false,
@@ -391,9 +391,10 @@
         "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 5
       },
       "READINESS": {
-        "NOT_VERIFIED_STRUCTURED": 28,
+        "NOT_VERIFIED_STRUCTURED": 29,
         "AUTHORIZED_TOPIC_LEVEL": 1,
-        "PENDING_REVIEW": 2
+        "REVIEWED_STRUCTURED_READINESS": 1,
+        "PENDING_REVIEW": 0
       }
     },
     "written_library_kntt_placement_count": 0,
@@ -620,6 +621,31 @@
         "Bài 22"
       ],
       "conclusion": "The remaining five PARTIAL_PLACEMENT rows were caused by the audit reading the immutable broad legacy workspace instead of the already released Topic20 v2 display partition. An audit-only exact placement overlay closes Bài 18–22 without new content, new skills, Micro changes, Practice changes, or learner-data migration."
+    },
+    "nonlearn_rerank_r1": {
+      "status": "BAI43_READINESS_REVIEWED_RECONCILED",
+      "artifact": "docs/assets/data/curriculum/kntt-g6-nonlearn-rerank-r1.json",
+      "conclusion": "Practice has no immediate authoring queue; Written has 3 true placement candidates and 2 prerequisite-overlap false positives; Bài 43 has reviewed structured Readiness while Bài 42 remains NOT_VERIFIED_STRUCTURED.",
+      "practice_authoring": "DEFER_NO_DUPLICATE_KNTT_BANK",
+      "written_next": "RECONCILE_EXISTING_TRUE_PLACEMENTS_BEFORE_NEW_AUTHORING",
+      "readiness_next": "BAI43_REVIEWED_STRUCTURED_BAI42_UNVERIFIED",
+      "protected_boundaries": [
+        "PRACTICE_BANK",
+        "WRITTEN_LIBRARY_CONTENT",
+        "MASTERY",
+        "LEARNER_HISTORY",
+        "RUNTIME_TAXONOMY"
+      ],
+      "readiness_review": {
+        "packet_id": "MATH-KNTT-G6-PROB23-READINESS-R1-20261006",
+        "verdict": "PASS",
+        "reviewed_items": 4,
+        "revise_items": 0,
+        "clearance": "G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE",
+        "review_receipt": "review-packets/kntt-g6-prob23-readiness-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "b43_status": "REVIEWED_STRUCTURED_READINESS",
+        "b42_status": "NOT_VERIFIED_STRUCTURED"
+      }
     }
   },
   "rows": [
@@ -3631,12 +3657,9 @@
           "note": "No Grade-6 skill-matched written candidate found in the current shared library."
         },
         "READINESS": {
-          "status": "PENDING_REVIEW",
-          "evidence": {
-            "path": "content-staging/reviews/PROB23-READY-CHATGPT-AUTHOR-001.json",
-            "sha": "5556a3eaefc32a1e464776f91ea2a4228c08fe21",
-            "note": "AUTHOR_DRAFT_AWAITING_SECOND_PERSON_ACADEMIC_REVIEW."
-          }
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null,
+          "note": "Non-Learn re-rank R1: current Grade-6 Topic23 readiness items are all xac-suat-thuc-nghiem and do not directly assess Bài 42 event/outcome content."
         }
       },
       "repair_evidence": {
@@ -3725,12 +3748,24 @@
           "note": "Current library has no kntt_placements field; candidates cannot be promoted to verified KNTT lesson coverage."
         },
         "READINESS": {
-          "status": "PENDING_REVIEW",
+          "status": "REVIEWED_STRUCTURED_READINESS",
           "evidence": {
-            "path": "content-staging/reviews/PROB23-READY-CHATGPT-AUTHOR-001.json",
-            "sha": "5556a3eaefc32a1e464776f91ea2a4228c08fe21",
-            "note": "AUTHOR_DRAFT_AWAITING_SECOND_PERSON_ACADEMIC_REVIEW."
-          }
+            "assessment_id": "PROB23-CORE-READY-V1",
+            "path": "docs/assets/data/assessment/23-xac-suat-core-v1.json",
+            "sha": "6ecf6eb6545fbb8e01465ccac76db0d5c60b7485",
+            "item_ids": [
+              "PRO23READY_001",
+              "PRO23READY_002",
+              "PRO23READY_003",
+              "PRO23READY_004"
+            ],
+            "skill": "xac-suat-thuc-nghiem",
+            "packet_id": "MATH-KNTT-G6-PROB23-READINESS-R1-20261006",
+            "clearance": "G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-prob23-readiness-r1/01_NOTEBOOKLM_RESULT_R1.md",
+            "policy": "CONTROLLED_SOFT_READINESS"
+          },
+          "note": "Independent NotebookLM PASS for all four Grade-6 Bài 43 readiness items. Soft readiness only."
         }
       }
     }
