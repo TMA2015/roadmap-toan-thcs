@@ -1,7 +1,7 @@
 {
   "schema": "kntt-dimension-coverage-audit-v1",
   "version": 1,
-  "as_of": "2026-10-04",
+  "as_of": "2026-10-06",
   "grade": 6,
   "status": "G6_PILOT_AUDIT_BAI23_24_REPAIRED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
@@ -394,13 +394,36 @@
     "priority_gap_rows": [
       {
         "chapter": 3,
-        "lesson_ref": "Bài 13",
-        "summary": "Tập hợp số nguyên, số đối, trục số, thứ tự và giá trị tuyệt đối",
+        "lesson_ref": "Bài 13–17",
+        "summary": "Cụm số nguyên: biểu diễn/thứ tự, cộng-trừ, dấu ngoặc, nhân, chia hết và ước-bội",
         "learn": "PARTIAL_SHARED_SKILL",
         "micro": "PARTIAL",
         "practice": "TOPIC_SKILL_EVIDENCE",
         "readiness": "NOT_VERIFIED_STRUCTURED",
-        "priority_reason": "Representative start of the Bài 13–17 shared-skill cluster. Next task is to re-rank/reconcile the broad canonical `so-nguyen-phep-tinh` evidence across exact KNTT lesson demands before authoring new content."
+        "priority": "P0",
+        "priority_reason": "Một Core Card dùng chung cho 5 bài nhưng evidence hiện tại chỉ rõ một phần của cụm. Bài 15 và Bài 17 thiếu explicit lesson evidence; Bài 13–14 còn thiếu cấu phần; Bài 16 đã có nhân số nguyên nhưng nên được review cùng cụm."
+      },
+      {
+        "chapter": 6,
+        "lesson_ref": "Bài 25-26",
+        "summary": "Cộng, trừ, nhân, chia phân số",
+        "learn": "PARTIAL_SHARED_SKILL",
+        "micro": "PARTIAL",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "priority": "P0",
+        "priority_reason": "Canonical phep-tinh-phan-so đã tồn tại và có cộng/trừ; Learn/Micro chưa explicit nhân/chia phân số."
+      },
+      {
+        "chapter": 7,
+        "lesson_ref": "Bài 28-29",
+        "summary": "Số thập phân và tính toán với số thập phân",
+        "learn": "PARTIAL_SHARED_SKILL",
+        "micro": "PARTIAL",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "readiness": "NOT_VERIFIED_STRUCTURED",
+        "priority": "P1",
+        "priority_reason": "Canonical so-huu-ti-thap-phan đã tồn tại; evidence hiện tại chủ yếu là cộng số thập phân, chưa explicit trừ/nhân/chia."
       }
     ],
     "repaired_rows": [
@@ -513,7 +536,31 @@
         "readiness": "NOT_VERIFIED_STRUCTURED",
         "review_basis": "Reviewed semantic reconciliation + deterministic equivalent-fraction/mixed-number representations"
       }
-    ]
+    ],
+    "shared_skill_rerank_r1": {
+      "status": "CANDIDATE_AUTHORED_AWAITING_NOTEBOOKLM",
+      "packet_id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006",
+      "conclusion": "The seven PARTIAL_SHARED_SKILL rows are not mere audit noise. They share broad canonical skills but several exact KNTT lesson demands are not explicit in current Learn/Micro evidence. Repair by densifying existing Core cards and direct Micro; do not create new canonical skills.",
+      "no_new_skills": true,
+      "proposed_micro_ids": [
+        "NUM02MICRO_042",
+        "NUM02MICRO_043",
+        "NUM02MICRO_044",
+        "NUM02MICRO_045",
+        "NUM02MICRO_046",
+        "NUM02MICRO_047",
+        "NUM02MICRO_048",
+        "NUM02MICRO_049",
+        "NUM02MICRO_050",
+        "NUM02MICRO_051",
+        "NUM02MICRO_052"
+      ],
+      "proposed_card_ids": [
+        "num02-g6-core-3",
+        "num02-g6-core-4",
+        "num02-g6-core-5"
+      ]
+    }
   },
   "rows": [
     {
