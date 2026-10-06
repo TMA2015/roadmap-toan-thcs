@@ -66,7 +66,7 @@
     "authoring_decision": "Do not author new Written items yet. First reconcile true KNTT placements for the three already reviewed canonical exercises."
   },
   "readiness_rerank": {
-    "conclusion": "ONE_AUTHORIZED_TOPIC_LEVEL_ONE_TRUE_G6_REVIEW_CANDIDATE_REMAINDER_UNVERIFIED",
+    "conclusion": "ONE_AUTHORIZED_TOPIC_LEVEL_ONE_REVIEWED_G6_BAI43_REMAINDER_UNVERIFIED",
     "authorized_topic_level": [
       {
         "lesson_ref": "Bài 38-41",
@@ -85,8 +85,11 @@
         "PRO23READY_004"
       ],
       "skill": "xac-suat-thuc-nghiem",
-      "status": "PENDING_REVIEW",
-      "reason": "The existing readiness assessment contains four explicit Grade-6 items, all on experimental probability."
+      "status": "REVIEWED_STRUCTURED_READINESS",
+      "verdict": "PASS",
+      "clearance": "G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE",
+      "review_receipt": "review-packets/kntt-g6-prob23-readiness-r1/01_NOTEBOOKLM_RESULT_R1.md",
+      "reason": "Independent review passed all four Grade-6 experimental-probability items."
     },
     "corrected_false_pending": [
       {
@@ -96,12 +99,13 @@
       }
     ],
     "remaining_unverified_count": 29,
-    "authoring_decision": "Do not mass-author Readiness checks. Review the existing Bài 43 candidate first; keep all other unsupported rows explicitly unverified."
+    "authoring_decision": "Bài 43 existing assessment is academically cleared; unsupported rows remain explicitly unverified."
   },
   "next_gate": {
-    "action": "INDEPENDENT_NOTEBOOKLM_REVIEW",
+    "action": "FINAL_TECHNICAL_RELEASE_QA",
     "packet": "MATH-KNTT-G6-PROB23-READINESS-R1-20261006",
-    "release_boundary": "Academic review only; no deploy authorization."
+    "clearance": "G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE",
+    "release_boundary": "Academic review passed; technical QA remains required."
   },
   "protected_boundaries": [
     "NO_NEW_CANONICAL_SKILLS",
