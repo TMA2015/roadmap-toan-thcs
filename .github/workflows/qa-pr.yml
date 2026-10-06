@@ -32,6 +32,8 @@ jobs:
         run: node scripts/test-kntt-grade9-reconciliation-r4.js
       - name: Validate Grade 6 KNTT dimension coverage audit v1
         run: node scripts/test-kntt-dimension-coverage-g6-v1.js
+      - name: Validate Grade 6 non-Learn dimension rerank R1
+        run: node scripts/test-kntt-g6-nonlearn-rerank-r1.js
       - name: Validate Grade 6 Topic20 exact placement R1
         run: node scripts/test-kntt-g6-topic20-placement-r1.js
       - name: Validate Grade 6 shared-skill density R1
