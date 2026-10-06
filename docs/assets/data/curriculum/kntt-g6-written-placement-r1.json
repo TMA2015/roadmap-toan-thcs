@@ -1,0 +1,92 @@
+{
+  "packet_id": "MATH-KNTT-G6-WRITTEN-PLACEMENT-R1-20261006",
+  "as_of": "2026-10-06",
+  "scope": "Grade 6 KNTT placement review for three already-reviewed canonical Written exercises",
+  "source_locks": {
+    "written_library": {
+      "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+      "sha": "e9ab1f2ad3a3f5a63461694b0f08271b13fe161f"
+    },
+    "grade6_reconciliation": {
+      "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
+      "sha": "38aa6e86781ac63e1481aa0080c3fbc2d819885b"
+    },
+    "grade6_dimension_audit": {
+      "path": "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+      "sha": "3af22554d7b2ae472a35a8b0452aaf9a8a9b6e87"
+    }
+  },
+  "contract_boundary": {
+    "rule": "kntt_placements represents true curriculum placement. Prerequisite skill overlap is not automatically a curriculum placement.",
+    "source": "05_WRITTEN_EXERCISE_LIBRARY_CONTRACT_v1.md",
+    "candidate_only": true
+  },
+  "placements": [
+    {
+      "exercise_id": "WX02-NUM-001",
+      "current_content_review": "APPROVED",
+      "proposed_kntt_placement": {
+        "grade": 6,
+        "chapter": 2,
+        "lesson": "Bài 11–12 — Ước chung, ƯCLN; bội chung, BCNN và ứng dụng"
+      },
+      "placement_reason": "The exercise asks for the greatest number of identical groups and explicitly requires choosing and computing ƯCLN. Prime factorization is only the method used to compute ƯCLN.",
+      "reject_as_placement": [
+        {
+          "lesson": "Bài 10 — Số nguyên tố và hợp số; phân tích ra thừa số nguyên tố",
+          "reason": "Prime factorization is supporting method/prerequisite, not the exercise's curriculum purpose."
+        }
+      ]
+    },
+    {
+      "exercise_id": "WX02-NUM-002",
+      "current_content_review": "APPROVED",
+      "proposed_kntt_placement": {
+        "grade": 6,
+        "chapter": 7,
+        "lesson": "Bài 31 — Tỉ số và tỉ số phần trăm; bài toán phần trăm"
+      },
+      "placement_reason": "The exercise is explicitly a percentage-discount problem: compute 15% reduction, remaining price, and verify with 85%. Decimal arithmetic supports the computation.",
+      "reject_as_placement": [
+        {
+          "lesson": "Bài 28–29 — Số thập phân và tính toán với số thập phân",
+          "reason": "Decimal arithmetic is supporting computation, not the primary curriculum purpose."
+        }
+      ]
+    },
+    {
+      "exercise_id": "WX23-PRO-001",
+      "current_content_review": "APPROVED",
+      "proposed_kntt_placement": {
+        "grade": 6,
+        "chapter": 9,
+        "lesson": "Bài 43 — Xác suất thực nghiệm"
+      },
+      "placement_reason": "The exercise directly computes experimental probability from observed frequency and interprets it without making deterministic future predictions.",
+      "reject_as_placement": [
+        {
+          "lesson": "Bài 42 — Kết quả có thể và sự kiện trong trò chơi, thí nghiệm",
+          "reason": "The task does not primarily ask learners to enumerate possible outcomes or identify a simple event."
+        }
+      ]
+    }
+  ],
+  "proposed_repository_action_after_clearance": {
+    "mutate_written_library": true,
+    "field": "kntt_placements",
+    "item_count": 3,
+    "no_item_duplication": true,
+    "no_solution_duplication": true,
+    "no_rubric_duplication": true,
+    "preserve_existing_academic_review": true
+  },
+  "protected_boundaries": [
+    "NO_NEW_WRITTEN_ITEMS",
+    "NO_NEW_CANONICAL_SKILLS",
+    "NO_READINESS_CREDIT",
+    "NO_MASTERY_CHANGE",
+    "NO_LEARNER_HISTORY_REGRADE",
+    "NO_RUNTIME_TAXONOMY_CHANGE"
+  ],
+  "status": "ACADEMIC_REVIEW_PENDING"
+}
