@@ -391,9 +391,9 @@
         "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 5
       },
       "READINESS": {
-        "NOT_VERIFIED_STRUCTURED": 28,
+        "NOT_VERIFIED_STRUCTURED": 29,
         "AUTHORIZED_TOPIC_LEVEL": 1,
-        "PENDING_REVIEW": 2
+        "PENDING_REVIEW": 1
       }
     },
     "written_library_kntt_placement_count": 0,
@@ -620,6 +620,21 @@
         "Bài 22"
       ],
       "conclusion": "The remaining five PARTIAL_PLACEMENT rows were caused by the audit reading the immutable broad legacy workspace instead of the already released Topic20 v2 display partition. An audit-only exact placement overlay closes Bài 18–22 without new content, new skills, Micro changes, Practice changes, or learner-data migration."
+    },
+    "nonlearn_rerank_r1": {
+      "status": "RERANKED_REVIEW_GATE_OPEN",
+      "artifact": "docs/assets/data/curriculum/kntt-g6-nonlearn-rerank-r1.json",
+      "conclusion": "Practice has no immediate authoring queue; Written has 3 true placement candidates and 2 false-positive skill-overlap matches; Readiness has one existing Grade-6 Topic23 candidate (Bài 43) requiring independent review, while Bài 42 is not directly covered.",
+      "practice_authoring": "DEFER_NO_DUPLICATE_KNTT_BANK",
+      "written_next": "RECONCILE_EXISTING_TRUE_PLACEMENTS_BEFORE_NEW_AUTHORING",
+      "readiness_next": "NOTEBOOKLM_REVIEW_BAI43_EXISTING_CANDIDATE",
+      "protected_boundaries": [
+        "PRACTICE_BANK",
+        "WRITTEN_LIBRARY_CONTENT",
+        "MASTERY",
+        "LEARNER_HISTORY",
+        "RUNTIME_TAXONOMY"
+      ]
     }
   },
   "rows": [
@@ -3631,12 +3646,9 @@
           "note": "No Grade-6 skill-matched written candidate found in the current shared library."
         },
         "READINESS": {
-          "status": "PENDING_REVIEW",
-          "evidence": {
-            "path": "content-staging/reviews/PROB23-READY-CHATGPT-AUTHOR-001.json",
-            "sha": "5556a3eaefc32a1e464776f91ea2a4228c08fe21",
-            "note": "AUTHOR_DRAFT_AWAITING_SECOND_PERSON_ACADEMIC_REVIEW."
-          }
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "evidence": null,
+          "note": "Non-Learn re-rank R1: current Grade-6 Topic23 readiness items are all xac-suat-thuc-nghiem and do not directly assess Bài 42 event/outcome content."
         }
       },
       "repair_evidence": {
