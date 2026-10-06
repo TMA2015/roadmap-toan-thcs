@@ -300,3 +300,32 @@ Candidate scope:
 - learner history / Mastery / runtime taxonomy: unchanged.
 
 Academic status remains **pending independent NotebookLM review**. Current row statuses stay `PARTIAL_SHARED_SKILL` / `PARTIAL` until a PASS receipt with clearance is reconciled.
+
+
+## 5. Independent academic review result — 2026-10-06
+
+NotebookLM reviewed packet `MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006` and returned **PASS** with clearance:
+
+`G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE`
+
+Review coverage:
+- 3/3 Learn cards passed;
+- 11/11 Micro items `NUM02MICRO_042–052` passed;
+- 0 REVISE;
+- no new canonical skill;
+- existing evidence reuse / anti-inflation passed;
+- audit promotion boundary passed.
+
+Repository reconciliation therefore promotes the seven `PARTIAL_SHARED_SKILL` Learn rows and the seven corresponding `PARTIAL` Micro rows to `VERIFIED_DIRECT`.
+
+Protected dimensions remain unchanged:
+- Practice Bank;
+- Written Library;
+- Readiness;
+- learner history;
+- Mastery;
+- runtime taxonomy.
+
+Review receipt: `review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md`.
+
+The reviewed Micro file is kept byte-identical to the candidate reviewed by NotebookLM; review metadata is stored in the separate receipt rather than mutating the reviewed source after clearance.
