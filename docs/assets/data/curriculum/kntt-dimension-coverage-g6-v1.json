@@ -3,7 +3,7 @@
   "version": 1,
   "as_of": "2026-10-06",
   "grade": 6,
-  "status": "G6_PILOT_AUDIT_BAI23_24_REPAIRED_R1",
+  "status": "G6_PILOT_AUDIT_TOPIC20_PLACEMENT_RECONCILED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -333,6 +333,12 @@
           ]
         }
       }
+    },
+    "placement_overlays": {
+      "20-hinh-hoc-tong-hop": {
+        "path": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "sha": "71734904e6d8dc148e20982f31823d7a8d483150"
+      }
     }
   },
   "status_semantics": {
@@ -359,9 +365,9 @@
       },
       "LEARN_CONTENT": {
         "PARTIAL_LOCAL_OR_FAMILY": 0,
-        "VERIFIED_DIRECT": 18,
+        "VERIFIED_DIRECT": 23,
         "PARTIAL_SHARED_SKILL": 0,
-        "PARTIAL_PLACEMENT": 5,
+        "PARTIAL_PLACEMENT": 0,
         "PARTIAL_MISSING_DIRECT_SKILL": 0,
         "VERIFIED_LESSON_LOCAL": 4,
         "VERIFIED_DIRECT_AND_LOCAL": 4
@@ -528,6 +534,51 @@
         "learn": "VERIFIED_DIRECT",
         "micro": "VERIFIED_DIRECT",
         "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      },
+      {
+        "chapter": 4,
+        "lesson_ref": "Bài 18",
+        "summary": "Tam giác đều, hình vuông, lục giác đều",
+        "repair_status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json"
+      },
+      {
+        "chapter": 4,
+        "lesson_ref": "Bài 19",
+        "summary": "Tứ giác đặc biệt",
+        "repair_status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json"
+      },
+      {
+        "chapter": 4,
+        "lesson_ref": "Bài 20",
+        "summary": "Chu vi, diện tích và đo lường tứ giác",
+        "repair_status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json"
+      },
+      {
+        "chapter": 4,
+        "lesson_ref": "Bài 21",
+        "summary": "Trục đối xứng",
+        "repair_status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json"
+      },
+      {
+        "chapter": 4,
+        "lesson_ref": "Bài 22",
+        "summary": "Tâm đối xứng",
+        "repair_status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json"
       }
     ],
     "shared_skill_rerank_r1": {
@@ -555,6 +606,20 @@
       ],
       "clearance": "G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE",
       "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md"
+    },
+    "topic20_placement_r1": {
+      "status": "RECONCILED_EXISTING_PLACEMENT_R1",
+      "overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+      "overlay_sha": "71734904e6d8dc148e20982f31823d7a8d483150",
+      "display_sha": "ebd5e3e2a7d58d0a75a4cfafd7c026bbd693bd32",
+      "lessons": [
+        "Bài 18",
+        "Bài 19",
+        "Bài 20",
+        "Bài 21",
+        "Bài 22"
+      ],
+      "conclusion": "The remaining five PARTIAL_PLACEMENT rows were caused by the audit reading the immutable broad legacy workspace instead of the already released Topic20 v2 display partition. An audit-only exact placement overlay closes Bài 18–22 without new content, new skills, Micro changes, Practice changes, or learner-data migration."
     }
   },
   "rows": [
@@ -1811,7 +1876,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_PLACEMENT",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "nhan-biet-tam-giac-deu",
             "nhan-biet-hinh-vuong",
@@ -1824,10 +1889,18 @@
             "tam-doi-xung"
           ],
           "missing_direct_skills": [],
-          "placement_strength": "GRADE_BROAD",
+          "placement_strength": "KNTT_G6_EXACT_PLACEMENT_OVERLAY",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
             "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+          },
+          "placement_overlay": {
+            "path": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+            "sha": "71734904e6d8dc148e20982f31823d7a8d483150"
+          },
+          "display_overlay": {
+            "path": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+            "sha": "ebd5e3e2a7d58d0a75a4cfafd7c026bbd693bd32"
           }
         },
         "MICRO_PRACTICE": {
@@ -1866,6 +1939,18 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "method": "SOURCE_CONFIRMED_EXISTING_REVIEW",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "display_overlay": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+        "note": "No new academic content. Exact Grade-6 KNTT placement maps already reconciled semantic targets to already released Topic20 display-card skills; immutable legacy workspace and learner history remain unchanged.",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED"
       }
     },
     {
@@ -1892,7 +1977,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_PLACEMENT",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "nhan-biet-tam-giac-deu",
             "nhan-biet-hinh-vuong",
@@ -1905,10 +1990,18 @@
             "tam-doi-xung"
           ],
           "missing_direct_skills": [],
-          "placement_strength": "GRADE_BROAD",
+          "placement_strength": "KNTT_G6_EXACT_PLACEMENT_OVERLAY",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
             "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+          },
+          "placement_overlay": {
+            "path": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+            "sha": "71734904e6d8dc148e20982f31823d7a8d483150"
+          },
+          "display_overlay": {
+            "path": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+            "sha": "ebd5e3e2a7d58d0a75a4cfafd7c026bbd693bd32"
           }
         },
         "MICRO_PRACTICE": {
@@ -1943,6 +2036,18 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "method": "SOURCE_CONFIRMED_EXISTING_REVIEW",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "display_overlay": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+        "note": "No new academic content. Exact Grade-6 KNTT placement maps already reconciled semantic targets to already released Topic20 display-card skills; immutable legacy workspace and learner history remain unchanged.",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED"
       }
     },
     {
@@ -1971,7 +2076,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_PLACEMENT",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "nhan-biet-tam-giac-deu",
             "nhan-biet-hinh-vuong",
@@ -1984,10 +2089,18 @@
             "tam-doi-xung"
           ],
           "missing_direct_skills": [],
-          "placement_strength": "GRADE_BROAD",
+          "placement_strength": "KNTT_G6_EXACT_PLACEMENT_OVERLAY",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
             "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+          },
+          "placement_overlay": {
+            "path": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+            "sha": "71734904e6d8dc148e20982f31823d7a8d483150"
+          },
+          "display_overlay": {
+            "path": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+            "sha": "ebd5e3e2a7d58d0a75a4cfafd7c026bbd693bd32"
           }
         },
         "MICRO_PRACTICE": {
@@ -2026,6 +2139,18 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "method": "SOURCE_CONFIRMED_EXISTING_REVIEW",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "display_overlay": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+        "note": "No new academic content. Exact Grade-6 KNTT placement maps already reconciled semantic targets to already released Topic20 display-card skills; immutable legacy workspace and learner history remain unchanged.",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED"
       }
     },
     {
@@ -2050,7 +2175,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_PLACEMENT",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "nhan-biet-tam-giac-deu",
             "nhan-biet-hinh-vuong",
@@ -2063,10 +2188,18 @@
             "tam-doi-xung"
           ],
           "missing_direct_skills": [],
-          "placement_strength": "GRADE_BROAD",
+          "placement_strength": "KNTT_G6_EXACT_PLACEMENT_OVERLAY",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
             "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+          },
+          "placement_overlay": {
+            "path": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+            "sha": "71734904e6d8dc148e20982f31823d7a8d483150"
+          },
+          "display_overlay": {
+            "path": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+            "sha": "ebd5e3e2a7d58d0a75a4cfafd7c026bbd693bd32"
           }
         },
         "MICRO_PRACTICE": {
@@ -2101,6 +2234,18 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "method": "SOURCE_CONFIRMED_EXISTING_REVIEW",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "display_overlay": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+        "note": "No new academic content. Exact Grade-6 KNTT placement maps already reconciled semantic targets to already released Topic20 display-card skills; immutable legacy workspace and learner history remain unchanged.",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED"
       }
     },
     {
@@ -2125,7 +2270,7 @@
           ]
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_PLACEMENT",
+          "status": "VERIFIED_DIRECT",
           "card_skill_evidence": [
             "nhan-biet-tam-giac-deu",
             "nhan-biet-hinh-vuong",
@@ -2138,10 +2283,18 @@
             "tam-doi-xung"
           ],
           "missing_direct_skills": [],
-          "placement_strength": "GRADE_BROAD",
+          "placement_strength": "KNTT_G6_EXACT_PLACEMENT_OVERLAY",
           "workspace": {
             "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
             "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+          },
+          "placement_overlay": {
+            "path": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+            "sha": "71734904e6d8dc148e20982f31823d7a8d483150"
+          },
+          "display_overlay": {
+            "path": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+            "sha": "ebd5e3e2a7d58d0a75a4cfafd7c026bbd693bd32"
           }
         },
         "MICRO_PRACTICE": {
@@ -2176,6 +2329,18 @@
           "status": "NOT_VERIFIED_STRUCTURED",
           "evidence": null
         }
+      },
+      "repair_evidence": {
+        "status": "RECONCILED_EXISTING_PLACEMENT_R1",
+        "method": "SOURCE_CONFIRMED_EXISTING_REVIEW",
+        "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "display_overlay": "docs/assets/data/curriculum/topic20-core-display-v2.json",
+        "note": "No new academic content. Exact Grade-6 KNTT placement maps already reconciled semantic targets to already released Topic20 display-card skills; immutable legacy workspace and learner history remain unchanged.",
+        "learn": "VERIFIED_DIRECT",
+        "micro": "VERIFIED_DIRECT",
+        "practice": "TOPIC_SKILL_EVIDENCE",
+        "written": "NONE",
+        "readiness": "NOT_VERIFIED_STRUCTURED"
       }
     },
     {
