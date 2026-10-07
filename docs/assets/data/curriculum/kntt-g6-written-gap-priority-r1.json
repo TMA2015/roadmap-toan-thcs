@@ -5,11 +5,11 @@
   "source_locks": {
     "written_library": {
       "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
-      "sha": "720e8249317601ccb620541358af0725ccd8ba63"
+      "sha": "252fb3b1b2e140079f6035fab4bca5225497180a"
     },
     "grade6_dimension_audit": {
       "path": "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
-      "sha": "176084a75d58f6b23309c626426539817aa16bc1"
+      "sha": "716624246a0f54f31e27169326c301167c655d1b"
     },
     "grade6_reconciliation": {
       "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
@@ -159,7 +159,7 @@
     "NO_LEARNER_HISTORY_REGRADE",
     "NO_RUNTIME_TAXONOMY_CHANGE"
   ],
-  "status": "ACADEMIC_REVIEW_PENDING",
+  "status": "ACADEMIC_REVIEW_COMPLETE",
   "notebooklm_source_contract": {
     "permanent_sources": [
       "NotebookLM Math Review Rules v1.2",
@@ -177,5 +177,85 @@
       "Written Exercise Library Contract v1"
     ],
     "rule": "Project Sources and NotebookLM Sources are not identical; do not promote durable Project Sources into the NotebookLM selection unless the packet explicitly requires them."
+  },
+  "reviewed_source_locks": {
+    "written_library": {
+      "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+      "sha": "720e8249317601ccb620541358af0725ccd8ba63"
+    },
+    "grade6_dimension_audit": {
+      "path": "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+      "sha": "176084a75d58f6b23309c626426539817aa16bc1"
+    },
+    "grade6_reconciliation": {
+      "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
+      "sha": "38aa6e86781ac63e1481aa0080c3fbc2d819885b"
+    }
+  },
+  "review_result": {
+    "verdict": "PASS",
+    "clearance": "G6_WRITTEN_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+    "anti_inflation": "PASS",
+    "missing_decisions": "NONE",
+    "reuse": {
+      "approved": [
+        {
+          "exercise_id": "WX21-STA-001",
+          "lesson_ref": "Bài 38-41"
+        }
+      ],
+      "rejected": [
+        {
+          "exercise_id": "WX21-STA-002",
+          "lesson_ref": "Bài 38-41"
+        }
+      ]
+    },
+    "boundaries": {
+      "WX20-GEO-001": "NOT_G6_KNTT_PASS",
+      "WX23-PRO-002": "NOT_G6_KNTT_PASS"
+    },
+    "priorities": {
+      "Bài 27": "P0",
+      "Bài 20": "P0",
+      "Bài 34-37": "P0",
+      "Bài 38-41": "P1_REUSE_FIRST",
+      "Bài 42": "P1",
+      "Bài 30": "P2",
+      "Bài 23-24": "P2"
+    },
+    "defer_group": [
+      "Bài 1-10",
+      "Bài 13-19",
+      "Bài 25-26",
+      "Bài 28-29",
+      "Bài 32-33"
+    ],
+    "first_authoring_wave": [
+      "Bài 27",
+      "Bài 20",
+      "Bài 34-37"
+    ],
+    "max_new_items_wave1": 3,
+    "receipt": "review-packets/kntt-g6-written-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md"
+  },
+  "implementation": {
+    "status": "REUSE_PLACEMENT_RECONCILED_ON_REVIEW_BRANCH",
+    "approved_reuse_placement": {
+      "exercise_id": "WX21-STA-001",
+      "kntt_placement": {
+        "grade": 6,
+        "chapter": 9,
+        "lesson": "Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"
+      }
+    },
+    "rejected_reuse": "WX21-STA-002",
+    "current_grade6_written_counts": {
+      "VERIFIED_KNTT_PLACEMENT": 4,
+      "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 0,
+      "NONE": 27
+    },
+    "new_wave1_items_authored": 0,
+    "authoring_boundary": "Wave-1 exercise text still requires a separate candidate + independent review cycle."
   }
 }
