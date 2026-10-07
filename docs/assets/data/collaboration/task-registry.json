@@ -1,5 +1,5 @@
 {
-  "version": "1.0.233",
+  "version": "1.0.234",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-07",
   "statuses": [
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.233",
-      "review_verdict": "G6_WRITTEN_GAP_PRIORITY_R1_CLOSED_NEXT_WAVE1_AUTHORING",
-      "review_notes": "Grade-6 Written Gap Priority R1 is closed and deployed. WX21-STA-001 is reused as the fourth verified Grade-6 KNTT Written placement for Bài38-41; WX21-STA-002 is rejected for Grade 6. Current Written counts: 4 VERIFIED_KNTT_PLACEMENT / 27 NONE / 0 candidate-only. P0 Wave 1 is Bài27, Bài20, Bài34-37 with MAX_NEW_ITEMS_WAVE1=3. No Wave-1 item text has been authored yet; the next step is a separate candidate + NotebookLM review cycle.",
+      "context_version": "1.0.234",
+      "review_verdict": "G6_WRITTEN_WAVE1_R1_CLOSED_NEXT_P1_BAI42",
+      "review_notes": "Grade-6 Written Wave 1 R1 is independently reviewed, merged and deployed. Canonical Written Library is 53 items. Grade-6 Written coverage is 8 VERIFIED lesson rows / 23 NONE / 0 candidate-only, represented by 7 canonical items with KNTT placements because WX13-LIN-003 validly covers both Bài34-35 and Bài36-37. Next reviewed priority after Wave 1 is P1 Bài42 (Outcome/Event language); Bài38-41 reuse-first is already satisfied by WX21-STA-001.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1718,6 +1718,44 @@
           "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 0,
           "NONE": 27
         }
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-001",
+      "title": "Grade 6 Written Wave 1 deep anchors R1",
+      "routing": "ACADEMIC_REVIEW+CANONICAL_APPEND+DEPLOY",
+      "status": "DONE",
+      "context_version": "1.0.234",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_EXACT_HEAD_CI_PASS_PR354_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "NotebookLM PASS with clearance G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE. Published exactly three reviewed anchors: WX02-NUM-003→Bài27; WX20-GEO-003→Bài20; WX13-LIN-003→Bài34-35 + Bài36-37. All ARCH_1..ARCH_10 PASS; no new canonical skills; self-check remains formative only. Exact-head Roadmap PR Quality run 37650769438 SUCCESS on c07919879af6618e55ad112a3a8cfc1d292fa9d9, including strict MkDocs build and full browser QA. PR #354 squash-merged as 6cf05a3f3351062e6bfc70888ebe95241ddb7e0b; Deploy MkDocs run 37651658134 SUCCESS; gh-pages 4a945967f17ca5fa5c1509f4aad27e033309dee7 deploys 6cf05a3. Live Written Library=53; Grade-6 Written audit=8 VERIFIED rows / 23 NONE / 0 candidate-only; 7 Grade-6 canonical Written items with KNTT placements.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-g6-written-wave1-r1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "review-packets/kntt-g6-written-wave1-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "scripts/test-kntt-g6-written-wave1-r1.js",
+        "scripts/test-written-exercise-library-v1.js",
+        "scripts/test-written-exercise-library-browser.py"
+      ],
+      "release": {
+        "pr": 354,
+        "exact_head": "c07919879af6618e55ad112a3a8cfc1d292fa9d9",
+        "qa_run": 37650769438,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "6cf05a3f3351062e6bfc70888ebe95241ddb7e0b",
+        "deploy_run": 37651658134,
+        "deploy_conclusion": "SUCCESS",
+        "gh_pages_sha": "4a945967f17ca5fa5c1509f4aad27e033309dee7",
+        "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+        "live_written_library_count": 53,
+        "live_grade6_written_counts": {
+          "VERIFIED_KNTT_PLACEMENT_ROWS": 8,
+          "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 0,
+          "NONE": 23
+        },
+        "live_grade6_kntt_written_item_count": 7
       }
     }
   ]
