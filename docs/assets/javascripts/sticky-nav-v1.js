@@ -2,10 +2,13 @@
  "use strict";
  const sitePrefix = () => location.pathname.startsWith("/roadmap-toan-thcs/") ? "/roadmap-toan-thcs/" : "/";
  const mainDestinations = [
-   ["Trang chủ", "", "⌂"], ["Học theo lớp", "hoc-theo-lop/", "▣"],
-   ["Roadmap", "roadmap/", "◇"], ["AI Tutor", "ai/ai-tutor-core-contract/", "✦"],
-   ["Hướng dẫn", "huong-dan/lo-trinh-tu-hoc/", "☷"], ["Kiến thức", "kien-thuc/", "▤"],
-   ["Thư viện bài tập", "luyen-tap/", "✎"]
+   ["Trang chủ", "", "⌂"],
+   ["Roadmap", "roadmap/", "◇"],
+   ["Hướng dẫn", "huong-dan/", "☷"],
+   ["25 chuyên đề", "kien-thuc/", "▤"],
+   ["Học theo KNTT", "hoc-theo-lop/", "▣"],
+   ["Thư viện bài tập", "luyen-tap/", "✎"],
+   ["AI", "ai/", "✦"]
  ];
  // Canonical 25-topic spine, generated from the current mkdocs.yml nav.
  const topics = [["01-ban-do-chuong-trinh","01. Bản đồ chương trình Toán THCS"],["02-so-va-phep-tinh","02. Số và phép tính"],["03-ti-le-ti-le-thuc","03. Tỉ lệ – Tỉ lệ thức"],["04-bieu-thuc-dai-so","04. Biểu thức đại số"],["05-7-hang-dang-thuc","05. 7 Hằng đẳng thức"],["06-phan-tich-da-thuc","06. Phân tích đa thức"],["07-phan-thuc-dai-so","07. Phân thức đại số"],["08-phuong-trinh-bat-phuong-trinh","08. Phương trình – Bất phương trình"],["09-he-phuong-trinh","09. Hệ phương trình"],["10-ham-so-do-thi","10. Hàm số và đồ thị"],["11-can-thuc","11. Căn thức"],["12-phuong-trinh-bac-hai-viete","12. Phương trình bậc hai & Viète"],["13-goc-va-duong-thang","13. Góc và đường thẳng"],["14-tam-giac","14. Tam giác"],["15-duong-dong-quy","15. Các đường đồng quy"],["16-tu-giac","16. Tứ giác"],["17-thales-dong-dang","17. Thales và đồng dạng"],["18-he-thuc-luong","18. Hệ thức lượng"],["19-duong-tron","19. Đường tròn"],["20-hinh-hoc-tong-hop","20. Hình học tổng hợp"],["21-thong-ke","21. Thống kê"],["22-dai-luong-dac-trung","22. Đại lượng đặc trưng"],["23-xac-suat","23. Xác suất"],["24-bai-toan-thuc-te","24. Bài toán thực tế"],["25-tong-hop-on-thi-10","25. Tổng hợp & ôn thi vào 10"]];
