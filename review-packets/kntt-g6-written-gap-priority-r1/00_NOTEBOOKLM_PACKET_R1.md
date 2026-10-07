@@ -4,16 +4,19 @@
 **scope:** Decide what Grade-6 Written work should be reused or authored next after Written Placement R1  
 **release boundary:** ACADEMIC REVIEW / PRIORITIZATION ONLY — no new item authoring or repository placement mutation from this review alone
 
-## 1. Select exactly 6 Sources
+## 1. Select exactly 5 Sources
+
+NotebookLM source selection for this review follows the project invariant: **2 permanent governance sources + 2 Grade-6 SGK sources + 1 temporary review packet = 5 selected Sources total.**
 
 1. **NotebookLM Math Review Rules v1.2**
 2. **Self-Learning Math Master Plan v1.2.1**
-3. **Written Exercise Library Contract v1**
-4. **SGK Toán 6, tập một — Kết nối tri thức với cuộc sống**
-5. **SGK Toán 6, tập hai — Kết nối tri thức với cuộc sống**
-6. **This packet — NotebookLM Review Packet — Grade 6 Written Gap Priority R1**
+3. **SGK Toán 6, tập một — Kết nối tri thức với cuộc sống**
+4. **SGK Toán 6, tập hai — Kết nối tri thức với cuộc sống**
+5. **00_NOTEBOOKLM_PACKET_R1.md — NotebookLM Review Packet — Grade 6 Written Gap Priority R1**
 
-Do not select older Written-gap drafts, old Master Plan versions, or unrelated grade packets.
+**Do not add `Written Exercise Library Contract v1` as a separate NotebookLM Source for this round.** It is a durable Project Source, not one of the two permanent NotebookLM sources. The placement / prerequisite / anti-duplication rules needed for this review are already represented by the current Master Plan, NotebookLM Review Rules, and this packet.
+
+Do not select older Written-gap drafts, old Master Plan versions, unrelated grade packets, or additional Project Sources.
 
 ## 2. Current reviewed state
 
