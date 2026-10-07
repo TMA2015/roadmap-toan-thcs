@@ -44,15 +44,17 @@ assert.equal(counts.LEARN_CONTENT.PARTIAL_SHARED_SKILL,0);
 assert.equal(counts.LEARN_CONTENT.PARTIAL_PLACEMENT,0);
 assert.equal(counts.MICRO_PRACTICE.PARTIAL,0);
 assert.equal(counts.PRACTICE_BANK.NONE,0);
-assert.equal(counts.WRITTEN_LIBRARY.CANDIDATE_ONLY_NO_KNTT_PLACEMENT,5);
+assert.equal(counts.WRITTEN_LIBRARY.VERIFIED_KNTT_PLACEMENT,3);
+assert.equal(counts.WRITTEN_LIBRARY.CANDIDATE_ONLY_NO_KNTT_PLACEMENT,0);
+assert.equal(counts.WRITTEN_LIBRARY.NONE,28);
 assert.equal(counts.READINESS.AUTHORIZED_TOPIC_LEVEL,1);
 assert.equal(counts.READINESS.NOT_VERIFIED_STRUCTURED,29);
 assert.equal(counts.READINESS.REVIEWED_STRUCTURED_READINESS,1);
 assert.equal(counts.READINESS.PENDING_REVIEW,0);
 
 const written=json(a.source_locks.written_library.path);
-assert.equal((written.exercises||[]).filter(e=>e.kntt_placements).length,0);
-assert.equal(a.summary.written_library_kntt_placement_count,0);
+assert.equal((written.exercises||[]).filter(e=>e.kntt_placements).length,3);
+assert.equal(a.summary.written_library_kntt_placement_count,3);
 
 const byLesson=Object.fromEntries(a.rows.map(r=>[r.lesson_ref,r]));
 assert.equal(byLesson["Bài 30"].dimensions.LEARN_CONTENT.status,"VERIFIED_DIRECT");
