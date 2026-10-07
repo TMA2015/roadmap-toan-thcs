@@ -27,8 +27,22 @@ The audit is deliberately conservative. Topic-level evidence is not promoted to 
 | LEARN_CONTENT | 11 VERIFIED_DIRECT; 4 VERIFIED_LESSON_LOCAL; 4 VERIFIED_DIRECT_AND_LOCAL; 12 partial in different forms |
 | MICRO_PRACTICE | 16 VERIFIED_DIRECT; 4 VERIFIED_LESSON_LOCAL; 4 VERIFIED_DIRECT_AND_LOCAL; 7 PARTIAL; 0 FAMILY_LEVEL_ONLY; 0 NONE |
 | PRACTICE_BANK | 23 TOPIC_SKILL_EVIDENCE; 4 PARTIAL_TOPIC_EVIDENCE; 4 FAMILY_LEVEL_TOPIC_EVIDENCE; 0 NONE |
-| WRITTEN_LIBRARY | 5 CANDIDATE_ONLY_NO_KNTT_PLACEMENT; 26 NONE |
+| WRITTEN_LIBRARY | 3 `VERIFIED_KNTT_PLACEMENT`; 28 `NONE`; 0 candidate-only |
 | READINESS | 1 AUTHORIZED_TOPIC_LEVEL; 2 PENDING_REVIEW; 28 NOT_VERIFIED_STRUCTURED |
+
+## 2A. Written Placement R1 — REVIEWED / RECONCILED 07/10/2026
+
+Independent NotebookLM review passed all three canonical Written placement candidates with clearance `G6_WRITTEN_PLACEMENT_R1_CONTENT_REVIEW_COMPLETE`.
+
+- `WX02-NUM-001` → **Bài 11–12**. Bài 10 prime factorization is supporting computation only.
+- `WX02-NUM-002` → **Bài 31**. Bài 28–29 decimal arithmetic is supporting computation only.
+- `WX23-PRO-001` → **Bài 43**. Bài 42 outcome/event language is supporting vocabulary only.
+- Exactly **3** canonical `kntt_placements` were added; no Written item was cloned and no problem, solution, rubric, skill taxonomy, Readiness, Mastery or learner-history semantics changed.
+- The two prerequisite-overlap rows (**Bài 10**, **Bài 28–29**) are now `NONE` in the Written dimension rather than false-positive candidates.
+
+Review receipt: `review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md`.
+
+> The detailed repair sections below preserve their historical Learn/Micro checkpoint wording. This reconciliation supersedes their earlier Written candidate status where applicable.
 
 ## 3. Most important findings
 

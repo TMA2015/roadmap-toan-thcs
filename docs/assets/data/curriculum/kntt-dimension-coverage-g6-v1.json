@@ -1,9 +1,9 @@
 {
   "schema": "kntt-dimension-coverage-audit-v1",
   "version": 1,
-  "as_of": "2026-10-06",
+  "as_of": "2026-10-07",
   "grade": 6,
-  "status": "G6_PILOT_AUDIT_TOPIC20_PLACEMENT_RECONCILED_R1",
+  "status": "G6_WRITTEN_PLACEMENT_RECONCILED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -21,7 +21,7 @@
     },
     "written_library": {
       "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
-      "blob_sha": "e9ab1f2ad3a3f5a63461694b0f08271b13fe161f"
+      "blob_sha": "720e8249317601ccb620541358af0725ccd8ba63"
     },
     "topic_evidence": {
       "02-so-va-phep-tinh": {
@@ -346,7 +346,7 @@
     "LEARN_CONTENT": "VERIFIED_DIRECT requires direct canonical skills in a lesson-matched workspace card; PARTIAL statuses expose family/local, broad placement, shared-skill granularity, or missing direct skill.",
     "MICRO_PRACTICE": "VERIFIED_DIRECT requires Grade-6-tagged micro evidence for every direct skill. FAMILY_LEVEL_ONLY is not equivalent to direct lesson evidence.",
     "PRACTICE_BANK": "Topic-level manifests prove a bank/skill exists but not Grade-6 lesson placement; therefore no Practice status is called FULL.",
-    "WRITTEN_LIBRARY": "Current v1 has grade_overlay/topic_id but zero kntt_placements fields, so matching exercises are candidate-only, never verified lesson coverage.",
+    "WRITTEN_LIBRARY": "VERIFIED_KNTT_PLACEMENT requires an independently reviewed true curriculum placement in the canonical Written Library. Supporting/prerequisite skill overlap does not count as placement.",
     "READINESS": "Only explicit structured assessment evidence is counted. REVIEWED_STRUCTURED_READINESS requires independent academic PASS on lesson-matched assessment items; topic-level authorization remains distinct."
   },
   "protected_boundaries": {
@@ -387,8 +387,9 @@
         "NONE": 0
       },
       "WRITTEN_LIBRARY": {
-        "NONE": 26,
-        "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 5
+        "VERIFIED_KNTT_PLACEMENT": 3,
+        "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 0,
+        "NONE": 28
       },
       "READINESS": {
         "NOT_VERIFIED_STRUCTURED": 29,
@@ -397,7 +398,7 @@
         "PENDING_REVIEW": 0
       }
     },
-    "written_library_kntt_placement_count": 0,
+    "written_library_kntt_placement_count": 3,
     "priority_gap_rows": [],
     "repaired_rows": [
       {
@@ -474,7 +475,8 @@
         "micro": "VERIFIED_DIRECT",
         "practice": "TOPIC_SKILL_EVIDENCE",
         "readiness": "NOT_VERIFIED_STRUCTURED",
-        "review_basis": "Existing reviewed semantic reconciliation + deployed Topic02/Topic03 evidence; no new content"
+        "review_basis": "Existing reviewed semantic reconciliation + deployed Topic02/Topic03 evidence; no new content",
+        "written": "VERIFIED_KNTT_PLACEMENT"
       },
       {
         "chapter": 1,
@@ -496,7 +498,8 @@
         "micro": "VERIFIED_DIRECT_AND_LOCAL",
         "practice": "PARTIAL_TOPIC_EVIDENCE",
         "readiness": "NOT_VERIFIED_STRUCTURED",
-        "review_basis": "Reviewed semantic reconciliation + deterministic UCLN/BCNN application problem type"
+        "review_basis": "Reviewed semantic reconciliation + deterministic UCLN/BCNN application problem type",
+        "written": "VERIFIED_KNTT_PLACEMENT"
       },
       {
         "chapter": 6,
@@ -534,7 +537,8 @@
         "repair_status": "REPAIRED_REVIEWED_R1",
         "learn": "VERIFIED_DIRECT",
         "micro": "VERIFIED_DIRECT",
-        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md"
+        "review_receipt": "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "written": "NONE"
       },
       {
         "chapter": 4,
@@ -646,6 +650,20 @@
         "b43_status": "REVIEWED_STRUCTURED_READINESS",
         "b42_status": "NOT_VERIFIED_STRUCTURED"
       }
+    },
+    "written_placement_reconciliation": {
+      "packet_id": "MATH-KNTT-G6-WRITTEN-PLACEMENT-R1-20261006",
+      "clearance": "G6_WRITTEN_PLACEMENT_R1_CONTENT_REVIEW_COMPLETE",
+      "verified_rows": [
+        "Bài 11-12",
+        "Bài 31",
+        "Bài 43"
+      ],
+      "rejected_prerequisite_overlap_rows": [
+        "Bài 10",
+        "Bài 28-29"
+      ],
+      "review_receipt": "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md"
     }
   },
   "rows": [
@@ -1273,18 +1291,14 @@
           "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
         },
         "WRITTEN_LIBRARY": {
-          "status": "CANDIDATE_ONLY_NO_KNTT_PLACEMENT",
-          "candidates": [
-            {
-              "exercise_id": "WX02-NUM-001",
-              "topic_id": "CT02",
-              "skills": [
-                "ucln",
-                "phan-tich-thua-so-nguyen-to"
-              ]
-            }
-          ],
-          "note": "Current library has no kntt_placements field; candidates cannot be promoted to verified KNTT lesson coverage."
+          "status": "NONE",
+          "candidates": [],
+          "rejected_overlap": {
+            "exercise_id": "WX02-NUM-001",
+            "review_receipt": "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md",
+            "reason": "Prime factorization is a supporting calculation method for the reviewed ƯCLN application, not this exercise's primary curriculum placement."
+          },
+          "note": "Reviewed prerequisite/supporting-skill overlap; no KNTT Written placement is claimed for this lesson."
         },
         "READINESS": {
           "status": "NOT_VERIFIED_STRUCTURED",
@@ -1393,18 +1407,21 @@
           "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
         },
         "WRITTEN_LIBRARY": {
-          "status": "CANDIDATE_ONLY_NO_KNTT_PLACEMENT",
-          "candidates": [
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
             {
               "exercise_id": "WX02-NUM-001",
-              "topic_id": "CT02",
-              "skills": [
-                "ucln",
-                "phan-tich-thua-so-nguyen-to"
-              ]
+              "grade": 6,
+              "chapter": 2,
+              "lesson": "Bài 11–12 — Ước chung, ƯCLN; bội chung, BCNN và ứng dụng"
             }
           ],
-          "note": "Current library has no kntt_placements field; candidates cannot be promoted to verified KNTT lesson coverage."
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-PLACEMENT-R1-20261006",
+            "clearance": "G6_WRITTEN_PLACEMENT_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent placement review confirms this as the exercise's true Grade-6 KNTT curriculum placement."
         },
         "READINESS": {
           "status": "NOT_VERIFIED_STRUCTURED",
@@ -1417,9 +1434,9 @@
         "learn": "VERIFIED_DIRECT_AND_LOCAL",
         "micro": "VERIFIED_DIRECT_AND_LOCAL",
         "practice": "PARTIAL_TOPIC_EVIDENCE",
-        "written": "CANDIDATE_ONLY_NO_KNTT_PLACEMENT",
+        "written": "VERIFIED_KNTT_PLACEMENT",
         "readiness": "NOT_VERIFIED_STRUCTURED",
-        "note": "Learn + Micro direct/local gap repaired. Practice remains topic-level partial evidence; Written candidate lacks canonical KNTT placement; Readiness remains open."
+        "note": "Learn + Micro direct/local gap repaired. Practice remains topic-level partial evidence; Readiness remains open."
       }
     },
     {
@@ -2769,18 +2786,14 @@
           "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
         },
         "WRITTEN_LIBRARY": {
-          "status": "CANDIDATE_ONLY_NO_KNTT_PLACEMENT",
-          "candidates": [
-            {
-              "exercise_id": "WX02-NUM-002",
-              "topic_id": "CT02",
-              "skills": [
-                "phan-tram",
-                "so-huu-ti-thap-phan"
-              ]
-            }
-          ],
-          "note": "Current library has no kntt_placements field; candidates cannot be promoted to verified KNTT lesson coverage."
+          "status": "NONE",
+          "candidates": [],
+          "rejected_overlap": {
+            "exercise_id": "WX02-NUM-002",
+            "review_receipt": "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md",
+            "reason": "Decimal arithmetic is supporting computation for the reviewed percentage problem, not this exercise's primary curriculum placement."
+          },
+          "note": "Reviewed prerequisite/supporting-skill overlap; no KNTT Written placement is claimed for this lesson."
         },
         "READINESS": {
           "status": "NOT_VERIFIED_STRUCTURED",
@@ -2795,7 +2808,7 @@
         "learn": "VERIFIED_DIRECT",
         "micro": "VERIFIED_DIRECT",
         "practice": "TOPIC_SKILL_EVIDENCE",
-        "written": "CANDIDATE_ONLY_NO_KNTT_PLACEMENT",
+        "written": "NONE",
         "readiness": "NOT_VERIFIED_STRUCTURED",
         "note": "NotebookLM PASS authorizes Learn/Micro promotion only; Practice, Written and Readiness remain unchanged."
       }
@@ -3073,18 +3086,21 @@
           ]
         },
         "WRITTEN_LIBRARY": {
-          "status": "CANDIDATE_ONLY_NO_KNTT_PLACEMENT",
-          "candidates": [
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
             {
               "exercise_id": "WX02-NUM-002",
-              "topic_id": "CT02",
-              "skills": [
-                "phan-tram",
-                "so-huu-ti-thap-phan"
-              ]
+              "grade": 6,
+              "chapter": 7,
+              "lesson": "Bài 31 — Một số bài toán về tỉ số và tỉ số phần trăm"
             }
           ],
-          "note": "Current library has no kntt_placements field; candidates cannot be promoted to verified KNTT lesson coverage."
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-PLACEMENT-R1-20261006",
+            "clearance": "G6_WRITTEN_PLACEMENT_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent placement review confirms this as the exercise's true Grade-6 KNTT curriculum placement."
         },
         "READINESS": {
           "status": "NOT_VERIFIED_STRUCTURED",
@@ -3097,7 +3113,7 @@
         "learn": "VERIFIED_DIRECT",
         "micro": "VERIFIED_DIRECT",
         "practice": "TOPIC_SKILL_EVIDENCE",
-        "written": "CANDIDATE_ONLY_NO_KNTT_PLACEMENT",
+        "written": "VERIFIED_KNTT_PLACEMENT",
         "readiness": "NOT_VERIFIED_STRUCTURED",
         "note": "The prior gap was caused by auditing only the primary Topic03 workspace. Bài 31 already spans Topic03 and secondary Topic02; existing evidence covers all direct skills."
       }
@@ -3734,18 +3750,21 @@
           "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
         },
         "WRITTEN_LIBRARY": {
-          "status": "CANDIDATE_ONLY_NO_KNTT_PLACEMENT",
-          "candidates": [
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
             {
               "exercise_id": "WX23-PRO-001",
-              "topic_id": "CT23",
-              "skills": [
-                "xac-suat-thuc-nghiem",
-                "kiem-tra-xac-suat"
-              ]
+              "grade": 6,
+              "chapter": 9,
+              "lesson": "Bài 43 — Xác suất thực nghiệm"
             }
           ],
-          "note": "Current library has no kntt_placements field; candidates cannot be promoted to verified KNTT lesson coverage."
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-PLACEMENT-R1-20261006",
+            "clearance": "G6_WRITTEN_PLACEMENT_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent placement review confirms this as the exercise's true Grade-6 KNTT curriculum placement."
         },
         "READINESS": {
           "status": "REVIEWED_STRUCTURED_READINESS",
