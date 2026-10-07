@@ -42,7 +42,12 @@ for(const p of placement.placements){
   assert.equal(byLesson[p.lesson_ref].dimensions.LEARN_CONTENT.placement_strength,"KNTT_G6_EXACT_PLACEMENT_OVERLAY");
   assert.equal(byLesson[p.lesson_ref].dimensions.MICRO_PRACTICE.status,"VERIFIED_DIRECT");
   assert.equal(byLesson[p.lesson_ref].dimensions.PRACTICE_BANK.status,"TOPIC_SKILL_EVIDENCE");
-  assert.equal(byLesson[p.lesson_ref].dimensions.WRITTEN_LIBRARY.status,"NONE");
+  if(p.lesson_ref==="Bài 20"){
+    assert.equal(byLesson[p.lesson_ref].dimensions.WRITTEN_LIBRARY.status,"VERIFIED_KNTT_PLACEMENT");
+    assert.equal(byLesson[p.lesson_ref].dimensions.WRITTEN_LIBRARY.placements[0].exercise_id,"WX20-GEO-003");
+  }else{
+    assert.equal(byLesson[p.lesson_ref].dimensions.WRITTEN_LIBRARY.status,"NONE");
+  }
   assert.equal(byLesson[p.lesson_ref].dimensions.READINESS.status,"NOT_VERIFIED_STRUCTURED");
   assert.equal(byLesson[p.lesson_ref].repair_evidence.status,"RECONCILED_EXISTING_PLACEMENT_R1");
 }
@@ -53,4 +58,4 @@ for(const [k,v] of Object.entries(placement.protected_boundaries)) assert.equal(
 for(const [k,v] of Object.entries(audit.protected_boundaries)) assert.equal(v,false,"audit protected boundary changed: "+k);
 
 console.log("PASS: Bài 18–22 exact KNTT placement maps to existing source-locked Topic20 display cards with exact direct-skill unions.");
-console.log("PASS: legacy workspace, Micro bank and learner-data boundaries remain immutable; no new academic content or canonical skill.");
+console.log("PASS: legacy workspace, Micro bank and learner-data boundaries remain immutable; later reviewed Written coverage at Bài 20 does not alter the placement overlay.");
