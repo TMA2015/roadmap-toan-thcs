@@ -32,7 +32,8 @@ const byId=Object.fromEntries(library.exercises.map(x=>[x.exercise_id,x]));
 assert.equal(library.exercises.length,50);
 assert.equal(library.auto_readiness_credit,false);
 assert.equal(library.self_marking_only,true);
-assert.equal(library.exercises.filter(x=>x.kntt_placements).length,3);
+assert.equal(library.exercises.filter(x=>x.kntt_placements).length,4);
+assert.deepEqual(byId["WX21-STA-001"].kntt_placements,[{grade:6,chapter:9,lesson:"Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"}]);
 
 for(const [id,p] of Object.entries(expected)){
   const item=byId[id];
@@ -45,11 +46,11 @@ assert.ok(!JSON.stringify(byId["WX02-NUM-002"].kntt_placements).includes("Bài 2
 assert.ok(!JSON.stringify(byId["WX23-PRO-001"].kntt_placements).includes("Bài 42"));
 
 assert.equal(blob(read(audit.source_locks.written_library.path)),audit.source_locks.written_library.blob_sha);
-assert.equal(audit.summary.written_library_kntt_placement_count,3);
+assert.equal(audit.summary.written_library_kntt_placement_count,4);
 assert.deepEqual(audit.summary.dimension_status_counts.WRITTEN_LIBRARY,{
-  VERIFIED_KNTT_PLACEMENT:3,
+  VERIFIED_KNTT_PLACEMENT:4,
   CANDIDATE_ONLY_NO_KNTT_PLACEMENT:0,
-  NONE:28
+  NONE:27
 });
 
 const rows=Object.fromEntries(audit.rows.map(r=>[r.lesson_ref,r]));
@@ -58,6 +59,6 @@ for(const ref of ["Bài 11-12","Bài 31","Bài 43"])
 for(const ref of ["Bài 10","Bài 28-29"])
   assert.equal(rows[ref].dimensions.WRITTEN_LIBRARY.status,"NONE",ref);
 
-console.log("PASS: exactly 3 reviewed canonical Written items have true Grade-6 KNTT placements.");
+console.log("PASS: the 3 Written Placement R1 items remain correct; current Grade-6 library also includes the later reviewed WX21-STA-001 reuse placement.");
 console.log("PASS: Bài 10 and Bài 28–29 prerequisite/supporting overlaps are rejected as placement.");
 console.log("PASS: no item cloning, Readiness credit, Mastery, learner-history or runtime-taxonomy change is introduced.");
