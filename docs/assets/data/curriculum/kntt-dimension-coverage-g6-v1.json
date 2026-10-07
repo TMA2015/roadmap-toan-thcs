@@ -3,7 +3,7 @@
   "version": 1,
   "as_of": "2026-10-07",
   "grade": 6,
-  "status": "G6_WRITTEN_PLACEMENT_RECONCILED_R1",
+  "status": "G6_WRITTEN_GAP_PRIORITY_RECONCILED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -21,7 +21,7 @@
     },
     "written_library": {
       "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
-      "blob_sha": "720e8249317601ccb620541358af0725ccd8ba63"
+      "blob_sha": "252fb3b1b2e140079f6035fab4bca5225497180a"
     },
     "topic_evidence": {
       "02-so-va-phep-tinh": {
@@ -387,9 +387,9 @@
         "NONE": 0
       },
       "WRITTEN_LIBRARY": {
-        "VERIFIED_KNTT_PLACEMENT": 3,
+        "VERIFIED_KNTT_PLACEMENT": 4,
         "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 0,
-        "NONE": 28
+        "NONE": 27
       },
       "READINESS": {
         "NOT_VERIFIED_STRUCTURED": 29,
@@ -398,7 +398,7 @@
         "PENDING_REVIEW": 0
       }
     },
-    "written_library_kntt_placement_count": 3,
+    "written_library_kntt_placement_count": 4,
     "priority_gap_rows": [],
     "repaired_rows": [
       {
@@ -664,6 +664,56 @@
         "Bài 28-29"
       ],
       "review_receipt": "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md"
+    },
+    "written_gap_priority_reconciliation": {
+      "packet_id": "MATH-KNTT-G6-WRITTEN-GAP-PRIORITY-R1-20261007",
+      "clearance": "G6_WRITTEN_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+      "reused_approved": [
+        {
+          "exercise_id": "WX21-STA-001",
+          "lesson_ref": "Bài 38-41"
+        }
+      ],
+      "reuse_rejected": [
+        {
+          "exercise_id": "WX21-STA-002",
+          "lesson_ref": "Bài 38-41",
+          "reason": "Whole task exceeds Grade-6 Bài 38–41 primary scope because percentage increase and causal-claim analysis are material components."
+        }
+      ],
+      "boundaries_confirmed": [
+        "WX20-GEO-001:NOT_G6_KNTT",
+        "WX23-PRO-002:NOT_G6_KNTT"
+      ],
+      "authoring_priorities": {
+        "P0": [
+          "Bài 27",
+          "Bài 20",
+          "Bài 34-37"
+        ],
+        "P1": [
+          "Bài 38-41 reuse-first",
+          "Bài 42"
+        ],
+        "P2": [
+          "Bài 30",
+          "Bài 23-24"
+        ],
+        "defer_group": [
+          "Bài 1-10",
+          "Bài 13-19",
+          "Bài 25-26",
+          "Bài 28-29",
+          "Bài 32-33"
+        ]
+      },
+      "first_authoring_wave": [
+        "Bài 27",
+        "Bài 20",
+        "Bài 34-37"
+      ],
+      "max_new_items_wave1": 3,
+      "review_receipt": "review-packets/kntt-g6-written-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md"
     }
   },
   "rows": [
@@ -3557,9 +3607,21 @@
           "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
         },
         "WRITTEN_LIBRARY": {
-          "status": "NONE",
-          "candidates": [],
-          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX21-STA-001",
+              "grade": 6,
+              "chapter": 9,
+              "lesson": "Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-GAP-PRIORITY-R1-20261007",
+            "clearance": "G6_WRITTEN_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent S1-grounded review confirms the whole WX21-STA-001 task as a true Grade-6 Bài 38–41 curriculum placement."
         },
         "READINESS": {
           "status": "AUTHORIZED_TOPIC_LEVEL",
@@ -3578,9 +3640,9 @@
         "learn": "VERIFIED_DIRECT_AND_LOCAL",
         "micro": "VERIFIED_DIRECT_AND_LOCAL",
         "practice": "PARTIAL_TOPIC_EVIDENCE",
-        "written": "NONE",
+        "written": "VERIFIED_KNTT_PLACEMENT",
         "readiness": "AUTHORIZED_TOPIC_LEVEL",
-        "note": "Learn and Grade-6 Micro gap repaired. Practice and Readiness scope are unchanged."
+        "note": "Learn and Grade-6 Micro gap repaired. Practice and Readiness scope are unchanged. Written reuse is now independently reviewed and verified via WX21-STA-001."
       }
     },
     {
