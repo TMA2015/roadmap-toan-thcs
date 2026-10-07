@@ -1,0 +1,163 @@
+{
+  "packet_id": "MATH-KNTT-G6-WRITTEN-GAP-PRIORITY-R1-20261007",
+  "as_of": "2026-10-07",
+  "scope": "Grade 6 KNTT Written Library gap prioritization after placement reconciliation; prefer reuse and high-value written reasoning over quota expansion",
+  "source_locks": {
+    "written_library": {
+      "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+      "sha": "720e8249317601ccb620541358af0725ccd8ba63"
+    },
+    "grade6_dimension_audit": {
+      "path": "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+      "sha": "176084a75d58f6b23309c626426539817aa16bc1"
+    },
+    "grade6_reconciliation": {
+      "path": "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
+      "sha": "38aa6e86781ac63e1481aa0080c3fbc2d819885b"
+    }
+  },
+  "current_state": {
+    "grade6_kntt_rows": 31,
+    "written_library_items": 50,
+    "grade6_verified_kntt_placements": 3,
+    "grade6_candidate_only_rows": 0,
+    "grade6_none_rows": 28,
+    "verified_items": [
+      {
+        "exercise_id": "WX02-NUM-001",
+        "lesson_ref": "Bài 11-12"
+      },
+      {
+        "exercise_id": "WX02-NUM-002",
+        "lesson_ref": "Bài 31"
+      },
+      {
+        "exercise_id": "WX23-PRO-001",
+        "lesson_ref": "Bài 43"
+      }
+    ]
+  },
+  "principles": [
+    "DO_NOT_EXPAND_BY_ITEM_COUNT_OR_ONE_ITEM_PER_LESSON_QUOTA",
+    "PREFER_STRUCTURAL_DIVERSITY_AND_HIGH_VALUE_WRITTEN_ANCHORS",
+    "PREFER_REUSE_OF_EXISTING_CANONICAL_ITEMS_BEFORE_NEW_AUTHORING",
+    "KNTT_PLACEMENT_REQUIRES_TRUE_CURRICULUM_PURPOSE_NOT_SKILL_OVERLAP",
+    "WRITTEN_SELF_CHECK_DOES_NOT_GRANT_READINESS_OR_MASTERY"
+  ],
+  "existing_item_reuse_candidates": [
+    {
+      "exercise_id": "WX21-STA-001",
+      "proposed_lesson_ref": "Bài 38-41",
+      "current_grade_overlay": [
+        8
+      ],
+      "current_problem_type": "Chuyển bảng số liệu thành biểu đồ cột và nhận xét",
+      "exact_grade6_skill_overlap": [
+        "doc-bieu-do-cot",
+        "nhan-xet-du-lieu"
+      ],
+      "candidate_reason": "The task converts a data table to a bar chart, requires a hand-drawn chart with scale/units, and asks for a data-bounded written comment. These structures overlap the reviewed Grade-6 statistics row, but true Grade-6 KNTT placement still requires S1 confirmation.",
+      "status": "REVIEW_REQUIRED"
+    },
+    {
+      "exercise_id": "WX21-STA-002",
+      "proposed_lesson_ref": "Bài 38-41",
+      "current_grade_overlay": [
+        8
+      ],
+      "current_problem_type": "So sánh hai dãy số liệu, tính mức tăng và giới hạn kết luận",
+      "exact_grade6_skill_overlap": [
+        "doc-bieu-do-cot-kep",
+        "nhan-xet-du-lieu"
+      ],
+      "supporting_grade6_knowledge": [
+        "phan-tram"
+      ],
+      "candidate_reason": "The task reads a double-bar data representation and writes bounded conclusions; percentage calculation is supporting knowledge already present in Grade 6. True Grade-6 KNTT placement still requires S1 confirmation.",
+      "status": "REVIEW_REQUIRED"
+    }
+  ],
+  "explicit_non_reuse_boundaries": [
+    {
+      "exercise_id": "WX20-GEO-001",
+      "decision_hypothesis": "NOT_GRADE6_KNTT_PLACEMENT",
+      "reason": "The task's primary target is rectangular-prism lateral area and volume; Grade-6 KNTT audit rows here cover plane figures, perimeter/area and symmetry. Grade overlay or prerequisite overlap is not curriculum placement."
+    },
+    {
+      "exercise_id": "WX23-PRO-002",
+      "decision_hypothesis": "NOT_GRADE6_KNTT_PLACEMENT",
+      "reason": "The task's primary target includes classical probability and equal-likelihood reasoning; experimental probability is only one component. Grade-6 Bài 43 placement must not be inferred from one overlapping skill."
+    }
+  ],
+  "priority_hypothesis": [
+    {
+      "lesson_ref": "Bài 27",
+      "priority": "P0",
+      "focus": "Hai bài toán về phân số",
+      "reason": "Two reviewed problem types require translating verbal relationships into operations and distinguishing direct from inverse fraction reasoning; this is a natural full-process written bottleneck."
+    },
+    {
+      "lesson_ref": "Bài 20",
+      "priority": "P0",
+      "focus": "Chu vi và diện tích một số tứ giác đã học",
+      "reason": "Multi-step geometric measurement, unit discipline and real-context interpretation are better evidenced by full written work than by recognition-only items."
+    },
+    {
+      "lesson_ref": "Bài 34-37",
+      "priority": "P0",
+      "focus": "Đoạn thẳng, trung điểm, góc, số đo và phân loại góc",
+      "reason": "Paper-based drawing/measurement/representation and short geometry reasoning are poorly represented by final-answer-only interaction; prioritize one or more structurally distinct anchors rather than one per lesson."
+    },
+    {
+      "lesson_ref": "Bài 38-41",
+      "priority": "P1_REUSE_FIRST",
+      "focus": "Bảng/biểu đồ và nhận xét dữ liệu",
+      "reason": "High written value, but two already-approved CT21 items may be reusable if S1 confirms genuine Grade-6 placement. Do not author duplicates before reuse review."
+    },
+    {
+      "lesson_ref": "Bài 42",
+      "priority": "P1",
+      "focus": "Kết quả có thể và sự kiện",
+      "reason": "Listing outcomes and explaining event language can benefit from written reasoning, but the lesson is conceptually smaller and should follow the higher-value modelling/geometry anchors."
+    },
+    {
+      "lesson_ref": "Bài 30",
+      "priority": "P1",
+      "focus": "Làm tròn và ước lượng",
+      "reason": "A useful written anchor would emphasize choosing an appropriate approximation and explaining why; routine rounding itself is already covered interactively."
+    },
+    {
+      "lesson_ref": "Bài 23-24",
+      "priority": "P1",
+      "focus": "Phân số bằng nhau, so sánh và hỗn số dương",
+      "reason": "Written representation and justification can add value, but much of the procedural work is already well suited to Learn/Micro/Practice."
+    }
+  ],
+  "defer_without_new_evidence": [
+    {
+      "rows": [
+        "Bài 1-10",
+        "Bài 13-19",
+        "Bài 25-26",
+        "Bài 28-29",
+        "Bài 32-33"
+      ],
+      "reason": "Current Learn/Micro/Practice evidence already covers mainly routine, recognition or direct-execution structures. Do not add Written items merely to fill every NONE row."
+    }
+  ],
+  "review_questions": [
+    "Are WX21-STA-001 and WX21-STA-002 genuine Grade-6 Bài 38-41 placements or only cross-grade/topic overlap?",
+    "Are the proposed P0/P1/defer priorities pedagogically justified by Grade-6 KNTT S1 and written-reasoning value?",
+    "Which smallest first authoring wave closes the highest-value D4 Written Problem Solving gaps without quota inflation?"
+  ],
+  "protected_boundaries": [
+    "NO_NEW_WRITTEN_ITEMS_IN_THIS_REVIEW",
+    "NO_PLACEMENT_MUTATION_BEFORE_CLEARANCE",
+    "NO_NEW_CANONICAL_SKILLS",
+    "NO_READINESS_CREDIT",
+    "NO_MASTERY_CHANGE",
+    "NO_LEARNER_HISTORY_REGRADE",
+    "NO_RUNTIME_TAXONOMY_CHANGE"
+  ],
+  "status": "ACADEMIC_REVIEW_PENDING"
+}
