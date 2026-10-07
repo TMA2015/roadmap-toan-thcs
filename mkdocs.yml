@@ -33,10 +33,6 @@ theme:
 
 nav:
   - Trang chủ: index.md
-  - Học theo lớp: hoc-theo-lop/index.md
-  - Thư viện bài tập: luyen-tap/index.md
-  - Bản đồ kỹ năng: ban-do-ky-nang/index.md
-
   - Roadmap:
       - Bản đồ chương trình: roadmap/index.md
       - Triết lý mạch kiến thức dọc: roadmap/triet-ly-mach-kien-thuc-doc.md
@@ -48,22 +44,19 @@ nav:
       - Knowledge Graph v1: roadmap/knowledge-graph.md
       - Blueprint 25 chuyên đề: roadmap/blueprint-25-chuyen-de.md
       - Ma trận kiến thức: roadmap/ma-tran-kien-thuc.md
-
-  - AI Tutor:
-      - AI Tutor Core Contract: ai/ai-tutor-core-contract.md
-      - Tutor Context & Provider Adapter: ai/tutor-context-adapter.md
   - Hướng dẫn:
-      - Thử nghiệm theo dõi kỹ năng đa chuyên đề (Beta v5): huong-dan/thu-nghiem-bang-chung-da-chuyen-de-v5.md
-      - Thử nghiệm bằng chứng kỹ năng (Beta v4): huong-dan/thu-nghiem-bang-chung-ky-nang-v4.md
-      - Thử nghiệm đánh giá kỹ năng (Beta v3): huong-dan/thu-nghiem-danh-gia-ky-nang-v3.md
-      - Thử nghiệm phân tích hoàn toàn (Beta v2): huong-dan/thu-nghiem-phan-tich-hoan-toan-v2.md
-      - Thử nghiệm sinh câu số học theo mẫu (Beta): huong-dan/thu-nghiem-sinh-cau-tuong-tu.md
+      - Hướng dẫn sử dụng hiệu quả: huong-dan/index.md
       - Lộ trình tự học: huong-dan/lo-trinh-tu-hoc.md
       - Nguyên tắc học mỗi chuyên đề: huong-dan/nguyen-tac-hoc-moi-chuyen-de.md
       - Phương pháp tự học và tự đánh giá: huong-dan/phuong-phap-tu-hoc-va-danh-gia.md
       - Quy tắc chuyển sang chuyên đề mới: huong-dan/quy-tac-chuyen-chuyen-de.md
       - Cấu trúc chuyên đề: huong-dan/cau-truc-chuyen-de.md
       - Công cụ nội bộ:
+          - Thử nghiệm theo dõi kỹ năng đa chuyên đề (Beta v5): huong-dan/thu-nghiem-bang-chung-da-chuyen-de-v5.md
+          - Thử nghiệm bằng chứng kỹ năng (Beta v4): huong-dan/thu-nghiem-bang-chung-ky-nang-v4.md
+          - Thử nghiệm đánh giá kỹ năng (Beta v3): huong-dan/thu-nghiem-danh-gia-ky-nang-v3.md
+          - Thử nghiệm phân tích hoàn toàn (Beta v2): huong-dan/thu-nghiem-phan-tich-hoan-toan-v2.md
+          - Thử nghiệm sinh câu số học theo mẫu (Beta): huong-dan/thu-nghiem-sinh-cau-tuong-tu.md
           - AI Collaboration Hub: collaboration/index.md
           - Skill Map v2 Owner Preview: collaboration/skill-map-v2-preview.md
           - Project Handoff hiện hành: collaboration/current-handoff.md
@@ -75,8 +68,7 @@ nav:
           - Golden Template Học – Luyện – Tự kiểm tra: huong-dan/golden-template-hoc-luyen-kiem-tra.md
           - Chuẩn ngôn ngữ đề Toán: huong-dan/chuan-ngon-ngu-de-toan-v1.md
           - Thư viện hình & QA: huong-dan/qa-diagram-practice.md
-
-  - Kiến thức:
+  - 25 chuyên đề:
       - Tổng quan 25 chuyên đề: kien-thuc/index.md
       - Tổng quan:
           - 01. Bản đồ chương trình Toán THCS:
@@ -214,6 +206,15 @@ nav:
               - Đề luyện 02: kien-thuc/25-tong-hop-on-thi-10/de-luyen-02.md
               - Đề luyện 03: kien-thuc/25-tong-hop-on-thi-10/de-luyen-03.md
               - Tự đánh giá kỹ năng thi: kien-thuc/25-tong-hop-on-thi-10/tu-danh-gia-ky-nang-thi.md
+  - Học theo KNTT: hoc-theo-lop/index.md
+  - Thư viện bài tập:
+      - Mở thư viện bài tập: luyen-tap/index.md
+      - Bản đồ kỹ năng: ban-do-ky-nang/index.md
+  - AI:
+      - Hướng dẫn AI Tutor: ai/index.md
+      - Công cụ nội bộ:
+          - AI Tutor Core Contract: ai/ai-tutor-core-contract.md
+          - Tutor Context & Provider Adapter: ai/tutor-context-adapter.md
 
 markdown_extensions:
   - admonition
