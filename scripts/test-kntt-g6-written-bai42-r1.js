@@ -50,7 +50,7 @@ assert.equal(x.rubric_total,5);
 assert.equal(x.rubric.reduce((n,r)=>n+Number(r.points||0),0),5);
 assert.ok(x.problem_markdown.includes("Không tính xác suất"));
 assert.ok(!x.problem_markdown.includes("biến cố"));
-assert.ok(x.full_solution_markdown.includes("Bài này không cần tính xác suất"));
+assert.ok(x.full_solution_markdown.includes("Không cần và không được dùng phép tính xác suất"));
 assert.ok(x.method_rationale_markdown.includes("Bài 43"));
 assert.ok(x.common_mistakes.length>=4);
 assert.ok(x.remediation_links.length>=2);
