@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+"use strict";
+const assert=require("node:assert/strict");
+const fs=require("node:fs");
+const crypto=require("node:crypto");
+const read=p=>fs.readFileSync(p,"utf8");
+const json=p=>JSON.parse(read(p));
+const blob=text=>crypto.createHash("sha1").update("blob "+Buffer.byteLength(text,"utf8")+"\0"+text).digest("hex");
+
+const a=json("docs/assets/data/curriculum/kntt-g6-written-gap-priority-r1.json");
+assert.equal(a.packet_id,"MATH-KNTT-G6-WRITTEN-GAP-PRIORITY-R1-20261007");
+assert.equal(a.status,"ACADEMIC_REVIEW_PENDING");
+assert.equal(a.current_state.grade6_verified_kntt_placements,3);
+assert.equal(a.current_state.grade6_candidate_only_rows,0);
+assert.equal(a.existing_item_reuse_candidates.length,2);
+assert.deepEqual(a.existing_item_reuse_candidates.map(x=>x.exercise_id),["WX21-STA-001","WX21-STA-002"]);
+assert.equal(a.explicit_non_reuse_boundaries.length,2);
+assert.deepEqual(a.explicit_non_reuse_boundaries.map(x=>x.exercise_id),["WX20-GEO-001","WX23-PRO-002"]);
+assert.equal(a.priority_hypothesis.filter(x=>x.priority==="P0").length,3);
+assert.ok(a.principles.includes("DO_NOT_EXPAND_BY_ITEM_COUNT_OR_ONE_ITEM_PER_LESSON_QUOTA"));
+for(const lock of Object.values(a.source_locks)) assert.equal(blob(read(lock.path)),lock.sha,"source drift: "+lock.path);
+const packet=read("review-packets/kntt-g6-written-gap-priority-r1/00_NOTEBOOKLM_PACKET_R1.md");
+assert.ok(packet.includes("Select exactly 6 Sources"));
+assert.ok(packet.includes("WX21-STA-001"));
+assert.ok(packet.includes("WX21-STA-002"));
+assert.ok(packet.includes("G6_WRITTEN_GAP_PRIORITY_R1_REVIEW_COMPLETE"));
+console.log("PASS: Grade-6 Written gap priority R1 is source-locked, anti-quota and reuse-first.");
+console.log("PASS: no new Written item or placement mutation is authorized before independent review.");
