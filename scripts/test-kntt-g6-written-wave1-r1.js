@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+// Exact-head release candidate after independent NotebookLM clearance.
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const crypto=require("node:crypto");
