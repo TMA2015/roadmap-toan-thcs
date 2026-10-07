@@ -5,7 +5,7 @@ const txt=p=>fs.readFileSync(path.join(root,p),"utf8");
 const home=txt("docs/index.md"),hub=txt("docs/hoc-theo-lop/index.md"),mkdocs=txt("mkdocs.yml"),workspace=txt("docs/assets/javascripts/topic-workspace-v1.js");
 const assert=(value,label)=>{if(!value)throw Error(label)};
 assert(home.includes('href="hoc-theo-lop/"')&&!home.includes('href="roadmap/chuan-kntt-va-cac-tang-hoc/">Khám phá chương trình'),"student entry cannot link architecture document");
-assert(mkdocs.includes("Học theo lớp: hoc-theo-lop/index.md")&&mkdocs.includes("class-learning-v1.js"),"first-class navigation");
+assert(mkdocs.includes("Học theo KNTT: hoc-theo-lop/index.md")&&mkdocs.includes("class-learning-v1.js"),"first-class KNTT navigation");
 for(let grade=6;grade<=9;grade++)assert(hub.includes('data-grade-panel="'+grade+'"')&&hub.includes('data-grade-select="'+grade+'"'),"grade panel "+grade);
 assert((hub.match(/class="class-chapter"/g)||[]).length===39,"39 KNTT chapters 9+10+10+10");
 assert(hub.includes("../kien-thuc/04-bieu-thuc-dai-so/#core-journey")&&hub.includes("../kien-thuc/14-tam-giac/#core-journey"),"grade entry points to teaching cards");
