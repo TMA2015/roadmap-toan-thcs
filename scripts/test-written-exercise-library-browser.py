@@ -29,7 +29,7 @@ with sync_playwright() as p:
         )
 
         cards = page.locator(".written-exercise-card")
-        assert cards.count() == 50, (device, "fifty published cards")
+        assert cards.count() == 53, (device, "fifty-three published cards")
         meta_texts = page.locator(".written-exercise-meta").all_inner_texts()
         assert all("phút" not in text for text in meta_texts), (device, "estimated minutes hidden from learner card metadata")
         assert page.locator(".written-exercise-card#wx07-rat-001").count() == 1
