@@ -3,7 +3,7 @@
   "version": 1,
   "as_of": "2026-10-07",
   "grade": 6,
-  "status": "G6_WRITTEN_GAP_PRIORITY_RECONCILED_R1",
+  "status": "G6_WRITTEN_WAVE1_RECONCILED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -21,7 +21,7 @@
     },
     "written_library": {
       "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
-      "blob_sha": "252fb3b1b2e140079f6035fab4bca5225497180a"
+      "blob_sha": "fd772fd07612698f1c59f4959a17c8e8915cfe70"
     },
     "topic_evidence": {
       "02-so-va-phep-tinh": {
@@ -346,7 +346,7 @@
     "LEARN_CONTENT": "VERIFIED_DIRECT requires direct canonical skills in a lesson-matched workspace card; PARTIAL statuses expose family/local, broad placement, shared-skill granularity, or missing direct skill.",
     "MICRO_PRACTICE": "VERIFIED_DIRECT requires Grade-6-tagged micro evidence for every direct skill. FAMILY_LEVEL_ONLY is not equivalent to direct lesson evidence.",
     "PRACTICE_BANK": "Topic-level manifests prove a bank/skill exists but not Grade-6 lesson placement; therefore no Practice status is called FULL.",
-    "WRITTEN_LIBRARY": "VERIFIED_KNTT_PLACEMENT requires an independently reviewed true curriculum placement in the canonical Written Library. Supporting/prerequisite skill overlap does not count as placement.",
+    "WRITTEN_LIBRARY": "VERIFIED_KNTT_PLACEMENT requires an independently reviewed true curriculum placement in the canonical Written Library. One canonical item may legitimately verify more than one Grade-6 lesson row when the whole task materially assesses each placement.",
     "READINESS": "Only explicit structured assessment evidence is counted. REVIEWED_STRUCTURED_READINESS requires independent academic PASS on lesson-matched assessment items; topic-level authorization remains distinct."
   },
   "protected_boundaries": {
@@ -387,9 +387,9 @@
         "NONE": 0
       },
       "WRITTEN_LIBRARY": {
-        "VERIFIED_KNTT_PLACEMENT": 4,
+        "VERIFIED_KNTT_PLACEMENT": 8,
         "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 0,
-        "NONE": 27
+        "NONE": 23
       },
       "READINESS": {
         "NOT_VERIFIED_STRUCTURED": 29,
@@ -398,7 +398,7 @@
         "PENDING_REVIEW": 0
       }
     },
-    "written_library_kntt_placement_count": 4,
+    "written_library_kntt_placement_count": 7,
     "priority_gap_rows": [],
     "repaired_rows": [
       {
@@ -714,6 +714,45 @@
       ],
       "max_new_items_wave1": 3,
       "review_receipt": "review-packets/kntt-g6-written-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md"
+    },
+    "written_library_kntt_item_count": 7,
+    "written_library_kntt_placement_row_count": 8,
+    "written_wave1_reconciliation": {
+      "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
+      "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+      "appended_items": [
+        {
+          "exercise_id": "WX02-NUM-003",
+          "lesson_refs": [
+            "Bài 27"
+          ]
+        },
+        {
+          "exercise_id": "WX20-GEO-003",
+          "lesson_refs": [
+            "Bài 20"
+          ]
+        },
+        {
+          "exercise_id": "WX13-LIN-003",
+          "lesson_refs": [
+            "Bài 34-35",
+            "Bài 36-37"
+          ]
+        }
+      ],
+      "new_item_count": 3,
+      "new_verified_rows": 4,
+      "grade6_written_item_count_with_kntt_placement": 7,
+      "grade6_verified_written_rows": 8,
+      "review_receipt": "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md",
+      "boundaries": {
+        "new_canonical_skills": 0,
+        "readiness_credit": false,
+        "mastery_change": false,
+        "learner_history_regrade": false,
+        "runtime_taxonomy_change": false
+      }
     }
   },
   "rows": [
@@ -2224,9 +2263,21 @@
           "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
         },
         "WRITTEN_LIBRARY": {
-          "status": "NONE",
-          "candidates": [],
-          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX20-GEO-003",
+              "grade": 6,
+              "chapter": 4,
+              "lesson": "Bài 20 — Chu vi và diện tích một số tứ giác đã học"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
+            "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent Wave-1 review confirms a deep Written anchor for perimeter/area distinction, unit discipline and real-context measurement."
         },
         "READINESS": {
           "status": "NOT_VERIFIED_STRUCTURED",
@@ -2238,11 +2289,11 @@
         "method": "SOURCE_CONFIRMED_EXISTING_REVIEW",
         "placement_overlay": "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
         "display_overlay": "docs/assets/data/curriculum/topic20-core-display-v2.json",
-        "note": "No new academic content. Exact Grade-6 KNTT placement maps already reconciled semantic targets to already released Topic20 display-card skills; immutable legacy workspace and learner history remain unchanged.",
+        "note": "No new academic content. Exact Grade-6 KNTT placement maps already reconciled semantic targets to already released Topic20 display-card skills; immutable legacy workspace and learner history remain unchanged. Written Wave 1 is independently reviewed and verified.",
         "learn": "VERIFIED_DIRECT",
         "micro": "VERIFIED_DIRECT",
         "practice": "TOPIC_SKILL_EVIDENCE",
-        "written": "NONE",
+        "written": "VERIFIED_KNTT_PLACEMENT",
         "readiness": "NOT_VERIFIED_STRUCTURED"
       }
     },
@@ -2744,9 +2795,21 @@
           "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
         },
         "WRITTEN_LIBRARY": {
-          "status": "NONE",
-          "candidates": [],
-          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX02-NUM-003",
+              "grade": 6,
+              "chapter": 6,
+              "lesson": "Bài 27 — Hai bài toán về phân số"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
+            "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent Wave-1 review confirms a deep Written anchor that assesses both Grade-6 Bài 27 fraction problem types through operation choice and explanation."
         },
         "READINESS": {
           "status": "NOT_VERIFIED_STRUCTURED",
@@ -2759,9 +2822,9 @@
         "learn": "VERIFIED_LESSON_LOCAL",
         "micro": "VERIFIED_LESSON_LOCAL",
         "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
-        "written": "NONE",
+        "written": "VERIFIED_KNTT_PLACEMENT",
         "readiness": "NOT_VERIFIED_STRUCTURED",
-        "note": "Bài 27 Learn + problem-type Micro gap repaired. Practice remains family/topic-level; Written and Readiness dimensions are unchanged."
+        "note": "Bài 27 Learn + problem-type Micro gap repaired. Practice remains family/topic-level; Written and Readiness dimensions are unchanged. Written Wave 1 is independently reviewed and verified."
       }
     },
     {
@@ -3383,9 +3446,21 @@
           "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
         },
         "WRITTEN_LIBRARY": {
-          "status": "NONE",
-          "candidates": [],
-          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX13-LIN-003",
+              "grade": 6,
+              "chapter": 8,
+              "lesson": "Bài 34–35 — Đoạn thẳng, độ dài đoạn thẳng, trung điểm"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
+            "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent Wave-1 review confirms the segment/midpoint portion as a primary assessment target of the combined anchor."
         },
         "READINESS": {
           "status": "NOT_VERIFIED_STRUCTURED",
@@ -3462,9 +3537,21 @@
           "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
         },
         "WRITTEN_LIBRARY": {
-          "status": "NONE",
-          "candidates": [],
-          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX13-LIN-003",
+              "grade": 6,
+              "chapter": 8,
+              "lesson": "Bài 36–37 — Góc, số đo góc và phân loại góc"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
+            "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent Wave-1 review confirms the angle-measure/classification portion as a second genuine primary placement of the combined anchor."
         },
         "READINESS": {
           "status": "NOT_VERIFIED_STRUCTURED",

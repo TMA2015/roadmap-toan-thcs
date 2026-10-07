@@ -57,10 +57,11 @@ const row=audit.rows.find(r=>r.lesson_ref==="Bài 27");
 assert.equal(row.dimensions.LEARN_CONTENT.status,"VERIFIED_LESSON_LOCAL");
 assert.equal(row.dimensions.MICRO_PRACTICE.status,"VERIFIED_LESSON_LOCAL");
 assert.equal(row.dimensions.PRACTICE_BANK.status,"FAMILY_LEVEL_TOPIC_EVIDENCE");
-assert.equal(row.dimensions.WRITTEN_LIBRARY.status,"NONE");
+assert.equal(row.dimensions.WRITTEN_LIBRARY.status,"VERIFIED_KNTT_PLACEMENT");
+assert.equal(row.dimensions.WRITTEN_LIBRARY.placements[0].exercise_id,"WX02-NUM-003");
 assert.equal(row.dimensions.READINESS.status,"NOT_VERIFIED_STRUCTURED");
 assert.equal(row.repair_evidence.status,"REPAIRED_SOURCE_CONFIRMED_R1");
 
 console.log("PASS: Bài 27 adds explicit Grade-6 Learn + 3 problem-type Micro items.");
 console.log("PASS: both Bài 27 forms remain NUM-FRACTION-OPS problem types with no canonical skill write.");
-console.log("PASS: Practice Bank stays 132; Written/Readiness remain open and no new NotebookLM round is required for this low-risk deterministic repair.");
+console.log("PASS: Practice Bank stays 132; the later independently reviewed WX02-NUM-003 Written anchor now covers Bài 27 while Readiness remains unchanged.");

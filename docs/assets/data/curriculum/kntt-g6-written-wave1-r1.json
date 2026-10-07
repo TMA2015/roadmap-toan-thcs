@@ -1,0 +1,461 @@
+{
+  "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
+  "as_of": "2026-10-07",
+  "status": "ACADEMIC_REVIEW_COMPLETE",
+  "scope": "Grade 6 KNTT Written Wave 1 candidate: exactly three high-value deep anchors for Bài 27, Bài 20, and Bài 34–37 after Written Gap Priority R1 PASS",
+  "source_locks": {
+    "written_library": {
+      "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+      "sha": "fd772fd07612698f1c59f4959a17c8e8915cfe70"
+    },
+    "grade6_dimension_audit": {
+      "path": "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+      "sha": "167f705e871044fb2afaa982ecbad4ed6958e5a6"
+    },
+    "topic02_workspace": {
+      "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+      "sha": "956087701533dd50c61f653f61e969392216e57f"
+    },
+    "topic20_workspace": {
+      "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
+      "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+    },
+    "topic13_workspace": {
+      "path": "docs/assets/data/curriculum/topic13-learning-workspace.json",
+      "sha": "d5aa55f158cbff42eae388e76f485d072878095a"
+    },
+    "topic02_micro": {
+      "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+      "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+    },
+    "topic20_micro": {
+      "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+      "sha": "efaa4bff821023700381edee0168b294c2d3ea05"
+    },
+    "topic13_micro": {
+      "path": "docs/assets/data/practice/13-goc-va-duong-thang-micro-v1.json",
+      "sha": "32afda07968b3fbaed0a6d206db821abb718b95a"
+    }
+  },
+  "prior_clearance": {
+    "packet_id": "MATH-KNTT-G6-WRITTEN-GAP-PRIORITY-R1-20261007",
+    "clearance": "G6_WRITTEN_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+    "first_authoring_wave": [
+      "Bài 27",
+      "Bài 20",
+      "Bài 34–37"
+    ],
+    "max_new_items_wave1": 3
+  },
+  "notebooklm_source_contract": {
+    "selected_source_count": 5,
+    "permanent_sources": [
+      "NotebookLM Math Review Rules v1.2",
+      "Self-Learning Math Master Plan v1.2.1"
+    ],
+    "grade6_s1_sources": [
+      "SGK Toán 6, tập một — Kết nối tri thức với cuộc sống",
+      "SGK Toán 6, tập hai — Kết nối tri thức với cuộc sống"
+    ],
+    "temporary_batch_sources": [
+      "00_NOTEBOOKLM_PACKET_R1.md — NotebookLM Review Packet — Grade 6 Written Wave 1 R1"
+    ],
+    "explicitly_not_selected": [
+      "Written Exercise Library Contract v1"
+    ],
+    "rule": "2 permanent + 2 SGK + 1 packet = exactly 5 selected NotebookLM Sources."
+  },
+  "candidate_count": 3,
+  "candidate_ids": [
+    "WX02-NUM-003",
+    "WX20-GEO-003",
+    "WX13-LIN-003"
+  ],
+  "candidates": [
+    {
+      "exercise_kind": "anchor",
+      "exercise_id": "WX02-NUM-003",
+      "topic_id": "CT02",
+      "topic_slug": "02-so-va-phep-tinh",
+      "topic_title": "Số và phép tính",
+      "problem_type_id": "fraction-direct-inverse-two-stage",
+      "problem_type_title": "Phân biệt tìm một phần của số đã biết và tìm toàn bộ từ một phần đã biết",
+      "title": "Biết một phần để tìm toàn bộ, rồi từ toàn bộ tìm tiếp một phần",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        6
+      ],
+      "skills": [
+        "phep-tinh-phan-so"
+      ],
+      "lesson_local_targets": [
+        "tim-gia-tri-phan-so-cua-so",
+        "tim-so-khi-biet-gia-tri-phan-so"
+      ],
+      "prerequisites": [
+        "rut-gon-phan-so"
+      ],
+      "estimated_minutes": 15,
+      "problem_markdown": "Lớp 6A đặt mục tiêu quyên góp một số sách cho thư viện. Sau tuần thứ nhất, lớp đã quyên góp được **72 quyển**, bằng $\\frac35$ số sách theo kế hoạch. Trong tuần thứ hai, lớp quyên góp thêm số sách bằng $\\frac14$ số sách theo kế hoạch.\n\n1. Tính số sách theo kế hoạch. Giải thích vì sao ở bước này phải **chia** $72$ cho $\\frac35$.\n2. Tính số sách lớp quyên góp thêm trong tuần thứ hai. Giải thích vì sao ở bước này lại **nhân** với $\\frac14$.\n3. Sau hai tuần, lớp còn thiếu bao nhiêu quyển để đạt kế hoạch?\n4. Viết một phép tính khác để kiểm tra kết quả câu 3.",
+      "hint_steps": [
+        "$72$ là **giá trị của $\\frac35$ số sách theo kế hoạch**, còn tổng số sách theo kế hoạch chưa biết. Đây là dạng tìm số ban đầu khi biết một phân số của nó.",
+        "Muốn tìm toàn bộ kế hoạch, tính $72\\div\\frac35$. Sau khi đã biết toàn bộ, tuần thứ hai là $\\frac14$ **của số đã biết**, nên dùng phép nhân.",
+        "Sau hai tuần, có thể kiểm tra bằng cách cộng hai phần đã quyên góp: $\\frac35+\\frac14$, rồi tìm phần còn thiếu của kế hoạch."
+      ],
+      "full_solution_markdown": "Gọi số sách theo kế hoạch là toàn bộ cần tìm.\n\nVì $72$ quyển bằng $\\frac35$ số sách theo kế hoạch nên số sách theo kế hoạch là\n\n$$72\\div\\frac35=72\\cdot\\frac53=120\\text{ (quyển)}.$$\n\nỞ câu 1 phải **chia cho $\\frac35$** vì ta đã biết giá trị của một phần bằng $\\frac35$ của toàn bộ và cần tìm lại toàn bộ.\n\nTuần thứ hai quyên góp số sách bằng $\\frac14$ của kế hoạch, mà kế hoạch đã biết là $120$ quyển, nên số sách tuần thứ hai là\n\n$$120\\cdot\\frac14=30\\text{ (quyển)}.$$\n\nỞ câu 2 phải **nhân với $\\frac14$** vì ta đang tìm $\\frac14$ của một số đã biết.\n\nSau hai tuần, lớp đã có\n\n$$72+30=102\\text{ (quyển)}.$$\n\nSố sách còn thiếu là\n\n$$120-102=18\\text{ (quyển)}.$$\n\nKiểm tra theo phân số của kế hoạch:\n\n$$\\frac35+\\frac14=\\frac{12}{20}+\\frac5{20}=\\frac{17}{20}.$$\n\nVậy phần còn thiếu là\n\n$$1-\\frac{17}{20}=\\frac3{20},$$\n\nvà\n\n$$120\\cdot\\frac3{20}=18\\text{ (quyển)}.$$\n\nKết luận: kế hoạch là **120 quyển**, tuần thứ hai quyên góp **30 quyển**, và sau hai tuần còn thiếu **18 quyển**.",
+      "method_rationale_markdown": "Điểm chính của bài là **nhận đúng quan hệ giữa phần và toàn bộ trước khi chọn phép tính**. Khi biết toàn bộ và cần tìm một phân số của nó, dùng phép nhân. Khi biết giá trị của một phân số và cần tìm lại toàn bộ, dùng phép chia cho phân số đó. Cùng xuất hiện $\\frac35$ hay $\\frac14$ nhưng phép tính phụ thuộc vào đại lượng nào đã biết.",
+      "rubric": [
+        {
+          "criterion": "Nhận đúng câu 1 là dạng tìm toàn bộ từ một phần đã biết và giải thích được vì sao dùng phép chia.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng số sách theo kế hoạch là 120 quyển.",
+          "points": 1
+        },
+        {
+          "criterion": "Nhận đúng câu 2 là dạng tìm một phần của số đã biết và tính đúng 30 quyển.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng số sách còn thiếu là 18 quyển.",
+          "points": 1
+        },
+        {
+          "criterion": "Có phép kiểm tra hợp lý, chẳng hạn dùng $17/20$ đã quyên góp hoặc $3/20$ còn thiếu.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Tính $72\\cdot\\frac35$ ở câu 1 vì chỉ nhìn thấy phân số mà không xác định đang tìm toàn bộ.",
+        "Lấy $\\frac14$ của 72 quyển hoặc của số còn lại, trong khi đề nói $\\frac14$ số sách theo kế hoạch.",
+        "Cộng $\\frac35+\\frac14$ sai do không quy đồng mẫu.",
+        "Có kết quả số nhưng không giải thích vì sao một bước dùng chia còn bước kia dùng nhân."
+      ],
+      "remediation_markdown": "- Nếu nhầm nhân/chia: quay lại CĐ02, phân biệt hai dạng của Bài 27 bằng câu hỏi “đã biết toàn bộ chưa?”.\n- Nếu tính phân số chậm: ôn phép nhân, phép chia và quy đồng phân số.\n- Bài dễ hơn: tìm $\\frac35$ của 40; sau đó giải riêng bài “$\\frac35$ của một số bằng 24”.",
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ02 – Phân số và hai bài toán về phân số",
+          "href": "../kien-thuc/02-so-va-phep-tinh/core/"
+        },
+        {
+          "label": "Practice Room CĐ02",
+          "href": "../kien-thuc/02-so-va-phep-tinh/bai-tap/"
+        }
+      ],
+      "figure_uri": null,
+      "figure_alt": null,
+      "source_refs": [
+        "docs/assets/data/curriculum/topic02-learning-workspace.json#num02-g6-core-4",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json#NUM02MICRO_030",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json#NUM02MICRO_031",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json#NUM02MICRO_032"
+      ],
+      "proposed_kntt_placements": [
+        {
+          "grade": 6,
+          "chapter": 6,
+          "lesson": "Bài 27 — Hai bài toán về phân số"
+        }
+      ],
+      "academic_review": {
+        "status": "PENDING",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007"
+      }
+    },
+    {
+      "exercise_kind": "anchor",
+      "exercise_id": "WX20-GEO-003",
+      "topic_id": "CT20",
+      "topic_slug": "20-hinh-hoc-tong-hop",
+      "topic_title": "Hình học tổng hợp, đo lường và hình khối",
+      "problem_type_id": "rectangle-perimeter-area-unit-context",
+      "problem_type_title": "Phân biệt chu vi và diện tích trong bài toán đo lường thực tế",
+      "title": "Rào quanh sân hay phủ kín mặt sân: đừng dùng nhầm công thức",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        6
+      ],
+      "skills": [
+        "chu-vi-tu-giac",
+        "dien-tich-tu-giac",
+        "do-luong-thuc-te"
+      ],
+      "prerequisites": [],
+      "estimated_minutes": 15,
+      "problem_markdown": "Một khoảng sân hình chữ nhật dài **28 m**, rộng **1800 cm**. Trên một cạnh sân có một cổng rộng **4 m**.\n\nNhà trường dự định:\n- căng dây một vòng quanh mép sân, **trừ chỗ cổng**;\n- lát kín toàn bộ mặt sân bằng các tấm vật liệu, theo định mức lý thuyết **1 tấm phủ được $6\\text{ m}^2$**, bỏ qua phần hao hụt.\n\n1. Đổi chiều rộng của sân về mét.\n2. Tính chiều dài dây cần dùng. Nêu rõ vì sao bài này dùng **chu vi**.\n3. Tính diện tích mặt sân. Nêu rõ vì sao bài này dùng **diện tích**.\n4. Theo định mức trên, cần bao nhiêu tấm vật liệu để phủ kín sân?\n5. Một bạn nói: “Cả câu 2 và câu 3 đều nói về cùng một cái sân nên chỉ cần dùng cùng một phép tính.” Hãy giải thích vì sao nhận xét đó sai.",
+      "hint_steps": [
+        "Trước khi dùng công thức, đưa $1800\\text{ cm}$ về cùng đơn vị với $28\\text{ m}$.",
+        "Dây đi **quanh biên** nên bắt đầu từ chu vi hình chữ nhật, rồi trừ phần cổng không căng dây. Vật liệu phủ **mặt sân** nên dùng diện tích.",
+        "Sau khi có diện tích theo $\\text{m}^2$, chia cho $6\\text{ m}^2$ mỗi tấm. Kiểm tra đơn vị của từng kết quả: dây phải là mét, phần phủ phải là mét vuông."
+      ],
+      "full_solution_markdown": "Đổi đơn vị:\n\n$$1800\\text{ cm}=18\\text{ m}.$$\n\nChu vi sân là\n\n$$2(28+18)=92\\text{ m}.$$\n\nVì chỗ cổng rộng $4$ m không căng dây nên chiều dài dây cần dùng là\n\n$$92-4=88\\text{ m}.$$\n\nCâu 2 dùng **chu vi** vì dây nằm dọc theo **đường biên** của sân.\n\nDiện tích mặt sân là\n\n$$28\\cdot18=504\\text{ m}^2.$$\n\nCâu 3 dùng **diện tích** vì vật liệu phải phủ kín **phần mặt** của sân.\n\nSố tấm vật liệu cần theo định mức là\n\n$$504:6=84\\text{ (tấm)}.$$\n\nNhận xét “cùng một cái sân nên dùng cùng một phép tính” là sai vì hai yêu cầu đo hai đại lượng khác nhau: một yêu cầu **độ dài quanh biên** (m), còn một yêu cầu **độ lớn phần mặt** ($\\text{m}^2$).",
+      "method_rationale_markdown": "Bài toán đo lường thực tế nên bắt đầu bằng hai câu hỏi: **đang đo đường biên hay phần mặt?** và **các số đo đã cùng đơn vị chưa?**. Hai câu hỏi này quyết định chọn chu vi hay diện tích và giúp tránh lỗi đơn vị trước khi tính.",
+      "rubric": [
+        {
+          "criterion": "Đổi đúng $1800\\text{ cm}=18\\text{ m}$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng chu vi 92 m, trừ cổng và kết luận cần 88 m dây; giải thích được đây là bài toán đường biên.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng diện tích $504\\text{ m}^2$; giải thích được đây là bài toán phần mặt.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng 84 tấm vật liệu theo định mức đã cho.",
+          "points": 1
+        },
+        {
+          "criterion": "Phân biệt rõ đơn vị m với $\\text{m}^2$ và bác bỏ hợp lý nhận xét dùng cùng một phép tính.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Dùng trực tiếp 28 và 1800 trong cùng một công thức mà chưa đổi đơn vị.",
+        "Dùng $28\\cdot18$ để tính chiều dài dây vì nhầm diện tích với chu vi.",
+        "Quên trừ 4 m ở vị trí cổng.",
+        "Ghi diện tích bằng mét hoặc chiều dài dây bằng mét vuông.",
+        "Chia 88 cho 6 để tính số tấm vì lấy nhầm đại lượng."
+      ],
+      "remediation_markdown": "- Nếu nhầm chu vi/diện tích: quay lại CĐ20 và tự hỏi “quanh biên hay phủ mặt?”.\n- Nếu sai đơn vị: ôn đổi cm ↔ m trước khi thay số vào công thức.\n- Bài dễ hơn: hình chữ nhật 8 m × 5 m, tính riêng chu vi và diện tích rồi ghi đúng đơn vị.",
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ20 – Hình phẳng và đo lường",
+          "href": "../kien-thuc/20-hinh-hoc-tong-hop/core/"
+        },
+        {
+          "label": "Practice Room CĐ20",
+          "href": "../kien-thuc/20-hinh-hoc-tong-hop/bai-tap/"
+        }
+      ],
+      "figure_uri": null,
+      "figure_alt": null,
+      "source_refs": [
+        "docs/assets/data/curriculum/topic20-learning-workspace.json#geo20-core-1",
+        "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json#GEO20MICRO_003",
+        "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json#GEO20MICRO_019",
+        "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json#GEO20MICRO_020"
+      ],
+      "proposed_kntt_placements": [
+        {
+          "grade": 6,
+          "chapter": 4,
+          "lesson": "Bài 20 — Chu vi và diện tích một số tứ giác đã học"
+        }
+      ],
+      "academic_review": {
+        "status": "PENDING",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007"
+      }
+    },
+    {
+      "exercise_kind": "anchor",
+      "exercise_id": "WX13-LIN-003",
+      "topic_id": "CT13",
+      "topic_slug": "13-goc-va-duong-thang",
+      "topic_title": "Góc và đường thẳng",
+      "problem_type_id": "segment-midpoint-angle-draw-reason",
+      "problem_type_title": "Vẽ và lập luận với đoạn thẳng, trung điểm và số đo góc",
+      "title": "Vẽ đúng rồi mới tính: từ trung điểm đến số đo góc",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        6
+      ],
+      "skills": [
+        "doan-thang-do-dai",
+        "trung-diem",
+        "khai-niem-goc",
+        "do-goc",
+        "phan-loai-goc"
+      ],
+      "prerequisites": [
+        "tia",
+        "diem-nam-giua"
+      ],
+      "estimated_minutes": 18,
+      "problem_markdown": "Thực hiện trên giấy bằng thước thẳng và thước đo góc.\n\n- Vẽ tia $Ox$.\n- Trên tia $Ox$, lấy hai điểm $A,B$ sao cho $OA=4\\text{ cm}$, $OB=10\\text{ cm}$ và $A$ nằm giữa $O,B$.\n- Gọi $M$ là trung điểm của đoạn $AB$.\n- Tại $O$, vẽ tia $Oy$ sao cho $\\angle xOy=120^\\circ$.\n- Vẽ tia $Oz$ nằm trong $\\angle xOy$ sao cho $\\angle xOz=35^\\circ$.\n\n1. Tính $AB$, $AM$, $MB$ và $OM$.\n2. Nêu **đủ hai điều kiện** để khẳng định $M$ là trung điểm của $AB$.\n3. Tính $\\angle zOy$.\n4. Phân loại ba góc $\\angle xOz$, $\\angle zOy$, $\\angle xOy$.\n5. Tự kiểm tra hình vẽ: các số đo và thứ tự điểm trên hình có phù hợp với kết quả tính không?",
+      "hint_steps": [
+        "Vì $A$ nằm giữa $O$ và $B$, ta có $OB=OA+AB$. Hãy tìm $AB$ trước.",
+        "Trung điểm cần **hai điều kiện**: điểm đó nằm giữa hai đầu mút và hai đoạn hai bên bằng nhau. Từ $AB$ có thể tìm $AM=MB$.",
+        "Vì $Oz$ nằm trong $\\angle xOy$, ta có $\\angle xOz+\\angle zOy=\\angle xOy$. Sau khi tính số đo, so sánh từng góc với các mốc $90^\\circ$ và $180^\\circ$."
+      ],
+      "full_solution_markdown": "Vì $A$ nằm giữa $O$ và $B$ nên\n\n$$OB=OA+AB.$$\n\nDo đó\n\n$$AB=10-4=6\\text{ cm}.$$\n\nVì $M$ là trung điểm của $AB$ nên $M$ nằm giữa $A,B$ và\n\n$$AM=MB=\\frac{AB}{2}=3\\text{ cm}.$$\n\nTheo thứ tự $O,A,M,B$ trên cùng tia,\n\n$$OM=OA+AM=4+3=7\\text{ cm}.$$\n\nHai điều kiện đầy đủ để $M$ là trung điểm của $AB$ là:\n1. $M$ nằm giữa $A$ và $B$;\n2. $AM=MB$.\n\nVì $Oz$ nằm trong $\\angle xOy$ nên\n\n$$\\angle xOz+\\angle zOy=\\angle xOy.$$\n\nSuy ra\n\n$$\\angle zOy=120^\\circ-35^\\circ=85^\\circ.$$\n\nPhân loại:\n- $\\angle xOz=35^\\circ$ là góc nhọn;\n- $\\angle zOy=85^\\circ$ là góc nhọn;\n- $\\angle xOy=120^\\circ$ là góc tù.\n\nKhi tự kiểm tra hình, $A$ phải nằm giữa $O$ và $B$, $M$ phải nằm giữa $A,B$ và ở chính giữa đoạn $AB$; tia $Oz$ phải nằm trong góc $xOy$ và gần tia $Ox$ hơn tia $Oy$ vì $35^\\circ<85^\\circ$.",
+      "method_rationale_markdown": "Bài này buộc người học dùng **dữ kiện vị trí trước rồi mới dùng công thức độ dài hoặc cộng góc**. Không được suy ra quan hệ chỉ từ hình vẽ. Với trung điểm, độ dài bằng nhau chưa đủ nếu thiếu điều kiện nằm giữa; với góc, phép trừ $120^\\circ-35^\\circ$ chỉ hợp lệ vì đề đã cho $Oz$ nằm trong $\\angle xOy$.",
+      "rubric": [
+        {
+          "criterion": "Vẽ và ghi nhãn hợp lý: O, A, M, B theo đúng thứ tự trên tia Ox; Oy và Oz phù hợp với các số đo góc đã cho.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $AB=6$ cm, $AM=MB=3$ cm và $OM=7$ cm.",
+          "points": 1
+        },
+        {
+          "criterion": "Nêu đủ hai điều kiện của trung điểm: nằm giữa và hai đoạn bằng nhau.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $\\angle zOy=85^\\circ$ và nêu được căn cứ $Oz$ nằm trong $\\angle xOy$.",
+          "points": 1
+        },
+        {
+          "criterion": "Phân loại đúng $35^\\circ$ và $85^\\circ$ là góc nhọn, $120^\\circ$ là góc tù; tự kiểm tra hình nhất quán.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Chỉ dùng $AM=MB$ để kết luận trung điểm mà quên điều kiện $M$ nằm giữa $A,B$.",
+        "Tính $AB=OA+OB$ thay vì dùng quan hệ điểm nằm giữa.",
+        "Tính $OM=OB-AM$ nhưng không kiểm tra thứ tự điểm; hoặc ghi sai thứ tự O, A, M, B.",
+        "Tính $\\angle zOy=120^\\circ+35^\\circ$ dù $Oz$ nằm trong góc.",
+        "Phân loại $85^\\circ$ là góc tù do nhầm mốc $90^\\circ$."
+      ],
+      "remediation_markdown": "- Nếu sai phần đoạn thẳng: ôn “điểm nằm giữa” và “trung điểm” ở CĐ13.\n- Nếu sai phần góc: ôn cách cộng/trừ số đo khi một tia nằm trong góc và các mốc 90°/180°.\n- Bài dễ hơn: M nằm giữa A,B với AM=3 cm, MB=5 cm; tính AB. Sau đó làm riêng góc 100° có một tia trong tạo góc 30°.",
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ13 – Đoạn thẳng, trung điểm và góc",
+          "href": "../kien-thuc/13-goc-va-duong-thang/core/"
+        },
+        {
+          "label": "Practice Room CĐ13",
+          "href": "../kien-thuc/13-goc-va-duong-thang/bai-tap/"
+        }
+      ],
+      "figure_uri": null,
+      "figure_alt": null,
+      "source_refs": [
+        "docs/assets/data/curriculum/topic13-learning-workspace.json#geo13-core-1",
+        "docs/assets/data/curriculum/topic13-learning-workspace.json#geo13-core-2",
+        "docs/assets/data/practice/13-goc-va-duong-thang-micro-v1.json#GEO13MICRO_018",
+        "docs/assets/data/practice/13-goc-va-duong-thang-micro-v1.json#GEO13MICRO_019",
+        "docs/assets/data/practice/13-goc-va-duong-thang-micro-v1.json#GEO13MICRO_020"
+      ],
+      "proposed_kntt_placements": [
+        {
+          "grade": 6,
+          "chapter": 8,
+          "lesson": "Bài 34–35 — Đoạn thẳng, độ dài đoạn thẳng, trung điểm"
+        },
+        {
+          "grade": 6,
+          "chapter": 8,
+          "lesson": "Bài 36–37 — Góc, số đo góc và phân loại góc"
+        }
+      ],
+      "academic_review": {
+        "status": "PENDING",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007"
+      }
+    }
+  ],
+  "protected_boundaries": {
+    "mutate_production_written_library": false,
+    "clone_existing_items": false,
+    "new_canonical_skills": false,
+    "readiness_credit": false,
+    "mastery_change": false,
+    "learner_history_regrade": false,
+    "runtime_taxonomy_change": false
+  },
+  "reviewed_source_locks": {
+    "written_library": {
+      "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+      "sha": "252fb3b1b2e140079f6035fab4bca5225497180a"
+    },
+    "grade6_dimension_audit": {
+      "path": "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+      "sha": "716624246a0f54f31e27169326c301167c655d1b"
+    },
+    "topic02_workspace": {
+      "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+      "sha": "956087701533dd50c61f653f61e969392216e57f"
+    },
+    "topic20_workspace": {
+      "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
+      "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+    },
+    "topic13_workspace": {
+      "path": "docs/assets/data/curriculum/topic13-learning-workspace.json",
+      "sha": "d5aa55f158cbff42eae388e76f485d072878095a"
+    },
+    "topic02_micro": {
+      "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+      "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+    },
+    "topic20_micro": {
+      "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+      "sha": "efaa4bff821023700381edee0168b294c2d3ea05"
+    },
+    "topic13_micro": {
+      "path": "docs/assets/data/practice/13-goc-va-duong-thang-micro-v1.json",
+      "sha": "32afda07968b3fbaed0a6d206db821abb718b95a"
+    }
+  },
+  "review_result": {
+    "verdict": "PASS",
+    "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+    "expected_items": 3,
+    "reviewed_items": 3,
+    "missing_ids": [],
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "placements": {
+      "WX02-NUM-003": [
+        "Bài 27"
+      ],
+      "WX20-GEO-003": [
+        "Bài 20"
+      ],
+      "WX13-LIN-003": [
+        "Bài 34-35",
+        "Bài 36-37"
+      ]
+    },
+    "architecture_checks": {
+      "ARCH_1": "PASS",
+      "ARCH_2": "PASS",
+      "ARCH_3": "PASS",
+      "ARCH_4": "PASS",
+      "ARCH_5": "PASS",
+      "ARCH_6": "PASS",
+      "ARCH_7": "PASS",
+      "ARCH_8": "PASS",
+      "ARCH_9": "PASS",
+      "ARCH_10": "PASS"
+    },
+    "receipt": "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+  },
+  "implementation": {
+    "status": "PUBLISHED_ON_REVIEW_BRANCH",
+    "canonical_library_path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+    "canonical_library_blob": "fd772fd07612698f1c59f4959a17c8e8915cfe70",
+    "appended_ids": [
+      "WX02-NUM-003",
+      "WX20-GEO-003",
+      "WX13-LIN-003"
+    ],
+    "canonical_item_count": 53,
+    "grade6_items_with_kntt_placement": 7,
+    "grade6_verified_written_rows": 8,
+    "new_canonical_skills": 0,
+    "readiness_credit": false,
+    "mastery_change": false,
+    "learner_history_regrade": false
+  }
+}

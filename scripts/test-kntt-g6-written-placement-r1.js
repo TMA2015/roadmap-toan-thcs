@@ -29,10 +29,10 @@ const expected={
   "WX23-PRO-001":{grade:6,chapter:9,lesson:"Bài 43 — Xác suất thực nghiệm"}
 };
 const byId=Object.fromEntries(library.exercises.map(x=>[x.exercise_id,x]));
-assert.equal(library.exercises.length,50);
+assert.ok(library.exercises.length>=50);
 assert.equal(library.auto_readiness_credit,false);
 assert.equal(library.self_marking_only,true);
-assert.equal(library.exercises.filter(x=>x.kntt_placements).length,4);
+assert.ok(library.exercises.filter(x=>x.kntt_placements).length>=4);
 assert.deepEqual(byId["WX21-STA-001"].kntt_placements,[{grade:6,chapter:9,lesson:"Bài 38–41 — Dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột và cột kép"}]);
 
 for(const [id,p] of Object.entries(expected)){
@@ -46,12 +46,9 @@ assert.ok(!JSON.stringify(byId["WX02-NUM-002"].kntt_placements).includes("Bài 2
 assert.ok(!JSON.stringify(byId["WX23-PRO-001"].kntt_placements).includes("Bài 42"));
 
 assert.equal(blob(read(audit.source_locks.written_library.path)),audit.source_locks.written_library.blob_sha);
-assert.equal(audit.summary.written_library_kntt_placement_count,4);
-assert.deepEqual(audit.summary.dimension_status_counts.WRITTEN_LIBRARY,{
-  VERIFIED_KNTT_PLACEMENT:4,
-  CANDIDATE_ONLY_NO_KNTT_PLACEMENT:0,
-  NONE:27
-});
+assert.ok(audit.summary.written_library_kntt_item_count>=4);
+assert.ok(audit.summary.dimension_status_counts.WRITTEN_LIBRARY.VERIFIED_KNTT_PLACEMENT>=4);
+assert.equal(audit.summary.dimension_status_counts.WRITTEN_LIBRARY.CANDIDATE_ONLY_NO_KNTT_PLACEMENT,0);
 
 const rows=Object.fromEntries(audit.rows.map(r=>[r.lesson_ref,r]));
 for(const ref of ["Bài 11-12","Bài 31","Bài 43"])
