@@ -42,7 +42,13 @@ for(const slug of ["01-ban-do-chuong-trinh","05-7-hang-dang-thuc","23-xac-suat",
   ok(nav.includes('["'+slug+'"')&&yaml.includes("kien-thuc/"+slug+"/index.md"),"canonical topic route: "+slug);
 ok(nav.includes("dialog.showModal()")&&nav.includes("scrollTop = 0"),"accessible chooser starts at top");
 ok(nav.includes("main.className=\"roadmap-main-quick\"")&&nav.includes("mainDestinations"),"seven destinations in the independent topic chooser");
-ok(nav.includes('["Thư viện bài tập", "luyen-tap/", "✎"]')&&yaml.includes("Thư viện bài tập: luyen-tap/index.md"),"written exercise library is available in quick shortcuts");
+ok(nav.includes('["Thư viện bài tập", "luyen-tap/", "✎"]')&&yaml.includes("  - Thư viện bài tập:")&&yaml.includes("Mở thư viện bài tập: luyen-tap/index.md"),"written exercise library is available in quick shortcuts and grouped navigation");
+const orderedPrimary=["Trang chủ","Roadmap","Hướng dẫn","25 chuyên đề","Học theo KNTT","Thư viện bài tập","AI"];
+for(let i=0;i<orderedPrimary.length-1;i++){
+  ok(yaml.indexOf("  - "+orderedPrimary[i]+":")<yaml.indexOf("  - "+orderedPrimary[i+1]+":"),"primary navigation order: "+orderedPrimary[i]+" before "+orderedPrimary[i+1]);
+}
+ok(yaml.includes("Bản đồ kỹ năng: ban-do-ky-nang/index.md")&&yaml.indexOf("Bản đồ kỹ năng: ban-do-ky-nang/index.md")>yaml.indexOf("  - Thư viện bài tập:"),"skill map is grouped under the exercise library");
+
 ok(nav.includes('dialog.append(heading,main,hint,list)')&&nav.includes('count.textContent = "7 + 25"'),"main groups and topics share one compact header launcher");
 ok(css.includes(".roadmap-topic-launcher")&&css.includes(".roadmap-topic-dialog__list"),"independent launcher/modal styles");
 ok(css.includes(".roadmap-main-quick__links"),"responsive seven-group grid in the modal");

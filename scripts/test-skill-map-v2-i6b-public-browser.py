@@ -92,9 +92,15 @@ def validate(page):
     no_direct = root.locator('[data-family-id="ID-APPLY"]')
     assert "Hiện chưa có bài luyện trực tiếp" in no_direct.inner_text()
 
-    # Main navigation exposes the learner-friendly route.
+    # The learner-friendly route remains reachable under the Exercise Library group.
+    page.goto(BASE + "/luyen-tap/", wait_until="domcontentloaded")
     public_links = page.locator('a[href$="/ban-do-ky-nang/"]')
     assert public_links.count() >= 1
+    assert page.locator("body").inner_text().find("Thư viện bài tập") >= 0
+    page.goto(BASE + "/ban-do-ky-nang/", wait_until="domcontentloaded")
+    root = page.locator('[data-skill-map-v2-controlled][data-skill-map-ready="true"]')
+    root.wait_for(timeout=30000)
+    trend = root.locator('[data-family-id="NUM-SETS"]')
 
     # Topic actions from the public route resolve to real site routes.
     learn_href = trend.locator("a", has_text="Học chuyên đề").get_attribute("href")

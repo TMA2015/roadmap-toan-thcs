@@ -146,7 +146,7 @@ ok(data.published_scope?.exercise_count===50,"published scope count");
 ok(data.published_scope?.batches?.every(x=>x.status==="PUBLISHED"),"all released written-library batches marked published");
 ok(data.published_scope?.batches?.some(x=>x.batch_id==="CT09_P1B_R1"&&x.count===6),"CT09 P1-B release batch");
 const yaml=read("mkdocs.yml");
-ok(yaml.includes("Thư viện bài tập: luyen-tap/index.md"),"nav entry");
+ok(yaml.includes("  - Thư viện bài tập:")&&yaml.includes("Mở thư viện bài tập: luyen-tap/index.md"),"nav entry");
 ok(yaml.includes("written-exercise-library-v1.css"),"css wired");
 ok(yaml.includes("written-exercise-library-v1.js"),"js wired");
 const ui=read("docs/assets/javascripts/written-exercise-library-v1.js");
