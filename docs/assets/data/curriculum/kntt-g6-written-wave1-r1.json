@@ -1,12 +1,12 @@
 {
   "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
   "as_of": "2026-10-07",
-  "status": "ACADEMIC_REVIEW_PENDING",
+  "status": "ACADEMIC_REVIEW_COMPLETE",
   "scope": "Grade 6 KNTT Written Wave 1 candidate: exactly three high-value deep anchors for Bài 27, Bài 20, and Bài 34–37 after Written Gap Priority R1 PASS",
   "source_locks": {
     "written_library": {
       "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
-      "sha": "252fb3b1b2e140079f6035fab4bca5225497180a"
+      "sha": "fd772fd07612698f1c59f4959a17c8e8915cfe70"
     },
     "grade6_dimension_audit": {
       "path": "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
@@ -372,5 +372,90 @@
     "mastery_change": false,
     "learner_history_regrade": false,
     "runtime_taxonomy_change": false
+  },
+  "reviewed_source_locks": {
+    "written_library": {
+      "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+      "sha": "252fb3b1b2e140079f6035fab4bca5225497180a"
+    },
+    "grade6_dimension_audit": {
+      "path": "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+      "sha": "716624246a0f54f31e27169326c301167c655d1b"
+    },
+    "topic02_workspace": {
+      "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+      "sha": "956087701533dd50c61f653f61e969392216e57f"
+    },
+    "topic20_workspace": {
+      "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
+      "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+    },
+    "topic13_workspace": {
+      "path": "docs/assets/data/curriculum/topic13-learning-workspace.json",
+      "sha": "d5aa55f158cbff42eae388e76f485d072878095a"
+    },
+    "topic02_micro": {
+      "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+      "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+    },
+    "topic20_micro": {
+      "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+      "sha": "efaa4bff821023700381edee0168b294c2d3ea05"
+    },
+    "topic13_micro": {
+      "path": "docs/assets/data/practice/13-goc-va-duong-thang-micro-v1.json",
+      "sha": "32afda07968b3fbaed0a6d206db821abb718b95a"
+    }
+  },
+  "review_result": {
+    "verdict": "PASS",
+    "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+    "expected_items": 3,
+    "reviewed_items": 3,
+    "missing_ids": [],
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "placements": {
+      "WX02-NUM-003": [
+        "Bài 27"
+      ],
+      "WX20-GEO-003": [
+        "Bài 20"
+      ],
+      "WX13-LIN-003": [
+        "Bài 34-35",
+        "Bài 36-37"
+      ]
+    },
+    "architecture_checks": {
+      "ARCH_1": "PASS",
+      "ARCH_2": "PASS",
+      "ARCH_3": "PASS",
+      "ARCH_4": "PASS",
+      "ARCH_5": "PASS",
+      "ARCH_6": "PASS",
+      "ARCH_7": "PASS",
+      "ARCH_8": "PASS",
+      "ARCH_9": "PASS",
+      "ARCH_10": "PASS"
+    },
+    "receipt": "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+  },
+  "implementation": {
+    "status": "PUBLISHED_ON_REVIEW_BRANCH",
+    "canonical_library_path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+    "canonical_library_blob": "fd772fd07612698f1c59f4959a17c8e8915cfe70",
+    "appended_ids": [
+      "WX02-NUM-003",
+      "WX20-GEO-003",
+      "WX13-LIN-003"
+    ],
+    "canonical_item_count": 53,
+    "grade6_items_with_kntt_placement": 7,
+    "grade6_verified_written_rows": 8,
+    "new_canonical_skills": 0,
+    "readiness_credit": false,
+    "mastery_change": false,
+    "learner_history_regrade": false
   }
 }
