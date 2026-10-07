@@ -159,5 +159,23 @@
     "NO_LEARNER_HISTORY_REGRADE",
     "NO_RUNTIME_TAXONOMY_CHANGE"
   ],
-  "status": "ACADEMIC_REVIEW_PENDING"
+  "status": "ACADEMIC_REVIEW_PENDING",
+  "notebooklm_source_contract": {
+    "permanent_sources": [
+      "NotebookLM Math Review Rules v1.2",
+      "Self-Learning Math Master Plan v1.2.1"
+    ],
+    "grade6_s1_sources": [
+      "SGK Toán 6, tập một — Kết nối tri thức với cuộc sống",
+      "SGK Toán 6, tập hai — Kết nối tri thức với cuộc sống"
+    ],
+    "temporary_batch_sources": [
+      "00_NOTEBOOKLM_PACKET_R1.md — NotebookLM Review Packet — Grade 6 Written Gap Priority R1"
+    ],
+    "selected_source_count": 5,
+    "explicitly_not_selected": [
+      "Written Exercise Library Contract v1"
+    ],
+    "rule": "Project Sources and NotebookLM Sources are not identical; do not promote durable Project Sources into the NotebookLM selection unless the packet explicitly requires them."
+  }
 }
