@@ -36,6 +36,8 @@ jobs:
         run: node scripts/test-kntt-g6-nonlearn-rerank-r1.js
       - name: Validate Grade 6 Written placement R1
         run: node scripts/test-kntt-g6-written-placement-r1.js
+      - name: Validate Grade 6 Written gap priority R1
+        run: node scripts/test-kntt-g6-written-gap-priority-r1.js
       - name: Validate Grade 6 Topic20 exact placement R1
         run: node scripts/test-kntt-g6-topic20-placement-r1.js
       - name: Validate Grade 6 shared-skill density R1
