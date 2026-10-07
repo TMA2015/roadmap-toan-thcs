@@ -12,7 +12,7 @@ const a=json(path);
 assert.equal(a.schema,"kntt-dimension-coverage-audit-v1");
 assert.equal(a.version,1);
 assert.equal(a.grade,6);
-assert.equal(a.status,"G6_WRITTEN_GAP_PRIORITY_RECONCILED_R1");
+assert.equal(a.status,"G6_WRITTEN_WAVE1_RECONCILED_R1");
 assert.equal(a.rows.length,31);
 
 for(const lock of [
@@ -44,17 +44,19 @@ assert.equal(counts.LEARN_CONTENT.PARTIAL_SHARED_SKILL,0);
 assert.equal(counts.LEARN_CONTENT.PARTIAL_PLACEMENT,0);
 assert.equal(counts.MICRO_PRACTICE.PARTIAL,0);
 assert.equal(counts.PRACTICE_BANK.NONE,0);
-assert.equal(counts.WRITTEN_LIBRARY.VERIFIED_KNTT_PLACEMENT,4);
+assert.equal(counts.WRITTEN_LIBRARY.VERIFIED_KNTT_PLACEMENT,8);
 assert.equal(counts.WRITTEN_LIBRARY.CANDIDATE_ONLY_NO_KNTT_PLACEMENT,0);
-assert.equal(counts.WRITTEN_LIBRARY.NONE,27);
+assert.equal(counts.WRITTEN_LIBRARY.NONE,23);
 assert.equal(counts.READINESS.AUTHORIZED_TOPIC_LEVEL,1);
 assert.equal(counts.READINESS.NOT_VERIFIED_STRUCTURED,29);
 assert.equal(counts.READINESS.REVIEWED_STRUCTURED_READINESS,1);
 assert.equal(counts.READINESS.PENDING_REVIEW,0);
 
 const written=json(a.source_locks.written_library.path);
-assert.equal((written.exercises||[]).filter(e=>e.kntt_placements).length,4);
-assert.equal(a.summary.written_library_kntt_placement_count,4);
+assert.equal((written.exercises||[]).filter(e=>e.kntt_placements).length,7);
+assert.equal(a.summary.written_library_kntt_placement_count,7);
+assert.equal(a.summary.written_library_kntt_item_count,7);
+assert.equal(a.summary.written_library_kntt_placement_row_count,8);
 
 const byLesson=Object.fromEntries(a.rows.map(r=>[r.lesson_ref,r]));
 assert.equal(byLesson["Bài 30"].dimensions.LEARN_CONTENT.status,"VERIFIED_DIRECT");
@@ -134,6 +136,8 @@ assert.deepEqual(byLesson["Bài 27"].dimensions.MICRO_PRACTICE.item_ids,["NUM02M
 assert.equal(byLesson["Bài 27"].dimensions.MICRO_PRACTICE.gates_core,false);
 assert.equal(byLesson["Bài 27"].repair_evidence.status,"REPAIRED_SOURCE_CONFIRMED_R1");
 assert.equal(byLesson["Bài 27"].dimensions.PRACTICE_BANK.status,"FAMILY_LEVEL_TOPIC_EVIDENCE");
+assert.equal(byLesson["Bài 27"].dimensions.WRITTEN_LIBRARY.status,"VERIFIED_KNTT_PLACEMENT");
+assert.equal(byLesson["Bài 27"].dimensions.WRITTEN_LIBRARY.placements[0].exercise_id,"WX02-NUM-003");
 assert.equal(byLesson["Bài 27"].dimensions.READINESS.status,"NOT_VERIFIED_STRUCTURED");
 
 assert.equal(byLesson["Bài 42"].dimensions.LEARN_CONTENT.status,"VERIFIED_LESSON_LOCAL");
@@ -163,6 +167,12 @@ assert.equal(byLesson["Bài 38-41"].dimensions.PRACTICE_BANK.status,"PARTIAL_TOP
 assert.equal(byLesson["Bài 38-41"].dimensions.WRITTEN_LIBRARY.status,"VERIFIED_KNTT_PLACEMENT");
 assert.equal(byLesson["Bài 38-41"].dimensions.WRITTEN_LIBRARY.placements[0].exercise_id,"WX21-STA-001");
 assert.equal(byLesson["Bài 38-41"].dimensions.READINESS.status,"AUTHORIZED_TOPIC_LEVEL");
+assert.equal(byLesson["Bài 20"].dimensions.WRITTEN_LIBRARY.status,"VERIFIED_KNTT_PLACEMENT");
+assert.equal(byLesson["Bài 20"].dimensions.WRITTEN_LIBRARY.placements[0].exercise_id,"WX20-GEO-003");
+assert.equal(byLesson["Bài 34-35"].dimensions.WRITTEN_LIBRARY.status,"VERIFIED_KNTT_PLACEMENT");
+assert.equal(byLesson["Bài 34-35"].dimensions.WRITTEN_LIBRARY.placements[0].exercise_id,"WX13-LIN-003");
+assert.equal(byLesson["Bài 36-37"].dimensions.WRITTEN_LIBRARY.status,"VERIFIED_KNTT_PLACEMENT");
+assert.equal(byLesson["Bài 36-37"].dimensions.WRITTEN_LIBRARY.placements[0].exercise_id,"WX13-LIN-003");
 
 for(const [k,v] of Object.entries(a.protected_boundaries)) assert.equal(v,false,"protected boundary changed: "+k);
 
@@ -171,4 +181,4 @@ console.log("PASS: Grade-6 audit closes lesson-local/family, shared-skill and To
 assert.equal(byLesson["Bài 43"].dimensions.WRITTEN_LIBRARY.status,"VERIFIED_KNTT_PLACEMENT");
 assert.equal(byLesson["Bài 10"].dimensions.WRITTEN_LIBRARY.status,"NONE");
 assert.equal(byLesson["Bài 28-29"].dimensions.WRITTEN_LIBRARY.status,"NONE");
-console.log("PASS: Written Library has 4 independently reviewed Grade-6 KNTT placements; prerequisite overlap rows remain NONE.");
+console.log("PASS: Written Library has 7 Grade-6 canonical items verifying 8 independently reviewed KNTT lesson rows; prerequisite overlap rows remain NONE.");
