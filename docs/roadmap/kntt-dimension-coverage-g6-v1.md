@@ -1,7 +1,7 @@
 # KNTT Dimension Coverage Audit — Grade 6 v1
 
 **Date:** 2026-10-04  
-**State:** ACTIVE EVIDENCE AUDIT · G6 WRITTEN WAVE 1 R1 RECONCILED · NO RUNTIME / MASTERY / READINESS CHANGE
+**State:** ACTIVE EVIDENCE AUDIT · G6 WRITTEN BÀI 42 R1 RECONCILED · NO RUNTIME / MASTERY / READINESS CHANGE
 **Input:** semantically reconciled Grade-6 KNTT matrix (31 rows)
 
 ## 1. Why this audit exists
@@ -27,7 +27,7 @@ The audit is deliberately conservative. Topic-level evidence is not promoted to 
 | LEARN_CONTENT | 23 VERIFIED_DIRECT; 4 VERIFIED_LESSON_LOCAL; 4 VERIFIED_DIRECT_AND_LOCAL; 0 partial |
 | MICRO_PRACTICE | 23 VERIFIED_DIRECT; 4 VERIFIED_LESSON_LOCAL; 4 VERIFIED_DIRECT_AND_LOCAL; 0 partial; 0 NONE |
 | PRACTICE_BANK | 23 TOPIC_SKILL_EVIDENCE; 4 PARTIAL_TOPIC_EVIDENCE; 4 FAMILY_LEVEL_TOPIC_EVIDENCE; 0 NONE |
-| WRITTEN_LIBRARY | 8 `VERIFIED_KNTT_PLACEMENT` rows; 23 `NONE`; 0 candidate-only; 7 canonical Grade-6 Written items |
+| WRITTEN_LIBRARY | 9 `VERIFIED_KNTT_PLACEMENT` rows; 22 `NONE`; 0 candidate-only; 8 canonical Grade-6 Written items |
 | READINESS | 1 AUTHORIZED_TOPIC_LEVEL; 1 REVIEWED_STRUCTURED_READINESS; 29 NOT_VERIFIED_STRUCTURED |
 
 ## 2A. Written Placement R1 — REVIEWED / RECONCILED 07/10/2026
@@ -74,6 +74,20 @@ Independent NotebookLM review returned **PASS** for all three Wave-1 deep Writte
 
 Review receipt: `review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md`.
 
+## 2D. Written Bài 42 R1 — REVIEWED / RECONCILED 08/10/2026
+
+Independent NotebookLM review returned **PASS** for `WX23-PRO-003` with clearance `G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE`.
+
+- `WX23-PRO-003` → **Grade 6 · Chapter 9 · Bài 42 — Kết quả có thể và sự kiện trong trò chơi, thí nghiệm**.
+- The item explicitly distinguishes a concrete outcome from a Grade-6 **sự kiện** and asks the learner to explain why one outcome may satisfy multiple events.
+- The Grade-6 term **sự kiện** is preserved; Grade-7 **biến cố** is not introduced.
+- The task explicitly stops before Bài 43 probability calculation.
+- `ket-qua-co-the` and `su-kien-don-gian` remain lesson-local under `PROB-EVENT`; no canonical skill is created.
+- Written self-check remains formative only. No Readiness/Mastery credit, learner-history regrade, or runtime-taxonomy change.
+- Grade-6 Written coverage is now **8 canonical items with KNTT placements**, covering **9 verified lesson rows**.
+
+Review receipt: `review-packets/kntt-g6-written-bai42-r1/01_NOTEBOOKLM_RESULT_R1.md`.
+
 ## 3. Most important findings
 
 ### A. Bài 30 — Làm tròn và ước lượng — REPAIRED R1
@@ -103,7 +117,7 @@ The original Grade-6 lesson-local learning-evidence gap is now repaired and inde
 - NotebookLM result: **PASS**, 3/3 Micro, terminology/boundary PASS, clearance `G6_BAI42_EVENT_OUTCOME_CONTENT_REVIEW_COMPLETE`.
 - Review receipt: `review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md`.
 
-This repair closes the **Learn + lesson-local Micro** gap only. Written Library remains `NONE`; CT23 Readiness remains `PENDING_REVIEW`; no mastery/readiness claim is inferred.
+This historical repair closed the **Learn + lesson-local Micro** gap. The later independently reviewed Written Bài 42 R1 now adds `WX23-PRO-003` as `VERIFIED_KNTT_PLACEMENT`; CT23 Readiness remains unchanged and no mastery/readiness claim is inferred.
 
 ### C. Bài 4–5 — Cộng, trừ, nhân, chia số tự nhiên và tính chất — REPAIRED R1
 
@@ -281,7 +295,7 @@ until the library adopts the placement contract. Topic + grade overlay must not 
 | 8 | Bài 34-35 | VERIFIED_DIRECT | VERIFIED_DIRECT | TOPIC_SKILL_EVIDENCE | VERIFIED_KNTT_PLACEMENT | NOT_VERIFIED_STRUCTURED |
 | 8 | Bài 36-37 | VERIFIED_DIRECT | VERIFIED_DIRECT | TOPIC_SKILL_EVIDENCE | VERIFIED_KNTT_PLACEMENT | NOT_VERIFIED_STRUCTURED |
 | 9 | Bài 38-41 | VERIFIED_DIRECT_AND_LOCAL | VERIFIED_DIRECT_AND_LOCAL | PARTIAL_TOPIC_EVIDENCE | VERIFIED_KNTT_PLACEMENT | AUTHORIZED_TOPIC_LEVEL |
-| 9 | Bài 42 | VERIFIED_LESSON_LOCAL | VERIFIED_LESSON_LOCAL | FAMILY_LEVEL_TOPIC_EVIDENCE | NONE | NOT_VERIFIED_STRUCTURED |
+| 9 | Bài 42 | VERIFIED_LESSON_LOCAL | VERIFIED_LESSON_LOCAL | FAMILY_LEVEL_TOPIC_EVIDENCE | VERIFIED_KNTT_PLACEMENT | NOT_VERIFIED_STRUCTURED |
 | 9 | Bài 43 | VERIFIED_DIRECT | VERIFIED_DIRECT | TOPIC_SKILL_EVIDENCE | VERIFIED_KNTT_PLACEMENT | REVIEWED_STRUCTURED_READINESS |
 
 ## 6. Interpretation rules
@@ -303,7 +317,7 @@ until the library adopts the placement contract. Topic + grade overlay must not 
 3. Migrate the Shared Written Exercise Library toward canonical `kntt_placements` before claiming KNTT written coverage.
 4. Only after Learn/Practice gaps are reconciled should Readiness expansion be considered.
 5. Keep Bài 30 Written/Readiness dimensions open until they receive their own evidence; the R1 repair must not be promoted into a mastery/readiness claim.
-6. Keep Bài 42 Practice at family/topic level and Readiness pending until separate evidence is reviewed; the lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
+6. Keep Bài 42 Practice at family/topic level and Readiness unchanged; the reviewed Written anchor must remain formative and must not be promoted into a canonical skill or mastery/readiness claim.
 7. Keep Bài 4–5 Practice at family/topic level and Readiness open; the source-confirmed lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
 8. Keep Bài 8 Practice at family/topic level and Readiness open; the source-confirmed lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.
 9. Keep Bài 27 Practice at family/topic level and Readiness open; its problem-type evidence must not be promoted into canonical skills or mastery/readiness credit.
