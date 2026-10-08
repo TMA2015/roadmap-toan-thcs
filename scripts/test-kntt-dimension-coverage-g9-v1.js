@@ -20,6 +20,9 @@ assert.equal(a.summary.semantic_verified_rows,10);
 for(const lock of [a.source_locks.coverage_matrix,a.source_locks.grade9_reconciliation,a.source_locks.grade9_reconciliation_review,a.source_locks.taxonomy,a.source_locks.written_library]){
   assert.equal(blob(read(lock.path)),lock.blob_sha,"source drift: "+lock.path);
 }
+for(const lock of Object.values(a.source_locks.longform_sources)){
+  assert.equal(blob(read(lock.path)),lock.sha,"source drift: "+lock.path);
+}
 for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
   for(const k of ["workspace","micro","manifest","assessment"]){
     assert.equal(blob(read(ev[k].path)),ev[k].sha,"source drift: "+topic+" "+k);
@@ -67,14 +70,14 @@ assert.equal(ch6.audit_priority,"P1_ITEM_REVIEW");
 
 const ch7=a.rows.find(r=>r.chapter===7);
 assert.ok(ch7);
-assert.equal(ch7.dimensions.LEARN_CONTENT.status,"NONE_G9_EXPLICIT");
+assert.equal(ch7.dimensions.LEARN_CONTENT.status,"PARTIAL_LONGFORM_SOURCE");
 assert.equal(ch7.dimensions.MICRO_PRACTICE.status,"NONE_G9_EXPLICIT");
 assert.deepEqual(ch7.semantic_targets.canonical_families,["STAT-FREQUENCY","STAT-REPRESENT","STAT-ADVANCED-DATA"]);
 assert.equal(ch7.audit_priority,"P0");
 
 const ch8=a.rows.find(r=>r.chapter===8);
 assert.ok(ch8);
-assert.equal(ch8.dimensions.LEARN_CONTENT.status,"PARTIAL_SHARED_SKILL");
+assert.equal(ch8.dimensions.LEARN_CONTENT.status,"PARTIAL_LONGFORM_SOURCE");
 assert.equal(ch8.dimensions.MICRO_PRACTICE.status,"NONE_G9_EXPLICIT");
 assert.deepEqual(ch8.semantic_targets.explicit_item_review_refs,["dong-xu-nhieu-lan","xuc-xac-hai-lan","so-do-cay","nhieu-buoc-doc-lap","khong-hoan-lai"]);
 assert.equal(ch8.audit_priority,"P0");
@@ -91,5 +94,5 @@ assert.equal(a.summary.content_mutations,0);
 assert.equal(a.summary.new_canonical_skills,0);
 
 console.log("PASS: Grade-9 dimension audit inventories all 10 KNTT chapter rows without learner-content mutation.");
-console.log("PASS: Ch.7 and Ch.8 are P0 learner-evidence gaps; Ch.6 remains item-review-only, not automatic repair.");
+console.log("PASS: Ch.7 and Ch.8 are P0 Core-path/Micro gaps with long-form sources already present; Ch.6 remains item-review-only, not automatic repair.");
 console.log("PASS: shared unit-conversion density in Ch.10 is not inflated into a repair quota.");
