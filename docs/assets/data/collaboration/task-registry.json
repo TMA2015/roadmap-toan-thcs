@@ -1,5 +1,5 @@
 {
-  "version": "1.0.240",
+  "version": "1.0.241",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-08",
   "statuses": [
@@ -1851,9 +1851,28 @@
       "title": "Grade 7 P0 Repair Wave 1 — Bài 1–3, Bài 5–7, Bài 26–28",
       "routing": "CANDIDATE_AUTHORING+NOTEBOOKLM_ACADEMIC_REVIEW",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.240",
-      "review_verdict": "AUTHOR_CANDIDATES_ONLY_BEFORE_NOTEBOOKLM",
-      "review_notes": "Authorized candidate repair scope from independent gap-priority review: Bài1-3 LEARN+MICRO+PRACTICE for phep-tinh-so-huu-ti; Bài5-7 LEARN+MICRO+PRACTICE for so-vo-ti + can-bac-hai-so-hoc within Grade-7 basic real-number/square-root scope; Bài26-28 LEARN+MICRO+PRACTICE for chia-da-thuc-mot-bien. No Written/Readiness work and no new canonical skills in Wave 1. Candidate authoring must be independently reviewed before production mutation."
+      "context_version": "1.0.241",
+      "review_verdict": "CANDIDATES_READY_PR359_CI_PASS_AWAIT_NOTEBOOKLM_CONTENT_REVIEW",
+      "review_notes": "Wave-1 candidates are authored on Draft PR #359 only: exactly 3 Learn cards, 12 Micro items, 18 Practice items for Bài1-3, Bài5-7, Bài26-28; 0 Written, 0 Readiness, 0 new canonical skills. Historical regression gates were reconciled append-only without changing preserved Grade-6/legacy evidence. Exact candidate head 86b24baa7e6c01ad9de21ab251a228151518e292 passed Roadmap PR Quality run 37741276786 and Primary skill overlay CĐ04-07 QA run 37741276777, including strict build and browser/visual preview sweep. Do not merge/deploy until NotebookLM returns G7_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE.",
+      "release_candidate": {
+        "pr": 359,
+        "draft": true,
+        "exact_head": "86b24baa7e6c01ad9de21ab251a228151518e292",
+        "qa_run": 37741276786,
+        "qa_conclusion": "SUCCESS",
+        "overlay_qa_run": 37741276777,
+        "overlay_qa_conclusion": "SUCCESS",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008",
+        "required_clearance": "G7_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "content_counts": {
+          "learn": 3,
+          "micro": 12,
+          "practice": 18,
+          "written": 0,
+          "readiness": 0,
+          "new_canonical_skills": 0
+        }
+      }
     }
   ]
 }
