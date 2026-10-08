@@ -6,7 +6,7 @@
     "id": "21-thong-ke",
     "title": "Thống kê và thu thập dữ liệu"
   },
-  "question_count": 20,
+  "question_count": 24,
   "questions": [
     {
       "id": "STA21MICRO_001",
@@ -863,6 +863,190 @@
       "lesson_local_targets": [
         "bieu-do-tranh"
       ]
+    },
+    {
+      "id": "STA21MICRO_021",
+      "card_id": "sta21-core-4",
+      "micro_role": "base",
+      "question": "Bảng ghi nhiệt độ lúc 6 giờ, 9 giờ, 12 giờ lần lượt là 20°C, 24°C, 29°C. Khi chuyển sang biểu đồ đoạn thẳng, ba điểm dữ liệu đúng là:",
+      "options": [
+        "(6;20), (9;24), (12;29)",
+        "(20;6), (24;9), (29;12)",
+        "(6;24), (9;29), (12;20)",
+        "(6;20), (9;29), (12;24)"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "Trục ngang biểu diễn thời gian và trục đứng biểu diễn nhiệt độ, nên ba điểm phải là (6;20), (9;24), (12;29).",
+      "hints": [
+        "Xác định đại lượng nào đặt trên trục ngang.",
+        "Ghép đúng từng mốc thời gian với nhiệt độ tương ứng."
+      ],
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "chuyen-bang-bieu-do"
+        ],
+        "type": "chuyen-bang-sang-doan-thang",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 18-19"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "chuyen-bang-bieu-do",
+      "authoring_review": {
+        "status": "PENDING",
+        "method": "NOTEBOOKLM_WAVE2_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008"
+      }
+    },
+    {
+      "id": "STA21MICRO_022",
+      "card_id": "sta21-core-4",
+      "micro_role": "trap",
+      "question": "Một bảng cơ cấu có bốn nhóm chiếm lần lượt 25%, 35%, 20%, 20%. Khi vẽ biểu đồ quạt tròn, góc ở tâm của nhóm 25% phải bằng:",
+      "options": [
+        "90°",
+        "25°",
+        "72°",
+        "120°"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "Góc ở tâm bằng tỉ lệ phần trăm nhân 360°. Với 25%: 0,25 × 360° = 90°.",
+      "hints": [
+        "Toàn bộ hình tròn ứng với 360°.",
+        "Đổi 25% thành 0,25 rồi nhân 360°."
+      ],
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "chuyen-bang-bieu-do"
+        ],
+        "type": "chuyen-bang-sang-quat-tron",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 19"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "chuyen-bang-bieu-do",
+      "authoring_review": {
+        "status": "PENDING",
+        "method": "NOTEBOOKLM_WAVE2_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008"
+      }
+    },
+    {
+      "id": "STA21MICRO_023",
+      "card_id": "sta21-core-4",
+      "micro_role": "apply",
+      "question": "Bảng số liệu cho bốn tổ có 12, 18, 9, 15 học sinh tham gia câu lạc bộ. Vẽ biểu đồ cột với mỗi vạch trên trục đứng ứng với 3 học sinh. Chiều cao bốn cột lần lượt là:",
+      "options": [
+        "4, 6, 3, 5 vạch",
+        "3, 6, 4, 5 vạch",
+        "4, 5, 3, 6 vạch",
+        "12, 18, 9, 15 vạch"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "Chia mỗi số liệu cho 3: 12/3=4; 18/3=6; 9/3=3; 15/3=5. Vì vậy chiều cao là 4, 6, 3, 5 vạch.",
+      "hints": [
+        "Mỗi vạch tương ứng 3 học sinh.",
+        "Chia từng số liệu cho 3."
+      ],
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "chuyen-bang-bieu-do"
+        ],
+        "type": "chuyen-bang-sang-cot",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 18-19"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "chuyen-bang-bieu-do",
+      "authoring_review": {
+        "status": "PENDING",
+        "method": "NOTEBOOKLM_WAVE2_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008"
+      }
+    },
+    {
+      "id": "STA21MICRO_024",
+      "card_id": "sta21-core-4",
+      "micro_role": "coverage",
+      "question": "Khảo sát 200 học sinh cho bốn lựa chọn A, B, C, D với số lượng lần lượt 80, 60, 40, 20. Nếu biểu diễn bằng biểu đồ quạt tròn, các góc ở tâm tương ứng là:",
+      "options": [
+        "144°, 108°, 72°, 36°",
+        "80°, 60°, 40°, 20°",
+        "120°, 90°, 60°, 30°",
+        "160°, 120°, 80°, 40°"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "Các tỉ lệ là 40%, 30%, 20%, 10%. Nhân lần lượt với 360° được 144°, 108°, 72°, 36°.",
+      "hints": [
+        "Đổi số lượng từng nhóm thành tỉ lệ trên tổng 200.",
+        "Nhân mỗi tỉ lệ với 360°."
+      ],
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "chuyen-bang-bieu-do"
+        ],
+        "type": "chuyen-bang-sang-quat-tron",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 19"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "chuyen-bang-bieu-do",
+      "authoring_review": {
+        "status": "PENDING",
+        "method": "NOTEBOOKLM_WAVE2_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008"
+      }
     }
   ]
 }

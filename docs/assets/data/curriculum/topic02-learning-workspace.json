@@ -357,8 +357,55 @@
       }
     },
     {
-      "id": "num02-g7-core-2",
+      "id": "num02-g7-core-3",
       "order": 7,
+      "title": "Thứ tự phép tính và quy tắc chuyển vế",
+      "kntt_lessons": [
+        "Lớp 7 · Bài 4"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        7
+      ],
+      "skills": [
+        "thu-tu-phep-tinh"
+      ],
+      "prerequisites": [
+        "phep-tinh-so-huu-ti"
+      ],
+      "micro_practice": [
+        "NUM02MICRO_061",
+        "NUM02MICRO_062",
+        "NUM02MICRO_063",
+        "NUM02MICRO_064"
+      ],
+      "teaching_copy": {
+        "key_idea": "Khi tính biểu thức số hữu tỉ, thực hiện theo thứ tự: trong ngoặc trước; lũy thừa; nhân và chia; cuối cùng cộng và trừ. Với một đẳng thức có số chưa biết, có thể dùng quy tắc chuyển vế như một kỹ thuật biến đổi: chuyển một số hạng từ vế này sang vế kia thì đổi dấu số hạng đó, sau đó thực hiện phép tính để tìm giá trị chưa biết.",
+        "worked_example": {
+          "problem": "Tính A = 3/4 - 1/2 × (2/3) và tìm x biết x - 3/5 = 7/10.",
+          "solution": "Với A, tính phép nhân trước: 1/2 × 2/3 = 1/3, nên A = 3/4 - 1/3 = 5/12. Với x - 3/5 = 7/10, chuyển -3/5 sang vế phải thành +3/5: x = 7/10 + 3/5 = 13/10."
+        },
+        "misconception": "Không tính lần lượt từ trái sang phải khi biểu thức có nhiều loại phép tính. Khi chuyển vế, phải đổi dấu đúng số hạng được chuyển; không được đổi dấu cả hai vế hay tự ý đổi dấu những số hạng không chuyển.",
+        "summary": "Xác định đúng thứ tự phép tính; khi tìm số chưa biết, dùng chuyển vế như một kỹ thuật biến đổi đẳng thức và luôn kiểm tra lại kết quả trong phương trình ban đầu."
+      },
+      "lesson_local_concepts": [
+        {
+          "id": "quy-tac-chuyen-ve",
+          "label": "Quy tắc chuyển vế",
+          "role": "PREREQUISITE_TECHNIQUE",
+          "grade": 7,
+          "lesson": "Bài 4"
+        }
+      ],
+      "authoring_review": {
+        "status": "PENDING",
+        "method": "NOTEBOOKLM_WAVE2_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008"
+      }
+    },
+    {
+      "id": "num02-g7-core-2",
+      "order": 8,
       "title": "Số vô tỉ, căn bậc hai số học và tập số thực",
       "kntt_lessons": [
         "Lớp 7 · Bài 5–7"
