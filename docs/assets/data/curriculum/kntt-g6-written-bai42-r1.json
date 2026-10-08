@@ -1,12 +1,12 @@
 {
   "packet_id": "MATH-KNTT-G6-WRITTEN-BAI42-R1-20261007",
   "as_of": "2026-10-07",
-  "status": "ACADEMIC_REVIEW_PENDING",
+  "status": "ACADEMIC_REVIEW_COMPLETE",
   "scope": "Grade 6 KNTT Written P1 candidate for Bài 42 after Written Wave 1 closure; exactly one Deep Written Anchor",
   "source_locks": {
     "written_library": {
       "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
-      "sha": "fd772fd07612698f1c59f4959a17c8e8915cfe70"
+      "sha": "e5b7013e1f71df810a20d39d0f1fef36c2dc48f3"
     },
     "grade6_dimension_audit": {
       "path": "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
@@ -153,6 +153,70 @@
     "create_canonical_skill": false,
     "use_grade7_bien_co_terminology": false,
     "introduce_probability_calculation": false,
+    "readiness_credit": false,
+    "mastery_change": false,
+    "learner_history_regrade": false,
+    "runtime_taxonomy_change": false
+  },
+  "reviewed_source_locks": {
+    "written_library": {
+      "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+      "sha": "fd772fd07612698f1c59f4959a17c8e8915cfe70"
+    },
+    "grade6_dimension_audit": {
+      "path": "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+      "sha": "167f705e871044fb2afaa982ecbad4ed6958e5a6"
+    },
+    "topic23_workspace": {
+      "path": "docs/assets/data/curriculum/topic23-learning-workspace.json",
+      "sha": "443169587e0ba663bc694122ee4a37e456793c70"
+    },
+    "topic23_micro": {
+      "path": "docs/assets/data/practice/23-xac-suat-micro-v1.json",
+      "sha": "10f6dfcc41040da16b351a8c607c10fe82e6e4b3"
+    },
+    "prior_bai42_review": {
+      "path": "review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md",
+      "clearance": "G6_BAI42_EVENT_OUTCOME_CONTENT_REVIEW_COMPLETE"
+    }
+  },
+  "review_result": {
+    "verdict": "PASS",
+    "clearance": "G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE",
+    "expected_items": 1,
+    "reviewed_items": 1,
+    "item": "WX23-PRO-003",
+    "placement": "Bài 42",
+    "boundaries": {
+      "G6_SU_KIEN_NOT_G7_BIEN_CO": "PASS",
+      "BAI42_NOT_BAI43_PROBABILITY": "PASS",
+      "NO_NEW_CANONICAL_SKILL": "PASS"
+    },
+    "architecture_checks": {
+      "ARCH_1": "PASS",
+      "ARCH_2": "PASS",
+      "ARCH_3": "PASS",
+      "ARCH_4": "PASS",
+      "ARCH_5": "PASS",
+      "ARCH_6": "PASS",
+      "ARCH_7": "PASS",
+      "ARCH_8": "PASS",
+      "ARCH_9": "PASS",
+      "ARCH_10": "PASS"
+    },
+    "receipt": "review-packets/kntt-g6-written-bai42-r1/01_NOTEBOOKLM_RESULT_R1.md"
+  },
+  "implementation": {
+    "status": "PUBLISHED_ON_REVIEW_BRANCH",
+    "canonical_library_path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+    "canonical_library_blob": "e5b7013e1f71df810a20d39d0f1fef36c2dc48f3",
+    "appended_ids": [
+      "WX23-PRO-003"
+    ],
+    "canonical_item_count": 54,
+    "grade6_items_with_kntt_placement": 8,
+    "grade6_verified_written_rows": 9,
+    "new_canonical_skills": 0,
     "readiness_credit": false,
     "mastery_change": false,
     "learner_history_regrade": false,
