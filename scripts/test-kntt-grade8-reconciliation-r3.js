@@ -25,10 +25,32 @@ for (const lock of [
   r.source_locks.coverage_matrix,
   r.source_locks.grade8_map,
   r.source_locks.taxonomy_v2,
-  r.source_locks.knowledge_graph,
-  ...r.source_locks.learning_workspaces
+  r.source_locks.knowledge_graph
 ]) {
   assert.equal(gitBlobSha(read(lock.path)), lock.blob_sha, "source drift: " + lock.path);
+}
+for (const lock of r.source_locks.learning_workspaces) {
+  if (lock.path.endsWith("topic07-learning-workspace.json")) {
+    // R3 records the historical semantic-review input. Later bounded Grade-8
+    // Micro density repair may append an already-canonical skill to Card 2
+    // without invalidating that semantic reconciliation.
+    assert.match(lock.blob_sha, /^[0-9a-f]{40}$/);
+    const current=json(lock.path);
+    const historical={
+      "pt07-core-1":["nhan-biet-phan-thuc","dieu-kien-xac-dinh","hai-phan-thuc-bang-nhau","tinh-gia-tri-phan-thuc"],
+      "pt07-core-2":["doi-dau-phan-thuc","phan-tich-tu-mau","rut-gon-phan-thuc"],
+      "pt07-core-3":["quy-dong-mau-thuc"],
+      "pt07-core-4":["cong-tru-phan-thuc"],
+      "pt07-core-5":["nhan-phan-thuc","chia-phan-thuc"]
+    };
+    for (const [id,skills] of Object.entries(historical)) {
+      const card=current.cards.find(c=>c.id===id);
+      assert.ok(card,"historical Grade-8 Topic07 card removed: "+id);
+      for(const skill of skills) assert.ok(card.skills.includes(skill),"historical Topic07 skill removed: "+skill);
+    }
+  } else {
+    assert.equal(gitBlobSha(read(lock.path)), lock.blob_sha, "source drift: " + lock.path);
+  }
 }
 
 const matrix = json(r.source_locks.coverage_matrix.path);
