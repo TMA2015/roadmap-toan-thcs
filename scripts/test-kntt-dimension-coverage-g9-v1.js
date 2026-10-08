@@ -63,7 +63,7 @@ assert.deepEqual(a.summary.priority_gap_candidates,{
 const ch6=a.rows.find(r=>r.chapter===6);
 assert.ok(ch6);
 assert.deepEqual(ch6.roadmap.map(x=>x.topic_id),["10-ham-so-do-thi","12-phuong-trinh-bac-hai-viete","24-bai-toan-thuc-te"]);
-assert.equal(ch6.dimensions.LEARN_CONTENT.status,"PARTIAL_ITEM_REVIEW");
+assert.equal(ch6.dimensions.LEARN_CONTENT.status,"PARTIAL_LONGFORM_ITEM_REVIEW");
 assert.equal(ch6.dimensions.MICRO_PRACTICE.status,"PARTIAL_ITEM_REVIEW");
 assert.deepEqual(ch6.semantic_targets.explicit_item_review_refs,["bieu-thuc-doi-xung","dau-nghiem","lien-he-do-thi"]);
 assert.equal(ch6.audit_priority,"P1_ITEM_REVIEW");
@@ -94,5 +94,5 @@ assert.equal(a.summary.content_mutations,0);
 assert.equal(a.summary.new_canonical_skills,0);
 
 console.log("PASS: Grade-9 dimension audit inventories all 10 KNTT chapter rows without learner-content mutation.");
-console.log("PASS: Ch.7 and Ch.8 are P0 Core-path/Micro gaps with long-form sources already present; Ch.6 remains item-review-only, not automatic repair.");
+console.log("PASS: Ch.7 and Ch.8 are P0 Core-path/Micro gaps with long-form sources already present; Ch.6 has long-form coverage but remains item-review-only before Core-path promotion.");
 console.log("PASS: shared unit-conversion density in Ch.10 is not inflated into a repair quota.");
