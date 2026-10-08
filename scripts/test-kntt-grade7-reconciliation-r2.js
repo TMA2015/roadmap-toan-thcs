@@ -139,3 +139,4 @@ console.log("PASS: 6 skill + 4 family + 1 lesson-local; exactly 3 reviewed canon
 console.log("PASS: runtime, learner history, Mastery and Readiness remain unchanged.");
 
 require("./test-kntt-dimension-coverage-g7-v1.js");
+require("./test-kntt-g7-gap-priority-r1.js");
