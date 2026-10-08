@@ -17,7 +17,7 @@ const w21=json("docs/assets/data/curriculum/topic21-learning-workspace.json");
 const m21=json("docs/assets/data/practice/21-thong-ke-micro-v1.json");
 
 assert.equal(artifact.packet_id,"MATH-KNTT-G7-REPAIR-W2-R1-20261008");
-assert.equal(artifact.status,"ACADEMIC_CONTENT_REVIEW_PENDING");
+assert.equal(artifact.status,"ACADEMIC_CONTENT_REVIEW_PASS");
 assert.deepEqual(artifact.prior_clearance.second_repair_wave,["BAI4","BAI18_19","BAI22_23"]);
 assert.deepEqual(artifact.counts,{
   lesson_groups:3,learn_cards:2,micro_items:12,practice_items:0,
@@ -27,6 +27,8 @@ for(const [path,lock] of Object.entries(artifact.source_locks)){
   assert.equal(blob(read(path)),lock.sha,"source drift: "+path);
 }
 assert.equal(artifact.notebooklm_source_contract.selected_source_count,5);
+assert.equal(artifact.independent_review.verdict,"PASS");
+assert.equal(artifact.independent_review.clearance,"G7_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE");
 assert.ok(packet.includes("Select exactly 5 Sources"));
 assert.ok(packet.includes("CONTENT_COUNTS|LEARN=2|MICRO=12|PRACTICE=0"));
 assert.ok(packet.includes("CLEARANCE|G7_REPAIR_WAVE2_R1_CONTENT_REVIEW_COMPLETE"));
@@ -39,7 +41,7 @@ assert.deepEqual(card23.skills,["mo-hinh-ti-le"]);
 for(const c of [card4,card23]){
   assert.deepEqual(c.grades,[7]);
   assert.equal(c.layer,"KNTT-Core");
-  assert.equal(c.authoring_review.status,"PENDING");
+  assert.equal(c.authoring_review.status,"PASS");
   assert.equal(c.authoring_review.packet_id,artifact.packet_id);
 }
 
@@ -66,7 +68,7 @@ for(const q of all){
   assert.ok(Array.isArray(q.options)&&q.options.length===4);
   assert.ok(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4);
   assert.ok(q.explanation&&q.explanation.length>20);
-  assert.equal(q.authoring_review.status,"PENDING");
+  assert.equal(q.authoring_review.status,"PASS");
   assert.equal(q.authoring_review.packet_id,artifact.packet_id);
 }
 assert.ok(card4.lesson_local_concepts.some(x=>x.id==="quy-tac-chuyen-ve"&&x.role==="PREREQUISITE_TECHNIQUE"));
@@ -76,5 +78,5 @@ assert.ok(!JSON.stringify(artifact.candidates).includes('"WRITTEN"'));
 assert.ok(!JSON.stringify(artifact.candidates).includes('"READINESS"'));
 for(const [k,v] of Object.entries(artifact.protected_boundaries)) assert.equal(v,false,"protected boundary changed: "+k);
 
-console.log("PASS: Grade-7 Repair Wave 2 has exactly 2 Learn + 12 Micro candidates.");
+console.log("PASS: Grade-7 Repair Wave 2 has exactly 2 Learn + 12 Micro candidates after NotebookLM PASS.");
 console.log("PASS: no Practice/Written/Readiness/new-skill expansion is encoded.");
