@@ -1,0 +1,1252 @@
+{
+  "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008",
+  "as_of": "2026-10-08",
+  "status": "ACADEMIC_CONTENT_REVIEW_PENDING",
+  "scope": "Grade-7 KNTT First Repair Wave candidate implementation for Bài 1–3, Bài 5–7, Bài 26–28; Learn + Micro + Practice only",
+  "prior_clearance": {
+    "packet_id": "MATH-KNTT-G7-GAP-PRIORITY-R1-20261008",
+    "clearance": "G7_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+    "first_repair_wave": [
+      "BAI1_3",
+      "BAI5_7",
+      "BAI26_28"
+    ],
+    "dimensions": [
+      "LEARN",
+      "MICRO",
+      "PRACTICE"
+    ],
+    "max_groups": 3
+  },
+  "source_locks": {
+    "docs/assets/data/curriculum/topic02-learning-workspace.json": {
+      "sha": "240154b4ddc5049f60a952bec21951066ccd8622"
+    },
+    "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json": {
+      "sha": "9c0a5d3b3262dab6c16eadf6b5418c752e3e04f4"
+    },
+    "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json": {
+      "sha": "26a415651bfdd808a842b2ffad91dbc47afe2323"
+    },
+    "docs/assets/data/practice/02-so-va-phep-tinh-v1-06.json": {
+      "sha": "7271f38dfceb5d6335f9b88947897d514d90cd24"
+    },
+    "docs/assets/data/curriculum/topic04-learning-workspace.json": {
+      "sha": "bd3d421d7eb1ecffaab97866d363e1563d23c6a0"
+    },
+    "docs/assets/data/practice/04-bieu-thuc-dai-so-micro-v1.json": {
+      "sha": "cb868f2d25895f179626cdec67d7efaf4dc0e03d"
+    },
+    "docs/assets/data/practice/04-bieu-thuc-dai-so-v2.manifest.json": {
+      "sha": "54d778362f7a19117f3913507e6e174f56002712"
+    },
+    "docs/assets/data/practice/04-bieu-thuc-dai-so-v2-06.json": {
+      "sha": "2d3a4ecc6941202ad5c483830a3351c37db43175"
+    },
+    "review-packets/kntt-g7-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md": {
+      "sha": "86ba358e68e582282bd9f79e7b14f964525acf3c"
+    },
+    "docs/assets/data/curriculum/kntt-grade7-reconciliation-r2.json": {
+      "sha": "bac3e56c82fcad760f9993b390b064c299c75ecc"
+    }
+  },
+  "notebooklm_source_contract": {
+    "selected_source_count": 5,
+    "permanent_sources": [
+      "NotebookLM Math Review Rules v1.2",
+      "Self-Learning Math Master Plan v1.2.1"
+    ],
+    "grade7_s1_sources": [
+      "SGK Toán 7, tập một — Kết nối tri thức với cuộc sống",
+      "SGK Toán 7, tập hai — Kết nối tri thức với cuộc sống"
+    ],
+    "temporary_batch_sources": [
+      "00_NOTEBOOKLM_PACKET_R1.md — NotebookLM Review Packet — Grade 7 Repair Wave 1 R1"
+    ],
+    "explicitly_not_selected": [
+      "Written Exercise Library Contract v1",
+      "Grade-7 evidence inventory JSON",
+      "Grade-7 priority-result receipt as a separate NotebookLM Source"
+    ],
+    "rule": "2 permanent + 2 Grade-7 SGK + 1 packet = exactly 5 selected Sources."
+  },
+  "candidates": {
+    "BAI1_3": {
+      "priority": "P0",
+      "dimensions": [
+        "LEARN",
+        "MICRO",
+        "PRACTICE"
+      ],
+      "canonical_skill": "phep-tinh-so-huu-ti",
+      "learn_card": {
+        "id": "num02-g7-core-1",
+        "order": 6,
+        "title": "Số hữu tỉ: cộng, trừ, nhân và chia",
+        "kntt_lessons": [
+          "Lớp 7 · Bài 1–3"
+        ],
+        "layer": "KNTT-Core",
+        "grades": [
+          7
+        ],
+        "skills": [
+          "phep-tinh-so-huu-ti"
+        ],
+        "prerequisites": [
+          "phep-tinh-phan-so",
+          "so-nguyen-phep-tinh"
+        ],
+        "micro_practice": [
+          "NUM02MICRO_053",
+          "NUM02MICRO_054",
+          "NUM02MICRO_055",
+          "NUM02MICRO_056"
+        ],
+        "teaching_copy": {
+          "key_idea": "Số hữu tỉ có thể viết dưới dạng a/b với a, b là số nguyên và b khác 0. Khi cộng hoặc trừ hai số hữu tỉ, đưa về cùng mẫu rồi cộng/trừ tử; khi nhân, nhân tử với tử và mẫu với mẫu; khi chia cho một số hữu tỉ khác 0, nhân với số nghịch đảo. Dấu của kết quả phải được xử lí như với số nguyên. Trong biểu thức nhiều phép tính, ưu tiên lũy thừa, rồi nhân/chia, cuối cùng cộng/trừ, trừ khi có ngoặc.",
+          "worked_example": {
+            "problem": "Tính A = -3/4 + 5/6 và B = (-2/3) : (4/9).",
+            "solution": "A = -9/12 + 10/12 = 1/12. Với B, đổi phép chia thành nhân với số nghịch đảo: (-2/3) × (9/4) = -18/12 = -3/2."
+          },
+          "misconception": "Không cộng tử với tử và mẫu với mẫu khi cộng phân số. Khi chia, chỉ đảo số chia, không đảo số bị chia. Đặc biệt chú ý dấu âm và ngoặc: (-2/3)^2 khác với -(2/3)^2.",
+          "summary": "Xác định đúng phép tính, xử lí dấu, quy đồng khi cộng–trừ, dùng nghịch đảo khi chia và kiểm tra thứ tự phép tính."
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "NOTEBOOKLM_WAVE1_R1",
+          "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+        }
+      },
+      "micro_items": [
+        {
+          "id": "NUM02MICRO_053",
+          "card_id": "num02-g7-core-1",
+          "micro_role": "base",
+          "question": "Tính \\(-\\frac34+\\frac56\\).",
+          "options": [
+            "\\(\\frac1{12}\\)",
+            "\\(-\\frac{19}{12}\\)",
+            "\\(\\frac{19}{12}\\)",
+            "\\(-\\frac1{12}\\)"
+          ],
+          "answer": 0,
+          "difficulty": "basic",
+          "explanation": "Quy đồng mẫu 12: \\(-9/12+10/12=1/12\\).",
+          "hints": [
+            "Quy đồng hai phân số về cùng mẫu.",
+            "Mẫu chung nhỏ nhất của 4 và 6 là 12."
+          ],
+          "type": "cong-so-huu-ti",
+          "tags": {
+            "topic": "02-so-va-phep-tinh",
+            "skill": [
+              "phep-tinh-so-huu-ti"
+            ],
+            "type": "cong-so-huu-ti",
+            "layer": "KNTT-Core",
+            "grade": 7
+          },
+          "curriculum": {
+            "book": "KNTT",
+            "grades": [
+              7
+            ],
+            "level": "core",
+            "lesson": "Bài 1-3"
+          },
+          "exam": {
+            "entrance10": "foundation",
+            "specialized": "none"
+          },
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02MICRO_054",
+          "card_id": "num02-g7-core-1",
+          "micro_role": "trap",
+          "question": "Tính \\((-\\frac23):\\frac49\\).",
+          "options": [
+            "\\(-\\frac32\\)",
+            "\\(-\\frac8{27}\\)",
+            "\\(\\frac32\\)",
+            "\\(-\\frac29\\)"
+          ],
+          "answer": 0,
+          "difficulty": "intermediate",
+          "explanation": "Chia cho \\(4/9\\) là nhân với \\(9/4\\): \\((-2/3)\\times(9/4)=-3/2\\).",
+          "hints": [
+            "Chỉ đảo số chia.",
+            "Đổi phép chia thành phép nhân với số nghịch đảo của \\(4/9\\)."
+          ],
+          "type": "chia-so-huu-ti",
+          "tags": {
+            "topic": "02-so-va-phep-tinh",
+            "skill": [
+              "phep-tinh-so-huu-ti"
+            ],
+            "type": "chia-so-huu-ti",
+            "layer": "KNTT-Core",
+            "grade": 7
+          },
+          "curriculum": {
+            "book": "KNTT",
+            "grades": [
+              7
+            ],
+            "level": "core",
+            "lesson": "Bài 1-3"
+          },
+          "exam": {
+            "entrance10": "foundation",
+            "specialized": "none"
+          },
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02MICRO_055",
+          "card_id": "num02-g7-core-1",
+          "micro_role": "apply",
+          "question": "Tính \\(\\frac12-\\left(-\\frac34\\right)\\cdot\\frac23\\).",
+          "options": [
+            "\\(1\\)",
+            "\\(0\\)",
+            "\\(-1\\)",
+            "\\(\\frac14\\)"
+          ],
+          "answer": 0,
+          "difficulty": "intermediate",
+          "explanation": "Tích bằng \\(-1/2\\), nên \\(1/2-(-1/2)=1\\).",
+          "hints": [
+            "Thực hiện phép nhân trước phép trừ.",
+            "Tính \\((-3/4)\\times(2/3)\\) trước."
+          ],
+          "type": "bieu-thuc-so-huu-ti",
+          "tags": {
+            "topic": "02-so-va-phep-tinh",
+            "skill": [
+              "phep-tinh-so-huu-ti"
+            ],
+            "type": "bieu-thuc-so-huu-ti",
+            "layer": "KNTT-Core",
+            "grade": 7
+          },
+          "curriculum": {
+            "book": "KNTT",
+            "grades": [
+              7
+            ],
+            "level": "core",
+            "lesson": "Bài 1-3"
+          },
+          "exam": {
+            "entrance10": "foundation",
+            "specialized": "none"
+          },
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02MICRO_056",
+          "card_id": "num02-g7-core-1",
+          "micro_role": "trap",
+          "question": "Giá trị của \\(\\left(-\\frac23\\right)^2\\) là:",
+          "options": [
+            "\\(\\frac49\\)",
+            "\\(-\\frac49\\)",
+            "\\(\\frac23\\)",
+            "\\(-\\frac23\\)"
+          ],
+          "answer": 0,
+          "difficulty": "basic",
+          "explanation": "Bình phương một số âm cho kết quả dương: \\((-2/3)^2=4/9\\).",
+          "hints": [
+            "Dấu âm nằm bên trong ngoặc và cũng được bình phương.",
+            "Nhân \\((-2/3)\\) với chính nó."
+          ],
+          "type": "luy-thua-so-huu-ti",
+          "tags": {
+            "topic": "02-so-va-phep-tinh",
+            "skill": [
+              "phep-tinh-so-huu-ti"
+            ],
+            "type": "luy-thua-so-huu-ti",
+            "layer": "KNTT-Core",
+            "grade": 7
+          },
+          "curriculum": {
+            "book": "KNTT",
+            "grades": [
+              7
+            ],
+            "level": "core",
+            "lesson": "Bài 1-3"
+          },
+          "exam": {
+            "entrance10": "foundation",
+            "specialized": "none"
+          },
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        }
+      ],
+      "practice_items": [
+        {
+          "id": "NUM02V1_133",
+          "question": "Tính \\(-\\frac25+\\frac3{10}\\).",
+          "options": [
+            "\\(-\\frac1{10}\\)",
+            "\\(\\frac1{10}\\)",
+            "\\(-\\frac7{10}\\)",
+            "\\(\\frac7{10}\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "so-va-phep-tinh",
+            "skill": [
+              "phep-tinh-so-huu-ti"
+            ],
+            "type": "phep-tinh-so-huu-ti"
+          },
+          "difficulty": "basic",
+          "explanation": "Quy đồng: \\(-2/5=-4/10\\), nên tổng bằng \\(-1/10\\).",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02V1_134",
+          "question": "Tính \\(\\frac79-\\left(-\\frac29\\right)\\).",
+          "options": [
+            "\\(1\\)",
+            "\\(\\frac59\\)",
+            "\\(-1\\)",
+            "\\(\\frac19\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "so-va-phep-tinh",
+            "skill": [
+              "phep-tinh-so-huu-ti"
+            ],
+            "type": "phep-tinh-so-huu-ti"
+          },
+          "difficulty": "basic",
+          "explanation": "Trừ số âm là cộng số đối: \\(7/9+2/9=1\\).",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02V1_135",
+          "question": "Tính \\((-\\frac56)\\cdot\\frac9{10}\\).",
+          "options": [
+            "\\(-\\frac34\\)",
+            "\\(\\frac34\\)",
+            "\\(-\\frac{45}{16}\\)",
+            "\\(-\\frac12\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "so-va-phep-tinh",
+            "skill": [
+              "phep-tinh-so-huu-ti"
+            ],
+            "type": "phep-tinh-so-huu-ti"
+          },
+          "difficulty": "basic",
+          "explanation": "Rút gọn trước hoặc sau khi nhân: \\((-5/6)(9/10)=-45/60=-3/4\\).",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02V1_136",
+          "question": "Tính \\(\\frac38:\\left(-\\frac9{16}\\right)\\).",
+          "options": [
+            "\\(-\\frac23\\)",
+            "\\(\\frac23\\)",
+            "\\(-\\frac{27}{128}\\)",
+            "\\(-\\frac32\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "so-va-phep-tinh",
+            "skill": [
+              "phep-tinh-so-huu-ti"
+            ],
+            "type": "phep-tinh-so-huu-ti"
+          },
+          "difficulty": "basic",
+          "explanation": "Nhân với nghịch đảo: \\((3/8)(-16/9)=-2/3\\).",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02V1_137",
+          "question": "Tính \\(1-\\frac23\\cdot\\left(-\\frac34\\right)\\).",
+          "options": [
+            "\\(\\frac32\\)",
+            "\\(\\frac12\\)",
+            "\\(-\\frac32\\)",
+            "\\(0\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "so-va-phep-tinh",
+            "skill": [
+              "phep-tinh-so-huu-ti"
+            ],
+            "type": "phep-tinh-so-huu-ti"
+          },
+          "difficulty": "intermediate",
+          "explanation": "Tích bằng \\(-1/2\\), nên \\(1-(-1/2)=3/2\\).",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02V1_138",
+          "question": "Giá trị của \\(\\left(-\\frac12\\right)^3\\) là:",
+          "options": [
+            "\\(-\\frac18\\)",
+            "\\(\\frac18\\)",
+            "\\(-\\frac16\\)",
+            "\\(\\frac16\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "so-va-phep-tinh",
+            "skill": [
+              "phep-tinh-so-huu-ti"
+            ],
+            "type": "phep-tinh-so-huu-ti"
+          },
+          "difficulty": "basic",
+          "explanation": "Lũy thừa bậc lẻ giữ dấu âm: \\((-1/2)^3=-1/8\\).",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        }
+      ]
+    },
+    "BAI5_7": {
+      "priority": "P0",
+      "dimensions": [
+        "LEARN",
+        "MICRO",
+        "PRACTICE"
+      ],
+      "canonical_skills": [
+        "so-vo-ti",
+        "can-bac-hai-so-hoc"
+      ],
+      "learn_card": {
+        "id": "num02-g7-core-2",
+        "order": 7,
+        "title": "Số vô tỉ, căn bậc hai số học và tập số thực",
+        "kntt_lessons": [
+          "Lớp 7 · Bài 5–7"
+        ],
+        "layer": "KNTT-Core",
+        "grades": [
+          7
+        ],
+        "skills": [
+          "so-vo-ti",
+          "can-bac-hai-so-hoc"
+        ],
+        "prerequisites": [
+          "so-huu-ti-thap-phan"
+        ],
+        "micro_practice": [
+          "NUM02MICRO_057",
+          "NUM02MICRO_058",
+          "NUM02MICRO_059",
+          "NUM02MICRO_060"
+        ],
+        "teaching_copy": {
+          "key_idea": "Số hữu tỉ có biểu diễn thập phân hữu hạn hoặc vô hạn tuần hoàn. Số vô tỉ là số không viết được dưới dạng a/b với a, b nguyên và b khác 0; biểu diễn thập phân của nó là vô hạn không tuần hoàn. Với a ≥ 0, căn bậc hai số học của a là số không âm x sao cho x² = a, kí hiệu √a. Tập số thực gồm cả số hữu tỉ và số vô tỉ.",
+          "worked_example": {
+            "problem": "Phân loại các số 0,25; 0,(3); √2; √49. Tính √49.",
+            "solution": "0,25 và 0,(3) là số hữu tỉ. √2 là số vô tỉ. Vì 7² = 49 và căn bậc hai số học là số không âm nên √49 = 7."
+          },
+          "misconception": "Không viết √49 = ±7: kí hiệu √49 chỉ căn bậc hai số học, nên bằng 7. Cũng không kết luận mọi số có dấu căn đều vô tỉ; chẳng hạn √49 = 7 là số hữu tỉ.",
+          "summary": "Phân biệt hữu tỉ/vô tỉ bằng bản chất biểu diễn số; với √a, luôn lấy giá trị không âm và chỉ dùng kiến thức căn bậc hai số học cơ bản của lớp 7."
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "NOTEBOOKLM_WAVE1_R1",
+          "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+        }
+      },
+      "micro_items": [
+        {
+          "id": "NUM02MICRO_057",
+          "card_id": "num02-g7-core-2",
+          "micro_role": "base",
+          "question": "Số nào sau đây là số vô tỉ?",
+          "options": [
+            "\\(\\sqrt2\\)",
+            "\\(-\\frac34\\)",
+            "\\(0,125\\)",
+            "\\(0,(3)\\)"
+          ],
+          "answer": 0,
+          "difficulty": "basic",
+          "explanation": "\\(\\sqrt2\\) không viết được dưới dạng phân số của hai số nguyên; các số còn lại đều là số hữu tỉ.",
+          "hints": [
+            "Số thập phân hữu hạn và vô hạn tuần hoàn đều là số hữu tỉ.",
+            "Tìm số không thể viết dưới dạng \\(a/b\\)."
+          ],
+          "type": "nhan-biet-so-vo-ti",
+          "tags": {
+            "topic": "02-so-va-phep-tinh",
+            "skill": [
+              "so-vo-ti"
+            ],
+            "type": "nhan-biet-so-vo-ti",
+            "layer": "KNTT-Core",
+            "grade": 7
+          },
+          "curriculum": {
+            "book": "KNTT",
+            "grades": [
+              7
+            ],
+            "level": "core",
+            "lesson": "Bài 5-7"
+          },
+          "exam": {
+            "entrance10": "foundation",
+            "specialized": "none"
+          },
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02MICRO_058",
+          "card_id": "num02-g7-core-2",
+          "micro_role": "trap",
+          "question": "Căn bậc hai số học của 49 là:",
+          "options": [
+            "\\(7\\)",
+            "\\(-7\\)",
+            "\\(\\pm7\\)",
+            "\\(49\\)"
+          ],
+          "answer": 0,
+          "difficulty": "basic",
+          "explanation": "Căn bậc hai số học là số không âm; vì \\(7^2=49\\) nên \\(\\sqrt{49}=7\\).",
+          "hints": [
+            "Kí hiệu \\(\\sqrt a\\) chỉ giá trị không âm.",
+            "Số không âm nào bình phương bằng 49?"
+          ],
+          "type": "can-bac-hai-so-hoc",
+          "tags": {
+            "topic": "02-so-va-phep-tinh",
+            "skill": [
+              "can-bac-hai-so-hoc"
+            ],
+            "type": "can-bac-hai-so-hoc",
+            "layer": "KNTT-Core",
+            "grade": 7
+          },
+          "curriculum": {
+            "book": "KNTT",
+            "grades": [
+              7
+            ],
+            "level": "core",
+            "lesson": "Bài 5-7"
+          },
+          "exam": {
+            "entrance10": "foundation",
+            "specialized": "none"
+          },
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02MICRO_059",
+          "card_id": "num02-g7-core-2",
+          "micro_role": "apply",
+          "question": "Khẳng định nào đúng?",
+          "options": [
+            "\\(\\sqrt5\\) là số vô tỉ.",
+            "Mọi số có dấu căn đều vô tỉ.",
+            "\\(\\sqrt{36}=\\pm6\\).",
+            "Số vô tỉ có biểu diễn thập phân vô hạn tuần hoàn."
+          ],
+          "answer": 0,
+          "difficulty": "intermediate",
+          "explanation": "\\(\\sqrt5\\) là số vô tỉ. \\(\\sqrt{36}=6\\), và số vô tỉ có biểu diễn thập phân vô hạn không tuần hoàn.",
+          "hints": [
+            "Kiểm tra riêng từng khẳng định.",
+            "Nhớ rằng căn của một số chính phương có thể là số hữu tỉ."
+          ],
+          "type": "phan-biet-huu-ti-vo-ti",
+          "tags": {
+            "topic": "02-so-va-phep-tinh",
+            "skill": [
+              "so-vo-ti"
+            ],
+            "type": "phan-biet-huu-ti-vo-ti",
+            "layer": "KNTT-Core",
+            "grade": 7
+          },
+          "curriculum": {
+            "book": "KNTT",
+            "grades": [
+              7
+            ],
+            "level": "core",
+            "lesson": "Bài 5-7"
+          },
+          "exam": {
+            "entrance10": "foundation",
+            "specialized": "none"
+          },
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02MICRO_060",
+          "card_id": "num02-g7-core-2",
+          "micro_role": "apply",
+          "question": "Tính \\(\\sqrt{0,81}\\).",
+          "options": [
+            "\\(0,9\\)",
+            "\\(0,09\\)",
+            "\\(9\\)",
+            "\\(\\pm0,9\\)"
+          ],
+          "answer": 0,
+          "difficulty": "intermediate",
+          "explanation": "\\(0,9^2=0,81\\) và căn bậc hai số học lấy giá trị không âm, nên \\(\\sqrt{0,81}=0,9\\).",
+          "hints": [
+            "Tìm số không âm có bình phương bằng 0,81.",
+            "\\(0,9\\times0,9=0,81\\)."
+          ],
+          "type": "can-bac-hai-so-hoc",
+          "tags": {
+            "topic": "02-so-va-phep-tinh",
+            "skill": [
+              "can-bac-hai-so-hoc"
+            ],
+            "type": "can-bac-hai-so-hoc",
+            "layer": "KNTT-Core",
+            "grade": 7
+          },
+          "curriculum": {
+            "book": "KNTT",
+            "grades": [
+              7
+            ],
+            "level": "core",
+            "lesson": "Bài 5-7"
+          },
+          "exam": {
+            "entrance10": "foundation",
+            "specialized": "none"
+          },
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        }
+      ],
+      "practice_items": [
+        {
+          "id": "NUM02V1_139",
+          "question": "Số nào là số vô tỉ?",
+          "options": [
+            "\\(\\sqrt3\\)",
+            "\\(0,75\\)",
+            "\\(-2\\)",
+            "\\(0,(6)\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "so-va-phep-tinh",
+            "skill": [
+              "so-vo-ti"
+            ],
+            "type": "so-vo-ti"
+          },
+          "difficulty": "basic",
+          "explanation": "\\(\\sqrt3\\) là số vô tỉ; các số còn lại là hữu tỉ.",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02V1_140",
+          "question": "Khẳng định nào đúng?",
+          "options": [
+            "Số vô tỉ có biểu diễn thập phân vô hạn không tuần hoàn.",
+            "Mọi số thập phân vô hạn đều vô tỉ.",
+            "Mọi căn bậc hai đều vô tỉ.",
+            "Số vô tỉ không thuộc tập số thực."
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "so-va-phep-tinh",
+            "skill": [
+              "so-vo-ti"
+            ],
+            "type": "so-vo-ti"
+          },
+          "difficulty": "intermediate",
+          "explanation": "Số vô tỉ có biểu diễn thập phân vô hạn không tuần hoàn và vẫn thuộc tập số thực.",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02V1_141",
+          "question": "Trong các số \\(\\sqrt2,\\sqrt9,\\frac53,0,(12)\\), có bao nhiêu số vô tỉ?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "so-va-phep-tinh",
+            "skill": [
+              "so-vo-ti"
+            ],
+            "type": "so-vo-ti"
+          },
+          "difficulty": "intermediate",
+          "explanation": "Chỉ \\(\\sqrt2\\) là vô tỉ; \\(\\sqrt9=3\\), \\(5/3\\) và 0,(12) đều hữu tỉ.",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02V1_142",
+          "question": "Tính \\(\\sqrt{121}\\).",
+          "options": [
+            "11",
+            "-11",
+            "±11",
+            "121"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "so-va-phep-tinh",
+            "skill": [
+              "can-bac-hai-so-hoc"
+            ],
+            "type": "can-bac-hai-so-hoc"
+          },
+          "difficulty": "basic",
+          "explanation": "Vì \\(11^2=121\\) và căn bậc hai số học không âm nên kết quả là 11.",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02V1_143",
+          "question": "Tính \\(\\sqrt{\\frac{25}{49}}\\).",
+          "options": [
+            "\\(\\frac57\\)",
+            "\\(-\\frac57\\)",
+            "\\(\\frac{25}{7}\\)",
+            "\\(\\frac5{49}\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "so-va-phep-tinh",
+            "skill": [
+              "can-bac-hai-so-hoc"
+            ],
+            "type": "can-bac-hai-so-hoc"
+          },
+          "difficulty": "basic",
+          "explanation": "\\((5/7)^2=25/49\\), nên căn bậc hai số học bằng 5/7.",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "NUM02V1_144",
+          "question": "Số nào thỏa \\(x=\\sqrt{16}\\)?",
+          "options": [
+            "4",
+            "-4",
+            "±4",
+            "8"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "so-va-phep-tinh",
+            "skill": [
+              "can-bac-hai-so-hoc"
+            ],
+            "type": "can-bac-hai-so-hoc"
+          },
+          "difficulty": "basic",
+          "explanation": "Kí hiệu \\(\\sqrt{16}\\) chỉ căn bậc hai số học, nên bằng 4.",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        }
+      ]
+    },
+    "BAI26_28": {
+      "priority": "P0",
+      "dimensions": [
+        "LEARN",
+        "MICRO",
+        "PRACTICE"
+      ],
+      "canonical_skill": "chia-da-thuc-mot-bien",
+      "learn_card": {
+        "id": "alg04-g7-core-6",
+        "order": 6,
+        "title": "Chia đa thức một biến",
+        "kntt_lessons": [
+          "Lớp 7 · Bài 28"
+        ],
+        "layer": "KNTT-Core",
+        "grades": [
+          7
+        ],
+        "skills": [
+          "chia-da-thuc-mot-bien"
+        ],
+        "prerequisites": [
+          "thu-gon-da-thuc",
+          "cong-tru-da-thuc",
+          "nhan-bieu-thuc"
+        ],
+        "micro_practice": [
+          "ALG04MICRO_016",
+          "ALG04MICRO_017",
+          "ALG04MICRO_018",
+          "ALG04MICRO_019"
+        ],
+        "teaching_copy": {
+          "key_idea": "Khi chia đa thức một biến cho một đa thức khác 0, sắp xếp các hạng tử theo lũy thừa giảm dần của biến. Chia hạng tử bậc cao nhất của đa thức bị chia cho hạng tử bậc cao nhất của đa thức chia để tìm hạng tử đầu của thương; nhân ngược lại, rồi trừ và tiếp tục. Trong các bài chia hết ở phạm vi này, kết quả cuối cùng có dư bằng 0.",
+          "worked_example": {
+            "problem": "Chia \\(x^2+5x+6\\) cho \\(x+2\\).",
+            "solution": "Lấy \\(x^2:x=x\\). Nhân \\(x(x+2)=x^2+2x\\), trừ được \\(3x+6\\). Tiếp theo \\(3x:x=3\\). Nhân \\(3(x+2)=3x+6\\), trừ được 0. Vậy thương là \\(x+3\\). Kiểm tra: \\((x+2)(x+3)=x^2+5x+6\\)."
+          },
+          "misconception": "Không chia từng hạng tử của đa thức bị chia cho cả đa thức chia như khi chia cho một đơn thức. Mỗi bước phải lấy hạng tử bậc cao nhất, nhân ngược lại toàn bộ đa thức chia rồi trừ đúng dấu.",
+          "summary": "Sắp xếp theo bậc giảm dần → chia hạng tử đầu → nhân ngược → trừ → lặp lại → kiểm tra bằng phép nhân."
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "NOTEBOOKLM_WAVE1_R1",
+          "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+        }
+      },
+      "micro_items": [
+        {
+          "id": "ALG04MICRO_016",
+          "micro_role": "base",
+          "question": "Thương của \\((x^2+5x+6):(x+2)\\) là:",
+          "options": [
+            "\\(x+3\\)",
+            "\\(x+2\\)",
+            "\\(x-3\\)",
+            "\\(x^2+3\\)"
+          ],
+          "answer": 0,
+          "difficulty": "basic",
+          "explanation": "\\(x^2+5x+6=(x+2)(x+3)\\), nên thương là \\(x+3\\).",
+          "hints": [
+            "Tìm hai số có tổng 5 và tích 6.",
+            "Hoặc thực hiện phép chia theo hạng tử bậc cao nhất."
+          ],
+          "card_id": "alg04-g7-core-6",
+          "tags": {
+            "topic": "bieu-thuc-dai-so",
+            "skill": [
+              "chia-da-thuc-mot-bien"
+            ],
+            "type": "chia-da-thuc-mot-bien",
+            "layer": "KNTT-Core",
+            "grade": 7
+          },
+          "curriculum": {
+            "book": "KNTT",
+            "grades": [
+              7
+            ],
+            "level": "core",
+            "lesson": "Bài 28"
+          },
+          "exam": {
+            "entrance10": "foundation",
+            "specialized": "none"
+          },
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "ALG04MICRO_017",
+          "micro_role": "apply",
+          "question": "Tính \\((2x^2+7x+3):(2x+1)\\).",
+          "options": [
+            "\\(x+3\\)",
+            "\\(x+2\\)",
+            "\\(2x+3\\)",
+            "\\(x-3\\)"
+          ],
+          "answer": 0,
+          "difficulty": "intermediate",
+          "explanation": "\\((2x+1)(x+3)=2x^2+7x+3\\), nên thương là \\(x+3\\).",
+          "hints": [
+            "Bắt đầu bằng \\(2x^2:2x=x\\).",
+            "Sau bước đầu, phần còn lại là \\(6x+3\\)."
+          ],
+          "card_id": "alg04-g7-core-6",
+          "tags": {
+            "topic": "bieu-thuc-dai-so",
+            "skill": [
+              "chia-da-thuc-mot-bien"
+            ],
+            "type": "chia-da-thuc-mot-bien",
+            "layer": "KNTT-Core",
+            "grade": 7
+          },
+          "curriculum": {
+            "book": "KNTT",
+            "grades": [
+              7
+            ],
+            "level": "core",
+            "lesson": "Bài 28"
+          },
+          "exam": {
+            "entrance10": "foundation",
+            "specialized": "none"
+          },
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "ALG04MICRO_018",
+          "micro_role": "trap",
+          "question": "Tính \\((x^3-x^2-4x+4):(x-1)\\).",
+          "options": [
+            "\\(x^2-4\\)",
+            "\\(x^2+4\\)",
+            "\\(x^2-x-4\\)",
+            "\\(x^2-1\\)"
+          ],
+          "answer": 0,
+          "difficulty": "intermediate",
+          "explanation": "\\((x-1)(x^2-4)=x^3-x^2-4x+4\\), nên thương là \\(x^2-4\\).",
+          "hints": [
+            "Chia \\(x^3\\) cho \\(x\\) để được \\(x^2\\).",
+            "Sau khi trừ bước đầu, chú ý giữ đúng dấu của các hạng tử còn lại."
+          ],
+          "card_id": "alg04-g7-core-6",
+          "tags": {
+            "topic": "bieu-thuc-dai-so",
+            "skill": [
+              "chia-da-thuc-mot-bien"
+            ],
+            "type": "chia-da-thuc-mot-bien",
+            "layer": "KNTT-Core",
+            "grade": 7
+          },
+          "curriculum": {
+            "book": "KNTT",
+            "grades": [
+              7
+            ],
+            "level": "core",
+            "lesson": "Bài 28"
+          },
+          "exam": {
+            "entrance10": "foundation",
+            "specialized": "none"
+          },
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "ALG04MICRO_019",
+          "micro_role": "apply",
+          "question": "Muốn kiểm tra kết quả \\((x^2-1):(x-1)=x+1\\), phép tính nào là phù hợp nhất?",
+          "options": [
+            "Kiểm tra \\((x-1)(x+1)=x^2-1\\).",
+            "Cộng \\((x-1)+(x+1)\\).",
+            "Thay mọi \\(x\\) bằng 1.",
+            "Đạo hàm hai đa thức."
+          ],
+          "answer": 0,
+          "difficulty": "basic",
+          "explanation": "Kiểm tra phép chia hết bằng cách nhân đa thức chia với thương; ở đây \\((x-1)(x+1)=x^2-1\\).",
+          "hints": [
+            "Phép chia và phép nhân là hai phép toán ngược nhau.",
+            "Nhân đa thức chia với thương."
+          ],
+          "card_id": "alg04-g7-core-6",
+          "tags": {
+            "topic": "bieu-thuc-dai-so",
+            "skill": [
+              "chia-da-thuc-mot-bien"
+            ],
+            "type": "chia-da-thuc-mot-bien",
+            "layer": "KNTT-Core",
+            "grade": 7
+          },
+          "curriculum": {
+            "book": "KNTT",
+            "grades": [
+              7
+            ],
+            "level": "core",
+            "lesson": "Bài 28"
+          },
+          "exam": {
+            "entrance10": "foundation",
+            "specialized": "none"
+          },
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        }
+      ],
+      "practice_items": [
+        {
+          "id": "ALG04V2_133",
+          "question": "Tính \\((x^2+3x+2):(x+1)\\).",
+          "options": [
+            "\\(x+2\\)",
+            "\\(x+1\\)",
+            "\\(x-2\\)",
+            "\\(x^2+2\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "bieu-thuc-dai-so",
+            "skill": [
+              "chia-da-thuc-mot-bien"
+            ],
+            "type": "chia-da-thuc-mot-bien"
+          },
+          "difficulty": "basic",
+          "explanation": "\\((x+1)(x+2)=x^2+3x+2\\).",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "ALG04V2_134",
+          "question": "Tính \\((x^2-4):(x-2)\\).",
+          "options": [
+            "\\(x+2\\)",
+            "\\(x-2\\)",
+            "\\(x^2+2\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "bieu-thuc-dai-so",
+            "skill": [
+              "chia-da-thuc-mot-bien"
+            ],
+            "type": "chia-da-thuc-mot-bien"
+          },
+          "difficulty": "basic",
+          "explanation": "Hiệu hai bình phương: \\(x^2-4=(x-2)(x+2)\\).",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "ALG04V2_135",
+          "question": "Tính \\((2x^2+5x+2):(2x+1)\\).",
+          "options": [
+            "\\(x+2\\)",
+            "\\(2x+2\\)",
+            "\\(x+1\\)",
+            "\\(x-2\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "bieu-thuc-dai-so",
+            "skill": [
+              "chia-da-thuc-mot-bien"
+            ],
+            "type": "chia-da-thuc-mot-bien"
+          },
+          "difficulty": "basic",
+          "explanation": "\\((2x+1)(x+2)=2x^2+5x+2\\).",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "ALG04V2_136",
+          "question": "Tính \\((x^3-8):(x-2)\\).",
+          "options": [
+            "\\(x^2+2x+4\\)",
+            "\\(x^2-2x+4\\)",
+            "\\(x^2+4\\)",
+            "\\(x^2+2\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "bieu-thuc-dai-so",
+            "skill": [
+              "chia-da-thuc-mot-bien"
+            ],
+            "type": "chia-da-thuc-mot-bien"
+          },
+          "difficulty": "intermediate",
+          "explanation": "\\(x^3-8=(x-2)(x^2+2x+4)\\).",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "ALG04V2_137",
+          "question": "Tính \\((x^3+x^2-x-1):(x+1)\\).",
+          "options": [
+            "\\(x^2-1\\)",
+            "\\(x^2+1\\)",
+            "\\(x^2-x-1\\)",
+            "\\(x^2+x-1\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "bieu-thuc-dai-so",
+            "skill": [
+              "chia-da-thuc-mot-bien"
+            ],
+            "type": "chia-da-thuc-mot-bien"
+          },
+          "difficulty": "intermediate",
+          "explanation": "Nhóm hạng tử: \\(x^2(x+1)-1(x+1)=(x+1)(x^2-1)\\).",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        },
+        {
+          "id": "ALG04V2_138",
+          "question": "Nếu \\(P(x)=(x-3)(x^2+2x+1)\\), thì \\(P(x):(x-3)\\) bằng:",
+          "options": [
+            "\\(x^2+2x+1\\)",
+            "\\(x^2-2x+1\\)",
+            "\\(x-3\\)",
+            "\\(x^3-x^2-5x-3\\)"
+          ],
+          "answer": 0,
+          "tags": {
+            "topic": "bieu-thuc-dai-so",
+            "skill": [
+              "chia-da-thuc-mot-bien"
+            ],
+            "type": "chia-da-thuc-mot-bien"
+          },
+          "difficulty": "basic",
+          "explanation": "Vì \\(P(x)\\) đã được viết dưới dạng tích của đa thức chia và thương, nên thương là \\(x^2+2x+1\\).",
+          "authoring_review": {
+            "status": "PENDING",
+            "method": "NOTEBOOKLM_WAVE1_R1",
+            "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+          }
+        }
+      ]
+    }
+  },
+  "counts": {
+    "lesson_groups": 3,
+    "learn_cards": 3,
+    "micro_items": 12,
+    "practice_items": 18,
+    "written_items": 0,
+    "readiness_items": 0,
+    "new_canonical_skills": 0
+  },
+  "protected_boundaries": {
+    "merge_before_independent_content_review": false,
+    "written_mutation": false,
+    "readiness_mutation": false,
+    "create_canonical_skill": false,
+    "change_mastery": false,
+    "regrade_learner_history": false,
+    "runtime_taxonomy_change": false,
+    "import_later_grade_radical_algebra": false
+  }
+}
