@@ -531,7 +531,7 @@ $$
     micro_page.locator("#core-journey .topic-micro-start").first.click()
     core_dialog = micro_page.locator(".topic-core-dialog")
     check(core_dialog.is_visible(), "Core practice opens in its own dialog")
-    check(cards.count() == 5 and cards.nth(0).get_attribute("class") == "topic-core-card", "Core cards never stretch inline")
+    check(cards.count() == 6 and cards.nth(0).get_attribute("class") == "topic-core-card", "CĐ04 keeps six Wave-1 cards as stable card shells while practice opens in a dialog")
     check(core_dialog.locator(".topic-micro-pager button").count() == 3, "per-question navigation")
     check(core_dialog.locator(".topic-micro-option").first.evaluate("(el) => parseFloat(getComputedStyle(el).borderTopWidth) >= 1"), "visible answer boundaries")
     check(core_dialog.locator(".topic-micro-tools > button").count() == 3, "three separate help buttons")
