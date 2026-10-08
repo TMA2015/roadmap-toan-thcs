@@ -1,0 +1,96 @@
+{
+  "packet_id": "MATH-KNTT-G7-DENSITY-W1-SCOPE-R1-20261008",
+  "as_of": "2026-10-08",
+  "status": "OWNER_AUTHORIZED_IMPLEMENTED",
+  "scope": "Grade-7 Density Wave 1 scope review after Repair Waves 1–2 closure; BAI8 Micro-only candidate",
+  "closed_baseline": {
+    "wave1": {
+      "status": "CLOSED_DEPLOYED",
+      "groups": [
+        "BAI1_3",
+        "BAI5_7",
+        "BAI26_28"
+      ]
+    },
+    "wave2": {
+      "status": "CLOSED_DEPLOYED",
+      "groups": [
+        "BAI4",
+        "BAI18_19",
+        "BAI22_23"
+      ],
+      "clearance": "G7_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE"
+    }
+  },
+  "candidate": {
+    "group": "BAI8",
+    "priority": "P2",
+    "dimensions": [
+      "MICRO"
+    ],
+    "topic": "13-goc-va-duong-thang",
+    "target_skill": "goc-phu-bu",
+    "evidence": {
+      "learn": "VERIFIED_DIRECT",
+      "practice": "TOPIC_SKILL_EVIDENCE",
+      "micro": "MISSING_G7_EXPLICIT_TARGET_ONLY"
+    }
+  },
+  "deferred": {
+    "BAI24_25": {
+      "priority": "DEFER",
+      "dimensions": [
+        "NONE"
+      ]
+    }
+  },
+  "protected_boundaries": {
+    "mutate_learning_content": false,
+    "mutate_practice_bank": false,
+    "mutate_written_library": false,
+    "mutate_readiness": false,
+    "create_canonical_skill": false,
+    "change_mastery": false,
+    "regrade_learner_history": false,
+    "runtime_taxonomy_change": false
+  },
+  "notebooklm_source_contract": {
+    "selected_source_count": 5,
+    "permanent_sources": [
+      "NotebookLM Math Review Rules v1.2",
+      "Self-Learning Math Master Plan v1.2.1"
+    ],
+    "grade7_s1_sources": [
+      "SGK Toán 7, tập một — Kết nối tri thức với cuộc sống",
+      "SGK Toán 7, tập hai — Kết nối tri thức với cuộc sống"
+    ],
+    "temporary_batch_sources": [
+      "00_NOTEBOOKLM_PACKET_R1.md — NotebookLM Review Packet — Grade 7 Density Wave 1 Scope R1"
+    ]
+  },
+  "next_step": {
+    "status": "AWAIT_REPOSITORY_QA_AND_DEPLOY"
+  },
+  "owner_authorization": {
+    "decision": "PROCEED_WITHOUT_NOTEBOOKLM_SCOPE_REVIEW",
+    "rationale": "Gap is narrowly bounded and already reconciled: Learn and Practice are sufficient; only explicit Grade-7 Micro evidence for goc-phu-bu is missing. Owner authorizes direct implementation after assistant review.",
+    "authorized_group": "BAI8",
+    "authorized_dimension": "MICRO",
+    "authorized_target": "goc-phu-bu",
+    "maximum_new_micro_items": 1,
+    "reviewed_on": "2026-10-08"
+  },
+  "implementation": {
+    "item_id": "GEO13MICRO_023",
+    "card_id": "geo13-core-2",
+    "micro_role": "coverage",
+    "grade": 7,
+    "target_skill": "goc-phu-bu",
+    "item_count_added": 1,
+    "learn_added": 0,
+    "practice_added": 0,
+    "written_added": 0,
+    "readiness_added": 0,
+    "new_canonical_skills": 0
+  }
+}

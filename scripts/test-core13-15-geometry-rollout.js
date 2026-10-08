@@ -4,7 +4,7 @@ const fs=require("fs"),crypto=require("crypto");
 const read=p=>fs.readFileSync(p,"utf8"),json=p=>JSON.parse(read(p)),ok=(v,m)=>{if(!v)throw Error(m)};
 const gitSha=s=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+Buffer.byteLength(s)+"\0"),Buffer.from(s)])).digest("hex");
 const specs=[
-{n:"13",slug:"13-goc-va-duong-thang",lesson:"87808197120ef356c7f839cb8322f307ea32eb15",bank:"566cd1e0f1e7e873b1ef74afe3617a3792d0cd62",count:22,declared:21,add:[
+{n:"13",slug:"13-goc-va-duong-thang",lesson:"87808197120ef356c7f839cb8322f307ea32eb15",bank:"566cd1e0f1e7e873b1ef74afe3617a3792d0cd62",count:23,declared:21,add:[
  ["GEO13MICRO_016","geo13-core-1","tia"],["GEO13MICRO_017","geo13-core-1","tia-doi"],["GEO13MICRO_018","geo13-core-1","doan-thang-do-dai"],["GEO13MICRO_019","geo13-core-2","do-goc"],["GEO13MICRO_020","geo13-core-2","phan-loai-goc"],["GEO13MICRO_021","geo13-core-2","goc-phu-bu"],["GEO13MICRO_022","geo13-core-2","nhan-dang-goc-dac-biet"]]},
 {n:"14",slug:"14-tam-giac",lesson:"a2743c1cdaff5d072ae98b706f63fa29c23a2654",bank:"130a12a631f676c43010ecc8817c01f6dde2e455",count:17,declared:13,add:[["GEO14MICRO_016","geo14-core-1","so-sanh-canh-goc"],["GEO14MICRO_017","geo14-core-2","cach-deu-dinh"]]},
 {n:"15",slug:"15-duong-dong-quy",lesson:"5bff7b5e5dca04ad7f2288e31442d7536491f386",bank:"9e36e342ede18aa3317bb3d7e00f365fd1217b87",count:15,declared:11,add:[]}
@@ -51,10 +51,13 @@ for(const t of specs){
   ok(q.tags.layer==="KNTT-Core"&&q.curriculum.level==="core","Core boundaries "+id);
   appended++;
  }
- ok(JSON.stringify(bank.questions.slice(15).map(q=>q.id))===JSON.stringify(t.add.map(x=>x[0])),"no extra or substituted IDs "+t.slug);
+ const expectedSuffix=t.slug==="13-goc-va-duong-thang"
+   ? [...t.add.map(x=>x[0]),"GEO13MICRO_023"]
+   : t.add.map(x=>x[0]);
+ ok(JSON.stringify(bank.questions.slice(15).map(q=>q.id))===JSON.stringify(expectedSuffix),"no extra or substituted IDs "+t.slug);
  total+=bank.questions.length;declared+=d;covered+=c;
 }
-ok(total===54&&declared===45&&covered===45&&appended===9,"locked scope = 54 questions, 45 skill opportunities, nine new questions");
+ok(total===55&&declared===45&&covered===45&&appended===9,"historical rollout keeps 45 skill opportunities and nine reviewed rollout questions, plus one later owner-authorized CĐ13 density Micro");
 const eq=(a,b)=>Math.abs(a-b)<1e-9;
 ok(eq(3+3,6)&&eq(180-65,115)&&eq(180-112,68),"CĐ13 worked geometric angle oracles");
 ok(eq(180-50-60,70)&&eq(10/2,5),"CĐ14 and CĐ15 sample oracles");
@@ -64,4 +67,6 @@ ok(eq(4+7,11)&&45<60&&60<75,"new segment/triangle ordering");
 ok(3*2===6&&6*2!==6,"proof grounding sanity");
 // No geometry question may refer to an image-only implicit constraint.
 for(const t of specs){const bank=json("docs/assets/data/practice/"+t.slug+"-micro-v1.json");for(const q of bank.questions.slice(15))ok(!/hình (bên dưới|bên trên|vẽ sẵn)|như hình/.test(q.question.toLowerCase()),"new problem depends on an unstated diagram "+q.id)}
-console.log("PASS: CĐ13–15 15 source-locked geometry lectures, 45 original items intact, nine exact new IDs, 45/45 skill-card opportunities and explicit geometric assumptions.");
+const density=json("docs/assets/data/practice/13-goc-va-duong-thang-micro-v1.json").questions.find(q=>q.id==="GEO13MICRO_023");
+ok(density?.tags?.grade===7&&density?.target==="goc-phu-bu"&&density?.micro_role==="coverage"&&density?.authoring_review?.status==="PASS","owner-authorized Grade-7 density item");
+console.log("PASS: CĐ13–15 historical rollout remains intact; one later owner-authorized Grade-7 CĐ13 density Micro is appended safely.");

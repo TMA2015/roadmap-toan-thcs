@@ -337,10 +337,11 @@ with sync_playwright() as p:
                         ("geo13-core-1","GEO13MICRO_016","tia",3,6),
                         ("geo13-core-1","GEO13MICRO_017","tia-doi",4,6),
                         ("geo13-core-1","GEO13MICRO_018","doan-thang-do-dai",5,6),
-                        ("geo13-core-2","GEO13MICRO_019","do-goc",3,7),
-                        ("geo13-core-2","GEO13MICRO_020","phan-loai-goc",4,7),
-                        ("geo13-core-2","GEO13MICRO_021","goc-phu-bu",5,7),
-                        ("geo13-core-2","GEO13MICRO_022","nhan-dang-goc-dac-biet",6,7)
+                        ("geo13-core-2","GEO13MICRO_019","do-goc",3,8),
+                        ("geo13-core-2","GEO13MICRO_020","phan-loai-goc",4,8),
+                        ("geo13-core-2","GEO13MICRO_021","goc-phu-bu",5,8),
+                        ("geo13-core-2","GEO13MICRO_022","nhan-dang-goc-dac-biet",6,8),
+                        ("geo13-core-2","GEO13MICRO_023","goc-phu-bu",7,8)
                     ],
                     "14-tam-giac":[
                         ("geo14-core-1","GEO14MICRO_016","so-sanh-canh-goc",3,4),
@@ -839,7 +840,7 @@ $$
     # Geometry route/long pagers must fit a real touch viewport.
     for geometry_slug,card_id,count in [
         ("13-goc-va-duong-thang","geo13-core-1",6),
-        ("13-goc-va-duong-thang","geo13-core-2",7),
+        ("13-goc-va-duong-thang","geo13-core-2",8),
         ("14-tam-giac","geo14-core-1",4),
         ("14-tam-giac","geo14-core-2",4),
         ("15-duong-dong-quy","geo15-core-1",3),
