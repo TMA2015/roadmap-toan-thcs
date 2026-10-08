@@ -6,7 +6,7 @@
     "id": "13-goc-va-duong-thang",
     "title": "Góc và quan hệ giữa các đường thẳng"
   },
-  "question_count": 22,
+  "question_count": 23,
   "questions": [
     {
       "id": "GEO13MICRO_001",
@@ -958,6 +958,57 @@
       "authoring_review": {
         "method": "bounded-self-audit",
         "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_023",
+      "card_id": "geo13-core-2",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "goc-phu-bu",
+      "question": "Hai góc bù nhau. Một góc có số đo \\(68^\\circ\\). Góc còn lại có số đo:",
+      "options": [
+        "\\(112^\\circ\\)",
+        "\\(22^\\circ\\)",
+        "\\(68^\\circ\\)",
+        "\\(248^\\circ\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "goc-phu-bu"
+        ],
+        "type": "tinh-goc-bu",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Hai góc bù nhau có tổng số đo \\(180^\\circ\\), nên góc còn lại là \\(180^\\circ-68^\\circ=112^\\circ\\).",
+      "hints": [
+        "Hai góc bù nhau có tổng bao nhiêu độ?",
+        "Lấy 180° trừ số đo góc đã biết."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 8"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "owner-authorized-bounded-self-audit",
+        "status": "PASS",
+        "decision_record": "docs/assets/data/curriculum/kntt-g7-density-wave1-scope-r1.json",
+        "scope": "BAI8_MICRO_ONLY_GOC_PHU_BU"
       }
     }
   ]
