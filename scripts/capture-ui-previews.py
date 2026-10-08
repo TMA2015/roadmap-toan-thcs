@@ -85,7 +85,10 @@ with sync_playwright() as p:
     check(gateway_grade7.count() == 1, "grade 7 mapping reaches the right Core gateway")
     gateway_grade7.click()
     class_page.locator("#core-journey .topic-core-card").first.wait_for(state="visible", timeout=12000)
-    check(class_page.locator("#core-journey .topic-core-card").count() == 5, "grade 7 opens five CĐ04 cards")
+    grade7_cards = class_page.locator("#core-journey .topic-core-card")
+    check(grade7_cards.count() == 6, "grade 7 opens six CĐ04 cards after append-only Wave 1 candidate")
+    check(grade7_cards.filter(has_text="Chia đa thức một biến").count() == 1,
+          "grade 7 CĐ04 includes the new Bài 28 polynomial-division card")
     shot(class_page, "grade-7-core-cards-desktop.png")
     class_page.close()
     page.locator('.home-style-bar [data-home-select="playful"]').click()
