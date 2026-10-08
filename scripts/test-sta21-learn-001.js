@@ -7,7 +7,7 @@ const manifest=read("docs/assets/data/practice/21-thong-ke-v1.manifest.json");
 const errors=[],check=(v,s)=>{if(!v)errors.push(s)};
 check(workspace.schema==="roadmap-topic-learning-workspace-v1"&&workspace.topic==="21-thong-ke","workspace contract");
 check(workspace.core_progress_policy?.layer==="KNTT-Core"&&workspace.cards?.length===5,"card count/layer");
-check(micro.question_count===20&&micro.questions.length===20&&micro.bank_id==="STA21-MICRO-V1","micro count/bank id");
+check(micro.question_count===24&&micro.questions.length===24&&micro.bank_id==="STA21-MICRO-V1","micro count/bank id");
 check(manifest.question_count===132&&manifest.sources.length===5,"original bank count changed");
 check(workspace.micro_practice_bank==="assets/data/practice/21-thong-ke-micro-v1.json","micro data path");
 check((workspace.extensions||[]).length>=2&&workspace.extensions.every(x=>x.gates_core===false),"extensions gate Core");
@@ -20,7 +20,7 @@ for(const grade of [6,7,8]){
  mapped[grade]=skills;
 }
 
-const expectedCardCounts=[5,6,3,3,3],qids=[];
+const expectedCardCounts=[5,6,3,7,3],qids=[];
 for(let i=0;i<workspace.cards.length;i++){
  const card=workspace.cards[i];
  check(card.id==="sta21-core-"+(i+1)&&card.order===i+1&&card.layer==="KNTT-Core","card identity/order "+i);
@@ -28,7 +28,11 @@ for(let i=0;i<workspace.cards.length;i++){
  check(card.micro_practice.length===expectedCardCounts[i],"micro count/card "+card.id);
  const qs=card.micro_practice.map(x=>byId.get(x));
  check(qs.every(Boolean)&&qs.slice(0,3).map(x=>x.micro_role).join(",")==="base,trap,apply","base/trap/apply prefix "+card.id);
- check(qs.slice(3).every(x=>x.micro_role==="coverage"),"coverage suffix "+card.id);
+ if(card.id==="sta21-core-4"){
+   check(qs.slice(3).map(x=>x.micro_role).join(",")==="base,trap,apply,coverage","reviewed Wave-2 suffix "+card.id);
+ }else{
+   check(qs.slice(3).every(x=>x.micro_role==="coverage"),"coverage suffix "+card.id);
+ }
  const localDeclared=new Set([...(card.lesson_local_concepts||[]),...(card.lesson_local_problem_types||[]),...(card.lesson_local_representations||[])].map(x=>x.id));
  for(const x of qs){
    if(!x)continue;
@@ -43,7 +47,7 @@ for(let i=0;i<workspace.cards.length;i++){
    }
  }
 }
-check(new Set(qids).size===20,"duplicate or omitted card IDs");
+check(new Set(qids).size===24,"duplicate or omitted card IDs");
 
 for(let i=0;i<micro.questions.length;i++){
  const q=micro.questions[i],lessonLocal=q.evidence_role==="LESSON_LOCAL_CORE_FORMATIVE";
@@ -65,6 +69,9 @@ for(let i=0;i<micro.questions.length;i++){
 
 const reviewed=["STA21MICRO_016","STA21MICRO_017","STA21MICRO_018","STA21MICRO_019","STA21MICRO_020"].map(id=>byId.get(id));
 check(reviewed.every(q=>q.authoring_review?.packet==="MATH-KNTT-G6-STATISTICS-R1-20261004"&&q.authoring_review?.verdict==="PASS"&&q.authoring_review?.clearance==="G6_STATISTICS_CONTENT_REVIEW_COMPLETE"),"statistics review receipt metadata");
+
+const wave2=["STA21MICRO_021","STA21MICRO_022","STA21MICRO_023","STA21MICRO_024"].map(id=>byId.get(id));
+check(wave2.every(q=>q.authoring_review?.packet_id==="MATH-KNTT-G7-REPAIR-W2-R1-20261008"&&q.authoring_review?.status==="PASS"),"Wave-2 review receipt metadata");
 
 const existing=manifest.sources.flatMap(s=>read("docs/assets/data/practice/"+s).questions);
 check(existing.length===132,"existing source bank load");
@@ -89,4 +96,4 @@ check(index.includes("Learning Cards")&&index.includes("[Làm Core Readiness CĐ
 check(!index.includes("Đạt tối thiểu **7/10**"),"legacy hard gate still present");
 
 if(errors.length){console.error(errors.join("\n"));process.exit(1)}
-console.log("PASS: CĐ21 5 Learning Cards, 20 micro with reviewed Grade-6 direct/local evidence, grade-map skill alignment and safe cross-grade teaching copy; bank 132 unchanged.");
+console.log("PASS: CĐ21 5 Learning Cards, 24 micro including reviewed Grade-7 Wave 2 append, preserved Grade-6 evidence, grade-map alignment and unchanged 132-item Practice bank.");
