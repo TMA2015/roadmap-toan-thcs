@@ -18,7 +18,7 @@ ok(shell.includes('id:"core"')&&shell.includes('lesson-switcher-steps--four'),"f
 ok(css.includes(".topic-core-teaching-modal")&&css.includes(".topic-core-gateway"),"teaching modal and gateway styles");
 ok(js.includes("topic-core-teach-start")&&js.includes("topic-core-practice-start"),"two Core card actions");
 ok(!js.includes("topic-core-teaching-item"),"no duplicate standalone lecture list");
-ok(workspace.topic===slug&&workspace.cards.length===5&&bank.questions.length===17,"original topic scope unchanged");
+ok(workspace.topic===slug&&workspace.cards.length===5&&bank.questions.length===18,"topic scope preserves original content plus bounded Grade-8 density append");
 const ids=new Set(bank.questions.map(q=>q.id));
 for(const c of workspace.cards){
  ok(c.layer==="KNTT-Core","card layer "+c.id);
