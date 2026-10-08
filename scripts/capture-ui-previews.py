@@ -840,7 +840,7 @@ $$
     # Geometry route/long pagers must fit a real touch viewport.
     for geometry_slug,card_id,count in [
         ("13-goc-va-duong-thang","geo13-core-1",6),
-        ("13-goc-va-duong-thang","geo13-core-2",7),
+        ("13-goc-va-duong-thang","geo13-core-2",8),
         ("14-tam-giac","geo14-core-1",4),
         ("14-tam-giac","geo14-core-2",4),
         ("15-duong-dong-quy","geo15-core-1",3),
