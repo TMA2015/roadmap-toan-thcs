@@ -88,3 +88,5 @@ for (const [key,value] of Object.entries(r.implementation_scope)) {
 console.log("PASS: Grade-8 R3 semantically reconciles all 3 exact-ID mismatches.");
 console.log("PASS: 2 canonical-family + 1 lesson-local; no new taxonomy identity and no independent review required.");
 console.log("PASS: runtime, learner history, Mastery and Readiness remain unchanged.");
+
+require("./test-kntt-dimension-coverage-g8-v1.js");
