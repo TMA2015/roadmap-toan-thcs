@@ -209,6 +209,16 @@
           "sha": "d9fffb1ab50a78b6d85289523073a21a77bba0af"
         }
       }
+    },
+    "longform_sources": {
+      "21-thong-ke": {
+        "path": "docs/kien-thuc/21-thong-ke/index.md",
+        "sha": "e1c2549945fab0524abf0c6ffadb5457d3884bca"
+      },
+      "23-xac-suat": {
+        "path": "docs/kien-thuc/23-xac-suat/index.md",
+        "sha": "2630dd951ea50bbfc3577456624b907e2fa92af1"
+      }
     }
   },
   "semantic_reconciliation": {
@@ -248,8 +258,7 @@
       "LEARN_CONTENT": {
         "VERIFIED_DIRECT": 7,
         "PARTIAL_ITEM_REVIEW": 1,
-        "NONE_G9_EXPLICIT": 1,
-        "PARTIAL_SHARED_SKILL": 1
+        "PARTIAL_LONGFORM_SOURCE": 2
       },
       "MICRO_PRACTICE": {
         "VERIFIED_DIRECT": 6,
@@ -290,7 +299,7 @@
     ],
     "content_mutations": 0,
     "new_canonical_skills": 0,
-    "note": "Inventory only. Ch.7 and Ch.8 are true learner-evidence gaps; Ch.6 is an item-review queue, not automatic authoring authorization. Ch.10 missing Grade-9 Micro for shared unit conversion is not treated as a density quota. Secondary Topic24 support is recorded in roadmap but is not used to inflate primary Learn/Micro evidence."
+    "note": "Inventory only. Ch.7 and Ch.8 are Core-path/Micro learner-evidence gaps, not total knowledge-source gaps: long-form explanations already exist. Ch.6 is an item-review queue, not automatic authoring authorization. Ch.10 missing Grade-9 Micro for shared unit conversion is not treated as a density quota. Secondary Topic24 support is recorded in roadmap but is not used to inflate primary Learn/Micro evidence."
   },
   "protected_boundaries": {
     "mutate_learning_content": false,
@@ -1158,14 +1167,14 @@
           "reconciliation_clearance": "G9_R4_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "NONE_G9_EXPLICIT",
+          "status": "PARTIAL_LONGFORM_SOURCE",
           "primary_topic": "21-thong-ke",
-          "direct_hits": [],
-          "direct_missing": [
+          "direct_hits": [
             "bang-tan-so",
             "tan-suat",
             "du-lieu-ghep-nhom"
           ],
+          "direct_missing": [],
           "family_targets": [
             "STAT-FREQUENCY",
             "STAT-REPRESENT",
@@ -1177,7 +1186,7 @@
             "bieu-do-tan-so-tuong-doi",
             "bang-tan-so-ghep-nhom"
           ],
-          "note": "R4 confirms KNTT-Core family/alias semantics, but the current Topic 21 learner workspace has no Grade-9 frequency/relative-frequency Learn card and no Grade-9 Micro evidence."
+          "note": "Long-form Topic 21 knowledge already explains frequency, relative frequency and grouped data, but the Grade-9 Core Learning Card path is absent."
         },
         "MICRO_PRACTICE": {
           "status": "NONE_G9_EXPLICIT",
@@ -1280,25 +1289,25 @@
           "reconciliation_clearance": "G9_R4_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_SHARED_SKILL",
+          "status": "PARTIAL_LONGFORM_SOURCE",
           "primary_topic": "23-xac-suat",
           "direct_hits": [
             "phep-thu-ngau-nhien",
             "khong-gian-mau",
             "bien-co",
             "xac-suat-co-dien",
-            "kiem-tra-xac-suat"
-          ],
-          "direct_missing": [
-            "dong-xu-nhieu-lan",
-            "xuc-xac-hai-lan",
+            "kiem-tra-xac-suat",
             "so-do-cay",
             "nhieu-buoc-doc-lap",
             "khong-hoan-lai"
           ],
+          "direct_missing": [
+            "dong-xu-nhieu-lan",
+            "xuc-xac-hai-lan"
+          ],
           "family_targets": [],
           "lesson_local_targets": [],
-          "note": "Lower-grade cards cover shared probability foundations, but there is no Grade-9 learner-facing Learn/Micro layer for the simple probability models. Five model refs remain item-review targets from the Grade-9 map."
+          "note": "Long-form Topic 23 knowledge covers shared probability foundations and multi-step/tree reasoning, but no Grade-9 Core Learning Card path exists; five model refs remain item-review targets."
         },
         "MICRO_PRACTICE": {
           "status": "NONE_G9_EXPLICIT",
