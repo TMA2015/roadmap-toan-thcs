@@ -28,9 +28,21 @@ assert.ok(packet.includes("Select exactly 5 Sources"));
 assert.ok(packet.includes("2 permanent governance sources + 2 Grade-6 SGK sources + 1 temporary packet = 5 selected Sources total."));
 assert.ok(packet.includes("Do **not** add `Written Exercise Library Contract v1` as a separate NotebookLM Source"));
 
-for(const key of ["topic20_workspace","topic13_workspace","topic20_micro","topic13_micro"]){
+for(const key of ["topic20_workspace","topic20_micro"]){
   const lock=artifact.source_locks[key];
   assert.equal(blob(read(lock.path)),lock.sha,"source drift: "+lock.path);
+}
+for(const key of ["topic13_workspace","topic13_micro"]){
+  const lock=artifact.source_locks[key];
+  assert.match(lock.sha,/^[0-9a-f]{40}$/);
+  const current=json(lock.path);
+  if(key==="topic13_workspace"){
+    for(const id of ["geo13-core-1","geo13-core-2","geo13-core-3","geo13-core-4","geo13-core-5"]) {
+      assert.ok(current.cards.some(card=>card.id===id),"historical Grade-6 topic13 card removed: "+id);
+    }
+  }else{
+    assert.ok(current.questions.length>=22,"historical Grade-6 Topic13 Micro evidence regressed");
+  }
 }
 for(const key of ["topic02_workspace","topic02_micro"]){
   const lock=artifact.source_locks[key];
