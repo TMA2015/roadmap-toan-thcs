@@ -218,6 +218,10 @@
       "23-xac-suat": {
         "path": "docs/kien-thuc/23-xac-suat/index.md",
         "sha": "2630dd951ea50bbfc3577456624b907e2fa92af1"
+      },
+      "12-phuong-trinh-bac-hai-viete": {
+        "path": "docs/kien-thuc/12-phuong-trinh-bac-hai-viete/index.md",
+        "sha": "93e05718230c48900129a5042e0537aeb8e3c398"
       }
     }
   },
@@ -257,7 +261,7 @@
       },
       "LEARN_CONTENT": {
         "VERIFIED_DIRECT": 7,
-        "PARTIAL_ITEM_REVIEW": 1,
+        "PARTIAL_LONGFORM_ITEM_REVIEW": 1,
         "PARTIAL_LONGFORM_SOURCE": 2
       },
       "MICRO_PRACTICE": {
@@ -299,7 +303,7 @@
     ],
     "content_mutations": 0,
     "new_canonical_skills": 0,
-    "note": "Inventory only. Ch.7 and Ch.8 are Core-path/Micro learner-evidence gaps, not total knowledge-source gaps: long-form explanations already exist. Ch.6 is an item-review queue, not automatic authoring authorization. Ch.10 missing Grade-9 Micro for shared unit conversion is not treated as a density quota. Secondary Topic24 support is recorded in roadmap but is not used to inflate primary Learn/Micro evidence."
+    "note": "Inventory only. Ch.7 and Ch.8 are Core-path/Micro learner-evidence gaps, not total knowledge-source gaps: long-form explanations already exist. Ch.6 also has long-form source coverage, but its three explicit refs remain item-review-only before any Core-card/Micro promotion. Ch.10 missing Grade-9 Micro for shared unit conversion is not treated as a density quota. Secondary Topic24 support is recorded in roadmap but is not used to inflate primary Learn/Micro evidence."
   },
   "protected_boundaries": {
     "mutate_learning_content": false,
@@ -999,7 +1003,7 @@
           "reconciliation_clearance": "G9_R4_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "PARTIAL_ITEM_REVIEW",
+          "status": "PARTIAL_LONGFORM_ITEM_REVIEW",
           "direct_hits": [
             "ham-y-ax2",
             "doi-xung-parabol",
@@ -1013,16 +1017,15 @@
             "giai-pt-bac-hai",
             "nham-nghiem",
             "tong-tich-nghiem",
-            "lap-pt-tu-nghiem"
-          ],
-          "direct_missing": [
+            "lap-pt-tu-nghiem",
             "bieu-thuc-doi-xung",
             "dau-nghiem",
             "lien-he-do-thi"
           ],
+          "direct_missing": [],
           "family_targets": [],
           "lesson_local_targets": [],
-          "note": "The Grade-9 map explicitly marks these three refs for item-level review. Missing direct Learn/Micro evidence is not automatic repair authorization.",
+          "note": "Long-form Topic 12 already covers symmetric root expressions, root-sign conditions and graph linkage. The Grade-9 map still requires item-level review before promoting those three refs into Core Learning Cards/Micro.",
           "primary_topics": [
             "10-ham-so-do-thi",
             "12-phuong-trinh-bac-hai-viete"
