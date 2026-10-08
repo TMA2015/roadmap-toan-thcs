@@ -12,8 +12,16 @@ const packet=read("review-packets/kntt-g7-gap-priority-r1/00_NOTEBOOKLM_PACKET_R
 const audit=json("docs/assets/data/curriculum/kntt-dimension-coverage-g7-v1.json");
 
 assert.equal(artifact.packet_id,"MATH-KNTT-G7-GAP-PRIORITY-R1-20261008");
-assert.equal(artifact.status,"ACADEMIC_PRIORITY_REVIEW_PENDING");
+assert.equal(artifact.status,"ACADEMIC_PRIORITY_REVIEW_COMPLETE");
 assert.equal(artifact.review_rows.length,8);
+assert.equal(artifact.review_result.verdict,"PASS");
+assert.equal(artifact.review_result.clearance,"G7_GAP_PRIORITY_R1_REVIEW_COMPLETE");
+assert.deepEqual(artifact.review_result.first_repair_wave,["BAI1_3","BAI5_7","BAI26_28"]);
+assert.equal(artifact.review_result.max_groups_wave1,3);
+assert.deepEqual(artifact.review_result.new_canonical_skills,[]);
+assert.deepEqual(artifact.review_result.missing_decisions,[]);
+assert.equal(artifact.next_step.status,"AUTHORIZED_FOR_CANDIDATE_AUTHORING_ONLY");
+assert.equal(artifact.next_step.requires_independent_content_review_before_merge,true);
 
 for(const lock of Object.values(artifact.source_locks)){
   assert.equal(blob(read(lock.path)),lock.sha,"source drift: "+lock.path);
@@ -67,6 +75,10 @@ for(const token of [
 
 for(const [k,v] of Object.entries(artifact.protected_boundaries)) assert.equal(v,false,"protected boundary changed: "+k);
 
-console.log("PASS: Grade-7 gap-priority R1 reviews exactly 8 evidence candidates without authoring content.");
+const receipt=read("review-packets/kntt-g7-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md");
+assert.ok(receipt.includes("OVERALL|PASS"));
+assert.ok(receipt.includes("FIRST_REPAIR_WAVE|BAI1_3;BAI5_7;BAI26_28"));
+assert.ok(receipt.includes("CLEARANCE|G7_GAP_PRIORITY_R1_REVIEW_COMPLETE"));
+console.log("PASS: Grade-7 gap-priority R1 reviewed all 8 evidence candidates and authorized exactly 3 P0 groups for candidate authoring.");
 console.log("PASS: NotebookLM source invariant is exactly 5 Sources (2 permanent + 2 Grade-7 SGK + 1 packet).");
 console.log("PASS: anti-inflation boundaries keep Written/Readiness NONE states from becoming quotas.");
