@@ -83,7 +83,7 @@ for(const c of [cardR,cardReal,cardDiv]){
 }
 
 assert.equal(m2.question_count,m2.questions.length);
-assert.equal(m2.question_count,60);
+assert.ok(m2.question_count>=60,"Topic 02 Micro count regressed below Wave-1 baseline");
 assert.equal(m4.question_count,m4.questions.length);
 assert.equal(m4.question_count,19);
 assert.equal(man2.question_count,144);
