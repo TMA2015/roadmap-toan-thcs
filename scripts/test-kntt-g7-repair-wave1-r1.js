@@ -33,7 +33,9 @@ for(const [path,lock] of Object.entries(artifact.source_locks)){
   assert.equal(blob(read(path)),lock.sha,"source drift: "+path);
 }
 
-assert.equal(artifact.notebooklm_source_contract.selected_source_count,5);\nassert.equal(artifact.independent_review.verdict,"PASS");\nassert.equal(artifact.independent_review.clearance,"G7_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE");
+assert.equal(artifact.notebooklm_source_contract.selected_source_count,5);
+assert.equal(artifact.independent_review.verdict,"PASS");
+assert.equal(artifact.independent_review.clearance,"G7_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE");
 assert.equal(artifact.notebooklm_source_contract.permanent_sources.length,2);
 assert.equal(artifact.notebooklm_source_contract.grade7_s1_sources.length,2);
 assert.equal(artifact.notebooklm_source_contract.temporary_batch_sources.length,1);
