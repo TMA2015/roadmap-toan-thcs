@@ -13,19 +13,20 @@ const assessment=json("docs/assets/data/assessment/02-so-va-phep-tinh-core-v1.js
 const mapping=json("docs/assets/data/curriculum/kntt-grade6-map.json");
 const older=json("docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json");
 const lesson=read("docs/kien-thuc/"+slug+"/index.md"),practice=read("docs/kien-thuc/"+slug+"/bai-tap.md"),check=read("docs/kien-thuc/"+slug+"/tu-kiem-tra.md"),classhub=read("docs/hoc-theo-lop/index.md"),runtime=read("docs/assets/javascripts/topic-workspace-v1.js");
-ok(workspace.topic===slug && workspace.core_progress_policy.layer==="KNTT-Core" && workspace.cards.length===5,"source-mapped five-card Core pilot");
-ok(bank.questions.length===52 && bank.question_count===52 && assessment.items.length===10,"52 micro and 10 readiness items");
+const grade6Cards=workspace.cards.filter(card=>JSON.stringify(card.grades)==="[6]");
+ok(workspace.topic===slug && workspace.core_progress_policy.layer==="KNTT-Core" && grade6Cards.length===5,"source-mapped five-card Grade-6 Core pilot preserved");
+ok(bank.questions.length>=52 && bank.question_count===bank.questions.length && assessment.items.length===10,"52 reviewed Grade-6 micro items and 10 readiness items preserved under later append-only expansion");
 ok(assessment.topic.id===slug && assessment.layer==="KNTT-Core" && assessment.assessment_id==="NUM02-G6-CORE-READY-V1","assessment identity and layer");
 ok(assessment.policy.hints===false && assessment.policy.tutor===false && assessment.policy.feedback==="after_submit" && assessment.policy.hard_gate===false && assessment.readiness.hard_gate===false,"independent soft readiness");
 ok(assessment.readiness.ready_threshold===0.8 && assessment.readiness.minimum_answered_ratio===0.8,"readiness policy");
-ok(older.bank_id==="NUM02-V1" && older.question_count===132 && older.sources.includes("02-so-va-phep-tinh-v1-05.json"),"legacy 120 IDs preserved with reviewed 12-item rounding append");
-ok(workspace.grade_scope.length===1&&workspace.grade_scope[0]===6,"workspace scope grade 6");
+ok(older.bank_id==="NUM02-V1" && older.question_count>=132 && older.sources.includes("02-so-va-phep-tinh-v1-05.json"),"legacy Grade-6 Practice baseline preserved under later append-only expansion");
+ok(workspace.grade_scope.includes(6)&&workspace.grade_scope.includes(7),"shared workspace scope includes Grade 6 and later Grade 7 extension");
 const mapSkills=new Set(mapping.chapters.flatMap(c=>c.lessons).filter(l=>l.roadmap.some(t=>t.topic_id===slug)).flatMap(l=>l.skills));
 ok(mapSkills.has("tap-hop") && mapSkills.has("so-thap-phan") && mapSkills.has("so-nguyen-truc-so"),"grade6 mapping was consulted");
 const byId=new Map(bank.questions.map(q=>[q.id,q])),seen=new Set(),assessed=new Set();
 const microAnswers=["7","24","20","423","29","12","5","12","3 °C","3/4","1/4","5/6","0,85","50","108 000 đồng"];
 const expectedCardCounts=[10,11,10,12,9];
-for (const [i,card] of workspace.cards.entries()){
+for (const [i,card] of grade6Cards.entries()){
  ok(card.layer==="KNTT-Core" && JSON.stringify(card.grades)==="[6]" && card.micro_practice.length===expectedCardCounts[i],"card scope and reviewed coverage count "+card.id);
  ok(card.kntt_lessons.length && card.kntt_lessons.every(x=>x.includes("Lớp 6")),"explicit class label "+card.id);
  ok(card.teaching_copy?.key_idea && card.teaching_copy?.worked_example?.solution && card.teaching_copy?.misconception,"explanation "+card.id);
@@ -55,4 +56,4 @@ ok(/tự luận/i.test(read("docs/kien-thuc/02-so-va-phep-tinh/tu-kiem-tra-tu-lu
 const panel=classhub.split('data-grade-panel="6"')[1].split('data-grade-panel="7"')[0];
 ok((panel.match(/02-so-va-phep-tinh\/core\//g)||[]).length>=5,"grade6 class hub opens the learning cards");
 ok(runtime.includes('"02-so-va-phep-tinh":{') && runtime.includes("topic02-learning-workspace.json"),"runtime supports topic02");
-console.log("PASS: Topic02 grade6: 5 cards, 52 micro including the shared-skill density candidate NUM02MICRO_042–052, prior lesson-local/problem-type evidence, reviewed Bài 30 rounding, 10 readiness, routes and preserved legacy IDs.");
+console.log("PASS: Topic02 Grade-6 five-card/52-micro/10-readiness baseline is preserved under later append-only Grade-7 workspace and practice expansion.");
