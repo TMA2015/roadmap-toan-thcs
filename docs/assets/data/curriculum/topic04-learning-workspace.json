@@ -224,6 +224,46 @@
         "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
         "academic_review_ref": "content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md"
       }
+    },
+    {
+      "id": "alg04-g7-core-6",
+      "order": 6,
+      "title": "Chia đa thức một biến",
+      "kntt_lessons": [
+        "Lớp 7 · Bài 28"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        7
+      ],
+      "skills": [
+        "chia-da-thuc-mot-bien"
+      ],
+      "prerequisites": [
+        "thu-gon-da-thuc",
+        "cong-tru-da-thuc",
+        "nhan-bieu-thuc"
+      ],
+      "micro_practice": [
+        "ALG04MICRO_016",
+        "ALG04MICRO_017",
+        "ALG04MICRO_018",
+        "ALG04MICRO_019"
+      ],
+      "teaching_copy": {
+        "key_idea": "Khi chia đa thức một biến cho một đa thức khác 0, sắp xếp các hạng tử theo lũy thừa giảm dần của biến. Chia hạng tử bậc cao nhất của đa thức bị chia cho hạng tử bậc cao nhất của đa thức chia để tìm hạng tử đầu của thương; nhân ngược lại, rồi trừ và tiếp tục. Trong các bài chia hết ở phạm vi này, kết quả cuối cùng có dư bằng 0.",
+        "worked_example": {
+          "problem": "Chia \\(x^2+5x+6\\) cho \\(x+2\\).",
+          "solution": "Lấy \\(x^2:x=x\\). Nhân \\(x(x+2)=x^2+2x\\), trừ được \\(3x+6\\). Tiếp theo \\(3x:x=3\\). Nhân \\(3(x+2)=3x+6\\), trừ được 0. Vậy thương là \\(x+3\\). Kiểm tra: \\((x+2)(x+3)=x^2+5x+6\\)."
+        },
+        "misconception": "Không chia từng hạng tử của đa thức bị chia cho cả đa thức chia như khi chia cho một đơn thức. Mỗi bước phải lấy hạng tử bậc cao nhất, nhân ngược lại toàn bộ đa thức chia rồi trừ đúng dấu.",
+        "summary": "Sắp xếp theo bậc giảm dần → chia hạng tử đầu → nhân ngược → trừ → lặp lại → kiểm tra bằng phép nhân."
+      },
+      "authoring_review": {
+        "status": "PENDING",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+      }
     }
   ],
   "extensions": [
@@ -253,6 +293,7 @@
   "qa_notes": [
     "CĐ04 preserves Grade 7 → Grade 8 Vertical Spine.",
     "Đa thức một biến is represented within nhan-biet-da-thuc; chia-da-thuc-cho-don-thuc is added as an explicit Core skill.",
-    "dieu-kien-xac-dinh, lap-bieu-thuc, bai-toan-thuc-te and broader multi-step algebra are not counted as CĐ04 Core readiness by default."
+    "dieu-kien-xac-dinh, lap-bieu-thuc, bai-toan-thuc-te and broader multi-step algebra are not counted as CĐ04 Core readiness by default.",
+    "Grade-7 Repair Wave 1 candidate: adds direct Learn coverage for reviewed canonical skill chia-da-thuc-mot-bien (Bài 28); independent content review pending."
   ]
 }
