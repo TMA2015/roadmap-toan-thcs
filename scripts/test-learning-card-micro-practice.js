@@ -45,7 +45,15 @@ for (const card of workspace.cards || []) {
   const qs = (card.micro_practice || []).map(id => byId.get(id)).filter(Boolean);
   if (qs.length < 3 || qs.length !== (card.micro_practice || []).length) errors.push(`${card.id}: expected at least three valid micro questions`);
   if (qs.slice(0,3).map(q => q.micro_role).join(",") !== "base,trap,apply") errors.push(`${card.id}: first three must preserve base,trap,apply order`);
-  if (qs.slice(3).some(q => q.micro_role !== "coverage")) errors.push(`${card.id}: extra questions must be marked coverage`);
+  const extras = qs.slice(3);
+  const approvedWave2 = extras.filter(q => q.authoring_review?.packet_id === "MATH-KNTT-G7-REPAIR-W2-R1-20261008");
+  const otherExtras = extras.filter(q => q.authoring_review?.packet_id !== "MATH-KNTT-G7-REPAIR-W2-R1-20261008");
+  if (otherExtras.some(q => q.micro_role !== "coverage")) errors.push(`${card.id}: extra questions must be marked coverage`);
+  if (approvedWave2.length) {
+    const roles = approvedWave2.map(q => q.micro_role).join(",");
+    if (!["coverage","base,trap,apply,coverage"].includes(roles)) errors.push(`${card.id}: approved Wave-2 diagnostic batch has invalid role sequence`);
+    if (approvedWave2.some(q => q.authoring_review?.status !== "PASS")) errors.push(`${card.id}: approved Wave-2 diagnostic batch must be academically PASS`);
+  }
   for (const q of qs) {
     if (q.card_id !== card.id) errors.push(`${q.id}: question/card ID mismatch`);
     const lessonLocal = q.evidence_role === "LESSON_LOCAL_CORE_FORMATIVE";
