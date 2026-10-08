@@ -1,7 +1,7 @@
 {
   "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008",
   "as_of": "2026-10-08",
-  "status": "ACADEMIC_CONTENT_REVIEW_PENDING",
+  "status": "ACADEMIC_CONTENT_REVIEW_PASS",
   "scope": "Grade-7 KNTT Repair Wave 2 candidate implementation for Bài 4, Bài 18-19, Bài 22-23; Learn + Micro only",
   "prior_clearance": {
     "packet_id": "MATH-KNTT-G7-REPAIR-WAVE2-SCOPE-R1-20261008",
@@ -28,22 +28,22 @@
   },
   "source_locks": {
     "docs/assets/data/curriculum/topic02-learning-workspace.json": {
-      "sha": "d10c4398786c81a148c0f5720dd004f225989c8d"
+      "sha": "b32f002ecb78436eae071ef26ba84601e2e4f8c1"
     },
     "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json": {
-      "sha": "9babce78b27939a8e607b4f8228102fbd1a70a01"
+      "sha": "61c1e4ef1e2f0d44476c6f34f48fd7bbcce24622"
     },
     "docs/assets/data/curriculum/topic03-learning-workspace.json": {
-      "sha": "e2306af47f808fe30e289510f09aa37da84eb579"
+      "sha": "5fe659cc35bd50ad9d811c00fd59ace3e7914ab2"
     },
     "docs/assets/data/practice/03-ti-le-ti-le-thuc-micro-v1.json": {
-      "sha": "30b2c61c11b6ead98b24e95db6f5896da8b3ee6c"
+      "sha": "303dc424e94db8de6271aaef279d8f8d07fa088a"
     },
     "docs/assets/data/curriculum/topic21-learning-workspace.json": {
       "sha": "85b781e3ff04dc92aefa82d036fa686e8dbc4ec7"
     },
     "docs/assets/data/practice/21-thong-ke-micro-v1.json": {
-      "sha": "a85f1feba7fed553b6b9e82464b1093bc9367acd"
+      "sha": "5e20af551bc8215348711ccb02c251695fccdb23"
     },
     "docs/assets/data/curriculum/kntt-g7-repair-wave2-scope-r1.json": {
       "sha": "4c491dad36e7272d6baf16b038d276302c26b7fc"
@@ -142,7 +142,29 @@
     "runtime_taxonomy_change": false
   },
   "next_step": {
-    "status": "AWAIT_NOTEBOOKLM_CONTENT_CLEARANCE",
-    "required_clearance": "G7_REPAIR_WAVE2_R1_CONTENT_REVIEW_COMPLETE"
+    "status": "ACADEMIC_PASS_AWAIT_REPOSITORY_QA",
+    "merge_requires_repository_qa": true
+  },
+  "independent_review": {
+    "reviewer": "NotebookLM",
+    "verdict": "PASS",
+    "clearance": "G7_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE",
+    "reviewed_groups": 3,
+    "content_counts": {
+      "learn": 2,
+      "micro": 12,
+      "practice": 0,
+      "written": 0,
+      "readiness": 0
+    },
+    "boundaries": {
+      "no_practice": "PASS",
+      "no_written": "PASS",
+      "no_readiness": "PASS",
+      "no_new_canonical_skill": "PASS",
+      "transposition_lesson_local": "PASS"
+    },
+    "receipt": "review-packets/kntt-g7-repair-wave2-r1/01_NOTEBOOKLM_RESULT_R1.md",
+    "reviewed_on": "2026-10-08"
   }
 }
