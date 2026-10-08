@@ -160,3 +160,4 @@ console.log("PASS: runtime, learner history, Mastery and Readiness remain unchan
 require("./test-kntt-dimension-coverage-g7-v1.js");
 require("./test-kntt-g7-gap-priority-r1.js");
 require("./test-kntt-g7-repair-wave1-r1.js");
+require("./test-kntt-g7-repair-wave2-scope-r1.js");
