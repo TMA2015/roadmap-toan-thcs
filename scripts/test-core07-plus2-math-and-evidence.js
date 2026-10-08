@@ -8,9 +8,9 @@ const source=j("content-staging/reviews/MATH-CORE07-TEACH-R1-20260929.json").rev
 const evidence=get("docs/assets/javascripts/learner-evidence-v1.js");
 const js=get("docs/assets/javascripts/topic-workspace-v1.js");
 const audit=get("content-staging/reviews/MATH-CORE07-MICRO-PLUS2-SELF-AUDIT-20260929.md");
-assert(source.length===15&&bank.question_count===17&&bank.questions.length===17,"15 old and two added");
+assert(source.length===15&&bank.question_count===18&&bank.questions.length===18,"15 old + two historical coverage + one later bounded density item");
 assert(bank.questions.slice(0,15).every((q,i)=>JSON.stringify(q)===JSON.stringify(source[i])),"all previous 15 items must be content-identical to source");
-const ids=new Set(bank.questions.map(q=>q.id));assert(ids.size===17,"no duplicate IDs");
+const ids=new Set(bank.questions.map(q=>q.id));assert(ids.size===18,"no duplicate IDs");
 const byId=new Map(bank.questions.map(q=>[q.id,q]));
 const expected=[
  ["RAT07MICRO_016","pt07-core-1","hai-phan-thuc-bang-nhau"],
@@ -18,7 +18,7 @@ const expected=[
 ];
 for(const [id,cardId,skill] of expected){
  const q=byId.get(id),card=workspace.cards.find(c=>c.id===cardId);
- assert(q&&card&&q.card_id===cardId&&card.micro_practice.at(-1)===id,"new item/card association "+id);
+ assert(q&&card&&q.card_id===cardId&&card.micro_practice.includes(id),"new item/card association "+id);
  assert(q.micro_role==="coverage"&&q.tags.layer==="KNTT-Core"&&q.tags.grade===8&&q.curriculum.level==="core","Core role and level "+id);
  assert(q.tags.skill.length===1&&q.tags.skill[0]===skill&&card.skills.includes(skill),"single primary assessed skill "+id);
  assert(!q.supporting_skills?.includes(skill),"supporting tag must not repeat assessed skill "+id);
@@ -41,4 +41,4 @@ assert(!approx(p,((x-5)**2)/((x+5)**2)),"distractor 2 changes numerator");
 assert(!approx(p,((x-5)*(x+5))/((x-5)**2)),"distractor 3 changes denominator");
 assert(!approx(p,(x*x-25)/(x+5)),"distractor 4 does not factor both components and changes denominator");
 assert(audit.includes("not")||audit.includes("không"),"non-mastered audit qualification present");
-console.log("PASS: +2 distinct Core items; original 15 identical; exact singleton evidence mapping; both identities and wrong options checked.");
+console.log("PASS: historical +2 Core items remain intact under one later bounded Grade-8 density append.");
