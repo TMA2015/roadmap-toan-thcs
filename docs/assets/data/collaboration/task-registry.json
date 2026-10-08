@@ -1,5 +1,5 @@
 {
-  "version": "1.0.235",
+  "version": "1.0.236",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-08",
   "statuses": [
@@ -1202,10 +1202,10 @@
       "id": "MATH-KNTT-DIMENSION-AUDIT-G6-001",
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.235",
-      "review_verdict": "G6_WRITTEN_BAI42_R1_CLOSED_P1_COMPLETE_P2_STOP_GO_NEXT",
-      "review_notes": "Grade-6 Written Bài42 R1 is independently reviewed, merged and deployed. WX23-PRO-003 is the eighth canonical Grade-6 Written item with true KNTT placement and verifies the ninth Grade-6 Written lesson row. Current Grade-6 Written coverage: 9 VERIFIED_KNTT_PLACEMENT rows / 22 NONE / 0 candidate-only. P0 Wave1 and both P1 actions are now complete (Bài38-41 reuse via WX21-STA-001; Bài42 authored as WX23-PRO-003). Remaining Written priorities from the independent review are only P2 (Bài30 and Bài23-24), so the next step should be a stop/go governance decision rather than automatic authoring.",
+      "status": "DONE",
+      "context_version": "1.0.236",
+      "review_verdict": "G6_DIMENSION_AUDIT_V1_COMPLETE_WRITTEN_P0_P1_CLOSED_P2_DEFERRED",
+      "review_notes": "Grade-6 dimension audit v1 is complete as an evidence classification, not a quota-filling exercise. All 31 KNTT rows are mapped across Skill/Learn/Micro/Practice/Written/Readiness dimensions. Written P0 and P1 actions are closed; current Written state is 9 VERIFIED rows / 22 NONE / 0 candidate-only with 8 canonical Grade-6 items. Remaining P2 Bài30 and Bài23-24 are deliberately deferred because independent review ranked them low priority and existing Learn/Micro/Practice coverage is already strong. Readiness NOT_VERIFIED rows remain an explicit evidence status, not an instruction to create readiness assets for every lesson. Next scaling target is Grade 7 dimension audit v1.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1795,6 +1795,20 @@
         },
         "live_grade6_kntt_written_item_count": 8
       }
+    },
+    {
+      "id": "MATH-KNTT-DIMENSION-AUDIT-G7-001",
+      "title": "KNTT Dimension Coverage Audit — Grade 7",
+      "routing": "GOVERNANCE+COVERAGE_AUDIT",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.236",
+      "review_verdict": "START_FROM_G7_RECONCILED_R2_NO_CONTENT_MUTATION",
+      "review_notes": "Scale the Grade-6 six-dimension audit method to the 21 semantically reconciled Grade-7 KNTT rows. Source matrix reports Grade-7 semantic reconciliation RECONCILED_REVIEWED_R2 with clearance G7_R2_RECONCILIATION_REVIEW_COMPLETE and no remaining review queue. First phase is evidence classification only: Skill Map, Learn, Micro, Practice, Written, Readiness. Do not author or promote content until real gaps are distinguished from shared-family, lesson-local or placement effects.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
+        "docs/assets/data/curriculum/kntt-grade7-reconciliation-r2.json",
+        "review-packets/kntt-grade7-reconciliation-r2/01_NOTEBOOKLM_RESULT_R2.md"
+      ]
     }
   ]
 }
