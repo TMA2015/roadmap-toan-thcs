@@ -1,0 +1,2007 @@
+{
+  "schema": "kntt-dimension-coverage-audit-v1",
+  "version": 1,
+  "as_of": "2026-10-08",
+  "grade": 8,
+  "status": "G8_EXISTING_EVIDENCE_INVENTORY_R1",
+  "architecture": "One Knowledge Graph · Two Learning Paths",
+  "purpose": "Inventory the six evidence dimensions for all 16 semantically reconciled Grade-8 KNTT rows before any new authoring. Evidence is not inferred from taxonomy identity alone.",
+  "source_locks": {
+    "coverage_matrix": {
+      "path": "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
+      "blob_sha": "2935f58925918674b5bacd2d8743d5526283adba"
+    },
+    "grade8_reconciliation": {
+      "path": "docs/assets/data/curriculum/kntt-grade8-reconciliation-r3.json",
+      "blob_sha": "646e4227350f973970708d49e1c14424ebf13fcf"
+    },
+    "taxonomy": {
+      "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+      "blob_sha": "90e58fa666a0cea4ae41ff7ef82a3cbf80ca11e4"
+    },
+    "written_library": {
+      "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+      "blob_sha": "e5b7013e1f71df810a20d39d0f1fef36c2dc48f3"
+    },
+    "topic_evidence": {
+      "04-bieu-thuc-dai-so": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic04-learning-workspace.json",
+          "sha": "e34eba9b4c56653d0605cd13f3299f089a3a4b3f"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/04-bieu-thuc-dai-so-micro-v1.json",
+          "sha": "16cb0c2befdbd9a85be7e1239d81e054de6d2039"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/04-bieu-thuc-dai-so-v2.manifest.json",
+          "sha": "54d778362f7a19117f3913507e6e174f56002712"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/04-bieu-thuc-dai-so-core-v1.json",
+          "sha": "0debcc6933b08a108693dce06ff9829d446bd6d4"
+        }
+      },
+      "05-7-hang-dang-thuc": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic05-learning-workspace.json",
+          "sha": "110af8f55549a46b6d696d710eb412a176ef9bd1"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/05-7-hang-dang-thuc-micro-v1.json",
+          "sha": "5d98b632888d6064ecf592762b0479a56253e50f"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/05-7-hang-dang-thuc-v1.manifest.json",
+          "sha": "f77d823b03395452aa8f722c9a0f2fd919e47c99"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/05-7-hang-dang-thuc-core-v1.json",
+          "sha": "22eb800c9f65ef7e3ead5a5bc2ac16e03528b8b1"
+        }
+      },
+      "06-phan-tich-da-thuc": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic06-learning-workspace.json",
+          "sha": "44930e004048e7b9bd89652f49f2be8209fe8209"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/06-phan-tich-da-thuc-micro-v1.json",
+          "sha": "c591e6e6467f436287647bbbf33eef8634c74c97"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/06-phan-tich-da-thuc-v1.manifest.json",
+          "sha": "2a4cb1d6492a3c1f66f7111035fab989a9a7f055"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/06-phan-tich-da-thuc-core-v1.json",
+          "sha": "49fe43294dcbe18a7f2b5a342077675dc28cd292"
+        }
+      },
+      "16-tu-giac": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic16-learning-workspace.json",
+          "sha": "3107abd3c947663f7677de4f4a65fe99f29a7b97"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/16-tu-giac-micro-v1.json",
+          "sha": "3947efce07ae2426b6e73ed8bbf962907b07dd33"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/16-tu-giac-v1.manifest.json",
+          "sha": "e63b621e30628616f559a3fd7518f0c90a3e5ed6"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/16-tu-giac-core-v1.json",
+          "sha": "bd14d4afd8da675dd3e09e93c0dd9843e8304bc5"
+        }
+      },
+      "17-thales-dong-dang": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic17-learning-workspace.json",
+          "sha": "48f7c5f3406ae41494ffab937b829afcb84eb2e2"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/17-thales-dong-dang-micro-v1.json",
+          "sha": "01c8326343d050959aca0d98d7042e463c993612"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/17-thales-dong-dang-v1.manifest.json",
+          "sha": "3295479db8646dd050ddd7854f116dd9cc7c3b1b"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/17-thales-dong-dang-core-v1.json",
+          "sha": "c41dfb3e95c1ab8298d546a914b2adda88757d17"
+        }
+      },
+      "21-thong-ke": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic21-learning-workspace.json",
+          "sha": "85b781e3ff04dc92aefa82d036fa686e8dbc4ec7"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/21-thong-ke-micro-v1.json",
+          "sha": "5e20af551bc8215348711ccb02c251695fccdb23"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/21-thong-ke-v1.manifest.json",
+          "sha": "3d88c1ce48ac1129648980de3f0544e6024251b9"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/21-thong-ke-core-v1.json",
+          "sha": "e20c5d8bddb10c16db26cdfd48e6915044df4b00"
+        }
+      },
+      "07-phan-thuc-dai-so": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic07-learning-workspace.json",
+          "sha": "7111cd085cb555a4d0c6197bf2dc33dfe368e39a"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/07-phan-thuc-dai-so-micro-v1.json",
+          "sha": "7d4f043e658d026b8e35e7e62663d02a06819177"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/07-phan-thuc-dai-so-v1.manifest.json",
+          "sha": "5939cac274f5133c474423b949340d136e976e5d"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/07-phan-thuc-dai-so-core-v1.json",
+          "sha": "78cb06387a423b8520f174e9ccea3792ea90b72f"
+        }
+      },
+      "08-phuong-trinh-bat-phuong-trinh": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic08-learning-workspace.json",
+          "sha": "c67fb6af4df92e848738dc22bec0059fb4d1a2d1"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/08-phuong-trinh-bat-phuong-trinh-micro-v1.json",
+          "sha": "f2800e5f3e5823e29ae903438fcf4917b358dce1"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/08-phuong-trinh-bat-phuong-trinh-v1.manifest.json",
+          "sha": "2c6da84472485b3f13805785cd3ff9f039dace13"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/08-phuong-trinh-bat-phuong-trinh-core-v1.json",
+          "sha": "c766400846d452a35fb06620b2163fea8cc19587"
+        }
+      },
+      "10-ham-so-do-thi": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic10-learning-workspace.json",
+          "sha": "6abcf30c6d714d3742ef79b3df16401d2456101b"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/10-ham-so-do-thi-micro-v1.json",
+          "sha": "5ed48b26af58f0104d18b2a1d04210773fb38434"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/10-ham-so-do-thi-v1.manifest.json",
+          "sha": "15f7acaa8eb46c2775bb495f1d8dd03e4957dd7c"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/10-ham-so-do-thi-core-v1.json",
+          "sha": "faf5c388d74c783d97ae9a2bd2e1270fed6ca146"
+        }
+      },
+      "23-xac-suat": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic23-learning-workspace.json",
+          "sha": "443169587e0ba663bc694122ee4a37e456793c70"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/23-xac-suat-micro-v1.json",
+          "sha": "10f6dfcc41040da16b351a8c607c10fe82e6e4b3"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/23-xac-suat-v1.manifest.json",
+          "sha": "7b936f2e5a01ce0937fc2cfd6ae391d4cbf741fb"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/23-xac-suat-core-v1.json",
+          "sha": "6ecf6eb6545fbb8e01465ccac76db0d5c60b7485"
+        }
+      },
+      "18-he-thuc-luong": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic18-learning-workspace.json",
+          "sha": "ca453a6808cbd8b0e62509f9951d9ddb70afc3a1"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/18-he-thuc-luong-micro-v1.json",
+          "sha": "a4a3335b36b51cb6fbe410aab1e72a7fdb1de36b"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/18-he-thuc-luong-v1.manifest.json",
+          "sha": "3a38cd8de28b455796326c8af30186742aba700a"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/18-he-thuc-luong-core-v1.json",
+          "sha": "f118adad00dc2dbb373c2031d21e7e0de0becab4"
+        }
+      },
+      "20-hinh-hoc-tong-hop": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
+          "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+          "sha": "efaa4bff821023700381edee0168b294c2d3ea05"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-v1.manifest.json",
+          "sha": "7fc4157bd2e56fa243b428ef0949583c589a3eb9"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/20-hinh-hoc-tong-hop-core-v1.json",
+          "sha": "d9fffb1ab50a78b6d85289523073a21a77bba0af"
+        }
+      }
+    }
+  },
+  "semantic_reconciliation": {
+    "status": "RECONCILED_R3_NO_NEW_IDENTITY",
+    "artifact": "docs/assets/data/curriculum/kntt-grade8-reconciliation-r3.json",
+    "remaining_review_queue": [],
+    "new_canonical_skills": []
+  },
+  "dimension_definitions": {
+    "SKILL_MAP": "Semantic curriculum-to-skill/family/local mapping; not learner evidence by itself.",
+    "LEARN_CONTENT": "Explicit learner-facing explanation/content that directly teaches the row's semantic target.",
+    "MICRO_PRACTICE": "Short formative practice explicitly aligned to the row.",
+    "PRACTICE_BANK": "Reusable interactive practice evidence; shared-topic evidence must not be overstated as exact lesson evidence.",
+    "WRITTEN_LIBRARY": "Canonical Written item with true Grade-8 KNTT placement, not prerequisite overlap.",
+    "READINESS": "Structured independently interpreted readiness evidence; absence means NOT_VERIFIED, not learner deficiency."
+  },
+  "summary": {
+    "row_count": 16,
+    "semantic_verified_rows": 16,
+    "dimension_status_counts": {
+      "SKILL_MAP": {
+        "VERIFIED_SEMANTIC": 16
+      },
+      "LEARN_CONTENT": {
+        "VERIFIED_DIRECT": 15,
+        "VERIFIED_FAMILY_LOCAL": 1
+      },
+      "MICRO_PRACTICE": {
+        "VERIFIED_DIRECT": 12,
+        "PARTIAL_DIRECT": 3,
+        "PARTIAL_FAMILY_EVIDENCE": 1
+      },
+      "PRACTICE_BANK": {
+        "TOPIC_SKILL_EVIDENCE": 15,
+        "PARTIAL_FAMILY_EVIDENCE": 1
+      },
+      "WRITTEN_LIBRARY": {
+        "NONE": 16
+      },
+      "READINESS": {
+        "NOT_VERIFIED_STRUCTURED": 13,
+        "PARTIAL_G8_STRUCTURED": 3
+      }
+    },
+    "written_grade8_kntt_item_count": 0,
+    "priority_gap_candidates": {
+      "P0": [],
+      "P1": [
+        "Bài 21-24"
+      ],
+      "P2": [
+        "Bài 18-20"
+      ]
+    },
+    "no_repair_priority_rows": [
+      "Bài 1-5",
+      "Bài 6-8",
+      "Bài 9",
+      "Bài 10-14",
+      "Bài 15-16",
+      "Bài 17",
+      "Bài 25-26",
+      "Bài 27-29",
+      "Bài 30",
+      "Bài 31-32",
+      "Bài 33-34, 36",
+      "Bài 35",
+      "Bài 37",
+      "Bài 38-39"
+    ],
+    "content_mutations": 0,
+    "new_canonical_skills": 0,
+    "note": "Inventory only. P1/P2 labels identify audit candidates, not authoring authorization. Bài 38-39 is not prioritized because Grade-8-specific pyramid skills already have direct Micro evidence; the missing shared foundation skills are not treated as a density quota."
+  },
+  "protected_boundaries": {
+    "mutate_learning_content": false,
+    "mutate_micro_practice": false,
+    "mutate_practice_bank": false,
+    "mutate_written_library": false,
+    "mutate_readiness": false,
+    "create_canonical_skill": false,
+    "learner_history_regrade": false,
+    "runtime_taxonomy_change": false,
+    "mastery_change": false
+  },
+  "rows": [
+    {
+      "chapter": 1,
+      "chapter_title": "Đa thức",
+      "lesson_ref": "Bài 1-5",
+      "roadmap": [
+        {
+          "topic_id": "04-bieu-thuc-dai-so",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "nhan-biet-don-thuc",
+          "nhan-biet-da-thuc",
+          "he-so-bac",
+          "hang-tu-dong-dang",
+          "thu-gon-da-thuc",
+          "cong-tru-da-thuc",
+          "nhan-bieu-thuc",
+          "tinh-phan-phoi",
+          "chia-da-thuc-cho-don-thuc"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi",
+            "chia-da-thuc-cho-don-thuc"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "04-bieu-thuc-dai-so",
+          "direct_hits": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi",
+            "chia-da-thuc-cho-don-thuc"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "04-bieu-thuc-dai-so",
+          "direct_hits": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi",
+            "chia-da-thuc-cho-don-thuc"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "04-bieu-thuc-dai-so",
+          "direct_hits": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi",
+            "chia-da-thuc-cho-don-thuc"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "04-bieu-thuc-dai-so",
+          "item_ids": [],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "Hằng đẳng thức đáng nhớ và ứng dụng",
+      "lesson_ref": "Bài 6-8",
+      "roadmap": [
+        {
+          "topic_id": "05-7-hang-dang-thuc",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "binh-phuong-tong",
+          "binh-phuong-hieu",
+          "hieu-hai-binh-phuong",
+          "lap-phuong-tong",
+          "lap-phuong-hieu",
+          "tong-hai-lap-phuong",
+          "hieu-hai-lap-phuong",
+          "nhan-dang-hdt",
+          "binh-phuong-hoan-chinh",
+          "nhan-dang-lap-phuong",
+          "tinh-nhanh-hdt",
+          "rut-gon-hdt"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "binh-phuong-tong",
+            "binh-phuong-hieu",
+            "hieu-hai-binh-phuong",
+            "lap-phuong-tong",
+            "lap-phuong-hieu",
+            "tong-hai-lap-phuong",
+            "hieu-hai-lap-phuong",
+            "nhan-dang-hdt",
+            "binh-phuong-hoan-chinh",
+            "nhan-dang-lap-phuong",
+            "tinh-nhanh-hdt",
+            "rut-gon-hdt"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "05-7-hang-dang-thuc",
+          "direct_hits": [
+            "binh-phuong-tong",
+            "binh-phuong-hieu",
+            "hieu-hai-binh-phuong",
+            "lap-phuong-tong",
+            "lap-phuong-hieu",
+            "tong-hai-lap-phuong",
+            "hieu-hai-lap-phuong",
+            "nhan-dang-hdt",
+            "binh-phuong-hoan-chinh",
+            "nhan-dang-lap-phuong",
+            "tinh-nhanh-hdt",
+            "rut-gon-hdt"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "05-7-hang-dang-thuc",
+          "direct_hits": [
+            "binh-phuong-tong",
+            "binh-phuong-hieu",
+            "hieu-hai-binh-phuong",
+            "lap-phuong-tong",
+            "lap-phuong-hieu",
+            "tong-hai-lap-phuong",
+            "hieu-hai-lap-phuong",
+            "nhan-dang-hdt",
+            "binh-phuong-hoan-chinh",
+            "nhan-dang-lap-phuong",
+            "tinh-nhanh-hdt",
+            "rut-gon-hdt"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "05-7-hang-dang-thuc",
+          "direct_hits": [
+            "binh-phuong-tong",
+            "binh-phuong-hieu",
+            "hieu-hai-binh-phuong",
+            "lap-phuong-tong",
+            "lap-phuong-hieu",
+            "tong-hai-lap-phuong",
+            "hieu-hai-lap-phuong",
+            "nhan-dang-hdt",
+            "binh-phuong-hoan-chinh",
+            "nhan-dang-lap-phuong",
+            "tinh-nhanh-hdt",
+            "rut-gon-hdt"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "05-7-hang-dang-thuc",
+          "item_ids": [],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "Hằng đẳng thức đáng nhớ và ứng dụng",
+      "lesson_ref": "Bài 9",
+      "roadmap": [
+        {
+          "topic_id": "06-phan-tich-da-thuc",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "nhan-tu-chung",
+          "doi-dau-nhan-tu-chung",
+          "hieu-hai-binh-phuong",
+          "binh-phuong-hoan-chinh",
+          "tong-hieu-lap-phuong",
+          "nhom-hang-tu",
+          "phoi-hop-phuong-phap",
+          "kiem-tra-phan-tich"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "nhan-tu-chung",
+            "doi-dau-nhan-tu-chung",
+            "hieu-hai-binh-phuong",
+            "binh-phuong-hoan-chinh",
+            "tong-hieu-lap-phuong",
+            "nhom-hang-tu",
+            "phoi-hop-phuong-phap",
+            "kiem-tra-phan-tich"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "06-phan-tich-da-thuc",
+          "direct_hits": [
+            "nhan-tu-chung",
+            "doi-dau-nhan-tu-chung",
+            "hieu-hai-binh-phuong",
+            "binh-phuong-hoan-chinh",
+            "tong-hieu-lap-phuong",
+            "nhom-hang-tu",
+            "phoi-hop-phuong-phap",
+            "kiem-tra-phan-tich"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "06-phan-tich-da-thuc",
+          "direct_hits": [
+            "nhan-tu-chung",
+            "doi-dau-nhan-tu-chung",
+            "hieu-hai-binh-phuong",
+            "binh-phuong-hoan-chinh",
+            "tong-hieu-lap-phuong",
+            "nhom-hang-tu",
+            "phoi-hop-phuong-phap",
+            "kiem-tra-phan-tich"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "06-phan-tich-da-thuc",
+          "direct_hits": [
+            "nhan-tu-chung",
+            "doi-dau-nhan-tu-chung",
+            "hieu-hai-binh-phuong",
+            "binh-phuong-hoan-chinh",
+            "tong-hieu-lap-phuong",
+            "nhom-hang-tu",
+            "phoi-hop-phuong-phap",
+            "kiem-tra-phan-tich"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "06-phan-tich-da-thuc",
+          "item_ids": [],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "Tứ giác",
+      "lesson_ref": "Bài 10-14",
+      "roadmap": [
+        {
+          "topic_id": "16-tu-giac",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "tong-goc-tu-giac",
+          "hinh-thang",
+          "hinh-thang-can",
+          "hbh-tinh-chat",
+          "hbh-dau-hieu",
+          "hcn-tinh-chat",
+          "hcn-dau-hieu",
+          "hthoi-tinh-chat",
+          "hthoi-dau-hieu",
+          "hvuong-tinh-chat",
+          "hvuong-dau-hieu",
+          "quan-he-bao-ham",
+          "duong-cheo-suy-luan"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "tong-goc-tu-giac",
+            "hinh-thang",
+            "hinh-thang-can",
+            "hbh-tinh-chat",
+            "hbh-dau-hieu",
+            "hcn-tinh-chat",
+            "hcn-dau-hieu",
+            "hthoi-tinh-chat",
+            "hthoi-dau-hieu",
+            "hvuong-tinh-chat",
+            "hvuong-dau-hieu",
+            "quan-he-bao-ham",
+            "duong-cheo-suy-luan"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "16-tu-giac",
+          "direct_hits": [
+            "tong-goc-tu-giac",
+            "hinh-thang",
+            "hinh-thang-can",
+            "hbh-tinh-chat",
+            "hbh-dau-hieu",
+            "hcn-tinh-chat",
+            "hcn-dau-hieu",
+            "hthoi-tinh-chat",
+            "hthoi-dau-hieu",
+            "hvuong-tinh-chat",
+            "hvuong-dau-hieu",
+            "quan-he-bao-ham",
+            "duong-cheo-suy-luan"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "16-tu-giac",
+          "direct_hits": [
+            "tong-goc-tu-giac",
+            "hinh-thang",
+            "hinh-thang-can",
+            "hbh-tinh-chat",
+            "hbh-dau-hieu",
+            "hcn-tinh-chat",
+            "hcn-dau-hieu",
+            "hthoi-tinh-chat",
+            "hthoi-dau-hieu",
+            "hvuong-tinh-chat",
+            "hvuong-dau-hieu",
+            "quan-he-bao-ham",
+            "duong-cheo-suy-luan"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "16-tu-giac",
+          "direct_hits": [
+            "tong-goc-tu-giac",
+            "hinh-thang",
+            "hinh-thang-can",
+            "hbh-tinh-chat",
+            "hbh-dau-hieu",
+            "hcn-tinh-chat",
+            "hcn-dau-hieu",
+            "hthoi-tinh-chat",
+            "hthoi-dau-hieu",
+            "hvuong-tinh-chat",
+            "hvuong-dau-hieu",
+            "quan-he-bao-ham",
+            "duong-cheo-suy-luan"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "16-tu-giac",
+          "item_ids": [],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    },
+    {
+      "chapter": 4,
+      "chapter_title": "Định lí Thalès",
+      "lesson_ref": "Bài 15-16",
+      "roadmap": [
+        {
+          "topic_id": "17-thales-dong-dang",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "thales-thuan",
+          "thales-dao",
+          "ti-le-doan-thang",
+          "duong-trung-binh"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "thales-thuan",
+            "thales-dao",
+            "ti-le-doan-thang",
+            "duong-trung-binh"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "17-thales-dong-dang",
+          "direct_hits": [
+            "thales-thuan",
+            "thales-dao",
+            "ti-le-doan-thang",
+            "duong-trung-binh"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "17-thales-dong-dang",
+          "direct_hits": [
+            "thales-thuan",
+            "thales-dao",
+            "ti-le-doan-thang",
+            "duong-trung-binh"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "17-thales-dong-dang",
+          "direct_hits": [
+            "thales-thuan",
+            "thales-dao",
+            "ti-le-doan-thang",
+            "duong-trung-binh"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "17-thales-dong-dang",
+          "item_ids": [],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    },
+    {
+      "chapter": 4,
+      "chapter_title": "Định lí Thalès",
+      "lesson_ref": "Bài 17",
+      "roadmap": [
+        {
+          "topic_id": "17-thales-dong-dang",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "ti-le-doan-thang",
+          "tinh-chat-duong-phan-giac"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "ti-le-doan-thang",
+            "tinh-chat-duong-phan-giac"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "17-thales-dong-dang",
+          "direct_hits": [
+            "ti-le-doan-thang",
+            "tinh-chat-duong-phan-giac"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "17-thales-dong-dang",
+          "direct_hits": [
+            "ti-le-doan-thang",
+            "tinh-chat-duong-phan-giac"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "17-thales-dong-dang",
+          "direct_hits": [
+            "ti-le-doan-thang",
+            "tinh-chat-duong-phan-giac"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "17-thales-dong-dang",
+          "item_ids": [],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    },
+    {
+      "chapter": 5,
+      "chapter_title": "Dữ liệu và biểu đồ",
+      "lesson_ref": "Bài 18-20",
+      "roadmap": [
+        {
+          "topic_id": "21-thong-ke",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "du-lieu-phan-loai",
+          "thu-thap-du-lieu",
+          "doc-bieu-do-cot",
+          "doc-bieu-do-doan-thang",
+          "chon-bieu-do",
+          "chuyen-bang-bieu-do",
+          "nhan-xet-du-lieu",
+          "doc-bieu-do-cot-kep",
+          "bieu-do-quat-tron"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu",
+            "doc-bieu-do-cot-kep",
+            "bieu-do-quat-tron"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "21-thong-ke",
+          "direct_hits": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu",
+            "doc-bieu-do-cot-kep",
+            "bieu-do-quat-tron"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "PARTIAL_DIRECT",
+          "primary_topic": "21-thong-ke",
+          "direct_hits": [
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu",
+            "doc-bieu-do-cot-kep",
+            "bieu-do-quat-tron"
+          ],
+          "direct_missing": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-doan-thang"
+          ],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "21-thong-ke",
+          "direct_hits": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu",
+            "doc-bieu-do-cot-kep",
+            "bieu-do-quat-tron"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "PARTIAL_G8_STRUCTURED",
+          "primary_topic": "21-thong-ke",
+          "item_ids": [
+            "STA21READY_005",
+            "STA21READY_010",
+            "STA21READY_012"
+          ],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "P2"
+    },
+    {
+      "chapter": 6,
+      "chapter_title": "Phân thức đại số",
+      "lesson_ref": "Bài 21-24",
+      "roadmap": [
+        {
+          "topic_id": "07-phan-thuc-dai-so",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "nhan-biet-phan-thuc",
+          "dieu-kien-xac-dinh",
+          "hai-phan-thuc-bang-nhau",
+          "doi-dau-phan-thuc",
+          "phan-tich-tu-mau",
+          "rut-gon-phan-thuc",
+          "giu-dieu-kien-ban-dau",
+          "quy-dong-mau-thuc",
+          "cong-tru-phan-thuc",
+          "nhan-phan-thuc",
+          "chia-phan-thuc",
+          "tinh-gia-tri-phan-thuc"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [
+          {
+            "historical_ref": "bieu-thuc-nhieu-phep-tinh",
+            "local_role": "COMPOSITE_TASK",
+            "reason": "Grade-8 R3 keeps this as lesson-local composite task; no canonical skill is created."
+          }
+        ],
+        "historical_unresolved_refs": [
+          "bieu-thuc-nhieu-phep-tinh"
+        ],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "nhan-biet-phan-thuc",
+            "dieu-kien-xac-dinh",
+            "hai-phan-thuc-bang-nhau",
+            "doi-dau-phan-thuc",
+            "phan-tich-tu-mau",
+            "rut-gon-phan-thuc",
+            "giu-dieu-kien-ban-dau",
+            "quy-dong-mau-thuc",
+            "cong-tru-phan-thuc",
+            "nhan-phan-thuc",
+            "chia-phan-thuc",
+            "tinh-gia-tri-phan-thuc"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [
+            "bieu-thuc-nhieu-phep-tinh"
+          ],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "07-phan-thuc-dai-so",
+          "direct_hits": [
+            "nhan-biet-phan-thuc",
+            "dieu-kien-xac-dinh",
+            "hai-phan-thuc-bang-nhau",
+            "doi-dau-phan-thuc",
+            "phan-tich-tu-mau",
+            "rut-gon-phan-thuc",
+            "giu-dieu-kien-ban-dau",
+            "quy-dong-mau-thuc",
+            "cong-tru-phan-thuc",
+            "nhan-phan-thuc",
+            "chia-phan-thuc",
+            "tinh-gia-tri-phan-thuc"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [
+            "bieu-thuc-nhieu-phep-tinh"
+          ],
+          "note": "Teaching copy explicitly preserves original denominator conditions after simplification."
+        },
+        "MICRO_PRACTICE": {
+          "status": "PARTIAL_DIRECT",
+          "primary_topic": "07-phan-thuc-dai-so",
+          "direct_hits": [
+            "nhan-biet-phan-thuc",
+            "dieu-kien-xac-dinh",
+            "hai-phan-thuc-bang-nhau",
+            "doi-dau-phan-thuc",
+            "phan-tich-tu-mau",
+            "rut-gon-phan-thuc",
+            "quy-dong-mau-thuc",
+            "cong-tru-phan-thuc",
+            "nhan-phan-thuc",
+            "chia-phan-thuc",
+            "tinh-gia-tri-phan-thuc"
+          ],
+          "direct_missing": [
+            "giu-dieu-kien-ban-dau"
+          ],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "07-phan-thuc-dai-so",
+          "direct_hits": [
+            "nhan-biet-phan-thuc",
+            "dieu-kien-xac-dinh",
+            "hai-phan-thuc-bang-nhau",
+            "doi-dau-phan-thuc",
+            "phan-tich-tu-mau",
+            "rut-gon-phan-thuc",
+            "giu-dieu-kien-ban-dau",
+            "quy-dong-mau-thuc",
+            "cong-tru-phan-thuc",
+            "nhan-phan-thuc",
+            "chia-phan-thuc",
+            "tinh-gia-tri-phan-thuc"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "07-phan-thuc-dai-so",
+          "item_ids": [],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "P1"
+    },
+    {
+      "chapter": 7,
+      "chapter_title": "Phương trình bậc nhất và hàm số bậc nhất",
+      "lesson_ref": "Bài 25-26",
+      "roadmap": [
+        {
+          "topic_id": "08-phuong-trinh-bat-phuong-trinh",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "nghiem-phuong-trinh",
+          "pt-bac-nhat",
+          "bien-doi-pt-nhieu-buoc",
+          "lap-phuong-trinh"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "nghiem-phuong-trinh",
+            "pt-bac-nhat",
+            "bien-doi-pt-nhieu-buoc",
+            "lap-phuong-trinh"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "08-phuong-trinh-bat-phuong-trinh",
+          "direct_hits": [
+            "nghiem-phuong-trinh",
+            "pt-bac-nhat",
+            "bien-doi-pt-nhieu-buoc",
+            "lap-phuong-trinh"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "08-phuong-trinh-bat-phuong-trinh",
+          "direct_hits": [
+            "nghiem-phuong-trinh",
+            "pt-bac-nhat",
+            "bien-doi-pt-nhieu-buoc",
+            "lap-phuong-trinh"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "08-phuong-trinh-bat-phuong-trinh",
+          "direct_hits": [
+            "nghiem-phuong-trinh",
+            "pt-bac-nhat",
+            "bien-doi-pt-nhieu-buoc",
+            "lap-phuong-trinh"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "08-phuong-trinh-bat-phuong-trinh",
+          "item_ids": [],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    },
+    {
+      "chapter": 7,
+      "chapter_title": "Phương trình bậc nhất và hàm số bậc nhất",
+      "lesson_ref": "Bài 27-29",
+      "roadmap": [
+        {
+          "topic_id": "10-ham-so-do-thi",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "khai-niem-ham-so",
+          "tinh-gia-tri-ham",
+          "bang-gia-tri",
+          "toa-do-diem",
+          "diem-thuoc-do-thi",
+          "nhan-biet-ham-bac-nhat",
+          "he-so-goc",
+          "tung-do-goc",
+          "dong-nghich-bien",
+          "ve-do-thi-ham-bac-nhat"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "khai-niem-ham-so",
+            "tinh-gia-tri-ham",
+            "bang-gia-tri",
+            "toa-do-diem",
+            "diem-thuoc-do-thi",
+            "nhan-biet-ham-bac-nhat",
+            "he-so-goc",
+            "tung-do-goc",
+            "dong-nghich-bien",
+            "ve-do-thi-ham-bac-nhat"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "10-ham-so-do-thi",
+          "direct_hits": [
+            "khai-niem-ham-so",
+            "tinh-gia-tri-ham",
+            "bang-gia-tri",
+            "toa-do-diem",
+            "diem-thuoc-do-thi",
+            "nhan-biet-ham-bac-nhat",
+            "he-so-goc",
+            "tung-do-goc",
+            "dong-nghich-bien",
+            "ve-do-thi-ham-bac-nhat"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "10-ham-so-do-thi",
+          "direct_hits": [
+            "khai-niem-ham-so",
+            "tinh-gia-tri-ham",
+            "bang-gia-tri",
+            "toa-do-diem",
+            "diem-thuoc-do-thi",
+            "nhan-biet-ham-bac-nhat",
+            "he-so-goc",
+            "tung-do-goc",
+            "dong-nghich-bien",
+            "ve-do-thi-ham-bac-nhat"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "10-ham-so-do-thi",
+          "direct_hits": [
+            "khai-niem-ham-so",
+            "tinh-gia-tri-ham",
+            "bang-gia-tri",
+            "toa-do-diem",
+            "diem-thuoc-do-thi",
+            "nhan-biet-ham-bac-nhat",
+            "he-so-goc",
+            "tung-do-goc",
+            "dong-nghich-bien",
+            "ve-do-thi-ham-bac-nhat"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "10-ham-so-do-thi",
+          "item_ids": [],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    },
+    {
+      "chapter": 8,
+      "chapter_title": "Mở đầu về tính xác suất của biến cố",
+      "lesson_ref": "Bài 30",
+      "roadmap": [
+        {
+          "topic_id": "23-xac-suat",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "phep-thu-ngau-nhien",
+          "bien-co"
+        ],
+        "canonical_families": [
+          "PROB-EVENT"
+        ],
+        "lesson_local_refs": [
+          {
+            "historical_ref": "ket-qua-co-the",
+            "local_role": "OUTCOME_CONCEPT"
+          },
+          {
+            "historical_ref": "ket-qua-thuan-loi",
+            "local_role": "FAVORABLE_OUTCOME_CONCEPT"
+          }
+        ],
+        "historical_unresolved_refs": [
+          "ket-qua-co-the",
+          "ket-qua-thuan-loi"
+        ],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "phep-thu-ngau-nhien",
+            "bien-co"
+          ],
+          "canonical_families": [
+            "PROB-EVENT"
+          ],
+          "lesson_local_refs": [
+            "ket-qua-co-the",
+            "ket-qua-thuan-loi"
+          ],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_FAMILY_LOCAL",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "phep-thu-ngau-nhien",
+            "bien-co"
+          ],
+          "direct_missing": [],
+          "family_targets": [
+            "PROB-EVENT"
+          ],
+          "lesson_local_targets": [
+            "ket-qua-co-the",
+            "ket-qua-thuan-loi"
+          ],
+          "note": "Card prob23-core-4 explicitly teaches possible/favourable outcome meaning under PROB-EVENT without promoting lesson vocabulary to global skills."
+        },
+        "MICRO_PRACTICE": {
+          "status": "PARTIAL_FAMILY_EVIDENCE",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "phep-thu-ngau-nhien",
+            "bien-co"
+          ],
+          "direct_missing": [],
+          "family_targets": [
+            "PROB-EVENT"
+          ],
+          "note": "Grade-8 Micro items diagnose random experiment/event and favourable outcomes through family/local semantics; no separate global skill is expected."
+        },
+        "PRACTICE_BANK": {
+          "status": "PARTIAL_FAMILY_EVIDENCE",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "phep-thu-ngau-nhien",
+            "bien-co"
+          ],
+          "direct_missing": [],
+          "family_targets": [
+            "PROB-EVENT"
+          ]
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "PARTIAL_G8_STRUCTURED",
+          "primary_topic": "23-xac-suat",
+          "item_ids": [
+            "PRO23READY_009"
+          ],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    },
+    {
+      "chapter": 8,
+      "chapter_title": "Mở đầu về tính xác suất của biến cố",
+      "lesson_ref": "Bài 31-32",
+      "roadmap": [
+        {
+          "topic_id": "23-xac-suat",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "xac-suat-co-dien",
+          "kiem-tra-xac-suat",
+          "xac-suat-thuc-nghiem"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat",
+            "xac-suat-thuc-nghiem"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat",
+            "xac-suat-thuc-nghiem"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat",
+            "xac-suat-thuc-nghiem"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat",
+            "xac-suat-thuc-nghiem"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "PARTIAL_G8_STRUCTURED",
+          "primary_topic": "23-xac-suat",
+          "item_ids": [
+            "PRO23READY_010",
+            "PRO23READY_011",
+            "PRO23READY_012"
+          ],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    },
+    {
+      "chapter": 9,
+      "chapter_title": "Tam giác đồng dạng",
+      "lesson_ref": "Bài 33-34, 36",
+      "roadmap": [
+        {
+          "topic_id": "17-thales-dong-dang",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "nhan-biet-dong-dang",
+          "dong-dang-gg",
+          "dong-dang-cgc",
+          "dong-dang-ccc",
+          "thu-tu-tuong-ung",
+          "tinh-do-dai-dong-dang"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "nhan-biet-dong-dang",
+            "dong-dang-gg",
+            "dong-dang-cgc",
+            "dong-dang-ccc",
+            "thu-tu-tuong-ung",
+            "tinh-do-dai-dong-dang"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "17-thales-dong-dang",
+          "direct_hits": [
+            "nhan-biet-dong-dang",
+            "dong-dang-gg",
+            "dong-dang-cgc",
+            "dong-dang-ccc",
+            "thu-tu-tuong-ung",
+            "tinh-do-dai-dong-dang"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "17-thales-dong-dang",
+          "direct_hits": [
+            "nhan-biet-dong-dang",
+            "dong-dang-gg",
+            "dong-dang-cgc",
+            "dong-dang-ccc",
+            "thu-tu-tuong-ung",
+            "tinh-do-dai-dong-dang"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "17-thales-dong-dang",
+          "direct_hits": [
+            "nhan-biet-dong-dang",
+            "dong-dang-gg",
+            "dong-dang-cgc",
+            "dong-dang-ccc",
+            "thu-tu-tuong-ung",
+            "tinh-do-dai-dong-dang"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "17-thales-dong-dang",
+          "item_ids": [],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    },
+    {
+      "chapter": 9,
+      "chapter_title": "Tam giác đồng dạng",
+      "lesson_ref": "Bài 35",
+      "roadmap": [
+        {
+          "topic_id": "18-he-thuc-luong",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "pythagore",
+          "pythagore-dao",
+          "canh-huyen"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "pythagore",
+            "pythagore-dao",
+            "canh-huyen"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "18-he-thuc-luong",
+          "direct_hits": [
+            "pythagore",
+            "pythagore-dao",
+            "canh-huyen"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "18-he-thuc-luong",
+          "direct_hits": [
+            "pythagore",
+            "pythagore-dao",
+            "canh-huyen"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "18-he-thuc-luong",
+          "direct_hits": [
+            "pythagore",
+            "pythagore-dao",
+            "canh-huyen"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "18-he-thuc-luong",
+          "item_ids": [],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    },
+    {
+      "chapter": 9,
+      "chapter_title": "Tam giác đồng dạng",
+      "lesson_ref": "Bài 37",
+      "roadmap": [
+        {
+          "topic_id": "17-thales-dong-dang",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "nhan-biet-dong-dang",
+          "hinh-dong-dang"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "nhan-biet-dong-dang",
+            "hinh-dong-dang"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "17-thales-dong-dang",
+          "direct_hits": [
+            "nhan-biet-dong-dang",
+            "hinh-dong-dang"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "17-thales-dong-dang",
+          "direct_hits": [
+            "nhan-biet-dong-dang",
+            "hinh-dong-dang"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "17-thales-dong-dang",
+          "direct_hits": [
+            "nhan-biet-dong-dang",
+            "hinh-dong-dang"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "17-thales-dong-dang",
+          "item_ids": [],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    },
+    {
+      "chapter": 10,
+      "chapter_title": "Một số hình khối trong thực tiễn",
+      "lesson_ref": "Bài 38-39",
+      "roadmap": [
+        {
+          "topic_id": "20-hinh-hoc-tong-hop",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "dien-tich-day",
+          "doi-don-vi-do-luong",
+          "nhan-biet-hinh-chop-deu",
+          "dien-tich-xung-quanh-hinh-chop",
+          "the-tich-hinh-chop"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-chop-deu",
+            "dien-tich-xung-quanh-hinh-chop",
+            "the-tich-hinh-chop"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation": "R3_NO_NEW_IDENTITY"
+        },
+        "LEARN_CONTENT": {
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "20-hinh-hoc-tong-hop",
+          "direct_hits": [
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-chop-deu",
+            "dien-tich-xung-quanh-hinh-chop",
+            "the-tich-hinh-chop"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [],
+          "note": ""
+        },
+        "MICRO_PRACTICE": {
+          "status": "PARTIAL_DIRECT",
+          "primary_topic": "20-hinh-hoc-tong-hop",
+          "direct_hits": [
+            "nhan-biet-hinh-chop-deu",
+            "dien-tich-xung-quanh-hinh-chop",
+            "the-tich-hinh-chop"
+          ],
+          "direct_missing": [
+            "dien-tich-day",
+            "doi-don-vi-do-luong"
+          ],
+          "family_targets": [],
+          "note": ""
+        },
+        "PRACTICE_BANK": {
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "20-hinh-hoc-tong-hop",
+          "direct_hits": [
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-chop-deu",
+            "dien-tich-xung-quanh-hinh-chop",
+            "the-tich-hinh-chop"
+          ],
+          "direct_missing": [],
+          "family_targets": []
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-8 KNTT placement."
+        },
+        "READINESS": {
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "20-hinh-hoc-tong-hop",
+          "item_ids": [],
+          "note": "Only explicit Grade-8 structured readiness metadata is counted; shared assessment assets are not auto-promoted."
+        }
+      },
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NONE"
+    }
+  ]
+}
