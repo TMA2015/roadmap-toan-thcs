@@ -1,7 +1,7 @@
 {
   "packet_id": "MATH-KNTT-G8-DENSITY-W1-R1-20261008",
   "as_of": "2026-10-08",
-  "status": "OWNER_PRINCIPLE_AUTHORIZED_BOUNDED_REPAIR",
+  "status": "IMPLEMENTED_AWAIT_REPOSITORY_QA",
   "basis": {
     "inventory": "docs/assets/data/curriculum/kntt-dimension-coverage-g8-v1.json",
     "inventory_status": "G8_EXISTING_EVIDENCE_INVENTORY_R1",
@@ -55,5 +55,18 @@
     "skill": "giu-dieu-kien-ban-dau",
     "micro_role": "coverage",
     "grade": 8
-  }
+  },
+  "implementation": {
+    "item_id": "RAT07MICRO_018",
+    "card_id": "pt07-core-2",
+    "skill": "giu-dieu-kien-ban-dau",
+    "micro_role": "coverage",
+    "grade": 8,
+    "learn_copy_changed": false,
+    "practice_bank_changed": false,
+    "written_changed": false,
+    "readiness_changed": false,
+    "new_canonical_skills": 0
+  },
+  "next_step": "FULL_REPOSITORY_AND_BROWSER_QA"
 }
