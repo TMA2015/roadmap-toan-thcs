@@ -1,7 +1,7 @@
 {
   "packet_id": "MATH-KNTT-G7-REPAIR-WAVE2-SCOPE-R1-20261008",
   "as_of": "2026-10-08",
-  "status": "ACADEMIC_SCOPE_REVIEW_PENDING",
+  "status": "ACADEMIC_SCOPE_REVIEW_PASS",
   "scope": "Independent authorization of Grade-7 Repair Wave 2 scope after Wave 1 closure; no learner-content authoring in this artifact",
   "source_locks": {
     "prior_priority_review": {
@@ -118,8 +118,54 @@
     "runtime_taxonomy_change": false
   },
   "next_step": {
-    "status": "AWAIT_NOTEBOOKLM_SCOPE_CLEARANCE",
-    "required_clearance": "G7_REPAIR_WAVE2_SCOPE_R1_REVIEW_COMPLETE",
-    "after_pass": "AUTHOR_CANDIDATE_CONTENT_ONLY_FOR_APPROVED_GROUPS_AND_DIMENSIONS"
+    "status": "AUTHORIZED_FOR_CANDIDATE_AUTHORING_ONLY",
+    "required_content_clearance": "G7_REPAIR_WAVE2_R1_CONTENT_REVIEW_COMPLETE",
+    "lesson_groups": [
+      "BAI4",
+      "BAI18_19",
+      "BAI22_23"
+    ]
+  },
+  "independent_review": {
+    "reviewer": "NotebookLM",
+    "verdict": "PASS",
+    "clearance": "G7_REPAIR_WAVE2_SCOPE_R1_REVIEW_COMPLETE",
+    "selected_wave2": [
+      "BAI4",
+      "BAI18_19",
+      "BAI22_23"
+    ],
+    "approved_dimensions": {
+      "BAI4": [
+        "LEARN",
+        "MICRO"
+      ],
+      "BAI18_19": [
+        "MICRO"
+      ],
+      "BAI22_23": [
+        "LEARN",
+        "MICRO"
+      ]
+    },
+    "deferred": {
+      "BAI8": {
+        "priority": "P2",
+        "dimensions": [
+          "MICRO"
+        ]
+      },
+      "BAI24_25": {
+        "priority": "DEFER",
+        "dimensions": [
+          "NONE"
+        ]
+      }
+    },
+    "written_policy": "NO_QUOTA_EXPANSION_PASS",
+    "readiness_policy": "NO_QUOTA_EXPANSION_PASS",
+    "new_canonical_skills": [],
+    "receipt": "review-packets/kntt-g7-repair-wave2-scope-r1/01_NOTEBOOKLM_RESULT_R1.md",
+    "reviewed_on": "2026-10-08"
   }
 }
