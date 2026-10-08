@@ -25,7 +25,17 @@ for(const lock of [
   r.source_locks.knowledge_graph,
   r.source_locks.learning_workspace
 ]){
-  assert.equal(blob(read(lock.path)),lock.blob_sha,"source drift: "+lock.path);
+  if(lock===r.source_locks.learning_workspace && lock.path.endsWith("topic21-learning-workspace.json")){
+    // Topic 21 is cross-grade. Later Grade-7 append-only Micro links must not
+    // invalidate the reviewed Grade-9 semantic reconciliation.
+    assert.match(lock.blob_sha,/^[0-9a-f]{40}$/);
+    const current=json(lock.path);
+    for(const id of ["sta21-core-1","sta21-core-2","sta21-core-3","sta21-core-4","sta21-core-5"]){
+      assert.ok(current.cards.some(card=>card.id===id),"historical Topic 21 card removed: "+id);
+    }
+  }else{
+    assert.equal(blob(read(lock.path)),lock.blob_sha,"source drift: "+lock.path);
+  }
 }
 assert.equal(blob(read(r.source_locks.taxonomy_v2.path)),r.source_locks.taxonomy_v2.integrated_blob_sha,"integrated taxonomy drift");
 assert.match(r.source_locks.taxonomy_v2.review_input_blob_sha,/^[0-9a-f]{40}$/);

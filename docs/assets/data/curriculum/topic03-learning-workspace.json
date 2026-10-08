@@ -240,6 +240,46 @@
         "review_method": "INDEPENDENT_NOTEBOOKLM_R1_TARGETED_R2",
         "academic_review_ref": "content-staging/reviews/MATH-CORE03-R2-RELEASE-RECONCILIATION-20260930.md"
       }
+    },
+    {
+      "id": "rat03-core-g7-6",
+      "order": 6,
+      "title": "Mô hình hóa bài toán tỉ lệ thuận và tỉ lệ nghịch",
+      "kntt_lessons": [
+        "Lớp 7 · Bài 22–23"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        7
+      ],
+      "skills": [
+        "mo-hinh-ti-le"
+      ],
+      "prerequisites": [
+        "ti-le-thuan",
+        "ti-le-nghich",
+        "phan-biet-thuan-nghich"
+      ],
+      "micro_practice": [
+        "RAT03MICRO_016",
+        "RAT03MICRO_017",
+        "RAT03MICRO_018",
+        "RAT03MICRO_019"
+      ],
+      "teaching_copy": {
+        "key_idea": "Khi giải bài toán về đại lượng tỉ lệ, trước hết xác định hai đại lượng và đơn vị, rồi quyết định quan hệ là tỉ lệ thuận hay tỉ lệ nghịch. Với tỉ lệ thuận, mô hình có dạng y = kx; với tỉ lệ nghịch, mô hình có dạng xy = a hay y = a/x. Tìm hệ số từ dữ liệu đã biết, dùng mô hình để tính giá trị cần tìm và kiểm tra xem kết quả có hợp lí với ngữ cảnh hay không.",
+        "worked_example": {
+          "problem": "a) 3 kg gạo giá 90 nghìn đồng. Lập mô hình giá y (nghìn đồng) theo khối lượng x (kg). b) Một công việc cần 24 giờ-người. Nếu có x người làm với cùng năng suất, thời gian y (giờ) được mô hình hóa thế nào?",
+          "solution": "a) Giá và khối lượng tỉ lệ thuận: k = 90/3 = 30, nên y = 30x. b) Số người và thời gian tỉ lệ nghịch với tích không đổi 24, nên xy = 24 hay y = 24/x."
+        },
+        "misconception": "Không kết luận hai đại lượng tỉ lệ thuận chỉ vì chúng cùng tăng, hoặc tỉ lệ nghịch chỉ vì một đại lượng tăng còn đại lượng kia giảm. Phải kiểm tra tỉ số y/x không đổi đối với tỉ lệ thuận hoặc tích xy không đổi đối với tỉ lệ nghịch.",
+        "summary": "Xác định loại quan hệ, lập công thức tỉ lệ, tìm hệ số từ dữ liệu, tính giá trị cần tìm và kiểm tra kết quả theo ngữ cảnh."
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE2_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008"
+      }
     }
   ],
   "extensions": [],

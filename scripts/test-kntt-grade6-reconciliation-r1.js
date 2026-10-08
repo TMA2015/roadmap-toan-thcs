@@ -38,6 +38,14 @@ for (const lock of r.source_locks.learning_workspaces) {
     for (const id of ["num02-g6-core-1","num02-g6-core-2","num02-g6-core-3","num02-g6-core-4","num02-g6-core-5"]) {
       assert.ok(current.cards.some(card => card.id === id), "historical Grade-6 card removed: " + id);
     }
+  } else if (lock.path.endsWith("topic21-learning-workspace.json")) {
+    // Topic 21 is also cross-grade. Grade-7 append-only Micro links may extend
+    // Grade-7-only cards without invalidating the reviewed Grade-6 semantics.
+    assert.match(lock.blob_sha, /^[0-9a-f]{40}$/);
+    const current = json(lock.path);
+    for (const id of ["sta21-core-1","sta21-core-2","sta21-core-5"]) {
+      assert.ok(current.cards.some(card => card.id === id), "historical Grade-6 statistics card removed: " + id);
+    }
   } else {
     assert.equal(gitBlobSha(read(lock.path)), lock.blob_sha, "source drift: " + lock.path);
   }

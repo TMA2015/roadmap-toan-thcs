@@ -65,9 +65,18 @@ for(const [num,slug,layer,wsSha,bankSha,label,expectedCount] of specs){
  const dir="docs/kien-thuc/"+slug+"/",wp="docs/assets/data/curriculum/topic"+num+"-learning-workspace.json",bp="docs/assets/data/practice/"+slug+"-micro-v1.json";
  const w=json(wp),b=json(bp),page=read(dir+"core/index.md"),lesson=read(dir+"index.md");
  const expanded02=slug==="02-so-va-phep-tinh";
- const baselineCards=expanded02?w.cards.filter(card=>/^num02-g6-core-[1-5]$/.test(card.id)):w.cards;
- const baselineQuestions=expanded02?b.questions.filter(q=>/^NUM02MICRO_(0[0-4][0-9]|05[0-2])$/.test(q.id)):b.questions;
- if(!expanded02)ok(blob(read(wp))===wsSha&&blob(read(bp))===bankSha,"frozen workspace/micro bank unchanged "+slug);
+ const expanded21=slug==="21-thong-ke";
+ const baselineCards=expanded02
+   ? w.cards.filter(card=>/^num02-g6-core-[1-5]$/.test(card.id))
+   : expanded21
+     ? w.cards.map(card=>({...card,micro_practice:(card.micro_practice||[]).filter(id=>Number(id.split("_").pop())<=20)}))
+     : w.cards;
+ const baselineQuestions=expanded02
+   ? b.questions.filter(q=>/^NUM02MICRO_(0[0-4][0-9]|05[0-2])$/.test(q.id))
+   : expanded21
+     ? b.questions.filter(q=>Number(q.id.split("_").pop())<=20)
+     : b.questions;
+ if(!expanded02&&!expanded21)ok(blob(read(wp))===wsSha&&blob(read(bp))===bankSha,"frozen workspace/micro bank unchanged "+slug);
  ok(w.topic===slug&&w.core_progress_policy.layer===layer&&baselineCards.length===5&&baselineQuestions.length===expectedCount,"source baseline content/layer "+slug);
  ok(routes.get(slug)?.stepLabel===label&&routes.get(slug)?.path==="core/","semantic label "+slug);
  ok(nav.includes(" - "+label+": kien-thuc/"+slug+"/core/index.md"),"MkDocs sidebar route "+slug);
@@ -90,4 +99,4 @@ for(const [num,slug,layer,wsSha,bankSha,label,expectedCount] of specs){
 ok(routes.get("04-bieu-thuc-dai-so")&&routes.get("20-hinh-hoc-tong-hop"),"old independent routes remain");
 ok(engine.includes('recordAnswer?.(')&&engine.includes("topic-core-modal-modes")&&engine.includes('if(hasStandaloneCore)mountCoreGateway(hero,config)'),"old modal and answer evidence path retained");
 ok(read("docs/hoc-theo-lop/index.md").includes("../kien-thuc/02-so-va-phep-tinh/core/")&&!read("docs/hoc-theo-lop/index.md").includes("../kien-thuc/02-so-va-phep-tinh/#core-journey"),"class map direct links to standalone learning");
-console.log("PASS: "+specs.length+" independent topic routes preserve "+count+" reviewed baseline micro IDs; Topic02 later Grade-7 append-only expansion does not alter the Grade-6 baseline.");
+console.log("PASS: "+specs.length+" independent topic routes preserve "+count+" reviewed baseline micro IDs; Topic02/Topic21 later Grade-7 append-only expansion does not alter historical baselines.");

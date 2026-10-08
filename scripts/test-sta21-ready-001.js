@@ -15,7 +15,7 @@ ok(a.readiness.hard_gate===false&&a.readiness.ready_threshold===0.8&&a.readiness
 ok(a.readiness.states.join(",")==="READY,REVIEW_RECOMMENDED,MORE_EVIDENCE_NEEDED","readiness states");
 ok(a.next_topic.id==="22-dai-luong-dac-trung","next topic");
 ok(skills.size===9&&Object.keys(a.skill_labels).length===9&&[...skills].every(s=>!!a.skill_labels[s]),"nine scoped skill labels");
-ok(m.question_count===132&&m.sources.length===5&&read("docs/assets/data/practice/21-thong-ke-micro-v1.json").questions.length===20,"source banks unaffected");
+ok(m.question_count===132&&m.sources.length===5&&read("docs/assets/data/practice/21-thong-ke-micro-v1.json").questions.length>=20,"readiness/Practice baselines preserved under append-only Micro growth");
 const seen=new Set(),gradeMap={};
 for(const g of [6,7,8]){
   const map=read("docs/assets/data/curriculum/kntt-grade"+g+"-map.json");

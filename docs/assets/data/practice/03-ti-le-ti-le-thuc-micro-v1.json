@@ -6,7 +6,7 @@
     "id": "03-ti-le-ti-le-thuc",
     "title": "Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ · Core lớp 6–7"
   },
-  "question_count": 15,
+  "question_count": 19,
   "questions": [
     {
       "id": "RAT03MICRO_001",
@@ -698,6 +698,186 @@
         "method": "NOTEBOOKLM_R1_TARGETED_R2_PASS",
         "source_blob_sha": "a84c2740169070d6919bc8d2f274d10fb914fa32",
         "packet_id": "MATH-CORE03-R2-20260930"
+      }
+    },
+    {
+      "id": "RAT03MICRO_016",
+      "card_id": "rat03-core-g7-6",
+      "micro_role": "base",
+      "question": "Ba ki-lô-gam gạo giá 90 nghìn đồng. Gọi \\(x\\) là khối lượng gạo (kg), \\(y\\) là số tiền (nghìn đồng). Mô hình tỉ lệ thuận đúng là:",
+      "options": [
+        "\\(y=30x\\)",
+        "\\(y=90x\\)",
+        "\\(xy=30\\)",
+        "\\(y=3x\\)"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "Hệ số tỉ lệ là \\(k=90/3=30\\). Vì giá tiền tỉ lệ thuận với khối lượng nên \\(y=30x\\).",
+      "hints": [
+        "Tính giá của 1 kg gạo.",
+        "Tỉ lệ thuận có dạng y = kx."
+      ],
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "mo-hinh-ti-le"
+        ],
+        "type": "mo-hinh-ti-le-thuan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 22-23"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE2_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008"
+      }
+    },
+    {
+      "id": "RAT03MICRO_017",
+      "card_id": "rat03-core-g7-6",
+      "micro_role": "trap",
+      "question": "Một công việc cần tổng cộng 24 giờ-người. Nếu \\(x\\) người làm với cùng năng suất và hoàn thành trong \\(y\\) giờ, mô hình nào đúng?",
+      "options": [
+        "\\(xy=24\\)",
+        "\\(y=24x\\)",
+        "\\(x+y=24\\)",
+        "\\(y=x/24\\)"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "Số người tăng thì thời gian giảm sao cho tích số người × thời gian giữ nguyên bằng 24. Vì vậy \\(xy=24\\).",
+      "hints": [
+        "Kiểm tra xem tích hay tỉ số giữa hai đại lượng là hằng số.",
+        "Đây là quan hệ tỉ lệ nghịch."
+      ],
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "mo-hinh-ti-le"
+        ],
+        "type": "mo-hinh-ti-le-nghich",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 22-23"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE2_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008"
+      }
+    },
+    {
+      "id": "RAT03MICRO_018",
+      "card_id": "rat03-core-g7-6",
+      "micro_role": "apply",
+      "question": "Hai đại lượng \\(x,y\\) tỉ lệ thuận. Khi \\(x=4\\) thì \\(y=10\\). Khi \\(x=14\\), giá trị \\(y\\) là:",
+      "options": [
+        "35",
+        "24",
+        "20",
+        "5,6"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "Từ \\(y=kx\\), có \\(k=10/4=2,5\\). Khi \\(x=14\\), \\(y=2,5\\times14=35\\).",
+      "hints": [
+        "Tìm hệ số k từ cặp dữ liệu đã biết.",
+        "Sau đó thay x = 14 vào y = kx."
+      ],
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "mo-hinh-ti-le"
+        ],
+        "type": "ap-dung-mo-hinh-ti-le-thuan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 22-23"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE2_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008"
+      }
+    },
+    {
+      "id": "RAT03MICRO_019",
+      "card_id": "rat03-core-g7-6",
+      "micro_role": "coverage",
+      "question": "Hai đại lượng \\(x,y\\) có các cặp giá trị \\((2,12),(3,8),(4,6)\\). Mô hình phù hợp nhất là:",
+      "options": [
+        "\\(xy=24\\)",
+        "\\(y=6x\\)",
+        "\\(y=4x\\)",
+        "\\(x+y=14\\)"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "Các tích lần lượt là 24, 24, 24 nên hai đại lượng tỉ lệ nghịch với mô hình \\(xy=24\\).",
+      "hints": [
+        "Tính tích x·y cho từng cặp.",
+        "Nếu tích không đổi, đó là tỉ lệ nghịch."
+      ],
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "mo-hinh-ti-le"
+        ],
+        "type": "nhan-dang-mo-hinh-ti-le",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 22-23"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE2_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008"
       }
     }
   ]
