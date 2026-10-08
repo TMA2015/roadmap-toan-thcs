@@ -29,7 +29,7 @@ with sync_playwright() as p:
         )
 
         cards = page.locator(".written-exercise-card")
-        assert cards.count() == 53, (device, "fifty-three published cards")
+        assert cards.count() == 54, (device, "fifty-four published cards")
         meta_texts = page.locator(".written-exercise-meta").all_inner_texts()
         assert all("phút" not in text for text in meta_texts), (device, "estimated minutes hidden from learner card metadata")
         assert page.locator(".written-exercise-card#wx07-rat-001").count() == 1
@@ -194,14 +194,14 @@ with sync_playwright() as p:
                 timeout=15000,
             )
             assert new_topic_page.locator('select[aria-label="Lọc theo chuyên đề"]').input_value() == topic_id, (device, topic_id, "filter auto-applied")
-            expected_count = 8 if topic_id == "CT09" else (3 if topic_id in {"CT02", "CT13", "CT20"} else 2)
+            expected_count = 8 if topic_id == "CT09" else (3 if topic_id in {"CT02", "CT13", "CT20", "CT23"} else 2)
             assert new_topic_page.locator(".written-exercise-card").count() == expected_count, (device, topic_id, "published item count")
             new_topic_page.close()
         context.close()
 
     browser.close()
 
-print("PASS: Written Exercise Library renders fifty-three published items on desktop/mobile.")
+print("PASS: Written Exercise Library renders fifty-four published items on desktop/mobile.")
 print("PASS: topic/level/search filters, geometry figure and MathJax work.")
 print("PASS: compact 3-action help row is presentation-only with no localStorage write.")
 print("PASS: quick shortcut and topic deep link open the written library with CT07 auto-filter.")

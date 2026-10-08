@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "catalog_id": "MATH-WRITTEN-EXERCISE-LIBRARY-V1",
-  "snapshot_date": "2026-10-07",
+  "snapshot_date": "2026-10-08",
   "status": "ACTIVE_APPEND_ONLY",
   "auto_readiness_credit": false,
   "self_marking_only": true,
@@ -5155,6 +5155,96 @@
           "lesson": "Bài 36–37 — Góc, số đo góc và phân loại góc"
         }
       ]
+    },
+    {
+      "exercise_kind": "anchor",
+      "exercise_id": "WX23-PRO-003",
+      "topic_id": "CT23",
+      "topic_slug": "23-xac-suat",
+      "topic_title": "Xác suất",
+      "problem_type_id": "event-outcome-identification-explanation",
+      "problem_type_title": "Phân biệt kết quả có thể với sự kiện và xác định khi sự kiện xảy ra",
+      "title": "Một kết quả không phải là cả sự kiện",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_APPLY",
+      "learner_label": "Củng cố",
+      "grade_overlay": [
+        6
+      ],
+      "skills": [],
+      "prerequisites": [],
+      "estimated_minutes": 12,
+      "problem_markdown": "Trong một hộp có **6 thẻ giống nhau**, lần lượt ghi các số $1,2,3,4,5,6$. Rút ngẫu nhiên một thẻ.\n\nXét hai sự kiện:\n- $A$: “Số ghi trên thẻ là số chẵn”.\n- $B$: “Số ghi trên thẻ lớn hơn $3$”.\n\n1. Liệt kê đầy đủ các kết quả có thể của phép thử.\n2. Liệt kê các kết quả làm sự kiện $A$ xảy ra và các kết quả làm sự kiện $B$ xảy ra.\n3. Nếu rút được thẻ ghi số $6$, hãy cho biết sự kiện nào trong $A,B$ xảy ra. Giải thích bằng điều kiện mô tả từng sự kiện.\n4. Minh viết: “Sự kiện $A$ là kết quả $2$.” Hãy chỉ ra điều chưa đúng và viết lại mô tả chính xác của sự kiện $A$ bằng các kết quả làm nó xảy ra.\n5. **Không tính xác suất.** Viết 1–2 câu phân biệt “một kết quả của phép thử” với “một sự kiện” trong tình huống này.",
+      "hint_steps": [
+        "Bắt đầu bằng việc liệt kê tất cả số có thể xuất hiện trên thẻ được rút. Sau đó xét từng điều kiện “số chẵn” và “lớn hơn 3”.",
+        "Một sự kiện có thể xảy ra bởi **nhiều hơn một kết quả**. Hãy kiểm tra riêng từng số từ 1 đến 6 xem có thỏa điều kiện của A hoặc B không.",
+        "Để phản biện câu của Minh, nhớ rằng “2” là **một kết quả cụ thể**, còn sự kiện A là điều kiện “số chẵn” và xảy ra với tất cả kết quả thỏa điều kiện đó."
+      ],
+      "full_solution_markdown": "Các kết quả có thể của phép thử là\n\n$$\\{1;2;3;4;5;6\\}.$$\n\nSự kiện $A$: “số ghi trên thẻ là số chẵn”. Các kết quả làm $A$ xảy ra là\n\n$$\\{2;4;6\\}.$$\n\nSự kiện $B$: “số ghi trên thẻ lớn hơn 3”. Các kết quả làm $B$ xảy ra là\n\n$$\\{4;5;6\\}.$$\n\nNếu rút được thẻ ghi số $6$ thì **cả A và B đều xảy ra**, vì $6$ vừa là số chẵn vừa lớn hơn $3$.\n\nCâu “Sự kiện A là kết quả 2” chưa đúng vì $2$ chỉ là **một** trong các kết quả làm A xảy ra. Mô tả chính xác là: sự kiện $A$ xảy ra khi kết quả rút được là $2$, $4$ hoặc $6$.\n\nTrong tình huống này, một **kết quả của phép thử** là một giá trị cụ thể nhận được sau một lần rút, chẳng hạn $6$. Một **sự kiện** là điều ta quan tâm được mô tả bằng một điều kiện; sự kiện xảy ra khi kết quả nhận được thỏa điều kiện đó. Không cần và không được dùng phép tính xác suất để trả lời bài này.",
+      "method_rationale_markdown": "Bài 42 tập trung vào ngôn ngữ nền tảng của phép thử: liệt kê **kết quả có thể**, hiểu **sự kiện** là điều kiện ta quan tâm, và xác định kết quả nào làm sự kiện xảy ra. Nút thắt tự luận là giải thích được sự khác nhau giữa một kết quả cụ thể và một sự kiện có thể gồm nhiều kết quả, chứ không phải tính xác suất. Vì vậy bài cố ý dừng trước Bài 43 và không yêu cầu tần số hay xác suất thực nghiệm.",
+      "rubric": [
+        {
+          "criterion": "Liệt kê đủ sáu kết quả có thể: 1, 2, 3, 4, 5, 6.",
+          "points": 1
+        },
+        {
+          "criterion": "Xác định đúng A xảy ra với {2;4;6} và B xảy ra với {4;5;6}.",
+          "points": 1
+        },
+        {
+          "criterion": "Kết luận đúng khi rút 6 thì cả A và B xảy ra, kèm giải thích theo hai điều kiện.",
+          "points": 1
+        },
+        {
+          "criterion": "Chỉ ra đúng lỗi trong câu của Minh và sửa thành A xảy ra với các kết quả 2, 4, 6.",
+          "points": 1
+        },
+        {
+          "criterion": "Phân biệt đúng một kết quả cụ thể với một sự kiện; không dùng phép tính xác suất.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 5,
+      "common_mistakes": [
+        "Chỉ liệt kê các kết quả thuận lợi cho một sự kiện thay vì liệt kê toàn bộ kết quả có thể của phép thử.",
+        "Viết sự kiện A chỉ là một kết quả duy nhất như 2, bỏ sót 4 và 6.",
+        "Cho rằng một kết quả chỉ có thể làm một sự kiện xảy ra, nên không nhận ra số 6 làm cả A và B xảy ra.",
+        "Tự chuyển bài sang tính xác suất dù đề không yêu cầu và Bài 42 chưa lấy xác suất làm mục tiêu chính.",
+        "Dùng thuật ngữ Grade-7 “biến cố” thay cho ngôn ngữ Grade-6 “sự kiện” trong phần trả lời."
+      ],
+      "remediation_markdown": "- Nếu bỏ sót kết quả: viết toàn bộ kết quả có thể trước rồi mới xét điều kiện của sự kiện.\n- Nếu nhầm kết quả với sự kiện: dùng câu mẫu “Kết quả là …; sự kiện xảy ra khi kết quả thỏa …”.\n- Nếu tự chuyển sang tính xác suất: quay lại mục tiêu Bài 42 và chỉ làm ba việc: liệt kê kết quả có thể, đọc điều kiện sự kiện, xác định kết quả làm sự kiện xảy ra.",
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ23 – Kết quả có thể và sự kiện",
+          "href": "../kien-thuc/23-xac-suat/core/"
+        },
+        {
+          "label": "Practice Room CĐ23",
+          "href": "../kien-thuc/23-xac-suat/bai-tap/"
+        }
+      ],
+      "figure_uri": null,
+      "figure_alt": null,
+      "source_refs": [
+        "docs/assets/data/curriculum/topic23-learning-workspace.json#prob23-core-1",
+        "docs/assets/data/practice/23-xac-suat-micro-v1.json#PRO23MICRO_018",
+        "docs/assets/data/practice/23-xac-suat-micro-v1.json#PRO23MICRO_019",
+        "docs/assets/data/practice/23-xac-suat-micro-v1.json#PRO23MICRO_020",
+        "review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-KNTT-G6-WRITTEN-BAI42-R1-20261007",
+        "receipt": "review-packets/kntt-g6-written-bai42-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      },
+      "kntt_placements": [
+        {
+          "grade": 6,
+          "chapter": 9,
+          "lesson": "Bài 42 — Kết quả có thể và sự kiện trong trò chơi, thí nghiệm"
+        }
+      ]
     }
   ],
   "extension_policy": [
@@ -5189,7 +5279,7 @@
       "CT23",
       "CT24"
     ],
-    "exercise_count": 53,
+    "exercise_count": 54,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -5249,6 +5339,12 @@
         "batch_id": "G6_WRITTEN_WAVE1_R1",
         "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
         "count": 3,
+        "status": "PUBLISHED"
+      },
+      {
+        "batch_id": "G6_WRITTEN_BAI42_R1",
+        "packet_id": "MATH-KNTT-G6-WRITTEN-BAI42-R1-20261007",
+        "count": 1,
         "status": "PUBLISHED"
       }
     ],
