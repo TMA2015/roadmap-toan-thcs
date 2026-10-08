@@ -20,7 +20,7 @@ const p4=json("docs/assets/data/practice/04-bieu-thuc-dai-so-v2-06.json");
 const rec=json("docs/assets/data/curriculum/kntt-grade7-reconciliation-r2.json");
 
 assert.equal(artifact.packet_id,"MATH-KNTT-G7-REPAIR-W1-R1-20261008");
-assert.equal(artifact.status,"ACADEMIC_CONTENT_REVIEW_PENDING");
+assert.equal(artifact.status,"ACADEMIC_CONTENT_REVIEW_PASS");
 assert.deepEqual(artifact.prior_clearance.first_repair_wave,["BAI1_3","BAI5_7","BAI26_28"]);
 assert.deepEqual(artifact.prior_clearance.dimensions,["LEARN","MICRO","PRACTICE"]);
 assert.equal(artifact.prior_clearance.max_groups,3);
@@ -33,7 +33,7 @@ for(const [path,lock] of Object.entries(artifact.source_locks)){
   assert.equal(blob(read(path)),lock.sha,"source drift: "+path);
 }
 
-assert.equal(artifact.notebooklm_source_contract.selected_source_count,5);
+assert.equal(artifact.notebooklm_source_contract.selected_source_count,5);\nassert.equal(artifact.independent_review.verdict,"PASS");\nassert.equal(artifact.independent_review.clearance,"G7_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE");
 assert.equal(artifact.notebooklm_source_contract.permanent_sources.length,2);
 assert.equal(artifact.notebooklm_source_contract.grade7_s1_sources.length,2);
 assert.equal(artifact.notebooklm_source_contract.temporary_batch_sources.length,1);
@@ -62,7 +62,7 @@ assert.deepEqual(cardDiv.skills,["chia-da-thuc-mot-bien"]);
 for(const c of [cardR,cardReal,cardDiv]){
   assert.deepEqual(c.grades,[7]);
   assert.equal(c.layer,"KNTT-Core");
-  assert.equal(c.authoring_review.status,"PENDING");
+  assert.equal(c.authoring_review.status,"PASS");
   assert.equal(c.authoring_review.packet_id,artifact.packet_id);
 }
 
@@ -84,14 +84,14 @@ for(const id of ids2){
   assert.ok(q,id+" missing");
   assert.equal(q.tags.grade,7);
   assert.deepEqual(q.curriculum.grades,[7]);
-  assert.equal(q.authoring_review.status,"PENDING");
+  assert.equal(q.authoring_review.status,"PASS");
 }
 for(const id of ids4){
   const q=m4.questions.find(x=>x.id===id);
   assert.ok(q,id+" missing");
   assert.equal(q.tags.grade,7);
   assert.deepEqual(q.curriculum.grades,[7]);
-  assert.equal(q.authoring_review.status,"PENDING");
+  assert.equal(q.authoring_review.status,"PASS");
 }
 
 const allCandidate=[...m2.questions.filter(x=>ids2.includes(x.id)),...m4.questions.filter(x=>ids4.includes(x.id)),...p2.questions,...p4.questions];
@@ -99,7 +99,7 @@ for(const q of allCandidate){
   assert.ok(Array.isArray(q.options)&&q.options.length===4,q.id+" must have 4 options");
   assert.ok(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4,q.id+" answer index");
   assert.ok(q.explanation&&q.explanation.length>20,q.id+" explanation too thin");
-  assert.equal(q.authoring_review.status,"PENDING");
+  assert.equal(q.authoring_review.status,"PASS");
   assert.equal(q.authoring_review.packet_id,artifact.packet_id);
 }
 assert.equal(new Set(allCandidate.map(x=>x.id)).size,30,"candidate question IDs unique");
@@ -123,4 +123,4 @@ for(const [k,v] of Object.entries(artifact.protected_boundaries)) assert.equal(v
 
 console.log("PASS: Grade-7 Repair Wave 1 has exactly 3 Learn + 12 Micro + 18 Practice candidates.");
 console.log("PASS: all candidate skills are already reviewed canonical Grade-7 skills; no Written/Readiness/new-skill expansion.");
-console.log("PASS: NotebookLM source contract is exactly 5 Sources and content review is still pending.");
+console.log("PASS: NotebookLM content review clearance is recorded and all wave-1 authoring markers are PASS.");
