@@ -1,7 +1,7 @@
 {
-  "version": "1.0.234",
+  "version": "1.0.235",
   "schema": "roadmap-collaboration-task-registry-v1",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "statuses": [
     "OPEN",
     "GEMINI-DRAFT",
@@ -1203,9 +1203,9 @@
       "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
       "routing": "GOVERNANCE+COVERAGE_AUDIT",
       "status": "IN_PROGRESS",
-      "context_version": "1.0.234",
-      "review_verdict": "G6_WRITTEN_WAVE1_R1_CLOSED_NEXT_P1_BAI42",
-      "review_notes": "Grade-6 Written Wave 1 R1 is independently reviewed, merged and deployed. Canonical Written Library is 53 items. Grade-6 Written coverage is 8 VERIFIED lesson rows / 23 NONE / 0 candidate-only, represented by 7 canonical items with KNTT placements because WX13-LIN-003 validly covers both Bài34-35 and Bài36-37. Next reviewed priority after Wave 1 is P1 Bài42 (Outcome/Event language); Bài38-41 reuse-first is already satisfied by WX21-STA-001.",
+      "context_version": "1.0.235",
+      "review_verdict": "G6_WRITTEN_BAI42_R1_CLOSED_P1_COMPLETE_P2_STOP_GO_NEXT",
+      "review_notes": "Grade-6 Written Bài42 R1 is independently reviewed, merged and deployed. WX23-PRO-003 is the eighth canonical Grade-6 Written item with true KNTT placement and verifies the ninth Grade-6 Written lesson row. Current Grade-6 Written coverage: 9 VERIFIED_KNTT_PLACEMENT rows / 22 NONE / 0 candidate-only. P0 Wave1 and both P1 actions are now complete (Bài38-41 reuse via WX21-STA-001; Bài42 authored as WX23-PRO-003). Remaining Written priorities from the independent review are only P2 (Bài30 and Bài23-24), so the next step should be a stop/go governance decision rather than automatic authoring.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
         "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
@@ -1756,6 +1756,44 @@
           "NONE": 23
         },
         "live_grade6_kntt_written_item_count": 7
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-WRITTEN-BAI42-R1-001",
+      "title": "Grade 6 Written Bài 42 deep anchor R1",
+      "routing": "ACADEMIC_REVIEW+CANONICAL_APPEND+DEPLOY",
+      "status": "DONE",
+      "context_version": "1.0.235",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_EXACT_HEAD_CI_PASS_PR355_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "NotebookLM PASS with clearance G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE. Published exactly one reviewed anchor: WX23-PRO-003→Grade 6 Chapter 9 Bài42. Boundaries PASS: Grade-6 terminology 'sự kiện' preserved, no Grade-7 'biến cố'; no probability calculation/Bài43 drift; no new canonical skill. All ARCH_1..ARCH_10 PASS. Exact-head Roadmap PR Quality run 37707127634 SUCCESS on ea9e1fa40183f7a10167bda200673aba1d2902a6 including strict MkDocs and browser QA. PR #355 squash-merged as 8b6ef900da3ea994af3a73f8c17b12548768269f; Deploy MkDocs run 37707744523 SUCCESS; gh-pages 81acf2e78ee8001ca88afdb6ff53b4a41a91b81b deploys that exact release. Live Written Library=54; Grade-6 Written audit=9 VERIFIED rows / 22 NONE / 0 candidate-only; 8 canonical Grade-6 Written items with KNTT placements.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-g6-written-bai42-r1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "review-packets/kntt-g6-written-bai42-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "review-packets/kntt-g6-written-bai42-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "scripts/test-kntt-g6-written-bai42-r1.js",
+        "scripts/test-written-exercise-library-v1.js",
+        "scripts/test-written-exercise-library-browser.py"
+      ],
+      "release": {
+        "pr": 355,
+        "exact_head": "ea9e1fa40183f7a10167bda200673aba1d2902a6",
+        "qa_run": 37707127634,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "8b6ef900da3ea994af3a73f8c17b12548768269f",
+        "deploy_run": 37707744523,
+        "deploy_conclusion": "SUCCESS",
+        "gh_pages_sha": "81acf2e78ee8001ca88afdb6ff53b4a41a91b81b",
+        "clearance": "G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE",
+        "live_written_library_count": 54,
+        "live_grade6_written_counts": {
+          "VERIFIED_KNTT_PLACEMENT_ROWS": 9,
+          "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 0,
+          "NONE": 22
+        },
+        "live_grade6_kntt_written_item_count": 8
       }
     }
   ]
