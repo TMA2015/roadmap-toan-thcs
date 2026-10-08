@@ -12,7 +12,7 @@ const packet=read("review-packets/kntt-g6-written-bai42-r1/00_NOTEBOOKLM_PACKET_
 const library=json("docs/assets/data/written-exercises/written-exercise-library-v1.json");
 
 assert.equal(artifact.packet_id,"MATH-KNTT-G6-WRITTEN-BAI42-R1-20261007");
-assert.equal(artifact.status,"ACADEMIC_REVIEW_PENDING");
+assert.equal(artifact.status,"ACADEMIC_REVIEW_COMPLETE");
 assert.equal(artifact.candidate_count,1);
 assert.deepEqual(artifact.candidate_ids,["WX23-PRO-003"]);
 assert.equal(artifact.prior_priority.priority,"P1");
@@ -34,8 +34,12 @@ for(const k of ["written_library","grade6_dimension_audit","topic23_workspace","
 const prior=read(artifact.source_locks.prior_bai42_review.path);
 assert.ok(prior.includes(artifact.source_locks.prior_bai42_review.clearance),"prior Bài 42 clearance missing");
 
-assert.equal(library.exercises.length,53);
-assert.ok(!library.exercises.some(x=>x.exercise_id==="WX23-PRO-003"),"candidate must not exist in canonical library before review");
+assert.equal(library.exercises.length,54);
+const canonical=library.exercises.find(x=>x.exercise_id==="WX23-PRO-003");
+assert.ok(canonical,"reviewed Bài 42 item missing from canonical library");
+assert.equal(canonical.academic_review.status,"APPROVED");
+assert.equal(canonical.academic_review.receipt,"review-packets/kntt-g6-written-bai42-r1/01_NOTEBOOKLM_RESULT_R1.md");
+assert.deepEqual(canonical.kntt_placements,[{grade:6,chapter:9,lesson:"Bài 42 — Kết quả có thể và sự kiện trong trò chơi, thí nghiệm"}]);
 
 const x=artifact.candidates[0];
 assert.equal(x.exercise_id,"WX23-PRO-003");
@@ -54,7 +58,7 @@ assert.ok(x.full_solution_markdown.includes("Không cần và không được d�
 assert.ok(x.method_rationale_markdown.includes("Bài 43"));
 assert.ok(x.common_mistakes.length>=4);
 assert.ok(x.remediation_links.length>=2);
-assert.equal(x.academic_review.status,"PENDING");
+assert.equal(x.academic_review.status,"PENDING"); // immutable pre-review candidate snapshot
 
 assert.equal(artifact.protected_boundaries.mutate_production_written_library,false);
 assert.equal(artifact.protected_boundaries.create_canonical_skill,false);
@@ -71,7 +75,33 @@ assert.ok(packet.includes("BOUNDARY|G6_SU_KIEN_NOT_G7_BIEN_CO"));
 assert.ok(packet.includes("BOUNDARY|BAI42_NOT_BAI43_PROBABILITY"));
 assert.ok(packet.includes("BOUNDARY|NO_NEW_CANONICAL_SKILL"));
 assert.ok(packet.includes("CLEARANCE|G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE"));
+assert.equal(artifact.review_result.verdict,"PASS");
+assert.equal(artifact.review_result.clearance,"G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE");
+assert.equal(artifact.review_result.reviewed_items,1);
+assert.equal(artifact.implementation.canonical_item_count,54);
+assert.equal(artifact.implementation.grade6_items_with_kntt_placement,8);
+assert.equal(artifact.implementation.grade6_verified_written_rows,9);
+assert.equal(artifact.implementation.new_canonical_skills,0);
+assert.equal(artifact.implementation.readiness_credit,false);
+const audit=json("docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json");
+assert.equal(audit.status,"G6_WRITTEN_BAI42_RECONCILED_R1");
+assert.equal(audit.summary.written_library_kntt_item_count,8);
+assert.equal(audit.summary.written_library_kntt_placement_row_count,9);
+assert.deepEqual(audit.summary.dimension_status_counts.WRITTEN_LIBRARY,{
+  VERIFIED_KNTT_PLACEMENT:9,
+  CANDIDATE_ONLY_NO_KNTT_PLACEMENT:0,
+  NONE:22
+});
+const row42=audit.rows.find(r=>r.lesson_ref==="Bài 42");
+assert.equal(row42.dimensions.WRITTEN_LIBRARY.status,"VERIFIED_KNTT_PLACEMENT");
+assert.equal(row42.dimensions.WRITTEN_LIBRARY.placements[0].exercise_id,"WX23-PRO-003");
+const receipt=read("review-packets/kntt-g6-written-bai42-r1/01_NOTEBOOKLM_RESULT_R1.md");
+assert.ok(receipt.includes("OVERALL|PASS"));
+assert.ok(receipt.includes("BOUNDARY|G6_SU_KIEN_NOT_G7_BIEN_CO|PASS"));
+assert.ok(receipt.includes("BOUNDARY|BAI42_NOT_BAI43_PROBABILITY|PASS"));
+assert.ok(receipt.includes("BOUNDARY|NO_NEW_CANONICAL_SKILL|PASS"));
+assert.ok(receipt.includes("CLEARANCE|G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE"));
 
-console.log("PASS: Grade-6 Bài 42 Written R1 contains exactly one review-pending deep anchor and does not mutate the canonical library.");
+console.log("PASS: Grade-6 Bài 42 Written R1 publishes exactly one independently reviewed deep anchor.");
 console.log("PASS: Grade-6 'sự kiện' terminology, Bài42/Bài43 boundary, and no-new-skill boundary are locked.");
 console.log("PASS: NotebookLM source invariant is exactly 5 Sources (2 permanent + 2 SGK + 1 packet).");
