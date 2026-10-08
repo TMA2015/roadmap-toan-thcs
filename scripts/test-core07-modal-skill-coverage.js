@@ -11,12 +11,12 @@ const js=read("docs/assets/javascripts/topic-workspace-v1.js");
 const css=read("docs/assets/stylesheets/topic-workspace.css");
 const lesson=read("docs/kien-thuc/07-phan-thuc-dai-so/core/index.md");
 const byId=new Map(bank.questions.map(q=>[q.id,q]));
-ok(workspace.cards.length===5&&bank.questions.length===17&&byId.size===17,"five cards; fifteen original plus two new items");
+ok(workspace.cards.length===5&&bank.questions.length===18&&byId.size===18,"five cards; fifteen original plus two historical coverage items and one Grade-8 density item");
 const original=JSON.parse(read("content-staging/reviews/MATH-CORE07-TEACH-R1-20260929.json")).review_basis.existing_micro_questions;
 ok(original.length===15&&bank.questions.slice(0,15).every((q,i)=>JSON.stringify(q)===JSON.stringify(original[i])),
    "the reviewed original 15 items must be byte-equivalent as JSON records");
-ok(JSON.stringify(bank.questions.slice(15).map(q=>q.id))===JSON.stringify(["RAT07MICRO_016","RAT07MICRO_017"]),
-   "only the two expected new IDs can be added");
+ok(JSON.stringify(bank.questions.slice(15).map(q=>q.id))===JSON.stringify(["RAT07MICRO_016","RAT07MICRO_017","RAT07MICRO_018"]),
+   "only the two historical coverage IDs plus the bounded density ID can be appended");
 const primary=q=>q.assessed_skill||q.primary_skill||(Array.isArray(q.tags?.skill)?q.tags.skill[0]:q.tags?.skill);
 let total=0;
 const coverage=[];
@@ -34,11 +34,11 @@ for(const card of workspace.cards){
  coverage.push({card:card.id,declared:card.skills.length,covered:covered.length,missing});
  total+=questions.length;
 }
-ok(total===17,"five-card question links must total seventeen");
+ok(total===18,"five-card question links must total eighteen");
 ok(coverage[0].covered===4&&coverage[0].declared===4&&coverage[0].missing.length===0,"Core 1 four skills have dedicated questions");
-ok(coverage[1].covered===3&&coverage[1].declared===3&&coverage[1].missing.length===0,"Core 2 three skills have dedicated questions");
+ok(coverage[1].covered===4&&coverage[1].declared===4&&coverage[1].missing.length===0,"Core 2 four skills have dedicated questions");
 ok(coverage.slice(2).every(c=>c.covered===c.declared),"Core 3-5 coverage");
-ok(coverage.reduce((n,c)=>n+c.declared,0)===11&&coverage.reduce((n,c)=>n+c.covered,0)===11,"11 of 11 declared skills have at least one dedicated formative item");
+ok(coverage.reduce((n,c)=>n+c.declared,0)===12&&coverage.reduce((n,c)=>n+c.covered,0)===12,"12 of 12 declared skills have at least one dedicated formative item");
 for(const required of ["coverageFor=(card,questions)","primarySkill=q=>","topic-core-teach-start","topic-core-practice-start","topic-core-modal-modes","topic-micro-assessed-skill","body.replaceChildren(tabs,sessions.get(card.id))","const sessions=new Map()","recordAnswer?.("])
  ok(js.includes(required),"UI invariant: "+required);
 ok(!js.includes("topic-core-teaching-item"),"no separate inline teaching accordion");

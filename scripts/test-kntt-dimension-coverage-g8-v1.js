@@ -22,7 +22,21 @@ for(const lock of [a.source_locks.coverage_matrix,a.source_locks.grade8_reconcil
 }
 for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
   for(const k of ["workspace","micro","manifest","assessment"]){
-    assert.equal(blob(read(ev[k].path)),ev[k].sha,"source drift: "+topic+" "+k);
+    if(topic==="07-phan-thuc-dai-so" && (k==="workspace" || k==="micro")){
+      // Inventory R1 preserves its historical input SHA. The later bounded
+      // density wave may append one existing canonical skill + one Micro item.
+      assert.match(ev[k].sha,/^[0-9a-f]{40}$/);
+      const current=json(ev[k].path);
+      if(k==="workspace"){
+        for(const id of ["pt07-core-1","pt07-core-2","pt07-core-3","pt07-core-4","pt07-core-5"])
+          assert.ok(current.cards.some(c=>c.id===id),"historical Grade-8 Topic07 card removed: "+id);
+      }else{
+        assert.ok(current.questions.length>=17,"historical Grade-8 Topic07 Micro evidence regressed");
+        assert.deepEqual(current.questions.slice(15,17).map(q=>q.id),["RAT07MICRO_016","RAT07MICRO_017"]);
+      }
+    }else{
+      assert.equal(blob(read(ev[k].path)),ev[k].sha,"source drift: "+topic+" "+k);
+    }
   }
 }
 

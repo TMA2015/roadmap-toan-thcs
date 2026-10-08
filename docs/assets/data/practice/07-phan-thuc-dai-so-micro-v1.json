@@ -6,7 +6,7 @@
     "id": "07-phan-thuc-dai-so",
     "title": "Phân thức đại số"
   },
-  "question_count": 17,
+  "question_count": 18,
   "questions": [
     {
       "id": "RAT07MICRO_001",
@@ -827,6 +827,74 @@
       "authoring_review": {
         "method": "bounded-self-audit",
         "record": "content-staging/reviews/MATH-CORE07-MICRO-PLUS2-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "RAT07MICRO_018",
+      "card_id": "pt07-core-2",
+      "micro_role": "coverage",
+      "question": "Cho \\(P=\\frac{x^2-4}{x-2}\\). Sau khi rút gọn, kết luận nào đúng?",
+      "options": [
+        "\\(P=x+2\\), với \\(x\\ne2\\)",
+        "\\(P=x+2\\), với mọi \\(x\\)",
+        "\\(P=x-2\\), với \\(x\\ne2\\)",
+        "\\(P=x+2\\), với \\(x\\ne-2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "giu-dieu-kien-ban-dau"
+        ],
+        "type": "giu-dieu-kien-sau-rut-gon",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "difficulty": "intermediate",
+      "explanation": "Biểu thức ban đầu có mẫu \\(x-2\\), nên phải có \\(x\\ne2\\). Với điều kiện đó, \\(x^2-4=(x-2)(x+2)\\) và \\(P=x+2\\). Sau khi rút gọn vẫn phải giữ điều kiện \\(x\\ne2\\) của biểu thức ban đầu.",
+      "hints": [
+        "Tìm điều kiện xác định từ mẫu của biểu thức ban đầu trước khi rút gọn.",
+        "Phân tích \\(x^2-4=(x-2)(x+2)\\), rồi nhớ rằng việc triệt tiêu không làm giá trị \\(x=2\\) trở lại miền xác định."
+      ],
+      "option_evidence": {
+        "1": {
+          "signal": "quen-dieu-kien-ban-dau",
+          "signal_weight": 2,
+          "feedback_hint": "Rút gọn không làm mất điều kiện xác định của biểu thức ban đầu."
+        },
+        "2": {
+          "signal": "rut-gon-sai-hieu-hai-binh-phuong",
+          "signal_weight": 2,
+          "feedback_hint": "Hãy phân tích tử bằng hằng đẳng thức hiệu hai bình phương trước khi rút gọn."
+        },
+        "3": {
+          "signal": "nham-nghiem-loai",
+          "signal_weight": 2,
+          "feedback_hint": "Giá trị bị loại đến từ mẫu x-2, nên cần kiểm tra x=2 chứ không phải x=-2."
+        }
+      },
+      "supporting_skills": [
+        "rut-gon-phan-thuc",
+        "dieu-kien-xac-dinh",
+        "hieu-hai-binh-phuong"
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "lesson": "Bài 22"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "owner-principle-bounded-self-audit",
+        "status": "PASS",
+        "record": "docs/assets/data/curriculum/kntt-g8-density-wave1-r1.json",
+        "scope": "G8_BAI21_24_MICRO_ONLY_GIU_DIEU_KIEN_BAN_DAU"
       }
     }
   ]

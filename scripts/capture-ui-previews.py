@@ -210,9 +210,9 @@ with sync_playwright() as p:
                 check(first_card.get_attribute("data-covered-skills") == "4"
                       and first_card.get_attribute("data-total-skills") == "4",
                       "Core1 displays 4/4 actual dedicated-skill coverage")
-                check(second_card.get_attribute("data-covered-skills") == "3"
-                      and second_card.get_attribute("data-total-skills") == "3",
-                      "Core2 displays 3/3 actual dedicated-skill coverage")
+                check(second_card.get_attribute("data-covered-skills") == "4"
+                      and second_card.get_attribute("data-total-skills") == "4",
+                      "Core2 displays 4/4 actual dedicated-skill coverage")
                 check(first_card.locator(".topic-core-card-gap").count() == 0
                       and second_card.locator(".topic-core-card-gap").count() == 0,
                       "no missing-skill warnings after dedicated items are supplied")
@@ -273,8 +273,8 @@ with sync_playwright() as p:
                       "supporting domain tag is not falsely counted as a second assessed skill")
                 lecture.locator(".topic-core-dialog__close").click()
                 second_card.locator(".topic-core-practice-start").click()
-                check(lecture.locator(".topic-micro-pager button").count() == 4,
-                      "second card also has one additional formative question")
+                check(lecture.locator(".topic-micro-pager button").count() == 5,
+                      "second card preserves original three plus two coverage questions")
                 lecture.locator(".topic-micro-pager button").nth(3).click()
                 check(lecture.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill")
                       == "phan-tich-tu-mau", "second new question assesses numerator and denominator factorization")
@@ -291,6 +291,24 @@ with sync_playwright() as p:
                       and after_factoring.get("tags",{}).get("rut-gon-phan-thuc",{}).get("attempted",0)
                       == before_factoring.get("tags",{}).get("rut-gon-phan-thuc",{}).get("attempted",0),
                       "factoring only increments its own assessed skill")
+                lecture.locator(".topic-micro-pager button").nth(4).click()
+                check(lecture.locator(".topic-micro-meta").inner_text().startswith("Câu 5/5")
+                      and "Bổ sung kỹ năng" in lecture.locator(".topic-micro-meta").inner_text(),
+                      "fifth question is the bounded Grade-8 density coverage item")
+                check(lecture.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill")
+                      == "giu-dieu-kien-ban-dau", "fifth question assesses preservation of original domain")
+                before_domain=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+                shot(core_page, "topic07-domain-preservation-q5-desktop.png")
+                lecture.locator(".topic-micro-option").first.click()
+                after_domain=core_page.evaluate("""() => JSON.parse(localStorage.getItem('toan-thcs-practice-v1') || '{}')""")
+                check(after_domain.get("questions",{}).get("RAT07MICRO_018",{}).get("attempted",0)
+                      == before_domain.get("questions",{}).get("RAT07MICRO_018",{}).get("attempted",0)+1,
+                      "domain-preservation question records one stable-ID attempt")
+                check(after_domain.get("tags",{}).get("giu-dieu-kien-ban-dau",{}).get("attempted",0)
+                      == before_domain.get("tags",{}).get("giu-dieu-kien-ban-dau",{}).get("attempted",0)+1
+                      and after_domain.get("tags",{}).get("rut-gon-phan-thuc",{}).get("attempted",0)
+                      == before_domain.get("tags",{}).get("rut-gon-phan-thuc",{}).get("attempted",0),
+                      "domain preservation increments only its own assessed skill")
                 lecture.locator(".topic-core-dialog__close").click()
             else:
                 first_card = core_page.locator(".topic-core-card").first
@@ -800,6 +818,21 @@ $$
     check(not pilot_dialog.is_visible(), "phone Core modal closes")
     check(completed_core.locator('.topic-core-card[data-card-id="pt07-core-1"]').get_attribute("data-covered-skills") == "4",
           "phone retains truthful 4/4 coverage")
+    second_phone_card=completed_core.locator('.topic-core-card[data-card-id="pt07-core-2"]')
+    check(second_phone_card.get_attribute("data-covered-skills")=="4"
+          and second_phone_card.get_attribute("data-total-skills")=="4",
+          "phone retains truthful Core2 4/4 coverage")
+    second_phone_card.locator(".topic-core-practice-start").click()
+    pilot_dialog=first_phone.locator(".topic-core-dialog")
+    check(pilot_dialog.locator(".topic-micro-pager button").count()==5,
+          "phone exposes all five Core2 Micro questions")
+    pilot_dialog.locator(".topic-micro-pager button").nth(4).click()
+    check(pilot_dialog.locator(".topic-micro-assessed-skill").get_attribute("data-primary-skill")
+          == "giu-dieu-kien-ban-dau", "phone density item shows the correct assessed skill")
+    check(pilot_dialog.locator(".topic-core-dialog__body").evaluate(
+          "(el)=>el.scrollWidth<=el.clientWidth+2"), "domain-preservation math fits phone")
+    shot(first_phone,"topic07-domain-preservation-q5-phone.png")
+    pilot_dialog.locator(".topic-core-dialog__close").click()
     # Cover each new subject, plus all four Q4 items, in a real touch viewport.
     new_core_phone=[
         ("08-phuong-trinh-bat-phuong-trinh","eq08-core-2","khu-mau-phuong-trinh"),
