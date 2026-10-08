@@ -11,11 +11,10 @@ const a=json("docs/assets/data/curriculum/kntt-dimension-coverage-g7-v1.json");
 assert.equal(a.schema,"kntt-dimension-coverage-audit-v1");
 assert.equal(a.version,1);
 assert.equal(a.grade,7);
-assert.equal(a.status,"G7_EVIDENCE_AUDIT_BASELINE_PENDING");
+assert.equal(a.status,"G7_EXISTING_EVIDENCE_INVENTORY_R1");
 assert.equal(a.rows.length,21);
 assert.equal(a.summary.row_count,21);
-assert.equal(a.summary.semantic_baseline_rows,21);
-assert.equal(a.summary.evidence_audit_pending_rows,21);
+assert.equal(a.summary.semantic_verified_rows,21);
 assert.equal(a.summary.content_mutations,0);
 assert.equal(a.summary.new_canonical_skills,0);
 
@@ -23,6 +22,13 @@ for(const k of ["coverage_matrix","grade7_reconciliation","grade7_reconciliation
   const lock=a.source_locks[k];
   assert.equal(blob(read(lock.path)),lock.blob_sha,"source drift: "+lock.path);
 }
+for(const ev of Object.values(a.source_locks.topic_evidence)){
+  for(const k of ["workspace","micro","manifest"]){
+    assert.equal(blob(read(ev[k].path)),ev[k].sha,"source drift: "+ev[k].path);
+  }
+  if(ev.assessment) assert.equal(blob(read(ev.assessment.path)),ev.assessment.sha,"source drift: "+ev.assessment.path);
+}
+
 const review=read(a.source_locks.grade7_reconciliation_review.path);
 assert.ok(review.includes("G7_R2_RECONCILIATION_REVIEW_COMPLETE"));
 assert.equal(a.semantic_reconciliation.status,"RECONCILED_REVIEWED_R2");
@@ -34,16 +40,53 @@ const g7=matrix.grades.find(g=>g.grade===7);
 assert.equal(g7.rows.length,21);
 assert.deepEqual(a.rows.map(r=>[r.chapter,r.lesson_ref]),g7.rows.map(r=>[r.chapter,r.lesson_ref]));
 
+const counts=a.summary.dimension_status_counts;
+assert.deepEqual(counts.SKILL_MAP,{VERIFIED_SEMANTIC:21});
+assert.deepEqual(counts.LEARN_CONTENT,{
+  PARTIAL_SHARED_SKILL:4,
+  PARTIAL_LESSON_LOCAL:1,
+  VERIFIED_DIRECT:14,
+  PARTIAL_FAMILY_EVIDENCE:2
+});
+assert.deepEqual(counts.MICRO_PRACTICE,{NONE_G7_EXPLICIT:3,PARTIAL_DIRECT:4,VERIFIED_DIRECT:14});
+assert.deepEqual(counts.PRACTICE_BANK,{PARTIAL_TOPIC_EVIDENCE:4,TOPIC_SKILL_EVIDENCE:15,PARTIAL_FAMILY_EVIDENCE:2});
+assert.deepEqual(counts.WRITTEN_LIBRARY,{NONE:21});
+assert.deepEqual(counts.READINESS,{NOT_VERIFIED_STRUCTURED:15,PARTIAL_G7_STRUCTURED:4,NONE:2});
+assert.equal(a.summary.written_grade7_kntt_item_count,0);
+
+assert.deepEqual(a.summary.priority_gap_candidates.P0,["Bài 1-3","Bài 5-7","Bài 26-28"]);
+assert.deepEqual(a.summary.priority_gap_candidates.P1,["Bài 4","Bài 18-19","Bài 22-23"]);
+assert.deepEqual(a.summary.priority_gap_candidates.P2,["Bài 8","Bài 24-25"]);
+
+const byLesson=Object.fromEntries(a.rows.map(r=>[r.lesson_ref,r]));
 for(const r of a.rows){
-  assert.equal(r.dimensions.SKILL_MAP.status,"BASELINE_FROM_RECONCILED_MATRIX");
-  for(const d of ["LEARN_CONTENT","MICRO_PRACTICE","PRACTICE_BANK","WRITTEN_LIBRARY","READINESS"]){
-    assert.equal(r.dimensions[d].status,"AUDIT_PENDING",r.lesson_ref+" "+d);
-  }
+  assert.equal(r.dimensions.SKILL_MAP.status,"VERIFIED_SEMANTIC");
+  assert.equal(r.dimensions.WRITTEN_LIBRARY.status,"NONE");
   assert.equal(r.semantic_targets.semantic_reconciliation_closed,true);
 }
 
+assert.ok(byLesson["Bài 1-3"].dimensions.LEARN_CONTENT.direct_missing.includes("phep-tinh-so-huu-ti"));
+assert.equal(byLesson["Bài 1-3"].dimensions.MICRO_PRACTICE.status,"NONE_G7_EXPLICIT");
+assert.ok(byLesson["Bài 5-7"].semantic_targets.direct_skills.includes("can-bac-hai-so-hoc"));
+assert.ok(byLesson["Bài 5-7"].dimensions.LEARN_CONTENT.direct_missing.includes("so-vo-ti"));
+assert.ok(byLesson["Bài 26-28"].dimensions.LEARN_CONTENT.direct_missing.includes("chia-da-thuc-mot-bien"));
+assert.ok(byLesson["Bài 26-28"].dimensions.MICRO_PRACTICE.direct_missing.includes("chia-da-thuc-mot-bien"));
+assert.ok(byLesson["Bài 26-28"].dimensions.PRACTICE_BANK.direct_missing.includes("chia-da-thuc-mot-bien"));
+
+assert.equal(byLesson["Bài 8"].dimensions.LEARN_CONTENT.status,"VERIFIED_DIRECT");
+assert.deepEqual(byLesson["Bài 8"].dimensions.MICRO_PRACTICE.direct_missing,["goc-phu-bu"]);
+assert.equal(byLesson["Bài 18-19"].dimensions.LEARN_CONTENT.status,"PARTIAL_FAMILY_EVIDENCE");
+assert.ok(byLesson["Bài 18-19"].dimensions.MICRO_PRACTICE.direct_missing.includes("chuyen-bang-bieu-do"));
+assert.ok(byLesson["Bài 22-23"].dimensions.LEARN_CONTENT.direct_missing.includes("mo-hinh-ti-le"));
+assert.ok(byLesson["Bài 24-25"].semantic_targets.canonical_families.includes("ALG-STRUCTURE"));
+
+assert.equal(byLesson["Bài 17"].dimensions.READINESS.status,"PARTIAL_G7_STRUCTURED");
+assert.ok(byLesson["Bài 17"].dimensions.READINESS.item_ids.includes("STA21READY_002"));
+assert.equal(byLesson["Bài 29"].dimensions.READINESS.status,"PARTIAL_G7_STRUCTURED");
+assert.ok(byLesson["Bài 30"].dimensions.READINESS.item_ids.includes("PRO23READY_007"));
+
 for(const [k,v] of Object.entries(a.protected_boundaries)) assert.equal(v,false,"protected boundary changed: "+k);
 
-console.log("PASS: Grade-7 dimension audit baseline contains exactly 21 semantically reconciled KNTT rows.");
-console.log("PASS: all five learner-evidence dimensions remain audit-pending; no content mutation or taxonomy expansion is implied.");
-console.log("PASS: Grade-7 R2 reconciliation clearance is source-locked.");
+console.log("PASS: Grade-7 evidence inventory classifies all 21 reconciled KNTT rows without mutating learner content.");
+console.log("PASS: P0/P1/P2 candidates are evidence-priority labels only; Written remains 21 NONE with zero Grade-7 true placements.");
+console.log("PASS: Grade-7 R2 semantic clearance and all topic evidence sources are locked.");

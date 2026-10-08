@@ -138,20 +138,4 @@ console.log("PASS: Grade-7 R2 semantically reconciles all 11 historical refs aft
 console.log("PASS: 6 skill + 4 family + 1 lesson-local; exactly 3 reviewed canonical skills added.");
 console.log("PASS: runtime, learner history, Mastery and Readiness remain unchanged.");
 
-const g7Audit = json("docs/assets/data/curriculum/kntt-dimension-coverage-g7-v1.json");
-assert.equal(g7Audit.grade, 7);
-assert.equal(g7Audit.status, "G7_EVIDENCE_AUDIT_BASELINE_PENDING");
-assert.equal(g7Audit.rows.length, 21);
-assert.equal(g7Audit.summary.row_count, 21);
-assert.equal(g7Audit.summary.evidence_audit_pending_rows, 21);
-assert.deepEqual(g7Audit.rows.map(row => [row.chapter, row.lesson_ref]), grade7.rows.map(row => [row.chapter, row.lesson_ref]));
-for (const row of g7Audit.rows) {
-  assert.equal(row.dimensions.SKILL_MAP.status, "BASELINE_FROM_RECONCILED_MATRIX");
-  for (const d of ["LEARN_CONTENT","MICRO_PRACTICE","PRACTICE_BANK","WRITTEN_LIBRARY","READINESS"]) {
-    assert.equal(row.dimensions[d].status, "AUDIT_PENDING", row.lesson_ref + " " + d);
-  }
-}
-for (const [key,value] of Object.entries(g7Audit.protected_boundaries)) {
-  assert.equal(value, false, "Grade-7 audit protected boundary changed: " + key);
-}
-console.log("PASS: Grade-7 dimension-audit baseline loads all 21 reconciled rows with evidence dimensions pending and no content mutation.");
+require("./test-kntt-dimension-coverage-g7-v1.js");

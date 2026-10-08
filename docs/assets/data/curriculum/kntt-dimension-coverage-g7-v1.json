@@ -3,7 +3,7 @@
   "version": 1,
   "as_of": "2026-10-08",
   "grade": 7,
-  "status": "G7_EVIDENCE_AUDIT_BASELINE_PENDING",
+  "status": "G7_EXISTING_EVIDENCE_INVENTORY_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Scale the six-dimension evidence audit to the 21 semantically reconciled Grade-7 KNTT rows without treating skill identity or roadmap placement as proof of learner evidence.",
   "source_locks": {
@@ -27,6 +27,166 @@
     "written_library": {
       "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
       "blob_sha": "e5b7013e1f71df810a20d39d0f1fef36c2dc48f3"
+    },
+    "topic_evidence": {
+      "02-so-va-phep-tinh": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic02-learning-workspace.json",
+          "sha": "956087701533dd50c61f653f61e969392216e57f"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+          "sha": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+          "sha": "4609bcd1c34a338cbd456eb4f3219ba7f89f943f"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/02-so-va-phep-tinh-core-v1.json",
+          "sha": "ff4ca6e8ae97abf07bf99d8e6863aeb929e7ff79"
+        }
+      },
+      "03-ti-le-ti-le-thuc": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic03-learning-workspace.json",
+          "sha": "f2864fb45bda98422a4b31f5859452c18744159d"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/03-ti-le-ti-le-thuc-micro-v1.json",
+          "sha": "bd817c0ec44ff2c376c542e3d8604c01fb2e282f"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/03-ti-le-ti-le-thuc-v1.manifest.json",
+          "sha": "4645eb69493281702a19a36453f999d1114736f3"
+        }
+      },
+      "04-bieu-thuc-dai-so": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic04-learning-workspace.json",
+          "sha": "2c9646ef6ca81ec00c2ec89bdb81523bc142cd7e"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/04-bieu-thuc-dai-so-micro-v1.json",
+          "sha": "356e048b57389c828fa06ddbf0eb80fc8fc47226"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/04-bieu-thuc-dai-so-v2.manifest.json",
+          "sha": "bd0ebbfa60402d321d06f7ca6195e56d67f589bb"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/04-bieu-thuc-dai-so-core-v1.json",
+          "sha": "0debcc6933b08a108693dce06ff9829d446bd6d4"
+        }
+      },
+      "13-goc-va-duong-thang": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic13-learning-workspace.json",
+          "sha": "d5aa55f158cbff42eae388e76f485d072878095a"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/13-goc-va-duong-thang-micro-v1.json",
+          "sha": "32afda07968b3fbaed0a6d206db821abb718b95a"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/13-goc-va-duong-thang-v1.manifest.json",
+          "sha": "4b6a44701d6fe413e333349a799aaa7911390b70"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/13-goc-va-duong-thang-core-v1.json",
+          "sha": "a10bc0c3ebf2a7b8722be0f79238e09f2275b6ab"
+        }
+      },
+      "14-tam-giac": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic14-learning-workspace.json",
+          "sha": "5dc355d9c014a1dc2c05a315a6a5b190818e46bc"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/14-tam-giac-micro-v1.json",
+          "sha": "08a1e69399443340dddc033c2eadc286c716daa9"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/14-tam-giac-v1.manifest.json",
+          "sha": "ee2c1dae38314e8dd220a20a106ba227f26aa9c2"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/14-tam-giac-core-v1.json",
+          "sha": "69bd67e6d3d927476116bd1add04c2c1c3d941ed"
+        }
+      },
+      "15-duong-dong-quy": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic15-learning-workspace.json",
+          "sha": "8d434c8fc3ee3b021f97c3e2fb4b88ca9365a3ba"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/15-duong-dong-quy-micro-v1.json",
+          "sha": "9e36e342ede18aa3317bb3d7e00f365fd1217b87"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/15-duong-dong-quy-v1.manifest.json",
+          "sha": "37fc0edeed7de731a34fc0ccacccfc735d29f985"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/15-duong-dong-quy-core-v1.json",
+          "sha": "bac564747f73247e9dd7d6654bdfcaa722554afa"
+        }
+      },
+      "20-hinh-hoc-tong-hop": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic20-learning-workspace.json",
+          "sha": "774997cd9ac4d2efc1c53c17c0de48e6fcdba497"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json",
+          "sha": "efaa4bff821023700381edee0168b294c2d3ea05"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/20-hinh-hoc-tong-hop-v1.manifest.json",
+          "sha": "7fc4157bd2e56fa243b428ef0949583c589a3eb9"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/20-hinh-hoc-tong-hop-core-v1.json",
+          "sha": "d9fffb1ab50a78b6d85289523073a21a77bba0af"
+        }
+      },
+      "21-thong-ke": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic21-learning-workspace.json",
+          "sha": "2e1a0dc26890ae06e4046d633637e5409af2cc3b"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/21-thong-ke-micro-v1.json",
+          "sha": "7ca07feda16ea97bb25eb85f62030e0cee4d286f"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/21-thong-ke-v1.manifest.json",
+          "sha": "3d88c1ce48ac1129648980de3f0544e6024251b9"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/21-thong-ke-core-v1.json",
+          "sha": "e20c5d8bddb10c16db26cdfd48e6915044df4b00"
+        }
+      },
+      "23-xac-suat": {
+        "workspace": {
+          "path": "docs/assets/data/curriculum/topic23-learning-workspace.json",
+          "sha": "443169587e0ba663bc694122ee4a37e456793c70"
+        },
+        "micro": {
+          "path": "docs/assets/data/practice/23-xac-suat-micro-v1.json",
+          "sha": "10f6dfcc41040da16b351a8c607c10fe82e6e4b3"
+        },
+        "manifest": {
+          "path": "docs/assets/data/practice/23-xac-suat-v1.manifest.json",
+          "sha": "7b936f2e5a01ce0937fc2cfd6ae391d4cbf741fb"
+        },
+        "assessment": {
+          "path": "docs/assets/data/assessment/23-xac-suat-core-v1.json",
+          "sha": "6ecf6eb6545fbb8e01465ccac76db0d5c60b7485"
+        }
+      }
     }
   },
   "semantic_reconciliation": {
@@ -50,11 +210,71 @@
   },
   "summary": {
     "row_count": 21,
-    "semantic_baseline_rows": 21,
-    "evidence_audit_pending_rows": 21,
+    "semantic_verified_rows": 21,
+    "dimension_status_counts": {
+      "SKILL_MAP": {
+        "VERIFIED_SEMANTIC": 21
+      },
+      "LEARN_CONTENT": {
+        "PARTIAL_SHARED_SKILL": 4,
+        "PARTIAL_LESSON_LOCAL": 1,
+        "VERIFIED_DIRECT": 14,
+        "PARTIAL_FAMILY_EVIDENCE": 2
+      },
+      "MICRO_PRACTICE": {
+        "NONE_G7_EXPLICIT": 3,
+        "PARTIAL_DIRECT": 4,
+        "VERIFIED_DIRECT": 14
+      },
+      "PRACTICE_BANK": {
+        "PARTIAL_TOPIC_EVIDENCE": 4,
+        "TOPIC_SKILL_EVIDENCE": 15,
+        "PARTIAL_FAMILY_EVIDENCE": 2
+      },
+      "WRITTEN_LIBRARY": {
+        "NONE": 21
+      },
+      "READINESS": {
+        "NOT_VERIFIED_STRUCTURED": 15,
+        "PARTIAL_G7_STRUCTURED": 4,
+        "NONE": 2
+      }
+    },
+    "written_grade7_kntt_item_count": 0,
+    "priority_gap_candidates": {
+      "P0": [
+        "Bài 1-3",
+        "Bài 5-7",
+        "Bài 26-28"
+      ],
+      "P1": [
+        "Bài 4",
+        "Bài 18-19",
+        "Bài 22-23"
+      ],
+      "P2": [
+        "Bài 8",
+        "Bài 24-25"
+      ]
+    },
+    "no_repair_priority_rows": [
+      "Bài 9-10",
+      "Bài 11",
+      "Bài 12",
+      "Bài 13-15",
+      "Bài 16",
+      "Bài 17",
+      "Bài 20-21",
+      "Bài 29",
+      "Bài 30",
+      "Bài 31-33",
+      "Bài 34-35",
+      "Bài 36",
+      "Bài 37"
+    ],
     "content_mutations": 0,
     "new_canonical_skills": 0,
-    "note": "Baseline only. Next phase will classify existing evidence before any repair/authoring decision."
+    "note": "Existing-evidence inventory only. Priority labels identify audit candidates, not authoring authorization."
   },
   "protected_boundaries": {
     "mutate_learning_content": false,
@@ -64,7 +284,8 @@
     "mutate_readiness": false,
     "create_canonical_skill": false,
     "learner_history_regrade": false,
-    "runtime_taxonomy_change": false
+    "runtime_taxonomy_change": false,
+    "mastery_change": false
   },
   "rows": [
     {
@@ -91,25 +312,71 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "so-huu-ti-thap-phan",
+            "luy-thua",
+            "phep-tinh-so-huu-ti"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_SHARED_SKILL",
+          "primary_topic": "02-so-va-phep-tinh",
+          "direct_hits": [
+            "so-huu-ti-thap-phan",
+            "luy-thua"
+          ],
+          "direct_missing": [
+            "phep-tinh-so-huu-ti"
+          ],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE_G7_EXPLICIT",
+          "primary_topic": "02-so-va-phep-tinh",
+          "direct_hits": [],
+          "direct_missing": [
+            "so-huu-ti-thap-phan",
+            "luy-thua",
+            "phep-tinh-so-huu-ti"
+          ]
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_TOPIC_EVIDENCE",
+          "primary_topic": "02-so-va-phep-tinh",
+          "direct_hits": [
+            "so-huu-ti-thap-phan",
+            "luy-thua"
+          ],
+          "direct_missing": [
+            "phep-tinh-so-huu-ti"
+          ],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "02-so-va-phep-tinh",
+          "direct_hits": [],
+          "direct_missing": [
+            "so-huu-ti-thap-phan",
+            "luy-thua",
+            "phep-tinh-so-huu-ti"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "P0"
     },
     {
       "chapter": 1,
@@ -145,25 +412,63 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "thu-tu-phep-tinh"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [
+            "quy-tac-chuyen-ve"
+          ],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_LESSON_LOCAL",
+          "primary_topic": "02-so-va-phep-tinh",
+          "direct_hits": [
+            "thu-tu-phep-tinh"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": [
+            "quy-tac-chuyen-ve"
+          ]
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE_G7_EXPLICIT",
+          "primary_topic": "02-so-va-phep-tinh",
+          "direct_hits": [],
+          "direct_missing": [
+            "thu-tu-phep-tinh"
+          ]
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_TOPIC_EVIDENCE",
+          "primary_topic": "02-so-va-phep-tinh",
+          "direct_hits": [
+            "thu-tu-phep-tinh"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "02-so-va-phep-tinh",
+          "direct_hits": [],
+          "direct_missing": [
+            "thu-tu-phep-tinh"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "P1"
     },
     {
       "chapter": 2,
@@ -183,7 +488,8 @@
       "semantic_targets": {
         "direct_skills": [
           "so-huu-ti-thap-phan",
-          "so-vo-ti"
+          "so-vo-ti",
+          "can-bac-hai-so-hoc"
         ],
         "canonical_families": [
           "NUM-SETS"
@@ -198,25 +504,77 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "so-huu-ti-thap-phan",
+            "so-vo-ti",
+            "can-bac-hai-so-hoc"
+          ],
+          "canonical_families": [
+            "NUM-SETS"
+          ],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_SHARED_SKILL",
+          "primary_topic": "02-so-va-phep-tinh",
+          "direct_hits": [
+            "so-huu-ti-thap-phan"
+          ],
+          "direct_missing": [
+            "so-vo-ti",
+            "can-bac-hai-so-hoc"
+          ],
+          "family_targets": [
+            "NUM-SETS"
+          ],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE_G7_EXPLICIT",
+          "primary_topic": "02-so-va-phep-tinh",
+          "direct_hits": [],
+          "direct_missing": [
+            "so-huu-ti-thap-phan",
+            "so-vo-ti",
+            "can-bac-hai-so-hoc"
+          ]
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_TOPIC_EVIDENCE",
+          "primary_topic": "02-so-va-phep-tinh",
+          "direct_hits": [
+            "so-huu-ti-thap-phan"
+          ],
+          "direct_missing": [
+            "so-vo-ti",
+            "can-bac-hai-so-hoc"
+          ],
+          "family_targets": [
+            "NUM-SETS"
+          ]
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "02-so-va-phep-tinh",
+          "direct_hits": [],
+          "direct_missing": [
+            "so-huu-ti-thap-phan",
+            "so-vo-ti",
+            "can-bac-hai-so-hoc"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "P0"
     },
     {
       "chapter": 3,
@@ -243,25 +601,75 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "goc-phu-bu",
+            "goc-doi-dinh",
+            "tia-phan-giac",
+            "nhan-dang-goc-dac-biet"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "13-goc-va-duong-thang",
+          "direct_hits": [
+            "goc-phu-bu",
+            "goc-doi-dinh",
+            "tia-phan-giac",
+            "nhan-dang-goc-dac-biet"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_DIRECT",
+          "primary_topic": "13-goc-va-duong-thang",
+          "direct_hits": [
+            "goc-doi-dinh",
+            "tia-phan-giac",
+            "nhan-dang-goc-dac-biet"
+          ],
+          "direct_missing": [
+            "goc-phu-bu"
+          ]
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "13-goc-va-duong-thang",
+          "direct_hits": [
+            "goc-phu-bu",
+            "goc-doi-dinh",
+            "tia-phan-giac",
+            "nhan-dang-goc-dac-biet"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "13-goc-va-duong-thang",
+          "direct_hits": [],
+          "direct_missing": [
+            "goc-phu-bu",
+            "goc-doi-dinh",
+            "tia-phan-giac",
+            "nhan-dang-goc-dac-biet"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "P2"
     },
     {
       "chapter": 3,
@@ -290,25 +698,84 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "goc-trong-cung-phia",
+            "tinh-chat-song-song",
+            "dau-hieu-song-song",
+            "tien-de-euclid"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "13-goc-va-duong-thang",
+          "direct_hits": [
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "goc-trong-cung-phia",
+            "tinh-chat-song-song",
+            "dau-hieu-song-song",
+            "tien-de-euclid"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "13-goc-va-duong-thang",
+          "direct_hits": [
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "goc-trong-cung-phia",
+            "tinh-chat-song-song",
+            "dau-hieu-song-song",
+            "tien-de-euclid"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "13-goc-va-duong-thang",
+          "direct_hits": [
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "goc-trong-cung-phia",
+            "tinh-chat-song-song",
+            "dau-hieu-song-song",
+            "tien-de-euclid"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "13-goc-va-duong-thang",
+          "direct_hits": [],
+          "direct_missing": [
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "goc-trong-cung-phia",
+            "tinh-chat-song-song",
+            "dau-hieu-song-song",
+            "tien-de-euclid"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NO_REPAIR_PRIORITY_FROM_INVENTORY"
     },
     {
       "chapter": 3,
@@ -337,25 +804,64 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "gia-thiet-ket-luan",
+            "lap-luan-chung-minh-ngan"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "13-goc-va-duong-thang",
+          "direct_hits": [
+            "gia-thiet-ket-luan",
+            "lap-luan-chung-minh-ngan"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "13-goc-va-duong-thang",
+          "direct_hits": [
+            "gia-thiet-ket-luan",
+            "lap-luan-chung-minh-ngan"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "13-goc-va-duong-thang",
+          "direct_hits": [
+            "gia-thiet-ket-luan",
+            "lap-luan-chung-minh-ngan"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "13-goc-va-duong-thang",
+          "direct_hits": [],
+          "direct_missing": [
+            "gia-thiet-ket-luan",
+            "lap-luan-chung-minh-ngan"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NO_REPAIR_PRIORITY_FROM_INVENTORY"
     },
     {
       "chapter": 4,
@@ -379,25 +885,59 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "tong-goc-tam-giac"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [
+            "tong-goc-tam-giac"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [
+            "tong-goc-tam-giac"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [
+            "tong-goc-tam-giac"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [],
+          "direct_missing": [
+            "tong-goc-tam-giac"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NO_REPAIR_PRIORITY_FROM_INVENTORY"
     },
     {
       "chapter": 4,
@@ -425,25 +965,79 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "bang-nhau-ccc",
+            "bang-nhau-cgc",
+            "bang-nhau-gcg",
+            "bang-nhau-tam-giac-vuong",
+            "viet-tuong-ung-tam-giac-bang-nhau"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [
+            "bang-nhau-ccc",
+            "bang-nhau-cgc",
+            "bang-nhau-gcg",
+            "bang-nhau-tam-giac-vuong",
+            "viet-tuong-ung-tam-giac-bang-nhau"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [
+            "bang-nhau-ccc",
+            "bang-nhau-cgc",
+            "bang-nhau-gcg",
+            "bang-nhau-tam-giac-vuong",
+            "viet-tuong-ung-tam-giac-bang-nhau"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [
+            "bang-nhau-ccc",
+            "bang-nhau-cgc",
+            "bang-nhau-gcg",
+            "bang-nhau-tam-giac-vuong",
+            "viet-tuong-ung-tam-giac-bang-nhau"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [],
+          "direct_missing": [
+            "bang-nhau-ccc",
+            "bang-nhau-cgc",
+            "bang-nhau-gcg",
+            "bang-nhau-tam-giac-vuong",
+            "viet-tuong-ung-tam-giac-bang-nhau"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NO_REPAIR_PRIORITY_FROM_INVENTORY"
     },
     {
       "chapter": 4,
@@ -474,25 +1068,74 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "tam-giac-can",
+            "nhan-biet-trung-truc",
+            "cach-deu-dinh",
+            "tinh-chat-duong-trung-truc"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [
+            "tam-giac-can",
+            "nhan-biet-trung-truc",
+            "cach-deu-dinh",
+            "tinh-chat-duong-trung-truc"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [
+            "tam-giac-can",
+            "nhan-biet-trung-truc",
+            "cach-deu-dinh",
+            "tinh-chat-duong-trung-truc"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [
+            "tam-giac-can",
+            "nhan-biet-trung-truc",
+            "cach-deu-dinh",
+            "tinh-chat-duong-trung-truc"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [],
+          "direct_missing": [
+            "tam-giac-can",
+            "nhan-biet-trung-truc",
+            "cach-deu-dinh",
+            "tinh-chat-duong-trung-truc"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NO_REPAIR_PRIORITY_FROM_INVENTORY"
     },
     {
       "chapter": 5,
@@ -517,25 +1160,67 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "21-thong-ke",
+          "direct_hits": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "21-thong-ke",
+          "direct_hits": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "21-thong-ke",
+          "direct_hits": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_G7_STRUCTURED",
+          "primary_topic": "21-thong-ke",
+          "direct_hits": [
+            "du-lieu-phan-loai"
+          ],
+          "direct_missing": [
+            "thu-thap-du-lieu"
+          ],
+          "item_ids": [
+            "STA21READY_002"
+          ],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NO_REPAIR_PRIORITY_FROM_INVENTORY"
     },
     {
       "chapter": 5,
@@ -572,25 +1257,91 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "bieu-do-quat-tron",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu"
+          ],
+          "canonical_families": [
+            "STAT-REPRESENT"
+          ],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_FAMILY_EVIDENCE",
+          "primary_topic": "21-thong-ke",
+          "direct_hits": [
+            "bieu-do-quat-tron",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu"
+          ],
+          "direct_missing": [],
+          "family_targets": [
+            "STAT-REPRESENT"
+          ],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_DIRECT",
+          "primary_topic": "21-thong-ke",
+          "direct_hits": [
+            "bieu-do-quat-tron",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "nhan-xet-du-lieu"
+          ],
+          "direct_missing": [
+            "chuyen-bang-bieu-do"
+          ]
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_FAMILY_EVIDENCE",
+          "primary_topic": "21-thong-ke",
+          "direct_hits": [
+            "bieu-do-quat-tron",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu"
+          ],
+          "direct_missing": [],
+          "family_targets": [
+            "STAT-REPRESENT"
+          ]
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_G7_STRUCTURED",
+          "primary_topic": "21-thong-ke",
+          "direct_hits": [
+            "bieu-do-quat-tron",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do"
+          ],
+          "direct_missing": [
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu"
+          ],
+          "item_ids": [
+            "STA21READY_008",
+            "STA21READY_007",
+            "STA21READY_009"
+          ],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "P1"
     },
     {
       "chapter": 6,
@@ -617,25 +1368,74 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "ti-le-thuc",
+            "tim-x-ti-le-thuc",
+            "day-ti-so-bang-nhau",
+            "chia-theo-ti-le"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "03-ti-le-ti-le-thuc",
+          "direct_hits": [
+            "ti-le-thuc",
+            "tim-x-ti-le-thuc",
+            "day-ti-so-bang-nhau",
+            "chia-theo-ti-le"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "03-ti-le-ti-le-thuc",
+          "direct_hits": [
+            "ti-le-thuc",
+            "tim-x-ti-le-thuc",
+            "day-ti-so-bang-nhau",
+            "chia-theo-ti-le"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "03-ti-le-ti-le-thuc",
+          "direct_hits": [
+            "ti-le-thuc",
+            "tim-x-ti-le-thuc",
+            "day-ti-so-bang-nhau",
+            "chia-theo-ti-le"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "primary_topic": "03-ti-le-ti-le-thuc",
+          "direct_hits": [],
+          "direct_missing": [
+            "ti-le-thuc",
+            "tim-x-ti-le-thuc",
+            "day-ti-so-bang-nhau",
+            "chia-theo-ti-le"
+          ],
+          "item_ids": [],
+          "note": "No topic readiness asset exists."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NO_REPAIR_PRIORITY_FROM_INVENTORY"
     },
     {
       "chapter": 6,
@@ -668,25 +1468,86 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "ti-le-thuan",
+            "he-so-ti-le-thuan",
+            "ti-le-nghich",
+            "he-so-ti-le-nghich",
+            "phan-biet-thuan-nghich",
+            "mo-hinh-ti-le"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_SHARED_SKILL",
+          "primary_topic": "03-ti-le-ti-le-thuc",
+          "direct_hits": [
+            "ti-le-thuan",
+            "he-so-ti-le-thuan",
+            "ti-le-nghich",
+            "he-so-ti-le-nghich",
+            "phan-biet-thuan-nghich"
+          ],
+          "direct_missing": [
+            "mo-hinh-ti-le"
+          ],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_DIRECT",
+          "primary_topic": "03-ti-le-ti-le-thuc",
+          "direct_hits": [
+            "ti-le-thuan",
+            "he-so-ti-le-thuan",
+            "ti-le-nghich",
+            "he-so-ti-le-nghich",
+            "phan-biet-thuan-nghich"
+          ],
+          "direct_missing": [
+            "mo-hinh-ti-le"
+          ]
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "03-ti-le-ti-le-thuc",
+          "direct_hits": [
+            "ti-le-thuan",
+            "he-so-ti-le-thuan",
+            "ti-le-nghich",
+            "he-so-ti-le-nghich",
+            "phan-biet-thuan-nghich",
+            "mo-hinh-ti-le"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "primary_topic": "03-ti-le-ti-le-thuc",
+          "direct_hits": [],
+          "direct_missing": [
+            "ti-le-thuan",
+            "he-so-ti-le-thuan",
+            "ti-le-nghich",
+            "he-so-ti-le-nghich",
+            "phan-biet-thuan-nghich",
+            "mo-hinh-ti-le"
+          ],
+          "item_ids": [],
+          "note": "No topic readiness asset exists."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "P1"
     },
     {
       "chapter": 7,
@@ -717,25 +1578,80 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "tinh-gia-tri-bieu-thuc"
+          ],
+          "canonical_families": [
+            "ALG-STRUCTURE"
+          ],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_FAMILY_EVIDENCE",
+          "primary_topic": "04-bieu-thuc-dai-so",
+          "direct_hits": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "tinh-gia-tri-bieu-thuc"
+          ],
+          "direct_missing": [],
+          "family_targets": [
+            "ALG-STRUCTURE"
+          ],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "04-bieu-thuc-dai-so",
+          "direct_hits": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "tinh-gia-tri-bieu-thuc"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_FAMILY_EVIDENCE",
+          "primary_topic": "04-bieu-thuc-dai-so",
+          "direct_hits": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "tinh-gia-tri-bieu-thuc"
+          ],
+          "direct_missing": [],
+          "family_targets": [
+            "ALG-STRUCTURE"
+          ]
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "04-bieu-thuc-dai-so",
+          "direct_hits": [],
+          "direct_missing": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "tinh-gia-tri-bieu-thuc"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "P2"
     },
     {
       "chapter": 7,
@@ -772,25 +1688,87 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi",
+            "chia-da-thuc-mot-bien"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_SHARED_SKILL",
+          "primary_topic": "04-bieu-thuc-dai-so",
+          "direct_hits": [
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi"
+          ],
+          "direct_missing": [
+            "chia-da-thuc-mot-bien"
+          ],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_DIRECT",
+          "primary_topic": "04-bieu-thuc-dai-so",
+          "direct_hits": [
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi"
+          ],
+          "direct_missing": [
+            "chia-da-thuc-mot-bien"
+          ]
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_TOPIC_EVIDENCE",
+          "primary_topic": "04-bieu-thuc-dai-so",
+          "direct_hits": [
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi"
+          ],
+          "direct_missing": [
+            "chia-da-thuc-mot-bien"
+          ],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "04-bieu-thuc-dai-so",
+          "direct_hits": [],
+          "direct_missing": [
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi",
+            "chia-da-thuc-mot-bien"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "P0"
     },
     {
       "chapter": 8,
@@ -815,25 +1793,68 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "bien-co",
+            "bien-co-chac-chan-khong-the"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "bien-co",
+            "bien-co-chac-chan-khong-the"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "bien-co",
+            "bien-co-chac-chan-khong-the"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "bien-co",
+            "bien-co-chac-chan-khong-the"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_G7_STRUCTURED",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "bien-co-chac-chan-khong-the"
+          ],
+          "direct_missing": [
+            "bien-co"
+          ],
+          "item_ids": [
+            "PRO23READY_005",
+            "PRO23READY_006"
+          ],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NO_REPAIR_PRIORITY_FROM_INVENTORY"
     },
     {
       "chapter": 8,
@@ -860,25 +1881,68 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "PARTIAL_G7_STRUCTURED",
+          "primary_topic": "23-xac-suat",
+          "direct_hits": [
+            "xac-suat-co-dien"
+          ],
+          "direct_missing": [
+            "kiem-tra-xac-suat"
+          ],
+          "item_ids": [
+            "PRO23READY_007",
+            "PRO23READY_008"
+          ],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NO_REPAIR_PRIORITY_FROM_INVENTORY"
     },
     {
       "chapter": 9,
@@ -904,25 +1968,69 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "so-sanh-canh-goc",
+            "bat-dang-thuc-tam-giac",
+            "duong-vuong-goc-duong-xien"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [
+            "so-sanh-canh-goc",
+            "bat-dang-thuc-tam-giac",
+            "duong-vuong-goc-duong-xien"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [
+            "so-sanh-canh-goc",
+            "bat-dang-thuc-tam-giac",
+            "duong-vuong-goc-duong-xien"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [
+            "so-sanh-canh-goc",
+            "bat-dang-thuc-tam-giac",
+            "duong-vuong-goc-duong-xien"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "14-tam-giac",
+          "direct_hits": [],
+          "direct_missing": [
+            "so-sanh-canh-goc",
+            "bat-dang-thuc-tam-giac",
+            "duong-vuong-goc-duong-xien"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NO_REPAIR_PRIORITY_FROM_INVENTORY"
     },
     {
       "chapter": 9,
@@ -956,25 +2064,109 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "nhan-biet-trung-tuyen",
+            "trong-tam",
+            "ti-so-trong-tam",
+            "nhan-biet-phan-giac",
+            "nhan-biet-trung-truc",
+            "nhan-biet-duong-cao",
+            "truc-tam",
+            "tam-noi-tiep",
+            "tam-ngoai-tiep",
+            "phan-biet-bon-tam",
+            "dong-quy-bon-duong-dac-biet"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "15-duong-dong-quy",
+          "direct_hits": [
+            "nhan-biet-trung-tuyen",
+            "trong-tam",
+            "ti-so-trong-tam",
+            "nhan-biet-phan-giac",
+            "nhan-biet-trung-truc",
+            "nhan-biet-duong-cao",
+            "truc-tam",
+            "tam-noi-tiep",
+            "tam-ngoai-tiep",
+            "phan-biet-bon-tam",
+            "dong-quy-bon-duong-dac-biet"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "15-duong-dong-quy",
+          "direct_hits": [
+            "nhan-biet-trung-tuyen",
+            "trong-tam",
+            "ti-so-trong-tam",
+            "nhan-biet-phan-giac",
+            "nhan-biet-trung-truc",
+            "nhan-biet-duong-cao",
+            "truc-tam",
+            "tam-noi-tiep",
+            "tam-ngoai-tiep",
+            "phan-biet-bon-tam",
+            "dong-quy-bon-duong-dac-biet"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "15-duong-dong-quy",
+          "direct_hits": [
+            "nhan-biet-trung-tuyen",
+            "trong-tam",
+            "ti-so-trong-tam",
+            "nhan-biet-phan-giac",
+            "nhan-biet-trung-truc",
+            "nhan-biet-duong-cao",
+            "truc-tam",
+            "tam-noi-tiep",
+            "tam-ngoai-tiep",
+            "phan-biet-bon-tam",
+            "dong-quy-bon-duong-dac-biet"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "15-duong-dong-quy",
+          "direct_hits": [],
+          "direct_missing": [
+            "nhan-biet-trung-tuyen",
+            "trong-tam",
+            "ti-so-trong-tam",
+            "nhan-biet-phan-giac",
+            "nhan-biet-trung-truc",
+            "nhan-biet-duong-cao",
+            "truc-tam",
+            "tam-noi-tiep",
+            "tam-ngoai-tiep",
+            "phan-biet-bon-tam",
+            "dong-quy-bon-duong-dac-biet"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NO_REPAIR_PRIORITY_FROM_INVENTORY"
     },
     {
       "chapter": 10,
@@ -1006,25 +2198,79 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "the-tich-hop-chu-nhat",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-hop-lap-phuong",
+            "dien-tich-xung-quanh-hop-chu-nhat"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "20-hinh-hoc-tong-hop",
+          "direct_hits": [
+            "the-tich-hop-chu-nhat",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-hop-lap-phuong",
+            "dien-tich-xung-quanh-hop-chu-nhat"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "20-hinh-hoc-tong-hop",
+          "direct_hits": [
+            "the-tich-hop-chu-nhat",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-hop-lap-phuong",
+            "dien-tich-xung-quanh-hop-chu-nhat"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "20-hinh-hoc-tong-hop",
+          "direct_hits": [
+            "the-tich-hop-chu-nhat",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-hop-lap-phuong",
+            "dien-tich-xung-quanh-hop-chu-nhat"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "20-hinh-hoc-tong-hop",
+          "direct_hits": [],
+          "direct_missing": [
+            "the-tich-hop-chu-nhat",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-hinh-hop-lap-phuong",
+            "dien-tich-xung-quanh-hop-chu-nhat"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NO_REPAIR_PRIORITY_FROM_INVENTORY"
     },
     {
       "chapter": 10,
@@ -1056,25 +2302,87 @@
       },
       "dimensions": {
         "SKILL_MAP": {
-          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+          "status": "VERIFIED_SEMANTIC",
+          "direct_skills": [
+            "the-tich-lang-tru",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-lang-tru-dung",
+            "dien-tich-xung-quanh-lang-tru"
+          ],
+          "canonical_families": [],
+          "lesson_local_refs": [],
+          "reconciliation_clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
         },
         "LEARN_CONTENT": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "20-hinh-hoc-tong-hop",
+          "direct_hits": [
+            "the-tich-lang-tru",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-lang-tru-dung",
+            "dien-tich-xung-quanh-lang-tru"
+          ],
+          "direct_missing": [],
+          "family_targets": [],
+          "lesson_local_targets": []
         },
         "MICRO_PRACTICE": {
-          "status": "AUDIT_PENDING"
+          "status": "VERIFIED_DIRECT",
+          "primary_topic": "20-hinh-hoc-tong-hop",
+          "direct_hits": [
+            "the-tich-lang-tru",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-lang-tru-dung",
+            "dien-tich-xung-quanh-lang-tru"
+          ],
+          "direct_missing": []
         },
         "PRACTICE_BANK": {
-          "status": "AUDIT_PENDING"
+          "status": "TOPIC_SKILL_EVIDENCE",
+          "primary_topic": "20-hinh-hoc-tong-hop",
+          "direct_hits": [
+            "the-tich-lang-tru",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-lang-tru-dung",
+            "dien-tich-xung-quanh-lang-tru"
+          ],
+          "direct_missing": [],
+          "family_targets": []
         },
         "WRITTEN_LIBRARY": {
-          "status": "AUDIT_PENDING"
+          "status": "NONE",
+          "placements": [],
+          "note": "No canonical Written item currently has a true Grade-7 KNTT placement."
         },
         "READINESS": {
-          "status": "AUDIT_PENDING"
+          "status": "NOT_VERIFIED_STRUCTURED",
+          "primary_topic": "20-hinh-hoc-tong-hop",
+          "direct_hits": [],
+          "direct_missing": [
+            "the-tich-lang-tru",
+            "dien-tich-day",
+            "doi-don-vi-do-luong",
+            "nhan-biet-lang-tru-dung",
+            "dien-tich-xung-quanh-lang-tru"
+          ],
+          "item_ids": [],
+          "note": "Topic readiness asset exists; only explicit Grade-7 item metadata is counted here."
         }
       },
-      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+      "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
+      "audit_priority": "NO_REPAIR_PRIORITY_FROM_INVENTORY"
     }
-  ]
+  ],
+  "status_semantics": {
+    "SKILL_MAP": "VERIFIED_SEMANTIC means the row's curriculum semantics are closed by reviewed Grade-7 reconciliation; it is not learner-performance evidence.",
+    "LEARN_CONTENT": "VERIFIED_DIRECT requires all direct targets in learner-facing workspace content. PARTIAL_* means at least one reviewed direct/family/local target is not explicit.",
+    "MICRO_PRACTICE": "VERIFIED_DIRECT requires explicit Grade-7/shared-Grade-7 Micro evidence for all direct targets. NONE_G7_EXPLICIT means no Grade-7-scoped Micro evidence was found.",
+    "PRACTICE_BANK": "TOPIC_SKILL_EVIDENCE means the topic Practice manifest contains all direct skills but does not by itself prove exact lesson placement. PARTIAL_* records missing direct or family/local evidence.",
+    "WRITTEN_LIBRARY": "VERIFIED_KNTT_PLACEMENT requires a canonical Written item's true Grade-7 kntt_placement. Skill overlap alone is not enough.",
+    "READINESS": "PARTIAL_G7_STRUCTURED means explicit Grade-7-tagged readiness items cover only part of the row. NOT_VERIFIED_STRUCTURED means no explicit Grade-7 structured evidence was found; NONE means no topic readiness asset exists."
+  }
 }
