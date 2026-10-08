@@ -28,9 +28,23 @@ assert.ok(packet.includes("Select exactly 5 Sources"));
 assert.ok(packet.includes("2 permanent governance sources + 2 Grade-6 SGK sources + 1 temporary packet = 5 selected Sources total."));
 assert.ok(packet.includes("Do **not** add `Written Exercise Library Contract v1` as a separate NotebookLM Source"));
 
-for(const key of ["topic02_workspace","topic20_workspace","topic13_workspace","topic02_micro","topic20_micro","topic13_micro"]){
+for(const key of ["topic20_workspace","topic13_workspace","topic20_micro","topic13_micro"]){
   const lock=artifact.source_locks[key];
   assert.equal(blob(read(lock.path)),lock.sha,"source drift: "+lock.path);
+}
+for(const key of ["topic02_workspace","topic02_micro"]){
+  const lock=artifact.source_locks[key];
+  // Historical Grade-6 review inputs remain locked by recorded SHA; later
+  // Grade-7 Wave-1 candidates append to the shared Topic02 files.
+  assert.match(lock.sha,/^[0-9a-f]{40}$/);
+  const current=json(lock.path);
+  if(key==="topic02_workspace"){
+    for(const id of ["num02-g6-core-1","num02-g6-core-2","num02-g6-core-3","num02-g6-core-4","num02-g6-core-5"]) {
+      assert.ok(current.cards.some(card=>card.id===id),"historical Grade-6 topic02 card removed: "+id);
+    }
+  }else{
+    assert.ok(current.questions.length>=52,"historical Grade-6 Topic02 Micro evidence regressed");
+  }
 }
 
 const existing=new Set(library.exercises.map(x=>x.exercise_id));

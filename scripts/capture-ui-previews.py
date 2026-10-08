@@ -85,7 +85,10 @@ with sync_playwright() as p:
     check(gateway_grade7.count() == 1, "grade 7 mapping reaches the right Core gateway")
     gateway_grade7.click()
     class_page.locator("#core-journey .topic-core-card").first.wait_for(state="visible", timeout=12000)
-    check(class_page.locator("#core-journey .topic-core-card").count() == 5, "grade 7 opens five CĐ04 cards")
+    grade7_cards = class_page.locator("#core-journey .topic-core-card")
+    check(grade7_cards.count() == 6, "grade 7 opens six CĐ04 cards after append-only Wave 1 candidate")
+    check(grade7_cards.filter(has_text="Chia đa thức một biến").count() == 1,
+          "grade 7 CĐ04 includes the new Bài 28 polynomial-division card")
     shot(class_page, "grade-7-core-cards-desktop.png")
     class_page.close()
     page.locator('.home-style-bar [data-home-select="playful"]').click()
@@ -164,11 +167,11 @@ with sync_playwright() as p:
             core_page.locator('#core-journey[data-core-ready="1"]').wait_for(state="visible", timeout=12000)
             check(core_page.locator(".topic-core-teaching-item").count() == 0,
                   "no duplicate lecture accordion outside cards")
-            expected_core_cards = 10 if slug == "20-hinh-hoc-tong-hop" else 5
+            expected_core_cards = 10 if slug == "20-hinh-hoc-tong-hop" else (7 if slug == "02-so-va-phep-tinh" else (6 if slug == "04-bieu-thuc-dai-so" else 5))
             check(core_page.locator(".topic-core-card .topic-core-teach-start").count() == expected_core_cards,
-                  "all five cards have a lecture button")
+                  "all published Core cards have a lecture button")
             check(core_page.locator(".topic-core-card .topic-micro-start").count() == expected_core_cards,
-                  "all five cards retain the practice button")
+                  "all published Core cards retain the practice button")
             if slug == "07-phan-thuc-dai-so":
                 first_card = core_page.locator('.topic-core-card[data-card-id="pt07-core-1"]')
                 second_card = core_page.locator('.topic-core-card[data-card-id="pt07-core-2"]')
@@ -528,7 +531,7 @@ $$
     micro_page.locator("#core-journey .topic-micro-start").first.click()
     core_dialog = micro_page.locator(".topic-core-dialog")
     check(core_dialog.is_visible(), "Core practice opens in its own dialog")
-    check(cards.count() == 5 and cards.nth(0).get_attribute("class") == "topic-core-card", "Core cards never stretch inline")
+    check(cards.count() == 6 and cards.nth(0).get_attribute("class") == "topic-core-card", "CĐ04 keeps six Wave-1 cards as stable card shells while practice opens in a dialog")
     check(core_dialog.locator(".topic-micro-pager button").count() == 3, "per-question navigation")
     check(core_dialog.locator(".topic-micro-option").first.evaluate("(el) => parseFloat(getComputedStyle(el).borderTopWidth) >= 1"), "visible answer boundaries")
     check(core_dialog.locator(".topic-micro-tools > button").count() == 3, "three separate help buttons")

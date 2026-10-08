@@ -6,7 +6,7 @@
     "id": "04-bieu-thuc-dai-so",
     "title": "Biểu thức và biến đổi đại số"
   },
-  "question_count": 15,
+  "question_count": 19,
   "questions": [
     {
       "id": "ALG04MICRO_001",
@@ -679,6 +679,186 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
+      }
+    },
+    {
+      "id": "ALG04MICRO_016",
+      "micro_role": "base",
+      "question": "Thương của \\((x^2+5x+6):(x+2)\\) là:",
+      "options": [
+        "\\(x+3\\)",
+        "\\(x+2\\)",
+        "\\(x-3\\)",
+        "\\(x^2+3\\)"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "\\(x^2+5x+6=(x+2)(x+3)\\), nên thương là \\(x+3\\).",
+      "hints": [
+        "Tìm hai số có tổng 5 và tích 6.",
+        "Hoặc thực hiện phép chia theo hạng tử bậc cao nhất."
+      ],
+      "card_id": "alg04-g7-core-6",
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-mot-bien"
+        ],
+        "type": "chia-da-thuc-mot-bien",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 28"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+      }
+    },
+    {
+      "id": "ALG04MICRO_017",
+      "micro_role": "trap",
+      "question": "Tính \\((2x^2+7x+3):(2x+1)\\).",
+      "options": [
+        "\\(x+3\\)",
+        "\\(x+2\\)",
+        "\\(2x+3\\)",
+        "\\(x-3\\)"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "\\((2x+1)(x+3)=2x^2+7x+3\\), nên thương là \\(x+3\\).",
+      "hints": [
+        "Bắt đầu bằng \\(2x^2:2x=x\\).",
+        "Sau bước đầu, phần còn lại là \\(6x+3\\)."
+      ],
+      "card_id": "alg04-g7-core-6",
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-mot-bien"
+        ],
+        "type": "chia-da-thuc-mot-bien",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 28"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+      }
+    },
+    {
+      "id": "ALG04MICRO_018",
+      "micro_role": "apply",
+      "question": "Tính \\((x^3-x^2-4x+4):(x-1)\\).",
+      "options": [
+        "\\(x^2-4\\)",
+        "\\(x^2+4\\)",
+        "\\(x^2-x-4\\)",
+        "\\(x^2-1\\)"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "\\((x-1)(x^2-4)=x^3-x^2-4x+4\\), nên thương là \\(x^2-4\\).",
+      "hints": [
+        "Chia \\(x^3\\) cho \\(x\\) để được \\(x^2\\).",
+        "Sau khi trừ bước đầu, chú ý giữ đúng dấu của các hạng tử còn lại."
+      ],
+      "card_id": "alg04-g7-core-6",
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-mot-bien"
+        ],
+        "type": "chia-da-thuc-mot-bien",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 28"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+      }
+    },
+    {
+      "id": "ALG04MICRO_019",
+      "micro_role": "coverage",
+      "question": "Muốn kiểm tra kết quả \\((x^2-1):(x-1)=x+1\\), phép tính nào là phù hợp nhất?",
+      "options": [
+        "Kiểm tra \\((x-1)(x+1)=x^2-1\\).",
+        "Cộng \\((x-1)+(x+1)\\).",
+        "Thay mọi \\(x\\) bằng 1.",
+        "Đạo hàm hai đa thức."
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "Kiểm tra phép chia hết bằng cách nhân đa thức chia với thương; ở đây \\((x-1)(x+1)=x^2-1\\).",
+      "hints": [
+        "Phép chia và phép nhân là hai phép toán ngược nhau.",
+        "Nhân đa thức chia với thương."
+      ],
+      "card_id": "alg04-g7-core-6",
+      "tags": {
+        "topic": "bieu-thuc-dai-so",
+        "skill": [
+          "chia-da-thuc-mot-bien"
+        ],
+        "type": "chia-da-thuc-mot-bien",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 28"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
       }
     }
   ]

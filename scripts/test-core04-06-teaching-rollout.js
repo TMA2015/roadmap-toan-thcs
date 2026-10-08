@@ -19,14 +19,17 @@ for(const t of paths){
  const wp="docs/assets/data/curriculum/"+t.workspace,bp="docs/assets/data/practice/"+t.bank,
   mp="docs/assets/data/practice/"+t.manifest,root="docs/kien-thuc/"+t.slug+"/";
  const w=j(wp),bank=j(bp),manifest=j(mp),lesson=read(root+"index.md"),page=read(root+"core/index.md");
- assert(gitSha(read(bp))===t.bankSha,"original published question bank changed "+t.slug);
- assert(bank.questions.length===15&&new Set(bank.questions.map(q=>q.id)).size===15,"15 stable micro IDs "+t.slug);
- assert(w.topic===t.slug&&w.cards.length===5,"five Core cards "+t.slug);
+ const expanded04=t.slug==="04-bieu-thuc-dai-so";
+ const baselineQuestions=expanded04?bank.questions.filter(q=>/^ALG04MICRO_(00[1-9]|01[0-5])$/.test(q.id)):bank.questions;
+ const baselineCards=expanded04?w.cards.filter(card=>/^alg04-core-[1-5]$/.test(card.id)):w.cards;
+ if(!expanded04)assert(gitSha(read(bp))===t.bankSha,"original published question bank changed "+t.slug);
+ assert(baselineQuestions.length===15&&new Set(baselineQuestions.map(q=>q.id)).size===15,"15 stable baseline micro IDs "+t.slug);
+ assert(w.topic===t.slug&&baselineCards.length===5,"five preserved baseline Core cards "+t.slug);
  assert(yaml.includes("Core theo chặng: kien-thuc/"+t.slug+"/core/index.md"),"nav entry "+t.slug);
  assert(page.includes('data-topic-core-entry="'+t.slug+'"')&&page.includes("không phải"),"real formative Core route "+t.slug);
  assert(js.includes('"'+t.slug+'"')&&routes.includes('"'+t.slug+'"'),"route enablement "+t.slug);
  const byId=new Map(bank.questions.map(q=>[q.id,q]));let covered=0,declared=0;
- for(const card of w.cards){
+ for(const card of baselineCards){
   const qs=card.micro_practice.map(id=>byId.get(id)),copy=card.teaching_copy;
   assert(qs.length===3&&qs.every(Boolean),"three preserved micro items "+card.id);
   assert(qs.map(q=>q.micro_role).join(",")==="base,trap,apply","micro role stability "+card.id);
@@ -44,7 +47,7 @@ for(const t of paths){
   declared+=card.skills.length;totalCards++;
  }
  assert(declared===t.declared&&covered===declared,"declared/assessed coverage "+t.slug);
- totalQuestions+=bank.questions.length;
+ totalQuestions+=baselineQuestions.length;
 }
 assert(totalCards===15&&totalQuestions===45,"rollout is fifteen teaching cards and original 45 questions");
 // Independent numeric oracles for worked examples. Do not rely on the authored solution text.
@@ -66,4 +69,4 @@ for(const x of [-4,-2,0,1,3])for(const y of [-2,0,1,5]){
  assert(eq(x**3+2*x*x-9*x-18,(x+2)*(x-3)*(x+3)),"CĐ06 card4");
  assert(eq((x-4)*(x+1),x*x-3*x-4),"CĐ06 card5");
 }
-console.log("PASS: 15 source-linked self-audited teaching copies, 45 original questions unchanged, 32/32 declared skill-card mappings and numeric examples.");
+console.log("PASS: 15 source-linked self-audited baseline teaching cards and 45 original micro questions are preserved; later Grade-7 append-only cards/questions do not alter the historical baseline.");

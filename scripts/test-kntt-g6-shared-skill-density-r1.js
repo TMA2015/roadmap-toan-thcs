@@ -21,8 +21,8 @@ assert.match(cards["num02-g6-core-5"].teaching_copy.key_idea,/số chia trở th
 
 const ids=Array.from({length:11},(_,i)=>`NUM02MICRO_${String(42+i).padStart(3,"0")}`);
 for(const id of ids) assert.ok(micro.questions.some(q=>q.id===id),id);
-assert.equal(micro.question_count,52);
-assert.equal(micro.questions.length,52);
+assert.ok(micro.question_count>=52,"later append-only Micro expansion must retain the 52 reviewed Grade-6 items");
+assert.equal(micro.questions.length,micro.question_count);
 const by=Object.fromEntries(micro.questions.map(q=>[q.id,q]));
 assert.deepEqual(ids.map(id=>by[id].answer),[0,0,0,0,0,0,0,0,0,0,0]);
 for(const id of ids){
@@ -45,7 +45,7 @@ assert.equal(by.NUM02MICRO_047.curriculum.lesson,"Bài 17");
 assert.equal(by.NUM02MICRO_048.curriculum.lesson,"Bài 25-26");
 assert.equal(by.NUM02MICRO_050.curriculum.lesson,"Bài 28-29");
 
-assert.equal(manifest.question_count,132);
+assert.ok(manifest.question_count>=132,"later append-only Practice expansion must retain the 132-question Grade-6 baseline");
 assert.equal(audit.summary.dimension_status_counts.LEARN_CONTENT.PARTIAL_SHARED_SKILL,0);
 assert.equal(audit.summary.dimension_status_counts.LEARN_CONTENT.VERIFIED_DIRECT,23);
 assert.equal(audit.summary.dimension_status_counts.MICRO_PRACTICE.PARTIAL,0);
@@ -58,4 +58,4 @@ assert.equal(audit.summary.shared_skill_rerank_r1.no_new_skills,true);
 assert.equal(audit.summary.shared_skill_rerank_r1.proposed_micro_ids.length,11);
 
 console.log("PASS: Grade-6 shared-skill density R1 preserves the reviewed 11 Micro bytes and records NotebookLM clearance separately.");
-console.log("PASS: Practice remains 132; 7 shared-skill Learn/Micro rows are promoted after clearance while protected dimensions stay unchanged.");
+console.log("PASS: Grade-6 Practice/Micro baselines remain intact under later append-only Grade-7 expansion; protected dimensions stay unchanged.");

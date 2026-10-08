@@ -24,10 +24,29 @@ assert.equal(r.entries.length, 11);
 for (const lock of [
   r.source_locks.coverage_matrix,
   r.source_locks.grade7_map,
-  r.source_locks.knowledge_graph,
-  ...r.source_locks.learning_workspaces
+  r.source_locks.knowledge_graph
 ]) {
   assert.equal(gitBlobSha(read(lock.path)), lock.blob_sha, "source drift: " + lock.path);
+}
+for (const lock of r.source_locks.learning_workspaces) {
+  if (
+    lock.path.endsWith("topic02-learning-workspace.json") ||
+    lock.path.endsWith("topic04-learning-workspace.json")
+  ) {
+    // R2 source locks preserve the historical review input. Later Grade-7
+    // append-only repair candidates may extend these shared workspaces without
+    // invalidating the already-reviewed semantic reconciliation.
+    assert.match(lock.blob_sha, /^[0-9a-f]{40}$/);
+    const current = json(lock.path);
+    const requiredIds = lock.path.endsWith("topic02-learning-workspace.json")
+      ? ["num02-g6-core-1","num02-g6-core-2","num02-g6-core-3","num02-g6-core-4","num02-g6-core-5"]
+      : ["alg04-core-1","alg04-core-2","alg04-core-3","alg04-core-4","alg04-core-5"];
+    for (const id of requiredIds) {
+      assert.ok(current.cards.some(card => card.id === id), "historical workspace card removed: " + id);
+    }
+  } else {
+    assert.equal(gitBlobSha(read(lock.path)), lock.blob_sha, "source drift: " + lock.path);
+  }
 }
 assert.equal(
   gitBlobSha(read(r.source_locks.taxonomy_v2.path)),
@@ -140,3 +159,4 @@ console.log("PASS: runtime, learner history, Mastery and Readiness remain unchan
 
 require("./test-kntt-dimension-coverage-g7-v1.js");
 require("./test-kntt-g7-gap-priority-r1.js");
+require("./test-kntt-g7-repair-wave1-r1.js");

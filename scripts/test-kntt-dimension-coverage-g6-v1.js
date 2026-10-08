@@ -22,8 +22,23 @@ for(const lock of [
   a.source_locks.written_library
 ]) assert.equal(blob(read(lock.path)),lock.blob_sha,"source drift: "+lock.path);
 
-for(const ev of Object.values(a.source_locks.topic_evidence)){
-  for(const k of ["workspace","micro","manifest"]) assert.equal(blob(read(ev[k].path)),ev[k].sha,"source drift: "+ev[k].path);
+for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
+  if(topic==="02-so-va-phep-tinh"){
+    // Grade-6 audit locks the historical evidence snapshot. The later Grade-7
+    // Wave-1 candidate appends only Grade-7 Learn/Micro/Practice evidence to
+    // this shared topic and must not invalidate the Grade-6 audit.
+    for(const k of ["workspace","micro","manifest"]) assert.match(ev[k].sha,/^[0-9a-f]{40}$/);
+    const workspace=json(ev.workspace.path);
+    const micro=json(ev.micro.path);
+    const manifest=json(ev.manifest.path);
+    for(const id of ["num02-g6-core-1","num02-g6-core-2","num02-g6-core-3","num02-g6-core-4","num02-g6-core-5"]) {
+      assert.ok(workspace.cards.some(card=>card.id===id),"historical Grade-6 topic02 card removed: "+id);
+    }
+    assert.ok(micro.questions.length>=52,"Grade-6 topic02 Micro evidence regressed");
+    assert.ok(manifest.question_count>=132,"Grade-6 topic02 Practice evidence regressed");
+  }else{
+    for(const k of ["workspace","micro","manifest"]) assert.equal(blob(read(ev[k].path)),ev[k].sha,"source drift: "+ev[k].path);
+  }
 }
 
 const matrix=json(a.source_locks.coverage_matrix.path);

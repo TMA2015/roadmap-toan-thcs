@@ -6,7 +6,7 @@
     "id": "02-so-va-phep-tinh",
     "title": "Số và phép tính · Core lớp 6"
   },
-  "question_count": 52,
+  "question_count": 60,
   "questions": [
     {
       "id": "NUM02MICRO_001",
@@ -2358,6 +2358,374 @@
         "verdict": "PENDING_INDEPENDENT_REVIEW",
         "method": "NOTEBOOKLM",
         "packet": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006"
+      }
+    },
+    {
+      "id": "NUM02MICRO_053",
+      "card_id": "num02-g7-core-1",
+      "micro_role": "base",
+      "question": "Tính \\(-\\frac34+\\frac56\\).",
+      "options": [
+        "\\(\\frac1{12}\\)",
+        "\\(-\\frac{19}{12}\\)",
+        "\\(\\frac{19}{12}\\)",
+        "\\(-\\frac1{12}\\)"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "Quy đồng mẫu 12: \\(-9/12+10/12=1/12\\).",
+      "hints": [
+        "Quy đồng hai phân số về cùng mẫu.",
+        "Mẫu chung nhỏ nhất của 4 và 6 là 12."
+      ],
+      "type": "cong-so-huu-ti",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "phep-tinh-so-huu-ti"
+        ],
+        "type": "cong-so-huu-ti",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 1-3"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+      }
+    },
+    {
+      "id": "NUM02MICRO_054",
+      "card_id": "num02-g7-core-1",
+      "micro_role": "trap",
+      "question": "Tính \\((-\\frac23):\\frac49\\).",
+      "options": [
+        "\\(-\\frac32\\)",
+        "\\(-\\frac8{27}\\)",
+        "\\(\\frac32\\)",
+        "\\(-\\frac29\\)"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "Chia cho \\(4/9\\) là nhân với \\(9/4\\): \\((-2/3)\\times(9/4)=-3/2\\).",
+      "hints": [
+        "Chỉ đảo số chia.",
+        "Đổi phép chia thành phép nhân với số nghịch đảo của \\(4/9\\)."
+      ],
+      "type": "chia-so-huu-ti",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "phep-tinh-so-huu-ti"
+        ],
+        "type": "chia-so-huu-ti",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 1-3"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+      }
+    },
+    {
+      "id": "NUM02MICRO_055",
+      "card_id": "num02-g7-core-1",
+      "micro_role": "apply",
+      "question": "Tính \\(\\frac12-\\left(-\\frac34\\right)\\cdot\\frac23\\).",
+      "options": [
+        "\\(1\\)",
+        "\\(0\\)",
+        "\\(-1\\)",
+        "\\(\\frac14\\)"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "Tích bằng \\(-1/2\\), nên \\(1/2-(-1/2)=1\\).",
+      "hints": [
+        "Thực hiện phép nhân trước phép trừ.",
+        "Tính \\((-3/4)\\times(2/3)\\) trước."
+      ],
+      "type": "bieu-thuc-so-huu-ti",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "phep-tinh-so-huu-ti"
+        ],
+        "type": "bieu-thuc-so-huu-ti",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 1-3"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+      }
+    },
+    {
+      "id": "NUM02MICRO_056",
+      "card_id": "num02-g7-core-1",
+      "micro_role": "coverage",
+      "question": "Giá trị của \\(\\left(-\\frac23\\right)^2\\) là:",
+      "options": [
+        "\\(\\frac49\\)",
+        "\\(-\\frac49\\)",
+        "\\(\\frac23\\)",
+        "\\(-\\frac23\\)"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "Bình phương một số âm cho kết quả dương: \\((-2/3)^2=4/9\\).",
+      "hints": [
+        "Dấu âm nằm bên trong ngoặc và cũng được bình phương.",
+        "Nhân \\((-2/3)\\) với chính nó."
+      ],
+      "type": "luy-thua-so-huu-ti",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "phep-tinh-so-huu-ti"
+        ],
+        "type": "luy-thua-so-huu-ti",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 1-3"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+      }
+    },
+    {
+      "id": "NUM02MICRO_057",
+      "card_id": "num02-g7-core-2",
+      "micro_role": "base",
+      "question": "Số nào sau đây là số vô tỉ?",
+      "options": [
+        "\\(\\sqrt2\\)",
+        "\\(-\\frac34\\)",
+        "\\(0,125\\)",
+        "\\(0,(3)\\)"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "\\(\\sqrt2\\) không viết được dưới dạng phân số của hai số nguyên; các số còn lại đều là số hữu tỉ.",
+      "hints": [
+        "Số thập phân hữu hạn và vô hạn tuần hoàn đều là số hữu tỉ.",
+        "Tìm số không thể viết dưới dạng \\(a/b\\)."
+      ],
+      "type": "nhan-biet-so-vo-ti",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-vo-ti"
+        ],
+        "type": "nhan-biet-so-vo-ti",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 5-7"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+      }
+    },
+    {
+      "id": "NUM02MICRO_058",
+      "card_id": "num02-g7-core-2",
+      "micro_role": "trap",
+      "question": "Căn bậc hai số học của 49 là:",
+      "options": [
+        "\\(7\\)",
+        "\\(-7\\)",
+        "\\(\\pm7\\)",
+        "\\(49\\)"
+      ],
+      "answer": 0,
+      "difficulty": "basic",
+      "explanation": "Căn bậc hai số học là số không âm; vì \\(7^2=49\\) nên \\(\\sqrt{49}=7\\).",
+      "hints": [
+        "Kí hiệu \\(\\sqrt a\\) chỉ giá trị không âm.",
+        "Số không âm nào bình phương bằng 49?"
+      ],
+      "type": "can-bac-hai-so-hoc",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "can-bac-hai-so-hoc"
+        ],
+        "type": "can-bac-hai-so-hoc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 5-7"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+      }
+    },
+    {
+      "id": "NUM02MICRO_059",
+      "card_id": "num02-g7-core-2",
+      "micro_role": "apply",
+      "question": "Khẳng định nào đúng?",
+      "options": [
+        "\\(\\sqrt5\\) là số vô tỉ.",
+        "Mọi số có dấu căn đều vô tỉ.",
+        "\\(\\sqrt{36}=\\pm6\\).",
+        "Số vô tỉ có biểu diễn thập phân vô hạn tuần hoàn."
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "\\(\\sqrt5\\) là số vô tỉ. \\(\\sqrt{36}=6\\), và số vô tỉ có biểu diễn thập phân vô hạn không tuần hoàn.",
+      "hints": [
+        "Kiểm tra riêng từng khẳng định.",
+        "Nhớ rằng căn của một số chính phương có thể là số hữu tỉ."
+      ],
+      "type": "phan-biet-huu-ti-vo-ti",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "so-vo-ti"
+        ],
+        "type": "phan-biet-huu-ti-vo-ti",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 5-7"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+      }
+    },
+    {
+      "id": "NUM02MICRO_060",
+      "card_id": "num02-g7-core-2",
+      "micro_role": "coverage",
+      "question": "Tính \\(\\sqrt{0,81}\\).",
+      "options": [
+        "\\(0,9\\)",
+        "\\(0,09\\)",
+        "\\(9\\)",
+        "\\(\\pm0,9\\)"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explanation": "\\(0,9^2=0,81\\) và căn bậc hai số học lấy giá trị không âm, nên \\(\\sqrt{0,81}=0,9\\).",
+      "hints": [
+        "Tìm số không âm có bình phương bằng 0,81.",
+        "\\(0,9\\times0,9=0,81\\)."
+      ],
+      "type": "can-bac-hai-so-hoc",
+      "tags": {
+        "topic": "02-so-va-phep-tinh",
+        "skill": [
+          "can-bac-hai-so-hoc"
+        ],
+        "type": "can-bac-hai-so-hoc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 5-7"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
       }
     }
   ]
