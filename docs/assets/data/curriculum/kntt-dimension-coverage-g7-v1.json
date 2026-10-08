@@ -1,0 +1,1080 @@
+{
+  "schema": "kntt-dimension-coverage-audit-v1",
+  "version": 1,
+  "as_of": "2026-10-08",
+  "grade": 7,
+  "status": "G7_EVIDENCE_AUDIT_BASELINE_PENDING",
+  "architecture": "One Knowledge Graph · Two Learning Paths",
+  "purpose": "Scale the six-dimension evidence audit to the 21 semantically reconciled Grade-7 KNTT rows without treating skill identity or roadmap placement as proof of learner evidence.",
+  "source_locks": {
+    "coverage_matrix": {
+      "path": "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
+      "blob_sha": "2935f58925918674b5bacd2d8743d5526283adba"
+    },
+    "grade7_reconciliation": {
+      "path": "docs/assets/data/curriculum/kntt-grade7-reconciliation-r2.json",
+      "blob_sha": "bac3e56c82fcad760f9993b390b064c299c75ecc"
+    },
+    "grade7_reconciliation_review": {
+      "path": "review-packets/kntt-grade7-reconciliation-r2/01_NOTEBOOKLM_RESULT_R2.md",
+      "blob_sha": "8ea88cecdb6da2346d27e0d3d38c1e09bf3a2554",
+      "clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE"
+    },
+    "taxonomy": {
+      "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+      "blob_sha": "90e58fa666a0cea4ae41ff7ef82a3cbf80ca11e4"
+    },
+    "written_library": {
+      "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+      "blob_sha": "e5b7013e1f71df810a20d39d0f1fef36c2dc48f3"
+    }
+  },
+  "semantic_reconciliation": {
+    "status": "RECONCILED_REVIEWED_R2",
+    "artifact": "docs/assets/data/curriculum/kntt-grade7-reconciliation-r2.json",
+    "clearance": "G7_R2_RECONCILIATION_REVIEW_COMPLETE",
+    "remaining_review_queue": [],
+    "new_canonical_skills": [
+      "phep-tinh-so-huu-ti",
+      "so-vo-ti",
+      "chia-da-thuc-mot-bien"
+    ]
+  },
+  "dimension_definitions": {
+    "SKILL_MAP": "Semantic curriculum-to-skill/family/local mapping; not learner evidence by itself.",
+    "LEARN_CONTENT": "Explicit learner-facing explanation/content that directly teaches the row's semantic target.",
+    "MICRO_PRACTICE": "Short formative practice explicitly aligned to the row.",
+    "PRACTICE_BANK": "Reusable interactive practice evidence; topic/family evidence must not be overstated as exact lesson evidence.",
+    "WRITTEN_LIBRARY": "Canonical Written item with true KNTT placement, not prerequisite overlap.",
+    "READINESS": "Structured independently interpreted readiness evidence; absence means NOT_VERIFIED, not that the learner lacks mastery."
+  },
+  "summary": {
+    "row_count": 21,
+    "semantic_baseline_rows": 21,
+    "evidence_audit_pending_rows": 21,
+    "content_mutations": 0,
+    "new_canonical_skills": 0,
+    "note": "Baseline only. Next phase will classify existing evidence before any repair/authoring decision."
+  },
+  "protected_boundaries": {
+    "mutate_learning_content": false,
+    "mutate_micro_practice": false,
+    "mutate_practice_bank": false,
+    "mutate_written_library": false,
+    "mutate_readiness": false,
+    "create_canonical_skill": false,
+    "learner_history_regrade": false,
+    "runtime_taxonomy_change": false
+  },
+  "rows": [
+    {
+      "chapter": 1,
+      "chapter_title": "Số hữu tỉ",
+      "lesson_ref": "Bài 1-3",
+      "curriculum_summary": "Tập hợp số hữu tỉ; cộng, trừ, nhân, chia số hữu tỉ; lũy thừa với số mũ tự nhiên của số hữu tỉ.",
+      "roadmap": [
+        {
+          "topic_id": "02-so-va-phep-tinh",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "so-huu-ti-thap-phan",
+          "luy-thua",
+          "phep-tinh-so-huu-ti"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 1,
+      "chapter_title": "Số hữu tỉ",
+      "lesson_ref": "Bài 4",
+      "curriculum_summary": "Thứ tự thực hiện phép tính; quy tắc chuyển vế trong các bài toán tìm số hữu tỉ chưa biết.",
+      "roadmap": [
+        {
+          "topic_id": "02-so-va-phep-tinh",
+          "relation": "PRIMARY"
+        },
+        {
+          "topic_id": "08-phuong-trinh-bat-phuong-trinh",
+          "relation": "PREREQUISITE"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "thu-tu-phep-tinh"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [
+          {
+            "historical_ref": "quy-tac-chuyen-ve",
+            "local_role": "PREREQUISITE_TECHNIQUE",
+            "reason": "NotebookLM PASS: transposition is an equation-solving technique/problem type kept lesson-local; no global skill created."
+          }
+        ],
+        "historical_unresolved_refs": [
+          "quy-tac-chuyen-ve"
+        ],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "Số thực",
+      "lesson_ref": "Bài 5-7",
+      "curriculum_summary": "Số thập phân vô hạn tuần hoàn; số vô tỉ; căn bậc hai số học; tập hợp số thực.",
+      "roadmap": [
+        {
+          "topic_id": "02-so-va-phep-tinh",
+          "relation": "PRIMARY"
+        },
+        {
+          "topic_id": "11-can-thuc",
+          "relation": "PREREQUISITE"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "so-huu-ti-thap-phan",
+          "so-vo-ti"
+        ],
+        "canonical_families": [
+          "NUM-SETS"
+        ],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [
+          "can-bac-hai",
+          "so-thap-phan-vo-han-tuan-hoan",
+          "tap-hop-so-thuc"
+        ],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "Góc và đường thẳng song song",
+      "lesson_ref": "Bài 8",
+      "curriculum_summary": "Góc ở vị trí đặc biệt và tia phân giác của một góc.",
+      "roadmap": [
+        {
+          "topic_id": "13-goc-va-duong-thang",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "goc-phu-bu",
+          "goc-doi-dinh",
+          "tia-phan-giac",
+          "nhan-dang-goc-dac-biet"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "Góc và đường thẳng song song",
+      "lesson_ref": "Bài 9-10",
+      "curriculum_summary": "Dấu hiệu nhận biết hai đường thẳng song song; tiên đề Euclid; tính chất của hai đường thẳng song song.",
+      "roadmap": [
+        {
+          "topic_id": "13-goc-va-duong-thang",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "goc-so-le-trong",
+          "goc-dong-vi",
+          "goc-trong-cung-phia",
+          "tinh-chat-song-song",
+          "dau-hieu-song-song",
+          "tien-de-euclid"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "Góc và đường thẳng song song",
+      "lesson_ref": "Bài 11",
+      "curriculum_summary": "Khái niệm định lí; giả thiết, kết luận; bước đầu chứng minh định lí.",
+      "roadmap": [
+        {
+          "topic_id": "13-goc-va-duong-thang",
+          "relation": "PRIMARY"
+        },
+        {
+          "topic_id": "14-tam-giac",
+          "relation": "PREREQUISITE"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "gia-thiet-ket-luan",
+          "lap-luan-chung-minh-ngan"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 4,
+      "chapter_title": "Tam giác bằng nhau",
+      "lesson_ref": "Bài 12",
+      "curriculum_summary": "Tổng các góc trong một tam giác.",
+      "roadmap": [
+        {
+          "topic_id": "14-tam-giac",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "tong-goc-tam-giac"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 4,
+      "chapter_title": "Tam giác bằng nhau",
+      "lesson_ref": "Bài 13-15",
+      "curriculum_summary": "Hai tam giác bằng nhau; các trường hợp c-c-c, c-g-c, g-c-g và các trường hợp bằng nhau của tam giác vuông.",
+      "roadmap": [
+        {
+          "topic_id": "14-tam-giac",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "bang-nhau-ccc",
+          "bang-nhau-cgc",
+          "bang-nhau-gcg",
+          "bang-nhau-tam-giac-vuong",
+          "viet-tuong-ung-tam-giac-bang-nhau"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 4,
+      "chapter_title": "Tam giác bằng nhau",
+      "lesson_ref": "Bài 16",
+      "curriculum_summary": "Tam giác cân; đường trung trực của đoạn thẳng và tính chất cách đều hai đầu mút.",
+      "roadmap": [
+        {
+          "topic_id": "14-tam-giac",
+          "relation": "PRIMARY"
+        },
+        {
+          "topic_id": "15-duong-dong-quy",
+          "relation": "PREREQUISITE"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "tam-giac-can",
+          "nhan-biet-trung-truc",
+          "cach-deu-dinh",
+          "tinh-chat-duong-trung-truc"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 5,
+      "chapter_title": "Thu thập và biểu diễn dữ liệu",
+      "lesson_ref": "Bài 17",
+      "curriculum_summary": "Thu thập và phân loại dữ liệu.",
+      "roadmap": [
+        {
+          "topic_id": "21-thong-ke",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "du-lieu-phan-loai",
+          "thu-thap-du-lieu"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 5,
+      "chapter_title": "Thu thập và biểu diễn dữ liệu",
+      "lesson_ref": "Bài 18-19",
+      "curriculum_summary": "Biểu đồ hình quạt tròn và biểu đồ đoạn thẳng; đọc, biểu diễn và nhận xét dữ liệu.",
+      "roadmap": [
+        {
+          "topic_id": "21-thong-ke",
+          "relation": "PRIMARY"
+        },
+        {
+          "topic_id": "03-ti-le-ti-le-thuc",
+          "relation": "SECONDARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "bieu-do-quat-tron",
+          "doc-bieu-do-doan-thang",
+          "chon-bieu-do",
+          "chuyen-bang-bieu-do",
+          "nhan-xet-du-lieu"
+        ],
+        "canonical_families": [
+          "STAT-REPRESENT"
+        ],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [
+          "ve-bieu-do-quat-tron",
+          "ve-bieu-do-doan-thang"
+        ],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 6,
+      "chapter_title": "Tỉ lệ thức và đại lượng tỉ lệ",
+      "lesson_ref": "Bài 20-21",
+      "curriculum_summary": "Tỉ lệ thức; tính chất dãy tỉ số bằng nhau.",
+      "roadmap": [
+        {
+          "topic_id": "03-ti-le-ti-le-thuc",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "ti-le-thuc",
+          "tim-x-ti-le-thuc",
+          "day-ti-so-bang-nhau",
+          "chia-theo-ti-le"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 6,
+      "chapter_title": "Tỉ lệ thức và đại lượng tỉ lệ",
+      "lesson_ref": "Bài 22-23",
+      "curriculum_summary": "Đại lượng tỉ lệ thuận, tỉ lệ nghịch và các bài toán ứng dụng.",
+      "roadmap": [
+        {
+          "topic_id": "03-ti-le-ti-le-thuc",
+          "relation": "PRIMARY"
+        },
+        {
+          "topic_id": "24-bai-toan-thuc-te",
+          "relation": "SECONDARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "ti-le-thuan",
+          "he-so-ti-le-thuan",
+          "ti-le-nghich",
+          "he-so-ti-le-nghich",
+          "phan-biet-thuan-nghich",
+          "mo-hinh-ti-le"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 7,
+      "chapter_title": "Biểu thức đại số và đa thức một biến",
+      "lesson_ref": "Bài 24-25",
+      "curriculum_summary": "Biểu thức đại số; giá trị biểu thức; đa thức một biến, hệ số và bậc.",
+      "roadmap": [
+        {
+          "topic_id": "04-bieu-thuc-dai-so",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "nhan-biet-don-thuc",
+          "nhan-biet-da-thuc",
+          "he-so-bac",
+          "tinh-gia-tri-bieu-thuc"
+        ],
+        "canonical_families": [
+          "ALG-STRUCTURE"
+        ],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [
+          "da-thuc-mot-bien"
+        ],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 7,
+      "chapter_title": "Biểu thức đại số và đa thức một biến",
+      "lesson_ref": "Bài 26-28",
+      "curriculum_summary": "Cộng, trừ, nhân và chia đa thức một biến.",
+      "roadmap": [
+        {
+          "topic_id": "04-bieu-thuc-dai-so",
+          "relation": "PRIMARY"
+        },
+        {
+          "topic_id": "05-7-hang-dang-thuc",
+          "relation": "PREREQUISITE"
+        },
+        {
+          "topic_id": "06-phan-tich-da-thuc",
+          "relation": "PREREQUISITE"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "hang-tu-dong-dang",
+          "thu-gon-da-thuc",
+          "cong-tru-da-thuc",
+          "nhan-bieu-thuc",
+          "tinh-phan-phoi",
+          "chia-da-thuc-mot-bien"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 8,
+      "chapter_title": "Làm quen với biến cố và xác suất của biến cố",
+      "lesson_ref": "Bài 29",
+      "curriculum_summary": "Làm quen với biến cố; biến cố chắc chắn, không thể và ngẫu nhiên trong các tình huống đơn giản.",
+      "roadmap": [
+        {
+          "topic_id": "23-xac-suat",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "bien-co",
+          "bien-co-chac-chan-khong-the"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 8,
+      "chapter_title": "Làm quen với biến cố và xác suất của biến cố",
+      "lesson_ref": "Bài 30",
+      "curriculum_summary": "Làm quen với xác suất của biến cố trong các mô hình đơn giản.",
+      "roadmap": [
+        {
+          "topic_id": "23-xac-suat",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "xac-suat-co-dien",
+          "kiem-tra-xac-suat"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [
+          "xac-suat-bien-co-don-gian"
+        ],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 9,
+      "chapter_title": "Quan hệ giữa các yếu tố trong một tam giác",
+      "lesson_ref": "Bài 31-33",
+      "curriculum_summary": "Quan hệ góc–cạnh đối diện; đường vuông góc và đường xiên; bất đẳng thức tam giác.",
+      "roadmap": [
+        {
+          "topic_id": "14-tam-giac",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "so-sanh-canh-goc",
+          "bat-dang-thuc-tam-giac",
+          "duong-vuong-goc-duong-xien"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 9,
+      "chapter_title": "Quan hệ giữa các yếu tố trong một tam giác",
+      "lesson_ref": "Bài 34-35",
+      "curriculum_summary": "Sự đồng quy và tính chất cơ bản của trung tuyến, phân giác, trung trực, đường cao.",
+      "roadmap": [
+        {
+          "topic_id": "15-duong-dong-quy",
+          "relation": "PRIMARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "nhan-biet-trung-tuyen",
+          "trong-tam",
+          "ti-so-trong-tam",
+          "nhan-biet-phan-giac",
+          "nhan-biet-trung-truc",
+          "nhan-biet-duong-cao",
+          "truc-tam",
+          "tam-noi-tiep",
+          "tam-ngoai-tiep",
+          "phan-biet-bon-tam",
+          "dong-quy-bon-duong-dac-biet"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 10,
+      "chapter_title": "Một số hình khối trong thực tiễn",
+      "lesson_ref": "Bài 36",
+      "curriculum_summary": "Hình hộp chữ nhật và hình lập phương; yếu tố hình, diện tích xung quanh/toàn phần và thể tích.",
+      "roadmap": [
+        {
+          "topic_id": "20-hinh-hoc-tong-hop",
+          "relation": "PRIMARY"
+        },
+        {
+          "topic_id": "24-bai-toan-thuc-te",
+          "relation": "SECONDARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "the-tich-hop-chu-nhat",
+          "dien-tich-day",
+          "doi-don-vi-do-luong",
+          "nhan-biet-hinh-hop-lap-phuong",
+          "dien-tich-xung-quanh-hop-chu-nhat"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    },
+    {
+      "chapter": 10,
+      "chapter_title": "Một số hình khối trong thực tiễn",
+      "lesson_ref": "Bài 37",
+      "curriculum_summary": "Hình lăng trụ đứng tam giác, tứ giác; yếu tố hình, diện tích xung quanh và thể tích; vận dụng thực tế.",
+      "roadmap": [
+        {
+          "topic_id": "20-hinh-hoc-tong-hop",
+          "relation": "PRIMARY"
+        },
+        {
+          "topic_id": "24-bai-toan-thuc-te",
+          "relation": "SECONDARY"
+        }
+      ],
+      "semantic_targets": {
+        "direct_skills": [
+          "the-tich-lang-tru",
+          "dien-tich-day",
+          "doi-don-vi-do-luong",
+          "nhan-biet-lang-tru-dung",
+          "dien-tich-xung-quanh-lang-tru"
+        ],
+        "canonical_families": [],
+        "lesson_local_refs": [],
+        "historical_unresolved_refs": [],
+        "semantic_reconciliation_closed": true
+      },
+      "dimensions": {
+        "SKILL_MAP": {
+          "status": "BASELINE_FROM_RECONCILED_MATRIX"
+        },
+        "LEARN_CONTENT": {
+          "status": "AUDIT_PENDING"
+        },
+        "MICRO_PRACTICE": {
+          "status": "AUDIT_PENDING"
+        },
+        "PRACTICE_BANK": {
+          "status": "AUDIT_PENDING"
+        },
+        "WRITTEN_LIBRARY": {
+          "status": "AUDIT_PENDING"
+        },
+        "READINESS": {
+          "status": "AUDIT_PENDING"
+        }
+      },
+      "audit_note": "Evidence classification pending. Do not infer coverage from skill identity or roadmap placement alone."
+    }
+  ]
+}
