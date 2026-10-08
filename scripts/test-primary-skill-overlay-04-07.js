@@ -22,7 +22,12 @@ for (const topic of topics) {
     assert.equal(overlay.schema,"primary-skill-overlay-draft-v1");
     assert.equal(overlay.status,"review_only_not_consumed_by_runtime");
     assert.equal(overlay.source_manifest,topic.manifest);
-    assert.equal(overlay.source_manifest_blob_sha,blobSha(read(topic.manifest)));
+    // The overlay is a historical 2026-09-26 audit snapshot. Later append-only
+    // Practice expansion must not rewrite that reviewed snapshot.
+    assert.equal(overlay.source_manifest_blob_sha,topic.manifest_sha);
+    const currentManifest=json(topic.manifest);
+    assert.ok(currentManifest.question_count>=topic.declared_questions,topic.topic+": current manifest regressed below historical question count");
+    for(const source of topic.sources) assert.ok(currentManifest.sources.includes(source),topic.topic+": historical source removed from current manifest");
     assert.equal(overlay.source_inventory_snapshot_sha,blobSha(read(base+"review-snapshot-04-11.json")));
     assert.deepEqual(Object.keys(overlay.source_files).sort(),topic.sources.slice().sort());
     const bankQuestions=new Map();
