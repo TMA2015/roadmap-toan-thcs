@@ -1,7 +1,7 @@
 {
   "packet_id": "MATH-KNTT-G7-GAP-PRIORITY-R1-20261008",
   "as_of": "2026-10-08",
-  "status": "ACADEMIC_PRIORITY_REVIEW_PENDING",
+  "status": "ACADEMIC_PRIORITY_REVIEW_COMPLETE",
   "scope": "Independent prioritization of Grade-7 KNTT evidence gaps after existing-evidence inventory R1; no authoring in this packet",
   "source_locks": {
     "grade7_dimension_audit": {
@@ -760,5 +760,94 @@
     "change_mastery": false,
     "regrade_learner_history": false,
     "runtime_taxonomy_change": false
+  },
+  "review_result": {
+    "verdict": "PASS",
+    "clearance": "G7_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+    "anti_inflation": "PASS",
+    "priorities": {
+      "BAI1_3": {
+        "priority": "P0",
+        "dimensions": [
+          "LEARN",
+          "MICRO",
+          "PRACTICE"
+        ]
+      },
+      "BAI5_7": {
+        "priority": "P0",
+        "dimensions": [
+          "LEARN",
+          "MICRO",
+          "PRACTICE"
+        ]
+      },
+      "BAI26_28": {
+        "priority": "P0",
+        "dimensions": [
+          "LEARN",
+          "MICRO",
+          "PRACTICE"
+        ]
+      },
+      "BAI4": {
+        "priority": "P1",
+        "dimensions": [
+          "LEARN",
+          "MICRO"
+        ]
+      },
+      "BAI18_19": {
+        "priority": "P1",
+        "dimensions": [
+          "MICRO"
+        ]
+      },
+      "BAI22_23": {
+        "priority": "P1",
+        "dimensions": [
+          "LEARN",
+          "MICRO"
+        ]
+      },
+      "BAI8": {
+        "priority": "P2",
+        "dimensions": [
+          "MICRO"
+        ]
+      },
+      "BAI24_25": {
+        "priority": "DEFER",
+        "dimensions": [
+          "NONE"
+        ]
+      }
+    },
+    "first_repair_wave": [
+      "BAI1_3",
+      "BAI5_7",
+      "BAI26_28"
+    ],
+    "max_groups_wave1": 3,
+    "written_policy": "NO_QUOTA_EXPANSION_PASS",
+    "readiness_policy": "NO_QUOTA_EXPANSION_PASS",
+    "new_canonical_skills": [],
+    "missing_decisions": [],
+    "receipt": "review-packets/kntt-g7-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md"
+  },
+  "next_step": {
+    "status": "AUTHORIZED_FOR_CANDIDATE_AUTHORING_ONLY",
+    "wave_id": "G7_REPAIR_WAVE1_R1",
+    "lesson_groups": [
+      "BAI1_3",
+      "BAI5_7",
+      "BAI26_28"
+    ],
+    "dimensions": [
+      "LEARN",
+      "MICRO",
+      "PRACTICE"
+    ],
+    "requires_independent_content_review_before_merge": true
   }
 }
