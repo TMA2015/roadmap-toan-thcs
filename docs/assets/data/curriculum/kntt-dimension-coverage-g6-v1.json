@@ -1,9 +1,9 @@
 {
   "schema": "kntt-dimension-coverage-audit-v1",
   "version": 1,
-  "as_of": "2026-10-07",
+  "as_of": "2026-10-08",
   "grade": 6,
-  "status": "G6_WRITTEN_WAVE1_RECONCILED_R1",
+  "status": "G6_WRITTEN_BAI42_RECONCILED_R1",
   "architecture": "One Knowledge Graph · Two Learning Paths",
   "purpose": "Audit whether semantically mapped Grade-6 KNTT rows have explicit evidence across six learning dimensions without treating skill-ID existence as full coverage.",
   "source_locks": {
@@ -21,7 +21,7 @@
     },
     "written_library": {
       "path": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
-      "blob_sha": "fd772fd07612698f1c59f4959a17c8e8915cfe70"
+      "blob_sha": "e5b7013e1f71df810a20d39d0f1fef36c2dc48f3"
     },
     "topic_evidence": {
       "02-so-va-phep-tinh": {
@@ -387,9 +387,9 @@
         "NONE": 0
       },
       "WRITTEN_LIBRARY": {
-        "VERIFIED_KNTT_PLACEMENT": 8,
+        "VERIFIED_KNTT_PLACEMENT": 9,
         "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 0,
-        "NONE": 23
+        "NONE": 22
       },
       "READINESS": {
         "NOT_VERIFIED_STRUCTURED": 29,
@@ -398,7 +398,7 @@
         "PENDING_REVIEW": 0
       }
     },
-    "written_library_kntt_placement_count": 7,
+    "written_library_kntt_placement_count": 8,
     "priority_gap_rows": [],
     "repaired_rows": [
       {
@@ -715,8 +715,8 @@
       "max_new_items_wave1": 3,
       "review_receipt": "review-packets/kntt-g6-written-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md"
     },
-    "written_library_kntt_item_count": 7,
-    "written_library_kntt_placement_row_count": 8,
+    "written_library_kntt_item_count": 8,
+    "written_library_kntt_placement_row_count": 9,
     "written_wave1_reconciliation": {
       "packet_id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-20261007",
       "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
@@ -753,6 +753,26 @@
         "learner_history_regrade": false,
         "runtime_taxonomy_change": false
       }
+    },
+    "written_bai42_reconciliation": {
+      "packet_id": "MATH-KNTT-G6-WRITTEN-BAI42-R1-20261007",
+      "clearance": "G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE",
+      "appended_item": {
+        "exercise_id": "WX23-PRO-003",
+        "lesson_ref": "Bài 42"
+      },
+      "grade6_written_item_count_with_kntt_placement": 8,
+      "grade6_verified_written_rows": 9,
+      "boundaries": {
+        "grade6_terminology": "sự kiện",
+        "probability_calculation": false,
+        "new_canonical_skills": 0,
+        "readiness_credit": false,
+        "mastery_change": false,
+        "learner_history_regrade": false,
+        "runtime_taxonomy_change": false
+      },
+      "review_receipt": "review-packets/kntt-g6-written-bai42-r1/01_NOTEBOOKLM_RESULT_R1.md"
     }
   },
   "rows": [
@@ -3817,9 +3837,21 @@
           "note": "Practice manifests are topic-level and do not by themselves prove Grade-6 lesson placement."
         },
         "WRITTEN_LIBRARY": {
-          "status": "NONE",
-          "candidates": [],
-          "note": "No Grade-6 skill-matched written candidate found in the current shared library."
+          "status": "VERIFIED_KNTT_PLACEMENT",
+          "placements": [
+            {
+              "exercise_id": "WX23-PRO-003",
+              "grade": 6,
+              "chapter": 9,
+              "lesson": "Bài 42 — Kết quả có thể và sự kiện trong trò chơi, thí nghiệm"
+            }
+          ],
+          "evidence": {
+            "packet_id": "MATH-KNTT-G6-WRITTEN-BAI42-R1-20261007",
+            "clearance": "G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE",
+            "review_receipt": "review-packets/kntt-g6-written-bai42-r1/01_NOTEBOOKLM_RESULT_R1.md"
+          },
+          "note": "Independent review confirms a true Grade-6 Bài 42 Written anchor for distinguishing a concrete outcome from a sự kiện, without introducing probability calculation or a new canonical skill."
         },
         "READINESS": {
           "status": "NOT_VERIFIED_STRUCTURED",
@@ -3835,9 +3867,9 @@
         "learn": "VERIFIED_LESSON_LOCAL",
         "micro": "VERIFIED_LESSON_LOCAL",
         "practice": "FAMILY_LEVEL_TOPIC_EVIDENCE",
-        "written": "NONE",
+        "written": "VERIFIED_KNTT_PLACEMENT",
         "readiness": "PENDING_REVIEW",
-        "note": "Bài 42 Learn + Grade-6 lesson-local Micro evidence repaired. Practice remains topic/family-level; Written and Readiness dimensions are unchanged."
+        "note": "Bài 42 Learn + Grade-6 lesson-local Micro evidence repaired. Practice remains topic/family-level; Written and Readiness dimensions are unchanged. Written Bài 42 is independently reviewed and verified by WX23-PRO-003."
       }
     },
     {
