@@ -167,11 +167,11 @@ with sync_playwright() as p:
             core_page.locator('#core-journey[data-core-ready="1"]').wait_for(state="visible", timeout=12000)
             check(core_page.locator(".topic-core-teaching-item").count() == 0,
                   "no duplicate lecture accordion outside cards")
-            expected_core_cards = 10 if slug == "20-hinh-hoc-tong-hop" else 5
+            expected_core_cards = 10 if slug == "20-hinh-hoc-tong-hop" else (6 if slug == "04-bieu-thuc-dai-so" else 5)
             check(core_page.locator(".topic-core-card .topic-core-teach-start").count() == expected_core_cards,
-                  "all five cards have a lecture button")
+                  "all published Core cards have a lecture button")
             check(core_page.locator(".topic-core-card .topic-micro-start").count() == expected_core_cards,
-                  "all five cards retain the practice button")
+                  "all published Core cards retain the practice button")
             if slug == "07-phan-thuc-dai-so":
                 first_card = core_page.locator('.topic-core-card[data-card-id="pt07-core-1"]')
                 second_card = core_page.locator('.topic-core-card[data-card-id="pt07-core-2"]')
