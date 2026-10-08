@@ -115,7 +115,7 @@ assert.ok(cardReal.teaching_copy.misconception.includes("√49 = ±7"));
 assert.ok(cardReal.teaching_copy.summary.includes("lớp 7"));
 assert.equal(m4.questions.find(x=>x.id==="ALG04MICRO_016").answer,0);
 assert.ok(cardDiv.teaching_copy.key_idea.includes("hạng tử bậc cao nhất"));
-assert.ok(cardDiv.teaching_copy.misconception.includes("không"));
+assert.ok(cardDiv.teaching_copy.misconception.toLowerCase().includes("không"));
 assert.ok(!JSON.stringify(artifact.candidates).includes('"WRITTEN"'));
 assert.ok(!JSON.stringify(artifact.candidates).includes('"READINESS"'));
 
