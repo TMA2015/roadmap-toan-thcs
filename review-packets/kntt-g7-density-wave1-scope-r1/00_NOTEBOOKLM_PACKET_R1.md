@@ -126,3 +126,19 @@ Do not issue `G7_DENSITY_W1_SCOPE_R1_REVIEW_COMPLETE` unless BAI8, BAI24_25 and 
 A PASS with clearance authorizes **candidate authoring only** for BAI8 Micro evidence targeting `goc-phu-bu`.
 
 It does not authorize merge/deploy. Candidate content must receive a separate independent NotebookLM content review before merge.
+
+
+## Owner authorization override — 2026-10-08
+
+The owner explicitly waived the separate NotebookLM scope-review round because this gap is narrowly bounded and already evidenced:
+
+- Learn for BAI8 is already sufficient.
+- Practice for BAI8 is already sufficient.
+- The only remaining gap is explicit Grade-7 Micro evidence for `goc-phu-bu`.
+- `goc-phu-bu` already exists in the canonical skill graph and has prior Micro evidence at Grade 6.
+- Authorized implementation is limited to exactly **one** Grade-7 `coverage` Micro item.
+- No Learn, Practice, Written, Readiness, taxonomy, Mastery, or learner-history change is authorized.
+
+Implementation candidate: `GEO13MICRO_023`.
+
+This owner decision supersedes the requirement for a separate NotebookLM scope clearance for this bounded repair only.
