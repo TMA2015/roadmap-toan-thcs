@@ -11,7 +11,7 @@ ok(data.schema_version==="1.0.0","schema version");
 ok(data.status==="ACTIVE_APPEND_ONLY","active append-only catalog");
 ok(data.auto_readiness_credit===false,"no readiness credit");
 ok(data.self_marking_only===true,"self marking only");
-ok(Array.isArray(data.exercises)&&data.exercises.length===53,"exact fifty-three published items");
+ok(Array.isArray(data.exercises)&&data.exercises.length===54,"exact fifty-four published items");
 
 const expected=[
   "WX07-RAT-001","WX07-RAT-002",
@@ -37,13 +37,13 @@ const expected=[
   "WX20-GEO-001","WX20-GEO-002",
   "WX21-STA-001","WX21-STA-002",
   "WX09-SYS-003","WX09-SYS-004","WX09-SYS-005","WX09-SYS-006","WX09-SYS-007","WX09-SYS-008",
-  "WX02-NUM-003","WX20-GEO-003","WX13-LIN-003"
+  "WX02-NUM-003","WX20-GEO-003","WX13-LIN-003","WX23-PRO-003"
 ];
 ok(JSON.stringify(data.exercises.map(x=>x.exercise_id))===JSON.stringify(expected),"exact stable IDs");
 
 for(const topic of ["CT02","CT03","CT04","CT05","CT06","CT07","CT08","CT09","CT10","CT11","CT12","CT13","CT14","CT15","CT16","CT17","CT18","CT19","CT20","CT21","CT23","CT24"]){
   const items=data.exercises.filter(x=>x.topic_id===topic);
-  const expectedCount=topic==="CT09"?8:["CT02","CT13","CT20"].includes(topic)?3:2;
+  const expectedCount=topic==="CT09"?8:["CT02","CT13","CT20","CT23"].includes(topic)?3:2;
   ok(items.length===expectedCount,topic+" expected written item count");
   ok(items.some(x=>x.level==="CORE_BASE"),topic+" CORE_BASE");
   ok(items.some(x=>x.level==="CORE_APPLY"),topic+" CORE_APPLY");
@@ -143,10 +143,16 @@ ok(page.includes("data-written-exercise-library"),"library page mount");
 ok(!page.includes("Pilot v1"),"library intro no longer pilot-labelled");
 ok(!page.includes("Hiện pilot có"),"library intro has no stale fixed pilot count");
 ok(page.includes("mở rộng dần theo từng chuyên đề"),"library intro uses durable expansion copy");
-ok(data.published_scope?.exercise_count===53,"published scope count");
+ok(data.published_scope?.exercise_count===54,"published scope count");
 ok(data.published_scope?.batches?.every(x=>x.status==="PUBLISHED"),"all released written-library batches marked published");
 ok(data.published_scope?.batches?.some(x=>x.batch_id==="CT09_P1B_R1"&&x.count===6),"CT09 P1-B release batch");
 ok(data.published_scope?.batches?.some(x=>x.batch_id==="G6_WRITTEN_WAVE1_R1"&&x.count===3),"Grade-6 Written Wave-1 release batch");
+ok(data.published_scope?.batches?.some(x=>x.batch_id==="G6_WRITTEN_BAI42_R1"&&x.count===1),"Grade-6 Written Bài42 release batch");
+ok(byId["WX23-PRO-003"].exercise_kind==="anchor","Bài42 anchor kind");
+ok(byId["WX23-PRO-003"].hint_steps.length===3,"Bài42 hint count");
+ok(byId["WX23-PRO-003"].academic_review?.receipt==="review-packets/kntt-g6-written-bai42-r1/01_NOTEBOOKLM_RESULT_R1.md","Bài42 review receipt");
+ok(byId["WX23-PRO-003"].kntt_placements?.[0]?.lesson.startsWith("Bài 42"),"Bài42 KNTT placement");
+ok((byId["WX23-PRO-003"].skills||[]).length===0,"Bài42 creates no canonical skill");
 for(const id of ["WX02-NUM-003","WX20-GEO-003","WX13-LIN-003"]){
   ok(byId[id].exercise_kind==="anchor","Wave-1 anchor kind "+id);
   ok(byId[id].hint_steps.length===3,"Wave-1 hint count "+id);
@@ -170,7 +176,7 @@ ok(ui.includes("initTopicLibraryLink")&&ui.includes('luyen-tap/?topic='),"topic 
 ok(uiCss.includes("grid-template-columns:repeat(3,minmax(0,1fr))"),"help actions use one three-column row");
 ok(uiCss.includes(".written-topic-library-link"),"topic-to-library CTA styled");
 
-console.log("PASS: written exercise catalog = 53 items / 22 topics including CT09 P1-B and Grade-6 Written Wave-1 deep anchors.");
+console.log("PASS: written exercise catalog = 54 items / 22 topics including CT09 P1-B and Grade-6 Written Wave-1 deep anchors.");
 console.log("PASS: rubric, remediation, geometry assets and no-readiness boundary validated.");
 console.log("PASS: exact published conclusions and UI wiring validated.");
 console.log("PASS: compact 3-action help row and topic-filter deep links validated.");
