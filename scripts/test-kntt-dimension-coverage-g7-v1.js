@@ -22,9 +22,32 @@ for(const k of ["coverage_matrix","grade7_reconciliation","grade7_reconciliation
   const lock=a.source_locks[k];
   assert.equal(blob(read(lock.path)),lock.blob_sha,"source drift: "+lock.path);
 }
-for(const ev of Object.values(a.source_locks.topic_evidence)){
-  for(const k of ["workspace","micro","manifest"]){
-    assert.equal(blob(read(ev[k].path)),ev[k].sha,"source drift: "+ev[k].path);
+for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
+  if(topic==="02-so-va-phep-tinh" || topic==="04-bieu-thuc-dai-so"){
+    // The inventory is a historical evidence snapshot. Wave-1 candidates append
+    // Grade-7 Learn/Micro/Practice evidence to these two topics; that must not
+    // rewrite the inventory's original source locks or conclusions.
+    for(const k of ["workspace","micro","manifest"]) assert.match(ev[k].sha,/^[0-9a-f]{40}$/);
+    const workspace=json(ev.workspace.path);
+    const micro=json(ev.micro.path);
+    const manifest=json(ev.manifest.path);
+    if(topic==="02-so-va-phep-tinh"){
+      for(const id of ["num02-g6-core-1","num02-g6-core-2","num02-g6-core-3","num02-g6-core-4","num02-g6-core-5"]) {
+        assert.ok(workspace.cards.some(card=>card.id===id),"historical topic02 card removed: "+id);
+      }
+      assert.ok(micro.questions.length>=52,"topic02 historical Micro evidence regressed");
+      assert.ok(manifest.question_count>=132,"topic02 historical Practice evidence regressed");
+    }else{
+      for(const id of ["alg04-core-1","alg04-core-2","alg04-core-3","alg04-core-4","alg04-core-5"]) {
+        assert.ok(workspace.cards.some(card=>card.id===id),"historical topic04 card removed: "+id);
+      }
+      assert.ok(micro.questions.length>=15,"topic04 historical Micro evidence regressed");
+      assert.ok(manifest.question_count>=132,"topic04 historical Practice evidence regressed");
+    }
+  }else{
+    for(const k of ["workspace","micro","manifest"]){
+      assert.equal(blob(read(ev[k].path)),ev[k].sha,"source drift: "+ev[k].path);
+    }
   }
   if(ev.assessment) assert.equal(blob(read(ev.assessment.path)),ev.assessment.sha,"source drift: "+ev.assessment.path);
 }
