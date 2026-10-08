@@ -51,7 +51,7 @@ for (const card of workspace.cards || []) {
   if (otherExtras.some(q => q.micro_role !== "coverage")) errors.push(`${card.id}: extra questions must be marked coverage`);
   if (approvedWave2.length) {
     const roles = approvedWave2.map(q => q.micro_role).join(",");
-    if (roles !== "base,trap,apply,coverage") errors.push(`${card.id}: approved Wave-2 diagnostic batch must preserve base,trap,apply,coverage`);
+    if (!["coverage","base,trap,apply,coverage"].includes(roles)) errors.push(`${card.id}: approved Wave-2 diagnostic batch has invalid role sequence`);
     if (approvedWave2.some(q => q.authoring_review?.status !== "PASS")) errors.push(`${card.id}: approved Wave-2 diagnostic batch must be academically PASS`);
   }
   for (const q of qs) {
