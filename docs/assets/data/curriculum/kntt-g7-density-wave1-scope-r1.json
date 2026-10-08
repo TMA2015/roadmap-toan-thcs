@@ -1,7 +1,7 @@
 {
   "packet_id": "MATH-KNTT-G7-DENSITY-W1-SCOPE-R1-20261008",
   "as_of": "2026-10-08",
-  "status": "ACADEMIC_SCOPE_REVIEW_PENDING",
+  "status": "OWNER_SCOPE_AUTHORIZED",
   "scope": "Grade-7 Density Wave 1 scope review after Repair Waves 1–2 closure; BAI8 Micro-only candidate",
   "closed_baseline": {
     "wave1": {
@@ -69,7 +69,16 @@
     ]
   },
   "next_step": {
-    "status": "AWAIT_NOTEBOOKLM_SCOPE_CLEARANCE",
-    "required_clearance": "G7_DENSITY_W1_SCOPE_R1_REVIEW_COMPLETE"
+    "status": "AUTHORIZED_FOR_MINIMAL_CANDIDATE_AUTHORING",
+    "implementation": "Add exactly one Grade-7 coverage Micro item for goc-phu-bu; no Learn/Practice/Written/Readiness/taxonomy changes."
+  },
+  "owner_authorization": {
+    "decision": "PROCEED_WITHOUT_NOTEBOOKLM_SCOPE_REVIEW",
+    "rationale": "Gap is narrowly bounded and already reconciled: Learn and Practice are sufficient; only explicit Grade-7 Micro evidence for goc-phu-bu is missing. Owner authorizes direct implementation after assistant review.",
+    "authorized_group": "BAI8",
+    "authorized_dimension": "MICRO",
+    "authorized_target": "goc-phu-bu",
+    "maximum_new_micro_items": 1,
+    "reviewed_on": "2026-10-08"
   }
 }
