@@ -1,5 +1,5 @@
 {
-  "version": "1.0.239",
+  "version": "1.0.240",
   "schema": "roadmap-collaboration-task-registry-v1",
   "updated": "2026-10-08",
   "statuses": [
@@ -1829,15 +1829,31 @@
       "id": "MATH-KNTT-G7-GAP-PRIORITY-R1-001",
       "title": "Grade 7 evidence-gap priority review R1",
       "routing": "NOTEBOOKLM_ACADEMIC_REVIEW+GOVERNANCE",
-      "status": "IN_PROGRESS",
-      "context_version": "1.0.239",
-      "review_verdict": "PACKET_READY_PR358_CI_PASS_AWAIT_NOTEBOOKLM",
-      "review_notes": "Grade-7 evidence-gap priority packet R1 is ready on Draft PR #358. Exact source contract: 5 selected NotebookLM Sources = 2 permanent governance + SGK Toán 7 tập một + SGK Toán 7 tập hai + 00_NOTEBOOKLM_PACKET_R1.md. Written Exercise Library Contract v1 and the Grade-7 audit JSON are explicitly not separate selected Sources. PR head 73b796367f5543b68b4fedc0bbccaeff3458e613 passed Roadmap PR Quality run 37711372958. Await independent NotebookLM review; do not merge/author repair before clearance G7_GAP_PRIORITY_R1_REVIEW_COMPLETE.",
+      "status": "DONE",
+      "context_version": "1.0.240",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_PR358_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "NotebookLM PASS with clearance G7_GAP_PRIORITY_R1_REVIEW_COMPLETE. Confirmed P0 Bài1-3, Bài5-7, Bài26-28 with LEARN;MICRO;PRACTICE repairs; P1 Bài4 (LEARN;MICRO), Bài18-19 (MICRO), Bài22-23 (LEARN;MICRO); P2 Bài8 (MICRO); Bài24-25 DEFER/NONE. Written and Readiness no-quota policies PASS; no new canonical skills. First repair wave is exactly Bài1-3; Bài5-7; Bài26-28. PR #358 merged as ec764dcccd8042035c935a654f59c8329ed3ade9; Deploy MkDocs run 37728892963 SUCCESS.",
       "artifacts": [
         "docs/assets/data/curriculum/kntt-g7-gap-priority-r1.json",
         "review-packets/kntt-g7-gap-priority-r1/00_NOTEBOOKLM_PACKET_R1.md",
         "scripts/test-kntt-g7-gap-priority-r1.js"
-      ]
+      ],
+      "release": {
+        "pr": 358,
+        "merge_sha": "ec764dcccd8042035c935a654f59c8329ed3ade9",
+        "deploy_run": 37728892963,
+        "deploy_conclusion": "SUCCESS",
+        "clearance": "G7_GAP_PRIORITY_R1_REVIEW_COMPLETE"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G7-REPAIR-WAVE1-R1-001",
+      "title": "Grade 7 P0 Repair Wave 1 — Bài 1–3, Bài 5–7, Bài 26–28",
+      "routing": "CANDIDATE_AUTHORING+NOTEBOOKLM_ACADEMIC_REVIEW",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.240",
+      "review_verdict": "AUTHOR_CANDIDATES_ONLY_BEFORE_NOTEBOOKLM",
+      "review_notes": "Authorized candidate repair scope from independent gap-priority review: Bài1-3 LEARN+MICRO+PRACTICE for phep-tinh-so-huu-ti; Bài5-7 LEARN+MICRO+PRACTICE for so-vo-ti + can-bac-hai-so-hoc within Grade-7 basic real-number/square-root scope; Bài26-28 LEARN+MICRO+PRACTICE for chia-da-thuc-mot-bien. No Written/Readiness work and no new canonical skills in Wave 1. Candidate authoring must be independently reviewed before production mutation."
     }
   ]
 }
