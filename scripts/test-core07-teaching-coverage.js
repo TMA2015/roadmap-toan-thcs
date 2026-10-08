@@ -5,7 +5,7 @@ const base="docs/assets/data/curriculum/topic07-learning-workspace.json";
 const packet=read("content-staging/reviews/MATH-CORE07-TEACH-R1-20260929.json");
 const workspace=read(base),bank=read("docs/assets/data/practice/07-phan-thuc-dai-so-micro-v1.json");
 const expected=new Map(packet.cards.map(c=>[c.id,c]));
-assert(workspace.cards.length===5 && expected.size===5 && bank.questions.length===17,"five reviewed teaching copies; original fifteen plus two self-audited items");
+assert(workspace.cards.length===5 && expected.size===5 && bank.questions.length===18,"five reviewed teaching copies; original fifteen plus two historical coverage items and one bounded Grade-8 density item");
 const questionIds=new Set(bank.questions.map(q=>q.id));
 for(const card of workspace.cards){
  const source=expected.get(card.id),copy=card.teaching_copy;
