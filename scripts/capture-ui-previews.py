@@ -167,7 +167,7 @@ with sync_playwright() as p:
             core_page.locator('#core-journey[data-core-ready="1"]').wait_for(state="visible", timeout=12000)
             check(core_page.locator(".topic-core-teaching-item").count() == 0,
                   "no duplicate lecture accordion outside cards")
-            expected_core_cards = 10 if slug == "20-hinh-hoc-tong-hop" else (6 if slug == "04-bieu-thuc-dai-so" else 5)
+            expected_core_cards = 10 if slug == "20-hinh-hoc-tong-hop" else (7 if slug == "02-so-va-phep-tinh" else (6 if slug == "04-bieu-thuc-dai-so" else 5))
             check(core_page.locator(".topic-core-card .topic-core-teach-start").count() == expected_core_cards,
                   "all published Core cards have a lecture button")
             check(core_page.locator(".topic-core-card .topic-micro-start").count() == expected_core_cards,
