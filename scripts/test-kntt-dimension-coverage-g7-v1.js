@@ -44,6 +44,25 @@ for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
       assert.ok(micro.questions.length>=15,"topic04 historical Micro evidence regressed");
       assert.ok(manifest.question_count>=132,"topic04 historical Practice evidence regressed");
     }
+  }else if(topic==="03-ti-le-ti-le-thuc" || topic==="21-thong-ke"){
+    // Wave 2 is append-only Learn/Micro repair for Grade 7 on these topics.
+    // Preserve historical inventory locks while asserting the pre-existing
+    // evidence remains and Practice/assessment sources stay unchanged.
+    for(const k of ["workspace","micro"]) assert.match(ev[k].sha,/^[0-9a-f]{40}$/);
+    assert.equal(blob(read(ev.manifest.path)),ev.manifest.sha,"source drift: "+ev.manifest.path);
+    const workspace=json(ev.workspace.path);
+    const micro=json(ev.micro.path);
+    if(topic==="03-ti-le-ti-le-thuc"){
+      for(const id of ["rat03-core-g6-1","rat03-core-g7-2","rat03-core-g7-3","rat03-core-g7-4","rat03-core-g7-5"]) {
+        assert.ok(workspace.cards.some(card=>card.id===id),"historical topic03 card removed: "+id);
+      }
+      assert.ok(micro.questions.length>=15,"topic03 historical Micro evidence regressed");
+    }else{
+      for(const id of ["sta21-core-1","sta21-core-2","sta21-core-3","sta21-core-4","sta21-core-5"]) {
+        assert.ok(workspace.cards.some(card=>card.id===id),"historical topic21 card removed: "+id);
+      }
+      assert.ok(micro.questions.length>=20,"topic21 historical Micro evidence regressed");
+    }
   }else{
     for(const k of ["workspace","micro","manifest"]){
       assert.equal(blob(read(ev[k].path)),ev[k].sha,"source drift: "+ev[k].path);
