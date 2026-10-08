@@ -290,7 +290,7 @@
     ],
     "content_mutations": 0,
     "new_canonical_skills": 0,
-    "note": "Inventory only. Ch.7 and Ch.8 are true learner-evidence gaps; Ch.6 is an item-review queue, not automatic authoring authorization. Ch.10 missing Grade-9 Micro for shared unit conversion is not treated as a density quota."
+    "note": "Inventory only. Ch.7 and Ch.8 are true learner-evidence gaps; Ch.6 is an item-review queue, not automatic authoring authorization. Ch.10 missing Grade-9 Micro for shared unit conversion is not treated as a density quota. Secondary Topic24 support is recorded in roadmap but is not used to inflate primary Learn/Micro evidence."
   },
   "protected_boundaries": {
     "mutate_learning_content": false,
@@ -312,6 +312,10 @@
         {
           "topic_id": "09-he-phuong-trinh",
           "relation": "PRIMARY_OR_UNSPECIFIED"
+        },
+        {
+          "topic_id": "24-bai-toan-thuc-te",
+          "relation": "SECONDARY_SUPPORT"
         }
       ],
       "semantic_targets": {
@@ -697,6 +701,10 @@
         {
           "topic_id": "18-he-thuc-luong",
           "relation": "PRIMARY_OR_UNSPECIFIED"
+        },
+        {
+          "topic_id": "24-bai-toan-thuc-te",
+          "relation": "SECONDARY_SUPPORT"
         }
       ],
       "semantic_targets": {
@@ -915,8 +923,16 @@
       "lesson_ref": null,
       "roadmap": [
         {
+          "topic_id": "10-ham-so-do-thi",
+          "relation": "PRIMARY_OR_UNSPECIFIED"
+        },
+        {
           "topic_id": "12-phuong-trinh-bac-hai-viete",
           "relation": "PRIMARY_OR_UNSPECIFIED"
+        },
+        {
+          "topic_id": "24-bai-toan-thuc-te",
+          "relation": "SECONDARY_SUPPORT"
         }
       ],
       "semantic_targets": {
@@ -975,7 +991,6 @@
         },
         "LEARN_CONTENT": {
           "status": "PARTIAL_ITEM_REVIEW",
-          "primary_topic": "12-phuong-trinh-bac-hai-viete",
           "direct_hits": [
             "ham-y-ax2",
             "doi-xung-parabol",
@@ -998,11 +1013,14 @@
           ],
           "family_targets": [],
           "lesson_local_targets": [],
-          "note": "The Grade-9 map explicitly marks these three refs for item-level review. Missing direct Learn/Micro evidence is not automatic repair authorization."
+          "note": "The Grade-9 map explicitly marks these three refs for item-level review. Missing direct Learn/Micro evidence is not automatic repair authorization.",
+          "primary_topics": [
+            "10-ham-so-do-thi",
+            "12-phuong-trinh-bac-hai-viete"
+          ]
         },
         "MICRO_PRACTICE": {
           "status": "PARTIAL_ITEM_REVIEW",
-          "primary_topic": "12-phuong-trinh-bac-hai-viete",
           "direct_hits": [
             "ham-y-ax2",
             "doi-xung-parabol",
@@ -1024,11 +1042,14 @@
             "lien-he-do-thi"
           ],
           "family_targets": [],
-          "note": "The Grade-9 map explicitly marks these three refs for item-level review. Missing direct Learn/Micro evidence is not automatic repair authorization."
+          "note": "The Grade-9 map explicitly marks these three refs for item-level review. Missing direct Learn/Micro evidence is not automatic repair authorization.",
+          "primary_topics": [
+            "10-ham-so-do-thi",
+            "12-phuong-trinh-bac-hai-viete"
+          ]
         },
         "PRACTICE_BANK": {
           "status": "TOPIC_SKILL_EVIDENCE",
-          "primary_topic": "12-phuong-trinh-bac-hai-viete",
           "direct_hits": [
             "ham-y-ax2",
             "doi-xung-parabol",
@@ -1048,7 +1069,11 @@
             "lien-he-do-thi"
           ],
           "direct_missing": [],
-          "family_targets": []
+          "family_targets": [],
+          "primary_topics": [
+            "10-ham-so-do-thi",
+            "12-phuong-trinh-bac-hai-viete"
+          ]
         },
         "WRITTEN_LIBRARY": {
           "status": "NONE",
@@ -1057,9 +1082,12 @@
         },
         "READINESS": {
           "status": "NOT_VERIFIED_STRUCTURED",
-          "primary_topic": "12-phuong-trinh-bac-hai-viete",
           "item_ids": [],
-          "note": "No explicit Grade-9 structured readiness metadata is counted in this inventory."
+          "note": "No explicit Grade-9 structured readiness metadata is counted in this inventory.",
+          "primary_topics": [
+            "10-ham-so-do-thi",
+            "12-phuong-trinh-bac-hai-viete"
+          ]
         }
       },
       "audit_note": "Inventory only; no content mutation or readiness/mastery promotion.",
@@ -1433,6 +1461,10 @@
         {
           "topic_id": "20-hinh-hoc-tong-hop",
           "relation": "PRIMARY_OR_UNSPECIFIED"
+        },
+        {
+          "topic_id": "24-bai-toan-thuc-te",
+          "relation": "SECONDARY_SUPPORT"
         }
       ],
       "semantic_targets": {
