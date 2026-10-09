@@ -138,4 +138,15 @@ assert.equal((written.exercises||[]).length,54);
 assert.equal((anchors.anchors||[]).length,11);
 const out=process.argv[2];
 if(out){fs.writeFileSync(out,JSON.stringify(report,null,2)+"\n");}
-console.log(JSON.stringify(summary,null,2));
+const groupUnresolved=list=>{
+  const m=new Map();
+  for(const x of list){
+    const skills=(x.skills||x.skill||x.skill_tags||[]); const arr=Array.isArray(skills)?skills:[skills];
+    const key=(x.topic||x.topic_id||"NA")+"|"+arr.filter(Boolean).join(",");
+    const r=m.get(key)||{key,count:0,ids:[]}; r.count++; if(r.ids.length<8)r.ids.push(x.question_id||x.item_id||x.exercise_id||x.anchor_id); m.set(key,r);
+  }
+  return [...m.values()].sort((a,b)=>b.count-a.count||a.key.localeCompare(b.key));
+};
+const unresolved_groups=Object.fromEntries(Object.entries(unresolved).map(([k,v])=>[k,groupUnresolved(v)]));
+summary.kntt_core_zero.practice_family_ids=summary.kntt_core_zero.practice;
+console.log(JSON.stringify({summary,unresolved_groups},null,2));
