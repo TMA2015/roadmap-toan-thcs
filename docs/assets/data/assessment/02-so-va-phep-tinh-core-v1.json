@@ -20,7 +20,10 @@
     "ucln": "ƯCLN",
     "phep-tinh-phan-so": "Phép tính phân số",
     "so-huu-ti-thap-phan": "Phép tính số thập phân (lớp 6)",
-    "phan-tram": "Tỉ số phần trăm"
+    "phan-tram": "Tỉ số phần trăm",
+    "gia-tri-tuyet-do": "Giá trị tuyệt đối",
+    "luy-thua": "Lũy thừa",
+    "quy-dong-so-sanh-phan-so": "Quy đồng và so sánh phân số"
   },
   "policy": {
     "feedback": "after_submit",
@@ -259,6 +262,84 @@
           6
         ],
         "level": "core"
+      }
+    },
+    {
+      "id": "NUM02G6READY_011",
+      "type": "mcq",
+      "skill": "gia-tri-tuyet-do",
+      "points": 1,
+      "question": "Giá trị của |−12| là:",
+      "options": [
+        "−12",
+        "12",
+        "0",
+        "24"
+      ],
+      "answer": 1,
+      "explanation": "Giá trị tuyệt đối là khoảng cách tới 0 nên |−12|=12.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PENDING",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009"
+      }
+    },
+    {
+      "id": "NUM02G6READY_012",
+      "type": "mcq",
+      "skill": "luy-thua",
+      "points": 1,
+      "question": "Tính 2³·2².",
+      "options": [
+        "2⁵=32",
+        "2⁶=64",
+        "4⁵=1024",
+        "2¹=2"
+      ],
+      "answer": 0,
+      "explanation": "Cùng cơ số 2, khi nhân hai lũy thừa ta cộng số mũ: 2³·2²=2⁵=32.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PENDING",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009"
+      }
+    },
+    {
+      "id": "NUM02G6READY_013",
+      "type": "mcq",
+      "skill": "quy-dong-so-sanh-phan-so",
+      "points": 1,
+      "question": "So sánh 5/6 và 4/5.",
+      "options": [
+        "5/6 > 4/5",
+        "5/6 < 4/5",
+        "5/6 = 4/5",
+        "Không so sánh được"
+      ],
+      "answer": 0,
+      "explanation": "Quy đồng mẫu 30: 5/6=25/30 và 4/5=24/30, nên 5/6>4/5.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PENDING",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009"
       }
     }
   ],
