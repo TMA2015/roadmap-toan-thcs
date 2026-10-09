@@ -8,7 +8,7 @@
 
 ## 🎯 Luyện tập tương tác
 
-Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng **120 câu**. Ngân hàng được tổ chức theo mini-roadmap kỹ năng: **Tỉ số và tỉ lệ thức → Dãy tỉ số và chia theo tỉ lệ → Đại lượng tỉ lệ → Ứng dụng và mô hình hóa**.
+Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng **124 câu**. Ngân hàng được tổ chức theo mini-roadmap kỹ năng: **Tỉ số và tỉ lệ thức → Dãy tỉ số và chia theo tỉ lệ → Đại lượng tỉ lệ → Ứng dụng và mô hình hóa**.
 
 Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ có lời giải ngắn và nút **Làm câu tương tự**. Bảng tiến độ hiển thị kỹ năng theo trình tự học cố định; có thể bấm trực tiếp một kỹ năng để luyện riêng hoặc dùng **Luyện điểm yếu** để ưu tiên tối đa hai kỹ năng yếu nhất.
 
@@ -18,7 +18,7 @@ Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ 
 
 ---
 
-## Bài tập tự luận bổ sung
+## Luyện tự luận & trình bày
 
 Các bài dưới đây được chọn lọc để luyện cách trình bày, nhận dạng tỉ lệ thuận/nghịch và mô hình hóa sau phần trắc nghiệm tương tác.
 
@@ -62,9 +62,26 @@ Giải thích vì sao “tăng 20% rồi giảm 20%” không đưa đại lư�
 
 ---
 
+## Phân tầng luyện tập
+
+- **Core:** các dạng tỉ số, tỉ lệ thức, chia theo tỉ lệ và tỉ lệ thuận/nghịch cần cho tuyến KNTT.
+- **Entrance10:** các bài mô hình hóa tỉ lệ được dùng như phần chuyển giao có chọn lọc, không phải điều kiện khóa Core.
+- **Challenge:** chỉ mở rộng khi học sinh đã vững Core; không dùng để suy ra thiếu hụt Readiness.
+
 # Hướng dẫn chọn lọc
 
 ## 03-M2-03 – Nhận dạng tỉ lệ nghịch
+
+??? example "Xem lời giải"
+    Khối lượng công việc không đổi nên tích **số người × số ngày** không đổi:
+
+    \[
+    4\cdot15=6\cdot t.
+    \]
+
+    Suy ra \(t=10\) ngày.
+
+    **Điểm cần nhớ:** số người tăng thì thời gian giảm — đây là quan hệ **tỉ lệ nghịch**, không phải tỉ lệ thuận.
 
 Khối lượng công việc không đổi nên tích **số người × số ngày** không đổi:
 
