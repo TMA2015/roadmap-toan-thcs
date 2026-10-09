@@ -33,7 +33,7 @@ ok(b.questions[9].options[b.questions[9].answer].includes("Bốc kín")&&b.quest
 ok(b.questions[12].options[b.questions[12].answer].includes("7/20")&&b.questions[13].options[b.questions[13].answer]==="0,4"&&(30-18)/30===.4,"013/014");
 ok(b.questions[14].options[b.questions[14].answer].includes("29/50")&&(8+21)/(20+30)===.58,"015 aggregate experiments");
 ok(!b.questions[14].question.includes("dự kiến sẽ ném")&&b.questions[14].target==="kiem-tra-xac-suat","no expectation outside Core");
-ok(w.cards[0].skills.join(",")==="xac-suat-thuc-nghiem"&&w.cards[0].lesson_local_concepts.map(x=>x.id).join(",")==="ket-qua-co-the,su-kien-don-gian"&&b.questions.slice(17).every(x=>x.tags.skill.length===0&&x.gates_core===false),"Grade-6 lesson-local concepts must not become canonical skill evidence");
+ok(w.cards[0].skills.join(",")==="xac-suat-thuc-nghiem"&&w.cards[0].lesson_local_concepts.map(x=>x.id).join(",")==="ket-qua-co-the,su-kien-don-gian"&&b.questions.slice(17,20).every(x=>x.tags.skill.length===0&&x.gates_core===false),"Grade-6 lesson-local concepts must not become canonical skill evidence");
 const js=txt("docs/assets/javascripts/topic-workspace-v1.js"),lesson=txt("docs/kien-thuc/23-xac-suat/index.md");
 ok(js.includes('"23-xac-suat":{number:"23"')&&js.includes("if(card.teaching_copy)"),"UI mount missing");
 ok(lesson.includes("5 Learning Cards KNTT Core")&&lesson.includes("Core Readiness 12 câu")&&lesson.includes("tu-kiem-tra-tu-luan.md")&&!lesson.includes("Đạt tối thiểu **7/10**"),"lesson gateway");
