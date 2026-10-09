@@ -25,7 +25,14 @@ for(const lock of Object.values(a.source_locks.longform_sources)){
 }
 for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
   for(const k of ["workspace","micro","manifest","assessment"]){
-    if(topic==="12-phuong-trinh-bac-hai-viete" && k==="manifest"){
+    if(topic==="21-thong-ke" && k==="assessment"){
+      assert.match(ev[k].sha,/^[0-9a-f]{40}$/);
+      const current=json(ev[k].path);
+      for(let n=1;n<=12;n++){
+        const id="STA21READY_"+String(n).padStart(3,"0");
+        assert.ok(current.items.some(q=>q.id===id),"Topic21 Readiness baseline missing: "+id);
+      }
+    }else if(topic==="12-phuong-trinh-bac-hai-viete" && k==="manifest"){
       assert.match(ev[k].sha,/^[0-9a-f]{40}$/);
       const current=json(ev[k].path);
       assert.ok(current.question_count>=120,"Topic12 Practice baseline regressed");
