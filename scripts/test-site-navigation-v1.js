@@ -57,4 +57,5 @@ ok(css.includes("overflow:hidden")&&css.includes("flex:1 1 auto"),"modal header 
 ok(css.includes(".roadmap-nav-dock.is-visible")&&css.includes(".library-topic-grid"),"style definitions");
 ok(yaml.includes("sticky-nav-v1.js"),"sticky navigation loaded on site");
 ok(yaml.includes("home-orientation-slider-v1.js"),"homepage orientation slider loaded on site");
+ok(yaml.indexOf("learner-evidence-v1.js")<yaml.indexOf("topic-workspace-v1.js")&&yaml.indexOf("topic-workspace-v1.js")<yaml.indexOf("https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"),"Core critical runtime loads before remote MathJax");
 console.log("PASS: persistent desktop nav, four orientation slides, four compact entry points, four library clusters, all 25 links.");
