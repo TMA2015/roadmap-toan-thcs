@@ -171,7 +171,8 @@ Do not review or authorize CH6 content in this packet. CH6 is outside Wave 1.
     "skills": [
       "phep-thu-ngau-nhien",
       "khong-gian-mau",
-      "bien-co"
+      "bien-co",
+      "xac-suat-co-dien"
     ],
     "prerequisites": [
       "bien-co"
