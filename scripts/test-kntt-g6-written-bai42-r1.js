@@ -27,9 +27,21 @@ assert.ok(packet.includes("Select exactly 5 Sources"));
 assert.ok(packet.includes("2 permanent governance sources + 2 Grade-6 SGK sources + 1 temporary packet = 5 selected Sources total."));
 assert.ok(packet.includes("Do **not** add `Written Exercise Library Contract v1` as a separate NotebookLM Source"));
 
-for(const k of ["written_library","grade6_dimension_audit","topic23_workspace","topic23_micro"]){
+for(const k of ["written_library","grade6_dimension_audit"]){
   const lock=artifact.source_locks[k];
   assert.equal(blob(read(lock.path)),lock.sha,"source drift: "+lock.path);
+}
+for(const k of ["topic23_workspace","topic23_micro"]){
+  const lock=artifact.source_locks[k];
+  assert.match(lock.sha,/^[0-9a-f]{40}$/);
+  const current=json(lock.path);
+  if(k==="topic23_workspace"){
+    assert.ok(current.cards.some(card=>card.id==="prob23-core-1"),"historical Bài 42 probability card removed");
+  }else{
+    for(const id of ["PRO23MICRO_018","PRO23MICRO_019","PRO23MICRO_020"]){
+      assert.ok(current.questions.some(q=>q.id===id),"historical Bài 42 Micro removed: "+id);
+    }
+  }
 }
 const prior=read(artifact.source_locks.prior_bai42_review.path);
 assert.ok(prior.includes(artifact.source_locks.prior_bai42_review.clearance),"prior Bài 42 clearance missing");
