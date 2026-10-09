@@ -16,7 +16,7 @@ const m12=j("docs/assets/data/practice/12-phuong-trinh-bac-hai-viete-v1.manifest
 const anchors=j("docs/assets/data/anchors/anchor-catalog-v1.json");
 
 assert.equal(scope.packet_id,packet);
-assert.equal(scope.status,"CANDIDATE_AWAITING_ACADEMIC_REVIEW");
+assert.equal(scope.status,"ACADEMIC_CONTENT_REVIEW_PASS");
 assert.deepEqual(scope.counts,{readiness_new_items:15,readiness_new_assessments:1,practice_new_items:10,anchor_crosswalk_updates:11,new_canonical_families:0});
 
 const r02=a02.items.filter(x=>x.authoring_review?.packet_id===packet);
@@ -24,13 +24,18 @@ const r21=a21.items.filter(x=>x.authoring_review?.packet_id===packet);
 assert.equal(r02.length,3);
 assert.equal(a03.items.length,10);
 assert.equal(r21.length,2);
-for(const q of [...r02,...a03.items,...r21]) assert.equal(q.authoring_review?.status,"PENDING");
+for(const q of [...r02,...a03.items,...r21]){
+ assert.equal(q.authoring_review?.status,"PASS");
+ assert.equal(q.authoring_review?.clearance,"PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE");
+ assert.equal(q.authoring_review?.method,"INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW");
+}
 
 assert.equal(p02.questions.length,3);
 assert.equal(p03.questions.length,4);
 assert.equal(p12.questions.length,3);
 for(const q of [...p02.questions,...p03.questions,...p12.questions]){
- assert.equal(q.authoring_review?.status,"PENDING");
+ assert.equal(q.authoring_review?.status,"PASS");
+ assert.equal(q.authoring_review?.clearance,"PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE");
  assert.equal(q.authoring_review?.packet_id,packet);
  assert.equal(q.options.length,4);
  assert.ok(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4);
@@ -47,4 +52,11 @@ const crossed=anchors.anchors.filter(a=>a.taxonomy_crosswalk_review?.clearance==
 assert.equal(crossed.length,11);
 for(const a of crossed) assert.ok(a.canonical_family_ids?.length>=1);
 console.log("PASS: Practice Implementation Wave 1 candidate is bounded to 15 Readiness + 10 Practice + 11 Anchor crosswalks.");
-console.log("PASS: all 25 new learner-facing items remain PENDING independent academic review.");
+const receipt=fs.readFileSync("review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md","utf8");
+assert.equal(scope.independent_review?.verdict,"PASS");
+assert.equal(scope.independent_review?.item_results?.passed,25);
+assert.equal(scope.independent_review?.item_results?.revisions_required,0);
+assert.ok(receipt.includes("OVERALL|PASS"));
+assert.equal((receipt.match(/^ITEM\|/gm)||[]).length,25);
+assert.ok(receipt.includes("CLEARANCE|PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE"));
+console.log("PASS: all 25 learner-facing items have independent NotebookLM PASS with zero revisions.");
