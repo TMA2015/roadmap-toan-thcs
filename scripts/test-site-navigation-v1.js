@@ -56,6 +56,9 @@ ok(!css.includes(".roadmap-mobile-shortcuts")&&!css.includes(".md-sidebar--prima
 ok(css.includes("overflow:hidden")&&css.includes("flex:1 1 auto"),"modal header does not disappear while topic list scrolls");
 ok(css.includes(".roadmap-nav-dock.is-visible")&&css.includes(".library-topic-grid"),"style definitions");
 ok(yaml.includes("sticky-nav-v1.js"),"sticky navigation loaded on site");
-ok(yaml.includes("home-orientation-slider-v1.js"),"homepage orientation slider loaded on site");
+ok(yaml.includes("route-module-loader-v1.js")&&!yaml.includes("home-orientation-slider-v1.js")&&!yaml.includes("study-scene-v1.js")&&!yaml.includes("anchor-library-v1.js"),"page-only modules are route-lazy-loaded, not global");
+const routeLoader=read("docs/assets/javascripts/route-module-loader-v1.js");
+ok(routeLoader.includes('load("home-orientation-slider-v1.js")')&&routeLoader.includes('load("study-scene-v1.js")')&&routeLoader.includes('load("anchor-library-v1.js")'),"route loader keeps homepage and anchor modules available");
+cp.execFileSync(process.execPath,["--check",path.join(r,"docs/assets/javascripts/route-module-loader-v1.js")],{stdio:"pipe"});
 ok(yaml.indexOf("learner-evidence-v1.js")<yaml.indexOf("topic-workspace-v1.js")&&yaml.indexOf("topic-workspace-v1.js")<yaml.indexOf("https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"),"Core critical runtime loads before remote MathJax");
 console.log("PASS: persistent desktop nav, four orientation slides, four compact entry points, four library clusters, all 25 links.");
