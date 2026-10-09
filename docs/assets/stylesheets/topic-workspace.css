@@ -353,3 +353,69 @@
 .md-sidebar--secondary .topic-toc-children{margin-left:.15rem}
 .md-sidebar--secondary .topic-toc-collapsible>.topic-toc-children{padding-top:.12rem}
 @media(max-width:44rem){.topic-learning-card-body{font-size:.84rem}}
+
+
+/* Core grade identity v1 · semantic color bands by KNTT grade, not card position. */
+.topic-core-card[data-grade-start="6"]{--core-grade-left:#4f72c8}
+.topic-core-card[data-grade-start="7"]{--core-grade-left:#2e8b83}
+.topic-core-card[data-grade-start="8"]{--core-grade-left:#bf8736}
+.topic-core-card[data-grade-start="9"]{--core-grade-left:#7658b1}
+.topic-core-card[data-grade-end="6"]{--core-grade-right:#4f72c8}
+.topic-core-card[data-grade-end="7"]{--core-grade-right:#2e8b83}
+.topic-core-card[data-grade-end="8"]{--core-grade-right:#bf8736}
+.topic-core-card[data-grade-end="9"]{--core-grade-right:#7658b1}
+.topic-core-card[data-grade-start]{
+ --core-accent:var(--core-grade-left);
+ border-color:color-mix(in srgb,var(--core-grade-left) 25%,var(--md-default-bg-color));
+ background:linear-gradient(160deg,color-mix(in srgb,var(--core-grade-left) 5%,var(--md-default-bg-color)),var(--md-default-bg-color) 75%);
+}
+.topic-core-card[data-grade-start]::before{
+ background:linear-gradient(90deg,var(--core-grade-left),var(--core-grade-right));
+ opacity:.9;
+}
+.topic-core-card[data-grade-start] .topic-core-card-header{
+ background:linear-gradient(110deg,
+  color-mix(in srgb,var(--core-grade-left) 15%,var(--md-default-bg-color)) 0%,
+  color-mix(in srgb,var(--core-grade-left) 8%,var(--md-default-bg-color)) 42%,
+  color-mix(in srgb,var(--core-grade-right) 8%,var(--md-default-bg-color)) 58%,
+  color-mix(in srgb,var(--core-grade-right) 15%,var(--md-default-bg-color)) 100%);
+ border-bottom-color:color-mix(in srgb,var(--core-grade-left) 18%,var(--md-default-bg-color));
+}
+.topic-core-card[data-grade-start] .topic-core-card-number{
+ background:linear-gradient(135deg,var(--core-grade-left),var(--core-grade-right));
+}
+.topic-core-card[data-grade-start] .topic-core-card-lesson{
+ color:color-mix(in srgb,var(--core-grade-left) 68%,var(--md-default-fg-color));
+}
+.topic-core-card[data-grade-count="3"]::before{
+ background:linear-gradient(90deg,
+  #4f72c8 0 33.333%,#2e8b83 33.333% 66.666%,#bf8736 66.666% 100%);
+}
+.topic-core-card[data-grade-count="4"]::before{
+ background:linear-gradient(90deg,
+  #4f72c8 0 25%,#2e8b83 25% 50%,#bf8736 50% 75%,#7658b1 75% 100%);
+}
+.topic-core-card[data-grade-count="3"] .topic-core-card-header,
+.topic-core-card[data-grade-count="4"] .topic-core-card-header{
+ background:var(--md-default-bg-color);
+}
+.topic-core-card[data-grade-count="3"] .topic-core-card-number,
+.topic-core-card[data-grade-count="4"] .topic-core-card-number{
+ background:var(--core-grade-left);
+}
+[data-md-color-scheme="slate"] .topic-core-card[data-grade-start="6"]{--core-grade-left:#91b1f0}
+[data-md-color-scheme="slate"] .topic-core-card[data-grade-start="7"]{--core-grade-left:#72c8bb}
+[data-md-color-scheme="slate"] .topic-core-card[data-grade-start="8"]{--core-grade-left:#e5b36d}
+[data-md-color-scheme="slate"] .topic-core-card[data-grade-start="9"]{--core-grade-left:#b9a0ec}
+[data-md-color-scheme="slate"] .topic-core-card[data-grade-end="6"]{--core-grade-right:#91b1f0}
+[data-md-color-scheme="slate"] .topic-core-card[data-grade-end="7"]{--core-grade-right:#72c8bb}
+[data-md-color-scheme="slate"] .topic-core-card[data-grade-end="8"]{--core-grade-right:#e5b36d}
+[data-md-color-scheme="slate"] .topic-core-card[data-grade-end="9"]{--core-grade-right:#b9a0ec}
+[data-md-color-scheme="slate"] .topic-core-card[data-grade-count="3"]::before{
+ background:linear-gradient(90deg,
+  #91b1f0 0 33.333%,#72c8bb 33.333% 66.666%,#e5b36d 66.666% 100%);
+}
+[data-md-color-scheme="slate"] .topic-core-card[data-grade-count="4"]::before{
+ background:linear-gradient(90deg,
+  #91b1f0 0 25%,#72c8bb 25% 50%,#e5b36d 50% 75%,#b9a0ec 75% 100%);
+}

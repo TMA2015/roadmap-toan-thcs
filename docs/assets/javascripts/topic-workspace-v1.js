@@ -586,6 +586,19 @@ const mountMicro=(host,card,questions,graph)=>{
  };
  render();
 };
+const cardGradeBand=card=>{
+ const explicit=(card.grades||[]).map(Number).filter(g=>g>=6&&g<=9);
+ const parsed=[];
+ for(const label of card.kntt_lessons||[]){
+  const m=String(label).match(/Lớp\s*(6|7|8|9)(?:\s*[–-]\s*(6|7|8|9))?/i);
+  if(!m)continue;
+  const a=Number(m[1]),b=Number(m[2]||m[1]),lo=Math.min(a,b),hi=Math.max(a,b);
+  for(let g=lo;g<=hi;g++)if(g>=6&&g<=9)parsed.push(g);
+ }
+ const grades=[...new Set(explicit.length?explicit:parsed)].sort((a,b)=>a-b);
+ return grades.length?{grades,start:grades[0],end:grades[grades.length-1],count:grades.length}:null;
+};
+
 const renderCoreCards=async(hero,config)=>{
  try{
   const cardRes=await fetch(siteAsset(config.data));if(!cardRes.ok)return;let data=await cardRes.json();
@@ -679,6 +692,7 @@ const renderCoreCards=async(hero,config)=>{
   };
   data.cards.forEach((card,i)=>{
    const el=document.createElement("article");el.className="topic-core-card";el.dataset.cardId=card.id;
+   const gradeBand=cardGradeBand(card);if(gradeBand){el.dataset.gradeStart=String(gradeBand.start);el.dataset.gradeEnd=String(gradeBand.end);el.dataset.gradeCount=String(gradeBand.count);el.dataset.gradeBand=gradeBand.grades.join("-");el.setAttribute("aria-label","Core "+gradeBand.grades.map(g=>"lớp "+g).join(" đến ")+": "+card.title)}
    const prereqNames=(card.prerequisites||[]).map(skillLabel);
    const pre=prereqNames.length?
     '<div class="topic-core-prereq topic-core-prereq-full">Nền tảng: '+prereqNames.join(" · ")+'</div><div class="topic-core-prereq topic-core-prereq-compact">Nền tảng: '+prereqNames.length+' kỹ năng</div>':
