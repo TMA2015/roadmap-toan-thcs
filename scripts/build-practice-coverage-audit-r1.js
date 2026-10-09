@@ -155,7 +155,24 @@ const summary={
   unresolved_counts:Object.fromEntries(Object.entries(unresolved).map(([k,v])=>[k,v.length])),
   exam_frequency_status:"PENDING_OFFICIAL_CORPUS"
 };
-const report={schema:"practice-coverage-matrix-r1",summary,families:arr,unresolved,inferred,
+const decision_prep={
+  policy:"SIGNAL_ONLY_NO_AUTOMATIC_AUTHORING",
+  kntt_core_readiness_review:arr.filter(r=>r.layer==="KNTT-Core"&&r.readiness===0).map(r=>({family_id:r.family_id,label_vi:r.label_vi,practice:r.practice,core_micro:r.core_micro,written:r.written})),
+  kntt_core_written_review:arr.filter(r=>r.layer==="KNTT-Core"&&r.written===0).map(r=>({family_id:r.family_id,label_vi:r.label_vi,practice:r.practice,core_micro:r.core_micro,readiness:r.readiness})),
+  practice_density_review:arr.filter(r=>r.practice>=40).map(r=>({family_id:r.family_id,label_vi:r.label_vi,layer:r.layer,practice:r.practice,core_micro:r.core_micro,readiness:r.readiness,written:r.written})).sort((a,b)=>b.practice-a.practice),
+  practice_low_density_review:arr.filter(r=>r.practice>0&&r.practice<=5).map(r=>({family_id:r.family_id,label_vi:r.label_vi,layer:r.layer,practice:r.practice,core_micro:r.core_micro,readiness:r.readiness,written:r.written})).sort((a,b)=>a.practice-b.practice),
+  no_practice_family:arr.filter(r=>r.practice===0).map(r=>({family_id:r.family_id,label_vi:r.label_vi,layer:r.layer,topics:r.topics,core_micro:r.core_micro,readiness:r.readiness,written:r.written})),
+  anchor_manual_crosswalk:unresolved.anchor_tags,
+  rules:{
+    readiness_zero_is_review_not_gap:true,
+    written_zero_is_review_not_gap:true,
+    high_practice_is_no_more_candidate_not_deletion:true,
+    low_practice_is_review_not_add_authorization:true,
+    exam_frequency_required_before_final_priority:true,
+    notebooklm_required_for_academic_promotion_or_new_content:true
+  }
+};
+const report={schema:"practice-coverage-matrix-r1",summary,families:arr,unresolved,inferred,decision_prep,
  decision_note:"Inventory signals only. Zero/low/high counts do not automatically authorize ADD/REMOVE. Review curriculum layer, duplication, remediation value and source evidence first."};
 assert.equal(arr.length,131);
 assert.equal(practiceQuestions,3153);
@@ -175,4 +192,4 @@ const groupUnresolved=list=>{
 const unresolved_groups=Object.fromEntries(Object.entries(unresolved).map(([k,v])=>[k,groupUnresolved(v)]));
 summary.kntt_core_zero.practice_family_ids=summary.kntt_core_zero.practice;
 summary.inferred_counts=Object.fromEntries(Object.entries(inferred).map(([k,v])=>[k,v.length]));
-console.log(JSON.stringify({summary,unresolved_groups},null,2));
+console.log(JSON.stringify({summary,decision_prep,unresolved_groups},null,2));

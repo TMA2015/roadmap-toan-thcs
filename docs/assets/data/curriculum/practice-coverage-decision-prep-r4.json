@@ -1,0 +1,24 @@
+{
+  "audit_id": "MATH-PRACTICE-COVERAGE-DECISION-PREP-R4-20261009",
+  "as_of": "2026-10-09",
+  "status": "DECISION_PREP_ONLY",
+  "prerequisite": "R1 inventory + R2 grouped unresolved + R3 unique-subskill reconciliation",
+  "purpose": "Produce conservative review queues without treating count signals as academic decisions.",
+  "queues": [
+    "KNTT-Core Readiness zero-evidence review",
+    "KNTT-Core Written zero-evidence review",
+    "Practice density review >=40 mapped items",
+    "Practice low-density review <=5 mapped items",
+    "No-Practice family review",
+    "Anchor manual semantic crosswalk"
+  ],
+  "protected_boundaries": {
+    "author_new_questions": false,
+    "remove_existing_questions": false,
+    "mutate_taxonomy": false,
+    "change_mastery": false,
+    "grant_readiness_credit": false,
+    "regrade_history": false
+  },
+  "next_gate": "External/official exam-frequency evidence + curriculum-layer review before KEEP/ADD/NO_MORE/OPTIONAL finalization."
+}
