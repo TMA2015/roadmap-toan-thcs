@@ -7,11 +7,17 @@ const text=fs.readFileSync("review-packets/kntt-g9-gap-priority-r1/00_NOTEBOOKLM
 const a=json("docs/assets/data/curriculum/kntt-g9-gap-priority-r1.json");
 
 assert.equal(a.packet_id,"MATH-KNTT-G9-GAP-PRIORITY-R1-20261008");
-assert.equal(a.status,"ACADEMIC_SCOPE_REVIEW_PENDING");
+assert.equal(a.status,"ACADEMIC_SCOPE_REVIEW_PASS");
 assert.equal(a.inventory.status,"G9_EXISTING_EVIDENCE_INVENTORY_R1");
 assert.equal(a.reconciliation.clearance,"G9_R4_RECONCILIATION_REVIEW_COMPLETE");
 assert.equal(a.notebooklm_source_contract.selected_source_count,5);
 assert.equal(a.max_groups_wave1,2);
+assert.equal(a.independent_review.verdict,"PASS");
+assert.equal(a.independent_review.clearance,"G9_GAP_PRIORITY_R1_REVIEW_COMPLETE");
+assert.deepEqual(a.independent_review.first_repair_wave,["CH7","CH8"]);
+assert.equal(a.independent_review.chapter6_item_review["bieu-thuc-doi-xung"],"CORE_LEARN_MICRO");
+assert.equal(a.independent_review.chapter6_item_review["dau-nghiem"],"CORE_SUPPORT_ONLY");
+assert.equal(a.independent_review.chapter6_item_review["lien-he-do-thi"],"CORE_SUPPORT_ONLY");
 assert.deepEqual(a.candidates.CH7.dimensions,["LEARN","MICRO"]);
 assert.deepEqual(a.candidates.CH8.dimensions,["LEARN","MICRO"]);
 assert.deepEqual(a.candidates.CH7.targets,["bang-tan-so","tan-suat","du-lieu-ghep-nhom","STAT-REPRESENT"]);
