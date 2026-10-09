@@ -244,19 +244,21 @@ extra_css:
   - assets/stylesheets/arithmetic-template-preview-v1.css
 
 extra_javascript:
+  # Critical learner route/runtime scripts first so KNTT/Core can mount before remote MathJax or heavier observers.
+  - assets/javascripts/learner-evidence-v1.js
+  - assets/javascripts/tutor-runtime-v1.js
+  - assets/javascripts/topic-learning-routes-v1.js
+  - assets/javascripts/topic-workspace-v1.js
+  - assets/javascripts/class-learning-v1.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - assets/javascripts/math-details-v1.js
   - assets/javascripts/math-rich-text-v1.js
-  - assets/javascripts/learner-evidence-v1.js
   - assets/javascripts/canonical-evidence-observer-v2.js
   - assets/javascripts/taxonomy-v2-evidence-observer-v1.js
   - assets/javascripts/skill-map-v2-preview.js
-  - assets/javascripts/tutor-runtime-v1.js
   - assets/javascripts/firebase-gemini-config.js
   - assets/javascripts/firebase-gemini-v1.js
   - assets/javascripts/floating-ai-tutor-v1.js
-  - assets/javascripts/topic-learning-routes-v1.js
-  - assets/javascripts/topic-workspace-v1.js
   - assets/javascripts/assessment-engine-v1.js
   - assets/javascripts/practice-auto-loader.js
   - assets/javascripts/skill-assessment-pilot-v2.js
@@ -271,7 +273,6 @@ extra_javascript:
   - assets/javascripts/home-orientation-slider-v1.js
   - assets/javascripts/sticky-nav-v1.js
   - assets/javascripts/knowledge-ui-v1.js
-  - assets/javascripts/class-learning-v1.js
   - assets/javascripts/written-self-check-v1.js
   - assets/javascripts/anchor-library-v1.js
   - assets/javascripts/written-exercise-library-v1.js
