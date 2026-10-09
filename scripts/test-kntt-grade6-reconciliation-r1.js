@@ -39,12 +39,20 @@ for (const lock of r.source_locks.learning_workspaces) {
       assert.ok(current.cards.some(card => card.id === id), "historical Grade-6 card removed: " + id);
     }
   } else if (lock.path.endsWith("topic21-learning-workspace.json")) {
-    // Topic 21 is also cross-grade. Grade-7 append-only Micro links may extend
-    // Grade-7-only cards without invalidating the reviewed Grade-6 semantics.
+    // Topic 21 is also cross-grade. Later append-only cards may extend
+    // higher-grade statistics without invalidating reviewed Grade-6 semantics.
     assert.match(lock.blob_sha, /^[0-9a-f]{40}$/);
     const current = json(lock.path);
     for (const id of ["sta21-core-1","sta21-core-2","sta21-core-5"]) {
       assert.ok(current.cards.some(card => card.id === id), "historical Grade-6 statistics card removed: " + id);
+    }
+  } else if (lock.path.endsWith("topic23-learning-workspace.json")) {
+    // Topic 23 is cross-grade. Grade-9 append-only probability cards must
+    // preserve the reviewed Grade-6 Bài 42–43 learner evidence.
+    assert.match(lock.blob_sha, /^[0-9a-f]{40}$/);
+    const current = json(lock.path);
+    for (const id of ["prob23-core-1"]) {
+      assert.ok(current.cards.some(card => card.id === id), "historical Grade-6 probability card removed: " + id);
     }
   } else {
     assert.equal(gitBlobSha(read(lock.path)), lock.blob_sha, "source drift: " + lock.path);
