@@ -1,0 +1,121 @@
+{
+  "decision_id": "MATH-PRACTICE-COVERAGE-PRIORITY-R1-20261009",
+  "as_of": "2026-10-09",
+  "status": "ACADEMIC_PRIORITY_REVIEW_PASS",
+  "clearance": "PRACTICE_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+  "independent_review": {
+    "reviewer": "NotebookLM",
+    "verdict": "PASS",
+    "receipt": "review-packets/practice-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+  },
+  "readiness": {
+    "decision": "ADD_READINESS",
+    "families": [
+      "NUM-ABS",
+      "NUM-POWER",
+      "NUM-FRACTION-FORM",
+      "RATIO-BASIC",
+      "RATIO-PROP",
+      "RATIO-SPLIT",
+      "RATIO-DIRECT",
+      "RATIO-INVERSE",
+      "RATIO-DISTINGUISH",
+      "STAT-FREQUENCY",
+      "STAT-ADVANCED-DATA"
+    ]
+  },
+  "practice_density_no_more": [
+    "ID-STRUCTURE",
+    "GEO-ANGLE-REL",
+    "STAT-CENTER",
+    "SYS-SOLVE",
+    "GEO-SYNTHESIS",
+    "QUAD-SOLVE",
+    "ALG-SIMPLIFY-ADD-SUB",
+    "SOLID-PRISM",
+    "EQ-BASIC",
+    "SYS-MODEL",
+    "RAD-BASIC",
+    "TRI-ANGLE-SIDE",
+    "SIM-CRITERIA",
+    "RIGHT-TRIG-RATIO",
+    "LINEAR-FUNC",
+    "QUAD-SQUARE-HIER",
+    "RIGHT-PYTHAGORE"
+  ],
+  "low_density": {
+    "add": [
+      "QUAD-GRAPH",
+      "NUM-ABS",
+      "RATIO-MODEL"
+    ],
+    "optional": [
+      "RATEX-INTEGER",
+      "EQ-PARAM"
+    ],
+    "keep": [
+      "RAD-EQUATION",
+      "RAD-COMPARE",
+      "ID-PROOF",
+      "RATEX-EVALUATE",
+      "INEQ-MODEL"
+    ]
+  },
+  "anchor_crosswalk": {
+    "A25-001": [
+      "RAD-BASIC"
+    ],
+    "A25-002": [
+      "VIETE-CORE",
+      "VIETE-APPLY"
+    ],
+    "A25-003": [
+      "SYS-MODEL",
+      "SYS-SOLVE"
+    ],
+    "A25-004": [
+      "RIGHT-ALTITUDE",
+      "SIM-CRITERIA"
+    ],
+    "A25-005": [
+      "INEQ-MODEL",
+      "ALG-EVALUATE"
+    ],
+    "A25-006": [
+      "RAD-EQUATION",
+      "RATEX-INTEGER"
+    ],
+    "A25-007": [
+      "QUAD-SOLVE",
+      "QUAD-PARAM",
+      "VIETE-APPLY"
+    ],
+    "A25-008": [
+      "CIRCLE-TANGENT",
+      "CIRCLE-CYCLIC",
+      "SIM-CRITERIA"
+    ],
+    "A25-009": [
+      "TRI-ORTHOCENTER",
+      "CIRCLE-CYCLIC",
+      "CIRCLE-ANGLES"
+    ],
+    "A25-010": [
+      "RATIO-MODEL",
+      "ALG-MODEL-EXPR"
+    ],
+    "A25-011": [
+      "PARABOLA-BASIC",
+      "GRAPH-INTERSECTION",
+      "VIETE-APPLY"
+    ]
+  },
+  "boundaries": {
+    "new_canonical_family": false,
+    "automatic_question_quota": false,
+    "delete_existing_questions": false,
+    "mastery_history_change": false
+  },
+  "implementation_rule": "New learner-facing Readiness or Practice items require a separate bounded authoring packet and academic review before import.",
+  "next_phase": "BOUNDED_IMPLEMENTATION_SCOPE_R1"
+}
