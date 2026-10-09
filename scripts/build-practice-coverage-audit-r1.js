@@ -32,7 +32,8 @@ const rows=new Map(reg.families.map(f=>[f.family_id,{
   core_micro:0,practice:0,readiness:0,written:0,anchor_exact:0,
   practice_question_ids:[],micro_question_ids:[],readiness_item_ids:[],written_ids:[],anchor_ids:[]
 }]));
-const unresolved={practice:[],micro:[],readiness:[],written:[],anchor_tags:[]};\nconst inferred={practice:[],micro:[],readiness:[],written:[]};
+const unresolved={practice:[],micro:[],readiness:[],written:[],anchor_tags:[]};
+const inferred={practice:[],micro:[],readiness:[],written:[]};
 const add=(fid,field,id)=>{const r=rows.get(fid);if(!r)return false;r[field]++;const k={practice:"practice_question_ids",core_micro:"micro_question_ids",readiness:"readiness_item_ids",written:"written_ids",anchor_exact:"anchor_ids"}[field];if(k&&!r[k].includes(id))r[k].push(id);return true};
 const familiesFor=(topic,skills,allowGlobal=true)=>{
   const out=new Set();
@@ -172,5 +173,6 @@ const groupUnresolved=list=>{
   return [...m.values()].sort((a,b)=>b.count-a.count||a.key.localeCompare(b.key));
 };
 const unresolved_groups=Object.fromEntries(Object.entries(unresolved).map(([k,v])=>[k,groupUnresolved(v)]));
-summary.kntt_core_zero.practice_family_ids=summary.kntt_core_zero.practice;\nsummary.inferred_counts=Object.fromEntries(Object.entries(inferred).map(([k,v])=>[k,v.length]));
+summary.kntt_core_zero.practice_family_ids=summary.kntt_core_zero.practice;
+summary.inferred_counts=Object.fromEntries(Object.entries(inferred).map(([k,v])=>[k,v.length]));
 console.log(JSON.stringify({summary,unresolved_groups},null,2));
