@@ -43,12 +43,14 @@
       "QUA12MICRO_019"
     ],
     "canonical_targets": [
-      "bieu-thuc-doi-xung",
-      "tong-tich-nghiem"
+      "bieu-thuc-doi-xung"
     ],
     "excluded_from_core": [
       "dau-nghiem",
       "lien-he-do-thi"
+    ],
+    "prerequisite_targets": [
+      "tong-tich-nghiem"
     ]
   },
   "protected_boundaries": {
