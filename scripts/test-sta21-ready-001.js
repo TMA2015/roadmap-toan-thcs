@@ -58,7 +58,7 @@ const candidate=items.slice(12);
 ok(candidate.length===2,"exactly two candidate Grade-9 Readiness items");
 ok(candidate[0].id==="STA21READY_013"&&candidate[0].skill==="bang-tan-so"&&candidate[0].curriculum.grades[0]===9,"frequency candidate");
 ok(candidate[1].id==="STA21READY_014"&&candidate[1].skill==="du-lieu-ghep-nhom"&&candidate[1].curriculum.grades[0]===9,"grouped-data candidate");
-for(const q of candidate) ok(q.authoring_review?.status==="PENDING"&&q.authoring_review?.packet_id==="MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009","candidate review marker "+q.id);
+for(const q of candidate) ok(q.authoring_review?.status==="PASS"&&q.authoring_review?.packet_id==="MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009"&&q.authoring_review?.clearance==="PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE","academic review marker "+q.id);
 const page=txt("docs/kien-thuc/21-thong-ke/tu-kiem-tra.md"),old=txt("docs/kien-thuc/21-thong-ke/tu-kiem-tra-tu-luan.md"),index=txt("docs/kien-thuc/21-thong-ke/index.md");
 ok(page.includes('data-readiness-check-v1="assets/data/assessment/21-thong-ke-core-v1.json"'),"assessment page mount");
 ok(page.includes("lớp 6–9")&&page.includes("không dùng kết quả toàn bài"),"full-topic age caveat");
