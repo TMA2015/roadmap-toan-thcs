@@ -22,17 +22,38 @@ for(const lock of [a.source_locks.coverage_matrix,a.source_locks.grade8_reconcil
 }
 for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
   for(const k of ["workspace","micro","manifest","assessment"]){
-    if(topic==="07-phan-thuc-dai-so" && (k==="workspace" || k==="micro")){
-      // Inventory R1 preserves its historical input SHA. The later bounded
-      // density wave may append one existing canonical skill + one Micro item.
+    if(["07-phan-thuc-dai-so","21-thong-ke","23-xac-suat"].includes(topic) && (k==="workspace" || k==="micro")){
+      // These are shared cross-grade topics. Later bounded append-only repair
+      // may extend higher-grade Learn/Micro evidence while historical Grade-8
+      // cards and formative evidence remain intact.
       assert.match(ev[k].sha,/^[0-9a-f]{40}$/);
       const current=json(ev[k].path);
-      if(k==="workspace"){
-        for(const id of ["pt07-core-1","pt07-core-2","pt07-core-3","pt07-core-4","pt07-core-5"])
-          assert.ok(current.cards.some(c=>c.id===id),"historical Grade-8 Topic07 card removed: "+id);
+      if(topic==="07-phan-thuc-dai-so"){
+        if(k==="workspace"){
+          for(const id of ["pt07-core-1","pt07-core-2","pt07-core-3","pt07-core-4","pt07-core-5"])
+            assert.ok(current.cards.some(c=>c.id===id),"historical Grade-8 Topic07 card removed: "+id);
+        }else{
+          assert.ok(current.questions.length>=17,"historical Grade-8 Topic07 Micro evidence regressed");
+          assert.deepEqual(current.questions.slice(15,17).map(q=>q.id),["RAT07MICRO_016","RAT07MICRO_017"]);
+        }
+      }else if(topic==="21-thong-ke"){
+        if(k==="workspace"){
+          for(const id of ["sta21-core-2","sta21-core-3","sta21-core-4","sta21-core-5"])
+            assert.ok(current.cards.some(c=>c.id===id),"historical Grade-8 Topic21 card removed: "+id);
+        }else{
+          assert.ok(current.questions.length>=24,"historical Grade-8 Topic21 Micro evidence regressed");
+          for(const id of ["STA21MICRO_015","STA21MICRO_021","STA21MICRO_022","STA21MICRO_023","STA21MICRO_024"])
+            assert.ok(current.questions.some(q=>q.id===id),"historical Grade-8 Topic21 Micro removed: "+id);
+        }
       }else{
-        assert.ok(current.questions.length>=17,"historical Grade-8 Topic07 Micro evidence regressed");
-        assert.deepEqual(current.questions.slice(15,17).map(q=>q.id),["RAT07MICRO_016","RAT07MICRO_017"]);
+        if(k==="workspace"){
+          for(const id of ["prob23-core-4","prob23-core-5"])
+            assert.ok(current.cards.some(c=>c.id===id),"historical Grade-8 Topic23 card removed: "+id);
+        }else{
+          assert.ok(current.questions.length>=20,"historical Grade-8 Topic23 Micro evidence regressed");
+          for(const id of ["PRO23MICRO_010","PRO23MICRO_011","PRO23MICRO_012","PRO23MICRO_013","PRO23MICRO_014","PRO23MICRO_015","PRO23MICRO_017"])
+            assert.ok(current.questions.some(q=>q.id===id),"historical Grade-8 Topic23 Micro removed: "+id);
+        }
       }
     }else{
       assert.equal(blob(read(ev[k].path)),ev[k].sha,"source drift: "+topic+" "+k);
