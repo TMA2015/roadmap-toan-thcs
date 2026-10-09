@@ -10,6 +10,17 @@ const written=read("docs/assets/data/written-exercises/written-exercise-library-
 const anchors=read("docs/assets/data/anchors/anchor-catalog-v1.json");
 
 const famById=new Map(reg.families.map(f=>[f.family_id,f]));
+const globalUniqueSubskill=new Map();
+for(const fam of reg.families){
+  for(const sk of fam.diagnostic_subskills||[]){
+    if(!globalUniqueSubskill.has(sk)) globalUniqueSubskill.set(sk,new Set());
+    globalUniqueSubskill.get(sk).add(fam.family_id);
+  }
+}
+const uniqueGlobalFamily=sk=>{
+  const s=globalUniqueSubskill.get(sk);
+  return s&&s.size===1?[...s][0]:null;
+};
 const mapByLegacy=new Map();
 for(const m of reg.legacy_mappings){
   const key=m.topic_id+":"+m.legacy_id;
@@ -21,12 +32,15 @@ const rows=new Map(reg.families.map(f=>[f.family_id,{
   core_micro:0,practice:0,readiness:0,written:0,anchor_exact:0,
   practice_question_ids:[],micro_question_ids:[],readiness_item_ids:[],written_ids:[],anchor_ids:[]
 }]));
-const unresolved={practice:[],micro:[],readiness:[],written:[],anchor_tags:[]};
+const unresolved={practice:[],micro:[],readiness:[],written:[],anchor_tags:[]};\nconst inferred={practice:[],micro:[],readiness:[],written:[]};
 const add=(fid,field,id)=>{const r=rows.get(fid);if(!r)return false;r[field]++;const k={practice:"practice_question_ids",core_micro:"micro_question_ids",readiness:"readiness_item_ids",written:"written_ids",anchor_exact:"anchor_ids"}[field];if(k&&!r[k].includes(id))r[k].push(id);return true};
-const familiesFor=(topic,skills)=>{
+const familiesFor=(topic,skills,allowGlobal=true)=>{
   const out=new Set();
   for(const sk of (Array.isArray(skills)?skills:[skills]).filter(Boolean)){
     for(const fid of mapByLegacy.get(topic+":"+sk)||[])out.add(fid);
+    if(allowGlobal && !(mapByLegacy.get(topic+":"+sk)||[]).length){
+      const fid=uniqueGlobalFamily(sk); if(fid) out.add(fid);
+    }
   }
   return [...out];
 };
@@ -52,8 +66,13 @@ for(const mf of manifests){
     for(const q of bank.questions||[]){
       practiceQuestions++;
       const reviewed=policyByQ.get(q.id);
-      let fids=reviewed?[reviewed]:familiesFor(topic,q.tags?.skill||q.skill||[]);
-      if(!reviewed)postTaxonomy++;
+      const skills=q.tags?.skill||q.skill||[];
+      let fids=reviewed?[reviewed]:familiesFor(topic,skills);
+      if(!reviewed){
+        postTaxonomy++;
+        const exact=familiesFor(topic,skills,false);
+        if(!exact.length&&fids.length) inferred.practice.push({topic,question_id:q.id,skills,family_ids:fids,method:"GLOBAL_UNIQUE_DIAGNOSTIC_SUBSKILL"});
+      }
       if(!fids.length) unresolved.practice.push({topic,question_id:q.id,skills:q.tags?.skill||q.skill||[]});
       for(const fid of new Set(fids))add(fid,"practice",q.id);
     }
@@ -65,8 +84,10 @@ for(const n of fs.readdirSync(practiceDir).filter(n=>/-micro-v1\.json$/.test(n))
   const topicNum=(n.match(/^(\d\d)-/)||[])[1];if(!topicNum)continue;
   const topic="CT"+topicNum,bank=read("docs/assets/data/practice/"+n);
   for(const q of bank.questions||[]){
-    const fids=familiesFor(topic,q.tags?.skill||q.skill||[]);
-    if(!fids.length)unresolved.micro.push({topic,question_id:q.id,skills:q.tags?.skill||q.skill||[]});
+    const skills=q.tags?.skill||q.skill||[];
+    const exact=familiesFor(topic,skills,false),fids=familiesFor(topic,skills);
+    if(!exact.length&&fids.length) inferred.micro.push({topic,question_id:q.id,skills,family_ids:fids,method:"GLOBAL_UNIQUE_DIAGNOSTIC_SUBSKILL"});
+    if(!fids.length)unresolved.micro.push({topic,question_id:q.id,skills});
     for(const fid of new Set(fids))add(fid,"core_micro",q.id);
   }
 }
@@ -76,8 +97,10 @@ const assessDir=path.join(root,"docs/assets/data/assessment");
 for(const n of fs.readdirSync(assessDir).filter(n=>/^\d\d-.*-core-v1\.json$/.test(n)).sort()){
   const topic="CT"+n.slice(0,2),a=read("docs/assets/data/assessment/"+n);
   for(const q of a.items||[]){
-    const fids=familiesFor(topic,q.skill||q.skills||[]);
-    if(!fids.length)unresolved.readiness.push({topic,item_id:q.id||q.item_id,skill:q.skill||q.skills});
+    const skills=q.skill||q.skills||[];
+    const exact=familiesFor(topic,skills,false),fids=familiesFor(topic,skills);
+    if(!exact.length&&fids.length) inferred.readiness.push({topic,item_id:q.id||q.item_id,skills,family_ids:fids,method:"GLOBAL_UNIQUE_DIAGNOSTIC_SUBSKILL"});
+    if(!fids.length)unresolved.readiness.push({topic,item_id:q.id||q.item_id,skill:skills});
     for(const fid of new Set(fids))add(fid,"readiness",q.id||q.item_id);
   }
 }
@@ -85,8 +108,9 @@ for(const n of fs.readdirSync(assessDir).filter(n=>/^\d\d-.*-core-v1\.json$/.tes
 // Written
 for(const e of written.exercises||[]){
   const topic=e.topic_id;
-  const fids=familiesFor(topic,e.skills||[]);
-  if(!fids.length)unresolved.written.push({topic,exercise_id:e.exercise_id,skills:e.skills||[]});
+  const skills=e.skills||[],exact=familiesFor(topic,skills,false),fids=familiesFor(topic,skills);
+  if(!exact.length&&fids.length) inferred.written.push({topic,exercise_id:e.exercise_id,skills,family_ids:fids,method:"GLOBAL_UNIQUE_DIAGNOSTIC_SUBSKILL"});
+  if(!fids.length)unresolved.written.push({topic,exercise_id:e.exercise_id,skills});
   for(const fid of new Set(fids))add(fid,"written",e.exercise_id);
 }
 
@@ -130,7 +154,7 @@ const summary={
   unresolved_counts:Object.fromEntries(Object.entries(unresolved).map(([k,v])=>[k,v.length])),
   exam_frequency_status:"PENDING_OFFICIAL_CORPUS"
 };
-const report={schema:"practice-coverage-matrix-r1",summary,families:arr,unresolved,
+const report={schema:"practice-coverage-matrix-r1",summary,families:arr,unresolved,inferred,
  decision_note:"Inventory signals only. Zero/low/high counts do not automatically authorize ADD/REMOVE. Review curriculum layer, duplication, remediation value and source evidence first."};
 assert.equal(arr.length,131);
 assert.equal(practiceQuestions,3153);
@@ -148,5 +172,5 @@ const groupUnresolved=list=>{
   return [...m.values()].sort((a,b)=>b.count-a.count||a.key.localeCompare(b.key));
 };
 const unresolved_groups=Object.fromEntries(Object.entries(unresolved).map(([k,v])=>[k,groupUnresolved(v)]));
-summary.kntt_core_zero.practice_family_ids=summary.kntt_core_zero.practice;
+summary.kntt_core_zero.practice_family_ids=summary.kntt_core_zero.practice;\nsummary.inferred_counts=Object.fromEntries(Object.entries(inferred).map(([k,v])=>[k,v.length]));
 console.log(JSON.stringify({summary,unresolved_groups},null,2));
