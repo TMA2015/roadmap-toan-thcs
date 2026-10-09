@@ -147,7 +147,7 @@ with sync_playwright() as p:
         check(links.nth(3 if pilot else 2).get_attribute("href").endswith("/tu-kiem-tra/"), "self-check route " + row["url"])
         title = topic_page.locator(".topic-workspace-hero h1, .md-content__inner h1").first.inner_text()
         check(bool(title.strip()), "readable title for " + row["url"])
-        # Every published five-card workspace must open a self-contained modal.
+        # Every published Core workspace must open a self-contained modal.
         # Probe without answering, so this sweep never writes learner evidence.
         slug = urlparse(row["url"]).path.rstrip("/").split("/")[-1]
         core_page = None
@@ -165,7 +165,7 @@ with sync_playwright() as p:
             core_page.locator('#core-journey[data-core-ready="1"]').wait_for(state="visible", timeout=12000)
             check(core_page.locator(".topic-core-teaching-item").count() == 0,
                   "no duplicate lecture accordion outside cards")
-            expected_core_cards = 10 if slug == "20-hinh-hoc-tong-hop" else (8 if slug == "02-so-va-phep-tinh" else (7 if slug in ["21-thong-ke", "23-xac-suat"] else (6 if slug in ["03-ti-le-ti-le-thuc", "04-bieu-thuc-dai-so"] else 5)))
+            expected_core_cards = 10 if slug == "20-hinh-hoc-tong-hop" else (8 if slug == "02-so-va-phep-tinh" else (7 if slug in ["21-thong-ke", "23-xac-suat"] else (6 if slug in ["03-ti-le-ti-le-thuc", "04-bieu-thuc-dai-so", "12-phuong-trinh-bac-hai-viete"] else 5)))
             check(core_page.locator(".topic-core-card .topic-core-teach-start").count() == expected_core_cards,
                   "all published Core cards have a lecture button")
             check(core_page.locator(".topic-core-card .topic-micro-start").count() == expected_core_cards,
@@ -838,13 +838,15 @@ $$
         ("09-he-phuong-trinh","sys09-core-5","nang-suat-he"),
         ("10-ham-so-do-thi","fun10-core-5",None),
         ("11-can-thuc","rad11-core-4","truc-can-mau-don"),
-        ("12-phuong-trinh-bac-hai-viete","qua12-core-5",None)
+        ("12-phuong-trinh-bac-hai-viete","qua12-core-5",None),
+        ("12-phuong-trinh-bac-hai-viete","qua12-core-g9-6","bieu-thuc-doi-xung")
     ]
     for topic_slug,card_id,skill in new_core_phone:
         first_phone.goto(BASE + "kien-thuc/"+topic_slug+"/core/",wait_until="networkidle")
         first_phone.locator('#core-journey[data-core-ready="1"]').wait_for(state="visible",timeout=12000)
+        expected_phone_cards = 6 if topic_slug == "12-phuong-trinh-bac-hai-viete" else 5
         check(first_phone.locator(".lesson-switcher-steps a").count()==4
-              and first_phone.locator(".topic-core-card").count()==5,
+              and first_phone.locator(".topic-core-card").count()==expected_phone_cards,
               "phone Core page and four-step shell "+topic_slug)
         card=first_phone.locator('.topic-core-card[data-card-id="'+card_id+'"]')
         check(card.evaluate("(el)=>el.scrollWidth<=el.clientWidth+2"),"Core card fits phone "+card_id)

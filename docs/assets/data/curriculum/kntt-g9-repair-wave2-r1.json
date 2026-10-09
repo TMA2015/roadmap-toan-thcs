@@ -1,0 +1,108 @@
+{
+  "packet_id": "MATH-KNTT-G9-REPAIR-W2-R1-20261009",
+  "as_of": "2026-10-09",
+  "status": "ACADEMIC_CONTENT_REVIEW_PASS",
+  "scope": "Grade-9 Repair Wave 2 candidate authoring for CH6 symmetric-root expressions only, after G9_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+  "authorization": {
+    "source_artifact": "docs/assets/data/curriculum/kntt-g9-gap-priority-r1.json",
+    "clearance": "G9_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+    "chapter": "CH6",
+    "item_review": {
+      "bieu-thuc-doi-xung": "CORE_LEARN_MICRO",
+      "dau-nghiem": "CORE_SUPPORT_ONLY",
+      "lien-he-do-thi": "CORE_SUPPORT_ONLY"
+    },
+    "dimensions": [
+      "LEARN",
+      "MICRO"
+    ],
+    "practice_expansion": false,
+    "written_expansion": false,
+    "readiness_expansion": false,
+    "new_canonical_skills": 0
+  },
+  "counts": {
+    "chapter_groups": 1,
+    "learn_cards": 1,
+    "micro_items": 4,
+    "practice_items": 0,
+    "written_items": 0,
+    "readiness_items": 0,
+    "new_canonical_skills": 0
+  },
+  "group": {
+    "topic": "12-phuong-trinh-bac-hai-viete",
+    "lesson": "Chương 6",
+    "learn_cards": [
+      "qua12-core-g9-6"
+    ],
+    "micro_items": [
+      "QUA12MICRO_016",
+      "QUA12MICRO_017",
+      "QUA12MICRO_018",
+      "QUA12MICRO_019"
+    ],
+    "canonical_targets": [
+      "bieu-thuc-doi-xung"
+    ],
+    "excluded_from_core": [
+      "dau-nghiem",
+      "lien-he-do-thi"
+    ],
+    "prerequisite_targets": [
+      "tong-tich-nghiem"
+    ]
+  },
+  "protected_boundaries": {
+    "mutate_practice_bank": false,
+    "mutate_written_library": false,
+    "mutate_readiness": false,
+    "create_canonical_skill": false,
+    "create_canonical_family": false,
+    "runtime_taxonomy_change": false,
+    "change_mastery": false,
+    "regrade_learner_history": false
+  },
+  "notebooklm_source_contract": {
+    "selected_source_count": 5,
+    "permanent_sources": [
+      "NotebookLM Math Review Rules v1.2",
+      "Self-Learning Math Master Plan v1.2.1"
+    ],
+    "grade9_s1_sources": [
+      "SGK Toán 9, tập một — Kết nối tri thức với cuộc sống",
+      "SGK Toán 9, tập hai — Kết nối tri thức với cuộc sống"
+    ],
+    "temporary_batch_sources": [
+      "00_NOTEBOOKLM_PACKET_R1.md — NotebookLM Review Packet — Grade 9 Repair Wave 2 CH6 R1"
+    ]
+  },
+  "next_step": {
+    "status": "ACADEMIC_PASS_AWAIT_REPOSITORY_QA",
+    "required_clearance": "G9_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE"
+  },
+  "independent_review": {
+    "reviewer": "NotebookLM",
+    "verdict": "PASS",
+    "clearance": "G9_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE",
+    "reviewed_on": "2026-10-09",
+    "receipt": "review-packets/kntt-g9-repair-wave2-r1/01_NOTEBOOKLM_RESULT_R1.md",
+    "group": {
+      "chapter": "CH6",
+      "learn": 1,
+      "micro": 4,
+      "verdict": "PASS"
+    },
+    "item_review": {
+      "bieu-thuc-doi-xung": "CORE_LEARN_MICRO"
+    },
+    "boundaries": {
+      "dau-nghiem": "CORE_SUPPORT_ONLY",
+      "lien-he-do-thi": "CORE_SUPPORT_ONLY",
+      "practice": "PASS_NO_ADDITIONS",
+      "written": "PASS_NO_ADDITIONS",
+      "readiness": "PASS_NO_ADDITIONS",
+      "new_canonical_skill": "PASS_NONE"
+    }
+  }
+}

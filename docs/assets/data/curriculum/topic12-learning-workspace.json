@@ -220,15 +220,55 @@
         "review_method": "SOURCE_LOCKED_BOUNDED_SELF_AUDIT",
         "academic_review_ref": "content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md"
       }
+    },
+    {
+      "id": "qua12-core-g9-6",
+      "order": 6,
+      "title": "Biểu thức đối xứng theo hai nghiệm",
+      "kntt_lessons": [
+        "Lớp 9 · Chương 6"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "bieu-thuc-doi-xung"
+      ],
+      "prerequisites": [
+        "tong-tich-nghiem"
+      ],
+      "micro_practice": [
+        "QUA12MICRO_016",
+        "QUA12MICRO_017",
+        "QUA12MICRO_018",
+        "QUA12MICRO_019"
+      ],
+      "teaching_copy": {
+        "key_idea": "Nếu phương trình bậc hai có hai nghiệm thực x₁, x₂, đặt S=x₁+x₂=-b/a và P=x₁x₂=c/a. Nhiều biểu thức đối xứng có thể đổi về S và P nên không cần giải riêng từng nghiệm: x₁²+x₂²=S²-2P; (x₁-x₂)²=S²-4P; 1/x₁+1/x₂=S/P khi P≠0; x₁³+x₂³=S³-3PS.",
+        "worked_example": {
+          "problem": "Cho x²-5x+3=0 có hai nghiệm x₁,x₂. Tính x₁²+x₂² mà không giải phương trình.",
+          "solution": "Theo Viète, S=x₁+x₂=5 và P=x₁x₂=3. Do đó x₁²+x₂²=S²-2P=25-6=19."
+        },
+        "misconception": "Giải phương trình dài dòng khi chỉ cần S,P; dùng công thức S/P mà quên điều kiện P≠0; hoặc nhầm (x₁-x₂)² với S²-2P.",
+        "summary": "Đổi biểu thức đối xứng về S=x₁+x₂ và P=x₁x₂ trước, rồi thay Viète; chỉ giải nghiệm riêng khi thật sự cần.",
+        "source_reference": "docs/kien-thuc/12-phuong-trinh-bac-hai-viete/index.md",
+        "source_sections": [
+          "Dạng 5"
+        ],
+        "source_question_ids": [
+          "QUA12MICRO_016",
+          "QUA12MICRO_017",
+          "QUA12MICRO_018",
+          "QUA12MICRO_019"
+        ]
+      },
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W2-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "clearance": "G9_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE"
+      }
     }
   ],
   "extensions": [
-    {
-      "id": "qua12-ent10-1",
-      "layer": "Entrance10",
-      "title": "Biểu thức đối xứng theo nghiệm",
-      "gates_core": false
-    },
     {
       "id": "qua12-ent10-2",
       "layer": "Entrance10",
@@ -248,7 +288,7 @@
   },
   "qa_notes": [
     "tham-so-so-nghiem is excluded from Grade 9 Core in the reviewed map.",
-    "bieu-thuc-doi-xung, dau-nghiem and lien-he-do-thi stay outside Core readiness pending item-level source review.",
-    "lap-pt-tu-nghiem is retained in Core per the reviewed Grade 9 correction."
+    "lap-pt-tu-nghiem is retained in Core per the reviewed Grade 9 correction.",
+    "bieu-thuc-doi-xung is Grade-9 KNTT-Core after NotebookLM PASS G9_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE; dau-nghiem and lien-he-do-thi remain Core-Support only."
   ]
 }
