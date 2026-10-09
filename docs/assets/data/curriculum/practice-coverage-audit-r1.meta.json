@@ -1,0 +1,55 @@
+{
+  "audit_id": "MATH-PRACTICE-COVERAGE-MATRIX-R1-20261009",
+  "as_of": "2026-10-09",
+  "status": "INVENTORY_GENERATOR_READY",
+  "scope": "Whole-project coverage inventory across 131 Skill Taxonomy v2 learner-facing families.",
+  "evidence_layers": [
+    "CORE_MICRO",
+    "PRACTICE_BANK",
+    "READINESS",
+    "WRITTEN_LIBRARY",
+    "ANCHOR_LIBRARY"
+  ],
+  "source_of_truth": {
+    "taxonomy": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+    "practice_runtime_index": "docs/assets/data/curriculum/taxonomy-v2-runtime/index-r1.json",
+    "practice_manifests": "docs/assets/data/practice/*manifest.json",
+    "core_micro": "docs/assets/data/practice/*-micro-v1.json",
+    "readiness": "docs/assets/data/assessment/*-core-v1.json",
+    "written": "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+    "anchors": "docs/assets/data/anchors/anchor-catalog-v1.json"
+  },
+  "known_project_counts": {
+    "taxonomy_families": 131,
+    "taxonomy_kntt_core_families": 100,
+    "taxonomy_core_support_families": 5,
+    "taxonomy_entrance10_families": 19,
+    "taxonomy_specialized_challenge_families": 4,
+    "taxonomy_thpt_bridge_families": 3,
+    "reviewed_practice_basis": 3114,
+    "current_practice_questions": 3153,
+    "current_core_micro_questions": 470,
+    "current_readiness_items": 204,
+    "current_written_exercises": 54,
+    "current_anchor_entries": 11,
+    "current_representative_anchors": 10
+  },
+  "audit_rules": {
+    "no_quota_inflation": true,
+    "practice_frequency_is_not_exam_frequency": true,
+    "exam_frequency_status": "PENDING_OFFICIAL_CORPUS",
+    "written_not_required_for_every_family": true,
+    "readiness_not_required_for_optional_layers_by_default": true,
+    "anchors_require_manual_family_crosswalk_if_tags_do_not_exactly_match_taxonomy": true,
+    "no_automatic_mastery_or_readiness_credit": true,
+    "no_learner_history_regrade": true
+  },
+  "intended_outputs": [
+    "Per-family counts by five evidence layers",
+    "Unmapped post-taxonomy Practice additions",
+    "Zero/low/high evidence signals without automatic ADD decisions",
+    "Manual Anchor crosswalk queue",
+    "Shortlist for later KEEP / ADD / NO_MORE / OPTIONAL decisions"
+  ],
+  "decision_gate": "Do not author new questions from this inventory alone. First reconcile signals against curriculum layer, remediation value, duplication, and source evidence."
+}
