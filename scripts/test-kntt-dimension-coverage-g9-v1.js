@@ -25,13 +25,24 @@ for(const lock of Object.values(a.source_locks.longform_sources)){
 }
 for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
   for(const k of ["workspace","micro","manifest","assessment"]){
-    if(["21-thong-ke","23-xac-suat"].includes(topic) && (k==="workspace" || k==="micro")){
-      // Inventory R1 records the pre-repair evidence snapshot. Authorized Grade-9
-      // Wave-1 Learn/Micro repair may append to these shared cross-grade topics
-      // without invalidating the historical inventory semantics.
+    if(["12-phuong-trinh-bac-hai-viete","21-thong-ke","23-xac-suat"].includes(topic) && (k==="workspace" || k==="micro")){
+      // Inventory R1 records pre-repair evidence snapshots. Independently reviewed
+      // Grade-9 Learn/Micro waves may append to these topics without invalidating
+      // the historical inventory semantics, provided the original evidence remains.
       assert.match(ev[k].sha,/^[0-9a-f]{40}$/);
       const current=json(ev[k].path);
-      if(topic==="21-thong-ke"){
+      if(topic==="12-phuong-trinh-bac-hai-viete"){
+        if(k==="workspace"){
+          for(const id of ["qua12-core-1","qua12-core-2","qua12-core-3","qua12-core-4","qua12-core-5"])
+            assert.ok(current.cards.some(c=>c.id===id),"historical Topic12 card removed: "+id);
+        }else{
+          assert.ok(current.questions.length>=15,"historical Topic12 Micro evidence regressed");
+          for(let n=1;n<=15;n++){
+            const id="QUA12MICRO_"+String(n).padStart(3,"0");
+            assert.ok(current.questions.some(q=>q.id===id),"historical Topic12 Micro removed: "+id);
+          }
+        }
+      }else if(topic==="21-thong-ke"){
         if(k==="workspace"){
           for(const id of ["sta21-core-1","sta21-core-2","sta21-core-3","sta21-core-4","sta21-core-5"])
             assert.ok(current.cards.some(c=>c.id===id),"historical Topic21 card removed: "+id);
