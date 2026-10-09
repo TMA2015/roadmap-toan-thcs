@@ -1,0 +1,66 @@
+{
+  "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+  "as_of": "2026-10-09",
+  "status": "CANDIDATE_AWAITING_ACADEMIC_REVIEW",
+  "authorization": {
+    "source_decision": "practice-coverage-priority-r1.json",
+    "clearance": "PRACTICE_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE"
+  },
+  "counts": {
+    "readiness_new_items": 15,
+    "readiness_new_assessments": 1,
+    "practice_new_items": 10,
+    "anchor_crosswalk_updates": 11,
+    "new_canonical_families": 0
+  },
+  "readiness_scope": {
+    "CT02": {
+      "add_items": 3,
+      "families": [
+        "NUM-ABS",
+        "NUM-POWER",
+        "NUM-FRACTION-FORM"
+      ]
+    },
+    "CT03": {
+      "new_assessment_items": 10,
+      "families": [
+        "RATIO-BASIC",
+        "RATIO-PROP",
+        "RATIO-SPLIT",
+        "RATIO-DIRECT",
+        "RATIO-INVERSE",
+        "RATIO-DISTINGUISH"
+      ]
+    },
+    "CT21": {
+      "add_items": 2,
+      "families": [
+        "STAT-FREQUENCY",
+        "STAT-ADVANCED-DATA"
+      ]
+    }
+  },
+  "practice_scope": {
+    "NUM-ABS": {
+      "topic": "CT02",
+      "add_items": 3,
+      "before": 3,
+      "target_after": 6
+    },
+    "QUAD-GRAPH": {
+      "topic": "CT12",
+      "add_items": 3,
+      "before": 2,
+      "target_after": 5
+    },
+    "RATIO-MODEL": {
+      "topic": "CT03",
+      "add_items": 4,
+      "before": 0,
+      "target_after": 4
+    }
+  },
+  "anchor_crosswalk_updates": 11,
+  "next_step": "AWAIT_NOTEBOOKLM_CONTENT_REVIEW"
+}
