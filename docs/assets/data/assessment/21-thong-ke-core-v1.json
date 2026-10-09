@@ -17,7 +17,9 @@
     "bieu-do-quat-tron": "Biểu đồ hình quạt tròn",
     "chon-bieu-do": "Chọn dạng biểu diễn",
     "chuyen-bang-bieu-do": "Chuyển đổi bảng – biểu đồ",
-    "nhan-xet-du-lieu": "Nhận xét và kết luận từ dữ liệu"
+    "nhan-xet-du-lieu": "Nhận xét và kết luận từ dữ liệu",
+    "bang-tan-so": "Bảng tần số và tần suất",
+    "du-lieu-ghep-nhom": "Dữ liệu ghép nhóm"
   },
   "policy": {
     "feedback": "after_submit",
@@ -300,6 +302,58 @@
           8
         ],
         "level": "core"
+      }
+    },
+    {
+      "id": "STA21READY_013",
+      "type": "mcq",
+      "skill": "bang-tan-so",
+      "points": 1,
+      "question": "Dãy số liệu 2, 3, 2, 4, 3, 2 có tần số của giá trị 2 bằng bao nhiêu?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": 1,
+      "explanation": "Giá trị 2 xuất hiện 3 lần trong dãy số liệu, nên tần số của 2 là 3.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PENDING",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009"
+      }
+    },
+    {
+      "id": "STA21READY_014",
+      "type": "mcq",
+      "skill": "du-lieu-ghep-nhom",
+      "points": 1,
+      "question": "Bảng ghép nhóm có các khoảng [0;5), [5;10), [10;15) với tần số lần lượt 4, 7, 3. Khoảng nào có tần số lớn nhất?",
+      "options": [
+        "[0;5)",
+        "[5;10)",
+        "[10;15)",
+        "Cả ba bằng nhau"
+      ],
+      "answer": 1,
+      "explanation": "Ba tần số là 4, 7 và 3; lớn nhất là 7, ứng với khoảng [5;10).",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PENDING",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009"
       }
     }
   ],
