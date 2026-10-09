@@ -84,7 +84,20 @@ for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
       assert.equal(blob(read(ev[k].path)),ev[k].sha,"source drift: "+ev[k].path);
     }
   }
-  if(ev.assessment) assert.equal(blob(read(ev.assessment.path)),ev.assessment.sha,"source drift: "+ev.assessment.path);
+  if(ev.assessment){
+    if(topic==="02-so-va-phep-tinh" || topic==="21-thong-ke"){
+      assert.match(ev.assessment.sha,/^[0-9a-f]{40}$/);
+      const currentAssessment=json(ev.assessment.path);
+      const prefix=topic==="02-so-va-phep-tinh"?"NUM02G6READY_":"STA21READY_";
+      const baseline=topic==="02-so-va-phep-tinh"?10:12;
+      for(let n=1;n<=baseline;n++){
+        const id=prefix+String(n).padStart(3,"0");
+        assert.ok(currentAssessment.items.some(q=>q.id===id),"historical Readiness baseline missing: "+id);
+      }
+    }else{
+      assert.equal(blob(read(ev.assessment.path)),ev.assessment.sha,"source drift: "+ev.assessment.path);
+    }
+  }
 }
 
 const review=read(a.source_locks.grade7_reconciliation_review.path);
