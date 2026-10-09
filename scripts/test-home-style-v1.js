@@ -2,13 +2,13 @@
 "use strict";
 const fs=require("fs"),path=require("path"),vm=require("vm"),root=path.resolve(__dirname,"..");
 const load=p=>fs.readFileSync(path.join(root,p),"utf8");
-const html=load("docs/index.md"),css=load("docs/assets/stylesheets/site-design-system.css"),js=load("docs/assets/javascripts/study-scene-v1.js"),config=load("mkdocs.yml");
+const html=load("docs/index.md"),css=load("docs/assets/stylesheets/site-design-system.css"),js=load("docs/assets/javascripts/study-scene-v1.js"),config=load("mkdocs.yml"),routeLoader=load("docs/assets/javascripts/route-module-loader-v1.js");
 const ok=(x,msg)=>{if(!x)throw Error(msg)};
 for(const mark of ['data-home-mode="standard"','data-home-mode="playful"','data-home-dialog hidden','data-home-select="standard"','data-home-select="playful"','data-study-wake','data-study-gateway hidden'])ok(html.includes(mark),mark);
 ok(html.includes('class="home-hero-art"')&&html.includes('class="study-art-image"'),"both illustrations");
 ok(html.includes('href="kien-thuc/"')&&html.includes('href="roadmap/"'),"links");
 ok(css.includes("prefers-reduced-motion:reduce")&&css.includes(".home-style-card-playful"),"accessibility and style");
-ok(config.includes("study-scene-v1.js"),"loaded script");
+ok(config.includes("route-module-loader-v1.js")&&!config.includes("study-scene-v1.js")&&routeLoader.includes('load("study-scene-v1.js")'),"homepage study scene route-lazy loaded");
 ok(js.includes("roadmap.home.style.v1")&&js.includes("localStorage.setItem")&&js.includes('gateway.hidden = false'),"preference and wake interaction");
 for(const name of ["study-kid-sleeping.webp","study-kid-awake.webp","tutor-girl-awake.webp"]){
   const image=path.join(root,"docs/assets/images",name),data=fs.readFileSync(image);
