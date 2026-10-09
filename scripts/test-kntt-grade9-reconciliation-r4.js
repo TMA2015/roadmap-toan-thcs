@@ -103,3 +103,5 @@ require("./test-kntt-dimension-coverage-g9-v1.js");
 require("./test-kntt-g9-gap-priority-r1.js");
 
 require("./test-kntt-g9-repair-wave1-r1.js");
+
+require("./test-kntt-g9-repair-wave2-r1.js");
