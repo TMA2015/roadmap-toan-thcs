@@ -1,7 +1,7 @@
 {
   "packet_id": "MATH-KNTT-G9-GAP-PRIORITY-R1-20261008",
   "as_of": "2026-10-08",
-  "status": "ACADEMIC_SCOPE_REVIEW_PENDING",
+  "status": "ACADEMIC_SCOPE_REVIEW_PASS",
   "inventory": {
     "path": "docs/assets/data/curriculum/kntt-dimension-coverage-g9-v1.json",
     "status": "G9_EXISTING_EVIDENCE_INVENTORY_R1"
@@ -81,7 +81,59 @@
     ]
   },
   "next_step": {
-    "status": "AWAIT_NOTEBOOKLM_SCOPE_CLEARANCE",
-    "required_clearance": "G9_GAP_PRIORITY_R1_REVIEW_COMPLETE"
+    "status": "AUTHORIZED_FOR_WAVE1_CANDIDATE_AUTHORING",
+    "groups": [
+      "CH7",
+      "CH8"
+    ],
+    "content_review_required": true
+  },
+  "independent_review": {
+    "reviewer": "NotebookLM",
+    "verdict": "PASS",
+    "clearance": "G9_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+    "first_repair_wave": [
+      "CH7",
+      "CH8"
+    ],
+    "max_groups_wave1": 2,
+    "chapter7": {
+      "dimensions": [
+        "LEARN",
+        "MICRO"
+      ],
+      "targets": [
+        "bang-tan-so",
+        "tan-suat",
+        "du-lieu-ghep-nhom",
+        "STAT-REPRESENT"
+      ]
+    },
+    "chapter8": {
+      "dimensions": [
+        "LEARN",
+        "MICRO"
+      ],
+      "item_review": {
+        "dong-xu-nhieu-lan": "CORE_LEARN_MICRO",
+        "xuc-xac-hai-lan": "CORE_LEARN_MICRO",
+        "so-do-cay": "CORE_LEARN_MICRO",
+        "nhieu-buoc-doc-lap": "CORE_LEARN_MICRO",
+        "khong-hoan-lai": "CORE_LEARN_MICRO"
+      }
+    },
+    "chapter6_item_review": {
+      "bieu-thuc-doi-xung": "CORE_LEARN_MICRO",
+      "dau-nghiem": "CORE_SUPPORT_ONLY",
+      "lien-he-do-thi": "CORE_SUPPORT_ONLY"
+    },
+    "boundaries": {
+      "practice": "NO_QUOTA_EXPANSION",
+      "written": "NO_QUOTA_EXPANSION",
+      "readiness": "NO_QUOTA_EXPANSION",
+      "new_canonical_skills": "NONE"
+    },
+    "receipt": "review-packets/kntt-g9-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md",
+    "reviewed_on": "2026-10-09"
   }
 }
