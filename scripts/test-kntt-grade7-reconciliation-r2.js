@@ -32,7 +32,8 @@ for (const lock of r.source_locks.learning_workspaces) {
   if (
     lock.path.endsWith("topic02-learning-workspace.json") ||
     lock.path.endsWith("topic04-learning-workspace.json") ||
-    lock.path.endsWith("topic21-learning-workspace.json")
+    lock.path.endsWith("topic21-learning-workspace.json") ||
+    lock.path.endsWith("topic23-learning-workspace.json")
   ) {
     // R2 source locks preserve the historical review input. Later Grade-7
     // append-only repair candidates may extend these shared workspaces without
@@ -43,7 +44,9 @@ for (const lock of r.source_locks.learning_workspaces) {
       ? ["num02-g6-core-1","num02-g6-core-2","num02-g6-core-3","num02-g6-core-4","num02-g6-core-5"]
       : lock.path.endsWith("topic04-learning-workspace.json")
         ? ["alg04-core-1","alg04-core-2","alg04-core-3","alg04-core-4","alg04-core-5"]
-        : ["sta21-core-1","sta21-core-2","sta21-core-3","sta21-core-4","sta21-core-5"];
+        : lock.path.endsWith("topic21-learning-workspace.json")
+          ? ["sta21-core-1","sta21-core-2","sta21-core-3","sta21-core-4","sta21-core-5"]
+          : ["prob23-core-2","prob23-core-3"];
     for (const id of requiredIds) {
       assert.ok(current.cards.some(card => card.id === id), "historical workspace card removed: " + id);
     }
