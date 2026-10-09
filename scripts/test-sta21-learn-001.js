@@ -6,24 +6,25 @@ const micro=read("docs/assets/data/practice/21-thong-ke-micro-v1.json");
 const manifest=read("docs/assets/data/practice/21-thong-ke-v1.manifest.json");
 const errors=[],check=(v,s)=>{if(!v)errors.push(s)};
 check(workspace.schema==="roadmap-topic-learning-workspace-v1"&&workspace.topic==="21-thong-ke","workspace contract");
-check(workspace.core_progress_policy?.layer==="KNTT-Core"&&workspace.cards?.length===5,"card count/layer");
-check(micro.question_count===24&&micro.questions.length===24&&micro.bank_id==="STA21-MICRO-V1","micro count/bank id");
+check(workspace.core_progress_policy?.layer==="KNTT-Core"&&workspace.cards?.length===7,"card count/layer");
+check(micro.question_count===32&&micro.questions.length===32&&micro.bank_id==="STA21-MICRO-V1","micro count/bank id");
 check(manifest.question_count===132&&manifest.sources.length===5,"original bank count changed");
 check(workspace.micro_practice_bank==="assets/data/practice/21-thong-ke-micro-v1.json","micro data path");
 check((workspace.extensions||[]).length>=2&&workspace.extensions.every(x=>x.gates_core===false),"extensions gate Core");
 
 const ids=new Set(),byId=new Map(micro.questions.map(x=>[x.id,x]));
 const mapped={};
-for(const grade of [6,7,8]){
+for(const grade of [6,7,8,9]){
  const map=read("docs/assets/data/curriculum/kntt-grade"+grade+"-map.json"),skills=new Set(map.practice_alignment?.["21-thong-ke"]?.existing_core_skills||[]);
  for(const c of map.chapters||[])for(const l of c.lessons||[])if((l.roadmap||[]).some(x=>x.topic_id==="21-thong-ke"&&x.relation==="PRIMARY"))for(const s of l.existing_skills||[])skills.add(s);
  mapped[grade]=skills;
 }
 
-const expectedCardCounts=[5,6,3,7,3],qids=[];
+const expectedCardCounts=[5,6,3,7,3,4,4],qids=[];
+const expectedCardIds=["sta21-core-1","sta21-core-2","sta21-core-3","sta21-core-4","sta21-core-5","sta21-core-g9-6","sta21-core-g9-7"];
 for(let i=0;i<workspace.cards.length;i++){
  const card=workspace.cards[i];
- check(card.id==="sta21-core-"+(i+1)&&card.order===i+1&&card.layer==="KNTT-Core","card identity/order "+i);
+ check(card.id===expectedCardIds[i]&&card.order===i+1&&card.layer==="KNTT-Core","card identity/order "+i);
  check(card.teaching_copy?.key_idea&&card.teaching_copy?.worked_example?.problem&&card.teaching_copy?.worked_example?.solution&&card.teaching_copy?.misconception&&card.teaching_copy?.summary,"teaching copy "+card.id);
  check(card.micro_practice.length===expectedCardCounts[i],"micro count/card "+card.id);
  const qs=card.micro_practice.map(x=>byId.get(x));
@@ -47,7 +48,7 @@ for(let i=0;i<workspace.cards.length;i++){
    }
  }
 }
-check(new Set(qids).size===24,"duplicate or omitted card IDs");
+check(new Set(qids).size===32,"duplicate or omitted card IDs");
 
 for(let i=0;i<micro.questions.length;i++){
  const q=micro.questions[i],lessonLocal=q.evidence_role==="LESSON_LOCAL_CORE_FORMATIVE";
@@ -73,6 +74,9 @@ check(reviewed.every(q=>q.authoring_review?.packet==="MATH-KNTT-G6-STATISTICS-R1
 const wave2=["STA21MICRO_021","STA21MICRO_022","STA21MICRO_023","STA21MICRO_024"].map(id=>byId.get(id));
 check(wave2.every(q=>q.authoring_review?.packet_id==="MATH-KNTT-G7-REPAIR-W2-R1-20261008"&&q.authoring_review?.status==="PASS"),"Wave-2 review receipt metadata");
 
+const g9wave1=["STA21MICRO_025","STA21MICRO_026","STA21MICRO_027","STA21MICRO_028","STA21MICRO_029","STA21MICRO_030","STA21MICRO_031","STA21MICRO_032"].map(id=>byId.get(id));
+check(g9wave1.every(q=>q.authoring_review?.packet_id==="MATH-KNTT-G9-REPAIR-W1-R1-20261009"&&q.authoring_review?.status==="PASS"&&q.authoring_review?.clearance==="G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"),"Grade-9 Wave-1 review receipt metadata");
+
 const existing=manifest.sources.flatMap(s=>read("docs/assets/data/practice/"+s).questions);
 check(existing.length===132,"existing source bank load");
 const texts=new Set(existing.map(x=>x.question.toLowerCase().replace(/\s+/g," ").trim()));
@@ -96,4 +100,4 @@ check(index.includes("Learning Cards")&&index.includes("[Làm Core Readiness CĐ
 check(!index.includes("Đạt tối thiểu **7/10**"),"legacy hard gate still present");
 
 if(errors.length){console.error(errors.join("\n"));process.exit(1)}
-console.log("PASS: CĐ21 5 Learning Cards, 24 micro including reviewed Grade-7 Wave 2 append, preserved Grade-6 evidence, grade-map alignment and unchanged 132-item Practice bank.");
+console.log("PASS: CĐ21 preserves 5 historical Learning Cards and 24 historical Micro while appending 2 reviewed Grade-9 cards / 8 Grade-9 Micro; Practice bank remains 132 items.");
