@@ -115,11 +115,19 @@ for(const e of written.exercises||[]){
   for(const fid of new Set(fids))add(fid,"written",e.exercise_id);
 }
 
-// Anchors: exact taxonomy mapping only; unresolved semantic tags go to manual queue.
+// Anchors: use the independently reviewed canonical crosswalk when present;
+// otherwise fall back to exact taxonomy/tag matching and keep unresolved tags manual.
 for(const a of anchors.anchors||[]){
   let mapped=new Set();
-  for(const topic of a.topic_ids||[]){
-    for(const fid of familiesFor(topic,a.skill_tags||[]))mapped.add(fid);
+  if(a.taxonomy_crosswalk_review?.status==="PASS"
+     && a.taxonomy_crosswalk_review?.clearance==="PRACTICE_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE"
+     && Array.isArray(a.canonical_family_ids)
+     && a.canonical_family_ids.length){
+    for(const fid of a.canonical_family_ids) if(famById.has(fid)) mapped.add(fid);
+  }else{
+    for(const topic of a.topic_ids||[]){
+      for(const fid of familiesFor(topic,a.skill_tags||[]))mapped.add(fid);
+    }
   }
   if(!mapped.size)unresolved.anchor_tags.push({anchor_id:a.id,topic_ids:a.topic_ids,skill_tags:a.skill_tags});
   for(const fid of mapped)add(fid,"anchor_exact",a.id);
@@ -153,7 +161,7 @@ const summary={
     min:Math.min(...corePractice),q25:q(corePractice,.25),median:q(corePractice,.5),q75:q(corePractice,.75),max:Math.max(...corePractice)
   },
   unresolved_counts:Object.fromEntries(Object.entries(unresolved).map(([k,v])=>[k,v.length])),
-  exam_frequency_status:"PENDING_OFFICIAL_CORPUS"
+  exam_frequency_status:"OFFICIAL_HANOI_SEED_AVAILABLE"
 };
 const decision_prep={
   policy:"SIGNAL_ONLY_NO_AUTOMATIC_AUTHORING",
