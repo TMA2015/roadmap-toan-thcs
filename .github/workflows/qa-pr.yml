@@ -200,6 +200,9 @@ jobs:
           node scripts/test-topic09-p1c2-integration.js
       - name: Validate Topic 22 shared workspace alignment
         run: node scripts/test-topic22-workspace-alignment.js
+      - name: Validate whole-project practice coverage audit R1
+        run: node scripts/build-practice-coverage-audit-r1.js /tmp/practice-coverage-audit-r1.json
+
       - name: Validate learner-focused skill metadata
         run: node scripts/test-learner-focus-skill-metadata.js
       - name: Validate CĐ25 display math source
