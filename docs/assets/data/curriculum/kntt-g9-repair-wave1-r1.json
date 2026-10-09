@@ -1,0 +1,149 @@
+{
+  "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+  "as_of": "2026-10-09",
+  "status": "ACADEMIC_CONTENT_REVIEW_PENDING",
+  "scope": "Grade-9 Repair Wave 1 candidate authoring for CH7 statistics and CH8 probability after G9_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+  "authorization": {
+    "source_artifact": "docs/assets/data/curriculum/kntt-g9-gap-priority-r1.json",
+    "clearance": "G9_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+    "first_repair_wave": [
+      "CH7",
+      "CH8"
+    ],
+    "max_groups": 2,
+    "dimensions": [
+      "LEARN",
+      "MICRO"
+    ],
+    "practice_expansion": false,
+    "written_expansion": false,
+    "readiness_expansion": false,
+    "new_canonical_skills": 0
+  },
+  "counts": {
+    "chapter_groups": 2,
+    "learn_cards": 4,
+    "micro_items": 16,
+    "practice_items": 0,
+    "written_items": 0,
+    "readiness_items": 0,
+    "new_canonical_skills": 0
+  },
+  "groups": {
+    "CH7": {
+      "topic": "21-thong-ke",
+      "lessons": [
+        "Bài 22–23",
+        "Bài 24"
+      ],
+      "learn_cards": [
+        "sta21-core-g9-6",
+        "sta21-core-g9-7"
+      ],
+      "micro_items": [
+        "STA21MICRO_025",
+        "STA21MICRO_026",
+        "STA21MICRO_027",
+        "STA21MICRO_028",
+        "STA21MICRO_029",
+        "STA21MICRO_030",
+        "STA21MICRO_031",
+        "STA21MICRO_032"
+      ],
+      "canonical_targets": [
+        "bang-tan-so",
+        "tan-suat",
+        "du-lieu-ghep-nhom"
+      ],
+      "family_targets": [
+        "STAT-FREQUENCY",
+        "STAT-REPRESENT",
+        "STAT-ADVANCED-DATA"
+      ],
+      "local_representations": [
+        "bang-tan-so-tuong-doi",
+        "bieu-do-tan-so",
+        "bieu-do-tan-so-tuong-doi",
+        "bang-tan-so-ghep-nhom",
+        "bieu-do-tan-so-ghep-nhom"
+      ]
+    },
+    "CH8": {
+      "topic": "23-xac-suat",
+      "lessons": [
+        "Bài 25",
+        "Bài 26"
+      ],
+      "learn_cards": [
+        "prob23-core-g9-6",
+        "prob23-core-g9-7"
+      ],
+      "micro_items": [
+        "PRO23MICRO_021",
+        "PRO23MICRO_022",
+        "PRO23MICRO_023",
+        "PRO23MICRO_024",
+        "PRO23MICRO_025",
+        "PRO23MICRO_026",
+        "PRO23MICRO_027",
+        "PRO23MICRO_028"
+      ],
+      "canonical_targets": [
+        "phep-thu-ngau-nhien",
+        "khong-gian-mau",
+        "bien-co",
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat"
+      ],
+      "lesson_local_problem_types": [
+        "dong-xu-nhieu-lan",
+        "xuc-xac-hai-lan",
+        "so-do-cay",
+        "nhieu-buoc-doc-lap",
+        "khong-hoan-lai"
+      ]
+    }
+  },
+  "source_locks": {
+    "docs/assets/data/curriculum/topic21-learning-workspace.json": {
+      "sha": "69636015763a8599e3203d6655002d6d232bf6f1"
+    },
+    "docs/assets/data/practice/21-thong-ke-micro-v1.json": {
+      "sha": "f58a751e07720a01ca810b64afc2789c2a541454"
+    },
+    "docs/assets/data/curriculum/topic23-learning-workspace.json": {
+      "sha": "837be69cc2dbd04d33221abd203b246b2f689316"
+    },
+    "docs/assets/data/practice/23-xac-suat-micro-v1.json": {
+      "sha": "09ee1fc402feecd507650b6701fc83d84c2a48eb"
+    }
+  },
+  "protected_boundaries": {
+    "mutate_practice_bank": false,
+    "mutate_written_library": false,
+    "mutate_readiness": false,
+    "create_canonical_skill": false,
+    "create_canonical_family": false,
+    "runtime_taxonomy_change": false,
+    "change_mastery": false,
+    "regrade_learner_history": false
+  },
+  "notebooklm_source_contract": {
+    "selected_source_count": 5,
+    "permanent_sources": [
+      "NotebookLM Math Review Rules v1.2",
+      "Self-Learning Math Master Plan v1.2.1"
+    ],
+    "grade9_s1_sources": [
+      "SGK Toán 9, tập một — Kết nối tri thức với cuộc sống",
+      "SGK Toán 9, tập hai — Kết nối tri thức với cuộc sống"
+    ],
+    "temporary_batch_sources": [
+      "00_NOTEBOOKLM_PACKET_R1.md — NotebookLM Review Packet — Grade 9 Repair Wave 1 R1"
+    ]
+  },
+  "next_step": {
+    "status": "AWAIT_NOTEBOOKLM_CONTENT_CLEARANCE",
+    "required_clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+  }
+}
