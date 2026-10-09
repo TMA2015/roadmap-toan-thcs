@@ -972,28 +972,28 @@
       "id": "PRO23MICRO_023",
       "card_id": "prob23-core-g9-6",
       "micro_role": "apply",
-      "question": "Tung một đồng xu rồi gieo một xúc xắc sáu mặt. Sơ đồ cây đầy đủ có bao nhiêu kết quả ở các lá?",
+      "question": "Tung một đồng xu rồi gieo một xúc xắc sáu mặt. Biến cố A là “đồng xu ra ngửa và xúc xắc ra số chẵn”. A có bao nhiêu kết quả thuận lợi?",
       "options": [
-        "12",
-        "8",
+        "3",
         "6",
-        "2"
+        "2",
+        "12"
       ],
       "answer": 0,
       "tags": {
         "topic": "23-xac-suat",
         "skill": [
-          "khong-gian-mau"
+          "bien-co"
         ],
-        "type": "g9-khong-gian-mau",
+        "type": "g9-bien-co",
         "layer": "KNTT-Core",
         "grade": 9
       },
       "difficulty": "advanced",
-      "explanation": "Có 2 lựa chọn ở bước đồng xu và 6 lựa chọn ở bước xúc xắc, nên có 2×6=12 kết quả.",
+      "explanation": "Các kết quả thuận lợi là (N;2), (N;4), (N;6), nên biến cố A có 3 kết quả thuận lợi trong không gian mẫu nhiều bước.",
       "hints": [
-        "Mô tả đầy đủ các bước và kết quả có thể.",
-        "Kiểm tra điều kiện đồng khả năng hoặc sự thay đổi sau bước trước."
+        "Dùng sơ đồ cây hoặc liệt kê cặp kết quả theo thứ tự.",
+        "Giữ các nhánh có đồng xu ngửa và số trên xúc xắc là số chẵn."
       ],
       "curriculum": {
         "book": "KNTT",
@@ -1007,7 +1007,7 @@
         "entrance10": "foundation",
         "specialized": "none"
       },
-      "target": "khong-gian-mau",
+      "target": "bien-co",
       "lesson_local_targets": [
         "so-do-cay",
         "nhieu-buoc-doc-lap"
