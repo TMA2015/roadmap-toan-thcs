@@ -263,8 +263,9 @@
       },
       "authoring_review": {
         "packet_id": "MATH-KNTT-G9-REPAIR-W2-R1-20261009",
-        "status": "PENDING",
-        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW"
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "clearance": "G9_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE"
       }
     }
   ],
@@ -289,6 +290,6 @@
   "qa_notes": [
     "tham-so-so-nghiem is excluded from Grade 9 Core in the reviewed map.",
     "lap-pt-tu-nghiem is retained in Core per the reviewed Grade 9 correction.",
-    "bieu-thuc-doi-xung is a Grade-9 Core candidate under G9_REPAIR_W2_R1; NotebookLM content review is required before merge. dau-nghiem and lien-he-do-thi remain Core-Support only."
+    "bieu-thuc-doi-xung is Grade-9 KNTT-Core after NotebookLM PASS G9_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE; dau-nghiem and lien-he-do-thi remain Core-Support only."
   ]
 }
