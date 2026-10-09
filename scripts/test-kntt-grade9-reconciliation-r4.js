@@ -105,3 +105,5 @@ require("./test-kntt-g9-gap-priority-r1.js");
 require("./test-kntt-g9-repair-wave1-r1.js");
 
 require("./test-kntt-g9-repair-wave2-r1.js");
+
+require("./test-kntt-g9-post-repair-closure-r1.js");
