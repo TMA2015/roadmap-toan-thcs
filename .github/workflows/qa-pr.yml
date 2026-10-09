@@ -203,6 +203,9 @@ jobs:
       - name: Validate official Hanoi exam-frequency seed R1
         run: node scripts/test-exam-frequency-hanoi-seed-r1.js
 
+      - name: Validate Practice Implementation Wave 1 candidate
+        run: node scripts/test-practice-implementation-wave1-r1.js
+
       - name: Validate practice coverage priority R1 review
         run: node scripts/test-practice-coverage-priority-r1.js
 
