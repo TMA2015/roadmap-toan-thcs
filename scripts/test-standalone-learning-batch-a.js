@@ -71,8 +71,10 @@ for(const [num,slug,layer,wsSha,bankSha,label,expectedCount] of specs){
    ? w.cards.filter(card=>/^num02-g6-core-[1-5]$/.test(card.id))
    : expanded21
      ? w.cards.filter(card=>["sta21-core-1","sta21-core-2","sta21-core-3","sta21-core-4","sta21-core-5"].includes(card.id))
+         .map(card=>({...card,micro_practice:(card.micro_practice||[]).filter(id=>Number(id.split("_").pop())<=20)}))
      : expanded23
        ? w.cards.filter(card=>["prob23-core-1","prob23-core-2","prob23-core-3","prob23-core-4","prob23-core-5"].includes(card.id))
+           .map(card=>({...card,micro_practice:(card.micro_practice||[]).filter(id=>Number(id.split("_").pop())<=20)}))
        : w.cards;
  const baselineQuestions=expanded02
    ? b.questions.filter(q=>/^NUM02MICRO_(0[0-4][0-9]|05[0-2])$/.test(q.id))
