@@ -169,6 +169,130 @@
         "misconception": "Lầm tưởng xác suất lý thuyết 1/2 nghĩa là hễ cứ thực hiện 2 lần thì chắc chắn 1 lần thành công.",
         "summary": "Xác suất mô hình giúp ta ước lượng xu hướng dài hạn, trong khi kết quả thực nghiệm phản ánh cụ thể những gì đã xảy ra ngẫu nhiên."
       }
+    },
+    {
+      "id": "prob23-core-g9-6",
+      "order": 6,
+      "title": "Không gian mẫu nhiều bước và sơ đồ cây",
+      "kntt_lessons": [
+        "Lớp 9: Bài 25"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "khong-gian-mau",
+        "bien-co",
+        "xac-suat-co-dien"
+      ],
+      "prerequisites": [
+        "phep-thu-ngau-nhien"
+      ],
+      "micro_practice": [
+        "PRO23MICRO_021",
+        "PRO23MICRO_022",
+        "PRO23MICRO_023",
+        "PRO23MICRO_024"
+      ],
+      "teaching_copy": {
+        "key_idea": "Với phép thử nhiều bước, không gian mẫu gồm mọi kết quả có thể của toàn bộ chuỗi bước. Có thể dùng bảng hoặc sơ đồ cây để liệt kê có hệ thống, tránh bỏ sót hay đếm trùng. Khi các kết quả của không gian mẫu là đồng khả năng, xác suất của một biến cố bằng số kết quả thuận lợi chia cho tổng số kết quả có thể. Khi các bước độc lập và mỗi bước có số kết quả xác định, số kết quả toàn bộ có thể tính bằng quy tắc nhân.",
+        "worked_example": {
+          "problem": "Tung một đồng xu cân đối hai lần. Hãy lập không gian mẫu.",
+          "solution": "Mỗi lần có hai kết quả N (ngửa) hoặc S (sấp). Không gian mẫu là {NN, NS, SN, SS}; có 4 kết quả. Sơ đồ cây có hai nhánh ở lần đầu và từ mỗi nhánh lại tách thành hai nhánh ở lần hai."
+        },
+        "misconception": "Chỉ liệt kê kết quả của từng bước riêng lẻ thay vì kết quả của cả chuỗi, hoặc coi (1;2) và (2;1) là một khi thứ tự hai lần/bộ xúc xắc tạo ra kết quả khác nhau.",
+        "summary": "Mô tả từng bước, liệt kê toàn bộ đường đi bằng bảng/sơ đồ cây, rồi xác định biến cố trong không gian mẫu đầy đủ."
+      },
+      "lesson_local_problem_types": [
+        {
+          "id": "dong-xu-nhieu-lan",
+          "label": "Tung đồng xu nhiều lần",
+          "role": "LESSON_LOCAL_PROBLEM_TYPE",
+          "grade": 9,
+          "lesson": "Bài 25"
+        },
+        {
+          "id": "xuc-xac-hai-lan",
+          "label": "Gieo hai xúc xắc / gieo xúc xắc hai bước",
+          "role": "LESSON_LOCAL_PROBLEM_TYPE",
+          "grade": 9,
+          "lesson": "Bài 25"
+        },
+        {
+          "id": "so-do-cay",
+          "label": "Sơ đồ cây",
+          "role": "LESSON_LOCAL_PROBLEM_TYPE",
+          "grade": 9,
+          "lesson": "Bài 25"
+        },
+        {
+          "id": "nhieu-buoc-doc-lap",
+          "label": "Phép thử nhiều bước độc lập",
+          "role": "LESSON_LOCAL_PROBLEM_TYPE",
+          "grade": 9,
+          "lesson": "Bài 25"
+        }
+      ],
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+      }
+    },
+    {
+      "id": "prob23-core-g9-7",
+      "order": 7,
+      "title": "Xác suất trong mô hình nhiều bước và không hoàn lại",
+      "kntt_lessons": [
+        "Lớp 9: Bài 26"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat"
+      ],
+      "prerequisites": [
+        "khong-gian-mau",
+        "bien-co"
+      ],
+      "micro_practice": [
+        "PRO23MICRO_025",
+        "PRO23MICRO_026",
+        "PRO23MICRO_027",
+        "PRO23MICRO_028"
+      ],
+      "teaching_copy": {
+        "key_idea": "Sau khi lập đúng không gian mẫu, xác suất cổ điển được tính bằng số kết quả thuận lợi chia cho tổng số kết quả đồng khả năng. Với phép thử không hoàn lại, thành phần còn lại thay đổi sau mỗi lần rút nên xác suất ở bước sau phải cập nhật theo điều kiện đã xảy ra trước đó.",
+        "worked_example": {
+          "problem": "Hộp có 3 thẻ đỏ và 2 thẻ xanh. Rút liên tiếp 2 thẻ không hoàn lại. Xác suất cả hai thẻ đều đỏ bằng bao nhiêu?",
+          "solution": "Lần đầu rút đỏ có xác suất 3/5. Khi đã rút một thẻ đỏ, còn 2 thẻ đỏ trong 4 thẻ nên xác suất lần hai đỏ là 2/4. Vì vậy xác suất cả hai đỏ là (3/5)×(2/4)=3/10."
+        },
+        "misconception": "Dùng lại xác suất của lần rút đầu cho lần rút sau trong mô hình không hoàn lại, hoặc áp dụng công thức n(A)/n(Ω) khi các kết quả đang xét không đồng khả năng.",
+        "summary": "Với mô hình nhiều bước: lập không gian mẫu/nhánh đúng, cập nhật điều kiện sau mỗi bước, rồi tính và kiểm tra xác suất trong [0;1]."
+      },
+      "lesson_local_problem_types": [
+        {
+          "id": "khong-hoan-lai",
+          "label": "Lấy mẫu không hoàn lại",
+          "role": "LESSON_LOCAL_PROBLEM_TYPE",
+          "grade": 9,
+          "lesson": "Bài 26"
+        },
+        {
+          "id": "nhieu-buoc-doc-lap",
+          "label": "Phép thử nhiều bước độc lập",
+          "role": "LESSON_LOCAL_PROBLEM_TYPE",
+          "grade": 9,
+          "lesson": "Bài 26"
+        }
+      ],
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+      }
     }
   ],
   "extensions": [

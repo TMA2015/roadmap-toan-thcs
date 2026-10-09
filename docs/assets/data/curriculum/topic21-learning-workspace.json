@@ -188,6 +188,126 @@
         "misconception": "Suy diễn cảm tính về nguyên nhân nhân quả hoặc đưa ra nhận xét vượt ngoài phạm vi số liệu thực tế được cung cấp.",
         "summary": "Chỉ kết luận những gì số liệu trực tiếp thể hiện; tuyệt đối không đưa giả định hay cảm tính ngoài phạm vi dữ liệu."
       }
+    },
+    {
+      "id": "sta21-core-g9-6",
+      "order": 6,
+      "title": "Tần số và tần số tương đối",
+      "kntt_lessons": [
+        "Lớp 9: Bài 22–23"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "bang-tan-so",
+        "tan-suat"
+      ],
+      "prerequisites": [
+        "du-lieu-phan-loai"
+      ],
+      "micro_practice": [
+        "STA21MICRO_025",
+        "STA21MICRO_026",
+        "STA21MICRO_027",
+        "STA21MICRO_028"
+      ],
+      "teaching_copy": {
+        "key_idea": "Tần số của một giá trị là số lần giá trị đó xuất hiện. Tần số tương đối bằng tần số chia cho tổng số quan sát; có thể viết dưới dạng phân số, số thập phân hoặc phần trăm. Tổng các tần số phải bằng tổng số quan sát, còn tổng các tần số tương đối bằng 1 (hay 100%). Bảng và biểu đồ tần số/tần số tương đối giúp so sánh mức độ xuất hiện giữa các giá trị.",
+        "worked_example": {
+          "problem": "Điểm kiểm tra của 10 bạn là 6, 7, 7, 8, 8, 8, 8, 9, 9, 10. Hãy tìm tần số và tần số tương đối của điểm 8.",
+          "solution": "Điểm 8 xuất hiện 4 lần nên tần số là 4. Có 10 quan sát nên tần số tương đối là 4/10 = 0,4 = 40%."
+        },
+        "misconception": "Nhầm tần số (một số đếm) với tần số tương đối (một tỉ số/phần trăm), hoặc quên kiểm tra tổng tần số bằng tổng số quan sát.",
+        "summary": "Đếm số lần xuất hiện để có tần số; chia cho tổng số quan sát để có tần số tương đối; kiểm tra tổng trước khi kết luận."
+      },
+      "lesson_local_representations": [
+        {
+          "id": "bang-tan-so-tuong-doi",
+          "label": "Bảng tần số tương đối",
+          "family_id": "STAT-FREQUENCY",
+          "role": "LESSON_LOCAL_REPRESENTATION",
+          "grade": 9,
+          "lesson": "Bài 23"
+        },
+        {
+          "id": "bieu-do-tan-so",
+          "label": "Biểu đồ tần số",
+          "family_id": "STAT-REPRESENT",
+          "role": "LESSON_LOCAL_REPRESENTATION",
+          "grade": 9,
+          "lesson": "Bài 22"
+        },
+        {
+          "id": "bieu-do-tan-so-tuong-doi",
+          "label": "Biểu đồ tần số tương đối",
+          "family_id": "STAT-REPRESENT",
+          "role": "LESSON_LOCAL_REPRESENTATION",
+          "grade": 9,
+          "lesson": "Bài 23"
+        }
+      ],
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+      }
+    },
+    {
+      "id": "sta21-core-g9-7",
+      "order": 7,
+      "title": "Tần số ghép nhóm và biểu diễn dữ liệu ghép nhóm",
+      "kntt_lessons": [
+        "Lớp 9: Bài 24"
+      ],
+      "layer": "KNTT-Core",
+      "skills": [
+        "du-lieu-ghep-nhom",
+        "tan-suat"
+      ],
+      "prerequisites": [
+        "bang-tan-so"
+      ],
+      "micro_practice": [
+        "STA21MICRO_029",
+        "STA21MICRO_030",
+        "STA21MICRO_031",
+        "STA21MICRO_032"
+      ],
+      "teaching_copy": {
+        "key_idea": "Khi dữ liệu số có nhiều giá trị, có thể chia thành các khoảng (nhóm) không chồng lấn rồi đếm số quan sát trong từng nhóm. Tần số nhóm là số quan sát thuộc nhóm; tần số tương đối nhóm bằng tần số nhóm chia cho tổng số quan sát. Các nhóm phải bao phủ dữ liệu mà không đếm trùng.",
+        "worked_example": {
+          "problem": "Một bảng ghép nhóm có ba khoảng [0;10), [10;20), [20;30) với tần số lần lượt 6, 9, 5. Tìm tần số tương đối của nhóm [10;20).",
+          "solution": "Tổng số quan sát là 6 + 9 + 5 = 20. Tần số tương đối của nhóm [10;20) là 9/20 = 0,45 = 45%."
+        },
+        "misconception": "Đếm một giá trị biên vào hai nhóm hoặc dùng sai tổng số quan sát khi tính tần số tương đối.",
+        "summary": "Xác định đúng khoảng chứa mỗi quan sát, đếm tần số từng nhóm, kiểm tra tổng rồi tính tần số tương đối."
+      },
+      "lesson_local_representations": [
+        {
+          "id": "bang-tan-so-ghep-nhom",
+          "label": "Bảng tần số ghép nhóm",
+          "family_id": "STAT-ADVANCED-DATA",
+          "role": "LESSON_LOCAL_REPRESENTATION",
+          "grade": 9,
+          "lesson": "Bài 24"
+        },
+        {
+          "id": "bieu-do-tan-so-ghep-nhom",
+          "label": "Biểu đồ tần số ghép nhóm",
+          "family_id": "STAT-REPRESENT",
+          "role": "LESSON_LOCAL_REPRESENTATION",
+          "grade": 9,
+          "lesson": "Bài 24"
+        }
+      ],
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+      }
     }
   ],
   "extensions": [

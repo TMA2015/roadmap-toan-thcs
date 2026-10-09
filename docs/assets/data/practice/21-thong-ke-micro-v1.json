@@ -6,7 +6,7 @@
     "id": "21-thong-ke",
     "title": "Thống kê và thu thập dữ liệu"
   },
-  "question_count": 24,
+  "question_count": 32,
   "questions": [
     {
       "id": "STA21MICRO_001",
@@ -1046,6 +1046,396 @@
         "status": "PASS",
         "method": "NOTEBOOKLM_WAVE2_R1",
         "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008"
+      }
+    },
+    {
+      "id": "STA21MICRO_025",
+      "card_id": "sta21-core-g9-6",
+      "micro_role": "base",
+      "question": "Dãy số liệu 6, 7, 7, 8, 8, 8, 9, 9 có tần số của giá trị 8 bằng bao nhiêu?",
+      "options": [
+        "3",
+        "2",
+        "8",
+        "24"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "bang-tan-so"
+        ],
+        "type": "g9-bang-tan-so",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Giá trị 8 xuất hiện đúng 3 lần nên tần số của 8 là 3.",
+      "hints": [
+        "Xác định đúng đại lượng cần tính hoặc đọc từ bảng.",
+        "Kiểm tra tổng số quan sát trước khi kết luận."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lesson": "Bài 22"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "bang-tan-so",
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+      }
+    },
+    {
+      "id": "STA21MICRO_026",
+      "card_id": "sta21-core-g9-6",
+      "micro_role": "trap",
+      "question": "Trong 40 quan sát, một giá trị xuất hiện 10 lần. Tần số tương đối của giá trị đó bằng:",
+      "options": [
+        "25%",
+        "10%",
+        "4%",
+        "40%"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "tan-suat"
+        ],
+        "type": "g9-tan-suat",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tần số tương đối là 10/40 = 1/4 = 25%.",
+      "hints": [
+        "Xác định đúng đại lượng cần tính hoặc đọc từ bảng.",
+        "Kiểm tra tổng số quan sát trước khi kết luận."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lesson": "Bài 23"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "tan-suat",
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+      }
+    },
+    {
+      "id": "STA21MICRO_027",
+      "card_id": "sta21-core-g9-6",
+      "micro_role": "apply",
+      "question": "Bảng tần số của ba giá trị A, B, C lần lượt là 2, 3, 5. Tần số tương đối của C bằng:",
+      "options": [
+        "50%",
+        "20%",
+        "30%",
+        "5%"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "tan-suat"
+        ],
+        "type": "g9-tan-suat",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "advanced",
+      "explanation": "Tổng số quan sát là 2+3+5=10; C có 5 quan sát nên tần số tương đối là 5/10=50%.",
+      "hints": [
+        "Xác định đúng đại lượng cần tính hoặc đọc từ bảng.",
+        "Kiểm tra tổng số quan sát trước khi kết luận."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lesson": "Bài 23"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "tan-suat",
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+      }
+    },
+    {
+      "id": "STA21MICRO_028",
+      "card_id": "sta21-core-g9-6",
+      "micro_role": "coverage",
+      "question": "Bảng tần số cho A, B, C lần lượt là 4, 7, 5. Biểu đồ tần số đúng phải có chiều cao ba cột A, B, C lần lượt là:",
+      "options": [
+        "4, 7, 5",
+        "4, 5, 7",
+        "7, 4, 5",
+        "16, 16, 16"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "bang-tan-so"
+        ],
+        "type": "g9-bang-tan-so",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "advanced",
+      "explanation": "Biểu đồ tần số giữ nguyên tần số của từng giá trị, nên các chiều cao lần lượt là 4, 7, 5.",
+      "hints": [
+        "Xác định đúng đại lượng cần tính hoặc đọc từ bảng.",
+        "Kiểm tra tổng số quan sát trước khi kết luận."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lesson": "Bài 22"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "bang-tan-so",
+      "lesson_local_targets": [
+        "bieu-do-tan-so"
+      ],
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+      }
+    },
+    {
+      "id": "STA21MICRO_029",
+      "card_id": "sta21-core-g9-7",
+      "micro_role": "base",
+      "question": "Bảng ghép nhóm có các khoảng [0;5), [5;10), [10;15) với tần số lần lượt 3, 7, 5. Tần số của nhóm [5;10) là:",
+      "options": [
+        "7",
+        "3",
+        "5",
+        "15"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "du-lieu-ghep-nhom"
+        ],
+        "type": "g9-du-lieu-ghep-nhom",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Nhóm [5;10) có tần số được ghi trực tiếp là 7.",
+      "hints": [
+        "Xác định đúng đại lượng cần tính hoặc đọc từ bảng.",
+        "Kiểm tra tổng số quan sát trước khi kết luận."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lesson": "Bài 24"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "du-lieu-ghep-nhom",
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+      }
+    },
+    {
+      "id": "STA21MICRO_030",
+      "card_id": "sta21-core-g9-7",
+      "micro_role": "trap",
+      "question": "Một bảng ghép nhóm có tần số 4, 6, 10. Tổng số quan sát của bảng là:",
+      "options": [
+        "20",
+        "10",
+        "6",
+        "24"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "du-lieu-ghep-nhom"
+        ],
+        "type": "g9-du-lieu-ghep-nhom",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tổng số quan sát bằng tổng các tần số: 4+6+10=20.",
+      "hints": [
+        "Xác định đúng đại lượng cần tính hoặc đọc từ bảng.",
+        "Kiểm tra tổng số quan sát trước khi kết luận."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lesson": "Bài 24"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "du-lieu-ghep-nhom",
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+      }
+    },
+    {
+      "id": "STA21MICRO_031",
+      "card_id": "sta21-core-g9-7",
+      "micro_role": "apply",
+      "question": "Một nhóm có tần số 8 trong tổng 40 quan sát. Tần số tương đối của nhóm đó bằng:",
+      "options": [
+        "20%",
+        "8%",
+        "32%",
+        "5%"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "tan-suat"
+        ],
+        "type": "g9-tan-suat",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "advanced",
+      "explanation": "Tần số tương đối là 8/40 = 0,2 = 20%.",
+      "hints": [
+        "Xác định đúng đại lượng cần tính hoặc đọc từ bảng.",
+        "Kiểm tra tổng số quan sát trước khi kết luận."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lesson": "Bài 24"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "tan-suat",
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
+      }
+    },
+    {
+      "id": "STA21MICRO_032",
+      "card_id": "sta21-core-g9-7",
+      "micro_role": "coverage",
+      "question": "Bảng ghép nhóm có các khoảng [0;10), [10;20), [20;30) với tần số 6, 10, 4. Cách biểu diễn nào giữ đúng thông tin tần số nhóm?",
+      "options": [
+        "Ba cột theo ba khoảng có chiều cao 6, 10, 4",
+        "Ba cột có chiều cao 10, 6, 4",
+        "Một cột duy nhất có chiều cao 20",
+        "Ba cột đều có chiều cao 20"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "21-thong-ke",
+        "skill": [
+          "du-lieu-ghep-nhom"
+        ],
+        "type": "g9-du-lieu-ghep-nhom",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "advanced",
+      "explanation": "Mỗi nhóm phải được biểu diễn bằng đúng tần số của nhóm đó: 6, 10, 4.",
+      "hints": [
+        "Xác định đúng đại lượng cần tính hoặc đọc từ bảng.",
+        "Kiểm tra tổng số quan sát trước khi kết luận."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lesson": "Bài 24"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "target": "du-lieu-ghep-nhom",
+      "lesson_local_targets": [
+        "bieu-do-tan-so-ghep-nhom"
+      ],
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W1-R1-20261009",
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "verdict": "PASS",
+        "clearance": "G9_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE"
       }
     }
   ]

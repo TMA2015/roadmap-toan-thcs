@@ -15,7 +15,11 @@ const w23=json("docs/assets/data/curriculum/topic23-learning-workspace.json");
 ok(blob(JSON.stringify(b2.questions.slice(0,15)))==="675b1312713c3e040f6695fd20c68db3b49e656a","CĐ02 original 15 records changed");
 ok(blob(JSON.stringify(b23.questions.slice(0,15)))==="8be2c67391b4efe86fbe2f9612fb98588e6d3240","CĐ23 original 15 records changed");
 ok(b2.question_count===b2.questions.length&&b2.question_count>=60,"CĐ02 preserves the Wave-1 60-item floor under later append-only Grade-7 Micro growth");
-ok(b23.question_count===20&&b23.questions.length===20,"CĐ23 must have 20 items after pending Bài 42 lesson-local append");
+ok(b23.question_count===b23.questions.length&&b23.question_count>=20,"CĐ23 preserves the 20-item historical floor under later append-only Grade-9 Micro growth");
+for(let i=1;i<=20;i++){
+  const id="PRO23MICRO_"+String(i).padStart(3,"0");
+  ok(b23.questions.some(q=>q.id===id),"historical CĐ23 Micro removed: "+id);
+}
 
 const expected=[
 ["NUM02MICRO_016","num02-g6-core-1","luy-thua",6,2,"5⁴"],
@@ -51,5 +55,5 @@ for(const w of [w2,w23]){
 const skillCoverage=(w,b)=>{const q=new Map(b.questions.map(x=>[x.id,x]));return w.cards.flatMap(c=>c.skills.filter(s=>!c.micro_practice.some(id=>q.get(id)?.tags?.skill?.[0]===s)).map(s=>c.id+":"+s));};
 ok(skillCoverage(w2,b2).length===0,"CĐ02 gap remains: "+skillCoverage(w2,b2).join(","));
 ok(skillCoverage(w23,b23).length===0,"CĐ23 gap remains: "+skillCoverage(w23,b23).join(","));
-ok(new Set(b2.questions.map(q=>q.id)).size===b2.questions.length&&new Set(b23.questions.map(q=>q.id)).size===20,"duplicate IDs");
-console.log("PASS: prior reviewed CĐ02/CĐ23 Core coverage remains intact; Topic02 preserves Grade-6 and Wave-1 baselines under later append-only Grade-7 Micro growth.");
+ok(new Set(b2.questions.map(q=>q.id)).size===b2.questions.length&&new Set(b23.questions.map(q=>q.id)).size===b23.questions.length,"duplicate IDs");
+console.log("PASS: prior reviewed CĐ02/CĐ23 Core coverage remains intact; shared Topic02/Topic23 banks allow later append-only higher-grade Micro growth.");

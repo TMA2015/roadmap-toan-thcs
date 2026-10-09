@@ -66,17 +66,24 @@ for(const [num,slug,layer,wsSha,bankSha,label,expectedCount] of specs){
  const w=json(wp),b=json(bp),page=read(dir+"core/index.md"),lesson=read(dir+"index.md");
  const expanded02=slug==="02-so-va-phep-tinh";
  const expanded21=slug==="21-thong-ke";
+ const expanded23=slug==="23-xac-suat";
  const baselineCards=expanded02
    ? w.cards.filter(card=>/^num02-g6-core-[1-5]$/.test(card.id))
    : expanded21
-     ? w.cards.map(card=>({...card,micro_practice:(card.micro_practice||[]).filter(id=>Number(id.split("_").pop())<=20)}))
-     : w.cards;
+     ? w.cards.filter(card=>["sta21-core-1","sta21-core-2","sta21-core-3","sta21-core-4","sta21-core-5"].includes(card.id))
+         .map(card=>({...card,micro_practice:(card.micro_practice||[]).filter(id=>Number(id.split("_").pop())<=20)}))
+     : expanded23
+       ? w.cards.filter(card=>["prob23-core-1","prob23-core-2","prob23-core-3","prob23-core-4","prob23-core-5"].includes(card.id))
+           .map(card=>({...card,micro_practice:(card.micro_practice||[]).filter(id=>Number(id.split("_").pop())<=20)}))
+       : w.cards;
  const baselineQuestions=expanded02
    ? b.questions.filter(q=>/^NUM02MICRO_(0[0-4][0-9]|05[0-2])$/.test(q.id))
    : expanded21
      ? b.questions.filter(q=>Number(q.id.split("_").pop())<=20)
-     : b.questions;
- if(!expanded02&&!expanded21)ok(blob(read(wp))===wsSha&&blob(read(bp))===bankSha,"frozen workspace/micro bank unchanged "+slug);
+     : expanded23
+       ? b.questions.filter(q=>Number(q.id.split("_").pop())<=20)
+       : b.questions;
+ if(!expanded02&&!expanded21&&!expanded23)ok(blob(read(wp))===wsSha&&blob(read(bp))===bankSha,"frozen workspace/micro bank unchanged "+slug);
  ok(w.topic===slug&&w.core_progress_policy.layer===layer&&baselineCards.length===5&&baselineQuestions.length===expectedCount,"source baseline content/layer "+slug);
  ok(routes.get(slug)?.stepLabel===label&&routes.get(slug)?.path==="core/","semantic label "+slug);
  ok(nav.includes(" - "+label+": kien-thuc/"+slug+"/core/index.md"),"MkDocs sidebar route "+slug);
@@ -99,4 +106,4 @@ for(const [num,slug,layer,wsSha,bankSha,label,expectedCount] of specs){
 ok(routes.get("04-bieu-thuc-dai-so")&&routes.get("20-hinh-hoc-tong-hop"),"old independent routes remain");
 ok(engine.includes('recordAnswer?.(')&&engine.includes("topic-core-modal-modes")&&engine.includes('if(hasStandaloneCore)mountCoreGateway(hero,config)'),"old modal and answer evidence path retained");
 ok(read("docs/hoc-theo-lop/index.md").includes("../kien-thuc/02-so-va-phep-tinh/core/")&&!read("docs/hoc-theo-lop/index.md").includes("../kien-thuc/02-so-va-phep-tinh/#core-journey"),"class map direct links to standalone learning");
-console.log("PASS: "+specs.length+" independent topic routes preserve "+count+" reviewed baseline micro IDs; Topic02/Topic21 later Grade-7 append-only expansion does not alter historical baselines.");
+console.log("PASS: "+specs.length+" independent topic routes preserve "+count+" reviewed baseline micro IDs; Topic02/Topic21/Topic23 later append-only expansion does not alter historical baselines.");

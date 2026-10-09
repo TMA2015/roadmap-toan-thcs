@@ -7,7 +7,7 @@ const a=read("docs/assets/data/assessment/21-thong-ke-core-v1.json"),schema=read
 const w=read("docs/assets/data/curriculum/topic21-learning-workspace.json"),m=read("docs/assets/data/practice/21-thong-ke-v1.manifest.json");
 const packet=read("docs/assets/data/collaboration/packets/STA21-READY-GEMINI-AUTHOR-001.json");
 const errors=[],ok=(test,msg)=>{if(!test)errors.push(msg)};
-const plan=packet.scope.item_plan,items=a.items,skills=new Set(w.cards.flatMap(c=>c.skills));
+const plan=packet.scope.item_plan,items=a.items,skills=new Set(w.cards.filter(c=>["sta21-core-1","sta21-core-2","sta21-core-3","sta21-core-4","sta21-core-5"].includes(c.id)).flatMap(c=>c.skills));
 ok(a.schema===schema.properties.schema.const&&a.assessment_id==="STA21-CORE-READY-V1"&&a.topic.id==="21-thong-ke"&&a.layer==="KNTT-Core","schema identity");
 ok(a.version===1&&items.length===12&&plan.length===12,"version or item count");
 ok(a.policy.feedback==="after_submit"&&a.policy.hints===false&&a.policy.tutor===false&&a.policy.hard_gate===false&&a.policy.allow_partial_submit===true,"policy");

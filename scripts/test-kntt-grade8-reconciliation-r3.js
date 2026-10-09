@@ -48,6 +48,14 @@ for (const lock of r.source_locks.learning_workspaces) {
       assert.ok(card,"historical Grade-8 Topic07 card removed: "+id);
       for(const skill of skills) assert.ok(card.skills.includes(skill),"historical Topic07 skill removed: "+skill);
     }
+  } else if (lock.path.endsWith("topic23-learning-workspace.json")) {
+    // Topic 23 is shared across grades. Grade-9 append-only probability cards
+    // must preserve the reviewed Grade-8 Bài 30–32 learner evidence.
+    assert.match(lock.blob_sha, /^[0-9a-f]{40}$/);
+    const current=json(lock.path);
+    for(const id of ["prob23-core-4","prob23-core-5"]) {
+      assert.ok(current.cards.some(card=>card.id===id),"historical Grade-8 probability card removed: "+id);
+    }
   } else {
     assert.equal(gitBlobSha(read(lock.path)), lock.blob_sha, "source drift: " + lock.path);
   }
