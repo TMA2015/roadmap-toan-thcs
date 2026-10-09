@@ -6,7 +6,7 @@
     "id": "12-phuong-trinh-bac-hai-viete",
     "title": "Phương trình bậc hai & Viète"
   },
-  "question_count": 15,
+  "question_count": 19,
   "questions": [
     {
       "id": "QUA12MICRO_001",
@@ -591,6 +591,189 @@
       "exam": {
         "entrance10": "foundation",
         "specialized": "none"
+      }
+    },
+    {
+      "id": "QUA12MICRO_016",
+      "card_id": "qua12-core-g9-6",
+      "micro_role": "base",
+      "question": "Phương trình x²-5x+3=0 có hai nghiệm x₁,x₂. Giá trị x₁²+x₂² bằng:",
+      "options": [
+        "19",
+        "25",
+        "22",
+        "16"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "bieu-thuc-doi-xung",
+          "tong-tich-nghiem"
+        ],
+        "type": "bieu-thuc-doi-xung",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "basic",
+      "explanation": "Theo Viète, S=5 và P=3. Vì x₁²+x₂²=S²-2P nên giá trị là 25-6=19.",
+      "hints": [
+        "Tính S và P bằng Viète.",
+        "Dùng x₁²+x₂²=S²-2P."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lesson": "Chương 6"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W2-R1-20261009",
+        "status": "PENDING",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW"
+      }
+    },
+    {
+      "id": "QUA12MICRO_017",
+      "card_id": "qua12-core-g9-6",
+      "micro_role": "trap",
+      "question": "Với hai nghiệm x₁,x₂ có S=x₁+x₂=6 và P=x₁x₂=5, giá trị (x₁-x₂)² bằng:",
+      "options": [
+        "16",
+        "26",
+        "36",
+        "10"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "bieu-thuc-doi-xung"
+        ],
+        "type": "bieu-thuc-doi-xung",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Ta có (x₁-x₂)²=(x₁+x₂)²-4x₁x₂=S²-4P=36-20=16.",
+      "hints": [
+        "Khai triển bình phương hiệu.",
+        "Đổi về S và P."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lesson": "Chương 6"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W2-R1-20261009",
+        "status": "PENDING",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW"
+      }
+    },
+    {
+      "id": "QUA12MICRO_018",
+      "card_id": "qua12-core-g9-6",
+      "micro_role": "apply",
+      "question": "Phương trình x²-4x+2=0 có hai nghiệm x₁,x₂. Giá trị 1/x₁+1/x₂ bằng:",
+      "options": [
+        "2",
+        "4",
+        "1/2",
+        "6"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "bieu-thuc-doi-xung",
+          "tong-tich-nghiem"
+        ],
+        "type": "bieu-thuc-doi-xung",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Theo Viète, S=4, P=2≠0. Vì 1/x₁+1/x₂=(x₁+x₂)/(x₁x₂)=S/P nên giá trị là 4/2=2.",
+      "hints": [
+        "Kiểm tra tích hai nghiệm khác 0.",
+        "Dùng S/P."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lesson": "Chương 6"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W2-R1-20261009",
+        "status": "PENDING",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW"
+      }
+    },
+    {
+      "id": "QUA12MICRO_019",
+      "card_id": "qua12-core-g9-6",
+      "micro_role": "coverage",
+      "question": "Phương trình x²-3x+1=0 có hai nghiệm x₁,x₂. Giá trị x₁³+x₂³ bằng:",
+      "options": [
+        "18",
+        "24",
+        "9",
+        "21"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "bieu-thuc-doi-xung",
+          "tong-tich-nghiem"
+        ],
+        "type": "bieu-thuc-doi-xung",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "advanced",
+      "explanation": "Theo Viète, S=3, P=1. Dùng x₁³+x₂³=S³-3PS=27-9=18.",
+      "hints": [
+        "Tính S và P.",
+        "Dùng a³+b³=(a+b)³-3ab(a+b)."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core",
+        "lesson": "Chương 6"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "packet_id": "MATH-KNTT-G9-REPAIR-W2-R1-20261009",
+        "status": "PENDING",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW"
       }
     }
   ]
