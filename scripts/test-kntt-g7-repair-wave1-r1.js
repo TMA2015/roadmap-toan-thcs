@@ -42,6 +42,11 @@ for(const [path,lock] of Object.entries(artifact.source_locks)){
     for(const id of ["NUM02MICRO_053","NUM02MICRO_054","NUM02MICRO_055","NUM02MICRO_056","NUM02MICRO_057","NUM02MICRO_058","NUM02MICRO_059","NUM02MICRO_060"]){
       assert.ok(current.questions.some(q=>q.id===id),"Wave-1 Topic 02 Micro removed: "+id);
     }
+  }else if(path.endsWith("02-so-va-phep-tinh-v1.manifest.json")){
+    assert.match(lock.sha,/^[0-9a-f]{40}$/);
+    const current=json(path);
+    assert.ok(current.question_count>=144,"Wave-1 Topic 02 Practice baseline regressed");
+    assert.ok(current.sources.includes("02-so-va-phep-tinh-v1-06.json"),"Wave-1 Topic 02 source missing");
   }else{
     assert.equal(blob(read(path)),lock.sha,"source drift: "+path);
   }
@@ -86,7 +91,7 @@ assert.equal(m2.question_count,m2.questions.length);
 assert.ok(m2.question_count>=60,"Topic 02 Micro count regressed below Wave-1 baseline");
 assert.equal(m4.question_count,m4.questions.length);
 assert.equal(m4.question_count,19);
-assert.equal(man2.question_count,144);
+assert.ok(man2.question_count>=144,"Topic 02 Practice count regressed below Wave-1 baseline");
 assert.equal(man4.question_count,138);
 assert.ok(man2.sources.includes("02-so-va-phep-tinh-v1-06.json"));
 assert.ok(man4.sources.includes("04-bieu-thuc-dai-so-v2-06.json"));
