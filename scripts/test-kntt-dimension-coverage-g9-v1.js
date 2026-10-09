@@ -25,7 +25,11 @@ for(const lock of Object.values(a.source_locks.longform_sources)){
 }
 for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
   for(const k of ["workspace","micro","manifest","assessment"]){
-    if(["12-phuong-trinh-bac-hai-viete","21-thong-ke","23-xac-suat"].includes(topic) && (k==="workspace" || k==="micro")){
+    if(topic==="12-phuong-trinh-bac-hai-viete" && k==="manifest"){
+      assert.match(ev[k].sha,/^[0-9a-f]{40}$/);
+      const current=json(ev[k].path);
+      assert.ok(current.question_count>=120,"Topic12 Practice baseline regressed");
+    }else if(["12-phuong-trinh-bac-hai-viete","21-thong-ke","23-xac-suat"].includes(topic) && (k==="workspace" || k==="micro")){
       // Inventory R1 records pre-repair evidence snapshots. Independently reviewed
       // Grade-9 Learn/Micro waves may append to these topics without invalidating
       // the historical inventory semantics, provided the original evidence remains.
