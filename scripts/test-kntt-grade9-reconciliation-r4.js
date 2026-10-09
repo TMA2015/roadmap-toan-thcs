@@ -99,3 +99,5 @@ console.log("PASS: STAT-FREQUENCY and STAT-ADVANCED-DATA are S1-reviewed KNTT-Co
 console.log("PASS: KNTT Coverage Matrix Grades 6-9 is semantically reconciled; runtime/history/Mastery/Readiness unchanged.");
 
 require("./test-kntt-dimension-coverage-g9-v1.js");
+
+require("./test-kntt-g9-gap-priority-r1.js");
