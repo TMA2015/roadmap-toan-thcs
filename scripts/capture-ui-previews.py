@@ -838,13 +838,15 @@ $$
         ("09-he-phuong-trinh","sys09-core-5","nang-suat-he"),
         ("10-ham-so-do-thi","fun10-core-5",None),
         ("11-can-thuc","rad11-core-4","truc-can-mau-don"),
-        ("12-phuong-trinh-bac-hai-viete","qua12-core-5",None)
+        ("12-phuong-trinh-bac-hai-viete","qua12-core-5",None),
+        ("12-phuong-trinh-bac-hai-viete","qua12-core-g9-6","bieu-thuc-doi-xung")
     ]
     for topic_slug,card_id,skill in new_core_phone:
         first_phone.goto(BASE + "kien-thuc/"+topic_slug+"/core/",wait_until="networkidle")
         first_phone.locator('#core-journey[data-core-ready="1"]').wait_for(state="visible",timeout=12000)
+        expected_phone_cards = 6 if topic_slug == "12-phuong-trinh-bac-hai-viete" else 5
         check(first_phone.locator(".lesson-switcher-steps a").count()==4
-              and first_phone.locator(".topic-core-card").count()==5,
+              and first_phone.locator(".topic-core-card").count()==expected_phone_cards,
               "phone Core page and four-step shell "+topic_slug)
         card=first_phone.locator('.topic-core-card[data-card-id="'+card_id+'"]')
         check(card.evaluate("(el)=>el.scrollWidth<=el.clientWidth+2"),"Core card fits phone "+card_id)
