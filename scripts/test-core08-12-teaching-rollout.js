@@ -21,16 +21,16 @@ let cards=0,questions=0,declared=0,covered=0,addition=0;
 for(const t of specs){
  const root="docs/kien-thuc/"+t.slug+"/",bp="docs/assets/data/practice/"+t.slug+"-micro-v1.json",wp="docs/assets/data/curriculum/topic"+t.n+"-learning-workspace.json",p=read(bp),bank=JSON.parse(p),w=json(wp),lesson=read(root+"index.md"),page=read(root+"core/index.md"),labels=json("docs/assets/data/practice/"+t.manifest).skill_labels;
  assert(gitSha(lesson)===t.lesson,"source lesson changed "+t.slug);
- assert(bank.questions?.length===t.count&&bank.question_count===t.count&&w.cards?.length===5,"exact count "+t.slug);
+ if(t.n==="12") assert(bank.questions?.length===19&&bank.question_count===19&&w.cards?.length===6,"reviewed append count "+t.slug);\n else assert(bank.questions?.length===t.count&&bank.question_count===t.count&&w.cards?.length===5,"exact count "+t.slug);
  const reconstructed={...bank,question_count:15,questions:bank.questions.slice(0,15)};
  assert(gitSha(JSON.stringify(reconstructed,null,2)+"\n")===t.b,"original 15 question objects MUST be unchanged "+t.slug);
- assert(new Set(bank.questions.map(q=>q.id)).size===t.count,"IDs must be unique "+t.slug);
+ assert(new Set(bank.questions.map(q=>q.id)).size===bank.questions.length,"IDs must be unique "+t.slug);
  assert(w.topic===t.slug&&w.micro_practice_bank==="assets/data/practice/"+t.slug+"-micro-v1.json","bank mapping "+t.slug);
  assert(page.includes('data-topic-core-entry="'+t.slug+'"')&&page.includes("không phải"),"formative Core route "+t.slug);
  assert(w.extensions.every(x=>x.gates_core===false),"Extension cannot gate "+t.slug);
  const byId=new Map(bank.questions.map(q=>[q.id,q]));
  let d=0,cov=0;
- for(const card of w.cards){
+ const baselineCards=t.n==="12"?w.cards.slice(0,5):w.cards;\n for(const card of baselineCards){
   const original=card.micro_practice.slice(0,3),qs=card.micro_practice.map(id=>byId.get(id)),copy=card.teaching_copy;
   assert(qs.length>=3&&qs.every(Boolean),"linked micro records "+card.id);
   assert(qs.slice(0,3).map(q=>q.micro_role).join(",")==="base,trap,apply"&&qs.slice(3).every(q=>q.micro_role==="coverage"),"original roles preserved "+card.id);
@@ -60,7 +60,7 @@ for(const t of specs){
   assert(!(q.supporting_skills||[]).includes(skill),"supporting skills cannot repeat assessed skill "+id);
   addition++;
  }
- assert(JSON.stringify(bank.questions.slice(15).map(q=>q.id))===JSON.stringify(t.additional.map(x=>x[0])),"no unexpected new IDs "+t.slug);
+ if(t.n==="12"){\n  const reviewedIds=["QUA12MICRO_016","QUA12MICRO_017","QUA12MICRO_018","QUA12MICRO_019"];\n  assert(JSON.stringify(bank.questions.slice(15).map(q=>q.id))===JSON.stringify(reviewedIds),"only reviewed Grade-9 Wave-2 IDs appended "+t.slug);\n  const reviewedCard=w.cards.find(c=>c.id==="qua12-core-g9-6");\n  assert(reviewedCard&&JSON.stringify(reviewedCard.skills)===JSON.stringify(["bieu-thuc-doi-xung"])&&JSON.stringify(reviewedCard.prerequisites)===JSON.stringify(["tong-tich-nghiem"]),"reviewed Grade-9 CH6 card scope");\n  assert(reviewedCard.authoring_review?.status==="PASS"&&reviewedCard.authoring_review?.clearance==="G9_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE","reviewed Grade-9 CH6 clearance");\n  for(const id of reviewedIds){const q=bank.questions.find(x=>x.id===id);assert(q&&q.tags?.skill?.length===1&&q.tags.skill[0]==="bieu-thuc-doi-xung"&&q.authoring_review?.status==="PASS","reviewed Grade-9 CH6 Micro "+id);}\n }else assert(JSON.stringify(bank.questions.slice(15).map(q=>q.id))===JSON.stringify(t.additional.map(x=>x[0])),"no unexpected new IDs "+t.slug);
  questions+=t.count;declared+=d;covered+=cov;
 }
 assert(cards===25&&questions===79&&addition===4&&declared===63&&covered===63,"full batch source-locked totals");
@@ -98,4 +98,4 @@ assert(eq(2/(2.5-3),2.5/(2.5-3)+1),"08 Q16 exact valid solution");
 assert(3*20+3*40===180&&20+2*40===100,"09 new productivity key");
 assert(3*1+6*2===15&&1+2*2===5,"09 new coincident-line key");
 assert(25-4*2*2===9&&(-5/2+0)===-2.5,"12 Viète coefficients and discriminant");
-console.log("PASS: 25 source-linked lectures; original 75 micro records frozen; four targeted items; 63/63 declared skill opportunities; worked-example independent numeric oracles.");
+console.log("PASS: historical Core08-12 rollout remains frozen; reviewed Grade-9 CH6 append is isolated, single-skill and independently cleared.");
