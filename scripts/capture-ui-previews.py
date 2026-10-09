@@ -147,7 +147,7 @@ with sync_playwright() as p:
         check(links.nth(3 if pilot else 2).get_attribute("href").endswith("/tu-kiem-tra/"), "self-check route " + row["url"])
         title = topic_page.locator(".topic-workspace-hero h1, .md-content__inner h1").first.inner_text()
         check(bool(title.strip()), "readable title for " + row["url"])
-        # Every published five-card workspace must open a self-contained modal.
+        # Every published Core workspace must open a self-contained modal.
         # Probe without answering, so this sweep never writes learner evidence.
         slug = urlparse(row["url"]).path.rstrip("/").split("/")[-1]
         core_page = None
@@ -165,7 +165,7 @@ with sync_playwright() as p:
             core_page.locator('#core-journey[data-core-ready="1"]').wait_for(state="visible", timeout=12000)
             check(core_page.locator(".topic-core-teaching-item").count() == 0,
                   "no duplicate lecture accordion outside cards")
-            expected_core_cards = 10 if slug == "20-hinh-hoc-tong-hop" else (8 if slug == "02-so-va-phep-tinh" else (7 if slug in ["21-thong-ke", "23-xac-suat"] else (6 if slug in ["03-ti-le-ti-le-thuc", "04-bieu-thuc-dai-so"] else 5)))
+            expected_core_cards = 10 if slug == "20-hinh-hoc-tong-hop" else (8 if slug == "02-so-va-phep-tinh" else (7 if slug in ["21-thong-ke", "23-xac-suat"] else (6 if slug in ["03-ti-le-ti-le-thuc", "04-bieu-thuc-dai-so", "12-phuong-trinh-bac-hai-viete"] else 5)))
             check(core_page.locator(".topic-core-card .topic-core-teach-start").count() == expected_core_cards,
                   "all published Core cards have a lecture button")
             check(core_page.locator(".topic-core-card .topic-micro-start").count() == expected_core_cards,
