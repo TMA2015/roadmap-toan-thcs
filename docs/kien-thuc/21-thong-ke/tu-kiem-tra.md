@@ -1,8 +1,8 @@
 # Core Readiness Check – Chuyên đề 21 – Thống kê
 
-> **Phạm vi:** bài kiểm tra tổng hợp KNTT Core của CĐ21, gồm kỹ năng theo chương trình lớp 6–8. Chỉ làm những phần phù hợp sau khi đã học các chặng liên quan.
+> **Phạm vi:** bài kiểm tra tổng hợp KNTT Core của CĐ21, gồm kỹ năng theo chương trình lớp 6–9. Chỉ làm những phần phù hợp sau khi đã học các chặng liên quan.
 >
-> **Cách làm:** 12 câu trắc nghiệm · khoảng 20 phút · không gợi ý/Tutor · không báo đúng sai từng câu · chấm sau khi **Nộp bài**.
+> **Cách làm:** 14 câu trắc nghiệm · khoảng 20 phút · không gợi ý/Tutor · không báo đúng sai từng câu · chấm sau khi **Nộp bài**.
 
 <div data-readiness-check-v1="assets/data/assessment/21-thong-ke-core-v1.json"></div>
 
@@ -18,7 +18,7 @@
     Điểm bài này không khóa quyền học tiếp. Một câu sai chưa đủ để khẳng định học sinh yếu cả kỹ năng; hãy dùng kết quả để chọn bài cần ôn.
 
 !!! warning "Phạm vi theo lớp"
-    Đây là bài kiểm tra **toàn chuyên đề**, gồm nội dung lớp 6–8; không dùng kết quả toàn bài để đánh giá riêng năng lực lớp 6 của học sinh chưa học nội dung lớp 7–8.
+    Đây là bài kiểm tra **toàn chuyên đề**, gồm nội dung lớp 6–9; không dùng kết quả toàn bài để đánh giá riêng năng lực lớp 6 của học sinh chưa học nội dung lớp 7–9.
 
 ## Bài tự luận trước đây
 

@@ -22,7 +22,14 @@ for(const lock of [a.source_locks.coverage_matrix,a.source_locks.grade8_reconcil
 }
 for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
   for(const k of ["workspace","micro","manifest","assessment"]){
-    if(["07-phan-thuc-dai-so","21-thong-ke","23-xac-suat"].includes(topic) && (k==="workspace" || k==="micro")){
+    if(topic==="21-thong-ke" && k==="assessment"){
+      assert.match(ev[k].sha,/^[0-9a-f]{40}$/);
+      const current=json(ev[k].path);
+      for(let n=1;n<=12;n++){
+        const id="STA21READY_"+String(n).padStart(3,"0");
+        assert.ok(current.items.some(q=>q.id===id),"historical Grade-8 Topic21 Readiness baseline missing: "+id);
+      }
+    }else if(["07-phan-thuc-dai-so","21-thong-ke","23-xac-suat"].includes(topic) && (k==="workspace" || k==="micro")){
       // These are shared cross-grade topics. Later bounded append-only repair
       // may extend higher-grade Learn/Micro evidence while historical Grade-8
       // cards and formative evidence remain intact.

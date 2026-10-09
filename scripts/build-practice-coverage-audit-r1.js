@@ -175,7 +175,9 @@ const decision_prep={
 const report={schema:"practice-coverage-matrix-r1",summary,families:arr,unresolved,inferred,decision_prep,
  decision_note:"Inventory signals only. Zero/low/high counts do not automatically authorize ADD/REMOVE. Review curriculum layer, duplication, remediation value and source evidence first."};
 assert.equal(arr.length,131);
-assert.equal(practiceQuestions,3153);
+const implementationPath="docs/assets/data/curriculum/practice-implementation-wave1-r1.json";
+const implementationDelta=exists(implementationPath)?read(implementationPath).counts.practice_new_items:0;
+assert.equal(practiceQuestions,3153+implementationDelta);
 assert.equal((written.exercises||[]).length,54);
 assert.equal((anchors.anchors||[]).length,11);
 const out=process.argv[2];

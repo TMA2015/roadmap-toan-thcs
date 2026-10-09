@@ -1,0 +1,95 @@
+{
+  "version": 2,
+  "schema": "practice-bank-v1",
+  "bank_id": "NUM02-V1",
+  "topic": {
+    "id": "02-so-va-phep-tinh",
+    "title": "Số và phép tính"
+  },
+  "questions": [
+    {
+      "id": "NUM02V1_145",
+      "question": "Tính |−12|.",
+      "options": [
+        "12",
+        "−12",
+        "0",
+        "24"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "gia-tri-tuyet-do"
+        ],
+        "type": "gia-tri-tuyet-do"
+      },
+      "difficulty": "basic",
+      "explanation": "Giá trị tuyệt đối là khoảng cách tới 0 nên |−12|=12.",
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02V1_146",
+      "question": "Số nào có giá trị tuyệt đối bằng 7?",
+      "options": [
+        "−7",
+        "8",
+        "0",
+        "14"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "gia-tri-tuyet-do"
+        ],
+        "type": "gia-tri-tuyet-do"
+      },
+      "difficulty": "basic",
+      "explanation": "|−7|=7. Các số 8, 0 và 14 có giá trị tuyệt đối lần lượt là 8, 0 và 14.",
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02V1_147",
+      "question": "Khẳng định nào đúng về phương trình |x|=4?",
+      "options": [
+        "x=4 hoặc x=−4",
+        "Chỉ x=4",
+        "Chỉ x=−4",
+        "Không có nghiệm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "so-va-phep-tinh",
+        "skill": [
+          "gia-tri-tuyet-do"
+        ],
+        "type": "gia-tri-tuyet-do"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai số 4 và −4 đều cách 0 một khoảng 4, nên |x|=4 có hai nghiệm x=4 và x=−4.",
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    }
+  ]
+}

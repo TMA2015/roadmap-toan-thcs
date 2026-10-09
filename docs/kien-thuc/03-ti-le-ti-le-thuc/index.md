@@ -633,6 +633,9 @@ Nếu số công nhân tăng mà kết quả lại cho thời gian tăng trong m
 
 ## 📝 8. Luyện tập
 
+👉 [Mở Practice Room](bai-tap.md) để luyện tương tác, tự luận và theo dõi kỹ năng.
+
+
 ### Mức 1 – Nhận biết
 
 1. Rút gọn tỉ số `18:24`.
@@ -669,7 +672,10 @@ Nếu số công nhân tăng mà kết quả lại cho thời gian tăng trong m
 
 ## ✅ 9. Tự kiểm tra
 
-### Mini quiz
+👉 [Mở Core Readiness Check](tu-kiem-tra.md) để làm bài đánh giá độc lập sau khi đã học các phần liên quan.
+
+
+### Mini quiz ôn tập (không tính Readiness)
 
 1. `12:18` rút gọn thành tỉ số nào?
 2. Nếu `x/6 = 4/9`, tính `x`.
