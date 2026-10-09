@@ -16,7 +16,11 @@ const ids=new Set(),byId=new Map(micro.questions.map(x=>[x.id,x]));
 const mapped={};
 for(const grade of [6,7,8,9]){
  const map=read("docs/assets/data/curriculum/kntt-grade"+grade+"-map.json"),skills=new Set(map.practice_alignment?.["21-thong-ke"]?.existing_core_skills||[]);
- for(const c of map.chapters||[])for(const l of c.lessons||[])if((l.roadmap||[]).some(x=>x.topic_id==="21-thong-ke"&&x.relation==="PRIMARY"))for(const s of l.existing_skills||[])skills.add(s);
+ if(grade===9){
+   for(const c of map.chapters||[])if((c.roadmap||[]).includes("21-thong-ke"))for(const s of c.core_existing||[])skills.add(s);
+ }else{
+   for(const c of map.chapters||[])for(const l of c.lessons||[])if((l.roadmap||[]).some(x=>x.topic_id==="21-thong-ke"&&x.relation==="PRIMARY"))for(const s of l.existing_skills||[])skills.add(s);
+ }
  mapped[grade]=skills;
 }
 
