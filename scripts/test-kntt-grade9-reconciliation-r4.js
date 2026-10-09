@@ -97,3 +97,5 @@ for(const key of ["learner_facing_change","taxonomy_runtime_activation","mastery
 console.log("PASS: Grade-9 R4 reconciles the final 4 exact-ID mismatches after NotebookLM 4/4 PASS.");
 console.log("PASS: STAT-FREQUENCY and STAT-ADVANCED-DATA are S1-reviewed KNTT-Core.");
 console.log("PASS: KNTT Coverage Matrix Grades 6-9 is semantically reconciled; runtime/history/Mastery/Readiness unchanged.");
+
+require("./test-kntt-dimension-coverage-g9-v1.js");
