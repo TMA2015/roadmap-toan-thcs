@@ -1,7 +1,7 @@
 {
   "packet_id": "MATH-KNTT-G9-REPAIR-W2-R1-20261009",
   "as_of": "2026-10-09",
-  "status": "CANDIDATE_AWAITING_ACADEMIC_REVIEW",
+  "status": "ACADEMIC_CONTENT_REVIEW_PASS",
   "scope": "Grade-9 Repair Wave 2 candidate authoring for CH6 symmetric-root expressions only, after G9_GAP_PRIORITY_R1_REVIEW_COMPLETE",
   "authorization": {
     "source_artifact": "docs/assets/data/curriculum/kntt-g9-gap-priority-r1.json",
@@ -76,7 +76,31 @@
     ]
   },
   "next_step": {
-    "status": "AWAIT_NOTEBOOKLM_CONTENT_REVIEW",
+    "status": "ACADEMIC_PASS_AWAIT_REPOSITORY_QA",
     "required_clearance": "G9_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE"
+  },
+  "independent_review": {
+    "reviewer": "NotebookLM",
+    "verdict": "PASS",
+    "clearance": "G9_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE",
+    "reviewed_on": "2026-10-09",
+    "receipt": "review-packets/kntt-g9-repair-wave2-r1/01_NOTEBOOKLM_RESULT_R1.md",
+    "group": {
+      "chapter": "CH6",
+      "learn": 1,
+      "micro": 4,
+      "verdict": "PASS"
+    },
+    "item_review": {
+      "bieu-thuc-doi-xung": "CORE_LEARN_MICRO"
+    },
+    "boundaries": {
+      "dau-nghiem": "CORE_SUPPORT_ONLY",
+      "lien-he-do-thi": "CORE_SUPPORT_ONLY",
+      "practice": "PASS_NO_ADDITIONS",
+      "written": "PASS_NO_ADDITIONS",
+      "readiness": "PASS_NO_ADDITIONS",
+      "new_canonical_skill": "PASS_NONE"
+    }
   }
 }
