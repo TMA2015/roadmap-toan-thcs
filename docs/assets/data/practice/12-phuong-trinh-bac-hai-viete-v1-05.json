@@ -1,0 +1,83 @@
+{
+  "version": 2,
+  "schema": "practice-bank-v1",
+  "bank_id": "QUA12-V1",
+  "topic": {
+    "id": "12-phuong-trinh-bac-hai-viete",
+    "title": "Phương trình bậc hai & Viète"
+  },
+  "questions": [
+    {
+      "id": "QUA12V1_121",
+      "question": "Số giao điểm của parabol y=x² và đường thẳng y=3x+4 bằng số nghiệm thực của phương trình nào?",
+      "options": [
+        "x²−3x−4=0",
+        "x²+3x+4=0",
+        "x²−3x+4=0",
+        "x²+3x−4=0"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "lien-he-do-thi"
+        ],
+        "type": "lien-he-do-thi"
+      },
+      "difficulty": "basic",
+      "explanation": "Tại giao điểm ta có x²=3x+4, tương đương x²−3x−4=0.",
+      "authoring_review": {
+        "status": "PENDING",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009"
+      }
+    },
+    {
+      "id": "QUA12V1_122",
+      "question": "Parabol y=x² và đường thẳng y=x+2 cắt nhau tại hai điểm. Hoành độ hai giao điểm là:",
+      "options": [
+        "−1 và 2",
+        "1 và 2",
+        "−2 và 1",
+        "−1 và −2"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "lien-he-do-thi"
+        ],
+        "type": "lien-he-do-thi"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Giải x²=x+2 được x²−x−2=0=(x−2)(x+1), nên x=2 hoặc x=−1.",
+      "authoring_review": {
+        "status": "PENDING",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009"
+      }
+    },
+    {
+      "id": "QUA12V1_123",
+      "question": "Đường thẳng y=2x−1 tiếp xúc với parabol y=x² vì phương trình hoành độ giao điểm:",
+      "options": [
+        "(x−1)²=0 có nghiệm kép",
+        "x²+2x−1=0 có hai nghiệm",
+        "x²−2x−1=0 vô nghiệm",
+        "x²−1=0 có hai nghiệm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phuong-trinh-bac-hai-viete",
+        "skill": [
+          "lien-he-do-thi"
+        ],
+        "type": "lien-he-do-thi"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Từ x²=2x−1 suy ra x²−2x+1=(x−1)²=0. Phương trình có nghiệm kép nên đường thẳng tiếp xúc parabol.",
+      "authoring_review": {
+        "status": "PENDING",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009"
+      }
+    }
+  ]
+}
