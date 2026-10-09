@@ -15,7 +15,7 @@ const older=json("docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json"
 const lesson=read("docs/kien-thuc/"+slug+"/index.md"),practice=read("docs/kien-thuc/"+slug+"/bai-tap.md"),check=read("docs/kien-thuc/"+slug+"/tu-kiem-tra.md"),classhub=read("docs/hoc-theo-lop/index.md"),runtime=read("docs/assets/javascripts/topic-workspace-v1.js");
 const grade6Cards=workspace.cards.filter(card=>JSON.stringify(card.grades)==="[6]");
 ok(workspace.topic===slug && workspace.core_progress_policy.layer==="KNTT-Core" && grade6Cards.length===5,"source-mapped five-card Grade-6 Core pilot preserved");
-ok(bank.questions.length>=52 && bank.question_count===bank.questions.length && assessment.items.length===10,"52 reviewed Grade-6 micro items and 10 readiness items preserved under later append-only expansion");
+ok(bank.questions.length>=52 && bank.question_count===bank.questions.length && assessment.items.length>=10,"52 reviewed Grade-6 micro items and 10-readiness baseline preserved under later append-only expansion");
 ok(assessment.topic.id===slug && assessment.layer==="KNTT-Core" && assessment.assessment_id==="NUM02-G6-CORE-READY-V1","assessment identity and layer");
 ok(assessment.policy.hints===false && assessment.policy.tutor===false && assessment.policy.feedback==="after_submit" && assessment.policy.hard_gate===false && assessment.readiness.hard_gate===false,"independent soft readiness");
 ok(assessment.readiness.ready_threshold===0.8 && assessment.readiness.minimum_answered_ratio===0.8,"readiness policy");
@@ -43,11 +43,17 @@ for (const [i,card] of grade6Cards.entries()){
 }
 ok(seen.size===52,"every micro is attached to exactly one card");
 const readinessAnswers=["0","−2","315","31","−8","6","7/10","1/2","0,85","340 000 đồng"];
-for (const [i,q] of assessment.items.entries()){
+for (const [i,q] of assessment.items.slice(0,10).entries()){
  ok(!assessed.has(q.id),"unique readiness ID "+q.id);assessed.add(q.id);
  ok(q.type==="mcq" && q.points===1 && assessment.skill_labels[q.skill] && JSON.stringify(q.curriculum.grades)==="[6]","grade6 single-skill readiness "+q.id);
  ok(q.options.length===4 && new Set(q.options).size===4 && q.options[q.answer]===readinessAnswers[i],"readiness answer "+q.id);
  ok(q.explanation,"post-submit explanation "+q.id);
+}
+const readinessWave1=assessment.items.slice(10);
+ok(readinessWave1.length===3,"approved candidate appends exactly three Grade-6 Readiness items");
+for(const q of readinessWave1){
+ ok(q.authoring_review?.status==="PENDING"&&q.authoring_review?.packet_id==="MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009","candidate readiness review marker "+q.id);
+ ok(q.type==="mcq"&&q.points===1&&assessment.skill_labels[q.skill]&&JSON.stringify(q.curriculum.grades)==="[6]","candidate grade6 readiness "+q.id);
 }
 ok(lesson.includes("## 📝 8. Luyện tập tiếp theo") && lesson.includes("Core Readiness lớp 6") && !lesson.includes("### Mini quiz"),"lesson gateways and no duplicate static quiz");
 ok(practice.includes("Luyện tự luận & trình bày") && practice.includes('??? example "Xem lời giải"') && practice.includes('??? example "Xem đáp án nhanh'),"written practice has hidden solutions");
@@ -56,4 +62,4 @@ ok(/tự luận/i.test(read("docs/kien-thuc/02-so-va-phep-tinh/tu-kiem-tra-tu-lu
 const panel=classhub.split('data-grade-panel="6"')[1].split('data-grade-panel="7"')[0];
 ok((panel.match(/02-so-va-phep-tinh\/core\//g)||[]).length>=5,"grade6 class hub opens the learning cards");
 ok(runtime.includes('"02-so-va-phep-tinh":{') && runtime.includes("topic02-learning-workspace.json"),"runtime supports topic02");
-console.log("PASS: Topic02 Grade-6 five-card/52-micro/10-readiness baseline is preserved under later append-only Grade-7 workspace and practice expansion.");
+console.log("PASS: Topic02 Grade-6 five-card/52-micro/10-readiness baseline is preserved; three bounded candidate Readiness items are append-only and PENDING review.");
