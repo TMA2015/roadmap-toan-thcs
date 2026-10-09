@@ -101,3 +101,5 @@ console.log("PASS: KNTT Coverage Matrix Grades 6-9 is semantically reconciled; r
 require("./test-kntt-dimension-coverage-g9-v1.js");
 
 require("./test-kntt-g9-gap-priority-r1.js");
+
+require("./test-kntt-g9-repair-wave1-r1.js");
