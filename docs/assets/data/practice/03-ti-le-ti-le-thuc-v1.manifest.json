@@ -7,7 +7,7 @@
     "title": "Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ"
   },
   "session_size": 10,
-  "question_count": 120,
+  "question_count": 124,
   "skill_labels": {
     "ti-so": "Tỉ số",
     "doi-don-vi-ti-so": "Đổi đơn vị khi lập tỉ số",
@@ -27,31 +27,16 @@
     "mo-hinh-ti-le": "Mô hình hóa bằng tỉ lệ"
   },
   "skill_groups": [
-    {
-      "id": "A",
-      "label": "A. Tỉ số và tỉ lệ thức",
-      "skills": ["ti-so", "doi-don-vi-ti-so", "ti-le-thuc", "tim-x-ti-le-thuc"]
-    },
-    {
-      "id": "B",
-      "label": "B. Dãy tỉ số và chia theo tỉ lệ",
-      "skills": ["day-ti-so-bang-nhau", "chia-theo-ti-le"]
-    },
-    {
-      "id": "C",
-      "label": "C. Đại lượng tỉ lệ",
-      "skills": ["ti-le-thuan", "he-so-ti-le-thuan", "ti-le-nghich", "he-so-ti-le-nghich", "phan-biet-thuan-nghich"]
-    },
-    {
-      "id": "D",
-      "label": "D. Ứng dụng và mô hình hóa",
-      "skills": ["ti-le-ban-do", "ti-so-phan-tram", "chuyen-dong-ti-le", "nang-suat-ti-le", "mo-hinh-ti-le"]
-    }
+    {"id":"A","label":"A. Tỉ số và tỉ lệ thức","skills":["ti-so","doi-don-vi-ti-so","ti-le-thuc","tim-x-ti-le-thuc"]},
+    {"id":"B","label":"B. Dãy tỉ số và chia theo tỉ lệ","skills":["day-ti-so-bang-nhau","chia-theo-ti-le"]},
+    {"id":"C","label":"C. Đại lượng tỉ lệ","skills":["ti-le-thuan","he-so-ti-le-thuan","ti-le-nghich","he-so-ti-le-nghich","phan-biet-thuan-nghich"]},
+    {"id":"D","label":"D. Ứng dụng và mô hình hóa","skills":["ti-le-ban-do","ti-so-phan-tram","chuyen-dong-ti-le","nang-suat-ti-le","mo-hinh-ti-le"]}
   ],
   "sources": [
     "03-ti-le-ti-le-thuc-v1-01.json",
     "03-ti-le-ti-le-thuc-v1-02.json",
     "03-ti-le-ti-le-thuc-v1-03.json",
-    "03-ti-le-ti-le-thuc-v1-04.json"
+    "03-ti-le-ti-le-thuc-v1-04.json",
+    "03-ti-le-ti-le-thuc-v1-05.json"
   ]
 }
