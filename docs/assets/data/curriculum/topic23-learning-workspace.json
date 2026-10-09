@@ -180,7 +180,8 @@
       "layer": "KNTT-Core",
       "skills": [
         "khong-gian-mau",
-        "bien-co"
+        "bien-co",
+        "xac-suat-co-dien"
       ],
       "prerequisites": [
         "phep-thu-ngau-nhien"
@@ -192,7 +193,7 @@
         "PRO23MICRO_024"
       ],
       "teaching_copy": {
-        "key_idea": "Với phép thử nhiều bước, không gian mẫu gồm mọi kết quả có thể của toàn bộ chuỗi bước. Có thể dùng bảng hoặc sơ đồ cây để liệt kê có hệ thống, tránh bỏ sót hay đếm trùng. Khi các bước độc lập và mỗi bước có số kết quả xác định, số kết quả toàn bộ có thể tính bằng quy tắc nhân.",
+        "key_idea": "Với phép thử nhiều bước, không gian mẫu gồm mọi kết quả có thể của toàn bộ chuỗi bước. Có thể dùng bảng hoặc sơ đồ cây để liệt kê có hệ thống, tránh bỏ sót hay đếm trùng. Khi các kết quả của không gian mẫu là đồng khả năng, xác suất của một biến cố bằng số kết quả thuận lợi chia cho tổng số kết quả có thể. Khi các bước độc lập và mỗi bước có số kết quả xác định, số kết quả toàn bộ có thể tính bằng quy tắc nhân.",
         "worked_example": {
           "problem": "Tung một đồng xu cân đối hai lần. Hãy lập không gian mẫu.",
           "solution": "Mỗi lần có hai kết quả N (ngửa) hoặc S (sấp). Không gian mẫu là {NN, NS, SN, SS}; có 4 kết quả. Sơ đồ cây có hai nhánh ở lần đầu và từ mỗi nhánh lại tách thành hai nhánh ở lần hai."
