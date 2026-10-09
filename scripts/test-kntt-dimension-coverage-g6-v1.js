@@ -36,7 +36,7 @@ for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
     }
     assert.ok(micro.questions.length>=52,"Grade-6 topic02 Micro evidence regressed");
     assert.ok(manifest.question_count>=132,"Grade-6 topic02 Practice evidence regressed");
-  }else if(topic==="03-ti-le-ti-le-thuc" || topic==="13-goc-va-duong-thang" || topic==="21-thong-ke"){
+  }else if(topic==="03-ti-le-ti-le-thuc" || topic==="13-goc-va-duong-thang" || topic==="21-thong-ke" || topic==="23-xac-suat"){
     // These are cross-grade topics. Grade-7 Wave 2 appends Learn/Micro evidence
     // without changing Grade-6 historical content or Practice manifests.
     for(const k of ["workspace","micro"]) assert.match(ev[k].sha,/^[0-9a-f]{40}$/);
@@ -51,11 +51,17 @@ for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
         assert.ok(workspace.cards.some(card=>card.id===id),"historical Grade-6 topic13 card removed: "+id);
       }
       assert.ok(micro.questions.length>=22,"Grade-6 topic13 Micro evidence regressed");
-    }else{
+    }else if(topic==="21-thong-ke"){
       for(const id of ["sta21-core-1","sta21-core-2","sta21-core-5"]) {
         assert.ok(workspace.cards.some(card=>card.id===id),"historical Grade-6 topic21 card removed: "+id);
       }
       assert.ok(micro.questions.length>=20,"Grade-6 topic21 Micro evidence regressed");
+    }else{
+      assert.ok(workspace.cards.some(card=>card.id==="prob23-core-1"),"historical Grade-6 topic23 card removed");
+      assert.ok(micro.questions.length>=20,"Grade-6 topic23 Micro evidence regressed");
+      for(const id of ["PRO23MICRO_018","PRO23MICRO_019","PRO23MICRO_020"]) {
+        assert.ok(micro.questions.some(q=>q.id===id),"historical Grade-6 topic23 Micro removed: "+id);
+      }
     }
   }else{
     for(const k of ["workspace","micro","manifest"]) assert.equal(blob(read(ev[k].path)),ev[k].sha,"source drift: "+ev[k].path);
