@@ -20,14 +20,15 @@ This directly addresses the risk of treating every family as equally important m
 
 ## Required sources
 
-Use:
+Select exactly **13 NotebookLM Sources**:
 1. current Master Plan v1.2.1;
 2. NotebookLM Math Review Rules v1.2;
-3. `skill-priority-matrix-r1.json`;
-4. `exam-frequency-hanoi-seed-r1.json`;
-5–12. KNTT Math textbooks Grades 6, 7, 8, 9 — both volumes.
+3. this packet, `00_NOTEBOOKLM_PACKET_R1.md`;
+4. `skill-priority-matrix-r1.json`;
+5. `exam-frequency-hanoi-seed-r1.json`;
+6–13. KNTT Math textbooks Grades 6, 7, 8, 9 — both volumes.
 
-The official Hanoi entrance seed is only 3 papers (2024–2026), city-specific, non-specialized. It is an **observed sample signal**, not a national frequency model.
+The official Hanoi entrance seed is only 3 papers (2024–2026), city-specific, non-specialized. It is an **observed sample signal**, not a national frequency model. The raw seed is selected separately so its official-source provenance and URLs remain visible to the reviewer.
 
 No specialist-school exam corpus is included in this packet.
 
