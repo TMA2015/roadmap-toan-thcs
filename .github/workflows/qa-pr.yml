@@ -232,6 +232,9 @@ jobs:
       - name: Validate Readiness coverage post-Wave1 reconciliation R1
         run: node scripts/test-readiness-coverage-post-wave1-r1.js
 
+      - name: Validate Skill Priority Matrix R1 review prep
+        run: node scripts/test-skill-priority-matrix-r1.js
+
       - name: Validate Written coverage audit R1
         run: node scripts/build-written-coverage-audit-r1.js /tmp/written-coverage-audit-r1.json
 
