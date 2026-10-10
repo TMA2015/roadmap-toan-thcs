@@ -67,7 +67,10 @@ for (const cfg of configs) {
   if (assessment.layer!=="KNTT-Core") errors.push(`CĐ${cfg.num}: readiness layer must be KNTT-Core`);
   if (assessment.policy?.feedback!=="after_submit"||assessment.policy?.hints!==false||assessment.policy?.tutor!==false) errors.push(`CĐ${cfg.num}: readiness feedback/hint/tutor policy mismatch`);
   if (assessment.policy?.hard_gate!==false||assessment.readiness?.hard_gate!==false) errors.push(`CĐ${cfg.num}: readiness must never hard gate`);
-  if (!Array.isArray(assessment.items)||assessment.items.length!==10) errors.push(`CĐ${cfg.num}: expected exactly 10 readiness items`);
+  if (!Array.isArray(assessment.items)||assessment.items.length<10) errors.push(`CĐ${cfg.num}: historical 10-item readiness baseline regressed`);
+  for (const item of (assessment.items||[]).slice(10)) {
+    if (item.authoring_review?.status!=="PASS") errors.push(`CĐ${cfg.num} ${item.id}: append-only readiness item lacks independent academic PASS`);
+  }
 
   const aid=new Set();
   for (const item of assessment.items||[]) {
