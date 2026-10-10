@@ -97,6 +97,8 @@ jobs:
           node scripts/test-core04-06-teaching-rollout.js
           node scripts/test-core08-12-teaching-rollout.js
           node scripts/test-core13-15-geometry-rollout.js
+          node scripts/test-golden-geo13.js
+          node scripts/test-golden-geo14-15.js
           node scripts/test-core16-18-geometry-rollout.js
           node scripts/test-core19-r2-release.js
           node scripts/test-core20-v2-release.js
