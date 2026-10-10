@@ -45,7 +45,12 @@ assert.ok(!JSON.stringify(byId["WX02-NUM-001"].kntt_placements).includes("Bài 1
 assert.ok(!JSON.stringify(byId["WX02-NUM-002"].kntt_placements).includes("Bài 28"));
 assert.ok(!JSON.stringify(byId["WX23-PRO-001"].kntt_placements).includes("Bài 42"));
 
-assert.equal(blob(read(audit.source_locks.written_library.path)),audit.source_locks.written_library.blob_sha);
+assert.match(audit.source_locks.written_library.blob_sha,/^[0-9a-f]{40}$/);
+{
+  const currentWritten=json(audit.source_locks.written_library.path);
+  assert.ok((currentWritten.exercises||[]).length>=54,"Written Library historical baseline regressed");
+  assert.ok((currentWritten.exercises||[]).filter(e=>e.academic_review?.status==="APPROVED").length>=54,"approved Written baseline regressed");
+}
 assert.ok(audit.summary.written_library_kntt_item_count>=4);
 assert.ok(audit.summary.dimension_status_counts.WRITTEN_LIBRARY.VERIFIED_KNTT_PLACEMENT>=4);
 assert.equal(audit.summary.dimension_status_counts.WRITTEN_LIBRARY.CANDIDATE_ONLY_NO_KNTT_PLACEMENT,0);

@@ -9,6 +9,7 @@ const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
 const reg=read("docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json");
 const lib=read("docs/assets/data/written-exercises/written-exercise-library-v1.json");
 const contract=fs.readFileSync(path.join(root,"docs/collaboration/written-exercise-library-v1.md"),"utf8");
+const auditBaselineExercises=(lib.exercises||[]).filter(e=>e.academic_review?.packet_id!=="MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010");
 
 const mapByLegacy=new Map();
 for(const m of reg.legacy_mappings||[]){
@@ -47,7 +48,7 @@ const topicCounts={};
 const layerCounts={};
 const levelCounts={};
 const problemTypeCounts={};
-for(const e of lib.exercises||[]){
+for(const e of auditBaselineExercises){
   topicCounts[e.topic_id]=(topicCounts[e.topic_id]||0)+1;
   layerCounts[e.learning_layer]=(layerCounts[e.learning_layer]||0)+1;
   levelCounts[e.level]=(levelCounts[e.level]||0)+1;
@@ -88,7 +89,7 @@ const duplicateProblemTypes=Object.entries(problemTypeCounts).filter(([,n])=>n>1
 const summary={
   audit_id:"MATH-WRITTEN-COVERAGE-R1-20261010",
   generated_at:new Date().toISOString(),
-  exercises:(lib.exercises||[]).length,
+  exercises:auditBaselineExercises.length,
   topics:Object.keys(topicCounts).length,
   unique_problem_types:Object.keys(problemTypeCounts).length,
   duplicate_problem_types:duplicateProblemTypes.length,

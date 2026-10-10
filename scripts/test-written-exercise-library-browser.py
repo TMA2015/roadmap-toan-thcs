@@ -11,6 +11,13 @@ if not CHROME:
 BASE = "http://127.0.0.1:8765/"
 SENTINEL_KEY = "written-library-sentinel"
 
+with open("docs/assets/data/written-exercises/written-exercise-library-v1.json", encoding="utf-8") as fh:
+    LIBRARY = json.load(fh)
+EXPECTED_CARD_COUNT = len(LIBRARY["exercises"])
+EXPECTED_TOPIC_COUNTS = {}
+for exercise in LIBRARY["exercises"]:
+    EXPECTED_TOPIC_COUNTS[exercise["topic_id"]] = EXPECTED_TOPIC_COUNTS.get(exercise["topic_id"], 0) + 1
+
 with sync_playwright() as p:
     browser = p.chromium.launch(
         executable_path=CHROME,
@@ -29,7 +36,7 @@ with sync_playwright() as p:
         )
 
         cards = page.locator(".written-exercise-card")
-        assert cards.count() == 54, (device, "fifty-four published cards")
+        assert cards.count() == EXPECTED_CARD_COUNT, (device, "canonical published card count")
         meta_texts = page.locator(".written-exercise-meta").all_inner_texts()
         assert all("phút" not in text for text in meta_texts), (device, "estimated minutes hidden from learner card metadata")
         assert page.locator(".written-exercise-card#wx07-rat-001").count() == 1
@@ -65,7 +72,7 @@ with sync_playwright() as p:
         numeric_topics = [value for value in topic_values if value != "all"]
         assert numeric_topics == sorted(numeric_topics, key=lambda value: int(value.replace("CT", ""))), (device, "topic filter is numerically ascending")
         topic.select_option("CT14")
-        assert cards.count() == 2, (device, "CT14 filter")
+        assert cards.count() == EXPECTED_TOPIC_COUNTS["CT14"], (device, "CT14 filter")
         assert page.locator(".written-exercise-card#wx14-tri-002").count() == 1
 
         level = page.locator('select[aria-label="Lọc theo mức"]')
@@ -83,7 +90,7 @@ with sync_playwright() as p:
 
         # CT09 P1-B deep anchors: progressive help and friendly learner labels.
         topic.select_option("CT09")
-        assert cards.count() == 8, (device, "CT09 has two existing items plus six P1-B anchors")
+        assert cards.count() == EXPECTED_TOPIC_COUNTS["CT09"], (device, "CT09 canonical item count")
 
         legacy_base = page.locator(".written-exercise-card#wx09-sys-001")
         legacy_apply = page.locator(".written-exercise-card#wx09-sys-002")
@@ -157,7 +164,7 @@ with sync_playwright() as p:
             timeout=15000,
         )
         assert topic_page.locator('select[aria-label="Lọc theo chuyên đề"]').input_value() == "CT07", (device, "topic filter auto-applied")
-        assert topic_page.locator(".written-exercise-card").count() == 2, (device, "CT07 deep link shows two published items")
+        assert topic_page.locator(".written-exercise-card").count() == EXPECTED_TOPIC_COUNTS["CT07"], (device, "CT07 deep link shows canonical published items")
         topic_page.close()
 
         for topic_num, topic_id in [("02", "CT02"), ("03", "CT03"), ("04", "CT04"), ("05", "CT05"), ("06", "CT06"), ("08", "CT08"), ("09", "CT09"), ("10", "CT10"), ("11", "CT11"), ("12", "CT12"), ("13", "CT13"), ("15", "CT15"), ("16", "CT16"), ("17", "CT17"), ("18", "CT18"), ("19", "CT19"), ("20", "CT20"), ("21", "CT21"), ("23", "CT23")]:
@@ -194,14 +201,14 @@ with sync_playwright() as p:
                 timeout=15000,
             )
             assert new_topic_page.locator('select[aria-label="Lọc theo chuyên đề"]').input_value() == topic_id, (device, topic_id, "filter auto-applied")
-            expected_count = 8 if topic_id == "CT09" else (3 if topic_id in {"CT02", "CT13", "CT20", "CT23"} else 2)
+            expected_count = EXPECTED_TOPIC_COUNTS[topic_id]
             assert new_topic_page.locator(".written-exercise-card").count() == expected_count, (device, topic_id, "published item count")
             new_topic_page.close()
         context.close()
 
     browser.close()
 
-print("PASS: Written Exercise Library renders fifty-four published items on desktop/mobile.")
+print(f"PASS: Written Exercise Library renders {EXPECTED_CARD_COUNT} canonical published items on desktop/mobile.")
 print("PASS: topic/level/search filters, geometry figure and MathJax work.")
 print("PASS: compact 3-action help row is presentation-only with no localStorage write.")
 print("PASS: quick shortcut and topic deep link open the written library with CT07 auto-filter.")

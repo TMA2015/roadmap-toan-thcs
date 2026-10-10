@@ -7,6 +7,7 @@ const exists=p=>fs.existsSync(path.join(root,p));
 const reg=read("docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json");
 const idx=read("docs/assets/data/curriculum/taxonomy-v2-runtime/index-r1.json");
 const written=read("docs/assets/data/written-exercises/written-exercise-library-v1.json");
+const writtenCoverageR1Baseline=(written.exercises||[]).filter(e=>e.academic_review?.packet_id!=="MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010");
 const anchors=read("docs/assets/data/anchors/anchor-catalog-v1.json");
 
 const famById=new Map(reg.families.map(f=>[f.family_id,f]));
@@ -107,7 +108,7 @@ for(const n of fs.readdirSync(assessDir).filter(n=>/^\d\d-.*-core-v1\.json$/.tes
 }
 
 // Written
-for(const e of written.exercises||[]){
+for(const e of writtenCoverageR1Baseline){
   const topic=e.topic_id;
   const skills=e.skills||[],exact=familiesFor(topic,skills,false),fids=familiesFor(topic,skills);
   if(!exact.length&&fids.length) inferred.written.push({topic,exercise_id:e.exercise_id,skills,family_ids:fids,method:"GLOBAL_UNIQUE_DIAGNOSTIC_SUBSKILL"});
@@ -186,7 +187,7 @@ assert.equal(arr.length,131);
 const implementationPath="docs/assets/data/curriculum/practice-implementation-wave1-r1.json";
 const implementationDelta=exists(implementationPath)?read(implementationPath).counts.practice_new_items:0;
 assert.equal(practiceQuestions,3153+implementationDelta);
-assert.equal((written.exercises||[]).length,54);
+assert.equal(writtenCoverageR1Baseline.length,54);
 assert.equal((anchors.anchors||[]).length,11);
 const out=process.argv[2];
 if(out){fs.writeFileSync(out,JSON.stringify(report,null,2)+"\n");}

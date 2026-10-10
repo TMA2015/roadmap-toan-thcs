@@ -209,6 +209,9 @@ jobs:
       - name: Validate practice coverage priority R1 review
         run: node scripts/test-practice-coverage-priority-r1.js
 
+      - name: Validate Written implementation Wave 1 R1
+        run: node scripts/test-written-implementation-wave1-r1.js
+
       - name: Validate Written coverage priority R1 review
         run: node scripts/test-written-coverage-priority-r1.js
 

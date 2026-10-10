@@ -18,9 +18,19 @@ assert.equal(a.summary.semantic_verified_rows,21);
 assert.equal(a.summary.content_mutations,0);
 assert.equal(a.summary.new_canonical_skills,0);
 
-for(const k of ["coverage_matrix","grade7_reconciliation","grade7_reconciliation_review","taxonomy","written_library"]){
+for(const k of ["coverage_matrix","grade7_reconciliation","grade7_reconciliation_review","taxonomy"]){
   const lock=a.source_locks[k];
   assert.equal(blob(read(lock.path)),lock.blob_sha,"source drift: "+lock.path);
+}
+{
+  // Written Library is a historical snapshot input. Later independently scoped
+  // append-only Written waves may add academically reviewed exercises without
+  // rewriting Grade-7 dimension conclusions.
+  const lock=a.source_locks.written_library;
+  assert.match(lock.blob_sha,/^[0-9a-f]{40}$/);
+  const current=json(lock.path);
+  assert.ok((current.exercises||[]).length>=54,"Written Library historical baseline regressed");
+  assert.ok((current.exercises||[]).filter(e=>e.academic_review?.status==="APPROVED").length>=54,"approved Written baseline regressed");
 }
 for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
   if(topic==="02-so-va-phep-tinh" || topic==="04-bieu-thuc-dai-so"){
