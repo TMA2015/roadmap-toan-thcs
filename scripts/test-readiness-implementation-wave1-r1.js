@@ -75,7 +75,7 @@ assert.equal(manifest.counts.threshold_changes,0);
 assert.equal(manifest.counts.hard_gate_changes,0);
 assert.equal(manifest.counts.mastery_history_changes,0);
 assert.equal((receipt.match(/^ITEM\|/gm)||[]).length,18);
-assert.equal((receipt.match(/\|PASS$/gm)||[]).filter(line=>line.startsWith("ITEM|")).length,18);
+assert.equal((receipt.match(/^ITEM\|.*\|PASS$/gm)||[]).length,18);
 assert.ok(receipt.includes("OVERALL|PASS"));
 assert.ok(receipt.includes("CLEARANCE|READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE"));
 
