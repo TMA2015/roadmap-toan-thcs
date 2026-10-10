@@ -184,7 +184,7 @@ The priority decision is already frozen. Do not reopen KEEP_AS_IS families and d
 - Approved ADD_SCOPE: Identification criteria or angle properties of an equilateral triangle.
 - Target file after approval: `docs/assets/data/assessment/14-tam-giac-core-v1.json`
 - Curriculum: KNTT, Grade 7, core
-- Primary skill: `nhan-biet-tam-giac-deu`
+- Primary skill: `tam-giac-deu`
 - Question: Tam giác \(ABC\) cân tại \(A\) và \(\widehat A=60^\circ\). Kết luận nào đúng?
 - Options:
   * 0. Tam giác \(ABC\) đều  ← keyed correct
