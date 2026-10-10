@@ -1,0 +1,630 @@
+{
+  "schema": "readiness-implementation-wave1-r1-candidates",
+  "version": 1,
+  "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+  "status": "CANDIDATE_AWAITING_ACADEMIC_CONTENT_REVIEW",
+  "base_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+  "candidate_count": 18,
+  "policy": {
+    "one_additional_item_per_approved_family": true,
+    "existing_items_unchanged": true,
+    "publish_before_content_review": false,
+    "readiness_threshold_change": false,
+    "hard_gate_change": false,
+    "mastery_history_change": false
+  },
+  "candidates": [
+    {
+      "family_id": "NUM-ORDER",
+      "target_file": "docs/assets/data/assessment/02-so-va-phep-tinh-core-v1.json",
+      "approved_scope": "Order of operations involving parentheses/brackets or nested expressions.",
+      "item": {
+        "id": "NUM02G6READY_014",
+        "type": "mcq",
+        "skill": "thu-tu-phep-tinh",
+        "points": 1,
+        "question": "Tính \\(36-2\\times(5+3)\\).",
+        "options": [
+          "20",
+          "272",
+          "50",
+          "19"
+        ],
+        "answer": 0,
+        "explanation": "Tính trong ngoặc trước: \\(5+3=8\\). Sau đó \\(2\\times8=16\\), nên \\(36-16=20\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            6
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "NUM-INTEGER-OPS",
+      "target_file": "docs/assets/data/assessment/02-so-va-phep-tinh-core-v1.json",
+      "approved_scope": "Subtraction of negative integers or signed integer multiplication involving sign rules.",
+      "item": {
+        "id": "NUM02G6READY_015",
+        "type": "mcq",
+        "skill": "so-nguyen-phep-tinh",
+        "points": 1,
+        "question": "Tính \\((-6)\\times(-4)\\).",
+        "options": [
+          "24",
+          "-24",
+          "10",
+          "-10"
+        ],
+        "answer": 0,
+        "explanation": "Tích của hai số nguyên âm là số dương và \\(6\\times4=24\\), nên kết quả là \\(24\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            6
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "NUM-GCD-LCM",
+      "target_file": "docs/assets/data/assessment/02-so-va-phep-tinh-core-v1.json",
+      "approved_scope": "Finding the Least Common Multiple (BCNN) of two natural numbers.",
+      "item": {
+        "id": "NUM02G6READY_016",
+        "type": "mcq",
+        "skill": "bcnn",
+        "points": 1,
+        "question": "Tìm \\(\\operatorname{BCNN}(12,18)\\).",
+        "options": [
+          "36",
+          "6",
+          "72",
+          "216"
+        ],
+        "answer": 0,
+        "explanation": "\\(12=2^2\\cdot3\\), \\(18=2\\cdot3^2\\). Lấy số mũ lớn nhất của mỗi thừa số nguyên tố: \\(\\operatorname{BCNN}=2^2\\cdot3^2=36\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            6
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "NUM-POWER",
+      "target_file": "docs/assets/data/assessment/02-so-va-phep-tinh-core-v1.json",
+      "approved_scope": "Division of powers with the same base or the zero-exponent rule.",
+      "item": {
+        "id": "NUM02G6READY_017",
+        "type": "mcq",
+        "skill": "luy-thua",
+        "points": 1,
+        "question": "Tính \\(3^5:3^2\\).",
+        "options": [
+          "\\(3^3=27\\)",
+          "\\(3^7=2187\\)",
+          "\\(3^2=9\\)",
+          "\\(1\\)"
+        ],
+        "answer": 0,
+        "explanation": "Khi chia hai lũy thừa cùng cơ số khác 0, ta trừ số mũ: \\(3^5:3^2=3^{5-2}=3^3=27\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            6
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "NUM-FRACTION-FORM",
+      "target_file": "docs/assets/data/assessment/02-so-va-phep-tinh-core-v1.json",
+      "approved_scope": "Simplifying a fraction to irreducible form.",
+      "item": {
+        "id": "NUM02G6READY_018",
+        "type": "mcq",
+        "skill": "rut-gon-phan-so",
+        "points": 1,
+        "question": "Rút gọn phân số \\(\\frac{18}{24}\\) đến phân số tối giản.",
+        "options": [
+          "\\(\\frac34\\)",
+          "\\(\\frac9{12}\\)",
+          "\\(\\frac23\\)",
+          "\\(\\frac46\\)"
+        ],
+        "answer": 0,
+        "explanation": "\\(\\operatorname{ƯCLN}(18,24)=6\\). Chia cả tử và mẫu cho 6 được \\(\\frac{18}{24}=\\frac34\\), là phân số tối giản.",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            6
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "RATIO-DIRECT",
+      "target_file": "docs/assets/data/assessment/03-ti-le-ti-le-thuc-core-v1.json",
+      "approved_scope": "Determining the constant of proportionality k from corresponding values or a table.",
+      "item": {
+        "id": "RAT03READY_011",
+        "type": "mcq",
+        "skill": "he-so-ti-le-thuan",
+        "points": 1,
+        "question": "Hai đại lượng \\(x\\) và \\(y\\) tỉ lệ thuận theo công thức \\(y=kx\\). Khi \\(x=6\\) thì \\(y=15\\). Hệ số tỉ lệ \\(k\\) bằng:",
+        "options": [
+          "\\(\\frac52\\)",
+          "\\(\\frac25\\)",
+          "9",
+          "21"
+        ],
+        "answer": 0,
+        "explanation": "Vì \\(y=kx\\), ta có \\(k=\\frac{y}{x}=\\frac{15}{6}=\\frac52\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            7
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "RATEX-DOMAIN",
+      "target_file": "docs/assets/data/assessment/07-phan-thuc-dai-so-core-v1.json",
+      "approved_scope": "Preservation of original domain restriction after simplifying a rational expression.",
+      "item": {
+        "id": "RAT07READY_011",
+        "type": "mcq",
+        "skill": "giu-dieu-kien-ban-dau",
+        "points": 1,
+        "question": "Cho \\(P=\\frac{(x-2)(x+1)}{x-2}\\). Sau khi rút gọn được \\(P=x+1\\), điều kiện nào vẫn phải giữ?",
+        "options": [
+          "\\(x\\ne2\\)",
+          "\\(x\\ne-1\\)",
+          "Mọi số thực \\(x\\)",
+          "\\(x=2\\)"
+        ],
+        "answer": 0,
+        "explanation": "Biểu thức ban đầu có mẫu \\(x-2\\), nên phải có \\(x\\ne2\\). Điều kiện này vẫn được giữ sau khi rút gọn.",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "EQ-MODEL",
+      "target_file": "docs/assets/data/assessment/08-phuong-trinh-bat-phuong-trinh-core-v1.json",
+      "approved_scope": "Formulating a linear equation from a contextual real-world situation.",
+      "item": {
+        "id": "EQ08READY_011",
+        "type": "mcq",
+        "skill": "lap-phuong-trinh",
+        "points": 1,
+        "question": "Mua 3 chiếc bút cùng giá \\(x\\) nghìn đồng mỗi chiếc và một quyển vở giá 12 nghìn đồng, tổng cộng 30 nghìn đồng. Phương trình đúng là:",
+        "options": [
+          "\\(3x+12=30\\)",
+          "\\(3(x+12)=30\\)",
+          "\\(x+12=30\\)",
+          "\\(12x+3=30\\)"
+        ],
+        "answer": 0,
+        "explanation": "Tiền 3 chiếc bút là \\(3x\\) nghìn đồng; cộng 12 nghìn đồng tiền vở được tổng 30 nghìn đồng, nên \\(3x+12=30\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "SYS-MODEL",
+      "target_file": "docs/assets/data/assessment/09-he-phuong-trinh-core-v1.json",
+      "approved_scope": "Formulating a 2x2 system of linear equations from a contextual application.",
+      "item": {
+        "id": "SYS09READY_011",
+        "type": "mcq",
+        "skill": "lap-he-bai-toan",
+        "points": 1,
+        "question": "Một quầy bán 20 vé gồm vé người lớn giá 50 nghìn đồng và vé học sinh giá 30 nghìn đồng, thu được 760 nghìn đồng. Gọi \\(x\\) là số vé người lớn, \\(y\\) là số vé học sinh. Hệ phương trình đúng là:",
+        "options": [
+          "\\(\\begin{cases}x+y=20\\\\50x+30y=760\\end{cases}\\)",
+          "\\(\\begin{cases}x-y=20\\\\50x+30y=760\\end{cases}\\)",
+          "\\(\\begin{cases}x+y=760\\\\50x+30y=20\\end{cases}\\)",
+          "\\(\\begin{cases}x+y=20\\\\30x+50y=760\\end{cases}\\)"
+        ],
+        "answer": 0,
+        "explanation": "Tổng số vé cho \\(x+y=20\\). Tổng tiền (đơn vị nghìn đồng) cho \\(50x+30y=760\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            9
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "RAD-OPERATE",
+      "target_file": "docs/assets/data/assessment/11-can-thuc-core-v1.json",
+      "approved_scope": "Multiplication or division of radicals using product/quotient rules.",
+      "item": {
+        "id": "RAD11READY_011",
+        "type": "mcq",
+        "skill": "nhan-chia-can",
+        "points": 1,
+        "question": "Tính \\(\\sqrt{12}\\cdot\\sqrt3\\).",
+        "options": [
+          "6",
+          "\\(\\sqrt{15}\\)",
+          "\\(3\\sqrt3\\)",
+          "12"
+        ],
+        "answer": 0,
+        "explanation": "\\(\\sqrt{12}\\cdot\\sqrt3=\\sqrt{36}=6\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            9
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "GEO-TRANSVERSAL",
+      "target_file": "docs/assets/data/assessment/13-goc-va-duong-thang-core-v1.json",
+      "approved_scope": "Corresponding angles or consecutive interior angles under a transversal.",
+      "item": {
+        "id": "GEO13READY_011",
+        "type": "mcq",
+        "skill": "goc-trong-cung-phia",
+        "points": 1,
+        "question": "Hai đường thẳng \\(a\\parallel b\\) bị đường thẳng \\(c\\) cắt. Một cặp góc trong cùng phía có một góc bằng \\(112^\\circ\\). Góc còn lại bằng:",
+        "options": [
+          "\\(68^\\circ\\)",
+          "\\(112^\\circ\\)",
+          "\\(56^\\circ\\)",
+          "\\(248^\\circ\\)"
+        ],
+        "answer": 0,
+        "explanation": "Hai góc trong cùng phía tạo bởi một đường cắt hai đường thẳng song song có tổng \\(180^\\circ\\), nên góc còn lại bằng \\(180^\\circ-112^\\circ=68^\\circ\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            7
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "TRI-SPECIAL",
+      "target_file": "docs/assets/data/assessment/14-tam-giac-core-v1.json",
+      "approved_scope": "Identification criteria or angle properties of an equilateral triangle.",
+      "item": {
+        "id": "GEO14READY_011",
+        "type": "mcq",
+        "skill": "nhan-biet-tam-giac-deu",
+        "points": 1,
+        "question": "Tam giác \\(ABC\\) cân tại \\(A\\) và \\(\\widehat A=60^\\circ\\). Kết luận nào đúng?",
+        "options": [
+          "Tam giác \\(ABC\\) đều",
+          "Tam giác \\(ABC\\) vuông tại \\(A\\)",
+          "Tam giác \\(ABC\\) chỉ cân, không thể đều",
+          "Chưa đủ dữ kiện để kết luận"
+        ],
+        "answer": 0,
+        "explanation": "Tam giác cân tại \\(A\\) có \\(\\widehat B=\\widehat C\\). Vì tổng ba góc bằng \\(180^\\circ\\) và \\(\\widehat A=60^\\circ\\), suy ra \\(\\widehat B=\\widehat C=60^\\circ\\), nên tam giác đều.",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            7
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "CIRCLE-CHORD-ARC",
+      "target_file": "docs/assets/data/assessment/19-duong-tron-core-v1.json",
+      "approved_scope": "Perpendicular relationship between a radius/diameter and a chord.",
+      "item": {
+        "id": "GEO19READY_011",
+        "type": "mcq",
+        "skill": "day-va-tam",
+        "points": 1,
+        "question": "Trong đường tròn tâm \\(O\\), \\(AB\\) là một dây và \\(OM\\perp AB\\) tại \\(M\\). Kết luận nào đúng?",
+        "options": [
+          "\\(AM=MB\\)",
+          "\\(OA=OM\\)",
+          "\\(M\\) là tâm đường tròn",
+          "\\(AB\\) là đường kính"
+        ],
+        "answer": 0,
+        "explanation": "Đường vuông góc kẻ từ tâm đến một dây thì đi qua trung điểm của dây, nên \\(AM=MB\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            9
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "CIRCLE-ANGLES",
+      "target_file": "docs/assets/data/assessment/19-duong-tron-core-v1.json",
+      "approved_scope": "Central angle or the central-angle/inscribed-angle relationship on the same arc.",
+      "item": {
+        "id": "GEO19READY_012",
+        "type": "mcq",
+        "skill": "goc-o-tam",
+        "points": 1,
+        "question": "Trong đường tròn tâm \\(O\\), góc nội tiếp \\(\\widehat{ACB}=35^\\circ\\) chắn cung nhỏ \\(AB\\). Góc ở tâm \\(\\widehat{AOB}\\) chắn cùng cung nhỏ \\(AB\\) bằng:",
+        "options": [
+          "\\(70^\\circ\\)",
+          "\\(35^\\circ\\)",
+          "\\(17{,}5^\\circ\\)",
+          "\\(145^\\circ\\)"
+        ],
+        "answer": 0,
+        "explanation": "Góc ở tâm chắn cùng một cung bằng hai lần góc nội tiếp: \\(\\widehat{AOB}=2\\cdot35^\\circ=70^\\circ\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            9
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "GEO-REGULAR-SYMM",
+      "target_file": "docs/assets/data/assessment/20-hinh-hoc-tong-hop-core-v1.json",
+      "approved_scope": "Center of symmetry or rotational symmetry for regular polygons.",
+      "item": {
+        "id": "GEO20READY_011",
+        "type": "mcq",
+        "skill": "tam-doi-xung",
+        "points": 1,
+        "question": "Hình lục giác đều \\(ABCDEF\\) có tâm \\(O\\). Khẳng định nào đúng?",
+        "options": [
+          "\\(O\\) là tâm đối xứng của hình lục giác đều",
+          "Đỉnh \\(A\\) là tâm đối xứng",
+          "Trung điểm của cạnh \\(AB\\) là tâm đối xứng",
+          "Hình lục giác đều không có tâm đối xứng"
+        ],
+        "answer": 0,
+        "explanation": "Phép đối xứng tâm \\(O\\) biến mỗi đỉnh của lục giác đều thành đỉnh đối diện, nên \\(O\\) là tâm đối xứng.",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            6
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "SOLID-PYRAMID",
+      "target_file": "docs/assets/data/assessment/20-hinh-hoc-tong-hop-core-v1.json",
+      "approved_scope": "Lateral surface area or slant-height calculation for a regular pyramid.",
+      "item": {
+        "id": "GEO20READY_012",
+        "type": "mcq",
+        "skill": "dien-tich-xung-quanh-hinh-chop",
+        "points": 1,
+        "question": "Một hình chóp tứ giác đều có chu vi đáy \\(20\\text{ cm}\\) và trung đoạn \\(6\\text{ cm}\\). Diện tích xung quanh của hình chóp bằng:",
+        "options": [
+          "\\(60\\text{ cm}^2\\)",
+          "\\(120\\text{ cm}^2\\)",
+          "\\(30\\text{ cm}^2\\)",
+          "\\(26\\text{ cm}^2\\)"
+        ],
+        "answer": 0,
+        "explanation": "Diện tích xung quanh hình chóp đều bằng \\(\\frac12\\) chu vi đáy nhân trung đoạn: \\(S_{xq}=\\frac12\\cdot20\\cdot6=60\\text{ cm}^2\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            8
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "STAT-FREQUENCY",
+      "target_file": "docs/assets/data/assessment/21-thong-ke-core-v1.json",
+      "approved_scope": "Relative frequency calculation or percentage representation.",
+      "item": {
+        "id": "STA21READY_015",
+        "type": "mcq",
+        "skill": "tan-suat",
+        "points": 1,
+        "question": "Trong 40 kết quả quan sát, giá trị \\(A\\) xuất hiện 8 lần. Tần số tương đối của \\(A\\) bằng:",
+        "options": [
+          "20%",
+          "8%",
+          "32%",
+          "5%"
+        ],
+        "answer": 0,
+        "explanation": "Tần số tương đối bằng \\(\\frac{8}{40}=0{,}2=20\\%\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            9
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    },
+    {
+      "family_id": "STAT-ADVANCED-DATA",
+      "target_file": "docs/assets/data/assessment/21-thong-ke-core-v1.json",
+      "approved_scope": "Representative value or boundary conditions for a grouped interval [a;b).",
+      "item": {
+        "id": "STA21READY_016",
+        "type": "mcq",
+        "skill": "du-lieu-ghep-nhom",
+        "points": 1,
+        "question": "Giá trị đại diện của nhóm \\([10;20)\\) là:",
+        "options": [
+          "15",
+          "10",
+          "20",
+          "30"
+        ],
+        "answer": 0,
+        "explanation": "Giá trị đại diện của một nhóm thường lấy bằng trung điểm của khoảng: \\(\\frac{10+20}{2}=15\\).",
+        "curriculum": {
+          "book": "KNTT",
+          "grades": [
+            9
+          ],
+          "level": "core"
+        },
+        "authoring_review": {
+          "status": "PENDING",
+          "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+          "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+          "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+          "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+        }
+      }
+    }
+  ]
+}
