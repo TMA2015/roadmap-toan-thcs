@@ -1,0 +1,317 @@
+{
+  "audit_id": "MATH-PRIORITY-COVERAGE-RECONCILIATION-R1-20261010",
+  "as_of": "2026-10-10",
+  "status": "REVIEW_PREP_ONLY_NO_AUTHORING",
+  "purpose": "Reconcile the newly reviewed 131-family Skill Priority Matrix R1 against previously reviewed Practice, Readiness, and Written coverage decisions without using priority as an automatic question quota.",
+  "sources": {
+    "priority_matrix": "docs/assets/data/curriculum/skill-priority-matrix-r1.json",
+    "practice_priority": "docs/assets/data/curriculum/practice-coverage-priority-r1.json",
+    "practice_wave1": "docs/assets/data/curriculum/practice-implementation-wave1-r1.json",
+    "readiness_post_wave1": "docs/assets/data/curriculum/readiness-coverage-post-wave1-r1.json",
+    "written_post_wave1": "docs/assets/data/curriculum/written-coverage-post-wave1-r1.json"
+  },
+  "fixed_facts": {
+    "canonical_families": 131,
+    "kntt_core_priority_counts": {
+      "P0": 11,
+      "P1": 37,
+      "P2": 52
+    },
+    "readiness_items": 237,
+    "readiness_core_families_covered": 100,
+    "written_core_families_covered": 76,
+    "written_core_zero_families": 24,
+    "practice_wave1_added_items": 10
+  },
+  "reconciliation_queue": {
+    "total": 14,
+    "readiness": 1,
+    "written": 10,
+    "practice_prior_keep": 1,
+    "practice_post_add": 2,
+    "rows": [
+      {
+        "domain": "READINESS",
+        "family_id": "CIRCLE-CYCLIC",
+        "prior_decision": "KEEP_AS_IS",
+        "current_coverage": {
+          "readiness_primary_items": 1
+        },
+        "learner_priority": "P0_FOUNDATION_CRITICAL",
+        "practice_weight_guidance": "HIGH",
+        "reason_for_reconciliation": "New priority review classifies this family as high-priority while the earlier Readiness review kept one primary item."
+      },
+      {
+        "domain": "WRITTEN",
+        "family_id": "NUM-INTEGER-OPS",
+        "prior_decision": "KEEP_NO_WRITTEN",
+        "current_coverage": {
+          "written_items": 0
+        },
+        "learner_priority": "P0_FOUNDATION_CRITICAL",
+        "practice_weight_guidance": "HIGH",
+        "reason_for_reconciliation": "New priority review classifies this family as P0/P1 while the earlier Written review kept zero Written items."
+      },
+      {
+        "domain": "WRITTEN",
+        "family_id": "NUM-ORDER",
+        "prior_decision": "KEEP_NO_WRITTEN",
+        "current_coverage": {
+          "written_items": 0
+        },
+        "learner_priority": "P1_HIGH_VALUE_CORE",
+        "practice_weight_guidance": "HIGH",
+        "reason_for_reconciliation": "New priority review classifies this family as P0/P1 while the earlier Written review kept zero Written items."
+      },
+      {
+        "domain": "WRITTEN",
+        "family_id": "NUM-POWER",
+        "prior_decision": "KEEP_NO_WRITTEN",
+        "current_coverage": {
+          "written_items": 0
+        },
+        "learner_priority": "P1_HIGH_VALUE_CORE",
+        "practice_weight_guidance": "HIGH",
+        "reason_for_reconciliation": "New priority review classifies this family as P0/P1 while the earlier Written review kept zero Written items."
+      },
+      {
+        "domain": "WRITTEN",
+        "family_id": "RATIO-PROP",
+        "prior_decision": "KEEP_NO_WRITTEN",
+        "current_coverage": {
+          "written_items": 0
+        },
+        "learner_priority": "P1_HIGH_VALUE_CORE",
+        "practice_weight_guidance": "HIGH",
+        "reason_for_reconciliation": "New priority review classifies this family as P0/P1 while the earlier Written review kept zero Written items."
+      },
+      {
+        "domain": "WRITTEN",
+        "family_id": "EQ-BASIC",
+        "prior_decision": "KEEP_NO_WRITTEN",
+        "current_coverage": {
+          "written_items": 0
+        },
+        "learner_priority": "P0_FOUNDATION_CRITICAL",
+        "practice_weight_guidance": "HIGH",
+        "reason_for_reconciliation": "New priority review classifies this family as P0/P1 while the earlier Written review kept zero Written items."
+      },
+      {
+        "domain": "WRITTEN",
+        "family_id": "TRI-CONGRUENCE",
+        "prior_decision": "KEEP_NO_WRITTEN",
+        "current_coverage": {
+          "written_items": 0
+        },
+        "learner_priority": "P0_FOUNDATION_CRITICAL",
+        "practice_weight_guidance": "HIGH",
+        "reason_for_reconciliation": "New priority review classifies this family as P0/P1 while the earlier Written review kept zero Written items."
+      },
+      {
+        "domain": "WRITTEN",
+        "family_id": "TRI-ORTHOCENTER",
+        "prior_decision": "KEEP_NO_WRITTEN",
+        "current_coverage": {
+          "written_items": 0
+        },
+        "learner_priority": "P1_HIGH_VALUE_CORE",
+        "practice_weight_guidance": "MEDIUM",
+        "reason_for_reconciliation": "New priority review classifies this family as P0/P1 while the earlier Written review kept zero Written items."
+      },
+      {
+        "domain": "WRITTEN",
+        "family_id": "CIRCLE-POSITION",
+        "prior_decision": "KEEP_NO_WRITTEN",
+        "current_coverage": {
+          "written_items": 0
+        },
+        "learner_priority": "P1_HIGH_VALUE_CORE",
+        "practice_weight_guidance": "HIGH",
+        "reason_for_reconciliation": "New priority review classifies this family as P0/P1 while the earlier Written review kept zero Written items."
+      },
+      {
+        "domain": "WRITTEN",
+        "family_id": "STAT-FREQUENCY",
+        "prior_decision": "KEEP_NO_WRITTEN",
+        "current_coverage": {
+          "written_items": 0
+        },
+        "learner_priority": "P1_HIGH_VALUE_CORE",
+        "practice_weight_guidance": "HIGH",
+        "reason_for_reconciliation": "New priority review classifies this family as P0/P1 while the earlier Written review kept zero Written items."
+      },
+      {
+        "domain": "WRITTEN",
+        "family_id": "STAT-ADVANCED-DATA",
+        "prior_decision": "KEEP_NO_WRITTEN",
+        "current_coverage": {
+          "written_items": 0
+        },
+        "learner_priority": "P1_HIGH_VALUE_CORE",
+        "practice_weight_guidance": "MEDIUM",
+        "reason_for_reconciliation": "New priority review classifies this family as P0/P1 while the earlier Written review kept zero Written items."
+      },
+      {
+        "domain": "PRACTICE",
+        "family_id": "RAD-EQUATION",
+        "prior_decision": "KEEP",
+        "current_coverage": {
+          "practice_items": 3
+        },
+        "learner_priority": "E1_HIGH_TRANSFER",
+        "practice_weight_guidance": "HIGH",
+        "reason_for_reconciliation": "Earlier low-density review kept the current Practice coverage; the new priority review classifies this Entrance10 family as E1/high-weight."
+      },
+      {
+        "domain": "PRACTICE",
+        "family_id": "QUAD-GRAPH",
+        "prior_decision": "ADD_IMPLEMENTED",
+        "current_coverage": {
+          "practice_items": 5,
+          "wave1_added_items": 3
+        },
+        "learner_priority": "E1_HIGH_TRANSFER",
+        "practice_weight_guidance": "HIGH",
+        "reason_for_reconciliation": "Wave 1 implemented the reviewed low-density ADD scope, but the new priority review classifies this family as E1/high-weight; determine whether the completed Wave 1 scope remains sufficient."
+      },
+      {
+        "domain": "PRACTICE",
+        "family_id": "RATIO-MODEL",
+        "prior_decision": "ADD_IMPLEMENTED",
+        "current_coverage": {
+          "practice_items": 4,
+          "wave1_added_items": 4
+        },
+        "learner_priority": "E1_HIGH_TRANSFER",
+        "practice_weight_guidance": "HIGH",
+        "reason_for_reconciliation": "Wave 1 implemented the reviewed low-density ADD scope, but the new priority review classifies this family as E1/high-weight; determine whether the completed Wave 1 scope remains sufficient."
+      }
+    ]
+  },
+  "stable_context": {
+    "high_priority_dense_practice_no_more_count": 13,
+    "high_priority_dense_practice_no_more": [
+      {
+        "family_id": "ID-STRUCTURE",
+        "prior_decision": "NO_MORE",
+        "practice_items": 114,
+        "learner_priority": "P1_HIGH_VALUE_CORE",
+        "practice_weight_guidance": "HIGH",
+        "interpretation": "High priority does not imply more questions. Existing independent review already classified this high-density Practice coverage as NO_MORE."
+      },
+      {
+        "family_id": "GEO-ANGLE-REL",
+        "prior_decision": "NO_MORE",
+        "practice_items": 66,
+        "learner_priority": "P0_FOUNDATION_CRITICAL",
+        "practice_weight_guidance": "HIGH",
+        "interpretation": "High priority does not imply more questions. Existing independent review already classified this high-density Practice coverage as NO_MORE."
+      },
+      {
+        "family_id": "SYS-SOLVE",
+        "prior_decision": "NO_MORE",
+        "practice_items": 56,
+        "learner_priority": "P1_HIGH_VALUE_CORE",
+        "practice_weight_guidance": "HIGH",
+        "interpretation": "High priority does not imply more questions. Existing independent review already classified this high-density Practice coverage as NO_MORE."
+      },
+      {
+        "family_id": "GEO-SYNTHESIS",
+        "prior_decision": "NO_MORE",
+        "practice_items": 55,
+        "learner_priority": "E1_HIGH_TRANSFER",
+        "practice_weight_guidance": "HIGH",
+        "interpretation": "High priority does not imply more questions. Existing independent review already classified this high-density Practice coverage as NO_MORE."
+      },
+      {
+        "family_id": "QUAD-SOLVE",
+        "prior_decision": "NO_MORE",
+        "practice_items": 52,
+        "learner_priority": "P0_FOUNDATION_CRITICAL",
+        "practice_weight_guidance": "HIGH",
+        "interpretation": "High priority does not imply more questions. Existing independent review already classified this high-density Practice coverage as NO_MORE."
+      },
+      {
+        "family_id": "ALG-SIMPLIFY-ADD-SUB",
+        "prior_decision": "NO_MORE",
+        "practice_items": 51,
+        "learner_priority": "P0_FOUNDATION_CRITICAL",
+        "practice_weight_guidance": "HIGH",
+        "interpretation": "High priority does not imply more questions. Existing independent review already classified this high-density Practice coverage as NO_MORE."
+      },
+      {
+        "family_id": "EQ-BASIC",
+        "prior_decision": "NO_MORE",
+        "practice_items": 46,
+        "learner_priority": "P0_FOUNDATION_CRITICAL",
+        "practice_weight_guidance": "HIGH",
+        "interpretation": "High priority does not imply more questions. Existing independent review already classified this high-density Practice coverage as NO_MORE."
+      },
+      {
+        "family_id": "SYS-MODEL",
+        "prior_decision": "NO_MORE",
+        "practice_items": 45,
+        "learner_priority": "P1_HIGH_VALUE_CORE",
+        "practice_weight_guidance": "HIGH",
+        "interpretation": "High priority does not imply more questions. Existing independent review already classified this high-density Practice coverage as NO_MORE."
+      },
+      {
+        "family_id": "RAD-BASIC",
+        "prior_decision": "NO_MORE",
+        "practice_items": 45,
+        "learner_priority": "P0_FOUNDATION_CRITICAL",
+        "practice_weight_guidance": "HIGH",
+        "interpretation": "High priority does not imply more questions. Existing independent review already classified this high-density Practice coverage as NO_MORE."
+      },
+      {
+        "family_id": "SIM-CRITERIA",
+        "prior_decision": "NO_MORE",
+        "practice_items": 44,
+        "learner_priority": "P0_FOUNDATION_CRITICAL",
+        "practice_weight_guidance": "HIGH",
+        "interpretation": "High priority does not imply more questions. Existing independent review already classified this high-density Practice coverage as NO_MORE."
+      },
+      {
+        "family_id": "RIGHT-TRIG-RATIO",
+        "prior_decision": "NO_MORE",
+        "practice_items": 44,
+        "learner_priority": "P1_HIGH_VALUE_CORE",
+        "practice_weight_guidance": "HIGH",
+        "interpretation": "High priority does not imply more questions. Existing independent review already classified this high-density Practice coverage as NO_MORE."
+      },
+      {
+        "family_id": "LINEAR-FUNC",
+        "prior_decision": "NO_MORE",
+        "practice_items": 42,
+        "learner_priority": "P1_HIGH_VALUE_CORE",
+        "practice_weight_guidance": "HIGH",
+        "interpretation": "High priority does not imply more questions. Existing independent review already classified this high-density Practice coverage as NO_MORE."
+      },
+      {
+        "family_id": "RIGHT-PYTHAGORE",
+        "prior_decision": "NO_MORE",
+        "practice_items": 40,
+        "learner_priority": "P0_FOUNDATION_CRITICAL",
+        "practice_weight_guidance": "HIGH",
+        "interpretation": "High priority does not imply more questions. Existing independent review already classified this high-density Practice coverage as NO_MORE."
+      }
+    ],
+    "note": "These rows are context only and are not reopened by default."
+  },
+  "protected_boundaries": {
+    "automatic_question_quota": false,
+    "automatic_authoring": false,
+    "automatic_deletion": false,
+    "change_taxonomy_or_layer": false,
+    "change_readiness_threshold_or_hard_gate": false,
+    "change_mastery_or_history": false,
+    "promote_optional_to_core": false
+  },
+  "review_question": "For each of the 14 queue rows, decide whether the earlier coverage decision remains closed or whether a separate bounded review should be opened in light of the newly reviewed priority classification.",
+  "allowed_decisions": [
+    "KEEP_CLOSED",
+    "REOPEN_SEPARATE_REVIEW",
+    "NEEDS_MORE_EVIDENCE"
+  ],
+  "next_gate": "NOTEBOOKLM_RECONCILIATION_REVIEW"
+}
