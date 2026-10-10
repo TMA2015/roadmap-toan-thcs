@@ -1,6 +1,6 @@
 # NotebookLM Prompt — Skill Priority Matrix R1
 
-Review packet `MATH-SKILL-PRIORITY-MATRIX-R1-20261010` strictly from the selected Sources.
+Review packet `MATH-SKILL-PRIORITY-MATRIX-R1-20261010` strictly from the selected 13 Sources.
 
 Classify all 131 canonical families using the exact vocabularies defined in the packet.
 
