@@ -1,0 +1,36 @@
+{
+  "audit_id": "MATH-WRITTEN-COVERAGE-R1-20261010",
+  "as_of": "2026-10-10",
+  "status": "INVENTORY_ONLY",
+  "purpose": "Audit Written Exercise Library coverage against Skill Taxonomy v2 without imposing a one-family-one-written-exercise quota.",
+  "contract": "docs/collaboration/written-exercise-library-v1.md",
+  "sources": {
+    "taxonomy": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+    "written_library": "docs/assets/data/written-exercises/written-exercise-library-v1.json"
+  },
+  "known_counts": {
+    "exercises": 54,
+    "topics": 22,
+    "unique_problem_types": 54,
+    "kntt_core_exercises": 50,
+    "core_support_exercises": 2,
+    "entrance10_exercises": 2
+  },
+  "rules": {
+    "zero_written_is_review_signal_not_gap": true,
+    "one_problem_type_can_cover_multiple_skills": true,
+    "one_family_does_not_require_one_written_exercise": true,
+    "core_base_first": true,
+    "core_apply_only_when_pedagogically_useful": true,
+    "anchors_not_duplicated": true,
+    "no_readiness_or_mastery_credit": true,
+    "no_new_content_from_inventory_alone": true
+  },
+  "intended_outputs": [
+    "Family-level written evidence counts",
+    "Topic/problem-type inventory",
+    "KNTT-Core zero-written review queue",
+    "Unresolved written crosswalk queue",
+    "Later NotebookLM shortlist for KEEP_NO_WRITTEN / ADD_WRITTEN / NEEDS_MORE_EVIDENCE"
+  ]
+}
