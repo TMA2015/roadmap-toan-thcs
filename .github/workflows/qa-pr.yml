@@ -218,6 +218,9 @@ jobs:
       - name: Validate Written coverage post-Wave1 reconciliation R1
         run: node scripts/test-written-coverage-post-wave1-r1.js
 
+      - name: Validate Readiness coverage audit R1
+        run: node scripts/build-readiness-coverage-audit-r1.js
+
       - name: Validate Written coverage audit R1
         run: node scripts/build-written-coverage-audit-r1.js /tmp/written-coverage-audit-r1.json
 
