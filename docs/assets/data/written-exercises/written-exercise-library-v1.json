@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "catalog_id": "MATH-WRITTEN-EXERCISE-LIBRARY-V1",
-  "snapshot_date": "2026-10-08",
+  "snapshot_date": "2026-10-10",
   "status": "ACTIVE_APPEND_ONLY",
   "auto_readiness_credit": false,
   "self_marking_only": true,
@@ -653,7 +653,11 @@
         "method": "NOTEBOOKLM_R1",
         "packet_id": "MATH-WRITTEN-LIBRARY-PILOT-R1-20261001",
         "receipt": "review-packets/written-exercise-library/04_NOTEBOOKLM_R1_PASS_RECEIPT.md"
-      }
+      },
+      "canonical_family_ids": [
+        "SYS-MODEL",
+        "SYS-SOLVE"
+      ]
     },
     {
       "exercise_id": "WX08-EQI-001",
@@ -5244,7 +5248,833 @@
           "chapter": 9,
           "lesson": "Bài 42 — Kết quả có thể và sự kiện trong trò chơi, thí nghiệm"
         }
+      ],
+      "canonical_family_ids": [
+        "PROB-EVENT"
       ]
+    },
+    {
+      "exercise_id": "WX04-ALG-003",
+      "exercise_kind": "standard",
+      "topic_id": "CT04",
+      "topic_slug": "04-bieu-thuc-dai-so",
+      "topic_title": "Biểu thức đại số",
+      "problem_type_id": "algebra-expand-two-products",
+      "problem_type_title": "Nhân hai đa thức rồi thu gọn biểu thức",
+      "title": "Khai triển đủ hai tích trước khi thu gọn",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        7,
+        8
+      ],
+      "canonical_family_ids": [
+        "ALG-MULTIPLY"
+      ],
+      "skills": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "prerequisites": [
+        "thu-gon-da-thuc",
+        "bo-ngoac-dau"
+      ],
+      "estimated_minutes": 8,
+      "problem_markdown": "Cho\n\n$$A=(2x-3)(x+4)-(x-1)(x+2).$$\n\n1. Khai triển và thu gọn $A$.\n2. Tính giá trị của $A$ tại $x=-2$.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Khai triển tích thứ nhất",
+          "content_markdown": "$$(2x-3)(x+4)=2x^2+8x-3x-12=2x^2+5x-12.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Khai triển tích thứ hai",
+          "content_markdown": "$$(x-1)(x+2)=x^2+2x-x-2=x^2+x-2.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Thu gọn toàn biểu thức",
+          "content_markdown": "Vì tích thứ hai đang bị trừ nên\n\n$$A=2x^2+5x-12-(x^2+x-2)=x^2+4x-10.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Thay số",
+          "content_markdown": "Tại $x=-2$,\n\n$$A=(-2)^2+4(-2)-10=4-8-10=-14.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Khai triển đúng $(2x-3)(x+4)$.",
+          "points": 1
+        },
+        {
+          "criterion": "Khai triển đúng $(x-1)(x+2)$.",
+          "points": 1
+        },
+        {
+          "criterion": "Xử lý đúng dấu trừ và thu gọn được $A=x^2+4x-10$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $A(-2)=-14$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Chỉ nhân hạng tử đầu của mỗi ngoặc.",
+        "Quên đổi dấu toàn bộ tích thứ hai khi bỏ ngoặc.",
+        "Thay $x=-2$ nhưng tính $4x$ thành $+8$."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ04 – Core",
+          "href": "../kien-thuc/04-bieu-thuc-dai-so/core/"
+        },
+        {
+          "label": "Luyện thêm CĐ04",
+          "href": "../kien-thuc/04-bieu-thuc-dai-so/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/04-bieu-thuc-dai-so/bai-tap.md#04-WR-05",
+        "docs/kien-thuc/04-bieu-thuc-dai-so/bai-tap.md#04-WR-06",
+        "docs/kien-thuc/04-bieu-thuc-dai-so/bai-tap.md#04-WR-10"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
+        "receipt": "review-packets/written-implementation-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "exercise_id": "WX11-RAD-003",
+      "exercise_kind": "standard",
+      "topic_id": "CT11",
+      "topic_slug": "11-can-thuc",
+      "topic_title": "Căn thức và biến đổi căn thức",
+      "problem_type_id": "radical-extract-combine",
+      "problem_type_title": "Đưa thừa số ra ngoài dấu căn rồi thu gọn",
+      "title": "Biến đổi từng căn về cùng một căn cơ bản",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        9
+      ],
+      "canonical_family_ids": [
+        "RAD-TRANSFORM"
+      ],
+      "skills": [
+        "khai-phuong-tich",
+        "dua-thua-so-ra"
+      ],
+      "prerequisites": [
+        "can-bac-hai-so-hoc"
+      ],
+      "estimated_minutes": 7,
+      "problem_markdown": "Rút gọn biểu thức\n\n$$A=\\sqrt{72}-\\sqrt{18}+\\sqrt{8}.$$\n\nTrình bày rõ bước biến đổi từng căn thức trước khi cộng trừ.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Biến đổi $\\sqrt{72}$",
+          "content_markdown": "$$\\sqrt{72}=\\sqrt{36\\cdot2}=6\\sqrt2.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Biến đổi $\\sqrt{18}$ và $\\sqrt8$",
+          "content_markdown": "$$\\sqrt{18}=\\sqrt{9\\cdot2}=3\\sqrt2,\\qquad \\sqrt8=\\sqrt{4\\cdot2}=2\\sqrt2.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Thu gọn",
+          "content_markdown": "Do các căn đã đồng dạng,\n\n$$A=6\\sqrt2-3\\sqrt2+2\\sqrt2=5\\sqrt2.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Biến đổi đúng $\\sqrt{72}=6\\sqrt2$.",
+          "points": 1
+        },
+        {
+          "criterion": "Biến đổi đúng $\\sqrt{18}=3\\sqrt2$ và $\\sqrt8=2\\sqrt2$.",
+          "points": 1
+        },
+        {
+          "criterion": "Thu gọn đúng về $5\\sqrt2$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 3,
+      "common_mistakes": [
+        "Tách $72$ thành tích không có thừa số chính phương hữu ích.",
+        "Nhầm $\\sqrt{a+b}=\\sqrt a+\\sqrt b$.",
+        "Cộng trừ hệ số khi các căn chưa được đưa về cùng dạng."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn biến đổi căn thức",
+          "href": "../kien-thuc/11-can-thuc/core/"
+        },
+        {
+          "label": "Luyện thêm CĐ11",
+          "href": "../kien-thuc/11-can-thuc/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/11-can-thuc/bai-tap.md#11-WR-03",
+        "docs/kien-thuc/11-can-thuc/bai-tap.md#11-WR-05",
+        "docs/kien-thuc/11-can-thuc/bai-tap.md#11-WR-06"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
+        "receipt": "review-packets/written-implementation-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "exercise_id": "WX14-TRI-003",
+      "exercise_kind": "standard",
+      "topic_id": "CT14",
+      "topic_slug": "14-tam-giac",
+      "topic_title": "Tam giác",
+      "problem_type_id": "triangle-inequality-angle-order",
+      "problem_type_title": "Bất đẳng thức tam giác kết hợp quan hệ cạnh–góc",
+      "title": "Lọc độ dài có thể xảy ra rồi sắp thứ tự các góc",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        7
+      ],
+      "canonical_family_ids": [
+        "TRI-ANGLE-SIDE"
+      ],
+      "skills": [
+        "bat-dang-thuc-tam-giac",
+        "so-sanh-canh-goc"
+      ],
+      "prerequisites": [
+        "so-sanh-so-nguyen"
+      ],
+      "estimated_minutes": 9,
+      "problem_markdown": "Cho tam giác $ABC$ có $AB=5$, $AC=8$, $BC=x$, trong đó $x$ là số nguyên dương và chu vi tam giác nhỏ hơn $20$.\n\n1. Tìm tất cả giá trị có thể của $x$.\n2. Với $x=6$, sắp xếp $\\angle A,\\angle B,\\angle C$ theo thứ tự tăng dần.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Dùng bất đẳng thức tam giác",
+          "content_markdown": "Ta cần\n\n$$|8-5|<x<8+5,$$\n\nnên\n\n$$3<x<13.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Dùng điều kiện chu vi",
+          "content_markdown": "Chu vi nhỏ hơn $20$ nên\n\n$$5+8+x<20\\Rightarrow x<7.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Kết hợp và dùng tính nguyên",
+          "content_markdown": "Vì $x$ nguyên dương, $3<x<7$, nên\n\n$$x\\in\\{4,5,6\\}.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "So sánh góc khi $x=6$",
+          "content_markdown": "Khi đó $AB=5$, $BC=6$, $AC=8$. Trong một tam giác, cạnh lớn hơn đối diện góc lớn hơn. Vì\n\n$$5<6<8,$$\n\nnên\n\n$$\\angle C<\\angle A<\\angle B.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Lập đúng $3<x<13$ từ bất đẳng thức tam giác.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng điều kiện chu vi để suy ra $x<7$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kết luận đúng $x\\in\\{4,5,6\\}$.",
+          "points": 1
+        },
+        {
+          "criterion": "Với $x=6$, ghép đúng cạnh đối diện và kết luận $\\angle C<\\angle A<\\angle B$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Chỉ kiểm tra $x<13$ mà quên điều kiện $x>3$.",
+        "Quên dùng điều kiện chu vi.",
+        "So sánh góc theo cạnh kề thay vì cạnh đối diện."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ14 – Core",
+          "href": "../kien-thuc/14-tam-giac/core/"
+        },
+        {
+          "label": "Luyện thêm CĐ14",
+          "href": "../kien-thuc/14-tam-giac/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/14-tam-giac/bai-tap.md#14-WR-02",
+        "docs/kien-thuc/14-tam-giac/bai-tap.md#14-WR-03"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
+        "receipt": "review-packets/written-implementation-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "exercise_id": "WX18-TRI-003",
+      "exercise_kind": "standard",
+      "topic_id": "CT18",
+      "topic_slug": "18-he-thuc-luong",
+      "topic_title": "Hệ thức lượng trong tam giác vuông",
+      "problem_type_id": "pythagorean-converse-identify-right-angle",
+      "problem_type_title": "Dùng định lí Pythagore đảo để nhận biết tam giác vuông",
+      "title": "Kiểm tra bình phương ba cạnh trước khi kết luận góc vuông",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        8,
+        9
+      ],
+      "canonical_family_ids": [
+        "RIGHT-PYTHAGORE"
+      ],
+      "skills": [
+        "pythagore-dao",
+        "canh-huyen"
+      ],
+      "prerequisites": [
+        "luy-thua"
+      ],
+      "estimated_minutes": 7,
+      "problem_markdown": "Cho tam giác $ABC$ có\n\n$$AB=9,\\qquad AC=12,\\qquad BC=15.$$\n\nHãy chứng minh tam giác $ABC$ vuông và chỉ rõ góc vuông, cạnh huyền.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Xác định cạnh lớn nhất",
+          "content_markdown": "Cạnh lớn nhất là $BC=15$."
+        },
+        {
+          "step_id": "S2",
+          "title": "So sánh bình phương",
+          "content_markdown": "Ta có\n\n$$AB^2+AC^2=9^2+12^2=81+144=225,$$\n\nvà\n\n$$BC^2=15^2=225.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Dùng định lí Pythagore đảo",
+          "content_markdown": "Vì $AB^2+AC^2=BC^2$, theo định lí Pythagore đảo, tam giác $ABC$ vuông tại $A$."
+        },
+        {
+          "step_id": "S4",
+          "title": "Xác định cạnh huyền",
+          "content_markdown": "Cạnh đối diện góc vuông $A$ là $BC$, nên $BC$ là cạnh huyền."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Xác định đúng $BC$ là cạnh lớn nhất.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $9^2+12^2=15^2=225$.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng định lí Pythagore đảo để kết luận vuông tại $A$.",
+          "points": 1
+        },
+        {
+          "criterion": "Nêu đúng $BC$ là cạnh huyền.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Dùng định lí Pythagore thuận để 'chứng minh' tam giác đã vuông.",
+        "Không kiểm tra cạnh lớn nhất trước khi áp dụng mệnh đề đảo.",
+        "Kết luận sai vị trí góc vuông."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ18 – Core",
+          "href": "../kien-thuc/18-he-thuc-luong/core/"
+        },
+        {
+          "label": "Luyện thêm CĐ18",
+          "href": "../kien-thuc/18-he-thuc-luong/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/18-he-thuc-luong/bai-tap.md#18-WR-01",
+        "docs/kien-thuc/18-he-thuc-luong/bai-tap.md#18-WR-02",
+        "docs/kien-thuc/18-he-thuc-luong/bai-tap.md#18-WR-03"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
+        "receipt": "review-packets/written-implementation-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "exercise_id": "WX16-QUAD-003",
+      "exercise_kind": "standard",
+      "topic_id": "CT16",
+      "topic_slug": "16-tu-giac",
+      "topic_title": "Tứ giác và các hình đặc biệt",
+      "problem_type_id": "quadrilateral-diagonals-rhombus-proof",
+      "problem_type_title": "Từ hai đường chéo cắt nhau tại trung điểm và vuông góc đến hình thoi",
+      "title": "Chứng minh hình bình hành trước rồi mới nâng cấp thành hình thoi",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        8
+      ],
+      "canonical_family_ids": [
+        "QUAD-RHOMBUS"
+      ],
+      "skills": [
+        "hthoi-dau-hieu"
+      ],
+      "prerequisites": [
+        "hbh-dau-hieu"
+      ],
+      "estimated_minutes": 9,
+      "problem_markdown": "Cho tứ giác $ABCD$ có hai đường chéo $AC$ và $BD$ cắt nhau tại $O$. Biết\n\n$$OA=OC,\\qquad OB=OD,\\qquad AC\\perp BD.$$\n\nChứng minh $ABCD$ là hình thoi.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Nhận ra hai đường chéo cắt tại trung điểm",
+          "content_markdown": "Từ $OA=OC$ suy ra $O$ là trung điểm của $AC$; từ $OB=OD$ suy ra $O$ là trung điểm của $BD$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Kết luận hình bình hành",
+          "content_markdown": "Hai đường chéo của tứ giác cắt nhau tại trung điểm của mỗi đường, nên $ABCD$ là hình bình hành."
+        },
+        {
+          "step_id": "S3",
+          "title": "Nâng cấp thành hình thoi",
+          "content_markdown": "Hình bình hành $ABCD$ có hai đường chéo vuông góc $AC\\perp BD$, nên $ABCD$ là hình thoi."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Suy ra đúng $O$ là trung điểm của cả hai đường chéo.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng dấu hiệu để kết luận $ABCD$ là hình bình hành.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng dấu hiệu hình bình hành có hai đường chéo vuông góc để kết luận hình thoi.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 3,
+      "common_mistakes": [
+        "Kết luận hình thoi ngay chỉ vì hai đường chéo vuông góc.",
+        "Dùng hình vẽ để suy ra hai đường chéo cắt tại trung điểm mà không dùng các đẳng thức đã cho.",
+        "Nhầm dấu hiệu của hình thoi với dấu hiệu hình chữ nhật."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ16 – Core",
+          "href": "../kien-thuc/16-tu-giac/core/"
+        },
+        {
+          "label": "Luyện thêm CĐ16",
+          "href": "../kien-thuc/16-tu-giac/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/16-tu-giac/bai-tap.md#16-WR-03",
+        "docs/kien-thuc/16-tu-giac/bai-tap.md#16-WR-06"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
+        "receipt": "review-packets/written-implementation-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "exercise_id": "WX16-QUAD-004",
+      "exercise_kind": "standard",
+      "topic_id": "CT16",
+      "topic_slug": "16-tu-giac",
+      "topic_title": "Tứ giác và các hình đặc biệt",
+      "problem_type_id": "isosceles-trapezoid-base-angles",
+      "problem_type_title": "Nhận biết hình thang cân từ hai góc kề một đáy",
+      "title": "Dùng dấu hiệu hình thang cân rồi tính hai góc còn lại",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        8
+      ],
+      "canonical_family_ids": [
+        "QUAD-TRAPEZOID"
+      ],
+      "skills": [
+        "hinh-thang",
+        "hinh-thang-can"
+      ],
+      "prerequisites": [
+        "goc-trong-cung-phia"
+      ],
+      "estimated_minutes": 8,
+      "problem_markdown": "Cho hình thang $ABCD$ với $AB\\parallel CD$. Biết\n\n$$\\angle A=\\angle B=70^\\circ.$$\n\n1. Chứng minh $ABCD$ là hình thang cân.\n2. Tính $\\angle C$ và $\\angle D$.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Dùng dấu hiệu hình thang cân",
+          "content_markdown": "Trong hình thang $ABCD$, hai góc kề cùng đáy $AB$ bằng nhau: $\\angle A=\\angle B$. Vì vậy $ABCD$ là hình thang cân."
+        },
+        {
+          "step_id": "S2",
+          "title": "Tính góc D",
+          "content_markdown": "Do $AB\\parallel CD$, hai góc trong cùng phía trên cạnh bên $AD$ bù nhau:\n\n$$\\angle A+\\angle D=180^\\circ.$$ \n\nSuy ra $\\angle D=110^\\circ$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Tính góc C",
+          "content_markdown": "Tương tự trên cạnh bên $BC$,\n\n$$\\angle B+\\angle C=180^\\circ,$$\n\nnên $\\angle C=110^\\circ$."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Dùng đúng dấu hiệu hai góc kề một đáy bằng nhau để kết luận hình thang cân.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $\\angle D=110^\\circ$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $\\angle C=110^\\circ$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 3,
+      "common_mistakes": [
+        "Cho rằng mọi hình thang đều có hai góc kề một đáy bằng nhau.",
+        "Nhầm cặp góc trong cùng phía do hai đáy song song.",
+        "Tính góc còn lại bằng $70^\\circ$ thay vì dùng tổng $180^\\circ$."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ16 – Core",
+          "href": "../kien-thuc/16-tu-giac/core/"
+        },
+        {
+          "label": "Luyện thêm CĐ16",
+          "href": "../kien-thuc/16-tu-giac/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/16-tu-giac/bai-tap.md#16-WR-02"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
+        "receipt": "review-packets/written-implementation-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "exercise_id": "WX17-SIM-003",
+      "exercise_kind": "standard",
+      "topic_id": "CT17",
+      "topic_slug": "17-thales-dong-dang",
+      "topic_title": "Thales và tam giác đồng dạng",
+      "problem_type_id": "angle-bisector-segment-split",
+      "problem_type_title": "Tính hai đoạn do đường phân giác chia cạnh đối diện",
+      "title": "Từ tỉ số phân giác đến hai độ dài cụ thể",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        8
+      ],
+      "canonical_family_ids": [
+        "SIM-MID-BISECTOR"
+      ],
+      "skills": [
+        "tinh-chat-duong-phan-giac"
+      ],
+      "prerequisites": [
+        "ti-le-thuc"
+      ],
+      "estimated_minutes": 8,
+      "problem_markdown": "Trong tam giác $ABC$, $AD$ là đường phân giác của $\\angle A$ và $D\\in BC$. Biết\n\n$$AB=6,\\qquad AC=9,\\qquad BC=10.$$\n\nTính $BD$ và $DC$.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Lập tỉ số theo tính chất đường phân giác",
+          "content_markdown": "Theo tính chất đường phân giác trong tam giác,\n\n$$\\frac{BD}{DC}=\\frac{AB}{AC}=\\frac69=\\frac23.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Đặt hai đoạn theo cùng một đơn vị tỉ lệ",
+          "content_markdown": "Đặt $BD=2k$, $DC=3k$ với $k>0$."
+        },
+        {
+          "step_id": "S3",
+          "title": "Dùng tổng độ dài",
+          "content_markdown": "Vì $BD+DC=BC=10$ nên\n\n$$2k+3k=10\\Rightarrow k=2.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kết luận",
+          "content_markdown": "Do đó\n\n$$BD=4,\\qquad DC=6.$$"
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Lập đúng $\\frac{BD}{DC}=\\frac{AB}{AC}=\\frac23$.",
+          "points": 1
+        },
+        {
+          "criterion": "Đặt đúng $BD=2k,DC=3k$ hoặc lập hệ tương đương.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng $BD+DC=10$ để tìm $k=2$.",
+          "points": 1
+        },
+        {
+          "criterion": "Kết luận đúng $BD=4,DC=6$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Đảo tỉ số một phía nhưng không đảo phía còn lại.",
+        "Dùng $AB+AC=BC$.",
+        "Tìm đúng tỉ số nhưng không dùng tổng $BD+DC=BC$."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ17 – Core",
+          "href": "../kien-thuc/17-thales-dong-dang/core/"
+        },
+        {
+          "label": "Luyện thêm CĐ17",
+          "href": "../kien-thuc/17-thales-dong-dang/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/17-thales-dong-dang/bai-tap.md#17-WR-04"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
+        "receipt": "review-packets/written-implementation-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "exercise_id": "WX19-CIR-003",
+      "exercise_kind": "standard",
+      "topic_id": "CT19",
+      "topic_slug": "19-duong-tron",
+      "topic_title": "Đường tròn",
+      "problem_type_id": "circle-central-inscribed-supplementary",
+      "problem_type_title": "Góc ở tâm và hai góc nội tiếp chắn hai cung bù nhau",
+      "title": "Phân biệt cung nhỏ và cung lớn trước khi tính góc nội tiếp",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        9
+      ],
+      "canonical_family_ids": [
+        "CIRCLE-ANGLES"
+      ],
+      "skills": [
+        "goc-o-tam",
+        "goc-noi-tiep"
+      ],
+      "prerequisites": [
+        "so-do-cung"
+      ],
+      "estimated_minutes": 9,
+      "problem_markdown": "Trong đường tròn tâm $O$, $A,B,C,D$ cùng nằm trên đường tròn và\n\n$$\\angle AOB=124^\\circ.$$\n\nĐiểm $C$ nằm trên cung lớn $AB$, còn $D$ nằm trên cung nhỏ $AB$.\n\n1. Tính $\\angle ACB$.\n2. Tính $\\angle ADB$.\n3. Giải thích vì sao hai góc vừa tìm bù nhau.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Xác định cung nhỏ AB",
+          "content_markdown": "Góc ở tâm $\\angle AOB=124^\\circ$ nên cung nhỏ $AB$ có số đo $124^\\circ$."
+        },
+        {
+          "step_id": "S2",
+          "title": "Tính góc ACB",
+          "content_markdown": "Vì $C$ nằm trên cung lớn $AB$, góc nội tiếp $\\angle ACB$ chắn cung nhỏ $AB$. Do đó\n\n$$\\angle ACB=\\frac{124^\\circ}{2}=62^\\circ.$$"
+        },
+        {
+          "step_id": "S3",
+          "title": "Tính góc ADB",
+          "content_markdown": "Cung lớn $AB$ có số đo\n\n$$360^\\circ-124^\\circ=236^\\circ.$$ \n\nVì $D$ nằm trên cung nhỏ $AB$, $\\angle ADB$ chắn cung lớn $AB$, nên\n\n$$\\angle ADB=\\frac{236^\\circ}{2}=118^\\circ.$$"
+        },
+        {
+          "step_id": "S4",
+          "title": "Kiểm tra quan hệ",
+          "content_markdown": "Ta có\n\n$$62^\\circ+118^\\circ=180^\\circ,$$\n\nnên hai góc bù nhau."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Xác định đúng cung nhỏ $AB$ bằng $124^\\circ$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $\\angle ACB=62^\\circ$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng cung lớn $AB=236^\\circ$ và $\\angle ADB=118^\\circ$.",
+          "points": 1
+        },
+        {
+          "criterion": "Giải thích đúng tổng hai góc bằng $180^\\circ$.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Không xét vị trí của đỉnh góc nội tiếp nên chọn nhầm cung bị chắn.",
+        "Lấy góc nội tiếp bằng đúng số đo cung thay vì bằng nửa số đo cung.",
+        "Quên rằng cung lớn bằng $360^\\circ$ trừ cung nhỏ."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ19 – Core",
+          "href": "../kien-thuc/19-duong-tron/core/"
+        },
+        {
+          "label": "Luyện thêm CĐ19",
+          "href": "../kien-thuc/19-duong-tron/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/19-duong-tron/bai-tap.md#19-WR-07"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
+        "receipt": "review-packets/written-implementation-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "exercise_id": "WX19-CIR-004",
+      "exercise_kind": "standard",
+      "topic_id": "CT19",
+      "topic_slug": "19-duong-tron",
+      "topic_title": "Đường tròn",
+      "problem_type_id": "circle-center-perpendicular-chord",
+      "problem_type_title": "Đường vuông góc từ tâm đến dây và quan hệ dây–cung",
+      "title": "Từ khoảng cách tâm–dây đến nửa dây rồi so sánh cung",
+      "learning_layer": "KNTT-Core",
+      "level": "CORE_BASE",
+      "grade_overlay": [
+        9
+      ],
+      "canonical_family_ids": [
+        "CIRCLE-CHORD-ARC"
+      ],
+      "skills": [
+        "day-va-tam",
+        "cung-va-day"
+      ],
+      "prerequisites": [
+        "pythagore"
+      ],
+      "estimated_minutes": 10,
+      "problem_markdown": "Cho đường tròn tâm $O$ bán kính $5$ cm. Dây $AB=8$ cm. Kẻ $OM\\perp AB$ tại $M$.\n\n1. Chứng minh $M$ là trung điểm của $AB$.\n2. Tính $OM$.\n3. Nếu $CD$ là một dây khác của cùng đường tròn và $CD=8$ cm, hãy so sánh hai cung nhỏ $AB$ và $CD$.",
+      "figure_uri": null,
+      "figure_alt": null,
+      "solution_steps": [
+        {
+          "step_id": "S1",
+          "title": "Dùng tính chất đường vuông góc từ tâm đến dây",
+          "content_markdown": "Trong một đường tròn, đường vuông góc kẻ từ tâm đến một dây đi qua trung điểm của dây. Do $OM\\perp AB$, suy ra\n\n$$AM=MB=\\frac{AB}{2}=4\\text{ cm}.$$"
+        },
+        {
+          "step_id": "S2",
+          "title": "Xét tam giác vuông OMA",
+          "content_markdown": "Tam giác $OMA$ vuông tại $M$, với $OA=5$ cm và $AM=4$ cm. Theo Pythagore,\n\n$$OM^2=OA^2-AM^2=25-16=9,$$\n\nnên $OM=3$ cm."
+        },
+        {
+          "step_id": "S3",
+          "title": "So sánh hai cung",
+          "content_markdown": "Trong cùng một đường tròn, hai dây bằng nhau chắn hai cung nhỏ bằng nhau. Vì $AB=CD=8$ cm nên hai cung nhỏ $AB$ và $CD$ bằng nhau."
+        }
+      ],
+      "rubric": [
+        {
+          "criterion": "Dùng đúng tính chất tâm–dây để suy ra $AM=MB=4$ cm.",
+          "points": 1
+        },
+        {
+          "criterion": "Lập đúng hệ thức Pythagore trong tam giác $OMA$.",
+          "points": 1
+        },
+        {
+          "criterion": "Tính đúng $OM=3$ cm.",
+          "points": 1
+        },
+        {
+          "criterion": "Dùng đúng quan hệ dây bằng nhau – cung bằng nhau để so sánh hai cung nhỏ.",
+          "points": 1
+        }
+      ],
+      "rubric_total": 4,
+      "common_mistakes": [
+        "Cho rằng $M$ là trung điểm chỉ vì hình vẽ trông cân.",
+        "Dùng $AB=8$ trực tiếp làm cạnh của tam giác vuông $OMA$ thay vì $AM=4$.",
+        "So sánh cung của hai đường tròn khác nhau; định lí ở đây dùng trong cùng một đường tròn."
+      ],
+      "remediation_links": [
+        {
+          "label": "Ôn CĐ19 – Core",
+          "href": "../kien-thuc/19-duong-tron/core/"
+        },
+        {
+          "label": "Luyện thêm CĐ19",
+          "href": "../kien-thuc/19-duong-tron/bai-tap/"
+        }
+      ],
+      "source_refs": [
+        "docs/kien-thuc/19-duong-tron/bai-tap.md#19-WR-01"
+      ],
+      "academic_review": {
+        "status": "APPROVED",
+        "method": "NOTEBOOKLM_R1",
+        "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
+        "receipt": "review-packets/written-implementation-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      }
     }
   ],
   "extension_policy": [
@@ -5279,7 +6109,7 @@
       "CT23",
       "CT24"
     ],
-    "exercise_count": 54,
+    "exercise_count": 63,
     "batches": [
       {
         "batch_id": "PILOT_R1",
@@ -5345,6 +6175,12 @@
         "batch_id": "G6_WRITTEN_BAI42_R1",
         "packet_id": "MATH-KNTT-G6-WRITTEN-BAI42-R1-20261007",
         "count": 1,
+        "status": "PUBLISHED"
+      },
+      {
+        "batch_id": "WRITTEN_IMPLEMENTATION_W1_R1",
+        "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
+        "count": 9,
         "status": "PUBLISHED"
       }
     ],
