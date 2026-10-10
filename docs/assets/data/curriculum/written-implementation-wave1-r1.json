@@ -1,0 +1,91 @@
+{
+  "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
+  "as_of": "2026-10-10",
+  "status": "CANDIDATE_AWAITING_ACADEMIC_REVIEW",
+  "authorization": {
+    "source_decision": "docs/assets/data/curriculum/written-coverage-priority-r1.json",
+    "clearance": "WRITTEN_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE"
+  },
+  "counts": {
+    "new_written_exercises": 9,
+    "crosswalk_updates": 2,
+    "new_canonical_families": 0
+  },
+  "add_written": [
+    {
+      "family_id": "ALG-MULTIPLY",
+      "topic_id": "CT04",
+      "exercise_id": "WX04-ALG-003",
+      "level": "CORE_BASE"
+    },
+    {
+      "family_id": "CIRCLE-ANGLES",
+      "topic_id": "CT19",
+      "exercise_id": "WX19-CIR-003",
+      "level": "CORE_BASE"
+    },
+    {
+      "family_id": "CIRCLE-CHORD-ARC",
+      "topic_id": "CT19",
+      "exercise_id": "WX19-CIR-004",
+      "level": "CORE_BASE"
+    },
+    {
+      "family_id": "QUAD-RHOMBUS",
+      "topic_id": "CT16",
+      "exercise_id": "WX16-QUAD-003",
+      "level": "CORE_BASE"
+    },
+    {
+      "family_id": "QUAD-TRAPEZOID",
+      "topic_id": "CT16",
+      "exercise_id": "WX16-QUAD-004",
+      "level": "CORE_BASE"
+    },
+    {
+      "family_id": "RAD-TRANSFORM",
+      "topic_id": "CT11",
+      "exercise_id": "WX11-RAD-003",
+      "level": "CORE_BASE"
+    },
+    {
+      "family_id": "RIGHT-PYTHAGORE",
+      "topic_id": "CT18",
+      "exercise_id": "WX18-TRI-003",
+      "level": "CORE_BASE"
+    },
+    {
+      "family_id": "SIM-MID-BISECTOR",
+      "topic_id": "CT17",
+      "exercise_id": "WX17-SIM-003",
+      "level": "CORE_BASE"
+    },
+    {
+      "family_id": "TRI-ANGLE-SIDE",
+      "topic_id": "CT14",
+      "exercise_id": "WX14-TRI-003",
+      "level": "CORE_BASE"
+    }
+  ],
+  "crosswalk_updates": {
+    "WX24-MOD-002": [
+      "SYS-MODEL",
+      "SYS-SOLVE"
+    ],
+    "WX23-PRO-003": [
+      "PROB-EVENT"
+    ]
+  },
+  "frozen": {
+    "keep_no_written_count": 25,
+    "core_apply_not_authorized": true,
+    "anchors_not_duplicated": true
+  },
+  "boundaries": {
+    "no_new_canonical_family": true,
+    "no_readiness_mastery_credit": true,
+    "no_history_regrade": true,
+    "no_one_family_one_written_quota": true
+  },
+  "next_step": "AWAIT_NOTEBOOKLM_CONTENT_REVIEW"
+}
