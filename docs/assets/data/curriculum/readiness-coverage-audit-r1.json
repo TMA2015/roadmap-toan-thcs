@@ -1,0 +1,80 @@
+{
+  "audit_id": "MATH-READINESS-COVERAGE-R1-20261010",
+  "as_of": "2026-10-10",
+  "status": "INVENTORY_COMPLETE_PRIORITY_REVIEW_NOT_YET_RUN",
+  "policy": {
+    "primary_skill_only": true,
+    "supporting_skills_do_not_grant_readiness_coverage": true,
+    "zero_or_thin_count_is_review_signal_only": true,
+    "no_one_family_two_item_quota": true,
+    "no_mastery_or_history_change": true
+  },
+  "summary": {
+    "assessment_files": 21,
+    "readiness_items": 219,
+    "kntt_core_families": 100,
+    "families_with_primary_readiness_evidence": 100,
+    "zero_readiness_families": 0,
+    "exact_topic_skill_mappings": 219,
+    "ambiguous_primary_mappings": 0,
+    "unresolved_primary_mappings": 0,
+    "count_histogram": {
+      "1": 30,
+      "2": 43,
+      "3": 15,
+      "4": 6,
+      "5": 4,
+      "6": 1,
+      "8": 1
+    }
+  },
+  "thin_signal": {
+    "one_item_family_count": 30,
+    "one_item_families": [
+      "ALG-DIV-MONOMIAL",
+      "ALG-EVALUATE",
+      "CIRCLE-ANGLES",
+      "CIRCLE-CHORD-ARC",
+      "CIRCLE-CYCLIC",
+      "EQ-MODEL",
+      "GEO-PLANE-MEASURE",
+      "GEO-REGULAR-SYMM",
+      "GEO-TRANSVERSAL",
+      "NUM-ABS",
+      "NUM-FRACTION-FORM",
+      "NUM-GCD-LCM",
+      "NUM-INTEGER-OPS",
+      "NUM-ORDER",
+      "NUM-PERCENT",
+      "NUM-POWER",
+      "RAD-OPERATE",
+      "RAD-RATIONALIZE",
+      "RATEX-CONCEPT",
+      "RATEX-DOMAIN",
+      "RATEX-EVALUATE",
+      "RATIO-DIRECT",
+      "RATIO-INVERSE",
+      "RIGHT-APPLICATION",
+      "SOLID-PYRAMID",
+      "STAT-ADVANCED-DATA",
+      "STAT-FREQUENCY",
+      "SYS-MODEL",
+      "TRI-PERPBISECTOR",
+      "TRI-SPECIAL"
+    ],
+    "interpretation": "One-item coverage is not automatically a gap. Review should consider conceptual breadth, common misconceptions, grade span, assessment observability, and whether a second independent item adds real evidence."
+  },
+  "next_step": {
+    "task": "INDEPENDENT_READINESS_PRIORITY_REVIEW",
+    "decisions": [
+      "KEEP_AS_IS",
+      "ADD_READINESS",
+      "NEEDS_MORE_EVIDENCE"
+    ],
+    "protected_boundaries": [
+      "Do not add items merely to make every family have two.",
+      "Do not change Readiness thresholds or hard-gate semantics.",
+      "Do not infer mastery from ordinary Practice or Written self-check evidence."
+    ]
+  }
+}
