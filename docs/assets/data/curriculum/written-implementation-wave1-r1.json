@@ -1,0 +1,46 @@
+{
+  "packet_id": "MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010",
+  "as_of": "2026-10-10",
+  "status": "CANDIDATE_AWAITING_ACADEMIC_REVIEW",
+  "authorization": {
+    "source_decision": "docs/assets/data/curriculum/written-coverage-priority-r1.json",
+    "clearance": "WRITTEN_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE"
+  },
+  "scope": {
+    "new_written_items": 9,
+    "crosswalk_updates": 2,
+    "level": "CORE_BASE",
+    "add_written_families": [
+      "ALG-MULTIPLY",
+      "CIRCLE-ANGLES",
+      "CIRCLE-CHORD-ARC",
+      "QUAD-RHOMBUS",
+      "QUAD-TRAPEZOID",
+      "RAD-TRANSFORM",
+      "RIGHT-PYTHAGORE",
+      "SIM-MID-BISECTOR",
+      "TRI-ANGLE-SIDE"
+    ],
+    "crosswalk": {
+      "WX24-MOD-002": [
+        "SYS-MODEL",
+        "SYS-SOLVE"
+      ],
+      "WX23-PRO-003": [
+        "PROB-EVENT"
+      ]
+    }
+  },
+  "anti_inflation": {
+    "one_new_core_base_per_approved_family": true,
+    "core_apply_items": 0,
+    "no_other_written_additions": true,
+    "no_anchor_duplication": true
+  },
+  "protected_boundaries": {
+    "new_canonical_family": false,
+    "readiness_mastery_credit": false,
+    "learner_history_change": false
+  },
+  "next_step": "AUTHOR_CANDIDATES_THEN_NOTEBOOKLM_CONTENT_REVIEW"
+}
