@@ -21,7 +21,8 @@
     "tinh-chat-duong-trung-truc": "Tính chất và dấu hiệu đường trung trực",
     "so-sanh-canh-goc": "Quan hệ cạnh – góc đối diện",
     "bat-dang-thuc-tam-giac": "Bất đẳng thức tam giác",
-    "duong-vuong-goc-duong-xien": "Đường vuông góc và đường xiên"
+    "duong-vuong-goc-duong-xien": "Đường vuông góc và đường xiên",
+    "tam-giac-deu": "Tam giác đều"
   },
   "policy": {
     "feedback": "after_submit",
@@ -221,6 +222,38 @@
       ],
       "answer": 0,
       "explanation": "Tiêu chuẩn tam giác vuông."
+    },
+    {
+      "id": "GEO14READY_011",
+      "type": "mcq",
+      "skill": "tam-giac-deu",
+      "points": 1,
+      "question": "Tam giác \\(ABC\\) cân tại \\(A\\) và \\(\\widehat A=60^\\circ\\). Kết luận nào đúng?",
+      "options": [
+        "Tam giác \\(ABC\\) đều",
+        "Tam giác \\(ABC\\) vuông tại \\(A\\)",
+        "Tam giác \\(ABC\\) chỉ cân, không thể đều",
+        "Chưa đủ dữ kiện để kết luận"
+      ],
+      "answer": 0,
+      "explanation": "Tam giác cân tại \\(A\\) có \\(\\widehat B=\\widehat C\\). Vì tổng ba góc bằng \\(180^\\circ\\) và \\(\\widehat A=60^\\circ\\), suy ra \\(\\widehat B=\\widehat C=60^\\circ\\), nên tam giác đều.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
     }
   ],
   "next_topic": {
