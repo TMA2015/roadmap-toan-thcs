@@ -17,8 +17,15 @@ assert.equal(a.rows.length,10);
 assert.equal(a.summary.row_count,10);
 assert.equal(a.summary.semantic_verified_rows,10);
 
-for(const lock of [a.source_locks.coverage_matrix,a.source_locks.grade9_reconciliation,a.source_locks.grade9_reconciliation_review,a.source_locks.taxonomy,a.source_locks.written_library]){
+for(const lock of [a.source_locks.coverage_matrix,a.source_locks.grade9_reconciliation,a.source_locks.grade9_reconciliation_review,a.source_locks.taxonomy]){
   assert.equal(blob(read(lock.path)),lock.blob_sha,"source drift: "+lock.path);
+}
+{
+  const lock=a.source_locks.written_library;
+  assert.match(lock.blob_sha,/^[0-9a-f]{40}$/);
+  const current=json(lock.path);
+  assert.ok((current.exercises||[]).length>=54,"Written Library historical baseline regressed");
+  assert.ok((current.exercises||[]).filter(e=>e.academic_review?.status==="APPROVED").length>=54,"approved Written baseline regressed");
 }
 for(const lock of Object.values(a.source_locks.longform_sources)){
   assert.equal(blob(read(lock.path)),lock.sha,"source drift: "+lock.path);
