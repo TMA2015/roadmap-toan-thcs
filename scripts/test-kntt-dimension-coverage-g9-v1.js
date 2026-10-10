@@ -7,6 +7,23 @@ const read=p=>fs.readFileSync(p,"utf8");
 const json=p=>JSON.parse(read(p));
 const blob=text=>crypto.createHash("sha1").update("blob "+Buffer.byteLength(text,"utf8")+"\0"+text).digest("hex");
 
+const READINESS_W1_PACKET="MATH-READINESS-IMPLEMENTATION-W1-R1-20261010";
+const READINESS_W1_NEW_LABELS=new Set(["bcnn","rut-gon-phan-so","he-so-ti-le-thuan","giu-dieu-kien-ban-dau","nhan-chia-can","tam-giac-deu","goc-o-tam","tan-suat"]);
+function assertHistoricalAssessmentLock(lock){
+  const currentText=read(lock.path);
+  const current=JSON.parse(currentText);
+  const hasWave1=(current.items||[]).some(q=>q.authoring_review?.packet_id===READINESS_W1_PACKET);
+  if(!hasWave1){
+    assert.equal(blob(currentText),lock.sha,"source drift: "+lock.path);
+    return;
+  }
+  const baseline=JSON.parse(JSON.stringify(current));
+  baseline.items=(baseline.items||[]).filter(q=>q.authoring_review?.packet_id!==READINESS_W1_PACKET);
+  for(const skill of READINESS_W1_NEW_LABELS) delete baseline.skill_labels?.[skill];
+  const baselineText=JSON.stringify(baseline,null,2)+"\n";
+  assert.equal(blob(baselineText),lock.sha,"historical assessment drift beyond approved Readiness append: "+lock.path);
+}
+
 const path="docs/assets/data/curriculum/kntt-dimension-coverage-g9-v1.json";
 const a=json(path);
 assert.equal(a.schema,"kntt-dimension-coverage-audit-v1");
@@ -83,6 +100,8 @@ for(const [topic,ev] of Object.entries(a.source_locks.topic_evidence)){
           }
         }
       }
+    }else if(k==="assessment"){
+      assertHistoricalAssessmentLock(ev[k]);
     }else{
       assert.equal(blob(read(ev[k].path)),ev[k].sha,"source drift: "+topic+" "+k);
     }
