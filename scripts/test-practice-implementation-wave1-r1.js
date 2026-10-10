@@ -20,11 +20,12 @@ assert.equal(scope.status,"ACADEMIC_CONTENT_REVIEW_PASS");
 assert.deepEqual(scope.counts,{readiness_new_items:15,readiness_new_assessments:1,practice_new_items:10,anchor_crosswalk_updates:11,new_canonical_families:0});
 
 const r02=a02.items.filter(x=>x.authoring_review?.packet_id===packet);
+const r03=a03.items.filter(x=>x.authoring_review?.packet_id===packet);
 const r21=a21.items.filter(x=>x.authoring_review?.packet_id===packet);
 assert.equal(r02.length,3);
-assert.equal(a03.items.length,10);
+assert.equal(r03.length,10);
 assert.equal(r21.length,2);
-for(const q of [...r02,...a03.items,...r21]){
+for(const q of [...r02,...r03,...r21]){
  assert.equal(q.authoring_review?.status,"PASS");
  assert.equal(q.authoring_review?.clearance,"PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE");
  assert.equal(q.authoring_review?.method,"INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW");

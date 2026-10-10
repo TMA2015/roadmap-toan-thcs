@@ -47,6 +47,9 @@ for(const name of files){
 
   const topicId="CT"+a.topic.id.slice(0,2);
   for(const item of a.items||[]){
+    // Preserve the independently reviewed R1 inventory as a historical baseline.
+    // Later approved append-only Readiness waves must not rewrite that audit.
+    if(item.authoring_review?.packet_id==="MATH-READINESS-IMPLEMENTATION-W1-R1-20261010") continue;
     totalItems++;
     const exact=mapByLegacy.get(topicId+":"+item.skill);
     let familyId=null;

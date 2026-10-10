@@ -49,11 +49,17 @@ for (const [i,q] of assessment.items.slice(0,10).entries()){
  ok(q.options.length===4 && new Set(q.options).size===4 && q.options[q.answer]===readinessAnswers[i],"readiness answer "+q.id);
  ok(q.explanation,"post-submit explanation "+q.id);
 }
-const readinessWave1=assessment.items.slice(10);
-ok(readinessWave1.length===3,"approved candidate appends exactly three Grade-6 Readiness items");
+const readinessWave1=assessment.items.filter(q=>q.authoring_review?.packet_id==="MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009");
+ok(readinessWave1.length===3,"approved Practice Wave 1 appends exactly three Grade-6 Readiness items");
 for(const q of readinessWave1){
- ok(q.authoring_review?.status==="PASS"&&q.authoring_review?.packet_id==="MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009"&&q.authoring_review?.clearance==="PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE","academic readiness review marker "+q.id);
- ok(q.type==="mcq"&&q.points===1&&assessment.skill_labels[q.skill]&&JSON.stringify(q.curriculum.grades)==="[6]","candidate grade6 readiness "+q.id);
+ ok(q.authoring_review?.status==="PASS"&&q.authoring_review?.clearance==="PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE","historical readiness review marker "+q.id);
+ ok(q.type==="mcq"&&q.points===1&&assessment.skill_labels[q.skill]&&JSON.stringify(q.curriculum.grades)==="[6]","historical candidate grade6 readiness "+q.id);
+}
+const readinessWave2=assessment.items.filter(q=>q.authoring_review?.packet_id==="MATH-READINESS-IMPLEMENTATION-W1-R1-20261010");
+ok(readinessWave2.length===5,"Readiness Implementation Wave 1 appends exactly five Grade-6 items to CĐ02");
+for(const q of readinessWave2){
+ ok(q.authoring_review?.status==="PASS"&&q.authoring_review?.clearance==="READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE","Readiness Wave 1 review marker "+q.id);
+ ok(q.type==="mcq"&&q.points===1&&assessment.skill_labels[q.skill]&&JSON.stringify(q.curriculum.grades)==="[6]","Readiness Wave 1 grade6 item "+q.id);
 }
 ok(lesson.includes("## 📝 8. Luyện tập tiếp theo") && lesson.includes("Core Readiness lớp 6") && !lesson.includes("### Mini quiz"),"lesson gateways and no duplicate static quiz");
 ok(practice.includes("Luyện tự luận & trình bày") && practice.includes('??? example "Xem lời giải"') && practice.includes('??? example "Xem đáp án nhanh'),"written practice has hidden solutions");
@@ -62,4 +68,4 @@ ok(/tự luận/i.test(read("docs/kien-thuc/02-so-va-phep-tinh/tu-kiem-tra-tu-lu
 const panel=classhub.split('data-grade-panel="6"')[1].split('data-grade-panel="7"')[0];
 ok((panel.match(/02-so-va-phep-tinh\/core\//g)||[]).length>=5,"grade6 class hub opens the learning cards");
 ok(runtime.includes('"02-so-va-phep-tinh":{') && runtime.includes("topic02-learning-workspace.json"),"runtime supports topic02");
-console.log("PASS: Topic02 Grade-6 five-card/52-micro/10-readiness baseline is preserved; three bounded candidate Readiness items are append-only and independently reviewed PASS.");
+console.log("PASS: Topic02 Grade-6 five-card/52-micro/10-readiness baseline is preserved; three historical and five new bounded Readiness items are append-only and independently reviewed PASS.");

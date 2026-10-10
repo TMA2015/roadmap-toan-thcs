@@ -23,7 +23,9 @@
     "phan-tram": "Tỉ số phần trăm",
     "luy-thua": "Lũy thừa",
     "quy-dong-so-sanh-phan-so": "Quy đồng và so sánh phân số",
-    "gia-tri-tuyet-doi": "Giá trị tuyệt đối"
+    "gia-tri-tuyet-doi": "Giá trị tuyệt đối",
+    "bcnn": "BCNN",
+    "rut-gon-phan-so": "Rút gọn phân số"
   },
   "policy": {
     "feedback": "after_submit",
@@ -352,6 +354,166 @@
         "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
         "review_date": "2026-10-09",
         "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02G6READY_014",
+      "type": "mcq",
+      "skill": "thu-tu-phep-tinh",
+      "points": 1,
+      "question": "Tính \\(36-2\\times(5+3)\\).",
+      "options": [
+        "20",
+        "272",
+        "50",
+        "19"
+      ],
+      "answer": 0,
+      "explanation": "Tính trong ngoặc trước: \\(5+3=8\\). Sau đó \\(2\\times8=16\\), nên \\(36-16=20\\).",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02G6READY_015",
+      "type": "mcq",
+      "skill": "so-nguyen-phep-tinh",
+      "points": 1,
+      "question": "Tính \\((-6)\\times(-4)\\).",
+      "options": [
+        "24",
+        "-24",
+        "10",
+        "-10"
+      ],
+      "answer": 0,
+      "explanation": "Tích của hai số nguyên âm là số dương và \\(6\\times4=24\\), nên kết quả là \\(24\\).",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02G6READY_016",
+      "type": "mcq",
+      "skill": "bcnn",
+      "points": 1,
+      "question": "Tìm \\(\\operatorname{BCNN}(12,18)\\).",
+      "options": [
+        "36",
+        "6",
+        "72",
+        "216"
+      ],
+      "answer": 0,
+      "explanation": "\\(12=2^2\\cdot3\\), \\(18=2\\cdot3^2\\). Lấy số mũ lớn nhất của mỗi thừa số nguyên tố: \\(\\operatorname{BCNN}=2^2\\cdot3^2=36\\).",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02G6READY_017",
+      "type": "mcq",
+      "skill": "luy-thua",
+      "points": 1,
+      "question": "Tính \\(3^5:3^2\\).",
+      "options": [
+        "\\(3^3=27\\)",
+        "\\(3^7=2187\\)",
+        "\\(3^2=9\\)",
+        "\\(1\\)"
+      ],
+      "answer": 0,
+      "explanation": "Khi chia hai lũy thừa cùng cơ số khác 0, ta trừ số mũ: \\(3^5:3^2=3^{5-2}=3^3=27\\).",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "NUM02G6READY_018",
+      "type": "mcq",
+      "skill": "rut-gon-phan-so",
+      "points": 1,
+      "question": "Rút gọn phân số \\(\\frac{18}{24}\\) đến phân số tối giản.",
+      "options": [
+        "\\(\\frac34\\)",
+        "\\(\\frac9{12}\\)",
+        "\\(\\frac23\\)",
+        "\\(\\frac46\\)"
+      ],
+      "answer": 0,
+      "explanation": "\\(\\operatorname{ƯCLN}(18,24)=6\\). Chia cả tử và mẫu cho 6 được \\(\\frac{18}{24}=\\frac34\\), là phân số tối giản.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
       }
     }
   ],

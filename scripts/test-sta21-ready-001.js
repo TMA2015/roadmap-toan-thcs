@@ -9,12 +9,12 @@ const packet=read("docs/assets/data/collaboration/packets/STA21-READY-GEMINI-AUT
 const errors=[],ok=(test,msg)=>{if(!test)errors.push(msg)};
 const plan=packet.scope.item_plan,items=a.items,skills=new Set(w.cards.filter(c=>["sta21-core-1","sta21-core-2","sta21-core-3","sta21-core-4","sta21-core-5"].includes(c.id)).flatMap(c=>c.skills));
 ok(a.schema===schema.properties.schema.const&&a.assessment_id==="STA21-CORE-READY-V1"&&a.topic.id==="21-thong-ke"&&a.layer==="KNTT-Core","schema identity");
-ok(a.version===1&&items.length===14&&plan.length===12,"version or item count");
+ok(a.version===1&&items.length>=14&&plan.length===12,"version or historical item count");
 ok(a.policy.feedback==="after_submit"&&a.policy.hints===false&&a.policy.tutor===false&&a.policy.hard_gate===false&&a.policy.allow_partial_submit===true,"policy");
 ok(a.readiness.hard_gate===false&&a.readiness.ready_threshold===0.8&&a.readiness.minimum_answered_ratio===0.8,"soft readiness");
 ok(a.readiness.states.join(",")==="READY,REVIEW_RECOMMENDED,MORE_EVIDENCE_NEEDED","readiness states");
 ok(a.next_topic.id==="22-dai-luong-dac-trung","next topic");
-ok(skills.size===9&&Object.keys(a.skill_labels).length===11&&[...skills].every(s=>!!a.skill_labels[s]),"historical nine skills plus two reviewed candidate labels");
+ok(skills.size===9&&Object.keys(a.skill_labels).length>=11&&[...skills].every(s=>!!a.skill_labels[s])&&!!a.skill_labels["tan-suat"],"historical skill labels preserved with approved relative-frequency label");
 ok(m.question_count===132&&m.sources.length===5&&read("docs/assets/data/practice/21-thong-ke-micro-v1.json").questions.length>=20,"readiness/Practice baselines preserved under append-only Micro growth");
 const seen=new Set(),gradeMap={};
 for(const g of [6,7,8]){
@@ -54,11 +54,16 @@ const checks=[
 ];checks.forEach(([value,expected],i)=>ok(value===expected,"answer mismatch at "+(i+1)));
 ok(154-126===28&&eq(500/400*100,125)&&18-12===6&&34-29===5&&eq((45-25)/100*360,72)&&60-40===20&&eq(10/40*100-12/60*100,5),"independent arithmetic");
 ok(items[11].explanation.includes("không đủ để đánh giá toàn diện"),"12 cannot claim overall class quality");
-const candidate=items.slice(12);
-ok(candidate.length===2,"exactly two candidate Grade-9 Readiness items");
+const candidate=items.filter(q=>q.authoring_review?.packet_id==="MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009");
+ok(candidate.length===2,"exactly two historical Grade-9 Readiness items from Practice Wave 1");
 ok(candidate[0].id==="STA21READY_013"&&candidate[0].skill==="bang-tan-so"&&candidate[0].curriculum.grades[0]===9,"frequency candidate");
 ok(candidate[1].id==="STA21READY_014"&&candidate[1].skill==="du-lieu-ghep-nhom"&&candidate[1].curriculum.grades[0]===9,"grouped-data candidate");
-for(const q of candidate) ok(q.authoring_review?.status==="PASS"&&q.authoring_review?.packet_id==="MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009"&&q.authoring_review?.clearance==="PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE","academic review marker "+q.id);
+for(const q of candidate) ok(q.authoring_review?.status==="PASS"&&q.authoring_review?.clearance==="PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE","historical academic review marker "+q.id);
+const readinessW1=items.filter(q=>q.authoring_review?.packet_id==="MATH-READINESS-IMPLEMENTATION-W1-R1-20261010");
+ok(readinessW1.length===2,"exactly two approved Readiness Wave 1 additions for CĐ21");
+ok(readinessW1.some(q=>q.id==="STA21READY_015"&&q.skill==="tan-suat"),"relative-frequency Readiness addition");
+ok(readinessW1.some(q=>q.id==="STA21READY_016"&&q.skill==="du-lieu-ghep-nhom"),"grouped-data Readiness addition");
+for(const q of readinessW1) ok(q.authoring_review?.status==="PASS"&&q.authoring_review?.clearance==="READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE","Readiness Wave 1 academic review marker "+q.id);
 const page=txt("docs/kien-thuc/21-thong-ke/tu-kiem-tra.md"),old=txt("docs/kien-thuc/21-thong-ke/tu-kiem-tra-tu-luan.md"),index=txt("docs/kien-thuc/21-thong-ke/index.md");
 ok(page.includes('data-readiness-check-v1="assets/data/assessment/21-thong-ke-core-v1.json"'),"assessment page mount");
 ok(page.includes("lớp 6–9")&&page.includes("không dùng kết quả toàn bài"),"full-topic age caveat");
@@ -67,4 +72,4 @@ ok(old.includes("Bài tự luyện tự luận cũ")||old.includes("bài tự lu
 ok(index.includes("[Làm Core Readiness CĐ21](tu-kiem-tra.md)"),"lesson CTA");
 ok(!index.includes("được bổ sung ở batch riêng"),"outdated readiness label");
 if(errors.length){console.error(errors.join("\n"));process.exit(1)}
-console.log("PASS: CĐ21 preserves the 12-item baseline and stages exactly two Grade-9 Readiness candidates; old self-test remains separate.");
+console.log("PASS: CĐ21 preserves the 12-item baseline, the two historical Grade-9 additions, and two approved Readiness Wave 1 additions; old self-test remains separate.");
