@@ -11,7 +11,9 @@ ok(data.schema_version==="1.0.0","schema version");
 ok(data.status==="ACTIVE_APPEND_ONLY","active append-only catalog");
 ok(data.auto_readiness_credit===false,"no readiness credit");
 ok(data.self_marking_only===true,"self marking only");
-ok(Array.isArray(data.exercises)&&data.exercises.length===54,"exact fifty-four published items");
+ok(Array.isArray(data.exercises)&&data.exercises.length>=54,"append-only Written library keeps at least 54 historical items");
+const historicalApproved=data.exercises.filter(x=>x.academic_review?.status==="APPROVED");
+ok(historicalApproved.length>=54,"at least 54 academically approved Written items remain");
 
 const expected=[
   "WX07-RAT-001","WX07-RAT-002",
@@ -39,12 +41,13 @@ const expected=[
   "WX09-SYS-003","WX09-SYS-004","WX09-SYS-005","WX09-SYS-006","WX09-SYS-007","WX09-SYS-008",
   "WX02-NUM-003","WX20-GEO-003","WX13-LIN-003","WX23-PRO-003"
 ];
-ok(JSON.stringify(data.exercises.map(x=>x.exercise_id))===JSON.stringify(expected),"exact stable IDs");
+ok(JSON.stringify(data.exercises.slice(0,54).map(x=>x.exercise_id))===JSON.stringify(expected),"historical 54 stable IDs remain in order");
+ok(new Set(data.exercises.map(x=>x.exercise_id)).size===data.exercises.length,"all Written exercise IDs remain unique");
 
 for(const topic of ["CT02","CT03","CT04","CT05","CT06","CT07","CT08","CT09","CT10","CT11","CT12","CT13","CT14","CT15","CT16","CT17","CT18","CT19","CT20","CT21","CT23","CT24"]){
   const items=data.exercises.filter(x=>x.topic_id===topic);
   const expectedCount=topic==="CT09"?8:["CT02","CT13","CT20","CT23"].includes(topic)?3:2;
-  ok(items.length===expectedCount,topic+" expected written item count");
+  ok(items.length>=expectedCount,topic+" historical written item count");
   ok(items.some(x=>x.level==="CORE_BASE"),topic+" CORE_BASE");
   ok(items.some(x=>x.level==="CORE_APPLY"),topic+" CORE_APPLY");
 }
@@ -67,7 +70,9 @@ for(const x of data.exercises){
   ok(sum===x.rubric_total,"rubric total "+x.exercise_id);
   ok(Array.isArray(x.common_mistakes)&&x.common_mistakes.length>=3,"common mistakes "+x.exercise_id);
   ok(Array.isArray(x.remediation_links)&&x.remediation_links.length>=2,"remediation "+x.exercise_id);
-  ok(x.academic_review?.status==="APPROVED","review status "+x.exercise_id);
+  const reviewStatus=x.academic_review?.status;
+  const isWave1Candidate=reviewStatus==="PENDING"&&x.academic_review?.packet_id==="MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010";
+  ok(reviewStatus==="APPROVED"||isWave1Candidate,"review status "+x.exercise_id);
   for(const l of x.remediation_links)ok(/^\.\.\/kien-thuc\//.test(l.href),"relative remediation href "+x.exercise_id);
 }
 
