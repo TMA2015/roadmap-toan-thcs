@@ -1,0 +1,139 @@
+{
+  "packet_id": "MATH-KNTT-G9-GAP-PRIORITY-R1-20261008",
+  "as_of": "2026-10-08",
+  "status": "ACADEMIC_SCOPE_REVIEW_PASS",
+  "inventory": {
+    "path": "docs/assets/data/curriculum/kntt-dimension-coverage-g9-v1.json",
+    "status": "G9_EXISTING_EVIDENCE_INVENTORY_R1"
+  },
+  "reconciliation": {
+    "path": "docs/assets/data/curriculum/kntt-grade9-reconciliation-r4.json",
+    "clearance": "G9_R4_RECONCILIATION_REVIEW_COMPLETE"
+  },
+  "candidates": {
+    "CH7": {
+      "priority": "P0",
+      "dimensions": [
+        "LEARN",
+        "MICRO"
+      ],
+      "targets": [
+        "bang-tan-so",
+        "tan-suat",
+        "du-lieu-ghep-nhom",
+        "STAT-REPRESENT"
+      ],
+      "practice_expansion": false
+    },
+    "CH8": {
+      "priority": "P0",
+      "dimensions": [
+        "LEARN",
+        "MICRO"
+      ],
+      "base_targets": [
+        "phep-thu-ngau-nhien",
+        "khong-gian-mau",
+        "bien-co",
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat"
+      ],
+      "item_review": [
+        "dong-xu-nhieu-lan",
+        "xuc-xac-hai-lan",
+        "so-do-cay",
+        "nhieu-buoc-doc-lap",
+        "khong-hoan-lai"
+      ],
+      "practice_expansion": false
+    }
+  },
+  "item_review_queue": {
+    "CH6": [
+      "bieu-thuc-doi-xung",
+      "dau-nghiem",
+      "lien-he-do-thi"
+    ]
+  },
+  "max_groups_wave1": 2,
+  "protected_boundaries": {
+    "mutate_practice_bank": false,
+    "mutate_written_library": false,
+    "mutate_readiness": false,
+    "create_canonical_skill": false,
+    "create_canonical_family": false,
+    "runtime_taxonomy_change": false,
+    "change_mastery": false,
+    "regrade_learner_history": false
+  },
+  "notebooklm_source_contract": {
+    "selected_source_count": 5,
+    "permanent_sources": [
+      "NotebookLM Math Review Rules v1.2",
+      "Self-Learning Math Master Plan v1.2.1"
+    ],
+    "grade9_s1_sources": [
+      "SGK Toán 9, tập một — Kết nối tri thức với cuộc sống",
+      "SGK Toán 9, tập hai — Kết nối tri thức với cuộc sống"
+    ],
+    "temporary_batch_sources": [
+      "00_NOTEBOOKLM_PACKET_R1.md — NotebookLM Review Packet — Grade 9 Gap Priority / Scope R1"
+    ]
+  },
+  "next_step": {
+    "status": "AUTHORIZED_FOR_WAVE1_CANDIDATE_AUTHORING",
+    "groups": [
+      "CH7",
+      "CH8"
+    ],
+    "content_review_required": true
+  },
+  "independent_review": {
+    "reviewer": "NotebookLM",
+    "verdict": "PASS",
+    "clearance": "G9_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+    "first_repair_wave": [
+      "CH7",
+      "CH8"
+    ],
+    "max_groups_wave1": 2,
+    "chapter7": {
+      "dimensions": [
+        "LEARN",
+        "MICRO"
+      ],
+      "targets": [
+        "bang-tan-so",
+        "tan-suat",
+        "du-lieu-ghep-nhom",
+        "STAT-REPRESENT"
+      ]
+    },
+    "chapter8": {
+      "dimensions": [
+        "LEARN",
+        "MICRO"
+      ],
+      "item_review": {
+        "dong-xu-nhieu-lan": "CORE_LEARN_MICRO",
+        "xuc-xac-hai-lan": "CORE_LEARN_MICRO",
+        "so-do-cay": "CORE_LEARN_MICRO",
+        "nhieu-buoc-doc-lap": "CORE_LEARN_MICRO",
+        "khong-hoan-lai": "CORE_LEARN_MICRO"
+      }
+    },
+    "chapter6_item_review": {
+      "bieu-thuc-doi-xung": "CORE_LEARN_MICRO",
+      "dau-nghiem": "CORE_SUPPORT_ONLY",
+      "lien-he-do-thi": "CORE_SUPPORT_ONLY"
+    },
+    "boundaries": {
+      "practice": "NO_QUOTA_EXPANSION",
+      "written": "NO_QUOTA_EXPANSION",
+      "readiness": "NO_QUOTA_EXPANSION",
+      "new_canonical_skills": "NONE"
+    },
+    "receipt": "review-packets/kntt-g9-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md",
+    "reviewed_on": "2026-10-09"
+  }
+}

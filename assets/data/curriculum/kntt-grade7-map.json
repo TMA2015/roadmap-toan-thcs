@@ -1,0 +1,693 @@
+{
+  "version": 1,
+  "schema": "roadmap-kntt-grade-map-v1",
+  "grade": 7,
+  "book": "Kết nối tri thức",
+  "status": "reviewed",
+  "context_version": "1.0.3",
+  "source_task": "KNTT-MAP-G7-001",
+  "source_verdict": "PASS-WITH-CHANGES",
+  "reviewed_by": "ChatGPT",
+  "design_rules": [
+    "25 Roadmap topics remain the Vertical Spine.",
+    "Grade 7 is an overlay/index, not a separate content tree.",
+    "Each mapping should preserve upstream prerequisites and downstream use.",
+    "Existing Practice Bank skills are reused when they already match the curriculum intent.",
+    "Entrance10 and Specialized-Challenge are not mixed into Grade 7 Core."
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Số hữu tỉ",
+      "lessons": [
+        {
+          "lessons": "Bài 1-3",
+          "core": "Tập hợp số hữu tỉ; cộng, trừ, nhân, chia số hữu tỉ; lũy thừa với số mũ tự nhiên của số hữu tỉ.",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            }
+          ],
+          "existing_skills": [
+            "so-huu-ti-thap-phan",
+            "luy-thua"
+          ],
+          "proposed_skills": [
+            "phep-tinh-so-huu-ti"
+          ],
+          "upstream": [
+            "phep-tinh-phan-so",
+            "so-nguyen-phep-tinh",
+            "thu-tu-phep-tinh"
+          ],
+          "downstream": [
+            "bieu-thuc-dai-so",
+            "ti-le-thuc",
+            "phuong-trinh-bac-nhat"
+          ]
+        },
+        {
+          "lessons": "Bài 4",
+          "core": "Thứ tự thực hiện phép tính; quy tắc chuyển vế trong các bài toán tìm số hữu tỉ chưa biết.",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "08-phuong-trinh-bat-phuong-trinh",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "existing_skills": [
+            "thu-tu-phep-tinh"
+          ],
+          "proposed_skills": [
+            "quy-tac-chuyen-ve"
+          ],
+          "upstream": [
+            "phep-tinh-so-huu-ti"
+          ],
+          "downstream": [
+            "pt-bac-nhat",
+            "bien-doi-pt-nhieu-buoc"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "Số thực",
+      "lessons": [
+        {
+          "lessons": "Bài 5-7",
+          "core": "Số thập phân vô hạn tuần hoàn; số vô tỉ; căn bậc hai số học; tập hợp số thực.",
+          "roadmap": [
+            {
+              "topic_id": "02-so-va-phep-tinh",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "11-can-thuc",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "existing_skills": [
+            "so-huu-ti-thap-phan",
+            "can-bac-hai"
+          ],
+          "proposed_skills": [
+            "so-thap-phan-vo-han-tuan-hoan",
+            "so-vo-ti",
+            "tap-hop-so-thuc"
+          ],
+          "upstream": [
+            "phan-so",
+            "so-huu-ti-thap-phan"
+          ],
+          "downstream": [
+            "can-bac-hai-so-hoc",
+            "so-sanh-can",
+            "ham-so-do-thi"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "Góc và đường thẳng song song",
+      "lessons": [
+        {
+          "lessons": "Bài 8",
+          "core": "Góc ở vị trí đặc biệt và tia phân giác của một góc.",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "existing_skills": [
+            "goc-phu-bu",
+            "goc-doi-dinh",
+            "tia-phan-giac"
+          ],
+          "proposed_skills": [
+            "nhan-dang-goc-dac-biet"
+          ],
+          "upstream": [
+            "phan-loai-goc",
+            "do-goc"
+          ],
+          "downstream": [
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "tong-goc-tam-giac"
+          ]
+        },
+        {
+          "lessons": "Bài 9-10",
+          "core": "Dấu hiệu nhận biết hai đường thẳng song song; tiên đề Euclid; tính chất của hai đường thẳng song song.",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            }
+          ],
+          "existing_skills": [
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "goc-trong-cung-phia",
+            "tinh-chat-song-song",
+            "dau-hieu-song-song"
+          ],
+          "proposed_skills": [
+            "tien-de-euclid"
+          ],
+          "upstream": [
+            "goc-doi-dinh",
+            "goc-phu-bu"
+          ],
+          "downstream": [
+            "tong-goc-tam-giac",
+            "thales",
+            "dong-dang"
+          ]
+        },
+        {
+          "lessons": "Bài 11",
+          "core": "Khái niệm định lí; giả thiết, kết luận; bước đầu chứng minh định lí.",
+          "roadmap": [
+            {
+              "topic_id": "13-goc-va-duong-thang",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "14-tam-giac",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "existing_skills": [],
+          "proposed_skills": [
+            "gia-thiet-ket-luan",
+            "lap-luan-chung-minh-ngan"
+          ],
+          "upstream": [
+            "quan-he-goc",
+            "tinh-chat-song-song"
+          ],
+          "downstream": [
+            "chung-minh-tam-giac",
+            "chung-minh-tu-giac",
+            "chuoi-suy-luan"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "Tam giác bằng nhau",
+      "lessons": [
+        {
+          "lessons": "Bài 12",
+          "core": "Tổng các góc trong một tam giác.",
+          "roadmap": [
+            {
+              "topic_id": "14-tam-giac",
+              "relation": "PRIMARY"
+            }
+          ],
+          "existing_skills": [
+            "tong-goc-tam-giac"
+          ],
+          "proposed_skills": [],
+          "upstream": [
+            "goc-phu-bu",
+            "tinh-chat-song-song"
+          ],
+          "downstream": [
+            "goc-ngoai",
+            "tam-giac-can",
+            "bang-nhau-gcg"
+          ]
+        },
+        {
+          "lessons": "Bài 13-15",
+          "core": "Hai tam giác bằng nhau; các trường hợp c-c-c, c-g-c, g-c-g và các trường hợp bằng nhau của tam giác vuông.",
+          "roadmap": [
+            {
+              "topic_id": "14-tam-giac",
+              "relation": "PRIMARY"
+            }
+          ],
+          "existing_skills": [
+            "bang-nhau-ccc",
+            "bang-nhau-cgc",
+            "bang-nhau-gcg",
+            "bang-nhau-tam-giac-vuong"
+          ],
+          "proposed_skills": [
+            "viet-tuong-ung-tam-giac-bang-nhau"
+          ],
+          "upstream": [
+            "tong-goc-tam-giac",
+            "quan-he-goc"
+          ],
+          "downstream": [
+            "tam-giac-can",
+            "chung-minh-doan-bang-nhau",
+            "chung-minh-goc-bang-nhau",
+            "tu-giac"
+          ]
+        },
+        {
+          "lessons": "Bài 16",
+          "core": "Tam giác cân; đường trung trực của đoạn thẳng và tính chất cách đều hai đầu mút.",
+          "roadmap": [
+            {
+              "topic_id": "14-tam-giac",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "15-duong-dong-quy",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "existing_skills": [
+            "tam-giac-can",
+            "nhan-biet-trung-truc",
+            "cach-deu-dinh"
+          ],
+          "proposed_skills": [
+            "tinh-chat-duong-trung-truc"
+          ],
+          "upstream": [
+            "bang-nhau-tam-giac",
+            "trung-diem"
+          ],
+          "downstream": [
+            "tam-ngoai-tiep",
+            "phan-biet-bon-tam",
+            "chung-minh-hinh-hoc"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "Thu thập và biểu diễn dữ liệu",
+      "lessons": [
+        {
+          "lessons": "Bài 17",
+          "core": "Thu thập và phân loại dữ liệu.",
+          "roadmap": [
+            {
+              "topic_id": "21-thong-ke",
+              "relation": "PRIMARY"
+            }
+          ],
+          "existing_skills": [
+            "du-lieu-phan-loai",
+            "thu-thap-du-lieu"
+          ],
+          "proposed_skills": [],
+          "upstream": [
+            "du-lieu",
+            "bang-thong-ke"
+          ],
+          "downstream": [
+            "chon-bieu-do",
+            "nhan-xet-du-lieu",
+            "dai-luong-dac-trung"
+          ]
+        },
+        {
+          "lessons": "Bài 18-19",
+          "core": "Biểu đồ hình quạt tròn và biểu đồ đoạn thẳng; đọc, biểu diễn và nhận xét dữ liệu.",
+          "roadmap": [
+            {
+              "topic_id": "21-thong-ke",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "03-ti-le-ti-le-thuc",
+              "relation": "SECONDARY"
+            }
+          ],
+          "existing_skills": [
+            "bieu-do-quat-tron",
+            "doc-bieu-do-doan-thang",
+            "chon-bieu-do",
+            "chuyen-bang-bieu-do",
+            "nhan-xet-du-lieu"
+          ],
+          "proposed_skills": [
+            "ve-bieu-do-quat-tron",
+            "ve-bieu-do-doan-thang"
+          ],
+          "upstream": [
+            "ti-so-phan-tram",
+            "doc-bieu-do-cot",
+            "doc-bieu-do-cot-kep"
+          ],
+          "downstream": [
+            "tan-suat",
+            "dai-luong-dac-trung",
+            "thong-ke-thuc-te"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "title": "Tỉ lệ thức và đại lượng tỉ lệ",
+      "lessons": [
+        {
+          "lessons": "Bài 20-21",
+          "core": "Tỉ lệ thức; tính chất dãy tỉ số bằng nhau.",
+          "roadmap": [
+            {
+              "topic_id": "03-ti-le-ti-le-thuc",
+              "relation": "PRIMARY"
+            }
+          ],
+          "existing_skills": [
+            "ti-le-thuc",
+            "tim-x-ti-le-thuc",
+            "day-ti-so-bang-nhau",
+            "chia-theo-ti-le"
+          ],
+          "proposed_skills": [],
+          "upstream": [
+            "ti-so",
+            "phep-tinh-so-huu-ti"
+          ],
+          "downstream": [
+            "ti-le-thuan",
+            "ti-le-nghich",
+            "mo-hinh-ti-le"
+          ]
+        },
+        {
+          "lessons": "Bài 22-23",
+          "core": "Đại lượng tỉ lệ thuận, tỉ lệ nghịch và các bài toán ứng dụng.",
+          "roadmap": [
+            {
+              "topic_id": "03-ti-le-ti-le-thuc",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "existing_skills": [
+            "ti-le-thuan",
+            "he-so-ti-le-thuan",
+            "ti-le-nghich",
+            "he-so-ti-le-nghich",
+            "phan-biet-thuan-nghich",
+            "mo-hinh-ti-le"
+          ],
+          "proposed_skills": [],
+          "upstream": [
+            "ti-le-thuc",
+            "day-ti-so-bang-nhau"
+          ],
+          "downstream": [
+            "ham-so-bac-nhat",
+            "chuyen-dong",
+            "nang-suat",
+            "bai-toan-thuc-te"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "title": "Biểu thức đại số và đa thức một biến",
+      "lessons": [
+        {
+          "lessons": "Bài 24-25",
+          "core": "Biểu thức đại số; giá trị biểu thức; đa thức một biến, hệ số và bậc.",
+          "roadmap": [
+            {
+              "topic_id": "04-bieu-thuc-dai-so",
+              "relation": "PRIMARY"
+            }
+          ],
+          "existing_skills": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "tinh-gia-tri-bieu-thuc"
+          ],
+          "proposed_skills": [
+            "da-thuc-mot-bien"
+          ],
+          "upstream": [
+            "phep-tinh-so-huu-ti",
+            "thu-tu-phep-tinh"
+          ],
+          "downstream": [
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "hang-dang-thuc"
+          ]
+        },
+        {
+          "lessons": "Bài 26-28",
+          "core": "Cộng, trừ, nhân và chia đa thức một biến.",
+          "roadmap": [
+            {
+              "topic_id": "04-bieu-thuc-dai-so",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "05-7-hang-dang-thuc",
+              "relation": "PREREQUISITE"
+            },
+            {
+              "topic_id": "06-phan-tich-da-thuc",
+              "relation": "PREREQUISITE"
+            }
+          ],
+          "existing_skills": [
+            "hang-tu-dong-dang",
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi"
+          ],
+          "proposed_skills": [
+            "chia-da-thuc-mot-bien"
+          ],
+          "upstream": [
+            "da-thuc-mot-bien",
+            "phep-tinh-so-huu-ti"
+          ],
+          "downstream": [
+            "hang-dang-thuc",
+            "phan-tich-da-thuc",
+            "phan-thuc-dai-so"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "title": "Làm quen với biến cố và xác suất của biến cố",
+      "lessons": [
+        {
+          "lessons": "Bài 29",
+          "core": "Làm quen với biến cố; biến cố chắc chắn, không thể và ngẫu nhiên trong các tình huống đơn giản.",
+          "roadmap": [
+            {
+              "topic_id": "23-xac-suat",
+              "relation": "PRIMARY"
+            }
+          ],
+          "existing_skills": [
+            "bien-co",
+            "bien-co-chac-chan-khong-the"
+          ],
+          "proposed_skills": [],
+          "upstream": [
+            "ket-qua-co-the",
+            "xac-suat-thuc-nghiem"
+          ],
+          "downstream": [
+            "xac-suat-co-dien",
+            "khong-gian-mau"
+          ]
+        },
+        {
+          "lessons": "Bài 30",
+          "core": "Làm quen với xác suất của biến cố trong các mô hình đơn giản.",
+          "roadmap": [
+            {
+              "topic_id": "23-xac-suat",
+              "relation": "PRIMARY"
+            }
+          ],
+          "existing_skills": [
+            "xac-suat-co-dien",
+            "kiem-tra-xac-suat"
+          ],
+          "proposed_skills": [
+            "xac-suat-bien-co-don-gian"
+          ],
+          "upstream": [
+            "bien-co",
+            "phan-so",
+            "ti-so"
+          ],
+          "downstream": [
+            "khong-gian-mau",
+            "so-do-cay",
+            "nhieu-buoc-doc-lap"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "title": "Quan hệ giữa các yếu tố trong một tam giác",
+      "lessons": [
+        {
+          "lessons": "Bài 31-33",
+          "core": "Quan hệ góc–cạnh đối diện; đường vuông góc và đường xiên; bất đẳng thức tam giác.",
+          "roadmap": [
+            {
+              "topic_id": "14-tam-giac",
+              "relation": "PRIMARY"
+            }
+          ],
+          "existing_skills": [
+            "so-sanh-canh-goc",
+            "bat-dang-thuc-tam-giac"
+          ],
+          "proposed_skills": [
+            "duong-vuong-goc-duong-xien"
+          ],
+          "upstream": [
+            "tong-goc-tam-giac",
+            "tam-giac-bang-nhau"
+          ],
+          "downstream": [
+            "chung-minh-bat-dang-thuc-hinh-hoc",
+            "hinh-hoc-tong-hop"
+          ]
+        },
+        {
+          "lessons": "Bài 34-35",
+          "core": "Sự đồng quy và tính chất cơ bản của trung tuyến, phân giác, trung trực, đường cao.",
+          "roadmap": [
+            {
+              "topic_id": "15-duong-dong-quy",
+              "relation": "PRIMARY"
+            }
+          ],
+          "existing_skills": [
+            "nhan-biet-trung-tuyen",
+            "trong-tam",
+            "ti-so-trong-tam",
+            "nhan-biet-phan-giac",
+            "nhan-biet-trung-truc",
+            "nhan-biet-duong-cao",
+            "truc-tam",
+            "tam-noi-tiep",
+            "tam-ngoai-tiep",
+            "phan-biet-bon-tam"
+          ],
+          "proposed_skills": [
+            "dong-quy-bon-duong-dac-biet"
+          ],
+          "upstream": [
+            "tam-giac-can",
+            "duong-trung-truc",
+            "tam-giac-bang-nhau"
+          ],
+          "downstream": [
+            "duong-tron",
+            "hinh-hoc-tong-hop",
+            "chung-minh-dong-quy"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "title": "Một số hình khối trong thực tiễn",
+      "lessons": [
+        {
+          "lessons": "Bài 36",
+          "core": "Hình hộp chữ nhật và hình lập phương; yếu tố hình, diện tích xung quanh/toàn phần và thể tích.",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "existing_skills": [
+            "the-tich-hop-chu-nhat",
+            "dien-tich-day",
+            "doi-don-vi-do-luong"
+          ],
+          "proposed_skills": [
+            "nhan-biet-hinh-hop-lap-phuong",
+            "dien-tich-xung-quanh-hop-chu-nhat"
+          ],
+          "upstream": [
+            "dien-tich-hinh-phang",
+            "doi-don-vi"
+          ],
+          "downstream": [
+            "the-tich-lang-tru",
+            "hinh-hoc-do-luong"
+          ]
+        },
+        {
+          "lessons": "Bài 37",
+          "core": "Hình lăng trụ đứng tam giác, tứ giác; yếu tố hình, diện tích xung quanh và thể tích; vận dụng thực tế.",
+          "roadmap": [
+            {
+              "topic_id": "20-hinh-hoc-tong-hop",
+              "relation": "PRIMARY"
+            },
+            {
+              "topic_id": "24-bai-toan-thuc-te",
+              "relation": "SECONDARY"
+            }
+          ],
+          "existing_skills": [
+            "the-tich-lang-tru",
+            "dien-tich-day",
+            "doi-don-vi-do-luong"
+          ],
+          "proposed_skills": [
+            "nhan-biet-lang-tru-dung",
+            "dien-tich-xung-quanh-lang-tru"
+          ],
+          "upstream": [
+            "the-tich-hop-chu-nhat",
+            "chu-vi-dien-tich"
+          ],
+          "downstream": [
+            "hinh-hoc-do-luong",
+            "bai-toan-tong-hop"
+          ]
+        }
+      ]
+    }
+  ],
+  "integration_notes": {
+    "major_correction": "Chương 10 maps PRIMARY to 20-hinh-hoc-tong-hop (measurement/solids), with 24-bai-toan-thuc-te only as SECONDARY application.",
+    "skill_inventory_learning": "Many Gemini-proposed skills already exist. Future relay packets should include relevant existing skill inventories.",
+    "context_mismatch": "Gemini response used Context 1.0.2 and the pre-Vertical-Spine output table; review filled the missing upstream/downstream fields without requesting a rerun."
+  }
+}

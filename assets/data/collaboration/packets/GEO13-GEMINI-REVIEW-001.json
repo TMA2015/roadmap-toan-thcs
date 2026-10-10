@@ -1,0 +1,34 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "GEO13-GEMINI-REVIEW-001",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "INDEPENDENT_PEDAGOGICAL_MATH_REVIEW",
+  "task_id": "GEO-BATCH-13-15-001",
+  "context_version": "1.0.30",
+  "topic": "13-goc-va-duong-thang",
+  "review_requirements": [
+    "Verify all 21 mapped KNTT Core skills against the embedded Grade 6–7 maps.",
+    "Check the 36 new gap-fill Practice Bank items for correctness and age-appropriate wording.",
+    "Check 15 micro-practice and 10 Core Readiness items; every scored item has one assessed skill.",
+    "Check proof-language items for valid claim+reason reasoning and no inference from diagram appearance.",
+    "Check that duong-vuong-goc and vuong-goc-song-song remain Core-Support rather than Core-gating in this rollout.",
+    "Every correction must cite exact existing item ID and exact current prompt quote; prose issues require source_path + heading + exact quote."
+  ],
+  "result_format": {
+    "packet_id": "GEO13-GEMINI-REVIEW-001-RESULT",
+    "verdict": "PASS | PASS_WITH_CHANGES | REVISIONS_REQUIRED",
+    "corrections": [
+      {
+        "source_path": "",
+        "item_id": null,
+        "heading": null,
+        "prompt_quote": "",
+        "type": "MATH_ERROR | PROOF_LOGIC | CURRICULUM_LAYER | DISTRACTOR_AMBIGUITY | PEDAGOGY | LATEX_WEB",
+        "issue": "",
+        "correction": ""
+      }
+    ],
+    "optional_suggestions": []
+  }
+}

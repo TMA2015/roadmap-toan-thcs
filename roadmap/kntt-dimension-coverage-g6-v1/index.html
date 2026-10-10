@@ -1,0 +1,7835 @@
+
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Nền tảng tự học Toán theo lộ trình — kiến thức, luyện tập, AI Tutor và đánh giá tiến độ. Hiện tập trung Toán THCS lớp 6–9.">
+      
+      
+        <meta name="author" content="Self-Learning Math">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/branding/math-app-icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>KNTT Dimension Coverage Audit — Grade 6 v1 - Self-Learning Math</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/site-design-system.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/practice-engine.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/topic-workspace.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/written-exercise-library-v1.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/assessment-engine.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/skill-assessment-pilot-v2.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/skill-map-v2-preview.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/complete-factorization-preview-v2.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/arithmetic-template-preview-v1.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kntt-dimension-coverage-audit-grade-6-v1" class="md-skip">
+          Bỏ qua
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Đầu trang">
+    <a href="../.." title="Self-Learning Math" class="md-header__button md-logo" aria-label="Self-Learning Math" data-md-component="logo">
+      
+  <img src="../../assets/branding/math-app-icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Self-Learning Math
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              KNTT Dimension Coverage Audit — Grade 6 v1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="Chuyển sang giao diện tối"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Chuyển sang giao diện tối" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="Chuyển sang giao diện sáng"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Chuyển sang giao diện sáng" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Tìm kiếm" placeholder="Tìm kiếm" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Tìm kiếm">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Xoá" aria-label="Xoá" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Trang chủ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Roadmap
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../huong-dan/" class="md-tabs__link">
+          
+  
+  
+  Hướng dẫn
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../kien-thuc/" class="md-tabs__link">
+          
+  
+  
+  25 chuyên đề
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../hoc-theo-lop/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Học theo KNTT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../luyen-tap/" class="md-tabs__link">
+          
+  
+  
+  Thư viện bài tập
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ai/" class="md-tabs__link">
+          
+  
+  
+  AI
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Thanh điều hướng" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Self-Learning Math" class="md-nav__button md-logo" aria-label="Self-Learning Math" data-md-component="logo">
+      
+  <img src="../../assets/branding/math-app-icon.svg" alt="logo">
+
+    </a>
+    Self-Learning Math
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trang chủ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Roadmap
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bản đồ chương trình
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../triet-ly-mach-kien-thuc-doc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Triết lý mạch kiến thức dọc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chuan-kntt-va-cac-tang-hoc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chuẩn KNTT & các tầng học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kntt-lop-6-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapping KNTT lớp 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kntt-lop-7-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapping KNTT lớp 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kntt-lop-8-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapping KNTT lớp 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kntt-lop-9-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapping KNTT lớp 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../knowledge-graph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Knowledge Graph v1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blueprint-25-chuyen-de/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blueprint 25 chuyên đề
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ma-tran-kien-thuc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ma trận kiến thức
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hướng dẫn
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hướng dẫn
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hướng dẫn sử dụng hiệu quả
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/lo-trinh-tu-hoc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lộ trình tự học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/nguyen-tac-hoc-moi-chuyen-de/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nguyên tắc học mỗi chuyên đề
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/phuong-phap-tu-hoc-va-danh-gia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phương pháp tự học và tự đánh giá
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/quy-tac-chuyen-chuyen-de/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quy tắc chuyển sang chuyên đề mới
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/cau-truc-chuyen-de/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cấu trúc chuyên đề
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Công cụ nội bộ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Công cụ nội bộ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/thu-nghiem-bang-chung-da-chuyen-de-v5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thử nghiệm theo dõi kỹ năng đa chuyên đề (Beta v5)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/thu-nghiem-bang-chung-ky-nang-v4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thử nghiệm bằng chứng kỹ năng (Beta v4)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/thu-nghiem-danh-gia-ky-nang-v3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thử nghiệm đánh giá kỹ năng (Beta v3)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/thu-nghiem-phan-tich-hoan-toan-v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thử nghiệm phân tích hoàn toàn (Beta v2)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/thu-nghiem-sinh-cau-tuong-tu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thử nghiệm sinh câu số học theo mẫu (Beta)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Collaboration Hub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collaboration/skill-map-v2-preview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skill Map v2 Owner Preview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collaboration/current-handoff/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Handoff hiện hành
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collaboration/task-board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collaboration Task Board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collaboration/capability-benchmark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capability Benchmark
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collaboration/handoff-protocol/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Handoff Protocol
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/quy-trinh-bien-soan-noi-dung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quy trình biên soạn & QA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/chuan-ngan-hang-cau-hoi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chuẩn ngân hàng câu hỏi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/golden-template-hoc-luyen-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Golden Template Học – Luyện – Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/chuan-ngon-ngu-de-toan-v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chuẩn ngôn ngữ đề Toán
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huong-dan/qa-diagram-practice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thư viện hình & QA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    25 chuyên đề
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    25 chuyên đề
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tổng quan 25 chuyên đề
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tổng quan
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tổng quan
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_1" id="__nav_4_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Bản đồ chương trình Toán THCS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    01. Bản đồ chương trình Toán THCS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/01-ban-do-chuong-trinh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/01-ban-do-chuong-trinh/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/01-ban-do-chuong-trinh/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Số và Đại số
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Số và Đại số
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1" id="__nav_4_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Số và phép tính
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    02. Số và phép tính
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/02-so-va-phep-tinh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/02-so-va-phep-tinh/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/02-so-va-phep-tinh/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/02-so-va-phep-tinh/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_2" id="__nav_4_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Tỉ lệ – Tỉ lệ thức
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    03. Tỉ lệ – Tỉ lệ thức
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/03-ti-le-ti-le-thuc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/03-ti-le-ti-le-thuc/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/03-ti-le-ti-le-thuc/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/03-ti-le-ti-le-thuc/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_3" id="__nav_4_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Biểu thức đại số
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    04. Biểu thức đại số
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/04-bieu-thuc-dai-so/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/04-bieu-thuc-dai-so/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/04-bieu-thuc-dai-so/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/04-bieu-thuc-dai-so/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_4" id="__nav_4_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. 7 Hằng đẳng thức
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    05. 7 Hằng đẳng thức
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/05-7-hang-dang-thuc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/05-7-hang-dang-thuc/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/05-7-hang-dang-thuc/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/05-7-hang-dang-thuc/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_5" id="__nav_4_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Phân tích đa thức
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    06. Phân tích đa thức
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/06-phan-tich-da-thuc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/06-phan-tich-da-thuc/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/06-phan-tich-da-thuc/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/06-phan-tich-da-thuc/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_6" id="__nav_4_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Phân thức đại số
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    07. Phân thức đại số
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/07-phan-thuc-dai-so/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/07-phan-thuc-dai-so/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/07-phan-thuc-dai-so/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/07-phan-thuc-dai-so/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_7" id="__nav_4_3_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Phương trình – Bất phương trình
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    08. Phương trình – Bất phương trình
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/08-phuong-trinh-bat-phuong-trinh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/08-phuong-trinh-bat-phuong-trinh/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/08-phuong-trinh-bat-phuong-trinh/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/08-phuong-trinh-bat-phuong-trinh/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_8" id="__nav_4_3_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Hệ phương trình
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    09. Hệ phương trình
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/09-he-phuong-trinh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/09-he-phuong-trinh/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/09-he-phuong-trinh/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/09-he-phuong-trinh/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_9" id="__nav_4_3_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Hàm số và đồ thị
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    10. Hàm số và đồ thị
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/10-ham-so-do-thi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/10-ham-so-do-thi/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/10-ham-so-do-thi/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/10-ham-so-do-thi/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_10" id="__nav_4_3_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Căn thức
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    11. Căn thức
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/11-can-thuc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/11-can-thuc/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/11-can-thuc/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/11-can-thuc/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_11" id="__nav_4_3_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Phương trình bậc hai & Viète
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    12. Phương trình bậc hai & Viète
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/12-phuong-trinh-bac-hai-viete/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/12-phuong-trinh-bac-hai-viete/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/12-phuong-trinh-bac-hai-viete/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/12-phuong-trinh-bac-hai-viete/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hình học
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hình học
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1" id="__nav_4_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Góc và đường thẳng
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    13. Góc và đường thẳng
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/13-goc-va-duong-thang/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/13-goc-va-duong-thang/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/13-goc-va-duong-thang/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/13-goc-va-duong-thang/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_2" id="__nav_4_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Tam giác
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    14. Tam giác
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/14-tam-giac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/14-tam-giac/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/14-tam-giac/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/14-tam-giac/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_3" id="__nav_4_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. Các đường đồng quy
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    15. Các đường đồng quy
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/15-duong-dong-quy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/15-duong-dong-quy/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/15-duong-dong-quy/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/15-duong-dong-quy/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_4" id="__nav_4_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. Tứ giác
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    16. Tứ giác
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/16-tu-giac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/16-tu-giac/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/16-tu-giac/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/16-tu-giac/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_5" id="__nav_4_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17. Thales và đồng dạng
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    17. Thales và đồng dạng
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/17-thales-dong-dang/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/17-thales-dong-dang/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/17-thales-dong-dang/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/17-thales-dong-dang/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_6" id="__nav_4_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18. Hệ thức lượng
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    18. Hệ thức lượng
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/18-he-thuc-luong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/18-he-thuc-luong/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/18-he-thuc-luong/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/18-he-thuc-luong/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_7" id="__nav_4_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    19. Đường tròn
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    19. Đường tròn
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/19-duong-tron/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/19-duong-tron/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/19-duong-tron/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/19-duong-tron/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_8" id="__nav_4_4_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20. Hình học tổng hợp
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    20. Hình học tổng hợp
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/20-hinh-hoc-tong-hop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/20-hinh-hoc-tong-hop/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/20-hinh-hoc-tong-hop/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/20-hinh-hoc-tong-hop/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thống kê – Xác suất
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Thống kê – Xác suất
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5_1" id="__nav_4_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    21. Thống kê
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    21. Thống kê
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/21-thong-ke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/21-thong-ke/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/21-thong-ke/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/21-thong-ke/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/21-thong-ke/tu-kiem-tra-tu-luan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự luận bổ sung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5_2" id="__nav_4_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    22. Đại lượng đặc trưng
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    22. Đại lượng đặc trưng
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/22-dai-luong-dac-trung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/22-dai-luong-dac-trung/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/22-dai-luong-dac-trung/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5_3" id="__nav_4_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    23. Xác suất
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    23. Xác suất
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/23-xac-suat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/23-xac-suat/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/23-xac-suat/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/23-xac-suat/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/23-xac-suat/tu-kiem-tra-tu-luan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự luận bổ sung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tổng hợp – Ứng dụng
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tổng hợp – Ứng dụng
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6_1" id="__nav_4_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    24. Bài toán thực tế
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    24. Bài toán thực tế
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/24-bai-toan-thuc-te/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/24-bai-toan-thuc-te/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ứng dụng theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/24-bai-toan-thuc-te/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/24-bai-toan-thuc-te/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6_2" id="__nav_4_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    25. Tổng hợp & ôn thi vào 10
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    25. Tổng hợp & ôn thi vào 10
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/25-tong-hop-on-thi-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/25-tong-hop-on-thi-10/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ôn thi theo chặng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/25-tong-hop-on-thi-10/bai-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Luyện tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/25-tong-hop-on-thi-10/tu-kiem-tra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự kiểm tra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/25-tong-hop-on-thi-10/kho-bai-mo-neo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kho bài mỏ neo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/25-tong-hop-on-thi-10/bai-toan-kinh-dien/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bài toán kinh điển
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/25-tong-hop-on-thi-10/de-luyen-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Đề luyện 01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/25-tong-hop-on-thi-10/de-luyen-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Đề luyện 02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/25-tong-hop-on-thi-10/de-luyen-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Đề luyện 03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kien-thuc/25-tong-hop-on-thi-10/tu-danh-gia-ky-nang-thi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tự đánh giá kỹ năng thi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hoc-theo-lop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Học theo KNTT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thư viện bài tập
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Thư viện bài tập
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../luyen-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mở thư viện bài tập
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ban-do-ky-nang/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bản đồ kỹ năng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hướng dẫn AI Tutor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Công cụ nội bộ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Công cụ nội bộ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/ai-tutor-core-contract/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Tutor Core Contract
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/tutor-context-adapter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutor Context & Provider Adapter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Mục lục
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-why-this-audit-exists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Why this audit exists
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-grade-6-snapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Grade-6 snapshot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2a-written-placement-r1-reviewed-reconciled-07102026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2A. Written Placement R1 — REVIEWED / RECONCILED 07/10/2026
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2b-written-gap-priority-r1-reviewed-reconciled-07102026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2B. Written Gap Priority R1 — REVIEWED / RECONCILED 07/10/2026
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2c-written-wave-1-r1-reviewed-reconciled-07102026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2C. Written Wave 1 R1 — REVIEWED / RECONCILED 07/10/2026
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2d-written-bai-42-r1-reviewed-reconciled-08102026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2D. Written Bài 42 R1 — REVIEWED / RECONCILED 08/10/2026
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-most-important-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Most important findings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Most important findings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-bai-30-lam-tron-va-uoc-luong-repaired-r1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Bài 30 — Làm tròn và ước lượng — REPAIRED R1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-bai-42-ket-qua-co-the-va-su-kien-repaired-r1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Bài 42 — Kết quả có thể và sự kiện — REPAIRED R1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-bai-45-cong-tru-nhan-chia-so-tu-nhien-va-tinh-chat-repaired-r1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Bài 4–5 — Cộng, trừ, nhân, chia số tự nhiên và tính chất — REPAIRED R1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-bai-8-quan-he-chia-het-va-tinh-chat-repaired-r1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D. Bài 8 — Quan hệ chia hết và tính chất — REPAIRED R1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-bai-27-hai-bai-toan-ve-phan-so-repaired-r1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E. Bài 27 — Hai bài toán về phân số — REPAIRED R1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-bai-3841-grade-6-statistics-repaired-r1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F. Bài 38–41 — Grade-6 statistics — REPAIRED R1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-bai-31-ti-so-phan-tram-existing-multi-topic-evidence-reconciled-r1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G. Bài 31 — Tỉ số, phần trăm — EXISTING MULTI-TOPIC EVIDENCE RECONCILED R1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-bai-13-tap-hop-cach-ghi-va-thu-tu-so-tu-nhien-repaired-r1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H. Bài 1–3 — Tập hợp; cách ghi và thứ tự số tự nhiên — REPAIRED R1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-bai-1112-ucln-bcnn-va-bai-toan-ap-dung-repaired-r1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I. Bài 11–12 — ƯCLN, BCNN và bài toán áp dụng — REPAIRED R1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j-bai-2324-phan-so-bang-nhau-so-sanh-va-hon-so-duong-repaired-r1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J. Bài 23–24 — Phân số bằng nhau, so sánh và hỗn số dương — REPAIRED R1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#k-written-library-placement-gap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        K. Written Library placement gap
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-priority-rows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Priority rows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-full-row-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Full row table
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-interpretation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Interpretation rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-recommended-next-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Recommended next order
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-protected-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Protected boundaries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-shared-skill-re-rank-r1-2026-10-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Shared-skill re-rank R1 — 2026-10-06
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-independent-academic-review-result-2026-10-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Independent academic review result — 2026-10-06
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-topic20-grade-6-placement-re-rank-r1-2026-10-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Topic20 Grade-6 placement re-rank R1 — 2026-10-06
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kntt-dimension-coverage-audit-grade-6-v1">KNTT Dimension Coverage Audit — Grade 6 v1</h1>
+<p><strong>Date:</strong> 2026-10-04<br />
+<strong>State:</strong> ACTIVE EVIDENCE AUDIT · G6 WRITTEN BÀI 42 R1 RECONCILED · NO RUNTIME / MASTERY / READINESS CHANGE
+<strong>Input:</strong> semantically reconciled Grade-6 KNTT matrix (31 rows)</p>
+<h2 id="1-why-this-audit-exists">1. Why this audit exists</h2>
+<p>The KNTT Coverage Matrix is now semantically reconciled for Grades 6–9, but a mapped skill ID does <strong>not</strong> prove the self-learning path is complete.</p>
+<p>This pilot audits six separate dimensions for each Grade-6 KNTT row:</p>
+<ol>
+<li><code>SKILL_MAP</code></li>
+<li><code>LEARN_CONTENT</code></li>
+<li><code>MICRO_PRACTICE</code></li>
+<li><code>PRACTICE_BANK</code></li>
+<li><code>WRITTEN_LIBRARY</code></li>
+<li><code>READINESS</code></li>
+</ol>
+<p>The audit is deliberately conservative. Topic-level evidence is not promoted to lesson-level coverage.</p>
+<h2 id="2-grade-6-snapshot">2. Grade-6 snapshot</h2>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Current result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SKILL_MAP</td>
+<td>31/31 <code>VERIFIED_SEMANTIC</code></td>
+</tr>
+<tr>
+<td>LEARN_CONTENT</td>
+<td>23 VERIFIED_DIRECT; 4 VERIFIED_LESSON_LOCAL; 4 VERIFIED_DIRECT_AND_LOCAL; 0 partial</td>
+</tr>
+<tr>
+<td>MICRO_PRACTICE</td>
+<td>23 VERIFIED_DIRECT; 4 VERIFIED_LESSON_LOCAL; 4 VERIFIED_DIRECT_AND_LOCAL; 0 partial; 0 NONE</td>
+</tr>
+<tr>
+<td>PRACTICE_BANK</td>
+<td>23 TOPIC_SKILL_EVIDENCE; 4 PARTIAL_TOPIC_EVIDENCE; 4 FAMILY_LEVEL_TOPIC_EVIDENCE; 0 NONE</td>
+</tr>
+<tr>
+<td>WRITTEN_LIBRARY</td>
+<td>9 <code>VERIFIED_KNTT_PLACEMENT</code> rows; 22 <code>NONE</code>; 0 candidate-only; 8 canonical Grade-6 Written items</td>
+</tr>
+<tr>
+<td>READINESS</td>
+<td>1 AUTHORIZED_TOPIC_LEVEL; 1 REVIEWED_STRUCTURED_READINESS; 29 NOT_VERIFIED_STRUCTURED</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2a-written-placement-r1-reviewed-reconciled-07102026">2A. Written Placement R1 — REVIEWED / RECONCILED 07/10/2026</h2>
+<p>Independent NotebookLM review passed all three canonical Written placement candidates with clearance <code>G6_WRITTEN_PLACEMENT_R1_CONTENT_REVIEW_COMPLETE</code>.</p>
+<ul>
+<li><code>WX02-NUM-001</code> → <strong>Bài 11–12</strong>. Bài 10 prime factorization is supporting computation only.</li>
+<li><code>WX02-NUM-002</code> → <strong>Bài 31</strong>. Bài 28–29 decimal arithmetic is supporting computation only.</li>
+<li><code>WX23-PRO-001</code> → <strong>Bài 43</strong>. Bài 42 outcome/event language is supporting vocabulary only.</li>
+<li>Exactly <strong>3</strong> canonical <code>kntt_placements</code> were added; no Written item was cloned and no problem, solution, rubric, skill taxonomy, Readiness, Mastery or learner-history semantics changed.</li>
+<li>The two prerequisite-overlap rows (<strong>Bài 10</strong>, <strong>Bài 28–29</strong>) are now <code>NONE</code> in the Written dimension rather than false-positive candidates.</li>
+</ul>
+<p>Review receipt: <code>review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md</code>.</p>
+<blockquote>
+<p>The detailed repair sections below preserve their historical Learn/Micro checkpoint wording. This reconciliation supersedes their earlier Written candidate status where applicable.</p>
+</blockquote>
+<h2 id="2b-written-gap-priority-r1-reviewed-reconciled-07102026">2B. Written Gap Priority R1 — REVIEWED / RECONCILED 07/10/2026</h2>
+<p>Independent NotebookLM review returned <strong>PASS</strong> with clearance <code>G6_WRITTEN_GAP_PRIORITY_R1_REVIEW_COMPLETE</code>.</p>
+<ul>
+<li><strong>Reuse approved:</strong> <code>WX21-STA-001</code> → <strong>Grade 6 · Chapter 9 · Bài 38–41</strong>. The whole task matches bar-chart construction, scale/axes, comparison and data-bounded interpretation.</li>
+<li><strong>Reuse rejected:</strong> <code>WX21-STA-002</code> is <strong>not</strong> promoted to Grade 6 because percentage-growth computation and causal-claim analysis materially exceed the primary Bài 38–41 scope.</li>
+<li><strong>Anti-overplacement confirmed:</strong> <code>WX20-GEO-001</code> remains outside Grade-6 KNTT; <code>WX23-PRO-002</code> remains outside Grade-6 KNTT.</li>
+<li><strong>P0 authoring priorities:</strong> Bài 27; Bài 20; Bài 34–37.</li>
+<li><strong>P1:</strong> Bài 38–41 reuse-first; Bài 42.</li>
+<li><strong>P2:</strong> Bài 30; Bài 23–24.</li>
+<li><strong>Defer by default:</strong> Bài 1–10; Bài 13–19; Bài 25–26; Bài 28–29; Bài 32–33. NONE status alone is not a reason to author a Written item.</li>
+<li><strong>Wave 1 limit:</strong> at most <strong>3 new items</strong>, one high-value anchor per P0 group unless the next review recommends fewer.</li>
+</ul>
+<p>Review receipt: <code>review-packets/kntt-g6-written-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md</code>.</p>
+<p>No Wave-1 exercise text is authored by this reconciliation; new items require their own candidate + independent review cycle.</p>
+<h2 id="2c-written-wave-1-r1-reviewed-reconciled-07102026">2C. Written Wave 1 R1 — REVIEWED / RECONCILED 07/10/2026</h2>
+<p>Independent NotebookLM review returned <strong>PASS</strong> for all three Wave-1 deep Written anchors with clearance <code>G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE</code>.</p>
+<ul>
+<li><code>WX02-NUM-003</code> → <strong>Bài 27 — Hai bài toán về phân số</strong>.</li>
+<li><code>WX20-GEO-003</code> → <strong>Bài 20 — Chu vi và diện tích một số tứ giác đã học</strong>.</li>
+<li><code>WX13-LIN-003</code> → genuine dual placement in <strong>Bài 34–35</strong> and <strong>Bài 36–37</strong>.</li>
+<li>Exactly <strong>3</strong> new canonical items were appended; no existing Written item was cloned or rewritten.</li>
+<li>All three remain self-marked/formative only. No automatic Readiness/Mastery credit, learner-history regrade, new canonical skill, or runtime-taxonomy change.</li>
+<li>Grade-6 Written coverage now contains <strong>7 canonical items with KNTT placements</strong>, covering <strong>8 verified lesson rows</strong> because <code>WX13-LIN-003</code> validly assesses two lesson groups.</li>
+</ul>
+<p>Review receipt: <code>review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md</code>.</p>
+<h2 id="2d-written-bai-42-r1-reviewed-reconciled-08102026">2D. Written Bài 42 R1 — REVIEWED / RECONCILED 08/10/2026</h2>
+<p>Independent NotebookLM review returned <strong>PASS</strong> for <code>WX23-PRO-003</code> with clearance <code>G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE</code>.</p>
+<ul>
+<li><code>WX23-PRO-003</code> → <strong>Grade 6 · Chapter 9 · Bài 42 — Kết quả có thể và sự kiện trong trò chơi, thí nghiệm</strong>.</li>
+<li>The item explicitly distinguishes a concrete outcome from a Grade-6 <strong>sự kiện</strong> and asks the learner to explain why one outcome may satisfy multiple events.</li>
+<li>The Grade-6 term <strong>sự kiện</strong> is preserved; Grade-7 <strong>biến cố</strong> is not introduced.</li>
+<li>The task explicitly stops before Bài 43 probability calculation.</li>
+<li><code>ket-qua-co-the</code> and <code>su-kien-don-gian</code> remain lesson-local under <code>PROB-EVENT</code>; no canonical skill is created.</li>
+<li>Written self-check remains formative only. No Readiness/Mastery credit, learner-history regrade, or runtime-taxonomy change.</li>
+<li>Grade-6 Written coverage is now <strong>8 canonical items with KNTT placements</strong>, covering <strong>9 verified lesson rows</strong>.</li>
+</ul>
+<p>Review receipt: <code>review-packets/kntt-g6-written-bai42-r1/01_NOTEBOOKLM_RESULT_R1.md</code>.</p>
+<h2 id="3-most-important-findings">3. Most important findings</h2>
+<h3 id="a-bai-30-lam-tron-va-uoc-luong-repaired-r1">A. Bài 30 — Làm tròn và ước lượng — REPAIRED R1</h3>
+<p>The original direct-evidence gap is now repaired and independently reviewed.</p>
+<ul>
+<li><code>lam-tron-so</code> remains the reviewed canonical skill under <code>NUM-SETS</code>.</li>
+<li>Learn card <code>num02-g6-core-5</code> now explicitly includes <code>lam-tron-so</code> and teaches the rounding rule plus estimation distinction.</li>
+<li>Grade-6 Micro now contains reviewed items <code>NUM02MICRO_021–023</code>.</li>
+<li>Topic02 Practice now contains reviewed items <code>NUM02V1_121–132</code> in chunk <code>02-so-va-phep-tinh-v1-05.json</code>.</li>
+<li><code>uoc-luong</code> remains lesson-local; no <code>uoc-luong</code> canonical skill was created.</li>
+<li>NotebookLM result: <strong>PASS</strong>, 3/3 Micro + 12/12 Practice, clearance <code>G6_BAI30_ROUNDING_CONTENT_REVIEW_COMPLETE</code>.</li>
+<li>Review receipt: <code>review-packets/kntt-g6-bai30-rounding-r1/01_NOTEBOOKLM_RESULT_R1.md</code>.</li>
+</ul>
+<p>This repair closes <strong>Learn / Micro / Practice direct evidence only</strong>. Written Library remains <code>NONE</code> and Readiness remains <code>NOT_VERIFIED_STRUCTURED</code>; no mastery/readiness claim is inferred.</p>
+<h3 id="b-bai-42-ket-qua-co-the-va-su-kien-repaired-r1">B. Bài 42 — Kết quả có thể và sự kiện — REPAIRED R1</h3>
+<p>The original Grade-6 lesson-local learning-evidence gap is now repaired and independently reviewed.</p>
+<ul>
+<li><code>ket-qua-co-the</code> and <code>su-kien-don-gian</code> remain reviewed lesson-local concepts under family <code>PROB-EVENT</code>.</li>
+<li>Learn card <code>prob23-core-1</code> now explicitly teaches possible outcomes and Grade-6 <code>sự kiện</code>, then clearly bridges to Bài 43 experimental probability.</li>
+<li>Grade-6 Micro now contains reviewed items <code>PRO23MICRO_018–020</code>.</li>
+<li>These items use <code>evidence_role=LESSON_LOCAL_CORE_FORMATIVE</code>, <code>tags.skill=[]</code>, and <code>gates_core=false</code>, so they do not create a new canonical skill counter or grant mastery/readiness credit.</li>
+<li>Grade-6 terminology <code>sự kiện</code> is preserved; it is not replaced by Grade-7 canonical <code>biến cố</code>.</li>
+<li>Practice Bank remains unchanged at 120 questions and is still classified only as <code>FAMILY_LEVEL_TOPIC_EVIDENCE</code> for this row.</li>
+<li>NotebookLM result: <strong>PASS</strong>, 3/3 Micro, terminology/boundary PASS, clearance <code>G6_BAI42_EVENT_OUTCOME_CONTENT_REVIEW_COMPLETE</code>.</li>
+<li>Review receipt: <code>review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md</code>.</li>
+</ul>
+<p>This historical repair closed the <strong>Learn + lesson-local Micro</strong> gap. The later independently reviewed Written Bài 42 R1 now adds <code>WX23-PRO-003</code> as <code>VERIFIED_KNTT_PLACEMENT</code>; CT23 Readiness remains unchanged and no mastery/readiness claim is inferred.</p>
+<h3 id="c-bai-45-cong-tru-nhan-chia-so-tu-nhien-va-tinh-chat-repaired-r1">C. Bài 4–5 — Cộng, trừ, nhân, chia số tự nhiên và tính chất — REPAIRED R1</h3>
+<p>The Grade-6 lesson-local Learn/Micro gap is now repaired under the low-risk source-confirmed review policy.</p>
+<ul>
+<li><code>cong-tru-so-tu-nhien</code> and <code>nhan-chia-so-tu-nhien</code> remain lesson-local concepts under family <code>NUM-INTEGER-OPS</code>, matching the already-reviewed Grade-6 reconciliation.</li>
+<li>Learn card <code>num02-g6-core-1</code> now explicitly teaches natural-number operations/properties together with the existing order-of-operations content.</li>
+<li>Grade-6 Micro now contains <code>NUM02MICRO_024–026</code> for subtraction, multiplication properties, and distributive-property application.</li>
+<li>These items use <code>LESSON_LOCAL_CORE_FORMATIVE</code>, <code>tags.skill=[]</code>, and <code>gates_core=false</code>; no duplicate canonical skill or mastery/readiness credit is created.</li>
+<li>A new NotebookLM round was not required because the taxonomy/family decision had already passed independent review and the added arithmetic is deterministic.</li>
+<li>Practice remains <code>FAMILY_LEVEL_TOPIC_EVIDENCE</code>; Written remains <code>NONE</code>; Readiness remains <code>NOT_VERIFIED_STRUCTURED</code>.</li>
+</ul>
+<p>This repair closes the <strong>Learn + lesson-local Micro</strong> gap only.</p>
+<h3 id="d-bai-8-quan-he-chia-het-va-tinh-chat-repaired-r1">D. Bài 8 — Quan hệ chia hết và tính chất — REPAIRED R1</h3>
+<p>The Grade-6 lesson-local Learn/Micro gap is now repaired under the low-risk source-confirmed review policy.</p>
+<ul>
+<li><code>quan-he-chia-het</code> and <code>tinh-chat-chia-het</code> remain lesson-local concepts under family <code>NUM-DIV-PRIME</code>.</li>
+<li>Learn card <code>num02-g6-core-2</code> now explicitly teaches the divisibility relation and the sum/difference divisibility properties before continuing to divisibility tests, primes, ƯCLN and BCNN.</li>
+<li>Grade-6 Micro now contains <code>NUM02MICRO_027–029</code> for direct divisibility recognition, divisibility of a sum, and divisibility of a difference.</li>
+<li>These items use <code>LESSON_LOCAL_CORE_FORMATIVE</code>, <code>tags.skill=[]</code>, and <code>gates_core=false</code>; no duplicate canonical skill or mastery/readiness credit is created.</li>
+<li>A new NotebookLM round was not required because the lesson/family placement is already semantically reconciled and the added divisibility arithmetic is deterministic.</li>
+<li>Practice remains <code>FAMILY_LEVEL_TOPIC_EVIDENCE</code>; Written remains <code>NONE</code>; Readiness remains <code>NOT_VERIFIED_STRUCTURED</code>.</li>
+</ul>
+<p>This repair closes the <strong>Learn + lesson-local Micro</strong> gap only.</p>
+<h3 id="e-bai-27-hai-bai-toan-ve-phan-so-repaired-r1">E. Bài 27 — Hai bài toán về phân số — REPAIRED R1</h3>
+<p>The Grade-6 lesson-local problem-type Learn/Micro gap is now repaired under the low-risk source-confirmed review policy.</p>
+<ul>
+<li><code>tim-gia-tri-phan-so-cua-so</code> and <code>tim-so-khi-biet-gia-tri-phan-so</code> remain <code>PROBLEM_TYPE</code> evidence under family <code>NUM-FRACTION-OPS</code>, not new canonical skills.</li>
+<li>Learn card <code>num02-g6-core-4</code> now explicitly distinguishes the two inverse problem types: multiply to find a fraction of a known number; divide by the fraction to recover the original number.</li>
+<li>Grade-6 Micro now contains <code>NUM02MICRO_030–032</code>, covering both problem types and one real-world inverse application.</li>
+<li>These items use <code>LESSON_LOCAL_CORE_FORMATIVE</code>, <code>tags.skill=[]</code>, and <code>gates_core=false</code>; no duplicate skill counter or mastery/readiness credit is created.</li>
+<li>A new NotebookLM round was not required because the problem-type/family placement is already semantically reconciled and the added fraction arithmetic is deterministic.</li>
+<li>Practice remains <code>FAMILY_LEVEL_TOPIC_EVIDENCE</code>; Written remains <code>NONE</code>; Readiness remains <code>NOT_VERIFIED_STRUCTURED</code>.</li>
+</ul>
+<p>This repair closes the <strong>Learn + lesson-local problem-type Micro</strong> gap only.</p>
+<h3 id="f-bai-3841-grade-6-statistics-repaired-r1">F. Bài 38–41 — Grade-6 statistics — REPAIRED R1</h3>
+<p>The Learn/Micro gap for the aggregated Grade-6 statistics row is now repaired and independently reviewed.</p>
+<ul>
+<li>Existing Grade-6 direct Micro evidence remains for <code>doc-bieu-do-cot</code> and <code>nhan-xet-du-lieu</code>.</li>
+<li><code>STA21MICRO_016</code> adds direct Grade-6 evidence for <code>thu-thap-du-lieu</code>.</li>
+<li><code>STA21MICRO_017</code> adds direct Grade-6 evidence for <code>doc-bieu-do-cot-kep</code>.</li>
+<li><code>STA21MICRO_018–020</code> add lesson-local formative evidence for <code>du-lieu</code>, <code>bang-thong-ke</code>, and <code>bieu-do-tranh</code>.</li>
+<li>The three local identities remain under <code>STAT-DATA</code>, <code>STAT-REPRESENT</code>, and <code>STAT-CHART-READ</code>; they do not become new canonical learner skills.</li>
+<li>Local items use <code>LESSON_LOCAL_CORE_FORMATIVE</code>, <code>tags.skill=[]</code>, and <code>gates_core=false</code>.</li>
+<li>NotebookLM reviewed both Learn cards, all five new Micro items, both direct skill mappings, all three local boundaries, and the shared Grade-6/Grade-8 card boundary: <strong>PASS</strong>.</li>
+<li>Clearance: <code>G6_STATISTICS_CONTENT_REVIEW_COMPLETE</code>.</li>
+<li>Review receipt: <code>review-packets/kntt-g6-statistics-r1/01_NOTEBOOKLM_RESULT_R1.md</code>.</li>
+<li>Practice Bank remains unchanged at 132 questions.</li>
+<li>Existing STA21 Readiness remains <code>AUTHORIZED_TOPIC_LEVEL</code> for the full Grade 6–8 topic; it is not promoted into a Grade-6-only readiness claim.</li>
+</ul>
+<p>The audit therefore records Learn and Micro as <code>VERIFIED_DIRECT_AND_LOCAL</code>. Practice remains <code>PARTIAL_TOPIC_EVIDENCE</code>, Written remains <code>NONE</code>, and Readiness keeps its existing topic-level scope.</p>
+<h3 id="g-bai-31-ti-so-phan-tram-existing-multi-topic-evidence-reconciled-r1">G. Bài 31 — Tỉ số, phần trăm — EXISTING MULTI-TOPIC EVIDENCE RECONCILED R1</h3>
+<p>No new academic content is required for Bài 31. The previous gap was an <strong>audit blind spot</strong> caused by inspecting only the primary Topic03 workspace.</p>
+<p>The KNTT row already explicitly spans:</p>
+<ul>
+<li>primary <code>03-ti-le-ti-le-thuc</code>;</li>
+<li>secondary <code>02-so-va-phep-tinh</code>;</li>
+<li>secondary <code>24-bai-toan-thuc-te</code>.</li>
+</ul>
+<p>Across the existing deployed sources:</p>
+<ul>
+<li>Topic03 Grade-6 card <code>rat03-core-g6-1</code> directly covers <code>ti-so</code> and <code>ti-so-phan-tram</code>.</li>
+<li>Topic03 Micro directly covers those skills through <code>RAT03MICRO_001</code> and <code>RAT03MICRO_003</code>.</li>
+<li>Topic02 Grade-6 card <code>num02-g6-core-5</code>, placed at <strong>Lớp 6 · Bài 28–31</strong>, directly includes canonical <code>phan-tram</code>.</li>
+<li>Topic02 Micro <code>NUM02MICRO_014–015</code> directly exercises <code>phan-tram</code>, including “25% của 200” and a discount application.</li>
+<li>The existing Grade-6 semantic reconciliation had already resolved historical <code>bai-toan-phan-tram</code> to canonical <code>phan-tram</code> under family <code>NUM-PERCENT</code>.</li>
+</ul>
+<p>Therefore the row is now recorded as:</p>
+<ul>
+<li>Learn = <code>VERIFIED_DIRECT</code>;</li>
+<li>Micro = <code>VERIFIED_DIRECT</code>;</li>
+<li>Practice = <code>TOPIC_SKILL_EVIDENCE</code> when Topic03 and Topic02 manifests are considered together.</li>
+</ul>
+<p>This is an <strong>audit reconciliation only</strong>. It deliberately avoids cloning <code>phan-tram</code> content into Topic03 merely to satisfy a single-primary-topic audit assumption. No NotebookLM round is required because no academic content, answer, taxonomy identity or semantic placement is being authored or changed.</p>
+<p>Written remains <code>CANDIDATE_ONLY_NO_KNTT_PLACEMENT</code>; Readiness remains <code>NOT_VERIFIED_STRUCTURED</code>.</p>
+<h3 id="h-bai-13-tap-hop-cach-ghi-va-thu-tu-so-tu-nhien-repaired-r1">H. Bài 1–3 — Tập hợp; cách ghi và thứ tự số tự nhiên — REPAIRED R1</h3>
+<p>The Grade-6 direct + lesson-local Learn/Micro gap is now repaired under the owner-approved low-risk review policy.</p>
+<ul>
+<li>Existing direct canonical skill <code>tap-hop-so</code> remains unchanged under family <code>NUM-SETS</code>.</li>
+<li>Reviewed lesson-local <code>ghi-so-tu-nhien</code> and <code>thu-tu-so-tu-nhien</code> remain <code>LESSON_LOCAL_CONCEPT</code> identities under <code>NUM-SETS</code>; no duplicate canonical skills are created.</li>
+<li>Learn card <code>num02-g6-core-1</code> now explicitly teaches place value / writing natural numbers and comparison / order of natural numbers while preserving the later Bài 4–7 operation content.</li>
+<li>Grade-6 Micro now adds <code>NUM02MICRO_033–035</code>: place value in 35 407, comparison 58 203 &lt; 58 230, and the successor of 9 999.</li>
+<li>These local items use <code>LESSON_LOCAL_CORE_FORMATIVE</code>, <code>tags.skill=[]</code>, and <code>gates_core=false</code>; they do not create learner skill counters or mastery/readiness credit.</li>
+<li>No new NotebookLM round was required because the family/local placement was already independently reconciled and the new natural-number representation/order answers are deterministic.</li>
+<li>Practice remains <code>PARTIAL_TOPIC_EVIDENCE</code>; Written remains <code>NONE</code>; Readiness remains <code>NOT_VERIFIED_STRUCTURED</code>.</li>
+</ul>
+<p>The row is therefore recorded as Learn=<code>VERIFIED_DIRECT_AND_LOCAL</code> and Micro=<code>VERIFIED_DIRECT_AND_LOCAL</code>.</p>
+<h3 id="i-bai-1112-ucln-bcnn-va-bai-toan-ap-dung-repaired-r1">I. Bài 11–12 — ƯCLN, BCNN và bài toán áp dụng — REPAIRED R1</h3>
+<p>The Grade-6 direct + problem-type Learn/Micro gap is now repaired under the owner-approved low-risk review policy.</p>
+<ul>
+<li>Existing direct canonical skills <code>ucln</code> and <code>bcnn</code> remain unchanged under family <code>NUM-GCD-LCM</code>.</li>
+<li>Reviewed <code>bai-toan-ucln-bcnn</code> remains a <code>PROBLEM_TYPE</code> under <code>NUM-GCD-LCM</code>, not a new canonical skill.</li>
+<li>Learn card <code>num02-g6-core-2</code> now explicitly teaches the modelling distinction: equal-group / maximum common partition problems → ƯCLN; earliest repeated simultaneous cycle / smallest common multiple problems → BCNN.</li>
+<li>Existing direct Micro remains for <code>ucln</code> and <code>bcnn</code>.</li>
+<li>Grade-6 Micro now adds <code>NUM02MICRO_036–038</code>: one maximum equal-group problem, one repeated-cycle problem, and one model-selection item.</li>
+<li>These local items use <code>LESSON_LOCAL_CORE_FORMATIVE</code>, <code>tags.skill=[]</code>, and <code>gates_core=false</code>; they do not create learner skill counters or mastery/readiness credit.</li>
+<li>No new NotebookLM round was required because the problem-type/family placement was already independently reconciled and the new GCD/LCM applications are deterministic.</li>
+<li>Practice remains <code>PARTIAL_TOPIC_EVIDENCE</code>; Written remains <code>CANDIDATE_ONLY_NO_KNTT_PLACEMENT</code>; Readiness remains <code>NOT_VERIFIED_STRUCTURED</code>.</li>
+</ul>
+<p>The row is therefore recorded as Learn=<code>VERIFIED_DIRECT_AND_LOCAL</code> and Micro=<code>VERIFIED_DIRECT_AND_LOCAL</code>.</p>
+<h3 id="j-bai-2324-phan-so-bang-nhau-so-sanh-va-hon-so-duong-repaired-r1">J. Bài 23–24 — Phân số bằng nhau, so sánh và hỗn số dương — REPAIRED R1</h3>
+<p>The Grade-6 direct + lesson-local Learn/Micro gap is now repaired under the owner-approved low-risk review policy.</p>
+<ul>
+<li>Existing direct canonical skills <code>rut-gon-phan-so</code> and <code>quy-dong-so-sanh-phan-so</code> remain unchanged.</li>
+<li>Reviewed <code>phan-so-bang-nhau</code> and <code>hon-so-duong</code> remain <code>LESSON_LOCAL_CONCEPT</code> identities under family <code>NUM-FRACTION-FORM</code>; no duplicate canonical skills are created.</li>
+<li>Learn card <code>num02-g6-core-4</code> now explicitly teaches equivalent fractions and conversion between positive mixed numbers and improper fractions while preserving the later fraction-operation and Bài 27 content.</li>
+<li>Existing direct Micro remains for fraction reduction and comparison.</li>
+<li>Grade-6 Micro now adds <code>NUM02MICRO_039–041</code>: one equivalent-fraction item and two mixed-number conversion items.</li>
+<li>These local items use <code>LESSON_LOCAL_CORE_FORMATIVE</code>, <code>tags.skill=[]</code>, and <code>gates_core=false</code>; they do not create learner skill counters or mastery/readiness credit.</li>
+<li>No new NotebookLM round was required because the local/family placement was already independently reconciled and the new representation conversions are deterministic.</li>
+<li>Practice remains <code>PARTIAL_TOPIC_EVIDENCE</code>; Written remains <code>NONE</code>; Readiness remains <code>NOT_VERIFIED_STRUCTURED</code>.</li>
+</ul>
+<p>The row is therefore recorded as Learn=<code>VERIFIED_DIRECT_AND_LOCAL</code> and Micro=<code>VERIFIED_DIRECT_AND_LOCAL</code>.</p>
+<h3 id="k-written-library-placement-gap">K. Written Library placement gap</h3>
+<p>The current shared Written Exercise Library contains <strong>50 reviewed exercises</strong>, but <strong>0 exercises currently have <code>kntt_placements</code></strong>.</p>
+<p>Five Grade-6 rows have plausible skill-matched candidates, but they are intentionally classified only as:</p>
+<p><code>CANDIDATE_ONLY_NO_KNTT_PLACEMENT</code></p>
+<p>until the library adopts the placement contract. Topic + grade overlay must not be treated as true KNTT lesson placement.</p>
+<h2 id="4-priority-rows">4. Priority rows</h2>
+<ul>
+<li><strong>Ch.3 Bài 13–17 — Số nguyên:</strong> all clear lesson-local/family gaps are now closed. These rows remain <code>PARTIAL_SHARED_SKILL</code> / <code>PARTIAL</code> because several KNTT lessons share the broad canonical <code>so-nguyen-phep-tinh</code>; they now require a re-ranking/reconciliation pass before any new content is authored.</li>
+</ul>
+<h2 id="5-full-row-table">5. Full row table</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Chapter</th>
+<th>Lesson</th>
+<th>Learn</th>
+<th>Micro</th>
+<th>Practice</th>
+<th>Written</th>
+<th>Readiness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Bài 1-3</td>
+<td>VERIFIED_DIRECT_AND_LOCAL</td>
+<td>VERIFIED_DIRECT_AND_LOCAL</td>
+<td>PARTIAL_TOPIC_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Bài 4-5</td>
+<td>VERIFIED_LESSON_LOCAL</td>
+<td>VERIFIED_LESSON_LOCAL</td>
+<td>FAMILY_LEVEL_TOPIC_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Bài 6</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Bài 7</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>Bài 8</td>
+<td>VERIFIED_LESSON_LOCAL</td>
+<td>VERIFIED_LESSON_LOCAL</td>
+<td>FAMILY_LEVEL_TOPIC_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>Bài 9</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>Bài 10</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>Bài 11-12</td>
+<td>VERIFIED_DIRECT_AND_LOCAL</td>
+<td>VERIFIED_DIRECT_AND_LOCAL</td>
+<td>PARTIAL_TOPIC_EVIDENCE</td>
+<td>VERIFIED_KNTT_PLACEMENT</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>Bài 13</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>Bài 14</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>Bài 15</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>Bài 16</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>Bài 17</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td>Bài 18</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td>Bài 19</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td>Bài 20</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>VERIFIED_KNTT_PLACEMENT</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td>Bài 21</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td>Bài 22</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td>Bài 23-24</td>
+<td>VERIFIED_DIRECT_AND_LOCAL</td>
+<td>VERIFIED_DIRECT_AND_LOCAL</td>
+<td>PARTIAL_TOPIC_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td>Bài 25-26</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td>Bài 27</td>
+<td>VERIFIED_LESSON_LOCAL</td>
+<td>VERIFIED_LESSON_LOCAL</td>
+<td>FAMILY_LEVEL_TOPIC_EVIDENCE</td>
+<td>VERIFIED_KNTT_PLACEMENT</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td>Bài 28-29</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td>Bài 30</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td>Bài 31</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>VERIFIED_KNTT_PLACEMENT</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td>Bài 32</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td>Bài 33</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>NONE</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td>Bài 34-35</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>VERIFIED_KNTT_PLACEMENT</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td>Bài 36-37</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>VERIFIED_KNTT_PLACEMENT</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td>Bài 38-41</td>
+<td>VERIFIED_DIRECT_AND_LOCAL</td>
+<td>VERIFIED_DIRECT_AND_LOCAL</td>
+<td>PARTIAL_TOPIC_EVIDENCE</td>
+<td>VERIFIED_KNTT_PLACEMENT</td>
+<td>AUTHORIZED_TOPIC_LEVEL</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td>Bài 42</td>
+<td>VERIFIED_LESSON_LOCAL</td>
+<td>VERIFIED_LESSON_LOCAL</td>
+<td>FAMILY_LEVEL_TOPIC_EVIDENCE</td>
+<td>VERIFIED_KNTT_PLACEMENT</td>
+<td>NOT_VERIFIED_STRUCTURED</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td>Bài 43</td>
+<td>VERIFIED_DIRECT</td>
+<td>VERIFIED_DIRECT</td>
+<td>TOPIC_SKILL_EVIDENCE</td>
+<td>VERIFIED_KNTT_PLACEMENT</td>
+<td>REVIEWED_STRUCTURED_READINESS</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-interpretation-rules">6. Interpretation rules</h2>
+<ul>
+<li><strong>VERIFIED_DIRECT</strong> = explicit structured evidence matches the row's direct canonical skill(s).</li>
+<li><strong>VERIFIED_LESSON_LOCAL</strong> = explicit structured evidence directly covers reviewed lesson-local concepts or problem types without creating or crediting a canonical assessed skill.</li>
+<li><strong>VERIFIED_DIRECT_AND_LOCAL</strong> = all direct canonical skill demands for the row are explicitly evidenced and the reviewed lesson-local concepts/representations are also explicitly evidenced without creating extra canonical skills.</li>
+<li><strong>PARTIAL_LOCAL_OR_FAMILY</strong> = lesson exists, but part of its identity remains family/lesson-local rather than directly evidenced.</li>
+<li><strong>PARTIAL_SHARED_SKILL</strong> = a broad canonical skill spans multiple KNTT lessons, so evidence cannot distinguish the exact lesson demand.</li>
+<li><strong>PARTIAL_PLACEMENT</strong> = content exists but KNTT placement is broad (for example “Lớp 6–9”) rather than exact.</li>
+<li><strong>TOPIC_SKILL_EVIDENCE</strong> = Practice Bank contains the skill at topic level; this does not prove Grade-6 lesson placement.</li>
+<li><strong>CANDIDATE_ONLY_NO_KNTT_PLACEMENT</strong> = written exercise matches grade/topic/skill but lacks canonical KNTT placement metadata.</li>
+<li><strong>NOT_VERIFIED_STRUCTURED</strong> = this audit did not find an explicit structured readiness asset; it does not claim no informal self-check exists anywhere on the site.</li>
+</ul>
+<h2 id="7-recommended-next-order">7. Recommended next order</h2>
+<ol>
+<li>Re-rank the <code>PARTIAL_SHARED_SKILL</code> rows Bài 13–17 and Bài 25–26 before authoring more Grade-6 content; distinguish true content gaps from intentionally shared canonical skills.</li>
+<li>Reconcile the <code>PARTIAL_PLACEMENT</code> rows Bài 18–22 against exact KNTT placement before duplicating existing geometry content.</li>
+<li>Migrate the Shared Written Exercise Library toward canonical <code>kntt_placements</code> before claiming KNTT written coverage.</li>
+<li>Only after Learn/Practice gaps are reconciled should Readiness expansion be considered.</li>
+<li>Keep Bài 30 Written/Readiness dimensions open until they receive their own evidence; the R1 repair must not be promoted into a mastery/readiness claim.</li>
+<li>Keep Bài 42 Practice at family/topic level and Readiness unchanged; the reviewed Written anchor must remain formative and must not be promoted into a canonical skill or mastery/readiness claim.</li>
+<li>Keep Bài 4–5 Practice at family/topic level and Readiness open; the source-confirmed lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.</li>
+<li>Keep Bài 8 Practice at family/topic level and Readiness open; the source-confirmed lesson-local repair must not be promoted into a canonical skill or mastery/readiness claim.</li>
+<li>Keep Bài 27 Practice at family/topic level and Readiness open; its problem-type evidence must not be promoted into canonical skills or mastery/readiness credit.</li>
+<li>Keep Bài 38–41 Practice at topic-level partial evidence and keep STA21 Readiness at its existing Grade 6–8 topic scope; the reviewed Learn/Micro repair must not be promoted into a Grade-6-only readiness claim.12. Keep Bài 11–12 Practice at topic-level partial evidence; Written remains candidate-only without KNTT placement and Readiness remains open. The problem-type repair must not be promoted into a new canonical skill or mastery/readiness credit.</li>
+<li>Keep Bài 23–24 Practice at topic-level partial evidence and keep Written/Readiness open; the equivalent-fraction/mixed-number lesson-local repair must not be promoted into new canonical skills or mastery/readiness credit.</li>
+</ol>
+<h2 id="8-protected-boundaries">8. Protected boundaries</h2>
+<p>This audit does not:
+- generate new content;
+- create/rename taxonomy identities;
+- alter Practice or Readiness scoring;
+- migrate learner history;
+- activate taxonomy runtime;
+- grant mastery/readiness credit;
+- change learner-facing UI.</p>
+<ol>
+<li>Keep Bài 1–3 Practice at topic-level partial evidence and keep Written/Readiness open; its lesson-local repair must not be promoted into new canonical skills or mastery/readiness credit.</li>
+</ol>
+<h2 id="4-shared-skill-re-rank-r1-2026-10-06">4. Shared-skill re-rank R1 — 2026-10-06</h2>
+<p>The remaining <code>PARTIAL_SHARED_SKILL</code> rows were re-inspected against the actual Grade-6 Topic02 Learn cards and Micro bank.</p>
+<table>
+<thead>
+<tr>
+<th>Queue</th>
+<th>KNTT rows</th>
+<th>Current evidence</th>
+<th>Re-rank conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P0</td>
+<td>Bài 13–17</td>
+<td>broad canonical <code>so-nguyen-phep-tinh</code> + <code>gia-tri-tuyet-doi</code>; existing Micro mainly addition, multiplication, application and absolute value</td>
+<td><strong>real explicit-density gap</strong>, not audit noise. Bài 15 and Bài 17 have no exact lesson Micro; Bài 13–14 are incomplete; Bài 16 has existing multiplication evidence but remains in the same review packet.</td>
+</tr>
+<tr>
+<td>P0</td>
+<td>Bài 25–26</td>
+<td>canonical <code>phep-tinh-phan-so</code>; existing Micro covers addition/subtraction</td>
+<td><strong>real explicit-density gap</strong> for multiplication/division.</td>
+</tr>
+<tr>
+<td>P1</td>
+<td>Bài 28–29</td>
+<td>canonical <code>so-huu-ti-thap-phan</code>; existing Micro covers decimal addition</td>
+<td><strong>real explicit-density gap</strong> for subtraction/multiplication/division.</td>
+</tr>
+</tbody>
+</table>
+<p>The candidate repair therefore <strong>reuses existing canonical skills</strong> and densifies only Learn + Micro. It does not create a parallel KNTT skill taxonomy.</p>
+<p>Candidate scope:
+- Learn cards: <code>num02-g6-core-3</code>, <code>num02-g6-core-4</code>, <code>num02-g6-core-5</code>;
+- new Micro: <code>NUM02MICRO_042–052</code>;
+- Practice Bank: unchanged;
+- Written Library: unchanged;
+- Readiness: unchanged;
+- learner history / Mastery / runtime taxonomy: unchanged.</p>
+<p>Academic status remains <strong>pending independent NotebookLM review</strong>. Current row statuses stay <code>PARTIAL_SHARED_SKILL</code> / <code>PARTIAL</code> until a PASS receipt with clearance is reconciled.</p>
+<h2 id="5-independent-academic-review-result-2026-10-06">5. Independent academic review result — 2026-10-06</h2>
+<p>NotebookLM reviewed packet <code>MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-20261006</code> and returned <strong>PASS</strong> with clearance:</p>
+<p><code>G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE</code></p>
+<p>Review coverage:
+- 3/3 Learn cards passed;
+- 11/11 Micro items <code>NUM02MICRO_042–052</code> passed;
+- 0 REVISE;
+- no new canonical skill;
+- existing evidence reuse / anti-inflation passed;
+- audit promotion boundary passed.</p>
+<p>Repository reconciliation therefore promotes the seven <code>PARTIAL_SHARED_SKILL</code> Learn rows and the seven corresponding <code>PARTIAL</code> Micro rows to <code>VERIFIED_DIRECT</code>.</p>
+<p>Protected dimensions remain unchanged:
+- Practice Bank;
+- Written Library;
+- Readiness;
+- learner history;
+- Mastery;
+- runtime taxonomy.</p>
+<p>Review receipt: <code>review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md</code>.</p>
+<p>The reviewed Micro file is kept byte-identical to the candidate reviewed by NotebookLM; review metadata is stored in the separate receipt rather than mutating the reviewed source after clearance.</p>
+<h2 id="6-topic20-grade-6-placement-re-rank-r1-2026-10-06">6. Topic20 Grade-6 placement re-rank R1 — 2026-10-06</h2>
+<p>The five remaining <code>PARTIAL_PLACEMENT</code> Learn rows are <strong>not content gaps</strong>.</p>
+<p>Root cause:
+- <code>topic20-learning-workspace.json</code> is intentionally immutable and keeps the historical five broad <code>Lớp 6–9</code> cards;
+- the released <code>topic20-core-display-v2.json</code> already partitions the same 29 canonical skills into 10 display cards;
+- Grade-6 cards <code>geo20-core-1a</code> and <code>geo20-core-1b</code> were independently reviewed in the existing CĐ20 Part-B review;
+- legacy <code>geo20-core-1</code> remains source-locked and supplies the remaining Grade-6 skills;
+- Grade-6 reconciliation already fixes the exact KNTT semantic targets for Bài 18–22.</p>
+<p>The audit-only placement overlay <code>docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json</code> therefore maps:</p>
+<table>
+<thead>
+<tr>
+<th>KNTT lesson</th>
+<th>Existing display-card evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bài 18</td>
+<td><code>geo20-core-1</code> + <code>geo20-core-1a</code></td>
+</tr>
+<tr>
+<td>Bài 19</td>
+<td><code>geo20-core-1a</code></td>
+</tr>
+<tr>
+<td>Bài 20</td>
+<td><code>geo20-core-1</code> + <code>geo20-core-1b</code></td>
+</tr>
+<tr>
+<td>Bài 21</td>
+<td><code>geo20-core-1</code></td>
+</tr>
+<tr>
+<td>Bài 22</td>
+<td><code>geo20-core-1b</code></td>
+</tr>
+</tbody>
+</table>
+<p>Every lesson's mapped skill union must equal its reviewed canonical direct-skill target exactly.</p>
+<p>This reconciliation changes <strong>audit placement only</strong>. It does not mutate the legacy workspace, display-card content, Micro bank, Practice Bank, Written Library, Readiness, learner history, Mastery, or runtime taxonomy. A new academic review round is not required because no academic content is authored or changed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Trở lại mục lục
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Self-Learning Math · by G Learning · Learn · Grow · Go
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0110\u00e3 sao ch\u00e9p", "clipboard.copy": "Sao ch\u00e9p v\u00e0o b\u1ed9 nh\u1edb t\u1ea1m", "search.result.more.one": "1 t\u1eeb kh\u00e1c trong trang", "search.result.more.other": "# t\u1eeb kh\u00e1c trong trang", "search.result.none": "Kh\u00f4ng t\u00ecm th\u1ea5y t\u00e0i li\u1ec7u li\u00ean quan", "search.result.one": "1 t\u00e0i li\u1ec7u li\u00ean quan", "search.result.other": "# t\u00e0i li\u1ec7u li\u00ean quan", "search.result.placeholder": "Nh\u1eadp \u0111\u1ec3 b\u1eaft \u0111\u1ea7u t\u00ecm ki\u1ebfm", "search.result.term.missing": "Kh\u00f4ng", "select.version": "Ch\u1ecdn phi\u00ean b\u1ea3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/javascripts/learner-evidence-v1.js"></script>
+      
+        <script src="../../assets/javascripts/tutor-runtime-v1.js"></script>
+      
+        <script src="../../assets/javascripts/topic-learning-routes-v1.js"></script>
+      
+        <script src="../../assets/javascripts/topic-workspace-v1.js"></script>
+      
+        <script src="../../assets/javascripts/route-module-loader-v1.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../assets/javascripts/math-details-v1.js"></script>
+      
+        <script src="../../assets/javascripts/math-rich-text-v1.js"></script>
+      
+        <script src="../../assets/javascripts/canonical-evidence-observer-v2.js"></script>
+      
+        <script src="../../assets/javascripts/taxonomy-v2-evidence-observer-v1.js"></script>
+      
+        <script src="../../assets/javascripts/skill-map-v2-preview.js"></script>
+      
+        <script src="../../assets/javascripts/firebase-gemini-config.js"></script>
+      
+        <script src="../../assets/javascripts/firebase-gemini-v1.js"></script>
+      
+        <script src="../../assets/javascripts/floating-ai-tutor-v1.js"></script>
+      
+        <script src="../../assets/javascripts/assessment-engine-v1.js"></script>
+      
+        <script src="../../assets/javascripts/practice-auto-loader.js"></script>
+      
+        <script src="../../assets/javascripts/skill-assessment-pilot-v2.js"></script>
+      
+        <script src="../../assets/javascripts/skill-assessment-pilot-v3.js"></script>
+      
+        <script src="../../assets/javascripts/canonical-evidence-pilot-v1.js"></script>
+      
+        <script src="../../assets/javascripts/canonical-evidence-pilot-v2.js"></script>
+      
+        <script src="../../assets/javascripts/complete-factorization-preview-v1.js"></script>
+      
+        <script src="../../assets/javascripts/complete-factorization-preview-v2.js"></script>
+      
+        <script src="../../assets/javascripts/arithmetic-template-engine-v1.js"></script>
+      
+        <script src="../../assets/javascripts/arithmetic-template-preview-v1.js"></script>
+      
+        <script src="../../assets/javascripts/sticky-nav-v1.js"></script>
+      
+        <script src="../../assets/javascripts/knowledge-ui-v1.js"></script>
+      
+        <script src="../../assets/javascripts/written-self-check-v1.js"></script>
+      
+        <script src="../../assets/javascripts/written-exercise-library-v1.js"></script>
+      
+    
+  </body>
+</html>

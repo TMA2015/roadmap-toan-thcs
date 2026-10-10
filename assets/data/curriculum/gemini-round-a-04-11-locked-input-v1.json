@@ -1,0 +1,1882 @@
+{
+  "schema": "gemini-round-a-locked-116-v1",
+  "purpose": "Exact original IDs and catalogue evidence for an independent review; preserve original_id/current_name/source_topic unchanged",
+  "source_snapshot_sha": "dc58cd013ea7070219319f2d0c2c0194020af3a1",
+  "input_topic_count": 8,
+  "input_skill_entries": 116,
+  "declared_question_count": 996,
+  "valid_actions": [
+    "KEEP",
+    "MERGE",
+    "SPLIT",
+    "RENAME",
+    "RECLASSIFY",
+    "ADD",
+    "REVIEW_PENDING"
+  ],
+  "rules": [
+    "Only edit proposed_action,proposed_id,confidence,needs_full_text,reason and add explicit evidence; never edit original_id,source_topic,current_name,question_count_with_tag,evidence_question_ids",
+    "Do not treat proposed_id as legacy ID",
+    "Do not set needs_full_text=false solely based on catalog summaries",
+    "No curriculum priority/exam-frequency ratings in Round A",
+    "Round A output must include these exact 116 source_topic+original_id keys, and no others; use separate proposed_additions for genuinely new skills"
+  ],
+  "entries": [
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "nhan-biet-don-thuc",
+      "current_name": "Nhận biết đơn thức",
+      "question_count_with_tag": 6,
+      "evidence_question_ids": [
+        "ALG04V2_001",
+        "ALG04V2_002",
+        "ALG04V2_003"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nhan-biet-don-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "nhan-biet-da-thuc",
+      "current_name": "Nhận biết đa thức",
+      "question_count_with_tag": 6,
+      "evidence_question_ids": [
+        "ALG04V2_006",
+        "ALG04V2_007",
+        "ALG04V2_008"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nhan-biet-da-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "he-so-bac",
+      "current_name": "Hệ số và bậc",
+      "question_count_with_tag": 8,
+      "evidence_question_ids": [
+        "ALG04V2_001",
+        "ALG04V2_002",
+        "ALG04V2_003"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "he-so-bac",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "hang-tu-dong-dang",
+      "current_name": "Hạng tử đồng dạng",
+      "question_count_with_tag": 24,
+      "evidence_question_ids": [
+        "ALG04V2_013",
+        "ALG04V2_014",
+        "ALG04V2_015"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "hang-tu-dong-dang",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "thu-gon-da-thuc",
+      "current_name": "Thu gọn đa thức",
+      "question_count_with_tag": 30,
+      "evidence_question_ids": [
+        "ALG04V2_011",
+        "ALG04V2_012",
+        "ALG04V2_021"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "thu-gon-da-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "cong-tru-da-thuc",
+      "current_name": "Cộng – trừ đa thức",
+      "question_count_with_tag": 14,
+      "evidence_question_ids": [
+        "ALG04V2_037",
+        "ALG04V2_038",
+        "ALG04V2_039"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "cong-tru-da-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "bo-ngoac-dau",
+      "current_name": "Bỏ ngoặc và dấu",
+      "question_count_with_tag": 26,
+      "evidence_question_ids": [
+        "ALG04V2_037",
+        "ALG04V2_038",
+        "ALG04V2_039"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "bo-ngoac-dau",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "nhan-bieu-thuc",
+      "current_name": "Nhân biểu thức",
+      "question_count_with_tag": 26,
+      "evidence_question_ids": [
+        "ALG04V2_051",
+        "ALG04V2_052",
+        "ALG04V2_053"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nhan-bieu-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "tinh-phan-phoi",
+      "current_name": "Tính phân phối",
+      "question_count_with_tag": 26,
+      "evidence_question_ids": [
+        "ALG04V2_051",
+        "ALG04V2_052",
+        "ALG04V2_053"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tinh-phan-phoi",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "tinh-gia-tri-bieu-thuc",
+      "current_name": "Tính giá trị biểu thức",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "ALG04V2_077",
+        "ALG04V2_078",
+        "ALG04V2_079"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tinh-gia-tri-bieu-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "dieu-kien-xac-dinh",
+      "current_name": "Điều kiện xác định",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "ALG04V2_089",
+        "ALG04V2_090",
+        "ALG04V2_091"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "dieu-kien-xac-dinh",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "bien-doi-nhieu-buoc",
+      "current_name": "Biến đổi nhiều bước",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "ALG04V2_099",
+        "ALG04V2_100",
+        "ALG04V2_101"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "bien-doi-nhieu-buoc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "lap-bieu-thuc",
+      "current_name": "Lập biểu thức",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "ALG04V2_111",
+        "ALG04V2_112",
+        "ALG04V2_113"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "lap-bieu-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "bai-toan-thuc-te",
+      "current_name": "Bài toán thực tế",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "ALG04V2_111",
+        "ALG04V2_112",
+        "ALG04V2_113"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "bai-toan-thuc-te",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "04-bieu-thuc-dai-so",
+      "original_id": "chia-da-thuc-cho-don-thuc",
+      "current_name": "Chia đa thức cho đơn thức",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "ALG04V2_121",
+        "ALG04V2_122",
+        "ALG04V2_123"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "chia-da-thuc-cho-don-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "binh-phuong-tong",
+      "current_name": "Bình phương của một tổng",
+      "question_count_with_tag": 18,
+      "evidence_question_ids": [
+        "ID05V1_001",
+        "ID05V1_002",
+        "ID05V1_003"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "binh-phuong-tong",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "binh-phuong-hieu",
+      "current_name": "Bình phương của một hiệu",
+      "question_count_with_tag": 16,
+      "evidence_question_ids": [
+        "ID05V1_011",
+        "ID05V1_012",
+        "ID05V1_013"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "binh-phuong-hieu",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "hieu-hai-binh-phuong",
+      "current_name": "Hiệu hai bình phương",
+      "question_count_with_tag": 19,
+      "evidence_question_ids": [
+        "ID05V1_021",
+        "ID05V1_022",
+        "ID05V1_023"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "hieu-hai-binh-phuong",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "lap-phuong-tong",
+      "current_name": "Lập phương của một tổng",
+      "question_count_with_tag": 11,
+      "evidence_question_ids": [
+        "ID05V1_031",
+        "ID05V1_032",
+        "ID05V1_033"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "lap-phuong-tong",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "lap-phuong-hieu",
+      "current_name": "Lập phương của một hiệu",
+      "question_count_with_tag": 11,
+      "evidence_question_ids": [
+        "ID05V1_039",
+        "ID05V1_040",
+        "ID05V1_041"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "lap-phuong-hieu",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "tong-hai-lap-phuong",
+      "current_name": "Tổng hai lập phương",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "ID05V1_047",
+        "ID05V1_048",
+        "ID05V1_049"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tong-hai-lap-phuong",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "hieu-hai-lap-phuong",
+      "current_name": "Hiệu hai lập phương",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "ID05V1_054",
+        "ID05V1_055",
+        "ID05V1_056"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "hieu-hai-lap-phuong",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "nhan-dang-hdt",
+      "current_name": "Nhận dạng cấu trúc hằng đẳng thức",
+      "question_count_with_tag": 21,
+      "evidence_question_ids": [
+        "ID05V1_061",
+        "ID05V1_062",
+        "ID05V1_063"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nhan-dang-hdt",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "binh-phuong-hoan-chinh",
+      "current_name": "Nhận dạng bình phương hoàn chỉnh",
+      "question_count_with_tag": 16,
+      "evidence_question_ids": [
+        "ID05V1_061",
+        "ID05V1_062",
+        "ID05V1_063"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "binh-phuong-hoan-chinh",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "nhan-dang-lap-phuong",
+      "current_name": "Nhận dạng cấu trúc lập phương",
+      "question_count_with_tag": 4,
+      "evidence_question_ids": [
+        "ID05V1_082",
+        "ID05V1_083",
+        "ID05V1_084"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nhan-dang-lap-phuong",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "phan-tich-hdt",
+      "current_name": "Phân tích biểu thức bằng hằng đẳng thức",
+      "question_count_with_tag": 30,
+      "evidence_question_ids": [
+        "ID05V1_021",
+        "ID05V1_022",
+        "ID05V1_023"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "phan-tich-hdt",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "tinh-nhanh-hdt",
+      "current_name": "Tính nhanh bằng hằng đẳng thức",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "ID05V1_091",
+        "ID05V1_092",
+        "ID05V1_093"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tinh-nhanh-hdt",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "rut-gon-hdt",
+      "current_name": "Rút gọn bằng hằng đẳng thức",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "ID05V1_101",
+        "ID05V1_102",
+        "ID05V1_103"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "rut-gon-hdt",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "chung-minh-hdt",
+      "current_name": "Chứng minh đẳng thức",
+      "question_count_with_tag": 4,
+      "evidence_question_ids": [
+        "ID05V1_116",
+        "ID05V1_117",
+        "ID05V1_118"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "chung-minh-hdt",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "05-7-hang-dang-thuc",
+      "original_id": "giai-phuong-trinh-hdt",
+      "current_name": "Giải phương trình bằng hằng đẳng thức",
+      "question_count_with_tag": 5,
+      "evidence_question_ids": [
+        "ID05V1_111",
+        "ID05V1_112",
+        "ID05V1_113"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "giai-phuong-trinh-hdt",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "06-phan-tich-da-thuc",
+      "original_id": "nhan-tu-chung",
+      "current_name": "Đặt nhân tử chung",
+      "question_count_with_tag": 20,
+      "evidence_question_ids": [
+        "FAC06V1_001",
+        "FAC06V1_002",
+        "FAC06V1_003"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nhan-tu-chung",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "06-phan-tich-da-thuc",
+      "original_id": "doi-dau-nhan-tu-chung",
+      "current_name": "Đổi dấu để tạo nhân tử chung",
+      "question_count_with_tag": 8,
+      "evidence_question_ids": [
+        "FAC06V1_013",
+        "FAC06V1_014",
+        "FAC06V1_015"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "doi-dau-nhan-tu-chung",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "06-phan-tich-da-thuc",
+      "original_id": "hieu-hai-binh-phuong",
+      "current_name": "Hiệu hai bình phương",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "FAC06V1_021",
+        "FAC06V1_022",
+        "FAC06V1_023"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "hieu-hai-binh-phuong",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "06-phan-tich-da-thuc",
+      "original_id": "binh-phuong-hoan-chinh",
+      "current_name": "Bình phương hoàn chỉnh",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "FAC06V1_033",
+        "FAC06V1_034",
+        "FAC06V1_035"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "binh-phuong-hoan-chinh",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "06-phan-tich-da-thuc",
+      "original_id": "tong-hieu-lap-phuong",
+      "current_name": "Tổng – hiệu hai lập phương",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "FAC06V1_043",
+        "FAC06V1_044",
+        "FAC06V1_045"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tong-hieu-lap-phuong",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "06-phan-tich-da-thuc",
+      "original_id": "nhom-hang-tu",
+      "current_name": "Nhóm hạng tử",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "FAC06V1_053",
+        "FAC06V1_054",
+        "FAC06V1_055"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nhom-hang-tu",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "06-phan-tich-da-thuc",
+      "original_id": "tach-hang-tu-giua",
+      "current_name": "Tách hạng tử giữa",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "FAC06V1_065",
+        "FAC06V1_066",
+        "FAC06V1_067"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tach-hang-tu-giua",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "06-phan-tich-da-thuc",
+      "original_id": "phoi-hop-phuong-phap",
+      "current_name": "Phối hợp nhiều phương pháp",
+      "question_count_with_tag": 16,
+      "evidence_question_ids": [
+        "FAC06V1_077",
+        "FAC06V1_078",
+        "FAC06V1_079"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "phoi-hop-phuong-phap",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "06-phan-tich-da-thuc",
+      "original_id": "kiem-tra-phan-tich",
+      "current_name": "Kiểm tra kết quả phân tích",
+      "question_count_with_tag": 8,
+      "evidence_question_ids": [
+        "FAC06V1_093",
+        "FAC06V1_094",
+        "FAC06V1_095"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "kiem-tra-phan-tich",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "06-phan-tich-da-thuc",
+      "original_id": "giai-pt-bang-nhan-tu",
+      "current_name": "Giải phương trình bằng nhân tử",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "FAC06V1_101",
+        "FAC06V1_102",
+        "FAC06V1_103"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "giai-pt-bang-nhan-tu",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "06-phan-tich-da-thuc",
+      "original_id": "ung-dung-phan-tich",
+      "current_name": "Vận dụng phân tích nhân tử",
+      "question_count_with_tag": 8,
+      "evidence_question_ids": [
+        "FAC06V1_113",
+        "FAC06V1_114",
+        "FAC06V1_115"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "ung-dung-phan-tich",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "nhan-biet-phan-thuc",
+      "current_name": "Nhận biết phân thức",
+      "question_count_with_tag": 8,
+      "evidence_question_ids": [
+        "RAT07V1_001",
+        "RAT07V1_002",
+        "RAT07V1_003"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nhan-biet-phan-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "dieu-kien-xac-dinh",
+      "current_name": "Điều kiện xác định",
+      "question_count_with_tag": 16,
+      "evidence_question_ids": [
+        "RAT07V1_009",
+        "RAT07V1_010",
+        "RAT07V1_011"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "dieu-kien-xac-dinh",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "hai-phan-thuc-bang-nhau",
+      "current_name": "Hai phân thức bằng nhau",
+      "question_count_with_tag": 6,
+      "evidence_question_ids": [
+        "RAT07V1_025",
+        "RAT07V1_026",
+        "RAT07V1_027"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "hai-phan-thuc-bang-nhau",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "doi-dau-phan-thuc",
+      "current_name": "Đổi dấu phân thức",
+      "question_count_with_tag": 8,
+      "evidence_question_ids": [
+        "RAT07V1_031",
+        "RAT07V1_032",
+        "RAT07V1_033"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "doi-dau-phan-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "phan-tich-tu-mau",
+      "current_name": "Phân tích tử và mẫu",
+      "question_count_with_tag": 32,
+      "evidence_question_ids": [
+        "RAT07V1_017",
+        "RAT07V1_018",
+        "RAT07V1_019"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "phan-tich-tu-mau",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "rut-gon-phan-thuc",
+      "current_name": "Rút gọn phân thức",
+      "question_count_with_tag": 32,
+      "evidence_question_ids": [
+        "RAT07V1_047",
+        "RAT07V1_048",
+        "RAT07V1_049"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "rut-gon-phan-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "giu-dieu-kien-ban-dau",
+      "current_name": "Giữ điều kiện xác định ban đầu",
+      "question_count_with_tag": 14,
+      "evidence_question_ids": [
+        "RAT07V1_025",
+        "RAT07V1_026",
+        "RAT07V1_027"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "giu-dieu-kien-ban-dau",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "quy-dong-mau-thuc",
+      "current_name": "Quy đồng mẫu thức",
+      "question_count_with_tag": 22,
+      "evidence_question_ids": [
+        "RAT07V1_071",
+        "RAT07V1_072",
+        "RAT07V1_073"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "quy-dong-mau-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "cong-tru-phan-thuc",
+      "current_name": "Cộng – trừ phân thức",
+      "question_count_with_tag": 18,
+      "evidence_question_ids": [
+        "RAT07V1_081",
+        "RAT07V1_082",
+        "RAT07V1_083"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "cong-tru-phan-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "nhan-phan-thuc",
+      "current_name": "Nhân phân thức",
+      "question_count_with_tag": 14,
+      "evidence_question_ids": [
+        "RAT07V1_093",
+        "RAT07V1_094",
+        "RAT07V1_095"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nhan-phan-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "chia-phan-thuc",
+      "current_name": "Chia phân thức",
+      "question_count_with_tag": 8,
+      "evidence_question_ids": [
+        "RAT07V1_101",
+        "RAT07V1_102",
+        "RAT07V1_103"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "chia-phan-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "bieu-thuc-nhieu-phep-tinh",
+      "current_name": "Biểu thức hữu tỉ nhiều phép tính",
+      "question_count_with_tag": 6,
+      "evidence_question_ids": [
+        "RAT07V1_109",
+        "RAT07V1_110",
+        "RAT07V1_111"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "bieu-thuc-nhieu-phep-tinh",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "tinh-gia-tri-phan-thuc",
+      "current_name": "Tính giá trị phân thức",
+      "question_count_with_tag": 4,
+      "evidence_question_ids": [
+        "RAT07V1_115",
+        "RAT07V1_116",
+        "RAT07V1_117"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tinh-gia-tri-phan-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "07-phan-thuc-dai-so",
+      "original_id": "tim-gia-tri-nguyen",
+      "current_name": "Tìm giá trị nguyên",
+      "question_count_with_tag": 2,
+      "evidence_question_ids": [
+        "RAT07V1_119",
+        "RAT07V1_120"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tim-gia-tri-nguyen",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "nghiem-phuong-trinh",
+      "current_name": "Khái niệm nghiệm phương trình",
+      "question_count_with_tag": 6,
+      "evidence_question_ids": [
+        "EQ08V1_001",
+        "EQ08V1_002",
+        "EQ08V1_003"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nghiem-phuong-trinh",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "pt-bac-nhat",
+      "current_name": "Phương trình bậc nhất",
+      "question_count_with_tag": 28,
+      "evidence_question_ids": [
+        "EQ08V1_007",
+        "EQ08V1_008",
+        "EQ08V1_009"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "pt-bac-nhat",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "bien-doi-pt-nhieu-buoc",
+      "current_name": "Biến đổi phương trình nhiều bước",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "EQ08V1_023",
+        "EQ08V1_024",
+        "EQ08V1_025"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "bien-doi-pt-nhieu-buoc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "pt-tich",
+      "current_name": "Phương trình tích",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "EQ08V1_035",
+        "EQ08V1_036",
+        "EQ08V1_037"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "pt-tich",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "dkxd-phuong-trinh-mau",
+      "current_name": "Điều kiện xác định phương trình chứa mẫu",
+      "question_count_with_tag": 26,
+      "evidence_question_ids": [
+        "EQ08V1_047",
+        "EQ08V1_048",
+        "EQ08V1_049"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "dkxd-phuong-trinh-mau",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "khu-mau-phuong-trinh",
+      "current_name": "Khử mẫu và giải phương trình",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "EQ08V1_055",
+        "EQ08V1_056",
+        "EQ08V1_057"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "khu-mau-phuong-trinh",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "doi-chieu-nghiem",
+      "current_name": "Đối chiếu nghiệm với điều kiện",
+      "question_count_with_tag": 6,
+      "evidence_question_ids": [
+        "EQ08V1_067",
+        "EQ08V1_068",
+        "EQ08V1_069"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "doi-chieu-nghiem",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "bpt-bac-nhat",
+      "current_name": "Bất phương trình bậc nhất",
+      "question_count_with_tag": 22,
+      "evidence_question_ids": [
+        "EQ08V1_073",
+        "EQ08V1_074",
+        "EQ08V1_075"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "bpt-bac-nhat",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "doi-chieu-bpt",
+      "current_name": "Đổi chiều bất phương trình",
+      "question_count_with_tag": 8,
+      "evidence_question_ids": [
+        "EQ08V1_087",
+        "EQ08V1_088",
+        "EQ08V1_089"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "doi-chieu-bpt",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "bieu-dien-tap-nghiem",
+      "current_name": "Biểu diễn tập nghiệm",
+      "question_count_with_tag": 6,
+      "evidence_question_ids": [
+        "EQ08V1_095",
+        "EQ08V1_096",
+        "EQ08V1_097"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "bieu-dien-tap-nghiem",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "giao-tap-nghiem",
+      "current_name": "Giao các tập nghiệm",
+      "question_count_with_tag": 6,
+      "evidence_question_ids": [
+        "EQ08V1_101",
+        "EQ08V1_102",
+        "EQ08V1_103"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "giao-tap-nghiem",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "lap-phuong-trinh",
+      "current_name": "Lập phương trình từ bài toán",
+      "question_count_with_tag": 6,
+      "evidence_question_ids": [
+        "EQ08V1_107",
+        "EQ08V1_108",
+        "EQ08V1_109"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "lap-phuong-trinh",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "lap-bat-phuong-trinh",
+      "current_name": "Lập bất phương trình từ bài toán",
+      "question_count_with_tag": 4,
+      "evidence_question_ids": [
+        "EQ08V1_113",
+        "EQ08V1_114",
+        "EQ08V1_115"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "lap-bat-phuong-trinh",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "tham-so-co-ban",
+      "current_name": "Biện luận tham số cơ bản",
+      "question_count_with_tag": 4,
+      "evidence_question_ids": [
+        "EQ08V1_117",
+        "EQ08V1_118",
+        "EQ08V1_119"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tham-so-co-ban",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "bat-dang-thuc",
+      "current_name": "Khái niệm bất đẳng thức",
+      "question_count_with_tag": 4,
+      "evidence_question_ids": [
+        "EQ08V1_121",
+        "EQ08V1_122",
+        "EQ08V1_123"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "bat-dang-thuc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "tinh-chat-thu-tu-phep-cong",
+      "current_name": "Tính chất thứ tự với phép cộng",
+      "question_count_with_tag": 4,
+      "evidence_question_ids": [
+        "EQ08V1_125",
+        "EQ08V1_126",
+        "EQ08V1_127"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tinh-chat-thu-tu-phep-cong",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "08-phuong-trinh-bat-phuong-trinh",
+      "original_id": "tinh-chat-thu-tu-phep-nhan",
+      "current_name": "Tính chất thứ tự với phép nhân",
+      "question_count_with_tag": 4,
+      "evidence_question_ids": [
+        "EQ08V1_129",
+        "EQ08V1_130",
+        "EQ08V1_131"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tinh-chat-thu-tu-phep-nhan",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "nghiem-pt-hai-an",
+      "current_name": "Nghiệm của phương trình bậc nhất hai ẩn",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "SYS09V1_001",
+        "SYS09V1_002",
+        "SYS09V1_003"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nghiem-pt-hai-an",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "nghiem-he",
+      "current_name": "Nghiệm của hệ phương trình",
+      "question_count_with_tag": 16,
+      "evidence_question_ids": [
+        "SYS09V1_013",
+        "SYS09V1_014",
+        "SYS09V1_015"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nghiem-he",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "so-nghiem-he",
+      "current_name": "Số nghiệm của hệ",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "SYS09V1_029",
+        "SYS09V1_030",
+        "SYS09V1_031"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "so-nghiem-he",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "y-nghia-hinh-hoc",
+      "current_name": "Ý nghĩa hình học của hệ",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "SYS09V1_029",
+        "SYS09V1_030",
+        "SYS09V1_031"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "y-nghia-hinh-hoc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "giai-he-the",
+      "current_name": "Giải hệ bằng phương pháp thế",
+      "question_count_with_tag": 24,
+      "evidence_question_ids": [
+        "SYS09V1_013",
+        "SYS09V1_014",
+        "SYS09V1_015"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "giai-he-the",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "giai-he-cong",
+      "current_name": "Giải hệ bằng cộng đại số",
+      "question_count_with_tag": 4,
+      "evidence_question_ids": [
+        "SYS09V1_016",
+        "SYS09V1_020",
+        "SYS09V1_024"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "giai-he-cong",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "chon-phuong-phap",
+      "current_name": "Chọn phương pháp giải phù hợp",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "SYS09V1_041",
+        "SYS09V1_042",
+        "SYS09V1_043"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "chon-phuong-phap",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "bien-doi-truoc-giai",
+      "current_name": "Biến đổi hệ trước khi giải",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "SYS09V1_053",
+        "SYS09V1_054",
+        "SYS09V1_055"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "bien-doi-truoc-giai",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "kiem-tra-nghiem-he",
+      "current_name": "Kiểm tra nghiệm của hệ",
+      "question_count_with_tag": 24,
+      "evidence_question_ids": [
+        "SYS09V1_065",
+        "SYS09V1_066",
+        "SYS09V1_067"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "kiem-tra-nghiem-he",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "tham-so-he",
+      "current_name": "Hệ phương trình có tham số",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "SYS09V1_077",
+        "SYS09V1_078",
+        "SYS09V1_079"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tham-so-he",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "lap-he-bai-toan",
+      "current_name": "Lập hệ từ bài toán",
+      "question_count_with_tag": 32,
+      "evidence_question_ids": [
+        "SYS09V1_089",
+        "SYS09V1_090",
+        "SYS09V1_091"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "lap-he-bai-toan",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "bai-toan-so",
+      "current_name": "Bài toán về số",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "SYS09V1_089",
+        "SYS09V1_090",
+        "SYS09V1_091"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "bai-toan-so",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "chuyen-dong-he",
+      "current_name": "Bài toán chuyển động",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "SYS09V1_101",
+        "SYS09V1_102",
+        "SYS09V1_103"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "chuyen-dong-he",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "09-he-phuong-trinh",
+      "original_id": "nang-suat-he",
+      "current_name": "Bài toán năng suất – giá trị",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "SYS09V1_111",
+        "SYS09V1_112",
+        "SYS09V1_113"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nang-suat-he",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "khai-niem-ham-so",
+      "current_name": "Khái niệm hàm số",
+      "question_count_with_tag": 8,
+      "evidence_question_ids": [
+        "FUN10V1_013",
+        "FUN10V1_014",
+        "FUN10V1_015"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "khai-niem-ham-so",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "tinh-gia-tri-ham",
+      "current_name": "Tính giá trị hàm số",
+      "question_count_with_tag": 22,
+      "evidence_question_ids": [
+        "FUN10V1_001",
+        "FUN10V1_002",
+        "FUN10V1_003"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tinh-gia-tri-ham",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "bang-gia-tri",
+      "current_name": "Bảng giá trị",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "FUN10V1_021",
+        "FUN10V1_022",
+        "FUN10V1_023"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "bang-gia-tri",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "toa-do-diem",
+      "current_name": "Tọa độ điểm",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "FUN10V1_031",
+        "FUN10V1_032",
+        "FUN10V1_033"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "toa-do-diem",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "diem-thuoc-do-thi",
+      "current_name": "Điểm thuộc đồ thị",
+      "question_count_with_tag": 20,
+      "evidence_question_ids": [
+        "FUN10V1_041",
+        "FUN10V1_042",
+        "FUN10V1_043"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "diem-thuoc-do-thi",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "nhan-biet-ham-bac-nhat",
+      "current_name": "Nhận biết hàm số bậc nhất",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "FUN10V1_051",
+        "FUN10V1_052",
+        "FUN10V1_053"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nhan-biet-ham-bac-nhat",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "he-so-goc",
+      "current_name": "Hệ số góc",
+      "question_count_with_tag": 16,
+      "evidence_question_ids": [
+        "FUN10V1_061",
+        "FUN10V1_063",
+        "FUN10V1_065"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "he-so-goc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "tung-do-goc",
+      "current_name": "Tung độ gốc",
+      "question_count_with_tag": 6,
+      "evidence_question_ids": [
+        "FUN10V1_062",
+        "FUN10V1_064",
+        "FUN10V1_066"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tung-do-goc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "dong-nghich-bien",
+      "current_name": "Đồng biến – nghịch biến",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "FUN10V1_073",
+        "FUN10V1_074",
+        "FUN10V1_075"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "dong-nghich-bien",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "ve-do-thi-ham-bac-nhat",
+      "current_name": "Vẽ đồ thị hàm số bậc nhất",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "FUN10V1_083",
+        "FUN10V1_084",
+        "FUN10V1_085"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "ve-do-thi-ham-bac-nhat",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "vi-tri-hai-duong-thang",
+      "current_name": "Vị trí tương đối hai đường thẳng",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "FUN10V1_093",
+        "FUN10V1_094",
+        "FUN10V1_095"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "vi-tri-hai-duong-thang",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "giao-diem-do-thi",
+      "current_name": "Giao điểm hai đồ thị",
+      "question_count_with_tag": 8,
+      "evidence_question_ids": [
+        "FUN10V1_103",
+        "FUN10V1_104",
+        "FUN10V1_105"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "giao-diem-do-thi",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "lien-he-he-phuong-trinh",
+      "current_name": "Liên hệ với hệ phương trình",
+      "question_count_with_tag": 8,
+      "evidence_question_ids": [
+        "FUN10V1_103",
+        "FUN10V1_104",
+        "FUN10V1_105"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "lien-he-he-phuong-trinh",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "ham-y-ax2",
+      "current_name": "Hàm số y = ax²",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "FUN10V1_111",
+        "FUN10V1_112",
+        "FUN10V1_113"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "ham-y-ax2",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "doi-xung-parabol",
+      "current_name": "Tính đối xứng và hướng mở parabol",
+      "question_count_with_tag": 5,
+      "evidence_question_ids": [
+        "FUN10V1_112",
+        "FUN10V1_114",
+        "FUN10V1_116"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "doi-xung-parabol",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "10-ham-so-do-thi",
+      "original_id": "diem-thuoc-parabol",
+      "current_name": "Điểm thuộc parabol",
+      "question_count_with_tag": 5,
+      "evidence_question_ids": [
+        "FUN10V1_111",
+        "FUN10V1_113",
+        "FUN10V1_115"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "diem-thuoc-parabol",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "can-bac-hai-so-hoc",
+      "current_name": "Căn bậc hai số học",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "RAD11V1_001",
+        "RAD11V1_002",
+        "RAD11V1_003"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "can-bac-hai-so-hoc",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "dkxd-can",
+      "current_name": "Điều kiện xác định của căn thức",
+      "question_count_with_tag": 22,
+      "evidence_question_ids": [
+        "RAD11V1_011",
+        "RAD11V1_012",
+        "RAD11V1_013"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "dkxd-can",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "can-binh-phuong",
+      "current_name": "Căn của bình phương và giá trị tuyệt đối",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "RAD11V1_033",
+        "RAD11V1_034",
+        "RAD11V1_035"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "can-binh-phuong",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "khai-phuong-tich",
+      "current_name": "Khai phương một tích",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "RAD11V1_043",
+        "RAD11V1_044",
+        "RAD11V1_045"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "khai-phuong-tich",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "khai-phuong-thuong",
+      "current_name": "Khai phương một thương",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "RAD11V1_055",
+        "RAD11V1_056",
+        "RAD11V1_057"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "khai-phuong-thuong",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "dua-thua-so-ra",
+      "current_name": "Đưa thừa số ra ngoài dấu căn",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "RAD11V1_043",
+        "RAD11V1_044",
+        "RAD11V1_045"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "dua-thua-so-ra",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "dua-thua-so-vao",
+      "current_name": "Đưa thừa số vào trong dấu căn",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "RAD11V1_065",
+        "RAD11V1_066",
+        "RAD11V1_067"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "dua-thua-so-vao",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "can-dong-dang",
+      "current_name": "Cộng trừ căn đồng dạng",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "RAD11V1_075",
+        "RAD11V1_076",
+        "RAD11V1_077"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "can-dong-dang",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "nhan-chia-can",
+      "current_name": "Nhân chia căn thức",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "RAD11V1_087",
+        "RAD11V1_088",
+        "RAD11V1_089"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "nhan-chia-can",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "truc-can-mau-don",
+      "current_name": "Trục căn thức ở mẫu dạng đơn",
+      "question_count_with_tag": 10,
+      "evidence_question_ids": [
+        "RAD11V1_097",
+        "RAD11V1_098",
+        "RAD11V1_099"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "truc-can-mau-don",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "truc-can-lien-hop",
+      "current_name": "Trục căn thức bằng liên hợp",
+      "question_count_with_tag": 8,
+      "evidence_question_ids": [
+        "RAD11V1_107",
+        "RAD11V1_108",
+        "RAD11V1_109"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "truc-can-lien-hop",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "tim-x-can",
+      "current_name": "Tìm x trong phương trình chứa căn",
+      "question_count_with_tag": 3,
+      "evidence_question_ids": [
+        "RAD11V1_115",
+        "RAD11V1_116",
+        "RAD11V1_117"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "tim-x-can",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "so-sanh-can",
+      "current_name": "So sánh biểu thức căn",
+      "question_count_with_tag": 3,
+      "evidence_question_ids": [
+        "RAD11V1_118",
+        "RAD11V1_119",
+        "RAD11V1_120"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "so-sanh-can",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    },
+    {
+      "source_topic": "11-can-thuc",
+      "original_id": "can-bac-ba",
+      "current_name": "Căn bậc ba",
+      "question_count_with_tag": 12,
+      "evidence_question_ids": [
+        "RAD11V1_121",
+        "RAD11V1_122",
+        "RAD11V1_123"
+      ],
+      "proposed_action": "REVIEW_PENDING",
+      "proposed_id": "can-bac-ba",
+      "confidence": "unverified",
+      "needs_full_text": true,
+      "reason": "Reviewer must supply evidence; do not infer from label alone."
+    }
+  ],
+  "proposed_additions": []
+}

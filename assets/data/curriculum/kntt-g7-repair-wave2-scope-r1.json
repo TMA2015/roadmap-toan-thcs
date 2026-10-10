@@ -1,0 +1,171 @@
+{
+  "packet_id": "MATH-KNTT-G7-REPAIR-WAVE2-SCOPE-R1-20261008",
+  "as_of": "2026-10-08",
+  "status": "ACADEMIC_SCOPE_REVIEW_PENDING",
+  "scope": "Independent authorization of Grade-7 Repair Wave 2 scope after Wave 1 closure; no learner-content authoring in this artifact",
+  "source_locks": {
+    "prior_priority_review": {
+      "path": "docs/assets/data/curriculum/kntt-g7-gap-priority-r1.json",
+      "clearance": "G7_GAP_PRIORITY_R1_REVIEW_COMPLETE"
+    },
+    "wave1_repair": {
+      "path": "docs/assets/data/curriculum/kntt-g7-repair-wave1-r1.json",
+      "clearance": "G7_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE",
+      "merged_main_sha": "561524a103bb060b9f518535cbe67da5016084ed"
+    }
+  },
+  "notebooklm_source_contract": {
+    "selected_source_count": 5,
+    "permanent_sources": [
+      "NotebookLM Math Review Rules v1.2",
+      "Self-Learning Math Master Plan v1.2.1"
+    ],
+    "grade7_s1_sources": [
+      "SGK Toán 7, tập một — Kết nối tri thức với cuộc sống",
+      "SGK Toán 7, tập hai — Kết nối tri thức với cuộc sống"
+    ],
+    "temporary_batch_sources": [
+      "00_NOTEBOOKLM_PACKET_R1.md — NotebookLM Review Packet — Grade 7 Repair Wave 2 Scope R1"
+    ],
+    "rule": "2 permanent + 2 Grade-7 SGK + 1 temporary packet = exactly 5 selected Sources."
+  },
+  "wave1_status": {
+    "status": "CLOSED_DEPLOYED",
+    "groups": [
+      "BAI1_3",
+      "BAI5_7",
+      "BAI26_28"
+    ],
+    "merge_sha": "561524a103bb060b9f518535cbe67da5016084ed"
+  },
+  "reviewed_remaining_priorities": {
+    "BAI4": {
+      "priority": "P1",
+      "dimensions": [
+        "LEARN",
+        "MICRO"
+      ],
+      "canonical_skills": [
+        "thu-tu-phep-tinh"
+      ],
+      "lesson_local_refs": [
+        "quy-tac-chuyen-ve"
+      ]
+    },
+    "BAI18_19": {
+      "priority": "P1",
+      "dimensions": [
+        "MICRO"
+      ],
+      "canonical_skills": [
+        "bieu-do-quat-tron",
+        "doc-bieu-do-doan-thang",
+        "chon-bieu-do",
+        "chuyen-bang-bieu-do",
+        "nhan-xet-du-lieu"
+      ],
+      "canonical_families": [
+        "STAT-REPRESENT"
+      ]
+    },
+    "BAI22_23": {
+      "priority": "P1",
+      "dimensions": [
+        "LEARN",
+        "MICRO"
+      ],
+      "canonical_skills": [
+        "ti-le-thuan",
+        "he-so-ti-le-thuan",
+        "ti-le-nghich",
+        "he-so-ti-le-nghich",
+        "phan-biet-thuan-nghich",
+        "mo-hinh-ti-le"
+      ]
+    },
+    "BAI8": {
+      "priority": "P2",
+      "dimensions": [
+        "MICRO"
+      ],
+      "candidate_status": "DEFER_FROM_WAVE2"
+    },
+    "BAI24_25": {
+      "priority": "DEFER",
+      "dimensions": [
+        "NONE"
+      ],
+      "candidate_status": "DEFER"
+    }
+  },
+  "proposed_wave2": [
+    "BAI4",
+    "BAI18_19",
+    "BAI22_23"
+  ],
+  "max_groups_wave2": 3,
+  "protected_boundaries": {
+    "author_new_content": false,
+    "mutate_learning_content": false,
+    "mutate_micro_practice": false,
+    "mutate_practice_bank": false,
+    "mutate_written_library": false,
+    "mutate_readiness": false,
+    "create_canonical_skill": false,
+    "promote_lesson_local_to_global": false,
+    "change_mastery": false,
+    "regrade_learner_history": false,
+    "runtime_taxonomy_change": false
+  },
+  "next_step": {
+    "status": "AUTHORIZED_FOR_CANDIDATE_AUTHORING_ONLY",
+    "required_content_clearance": "G7_REPAIR_WAVE2_R1_CONTENT_REVIEW_COMPLETE",
+    "lesson_groups": [
+      "BAI4",
+      "BAI18_19",
+      "BAI22_23"
+    ]
+  },
+  "independent_review": {
+    "reviewer": "NotebookLM",
+    "verdict": "PASS",
+    "clearance": "G7_REPAIR_WAVE2_SCOPE_R1_REVIEW_COMPLETE",
+    "selected_wave2": [
+      "BAI4",
+      "BAI18_19",
+      "BAI22_23"
+    ],
+    "approved_dimensions": {
+      "BAI4": [
+        "LEARN",
+        "MICRO"
+      ],
+      "BAI18_19": [
+        "MICRO"
+      ],
+      "BAI22_23": [
+        "LEARN",
+        "MICRO"
+      ]
+    },
+    "deferred": {
+      "BAI8": {
+        "priority": "P2",
+        "dimensions": [
+          "MICRO"
+        ]
+      },
+      "BAI24_25": {
+        "priority": "DEFER",
+        "dimensions": [
+          "NONE"
+        ]
+      }
+    },
+    "written_policy": "NO_QUOTA_EXPANSION_PASS",
+    "readiness_policy": "NO_QUOTA_EXPANSION_PASS",
+    "new_canonical_skills": [],
+    "receipt": "review-packets/kntt-g7-repair-wave2-scope-r1/01_NOTEBOOKLM_RESULT_R1.md",
+    "reviewed_on": "2026-10-08"
+  }
+}

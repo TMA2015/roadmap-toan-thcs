@@ -1,0 +1,641 @@
+{
+  "version": 2,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "RAT07-V1-04",
+  "topic": {
+    "id": "07-phan-thuc-dai-so",
+    "title": "Phân thức đại số"
+  },
+  "questions": [
+    {
+      "id": "RAT07V1_091",
+      "question": "Tính \\(\\frac1x-\\frac1{x+6}\\) (giữ điều kiện xác định ban đầu).",
+      "options": [
+        "\\(\\frac{6}{x(x+6)}\\)",
+        "\\(\\frac{1}{x(x+6)}\\)",
+        "\\(\\frac{6}{2x+6}\\)",
+        "\\(\\frac{-6}{x(x+6)}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "cong-tru-phan-thuc",
+          "quy-dong-mau-thuc"
+        ],
+        "type": "cong-tru"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trên miền \\(x\\ne0,\\;x\\ne-6\\), quy đồng mẫu \\(x(x+6)\\): \\((x+6)-x=6\\), nên kết quả \\(\\frac{6}{x(x+6)}\\)."
+    },
+    {
+      "id": "RAT07V1_092",
+      "question": "Tính \\(\\frac1x-\\frac1{x+7}\\) (giữ điều kiện xác định ban đầu).",
+      "options": [
+        "\\(\\frac{7}{x(x+7)}\\)",
+        "\\(\\frac{1}{x(x+7)}\\)",
+        "\\(\\frac{7}{2x+7}\\)",
+        "\\(\\frac{-7}{x(x+7)}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "cong-tru-phan-thuc",
+          "quy-dong-mau-thuc"
+        ],
+        "type": "cong-tru"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trên miền \\(x\\ne0,\\;x\\ne-7\\), quy đồng mẫu \\(x(x+7)\\): \\((x+7)-x=7\\), nên kết quả \\(\\frac{7}{x(x+7)}\\)."
+    },
+    {
+      "id": "RAT07V1_093",
+      "question": "Tính và rút gọn \\(\\frac{x^2-1}{x-1}\\cdot\\frac1{x+1}\\) (với biểu thức xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(x+1\\)",
+        "\\(x-1\\)",
+        "\\(x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "nhan-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "nhan"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trên miền \\(x\\ne1,\\;x\\ne-1\\), phân tích \\(x^2-1=(x-1)(x+1)\\), nhân hai phân thức và triệt các nhân tử chung để được \\(1\\). Không nhận lại hai giá trị đã loại."
+    },
+    {
+      "id": "RAT07V1_094",
+      "question": "Tính và rút gọn \\(\\frac{x^2-4}{x-2}\\cdot\\frac1{x+2}\\) (với biểu thức xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(x+2\\)",
+        "\\(x-2\\)",
+        "\\(x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "nhan-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "nhan"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trên miền \\(x\\ne2,\\;x\\ne-2\\), phân tích \\(x^2-4=(x-2)(x+2)\\), nhân hai phân thức và triệt các nhân tử chung để được \\(1\\). Không nhận lại hai giá trị đã loại."
+    },
+    {
+      "id": "RAT07V1_095",
+      "question": "Tính và rút gọn \\(\\frac{x^2-9}{x-3}\\cdot\\frac1{x+3}\\) (với biểu thức xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(x+3\\)",
+        "\\(x-3\\)",
+        "\\(x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "nhan-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "nhan"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trên miền \\(x\\ne3,\\;x\\ne-3\\), phân tích \\(x^2-9=(x-3)(x+3)\\), nhân hai phân thức và triệt các nhân tử chung để được \\(1\\). Không nhận lại hai giá trị đã loại."
+    },
+    {
+      "id": "RAT07V1_096",
+      "question": "Tính và rút gọn \\(\\frac{x^2-16}{x-4}\\cdot\\frac1{x+4}\\) (với biểu thức xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(x+4\\)",
+        "\\(x-4\\)",
+        "\\(x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "nhan-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "nhan"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trên miền \\(x\\ne4,\\;x\\ne-4\\), phân tích \\(x^2-16=(x-4)(x+4)\\), nhân hai phân thức và triệt các nhân tử chung để được \\(1\\). Không nhận lại hai giá trị đã loại."
+    },
+    {
+      "id": "RAT07V1_097",
+      "question": "Tính và rút gọn \\(\\frac{x^2-25}{x-5}\\cdot\\frac1{x+5}\\) (với biểu thức xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(x+5\\)",
+        "\\(x-5\\)",
+        "\\(x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "nhan-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "nhan"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trên miền \\(x\\ne5,\\;x\\ne-5\\), phân tích \\(x^2-25=(x-5)(x+5)\\), nhân hai phân thức và triệt các nhân tử chung để được \\(1\\). Không nhận lại hai giá trị đã loại."
+    },
+    {
+      "id": "RAT07V1_098",
+      "question": "Tính và rút gọn \\(\\frac{x^2-36}{x-6}\\cdot\\frac1{x+6}\\) (với biểu thức xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(x+6\\)",
+        "\\(x-6\\)",
+        "\\(x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "nhan-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "nhan"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trên miền \\(x\\ne6,\\;x\\ne-6\\), phân tích \\(x^2-36=(x-6)(x+6)\\), nhân hai phân thức và triệt các nhân tử chung để được \\(1\\). Không nhận lại hai giá trị đã loại."
+    },
+    {
+      "id": "RAT07V1_099",
+      "question": "Tính và rút gọn \\(\\frac{x^2-49}{x-7}\\cdot\\frac1{x+7}\\) (với biểu thức xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(x+7\\)",
+        "\\(x-7\\)",
+        "\\(x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "nhan-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "nhan"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trên miền \\(x\\ne7,\\;x\\ne-7\\), phân tích \\(x^2-49=(x-7)(x+7)\\), nhân hai phân thức và triệt các nhân tử chung để được \\(1\\). Không nhận lại hai giá trị đã loại."
+    },
+    {
+      "id": "RAT07V1_100",
+      "question": "Tính và rút gọn \\(\\frac{x^2-64}{x-8}\\cdot\\frac1{x+8}\\) (với biểu thức xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(x+8\\)",
+        "\\(x-8\\)",
+        "\\(x\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "nhan-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "nhan"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trên miền \\(x\\ne8,\\;x\\ne-8\\), phân tích \\(x^2-64=(x-8)(x+8)\\), nhân hai phân thức và triệt các nhân tử chung để được \\(1\\). Không nhận lại hai giá trị đã loại."
+    },
+    {
+      "id": "RAT07V1_101",
+      "question": "Tính \\(\\frac{x+1}{x-1}:\\frac{(x+1)^2}{x^2-1}\\) (trên miền xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(\\frac{x+1}{x-1}\\)",
+        "\\(\\frac{x-1}{x+1}\\)",
+        "\\(-1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "chia-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "chia"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trước khi chia, phân thức chia phải khác 0. Mẫu các phân thức ban đầu yêu cầu \\(x\\ne1,\\;x\\ne-1\\). Đổi phép chia thành nhân với phân thức nghịch đảo và dùng \\(x^2-1=(x-1)(x+1)\\); thu được \\(1\\) trên đúng miền đã xác định."
+    },
+    {
+      "id": "RAT07V1_102",
+      "question": "Tính \\(\\frac{x+2}{x-2}:\\frac{(x+2)^2}{x^2-4}\\) (trên miền xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(\\frac{x+2}{x-2}\\)",
+        "\\(\\frac{x-2}{x+2}\\)",
+        "\\(-1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "chia-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "chia"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trước khi chia, phân thức chia phải khác 0. Mẫu các phân thức ban đầu yêu cầu \\(x\\ne2,\\;x\\ne-2\\). Đổi phép chia thành nhân với phân thức nghịch đảo và dùng \\(x^2-4=(x-2)(x+2)\\); thu được \\(1\\) trên đúng miền đã xác định."
+    },
+    {
+      "id": "RAT07V1_103",
+      "question": "Tính \\(\\frac{x+3}{x-3}:\\frac{(x+3)^2}{x^2-9}\\) (trên miền xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(\\frac{x+3}{x-3}\\)",
+        "\\(\\frac{x-3}{x+3}\\)",
+        "\\(-1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "chia-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "chia"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trước khi chia, phân thức chia phải khác 0. Mẫu các phân thức ban đầu yêu cầu \\(x\\ne3,\\;x\\ne-3\\). Đổi phép chia thành nhân với phân thức nghịch đảo và dùng \\(x^2-9=(x-3)(x+3)\\); thu được \\(1\\) trên đúng miền đã xác định."
+    },
+    {
+      "id": "RAT07V1_104",
+      "question": "Tính \\(\\frac{x+4}{x-4}:\\frac{(x+4)^2}{x^2-16}\\) (trên miền xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(\\frac{x+4}{x-4}\\)",
+        "\\(\\frac{x-4}{x+4}\\)",
+        "\\(-1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "chia-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "chia"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trước khi chia, phân thức chia phải khác 0. Mẫu các phân thức ban đầu yêu cầu \\(x\\ne4,\\;x\\ne-4\\). Đổi phép chia thành nhân với phân thức nghịch đảo và dùng \\(x^2-16=(x-4)(x+4)\\); thu được \\(1\\) trên đúng miền đã xác định."
+    },
+    {
+      "id": "RAT07V1_105",
+      "question": "Tính \\(\\frac{x+5}{x-5}:\\frac{(x+5)^2}{x^2-25}\\) (trên miền xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(\\frac{x+5}{x-5}\\)",
+        "\\(\\frac{x-5}{x+5}\\)",
+        "\\(-1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "chia-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "chia"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trước khi chia, phân thức chia phải khác 0. Mẫu các phân thức ban đầu yêu cầu \\(x\\ne5,\\;x\\ne-5\\). Đổi phép chia thành nhân với phân thức nghịch đảo và dùng \\(x^2-25=(x-5)(x+5)\\); thu được \\(1\\) trên đúng miền đã xác định."
+    },
+    {
+      "id": "RAT07V1_106",
+      "question": "Tính \\(\\frac{x+6}{x-6}:\\frac{(x+6)^2}{x^2-36}\\) (trên miền xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(\\frac{x+6}{x-6}\\)",
+        "\\(\\frac{x-6}{x+6}\\)",
+        "\\(-1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "chia-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "chia"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trước khi chia, phân thức chia phải khác 0. Mẫu các phân thức ban đầu yêu cầu \\(x\\ne6,\\;x\\ne-6\\). Đổi phép chia thành nhân với phân thức nghịch đảo và dùng \\(x^2-36=(x-6)(x+6)\\); thu được \\(1\\) trên đúng miền đã xác định."
+    },
+    {
+      "id": "RAT07V1_107",
+      "question": "Tính \\(\\frac{x+7}{x-7}:\\frac{(x+7)^2}{x^2-49}\\) (trên miền xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(\\frac{x+7}{x-7}\\)",
+        "\\(\\frac{x-7}{x+7}\\)",
+        "\\(-1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "chia-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "chia"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trước khi chia, phân thức chia phải khác 0. Mẫu các phân thức ban đầu yêu cầu \\(x\\ne7,\\;x\\ne-7\\). Đổi phép chia thành nhân với phân thức nghịch đảo và dùng \\(x^2-49=(x-7)(x+7)\\); thu được \\(1\\) trên đúng miền đã xác định."
+    },
+    {
+      "id": "RAT07V1_108",
+      "question": "Tính \\(\\frac{x+8}{x-8}:\\frac{(x+8)^2}{x^2-64}\\) (trên miền xác định).",
+      "options": [
+        "\\(1\\)",
+        "\\(\\frac{x+8}{x-8}\\)",
+        "\\(\\frac{x-8}{x+8}\\)",
+        "\\(-1\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "chia-phan-thuc",
+          "rut-gon-phan-thuc"
+        ],
+        "type": "chia"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trước khi chia, phân thức chia phải khác 0. Mẫu các phân thức ban đầu yêu cầu \\(x\\ne8,\\;x\\ne-8\\). Đổi phép chia thành nhân với phân thức nghịch đảo và dùng \\(x^2-64=(x-8)(x+8)\\); thu được \\(1\\) trên đúng miền đã xác định."
+    },
+    {
+      "id": "RAT07V1_109",
+      "question": "Rút gọn \\(A=\\left(\\frac1{x-1}+\\frac1{x+1}\\right)\\cdot\\frac{x^2-1}{2x}\\) (với \\(x\\ne0,\\;x\\ne1,\\;x\\ne-1\\)).",
+      "options": [
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(x\\)",
+        "\\(0\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "bieu-thuc-nhieu-phep-tinh",
+          "cong-tru-phan-thuc",
+          "nhan-phan-thuc"
+        ],
+        "type": "nhieu-phep-tinh"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Điều kiện xác định ban đầu: \\(x\\ne0,\\;x\\ne1,\\;x\\ne-1\\). Quy đồng: \\(\\frac1{x-1}+\\frac1{x+1}=\\frac{2x}{x^2-1}\\). Do đó \\(A=\\frac{2x}{x^2-1}\\cdot\\frac{x^2-1}{2x}=1\\) chỉ trên miền này. Không tự bỏ các điều kiện sau rút gọn."
+    },
+    {
+      "id": "RAT07V1_110",
+      "question": "Rút gọn \\(A=\\left(\\frac1{x-2}+\\frac1{x+2}\\right)\\cdot\\frac{x^2-4}{2x}\\) (với \\(x\\ne0,\\;x\\ne2,\\;x\\ne-2\\)).",
+      "options": [
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(x\\)",
+        "\\(0\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "bieu-thuc-nhieu-phep-tinh",
+          "cong-tru-phan-thuc",
+          "nhan-phan-thuc"
+        ],
+        "type": "nhieu-phep-tinh"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Điều kiện xác định ban đầu: \\(x\\ne0,\\;x\\ne2,\\;x\\ne-2\\). Quy đồng: \\(\\frac1{x-2}+\\frac1{x+2}=\\frac{2x}{x^2-4}\\). Do đó \\(A=\\frac{2x}{x^2-4}\\cdot\\frac{x^2-4}{2x}=1\\) chỉ trên miền này. Không tự bỏ các điều kiện sau rút gọn."
+    },
+    {
+      "id": "RAT07V1_111",
+      "question": "Rút gọn \\(A=\\left(\\frac1{x-3}+\\frac1{x+3}\\right)\\cdot\\frac{x^2-9}{2x}\\) (với \\(x\\ne0,\\;x\\ne3,\\;x\\ne-3\\)).",
+      "options": [
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(x\\)",
+        "\\(0\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "bieu-thuc-nhieu-phep-tinh",
+          "cong-tru-phan-thuc",
+          "nhan-phan-thuc"
+        ],
+        "type": "nhieu-phep-tinh"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Điều kiện xác định ban đầu: \\(x\\ne0,\\;x\\ne3,\\;x\\ne-3\\). Quy đồng: \\(\\frac1{x-3}+\\frac1{x+3}=\\frac{2x}{x^2-9}\\). Do đó \\(A=\\frac{2x}{x^2-9}\\cdot\\frac{x^2-9}{2x}=1\\) chỉ trên miền này. Không tự bỏ các điều kiện sau rút gọn."
+    },
+    {
+      "id": "RAT07V1_112",
+      "question": "Rút gọn \\(A=\\left(\\frac1{x-4}+\\frac1{x+4}\\right)\\cdot\\frac{x^2-16}{2x}\\) (với \\(x\\ne0,\\;x\\ne4,\\;x\\ne-4\\)).",
+      "options": [
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(x\\)",
+        "\\(0\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "bieu-thuc-nhieu-phep-tinh",
+          "cong-tru-phan-thuc",
+          "nhan-phan-thuc"
+        ],
+        "type": "nhieu-phep-tinh"
+      },
+      "difficulty": "intermediate",
+      "explanation": "Điều kiện xác định ban đầu: \\(x\\ne0,\\;x\\ne4,\\;x\\ne-4\\). Quy đồng: \\(\\frac1{x-4}+\\frac1{x+4}=\\frac{2x}{x^2-16}\\). Do đó \\(A=\\frac{2x}{x^2-16}\\cdot\\frac{x^2-16}{2x}=1\\) chỉ trên miền này. Không tự bỏ các điều kiện sau rút gọn."
+    },
+    {
+      "id": "RAT07V1_113",
+      "question": "Rút gọn \\(A=\\left(\\frac1{x-5}+\\frac1{x+5}\\right)\\cdot\\frac{x^2-25}{2x}\\) (với \\(x\\ne0,\\;x\\ne5,\\;x\\ne-5\\)).",
+      "options": [
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(x\\)",
+        "\\(0\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "bieu-thuc-nhieu-phep-tinh",
+          "cong-tru-phan-thuc",
+          "nhan-phan-thuc"
+        ],
+        "type": "nhieu-phep-tinh"
+      },
+      "difficulty": "advanced",
+      "explanation": "Điều kiện xác định ban đầu: \\(x\\ne0,\\;x\\ne5,\\;x\\ne-5\\). Quy đồng: \\(\\frac1{x-5}+\\frac1{x+5}=\\frac{2x}{x^2-25}\\). Do đó \\(A=\\frac{2x}{x^2-25}\\cdot\\frac{x^2-25}{2x}=1\\) chỉ trên miền này. Không tự bỏ các điều kiện sau rút gọn."
+    },
+    {
+      "id": "RAT07V1_114",
+      "question": "Rút gọn \\(A=\\left(\\frac1{x-6}+\\frac1{x+6}\\right)\\cdot\\frac{x^2-36}{2x}\\) (với \\(x\\ne0,\\;x\\ne6,\\;x\\ne-6\\)).",
+      "options": [
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(x\\)",
+        "\\(0\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "bieu-thuc-nhieu-phep-tinh",
+          "cong-tru-phan-thuc",
+          "nhan-phan-thuc"
+        ],
+        "type": "nhieu-phep-tinh"
+      },
+      "difficulty": "advanced",
+      "explanation": "Điều kiện xác định ban đầu: \\(x\\ne0,\\;x\\ne6,\\;x\\ne-6\\). Quy đồng: \\(\\frac1{x-6}+\\frac1{x+6}=\\frac{2x}{x^2-36}\\). Do đó \\(A=\\frac{2x}{x^2-36}\\cdot\\frac{x^2-36}{2x}=1\\) chỉ trên miền này. Không tự bỏ các điều kiện sau rút gọn."
+    },
+    {
+      "id": "RAT07V1_115",
+      "question": "Tính giá trị của \\(A=\\frac{x + 1}{x - 2}\\) tại \\(x=3\\).",
+      "options": [
+        "\\(4\\)",
+        "\\(5\\)",
+        "\\(3\\)",
+        "Không thể phân tích thêm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "tinh-gia-tri-phan-thuc"
+        ],
+        "type": "tinh-gia-tri"
+      },
+      "difficulty": "basic",
+      "explanation": "Trước hết kiểm tra mẫu của \\(A=\\frac{x + 1}{x - 2}\\) không bằng 0 tại \\(x=3\\). Thay số vào phân thức và tính được \\(4\\)."
+    },
+    {
+      "id": "RAT07V1_116",
+      "question": "Tính giá trị của \\(A=\\frac{x^{2} - 1}{x + 1}\\) tại \\(x=2\\).",
+      "options": [
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(0\\)",
+        "Không thể phân tích thêm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "tinh-gia-tri-phan-thuc"
+        ],
+        "type": "tinh-gia-tri"
+      },
+      "difficulty": "basic",
+      "explanation": "Trước hết kiểm tra mẫu của \\(A=\\frac{x^{2} - 1}{x + 1}\\) không bằng 0 tại \\(x=2\\). Thay số vào phân thức và tính được \\(1\\)."
+    },
+    {
+      "id": "RAT07V1_117",
+      "question": "Tính giá trị của \\(A=\\frac{2 x}{x + 3}\\) tại \\(x=3\\).",
+      "options": [
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(0\\)",
+        "\\(3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "tinh-gia-tri-phan-thuc"
+        ],
+        "type": "tinh-gia-tri"
+      },
+      "difficulty": "basic",
+      "explanation": "Trước hết kiểm tra mẫu của \\(A=\\frac{2 x}{x + 3}\\) không bằng 0 tại \\(x=3\\). Thay số vào phân thức và tính được \\(1\\)."
+    },
+    {
+      "id": "RAT07V1_118",
+      "question": "Tính giá trị của \\(A=\\frac{x^{2} - 4}{x - 2}\\) tại \\(x=5\\).",
+      "options": [
+        "\\(7\\)",
+        "\\(8\\)",
+        "\\(6\\)",
+        "\\(5\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "tinh-gia-tri-phan-thuc"
+        ],
+        "type": "tinh-gia-tri"
+      },
+      "difficulty": "basic",
+      "explanation": "Trước hết kiểm tra mẫu của \\(A=\\frac{x^{2} - 4}{x - 2}\\) không bằng 0 tại \\(x=5\\). Thay số vào phân thức và tính được \\(7\\)."
+    },
+    {
+      "id": "RAT07V1_119",
+      "question": "Với x nguyên, tìm các giá trị để \\(\\frac{x+1}{x-2}\\) là số nguyên.",
+      "options": [
+        "\\(x\\in\\{-1,1,3,5\\}\\)",
+        "\\(x\\in\\{0,2,4\\}\\)",
+        "\\(x=2\\)",
+        "Mọi số nguyên \\(x\\ne2\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "tim-gia-tri-nguyen"
+        ],
+        "type": "tim-gia-tri-nguyen"
+      },
+      "difficulty": "advanced",
+      "explanation": "Điều kiện \\(x\\ne2\\). Ta có \\(\\frac{x+1}{x-2}=1+\\frac3{x-2}\\). Để phân thức là số nguyên, \\(x-2\\) phải là ước của 3: \\(\\pm1,\\pm3\\). Vì vậy \\(x\\in\\{-1,1,3,5\\}\\). Đây là bài vận dụng tính chia hết, chưa tự đưa vào mastery Core."
+    },
+    {
+      "id": "RAT07V1_120",
+      "question": "Với x nguyên, tìm các giá trị để \\(\\frac{x+2}{x-3}\\) là số nguyên.",
+      "options": [
+        "\\(x\\in\\{-2,2,4,8\\}\\)",
+        "\\(x\\in\\{-5,-1,1,5\\}\\)",
+        "\\(x=3\\)",
+        "Mọi số nguyên \\(x\\ne3\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "phan-thuc-dai-so",
+        "skill": [
+          "tim-gia-tri-nguyen"
+        ],
+        "type": "tim-gia-tri-nguyen"
+      },
+      "difficulty": "advanced",
+      "explanation": "Điều kiện \\(x\\ne3\\). Ta có \\(\\frac{x+2}{x-3}=1+\\frac5{x-3}\\). Để phân thức là số nguyên, \\(x-3\\) phải là ước của 5: \\(\\pm1,\\pm5\\). Vì vậy \\(x\\in\\{-2,2,4,8\\}\\). Đây là bài vận dụng tính chia hết, chưa tự đưa vào mastery Core."
+    }
+  ]
+}

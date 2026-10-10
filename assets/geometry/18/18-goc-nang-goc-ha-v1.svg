@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="title desc"><title id="title">Góc nâng và góc hạ từ cùng một điểm quan sát</title><desc id="desc">Từ điểm O có phương ngang nét đứt về bên phải. Tia nhìn đến điểm A ở phía trên phương ngang tạo góc nâng alpha. Tia nhìn đến điểm B ở phía dưới phương ngang tạo góc hạ beta. Hai góc đều được đo tại O so với phương ngang, không phải góc giữa hai tia nhìn.</desc>
+<style>.line{fill:none;stroke:#1f2937;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.horizontal{fill:none;stroke:#1565c0;stroke-width:1.8;stroke-dasharray:7 5}.up{fill:none;stroke:#c62828;stroke-width:2.2;stroke-linecap:round}.down{fill:none;stroke:#1565c0;stroke-width:2.2;stroke-linecap:round}.arc-up{fill:none;stroke:#c62828;stroke-width:1.8}.arc-down{fill:none;stroke:#1565c0;stroke-width:1.8}.point{fill:#111827}.label{fill:#111827;font:19px Arial,Helvetica,sans-serif}.small{fill:#374151;font:17px Arial,Helvetica,sans-serif}.red{fill:#c62828;font:19px Arial,Helvetica,sans-serif}.blue{fill:#1565c0;font:19px Arial,Helvetica,sans-serif}</style>
+<path class="horizontal" d="M108 210 H537"/>
+<path class="up" d="M108 210 L475 80"/><path class="down" d="M108 210 L475 345"/>
+<path class="arc-up" d="M154 210 A46 46 0 0 0 151.34 194.18"/>
+<path class="arc-down" d="M154 210 A46 46 0 0 1 151.18 225.91"/>
+<circle class="point" cx="108" cy="210" r="3.2"/><circle class="point" cx="475" cy="80" r="3.2"/><circle class="point" cx="475" cy="345" r="3.2"/>
+<text class="label" x="83" y="218">O</text><text class="label" x="488" y="74">A</text><text class="label" x="488" y="352">B</text>
+<text class="small" x="341" y="201">Phương ngang</text>
+<text class="red" x="176" y="186">α · góc nâng</text><text class="blue" x="176" y="249">β · góc hạ</text>
+<text class="small" x="319" y="48" text-anchor="middle">Cùng đo từ phương ngang tại O</text>
+<text class="small" x="320" y="390" text-anchor="middle">Không đo góc nâng/hạ giữa hai tia nhìn.</text>
+</svg>

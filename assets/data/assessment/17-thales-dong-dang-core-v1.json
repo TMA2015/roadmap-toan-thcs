@@ -1,0 +1,229 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "GEO17-CORE-READY-V1",
+  "topic": {
+    "id": "17-thales-dong-dang",
+    "title": "Chuyên đề 17 – Thales và tam giác đồng dạng"
+  },
+  "layer": "KNTT-Core",
+  "title": "Core Readiness Check – Chuyên đề 17 – Thales và tam giác đồng dạng",
+  "skill_labels": {
+    "thales-thuan": "thales-thuan",
+    "thales-dao": "thales-dao",
+    "ti-le-doan-thang": "ti-le-doan-thang",
+    "duong-trung-binh": "duong-trung-binh",
+    "tinh-chat-duong-phan-giac": "tinh-chat-duong-phan-giac",
+    "nhan-biet-dong-dang": "nhan-biet-dong-dang",
+    "thu-tu-tuong-ung": "thu-tu-tuong-ung",
+    "dong-dang-gg": "dong-dang-gg",
+    "dong-dang-cgc": "dong-dang-cgc",
+    "dong-dang-ccc": "dong-dang-ccc",
+    "tinh-do-dai-dong-dang": "tinh-do-dai-dong-dang",
+    "hinh-dong-dang": "hinh-dong-dang"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "GEO17READY_001",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "thales-thuan",
+      "skill": "thales-thuan",
+      "points": 1,
+      "question": "DE∥BC. Hệ thức:",
+      "options": [
+        "AD/AB=AE/AC",
+        "AD/DB=AC/AE",
+        "AB/AD=AE/AC",
+        "AD/AB=EC/AC"
+      ],
+      "answer": 0,
+      "explanation": "Thales thuận."
+    },
+    {
+      "id": "GEO17READY_002",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "thales-dao",
+      "skill": "thales-dao",
+      "points": 1,
+      "question": "AD/AB=AE/AC suy ra:",
+      "options": [
+        "DE∥BC",
+        "DE⊥BC",
+        "AD=AE",
+        "AB=AC"
+      ],
+      "answer": 0,
+      "explanation": "Thales đảo."
+    },
+    {
+      "id": "GEO17READY_003",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "duong-trung-binh",
+      "skill": "duong-trung-binh",
+      "points": 1,
+      "question": "M,N là trung điểm AB,AC. MN:",
+      "options": [
+        "Song song BC và bằng BC/2",
+        "Vuông góc BC",
+        "Bằng BC",
+        "Là phân giác"
+      ],
+      "answer": 0,
+      "explanation": "Đường trung bình."
+    },
+    {
+      "id": "GEO17READY_004",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tinh-chat-duong-phan-giac",
+      "skill": "tinh-chat-duong-phan-giac",
+      "points": 1,
+      "question": "AD phân giác góc A. Hệ thức:",
+      "options": [
+        "BD/DC=AB/AC",
+        "BD/DC=AC/AB",
+        "BD/BC=AB/AC",
+        "AD/DC=AB/AC"
+      ],
+      "answer": 0,
+      "explanation": "Định lý phân giác."
+    },
+    {
+      "id": "GEO17READY_005",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "thu-tu-tuong-ung",
+      "skill": "thu-tu-tuong-ung",
+      "points": 1,
+      "question": "ΔABC∼ΔDEF. AC tương ứng:",
+      "options": [
+        "DF",
+        "DE",
+        "EF",
+        "ED"
+      ],
+      "answer": 0,
+      "explanation": "A↔D,C↔F."
+    },
+    {
+      "id": "GEO17READY_006",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dong-dang-gg",
+      "skill": "dong-dang-gg",
+      "points": 1,
+      "question": "Hai góc tương ứng bằng →",
+      "options": [
+        "g-g",
+        "c-g-c",
+        "c-c-c",
+        "c.c.c bằng nhau"
+      ],
+      "answer": 0,
+      "explanation": "g-g."
+    },
+    {
+      "id": "GEO17READY_007",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dong-dang-cgc",
+      "skill": "dong-dang-cgc",
+      "points": 1,
+      "question": "c-g-c cần góc:",
+      "options": [
+        "Xen giữa hai cạnh tỉ lệ",
+        "Bất kỳ",
+        "Góc ngoài",
+        "Không cần"
+      ],
+      "answer": 0,
+      "explanation": "Góc xen giữa."
+    },
+    {
+      "id": "GEO17READY_008",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dong-dang-ccc",
+      "skill": "dong-dang-ccc",
+      "points": 1,
+      "question": "Ba cặp cạnh cùng tỉ lệ →",
+      "options": [
+        "Đồng dạng",
+        "Bằng nhau bắt buộc",
+        "Không đủ",
+        "Vuông"
+      ],
+      "answer": 0,
+      "explanation": "c-c-c."
+    },
+    {
+      "id": "GEO17READY_009",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tinh-do-dai-dong-dang",
+      "skill": "tinh-do-dai-dong-dang",
+      "points": 1,
+      "question": "AB/DE=2/3, BC=10 và BC↔EF. EF:",
+      "options": [
+        "15",
+        "20/3",
+        "12",
+        "5"
+      ],
+      "answer": 0,
+      "explanation": "10/EF=2/3."
+    },
+    {
+      "id": "GEO17READY_010",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "hinh-dong-dang",
+      "skill": "hinh-dong-dang",
+      "points": 1,
+      "question": "Hai hình đồng dạng:",
+      "options": [
+        "Cùng hình dạng, độ dài tương ứng theo một tỉ số",
+        "Luôn cùng kích thước",
+        "Luôn cùng diện tích",
+        "Mọi cạnh bằng nhau"
+      ],
+      "answer": 0,
+      "explanation": "Định nghĩa đồng dạng."
+    }
+  ],
+  "next_topic": {
+    "id": "18-he-thuc-luong",
+    "title": "Chuyên đề 18 – Hệ thức lượng trong tam giác vuông"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "ALG-BATCH-08-10-CHATGPT-REVIEW-INTEGRATION-001",
+  "task_id": "ALG-BATCH-08-10-001",
+  "context_version": "1.0.28",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "INTEGRATION_DECISION",
+  "source_alignment": "FAIL",
+  "claims": [
+    {
+      "id": "S1",
+      "status": "FACT_VERIFIED",
+      "statement": "None of the six Gemini item IDs exists in the current repository.",
+      "evidence": [
+        "GitHub exact-ID search on main"
+      ]
+    },
+    {
+      "id": "S2",
+      "status": "FACT_VERIFIED",
+      "statement": "Closest numeric production IDs do not match the reviewed content: EQ08V1_045 is a product equation, SYS09V1_012 checks a linear equation in two variables, and FUN10V1_022 is a value-table item.",
+      "evidence": [
+        "current Practice Bank chunks"
+      ]
+    },
+    {
+      "id": "S3",
+      "status": "FACT_VERIFIED",
+      "statement": "Actual written items 08-WR-10, 09-WR-05 and 10-WR-08 have different prompts from Gemini's descriptions.",
+      "evidence": [
+        "current Practice Room markdown"
+      ]
+    },
+    {
+      "id": "S4",
+      "status": "FACT_VERIFIED",
+      "statement": "Independent source QA discovered corrupted LaTeX escaping in CĐ08-CĐ10 Practice Room Markdown. This is a real production defect unrelated to Gemini's six corrections.",
+      "evidence": [
+        "control-character and unescaped-TeX scan"
+      ]
+    }
+  ],
+  "decisions": [
+    "Reject all six Gemini corrections as ungrounded against current production source.",
+    "Fix the verified Markdown LaTeX escaping defect in CĐ08-CĐ10.",
+    "Add CI checks for control characters and common unescaped TeX tokens in Practice Room Markdown.",
+    "Any future Gemini review must quote the exact repository item ID and current prompt text before proposing a correction."
+  ],
+  "acceptance": {
+    "verdict": "PASS-WITH-CHANGES",
+    "notes": "Gemini review not integrated due source mismatch. Verified Markdown rendering defect fixed independently."
+  }
+}

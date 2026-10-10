@@ -1,0 +1,542 @@
+{
+  "schema": "practice-skill-audit-snapshot-v1",
+  "date": "2026-09-26",
+  "phase": "manifest-only-unverified-question-tags",
+  "topics": [
+    {
+      "topic": "12-phuong-trinh-bac-hai-viete",
+      "manifest": "docs/assets/data/practice/12-phuong-trinh-bac-hai-viete-v1.manifest.json",
+      "manifest_sha": "e0c0fa4ae80b2b5d88a44e6505f090c1d7843aa3",
+      "declared_questions": 120,
+      "skill_labels": {
+        "nhan-dang-pt-bac-hai": "Nhận dạng phương trình bậc hai",
+        "he-so-abc": "Xác định hệ số a, b, c",
+        "tinh-delta": "Tính biệt thức Δ",
+        "so-nghiem-delta": "Số nghiệm theo Δ",
+        "cong-thuc-nghiem": "Công thức nghiệm",
+        "delta-phay": "Công thức nghiệm thu gọn Δ'",
+        "giai-pt-bac-hai": "Giải phương trình bậc hai",
+        "nham-nghiem": "Nhẩm nghiệm",
+        "tham-so-so-nghiem": "Tham số và số nghiệm",
+        "tong-tich-nghiem": "Tổng – tích nghiệm theo Viète",
+        "bieu-thuc-doi-xung": "Biểu thức đối xứng theo nghiệm",
+        "lap-pt-tu-nghiem": "Lập phương trình từ nghiệm",
+        "dau-nghiem": "Xét dấu hai nghiệm",
+        "lien-he-do-thi": "Liên hệ nghiệm với đồ thị"
+      },
+      "skill_groups": [
+        {
+          "id": "A",
+          "label": "A. Phương trình bậc hai và Δ",
+          "skills": [
+            "nhan-dang-pt-bac-hai",
+            "he-so-abc",
+            "tinh-delta",
+            "so-nghiem-delta",
+            "cong-thuc-nghiem",
+            "delta-phay"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "B. Giải phương trình và tham số",
+          "skills": [
+            "giai-pt-bac-hai",
+            "nham-nghiem",
+            "tham-so-so-nghiem"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "C. Hệ thức Viète",
+          "skills": [
+            "tong-tich-nghiem",
+            "bieu-thuc-doi-xung",
+            "lap-pt-tu-nghiem"
+          ]
+        },
+        {
+          "id": "D",
+          "label": "D. Dấu nghiệm và liên hệ đồ thị",
+          "skills": [
+            "dau-nghiem",
+            "lien-he-do-thi"
+          ]
+        }
+      ],
+      "sources": [
+        "12-phuong-trinh-bac-hai-viete-v1-01.json",
+        "12-phuong-trinh-bac-hai-viete-v1-02.json",
+        "12-phuong-trinh-bac-hai-viete-v1-03.json",
+        "12-phuong-trinh-bac-hai-viete-v1-04.json"
+      ]
+    },
+    {
+      "topic": "13-goc-va-duong-thang",
+      "manifest": "docs/assets/data/practice/13-goc-va-duong-thang-v1.manifest.json",
+      "manifest_sha": "4b6a44701d6fe413e333349a799aaa7911390b70",
+      "declared_questions": 156,
+      "skill_labels": {
+        "diem-thuoc-duong": "Điểm thuộc / không thuộc đường thẳng",
+        "tia-doi": "Hai tia đối nhau",
+        "trung-diem": "Trung điểm đoạn thẳng",
+        "phan-loai-goc": "Phân loại góc",
+        "goc-phu-bu": "Góc phụ nhau – bù nhau",
+        "tia-phan-giac": "Tia phân giác",
+        "goc-doi-dinh": "Góc đối đỉnh",
+        "duong-vuong-goc": "Hai đường thẳng vuông góc",
+        "goc-so-le-trong": "Góc so le trong",
+        "goc-dong-vi": "Góc đồng vị",
+        "goc-trong-cung-phia": "Góc trong cùng phía",
+        "tinh-chat-song-song": "Tính chất hai đường thẳng song song",
+        "dau-hieu-song-song": "Dấu hiệu nhận biết song song",
+        "vuong-goc-song-song": "Quan hệ vuông góc – song song",
+        "diem-nam-giua": "Điểm nằm giữa hai điểm",
+        "tia": "Khái niệm tia",
+        "doan-thang-do-dai": "Đoạn thẳng và độ dài",
+        "khai-niem-goc": "Khái niệm góc",
+        "do-goc": "Số đo góc",
+        "nhan-dang-goc-dac-biet": "Nhận dạng góc ở vị trí đặc biệt",
+        "tien-de-euclid": "Tiên đề Euclid",
+        "gia-thiet-ket-luan": "Giả thiết – kết luận",
+        "lap-luan-chung-minh-ngan": "Lập luận chứng minh ngắn"
+      },
+      "skill_groups": [
+        {
+          "id": "A",
+          "label": "A. Điểm – tia – đoạn thẳng",
+          "skills": [
+            "diem-thuoc-duong",
+            "diem-nam-giua",
+            "tia",
+            "tia-doi",
+            "doan-thang-do-dai",
+            "trung-diem"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "B. Góc và quan hệ góc",
+          "skills": [
+            "khai-niem-goc",
+            "do-goc",
+            "phan-loai-goc",
+            "goc-phu-bu",
+            "tia-phan-giac",
+            "goc-doi-dinh",
+            "nhan-dang-goc-dac-biet",
+            "duong-vuong-goc"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "C. Hai đường thẳng song song",
+          "skills": [
+            "goc-so-le-trong",
+            "goc-dong-vi",
+            "goc-trong-cung-phia",
+            "tinh-chat-song-song",
+            "dau-hieu-song-song",
+            "tien-de-euclid"
+          ]
+        },
+        {
+          "id": "D",
+          "label": "D. Ngôn ngữ chứng minh",
+          "skills": [
+            "gia-thiet-ket-luan",
+            "lap-luan-chung-minh-ngan"
+          ]
+        },
+        {
+          "id": "E",
+          "label": "E. Core-Support: vuông góc – song song",
+          "skills": [
+            "vuong-goc-song-song"
+          ]
+        }
+      ],
+      "sources": [
+        "13-goc-va-duong-thang-v1-01.json",
+        "13-goc-va-duong-thang-v1-02.json",
+        "13-goc-va-duong-thang-v1-03.json",
+        "13-goc-va-duong-thang-v1-04.json",
+        "13-goc-va-duong-thang-v1-05.json"
+      ]
+    },
+    {
+      "topic": "14-tam-giac",
+      "manifest": "docs/assets/data/practice/14-tam-giac-v1.manifest.json",
+      "manifest_sha": "ee2c1dae38314e8dd220a20a106ba227f26aa9c2",
+      "declared_questions": 140,
+      "skill_labels": {
+        "phan-loai-tam-giac": "Phân loại tam giác",
+        "chu-vi-dien-tich": "Chu vi – diện tích tam giác",
+        "tong-goc-tam-giac": "Tổng ba góc trong tam giác",
+        "goc-ngoai": "Góc ngoài của tam giác",
+        "so-sanh-canh-goc": "Quan hệ cạnh – góc đối diện",
+        "bat-dang-thuc-tam-giac": "Bất đẳng thức tam giác",
+        "tam-giac-can": "Tam giác cân",
+        "tam-giac-deu": "Tam giác đều",
+        "pythagore": "Định lý Pythagore",
+        "pythagore-dao": "Định lý Pythagore đảo",
+        "bang-nhau-ccc": "Hai tam giác bằng nhau c.c.c",
+        "bang-nhau-cgc": "Hai tam giác bằng nhau c.g.c",
+        "bang-nhau-gcg": "Hai tam giác bằng nhau g.c.g",
+        "bang-nhau-tam-giac-vuong": "Bằng nhau của hai tam giác vuông",
+        "viet-tuong-ung-tam-giac-bang-nhau": "Viết đúng thứ tự tương ứng của hai tam giác bằng nhau",
+        "nhan-biet-trung-truc": "Nhận biết đường trung trực",
+        "cach-deu-dinh": "Điểm cách đều hai đầu mút",
+        "tinh-chat-duong-trung-truc": "Tính chất và dấu hiệu đường trung trực",
+        "duong-vuong-goc-duong-xien": "Đường vuông góc và đường xiên"
+      },
+      "skill_groups": [
+        {
+          "id": "A",
+          "label": "A. Góc – cạnh – bất đẳng thức",
+          "skills": [
+            "tong-goc-tam-giac",
+            "so-sanh-canh-goc",
+            "bat-dang-thuc-tam-giac",
+            "duong-vuong-goc-duong-xien"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "B. Tam giác cân – đường trung trực",
+          "skills": [
+            "tam-giac-can",
+            "nhan-biet-trung-truc",
+            "cach-deu-dinh",
+            "tinh-chat-duong-trung-truc"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "C. Hai tam giác bằng nhau",
+          "skills": [
+            "viet-tuong-ung-tam-giac-bang-nhau",
+            "bang-nhau-ccc",
+            "bang-nhau-cgc",
+            "bang-nhau-gcg",
+            "bang-nhau-tam-giac-vuong"
+          ]
+        },
+        {
+          "id": "S",
+          "label": "Core-Support / kết nối",
+          "skills": [
+            "phan-loai-tam-giac",
+            "chu-vi-dien-tich",
+            "goc-ngoai",
+            "tam-giac-deu",
+            "pythagore",
+            "pythagore-dao"
+          ]
+        }
+      ],
+      "sources": [
+        "14-tam-giac-v1-01.json",
+        "14-tam-giac-v1-02.json",
+        "14-tam-giac-v1-03.json",
+        "14-tam-giac-v1-04.json",
+        "14-tam-giac-v1-05.json"
+      ]
+    },
+    {
+      "topic": "15-duong-dong-quy",
+      "manifest": "docs/assets/data/practice/15-duong-dong-quy-v1.manifest.json",
+      "manifest_sha": "37fc0edeed7de731a34fc0ccacccfc735d29f985",
+      "declared_questions": 124,
+      "skill_labels": {
+        "nhan-biet-trung-tuyen": "Nhận biết đường trung tuyến",
+        "trong-tam": "Trọng tâm",
+        "ti-so-trong-tam": "Tỉ số trọng tâm 2 : 1",
+        "nhan-biet-duong-cao": "Nhận biết đường cao",
+        "truc-tam": "Trực tâm",
+        "vi-tri-truc-tam": "Vị trí trực tâm",
+        "nhan-biet-phan-giac": "Nhận biết đường phân giác",
+        "tam-noi-tiep": "Tâm nội tiếp",
+        "cach-deu-canh": "Tính chất cách đều ba cạnh",
+        "nhan-biet-trung-truc": "Nhận biết đường trung trực",
+        "tam-ngoai-tiep": "Tâm ngoại tiếp",
+        "cach-deu-dinh": "Tính chất cách đều ba đỉnh",
+        "vi-tri-tam-ngoai-tiep": "Vị trí tâm ngoại tiếp",
+        "phan-biet-bon-tam": "Phân biệt G – H – I – O",
+        "dong-quy-bon-duong-dac-biet": "Tính đồng quy của bốn họ đường đặc biệt"
+      },
+      "skill_groups": [
+        {
+          "id": "A",
+          "label": "A. Trung tuyến – trọng tâm",
+          "skills": [
+            "nhan-biet-trung-tuyen",
+            "trong-tam",
+            "ti-so-trong-tam"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "B. Đường cao – trực tâm",
+          "skills": [
+            "nhan-biet-duong-cao",
+            "truc-tam"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "C. Phân giác – tâm nội tiếp",
+          "skills": [
+            "nhan-biet-phan-giac",
+            "tam-noi-tiep"
+          ]
+        },
+        {
+          "id": "D",
+          "label": "D. Trung trực – tâm ngoại tiếp",
+          "skills": [
+            "nhan-biet-trung-truc",
+            "tam-ngoai-tiep"
+          ]
+        },
+        {
+          "id": "E",
+          "label": "E. Bốn tâm và đồng quy",
+          "skills": [
+            "phan-biet-bon-tam",
+            "dong-quy-bon-duong-dac-biet"
+          ]
+        },
+        {
+          "id": "S",
+          "label": "Core-Support",
+          "skills": [
+            "vi-tri-truc-tam",
+            "cach-deu-canh",
+            "cach-deu-dinh",
+            "vi-tri-tam-ngoai-tiep"
+          ]
+        }
+      ],
+      "sources": [
+        "15-duong-dong-quy-v1-01.json",
+        "15-duong-dong-quy-v1-02.json",
+        "15-duong-dong-quy-v1-03.json",
+        "15-duong-dong-quy-v1-04.json",
+        "15-duong-dong-quy-v1-05.json"
+      ]
+    },
+    {
+      "topic": "16-tu-giac",
+      "manifest": "docs/assets/data/practice/16-tu-giac-v1.manifest.json",
+      "manifest_sha": "e63b621e30628616f559a3fd7518f0c90a3e5ed6",
+      "declared_questions": 120,
+      "skill_labels": {
+        "tong-goc-tu-giac": "Tổng các góc trong tứ giác",
+        "hinh-thang": "Hình thang",
+        "hinh-thang-can": "Hình thang cân",
+        "hbh-tinh-chat": "Tính chất hình bình hành",
+        "hbh-dau-hieu": "Dấu hiệu hình bình hành",
+        "hcn-tinh-chat": "Tính chất hình chữ nhật",
+        "hcn-dau-hieu": "Dấu hiệu hình chữ nhật",
+        "hthoi-tinh-chat": "Tính chất hình thoi",
+        "hthoi-dau-hieu": "Dấu hiệu hình thoi",
+        "hvuong-tinh-chat": "Tính chất hình vuông",
+        "hvuong-dau-hieu": "Dấu hiệu hình vuông",
+        "quan-he-bao-ham": "Quan hệ bao hàm giữa các tứ giác đặc biệt",
+        "duong-cheo-suy-luan": "Suy luận từ tính chất đường chéo"
+      },
+      "skill_groups": [
+        {
+          "id": "A",
+          "label": "A. Tứ giác – hình thang",
+          "skills": [
+            "tong-goc-tu-giac",
+            "hinh-thang",
+            "hinh-thang-can"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "B. Hình bình hành",
+          "skills": [
+            "hbh-tinh-chat",
+            "hbh-dau-hieu"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "C. Hình chữ nhật",
+          "skills": [
+            "hcn-tinh-chat",
+            "hcn-dau-hieu"
+          ]
+        },
+        {
+          "id": "D",
+          "label": "D. Hình thoi",
+          "skills": [
+            "hthoi-tinh-chat",
+            "hthoi-dau-hieu"
+          ]
+        },
+        {
+          "id": "E",
+          "label": "E. Hình vuông và hệ thống hóa",
+          "skills": [
+            "hvuong-tinh-chat",
+            "hvuong-dau-hieu",
+            "quan-he-bao-ham",
+            "duong-cheo-suy-luan"
+          ]
+        }
+      ],
+      "sources": [
+        "16-tu-giac-v1-01.json",
+        "16-tu-giac-v1-02.json",
+        "16-tu-giac-v1-03.json",
+        "16-tu-giac-v1-04.json"
+      ]
+    },
+    {
+      "topic": "17-thales-dong-dang",
+      "manifest": "docs/assets/data/practice/17-thales-dong-dang-v1.manifest.json",
+      "manifest_sha": "3295479db8646dd050ddd7854f116dd9cc7c3b1b",
+      "declared_questions": 132,
+      "skill_labels": {
+        "thales-thuan": "Thales thuận",
+        "thales-dao": "Thales đảo",
+        "ti-le-doan-thang": "Tỉ lệ các đoạn thẳng",
+        "duong-trung-binh": "Đường trung bình tam giác",
+        "nhan-biet-dong-dang": "Nhận biết tam giác đồng dạng",
+        "dong-dang-gg": "Đồng dạng g-g",
+        "dong-dang-cgc": "Đồng dạng c-g-c",
+        "dong-dang-ccc": "Đồng dạng c-c-c",
+        "thu-tu-tuong-ung": "Thứ tự đỉnh tương ứng",
+        "tinh-do-dai-dong-dang": "Tính độ dài bằng đồng dạng",
+        "ti-so-chu-vi": "Tỉ số chu vi",
+        "ti-so-dien-tich": "Tỉ số diện tích",
+        "he-thuc-tich": "Hệ thức tích từ đồng dạng",
+        "ket-hop-song-song-dong-dang": "Kết hợp song song – đồng dạng",
+        "tinh-chat-duong-phan-giac": "Tính chất đường phân giác trong tam giác",
+        "hinh-dong-dang": "Hình đồng dạng"
+      },
+      "skill_groups": [
+        {
+          "id": "thales",
+          "label": "A. Thales và đường trung bình",
+          "skills": [
+            "thales-thuan",
+            "thales-dao",
+            "ti-le-doan-thang",
+            "duong-trung-binh",
+            "tinh-chat-duong-phan-giac"
+          ]
+        },
+        {
+          "id": "dong-dang",
+          "label": "B. Nhận biết tam giác đồng dạng",
+          "skills": [
+            "nhan-biet-dong-dang",
+            "dong-dang-gg",
+            "dong-dang-cgc",
+            "dong-dang-ccc",
+            "thu-tu-tuong-ung",
+            "hinh-dong-dang"
+          ]
+        },
+        {
+          "id": "van-dung",
+          "label": "C. Vận dụng đồng dạng",
+          "skills": [
+            "tinh-do-dai-dong-dang",
+            "ti-so-chu-vi",
+            "ti-so-dien-tich",
+            "he-thuc-tich",
+            "ket-hop-song-song-dong-dang"
+          ]
+        }
+      ],
+      "sources": [
+        "17-thales-dong-dang-v1-01.json",
+        "17-thales-dong-dang-v1-02.json",
+        "17-thales-dong-dang-v1-03.json",
+        "17-thales-dong-dang-v1-04.json",
+        "17-thales-dong-dang-v1-05.json"
+      ]
+    },
+    {
+      "topic": "18-he-thuc-luong",
+      "manifest": "docs/assets/data/practice/18-he-thuc-luong-v1.manifest.json",
+      "manifest_sha": "3a38cd8de28b455796326c8af30186742aba700a",
+      "declared_questions": 132,
+      "skill_labels": {
+        "pythagore": "Định lý Pythagore",
+        "pythagore-dao": "Pythagore đảo",
+        "canh-huyen": "Cạnh huyền – cạnh góc vuông",
+        "he-thuc-canh": "Hệ thức cạnh góc vuông",
+        "he-thuc-duong-cao": "Hệ thức đường cao",
+        "dien-tich-duong-cao": "Diện tích và đường cao",
+        "doi-ke-huyen": "Nhận biết cạnh đối – kề – huyền",
+        "sin": "Tỉ số sin",
+        "cos": "Tỉ số cos",
+        "tan": "Tỉ số tan",
+        "tim-canh-luong-giac": "Tìm cạnh bằng lượng giác",
+        "tim-goc-luong-giac": "Tìm góc bằng lượng giác",
+        "goc-nang-ha": "Góc nâng – góc hạ",
+        "chieu-cao-khoang-cach": "Chiều cao – khoảng cách",
+        "ket-hop-he-thuc": "Kết hợp hệ thức lượng",
+        "cot": "Tỉ số cot"
+      },
+      "skill_groups": [
+        {
+          "id": "vuong",
+          "label": "A. Tam giác vuông và Pythagore",
+          "skills": [
+            "pythagore",
+            "pythagore-dao",
+            "canh-huyen"
+          ]
+        },
+        {
+          "id": "duong-cao",
+          "label": "B. Hệ thức đường cao xuống cạnh huyền",
+          "skills": [
+            "he-thuc-canh",
+            "he-thuc-duong-cao",
+            "dien-tich-duong-cao"
+          ]
+        },
+        {
+          "id": "luong-giac",
+          "label": "C. Tỉ số lượng giác",
+          "skills": [
+            "doi-ke-huyen",
+            "sin",
+            "cos",
+            "tan",
+            "tim-canh-luong-giac",
+            "tim-goc-luong-giac",
+            "cot"
+          ]
+        },
+        {
+          "id": "thuc-te",
+          "label": "D. Ứng dụng và bài toán thực tế",
+          "skills": [
+            "goc-nang-ha",
+            "chieu-cao-khoang-cach",
+            "ket-hop-he-thuc"
+          ]
+        }
+      ],
+      "sources": [
+        "18-he-thuc-luong-v1-01.json",
+        "18-he-thuc-luong-v1-02.json",
+        "18-he-thuc-luong-v1-03.json",
+        "18-he-thuc-luong-v1-04.json",
+        "18-he-thuc-luong-v1-05.json"
+      ]
+    }
+  ]
+}

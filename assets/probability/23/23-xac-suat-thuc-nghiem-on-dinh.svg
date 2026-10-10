@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Xác suất thực nghiệm dao động và dần ổn định quanh xác suất mô hình</title>
+  <desc id="desc">Đồ thị ví dụ tung đồng xu cân đối nhiều lần. Tần số tương đối của mặt ngửa lần lượt là 0,60; 0,45; 0,54; 0,48; 0,515 và 0,502 ở 10, 20, 50, 100, 200 và 500 lần thử. Các điểm dao động quanh đường xác suất mô hình 0,5 và biên độ dao động nhìn chung nhỏ dần khi số lần thử tăng.</desc>
+
+  <rect x="0" y="0" width="1000" height="560" rx="24" fill="#ffffff"/>
+  <text x="500" y="46" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#1f2937">Xác suất thực nghiệm: càng nhiều lần thử, càng dễ ổn định</text>
+  <text x="500" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#4b5563">Ví dụ: theo dõi tần số tương đối của mặt Ngửa khi tung một đồng xu cân đối</text>
+
+  <!-- Plot area -->
+  <rect x="105" y="120" width="800" height="300" rx="12" fill="#f9fafb" stroke="#d1d5db"/>
+
+  <!-- horizontal guides: 0.40 to 0.65 -->
+  <g font-family="Arial, sans-serif" font-size="16" fill="#4b5563" text-anchor="end">
+    <line x1="105" y1="390" x2="905" y2="390" stroke="#e5e7eb"/>
+    <text x="92" y="396">0,40</text>
+    <line x1="105" y1="336" x2="905" y2="336" stroke="#e5e7eb"/>
+    <text x="92" y="342">0,45</text>
+    <line x1="105" y1="282" x2="905" y2="282" stroke="#9ca3af" stroke-width="2" stroke-dasharray="9 8"/>
+    <text x="92" y="288" font-weight="700">0,50</text>
+    <line x1="105" y1="228" x2="905" y2="228" stroke="#e5e7eb"/>
+    <text x="92" y="234">0,55</text>
+    <line x1="105" y1="174" x2="905" y2="174" stroke="#e5e7eb"/>
+    <text x="92" y="180">0,60</text>
+    <line x1="105" y1="120" x2="905" y2="120" stroke="#e5e7eb"/>
+    <text x="92" y="126">0,65</text>
+  </g>
+
+  <!-- model probability label -->
+  <rect x="656" y="248" width="235" height="28" rx="10" fill="#eef2ff"/>
+  <text x="773" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#4338ca">Xác suất mô hình: 0,5</text>
+
+  <!-- x ticks -->
+  <g font-family="Arial, sans-serif" font-size="16" fill="#374151" text-anchor="middle">
+    <line x1="145" y1="420" x2="145" y2="428" stroke="#374151" stroke-width="2"/><text x="145" y="452">10</text>
+    <line x1="285" y1="420" x2="285" y2="428" stroke="#374151" stroke-width="2"/><text x="285" y="452">20</text>
+    <line x1="425" y1="420" x2="425" y2="428" stroke="#374151" stroke-width="2"/><text x="425" y="452">50</text>
+    <line x1="565" y1="420" x2="565" y2="428" stroke="#374151" stroke-width="2"/><text x="565" y="452">100</text>
+    <line x1="705" y1="420" x2="705" y2="428" stroke="#374151" stroke-width="2"/><text x="705" y="452">200</text>
+    <line x1="865" y1="420" x2="865" y2="428" stroke="#374151" stroke-width="2"/><text x="865" y="452">500</text>
+  </g>
+
+  <!-- empirical series: .60, .45, .54, .48, .515, .502 -->
+  <polyline points="145,174 285,336 425,239 565,304 705,266 865,280" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#2563eb" stroke="#ffffff" stroke-width="3">
+    <circle cx="145" cy="174" r="9"/><circle cx="285" cy="336" r="9"/><circle cx="425" cy="239" r="9"/>
+    <circle cx="565" cy="304" r="9"/><circle cx="705" cy="266" r="9"/><circle cx="865" cy="280" r="9"/>
+  </g>
+
+  <!-- value callouts -->
+  <g font-family="Arial, sans-serif" font-size="15" fill="#1d4ed8" font-weight="700" text-anchor="middle">
+    <text x="145" y="154">6/10 = 0,60</text>
+    <text x="285" y="361">9/20 = 0,45</text>
+    <text x="425" y="218">27/50 = 0,54</text>
+    <text x="565" y="329">48/100 = 0,48</text>
+    <text x="705" y="243">103/200 = 0,515</text>
+    <text x="865" y="305">251/500 = 0,502</text>
+  </g>
+
+  <!-- axis labels -->
+  <text x="505" y="492" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#374151">Số lần thử n</text>
+  <text x="30" y="270" text-anchor="middle" transform="rotate(-90 30 270)" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#374151">m/n</text>
+
+  <!-- takeaway -->
+  <rect x="115" y="510" width="770" height="36" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="500" y="534" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1e40af">Không cần tiến gần 0,5 theo một chiều: giá trị có thể dao động, nhưng thường ổn định hơn khi n lớn.</text>
+</svg>

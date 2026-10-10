@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "CTR15-MICRO-V1",
+  "topic": {
+    "id": "15-duong-dong-quy",
+    "title": "Các đường đồng quy trong tam giác"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "GEO15MICRO_001",
+      "card_id": "geo15-core-1",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-trung-tuyen",
+      "question": "AM nối A với trung điểm M của BC. AM là:",
+      "options": [
+        "Trung tuyến",
+        "Đường cao",
+        "Trung trực",
+        "Phân giác"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "nhan-biet-trung-tuyen"
+        ],
+        "type": "nhan-biet-trung-tuyen",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Trung tuyến nối đỉnh với trung điểm cạnh đối.",
+      "hints": [
+        "M là trung điểm BC.",
+        "AM xuất phát từ đỉnh A."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_002",
+      "card_id": "geo15-core-1",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "trong-tam",
+      "question": "Ba trung tuyến đồng quy tại:",
+      "options": [
+        "Trọng tâm G",
+        "Trực tâm H",
+        "Tâm nội tiếp I",
+        "Tâm ngoại tiếp O"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "trong-tam"
+        ],
+        "type": "trong-tam",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "G là giao điểm ba trung tuyến.",
+      "hints": [
+        "Nhớ ký hiệu G.",
+        "Không nhầm với H."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_003",
+      "card_id": "geo15-core-1",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "ti-so-trong-tam",
+      "question": "G là trọng tâm trên AM, AG=8. GM bằng:",
+      "options": [
+        "4",
+        "8",
+        "12",
+        "16"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "ti-so-trong-tam"
+        ],
+        "type": "ti-so-trong-tam",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "AG:GM=2:1.",
+      "hints": [
+        "AG gấp đôi GM.",
+        "8÷2."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_004",
+      "card_id": "geo15-core-2",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-duong-cao",
+      "question": "Đường cao từ A của tam giác ABC là đường qua A và:",
+      "options": [
+        "Vuông góc đường thẳng BC",
+        "Đi qua trung điểm BC",
+        "Phân giác góc A",
+        "Song song BC"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "nhan-biet-duong-cao"
+        ],
+        "type": "nhan-biet-duong-cao",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Đường cao đi qua đỉnh và vuông góc đường thẳng chứa cạnh đối.",
+      "hints": [
+        "Xuất phát từ A.",
+        "Vuông góc cạnh đối."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_005",
+      "card_id": "geo15-core-2",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "truc-tam",
+      "question": "Ba đường cao đồng quy tại:",
+      "options": [
+        "Trực tâm H",
+        "Trọng tâm G",
+        "Tâm nội tiếp I",
+        "Tâm ngoại tiếp O"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "truc-tam"
+        ],
+        "type": "truc-tam",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "H là giao điểm ba đường cao.",
+      "hints": [
+        "Ký hiệu H.",
+        "Đường cao → trực tâm."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_006",
+      "card_id": "geo15-core-2",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "truc-tam",
+      "question": "Tam giác vuông tại A có trực tâm:",
+      "options": [
+        "A",
+        "Trung điểm BC",
+        "B",
+        "C"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "truc-tam"
+        ],
+        "type": "truc-tam",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai cạnh góc vuông chính là hai đường cao và cắt tại A.",
+      "hints": [
+        "Xét hai cạnh AB,AC.",
+        "Chúng vuông góc nhau."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_007",
+      "card_id": "geo15-core-3",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-phan-giac",
+      "question": "Đường phân giác trong từ A:",
+      "options": [
+        "Chia góc A thành hai góc bằng nhau",
+        "Vuông góc BC bắt buộc",
+        "Đi qua trung điểm BC bắt buộc",
+        "Song song BC"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "nhan-biet-phan-giac"
+        ],
+        "type": "nhan-biet-phan-giac",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Định nghĩa phân giác.",
+      "hints": [
+        "Tập trung vào góc A.",
+        "Chia đôi góc."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_008",
+      "card_id": "geo15-core-3",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tam-noi-tiep",
+      "question": "Ba phân giác trong đồng quy tại:",
+      "options": [
+        "Tâm nội tiếp I",
+        "Trọng tâm G",
+        "Trực tâm H",
+        "Tâm ngoại tiếp O"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "tam-noi-tiep"
+        ],
+        "type": "tam-noi-tiep",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "I là giao điểm ba phân giác trong.",
+      "hints": [
+        "Phân giác → I.",
+        "I liên quan đường tròn nội tiếp."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_009",
+      "card_id": "geo15-core-3",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tam-noi-tiep",
+      "question": "Một điểm nằm trong tam giác và trên hai phân giác trong thì:",
+      "options": [
+        "Là tâm nội tiếp",
+        "Là trọng tâm",
+        "Là trực tâm",
+        "Luôn là tâm ngoại tiếp"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "tam-noi-tiep"
+        ],
+        "type": "tam-noi-tiep",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai phân giác trong cắt nhau tại tâm nội tiếp; phân giác thứ ba cũng đi qua điểm đó.",
+      "hints": [
+        "Giao hai phân giác.",
+        "Tính đồng quy."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_010",
+      "card_id": "geo15-core-4",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-trung-truc",
+      "question": "Đường trung trực của AB:",
+      "options": [
+        "Vuông góc AB tại trung điểm",
+        "Đi từ một đỉnh tam giác",
+        "Chia một góc thành hai",
+        "Chỉ vuông góc AB"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "nhan-biet-trung-truc"
+        ],
+        "type": "nhan-biet-trung-truc",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Đúng theo định nghĩa.",
+      "hints": [
+        "Cần trung điểm.",
+        "Cần vuông góc."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_011",
+      "card_id": "geo15-core-4",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tam-ngoai-tiep",
+      "question": "Ba đường trung trực của các cạnh đồng quy tại:",
+      "options": [
+        "Tâm ngoại tiếp O",
+        "Tâm nội tiếp I",
+        "Trọng tâm G",
+        "Trực tâm H"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "tam-ngoai-tiep"
+        ],
+        "type": "tam-ngoai-tiep",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "O là giao ba đường trung trực.",
+      "hints": [
+        "Trung trực → O.",
+        "O cách đều ba đỉnh."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_012",
+      "card_id": "geo15-core-4",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tam-ngoai-tiep",
+      "question": "Nếu OA=OB=OC thì O là:",
+      "options": [
+        "Tâm ngoại tiếp tam giác ABC",
+        "Tâm nội tiếp",
+        "Trọng tâm",
+        "Trực tâm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "tam-ngoai-tiep"
+        ],
+        "type": "tam-ngoai-tiep",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Điểm cách đều ba đỉnh nằm trên ba trung trực.",
+      "hints": [
+        "OA=OB → trung trực AB.",
+        "Tương tự các cạnh khác."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_013",
+      "card_id": "geo15-core-5",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "phan-biet-bon-tam",
+      "question": "Ghép đúng là:",
+      "options": [
+        "G–trọng tâm, H–trực tâm, I–nội tiếp, O–ngoại tiếp",
+        "G–trực tâm, H–trọng tâm, I–ngoại tiếp, O–nội tiếp",
+        "G–nội tiếp, H–ngoại tiếp, I–trọng tâm, O–trực tâm",
+        "Cả bốn giống nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "phan-biet-bon-tam"
+        ],
+        "type": "phan-biet-bon-tam",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Đây là bốn ký hiệu chuẩn.",
+      "hints": [
+        "G: gravity/centroid.",
+        "H,I,O theo quy ước quen thuộc."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_014",
+      "card_id": "geo15-core-5",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dong-quy-bon-duong-dac-biet",
+      "question": "Khẳng định đúng với tam giác bất kỳ:",
+      "options": [
+        "Mỗi họ ba đường cùng loại đồng quy tại một tâm riêng",
+        "Mười hai đường đặc biệt luôn cùng đi qua một điểm",
+        "Bốn tâm luôn trùng nhau",
+        "Chỉ trung tuyến đồng quy"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "dong-quy-bon-duong-dac-biet"
+        ],
+        "type": "dong-quy-bon-duong-dac-biet",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Bốn định lí đồng quy là cho bốn họ riêng; các tâm thường khác nhau.",
+      "hints": [
+        "Phân biệt 'mỗi họ' với 'tất cả'.",
+        "G,H,I,O nói chung là bốn điểm."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO15MICRO_015",
+      "card_id": "geo15-core-5",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dong-quy-bon-duong-dac-biet",
+      "question": "Trường hợp nào G,H,I,O trùng nhau?",
+      "options": [
+        "Tam giác đều",
+        "Mọi tam giác cân",
+        "Mọi tam giác vuông",
+        "Mọi tam giác"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-dong-quy",
+        "skill": [
+          "dong-quy-bon-duong-dac-biet"
+        ],
+        "type": "dong-quy-bon-duong-dac-biet",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trong tam giác đều, đối xứng làm bốn tâm trùng nhau.",
+      "hints": [
+        "Đây là trường hợp đặc biệt.",
+        "Ba cạnh/góc đối xứng hoàn toàn."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "GEO15-CORE-READY-V1",
+  "topic": {
+    "id": "15-duong-dong-quy",
+    "title": "Chuyên đề 15 – Các đường đồng quy trong tam giác"
+  },
+  "layer": "KNTT-Core",
+  "title": "Core Readiness Check – Chuyên đề 15 – Các đường đồng quy trong tam giác",
+  "skill_labels": {
+    "nhan-biet-trung-tuyen": "Nhận biết đường trung tuyến",
+    "trong-tam": "Trọng tâm",
+    "ti-so-trong-tam": "Tỉ số trọng tâm 2 : 1",
+    "nhan-biet-phan-giac": "Nhận biết đường phân giác",
+    "nhan-biet-trung-truc": "Nhận biết đường trung trực",
+    "nhan-biet-duong-cao": "Nhận biết đường cao",
+    "truc-tam": "Trực tâm",
+    "tam-noi-tiep": "Tâm nội tiếp",
+    "tam-ngoai-tiep": "Tâm ngoại tiếp",
+    "phan-biet-bon-tam": "Phân biệt G – H – I – O",
+    "dong-quy-bon-duong-dac-biet": "Tính đồng quy của bốn họ đường đặc biệt"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "GEO15READY_001",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-trung-tuyen",
+      "skill": "nhan-biet-trung-tuyen",
+      "points": 1,
+      "question": "Đường từ đỉnh tới trung điểm cạnh đối là:",
+      "options": [
+        "Trung tuyến",
+        "Đường cao",
+        "Phân giác",
+        "Trung trực"
+      ],
+      "answer": 0,
+      "explanation": "Định nghĩa trung tuyến."
+    },
+    {
+      "id": "GEO15READY_002",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "trong-tam",
+      "skill": "trong-tam",
+      "points": 1,
+      "question": "Ba trung tuyến đồng quy tại:",
+      "options": [
+        "G",
+        "H",
+        "I",
+        "O"
+      ],
+      "answer": 0,
+      "explanation": "Trọng tâm G."
+    },
+    {
+      "id": "GEO15READY_003",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "ti-so-trong-tam",
+      "skill": "ti-so-trong-tam",
+      "points": 1,
+      "question": "AG:GM bằng:",
+      "options": [
+        "2:1",
+        "1:2",
+        "1:1",
+        "3:1"
+      ],
+      "answer": 0,
+      "explanation": "Trọng tâm chia trung tuyến 2:1 từ đỉnh."
+    },
+    {
+      "id": "GEO15READY_004",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "nhan-biet-duong-cao",
+      "skill": "nhan-biet-duong-cao",
+      "points": 1,
+      "question": "Đường cao từ A:",
+      "options": [
+        "Qua A và vuông góc đường thẳng BC",
+        "Qua trung điểm BC",
+        "Chia đôi góc A",
+        "Song song BC"
+      ],
+      "answer": 0,
+      "explanation": "Định nghĩa đường cao."
+    },
+    {
+      "id": "GEO15READY_005",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "truc-tam",
+      "skill": "truc-tam",
+      "points": 1,
+      "question": "Ba đường cao đồng quy tại:",
+      "options": [
+        "H",
+        "G",
+        "I",
+        "O"
+      ],
+      "answer": 0,
+      "explanation": "Trực tâm H."
+    },
+    {
+      "id": "GEO15READY_006",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tam-noi-tiep",
+      "skill": "tam-noi-tiep",
+      "points": 1,
+      "question": "Ba phân giác trong đồng quy tại:",
+      "options": [
+        "I",
+        "G",
+        "H",
+        "O"
+      ],
+      "answer": 0,
+      "explanation": "Tâm nội tiếp I."
+    },
+    {
+      "id": "GEO15READY_007",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tam-ngoai-tiep",
+      "skill": "tam-ngoai-tiep",
+      "points": 1,
+      "question": "Ba trung trực cạnh đồng quy tại:",
+      "options": [
+        "O",
+        "I",
+        "G",
+        "H"
+      ],
+      "answer": 0,
+      "explanation": "Tâm ngoại tiếp O."
+    },
+    {
+      "id": "GEO15READY_008",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "phan-biet-bon-tam",
+      "skill": "phan-biet-bon-tam",
+      "points": 1,
+      "question": "Ghép đúng:",
+      "options": [
+        "G-trọng tâm; H-trực tâm; I-nội tiếp; O-ngoại tiếp",
+        "G-trực tâm; H-trọng tâm; I-ngoại tiếp; O-nội tiếp",
+        "G=H=I=O mọi tam giác",
+        "Không có quy ước"
+      ],
+      "answer": 0,
+      "explanation": "Bốn tâm chuẩn."
+    },
+    {
+      "id": "GEO15READY_009",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dong-quy-bon-duong-dac-biet",
+      "skill": "dong-quy-bon-duong-dac-biet",
+      "points": 1,
+      "question": "Phát biểu đúng:",
+      "options": [
+        "Mỗi họ ba đường cùng loại đồng quy tại tâm riêng",
+        "Mười hai đường luôn cùng qua một điểm",
+        "Chỉ trung tuyến đồng quy",
+        "Bốn tâm luôn trùng"
+      ],
+      "answer": 0,
+      "explanation": "Bốn họ đồng quy riêng."
+    },
+    {
+      "id": "GEO15READY_010",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dong-quy-bon-duong-dac-biet",
+      "skill": "dong-quy-bon-duong-dac-biet",
+      "points": 1,
+      "question": "G,H,I,O trùng nhau trong:",
+      "options": [
+        "Tam giác đều",
+        "Mọi tam giác cân",
+        "Mọi tam giác vuông",
+        "Mọi tam giác"
+      ],
+      "answer": 0,
+      "explanation": "Tam giác đều là trường hợp đối xứng đặc biệt."
+    }
+  ],
+  "next_topic": {
+    "id": "16-tu-giac",
+    "title": "Chuyên đề 16 – Tứ giác và các hình đặc biệt"
+  }
+}

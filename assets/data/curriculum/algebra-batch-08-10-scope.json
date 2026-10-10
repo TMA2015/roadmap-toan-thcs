@@ -1,0 +1,134 @@
+{
+  "schema": "roadmap-golden-batch-scope-v1",
+  "batch_id": "ALG-BATCH-08-10-001",
+  "context_version": "1.0.25",
+  "title": "Phương trình/Bất phương trình → Hệ phương trình → Hàm số/Đồ thị",
+  "topics": [
+    {
+      "id": "08-phuong-trinh-bat-phuong-trinh",
+      "vertical_story": "Grade 8 phương trình bậc nhất → Grade 9 phương trình tích/chứa mẫu + bất đẳng thức/bất phương trình",
+      "core_existing": [
+        "nghiem-phuong-trinh",
+        "pt-bac-nhat",
+        "bien-doi-pt-nhieu-buoc",
+        "lap-phuong-trinh",
+        "pt-tich",
+        "dkxd-phuong-trinh-mau",
+        "khu-mau-phuong-trinh",
+        "doi-chieu-nghiem",
+        "bpt-bac-nhat",
+        "doi-chieu-bpt",
+        "bieu-dien-tap-nghiem"
+      ],
+      "core_gaps_to_model": [
+        "bat-dang-thuc",
+        "tinh-chat-thu-tu-phep-cong",
+        "tinh-chat-thu-tu-phep-nhan"
+      ],
+      "exclude_from_core": [
+        "tham-so-co-ban",
+        "giao-tap-nghiem"
+      ],
+      "layer_review": [
+        "lap-bat-phuong-trinh"
+      ],
+      "upstream": [
+        "thu-gon-da-thuc",
+        "phan-tich-da-thuc",
+        "phan-thuc-dai-so"
+      ],
+      "downstream": [
+        "he-phuong-trinh",
+        "phuong-trinh-bac-hai",
+        "mo-hinh-hoa"
+      ]
+    },
+    {
+      "id": "09-he-phuong-trinh",
+      "vertical_story": "Grade 9 phương trình hai ẩn → nghiệm hệ/ý nghĩa hình học → thế/cộng đại số → lập hệ bài toán",
+      "core_existing": [
+        "nghiem-pt-hai-an",
+        "nghiem-he",
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc",
+        "giai-he-the",
+        "giai-he-cong",
+        "chon-phuong-phap",
+        "bien-doi-truoc-giai",
+        "kiem-tra-nghiem-he",
+        "lap-he-bai-toan",
+        "bai-toan-so",
+        "chuyen-dong-he",
+        "nang-suat-he"
+      ],
+      "core_gaps_to_model": [],
+      "exclude_from_core": [
+        "tham-so-he"
+      ],
+      "layer_review": [],
+      "upstream": [
+        "pt-bac-nhat",
+        "nghiem-phuong-trinh"
+      ],
+      "downstream": [
+        "giao-diem-do-thi",
+        "bai-toan-thuc-te"
+      ]
+    },
+    {
+      "id": "10-ham-so-do-thi",
+      "vertical_story": "Grade 8 hàm số/tọa độ/hàm bậc nhất → Grade 9 parabol y=ax²",
+      "core_existing": [
+        "khai-niem-ham-so",
+        "tinh-gia-tri-ham",
+        "bang-gia-tri",
+        "toa-do-diem",
+        "diem-thuoc-do-thi",
+        "nhan-biet-ham-bac-nhat",
+        "he-so-goc",
+        "tung-do-goc",
+        "dong-nghich-bien",
+        "ve-do-thi-ham-bac-nhat",
+        "ham-y-ax2",
+        "doi-xung-parabol",
+        "diem-thuoc-parabol"
+      ],
+      "core_gaps_to_model": [],
+      "exclude_from_core": [],
+      "layer_review": [
+        "vi-tri-hai-duong-thang",
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ],
+      "upstream": [
+        "bieu-thuc-dai-so",
+        "mat-phang-toa-do"
+      ],
+      "downstream": [
+        "he-phuong-trinh",
+        "phuong-trinh-bac-hai",
+        "lien-he-do-thi"
+      ]
+    }
+  ],
+  "golden_template": {
+    "contract": "docs/assets/data/curriculum/golden-template-v1.json",
+    "invariants": "unchanged",
+    "target": "Learn Workspace + Practice Room + MCQ-only Core Readiness"
+  },
+  "production_rules": [
+    "ChatGPT authors/integrates from reviewed KNTT maps + existing Practice manifests as source-of-truth.",
+    "Gemini is routed as pedagogical reviewer after a complete production draft exists, not as schema/source lead.",
+    "Every Core micro/readiness item has exactly one assessed skill; supporting skills do not receive automatic accuracy updates.",
+    "Existing skill IDs are reused whenever they match; new Core gaps require real Practice Bank coverage before rollout.",
+    "Layer-review skills are not promoted to Core without explicit source evidence.",
+    "No hard gate; Entrance10/Challenge never affect Core readiness."
+  ],
+  "acceptance": [
+    "All three topics follow frozen Golden Template invariants.",
+    "Any new Core skill gap has actual interactive Practice Bank coverage.",
+    "Core Readiness remains MCQ-only and after-submit.",
+    "Forbidden/layer-review skills are excluded from Core until verified.",
+    "CI + strict MkDocs build + gh-pages smoke check pass."
+  ]
+}

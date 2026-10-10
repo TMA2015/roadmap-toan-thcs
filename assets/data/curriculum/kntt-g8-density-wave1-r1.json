@@ -1,0 +1,79 @@
+{
+  "packet_id": "MATH-KNTT-G8-DENSITY-W1-R1-20261008",
+  "as_of": "2026-10-08",
+  "status": "CLOSED_DEPLOYED",
+  "basis": {
+    "inventory": "docs/assets/data/curriculum/kntt-dimension-coverage-g8-v1.json",
+    "inventory_status": "G8_EXISTING_EVIDENCE_INVENTORY_R1",
+    "owner_principle": "For very small, well-bounded gaps, proceed without a separate NotebookLM review when the gap has been carefully evaluated and the repair is minimal.",
+    "independent_review_required": false
+  },
+  "decision": {
+    "repair": {
+      "lesson_group": "Bài 21-24",
+      "priority": "P1",
+      "topic": "07-phan-thuc-dai-so",
+      "dimension": "MICRO",
+      "target_skill": "giu-dieu-kien-ban-dau",
+      "maximum_new_micro_items": 1,
+      "card_id": "pt07-core-2",
+      "rationale": "Teaching copy already directly teaches preservation of the original domain after simplification, and the Practice manifest already contains the canonical skill. The missing evidence is one isolated Grade-8 Micro opportunity."
+    },
+    "defer": [
+      {
+        "lesson_group": "Bài 18-20",
+        "priority": "P2",
+        "dimension": "MICRO",
+        "status": "DEFER",
+        "rationale": "Learn and Practice are already complete. Missing explicit Grade-8 Micro evidence concerns shared/foundational data skills and does not justify density expansion now."
+      }
+    ],
+    "no_action": [
+      {
+        "lesson_group": "Bài 38-39",
+        "rationale": "Grade-8-specific pyramid skills already have direct Micro evidence; shared foundation skills are not treated as a quota."
+      },
+      {
+        "lesson_group": "Bài 30",
+        "rationale": "Family/local PROB-EVENT semantics already teach and diagnose possible/favourable outcomes without creating new global skills."
+      }
+    ]
+  },
+  "protected_boundaries": {
+    "learn_content_change": false,
+    "practice_bank_change": false,
+    "written_change": false,
+    "readiness_change": false,
+    "new_canonical_skill": false,
+    "taxonomy_runtime_change": false,
+    "mastery_change": false,
+    "learner_history_regrade": false
+  },
+  "implementation_target": {
+    "new_item_id": "RAT07MICRO_018",
+    "card_id": "pt07-core-2",
+    "skill": "giu-dieu-kien-ban-dau",
+    "micro_role": "coverage",
+    "grade": 8
+  },
+  "implementation": {
+    "item_id": "RAT07MICRO_018",
+    "card_id": "pt07-core-2",
+    "skill": "giu-dieu-kien-ban-dau",
+    "micro_role": "coverage",
+    "grade": 8,
+    "learn_copy_changed": false,
+    "practice_bank_changed": false,
+    "written_changed": false,
+    "readiness_changed": false,
+    "new_canonical_skills": 0
+  },
+  "next_step": "GRADE8_CLOSED_MOVE_TO_GRADE9_DIMENSION_INVENTORY",
+  "closure": {
+    "main_sha": "56de261479c4b81d3e6b424087133709fe8e872d",
+    "repository_qa": "PASS",
+    "browser_visual_qa": "PASS",
+    "deploy": "PASS",
+    "deployed_on": "2026-10-08"
+  }
+}

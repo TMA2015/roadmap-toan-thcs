@@ -1,0 +1,1878 @@
+{
+  "version": "1.0.241",
+  "schema": "roadmap-collaboration-task-registry-v1",
+  "updated": "2026-10-08",
+  "statuses": [
+    "OPEN",
+    "GEMINI-DRAFT",
+    "CHATGPT-REVIEW",
+    "DUAL-CHECK",
+    "BLOCKED-ACADEMIC",
+    "READY",
+    "DONE"
+  ],
+  "tasks": [
+    {
+      "id": "COLLAB-SYSTEM-001",
+      "title": "Xây AI Collaboration Hub + context + protocol",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE"
+    },
+    {
+      "id": "KNTT-MAP-001",
+      "title": "Chuẩn hóa mapping KNTT → 25 chuyên đề → skill",
+      "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "review_notes": "Grades 6-9 KNTT overlays reviewed and integrated; next phase is consolidated prerequisite/unlock knowledge graph."
+    },
+    {
+      "id": "KNTT-MAP-G6-001",
+      "title": "Mapping Toán 6 KNTT → 25 chuyên đề/skill",
+      "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "public_task_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G6-001/",
+      "context_version": "1.0.1",
+      "relay_packet_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G6-001/",
+      "delivery_modes": [
+        "online-url",
+        "offline-copy",
+        "file-upload"
+      ],
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/kntt-grade6-map.json",
+      "review_notes": "Gemini covered most knowledge clusters, but chapter numbering/structure and repository topic IDs required correction; several missing KNTT items were restored."
+    },
+    {
+      "id": "KNTT-MAP-G7-001",
+      "title": "Mapping Toán 7 KNTT → 25 chuyên đề/skill",
+      "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.3",
+      "public_task_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G7-001/",
+      "relay_packet_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G7-001/",
+      "delivery_modes": [
+        "online-url",
+        "offline-copy",
+        "file-upload"
+      ],
+      "task_design": "source-verified-toc+valid-topic-id-whitelist+vertical-spine-traceability",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/kntt-grade7-map.json",
+      "review_notes": "Coverage and topic IDs improved; corrected Chapter 10 PRIMARY mapping to topic 20, normalized many already-existing skills, and added Vertical Spine upstream/downstream metadata.",
+      "resubmission": {
+        "context_version": "1.0.3",
+        "outcome": "NO_REINTEGRATION_NEEDED",
+        "improvements": [
+          "vertical-spine-columns-present",
+          "continuity-narrative-improved"
+        ],
+        "persistent_issues": [
+          "chapter10-topic24-primary",
+          "existing-skills-marked-proposed"
+        ],
+        "feedback_artifact": "content-staging/reviews/KNTT-MAP-G7-001-resubmission-feedback.md"
+      }
+    },
+    {
+      "id": "KNTT-MAP-G8-001",
+      "title": "Mapping Toán 8 KNTT → Vertical Spine/skill",
+      "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.4",
+      "public_task_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G8-001/",
+      "relay_packet_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G8-001/",
+      "delivery_modes": [
+        "online-url",
+        "offline-copy",
+        "file-upload"
+      ],
+      "task_design": "verified-toc+valid-topic-ids+existing-skill-inventory+vertical-spine-traceability",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/kntt-grade8-map.json",
+      "review_notes": "Best mapping round so far after embedding existing skill inventory. Corrected Grade 8 Core boundaries for factorization/equations/probability, refined pyramid skills, and rejected absolute hard-gate mastery."
+    },
+    {
+      "id": "KNTT-MAP-G9-001",
+      "title": "Mapping Toán 9 KNTT → Vertical Spine/skill + audit",
+      "routing": "GEMINI_LEAD+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.5",
+      "public_task_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/tasks/KNTT-MAP-G9-001/",
+      "relay_packet_url": "https://tma2015.github.io/roadmap-toan-thcs/collaboration/relay-packets/KNTT-MAP-G9-001/",
+      "delivery_modes": [
+        "online-url",
+        "offline-copy",
+        "file-upload"
+      ],
+      "task_design": "verified-toc+valid-topic-ids+existing-skill-inventory+vertical-spine-audit+soft-mastery",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/kntt-grade9-map.json",
+      "review_notes": "Strong final grade mapping. Corrected over-exclusion of system-solution geometry/count, broadened Viète Core pending item-level QA, added cot and inequality-property gaps, and kept Topic 22 conclusion limited to the Grade 9 overlay."
+    },
+    {
+      "id": "CONTENT-PILOT-001",
+      "title": "Tạo batch nội dung mẫu Core/Vào10/Challenge để thử pipeline",
+      "routing": "GEMINI_LEAD+CHATGPT_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.90",
+      "review_verdict": "SUPERSEDED_BY_RELEASED_CONTENT_PIPELINE",
+      "review_notes": "Original objective was to create a sample Core/Entrance10/Challenge content batch to test the pipeline. The project has since shipped multiple standalone Core workspaces, Entrance10 content and production QA across the 25-topic spine. Close this pilot as superseded/completed-by-later-baseline; this does not claim every later topic has independent academic review."
+    },
+    {
+      "id": "BENCH-CAP-001",
+      "title": "Benchmark năng lực theo nhóm task",
+      "routing": "CATEGORY_BASED_DUAL",
+      "status": "OPEN",
+      "context_version": "1.0.90"
+    },
+    {
+      "id": "GEO-LIB-001",
+      "title": "Chuẩn hóa thư viện hình SVG và giảm hình Internet",
+      "routing": "CHATGPT_LEAD+DUAL_QA_FOR_HARD_GEOMETRY",
+      "status": "OPEN",
+      "review_notes": "Main-lesson legacy SVG replacement completed separately as GEO-LIB-VISUAL-REFRESH-001. Keep this umbrella OPEN for reusable spec-driven JSON→SVG renderer, semantic geometry validation, and optional further library QA; do not conflate with image replacement.",
+      "context_version": "1.0.90"
+    },
+    {
+      "id": "KG-V1-001",
+      "title": "Hợp nhất KNTT G6-G9 thành prerequisite/unlock knowledge graph v1",
+      "routing": "CHATGPT_LEAD+GEMINI_REVIEW",
+      "status": "DONE",
+      "review_verdict": "FOUNDATION-READY",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/knowledge-graph-v1.json",
+      "review_notes": "Activated only high-confidence dependencies; uncertain associations remain in review_queue. Includes soft remediation rules and no hard gates."
+    },
+    {
+      "id": "KG-REVIEW-001",
+      "title": "Independent prerequisite/remediation audit",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "source_verdict": "PASS",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/knowledge-graph-v1.json"
+    },
+    {
+      "id": "REMEDIATION-MVP-001",
+      "title": "Connect Practice Engine learner evidence to Knowledge Graph remediation",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "MVP-READY",
+      "review_notes": "Local/offline recommender. Target and prerequisite require >=3 attempts; weak threshold <75%; recommendation-only; no AI/API dependency."
+    },
+    {
+      "id": "REMEDIATION-LOOP-001",
+      "title": "Close adaptive remediation loop with targeted practice",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "QA-READY",
+      "review_notes": "Six-question targeted sessions; cross-topic focus navigation; regression cases cover insufficient evidence, healthy prerequisite, weak prerequisite, weakest candidate, and threshold boundary."
+    },
+    {
+      "id": "RECOVERY-MEASURE-001",
+      "title": "Measure remediation recovery and target recheck",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "QA-READY"
+    },
+    {
+      "id": "AI-TUTOR-CONTRACT-001",
+      "title": "Provider-neutral AI Tutor pedagogical contract",
+      "routing": "CHATGPT_LEAD+GEMINI_REVIEW",
+      "status": "DONE",
+      "review_verdict": "REVIEW-READY",
+      "review_notes": "Soft mastery, evidence-first diagnosis, Core/Challenge boundary, growth language, hint ladder, no fabricated learner evidence, graph-discipline."
+    },
+    {
+      "id": "AI-TUTOR-ADAPTER-001",
+      "title": "Tutor Context Builder and provider-neutral adapter",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "QA-READY",
+      "review_notes": "Mock/local adapter enabled; Gemini and OpenAI-compatible transports intentionally disabled until secure runtime credentials exist; context is minimized and schema-validated."
+    },
+    {
+      "id": "AI-TUTOR-UI-001",
+      "title": "Integrate mock Tutor into Practice Engine UI",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "QA-READY",
+      "review_notes": "Student-facing local mock Tutor supports HINT/REMEDIATE/CONTINUE; preserves question-bank hints and soft mastery; no network/provider calls."
+    },
+    {
+      "id": "TOPIC07-CORE-CARDS-001",
+      "title": "Refine CĐ07 into five KNTT Core learning cards",
+      "routing": "CHATGPT_LEAD_GEMINI_REVIEW",
+      "status": "DONE",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "review_notes": "Accepted five-card Core structure and misconception metadata. Qualified overly absolute dependency language; preserved KNTT B21 value evaluation, B23 multi-expression addition/subtraction, and B24 multiplication properties. Extension does not gate Core."
+    },
+    {
+      "id": "COLLAB-RELAY-V2-001",
+      "title": "Batch-first ChatGPT ↔ Gemini collaboration protocol",
+      "routing": "CHATGPT_LEAD+GEMINI_PILOT",
+      "status": "DONE",
+      "context_version": "1.0.16",
+      "review_verdict": "PROTOCOL-VALIDATED",
+      "review_notes": "First complete Relay v2 loop executed: ChatGPT packet -> Gemini batch response -> normalized response packet -> ChatGPT integration decision."
+    },
+    {
+      "id": "C07-MICRO15-001",
+      "title": "CĐ07 current 17-item Core micro-practice owner device QA",
+      "routing": "OWNER_DESKTOP_IPAD_QA",
+      "status": "DONE",
+      "context_version": "1.0.91",
+      "review_notes": "Owner explicitly confirmed CĐ07 desktop/iPad PASS on 2026-10-01, with no observed errors. Acceptance applies to the current 5-card / 17-micro / 11-of-11 declared skill-opportunity Core baseline, not the obsolete 15-item pilot label. G2 Practice/canonical QA remains a separate already-closed gate.",
+      "review_verdict": "OWNER_DESKTOP_IPAD_PASS_CURRENT_17_ITEM_BASELINE_CLOSED_DONE"
+    },
+    {
+      "id": "GOLDEN-TEMPLATE-001",
+      "title": "Golden Template Learn → Practice → Core Readiness",
+      "routing": "GEMINI_PEDAGOGY+CHATGPT_ARCHITECTURE_QA",
+      "status": "DONE",
+      "context_version": "1.0.20",
+      "review_verdict": "FROZEN-V1",
+      "review_notes": "CĐ07 passed automated/deploy QA and real iPad UX verification. Golden Template v1 invariants frozen in assets/data/curriculum/golden-template-v1.json."
+    },
+    {
+      "id": "ALG-BATCH-04-06-001",
+      "title": "Golden Template batch production CĐ04–CĐ06",
+      "routing": "GEMINI_AUTHOR_REVIEW+CHATGPT_INTEGRATE_QA",
+      "status": "DONE",
+      "context_version": "1.0.25",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_notes": "Full CĐ04–CĐ06 Golden Template batch merged in PR #61 and passed dependency/link QA, Golden validator, micro-practice QA, practice audit, strict MkDocs build, Pages deploy and gh-pages smoke check. CĐ04 expanded to 132 Practice Bank questions with 12 division-by-monomial items."
+    },
+    {
+      "id": "C07-GOLDEN-HARDENING-001",
+      "title": "CĐ07 Golden Template mobile/math hardening",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE_QA",
+      "status": "DONE",
+      "context_version": "1.0.21",
+      "review_verdict": "PASS-WITH-CHANGES",
+      "review_notes": "Accepted MathJax details re-typeset, touch targets, bottom CTAs and JSON control-character QA. Rejected low-score => MORE_EVIDENCE_NEEDED because low performance is not insufficient evidence."
+    },
+    {
+      "id": "ALG-BATCH-08-10-001",
+      "title": "Golden Template batch production CĐ08–CĐ10",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_PEDAGOGICAL_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.29",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_notes": "PR #64 production plus PR #66 LaTeX maintenance both deployed successfully. Dedicated batch validator, Markdown math regression QA, strict MkDocs build and gh-pages smoke check PASS. Gemini review corrections were not applied because all six IDs/prompts were source-misaligned."
+    },
+    {
+      "id": "ALG-BATCH-11-12-001",
+      "title": "Golden Template batch production CĐ11–CĐ12",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_PEDAGOGICAL_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.30",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_notes": "PR #68 merged and production deploy passed. Both topics have 5 Core Learning Cards, 15 micro-practice and 10 MCQ Core Readiness items. CĐ11 adds can-bac-ba theory + 12 real bank items (120→132). CĐ12 keeps tham-so-so-nghiem and item-review Viète extensions outside Core readiness."
+    },
+    {
+      "id": "ALG-REVIEW-04-11-GEMINI-001",
+      "title": "Source-locked pedagogical review CĐ04–CĐ11",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "READY",
+      "context_version": "1.0.90",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-review-04-11.json",
+      "review_notes": "Single-file 48-source bundle generated during deploy. Corrections are admissible only with exact existing ID + exact prompt quote; prose requires source_path + heading + exact quote."
+    },
+    {
+      "id": "GEO-ARCH-V1-001",
+      "title": "Geometry Architecture v1 before CĐ13–CĐ20 rollout",
+      "routing": "CHATGPT_ARCHITECTURE_LEAD+GEMINI_GEOMETRY_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.37",
+      "review_notes": "Architecture-specific Gemini PASS, no corrections/unresolved questions; 124/124 exact Core, BENCH-GEO-001 and CI pass. Owner accepted requested geometry cross-device smoke test, explicitly including iPhone and iPad. Frozen v1 contract; geometry renderer remains separately scoped.",
+      "review_verdict": "FROZEN-V1",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/curriculum/geometry-architecture-v1.json",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geometry-architecture-v1.json",
+      "audit_artifact": "content-staging/reviews/GEO-ARCH-V1-FREEZE-AUDIT-001.json"
+    },
+    {
+      "id": "GEO13-GOLDEN-001",
+      "title": "Golden Geometry rollout CĐ13 – Góc và đường thẳng",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_GEOMETRY_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.31",
+      "review_verdict": "DEPLOYED-PASS",
+      "integrated_artifact": "https://tma2015.github.io/roadmap-toan-thcs/kien-thuc/13-goc-va-duong-thang/",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo13-review.json",
+      "review_notes": "PR #70 deployed successfully. CĐ13 has 21/21 mapped Core exact IDs, 156 Practice Bank items, 5 Learning Cards, 15 micro-practice, 10 Readiness MCQ and proof-language/Euclid coverage."
+    },
+    {
+      "id": "GEO13-GEMINI-REVIEW-001",
+      "title": "Independent source-locked pedagogical/math review CĐ13",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "READY",
+      "context_version": "1.0.90",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo13-review.json",
+      "review_notes": "Review must cite exact existing item ID + exact current prompt quote; prose issues use source_path + heading + exact quote; no visual inference."
+    },
+    {
+      "id": "GEO-BATCH-13-15-001",
+      "title": "Golden Geometry foundational batch CĐ13–CĐ15",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_GEOMETRY_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.32",
+      "review_notes": "CĐ13–CĐ15 all DEPLOYED-PASS. CĐ13 21/21, CĐ14 13/13 and CĐ15 11/11 mapped Core exact coverage; Golden Geometry Learn→Practice→Readiness, strict MkDocs and Pages deploy passed.",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo14-15-review.json"
+    },
+    {
+      "id": "GEO-BATCH-16-18-001",
+      "title": "Golden Geometry batch CĐ16–CĐ18",
+      "routing": "CHATGPT_PRODUCTION_LEAD+GEMINI_GEOMETRY_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.32",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_notes": "PR #72 merged; follow-up QA fix decoupled batch validators from mutable global coverage totals. Production run 36096886141 passed all geometry validators, review-bundle builders, SVG integrity, practice audit, strict MkDocs and Pages deploy. CĐ16 13/13, CĐ17 12/12, CĐ18 11/11 Core exact coverage; global geometry coverage 90/124.",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo16-18-review.json"
+    },
+    {
+      "id": "GEO-BATCH-16-18-GEMINI-REVIEW-001",
+      "title": "Independent source-locked geometry review CĐ16–CĐ18",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.90",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo16-18-review.json",
+      "review_notes": "Do not interpret this as an independent Gemini/NotebookLM PASS. The task is retired because the current handoff explicitly freezes CĐ16–18 as released baseline ('Không làm lại'): PR #169, 15 lectures, 46 micro items, 36/36 skill opportunities. Reopen only if new concrete evidence identifies an academic/geometry defect.",
+      "review_verdict": "SUPERSEDED_NO_FURTHER_REVIEW_PLANNED"
+    },
+    {
+      "id": "GEO-BATCH-19-20-001",
+      "title": "Golden Geometry high-risk batch CĐ19–CĐ20",
+      "routing": "CHATGPT_PRODUCTION_LEAD+DUAL_GEOMETRY_QA",
+      "status": "DONE",
+      "context_version": "1.0.34",
+      "review_notes": "PR #73 merged as 52f4888 and production run 36097423518 passed Geometry Architecture QA, all Golden Geometry validators, review bundle build, SVG integrity, practice quality audit, strict MkDocs and Pages deploy. CĐ19 14/14 and CĐ20 29/29 mapped Core exact coverage; geometry matrix is 124/124 with 0 gaps. Gemini source-locked batch review returned PASS with corrections []; independent architecture freeze-gate review remains separate.",
+      "review_verdict": "DEPLOYED-PASS",
+      "review_bundle": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo19-20-review.json"
+    },
+    {
+      "id": "GEO-BATCH-19-20-GEMINI-REVIEW-001",
+      "title": "High-risk independent source-locked review CĐ19–CĐ20",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.34",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geo19-20-review.json",
+      "review_notes": "User relayed Gemini response: verdict PASS, corrections []. Recorded verbatim in review-result artifact. Review applies to supplied CĐ19–CĐ20 source-locked bundle; not a separate review of the architecture freeze gate.",
+      "source_verdict": "PASS",
+      "review_verdict": "PASS",
+      "corrections_count": 0,
+      "response_packet_id": "GEO-BATCH-19-20-GEMINI-REVIEW-001-RESULT",
+      "result_artifact": "content-staging/reviews/GEO-BATCH-19-20-GEMINI-REVIEW-001-RESULT.json"
+    },
+    {
+      "id": "GEO-ARCH-V1-GEMINI-REVIEW-001",
+      "title": "Independent architecture contract review before freeze",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.36",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/gemini-geometry-architecture-v1.json",
+      "review_notes": "Architecture-specific Gemini review PASS with corrections [] and unresolved_questions []. Freeze still pending recorded geometry-topic device-flow evidence.",
+      "source_verdict": "PASS",
+      "review_verdict": "PASS",
+      "corrections_count": 0,
+      "unresolved_questions_count": 0,
+      "result_artifact": "content-staging/reviews/GEO-ARCH-V1-GEMINI-REVIEW-001-RESULT.json"
+    },
+    {
+      "id": "GEO-LIB-VISUAL-REFRESH-001",
+      "title": "Replace legacy lesson diagrams with original visual-standard SVGs",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "context_version": "1.0.38",
+      "review_verdict": "DEPLOYED-CI-PASS-OWNER-ACCEPTED",
+      "integrated_artifact": "content-staging/reviews/GEO-LIB-VISUAL-REFRESH-001.json",
+      "review_notes": "33 original SVGs across CĐ13–20 in PRs #79–84; full-path link regression repaired and deployed. CĐ01–12 no non-infographic main-lesson figures; CĐ21–25 already use internal visualization assets. Device visual QA for new CĐ13–17/19–20 group remains owner-pending; JSON-to-SVG engine remains separate GEO-LIB-001 task. User confirmed new diagram quality acceptable after deployment; owner-reported visual acceptance recorded 2026-09-25."
+    },
+    {
+      "id": "STA21-AUTHOR-001",
+      "title": "Gemini-authored first twelve CĐ21 Core Practice Bank items",
+      "routing": "GEMINI_AUTHOR+CHATGPT_QA_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.40",
+      "packet": "docs/assets/data/collaboration/packets/STA21-GEMINI-AUTHOR-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-gemini-author-001.json",
+      "review_notes": "REV2 aligned 003, ChatGPT applied remaining #87 corrections, 12 new items in chunk 05, manifest 132, original 120 preserved.",
+      "review_verdict": "ACCEPT_WITH_EDITORIAL_FIXES",
+      "integrated_artifact": "docs/assets/data/practice/21-thong-ke-v1-05.json"
+    },
+    {
+      "id": "STA21-LEARN-001",
+      "title": "CĐ21 Golden Template five Learning Cards and fifteen micro-practice items",
+      "routing": "GEMINI_AUTHOR+CHATGPT_QA_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.42",
+      "packet": "docs/assets/data/collaboration/packets/STA21-LEARN-GEMINI-AUTHOR-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-learn-gemini-author-001.json",
+      "review_notes": "Five KNTT Core cards with optional teaching copy and 15 micro-practice checks integrated in dedicated files, QA and CI; 132-question Practice Bank preserved. Interactive Readiness pending.",
+      "review_verdict": "ACCEPT_WITH_EDITORIAL_AND_SCHEMA_FIXES",
+      "integrated_artifact": "docs/assets/data/curriculum/topic21-learning-workspace.json"
+    },
+    {
+      "id": "STA21-UX-LANGUAGE-001",
+      "title": "Fix CĐ21 responsive Learning Card captions and apply plain-language math editorial style",
+      "routing": "CHATGPT_IMPLEMENT_QA",
+      "status": "DONE",
+      "context_version": "1.0.43",
+      "integrated_artifact": "docs/assets/stylesheets/topic-workspace.css",
+      "review_verdict": "CODE_READY_AWAITING_DEPLOY_QA",
+      "review_notes": "Removed forced lesson nowrap and early 5-column layout; 1/2/3/4/5 responsive columns by container width, full labels retained. Rewrote all 15 CĐ21 micro question stems for direct language; answers and scored skill IDs preserved. Added editorial standard + CI. Owner PC/iPad/iPhone screenshot shows prior overflow; owner visual recheck after deployment pending."
+    },
+    {
+      "id": "STA21-READY-001",
+      "title": "Gemini CĐ21 Core-only 12-item interactive Readiness authoring",
+      "routing": "GEMINI_AUTHOR+CHATGPT_INDEPENDENT_QA_INTEGRATE",
+      "status": "DONE",
+      "context_version": "1.0.45",
+      "packet": "docs/assets/data/collaboration/packets/STA21-READY-GEMINI-AUTHOR-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-ready-gemini-author-001.json",
+      "review_notes": "12 independent checked Core MCQs / 9 skill IDs; corrects duplicate-like drills, ambiguity of overall class quality in 012, chart data visibility; post-submit no hints/Tutor/soft gate. Original self-test preserved as supplement; 132 bank and 15 micro unchanged. CI / device QA separate.",
+      "review_verdict": "ACCEPT_WITH_EDITORIAL_AND_ACADEMIC_FIXES",
+      "integrated_artifact": "docs/assets/data/assessment/21-thong-ke-core-v1.json"
+    },
+    {
+      "id": "STAT22-MAP-001",
+      "title": "Audit CĐ22 skill-to-grade KNTT Core boundaries before Golden rollout",
+      "routing": "GEMINI_REVIEW+CHATGPT_SOURCE_QA",
+      "status": "DONE",
+      "context_version": "1.0.47",
+      "packet": "docs/assets/data/collaboration/packets/STAT22-MAP-GEMINI-REVIEW-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/stat22-map-gemini-review-001.json",
+      "review_notes": "Gemini's 10-skill formal Grade10 classification accepted as topic THPT-Bridge; corrected overgeneralization about mean (basic arithmetic in Grade4), mode conventions and outlier formal criteria. All 120 practice items retain IDs/answers but explicitly tagged Bridge to avoid engine Core fallback. Removed static hard grade gate; no new readiness.",
+      "review_verdict": "ACCEPT_WITH_CORRECTIONS",
+      "integrated_artifact": "docs/assets/data/curriculum/topic22-layer-audit-v1.json"
+    },
+    {
+      "id": "PROB23-MAP-001",
+      "title": "Audit grade6–8 KNTT probability Core/extension",
+      "routing": "CHATGPT_SOURCE_QA",
+      "status": "DONE",
+      "context_version": "1.0.48",
+      "integrated_artifact": "docs/assets/data/curriculum/topic23-layer-audit-v1.json",
+      "review_verdict": "REVIEWED_WITH_ITEM_EXCEPTIONS",
+      "review_notes": "Grade6 B42–43, Grade7 B29–30, Grade8 B30–32; existing 120 questions: 52 Core/30 Core-Support/38 Entrance10, four conservative overrides and five equal-likelihood wording fixes. Current grade9 overlay has no PRIMARY topic23."
+    },
+    {
+      "id": "PROB23-LEARN-001",
+      "title": "Author five CĐ23 Core Learning Cards and fifteen micro checks",
+      "routing": "GEMINI_AUTHOR+CHATGPT_INDEPENDENT_QA",
+      "status": "DONE",
+      "context_version": "1.0.49",
+      "packet": "docs/assets/data/collaboration/packets/PROB23-LEARN-GEMINI-AUTHOR-001.json",
+      "bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/prob23-learn-gemini-author-001.json",
+      "review_notes": "Five grade6–8 KNTT Core cards, fifteen micro (Base/Trap/Apply), independently reviewed and normalized. Revised near-duplicate/ambiguous items, removed expected-score item 015 beyond narrowly scored Core; retained existing 120 practice and separate Readiness pending.",
+      "review_verdict": "ACCEPT_WITH_EDITORIAL_AND_SCHEMA_FIXES",
+      "integrated_artifact": "docs/assets/data/curriculum/topic23-learning-workspace.json"
+    },
+    {
+      "id": "PROB23-READY-001",
+      "title": "CĐ23 source-locked 12-item Core Readiness",
+      "routing": "CHATGPT_INTEGRATE_AND_QA",
+      "status": "DONE",
+      "review_verdict": "CI_PASS",
+      "integrated_artifact": "docs/assets/data/assessment/23-xac-suat-core-v1.json",
+      "review_notes": "12 after-submit-only items over 5 assessed skills; soft readiness threshold and no Tutor/hints; existing 120-item practice bank unchanged. Owner-device acceptance not yet recorded."
+    },
+    {
+      "id": "AI-TUTOR-LIVE-001",
+      "title": "Firebase App Check Gemini Tutor live transport",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "LIVE_VERIFIED",
+      "integrated_artifact": "docs/assets/javascripts/firebase-gemini-v1.js",
+      "review_notes": "PRs #105–106: enforced reCAPTCHA Enterprise App Check and a verified live Gemini response; user-initiated only. Source content and learner evidence remain independent of AI output."
+    },
+    {
+      "id": "AI-TUTOR-READING-001",
+      "title": "Contextual floating Tutor on lessons and Topic25 deep-reading pages",
+      "routing": "CHATGPT_LEAD",
+      "status": "DONE",
+      "review_verdict": "CI_AND_BROWSER_PASS",
+      "integrated_artifact": "docs/assets/javascripts/floating-ai-tutor-v1.js",
+      "review_notes": "PRs #107, #109 and #113; selected passage/active heading, approved cheerful avatar and safe rich math. Explicitly excludes practice, self-check, timed mocks and answer keys; no AI request during CI."
+    },
+    {
+      "id": "TOPIC25-EXPANSION-001",
+      "title": "Topic25 anchor library and three complete original written exams",
+      "routing": "CHATGPT_LEAD+INDEPENDENT_MATH_REVIEW",
+      "status": "DONE",
+      "review_verdict": "CI_BROWSER_DEPLOYED_R2_R3_REVIEW_DOCUMENTED",
+      "integrated_artifact": "docs/assets/data/exams/topic25-exams-v1.json",
+      "review_notes": "PRs #104, #109–112: 10 curated of 11 anchors, deep geometry explanations, 3×120-minute 10-point exams, separate answer keys, self-marked step rubrics and remediation. Implementation delivered; independent math R2/R3 coverage completed in separate task; see review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md."
+    },
+    {
+      "id": "TOPIC25-INDEPENDENT-MATH-REVIEW-001",
+      "title": "Independent review of Topic25 geometry proofs and exam keys",
+      "routing": "GEMINI_REVIEW+CHATGPT_INTEGRATE",
+      "status": "DONE",
+      "packet": "review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26_MAIN_R2.txt",
+      "review_notes": "Gemini R2 source commit 04b275cb reported APPROVE with 17/23 source files listed. Gemini Targeted R3 source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536 reports PASS for all nine targets: six R2-unlisted files plus three post-R2 deep pages. No critical corrections in either response. R3 lists 5 of 8 context files, not 8 of 8. SHA preflight verified 17/17 files in packet and 9 target paths unchanged. See review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md. No claim of third-party formal certification.",
+      "source_commit": "04b275cb5870a2fbd8f540333b96529285277883",
+      "packet_source_count": 23,
+      "review_verdict": "R2_17_LISTED_PLUS_R3_9_TARGETS_PASS_SCOPE_RECORDED"
+    },
+    {
+      "id": "G6-T02-GOLDEN-001",
+      "title": "Topic02 source-scoped grade6 Golden pilot: five learning cards, micro-practice and independent readiness",
+      "routing": "CHATGPT_LEAD+ACADEMIC_QA",
+      "status": "DONE",
+      "review_verdict": "CI_AND_BROWSER_PASS_DEPLOYED_OWNER_DEVICE_QA_PENDING",
+      "review_notes": "PR #120 merged into main 09ff58e41eb5bc05cf66ef20b8d4add508a74a2b. CI run 36232747305 PASS; Deploy MkDocs run 36232843852 PASS. Five grade6 cards, 15 micro, 10 independent Readiness, written answer guard. Legacy 120-bank IDs retained and explicitly marked cross-grade; grade7 content NOT included in grade6 Readiness. Implementation DONE; owner real-device UX acceptance not yet recorded."
+    },
+    {
+      "id": "G6-T03-SCOPE-001",
+      "title": "Topic03 class6 tỉ số/phần trăm versus class7 tỉ lệ thức/thuận/nghịch: audited content and progressive Golden rollout",
+      "routing": "CHATGPT_LEAD+GEMINI_ACADEMIC_REVIEW",
+      "status": "OPEN",
+      "review_notes": "Grade6 KNTT B31 maps tỉ số, tỉ số phần trăm and basic percent; Grade7 B20–23 maps tỉ lệ thức, dãy tỉ số, đại lượng tỉ lệ thuận/nghịch. Existing 120-question bank has no reliable per-item grade metadata. Need grade-scoped learner path and independent readiness; do not misrepresent full bank as grade6 Core.",
+      "context_version": "1.0.90"
+    },
+    {
+      "id": "G6-T02-OWNER-UX-001",
+      "title": "Owner real-device confirmation of grade-six Topic02 learning and Readiness",
+      "routing": "OWNER_DEVICE_QA",
+      "status": "DONE",
+      "review_notes": "Owner confirmed CĐ02 end-to-end desktop/iPad PASS on 2026-10-01 with no observed functional errors. Accepted journey: topic page → five Grade6 Core stages → micro/help flow → post-submit Readiness → next-topic link. Prior card-function acceptance remains valid. Task CLOSED DONE.",
+      "context_version": "1.0.92",
+      "review_verdict": "OWNER_DESKTOP_IPAD_PASS_CLOSED_DONE"
+    },
+    {
+      "id": "TOPIC25-R2-SOURCE-COVERAGE-001",
+      "title": "Confirm omitted R2 source files and review new Topic25 deep pages",
+      "routing": "INDEPENDENT_REVIEW+CHATGPT_VERIFY",
+      "status": "DONE",
+      "review_notes": "User provided Gemini R3 JSON with packet_id TOPIC25-GEMINI-TARGETED-R3-20260926, source_commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536, APPROVE, 9/9 distinct target_files_reviewed status PASS, critical_corrections empty; 5/8 context_files_read. Source-match and independent arithmetic/SVG coordinate preflight checked; decimal SVG plotting is rounded. Integration review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md. This completes targeted follow-up; editorial-only metadata changes after snapshot do not imply Gemini read those later bytes.",
+      "packet": "review-packets/topic25/GEMINI_REVIEW_PACKET_2026-09-26_TARGETED_R3.txt",
+      "source_commit": "5f74d7c377bc94f2688a9b5ee431d90c88af0536",
+      "packet_source_count": 17,
+      "review_verdict": "TARGETED_R3_9_OF_9_SOURCE_LOCKED_PASS"
+    },
+    {
+      "id": "TOPIC25-R2-EDITORIAL-DEEP-001",
+      "title": "Publish three post-Gemini R2 deep-dive anchor lessons",
+      "routing": "CHATGPT_AUTHOR+CI_BROWSER_QA",
+      "status": "DONE",
+      "review_verdict": "DEPLOYED_POST_R2_THEN_GEMINI_R3_3_OF_3_PASS",
+      "review_notes": "PR #122 merged as 2865e1e82749484300244234e95cad8b6ca05f7a. New pages A25-006/007/010 connect to catalog and library, IDs/URLs unchanged. CI run 36233772681 PASS and deployment run 36233855045 PASS. The Gemini R2 review was on prior source snapshot; these new pages were independently added afterwards. Follow-up TOPIC25-R2-SOURCE-COVERAGE-001 remains OPEN. Gemini Targeted R3 subsequently reviewed all three deep pages A25-006/007/010 directly against source commit 5f74d7c377bc94f2688a9b5ee431d90c88af0536 and reported PASS with variant checks; see review-packets/topic25/REVIEW_INTEGRATION_R3_2026-09-26.md."
+    },
+    {
+      "id": "CORE04-06-STANDALONE-001",
+      "title": "CĐ04–06 dedicated Core pages, 15 source-linked teaching copies and dual-modal learning",
+      "routing": "CHATGPT_AUTHOR_SELF_AUDIT+CI_BROWSER_QA",
+      "status": "DONE",
+      "review_verdict": "DEPLOYED_OWNER_ACCEPTED_SELF_AUDITED",
+      "review_notes": "PR #166 draft. Old 45 questions and their stable IDs/keys unchanged, CĐ07 R2 unaffected. Three dedicated Core pages with original micro coverage CĐ04 11/11, CĐ05 12/12, CĐ06 9/9. Source-locked card-by-card review document content-staging/reviews/MATH-CORE04-06-TEACH-SELF-AUDIT-20260929.md; math is self-audited under owner-approved risk tiers, not independently NotebookLM-verified. Four-step UI and browse QA; owner real-device acceptance pending. Owner accepted desktop+iPhone after successful published Pages deploy in PR #166; independent NotebookLM not claimed."
+    },
+    {
+      "id": "CORE08-12-STANDALONE-001",
+      "title": "CĐ08–12 independent Core pages, 25 source-grounded lectures and four skill-gap items",
+      "routing": "CHATGPT_AUTHOR_SELF_AUDIT+CI_BROWSER_QA",
+      "status": "DONE",
+      "review_verdict": "DEPLOYED_OWNER_ACCEPTED_SELF_AUDITED",
+      "review_notes": "Five stable standalone Core pages and 25 teaching cards, original 75 micro items preserved with four append-only singleton-skill questions (08 khử mẫu; 09 số nghiệm and năng suất; 11 trục mẫu đơn). CĐ09 pre-existing SYS09MICRO_012 declared skill mismatch reconciled in card metadata only. Source-locked audit content-staging/reviews/MATH-CORE08-12-TEACH-SELF-AUDIT-20260929.md. No change to main lessons, previous cards, assessment/readiness or storage IDs. Owner desktop/iPhone/iPad QA separate. Owner accepted iPad+desktop after successful published Pages deploy in PR #167; independent NotebookLM not claimed."
+    },
+    {
+      "id": "CORE13-15-STANDALONE-001",
+      "title": "CĐ13–15 independent Core learning, 15 geometric lectures and nine targeted practice questions",
+      "routing": "CHATGPT_AUTHOR_SOURCE_LOCKED_SELF_AUDIT+CI_BROWSER_QA",
+      "status": "DONE",
+      "review_verdict": "DEPLOYED_OWNER_DEVICE_ACCEPTED_SELF_AUDITED",
+      "review_notes": "Pilot geometry tranche CĐ13–15. Original 45 micro records pinned unchanged, nine new single-skill questions in CĐ13/14, CĐ15 has no question expansion. Geometric conditions are explicitly written, no answer depends on guessing from picture. Per-card source and review packet content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md; not an independent NotebookLM PASS. Verify desktop/iPhone/iPad and keep existing diagrams/infographics and student evidence unchanged. Larger CĐ16–20 batch separately risk-audited. Owner subsequently inspected iPad and desktop with no reported issue; CĐ13–15 release PR #168 was published. Not independent NotebookLM approval."
+    },
+    {
+      "id": "CORE16-18-STANDALONE-001",
+      "title": "CĐ16–18 source-grounded standalone Core with one square skill item",
+      "routing": "CHATGPT_AUTHOR_SOURCE_LOCKED_SELF_AUDIT+CI_BROWSER_QA",
+      "status": "DONE",
+      "review_verdict": "DEPLOYED_CI_BROWSER_PASS_OWNER_DEVICE_ACCEPTANCE_SEPARATE",
+      "review_notes": "PR #169 merged/deployed 2026-09-29 at 8a13c6c2f076fe360ada6bbaf51d09997e538a4c; 15 teaching copies, 46 micro incl. append-only GEO16MICRO_016, 36/36 skill opportunities. Prior READY status outdated. SELF_AUDITED, not independently NotebookLM-reviewed. No old ID/data change. Owner device acceptance separately recorded."
+    },
+    {
+      "id": "CORE19-20-ACADEMIC-REVIEW-001",
+      "title": "CĐ19 R2 and CĐ20 R1 Part A/B source-locked academic review",
+      "routing": "NOTEBOOKLM_REVIEW+CHATGPT_RECONCILE",
+      "status": "DONE",
+      "review_verdict": "CD19_R2_CONFIRMED_CD20_PART_A_10_OF_10_PART_B_19_OF_19_TEXT_ONLY",
+      "review_notes": "Draft PR #170 audit-only; CĐ19 R2 confirmed 5 lectures/2 new items; CĐ20 Part A 10/10 taxonomy and Part B 5 new lectures/14 items 19/19 text review, receipts in PR #170 and main CĐ20 release packet. This does not certify legacy lectures/hints/rendered SVG; separate implementation now delivered #173/#174.",
+      "source_commit": "8a13c6c2f076fe360ada6bbaf51d09997e538a4c",
+      "packet": "content-staging/reviews/MATH-CORE19-20-R1-20260929/"
+    },
+    {
+      "id": "CORE19-20-STANDALONE-ROLLOUT-001",
+      "title": "Integrate Core19–20 dual-modal learning with safe CĐ20 versioned grouping",
+      "routing": "CHATGPT_INTEGRATE+CI_BROWSER_VISUAL_QA+OWNER_QA",
+      "status": "DONE",
+      "review_verdict": "PR173_PR174_MERGED_CI_BROWSER_DEPLOY_PASS_OWNER_IPAD_DESKTOP_ACCEPTED",
+      "review_notes": "CĐ19 #173 merged 607b521635653ae89df68ed1890869a331721da3: 5 R2 teaching, 17 micro, 14/14 opportunities. CĐ20 #174 merged 4cfa70ff999eb469ac4e33dadb6447abae1c7383: versioned 10-card overlay, 29/29, 15 immutable old +14 append-only, no migration; 3 workflows PASS per PR, deploy run 36599072769 success. SVG browser QA separate from NotebookLM text review. Owner accepted iPad and desktop on 2026-09-29; iPhone unverified. See docs/collaboration/current-handoff.md."
+    },
+    {
+      "id": "CORE19-20-OWNER-DEVICE-QA-001",
+      "title": "Owner iPad and desktop acceptance of released CĐ19–20 Core",
+      "routing": "OWNER_DEVICE_QA",
+      "status": "DONE",
+      "review_verdict": "OWNER_ACCEPTED_IPAD_DESKTOP_20260929_IPHONE_UNVERIFIED",
+      "review_notes": "User explicitly confirmed on 2026-09-29: 'đã kiểm tra trên ipad, desktop. ok.' Applies to deployed CĐ19 PR #173 and CĐ20 PR #174 general owner QA. iPhone not reported. CI/browser QA and the v1 history invariants are separate automated evidence; do not invent owner-observed per-edge-case checks. No runtime data migration.",
+      "source_commit": "4cfa70ff999eb469ac4e33dadb6447abae1c7383"
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-RECONCILE-001",
+      "title": "Reconcile B01–B07 independent academic reviews and primary skill taxonomy before runtime integration",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW_RECONCILIATION",
+      "status": "DONE",
+      "review_verdict": "PHASE_D_CLOSED_PASS_492_OF_492_74_CLONE_FAMILIES_ZERO_REVISIONS",
+      "review_notes": "Phase D CĐ04–07 full-bank overlay review CLOSED PASS. Aggregate: 492 questions; 427 one-primary mappings; 65 intentionally formative-only/no-primary; 74/74 clone-family proposals PASS; 0 item revisions across CĐ04, CĐ05, CĐ06, CĐ07. CĐ07 packet MATH-SKILL-CORE07-OVERLAY-R1-20260930 source blob 06a4b8f6f31b356d09a22c8c2e42423a14523d6b PASS 120/120, 23/23 clone families. No runtime activation, history migration/regrade, Core Readiness credit or mastery threshold. Next gate: separate bounded additive pilot design under Phase C compatibility contract."
+    },
+    {
+      "id": "MATH-UI-BATCH-A-001",
+      "title": "Standalone dual-modal learning pages for CĐ02/21/23/24/25",
+      "routing": "GITHUB_IMPLEMENT+CI_BROWSER",
+      "status": "DONE",
+      "review_verdict": "PR178_MERGED_CI_BROWSER_DEPLOY_PASS_OWNER_DEVICE_QA_OPEN",
+      "review_notes": "PR #178 merge c1b461885d7da1bd3cafef34f357c04c493df3b0, 3 PR workflows success and Pages run 36606931537 success. Five separate routes/four-step nav, 25 original cards/75 original questions immutable; shared topic-learning-routes-v1.js; no learner-data migration. CĐ02 Grade6 Core, CĐ24 Core-Support, CĐ25 Entrance10. Owner new-batch real-device acceptance not yet recorded.",
+      "source_commit": "c1b461885d7da1bd3cafef34f357c04c493df3b0"
+    },
+    {
+      "id": "MATH-UI-BATCH-A-OWNER-QA-001",
+      "title": "Owner acceptance of released CĐ02/21/23/24/25 standalone pages",
+      "routing": "OWNER_DEVICE_QA",
+      "status": "DONE",
+      "review_verdict": "OWNER_DESKTOP_IPAD_PASS_CLOSED_DONE",
+      "review_notes": "Owner confirmed CĐ21/CĐ24/CĐ25 desktop+iPad PASS on 2026-10-01 with no observed functional errors. Combined with earlier CĐ02/CĐ23 card acceptance, Batch A owner-device acceptance is complete. Task CLOSED DONE.",
+      "source_commit": "c1b461885d7da1bd3cafef34f357c04c493df3b0",
+      "context_version": "1.0.92"
+    },
+    {
+      "id": "MATH-CORE03-ACADEMIC-AUTHOR-001",
+      "title": "Author and independently review CĐ03 five-stage Core based on Grade6/7 KNTT",
+      "routing": "CHATGPT_AUTHOR_SOURCE_LOCKED+NOTEBOOKLM_REVIEW",
+      "status": "DONE",
+      "review_verdict": "NOTEBOOKLM_R2_PASS",
+      "review_notes": "R1 reviewed 5/5 cards +15/15 micro and required revisions. Targeted R2 MATH-CORE03-R2-20260930 on blob a84c2740169070d6919bc8d2f274d10fb914fa32 PASS: 6/6 changed targets and 4/4 unchanged cards +10/10 unchanged micro regression PASS. Grade6 doi-don-vi-ti-so is Core-Support/formative only.",
+      "packet": "review-packets/core03/01_UPLOAD_TO_NOTEBOOKLM_CORE03_R1.md",
+      "source_commit": "65618b7a0bbe451ef57864931561d179c92558bc"
+    },
+    {
+      "id": "MATH-CORE02-23-GAP-001",
+      "title": "Review seven missing card-level skill practice opportunities CĐ02/23",
+      "routing": "CHATGPT_CANDIDATES+NOTEBOOKLM_REVIEW",
+      "status": "DONE",
+      "review_verdict": "NOTEBOOKLM_R1_PASS_7_OF_7_RELEASED_PR186",
+      "review_notes": "Packet MATH-CORE02-23-GAP-R1-20260930 blob 9695c998aade401f4c4129aa25ac6a8392a41b2b independently reviewed 7/7 PASS. PR #186 squash merge 0f00e939e1dc4dd3a2035d4e1bd0e116fc5d3809; Roadmap PR Quality PASS and Deploy MkDocs 36664825146 PASS. CĐ02 +5 coverage items, CĐ23 +2; original first 15+15 canonical records immutable, no learner migration/regrade, coverage != mastery."
+    },
+    {
+      "id": "MATH-CORE03-STANDALONE-IMPLEMENT-001",
+      "title": "Implement reviewed CĐ03 standalone Core route and micro bank",
+      "routing": "CHATGPT_INTEGRATE+CI_BROWSER_QA",
+      "status": "DONE",
+      "review_verdict": "PR183_MERGED_DEPLOY_PASS",
+      "review_notes": "PR #183 squash merge 03e27855e1499cc2f674be2b83ebdb2fb35a0d29. Three PR workflows PASS and Deploy MkDocs run 36662797203 PASS. Five cards +15 RAT03MICRO items, /core/ route, four-step nav, left menu and Grade6/7 class links added. RAT03V1_001-120, old manifest, Practice/Readiness and learner localStorage preserved without migration/regrade."
+    },
+    {
+      "id": "MATH-CORE03-OWNER-QA-001",
+      "title": "Owner real-device QA for deployed CĐ03 standalone Core",
+      "routing": "OWNER_DESKTOP_IPAD_QA",
+      "status": "DONE",
+      "review_verdict": "OWNER_DESKTOP_IPAD_PASS_CLOSED_DONE",
+      "review_notes": "Owner explicitly confirmed CĐ03 desktop/iPad PASS on 2026-10-01, with no observed errors. This closes the deployed standalone Core owner-device gate that followed academic R2 / CI / deploy PASS. Scope accepted: four-step navigation, five cards, lecture/practice modal flow, MathJax/readability, hint/disclosure interaction, and no observed phantom-attempt/history regression in the owner spot-check.",
+      "context_version": "1.0.91"
+    },
+    {
+      "id": "MATH-CORE02-23-GAP-OWNER-QA-001",
+      "title": "Owner spot-check appended CĐ02/CĐ23 coverage questions",
+      "routing": "OWNER_DESKTOP_IPAD_SPOT_QA",
+      "status": "DONE",
+      "review_verdict": "OWNER_ACCEPTED_IPAD_DESKTOP_20260930",
+      "review_notes": "User explicitly confirmed after PR #186 release: tested functions of the Core/application cards in CĐ02 and CĐ23 on iPad and desktop; 'đã ổn'. Scope is card functionality on those two topics. iPhone and unrelated Batch A routes are not implied."
+    },
+    {
+      "id": "MATH-SKILL-PILOT-001",
+      "title": "Design bounded additive canonical-skill evidence pilot after Phase D closure",
+      "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_REVIEW_BEFORE_RUNTIME",
+      "status": "DONE",
+      "context_version": "1.0.74",
+      "review_verdict": "ACCEPTED_PRODUCTION_NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_OWNER_QA_PASS",
+      "review_notes": "Bounded Phase E / Beta v4 pilot fully accepted. NotebookLM PASS 12/12, release-head technical QA PASS, production deploy SUCCESS, and owner production QA PASS from six screenshots of a completed 12-item session. Visible behavior confirms answer lock, supporting metadata-only, clone-family de-dup, singleton evidence, 12 attempts -> 7 max independent units, retry/history UI, and no mastery/readiness overclaim. Storage isolation remains supported by automated browser sentinel. Non-blocking UX polish candidate: simplify developer-oriented terms metadata / independent evidence unit. Any expansion is a separate reviewed gate."
+    },
+    {
+      "id": "MATH-SKILL-PHASE-F-EXPANSION-001",
+      "title": "Review bounded multi-topic canonical evidence expansion after accepted Beta v4",
+      "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_INDEPENDENT_REVIEW_BEFORE_RUNTIME",
+      "status": "DONE",
+      "context_version": "1.0.78",
+      "review_verdict": "ACCEPTED_PRODUCTION_NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_OWNER_QA_PASS",
+      "review_notes": "Phase F/Beta v5 fully accepted. NotebookLM PASS 15/15, release-head technical QA PASS, production deploy SUCCESS, and owner production QA PASS from seven screenshots. Owner used the same browser/profile as the prior Beta v4 session but opened a new page; canonical history showed 27 events, matching prior 12 v4 + new 15 v5 and confirming origin-scoped v4→v5 continuity. Screenshots also confirm dynamic CĐ04–CĐ07 labels, mixed evidence-class labels, ID05V1_120 canonical primary from overlay rather than legacy tag order, CĐ05/CĐ06 shared hieu-hai-binh-phuong skill, clone-family de-dup, exactly 9 new independent checks, and no mastery/readiness claim. Broader rollout remains a separate reviewed gate."
+    },
+    {
+      "id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-001",
+      "title": "Review production-scale canonical evidence architecture and G1 Practice shadow canary",
+      "routing": "CHATGPT_ARCHITECTURE_SOURCE_QA+NOTEBOOKLM_INDEPENDENT_REVIEW_BEFORE_RUNTIME",
+      "status": "DONE",
+      "context_version": "1.0.85",
+      "review_verdict": "ACCEPTED_PRODUCTION_NOTEBOOKLM_PASS_RELEASE_QA_PASS_OWNER_QA_PASS",
+      "review_notes": "Phase G1 fully accepted. NotebookLM design review PASS 0 revisions; exact release-head QA PASS; production deploy SUCCESS; owner production QA PASS. Final screenshot confirms canonical-v2 real production capture: policy_ready=true, policy_error=null, recent_events=3, seen_questions=3, independent_units=3, last_capture captured=true for RAT07V1_055, canonical skill rut-gon-phan-thuc, independent_evidence=true, reason first_unseen_unit. G1 is closed DONE. G2/G3 remain unauthorized and require a separate design/review gate."
+    },
+    {
+      "id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G2-001",
+      "title": "Expand canonical Practice shadow capture across the seven proven G1 skills",
+      "routing": "CHATGPT_SOURCE_LOCK+NOTEBOOKLM_INDEPENDENT_REVIEW+EXACT_HEAD_TECHNICAL_QA+OWNER_PRODUCTION_QA",
+      "status": "DONE",
+      "context_version": "1.0.87",
+      "review_verdict": "ACCEPTED_PRODUCTION_NOTEBOOKLM_PASS_TECHNICAL_QA_PASS_OWNER_QA_PASS",
+      "review_notes": "G2 fully accepted. NotebookLM PASS 74/74 delta + 8/8 architecture; exact release-head Roadmap QA PASS with direct representative G2-delta browser capture; production merge/deploy SUCCESS; owner live screenshots confirm G2 build canonical-evidence-g2-proven-skills-20260930, policy_ready=true, policy_error=null, v2 store active, five observed events/seen/independent units, RAT07V1_115 positive capture, and correct RAT07V1_114 not_in_g2_policy exclusion. Owner QA did not randomly surface a positive delta row, but direct delta capture was already proven on the exact release HEAD and the owner verified the identical G2 build/policy live. G2 CLOSED DONE. Separate help-disclosure collapse UX issue is outside this evidence acceptance."
+    },
+    {
+      "id": "MATH-HELP-DISCLOSURE-TOGGLE-001",
+      "title": "Make learner help and solution disclosures collapsible after expansion",
+      "routing": "CHATGPT_UX_DESIGN+REGRESSION_QA",
+      "status": "DONE",
+      "context_version": "1.0.89",
+      "review_verdict": "ACCEPTED_PRODUCTION_CI_BROWSER_PASS_OWNER_QA_PASS",
+      "review_notes": "Owner spot-QA PASS on both desktop and iPad. Practice help disclosure opens/closes/reopens with the same button; Core hints reveal sequentially, collapse/reopen correctly, and viewed hints remain counted. Exact tested HEAD e55667c5a0db5b034e832feeef1d95334d63aa01; Roadmap PR Quality run 36719189942 SUCCESS; production merge fb571ec78cfaf56f82d7dd81b719481dc4296e2b; Deploy MkDocs run 36719709094 SUCCESS. Browser QA confirmed no phantom attempts and assistance state persisted. Task CLOSED DONE."
+    },
+    {
+      "id": "MATH-TOPIC-NAV-FIX-001",
+      "title": "Fix topic continuation rendering and standardize Practice roadmap order",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_SPOT_QA",
+      "status": "DONE",
+      "context_version": "1.0.95",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED_DONE",
+      "review_notes": "Owner production spot-QA PASS on 2026-10-01. CĐ02 continuation renders correctly; CĐ07 Practice footer order matches approved contract. Task CLOSED DONE."
+    },
+    {
+      "id": "MATH-TOPIC-NAV-DEDUP-001",
+      "title": "Review duplicate top stepper vs in-topic quick navigation",
+      "routing": "CHATGPT_UX_AUDIT",
+      "status": "OPEN",
+      "context_version": "1.0.92",
+      "review_verdict": "NON_BLOCKING_OWNER_OBSERVATION",
+      "review_notes": "Owner noted the top four-step topic navigation and in-topic quick menu can duplicate each other. Not a functional defect. Do not remove either surface yet; later compare learner value, mobile behavior and scroll context, then consolidate only if one surface is redundant."
+    },
+    {
+      "id": "MATH-WRITTEN-EXERCISE-LIBRARY-001",
+      "title": "Build paper-first written exercise and anchor library",
+      "routing": "CHATGPT_DESIGN+NOTEBOOKLM_ACADEMIC_REVIEW+OWNER_UX_QA",
+      "status": "OPEN",
+      "context_version": "1.0.132",
+      "review_verdict": "B7_OWNER_QA_PASS_CORE_APPEND_STOP_44_ITEMS_22_TOPICS",
+      "review_notes": "B7 owner production QA PASS on both iPad and desktop. Production remains 44 items / 22 topics with CT21 exactly two reviewed items. Normal Core append stops here: CT01 is roadmap/navigation, CT22 remains THPT-Bridge, and CT25 retains separate Entrance10/tổng hợp lanes. Keep umbrella OPEN for future anchor/library maintenance rather than forcing artificial topic completeness."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-UX-PATCH-001",
+      "title": "Compact written-library support row and connect topic/shortcut navigation",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_SPOT_QA",
+      "status": "OPEN",
+      "context_version": "1.0.101",
+      "review_verdict": "PRODUCTION_RELEASED_OWNER_SPOT_QA_PARTIAL_2_OF_3_PASS",
+      "review_notes": "Owner spot-QA now confirms (1) quick shortcut 7+25 with Thư viện bài tập PASS and (2) compact horizontal Hướng dẫn/Rubric/Lỗi thường gặp row PASS from production screenshot. Remaining owner check: topic 'Các dạng bài' deep link auto-filters the library. Automated browser QA already PASS."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B1-001",
+      "title": "Expand Written Exercise Library to CĐ08/CĐ17/CĐ19",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "DONE",
+      "context_version": "1.0.104",
+      "review_verdict": "PRODUCTION_OWNER_QA_COUNTS_NEW_TOPICS_PASS_DONE",
+      "review_notes": "B1 production release completed. Owner confirmed CT08/17/19 are present and each exposes 2 exercises; numeric topic-order follow-up also passed. B1 closed."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-TOPIC-SORT-001",
+      "title": "Sort Written Library topic filter numerically",
+      "routing": "CHATGPT_IMPLEMENT+CI+DEPLOY+OWNER_SPOT_QA",
+      "status": "DONE",
+      "context_version": "1.0.103",
+      "review_verdict": "OWNER_QA_PASS_CLOSED_DONE",
+      "review_notes": "Owner refreshed production and confirmed the Written Library topic filter is now in ascending numeric order. PR #241 / QA 36862512366 / merge 3e30e66b041b0ca92f8b706e07f8568511471e9b / deploy 36863005816 remain the release provenance. Durable rule: sort by CT number, never append order."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B2-001",
+      "title": "Expand Written Exercise Library to CĐ09/CĐ16/CĐ18",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "DONE",
+      "context_version": "1.0.107",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED_DONE",
+      "review_notes": "B2 production owner QA PASS: owner confirmed CT09, CT16 and CT18 are present and each exposes exactly 2 exercises. Release provenance remains PR #243 / merge ebd8c5e3f17805ddfd281826956c4d4de799cd5e / Deploy MkDocs 36866917887 SUCCESS. B2 closed."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-INTRO-COPY-001",
+      "title": "Replace stale Written Library pilot intro with durable copy",
+      "routing": "CHATGPT_IMPLEMENT+CI+DEPLOY+OWNER_SPOT_QA",
+      "status": "DONE",
+      "context_version": "1.0.109",
+      "review_verdict": "OWNER_QA_PASS_CLOSED_DONE",
+      "review_notes": "Owner refreshed production and confirmed the durable Written Library intro copy is correct. Stale Pilot v1 / fixed 6-item / fixed topic-list copy is gone. Task closed."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B3-001",
+      "title": "Expand Written Exercise Library to CĐ10/CĐ11/CĐ12",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "DONE",
+      "context_version": "1.0.114",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
+      "review_notes": "Owner production QA PASS on both iPad and desktop: CT10, CT11 and CT12 are present and each exposes exactly 2 exercises. Release provenance remains PR #246 / merge 2a6204c9ee4134471ea678fcc07347439e22faae / Deploy MkDocs 36876967991 SUCCESS. B3 closed."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B4-001",
+      "title": "Expand Written Exercise Library to CĐ13/CĐ15/CĐ23",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "DONE",
+      "context_version": "1.0.119",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
+      "review_notes": "Owner production QA PASS on both iPad and desktop: CT13, CT15 and CT23 are present and each exposes exactly 2 exercises. Release provenance remains PR #248 / merge 83db880966bd0dcfaf594811ff30abff1e9edd9a / Deploy MkDocs 36882280354 SUCCESS. B4 closed."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B5-001",
+      "title": "Expand Written Exercise Library to CĐ04/CĐ05/CĐ06",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "DONE",
+      "context_version": "1.0.123",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
+      "review_notes": "Owner production QA PASS on both iPad and desktop: CT04, CT05 and CT06 are present and each exposes exactly 2 exercises. Release provenance remains PR #250 / merge 798cc58919aa15cd69fa28aeb5132929047f3113 / Deploy MkDocs 36887406960 SUCCESS. B5 closed."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B6-001",
+      "title": "Expand Written Exercise Library to CĐ02/CĐ03/CĐ20",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "DONE",
+      "context_version": "1.0.127",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
+      "review_notes": "Owner production QA PASS on both iPad and desktop: CT02, CT03 and CT20 are present and each exposes exactly 2 exercises. Release provenance remains PR #252 / merge 6dadcb1fb969380dc6fb5f7c241740dc769ae919 / Deploy MkDocs 36893580607 SUCCESS. Production remains 42 exercises / 21 topics. CT02 remains grade-6 Core journey; CT20 remains Core measurement/solid geometry. B6 closed."
+    },
+    {
+      "id": "MATH-WRITTEN-LIBRARY-EXPANSION-B7-001",
+      "title": "Expand Written Exercise Library to CĐ21 Thống kê",
+      "routing": "CHATGPT_IMPLEMENT+CI+OWNER_RELEASE_GATE",
+      "status": "DONE",
+      "context_version": "1.0.132",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_IPAD_DESKTOP_CLOSED_DONE",
+      "review_notes": "NotebookLM PASS 2/2 + ARCH_1..ARCH_10. Final exact-head f0df2011ab9694b06c30ffda1b7fa872d2dc1fda passed Roadmap PR Quality 36899579636; PR #255 merged as 47adffd87b654a1bd2b6854ddbc270bbf31dfa62; Deploy MkDocs 36900375742 SUCCESS including GitHub Pages. Owner then checked production on both iPad and desktop and reported it achieved the expected result; supplied screenshots show CT21 item rendering, guidance, 50% calculation, rubric and evidence-boundary copy correctly. B7 closed DONE at 44 items / 22 topics."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-001",
+      "title": "Consolidate THCS Skill Taxonomy v2 across learner-facing families and diagnostic subskills",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.136",
+      "review_verdict": "ACADEMIC_PROGRAM_CLOSED_131_FAMILIES_386_MAPPINGS_PASS",
+      "review_notes": "S1–S4 and whole-project CT02–CT25 reconciliation are academically closed. Cross-batch NotebookLM: 131/131 family definitions PASS; 386/386 mapping rows PASS; 5/5 CT24 canonical reuse PASS; 20 intentional NO_FAMILY PASS; 2/2 overlap candidates PASS_AS_CONTEXTUAL_REUSE; ARCH_1..16 PASS; 0 fixes. Authorization CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING. Runtime/mastery/Readiness/history migration remains unauthorized."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-S1-001",
+      "title": "Skill Taxonomy v2 S1 — CT02–CT07",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.133",
+      "review_verdict": "ACADEMICALLY_CLOSED",
+      "review_notes": "87 legacy tags -> 39 learner-facing families; NotebookLM family review 39/39 PASS, 0 mapping fixes, 8/8 written-family links PASS. CT02+CT03 240/240 full-bank PASS; prior CT04–CT07 Phase D 492/492 reviewed. Combined question basis 732. No runtime activation."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-S2-001",
+      "title": "Skill Taxonomy v2 S2 — CT08–CT12",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.133",
+      "review_verdict": "ACADEMICALLY_CLOSED_624_OF_624_PASS_ZERO_REVISIONS",
+      "review_notes": "75 legacy tags -> 29 learner-facing families (20 Core + 9 optional). Family review PASS 29/29 with 0 mapping fixes and 9/9 written gaps. CT08 132/132 PASS; combined CT09–12 492/492 PASS, 59/59 clone families. Final registry review-packets/skill-taxonomy/S2_FINAL_ACADEMIC_REGISTRY_R1.json. No runtime activation."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-S3-001",
+      "title": "Skill Taxonomy v2 S3 — CT13–CT20 Geometry cluster",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.133",
+      "review_verdict": "ACADEMICALLY_CLOSED_1146_OF_1146_PASS_ZERO_REVISIONS",
+      "review_notes": "162 legacy tags -> 44 learner-facing families (38 Core + 1 Core-Support + 5 optional). Family review 44/44 PASS. Final combined review used exactly 11 selected Sources = two permanent (00_NOTEBOOK_MATH_PERMANENT_v1.1.md; 01_TOAN_THCS_MASTER_PLAN_v1.1.md) + 9 S3 batch Sources. Full-bank 1146/1146 PASS, 165/165 clone candidates, 20/20 topic checks, ARCH_1..14 PASS, 1136 mapped-family + 10 CT20 method/no-family items. PR #266 CI SUCCESS. Final registry review-packets/skill-taxonomy/S3_FINAL_ACADEMIC_REGISTRY_R1.json."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-S4-001",
+      "title": "Skill Taxonomy v2 S4 — CT21–CT25",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.135",
+      "review_verdict": "ACADEMICALLY_CLOSED_612_OF_612_PASS_ZERO_REVISIONS",
+      "review_notes": "19/19 family PASS; 62 legacy mappings with 0 fixes; 4/4 written gaps PASS. Full-bank CT21–CT25 612/612 PASS, 492 mapped-family + 120 intentional NO_FAMILY rows, 66/66 clone groups PASS, BOUNDARY_1..8 and ARCH_1..12 PASS. Final registry review-packets/skill-taxonomy/S4_FINAL_ACADEMIC_REGISTRY_R1.json. No runtime activation."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-CROSS-BATCH-001",
+      "title": "Skill Taxonomy v2 whole-project cross-batch reconciliation — CT02–CT25",
+      "routing": "CHATGPT_SOURCE_AUDIT+NOTEBOOKLM_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.136",
+      "review_verdict": "PASS_131_OF_131_FAMILIES_386_OF_386_MAPPINGS_ZERO_FIXES",
+      "review_notes": "Whole-project reconciliation PASS. Five CT24 canonical reuse mappings PASS; 20 intentional NO_FAMILY rows PASS; two diagnostic-subskill overlaps PASS_AS_CONTEXTUAL_REUSE; ARCH_1..16 PASS. Authorization CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING only."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-IMPLEMENTATION-PLAN-001",
+      "title": "Skill Taxonomy v2 implementation planning",
+      "routing": "CHATGPT_ARCHITECTURE+GITHUB_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.138",
+      "review_verdict": "PLAN_R1_ACCEPTED_I0_COMPLETED",
+      "review_notes": "Plan R1 accepted. I0 durable registry completed in PR #271; exact head ae8b7264... CI SUCCESS run 37013490363; merge a8b619a2.... Registry 131 families / 386 mappings / 20 NO_FAMILY / 14 total CROSS_TOPIC_REUSE with 5 CT24 reuse. No runtime/data writes."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I0-001",
+      "title": "Skill Taxonomy v2 I0 — durable registry and validation",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA",
+      "status": "DONE",
+      "context_version": "1.0.138",
+      "review_verdict": "PASS_MAIN_REGISTRY_RUNTIME_DISABLED",
+      "review_notes": "PR #271 merged. 131/131 families, 386/386 mappings, 20 intentional NO_FAMILY, 14 total CROSS_TOPIC_REUSE, 5 CT24 reuse, source-locked S1–S4. CI run 37013490363 SUCCESS including I0 test, G2 regression, strict build and browser QA. No runtime activation."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I1-001",
+      "title": "Skill Taxonomy v2 I1 — compile topic-local CT02–CT25 item policies",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA",
+      "status": "DONE",
+      "context_version": "1.0.139",
+      "review_verdict": "PASS_3114_OF_3114_TOPIC_LOCAL_POLICIES_RUNTIME_DISABLED",
+      "review_notes": "PR #272 merged. Exact head 35128a59... CI SUCCESS run 37016671647. 24 CT02–CT25 policies cover 3,114 unique questions: 2,900 family-linked + 214 formative/NO_FAMILY. Source bank Git blobs and legacy skill tags exact; family/layer consistency checked; no runtime JS loads policies; G2 unchanged."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I2-001",
+      "title": "Skill Taxonomy v2 I2 — shadow observer canary",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.142",
+      "review_verdict": "PASS_OWNER_PRODUCTION_QA_CLOSED",
+      "review_notes": "Automated QA PASS; Deploy MkDocs 37019804305 SUCCESS; gh-pages artifact verification PASS; owner production QA PASS. Owner confirmed policy_ready=true / policy_error=null, NUM02V1_119 correctly returned not_in_i2_canary, and normal CT02 Practice shows no Taxonomy v2 debug panel. No mastery/Readiness/backfill/UI activation."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I3-001",
+      "title": "Skill Taxonomy v2 I3 — expand shadow capture",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.144",
+      "review_verdict": "I3A_PASS_OWNER_PRODUCTION_QA_CLOSED",
+      "review_notes": "I3A full CT02 shadow rollout PASS. Automated QA + deploy + gh-pages verification PASS. Owner QA confirmed policy_ready=true, policy_error=null, active capture on NUM02V1_100 -> NUM-FRACTION-OPS / phep-tinh-phan-so, 8 events / 8 seen / 7 independent units, and no debug panel in normal UI. CT03+ still requires separate authorization."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I3B-001",
+      "title": "Skill Taxonomy v2 I3B — CT03 shadow expansion",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.146",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "Owner production QA PASS on 2026-10-02 from the live debug snapshot: build taxonomy-v2-i3b-ct02-03-20261002, policy_ready=true, policy_error=null, 18 recent events / 18 seen questions / 16 independent units; last capture RAT03V1_088 -> RATIO-DISTINGUISH / phan-biet-thuan-nghich with independent_evidence=true and first_unseen_unit. I3B CT02+CT03 gate is closed. No mastery, Readiness, backfill/regrade or learner-facing Taxonomy v2 UI."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I3C-001",
+      "title": "Skill Taxonomy v2 I3C — CT04 shadow expansion",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.147",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "Owner production QA PASS on 2026-10-02. Live snapshot: build taxonomy-v2-i3c-ct02-04-20261002, policy_ready=true, policy_error=null, 21 recent events / 21 seen questions / 19 independent units; last capture ALG04V2_053 -> ALG-MULTIPLY / nhan-bieu-thuc with independent_evidence=true and first_unseen_unit. CT04 dual-shadow coexistence with Canonical Evidence G2 accepted. No mastery, Readiness, backfill/regrade or learner-facing Taxonomy v2 UI."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I3D-001",
+      "title": "Skill Taxonomy v2 I3D — CT05–CT07 shadow expansion",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.148",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "Owner production QA PASS on 2026-10-03. Live snapshot: build taxonomy-v2-i3d-ct02-07-20261002, policy_ready=true, policy_error=null, 25 recent events / 25 seen questions / 21 independent units; last capture FAC06V1_081 -> FAC-COMBINE / phan-tich-da-thuc-hoan-toan with independent_evidence=false and clone_family_repeat. This specifically confirms live de-duplication of repeated clone-family exposure. The full G2 overlap band CT04–CT07 is now proven with stores isolated. No mastery, Readiness, backfill/regrade or learner-facing Taxonomy v2 UI."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I3E-001",
+      "title": "Skill Taxonomy v2 I3E — CT08–CT12 shadow expansion",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.149",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "Owner QA PASS: I3E live build ready, no policy error, 33 events / 33 seen / 29 independent units; FUN10V1_004 mapped to FUNC-BASIC / tinh-gia-tri-ham as first_unseen_unit. S2 CT08–CT12 accepted; G2 stays frozen to CT04–CT07."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I3F-001",
+      "title": "Skill Taxonomy v2 I3F — CT13–CT20 shadow expansion",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.150",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "Owner production QA PASS on 2026-10-03. Live snapshot: build taxonomy-v2-i3f-ct02-20-20261003, policy_ready=true, policy_error=null, 41 recent events / 41 seen questions / 34 independent units; last capture GEO19V1_060 -> CIRCLE-CYCLIC / dau-hieu-noi-tiep with independent_evidence=false and clone_family_repeat. S3 CT13–CT20 accepted."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I3G-001",
+      "title": "Skill Taxonomy v2 I3G — full CT02–CT25 shadow rollout",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.151",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "Owner production QA PASS on 2026-10-03. Live snapshot: build taxonomy-v2-i3g-ct02-25-20261003, policy_ready=true, policy_error=null, 51 recent events / 51 seen questions / 42 independent units; last capture PRO23V1__021 -> PROB-EVENT / bien-co with independent_evidence=true and first_unseen_unit. Full I3 CT02–CT25 shadow rollout is closed. Runtime coverage remains 3114 reviewed rows = 2900 active + 214 guards, 127 evidence-bearing families; registry remains 131 families."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I4-001",
+      "title": "Skill Taxonomy v2 I4 — owner/opt-in Skill Map preview",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.152",
+      "review_verdict": "OWNER_PREVIEW_QA_PASS_CLOSED",
+      "review_notes": "Owner production screenshots confirm I4 preview behavior with the real browser profile: 42 independent units, 18 correct independent units, 51 seen questions, 51 recent events; evidence-only filter shows 28/131 families with 23 KNTT-Core visible; representative cards show independent counts/accuracy without mastery; legacy Practice remains in a separate 74-tag disclosure with explicit no-merge wording. Automated release QA already proved read-only localStorage behavior. I4 closed."
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I5-001",
+      "title": "Skill Taxonomy v2 I5 — evidence sufficiency/mastery/readiness policy review",
+      "routing": "CHATGPT_POLICY_DRAFT+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
+      "status": "DONE",
+      "context_version": "1.0.153",
+      "review_verdict": "NOTEBOOKLM_R2_8_OF_8_PASS_POLICY_CLOSED",
+      "review_notes": "I5 R1 was directionally PASS but reconciled to R2 because R1 incorrectly made independent evidence correct-only and blurred Practice sufficiency with Mastery/Readiness. R2 preserves negative first-unassisted evidence as independent and immutable, keeps Practice sufficiency formative/descriptive, handles sparse capacities 0/1/2/>=3, separates unseen-Core coverage from observed performance, keeps paper self-check non-verified, applies no time decay, and requires no UI/runtime activation for policy closure. NotebookLM compact R2 recheck returned 8/8 PASS, 0 revisions. Mastery, Readiness, backfill/regrade and general learner-facing release remain OFF.",
+      "integrated_artifact": "docs/roadmap/skill-taxonomy-v2-evidence-policy-r2.md",
+      "review_receipt": "review-packets/skill-taxonomy/phase-i5/08_NOTEBOOKLM_I5_R2_PASS_RECEIPT.md",
+      "closure_receipt": "review-packets/skill-taxonomy/phase-i5/09_I5_POLICY_CLOSURE.md"
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I6-001",
+      "title": "Skill Taxonomy v2 I6 — controlled learner-facing release",
+      "routing": "CHATGPT_IMPLEMENTATION+GITHUB_QA+OWNER_CONTROLLED_RELEASE",
+      "status": "DONE",
+      "context_version": "1.0.155",
+      "review_verdict": "OWNER_QA_PASS_CONTROLLED_RELEASE_CLOSED",
+      "review_notes": "Exact-head CI PASS, PR #283 merged, MkDocs deploy PASS, and owner visual QA screenshots confirm the controlled learner Skill Map behavior. Internal I6/QA terminology is acceptable on the controlled QA route but must be removed before broad learner navigation exposure.",
+      "merge_sha": "56b56aa03a486d0b78de767b02fa778dd5303ce8",
+      "gh_pages_sha": "15e245b22d5947b4c3a9d55ed0776998bde9fa9a",
+      "owner_qa_receipt": "review-packets/skill-taxonomy/phase-i6/01_I6_OWNER_QA_PASS.md"
+    },
+    {
+      "id": "MATH-SKILL-TAXONOMY-V2-I6B-001",
+      "title": "Skill Taxonomy v2 I6B — broader learner-facing activation",
+      "routing": "CHATGPT_PRODUCT_POLISH+GITHUB_QA+OWNER_APPROVAL",
+      "status": "DONE",
+      "context_version": "1.0.157",
+      "review_verdict": "OWNER_QA_PASS_PUBLIC_ACTIVATION_CLOSED",
+      "review_notes": "Public /ban-do-ky-nang/ release passed exact-head CI, deploy and owner visual QA. Screenshots confirm learner-friendly naming, coherent 42/18/28/103 summary counts, topic/layer/evidence-only filters, sparse N<=2 without raw percentage, support-layer rendering, learner-facing evidence explanations and separate legacy Practice. No visible font/layout/card overflow problem. Mastery, Readiness, backfill/regrade and automatic written scoring remain OFF.",
+      "merge_sha": "95b86cd6015dc4437686d60cc6d15ca879565213",
+      "gh_pages_sha": "ed2275f5a711208b18be0c14208f9befba7f689b",
+      "owner_qa_receipt": "review-packets/skill-taxonomy/phase-i6b/01_I6B_OWNER_QA_PASS.md"
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-001",
+      "title": "Academic Depth & Self-Learning Readiness — source framework and 25-topic audit",
+      "routing": "CHATGPT_LEAD+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
+      "status": "DONE",
+      "context_version": "1.0.159",
+      "review_verdict": "NOTEBOOKLM_10_OF_10_PASS_CT09_PILOT_ONLY",
+      "review_notes": "Framework R1 independently reviewed by NotebookLM: F1-F10 all PASS, zero revisions. Authorized for CT09 pilot only. No mass edit across 25 topics and no Mastery/Readiness expansion.",
+      "review_receipt": "review-packets/academic-depth/framework-r1/01_NOTEBOOKLM_FRAMEWORK_R1_PASS_RECEIPT.md"
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-CT09-001",
+      "title": "Academic Depth CT09 pilot — source-backed self-learning audit",
+      "routing": "CHATGPT_SOURCE_ANALYSIS+NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_APPROVAL",
+      "status": "DONE",
+      "context_version": "1.0.180",
+      "review_verdict": "SELF_LEARNING_READY_V1_CLOSED",
+      "review_notes": "CT09 Academic Depth pilot fully closed. P1-A/P1-B/P1-C1/P1-C2 all Owner QA PASS. Final NotebookLM closure: D1-D6 PASS, A1-A9 PASS, selective hints accepted, generic roadmap priority badge may remain, school-semester frequency remains transparent non-blocking INSUFFICIENT_SOURCE. CT09 classified SELF_LEARNING_READY_V1 under current reviewed corpus.",
+      "review_receipt": "review-packets/academic-depth/ct09-closure/02_CT09_SELF_LEARNING_READY_V1_PASS_RECEIPT.md"
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-CT09-P1A-001",
+      "title": "CT09 Academic Depth P1-A — framing and theory depth",
+      "routing": "GITHUB_QA+OWNER_PRODUCTION_QA",
+      "status": "DONE",
+      "context_version": "1.0.169",
+      "review_verdict": "OWNER_QA_PASS_DESKTOP_IPAD",
+      "review_notes": "Owner confirmed the final P1-A UI on desktop and iPad is reasonable and much improved. Navigation, collapsible TOC, calculator disclosure, reading size and background skill metadata are accepted. P1-A closed."
+    },
+    {
+      "id": "MATH-TOPIC22-WORKSPACE-ALIGN-001",
+      "title": "Align CĐ22 with shared learner workspace",
+      "routing": "GITHUB_QA+OWNER_SPOT_CHECK",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.169",
+      "review_verdict": "IMPLEMENTED_PRE_CI",
+      "review_notes": "Register CĐ22 in topic-workspace-v1 so it inherits shared quick-nav, anchor-preserving right TOC, +/- child disclosure and reading-size improvements. Preserve CĐ22 as optional THPT-Bridge; no KNTT-Core journey or standalone Core page is introduced."
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-CT09-P1B-001",
+      "title": "CT09 Academic Depth P1-B — deep written anchors and progressive self-study support",
+      "routing": "NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_PRODUCTION_QA",
+      "status": "DONE",
+      "context_version": "1.0.170",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "NotebookLM W1-W10 PASS, 0 revisions. Six append-only anchors WX09-SYS-003..008 released; progressive hints, separate solution/self-check/mistakes/remediation, learner-friendly labels and MathJax verified. Owner accepted final production state after PR #296 label cleanup and PR #297 removal of estimated-time tags from learner cards. No automatic written scoring, Mastery/Readiness credit, regrade/backfill or Practice-history migration.",
+      "review_receipt": "review-packets/academic-depth/ct09-p1b/02_NOTEBOOKLM_CT09_P1B_WRITTEN_R1_PASS_RECEIPT.md",
+      "owner_qa_receipt": "review-packets/academic-depth/ct09-p1b/03_CT09_P1B_OWNER_QA_PASS.md"
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-CT09-P1C1-001",
+      "title": "CT09 Academic Depth P1-C1 — anti-clone variant grouping and session diversity",
+      "routing": "GITHUB_QA+OWNER_PRODUCTION_QA",
+      "status": "DONE",
+      "context_version": "1.0.176",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "P1-C1 anti-clone selector is live and owner production QA PASS is now explicitly confirmed. Automated exact-head/browser/deploy gates were already PASS. variant_group remains non-evidence delivery metadata; original 120 CT09 IDs/content/history preserved; no Mastery/Readiness or backfill/regrade.",
+      "release_receipt": "review-packets/academic-depth/ct09-p1c1/02_CT09_P1C1_RELEASE_RECEIPT.md",
+      "owner_qa_receipt": "review-packets/academic-depth/ct09-p1c1/03_CT09_P1C1_OWNER_QA_PASS.md"
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-CT09-P1C2-001",
+      "title": "CT09 Academic Depth P1-C2 — targeted interactive coverage",
+      "routing": "NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_PRODUCTION_QA",
+      "status": "DONE",
+      "context_version": "1.0.178",
+      "review_verdict": "OWNER_PRODUCTION_QA_PASS_CLOSED",
+      "review_notes": "P1-C2 learner-facing production QA is explicitly PASS. Nine reviewed append-only questions SYS09V1_121..129 are live; CT09 Practice has 129 questions / 27 structural groups. Exact-head CI #644 and deploy #552 passed. No Mastery/Readiness, backfill/regrade or attempt migration.",
+      "review_packet": "review-packets/academic-depth/ct09-p1c2/01_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_CANDIDATES_R1.md",
+      "review_receipt": "review-packets/academic-depth/ct09-p1c2/02_NOTEBOOKLM_CT09_P1C2_INTERACTIVE_R1_PASS_RECEIPT.md",
+      "release_receipt": "review-packets/academic-depth/ct09-p1c2/03_CT09_P1C2_PRODUCTION_RELEASE.md",
+      "owner_qa_receipt": "review-packets/academic-depth/ct09-p1c2/04_CT09_P1C2_OWNER_QA_PASS.md"
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-CT09-CLOSURE-001",
+      "title": "CT09 Academic Depth — Self-Learning Readiness closure audit",
+      "routing": "NOTEBOOKLM_INDEPENDENT_REVIEW+OWNER_DECISION",
+      "status": "DONE",
+      "context_version": "1.0.180",
+      "review_verdict": "SELF_LEARNING_READY_V1_CLOSED",
+      "review_notes": "NotebookLM final closure audit: D1-D6 PASS, A1-A9 PASS, PRIORITY_BADGE KEEP, SELECTIVE_HINT_POLICY PASS, school-semester frequency NON_BLOCKING_INSUFFICIENT_SOURCE. OVERALL SELF_LEARNING_READY_V1; authorization CLEARED_FOR_CT09_SELF_LEARNING_READY_V1_CLOSURE.",
+      "review_packet": "review-packets/academic-depth/ct09-closure/01_NOTEBOOKLM_CT09_SELF_LEARNING_READY_CLOSURE_R1.md",
+      "review_receipt": "review-packets/academic-depth/ct09-closure/02_CT09_SELF_LEARNING_READY_V1_PASS_RECEIPT.md"
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-ROLLOUT-001",
+      "title": "Academic Depth controlled rollout after CT09 pilot",
+      "routing": "SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_QA",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.181",
+      "review_verdict": "CT09_PILOT_VALIDATED_CONTROLLED_ROLLOUT_ONLY",
+      "review_notes": "Controlled rollout has started with CT08 audit-only/source phase. No CT08 learner-facing edits until source census, normalized problem catalogue, D1-D6 audit and independent review authorize a delta."
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-CT08-001",
+      "title": "Academic Depth CT08 — source-backed self-learning audit",
+      "routing": "SOURCE_AUDIT+NOTEBOOKLM_INDEPENDENT_REVIEW+GITHUB_QA+OWNER_QA",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.187",
+      "review_verdict": "P1A_IMPLEMENTATION_IN_PROGRESS",
+      "review_notes": "R1 academic review PASS. P1-A implementation is in progress on a separate branch; P1-B/P1-C remain blocked until P1-A technical/owner QA. No Mastery/Readiness change. Architecture checkpoint 2026-10-04: pause further CT08 P1-B/P1-C expansion until Master Plan v1.2.1 shared-library/two-path implications are reconciled with CT08 naming, Practice Room and Written Library placement.",
+      "review_packet": "review-packets/academic-depth/ct08-r1/02_NOTEBOOKLM_CT08_GAP_DELTA_R1.md",
+      "review_receipt": "review-packets/academic-depth/ct08-r1/03_CT08_R1_NOTEBOOKLM_PASS_RECEIPT.md"
+    },
+    {
+      "id": "MATH-ACADEMIC-DEPTH-CT08-P1A-001",
+      "title": "CT08 Academic Depth P1-A — framing, theory and reviewed layer correction",
+      "routing": "GITHUB_QA+OWNER_QA",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.186",
+      "review_verdict": "IMPLEMENTATION_IN_PROGRESS_AFTER_NOTEBOOKLM_R1_PASS",
+      "review_notes": "Authorized by CT08 R1 NotebookLM PASS. Scope: learner-layer correction (inequality modeling = KNTT-Core application; multi-condition = Core-Support, both non-gating), remove row-level star ranking but keep generic topic badge, add targeted worked examples (transform-to-product, transformed inequality, deeper one-variable model), add Core inequality-model teaching block, and notation-only cleanup EQ08V1_047..050 under academic lock. Taxonomy v2 registry/runtime remains protected and unchanged; no Mastery/Readiness, backfill/regrade or history migration.",
+      "review_receipt": "review-packets/academic-depth/ct08-r1/03_CT08_R1_NOTEBOOKLM_PASS_RECEIPT.md"
+    },
+    {
+      "id": "MATH-GOVERNANCE-MASTER-PLAN-1.2.1-001",
+      "title": "Master Plan v1.2.1 — shared Written Exercise Library",
+      "routing": "GOVERNANCE+ARCHITECTURE",
+      "status": "DONE",
+      "context_version": "1.0.187",
+      "review_verdict": "OWNER_APPROVED_GOVERNANCE_UPDATE",
+      "review_notes": "Master Plan v1.2.1 defines one canonical Written Exercise Library with two learner paths: Học theo lớp/KNTT and Học theo chuyên đề. Adds kntt_placements, topic_placements, prerequisite_skills and written_role; curriculum placement is explicitly distinct from prerequisite knowledge. No learner-facing UI/data migration is authorized by this governance update. NotebookLM permanent Master Plan source must be refreshed from v1.1 to the new canonical version before the next independent review, but refresh is intentionally deferred for now."
+    },
+    {
+      "id": "MATH-KNTT-COVERAGE-MATRIX-6-9-001",
+      "title": "KNTT Coverage Matrix 6–9 — current-skill reconciliation",
+      "routing": "GOVERNANCE+CURRICULUM_MAPPING",
+      "status": "DONE",
+      "context_version": "1.0.195",
+      "review_verdict": "KNTT_6_9_SEMANTIC_RECONCILIATION_CLOSED",
+      "review_notes": "Grade 9 R4 closed after NotebookLM PASS 4/4 plus 2/2 layer audit with clearance G9_R4_RECONCILIATION_REVIEW_COMPLETE. Final G9 split: 2 CANONICAL_SKILL + 2 CANONICAL_FAMILY, no new identity. S1 corrected STAT-FREQUENCY Core-Support→KNTT-Core and STAT-ADVANCED-DATA Entrance10→KNTT-Core. Grades 6–9 semantic reconciliation is now complete. Raw exact-ID mismatches remain only for traceability. No runtime/history/Mastery/Readiness or learner-facing change. Next matrix phase: dimension coverage audit (SKILL_MAP, LEARN_CONTENT, MICRO_PRACTICE, PRACTICE_BANK, WRITTEN_LIBRARY, READINESS where authorized).",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
+        "docs/roadmap/kntt-coverage-matrix-6-9-v1.md",
+        "docs/assets/data/curriculum/kntt-grade6-reconciliation-r1.json",
+        "docs/roadmap/kntt-grade6-reconciliation-r1.md",
+        "review-packets/kntt-grade6-reconciliation-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "review-packets/kntt-grade6-reconciliation-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "docs/assets/data/curriculum/kntt-grade7-reconciliation-r2.json",
+        "docs/roadmap/kntt-grade7-reconciliation-r2.md",
+        "review-packets/kntt-grade7-reconciliation-r2/00_NOTEBOOKLM_PACKET_R2.md",
+        "review-packets/kntt-grade7-reconciliation-r2/01_NOTEBOOKLM_RESULT_R2.md",
+        "docs/assets/data/curriculum/kntt-grade8-reconciliation-r3.json",
+        "docs/roadmap/kntt-grade8-reconciliation-r3.md",
+        "docs/assets/data/curriculum/kntt-grade9-reconciliation-r4.json",
+        "docs/roadmap/kntt-grade9-reconciliation-r4.md",
+        "review-packets/kntt-grade9-reconciliation-r4/00_NOTEBOOKLM_PACKET_R4.md",
+        "review-packets/kntt-grade9-reconciliation-r4/01_NOTEBOOKLM_RESULT_R4.md"
+      ]
+    },
+    {
+      "id": "MATH-KNTT-DIMENSION-AUDIT-G6-001",
+      "title": "KNTT Dimension Coverage Audit — Grade 6 pilot",
+      "routing": "GOVERNANCE+COVERAGE_AUDIT",
+      "status": "DONE",
+      "context_version": "1.0.236",
+      "review_verdict": "G6_DIMENSION_AUDIT_V1_COMPLETE_WRITTEN_P0_P1_CLOSED_P2_DEFERRED",
+      "review_notes": "Grade-6 dimension audit v1 is complete as an evidence classification, not a quota-filling exercise. All 31 KNTT rows are mapped across Skill/Learn/Micro/Practice/Written/Readiness dimensions. Written P0 and P1 actions are closed; current Written state is 9 VERIFIED rows / 22 NONE / 0 candidate-only with 8 canonical Grade-6 items. Remaining P2 Bài30 and Bài23-24 are deliberately deferred because independent review ranked them low priority and existing Learn/Micro/Practice coverage is already strong. Readiness NOT_VERIFIED rows remain an explicit evidence status, not an instruction to create readiness assets for every lesson. Next scaling target is Grade 7 dimension audit v1.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
+      ]
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI30-ROUNDING-R1-001",
+      "title": "Grade 6 KNTT Bài 30 — rounding evidence repair R1",
+      "routing": "CONTENT_REPAIR+NOTEBOOKLM_ACADEMIC_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.199",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_CI_PASS_PR314_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "NotebookLM PASS with clearance G6_BAI30_ROUNDING_CONTENT_REVIEW_COMPLETE. Learn PASS; 3/3 Micro PASS; 12/12 Practice PASS; manifest PASS; missing/duplicate/unexpected IDs NONE. Candidate reconciled into Grade-6 Dimension Audit: Bài 30 Learn=VERIFIED_DIRECT, Micro=VERIFIED_DIRECT, Practice=TOPIC_SKILL_EVIDENCE; Written=NONE and Readiness=NOT_VERIFIED_STRUCTURED remain open. Final exact PR head 4f0c649daba6aa1bb2bb16a8179316516e192dbd passed Roadmap PR Quality run 37197968630. PR #314 squash-merged to main as 29e6f2977fb7ad775e05d2441779e824d3f22a1a. Deploy MkDocs run 37198340047 SUCCESS. uoc-luong remains lesson-local; no runtime/history/Mastery/Readiness semantic change.",
+      "artifacts": [
+        "review-packets/kntt-g6-bai30-rounding-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-v1-05.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-v1.manifest.json",
+        "review-packets/kntt-g6-bai30-rounding-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
+      ],
+      "review_receipt": "review-packets/kntt-g6-bai30-rounding-r1/01_NOTEBOOKLM_RESULT_R1.md",
+      "release": {
+        "pr": 314,
+        "exact_head": "4f0c649daba6aa1bb2bb16a8179316516e192dbd",
+        "qa_run": 37197968630,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "29e6f2977fb7ad775e05d2441779e824d3f22a1a",
+        "deploy_run": 37198340047,
+        "deploy_conclusion": "SUCCESS"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI42-EVENT-OUTCOME-R1-001",
+      "title": "Grade 6 KNTT Bài 42 — outcome/event lesson-local evidence repair R1",
+      "routing": "CONTENT_REPAIR+NOTEBOOKLM_ACADEMIC_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.202",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_CI_PASS_PR316_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "NotebookLM PASS with clearance G6_BAI42_EVENT_OUTCOME_CONTENT_REVIEW_COMPLETE. Learn PASS; 3/3 Micro PASS; Grade-6 sự kiện terminology PASS; Bài 42/Bài 43 boundary PASS; lesson-local/no-canonical-skill boundary PASS; Practice Bank change NONE; missing/duplicate/unexpected IDs NONE. Dimension Audit records Bài 42 Learn=VERIFIED_LESSON_LOCAL, Micro=VERIFIED_LESSON_LOCAL; Practice=FAMILY_LEVEL_TOPIC_EVIDENCE, Written=NONE, Readiness=PENDING_REVIEW remain intentionally open. Exact PR head 0e0482d4eb689a7cbf49edd9de087d05a338bf4a passed Roadmap PR Quality run 37200642250. PR #316 squash-merged to main as df109e36eded185c1e871ea31fe7ed8761e3bb41. Deploy MkDocs run 37200951441 SUCCESS. No taxonomy/runtime/history/Mastery/Readiness semantic change.",
+      "artifacts": [
+        "review-packets/kntt-g6-bai42-event-outcome-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "docs/assets/data/curriculum/topic23-learning-workspace.json",
+        "docs/assets/data/practice/23-xac-suat-micro-v1.json",
+        "scripts/test-kntt-g6-bai42-event-outcome-r1.js",
+        "scripts/test-learning-card-micro-practice.js",
+        "review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
+      ],
+      "review_receipt": "review-packets/kntt-g6-bai42-event-outcome-r1/01_NOTEBOOKLM_RESULT_R1.md",
+      "release": {
+        "pr": 316,
+        "exact_head": "0e0482d4eb689a7cbf49edd9de087d05a338bf4a",
+        "qa_run": 37200642250,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "df109e36eded185c1e871ea31fe7ed8761e3bb41",
+        "deploy_run": 37200951441,
+        "deploy_conclusion": "SUCCESS"
+      }
+    },
+    {
+      "id": "MATH-G-LEARNING-FIREBASE-SHARED-PROJECT-001",
+      "title": "G-Learning shared Firebase project architecture",
+      "routing": "TECHNICAL_GOVERNANCE+CROSS_APP_ARCHITECTURE",
+      "status": "DONE",
+      "context_version": "1.0.203",
+      "review_verdict": "OWNER_APPROVED_SHARED_PROJECT_TWO_WEB_APPS",
+      "review_notes": "Firebase Project display name is G-Learning while stable Project ID remains roadmap-toan-ai. Existing Math Web App nickname is Self-Learning-Math and App ID remains 1:789845564404:web:a066df0deed80d2d58b7a1. Planned English site will register a separate Firebase Web App named Self-Learning-English inside the same Firebase project, with its own App ID/config. Shared project-level services may be reused, but Math and English learner data must be explicitly namespaced. No Math runtime/config migration is required solely for the display-name/nickname change; no Auth/Firestore/history migration is authorized now.",
+      "artifacts": [
+        "docs/roadmap/g-learning-firebase-architecture-v1.md",
+        "docs/assets/javascripts/firebase-gemini-config.js"
+      ]
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI45-NATURAL-OPS-R1-001",
+      "title": "Grade 6 KNTT Bài 4–5 — natural-number operations lesson-local evidence repair R1",
+      "routing": "CONTENT_REPAIR+LOW_RISK_SOURCE_CONFIRMED",
+      "status": "DONE",
+      "context_version": "1.0.205",
+      "review_verdict": "DONE_SOURCE_CONFIRMED_CI_PASS_PR318_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Existing Grade-6 semantic reconciliation had already NotebookLM-PASSed cong-tru-so-tu-nhien and nhan-chia-so-tu-nhien as LESSON_LOCAL_CONCEPT under NUM-INTEGER-OPS. Low-risk candidate added explicit Learn teaching copy plus NUM02MICRO_024–026 with deterministic answer oracles 5 625, 3 700 and 2 500; LESSON_LOCAL_CORE_FORMATIVE, tags.skill=[], gates_core=false. No new NotebookLM round was required under the owner-approved risk-based review policy. Dimension Audit records Bài 4–5 Learn=VERIFIED_LESSON_LOCAL, Micro=VERIFIED_LESSON_LOCAL; Practice=FAMILY_LEVEL_TOPIC_EVIDENCE, Written=NONE, Readiness=NOT_VERIFIED_STRUCTURED remain intentionally open. Exact PR head 57c7b0d3e7a66ead2c03e3c1add7e7eee500ffa0 passed Roadmap PR Quality run 37202435362. PR #318 squash-merged to main as 5a9e5a6640351eb10ed7ea4a2844559e12908ec8. Deploy MkDocs run 37202741012 SUCCESS. No taxonomy/runtime/history/Mastery/Readiness semantic change.",
+      "artifacts": [
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "scripts/test-kntt-g6-bai45-natural-ops-r1.js",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
+      ],
+      "release": {
+        "pr": 318,
+        "exact_head": "57c7b0d3e7a66ead2c03e3c1add7e7eee500ffa0",
+        "qa_run": 37202435362,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "5a9e5a6640351eb10ed7ea4a2844559e12908ec8",
+        "deploy_run": 37202741012,
+        "deploy_conclusion": "SUCCESS"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI8-DIVISIBILITY-R1-001",
+      "title": "Grade 6 KNTT Bài 8 — divisibility lesson-local evidence repair R1",
+      "routing": "CONTENT_REPAIR+LOW_RISK_SOURCE_CONFIRMED",
+      "status": "DONE",
+      "context_version": "1.0.207",
+      "review_verdict": "DONE_SOURCE_CONFIRMED_CI_PASS_PR320_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Bài 8 lesson/family placement remained lesson-local under NUM-DIV-PRIME. Candidate added explicit Learn content plus NUM02MICRO_027–029 with deterministic oracles: 84 divisible by 7; 18+30 divisible by 6; 72−24 divisible by 8. Items use LESSON_LOCAL_CORE_FORMATIVE, tags.skill=[], gates_core=false. No new NotebookLM round was required under the owner-approved risk-based review policy. Dimension Audit records Learn=VERIFIED_LESSON_LOCAL, Micro=VERIFIED_LESSON_LOCAL; Practice=FAMILY_LEVEL_TOPIC_EVIDENCE, Written=NONE, Readiness=NOT_VERIFIED_STRUCTURED remain intentionally open. Exact PR head 1b210b43cc19e2fe0a826c96df52394207a4f067 passed Roadmap PR Quality run 37206351120. PR #320 squash-merged to main as 86d2be1d7b3dc2fbf26221b1740aa94a5af96562. Deploy MkDocs run 37207645623 SUCCESS. No taxonomy/runtime/history/Mastery/Readiness semantic change.",
+      "artifacts": [
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "scripts/test-kntt-g6-bai8-divisibility-r1.js"
+      ],
+      "release": {
+        "pr": 320,
+        "exact_head": "1b210b43cc19e2fe0a826c96df52394207a4f067",
+        "qa_run": 37206351120,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "86d2be1d7b3dc2fbf26221b1740aa94a5af96562",
+        "deploy_run": 37207645623,
+        "deploy_conclusion": "SUCCESS"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI27-FRACTION-PROBLEMS-R1-001",
+      "title": "Grade 6 KNTT Bài 27 — fraction application problem-type evidence repair R1",
+      "routing": "CONTENT_REPAIR+LOW_RISK_SOURCE_CONFIRMED",
+      "status": "DONE",
+      "context_version": "1.0.209",
+      "review_verdict": "DONE_SOURCE_CONFIRMED_CI_PASS_PR322_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Bài 27 forms remain PROBLEM_TYPE under NUM-FRACTION-OPS. Candidate added explicit Learn content plus NUM02MICRO_030–032 with deterministic oracles 24, 27 and 24 plants; items use LESSON_LOCAL_CORE_FORMATIVE, tags.skill=[], gates_core=false. No new NotebookLM round was required under the owner-approved risk-based review policy. Dimension Audit records Learn=VERIFIED_LESSON_LOCAL, Micro=VERIFIED_LESSON_LOCAL; Practice=FAMILY_LEVEL_TOPIC_EVIDENCE, Written=NONE, Readiness=NOT_VERIFIED_STRUCTURED remain intentionally open. Exact PR head ca36ce20ca8b25627aaafd0eb25bb0baa078b6db passed Roadmap PR Quality run 37208511308. PR #322 squash-merged to main as 6b2690a5a5af4dea2146f987182625517eb25b48. Deploy MkDocs run 37208859308 SUCCESS. Grade-6 FAMILY_LEVEL_ONLY Micro rows are now 0. No taxonomy/runtime/history/Mastery/Readiness semantic change.",
+      "artifacts": [
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "scripts/test-kntt-g6-bai27-fraction-problems-r1.js"
+      ],
+      "release": {
+        "pr": 322,
+        "exact_head": "ca36ce20ca8b25627aaafd0eb25bb0baa078b6db",
+        "qa_run": 37208511308,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "6b2690a5a5af4dea2146f987182625517eb25b48",
+        "deploy_run": 37208859308,
+        "deploy_conclusion": "SUCCESS"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-STATISTICS-R1-001",
+      "title": "Grade 6 KNTT Bài 38–41 — statistics direct/local evidence repair R1",
+      "routing": "CONTENT_REPAIR+NOTEBOOKLM_ACADEMIC_REVIEW",
+      "status": "DONE",
+      "context_version": "1.0.212",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_CI_PASS_PR324_MERGED_HOTFIX325_DEPLOY_SUCCESS",
+      "review_notes": "NotebookLM PASS with clearance G6_STATISTICS_CONTENT_REVIEW_COMPLETE. Both Learn cards PASS; 5/5 Micro PASS; direct mappings thu-thap-du-lieu and doc-bieu-do-cot-kep PASS; local du-lieu, bang-thong-ke and bieu-do-tranh PASS; shared Grade-6/Grade-8 card boundary PASS. Dimension Audit records Bài 38–41 Learn=VERIFIED_DIRECT_AND_LOCAL and Micro=VERIFIED_DIRECT_AND_LOCAL; Practice=PARTIAL_TOPIC_EVIDENCE, Written=NONE, Readiness=AUTHORIZED_TOPIC_LEVEL remain intentionally scoped. Exact implementation head 148eea8073e0daeebb227e9582d1d508ba3f1ea9 passed Roadmap PR Quality run 37211413748; PR #324 squash-merged as c3ee3cf72b27abd2499935f804b7e36596775e0e. Initial deploy run 37211840991 failed only on a stale CĐ21 readiness-bundle guard expecting 15 Micro items. Hotfix PR #325 updated that technical guard to 20; exact head d7eec7883289b0f513c86530b4bd86cf7bced74f passed Roadmap PR Quality run 37211994829, merged as b09df6c0911b25d75c48570fb6dfcc1fb058398d, and final Deploy MkDocs run 37212404188 SUCCESS. No curriculum, taxonomy, runtime, learner-history, Mastery or Readiness semantic change in the hotfix.",
+      "artifacts": [
+        "review-packets/kntt-g6-statistics-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "docs/assets/data/curriculum/topic21-learning-workspace.json",
+        "docs/assets/data/practice/21-thong-ke-micro-v1.json",
+        "scripts/test-kntt-g6-statistics-r1.js",
+        "review-packets/kntt-g6-statistics-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md"
+      ],
+      "review_receipt": "review-packets/kntt-g6-statistics-r1/01_NOTEBOOKLM_RESULT_R1.md",
+      "release": {
+        "implementation_pr": 324,
+        "implementation_exact_head": "148eea8073e0daeebb227e9582d1d508ba3f1ea9",
+        "implementation_qa_run": 37211413748,
+        "implementation_qa_conclusion": "SUCCESS",
+        "implementation_merge_sha": "c3ee3cf72b27abd2499935f804b7e36596775e0e",
+        "initial_deploy_run": 37211840991,
+        "initial_deploy_conclusion": "FAILURE_STALE_READY_BUNDLE_GUARD",
+        "hotfix_pr": 325,
+        "hotfix_exact_head": "d7eec7883289b0f513c86530b4bd86cf7bced74f",
+        "hotfix_qa_run": 37211994829,
+        "hotfix_qa_conclusion": "SUCCESS",
+        "final_merge_sha": "b09df6c0911b25d75c48570fb6dfcc1fb058398d",
+        "final_deploy_run": 37212404188,
+        "final_deploy_conclusion": "SUCCESS"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI31-MULTI-TOPIC-EVIDENCE-R1-001",
+      "title": "Grade 6 KNTT Bài 31 — reconcile existing multi-topic percent evidence R1",
+      "routing": "AUDIT_RECONCILIATION+NO_NEW_CONTENT",
+      "status": "DONE",
+      "context_version": "1.0.214",
+      "review_verdict": "DONE_EXISTING_EVIDENCE_RECONCILED_CI_PASS_PR327_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Bài 31 required no content duplication. Existing reviewed/deployed Topic03 evidence covers ti-so and ti-so-phan-tram; Topic02 card num02-g6-core-5 covers canonical phan-tram at Grade-6 Bài 28–31 with NUM02MICRO_014–015. The Grade-6 semantic reconciliation already maps bai-toan-phan-tram to phan-tram under NUM-PERCENT. Audit now records Learn=VERIFIED_DIRECT, Micro=VERIFIED_DIRECT, Practice=TOPIC_SKILL_EVIDENCE; Written and Readiness remain intentionally open. Exact PR head ba83342c0728c474826612358fae717d4c8a5923 passed Roadmap PR Quality run 37216371481. PR #327 squash-merged as d359dae54750f7462f861510ce9e019b42c4f818. Deploy MkDocs run 37216769394 SUCCESS. No academic content, taxonomy, runtime, history, Mastery or Readiness semantic change.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "scripts/test-kntt-g6-bai31-multi-topic-evidence-r1.js"
+      ],
+      "release": {
+        "pr": 327,
+        "exact_head": "ba83342c0728c474826612358fae717d4c8a5923",
+        "qa_run": 37216371481,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "d359dae54750f7462f861510ce9e019b42c4f818",
+        "deploy_run": 37216769394,
+        "deploy_conclusion": "SUCCESS"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI1_3-NATURAL-NUMBER-BASICS-R1-001",
+      "title": "Grade 6 KNTT Bài 1–3 — natural-number notation/order evidence repair R1",
+      "routing": "CONTENT_REPAIR+LOW_RISK_SOURCE_CONFIRMED",
+      "status": "DONE",
+      "context_version": "1.0.216",
+      "review_verdict": "DONE_SOURCE_CONFIRMED_CI_PASS_PR329_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Grade-6 reconciliation keeps ghi-so-tu-nhien and thu-tu-so-tu-nhien as LESSON_LOCAL_CONCEPT under NUM-SETS. Candidate expanded num02-g6-core-1 and added NUM02MICRO_033–035 with deterministic oracles 5 000; 58 203 < 58 230; 10 000 using LESSON_LOCAL_CORE_FORMATIVE, tags.skill=[], gates_core=false. No new NotebookLM round was required under the owner-approved risk-based review policy. Dimension Audit records Learn=VERIFIED_DIRECT_AND_LOCAL, Micro=VERIFIED_DIRECT_AND_LOCAL; Practice=PARTIAL_TOPIC_EVIDENCE, Written=NONE, Readiness=NOT_VERIFIED_STRUCTURED remain intentionally open. Exact PR head 99d9c9b39a9923b64715de3d9945bb7f7ecbba21 passed Roadmap PR Quality run 37218608145. PR #329 squash-merged to main as 9df50dc52c950ed91c12b93e9735f9fc4b344609. Deploy MkDocs run 37252652987 SUCCESS. No taxonomy/runtime/history/Mastery/Readiness semantic change.",
+      "artifacts": [
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "scripts/test-kntt-g6-bai1-3-natural-number-basics-r1.js"
+      ],
+      "release": {
+        "pr": 329,
+        "exact_head": "99d9c9b39a9923b64715de3d9945bb7f7ecbba21",
+        "qa_run": 37218608145,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "9df50dc52c950ed91c12b93e9735f9fc4b344609",
+        "deploy_run": 37252652987,
+        "deploy_conclusion": "SUCCESS"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI11_12-GCD-LCM-PROBLEMS-R1-001",
+      "title": "Grade 6 KNTT Bài 11–12 — UCLN/BCNN application problem-type evidence repair R1",
+      "routing": "CONTENT_REPAIR+LOW_RISK_SOURCE_CONFIRMED",
+      "status": "DONE",
+      "context_version": "1.0.218",
+      "review_verdict": "DONE_SOURCE_CONFIRMED_CI_PASS_PR331_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Grade-6 reconciliation keeps bai-toan-ucln-bcnn as PROBLEM_TYPE under NUM-GCD-LCM. Candidate expanded num02-g6-core-2 and added NUM02MICRO_036–038 with deterministic oracles 14 groups, 36 minutes, and BCNN for earliest repeated simultaneous cycles using LESSON_LOCAL_CORE_FORMATIVE, tags.skill=[], gates_core=false. Direct ucln/bcnn identities remain unchanged. No new NotebookLM round was required under the owner-approved risk-based review policy. Dimension Audit records Learn=VERIFIED_DIRECT_AND_LOCAL, Micro=VERIFIED_DIRECT_AND_LOCAL; Practice=PARTIAL_TOPIC_EVIDENCE, Written=CANDIDATE_ONLY_NO_KNTT_PLACEMENT, Readiness=NOT_VERIFIED_STRUCTURED remain intentionally open. Exact PR head a84cea191f100e54392dd3e170186e8f3da617df passed Roadmap PR Quality run 37253267413. PR #331 squash-merged to main as 87f394c42143d20fa13be8a33581351895191812. Deploy MkDocs run 37253645516 SUCCESS. No taxonomy/runtime/history/Mastery/Readiness semantic change.",
+      "artifacts": [
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "scripts/test-kntt-g6-bai11-12-gcd-lcm-problems-r1.js"
+      ],
+      "release": {
+        "pr": 331,
+        "exact_head": "a84cea191f100e54392dd3e170186e8f3da617df",
+        "qa_run": 37253267413,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "87f394c42143d20fa13be8a33581351895191812",
+        "deploy_run": 37253645516,
+        "deploy_conclusion": "SUCCESS"
+      }
+    },
+    {
+      "id": "MATH-HOME-ORIENTATION-SLIDER-V1-001",
+      "title": "Homepage learner orientation slider + compact entry points v1",
+      "routing": "UX+LEARNER_ORIENTATION+LOW_RISK",
+      "status": "DONE",
+      "context_version": "1.0.219",
+      "review_verdict": "DONE_OWNER_APPROVED_CI_PASS_PR334_MERGED_DEPLOY_VERIFIED",
+      "review_notes": "Owner approved the homepage information-architecture change: replace four large start cards with a manual four-frame orientation slider and four compact entry points. Slider frames explain Tree Math vertical/horizontal relationships, two canonical learning paths, Core→Practice→independent self-check roles, and written-work skill integration. Exact head 74b5884a94eeb642500fd48a310883df4216c5ad passed Roadmap PR Quality run 37317335950, G Learning branding QA run 37317335847, and Skill assessment pilot QA run 37317335843. Browser interaction QA passed with 109 previews and no reported horizontal overflow. PR #334 squash-merged to main as 9c73104f11e146c9e759d48a1764b6d7b2eec847. GitHub Pages deployment was verified directly on gh-pages: built index.html contains the new orientation section and deployed slider JS/CSS include swipe, keyboard, and compact-entry styles. No academic-content, Practice, Written Library, taxonomy, learner-history, Mastery or Readiness semantic change.",
+      "artifacts": [
+        "docs/index.md",
+        "docs/assets/stylesheets/site-design-system.css",
+        "docs/assets/javascripts/home-orientation-slider-v1.js",
+        "scripts/test-site-navigation-v1.js",
+        "mkdocs.yml"
+      ],
+      "release": {
+        "pr": 334,
+        "exact_head": "74b5884a94eeb642500fd48a310883df4216c5ad",
+        "qa_run": 37317335950,
+        "qa_conclusion": "SUCCESS",
+        "branding_qa_run": 37317335847,
+        "skill_assessment_qa_run": 37317335843,
+        "merge_sha": "9c73104f11e146c9e759d48a1764b6d7b2eec847",
+        "deploy_conclusion": "SUCCESS",
+        "deploy_evidence": "gh-pages built index + home-orientation-slider-v1.js + site-design-system.css verified"
+      }
+    },
+    {
+      "id": "MATH-HOME-LEARNING-GUIDE-INFOGRAPHICS-V1-001",
+      "title": "Homepage four-part learning guide infographic gallery v1",
+      "routing": "UX+LEARNER_ORIENTATION+LOW_RISK",
+      "status": "DONE",
+      "context_version": "1.0.220",
+      "review_verdict": "DONE_OWNER_APPROVED_CI_PASS_PR336_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Owner-approved four-part learner guide integrated directly below the homepage orientation slider and compact entry points, before the existing Phương pháp học section. Sequence: (1) Cây Toán học; (2) đời sống — làm diều giấy; (3) hướng dẫn chọn đường học; (4) ví dụ Hỗn số và Phân số lớp 6. Images are local WebP assets with a responsive gallery and accessible lightbox. During final visual QA, an intermediate mobile screenshot showed deferred thumbnail paint; loading/decode behavior was corrected before release and exact final head 246b0e1cecac452a129802b4306709119995259b passed Roadmap PR Quality run 37331382188, including strict MkDocs, browser interaction QA, desktop/phone image-load assertions, no horizontal overflow, and lightbox checks. PR #336 squash-merged as cb2027bebb9973972efed616d5431d08bd4420ad. Deploy MkDocs run 37332567541 SUCCESS. gh-pages verification confirms id=hieu-cach-hoc, four gallery cards, all four image assets, gallery JS and CSS are deployed. No academic-content, Practice, Written Library, taxonomy, learner-history, Mastery or Readiness semantic change.",
+      "artifacts": [
+        "docs/index.md",
+        "docs/assets/images/learning-guide/01-tree-math-roadmap.webp",
+        "docs/assets/images/learning-guide/02-kite-skill-example.webp",
+        "docs/assets/images/learning-guide/03-how-to-learn-system.webp",
+        "docs/assets/images/learning-guide/04-fraction-lesson-connection.webp",
+        "docs/assets/javascripts/home-orientation-slider-v1.js",
+        "docs/assets/stylesheets/site-design-system.css",
+        "scripts/test-site-navigation-v1.js",
+        "scripts/capture-ui-previews.py"
+      ],
+      "release": {
+        "pr": 336,
+        "exact_head": "246b0e1cecac452a129802b4306709119995259b",
+        "qa_run": 37331382188,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "cb2027bebb9973972efed616d5431d08bd4420ad",
+        "deploy_run": 37332567541,
+        "deploy_conclusion": "SUCCESS",
+        "deploy_evidence": "gh-pages index contains #hieu-cach-hoc with four cards; deployed learning-guide WebPs plus gallery JS/CSS verified"
+      }
+    },
+    {
+      "id": "MATH-HOME-GUIDE-LANDSCAPE-REFRESH-V1-001",
+      "title": "Homepage learning-guide 4:3 harmonization + canonical stats refresh",
+      "routing": "UX+LEARNER_ORIENTATION+LOW_RISK",
+      "status": "DONE",
+      "context_version": "1.0.221",
+      "review_verdict": "DONE_OWNER_APPROVED_CI_PASS_PR338_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Owner supplied new landscape 4:3 editions for guide 03 (Học Toán trong hệ thống này như thế nào?) and guide 04 (Hỗn số và Phân số lớp 6). Guides 01–02 unchanged. All four homepage guide previews are now standardized to one 4:3 frame on desktop and mobile. Homepage summary labels were aligned with canonical architecture: 25 chuyên đề xuyên lớp; 2 lộ trình học; 6–9 học theo KNTT; 3 không gian học. The discovery section keeps four convenience presentation cards but was renamed from 'Bốn mạch kiến thức' to 'Bốn nhóm nội dung' so presentation grouping is not mistaken for canonical architecture. Exact head a392aa44e4e5e499a91366af64030dc03a775f50 passed Roadmap PR Quality run 37338129617, including strict MkDocs, browser interaction QA, 4:3 ratio assertions on desktop/phone, and no horizontal overflow. PR #338 squash-merged as a67f61c7b8ca0c8d140d5c6964dc4481702dd475. Deploy MkDocs run 37339287162 SUCCESS. gh-pages verification confirms all four landscape frames, updated guide 03/04 WebP hashes, canonical stats, and 'Bốn nhóm nội dung' wording are live. No academic item, Practice, Written Library, taxonomy, learner-history, Mastery or Readiness semantic change.",
+      "artifacts": [
+        "docs/assets/images/learning-guide/03-how-to-learn-system.webp",
+        "docs/assets/images/learning-guide/04-fraction-lesson-connection.webp",
+        "docs/index.md",
+        "docs/assets/stylesheets/site-design-system.css",
+        "scripts/test-site-navigation-v1.js",
+        "scripts/capture-ui-previews.py"
+      ],
+      "release": {
+        "pr": 338,
+        "exact_head": "a392aa44e4e5e499a91366af64030dc03a775f50",
+        "qa_run": 37338129617,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "a67f61c7b8ca0c8d140d5c6964dc4481702dd475",
+        "deploy_run": 37339287162,
+        "deploy_conclusion": "SUCCESS",
+        "deploy_evidence": "gh-pages verified: four landscape guide previews, updated 03/04 assets, canonical stats and content-group wording"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-BAI23_24-FRACTION-FORM-R1-001",
+      "title": "Grade 6 KNTT Bài 23–24 — equivalent fraction and mixed-number evidence repair R1",
+      "routing": "CONTENT_REPAIR+LOW_RISK_SOURCE_CONFIRMED",
+      "status": "DONE",
+      "context_version": "1.0.223",
+      "review_verdict": "DONE_SOURCE_CONFIRMED_CLEAN_REBUILD_CI_PASS_PR340_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Grade-6 reconciliation keeps phan-so-bang-nhau and hon-so-duong as LESSON_LOCAL_CONCEPT under NUM-FRACTION-FORM. Clean release expands num02-g6-core-4 and adds NUM02MICRO_039–041 with deterministic oracles 6/8, 7/3, 2 3/4 using LESSON_LOCAL_CORE_FORMATIVE, tags.skill=[], gates_core=false. Direct rut-gon-phan-so and quy-dong-so-sanh-phan-so identities remain unchanged. Dimension Audit records Learn=VERIFIED_DIRECT_AND_LOCAL, Micro=VERIFIED_DIRECT_AND_LOCAL; Practice=PARTIAL_TOPIC_EVIDENCE, Written=NONE, Readiness=NOT_VERIFIED_STRUCTURED remain intentionally open. The replacement branch was rebuilt directly from current main to remove PR #333's stacked history while preserving the exact intended academic/test diff. Exact clean PR head 90db12f6af49ff633672c6a38563b38595070196 passed Roadmap PR Quality run 37341312230 including strict MkDocs, dedicated Bài 23–24 tests and browser QA. PR #340 squash-merged as 0867c1361b35699de4c337957df42033c9e9c102; Deploy MkDocs run 37342413444 SUCCESS; gh-pages verification confirms NUM02MICRO_039–041, lesson-local targets and VERIFIED_DIRECT_AND_LOCAL coverage are live. PR #333 was closed unmerged as superseded. No new canonical skill, Practice Bank semantic change, Written/Readiness claim, taxonomy activation, learner-history migration/regrade, or Mastery/Readiness semantic change.",
+      "artifacts": [
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "scripts/test-kntt-g6-bai23-24-fraction-form-r1.js"
+      ],
+      "release": {
+        "pr": 340,
+        "superseded_pr": 333,
+        "exact_head": "90db12f6af49ff633672c6a38563b38595070196",
+        "qa_run": 37341312230,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "0867c1361b35699de4c337957df42033c9e9c102",
+        "deploy_run": 37342413444,
+        "deploy_conclusion": "SUCCESS"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-SHARED-SKILL-DENSITY-R1-001",
+      "title": "Grade 6 shared-skill Learn/Micro density repair R1 — Bài 13–17, 25–26, 28–29",
+      "routing": "ACADEMIC_REVIEW+CONTENT_REPAIR",
+      "status": "DONE",
+      "context_version": "1.0.226",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_CI_PASS_PR343_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "NotebookLM PASS: 3/3 Learn cards, 11/11 Micro items, 0 REVISE, clearance G6_SHARED_SKILL_DENSITY_R1_CONTENT_REVIEW_COMPLETE. Reviewed Micro bytes remained unchanged at blob b6ec952b786f897ef6f45301208dcd9d55bde98b; PASS receipt stored separately. Clean PR #343 from current main passed Roadmap PR Quality run 37445223654, including strict MkDocs and browser QA, squash-merged as f75d3d4ca13d894045b178b0a6270562a65fbeff, and Deploy MkDocs run 37446294372 succeeded. gh-pages verification confirms 52 Micro items, NUM02MICRO_042–052 live, source lock integrity, and the 7 Learn + 7 Micro audit promotions. PR #342 closed unmerged as superseded. No canonical-skill, Practice, Written, Readiness, history, Mastery or runtime-taxonomy semantic change.",
+      "artifacts": [
+        "docs/assets/data/curriculum/topic02-learning-workspace.json",
+        "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "scripts/test-kntt-g6-shared-skill-density-r1.js",
+        "review-packets/kntt-g6-shared-skill-density-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "review-packets/kntt-g6-shared-skill-density-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      ],
+      "release": {
+        "pr": 343,
+        "superseded_pr": 342,
+        "exact_head": "48ad852795ff5b9e9470dee79d15111b779b1fe8",
+        "qa_run": 37445223654,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "f75d3d4ca13d894045b178b0a6270562a65fbeff",
+        "deploy_run": 37446294372,
+        "deploy_conclusion": "SUCCESS",
+        "reviewed_micro_blob": "b6ec952b786f897ef6f45301208dcd9d55bde98b"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-TOPIC20-PLACEMENT-R1-001",
+      "title": "Grade 6 Topic20 exact KNTT placement reconciliation R1 — Bài 18–22",
+      "routing": "AUDIT_RECONCILIATION+LOW_RISK_SOURCE_CONFIRMED",
+      "status": "DONE",
+      "context_version": "1.0.228",
+      "review_verdict": "DONE_SOURCE_CONFIRMED_CI_PASS_PR345_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "The five remaining Grade-6 Learn PARTIAL_PLACEMENT rows were audit-source mismatch, not content gaps. Exact overlay kntt-g6-topic20-placement-r1.json maps Bài 18–22 to existing source-locked Topic20 v2 display-card skills. Roadmap PR Quality run 37467181880 passed after updating the downstream shared-skill receipt test for the new global VERIFIED_DIRECT count. PR #345 squash-merged as 2dfcee324b73e73a3d20773d078c0f88c96e4ab7; Deploy MkDocs run 37468371063 SUCCESS. gh-pages verifies the placement overlay and Learn counts: VERIFIED_DIRECT=23, PARTIAL_PLACEMENT=0. Legacy workspace, display-card content, Micro, Practice, Written, Readiness, history, Mastery and runtime taxonomy remain unchanged.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-g6-topic20-placement-r1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "scripts/test-kntt-g6-topic20-placement-r1.js",
+        "scripts/test-kntt-dimension-coverage-g6-v1.js"
+      ],
+      "release": {
+        "pr": 345,
+        "exact_head": "b4dd2cf952ec6e79b133e2b1353acc2698300d3d",
+        "qa_run": 37467181880,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "2dfcee324b73e73a3d20773d078c0f88c96e4ab7",
+        "deploy_run": 37468371063,
+        "deploy_conclusion": "SUCCESS",
+        "placement_overlay_blob": "71734904e6d8dc148e20982f31823d7a8d483150"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-NONLEARN-RERANK-R1-001",
+      "title": "Grade 6 Practice/Written/Readiness re-rank R1",
+      "routing": "GOVERNANCE+COVERAGE_AUDIT",
+      "status": "DONE",
+      "context_version": "1.0.231",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_CI_PASS_PR347_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "Non-Learn re-rank R1 released after NotebookLM PASS for Bài43 Readiness. Exact PR head 10a93c6722df824f626d251eaca62a7d2f966150 passed Roadmap PR Quality run 37490270815. PR #347 squash-merged as 3d849b7a0c852de83a7cf1dcfbc2a9f1ccfcacf3; Deploy MkDocs run 37491552210 SUCCESS. gh-pages verification confirms Bài43 REVIEWED_STRUCTURED_READINESS, Bài42 NOT_VERIFIED_STRUCTURED, readiness counts 29/1/1/0 and registry v1.0.230 live before this closure update. No new content was authored.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-g6-nonlearn-rerank-r1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "review-packets/kntt-g6-prob23-readiness-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "scripts/test-kntt-g6-nonlearn-rerank-r1.js",
+        "review-packets/kntt-g6-prob23-readiness-r1/01_NOTEBOOKLM_RESULT_R1.md"
+      ],
+      "release": {
+        "pr": 347,
+        "exact_head": "10a93c6722df824f626d251eaca62a7d2f966150",
+        "qa_run": 37490270815,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "3d849b7a0c852de83a7cf1dcfbc2a9f1ccfcacf3",
+        "deploy_run": 37491552210,
+        "deploy_conclusion": "SUCCESS",
+        "readiness_clearance": "G6_PROB23_READINESS_R1_CONTENT_REVIEW_COMPLETE",
+        "reviewed_assessment_blob": "6ecf6eb6545fbb8e01465ccac76db0d5c60b7485"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-WRITTEN-PLACEMENT-R1-001",
+      "title": "Grade 6 canonical Written KNTT placement reconciliation R1",
+      "routing": "ACADEMIC_REVIEW+AUDIT_RECONCILIATION",
+      "status": "DONE",
+      "context_version": "1.0.232",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_CI_PASS_PR351_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "NotebookLM reviewed all three existing canonical Written items and all five true-placement/boundary decisions: PASS, clearance G6_WRITTEN_PLACEMENT_R1_CONTENT_REVIEW_COMPLETE. Exactly three kntt_placements were added without cloning or changing problem/solution/rubric content. False-positive overlap rows Bài10 and Bài28-29 were reset to NONE. Exact PR head 3af98bb3bcc6906a9df7cb700e83e245ffdbdb21 passed Roadmap PR Quality run 37597728699 including dedicated Written-placement gate, strict MkDocs and full browser QA. PR #351 squash-merged as a16f6f27b74f68287bc90f550239d5a77c5fd10d; Deploy MkDocs run 37598506061 SUCCESS; gh-pages deployed a16f6f2 and verifies 3 placements / 0 candidate-only.",
+      "artifacts": [
+        "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+        "docs/assets/data/curriculum/kntt-g6-written-placement-r1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "review-packets/kntt-g6-written-placement-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "review-packets/kntt-g6-written-placement-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "scripts/test-kntt-g6-written-placement-r1.js"
+      ],
+      "release": {
+        "pr": 351,
+        "exact_head": "3af98bb3bcc6906a9df7cb700e83e245ffdbdb21",
+        "qa_run": 37597728699,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "a16f6f27b74f68287bc90f550239d5a77c5fd10d",
+        "deploy_run": 37598506061,
+        "deploy_conclusion": "SUCCESS",
+        "clearance": "G6_WRITTEN_PLACEMENT_R1_CONTENT_REVIEW_COMPLETE",
+        "deployed_written_library_blob": "720e8249317601ccb620541358af0725ccd8ba63"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-WRITTEN-GAP-PRIORITY-R1-001",
+      "title": "Grade 6 Written gap prioritization and reuse R1",
+      "routing": "ACADEMIC_REVIEW+REUSE_RECONCILIATION",
+      "status": "DONE",
+      "context_version": "1.0.233",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_CI_PASS_PR352_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "NotebookLM PASS with clearance G6_WRITTEN_GAP_PRIORITY_R1_REVIEW_COMPLETE. Reuse APPROVE: WX21-STA-001→Bài38-41. Reuse REJECT: WX21-STA-002. Anti-overplacement PASS: WX20-GEO-001 and WX23-PRO-002 remain NOT_G6_KNTT. Priorities: P0 Bài27/Bài20/Bài34-37; P1 Bài38-41 reuse-first + Bài42; P2 Bài30 + Bài23-24; defer routine group. First authoring wave max 3 items. Exact PR head 6a3bbccdfbc812986d683f47f295184287302549 passed Roadmap PR Quality run 37623777680. PR #352 squash-merged as 9c10571ebd9ca9737d11b9cb2468a8fcdbfda90e; Deploy MkDocs run 37624616072 SUCCESS; gh-pages c99dc9a deploys 9c10571 and verifies 4/27/0 Written counts.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-g6-written-gap-priority-r1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "review-packets/kntt-g6-written-gap-priority-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "review-packets/kntt-g6-written-gap-priority-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "scripts/test-kntt-g6-written-gap-priority-r1.js"
+      ],
+      "release": {
+        "pr": 352,
+        "exact_head": "6a3bbccdfbc812986d683f47f295184287302549",
+        "qa_run": 37623777680,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "9c10571ebd9ca9737d11b9cb2468a8fcdbfda90e",
+        "deploy_run": 37624616072,
+        "deploy_conclusion": "SUCCESS",
+        "clearance": "G6_WRITTEN_GAP_PRIORITY_R1_REVIEW_COMPLETE",
+        "deployed_written_library_blob": "252fb3b1b2e140079f6035fab4bca5225497180a",
+        "deployed_grade6_written_counts": {
+          "VERIFIED_KNTT_PLACEMENT": 4,
+          "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 0,
+          "NONE": 27
+        }
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-WRITTEN-WAVE1-R1-001",
+      "title": "Grade 6 Written Wave 1 deep anchors R1",
+      "routing": "ACADEMIC_REVIEW+CANONICAL_APPEND+DEPLOY",
+      "status": "DONE",
+      "context_version": "1.0.234",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_EXACT_HEAD_CI_PASS_PR354_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "NotebookLM PASS with clearance G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE. Published exactly three reviewed anchors: WX02-NUM-003→Bài27; WX20-GEO-003→Bài20; WX13-LIN-003→Bài34-35 + Bài36-37. All ARCH_1..ARCH_10 PASS; no new canonical skills; self-check remains formative only. Exact-head Roadmap PR Quality run 37650769438 SUCCESS on c07919879af6618e55ad112a3a8cfc1d292fa9d9, including strict MkDocs build and full browser QA. PR #354 squash-merged as 6cf05a3f3351062e6bfc70888ebe95241ddb7e0b; Deploy MkDocs run 37651658134 SUCCESS; gh-pages 4a945967f17ca5fa5c1509f4aad27e033309dee7 deploys 6cf05a3. Live Written Library=53; Grade-6 Written audit=8 VERIFIED rows / 23 NONE / 0 candidate-only; 7 Grade-6 canonical Written items with KNTT placements.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-g6-written-wave1-r1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "review-packets/kntt-g6-written-wave1-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "review-packets/kntt-g6-written-wave1-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "scripts/test-kntt-g6-written-wave1-r1.js",
+        "scripts/test-written-exercise-library-v1.js",
+        "scripts/test-written-exercise-library-browser.py"
+      ],
+      "release": {
+        "pr": 354,
+        "exact_head": "c07919879af6618e55ad112a3a8cfc1d292fa9d9",
+        "qa_run": 37650769438,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "6cf05a3f3351062e6bfc70888ebe95241ddb7e0b",
+        "deploy_run": 37651658134,
+        "deploy_conclusion": "SUCCESS",
+        "gh_pages_sha": "4a945967f17ca5fa5c1509f4aad27e033309dee7",
+        "clearance": "G6_WRITTEN_WAVE1_R1_CONTENT_REVIEW_COMPLETE",
+        "live_written_library_count": 53,
+        "live_grade6_written_counts": {
+          "VERIFIED_KNTT_PLACEMENT_ROWS": 8,
+          "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 0,
+          "NONE": 23
+        },
+        "live_grade6_kntt_written_item_count": 7
+      }
+    },
+    {
+      "id": "MATH-KNTT-G6-WRITTEN-BAI42-R1-001",
+      "title": "Grade 6 Written Bài 42 deep anchor R1",
+      "routing": "ACADEMIC_REVIEW+CANONICAL_APPEND+DEPLOY",
+      "status": "DONE",
+      "context_version": "1.0.235",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_EXACT_HEAD_CI_PASS_PR355_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "NotebookLM PASS with clearance G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE. Published exactly one reviewed anchor: WX23-PRO-003→Grade 6 Chapter 9 Bài42. Boundaries PASS: Grade-6 terminology 'sự kiện' preserved, no Grade-7 'biến cố'; no probability calculation/Bài43 drift; no new canonical skill. All ARCH_1..ARCH_10 PASS. Exact-head Roadmap PR Quality run 37707127634 SUCCESS on ea9e1fa40183f7a10167bda200673aba1d2902a6 including strict MkDocs and browser QA. PR #355 squash-merged as 8b6ef900da3ea994af3a73f8c17b12548768269f; Deploy MkDocs run 37707744523 SUCCESS; gh-pages 81acf2e78ee8001ca88afdb6ff53b4a41a91b81b deploys that exact release. Live Written Library=54; Grade-6 Written audit=9 VERIFIED rows / 22 NONE / 0 candidate-only; 8 canonical Grade-6 Written items with KNTT placements.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-g6-written-bai42-r1.json",
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g6-v1.json",
+        "docs/assets/data/written-exercises/written-exercise-library-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g6-v1.md",
+        "review-packets/kntt-g6-written-bai42-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "review-packets/kntt-g6-written-bai42-r1/01_NOTEBOOKLM_RESULT_R1.md",
+        "scripts/test-kntt-g6-written-bai42-r1.js",
+        "scripts/test-written-exercise-library-v1.js",
+        "scripts/test-written-exercise-library-browser.py"
+      ],
+      "release": {
+        "pr": 355,
+        "exact_head": "ea9e1fa40183f7a10167bda200673aba1d2902a6",
+        "qa_run": 37707127634,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "8b6ef900da3ea994af3a73f8c17b12548768269f",
+        "deploy_run": 37707744523,
+        "deploy_conclusion": "SUCCESS",
+        "gh_pages_sha": "81acf2e78ee8001ca88afdb6ff53b4a41a91b81b",
+        "clearance": "G6_WRITTEN_BAI42_R1_CONTENT_REVIEW_COMPLETE",
+        "live_written_library_count": 54,
+        "live_grade6_written_counts": {
+          "VERIFIED_KNTT_PLACEMENT_ROWS": 9,
+          "CANDIDATE_ONLY_NO_KNTT_PLACEMENT": 0,
+          "NONE": 22
+        },
+        "live_grade6_kntt_written_item_count": 8
+      }
+    },
+    {
+      "id": "MATH-KNTT-DIMENSION-AUDIT-G7-001",
+      "title": "KNTT Dimension Coverage Audit — Grade 7",
+      "routing": "GOVERNANCE+COVERAGE_AUDIT",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.238",
+      "review_verdict": "EXISTING_EVIDENCE_INVENTORY_R1_DEPLOYED_NEXT_PRIORITY_REVIEW",
+      "review_notes": "Grade-7 existing-evidence inventory R1 is merged and deployed. Across 21 rows: Skill 21 VERIFIED; Learn 14 direct + 7 partial; Micro 14 direct + 4 partial + 3 no explicit G7; Practice 15 topic-skill + 6 partial; Written 21 NONE / zero true Grade-7 placements; Readiness 4 partial G7 structured + 15 not verified + 2 none. Evidence-priority candidates: P0 Bài1-3, Bài5-7, Bài26-28; P1 Bài4, Bài18-19, Bài22-23; P2 Bài8, Bài24-25. PR #357 exact head ae1cf57b8fd173aed827d9056a5c1d89403f86d8 passed Roadmap PR Quality run 37710415910; squash merge 9968ef9ac1430c6286707117adaf30f5f6f172cd; Deploy MkDocs 37710946774 SUCCESS; gh-pages 8bddd38333fb60a10eb9ae64fca7a9d38a07cce4. Next: independent academic priority review before authoring any repair.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-dimension-coverage-g7-v1.json",
+        "docs/roadmap/kntt-dimension-coverage-g7-v1.md",
+        "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
+        "docs/assets/data/curriculum/kntt-grade7-reconciliation-r2.json",
+        "review-packets/kntt-grade7-reconciliation-r2/01_NOTEBOOKLM_RESULT_R2.md",
+        "scripts/test-kntt-dimension-coverage-g7-v1.js",
+        "scripts/test-kntt-grade7-reconciliation-r2.js"
+      ],
+      "release": {
+        "baseline_pr": 356,
+        "exact_head": "6f1dd32fd65cd8d5dd9b816341c1d137dfd9c1ad",
+        "qa_run": 37708420207,
+        "qa_conclusion": "SUCCESS",
+        "merge_sha": "a4f1bd71389ce0129bcf8adc493392a86935067a",
+        "deploy_run": 37709102968,
+        "deploy_conclusion": "SUCCESS",
+        "row_count": 21,
+        "content_mutations": 0
+      }
+    },
+    {
+      "id": "MATH-KNTT-G7-GAP-PRIORITY-R1-001",
+      "title": "Grade 7 evidence-gap priority review R1",
+      "routing": "NOTEBOOKLM_ACADEMIC_REVIEW+GOVERNANCE",
+      "status": "DONE",
+      "context_version": "1.0.240",
+      "review_verdict": "DONE_NOTEBOOKLM_PASS_PR358_MERGED_DEPLOY_SUCCESS",
+      "review_notes": "NotebookLM PASS with clearance G7_GAP_PRIORITY_R1_REVIEW_COMPLETE. Confirmed P0 Bài1-3, Bài5-7, Bài26-28 with LEARN;MICRO;PRACTICE repairs; P1 Bài4 (LEARN;MICRO), Bài18-19 (MICRO), Bài22-23 (LEARN;MICRO); P2 Bài8 (MICRO); Bài24-25 DEFER/NONE. Written and Readiness no-quota policies PASS; no new canonical skills. First repair wave is exactly Bài1-3; Bài5-7; Bài26-28. PR #358 merged as ec764dcccd8042035c935a654f59c8329ed3ade9; Deploy MkDocs run 37728892963 SUCCESS.",
+      "artifacts": [
+        "docs/assets/data/curriculum/kntt-g7-gap-priority-r1.json",
+        "review-packets/kntt-g7-gap-priority-r1/00_NOTEBOOKLM_PACKET_R1.md",
+        "scripts/test-kntt-g7-gap-priority-r1.js"
+      ],
+      "release": {
+        "pr": 358,
+        "merge_sha": "ec764dcccd8042035c935a654f59c8329ed3ade9",
+        "deploy_run": 37728892963,
+        "deploy_conclusion": "SUCCESS",
+        "clearance": "G7_GAP_PRIORITY_R1_REVIEW_COMPLETE"
+      }
+    },
+    {
+      "id": "MATH-KNTT-G7-REPAIR-WAVE1-R1-001",
+      "title": "Grade 7 P0 Repair Wave 1 — Bài 1–3, Bài 5–7, Bài 26–28",
+      "routing": "CANDIDATE_AUTHORING+NOTEBOOKLM_ACADEMIC_REVIEW",
+      "status": "IN_PROGRESS",
+      "context_version": "1.0.241",
+      "review_verdict": "CANDIDATES_READY_PR359_CI_PASS_AWAIT_NOTEBOOKLM_CONTENT_REVIEW",
+      "review_notes": "Wave-1 candidates are authored on Draft PR #359 only: exactly 3 Learn cards, 12 Micro items, 18 Practice items for Bài1-3, Bài5-7, Bài26-28; 0 Written, 0 Readiness, 0 new canonical skills. Historical regression gates were reconciled append-only without changing preserved Grade-6/legacy evidence. Exact candidate head 86b24baa7e6c01ad9de21ab251a228151518e292 passed Roadmap PR Quality run 37741276786 and Primary skill overlay CĐ04-07 QA run 37741276777, including strict build and browser/visual preview sweep. Do not merge/deploy until NotebookLM returns G7_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE.",
+      "release_candidate": {
+        "pr": 359,
+        "draft": true,
+        "exact_head": "86b24baa7e6c01ad9de21ab251a228151518e292",
+        "qa_run": 37741276786,
+        "qa_conclusion": "SUCCESS",
+        "overlay_qa_run": 37741276777,
+        "overlay_qa_conclusion": "SUCCESS",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008",
+        "required_clearance": "G7_REPAIR_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "content_counts": {
+          "learn": 3,
+          "micro": 12,
+          "practice": 18,
+          "written": 0,
+          "readiness": 0,
+          "new_canonical_skills": 0
+        }
+      }
+    }
+  ]
+}

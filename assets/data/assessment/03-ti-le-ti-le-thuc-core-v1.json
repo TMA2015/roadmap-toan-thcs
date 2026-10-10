@@ -1,0 +1,379 @@
+{
+  "version": 1,
+  "schema": "roadmap-readiness-assessment-v1",
+  "assessment_id": "RAT03-CORE-READY-V1",
+  "title": "Core Readiness Check – Chuyên đề 03 – Tỉ số và tỉ lệ",
+  "topic": {
+    "id": "03-ti-le-ti-le-thuc",
+    "title": "Chuyên đề 03 – Tỉ số, tỉ lệ thức và đại lượng tỉ lệ"
+  },
+  "layer": "KNTT-Core",
+  "grade_scope": [
+    6,
+    7
+  ],
+  "skill_labels": {
+    "ti-so": "Tỉ số và ứng dụng tỉ số",
+    "doi-don-vi-ti-so": "Đổi đơn vị khi lập tỉ số",
+    "ti-le-thuc": "Tỉ lệ thức",
+    "tim-x-ti-le-thuc": "Tìm số chưa biết trong tỉ lệ thức",
+    "day-ti-so-bang-nhau": "Dãy tỉ số bằng nhau",
+    "chia-theo-ti-le": "Chia theo tỉ lệ",
+    "ti-le-thuan": "Đại lượng tỉ lệ thuận",
+    "ti-le-nghich": "Đại lượng tỉ lệ nghịch",
+    "phan-biet-thuan-nghich": "Phân biệt tỉ lệ thuận và tỉ lệ nghịch",
+    "he-so-ti-le-thuan": "Hệ số tỉ lệ thuận"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "RAT03READY_001",
+      "type": "mcq",
+      "skill": "ti-so",
+      "points": 1,
+      "question": "Một lớp có 12 bạn nam và 18 bạn nữ. Tỉ số số bạn nam và số bạn nữ ở dạng tối giản là:",
+      "options": [
+        "2:3",
+        "3:2",
+        "12:30",
+        "18:12"
+      ],
+      "answer": 0,
+      "explanation": "Tỉ số nam:nữ là 12:18. Chia cả hai số cho 6 được 2:3.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "RAT03READY_002",
+      "type": "mcq",
+      "skill": "doi-don-vi-ti-so",
+      "points": 1,
+      "question": "Tỉ số của 2 m và 50 cm là:",
+      "options": [
+        "4",
+        "1/4",
+        "2/50",
+        "40"
+      ],
+      "answer": 0,
+      "explanation": "Đổi 2 m=200 cm, nên tỉ số là 200:50=4.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "RAT03READY_003",
+      "type": "mcq",
+      "skill": "tim-x-ti-le-thuc",
+      "points": 1,
+      "question": "Biết 3/5 = x/20. Giá trị của x là:",
+      "options": [
+        "12",
+        "15",
+        "8",
+        "4"
+      ],
+      "answer": 0,
+      "explanation": "Từ 3/5=x/20 suy ra 5x=60, nên x=12.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "RAT03READY_004",
+      "type": "mcq",
+      "skill": "ti-le-thuc",
+      "points": 1,
+      "question": "Cặp tỉ số nào lập thành một tỉ lệ thức?",
+      "options": [
+        "2/3 và 8/12",
+        "3/5 và 9/20",
+        "4/7 và 8/21",
+        "5/6 và 15/12"
+      ],
+      "answer": 0,
+      "explanation": "8/12 rút gọn thành 2/3, nên 2/3=8/12.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "RAT03READY_005",
+      "type": "mcq",
+      "skill": "day-ti-so-bang-nhau",
+      "points": 1,
+      "question": "Cho x:y=2:3 và x+y=25. Giá trị của x là:",
+      "options": [
+        "10",
+        "15",
+        "5",
+        "20"
+      ],
+      "answer": 0,
+      "explanation": "Đặt x=2k, y=3k. Khi đó 5k=25 nên k=5 và x=10.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "RAT03READY_006",
+      "type": "mcq",
+      "skill": "chia-theo-ti-le",
+      "points": 1,
+      "question": "Chia 180 thành ba phần tỉ lệ 2:3:4. Phần nhỏ nhất bằng:",
+      "options": [
+        "40",
+        "60",
+        "80",
+        "20"
+      ],
+      "answer": 0,
+      "explanation": "Tổng số phần là 9, mỗi phần đơn vị bằng 180:9=20. Phần nhỏ nhất là 2×20=40.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "RAT03READY_007",
+      "type": "mcq",
+      "skill": "ti-le-thuan",
+      "points": 1,
+      "question": "Hai đại lượng x và y tỉ lệ thuận theo y=4x. Khi x=7 thì y bằng:",
+      "options": [
+        "28",
+        "11",
+        "7/4",
+        "3"
+      ],
+      "answer": 0,
+      "explanation": "Thay x=7 vào y=4x được y=28.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "RAT03READY_008",
+      "type": "mcq",
+      "skill": "ti-le-nghich",
+      "points": 1,
+      "question": "Hai đại lượng x và y tỉ lệ nghịch và xy=36. Khi x=4 thì y bằng:",
+      "options": [
+        "9",
+        "32",
+        "40",
+        "1/9"
+      ],
+      "answer": 0,
+      "explanation": "Vì xy=36 nên y=36:4=9.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "RAT03READY_009",
+      "type": "mcq",
+      "skill": "phan-biet-thuan-nghich",
+      "points": 1,
+      "question": "Với cùng một quãng đường, khi vận tốc tăng thì thời gian đi hết quãng đường giảm. Vận tốc và thời gian là hai đại lượng:",
+      "options": [
+        "Tỉ lệ nghịch",
+        "Tỉ lệ thuận",
+        "Không liên hệ",
+        "Luôn bằng nhau"
+      ],
+      "answer": 0,
+      "explanation": "Với quãng đường cố định, v·t=s không đổi nên vận tốc và thời gian tỉ lệ nghịch.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "RAT03READY_010",
+      "type": "mcq",
+      "skill": "phan-biet-thuan-nghich",
+      "points": 1,
+      "question": "Nếu giá mỗi quyển vở không đổi, số quyển vở mua và tổng số tiền phải trả là hai đại lượng:",
+      "options": [
+        "Tỉ lệ thuận",
+        "Tỉ lệ nghịch",
+        "Không liên hệ",
+        "Có tích không đổi"
+      ],
+      "answer": 0,
+      "explanation": "Tổng tiền bằng đơn giá nhân số lượng; đơn giá không đổi nên tổng tiền tỉ lệ thuận với số lượng.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-PRACTICE-IMPLEMENTATION-W1-R1-20261009",
+        "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-09",
+        "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "RAT03READY_011",
+      "type": "mcq",
+      "skill": "he-so-ti-le-thuan",
+      "points": 1,
+      "question": "Hai đại lượng \\(x\\) và \\(y\\) tỉ lệ thuận theo công thức \\(y=kx\\). Khi \\(x=6\\) thì \\(y=15\\). Hệ số tỉ lệ \\(k\\) bằng:",
+      "options": [
+        "\\(\\frac52\\)",
+        "\\(\\frac25\\)",
+        "9",
+        "21"
+      ],
+      "answer": 0,
+      "explanation": "Vì \\(y=kx\\), ta có \\(k=\\frac{y}{x}=\\frac{15}{6}=\\frac52\\).",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    }
+  ]
+}

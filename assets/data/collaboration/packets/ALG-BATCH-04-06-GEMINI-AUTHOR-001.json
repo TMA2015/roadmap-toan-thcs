@@ -1,0 +1,241 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "ALG-BATCH-04-06-GEMINI-AUTHOR-001",
+  "task_id": "ALG-BATCH-04-06-001",
+  "context_version": "1.0.20",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "AUTHOR",
+  "scope": {
+    "layer": [
+      "KNTT-Core",
+      "Entrance10",
+      "Specialized-Challenge"
+    ],
+    "topics": [
+      "04-bieu-thuc-dai-so",
+      "05-7-hang-dang-thuc",
+      "06-phan-tich-da-thuc"
+    ],
+    "skills": []
+  },
+  "source_artifacts": [
+    "docs/assets/data/curriculum/golden-template-v1.json",
+    "docs/assets/data/curriculum/kntt-grade7-map.json",
+    "docs/assets/data/curriculum/kntt-grade8-map.json",
+    "docs/assets/data/curriculum/knowledge-graph-v1.json",
+    "docs/assets/data/practice/04-bieu-thuc-dai-so-v2.manifest.json",
+    "docs/assets/data/practice/05-7-hang-dang-thuc-v1.manifest.json",
+    "docs/assets/data/practice/06-phan-tich-da-thuc-v1.manifest.json",
+    "docs/huong-dan/golden-template-hoc-luyen-kiem-tra.md",
+    "docs/huong-dan/chuan-ngan-hang-cau-hoi.md"
+  ],
+  "claims": [
+    {
+      "id": "B1",
+      "status": "FACT_VERIFIED",
+      "statement": "Golden Template v1 is frozen after CĐ07 passed curriculum/schema/deploy QA and real iPad UX verification.",
+      "evidence": [
+        "docs/assets/data/curriculum/golden-template-v1.json"
+      ]
+    },
+    {
+      "id": "B2",
+      "status": "FACT_VERIFIED",
+      "statement": "CĐ04, CĐ05 and CĐ06 each already have a 120-question Practice Bank; the batch must reuse existing skill IDs when they match curriculum intent.",
+      "evidence": [
+        "04-bieu-thuc-dai-so-v2.manifest.json",
+        "05-7-hang-dang-thuc-v1.manifest.json",
+        "06-phan-tich-da-thuc-v1.manifest.json"
+      ]
+    },
+    {
+      "id": "B3",
+      "status": "FACT_VERIFIED",
+      "statement": "CĐ06 Grade 8 Core explicitly excludes tach-hang-tu-giua.",
+      "evidence": [
+        "kntt-grade8-map.json practice_alignment"
+      ]
+    },
+    {
+      "id": "B4",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Exact Learning Card count may vary by topic, but every Core card should have exactly 3 authored micro-practice items in Base -> Trap -> Apply order.",
+      "evidence": [
+        "Golden Template v1"
+      ]
+    }
+  ],
+  "topic_specs": [
+    {
+      "topic_id": "04-bieu-thuc-dai-so",
+      "title": "Biểu thức và biến đổi đại số",
+      "confirmed_core_existing_skills": [
+        "nhan-biet-don-thuc",
+        "nhan-biet-da-thuc",
+        "he-so-bac",
+        "hang-tu-dong-dang",
+        "thu-gon-da-thuc",
+        "cong-tru-da-thuc",
+        "bo-ngoac-dau",
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi",
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "confirmed_core_gaps_to_model": [
+        "da-thuc-mot-bien",
+        "chia-da-thuc-cho-don-thuc"
+      ],
+      "bank_skills_requiring_layer_review": [
+        "dieu-kien-xac-dinh",
+        "bien-doi-nhieu-buoc",
+        "lap-bieu-thuc",
+        "bai-toan-thuc-te"
+      ],
+      "upstream": [
+        "phep-tinh-so-huu-ti",
+        "thu-tu-phep-tinh"
+      ],
+      "downstream": [
+        "05-7-hang-dang-thuc",
+        "06-phan-tich-da-thuc",
+        "07-phan-thuc-dai-so"
+      ]
+    },
+    {
+      "topic_id": "05-7-hang-dang-thuc",
+      "title": "7 Hằng đẳng thức đáng nhớ",
+      "confirmed_core_existing_skills": [
+        "binh-phuong-tong",
+        "binh-phuong-hieu",
+        "hieu-hai-binh-phuong",
+        "lap-phuong-tong",
+        "lap-phuong-hieu",
+        "tong-hai-lap-phuong",
+        "hieu-hai-lap-phuong",
+        "nhan-dang-hdt",
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-lap-phuong",
+        "tinh-nhanh-hdt",
+        "rut-gon-hdt"
+      ],
+      "non_core_by_default_pending_source_evidence": [
+        "phan-tich-hdt",
+        "chung-minh-hdt",
+        "giai-phuong-trinh-hdt"
+      ],
+      "upstream": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi",
+        "thu-gon-da-thuc"
+      ],
+      "downstream": [
+        "06-phan-tich-da-thuc",
+        "07-phan-thuc-dai-so"
+      ]
+    },
+    {
+      "topic_id": "06-phan-tich-da-thuc",
+      "title": "Phân tích đa thức thành nhân tử",
+      "confirmed_core_existing_skills": [
+        "nhan-tu-chung",
+        "doi-dau-nhan-tu-chung",
+        "hieu-hai-binh-phuong",
+        "binh-phuong-hoan-chinh",
+        "tong-hieu-lap-phuong",
+        "nhom-hang-tu",
+        "phoi-hop-phuong-phap",
+        "kiem-tra-phan-tich"
+      ],
+      "explicit_core_exclude": [
+        "tach-hang-tu-giua"
+      ],
+      "non_core_by_default_pending_source_evidence": [
+        "giai-pt-bang-nhan-tu",
+        "ung-dung-phan-tich"
+      ],
+      "upstream": [
+        "05-7-hang-dang-thuc",
+        "nhan-bieu-thuc",
+        "thu-gon-da-thuc"
+      ],
+      "downstream": [
+        "phan-tich-tu-mau",
+        "rut-gon-phan-thuc"
+      ]
+    }
+  ],
+  "proposed_changes": [
+    {
+      "artifact": "Three topic Learning Workspace specs",
+      "change": "For each topic, return pedagogically coherent Core Learning Cards with title, KNTT scope, assessed skills, prerequisites/supporting skills, key concept, one worked example, misconception catalog and exactly 3 micro-practice specs per card.",
+      "rationale": "Generate the full Learn layer for the batch."
+    },
+    {
+      "artifact": "Micro-practice authoring batch",
+      "change": "Return all micro-practice items for all three topics in one packet. Every item must declare one assessed skill, optional supporting_skills, 4 plausible options, answer, explanation, hint ladder, and option-level observed_signal only when the distractor has a defensible primary interpretation.",
+      "rationale": "Preserve evidence semantics from Golden Template v1."
+    },
+    {
+      "artifact": "Practice Room written-practice plan",
+      "change": "For each topic, propose 8-12 Core written exercises with collapsible hint/solution, plus clearly separated Entrance10 and Challenge samples. Do not duplicate the 120-question interactive bank.",
+      "rationale": "Use written work for procedural fluency and presentation."
+    },
+    {
+      "artifact": "Core Readiness assessment",
+      "change": "For each topic, author 10-12 KNTT-Core MCQs balanced across confirmed Core skills. No hints/Tutor, one assessed skill per item, explanation shown only after Submit. Entrance10/Challenge must not contribute to Core readiness.",
+      "rationale": "Populate Assessment Engine v1 without introducing a second engine."
+    },
+    {
+      "artifact": "Knowledge Graph review candidates",
+      "change": "List only dependency/remediation relations that need review. Do not promote pedagogical sequence to PREREQUISITE without necessity.",
+      "rationale": "Maintain skill-level graph discipline."
+    }
+  ],
+  "tests": [
+    {
+      "id": "T1",
+      "expected": "All three topics follow frozen Golden Template v1 invariants.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "T2",
+      "expected": "Every micro item has exactly one assessed skill and Base/Trap/Apply coverage per card.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "T3",
+      "expected": "CĐ06 tach-hang-tu-giua is absent from KNTT Core cards/readiness.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "T4",
+      "expected": "CĐ05 phan-tich-hdt/chung-minh-hdt/giai-phuong-trinh-hdt are not promoted to Core without explicit KNTT evidence.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "T5",
+      "expected": "CĐ04 bank skills marked layer-review are classified rather than assumed Core.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "T6",
+      "expected": "Canonical answers and worked solutions are independently recomputed before PASS.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "T7",
+      "expected": "No hard-gate or Mastered state is introduced.",
+      "result": "NOT_RUN"
+    }
+  ],
+  "uncertainties": [
+    "Exact Core placement of CĐ04 lap-bieu-thuc/bai-toan-thuc-te and broader multi-step algebra should be source-checked rather than inferred from bank presence.",
+    "Some existing CĐ05/CĐ06 bank skills are useful Entrance10/application skills but are not automatically KNTT Core.",
+    "Do not create new Knowledge Graph nodes merely to encode a single distractor misconception."
+  ],
+  "acceptance": {
+    "verdict": "PENDING",
+    "notes": "Return ONE complete Collaboration Packet v2 covering CĐ04+CĐ05+CĐ06. Do not send card-by-card or topic-by-topic partial replies unless a source conflict blocks the whole batch."
+  }
+}

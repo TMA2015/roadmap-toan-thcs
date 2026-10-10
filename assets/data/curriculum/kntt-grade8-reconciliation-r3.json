@@ -1,0 +1,103 @@
+{
+  "schema": "kntt-grade8-reconciliation-r3",
+  "version": 1,
+  "as_of": "2026-10-04",
+  "status": "RECONCILED_NO_NEW_IDENTITY_NO_RUNTIME_CHANGE",
+  "architecture": "One Knowledge Graph · Two Learning Paths",
+  "purpose": "Close the three Grade-8 exact-ID mismatches using already-reviewed canonical taxonomy semantics without creating a new global skill/family.",
+  "source_locks": {
+    "coverage_matrix": {
+      "path": "docs/assets/data/curriculum/kntt-coverage-matrix-6-9-v1.json",
+      "blob_sha": "2935f58925918674b5bacd2d8743d5526283adba"
+    },
+    "grade8_map": {
+      "path": "docs/assets/data/curriculum/kntt-grade8-map.json",
+      "blob_sha": "7d91f1c8e15639b5da8e7da72845150424a0a104"
+    },
+    "taxonomy_v2": {
+      "path": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+      "blob_sha": "90e58fa666a0cea4ae41ff7ef82a3cbf80ca11e4"
+    },
+    "knowledge_graph": {
+      "path": "docs/assets/data/curriculum/knowledge-graph-v1.json",
+      "blob_sha": "64a7acf13a25aaf4a8f2501d3a63f48f7391134d"
+    },
+    "learning_workspaces": [
+      {
+        "path": "docs/assets/data/curriculum/topic07-learning-workspace.json",
+        "blob_sha": "7111cd085cb555a4d0c6197bf2dc33dfe368e39a"
+      },
+      {
+        "path": "docs/assets/data/curriculum/topic23-learning-workspace.json",
+        "blob_sha": "443169587e0ba663bc694122ee4a37e456793c70"
+      }
+    ]
+  },
+  "review_basis": {
+    "independent_review_required": false,
+    "reason": "No new taxonomy identity is proposed. All three cases are already resolved by explicit reviewed taxonomy/workspace semantics.",
+    "evidence": [
+      "`bieu-thuc-nhieu-phep-tinh` is already a Taxonomy v2 legacy mapping with role COMPOSITE_TASK, family_id null, canonical_candidate null, and note 'not a standalone family'.",
+      "Grade-8 Topic23 learner card 'Phép thử và kết quả thuận lợi' uses canonical skills `phep-thu-ngau-nhien` and `bien-co`, supporting family-level treatment of outcome vocabulary."
+    ]
+  },
+  "summary": {
+    "exact_id_unresolved_input_count": 3,
+    "reconciled_count": 3,
+    "resolution_counts": {
+      "CANONICAL_FAMILY": 2,
+      "LESSON_LOCAL": 1
+    },
+    "new_canonical_skills": [],
+    "new_canonical_families": [],
+    "remaining_review_queue": [],
+    "remaining_gap_candidates": []
+  },
+  "entries": [
+    {
+      "historical_ref": "bieu-thuc-nhieu-phep-tinh",
+      "chapter": 6,
+      "lesson_ref": "Bài 21-24",
+      "resolution": "LESSON_LOCAL",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [],
+      "local_role": "COMPOSITE_TASK",
+      "reason": "Current reviewed Taxonomy v2 explicitly classifies this as COMPOSITE_TASK with no canonical candidate and notes that it is not a standalone family. Preserve it as a composite problem type across rational-expression operations."
+    },
+    {
+      "historical_ref": "ket-qua-co-the",
+      "chapter": 8,
+      "lesson_ref": "Bài 30",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "PROB-EVENT"
+      ],
+      "local_role": "OUTCOME_CONCEPT",
+      "reason": "Possible outcomes are lesson-level vocabulary within random experiment/event structure. Topic23 already teaches Grade-8 Bài 30 through `phep-thu-ngau-nhien` and `bien-co`; no new global counter is needed."
+    },
+    {
+      "historical_ref": "ket-qua-thuan-loi",
+      "chapter": 8,
+      "lesson_ref": "Bài 30",
+      "resolution": "CANONICAL_FAMILY",
+      "canonical_skill_ids": [],
+      "canonical_family_ids": [
+        "PROB-EVENT"
+      ],
+      "local_role": "FAVORABLE_OUTCOME_CONCEPT",
+      "reason": "Favorable outcomes describe membership of an event within a random experiment. Keep the term lesson-local under PROB-EVENT rather than duplicate event/probability skills."
+    }
+  ],
+  "implementation_scope": {
+    "canonical_skill_additions": [],
+    "canonical_family_additions": [],
+    "canonical_skill_renames": [],
+    "canonical_family_renames": [],
+    "learner_facing_change": false,
+    "taxonomy_runtime_activation": false,
+    "mastery_readiness_change": false,
+    "learner_history_migration": false,
+    "item_regrade": false
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "schema": "roadmap-topic-learning-workspace-v1",
+  "topic": "02-so-va-phep-tinh",
+  "title": "Số và phép tính — chặng học Core lớp 6",
+  "learning_layer_label": "KNTT Core · Nền số học lớp 6",
+  "grade_scope": [
+    6,
+    7
+  ],
+  "core_progress_policy": {
+    "layer": "KNTT-Core",
+    "rule": "Năm chặng này chỉ đánh giá nền số học theo KNTT lớp 6, không khẳng định hoàn thành toàn bộ CĐ02 xuyên lớp 6–9. Nội dung số hữu tỉ, số thực và căn bậc hai lớp 7 được học ở chặng riêng sau này."
+  },
+  "cards": [
+    {
+      "id": "num02-g6-core-1",
+      "order": 1,
+      "title": "Số tự nhiên: tập hợp, cách ghi, phép tính và thứ tự thực hiện",
+      "kntt_lessons": [
+        "Lớp 6 · Bài 1–7"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        6
+      ],
+      "skills": [
+        "tap-hop-so",
+        "thu-tu-phep-tinh",
+        "luy-thua"
+      ],
+      "prerequisites": [],
+      "micro_practice": [
+        "NUM02MICRO_001",
+        "NUM02MICRO_002",
+        "NUM02MICRO_003",
+        "NUM02MICRO_016",
+        "NUM02MICRO_024",
+        "NUM02MICRO_025",
+        "NUM02MICRO_026",
+        "NUM02MICRO_033",
+        "NUM02MICRO_034",
+        "NUM02MICRO_035"
+      ],
+      "teaching_copy": {
+        "key_idea": "Số tự nhiên dùng để đếm và sắp thứ tự. Khi ghi một số tự nhiên, giá trị của mỗi chữ số phụ thuộc vào hàng của nó; đọc và viết số theo từng lớp, từng hàng từ trái sang phải. Trên tia số, số ở bên trái nhỏ hơn số ở bên phải; với hai số có cùng số chữ số, so sánh lần lượt từ hàng cao nhất. Với phép tính số tự nhiên, cộng và nhân có tính giao hoán, kết hợp; phép nhân phân phối đối với phép cộng. Khi tính biểu thức, làm trong ngoặc, rồi lũy thừa, nhân/chia và cuối cùng cộng/trừ.",
+        "worked_example": {
+          "problem": "a) Trong số 35 407, chữ số 5 có giá trị bao nhiêu? b) So sánh 58 203 và 58 230. c) Tính nhanh 25 × 37 × 4.",
+          "solution": "a) Chữ số 5 ở hàng nghìn nên có giá trị 5 000. b) Hai số giống nhau đến hàng trăm; ở hàng chục có 0 < 3 nên 58 203 < 58 230. c) (25 × 4) × 37 = 100 × 37 = 3 700."
+        },
+        "misconception": "Không so sánh số tự nhiên chỉ bằng chữ số cuối cùng; phải xét số chữ số rồi so từ hàng cao nhất. Cũng không được đổi chỗ tùy ý trong phép trừ hoặc phép chia.",
+        "summary": "Đọc đúng hàng và giá trị chữ số, so sánh theo giá trị từng hàng; sau đó dùng tính chất phép tính và đúng thứ tự thực hiện để tính nhanh, chính xác."
+      },
+      "lesson_local_concepts": [
+        {
+          "id": "cong-tru-so-tu-nhien",
+          "label": "Cộng và trừ số tự nhiên",
+          "family_id": "NUM-INTEGER-OPS",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 4-5"
+        },
+        {
+          "id": "nhan-chia-so-tu-nhien",
+          "label": "Nhân và chia số tự nhiên",
+          "family_id": "NUM-INTEGER-OPS",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 4-5"
+        },
+        {
+          "id": "ghi-so-tu-nhien",
+          "label": "Cách ghi số tự nhiên",
+          "family_id": "NUM-SETS",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 1-3"
+        },
+        {
+          "id": "thu-tu-so-tu-nhien",
+          "label": "Thứ tự số tự nhiên",
+          "family_id": "NUM-SETS",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 1-3"
+        }
+      ]
+    },
+    {
+      "id": "num02-g6-core-2",
+      "order": 2,
+      "title": "Quan hệ chia hết, số nguyên tố, ƯCLN và BCNN",
+      "kntt_lessons": [
+        "Lớp 6 · Bài 8–12"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        6
+      ],
+      "skills": [
+        "dau-hieu-chia-het",
+        "so-nguyen-to",
+        "phan-tich-thua-so-nguyen-to",
+        "ucln",
+        "bcnn"
+      ],
+      "prerequisites": [
+        "thu-tu-phep-tinh"
+      ],
+      "micro_practice": [
+        "NUM02MICRO_004",
+        "NUM02MICRO_005",
+        "NUM02MICRO_006",
+        "NUM02MICRO_017",
+        "NUM02MICRO_018",
+        "NUM02MICRO_027",
+        "NUM02MICRO_028",
+        "NUM02MICRO_029",
+        "NUM02MICRO_036",
+        "NUM02MICRO_037",
+        "NUM02MICRO_038"
+      ],
+      "teaching_copy": {
+        "key_idea": "Quan hệ chia hết, số nguyên tố và phân tích ra thừa số nguyên tố là nền tảng để tìm ƯCLN và BCNN. Trong bài toán thực tế, thường dùng ƯCLN khi cần chia thành nhiều nhóm giống nhau nhất hoặc tìm kích thước lớn nhất cùng chia hết; thường dùng BCNN khi cần tìm thời điểm/lần đầu hai chu kỳ cùng xảy ra hoặc số nhỏ nhất cùng là bội của nhiều số.",
+        "worked_example": {
+          "problem": "a) Có 42 bút đỏ và 56 bút xanh. Chia thành nhiều nhất các phần quà giống nhau, dùng hết cả hai loại. Có thể chia thành bao nhiêu phần quà? b) Hai xe buýt cùng rời bến lúc 7 giờ; xe A cứ 12 phút rời một chuyến, xe B cứ 18 phút rời một chuyến. Sau bao lâu hai xe lại cùng rời bến?",
+          "solution": "a) Số phần quà lớn nhất là ƯCLN(42,56)=14. b) Thời gian ngắn nhất để hai chu kỳ gặp lại là BCNN(12,18)=36 phút."
+        },
+        "misconception": "Không chọn ƯCLN hay BCNN chỉ vì đề có nhiều số. Nếu bài hỏi 'nhiều nhất/lớn nhất' trong một cách chia đều thì thường là ƯCLN; nếu hỏi 'nhỏ nhất/đầu tiên cùng xảy ra lại' giữa các chu kỳ thì thường là BCNN.",
+        "summary": "Trước tiên xác định cấu trúc bài toán: chia đều tối đa → nghĩ đến ƯCLN; chu kỳ cùng lặp lại sớm nhất → nghĩ đến BCNN. Sau đó mới tính và kiểm tra kết quả theo ngữ cảnh."
+      },
+      "lesson_local_concepts": [
+        {
+          "id": "quan-he-chia-het",
+          "label": "Quan hệ chia hết",
+          "family_id": "NUM-DIV-PRIME",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 8"
+        },
+        {
+          "id": "tinh-chat-chia-het",
+          "label": "Tính chất chia hết",
+          "family_id": "NUM-DIV-PRIME",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 8"
+        }
+      ],
+      "lesson_local_problem_types": [
+        {
+          "id": "bai-toan-ucln-bcnn",
+          "label": "Bài toán áp dụng ƯCLN–BCNN",
+          "family_id": "NUM-GCD-LCM",
+          "role": "PROBLEM_TYPE",
+          "grade": 6,
+          "lesson": "Bài 11-12"
+        }
+      ]
+    },
+    {
+      "id": "num02-g6-core-3",
+      "order": 3,
+      "title": "Số nguyên: biểu diễn, so sánh và phép tính",
+      "kntt_lessons": [
+        "Lớp 6 · Bài 13–17"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        6
+      ],
+      "skills": [
+        "so-nguyen-phep-tinh",
+        "gia-tri-tuyet-doi"
+      ],
+      "prerequisites": [
+        "tap-hop-so"
+      ],
+      "micro_practice": [
+        "NUM02MICRO_007",
+        "NUM02MICRO_008",
+        "NUM02MICRO_009",
+        "NUM02MICRO_019",
+        "NUM02MICRO_042",
+        "NUM02MICRO_043",
+        "NUM02MICRO_044",
+        "NUM02MICRO_045",
+        "NUM02MICRO_046",
+        "NUM02MICRO_047"
+      ],
+      "teaching_copy": {
+        "key_idea": "Tập hợp số nguyên gồm số nguyên âm, số 0 và số nguyên dương. Trên trục số, số nằm bên trái nhỏ hơn số nằm bên phải; hai số đối nằm khác phía 0 và có cùng giá trị tuyệt đối. Khi cộng, trừ, nhân và chia số nguyên, phải theo đúng quy tắc dấu. Khi bỏ dấu ngoặc, chú ý dấu đứng trước ngoặc. Với phép chia hết trong số nguyên, nếu a = b × q với q nguyên và b ≠ 0 thì a chia hết cho b; b là ước của a và a là bội của b.",
+        "worked_example": {
+          "problem": "a) Số đối của −7 là gì và so sánh −5 với −2. b) Tính 6 − (−9) và 8 − (3 − 5). c) Tính (−24) : 6. d) 3 có là ước của −12 không?",
+          "solution": "a) Số đối của −7 là 7; trên trục số −5 nằm bên trái −2 nên −5 < −2. b) 6 − (−9) = 15; 8 − (3 − 5) = 8 − (−2) = 10. c) (−24) : 6 = −4. d) Có, vì −12 = 3 × (−4)."
+        },
+        "misconception": "Không được xem mọi dấu “−” là giống nhau: dấu âm của một số, phép trừ và dấu đứng trước ngoặc có vai trò khác nhau. Khi chia, không được chia cho 0; dấu của thương tuân theo quy tắc cùng dấu/khác dấu.",
+        "summary": "Đọc đúng vị trí và dấu của số nguyên trước; sau đó chọn đúng quy tắc cho cộng–trừ, dấu ngoặc, nhân–chia và quan hệ ước–bội."
+      }
+    },
+    {
+      "id": "num02-g6-core-4",
+      "order": 4,
+      "title": "Phân số, phép tính và hai bài toán về phân số",
+      "kntt_lessons": [
+        "Lớp 6 · Bài 23–27"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        6
+      ],
+      "skills": [
+        "rut-gon-phan-so",
+        "quy-dong-so-sanh-phan-so",
+        "phep-tinh-phan-so"
+      ],
+      "prerequisites": [
+        "ucln",
+        "bcnn"
+      ],
+      "micro_practice": [
+        "NUM02MICRO_010",
+        "NUM02MICRO_011",
+        "NUM02MICRO_012",
+        "NUM02MICRO_020",
+        "NUM02MICRO_030",
+        "NUM02MICRO_031",
+        "NUM02MICRO_032",
+        "NUM02MICRO_039",
+        "NUM02MICRO_040",
+        "NUM02MICRO_041",
+        "NUM02MICRO_048",
+        "NUM02MICRO_049"
+      ],
+      "teaching_copy": {
+        "key_idea": "Hai phân số bằng nhau nếu chúng biểu diễn cùng một giá trị; nhân hoặc chia cả tử và mẫu cho cùng một số khác 0 tạo một phân số bằng phân số ban đầu. Hỗn số dương gồm phần nguyên và một phân số bé hơn 1; có thể đổi hỗn số sang phân số lớn hơn 1 và ngược lại. Khi cộng hoặc trừ phân số, đưa về cùng mẫu; khi nhân, nhân tử với tử và mẫu với mẫu; khi chia cho một phân số khác 0, nhân với phân số nghịch đảo. Với Bài 27, muốn tìm m/n của số b thì tính b × m/n; muốn tìm số ban đầu khi m/n của nó bằng a thì tính a ÷ m/n.",
+        "worked_example": {
+          "problem": "a) Điền số thích hợp: 3/4 = ?/12. b) Đổi 2 1/3 thành phân số. c) Tính 2/3 × 9/4 và 5/6 ÷ 10/9. d) Tìm 3/5 của 40.",
+          "solution": "a) 3/4 = 9/12. b) 2 1/3 = 7/3. c) 2/3 × 9/4 = 18/12 = 3/2; 5/6 ÷ 10/9 = 5/6 × 9/10 = 3/4. d) 40 × 3/5 = 24."
+        },
+        "misconception": "Không cộng hoặc trừ tử với tử, mẫu với mẫu khi hai phân số khác mẫu. Khi chia phân số, phải đổi phép chia thành nhân với phân số nghịch đảo của số chia; số chia phải khác 0.",
+        "summary": "Nhận ra biểu diễn tương đương của phân số, rồi chọn đúng quy tắc: cùng mẫu để cộng–trừ, nhân trực tiếp, chia bằng nghịch đảo, hoặc nhân/chia theo đúng dạng bài toán phân số."
+      },
+      "lesson_local_problem_types": [
+        {
+          "id": "tim-gia-tri-phan-so-cua-so",
+          "label": "Tìm giá trị phân số của một số",
+          "family_id": "NUM-FRACTION-OPS",
+          "role": "PROBLEM_TYPE",
+          "grade": 6,
+          "lesson": "Bài 27"
+        },
+        {
+          "id": "tim-so-khi-biet-gia-tri-phan-so",
+          "label": "Tìm số khi biết giá trị một phân số của số đó",
+          "family_id": "NUM-FRACTION-OPS",
+          "role": "PROBLEM_TYPE",
+          "grade": 6,
+          "lesson": "Bài 27"
+        }
+      ],
+      "lesson_local_concepts": [
+        {
+          "id": "phan-so-bang-nhau",
+          "label": "Phân số bằng nhau",
+          "family_id": "NUM-FRACTION-FORM",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 23-24"
+        },
+        {
+          "id": "hon-so-duong",
+          "label": "Hỗn số dương",
+          "family_id": "NUM-FRACTION-FORM",
+          "role": "LESSON_LOCAL_CONCEPT",
+          "grade": 6,
+          "lesson": "Bài 23-24"
+        }
+      ]
+    },
+    {
+      "id": "num02-g6-core-5",
+      "order": 5,
+      "title": "Số thập phân, phép tính, làm tròn và phần trăm",
+      "kntt_lessons": [
+        "Lớp 6 · Bài 28–31"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        6
+      ],
+      "skills": [
+        "so-huu-ti-thap-phan",
+        "lam-tron-so",
+        "phan-tram"
+      ],
+      "prerequisites": [
+        "phep-tinh-phan-so"
+      ],
+      "micro_practice": [
+        "NUM02MICRO_013",
+        "NUM02MICRO_014",
+        "NUM02MICRO_015",
+        "NUM02MICRO_021",
+        "NUM02MICRO_022",
+        "NUM02MICRO_023",
+        "NUM02MICRO_050",
+        "NUM02MICRO_051",
+        "NUM02MICRO_052"
+      ],
+      "teaching_copy": {
+        "key_idea": "Số thập phân là một cách viết số hữu tỉ theo hệ thập phân. Khi cộng hoặc trừ số thập phân, đặt dấu phẩy thẳng cột. Khi nhân, có thể nhân như số tự nhiên rồi đặt lại dấu phẩy theo tổng số chữ số ở phần thập phân. Khi chia cho một số thập phân khác 0, dịch dấu phẩy của cả số bị chia và số chia cùng số chữ số để số chia trở thành số tự nhiên. Khi làm tròn đến một hàng, nhìn chữ số ngay bên phải: nhỏ hơn 5 thì giữ nguyên, từ 5 trở lên thì tăng chữ số ở hàng làm tròn thêm 1. Với phần trăm, p% = p/100.",
+        "worked_example": {
+          "problem": "Tính 3,7 − 1,85; 1,2 × 0,5; 4,2 ÷ 0,6. Sau đó làm tròn 12,347 đến hàng phần trăm.",
+          "solution": "3,70 − 1,85 = 1,85. Ta có 1,2 × 0,5 = 0,60 = 0,6. Với phép chia, 4,2 ÷ 0,6 = 42 ÷ 6 = 7. Vì chữ số hàng phần nghìn của 12,347 là 7 nên 12,347 ≈ 12,35."
+        },
+        "misconception": "Không được căn dấu phẩy theo mép phải khi cộng/trừ; phải đặt dấu phẩy thẳng cột. Khi nhân không đặt dấu phẩy theo cột. Khi chia cho số thập phân, phải dịch dấu phẩy ở cả số bị chia và số chia cùng một số chữ số.",
+        "summary": "Chọn đúng quy tắc cho từng phép tính thập phân, rồi mới dùng làm tròn hoặc phần trăm khi bài toán yêu cầu."
+      }
+    },
+    {
+      "id": "num02-g7-core-1",
+      "order": 6,
+      "title": "Số hữu tỉ: cộng, trừ, nhân và chia",
+      "kntt_lessons": [
+        "Lớp 7 · Bài 1–3"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        7
+      ],
+      "skills": [
+        "phep-tinh-so-huu-ti"
+      ],
+      "prerequisites": [
+        "phep-tinh-phan-so",
+        "so-nguyen-phep-tinh"
+      ],
+      "micro_practice": [
+        "NUM02MICRO_053",
+        "NUM02MICRO_054",
+        "NUM02MICRO_055",
+        "NUM02MICRO_056"
+      ],
+      "teaching_copy": {
+        "key_idea": "Số hữu tỉ có thể viết dưới dạng a/b với a, b là số nguyên và b khác 0. Khi cộng hoặc trừ hai số hữu tỉ, đưa về cùng mẫu rồi cộng/trừ tử; khi nhân, nhân tử với tử và mẫu với mẫu; khi chia cho một số hữu tỉ khác 0, nhân với số nghịch đảo. Dấu của kết quả phải được xử lí như với số nguyên. Trong biểu thức nhiều phép tính, ưu tiên lũy thừa, rồi nhân/chia, cuối cùng cộng/trừ, trừ khi có ngoặc.",
+        "worked_example": {
+          "problem": "Tính A = -3/4 + 5/6 và B = (-2/3) : (4/9).",
+          "solution": "A = -9/12 + 10/12 = 1/12. Với B, đổi phép chia thành nhân với số nghịch đảo: (-2/3) × (9/4) = -18/12 = -3/2."
+        },
+        "misconception": "Không cộng tử với tử và mẫu với mẫu khi cộng phân số. Khi chia, chỉ đảo số chia, không đảo số bị chia. Đặc biệt chú ý dấu âm và ngoặc: (-2/3)^2 khác với -(2/3)^2.",
+        "summary": "Xác định đúng phép tính, xử lí dấu, quy đồng khi cộng–trừ, dùng nghịch đảo khi chia và kiểm tra thứ tự phép tính."
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+      }
+    },
+    {
+      "id": "num02-g7-core-3",
+      "order": 6.5,
+      "title": "Thứ tự phép tính và quy tắc chuyển vế",
+      "kntt_lessons": [
+        "Lớp 7 · Bài 4"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        7
+      ],
+      "skills": [
+        "thu-tu-phep-tinh"
+      ],
+      "prerequisites": [
+        "phep-tinh-so-huu-ti"
+      ],
+      "micro_practice": [
+        "NUM02MICRO_061",
+        "NUM02MICRO_062",
+        "NUM02MICRO_063",
+        "NUM02MICRO_064"
+      ],
+      "teaching_copy": {
+        "key_idea": "Khi tính biểu thức số hữu tỉ, thực hiện theo thứ tự: trong ngoặc trước; lũy thừa; nhân và chia; cuối cùng cộng và trừ. Với một đẳng thức có số chưa biết, có thể dùng quy tắc chuyển vế như một kỹ thuật biến đổi: chuyển một số hạng từ vế này sang vế kia thì đổi dấu số hạng đó, sau đó thực hiện phép tính để tìm giá trị chưa biết.",
+        "worked_example": {
+          "problem": "Tính A = 3/4 - 1/2 × (2/3) và tìm x biết x - 3/5 = 7/10.",
+          "solution": "Với A, tính phép nhân trước: 1/2 × 2/3 = 1/3, nên A = 3/4 - 1/3 = 5/12. Với x - 3/5 = 7/10, chuyển -3/5 sang vế phải thành +3/5: x = 7/10 + 3/5 = 13/10."
+        },
+        "misconception": "Không tính lần lượt từ trái sang phải khi biểu thức có nhiều loại phép tính. Khi chuyển vế, phải đổi dấu đúng số hạng được chuyển; không được đổi dấu cả hai vế hay tự ý đổi dấu những số hạng không chuyển.",
+        "summary": "Xác định đúng thứ tự phép tính; khi tìm số chưa biết, dùng chuyển vế như một kỹ thuật biến đổi đẳng thức và luôn kiểm tra lại kết quả trong phương trình ban đầu."
+      },
+      "lesson_local_concepts": [
+        {
+          "id": "quy-tac-chuyen-ve",
+          "label": "Quy tắc chuyển vế",
+          "role": "PREREQUISITE_TECHNIQUE",
+          "grade": 7,
+          "lesson": "Bài 4"
+        }
+      ],
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE2_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008"
+      }
+    },
+    {
+      "id": "num02-g7-core-2",
+      "order": 7,
+      "title": "Số vô tỉ, căn bậc hai số học và tập số thực",
+      "kntt_lessons": [
+        "Lớp 7 · Bài 5–7"
+      ],
+      "layer": "KNTT-Core",
+      "grades": [
+        7
+      ],
+      "skills": [
+        "so-vo-ti",
+        "can-bac-hai-so-hoc"
+      ],
+      "prerequisites": [
+        "so-huu-ti-thap-phan"
+      ],
+      "micro_practice": [
+        "NUM02MICRO_057",
+        "NUM02MICRO_058",
+        "NUM02MICRO_059",
+        "NUM02MICRO_060"
+      ],
+      "teaching_copy": {
+        "key_idea": "Số hữu tỉ có biểu diễn thập phân hữu hạn hoặc vô hạn tuần hoàn. Số vô tỉ là số không viết được dưới dạng a/b với a, b nguyên và b khác 0; biểu diễn thập phân của nó là vô hạn không tuần hoàn. Với a ≥ 0, căn bậc hai số học của a là số không âm x sao cho x² = a, kí hiệu √a. Tập số thực gồm cả số hữu tỉ và số vô tỉ.",
+        "worked_example": {
+          "problem": "Phân loại các số 0,25; 0,(3); √2; √49. Tính √49.",
+          "solution": "0,25 và 0,(3) là số hữu tỉ. √2 là số vô tỉ. Vì 7² = 49 và căn bậc hai số học là số không âm nên √49 = 7."
+        },
+        "misconception": "Không viết √49 = ±7: kí hiệu √49 chỉ căn bậc hai số học, nên bằng 7. Cũng không kết luận mọi số có dấu căn đều vô tỉ; chẳng hạn √49 = 7 là số hữu tỉ.",
+        "summary": "Phân biệt hữu tỉ/vô tỉ bằng bản chất biểu diễn số; với √a, luôn lấy giá trị không âm và chỉ dùng kiến thức căn bậc hai số học cơ bản của lớp 7."
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "NOTEBOOKLM_WAVE1_R1",
+        "packet_id": "MATH-KNTT-G7-REPAIR-W1-R1-20261008"
+      }
+    }
+  ],
+  "extensions": [],
+  "micro_practice_bank": "assets/data/practice/02-so-va-phep-tinh-micro-v1.json",
+  "qa_notes": [
+    "Nguồn phân đoạn: docs/assets/data/curriculum/kntt-grade6-map.json, bài 1–17 và 23–31.",
+    "Bộ câu hỏi này không lấy kỹ năng số hữu tỉ/số thực/căn bậc hai lớp 7 làm điều kiện hoàn thành lớp 6.",
+    "Practice Bank v1 có 120 câu chưa gắn grade metadata từng item: không tuyên bố toàn bộ ngân hàng là Core lớp 6.",
+    "Seven-gap R1 PASS: appended five coverage items NUM02MICRO_016–020; original 15 records and learner history remain immutable.",
+    "Bài 30 rounding repair R1 candidate: adds canonical skill lam-tron-so to Grade-6 card 5 and micro candidates NUM02MICRO_021–023; uoc-luong remains lesson-local. Academic review pending.",
+    "Grade-7 Repair Wave 1 candidate: adds reviewed-target Learn cards for phep-tinh-so-huu-ti, so-vo-ti and can-bac-hai-so-hoc; academic content review pending."
+  ]
+}

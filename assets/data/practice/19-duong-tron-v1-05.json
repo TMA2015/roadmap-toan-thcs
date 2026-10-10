@@ -1,0 +1,902 @@
+{
+  "version": 2,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "CIR19-V1-05",
+  "topic": {
+    "id": "19-duong-tron",
+    "title": "Đường tròn"
+  },
+  "questions": [
+    {
+      "id": "CIR19V1_121",
+      "question": "Trong cùng đường tròn, hai dây bằng nhau thì:",
+      "options": [
+        "Hai cung nhỏ tương ứng bằng nhau",
+        "Hai cung luôn bù nhau",
+        "Hai dây đều là đường kính",
+        "Khoảng cách đến tâm khác nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "cung-va-day"
+        ],
+        "type": "cung-va-day",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dây bằng nhau chắn cung bằng nhau.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_122",
+      "question": "Trong cùng đường tròn, hai cung nhỏ bằng nhau thì:",
+      "options": [
+        "Hai dây căng cung đó bằng nhau",
+        "Hai dây vuông góc",
+        "Hai dây song song",
+        "Một dây là đường kính"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "cung-va-day"
+        ],
+        "type": "cung-va-day",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Cung bằng nhau tương ứng với dây bằng nhau.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_123",
+      "question": "Dây AB dài hơn dây CD trong cùng đường tròn thì cung nhỏ AB:",
+      "options": [
+        "Lớn hơn cung nhỏ CD",
+        "Nhỏ hơn cung nhỏ CD",
+        "Bằng cung CD",
+        "Không so sánh được"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "cung-va-day"
+        ],
+        "type": "cung-va-day",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Dây lớn hơn chắn cung nhỏ lớn hơn.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_124",
+      "question": "R=9 cm, cung 120°. Độ dài cung:",
+      "options": [
+        "6π cm",
+        "18π cm",
+        "3π cm",
+        "9π cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "do-dai-cung"
+        ],
+        "type": "do-dai-cung",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "l=120/360·18π=6π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_125",
+      "question": "Chu vi đường tròn 20π cm. Cung 90° dài:",
+      "options": [
+        "5π cm",
+        "10π cm",
+        "20π cm",
+        "2π cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "do-dai-cung"
+        ],
+        "type": "do-dai-cung",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Cung 90° bằng 1/4 chu vi.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_126",
+      "question": "Cung 72° của đường tròn bán kính 5 cm dài:",
+      "options": [
+        "2π cm",
+        "5π cm",
+        "10π cm",
+        "π cm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "do-dai-cung"
+        ],
+        "type": "do-dai-cung",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "l=72/360·10π=2π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_127",
+      "question": "R=4 cm, góc ở tâm 90°. Diện tích quạt:",
+      "options": [
+        "4π cm²",
+        "8π cm²",
+        "16π cm²",
+        "2π cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "dien-tich-quat-tron"
+        ],
+        "type": "dien-tich-quat-tron",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "1/4·16π=4π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_128",
+      "question": "R=6 cm, góc 60°. Diện tích quạt:",
+      "options": [
+        "6π cm²",
+        "12π cm²",
+        "18π cm²",
+        "3π cm²"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "dien-tich-quat-tron"
+        ],
+        "type": "dien-tich-quat-tron",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "60/360·36π=6π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_129",
+      "question": "Quạt tròn chiếm 120° của hình tròn diện tích 27π. Diện tích quạt:",
+      "options": [
+        "9π",
+        "18π",
+        "27π",
+        "6π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "dien-tich-quat-tron"
+        ],
+        "type": "dien-tich-quat-tron",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "120/360=1/3.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_130",
+      "question": "Vành khuyên R=5,r=4. Diện tích:",
+      "options": [
+        "9π",
+        "π",
+        "41π",
+        "20π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "dien-tich-vanh-khuyen"
+        ],
+        "type": "dien-tich-vanh-khuyen",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "π(25-16)=9π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_131",
+      "question": "Vành khuyên R=10,r=6. Diện tích:",
+      "options": [
+        "64π",
+        "16π",
+        "136π",
+        "40π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "dien-tich-vanh-khuyen"
+        ],
+        "type": "dien-tich-vanh-khuyen",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "π(100-36)=64π.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_132",
+      "question": "Diện tích hai hình tròn đồng tâm là 49π và 25π. Vành khuyên:",
+      "options": [
+        "24π",
+        "74π",
+        "12π",
+        "35π"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "dien-tich-vanh-khuyen"
+        ],
+        "type": "dien-tich-vanh-khuyen",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Lấy diện tích lớn trừ nhỏ.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_133",
+      "question": "d(O,a)<R thì a:",
+      "options": [
+        "Cắt đường tròn tại hai điểm",
+        "Tiếp xúc",
+        "Không giao",
+        "Đi qua tâm bắt buộc"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "vi-tri-tuong-doi-duong-thang-duong-tron"
+        ],
+        "type": "vi-tri-tuong-doi-duong-thang-duong-tron",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Khoảng cách nhỏ hơn bán kính → cát tuyến.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_134",
+      "question": "d(O,a)=R thì a:",
+      "options": [
+        "Tiếp tuyến",
+        "Cát tuyến",
+        "Không giao",
+        "Đường kính"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "vi-tri-tuong-doi-duong-thang-duong-tron"
+        ],
+        "type": "vi-tri-tuong-doi-duong-thang-duong-tron",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Khoảng cách bằng bán kính → tiếp tuyến.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_135",
+      "question": "d(O,a)>R thì a:",
+      "options": [
+        "Không có điểm chung với đường tròn",
+        "Tiếp xúc",
+        "Cắt hai điểm",
+        "Đi qua tâm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "vi-tri-tuong-doi-duong-thang-duong-tron"
+        ],
+        "type": "vi-tri-tuong-doi-duong-thang-duong-tron",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Khoảng cách lớn hơn bán kính → không giao.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_136",
+      "question": "Hai đường tròn R=5,r=3,d=8:",
+      "options": [
+        "Tiếp xúc ngoài",
+        "Cắt hai điểm",
+        "Tiếp xúc trong",
+        "Không giao"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "vi-tri-tuong-doi-hai-duong-tron"
+        ],
+        "type": "vi-tri-tuong-doi-hai-duong-tron",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "d=R+r=8.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_137",
+      "question": "R=5,r=3,d=4:",
+      "options": [
+        "Cắt nhau tại hai điểm",
+        "Tiếp xúc ngoài",
+        "Tiếp xúc trong",
+        "Không giao"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "vi-tri-tuong-doi-hai-duong-tron"
+        ],
+        "type": "vi-tri-tuong-doi-hai-duong-tron",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "|R-r|<d<R+r tức 2<4<8.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_138",
+      "question": "R=5,r=3,d=2:",
+      "options": [
+        "Tiếp xúc trong",
+        "Tiếp xúc ngoài",
+        "Cắt hai điểm",
+        "Ngoài nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "vi-tri-tuong-doi-hai-duong-tron"
+        ],
+        "type": "vi-tri-tuong-doi-hai-duong-tron",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "d=|R-r|=2.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_139",
+      "question": "Tâm ngoại tiếp tam giác là giao của:",
+      "options": [
+        "Ba đường trung trực",
+        "Ba phân giác",
+        "Ba trung tuyến",
+        "Ba đường cao"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "duong-tron-ngoai-tiep-tam-giac"
+        ],
+        "type": "duong-tron-ngoai-tiep-tam-giac",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Giao các trung trực cách đều ba đỉnh.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_140",
+      "question": "Đường tròn ngoại tiếp tam giác đi qua:",
+      "options": [
+        "Ba đỉnh của tam giác",
+        "Ba trung điểm cạnh",
+        "Ba chân đường cao",
+        "Tâm nội tiếp"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "duong-tron-ngoai-tiep-tam-giac"
+        ],
+        "type": "duong-tron-ngoai-tiep-tam-giac",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa đường tròn ngoại tiếp.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_141",
+      "question": "Tam giác vuông có tâm ngoại tiếp là:",
+      "options": [
+        "Trung điểm cạnh huyền",
+        "Đỉnh góc vuông",
+        "Trọng tâm",
+        "Tâm nội tiếp"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "duong-tron-ngoai-tiep-tam-giac"
+        ],
+        "type": "duong-tron-ngoai-tiep-tam-giac",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trung điểm cạnh huyền cách đều ba đỉnh.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_142",
+      "question": "Tâm nội tiếp tam giác là giao của:",
+      "options": [
+        "Ba đường phân giác",
+        "Ba trung trực",
+        "Ba trung tuyến",
+        "Ba đường cao"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "duong-tron-noi-tiep-tam-giac"
+        ],
+        "type": "duong-tron-noi-tiep-tam-giac",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Giao phân giác cách đều ba cạnh.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_143",
+      "question": "Đường tròn nội tiếp tam giác:",
+      "options": [
+        "Tiếp xúc cả ba cạnh",
+        "Đi qua cả ba đỉnh",
+        "Có tâm ở trung điểm cạnh",
+        "Luôn có bán kính bằng nửa cạnh"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "duong-tron-noi-tiep-tam-giac"
+        ],
+        "type": "duong-tron-noi-tiep-tam-giac",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa đường tròn nội tiếp.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_144",
+      "question": "Khoảng cách từ tâm nội tiếp I đến ba cạnh tam giác:",
+      "options": [
+        "Bằng nhau",
+        "Tỉ lệ với độ dài cạnh",
+        "Bằng 0",
+        "Không liên hệ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "duong-tron-noi-tiep-tam-giac"
+        ],
+        "type": "duong-tron-noi-tiep-tam-giac",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Khoảng cách chung là bán kính đường tròn nội tiếp.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_145",
+      "question": "Đa giác đều có:",
+      "options": [
+        "Các cạnh bằng nhau và các góc bằng nhau",
+        "Chỉ các cạnh bằng nhau",
+        "Chỉ các góc bằng nhau",
+        "Các đường chéo bằng nhau"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "da-giac-deu"
+        ],
+        "type": "da-giac-deu",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Định nghĩa đa giác đều.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_146",
+      "question": "Lục giác đều có góc trong mỗi đỉnh bằng:",
+      "options": [
+        "120°",
+        "60°",
+        "90°",
+        "135°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "da-giac-deu"
+        ],
+        "type": "da-giac-deu",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tổng góc (6-2)180=720, chia 6 được 120.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "CIR19V1_147",
+      "question": "Nối tâm của lục giác đều với các đỉnh tạo:",
+      "options": [
+        "6 tam giác đều",
+        "6 tam giác vuông",
+        "4 tam giác đều",
+        "3 hình vuông"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "duong-tron",
+        "skill": [
+          "da-giac-deu"
+        ],
+        "type": "da-giac-deu",
+        "layer": "KNTT-Core",
+        "grade": 9
+      },
+      "difficulty": "intermediate",
+      "explanation": "Mỗi góc ở tâm 60° và hai cạnh là bán kính.",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    }
+  ]
+}

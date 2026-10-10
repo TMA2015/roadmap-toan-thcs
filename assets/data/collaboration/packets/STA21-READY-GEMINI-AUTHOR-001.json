@@ -1,0 +1,176 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "STA21-READY-GEMINI-AUTHOR-001",
+  "task_id": "STA21-READY-001",
+  "context_version": "1.0.44",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "AUTHOR",
+  "topic": "21-thong-ke",
+  "source_bundle_url": "https://tma2015.github.io/roadmap-toan-thcs/assets/data/collaboration/exports/sta21-ready-gemini-author-001.json",
+  "scope": {
+    "layer": "KNTT-Core",
+    "item_count": 12,
+    "item_plan": [
+      {
+        "id": "STA21READY_001",
+        "skill": "du-lieu-phan-loai",
+        "grade": 6,
+        "focus": "Dữ liệu số và dữ liệu phân loại"
+      },
+      {
+        "id": "STA21READY_002",
+        "skill": "du-lieu-phan-loai",
+        "grade": 7,
+        "focus": "Mã số chỉ là nhãn, không là đại lượng số"
+      },
+      {
+        "id": "STA21READY_003",
+        "skill": "thu-thap-du-lieu",
+        "grade": 6,
+        "focus": "Chọn phương pháp thu thập đúng mục đích"
+      },
+      {
+        "id": "STA21READY_004",
+        "skill": "doc-bieu-do-cot",
+        "grade": 6,
+        "focus": "Đọc giá trị, đơn vị và tính chênh lệch"
+      },
+      {
+        "id": "STA21READY_005",
+        "skill": "doc-bieu-do-cot",
+        "grade": 8,
+        "focus": "So sánh giá trị trên hai cột trong một bảng biểu đồ"
+      },
+      {
+        "id": "STA21READY_006",
+        "skill": "doc-bieu-do-cot-kep",
+        "grade": 6,
+        "focus": "Đọc chú giải hai dãy, so sánh đúng cặp"
+      },
+      {
+        "id": "STA21READY_007",
+        "skill": "doc-bieu-do-doan-thang",
+        "grade": 7,
+        "focus": "Đọc xu hướng theo mốc thời gian"
+      },
+      {
+        "id": "STA21READY_008",
+        "skill": "bieu-do-quat-tron",
+        "grade": 7,
+        "focus": "Tỉ lệ của một tổng và góc ở tâm"
+      },
+      {
+        "id": "STA21READY_009",
+        "skill": "chon-bieu-do",
+        "grade": 7,
+        "focus": "Chọn dạng biểu đồ theo mục tiêu"
+      },
+      {
+        "id": "STA21READY_010",
+        "skill": "chuyen-bang-bieu-do",
+        "grade": 8,
+        "focus": "Chuyển số liệu thành cột đúng trục, thang và đơn vị"
+      },
+      {
+        "id": "STA21READY_011",
+        "skill": "nhan-xet-du-lieu",
+        "grade": 6,
+        "focus": "Chỉ kết luận điều số liệu cho biết"
+      },
+      {
+        "id": "STA21READY_012",
+        "skill": "nhan-xet-du-lieu",
+        "grade": 8,
+        "focus": "Phân biệt số lượng, phần trăm, suy diễn nguyên nhân"
+      }
+    ],
+    "coverage": "Twelve scored MCQs for nine current card skills, with two items each for du-lieu-phan-loai, doc-bieu-do-cot and nhan-xet-du-lieu; one item for each other skill.",
+    "grade_scope": "Full-topic CĐ21 Core check spanning mapped grade 6–8 skills after studying the relevant cards; not a grade-6-only certification and never a hard gate."
+  },
+  "source_lock": {
+    "files": [
+      "docs/assets/data/curriculum/topic21-learning-workspace.json",
+      "docs/assets/data/practice/21-thong-ke-micro-v1.json",
+      "docs/assets/data/practice/21-thong-ke-v1.manifest.json",
+      "docs/assets/data/practice/21-thong-ke-v1-01.json",
+      "docs/assets/data/practice/21-thong-ke-v1-02.json",
+      "docs/assets/data/practice/21-thong-ke-v1-03.json",
+      "docs/assets/data/practice/21-thong-ke-v1-04.json",
+      "docs/assets/data/practice/21-thong-ke-v1-05.json",
+      "docs/assets/data/curriculum/kntt-grade6-map.json",
+      "docs/assets/data/curriculum/kntt-grade7-map.json",
+      "docs/assets/data/curriculum/kntt-grade8-map.json",
+      "docs/assets/data/curriculum/kntt-grade9-map.json",
+      "docs/assets/data/assessment/20-hinh-hoc-tong-hop-core-v1.json",
+      "docs/assets/data/assessment/readiness-assessment-v1.schema.json",
+      "docs/assets/data/curriculum/golden-template-v1.json",
+      "docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md",
+      "docs/huong-dan/golden-template-hoc-luyen-kiem-tra.md",
+      "docs/kien-thuc/21-thong-ke/tu-kiem-tra.md"
+    ],
+    "existing_practice_count": 132,
+    "existing_micro_count": 15,
+    "required_style_guide": "docs/huong-dan/chuan-ngon-ngu-de-toan-v1.md",
+    "rule": "Existing workspace card skills and grade-6/7/8 primary mapping are authoritative. No proposed or Core-Support/Entrance10/Challenge skill may be scored in Core; grade 9 not mapped to this topic."
+  },
+  "deliverable": {
+    "packet_id": "STA21-READY-GEMINI-AUTHOR-001-RESULT",
+    "format": "one complete JSON object",
+    "fields": [
+      "packet_id",
+      "status",
+      "assessment",
+      "independent_checks",
+      "uncertainties"
+    ],
+    "assessment_schema": "roadmap-readiness-assessment-v1",
+    "id": "STA21-CORE-READY-V1",
+    "policy": {
+      "feedback": "after_submit",
+      "hints": false,
+      "tutor": false,
+      "hard_gate": false,
+      "target_minutes": 20,
+      "allow_partial_submit": true
+    },
+    "readiness": {
+      "ready_threshold": 0.8,
+      "minimum_answered_ratio": 0.8,
+      "hard_gate": false,
+      "states": [
+        "READY",
+        "REVIEW_RECOMMENDED",
+        "MORE_EVIDENCE_NEEDED"
+      ]
+    },
+    "assessment_item_shape": {
+      "id": "STA21READY_001",
+      "type": "mcq",
+      "skill": "exact item_plan skill ID",
+      "points": 1,
+      "question": "direct Vietnamese question including all necessary facts",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0,
+      "explanation": "shown only after submission",
+      "curriculum_grade": 6
+    },
+    "acceptance": "AUTHOR_DRAFT_PENDING_CHATGPT_QA"
+  },
+  "constraints": [
+    "Exactly 12 items, in item_plan order and exact ID/skill/grade mapping.",
+    "Each item has four different options, one correct answer and answer index 0..3. Vary answer positions. Solve each independently and include arithmetic/logic in independent_checks.",
+    "Follow the linked clear-language guide: direct request, exact units, distinct persons versus counts/events, explicit percentages and sampling rule; no ornamental textbook phrasing.",
+    "No invisible charts or external assets. For chart-reading, explicitly write every needed label, value, unit and legend as hypothetical transcribed data; do not infer chart values from prose.",
+    "Do not duplicate or near-duplicate any of 132 Practice Bank or 15 micro items; use fresh small data sets and distinct reasoning.",
+    "Do not include hints, Tutor prompts, immediate feedback or answer reveal before Submit; explanation field is for post-submit feedback only.",
+    "No Core-Support/Entrance10/Challenge skills, grouped data, unverified claims or inferred grade-9 Core. Exactly one assessed skill each.",
+    "No new grade-aware Readiness engine in this batch. Treat the assessment as full-topic, non-gating; do not claim grade-6 readiness for grade-7/8 items.",
+    "Preserve original learner evidence and 132-question Practice Bank; do not modify repository files. ChatGPT handles independent QA and integration."
+  ]
+}

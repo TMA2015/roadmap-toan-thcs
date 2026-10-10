@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "skill-taxonomy-v2-registry-r1",
+  "title": "Skill Taxonomy v2 Registry R1",
+  "type": "object",
+  "required": [
+    "schema",
+    "version",
+    "status",
+    "academic_authorization",
+    "runtime_enabled",
+    "learner_data_write_enabled",
+    "history_backfill_enabled",
+    "mastery_thresholds_enabled",
+    "readiness_enabled",
+    "counts",
+    "source_registries",
+    "families",
+    "legacy_mappings"
+  ],
+  "properties": {
+    "schema": { "const": "skill-taxonomy-v2-registry-r1" },
+    "version": { "const": 1 },
+    "status": { "const": "I0_DURABLE_REGISTRY_RUNTIME_DISABLED" },
+    "academic_authorization": { "const": "CLEARED_FOR_TAXONOMY_V2_IMPLEMENTATION_PLANNING" },
+    "runtime_enabled": { "const": false },
+    "learner_data_write_enabled": { "const": false },
+    "history_backfill_enabled": { "const": false },
+    "mastery_thresholds_enabled": { "const": false },
+    "readiness_enabled": { "const": false },
+    "counts": {
+      "type": "object",
+      "required": [
+        "families",
+        "unique_family_ids",
+        "legacy_mappings",
+        "intentional_no_family_mappings",
+        "cross_topic_reuse_mappings_total",
+        "ct24_explicit_reuse_mappings",
+        "reviewed_practice_questions"
+      ],
+      "properties": {
+        "families": { "const": 131 },
+        "unique_family_ids": { "const": 131 },
+        "legacy_mappings": { "const": 386 },
+        "intentional_no_family_mappings": { "const": 20 },
+        "cross_topic_reuse_mappings_total": { "const": 14 },
+        "ct24_explicit_reuse_mappings": { "const": 5 },
+        "reviewed_practice_questions": { "const": 3114 }
+      },
+      "additionalProperties": false
+    },
+    "source_registries": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["batch", "topics", "path", "ref", "blob_sha", "status"],
+        "properties": {
+          "batch": { "enum": ["S1", "S2", "S3", "S4"] },
+          "topics": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "pattern": "^CT\\d{2}$" },
+            "uniqueItems": true
+          },
+          "path": { "type": "string", "minLength": 1 },
+          "ref": { "type": "string", "minLength": 1 },
+          "blob_sha": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+          "status": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "families": {
+      "type": "array",
+      "minItems": 131,
+      "maxItems": 131,
+      "items": {
+        "type": "object",
+        "required": ["family_id", "label_vi", "layer", "topics", "diagnostic_subskills", "source_batch", "runtime_enabled"],
+        "properties": {
+          "family_id": { "type": "string", "minLength": 1 },
+          "label_vi": { "type": "string", "minLength": 1 },
+          "layer": {
+            "enum": ["KNTT-Core", "Core-Support", "THPT-Bridge", "Entrance10", "Specialized-Challenge"]
+          },
+          "topics": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "pattern": "^CT\\d{2}$" },
+            "uniqueItems": true
+          },
+          "diagnostic_subskills": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "uniqueItems": true
+          },
+          "source_batch": { "enum": ["S1", "S2", "S3", "S4"] },
+          "runtime_enabled": { "const": false },
+          "learner_visible_default": { "type": "boolean" },
+          "optional_section": { "type": "boolean" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "legacy_mappings": {
+      "type": "array",
+      "minItems": 386,
+      "maxItems": 386,
+      "items": {
+        "type": "object",
+        "required": ["topic_id", "legacy_id", "family_id", "role", "source_batch"],
+        "properties": {
+          "topic_id": { "type": "string", "pattern": "^CT\\d{2}$" },
+          "legacy_id": { "type": "string", "minLength": 1 },
+          "family_id": { "type": ["string", "null"] },
+          "role": {
+            "enum": [
+              "ASSESSED_SKILL",
+              "REVIEW_REQUIRED",
+              "SUPPORTING_SKILL",
+              "CONTEXT",
+              "METHOD",
+              "COMPOSITE_TASK",
+              "CATEGORY",
+              "EXTENSION_SKILL",
+              "REPRESENTATION",
+              "CROSS_TOPIC_LINK",
+              "CROSS_TOPIC_REUSE",
+              "EXAM_SKILL"
+            ]
+          },
+          "layer": {
+            "enum": ["KNTT-Core", "Core-Support", "THPT-Bridge", "Entrance10", "Specialized-Challenge", null]
+          },
+          "source_batch": { "enum": ["S1", "S2", "S3", "S4"] }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

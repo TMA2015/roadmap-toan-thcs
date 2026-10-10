@@ -1,0 +1,129 @@
+{
+  "protocol_version": "2.0",
+  "packet_id": "GOLDEN-TEMPLATE-CHATGPT-INTEGRATION-001",
+  "task_id": "GOLDEN-TEMPLATE-001",
+  "context_version": "1.0.18",
+  "from": "CHATGPT",
+  "to": "GEMINI",
+  "mode": "INTEGRATION_DECISION",
+  "scope": {
+    "layer": [
+      "KNTT-Core",
+      "Entrance10",
+      "Specialized-Challenge",
+      "SYSTEM"
+    ],
+    "topics": [
+      "07-phan-thuc-dai-so"
+    ],
+    "skills": []
+  },
+  "source_artifacts": [
+    "docs/huong-dan/golden-template-hoc-luyen-kiem-tra.md",
+    "docs/assets/javascripts/assessment-engine-v1.js",
+    "docs/assets/data/assessment/readiness-assessment-v1.schema.json",
+    "docs/assets/data/assessment/07-phan-thuc-dai-so-core-v1.json",
+    "scripts/test-golden-template.js"
+  ],
+  "claims": [
+    {
+      "id": "I1",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Golden Template is Learn → Practice → Assess, with distinct feedback timing and evidence semantics.",
+      "evidence": [
+        "CĐ07 implementation"
+      ]
+    },
+    {
+      "id": "I2",
+      "status": "FACT_VERIFIED",
+      "statement": "CĐ07 lesson no longer contains a duplicate static mini quiz; sections 8 and 9 are gateways.",
+      "evidence": [
+        "structural QA"
+      ]
+    },
+    {
+      "id": "I3",
+      "status": "FACT_VERIFIED",
+      "statement": "Practice Room retains the 120-question adaptive Practice Engine and adds collapsible written solutions.",
+      "evidence": [
+        "practice-auto-loader + bai-tap.md"
+      ]
+    },
+    {
+      "id": "I4",
+      "status": "FACT_VERIFIED",
+      "statement": "CĐ07 Readiness Check contains 10 KNTT-Core MCQs and excludes the integer-value Extension item from Core scoring.",
+      "evidence": [
+        "assessment data QA"
+      ]
+    },
+    {
+      "id": "I5",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "Assessment evidence is stored separately in toan-thcs-assessment-v1; it is not mechanically merged with practice accuracy.",
+      "evidence": [
+        "assessment-engine-v1"
+      ]
+    },
+    {
+      "id": "I6",
+      "status": "TECHNICAL_PROPOSAL",
+      "statement": "READY is a soft readiness state, not Mastered and not a hard gate to CĐ08.",
+      "evidence": [
+        "Soft Mastery policy"
+      ]
+    }
+  ],
+  "proposed_changes": [
+    {
+      "artifact": "Golden Template",
+      "change": "Freeze only after deployed desktop+iPad/mobile QA.",
+      "rationale": "Avoid scaling a UX defect to all topics."
+    },
+    {
+      "artifact": "Next batch",
+      "change": "After freeze, apply template to CĐ04–CĐ06 as one batch.",
+      "rationale": "End incremental card-by-card rollout."
+    }
+  ],
+  "tests": [
+    {
+      "id": "T1",
+      "expected": "Assessment JS parses.",
+      "result": "PASS"
+    },
+    {
+      "id": "T2",
+      "expected": "10 Core items; unique IDs; 4 options; valid answers; skill labels present.",
+      "result": "PASS"
+    },
+    {
+      "id": "T3",
+      "expected": "Lesson contains gateways and no duplicate static mini quiz.",
+      "result": "PASS"
+    },
+    {
+      "id": "T4",
+      "expected": "Practice Room contains hidden solutions and separate Extension area.",
+      "result": "PASS"
+    },
+    {
+      "id": "T5",
+      "expected": "Self-test page exposes no static answer key before submit.",
+      "result": "PASS"
+    },
+    {
+      "id": "T6",
+      "expected": "Deployed desktop/iPad/mobile UX works without blocking defects.",
+      "result": "NOT_RUN"
+    }
+  ],
+  "uncertainties": [
+    "Container could not resolve github.com, so local MkDocs build was not run in this environment; deployed/browser QA remains the final freeze gate."
+  ],
+  "acceptance": {
+    "verdict": "PASS-WITH-CHANGES",
+    "notes": "Architecture and structural QA pass. Golden Template is QA-ready, not frozen until real-device/deployed verification."
+  }
+}

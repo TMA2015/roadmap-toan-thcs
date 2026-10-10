@@ -1,0 +1,1015 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "ANG13-MICRO-V1",
+  "topic": {
+    "id": "13-goc-va-duong-thang",
+    "title": "Góc và quan hệ giữa các đường thẳng"
+  },
+  "question_count": 23,
+  "questions": [
+    {
+      "id": "GEO13MICRO_001",
+      "card_id": "geo13-core-1",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "diem-thuoc-duong",
+      "question": "Ký hiệu nào nói A thuộc đường thẳng d?",
+      "options": [
+        "\\(A\\in d\\)",
+        "\\(A\\notin d\\)",
+        "\\(A\\parallel d\\)",
+        "\\(A\\perp d\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "diem-thuoc-duong"
+        ],
+        "type": "diem-thuoc-duong",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "A∈d nghĩa là A nằm trên d.",
+      "hints": [
+        "Nhớ ký hiệu thuộc tập/đối tượng.",
+        "Dùng dấu ∈."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_002",
+      "card_id": "geo13-core-1",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "diem-nam-giua",
+      "question": "B nằm giữa A và C. Quan hệ độ dài đúng là:",
+      "options": [
+        "\\(AB+BC=AC\\)",
+        "\\(AB+AC=BC\\)",
+        "\\(AB=BC\\)",
+        "\\(AC+BC=AB\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "diem-nam-giua"
+        ],
+        "type": "diem-nam-giua",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Điểm nằm giữa chia đoạn lớn thành hai đoạn nhỏ.",
+      "hints": [
+        "Xác định đoạn lớn là AC.",
+        "Cộng hai đoạn nhỏ AB và BC."
+      ],
+      "option_evidence": {
+        "2": {
+          "signal": "nham-nam-giua-voi-trung-diem",
+          "signal_weight": 2,
+          "feedback_hint": "Nằm giữa không đồng nghĩa là trung điểm; chưa có dữ kiện AB=BC."
+        }
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_003",
+      "card_id": "geo13-core-1",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "trung-diem",
+      "question": "Điều kiện đầy đủ để M là trung điểm AB là:",
+      "options": [
+        "M nằm giữa A,B và MA=MB",
+        "MA=MB",
+        "M thuộc đường thẳng AB",
+        "AM+MB=AB"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "trung-diem"
+        ],
+        "type": "trung-diem",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "intermediate",
+      "explanation": "Trung điểm cần cả vị trí và hai độ dài bằng nhau.",
+      "hints": [
+        "Có hai điều kiện.",
+        "Bằng nhau thôi chưa đủ."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_004",
+      "card_id": "geo13-core-2",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "khai-niem-goc",
+      "question": "Trong góc xOy, đỉnh là:",
+      "options": [
+        "O",
+        "x",
+        "y",
+        "xy"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "khai-niem-goc"
+        ],
+        "type": "khai-niem-goc",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Chữ giữa trong tên góc là đỉnh.",
+      "hints": [
+        "Đọc tên x-O-y.",
+        "Hai cạnh là Ox và Oy."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_005",
+      "card_id": "geo13-core-2",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "goc-doi-dinh",
+      "question": "Hai góc đối đỉnh:",
+      "options": [
+        "Bằng nhau",
+        "Luôn bù nhau",
+        "Luôn phụ nhau",
+        "Chỉ bằng nhau khi là góc vuông"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "goc-doi-dinh"
+        ],
+        "type": "goc-doi-dinh",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai góc đối đỉnh luôn bằng nhau.",
+      "hints": [
+        "Nhớ tính chất cơ bản của hai đường cắt nhau.",
+        "Đừng nhầm với góc kề bù."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_006",
+      "card_id": "geo13-core-2",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tia-phan-giac",
+      "question": "Oz là tia phân giác của góc xOy=84°. Góc xOz bằng:",
+      "options": [
+        "42°",
+        "84°",
+        "168°",
+        "21°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tia-phan-giac"
+        ],
+        "type": "tia-phan-giac",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tia phân giác chia góc thành hai phần bằng nhau.",
+      "hints": [
+        "Lấy một nửa 84°.",
+        "84÷2."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_007",
+      "card_id": "geo13-core-3",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "goc-so-le-trong",
+      "question": "Để nhận dạng một cặp góc so le trong, cần chúng:",
+      "options": [
+        "Nằm giữa hai đường và ở hai phía của đường cắt",
+        "Cùng phía đường cắt và ngoài hai đường",
+        "Cùng đỉnh",
+        "Có tổng 180°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "goc-so-le-trong"
+        ],
+        "type": "goc-so-le-trong",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Tên gọi so le trong dựa trên vị trí.",
+      "hints": [
+        "'Trong' = giữa hai đường.",
+        "'So le' = hai phía đường cắt."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_008",
+      "card_id": "geo13-core-3",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "goc-dong-vi",
+      "question": "Hai góc đồng vị được gọi tên theo:",
+      "options": [
+        "Vị trí tương ứng tại hai giao điểm",
+        "Việc chúng bằng nhau",
+        "Tổng bằng 180°",
+        "Cùng đỉnh"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "goc-dong-vi"
+        ],
+        "type": "goc-dong-vi",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đồng vị là quan hệ vị trí, chưa cần giả thiết song song.",
+      "hints": [
+        "Tách nhận dạng vị trí khỏi tính chất số đo.",
+        "Song song mới cho hệ quả bằng nhau."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_009",
+      "card_id": "geo13-core-3",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "goc-trong-cung-phia",
+      "question": "Nếu a∥b, hai góc trong cùng phía có tổng:",
+      "options": [
+        "180°",
+        "90°",
+        "360°",
+        "0°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "goc-trong-cung-phia"
+        ],
+        "type": "goc-trong-cung-phia",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hai góc trong cùng phía bù nhau.",
+      "hints": [
+        "Dùng tính chất hai đường song song.",
+        "Bù nhau = 180°."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_010",
+      "card_id": "geo13-core-4",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tinh-chat-song-song",
+      "question": "Nếu a∥b và c cắt cả hai, một cặp góc đồng vị:",
+      "options": [
+        "Bằng nhau",
+        "Luôn vuông",
+        "Không liên hệ",
+        "Có tổng 90°"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tinh-chat-song-song"
+        ],
+        "type": "tinh-chat-song-song",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Hai đường song song cho các góc đồng vị bằng nhau.",
+      "hints": [
+        "Đi từ song song → quan hệ góc.",
+        "Đồng vị bằng nhau."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_011",
+      "card_id": "geo13-core-4",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "dau-hieu-song-song",
+      "question": "c cắt a,b và một cặp góc so le trong bằng nhau. Kết luận:",
+      "options": [
+        "\\(a\\parallel b\\)",
+        "\\(a\\perp b\\)",
+        "a trùng b",
+        "Không thể kết luận"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "dau-hieu-song-song"
+        ],
+        "type": "dau-hieu-song-song",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Đây là một dấu hiệu nhận biết hai đường song song.",
+      "hints": [
+        "Đi từ quan hệ góc → song song.",
+        "Kiểm tra đúng vị trí so le trong."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_012",
+      "card_id": "geo13-core-4",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tien-de-euclid",
+      "question": "Qua M ngoài đường thẳng a có bao nhiêu đường đi qua M và song song a?",
+      "options": [
+        "Đúng một",
+        "Hai",
+        "Vô số",
+        "Không có"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tien-de-euclid"
+        ],
+        "type": "tien-de-euclid",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Tiên đề Euclid khẳng định tính duy nhất.",
+      "hints": [
+        "M nằm ngoài a.",
+        "Nhớ từ khóa 'duy nhất'."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_013",
+      "card_id": "geo13-core-5",
+      "micro_role": "base",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "gia-thiet-ket-luan",
+      "question": "Trong một định lí dạng “Nếu P thì Q”, giả thiết là:",
+      "options": [
+        "P",
+        "Q",
+        "P và Q đều là kết luận",
+        "Không có giả thiết"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "gia-thiet-ket-luan"
+        ],
+        "type": "gia-thiet-ket-luan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "P là phần đã biết/được giả sử.",
+      "hints": [
+        "Phần sau 'nếu'.",
+        "Q là điều được suy ra."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_014",
+      "card_id": "geo13-core-5",
+      "micro_role": "trap",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "lap-luan-chung-minh-ngan",
+      "question": "Lý do nào không hợp lệ trong chứng minh?",
+      "options": [
+        "“Nhìn hình thấy hai đoạn bằng nhau”",
+        "Theo giả thiết",
+        "Theo tính chất góc đối đỉnh",
+        "Theo dấu hiệu song song"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "lap-luan-chung-minh-ngan"
+        ],
+        "type": "lap-luan-chung-minh-ngan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Hình vẽ không tạo ra dữ kiện toán học.",
+      "hints": [
+        "Chứng minh cần căn cứ đã cho/đã chứng minh.",
+        "Không đọc độ dài từ hình không theo tỉ lệ."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_015",
+      "card_id": "geo13-core-5",
+      "micro_role": "apply",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "lap-luan-chung-minh-ngan",
+      "question": "Một bước chứng minh tốt nên ghi:",
+      "options": [
+        "Mệnh đề + căn cứ",
+        "Chỉ đáp số",
+        "Chỉ tên định lí không chỉ ra áp dụng vào đâu",
+        "Nhận xét theo hình"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "lap-luan-chung-minh-ngan"
+        ],
+        "type": "lap-luan-chung-minh-ngan",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "intermediate",
+      "explanation": "Claim + reason giúp kiểm tra logic từng bước.",
+      "hints": [
+        "Tách điều suy ra và lý do.",
+        "Đây là contract proof của Geometry Architecture v1."
+      ],
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      }
+    },
+    {
+      "id": "GEO13MICRO_016",
+      "card_id": "geo13-core-1",
+      "micro_role": "coverage",
+      "question": "Cho điểm O và điểm A khác O. Trong các mô tả sau, mô tả nào đúng về tia OA?",
+      "options": [
+        "Có gốc O, đi qua A và kéo dài vô hạn về phía A.",
+        "Là đoạn thẳng hữu hạn có hai đầu mút O, A.",
+        "Có gốc A, đi qua O và kéo dài vô hạn về phía O.",
+        "Là toàn bộ đường thẳng đi qua O và A."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tia"
+        ],
+        "type": "nhan-biet-tia",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Tia OA có gốc O, đi qua A và kéo dài mãi về một phía; không phải đoạn thẳng hay đường thẳng hai phía.",
+      "hints": [
+        "Xác định chữ đứng đầu tên tia là điểm nào.",
+        "Tia có một gốc và kéo dài vô hạn chỉ về một phía."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_017",
+      "card_id": "geo13-core-1",
+      "micro_role": "coverage",
+      "question": "Ba điểm A, O, B thẳng hàng theo đúng thứ tự A–O–B. Hai tia nào chắc chắn đối nhau?",
+      "options": [
+        "Tia \\(OA\\) và \\(OB\\).",
+        "Tia \\(AO\\) và \\(BO\\).",
+        "Tia \\(OA\\) và \\(AO\\).",
+        "Tia \\(AB\\) và \\(BA\\)."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "tia-doi"
+        ],
+        "type": "nhan-biet-tia-doi",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Hai tia OA và OB cùng gốc O, cùng đường thẳng AB và ngược hướng vì O nằm giữa A và B. Các cặp khác không cùng gốc.",
+      "hints": [
+        "Hai tia đối nhau bắt buộc có chung gốc.",
+        "Với thứ tự A–O–B, hai hướng xuất phát từ O đi về hai phía."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_018",
+      "card_id": "geo13-core-1",
+      "micro_role": "coverage",
+      "question": "Điểm M nằm giữa A và B. Biết \\(AM=4\\text{ cm}\\) và \\(MB=7\\text{ cm}\\). Độ dài \\(AB\\) là bao nhiêu?",
+      "options": [
+        "\\(11\\text{ cm}\\)",
+        "\\(3\\text{ cm}\\)",
+        "\\(28\\text{ cm}\\)",
+        "\\(7\\text{ cm}\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "doan-thang-do-dai"
+        ],
+        "type": "do-doan-thang",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Vì M nằm giữa A và B, \\(AB=AM+MB=4+7=11\\) cm. Dữ kiện vị trí là điều kiện để cộng hai đoạn.",
+      "hints": [
+        "Chỉ cộng độ dài trực tiếp khi biết điểm ở giữa.",
+        "Đoạn lớn AB gồm hai đoạn AM và MB ghép liên tiếp."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_019",
+      "card_id": "geo13-core-2",
+      "micro_role": "coverage",
+      "question": "Tia Oz nằm trong góc xOy, \\(\\angle xOy=110^\\circ\\), \\(\\angle xOz=35^\\circ\\). Số đo \\(\\angle zOy\\) là:",
+      "options": [
+        "\\(75^\\circ\\)",
+        "\\(145^\\circ\\)",
+        "\\(55^\\circ\\)",
+        "\\(35^\\circ\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "do-goc"
+        ],
+        "type": "tinh-so-do-goc",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Do Oz nằm trong góc xOy, \\(\\angle xOz+\\angle zOy=\\angle xOy\\); vậy \\(110^\\circ-35^\\circ=75^\\circ\\). Không suy đoán vị trí tia nếu đề không cho.",
+      "hints": [
+        "Dữ kiện 'Oz nằm trong góc' cho phép cộng hai góc kề.",
+        "Lấy số đo góc lớn trừ phần đã biết."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_020",
+      "card_id": "geo13-core-2",
+      "micro_role": "coverage",
+      "question": "Góc có số đo \\(125^\\circ\\) là loại góc nào?",
+      "options": [
+        "Góc tù.",
+        "Góc nhọn.",
+        "Góc vuông.",
+        "Góc bẹt."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "phan-loai-goc"
+        ],
+        "type": "phan-loai-theo-do",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Vì \\(90^\\circ<125^\\circ<180^\\circ\\), đó là góc tù.",
+      "hints": [
+        "So sánh số đo với hai mốc 90° và 180°.",
+        "Góc nằm giữa 90° và 180° không phải góc vuông hay góc bẹt."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_021",
+      "card_id": "geo13-core-2",
+      "micro_role": "coverage",
+      "question": "Hai góc có tổng số đo \\(90^\\circ\\). Góc thứ nhất bằng \\(34^\\circ\\). Góc thứ hai bằng bao nhiêu?",
+      "options": [
+        "\\(56^\\circ\\)",
+        "\\(146^\\circ\\)",
+        "\\(124^\\circ\\)",
+        "\\(34^\\circ\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "goc-phu-bu"
+        ],
+        "type": "tinh-goc-phu",
+        "layer": "KNTT-Core",
+        "grade": 6
+      },
+      "difficulty": "basic",
+      "explanation": "Hai góc phụ nhau có tổng \\(90^\\circ\\), nên góc thứ hai là \\(90^\\circ-34^\\circ=56^\\circ\\). Góc bù nhau mới có tổng \\(180^\\circ\\).",
+      "hints": [
+        "Nhắc lại định nghĩa hai góc phụ nhau.",
+        "Lấy 90° trừ góc đã biết, không dùng 180°."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          6
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_022",
+      "card_id": "geo13-core-2",
+      "micro_role": "coverage",
+      "question": "Ox và Oy là hai tia đối nhau, tia Oz nằm giữa chúng. Hai góc \\(\\angle xOz\\) và \\(\\angle zOy\\) là cặp góc nào?",
+      "options": [
+        "Hai góc kề bù.",
+        "Hai góc đối đỉnh.",
+        "Hai góc phụ nhau.",
+        "Hai góc đồng vị."
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "nhan-dang-goc-dac-biet"
+        ],
+        "type": "nhan-dang-goc-ke-bu",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Hai góc có cạnh chung Oz, phần trong không giao nhau và hai cạnh còn lại Ox, Oy là hai tia đối nhau. Do đó chúng kề nhau và tổng \\(180^\\circ\\): kề bù.",
+      "hints": [
+        "Xem hai góc có chung cạnh và phần trong tách nhau không.",
+        "Hai cạnh còn lại là hai tia đối nhau nên tạo góc bẹt 180°."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "bounded-self-audit",
+        "record": "content-staging/reviews/MATH-CORE13-15-GEOMETRY-SELF-AUDIT-20260929.md"
+      }
+    },
+    {
+      "id": "GEO13MICRO_023",
+      "card_id": "geo13-core-2",
+      "micro_role": "coverage",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "goc-phu-bu",
+      "question": "Hai góc bù nhau. Một góc có số đo \\(68^\\circ\\). Góc còn lại có số đo:",
+      "options": [
+        "\\(112^\\circ\\)",
+        "\\(22^\\circ\\)",
+        "\\(68^\\circ\\)",
+        "\\(248^\\circ\\)"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "goc-va-duong-thang",
+        "skill": [
+          "goc-phu-bu"
+        ],
+        "type": "tinh-goc-bu",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "difficulty": "basic",
+      "explanation": "Hai góc bù nhau có tổng số đo \\(180^\\circ\\), nên góc còn lại là \\(180^\\circ-68^\\circ=112^\\circ\\).",
+      "hints": [
+        "Hai góc bù nhau có tổng bao nhiêu độ?",
+        "Lấy 180° trừ số đo góc đã biết."
+      ],
+      "supporting_skills": [],
+      "option_evidence": {},
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "lesson": "Bài 8"
+      },
+      "exam": {
+        "entrance10": "foundation",
+        "specialized": "none"
+      },
+      "authoring_review": {
+        "method": "owner-authorized-bounded-self-audit",
+        "status": "PASS",
+        "decision_record": "docs/assets/data/curriculum/kntt-g7-density-wave1-scope-r1.json",
+        "scope": "BAI8_MICRO_ONLY_GOC_PHU_BU"
+      }
+    }
+  ]
+}

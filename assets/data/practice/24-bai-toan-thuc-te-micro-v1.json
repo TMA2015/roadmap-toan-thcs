@@ -1,0 +1,432 @@
+{
+  "version": 1,
+  "schema": "practice-question-chunk-v1",
+  "bank_id": "TOPIC24-MICRO-V1",
+  "topic": {
+    "id": "24-bai-toan-thuc-te",
+    "title": "Bài toán thực tế và mô hình hóa"
+  },
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "MOD24MICRO_001",
+      "question": "Một xe đi từ A đến B dài 180 km với vận tốc 60 km/h. Đề hỏi thời gian. Đại lượng cần tìm là:",
+      "options": [
+        "thời gian",
+        "quãng đường",
+        "vận tốc",
+        "giá tiền"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "doc-de-du-kien"
+        ],
+        "type": "doc-de-xac-dinh-dai-luong",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "Đề đã cho quãng đường và vận tốc, yêu cầu thời gian.",
+      "source_question_id": "MOD24V1__001",
+      "card_id": "topic24-journey-1",
+      "micro_role": "base",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_002",
+      "question": "Một sản phẩm giá niêm yết 1.200.000đ được giảm 15%. Đề hỏi số tiền phải trả. Giá trị gốc để tính 15% là:",
+      "options": [
+        "1.200.000đ",
+        "15đ",
+        "180.000đ",
+        "1.020.000đ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "doc-de-du-kien"
+        ],
+        "type": "doc-de-xac-dinh-dai-luong",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "Phần trăm giảm được tính trên giá niêm yết ban đầu.",
+      "source_question_id": "MOD24V1__002",
+      "card_id": "topic24-journey-1",
+      "micro_role": "trap",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_003",
+      "question": "Hai loại vé A và B bán tổng 200 vé, doanh thu 18 triệu đồng. Muốn tìm số vé mỗi loại, hai ẩn tự nhiên là:",
+      "options": [
+        "số vé A và số vé B",
+        "giá vé A và giá vé B",
+        "doanh thu và thời gian",
+        "chiều dài và chiều rộng"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "doc-de-du-kien"
+        ],
+        "type": "doc-de-xac-dinh-dai-luong",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "Hai đại lượng chưa biết trực tiếp là số lượng của hai loại vé.",
+      "source_question_id": "MOD24V1__003",
+      "card_id": "topic24-journey-1",
+      "micro_role": "apply",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_004",
+      "question": "Đổi 90 phút ra giờ.",
+      "options": [
+        "1,5 giờ",
+        "0,9 giờ",
+        "1 giờ 30 giây",
+        "90 giờ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "doi-don-vi"
+        ],
+        "type": "doi-don-vi",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "90/60=1,5 giờ.",
+      "source_question_id": "MOD24V1__011",
+      "card_id": "topic24-journey-2",
+      "micro_role": "base",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_005",
+      "question": "Đổi 2,5 giờ ra phút.",
+      "options": [
+        "150 phút",
+        "25 phút",
+        "120 phút",
+        "250 phút"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "doi-don-vi"
+        ],
+        "type": "doi-don-vi",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "2,5×60=150 phút.",
+      "source_question_id": "MOD24V1__012",
+      "card_id": "topic24-journey-2",
+      "micro_role": "trap",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_006",
+      "question": "Đổi 72 km/h ra m/s.",
+      "options": [
+        "20 m/s",
+        "72 m/s",
+        "25 m/s",
+        "2 m/s"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "doi-don-vi"
+        ],
+        "type": "doi-don-vi",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "Chia cho 3,6: 72/3,6=20 m/s.",
+      "source_question_id": "MOD24V1__013",
+      "card_id": "topic24-journey-2",
+      "micro_role": "apply",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_007",
+      "question": "Một sản phẩm giá 800.000đ giảm 15%. Giá phải trả là:",
+      "options": [
+        "680.000đ",
+        "120.000đ",
+        "920.000đ",
+        "785.000đ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "phan-tram"
+        ],
+        "type": "bai-toan-phan-tram",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "800.000×0,85=680.000đ.",
+      "source_question_id": "MOD24V1__041",
+      "card_id": "topic24-journey-3",
+      "micro_role": "base",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_008",
+      "question": "Một sản phẩm 1.200.000đ tăng 10%. Giá mới là:",
+      "options": [
+        "1.320.000đ",
+        "1.080.000đ",
+        "1.210.000đ",
+        "120.000đ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "phan-tram"
+        ],
+        "type": "bai-toan-phan-tram",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "1.200.000×1,10=1.320.000đ.",
+      "source_question_id": "MOD24V1__042",
+      "card_id": "topic24-journey-3",
+      "micro_role": "trap",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_009",
+      "question": "Một mặt hàng sau giảm 20% có giá 960.000đ. Giá ban đầu là:",
+      "options": [
+        "1.200.000đ",
+        "768.000đ",
+        "1.152.000đ",
+        "1.000.000đ"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "phan-tram"
+        ],
+        "type": "bai-toan-phan-tram",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "Giá sau giảm = 80% giá gốc nên giá gốc=960.000/0,8.",
+      "source_question_id": "MOD24V1__043",
+      "card_id": "topic24-journey-3",
+      "micro_role": "apply",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_010",
+      "question": "Một số cộng 7 bằng 25. Nếu gọi số đó là x, phương trình đúng là:",
+      "options": [
+        "x + 7 = 25",
+        "7x=25",
+        "x-7=25",
+        "x/7=25"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "lap-phuong-trinh"
+        ],
+        "type": "lap-phuong-trinh-thuc-te",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "Dịch trực tiếp quan hệ 'cộng 7 bằng 25'.",
+      "source_question_id": "MOD24V1__051",
+      "card_id": "topic24-journey-4",
+      "micro_role": "base",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_011",
+      "question": "Có 120 vé gồm người lớn x vé và trẻ em y vé. Tổng số vé cho phương trình:",
+      "options": [
+        "x+y=120",
+        "x-y=120",
+        "120x+y=0",
+        "xy=120"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "lap-he"
+        ],
+        "type": "lap-he-thuc-te",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "Tổng hai loại vé bằng tổng số vé.",
+      "source_question_id": "MOD24V1__061",
+      "card_id": "topic24-journey-4",
+      "micro_role": "trap",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_012",
+      "question": "120 vé: người lớn 80.000đ, trẻ em 50.000đ, doanh thu 8.100.000đ. Với x,y là số vé, phương trình doanh thu là:",
+      "options": [
+        "80000x+50000y=8100000",
+        "80x+50y=120",
+        "x+y=8100000",
+        "50000x+80000y=120"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "lap-he"
+        ],
+        "type": "lap-he-thuc-te",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "Doanh thu bằng giá từng loại nhân số lượng rồi cộng.",
+      "source_question_id": "MOD24V1__062",
+      "card_id": "topic24-journey-4",
+      "micro_role": "apply",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_013",
+      "question": "Bài toán số sản phẩm cho nghiệm x=-5 và x=12. Kết luận đúng là:",
+      "options": [
+        "loại -5, nhận 12 sản phẩm",
+        "nhận cả hai nghiệm",
+        "nhận -5 vì nhỏ hơn",
+        "không cần kiểm tra"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "kiem-tra-ket-luan"
+        ],
+        "type": "kiem-tra-ket-luan",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "Số sản phẩm không thể âm.",
+      "source_question_id": "MOD24V1__111",
+      "card_id": "topic24-journey-5",
+      "micro_role": "base",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_014",
+      "question": "Tính thời gian đi đường được -2 giờ. Bước đúng là:",
+      "options": [
+        "kiểm tra lại mô hình hoặc phép tính vì thời gian không thể âm",
+        "kết luận đi -2 giờ",
+        "lấy trị tuyệt đối mà không giải thích",
+        "đổi sang phút âm"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "kiem-tra-ket-luan"
+        ],
+        "type": "kiem-tra-ket-luan",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "Kết quả phải phù hợp ý nghĩa thực tế.",
+      "source_question_id": "MOD24V1__112",
+      "card_id": "topic24-journey-5",
+      "micro_role": "trap",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    },
+    {
+      "id": "MOD24MICRO_015",
+      "question": "Bài hỏi chiều dài theo mét nhưng kết quả trung gian là 350 cm. Trước khi kết luận nên:",
+      "options": [
+        "đổi thành 3,5 m",
+        "ghi 350 m",
+        "bỏ đơn vị",
+        "giữ 350 cm dù đề yêu cầu mét"
+      ],
+      "answer": 0,
+      "tags": {
+        "topic": "24-bai-toan-thuc-te",
+        "skill": [
+          "kiem-tra-ket-luan"
+        ],
+        "type": "kiem-tra-ket-luan",
+        "layer": "Core-Support"
+      },
+      "difficulty": "basic",
+      "explanation": "Cần trả lời đúng đơn vị đề yêu cầu.",
+      "source_question_id": "MOD24V1__113",
+      "card_id": "topic24-journey-5",
+      "micro_role": "apply",
+      "hints": [
+        "Đọc kỹ điều kiện và đại lượng bài hỏi.",
+        "Kiểm tra đại lượng, phép tính và đơn vị trước khi chọn đáp án."
+      ]
+    }
+  ]
+}

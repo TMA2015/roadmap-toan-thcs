@@ -1,0 +1,228 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "GEO18-CORE-READY-V1",
+  "topic": {
+    "id": "18-he-thuc-luong",
+    "title": "Chuyên đề 18 – Hệ thức lượng trong tam giác vuông"
+  },
+  "layer": "KNTT-Core",
+  "title": "Core Readiness Check – Chuyên đề 18 – Hệ thức lượng trong tam giác vuông",
+  "skill_labels": {
+    "pythagore": "pythagore",
+    "pythagore-dao": "pythagore-dao",
+    "canh-huyen": "canh-huyen",
+    "sin": "sin",
+    "cos": "cos",
+    "tan": "tan",
+    "cot": "cot",
+    "tim-canh-luong-giac": "tim-canh-luong-giac",
+    "tim-goc-luong-giac": "tim-goc-luong-giac",
+    "goc-nang-ha": "goc-nang-ha",
+    "chieu-cao-khoang-cach": "chieu-cao-khoang-cach"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "GEO18READY_001",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "pythagore",
+      "skill": "pythagore",
+      "points": 1,
+      "question": "Hai cạnh góc vuông 9,12. Huyền:",
+      "options": [
+        "15",
+        "21",
+        "10",
+        "13"
+      ],
+      "answer": 0,
+      "explanation": "√225=15."
+    },
+    {
+      "id": "GEO18READY_002",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "pythagore-dao",
+      "skill": "pythagore-dao",
+      "points": 1,
+      "question": "8,15,17 tạo tam giác:",
+      "options": [
+        "Vuông",
+        "Đều",
+        "Tù",
+        "Không tạo"
+      ],
+      "answer": 0,
+      "explanation": "8²+15²=17²."
+    },
+    {
+      "id": "GEO18READY_003",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "canh-huyen",
+      "skill": "canh-huyen",
+      "points": 1,
+      "question": "Cạnh huyền nằm:",
+      "options": [
+        "Đối diện góc vuông",
+        "Kề góc vuông",
+        "Bất kỳ",
+        "Luôn đứng"
+      ],
+      "answer": 0,
+      "explanation": "Định nghĩa."
+    },
+    {
+      "id": "GEO18READY_004",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "sin",
+      "skill": "sin",
+      "points": 1,
+      "question": "sin α:",
+      "options": [
+        "đối/huyền",
+        "kề/huyền",
+        "đối/kề",
+        "kề/đối"
+      ],
+      "answer": 0,
+      "explanation": "Định nghĩa sin."
+    },
+    {
+      "id": "GEO18READY_005",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "cos",
+      "skill": "cos",
+      "points": 1,
+      "question": "cos α:",
+      "options": [
+        "kề/huyền",
+        "đối/huyền",
+        "đối/kề",
+        "huyền/kề"
+      ],
+      "answer": 0,
+      "explanation": "Định nghĩa cos."
+    },
+    {
+      "id": "GEO18READY_006",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tan",
+      "skill": "tan",
+      "points": 1,
+      "question": "tan α:",
+      "options": [
+        "đối/kề",
+        "kề/đối",
+        "đối/huyền",
+        "huyền/đối"
+      ],
+      "answer": 0,
+      "explanation": "Định nghĩa tan."
+    },
+    {
+      "id": "GEO18READY_007",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "cot",
+      "skill": "cot",
+      "points": 1,
+      "question": "cot α:",
+      "options": [
+        "kề/đối",
+        "đối/kề",
+        "đối/huyền",
+        "huyền/kề"
+      ],
+      "answer": 0,
+      "explanation": "Cot=1/tan."
+    },
+    {
+      "id": "GEO18READY_008",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tim-canh-luong-giac",
+      "skill": "tim-canh-luong-giac",
+      "points": 1,
+      "question": "α=30°, huyền=20. Cạnh đối:",
+      "options": [
+        "10",
+        "10√3",
+        "20√3",
+        "40"
+      ],
+      "answer": 0,
+      "explanation": "20sin30°=10."
+    },
+    {
+      "id": "GEO18READY_009",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tim-goc-luong-giac",
+      "skill": "tim-goc-luong-giac",
+      "points": 1,
+      "question": "tan α=1, α nhọn:",
+      "options": [
+        "45°",
+        "30°",
+        "60°",
+        "90°"
+      ],
+      "answer": 0,
+      "explanation": "tan45°=1."
+    },
+    {
+      "id": "GEO18READY_010",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "chieu-cao-khoang-cach",
+      "skill": "chieu-cao-khoang-cach",
+      "points": 1,
+      "question": "Cách chân cột 25 m, góc nâng 45°. Bỏ qua mắt. Chiều cao:",
+      "options": [
+        "25 m",
+        "12,5 m",
+        "25√2 m",
+        "50 m"
+      ],
+      "answer": 0,
+      "explanation": "25tan45°=25."
+    }
+  ],
+  "next_topic": {
+    "id": "19-duong-tron",
+    "title": "Chuyên đề 19 – Đường tròn"
+  }
+}

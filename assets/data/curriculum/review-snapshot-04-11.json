@@ -1,0 +1,568 @@
+{
+  "schema": "practice-skill-audit-snapshot-v1",
+  "date": "2026-09-26",
+  "phase": "manifest-only-unverified-question-tags",
+  "topics": [
+    {
+      "topic": "04-bieu-thuc-dai-so",
+      "manifest": "docs/assets/data/practice/04-bieu-thuc-dai-so-v2.manifest.json",
+      "manifest_sha": "bd0ebbfa60402d321d06f7ca6195e56d67f589bb",
+      "declared_questions": 132,
+      "skill_labels": {
+        "nhan-biet-don-thuc": "Nhận biết đơn thức",
+        "nhan-biet-da-thuc": "Nhận biết đa thức",
+        "he-so-bac": "Hệ số và bậc",
+        "hang-tu-dong-dang": "Hạng tử đồng dạng",
+        "thu-gon-da-thuc": "Thu gọn đa thức",
+        "cong-tru-da-thuc": "Cộng – trừ đa thức",
+        "bo-ngoac-dau": "Bỏ ngoặc và dấu",
+        "nhan-bieu-thuc": "Nhân biểu thức",
+        "tinh-phan-phoi": "Tính phân phối",
+        "tinh-gia-tri-bieu-thuc": "Tính giá trị biểu thức",
+        "dieu-kien-xac-dinh": "Điều kiện xác định",
+        "bien-doi-nhieu-buoc": "Biến đổi nhiều bước",
+        "lap-bieu-thuc": "Lập biểu thức",
+        "bai-toan-thuc-te": "Bài toán thực tế",
+        "chia-da-thuc-cho-don-thuc": "Chia đa thức cho đơn thức"
+      },
+      "skill_groups": [
+        {
+          "id": "nhan-biet-cau-truc",
+          "label": "A. Nhận biết cấu trúc",
+          "skills": [
+            "nhan-biet-don-thuc",
+            "nhan-biet-da-thuc",
+            "he-so-bac",
+            "hang-tu-dong-dang"
+          ]
+        },
+        {
+          "id": "bien-doi-co-ban",
+          "label": "B. Biến đổi cơ bản",
+          "skills": [
+            "thu-gon-da-thuc",
+            "cong-tru-da-thuc",
+            "bo-ngoac-dau"
+          ]
+        },
+        {
+          "id": "nhan-phan-phoi",
+          "label": "C. Nhân, phân phối và chia cho đơn thức",
+          "skills": [
+            "nhan-bieu-thuc",
+            "tinh-phan-phoi",
+            "chia-da-thuc-cho-don-thuc"
+          ]
+        },
+        {
+          "id": "gia-tri-dieu-kien",
+          "label": "D. Giá trị và điều kiện",
+          "skills": [
+            "tinh-gia-tri-bieu-thuc",
+            "dieu-kien-xac-dinh"
+          ]
+        },
+        {
+          "id": "tong-hop-ung-dung",
+          "label": "E. Tổng hợp và ứng dụng",
+          "skills": [
+            "bien-doi-nhieu-buoc",
+            "lap-bieu-thuc",
+            "bai-toan-thuc-te"
+          ]
+        }
+      ],
+      "sources": [
+        "04-bieu-thuc-dai-so-v2-01.json",
+        "04-bieu-thuc-dai-so-v2-02.json",
+        "04-bieu-thuc-dai-so-v2-03.json",
+        "04-bieu-thuc-dai-so-v2-04.json",
+        "04-bieu-thuc-dai-so-v2-05.json"
+      ]
+    },
+    {
+      "topic": "05-7-hang-dang-thuc",
+      "manifest": "docs/assets/data/practice/05-7-hang-dang-thuc-v1.manifest.json",
+      "manifest_sha": "f77d823b03395452aa8f722c9a0f2fd919e47c99",
+      "declared_questions": 120,
+      "skill_labels": {
+        "binh-phuong-tong": "Bình phương của một tổng",
+        "binh-phuong-hieu": "Bình phương của một hiệu",
+        "hieu-hai-binh-phuong": "Hiệu hai bình phương",
+        "lap-phuong-tong": "Lập phương của một tổng",
+        "lap-phuong-hieu": "Lập phương của một hiệu",
+        "tong-hai-lap-phuong": "Tổng hai lập phương",
+        "hieu-hai-lap-phuong": "Hiệu hai lập phương",
+        "nhan-dang-hdt": "Nhận dạng cấu trúc hằng đẳng thức",
+        "binh-phuong-hoan-chinh": "Nhận dạng bình phương hoàn chỉnh",
+        "nhan-dang-lap-phuong": "Nhận dạng cấu trúc lập phương",
+        "phan-tich-hdt": "Phân tích biểu thức bằng hằng đẳng thức",
+        "tinh-nhanh-hdt": "Tính nhanh bằng hằng đẳng thức",
+        "rut-gon-hdt": "Rút gọn bằng hằng đẳng thức",
+        "chung-minh-hdt": "Chứng minh đẳng thức",
+        "giai-phuong-trinh-hdt": "Giải phương trình bằng hằng đẳng thức"
+      },
+      "skill_groups": [
+        {
+          "id": "nhom-binh-phuong",
+          "label": "A. Nhóm bình phương",
+          "skills": [
+            "binh-phuong-tong",
+            "binh-phuong-hieu",
+            "hieu-hai-binh-phuong"
+          ]
+        },
+        {
+          "id": "nhom-lap-phuong",
+          "label": "B. Nhóm lập phương",
+          "skills": [
+            "lap-phuong-tong",
+            "lap-phuong-hieu",
+            "tong-hai-lap-phuong",
+            "hieu-hai-lap-phuong"
+          ]
+        },
+        {
+          "id": "nhan-dang-hai-chieu",
+          "label": "C. Nhận dạng hai chiều",
+          "skills": [
+            "nhan-dang-hdt",
+            "binh-phuong-hoan-chinh",
+            "nhan-dang-lap-phuong",
+            "phan-tich-hdt"
+          ]
+        },
+        {
+          "id": "van-dung-hdt",
+          "label": "D. Vận dụng hằng đẳng thức",
+          "skills": [
+            "tinh-nhanh-hdt",
+            "rut-gon-hdt",
+            "chung-minh-hdt",
+            "giai-phuong-trinh-hdt"
+          ]
+        }
+      ],
+      "sources": [
+        "05-7-hang-dang-thuc-v1-01.json",
+        "05-7-hang-dang-thuc-v1-02.json",
+        "05-7-hang-dang-thuc-v1-03.json",
+        "05-7-hang-dang-thuc-v1-04.json"
+      ]
+    },
+    {
+      "topic": "06-phan-tich-da-thuc",
+      "manifest": "docs/assets/data/practice/06-phan-tich-da-thuc-v1.manifest.json",
+      "manifest_sha": "2a4cb1d6492a3c1f66f7111035fab989a9a7f055",
+      "declared_questions": 120,
+      "skill_labels": {
+        "nhan-tu-chung": "Đặt nhân tử chung",
+        "doi-dau-nhan-tu-chung": "Đổi dấu để tạo nhân tử chung",
+        "hieu-hai-binh-phuong": "Hiệu hai bình phương",
+        "binh-phuong-hoan-chinh": "Bình phương hoàn chỉnh",
+        "tong-hieu-lap-phuong": "Tổng – hiệu hai lập phương",
+        "nhom-hang-tu": "Nhóm hạng tử",
+        "tach-hang-tu-giua": "Tách hạng tử giữa",
+        "phoi-hop-phuong-phap": "Phối hợp nhiều phương pháp",
+        "kiem-tra-phan-tich": "Kiểm tra kết quả phân tích",
+        "giai-pt-bang-nhan-tu": "Giải phương trình bằng nhân tử",
+        "ung-dung-phan-tich": "Vận dụng phân tích nhân tử"
+      },
+      "skill_groups": [
+        {
+          "id": "A",
+          "label": "A. Đặt nhân tử chung",
+          "skills": [
+            "nhan-tu-chung",
+            "doi-dau-nhan-tu-chung"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "B. Dùng hằng đẳng thức",
+          "skills": [
+            "hieu-hai-binh-phuong",
+            "binh-phuong-hoan-chinh",
+            "tong-hieu-lap-phuong"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "C. Nhóm và tách hạng tử",
+          "skills": [
+            "nhom-hang-tu",
+            "tach-hang-tu-giua"
+          ]
+        },
+        {
+          "id": "D",
+          "label": "D. Phối hợp và vận dụng",
+          "skills": [
+            "phoi-hop-phuong-phap",
+            "kiem-tra-phan-tich",
+            "giai-pt-bang-nhan-tu",
+            "ung-dung-phan-tich"
+          ]
+        }
+      ],
+      "sources": [
+        "06-phan-tich-da-thuc-v1-01.json",
+        "06-phan-tich-da-thuc-v1-02.json",
+        "06-phan-tich-da-thuc-v1-03.json",
+        "06-phan-tich-da-thuc-v1-04.json"
+      ]
+    },
+    {
+      "topic": "07-phan-thuc-dai-so",
+      "manifest": "docs/assets/data/practice/07-phan-thuc-dai-so-v1.manifest.json",
+      "manifest_sha": "5939cac274f5133c474423b949340d136e976e5d",
+      "declared_questions": 120,
+      "skill_labels": {
+        "nhan-biet-phan-thuc": "Nhận biết phân thức",
+        "dieu-kien-xac-dinh": "Điều kiện xác định",
+        "hai-phan-thuc-bang-nhau": "Hai phân thức bằng nhau",
+        "doi-dau-phan-thuc": "Đổi dấu phân thức",
+        "phan-tich-tu-mau": "Phân tích tử và mẫu",
+        "rut-gon-phan-thuc": "Rút gọn phân thức",
+        "giu-dieu-kien-ban-dau": "Giữ điều kiện xác định ban đầu",
+        "quy-dong-mau-thuc": "Quy đồng mẫu thức",
+        "cong-tru-phan-thuc": "Cộng – trừ phân thức",
+        "nhan-phan-thuc": "Nhân phân thức",
+        "chia-phan-thuc": "Chia phân thức",
+        "bieu-thuc-nhieu-phep-tinh": "Biểu thức hữu tỉ nhiều phép tính",
+        "tinh-gia-tri-phan-thuc": "Tính giá trị phân thức",
+        "tim-gia-tri-nguyen": "Tìm giá trị nguyên"
+      },
+      "skill_groups": [
+        {
+          "id": "A",
+          "label": "A. Khái niệm và điều kiện xác định",
+          "skills": [
+            "nhan-biet-phan-thuc",
+            "dieu-kien-xac-dinh",
+            "hai-phan-thuc-bang-nhau",
+            "doi-dau-phan-thuc"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "B. Rút gọn phân thức",
+          "skills": [
+            "phan-tich-tu-mau",
+            "rut-gon-phan-thuc",
+            "giu-dieu-kien-ban-dau"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "C. Quy đồng và phép tính",
+          "skills": [
+            "quy-dong-mau-thuc",
+            "cong-tru-phan-thuc",
+            "nhan-phan-thuc",
+            "chia-phan-thuc"
+          ]
+        },
+        {
+          "id": "D",
+          "label": "D. Biểu thức hữu tỉ và vận dụng",
+          "skills": [
+            "bieu-thuc-nhieu-phep-tinh",
+            "tinh-gia-tri-phan-thuc",
+            "tim-gia-tri-nguyen"
+          ]
+        }
+      ],
+      "sources": [
+        "07-phan-thuc-dai-so-v1-01.json",
+        "07-phan-thuc-dai-so-v1-02.json",
+        "07-phan-thuc-dai-so-v1-03.json",
+        "07-phan-thuc-dai-so-v1-04.json"
+      ]
+    },
+    {
+      "topic": "08-phuong-trinh-bat-phuong-trinh",
+      "manifest": "docs/assets/data/practice/08-phuong-trinh-bat-phuong-trinh-v1.manifest.json",
+      "manifest_sha": "2c6da84472485b3f13805785cd3ff9f039dace13",
+      "declared_questions": 132,
+      "skill_labels": {
+        "nghiem-phuong-trinh": "Khái niệm nghiệm phương trình",
+        "pt-bac-nhat": "Phương trình bậc nhất",
+        "bien-doi-pt-nhieu-buoc": "Biến đổi phương trình nhiều bước",
+        "pt-tich": "Phương trình tích",
+        "dkxd-phuong-trinh-mau": "Điều kiện xác định phương trình chứa mẫu",
+        "khu-mau-phuong-trinh": "Khử mẫu và giải phương trình",
+        "doi-chieu-nghiem": "Đối chiếu nghiệm với điều kiện",
+        "bpt-bac-nhat": "Bất phương trình bậc nhất",
+        "doi-chieu-bpt": "Đổi chiều bất phương trình",
+        "bieu-dien-tap-nghiem": "Biểu diễn tập nghiệm",
+        "giao-tap-nghiem": "Giao các tập nghiệm",
+        "lap-phuong-trinh": "Lập phương trình từ bài toán",
+        "lap-bat-phuong-trinh": "Lập bất phương trình từ bài toán",
+        "tham-so-co-ban": "Biện luận tham số cơ bản",
+        "bat-dang-thuc": "Khái niệm bất đẳng thức",
+        "tinh-chat-thu-tu-phep-cong": "Tính chất thứ tự với phép cộng",
+        "tinh-chat-thu-tu-phep-nhan": "Tính chất thứ tự với phép nhân"
+      },
+      "skill_groups": [
+        {
+          "id": "A",
+          "label": "A. Phương trình cơ bản và phương trình tích",
+          "skills": [
+            "nghiem-phuong-trinh",
+            "pt-bac-nhat",
+            "bien-doi-pt-nhieu-buoc",
+            "pt-tich"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "B. Phương trình chứa ẩn ở mẫu",
+          "skills": [
+            "dkxd-phuong-trinh-mau",
+            "khu-mau-phuong-trinh",
+            "doi-chieu-nghiem"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "C. Bất phương trình và tập nghiệm",
+          "skills": [
+            "tinh-chat-thu-tu-phep-nhan",
+            "tinh-chat-thu-tu-phep-cong",
+            "bat-dang-thuc",
+            "bpt-bac-nhat",
+            "doi-chieu-bpt",
+            "bieu-dien-tap-nghiem",
+            "giao-tap-nghiem"
+          ]
+        },
+        {
+          "id": "D",
+          "label": "D. Mô hình hóa và tham số",
+          "skills": [
+            "lap-phuong-trinh",
+            "lap-bat-phuong-trinh",
+            "tham-so-co-ban"
+          ]
+        }
+      ],
+      "sources": [
+        "08-phuong-trinh-bat-phuong-trinh-v1-01.json",
+        "08-phuong-trinh-bat-phuong-trinh-v1-02.json",
+        "08-phuong-trinh-bat-phuong-trinh-v1-03.json",
+        "08-phuong-trinh-bat-phuong-trinh-v1-04.json",
+        "08-phuong-trinh-bat-phuong-trinh-v1-05.json"
+      ]
+    },
+    {
+      "topic": "09-he-phuong-trinh",
+      "manifest": "docs/assets/data/practice/09-he-phuong-trinh-v1.manifest.json",
+      "manifest_sha": "55d912926602a532120e13f7ef7cb38e720103fd",
+      "declared_questions": 120,
+      "skill_labels": {
+        "nghiem-pt-hai-an": "Nghiệm của phương trình bậc nhất hai ẩn",
+        "nghiem-he": "Nghiệm của hệ phương trình",
+        "so-nghiem-he": "Số nghiệm của hệ",
+        "y-nghia-hinh-hoc": "Ý nghĩa hình học của hệ",
+        "giai-he-the": "Giải hệ bằng phương pháp thế",
+        "giai-he-cong": "Giải hệ bằng cộng đại số",
+        "chon-phuong-phap": "Chọn phương pháp giải phù hợp",
+        "bien-doi-truoc-giai": "Biến đổi hệ trước khi giải",
+        "kiem-tra-nghiem-he": "Kiểm tra nghiệm của hệ",
+        "tham-so-he": "Hệ phương trình có tham số",
+        "lap-he-bai-toan": "Lập hệ từ bài toán",
+        "bai-toan-so": "Bài toán về số",
+        "chuyen-dong-he": "Bài toán chuyển động",
+        "nang-suat-he": "Bài toán năng suất – giá trị"
+      },
+      "skill_groups": [
+        {
+          "id": "A",
+          "label": "A. Nền tảng về hệ",
+          "skills": [
+            "nghiem-pt-hai-an",
+            "nghiem-he",
+            "so-nghiem-he",
+            "y-nghia-hinh-hoc"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "B. Phương pháp giải hệ",
+          "skills": [
+            "giai-he-the",
+            "giai-he-cong",
+            "chon-phuong-phap",
+            "bien-doi-truoc-giai"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "C. Kiểm tra và tham số",
+          "skills": [
+            "kiem-tra-nghiem-he",
+            "tham-so-he"
+          ]
+        },
+        {
+          "id": "D",
+          "label": "D. Lập hệ và bài toán thực tế",
+          "skills": [
+            "lap-he-bai-toan",
+            "bai-toan-so",
+            "chuyen-dong-he",
+            "nang-suat-he"
+          ]
+        }
+      ],
+      "sources": [
+        "09-he-phuong-trinh-v1-01.json",
+        "09-he-phuong-trinh-v1-02.json",
+        "09-he-phuong-trinh-v1-03.json",
+        "09-he-phuong-trinh-v1-04.json"
+      ]
+    },
+    {
+      "topic": "10-ham-so-do-thi",
+      "manifest": "docs/assets/data/practice/10-ham-so-do-thi-v1.manifest.json",
+      "manifest_sha": "15f7acaa8eb46c2775bb495f1d8dd03e4957dd7c",
+      "declared_questions": 120,
+      "skill_labels": {
+        "khai-niem-ham-so": "Khái niệm hàm số",
+        "tinh-gia-tri-ham": "Tính giá trị hàm số",
+        "bang-gia-tri": "Bảng giá trị",
+        "toa-do-diem": "Tọa độ điểm",
+        "diem-thuoc-do-thi": "Điểm thuộc đồ thị",
+        "nhan-biet-ham-bac-nhat": "Nhận biết hàm số bậc nhất",
+        "he-so-goc": "Hệ số góc",
+        "tung-do-goc": "Tung độ gốc",
+        "dong-nghich-bien": "Đồng biến – nghịch biến",
+        "ve-do-thi-ham-bac-nhat": "Vẽ đồ thị hàm số bậc nhất",
+        "vi-tri-hai-duong-thang": "Vị trí tương đối hai đường thẳng",
+        "giao-diem-do-thi": "Giao điểm hai đồ thị",
+        "lien-he-he-phuong-trinh": "Liên hệ với hệ phương trình",
+        "ham-y-ax2": "Hàm số y = ax²",
+        "doi-xung-parabol": "Tính đối xứng và hướng mở parabol",
+        "diem-thuoc-parabol": "Điểm thuộc parabol"
+      },
+      "skill_groups": [
+        {
+          "id": "A",
+          "label": "A. Hàm số và tọa độ",
+          "skills": [
+            "khai-niem-ham-so",
+            "tinh-gia-tri-ham",
+            "bang-gia-tri",
+            "toa-do-diem",
+            "diem-thuoc-do-thi"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "B. Hàm số bậc nhất",
+          "skills": [
+            "nhan-biet-ham-bac-nhat",
+            "he-so-goc",
+            "tung-do-goc",
+            "dong-nghich-bien",
+            "ve-do-thi-ham-bac-nhat"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "C. Hai đường thẳng và giao điểm",
+          "skills": [
+            "vi-tri-hai-duong-thang",
+            "giao-diem-do-thi",
+            "lien-he-he-phuong-trinh"
+          ]
+        },
+        {
+          "id": "D",
+          "label": "D. Mở rộng parabol",
+          "skills": [
+            "ham-y-ax2",
+            "doi-xung-parabol",
+            "diem-thuoc-parabol"
+          ]
+        }
+      ],
+      "sources": [
+        "10-ham-so-do-thi-v1-01.json",
+        "10-ham-so-do-thi-v1-02.json",
+        "10-ham-so-do-thi-v1-03.json",
+        "10-ham-so-do-thi-v1-04.json"
+      ]
+    },
+    {
+      "topic": "11-can-thuc",
+      "manifest": "docs/assets/data/practice/11-can-thuc-v1.manifest.json",
+      "manifest_sha": "8cac7a5ce97010089c30d5bea25f3f3030c6a043",
+      "declared_questions": 132,
+      "skill_labels": {
+        "can-bac-hai-so-hoc": "Căn bậc hai số học",
+        "dkxd-can": "Điều kiện xác định của căn thức",
+        "can-binh-phuong": "Căn của bình phương và giá trị tuyệt đối",
+        "khai-phuong-tich": "Khai phương một tích",
+        "khai-phuong-thuong": "Khai phương một thương",
+        "dua-thua-so-ra": "Đưa thừa số ra ngoài dấu căn",
+        "dua-thua-so-vao": "Đưa thừa số vào trong dấu căn",
+        "can-dong-dang": "Cộng trừ căn đồng dạng",
+        "nhan-chia-can": "Nhân chia căn thức",
+        "truc-can-mau-don": "Trục căn thức ở mẫu dạng đơn",
+        "truc-can-lien-hop": "Trục căn thức bằng liên hợp",
+        "tim-x-can": "Tìm x trong phương trình chứa căn",
+        "so-sanh-can": "So sánh biểu thức căn",
+        "can-bac-ba": "Căn bậc ba"
+      },
+      "skill_groups": [
+        {
+          "id": "A",
+          "label": "A. Căn bậc hai và điều kiện",
+          "skills": [
+            "can-bac-hai-so-hoc",
+            "dkxd-can",
+            "can-binh-phuong",
+            "can-bac-ba"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "B. Biến đổi căn thức",
+          "skills": [
+            "khai-phuong-tich",
+            "khai-phuong-thuong",
+            "dua-thua-so-ra",
+            "dua-thua-so-vao"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "C. Phép tính và trục căn thức",
+          "skills": [
+            "can-dong-dang",
+            "nhan-chia-can",
+            "truc-can-mau-don",
+            "truc-can-lien-hop"
+          ]
+        },
+        {
+          "id": "D",
+          "label": "D. Vận dụng căn thức",
+          "skills": [
+            "tim-x-can",
+            "so-sanh-can"
+          ]
+        }
+      ],
+      "sources": [
+        "11-can-thuc-v1-01.json",
+        "11-can-thuc-v1-02.json",
+        "11-can-thuc-v1-03.json",
+        "11-can-thuc-v1-04.json",
+        "11-can-thuc-v1-05.json"
+      ]
+    }
+  ]
+}

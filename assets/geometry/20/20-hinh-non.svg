@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-labelledby="title desc">
+  <title id="title">Hình nón với bán kính r, chiều cao h và đường sinh l</title>
+  <desc id="desc">Hình nón tròn xoay có đỉnh S, tâm đáy O; SO là chiều cao h, bán kính đáy là r và đường sinh từ S đến mép đáy là l.</desc>
+  <rect width="640" height="440" fill="white"/>
+  <g stroke="#1f2937" stroke-width="4" fill="#eef4fb" stroke-linejoin="round">
+    <path d="M320 55 L165 315 C165 365 475 365 475 315 Z" fill="#f8fafc"/>
+    <ellipse cx="320" cy="315" rx="155" ry="50" fill="#dbeafe"/>
+    <path d="M165 315 C165 265 475 265 475 315" fill="none" stroke-dasharray="10 8"/>
+  </g>
+  <g stroke="#c2410c" stroke-width="3.5" fill="none" stroke-linecap="round">
+    <path d="M320 55 L320 315" stroke-dasharray="10 8"/>
+  </g>
+  <g stroke="#2563eb" stroke-width="3.5" fill="none" stroke-linecap="round">
+    <path d="M320 315 L455 315"/>
+    <path d="M320 55 L475 315"/>
+  </g>
+  <g fill="#111827" font-family="Arial, sans-serif">
+    <circle cx="320" cy="315" r="5"/>
+    <text x="330" y="338" font-size="23">O</text>
+    <text x="307" y="40" font-size="26" font-weight="700">S</text>
+    <text x="284" y="190" font-size="30" font-weight="700" fill="#c2410c">h</text>
+    <text x="383" y="302" font-size="30" font-weight="700" fill="#2563eb">r</text>
+    <text x="418" y="170" font-size="30" font-weight="700" fill="#2563eb">l</text>
+  </g>
+</svg>

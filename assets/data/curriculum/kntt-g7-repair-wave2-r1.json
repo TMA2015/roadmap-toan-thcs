@@ -1,0 +1,170 @@
+{
+  "packet_id": "MATH-KNTT-G7-REPAIR-W2-R1-20261008",
+  "as_of": "2026-10-08",
+  "status": "ACADEMIC_CONTENT_REVIEW_PASS",
+  "scope": "Grade-7 KNTT Repair Wave 2 candidate implementation for Bài 4, Bài 18-19, Bài 22-23; Learn + Micro only",
+  "prior_clearance": {
+    "packet_id": "MATH-KNTT-G7-REPAIR-WAVE2-SCOPE-R1-20261008",
+    "clearance": "G7_REPAIR_WAVE2_SCOPE_R1_REVIEW_COMPLETE",
+    "second_repair_wave": [
+      "BAI4",
+      "BAI18_19",
+      "BAI22_23"
+    ],
+    "dimensions": {
+      "BAI4": [
+        "LEARN",
+        "MICRO"
+      ],
+      "BAI18_19": [
+        "MICRO"
+      ],
+      "BAI22_23": [
+        "LEARN",
+        "MICRO"
+      ]
+    },
+    "max_groups": 3
+  },
+  "source_locks": {
+    "docs/assets/data/curriculum/topic02-learning-workspace.json": {
+      "sha": "54ae882e72572b68825d31b944a9ddc809336f7c"
+    },
+    "docs/assets/data/practice/02-so-va-phep-tinh-micro-v1.json": {
+      "sha": "61c1e4ef1e2f0d44476c6f34f48fd7bbcce24622"
+    },
+    "docs/assets/data/curriculum/topic03-learning-workspace.json": {
+      "sha": "5fe659cc35bd50ad9d811c00fd59ace3e7914ab2"
+    },
+    "docs/assets/data/practice/03-ti-le-ti-le-thuc-micro-v1.json": {
+      "sha": "303dc424e94db8de6271aaef279d8f8d07fa088a"
+    },
+    "docs/assets/data/curriculum/topic21-learning-workspace.json": {
+      "sha": "85b781e3ff04dc92aefa82d036fa686e8dbc4ec7"
+    },
+    "docs/assets/data/practice/21-thong-ke-micro-v1.json": {
+      "sha": "5e20af551bc8215348711ccb02c251695fccdb23"
+    },
+    "docs/assets/data/curriculum/kntt-g7-repair-wave2-scope-r1.json": {
+      "sha": "4c491dad36e7272d6baf16b038d276302c26b7fc"
+    },
+    "review-packets/kntt-g7-repair-wave2-scope-r1/01_NOTEBOOKLM_RESULT_R1.md": {
+      "sha": "093fea116d9d8ef435958ecd32864d724a647553"
+    }
+  },
+  "notebooklm_source_contract": {
+    "selected_source_count": 5,
+    "permanent_sources": [
+      "NotebookLM Math Review Rules v1.2",
+      "Self-Learning Math Master Plan v1.2.1"
+    ],
+    "grade7_s1_sources": [
+      "SGK Toán 7, tập một — Kết nối tri thức với cuộc sống",
+      "SGK Toán 7, tập hai — Kết nối tri thức với cuộc sống"
+    ],
+    "temporary_batch_sources": [
+      "00_NOTEBOOKLM_PACKET_R1.md — NotebookLM Review Packet — Grade 7 Repair Wave 2 R1"
+    ],
+    "rule": "2 permanent + 2 Grade-7 SGK + 1 temporary packet = exactly 5 selected Sources."
+  },
+  "counts": {
+    "lesson_groups": 3,
+    "learn_cards": 2,
+    "micro_items": 12,
+    "practice_items": 0,
+    "written_items": 0,
+    "readiness_items": 0,
+    "new_canonical_skills": 0
+  },
+  "candidates": {
+    "BAI4": {
+      "priority": "P1",
+      "dimensions": [
+        "LEARN",
+        "MICRO"
+      ],
+      "canonical_skills": [
+        "thu-tu-phep-tinh"
+      ],
+      "lesson_local_refs": [
+        "quy-tac-chuyen-ve"
+      ],
+      "learn_card_id": "num02-g7-core-3",
+      "micro_ids": [
+        "NUM02MICRO_061",
+        "NUM02MICRO_062",
+        "NUM02MICRO_063",
+        "NUM02MICRO_064"
+      ]
+    },
+    "BAI18_19": {
+      "priority": "P1",
+      "dimensions": [
+        "MICRO"
+      ],
+      "canonical_skills": [
+        "chuyen-bang-bieu-do"
+      ],
+      "learn_card_id": null,
+      "micro_ids": [
+        "STA21MICRO_021",
+        "STA21MICRO_022",
+        "STA21MICRO_023",
+        "STA21MICRO_024"
+      ]
+    },
+    "BAI22_23": {
+      "priority": "P1",
+      "dimensions": [
+        "LEARN",
+        "MICRO"
+      ],
+      "canonical_skills": [
+        "mo-hinh-ti-le"
+      ],
+      "learn_card_id": "rat03-core-g7-6",
+      "micro_ids": [
+        "RAT03MICRO_016",
+        "RAT03MICRO_017",
+        "RAT03MICRO_018",
+        "RAT03MICRO_019"
+      ]
+    }
+  },
+  "protected_boundaries": {
+    "mutate_practice_bank": false,
+    "mutate_written_library": false,
+    "mutate_readiness": false,
+    "create_canonical_skill": false,
+    "promote_lesson_local_to_global": false,
+    "change_mastery": false,
+    "regrade_learner_history": false,
+    "runtime_taxonomy_change": false
+  },
+  "next_step": {
+    "status": "ACADEMIC_PASS_AWAIT_REPOSITORY_QA",
+    "merge_requires_repository_qa": true
+  },
+  "independent_review": {
+    "reviewer": "NotebookLM",
+    "verdict": "PASS",
+    "clearance": "G7_REPAIR_W2_R1_CONTENT_REVIEW_COMPLETE",
+    "reviewed_groups": 3,
+    "content_counts": {
+      "learn": 2,
+      "micro": 12,
+      "practice": 0,
+      "written": 0,
+      "readiness": 0
+    },
+    "boundaries": {
+      "no_practice": "PASS",
+      "no_written": "PASS",
+      "no_readiness": "PASS",
+      "no_new_canonical_skill": "PASS",
+      "transposition_lesson_local": "PASS"
+    },
+    "receipt": "review-packets/kntt-g7-repair-wave2-r1/01_NOTEBOOKLM_RESULT_R1.md",
+    "reviewed_on": "2026-10-08"
+  }
+}

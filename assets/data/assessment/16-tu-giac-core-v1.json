@@ -1,0 +1,230 @@
+{
+  "schema": "roadmap-readiness-assessment-v1",
+  "version": 1,
+  "assessment_id": "GEO16-CORE-READY-V1",
+  "topic": {
+    "id": "16-tu-giac",
+    "title": "Chuyên đề 16 – Tứ giác và các hình đặc biệt"
+  },
+  "layer": "KNTT-Core",
+  "title": "Core Readiness Check – Chuyên đề 16 – Tứ giác và các hình đặc biệt",
+  "skill_labels": {
+    "tong-goc-tu-giac": "tong-goc-tu-giac",
+    "hinh-thang": "hinh-thang",
+    "hinh-thang-can": "hinh-thang-can",
+    "hbh-tinh-chat": "hbh-tinh-chat",
+    "hbh-dau-hieu": "hbh-dau-hieu",
+    "hcn-tinh-chat": "hcn-tinh-chat",
+    "hcn-dau-hieu": "hcn-dau-hieu",
+    "hthoi-tinh-chat": "hthoi-tinh-chat",
+    "hthoi-dau-hieu": "hthoi-dau-hieu",
+    "hvuong-tinh-chat": "hvuong-tinh-chat",
+    "hvuong-dau-hieu": "hvuong-dau-hieu",
+    "quan-he-bao-ham": "quan-he-bao-ham",
+    "duong-cheo-suy-luan": "duong-cheo-suy-luan"
+  },
+  "policy": {
+    "feedback": "after_submit",
+    "hints": false,
+    "tutor": false,
+    "hard_gate": false,
+    "target_minutes": 20,
+    "allow_partial_submit": true
+  },
+  "readiness": {
+    "ready_threshold": 0.8,
+    "minimum_answered_ratio": 0.8,
+    "hard_gate": false,
+    "states": [
+      "READY",
+      "REVIEW_RECOMMENDED",
+      "MORE_EVIDENCE_NEEDED"
+    ]
+  },
+  "items": [
+    {
+      "id": "GEO16READY_001",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "tong-goc-tu-giac",
+      "skill": "tong-goc-tu-giac",
+      "points": 1,
+      "question": "Ba góc tứ giác là 70°,80°,100°. Góc còn lại:",
+      "options": [
+        "110°",
+        "90°",
+        "100°",
+        "120°"
+      ],
+      "answer": 0,
+      "explanation": "360-250=110."
+    },
+    {
+      "id": "GEO16READY_002",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "hinh-thang-can",
+      "skill": "hinh-thang-can",
+      "points": 1,
+      "question": "Trong hình thang cân, hai đường chéo:",
+      "options": [
+        "Bằng nhau",
+        "Vuông góc",
+        "Không bằng nhau",
+        "Luôn là phân giác"
+      ],
+      "answer": 0,
+      "explanation": "Tính chất hình thang cân."
+    },
+    {
+      "id": "GEO16READY_003",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "hbh-dau-hieu",
+      "skill": "hbh-dau-hieu",
+      "points": 1,
+      "question": "Hai đường chéo cắt tại trung điểm mỗi đường →",
+      "options": [
+        "Hình bình hành",
+        "Hình chữ nhật",
+        "Hình thoi",
+        "Hình thang cân"
+      ],
+      "answer": 0,
+      "explanation": "Dấu hiệu hình bình hành."
+    },
+    {
+      "id": "GEO16READY_004",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "hbh-tinh-chat",
+      "skill": "hbh-tinh-chat",
+      "points": 1,
+      "question": "Trong hình bình hành, các cạnh đối:",
+      "options": [
+        "Song song và bằng nhau",
+        "Vuông góc",
+        "Không bằng nhau",
+        "Chỉ song song"
+      ],
+      "answer": 0,
+      "explanation": "Tính chất hình bình hành."
+    },
+    {
+      "id": "GEO16READY_005",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "hcn-dau-hieu",
+      "skill": "hcn-dau-hieu",
+      "points": 1,
+      "question": "Hình bình hành có một góc vuông:",
+      "options": [
+        "Hình chữ nhật",
+        "Hình thoi",
+        "Hình thang",
+        "Tam giác"
+      ],
+      "answer": 0,
+      "explanation": "Dấu hiệu hình chữ nhật."
+    },
+    {
+      "id": "GEO16READY_006",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "hcn-tinh-chat",
+      "skill": "hcn-tinh-chat",
+      "points": 1,
+      "question": "Đường chéo hình chữ nhật:",
+      "options": [
+        "Bằng nhau",
+        "Luôn vuông góc",
+        "Không cắt nhau",
+        "Không qua trung điểm"
+      ],
+      "answer": 0,
+      "explanation": "Hai đường chéo bằng nhau."
+    },
+    {
+      "id": "GEO16READY_007",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "hthoi-dau-hieu",
+      "skill": "hthoi-dau-hieu",
+      "points": 1,
+      "question": "Hình bình hành có chéo vuông góc:",
+      "options": [
+        "Hình thoi",
+        "Hình chữ nhật",
+        "Hình thang cân",
+        "Không xác định"
+      ],
+      "answer": 0,
+      "explanation": "Dấu hiệu hình thoi."
+    },
+    {
+      "id": "GEO16READY_008",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "hthoi-tinh-chat",
+      "skill": "hthoi-tinh-chat",
+      "points": 1,
+      "question": "Đường chéo hình thoi:",
+      "options": [
+        "Vuông góc",
+        "Luôn bằng nhau",
+        "Không cắt nhau",
+        "Không phân giác góc"
+      ],
+      "answer": 0,
+      "explanation": "Tính chất hình thoi."
+    },
+    {
+      "id": "GEO16READY_009",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "quan-he-bao-ham",
+      "skill": "quan-he-bao-ham",
+      "points": 1,
+      "question": "Khẳng định đúng:",
+      "options": [
+        "Mọi hình vuông là hình chữ nhật",
+        "Mọi hình chữ nhật là hình vuông",
+        "Mọi hình thoi là hình vuông",
+        "Mọi hình thang là hình bình hành"
+      ],
+      "answer": 0,
+      "explanation": "Bao hàm một chiều."
+    },
+    {
+      "id": "GEO16READY_010",
+      "type": "mcq",
+      "geometry_role": "conceptual",
+      "givens": [],
+      "target": "duong-cheo-suy-luan",
+      "skill": "duong-cheo-suy-luan",
+      "points": 1,
+      "question": "Hình bình hành có chéo bằng nhau và vuông góc:",
+      "options": [
+        "Hình vuông",
+        "Chỉ chữ nhật",
+        "Chỉ thoi",
+        "Hình thang"
+      ],
+      "answer": 0,
+      "explanation": "Vừa chữ nhật vừa thoi → vuông."
+    }
+  ],
+  "next_topic": {
+    "id": "17-thales-dong-dang",
+    "title": "Chuyên đề 17 – Thales và tam giác đồng dạng"
+  }
+}

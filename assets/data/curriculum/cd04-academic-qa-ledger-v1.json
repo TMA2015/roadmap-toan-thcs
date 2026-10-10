@@ -1,0 +1,1346 @@
+{
+  "schema": "cd04-academic-qa-ledger-v1",
+  "topic": "04-bieu-thuc-dai-so",
+  "date": "2026-09-26",
+  "status": "answer_checks_completed_primary_mapping_not_approved",
+  "source_overlay": "primary-skill-overlay-draft-04-bieu-thuc-dai-so-v1.json",
+  "method_limits": [
+    "Numeric oracle uses finite fixed variable samples for 92 polynomial or rational expressions; it is a regression check rather than proof of arbitrary symbolic identity.",
+    "Manual expected answer review covers remaining 40 concept, domain, and application questions; no claim of independent Gemini/teacher sign-off.",
+    "Mapping remains review_only; 2 semantic tag mismatches have not been migrated.",
+    "Original ID, options, answer index, legacy tags and attempt history remain unchanged."
+  ],
+  "counts": {
+    "total": 132,
+    "numeric_checked": 92,
+    "manual_reviewed": 40,
+    "clarified": 8,
+    "taxonomy_pending": 2
+  },
+  "items": [
+    {
+      "question_id": "ALG04V2_001",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "he-so-bac",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_002",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "he-so-bac",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_003",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "he-so-bac",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_004",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "he-so-bac",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_005",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-biet-don-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_006",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-biet-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_007",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "he-so-bac",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_008",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "he-so-bac",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_009",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-biet-da-thuc",
+      "primary_skill_qa": "pending_semantic_tag_decision",
+      "notes": [
+        "Broad legacy nhan-biet-da-thuc tag actually asks for the free term; no new mastery ID inferred."
+      ],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_010",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-biet-don-thuc",
+      "primary_skill_qa": "pending_semantic_tag_decision",
+      "notes": [
+        "Extra legacy he-so-bac tag does not match question about variable part; do not count as coefficient or degree."
+      ],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_011",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "he-so-bac",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_012",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_013",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "hang-tu-dong-dang",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_014",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "hang-tu-dong-dang",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_015",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "hang-tu-dong-dang",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_016",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "hang-tu-dong-dang",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_017",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "hang-tu-dong-dang",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_018",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "hang-tu-dong-dang",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_019",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "hang-tu-dong-dang",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_020",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "hang-tu-dong-dang",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_021",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_022",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_023",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_024",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_025",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_026",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_027",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_028",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_029",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_030",
+      "source_file": "04-bieu-thuc-dai-so-v2-01.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_031",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_032",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_033",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_034",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_035",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_036",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "thu-gon-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_037",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_038",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_039",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_040",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_041",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_042",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_043",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_044",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_045",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_046",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_047",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_048",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_049",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_050",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "cong-tru-da-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_051",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_052",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_053",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_054",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_055",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_056",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_057",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_058",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_059",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_060",
+      "source_file": "04-bieu-thuc-dai-so-v2-02.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_061",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_062",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_063",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_064",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_065",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_066",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_067",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_068",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_069",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_070",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_071",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_072",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_073",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_074",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_075",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_076",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "nhan-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_077",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "tinh-gia-tri-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_078",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "tinh-gia-tri-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_079",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "tinh-gia-tri-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_080",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "tinh-gia-tri-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_081",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "tinh-gia-tri-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_082",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "tinh-gia-tri-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_083",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "tinh-gia-tri-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_084",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "tinh-gia-tri-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_085",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "tinh-gia-tri-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_086",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "tinh-gia-tri-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_087",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "tinh-gia-tri-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_088",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "tinh-gia-tri-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_089",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "dieu-kien-xac-dinh",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_090",
+      "source_file": "04-bieu-thuc-dai-so-v2-03.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "dieu-kien-xac-dinh",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_091",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "dieu-kien-xac-dinh",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_092",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "dieu-kien-xac-dinh",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_093",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "dieu-kien-xac-dinh",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_094",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "dieu-kien-xac-dinh",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_095",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "dieu-kien-xac-dinh",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_096",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "dieu-kien-xac-dinh",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_097",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "dieu-kien-xac-dinh",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_098",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "dieu-kien-xac-dinh",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_099",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "bien-doi-nhieu-buoc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_100",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "bien-doi-nhieu-buoc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_101",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "bien-doi-nhieu-buoc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_102",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "bien-doi-nhieu-buoc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_103",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "bien-doi-nhieu-buoc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_104",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "bien-doi-nhieu-buoc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_105",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "bien-doi-nhieu-buoc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_106",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "bien-doi-nhieu-buoc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_107",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "bien-doi-nhieu-buoc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_108",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "bien-doi-nhieu-buoc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_109",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "bien-doi-nhieu-buoc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_110",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "bien-doi-nhieu-buoc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_111",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "lap-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": "explicit_positive_rectangle_width"
+    },
+    {
+      "question_id": "ALG04V2_112",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "lap-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_113",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "lap-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_114",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "lap-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_115",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "lap-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_116",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "lap-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": "explicit_triangle_inequality"
+    },
+    {
+      "question_id": "ALG04V2_117",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "lap-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": "explicit_nonnegative_discounted_price"
+    },
+    {
+      "question_id": "ALG04V2_118",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "lap-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_119",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "lap-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_120",
+      "source_file": "04-bieu-thuc-dai-so-v2-04.json",
+      "answer_check": "reviewed_explicit_expected_answer",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "lap-bieu-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_121",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "chia-da-thuc-cho-don-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_122",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "chia-da-thuc-cho-don-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_123",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "chia-da-thuc-cho-don-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": "explicit_nonzero_divisor"
+    },
+    {
+      "question_id": "ALG04V2_124",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "chia-da-thuc-cho-don-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_125",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "chia-da-thuc-cho-don-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": "explicit_nonzero_divisor"
+    },
+    {
+      "question_id": "ALG04V2_126",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "chia-da-thuc-cho-don-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_127",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "chia-da-thuc-cho-don-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_128",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "chia-da-thuc-cho-don-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": "explicit_nonzero_divisor"
+    },
+    {
+      "question_id": "ALG04V2_129",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "chia-da-thuc-cho-don-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": "explicit_nonzero_divisor"
+    },
+    {
+      "question_id": "ALG04V2_130",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "chia-da-thuc-cho-don-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": "explicit_nonzero_divisor"
+    },
+    {
+      "question_id": "ALG04V2_131",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "chia-da-thuc-cho-don-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    },
+    {
+      "question_id": "ALG04V2_132",
+      "source_file": "04-bieu-thuc-dai-so-v2-05.json",
+      "answer_check": "numeric_algebra_oracle_four_samples",
+      "answer_status": "checked_with_stated_method",
+      "primary_skill_candidate": "chia-da-thuc-cho-don-thuc",
+      "primary_skill_qa": "candidate_requires_independent_semantic_validation",
+      "notes": [],
+      "text_clarification": null
+    }
+  ]
+}
