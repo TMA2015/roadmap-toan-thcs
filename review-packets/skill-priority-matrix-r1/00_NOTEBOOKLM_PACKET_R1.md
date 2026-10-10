@@ -20,15 +20,19 @@ This directly addresses the risk of treating every family as equally important m
 
 ## Required sources
 
-Select exactly **13 NotebookLM Sources**:
+Use exactly **13 selected NotebookLM Sources**:
+
+**Already present / keep selected**
 1. current Master Plan v1.2.1;
 2. NotebookLM Math Review Rules v1.2;
-3. this packet, `00_NOTEBOOKLM_PACKET_R1.md`;
-4. `04_SKILL_PRIORITY_MATRIX_R1_NOTEBOOKLM_SOURCE.md`;
-5. `05_EXAM_FREQUENCY_HANOI_SEED_R1_NOTEBOOKLM_SOURCE.md`;
-6–13. KNTT Math textbooks Grades 6, 7, 8, 9 — both volumes.
+3–10. KNTT Math textbooks Grades 6, 7, 8, 9 — both volumes.
 
-The official Hanoi entrance seed is only 3 papers (2024–2026), city-specific, non-specialized. It is an **observed sample signal**, not a national frequency model. The exam-seed Markdown source preserves the official-source provenance, URLs, years, denominator limits, and interpretation boundaries.
+**Add only these 3 new batch sources**
+11. this packet, `00_NOTEBOOKLM_PACKET_R1.md`;
+12. `04_SKILL_PRIORITY_MATRIX_R1_NOTEBOOKLM_SOURCE.md`;
+13. `05_EXAM_FREQUENCY_HANOI_SEED_R1_NOTEBOOKLM_SOURCE.md`.
+
+Do not re-upload unchanged permanent sources or SGK files. The official Hanoi entrance seed is only 3 papers (2024–2026), city-specific, non-specialized; it is an observed sample signal, not a national frequency model.
 
 No specialist-school exam corpus is included in this packet.
 
