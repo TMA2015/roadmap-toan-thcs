@@ -19,7 +19,8 @@
     "chuyen-bang-bieu-do": "Chuyển đổi bảng – biểu đồ",
     "nhan-xet-du-lieu": "Nhận xét và kết luận từ dữ liệu",
     "bang-tan-so": "Bảng tần số và tần suất",
-    "du-lieu-ghep-nhom": "Dữ liệu ghép nhóm"
+    "du-lieu-ghep-nhom": "Dữ liệu ghép nhóm",
+    "tan-suat": "Tần suất"
   },
   "policy": {
     "feedback": "after_submit",
@@ -362,6 +363,70 @@
         "clearance": "PRACTICE_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
         "review_date": "2026-10-09",
         "receipt": "review-packets/practice-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "STA21READY_015",
+      "type": "mcq",
+      "skill": "tan-suat",
+      "points": 1,
+      "question": "Trong 40 kết quả quan sát, giá trị \\(A\\) xuất hiện 8 lần. Tần số tương đối của \\(A\\) bằng:",
+      "options": [
+        "20%",
+        "8%",
+        "32%",
+        "5%"
+      ],
+      "answer": 0,
+      "explanation": "Tần số tương đối bằng \\(\\frac{8}{40}=0{,}2=20\\%\\).",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
+      }
+    },
+    {
+      "id": "STA21READY_016",
+      "type": "mcq",
+      "skill": "du-lieu-ghep-nhom",
+      "points": 1,
+      "question": "Giá trị đại diện của nhóm \\([10;20)\\) là:",
+      "options": [
+        "15",
+        "10",
+        "20",
+        "30"
+      ],
+      "answer": 0,
+      "explanation": "Giá trị đại diện của một nhóm thường lấy bằng trung điểm của khoảng: \\(\\frac{10+20}{2}=15\\).",
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          9
+        ],
+        "level": "core"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "method": "INDEPENDENT_NOTEBOOKLM_CONTENT_REVIEW",
+        "packet_id": "MATH-READINESS-IMPLEMENTATION-W1-R1-20261010",
+        "clearance": "READINESS_IMPLEMENTATION_W1_R1_CONTENT_REVIEW_COMPLETE",
+        "review_date": "2026-10-10",
+        "receipt": "review-packets/readiness-implementation-wave1-r1/03_NOTEBOOKLM_RESULT_R1.md",
+        "base_priority_clearance": "READINESS_COVERAGE_PRIORITY_R1_REVIEW_COMPLETE",
+        "priority_receipt": "review-packets/readiness-coverage-priority-r1/03_NOTEBOOKLM_RESULT_R1.md"
       }
     }
   ],
