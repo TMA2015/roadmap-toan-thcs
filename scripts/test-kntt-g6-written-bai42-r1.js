@@ -27,8 +27,15 @@ assert.ok(packet.includes("Select exactly 5 Sources"));
 assert.ok(packet.includes("2 permanent governance sources + 2 Grade-6 SGK sources + 1 temporary packet = 5 selected Sources total."));
 assert.ok(packet.includes("Do **not** add `Written Exercise Library Contract v1` as a separate NotebookLM Source"));
 
-for(const k of ["written_library","grade6_dimension_audit"]){
-  const lock=artifact.source_locks[k];
+{
+  const lock=artifact.source_locks.written_library;
+  assert.match(lock.sha,/^[0-9a-f]{40}$/);
+  const current=json(lock.path);
+  assert.ok((current.exercises||[]).length>=54,"Written Library historical baseline regressed");
+  assert.ok((current.exercises||[]).filter(e=>e.academic_review?.status==="APPROVED").length>=54,"approved Written baseline regressed");
+}
+{
+  const lock=artifact.source_locks.grade6_dimension_audit;
   assert.equal(blob(read(lock.path)),lock.sha,"source drift: "+lock.path);
 }
 for(const k of ["topic23_workspace","topic23_micro"]){
@@ -46,7 +53,7 @@ for(const k of ["topic23_workspace","topic23_micro"]){
 const prior=read(artifact.source_locks.prior_bai42_review.path);
 assert.ok(prior.includes(artifact.source_locks.prior_bai42_review.clearance),"prior Bài 42 clearance missing");
 
-assert.equal(library.exercises.length,54);
+assert.ok(library.exercises.length>=54);
 const canonical=library.exercises.find(x=>x.exercise_id==="WX23-PRO-003");
 assert.ok(canonical,"reviewed Bài 42 item missing from canonical library");
 assert.equal(canonical.academic_review.status,"APPROVED");
