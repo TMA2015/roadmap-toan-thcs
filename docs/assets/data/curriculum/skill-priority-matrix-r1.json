@@ -1,0 +1,4627 @@
+{
+  "audit_id": "MATH-SKILL-PRIORITY-MATRIX-R1-20261010",
+  "as_of": "2026-10-10",
+  "status": "REVIEW_PREP_ONLY_NO_PRIORITY_ACTIVATION",
+  "purpose": "Review the importance and learner-facing priority of the 131 canonical Skill Taxonomy v2 families without using authored question counts as a proxy for importance.",
+  "source_of_truth": {
+    "taxonomy": "docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json",
+    "knowledge_graph": "docs/assets/data/curriculum/knowledge-graph-v1.json",
+    "official_exam_seed": "docs/assets/data/curriculum/exam-frequency-hanoi-seed-r1.json",
+    "readiness_post_wave1": "docs/assets/data/curriculum/readiness-coverage-post-wave1-r1.json",
+    "written_post_wave1": "docs/assets/data/curriculum/written-coverage-post-wave1-r1.json"
+  },
+  "current_project_facts": {
+    "taxonomy_families": 131,
+    "layer_counts": {
+      "KNTT-Core": 100,
+      "Entrance10": 19,
+      "Specialized-Challenge": 4,
+      "Core-Support": 5,
+      "THPT-Bridge": 3
+    },
+    "core_readiness_items": 237,
+    "core_readiness_families_covered": 100,
+    "written_kntt_core_families_covered": 76,
+    "note": "Coverage counts are context only. They must not be converted into importance or priority scores."
+  },
+  "priority_axes": {
+    "curriculum_role": "Use S1/KNTT and the existing layer boundary. KNTT-Core remains required; optional layers must not gate Core.",
+    "foundation_importance": "Judge prerequisite/dependency value from curriculum progression and reviewed graph evidence. Graph degree is a signal, not a complete centrality score.",
+    "learner_priority": "How prominently the family should be surfaced/recommended for ordinary self-study, foundation repair, or entrance preparation.",
+    "exam_non_specialist": "Use only the declared official Hanoi non-specialized Grade-10 entrance seed (2024-2026) for observed sample statements.",
+    "specialist_exam": "INSUFFICIENT_EVIDENCE in this packet unless a separate verified specialist corpus is added.",
+    "practice_weight_guidance": "Recommend relative emphasis only after considering curriculum role, foundation value, transfer value, and verified assessment evidence. Never infer it from current authored question count."
+  },
+  "allowed_decisions": {
+    "foundation_importance": [
+      "HIGH",
+      "MEDIUM",
+      "LOW",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "learner_priority_for_kntt_core": [
+      "P0_FOUNDATION_CRITICAL",
+      "P1_HIGH_VALUE_CORE",
+      "P2_STANDARD_CORE",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "learner_priority_for_core_support": [
+      "SUPPORT_ON_DEMAND",
+      "SUPPORT_HIGH_VALUE",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "learner_priority_for_entrance10": [
+      "E1_HIGH_TRANSFER",
+      "E2_STANDARD_ENTRANCE",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "learner_priority_for_specialized_challenge": [
+      "OPTIONAL_SPECIALIST"
+    ],
+    "learner_priority_for_thpt_bridge": [
+      "OPTIONAL_BRIDGE"
+    ],
+    "practice_weight_guidance": [
+      "HIGH",
+      "MEDIUM",
+      "LOW",
+      "OPTIONAL",
+      "INSUFFICIENT_EVIDENCE"
+    ]
+  },
+  "protected_boundaries": {
+    "mutate_taxonomy_ids": false,
+    "merge_or_split_families": false,
+    "change_curriculum_layer": false,
+    "runtime_activation": false,
+    "learner_history_regrade": false,
+    "mastery_or_readiness_change": false,
+    "question_quota_from_priority": false,
+    "promote_specialist_to_core": false,
+    "infer_national_exam_frequency_from_hanoi_seed": false
+  },
+  "corpus_limits": {
+    "hanoi_seed_years": [
+      2024,
+      2025,
+      2026
+    ],
+    "hanoi_seed_denominator": 3,
+    "city_specific": true,
+    "national_model": false,
+    "specialist_exam_corpus_included": false
+  },
+  "family_rows": [
+    {
+      "family_id": "NUM-SETS",
+      "label_vi": "Tập hợp số và biểu diễn số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "tap-hop-so",
+        "so-huu-ti-thap-phan",
+        "lam-tron-so",
+        "so-vo-ti"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "NUM-INTEGER-OPS",
+      "label_vi": "Số nguyên và phép tính",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "so-nguyen-phep-tinh"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "NUM-ABS",
+      "label_vi": "Giá trị tuyệt đối",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "gia-tri-tuyet-doi"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "NUM-ORDER",
+      "label_vi": "Thứ tự thực hiện phép tính",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "thu-tu-phep-tinh"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "NUM-POWER",
+      "label_vi": "Lũy thừa",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "luy-thua"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "NUM-DIV-PRIME",
+      "label_vi": "Chia hết, số nguyên tố và phân tích thừa số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "dau-hieu-chia-het",
+        "so-nguyen-to",
+        "phan-tich-thua-so-nguyen-to"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "NUM-GCD-LCM",
+      "label_vi": "ƯCLN và BCNN",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "ucln",
+        "bcnn"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "NUM-FRACTION-FORM",
+      "label_vi": "Rút gọn, quy đồng và so sánh phân số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "rut-gon-phan-so",
+        "quy-dong-so-sanh-phan-so"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "NUM-FRACTION-OPS",
+      "label_vi": "Phép tính phân số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02"
+      ],
+      "diagnostic_subskills": [
+        "phep-tinh-phan-so",
+        "phep-tinh-so-huu-ti"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "NUM-PERCENT",
+      "label_vi": "Phần trăm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT02",
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "phan-tram",
+        "ti-so-phan-tram"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATIO-BASIC",
+      "label_vi": "Tỉ số và ứng dụng tỉ số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "ti-so",
+        "doi-don-vi-ti-so",
+        "ti-le-ban-do"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATIO-PROP",
+      "label_vi": "Tỉ lệ thức và tìm số chưa biết",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "ti-le-thuc",
+        "tim-x-ti-le-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 2,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [
+          {
+            "from": "ti-le-thuc",
+            "to": "thales-thuan",
+            "confidence": "high"
+          },
+          {
+            "from": "ti-le-thuc",
+            "to": "tinh-do-dai-dong-dang",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATIO-SPLIT",
+      "label_vi": "Dãy tỉ số bằng nhau và chia theo tỉ lệ",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "day-ti-so-bang-nhau",
+        "chia-theo-ti-le"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATIO-DIRECT",
+      "label_vi": "Đại lượng tỉ lệ thuận",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "ti-le-thuan",
+        "he-so-ti-le-thuan"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATIO-INVERSE",
+      "label_vi": "Đại lượng tỉ lệ nghịch",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "ti-le-nghich",
+        "he-so-ti-le-nghich"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATIO-DISTINGUISH",
+      "label_vi": "Phân biệt tỉ lệ thuận và tỉ lệ nghịch",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "phan-biet-thuan-nghich"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATIO-MODEL",
+      "label_vi": "Mô hình hóa bằng tỉ lệ",
+      "layer": "Entrance10",
+      "topics": [
+        "CT03"
+      ],
+      "diagnostic_subskills": [
+        "mo-hinh-ti-le"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "ALG-STRUCTURE",
+      "label_vi": "Cấu trúc đơn thức và đa thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-don-thuc",
+        "nhan-biet-da-thuc",
+        "he-so-bac"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "ALG-SIMPLIFY-ADD-SUB",
+      "label_vi": "Thu gọn, bỏ ngoặc và cộng trừ đa thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "hang-tu-dong-dang",
+        "thu-gon-da-thuc",
+        "bo-ngoac-dau",
+        "cong-tru-da-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 2,
+        "prerequisite_in_degree": 2,
+        "outgoing_edges": [
+          {
+            "from": "hang-tu-dong-dang",
+            "to": "thu-gon-da-thuc",
+            "confidence": "high"
+          },
+          {
+            "from": "bo-ngoac-dau",
+            "to": "cong-tru-da-thuc",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": [
+          {
+            "from": "hang-tu-dong-dang",
+            "to": "thu-gon-da-thuc",
+            "confidence": "high"
+          },
+          {
+            "from": "bo-ngoac-dau",
+            "to": "cong-tru-da-thuc",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "ALG-MULTIPLY",
+      "label_vi": "Nhân biểu thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "nhan-bieu-thuc",
+        "tinh-phan-phoi"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "ALG-EVALUATE",
+      "label_vi": "Tính giá trị biểu thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "tinh-gia-tri-bieu-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "ALG-DIV-MONOMIAL",
+      "label_vi": "Chia đa thức cho đơn thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "chia-da-thuc-cho-don-thuc",
+        "chia-da-thuc-mot-bien"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "ALG-MODEL-EXPR",
+      "label_vi": "Lập biểu thức từ bài toán",
+      "layer": "Entrance10",
+      "topics": [
+        "CT04"
+      ],
+      "diagnostic_subskills": [
+        "lap-bieu-thuc",
+        "bai-toan-thuc-te"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "ID-STRUCTURE",
+      "label_vi": "Nhận dạng và vận dụng các hằng đẳng thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT05"
+      ],
+      "diagnostic_subskills": [
+        "binh-phuong-tong",
+        "binh-phuong-hieu",
+        "hieu-hai-binh-phuong",
+        "lap-phuong-tong",
+        "lap-phuong-hieu",
+        "tong-hai-lap-phuong",
+        "hieu-hai-lap-phuong",
+        "nhan-dang-hdt",
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 1,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [
+          {
+            "from": "hieu-hai-binh-phuong",
+            "to": "phan-tich-tu-mau",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "ID-APPLY",
+      "label_vi": "Rút gọn và tính nhanh bằng hằng đẳng thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT05"
+      ],
+      "diagnostic_subskills": [
+        "tinh-nhanh-hdt",
+        "rut-gon-hdt"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "ID-PROOF",
+      "label_vi": "Chứng minh đẳng thức",
+      "layer": "Entrance10",
+      "topics": [
+        "CT05"
+      ],
+      "diagnostic_subskills": [
+        "chung-minh-hdt"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "FAC-COMMON",
+      "label_vi": "Phân tích bằng đặt nhân tử chung",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "nhan-tu-chung",
+        "doi-dau-nhan-tu-chung"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 1,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [
+          {
+            "from": "nhan-tu-chung",
+            "to": "phan-tich-tu-mau",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "FAC-GROUP",
+      "label_vi": "Phân tích bằng nhóm hạng tử",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "nhom-hang-tu"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "FAC-IDENTITY",
+      "label_vi": "Phân tích bằng hằng đẳng thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "hieu-hai-binh-phuong",
+        "binh-phuong-hoan-chinh",
+        "tong-hieu-lap-phuong"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 1,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [
+          {
+            "from": "hieu-hai-binh-phuong",
+            "to": "phan-tich-tu-mau",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "FAC-COMBINE",
+      "label_vi": "Phối hợp các phương pháp phân tích đa thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "phoi-hop-phuong-phap",
+        "kiem-tra-phan-tich"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "FAC-SPLIT-MIDDLE",
+      "label_vi": "Tách hạng tử giữa",
+      "layer": "Entrance10",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "tach-hang-tu-giua"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "EQ-ZERO-PRODUCT",
+      "label_vi": "Giải phương trình bằng phân tích nhân tử",
+      "layer": "Entrance10",
+      "topics": [
+        "CT06"
+      ],
+      "diagnostic_subskills": [
+        "giai-pt-bang-nhan-tu"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATEX-CONCEPT",
+      "label_vi": "Khái niệm và tính chất cơ bản của phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-phan-thuc",
+        "hai-phan-thuc-bang-nhau"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATEX-DOMAIN",
+      "label_vi": "Điều kiện xác định và bảo toàn điều kiện",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT04",
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "dieu-kien-xac-dinh",
+        "giu-dieu-kien-ban-dau"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATEX-SIMPLIFY",
+      "label_vi": "Phân tích và rút gọn phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "doi-dau-phan-thuc",
+        "phan-tich-tu-mau",
+        "rut-gon-phan-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 3,
+        "prerequisite_in_degree": 3,
+        "outgoing_edges": [
+          {
+            "from": "phan-tich-tu-mau",
+            "to": "rut-gon-phan-thuc",
+            "confidence": "high"
+          },
+          {
+            "from": "phan-tich-tu-mau",
+            "to": "quy-dong-mau-thuc",
+            "confidence": "high"
+          },
+          {
+            "from": "rut-gon-phan-thuc",
+            "to": "khu-mau-phuong-trinh",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": [
+          {
+            "from": "nhan-tu-chung",
+            "to": "phan-tich-tu-mau",
+            "confidence": "high"
+          },
+          {
+            "from": "hieu-hai-binh-phuong",
+            "to": "phan-tich-tu-mau",
+            "confidence": "high"
+          },
+          {
+            "from": "phan-tich-tu-mau",
+            "to": "rut-gon-phan-thuc",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATEX-ADD-SUB",
+      "label_vi": "Quy đồng, cộng và trừ phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "quy-dong-mau-thuc",
+        "cong-tru-phan-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 2,
+        "prerequisite_in_degree": 2,
+        "outgoing_edges": [
+          {
+            "from": "quy-dong-mau-thuc",
+            "to": "khu-mau-phuong-trinh",
+            "confidence": "high"
+          },
+          {
+            "from": "quy-dong-mau-thuc",
+            "to": "cong-tru-phan-thuc",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": [
+          {
+            "from": "phan-tich-tu-mau",
+            "to": "quy-dong-mau-thuc",
+            "confidence": "high"
+          },
+          {
+            "from": "quy-dong-mau-thuc",
+            "to": "cong-tru-phan-thuc",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATEX-MULT-DIV",
+      "label_vi": "Nhân và chia phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "nhan-phan-thuc",
+        "chia-phan-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATEX-EVALUATE",
+      "label_vi": "Tính giá trị phân thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "tinh-gia-tri-phan-thuc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RATEX-INTEGER",
+      "label_vi": "Tìm giá trị nguyên của biểu thức hữu tỉ",
+      "layer": "Specialized-Challenge",
+      "topics": [
+        "CT07"
+      ],
+      "diagnostic_subskills": [
+        "tim-gia-tri-nguyen"
+      ],
+      "learner_visible_default": false,
+      "optional_section": true,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "EQ-BASIC",
+      "label_vi": "Giải phương trình cơ bản",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "nghiem-phuong-trinh",
+        "pt-bac-nhat",
+        "bien-doi-pt-nhieu-buoc",
+        "pt-tich"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 3,
+        "prerequisite_in_degree": 1,
+        "outgoing_edges": [
+          {
+            "from": "pt-bac-nhat",
+            "to": "bien-doi-pt-nhieu-buoc",
+            "confidence": "high"
+          },
+          {
+            "from": "pt-bac-nhat",
+            "to": "giai-he-the",
+            "confidence": "high"
+          },
+          {
+            "from": "pt-bac-nhat",
+            "to": "giai-he-cong",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": [
+          {
+            "from": "pt-bac-nhat",
+            "to": "bien-doi-pt-nhieu-buoc",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "EQ-RATIONAL",
+      "label_vi": "Phương trình chứa ẩn ở mẫu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "dkxd-phuong-trinh-mau",
+        "khu-mau-phuong-trinh",
+        "doi-chieu-nghiem"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 2,
+        "prerequisite_in_degree": 4,
+        "outgoing_edges": [
+          {
+            "from": "dkxd-phuong-trinh-mau",
+            "to": "khu-mau-phuong-trinh",
+            "confidence": "high"
+          },
+          {
+            "from": "khu-mau-phuong-trinh",
+            "to": "doi-chieu-nghiem",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": [
+          {
+            "from": "rut-gon-phan-thuc",
+            "to": "khu-mau-phuong-trinh",
+            "confidence": "high"
+          },
+          {
+            "from": "quy-dong-mau-thuc",
+            "to": "khu-mau-phuong-trinh",
+            "confidence": "high"
+          },
+          {
+            "from": "dkxd-phuong-trinh-mau",
+            "to": "khu-mau-phuong-trinh",
+            "confidence": "high"
+          },
+          {
+            "from": "khu-mau-phuong-trinh",
+            "to": "doi-chieu-nghiem",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "INEQ-ORDER",
+      "label_vi": "Bất đẳng thức và tính chất thứ tự",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "bat-dang-thuc",
+        "tinh-chat-thu-tu-phep-cong",
+        "tinh-chat-thu-tu-phep-nhan"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "OPTIMIZATION_OR_EXTREMUM",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "Each paper ends with a low-weight optimization/extremum task; exact algebraic method differs."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "INEQ-SOLVE",
+      "label_vi": "Giải và biểu diễn bất phương trình",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "bpt-bac-nhat",
+        "doi-chieu-bpt",
+        "bieu-dien-tap-nghiem",
+        "giao-tap-nghiem"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "EQ-MODEL",
+      "label_vi": "Lập phương trình từ bài toán",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "lap-phuong-trinh"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "INEQ-MODEL",
+      "label_vi": "Lập bất phương trình từ bài toán",
+      "layer": "Entrance10",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "lap-bat-phuong-trinh"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "EQ-PARAM",
+      "label_vi": "Phương trình/bất phương trình có tham số",
+      "layer": "Specialized-Challenge",
+      "topics": [
+        "CT08"
+      ],
+      "diagnostic_subskills": [
+        "tham-so-co-ban"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SYS-CONCEPT",
+      "label_vi": "Nghiệm và ý nghĩa của hệ phương trình",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT09"
+      ],
+      "diagnostic_subskills": [
+        "nghiem-pt-hai-an",
+        "nghiem-he",
+        "so-nghiem-he",
+        "y-nghia-hinh-hoc"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 2,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [
+          {
+            "from": "nghiem-pt-hai-an",
+            "to": "giai-he-the",
+            "confidence": "high"
+          },
+          {
+            "from": "nghiem-pt-hai-an",
+            "to": "giai-he-cong",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SYS-SOLVE",
+      "label_vi": "Giải và kiểm tra hệ phương trình",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT09"
+      ],
+      "diagnostic_subskills": [
+        "giai-he-the",
+        "giai-he-cong",
+        "chon-phuong-phap",
+        "bien-doi-truoc-giai",
+        "kiem-tra-nghiem-he"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 4,
+        "outgoing_edges": [],
+        "incoming_edges": [
+          {
+            "from": "pt-bac-nhat",
+            "to": "giai-he-the",
+            "confidence": "high"
+          },
+          {
+            "from": "pt-bac-nhat",
+            "to": "giai-he-cong",
+            "confidence": "high"
+          },
+          {
+            "from": "nghiem-pt-hai-an",
+            "to": "giai-he-the",
+            "confidence": "high"
+          },
+          {
+            "from": "nghiem-pt-hai-an",
+            "to": "giai-he-cong",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "REAL_WORLD_EQUATION_SYSTEM_MODEL",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "All three papers include real-world modeling solved by an equation/system or equivalent algebraic model."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SYS-MODEL",
+      "label_vi": "Lập hệ từ bài toán",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT09"
+      ],
+      "diagnostic_subskills": [
+        "lap-he-bai-toan",
+        "bai-toan-so",
+        "chuyen-dong-he",
+        "nang-suat-he"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SYS-PARAM",
+      "label_vi": "Hệ phương trình có tham số",
+      "layer": "Entrance10",
+      "topics": [
+        "CT09"
+      ],
+      "diagnostic_subskills": [
+        "tham-so-he"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "FUNC-BASIC",
+      "label_vi": "Hàm số, giá trị và bảng giá trị",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "khai-niem-ham-so",
+        "tinh-gia-tri-ham",
+        "bang-gia-tri"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 2,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [
+          {
+            "from": "khai-niem-ham-so",
+            "to": "ve-do-thi-ham-bac-nhat",
+            "confidence": "high"
+          },
+          {
+            "from": "khai-niem-ham-so",
+            "to": "ham-y-ax2",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "GRAPH-POINT",
+      "label_vi": "Tọa độ và điểm thuộc đồ thị",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "toa-do-diem",
+        "diem-thuoc-do-thi"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "LINEAR-FUNC",
+      "label_vi": "Hàm số bậc nhất và đồ thị đường thẳng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-ham-bac-nhat",
+        "he-so-goc",
+        "tung-do-goc",
+        "dong-nghich-bien",
+        "ve-do-thi-ham-bac-nhat"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 1,
+        "outgoing_edges": [],
+        "incoming_edges": [
+          {
+            "from": "khai-niem-ham-so",
+            "to": "ve-do-thi-ham-bac-nhat",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "GRAPH-INTERSECTION",
+      "label_vi": "Vị trí và giao điểm các đồ thị",
+      "layer": "Entrance10",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "vi-tri-hai-duong-thang",
+        "giao-diem-do-thi",
+        "lien-he-he-phuong-trinh"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "PARABOLA-BASIC",
+      "label_vi": "Parabol y=ax²",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT10"
+      ],
+      "diagnostic_subskills": [
+        "ham-y-ax2",
+        "doi-xung-parabol",
+        "diem-thuoc-parabol"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 1,
+        "outgoing_edges": [],
+        "incoming_edges": [
+          {
+            "from": "khai-niem-ham-so",
+            "to": "ham-y-ax2",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "QUADRATIC_VIETE_OR_PARABOLA_ROOT_RELATION",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "Every paper includes quadratic-root/Viète/parabola-intersection reasoning; exact subfamily varies by year."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RAD-BASIC",
+      "label_vi": "Căn bậc hai và điều kiện xác định",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "can-bac-hai-so-hoc",
+        "dkxd-can",
+        "can-binh-phuong"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 2,
+        "prerequisite_in_degree": 1,
+        "outgoing_edges": [
+          {
+            "from": "can-bac-hai-so-hoc",
+            "to": "dkxd-can",
+            "confidence": "high"
+          },
+          {
+            "from": "can-bac-hai-so-hoc",
+            "to": "cong-thuc-nghiem",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": [
+          {
+            "from": "can-bac-hai-so-hoc",
+            "to": "dkxd-can",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "RADICAL_EXPRESSION",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "All three official papers include a multi-part radical-expression task."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RAD-TRANSFORM",
+      "label_vi": "Biến đổi căn thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "khai-phuong-tich",
+        "khai-phuong-thuong",
+        "dua-thua-so-ra",
+        "dua-thua-so-vao"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "RADICAL_EXPRESSION",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "All three official papers include a multi-part radical-expression task."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RAD-OPERATE",
+      "label_vi": "Phép tính với căn thức",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "can-dong-dang",
+        "nhan-chia-can"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "RADICAL_EXPRESSION",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "All three official papers include a multi-part radical-expression task."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RAD-RATIONALIZE",
+      "label_vi": "Trục căn thức ở mẫu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "truc-can-mau-don",
+        "truc-can-lien-hop"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RAD-CUBEROOT",
+      "label_vi": "Căn bậc ba",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "can-bac-ba"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RAD-EQUATION",
+      "label_vi": "Phương trình chứa căn",
+      "layer": "Entrance10",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "tim-x-can"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RAD-COMPARE",
+      "label_vi": "So sánh biểu thức căn",
+      "layer": "Entrance10",
+      "topics": [
+        "CT11"
+      ],
+      "diagnostic_subskills": [
+        "so-sanh-can"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "QUAD-STRUCTURE",
+      "label_vi": "Nhận dạng phương trình bậc hai và hệ số",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "nhan-dang-pt-bac-hai",
+        "he-so-abc"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "QUAD-SOLVE",
+      "label_vi": "Biệt thức và giải phương trình bậc hai",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "tinh-delta",
+        "so-nghiem-delta",
+        "cong-thuc-nghiem",
+        "delta-phay",
+        "giai-pt-bac-hai",
+        "nham-nghiem"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 1,
+        "prerequisite_in_degree": 2,
+        "outgoing_edges": [
+          {
+            "from": "tinh-delta",
+            "to": "cong-thuc-nghiem",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": [
+          {
+            "from": "tinh-delta",
+            "to": "cong-thuc-nghiem",
+            "confidence": "high"
+          },
+          {
+            "from": "can-bac-hai-so-hoc",
+            "to": "cong-thuc-nghiem",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "QUADRATIC_VIETE_OR_PARABOLA_ROOT_RELATION",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "Every paper includes quadratic-root/Viète/parabola-intersection reasoning; exact subfamily varies by year."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "VIETE-CORE",
+      "label_vi": "Viète và lập phương trình từ nghiệm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "tong-tich-nghiem",
+        "lap-pt-tu-nghiem"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "QUADRATIC_VIETE_OR_PARABOLA_ROOT_RELATION",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "Every paper includes quadratic-root/Viète/parabola-intersection reasoning; exact subfamily varies by year."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "VIETE-APPLY",
+      "label_vi": "Vận dụng Viète với biểu thức và dấu nghiệm",
+      "layer": "Entrance10",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "bieu-thuc-doi-xung",
+        "dau-nghiem"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "QUADRATIC_VIETE_OR_PARABOLA_ROOT_RELATION",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "Every paper includes quadratic-root/Viète/parabola-intersection reasoning; exact subfamily varies by year."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "QUAD-GRAPH",
+      "label_vi": "Liên hệ nghiệm với đồ thị",
+      "layer": "Entrance10",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "lien-he-do-thi"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "QUAD-PARAM",
+      "label_vi": "Tham số và số nghiệm",
+      "layer": "Specialized-Challenge",
+      "topics": [
+        "CT12"
+      ],
+      "diagnostic_subskills": [
+        "tham-so-so-nghiem"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "GEO-LINE-FOUND",
+      "label_vi": "Điểm, tia, đoạn thẳng và trung điểm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT13"
+      ],
+      "diagnostic_subskills": [
+        "diem-thuoc-duong",
+        "diem-nam-giua",
+        "tia",
+        "tia-doi",
+        "doan-thang-do-dai",
+        "trung-diem"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "GEO-ANGLE-REL",
+      "label_vi": "Góc và các quan hệ góc",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT13"
+      ],
+      "diagnostic_subskills": [
+        "khai-niem-goc",
+        "do-goc",
+        "phan-loai-goc",
+        "goc-phu-bu",
+        "goc-doi-dinh",
+        "tia-phan-giac",
+        "nhan-dang-goc-dac-biet",
+        "duong-vuong-goc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "GEO-TRANSVERSAL",
+      "label_vi": "Góc tạo bởi một đường cắt",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT13"
+      ],
+      "diagnostic_subskills": [
+        "goc-so-le-trong",
+        "goc-dong-vi",
+        "goc-trong-cung-phia"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "GEO-PARALLEL",
+      "label_vi": "Song song, dấu hiệu và quan hệ vuông góc",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT13"
+      ],
+      "diagnostic_subskills": [
+        "tinh-chat-song-song",
+        "dau-hieu-song-song",
+        "tien-de-euclid",
+        "vuong-goc-song-song"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "GEO-PROOF-BASIC",
+      "label_vi": "Giả thiết – kết luận và chứng minh hình học ngắn",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT13"
+      ],
+      "diagnostic_subskills": [
+        "gia-thiet-ket-luan",
+        "lap-luan-chung-minh-ngan"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "CIRCLE_GEOMETRY_PROOF_CHAIN",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "Every paper has a substantial multi-step circle/geometry proof problem."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "TRI-ANGLE-SIDE",
+      "label_vi": "Góc, cạnh và bất đẳng thức trong tam giác",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT14"
+      ],
+      "diagnostic_subskills": [
+        "tong-goc-tam-giac",
+        "goc-ngoai",
+        "so-sanh-canh-goc",
+        "bat-dang-thuc-tam-giac",
+        "duong-vuong-goc-duong-xien"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "TRI-SPECIAL",
+      "label_vi": "Nhận biết và tính chất tam giác đặc biệt",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT14",
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "phan-loai-tam-giac",
+        "tam-giac-can",
+        "tam-giac-deu",
+        "nhan-biet-tam-giac-deu"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "TRI-PERPBISECTOR",
+      "label_vi": "Đường trung trực và tính chất cách đều",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT14",
+        "CT15"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-trung-truc",
+        "cach-deu-dinh",
+        "tinh-chat-duong-trung-truc"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "TRI-CONGRUENCE",
+      "label_vi": "Các trường hợp tam giác bằng nhau và tương ứng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT14"
+      ],
+      "diagnostic_subskills": [
+        "bang-nhau-ccc",
+        "bang-nhau-cgc",
+        "bang-nhau-gcg",
+        "bang-nhau-tam-giac-vuong",
+        "viet-tuong-ung-tam-giac-bang-nhau"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "GEO-PLANE-MEASURE",
+      "label_vi": "Chu vi, diện tích và đo lường hình phẳng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT14",
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "chu-vi-dien-tich",
+        "chu-vi-tu-giac",
+        "dien-tich-tu-giac",
+        "do-luong-thuc-te"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "TRI-CENTROID",
+      "label_vi": "Trung tuyến và trọng tâm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT15"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-trung-tuyen",
+        "trong-tam",
+        "ti-so-trong-tam"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "TRI-ORTHOCENTER",
+      "label_vi": "Đường cao và trực tâm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT15"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-duong-cao",
+        "truc-tam",
+        "vi-tri-truc-tam"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "TRI-INCENTER",
+      "label_vi": "Phân giác và tâm nội tiếp",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT15",
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-phan-giac",
+        "tam-noi-tiep",
+        "cach-deu-canh",
+        "duong-tron-noi-tiep-tam-giac"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "TRI-CIRCUMCENTER",
+      "label_vi": "Tâm ngoại tiếp và các đường trung trực",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT15",
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "tam-ngoai-tiep",
+        "vi-tri-tam-ngoai-tiep",
+        "duong-tron-ngoai-tiep-tam-giac"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "TRI-CENTERS",
+      "label_vi": "Phân biệt bốn tâm và tính đồng quy",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT15"
+      ],
+      "diagnostic_subskills": [
+        "phan-biet-bon-tam",
+        "dong-quy-bon-duong-dac-biet"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "QUAD-TRAPEZOID",
+      "label_vi": "Tứ giác, hình thang và hình thang cân",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT16"
+      ],
+      "diagnostic_subskills": [
+        "tong-goc-tu-giac",
+        "hinh-thang",
+        "hinh-thang-can"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "QUAD-PARALLELOGRAM",
+      "label_vi": "Hình bình hành: tính chất và dấu hiệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT16"
+      ],
+      "diagnostic_subskills": [
+        "hbh-tinh-chat",
+        "hbh-dau-hieu"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "QUAD-RECTANGLE",
+      "label_vi": "Hình chữ nhật: tính chất và dấu hiệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT16"
+      ],
+      "diagnostic_subskills": [
+        "hcn-tinh-chat",
+        "hcn-dau-hieu"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "QUAD-RHOMBUS",
+      "label_vi": "Hình thoi: tính chất và dấu hiệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT16"
+      ],
+      "diagnostic_subskills": [
+        "hthoi-tinh-chat",
+        "hthoi-dau-hieu"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "QUAD-SQUARE-HIER",
+      "label_vi": "Hình vuông, quan hệ bao hàm và suy luận đường chéo",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT16",
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "hvuong-tinh-chat",
+        "hvuong-dau-hieu",
+        "quan-he-bao-ham",
+        "duong-cheo-suy-luan",
+        "nhan-biet-hinh-vuong",
+        "nhan-biet-tu-giac-dac-biet"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SIM-THALES",
+      "label_vi": "Thales và tỉ lệ đoạn thẳng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT17"
+      ],
+      "diagnostic_subskills": [
+        "thales-thuan",
+        "thales-dao",
+        "ti-le-doan-thang"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 1,
+        "outgoing_edges": [],
+        "incoming_edges": [
+          {
+            "from": "ti-le-thuc",
+            "to": "thales-thuan",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SIM-MID-BISECTOR",
+      "label_vi": "Đường trung bình và tính chất đường phân giác",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT17"
+      ],
+      "diagnostic_subskills": [
+        "duong-trung-binh",
+        "tinh-chat-duong-phan-giac"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SIM-CRITERIA",
+      "label_vi": "Nhận biết và các trường hợp tam giác đồng dạng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT17"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-dong-dang",
+        "dong-dang-gg",
+        "dong-dang-cgc",
+        "dong-dang-ccc",
+        "thu-tu-tuong-ung"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 1,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [
+          {
+            "from": "dong-dang-gg",
+            "to": "tinh-do-dai-dong-dang",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SIM-LENGTH",
+      "label_vi": "Tính độ dài bằng đồng dạng và hình đồng dạng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT17"
+      ],
+      "diagnostic_subskills": [
+        "tinh-do-dai-dong-dang",
+        "hinh-dong-dang"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 2,
+        "outgoing_edges": [],
+        "incoming_edges": [
+          {
+            "from": "dong-dang-gg",
+            "to": "tinh-do-dai-dong-dang",
+            "confidence": "high"
+          },
+          {
+            "from": "ti-le-thuc",
+            "to": "tinh-do-dai-dong-dang",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SIM-RATIO-EXT",
+      "label_vi": "Tỉ số chu vi, diện tích và hệ thức tích từ đồng dạng",
+      "layer": "Core-Support",
+      "topics": [
+        "CT17"
+      ],
+      "diagnostic_subskills": [
+        "ti-so-chu-vi",
+        "ti-so-dien-tich",
+        "he-thuc-tich"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SIM-CHAIN",
+      "label_vi": "Kết hợp song song và đồng dạng trong chuỗi suy luận",
+      "layer": "Entrance10",
+      "topics": [
+        "CT17",
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "ket-hop-song-song-dong-dang",
+        "song-song-dong-dang"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RIGHT-PYTHAGORE",
+      "label_vi": "Pythagore và nhận biết tam giác vuông",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT14",
+        "CT18"
+      ],
+      "diagnostic_subskills": [
+        "pythagore",
+        "pythagore-dao",
+        "canh-huyen"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RIGHT-TRIG-RATIO",
+      "label_vi": "Tỉ số lượng giác trong tam giác vuông",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT18"
+      ],
+      "diagnostic_subskills": [
+        "doi-ke-huyen",
+        "sin",
+        "cos",
+        "tan",
+        "cot"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RIGHT-SOLVE",
+      "label_vi": "Tìm cạnh và tìm góc bằng lượng giác",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT18"
+      ],
+      "diagnostic_subskills": [
+        "tim-canh-luong-giac",
+        "tim-goc-luong-giac"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RIGHT-APPLICATION",
+      "label_vi": "Góc nâng, góc hạ, chiều cao và khoảng cách",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT18"
+      ],
+      "diagnostic_subskills": [
+        "goc-nang-ha",
+        "chieu-cao-khoang-cach"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "RIGHT-ALTITUDE",
+      "label_vi": "Hệ thức cạnh và đường cao trong tam giác vuông",
+      "layer": "Entrance10",
+      "topics": [
+        "CT18"
+      ],
+      "diagnostic_subskills": [
+        "he-thuc-canh",
+        "he-thuc-duong-cao",
+        "dien-tich-duong-cao",
+        "ket-hop-he-thuc"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "CIRCLE-CHORD-ARC",
+      "label_vi": "Dây và cung trong đường tròn",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "day-va-tam",
+        "cung-va-day"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "CIRCLE-ANGLES",
+      "label_vi": "Góc ở tâm, góc nội tiếp và quan hệ góc–cung",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "goc-o-tam",
+        "goc-noi-tiep",
+        "nua-duong-tron",
+        "goc-cung"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 1,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [
+          {
+            "from": "goc-noi-tiep",
+            "to": "tu-giac-noi-tiep",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "CIRCLE_GEOMETRY_PROOF_CHAIN",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "Every paper has a substantial multi-step circle/geometry proof problem."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "CIRCLE-MEASURE",
+      "label_vi": "Độ dài đường tròn, cung và diện tích phần tròn",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "do-dai-duong-tron",
+        "do-dai-cung",
+        "dien-tich-quat-tron",
+        "dien-tich-vanh-khuyen"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "CIRCLE-POSITION",
+      "label_vi": "Vị trí tương đối với đường tròn",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "vi-tri-tuong-doi-duong-thang-duong-tron",
+        "vi-tri-tuong-doi-hai-duong-tron"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "CIRCLE_GEOMETRY_PROOF_CHAIN",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "Every paper has a substantial multi-step circle/geometry proof problem."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "CIRCLE-CYCLIC",
+      "label_vi": "Tứ giác nội tiếp và dấu hiệu nội tiếp",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "tu-giac-noi-tiep",
+        "dau-hieu-noi-tiep"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 1,
+        "outgoing_edges": [],
+        "incoming_edges": [
+          {
+            "from": "goc-noi-tiep",
+            "to": "tu-giac-noi-tiep",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "CIRCLE_GEOMETRY_PROOF_CHAIN",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "Every paper has a substantial multi-step circle/geometry proof problem."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "CIRCLE-TANGENT",
+      "label_vi": "Tiếp tuyến: tính chất và chứng minh",
+      "layer": "Entrance10",
+      "topics": [
+        "CT19",
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "tiep-tuyen-ban-kinh",
+        "hai-tiep-tuyen",
+        "chung-minh-tiep-tuyen",
+        "tiep-tuyen-chung-minh"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "CIRCLE-POWER",
+      "label_vi": "Hệ thức hai dây và tiếp tuyến–cát tuyến",
+      "layer": "Specialized-Challenge",
+      "topics": [
+        "CT19"
+      ],
+      "diagnostic_subskills": [
+        "hai-day-cat-nhau",
+        "tiep-tuyen-cat-tuyen"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "GEO-REGULAR-SYMM",
+      "label_vi": "Đa giác đều và đối xứng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT19",
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "da-giac-deu",
+        "nhan-biet-luc-giac-deu",
+        "truc-doi-xung",
+        "tam-doi-xung"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SOLID-PRISM",
+      "label_vi": "Hình hộp, lập phương và lăng trụ đứng",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-hinh-hop-lap-phuong",
+        "dien-tich-xung-quanh-hop-chu-nhat",
+        "the-tich-hop-chu-nhat",
+        "nhan-biet-lang-tru-dung",
+        "dien-tich-xung-quanh-lang-tru",
+        "the-tich-lang-tru",
+        "dien-tich-day",
+        "doi-don-vi-do-luong"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SOLID-PYRAMID",
+      "label_vi": "Hình chóp đều",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-hinh-chop-deu",
+        "dien-tich-xung-quanh-hinh-chop",
+        "the-tich-hinh-chop"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SOLID-CYL-CONE",
+      "label_vi": "Hình trụ và hình nón",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-hinh-tru",
+        "dien-tich-xung-quanh-hinh-tru",
+        "the-tich-hinh-tru",
+        "nhan-biet-hinh-non",
+        "dien-tich-xung-quanh-hinh-non",
+        "the-tich-hinh-non"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "CYLINDER_MEASUREMENT_APPLICATION",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "Cylinder surface/volume application appears in all three papers, with richer unit/volume modeling in 2025-2026."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "SOLID-SPHERE",
+      "label_vi": "Hình cầu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "nhan-biet-hinh-cau",
+        "dien-tich-mat-cau",
+        "the-tich-hinh-cau"
+      ],
+      "learner_visible_default": true,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "GEO-SYNTHESIS",
+      "label_vi": "Hình học tổng hợp nhiều bước",
+      "layer": "Entrance10",
+      "topics": [
+        "CT20"
+      ],
+      "diagnostic_subskills": [
+        "hai-goc-vuong-noi-tiep",
+        "noi-tiep-dong-dang",
+        "dong-dang-he-thuc-tich",
+        "tam-giac-vuong-dong-dang",
+        "chuoi-suy-luan",
+        "bai-toan-tong-hop"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "STAT-DATA",
+      "label_vi": "Dữ liệu và thu thập dữ liệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "du-lieu-phan-loai",
+        "thu-thap-du-lieu"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "STAT-QUALITY",
+      "label_vi": "Chất lượng dữ liệu và mẫu thiên lệch",
+      "layer": "Core-Support",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "kiem-tra-chat-luong",
+        "mau-thien-lech"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "STAT-FREQUENCY",
+      "label_vi": "Bảng tần số và tần suất",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "bang-tan-so",
+        "tan-suat"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "GROUPED_FREQUENCY",
+            "years": [
+              2025,
+              2026
+            ],
+            "observed_count": 2,
+            "note": "Grouped-frequency/relative-frequency appears in both post-2024 papers sampled."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "STAT-CHART-READ",
+      "label_vi": "Đọc và so sánh các biểu đồ",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "doc-bieu-do-cot",
+        "doc-bieu-do-doan-thang",
+        "doc-bieu-do-cot-kep",
+        "bieu-do-quat-tron"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "STAT-REPRESENT",
+      "label_vi": "Chọn và chuyển dạng biểu diễn dữ liệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "chon-bieu-do",
+        "chuyen-bang-bieu-do"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "STAT-INFER",
+      "label_vi": "Nhận xét và kết luận từ dữ liệu",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "nhan-xet-du-lieu"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "STAT-ADVANCED-DATA",
+      "label_vi": "Dữ liệu ghép nhóm và bẫy thang đo",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT21"
+      ],
+      "diagnostic_subskills": [
+        "du-lieu-ghep-nhom",
+        "don-vi-thang-do"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "STAT-CENTER",
+      "label_vi": "Các đại lượng xu thế trung tâm",
+      "layer": "THPT-Bridge",
+      "topics": [
+        "CT22"
+      ],
+      "diagnostic_subskills": [
+        "trung-binh-tho",
+        "trung-binh-tan-so",
+        "trung-vi",
+        "mot",
+        "nhieu-mot"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "STAT-SPREAD-OUTLIER",
+      "label_vi": "Khoảng biến thiên và giá trị ngoại lai",
+      "layer": "THPT-Bridge",
+      "topics": [
+        "CT22"
+      ],
+      "diagnostic_subskills": [
+        "khoang-bien-thien",
+        "ngoai-lai"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "STAT-COMPARE-MEASURE",
+      "label_vi": "Chọn đại lượng đại diện và so sánh dữ liệu",
+      "layer": "THPT-Bridge",
+      "topics": [
+        "CT22"
+      ],
+      "diagnostic_subskills": [
+        "so-sanh-trung-binh-trung-vi",
+        "chon-dai-luong",
+        "so-sanh-hai-bo"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "PROB-EVENT",
+      "label_vi": "Phép thử và biến cố",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "phep-thu-ngau-nhien",
+        "bien-co",
+        "bien-co-chac-chan-khong-the"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 1,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [
+          {
+            "from": "bien-co",
+            "to": "xac-suat-co-dien",
+            "confidence": "high"
+          }
+        ],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "PROB-CLASSICAL",
+      "label_vi": "Xác suất cổ điển và kiểm tra tính hợp lý",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "xac-suat-co-dien",
+        "kiem-tra-xac-suat"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 1,
+        "outgoing_edges": [],
+        "incoming_edges": [
+          {
+            "from": "bien-co",
+            "to": "xac-suat-co-dien",
+            "confidence": "high"
+          }
+        ]
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "CLASSICAL_PROBABILITY",
+            "years": [
+              2025,
+              2026
+            ],
+            "observed_count": 2,
+            "note": "Simple classical probability appears in both post-2024 papers sampled."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "PROB-EXPERIMENTAL",
+      "label_vi": "Xác suất thực nghiệm",
+      "layer": "KNTT-Core",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "xac-suat-thuc-nghiem"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "PROB-SPACE-SUPPORT",
+      "label_vi": "Không gian mẫu, biến cố đối và lặp phép thử",
+      "layer": "Core-Support",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "khong-gian-mau",
+        "bien-co-doi",
+        "dong-xu-nhieu-lan"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "PROB-MULTISTEP",
+      "label_vi": "Xác suất nhiều bước",
+      "layer": "Entrance10",
+      "topics": [
+        "CT23"
+      ],
+      "diagnostic_subskills": [
+        "xuc-xac-hai-lan",
+        "so-do-cay",
+        "nhieu-buoc-doc-lap",
+        "khong-hoan-lai"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "MODEL-SETUP",
+      "label_vi": "Đọc dữ kiện và chuẩn hóa đơn vị",
+      "layer": "Core-Support",
+      "topics": [
+        "CT24"
+      ],
+      "diagnostic_subskills": [
+        "doc-de-du-kien",
+        "doi-don-vi"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "MODEL-VALIDATE",
+      "label_vi": "Kiểm tra nghiệm, đơn vị và kết luận thực tế",
+      "layer": "Core-Support",
+      "topics": [
+        "CT24"
+      ],
+      "diagnostic_subskills": [
+        "kiem-tra-ket-luan"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "OBSERVED_IN_SEED",
+        "archetypes": [
+          {
+            "archetype_id": "REAL_WORLD_EQUATION_SYSTEM_MODEL",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "All three papers include real-world modeling solved by an equation/system or equivalent algebraic model."
+          },
+          {
+            "archetype_id": "CYLINDER_MEASUREMENT_APPLICATION",
+            "years": [
+              2024,
+              2025,
+              2026
+            ],
+            "observed_count": 3,
+            "note": "Cylinder surface/volume application appears in all three papers, with richer unit/volume modeling in 2025-2026."
+          }
+        ]
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "EXAM-STRATEGY",
+      "label_vi": "Nhận diện dạng bài và quản lý thời gian",
+      "layer": "Entrance10",
+      "topics": [
+        "CT25"
+      ],
+      "diagnostic_subskills": [
+        "nhan-dien-chuyen-de",
+        "quan-ly-thoi-gian"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    },
+    {
+      "family_id": "EXAM-REVIEW",
+      "label_vi": "Phân loại lỗi và chữa đề",
+      "layer": "Entrance10",
+      "topics": [
+        "CT25"
+      ],
+      "diagnostic_subskills": [
+        "phan-loai-loi",
+        "checklist-chua-de"
+      ],
+      "learner_visible_default": false,
+      "optional_section": false,
+      "reviewed_graph_signal": {
+        "prerequisite_out_degree": 0,
+        "prerequisite_in_degree": 0,
+        "outgoing_edges": [],
+        "incoming_edges": []
+      },
+      "official_hanoi_entrance_seed_2024_2026": {
+        "status": "NO_DIRECT_FAMILY_HIT_IN_SEED",
+        "archetypes": []
+      },
+      "review_decision": {
+        "foundation_importance": "PENDING_REVIEW",
+        "learner_priority": "PENDING_REVIEW",
+        "practice_weight_guidance": "PENDING_REVIEW",
+        "rationale": null
+      }
+    }
+  ],
+  "next_gate": "Independent priority review; then reconcile disagreements before any learner-facing priority labels or practice weighting."
+}
