@@ -14,7 +14,7 @@ ok(a.policy.feedback==="after_submit"&&a.policy.hints===false&&a.policy.tutor===
 ok(a.readiness.hard_gate===false&&a.readiness.ready_threshold===0.8&&a.readiness.minimum_answered_ratio===0.8,"soft readiness");
 ok(a.readiness.states.join(",")==="READY,REVIEW_RECOMMENDED,MORE_EVIDENCE_NEEDED","readiness states");
 ok(a.next_topic.id==="22-dai-luong-dac-trung","next topic");
-ok(skills.size===9&&Object.keys(a.skill_labels).length===11&&[...skills].every(s=>!!a.skill_labels[s]),"historical nine skills plus two reviewed candidate labels");
+ok(skills.size===9&&Object.keys(a.skill_labels).length>=11&&[...skills].every(s=>!!a.skill_labels[s])&&!!a.skill_labels["tan-suat"],"historical skill labels preserved with approved relative-frequency label");
 ok(m.question_count===132&&m.sources.length===5&&read("docs/assets/data/practice/21-thong-ke-micro-v1.json").questions.length>=20,"readiness/Practice baselines preserved under append-only Micro growth");
 const seen=new Set(),gradeMap={};
 for(const g of [6,7,8]){
