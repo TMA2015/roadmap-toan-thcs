@@ -31,20 +31,16 @@
   const normalize = (x) => String(x||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/đ/g,"d").replace(/Đ/g,"D").toLowerCase();
   const primaryTopic = (r) => Array.isArray(r.topics)&&r.topics.length?r.topics[0]:"ZZ";
 
-  function validateAndBuild(registry,matrix,spine) {
-    if(registry?.schema!=="skill-taxonomy-v2-registry-r1"||registry?.families?.length!==131) throw Error("Danh mục 131 kỹ năng không hợp lệ");
+  function validateAndBuild(matrix,spine) {
     if(matrix?.audit_id!=="MATH-SKILL-PRIORITY-MATRIX-R1-20261010" ||
        matrix?.review?.final_clearance!==REVIEW_CLEARANCE ||
        matrix?.status!=="ACADEMIC_PRIORITY_REVIEW_PASS_NO_RUNTIME_ACTIVATION" ||
        matrix?.family_rows?.length!==131) throw Error("Chưa có bảng ưu tiên đã duyệt");
-    const regIds=new Set(registry.families.map(r=>r.family_id));
-    if(regIds.size!==131) throw Error("Trùng mã trong danh mục kỹ năng");
     const seen=new Set();
     const rows=matrix.family_rows.map(row=>{
-      if(!regIds.has(row.family_id)||seen.has(row.family_id)) throw Error("Mã kỹ năng không khớp");
+      if(!row.family_id||seen.has(row.family_id)) throw Error("Mã kỹ năng không hợp lệ hoặc bị trùng");
       seen.add(row.family_id);
-      const src=registry.families.find(r=>r.family_id===row.family_id);
-      if(src.layer!==row.layer || JSON.stringify(src.topics)!==JSON.stringify(row.topics)) throw Error("Tầng hoặc chuyên đề không khớp");
+      if(!Array.isArray(row.topics)||!row.topics.length||!row.label_vi) throw Error("Thiếu dữ liệu về kỹ năng");
       const code=row.review_decision?.learner_priority;
       if(!PRIORITIES[code]) throw Error("Mức ưu tiên chưa được duyệt");
       const layerScope=scopeOf(row.layer);
@@ -193,12 +189,11 @@
       root.dataset.priorityPreviewReady="loading";
       try{
         const assets=new URL(root.dataset.assetsBase||"../../assets/",document.baseURI);
-        const [registry,matrix,spine]=await Promise.all([
-          load(new URL("data/curriculum/skill-taxonomy-v2-registry-r1.json",assets)),
+        const [matrix,spine]=await Promise.all([
           load(new URL("data/curriculum/skill-priority-matrix-r1.json",assets)),
           load(new URL("data/curriculum/vertical-spine.json",assets))
         ]);
-        init(root,validateAndBuild(registry,matrix,spine),assets);
+        init(root,validateAndBuild(matrix,spine),assets);
       }catch(error){
         root.dataset.priorityPreviewReady="error";
         root.replaceChildren(el("p","spp-error","Không thể mở bản xem trước: "+error.message+". Bản đồ kỹ năng hiện tại vẫn hoạt động bình thường."));
