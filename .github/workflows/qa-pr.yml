@@ -175,6 +175,8 @@ jobs:
         run: |
           node --check docs/assets/javascripts/skill-priority-preview-r1.js
           node scripts/test-skill-priority-preview-r1.js
+      - name: Audit family-use release readiness R1 (no learner mutation)
+        run: node scripts/test-release-readiness-r1.js
       - name: Validate assets and practice
         run: |
           python check_svg_integrity.py
@@ -284,6 +286,7 @@ jobs:
           python scripts/test-skill-map-v2-i6-controlled-browser.py
           python scripts/test-skill-map-v2-i6b-public-browser.py
           python scripts/test-skill-priority-preview-r1-browser.py
+          python scripts/test-release-readiness-r1-browser.py
           python scripts/test-help-disclosure-toggle-browser.py
           python scripts/test-topic08-academic-depth-p1a-browser.py
           python scripts/test-topic09-navigation-reading-browser.py
