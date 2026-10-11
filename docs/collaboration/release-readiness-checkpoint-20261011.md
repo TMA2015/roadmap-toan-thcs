@@ -2,6 +2,20 @@
 
 **Current initiative:** Family-use THCS V1 Release Readiness Audit R1; future-track extension architecture feasibility (THPT/SAT/ACT), no new academic content.
 
+## Continuation — A2 learner QA + B1 durability (11/10/2026)
+
+Release Readiness R1 baseline PR **#414 was merged** at `6ed3e5dfa2d147031f4689b825a00c6ce45c785f`, Roadmap PR Quality run `38129119032` SUCCESS, Deploy MkDocs run `38129453318` SUCCESS. Four representative route smoke tests passed. **A1 CLOSED; A2/B1 NOT CLOSED.**
+
+Active branch: `audit/release-readiness-b1-a2-20261011`. New scope:
+- `docs/collaboration/release-readiness-b1-storage-audit-r1.md`: actual localStorage inventory and durability risks; no broad backup/restore flow found in the current app scripts;
+- `docs/collaboration/release-readiness-a2-learner-qa-r1.md`: learner-observation scenarios for Grades 6/8 first and 7/9 follow-up;
+- `scripts/test-release-readiness-b1-browser.py`: disposable-profile valid-store persistence, malformed JSON fallback and AI-transport independence tests;
+- corresponding public-repo QA workflow step.
+
+**Risks:** B1 user backup/restore not demonstrated, cross-device sync is not supported, storage-write failures not handled uniformly, malformed-store fallback is not data recovery. Any implementation of backup or storage schema change requires a separate owner-approved design/PR; do not alter learner history under this audit.
+
+**Next:** check PR/QA HEAD; fix any browser QA false assumption or actual defect; merge audit-only packet on green; then collect A2 learner observations and decide whether to authorize a local-only manual backup prototype. Do NOT claim A2/B1 or V1 release PASS from CI alone.
+
 ## Owner intent
 Self-Learning Math remains a **family/friends** product, not a commercialization or growth project. However, it must be reliable and pedagogically complete even with few users. THCS should become a durable foundation for later THPT, SAT and ACT Math without making the present project unnecessarily complex or paid.
 

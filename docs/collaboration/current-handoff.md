@@ -1,6 +1,10 @@
 # Project Handoff — Self-Learning Math
 
-> **LATEST OWNER-APPROVED WORKSTREAM — 11/10/2026:** Family-use THCS V1 Release Readiness R1 + future THPT/SAT/ACT extension feasibility. For the latest active branch, QA, blockers and owner intent, read [Release Readiness Checkpoint 2026-10-11](release-readiness-checkpoint-20261011.md) and [Release Readiness Audit R1](release-readiness-audit-r1.md). Historic entries below are a preserved audit trail, not the current status. No content/runtime changes authorized by this workstream.\n\n
+> **LATEST OWNER-APPROVED WORKSTREAM — 11/10/2026:** Family-use THCS V1 Release Readiness R1 + future THPT/SAT/ACT extension feasibility. For the latest active branch, QA, blockers and owner intent, read [Release Readiness Checkpoint 2026-10-11](release-readiness-checkpoint-20261011.md) and [Release Readiness Audit R1](release-readiness-audit-r1.md). Historic entries below are a preserved audit trail, not the current status. No content/runtime changes authorized by this workstream.
+
+> **A2/B1 CONTINUATION — 11/10/2026:** See [Storage Durability Audit R1](release-readiness-b1-storage-audit-r1.md) and [Learner Journey QA R1](release-readiness-a2-learner-qa-r1.md). **A2 human learner evidence OPEN; B1 restore/durability OPEN.** Technical audit/QA only, not new Math content or runtime mutation.
+
+
 > **CURRENT ARCHITECTURE CHECKPOINT — 04/10/2026.**  
 > Canonical Master Plan: **v1.2.1 — One Knowledge Graph · Two Learning Paths + Shared Written Exercise Library**.  
 > Path A = **Học theo lớp / KNTT Course Map**; Path B = **Học theo chuyên đề / 25 Vertical Spine**. Both reuse the same canonical skills/items; do not build parallel knowledge banks.  
