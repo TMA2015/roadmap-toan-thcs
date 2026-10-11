@@ -22,4 +22,4 @@
 ---
 
 !!! tip "Xem trước cách sắp xếp kỹ năng theo mức độ ưu tiên"
-    [Mở Bản đồ ưu tiên kỹ năng R1 — bản xem trước](../skill-priority-preview-r1/). Trang này chỉ đọc metadata học thuật đã duyệt, không thay đổi bản đồ đang phục vụ học sinh.
+    <a href="../skill-priority-preview-r1/">Mở Bản đồ ưu tiên kỹ năng R1 — bản xem trước</a>. Trang này chỉ đọc metadata học thuật đã duyệt, không thay đổi bản đồ đang phục vụ học sinh.
