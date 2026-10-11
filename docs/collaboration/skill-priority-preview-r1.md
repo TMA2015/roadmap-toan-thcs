@@ -22,4 +22,4 @@ Trang này chỉ đọc danh mục kỹ năng, Ma trận ưu tiên R1 và đư�
     - Không dùng tần suất của ba đề thi Hà Nội để áp đặt độ quan trọng quốc gia.
     - Mọi quyết định đưa nhãn này lên trang Bản đồ kỹ năng chính đều phải qua một bước duyệt giao diện riêng.
 
-[Trở lại Bản đồ kỹ năng đang sử dụng](../ban-do-ky-nang/)
+[Trở lại Bản đồ kỹ năng đang sử dụng](../../ban-do-ky-nang/)
