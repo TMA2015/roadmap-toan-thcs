@@ -18,3 +18,8 @@
     - Chưa có ngưỡng đủ bằng chứng.
     - Chưa có Readiness v2 hay khóa/mở nội dung.
     - Các tầng Entrance10, THPT-Bridge và Specialized-Challenge mặc định thu gọn và không được dùng để làm giảm Core Readiness.
+
+---
+
+!!! tip "Xem trước cách sắp xếp kỹ năng theo mức độ ưu tiên"
+    <a href="../skill-priority-preview-r1/">Mở Bản đồ ưu tiên kỹ năng R1 — bản xem trước</a>. Trang này chỉ đọc metadata học thuật đã duyệt, không thay đổi bản đồ đang phục vụ học sinh.
