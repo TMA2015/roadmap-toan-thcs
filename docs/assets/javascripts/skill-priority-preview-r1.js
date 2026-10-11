@@ -68,6 +68,7 @@
         if(/^CT\d\d$/.test(id)) topicSlugs[id]=slug;
       }
     }
+    topicSlugs.CT25="25-tong-hop-on-thi-10";
     return {rows,counts,topicSlugs};
   }
 
@@ -124,11 +125,10 @@
       controls.append(wrapper);
       return input;
     }
+    select("Lộ trình",[["core","Kiến thức cốt lõi"],["support","Kiến thức hỗ trợ"],["entrance","Ôn thi vào 10"],["optional","Mở rộng tự chọn"],["all","Tất cả 131 kỹ năng"]],
+      v=>{filters.scope=v;filters.level="all";level.value="all";render();});
     const level=select("Mức ưu tiên",[["all","Tất cả mức"],...Object.entries(PRIORITIES).map(([k,v])=>[k,v.label])],
       v=>{filters.level=v;render();});
-    select("Lộ trình",[["core","Kiến thức cốt lõi"],["support","Kiến thức hỗ trợ"],["entrance","Ôn thi vào 10"],["optional","Mở rộng tự chọn"],["all","Tất cả 131 kỹ năng"]],
-      v=>{filters.scope=v;render();});
-    // The first selector above is the priority filter; let the learner path drive the default view.
     const topicSelect=select("Chuyên đề",[["all","Tất cả chuyên đề"],...Object.keys(TOPICS).map(id=>[id,TOPICS[id]])],
       v=>{filters.topic=v;render();});
     const searchWrap=el("label","spp-control spp-search");
