@@ -9,7 +9,15 @@ const logic=require("../docs/assets/javascripts/skill-priority-preview-r1.js");
 const registry=json("docs/assets/data/curriculum/skill-taxonomy-v2-registry-r1.json");
 const matrix=json("docs/assets/data/curriculum/skill-priority-matrix-r1.json");
 const spine=json("docs/assets/data/curriculum/vertical-spine.json");
-const catalog=logic.validateAndBuild(registry,matrix,spine);
+const catalog=logic.validateAndBuild(matrix,spine);
+const registryById=new Map(registry.families.map(r=>[r.family_id,r]));
+assert.equal(registryById.size,131);
+for(const row of catalog.rows){
+  const src=registryById.get(row.family_id);
+  assert.ok(src,"unknown reviewed family");
+  assert.equal(row.layer,src.layer);
+  assert.deepEqual(row.topics,src.topics);
+}
 
 assert.equal(catalog.rows.length,131);
 assert.equal(new Set(catalog.rows.map(r=>r.family_id)).size,131);
