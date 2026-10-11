@@ -3,7 +3,7 @@
 **Workstream:** `MATH-PROGRESS-LOCAL-BACKUP-R1-20261011`  
 **Goal:** high-quality private family learning (free-first, no account/server/billing); manually transfer progress among PC, iPad and phones; a useful Math learning dashboard independent of the English app.  
 **Source:** `main` checkpoint `99a17c110328142ce004405ebb0191dcf6d08d63`.  
-**Status:** `CANDIDATE_PENDING_PR_QA_AND_OWNER_TEST`.
+**Status:** `TECHNICAL_QA_PASS_DEPLOYED_OWNER_DEVICE_QA_PENDING`.
 
 ## Scope
 
@@ -46,6 +46,12 @@ Keep backup envelopes/versioned namespaces extensible, but do not add THPT/SAT/A
 ## Handoff
 
 Branch: `feature/local-backup-dashboard-r1-20261011`.  
-PR: **#416** — https://github.com/TMA2015/roadmap-toan-thcs/pull/416 (Draft; QA pending).  
+PR: **#416 MERGED** — https://github.com/TMA2015/roadmap-toan-thcs/pull/416. Squash merge SHA: `d9095bccf2ca3c22477258beb398576923fcfa11`.
+- Roadmap PR Quality run `38158837473`: **SUCCESS**, including Node contract and browser QA.
+- Skill assessment pilot QA `38158837457`: **SUCCESS**; branding QA `38158837487`: **SUCCESS**.
+- Deploy MkDocs run `38159291713`: **SUCCESS**, HTML+JS+CSS confirmed on `gh-pages`.
+- User URL: https://tma2015.github.io/roadmap-toan-thcs/tien-do-hoc-tap/
+- Owner real-device PC/iPhone/iPad transfer QA: **NOT YET CONFIRMED**.
+- A2 learner journey observation: **OPEN / CONTINUES IN PARALLEL**.  
 Checkpoint: `docs/collaboration/release-readiness-checkpoint-20261011.md`.  
 Next: CI feedback → targeted fixes → merge only if green → verify live Pages → manual owner QA for real phone/PC.
