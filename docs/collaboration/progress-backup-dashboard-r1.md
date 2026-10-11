@@ -46,6 +46,6 @@ Keep backup envelopes/versioned namespaces extensible, but do not add THPT/SAT/A
 ## Handoff
 
 Branch: `feature/local-backup-dashboard-r1-20261011`.  
-PR: TBD.  
+PR: **#416** — https://github.com/TMA2015/roadmap-toan-thcs/pull/416 (Draft; QA pending).  
 Checkpoint: `docs/collaboration/release-readiness-checkpoint-20261011.md`.  
 Next: CI feedback → targeted fixes → merge only if green → verify live Pages → manual owner QA for real phone/PC.
