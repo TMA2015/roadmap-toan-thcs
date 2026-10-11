@@ -2,6 +2,18 @@
 
 **Current initiative:** Family-use THCS V1 Release Readiness Audit R1; future-track extension architecture feasibility (THPT/SAT/ACT), no new academic content.
 
+## RELEASED — Math Dashboard + Local Backup R1 (12/10/2026)
+
+PR #416 is merged to `main` at `d9095bccf2ca3c22477258beb398576923fcfa11`. GitHub PR Quality `38158837473`, Skill assessment pilot QA `38158837457`, branding QA `38158837487`, and Deploy MkDocs `38159291713` all **SUCCESS**. Live `gh-pages` confirmed `/tien-do-hoc-tap/index.html` and backup JS/CSS.
+
+Live user link: https://tma2015.github.io/roadmap-toan-thcs/tien-do-hoc-tap/
+
+The initial family Dashboard (read-only Practice/Readiness/Taxonomy evidence), guarded export and default missing-only JSON import have been implemented. No student history, scoring, readiness gates, or academic content were migrated. Backup integrity, default conflict preservation, explicit replacement consent, rollback, and desktop/mobile Chromium browser profile transfer passed automated QA.
+
+**OPEN owner gates:** (1) downloading and choosing files on actual Windows/iPhone/iPad/Android browsers with a *disposable* dataset; (2) A2 human learner observation, ongoing in parallel; (3) future THPT/SAT/ACT adapters, design-only. This is **not automatic cross-device sync** or proof that any lost progress can be recovered without a prior backup.
+
+The detailed handoff is `docs/collaboration/progress-backup-dashboard-r1.md`.
+
 ## Continuation — family Dashboard + manual PC/mobile progress backup (12/10/2026)
 
 Owner confirmed: daughter is using the recently improved interface and finds lesson navigation easier. Human learner A2 observation should run **in parallel**, not block technical progress. Family use remains the scope; a complete reliable product and later THPT/SAT/ACT extensibility are still the long-term goals.
