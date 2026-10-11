@@ -48,7 +48,7 @@ def validate(page):
     controls.nth(2).select_option("CT25")
     assert root.locator(".spp-card").count()>0
     for i in range(root.locator(".spp-card").count()):
-        assert "CT25" in root.locator(".spp-card").nth(i).inner_text()
+        assert "25 · Tổng hợp & ôn thi vào 10" in root.locator(".spp-card").nth(i).inner_text()
 
     controls.nth(2).select_option("all")
     controls.nth(0).select_option("core")
