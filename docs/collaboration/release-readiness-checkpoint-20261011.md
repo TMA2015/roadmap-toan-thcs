@@ -2,6 +2,18 @@
 
 **Current initiative:** Family-use THCS V1 Release Readiness Audit R1; future-track extension architecture feasibility (THPT/SAT/ACT), no new academic content.
 
+## Continuation — family Dashboard + manual PC/mobile progress backup (12/10/2026)
+
+Owner confirmed: daughter is using the recently improved interface and finds lesson navigation easier. Human learner A2 observation should run **in parallel**, not block technical progress. Family use remains the scope; a complete reliable product and later THPT/SAT/ACT extensibility are still the long-term goals.
+
+Active branch: `feature/local-backup-dashboard-r1-20261011`.
+
+The new learner screen `/tien-do-hoc-tap/` (Dashboard + local-file backup/restore) uses descriptive counters from existing Practice, Readiness and independent evidence stores. No Mastery/Readiness regrade or summing incompatible evidence. Export/import stays local, free, allowlisted, size/version/checksum validated, default missing-only and destructive replace requires destination backup + user confirmation. This is not automatic synchronization and not encrypted file storage.
+
+Durable contract and QA: `docs/collaboration/progress-backup-dashboard-r1.md`; `scripts/test-math-progress-backup-v1.js`; `scripts/test-math-progress-backup-v1-browser.py`. Parent/owner still needs a real PC/iPhone/iPad/Android file-picker test after PR QA, using a disposable profile and **not** real learner records. Do not mark device portability or user-learning A2 PASS just from a Chromium browser simulation.
+
+Current PR: see GitHub branch if PR ID is not yet recorded. Follow QA and only merge with all checks passing; live URL `https://tma2015.github.io/roadmap-toan-thcs/tien-do-hoc-tap/` is not valid as a deployed-verified link until the Pages run confirms it.
+
 ## Continuation — A2 learner QA + B1 durability (11/10/2026)
 
 Release Readiness R1 baseline PR **#414 was merged** at `6ed3e5dfa2d147031f4689b825a00c6ce45c785f`, Roadmap PR Quality run `38129119032` SUCCESS, Deploy MkDocs run `38129453318` SUCCESS. Four representative route smoke tests passed. **A1 CLOSED; A2/B1 NOT CLOSED.**
