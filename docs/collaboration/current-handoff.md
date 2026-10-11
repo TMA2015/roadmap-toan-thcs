@@ -1,5 +1,6 @@
 # Project Handoff — Self-Learning Math
 
+> **LATEST OWNER-APPROVED WORKSTREAM — 11/10/2026:** Family-use THCS V1 Release Readiness R1 + future THPT/SAT/ACT extension feasibility. For the latest active branch, QA, blockers and owner intent, read [Release Readiness Checkpoint 2026-10-11](release-readiness-checkpoint-20261011.md) and [Release Readiness Audit R1](release-readiness-audit-r1.md). Historic entries below are a preserved audit trail, not the current status. No content/runtime changes authorized by this workstream.\n\n
 > **CURRENT ARCHITECTURE CHECKPOINT — 04/10/2026.**  
 > Canonical Master Plan: **v1.2.1 — One Knowledge Graph · Two Learning Paths + Shared Written Exercise Library**.  
 > Path A = **Học theo lớp / KNTT Course Map**; Path B = **Học theo chuyên đề / 25 Vertical Spine**. Both reuse the same canonical skills/items; do not build parallel knowledge banks.  
