@@ -157,6 +157,8 @@ const proposedStore = "toan-thcs-taxonomy-v2-evidence-v1";
 const registryName = "skill-taxonomy-v2-registry-r1.json";
 const authorizedObserver = "taxonomy-v2-evidence-observer-v1.js";
 const authorizedI4Preview = "skill-map-v2-preview.js";
+const authorizedDashboard = "math-progress-dashboard-v1.js";
+const authorizedPortableBackup = "local-progress-backup-v1.js";
 for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))) {
   const content = fs.readFileSync(path.join(jsRoot, file), "utf8");
   if (file === authorizedObserver) {
@@ -166,6 +168,15 @@ for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))
     assert(content.includes(proposedStore), "authorized I4 preview must read the isolated Taxonomy v2 store");
     assert(content.includes(registryName), "authorized I4 preview must read the durable 131-family registry");
     assert(!content.includes("localStorage.setItem"), "I4 preview must remain read-only");
+  } else if (file === authorizedDashboard) {
+    assert(content.includes(proposedStore), "Math dashboard must read the isolated Taxonomy v2 store");
+    assert(!content.includes(registryName), "Math dashboard must not load registry for grading");
+    assert(!content.includes("setItem(") && !content.includes("removeItem("), "Math dashboard must be read-only");
+  } else if (file === authorizedPortableBackup) {
+    assert(content.includes(proposedStore), "Math backup must explicitly allowlist the isolated Taxonomy v2 store");
+    assert(!content.includes(registryName), "Math backup must not load the taxonomy registry");
+    assert(content.includes("validateBackup") && content.includes("planRestore") && content.includes("applyRestore"),
+      "Math backup must maintain validated restore contract");
   } else {
     assert(!content.includes(proposedStore), `unauthorized JS must not access the Taxonomy v2 store: ${file}`);
     assert(!content.includes(registryName), `unauthorized runtime JS must not load the I0 registry directly: ${file}`);
