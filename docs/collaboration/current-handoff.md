@@ -2,7 +2,7 @@
 
 > **LATEST OWNER-APPROVED WORKSTREAM — 11/10/2026:** Family-use THCS V1 Release Readiness R1 + future THPT/SAT/ACT extension feasibility. For the latest active branch, QA, blockers and owner intent, read [Release Readiness Checkpoint 2026-10-11](release-readiness-checkpoint-20261011.md) and [Release Readiness Audit R1](release-readiness-audit-r1.md). Historic entries below are a preserved audit trail, not the current status. No content/runtime changes authorized by this workstream.
 
-> **A2/B1 CONTINUATION — 11/10/2026:** See [Storage Durability Audit R1](release-readiness-b1-storage-audit-r1.md) and [Learner Journey QA R1](release-readiness-a2-learner-qa-r1.md). **A2 human learner evidence OPEN; B1 restore/durability OPEN.** Technical audit/QA only, not new Math content or runtime mutation.
+> **LATEST FEATURE WORK — 12/10/2026:** Family Math Dashboard + portable local file backup/restore, developed as a separate guarded change. Details: [Progress/Backup Dashboard R1](progress-backup-dashboard-r1.md) and [Release Readiness Checkpoint](release-readiness-checkpoint-20261011.md). A2 learner observation continues independently. Do not claim website deployment or iOS/Android manual PASS until verified.\n\n> **A2/B1 CONTINUATION — 11/10/2026:** See [Storage Durability Audit R1](release-readiness-b1-storage-audit-r1.md) and [Learner Journey QA R1](release-readiness-a2-learner-qa-r1.md). **A2 human learner evidence OPEN; B1 restore/durability OPEN.** Technical audit/QA only, not new Math content or runtime mutation.
 
 
 > **CURRENT ARCHITECTURE CHECKPOINT — 04/10/2026.**  

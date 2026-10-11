@@ -214,6 +214,8 @@ assert(g2?.runtime_rules?.core_readiness_credit === false, "G2 Readiness credit 
 const proposedStore = "toan-thcs-taxonomy-v2-evidence-v1";
 const authorizedI2Observer = "taxonomy-v2-evidence-observer-v1.js";
 const authorizedI4Preview = "skill-map-v2-preview.js";
+const authorizedDashboard = "math-progress-dashboard-v1.js";
+const authorizedPortableBackup = "local-progress-backup-v1.js";
 for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))) {
   const content = fs.readFileSync(path.join(jsRoot, file), "utf8");
   if (file === authorizedI2Observer) {
@@ -274,6 +276,15 @@ for (const file of fs.readdirSync(jsRoot).filter((name) => name.endsWith(".js"))
     assert(content.includes(proposedStore), "authorized I4 preview must read the isolated Taxonomy v2 store");
     assert(!content.includes("taxonomy-v2-runtime/"), "I4 preview must not load compiled item policies directly");
     assert(!content.includes("localStorage.setItem"), "I4 preview must remain read-only");
+  } else if (file === authorizedDashboard) {
+    assert(content.includes(proposedStore), "Math dashboard must read the isolated Taxonomy store");
+    assert(!content.includes("taxonomy-v2-runtime/"), "Math dashboard must never load item policies");
+    assert(!content.includes("setItem(") && !content.includes("removeItem("), "Math dashboard must remain read-only");
+  } else if (file === authorizedPortableBackup) {
+    assert(content.includes(proposedStore), "Portable backup must explicitly allowlist the isolated store");
+    assert(!content.includes("taxonomy-v2-runtime/"), "Backup must never load item policies");
+    assert(content.includes("validateBackup") && content.includes("planRestore") && content.includes("applyRestore"),
+      "Portable backup restore must retain validation and preview boundaries");
   } else {
     assert(!content.includes(proposedStore), `unauthorized JS must not access the Taxonomy v2 store: ${file}`);
     assert(!content.includes("taxonomy-v2-runtime/"), `only the authorized observer may load a Taxonomy v2 runtime path: ${file}`);
