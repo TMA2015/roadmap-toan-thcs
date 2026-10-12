@@ -11,7 +11,7 @@
 - Separate panels show most practiced legacy tags (correct/attempted) and recent submitted Readiness results. No new grading, aggregate mastery, thresholds or readiness gates.
 - Local-only manual backup/restore in the same page, independent of Firebase/Gemini. Exports only known browser storage keys; no network calls, no user accounts.
 - User experience: file download on source device, transfer file manually (AirDrop, cable, email/file manager etc.), select file on destination device, review conflicts, restore.
-- **Default = ADD_MISSING_ONLY**. An existing key is preserved even if its value differs. Conflict `REPLACE` requires a **fresh downloaded backup of destination data**, an explicit checkbox and a final confirmation. No automatic merge of counters, timestamps or grade history.
+- **Default = ADD_MISSING_ONLY**. An existing key is preserved even if its value differs. The dry-run must distinguish **identical data** from **skipped conflicting data**, list the exact keys and warn that skipped progress was not transferred. Conflict `REPLACE` requires a **fresh downloaded backup of destination data**, an explicit checkbox and a final confirmation. If any destination allowlisted data changes after that pre-replace backup was generated, the safety acknowledgment expires and another backup is required. No automatic merge of counters, timestamps or grade history.
 
 ## Contract and safety
 
