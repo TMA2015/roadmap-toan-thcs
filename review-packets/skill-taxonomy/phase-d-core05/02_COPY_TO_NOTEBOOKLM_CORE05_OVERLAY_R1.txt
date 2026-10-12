@@ -1,0 +1,32 @@
+Bạn đang phản biện độc lập Skill Taxonomy Phase D cho Self-Learning Math, phạm vi toàn bộ CĐ05.
+
+Chỉ dùng source “01_UPLOAD_TO_NOTEBOOKLM_CORE05_OVERLAY_R1.md”, packet MATH-SKILL-CORE05-OVERLAY-R1-20260930, exact Git blob a16a7781d858e55e7ba3e517b66dc9ec9294b3da.
+
+Hãy kiểm đủ 120/120 question mappings ID05V1_001–120 và 21 clone-family candidates.
+
+Nguyên tắc:
+- tối đa 1 canonical assessed skill / question;
+- primary skill phải theo requested output, không phải mọi tag/phương pháp xuất hiện;
+- category/supporting/diagnostic metadata không được tính mastery độc lập từ cùng một answer;
+- observable_evidence_class phải phản ánh đúng giới hạn của MCQ;
+- PENDING task-family/composite/proof-writing items không được ép thành counter chỉ để đủ coverage;
+- clone family dùng de-dup evidence tương lai, không xóa câu luyện tập.
+
+Kiểm kỹ:
+- 079 = binh-phuong-tong; 080 = binh-phuong-hieu; nhan-dang-hdt chỉ metadata;
+- 082–084 = nhan-dang-lap-phuong diagnostic primary;
+- 090 = lap-phuong-hieu primary + nhan-dang-lap-phuong supporting;
+- 091–100 = NO primary, FORMATIVE_ONLY_METHOD_NOT_OBSERVED;
+- 101–115 = NO primary, FORMATIVE_ONLY_COMPOSITE;
+- 116–118 = NO primary, MCQ_ARGUMENT_RECOGNITION_ONLY, written evidence required;
+- 119 = NO primary, MCQ_METHOD_SELECTION_ONLY, written evidence required;
+- 120 = hieu-hai-binh-phuong scoped primary for first step only.
+
+Trả đúng:
+1) Packet ID + verdict PASS / REVISIONS_REQUIRED / INSUFFICIENT_EVIDENCE.
+2) Coverage 120/120.
+3) Revision table ONLY: ID | field | current | corrected | reason. Nếu không có ghi 0 revisions.
+4) Clone-family table 21 dòng PASS/REVISE + membership.
+5) Xác nhận riêng cho 079,080,082–084,090,091–100,101–115,116–119,120.
+6) Final counts theo canonical assessed skill + formative-only.
+7) Xác nhận không runtime, không sửa legacy tags, không backfill/regrade lịch sử, không Core Readiness credit, không đặt mastery threshold.

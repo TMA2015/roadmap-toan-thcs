@@ -1,0 +1,3635 @@
+# NotebookLM source — Skill Taxonomy Phase D / CĐ05 full-bank primary-evidence overlay R1
+
+**Packet ID:** `MATH-SKILL-CORE05-OVERLAY-R1-20260930`  
+**State:** `READ_ONLY / PROPOSAL_ONLY / NOT_RUNTIME_ENABLED`  
+**Overlay Git blob:** `6d2a872d229c8c34cf2232ed55c9ef2a2a64468e`
+
+## Scope
+
+Review the full current CĐ05 bank: **120/120 questions** (`ID05V1_001–120`). The goal is to assign at most one canonical assessed skill per question, while preserving supporting skill / method / category metadata and keeping task-family/composite/proof-writing items formative-only when the current MCQ answer cannot isolate the target competency.
+
+This packet does **not** change any question, answer, tag, learner record, Core Readiness score or runtime counter.
+
+## Source locks
+
+- `05-7-hang-dang-thuc-v1-01.json`: blob `6bb054851b281e495b02a55bf65008a08ad82218`
+- `05-7-hang-dang-thuc-v1-02.json`: blob `68c2d51a80b2eb9bdfe57cf62d2a790e88b4a05d`
+- `05-7-hang-dang-thuc-v1-03.json`: blob `fa18b11a46d5aad8e47813d3cc83549cd5769ac4`
+- `05-7-hang-dang-thuc-v1-04.json`: blob `c1edbbe7eba0d144a32d54cb384eb1ec09f156c8`
+
+Reviewed upstream gates:
+- Phase A `MATH-SKILL-TAXONOMY-39-R1-20260930`: PASS 39/39, 9/9 clone families.
+- Phase B `MATH-SKILL-CODE52-R1-20260930`: PASS 52/52 codes, 55/55 occurrences, 0 revisions.
+- CĐ04 full-bank overlay `MATH-SKILL-CORE04-OVERLAY-R1-20260930`: PASS 132/132, 13/13 clone families.
+
+## Candidate mapping summary
+
+- 120 questions total.
+- 91 questions have one canonical assessed-skill candidate.
+- 29 questions intentionally have **no primary assessed skill**:
+  - `ID05V1_091–100`: `tinh-nhanh-hdt` remains PENDING task-family; a correct numeric answer does not prove use of the identity method.
+  - `ID05V1_101–110`: `rut-gon-hdt` remains PENDING task-family; final output does not isolate one specific canonical identity skill.
+  - `ID05V1_111–115`: `giai-phuong-trinh-hdt` remains PENDING composite skill; final solution alone does not isolate the intended process.
+  - `ID05V1_116–119`: `chung-minh-hdt` is a valid competency, but these MCQs provide only recognition/method-selection evidence; written evidence is required before mastery.
+- No runtime or Core Readiness credit.
+
+Primary candidate counts:
+- `binh-phuong-tong`: 12
+- `binh-phuong-hieu`: 12
+- `hieu-hai-binh-phuong`: 13
+- `lap-phuong-tong`: 8
+- `lap-phuong-hieu`: 9
+- `tong-hai-lap-phuong`: 9
+- `hieu-hai-lap-phuong`: 9
+- `binh-phuong-hoan-chinh`: 16
+- `nhan-dang-lap-phuong`: 3
+
+## Special decisions to inspect carefully
+
+- `ID05V1_075–078`: specific identity skill is primary; broad `nhan-dang-hdt` is category metadata.
+- `ID05V1_079`: candidate primary `binh-phuong-tong`; broad legacy `nhan-dang-hdt` is metadata-only.
+- `ID05V1_080`: candidate primary `binh-phuong-hieu`; broad legacy `nhan-dang-hdt` is metadata-only.
+- `ID05V1_081`: `hieu-hai-binh-phuong` primary; `nhan-dang-hdt` metadata-only.
+- `ID05V1_082–084`: `nhan-dang-lap-phuong` diagnostic skill is primary; specific cube-identity tag is supporting.
+- `ID05V1_085–089`: specific identity skill is primary; `phan-tich-hdt` remains parent-category metadata.
+- `ID05V1_090`: `lap-phuong-hieu` primary; `nhan-dang-lap-phuong` supporting.
+- `ID05V1_091–100`: no primary, `FORMATIVE_ONLY_METHOD_NOT_OBSERVED`.
+- `ID05V1_101–115`: no primary, `FORMATIVE_ONLY_COMPOSITE`.
+- `ID05V1_116–118`: no primary, `FORMATIVE_ONLY_WRITTEN_EVIDENCE_REQUIRED`, `MCQ_ARGUMENT_RECOGNITION_ONLY`.
+- `ID05V1_119`: no primary, `FORMATIVE_ONLY_WRITTEN_EVIDENCE_REQUIRED`, `MCQ_METHOD_SELECTION_ONLY`.
+- `ID05V1_120`: preserve reviewed scoped primary `hieu-hai-binh-phuong`; this is only first-step recognition, not complete factorization mastery.
+
+## Clone-family candidate policy
+
+Clone families are conservative evidence de-duplication candidates only. They do not remove practice questions and are not active in runtime.
+
+Proposed 21 families:
+- ID05-BP-TONG-001-010
+- ID05-BP-HIEU-011-020
+- ID05-HIEU-HAI-BP-021-030
+- ID05-LP-TONG-031-038
+- ID05-LP-HIEU-039-046
+- ID05-TONG-HAI-LP-047-053
+- ID05-HIEU-HAI-LP-054-060
+- ID05-BP-HOANCHINH-WRITE-061-068
+- ID05-BP-HOANCHINH-K-069-074
+- ID05-FORMULA-RECOGNITION-075-078
+- ID05-SQUARE-AB-RECOGNITION-079-080
+- ID05-CUBE-AB-RECOGNITION-082-084
+- ID05-FAST-BP-TONG-091-095-098-100
+- ID05-FAST-BP-HIEU-092-096-097
+- ID05-FAST-HIEU-HAI-BP-093-094-099
+- ID05-RUTGON-SQUARE-101-104
+- ID05-RUTGON-CUBE-105-106
+- ID05-RUTGON-DIFFSQ-107-108
+- ID05-RUTGON-CUBEQUOTIENT-109-110
+- ID05-EQ-SQUARE-DIFF-111-112
+- ID05-PROOF-RECOGNITION-116-118
+
+Singleton or structurally distinct items (081, 085–090, 113–115, 119–120) are intentionally not forced into clone families.
+
+## Full candidate overlay
+
+```json
+{
+  "schema": "primary-skill-overlay-core05-phase-d-r1",
+  "status": "CHATGPT_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+  "as_of": "2026-09-30",
+  "topic": "05-7-hang-dang-thuc",
+  "source_files": {
+    "05-7-hang-dang-thuc-v1-01.json": {
+      "blob": "6bb054851b281e495b02a55bf65008a08ad82218",
+      "question_count": 30
+    },
+    "05-7-hang-dang-thuc-v1-02.json": {
+      "blob": "68c2d51a80b2eb9bdfe57cf62d2a790e88b4a05d",
+      "question_count": 30
+    },
+    "05-7-hang-dang-thuc-v1-03.json": {
+      "blob": "fa18b11a46d5aad8e47813d3cc83549cd5769ac4",
+      "question_count": 30
+    },
+    "05-7-hang-dang-thuc-v1-04.json": {
+      "blob": "c1edbbe7eba0d144a32d54cb384eb1ec09f156c8",
+      "question_count": 30
+    }
+  },
+  "academic_basis": {
+    "phase_a": "MATH-SKILL-TAXONOMY-39-R1-20260930 PASS",
+    "phase_b": "MATH-SKILL-CODE52-R1-20260930 PASS",
+    "core04_method": "MATH-SKILL-CORE04-OVERLAY-R1-20260930 PASS; same bounded overlay methodology"
+  },
+  "rules": {
+    "one_assessed_skill_max_per_question": true,
+    "no_primary_when_current_evidence_cannot_isolate_skill": true,
+    "supporting_method_context_category_not_independent_mastery": true,
+    "pending_task_or_composite_items_formative_only": true,
+    "clone_family_not_multiple_independent_mastery_events": true,
+    "legacy_question_content_answer_tags_immutable": true,
+    "runtime_enabled": false,
+    "no_history_backfill": true
+  },
+  "summary": {
+    "questions": 120,
+    "mapped_primary": 91,
+    "formative_only_without_primary": 29,
+    "primary_counts": {
+      "binh-phuong-tong": 12,
+      "binh-phuong-hieu": 12,
+      "hieu-hai-binh-phuong": 13,
+      "lap-phuong-tong": 8,
+      "lap-phuong-hieu": 9,
+      "tong-hai-lap-phuong": 9,
+      "hieu-hai-lap-phuong": 9,
+      "binh-phuong-hoan-chinh": 16,
+      "nhan-dang-lap-phuong": 3
+    },
+    "clone_families": [
+      {
+        "id": "ID05-BP-TONG-001-010",
+        "count": 10,
+        "ids": [
+          "ID05V1_001",
+          "ID05V1_002",
+          "ID05V1_003",
+          "ID05V1_004",
+          "ID05V1_005",
+          "ID05V1_006",
+          "ID05V1_007",
+          "ID05V1_008",
+          "ID05V1_009",
+          "ID05V1_010"
+        ]
+      },
+      {
+        "id": "ID05-BP-HIEU-011-020",
+        "count": 10,
+        "ids": [
+          "ID05V1_011",
+          "ID05V1_012",
+          "ID05V1_013",
+          "ID05V1_014",
+          "ID05V1_015",
+          "ID05V1_016",
+          "ID05V1_017",
+          "ID05V1_018",
+          "ID05V1_019",
+          "ID05V1_020"
+        ]
+      },
+      {
+        "id": "ID05-HIEU-HAI-BP-021-030",
+        "count": 10,
+        "ids": [
+          "ID05V1_021",
+          "ID05V1_022",
+          "ID05V1_023",
+          "ID05V1_024",
+          "ID05V1_025",
+          "ID05V1_026",
+          "ID05V1_027",
+          "ID05V1_028",
+          "ID05V1_029",
+          "ID05V1_030"
+        ]
+      },
+      {
+        "id": "ID05-LP-TONG-031-038",
+        "count": 8,
+        "ids": [
+          "ID05V1_031",
+          "ID05V1_032",
+          "ID05V1_033",
+          "ID05V1_034",
+          "ID05V1_035",
+          "ID05V1_036",
+          "ID05V1_037",
+          "ID05V1_038"
+        ]
+      },
+      {
+        "id": "ID05-LP-HIEU-039-046",
+        "count": 8,
+        "ids": [
+          "ID05V1_039",
+          "ID05V1_040",
+          "ID05V1_041",
+          "ID05V1_042",
+          "ID05V1_043",
+          "ID05V1_044",
+          "ID05V1_045",
+          "ID05V1_046"
+        ]
+      },
+      {
+        "id": "ID05-TONG-HAI-LP-047-053",
+        "count": 7,
+        "ids": [
+          "ID05V1_047",
+          "ID05V1_048",
+          "ID05V1_049",
+          "ID05V1_050",
+          "ID05V1_051",
+          "ID05V1_052",
+          "ID05V1_053"
+        ]
+      },
+      {
+        "id": "ID05-HIEU-HAI-LP-054-060",
+        "count": 7,
+        "ids": [
+          "ID05V1_054",
+          "ID05V1_055",
+          "ID05V1_056",
+          "ID05V1_057",
+          "ID05V1_058",
+          "ID05V1_059",
+          "ID05V1_060"
+        ]
+      },
+      {
+        "id": "ID05-BP-HOANCHINH-WRITE-061-068",
+        "count": 8,
+        "ids": [
+          "ID05V1_061",
+          "ID05V1_062",
+          "ID05V1_063",
+          "ID05V1_064",
+          "ID05V1_065",
+          "ID05V1_066",
+          "ID05V1_067",
+          "ID05V1_068"
+        ]
+      },
+      {
+        "id": "ID05-BP-HOANCHINH-K-069-074",
+        "count": 6,
+        "ids": [
+          "ID05V1_069",
+          "ID05V1_070",
+          "ID05V1_071",
+          "ID05V1_072",
+          "ID05V1_073",
+          "ID05V1_074"
+        ]
+      },
+      {
+        "id": "ID05-FORMULA-RECOGNITION-075-078",
+        "count": 4,
+        "ids": [
+          "ID05V1_075",
+          "ID05V1_076",
+          "ID05V1_077",
+          "ID05V1_078"
+        ]
+      },
+      {
+        "id": "ID05-SQUARE-AB-RECOGNITION-079-080",
+        "count": 2,
+        "ids": [
+          "ID05V1_079",
+          "ID05V1_080"
+        ]
+      },
+      {
+        "id": "ID05-CUBE-AB-RECOGNITION-082-084",
+        "count": 3,
+        "ids": [
+          "ID05V1_082",
+          "ID05V1_083",
+          "ID05V1_084"
+        ]
+      },
+      {
+        "id": "ID05-FAST-BP-TONG-091-095-098-100",
+        "count": 4,
+        "ids": [
+          "ID05V1_091",
+          "ID05V1_095",
+          "ID05V1_098",
+          "ID05V1_100"
+        ]
+      },
+      {
+        "id": "ID05-FAST-BP-HIEU-092-096-097",
+        "count": 3,
+        "ids": [
+          "ID05V1_092",
+          "ID05V1_096",
+          "ID05V1_097"
+        ]
+      },
+      {
+        "id": "ID05-FAST-HIEU-HAI-BP-093-094-099",
+        "count": 3,
+        "ids": [
+          "ID05V1_093",
+          "ID05V1_094",
+          "ID05V1_099"
+        ]
+      },
+      {
+        "id": "ID05-RUTGON-SQUARE-101-104",
+        "count": 4,
+        "ids": [
+          "ID05V1_101",
+          "ID05V1_102",
+          "ID05V1_103",
+          "ID05V1_104"
+        ]
+      },
+      {
+        "id": "ID05-RUTGON-CUBE-105-106",
+        "count": 2,
+        "ids": [
+          "ID05V1_105",
+          "ID05V1_106"
+        ]
+      },
+      {
+        "id": "ID05-RUTGON-DIFFSQ-107-108",
+        "count": 2,
+        "ids": [
+          "ID05V1_107",
+          "ID05V1_108"
+        ]
+      },
+      {
+        "id": "ID05-RUTGON-CUBEQUOTIENT-109-110",
+        "count": 2,
+        "ids": [
+          "ID05V1_109",
+          "ID05V1_110"
+        ]
+      },
+      {
+        "id": "ID05-EQ-SQUARE-DIFF-111-112",
+        "count": 2,
+        "ids": [
+          "ID05V1_111",
+          "ID05V1_112"
+        ]
+      },
+      {
+        "id": "ID05-PROOF-RECOGNITION-116-118",
+        "count": 3,
+        "ids": [
+          "ID05V1_116",
+          "ID05V1_117",
+          "ID05V1_118"
+        ]
+      }
+    ],
+    "runtime_enabled": 0
+  },
+  "items": [
+    {
+      "question_id": "ID05V1_001",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-TONG-001-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((x+2)^2\\).",
+      "correct_option": "\\(x^{2} + 4 x + 4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_002",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-TONG-001-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((x+3)^2\\).",
+      "correct_option": "\\(x^{2} + 6 x + 9\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_003",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-TONG-001-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((2x+1)^2\\).",
+      "correct_option": "\\(4 x^{2} + 4 x + 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_004",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-TONG-001-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((2x+3)^2\\).",
+      "correct_option": "\\(4 x^{2} + 12 x + 9\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_005",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-TONG-001-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((3x+2)^2\\).",
+      "correct_option": "\\(9 x^{2} + 12 x + 4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_006",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-TONG-001-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((4x+1)^2\\).",
+      "correct_option": "\\(16 x^{2} + 8 x + 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_007",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-TONG-001-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((x+5)^2\\).",
+      "correct_option": "\\(x^{2} + 10 x + 25\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_008",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-TONG-001-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((3x+4)^2\\).",
+      "correct_option": "\\(9 x^{2} + 24 x + 16\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_009",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-TONG-001-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((5x+2)^2\\).",
+      "correct_option": "\\(25 x^{2} + 20 x + 4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_010",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-TONG-001-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((2x+5)^2\\).",
+      "correct_option": "\\(4 x^{2} + 20 x + 25\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_011",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HIEU-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((x-2)^2\\).",
+      "correct_option": "\\(x^{2} - 4 x + 4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_012",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HIEU-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((x-4)^2\\).",
+      "correct_option": "\\(x^{2} - 8 x + 16\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_013",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HIEU-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((2x-1)^2\\).",
+      "correct_option": "\\(4 x^{2} - 4 x + 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_014",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HIEU-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((2x-3)^2\\).",
+      "correct_option": "\\(4 x^{2} - 12 x + 9\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_015",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HIEU-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((3x-1)^2\\).",
+      "correct_option": "\\(9 x^{2} - 6 x + 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_016",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HIEU-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((3x-5)^2\\).",
+      "correct_option": "\\(9 x^{2} - 30 x + 25\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_017",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HIEU-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((4x-2)^2\\).",
+      "correct_option": "\\(16 x^{2} - 16 x + 4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_018",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HIEU-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((5x-1)^2\\).",
+      "correct_option": "\\(25 x^{2} - 10 x + 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_019",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HIEU-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((2x-5)^2\\).",
+      "correct_option": "\\(4 x^{2} - 20 x + 25\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_020",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HIEU-011-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((4x-3)^2\\).",
+      "correct_option": "\\(16 x^{2} - 24 x + 9\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_021",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-BP-021-030",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(x^{2} - 16\\) thành nhân tử.",
+      "correct_option": "\\((x - 4)(x + 4)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_022",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-BP-021-030",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(x^{2} - 81\\) thành nhân tử.",
+      "correct_option": "\\((x - 9)(x + 9)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_023",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-BP-021-030",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(4 x^{2} - 9\\) thành nhân tử.",
+      "correct_option": "\\((2 x - 3)(2 x + 3)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_024",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-BP-021-030",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(9 x^{2} - 4\\) thành nhân tử.",
+      "correct_option": "\\((3 x - 2)(3 x + 2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_025",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-BP-021-030",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(16 x^{2} - 25\\) thành nhân tử.",
+      "correct_option": "\\((4 x - 5)(4 x + 5)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_026",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-BP-021-030",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(25 x^{2} - 9\\) thành nhân tử.",
+      "correct_option": "\\((5 x - 3)(5 x + 3)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_027",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-BP-021-030",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(4 x^{2} - 49\\) thành nhân tử.",
+      "correct_option": "\\((2 x - 7)(2 x + 7)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_028",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-BP-021-030",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(36 x^{2} - 1\\) thành nhân tử.",
+      "correct_option": "\\((6 x - 1)(6 x + 1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_029",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-BP-021-030",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(9 x^{2} - 25\\) thành nhân tử.",
+      "correct_option": "\\((3 x - 5)(3 x + 5)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_030",
+      "source_file": "05-7-hang-dang-thuc-v1-01.json",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-BP-021-030",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(49 x^{2} - 4\\) thành nhân tử.",
+      "correct_option": "\\((7 x - 2)(7 x + 2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_031",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-TONG-031-038",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((x+1)^3\\).",
+      "correct_option": "\\(x^{3} + 3 x^{2} + 3 x + 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_032",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-TONG-031-038",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((x+2)^3\\).",
+      "correct_option": "\\(x^{3} + 6 x^{2} + 12 x + 8\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_033",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-TONG-031-038",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((x+3)^3\\).",
+      "correct_option": "\\(x^{3} + 9 x^{2} + 27 x + 27\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_034",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-TONG-031-038",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((2x+1)^3\\).",
+      "correct_option": "\\(8 x^{3} + 12 x^{2} + 6 x + 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_035",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-TONG-031-038",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((2x+2)^3\\).",
+      "correct_option": "\\(8 x^{3} + 24 x^{2} + 24 x + 8\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_036",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-TONG-031-038",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((2x+3)^3\\).",
+      "correct_option": "\\(8 x^{3} + 36 x^{2} + 54 x + 27\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_037",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-TONG-031-038",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((3x+1)^3\\).",
+      "correct_option": "\\(27 x^{3} + 27 x^{2} + 9 x + 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_038",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-TONG-031-038",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((3x+2)^3\\).",
+      "correct_option": "\\(27 x^{3} + 54 x^{2} + 36 x + 8\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_039",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-HIEU-039-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((x-1)^3\\).",
+      "correct_option": "\\(x^{3} - 3 x^{2} + 3 x - 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_040",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-HIEU-039-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((x-2)^3\\).",
+      "correct_option": "\\(x^{3} - 6 x^{2} + 12 x - 8\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_041",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-HIEU-039-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((x-3)^3\\).",
+      "correct_option": "\\(x^{3} - 9 x^{2} + 27 x - 27\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_042",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-HIEU-039-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((2x-1)^3\\).",
+      "correct_option": "\\(8 x^{3} - 12 x^{2} + 6 x - 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_043",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-HIEU-039-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((2x-2)^3\\).",
+      "correct_option": "\\(8 x^{3} - 24 x^{2} + 24 x - 8\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_044",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-HIEU-039-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((2x-3)^3\\).",
+      "correct_option": "\\(8 x^{3} - 36 x^{2} + 54 x - 27\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_045",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-HIEU-039-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((3x-1)^3\\).",
+      "correct_option": "\\(27 x^{3} - 27 x^{2} + 9 x - 1\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_046",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "lap-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-LP-HIEU-039-046",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khai triển \\((3x-2)^3\\).",
+      "correct_option": "\\(27 x^{3} - 54 x^{2} + 36 x - 8\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_047",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "tong-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "tong-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-TONG-HAI-LP-047-053",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(x^{3} + 1\\) thành nhân tử.",
+      "correct_option": "\\((x + 1)(x^{2} - x + 1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_048",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "tong-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "tong-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-TONG-HAI-LP-047-053",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(x^{3} + 8\\) thành nhân tử.",
+      "correct_option": "\\((x + 2)(x^{2} - 2 x + 4)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_049",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "tong-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "tong-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-TONG-HAI-LP-047-053",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(x^{3} + 27\\) thành nhân tử.",
+      "correct_option": "\\((x + 3)(x^{2} - 3 x + 9)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_050",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "tong-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "tong-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-TONG-HAI-LP-047-053",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(8 x^{3} + 1\\) thành nhân tử.",
+      "correct_option": "\\((2 x + 1)(4 x^{2} - 2 x + 1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_051",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "tong-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "tong-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-TONG-HAI-LP-047-053",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(8 x^{3} + 27\\) thành nhân tử.",
+      "correct_option": "\\((2 x + 3)(4 x^{2} - 6 x + 9)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_052",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "tong-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "tong-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-TONG-HAI-LP-047-053",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(27 x^{3} + 1\\) thành nhân tử.",
+      "correct_option": "\\((3 x + 1)(9 x^{2} - 3 x + 1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_053",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "tong-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "tong-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-TONG-HAI-LP-047-053",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(27 x^{3} + 8\\) thành nhân tử.",
+      "correct_option": "\\((3 x + 2)(9 x^{2} - 6 x + 4)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_054",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "hieu-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-LP-054-060",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(x^{3} - 1\\) thành nhân tử.",
+      "correct_option": "\\((x - 1)(x^{2} + x + 1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_055",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "hieu-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-LP-054-060",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(x^{3} - 8\\) thành nhân tử.",
+      "correct_option": "\\((x - 2)(x^{2} + 2 x + 4)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_056",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "hieu-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-LP-054-060",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(x^{3} - 27\\) thành nhân tử.",
+      "correct_option": "\\((x - 3)(x^{2} + 3 x + 9)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_057",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "hieu-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-LP-054-060",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(8 x^{3} - 1\\) thành nhân tử.",
+      "correct_option": "\\((2 x - 1)(4 x^{2} + 2 x + 1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_058",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "hieu-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-LP-054-060",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(8 x^{3} - 27\\) thành nhân tử.",
+      "correct_option": "\\((2 x - 3)(4 x^{2} + 6 x + 9)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_059",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "hieu-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-LP-054-060",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(27 x^{3} - 1\\) thành nhân tử.",
+      "correct_option": "\\((3 x - 1)(9 x^{2} + 3 x + 1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_060",
+      "source_file": "05-7-hang-dang-thuc-v1-02.json",
+      "legacy_skill_tags": [
+        "hieu-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-HIEU-HAI-LP-054-060",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Phân tích \\(27 x^{3} - 8\\) thành nhân tử.",
+      "correct_option": "\\((3 x - 2)(9 x^{2} + 6 x + 4)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_061",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-WRITE-061-068",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Viết \\(x^{2} + 4 x + 4\\) dưới dạng bình phương của một tổng hoặc hiệu.",
+      "correct_option": "\\((x + 2)^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_062",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-WRITE-061-068",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Viết \\(x^{2} + 6 x + 9\\) dưới dạng bình phương của một tổng hoặc hiệu.",
+      "correct_option": "\\((x + 3)^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_063",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-WRITE-061-068",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Viết \\(4 x^{2} + 4 x + 1\\) dưới dạng bình phương của một tổng hoặc hiệu.",
+      "correct_option": "\\((2 x + 1)^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_064",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-WRITE-061-068",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Viết \\(4 x^{2} + 12 x + 9\\) dưới dạng bình phương của một tổng hoặc hiệu.",
+      "correct_option": "\\((2 x + 3)^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_065",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-WRITE-061-068",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Viết \\(9 x^{2} + 12 x + 4\\) dưới dạng bình phương của một tổng hoặc hiệu.",
+      "correct_option": "\\((3 x + 2)^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_066",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-WRITE-061-068",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Viết \\(x^{2} - 8 x + 16\\) dưới dạng bình phương của một tổng hoặc hiệu.",
+      "correct_option": "\\((x - 4)^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_067",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-WRITE-061-068",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Viết \\(4 x^{2} - 4 x + 1\\) dưới dạng bình phương của một tổng hoặc hiệu.",
+      "correct_option": "\\((2 x - 1)^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_068",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-WRITE-061-068",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Viết \\(9 x^{2} - 12 x + 4\\) dưới dạng bình phương của một tổng hoặc hiệu.",
+      "correct_option": "\\((3 x - 2)^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_069",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-K-069-074",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(k\\) để \\(x^2+kx+4\\) là bình phương hoàn chỉnh \\((x+2)^2\\).",
+      "correct_option": "\\(4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_070",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-K-069-074",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(k\\) để \\(x^2+kx+25\\) là bình phương hoàn chỉnh \\((x+5)^2\\).",
+      "correct_option": "\\(10\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_071",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-K-069-074",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(k\\) để \\(4x^2+kx+9\\) là bình phương hoàn chỉnh \\((2x+3)^2\\).",
+      "correct_option": "\\(12\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_072",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-K-069-074",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(k\\) để \\(9x^2+kx+4\\) là bình phương hoàn chỉnh \\((3x+2)^2\\).",
+      "correct_option": "\\(12\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_073",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-K-069-074",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(k\\) để \\(x^2+kx+16\\) là bình phương hoàn chỉnh \\((x-4)^2\\).",
+      "correct_option": "\\(-8\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_074",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-BP-HOANCHINH-K-069-074",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tìm \\(k\\) để \\(4x^2+kx+25\\) là bình phương hoàn chỉnh \\((2x-5)^2\\).",
+      "correct_option": "\\(-20\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_075",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-tong",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "recognition_interpretation",
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "ID05-FORMULA-RECOGNITION-075-078",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biểu thức nào bằng \\((A+B)^2\\)?",
+      "correct_option": "\\(A^2+2AB+B^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_076",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hieu",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "recognition_interpretation",
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "ID05-FORMULA-RECOGNITION-075-078",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biểu thức nào bằng \\((A-B)^2\\)?",
+      "correct_option": "\\(A^2-2AB+B^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_077",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-hai-lap-phuong",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "tong-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "recognition_interpretation",
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "ID05-FORMULA-RECOGNITION-075-078",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biểu thức nào bằng \\(A^3+B^3\\)?",
+      "correct_option": "\\((A+B)(A^2-AB+B^2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_078",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "hieu-hai-lap-phuong",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "recognition_interpretation",
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "ID05-FORMULA-RECOGNITION-075-078",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Biểu thức nào bằng \\(A^3-B^3\\)?",
+      "correct_option": "\\((A-B)(A^2+AB+B^2)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_079",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-tong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "recognition_interpretation",
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "ID05-SQUARE-AB-RECOGNITION-079-080",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khi áp dụng hằng đẳng thức cho \\((2x+3y)^2\\), chọn đúng \\(A,B\\).",
+      "correct_option": "\\(A=2x,\\ B=3y\\)",
+      "note": "Broad legacy nhan-dang-hdt is NO-counter parent; requested structure is specifically square-of-sum.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_080",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "recognition_interpretation",
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "ID05-SQUARE-AB-RECOGNITION-079-080",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khi áp dụng hằng đẳng thức dạng \\((A-B)^2\\) cho \\((3x-5)^2\\), chọn đúng \\(A,B\\).",
+      "correct_option": "\\(A=3x,\\ B=5\\)",
+      "note": "Broad legacy nhan-dang-hdt is NO-counter parent; requested structure is specifically square-of-difference.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_081",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "nhan-dang-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "nhan-dang-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "recognition_interpretation",
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khi áp dụng hằng đẳng thức cho \\(4x^2-25\\), chọn đúng \\(A,B\\).",
+      "correct_option": "\\(A=2x,\\ B=5\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_082",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-hai-lap-phuong",
+        "nhan-dang-lap-phuong"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [
+        "tong-hai-lap-phuong"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "recognition_interpretation",
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "ID05-CUBE-AB-RECOGNITION-082-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khi áp dụng hằng đẳng thức cho \\(8x^3+27\\), chọn đúng \\(A,B\\).",
+      "correct_option": "\\(A=2x,\\ B=3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_083",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "hieu-hai-lap-phuong",
+        "nhan-dang-lap-phuong"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [
+        "hieu-hai-lap-phuong"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "recognition_interpretation",
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "ID05-CUBE-AB-RECOGNITION-082-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khi áp dụng hằng đẳng thức cho \\(27x^3-64\\), chọn đúng \\(A,B\\).",
+      "correct_option": "\\(A=3x,\\ B=4\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_084",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "lap-phuong-tong",
+        "nhan-dang-lap-phuong"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-dang-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [
+        "lap-phuong-tong"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "recognition_interpretation",
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "ID05-CUBE-AB-RECOGNITION-082-084",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khi áp dụng hằng đẳng thức cho \\((x+2y)^3\\), chọn đúng \\(A,B\\).",
+      "correct_option": "\\(A=x,\\ B=2y\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_085",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng và viết \\(x^2+12x+36\\) dưới dạng gọn nhất bằng hằng đẳng thức.",
+      "correct_option": "\\((x+6)^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_086",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "binh-phuong-hoan-chinh",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "binh-phuong-hoan-chinh",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng và viết \\(9x^2-30x+25\\) dưới dạng gọn nhất bằng hằng đẳng thức.",
+      "correct_option": "\\((3x-5)^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_087",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "hieu-hai-binh-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng và viết \\(25x^2-49\\) dưới dạng gọn nhất bằng hằng đẳng thức.",
+      "correct_option": "\\((5x-7)(5x+7)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_088",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "tong-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "tong-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng và viết \\(x^3+27\\) dưới dạng gọn nhất bằng hằng đẳng thức.",
+      "correct_option": "\\((x+3)(x^2-3x+9)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_089",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "hieu-hai-lap-phuong",
+        "phan-tich-hdt"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-lap-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng và viết \\(8x^3-1\\) dưới dạng gọn nhất bằng hằng đẳng thức.",
+      "correct_option": "\\((2x-1)(4x^2+2x+1)\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_090",
+      "source_file": "05-7-hang-dang-thuc-v1-03.json",
+      "legacy_skill_tags": [
+        "lap-phuong-hieu",
+        "nhan-dang-lap-phuong"
+      ],
+      "canonical_assessed_skill_candidate": "lap-phuong-hieu",
+      "intended_competency_or_task": null,
+      "supporting_skills": [
+        "nhan-dang-lap-phuong"
+      ],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng và viết \\(x^3-6x^2+12x-8\\) dưới dạng gọn nhất bằng hằng đẳng thức.",
+      "correct_option": "\\((x-2)^3\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_091",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-nhanh-hdt",
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "binh-phuong-tong",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "tinh-nhanh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "ID05-FAST-BP-TONG-091-095-098-100",
+      "credit_mode_candidate": "FORMATIVE_ONLY_METHOD_NOT_OBSERVED",
+      "correct_option_index": 0,
+      "question": "Tính nhanh \\(101^2\\).",
+      "correct_option": "\\(10201\\)",
+      "note": "Phase B keeps tinh-nhanh-hdt PENDING: a correct numeric answer does not prove the intended identity method.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_092",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-nhanh-hdt",
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "binh-phuong-hieu",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "tinh-nhanh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "ID05-FAST-BP-HIEU-092-096-097",
+      "credit_mode_candidate": "FORMATIVE_ONLY_METHOD_NOT_OBSERVED",
+      "correct_option_index": 0,
+      "question": "Tính nhanh \\(99^2\\).",
+      "correct_option": "\\(9801\\)",
+      "note": "Phase B keeps tinh-nhanh-hdt PENDING: a correct numeric answer does not prove the intended identity method.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_093",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-nhanh-hdt",
+        "hieu-hai-binh-phuong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "hieu-hai-binh-phuong",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "tinh-nhanh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "ID05-FAST-HIEU-HAI-BP-093-094-099",
+      "credit_mode_candidate": "FORMATIVE_ONLY_METHOD_NOT_OBSERVED",
+      "correct_option_index": 0,
+      "question": "Tính nhanh \\(103\\cdot97\\).",
+      "correct_option": "\\(9991\\)",
+      "note": "Phase B keeps tinh-nhanh-hdt PENDING: a correct numeric answer does not prove the intended identity method.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_094",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-nhanh-hdt",
+        "hieu-hai-binh-phuong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "hieu-hai-binh-phuong",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "tinh-nhanh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "ID05-FAST-HIEU-HAI-BP-093-094-099",
+      "credit_mode_candidate": "FORMATIVE_ONLY_METHOD_NOT_OBSERVED",
+      "correct_option_index": 0,
+      "question": "Tính nhanh \\(52\\cdot48\\).",
+      "correct_option": "\\(2496\\)",
+      "note": "Phase B keeps tinh-nhanh-hdt PENDING: a correct numeric answer does not prove the intended identity method.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_095",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-nhanh-hdt",
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "binh-phuong-tong",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "tinh-nhanh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "ID05-FAST-BP-TONG-091-095-098-100",
+      "credit_mode_candidate": "FORMATIVE_ONLY_METHOD_NOT_OBSERVED",
+      "correct_option_index": 0,
+      "question": "Tính nhanh \\(1002^2\\).",
+      "correct_option": "\\(1004004\\)",
+      "note": "Phase B keeps tinh-nhanh-hdt PENDING: a correct numeric answer does not prove the intended identity method.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_096",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-nhanh-hdt",
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "binh-phuong-hieu",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "tinh-nhanh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "ID05-FAST-BP-HIEU-092-096-097",
+      "credit_mode_candidate": "FORMATIVE_ONLY_METHOD_NOT_OBSERVED",
+      "correct_option_index": 0,
+      "question": "Tính nhanh \\(998^2\\).",
+      "correct_option": "\\(996004\\)",
+      "note": "Phase B keeps tinh-nhanh-hdt PENDING: a correct numeric answer does not prove the intended identity method.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_097",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-nhanh-hdt",
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "binh-phuong-hieu",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "tinh-nhanh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "ID05-FAST-BP-HIEU-092-096-097",
+      "credit_mode_candidate": "FORMATIVE_ONLY_METHOD_NOT_OBSERVED",
+      "correct_option_index": 0,
+      "question": "Tính nhanh \\(49^2\\).",
+      "correct_option": "\\(2401\\)",
+      "note": "Phase B keeps tinh-nhanh-hdt PENDING: a correct numeric answer does not prove the intended identity method.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_098",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-nhanh-hdt",
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "binh-phuong-tong",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "tinh-nhanh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "ID05-FAST-BP-TONG-091-095-098-100",
+      "credit_mode_candidate": "FORMATIVE_ONLY_METHOD_NOT_OBSERVED",
+      "correct_option_index": 0,
+      "question": "Tính nhanh \\(51^2\\).",
+      "correct_option": "\\(2601\\)",
+      "note": "Phase B keeps tinh-nhanh-hdt PENDING: a correct numeric answer does not prove the intended identity method.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_099",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-nhanh-hdt",
+        "hieu-hai-binh-phuong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "hieu-hai-binh-phuong",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "tinh-nhanh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "ID05-FAST-HIEU-HAI-BP-093-094-099",
+      "credit_mode_candidate": "FORMATIVE_ONLY_METHOD_NOT_OBSERVED",
+      "correct_option_index": 0,
+      "question": "Tính nhanh \\(205\\cdot195\\).",
+      "correct_option": "\\(39975\\)",
+      "note": "Phase B keeps tinh-nhanh-hdt PENDING: a correct numeric answer does not prove the intended identity method.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_100",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "tinh-nhanh-hdt",
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "binh-phuong-tong",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "tinh-nhanh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "ID05-FAST-BP-TONG-091-095-098-100",
+      "credit_mode_candidate": "FORMATIVE_ONLY_METHOD_NOT_OBSERVED",
+      "correct_option_index": 0,
+      "question": "Tính nhanh \\(1001^2\\).",
+      "correct_option": "\\(1002001\\)",
+      "note": "Phase B keeps tinh-nhanh-hdt PENDING: a correct numeric answer does not prove the intended identity method.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_101",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "rut-gon-hdt",
+        "binh-phuong-tong",
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "binh-phuong-tong",
+        "binh-phuong-hieu"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "rut-gon-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-RUTGON-SQUARE-101-104",
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Rút gọn \\((x+2)^2-(x-2)^2\\).",
+      "correct_option": "\\(8 x\\)",
+      "note": "Phase B keeps rut-gon-hdt PENDING; final output does not isolate one canonical skill.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_102",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "rut-gon-hdt",
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "binh-phuong-tong"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "rut-gon-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-RUTGON-SQUARE-101-104",
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Rút gọn \\((2x+1)^2-(4x^2+1)\\).",
+      "correct_option": "\\(4 x\\)",
+      "note": "Phase B keeps rut-gon-hdt PENDING; final output does not isolate one canonical skill.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_103",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "rut-gon-hdt",
+        "binh-phuong-tong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "binh-phuong-tong"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "rut-gon-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-RUTGON-SQUARE-101-104",
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Rút gọn \\((x+3)^2-x^2\\).",
+      "correct_option": "\\(6 x + 9\\)",
+      "note": "Phase B keeps rut-gon-hdt PENDING; final output does not isolate one canonical skill.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_104",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "rut-gon-hdt",
+        "binh-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "binh-phuong-hieu"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "rut-gon-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-RUTGON-SQUARE-101-104",
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Rút gọn \\((x-4)^2-x^2\\).",
+      "correct_option": "\\(16 - 8 x\\)",
+      "note": "Phase B keeps rut-gon-hdt PENDING; final output does not isolate one canonical skill.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_105",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "rut-gon-hdt",
+        "lap-phuong-tong",
+        "lap-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "lap-phuong-tong",
+        "lap-phuong-hieu"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "rut-gon-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-RUTGON-CUBE-105-106",
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Rút gọn \\((x+1)^3-(x-1)^3\\).",
+      "correct_option": "\\(6 x^{2} + 2\\)",
+      "note": "Phase B keeps rut-gon-hdt PENDING; final output does not isolate one canonical skill.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_106",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "rut-gon-hdt",
+        "lap-phuong-tong",
+        "lap-phuong-hieu"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "lap-phuong-tong",
+        "lap-phuong-hieu"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "rut-gon-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-RUTGON-CUBE-105-106",
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Rút gọn \\((x+2)^3+(x-2)^3\\).",
+      "correct_option": "\\(2 x^{3} + 24 x\\)",
+      "note": "Phase B keeps rut-gon-hdt PENDING; final output does not isolate one canonical skill.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_107",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "rut-gon-hdt",
+        "hieu-hai-binh-phuong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "hieu-hai-binh-phuong"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "rut-gon-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-RUTGON-DIFFSQ-107-108",
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Rút gọn \\((x+5)(x-5)+25\\).",
+      "correct_option": "\\(x^{2}\\)",
+      "note": "Phase B keeps rut-gon-hdt PENDING; final output does not isolate one canonical skill.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_108",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "rut-gon-hdt",
+        "hieu-hai-binh-phuong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "hieu-hai-binh-phuong"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "rut-gon-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-RUTGON-DIFFSQ-107-108",
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Rút gọn \\((3x+2)(3x-2)\\).",
+      "correct_option": "\\(9 x^{2} - 4\\)",
+      "note": "Phase B keeps rut-gon-hdt PENDING; final output does not isolate one canonical skill.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_109",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "rut-gon-hdt",
+        "tong-hai-lap-phuong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "tong-hai-lap-phuong"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "rut-gon-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-RUTGON-CUBEQUOTIENT-109-110",
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Với \\(x\\ne-2\\), rút gọn \\(\\dfrac{x^3+8}{x+2}\\).",
+      "correct_option": "\\(x^{2} - 2 x + 4\\)",
+      "note": "Phase B keeps rut-gon-hdt PENDING; final output does not isolate one canonical skill.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_110",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "rut-gon-hdt",
+        "hieu-hai-lap-phuong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "hieu-hai-lap-phuong"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "rut-gon-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_OUTPUT_ONLY",
+      "clone_family_candidate": "ID05-RUTGON-CUBEQUOTIENT-109-110",
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Với \\(x\\ne3\\), rút gọn \\(\\dfrac{x^3-27}{x-3}\\).",
+      "correct_option": "\\(x^{2} + 3 x + 9\\)",
+      "note": "Phase B keeps rut-gon-hdt PENDING; final output does not isolate one canonical skill.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_111",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "giai-phuong-trinh-hdt",
+        "rut-gon-hdt"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "rut-gon-hdt"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "giai-phuong-trinh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "ID05-EQ-SQUARE-DIFF-111-112",
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x+1)^2-(x-1)^2=20\\).",
+      "correct_option": "\\(x=5\\)",
+      "note": "Phase B keeps giai-phuong-trinh-hdt PENDING; final solution alone does not isolate the identity-solving process.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_112",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "giai-phuong-trinh-hdt",
+        "rut-gon-hdt"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "rut-gon-hdt"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "giai-phuong-trinh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "ID05-EQ-SQUARE-DIFF-111-112",
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Giải phương trình \\((x+2)^2-(x-2)^2=24\\).",
+      "correct_option": "\\(x=3\\)",
+      "note": "Phase B keeps giai-phuong-trinh-hdt PENDING; final solution alone does not isolate the identity-solving process.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_113",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "giai-phuong-trinh-hdt",
+        "hieu-hai-binh-phuong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "hieu-hai-binh-phuong"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "giai-phuong-trinh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Nghiệm của phương trình \\(x^2-25=0\\) là:",
+      "correct_option": "\\(x=\\pm5\\)",
+      "note": "Phase B keeps giai-phuong-trinh-hdt PENDING; final solution alone does not isolate the identity-solving process.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_114",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "giai-phuong-trinh-hdt",
+        "hieu-hai-lap-phuong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "hieu-hai-lap-phuong"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "giai-phuong-trinh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Nghiệm của phương trình \\(x^3-8=0\\) là:",
+      "correct_option": "\\(x=2\\)",
+      "note": "Phase B keeps giai-phuong-trinh-hdt PENDING; final solution alone does not isolate the identity-solving process.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_115",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "giai-phuong-trinh-hdt",
+        "tong-hai-lap-phuong"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": [
+        "tong-hai-lap-phuong"
+      ],
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": "giai-phuong-trinh-hdt",
+      "prompt_demand_stage": "independent_worked_solution",
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "FORMATIVE_ONLY_COMPOSITE",
+      "correct_option_index": 0,
+      "question": "Nghiệm của phương trình \\(x^3+27=0\\) là:",
+      "correct_option": "\\(x=-3\\)",
+      "note": "Phase B keeps giai-phuong-trinh-hdt PENDING; final solution alone does not isolate the identity-solving process.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_116",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "chung-minh-hdt"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "chung-minh-hdt",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "recognition_interpretation",
+      "observable_evidence_class": "MCQ_ARGUMENT_RECOGNITION_ONLY",
+      "clone_family_candidate": "ID05-PROOF-RECOGNITION-116-118",
+      "credit_mode_candidate": "FORMATIVE_ONLY_WRITTEN_EVIDENCE_REQUIRED",
+      "correct_option_index": 0,
+      "question": "Sau khi khai triển, đẳng thức nào đúng với mọi \\(a,b\\)?",
+      "correct_option": "\\((a+b)^2+(a-b)^2=2(a^2+b^2)\\)",
+      "note": "Phase A reviewed these as recognition only; proof-writing mastery requires written evidence.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_117",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "chung-minh-hdt"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "chung-minh-hdt",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "recognition_interpretation",
+      "observable_evidence_class": "MCQ_ARGUMENT_RECOGNITION_ONLY",
+      "clone_family_candidate": "ID05-PROOF-RECOGNITION-116-118",
+      "credit_mode_candidate": "FORMATIVE_ONLY_WRITTEN_EVIDENCE_REQUIRED",
+      "correct_option_index": 0,
+      "question": "Sau khi khai triển, đẳng thức nào đúng với mọi \\(x,y\\)?",
+      "correct_option": "\\((x+y)^2-(x-y)^2=4xy\\)",
+      "note": "Phase A reviewed these as recognition only; proof-writing mastery requires written evidence.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_118",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "chung-minh-hdt"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "chung-minh-hdt",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "recognition_interpretation",
+      "observable_evidence_class": "MCQ_ARGUMENT_RECOGNITION_ONLY",
+      "clone_family_candidate": "ID05-PROOF-RECOGNITION-116-118",
+      "credit_mode_candidate": "FORMATIVE_ONLY_WRITTEN_EVIDENCE_REQUIRED",
+      "correct_option_index": 0,
+      "question": "Sau khi khai triển, đẳng thức nào đúng với mọi \\(x,y\\)?",
+      "correct_option": "\\((x+y)^3+(x-y)^3=2x(x^2+3y^2)\\)",
+      "note": "Phase A reviewed these as recognition only; proof-writing mastery requires written evidence.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_119",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "chung-minh-hdt"
+      ],
+      "canonical_assessed_skill_candidate": null,
+      "intended_competency_or_task": "chung-minh-hdt",
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "selecting_procedure",
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "FORMATIVE_ONLY_WRITTEN_EVIDENCE_REQUIRED",
+      "correct_option_index": 0,
+      "question": "Để chứng minh \\((a+b)^2-(a-b)^2=4ab\\), bước phù hợp nhất là:",
+      "correct_option": "Khai triển hai bình phương rồi thu gọn",
+      "note": "Phase A reviewed this as method selection only; proof-writing mastery requires written evidence.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    },
+    {
+      "question_id": "ID05V1_120",
+      "source_file": "05-7-hang-dang-thuc-v1-04.json",
+      "legacy_skill_tags": [
+        "phan-tich-hdt",
+        "hieu-hai-binh-phuong"
+      ],
+      "canonical_assessed_skill_candidate": "hieu-hai-binh-phuong",
+      "intended_competency_or_task": null,
+      "supporting_skills": [],
+      "method_tags": [],
+      "context_tags": [],
+      "metadata_only_tags": [
+        "phan-tich-hdt"
+      ],
+      "task_family_candidate": null,
+      "prompt_demand_stage": "selecting_procedure",
+      "observable_evidence_class": "MCQ_METHOD_SELECTION_ONLY",
+      "clone_family_candidate": null,
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Bước ĐẦU TIÊN thích hợp khi phân tích \\(x^4-16\\) thành nhân tử là:",
+      "correct_option": "Hiệu hai bình phương: \\((x^2-4)(x^2+4)\\)",
+      "note": "Preserve Phase A reviewed scoped-primary decision: only the first difference-of-squares step is evidenced.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true
+    }
+  ]
+}
+
+```
+
+## Required independent review
+
+Review **120/120 question mappings** and all 21 clone-family candidates.
+
+For every question verify:
+1. at most one assessed canonical skill;
+2. assessed skill matches requested output rather than every identity/method/tag involved;
+3. supporting/category/diagnostic roles are appropriate;
+4. `observable_evidence_class` matches what one MCQ answer can establish;
+5. PENDING task-family/composite/proof-writing items are not silently turned into mastery evidence;
+6. clone-family granularity is not too broad or too narrow;
+7. legacy tags remain metadata and are not retroactively reinterpreted.
+
+Return:
+- Packet ID + verdict `PASS`, `REVISIONS_REQUIRED`, or `INSUFFICIENT_EVIDENCE`.
+- Coverage 120/120, or list missing IDs.
+- Revision table only: ID | field | current | corrected | reason. If none, say 0 revisions.
+- Clone-family table for all 21 proposed families: PASS/REVISE + corrected membership if needed.
+- Explicit decisions for 079, 080, 082–084, 090, 091–100, 101–115, 116–119 and 120.
+- Final counts by canonical assessed skill + formative-only count.
+- Explicit confirmation: no runtime activation, no legacy tag rewrite, no history backfill/regrade, no Core Readiness credit, no mastery threshold.
