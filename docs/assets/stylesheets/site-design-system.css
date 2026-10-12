@@ -21,6 +21,15 @@ body{letter-spacing:-.008em}
     margin:0;
     padding:4px;
   }
+  /* Large display equations remain fully readable via local horizontal
+     scrolling. Restrict to DIV wrappers: inline \(…\) formulas must not
+     be converted into separate blocks or truncated. */
+  .md-typeset div.arithmatex{
+    max-width:100%;
+    overflow-x:auto;
+    overflow-y:hidden;
+    overscroll-behavior-x:contain;
+  }
 }
 .md-tabs{background:#182e68}
 .md-tabs__link{font-weight:650;opacity:.85}
