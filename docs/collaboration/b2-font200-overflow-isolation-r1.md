@@ -1,6 +1,6 @@
 # Math B2-R2-TEXT-01 — 200% font-size overflow isolation
 
-**Status:** `ROOT_CAUSE_ISOLATED / SCOPED_CSS_FIX_CANDIDATE / EXACT_HEAD_CI_GATE`  
+**Status:** `HEADER_FIX_TESTED / INLINE_MATH_CONTAINMENT_CANDIDATE / FULL_CI_PENDING`  
 **Base:** public Math `main` `9c395ae1f72cc093869fc444e764427bab69c1f8`  
 **Reported issue:** 390 CSS-px browser width, root `font-size: 200%`, document-level horizontal overflow of 54 CSS px on both Geometry CĐ14 and Dashboard.
 
@@ -24,6 +24,6 @@ The root-font enlargement proxy is not native Safari browser zoom, zoom at 200% 
 ## Candidate correction and acceptance gates
 
 1. Shared Material header: under `@media(max-width:44rem)`, compact only `.md-header__button.md-icon` using `min-width:44px;min-height:44px;margin:0;padding:4px`; preserve menu, search and palette buttons. Measured trial: Dashboard 54px → 0px, CĐ14 54px → 6px; icons 46×46px when root text is 200%.
-2. Geometry's final 6px: Math public QA `38260527011` showed setting the local `.arithmatex` blocks to scroll removes the residual. The production candidate applies `max-width:100%;overflow-x:auto;overflow-y:hidden` **only to `div.arithmatex`** on narrow screens. Inline `span.arithmatex` remains inline, and no `overflow-x:hidden` is applied globally.
-3. **Technical pass required before merge:** At a 390 CSS-px browser width + `html.style.fontSize='200%'`, `document.documentElement.scrollWidth - clientWidth <= 2` on both the Grade-7 triangle content page and Dashboard. Header icon targets remain ≥44 CSS px and on-screen. Geometry contains display-math wrappers with `overflow-x:auto`. Existing B2 320/390/640px, B1 preservation, scoring and academic QA remain PASS.
+2. Geometry's final 6px: Math public QA `38260527011` showed the experimental full `.arithmatex` wrapper scroll removes the residual. Run `38262079930` then **FAILED as intended** on the strict zero-overflow gate after a narrower **div-only** rule left 6px. The updated candidate keeps `div.arithmatex` scrollable and makes only `span.arithmatex` an **inline-block** with local horizontal scrolling. This maintains inline-level sentence flow while containing wide formulas; its own CI PASS is still required. No `overflow-x:hidden` is applied globally.
+3. **Technical pass required before merge:** At a 390 CSS-px browser width + `html.style.fontSize='200%'`, `document.documentElement.scrollWidth - clientWidth <= 2` on both the Grade-7 triangle content page and Dashboard. Header icon targets remain ≥44 CSS px and on-screen. Geometry contains display-math and inline-math wrappers with `overflow-x:auto`; inline-math remains `display:inline-block`. Existing B2 320/390/640px, B1 preservation, scoring and academic QA remain PASS.
 4. The enlarged-root-type probe is not native Safari browser zoom. Actual iPhone/iPad/Android user checks and Grade 9/10 student learning feedback remain **OPEN**, even if CI passes. No claim of WCAG-wide compliance.
