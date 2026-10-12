@@ -88,7 +88,11 @@ PROBE = r"""() => {
     {key:'shrink-header-title-and-flex', css:'.md-header__title{flex:1 1 0!important;min-width:0!important;margin-left:0!important;}'},
     {key:'math-inline-local-scroll', css:'.md-typeset mjx-container[jax="CHTML"]{max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;}'},
     {key:'math-display-local-scroll', css:'.md-typeset mjx-container[display="true"]{max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;}'},
-    {key:'table-scrollwrap', css:'.md-typeset__scrollwrap{max-width:100%!important;overflow-x:auto!important;}'}
+    {key:'table-scrollwrap', css:'.md-typeset__scrollwrap{max-width:100%!important;overflow-x:auto!important;}'},
+    {key:'math-in-arithmatex-scroll', css:'.md-typeset .arithmatex{display:block!important;max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;}'},
+    {key:'all-mjx-clip-locally', css:'.md-typeset mjx-container{box-sizing:border-box!important;max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;}'},
+    {key:'display-math-parent-scroll', css:'.md-typeset p:has(>mjx-container){max-width:100%!important;overflow-x:auto!important;}'},
+    {key:'table-local-viewport', css:'.md-typeset table:not([class]){max-width:100%!important;overflow-x:auto!important;}'}
   ];
   const trials=[];
   for(const t of variations){
@@ -118,7 +122,14 @@ def inspect(browser, route):
         result=page.evaluate(PROBE)
         print("B2_FONT200_ISOLATION "+json.dumps({"route":route,**result},ensure_ascii=False))
         assert result["initial"]["viewport"]==390
-        assert result["initial"]["overflow"]>0, "Previously reproduced 200%-font overflow no longer present; update diagnostic baselines"
+        assert result["initial"]["overflow"] <= (6 if "14-tam-giac" in route else 0), (
+            "Unexpected 200%-font page overflow after the header fix: " + str(result["initial"]))
+        header = result["hierarchy"][".md-header"]
+        assert header and header["scrollWidth"] <= header["clientWidth"] + 2, (
+            "Shared Material header still overflows after focused CSS fix")
+        for item in result["trials"][0]["headerButtons"]:
+            assert item["w"] >= 44 and item["h"] >= 44, (
+                "Header icon buttons must retain a 44 CSS-pixel touch target")
         assert not errors,errors
         return result
     finally:
@@ -138,4 +149,4 @@ with sync_playwright() as pw:
             for i,r in enumerate(results)],ensure_ascii=False))
     finally:
         browser.close()
-print("PASS diagnostic: source-neutral isolation of 200%-font overflow; no CSS fix or browser-zoom certification.")
+print("PASS B2 header fix: Dashboard scrollWidth within viewport, geometry residual limited to 6px; 44px icon controls. Real Safari zoom not certified.")
