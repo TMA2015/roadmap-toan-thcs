@@ -59,6 +59,27 @@ def require_measured_controls(out, groups):
             assert box["left"] >= -2 and box["right"] <= out["cssViewport"]+2, (
                 "Target off-screen: "+str(box))
 
+def explain_root_font_overflow(page, label):
+    offenders = page.evaluate("""() => {
+      const view = document.documentElement.clientWidth;
+      return [...document.querySelectorAll('body *')].map(el => {
+        const r = el.getBoundingClientRect();
+        if (!r.width || !r.height || r.right <= view+2) return null;
+        const cs=getComputedStyle(el);
+        if (cs.display==='none' || cs.visibility==='hidden') return null;
+        const nearest=el.parentElement;
+        const parentStyle=nearest && getComputedStyle(nearest);
+        return {
+          tag:el.tagName, id:(el.id||'').slice(0,45),
+          cls:String(el.className?.baseVal||el.className||'').slice(0,85),
+          right:Math.round(r.right), left:Math.round(r.left), width:Math.round(r.width),
+          overflowX:cs.overflowX, whiteSpace:cs.whiteSpace,
+          parentOverflowX:parentStyle?.overflowX||''
+        };
+      }).filter(Boolean).sort((a,b)=>b.right-a.right).slice(0,18);
+    }""")
+    print("B2_R2_FONT_OFFENDERS "+json.dumps({"case":label,"elements":offenders},ensure_ascii=False))
+
 def check(browser, width, height):
     context=browser.new_context(viewport={"width":width,"height":height},has_touch=True,is_mobile=True,
                                device_scale_factor=2)
@@ -91,6 +112,7 @@ def check(browser, width, height):
         if width == 390:
             page.evaluate("document.documentElement.style.fontSize='200%'")
             enlarged = metric(page,"geometry_font_200pct_proxy",{"images":"article.md-content__inner img[src*='geometry/14/']"})
+            explain_root_font_overflow(page,"geometry_390_font_200pct")
             # Diagnostic only until the root-font probe has independent review.
             page.evaluate("document.documentElement.style.removeProperty('font-size')")
 
@@ -140,6 +162,7 @@ def check(browser, width, height):
         if width == 390:
             page.evaluate("document.documentElement.style.fontSize='200%'")
             metric(page,"dashboard_font_200pct_proxy",{"actions":".mpd-action"})
+            explain_root_font_overflow(page,"dashboard_390_font_200pct")
             page.evaluate("document.documentElement.style.removeProperty('font-size')")
 
         assert not errors, errors
