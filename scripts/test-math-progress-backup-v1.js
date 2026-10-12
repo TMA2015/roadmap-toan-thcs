@@ -41,6 +41,8 @@ const samples={
   const old=existing.getItem("toan-thcs-practice-v1");
   const skipped=Core.applyRestore(backup,existing,"missing");
   assert.equal(skipped.written,0);
+  assert.deepEqual(skipped.conflicts,["toan-thcs-practice-v1"]);
+  assert.equal(skipped.identical.length,Object.keys(samples).length-1);
   assert.equal(existing.getItem("toan-thcs-practice-v1"),old);
   assert.equal(Core.planRestore(backup,existing,"replace").replace.length,1);
   assert.throws(()=>Core.applyRestore(backup,existing,"replace",false),/Phải sao lưu/);

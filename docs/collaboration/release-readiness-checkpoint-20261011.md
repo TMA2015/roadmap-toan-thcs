@@ -2,6 +2,14 @@
 
 **Current initiative:** Family-use THCS V1 Release Readiness Audit R1; future-track extension architecture feasibility (THPT/SAT/ACT), no new academic content.
 
+## Continuation — 12/10/2026, restore safety follow-up
+
+User asked to recheck and continue. At check, Dashboard/Backup **PR #416 was already merged** into `main`, SHA `d9095bccf2ca3c22477258beb398576923fcfa11`; all three PR QA workflows passed, Deploy MkDocs run `38159291713` SUCCESS; deployed `gh-pages/tien-do-hoc-tap/index.html` contains both dashboard and backup controls. Original R1 CI used desktop and phone-sized Chromium contexts, NOT actual iOS/Android hardware. A2 learner observations remain open but continue alongside technical work.
+
+New **Draft PR #418**: `fix/math-backup-restore-conflict-ux-r1-20261012`. Follow-up protects the manual, free local-file transfer: missing-only restore now visibly distinguishes unchanged records from skipped **conflicting** records, explicitly says skipped learning history was **not transferred**; the replace path requires a fresh destination backup and blocks if any allowlisted data changes after this backup. No score/taxonomy/learner record transformation. QA: `scripts/test-math-progress-backup-v1.js` + `scripts/test-math-progress-backup-v1-browser.py` (desktop/mobile browser profiles).
+
+Next operator: check PR #418 head/CI, inspect any failing gate, repair only within safe scope, merge only on green, verify Pages deployment. Then obtain manual owner file-download/file-picker checks on **real** PC/iPhone/iPad/Android with test-only learning history before declaring multi-device QA passed.
+
 ## Continuation — family Dashboard + manual PC/mobile progress backup (12/10/2026)
 
 Owner confirmed: daughter is using the recently improved interface and finds lesson navigation easier. Human learner A2 observation should run **in parallel**, not block technical progress. Family use remains the scope; a complete reliable product and later THPT/SAT/ACT extensibility are still the long-term goals.

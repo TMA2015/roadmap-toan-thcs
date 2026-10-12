@@ -85,14 +85,16 @@
   };
   const planRestore=(backup,storage,mode="missing")=>{
     if(!["missing","replace"].includes(mode))throw Error("Chế độ khôi phục không hợp lệ");
-    const entries=backup.entries,add=[],replace=[],skip=[];
+    const entries=backup.entries,add=[],replace=[],skip=[],conflicts=[],identical=[];
     for(const key of Object.keys(entries)){
       const old=storage.getItem(key);
       if(old===null)add.push(key);
-      else if(old===entries[key]||mode==="missing")skip.push(key);
+      else if(old===entries[key]){skip.push(key);identical.push(key);}
+      else if(mode==="missing"){skip.push(key);conflicts.push(key);}
       else replace.push(key);
     }
-    return {add,replace,skip,mode};
+    // Distinguish true matches from skipped conflicting history; never merge automatically.
+    return {add,replace,skip,conflicts,identical,mode};
   };
   const applyRestore=(validated,storage,mode="missing",backupAcknowledged=false)=>{
     const plan=planRestore(validated,storage,mode);
