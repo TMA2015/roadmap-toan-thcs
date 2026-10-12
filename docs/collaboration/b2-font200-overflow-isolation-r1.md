@@ -1,6 +1,6 @@
 # Math B2-R2-TEXT-01 — 200% font-size overflow isolation
 
-**Status:** `EXACT_SHA_QA_SUCCESS / READY_FOR_MERGE_GATE / REAL_DEVICE_QA_OPEN`  
+**Status:** `MERGED_DEPLOYED_TECH_QA_PASS / REAL_SAFARI_AND_A2_OPEN`  
 **Base:** public Math `main` `9c395ae1f72cc093869fc444e764427bab69c1f8`  
 **Reported issue:** 390 CSS-px browser width, root `font-size: 200%`, document-level horizontal overflow of 54 CSS px on both Geometry CĐ14 and Dashboard.
 
@@ -35,3 +35,11 @@ The root-font enlargement proxy is not native Safari browser zoom, zoom at 200% 
 - Three visible Material header icon controls measured **46×46 CSS px** (within viewport). CĐ14 verified 2 display-math wrappers with local `overflow-x:auto` (one 232px viewport, scrollable 465px content), plus **14 inline math wrappers** using inline-block and local auto overflow.
 - Existing keyboard QA on 1365/390 px, narrow/touch B2 640/390/320 px, B1 local save-failure and backup QA, remaining Node regression checks and strict MkDocs build passed in the **same** run. Source isolation guard confirmed five Math-only standard Ubuntu workflows; no shared artifact/cache uploads.
 - **Not certified:** real iOS Safari native 200% zoom / text enlargement; VoiceOver/TalkBack; independent self-study A2 observations from Grades 9/10. No real learner data was accessed or migrated. These remain OPEN release-readiness observations.
+
+## Released checkpoint — 12/10/2026
+
+- [PR #428](https://github.com/TMA2015/roadmap-toan-thcs/pull/428) **MERGED** via squash into public Math `main` commit `e61a884593c75a67d030fcc6561ea3765b10e49d`.
+- **Exact final PR Quality**: [run #38281025841](https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/38281025841), `SUCCESS` on final reviewed source HEAD `f194821d9d3510a8118c2847bc1511c63ad8f5b5`. Both CĐ14 and Dashboard 390px + root font 200% reported document `scrollWidth=clientWidth=390px` (0px overflow), all 3 visible header icon targets 46×46px; two display equations and 14 inline math wrappers retained local scrolling. Full existing Math QA passed, including keyboard 1365/390 and narrow-touch 640/390/320.
+- **Deploy MkDocs** [run #38281984983](https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/38281984983) `SUCCESS` at that exact `main` commit. Published `gh-pages/assets/stylesheets/site-design-system.css` blob SHA `cede51cfff25ef4f6c612c894c81f4639625c32b` matches `main/docs/assets/stylesheets/site-design-system.css` exactly.
+- Source-only Math workflow isolation still `PASS`: all five workflows use standard public `ubuntu-latest`; no private English Actions and no automatic artifact/cache uploads.
+- Remaining: native Safari/other-device 200% zoom and large-text hardware checks, screen-reader experience, real students' A2 Grade 9/10 feedback. Root-font enlargement in Chromium is a proxy, **not** general accessibility certification.
