@@ -33,7 +33,17 @@
     }
   };
 
-  const saveStore = (store) => localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+  const saveStore = (store) => {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw !== null) {
+        try { JSON.parse(raw); }
+        catch (_) { return { ok: false, reason: "CORRUPT_PREVIOUS_DATA" }; }
+      }
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+      return { ok: true, reason: null };
+    } catch (_) { return { ok: false, reason: "WRITE_FAILED" }; }
+  };
 
   const shuffleIndices = (length) => {
     const arr = Array.from({ length }, (_, i) => i);
@@ -235,8 +245,17 @@
         skills: skillMap,
         items: itemResults
       };
-      this.persist(attempt);
+      const persistence = this.persist(attempt);
       this.renderResult(attempt);
+      if (!persistence.ok) {
+        const warning = document.createElement("p");
+        warning.className = "readiness-save-warning";
+        warning.setAttribute("role", "alert");
+        warning.textContent = persistence.reason === "CORRUPT_PREVIOUS_DATA"
+          ? "Dữ liệu tự kiểm tra cũ không đọc được. Hệ thống không ghi đè dữ liệu cũ; kết quả lần này chưa được lưu."
+          : "Kết quả đã được tính trên màn hình nhưng chưa lưu được vào thiết bị. Lượt này không có trong lịch sử Readiness.";
+        this.resultEl.prepend(warning);
+      }
     }
 
     persist(attempt) {
@@ -251,7 +270,7 @@
         readiness_state: attempt.readiness_state
       };
       store.assessments[this.data.assessment_id] = bucket;
-      saveStore(store);
+      return saveStore(store);
     }
 
     renderResult(attempt) {

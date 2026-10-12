@@ -16,7 +16,21 @@
     catch (_) { return normalize({}); }
   };
 
-  const save = (stats) => localStorage.setItem(STORAGE_KEY, JSON.stringify(normalize(stats)));
+  const save = (stats) => {
+    try {
+      const existing = localStorage.getItem(STORAGE_KEY);
+      // A malformed historical value must not be silently overwritten by a
+      // fresh session. Keep the original bytes for deliberate recovery.
+      if (existing !== null) {
+        try { JSON.parse(existing); }
+        catch (_) { return { ok: false, reason: "CORRUPT_PREVIOUS_DATA" }; }
+      }
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(normalize(stats)));
+      return { ok: true, reason: null };
+    } catch (_) {
+      return { ok: false, reason: "WRITE_FAILED" };
+    }
+  };
 
   const questionSkills = (question) => {
     const value = question?.tags?.skill;
@@ -75,8 +89,8 @@
       data.observed_signals = data.observed_signals.slice(-MAX_SIGNAL_EVENTS);
     }
 
-    save(data);
-    return { stats: data, signal };
+    const persistence = save(data);
+    return { stats: data, signal, saved: persistence.ok, save_error: persistence.reason };
   };
 
   const recentSignalsForSkill = (stats, skill, limit = 5) =>

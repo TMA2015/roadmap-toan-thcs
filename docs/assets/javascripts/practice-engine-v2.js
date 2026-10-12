@@ -19,14 +19,35 @@
   };
 
   const saveStats = (stats) => {
-    if (window.RoadmapLearnerEvidence?.save) window.RoadmapLearnerEvidence.save(stats);
-    else localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
+    if (window.RoadmapLearnerEvidence?.save) {
+      const result = window.RoadmapLearnerEvidence.save(stats);
+      return result && typeof result === "object" ? result : { ok: true, reason: null };
+    }
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw !== null) {
+        try { JSON.parse(raw); }
+        catch (_) { return { ok: false, reason: "CORRUPT_PREVIOUS_DATA" }; }
+      }
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
+      return { ok: true, reason: null };
+    } catch (_) { return { ok: false, reason: "WRITE_FAILED" }; }
   };
   const loadRecovery = () => {
     try { return JSON.parse(localStorage.getItem(RECOVERY_KEY)) || { events: [] }; }
     catch (_) { return { events: [] }; }
   };
-  const saveRecovery = (data) => localStorage.setItem(RECOVERY_KEY, JSON.stringify(data));
+  const saveRecovery = (data) => {
+    try {
+      const raw = localStorage.getItem(RECOVERY_KEY);
+      if (raw !== null) {
+        try { JSON.parse(raw); }
+        catch (_) { return false; }
+      }
+      localStorage.setItem(RECOVERY_KEY, JSON.stringify(data));
+      return true;
+    } catch (_) { return false; }
+  };
   const snapshotSkill = (stats, skill) => {
     const record = stats?.tags?.[skill] || { attempted: 0, correct: 0 };
     return { attempted: record.attempted || 0, correct: record.correct || 0, accuracy: accuracy(record) };
@@ -898,7 +919,7 @@
       const question = this.currentQuestion();
       const correct = selectedIndex === question.answer;
       if (correct) this.score += 1;
-      this.record(question, correct, this.hintLevel, selectedIndex, this.fullSolutionViewed);
+      const persistence = this.record(question, correct, this.hintLevel, selectedIndex, this.fullSolutionViewed);
 
       const optionButtons = [...this.optionsEl.querySelectorAll(".practice-option")];
       optionButtons.forEach((button) => {
@@ -916,6 +937,15 @@
       explanation.className = "practice-explanation";
       explanation.textContent = question.explanation;
       this.feedbackEl.append(heading, explanation);
+      if (!persistence.ok) {
+        const warning = document.createElement("p");
+        warning.className = "practice-save-warning";
+        warning.setAttribute("role", "alert");
+        warning.textContent = persistence.reason === "CORRUPT_PREVIOUS_DATA"
+          ? "Dữ liệu cũ trên trình duyệt không đọc được. Hệ thống không ghi đè. Kết quả câu này chưa được lưu; hãy nhờ người lớn kiểm tra."
+          : "Không lưu được kết quả câu này trên thiết bị. Em vẫn có thể xem lời giải và học tiếp, nhưng lượt này chưa được ghi vào tiến độ.";
+        this.feedbackEl.appendChild(warning);
+      }
       if (this.fullSolutionViewed) {
         const assisted = document.createElement("div");
         assisted.className = "practice-help-assisted";
@@ -966,6 +996,7 @@
     }
 
     record(question, correct, hintsUsed = 0, selectedIndex = null, fullSolutionViewed = false) {
+      let persistence = { ok: true, reason: null };
       if (window.RoadmapLearnerEvidence?.recordAnswer) {
         const result = window.RoadmapLearnerEvidence.recordAnswer({
           question,
@@ -976,6 +1007,7 @@
           stats: this.stats
         });
         this.stats = result.stats;
+        persistence = { ok: result.saved !== false, reason: result.save_error || null };
       } else {
         const questionRecord = this.stats.questions[question.id] || { attempted: 0, correct: 0 };
         questionRecord.attempted += 1;
@@ -1008,7 +1040,7 @@
           }
           this.stats.tags[skill] = record;
         });
-        saveStats(this.stats);
+        persistence = saveStats(this.stats);
       }
 
       // Phase G1 shadow capture: preserve the existing Practice write as the
@@ -1043,6 +1075,7 @@
       }
 
       questionSkills(question).forEach((skill) => this.closePendingRecoveryOnTarget(skill));
+      return persistence;
     }
 
     renderRemediation(updatedSkills = []) {
