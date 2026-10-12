@@ -62,10 +62,12 @@ with sync_playwright() as pw:
     file_input.set_input_files({"name":"progress.json","mimeType":"application/json","buffer":json.dumps(backup).encode("utf-8")})
     b.locator(".mpd-status").get_by_text("Tệp hợp lệ",exact=False).wait_for(timeout=10000)
     assert "Thêm mới: 2" in b.locator(".mpd-restore-preview").inner_text()
-    assert "Giữ nguyên: 1" in b.locator(".mpd-restore-preview").inner_text()
+    assert "Bỏ qua vì dữ liệu đang có khác tệp: 1" in b.locator(".mpd-restore-preview").inner_text()
+    assert "sẽ KHÔNG được chuyển" in b.locator(".mpd-restore-preview").inner_text()
     b.once("dialog",lambda dialog:dialog.accept())
     b.get_by_role("button",name="Khôi phục dữ liệu",exact=True).click()
     assert b.evaluate("localStorage.getItem('toan-thcs-practice-v1')")==existing
+    assert "Đã bỏ qua 1 vùng" in b.locator(".mpd-status").inner_text()
     assert b.evaluate("localStorage.getItem('toan-thcs-assessment-v1')")==entries["toan-thcs-assessment-v1"]
     assert b.evaluate("localStorage.getItem('toan-thcs-taxonomy-v2-evidence-v1')")==entries["toan-thcs-taxonomy-v2-evidence-v1"]
 
@@ -79,6 +81,17 @@ with sync_playwright() as pw:
         b.get_by_role("button",name="1. Tải bản dự phòng dữ liệu hiện tại").click()
     assert pre_download.value.suggested_filename.startswith("math-progress-before-replace")
     assert restore.is_disabled()
+    b.locator(".mpd-checkbox input").check()
+    assert restore.is_enabled()
+    # A second tab changed data after the destination safety snapshot: refuse stale replace.
+    b.evaluate("localStorage.setItem('roadmap.ui.focus.v1','1')")
+    restore.click()
+    assert "Dữ liệu trên máy đã thay đổi" in b.locator(".mpd-status").inner_text()
+    assert restore.is_disabled()
+    assert b.evaluate("localStorage.getItem('toan-thcs-practice-v1')")==existing
+    with b.expect_download() as fresh_backup:
+        b.get_by_role("button",name="1. Tải bản dự phòng dữ liệu hiện tại").click()
+    assert fresh_backup.value.suggested_filename.startswith("math-progress-before-replace")
     b.locator(".mpd-checkbox input").check()
     assert restore.is_enabled()
     b.once("dialog",lambda dialog:dialog.accept())
