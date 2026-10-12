@@ -1,0 +1,3503 @@
+{
+  "schema": "primary-skill-overlay-ct19-s3-phase-d-r1",
+  "status": "NOTEBOOKLM_PASS_CLEARED_FOR_CT19_S3_RECONCILIATION",
+  "as_of": "2026-10-02",
+  "topic": "19-duong-tron",
+  "source_manifest": "docs/assets/data/practice/19-duong-tron-v1.manifest.json",
+  "source_manifest_blob": "4529bf3a748257eed515cf4e7781e4cfc6c13db4",
+  "source_files": {
+    "19-duong-tron-v1-01.json": {
+      "blob": "05c1458422a637cd0ed569d87075910d8912f316",
+      "question_count": 30
+    },
+    "19-duong-tron-v1-02.json": {
+      "blob": "1f39495a3fffd59325563c17da4e1e06ad3e7b0c",
+      "question_count": 30
+    },
+    "19-duong-tron-v1-03.json": {
+      "blob": "d16b8a64f63778aecd27b9f5b4418a621375bc31",
+      "question_count": 30
+    },
+    "19-duong-tron-v1-04.json": {
+      "blob": "022259644215f1bbec66afaa47dbca0e5564ff59",
+      "question_count": 30
+    },
+    "19-duong-tron-v1-05.json": {
+      "blob": "1b26d60d55da2cf14dcf6db9958154ffcc4ae710",
+      "question_count": 27
+    }
+  },
+  "academic_basis": {
+    "s3_family_blob": "7c817ecc064873135ae05b40ded30661bff6434a"
+  },
+  "rules": {
+    "one_primary_max_per_mcq": true,
+    "learner_family_broader_than_diagnostic": true,
+    "proof_and_synthesis_mcq_partial_only": true,
+    "no_family_method_formative_only": true,
+    "auto_clone_key": "primary diagnostic + exact question type",
+    "runtime_enabled": false,
+    "no_history_backfill": true
+  },
+  "summary": {
+    "questions": 147,
+    "mapped_primary": 147,
+    "formative_only_without_family": 0,
+    "primary_counts": {
+      "goc-o-tam": 10,
+      "goc-noi-tiep": 10,
+      "nua-duong-tron": 10,
+      "day-va-tam": 9,
+      "tiep-tuyen-ban-kinh": 9,
+      "hai-tiep-tuyen": 9,
+      "tu-giac-noi-tiep": 9,
+      "dau-hieu-noi-tiep": 9,
+      "hai-day-cat-nhau": 9,
+      "tiep-tuyen-cat-tuyen": 9,
+      "chung-minh-tiep-tuyen": 9,
+      "goc-cung": 9,
+      "do-dai-duong-tron": 9,
+      "cung-va-day": 3,
+      "do-dai-cung": 3,
+      "dien-tich-quat-tron": 3,
+      "dien-tich-vanh-khuyen": 3,
+      "vi-tri-tuong-doi-duong-thang-duong-tron": 3,
+      "vi-tri-tuong-doi-hai-duong-tron": 3,
+      "duong-tron-ngoai-tiep-tam-giac": 3,
+      "duong-tron-noi-tiep-tam-giac": 3,
+      "da-giac-deu": 3
+    },
+    "family_counts": {
+      "CIRCLE-ANGLES": 39,
+      "CIRCLE-CHORD-ARC": 12,
+      "CIRCLE-TANGENT": 27,
+      "CIRCLE-CYCLIC": 18,
+      "CIRCLE-POWER": 18,
+      "CIRCLE-MEASURE": 18,
+      "CIRCLE-POSITION": 6,
+      "TRI-CIRCUMCENTER": 3,
+      "TRI-INCENTER": 3,
+      "GEO-REGULAR-SYMM": 3
+    },
+    "clone_families": [
+      {
+        "id": "CIR19-AUTO-001",
+        "key": "goc-o-tam__tinh-goc-o-tam",
+        "count": 10,
+        "ids": [
+          "GEO19V1_001",
+          "GEO19V1_014",
+          "GEO19V1_027",
+          "GEO19V1_040",
+          "GEO19V1_053",
+          "GEO19V1_066",
+          "GEO19V1_079",
+          "GEO19V1_092",
+          "GEO19V1_105",
+          "GEO19V1_118"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-002",
+        "key": "goc-noi-tiep__tinh-goc-noi-tiep",
+        "count": 10,
+        "ids": [
+          "GEO19V1_002",
+          "GEO19V1_015",
+          "GEO19V1_028",
+          "GEO19V1_041",
+          "GEO19V1_054",
+          "GEO19V1_067",
+          "GEO19V1_080",
+          "GEO19V1_093",
+          "GEO19V1_106",
+          "GEO19V1_119"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-003",
+        "key": "nua-duong-tron__nhan-biet",
+        "count": 10,
+        "ids": [
+          "GEO19V1_003",
+          "GEO19V1_016",
+          "GEO19V1_029",
+          "GEO19V1_042",
+          "GEO19V1_055",
+          "GEO19V1_068",
+          "GEO19V1_081",
+          "GEO19V1_094",
+          "GEO19V1_107",
+          "GEO19V1_120"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-004",
+        "key": "day-va-tam__day-tam",
+        "count": 9,
+        "ids": [
+          "GEO19V1_004",
+          "GEO19V1_017",
+          "GEO19V1_030",
+          "GEO19V1_043",
+          "GEO19V1_056",
+          "GEO19V1_069",
+          "GEO19V1_082",
+          "GEO19V1_095",
+          "GEO19V1_108"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-005",
+        "key": "tiep-tuyen-ban-kinh__tiep-tuyen",
+        "count": 9,
+        "ids": [
+          "GEO19V1_005",
+          "GEO19V1_018",
+          "GEO19V1_031",
+          "GEO19V1_044",
+          "GEO19V1_057",
+          "GEO19V1_070",
+          "GEO19V1_083",
+          "GEO19V1_096",
+          "GEO19V1_109"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-006",
+        "key": "hai-tiep-tuyen__do-dai-tiep-tuyen",
+        "count": 9,
+        "ids": [
+          "GEO19V1_006",
+          "GEO19V1_019",
+          "GEO19V1_032",
+          "GEO19V1_045",
+          "GEO19V1_058",
+          "GEO19V1_071",
+          "GEO19V1_084",
+          "GEO19V1_097",
+          "GEO19V1_110"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-007",
+        "key": "tu-giac-noi-tiep__goc-doi",
+        "count": 9,
+        "ids": [
+          "GEO19V1_007",
+          "GEO19V1_020",
+          "GEO19V1_033",
+          "GEO19V1_046",
+          "GEO19V1_059",
+          "GEO19V1_072",
+          "GEO19V1_085",
+          "GEO19V1_098",
+          "GEO19V1_111"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-008",
+        "key": "dau-hieu-noi-tiep__dau-hieu",
+        "count": 9,
+        "ids": [
+          "GEO19V1_008",
+          "GEO19V1_021",
+          "GEO19V1_034",
+          "GEO19V1_047",
+          "GEO19V1_060",
+          "GEO19V1_073",
+          "GEO19V1_086",
+          "GEO19V1_099",
+          "GEO19V1_112"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-009",
+        "key": "hai-day-cat-nhau__tich-doan",
+        "count": 9,
+        "ids": [
+          "GEO19V1_009",
+          "GEO19V1_022",
+          "GEO19V1_035",
+          "GEO19V1_048",
+          "GEO19V1_061",
+          "GEO19V1_074",
+          "GEO19V1_087",
+          "GEO19V1_100",
+          "GEO19V1_113"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-010",
+        "key": "tiep-tuyen-cat-tuyen__do-dai",
+        "count": 9,
+        "ids": [
+          "GEO19V1_010",
+          "GEO19V1_023",
+          "GEO19V1_036",
+          "GEO19V1_049",
+          "GEO19V1_062",
+          "GEO19V1_075",
+          "GEO19V1_088",
+          "GEO19V1_101",
+          "GEO19V1_114"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-011",
+        "key": "chung-minh-tiep-tuyen__dau-hieu-tiep-tuyen",
+        "count": 9,
+        "ids": [
+          "GEO19V1_011",
+          "GEO19V1_024",
+          "GEO19V1_037",
+          "GEO19V1_050",
+          "GEO19V1_063",
+          "GEO19V1_076",
+          "GEO19V1_089",
+          "GEO19V1_102",
+          "GEO19V1_115"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-012",
+        "key": "goc-cung__cung-chung",
+        "count": 9,
+        "ids": [
+          "GEO19V1_012",
+          "GEO19V1_025",
+          "GEO19V1_038",
+          "GEO19V1_051",
+          "GEO19V1_064",
+          "GEO19V1_077",
+          "GEO19V1_090",
+          "GEO19V1_103",
+          "GEO19V1_116"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-013",
+        "key": "do-dai-duong-tron__he-thuc-tich",
+        "count": 9,
+        "ids": [
+          "GEO19V1_013",
+          "GEO19V1_026",
+          "GEO19V1_039",
+          "GEO19V1_052",
+          "GEO19V1_065",
+          "GEO19V1_078",
+          "GEO19V1_091",
+          "GEO19V1_104",
+          "GEO19V1_117"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-014",
+        "key": "cung-va-day__cung-va-day",
+        "count": 3,
+        "ids": [
+          "CIR19V1_121",
+          "CIR19V1_122",
+          "CIR19V1_123"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-015",
+        "key": "do-dai-cung__do-dai-cung",
+        "count": 3,
+        "ids": [
+          "CIR19V1_124",
+          "CIR19V1_125",
+          "CIR19V1_126"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-016",
+        "key": "dien-tich-quat-tron__dien-tich-quat-tron",
+        "count": 3,
+        "ids": [
+          "CIR19V1_127",
+          "CIR19V1_128",
+          "CIR19V1_129"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-017",
+        "key": "dien-tich-vanh-khuyen__dien-tich-vanh-khuyen",
+        "count": 3,
+        "ids": [
+          "CIR19V1_130",
+          "CIR19V1_131",
+          "CIR19V1_132"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-018",
+        "key": "vi-tri-tuong-doi-duong-thang-duong-tron__vi-tri-tuong-doi-duong-thang-duong-tron",
+        "count": 3,
+        "ids": [
+          "CIR19V1_133",
+          "CIR19V1_134",
+          "CIR19V1_135"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-019",
+        "key": "vi-tri-tuong-doi-hai-duong-tron__vi-tri-tuong-doi-hai-duong-tron",
+        "count": 3,
+        "ids": [
+          "CIR19V1_136",
+          "CIR19V1_137",
+          "CIR19V1_138"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-020",
+        "key": "duong-tron-ngoai-tiep-tam-giac__duong-tron-ngoai-tiep-tam-giac",
+        "count": 3,
+        "ids": [
+          "CIR19V1_139",
+          "CIR19V1_140",
+          "CIR19V1_141"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-021",
+        "key": "duong-tron-noi-tiep-tam-giac__duong-tron-noi-tiep-tam-giac",
+        "count": 3,
+        "ids": [
+          "CIR19V1_142",
+          "CIR19V1_143",
+          "CIR19V1_144"
+        ]
+      },
+      {
+        "id": "CIR19-AUTO-022",
+        "key": "da-giac-deu__da-giac-deu",
+        "count": 3,
+        "ids": [
+          "CIR19V1_145",
+          "CIR19V1_146",
+          "CIR19V1_147"
+        ]
+      }
+    ],
+    "runtime_enabled": 0
+  },
+  "items": [
+    {
+      "question_id": "GEO19V1_001",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "goc-o-tam"
+      ],
+      "canonical_assessed_skill_candidate": "goc-o-tam",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc nội tiếp cùng chắn cung AB bằng 25°. Góc ở tâm chắn cung AB bằng:",
+      "correct_option": "50°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-o-tam"
+    },
+    {
+      "question_id": "GEO19V1_002",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "goc-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "goc-noi-tiep",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc ở tâm chắn cung MN bằng 80°. Góc nội tiếp cùng chắn cung MN bằng:",
+      "correct_option": "40°",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-noi-tiep"
+    },
+    {
+      "question_id": "GEO19V1_003",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "nua-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "nua-duong-tron",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một góc nội tiếp chắn đường kính của đường tròn có số đo:",
+      "correct_option": "90°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO19V1_004",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "day-va-tam"
+      ],
+      "canonical_assessed_skill_candidate": "day-va-tam",
+      "learner_family_candidate": "CIRCLE-CHORD-ARC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong một đường tròn, đường kính vuông góc với dây AB. Kết luận đúng là:",
+      "correct_option": "Đường kính đi qua trung điểm của AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "day-tam"
+    },
+    {
+      "question_id": "GEO19V1_005",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-ban-kinh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-ban-kinh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "PT là tiếp tuyến của đường tròn tâm O tại T. Quan hệ đúng là:",
+      "correct_option": "OT ⟂ PT",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_006",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "hai-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "hai-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn kẻ hai tiếp tuyến PA, PB. Nếu PA=6 cm thì PB bằng:",
+      "correct_option": "6 cm",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_007",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "tu-giac-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tu-giac-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác ABCD nội tiếp có ∠A=80°. Góc đối ∠C bằng:",
+      "correct_option": "100°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi"
+    },
+    {
+      "question_id": "GEO19V1_008",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "dau-hieu-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dấu hiệu nào sau đây đủ để chứng minh một tứ giác lồi nội tiếp?",
+      "correct_option": "Tổng một cặp góc đối bằng 180°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu"
+    },
+    {
+      "question_id": "GEO19V1_009",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "hai-day-cat-nhau"
+      ],
+      "canonical_assessed_skill_candidate": "hai-day-cat-nhau",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai dây AB, CD cắt nhau tại I. Biết IA=2, IB=6, IC=3. Tính ID.",
+      "correct_option": "4",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tich-doan"
+    },
+    {
+      "question_id": "GEO19V1_010",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-cat-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-cat-tuyen",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn, PT là tiếp tuyến và PAB là cát tuyến. PA=4, PB=16. Tính PT.",
+      "correct_option": "8",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai"
+    },
+    {
+      "question_id": "GEO19V1_011",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "chung-minh-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "chung-minh-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "A thuộc đường tròn tâm O. Đường thẳng d đi qua A và d ⟂ OA. Kết luận đúng:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_012",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "goc-cung"
+      ],
+      "canonical_assessed_skill_candidate": "goc-cung",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc nội tiếp ∠ACB và ∠ADB cùng chắn cung AB. Nếu ∠ACB=30° thì ∠ADB bằng:",
+      "correct_option": "30°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cung-chung"
+    },
+    {
+      "question_id": "GEO19V1_013",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "do-dai-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "do-dai-duong-tron",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong cấu hình hai dây cắt nhau, IA=4, IB=3, IC=2. Giá trị ID thỏa hệ thức tích là:",
+      "correct_option": "6",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO19V1_014",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "goc-o-tam"
+      ],
+      "canonical_assessed_skill_candidate": "goc-o-tam",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc nội tiếp cùng chắn cung AB bằng 30°. Góc ở tâm chắn cung AB bằng:",
+      "correct_option": "60°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-o-tam"
+    },
+    {
+      "question_id": "GEO19V1_015",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "goc-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "goc-noi-tiep",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc ở tâm chắn cung MN bằng 90°. Góc nội tiếp cùng chắn cung MN bằng:",
+      "correct_option": "45°",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-noi-tiep"
+    },
+    {
+      "question_id": "GEO19V1_016",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "nua-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "nua-duong-tron",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Góc chắn nửa đường tròn”: Một góc nội tiếp chắn đường kính của đường tròn có số đo:",
+      "correct_option": "90°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO19V1_017",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "day-va-tam"
+      ],
+      "canonical_assessed_skill_candidate": "day-va-tam",
+      "learner_family_candidate": "CIRCLE-CHORD-ARC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Dây và khoảng cách đến tâm”: Trong một đường tròn, đường kính vuông góc với dây AB. Kết luận đúng là:",
+      "correct_option": "Đường kính đi qua trung điểm của AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "day-tam"
+    },
+    {
+      "question_id": "GEO19V1_018",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-ban-kinh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-ban-kinh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Tiếp tuyến và bán kính”: PT là tiếp tuyến của đường tròn tâm O tại T. Quan hệ đúng là:",
+      "correct_option": "OT ⟂ PT",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_019",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "hai-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "hai-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn kẻ hai tiếp tuyến PA, PB. Nếu PA=7 cm thì PB bằng:",
+      "correct_option": "7 cm",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_020",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "tu-giac-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tu-giac-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác ABCD nội tiếp có ∠A=85°. Góc đối ∠C bằng:",
+      "correct_option": "95°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi"
+    },
+    {
+      "question_id": "GEO19V1_021",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "dau-hieu-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Dấu hiệu nội tiếp”: Dấu hiệu nào sau đây đủ để chứng minh một tứ giác lồi nội tiếp?",
+      "correct_option": "Tổng một cặp góc đối bằng 180°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu"
+    },
+    {
+      "question_id": "GEO19V1_022",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "hai-day-cat-nhau"
+      ],
+      "canonical_assessed_skill_candidate": "hai-day-cat-nhau",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai dây AB, CD cắt nhau tại I. Biết IA=3, IB=8, IC=4. Tính ID.",
+      "correct_option": "6",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tich-doan"
+    },
+    {
+      "question_id": "GEO19V1_023",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-cat-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-cat-tuyen",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn, PT là tiếp tuyến và PAB là cát tuyến. PA=5, PB=45. Tính PT.",
+      "correct_option": "15",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai"
+    },
+    {
+      "question_id": "GEO19V1_024",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "chung-minh-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "chung-minh-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O. Đường thẳng d đi qua A và d ⟂ OA. Kết luận đúng:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_025",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "goc-cung"
+      ],
+      "canonical_assessed_skill_candidate": "goc-cung",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc nội tiếp ∠ACB và ∠ADB cùng chắn cung AB. Nếu ∠ACB=35° thì ∠ADB bằng:",
+      "correct_option": "35°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cung-chung"
+    },
+    {
+      "question_id": "GEO19V1_026",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "do-dai-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "do-dai-duong-tron",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong cấu hình hai dây cắt nhau, IA=6, IB=4, IC=2. Giá trị ID thỏa hệ thức tích là:",
+      "correct_option": "12",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO19V1_027",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "goc-o-tam"
+      ],
+      "canonical_assessed_skill_candidate": "goc-o-tam",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc nội tiếp cùng chắn cung AB bằng 35°. Góc ở tâm chắn cung AB bằng:",
+      "correct_option": "70°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-o-tam"
+    },
+    {
+      "question_id": "GEO19V1_028",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "goc-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "goc-noi-tiep",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc ở tâm chắn cung MN bằng 100°. Góc nội tiếp cùng chắn cung MN bằng:",
+      "correct_option": "50°",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-noi-tiep"
+    },
+    {
+      "question_id": "GEO19V1_029",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "nua-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "nua-duong-tron",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Góc chắn nửa đường tròn”: Một góc nội tiếp chắn đường kính của đường tròn có số đo:",
+      "correct_option": "90°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO19V1_030",
+      "source_file": "19-duong-tron-v1-01.json",
+      "legacy_skill_tags": [
+        "day-va-tam"
+      ],
+      "canonical_assessed_skill_candidate": "day-va-tam",
+      "learner_family_candidate": "CIRCLE-CHORD-ARC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Dây và khoảng cách đến tâm”: Trong một đường tròn, đường kính vuông góc với dây AB. Kết luận đúng là:",
+      "correct_option": "Đường kính đi qua trung điểm của AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "day-tam"
+    },
+    {
+      "question_id": "GEO19V1_031",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-ban-kinh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-ban-kinh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Tiếp tuyến và bán kính”: PT là tiếp tuyến của đường tròn tâm O tại T. Quan hệ đúng là:",
+      "correct_option": "OT ⟂ PT",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_032",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "hai-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "hai-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn kẻ hai tiếp tuyến PA, PB. Nếu PA=8 cm thì PB bằng:",
+      "correct_option": "8 cm",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_033",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "tu-giac-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tu-giac-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác ABCD nội tiếp có ∠A=90°. Góc đối ∠C bằng:",
+      "correct_option": "90°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi"
+    },
+    {
+      "question_id": "GEO19V1_034",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "dau-hieu-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Dấu hiệu nội tiếp”: Dấu hiệu nào sau đây đủ để chứng minh một tứ giác lồi nội tiếp?",
+      "correct_option": "Tổng một cặp góc đối bằng 180°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu"
+    },
+    {
+      "question_id": "GEO19V1_035",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "hai-day-cat-nhau"
+      ],
+      "canonical_assessed_skill_candidate": "hai-day-cat-nhau",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai dây AB, CD cắt nhau tại I. Biết IA=4, IB=10, IC=5. Tính ID.",
+      "correct_option": "8",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tich-doan"
+    },
+    {
+      "question_id": "GEO19V1_036",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-cat-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-cat-tuyen",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn, PT là tiếp tuyến và PAB là cát tuyến. PA=6, PB=24. Tính PT.",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai"
+    },
+    {
+      "question_id": "GEO19V1_037",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "chung-minh-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "chung-minh-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Kiểm tra lại kỹ năng “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O. Đường thẳng d đi qua A và d ⟂ OA. Kết luận đúng:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_038",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-cung"
+      ],
+      "canonical_assessed_skill_candidate": "goc-cung",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc nội tiếp ∠ACB và ∠ADB cùng chắn cung AB. Nếu ∠ACB=40° thì ∠ADB bằng:",
+      "correct_option": "40°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cung-chung"
+    },
+    {
+      "question_id": "GEO19V1_039",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "do-dai-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "do-dai-duong-tron",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong cấu hình hai dây cắt nhau, IA=8, IB=5, IC=2. Giá trị ID thỏa hệ thức tích là:",
+      "correct_option": "20",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO19V1_040",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-o-tam"
+      ],
+      "canonical_assessed_skill_candidate": "goc-o-tam",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc nội tiếp cùng chắn cung AB bằng 40°. Góc ở tâm chắn cung AB bằng:",
+      "correct_option": "80°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-o-tam"
+    },
+    {
+      "question_id": "GEO19V1_041",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "goc-noi-tiep",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc ở tâm chắn cung MN bằng 110°. Góc nội tiếp cùng chắn cung MN bằng:",
+      "correct_option": "55°",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-noi-tiep"
+    },
+    {
+      "question_id": "GEO19V1_042",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "nua-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "nua-duong-tron",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Góc chắn nửa đường tròn”: Một góc nội tiếp chắn đường kính của đường tròn có số đo:",
+      "correct_option": "90°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO19V1_043",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "day-va-tam"
+      ],
+      "canonical_assessed_skill_candidate": "day-va-tam",
+      "learner_family_candidate": "CIRCLE-CHORD-ARC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Dây và khoảng cách đến tâm”: Trong một đường tròn, đường kính vuông góc với dây AB. Kết luận đúng là:",
+      "correct_option": "Đường kính đi qua trung điểm của AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "day-tam"
+    },
+    {
+      "question_id": "GEO19V1_044",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-ban-kinh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-ban-kinh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Tiếp tuyến và bán kính”: PT là tiếp tuyến của đường tròn tâm O tại T. Quan hệ đúng là:",
+      "correct_option": "OT ⟂ PT",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_045",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "hai-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "hai-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn kẻ hai tiếp tuyến PA, PB. Nếu PA=9 cm thì PB bằng:",
+      "correct_option": "9 cm",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_046",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "tu-giac-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tu-giac-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác ABCD nội tiếp có ∠A=95°. Góc đối ∠C bằng:",
+      "correct_option": "85°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi"
+    },
+    {
+      "question_id": "GEO19V1_047",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "dau-hieu-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Dấu hiệu nội tiếp”: Dấu hiệu nào sau đây đủ để chứng minh một tứ giác lồi nội tiếp?",
+      "correct_option": "Tổng một cặp góc đối bằng 180°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu"
+    },
+    {
+      "question_id": "GEO19V1_048",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "hai-day-cat-nhau"
+      ],
+      "canonical_assessed_skill_candidate": "hai-day-cat-nhau",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai dây AB, CD cắt nhau tại I. Biết IA=5, IB=12, IC=3. Tính ID.",
+      "correct_option": "20",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tich-doan"
+    },
+    {
+      "question_id": "GEO19V1_049",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-cat-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-cat-tuyen",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn, PT là tiếp tuyến và PAB là cát tuyến. PA=7, PB=63. Tính PT.",
+      "correct_option": "21",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai"
+    },
+    {
+      "question_id": "GEO19V1_050",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "chung-minh-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "chung-minh-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vận dụng trực tiếp “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O. Đường thẳng d đi qua A và d ⟂ OA. Kết luận đúng:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_051",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-cung"
+      ],
+      "canonical_assessed_skill_candidate": "goc-cung",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc nội tiếp ∠ACB và ∠ADB cùng chắn cung AB. Nếu ∠ACB=45° thì ∠ADB bằng:",
+      "correct_option": "45°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cung-chung"
+    },
+    {
+      "question_id": "GEO19V1_052",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "do-dai-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "do-dai-duong-tron",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong cấu hình hai dây cắt nhau, IA=10, IB=6, IC=2. Giá trị ID thỏa hệ thức tích là:",
+      "correct_option": "30",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO19V1_053",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-o-tam"
+      ],
+      "canonical_assessed_skill_candidate": "goc-o-tam",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc nội tiếp cùng chắn cung AB bằng 45°. Góc ở tâm chắn cung AB bằng:",
+      "correct_option": "90°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-o-tam"
+    },
+    {
+      "question_id": "GEO19V1_054",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "goc-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "goc-noi-tiep",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc ở tâm chắn cung MN bằng 120°. Góc nội tiếp cùng chắn cung MN bằng:",
+      "correct_option": "60°",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-noi-tiep"
+    },
+    {
+      "question_id": "GEO19V1_055",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "nua-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "nua-duong-tron",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Góc chắn nửa đường tròn”: Một góc nội tiếp chắn đường kính của đường tròn có số đo:",
+      "correct_option": "90°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO19V1_056",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "day-va-tam"
+      ],
+      "canonical_assessed_skill_candidate": "day-va-tam",
+      "learner_family_candidate": "CIRCLE-CHORD-ARC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Dây và khoảng cách đến tâm”: Trong một đường tròn, đường kính vuông góc với dây AB. Kết luận đúng là:",
+      "correct_option": "Đường kính đi qua trung điểm của AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "day-tam"
+    },
+    {
+      "question_id": "GEO19V1_057",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-ban-kinh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-ban-kinh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Tiếp tuyến và bán kính”: PT là tiếp tuyến của đường tròn tâm O tại T. Quan hệ đúng là:",
+      "correct_option": "OT ⟂ PT",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_058",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "hai-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "hai-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn kẻ hai tiếp tuyến PA, PB. Nếu PA=10 cm thì PB bằng:",
+      "correct_option": "10 cm",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_059",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "tu-giac-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tu-giac-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác ABCD nội tiếp có ∠A=100°. Góc đối ∠C bằng:",
+      "correct_option": "80°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi"
+    },
+    {
+      "question_id": "GEO19V1_060",
+      "source_file": "19-duong-tron-v1-02.json",
+      "legacy_skill_tags": [
+        "dau-hieu-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Dấu hiệu nội tiếp”: Dấu hiệu nào sau đây đủ để chứng minh một tứ giác lồi nội tiếp?",
+      "correct_option": "Tổng một cặp góc đối bằng 180°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu"
+    },
+    {
+      "question_id": "GEO19V1_061",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "hai-day-cat-nhau"
+      ],
+      "canonical_assessed_skill_candidate": "hai-day-cat-nhau",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai dây AB, CD cắt nhau tại I. Biết IA=6, IB=6, IC=4. Tính ID.",
+      "correct_option": "9",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tich-doan"
+    },
+    {
+      "question_id": "GEO19V1_062",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-cat-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-cat-tuyen",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn, PT là tiếp tuyến và PAB là cát tuyến. PA=8, PB=32. Tính PT.",
+      "correct_option": "16",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai"
+    },
+    {
+      "question_id": "GEO19V1_063",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "chung-minh-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "chung-minh-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong bước tự kiểm tra “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O. Đường thẳng d đi qua A và d ⟂ OA. Kết luận đúng:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_064",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-cung"
+      ],
+      "canonical_assessed_skill_candidate": "goc-cung",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc nội tiếp ∠ACB và ∠ADB cùng chắn cung AB. Nếu ∠ACB=50° thì ∠ADB bằng:",
+      "correct_option": "50°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cung-chung"
+    },
+    {
+      "question_id": "GEO19V1_065",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "do-dai-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "do-dai-duong-tron",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong cấu hình hai dây cắt nhau, IA=4, IB=7, IC=2. Giá trị ID thỏa hệ thức tích là:",
+      "correct_option": "14",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO19V1_066",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-o-tam"
+      ],
+      "canonical_assessed_skill_candidate": "goc-o-tam",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc nội tiếp cùng chắn cung AB bằng 50°. Góc ở tâm chắn cung AB bằng:",
+      "correct_option": "100°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-o-tam"
+    },
+    {
+      "question_id": "GEO19V1_067",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "goc-noi-tiep",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc ở tâm chắn cung MN bằng 130°. Góc nội tiếp cùng chắn cung MN bằng:",
+      "correct_option": "65°",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-noi-tiep"
+    },
+    {
+      "question_id": "GEO19V1_068",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "nua-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "nua-duong-tron",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Góc chắn nửa đường tròn”: Một góc nội tiếp chắn đường kính của đường tròn có số đo:",
+      "correct_option": "90°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO19V1_069",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "day-va-tam"
+      ],
+      "canonical_assessed_skill_candidate": "day-va-tam",
+      "learner_family_candidate": "CIRCLE-CHORD-ARC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Dây và khoảng cách đến tâm”: Trong một đường tròn, đường kính vuông góc với dây AB. Kết luận đúng là:",
+      "correct_option": "Đường kính đi qua trung điểm của AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "day-tam"
+    },
+    {
+      "question_id": "GEO19V1_070",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-ban-kinh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-ban-kinh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Tiếp tuyến và bán kính”: PT là tiếp tuyến của đường tròn tâm O tại T. Quan hệ đúng là:",
+      "correct_option": "OT ⟂ PT",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_071",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "hai-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "hai-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn kẻ hai tiếp tuyến PA, PB. Nếu PA=11 cm thì PB bằng:",
+      "correct_option": "11 cm",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_072",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "tu-giac-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tu-giac-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác ABCD nội tiếp có ∠A=105°. Góc đối ∠C bằng:",
+      "correct_option": "75°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi"
+    },
+    {
+      "question_id": "GEO19V1_073",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "dau-hieu-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Dấu hiệu nội tiếp”: Dấu hiệu nào sau đây đủ để chứng minh một tứ giác lồi nội tiếp?",
+      "correct_option": "Tổng một cặp góc đối bằng 180°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu"
+    },
+    {
+      "question_id": "GEO19V1_074",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "hai-day-cat-nhau"
+      ],
+      "canonical_assessed_skill_candidate": "hai-day-cat-nhau",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai dây AB, CD cắt nhau tại I. Biết IA=2, IB=8, IC=2. Tính ID.",
+      "correct_option": "8",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tich-doan"
+    },
+    {
+      "question_id": "GEO19V1_075",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-cat-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-cat-tuyen",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn, PT là tiếp tuyến và PAB là cát tuyến. PA=4, PB=36. Tính PT.",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai"
+    },
+    {
+      "question_id": "GEO19V1_076",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "chung-minh-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "chung-minh-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nhận dạng nhanh với “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O. Đường thẳng d đi qua A và d ⟂ OA. Kết luận đúng:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_077",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-cung"
+      ],
+      "canonical_assessed_skill_candidate": "goc-cung",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc nội tiếp ∠ACB và ∠ADB cùng chắn cung AB. Nếu ∠ACB=55° thì ∠ADB bằng:",
+      "correct_option": "55°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cung-chung"
+    },
+    {
+      "question_id": "GEO19V1_078",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "do-dai-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "do-dai-duong-tron",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong cấu hình hai dây cắt nhau, IA=6, IB=3, IC=2. Giá trị ID thỏa hệ thức tích là:",
+      "correct_option": "9",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO19V1_079",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-o-tam"
+      ],
+      "canonical_assessed_skill_candidate": "goc-o-tam",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc nội tiếp cùng chắn cung AB bằng 55°. Góc ở tâm chắn cung AB bằng:",
+      "correct_option": "110°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-o-tam"
+    },
+    {
+      "question_id": "GEO19V1_080",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "goc-noi-tiep",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc ở tâm chắn cung MN bằng 140°. Góc nội tiếp cùng chắn cung MN bằng:",
+      "correct_option": "70°",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-noi-tiep"
+    },
+    {
+      "question_id": "GEO19V1_081",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "nua-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "nua-duong-tron",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Góc chắn nửa đường tròn”: Một góc nội tiếp chắn đường kính của đường tròn có số đo:",
+      "correct_option": "90°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO19V1_082",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "day-va-tam"
+      ],
+      "canonical_assessed_skill_candidate": "day-va-tam",
+      "learner_family_candidate": "CIRCLE-CHORD-ARC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Dây và khoảng cách đến tâm”: Trong một đường tròn, đường kính vuông góc với dây AB. Kết luận đúng là:",
+      "correct_option": "Đường kính đi qua trung điểm của AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "day-tam"
+    },
+    {
+      "question_id": "GEO19V1_083",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-ban-kinh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-ban-kinh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Tiếp tuyến và bán kính”: PT là tiếp tuyến của đường tròn tâm O tại T. Quan hệ đúng là:",
+      "correct_option": "OT ⟂ PT",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_084",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "hai-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "hai-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn kẻ hai tiếp tuyến PA, PB. Nếu PA=12 cm thì PB bằng:",
+      "correct_option": "12 cm",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_085",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "tu-giac-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tu-giac-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác ABCD nội tiếp có ∠A=110°. Góc đối ∠C bằng:",
+      "correct_option": "70°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi"
+    },
+    {
+      "question_id": "GEO19V1_086",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "dau-hieu-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Dấu hiệu nội tiếp”: Dấu hiệu nào sau đây đủ để chứng minh một tứ giác lồi nội tiếp?",
+      "correct_option": "Tổng một cặp góc đối bằng 180°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu"
+    },
+    {
+      "question_id": "GEO19V1_087",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "hai-day-cat-nhau"
+      ],
+      "canonical_assessed_skill_candidate": "hai-day-cat-nhau",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai dây AB, CD cắt nhau tại I. Biết IA=3, IB=10, IC=3. Tính ID.",
+      "correct_option": "10",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tich-doan"
+    },
+    {
+      "question_id": "GEO19V1_088",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-cat-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-cat-tuyen",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn, PT là tiếp tuyến và PAB là cát tuyến. PA=5, PB=20. Tính PT.",
+      "correct_option": "10",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai"
+    },
+    {
+      "question_id": "GEO19V1_089",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "chung-minh-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "chung-minh-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chọn kết luận bằng kiến thức “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O. Đường thẳng d đi qua A và d ⟂ OA. Kết luận đúng:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_090",
+      "source_file": "19-duong-tron-v1-03.json",
+      "legacy_skill_tags": [
+        "goc-cung"
+      ],
+      "canonical_assessed_skill_candidate": "goc-cung",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc nội tiếp ∠ACB và ∠ADB cùng chắn cung AB. Nếu ∠ACB=60° thì ∠ADB bằng:",
+      "correct_option": "60°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cung-chung"
+    },
+    {
+      "question_id": "GEO19V1_091",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "do-dai-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "do-dai-duong-tron",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong cấu hình hai dây cắt nhau, IA=8, IB=4, IC=2. Giá trị ID thỏa hệ thức tích là:",
+      "correct_option": "16",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO19V1_092",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-o-tam"
+      ],
+      "canonical_assessed_skill_candidate": "goc-o-tam",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc nội tiếp cùng chắn cung AB bằng 60°. Góc ở tâm chắn cung AB bằng:",
+      "correct_option": "120°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-o-tam"
+    },
+    {
+      "question_id": "GEO19V1_093",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "goc-noi-tiep",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc ở tâm chắn cung MN bằng 150°. Góc nội tiếp cùng chắn cung MN bằng:",
+      "correct_option": "75°",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-noi-tiep"
+    },
+    {
+      "question_id": "GEO19V1_094",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "nua-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "nua-duong-tron",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Góc chắn nửa đường tròn”: Một góc nội tiếp chắn đường kính của đường tròn có số đo:",
+      "correct_option": "90°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO19V1_095",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "day-va-tam"
+      ],
+      "canonical_assessed_skill_candidate": "day-va-tam",
+      "learner_family_candidate": "CIRCLE-CHORD-ARC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Dây và khoảng cách đến tâm”: Trong một đường tròn, đường kính vuông góc với dây AB. Kết luận đúng là:",
+      "correct_option": "Đường kính đi qua trung điểm của AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "day-tam"
+    },
+    {
+      "question_id": "GEO19V1_096",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-ban-kinh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-ban-kinh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Tiếp tuyến và bán kính”: PT là tiếp tuyến của đường tròn tâm O tại T. Quan hệ đúng là:",
+      "correct_option": "OT ⟂ PT",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_097",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "hai-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "hai-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn kẻ hai tiếp tuyến PA, PB. Nếu PA=13 cm thì PB bằng:",
+      "correct_option": "13 cm",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_098",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "tu-giac-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tu-giac-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác ABCD nội tiếp có ∠A=115°. Góc đối ∠C bằng:",
+      "correct_option": "65°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi"
+    },
+    {
+      "question_id": "GEO19V1_099",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-hieu-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Dấu hiệu nội tiếp”: Dấu hiệu nào sau đây đủ để chứng minh một tứ giác lồi nội tiếp?",
+      "correct_option": "Tổng một cặp góc đối bằng 180°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu"
+    },
+    {
+      "question_id": "GEO19V1_100",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "hai-day-cat-nhau"
+      ],
+      "canonical_assessed_skill_candidate": "hai-day-cat-nhau",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai dây AB, CD cắt nhau tại I. Biết IA=4, IB=12, IC=4. Tính ID.",
+      "correct_option": "12",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tich-doan"
+    },
+    {
+      "question_id": "GEO19V1_101",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-cat-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-cat-tuyen",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn, PT là tiếp tuyến và PAB là cát tuyến. PA=6, PB=54. Tính PT.",
+      "correct_option": "18",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai"
+    },
+    {
+      "question_id": "GEO19V1_102",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "chung-minh-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "chung-minh-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dùng đúng tính chất “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O. Đường thẳng d đi qua A và d ⟂ OA. Kết luận đúng:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_103",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-cung"
+      ],
+      "canonical_assessed_skill_candidate": "goc-cung",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc nội tiếp ∠ACB và ∠ADB cùng chắn cung AB. Nếu ∠ACB=65° thì ∠ADB bằng:",
+      "correct_option": "65°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cung-chung"
+    },
+    {
+      "question_id": "GEO19V1_104",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "do-dai-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "do-dai-duong-tron",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong cấu hình hai dây cắt nhau, IA=10, IB=5, IC=2. Giá trị ID thỏa hệ thức tích là:",
+      "correct_option": "25",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO19V1_105",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-o-tam"
+      ],
+      "canonical_assessed_skill_candidate": "goc-o-tam",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc nội tiếp cùng chắn cung AB bằng 65°. Góc ở tâm chắn cung AB bằng:",
+      "correct_option": "130°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-o-tam"
+    },
+    {
+      "question_id": "GEO19V1_106",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "goc-noi-tiep",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Góc nội tiếp”: Góc ở tâm chắn cung MN bằng 80°. Góc nội tiếp cùng chắn cung MN bằng:",
+      "correct_option": "40°",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-noi-tiep"
+    },
+    {
+      "question_id": "GEO19V1_107",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "nua-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "nua-duong-tron",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không thêm giả thiết, xét “Góc chắn nửa đường tròn”: Một góc nội tiếp chắn đường kính của đường tròn có số đo:",
+      "correct_option": "90°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "GEO19V1_108",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "day-va-tam"
+      ],
+      "canonical_assessed_skill_candidate": "day-va-tam",
+      "learner_family_candidate": "CIRCLE-CHORD-ARC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không thêm giả thiết, xét “Dây và khoảng cách đến tâm”: Trong một đường tròn, đường kính vuông góc với dây AB. Kết luận đúng là:",
+      "correct_option": "Đường kính đi qua trung điểm của AB",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "day-tam"
+    },
+    {
+      "question_id": "GEO19V1_109",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-ban-kinh"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-ban-kinh",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không thêm giả thiết, xét “Tiếp tuyến và bán kính”: PT là tiếp tuyến của đường tròn tâm O tại T. Quan hệ đúng là:",
+      "correct_option": "OT ⟂ PT",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_110",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "hai-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "hai-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn kẻ hai tiếp tuyến PA, PB. Nếu PA=14 cm thì PB bằng:",
+      "correct_option": "14 cm",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_111",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "tu-giac-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tu-giac-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác ABCD nội tiếp có ∠A=120°. Góc đối ∠C bằng:",
+      "correct_option": "60°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-doi"
+    },
+    {
+      "question_id": "GEO19V1_112",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "dau-hieu-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "dau-hieu-noi-tiep",
+      "learner_family_candidate": "CIRCLE-CYCLIC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không thêm giả thiết, xét “Dấu hiệu nội tiếp”: Dấu hiệu nào sau đây đủ để chứng minh một tứ giác lồi nội tiếp?",
+      "correct_option": "Tổng một cặp góc đối bằng 180°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu"
+    },
+    {
+      "question_id": "GEO19V1_113",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "hai-day-cat-nhau"
+      ],
+      "canonical_assessed_skill_candidate": "hai-day-cat-nhau",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai dây AB, CD cắt nhau tại I. Biết IA=5, IB=6, IC=5. Tính ID.",
+      "correct_option": "6",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tich-doan"
+    },
+    {
+      "question_id": "GEO19V1_114",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "tiep-tuyen-cat-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "tiep-tuyen-cat-tuyen",
+      "learner_family_candidate": "CIRCLE-POWER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Từ P ngoài đường tròn, PT là tiếp tuyến và PAB là cát tuyến. PA=7, PB=28. Tính PT.",
+      "correct_option": "14",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai"
+    },
+    {
+      "question_id": "GEO19V1_115",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "chung-minh-tiep-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "chung-minh-tiep-tuyen",
+      "learner_family_candidate": "CIRCLE-TANGENT",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Không thêm giả thiết, xét “Chứng minh tiếp tuyến”: A thuộc đường tròn tâm O. Đường thẳng d đi qua A và d ⟂ OA. Kết luận đúng:",
+      "correct_option": "d là tiếp tuyến tại A",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dau-hieu-tiep-tuyen"
+    },
+    {
+      "question_id": "GEO19V1_116",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-cung"
+      ],
+      "canonical_assessed_skill_candidate": "goc-cung",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai góc nội tiếp ∠ACB và ∠ADB cùng chắn cung AB. Nếu ∠ACB=70° thì ∠ADB bằng:",
+      "correct_option": "70°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cung-chung"
+    },
+    {
+      "question_id": "GEO19V1_117",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "do-dai-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "do-dai-duong-tron",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong cấu hình hai dây cắt nhau, IA=4, IB=6, IC=2. Giá trị ID thỏa hệ thức tích là:",
+      "correct_option": "12",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "he-thuc-tich"
+    },
+    {
+      "question_id": "GEO19V1_118",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-o-tam"
+      ],
+      "canonical_assessed_skill_candidate": "goc-o-tam",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Góc nội tiếp cùng chắn cung AB bằng 70°. Góc ở tâm chắn cung AB bằng:",
+      "correct_option": "140°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-o-tam"
+    },
+    {
+      "question_id": "GEO19V1_119",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "goc-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "goc-noi-tiep",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ôn nhanh kỹ năng “Góc nội tiếp”: Góc ở tâm chắn cung MN bằng 90°. Góc nội tiếp cùng chắn cung MN bằng:",
+      "correct_option": "45°",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-noi-tiep"
+    },
+    {
+      "question_id": "GEO19V1_120",
+      "source_file": "19-duong-tron-v1-04.json",
+      "legacy_skill_tags": [
+        "nua-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "nua-duong-tron",
+      "learner_family_candidate": "CIRCLE-ANGLES",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Xét một cách hỏi khác của “Góc chắn nửa đường tròn”: Một góc nội tiếp chắn đường kính của đường tròn có số đo:",
+      "correct_option": "90°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet"
+    },
+    {
+      "question_id": "CIR19V1_121",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "cung-va-day"
+      ],
+      "canonical_assessed_skill_candidate": "cung-va-day",
+      "learner_family_candidate": "CIRCLE-CHORD-ARC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong cùng đường tròn, hai dây bằng nhau thì:",
+      "correct_option": "Hai cung nhỏ tương ứng bằng nhau",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cung-va-day"
+    },
+    {
+      "question_id": "CIR19V1_122",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "cung-va-day"
+      ],
+      "canonical_assessed_skill_candidate": "cung-va-day",
+      "learner_family_candidate": "CIRCLE-CHORD-ARC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong cùng đường tròn, hai cung nhỏ bằng nhau thì:",
+      "correct_option": "Hai dây căng cung đó bằng nhau",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cung-va-day"
+    },
+    {
+      "question_id": "CIR19V1_123",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "cung-va-day"
+      ],
+      "canonical_assessed_skill_candidate": "cung-va-day",
+      "learner_family_candidate": "CIRCLE-CHORD-ARC",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Dây AB dài hơn dây CD trong cùng đường tròn thì cung nhỏ AB:",
+      "correct_option": "Lớn hơn cung nhỏ CD",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cung-va-day"
+    },
+    {
+      "question_id": "CIR19V1_124",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "do-dai-cung"
+      ],
+      "canonical_assessed_skill_candidate": "do-dai-cung",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "R=9 cm, cung 120°. Độ dài cung:",
+      "correct_option": "6π cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai-cung"
+    },
+    {
+      "question_id": "CIR19V1_125",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "do-dai-cung"
+      ],
+      "canonical_assessed_skill_candidate": "do-dai-cung",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Chu vi đường tròn 20π cm. Cung 90° dài:",
+      "correct_option": "5π cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai-cung"
+    },
+    {
+      "question_id": "CIR19V1_126",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "do-dai-cung"
+      ],
+      "canonical_assessed_skill_candidate": "do-dai-cung",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Cung 72° của đường tròn bán kính 5 cm dài:",
+      "correct_option": "2π cm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "do-dai-cung"
+    },
+    {
+      "question_id": "CIR19V1_127",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-quat-tron"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-quat-tron",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "R=4 cm, góc ở tâm 90°. Diện tích quạt:",
+      "correct_option": "4π cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-quat-tron"
+    },
+    {
+      "question_id": "CIR19V1_128",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-quat-tron"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-quat-tron",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "R=6 cm, góc 60°. Diện tích quạt:",
+      "correct_option": "6π cm²",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-quat-tron"
+    },
+    {
+      "question_id": "CIR19V1_129",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-quat-tron"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-quat-tron",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-016",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Quạt tròn chiếm 120° của hình tròn diện tích 27π. Diện tích quạt:",
+      "correct_option": "9π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-quat-tron"
+    },
+    {
+      "question_id": "CIR19V1_130",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-vanh-khuyen"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-vanh-khuyen",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-017",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vành khuyên R=5,r=4. Diện tích:",
+      "correct_option": "9π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-vanh-khuyen"
+    },
+    {
+      "question_id": "CIR19V1_131",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-vanh-khuyen"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-vanh-khuyen",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-017",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Vành khuyên R=10,r=6. Diện tích:",
+      "correct_option": "64π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-vanh-khuyen"
+    },
+    {
+      "question_id": "CIR19V1_132",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "dien-tich-vanh-khuyen"
+      ],
+      "canonical_assessed_skill_candidate": "dien-tich-vanh-khuyen",
+      "learner_family_candidate": "CIRCLE-MEASURE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_MEASUREMENT_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-017",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Diện tích hai hình tròn đồng tâm là 49π và 25π. Vành khuyên:",
+      "correct_option": "24π",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dien-tich-vanh-khuyen"
+    },
+    {
+      "question_id": "CIR19V1_133",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "vi-tri-tuong-doi-duong-thang-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tuong-doi-duong-thang-duong-tron",
+      "learner_family_candidate": "CIRCLE-POSITION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-018",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "d(O,a)<R thì a:",
+      "correct_option": "Cắt đường tròn tại hai điểm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tuong-doi-duong-thang-duong-tron"
+    },
+    {
+      "question_id": "CIR19V1_134",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "vi-tri-tuong-doi-duong-thang-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tuong-doi-duong-thang-duong-tron",
+      "learner_family_candidate": "CIRCLE-POSITION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-018",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "d(O,a)=R thì a:",
+      "correct_option": "Tiếp tuyến",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tuong-doi-duong-thang-duong-tron"
+    },
+    {
+      "question_id": "CIR19V1_135",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "vi-tri-tuong-doi-duong-thang-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tuong-doi-duong-thang-duong-tron",
+      "learner_family_candidate": "CIRCLE-POSITION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-018",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "d(O,a)>R thì a:",
+      "correct_option": "Không có điểm chung với đường tròn",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tuong-doi-duong-thang-duong-tron"
+    },
+    {
+      "question_id": "CIR19V1_136",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "vi-tri-tuong-doi-hai-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tuong-doi-hai-duong-tron",
+      "learner_family_candidate": "CIRCLE-POSITION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-019",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai đường tròn R=5,r=3,d=8:",
+      "correct_option": "Tiếp xúc ngoài",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tuong-doi-hai-duong-tron"
+    },
+    {
+      "question_id": "CIR19V1_137",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "vi-tri-tuong-doi-hai-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tuong-doi-hai-duong-tron",
+      "learner_family_candidate": "CIRCLE-POSITION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-019",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "R=5,r=3,d=4:",
+      "correct_option": "Cắt nhau tại hai điểm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tuong-doi-hai-duong-tron"
+    },
+    {
+      "question_id": "CIR19V1_138",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "vi-tri-tuong-doi-hai-duong-tron"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tuong-doi-hai-duong-tron",
+      "learner_family_candidate": "CIRCLE-POSITION",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-019",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "R=5,r=3,d=2:",
+      "correct_option": "Tiếp xúc trong",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tuong-doi-hai-duong-tron"
+    },
+    {
+      "question_id": "CIR19V1_139",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "duong-tron-ngoai-tiep-tam-giac"
+      ],
+      "canonical_assessed_skill_candidate": "duong-tron-ngoai-tiep-tam-giac",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tâm ngoại tiếp tam giác là giao của:",
+      "correct_option": "Ba đường trung trực",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-tron-ngoai-tiep-tam-giac"
+    },
+    {
+      "question_id": "CIR19V1_140",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "duong-tron-ngoai-tiep-tam-giac"
+      ],
+      "canonical_assessed_skill_candidate": "duong-tron-ngoai-tiep-tam-giac",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đường tròn ngoại tiếp tam giác đi qua:",
+      "correct_option": "Ba đỉnh của tam giác",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-tron-ngoai-tiep-tam-giac"
+    },
+    {
+      "question_id": "CIR19V1_141",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "duong-tron-ngoai-tiep-tam-giac"
+      ],
+      "canonical_assessed_skill_candidate": "duong-tron-ngoai-tiep-tam-giac",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-020",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tam giác vuông có tâm ngoại tiếp là:",
+      "correct_option": "Trung điểm cạnh huyền",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-tron-ngoai-tiep-tam-giac"
+    },
+    {
+      "question_id": "CIR19V1_142",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "duong-tron-noi-tiep-tam-giac"
+      ],
+      "canonical_assessed_skill_candidate": "duong-tron-noi-tiep-tam-giac",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-021",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tâm nội tiếp tam giác là giao của:",
+      "correct_option": "Ba đường phân giác",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-tron-noi-tiep-tam-giac"
+    },
+    {
+      "question_id": "CIR19V1_143",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "duong-tron-noi-tiep-tam-giac"
+      ],
+      "canonical_assessed_skill_candidate": "duong-tron-noi-tiep-tam-giac",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-021",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đường tròn nội tiếp tam giác:",
+      "correct_option": "Tiếp xúc cả ba cạnh",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-tron-noi-tiep-tam-giac"
+    },
+    {
+      "question_id": "CIR19V1_144",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "duong-tron-noi-tiep-tam-giac"
+      ],
+      "canonical_assessed_skill_candidate": "duong-tron-noi-tiep-tam-giac",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_OR_SYNTHESIS_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CIR19-AUTO-021",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khoảng cách từ tâm nội tiếp I đến ba cạnh tam giác:",
+      "correct_option": "Bằng nhau",
+      "note": "MCQ cannot alone certify a complete geometric proof/synthesis chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-tron-noi-tiep-tam-giac"
+    },
+    {
+      "question_id": "CIR19V1_145",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "da-giac-deu"
+      ],
+      "canonical_assessed_skill_candidate": "da-giac-deu",
+      "learner_family_candidate": "GEO-REGULAR-SYMM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đa giác đều có:",
+      "correct_option": "Các cạnh bằng nhau và các góc bằng nhau",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "da-giac-deu"
+    },
+    {
+      "question_id": "CIR19V1_146",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "da-giac-deu"
+      ],
+      "canonical_assessed_skill_candidate": "da-giac-deu",
+      "learner_family_candidate": "GEO-REGULAR-SYMM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Lục giác đều có góc trong mỗi đỉnh bằng:",
+      "correct_option": "120°",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "da-giac-deu"
+    },
+    {
+      "question_id": "CIR19V1_147",
+      "source_file": "19-duong-tron-v1-05.json",
+      "legacy_skill_tags": [
+        "da-giac-deu"
+      ],
+      "canonical_assessed_skill_candidate": "da-giac-deu",
+      "learner_family_candidate": "GEO-REGULAR-SYMM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CIR19-AUTO-022",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nối tâm của lục giác đều với các đỉnh tạo:",
+      "correct_option": "6 tam giác đều",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "da-giac-deu"
+    }
+  ],
+  "academic_review": {
+    "reviewer": "NotebookLM",
+    "result": "PASS",
+    "selected_sources": {
+      "total": 11,
+      "permanent": [
+        "00_NOTEBOOK_MATH_PERMANENT_v1.1.md",
+        "01_TOAN_THCS_MASTER_PLAN_v1.1.md"
+      ],
+      "batch_count": 9
+    },
+    "combined_packet": "MATH-SKILL-S3-CT13-20-COMBINED-R1-20261002",
+    "coverage": {
+      "expected": 147,
+      "reviewed": 147,
+      "revisions": 0,
+      "missing": 0
+    },
+    "counts_verified": true,
+    "architecture_checks": {
+      "batch_expected": 14,
+      "batch_pass": 14
+    },
+    "authorization": "CLEARED_FOR_S3_CT13_20_RECONCILIATION",
+    "reviewed_at": "2026-10-02",
+    "runtime_activation_authorized": false
+  }
+}

@@ -1,0 +1,2813 @@
+{
+  "schema": "primary-skill-overlay-ct16-s3-phase-d-r1",
+  "status": "CHATGPT_CANDIDATE_PENDING_NOTEBOOKLM_REVIEW",
+  "as_of": "2026-10-02",
+  "topic": "16-tu-giac",
+  "source_manifest": "docs/assets/data/practice/16-tu-giac-v1.manifest.json",
+  "source_manifest_blob": "e63b621e30628616f559a3fd7518f0c90a3e5ed6",
+  "source_files": {
+    "16-tu-giac-v1-01.json": {
+      "blob": "0b70aa2d697250b9c8810e1713919404119c1ff4",
+      "question_count": 30
+    },
+    "16-tu-giac-v1-02.json": {
+      "blob": "70f6608bdabb5f37ffb5490caa701cdeba057b80",
+      "question_count": 30
+    },
+    "16-tu-giac-v1-03.json": {
+      "blob": "39ef7869550abeaa40cf150fde7c61622fd760cf",
+      "question_count": 30
+    },
+    "16-tu-giac-v1-04.json": {
+      "blob": "9e12ff68a0e10e789a249c64ef297ac95e6414ce",
+      "question_count": 30
+    }
+  },
+  "academic_basis": {
+    "s3_family_blob": "7c817ecc064873135ae05b40ded30661bff6434a"
+  },
+  "rules": {
+    "one_primary_max_per_mcq": true,
+    "learner_family_broader_than_diagnostic": true,
+    "proof_mcq_partial_only": true,
+    "no_family_method_formative_only": true,
+    "auto_clone_key": "primary diagnostic + exact question type",
+    "runtime_enabled": false,
+    "no_history_backfill": true
+  },
+  "summary": {
+    "questions": 120,
+    "mapped_primary": 120,
+    "formative_only_without_family": 0,
+    "primary_counts": {
+      "tong-goc-tu-giac": 8,
+      "hinh-thang": 8,
+      "hinh-thang-can": 8,
+      "hbh-tinh-chat": 12,
+      "hbh-dau-hieu": 10,
+      "hcn-tinh-chat": 10,
+      "hcn-dau-hieu": 10,
+      "hthoi-tinh-chat": 10,
+      "hthoi-dau-hieu": 10,
+      "hvuong-tinh-chat": 10,
+      "hvuong-dau-hieu": 10,
+      "quan-he-bao-ham": 8,
+      "duong-cheo-suy-luan": 6
+    },
+    "family_counts": {
+      "QUAD-TRAPEZOID": 24,
+      "QUAD-PARALLELOGRAM": 22,
+      "QUAD-RECTANGLE": 20,
+      "QUAD-RHOMBUS": 20,
+      "QUAD-SQUARE-HIER": 34
+    },
+    "clone_families": [
+      {
+        "id": "QUAD16-AUTO-001",
+        "key": "tong-goc-tu-giac__tinh-goc-tu-giac",
+        "count": 8,
+        "ids": [
+          "QUAD16V1_001",
+          "QUAD16V1_002",
+          "QUAD16V1_003",
+          "QUAD16V1_004",
+          "QUAD16V1_005",
+          "QUAD16V1_006",
+          "QUAD16V1_007",
+          "QUAD16V1_008"
+        ]
+      },
+      {
+        "id": "QUAD16-AUTO-002",
+        "key": "hinh-thang__nhan-biet-hinh-thang",
+        "count": 8,
+        "ids": [
+          "QUAD16V1_009",
+          "QUAD16V1_010",
+          "QUAD16V1_011",
+          "QUAD16V1_012",
+          "QUAD16V1_013",
+          "QUAD16V1_014",
+          "QUAD16V1_015",
+          "QUAD16V1_016"
+        ]
+      },
+      {
+        "id": "QUAD16-AUTO-003",
+        "key": "hinh-thang-can__goc-hinh-thang-can",
+        "count": 8,
+        "ids": [
+          "QUAD16V1_017",
+          "QUAD16V1_018",
+          "QUAD16V1_019",
+          "QUAD16V1_020",
+          "QUAD16V1_021",
+          "QUAD16V1_022",
+          "QUAD16V1_023",
+          "QUAD16V1_024"
+        ]
+      },
+      {
+        "id": "QUAD16-AUTO-004",
+        "key": "hbh-tinh-chat__hbh-tinh-chat",
+        "count": 12,
+        "ids": [
+          "QUAD16V1_025",
+          "QUAD16V1_026",
+          "QUAD16V1_027",
+          "QUAD16V1_028",
+          "QUAD16V1_029",
+          "QUAD16V1_030",
+          "QUAD16V1_031",
+          "QUAD16V1_032",
+          "QUAD16V1_033",
+          "QUAD16V1_034",
+          "QUAD16V1_035",
+          "QUAD16V1_036"
+        ]
+      },
+      {
+        "id": "QUAD16-AUTO-005",
+        "key": "hbh-dau-hieu__hbh-dau-hieu",
+        "count": 10,
+        "ids": [
+          "QUAD16V1_037",
+          "QUAD16V1_038",
+          "QUAD16V1_039",
+          "QUAD16V1_040",
+          "QUAD16V1_041",
+          "QUAD16V1_042",
+          "QUAD16V1_043",
+          "QUAD16V1_044",
+          "QUAD16V1_045",
+          "QUAD16V1_046"
+        ]
+      },
+      {
+        "id": "QUAD16-AUTO-006",
+        "key": "hcn-tinh-chat__hcn-tinh-chat",
+        "count": 10,
+        "ids": [
+          "QUAD16V1_047",
+          "QUAD16V1_048",
+          "QUAD16V1_049",
+          "QUAD16V1_050",
+          "QUAD16V1_051",
+          "QUAD16V1_052",
+          "QUAD16V1_053",
+          "QUAD16V1_054",
+          "QUAD16V1_055",
+          "QUAD16V1_056"
+        ]
+      },
+      {
+        "id": "QUAD16-AUTO-007",
+        "key": "hcn-dau-hieu__hcn-dau-hieu",
+        "count": 10,
+        "ids": [
+          "QUAD16V1_057",
+          "QUAD16V1_058",
+          "QUAD16V1_059",
+          "QUAD16V1_060",
+          "QUAD16V1_061",
+          "QUAD16V1_062",
+          "QUAD16V1_063",
+          "QUAD16V1_064",
+          "QUAD16V1_065",
+          "QUAD16V1_066"
+        ]
+      },
+      {
+        "id": "QUAD16-AUTO-008",
+        "key": "hthoi-tinh-chat__hthoi-tinh-chat",
+        "count": 10,
+        "ids": [
+          "QUAD16V1_067",
+          "QUAD16V1_068",
+          "QUAD16V1_069",
+          "QUAD16V1_070",
+          "QUAD16V1_071",
+          "QUAD16V1_072",
+          "QUAD16V1_073",
+          "QUAD16V1_074",
+          "QUAD16V1_075",
+          "QUAD16V1_076"
+        ]
+      },
+      {
+        "id": "QUAD16-AUTO-009",
+        "key": "hthoi-dau-hieu__hthoi-dau-hieu",
+        "count": 10,
+        "ids": [
+          "QUAD16V1_077",
+          "QUAD16V1_078",
+          "QUAD16V1_079",
+          "QUAD16V1_080",
+          "QUAD16V1_081",
+          "QUAD16V1_082",
+          "QUAD16V1_083",
+          "QUAD16V1_084",
+          "QUAD16V1_085",
+          "QUAD16V1_086"
+        ]
+      },
+      {
+        "id": "QUAD16-AUTO-010",
+        "key": "hvuong-tinh-chat__hvuong-tinh-chat",
+        "count": 10,
+        "ids": [
+          "QUAD16V1_087",
+          "QUAD16V1_088",
+          "QUAD16V1_089",
+          "QUAD16V1_090",
+          "QUAD16V1_091",
+          "QUAD16V1_092",
+          "QUAD16V1_093",
+          "QUAD16V1_094",
+          "QUAD16V1_095",
+          "QUAD16V1_096"
+        ]
+      },
+      {
+        "id": "QUAD16-AUTO-011",
+        "key": "hvuong-dau-hieu__hvuong-dau-hieu",
+        "count": 10,
+        "ids": [
+          "QUAD16V1_097",
+          "QUAD16V1_098",
+          "QUAD16V1_099",
+          "QUAD16V1_100",
+          "QUAD16V1_101",
+          "QUAD16V1_102",
+          "QUAD16V1_103",
+          "QUAD16V1_104",
+          "QUAD16V1_105",
+          "QUAD16V1_106"
+        ]
+      },
+      {
+        "id": "QUAD16-AUTO-012",
+        "key": "quan-he-bao-ham__quan-he-bao-ham",
+        "count": 8,
+        "ids": [
+          "QUAD16V1_107",
+          "QUAD16V1_108",
+          "QUAD16V1_109",
+          "QUAD16V1_110",
+          "QUAD16V1_111",
+          "QUAD16V1_112",
+          "QUAD16V1_113",
+          "QUAD16V1_114"
+        ]
+      },
+      {
+        "id": "QUAD16-AUTO-013",
+        "key": "duong-cheo-suy-luan__duong-cheo-suy-luan",
+        "count": 6,
+        "ids": [
+          "QUAD16V1_115",
+          "QUAD16V1_116",
+          "QUAD16V1_117",
+          "QUAD16V1_118",
+          "QUAD16V1_119",
+          "QUAD16V1_120"
+        ]
+      }
+    ],
+    "runtime_enabled": 0
+  },
+  "items": [
+    {
+      "question_id": "QUAD16V1_001",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "tong-goc-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tong-goc-tu-giac",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Tứ giác \\(ABCD\\) có \\(\\angle A=80^\\circ\\), \\(\\angle B=90^\\circ\\), \\(\\angle C=100^\\circ\\). Tính \\(\\angle D\\).",
+      "correct_option": "\\(90^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-tu-giac"
+    },
+    {
+      "question_id": "QUAD16V1_002",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "tong-goc-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tong-goc-tu-giac",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tứ giác \\(ABCD\\) có \\(\\angle A=70^\\circ\\), \\(\\angle B=110^\\circ\\), \\(\\angle C=95^\\circ\\). Tính \\(\\angle D\\).",
+      "correct_option": "\\(85^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-tu-giac"
+    },
+    {
+      "question_id": "QUAD16V1_003",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "tong-goc-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tong-goc-tu-giac",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tứ giác \\(ABCD\\) có \\(\\angle A=90^\\circ\\), \\(\\angle B=90^\\circ\\), \\(\\angle C=90^\\circ\\). Tính \\(\\angle D\\).",
+      "correct_option": "\\(90^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-tu-giac"
+    },
+    {
+      "question_id": "QUAD16V1_004",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "tong-goc-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tong-goc-tu-giac",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tứ giác \\(ABCD\\) có \\(\\angle A=60^\\circ\\), \\(\\angle B=100^\\circ\\), \\(\\angle C=120^\\circ\\). Tính \\(\\angle D\\).",
+      "correct_option": "\\(80^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-tu-giac"
+    },
+    {
+      "question_id": "QUAD16V1_005",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "tong-goc-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tong-goc-tu-giac",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tứ giác \\(ABCD\\) có \\(\\angle A=85^\\circ\\), \\(\\angle B=95^\\circ\\), \\(\\angle C=105^\\circ\\). Tính \\(\\angle D\\).",
+      "correct_option": "\\(75^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-tu-giac"
+    },
+    {
+      "question_id": "QUAD16V1_006",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "tong-goc-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tong-goc-tu-giac",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Tứ giác \\(ABCD\\) có \\(\\angle A=75^\\circ\\), \\(\\angle B=105^\\circ\\), \\(\\angle C=115^\\circ\\). Tính \\(\\angle D\\).",
+      "correct_option": "\\(65^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-tu-giac"
+    },
+    {
+      "question_id": "QUAD16V1_007",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "tong-goc-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tong-goc-tu-giac",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Tứ giác \\(ABCD\\) có \\(\\angle A=50^\\circ\\), \\(\\angle B=120^\\circ\\), \\(\\angle C=130^\\circ\\). Tính \\(\\angle D\\).",
+      "correct_option": "\\(60^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-tu-giac"
+    },
+    {
+      "question_id": "QUAD16V1_008",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "tong-goc-tu-giac"
+      ],
+      "canonical_assessed_skill_candidate": "tong-goc-tu-giac",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác \\(ABCD\\) có \\(\\angle A=100^\\circ\\), \\(\\angle B=80^\\circ\\), \\(\\angle C=70^\\circ\\). Tính \\(\\angle D\\).",
+      "correct_option": "\\(110^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tinh-goc-tu-giac"
+    },
+    {
+      "question_id": "QUAD16V1_009",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Tứ giác có \\(AB\\parallel CD\\). Theo định nghĩa dùng trong Roadmap, tứ giác đó chắc chắn là loại hình nào?",
+      "correct_option": "hình thang",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-thang"
+    },
+    {
+      "question_id": "QUAD16V1_010",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Tứ giác có \\(MN\\parallel PQ\\). Theo định nghĩa dùng trong Roadmap, tứ giác đó chắc chắn là loại hình nào?",
+      "correct_option": "hình thang",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-thang"
+    },
+    {
+      "question_id": "QUAD16V1_011",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tứ giác có \\(EF\\parallel GH\\). Theo định nghĩa dùng trong Roadmap, tứ giác đó chắc chắn là loại hình nào?",
+      "correct_option": "hình thang",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-thang"
+    },
+    {
+      "question_id": "QUAD16V1_012",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác có \\(UV\\parallel XY\\). Theo định nghĩa dùng trong Roadmap, tứ giác đó chắc chắn là loại hình nào?",
+      "correct_option": "hình thang",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-thang"
+    },
+    {
+      "question_id": "QUAD16V1_013",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác có \\(AD\\parallel BC\\). Theo định nghĩa dùng trong Roadmap, tứ giác đó chắc chắn là loại hình nào?",
+      "correct_option": "hình thang",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-thang"
+    },
+    {
+      "question_id": "QUAD16V1_014",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Tứ giác có \\(KL\\parallel MN\\). Theo định nghĩa dùng trong Roadmap, tứ giác đó chắc chắn là loại hình nào?",
+      "correct_option": "hình thang",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-thang"
+    },
+    {
+      "question_id": "QUAD16V1_015",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tứ giác có \\(PQ\\parallel RS\\). Theo định nghĩa dùng trong Roadmap, tứ giác đó chắc chắn là loại hình nào?",
+      "correct_option": "hình thang",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-thang"
+    },
+    {
+      "question_id": "QUAD16V1_016",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tứ giác có \\(WX\\parallel YZ\\). Theo định nghĩa dùng trong Roadmap, tứ giác đó chắc chắn là loại hình nào?",
+      "correct_option": "hình thang",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-hinh-thang"
+    },
+    {
+      "question_id": "QUAD16V1_017",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang-can"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang-can",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình thang cân \\(ABCD\\) có \\(AB\\parallel CD\\) và góc kề đáy \\(A=50^\\circ\\). Góc kề cùng đáy \\(B\\) bằng bao nhiêu?",
+      "correct_option": "\\(50^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-hinh-thang-can"
+    },
+    {
+      "question_id": "QUAD16V1_018",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang-can"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang-can",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hình thang cân \\(ABCD\\) có \\(AB\\parallel CD\\) và góc kề đáy \\(A=55^\\circ\\). Góc kề cùng đáy \\(B\\) bằng bao nhiêu?",
+      "correct_option": "\\(55^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-hinh-thang-can"
+    },
+    {
+      "question_id": "QUAD16V1_019",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang-can"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang-can",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hình thang cân \\(ABCD\\) có \\(AB\\parallel CD\\) và góc kề đáy \\(A=60^\\circ\\). Góc kề cùng đáy \\(B\\) bằng bao nhiêu?",
+      "correct_option": "\\(60^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-hinh-thang-can"
+    },
+    {
+      "question_id": "QUAD16V1_020",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang-can"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang-can",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình thang cân \\(ABCD\\) có \\(AB\\parallel CD\\) và góc kề đáy \\(A=65^\\circ\\). Góc kề cùng đáy \\(B\\) bằng bao nhiêu?",
+      "correct_option": "\\(65^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-hinh-thang-can"
+    },
+    {
+      "question_id": "QUAD16V1_021",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang-can"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang-can",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hình thang cân \\(ABCD\\) có \\(AB\\parallel CD\\) và góc kề đáy \\(A=70^\\circ\\). Góc kề cùng đáy \\(B\\) bằng bao nhiêu?",
+      "correct_option": "\\(70^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-hinh-thang-can"
+    },
+    {
+      "question_id": "QUAD16V1_022",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang-can"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang-can",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hình thang cân \\(ABCD\\) có \\(AB\\parallel CD\\) và góc kề đáy \\(A=75^\\circ\\). Góc kề cùng đáy \\(B\\) bằng bao nhiêu?",
+      "correct_option": "\\(75^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-hinh-thang-can"
+    },
+    {
+      "question_id": "QUAD16V1_023",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang-can"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang-can",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình thang cân \\(ABCD\\) có \\(AB\\parallel CD\\) và góc kề đáy \\(A=80^\\circ\\). Góc kề cùng đáy \\(B\\) bằng bao nhiêu?",
+      "correct_option": "\\(80^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-hinh-thang-can"
+    },
+    {
+      "question_id": "QUAD16V1_024",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hinh-thang-can"
+      ],
+      "canonical_assessed_skill_candidate": "hinh-thang-can",
+      "learner_family_candidate": "QUAD-TRAPEZOID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình thang cân \\(ABCD\\) có \\(AB\\parallel CD\\) và góc kề đáy \\(A=85^\\circ\\). Góc kề cùng đáy \\(B\\) bằng bao nhiêu?",
+      "correct_option": "\\(85^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "goc-hinh-thang-can"
+    },
+    {
+      "question_id": "QUAD16V1_025",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hbh-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-tinh-chat",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình bình hành \\(ABCD\\) có \\(AB=7\\) cm. Tính \\(CD\\).",
+      "correct_option": "\\(7\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_026",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hbh-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-tinh-chat",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình bình hành \\(ABCD\\) có \\(BC=9\\) cm. Tính \\(AD\\).",
+      "correct_option": "\\(9\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_027",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hbh-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-tinh-chat",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình bình hành \\(ABCD\\) có \\(\\angle A=70^\\circ\\). Tính \\(\\angle C\\).",
+      "correct_option": "\\(70^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_028",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hbh-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-tinh-chat",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình bình hành \\(ABCD\\) có \\(\\angle A=70^\\circ\\). Tính \\(\\angle B\\).",
+      "correct_option": "\\(110^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_029",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hbh-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-tinh-chat",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai đường chéo \\(AC,BD\\) của hình bình hành cắt nhau tại \\(O\\). Nếu \\(AC=12\\) cm, tính \\(AO\\).",
+      "correct_option": "\\(6\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_030",
+      "source_file": "16-tu-giac-v1-01.json",
+      "legacy_skill_tags": [
+        "hbh-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-tinh-chat",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hai đường chéo hình bình hành cắt nhau tại \\(O\\). Nếu \\(BO=5\\) cm, tính \\(BD\\).",
+      "correct_option": "\\(10\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_031",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-tinh-chat",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình bình hành có hai cạnh kề dài 6 cm và 9 cm. Chu vi bằng bao nhiêu?",
+      "correct_option": "\\(30\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_032",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-tinh-chat",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong hình bình hành, cặp cạnh nào sau đây luôn song song?",
+      "correct_option": "hai cạnh đối",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_033",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-tinh-chat",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Trong hình bình hành, hai đường chéo có nhất thiết bằng nhau không?",
+      "correct_option": "Không",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_034",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-tinh-chat",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình bình hành \\(ABCD\\) có \\(\\angle B=115^\\circ\\). Tính \\(\\angle D\\).",
+      "correct_option": "\\(115^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_035",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-tinh-chat",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình bình hành \\(ABCD\\) có \\(\\angle B=115^\\circ\\). Tính \\(\\angle A\\).",
+      "correct_option": "\\(65^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_036",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-tinh-chat",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong hình bình hành, hai đường chéo cắt nhau tại O. Nếu \\(AO=4.5\\) cm thì \\(OC\\) bằng bao nhiêu?",
+      "correct_option": "\\(4.5\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_037",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-dau-hieu",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tứ giác \\(ABCD\\) có \\(AB\\parallel CD\\) và \\(AD\\parallel BC\\). Kết luận nào đúng?",
+      "correct_option": "ABCD là hình bình hành",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_038",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-dau-hieu",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tứ giác \\(MNPQ\\) có \\(MN=PQ\\) và \\(NP=QM\\). Kết luận nào đúng?",
+      "correct_option": "MNPQ là hình bình hành",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_039",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-dau-hieu",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Tứ giác \\(ABCD\\) có \\(AB\\parallel CD\\) và \\(AB=CD\\). Kết luận nào đúng?",
+      "correct_option": "ABCD là hình bình hành",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_040",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-dau-hieu",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai đường chéo của tứ giác \\(ABCD\\) cắt nhau tại O và \\(AO=OC, BO=OD\\). Kết luận nào đúng?",
+      "correct_option": "ABCD là hình bình hành",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_041",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-dau-hieu",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác \\(ABCD\\) chỉ biết \\(AB\\parallel CD\\). Có thể kết luận ABCD là hình bình hành không?",
+      "correct_option": "Chưa thể",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_042",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-dau-hieu",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tứ giác \\(EFGH\\) có hai cặp góc đối bằng nhau. Kết luận phù hợp là gì?",
+      "correct_option": "EFGH là hình bình hành",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_043",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-dau-hieu",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tứ giác \\(PQRS\\) có \\(PQ=RS\\) và \\(PQ\\parallel RS\\). Đây là dấu hiệu của hình nào?",
+      "correct_option": "hình bình hành",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_044",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-dau-hieu",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tứ giác có hai đường chéo cắt nhau nhưng không biết chúng có chia đôi nhau hay không. Có đủ kết luận là hình bình hành không?",
+      "correct_option": "Không đủ",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_045",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-dau-hieu",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tứ giác \\(ABCD\\) có \\(AB=CD\\), \\(BC=AD\\). Dấu hiệu này cho phép kết luận gì?",
+      "correct_option": "ABCD là hình bình hành",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_046",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hbh-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hbh-dau-hieu",
+      "learner_family_candidate": "QUAD-PARALLELOGRAM",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Nếu hai đường chéo của một tứ giác cắt nhau tại trung điểm của mỗi đường, tứ giác đó là gì?",
+      "correct_option": "hình bình hành",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hbh-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_047",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-tinh-chat",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình chữ nhật \\(ABCD\\) có \\(\\angle A\\) bằng bao nhiêu?",
+      "correct_option": "\\(90^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_048",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-tinh-chat",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình chữ nhật có một đường chéo dài 10 cm. Đường chéo còn lại dài bao nhiêu?",
+      "correct_option": "\\(10\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_049",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-tinh-chat",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai đường chéo hình chữ nhật cắt nhau tại O. Nếu \\(AC=14\\) cm, \\(AO\\) bằng bao nhiêu?",
+      "correct_option": "\\(7\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_050",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-tinh-chat",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hình chữ nhật có chiều dài 8 cm, chiều rộng 5 cm. Chu vi bằng bao nhiêu?",
+      "correct_option": "\\(26\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_051",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-tinh-chat",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình chữ nhật có chiều dài 9 cm, chiều rộng 4 cm. Diện tích bằng bao nhiêu?",
+      "correct_option": "\\(36\\text{ cm}^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_052",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-tinh-chat",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Trong hình chữ nhật, các cạnh đối có quan hệ gì?",
+      "correct_option": "song song và bằng nhau",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_053",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-tinh-chat",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai đường chéo hình chữ nhật có nhất thiết vuông góc không?",
+      "correct_option": "Không",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_054",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-tinh-chat",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Nếu O là giao điểm hai đường chéo hình chữ nhật và \\(OA=6\\) cm, \\(OC\\) bằng bao nhiêu?",
+      "correct_option": "\\(6\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_055",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-tinh-chat",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hình chữ nhật có phải luôn là hình bình hành không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_056",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-tinh-chat",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong hình chữ nhật, hai góc kề nhau có tổng bao nhiêu?",
+      "correct_option": "\\(180^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_057",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-dau-hieu",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tứ giác có ba góc vuông. Kết luận nào đúng?",
+      "correct_option": "là hình chữ nhật",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_058",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-dau-hieu",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình bình hành có một góc vuông. Kết luận nào đúng?",
+      "correct_option": "là hình chữ nhật",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_059",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-dau-hieu",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình bình hành có hai đường chéo bằng nhau. Kết luận nào đúng?",
+      "correct_option": "là hình chữ nhật",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_060",
+      "source_file": "16-tu-giac-v1-02.json",
+      "legacy_skill_tags": [
+        "hcn-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-dau-hieu",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tứ giác chỉ biết hai đường chéo bằng nhau. Có đủ kết luận là hình chữ nhật không?",
+      "correct_option": "Không đủ",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_061",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hcn-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-dau-hieu",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình bình hành \\(ABCD\\) có \\(\\angle A=90^\\circ\\). ABCD là hình gì?",
+      "correct_option": "hình chữ nhật",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_062",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hcn-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-dau-hieu",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình bình hành có bốn góc bằng nhau. Mỗi góc bằng 90°. Hình đó là gì?",
+      "correct_option": "hình chữ nhật",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_063",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hcn-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-dau-hieu",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Một tứ giác có bốn góc vuông. Tên hình phù hợp nhất là gì?",
+      "correct_option": "hình chữ nhật",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_064",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hcn-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-dau-hieu",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình bình hành có hai đường chéo vừa bằng nhau vừa cắt nhau tại trung điểm. Có thể kết luận gì?",
+      "correct_option": "hình chữ nhật",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_065",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hcn-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-dau-hieu",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tứ giác có một góc vuông và hai cặp cạnh đối song song. Hình đó là gì?",
+      "correct_option": "hình chữ nhật",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_066",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hcn-dau-hieu",
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hcn-dau-hieu",
+      "learner_family_candidate": "QUAD-RECTANGLE",
+      "supporting_skills": [
+        "hvuong-dau-hieu"
+      ],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Một hình chữ nhật có thêm hai cạnh kề bằng nhau thì trở thành hình gì?",
+      "correct_option": "hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hcn-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_067",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-tinh-chat",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình thoi có cạnh dài 6 cm. Chu vi bằng bao nhiêu?",
+      "correct_option": "\\(24\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_068",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-tinh-chat",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai đường chéo hình thoi cắt nhau tạo góc bao nhiêu?",
+      "correct_option": "\\(90^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_069",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-tinh-chat",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong hình thoi, mỗi đường chéo có vai trò gì với góc mà nó đi qua?",
+      "correct_option": "phân giác góc",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_070",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-tinh-chat",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai đường chéo hình thoi cắt nhau tại O. Nếu \\(AC=16\\) cm, \\(AO\\) bằng bao nhiêu?",
+      "correct_option": "\\(8\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_071",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-tinh-chat",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình thoi có phải luôn là hình bình hành không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_072",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-tinh-chat",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hình thoi có hai góc đối như thế nào?",
+      "correct_option": "bằng nhau",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_073",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-tinh-chat",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu một góc của hình thoi bằng 70°, góc đối diện bằng bao nhiêu?",
+      "correct_option": "\\(70^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_074",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-tinh-chat",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu một góc hình thoi bằng 70°, góc kề với nó bằng bao nhiêu?",
+      "correct_option": "\\(110^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_075",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-tinh-chat",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai đường chéo hình thoi có nhất thiết bằng nhau không?",
+      "correct_option": "Không",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_076",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-tinh-chat",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Giao điểm hai đường chéo hình thoi có chia đôi mỗi đường chéo không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_077",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-dau-hieu",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác có bốn cạnh bằng nhau. Kết luận nào đúng?",
+      "correct_option": "là hình thoi",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_078",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-dau-hieu",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình bình hành có hai cạnh kề bằng nhau. Kết luận nào đúng?",
+      "correct_option": "là hình thoi",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_079",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-dau-hieu",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hình bình hành có hai đường chéo vuông góc. Kết luận nào đúng?",
+      "correct_option": "là hình thoi",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_080",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-dau-hieu",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình bình hành có một đường chéo là phân giác một góc. Kết luận nào đúng?",
+      "correct_option": "là hình thoi",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_081",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-dau-hieu",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác chỉ biết hai đường chéo vuông góc. Có đủ kết luận là hình thoi không?",
+      "correct_option": "Không đủ",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_082",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-dau-hieu",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình bình hành có bốn cạnh bằng nhau. Tên hình phù hợp nhất là gì?",
+      "correct_option": "hình thoi",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_083",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-dau-hieu",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Một tứ giác có bốn cạnh bằng nhau nhưng chưa biết góc. Đây là hình gì?",
+      "correct_option": "hình thoi",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_084",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-dau-hieu",
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-dau-hieu",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [
+        "hvuong-dau-hieu"
+      ],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình bình hành có hai đường chéo vuông góc và bằng nhau. Hình đó chắc chắn là gì?",
+      "correct_option": "hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_085",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-dau-hieu",
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-dau-hieu",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [
+        "hvuong-dau-hieu"
+      ],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình thoi có thêm một góc vuông. Hình đó trở thành gì?",
+      "correct_option": "hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_086",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hthoi-dau-hieu",
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hthoi-dau-hieu",
+      "learner_family_candidate": "QUAD-RHOMBUS",
+      "supporting_skills": [
+        "hvuong-dau-hieu"
+      ],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình thoi có hai đường chéo bằng nhau. Kết luận nào đúng?",
+      "correct_option": "là hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hthoi-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_087",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hvuong-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-tinh-chat",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình vuông có cạnh 5 cm. Chu vi bằng bao nhiêu?",
+      "correct_option": "\\(20\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_088",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hvuong-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-tinh-chat",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hình vuông có cạnh 6 cm. Diện tích bằng bao nhiêu?",
+      "correct_option": "\\(36\\text{ cm}^2\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_089",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hvuong-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-tinh-chat",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Mỗi góc của hình vuông bằng bao nhiêu?",
+      "correct_option": "\\(90^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_090",
+      "source_file": "16-tu-giac-v1-03.json",
+      "legacy_skill_tags": [
+        "hvuong-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-tinh-chat",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai đường chéo hình vuông có quan hệ độ dài gì?",
+      "correct_option": "bằng nhau",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_091",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-tinh-chat",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai đường chéo hình vuông cắt nhau dưới góc bao nhiêu?",
+      "correct_option": "\\(90^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_092",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-tinh-chat",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hai đường chéo hình vuông có chia đôi nhau không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_093",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-tinh-chat",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đường chéo hình vuông có là phân giác các góc không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_094",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-tinh-chat",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hình vuông có phải là hình chữ nhật không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_095",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-tinh-chat",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hình vuông có phải là hình thoi không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_096",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-tinh-chat"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-tinh-chat",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Giao điểm hai đường chéo hình vuông cách đều bốn đỉnh không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-tinh-chat"
+    },
+    {
+      "question_id": "QUAD16V1_097",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-dau-hieu",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hình chữ nhật có hai cạnh kề bằng nhau. Kết luận nào đúng?",
+      "correct_option": "là hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_098",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-dau-hieu",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Hình chữ nhật có hai đường chéo vuông góc. Kết luận nào đúng?",
+      "correct_option": "là hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_099",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-dau-hieu",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hình thoi có một góc vuông. Kết luận nào đúng?",
+      "correct_option": "là hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_100",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-dau-hieu",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hình thoi có hai đường chéo bằng nhau. Kết luận nào đúng?",
+      "correct_option": "là hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_101",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-dau-hieu",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hình bình hành có hai đường chéo vừa bằng nhau vừa vuông góc. Hình đó là gì?",
+      "correct_option": "hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_102",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-dau-hieu",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tứ giác có bốn cạnh bằng nhau và bốn góc vuông. Tên hình chính xác nhất là gì?",
+      "correct_option": "hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_103",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-dau-hieu",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Hình chữ nhật có một đường chéo là phân giác một góc. Có thể kết luận gì?",
+      "correct_option": "là hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_104",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-dau-hieu",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hình thoi có một đường chéo bằng đường chéo kia. Có thể kết luận gì?",
+      "correct_option": "là hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_105",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-dau-hieu",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hình bình hành có một góc vuông và hai cạnh kề bằng nhau. Hình đó là gì?",
+      "correct_option": "hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_106",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "hvuong-dau-hieu"
+      ],
+      "canonical_assessed_skill_candidate": "hvuong-dau-hieu",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Một hình vừa là hình chữ nhật vừa là hình thoi. Hình đó chắc chắn là gì?",
+      "correct_option": "hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "hvuong-dau-hieu"
+    },
+    {
+      "question_id": "QUAD16V1_107",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "quan-he-bao-ham"
+      ],
+      "canonical_assessed_skill_candidate": "quan-he-bao-ham",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khẳng định: “Mọi hình vuông đều là hình chữ nhật”. Chọn đánh giá đúng.",
+      "correct_option": "Đúng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "quan-he-bao-ham"
+    },
+    {
+      "question_id": "QUAD16V1_108",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "quan-he-bao-ham"
+      ],
+      "canonical_assessed_skill_candidate": "quan-he-bao-ham",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Khẳng định: “Mọi hình vuông đều là hình thoi”. Chọn đánh giá đúng.",
+      "correct_option": "Đúng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "quan-he-bao-ham"
+    },
+    {
+      "question_id": "QUAD16V1_109",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "quan-he-bao-ham"
+      ],
+      "canonical_assessed_skill_candidate": "quan-he-bao-ham",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Khẳng định: “Mọi hình chữ nhật đều là hình vuông”. Chọn đánh giá đúng.",
+      "correct_option": "Sai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "quan-he-bao-ham"
+    },
+    {
+      "question_id": "QUAD16V1_110",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "quan-he-bao-ham"
+      ],
+      "canonical_assessed_skill_candidate": "quan-he-bao-ham",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Khẳng định: “Mọi hình thoi đều là hình vuông”. Chọn đánh giá đúng.",
+      "correct_option": "Sai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "quan-he-bao-ham"
+    },
+    {
+      "question_id": "QUAD16V1_111",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "quan-he-bao-ham"
+      ],
+      "canonical_assessed_skill_candidate": "quan-he-bao-ham",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khẳng định: “Mọi hình bình hành đều là hình thang theo định nghĩa của Roadmap”. Chọn đánh giá đúng.",
+      "correct_option": "Đúng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "quan-he-bao-ham"
+    },
+    {
+      "question_id": "QUAD16V1_112",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "quan-he-bao-ham"
+      ],
+      "canonical_assessed_skill_candidate": "quan-he-bao-ham",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Khẳng định: “Mọi hình thang đều là hình bình hành”. Chọn đánh giá đúng.",
+      "correct_option": "Sai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "quan-he-bao-ham"
+    },
+    {
+      "question_id": "QUAD16V1_113",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "quan-he-bao-ham"
+      ],
+      "canonical_assessed_skill_candidate": "quan-he-bao-ham",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Khẳng định: “Hình vuông vừa là hình chữ nhật vừa là hình thoi”. Chọn đánh giá đúng.",
+      "correct_option": "Đúng",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "quan-he-bao-ham"
+    },
+    {
+      "question_id": "QUAD16V1_114",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "quan-he-bao-ham"
+      ],
+      "canonical_assessed_skill_candidate": "quan-he-bao-ham",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "QUAD16-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khẳng định: “Hình chữ nhật luôn là hình thoi”. Chọn đánh giá đúng.",
+      "correct_option": "Sai",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "quan-he-bao-ham"
+    },
+    {
+      "question_id": "QUAD16V1_115",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "duong-cheo-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "duong-cheo-suy-luan",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một hình bình hành có hai đường chéo bằng nhau. Có thể kết luận hình đó là gì?",
+      "correct_option": "hình chữ nhật",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cheo-suy-luan"
+    },
+    {
+      "question_id": "QUAD16V1_116",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "duong-cheo-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "duong-cheo-suy-luan",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Một hình bình hành có hai đường chéo vuông góc. Có thể kết luận hình đó là gì?",
+      "correct_option": "hình thoi",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cheo-suy-luan"
+    },
+    {
+      "question_id": "QUAD16V1_117",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "duong-cheo-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "duong-cheo-suy-luan",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Một hình chữ nhật có hai đường chéo vuông góc. Có thể kết luận hình đó là gì?",
+      "correct_option": "hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cheo-suy-luan"
+    },
+    {
+      "question_id": "QUAD16V1_118",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "duong-cheo-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "duong-cheo-suy-luan",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một hình thoi có hai đường chéo bằng nhau. Có thể kết luận hình đó là gì?",
+      "correct_option": "hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cheo-suy-luan"
+    },
+    {
+      "question_id": "QUAD16V1_119",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "duong-cheo-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "duong-cheo-suy-luan",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Một tứ giác có hai đường chéo cắt nhau tại trung điểm mỗi đường. Có thể kết luận hình đó là gì?",
+      "correct_option": "hình bình hành",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cheo-suy-luan"
+    },
+    {
+      "question_id": "QUAD16V1_120",
+      "source_file": "16-tu-giac-v1-04.json",
+      "legacy_skill_tags": [
+        "duong-cheo-suy-luan"
+      ],
+      "canonical_assessed_skill_candidate": "duong-cheo-suy-luan",
+      "learner_family_candidate": "QUAD-SQUARE-HIER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "QUAD16-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Một hình bình hành có hai đường chéo vừa bằng nhau vừa vuông góc. Có thể kết luận hình đó là gì?",
+      "correct_option": "hình vuông",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "duong-cheo-suy-luan"
+    }
+  ]
+}

@@ -1,0 +1,2958 @@
+{
+  "schema": "primary-skill-overlay-ct15-s3-phase-d-r1",
+  "status": "CHATGPT_CANDIDATE_PENDING_NOTEBOOKLM_REVIEW",
+  "as_of": "2026-10-02",
+  "topic": "15-duong-dong-quy",
+  "source_manifest": "docs/assets/data/practice/15-duong-dong-quy-v1.manifest.json",
+  "source_manifest_blob": "37fc0edeed7de731a34fc0ccacccfc735d29f985",
+  "source_files": {
+    "15-duong-dong-quy-v1-01.json": {
+      "blob": "8ba7947a535622be4a9b3505b6db7550265a08bf",
+      "question_count": 30
+    },
+    "15-duong-dong-quy-v1-02.json": {
+      "blob": "d7c1efcdd3b0c6c670487875029a56a8a1d493bf",
+      "question_count": 30
+    },
+    "15-duong-dong-quy-v1-03.json": {
+      "blob": "15d3ee970d6de97ef7675debe8401dcfeb0692c1",
+      "question_count": 30
+    },
+    "15-duong-dong-quy-v1-04.json": {
+      "blob": "c8fd5367d1d3ff716faa5c5eedf04315f2f11a68",
+      "question_count": 30
+    },
+    "15-duong-dong-quy-v1-05.json": {
+      "blob": "3dcbbf288e2d99b1c5cfb75335d4e20fcacc7544",
+      "question_count": 4
+    }
+  },
+  "academic_basis": {
+    "s3_family_blob": "7c817ecc064873135ae05b40ded30661bff6434a"
+  },
+  "rules": {
+    "one_primary_max_per_mcq": true,
+    "learner_family_broader_than_diagnostic": true,
+    "proof_mcq_partial_only": true,
+    "no_family_method_formative_only": true,
+    "auto_clone_key": "primary diagnostic + exact question type",
+    "runtime_enabled": false,
+    "no_history_backfill": true
+  },
+  "summary": {
+    "questions": 124,
+    "mapped_primary": 124,
+    "formative_only_without_family": 0,
+    "primary_counts": {
+      "nhan-biet-trung-tuyen": 8,
+      "trong-tam": 8,
+      "ti-so-trong-tam": 12,
+      "nhan-biet-duong-cao": 8,
+      "truc-tam": 8,
+      "vi-tri-truc-tam": 8,
+      "nhan-biet-phan-giac": 8,
+      "tam-noi-tiep": 10,
+      "cach-deu-canh": 8,
+      "nhan-biet-trung-truc": 8,
+      "tam-ngoai-tiep": 10,
+      "cach-deu-dinh": 8,
+      "vi-tri-tam-ngoai-tiep": 8,
+      "phan-biet-bon-tam": 8,
+      "dong-quy-bon-duong-dac-biet": 4
+    },
+    "family_counts": {
+      "TRI-CENTROID": 28,
+      "TRI-ORTHOCENTER": 24,
+      "TRI-INCENTER": 26,
+      "TRI-PERPBISECTOR": 16,
+      "TRI-CIRCUMCENTER": 18,
+      "TRI-CENTERS": 12
+    },
+    "clone_families": [
+      {
+        "id": "CEN15-AUTO-001",
+        "key": "nhan-biet-trung-tuyen__nhan-biet-trung-tuyen",
+        "count": 8,
+        "ids": [
+          "CTR15V1_001",
+          "CTR15V1_002",
+          "CTR15V1_003",
+          "CTR15V1_004",
+          "CTR15V1_005",
+          "CTR15V1_006",
+          "CTR15V1_007",
+          "CTR15V1_008"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-002",
+        "key": "trong-tam__trong-tam",
+        "count": 8,
+        "ids": [
+          "CTR15V1_009",
+          "CTR15V1_010",
+          "CTR15V1_011",
+          "CTR15V1_012",
+          "CTR15V1_013",
+          "CTR15V1_014",
+          "CTR15V1_015",
+          "CTR15V1_016"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-003",
+        "key": "ti-so-trong-tam__ti-so-2-1",
+        "count": 12,
+        "ids": [
+          "CTR15V1_017",
+          "CTR15V1_018",
+          "CTR15V1_019",
+          "CTR15V1_020",
+          "CTR15V1_021",
+          "CTR15V1_022",
+          "CTR15V1_023",
+          "CTR15V1_024",
+          "CTR15V1_025",
+          "CTR15V1_026",
+          "CTR15V1_027",
+          "CTR15V1_028"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-004",
+        "key": "nhan-biet-duong-cao__nhan-biet-duong-cao",
+        "count": 8,
+        "ids": [
+          "CTR15V1_029",
+          "CTR15V1_030",
+          "CTR15V1_031",
+          "CTR15V1_032",
+          "CTR15V1_033",
+          "CTR15V1_034",
+          "CTR15V1_035",
+          "CTR15V1_036"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-005",
+        "key": "truc-tam__truc-tam",
+        "count": 8,
+        "ids": [
+          "CTR15V1_037",
+          "CTR15V1_038",
+          "CTR15V1_039",
+          "CTR15V1_040",
+          "CTR15V1_041",
+          "CTR15V1_042",
+          "CTR15V1_043",
+          "CTR15V1_044"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-006",
+        "key": "vi-tri-truc-tam__vi-tri-truc-tam",
+        "count": 8,
+        "ids": [
+          "CTR15V1_045",
+          "CTR15V1_046",
+          "CTR15V1_047",
+          "CTR15V1_048",
+          "CTR15V1_049",
+          "CTR15V1_050",
+          "CTR15V1_051",
+          "CTR15V1_052"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-007",
+        "key": "nhan-biet-phan-giac__phan-giac",
+        "count": 8,
+        "ids": [
+          "CTR15V1_053",
+          "CTR15V1_054",
+          "CTR15V1_055",
+          "CTR15V1_056",
+          "CTR15V1_057",
+          "CTR15V1_058",
+          "CTR15V1_059",
+          "CTR15V1_060"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-008",
+        "key": "tam-noi-tiep__tam-noi-tiep",
+        "count": 10,
+        "ids": [
+          "CTR15V1_061",
+          "CTR15V1_062",
+          "CTR15V1_063",
+          "CTR15V1_064",
+          "CTR15V1_065",
+          "CTR15V1_066",
+          "CTR15V1_067",
+          "CTR15V1_068",
+          "CTR15V1_069",
+          "CTR15V1_070"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-009",
+        "key": "cach-deu-canh__cach-deu-ba-canh",
+        "count": 8,
+        "ids": [
+          "CTR15V1_071",
+          "CTR15V1_072",
+          "CTR15V1_073",
+          "CTR15V1_074",
+          "CTR15V1_075",
+          "CTR15V1_076",
+          "CTR15V1_077",
+          "CTR15V1_078"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-010",
+        "key": "nhan-biet-trung-truc__nhan-biet-trung-truc",
+        "count": 8,
+        "ids": [
+          "CTR15V1_079",
+          "CTR15V1_080",
+          "CTR15V1_081",
+          "CTR15V1_082",
+          "CTR15V1_083",
+          "CTR15V1_084",
+          "CTR15V1_085",
+          "CTR15V1_086"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-011",
+        "key": "tam-ngoai-tiep__tam-ngoai-tiep",
+        "count": 10,
+        "ids": [
+          "CTR15V1_087",
+          "CTR15V1_088",
+          "CTR15V1_089",
+          "CTR15V1_090",
+          "CTR15V1_091",
+          "CTR15V1_092",
+          "CTR15V1_093",
+          "CTR15V1_094",
+          "CTR15V1_095",
+          "CTR15V1_096"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-012",
+        "key": "cach-deu-dinh__cach-deu-ba-dinh",
+        "count": 8,
+        "ids": [
+          "CTR15V1_097",
+          "CTR15V1_098",
+          "CTR15V1_099",
+          "CTR15V1_100",
+          "CTR15V1_101",
+          "CTR15V1_102",
+          "CTR15V1_103",
+          "CTR15V1_104"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-013",
+        "key": "vi-tri-tam-ngoai-tiep__vi-tri-tam-ngoai-tiep",
+        "count": 8,
+        "ids": [
+          "CTR15V1_105",
+          "CTR15V1_106",
+          "CTR15V1_107",
+          "CTR15V1_108",
+          "CTR15V1_109",
+          "CTR15V1_110",
+          "CTR15V1_111",
+          "CTR15V1_112"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-014",
+        "key": "phan-biet-bon-tam__phan-biet-tam",
+        "count": 8,
+        "ids": [
+          "CTR15V1_113",
+          "CTR15V1_114",
+          "CTR15V1_115",
+          "CTR15V1_116",
+          "CTR15V1_117",
+          "CTR15V1_118",
+          "CTR15V1_119",
+          "CTR15V1_120"
+        ]
+      },
+      {
+        "id": "CEN15-AUTO-015",
+        "key": "dong-quy-bon-duong-dac-biet__dong-quy-bon-duong-dac-biet",
+        "count": 4,
+        "ids": [
+          "CTR15V1_121",
+          "CTR15V1_122",
+          "CTR15V1_123",
+          "CTR15V1_124"
+        ]
+      }
+    ],
+    "runtime_enabled": 0
+  },
+  "items": [
+    {
+      "question_id": "CTR15V1_001",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-tuyen",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác \\(ABC\\), M là trung điểm của BC. Đoạn thẳng nối đỉnh A với M được gọi là gì?",
+      "correct_option": "đường trung tuyến",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-tuyen"
+    },
+    {
+      "question_id": "CTR15V1_002",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-tuyen",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong tam giác \\(ABC\\), N là trung điểm của CA. Đoạn thẳng nối đỉnh B với N được gọi là gì?",
+      "correct_option": "đường trung tuyến",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-tuyen"
+    },
+    {
+      "question_id": "CTR15V1_003",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-tuyen",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Trong tam giác \\(ABC\\), P là trung điểm của AB. Đoạn thẳng nối đỉnh C với P được gọi là gì?",
+      "correct_option": "đường trung tuyến",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-tuyen"
+    },
+    {
+      "question_id": "CTR15V1_004",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-tuyen",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Trong tam giác, \\(M\\) là trung điểm của cạnh đối diện đỉnh \\(A\\). Đoạn \\(AM\\) là loại đường nào?",
+      "correct_option": "trung tuyến",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-tuyen"
+    },
+    {
+      "question_id": "CTR15V1_005",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-tuyen",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Trong tam giác, \\(N\\) là trung điểm của cạnh đối diện đỉnh \\(B\\). Đoạn \\(BN\\) là loại đường nào?",
+      "correct_option": "trung tuyến",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-tuyen"
+    },
+    {
+      "question_id": "CTR15V1_006",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-tuyen",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác, \\(P\\) là trung điểm của cạnh đối diện đỉnh \\(C\\). Đoạn \\(CP\\) là loại đường nào?",
+      "correct_option": "trung tuyến",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-tuyen"
+    },
+    {
+      "question_id": "CTR15V1_007",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-tuyen",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác, \\(Q\\) là trung điểm của cạnh đối diện đỉnh \\(D\\). Đoạn \\(DQ\\) là loại đường nào?",
+      "correct_option": "trung tuyến",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-tuyen"
+    },
+    {
+      "question_id": "CTR15V1_008",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-tuyen"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-tuyen",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-001",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong tam giác, \\(R\\) là trung điểm của cạnh đối diện đỉnh \\(E\\). Đoạn \\(ER\\) là loại đường nào?",
+      "correct_option": "trung tuyến",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-tuyen"
+    },
+    {
+      "question_id": "CTR15V1_009",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác \\(ABC\\), hai trung tuyến \\(AM\\) và \\(BN\\) cắt nhau tại \\(G\\). Điểm \\(G\\) là gì?",
+      "correct_option": "trọng tâm G",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trong-tam"
+    },
+    {
+      "question_id": "CTR15V1_010",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Điểm \\(G\\) là trọng tâm tam giác \\(ABC\\). Khẳng định nào đúng?",
+      "correct_option": "G nằm trên cả ba đường trung tuyến",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trong-tam"
+    },
+    {
+      "question_id": "CTR15V1_011",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Muốn xác định trọng tâm của một tam giác bằng thước thẳng, cần vẽ tối thiểu bao nhiêu đường trung tuyến?",
+      "correct_option": "2 đường",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trong-tam"
+    },
+    {
+      "question_id": "CTR15V1_012",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong tam giác, điểm đồng quy của ba đoạn nối mỗi đỉnh với trung điểm cạnh đối diện là điểm nào?",
+      "correct_option": "trọng tâm G",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trong-tam"
+    },
+    {
+      "question_id": "CTR15V1_013",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Nếu \\(AM\\) là trung tuyến và \\(G\\) là trọng tâm, thứ tự các điểm trên trung tuyến từ đỉnh \\(A\\) là gì?",
+      "correct_option": "\\(A-G-M\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trong-tam"
+    },
+    {
+      "question_id": "CTR15V1_014",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Trọng tâm của một tam giác có luôn nằm bên trong tam giác không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trong-tam"
+    },
+    {
+      "question_id": "CTR15V1_015",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Ký hiệu thường dùng cho trọng tâm tam giác là gì?",
+      "correct_option": "\\(G\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trong-tam"
+    },
+    {
+      "question_id": "CTR15V1_016",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-002",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Cho tam giác \\(ABC\\). Nếu \\(M,N,P\\) lần lượt là trung điểm \\(BC,CA,AB\\), ba đường \\(AM,BN,CP\\) gặp nhau tại đâu?",
+      "correct_option": "trọng tâm G",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "trong-tam"
+    },
+    {
+      "question_id": "CTR15V1_017",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Trong tam giác, \\(AM=6\\) cm là trung tuyến và \\(G\\) là trọng tâm. Tính \\(AG\\).",
+      "correct_option": "\\(4\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-so-2-1"
+    },
+    {
+      "question_id": "CTR15V1_018",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Trong tam giác, \\(AM=9\\) cm là trung tuyến và \\(G\\) là trọng tâm. Tính \\(GM\\).",
+      "correct_option": "\\(3\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-so-2-1"
+    },
+    {
+      "question_id": "CTR15V1_019",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trên trung tuyến \\(AM\\), \\(G\\) là trọng tâm và \\(GM=4\\) cm. Tính \\(AG\\).",
+      "correct_option": "\\(8\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-so-2-1"
+    },
+    {
+      "question_id": "CTR15V1_020",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác, \\(AM=15\\) cm là trung tuyến và \\(G\\) là trọng tâm. Tính \\(AG\\).",
+      "correct_option": "\\(10\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-so-2-1"
+    },
+    {
+      "question_id": "CTR15V1_021",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Trong tam giác, \\(AM=18\\) cm là trung tuyến và \\(G\\) là trọng tâm. Tính \\(GM\\).",
+      "correct_option": "\\(6\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-so-2-1"
+    },
+    {
+      "question_id": "CTR15V1_022",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Trên trung tuyến \\(AM\\), \\(G\\) là trọng tâm và \\(GM=7\\) cm. Tính \\(AG\\).",
+      "correct_option": "\\(14\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-so-2-1"
+    },
+    {
+      "question_id": "CTR15V1_023",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Trong tam giác, \\(AM=24\\) cm là trung tuyến và \\(G\\) là trọng tâm. Tính \\(AG\\).",
+      "correct_option": "\\(16\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-so-2-1"
+    },
+    {
+      "question_id": "CTR15V1_024",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong tam giác, \\(AM=27\\) cm là trung tuyến và \\(G\\) là trọng tâm. Tính \\(GM\\).",
+      "correct_option": "\\(9\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-so-2-1"
+    },
+    {
+      "question_id": "CTR15V1_025",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trên trung tuyến \\(AM\\), \\(G\\) là trọng tâm và \\(GM=10\\) cm. Tính \\(AG\\).",
+      "correct_option": "\\(20\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-so-2-1"
+    },
+    {
+      "question_id": "CTR15V1_026",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong tam giác, \\(AM=33\\) cm là trung tuyến và \\(G\\) là trọng tâm. Tính \\(AG\\).",
+      "correct_option": "\\(22\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-so-2-1"
+    },
+    {
+      "question_id": "CTR15V1_027",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Trong tam giác, \\(AM=36\\) cm là trung tuyến và \\(G\\) là trọng tâm. Tính \\(GM\\).",
+      "correct_option": "\\(12\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-so-2-1"
+    },
+    {
+      "question_id": "CTR15V1_028",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "ti-so-trong-tam"
+      ],
+      "canonical_assessed_skill_candidate": "ti-so-trong-tam",
+      "learner_family_candidate": "TRI-CENTROID",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-003",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Trên trung tuyến \\(AM\\), \\(G\\) là trọng tâm và \\(GM=14\\) cm. Tính \\(AG\\).",
+      "correct_option": "\\(28\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "ti-so-2-1"
+    },
+    {
+      "question_id": "CTR15V1_029",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-biet-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-duong-cao",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong một tam giác, đường thẳng đi qua đỉnh \\(A\\) và vuông góc với đường thẳng chứa cạnh đối diện \\(BC\\) được gọi là gì?",
+      "correct_option": "đường cao",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-duong-cao"
+    },
+    {
+      "question_id": "CTR15V1_030",
+      "source_file": "15-duong-dong-quy-v1-01.json",
+      "legacy_skill_tags": [
+        "nhan-biet-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-duong-cao",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Trong một tam giác, đường thẳng đi qua đỉnh \\(B\\) và vuông góc với đường thẳng chứa cạnh đối diện \\(CA\\) được gọi là gì?",
+      "correct_option": "đường cao",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-duong-cao"
+    },
+    {
+      "question_id": "CTR15V1_031",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-duong-cao",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong một tam giác, đường thẳng đi qua đỉnh \\(C\\) và vuông góc với đường thẳng chứa cạnh đối diện \\(AB\\) được gọi là gì?",
+      "correct_option": "đường cao",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-duong-cao"
+    },
+    {
+      "question_id": "CTR15V1_032",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-duong-cao",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong một tam giác, đường thẳng đi qua đỉnh \\(D\\) và vuông góc với đường thẳng chứa cạnh đối diện \\(EF\\) được gọi là gì?",
+      "correct_option": "đường cao",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-duong-cao"
+    },
+    {
+      "question_id": "CTR15V1_033",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-duong-cao",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong một tam giác, đường thẳng đi qua đỉnh \\(E\\) và vuông góc với đường thẳng chứa cạnh đối diện \\(FD\\) được gọi là gì?",
+      "correct_option": "đường cao",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-duong-cao"
+    },
+    {
+      "question_id": "CTR15V1_034",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-duong-cao",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong một tam giác, đường thẳng đi qua đỉnh \\(P\\) và vuông góc với đường thẳng chứa cạnh đối diện \\(QR\\) được gọi là gì?",
+      "correct_option": "đường cao",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-duong-cao"
+    },
+    {
+      "question_id": "CTR15V1_035",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-duong-cao",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong một tam giác, đường thẳng đi qua đỉnh \\(Q\\) và vuông góc với đường thẳng chứa cạnh đối diện \\(RP\\) được gọi là gì?",
+      "correct_option": "đường cao",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-duong-cao"
+    },
+    {
+      "question_id": "CTR15V1_036",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-duong-cao"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-duong-cao",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-004",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Trong một tam giác, đường thẳng đi qua đỉnh \\(R\\) và vuông góc với đường thẳng chứa cạnh đối diện \\(PQ\\) được gọi là gì?",
+      "correct_option": "đường cao",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-duong-cao"
+    },
+    {
+      "question_id": "CTR15V1_037",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác \\(ABC\\), hai đường cao từ \\(A\\) và \\(B\\) cắt nhau tại \\(H\\). Điểm \\(H\\) là gì?",
+      "correct_option": "trực tâm H",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_038",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trực tâm là giao điểm của những đường nào trong tam giác?",
+      "correct_option": "ba đường cao",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_039",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Nếu \\(H\\) là trực tâm tam giác \\(ABC\\), đường thẳng \\(AH\\) có quan hệ gì với \\(BC\\)?",
+      "correct_option": "\\(AH\\perp BC\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_040",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Nếu \\(H\\) là trực tâm tam giác \\(ABC\\), đường thẳng \\(BH\\) có quan hệ gì với \\(CA\\)?",
+      "correct_option": "\\(BH\\perp CA\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_041",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác vuông tại \\(A\\), trực tâm nằm ở điểm nào?",
+      "correct_option": "đỉnh A",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_042",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Ký hiệu thường dùng cho trực tâm là gì?",
+      "correct_option": "\\(H\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_043",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Muốn xác định trực tâm, về nguyên tắc chỉ cần vẽ hai đường cao vì sao?",
+      "correct_option": "hai đường cao cắt nhau tại trực tâm",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_044",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-005",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Trong tam giác tù, các đường cao có thể phải kéo dài cạnh đối diện. Giao điểm ba đường cao vẫn được gọi là gì?",
+      "correct_option": "trực tâm H",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_045",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "vi-tri-truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trực tâm của tam giác nhọn nằm ở đâu? (câu 1)",
+      "correct_option": "bên trong tam giác",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_046",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "vi-tri-truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trực tâm của tam giác vuông nằm ở đâu? (câu 2)",
+      "correct_option": "tại đỉnh góc vuông",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_047",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "vi-tri-truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trực tâm của tam giác tù nằm ở đâu? (câu 3)",
+      "correct_option": "bên ngoài tam giác",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_048",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "vi-tri-truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trực tâm của tam giác nhọn nằm ở đâu? (câu 4)",
+      "correct_option": "bên trong tam giác",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_049",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "vi-tri-truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trực tâm của tam giác vuông nằm ở đâu? (câu 5)",
+      "correct_option": "tại đỉnh góc vuông",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_050",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "vi-tri-truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trực tâm của tam giác tù nằm ở đâu? (câu 6)",
+      "correct_option": "bên ngoài tam giác",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_051",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "vi-tri-truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trực tâm của tam giác nhọn nằm ở đâu? (câu 7)",
+      "correct_option": "bên trong tam giác",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_052",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "vi-tri-truc-tam"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-truc-tam",
+      "learner_family_candidate": "TRI-ORTHOCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-006",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trực tâm của tam giác tù nằm ở đâu? (câu 8)",
+      "correct_option": "bên ngoài tam giác",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-truc-tam"
+    },
+    {
+      "question_id": "CTR15V1_053",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-phan-giac",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Trong tam giác, tia phân giác của một góc \\(40^\\circ\\) chia góc đó thành hai góc bằng nhau. Mỗi góc bằng bao nhiêu?",
+      "correct_option": "\\(20^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-giac"
+    },
+    {
+      "question_id": "CTR15V1_054",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-phan-giac",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác, tia phân giác của một góc \\(50^\\circ\\) chia góc đó thành hai góc bằng nhau. Mỗi góc bằng bao nhiêu?",
+      "correct_option": "\\(25^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-giac"
+    },
+    {
+      "question_id": "CTR15V1_055",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-phan-giac",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Trong tam giác, tia phân giác của một góc \\(60^\\circ\\) chia góc đó thành hai góc bằng nhau. Mỗi góc bằng bao nhiêu?",
+      "correct_option": "\\(30^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-giac"
+    },
+    {
+      "question_id": "CTR15V1_056",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-phan-giac",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong tam giác, tia phân giác của một góc \\(70^\\circ\\) chia góc đó thành hai góc bằng nhau. Mỗi góc bằng bao nhiêu?",
+      "correct_option": "\\(35^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-giac"
+    },
+    {
+      "question_id": "CTR15V1_057",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-phan-giac",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Trong tam giác, tia phân giác của một góc \\(80^\\circ\\) chia góc đó thành hai góc bằng nhau. Mỗi góc bằng bao nhiêu?",
+      "correct_option": "\\(40^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-giac"
+    },
+    {
+      "question_id": "CTR15V1_058",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-phan-giac",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong tam giác, tia phân giác của một góc \\(90^\\circ\\) chia góc đó thành hai góc bằng nhau. Mỗi góc bằng bao nhiêu?",
+      "correct_option": "\\(45^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-giac"
+    },
+    {
+      "question_id": "CTR15V1_059",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-phan-giac",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Trong tam giác, tia phân giác của một góc \\(100^\\circ\\) chia góc đó thành hai góc bằng nhau. Mỗi góc bằng bao nhiêu?",
+      "correct_option": "\\(50^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-giac"
+    },
+    {
+      "question_id": "CTR15V1_060",
+      "source_file": "15-duong-dong-quy-v1-02.json",
+      "legacy_skill_tags": [
+        "nhan-biet-phan-giac"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-phan-giac",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-007",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong tam giác, tia phân giác của một góc \\(120^\\circ\\) chia góc đó thành hai góc bằng nhau. Mỗi góc bằng bao nhiêu?",
+      "correct_option": "\\(60^\\circ\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-giac"
+    },
+    {
+      "question_id": "CTR15V1_061",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-noi-tiep",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Trong tam giác \\(ABC\\), hai phân giác trong của góc \\(A\\) và \\(B\\) cắt nhau tại \\(I\\). Điểm \\(I\\) là gì?",
+      "correct_option": "tâm nội tiếp I",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-noi-tiep"
+    },
+    {
+      "question_id": "CTR15V1_062",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-noi-tiep",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tâm nội tiếp là giao điểm của những đường nào?",
+      "correct_option": "ba đường phân giác trong",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-noi-tiep"
+    },
+    {
+      "question_id": "CTR15V1_063",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-noi-tiep",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Điểm \\(I\\) là tâm nội tiếp tam giác. Khẳng định nào đúng?",
+      "correct_option": "I cách đều ba cạnh",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-noi-tiep"
+    },
+    {
+      "question_id": "CTR15V1_064",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-noi-tiep",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Đường tròn tâm \\(I\\) tiếp xúc với cả ba cạnh tam giác. Điểm \\(I\\) là gì?",
+      "correct_option": "tâm nội tiếp",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-noi-tiep"
+    },
+    {
+      "question_id": "CTR15V1_065",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-noi-tiep",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tâm nội tiếp của tam giác có nằm bên trong tam giác không?",
+      "correct_option": "Có",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-noi-tiep"
+    },
+    {
+      "question_id": "CTR15V1_066",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-noi-tiep",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Ký hiệu thường dùng cho tâm nội tiếp là gì?",
+      "correct_option": "\\(I\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-noi-tiep"
+    },
+    {
+      "question_id": "CTR15V1_067",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-noi-tiep",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Nếu một điểm nằm trong tam giác và cách đều ba cạnh, điểm đó là gì?",
+      "correct_option": "tâm nội tiếp",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-noi-tiep"
+    },
+    {
+      "question_id": "CTR15V1_068",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-noi-tiep",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Nếu \\(I\\) là tâm nội tiếp thì \\(AI\\) có vai trò gì?",
+      "correct_option": "phân giác góc A",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-noi-tiep"
+    },
+    {
+      "question_id": "CTR15V1_069",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-noi-tiep",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Hai phân giác trong của tam giác đã cắt nhau tại I. Đường phân giác trong thứ ba đi qua đâu?",
+      "correct_option": "đi qua I",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-noi-tiep"
+    },
+    {
+      "question_id": "CTR15V1_070",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-noi-tiep",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-008",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Bán kính đường tròn nội tiếp bằng đại lượng nào?",
+      "correct_option": "khoảng cách từ I đến mỗi cạnh",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-noi-tiep"
+    },
+    {
+      "question_id": "CTR15V1_071",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "cach-deu-canh",
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-canh",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [
+        "tam-noi-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Điểm \\(I\\) nằm trong tam giác và là tâm nội tiếp. Nếu khoảng cách từ \\(I\\) đến cạnh \\(AB\\) bằng 2 cm, khoảng cách từ \\(I\\) đến cạnh \\(BC\\) bằng bao nhiêu?",
+      "correct_option": "\\(2\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-canh"
+    },
+    {
+      "question_id": "CTR15V1_072",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "cach-deu-canh",
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-canh",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [
+        "tam-noi-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Điểm \\(I\\) nằm trong tam giác và là tâm nội tiếp. Nếu khoảng cách từ \\(I\\) đến cạnh \\(AB\\) bằng 3 cm, khoảng cách từ \\(I\\) đến cạnh \\(BC\\) bằng bao nhiêu?",
+      "correct_option": "\\(3\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-canh"
+    },
+    {
+      "question_id": "CTR15V1_073",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "cach-deu-canh",
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-canh",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [
+        "tam-noi-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Điểm \\(I\\) nằm trong tam giác và là tâm nội tiếp. Nếu khoảng cách từ \\(I\\) đến cạnh \\(AB\\) bằng 4 cm, khoảng cách từ \\(I\\) đến cạnh \\(BC\\) bằng bao nhiêu?",
+      "correct_option": "\\(4\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-canh"
+    },
+    {
+      "question_id": "CTR15V1_074",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "cach-deu-canh",
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-canh",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [
+        "tam-noi-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Điểm \\(I\\) nằm trong tam giác và là tâm nội tiếp. Nếu khoảng cách từ \\(I\\) đến cạnh \\(AB\\) bằng 5 cm, khoảng cách từ \\(I\\) đến cạnh \\(BC\\) bằng bao nhiêu?",
+      "correct_option": "\\(5\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-canh"
+    },
+    {
+      "question_id": "CTR15V1_075",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "cach-deu-canh",
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-canh",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [
+        "tam-noi-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Điểm \\(I\\) nằm trong tam giác và là tâm nội tiếp. Nếu khoảng cách từ \\(I\\) đến cạnh \\(AB\\) bằng 6 cm, khoảng cách từ \\(I\\) đến cạnh \\(BC\\) bằng bao nhiêu?",
+      "correct_option": "\\(6\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-canh"
+    },
+    {
+      "question_id": "CTR15V1_076",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "cach-deu-canh",
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-canh",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [
+        "tam-noi-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Điểm \\(I\\) nằm trong tam giác và là tâm nội tiếp. Nếu khoảng cách từ \\(I\\) đến cạnh \\(AB\\) bằng 7 cm, khoảng cách từ \\(I\\) đến cạnh \\(BC\\) bằng bao nhiêu?",
+      "correct_option": "\\(7\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-canh"
+    },
+    {
+      "question_id": "CTR15V1_077",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "cach-deu-canh",
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-canh",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [
+        "tam-noi-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Điểm \\(I\\) nằm trong tam giác và là tâm nội tiếp. Nếu khoảng cách từ \\(I\\) đến cạnh \\(AB\\) bằng 8 cm, khoảng cách từ \\(I\\) đến cạnh \\(BC\\) bằng bao nhiêu?",
+      "correct_option": "\\(8\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-canh"
+    },
+    {
+      "question_id": "CTR15V1_078",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "cach-deu-canh",
+        "tam-noi-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-canh",
+      "learner_family_candidate": "TRI-INCENTER",
+      "supporting_skills": [
+        "tam-noi-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-009",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Điểm \\(I\\) nằm trong tam giác và là tâm nội tiếp. Nếu khoảng cách từ \\(I\\) đến cạnh \\(AB\\) bằng 9 cm, khoảng cách từ \\(I\\) đến cạnh \\(BC\\) bằng bao nhiêu?",
+      "correct_option": "\\(9\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-canh"
+    },
+    {
+      "question_id": "CTR15V1_079",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-truc",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Đường thẳng vuông góc với đoạn \\(AB\\) tại trung điểm của đoạn đó được gọi là gì?",
+      "correct_option": "đường trung trực",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-truc"
+    },
+    {
+      "question_id": "CTR15V1_080",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-truc",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Đường thẳng vuông góc với đoạn \\(BC\\) tại trung điểm của đoạn đó được gọi là gì?",
+      "correct_option": "đường trung trực",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-truc"
+    },
+    {
+      "question_id": "CTR15V1_081",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-truc",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Đường thẳng vuông góc với đoạn \\(CA\\) tại trung điểm của đoạn đó được gọi là gì?",
+      "correct_option": "đường trung trực",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-truc"
+    },
+    {
+      "question_id": "CTR15V1_082",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-truc",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đường thẳng vuông góc với đoạn \\(MN\\) tại trung điểm của đoạn đó được gọi là gì?",
+      "correct_option": "đường trung trực",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-truc"
+    },
+    {
+      "question_id": "CTR15V1_083",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-truc",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Đường thẳng vuông góc với đoạn \\(PQ\\) tại trung điểm của đoạn đó được gọi là gì?",
+      "correct_option": "đường trung trực",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-truc"
+    },
+    {
+      "question_id": "CTR15V1_084",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-truc",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Đường thẳng vuông góc với đoạn \\(RS\\) tại trung điểm của đoạn đó được gọi là gì?",
+      "correct_option": "đường trung trực",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-truc"
+    },
+    {
+      "question_id": "CTR15V1_085",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-truc",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Đường thẳng vuông góc với đoạn \\(XY\\) tại trung điểm của đoạn đó được gọi là gì?",
+      "correct_option": "đường trung trực",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-truc"
+    },
+    {
+      "question_id": "CTR15V1_086",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "nhan-biet-trung-truc"
+      ],
+      "canonical_assessed_skill_candidate": "nhan-biet-trung-truc",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-010",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Đường thẳng vuông góc với đoạn \\(UV\\) tại trung điểm của đoạn đó được gọi là gì?",
+      "correct_option": "đường trung trực",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "nhan-biet-trung-truc"
+    },
+    {
+      "question_id": "CTR15V1_087",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong tam giác \\(ABC\\), hai đường trung trực của \\(AB\\) và \\(BC\\) cắt nhau tại \\(O\\). Điểm \\(O\\) là gì?",
+      "correct_option": "tâm ngoại tiếp O",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_088",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tâm ngoại tiếp là giao điểm của những đường nào?",
+      "correct_option": "ba đường trung trực",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_089",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Nếu \\(O\\) là tâm ngoại tiếp tam giác \\(ABC\\), khẳng định nào đúng?",
+      "correct_option": "\\(OA=OB=OC\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_090",
+      "source_file": "15-duong-dong-quy-v1-03.json",
+      "legacy_skill_tags": [
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Đường tròn tâm \\(O\\) đi qua cả ba đỉnh tam giác. Điểm \\(O\\) là gì?",
+      "correct_option": "tâm ngoại tiếp",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_091",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Ký hiệu thường dùng cho tâm ngoại tiếp là gì?",
+      "correct_option": "\\(O\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_092",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Nếu một điểm cách đều ba đỉnh A, B, C của tam giác, điểm đó là gì?",
+      "correct_option": "tâm ngoại tiếp",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_093",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Trong tam giác vuông, tâm ngoại tiếp nằm ở đâu?",
+      "correct_option": "trung điểm cạnh huyền",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_094",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Hai trung trực của hai cạnh tam giác đã cắt nhau tại O. Trung trực cạnh thứ ba đi qua đâu?",
+      "correct_option": "đi qua O",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_095",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Bán kính đường tròn ngoại tiếp là đại lượng nào?",
+      "correct_option": "\\(OA\\), \\(OB\\) hoặc \\(OC\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_096",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-011",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tâm ngoại tiếp của tam giác có luôn nằm bên trong tam giác không?",
+      "correct_option": "Không",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_097",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-dinh",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [
+        "tam-ngoai-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "\\(O\\) là tâm ngoại tiếp tam giác \\(ABC\\) và \\(OA=3\\) cm. Giá trị \\(OB\\) bằng bao nhiêu?",
+      "correct_option": "\\(3\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-dinh"
+    },
+    {
+      "question_id": "CTR15V1_098",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-dinh",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [
+        "tam-ngoai-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "\\(O\\) là tâm ngoại tiếp tam giác \\(ABC\\) và \\(OA=4\\) cm. Giá trị \\(OB\\) bằng bao nhiêu?",
+      "correct_option": "\\(4\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-dinh"
+    },
+    {
+      "question_id": "CTR15V1_099",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-dinh",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [
+        "tam-ngoai-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "\\(O\\) là tâm ngoại tiếp tam giác \\(ABC\\) và \\(OA=5\\) cm. Giá trị \\(OB\\) bằng bao nhiêu?",
+      "correct_option": "\\(5\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-dinh"
+    },
+    {
+      "question_id": "CTR15V1_100",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-dinh",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [
+        "tam-ngoai-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "\\(O\\) là tâm ngoại tiếp tam giác \\(ABC\\) và \\(OA=6\\) cm. Giá trị \\(OB\\) bằng bao nhiêu?",
+      "correct_option": "\\(6\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-dinh"
+    },
+    {
+      "question_id": "CTR15V1_101",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-dinh",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [
+        "tam-ngoai-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "\\(O\\) là tâm ngoại tiếp tam giác \\(ABC\\) và \\(OA=7\\) cm. Giá trị \\(OB\\) bằng bao nhiêu?",
+      "correct_option": "\\(7\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-dinh"
+    },
+    {
+      "question_id": "CTR15V1_102",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-dinh",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [
+        "tam-ngoai-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "\\(O\\) là tâm ngoại tiếp tam giác \\(ABC\\) và \\(OA=8\\) cm. Giá trị \\(OB\\) bằng bao nhiêu?",
+      "correct_option": "\\(8\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-dinh"
+    },
+    {
+      "question_id": "CTR15V1_103",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-dinh",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [
+        "tam-ngoai-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "\\(O\\) là tâm ngoại tiếp tam giác \\(ABC\\) và \\(OA=9\\) cm. Giá trị \\(OB\\) bằng bao nhiêu?",
+      "correct_option": "\\(9\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-dinh"
+    },
+    {
+      "question_id": "CTR15V1_104",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "cach-deu-dinh",
+        "tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "cach-deu-dinh",
+      "learner_family_candidate": "TRI-PERPBISECTOR",
+      "supporting_skills": [
+        "tam-ngoai-tiep"
+      ],
+      "observable_evidence_class": "MCQ_FINAL_ANSWER_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-012",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "\\(O\\) là tâm ngoại tiếp tam giác \\(ABC\\) và \\(OA=10\\) cm. Giá trị \\(OB\\) bằng bao nhiêu?",
+      "correct_option": "\\(10\\text{ cm}\\)",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "cach-deu-ba-dinh"
+    },
+    {
+      "question_id": "CTR15V1_105",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "vi-tri-tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tâm ngoại tiếp của tam giác nhọn nằm ở đâu? (câu 1)",
+      "correct_option": "bên trong tam giác",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_106",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "vi-tri-tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tâm ngoại tiếp của tam giác vuông nằm ở đâu? (câu 2)",
+      "correct_option": "trung điểm cạnh huyền",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_107",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "vi-tri-tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tâm ngoại tiếp của tam giác tù nằm ở đâu? (câu 3)",
+      "correct_option": "bên ngoài tam giác",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_108",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "vi-tri-tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tâm ngoại tiếp của tam giác nhọn nằm ở đâu? (câu 4)",
+      "correct_option": "bên trong tam giác",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_109",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "vi-tri-tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Tâm ngoại tiếp của tam giác vuông nằm ở đâu? (câu 5)",
+      "correct_option": "trung điểm cạnh huyền",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_110",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "vi-tri-tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tâm ngoại tiếp của tam giác tù nằm ở đâu? (câu 6)",
+      "correct_option": "bên ngoài tam giác",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_111",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "vi-tri-tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Tâm ngoại tiếp của tam giác vuông nằm ở đâu? (câu 7)",
+      "correct_option": "trung điểm cạnh huyền",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_112",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "vi-tri-tam-ngoai-tiep"
+      ],
+      "canonical_assessed_skill_candidate": "vi-tri-tam-ngoai-tiep",
+      "learner_family_candidate": "TRI-CIRCUMCENTER",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-013",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Tâm ngoại tiếp của tam giác nhọn nằm ở đâu? (câu 8)",
+      "correct_option": "bên trong tam giác",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "vi-tri-tam-ngoai-tiep"
+    },
+    {
+      "question_id": "CTR15V1_113",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "phan-biet-bon-tam"
+      ],
+      "canonical_assessed_skill_candidate": "phan-biet-bon-tam",
+      "learner_family_candidate": "TRI-CENTERS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Điểm đồng quy của ba trung tuyến là điểm nào?",
+      "correct_option": "trọng tâm G",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-biet-tam"
+    },
+    {
+      "question_id": "CTR15V1_114",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "phan-biet-bon-tam"
+      ],
+      "canonical_assessed_skill_candidate": "phan-biet-bon-tam",
+      "learner_family_candidate": "TRI-CENTERS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Điểm đồng quy của ba đường cao là điểm nào?",
+      "correct_option": "trực tâm H",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-biet-tam"
+    },
+    {
+      "question_id": "CTR15V1_115",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "phan-biet-bon-tam"
+      ],
+      "canonical_assessed_skill_candidate": "phan-biet-bon-tam",
+      "learner_family_candidate": "TRI-CENTERS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Điểm đồng quy của ba phân giác trong là điểm nào?",
+      "correct_option": "tâm nội tiếp I",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-biet-tam"
+    },
+    {
+      "question_id": "CTR15V1_116",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "phan-biet-bon-tam"
+      ],
+      "canonical_assessed_skill_candidate": "phan-biet-bon-tam",
+      "learner_family_candidate": "TRI-CENTERS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Điểm đồng quy của ba trung trực là điểm nào?",
+      "correct_option": "tâm ngoại tiếp O",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-biet-tam"
+    },
+    {
+      "question_id": "CTR15V1_117",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "phan-biet-bon-tam"
+      ],
+      "canonical_assessed_skill_candidate": "phan-biet-bon-tam",
+      "learner_family_candidate": "TRI-CENTERS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Điểm cách đều ba đỉnh của tam giác là điểm nào?",
+      "correct_option": "tâm ngoại tiếp O",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-biet-tam"
+    },
+    {
+      "question_id": "CTR15V1_118",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "phan-biet-bon-tam"
+      ],
+      "canonical_assessed_skill_candidate": "phan-biet-bon-tam",
+      "learner_family_candidate": "TRI-CENTERS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 3,
+      "question": "Điểm cách đều ba cạnh và nằm trong tam giác là điểm nào?",
+      "correct_option": "tâm nội tiếp I",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-biet-tam"
+    },
+    {
+      "question_id": "CTR15V1_119",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "phan-biet-bon-tam"
+      ],
+      "canonical_assessed_skill_candidate": "phan-biet-bon-tam",
+      "learner_family_candidate": "TRI-CENTERS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 1,
+      "question": "Điểm chia mỗi trung tuyến theo tỉ số 2:1 từ đỉnh là điểm nào?",
+      "correct_option": "trọng tâm G",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-biet-tam"
+    },
+    {
+      "question_id": "CTR15V1_120",
+      "source_file": "15-duong-dong-quy-v1-04.json",
+      "legacy_skill_tags": [
+        "phan-biet-bon-tam"
+      ],
+      "canonical_assessed_skill_candidate": "phan-biet-bon-tam",
+      "learner_family_candidate": "TRI-CENTERS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_RECOGNITION_ONLY",
+      "clone_family_candidate": "CEN15-AUTO-014",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 2,
+      "question": "Trong tam giác vuông, điểm trùng với đỉnh góc vuông là điểm nào?",
+      "correct_option": "trực tâm H",
+      "note": "",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "phan-biet-tam"
+    },
+    {
+      "question_id": "CTR15V1_121",
+      "source_file": "15-duong-dong-quy-v1-05.json",
+      "legacy_skill_tags": [
+        "dong-quy-bon-duong-dac-biet"
+      ],
+      "canonical_assessed_skill_candidate": "dong-quy-bon-duong-dac-biet",
+      "learner_family_candidate": "TRI-CENTERS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CEN15-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ba đường trung tuyến của một tam giác đồng quy tại:",
+      "correct_option": "Trọng tâm G",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dong-quy-bon-duong-dac-biet"
+    },
+    {
+      "question_id": "CTR15V1_122",
+      "source_file": "15-duong-dong-quy-v1-05.json",
+      "legacy_skill_tags": [
+        "dong-quy-bon-duong-dac-biet"
+      ],
+      "canonical_assessed_skill_candidate": "dong-quy-bon-duong-dac-biet",
+      "learner_family_candidate": "TRI-CENTERS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CEN15-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Ghép đúng bốn họ đường đặc biệt với bốn tâm là:",
+      "correct_option": "Trung tuyến–G; đường cao–H; phân giác–I; trung trực–O",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dong-quy-bon-duong-dac-biet"
+    },
+    {
+      "question_id": "CTR15V1_123",
+      "source_file": "15-duong-dong-quy-v1-05.json",
+      "legacy_skill_tags": [
+        "dong-quy-bon-duong-dac-biet"
+      ],
+      "canonical_assessed_skill_candidate": "dong-quy-bon-duong-dac-biet",
+      "learner_family_candidate": "TRI-CENTERS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CEN15-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Khẳng định nào đúng với một tam giác bất kỳ?",
+      "correct_option": "Mỗi họ gồm ba trung tuyến/đường cao/phân giác/trung trực đều đồng quy, nhưng thường tại bốn điểm khác nhau",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dong-quy-bon-duong-dac-biet"
+    },
+    {
+      "question_id": "CTR15V1_124",
+      "source_file": "15-duong-dong-quy-v1-05.json",
+      "legacy_skill_tags": [
+        "dong-quy-bon-duong-dac-biet"
+      ],
+      "canonical_assessed_skill_candidate": "dong-quy-bon-duong-dac-biet",
+      "learner_family_candidate": "TRI-CENTERS",
+      "supporting_skills": [],
+      "observable_evidence_class": "MCQ_PROOF_PARTIAL_FINAL_ANSWER",
+      "clone_family_candidate": "CEN15-AUTO-015",
+      "credit_mode_candidate": "EVIDENCE_EVENT_CANDIDATE_NOT_MASTERY",
+      "correct_option_index": 0,
+      "question": "Trong tam giác đều, điều đặc biệt nào xảy ra?",
+      "correct_option": "G,H,I,O trùng nhau",
+      "note": "MCQ cannot alone certify a complete geometric proof chain; written evidence remains required where proof is the target.",
+      "runtime_enabled": false,
+      "core_readiness_credit": false,
+      "legacy_tags_unchanged": true,
+      "question_type": "dong-quy-bon-duong-dac-biet"
+    }
+  ]
+}
