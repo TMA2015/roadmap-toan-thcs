@@ -1,0 +1,677 @@
+NOTEBOOKLM R1 CĐ20 / MATH-CORE19-20-R1-20260929. STATUS: PROPOSAL_ONLY, NOT DEPLOYED.
+Source main 8a13c6c2f076fe360ada6bbaf51d09997e538a4c; lesson docs/kien-thuc/20-hinh-hoc-tong-hop/index.md Git blob 8a279134ebf5e2f3083d56783d2fdd095be78f18; original workspace docs/assets/data/curriculum/topic20-learning-workspace.json blob 774997cd9ac4d2efc1c53c17c0de48e6fcdba497; original 15-question bank docs/assets/data/practice/20-hinh-hoc-tong-hop-micro-v1.json blob d61845552c9a484ab9b220606ff20c9a9e6a7046.
+Original source passages copied without rewriting. Candidate architecture, five new teaching copies and 14 new items are separately marked AUTHOR PROPOSAL, NOT PASS.
+
+[A] VERBATIM ORIGINAL LESSON §3:
+## 📖 3. Kiến thức cốt lõi
+
+### 3.0. KNTT Core nền tảng hình phẳng và đối xứng
+
+Trước phần tổng hợp, cần chắc các nội dung Core lớp 6:
+
+- nhận biết tam giác đều, hình vuông, lục giác đều và các tứ giác đặc biệt;
+- tính chu vi, diện tích các hình phẳng quen thuộc trong bài đo lường thực tế;
+- **trục đối xứng:** đường thẳng mà phép đối xứng qua đó biến hình thành chính nó;
+- **tâm đối xứng:** điểm mà phép đối xứng tâm qua đó biến hình thành chính nó.
+
+### 3.1. Nguyên tắc giải bài hình học tổng hợp
+
+Một bài tổng hợp thường không dùng một định lý duy nhất. Cần ghép nhiều mảnh kiến thức.
+
+Quy trình nên dùng:
+
+1. Đọc kỹ giả thiết và kết luận.
+2. Đánh dấu song song, vuông góc, trung điểm, tiếp tuyến, đường kính.
+3. Tìm tam giác có khả năng đồng dạng.
+4. Kiểm tra khả năng xuất hiện tứ giác nội tiếp.
+5. Tìm các tỉ số hoặc hệ thức trung gian.
+6. Chỉ sau đó mới hướng tới kết luận cuối.
+
+### Infographic – Chọn chiến lược
+
+![Infographic chọn chiến lược giải hình học tổng hợp](../../assets/infographics/20/20-02-chon-chien-luoc.svg)
+
+### 3.2. Các “cầu nối” thường gặp
+
+**Từ song song đến đồng dạng**
+
+`DE ∥ BC`
+
+→ góc tương ứng bằng nhau
+
+→ hai tam giác đồng dạng
+
+→ suy ra tỉ số cạnh.
+
+**Từ hai góc vuông đến nội tiếp**
+
+Nếu:
+
+`∠AEB = ∠AFB = 90°`
+
+thì `E`, `F` cùng nằm trên đường tròn đường kính `AB`.
+
+**Từ đồng dạng đến hệ thức tích**
+
+Nếu:
+
+`AB/AC = AD/AE`
+
+thì có thể biến đổi thành:
+
+`AB × AE = AC × AD`
+
+### 3.3. Chiến lược chứng minh tứ giác nội tiếp
+
+Các dấu hiệu ưu tiên:
+
+- tổng hai góc đối bằng `180°`;
+- hai góc bằng nhau cùng nhìn một đoạn, với hai đỉnh góc nằm cùng phía đối với đường thẳng chứa đoạn đó;
+- hai góc vuông cùng nhìn một đoạn, từ đó nhận ra đường tròn có đường kính là đoạn ấy;
+- bốn điểm cùng nằm trên một đường tròn đã xác định.
+
+### 3.4. Chiến lược chứng minh tiếp tuyến
+
+Muốn chứng minh đường thẳng `d` là tiếp tuyến tại `A`, thường chứng minh:
+
+`OA ⟂ d`
+
+với `A` thuộc đường tròn tâm `O`.
+
+Trong bài khó, quan hệ vuông góc này thường được suy ra từ:
+- góc nội tiếp;
+- tam giác đồng dạng;
+- tổng góc;
+- tứ giác nội tiếp.
+
+### 3.5. Chiến lược chứng minh hệ thức độ dài
+
+Nếu cần chứng minh dạng:
+
+`AB × CD = EF × GH`
+
+hãy thử:
+
+1. biến thành một tỉ lệ;
+2. tìm hai tam giác đồng dạng tạo ra tỉ lệ đó;
+3. hoặc kiểm tra cấu hình hai dây cắt nhau / tiếp tuyến – cát tuyến.
+
+### Infographic – Chuỗi suy luận
+
+![Infographic các chuỗi suy luận mẫu trong hình học tổng hợp](../../assets/infographics/20/20-03-chuoi-suy-luan.svg)
+
+### 3.6. Đo lường và hình khối
+
+Phần hình khối cần được học như một mạch xuyên suốt lớp 6–9, không chỉ là một công thức thể tích.
+
+**Hình chữ nhật**
+
+`S = a × b`
+
+**Tam giác**
+
+`S = 1/2 × a × h`
+
+**Hình tròn**
+
+`S = πr²`
+
+`C = 2πr`
+
+#### Hình hộp chữ nhật
+
+<p align="center">
+  <img src="../../assets/geometry/20/20-hinh-hop-chu-nhat.svg"
+       alt="Hình hộp chữ nhật với ba kích thước a, b, c"
+       width="520">
+</p>
+
+Nếu ba kích thước của hình hộp chữ nhật là `a`, `b`, `c` thì:
+
+`V = a × b × c`
+
+> Ba kích thước phải được đổi về **cùng đơn vị độ dài** trước khi tính thể tích.
+
+#### Lăng trụ đứng
+
+<p align="center">
+  <img src="../../assets/geometry/20/20-lang-tru-dung.svg"
+       alt="Lăng trụ đứng với chu vi đáy P_đáy, diện tích đáy S_đáy và chiều cao h"
+       width="520">
+</p>
+
+Với chu vi đáy `P_đáy`, diện tích đáy `S_đáy`, chiều cao `h`:
+
+`S_xq = P_đáy × h`
+
+`V = S_đáy × h`
+
+> Hình hộp chữ nhật là một trường hợp của lăng trụ đứng; công thức `V = S_đáy × h` vẫn áp dụng.
+
+#### Hình chóp tam giác đều và hình chóp tứ giác đều
+
+<p align="center">
+  <img src="../../assets/geometry/20/20-hinh-chop-deu.svg"
+       alt="Hình chóp đều với nửa chu vi đáy p, diện tích đáy S_đáy, chiều cao h và trung đoạn d"
+       width="520">
+</p>
+
+Với `p` là **nửa chu vi đáy**, `d` là trung đoạn của hình chóp đều, `h` là chiều cao:
+
+`S_xq = p × d`
+
+`V = 1/3 × S_đáy × h`
+
+> Không nhầm `d` (trung đoạn nằm trên mặt bên) với `h` (đường cao vuông góc với mặt đáy).
+
+#### Hình trụ
+
+<p align="center">
+  <img src="../../assets/geometry/20/20-hinh-tru.svg"
+       alt="Hình trụ với bán kính đáy r và chiều cao h"
+       width="500">
+</p>
+
+Với bán kính đáy `r`, chiều cao `h`:
+
+`S_xq = 2πrh`
+
+`S_tp = 2πrh + 2πr² = 2πr(h + r)`
+
+`V = πr²h`
+
+#### Hình nón
+
+<p align="center">
+  <img src="../../assets/geometry/20/20-hinh-non.svg"
+       alt="Hình nón với bán kính đáy r, chiều cao h và đường sinh l"
+       width="500">
+</p>
+
+Với bán kính đáy `r`, chiều cao `h`, đường sinh `l`:
+
+`S_xq = πrl`
+
+`S_tp = πrl + πr² = πr(l + r)`
+
+`V = 1/3 πr²h`
+
+Trong hình nón tròn xoay vuông, `l² = r² + h²`.
+
+#### Hình cầu
+
+<p align="center">
+  <img src="../../assets/geometry/20/20-hinh-cau.svg"
+       alt="Hình cầu tâm O với bán kính r"
+       width="480">
+</p>
+
+Với bán kính `r`:
+
+`S_mặt cầu = 4πr²`
+
+`V_hình cầu = 4/3 πr³`
+
+#### Kiểm tra đơn vị
+
+- độ dài: `cm`, `m`, ...;
+- diện tích: `cm²`, `m²`, ...;
+- thể tích: `cm³`, `m³`, ... .
+
+Khi bài cho nhiều đơn vị khác nhau, phải đổi về cùng một đơn vị **trước khi** thay vào công thức.
+
+### 3.7. Bảng chọn chiến lược
+
+| Mục tiêu | Hướng ưu tiên |
+|---|---|
+| Chứng minh hai góc bằng nhau | Nội tiếp, đồng dạng |
+| Chứng minh song song | Góc so le trong, Thales đảo |
+| Chứng minh vuông góc | Góc 90°, bán kính – tiếp tuyến |
+| Chứng minh nội tiếp | Hai góc đối bù / hai góc bằng nhau cùng nhìn một đoạn với điều kiện vị trí phù hợp |
+| Chứng minh hệ thức tích | Đồng dạng / hai dây / tiếp tuyến–cát tuyến |
+| Tính độ dài | Đồng dạng / Pythagore / lượng giác |
+| Tính diện tích, thể tích | Chọn đúng công thức và đơn vị |
+
+---
+
+
+
+[B] VERBATIM ORIGINAL LESSON §5:
+## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic – Đo lường, trình bày và lỗi sai
+
+![Infographic đo lường, trình bày và lỗi sai Chuyên đề 20](../../assets/infographics/20/20-04-do-luong-trinh-bay-loi-sai.svg)
+
+### Dạng 1. Chứng minh tứ giác nội tiếp
+
+Tìm hai góc đối bù; hoặc hai góc bằng nhau cùng nhìn một đoạn với điều kiện vị trí phù hợp; hoặc hai góc vuông cùng nhìn một đoạn để nhận ra đường tròn có đường kính chung.
+
+### Dạng 2. Chứng minh hai tam giác đồng dạng
+
+Thường xuất hiện sau khi đã có các góc bằng nhau từ nội tiếp hoặc song song.
+
+### Dạng 3. Chứng minh tiếp tuyến
+
+Đưa bài toán về chứng minh vuông góc với bán kính tại tiếp điểm.
+
+### Dạng 4. Chứng minh hệ thức tích
+
+Đưa tích về tỉ số và tìm cặp tam giác đồng dạng.
+
+### Dạng 5. Chứng minh song song / vuông góc
+
+Dùng góc bằng nhau, Thales đảo, tính chất tiếp tuyến hoặc nội tiếp.
+
+### Dạng 6. Tính độ dài và góc
+
+Kết hợp đồng dạng, Pythagore, lượng giác, hệ thức đường tròn.
+
+### Dạng 7. Đo lường và hình khối
+
+Tính diện tích xung quanh, diện tích toàn phần, thể tích và đổi đơn vị cho lăng trụ đứng, hình chóp đều, hình trụ, hình nón và hình cầu. Với hình ghép, tách vật thể thành các khối quen thuộc rồi cộng/trừ thể tích hoặc diện tích phù hợp.
+
+### Dạng 8. Bài hình tổng hợp nhiều ý
+
+Mỗi ý thường tạo dữ kiện cho ý sau. Cần tận dụng kết quả đã chứng minh thay vì làm lại từ đầu.
+
+---
+
+
+
+[C] ORIGINAL FIVE WORKSPACE CARDS (transcribed original identifiers/skills/IDs):
+ORIGINAL geo20-core-1 (Hình phẳng, đo lường và đối xứng)
+Original declared skills: nhan-biet-tam-giac-deu, nhan-biet-hinh-vuong, nhan-biet-luc-giac-deu, nhan-biet-tu-giac-dac-biet, chu-vi-tu-giac, dien-tich-tu-giac, do-luong-thuc-te, truc-doi-xung, tam-doi-xung
+Original micro IDs: GEO20MICRO_001, GEO20MICRO_002, GEO20MICRO_003
+Original prerequisites: tong-goc-tu-giac
+
+ORIGINAL geo20-core-2 (Hình hộp, lập phương và lăng trụ)
+Original declared skills: the-tich-hop-chu-nhat, dien-tich-day, doi-don-vi-do-luong, nhan-biet-hinh-hop-lap-phuong, dien-tich-xung-quanh-hop-chu-nhat, the-tich-lang-tru, nhan-biet-lang-tru-dung, dien-tich-xung-quanh-lang-tru
+Original micro IDs: GEO20MICRO_004, GEO20MICRO_005, GEO20MICRO_006
+Original prerequisites: dien-tich-tu-giac
+
+ORIGINAL geo20-core-3 (Hình chóp đều)
+Original declared skills: nhan-biet-hinh-chop-deu, dien-tich-xung-quanh-hinh-chop, the-tich-hinh-chop
+Original micro IDs: GEO20MICRO_007, GEO20MICRO_008, GEO20MICRO_009
+Original prerequisites: dien-tich-day
+
+ORIGINAL geo20-core-4 (Hình trụ và hình nón)
+Original declared skills: nhan-biet-hinh-tru, dien-tich-xung-quanh-hinh-tru, the-tich-hinh-tru, nhan-biet-hinh-non, dien-tich-xung-quanh-hinh-non, the-tich-hinh-non
+Original micro IDs: GEO20MICRO_010, GEO20MICRO_011, GEO20MICRO_012
+Original prerequisites: do-dai-duong-tron
+
+ORIGINAL geo20-core-5 (Hình cầu)
+Original declared skills: nhan-biet-hinh-cau, dien-tich-mat-cau, the-tich-hinh-cau
+Original micro IDs: GEO20MICRO_013, GEO20MICRO_014, GEO20MICRO_015
+Original prerequisites: dien-tich-hinh-tron
+
+
+[D] ORIGINAL 15 MICRO QUESTIONS (verbatim source question/options/answer/explanation/hints):
+ID GEO20MICRO_001 | card geo20-core-1 | role base | original assessed target nhan-biet-tam-giac-deu
+QUESTION: Tam giác có ba cạnh bằng nhau là:
+0 (A): Tam giác đều
+1 (B): Tam giác vuông
+2 (C): Tam giác cân nhưng không đều
+3 (D): Tam giác tù
+Original correct answer_index: 0; explanation: Ba cạnh bằng nhau là định nghĩa tam giác đều.
+Original hints: Nhìn số cạnh bằng nhau. | Ba cạnh cùng bằng.
+
+ID GEO20MICRO_002 | card geo20-core-1 | role trap | original assessed target truc-doi-xung
+QUESTION: Hình vuông có bao nhiêu trục đối xứng?
+0 (A): 4
+1 (B): 2
+2 (C): 1
+3 (D): 0
+Original correct answer_index: 0; explanation: Hai đường chéo và hai đường qua trung điểm cặp cạnh đối là bốn trục.
+Original hints: Đếm đường chéo. | Đếm thêm hai đường qua tâm song song cạnh.
+
+ID GEO20MICRO_003 | card geo20-core-1 | role apply | original assessed target dien-tich-tu-giac
+QUESTION: Hình chữ nhật 5 cm × 8 cm có diện tích:
+0 (A): 40 cm²
+1 (B): 26 cm²
+2 (C): 13 cm²
+3 (D): 80 cm²
+Original correct answer_index: 0; explanation: S=5·8=40 cm².
+Original hints: Diện tích chữ nhật = dài×rộng. | Giữ đơn vị bình phương.
+
+ID GEO20MICRO_004 | card geo20-core-2 | role base | original assessed target nhan-biet-hinh-hop-lap-phuong
+QUESTION: Hình lập phương có:
+0 (A): 6 mặt đều là hình vuông bằng nhau
+1 (B): 6 mặt đều là tam giác
+2 (C): 2 đáy tròn
+3 (D): Một đỉnh
+Original correct answer_index: 0; explanation: Định nghĩa nhận biết hình lập phương.
+Original hints: Đếm mặt. | Các mặt là hình vuông.
+
+ID GEO20MICRO_005 | card geo20-core-2 | role trap | original assessed target dien-tich-xung-quanh-hop-chu-nhat
+QUESTION: Hộp chữ nhật đáy a×b, cao h. Diện tích xung quanh là:
+0 (A): 2(a+b)h
+1 (B): abh
+2 (C): 2ab
+3 (D): ab+2h
+Original correct answer_index: 0; explanation: Sxq=chu vi đáy×h=2(a+b)h.
+Original hints: Không cộng hai đáy. | Dùng chu vi đáy nhân chiều cao.
+
+ID GEO20MICRO_006 | card geo20-core-2 | role apply | original assessed target dien-tich-xung-quanh-lang-tru
+QUESTION: Lăng trụ đứng có chu vi đáy 12 cm, chiều cao 5 cm. Sxq:
+0 (A): 60 cm²
+1 (B): 30 cm²
+2 (C): 17 cm²
+3 (D): 120 cm²
+Original correct answer_index: 0; explanation: Sxq=Pđáy·h=12·5=60.
+Original hints: Dùng chu vi đáy. | Nhân với chiều cao lăng trụ.
+
+ID GEO20MICRO_007 | card geo20-core-3 | role base | original assessed target nhan-biet-hinh-chop-deu
+QUESTION: Hình chóp đều có:
+0 (A): Đáy là đa giác đều và chân đường cao ở tâm đáy
+1 (B): Mọi cạnh đều bằng nhau
+2 (C): Hai đáy song song
+3 (D): Mặt bên là hình chữ nhật
+Original correct answer_index: 0; explanation: Đây là đặc trưng của hình chóp đều.
+Original hints: Có một đáy. | Chân đường cao ở tâm đáy.
+
+ID GEO20MICRO_008 | card geo20-core-3 | role trap | original assessed target dien-tich-xung-quanh-hinh-chop
+QUESTION: Hình chóp đều có nửa chu vi đáy p và trung đoạn d. Sxq:
+0 (A): pd
+1 (B): 2pd
+2 (C): (1/3)pd
+3 (D): p+d
+Original correct answer_index: 0; explanation: Sxq=p·d.
+Original hints: p đã là nửa chu vi. | Nhân với trung đoạn.
+
+ID GEO20MICRO_009 | card geo20-core-3 | role apply | original assessed target the-tich-hinh-chop
+QUESTION: Hình chóp có Sđáy=30 cm², h=9 cm. Thể tích:
+0 (A): 90 cm³
+1 (B): 270 cm³
+2 (C): 39 cm³
+3 (D): 810 cm³
+Original correct answer_index: 0; explanation: V=(1/3)Sđáyh=(1/3)·30·9=90.
+Original hints: Có hệ số 1/3. | Đơn vị thể tích cm³.
+
+ID GEO20MICRO_010 | card geo20-core-4 | role base | original assessed target nhan-biet-hinh-tru
+QUESTION: Hình trụ tròn xoay có:
+0 (A): Hai đáy là hai hình tròn bằng nhau song song
+1 (B): Một đáy tròn
+2 (C): Một đỉnh
+3 (D): Hai đáy tam giác
+Original correct answer_index: 0; explanation: Hình trụ có hai đáy tròn bằng nhau song song.
+Original hints: Đếm đáy. | Hai hình tròn.
+
+ID GEO20MICRO_011 | card geo20-core-4 | role trap | original assessed target dien-tich-xung-quanh-hinh-non
+QUESTION: Hình nón bán kính r, đường sinh l. Sxq:
+0 (A): πrl
+1 (B): 2πrh
+2 (C): πr²h
+3 (D): (1/3)πr²h
+Original correct answer_index: 0; explanation: Diện tích xung quanh hình nón là πrl.
+Original hints: Dùng đường sinh l, không phải h. | π×r×l.
+
+ID GEO20MICRO_012 | card geo20-core-4 | role apply | original assessed target the-tich-hinh-tru
+QUESTION: Hình trụ r=3 cm, h=4 cm. Thể tích:
+0 (A): 36π cm³
+1 (B): 12π cm³
+2 (C): 24π cm³
+3 (D): 9π cm³
+Original correct answer_index: 0; explanation: V=πr²h=π·9·4=36π.
+Original hints: Diện tích đáy πr². | Nhân chiều cao.
+
+ID GEO20MICRO_013 | card geo20-core-5 | role base | original assessed target nhan-biet-hinh-cau
+QUESTION: Mọi điểm trên mặt cầu tâm O bán kính R:
+0 (A): Cách O một khoảng R
+1 (B): Cách O không quá R
+2 (C): Nằm trên một đường tròn duy nhất
+3 (D): Cách nhau R
+Original correct answer_index: 0; explanation: Đó là định nghĩa mặt cầu.
+Original hints: Khoảng cách tới tâm cố định. | Bằng bán kính.
+
+ID GEO20MICRO_014 | card geo20-core-5 | role trap | original assessed target dien-tich-mat-cau
+QUESTION: Mặt cầu bán kính r có diện tích:
+0 (A): 4πr²
+1 (B): πr²
+2 (C): 2πr²
+3 (D): (4/3)πr³
+Original correct answer_index: 0; explanation: S=4πr².
+Original hints: Phân biệt diện tích và thể tích. | Diện tích có r².
+
+ID GEO20MICRO_015 | card geo20-core-5 | role apply | original assessed target the-tich-hinh-cau
+QUESTION: Hình cầu bán kính 3 cm có thể tích:
+0 (A): 36π cm³
+1 (B): 12π cm³
+2 (C): 27π cm³
+3 (D): 108π cm³
+Original correct answer_index: 0; explanation: V=(4/3)π·3³=36π.
+Original hints: Dùng 4/3 πr³. | 3³=27.
+
+
+[E] AUTHOR CANDIDATE TEN-CARD GROUPING — MUST REVIEW BEFORE ANY SCHEMA OR UI CHANGE:
+PROPOSED ORDER 1 geo20-core-1 [LEGACY_CARD]: Nhận diện tam giác đều, trục đối xứng và diện tích tứ giác
+Candidate skills: nhan-biet-tam-giac-deu, truc-doi-xung, dien-tich-tu-giac
+Original or proposed question IDs: Original 001–003
+
+PROPOSED ORDER 2 geo20-core-1a [NEW_CARD]: Hình vuông, lục giác đều, quan hệ bao hàm
+Candidate skills: nhan-biet-hinh-vuong, nhan-biet-luc-giac-deu, nhan-biet-tu-giac-dac-biet
+Original or proposed question IDs: Proposed 016–018
+
+PROPOSED ORDER 3 geo20-core-1b [NEW_CARD]: Chu vi, đo lường thực tế và đối xứng tâm
+Candidate skills: chu-vi-tu-giac, do-luong-thuc-te, tam-doi-xung
+Original or proposed question IDs: Proposed 019–021
+
+PROPOSED ORDER 4 geo20-core-2 [LEGACY_CARD]: Hình hộp, diện tích xung quanh hộp và lăng trụ
+Candidate skills: nhan-biet-hinh-hop-lap-phuong, dien-tich-xung-quanh-hop-chu-nhat, dien-tich-xung-quanh-lang-tru
+Original or proposed question IDs: Original 004–006
+
+PROPOSED ORDER 5 geo20-core-2a [NEW_CARD]: Diện tích đáy, thể tích hộp và đổi đơn vị
+Candidate skills: the-tich-hop-chu-nhat, dien-tich-day, doi-don-vi-do-luong
+Original or proposed question IDs: Proposed 022–024
+
+PROPOSED ORDER 6 geo20-core-2b [NEW_CARD]: Lăng trụ đứng: nhận biết và thể tích
+Candidate skills: the-tich-lang-tru, nhan-biet-lang-tru-dung
+Original or proposed question IDs: Proposed 025–026 (TWO only)
+
+PROPOSED ORDER 7 geo20-core-3 [LEGACY_CARD]: Hình chóp đều
+Candidate skills: nhan-biet-hinh-chop-deu, dien-tich-xung-quanh-hinh-chop, the-tich-hinh-chop
+Original or proposed question IDs: Original 007–009
+
+PROPOSED ORDER 8 geo20-core-4 [LEGACY_CARD]: Hình trụ và hình nón – các câu gốc hỗn hợp
+Candidate skills: nhan-biet-hinh-tru, dien-tich-xung-quanh-hinh-non, the-tich-hinh-tru
+Original or proposed question IDs: Original 010–012
+
+PROPOSED ORDER 9 geo20-core-4a [NEW_CARD]: Củng cố diện tích trụ, nhận biết và thể tích nón
+Candidate skills: dien-tich-xung-quanh-hinh-tru, nhan-biet-hinh-non, the-tich-hinh-non
+Original or proposed question IDs: Proposed 027–029
+
+PROPOSED ORDER 10 geo20-core-5 [LEGACY_CARD]: Mặt cầu và hình cầu
+Candidate skills: nhan-biet-hinh-cau, dien-tich-mat-cau, the-tich-hinh-cau
+Original or proposed question IDs: Original 013–015
+
+
+[F] FIVE CANDIDATE SUBCARD TEACHING COPIES:
+NEW CANDIDATE TEACHING COPY geo20-core-1a / source §3.0 + CĐ16 / NOT DEPLOYED
+key_idea: Hình vuông vừa là hình chữ nhật vừa là hình thoi; lục giác đều có sáu cạnh và sáu góc bằng nhau. Nhận diện tứ giác cần phân biệt điều kiện đủ, quan hệ bao hàm và hình chỉ vẽ minh họa.
+worked_example.problem: ABCD đã là hình thoi và có một góc vuông. Phân loại ABCD.
+worked_example.solution: Vì hình thoi là hình bình hành, một góc vuông kéo theo bốn góc vuông; bốn cạnh bằng nhau nên ABCD là hình vuông, cũng là chữ nhật và thoi.
+misconception: Hai đường chéo bằng nhau của tứ giác tùy ý chưa đủ kết luận hình vuông.
+summary: Nhớ tiền đề trước khi áp dụng dấu hiệu.
+source_reference: docs/kien-thuc/20-hinh-hoc-tong-hop/index.md
+review_status: DRAFT_AWAITING_INDEPENDENT_REVIEW
+
+NEW CANDIDATE TEACHING COPY geo20-core-1b / source §3.0, §3.6 / NOT DEPLOYED
+key_idea: Chu vi là tổng độ dài đường biên; phải đổi cùng đơn vị. Tâm đối xứng là điểm để phép quay 180° biến hình thành chính nó, khác trục đối xứng.
+worked_example.problem: Hình thoi cạnh 5 cm. Tính chu vi và xác định tâm đối xứng.
+worked_example.solution: P=4×5=20 cm; giao điểm hai đường chéo là tâm đối xứng của hình thoi.
+misconception: Nhầm chu vi với nửa chu vi; xem một đỉnh là tâm đối xứng.
+summary: Đơn vị dài cho chu vi; kiểm tra đối xứng tâm bằng quay 180°.
+source_reference: docs/kien-thuc/20-hinh-hoc-tong-hop/index.md
+review_status: DRAFT_AWAITING_INDEPENDENT_REVIEW
+
+NEW CANDIDATE TEACHING COPY geo20-core-2a / source §3.6, Hộp chữ nhật/đơn vị / NOT DEPLOYED
+key_idea: S_đáy=a×b; V=a×b×h. Đổi mọi kích thước về cùng đơn vị dài trước phép nhân; phân biệt đơn vị diện tích và thể tích.
+worked_example.problem: Hộp chữ nhật đáy 40 cm × 0,5 m, cao 30 cm. Tính đáy theo m² và dung tích theo lít.
+worked_example.solution: 40 cm=0,4 m, 30 cm=0,3 m; S_đáy=0,4×0,5=0,2 m²; V=0,2×0,3=0,06 m³=60 lít.
+misconception: Dùng hệ số đổi chiều dài cho diện tích/thể tích; bỏ đổi đơn vị.
+summary: Đổi dài trước, rồi ghi m²/m³/lít đúng chỗ.
+source_reference: docs/kien-thuc/20-hinh-hoc-tong-hop/index.md
+review_status: DRAFT_AWAITING_INDEPENDENT_REVIEW
+
+NEW CANDIDATE TEACHING COPY geo20-core-2b / source §3.6, Lăng trụ đứng / NOT DEPLOYED
+key_idea: Lăng trụ đứng có các cạnh bên vuông góc đáy; hai đáy song song bằng nhau. V=S_đáy×h, h là khoảng cách vuông góc giữa hai mặt đáy.
+worked_example.problem: Lăng trụ đứng đáy tam giác vuông có hai cạnh góc vuông 3 cm và 4 cm, cao 10 cm. Tính thể tích.
+worked_example.solution: S_đáy=3×4/2=6 cm²; V=6×10=60 cm³. Không lấy chu vi đáy để tính thể tích.
+misconception: Nhầm chu vi đáy × cao với thể tích.
+summary: Diện tích đáy × chiều cao vuông góc.
+source_reference: docs/kien-thuc/20-hinh-hoc-tong-hop/index.md
+review_status: DRAFT_AWAITING_INDEPENDENT_REVIEW
+
+NEW CANDIDATE TEACHING COPY geo20-core-4a / source §3.6, Trụ/Nón / NOT DEPLOYED
+key_idea: Trụ tròn xoay S_xq=2πrh; nón tròn xoay có một đáy tròn, một đỉnh, S_xq=πrl với l là đường sinh và V=πr²h/3 với h là chiều cao vuông góc.
+worked_example.problem: Nón tròn xoay r=3 cm, h=4 cm, đường sinh l=5 cm. Tính S_xq và V.
+worked_example.solution: S_xq=π·3·5=15π cm²; V=π·9·4/3=12π cm³.
+misconception: Thay l vào công thức V; dùng công thức S_xq của trụ cho nón.
+summary: Nón: S_xq dùng đường sinh; V dùng đường cao.
+source_reference: docs/kien-thuc/20-hinh-hoc-tong-hop/index.md
+review_status: DRAFT_AWAITING_INDEPENDENT_REVIEW
+
+
+[G] FOURTEEN PROPOSED QUESTION CANDIDATES (NEW GEO20MICRO_016–029 ONLY; original 001–015 unchanged):
+GEO20MICRO_016 / NEW CANDIDATE ONLY / card geo20-core-1a / target nhan-biet-hinh-vuong
+QUESTION: Tứ giác có bốn cạnh bằng nhau và một góc vuông là:
+0 (A): Hình vuông
+1 (B): Hình thoi không có góc vuông
+2 (C): Hình chữ nhật có hai cạnh kề khác nhau
+3 (D): Hình bình hành có hai cạnh kề khác nhau
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: Bốn cạnh bằng nhau và góc vuông đủ để kết luận hình vuông.
+NOT IN SOURCE BANK
+
+GEO20MICRO_017 / NEW CANDIDATE ONLY / card geo20-core-1a / target nhan-biet-luc-giac-deu
+QUESTION: Điều kiện nào mô tả đúng một lục giác đều?
+0 (A): Sáu cạnh bằng nhau và sáu góc bằng nhau
+1 (B): Chỉ cần sáu cạnh bằng nhau
+2 (C): Chỉ cần sáu góc bằng nhau
+3 (D): Chỉ cần có ba đường chéo
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: Đa giác đều cần đồng thời đều cạnh, đều góc.
+NOT IN SOURCE BANK
+
+GEO20MICRO_018 / NEW CANDIDATE ONLY / card geo20-core-1a / target nhan-biet-tu-giac-dac-biet
+QUESTION: Mọi hình vuông luôn thuộc đồng thời hai loại nào?
+0 (A): Hình chữ nhật và hình thoi
+1 (B): Hình thoi nhưng không là hình chữ nhật
+2 (C): Hình chữ nhật nhưng không là hình thoi
+3 (D): Hình bình hành nhưng không là hình chữ nhật
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: Hình vuông có bốn góc vuông và bốn cạnh bằng nhau.
+NOT IN SOURCE BANK
+
+GEO20MICRO_019 / NEW CANDIDATE ONLY / card geo20-core-1b / target chu-vi-tu-giac
+QUESTION: Tứ giác có bốn cạnh lần lượt 3 cm, 5 cm, 4 cm, 6 cm. Chu vi bằng:
+0 (A): 18 cm
+1 (B): 15 cm
+2 (C): 22 cm
+3 (D): 90 cm
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: 3+5+4+6=18 cm.
+NOT IN SOURCE BANK
+
+GEO20MICRO_020 / NEW CANDIDATE ONLY / card geo20-core-1b / target do-luong-thuc-te
+QUESTION: Một nền hình chữ nhật dài 2,5 m, rộng 120 cm. Diện tích nền là:
+0 (A): 3 m²
+1 (B): 300 m²
+2 (C): 0,3 m²
+3 (D): 3 m
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: 120 cm=1,2 m, diện tích =2,5×1,2=3 m².
+NOT IN SOURCE BANK
+
+GEO20MICRO_021 / NEW CANDIDATE ONLY / card geo20-core-1b / target tam-doi-xung
+QUESTION: Tâm đối xứng của một lục giác đều là:
+0 (A): Tâm của lục giác đều
+1 (B): Trung điểm một cạnh bất kỳ
+2 (C): Một đỉnh bất kỳ
+3 (D): Lục giác đều không có tâm đối xứng
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: Phép quay 180° quanh tâm biến hình thành chính nó.
+NOT IN SOURCE BANK
+
+GEO20MICRO_022 / NEW CANDIDATE ONLY / card geo20-core-2a / target the-tich-hop-chu-nhat
+QUESTION: Hình hộp chữ nhật dài 4 cm, rộng 3 cm, cao 2 cm. Thể tích là:
+0 (A): 24 cm³
+1 (B): 24 cm²
+2 (C): 12 cm³
+3 (D): 9 cm³
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: V=4×3×2=24 cm³.
+NOT IN SOURCE BANK
+
+GEO20MICRO_023 / NEW CANDIDATE ONLY / card geo20-core-2a / target dien-tich-day
+QUESTION: Hình hộp chữ nhật có đáy 6 cm × 4 cm, cao 3 cm. Diện tích một đáy là:
+0 (A): 24 cm²
+1 (B): 72 cm³
+2 (C): 24 cm³
+3 (D): 20 cm²
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: S_đáy=6×4=24 cm².
+NOT IN SOURCE BANK
+
+GEO20MICRO_024 / NEW CANDIDATE ONLY / card geo20-core-2a / target doi-don-vi-do-luong
+QUESTION: Đổi 2,5 m³ ra lít được:
+0 (A): 2500 lít
+1 (B): 250 lít
+2 (C): 25000 lít
+3 (D): 2,5 lít
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: 1 m³=1000 lít ⇒ 2,5 m³=2500 lít.
+NOT IN SOURCE BANK
+
+GEO20MICRO_025 / NEW CANDIDATE ONLY / card geo20-core-2b / target the-tich-lang-tru
+QUESTION: Lăng trụ đứng diện tích đáy 9 cm², cao 7 cm. Thể tích là:
+0 (A): 63 cm³
+1 (B): 63 cm²
+2 (C): 16 cm³
+3 (D): 126 cm³
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: V=S_đáy×h=9×7=63 cm³.
+NOT IN SOURCE BANK
+
+GEO20MICRO_026 / NEW CANDIDATE ONLY / card geo20-core-2b / target nhan-biet-lang-tru-dung
+QUESTION: Phát biểu đúng về cạnh bên lăng trụ đứng là:
+0 (A): Vuông góc mặt phẳng đáy
+1 (B): Luôn nằm trong mặt phẳng đáy
+2 (C): Luôn dài bằng chu vi đáy
+3 (D): Hai đáy là hai hình tròn
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: Cạnh bên của lăng trụ đứng vuông góc với hai mặt đáy.
+NOT IN SOURCE BANK
+
+GEO20MICRO_027 / NEW CANDIDATE ONLY / card geo20-core-4a / target dien-tich-xung-quanh-hinh-tru
+QUESTION: Hình trụ tròn xoay có r=3 cm, h=5 cm. Diện tích xung quanh là:
+0 (A): 30π cm²
+1 (B): 15π cm²
+2 (C): 45π cm²
+3 (D): 30π cm³
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: S_xq=2πrh=2π·3·5=30π cm².
+NOT IN SOURCE BANK
+
+GEO20MICRO_028 / NEW CANDIDATE ONLY / card geo20-core-4a / target nhan-biet-hinh-non
+QUESTION: Hình nón tròn xoay có cấu tạo nào?
+0 (A): Một đáy hình tròn và một đỉnh
+1 (B): Hai đáy tròn song song bằng nhau
+2 (C): Hai đáy là tam giác bằng nhau
+3 (D): Sáu mặt vuông bằng nhau
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: Nón có một đáy tròn và một đỉnh, khác trụ có hai đáy.
+NOT IN SOURCE BANK
+
+GEO20MICRO_029 / NEW CANDIDATE ONLY / card geo20-core-4a / target the-tich-hinh-non
+QUESTION: Hình nón tròn xoay r=3 cm, h=8 cm. Thể tích là:
+0 (A): 24π cm³
+1 (B): 72π cm³
+2 (C): 24π cm²
+3 (D): 12π cm³
+PROPOSED ANSWER INDEX: 0
+EXPLANATION: V=πr²h/3=π·9·8/3=24π cm³.
+NOT IN SOURCE BANK
+
+
+[H] SAFETY AND ACADEMIC REVIEW: Original five card IDs and all 15 question.card_id/target/answer/explanations/history stay unchanged. The 10-card proposed display/coverage plan is NOT a direct workspace replacement. Moving declared skills off an old card may retroactively change progress denominator; require versioned evidence/alias/legacy snapshot and separately verified non-migrating rules. The original Core4 has mixed original cylinder/cone questions; keep IDs and mappings. Two-item proposed Core2b is allowed under flexible count; no 26th topic, no grade-6 gate for multi-step Entrance10 synthetic proof. Independent reviewer must check 29 distinct target partition, stage appropriateness, geometry assumptions, all 14 option sets, and dimension correctness. SVGs require rendered QA separately.

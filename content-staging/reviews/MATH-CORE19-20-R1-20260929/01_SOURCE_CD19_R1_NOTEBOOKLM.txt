@@ -1,0 +1,422 @@
+NOTEBOOKLM R1 — CĐ19 / MATH-CORE19-20-R1-20260929
+Status: REVIEW-ONLY / PROPOSAL_ONLY. Locked main 8a13c6c2f076fe360ada6bbaf51d09997e538a4c.
+Original lesson docs/kien-thuc/19-duong-tron/index.md blob 75c9baa052c1ef91bee54e65edcb3dee513007d2.
+Original workspace docs/assets/data/curriculum/topic19-learning-workspace.json blob 240e6622a22a98105555f6924006f10b3c400cdb.
+Original 15-item bank docs/assets/data/practice/19-duong-tron-micro-v1.json blob 91e61257efa72ef0691eb5db1af42c7b2cd287ff.
+Separate ORIGINAL SOURCE and NEW AUTHOR CANDIDATES. Do not treat a candidate as existing content or a prior PASS.
+
+[A] VERBATIM ORIGINAL LESSON §3:
+## 📖 3. Kiến thức cốt lõi
+
+### 3.0. KNTT Core bổ sung: cung, vị trí tương đối và đo lường đường tròn
+
+- **Cung và dây:** trong cùng một đường tròn, hai dây bằng nhau chắn hai cung nhỏ bằng nhau và ngược lại.
+- **Độ dài cung:** \(l=\frac{n}{360}\cdot2\pi R\).
+- **Diện tích quạt tròn:** \(S=\frac{n}{360}\pi R^2\).
+- **Vành khuyên:** \(S=\pi(R^2-r^2)\), với \(R>r\).
+- **Đường thẳng và đường tròn:** so sánh khoảng cách từ tâm đến đường thẳng với bán kính \(R\): nhỏ hơn → 2 giao điểm; bằng → tiếp tuyến; lớn hơn → không giao.
+- **Hai đường tròn:** so sánh khoảng cách hai tâm \(d\) với \(R+r\) và \(|R-r|\) để xác định cắt nhau, tiếp xúc hoặc không giao.
+- **Ngoại tiếp tam giác:** tâm là giao các đường trung trực. **Nội tiếp tam giác:** tâm là giao các đường phân giác.
+- **Đa giác đều:** có các cạnh bằng nhau và các góc bằng nhau.
+
+### 3.1. Góc ở tâm và góc nội tiếp
+
+Nếu `∠AOB` là góc ở tâm và `∠ACB` là góc nội tiếp cùng chắn cung `AB`, thì:
+
+`∠ACB = 1/2 ∠AOB`
+
+Hệ quả rất quan trọng:
+
+> Góc nội tiếp chắn nửa đường tròn bằng `90°`.
+
+### 3.2. Quan hệ giữa dây và tâm
+
+Trong một đường tròn:
+
+- hai dây bằng nhau thì cách tâm bằng nhau;
+- hai dây cách tâm bằng nhau thì bằng nhau;
+- đường kính vuông góc với một dây thì đi qua trung điểm của dây đó;
+- đường kính đi qua trung điểm của một dây không đi qua tâm thì vuông góc với dây đó.
+
+### 3.3. Tiếp tuyến
+
+Nếu `d` là tiếp tuyến tại `A` của đường tròn tâm `O` thì:
+
+`OA ⟂ d`
+
+Dấu hiệu nhận biết:
+
+> Một đường thẳng đi qua điểm `A` thuộc đường tròn và vuông góc với bán kính `OA` thì là tiếp tuyến tại `A`.
+
+Nếu từ điểm `P` ngoài đường tròn kẻ hai tiếp tuyến `PA`, `PB` tại `A`, `B`, thì:
+
+`PA = PB`
+
+Ngoài ra, `OP` là đường trung trực của `AB` và là phân giác của `∠APB`. Đây là các tính chất rất hữu ích khi khai thác cấu hình hai tiếp tuyến.
+
+### 3.3A. Góc tạo bởi tiếp tuyến và dây cung
+
+Góc tạo bởi tiếp tuyến tại `A` và dây `AB` có số đo bằng **một nửa số đo cung bị chắn `AB`**. Vì vậy nó bằng góc nội tiếp cùng chắn cung `AB`.
+
+Đây là cầu nối rất quan trọng:
+
+`tiếp tuyến + dây cung → góc bằng góc nội tiếp → đồng dạng / nội tiếp`
+
+> Khi áp dụng phải xác định đúng cung nằm trong góc đang xét; không chỉ nhìn hai đầu mút của dây rồi chọn tùy ý cung lớn hay cung nhỏ.
+
+### Infographic – Tiếp tuyến
+
+![Infographic tiếp tuyến Chuyên đề 19](../../assets/infographics/19/19-03-tiep-tuyen.svg)
+
+### 3.4. Tứ giác nội tiếp
+
+Một tứ giác nội tiếp là tứ giác có bốn đỉnh cùng thuộc một đường tròn.
+
+Tính chất quan trọng:
+
+`∠A + ∠C = 180°`
+
+`∠B + ∠D = 180°`
+
+Một số dấu hiệu thường dùng để chứng minh tứ giác nội tiếp:
+
+- tổng hai góc đối bằng `180°`;
+- nếu hai điểm `C`, `D` nằm cùng phía đối với đường thẳng `AB` và `∠ACB = ∠ADB`, thì bốn điểm `A, B, C, D` cùng thuộc một đường tròn;
+- nếu `∠AMB = ∠ANB = 90°` thì `A, M, B, N` cùng thuộc đường tròn có đường kính `AB`.
+
+### Infographic – Góc, cung và tứ giác nội tiếp
+
+![Infographic góc, cung và tứ giác nội tiếp Chuyên đề 19](../../assets/infographics/19/19-02-goc-cung-noi-tiep.svg)
+
+### 3.5. Hai dây cắt nhau
+
+Nếu hai dây `AB`, `CD` cắt nhau tại `I` bên trong đường tròn:
+
+`IA × IB = IC × ID`
+
+### 3.6. Tiếp tuyến – cát tuyến
+
+Từ điểm `P` ngoài đường tròn, tiếp tuyến `PT` và cát tuyến `PAB` cho:
+
+`PT² = PA × PB`
+
+### 3.6A. Độ dài cung, diện tích hình quạt và hình vành khuyên
+
+Với đường tròn bán kính `R`, cung có số đo `n°`:
+
+`l = n/360 · 2πR = nπR/180`
+
+Diện tích hình quạt tương ứng:
+
+`S_quạt = n/360 · πR²`
+
+Nếu biết độ dài cung `l` thì cũng có:
+
+`S_quạt = lR/2`
+
+Với hình vành khuyên tạo bởi hai đường tròn đồng tâm bán kính `R > r`:
+
+`S_vành = π(R² - r²)`
+
+> Cả độ dài cung và diện tích hình quạt đều tỉ lệ với số đo cung `n°`; đây là cách kiểm tra nhanh tính hợp lý của kết quả.
+
+### 3.7. Bảng chọn công cụ
+
+| Dấu hiệu | Nên nghĩ tới |
+|---|---|
+| Góc có đỉnh trên đường tròn | Góc nội tiếp |
+| Góc có đỉnh tại tâm | Góc ở tâm |
+| Cần chứng minh tiếp tuyến | Bán kính vuông góc |
+| Hai tiếp tuyến từ một điểm | Hai đoạn tiếp tuyến bằng nhau |
+| Bốn điểm cần chứng minh cùng thuộc một đường tròn | Tứ giác nội tiếp |
+| Hai dây cắt nhau | Tích các đoạn dây |
+| Tiếp tuyến + cát tuyến | `PT² = PA × PB` |
+
+---
+
+
+
+[B] VERBATIM ORIGINAL LESSON §5:
+## 🧩 5. Các dạng bài cần nắm vững
+
+### Infographic – Hệ thức độ dài và lỗi sai
+
+![Infographic hệ thức độ dài và lỗi sai Chuyên đề 19](../../assets/infographics/19/19-04-he-thuc-do-dai-loi-sai.svg)
+
+### Dạng 1. Tính góc trong đường tròn
+
+Dùng quan hệ góc ở tâm – góc nội tiếp và các góc cùng chắn một cung.
+
+### Dạng 2. Chứng minh tiếp tuyến
+
+Chứng minh bán kính vuông góc với đường thẳng tại điểm thuộc đường tròn.
+
+### Dạng 3. Hai tiếp tuyến từ một điểm ngoài
+
+Dùng `PA = PB` và khai thác tam giác cân hoặc đối xứng.
+
+### Dạng 4. Chứng minh tứ giác nội tiếp
+
+Ưu tiên các dấu hiệu:
+- tổng hai góc đối bằng `180°`;
+- hai góc bằng nhau cùng nhìn một đoạn thẳng, với hai đỉnh góc nằm cùng phía đối với đường thẳng chứa đoạn đó;
+- hai góc vuông cùng nhìn một đoạn thẳng, từ đó nhận ra đường tròn có đường kính là đoạn ấy.
+
+### Dạng 5. Tính độ dài bằng hai dây cắt nhau
+
+Dùng:
+
+`IA × IB = IC × ID`
+
+### Dạng 6. Tính độ dài bằng tiếp tuyến – cát tuyến
+
+Dùng:
+
+`PT² = PA × PB`
+
+### Dạng 7. Độ dài cung, diện tích quạt tròn và vành khuyên
+
+Xác định đúng bán kính và số đo cung trước khi dùng `l = nπR/180`, `S_quạt = nπR²/360`; với vành khuyên dùng hiệu diện tích hai hình tròn đồng tâm.
+
+### Dạng 8. Bài tổng hợp đường tròn
+
+Kết hợp tiếp tuyến, nội tiếp, đồng dạng, hệ thức tích, lượng giác và đo lường đường tròn.
+
+---
+
+
+
+[C] ORIGINAL WORKSPACE CARDS (fields transcribed from original bank/workspace):
+ID geo19-core-1; title: Dây, cung và độ dài đường tròn; original skills: day-va-tam, cung-va-day, do-dai-duong-tron, do-dai-cung; original question IDs: GEO19MICRO_001, GEO19MICRO_002, GEO19MICRO_003; prerequisites: goc-o-tam.
+ID geo19-core-2; title: Vị trí tương đối; original skills: vi-tri-tuong-doi-duong-thang-duong-tron, vi-tri-tuong-doi-hai-duong-tron; original question IDs: GEO19MICRO_004, GEO19MICRO_005, GEO19MICRO_006; prerequisites: khoang-cach-diem-duong-thang.
+ID geo19-core-3; title: Góc nội tiếp; original skills: goc-noi-tiep; original question IDs: GEO19MICRO_007, GEO19MICRO_008, GEO19MICRO_009; prerequisites: do-goc.
+ID geo19-core-4; title: Nội tiếp và ngoại tiếp tam giác; original skills: tu-giac-noi-tiep, dau-hieu-noi-tiep, duong-tron-ngoai-tiep-tam-giac, duong-tron-noi-tiep-tam-giac; original question IDs: GEO19MICRO_010, GEO19MICRO_011, GEO19MICRO_012; prerequisites: tam-ngoai-tiep, tam-noi-tiep.
+ID geo19-core-5; title: Đa giác đều, quạt tròn và vành khuyên; original skills: da-giac-deu, dien-tich-quat-tron, dien-tich-vanh-khuyen; original question IDs: GEO19MICRO_013, GEO19MICRO_014, GEO19MICRO_015; prerequisites: do-dai-duong-tron.
+
+[D] ALL 15 ORIGINAL MICRO QUESTIONS (verbatim question/options/explanation):
+ID GEO19MICRO_001; original card geo19-core-1; base; assessed target day-va-tam
+QUESTION: Trong một đường tròn, đường kính vuông góc với một dây thì:
+0 (A): Đi qua trung điểm của dây
+1 (B): Song song với dây
+2 (C): Dài bằng dây
+3 (D): Không cắt dây
+Original correct index: 0
+Original explanation: Đường kính vuông góc với dây sẽ đi qua trung điểm dây.
+Original hints: Nhớ quan hệ tâm–dây. | Vuông góc từ tâm chia đôi dây.
+
+ID GEO19MICRO_002; original card geo19-core-1; trap; assessed target cung-va-day
+QUESTION: Trong cùng một đường tròn, hai dây bằng nhau thì:
+0 (A): Hai cung nhỏ tương ứng bằng nhau
+1 (B): Hai cung nhỏ luôn bù nhau
+2 (C): Một dây phải là đường kính
+3 (D): Khoảng cách đến tâm khác nhau
+Original correct index: 0
+Original explanation: Dây bằng nhau chắn các cung bằng nhau.
+Original hints: So sánh trong cùng một đường tròn. | Dây bằng ↔ cung bằng.
+
+ID GEO19MICRO_003; original card geo19-core-1; apply; assessed target do-dai-cung
+QUESTION: Đường tròn bán kính 6 cm, cung 60°. Độ dài cung là:
+0 (A): 2π cm
+1 (B): 6π cm
+2 (C): 12π cm
+3 (D): π/3 cm
+Original correct index: 0
+Original explanation: l=(60/360)·2π·6=2π.
+Original hints: Lấy phần 60/360 của chu vi. | Chu vi là 12π.
+
+ID GEO19MICRO_004; original card geo19-core-2; base; assessed target vi-tri-tuong-doi-duong-thang-duong-tron
+QUESTION: Đường thẳng d cách tâm O một khoảng đúng bằng bán kính R thì d:
+0 (A): Tiếp xúc đường tròn
+1 (B): Cắt đường tròn tại hai điểm
+2 (C): Không có điểm chung
+3 (D): Đi qua tâm
+Original correct index: 0
+Original explanation: Khoảng cách từ tâm đến đường thẳng bằng R thì đường thẳng là tiếp tuyến.
+Original hints: So sánh d(O,d) với R. | Bằng R → tiếp xúc.
+
+ID GEO19MICRO_005; original card geo19-core-2; trap; assessed target vi-tri-tuong-doi-hai-duong-tron
+QUESTION: Hai đường tròn bán kính R,r có khoảng cách hai tâm d=R+r thì:
+0 (A): Tiếp xúc ngoài
+1 (B): Cắt nhau tại hai điểm
+2 (C): Tiếp xúc trong
+3 (D): Không có điểm chung
+Original correct index: 0
+Original explanation: d=R+r là điều kiện tiếp xúc ngoài.
+Original hints: So sánh d với R+r. | Bằng tổng bán kính.
+
+ID GEO19MICRO_006; original card geo19-core-2; apply; assessed target vi-tri-tuong-doi-hai-duong-tron
+QUESTION: Hai đường tròn có R=5, r=2, d=2. Kết luận:
+0 (A): Không giao nhau; một đường nằm trong đường kia
+1 (B): Tiếp xúc trong
+2 (C): Cắt nhau hai điểm
+3 (D): Tiếp xúc ngoài
+Original correct index: 0
+Original explanation: d<|R-r|=3 nên một đường tròn nằm trong đường kia và không giao.
+Original hints: Tính |R-r|. | So sánh d với hiệu bán kính.
+
+ID GEO19MICRO_007; original card geo19-core-3; base; assessed target goc-noi-tiep
+QUESTION: Góc nội tiếp chắn cung 100° có số đo:
+0 (A): 50°
+1 (B): 100°
+2 (C): 200°
+3 (D): 25°
+Original correct index: 0
+Original explanation: Góc nội tiếp bằng nửa số đo cung bị chắn.
+Original hints: Lấy một nửa cung. | 100°/2.
+
+ID GEO19MICRO_008; original card geo19-core-3; trap; assessed target goc-noi-tiep
+QUESTION: Góc nội tiếp chắn nửa đường tròn bằng:
+0 (A): 90°
+1 (B): 180°
+2 (C): 45°
+3 (D): 60°
+Original correct index: 0
+Original explanation: Nửa đường tròn là cung 180°, góc nội tiếp bằng 90°.
+Original hints: Cung bị chắn 180°. | Lấy một nửa.
+
+ID GEO19MICRO_009; original card geo19-core-3; apply; assessed target goc-noi-tiep
+QUESTION: Hai góc nội tiếp cùng chắn một cung thì:
+0 (A): Bằng nhau
+1 (B): Bù nhau
+2 (C): Phụ nhau
+3 (D): Không liên hệ
+Original correct index: 0
+Original explanation: Cùng bằng nửa số đo của cùng một cung.
+Original hints: Cùng một cung. | Cùng một nửa số đo cung.
+
+ID GEO19MICRO_010; original card geo19-core-4; base; assessed target tu-giac-noi-tiep
+QUESTION: Trong tứ giác nội tiếp, tổng hai góc đối bằng:
+0 (A): 180°
+1 (B): 90°
+2 (C): 360°
+3 (D): 120°
+Original correct index: 0
+Original explanation: Tính chất tứ giác nội tiếp.
+Original hints: Chọn hai góc đối. | Tổng bằng 180°.
+
+ID GEO19MICRO_011; original card geo19-core-4; trap; assessed target duong-tron-ngoai-tiep-tam-giac
+QUESTION: Tâm đường tròn ngoại tiếp tam giác là giao điểm của:
+0 (A): Ba đường trung trực
+1 (B): Ba đường phân giác
+2 (C): Ba trung tuyến
+3 (D): Ba đường cao
+Original correct index: 0
+Original explanation: Tâm ngoại tiếp là giao của các đường trung trực.
+Original hints: Ngoại tiếp cần cách đều ba đỉnh. | Điểm cách đều hai đỉnh nằm trên trung trực.
+
+ID GEO19MICRO_012; original card geo19-core-4; apply; assessed target duong-tron-noi-tiep-tam-giac
+QUESTION: Tâm đường tròn nội tiếp tam giác là giao điểm của:
+0 (A): Ba đường phân giác
+1 (B): Ba đường trung trực
+2 (C): Ba trung tuyến
+3 (D): Ba đường cao
+Original correct index: 0
+Original explanation: Tâm nội tiếp là giao của các đường phân giác.
+Original hints: Nội tiếp cần cách đều ba cạnh. | Điểm trên phân giác cách đều hai cạnh.
+
+ID GEO19MICRO_013; original card geo19-core-5; base; assessed target da-giac-deu
+QUESTION: Đa giác đều là đa giác có:
+0 (A): Các cạnh bằng nhau và các góc bằng nhau
+1 (B): Chỉ các cạnh bằng nhau
+2 (C): Chỉ các góc bằng nhau
+3 (D): Một đường chéo là đường kính
+Original correct index: 0
+Original explanation: Định nghĩa đa giác đều cần đồng thời đều cạnh và đều góc.
+Original hints: Cần hai điều kiện. | Cạnh và góc.
+
+ID GEO19MICRO_014; original card geo19-core-5; trap; assessed target dien-tich-quat-tron
+QUESTION: Quạt tròn bán kính 6 cm, góc ở tâm 90°. Diện tích là:
+0 (A): 9π cm²
+1 (B): 18π cm²
+2 (C): 36π cm²
+3 (D): 6π cm²
+Original correct index: 0
+Original explanation: S=(90/360)π·6²=9π.
+Original hints: Lấy 1/4 diện tích hình tròn. | πr²=36π.
+
+ID GEO19MICRO_015; original card geo19-core-5; apply; assessed target dien-tich-vanh-khuyen
+QUESTION: Vành khuyên có bán kính ngoài 5 cm, trong 3 cm. Diện tích:
+0 (A): 16π cm²
+1 (B): 8π cm²
+2 (C): 34π cm²
+3 (D): 25π cm²
+Original correct index: 0
+Original explanation: S=π(5²-3²)=16π.
+Original hints: Lấy diện tích hình tròn lớn trừ nhỏ. | 25-9=16.
+
+
+[E] FIVE NEW TEACHING-COPY CANDIDATES, REQUIRE R1 INDEPENDENT REVIEW:
+CARD geo19-core-1 — NEW CANDIDATE, NOT DEPLOYED
+source_sections: §3.0/3.2/3.6A
+key_idea: Dây vuông góc với đường thẳng qua tâm có trung điểm trên đường đó; hai dây bằng nhau chắn các cung nhỏ bằng nhau trong cùng đường tròn; chu vi C=2πR và l_cung=(n/360)2πR.
+worked_example.problem: Trong (O;5 cm), dây AB không là đường kính, OM⊥AB tại M, OM=3 cm. Tính AB và chu vi.
+worked_example.solution: MA=√(25−9)=4 cm do tam giác OMA vuông; M là trung điểm AB nên AB=8 cm; C=10π cm.
+misconception: Áp dụng định lí đảo cho dây là đường kính; dùng πR thay vì 2πR.
+summary: Dây–tâm cần giả thiết; chu vi dùng bán kính.
+source_reference: docs/kien-thuc/19-duong-tron/index.md
+review_status: DRAFT_AWAITING_INDEPENDENT_REVIEW
+
+CARD geo19-core-2 — NEW CANDIDATE, NOT DEPLOYED
+source_sections: §3.0/3.3
+key_idea: So khoảng cách tâm–đường thẳng với R; hai đường tròn so d với R+r và |R−r|. R=r,d=0 là trùng nhau chứ không là tiếp xúc trong.
+worked_example.problem: Cho (O;5 cm), đường thẳng a cách O 3 cm và đường tròn thứ hai bán kính 3 cm cách O 4 cm. Tìm vị trí.
+worked_example.solution: a cắt (O) tại hai điểm vì 3<5. Hai đường tròn cắt nhau tại hai điểm vì |5−3|=2<4<8=5+3.
+misconception: Nhầm tiếp xúc ngoài với cắt hai điểm; bỏ sót trường hợp trùng nhau.
+summary: So sánh các khoảng cách theo đúng ranh giới.
+source_reference: docs/kien-thuc/19-duong-tron/index.md
+review_status: DRAFT_AWAITING_INDEPENDENT_REVIEW
+
+CARD geo19-core-3 — NEW CANDIDATE, NOT DEPLOYED
+source_sections: §3.1/3.3A
+key_idea: Góc nội tiếp bằng nửa cung bị chắn KHÔNG chứa đỉnh góc. Cung nhỏ/lớn cần chỉ rõ; góc chắn nửa đường tròn là 90°.
+worked_example.problem: Cung nhỏ AB=110°, C trên cung lớn AB (C≠A,B). Tính ∠ACB.
+worked_example.solution: ∠ACB chắn cung nhỏ AB, nên bằng 110°/2=55°.
+misconception: Lấy cung có đỉnh C, hoặc lấy bằng luôn góc ở tâm.
+summary: Chọn đúng cung bị chắn trước khi tính.
+source_reference: docs/kien-thuc/19-duong-tron/index.md
+review_status: DRAFT_AWAITING_INDEPENDENT_REVIEW
+
+CARD geo19-core-4 — NEW CANDIDATE, NOT DEPLOYED
+source_sections: §3.0/3.4
+key_idea: Tứ giác lồi có một cặp góc đối tổng 180° thì nội tiếp được đường tròn. Ngoại tiếp tam giác: giao trung trực và cách đều ba đỉnh; nội tiếp: giao phân giác và cách đều ba cạnh.
+worked_example.problem: Tứ giác lồi ABCD có ∠BAD=68°, ∠BCD=112°. Kết luận tính nội tiếp.
+worked_example.solution: Hai góc A và C đối nhau, 68°+112°=180°. Theo dấu hiệu đảo, bốn đỉnh cùng thuộc một đường tròn.
+misconception: Nhầm tính chất với đảo, nhầm tâm nội tiếp/ngoại tiếp.
+summary: Kết luận chỉ từ cặp góc đối và vị trí hợp lệ.
+source_reference: docs/kien-thuc/19-duong-tron/index.md
+review_status: DRAFT_AWAITING_INDEPENDENT_REVIEW
+
+CARD geo19-core-5 — NEW CANDIDATE, NOT DEPLOYED
+source_sections: §3.0/3.6A
+key_idea: Đa giác đều phải đều cạnh lẫn góc. Cung l=(n/360)2πR; quạt S=(n/360)πR²; vành khuyên đồng tâm S=π(R²−r²), R>r.
+worked_example.problem: R=6 cm; quạt góc 120°; vành khuyên đồng tâm bán kính ngoài 6 cm, trong 4 cm. Tính ba đại lượng.
+worked_example.solution: l=4π cm; S_quạt=12π cm²; S_vành=π(36−16)=20π cm².
+misconception: Nhầm bán kính/đường kính, chu vi/diện tích, vành/quạt.
+summary: Tách rõ độ dài và diện tích.
+source_reference: docs/kien-thuc/19-duong-tron/index.md
+review_status: DRAFT_AWAITING_INDEPENDENT_REVIEW
+
+
+[F] TWO NEW QUESTION CANDIDATES, ORIGINAL 15 IDs UNCHANGED:
+GEO19MICRO_16 / proposed card=geo19-core-1 / target=do-dai-duong-tron
+Một đường tròn có bán kính 7 cm. Độ dài đường tròn là:
+0 (A): 14π cm
+1 (B): 7π cm
+2 (C): 49π cm
+3 (D): 28π cm
+ANSWER_INDEX=0
+EXPLANATION: C=2πR=2π·7=14π cm; 49π là diện tích, không là chu vi.
+NOT APPROVED/NOT PRESENT IN BANK
+
+GEO19MICRO_17 / proposed card=geo19-core-4 / target=dau-hieu-noi-tiep
+ABCD là tứ giác lồi không suy biến với bốn đỉnh phân biệt. Biết ∠ABC=110° và ∠ADC=70°. Kết luận nào đúng?
+0 (A): ABCD nội tiếp được một đường tròn
+1 (B): ABCD bắt buộc là hình chữ nhật
+2 (C): ABCD bắt buộc là hình thoi
+3 (D): ABCD không thể nội tiếp một đường tròn
+ANSWER_INDEX=0
+EXPLANATION: B,D là hai góc đối, tổng 180°, đủ điều kiện nội tiếp cho tứ giác lồi.
+NOT APPROVED/NOT PRESENT IN BANK
+
+
+[G] REVIEW WARNINGS: non-diameter condition for chord-midpoint converse; exact intercepted arc; equal-radius d=0 concentric coincidence; cyclic opposite-angle/convexity; circumcenter vs incenter; theorem premises and unit dimensions. Rendered SVG/image checks separate. No additional credit, no question/tag/history/runtime changes.
