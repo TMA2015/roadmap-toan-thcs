@@ -1,6 +1,6 @@
-"""Reproduce B1 R2 current save-failure paths in disposable Chromium profiles.
+"""Verify B1 R2 saved/unsaved feedback in disposable Chromium profiles.
 
-BASELINE mode intentionally asserts present defects rather than claiming safe UX.
+FIX mode asserts persisted-data safety and feedback despite storage exceptions.
 Never loads real learner data; run against a locally built static site only.
 """
 import json
@@ -51,14 +51,19 @@ def check_practice(browser, denied):
         feedback = page.locator("[data-practice-bank-v2] .practice-feedback")
         if denied:
             assert raw_after == original, "Denied storage write unexpectedly mutated Practice key"
-            assert errors and any("B1 R2 synthetic storage denial" in error for error in errors), errors
-            assert feedback.is_hidden(), "Baseline changed: Practice now provides feedback on a denied write"
-            assert not page.get_by_role("button", name="Câu tiếp theo").count(), "Baseline changed: continuation appears"
-            print("REPRODUCED B1-R2-01: Practice storage failure aborts feedback and next controls; prior bytes preserved.")
+            assert not errors, errors
+            assert not feedback.is_hidden(), "Practice must still show mathematical feedback on failed save"
+            assert page.locator(".practice-save-warning[role=alert]").is_visible(), "Missing unsaved warning"
+            assert "chưa được" in page.locator(".practice-save-warning").inner_text().lower()
+            assert page.locator(".practice-actions .practice-btn").count() > 0, "No next action"
+            assert not errors, errors
+            print("PASS B1-R2-01: Practice renders feedback, warns UNSAVED and preserves prior raw bytes.")
         else:
-            assert raw_after != BAD_VALUE, "Baseline changed: invalid Practice raw bytes no longer overwritten"
-            assert json.loads(raw_after).get("questions"), "Expected newly saved Practice item"
-            print("REPRODUCED B1-R2-03 Practice: malformed previous store overwritten on next answer.")
+            assert raw_after == BAD_VALUE, "Malformed old Practice JSON must never be overwritten"
+            assert page.locator(".practice-save-warning[role=alert]").is_visible()
+            assert "không ghi đè" in page.locator(".practice-save-warning").inner_text().lower()
+            assert not errors, errors
+            print("PASS B1-R2-03 Practice: prior malformed bytes preserved, no false save claim.")
     finally:
         context.close()
 
@@ -78,13 +83,17 @@ def check_readiness(browser, denied):
         if denied:
             assert after == original, "Denied storage write unexpectedly mutated Readiness key"
             assert errors and any("B1 R2 synthetic storage denial" in error for error in errors), errors
-            assert not result_visible, "Baseline changed: Readiness rendered results despite storage denial"
-            print("REPRODUCED B1-R2-02: Readiness storage failure aborts result after submission; prior bytes preserved.")
+            assert result_visible, "Readiness must render result despite denied save"
+            assert page.locator(".readiness-save-warning[role=alert]").is_visible(), "Missing unsaved warning"
+            assert not errors, errors
+            print("PASS B1-R2-02: Readiness renders result, warns UNSAVED and preserves prior raw bytes.")
         else:
-            assert after != BAD_VALUE, "Baseline changed: corrupt Readiness raw bytes no longer overwritten"
-            assert json.loads(after).get("assessments"), "Expected new Readiness assessment saved"
-            assert result_visible, "Ordinary Readiness result did not render"
-            print("REPRODUCED B1-R2-03 Readiness: malformed previous store overwritten on submission.")
+            assert after == BAD_VALUE, "Malformed old Readiness JSON must never be overwritten"
+            assert result_visible, "Result should still display with unsaved warning"
+            assert page.locator(".readiness-save-warning[role=alert]").is_visible()
+            assert "không ghi đè" in page.locator(".readiness-save-warning").inner_text().lower()
+            assert not errors, errors
+            print("PASS B1-R2-03 Readiness: prior malformed bytes preserved, no false save claim.")
     finally:
         context.close()
 
@@ -98,5 +107,5 @@ with sync_playwright() as pw:
     finally:
         browser.close()
 
-print("PASS: isolated BASELINE reproducer confirms 4 source-predicted behaviors. THIS IS A CONFIRMED DEFECT BASELINE, NOT A SAFE-UX PASS.")
+print("PASS: four isolated B1 R2 safety tests verify failed-save feedback and non-destructive fallback.")
 print("No production learner data were read, reset, or altered.")
