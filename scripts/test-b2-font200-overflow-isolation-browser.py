@@ -105,7 +105,7 @@ PROBE = r"""() => {
       const r=e.getBoundingClientRect();return {w:Math.round(r.width),h:Math.round(r.height),right:Math.round(r.right)};})});
     el.remove();
   }
-  const mathBlocks=[...document.querySelectorAll('article.md-content__inner .md-typeset div.arithmatex')].map(el=>{
+  const mathBlocks=[...document.querySelectorAll('article.md-content__inner div.arithmatex')].map(el=>{
     const s=getComputedStyle(el);
     return {tag:el.tagName,overflowX:s.overflowX,overflowY:s.overflowY,
       width:el.clientWidth,scrollWidth:el.scrollWidth};
