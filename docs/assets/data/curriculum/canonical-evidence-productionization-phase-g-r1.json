@@ -1,0 +1,283 @@
+{
+  "schema": "canonical-evidence-productionization-phase-g-r1",
+  "status": "DESIGN_ONLY_REVIEW_REQUIRED_RUNTIME_DISABLED",
+  "as_of": "2026-09-30",
+  "packet_id": "MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-R1-20260930",
+  "purpose": "Design the first production integration of canonical evidence into normal Practice Room after Beta v4/v5 owner acceptance, while preserving legacy stats and keeping mastery/readiness separate.",
+  "accepted_baseline": {
+    "project_context_version": "1.0.78",
+    "beta_v4_status": "PRODUCTION_RELEASED_OWNER_QA_PASS",
+    "beta_v5_status": "PRODUCTION_RELEASED_OWNER_QA_PASS",
+    "beta_store_key": "toan-thcs-canonical-evidence-v1",
+    "beta_store_role": "FROZEN_BETA_PROVENANCE_AFTER_PHASE_G_APPROVAL",
+    "legacy_practice_store": "toan-thcs-practice-v1",
+    "legacy_readiness_store": "toan-thcs-assessment-v1",
+    "legacy_beta3_store": "toan-thcs-assessment-v2",
+    "phase_d_scope": {
+      "total_questions": 492,
+      "primary_mappings": 427,
+      "yes_counter_primary_items": 411,
+      "pending_primary_items": 16,
+      "formative_only_no_primary": 65,
+      "yes_canonical_skills": 36
+    },
+    "accepted_beta_scope": {
+      "unique_items": 27,
+      "canonical_skills": 7,
+      "independent_units_under_topic_scoped_key": 16
+    }
+  },
+  "current_runtime_source_lock": {
+    "docs/assets/javascripts/practice-engine-v2.js": "d37455471a9c823395234bb266336e54b6452ec9",
+    "docs/assets/javascripts/learner-evidence-v1.js": "cc7a256687986e6d04832a0141a82ecb085ffae4",
+    "docs/assets/javascripts/practice-auto-loader.js": "809ef48bc254ff6cd298f4132e6192e18cef36a3",
+    "docs/assets/javascripts/canonical-evidence-pilot-v1.js": "3898152db8ae70e331b6fbb7a7e1e1b4a855aead",
+    "docs/assets/javascripts/canonical-evidence-pilot-v2.js": "7492fde5064e668b9c1aac538724d93ea3bb3f0b",
+    "docs/assets/data/curriculum/canonical-evidence-beta-v4-config-v1.json": "bdb1239c6d032f47183f8b9b70dd82e9b4aff9e4",
+    "docs/assets/data/curriculum/canonical-evidence-beta-v5-config-v1.json": "3c0e6822f35db6a0f26ed544b27a1ccfbdca9ffc",
+    "docs/assets/data/curriculum/canonical-evidence-pilot-core07-r1.json": "f962acaff602b9b6bbe827bb2667f68004b5b109",
+    "docs/assets/data/curriculum/canonical-evidence-phase-f-expansion-r1.json": "5a5b339d7372068dd692b9a03dc1277758a6b6d5"
+  },
+  "production_store_v2": {
+    "proposed_key": "toan-thcs-canonical-evidence-v2",
+    "rationale": [
+      "Beta store v1 is capped at 500 events; at production scale old events would be dropped and de-dup memory could be lost.",
+      "Beta v1 contains experiment/test provenance and mixed topic identifiers from v4/v5; production learner history should start cleanly without migration/backfill.",
+      "A new versioned store preserves v1 byte-for-byte and allows scalable compact indexes."
+    ],
+    "migration_from_v1": false,
+    "backfill_from_v1": false,
+    "beta_v1_deleted": false,
+    "beta_v1_rewritten": false,
+    "default_learner_summary_uses_v1": false,
+    "optional_parent_qa_history_may_show_v1_read_only": true,
+    "schema": {
+      "name": "canonical-skill-evidence-store-v2",
+      "recent_events": {
+        "purpose": "recent descriptive history only",
+        "max_events": 1000,
+        "truncation_must_not_affect_dedup": true
+      },
+      "seen_questions": {
+        "purpose": "persistent compact set/index for question exposure in production lane",
+        "retention": "NOT_TRUNCATED_BY_recent_events"
+      },
+      "independent_units": {
+        "purpose": "persistent compact index of first independent evidence per canonical skill + normalized topic + evidence unit",
+        "retention": "NOT_TRUNCATED_BY_recent_events"
+      }
+    }
+  },
+  "production_event_policy": {
+    "origin_lane": "practice",
+    "capture_version": "practice-canonical-g1-v1",
+    "required_fields": [
+      "question_id",
+      "canonical_skill_id",
+      "normalized_topic_key",
+      "evidence_class",
+      "clone_family",
+      "correct",
+      "attempted_at",
+      "source_file",
+      "source_blob",
+      "assisted",
+      "assistance_kind",
+      "practice_mode",
+      "independent_evidence",
+      "independent_reason",
+      "supporting_skills"
+    ],
+    "assistance_rule": {
+      "unassisted": "hintsUsed=0 AND fullSolutionViewed=false",
+      "assisted_hint": "hintsUsed>0",
+      "assisted_full_solution": "fullSolutionViewed=true",
+      "assisted_event_is_stored": true,
+      "assisted_event_is_independent": false,
+      "same_question_seen_after_assistance": true,
+      "unseen_sibling_in_same_clone_family_may_later_be_independent_if_no_independent_unit_exists": true,
+      "rationale": "Preserve assistance as descriptive evidence but never treat it as an independent unit. Same exact question is contaminated after any prior exposure; an unseen sibling may test transfer."
+    },
+    "negative_evidence_rule": "First unassisted attempt on a new eligible unit is independent even when correct=false.",
+    "repeat_rule": "Same question seen in production lane is never independent again.",
+    "clone_rule": "At most one independent unit per canonical_skill_id + normalized_topic_key + reviewed clone_family.",
+    "cross_topic_clone_equivalence": false,
+    "supporting_skill_second_event": false,
+    "legacy_tag_order_never_selects_canonical_primary": true
+  },
+  "topic_identity_policy": {
+    "production_topic_key_format": "topic slug, e.g. 04-bieu-thuc-dai-so",
+    "evidence_unit_scope": "canonical_skill_id + normalized_topic_key + clone_family/question_id",
+    "rationale": "Explicitly prevent accidental cross-topic de-dup and normalize the v4/v5 pilot topic identifier inconsistency.",
+    "legacy_v1_aliases_read_only": {
+      "CĐ04": "04-bieu-thuc-dai-so",
+      "CĐ05": "05-7-hang-dang-thuc",
+      "CĐ06": "06-phan-tich-da-thuc",
+      "CĐ07": "07-phan-thuc-dai-so",
+      "07-phan-thuc-dai-so": "07-phan-thuc-dai-so"
+    },
+    "rewrite_beta_events": false
+  },
+  "integration_architecture": {
+    "new_module": "RoadmapCanonicalEvidenceObserver",
+    "load_scope": "Practice Room pages only; initial activation only for CĐ04–07 canary policy",
+    "call_site": "PracticeEngineV2.answer/record path after the existing legacy learner-evidence write succeeds",
+    "legacy_write_first": true,
+    "canonical_write_second": true,
+    "canonical_failure_behavior": "FAIL_OPEN_FOR_PRACTICE; show no learner error; never rollback legacy stats; no automatic historical retry/backfill",
+    "policy_file": "canonical-evidence-runtime-policy-04-07-v1.json",
+    "policy_default": "NO_CAPTURE",
+    "capture_requires": "question_id exact match + source-locked approved row + active rollout tier",
+    "existing_practice_stats_unchanged": true,
+    "existing_remediation_uses_legacy_stats": true,
+    "existing_weak_skill_ranking_uses_legacy_stats": true,
+    "core_readiness_uses_canonical": false,
+    "learner_visible_change_in_g1": false,
+    "qa_debug_surface": "opt-in query/debug panel only; no default learner-facing production summary in G1"
+  },
+  "rollout_tiers": {
+    "G1_CANARY_SHADOW": {
+      "activation": "FIRST_PRODUCTION_GATE_AFTER_NOTEBOOKLM_AND_TECHNICAL_QA",
+      "items": 27,
+      "skills": 7,
+      "independent_units_max": 16,
+      "behavior": "Normal Practice answers on these exact 27 source-locked items append production-lane canonical events to v2. No normal learner UI change.",
+      "item_ids": [
+        "RAT07V1_009",
+        "RAT07V1_010",
+        "RAT07V1_017",
+        "RAT07V1_018",
+        "RAT07V1_047",
+        "RAT07V1_055",
+        "RAT07V1_048",
+        "RAT07V1_056",
+        "RAT07V1_049",
+        "RAT07V1_057",
+        "RAT07V1_115",
+        "RAT07V1_116",
+        "ALG04V2_013",
+        "ALG04V2_014",
+        "ALG04V2_089",
+        "ALG04V2_090",
+        "ID05V1_021",
+        "ID05V1_022",
+        "ID05V1_081",
+        "ID05V1_087",
+        "ID05V1_120",
+        "FAC06V1_001",
+        "FAC06V1_002",
+        "FAC06V1_021",
+        "FAC06V1_022",
+        "RAT07V1_071",
+        "RAT07V1_072"
+      ],
+      "canonical_skills": [
+        "dieu-kien-xac-dinh",
+        "rut-gon-phan-thuc",
+        "tinh-gia-tri-phan-thuc",
+        "hang-tu-dong-dang",
+        "hieu-hai-binh-phuong",
+        "nhan-tu-chung",
+        "quy-dong-mau-thuc"
+      ]
+    },
+    "G2_PROVEN_SKILL_EXPANSION": {
+      "activation": "SEPARATE_GATE_AFTER_G1_OWNER_QA_PASS",
+      "combined_scope_items": 101,
+      "combined_scope_skills": 7,
+      "combined_scope_units_max": 23,
+      "additional_items_after_g1": 74,
+      "behavior": "Expand capture to every Phase-D YES primary item for the same seven already-proven skills."
+    },
+    "G3_REVIEWED_ELIGIBLE_SKILLS": {
+      "activation": "BATCHED_SEPARATE_REVIEWS_AFTER_G2",
+      "additional_items": 310,
+      "additional_skills": 29,
+      "additional_units_max": 68,
+      "behavior": "Roll out remaining Phase-D YES skills in bounded batches; no all-at-once activation."
+    },
+    "BLOCKED_PENDING": {
+      "items": 16,
+      "skills": [
+        "phan-tich-da-thuc-hoan-toan"
+      ],
+      "behavior": "NO_CAPTURE until separate evidence design/review."
+    },
+    "FORMATIVE_ONLY": {
+      "items": 65,
+      "behavior": "NO_CANONICAL_PRIMARY_EVENT from current MCQ evidence."
+    }
+  },
+  "full_reviewed_yes_pool": {
+    "items": 411,
+    "skills": 36,
+    "independent_units_max": 91,
+    "evidence_class_counts": {
+      "MCQ_RECOGNITION_ONLY": 58,
+      "MCQ_FINAL_ANSWER_ONLY": 39,
+      "MCQ_FINAL_OUTPUT_ONLY": 303,
+      "MCQ_METHOD_SELECTION_ONLY": 11
+    },
+    "learner_counter_interpretation": "DESCRIPTIVE_EVIDENCE_ONLY",
+    "unit_identity_note": "Unit count is skill-scoped. Two CĐ05 structural clone families contain multiple canonical skills, so structural clone-family count alone (55 groups +32 singletons) understates canonical independent units; canonical_skill_id + topic + unit yields 91."
+  },
+  "runtime_policy_row_contract": {
+    "required": [
+      "question_id",
+      "normalized_topic_key",
+      "canonical_skill_id",
+      "evidence_class",
+      "clone_family",
+      "supporting_skills",
+      "source_file",
+      "source_blob",
+      "phase_d_overlay_blob",
+      "capture_status"
+    ],
+    "capture_status_values": [
+      "G1_CANARY_ACTIVE",
+      "G2_PROVEN_SKILL_ELIGIBLE",
+      "G3_REVIEWED_ELIGIBLE",
+      "BLOCKED_PENDING",
+      "FORMATIVE_ONLY"
+    ],
+    "source_of_primary": "reviewed Phase D overlay only",
+    "source_of_counter_status": "reviewed Phase C semantic registry + later accepted decisions",
+    "legacy_tags_role": "historical stats / metadata only; never runtime canonical-primary selector"
+  },
+  "qa_requirements_before_g1_release": [
+    "Build-time reconciliation of all 27 canary rows against exact source questions/options/answer/tags and reviewed overlays.",
+    "Unit tests for legacy-write-first + canonical-fail-open behavior.",
+    "Unit/browser tests proving legacy practice store changes exactly as before whether canonical observer is enabled or forced to fail.",
+    "Tests proving no write to assessment-v1, assessment-v2 or frozen beta canonical-v1.",
+    "Hint/full-solution assistance tests: assisted event stored but independent=false.",
+    "Negative first-unassisted evidence test.",
+    "Same-question repeat and clone-family de-dup tests using topic-scoped unit keys.",
+    "Cross-topic shared-skill tests proving no accidental cross-topic clone de-dup.",
+    "ID05V1_120 legacy-tag-order test.",
+    "Retention stress test showing recent_events truncation cannot erase seen_questions or independent_units.",
+    "Synthetic storage-size test for 1000 recent events + indexes.",
+    "Desktop/mobile Practice Room browser QA on CĐ04–07.",
+    "Owner real-device QA using debug surface before any G2 expansion."
+  ],
+  "explicit_non_goals": [
+    "No mastery threshold, mastery percentage, Mastered/Not mastered label or weighted evidence score.",
+    "No Core Readiness credit or gate.",
+    "No change to current remediation/weak-skill ranking source.",
+    "No historical conversion of practice-v1 or beta canonical-v1.",
+    "No automatic capture outside approved policy rows.",
+    "No CĐ08–25 production canonical capture in Phase G R1.",
+    "No exam-frequency/importance weighting inferred from authored practice-bank frequency."
+  ],
+  "independent_review_questions": [
+    "Is freezing canonical-evidence-v1 as beta provenance and starting production in canonical-evidence-v2 academically and architecturally preferable to reusing v1 at scale?",
+    "Is the proposed v2 split between bounded recent_events and persistent seen_questions/independent_units sufficient to prevent retention-induced false 'new evidence'?",
+    "Should any prior assisted attempt on one question block only that exact question, while allowing an unseen sibling in the same clone family to later become the unit's first independent evidence?",
+    "Is topic-scoped unit identity (canonical skill + normalized topic + clone/question) the correct way to enforce 'no cross-topic clone equivalence'?",
+    "Is legacy-write-first / canonical-fail-open acceptable, given canonical gaps are preferable to breaking Practice and no automatic retry/backfill is allowed?",
+    "Is G1 correctly bounded to the exact 27 Beta-proven items with no normal learner UI change?",
+    "Is the staged expansion sequence 27 canary -> 101 items across 7 proven skills -> 310 items across 29 additional YES skills conservative enough?",
+    "Should beta-v1 history be excluded from default production learner summaries and only remain read-only parent/QA provenance?",
+    "Are the G1 QA requirements sufficient before any controlled release?"
+  ]
+}

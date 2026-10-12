@@ -1,0 +1,18 @@
+PHẢN BIỆN ĐỘC LẬP — PHASE G PRODUCTIONIZATION R1
+
+Hãy đọc kỹ source:
+01_UPLOAD_TO_NOTEBOOKLM_PHASE_G_PRODUCTIONIZATION_R1.md
+Git blob: 1d2b4fbb736002a6c3ef9e8329e6d4605346ebe1
+
+Dùng source này cùng các permanent baseline/Master Plan đang được chọn. Không dùng temporary packet cũ.
+
+Kiểm toàn bộ kiến trúc productionization: store v2, retention indexes, topic/unit identity, assistance semantics, legacy-write-first/canonical-fail-open, rollout G1→G2→G3, runtime policy và QA gate.
+
+Đặc biệt trả lời rõ 9 “Independent review questions” trong source.
+
+Báo cáo phải có:
+- Packet ID: MATH-CANONICAL-EVIDENCE-PRODUCTIONIZATION-G1-R1-20260930
+- Verdict chỉ PASS hoặc REVISIONS_REQUIRED
+- Nếu PASS: 0 revisions
+- Nếu cần sửa: correction cụ thể, không mở rộng scope
+- PASS chỉ cho phép technical implementation/QA của G1 canary 27 item; không auto-deploy, không tự sang G2/G3.
