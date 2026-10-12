@@ -2,7 +2,7 @@
 
 **Source:** public Math repo `cb233878f698ffe481d0ee60ad6c6756226f7ccf`  
 **Scope:** source-locked diagnostic only; no learner runtime, content, score, ID, Firebase, or English Actions change.  
-**State:** `BASELINE_REVIEWED / HARD_GATES_ADDED / ROOT_TEXT_ENLARGEMENT_DIAGNOSTIC_PENDING`
+**State:** `NARROW_AND_TOUCH_HARD_GATES_PASS / ROOT_FONT_200PCT_OVERFLOW_OPEN / OWNER_REAL_DEVICE_QA_OPEN`
 
 ## Method
 
@@ -25,6 +25,14 @@
   - A touch answer in Practice, unsubmitted selection in Readiness and modal open/close completed without page JS errors.
 - In this follow-up, previously descriptive checks are upgraded to hard assertions for sampled 44 CSS-px targets, DOM scroll width and dialog bounds. A **separate 200% root-font-size scaling probe** is diagnostic only, not yet a native browser zoom guarantee. The final commit must receive its own public Math QA PASS before merging.
 - Limits: CSS-px sizes and DOM node counts cannot prove readability, legibility of all visual labels, or full semantic access for screen readers.
+
+## QA follow-up: hard gates and text scaling — 12/10/2026
+
+- Final hard-gate source HEAD before this documentation update: `7600cb764b5fe342e3432b65e2f6ee4364359b9b`, public Math PR Quality run `38242509750` **SUCCESS**, no screenshot artifacts.
+- **PASS (representative):** At 640/390/320 CSS px, hard assertions verified >=44 CSS-px height/width for sampled Core/Practice/Readiness/Dashboard controls, no sideways page overflow under normal text sizing, contained lesson modal and working synthetic touch actions. Two geometric SVG assets loaded with descriptive alt, and 32 MathJax nodes observed.
+- **OPEN B2-R2-TEXT-01:** At 390 CSS px with `document.documentElement.style.fontSize='200%'`, both geometry and dashboard routes reported **54 CSS px of page-level horizontal overflow**. This is a simulated **root font-size enlargement**, not native Safari zoom. Geometry images stayed inside their parents; main dashboard buttons were individually contained.
+- The trace includes translated/off-canvas Material navigation nodes outside the viewport, but **does not establish that the off-canvas nav is the scroll-width cause**. Do not apply broad `overflow-x:hidden` to the document or clip MathJax/geometry. Next isolated probe should identify the in-flow width contributor near the actual `scrollWidth=444px` boundary and retest with genuine browser zoom or text enlargement and real hardware.
+- This technical diagnostic does **not** authorize a CSS fix, and is **not** an A2 or accessibility certification. Full final SHA QA must still pass after this documentation update.
 
 ## Required follow-up
 
