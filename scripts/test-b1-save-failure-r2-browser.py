@@ -97,6 +97,30 @@ def check_readiness(browser, denied):
     finally:
         context.close()
 
+def check_positive_control(browser, readiness):
+    key = READINESS if readiness else PRACTICE
+    raw = VALID_READINESS if readiness else VALID_PRACTICE
+    route = "/kien-thuc/02-so-va-phep-tinh/tu-kiem-tra/" if readiness else "/kien-thuc/02-so-va-phep-tinh/bai-tap/"
+    context, page, errors = begin(browser, route, key, raw)
+    try:
+        if readiness:
+            page.locator("[data-readiness-check-v1] .readiness-option input[type=radio]").first.check()
+            page.once("dialog", lambda dialog: dialog.accept())
+            page.get_by_role("button", name="Nộp bài", exact=True).click()
+            assert page.locator("[data-readiness-check-v1] .readiness-result").is_visible()
+            assert page.locator(".readiness-save-warning").count() == 0
+        else:
+            page.locator("[data-practice-bank-v2] .practice-option").first.click()
+            assert not page.locator("[data-practice-bank-v2] .practice-feedback").is_hidden()
+            assert page.locator(".practice-save-warning").count() == 0
+        after = page.evaluate("(k)=>localStorage.getItem(k)", key)
+        assert after != raw, "Valid new test answer should be saved normally"
+        assert json.loads(after), "Saved JSON should be parseable"
+        assert not errors, errors
+        print("PASS positive-control: "+("Readiness" if readiness else "Practice")+" normally saves without warning.")
+    finally:
+        context.close()
+
 with sync_playwright() as pw:
     browser = pw.chromium.launch(executable_path=CHROME, headless=True, args=["--no-sandbox", "--disable-dev-shm-usage"])
     try:
@@ -104,6 +128,8 @@ with sync_playwright() as pw:
         check_readiness(browser, denied=True)
         check_practice(browser, denied=False)
         check_readiness(browser, denied=False)
+        check_positive_control(browser, readiness=False)
+        check_positive_control(browser, readiness=True)
     finally:
         browser.close()
 
