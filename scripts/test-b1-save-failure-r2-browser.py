@@ -82,7 +82,7 @@ def check_readiness(browser, denied):
         result_visible = page.locator("[data-readiness-check-v1] .readiness-result").is_visible()
         if denied:
             assert after == original, "Denied storage write unexpectedly mutated Readiness key"
-            assert errors and any("B1 R2 synthetic storage denial" in error for error in errors), errors
+            assert not errors, errors
             assert result_visible, "Readiness must render result despite denied save"
             assert page.locator(".readiness-save-warning[role=alert]").is_visible(), "Missing unsaved warning"
             assert not errors, errors
