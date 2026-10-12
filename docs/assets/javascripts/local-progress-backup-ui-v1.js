@@ -21,7 +21,8 @@
     root.dataset.backupReady="true";
     const core=api();
     if(!core){root.append(el("p","mpd-warning","Không tải được công cụ sao lưu. Chức năng học tập vẫn hoạt động bình thường."));return;}
-    let verified=null,preBackupRequested=false;
+    let verified=null,preBackupRequested=false,preBackupSignature=null;
+    const storageSignature=()=>JSON.stringify(core.KEYS.map(k=>[k,localStorage.getItem(k)]));
     const status=el("p","mpd-status","Chưa có tệp được chọn.");status.setAttribute("role","status");
     const exportSection=el("section","mpd-panel");
     exportSection.append(el("h2","","Sao lưu tiến độ ra máy"));
@@ -66,7 +67,12 @@
       if(!has){restoreButton.disabled=true;beforeButton.hidden=true;confirmLabel.hidden=true;return;}
       const plan=core.planRestore(verified,localStorage,mode.value);
       const list=el("ul","mpd-restore-list");
-      for(const [label,arr] of [["Thêm mới",plan.add],["Thay thế",plan.replace],["Giữ nguyên",plan.skip]]){
+      for(const [label,arr] of [
+        ["Thêm mới",plan.add],
+        ["Thay thế",plan.replace],
+        ["Trùng và giống hệt",plan.identical],
+        ["Bỏ qua vì dữ liệu đang có khác tệp",plan.conflicts]
+      ]){
         const item=el("li");item.textContent=label+": "+arr.length+" vùng dữ liệu";
         if(arr.length){
           const details=el("details");details.append(el("summary","","Xem danh sách"));
@@ -77,13 +83,18 @@
         list.append(item);
       }
       preview.append(el("p","mpd-hint","Tệp tạo ngày "+verified.created_at.slice(0,10)+" · "+Object.keys(verified.entries).length+" vùng dữ liệu"),list);
+      if(plan.conflicts.length){
+        preview.append(el("p","mpd-warning",plan.conflicts.length+" vùng dữ liệu trên máy này khác với tệp nhập và sẽ KHÔNG được chuyển. Để thay thế, chọn chế độ Thay thế, tải bản dự phòng hiện tại và xác nhận. Hệ thống không tự gộp lịch sử."));
+      } else if(!plan.add.length&&!plan.replace.length){
+        preview.append(el("p","mpd-hint","Không có dữ liệu mới để chuyển. Các vùng trong tệp đã giống dữ liệu hiện tại."));
+      }
       const destructive=plan.replace.length>0;
       beforeButton.hidden=!destructive;beforeButton.disabled=!destructive;
       confirmLabel.hidden=!destructive;
       restoreButton.disabled=!(plan.add.length+plan.replace.length)||(destructive&&(!preBackupRequested||!consent.checked));
     }
     file.addEventListener("change",async()=>{
-      verified=null;preBackupRequested=false;consent.checked=false;status.textContent="Đang kiểm tra tệp...";refresh();
+      verified=null;preBackupRequested=false;preBackupSignature=null;consent.checked=false;status.textContent="Đang kiểm tra tệp...";refresh();
       try{
         const f=file.files?.[0];if(!f)throw Error("Chưa chọn tệp.");
         if(f.size>core.MAX_BYTES)throw Error("Tệp vượt giới hạn 12 MB.");
@@ -94,15 +105,18 @@
       }catch(err){verified=null;status.textContent="Không thể dùng tệp này: "+err.message;}
       refresh();
     });
-    mode.addEventListener("change",()=>{preBackupRequested=false;consent.checked=false;refresh();});
+    mode.addEventListener("change",()=>{preBackupRequested=false;preBackupSignature=null;consent.checked=false;refresh();});
     consent.addEventListener("change",refresh);
     beforeButton.addEventListener("click",async()=>{
       try{
+        const signature=storageSignature();
         const doc=await core.buildBackup(localStorage);
+        if(storageSignature()!==signature)throw Error("Dữ liệu đã thay đổi trong lúc tạo bản dự phòng. Hãy thử lại.");
         saveFile(doc,"math-progress-before-replace");
+        preBackupSignature=signature;
         preBackupRequested=true;
         status.textContent="Đã yêu cầu tải bản dự phòng. Kiểm tra tệp đã lưu trước khi đánh dấu xác nhận.";
-      }catch(err){preBackupRequested=false;status.textContent="Không thể sao lưu dữ liệu hiện tại; đã chặn ghi đè: "+err.message;}
+      }catch(err){preBackupRequested=false;preBackupSignature=null;status.textContent="Không thể sao lưu dữ liệu hiện tại; đã chặn ghi đè: "+err.message;}
       refresh();
     });
     restoreButton.addEventListener("click",()=>{
@@ -110,15 +124,22 @@
       const plan=core.planRestore(verified,localStorage,mode.value);
       const destructive=plan.replace.length>0;
       if(destructive&&(!preBackupRequested||!consent.checked))return;
+      if(destructive&&preBackupSignature!==storageSignature()){
+        preBackupRequested=false;preBackupSignature=null;consent.checked=false;
+        status.textContent="Dữ liệu trên máy đã thay đổi sau khi tải bản dự phòng. Cần tải bản dự phòng mới trước khi thay thế.";
+        refresh();return;
+      }
       const question=destructive
         ?"Thay thế "+plan.replace.length+" vùng dữ liệu hiện có? Hãy xác nhận tệp dự phòng đã được lưu trước khi tiếp tục."
         :"Thêm "+plan.add.length+" vùng dữ liệu còn thiếu từ tệp đã kiểm tra? Dữ liệu đang có được giữ nguyên.";
       if(!window.confirm(question))return;
       try{
         const result=core.applyRestore(verified,localStorage,mode.value,destructive&&preBackupRequested&&consent.checked);
-        status.textContent="Khôi phục thành công "+result.written+" vùng dữ liệu. Hãy tải lại những bài học đang mở ở tab khác để xem dữ liệu mới.";
+        status.textContent="Khôi phục thành công "+result.written+" vùng dữ liệu."+
+          (result.conflicts.length?" Đã bỏ qua "+result.conflicts.length+" vùng có dữ liệu khác nhau; phần này CHƯA được chuyển.":"")+
+          " Hãy tải lại những bài học đang mở ở tab khác để xem dữ liệu mới.";
         document.dispatchEvent(new Event("math-progress-restored"));
-        verified=null;file.value="";preBackupRequested=false;consent.checked=false;refresh();
+        verified=null;file.value="";preBackupRequested=false;preBackupSignature=null;consent.checked=false;refresh();
       }catch(err){status.textContent="Không thể khôi phục: "+err.message;}
     });
     restoreSection.append(fileLabel,modeLabel,status,preview,beforeButton,confirmLabel,restoreButton);
