@@ -41,6 +41,22 @@ with sync_playwright() as pw:
     assert values[:4]==["3","2","1","1"],values
     assert a.locator(".mpd-activity-list").count()==2
     assert a.locator(".mpd-stat").count()==4
+    # Raw Markdown must not leak from mixed HTML/Markdown containers.
+    assert a.get_by_role("heading",name="Tiếp tục học",exact=True).count()==1
+    assert a.get_by_role("heading",name="Sao lưu và khôi phục tiến độ",exact=True).count()==1
+    links={
+        "Học theo lớp 6–9":"/hoc-theo-lop/",
+        "Luyện tập tương tác":"/luyen-tap/",
+        "Bản đồ kỹ năng":"/ban-do-ky-nang/"
+    }
+    for label,suffix in links.items():
+        link=a.get_by_role("link",name=label,exact=True)
+        assert link.count()==1,(label,link.count())
+        assert link.get_attribute("href").endswith(suffix),(label,link.get_attribute("href"))
+    rendered=a.locator(".math-progress-page").inner_text()
+    assert "## Tiếp tục học" not in rendered
+    assert "## Sao lưu và khôi phục tiến độ" not in rendered
+    assert "[**Học theo lớp" not in rendered
     with a.expect_download() as download_event:
         a.get_by_role("button",name="Tải tệp sao lưu",exact=True).click()
     download=download_event.value
