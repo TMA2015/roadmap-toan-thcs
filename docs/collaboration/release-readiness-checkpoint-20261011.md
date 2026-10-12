@@ -2,6 +2,14 @@
 
 **Current initiative:** Family-use THCS V1 Release Readiness Audit R1; future-track extension architecture feasibility (THPT/SAT/ACT), no new academic content.
 
+## Latest released B1 R2 durability update — 12/10/2026
+
+- Audit **#421** MERGED, baseline-only reproducer **#422** archived/closed unmerged, safety fix **#423** MERGED at `c64e30275bb7df45227825a7e981164330655be5`.
+- Source-locked Chromium baseline revealed four concrete Practice/Readiness storage failure and malformed-JSON overwrite behaviors. Fix browser run `38233940398` passed all **four safety scenarios + two normal-save positive controls**; entire PR Quality passed.
+- [Deploy MkDocs 38234778211](https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/38234778211) SUCCESS. Published Practice v2, Readiness v1 and Learner Evidence v1 JS contents exactly match the current `main` blobs. Site: https://tma2015.github.io/roadmap-toan-thcs/.
+- The student can see answer explanations even when saving fails, with truthful unsaved warnings. Previously malformed raw browser data is not silently overwritten. No scoring, assessment thresholds, learner IDs, storage schema or history migration.
+- **OPEN:** actual Safari/iPad/Android storage-failure observations with disposable profiles; A2 authentic child learning observations, including two Grade 9/10 feedback forms. Do not confuse browser QA with real-device or learning-effectiveness certification.
+
 ## Verified current state — 12/10/2026 after PR #419
 
 - Live Math `main`: `59fbe3cce694005490335e63de527276b82cd1b2`, corresponding to **PR #419 merged**. Previous merges **#416** and **#418** remain in ancestry.  
