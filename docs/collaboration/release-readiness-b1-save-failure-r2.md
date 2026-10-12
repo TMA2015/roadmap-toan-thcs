@@ -2,8 +2,20 @@
 
 **Audit ID:** `MATH-B1-SAVE-FAILURE-R2-20261012`  
 **Base:** public GitHub `main` commit `59fbe3cce694005490335e63de527276b82cd1b2`  
-**Status:** `SOURCE_RISK_CONFIRMED / BEHAVIOR_QA_NOT_RUN / FIX_NOT_AUTHORIZED`  
+**Status:** `BASELINE_REPRODUCED / BOUNDED_FIX_CANDIDATE_QA_PENDING / NO_DEPLOYMENT_AUTHORIZED`  
 **Nature:** source-locked, documentation-only investigation. No runtime, stored user data, assessment score, schema, learner history, Firebase, or academic-content change.
+
+## Evidence update — deterministic Chromium reproducer, 12/10/2026
+
+- **PR #422** test-only baseline: https://github.com/TMA2015/roadmap-toan-thcs/pull/422, commit `716265689c414f12ee9a7bc377e2cfd7af21c59c`.
+- GitHub Roadmap PR Quality run `38232454288`: **SUCCESS**. Full job logs explicitly report all four reproduced baseline defects:
+  - `B1-R2-01`: denied Practice write aborts feedback/next controls, prior raw bytes preserved;
+  - `B1-R2-02`: denied Readiness write aborts result, prior raw bytes preserved;
+  - `B1-R2-03` Practice: malformed prior raw bytes replaced on next synthetic answer;
+  - `B1-R2-03` Readiness: malformed prior raw bytes replaced on next synthetic submission.
+- A green baseline reproducer means the **unsafe original behavior was observed**, **not** that the bug is fixed. No personal learner data or live iPhone browser data were used.
+- **PR #423**: https://github.com/TMA2015/roadmap-toan-thcs/pull/423, separate bounded runtime fix candidate with reversed safety assertions and normal-save positive controls. The fix may only be considered for merge after its own full PR QA and source/diff review. Owner device QA remains a separate gate.
+- PR #422 is kept unmerged as historical baseline; merge the fixed safety assertions through the implementation PR instead. Do not publish a CI test whose expected outcome is the known unsafe behavior.
 
 ## Why this audit now
 
