@@ -30,6 +30,17 @@ body{letter-spacing:-.008em}
     overflow-y:hidden;
     overscroll-behavior-x:contain;
   }
+  /* Inline equations remain in their sentence. Turning only their inline
+     wrapper into an inline-block lets overlong MathJax scroll within the
+     surrounding paragraph instead of enlarging the entire document. */
+  .md-typeset span.arithmatex{
+    display:inline-block;
+    max-width:100%;
+    overflow-x:auto;
+    overflow-y:hidden;
+    vertical-align:middle;
+    overscroll-behavior-x:contain;
+  }
 }
 .md-tabs{background:#182e68}
 .md-tabs__link{font-weight:650;opacity:.85}
