@@ -2,23 +2,23 @@
 
 Trang tổng hợp giúp em xem hoạt động học Toán trên **thiết bị đang dùng**, tìm bài để học tiếp và bảo vệ dữ liệu của mình. Đây là bản đầu tiên dành cho gia đình, không phải bảng xếp hạng hay công cụ chấm mức độ thành thạo.
 
-<div class="math-progress-page" markdown="1">
+<div class="math-progress-page">
 
 <div data-math-progress-dashboard aria-live="polite">Đang đọc tiến độ trên trình duyệt này…</div>
 
-## Tiếp tục học
+<section class="mpd-panel" aria-labelledby="math-progress-continue-title">
+  <h2 id="math-progress-continue-title">Tiếp tục học</h2>
+  <ul>
+    <li><a href="../hoc-theo-lop/"><strong>Học theo lớp 6–9</strong></a> — tìm đúng chương và bài học KNTT.</li>
+    <li><a href="../luyen-tap/"><strong>Luyện tập tương tác</strong></a> — luyện theo chuyên đề, xem hướng dẫn khi sai.</li>
+    <li><a href="../ban-do-ky-nang/"><strong>Bản đồ kỹ năng</strong></a> — xem các bằng chứng kỹ năng đã được ghi nhận, không phải điểm thành thạo.</li>
+  </ul>
+</section>
 
-<div class="mpd-panel" markdown="1">
-
-- [**Học theo lớp 6–9**](../hoc-theo-lop/) — tìm đúng chương và bài học KNTT.
-- [**Luyện tập tương tác**](../luyen-tap/) — luyện theo chuyên đề, xem hướng dẫn khi sai.
-- [**Bản đồ kỹ năng**](../ban-do-ky-nang/) — xem các bằng chứng kỹ năng đã được ghi nhận, không phải điểm thành thạo.
-
-</div>
-
-## Sao lưu và khôi phục tiến độ
-
-<div data-math-progress-backup aria-label="Công cụ sao lưu và khôi phục tiến độ bằng tệp"></div>
+<section aria-labelledby="math-progress-backup-title">
+  <h2 id="math-progress-backup-title">Sao lưu và khôi phục tiến độ</h2>
+  <div data-math-progress-backup aria-label="Công cụ sao lưu và khôi phục tiến độ bằng tệp"></div>
+</section>
 
 </div>
 
