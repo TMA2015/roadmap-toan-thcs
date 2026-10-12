@@ -1,8 +1,8 @@
-"""Isolate B2-R2-TEXT-01 horizontal scroll contributor without mutating Math UI.
+"""B2-R2-TEXT-01 browser regression for enlarged-text Math layout.
 
-Only Math public repo's disposable Chromium QA. Diagnostic toggles are temporary
-and applied to ephemeral browser DOM; the website's shipped CSS is unchanged.
-This is root font-size enlargement, not native browser zoom certification.
+Only Math public repo's disposable Chromium QA. The shipped CSS candidate is
+tested directly; diagnostic toggles are temporary and immediately removed in
+the ephemeral browser DOM. Root font-size enlargement is NOT native zoom.
 """
 import json
 import shutil
