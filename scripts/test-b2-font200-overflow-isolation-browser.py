@@ -105,7 +105,12 @@ PROBE = r"""() => {
       const r=e.getBoundingClientRect();return {w:Math.round(r.width),h:Math.round(r.height),right:Math.round(r.right)};})});
     el.remove();
   }
-  return {initial,hierarchy,near,toggles,headerControls,trials};
+  const mathBlocks=[...document.querySelectorAll('article.md-content__inner .md-typeset div.arithmatex')].map(el=>{
+    const s=getComputedStyle(el);
+    return {tag:el.tagName,overflowX:s.overflowX,overflowY:s.overflowY,
+      width:el.clientWidth,scrollWidth:el.scrollWidth};
+  });
+  return {initial,hierarchy,near,toggles,headerControls,trials,mathBlocks};
 }"""
 
 def inspect(browser, route):
@@ -122,14 +127,20 @@ def inspect(browser, route):
         result=page.evaluate(PROBE)
         print("B2_FONT200_ISOLATION "+json.dumps({"route":route,**result},ensure_ascii=False))
         assert result["initial"]["viewport"]==390
-        assert result["initial"]["overflow"] <= (6 if "14-tam-giac" in route else 0), (
-            "Unexpected 200%-font page overflow after the header fix: " + str(result["initial"]))
+        assert result["initial"]["overflow"] <= 2, (
+            "Unexpected horizontal page overflow with 200% root text: " + str(result["initial"]))
         header = result["hierarchy"][".md-header"]
         assert header and header["scrollWidth"] <= header["clientWidth"] + 2, (
             "Shared Material header still overflows after focused CSS fix")
         for item in result["trials"][0]["headerButtons"]:
             assert item["w"] >= 44 and item["h"] >= 44, (
                 "Header icon buttons must retain a 44 CSS-pixel touch target")
+            assert item["right"] <= 392, (
+                "Header control pushed off-screen despite local scroll rules")
+        if "14-tam-giac" in route:
+            assert result["mathBlocks"], "Geometry page must include display-math containers"
+            assert all(block["overflowX"] == "auto" for block in result["mathBlocks"]), (
+                "Display math must scroll locally instead of widening the entire page")
         assert not errors,errors
         return result
     finally:
@@ -149,4 +160,4 @@ with sync_playwright() as pw:
             for i,r in enumerate(results)],ensure_ascii=False))
     finally:
         browser.close()
-print("PASS B2 header fix: Dashboard scrollWidth within viewport, geometry residual limited to 6px; 44px icon controls. Real Safari zoom not certified.")
+print("PASS B2 text enlargement: Dashboard + Geometry pages within viewport at root text 200%; 44px header icons and local display math scrolling. Native device zoom not certified.")
