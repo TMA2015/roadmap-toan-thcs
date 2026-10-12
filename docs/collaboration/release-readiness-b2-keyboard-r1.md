@@ -2,7 +2,7 @@
 
 **Project:** Self-Learning Math (public repository Math only)  
 **Scope:** family-use THCS V1, Grade 6 topic `02-so-va-phep-tinh` and local Dashboard  
-**Status:** `TEST_CANDIDATE / CI_PENDING / HUMAN_A2_OPEN`  
+**Status:** `AUTOMATED_CHROMIUM_QA_PASS / MANUAL_B2_AND_A2_OPEN`  
 **Baseline:** `6c5e169a8bb9188bdb84e6d5f72966f21f0b8202`
 
 ## Purpose
@@ -19,6 +19,14 @@ Continue Release Readiness R1/B2 automated accessibility and product consistency
 - Existing B1 R2 failed-save, backup/restore, release-readiness and other public Math QA tests remain unchanged.
 
 Source: `scripts/test-release-readiness-b2-keyboard-browser.py` added to public Math `qa-pr.yml`.
+
+## Automated QA receipt — 12/10/2026
+
+- Draft PR [#426](https://github.com/TMA2015/roadmap-toan-thcs/pull/426), initial test HEAD `49a7726260d820b0b0e0c7fa3ac22e69719bc1e0`.
+- Public Math GitHub PR Quality run `38237145666`: **SUCCESS**. Job log explicitly records `PASS B2 keyboard + separated persistence: 1365 px` and `PASS B2 keyboard + separated persistence: 390 px`.
+- Existing B1 R2 saved/unsaved tests, desktop/mobile Dashboard, Class/Core navigation, Skill Map and strict MkDocs build retained their passing status.
+- The [Math-only GitHub resource guard](math-github-resource-isolation-r1.md) is active. This workflow did **not** run `actions/upload-artifact` and did not use a private English workflow.
+- This is **representative technical coverage only**, not proof of VoiceOver, TalkBack, large text, mixed-device accessibility, or student learning effectiveness. Re-run exact final SHA CI if documentation is updated in this PR.
 
 ## Boundaries / owner gates
 
