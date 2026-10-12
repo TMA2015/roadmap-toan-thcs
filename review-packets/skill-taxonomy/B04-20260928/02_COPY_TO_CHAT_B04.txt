@@ -1,0 +1,5 @@
+KIỂM ĐỊNH MATH-SKILL-TAXONOMY-B04-20260928. Sources chỉ tích Master Plan Toán v1.1, Notebook Math Permanent v1.1 và 01_UPLOAD_TO_SOURCES_B04.md. Bỏ B03 và các nguồn tạm cũ.
+
+Đọc A–E; xác nhận inventory 41/41, 10 CĐ04 + 31 CĐ07 theo source SHA. Rà từng câu đúng toán/đáp án/distractor/đích đo. So sánh hai nhiệm vụ: xác định điều kiện ban đầu, và giữ điều kiện ban đầu sau rút gọn. Nhận diện câu gần bản sao thay số; không coi mỗi clone là kỹ năng độc lập. Không gộp counter lịch sử hoặc gán mastery tự luận từ MCQ.
+
+**Tiết kiệm quota:** chỉ xuất MỘT bảng 41 dòng ngắn theo mục E, không tạo bảng nhiều lần hoặc lặp 41 item trong JSON. Sau bảng nêu tối đa 8 phát hiện có chứng cứ, hai micro-test khác đích (có đáp án/lý do), rồi JSON summary coverage. Không suy luận B05 đã kiểm tra, không kết luận tần suất thi khi thiếu nguồn. Status PROPOSAL_ONLY. Nếu output dừng, ghi ID cuối; chờ file CONTINUE, đừng bắt đầu lại.
