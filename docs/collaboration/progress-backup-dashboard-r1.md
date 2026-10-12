@@ -3,7 +3,7 @@
 **Workstream:** `MATH-PROGRESS-LOCAL-BACKUP-R1-20261011`  
 **Goal:** high-quality private family learning (free-first, no account/server/billing); manually transfer progress among PC, iPad and phones; a useful Math learning dashboard independent of the English app.  
 **Source:** `main` checkpoint `99a17c110328142ce004405ebb0191dcf6d08d63`.  
-**Status:** `DEPLOYED_PC_TO_IPHONE_OWNER_SMOKE_PASS_UI_FIX_PENDING` — owner verified key flows, but not all-device / full learner-history certification.
+**Status:** `DEPLOYED_PC_TO_IPHONE_OWNER_SMOKE_PASS_UI_DESKTOP_IPHONE_CONFIRMED` — owner-verified transfer and desktop/iPhone post-fix presentation; iPad/Android transfer, A2 learner journey and full-history certification remain open.
 
 ## Scope
 
@@ -46,7 +46,7 @@
 - `REPLACE` import: requires downloading a pre-replacement backup; **observed PASS**.
 - After replacement, Dashboard figures on iPhone matched those shown on desktop; **observed PASS**.
 - This confirms one real cross-device workflow, **not** automatic sync, byte-for-byte validation of every historic record, or universal Android/iPad compatibility.
-- Owner screenshot exposed a **presentation-only Markdown leak** inside the Dashboard learning links and section titles. The root cause was Markdown inside raw HTML containers without the required Markdown-in-HTML parser support. Fix tracked in **PR #419**: semantic HTML headings and links, no changes to backup/restore logic.
+- Owner screenshot exposed a **presentation-only Markdown leak** inside the Dashboard learning links and section titles. The root cause was Markdown inside raw HTML containers without the required Markdown-in-HTML parser support. **PR #419 merged** at `59fbe3cce694005490335e63de527276b82cd1b2`, PR Quality run `38226664267` SUCCESS. `gh-pages/tien-do-hoc-tap/index.html` now contains semantic headings/links without leaked `##` or raw Markdown links. The owner subsequently confirmed that the corrected Dashboard headings and links display properly on **desktop and iPhone**; the exact iPhone browser was not specified. No change to backup/restore logic.
 
 ## Future THPT / SAT / ACT constraint
 
@@ -55,6 +55,7 @@ Keep backup envelopes/versioned namespaces extensible, but do not add THPT/SAT/A
 ## Handoff
 
 Initial feature: **PR #416 merged**, commit `d9095bccf2ca3c22477258beb398576923fcfa11`.  
-Visual fix: **PR #419** — https://github.com/TMA2015/roadmap-toan-thcs/pull/419 (QA/merge status must be checked live).  
+Safety hardening: **PR #418 merged** — https://github.com/TMA2015/roadmap-toan-thcs/pull/418.  
+Visual fix: **PR #419 merged**, main SHA `59fbe3cce694005490335e63de527276b82cd1b2` — https://github.com/TMA2015/roadmap-toan-thcs/pull/419.  
 Checkpoint: `docs/collaboration/release-readiness-checkpoint-20261011.md`.  
-Next: CI feedback → targeted fixes → merge only if green → verify live Pages → manual owner QA for real phone/PC.
+Next: separate iPad/Android test-data transfer + conflict/failure-mode observations; A2 authentic learner journey. Preserve all local stores and separate assessment evidence. No new runtime change justified by checkpoint documentation alone.
