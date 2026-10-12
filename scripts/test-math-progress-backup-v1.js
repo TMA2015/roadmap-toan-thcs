@@ -81,6 +81,11 @@ const samples={
   const nav=fs.readFileSync("mkdocs.yml","utf8");
   assert.ok(page.includes("data-math-progress-dashboard"));
   assert.ok(page.includes("data-math-progress-backup"));
+  assert.ok(page.includes('<h2 id="math-progress-continue-title">Tiếp tục học</h2>'));
+  assert.ok(page.includes('<h2 id="math-progress-backup-title">Sao lưu và khôi phục tiến độ</h2>'));
+  assert.ok(page.includes('<a href="../hoc-theo-lop/"><strong>Học theo lớp 6–9</strong></a>'));
+  assert.ok(!page.includes("## Tiếp tục học"));
+  assert.ok(!page.includes("[**Học theo lớp"));
   assert.ok(nav.includes("Tiến độ học tập: tien-do-hoc-tap/index.md"));
   assert.ok(!fs.readFileSync("docs/assets/javascripts/math-progress-dashboard-v1.js","utf8").includes("setItem("));
   console.log("PASS: versioned SHA-256 backup, allowlist, cross-device restore, conflict preview/replace gate, corruption reject and quota rollback.");
