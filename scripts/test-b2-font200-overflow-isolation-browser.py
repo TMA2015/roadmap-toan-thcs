@@ -71,7 +71,37 @@ PROBE = r"""() => {
     toggles.push({key:v.key,selector:v.selector,matched:document.querySelectorAll(v.selector).length,...size()});
     style.remove();
   }
-  return {initial,hierarchy,near,toggles};
+  const headerControls=[...document.querySelectorAll('.md-header__inner > *')].map(el=>{
+    const b=el.getBoundingClientRect(),s=getComputedStyle(el);
+    return {tag:el.tagName,cls:String(el.className?.baseVal||el.className||'').slice(0,100),
+      role:el.getAttribute('aria-label')||el.getAttribute('title')||'',
+      left:Math.round(b.left),right:Math.round(b.right),
+      width:Math.round(b.width),minWidth:s.minWidth,margin:s.margin,padding:s.padding};
+  });
+  const variations=[
+    {key:'compact-header-buttons', css:'.md-header__button{box-sizing:border-box!important;min-width:44px!important;min-height:44px!important;margin:0!important;padding:4px!important;}'},
+    {key:'compact-header-icon-only', css:'.md-header__button.md-icon{box-sizing:border-box!important;min-width:44px!important;min-height:44px!important;margin:0!important;padding:4px!important;}'},
+    {key:'compact-buttons-and-title', css:'.md-header__button{box-sizing:border-box!important;min-width:44px!important;min-height:44px!important;margin:0!important;padding:4px!important;}.md-header__title{min-width:0!important;}'},
+    {key:'compact-header-32px', css:'.md-header__button{box-sizing:border-box!important;min-width:44px!important;min-height:44px!important;margin:0!important;padding:2px!important;}'},
+    {key:'logo-only-hide', css:'.md-header__button.md-logo{display:none!important;}'},
+    {key:'hide-search-button', css:'.md-header__button[for*="search"]{display:none!important;}'},
+    {key:'shrink-header-title-and-flex', css:'.md-header__title{flex:1 1 0!important;min-width:0!important;margin-left:0!important;}'},
+    {key:'math-inline-local-scroll', css:'.md-typeset mjx-container[jax="CHTML"]{max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;}'},
+    {key:'math-display-local-scroll', css:'.md-typeset mjx-container[display="true"]{max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;}'},
+    {key:'table-scrollwrap', css:'.md-typeset__scrollwrap{max-width:100%!important;overflow-x:auto!important;}'}
+  ];
+  const trials=[];
+  for(const t of variations){
+    const el=document.createElement('style');
+    el.textContent=t.css;
+    document.head.append(el);
+    const buttons=[...document.querySelectorAll('.md-header__button')].filter(e=>{
+      const r=e.getBoundingClientRect();return r.height>0&&r.width>0;});
+    trials.push({key:t.key,...size(),headerButtons:buttons.map(e=>{
+      const r=e.getBoundingClientRect();return {w:Math.round(r.width),h:Math.round(r.height),right:Math.round(r.right)};})});
+    el.remove();
+  }
+  return {initial,hierarchy,near,toggles,headerControls,trials};
 }"""
 
 def inspect(browser, route):
