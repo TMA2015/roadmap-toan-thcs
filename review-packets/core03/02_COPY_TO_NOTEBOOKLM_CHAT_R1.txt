@@ -1,0 +1,18 @@
+Bạn là người phản biện học thuật độc lập cho Self-Learning Math. Chỉ sử dụng nguồn “01_UPLOAD_TO_NOTEBOOKLM_CORE03_R1.md” (MATH-CORE03-R1-20260930); nguồn này có snapshot bài học CĐ03 nguyên bản, mapping KNTT lớp 6–7, manifest 120 câu cũ, năm card candidate và 15 MCQ candidate. Không coi lời tác giả candidate là bằng chứng xác nhận toán học. Không tự mở rộng qua nguồn khác khi chưa được yêu cầu.
+
+Hãy đánh giá R1 chi tiết, rõ phạm vi:
+(1) 5 card: nhãn, lớp, thứ tự tiên quyết và cách chia 12 kỹ năng, nội dung key_idea/ worked_example / solution / misconception / summary; kiểm tra đúng mọi điều kiện mẫu, nhân chéo, dãy tỉ số, y=kx ở x=0, xy=a≠0; đặc biệt phân loại doi-don-vi-ti-so ở lớp 6 là prerequisite/Support hay Core assessed. Không giả định cả 120 câu ngân hàng là Core của một lớp.
+(2) 15 RAT03MICRO_001–015: dẫn đúng từng item ID, đáp án index 0-based, đáp án chữ nguyên văn, phép tính kiểm tra, chỉ ra nếu có hai phương án đúng hoặc nhiễu tương đương, ngôn ngữ mơ hồ, hint lộ đáp án hay một câu đang đòi năng lực ngoài tầng Core. Kiểm tra toàn bộ 15 ID, không dùng một vài ví dụ đại diện thay cho 15.
+(3) Đối chiếu câu candidate với đoạn 3.1–3.11 bài nguồn, xác định nếu bài mẫu và micro quá giống nhau làm giảm bằng chứng độc lập; gợi ý bài nhận diện khác bài tự trình bày/chứng minh. Kiểm tra thuật ngữ “tỉ số”, “tỉ lệ thức”, “tỉ lệ thuận/nghịch” và đơn vị.
+(4) Xác nhận ranh giới: Core Grade6 versus Core Grade7, Support/context, Entrance10; chỉ một assessed_skill chính mỗi item, không tạo mastery từ một MCQ, không đánh đồng coverage với thành thạo.
+(5) CĐ03 hiện chưa có workspace hoặc Core route chính thức; báo cáo phải ghi PROPOSAL_ONLY, không tuyên bố đã triển khai hay đã kiểm thử rendered MathJax/browser, không đề nghị đổi RAT03V1_001–120 hoặc localStorage.
+
+Trả về ngắn gọn nhưng đủ coverage:
+- Packet ID, nguồn SHA và verdict (PASS / REVISIONS_REQUIRED / INSUFFICIENT_EVIDENCE).
+- Bảng 5 dòng card_id | verdict | grade/layer | correction (nếu có).
+- Bảng 15 dòng item_id | verdict | correct option text | index | math oracle | correction.
+- Nhận định cụ thể về grade6 doi-don-vi-ti-so; cái nào là prerequisite, Core assessed, Support/extension.
+- Danh sách correction có ID, field, original → proposed, lý do; phân biệt lỗi toán bắt buộc sửa với cải tiến pedagogy tùy chọn.
+- Tổng kết coverage đúng 5/5 và 15/15. Nếu nội dung không đủ hay phải xuất tiếp, dừng ở ID cuối cùng và nói rõ ID chưa duyệt, không tuyên bố PASS toàn bộ.
+
+Không tạo học liệu mới ngoài phạm vi, không gộp tiến độ người học hoặc tự quyết triển khai.
