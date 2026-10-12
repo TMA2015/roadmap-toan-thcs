@@ -46,6 +46,19 @@ def metric(page, label, selectors):
     print("B2_R2_DIAG " + json.dumps({"case":label,**out},ensure_ascii=False))
     return out
 
+def require_measured_controls(out, groups):
+    """Hard gate reviewed visible targets only, not all controls on the website."""
+    assert out["documentOverflow"] <= 2, "Page-wide horizontal overflow: "+str(out)
+    for group in groups:
+        boxes = out["targets"][group]
+        assert boxes, "Missing sampled controls in "+group
+        for box in boxes:
+            assert box["width"] >= 44 and box["height"] >= 44, (
+                "Undersized target in "+group+": "+str(box))
+            assert box["withinParent"], "Measured target clips past container: "+str(box)
+            assert box["left"] >= -2 and box["right"] <= out["cssViewport"]+2, (
+                "Target off-screen: "+str(box))
+
 def check(browser, width, height):
     context=browser.new_context(viewport={"width":width,"height":height},has_touch=True,is_mobile=True,
                                device_scale_factor=2)
@@ -73,12 +86,20 @@ def check(browser, width, height):
 
         math_count=page.locator("article.md-content__inner mjx-container").count()
         print("B2_R2_MATH " + json.dumps({"cssWidth":width,"mathjaxNodesObserved":math_count},ensure_ascii=False))
+        assert math_count > 0, "No MathJax mathematical notation rendered in the sampled geometry article"
+        # 200% root text scaling is a text enlargement probe, NOT native zoom.
+        if width == 390:
+            page.evaluate("document.documentElement.style.fontSize='200%'")
+            enlarged = metric(page,"geometry_font_200pct_proxy",{"images":"article.md-content__inner img[src*='geometry/14/']"})
+            # Diagnostic only until the root-font probe has independent review.
+            page.evaluate("document.documentElement.style.removeProperty('font-size')")
 
         visit(page,"/kien-thuc/14-tam-giac/core/",
               ".topic-core-card .topic-core-teach-start")
         core=metric(page,"core_cards_"+str(width),{
           "start":".topic-core-card .topic-core-teach-start",
           "microStart":".topic-core-card .topic-micro-start"})
+        require_measured_controls(core, ["start","microStart"])
         page.locator(".topic-core-card .topic-core-teach-start").first.tap()
         dlg=page.locator("dialog.topic-core-dialog[open]")
         dlg.wait_for(timeout=15000)
@@ -87,6 +108,7 @@ def check(browser, width, height):
         }""")
         print("B2_R2_DIALOG " + json.dumps({"cssWidth":width,**bounds},ensure_ascii=False))
         assert bounds["width"]<=width+2 and bounds["left"]>=-2 and bounds["right"]<=width+2, "Teaching dialog clipped sideways"
+        assert bounds["top"]>=-2 and bounds["bottom"]<=height+2, "Teaching dialog clipped vertically"
         dlg.locator(".topic-core-dialog__close").tap()
 
         visit(page,"/kien-thuc/02-so-va-phep-tinh/bai-tap/",
@@ -95,24 +117,30 @@ def check(browser, width, height):
           "options":".practice-option",
           "toolbar":".practice-toolbar-actions button",
           "actions":".practice-actions button"})
-        assert practice["targets"]["options"], "Missing Practice options"
+        require_measured_controls(practice, ["options","toolbar","actions"])
         page.locator(".practice-option").first.tap()
         page.locator(".practice-feedback").first.wait_for(state="visible",timeout=10000)
-        metric(page,"practice_feedback_"+str(width),{"actions":".practice-actions button"})
+        feedback = metric(page,"practice_feedback_"+str(width),{"actions":".practice-actions button"})
+        require_measured_controls(feedback, ["actions"])
 
         visit(page,"/kien-thuc/02-so-va-phep-tinh/tu-kiem-tra/",
               ".readiness-option")
         ready=metric(page,"readiness_"+str(width),{
           "options":".readiness-option",
           "nav":".readiness-nav button"})
-        assert ready["targets"]["options"], "Missing Readiness choice targets"
+        require_measured_controls(ready, ["options","nav"])
         page.locator(".readiness-option").first.tap()
         assert page.locator(".readiness-option input:checked").count()==1
         assert page.evaluate("localStorage.getItem('toan-thcs-assessment-v1')") is None, "Choice alone recorded an assessment"
 
         visit(page,"/tien-do-hoc-tap/",
               "[data-math-progress-backup][data-backup-ready=true]")
-        metric(page,"dashboard_"+str(width),{"actions":".mpd-action","restore":".mpd-restore-list details summary"})
+        dashboard = metric(page,"dashboard_"+str(width),{"actions":".mpd-action","restore":".mpd-restore-list details summary"})
+        require_measured_controls(dashboard, ["actions"])
+        if width == 390:
+            page.evaluate("document.documentElement.style.fontSize='200%'")
+            metric(page,"dashboard_font_200pct_proxy",{"actions":".mpd-action"})
+            page.evaluate("document.documentElement.style.removeProperty('font-size')")
 
         assert not errors, errors
         print("PASS B2 R2 diagnostic complete:",width,"CSS px; all operations used disposable mobile touch context")
