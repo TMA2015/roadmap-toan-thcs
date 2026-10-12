@@ -110,7 +110,12 @@ PROBE = r"""() => {
     return {tag:el.tagName,overflowX:s.overflowX,overflowY:s.overflowY,
       width:el.clientWidth,scrollWidth:el.scrollWidth};
   });
-  return {initial,hierarchy,near,toggles,headerControls,trials,mathBlocks};
+  const inlineMath=[...document.querySelectorAll('article.md-content__inner span.arithmatex')].map(el=>{
+    const s=getComputedStyle(el);
+    return {display:s.display,overflowX:s.overflowX,
+      width:el.clientWidth,scrollWidth:el.scrollWidth};
+  });
+  return {initial,hierarchy,near,toggles,headerControls,trials,mathBlocks,inlineMath};
 }"""
 
 def inspect(browser, route):
@@ -141,6 +146,10 @@ def inspect(browser, route):
             assert result["mathBlocks"], "Geometry page must include display-math containers"
             assert all(block["overflowX"] == "auto" for block in result["mathBlocks"]), (
                 "Display math must scroll locally instead of widening the entire page")
+            assert result["inlineMath"], "Geometry page must contain inline maths"
+            assert all(item["display"] == "inline-block" and item["overflowX"] == "auto"
+                       for item in result["inlineMath"]), (
+                "Wide inline math must stay inline-level and scroll locally")
         assert not errors,errors
         return result
     finally:
