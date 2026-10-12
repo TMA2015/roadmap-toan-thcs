@@ -1,6 +1,15 @@
 # Math App — Durable Continuation Checkpoint 2026-10-11
 
 **Current initiative:** Family-use THCS V1 Release Readiness Audit R1; future-track extension architecture feasibility (THPT/SAT/ACT), no new academic content.
+## Verified current state — 12/10/2026 after PR #419
+
+- Live Math `main`: `59fbe3cce694005490335e63de527276b82cd1b2`, corresponding to **PR #419 merged**. Previous merges **#416** and **#418** remain in ancestry.  
+- PR #419 Roadmap PR Quality workflow `38226664267`: **SUCCESS**. The published GitHub Pages `tien-do-hoc-tap/index.html` contains semantic `<h2>` headings and `<a>` links, and no raw Markdown `## Tiếp tục học`/`[Học theo lớp...]` leakage. Published backup JavaScript bytes match `main` at blob SHA `960c094ab7bb44698868d12b05a7f9e03cbd8bcf`.  
+- Owner **reported PASS** real desktop→iPhone JSON transfer for `ADD_MISSING_ONLY` and safety-backup-gated `REPLACE`; restored dashboard counts matched desktop. This is not an independent bytewise check of all historical records.  
+- **OPEN:** owner visually rechecks fixed HTML in real Safari; iPad/Android real-device transfer/failure paths; A2 real student learning observations. No account, cloud sync, scoring, historical write, Mastery/Readiness or taxonomy activation was added.  
+- Previous PR **#417** contains stale documentation based on #416 alone and now conflicts with merged #418/#419. Do not merge its old text; supersede through this source-current documentation reconciliation.  
+- Next learning-quality gate is the [A2 Learner QA R1](release-readiness-a2-learner-qa-r1.md): note actual learner confusion, tasks completed without help, and whether remediation works. Do not declare a family-use V1 pedagogically certified on CI alone.
+
 
 ## Continuation — 12/10/2026, restore safety follow-up
 
