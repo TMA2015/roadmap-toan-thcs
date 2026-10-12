@@ -2,8 +2,20 @@
 
 **Audit ID:** `MATH-B1-SAVE-FAILURE-R2-20261012`  
 **Base:** public GitHub `main` commit `59fbe3cce694005490335e63de527276b82cd1b2`  
-**Status:** `BASELINE_REPRODUCED / BOUNDED_FIX_CANDIDATE_QA_PENDING / NO_DEPLOYMENT_AUTHORIZED`  
+**Status:** `FIX_RELEASED / TECHNICAL_QA_PASS / OWNER_STORAGE_FAILURE_QA_OPEN`  
 **Nature:** source-locked, documentation-only investigation. No runtime, stored user data, assessment score, schema, learner history, Firebase, or academic-content change.
+
+## Release receipt — 12/10/2026
+
+- Fix PR [#423](https://github.com/TMA2015/roadmap-toan-thcs/pull/423) **merged**, squash commit `c64e30275bb7df45227825a7e981164330655be5`.
+- Final Roadmap PR Quality run `38233940398`: **SUCCESS**. Log confirms **6/6 B1 R2 browser scenarios**:
+  - denied Practice write: answer explanation and next controls usable; warning says UNSAVED; prior raw key unchanged;
+  - denied Readiness write: calculated result displayed with UNSAVED warning; no fabricated saved attempt;
+  - malformed Practice / Readiness stored JSON: preserved byte-for-byte; fresh response not written over it;
+  - two ordinary Practice / Readiness save positive controls: both persisted with no warning.
+- Release `Deploy MkDocs` run [38234778211](https://github.com/TMA2015/roadmap-toan-thcs/actions/runs/38234778211): **SUCCESS**, exactly on the merge SHA above.
+- Published `gh-pages/assets/javascripts/` blobs match `main/docs/assets/javascripts/`: learner evidence `d4d5e882d7914d5a933d154c3635d63db6e192e1`, Practice v2 `d7130ec7e0c1486ca72391ac54acb08c2046c094`, Readiness v1 `c56fb6b93414b9678f15d01a91816c8104350b31`.
+- **Not claimed:** real low-storage iPhone/iPad/Android PASS, semantic recovery of corrupted history, general backup of malformed stores, automatic sync, or A2 pedagogical PASS. Reminder: manually saved JSON can still be unavailable when corrupt top-level data prevents safe export.
 
 ## Evidence update — deterministic Chromium reproducer, 12/10/2026
 
@@ -59,4 +71,4 @@ Source blob IDs used for reconciliation:
 
 ## Scope and decision
 
-This audit is an R2 **candidate QA plan**, not an emergency production patch or a claim that all learner history is at risk. Highest-value next action is a deterministic denied-write browser reproducer with exact source SHA; only after reproducing should a narrow UX/data-safety fix be authored. Parallel A2 human learner feedback (including two Grade 9/10 peer testers) remains pending and independent.
+This document began as an R2 **candidate QA plan** and now contains its verified regression + release receipts. The narrow fix is deployed; retain the source-locked original findings as historical evidence. Continue manual device durability observations with disposable data and A2 human feedback (including two Grade 9/10 peer testers) independently; do not claim full V1 release clearance from CI alone.
