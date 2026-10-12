@@ -3,7 +3,7 @@
 **Workstream:** `MATH-PROGRESS-LOCAL-BACKUP-R1-20261011`  
 **Goal:** high-quality private family learning (free-first, no account/server/billing); manually transfer progress among PC, iPad and phones; a useful Math learning dashboard independent of the English app.  
 **Source:** `main` checkpoint `99a17c110328142ce004405ebb0191dcf6d08d63`.  
-**Status:** `CANDIDATE_PENDING_PR_QA_AND_OWNER_TEST`.
+**Status:** `DEPLOYED_PC_TO_IPHONE_OWNER_SMOKE_PASS_UI_FIX_PENDING` — owner verified key flows, but not all-device / full learner-history certification.
 
 ## Scope
 
@@ -39,13 +39,22 @@
 - Full public-repo GitHub PR Quality and Pages build/deploy.
 - Owner manual test: perform download → transfer → file upload across **real** Windows/Android/iOS/iPadOS browsers with TEST data. Verify download availability and file-picker UX; do not test by overwriting real learning history.
 
+## Owner device QA — 12/10/2026 (reported)
+
+- Real **desktop → iPhone** backup-file transfer and import: **observed PASS**.
+- `ADD_MISSING_ONLY` import: **observed PASS**.
+- `REPLACE` import: requires downloading a pre-replacement backup; **observed PASS**.
+- After replacement, Dashboard figures on iPhone matched those shown on desktop; **observed PASS**.
+- This confirms one real cross-device workflow, **not** automatic sync, byte-for-byte validation of every historic record, or universal Android/iPad compatibility.
+- Owner screenshot exposed a **presentation-only Markdown leak** inside the Dashboard learning links and section titles. The root cause was Markdown inside raw HTML containers without the required Markdown-in-HTML parser support. Fix tracked in **PR #419**: semantic HTML headings and links, no changes to backup/restore logic.
+
 ## Future THPT / SAT / ACT constraint
 
 Keep backup envelopes/versioned namespaces extensible, but do not add THPT/SAT/ACT data blindly to this THCS allowlist. New content tracks need explicit scoped storage keys, curriculum/assessment semantics and non-destructive migration evidence. This R1 feature does not implement that extension.
 
 ## Handoff
 
-Branch: `feature/local-backup-dashboard-r1-20261011`.  
-PR: **#416** — https://github.com/TMA2015/roadmap-toan-thcs/pull/416 (Draft; QA pending).  
+Initial feature: **PR #416 merged**, commit `d9095bccf2ca3c22477258beb398576923fcfa11`.  
+Visual fix: **PR #419** — https://github.com/TMA2015/roadmap-toan-thcs/pull/419 (QA/merge status must be checked live).  
 Checkpoint: `docs/collaboration/release-readiness-checkpoint-20261011.md`.  
 Next: CI feedback → targeted fixes → merge only if green → verify live Pages → manual owner QA for real phone/PC.
