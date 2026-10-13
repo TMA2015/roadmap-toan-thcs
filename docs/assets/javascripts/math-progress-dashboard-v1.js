@@ -51,59 +51,88 @@
     const d=new Date(s);
     return Number.isNaN(d.getTime())?"Không rõ thời điểm":new Intl.DateTimeFormat("vi-VN",{day:"2-digit",month:"2-digit",year:"numeric"}).format(d);
   };
+  /* R2-A: display what an actual student can use; never rewrite learner history. */
   const show=(root,result)=>{
     root.replaceChildren();
-    const bad=Object.entries(result.source_states).filter(([_,state])=>["invalid","unavailable"].includes(state));
-    if(bad.length){
-      const p=el("p","mpd-warning","Một số vùng lưu trữ chưa đọc được ("+bad.map(([k])=>k).join(", ")+"). Không tự xóa dữ liệu. Hãy xem phần Sao lưu/Khôi phục hoặc kiểm tra trình duyệt.");
-      root.append(p);
+    const state=result.source_states;
+    const problems=[["practice","Core / Luyện tập"],["readiness","Tự kiểm tra"]]
+      .filter(([key])=>["invalid","unavailable"].includes(state[key]))
+      .map(([,label])=>label);
+    const p=(className,copy)=>{
+      const node=el("p",className,copy);
+      return node;
+    };
+    const sectionTitle=el("h2","mpd-section-title","Em đã học những gì?");
+    root.append(sectionTitle,p("mpd-intro","Ba cách học khác nhau. Em có thể học bài, luyện câu hỏi và tự kiểm tra sau khi đã học."));
+    if(problems.length){
+      const warning=p("mpd-warning","Không đọc được dữ liệu "+problems.join(" và ")+" trên thiết bị này. Kết quả cũ không bị xóa hay ghi đè. Em có thể nhờ người lớn kiểm tra phần Sao lưu và khôi phục bên dưới.");
+      warning.setAttribute("role","alert");
+      root.append(warning);
     }
+    const count=(key,value)=>state[key]==="ok"?fmt(value):state[key]==="empty"?"0":"—";
     const grid=el("div","mpd-grid");
-    const cards=[
-      ["Lượt làm Practice",result.source_states.practice==="ok"?fmt(result.practice.attempted):"—",
-       "Tổng số lượt trả lời, kể cả làm lại; không phải số câu khác nhau."],
-      ["Câu Practice đã thử",result.source_states.practice==="ok"?fmt(result.practice.unique_questions):"—",
-       "Số câu hỏi khác nhau đã có lượt trả lời."],
-      ["Bài tự kiểm tra đã nộp",result.source_states.readiness==="ok"?fmt(result.readiness.submitted):"—",
-       "Chỉ đếm bài Readiness được nộp, không lấy Practice thay thế."],
-      ["Đơn vị luyện độc lập",result.source_states.taxonomy==="ok"?fmt(result.independent.units):"—",
-       "Bằng chứng độc lập ghi nhận bởi Taxonomy v2; không phải điểm thành thạo."]
-    ];
-    for(const [label,value,detail] of cards){
+    const card=(lane,title,value,description,actionLabel,href)=>{
       const box=el("section","mpd-stat");
-      box.append(el("span","mpd-stat-label",label),el("strong","mpd-stat-value",value),el("p","",detail));
+      box.dataset.lane=lane;
+      const label=el("h3","mpd-stat-label",title);
+      const number=el("strong","mpd-stat-value",value);
+      if(lane==="core")number.classList.add("mpd-stat-value--text");
+      box.append(label,number,p("",description));
+      if(actionLabel&&href){
+        const link=el("a","mpd-stat-link",actionLabel);
+        link.href=href;
+        box.append(link);
+      }
       grid.append(box);
-    }
+    };
+    card("core","1 · Trong bài học (Core)","Học và thử",
+      "Đọc bài giảng, xem ví dụ và thử câu hỏi ngắn. Các lượt trả lời cũ ở đây đang được lưu chung với Luyện tập.",
+      "Vào bài học","../hoc-theo-lop/");
+    card("practice","2 · Luyện tập",
+      count("practice",result.practice.attempted),
+      "Lượt trả lời câu hỏi ở cả Core và Luyện tập, kể cả làm lại; hiện chưa thể tách hai loại chính xác từ lịch sử cũ.",
+      "Chọn chuyên đề","../luyen-tap/");
+    card("readiness","3 · Tự kiểm tra",
+      count("readiness",result.readiness.submitted),
+      "Số bài tự kiểm tra đã nộp. Kết quả được lưu riêng, không cộng với lượt luyện tập.",
+      "Chọn bài để học","../hoc-theo-lop/");
     root.append(grid);
+    const anyActivity=result.practice.attempted>0||result.readiness.submitted>0;
+    if(!anyActivity&&!problems.length){
+      root.append(p("mpd-empty","Chưa có kết quả học tập được ghi nhận trên thiết bị này. Em có thể chọn một bài học hoặc thử luyện tập để bắt đầu."));
+    }
     const cols=el("div","mpd-columns");
     const practices=el("section","mpd-panel");
-    practices.append(el("h2","","Kỹ năng đã luyện"));
-    const tags=result.practice.skills.slice(0,8);
-    if(result.source_states.practice!=="ok")practices.append(el("p","","Chưa đọc được dữ liệu luyện tập."));
-    else if(!tags.length)practices.append(el("p","","Em chưa có lượt Practice được ghi nhận trên trình duyệt này."));
-    else {
-      practices.append(el("p","mpd-hint","Mức độ hoạt động theo tag cũ; không phải xếp hạng thành thạo."));
+    practices.append(el("h2","","Những kỹ năng em đã thực hành"));
+    if(["invalid","unavailable"].includes(state.practice)){
+      practices.append(p("","Chưa thể xem hoạt động luyện tập. Dữ liệu cũ được giữ nguyên."));
+    }else if(!result.practice.skills.length){
+      practices.append(p("","Chưa có kỹ năng nào được ghi nhận. Em có thể bắt đầu từ Học theo lớp."));
+    }else{
+      practices.append(p("","Đã ghi nhận hoạt động với "+fmt(result.practice.skills.length)+" nhóm kỹ năng trong các lượt trả lời câu hỏi."));
+      practices.append(p("mpd-hint","Đây là số nhóm đã luyện, không phải đánh giá em giỏi hay yếu. Để xem kỹ năng cụ thể và ôn thêm, mở Bản đồ kỹ năng."));
+      const link=el("a","mpd-stat-link","Xem Bản đồ kỹ năng");
+      link.href="../ban-do-ky-nang/";
+      practices.append(link);
+    }
+    const checks=el("section","mpd-panel");
+    checks.append(el("h2","","Các lần tự kiểm tra gần đây"));
+    if(["invalid","unavailable"].includes(state.readiness)){
+      checks.append(p("","Chưa thể xem các lần tự kiểm tra. Dữ liệu cũ được giữ nguyên."));
+    }else if(!result.readiness.recent.length){
+      checks.append(p("","Chưa có bài tự kiểm tra đã nộp trên thiết bị này."));
+    }else{
       const ul=el("ul","mpd-activity-list");
-      for(const t of tags){
+      for(const [i,r] of result.readiness.recent.entries()){
         const li=el("li");
-        li.append(el("span","",t.id),el("strong","",fmt(t.correct)+"/"+fmt(t.attempted)));
+        li.append(el("span","","Lần "+(i+1)+" · "+safeDate(r.at)),el("strong","",fmt(r.correct)+"/"+fmt(r.total)+" câu đúng"));
         ul.append(li);
       }
-      practices.append(ul);
+      checks.append(ul);
     }
-    const checks=el("section","mpd-panel");checks.append(el("h2","","Các lần tự kiểm tra gần đây"));
-    if(result.source_states.readiness!=="ok")checks.append(el("p","","Chưa đọc được dữ liệu tự kiểm tra."));
-    else if(!result.readiness.recent.length)checks.append(el("p","","Chưa có bài Readiness đã nộp trên trình duyệt này."));
-    else{
-      const ul=el("ul","mpd-activity-list");
-      for(const r of result.readiness.recent){
-        const li=el("li");
-        li.append(el("span","",r.id+" · "+safeDate(r.at)),el("strong","",fmt(r.correct)+"/"+fmt(r.total)));
-        ul.append(li);
-      }checks.append(ul);
-    }
-    cols.append(practices,checks);root.append(cols);
-    root.append(el("p","mpd-footnote","Các số liệu chỉ mô tả hoạt động trên trình duyệt hiện tại. Không cộng các lượt Practice với bằng chứng độc lập; không kết luận em yếu hay thành thạo từ vài lượt làm."));
+    cols.append(practices,checks);
+    root.append(cols);
+    root.append(p("mpd-footnote","Chỉ hiển thị kết quả trên trình duyệt đang dùng. Core và Luyện tập đang chia sẻ bộ đếm cũ; Tự kiểm tra được ghi riêng. Không tự suy ra mức độ thành thạo hoặc sửa lại kết quả. Thống kê 7/30 ngày chưa được bật vì lịch sử cũ chưa có đủ thời gian từng lượt."));
   };
   const boot=()=>{
     document.querySelectorAll("[data-math-progress-dashboard]").forEach(root=>{

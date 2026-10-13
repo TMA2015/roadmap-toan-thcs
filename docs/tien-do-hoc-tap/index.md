@@ -1,6 +1,6 @@
 # Tiến độ học tập của em
 
-Trang tổng hợp giúp em xem hoạt động học Toán trên **thiết bị đang dùng**, tìm bài để học tiếp và bảo vệ dữ liệu của mình. Đây là bản đầu tiên dành cho gia đình, không phải bảng xếp hạng hay công cụ chấm mức độ thành thạo.
+Ở đây em có thể xem các hoạt động học đã được ghi nhận **trên thiết bị này**, tìm bài học tiếp theo và sao lưu kết quả. Các con số giúp em theo dõi việc học, không phải điểm xếp hạng hay kết luận em giỏi hoặc yếu.
 
 <div class="math-progress-page">
 
@@ -26,7 +26,8 @@ Trang tổng hợp giúp em xem hoạt động học Toán trên **thiết bị 
     - Tất cả thống kê trên trang này chỉ đọc dữ liệu lưu **ngay trong trình duyệt**. Không cần tài khoản và không gửi lịch sử học lên máy chủ.
     - Sao lưu tạo tệp `.json` có kiểm tra SHA-256. Chuyển tệp sang máy khác rồi chọn để khôi phục. Chế độ mặc định **chỉ thêm dữ liệu chưa có**, không ghi đè tiến độ đang lưu. **Nếu máy đích đã có dữ liệu cùng loại nhưng khác nội dung, phần đó sẽ bị bỏ qua và được cảnh báo rõ**, không tự gộp.
     - Khi muốn **thay thế dữ liệu trùng**, trước tiên phải tạo một bản dự phòng từ thiết bị hiện tại và xác nhận rõ ràng. Không tự cộng gộp hay chấm lại câu hỏi cũ.
-    - Dữ liệu Practice, Readiness và bằng chứng kỹ năng phục vụ những mục đích đánh giá khác nhau; các số trong bảng không được cộng làm một điểm tổng hợp.
+    - Bài học Core và Luyện tập đang lưu chung một số bộ đếm câu hỏi cũ, nên không thể chia lại lịch sử thành hai con số chính xác. Tự kiểm tra được ghi riêng. Không cộng các nhóm số thành một điểm tổng hợp.
+    - Chưa hiển thị số bài theo tuần/tháng hoặc chuỗi ngày học vì không phải mọi lượt làm cũ đều có thông tin ngày giờ.
     - Nếu nhiều người học dùng cùng một trình duyệt và cùng tên miền, tiến độ có thể bị trộn. Bản này chưa có hồ sơ riêng cho mỗi người.
 
 !!! warning "Giới hạn cần biết"
