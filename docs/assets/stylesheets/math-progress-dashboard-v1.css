@@ -15,6 +15,10 @@
 .mpd-activity-list li strong{white-space:nowrap;font-variant-numeric:tabular-nums}
 .mpd-warning{padding:.78rem .9rem;border-left:3px solid var(--md-accent-fg-color);border-radius:.4rem;background:color-mix(in srgb,var(--md-accent-fg-color) 6%,transparent);font-size:.81rem;line-height:1.6}
 .mpd-panel+.mpd-panel{margin-top:1rem}
+/* R2-A follow-up: the paired panels share the same Grid row and height.
+   Grid gap already supplies spacing when stacked on a phone. */
+.mpd-columns>.mpd-panel+.mpd-panel{margin-top:0}
+.mpd-columns>.mpd-panel{height:100%}
 .mpd-action{display:inline-flex;align-items:center;justify-content:center;max-width:100%;border:1px solid var(--md-primary-fg-color);background:transparent;color:var(--md-primary-fg-color);padding:.52rem .85rem;border-radius:.46rem;cursor:pointer;min-height:2.4rem;font:inherit;font-size:.8rem;font-weight:700;margin:.35rem .6rem .35rem 0}
 .mpd-action.mpd-primary{background:var(--md-primary-fg-color);color:var(--md-primary-bg-color)}
 .mpd-action:disabled{opacity:.45;cursor:not-allowed}

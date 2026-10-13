@@ -86,15 +86,15 @@
       grid.append(box);
     };
     card("core","1 · Trong bài học (Core)","Học và thử",
-      "Đọc bài giảng, xem ví dụ và thử câu hỏi ngắn. Các lượt trả lời cũ ở đây đang được lưu chung với Luyện tập.",
+      "Đọc bài giảng, xem ví dụ và thử những câu hỏi ngắn để hiểu bài.",
       "Vào bài học","../hoc-theo-lop/");
     card("practice","2 · Luyện tập",
       count("practice",result.practice.attempted),
-      "Lượt trả lời câu hỏi ở cả Core và Luyện tập, kể cả làm lại; hiện chưa thể tách hai loại chính xác từ lịch sử cũ.",
+      "Tổng số lượt trả lời câu hỏi trong bài học và khi luyện theo chuyên đề; có tính lượt làm lại.",
       "Chọn chuyên đề","../luyen-tap/");
     card("readiness","3 · Tự kiểm tra",
       count("readiness",result.readiness.submitted),
-      "Số bài tự kiểm tra đã nộp. Kết quả được lưu riêng, không cộng với lượt luyện tập.",
+      "Số bài tự kiểm tra đã nộp. Đây là số bài, không phải số lượt trả lời câu hỏi.",
       "Chọn bài để học","../hoc-theo-lop/");
     root.append(grid);
     const anyActivity=result.practice.attempted>0||result.readiness.submitted>0;
@@ -132,7 +132,7 @@
     }
     cols.append(practices,checks);
     root.append(cols);
-    root.append(p("mpd-footnote","Chỉ hiển thị kết quả trên trình duyệt đang dùng. Core và Luyện tập đang chia sẻ bộ đếm cũ; Tự kiểm tra được ghi riêng. Không tự suy ra mức độ thành thạo hoặc sửa lại kết quả. Thống kê 7/30 ngày chưa được bật vì lịch sử cũ chưa có đủ thời gian từng lượt."));
+    root.append(p("mpd-footnote","Số lượt trả lời câu hỏi là một chỉ số chung cho Core và Luyện tập. Bài tự kiểm tra đã nộp được thống kê riêng, không cộng chung hai loại. Chỉ hiển thị hoạt động trên thiết bị này, không phải điểm thành thạo. Số liệu 7/30 ngày sẽ được bổ sung khi có đủ thời gian từng lượt."));
   };
   const boot=()=>{
     document.querySelectorAll("[data-math-progress-dashboard]").forEach(root=>{
