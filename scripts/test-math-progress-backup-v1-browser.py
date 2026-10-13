@@ -33,7 +33,7 @@ with sync_playwright() as pw:
     browser=pw.chromium.launch(executable_path=CHROME,headless=True,args=["--no-sandbox","--disable-dev-shm-usage"])
     # R2-A: an empty browser is not a storage failure; show honest zeroes.
     empty_ctx,empty=start(browser,390,844)
-    assert empty.locator(".mpd-stat-value").all_inner_texts()==["Học và thử","0","0"]
+    assert empty.locator(".mpd-stat-value").all_inner_texts()==["Học và thực hành","0","0"]
     empty_display=empty.locator("[data-math-progress-dashboard]").inner_text()
     assert "Chưa có kết quả học tập" in empty_display
     assert "Không đọc được dữ liệu" not in empty_display
@@ -48,7 +48,7 @@ with sync_playwright() as pw:
               "toan-thcs-assessment-v1":"{broken-readiness"})
     bad.reload(wait_until="domcontentloaded")
     bad.locator('[data-math-progress-dashboard][data-progress-ready="true"]').wait_for(timeout=30000)
-    assert bad.locator(".mpd-stat-value").all_inner_texts()==["Học và thử","—","—"]
+    assert bad.locator(".mpd-stat-value").all_inner_texts()==["Học và thực hành","—","—"]
     assert "Không đọc được dữ liệu" in bad.locator("[data-math-progress-dashboard]").inner_text()
     assert bad.evaluate("localStorage.getItem('toan-thcs-practice-v1')")=="{broken"
     assert bad.evaluate("localStorage.getItem('toan-thcs-assessment-v1')")=="{broken-readiness"
@@ -61,11 +61,17 @@ with sync_playwright() as pw:
     a.reload(wait_until="domcontentloaded")
     a.locator('[data-math-progress-dashboard][data-progress-ready="true"]').wait_for(timeout=30000)
     values=a.locator(".mpd-stat-value").all_inner_texts()
-    assert values==["Học và thử","3","1"],values
+    assert values==["Học và thực hành","3","1"],values
     assert a.locator(".mpd-stat").count()==3
     assert a.locator('.mpd-stat[data-lane="core"]').count()==1
-    assert "những câu hỏi ngắn" in a.locator('.mpd-stat[data-lane="core"]').inner_text()
-    assert "Tổng số lượt trả lời câu hỏi" in a.locator('.mpd-stat[data-lane="practice"]').inner_text()
+    core_card=a.locator('.mpd-stat[data-lane="core"]')
+    assert core_card.get_by_role("heading",name="1 · Core theo chặng",exact=True).count()==1
+    assert "Học và thực hành" in core_card.inner_text()
+    assert "những câu hỏi ngắn" in core_card.inner_text()
+    assert a.locator('.mpd-stat[data-lane="practice"]').get_by_role("heading",name="2 · Luyện tập theo chuyên đề",exact=True).count()==1
+    assert "Tổng số lượt trả lời câu hỏi Core theo chặng và khi luyện tập theo chuyên đề; có tính lượt làm lại." in a.locator('.mpd-stat[data-lane="practice"]').inner_text()
+    assert "Trong bài học (Core)" not in a.locator("[data-math-progress-dashboard]").inner_text()
+    assert "Học và thử" not in a.locator("[data-math-progress-dashboard]").inner_text()
     assert "bộ đếm cũ" not in a.locator("[data-math-progress-dashboard]").inner_text()
     assert "Taxonomy v2" not in a.locator("[data-math-progress-dashboard]").inner_text()
     # Both summary panels must have an identical top/bottom on wide screens.
