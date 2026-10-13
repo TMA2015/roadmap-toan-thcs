@@ -64,8 +64,18 @@ with sync_playwright() as pw:
     assert values==["Học và thử","3","1"],values
     assert a.locator(".mpd-stat").count()==3
     assert a.locator('.mpd-stat[data-lane="core"]').count()==1
-    assert "lưu chung" in a.locator('.mpd-stat[data-lane="core"]').inner_text()
-    assert "cả Core và Luyện tập" in a.locator('.mpd-stat[data-lane="practice"]').inner_text()
+    assert "những câu hỏi ngắn" in a.locator('.mpd-stat[data-lane="core"]').inner_text()
+    assert "Tổng số lượt trả lời câu hỏi" in a.locator('.mpd-stat[data-lane="practice"]').inner_text()
+    assert "bộ đếm cũ" not in a.locator("[data-math-progress-dashboard]").inner_text()
+    assert "Taxonomy v2" not in a.locator("[data-math-progress-dashboard]").inner_text()
+    # Both summary panels must have an identical top/bottom on wide screens.
+    panels=a.locator(".mpd-columns > .mpd-panel")
+    assert panels.count()==2
+    boxes=[panels.nth(i).bounding_box() for i in range(2)]
+    assert all(boxes),boxes
+    assert abs(boxes[0]["y"]-boxes[1]["y"])<=2,boxes
+    assert abs(boxes[0]["height"]-boxes[1]["height"])<=2,boxes
+    assert abs(boxes[0]["width"]-boxes[1]["width"])<=2,boxes
     assert a.locator(".mpd-activity-list").count()==1
     assert "Taxonomy" not in a.locator("[data-math-progress-dashboard]").inner_text()
     # Raw Markdown must not leak from mixed HTML/Markdown containers.
@@ -148,6 +158,12 @@ with sync_playwright() as pw:
     b.locator(".mpd-status").get_by_text("SHA-256 không khớp",exact=False).wait_for(timeout=10000)
     assert restore.is_disabled()
     assert b.evaluate("localStorage.getItem('toan-thcs-practice-v1')")==entries["toan-thcs-practice-v1"]
+    b.reload(wait_until="domcontentloaded")
+    b.locator('[data-math-progress-dashboard][data-progress-ready="true"]').wait_for(timeout=30000)
+    panels=b.locator(".mpd-columns > .mpd-panel")
+    assert panels.count()==2
+    first,second=[panels.nth(i).bounding_box() for i in range(2)]
+    assert first and second and second["y"]>=first["y"]+first["height"]+2,(first,second)
     b.screenshot(path=str(OUT/"math-progress-dashboard-r1-mobile.png"),full_page=False)
     assert b.evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth + 2")
     assert not errors,errors
