@@ -75,6 +75,11 @@ const samples={
   assert.equal(d.independent.correct,1);
   assert.equal(d.independent.families,1);
   assert.equal(Dashboard.summarize(new MemoryStorage()).practice.attempted,0);
+  assert.equal(Dashboard.summarize(new MemoryStorage()).source_states.practice,"empty");
+  assert.equal(Dashboard.summarize(new MemoryStorage()).source_states.readiness,"empty");
+  // No source-lane migration or weekly activity inferred from cumulative legacy counters.
+  assert.equal(Dashboard.summarize(migrated).practice.attempted,3);
+  assert.equal(migrated.getItem("toan-thcs-practice-v1"),samples["toan-thcs-practice-v1"]);
   assert.equal(Dashboard.summarize(malformed).source_states.readiness,"invalid");
 
   const page=fs.readFileSync("docs/tien-do-hoc-tap/index.md","utf8");
