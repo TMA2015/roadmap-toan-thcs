@@ -85,12 +85,12 @@
       }
       grid.append(box);
     };
-    card("core","1 · Trong bài học (Core)","Học và thử",
-      "Đọc bài giảng, xem ví dụ và thử những câu hỏi ngắn để hiểu bài.",
+    card("core","1 · Core theo chặng","Học và thực hành",
+      "Học qua bài giảng, ví dụ và thực hành những câu hỏi ngắn theo từng chặng.",
       "Vào bài học","../hoc-theo-lop/");
-    card("practice","2 · Luyện tập",
+    card("practice","2 · Luyện tập theo chuyên đề",
       count("practice",result.practice.attempted),
-      "Tổng số lượt trả lời câu hỏi trong bài học và khi luyện theo chuyên đề; có tính lượt làm lại.",
+      "Tổng số lượt trả lời câu hỏi Core theo chặng và khi luyện tập theo chuyên đề; có tính lượt làm lại.",
       "Chọn chuyên đề","../luyen-tap/");
     card("readiness","3 · Tự kiểm tra",
       count("readiness",result.readiness.submitted),
@@ -132,7 +132,7 @@
     }
     cols.append(practices,checks);
     root.append(cols);
-    root.append(p("mpd-footnote","Số lượt trả lời câu hỏi là một chỉ số chung cho Core và Luyện tập. Bài tự kiểm tra đã nộp được thống kê riêng, không cộng chung hai loại. Chỉ hiển thị hoạt động trên thiết bị này, không phải điểm thành thạo. Số liệu 7/30 ngày sẽ được bổ sung khi có đủ thời gian từng lượt."));
+    root.append(p("mpd-footnote","Số lượt trả lời câu hỏi là một chỉ số chung cho Core theo chặng và Luyện tập theo chuyên đề. Bài tự kiểm tra đã nộp được thống kê riêng, không cộng chung hai loại. Chỉ hiển thị hoạt động trên thiết bị này, không phải điểm thành thạo. Số liệu 7/30 ngày sẽ được bổ sung khi có đủ thời gian từng lượt."));
   };
   const boot=()=>{
     document.querySelectorAll("[data-math-progress-dashboard]").forEach(root=>{
