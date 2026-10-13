@@ -38,9 +38,13 @@ with sync_playwright() as pw:
     a.reload(wait_until="domcontentloaded")
     a.locator('[data-math-progress-dashboard][data-progress-ready="true"]').wait_for(timeout=30000)
     values=a.locator(".mpd-stat-value").all_inner_texts()
-    assert values[:4]==["3","2","1","1"],values
-    assert a.locator(".mpd-activity-list").count()==2
-    assert a.locator(".mpd-stat").count()==4
+    assert values==["Học và thử","3","1"],values
+    assert a.locator(".mpd-stat").count()==3
+    assert a.locator('.mpd-stat[data-lane="core"]').count()==1
+    assert "lưu chung" in a.locator('.mpd-stat[data-lane="core"]').inner_text()
+    assert "cả Core và Luyện tập" in a.locator('.mpd-stat[data-lane="practice"]').inner_text()
+    assert a.locator(".mpd-activity-list").count()==1
+    assert "Taxonomy" not in a.locator("[data-math-progress-dashboard]").inner_text()
     # Raw Markdown must not leak from mixed HTML/Markdown containers.
     assert a.get_by_role("heading",name="Tiếp tục học",exact=True).count()==1
     assert a.get_by_role("heading",name="Sao lưu và khôi phục tiến độ",exact=True).count()==1
@@ -126,6 +130,6 @@ with sync_playwright() as pw:
     assert not errors,errors
     ctx_b.close()
     browser.close()
-print("PASS: Math dashboard desktop displays separate Practice/Readiness/independent counters.")
+print("PASS: Math dashboard R2-A clearly distinguishes Core, shared Core/Practice answers and submitted Readiness; no Taxonomy jargon.")
 print("PASS: hashed JSON backup exports from PC and restores to independent mobile browser without overwriting prior history by default.")
 print("PASS: replace gated on an explicit pre-download and consent; tampered JSON blocked; mobile no overflow.")
