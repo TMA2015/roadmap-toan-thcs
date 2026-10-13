@@ -37,7 +37,8 @@ with sync_playwright() as pw:
     empty_display=empty.locator("[data-math-progress-dashboard]").inner_text()
     assert "Chưa có kết quả học tập" in empty_display
     assert "Không đọc được dữ liệu" not in empty_display
-    assert empty.evaluate("localStorage.length")==0
+    assert empty.evaluate("localStorage.getItem('toan-thcs-practice-v1')") is None
+    assert empty.evaluate("localStorage.getItem('toan-thcs-assessment-v1')") is None
     empty_ctx.close()
 
     # R2-A: corrupted JSON is a real read error; never convert it to zero
