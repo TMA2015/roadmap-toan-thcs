@@ -3,17 +3,17 @@
 **Standard ID:** `MATH-UX-EVIDENCE-R1-20261014`  
 **Authority:** Implementation/QA supplement under Master Plan v1.2.1, Golden Learning Architecture, Academic Depth D1–D6, Written Library Contract v1. Never overrides those rules.  
 **Target:** family/friends THCS V1. Designed to be reusable in a *future separately scoped* THPT, SAT or ACT Math program.  
-**Status:** `TECHNICAL_A2_SMOKE_PASS_PR434 / NOTEBOOKLM_UX_REVIEW_OPEN / HUMAN_A2_OPEN`.
+**Status:** `TECHNICAL_A2_SMOKE_PASS_PR434 / HUMAN_A2_OPEN / NOTEBOOKLM_UX_OPTIONAL_FEEDBACK`. **Owner clarification 2026-10-14:** NotebookLM UX opinions are useful suggestions only; they are not a required UX approval step or blocker.
 
-## Three evidence lanes, no substitution
+## Two required evidence lanes and one optional consultation (no substitution)
 
 | Lane | Method | May demonstrate | Cannot demonstrate |
 | --- | --- | --- | --- |
 | **T — Technical simulation** | Isolated synthetic Playwright Chrome desktop/390px; deterministic test answer keys inside QA only; AI outage; saved-state regression | Paths/buttons, visible authored wrong-answer explanations, post-submit-only Readiness reviews, deep links, localStorage separation | Child comprehension, correct mathematics across entire bank, full offline/PWA reliability, assistive tech usability |
-| **N — Independent UX/document review** | NotebookLM receives current site structure, learner-facing copy, exact source routes, screenshots and audit packet; cites supplied sources | Plausible information-architecture friction, age-language mismatch, missing instructions, inconsistency and research questions | Direct observation of a child, browser interaction proofs, verified numerical math accuracy outside attached evidence |
+| **N — Optional UX consultation** | NotebookLM may read current site structure, learner-facing copy, routes, screenshots and an optional review packet | Ideas on navigation/wording and questions to test; owner may adopt useful suggestions | A required release/academic gate, child usability proof, implementation authorization or site certification |
 | **H — Human learner observation (A2)** | Owner/observer assigns one grade-matched task without coaching; notes observed clicks/speech/help | Actual task completion, learner comprehension, confusion and need for help *within tested age/device/task* | Generalization to all students, universality across all grade/topic/device combinations |
 
-A PASS in lane T or N is **not** a human A2 PASS. Findings may be OPEN, PASS, BLOCKED, UNCLEAR, NOT_TESTED; `APPROVED` must be scoped to reviewed facts, not all of V1.
+**Only T (technical simulation) and H (real learner observation) belong to the baseline UX acceptance flow. N (NotebookLM UX feedback) is optional, never a required gate and never a reason to postpone release.** A PASS in T or favorable N feedback is **not** a human A2 PASS. Findings may be OPEN, PASS, BLOCKED, UNCLEAR, NOT_TESTED; `APPROVED` must be scoped to reviewed facts, not all of V1.
 
 ## Repeatable learner tasks
 
@@ -55,4 +55,10 @@ Retain **One Knowledge Graph → Multiple curriculum/exam overlays**, not two du
 
 ## Current closure snapshot
 
-PR #434 public Math CI run `38534515613` SUCCESS for Grade 6/8 desktop/390px authored Core/Practice wrong-answer feedback, blocked AI transport, post-submit Readiness and safe remediation. Technical T representative scope **PASS**; N NotebookLM **OPEN** and H A2 **OPEN**. Count/name/navigation links under separate bounded UX PR must also pass its final SHA CI. Never use private English Actions quota, public Math artifacts or billing for this standard.
+PR #434 public Math CI run `38534515613` SUCCESS for Grade 6/8 desktop/390px authored Core/Practice wrong-answer feedback, blocked AI transport, post-submit Readiness and safe remediation. Technical T representative scope **PASS**; N NotebookLM UX **OPTIONAL** and H A2 **OPEN**. Count/name/navigation links under separate bounded UX PR must also pass its final SHA CI. Never use private English Actions quota, public Math artifacts or billing for this standard.
+
+## Owner UX decision update — 2026-10-14
+
+- Do not include NotebookLM UX consultation in any mandatory QA/release checklist; preserve it as discretionary feedback and triage only evidence-supported suggestions.
+- This exception applies **only to UX opinion/review**; the independent academic NotebookLM review gate for changed mathematics, official placement, worked solutions or answer keys remains unchanged under the Master Plan.
+- Actual student self-directed tasks with minimal observer prompting remain necessary to validate usability; synthetic browser tests remain the technical safeguard.
