@@ -1,0 +1,7 @@
+/* CĐ25 exam-practice library. Existing question/answer pages remain unchanged. */
+.math-exam-library-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem;margin:1rem 0 1.5rem}
+.math-exam-library-card{padding:1rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:.8rem;min-width:0;background:var(--md-default-bg-color)}
+.math-exam-library-card h3{margin:.3rem 0 .7rem;font-size:1rem}
+.math-exam-library-card p{font-size:.8rem;line-height:1.6}
+.math-exam-library-card .math-exam-label{color:var(--md-primary-fg-color);font-size:.75rem;font-weight:750}
+@media(max-width:700px){.math-exam-library-grid{grid-template-columns:1fr}}
