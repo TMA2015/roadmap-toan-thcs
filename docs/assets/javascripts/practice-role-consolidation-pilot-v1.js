@@ -3,7 +3,7 @@
   // Safe, read-only legacy content presentation pilot on four owner-approved topics.
   // Never moves a question to another bank or changes an answer, ID, grade or history.
   const rules={
-    "02-so-va-phep-tinh":{collapse:true,title:/^B\.\s*.*Luyện tự luận/i,stop:/^(?:Ranh giới Core|Theo dõi tiến độ|Liên kết Roadmap)/i},
+    "02-so-va-phep-tinh":{collapse:true,title:/^B\.\s*.*Luyện tự luận/i,stop:/^(?:Theo dõi tiến độ|Liên kết Roadmap)/i},
     "03-ti-le-ti-le-thuc":{collapse:false}, // retains independently tested M1–M4 focus pilot
     "04-bieu-thuc-dai-so":{collapse:true,title:/^B\.\s*.*Luyện tự luận/i,stop:/^(?:Theo dõi sau khi luyện|Liên kết Roadmap)/i},
     "21-thong-ke":{collapse:true,title:/^B\.\s*.*Luyện tự luận/i,stop:/^(?:Theo dõi sau khi luyện|Liên kết Roadmap)/i}
