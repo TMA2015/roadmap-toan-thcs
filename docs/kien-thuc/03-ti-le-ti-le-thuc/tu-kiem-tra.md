@@ -1,6 +1,6 @@
 # Core Readiness Check – Chuyên đề 03 – Tỉ số và tỉ lệ
 
-> **Phạm vi:** 10 câu trắc nghiệm KNTT Core, tập trung vào tỉ số, tỉ lệ thức, chia theo tỉ lệ, tỉ lệ thuận/nghịch và phân biệt mô hình.
+> **Phạm vi:** 11 câu trắc nghiệm KNTT Core thuộc lớp 6–7, tập trung vào tỉ số, tỉ lệ thức, chia theo tỉ lệ, tỉ lệ thuận/nghịch và phân biệt mô hình. **Chỉ thực hiện sau khi đã học nội dung liên quan; điểm toàn bài không dùng để đánh giá riêng một lớp.**
 >
 > **Cách làm:** khoảng 20 phút · không gợi ý/Tutor · không báo đúng sai từng câu · chấm sau khi **Nộp bài**.
 
