@@ -44,24 +44,21 @@ with sync_playwright() as pw:
             options.first.wait_for(state="visible",timeout=18000)
             if slug=="03-ti-le-ti-le-thuc":
                 assert page.locator("[data-practice-level-focus] .practice-level-button").count()==4
-                assert page.locator("[data-legacy-exercises]").count()==0
-            else:
-                drawer=page.locator("[data-legacy-exercises]")
-                assert drawer.count()==1,slug
-                assert not drawer.evaluate("(node)=>node.open"),slug
-                # Text remains in DOM even when the native details are closed.
-                assert old_id in (drawer.text_content() or ""), (slug, "Original paper source must remain")
-                drawer.locator(":scope > summary").click()
-                assert drawer.evaluate("(node)=>node.open"), (slug,"legacy disclosure opens")
-                assert old_id in drawer.inner_text(), (slug,"original paper text becomes visible")
-                drawer.locator(":scope > summary").click()
-                assert not drawer.evaluate("(node)=>node.open"),(slug,"disclosure recloses")
-                anchor=drawer.locator("h3,h4,h2").first.get_attribute("id")
-                assert anchor,slug
-                page.goto(BASE+"kien-thuc/"+slug+"/bai-tap/#"+anchor,wait_until="domcontentloaded")
-                page.locator("[data-legacy-exercises]").wait_for(timeout=15000)
-                assert page.locator("[data-legacy-exercises]").evaluate("(node)=>node.open"),(slug,"legacy deep links")
-                options.first.wait_for(state="visible",timeout=18000)
+            drawer=page.locator("[data-legacy-exercises]")
+            assert drawer.count()==1,slug
+            assert not drawer.evaluate("(node)=>node.open"),slug
+            assert old_id in (drawer.text_content() or ""), (slug,"Original paper source must remain")
+            drawer.locator(":scope > summary").click()
+            assert drawer.evaluate("(node)=>node.open"), (slug,"legacy disclosure opens")
+            assert old_id in drawer.inner_text(), (slug,"original paper text becomes visible")
+            drawer.locator(":scope > summary").click()
+            assert not drawer.evaluate("(node)=>node.open"),(slug,"disclosure recloses")
+            anchor=drawer.locator("h3,h4,h2").first.get_attribute("id")
+            assert anchor,slug
+            page.goto(BASE+"kien-thuc/"+slug+"/bai-tap/#"+anchor,wait_until="domcontentloaded")
+            page.locator("[data-legacy-exercises]").wait_for(timeout=15000)
+            assert page.locator("[data-legacy-exercises]").evaluate("(node)=>node.open"),(slug,"legacy deep links")
+            options.first.wait_for(state="visible",timeout=18000)
             assert page.evaluate("localStorage.getItem('practice-role-qa-sentinel')")=="untouched"
         assert not errors,(width,errors)
         print("PASS practice role pilot",width,"px: 4 topics, interactive primary, paper source/deep links preserved")
