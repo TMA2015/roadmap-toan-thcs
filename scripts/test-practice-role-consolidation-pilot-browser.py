@@ -28,35 +28,37 @@ with sync_playwright() as pw:
         for slug,old_id in TOPICS.items():
             response=page.goto(BASE+"kien-thuc/"+slug+"/bai-tap/",wait_until="domcontentloaded")
             assert response and response.status==200,slug
+            static_entry=page.locator("[data-practice-ui-v2]")
+            static_entry.wait_for(state="visible",timeout=15000)
+            assert static_entry.get_attribute("data-practice-ui-v2")=="CT"+slug[:2]
+            assert static_entry.locator("nav a").count()==3,slug
             root=page.locator("[data-practice-role-pilot]")
             root.wait_for(state="visible",timeout=15000)
             assert root.locator("h2").inner_text()=="Luyện tập trực tiếp",slug
             assert "không phải bài Tự kiểm tra" in root.inner_text(),slug
-            assert root.locator("a").count()==2,slug
-            assert "luyen-tap/?topic=CT"+slug[:2] in root.locator("a").first.get_attribute("href"),slug
+            assert root.locator("a").count()==3,slug
+            assert root.locator("a").first.get_attribute("href").startswith("#"),slug
+            assert "luyen-tap/?topic=CT"+slug[:2] in root.locator("a").nth(1).get_attribute("href"),slug
             assert "/tu-kiem-tra/" in root.locator("a").last.get_attribute("href"),slug
             options=page.locator("[data-practice-bank-v2] .practice-option")
             options.first.wait_for(state="visible",timeout=18000)
             if slug=="03-ti-le-ti-le-thuc":
                 assert page.locator("[data-practice-level-focus] .practice-level-button").count()==4
-                assert page.locator("[data-legacy-exercises]").count()==0
-            else:
-                drawer=page.locator("[data-legacy-exercises]")
-                assert drawer.count()==1,slug
-                assert not drawer.evaluate("(node)=>node.open"),slug
-                # Text remains in DOM even when the native details are closed.
-                assert old_id in (drawer.text_content() or ""), (slug, "Original paper source must remain")
-                drawer.locator(":scope > summary").click()
-                assert drawer.evaluate("(node)=>node.open"), (slug,"legacy disclosure opens")
-                assert old_id in drawer.inner_text(), (slug,"original paper text becomes visible")
-                drawer.locator(":scope > summary").click()
-                assert not drawer.evaluate("(node)=>node.open"),(slug,"disclosure recloses")
-                anchor=drawer.locator("h3,h4,h2").first.get_attribute("id")
-                assert anchor,slug
-                page.goto(BASE+"kien-thuc/"+slug+"/bai-tap/#"+anchor,wait_until="domcontentloaded")
-                page.locator("[data-legacy-exercises]").wait_for(timeout=15000)
-                assert page.locator("[data-legacy-exercises]").evaluate("(node)=>node.open"),(slug,"legacy deep links")
-                options.first.wait_for(state="visible",timeout=18000)
+            drawer=page.locator("[data-legacy-exercises]")
+            assert drawer.count()==1,slug
+            assert not drawer.evaluate("(node)=>node.open"),slug
+            assert old_id in (drawer.text_content() or ""), (slug,"Original paper source must remain")
+            drawer.locator(":scope > summary").click()
+            assert drawer.evaluate("(node)=>node.open"), (slug,"legacy disclosure opens")
+            assert old_id in drawer.inner_text(), (slug,"original paper text becomes visible")
+            drawer.locator(":scope > summary").click()
+            assert not drawer.evaluate("(node)=>node.open"),(slug,"disclosure recloses")
+            anchor=drawer.locator("h3,h4,h2").first.get_attribute("id")
+            assert anchor,slug
+            page.goto(BASE+"kien-thuc/"+slug+"/bai-tap/#"+anchor,wait_until="domcontentloaded")
+            page.locator("[data-legacy-exercises]").wait_for(timeout=15000)
+            assert page.locator("[data-legacy-exercises]").evaluate("(node)=>node.open"),(slug,"legacy deep links")
+            options.first.wait_for(state="visible",timeout=18000)
             assert page.evaluate("localStorage.getItem('practice-role-qa-sentinel')")=="untouched"
         assert not errors,(width,errors)
         print("PASS practice role pilot",width,"px: 4 topics, interactive primary, paper source/deep links preserved")
