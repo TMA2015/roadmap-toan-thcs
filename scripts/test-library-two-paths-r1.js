@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+"use strict";
+const fs=require("fs"),assert=require("assert");
+const read=p=>fs.readFileSync(p,"utf8");
+const home=read("docs/luyen-tap/index.md"),models=read("docs/luyen-tap/bai-mau-tieu-bieu.md"),catalog=read("docs/assets/javascripts/model-examples-library-v1.js");
+const written=JSON.parse(read("docs/assets/data/written-exercises/written-exercise-library-v1.json"));
+const a25=JSON.parse(read("docs/assets/data/anchors/anchor-catalog-v1.json"));
+const nav=read("mkdocs.yml"),loader=read("docs/assets/javascripts/route-module-loader-v1.js");
+assert(home.includes('class="math-library-entry-grid"')&&home.includes('href="bai-mau-tieu-bieu/"'),"two learner paths available");
+assert(home.includes("data-written-exercise-library"),"legacy self-work page and URL retained");
+assert(models.includes("data-model-examples-library"),"standalone examples page");
+assert(nav.includes("Bài mẫu tiêu biểu: luyen-tap/bai-mau-tieu-bieu.md"),"library navigation");
+assert(loader.includes('load("model-examples-library-v1.js")'),"page-scoped catalog loader");
+assert(catalog.includes('kind=anchor#')&&catalog.includes("gradeOverlay")===false,"links to canonical WX item");
+assert(catalog.includes("x.grade_overlay")&&catalog.includes("grades:[9]"),"explicit grade overlays, no inferred placement");
+assert(catalog.includes("x.exercise_kind===\"anchor\"")&&catalog.includes('publication_status==="published"'),"no unapproved sources");
+assert(catalog.includes("rootPath()+\"kien-thuc/25-tong-hop-on-thi-10/\""),"A25 canonical links");
+assert(!catalog.includes("localStorage")&&!catalog.includes("saveStats")&&!catalog.includes("assessment"),"read-only catalog");
+assert(written.exercises.filter(x=>x.exercise_kind==="anchor").length===10,"ten historic WX examples");
+assert(a25.anchors.filter(x=>x.publication_status==="published").length===11,"eleven historic A25 models");
+console.log("PASS: self-work route retained, second example page, class filter pointers and canonical data unchanged.");
