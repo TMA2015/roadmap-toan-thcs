@@ -7,13 +7,13 @@
 > **Quy ước:** `02-Mx-yy`.
 
 !!! warning "Chọn bài đúng lớp"
-    Đây là ngân hàng **120 câu xuyên lớp**, dữ liệu cũ chưa phân loại từng câu theo KNTT lớp 6 hay lớp 7. Học sinh lớp 6 hãy hoàn thành [5 chặng và 15 câu luyện nhanh](index.md#core-journey) trước, sau đó dùng Practice Room để luyện thêm kỹ năng đã học. Kết quả 120 câu không tự động được hiểu là hoàn thành Core lớp 6.
+    Đây là ngân hàng **câu hỏi xuyên lớp**, dữ liệu cũ chưa phân loại từng câu theo KNTT lớp 6 hay lớp 7. Học sinh lớp 6 hãy hoàn thành [5 chặng và 15 câu luyện nhanh](index.md#core-journey) trước, sau đó dùng Practice Room để luyện thêm kỹ năng đã học. Kết quả luyện trong ngân hàng xuyên lớp không tự động được hiểu là hoàn thành Core lớp 6.
 
 ## A. 🎯 Luyện nhanh tương tác
 
 
 
-Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng **120 câu**. Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ có lời giải ngắn và nút **Làm câu tương tự**.
+Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng câu hỏi xuyên lớp (số câu thực tế được hiển thị trong công cụ). Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ có lời giải ngắn và nút **Làm câu tương tự**.
 
 Bảng **Tiến độ theo kỹ năng** được sắp cố định theo lộ trình kiến thức nền → kiến thức sau. Học sinh có thể bấm trực tiếp vào một kỹ năng để luyện riêng; chế độ **Luyện điểm yếu** sẽ ưu tiên tối đa hai kỹ năng đủ dữ liệu nhưng có độ chính xác thấp nhất.
 
