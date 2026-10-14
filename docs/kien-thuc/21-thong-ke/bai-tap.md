@@ -1,5 +1,16 @@
 # Bài tập – Chuyên đề 21: Thống kê và thu thập dữ liệu
 
+
+<section class="practice-ui-v2-banner" data-practice-ui-v2="CT21" aria-label="Chọn cách luyện tập">
+  <p class="practice-ui-v2-kicker">CHUYÊN ĐỀ 21 · HỌC VÀ THỰC HÀNH</p>
+  <h2>Luyện tập trực tiếp</h2>
+  <p>Trả lời câu hỏi ngay trên website để nhận phản hồi và gợi ý khi cần. Phần này giúp em luyện kỹ năng, <strong>không phải bài Tự kiểm tra độc lập</strong>.</p>
+  <nav class="practice-ui-v2-actions" aria-label="Đi tới hoạt động">
+    <a class="practice-ui-v2-primary" href="#luyen-tap-tuong-tac">Bắt đầu luyện trực tiếp →</a>
+    <a href="../../../luyen-tap/?topic=CT21">Bài cần trình bày trên giấy</a>
+    <a href="../tu-kiem-tra/">Tự kiểm tra không gợi ý</a>
+  </nav>
+</section>
 > **Phân tầng:** luyện Core trước; Core-Support / Entrance10 / Challenge nằm ở kho bổ sung bên dưới.
 >
 > **Quy ước mã bài:** `21-Mx-yy`.
