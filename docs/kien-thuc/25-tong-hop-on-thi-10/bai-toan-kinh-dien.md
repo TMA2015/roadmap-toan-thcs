@@ -2,7 +2,7 @@
 
 > **Mục tiêu:** học những bài có cấu trúc điển hình, không phải để học thuộc lời giải mà để nhận ra **dấu hiệu → công cụ → chuỗi suy luận**. Mỗi mẫu dưới đây đều nên được làm lại với số liệu khác sau khi đã hiểu lời giải.
 
-> **10 bài trên trang này là bộ TIÊU BIỂU, không phải toàn bộ kho.** [Mở thư viện bài mỏ neo có thể mở rộng](kho-bai-mo-neo.md) để xem bài bổ sung, tìm theo mạch và vào những bản giải sâu kèm hình hình học.
+> **10 bài kinh điển này cũng chính là 10 bài mỏ neo tiêu biểu** được chọn trong [kho 11 bài mẫu của CĐ25](kho-bai-mo-neo.md). Hai tên gọi không phải hai loại bài khác nhau: trang này dùng để đọc bộ tuyển chọn, còn kho cho phép tìm theo dạng bài và mở các lời giải chi tiết khi có.
 
 <a id="anchor-25-001"></a>
 ## 1. Biểu thức căn: điều kiện trước, biến đổi sau

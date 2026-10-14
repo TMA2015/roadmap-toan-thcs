@@ -19,4 +19,5 @@
   }
   if (/\/(?:roadmap-toan-thcs\/)?hoc-theo-lop\/$/.test(path)) load("class-learning-v1.js");
   if (document.querySelector("[data-anchor-browser]")) load("anchor-library-v1.js");
+  if (/\/kien-thuc\/\d{2}-[^/]+\/$/.test(path) && !/\/kien-thuc\/25-/.test(path)) load("anchor-topic-related-v1.js");
 })();

@@ -2,15 +2,15 @@
 
 > Thư viện này bổ sung phần **trình bày lời giải trên giấy** cho Core/Practice. Em không cần nhập bài tự luận vào website: hãy tự làm trên vở, sau đó mở hướng dẫn và rubric để đối chiếu từng bước.
 
-## Bài toán kinh điển và bài mỏ neo
+## Bài mẫu tiêu biểu (bài mỏ neo)
 
-Trong **thư viện tự luận bên dưới đã có 10 bài mỏ neo dạng giải sâu**, có gợi ý từng bước, rubric và ôn bù. Ngoài ra, **Chuyên đề 25 – Ôn thi vào 10** có kho bài toán kinh điển **A25 riêng**, hiện chưa được hợp nhất vào bộ lọc này. Các lối vào bên dưới đều dẫn tới nguồn gốc của từng bài, không tạo bản sao.
+Thư viện tự luận dưới đây có **10 bài mẫu giải sâu WX** với gợi ý từng bước, cách tự chấm và ôn bù. **Chuyên đề 25** có **11 bài mẫu A25** để ôn thi vào lớp 10; trong đó **10 bài kinh điển chính là 10 bài A25 tiêu biểu**, không phải một kho thứ ba. Hai nhóm WX và A25 giữ nguồn và ID riêng; hiện chưa được gộp vào cùng bộ lọc.
 
 - **[Lọc 10 bài mỏ neo có giải sâu trong thư viện này →](?kind=anchor)**: gồm các bài nền tảng, củng cố và ôn thi đã qua kiểm định trong kho tự luận chung.
 - **[Mở kho bài mỏ neo CĐ25 →](../kien-thuc/25-tong-hop-on-thi-10/kho-bai-mo-neo.md)**: tìm bài theo mạch; xem bộ 10 tiêu biểu và các bài bổ sung, mở lời giải sâu khi có.
 - **[Xem 10 bài toán kinh điển →](../kien-thuc/25-tong-hop-on-thi-10/bai-toan-kinh-dien.md)**: học từng cấu trúc, nhận dạng dấu hiệu và đối chiếu cách giải.
 
-Các nhóm bài mỏ neo giữ **ID và nguồn nội dung duy nhất**. Việc thống nhất bộ lọc/tham chiếu trong Thư viện bài tập chung sẽ được triển khai riêng, không nhân đôi đề bài hay đáp án.
+**Em nên chọn gì?** Muốn luyện trình bày từng bước: dùng bộ lọc bài mẫu WX ngay dưới đây. Muốn học các bài tổng hợp ôn thi vào 10: mở kho A25 hoặc đọc bộ 10 bài kinh điển. Hai đường vào A25 sẽ gặp cùng các bài mẫu, chỉ khác cách xem.
 
 ## Các bài tự luận trong thư viện chung
 
