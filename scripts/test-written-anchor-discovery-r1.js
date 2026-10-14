@@ -20,7 +20,7 @@ for (const filename of ["kho-bai-mo-neo.md", "bai-toan-kinh-dien.md"]) {
     "Shared written library must expose the separate canonical anchor source: " + filename);
 }
 assert(writtenPage.indexOf("## Bài toán kinh điển và bài mỏ neo") <
-       writtenPage.indexOf("[data-written-exercise-library]"),
+       writtenPage.indexOf("<div data-written-exercise-library>"),
        "Anchor discovery link must precede the written exercise filter");
 assert(writtenPage.includes("chưa được hợp nhất vào bộ lọc") && writtenPage.includes("?kind=anchor"),
        "Distinguish deep anchors in Written Library from separate CĐ25 catalog");
