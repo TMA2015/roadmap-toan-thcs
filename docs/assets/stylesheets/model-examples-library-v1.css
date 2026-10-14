@@ -1,0 +1,18 @@
+/* Read-only two-path libraries. Existing Written/Anchor cards retain their styles. */
+.math-library-entry-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;margin:.9rem 0 1.5rem}
+.math-library-entry{display:flex;flex-direction:column;gap:.45rem;padding:1rem 1.1rem;border-radius:.9rem;border:1px solid var(--md-default-fg-color--lightest);background:var(--md-default-bg-color);color:var(--md-default-fg-color)!important;text-decoration:none!important;box-shadow:0 2px 9px rgba(0,0,0,.035)}
+.math-library-entry:hover,.math-library-entry:focus-visible{border-color:var(--md-primary-fg-color);box-shadow:0 0 0 2px color-mix(in srgb,var(--md-primary-fg-color) 12%,transparent)}
+.math-library-entry strong{font-size:1.02rem}.math-library-entry span{font-size:.78rem;line-height:1.6}
+.model-library-shell{margin:1rem 0 2rem}
+.model-library-filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr)) minmax(10rem,1.6fr);gap:.65rem}
+.model-library-control{width:100%;min-height:2.65rem;padding:.5rem .7rem;background:var(--md-default-bg-color);color:var(--md-default-fg-color);border:1px solid var(--md-default-fg-color--lighter);border-radius:.5rem;font:inherit;font-size:.8rem}
+.model-library-count{font-size:.78rem;opacity:.75;margin:1rem 0 .7rem}
+.model-library-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem}
+.model-library-card{padding:1rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:.85rem;display:flex;flex-direction:column;gap:.35rem;min-width:0}
+.model-library-card h3{font-size:1rem;margin:.1rem 0 .2rem}
+.model-library-kicker{font-size:.72rem;font-weight:750;color:var(--md-primary-fg-color);margin:0}
+.model-library-tags,.model-library-detail{font-size:.75rem;line-height:1.5;margin:0}
+.model-library-tags{opacity:.78}
+.model-library-link{margin-top:auto;padding-top:.7rem;font-size:.78rem;font-weight:700}
+.model-library-empty{padding:1.1rem;border-radius:.65rem;background:color-mix(in srgb,var(--md-primary-fg-color) 7%,var(--md-default-bg-color));font-size:.8rem}
+@media(max-width:700px){.math-library-entry-grid,.model-library-results{grid-template-columns:1fr}.model-library-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.model-library-filters input{grid-column:1/-1}}
