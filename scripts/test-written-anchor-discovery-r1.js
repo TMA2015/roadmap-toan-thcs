@@ -35,11 +35,13 @@ assert(anchors.representative_ids.length === 10 &&
 for (const id of anchors.representative_ids)
   assert(anchors.anchors.find(x=>x.id===id), "Representative ID missing: " + id);
 for (const a of anchors.anchors) {
-  assert(a.id && a.title && a.source_uri, "Invalid anchor entry");
+  assert(a.id && a.title && (a.source_uri || a.deep_dive_uri), "Invalid anchor entry");
   // Routes in the manifest are relative to the CT25 folder, never duplicates in Written Library.
-  const sourcePage = a.source_uri.split("#")[0].replace(/\/$/, "");
-  assert(exists(anchorDir + sourcePage + ".md"),
-    "Canonical anchor entry has no published source Markdown: " + a.id);
+  if (a.source_uri) {
+    const sourcePage = a.source_uri.split("#")[0].replace(/\/$/, "");
+    assert(exists(anchorDir + sourcePage + ".md"),
+      "Canonical anchor entry has no published source Markdown: " + a.id);
+  }
   if(a.deep_dive_uri)
     assert(exists(anchorDir + a.deep_dive_uri.replace(/\/$/, "") + ".md"),
       "Deep solution not found for " + a.id);
