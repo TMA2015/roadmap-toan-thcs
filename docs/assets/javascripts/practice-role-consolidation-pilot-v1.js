@@ -6,7 +6,7 @@
     "02-so-va-phep-tinh":{collapse:true,title:/^B\.\s*.*Luyện tự luận/i,stop:/^(?:Theo dõi tiến độ|Liên kết Roadmap)/i},
     "03-ti-le-ti-le-thuc":{collapse:false}, // retains independently tested M1–M4 focus pilot
     "04-bieu-thuc-dai-so":{collapse:true,title:/^B\.\s*.*Luyện tự luận/i,stop:/^(?:Theo dõi sau khi luyện|Liên kết Roadmap)/i},
-    "21-thong-ke":{collapse:true,title:/^B\.\s*.*Luyện tự luận/i,stop:/^(?:Theo dõi sau khi luyện|Liên kết Roadmap)/i}
+    "21-thong-ke":{collapse:true,title:/^B\.\s*.*Luyện tự luận/i,stop:/^(?:Theo dõi tiến độ|Theo dõi sau khi luyện|Liên kết Roadmap)/i}
   };
   const path=location.pathname.replace(/\/index\.html$/,"/");
   const match=path.match(/\/kien-thuc\/(\d\d-[^/]+)\/bai-tap\/$/);
