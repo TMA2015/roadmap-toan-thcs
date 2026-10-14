@@ -28,12 +28,17 @@ with sync_playwright() as pw:
         for slug,old_id in TOPICS.items():
             response=page.goto(BASE+"kien-thuc/"+slug+"/bai-tap/",wait_until="domcontentloaded")
             assert response and response.status==200,slug
+            static_entry=page.locator("[data-practice-ui-v2]")
+            static_entry.wait_for(state="visible",timeout=15000)
+            assert static_entry.get_attribute("data-practice-ui-v2")=="CT"+slug[:2]
+            assert static_entry.locator("nav a").count()==3,slug
             root=page.locator("[data-practice-role-pilot]")
             root.wait_for(state="visible",timeout=15000)
             assert root.locator("h2").inner_text()=="Luyện tập trực tiếp",slug
             assert "không phải bài Tự kiểm tra" in root.inner_text(),slug
-            assert root.locator("a").count()==2,slug
-            assert "luyen-tap/?topic=CT"+slug[:2] in root.locator("a").first.get_attribute("href"),slug
+            assert root.locator("a").count()==3,slug
+            assert root.locator("a").first.get_attribute("href").startswith("#"),slug
+            assert "luyen-tap/?topic=CT"+slug[:2] in root.locator("a").nth(1).get_attribute("href"),slug
             assert "/tu-kiem-tra/" in root.locator("a").last.get_attribute("href"),slug
             options=page.locator("[data-practice-bank-v2] .practice-option")
             options.first.wait_for(state="visible",timeout=18000)
