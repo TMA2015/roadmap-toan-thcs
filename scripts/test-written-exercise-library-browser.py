@@ -37,6 +37,21 @@ with sync_playwright() as p:
 
         cards = page.locator(".written-exercise-card")
         assert cards.count() == EXPECTED_CARD_COUNT, (device, "canonical published card count")
+        # Deep-anchor visibility is a learner-facing filter, not a new exercise bank.
+        kind = page.locator('select[aria-label="Lọc theo loại bài"]')
+        deep_count = sum(x["exercise_kind"] == "anchor" for x in LIBRARY["exercises"])
+        kind.select_option("anchor")
+        assert cards.count() == deep_count, (device, "all approved deep anchors visible")
+        assert all("Bài mỏ neo" in meta for meta in
+                   page.locator(".written-exercise-meta").all_inner_texts()), (
+            device, "anchor kind shown in learner card labels"
+        )
+        kind.select_option("standard")
+        assert cards.count() == EXPECTED_CARD_COUNT - deep_count, (
+            device, "standard entries remain accessible"
+        )
+        kind.select_option("all")
+        assert cards.count() == EXPECTED_CARD_COUNT, (device, "return to full catalog")
         meta_texts = page.locator(".written-exercise-meta").all_inner_texts()
         assert all("phút" not in text for text in meta_texts), (device, "estimated minutes hidden from learner card metadata")
         assert page.locator(".written-exercise-card#wx07-rat-001").count() == 1
