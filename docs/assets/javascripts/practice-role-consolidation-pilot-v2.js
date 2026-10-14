@@ -20,7 +20,9 @@
     const topicId="CT"+slug.slice(0,2);
     // The top practice entry is shipped in authored HTML for immediate first-paint UX.
     // Keep the DOM fallback for old static builds only.
-    if (!root.querySelector("[data-practice-ui-v2]")) {
+    const entry=root.querySelector("[data-practice-ui-v2]");
+    if(entry) entry.dataset.practiceRolePilot=topicId;
+    if (!entry) {
       const intro=make("section","practice-role-summary");
       intro.dataset.practiceRolePilot=topicId;
       intro.append(
