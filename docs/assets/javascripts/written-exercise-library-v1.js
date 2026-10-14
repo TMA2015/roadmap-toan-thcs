@@ -129,7 +129,7 @@
     }
 
     const params=new URLSearchParams(location.search);
-    let topic=params.get("topic")||"all",level=params.get("level")||"all",type=params.get("type")||"all",term="";
+    let topic=params.get("topic")||"all",level=params.get("level")||"all",type=params.get("type")||"all",kind=params.get("kind")||"all",term="";
     const shell=el("div","written-library-shell");
     const intro=el("div","written-library-note");
     intro.innerHTML="<strong>Làm trên giấy trước.</strong> Chỉ mở hướng dẫn khi em đã tự thử. Rubric dùng để tự đối chiếu, không tạo điểm Readiness.";
@@ -149,10 +149,16 @@
     const levelSelect=document.createElement("select");levelSelect.className="written-library-select";levelSelect.setAttribute("aria-label","Lọc theo mức");
     [["all","Tất cả mức"],["CORE_BASE","Nền tảng"],["CORE_APPLY","Củng cố"],["ENTRANCE10","Ôn thi vào 10"]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;levelSelect.appendChild(o);});
 
+    const kindSelect=document.createElement("select");kindSelect.className="written-library-select";kindSelect.setAttribute("aria-label","Lọc theo loại bài");
+    const anchorCount=data.exercises.filter(x=>x.exercise_kind==="anchor").length;
+    const standardCount=data.exercises.filter(x=>x.exercise_kind==="standard").length;
+    [["all","Tất cả bài tự luận"],["anchor","Bài mỏ neo ("+anchorCount+")"],["standard","Bài luyện thông thường ("+standardCount+")"]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;kindSelect.appendChild(o);});
+
     if([...topicSelect.options].some(o=>o.value===topic))topicSelect.value=topic;else topic="all";
     if([...typeSelect.options].some(o=>o.value===type))typeSelect.value=type;else type="all";
     if([...levelSelect.options].some(o=>o.value===level))levelSelect.value=level;else level="all";
-    controls.append(search,topicSelect,typeSelect,levelSelect);
+    if([...kindSelect.options].some(o=>o.value===kind))kindSelect.value=kind;else kind="all";
+    controls.append(search,topicSelect,typeSelect,levelSelect,kindSelect);
     const count=el("p","written-library-count");
     const results=el("div","written-library-results");
 
@@ -163,6 +169,7 @@
         (topic==="all"||x.topic_id===topic)&&
         (type==="all"||x.problem_type_id===type)&&
         (level==="all"||x.level===level)&&
+        (kind==="all"||x.exercise_kind===kind)&&
         [x.exercise_id,x.title,x.problem_type_title,...x.skills].join(" ").toLowerCase().includes(q)
       );
       count.textContent=`${list.length} bài đang hiển thị · Thư viện hiện có ${data.exercises.length} bài.`;
@@ -174,6 +181,7 @@
         const meta=el("div","written-exercise-meta");
         const metaValues=x.learner_label?[x.exercise_id,x.topic_id,x.learner_label]:[x.exercise_id,x.topic_id,x.learning_layer,x.level];
         metaValues.forEach(t=>meta.appendChild(el("span","written-chip",t)));
+        if(x.exercise_kind==="anchor")meta.appendChild(el("span","written-chip","Bài mỏ neo · giải sâu"));
         top.append(meta,el("h2","",x.title),el("p","written-exercise-type",x.problem_type_title));
 
         const prompt=el("div","written-exercise-problem");
@@ -199,6 +207,7 @@
     topicSelect.addEventListener("change",()=>{topic=topicSelect.value;render();});
     typeSelect.addEventListener("change",()=>{type=typeSelect.value;render();});
     levelSelect.addEventListener("change",()=>{level=levelSelect.value;render();});
+    kindSelect.addEventListener("change",()=>{kind=kindSelect.value;render();});
     shell.append(intro,controls,count,results);
     root.replaceChildren(shell);root.dataset.ready="1";render();
   };
