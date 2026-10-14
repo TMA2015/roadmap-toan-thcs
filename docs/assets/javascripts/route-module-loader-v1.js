@@ -20,5 +20,6 @@
   if (/\/(?:roadmap-toan-thcs\/)?hoc-theo-lop\/$/.test(path)) load("class-learning-v1.js");
   if (document.querySelector("[data-anchor-browser]")) load("anchor-library-v1.js");
   if (document.querySelector("[data-model-examples-library]")) load("model-examples-library-v1.js");
+  if (/\/kien-thuc\/(?:03-ti-le-ti-le-thuc|22-dai-luong-dac-trung)\/bai-tap\/$/.test(path)) load("practice-level-focus-pilot-v1.js");
   if (/\/kien-thuc\/\d{2}-[^/]+\/$/.test(path) && !/\/kien-thuc\/25-/.test(path)) load("anchor-topic-related-v1.js");
 })();
