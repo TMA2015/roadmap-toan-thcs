@@ -22,7 +22,7 @@ for (const filename of ["kho-bai-mo-neo.md", "bai-toan-kinh-dien.md"]) {
 assert(writtenPage.indexOf("## Bài mẫu tiêu biểu (bài mỏ neo)") <
        writtenPage.indexOf("<div data-written-exercise-library>"),
        "Anchor discovery link must precede the written exercise filter");
-assert(writtenPage.includes("chưa được hợp nhất vào bộ lọc") && writtenPage.includes("?kind=anchor"),
+assert(writtenPage.includes("chưa được gộp vào cùng bộ lọc") && writtenPage.includes("?kind=anchor"),
        "Distinguish deep anchors in Written Library from separate CĐ25 catalog");
 assert(Array.isArray(written.exercises) && written.exercises.length > 0,
        "Existing written exercises must remain present");
