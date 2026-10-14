@@ -1,5 +1,16 @@
 # Bài tập – Chuyên đề 02: Số và phép tính
 
+
+<section class="practice-ui-v2-banner" data-practice-ui-v2="CT02" aria-label="Chọn cách luyện tập">
+  <p class="practice-ui-v2-kicker">CHUYÊN ĐỀ 02 · HỌC VÀ THỰC HÀNH</p>
+  <h2>Luyện tập trực tiếp</h2>
+  <p>Trả lời câu hỏi ngay trên website để nhận phản hồi và gợi ý khi cần. Phần này giúp em luyện kỹ năng, <strong>không phải bài Tự kiểm tra độc lập</strong>.</p>
+  <nav class="practice-ui-v2-actions" aria-label="Đi tới hoạt động">
+    <a class="practice-ui-v2-primary" href="#a-luyen-nhanh-tuong-tac">Bắt đầu luyện trực tiếp →</a>
+    <a href="../../../luyen-tap/?topic=CT02">Bài cần trình bày trên giấy</a>
+    <a href="../tu-kiem-tra/">Tự kiểm tra không gợi ý</a>
+  </nav>
+</section>
 <link rel="stylesheet" href="../../../assets/stylesheets/practice-engine.css">
 <script src="../../../assets/javascripts/practice-engine-v2.js" defer></script>
 
