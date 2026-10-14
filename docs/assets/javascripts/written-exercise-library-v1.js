@@ -210,6 +210,13 @@
     kindSelect.addEventListener("change",()=>{kind=kindSelect.value;render();});
     shell.append(intro,controls,count,results);
     root.replaceChildren(shell);root.dataset.ready="1";render();
+    // New library example-page deep links target the existing WX source card.
+    // The catalog is asynchronous, so browser-native initial hash scrolling alone is not enough.
+    if(location.hash){
+      const id=decodeURIComponent(location.hash.slice(1));
+      const target=document.getElementById(id);
+      if(target)requestAnimationFrame(()=>target.scrollIntoView({block:"start"}));
+    }
   };
 
   const initTopicLibraryLink=async()=>{
