@@ -673,3 +673,11 @@ html.home-guide-modal-open,html.home-guide-modal-open body{overflow:hidden}
 @media(max-width:52rem){.home-guide-grid{grid-template-columns:1fr}.home-guide-visual{aspect-ratio:4/3}.home-guide-dialog{padding:.45rem}.home-guide-dialog-panel{width:97vw;max-height:95vh;padding:.65rem}.home-guide-dialog-image-wrap img{max-height:75vh}}
 @media(max-width:35rem){.home-guide-card-copy{padding:.65rem .7rem .4rem}.home-guide-open-label{padding:0 .7rem .65rem}.home-guide-note{font-size:.59rem}.home-guide-dialog-heading h2{font-size:.92rem}.home-guide-dialog-heading p{font-size:.56rem}}
 @media(prefers-reduced-motion:reduce){.home-guide-card{transition:none}.home-guide-card:hover{transform:none}}
+
+/* CĐ25 exam-practice library: learner-friendly cards; source exams stay unchanged. */
+.math-exam-library-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem;margin:1rem 0 1.5rem}
+.math-exam-library-card{padding:1rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:.8rem;min-width:0;background:var(--md-default-bg-color)}
+.math-exam-library-card h3{margin:.3rem 0 .7rem;font-size:1rem}
+.math-exam-library-card p{font-size:.8rem;line-height:1.6}
+.math-exam-library-card .math-exam-label{color:var(--md-primary-fg-color);font-size:.75rem;font-weight:750}
+@media(max-width:700px){.math-exam-library-grid{grid-template-columns:1fr}}
