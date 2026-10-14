@@ -17,6 +17,11 @@ with sync_playwright() as pw:
         for slug,item in for_test:
             response=page.goto(BASE+"kien-thuc/"+slug+"/bai-tap/",wait_until="domcontentloaded")
             assert response and response.status==200,slug
+            if slug=="03-ti-le-ti-le-thuc":
+                legacy=page.locator("[data-legacy-exercises]")
+                legacy.wait_for(state="attached",timeout=15000)
+                legacy.locator(":scope > summary").click()
+                assert legacy.evaluate("(node)=>node.open")
             root=page.locator("[data-practice-level-focus]")
             root.wait_for(state="visible",timeout=15000)
             assert page.locator(".practice-level-button").count()==4,(slug,width)
