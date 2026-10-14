@@ -22,10 +22,15 @@ for (const filename of ["kho-bai-mo-neo.md", "bai-toan-kinh-dien.md"]) {
 assert(writtenPage.indexOf("## Bài toán kinh điển và bài mỏ neo") <
        writtenPage.indexOf("[data-written-exercise-library]"),
        "Anchor discovery link must precede the written exercise filter");
-assert(writtenPage.includes("chưa xuất hiện trong bộ lọc"),
-       "Do not misleadingly imply CĐ25 anchors appear in the shared written filters");
+assert(writtenPage.includes("chưa được hợp nhất vào bộ lọc") && writtenPage.includes("?kind=anchor"),
+       "Distinguish deep anchors in Written Library from separate CĐ25 catalog");
 assert(Array.isArray(written.exercises) && written.exercises.length > 0,
        "Existing written exercises must remain present");
+assert(written.exercises.filter(x=>x.exercise_kind==="anchor").length === 10,
+       "Preserve all ten approved Written deep anchors");
+const writtenUi=read("docs/assets/javascripts/written-exercise-library-v1.js");
+assert(writtenUi.includes('kind=params.get("kind")') && writtenUi.includes('"Bài mỏ neo ("') && writtenUi.includes('"Bài mỏ neo · giải sâu"'),
+       "Published Written Library must expose deep-anchor filter and learner label");
 assert(Array.isArray(anchors.anchors) && anchors.anchors.length >= 10,
        "CĐ25 canonical anchor catalog is missing");
 assert(anchors.representative_ids.length === 10 &&
