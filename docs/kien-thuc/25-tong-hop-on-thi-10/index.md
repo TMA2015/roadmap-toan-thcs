@@ -521,6 +521,9 @@ Mỗi bài yêu cầu học sinh nhận ra **dấu hiệu → công cụ → chu
 
 ### C. Đề luyện hoàn chỉnh – làm bài đủ thời gian
 
+**[Mở thư viện đề luyện →](thu-vien-de-luyen.md)**: chọn đề theo mục tiêu học và mở đáp án sau khi làm trên giấy. Ba đề hiện có là đề tự biên soạn, không phải đề thi chính thức.
+
+
 Ba đề dưới đây là **bộ luyện tự biên soạn, 120 phút, 10 điểm, gồm 5 bài tự luận**; các đề được phân tầng từ củng cố nền đến liên kết kiến thức và chứng minh. Đây là tài liệu luyện tập theo những mạch kiến thức của chúng ta, không phải đề chính thức hay đề dự báo. **Đáp án nằm ở trang riêng**, để học sinh hoàn thành bài trên giấy trước khi mở:
 
 **Cách sử dụng bộ đề:** làm trên giấy, có thể tự bấm giờ 120 phút. Mỗi đề có trang **lời giải chi tiết và rubric theo bước** riêng để đối chiếu sau khi hoàn thành. Website không yêu cầu nhập/nộp bài, không lưu điểm tự luận và không tự chấm. Đây là bộ đề tự biên soạn, không phải đề chính thức hoặc đề dự báo.
