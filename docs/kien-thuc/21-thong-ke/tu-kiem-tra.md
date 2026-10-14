@@ -2,7 +2,7 @@
 
 > **Phạm vi:** bài kiểm tra tổng hợp KNTT Core của CĐ21, gồm kỹ năng theo chương trình lớp 6–9. Chỉ làm những phần phù hợp sau khi đã học các chặng liên quan.
 >
-> **Cách làm:** 14 câu trắc nghiệm · khoảng 20 phút · không gợi ý/Tutor · không báo đúng sai từng câu · chấm sau khi **Nộp bài**.
+> **Cách làm:** 16 câu trắc nghiệm trải các lớp 6–9 · khoảng 20 phút · không gợi ý/Tutor · không báo đúng sai từng câu · chấm sau khi **Nộp bài**.
 
 <div data-readiness-check-v1="assets/data/assessment/21-thong-ke-core-v1.json"></div>
 
