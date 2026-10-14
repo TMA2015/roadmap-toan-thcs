@@ -1,0 +1,15 @@
+/* Opt-in four-level written-practice focus view. Original Markdown and answers are not rewritten. */
+.practice-level-focus{margin:1.25rem 0}
+.practice-level-intro{border-left:4px solid var(--md-primary-fg-color);background:color-mix(in srgb,var(--md-primary-fg-color) 7%,var(--md-default-bg-color));padding:.8rem 1rem;border-radius:.6rem;line-height:1.6;font-size:.86rem}
+.practice-level-switch{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.5rem;margin:1rem 0}
+.practice-level-button{font:inherit;font-weight:700;font-size:.79rem;line-height:1.4;min-height:2.85rem;padding:.5rem .35rem;border:1px solid var(--md-default-fg-color--lighter);border-radius:.55rem;color:var(--md-default-fg-color);background:var(--md-default-bg-color);cursor:pointer}
+.practice-level-button[aria-pressed="true"]{color:var(--md-primary-bg-color);background:var(--md-primary-fg-color);border-color:var(--md-primary-fg-color)}
+.practice-level-button:focus-visible{outline:3px solid var(--md-accent-fg-color);outline-offset:2px}
+.practice-level-panel{padding:.35rem 0}
+.practice-level-panel[hidden]{display:none!important}
+.practice-level-panel h1,.practice-level-panel h2{margin-top:.8rem}
+.practice-focus-disclosure{border:1px solid var(--md-default-fg-color--lightest);border-radius:.7rem;margin:1.15rem 0;background:var(--md-default-bg-color)}
+.practice-focus-disclosure summary{cursor:pointer;padding:.8rem 1rem;font-weight:740;list-style:revert}
+.practice-focus-disclosure>*:not(summary){margin-left:1rem;margin-right:1rem}
+.practice-focus-active .md-sidebar--secondary{display:none}
+@media(max-width:900px){.practice-level-switch{grid-template-columns:repeat(2,minmax(0,1fr))}}
