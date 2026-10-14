@@ -46,10 +46,10 @@ with sync_playwright() as pw:
                 assert not drawer.evaluate("(node)=>node.open"),slug
                 # Text remains in DOM even when the native details are closed.
                 assert old_id in (drawer.text_content() or ""), (slug, "Original paper source must remain")
-                drawer.locator("summary").click()
+                drawer.locator(":scope > summary").click()
                 assert drawer.evaluate("(node)=>node.open"), (slug,"legacy disclosure opens")
                 assert old_id in drawer.inner_text(), (slug,"original paper text becomes visible")
-                drawer.locator("summary").click()
+                drawer.locator(":scope > summary").click()
                 assert not drawer.evaluate("(node)=>node.open"),(slug,"disclosure recloses")
                 anchor=drawer.locator("h3,h4,h2").first.get_attribute("id")
                 assert anchor,slug
