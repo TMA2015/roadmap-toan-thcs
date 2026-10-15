@@ -2,7 +2,7 @@
 
 > **Phạm vi:** KNTT lớp 6 – số tự nhiên, phép tính, chia hết, số nguyên, phân số, số thập phân và phần trăm. Đây là bài kiểm tra **phần nền lớp 6**, không phải chứng nhận đã hoàn thành toàn bộ CĐ02 xuyên lớp 6–9.
 >
-> **Cách làm:** 10 câu độc lập, không gợi ý và không Tutor khi đang làm. Đúng/sai và lời giải chỉ hiện **sau khi Nộp bài**.
+> **Cách làm:** 18 câu độc lập, không gợi ý và không Tutor khi đang làm. Đúng/sai và lời giải chỉ hiện **sau khi Nộp bài**.
 
 <div data-readiness-check-v1="assets/data/assessment/02-so-va-phep-tinh-core-v1.json"></div>
 
