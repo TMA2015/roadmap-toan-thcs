@@ -1,0 +1,63 @@
+{
+  "schema": "practice-question-chunk-v1",
+  "version": 4,
+  "bank_id": "04-BIEU-THUC-DAI-SO-RICH-W1-WAVE3",
+  "questions": [
+    {
+      "id": "ALG04-RICH-W1-02-V1",
+      "source_item_id": "04-WR-03",
+      "source_lineage": "W1-R2a academically PASS source; new three-field formative variant; canonical paper source and written work preserved",
+      "response_type": "numeric_fields",
+      "answer_contract": {
+        "fields": [
+          {
+            "label": "Hệ số của x²",
+            "expected": "1"
+          },
+          {
+            "label": "Hệ số của x",
+            "expected": "-5"
+          },
+          {
+            "label": "Hạng tử tự do",
+            "expected": "4"
+          }
+        ]
+      },
+      "question": "Cho A = 2x² − x + 3 và B = x² + 4x − 1. Tính A − B, sau đó nhập lần lượt hệ số của x², hệ số của x và hạng tử tự do trong kết quả.",
+      "explanation": "A − B = 2x² − x + 3 − (x² + 4x − 1) = 2x² − x + 3 − x² − 4x + 1 = x² − 5x + 4. Ba giá trị lần lượt là 1; −5; 4.",
+      "hints": [
+        "Viết phép trừ A − B với toàn bộ B đặt trong ngoặc.",
+        "Dấu trừ trước ngoặc làm đổi dấu mọi hạng tử của B; sau đó gộp theo từng bậc."
+      ],
+      "difficulty": "intermediate",
+      "tags": {
+        "topic": "04-bieu-thuc-dai-so",
+        "skill": [
+          "cong-tru-da-thuc",
+          "bo-ngoac-dau"
+        ],
+        "type": "rich-w1-typed-response",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "review_packet": "MATH-EXERCISE-RECLASSIFY-W1-20261015",
+        "academic_review": "NOTEBOOKLM_R2a_20261015"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "packet_id": "MATH-EXERCISE-RECLASSIFY-W1-20261015",
+        "review_round": "R2a",
+        "scope": "SOURCE_TASK_ONLY; INPUT_MODE_TO_BE_TECH_QA"
+      },
+      "variant_group": "04-WR-03-typed-v1",
+      "worked_answer": "A − B = x² − 5x + 4; hệ số x²: 1; hệ số x: −5; hạng tử tự do: 4"
+    }
+  ]
+}
