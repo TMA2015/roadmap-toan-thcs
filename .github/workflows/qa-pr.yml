@@ -83,6 +83,7 @@ jobs:
           node scripts/test-math-w1-rich-practice-pilot-v1.js
           node scripts/test-math-w1-rich-practice-wave2-v1.js
           node scripts/test-math-w1-rich-practice-wave3-v1.js
+          node scripts/test-math-w1-rich-practice-wave4-v1.js
           node --check docs/assets/javascripts/topic-workspace-v1.js
           node scripts/test-tutor-help-modes.js
           node --check docs/assets/javascripts/firebase-gemini-config.js
@@ -346,4 +347,5 @@ jobs:
           python scripts/test-math-w1-rich-practice-browser.py
           python scripts/test-math-w1-rich-practice-wave2-browser.py
           python scripts/test-math-w1-rich-practice-wave3-browser.py
+          python scripts/test-math-w1-rich-practice-wave4-browser.py
           python scripts/test-a25-learner-navigation-r1-browser.py
