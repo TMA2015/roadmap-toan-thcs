@@ -27,9 +27,18 @@
   const supported=new Set(["numeric","rational","numeric_fields"]);
   const validate=(q)=>{
     if(!q||!supported.has(q.response_type)||!q.answer_contract)return false;
-    if(q.response_type==="numeric_fields")
-      return Array.isArray(q.answer_contract.fields)&&q.answer_contract.fields.length>=2&&q.answer_contract.fields.length<=6&&
-        q.answer_contract.fields.every(f=>typeof f.label==="string"&&f.label.trim()&&parse(f.expected).ok);
+    if(q.response_type==="numeric_fields"){
+      const fields=q.answer_contract.fields;
+      if(!Array.isArray(fields)||fields.length<2||fields.length>6||
+         !fields.every(f=>typeof f.label==="string"&&f.label.trim()&&parse(f.expected).ok))return false;
+      const view=q.answer_contract.table_view;
+      if(view===undefined)return true;
+      return view&&view.kind==="frequency"&&
+        typeof view.value_header==="string"&&Boolean(view.value_header.trim())&&
+        typeof view.frequency_header==="string"&&Boolean(view.frequency_header.trim())&&
+        Array.isArray(view.row_values)&&view.row_values.length===fields.length&&
+        view.row_values.every(s=>typeof s==="string"&&Boolean(s.trim()));
+    }
     return typeof q.answer_contract.expected==="string"&&parse(q.answer_contract.expected).ok;
   };
   const grade=(question,raw)=>{
