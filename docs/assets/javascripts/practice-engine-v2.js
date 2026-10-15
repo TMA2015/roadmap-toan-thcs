@@ -945,11 +945,7 @@
       const form = document.createElement("form");
       form.className = "practice-rich-answer-form";
       form.dataset.richPracticeQuestion = question.id;
-      const inputs = fields.map((field, i) => {
-        const label = document.createElement("label");
-        label.className = "practice-rich-field";
-        const title = document.createElement("span");
-        title.textContent = field.label;
+      const buildInput = (field, i) => {
         const input = document.createElement("input");
         input.type = "text";
         input.className = "practice-rich-input";
@@ -959,10 +955,55 @@
         input.maxLength = 80;
         input.name = `rich-field-${i + 1}`;
         input.setAttribute("aria-label", field.label);
-        label.append(title, input);
-        form.appendChild(label);
         return input;
-      });
+      };
+      const tableView = question.response_type === "numeric_fields"
+        ? question.answer_contract?.table_view : null;
+      let inputs;
+      if (tableView?.kind === "frequency") {
+        form.classList.add("practice-rich-frequency-form");
+        const table = document.createElement("table");
+        table.className = "practice-rich-frequency-table";
+        const caption = document.createElement("caption");
+        caption.textContent = "Bảng tần số – điền vào cột Tần số";
+        table.appendChild(caption);
+        const header = document.createElement("thead");
+        const headerRow = document.createElement("tr");
+        [tableView.value_header, tableView.frequency_header].forEach(text => {
+          const cell = document.createElement("th");
+          cell.scope = "col";
+          cell.textContent = text;
+          headerRow.appendChild(cell);
+        });
+        header.appendChild(headerRow);
+        table.appendChild(header);
+        const body = document.createElement("tbody");
+        inputs = fields.map((field, i) => {
+          const row = document.createElement("tr");
+          const value = document.createElement("th");
+          value.scope = "row";
+          value.textContent = tableView.row_values[i];
+          const answer = document.createElement("td");
+          const input = buildInput(field, i);
+          answer.appendChild(input);
+          row.append(value, answer);
+          body.appendChild(row);
+          return input;
+        });
+        table.appendChild(body);
+        form.appendChild(table);
+      } else {
+        inputs = fields.map((field, i) => {
+          const label = document.createElement("label");
+          label.className = "practice-rich-field";
+          const title = document.createElement("span");
+          title.textContent = field.label;
+          const input = buildInput(field, i);
+          label.append(title, input);
+          form.appendChild(label);
+          return input;
+        });
+      }
       const message = document.createElement("p");
       message.className = "practice-rich-input-message";
       message.setAttribute("role", "alert");
