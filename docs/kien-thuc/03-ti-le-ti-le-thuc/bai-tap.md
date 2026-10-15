@@ -20,7 +20,7 @@
 
 ## 🎯 Luyện tập tương tác
 
-Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng **125 câu**. Ngân hàng được tổ chức theo mini-roadmap kỹ năng: **Tỉ số và tỉ lệ thức → Dãy tỉ số và chia theo tỉ lệ → Đại lượng tỉ lệ → Ứng dụng và mô hình hóa**.
+Mỗi lượt hệ thống chọn **10 câu trắc nghiệm** từ ngân hàng hiện có (số lượng thực tế được hiển thị trong công cụ). Ngân hàng được tổ chức theo mini-roadmap kỹ năng: **Tỉ số và tỉ lệ thức → Dãy tỉ số và chia theo tỉ lệ → Đại lượng tỉ lệ → Ứng dụng và mô hình hóa**.
 
 Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ có lời giải ngắn và nút **Làm câu tương tự**. Bảng tiến độ hiển thị kỹ năng theo trình tự học cố định; có thể bấm trực tiếp một kỹ năng để luyện riêng hoặc dùng **Luyện điểm yếu** để ưu tiên tối đa hai kỹ năng yếu nhất.
 

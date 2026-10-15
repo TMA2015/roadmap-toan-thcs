@@ -8,6 +8,11 @@ on:
 permissions:
   contents: read
 
+# Cancel superseded checks on the same PR; each final PR head still receives full QA.
+concurrency:
+  group: math-pr-quality-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   verify:
     runs-on: ubuntu-latest
