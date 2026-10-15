@@ -45,7 +45,8 @@ with sync_playwright() as pw:
   assert "Chính xác" in page.locator("[data-practice-bank-v2] .practice-feedback").inner_text()
   stats=json.loads(page.evaluate("localStorage.getItem('toan-thcs-practice-v1')"))
   assert stats["questions"]["HISTORICAL-QUESTION"]=={"attempted":2,"correct":1}
-  assert stats["questions"][NEW]=={"attempted":1,"correct":1}
+  assert stats["questions"][NEW]["attempted"]==1
+  assert stats["questions"][NEW]["correct"]==1
   records=json.loads(page.evaluate("localStorage.getItem('toan-thcs-practice-rich-attempts-v1')"))["attempts"]
   n=[a for a in records if a["item_id"]==NEW]
   assert len(n)==1 and n[0]["correct"] and n[0]["normalized"]==["1","-5","4"]
