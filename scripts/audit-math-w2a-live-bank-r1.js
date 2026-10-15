@@ -66,8 +66,13 @@ for(const [id,category,refs,wrefs] of evidence){
  const slug=sourceSlugs[id.slice(0,2)];
  const md=fs.readFileSync(path.join(ROOT,"docs/kien-thuc",slug,"bai-tap.md"),"utf8");
  assert(md.includes(id),"missing original source "+id);
- assert(!items.some(q=>q.source_item_id===id),
-        "unapproved W2A rich import discovered for "+id);
+ if(id==="04-WR-06"){
+   const variants=items.filter(q=>q.source_item_id===id);
+   assert.equal(variants.length,1,"W2A pilot needs exactly one immutable variant");
+   assert.equal(variants[0].id,"ALG04-RICH-W2A-01-V1");
+ }else{
+   assert(!items.some(q=>q.source_item_id===id),"unapproved W2A import "+id);
+ }
  for(const ref of refs)assert(byId.has(ref),"missing confirmed bank reference "+ref);
  for(const ref of wrefs)assert(byWritten.has(ref),"missing canonical written ID "+ref);
  console.log("W2A",id,category,"Practice:",refs.join(","),"Written:",wrefs.join(",")||"-");
@@ -93,7 +98,7 @@ for(const [sid,ref,a,b] of checks){
 }
 // An exact algebra clone of W2A 04-WR-06 would invalidate its distinctness.
 const exactExpression="(2x+1)(x-3)";
-const clones=[...items,...micro].filter(q=>canonical(q.question).includes(exactExpression));
+const clones=[...items,...micro].filter(q=>q.id!=="ALG04-RICH-W2A-01-V1"&&canonical(q.question).includes(exactExpression));
 assert.equal(clones.length,0,
  "04-WR-06 exact task already appears in live bank: "+clones.map(x=>x.id));
 const existingWritten=byWritten.get("WX03-RAT-002");
@@ -104,4 +109,4 @@ const divide=byId.get("ALG04V2_123");
 assert(divide.question.includes("ne 0"),"04-WR-07 domain-protecting published variant changed");
 console.log("PASS W2A bank audit:",latest.size,"latest topical banks,",items.length,
  "Practice items,",micro.length,"Micro items,",written.length,"canonical Written items");
-console.log("PASS: 12 source IDs reconciled, no W2A rich import, exact W2A polynomial expression not already live.");
+console.log("PASS: 12 source IDs reconciled; exactly one authorized W2A typed pilot, no other identical polynomial expression live.");
