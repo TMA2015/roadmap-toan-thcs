@@ -13,7 +13,7 @@ for(const name of all){
  const old=latest.get(match[1]);
  if(!old||Number(match[2])>old.v)latest.set(match[1],{v:Number(match[2]),file:name});
 }
-assert.equal(latest.size,25,"expected 25 active topical Practice banks");
+assert.equal(latest.size,24,"expected 24 manifest-backed Practice banks (topic 01 has no separate bank)");
 const items=[],ids=new Set(),loaded=new Set();
 for(const [slug,{file}] of latest){
  const manifest=json(path.join(DATA,file));
