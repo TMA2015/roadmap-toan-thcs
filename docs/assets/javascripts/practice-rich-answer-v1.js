@@ -55,7 +55,7 @@
           return {ok:false,reason:"INCOMPATIBLE_PREVIOUS_DATA"};
       }
       data.attempts.push(record);
-      data.attempts=data.attempts.slice(-500);
+      // Never silently truncate previous student attempts; fail safely on storage quota.
       localStorage.setItem(KEY,JSON.stringify(data));
       return {ok:true};
     }catch(_){return {ok:false,reason:"WRITE_FAILED"};}
