@@ -201,7 +201,9 @@ const richPilotCount=richPilotPaths.filter(exists).reduce((n,p)=>n+(read(p).ques
 const richWave2Paths=["02-so-va-phep-tinh","03-ti-le-ti-le-thuc"]
  .map(slug=>"docs/assets/data/practice/"+slug+"-rich-w1-wave2-v1.json");
 const richWave2Count=richWave2Paths.filter(exists).reduce((n,p)=>n+(read(p).questions||[]).length,0);
-assert.equal(practiceQuestions,3153+implementationDelta+richPilotCount+richWave2Count);
+const richWave3Path="docs/assets/data/practice/04-bieu-thuc-dai-so-rich-w1-wave3-v1.json";
+const richWave3Count=exists(richWave3Path)?(read(richWave3Path).questions||[]).length:0;
+assert.equal(practiceQuestions,3153+implementationDelta+richPilotCount+richWave2Count+richWave3Count);
 assert.equal(writtenCoverageR1Baseline.length,54);
 assert.equal((anchors.anchors||[]).length,11);
 const out=process.argv[2];
