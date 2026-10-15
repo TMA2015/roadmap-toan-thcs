@@ -1,0 +1,44 @@
+name: W2A Wave1 isolated owner preview
+on:
+  push:
+    branches:
+      - feature/math-w2a-wave1-alg04-20261015
+
+permissions:
+  contents: write
+
+concurrency:
+  group: math-w2a-wave1-preview
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Build and unit-verify W2A wave1 preview
+        run: |
+          pip install mkdocs-material
+          node scripts/audit-math-w2a-live-bank-r1.js
+          node scripts/test-math-w2a-rich-practice-wave1-v1.js
+          mkdocs build --strict
+      - name: Publish ONLY isolated W2A preview subtree
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin gh-pages
+          git worktree add /tmp/math-pages origin/gh-pages
+          cd /tmp/math-pages
+          mkdir -p preview/w2a-wave1-465
+          rsync -a --delete "$GITHUB_WORKSPACE/site/" preview/w2a-wave1-465/
+          git add preview/w2a-wave1-465
+          if ! git diff --cached --quiet; then
+            git commit -m "preview(math): isolated PR465 W2A polynomial owner review"
+            git push origin HEAD:gh-pages
+          fi
