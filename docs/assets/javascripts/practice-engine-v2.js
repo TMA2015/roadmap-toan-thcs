@@ -941,7 +941,7 @@
       const grader = window.RoadmapRichPracticeAnswerV1;
       const fields = question.response_type === "numeric_fields"
         ? question.answer_contract.fields
-        : [{ label: question.response_type === "rational" ? "Giá trị của x" : "Kết quả" }];
+        : [{ label: question.answer_contract?.field_label || "Kết quả" }];
       const form = document.createElement("form");
       form.className = "practice-rich-answer-form";
       form.dataset.richPracticeQuestion = question.id;
@@ -1403,7 +1403,7 @@
     }
 
     difficultyLabel(level) {
-      return ({ basic: "Cơ bản", intermediate: "Thông hiểu", advanced: "Vận dụng" })[level] || level || "Luyện tập";
+      return ({ basic: "Cơ bản", intermediate: "Thông hiểu", advanced: "Vận dụng", application: "Vận dụng" })[level] || level || "Luyện tập";
     }
 
     skillLabel(question) {
