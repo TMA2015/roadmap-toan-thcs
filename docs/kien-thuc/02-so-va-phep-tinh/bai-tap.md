@@ -29,7 +29,7 @@ Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng câu hỏi xuyên
 
 Bảng **Tiến độ theo kỹ năng** được sắp cố định theo lộ trình kiến thức nền → kiến thức sau. Học sinh có thể bấm trực tiếp vào một kỹ năng để luyện riêng; chế độ **Luyện điểm yếu** sẽ ưu tiên tối đa hai kỹ năng đủ dữ liệu nhưng có độ chính xác thấp nhất.
 
-<div data-practice-bank-v2="../../../assets/data/practice/02-so-va-phep-tinh-v3.manifest.json" data-session-size="10"></div>
+<div data-practice-bank-v2="../../../assets/data/practice/02-so-va-phep-tinh-v4.manifest.json" data-session-size="10"></div>
 
 > **Lưu ý:** tiến độ hiện được lưu bằng `localStorage`, vì vậy dữ liệu chưa tự đồng bộ giữa các thiết bị hoặc trình duyệt khác nhau.
 
