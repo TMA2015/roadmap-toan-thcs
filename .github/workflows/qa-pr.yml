@@ -195,6 +195,7 @@ jobs:
           node scripts/test-exact-rational-response-v0.js
           node scripts/test-ct25-exam-library-r1.js
           node scripts/test-practice-r2-first-paint.js
+          node scripts/test-four-topic-complete-legacy-inventory-r1.js
           node --check docs/assets/javascripts/model-examples-library-v1.js
           node scripts/test-library-two-paths-r1.js
           node --check docs/assets/javascripts/practice-level-focus-pilot-v1.js
