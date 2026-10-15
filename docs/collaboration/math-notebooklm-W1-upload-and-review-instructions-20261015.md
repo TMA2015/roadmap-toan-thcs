@@ -21,13 +21,13 @@ Use the newest and only active copies of these durable project sources:
 Upload **four** repository review artifacts as separate Markdown/text documents:
 
 1. `docs/collaboration/math-exercise-conversion-academic-packet-W1-20261014.md` — original W1 tasks and item-by-item question list.
-2. `docs/collaboration/math-w1-notebooklm-verbatim-four-topic-source-20261015.md` — **full verbatim** CĐ02/03/04/21 authored pages, with source Git blob SHAs.
-3. `docs/collaboration/math-w1-notebooklm-existing-bank-source-extract-20261015.md` — **134 existing Micro formative items**, including correct options and explanations for reviewer comparison, plus **10 topic-matched approved/recorded WX** shared Written entries.
+2. `review-packets/math-exercise-w1-20261015/math-w1-notebooklm-verbatim-four-topic-source-20261015.md` — **full verbatim** CĐ02/03/04/21 authored pages, with source Git blob SHAs.
+3. `review-packets/math-exercise-w1-20261015/math-w1-notebooklm-existing-bank-source-extract-20261015.md` — **134 existing Micro formative items**, including correct options and explanations for reviewer comparison, plus **10 topic-matched approved/recorded WX** shared Written entries.
 4. `docs/collaboration/math-four-topic-legacy-complete-inventory-r1.json` — all **75 distinct paper exercise IDs**, with 19 W1 and 56 not yet triaged (JSON may alternatively be read from the source list below if NotebookLM rejects JSON).
 
 **Critical outside evidence:** S1 official curriculum / official KNTT textbooks or source extracts, *with edition and exact class/chapter/lesson*, are required to approve any **new KNTT-Core grade placement**. The project-written source and Micro `curriculum.grades` metadata are **not** substitutes for S1. If S1 is not attached, mark grade placement `INSUFFICIENT_EVIDENCE`; do **not** grant an overall academic content PASS on unsupported placements.
 
-All four temporary documents are **audit-only snapshots/extracts**. Do not import them as new learner banks. No authentic-exam frequency claims are requested in this W1.
+The two large source/extract documents are kept under `review-packets/` **outside the learner MkDocs site** to avoid accidental publishing of reviewer-only answer comparisons or treating original relative links as live navigation. All four temporary documents are **audit-only snapshots/extracts**. Do not import them as new learner banks. No authentic-exam frequency claims are requested in this W1.
 
 ## 2. Exact 19 W1 IDs
 
@@ -85,4 +85,4 @@ Save the independent item-by-item review receipt with packet ID, source SHA list
 **Source URLs** (public repo; use GitHub file download or copy the Markdown file contents into NotebookLM):
 
 - https://github.com/TMA2015/roadmap-toan-thcs/blob/main/docs/collaboration/math-exercise-conversion-academic-packet-W1-20261014.md
-- https://github.com/TMA2015/roadmap-toan-thcs/tree/main/docs/collaboration
+- https://github.com/TMA2015/roadmap-toan-thcs/tree/main/review-packets/math-exercise-w1-20261015
