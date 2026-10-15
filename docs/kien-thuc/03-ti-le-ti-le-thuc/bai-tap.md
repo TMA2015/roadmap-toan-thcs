@@ -24,7 +24,7 @@ Mỗi lượt hệ thống chọn **10 câu** từ ngân hàng **125 câu**. Ng�
 
 Sau mỗi câu, học sinh nhận phản hồi ngay; nếu trả lời sai sẽ có lời giải ngắn và nút **Làm câu tương tự**. Bảng tiến độ hiển thị kỹ năng theo trình tự học cố định; có thể bấm trực tiếp một kỹ năng để luyện riêng hoặc dùng **Luyện điểm yếu** để ưu tiên tối đa hai kỹ năng yếu nhất.
 
-<div data-practice-bank-v2="../../../assets/data/practice/03-ti-le-ti-le-thuc-v3.manifest.json" data-session-size="10"></div>
+<div data-practice-bank-v2="../../../assets/data/practice/03-ti-le-ti-le-thuc-v4.manifest.json" data-session-size="10"></div>
 
 > **Lưu ý:** tiến độ hiện được lưu bằng `localStorage`, vì vậy dữ liệu chưa tự đồng bộ giữa các thiết bị hoặc trình duyệt khác nhau.
 

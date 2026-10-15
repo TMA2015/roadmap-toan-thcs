@@ -28,7 +28,7 @@ for(const def of defs){
  if(def.slug==="04-bieu-thuc-dai-so")
   assert(read("docs/assets/javascripts/practice-auto-loader.js").includes('"04-bieu-thuc-dai-so": "04-bieu-thuc-dai-so-v3.manifest.json"'));
  else
-  assert(read("docs/kien-thuc/"+def.slug+"/bai-tap.md").includes(def.slug+"-v3.manifest.json"));
+  assert(read("docs/kien-thuc/"+def.slug+"/bai-tap.md").includes(def.slug+"-v4.manifest.json"));
  questions.push(q);
 }
 const [number,rational,fields]=questions;

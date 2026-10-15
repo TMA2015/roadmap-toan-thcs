@@ -1,0 +1,50 @@
+{
+  "schema": "practice-question-chunk-v1",
+  "version": 4,
+  "questions": [
+    {
+      "id": "RAT03-RICH-W1-02-V1",
+      "source_item_id": "03-M3-01",
+      "source_lineage": "W1-R2a-reviewed-source; post-owner-QA additive typed variant; historic source preserved",
+      "response_type": "numeric",
+      "answer_contract": {
+        "expected": "3.6",
+        "field_label": "Khoảng cách thực tế (km)"
+      },
+      "question": "Bản đồ tỉ lệ 1:50.000. Hai điểm cách nhau 7,2 cm trên bản đồ. Khoảng cách thực tế là bao nhiêu km? Chỉ nhập số, đơn vị km đã được quy định.",
+      "explanation": "7,2 × 50.000 = 360.000 cm = 3.600 m = 3,6 km.",
+      "hints": [
+        "Khoảng cách thực tế theo cm bằng khoảng cách trên bản đồ nhân với 50.000.",
+        "Đổi cm sang km bằng cách chia cho 100.000."
+      ],
+      "difficulty": "application",
+      "tags": {
+        "topic": "03-ti-le-ti-le-thuc",
+        "skill": [
+          "ti-le-ban-do"
+        ],
+        "type": "rich-w1-typed-response",
+        "layer": "KNTT-Core",
+        "grade": 7
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          7
+        ],
+        "level": "core",
+        "review_packet": "MATH-EXERCISE-RECLASSIFY-W1-20261015",
+        "academic_review": "NOTEBOOKLM_R2a_20261015"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "packet_id": "MATH-EXERCISE-RECLASSIFY-W1-20261015",
+        "review_round": "R2a",
+        "scope": "SOURCE_TASK_ONLY; INPUT_MODE_TO_BE_TECH_QA"
+      },
+      "variant_group": "03-M3-01-typed-v1",
+      "worked_answer": "3,6 km"
+    }
+  ],
+  "bank_id": "03-TI-LE-TI-LE-THUC-RICH-W1-WAVE2"
+}
