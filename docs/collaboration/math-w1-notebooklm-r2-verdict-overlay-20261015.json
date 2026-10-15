@@ -335,5 +335,25 @@
       "historical_source_visibility": "PRESERVE",
       "retirement_allowed": false
     }
+  ],
+  "additional_release_blockers": [
+    {
+      "source_id": "03-M1-01",
+      "code": "VALID_PROPORTION_FROM_ORIGINAL_FOUR_VALUES",
+      "issue": "ad=bc=60 alone allows 1/1=60/60: valid equality but not a formation using each of original 3,4,15,20 exactly once",
+      "safe_resolution": "Check a*d===b*c after confirming {a,b,c,d} is a permutation of {3,4,15,20}, b!=0 and d!=0; or rewrite stem to accept arbitrary equal fractions"
+    },
+    {
+      "source_id": "21-M4-01",
+      "code": "TOLERANCE_FOR_ROUNDED_PERCENTAGES_UNSPECIFIED",
+      "issue": "±0.1 percentage point around an exact value may accept a wrong one-decimal rounding, e.g. 8.4% vs 1/12≈8.333%; must specify rounding precision and accepted representation",
+      "safe_resolution": "Specify round-to-one-decimal policy and deterministic accepted values, or carefully bounded equivalence modes before grading table"
+    },
+    {
+      "source_id": "04-WR-01",
+      "code": "REVIEWER_KEY_SIGN_MISMATCH",
+      "issue": "Author source P(x)=4x^3−2x+7 and original worked solution show +7; independent R2 answer states -7",
+      "safe_resolution": "Correct independent reviewer record to +7, keep immutable original receipt as submitted and obtain explicit erratum"
+    }
   ]
 }
