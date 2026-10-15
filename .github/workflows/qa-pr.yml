@@ -198,6 +198,8 @@ jobs:
           node scripts/test-four-topic-complete-legacy-inventory-r1.js
           node scripts/test-math-w1-notebooklm-r1-receipt.js
           node scripts/test-math-w1-notebooklm-r2-evidence.js
+          node scripts/test-math-w1-r2a-academic-overlay.js
+          node scripts/test-math-w1-r2a-structured-grading-research.js
           node --check docs/assets/javascripts/model-examples-library-v1.js
           node scripts/test-library-two-paths-r1.js
           node --check docs/assets/javascripts/practice-level-focus-pilot-v1.js
