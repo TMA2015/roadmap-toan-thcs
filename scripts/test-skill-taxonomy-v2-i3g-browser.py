@@ -18,7 +18,7 @@ if not CHROME:
     raise RuntimeError("Chromium/Chrome required for Taxonomy v2 I3G browser QA")
 
 TOPICS = {
-    "CT21": {"slug": "21-thong-ke", "manifest": "21-thong-ke-v1.manifest.json"},
+    "CT21": {"slug": "21-thong-ke", "manifest": "21-thong-ke-v2.manifest.json"},
     "CT22": {"slug": "22-dai-luong-dac-trung", "manifest": "22-dai-luong-dac-trung-v1.manifest.json"},
     "CT23": {"slug": "23-xac-suat", "manifest": "23-xac-suat-v1.manifest.json"},
     "CT24": {"slug": "24-bai-toan-thuc-te", "manifest": "24-bai-toan-thuc-te-v1.manifest.json"},
