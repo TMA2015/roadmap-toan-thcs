@@ -19,6 +19,6 @@ Review receipt: owner submitted NotebookLM `MATH-EXERCISE-RECLASSIFY-W2A-2026101
 
 Evidence classes distinguish exact same mathematical task from same scenario with deeper reasoning. The existing bank does not itself grant KNTT curriculum authority.
 
-The reproducible `scripts/audit-math-w2a-live-bank-r1.js` reads the latest manifest for all 25 topics, additional Micro banks and 63 canonical Written items. It does not modify learner data. Verify this audit in CI before accepting the candidate `04-WR-06`.
+The reproducible `scripts/audit-math-w2a-live-bank-r1.js` reads the latest manifest for 24 bank-backed topics (out of the 25-topic roadmap), additional Micro banks and 63 canonical Written items. It does not modify learner data. Verify this audit in CI before accepting the candidate `04-WR-06`.
 
 NotebookLM W2A has reviewed 12 additional IDs, bringing academically reviewed legacy IDs to 31/75. The remaining 44 await review; five older W1 REVISE items remain blocked. No W2A item has been imported here. All new implementations require separately versioned source IDs, grader tests, owner preview and release QA.
