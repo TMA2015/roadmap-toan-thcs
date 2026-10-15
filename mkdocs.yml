@@ -239,6 +239,7 @@ hooks:
 extra_css:
   - assets/stylesheets/site-design-system.css
   - assets/stylesheets/practice-engine.css
+  - assets/stylesheets/practice-rich-answer-v1.css
   - assets/stylesheets/topic-workspace.css
   - assets/stylesheets/written-exercise-library-v1.css
   - assets/stylesheets/model-examples-library-v1.css
@@ -256,6 +257,7 @@ extra_css:
 extra_javascript:
   # Critical learner route/runtime scripts first so KNTT/Core can mount before remote MathJax or heavier observers.
   - assets/javascripts/learner-evidence-v1.js
+  - assets/javascripts/practice-rich-answer-v1.js
   - assets/javascripts/tutor-runtime-v1.js
   - assets/javascripts/topic-learning-routes-v1.js
   - assets/javascripts/topic-workspace-v1.js

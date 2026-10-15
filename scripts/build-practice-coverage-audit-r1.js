@@ -57,6 +57,7 @@ for(const t of idx.topics){
 const practiceDir=path.join(root,"docs/assets/data/practice");
 const manifests=fs.readdirSync(practiceDir).filter(n=>/manifest\.json$/.test(n)).sort();
 let practiceQuestions=0, postTaxonomy=0;
+const seenPracticeQuestionIds=new Map(); // immutable v1/v2/v3 manifests may reference identical source chunks; don't inflate bank coverage
 for(const mf of manifests){
   const man=read("docs/assets/data/practice/"+mf);
   const topicNum=(mf.match(/^(\d\d)-/)||[])[1];
@@ -66,6 +67,13 @@ for(const mf of manifests){
     const p="docs/assets/data/practice/"+src;if(!exists(p))continue;
     const bank=read(p);
     for(const q of bank.questions||[]){
+      const seen=seenPracticeQuestionIds.get(q.id);
+      if(seen){
+        assert.equal(seen.topic,topic,"Practice item ID reused across topics: "+q.id);
+        assert.equal(seen.fingerprint,JSON.stringify(q),"Practice item ID mutated between immutable manifests: "+q.id);
+        continue;
+      }
+      seenPracticeQuestionIds.set(q.id,{topic,fingerprint:JSON.stringify(q)});
       practiceQuestions++;
       const reviewed=policyByQ.get(q.id);
       const skills=q.tags?.skill||q.skill||[];
@@ -186,7 +194,11 @@ const report={schema:"practice-coverage-matrix-r1",summary,families:arr,unresolv
 assert.equal(arr.length,131);
 const implementationPath="docs/assets/data/curriculum/practice-implementation-wave1-r1.json";
 const implementationDelta=exists(implementationPath)?read(implementationPath).counts.practice_new_items:0;
-assert.equal(practiceQuestions,3153+implementationDelta);
+// Three owner-approved, W1 R2a reviewed rich-form pilot items are appended in v3 banks.
+const richPilotPaths=["02-so-va-phep-tinh","03-ti-le-ti-le-thuc","04-bieu-thuc-dai-so"]
+ .map(slug=>"docs/assets/data/practice/"+slug+"-rich-w1-v1.json");
+const richPilotCount=richPilotPaths.filter(exists).reduce((n,p)=>n+(read(p).questions||[]).length,0);
+assert.equal(practiceQuestions,3153+implementationDelta+richPilotCount);
 assert.equal(writtenCoverageR1Baseline.length,54);
 assert.equal((anchors.anchors||[]).length,11);
 const out=process.argv[2];

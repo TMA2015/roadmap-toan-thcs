@@ -15,7 +15,7 @@ if not CHROME:
 
 TOPICS = {
     "04-bieu-thuc-dai-so": {
-        "manifest": "04-bieu-thuc-dai-so-v2.manifest.json",
+        "manifest": "04-bieu-thuc-dai-so-v3.manifest.json",
         "page": "/kien-thuc/04-bieu-thuc-dai-so/bai-tap/",
     },
     "05-7-hang-dang-thuc": {
