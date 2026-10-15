@@ -256,6 +256,7 @@ extra_css:
 extra_javascript:
   # Critical learner route/runtime scripts first so KNTT/Core can mount before remote MathJax or heavier observers.
   - assets/javascripts/learner-evidence-v1.js
+  - assets/javascripts/practice-rich-answer-v1.js
   - assets/javascripts/tutor-runtime-v1.js
   - assets/javascripts/topic-learning-routes-v1.js
   - assets/javascripts/topic-workspace-v1.js
