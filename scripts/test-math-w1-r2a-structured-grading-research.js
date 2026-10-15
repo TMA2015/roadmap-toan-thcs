@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+"use strict";
+const assert=require("node:assert/strict");
+const {gradeRatioFourTiles:ratio,gradePolynomialProperties:poly,
+       gradeFrequencyTable:table,roundedTenths}=require("./prototypes/w1-r2a-structured-grading-research-v0.cjs");
+assert.equal(poly(["3","4","+7"]).status,"CORRECT");
+assert.equal(poly([3,4,7]).status,"CORRECT");
+assert.equal(poly(["3","4","-7"]).status,"INCORRECT","R2's -7 must be rejected");
+assert.equal(poly(["3","4",""]).status,"INCOMPLETE");
+assert.equal(poly(["3","4","seven"]).status,"INVALID_INPUT");
+const perms=(xs)=>xs.length===0?[[]]:xs.flatMap((v,i)=>perms(xs.filter((_,k)=>k!==i)).map(p=>[v,...p]));
+const all=perms([3,4,15,20]);
+const valid=all.filter(x=>ratio(x).status==="CORRECT");
+assert.equal(all.length,24);
+assert.equal(valid.length,8,"8 ordered correct forms, 4 up to side exchange");
+assert.equal(ratio([3,4,15,20]).status,"CORRECT");
+assert.equal(ratio([20,15,4,3]).status,"CORRECT");
+assert.equal(ratio([3,15,4,20]).status,"CORRECT");
+assert.equal(ratio([1,1,60,60]).status,"INVALID_SELECTION","prevent R2 false positive");
+assert.equal(ratio([3,20,4,15]).status,"INCORRECT");
+assert.equal(ratio([3,3,20,20]).status,"INVALID_SELECTION");
+assert.equal(ratio([3,4,15]).status,"INCOMPLETE");
+assert.equal(ratio([3,0,15,20]).status,"INVALID_SELECTION","denominator cannot be zero with given tiles");
+assert.deepEqual([1,2,3,4,2].map(f=>roundedTenths(f,12)),[83,167,250,333,167]);
+const freq=["1","2","3","4","2"];
+const pct=["8,3%","16,7%","25%","33,3%","16,7%"];
+assert.equal(table({frequencies:freq,percentages:pct}).status,"CORRECT");
+assert.equal(table({frequencies:[1,2,3,4,2],percentages:["8.30","16.70","25.0","33.30","16.70"]}).status,"CORRECT");
+assert.equal(table({frequencies:freq,percentages:["8,4","16,7","25","33,3","16,7"]}).status,"INCORRECT","8.4 is wrong rounding even though difference from exact is under 0.1%");
+assert.equal(table({frequencies:freq,percentages:["8,3","16,6","25","33,3","16,7"]}).status,"INCORRECT");
+assert.equal(table({frequencies:freq,percentages:["8,3","16,7","25","33,4","16,7"]}).status,"INCORRECT");
+assert.equal(table({frequencies:[1,2,2,4,3],percentages:pct}).status,"INCORRECT","also check every frequency, not just the percentages");
+assert.equal(table({frequencies:freq,percentages:["8,3","16,7","","33,3","16,7"]}).status,"INCOMPLETE");
+assert.equal(table({frequencies:freq,percentages:["8,3","16,7","25","33,3"]}).status,"INCOMPLETE");
+assert.equal(table({frequencies:freq,percentages:["8,3","16,7","1/4","33,3","16,7"]}).status,"INVALID_INPUT");
+console.log("PASS W1 R2a research-only: +7 sign, 8/24 allowed tile permutations, strict exact one-decimal percent and full 10-field table, invalid/incomplete barriers.");
