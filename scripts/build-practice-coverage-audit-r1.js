@@ -198,7 +198,10 @@ const implementationDelta=exists(implementationPath)?read(implementationPath).co
 const richPilotPaths=["02-so-va-phep-tinh","03-ti-le-ti-le-thuc","04-bieu-thuc-dai-so"]
  .map(slug=>"docs/assets/data/practice/"+slug+"-rich-w1-v1.json");
 const richPilotCount=richPilotPaths.filter(exists).reduce((n,p)=>n+(read(p).questions||[]).length,0);
-assert.equal(practiceQuestions,3153+implementationDelta+richPilotCount);
+const richWave2Paths=["02-so-va-phep-tinh","03-ti-le-ti-le-thuc"]
+ .map(slug=>"docs/assets/data/practice/"+slug+"-rich-w1-wave2-v1.json");
+const richWave2Count=richWave2Paths.filter(exists).reduce((n,p)=>n+(read(p).questions||[]).length,0);
+assert.equal(practiceQuestions,3153+implementationDelta+richPilotCount+richWave2Count);
 assert.equal(writtenCoverageR1Baseline.length,54);
 assert.equal((anchors.anchors||[]).length,11);
 const out=process.argv[2];
