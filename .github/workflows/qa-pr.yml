@@ -84,6 +84,7 @@ jobs:
           node scripts/test-math-w1-rich-practice-wave2-v1.js
           node scripts/test-math-w1-rich-practice-wave3-v1.js
           node scripts/test-math-w1-rich-practice-wave4-v1.js
+          node scripts/audit-math-w2a-live-bank-r1.js
           node --check docs/assets/javascripts/topic-workspace-v1.js
           node scripts/test-tutor-help-modes.js
           node --check docs/assets/javascripts/firebase-gemini-config.js
