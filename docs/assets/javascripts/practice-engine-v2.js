@@ -457,13 +457,15 @@
 
     startNormalSession() {
       this.stats = loadStats();
-      const pool = weightedQuestionPool(this.questions, this.stats);
+      // Keep legacy 10-question choice sessions unchanged during the opt-in rich pilot.
+      const legacyQuestions = this.questions.filter(q => !q.response_type);
+      const pool = weightedQuestionPool(legacyQuestions, this.stats);
       const session = buildDiverseSession(pool, Math.min(this.sessionSize, pool.length));
       this.setSession(
         session,
         "normal",
         [],
-        `Ngân hàng ${this.questions.length} câu · mỗi lượt ${session.length} câu; câu chưa làm và câu từng làm sai được ưu tiên xuất hiện lại.`
+        `Ngân hàng ${legacyQuestions.length} câu trắc nghiệm · mỗi lượt ${session.length} câu. Bài nhập đáp án là chế độ thử nghiệm tự chọn.`
       );
     }
 
@@ -471,7 +473,7 @@
       this.stats = loadStats();
       const weakSkills = rankWeakSkills(this.stats, this.bankSkills, this.skillOrder).slice(0, 2);
       if (!weakSkills.length) {
-        const pool = weightedQuestionPool(this.questions, this.stats);
+        const pool = weightedQuestionPool(this.questions.filter(q => !q.response_type), this.stats);
         const session = buildDiverseSession(pool, Math.min(this.sessionSize, pool.length));
         this.setSession(
           session,
@@ -482,7 +484,7 @@
         return;
       }
 
-      const session = buildFocusedSession(this.questions, this.stats, weakSkills, this.sessionSize);
+      const session = buildFocusedSession(this.questions.filter(q => !q.response_type), this.stats, weakSkills, this.sessionSize);
       const labels = weakSkills.map((skill) => this.prettyTag(skill));
       this.setSession(
         session,
@@ -494,7 +496,7 @@
 
     startSkillSession(skill) {
       this.stats = loadStats();
-      const subset = this.questions.filter((question) => questionSkills(question).includes(skill));
+      const subset = this.questions.filter((question) => !question.response_type && questionSkills(question).includes(skill));
       const pool = weightedQuestionPool(subset, this.stats);
       const session = buildDiverseSession(pool, Math.min(this.sessionSize, pool.length));
       this.setSession(
