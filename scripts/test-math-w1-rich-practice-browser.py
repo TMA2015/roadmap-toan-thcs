@@ -55,7 +55,8 @@ with sync_playwright() as pw:
             assert page.evaluate("localStorage.getItem('toan-thcs-assessment-v1')")=="DO_NOT_TOUCH_ASSESSMENT"
             page.locator("[data-practice-bank-v2] .practice-toolbar-actions").get_by_text("Bộ 10 câu mới").click()
             page.locator("[data-practice-bank-v2] .practice-option").first.wait_for(state="visible",timeout=15000)
-            # MCQ route stays available even after using typed mode.
+            assert "RICH-W1" not in page.locator("[data-practice-bank-v2]").get_attribute("data-session-question-ids") if page.locator("[data-practice-bank-v2]").get_attribute("data-session-question-ids") else True
+            # MCQ route stays available, with unchanged normal 10-question session.
             assert page.locator(".practice-rich-focus-btn").count()==1
         assert not errors,(width,errors)
         print("PASS W1 rich Practice browser",width,"px: typed answer, invalid input, legacy stats, typed provenance and independent assessment unchanged")
