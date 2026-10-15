@@ -61,7 +61,7 @@ const evidence=[
 ];
 assert.equal(evidence.length,12);
 const sourceSlugs={"02":"02-so-va-phep-tinh","03":"03-ti-le-ti-le-thuc","04":"04-bieu-thuc-dai-so","21":"21-thong-ke"};
-const canonical=s=>String(s||"").toLowerCase().replace(/\\left|\\right/g,"").replace(/\\[()]/g,"").replace(/[\s{}$]/g,"").replaceAll("−","-");
+const canonical=s=>String(s||"").toLowerCase().replace(/\\left|\\right/g,"").replace(/\\\(/g,"(").replace(/\\\)/g,")").replace(/[\s{}$]/g,"").replaceAll("−","-");
 for(const [id,category,refs,wrefs] of evidence){
  const slug=sourceSlugs[id.slice(0,2)];
  const md=fs.readFileSync(path.join(ROOT,"docs/kien-thuc",slug,"bai-tap.md"),"utf8");
