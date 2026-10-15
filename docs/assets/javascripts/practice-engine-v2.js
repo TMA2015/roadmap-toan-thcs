@@ -941,7 +941,7 @@
       const grader = window.RoadmapRichPracticeAnswerV1;
       const fields = question.response_type === "numeric_fields"
         ? question.answer_contract.fields
-        : [{ label: question.answer_contract?.field_label || "Kết quả" }];
+        : [{ label: question.answer_contract?.field_label || (question.response_type === "rational" ? "Giá trị của x" : "Kết quả") }];
       const form = document.createElement("form");
       form.className = "practice-rich-answer-form";
       form.dataset.richPracticeQuestion = question.id;
