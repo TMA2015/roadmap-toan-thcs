@@ -95,6 +95,12 @@
         throw new Error(`ID câu hỏi không hợp lệ hoặc bị trùng: ${question?.id || "(trống)"}`);
       }
       ids.add(question.id);
+      if (question.response_type) {
+        if (!window.RoadmapRichPracticeAnswerV1?.validate(question) || !question.source_item_id) {
+          throw new Error(`Câu nhập kết quả ${question.id} thiếu hợp đồng chấm/nguồn gốc`);
+        }
+        continue;
+      }
       if (!Array.isArray(question.options) || question.options.length < 2) {
         throw new Error(`Câu ${question.id} thiếu phương án`);
       }
@@ -423,6 +429,16 @@
       const weakBtn = createButton("Luyện điểm yếu", "practice-btn-secondary");
       weakBtn.addEventListener("click", () => this.startWeakSession());
       this.toolbarActionsEl.append(normalBtn, weakBtn);
+      if (this.questions.some(q => q.response_type)) {
+        const richBtn = createButton("✍️ Thử dạng nhập đáp án", "practice-btn-secondary practice-rich-focus-btn");
+        richBtn.addEventListener("click", () => {
+          this.stats = loadStats();
+          const subset = this.questions.filter(q => q.response_type);
+          this.setSession(subset, "rich", [], "Thử bài nhập trực tiếp · kết quả ghi vào tiến độ Luyện tập, không phải Tự kiểm tra.");
+          this.root.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+        this.toolbarActionsEl.appendChild(richBtn);
+      }
     }
 
     setSession(session, mode, focusSkills, subtitle) {
@@ -551,13 +567,17 @@
       this.feedbackEl.innerHTML = "";
       this.actionsEl.innerHTML = "";
 
-      const displayOptions = shuffle(question.options.map((text, originalIndex) => ({ text, originalIndex })));
-      displayOptions.forEach(({ text, originalIndex }) => {
-        const button = createButton(text, "practice-option");
-        button.dataset.originalIndex = String(originalIndex);
-        button.addEventListener("click", () => this.answer(originalIndex));
-        this.optionsEl.appendChild(button);
-      });
+      if (question.response_type) {
+        this.renderRichAnswerFields(question);
+      } else {
+        const displayOptions = shuffle(question.options.map((text, originalIndex) => ({ text, originalIndex })));
+        displayOptions.forEach(({ text, originalIndex }) => {
+          const button = createButton(text, "practice-option");
+          button.dataset.originalIndex = String(originalIndex);
+          button.addEventListener("click", () => this.answer(originalIndex));
+          this.optionsEl.appendChild(button);
+        });
+      }
 
       const tutorBtn = createButton("🤖 Chọn cách được giúp", "practice-btn-secondary");
       tutorBtn.setAttribute("aria-expanded", "false");
@@ -704,7 +724,9 @@
       const answerLabel = document.createElement("strong");
       answerLabel.textContent = "Đáp án trong ngân hàng:";
       const answerText = document.createElement("p");
-      answerText.textContent = Array.isArray(question.options) ? question.options[question.answer] || "Chưa có đáp án được biên soạn." : "Chưa có đáp án được biên soạn.";
+      answerText.textContent = question.response_type
+        ? String(question.worked_answer || "Hãy xem lời giải của bài này.")
+        : (Array.isArray(question.options) ? question.options[question.answer] || "Chưa có đáp án được biên soạn." : "Chưa có đáp án được biên soạn.");
       answer.append(answerLabel, answerText);
       panel.appendChild(answer);
       const steps = Array.isArray(question.solution_steps) ? question.solution_steps.filter(step => typeof step === "string" && step.trim()) : [];
@@ -913,6 +935,109 @@
       typeset(this.hintsEl);
     }
 
+    renderRichAnswerFields(question) {
+      const grader = window.RoadmapRichPracticeAnswerV1;
+      const fields = question.response_type === "numeric_fields"
+        ? question.answer_contract.fields
+        : [{ label: question.response_type === "rational" ? "Giá trị của x" : "Kết quả" }];
+      const form = document.createElement("form");
+      form.className = "practice-rich-answer-form";
+      form.dataset.richPracticeQuestion = question.id;
+      const inputs = fields.map((field, i) => {
+        const label = document.createElement("label");
+        label.className = "practice-rich-field";
+        const title = document.createElement("span");
+        title.textContent = field.label;
+        const input = document.createElement("input");
+        input.type = "text";
+        input.className = "practice-rich-input";
+        input.inputMode = "decimal";
+        input.autocomplete = "off";
+        input.spellcheck = false;
+        input.maxLength = 80;
+        input.name = `rich-field-${i + 1}`;
+        input.setAttribute("aria-label", field.label);
+        label.append(title, input);
+        form.appendChild(label);
+        return input;
+      });
+      const message = document.createElement("p");
+      message.className = "practice-rich-input-message";
+      message.setAttribute("role", "alert");
+      message.hidden = true;
+      const submit = createButton("Chấm bài", "practice-btn-primary");
+      submit.type = "submit";
+      form.append(message, submit);
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (this.answered || this.currentQuestion()?.id !== question.id) return;
+        const raw = inputs.map(input => input.value);
+        const result = grader?.grade(question, raw) || { status: "INVALID_CONTRACT" };
+        if (result.status === "INCOMPLETE" || result.status === "INVALID_INPUT" || result.status === "INVALID_CONTRACT") {
+          message.hidden = false;
+          message.textContent = result.status === "INCOMPLETE"
+            ? "Em hãy nhập đầy đủ các ô trước khi chấm. Lượt này chưa được tính."
+            : "Định dạng chưa hợp lệ. Hãy nhập số, phân số hoặc số thập phân (không nhập chữ); lượt này chưa được tính.";
+          return;
+        }
+        message.hidden = true;
+        this.answerRich(question, raw, result, inputs);
+      });
+      this.optionsEl.appendChild(form);
+    }
+
+    answerRich(question, raw, result, inputs) {
+      if (this.answered || this.currentQuestion()?.id !== question.id) return;
+      this.answered = true;
+      const correct = result.status === "CORRECT";
+      if (correct) this.score += 1;
+      const persistence = this.record(question, correct, this.hintLevel, null, this.fullSolutionViewed);
+      inputs.forEach(input => { input.disabled = true; });
+      const formSubmit = this.optionsEl.querySelector("button[type=submit]");
+      if (formSubmit) formSubmit.disabled = true;
+      let richSaved = { ok: true };
+      if (persistence.ok) {
+        richSaved = window.RoadmapRichPracticeAnswerV1?.saveAttempt({
+          item_id: question.id, item_version: "1.0.0", source_item_id: question.source_item_id,
+          response_type: question.response_type, raw, normalized: result.normalized,
+          correct, hints_used: this.hintLevel, full_solution_viewed: this.fullSolutionViewed,
+          submitted_at: new Date().toISOString(), lane: "formative_practice"
+        }) || { ok: false };
+      }
+      this.feedbackEl.hidden = false;
+      this.feedbackEl.className = "practice-feedback " + (correct ? "is-correct" : "is-wrong");
+      const heading = document.createElement("strong");
+      heading.textContent = correct ? "✓ Chính xác" : "✗ Chưa đúng";
+      const explain = document.createElement("div");
+      explain.className = "practice-explanation";
+      explain.textContent = String(question.explanation || "");
+      this.feedbackEl.append(heading, explain);
+      if (!persistence.ok || !richSaved.ok) {
+        const warning = document.createElement("p");
+        warning.className = "practice-save-warning";
+        warning.setAttribute("role", "alert");
+        warning.textContent = "Có dữ liệu tiến độ hoặc bài làm chưa lưu được đầy đủ trên thiết bị; hệ thống không ghi đè dữ liệu cũ bị lỗi.";
+        this.feedbackEl.appendChild(warning);
+      }
+      if (this.fullSolutionViewed) {
+        const info = document.createElement("p");
+        info.className = "practice-help-assisted";
+        info.textContent = "Đã xem lời giải trước khi trả lời · lượt này có trợ giúp, không phải Tự kiểm tra độc lập.";
+        this.feedbackEl.appendChild(info);
+      }
+      this.actionsEl.innerHTML = "";
+      const help = createButton("📘 Xem hướng dẫn / lời giải", "practice-btn-secondary");
+      help.addEventListener("click", () => this.toggleTutorMenu(question, help));
+      this.actionsEl.appendChild(help);
+      const next = createButton(this.index === this.session.length - 1 ? "Xem kết quả" : "Câu tiếp theo", "practice-btn-primary");
+      next.addEventListener("click", () => { this.index += 1; this.renderQuestion(); });
+      this.actionsEl.appendChild(next);
+      this.progressEl.textContent = `Câu ${this.index + 1}/${this.session.length} · Đúng ${this.score}`;
+      this.renderStats(questionSkills(question));
+      this.renderRemediation(questionSkills(question));
+      typeset(this.cardEl);
+    }
+
     answer(selectedIndex) {
       if (this.answered) return;
       this.answered = true;
@@ -1046,7 +1171,7 @@
       // Phase G1 shadow capture: preserve the existing Practice write as the
       // primary path. Canonical capture is asynchronous and fail-open; it must
       // never block, rollback or alter legacy Practice stats/remediation.
-      try {
+      if (!question.response_type) try {
         window.RoadmapCanonicalEvidenceObserver?.captureAttempt?.({
           question,
           correct,
@@ -1061,7 +1186,7 @@
 
       // Skill Taxonomy v2 I2 canary is a separate shadow lane. It runs only
       // after the legacy Practice write and is independently fail-open.
-      try {
+      if (!question.response_type) try {
         window.RoadmapTaxonomyV2Observer?.captureAttempt?.({
           question,
           correct,
