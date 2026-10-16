@@ -1,7 +1,7 @@
 # CT05–07 — Legacy Exercise Academic Triage Register R0
 
 **Date:** 2026-10-16 · **Owner priority:** Content & UX Cleanup · **Status:** WORKING INVENTORY, **not** NotebookLM PASS.
-**Scope:** CĐ05 = 13; CĐ06 = 13; CĐ07 = 14; **40 original source IDs**, now hidden from public Practice by PR #472's predecessor (#472 is CT08–10). Existing published Written Library: CĐ05 2, CĐ06 2, CĐ07 2.
+**Scope:** CĐ05 = 13; CĐ06 = 13; CĐ07 = 14; **40 original source IDs**, hidden from public Practice by merged PR #472 (CĐ05–07). Existing published Written Library: CĐ05 2, CĐ06 2, CĐ07 2.
 
 ## Purpose and academic contract
 
