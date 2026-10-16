@@ -1,5 +1,8 @@
 # Project Handoff — Self-Learning Math
 
+> **CONTENT & UX CLEANUP — CT05–07 WAVE 3 CANDIDATE (16/10/2026):** After deployed PR #471, next owner-authorized wave creates interactive-only student Practice views for CĐ05/06/07 from existing 120-question v1 manifests each, without editing any paper-source bytes. Source-locked 40 historic WR/ENT/CH exercise IDs (13 + 13 + 14) remain retained for academic comparison and possible conversion; **visibility hide is not migration or NotebookLM PASS**. Tests added for exact blobs/IDs/manifests and desktop/mobile bank/links; merge & gh-pages validation gated on full PR QA. No learner data, scoring, taxonomy or English private Actions touched.
+
+
 > **CONTENT & UX CLEANUP — OWNER MICROCOPY R3 (16/10/2026):** After QA and deployed PR #470, owner accepted the six-lane learner menu/four-page Written Library and requested three focused refinements: consolidate duplicate `Cách sử dụng` and `Bản đồ học tập` into canonical `/roadmap/`, preserving `/huong-dan/` as backward-compatible redirect; remove duplicate outer interactive Practice heading/long preamble on four source-locked pilot topics while retaining the `#luyen-tap-tuong-tac` / `#a-luyen-nhanh-tuong-tac` start links; show a short dynamically computed `Bộ đề N câu` in the interactive toolbar (computed from eligible normal-mode bank questions, not hardcoded count). This is presentation only: no math item/manifest/source edits, scores, ID changes, attempt history, skill taxonomy or storage migration. PR/CI pending; keep developer docs off learner menu and prioritize remaining topic cleanup afterwards.
 
 
