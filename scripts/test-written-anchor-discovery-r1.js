@@ -17,7 +17,7 @@ const anchorDir = "docs/kien-thuc/25-tong-hop-on-thi-10/";
 
 for (const filename of ["kho-bai-mo-neo.md", "bai-toan-kinh-dien.md"]) {
   assert(exists(anchorDir + filename), "Anchor destination missing: " + filename);
-  assert(filename !== "kho-bai-mo-neo.md" || writtenPage.includes("../../kien-thuc/25-tong-hop-on-thi-10/kho-bai-mo-neo/"),
+  assert(filename !== "kho-bai-mo-neo.md" || writtenPage.includes("../kien-thuc/25-tong-hop-on-thi-10/kho-bai-mo-neo.md"),
     "Written library must link to the published CĐ25 anchor source");
 }
 assert(landing.includes("## Em muốn làm gì?") && !landing.includes("data-written-exercise-library") &&
