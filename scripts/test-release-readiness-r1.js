@@ -6,7 +6,7 @@ const read=(p)=>fs.readFileSync(path.join(ROOT,p),"utf8");
 const exists=(p)=>fs.existsSync(path.join(ROOT,p));
 const hub=read("docs/hoc-theo-lop/index.md");
 const home=read("docs/index.md");
-const guide=read("docs/huong-dan/index.md");
+const guide=read("docs/roadmap/index.md");
 const allGrades=[6,7,8,9];
 const expectedChapters={6:9,7:10,8:10,9:10};
 const journeys=[
@@ -16,7 +16,7 @@ const journeys=[
  {grade:9,topic:"09-he-phuong-trinh",theme:"system-modeling"}
 ];
 assert(home.includes('href="hoc-theo-lop/"'),"Homepage must link to grade learning");
-assert(guide.includes("../hoc-theo-lop/")&&guide.includes("Core theo chặng → Luyện tập tương tác → Tự kiểm tra"),"Learner guide must state a real journey");
+assert(guide.includes("../hoc-theo-lop/")&&guide.includes("Core theo chặng → Luyện tập tương tác → Tự kiểm tra")&&guide.includes("Tiến độ học tập"),"Learner guide must state a real journey");
 let chapters=0,links=0;
 const gradeRouteCounts={};
 for(const grade of allGrades){

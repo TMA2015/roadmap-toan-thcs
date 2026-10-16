@@ -3,8 +3,8 @@
  const sitePrefix = () => location.pathname.startsWith("/roadmap-toan-thcs/") ? "/roadmap-toan-thcs/" : "/";
  const mainDestinations = [
    ["Trang chủ", "", "⌂"],
-   ["Roadmap", "roadmap/", "◇"],
-   ["Hướng dẫn", "huong-dan/", "☷"],
+   ["Bản đồ học tập", "roadmap/", "◇"],
+   ["Tiến độ học tập", "tien-do-hoc-tap/", "◴"],
    ["25 chuyên đề", "kien-thuc/", "▤"],
    ["Học theo KNTT", "hoc-theo-lop/", "▣"],
    ["Thư viện bài tập", "luyen-tap/", "✎"],

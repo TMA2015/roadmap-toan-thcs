@@ -12,7 +12,7 @@ assert.deepEqual(actual,titles,"learner menu has exactly six top-level choices")
 for(const blocked of ["Công cụ nội bộ","Beta v","Collaboration Hub","Knowledge Graph v1","Mapping KNTT","Tutor Core Contract","Blueprint 25 chuyên đề"]){
   assert(!nav.includes(blocked),"developer-only tool leaked into learner menu: "+blocked);
 }
-assert(nav.includes("Bản đồ học tập: roadmap/index.md"),"old Roadmap remains available in guide");
+assert(nav.includes("Bản đồ học tập: roadmap/index.md")&&!nav.includes("Cách sử dụng: huong-dan/index.md"),"single canonical learner guidance page");
 assert(nav.includes("Hướng dẫn AI Tutor: ai/index.md"),"AI Help route preserved");
 assert((nav.match(/Luyện tập: kien-thuc\/\d\d-[^\n]+\/bai-tap\.md/g)||[]).length===25,"25 topic practice links preserved");
 for(const route of ["luyen-tap/index.md","luyen-tap/tu-luan.md","luyen-tap/bai-mau-tieu-bieu.md","ban-do-ky-nang/index.md"]){
@@ -33,7 +33,8 @@ const examplesjs=read("docs/assets/javascripts/model-examples-library-v1.js");
 assert(wxjs.includes("luyen-tap/tu-luan/?topic="),"topic deep links go to new page");
 assert(examplesjs.includes("luyen-tap/tu-luan/?kind=anchor#"),"WX example links go to new page");
 assert(read("docs/roadmap/index.md").includes("Học theo lớp")&&read("docs/roadmap/index.md").includes("Học theo chuyên đề"),"Roadmap now explains both paths");
-assert(read("docs/huong-dan/index.md").includes("Tự kiểm tra"),"learning guide keeps independent assessment distinction");
+assert(read("docs/roadmap/index.md").includes("Tự kiểm tra")&&read("docs/roadmap/index.md").includes("Tiến độ học tập")&&read("docs/roadmap/index.md").includes("AI Tutor"),"consolidated map provides learning, progress and help");
+assert(read("docs/huong-dan/index.md").includes("window.location.replace")&&read("docs/huong-dan/index.md").includes("../roadmap/"),"old guide link redirects to canonical map");
 const written=JSON.parse(read("docs/assets/data/written-exercises/written-exercise-library-v1.json"));
 const anchors=JSON.parse(read("docs/assets/data/anchors/anchor-catalog-v1.json"));
 assert(written.exercises.length===63&&anchors.anchors.length===11,"preserve existing canonical item counts");

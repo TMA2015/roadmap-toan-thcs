@@ -465,7 +465,7 @@
         session,
         "normal",
         [],
-        `Ngân hàng ${legacyQuestions.length} câu trắc nghiệm · mỗi lượt ${session.length} câu. Bài nhập đáp án là chế độ thử nghiệm tự chọn.`
+        `Bộ đề ${legacyQuestions.length} câu`
       );
     }
 

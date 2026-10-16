@@ -18,6 +18,16 @@ Em có **hai cách học** trên Self-Learning Math. Cả hai cùng dùng một 
 - **Tự kiểm tra:** làm độc lập, xem kết quả sau khi nộp; không dùng gợi ý trong lúc kiểm tra.
 - **Bài tập tự luận:** nếu bài cần trình bày lập luận đầy đủ, mở [Thư viện bài tập](../luyen-tap/) để làm trên giấy rồi tự đối chiếu lời giải.
 
+## Nếu cần làm bài tự luận
+
+Vào **[Thư viện bài tập](../luyen-tap/)** để chọn bài tự giải trên giấy hoặc học từ bài mẫu. Hãy thử trình bày trước rồi mới mở gợi ý, lời giải và bảng tự chấm. Phần tự chấm trên giấy không tự cộng điểm Tự kiểm tra.
+
+## Xem tiến độ và nhờ trợ giúp
+
+- **[Tiến độ học tập](../tien-do-hoc-tap/):** xem hoạt động đã lưu trên thiết bị và sao lưu dữ liệu khi cần.
+- **[Bản đồ kỹ năng](../ban-do-ky-nang/):** xem các kỹ năng đã có lượt luyện. Chưa có dữ liệu không có nghĩa là em yếu.
+- **[AI Tutor](../ai/):** hỏi thêm khi chưa hiểu một bước. Không có AI, em vẫn học, làm bài và xem lời giải có sẵn.
+
 ## Học xuyên lớp có gì khác?
 
 Trong một chuyên đề có thể có kiến thức của nhiều lớp. Em chỉ cần chọn phần **đúng với bài mình đã học**; không phải làm mọi câu hỏi trong chuyên đề.

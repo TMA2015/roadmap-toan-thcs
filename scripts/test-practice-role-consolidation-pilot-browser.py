@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Four-topic Practice published view: one interactive player, no learner paper drawer."""
 import shutil
+import re
 from playwright.sync_api import sync_playwright
 
 CHROME=shutil.which("google-chrome") or shutil.which("chromium")
@@ -31,6 +32,11 @@ with sync_playwright() as pw:
             assert page.locator("[data-practice-bank-v2]").count()==1,slug
             page.locator("[data-practice-bank-v2] .practice-option").first.wait_for(state="visible",timeout=18000)
             assert page.locator("[data-legacy-exercises]").count()==0,slug
+            assert page.locator(".practice-title").count()==1,slug
+            assert page.locator(".md-content__inner h2").filter(has_text="Luyện tập tương tác").count()==0,slug
+            subtitle=page.locator(".practice-subtitle").inner_text().strip()
+            assert re.fullmatch(r"Bộ đề [1-9][0-9]* câu",subtitle),(slug,subtitle)
+            assert "Ngân hàng" not in subtitle and "thử nghiệm tự chọn" not in subtitle,slug
             assert page.locator("[data-practice-level-focus]").count()==0,slug
             assert "Đáp án nhanh" not in page.locator(".md-content__inner").inner_text(),slug
             assert page.evaluate("localStorage.getItem('practice-role-qa-sentinel')")=="untouched"

@@ -35,6 +35,9 @@ with sync_playwright() as pw:
         assert page.get_by_role("heading",name="Bản đồ học tập Toán THCS").count()==1
         assert page.locator('.math-library-entry[href="../hoc-theo-lop/"]').count()==1
         assert page.locator('.math-library-entry[href="../kien-thuc/"]').count()==1
+        page.goto(BASE+"huong-dan/",wait_until="domcontentloaded")
+        page.wait_for_url("**/roadmap/",timeout=10000)
+        assert page.get_by_role("heading",name="Bản đồ học tập Toán THCS").count()==1
         assert not errors,(width,errors)
         print("PASS learner navigation/library R2",width,"px, 63 Written items + legacy filtered redirects")
         ctx.close()
