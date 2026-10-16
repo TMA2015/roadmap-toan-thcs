@@ -209,6 +209,7 @@ jobs:
           node scripts/test-exact-rational-response-v0.js
           node scripts/test-ct25-exam-library-r1.js
           node scripts/test-practice-r2-first-paint.js
+          python scripts/test-practice-interactive-only-build-r1.py
           node scripts/test-four-topic-complete-legacy-inventory-r1.js
           node scripts/test-math-w1-notebooklm-r1-receipt.js
           node scripts/test-math-w1-notebooklm-r2-evidence.js
