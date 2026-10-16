@@ -1,5 +1,8 @@
 # Project Handoff — Self-Learning Math
 
+> **MATH P0 — FINAL PRACTICE WAVE 7 CANDIDATE (16/10/2026):** Following merged/deployed #475 (CT14–20, 990 MCQ, 84 protected paper items), complete view cleanup in CT22/23/24/25 with four existing 120-question banks and 123 protected paper IDs. CT23 preserves its 10-item independent written assessment link; CT25 keeps A25 anchor, worked classics, exam library and exam skills; CT22 remains optional THPT-Bridge. CT01 has no interactive bank: source-locked 12 planning prompts remain in Git, while student `bai-tap/` displays learner navigation instead of pseudo-exercises. All 135 old items await academic disposition. CI checks old source blob hashes, unique bank IDs, 1365/390px learner view, specialist routes and CT22 prior four-level preservation. QA/merge/gh-pages pending; no scoring/history/billing changes, no private English Actions.
+
+
 > **MATH P0 CLEANUP — CT14–20 WAVE 6 CANDIDATE (16/10/2026):** Owner authorized continuing through all remaining Practice topics without individual pauses. CĐ14–20 source-locked publication hook preserves 84 original paper IDs and existing 990 interactive questions while hiding paper blocks from student Practice. Existing 22 WX exercises remain untouched, to be academically compared against the 84 originals in a later NotebookLM review. Regression covers original blob SHAs, unique IDs, 1365/390px browser, one player and no storage writes. QA/deploy pending. Next distinct group CĐ22–25 requires special handling for 4-level legacy bank and CĐ25 A25 canonical anchors; CĐ21 already done. No scoring/data migration or English private Actions.
 
 
