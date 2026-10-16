@@ -1,5 +1,8 @@
 # Project Handoff — Self-Learning Math
 
+> **CONTENT & UX CLEANUP — CT11–13 WAVE 5 CANDIDATE (16/10/2026):** After merged and deployed PR #473, owner requested the next wave. A narrow MkDocs build hook now makes CĐ11/12/13 student Practice pages interactive-only, using existing manifests of 132/123/156 questions (411 total). All 39 old WR/ENT/CH/SUP IDs and original Markdown files are **byte-identical** in Git; pending academic triage R0 documented, not moved to Written or retired. Preserve existing Core, Readiness, scoring, learner progress and browser/device storage. CI exact source SHA, 411 unique question IDs, mobile/desktop, 3 links, one player. Redirect old nonpilot test controls to CĐ14. **Full PR QA and deployment verification pending.** English private Actions untouched.
+
+
 > **CONTENT & UX CLEANUP — CT08–10 WAVE 4 CANDIDATE (16/10/2026):** Owner accepted published CT05/06/07 (#472); next source-preserving Practice cleanup extends student interactive-only view to CT08 (132 active questions, 11 old written IDs), CT09 (129, 13 IDs) and CT10 (120, 13 IDs). Old Markdown authored files and 37 IDs remain intact, not academically retired. Existing Practice bank keys, metadata, scoring, Readiness, evidence and learner storage untouched. Add strict source/ID/regression checks and 1365/390px browser tests. CT05–07 paper item-by-item academic triage register R0 (40 IDs) created with only nonbinding potential overlaps; NotebookLM verdict not yet requested. PR QA/deployment pending; no private English Actions.
 
 
