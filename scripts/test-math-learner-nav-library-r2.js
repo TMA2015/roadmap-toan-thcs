@@ -25,7 +25,7 @@ assert((index.match(/class="math-library-entry"/g)||[]).length===4,"two choices 
 assert(!index.includes("data-written-exercise-library"),"intro must not contain a live question bank");
 assert(index.includes("written-library-legacy-links-v1.js"),"legacy link redirect loaded");
 assert(paper.includes('data-written-exercise-library')&&paper.includes("?kind=anchor"),"filter and deep anchor located on paper page");
-assert(models.includes('data-model-examples-library')&&models.includes("../tu-luan/"),"models and canonical written link");
+assert(models.includes('data-model-examples-library')&&models.includes("tu-luan.md"),"models and canonical written link");
 const script=read("docs/assets/javascripts/written-library-legacy-links-v1.js");
 assert(script.includes("window.location.replace")&&script.includes("target.search = window.location.search")&&script.includes("target.hash = window.location.hash"),"legacy filtered/hash route preserved");
 const wxjs=read("docs/assets/javascripts/written-exercise-library-v1.js");
