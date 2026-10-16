@@ -1,7 +1,7 @@
 # W3A — Đối chiếu verdict và quyết định tích hợp có điều kiện (R2)
 
 **Packet:** `MATH-CT05-07-W3A-20261016` · **Receipt:** [NOTEBOOKLM_SUBMITTED_VERDICT](MATH-CT05-07-W3A-20261016_NOTEBOOKLM_SUBMITTED_VERDICT.md) · **Ngày nhận:** 2026-10-16.
-**Provenance:** Báo cáo do chủ dự án chuyển đến; bản TXT gốc có SHA-256 `ea1a72ed56e1d8ee564b4ff60b360e788c6278795de200f65dc0b55a12e5a703` (20.499 byte). File .md trong repo là bản văn được lưu từ tệp tải lên.
+**Provenance:** Báo cáo do chủ dự án chuyển đến; bản TXT gốc (CRLF) có SHA-256 `ea1a72ed56e1d8ee564b4ff60b360e788c6278795de200f65dc0b55a12e5a703` (20.499 byte). File Markdown trong repo bảo toàn **nội dung văn bản** với xuống dòng LF; không tuyên bố có SHA byte giống TXT gốc.
 **Result:** `EXPECTED=12` · `REVIEWED=12` · `OVERALL|PASS_FOR_PLACEMENT_REVIEW` (không phải PASS_DEPLOY).
 **Baseline:** Git `2047278c299ca616f307b191486ed9b6677bf2bd` (W3A request và sổ 40 ID). Source `bai-tap.md`, câu MCQ, WX, công cụ chấm và điểm học sinh **không sửa** ở PR này.
 
@@ -32,7 +32,7 @@
 
 ## 3. Cổng kiểm định kế tiếp
 
-**A.** Chuẩn bị 3 đề xuất tự luận thành bản thảo có lời giải/hint/rubric theo [Written Exercise Library Contract v1](../../../docs/collaboration/current-handoff.md) và nguồn W3A; xác định canonical owner/placement; **bắt buộc kiểm định học thuật bản thảo mới** trước khi đưa vào JSON library.
+**A.** Chuẩn bị 3 đề xuất tự luận thành bản thảo có lời giải/hint/rubric theo **Shared Written Exercise Library Contract v1** và nguồn W3A; xác định canonical owner/placement; **bắt buộc kiểm định học thuật bản thảo mới** trước khi đưa vào JSON library.
 
 **B.** Chỉ chọn tạo tương tác mới cho `06-ENT-02`, `07-WR-07` sau khi thông qua answer contract và test trường hợp khó (đổi thứ tự nghiệm, điều kiện xác định, biểu thức tương đương, giá trị loại).
 
