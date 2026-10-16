@@ -6,7 +6,7 @@
 
 ## Chọn bài tập
 
-Dùng bộ lọc theo **chuyên đề**, **dạng bài**, **mức độ** hoặc từ khóa. Em có thể chọn bài theo chương trình đang học mà không phải làm hết cả thư viện.
+Thư viện được **mở rộng dần theo từng chuyên đề**. Dùng bộ lọc theo **chuyên đề**, **dạng bài**, **mức độ** hoặc từ khóa. Em có thể chọn bài theo chương trình đang học mà không phải làm hết cả thư viện.
 
 <div data-written-exercise-library>
   <p>Đang tải bài tập tự luận…</p>
