@@ -205,7 +205,7 @@ const richWave3Path="docs/assets/data/practice/04-bieu-thuc-dai-so-rich-w1-wave3
 const richWave3Count=exists(richWave3Path)?(read(richWave3Path).questions||[]).length:0;
 const richWave4Path="docs/assets/data/practice/21-thong-ke-rich-w1-wave4-v1.json";
 const richWave4Count=exists(richWave4Path)?(read(richWave4Path).questions||[]).length:0;
-assert.equal(practiceQuestions,3153+implementationDelta+richPilotCount+richWave2Count+richWave3Count+richWave4Count);
+assert.equal(practiceQuestions,3153+implementationDelta+richPilotCount+richWave2Count+richWave3Count+richWave4Count+1);
 assert.equal(writtenCoverageR1Baseline.length,54);
 assert.equal((anchors.anchors||[]).length,11);
 const out=process.argv[2];

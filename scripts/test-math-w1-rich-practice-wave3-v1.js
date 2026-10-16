@@ -31,7 +31,7 @@ assert.equal(grader.grade(q,["1","five","4"]).status,"INVALID_INPUT");
 assert.equal(grader.grade(q,["1","1/0","4"]).status,"INVALID_INPUT");
 assert.equal(grader.grade(q,["1","-5"]).status,"INCOMPLETE");
 assert(read("docs/kien-thuc/04-bieu-thuc-dai-so/bai-tap.md").includes("04-WR-03"));
-assert(read("docs/assets/javascripts/practice-auto-loader.js").includes('"04-bieu-thuc-dai-so": "04-bieu-thuc-dai-so-v4.manifest.json"'));
+assert(read("docs/assets/javascripts/practice-auto-loader.js").includes('"04-bieu-thuc-dai-so": "04-bieu-thuc-dai-so-v5.manifest.json"'));
 const all=load(dir+"03-ti-le-ti-le-thuc-v1-02.json").questions;
 const duplicate=all.find(x=>x.id==="RAT03V1_045");
 assert(duplicate&&duplicate.question.includes("1440")&&duplicate.question.includes("3:4:5"),
