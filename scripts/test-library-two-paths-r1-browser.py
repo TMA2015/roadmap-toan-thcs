@@ -19,7 +19,7 @@ with sync_playwright() as pw:
         assert page.locator(".math-library-entry").count()==4
         assert page.locator("[data-written-exercise-library]").count()==0
         assert page.locator('.math-library-entry[href="tu-luan/"]').count()==2
-        page.locator('.math-library-entry[href="bai-mau-tieu-bieu/"]').click()
+        page.locator('.math-library-entry[href="bai-mau-tieu-bieu/"]').first.click()
         page.wait_for_url("**/luyen-tap/bai-mau-tieu-bieu/")
         root=page.locator("[data-model-examples-library]")
         page.wait_for_function("document.querySelector('[data-model-examples-library]')?.dataset.ready==='1'",timeout=18000)
