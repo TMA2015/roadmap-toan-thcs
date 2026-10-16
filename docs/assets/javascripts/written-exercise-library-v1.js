@@ -147,7 +147,7 @@
     [["all","Tất cả dạng bài"],...[...typeMap.entries()]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;typeSelect.appendChild(o);});
 
     const levelSelect=document.createElement("select");levelSelect.className="written-library-select";levelSelect.setAttribute("aria-label","Lọc theo mức");
-    [["all","Tất cả mức"],["CORE_BASE","Nền tảng"],["CORE_APPLY","Củng cố"],["ENTRANCE10","Ôn thi vào 10"]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;levelSelect.appendChild(o);});
+    [["all","Tất cả mức"],["CORE_BASE","Nền tảng"],["CORE_APPLY","Củng cố"],["ENTRANCE10","Ôn thi vào 10"],["CHALLENGE","Thử thách"]].forEach(([v,t])=>{const o=el("option","",t);o.value=v;levelSelect.appendChild(o);});
 
     const kindSelect=document.createElement("select");kindSelect.className="written-library-select";kindSelect.setAttribute("aria-label","Lọc theo loại bài");
     const anchorCount=data.exercises.filter(x=>x.exercise_kind==="anchor").length;
