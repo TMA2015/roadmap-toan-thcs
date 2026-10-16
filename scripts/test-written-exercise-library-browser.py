@@ -27,7 +27,7 @@ with sync_playwright() as p:
     for device, width, height in [("desktop", 1440, 900), ("mobile", 390, 844)]:
         context = browser.new_context(viewport={"width": width, "height": height})
         page = context.new_page()
-        page.goto(BASE + "luyen-tap/", wait_until="networkidle")
+        page.goto(BASE + "luyen-tap/tu-luan/", wait_until="networkidle")
         root = page.locator("[data-written-exercise-library]")
         root.wait_for(state="visible", timeout=15000)
         page.wait_for_function(
