@@ -1,6 +1,6 @@
 """Narrow build-time transformations; source-locked paper Markdown stays unchanged.
 
-Twenty pilot Practice pages publish only their reviewed interactive players during
+Twenty-four pilot Practice pages publish only their reviewed interactive players during
 the owner-approved content reclassification. Hiding old learner-visible paper
 blocks is NOT academic retirement, bank migration, or history regrading.
 """
@@ -63,6 +63,14 @@ _NEXT_PILOT_PRACTICE = {
         ("CT19", "19-duong-tron-v1.manifest.json", "Đường tròn"),
     "kien-thuc/20-hinh-hoc-tong-hop/bai-tap.md":
         ("CT20", "20-hinh-hoc-tong-hop-v1.manifest.json", "Hình học tổng hợp, đo lường và hình khối"),
+    "kien-thuc/22-dai-luong-dac-trung/bai-tap.md":
+        ("CT22", "22-dai-luong-dac-trung-v1.manifest.json", "Các đại lượng đặc trưng của dữ liệu"),
+    "kien-thuc/23-xac-suat/bai-tap.md":
+        ("CT23", "23-xac-suat-v1.manifest.json", "Xác suất"),
+    "kien-thuc/24-bai-toan-thuc-te/bai-tap.md":
+        ("CT24", "24-bai-toan-thuc-te-v1.manifest.json", "Bài toán thực tế và mô hình hóa"),
+    "kien-thuc/25-tong-hop-on-thi-10/bai-tap.md":
+        ("CT25", "25-tong-hop-on-thi-10-v1.manifest.json", "Tổng hợp và ôn thi vào lớp 10"),
 }
 
 
@@ -70,12 +78,28 @@ def _interactive_only_next_pilot(src_path: str) -> str:
     topic, manifest, title = _NEXT_PILOT_PRACTICE[src_path]
     # Match the approved first-paint layout on CT02/03/04/21 but do not
     # generate a second H2 above the player's native toolbar heading.
+    note = (
+        'Đây là phần THPT-Bridge chuẩn bị Toán 10, không tính vào Core Readiness THCS.'
+        if topic == "CT22" else ""
+    )
+    extra = (
+        '<p class="practice-extra-route"><strong>Luyện trình bày trên giấy:</strong> '
+        '<a href="../tu-kiem-tra-tu-luan/">Bộ 10 bài tự luận xác suất</a>. '
+        'Kết quả tự chấm không ghi đè điểm Tự kiểm tra.</p>'
+        if topic == "CT23" else
+        '<p class="practice-extra-route"><strong>Ôn thi theo đề:</strong> '
+        '<a href="../bai-toan-kinh-dien/">Bài toán kinh điển</a> · '
+        '<a href="../kho-bai-mo-neo/">Bài mỏ neo A25</a> · '
+        '<a href="../thu-vien-de-luyen/">Thư viện đề luyện</a> · '
+        '<a href="../tu-danh-gia-ky-nang-thi/">Kỹ năng làm bài</a>.</p>'
+        if topic == "CT25" else ""
+    )
     return f"""# Luyện tập – Chuyên đề {topic[2:]}: {title}
 
 <section class="practice-ui-v2-banner" data-practice-ui-v2="{topic}" aria-label="Chọn cách luyện tập">
   <p class="practice-ui-v2-kicker">CHUYÊN ĐỀ {topic[2:]} · HỌC VÀ THỰC HÀNH</p>
   <h2>Luyện tập trực tiếp</h2>
-  <p>Trả lời ngay trên trang để nhận phản hồi và gợi ý khi cần. Đây không phải bài Tự kiểm tra độc lập.</p>
+  <p>Trả lời ngay trên trang để nhận phản hồi và gợi ý khi cần. Đây không phải bài Tự kiểm tra độc lập. {note}</p>
   <nav class="practice-ui-v2-actions" aria-label="Đi tới hoạt động">
     <a class="practice-ui-v2-primary" href="#luyen-tap-tuong-tac">Bắt đầu luyện trực tiếp →</a>
     <a href="../../../luyen-tap/tu-luan/?topic={topic}">Bài cần trình bày trên giấy</a>
@@ -89,7 +113,21 @@ def _interactive_only_next_pilot(src_path: str) -> str:
 
 <div id="luyen-tap-tuong-tac" aria-hidden="true"></div>
 <div data-practice-bank-v2="../../../assets/data/practice/{manifest}" data-session-size="10"></div>
+{extra}
 """
+
+def _roadmap_topic_intro() -> str:
+    # CĐ01 is an orientation map, not a maths question bank. Preserve authored
+    # paper planning prompts in source, but use a clear learner route instead.
+    return """# Chuyên đề 01 – Bản đồ chương trình
+
+Đây là nơi chọn **cách học**, không phải một bài kiểm tra kiến thức Toán. Em không cần làm bài trên giấy ở trang này.
+
+<p><a href="../../../roadmap/">Bản đồ học tập →</a> · <a href="../../../hoc-theo-lop/">Học theo lớp →</a> · <a href="../../">Chọn chuyên đề để học →</a></p>
+
+Em có thể chọn một bài học rồi mở **Core → Luyện tập tương tác → Tự kiểm tra** ngay trong chuyên đề đó.
+"""
+
 
 def _unwrap_topic_actions(markdown: str) -> str:
     def repl(match: re.Match[str]) -> str:
@@ -123,6 +161,8 @@ def _interactive_only_pilot(markdown: str, src_path: str) -> str:
 
 def on_page_markdown(markdown, page, config, files):
     src_path = getattr(getattr(page, "file", None), "src_path", "") or ""
+    if src_path == "kien-thuc/01-ban-do-chuong-trinh/bai-tap.md":
+        return _roadmap_topic_intro()
     if src_path in _PILOT_PRACTICE:
         return _interactive_only_pilot(markdown, src_path)
     if src_path in _NEXT_PILOT_PRACTICE:

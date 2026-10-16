@@ -26,11 +26,18 @@ with sync_playwright() as p:
     page.wait_for_url("**/bai-tap/")
     page.locator(".practice-engine").wait_for(state="visible",timeout=20000)
     article=page.locator(".md-content__inner")
-    a=article.get_by_role("heading",name="A. 🎯 Luyện tập tương tác")
-    b=article.get_by_role("heading",name="B. Bài tập tự luận bổ sung – tự làm trên giấy")
-    assert a.count()==1 and b.count()==1, "duplicate A or paper lane absent"
-    assert b.is_visible(), "paper tasks label not visible"
-    assert article.get_by_role("heading",name="Nhóm A. Đại số và biểu thức").count()==1
+    # Owner-approved P0: only the existing interactive player appears in Practice.
+    # Authored 16 paper A-F items stay source-locked and the written route is in
+    # the shared library; specialized worked examples/exams remain accessible.
+    assert article.locator('[data-practice-ui-v2="CT25"]').count()==1
+    assert article.locator('[data-practice-bank-v2]').count()==1
+    assert article.locator(".practice-title").count()==1
+    assert article.locator(".practice-subtitle").inner_text().strip()=="Bộ đề 120 câu"
+    assert article.get_by_role("heading",name="B. Bài tập tự luận bổ sung – tự làm trên giấy").count()==0
+    assert "25-A1" not in article.inner_text()
+    for special in ["bai-toan-kinh-dien","kho-bai-mo-neo","thu-vien-de-luyen","tu-danh-gia-ky-nang-thi"]:
+        assert article.locator(f'a[href="../{special}/"]').count()==1, "missing specialist lane "+special
+    assert article.locator('a[href="../../../luyen-tap/tu-luan/?topic=CT25"]').count()==1
     page.goto(BASE+"tu-kiem-tra/",wait_until="networkidle")
     assert page.get_by_role("heading",name="Sau khi tự làm xong – đối chiếu và tự chấm").count()==1
     assert "chưa nhận bài viết tay" in page.locator(".md-content__inner").inner_text()
@@ -57,4 +64,4 @@ with sync_playwright() as p:
         assert page.locator(".md-content__inner").is_visible(), "paper and rubric must remain printable"
         page.emulate_media(media="screen")
     browser.close()
-    print("PASS: CĐ25 real browser: no fake links, A/B paths, sidebar, paper self-check, static exams, answer keys and print mode.")
+    print("PASS: CĐ25 real browser: no fake links, interactive Practice + written entry, sidebar, paper self-check, static exams, answer keys and print mode.")
