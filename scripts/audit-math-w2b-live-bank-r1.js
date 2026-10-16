@@ -8,7 +8,7 @@ const ROOT=path.resolve(__dirname,"..");
 const DATA=path.join(ROOT,"docs/assets/data/practice");
 const parse=p=>JSON.parse(fs.readFileSync(p,"utf8"));
 const normalize=s=>String(s||"").toLowerCase()
- .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+ .normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/đ/g,"d")
  .replace(/\\left|\\right/g,"").replace(/\\\(/g,"(").replace(/\\\)/g,")")
  .replace(/[{}$\s,.]/g,"").replace(/[−–]/g,"-");
 const files=fs.readdirSync(DATA);
