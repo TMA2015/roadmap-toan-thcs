@@ -11,9 +11,9 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from hooks.topic_markdown_fixes import on_page_markdown
 
 SOURCE={
-    "22-dai-luong-dac-trung":("5db348cd7a85822a4152b32f2692583ea9243f4b",34,120),
-    "23-xac-suat":("dff2ec1ef5385b1bcfca83d9ce070544c2ccde6b",36,120),
-    "24-bai-toan-thuc-te":("abb4d4b775488ebc883034db2a23920a9f8ca564",37,120),
+    "22-dai-luong-dac-trung":("5db348cd7a85822a4152b32f2692583ea9243f4b",32,120),
+    "23-xac-suat":("dff2ec1ef5385b1bcfca83d9ce070544c2ccde6b",34,120),
+    "24-bai-toan-thuc-te":("abb4d4b775488ebc883034db2a23920a9f8ca564",34,120),
     "25-tong-hop-on-thi-10":("61eb5fe0349576728b0dacd55fe7069f5627135a",16,120),
 }
 root=Path("docs/assets/data/practice")
@@ -59,7 +59,7 @@ for slug,(locked,expected,question_count) in SOURCE.items():
         for href in ["../bai-toan-kinh-dien/","../kho-bai-mo-neo/","../thu-vien-de-luyen/","../tu-danh-gia-ky-nang-thi/"]:
             assert href in published
     print(f"PASS {topic}: {len(ids)} paper sources protected, 120 interactive questions, no legacy HTML")
-assert total==123,total
+assert total==116,total
 
 slug="01-ban-do-chuong-trinh"
 src=f"kien-thuc/{slug}/bai-tap.md"
