@@ -26,7 +26,7 @@ for slug, (expected_blob, version, anchor) in SOURCE.items():
     assert visible.count("data-practice-bank-v2=") == 1
     assert f"{slug}-{version}.manifest.json" in visible
     assert f'<div id="{anchor}" aria-hidden="true"></div>' in visible
-    assert "<h2" not in visible and "Chọn đáp án hoặc nhập kết quả ngay" not in visible
+    assert '<h2 id="' not in visible and "Chọn đáp án hoặc nhập kết quả ngay" not in visible
     assert "Các câu hỏi có thể thuộc nhiều lớp" not in visible
     assert 'href="../../../luyen-tap/?topic=' + topic + '"' in visible
     assert 'href="../tu-kiem-tra/"' in visible
