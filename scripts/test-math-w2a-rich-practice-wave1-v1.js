@@ -27,7 +27,7 @@ assert.equal(grader.grade(q,["2","-5","1/0"]).status,"INVALID_INPUT");
 const paper=read("docs/kien-thuc/04-bieu-thuc-dai-so/bai-tap.md");
 assert(paper.includes("04-WR-06")&&paper.includes("(2x+1)(x-3)"));
 const loader=read("docs/assets/javascripts/practice-auto-loader.js");
-assert(loader.includes('"04-bieu-thuc-dai-so": "04-bieu-thuc-dai-so-v5.manifest.json"'));
+assert(loader.includes('"04-bieu-thuc-dai-so": "04-bieu-thuc-dai-so-v6.manifest.json"'));
 const prior1=json(dir+"04-bieu-thuc-dai-so-rich-w1-v1.json").questions[0];
 const prior2=json(dir+"04-bieu-thuc-dai-so-rich-w1-wave3-v1.json").questions[0];
 assert.equal(prior1.id,"ALG04-RICH-W1-01-V1");
