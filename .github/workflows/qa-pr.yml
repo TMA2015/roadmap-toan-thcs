@@ -325,6 +325,7 @@ jobs:
           mkdir -p previews
           python -m http.server 8765 --directory site >/tmp/roadmap-preview.log 2>&1 &
           for i in {1..25}; do curl --fail --silent http://127.0.0.1:8765/ >/dev/null && break; sleep 0.2; done
+          python scripts/test-practice-interactive-only-wave6-browser.py
           python scripts/capture-ui-previews.py
           python scripts/test-topic25-student-browser.py
           python scripts/test-topic25-math-browser.py
@@ -360,7 +361,6 @@ jobs:
           python scripts/test-practice-interactive-only-wave3-browser.py
           python scripts/test-practice-interactive-only-wave4-browser.py
           python scripts/test-practice-interactive-only-wave5-browser.py
-          python scripts/test-practice-interactive-only-wave6-browser.py
           python scripts/test-math-w1-rich-practice-browser.py
           python scripts/test-math-w1-rich-practice-wave2-browser.py
           python scripts/test-math-w1-rich-practice-wave3-browser.py
