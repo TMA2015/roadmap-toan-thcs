@@ -115,7 +115,8 @@ for(const file of scripts){
 }
 assert.ok(read("mkdocs.yml").includes("assets/javascripts/arithmetic-template-engine-v1.js"));
 assert.ok(read("mkdocs.yml").includes("assets/javascripts/arithmetic-template-preview-v1.js"));
-assert.ok(read("mkdocs.yml").includes("thu-nghiem-sinh-cau-tuong-tu.md"));
+assert.ok(fs.existsSync("docs/huong-dan/thu-nghiem-sinh-cau-tuong-tu.md"), "Beta learning module source must exist");
+assert.ok(!read("mkdocs.yml").includes("thu-nghiem-sinh-cau-tuong-tu.md"), "developer Beta navigation must not appear to students");;
 console.log("PASS 4,500 source-template seeds: "+JSON.stringify(totals));
 console.log("PASS exact answer math, parameter bounds, four distinct options, dynamic worked steps and error hints");
 console.log("PASS seed reproducibility, new parameter signatures, safe catalog rejection and no storage/AI dependency");
