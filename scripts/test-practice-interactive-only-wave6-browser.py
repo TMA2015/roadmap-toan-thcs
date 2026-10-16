@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Wave 7: CT22–25 live MCQ, specialist exit routes, CT01 orientation on desktop/mobile."""
 import shutil
+from urllib.parse import urljoin
 from playwright.sync_api import sync_playwright
 
 CHROME=shutil.which("google-chrome") or shutil.which("chromium")
@@ -37,17 +38,44 @@ with sync_playwright() as pw:
             assert "Xem lời giải" not in page.locator(".md-content__inner").inner_text(),slug
             if topic=="CT22":
                 assert "THPT" in page.locator(".md-content__inner").inner_text()
+            article=page.locator(".md-content__inner")
+            # Evaluate the real link destination, not a particular MkDocs
+            # attribute spelling (raw/rewritten relative URLs can differ).
+            links=article.locator("a").evaluate_all(
+                "(els)=>els.map(a=>({text:a.textContent.trim(),href:a.getAttribute('href'),url:a.href}))"
+            )
             if topic=="CT23":
-                assert page.locator('a[href="../tu-kiem-tra-tu-luan/"]').count()==1
+                matched=[a for a in links if "Bộ 10 bài tự luận xác suất" in a["text"]]
+                assert len(matched)==1,(slug,"missing special written link",links[-15:])
+                assert urljoin(page.url,matched[0]["href"]).endswith(
+                    "/kien-thuc/23-xac-suat/tu-kiem-tra-tu-luan/"
+                ),(slug,matched)
             if topic=="CT25":
-                for path in ["bai-toan-kinh-dien","kho-bai-mo-neo","thu-vien-de-luyen","tu-danh-gia-ky-nang-thi"]:
-                    assert page.locator(f'a[href="../{path}/"]').count()==1,(slug,path)
+                for label,target in [
+                    ("Bài toán kinh điển","bai-toan-kinh-dien"),
+                    ("Bài mỏ neo A25","kho-bai-mo-neo"),
+                    ("Thư viện đề luyện","thu-vien-de-luyen"),
+                    ("Kỹ năng làm bài","tu-danh-gia-ky-nang-thi"),
+                ]:
+                    matched=[a for a in links if label in a["text"]]
+                    assert len(matched)==1,(slug,label,links[-20:])
+                    assert urljoin(page.url,matched[0]["href"]).endswith(
+                        "/kien-thuc/25-tong-hop-on-thi-10/"+target+"/"
+                    ),(slug,label,matched)
             assert page.evaluate("localStorage.getItem('wave7-safe')")=="preserved"
         r=page.goto(BASE+"kien-thuc/01-ban-do-chuong-trinh/bai-tap/",wait_until="domcontentloaded")
         assert r and r.status==200
         assert page.locator("[data-practice-bank-v2]").count()==0
-        assert page.locator('a[href="../../../roadmap/"]').count()==1
-        assert page.locator('a[href="../../../hoc-theo-lop/"]').count()==1
+        for name,destination in [
+            ("Bản đồ học tập","/roadmap/"),
+            ("Học theo lớp","/hoc-theo-lop/"),
+        ]:
+            links=page.locator(".md-content__inner a").evaluate_all(
+                "(els)=>els.map(a=>({text:a.textContent.trim(),href:a.getAttribute('href')}))"
+            )
+            matched=[a for a in links if name in a["text"]]
+            assert len(matched)==1,(name,links)
+            assert urljoin(page.url,matched[0]["href"]).endswith(destination),(name,matched)
         assert "01-M1-01" not in page.locator(".md-content__inner").inner_text()
         assert not errors,(width,errors)
         print("PASS final cleanup Wave 7",width,"px 4 live topics plus CT01 guidance")
