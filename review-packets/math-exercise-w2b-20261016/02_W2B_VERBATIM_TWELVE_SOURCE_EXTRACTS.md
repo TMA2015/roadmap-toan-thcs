@@ -9,12 +9,16 @@ Copied from legacy source Markdown on `main` at `455cf2d42b31f54a118e49120893e98
 ### 02-M3-01
 36 nam và 48 nữ được chia thành nhiều nhóm nhất sao cho mỗi nhóm có số nam bằng nhau và số nữ bằng nhau. Có bao nhiêu nhóm?
 
+**Shared quick-answer index excerpt:** `02-M3-01: 12 nhóm;`
+
 ---
 
 ## Source `02-M4-01` — `docs/kien-thuc/02-so-va-phep-tinh/bai-tap.md`
 
 ### 02-M4-01
 Tìm số tự nhiên nhỏ nhất lớn hơn 100, chia 12 dư 5 và chia 18 cũng dư 5.
+
+**Shared quick-answer index excerpt:** `02-M4-01: 113;`
 
 ---
 
@@ -23,62 +27,7 @@ Tìm số tự nhiên nhỏ nhất lớn hơn 100, chia 12 dư 5 và chia 18 cũ
 ### 02-M4-03
 Tìm số tự nhiên nhỏ nhất có đúng ba thừa số nguyên tố khác nhau và chia hết cho 6.
 
-??? example "Xem đáp án nhanh – bài bổ sung"
-    - 02-M1-01: 0; 02-M1-02: \(19/12\); 02-M1-03: \(2^2\cdot3\cdot7\).
-    - 02-M2-01: 2500; 02-M2-02: 42 và 252; 02-M2-03: \(-1,25<-1,2<0<0,75\).
-    - 02-M3-01: 12 nhóm; 02-M3-02: \(9/20\); 02-M3-03: \(43/4\).
-    - 02-M4-01: 113; 02-M4-02: 23,5%; 02-M4-03: 30.
-
----
-
-??? example "Xem hướng dẫn chọn lọc – bài bổ sung"
-    # Hướng dẫn chọn lọc
-    
-    ## 02-M3-01 – Chia thành nhiều nhóm nhất
-    
-    Số nhóm phải là ước chung của cả 36 và 48. Vì cần **nhiều nhóm nhất**, ta tìm:
-    
-    \[
-    \operatorname{ƯCLN}(36,48)=12.
-    \]
-    
-    Vậy chia được **12 nhóm**; mỗi nhóm có 3 nam và 4 nữ.
-    
-    **Điểm cần nhớ:** gặp cụm “chia thành nhiều nhóm nhất, mỗi nhóm như nhau” thường nghĩ tới **ƯCLN**.
-    
-    ## 02-M4-01 – Hai phép chia cùng số dư
-    
-    Nếu số cần tìm là \(n\), thì \(n-5\) chia hết cho cả 12 và 18. Do đó \(n-5\) là bội của:
-    
-    \[
-    \operatorname{BCNN}(12,18)=36.
-    \]
-    
-    Ta cần \(n>100\), tức \(36k+5>100\). Giá trị nhỏ nhất phù hợp là \(k=3\), nên:
-    
-    \[
-    n=36\cdot3+5=113.
-    \]
-    
-    **Điểm cần nhớ:** khi nhiều phép chia có **cùng số dư**, hãy trừ số dư trước rồi xét BCNN.
-    
-    ## 02-M4-02 – Giảm giá liên tiếp
-    
-    Sau khi giảm 15%, giá còn \(85\%=0,85\) giá ban đầu. Giảm tiếp 10% trên giá mới thì còn:
-    
-    \[
-    0,85\cdot0,90=0,765.
-    \]
-    
-    Giá cuối bằng 76,5% giá đầu, nên tổng mức giảm là:
-    
-    \[
-    100\%-76,5\%=23,5\%.
-    \]
-    
-    **Điểm cần nhớ:** phần trăm thay đổi liên tiếp phải **nhân các hệ số**, không cộng/trừ trực tiếp các tỉ lệ.
-    
-    ---
+**Shared quick-answer index excerpt for this source (copied from the same topic page):** `02-M4-03: 30.`
 
 ---
 
