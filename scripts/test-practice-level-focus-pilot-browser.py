@@ -1,48 +1,33 @@
 #!/usr/bin/env python3
-"""CT22 four-level paper switch; CT03 paper UI intentionally hidden during conversion."""
+"""CT22 four-level paper source is archived intact; learner Practice is interactive-only."""
+import re
 import shutil
+from pathlib import Path
 from playwright.sync_api import sync_playwright
 
+raw=Path("docs/kien-thuc/22-dai-luong-dac-trung/bai-tap.md").read_text(encoding="utf-8")
+for level,count in ((1,8),(2,8),(3,10),(4,8)):
+    ids=re.findall(r"^###\s+(22-M"+str(level)+r"-\d+)\b",raw,re.M)
+    assert len(ids)==len(set(ids))==count,(level,ids)
+assert "22-M3-01" in raw
 CHROME=shutil.which("google-chrome") or shutil.which("chromium")
 assert CHROME
 BASE="http://127.0.0.1:8765/"
-for_test=[("22-dai-luong-dac-trung","22-M3-01")]
 with sync_playwright() as pw:
     browser=pw.chromium.launch(executable_path=CHROME,headless=True,args=["--no-sandbox","--disable-dev-shm-usage"])
-    for width,height in [(1365,900),(390,844)]:
+    for width,height in ((1365,900),(390,844)):
         ctx=browser.new_context(viewport={"width":width,"height":height})
         page=ctx.new_page()
         errors=[]
         page.on("pageerror",lambda err:errors.append(str(err)))
-        for slug,item in for_test:
-            response=page.goto(BASE+"kien-thuc/"+slug+"/bai-tap/",wait_until="domcontentloaded")
-            assert response and response.status==200,slug
-            if slug=="03-ti-le-ti-le-thuc":
-                legacy=page.locator("[data-legacy-exercises]")
-                legacy.wait_for(state="attached",timeout=15000)
-                legacy.locator(":scope > summary").click()
-                assert legacy.evaluate("(node)=>node.open")
-            root=page.locator("[data-practice-level-focus]")
-            root.wait_for(state="visible",timeout=15000)
-            assert page.locator(".practice-level-button").count()==4,(slug,width)
-            assert "không phải bài kiểm tra" in root.locator(".practice-level-intro").inner_text().lower()
-            panels=root.locator(".practice-level-panel")
-            assert panels.count()==4,(slug,"four levels")
-            assert panels.nth(0).is_visible() and panels.nth(1).is_hidden()
-            page.locator(".practice-level-button").nth(2).click()
-            assert panels.nth(2).is_visible() and panels.nth(0).is_hidden()
-            assert item in panels.nth(2).inner_text(),(slug,"original M3 question preserved")
-            assert page.locator(".practice-focus-disclosure").count()>=2,(slug,"closed answer/guide")
-            assert all(not x for x in page.locator(".practice-focus-disclosure").evaluate_all("(nodes)=>nodes.map(n=>n.open)"))
-            page.locator(".practice-focus-disclosure").first.locator("summary").click()
-            assert page.locator(".practice-focus-disclosure").first.evaluate("(x)=>x.open")
-            page.locator(".practice-level-button").nth(3).click()
-            assert panels.nth(3).is_visible() and panels.nth(2).is_hidden()
-            assert page.locator(".practice-level-button").nth(3).get_attribute("aria-pressed")=="true"
-            assert page.locator(".practice-level-button").nth(0).get_attribute("aria-pressed")=="false"
-            # DOM-only view must never start a learner-history store.
-            assert page.evaluate("Object.keys(localStorage).filter(k=>k.startsWith('toan-thcs-')).length")==0,(slug,"unexpected storage")
+        res=page.goto(BASE+"kien-thuc/22-dai-luong-dac-trung/bai-tap/",wait_until="domcontentloaded")
+        assert res and res.status==200
+        page.locator('[data-practice-bank-v2] .practice-option').first.wait_for(state="visible",timeout=18000)
+        assert page.locator("[data-practice-level-focus]").count()==0
+        assert page.locator(".practice-level-button").count()==0
+        assert page.locator(".practice-subtitle").inner_text().strip()=="Bộ đề 120 câu"
+        assert "22-M3-01" not in page.locator(".md-content__inner").inner_text()
         assert not errors,(width,errors)
-        print("PASS CT03+CT22 four-level focused written exercise UI",width)
+        print("PASS CT22 source-locked four-level paper → interactive-only public Practice",width)
         ctx.close()
     browser.close()
