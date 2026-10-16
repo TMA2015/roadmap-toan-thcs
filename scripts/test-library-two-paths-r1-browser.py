@@ -17,7 +17,8 @@ with sync_playwright() as pw:
         page.goto(BASE+"luyen-tap/",wait_until="domcontentloaded")
         page.evaluate("localStorage.setItem('library-two-paths-sentinel','preserve')")
         assert page.locator(".math-library-entry").count()==2
-        assert page.locator("[data-written-exercise-library]").count()==1
+        assert page.locator("[data-written-exercise-library]").count()==0
+        assert page.locator('.math-library-entry[href="tu-luan/"]').count()==2
         page.locator('.math-library-entry[href="bai-mau-tieu-bieu/"]').click()
         page.wait_for_url("**/luyen-tap/bai-mau-tieu-bieu/")
         root=page.locator("[data-model-examples-library]")
@@ -38,9 +39,9 @@ with sync_playwright() as pw:
         group.select_option("wx")
         assert cards.count()==6,(width,"G9 deep WX count")
         target=cards.first.locator(".model-library-link")
-        assert "luyen-tap/?kind=anchor#wx09-" in target.get_attribute("href")
+        assert "luyen-tap/tu-luan/?kind=anchor#wx09-" in target.get_attribute("href")
         target.click()
-        page.wait_for_url("**/luyen-tap/?kind=anchor#wx09-*")
+        page.wait_for_url("**/luyen-tap/tu-luan/?kind=anchor#wx09-*")
         original=page.locator(".written-exercise-card#wx09-sys-003")
         original.wait_for(state="visible")
         assert original.locator(".written-help-action").count()==5
