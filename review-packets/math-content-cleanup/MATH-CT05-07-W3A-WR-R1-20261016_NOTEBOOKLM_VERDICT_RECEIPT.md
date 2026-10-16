@@ -2,7 +2,7 @@
 
 **Packet:** `MATH-CT05-07-W3A-WR-R1-20261016`  
 **Received from project owner:** after PR #479.  
-**Provenance:** Transcript of the NotebookLM verdict supplied by the owner in chat. References to SGK KNTT Toán 8 T1/T2 below are **the reviewer's reported S1 claims**, not a fresh assistant verification of textbook page scans.
+**Provenance:** Structured receipt of the owner-supplied NotebookLM report: the mandatory verdict block is preserved, and the narrative findings are summarized. References to SGK KNTT Toán 8 T1/T2 below are **the reviewer's reported S1 claims**, not a fresh assistant verification of textbook page scans.
 **Academic status:** `PASS_FOR_AUTHORING_REVIEW` only — **NOT production deployment approval**.
 
 ## I. Source and scope
