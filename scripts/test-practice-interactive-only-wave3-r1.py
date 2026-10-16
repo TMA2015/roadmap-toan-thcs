@@ -58,6 +58,6 @@ for slug, (locked_blob, manifest_name, expected_old, expected_questions) in SOUR
     assert all(item not in published for item in ids), slug
     print(f"PASS {topic}: preserved {len(ids)} historical IDs; {len(q_ids)} live questions, single student player")
 assert old_total == 37
-other = "kien-thuc/14-tam-giac/bai-tap.md"
+other = "kien-thuc/99-no-such-topic/bai-tap.md"
 assert on_page_markdown("# Outside\n", SimpleNamespace(file=SimpleNamespace(src_path=other)), None, None) == "# Outside\n"
 print("PASS CT08–10: 37 paper source IDs unchanged; 381 interactive questions preserved; no grader/history mutations")
