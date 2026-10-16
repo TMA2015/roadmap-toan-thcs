@@ -18,11 +18,11 @@ total_old_ids = 0
 for slug, (locked_blob, manifest_name, old_items) in SOURCE.items():
     source_path = "kien-thuc/" + slug + "/bai-tap.md"
     raw = (Path("docs") / source_path).read_bytes()
-    git_blob = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    git_blob = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
     assert git_blob == locked_blob, f"Audited paper-source change: {slug} got {git_blob}"
     md = raw.decode("utf-8")
     prefix = slug[:2]
-    item_ids = re.findall(r"^####\\s+(" + prefix + r"-(?:WR|ENT|CH)-\\d+)\\b", md, flags=re.M)
+    item_ids = re.findall(r"^####\s+(" + prefix + r"-(?:WR|ENT|CH)-\d+)\b", md, flags=re.M)
     assert len(item_ids) == old_items and len(set(item_ids)) == old_items, (slug, item_ids)
     total_old_ids += len(item_ids)
 
