@@ -2,7 +2,7 @@
 
 > **Học cách nghĩ và cách giải.** Chọn một bài phù hợp, thử suy nghĩ trước, sau đó xem gợi ý và lời giải theo bước. Đây **không phải bài kiểm tra bắt buộc** và không cộng điểm Tự kiểm tra.
 
-[**← Bài tập tự luận để em tự giải ra vở**](../)
+[← Giới thiệu thư viện](../) · [Làm bài tự luận](../tu-luan/)
 
 ## Tìm bài mẫu theo lớp và kiến thức
 
@@ -19,4 +19,4 @@ Chọn lớp em đang học để tìm các bài phù hợp trong thư viện t�
 3. Đối chiếu lời giải, ghi lại cách nhận ra dạng toán.
 4. Thay dữ kiện hoặc làm bài tương tự để xem mình đã hiểu chưa.
 
-[Bài tập tự luận](../) · [Bài mẫu ôn thi vào lớp 10 tại Chuyên đề 25](../kien-thuc/25-tong-hop-on-thi-10/kho-bai-mo-neo.md)
+[Bài tập tự luận](../tu-luan/) · [Bài mẫu ôn thi vào lớp 10 tại Chuyên đề 25](../kien-thuc/25-tong-hop-on-thi-10/kho-bai-mo-neo.md)
