@@ -237,7 +237,7 @@
     if(!typesBody&&!heading)return;
     const a=el("a","written-topic-library-link",`📚 Xem ${items.length} bài mẫu tự luận ${topicId.replace("CT","CĐ")} →`);
     a.dataset.writtenTopicLink="1";
-    a.href=base()+"luyen-tap/?topic="+encodeURIComponent(topicId);
+    a.href=base()+"luyen-tap/tu-luan/?topic="+encodeURIComponent(topicId);
     if(typesBody)typesBody.prepend(a);
     else heading.insertAdjacentElement("afterend",a);
   };

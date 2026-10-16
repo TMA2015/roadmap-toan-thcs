@@ -25,7 +25,7 @@
     const wx=written.exercises.filter(x=>x.exercise_kind==="anchor" && x.academic_review?.status==="APPROVED").map(x=>({
       id:x.exercise_id,title:x.title,grades:x.grade_overlay||[],topicIds:[x.topic_id],
       kind:"wx",description:x.problem_type_title||"Bài học phương pháp",
-      href:rootPath()+"luyen-tap/?kind=anchor#"+encodeURIComponent(x.exercise_id.toLowerCase())
+      href:rootPath()+"luyen-tap/tu-luan/?kind=anchor#"+encodeURIComponent(x.exercise_id.toLowerCase())
     }));
     const a25=classic.anchors.filter(x=>x.publication_status==="published"&&(x.deep_dive_uri||x.source_uri)).map(x=>({
       id:x.id,title:x.title,grades:[9],topicIds:x.topic_ids||[],kind:"a25",

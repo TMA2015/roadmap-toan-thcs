@@ -1,72 +1,27 @@
-# 🗺️ Roadmap Toán THCS
+# Bản đồ học tập Toán THCS
 
-Đây là **một mạch kiến thức dọc xuyên suốt từ lớp 6 đến lớp 9**, dùng 25 chuyên đề làm khung xương sống để học sinh nhìn được toàn cảnh, truy nguyên kiến thức tiên quyết, học tiếp theo quan hệ trước → sau và tái sử dụng cùng nền tảng khi ôn tuyển sinh vào lớp 10.
+Em có **hai cách học** trên Self-Learning Math. Cả hai cùng dùng một hệ thống bài học và bài tập, nên em không cần học lại cùng một nội dung chỉ vì đi theo lối khác.
 
-> **Lớp 6/7/8/9 và các chương Kết nối tri thức là lớp định vị trên cùng Roadmap, không phải bốn cây kiến thức tách rời.**
+## Hôm nay em muốn học gì?
 
-[Xem triết lý mạch kiến thức dọc](triet-ly-mach-kien-thuc-doc.md)
+<div class="math-library-entry-grid">
+  <a class="math-library-entry" href="../hoc-theo-lop/"><strong>📘 Học theo lớp</strong><span>Em đang học một bài ở trường: chọn Lớp 6, 7, 8 hoặc 9 → Chương → Bài, rồi mở Core phù hợp.</span></a>
+  <a class="math-library-entry" href="../kien-thuc/"><strong>🧭 Học theo chuyên đề</strong><span>Em muốn ôn kiến thức nền, kết nối nhiều lớp hoặc luyện một dạng toán: chọn một trong 25 chuyên đề.</span></a>
+</div>
 
-## 25 chuyên đề
+## Trong một bài, em học thế nào?
 
-### A. Số và Đại số
+**Học / Core theo chặng → Luyện tập tương tác → Tự kiểm tra → Ôn lại nếu cần.**
 
-1. [Bản đồ chương trình Toán THCS](../kien-thuc/01-ban-do-chuong-trinh/index.md)
-2. [Số và phép tính](../kien-thuc/02-so-va-phep-tinh/index.md)
-3. [Tỉ lệ – Tỉ lệ thức – Đại lượng tỉ lệ](../kien-thuc/03-ti-le-ti-le-thuc/index.md)
-4. [Biểu thức và biến đổi đại số](../kien-thuc/04-bieu-thuc-dai-so/index.md)
-5. [7 Hằng đẳng thức đáng nhớ](../kien-thuc/05-7-hang-dang-thuc/index.md)
-6. [Phân tích đa thức thành nhân tử](../kien-thuc/06-phan-tich-da-thuc/index.md)
-7. [Phân thức đại số](../kien-thuc/07-phan-thuc-dai-so/index.md)
-8. [Phương trình và bất phương trình](../kien-thuc/08-phuong-trinh-bat-phuong-trinh/index.md)
-9. [Hệ phương trình bậc nhất hai ẩn](../kien-thuc/09-he-phuong-trinh/index.md)
-10. [Hàm số và đồ thị](../kien-thuc/10-ham-so-do-thi/index.md)
-11. [Căn thức và biến đổi căn thức](../kien-thuc/11-can-thuc/index.md)
-12. [Phương trình bậc hai & Viète – chuẩn bị THPT](../kien-thuc/12-phuong-trinh-bac-hai-viete/index.md)
+- **Core theo chặng:** học khái niệm, điều kiện và xem ví dụ; có câu nhỏ để luyện ngay.
+- **Luyện tập tương tác:** trả lời trên website, nhận phản hồi, xem gợi ý và luyện lại.
+- **Tự kiểm tra:** làm độc lập, xem kết quả sau khi nộp; không dùng gợi ý trong lúc kiểm tra.
+- **Bài tập tự luận:** nếu bài cần trình bày lập luận đầy đủ, mở [Thư viện bài tập](../luyen-tap/) để làm trên giấy rồi tự đối chiếu lời giải.
 
-### B. Hình học
+## Học xuyên lớp có gì khác?
 
-13. [Góc và quan hệ giữa các đường thẳng](../kien-thuc/13-goc-va-duong-thang/index.md)
-14. [Tam giác](../kien-thuc/14-tam-giac/index.md)
-15. [Các đường đồng quy trong tam giác](../kien-thuc/15-duong-dong-quy/index.md)
-16. [Tứ giác và các hình đặc biệt](../kien-thuc/16-tu-giac/index.md)
-17. [Định lý Thales và tam giác đồng dạng](../kien-thuc/17-thales-dong-dang/index.md)
-18. [Hệ thức lượng trong tam giác vuông](../kien-thuc/18-he-thuc-luong/index.md)
-19. [Đường tròn](../kien-thuc/19-duong-tron/index.md)
-20. [Hình học tổng hợp, đo lường và hình khối](../kien-thuc/20-hinh-hoc-tong-hop/index.md)
+Trong một chuyên đề có thể có kiến thức của nhiều lớp. Em chỉ cần chọn phần **đúng với bài mình đã học**; không phải làm mọi câu hỏi trong chuyên đề.
 
-### C. Thống kê và Xác suất
+Nếu chưa nhớ kiến thức nền, em có thể quay lại thẻ Core liên quan. Khi đã hiểu hơn, tiếp tục bài đang học ở trường.
 
-21. [Thống kê và thu thập dữ liệu](../kien-thuc/21-thong-ke/index.md)
-22. [Các đại lượng đặc trưng của dữ liệu](../kien-thuc/22-dai-luong-dac-trung/index.md)
-23. [Xác suất](../kien-thuc/23-xac-suat/index.md)
-
-### D. Vận dụng và Ôn thi
-
-24. [Bài toán thực tế và mô hình hóa](../kien-thuc/24-bai-toan-thuc-te/index.md)
-25. [Bản đồ tổng hợp & chiến lược ôn thi vào 10](../kien-thuc/25-tong-hop-on-thi-10/index.md)
-
----
-
-## Cách sử dụng Roadmap
-
-Không nhất thiết học 25 chuyên đề như 25 bài độc lập. Hãy dùng Roadmap theo chu trình:
-
-```text
-Xác định kiến thức hiện tại
-        ↓
-Kiểm tra kiến thức tiên quyết
-        ↓
-Học chuyên đề
-        ↓
-Luyện tập
-        ↓
-Tự kiểm tra
-        ↓
-Chưa đạt → quay lại lỗ hổng
-Đạt     → chuyển chuyên đề tiếp theo
-```
-
-Để xem cấu trúc, quan hệ trước–sau, lớp trọng tâm và mức ưu tiên của từng chuyên đề, xem:
-
-- [Blueprint 25 chuyên đề](blueprint-25-chuyen-de.md)
-- [Ma trận kiến thức](ma-tran-kien-thuc.md)
+[**Bắt đầu học theo lớp →**](../hoc-theo-lop/) · [**Mở 25 chuyên đề →**](../kien-thuc/) · [**Xem hướng dẫn học →**](../huong-dan/)

@@ -27,7 +27,7 @@ with sync_playwright() as p:
     for device, width, height in [("desktop", 1440, 900), ("mobile", 390, 844)]:
         context = browser.new_context(viewport={"width": width, "height": height})
         page = context.new_page()
-        page.goto(BASE + "luyen-tap/", wait_until="networkidle")
+        page.goto(BASE + "luyen-tap/tu-luan/", wait_until="networkidle")
         root = page.locator("[data-written-exercise-library]")
         root.wait_for(state="visible", timeout=15000)
         page.wait_for_function(
@@ -172,7 +172,7 @@ with sync_playwright() as p:
             types_card.locator("summary").click()
         topic_link.wait_for(state="visible", timeout=5000)
         href = topic_link.get_attribute("href")
-        assert "luyen-tap/?topic=CT07" in href, (device, "topic deep link prefilters CT07")
+        assert "luyen-tap/tu-luan/?topic=CT07" in href, (device, "topic deep link prefilters CT07")
         topic_page.goto(BASE.rstrip("/") + href, wait_until="networkidle")
         topic_page.wait_for_function(
             "document.querySelector('[data-written-exercise-library]')?.dataset.ready === '1'",
@@ -209,7 +209,7 @@ with sync_playwright() as p:
             new_link = new_topic_page.locator("[data-written-topic-link]")
             new_link.wait_for(state="attached", timeout=15000)
             new_href = new_link.get_attribute("href")
-            assert f"luyen-tap/?topic={topic_id}" in new_href, (device, topic_id, "topic deep link")
+            assert f"luyen-tap/tu-luan/?topic={topic_id}" in new_href, (device, topic_id, "topic deep link")
             new_topic_page.goto(BASE.rstrip("/") + new_href, wait_until="networkidle")
             new_topic_page.wait_for_function(
                 "document.querySelector('[data-written-exercise-library]')?.dataset.ready === '1'",

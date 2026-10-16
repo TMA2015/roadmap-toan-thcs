@@ -42,8 +42,8 @@ for(const slug of ["01-ban-do-chuong-trinh","05-7-hang-dang-thuc","23-xac-suat",
   ok(nav.includes('["'+slug+'"')&&yaml.includes("kien-thuc/"+slug+"/index.md"),"canonical topic route: "+slug);
 ok(nav.includes("dialog.showModal()")&&nav.includes("scrollTop = 0"),"accessible chooser starts at top");
 ok(nav.includes("main.className=\"roadmap-main-quick\"")&&nav.includes("mainDestinations"),"seven destinations in the independent topic chooser");
-ok(nav.includes('["Thư viện bài tập", "luyen-tap/", "✎"]')&&yaml.includes("  - Thư viện bài tập:")&&yaml.includes("Mở thư viện bài tập: luyen-tap/index.md"),"written exercise library is available in quick shortcuts and grouped navigation");
-const orderedPrimary=["Trang chủ","Roadmap","Hướng dẫn","25 chuyên đề","Học theo KNTT","Thư viện bài tập","AI"];
+ok(nav.includes('["Thư viện bài tập", "luyen-tap/", "✎"]')&&yaml.includes("  - Thư viện bài tập:")&&yaml.includes("Giới thiệu thư viện: luyen-tap/index.md"),"written exercise library is available in quick shortcuts and grouped navigation");
+const orderedPrimary=["Trang chủ","Học theo lớp","Học theo chuyên đề","Thư viện bài tập","Tiến độ học tập","Hướng dẫn"];
 for(let i=0;i<orderedPrimary.length-1;i++){
   ok(yaml.indexOf("  - "+orderedPrimary[i]+":")<yaml.indexOf("  - "+orderedPrimary[i+1]+":"),"primary navigation order: "+orderedPrimary[i]+" before "+orderedPrimary[i+1]);
 }

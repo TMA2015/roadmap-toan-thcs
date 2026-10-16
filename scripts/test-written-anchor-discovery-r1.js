@@ -7,7 +7,8 @@ const assert = require("assert");
 const root = path.resolve(__dirname, "..");
 const read = p => fs.readFileSync(path.join(root, p), "utf8");
 const exists = p => fs.existsSync(path.join(root, p));
-const writtenPage = read("docs/luyen-tap/index.md");
+const landing = read("docs/luyen-tap/index.md");
+const writtenPage = read("docs/luyen-tap/tu-luan.md");
 const core02 = read("docs/kien-thuc/02-so-va-phep-tinh/bai-tap.md");
 const anchors = JSON.parse(read("docs/assets/data/anchors/anchor-catalog-v1.json"));
 const written = JSON.parse(read("docs/assets/data/written-exercises/written-exercise-library-v1.json"));
@@ -16,13 +17,13 @@ const anchorDir = "docs/kien-thuc/25-tong-hop-on-thi-10/";
 
 for (const filename of ["kho-bai-mo-neo.md", "bai-toan-kinh-dien.md"]) {
   assert(exists(anchorDir + filename), "Anchor destination missing: " + filename);
-  assert(writtenPage.includes("../kien-thuc/25-tong-hop-on-thi-10/" + filename),
-    "Shared written library must expose the separate canonical anchor source: " + filename);
+  assert(filename !== "kho-bai-mo-neo.md" || writtenPage.includes("../kien-thuc/25-tong-hop-on-thi-10/kho-bai-mo-neo.md"),
+    "Written library must link to the published CĐ25 anchor source");
 }
-assert(writtenPage.indexOf("## Em muốn làm gì?") <
-       writtenPage.indexOf("<div data-written-exercise-library>"),
-       "Anchor discovery link must precede the written exercise filter");
-assert(writtenPage.includes("không phải kho thứ ba") && writtenPage.includes("?kind=anchor"),
+assert(landing.includes("## Em muốn làm gì?") && !landing.includes("data-written-exercise-library") &&
+       writtenPage.includes("<div data-written-exercise-library>"),
+       "Landing and actual written library must be separate pages");
+assert(writtenPage.includes("không phải một kho bài tự luận trùng lặp") && writtenPage.includes("?kind=anchor"),
        "Distinguish deep anchors in Written Library from separate CĐ25 catalog");
 assert(Array.isArray(written.exercises) && written.exercises.length > 0,
        "Existing written exercises must remain present");

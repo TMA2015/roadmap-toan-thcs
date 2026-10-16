@@ -142,7 +142,7 @@ ok(byId["WX09-SYS-008"].full_solution_markdown.includes("m=1")&&byId["WX09-SYS-0
 for(const x of data.exercises.filter(x=>x.topic_id==="CT14"&&x.academic_review?.packet_id!=="MATH-WRITTEN-IMPLEMENTATION-W1-R1-20261010")){
   ok(x.figure_uri&&fs.existsSync(path.join("docs",x.figure_uri.replace(/^\.\.\//,""))),"historical geometry figure "+x.exercise_id);
 }
-const page=read("docs/luyen-tap/index.md");
+const page=read("docs/luyen-tap/tu-luan.md");
 ok(page.includes("data-written-exercise-library"),"library page mount");
 ok(!page.includes("Pilot v1"),"library intro no longer pilot-labelled");
 ok(!page.includes("Hiện pilot có"),"library intro has no stale fixed pilot count");
@@ -167,7 +167,7 @@ ok(byId["WX02-NUM-003"].kntt_placements?.[0]?.lesson.startsWith("Bài 27"),"WX02
 ok(byId["WX20-GEO-003"].kntt_placements?.[0]?.lesson.startsWith("Bài 20"),"WX20-GEO-003 KNTT placement");
 ok(byId["WX13-LIN-003"].kntt_placements?.length===2,"WX13-LIN-003 dual KNTT placement");
 const yaml=read("mkdocs.yml");
-ok(yaml.includes("  - Thư viện bài tập:")&&yaml.includes("Mở thư viện bài tập: luyen-tap/index.md"),"nav entry");
+ok(yaml.includes("  - Thư viện bài tập:")&&yaml.includes("Giới thiệu thư viện: luyen-tap/index.md")&&yaml.includes("Bài tập tự luận: luyen-tap/tu-luan.md"),"nav entry");
 ok(yaml.includes("written-exercise-library-v1.css"),"css wired");
 ok(yaml.includes("written-exercise-library-v1.js"),"js wired");
 const ui=read("docs/assets/javascripts/written-exercise-library-v1.js");
@@ -177,7 +177,7 @@ ok(ui.includes("hint_steps")&&ui.includes("Gợi ý 1/3")&&ui.includes("Ôn bù 
 ok(ui.includes("learner_label"),"learner-facing anchor labels wired");
 ok(!ui.includes("${x.estimated_minutes} phút"),"estimated minutes hidden from learner-facing written cards");
 ok(data.exercises.every(x=>Number.isFinite(Number(x.estimated_minutes))&&Number(x.estimated_minutes)>0),"estimated minutes retained as internal scheduling metadata");
-ok(ui.includes("initTopicLibraryLink")&&ui.includes('luyen-tap/?topic='),"topic lesson deep link with topic auto-filter wired");
+ok(ui.includes("initTopicLibraryLink")&&ui.includes('luyen-tap/tu-luan/?topic='),"topic lesson deep link with topic auto-filter wired");
 ok(uiCss.includes("grid-template-columns:repeat(3,minmax(0,1fr))"),"help actions use one three-column row");
 ok(uiCss.includes(".written-topic-library-link"),"topic-to-library CTA styled");
 

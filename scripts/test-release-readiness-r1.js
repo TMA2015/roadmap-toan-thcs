@@ -16,7 +16,7 @@ const journeys=[
  {grade:9,topic:"09-he-phuong-trinh",theme:"system-modeling"}
 ];
 assert(home.includes('href="hoc-theo-lop/"'),"Homepage must link to grade learning");
-assert(guide.includes("../hoc-theo-lop/")&&guide.includes("Core → Luyện tập → Tự kiểm tra"),"Learner guide must state a real journey");
+assert(guide.includes("../hoc-theo-lop/")&&guide.includes("Core theo chặng → Luyện tập tương tác → Tự kiểm tra"),"Learner guide must state a real journey");
 let chapters=0,links=0;
 const gradeRouteCounts={};
 for(const grade of allGrades){
