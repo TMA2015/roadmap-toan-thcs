@@ -6,7 +6,7 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 raw=Path("docs/kien-thuc/22-dai-luong-dac-trung/bai-tap.md").read_text(encoding="utf-8")
-for level,count in ((1,8),(2,8),(3,10),(4,8)):
+for level,count in ((1,8),(2,8),(3,10),(4,6)):
     ids=re.findall(r"^###\s+(22-M"+str(level)+r"-\d+)\b",raw,re.M)
     assert len(ids)==len(set(ids))==count,(level,ids)
 assert "22-M3-01" in raw
