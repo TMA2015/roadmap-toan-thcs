@@ -210,6 +210,7 @@ jobs:
           node scripts/test-ct25-exam-library-r1.js
           node scripts/test-practice-r2-first-paint.js
           python scripts/test-practice-interactive-only-build-r1.py
+          python scripts/test-practice-interactive-only-wave2-r1.py
           node scripts/test-four-topic-complete-legacy-inventory-r1.js
           node scripts/test-math-w1-notebooklm-r1-receipt.js
           node scripts/test-math-w1-notebooklm-r2-evidence.js
@@ -351,6 +352,7 @@ jobs:
           python scripts/test-math-learner-nav-library-r2-browser.py
           python scripts/test-practice-level-focus-pilot-browser.py
           python scripts/test-practice-role-consolidation-pilot-browser.py
+          python scripts/test-practice-interactive-only-wave2-browser.py
           python scripts/test-math-w1-rich-practice-browser.py
           python scripts/test-math-w1-rich-practice-wave2-browser.py
           python scripts/test-math-w1-rich-practice-wave3-browser.py
