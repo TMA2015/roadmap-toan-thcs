@@ -5,9 +5,9 @@
 
 ## Student-facing outcome
 
-- **CT22:** 120 existing MCQ questions; note this is optional THPT Bridge and does not modify THCS Core Readiness. The 34 former M1–M4 paper prompts remain in original Markdown for academic classification.
-- **CT23:** 120 existing MCQ questions; preserve the direct route to the ten-question dedicated written self-check (`tu-kiem-tra-tu-luan.md`) which does not affect Core Readiness. The 36 former M1–M4 paper prompts remain in source.
-- **CT24:** 120 existing MCQ questions; 37 old M1–M4 model-building exercises preserved for later placement in Written/Core rather than forced into multiple choice.
+- **CT22:** 120 existing MCQ questions; note this is optional THPT Bridge and does not modify THCS Core Readiness. The 32 former M1–M4 paper prompts remain in original Markdown for academic classification.
+- **CT23:** 120 existing MCQ questions; preserve the direct route to the ten-question dedicated written self-check (`tu-kiem-tra-tu-luan.md`) which does not affect Core Readiness. The 34 former M1–M4 paper prompts remain in source.
+- **CT24:** 120 existing MCQ questions; 34 old M1–M4 model-building exercises preserved for later placement in Written/Core rather than forced into multiple choice.
 - **CT25:** 120 existing MCQ questions; 16 paper A–F supplemental source problems retained. Preserve direct learner links to A25 anchor examples, classic worked models, exam paper library and exam skills. These resources, including the ten A25 classics and additional eleventh anchor, remain in their existing canonical files, not duplicated or overwritten.
 - **CT01:** No interactive question bank exists. It is a conceptual Roadmap/orientation topic, so the `bai-tap/` learner route now presents *clear learning navigation* rather than old paper planning tasks or an invented pseudo-MCQ. Twelve planning prompts remain in immutable Markdown source.
 
@@ -15,7 +15,7 @@ The source-preserving build hook shows **only existing interactive Practice** in
 
 ## Academic work still OPEN
 
-All 123 + 12 = 135 old source items continue as source evidence. No one has decided each item is redundant or approved migration to new interactive/WX banks. NotebookLM item-by-item review remains required before formal conversion, especially full derivations/modeling, probability written reasoning, CĐ25 geometry proofs, and CT22 secondary-school bridge classifications.
+All 116 + 12 = 128 old source items continue as source evidence. No one has decided each item is redundant or approved migration to new interactive/WX banks. NotebookLM item-by-item review remains required before formal conversion, especially full derivations/modeling, probability written reasoning, CĐ25 geometry proofs, and CT22 secondary-school bridge classifications.
 
 ## QA contract
 
