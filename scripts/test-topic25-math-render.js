@@ -36,8 +36,16 @@ for (const file of fs.readdirSync(folder).filter(x => x.endsWith(".md") && !x.st
     const htmlPath = path.join(root, "site/kien-thuc/25-tong-hop-on-thi-10", slug, "index.html");
     check(fs.existsSync(htmlPath), "missing built route " + htmlPath);
     const html = fs.readFileSync(htmlPath, "utf8");
-    const matches = html.match(/<div\b[^>]*class=["'][^"']*\barithmatex\b[^"']*["'][^>]*>/g) || [];
-    check(matches.length >= count, file + ": " + count + " source displays, only " + matches.length + " HTML arithmatex display wrappers");
+    if (file === "bai-tap.md") {
+      // The original 8 display-math paper tasks remain academic source,
+      // intentionally excluded from the student-facing interactive-only view.
+      check(html.includes('data-practice-bank-v2=') && html.includes('data-practice-ui-v2="CT25"'),
+        "CT25 Practice must publish the existing interactive player");
+      check(!html.includes("25-A1"), "CT25 old paper tasks must not leak into learner Practice HTML");
+    } else {
+      const matches = html.match(/<div\b[^>]*class=["'][^"']*\barithmatex\b[^"']*["'][^>]*>/g) || [];
+      check(matches.length >= count, file + ": " + count + " source displays, only " + matches.length + " HTML arithmatex display wrappers");
+    }
   }
 }
 check(files >= 15 && blocks >= 100, "unexpectedly small CĐ25 math coverage");
