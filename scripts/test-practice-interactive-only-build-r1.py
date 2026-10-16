@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Source-locked Wave 1: original 75 paper IDs preserved; published pages interactive-only."""
 import hashlib
+import sys
 from pathlib import Path
 from types import SimpleNamespace
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from hooks.topic_markdown_fixes import on_page_markdown
 
 SOURCE = {
