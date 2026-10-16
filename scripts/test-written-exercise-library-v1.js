@@ -53,13 +53,19 @@ for(const topic of ["CT02","CT03","CT04","CT05","CT06","CT07","CT08","CT09","CT1
 }
 for(const x of data.exercises){
   ok(x.exercise_kind==="standard"||x.exercise_kind==="anchor","kind "+x.exercise_id);
-  ok(["KNTT-Core","Core-Support","Entrance10"].includes(x.learning_layer),"layer "+x.exercise_id);
+  ok(["KNTT-Core","Core-Support","Entrance10","Specialized-Challenge"].includes(x.learning_layer),"layer "+x.exercise_id);
+  if(x.learning_layer==="Specialized-Challenge"){
+    ok(x.level==="CHALLENGE","challenge level "+x.exercise_id);
+    ok(x.learner_label==="Thử thách","challenge learner label "+x.exercise_id);
+    ok(data.auto_readiness_credit===false,"challenge never grants Core Readiness");
+  }
+  if(x.level==="CHALLENGE")ok(x.learning_layer==="Specialized-Challenge","challenge layer "+x.exercise_id);
   if(x.exercise_kind==="anchor"){
     ok(Array.isArray(x.hint_steps)&&x.hint_steps.length===3,"three progressive hints "+x.exercise_id);
     ok(String(x.full_solution_markdown||"").trim(),"full solution "+x.exercise_id);
     ok(String(x.method_rationale_markdown||"").trim(),"method rationale "+x.exercise_id);
     ok(String(x.remediation_markdown||"").trim(),"remediation markdown "+x.exercise_id);
-    ok(["Nền tảng","Củng cố","Ôn thi vào 10"].includes(x.learner_label),"learner label "+x.exercise_id);
+    ok(["Nền tảng","Củng cố","Ôn thi vào 10","Thử thách"].includes(x.learner_label),"learner label "+x.exercise_id);
   }else{
     ok(Array.isArray(x.solution_steps)&&x.solution_steps.length>=3,"solution depth "+x.exercise_id);
     ok(new Set(x.solution_steps.map(s=>s.step_id)).size===x.solution_steps.length,"unique solution step IDs "+x.exercise_id);
