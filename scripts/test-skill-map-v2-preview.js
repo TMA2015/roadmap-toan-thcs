@@ -138,7 +138,8 @@ assert.ok(page.includes("Readiness"));
 assert.ok(page.includes("data-skill-map-v2-preview"));
 
 const mkdocs = read("mkdocs.yml");
-assert.ok(mkdocs.includes("Skill Map v2 Owner Preview: collaboration/skill-map-v2-preview.md"));
+assert.ok(require("node:fs").existsSync("docs/collaboration/skill-map-v2-preview.md"), "Owner preview source kept");
+assert.ok(!mkdocs.includes("Skill Map v2 Owner Preview: collaboration/skill-map-v2-preview.md"), "developer-only preview hidden from student menu");
 assert.ok(mkdocs.includes("assets/stylesheets/skill-map-v2-preview.css"));
 assert.ok(mkdocs.includes("assets/javascripts/skill-map-v2-preview.js"));
 
