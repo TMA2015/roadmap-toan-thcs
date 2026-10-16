@@ -1,5 +1,8 @@
 # Project Handoff — Self-Learning Math
 
+> **MATH P0 CLEANUP — CT14–20 WAVE 6 CANDIDATE (16/10/2026):** Owner authorized continuing through all remaining Practice topics without individual pauses. CĐ14–20 source-locked publication hook preserves 84 original paper IDs and existing 990 interactive questions while hiding paper blocks from student Practice. Existing 22 WX exercises remain untouched, to be academically compared against the 84 originals in a later NotebookLM review. Regression covers original blob SHAs, unique IDs, 1365/390px browser, one player and no storage writes. QA/deploy pending. Next distinct group CĐ22–25 requires special handling for 4-level legacy bank and CĐ25 A25 canonical anchors; CĐ21 already done. No scoring/data migration or English private Actions.
+
+
 > **CONTENT & UX CLEANUP — CT11–13 WAVE 5 CANDIDATE (16/10/2026):** After merged and deployed PR #473, owner requested the next wave. A narrow MkDocs build hook now makes CĐ11/12/13 student Practice pages interactive-only, using existing manifests of 132/123/156 questions (411 total). All 39 old WR/ENT/CH/SUP IDs and original Markdown files are **byte-identical** in Git; pending academic triage R0 documented, not moved to Written or retired. Preserve existing Core, Readiness, scoring, learner progress and browser/device storage. CI exact source SHA, 411 unique question IDs, mobile/desktop, 3 links, one player. Redirect old nonpilot test controls to CĐ14. **Full PR QA and deployment verification pending.** English private Actions untouched.
 
 

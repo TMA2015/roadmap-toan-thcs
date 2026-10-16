@@ -61,6 +61,6 @@ for slug, (blob_sha, manifest_file, paper_count, question_count) in SOURCE.items
     assert all(legacy not in published for legacy in paper_ids), slug
     print(f"PASS {topic}: {paper_count} original authored source IDs and {question_count} interactive questions preserved")
 assert total_old == 39 and total_questions == 411
-other = "kien-thuc/14-tam-giac/bai-tap.md"
+other = "kien-thuc/99-no-such-topic/bai-tap.md"
 assert on_page_markdown("# Outside\n", SimpleNamespace(file=SimpleNamespace(src_path=other)), None, None) == "# Outside\n"
 print("PASS Wave 5: three new Practice views only; CT14 source view untouched; no history or scoring changes")

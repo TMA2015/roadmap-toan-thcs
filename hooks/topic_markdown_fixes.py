@@ -1,6 +1,6 @@
 """Narrow build-time transformations; source-locked paper Markdown stays unchanged.
 
-Thirteen pilot Practice pages publish only their reviewed interactive players during
+Twenty pilot Practice pages publish only their reviewed interactive players during
 the owner-approved content reclassification. Hiding old learner-visible paper
 blocks is NOT academic retirement, bank migration, or history regrading.
 """
@@ -49,6 +49,20 @@ _NEXT_PILOT_PRACTICE = {
         ("CT12", "12-phuong-trinh-bac-hai-viete-v1.manifest.json", "Phương trình bậc hai & Viète"),
     "kien-thuc/13-goc-va-duong-thang/bai-tap.md":
         ("CT13", "13-goc-va-duong-thang-v1.manifest.json", "Góc và quan hệ giữa các đường thẳng"),
+    "kien-thuc/14-tam-giac/bai-tap.md":
+        ("CT14", "14-tam-giac-v1.manifest.json", "Tam giác"),
+    "kien-thuc/15-duong-dong-quy/bai-tap.md":
+        ("CT15", "15-duong-dong-quy-v1.manifest.json", "Các đường đồng quy trong tam giác"),
+    "kien-thuc/16-tu-giac/bai-tap.md":
+        ("CT16", "16-tu-giac-v1.manifest.json", "Tứ giác và các hình đặc biệt"),
+    "kien-thuc/17-thales-dong-dang/bai-tap.md":
+        ("CT17", "17-thales-dong-dang-v1.manifest.json", "Thales và tam giác đồng dạng"),
+    "kien-thuc/18-he-thuc-luong/bai-tap.md":
+        ("CT18", "18-he-thuc-luong-v1.manifest.json", "Hệ thức lượng trong tam giác vuông"),
+    "kien-thuc/19-duong-tron/bai-tap.md":
+        ("CT19", "19-duong-tron-v1.manifest.json", "Đường tròn"),
+    "kien-thuc/20-hinh-hoc-tong-hop/bai-tap.md":
+        ("CT20", "20-hinh-hoc-tong-hop-v1.manifest.json", "Hình học tổng hợp, đo lường và hình khối"),
 }
 
 
