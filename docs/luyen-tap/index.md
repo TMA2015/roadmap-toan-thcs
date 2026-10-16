@@ -1,37 +1,36 @@
-# Thư viện bài tập tự luận
+# Thư viện bài tập
 
-> Thư viện này bổ sung phần **trình bày lời giải trên giấy** cho Core/Practice. Em không cần nhập bài tự luận vào website: hãy tự làm trên vở, sau đó mở hướng dẫn và rubric để đối chiếu từng bước.
+Em có thể **tự giải một bài toán** hoặc **xem một bài mẫu để học cách giải**. Hãy chọn cách phù hợp với mục tiêu hôm nay.
 
 ## Em muốn làm gì?
 
 <div class="math-library-entry-grid">
-  <a class="math-library-entry" href="./"><strong>✍️ Bài tập tự luận</strong><span>Tự giải ra vở, đối chiếu hướng dẫn và các bước tự chấm. Em đang ở trang này.</span></a>
-  <a class="math-library-entry" href="bai-mau-tieu-bieu/"><strong>💡 Bài mẫu tiêu biểu</strong><span>Học cách suy luận, nhận dạng bài và chọn phương pháp; có bộ lọc theo lớp.</span></a>
+  <a class="math-library-entry" href="tu-luan/"><strong>✍️ Làm bài tự luận</strong><span>Chọn lớp, chuyên đề hoặc dạng bài. Tự giải ra vở rồi đối chiếu hướng dẫn, lời giải và các bước tự chấm.</span></a>
+  <a class="math-library-entry" href="bai-mau-tieu-bieu/"><strong>💡 Học bài mẫu tiêu biểu</strong><span>Xem cách phân tích đề, lựa chọn phương pháp và trình bày lời giải mẫu.</span></a>
 </div>
 
-**Mục tiêu của trang này:** luyện cách trình bày lời giải, không phải kiểm tra điểm số chính thức. Tự làm trước khi mở đáp án; phần tự chấm không cộng điểm vào Core Readiness.
+## Trong thư viện có gì?
 
-??? info "Bài mẫu tiêu biểu và bài kinh điển có gì khác?"
-    Trong 63 bài tự luận có **10 bài mẫu giải sâu WX**. Chuyên đề 25 có kho riêng **11 bài A25**, trong đó **10 bài kinh điển chính là 10 bài A25 tiêu biểu**, không phải kho thứ ba.
+**Bài tập tự luận:** đề bài để em tự trình bày đầy đủ trên giấy. Sau khi thử sức, em có thể mở gợi ý, lời giải và bảng tự chấm. Kết quả tự chấm **không tự cộng điểm Tự kiểm tra**.
 
-    - [Xem tất cả bài mẫu có bộ lọc lớp](bai-mau-tieu-bieu.md)
-    - [Lọc 10 bài mẫu WX trong trang tự luận](?kind=anchor)
-    - [Mở kho A25 ở Chuyên đề 25](../kien-thuc/25-tong-hop-on-thi-10/kho-bai-mo-neo.md)
-    - [Xem tuyển tập 10 bài kinh điển](../kien-thuc/25-tong-hop-on-thi-10/bai-toan-kinh-dien.md)
+**Bài mẫu tiêu biểu:** những bài có lời giải hướng dẫn rõ cách suy nghĩ. Em nên đọc đề và thử tìm hướng giải trước khi mở lời giải.
 
-## Các bài tự luận trong thư viện chung
+**[Bản đồ kỹ năng](../ban-do-ky-nang/):** cho em xem các kỹ năng đã luyện và tìm chuyên đề cần củng cố. Số lượt luyện không có nghĩa là đã thành thạo.
 
-Thư viện được **mở rộng dần theo từng chuyên đề**. Hãy dùng bộ lọc bên dưới để xem các chuyên đề, dạng bài và mức độ hiện đang có.
+**Luyện tập tương tác:** nếu muốn trả lời trực tiếp trên website và được phản hồi ngay, hãy mở mục [Học theo lớp](../hoc-theo-lop/) hoặc [Học theo chuyên đề](../kien-thuc/) rồi chọn **Luyện tập** trong bài học.
 
-Mỗi bài được thiết kế theo vòng: **đọc đề → tự giải trên giấy → mở hướng dẫn từng bước → tự chấm theo rubric → quay lại phần kiến thức/kỹ năng cần ôn**.
+## Cách sử dụng
 
-<div data-written-exercise-library>
-  <p>Đang tải thư viện bài tập…</p>
+1. Chọn **Làm bài tự luận** để tự giải, hoặc **Học bài mẫu tiêu biểu** để học phương pháp.
+2. Dùng bộ lọc để tìm bài phù hợp với kiến thức đã học.
+3. Nếu làm bài tự luận, hãy thử giải trên giấy trước rồi mới mở hướng dẫn và tự chấm.
+4. Nếu cần học lại một phần kiến thức, theo liên kết về chuyên đề.
+
+## Chọn bài để bắt đầu
+
+<div class="math-library-entry-grid">
+  <a class="math-library-entry" href="tu-luan/"><strong>✍️ Làm bài tự luận →</strong><span>Chọn bài, tự giải trên giấy và kiểm tra từng bước.</span></a>
+  <a class="math-library-entry" href="bai-mau-tieu-bieu/"><strong>💡 Học bài mẫu tiêu biểu →</strong><span>Xem bài giải mẫu và học cách chọn phương pháp.</span></a>
 </div>
 
-??? info "Nguyên tắc dành cho người biên soạn (mở khi cần)"
-
-    - Bài tự luận **không tự cộng điểm Readiness/mastery**.
-    - Một dạng bài chỉ cần **1 bài Core Base** nếu đã đủ để thể hiện phương pháp; thêm **Core Apply** khi thật sự có yêu cầu suy luận khác.
-    - Thư viện được mở rộng theo nhu cầu học tập và chất lượng học thuật, không chạy theo số lượng.
-    - Các bài mỏ neo CĐ25 vẫn giữ ID/source riêng; khi đưa vào thư viện chung sẽ **tham chiếu**, không sao chép thành nguồn nội dung thứ hai.
+<script src="../assets/javascripts/written-library-legacy-links-v1.js" defer></script>
