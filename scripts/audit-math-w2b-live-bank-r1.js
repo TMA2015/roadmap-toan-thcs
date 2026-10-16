@@ -84,7 +84,13 @@ for(const [source,relation,ids,writtenIds] of entries){
  const slug=sourceSlugs[source.slice(0,2)];
  const md=fs.readFileSync(path.join(ROOT,"docs/kien-thuc",slug,"bai-tap.md"),"utf8");
  assert(new RegExp("^#{2,4}\\s+"+source+"(?:\\b| ·)","m").test(md),"legacy problem missing "+source);
- assert(!questions.some(q=>q.source_item_id===source),"unexpected unapproved W2B import "+source);
+ if(source==="04-WR-10"){
+  const variants=questions.filter(q=>q.source_item_id===source);
+  assert.equal(variants.length,1,"only one reviewed W2B formative pilot permitted");
+  assert.equal(variants[0].id,"ALG04-RICH-W2B-01-V1");
+ } else {
+  assert(!questions.some(q=>q.source_item_id===source),"unexpected W2B import "+source);
+ }
  for(const id of ids){
    const q=byId.get(id); assert(q,"stale reference "+source+" → "+id);
    const qStem=normalize(q.question);
