@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Opt-in CT03/CT22 authored exercise level switch; independent user history untouched."""
+"""CT22 four-level paper switch; CT03 paper UI intentionally hidden during conversion."""
 import shutil
 from playwright.sync_api import sync_playwright
 
 CHROME=shutil.which("google-chrome") or shutil.which("chromium")
 assert CHROME
 BASE="http://127.0.0.1:8765/"
-for_test=[("03-ti-le-ti-le-thuc","03-M3-01"),("22-dai-luong-dac-trung","22-M3-01")]
+for_test=[("22-dai-luong-dac-trung","22-M3-01")]
 with sync_playwright() as pw:
     browser=pw.chromium.launch(executable_path=CHROME,headless=True,args=["--no-sandbox","--disable-dev-shm-usage"])
     for width,height in [(1365,900),(390,844)]:
