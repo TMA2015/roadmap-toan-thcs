@@ -217,6 +217,7 @@ jobs:
           node scripts/test-math-w1-r2a-structured-grading-research.js
           node --check docs/assets/javascripts/model-examples-library-v1.js
           node scripts/test-library-two-paths-r1.js
+          node scripts/test-math-learner-nav-library-r2.js
           node --check docs/assets/javascripts/practice-level-focus-pilot-v1.js
           node --check docs/assets/javascripts/practice-role-consolidation-pilot-v1.js
           node --check docs/assets/javascripts/route-module-loader-v2.js
@@ -347,6 +348,7 @@ jobs:
           python scripts/test-topic09-p1c2-browser.py
           python scripts/test-written-exercise-library-browser.py
           python scripts/test-library-two-paths-r1-browser.py
+          python scripts/test-math-learner-nav-library-r2-browser.py
           python scripts/test-practice-level-focus-pilot-browser.py
           python scripts/test-practice-role-consolidation-pilot-browser.py
           python scripts/test-math-w1-rich-practice-browser.py
