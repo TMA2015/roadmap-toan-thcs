@@ -83,15 +83,15 @@ def _interactive_only_next_pilot(src_path: str) -> str:
         if topic == "CT22" else ""
     )
     extra = (
-        '\n\n**Luyện trình bày theo từng bước:** '
-        '[Bộ 10 bài tự luận xác suất](../tu-kiem-tra-tu-luan/). '
-        'Tự chấm trên giấy không ghi đè điểm Tự kiểm tra.'
+        '<p class="practice-extra-route"><strong>Luyện trình bày trên giấy:</strong> '
+        '<a href="../tu-kiem-tra-tu-luan/">Bộ 10 bài tự luận xác suất</a>. '
+        'Kết quả tự chấm không ghi đè điểm Tự kiểm tra.</p>'
         if topic == "CT23" else
-        '\n\n**Ôn thi theo đề:** '
-        '[Bài toán kinh điển](../bai-toan-kinh-dien/) · '
-        '[Bài mỏ neo A25](../kho-bai-mo-neo/) · '
-        '[Thư viện đề luyện](../thu-vien-de-luyen/) · '
-        '[Kỹ năng làm bài](../tu-danh-gia-ky-nang-thi/).'
+        '<p class="practice-extra-route"><strong>Ôn thi theo đề:</strong> '
+        '<a href="../bai-toan-kinh-dien/">Bài toán kinh điển</a> · '
+        '<a href="../kho-bai-mo-neo/">Bài mỏ neo A25</a> · '
+        '<a href="../thu-vien-de-luyen/">Thư viện đề luyện</a> · '
+        '<a href="../tu-danh-gia-ky-nang-thi/">Kỹ năng làm bài</a>.</p>'
         if topic == "CT25" else ""
     )
     return f"""# Luyện tập – Chuyên đề {topic[2:]}: {title}
@@ -123,9 +123,7 @@ def _roadmap_topic_intro() -> str:
 
 Đây là nơi chọn **cách học**, không phải một bài kiểm tra kiến thức Toán. Em không cần làm bài trên giấy ở trang này.
 
-- [Bản đồ học tập →](../../../roadmap/)
-- [Học theo lớp →](../../../hoc-theo-lop/)
-- [Chọn chuyên đề để học →](../../)
+<p><a href="../../../roadmap/">Bản đồ học tập →</a> · <a href="../../../hoc-theo-lop/">Học theo lớp →</a> · <a href="../../">Chọn chuyên đề để học →</a></p>
 
 Em có thể chọn một bài học rồi mở **Core → Luyện tập tương tác → Tự kiểm tra** ngay trong chuyên đề đó.
 """
