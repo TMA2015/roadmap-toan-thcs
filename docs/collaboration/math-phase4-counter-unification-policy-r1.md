@@ -20,7 +20,7 @@
 
 ## R1 executable proof
 
-- `docs/assets/javascripts/math-unified-evidence-projection-r1.js` reads existing stores once each, uses no `setItem` or `removeItem`, preserves missing/invalid/unavailable distinctions and does not manufacture timestamped historical events.
+- `scripts/prototypes/math-unified-evidence-projection-r1.js` reads existing stores once each, uses no `setItem` or `removeItem`, preserves missing/invalid/unavailable distinctions and does not manufacture timestamped historical events.
 - `scripts/test-math-unified-evidence-projection-r1.js` exercises synthetic input, no-write guarantees, unknown/corrupt inputs, and separated metrics. The PR adds a CI gate.
 - This is not yet a released v2 learner counter, not a migration, and not an account/cloud synchronization feature.
 
