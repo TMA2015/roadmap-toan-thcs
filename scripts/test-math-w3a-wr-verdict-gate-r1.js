@@ -26,5 +26,5 @@ assert(existing.teaching_copy.key_idea.includes("miền xác định ban đầu"
 const test=read("scripts/test-written-exercise-library-v1.js");
 assert(test.includes('"KNTT-Core","Core-Support","Entrance10"'),"Challenge layer contract drift: reassess the implementation gate");
 const ui=read("docs/assets/javascripts/written-exercise-library-v1.js");
-assert(ui.includes('["ENTRANCE10","Ôn thi vào 10"]')&&!ui.includes('["CHALLENGE"'),"Written level selector has changed: reassess release plan");
-console.log("PASS W3A-WR 3/3 submitted authoring verdict archived; Challenge contract unsupported; production WX/Core unchanged");
+assert(ui.includes('["ENTRANCE10","Ôn thi vào 10"]')&&ui.includes('["CHALLENGE","Thử thách"]'),"Optional Challenge filter must remain supported without releasing WX content");
+console.log("PASS W3A-WR 3/3 submitted authoring verdict archived; Challenge UI supported; W3A-WR content still awaiting release");
