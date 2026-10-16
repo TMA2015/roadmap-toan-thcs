@@ -50,6 +50,6 @@ for slug, (locked_blob, manifest_name, old_items) in SOURCE.items():
     assert not any(item in visible for item in item_ids), slug
     print(f"PASS {topic}: 120 unique interactive IDs, {len(item_ids)} preserved old IDs, one clean Practice entry")
 assert total_old_ids == 40, total_old_ids
-other = "kien-thuc/08-phuong-trinh-bat-phuong-trinh/bai-tap.md"
+other = "kien-thuc/11-can-thuc/bai-tap.md"
 assert on_page_markdown("# No pilot\n", SimpleNamespace(file=SimpleNamespace(src_path=other)), None, None) == "# No pilot\n"
 print("PASS Wave 2: 40 paper sources locked and hidden in published views; no ID, scoring or storage changes")

@@ -1,6 +1,6 @@
 """Narrow build-time transformations; source-locked paper Markdown stays unchanged.
 
-Seven pilot Practice pages publish only their reviewed interactive players during
+Ten pilot Practice pages publish only their reviewed interactive players during
 the owner-approved content reclassification. Hiding old learner-visible paper
 blocks is NOT academic retirement, bank migration, or history regrading.
 """
@@ -37,6 +37,12 @@ _NEXT_PILOT_PRACTICE = {
         ("CT06", "06-phan-tich-da-thuc-v1.manifest.json", "Phân tích đa thức thành nhân tử"),
     "kien-thuc/07-phan-thuc-dai-so/bai-tap.md":
         ("CT07", "07-phan-thuc-dai-so-v1.manifest.json", "Phân thức đại số"),
+    "kien-thuc/08-phuong-trinh-bat-phuong-trinh/bai-tap.md":
+        ("CT08", "08-phuong-trinh-bat-phuong-trinh-v1.manifest.json", "Phương trình và bất phương trình"),
+    "kien-thuc/09-he-phuong-trinh/bai-tap.md":
+        ("CT09", "09-he-phuong-trinh-v1.manifest.json", "Hệ phương trình bậc nhất hai ẩn"),
+    "kien-thuc/10-ham-so-do-thi/bai-tap.md":
+        ("CT10", "10-ham-so-do-thi-v1.manifest.json", "Hàm số và đồ thị"),
 }
 
 

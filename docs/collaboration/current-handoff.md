@@ -1,5 +1,8 @@
 # Project Handoff — Self-Learning Math
 
+> **CONTENT & UX CLEANUP — CT08–10 WAVE 4 CANDIDATE (16/10/2026):** Owner accepted published CT05/06/07 (#472); next source-preserving Practice cleanup extends student interactive-only view to CT08 (132 active questions, 11 old written IDs), CT09 (129, 13 IDs) and CT10 (120, 13 IDs). Old Markdown authored files and 37 IDs remain intact, not academically retired. Existing Practice bank keys, metadata, scoring, Readiness, evidence and learner storage untouched. Add strict source/ID/regression checks and 1365/390px browser tests. CT05–07 paper item-by-item academic triage register R0 (40 IDs) created with only nonbinding potential overlaps; NotebookLM verdict not yet requested. PR QA/deployment pending; no private English Actions.
+
+
 > **CONTENT & UX CLEANUP — CT05–07 WAVE 3 CANDIDATE (16/10/2026):** After deployed PR #471, next owner-authorized wave creates interactive-only student Practice views for CĐ05/06/07 from existing 120-question v1 manifests each, without editing any paper-source bytes. Source-locked 40 historic WR/ENT/CH exercise IDs (13 + 13 + 14) remain retained for academic comparison and possible conversion; **visibility hide is not migration or NotebookLM PASS**. Tests added for exact blobs/IDs/manifests and desktop/mobile bank/links; merge & gh-pages validation gated on full PR QA. No learner data, scoring, taxonomy or English private Actions touched.
 
 
