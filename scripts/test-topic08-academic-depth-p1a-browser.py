@@ -45,10 +45,15 @@ with sync_playwright() as p:
 
     page.goto(PRACTICE, wait_until="networkidle")
     practice_text = page.locator("body").text_content() or ""
-    assert "Ứng dụng" in practice_text
-    assert "08-APP-01 · Lập bất phương trình" in practice_text
-    assert "Củng cố" in practice_text
-    assert "08-SUP-01 · Giao tập nghiệm" in practice_text
+    # Academic depth P1-A approved paper examples are preserved in immutable
+    # Markdown and linked layer metadata. During owner-approved cleanup, the
+    # learner Practice page displays only the existing interactive bank.
+    # Do not silently demand that archived paper examples remain on Practice.
+    assert page.locator('[data-practice-ui-v2="CT08"]').count() == 1
+    assert page.locator('[data-practice-bank-v2]').count() == 1
+    assert page.locator('.practice-title').count() == 1
+    assert "08-APP-01 · Lập bất phương trình" not in practice_text
+    assert "08-SUP-01 · Giao tập nghiệm" not in practice_text
     assert "Entrance10 / Extension" not in practice_text
 
     payload = page.evaluate(
@@ -67,5 +72,5 @@ with sync_playwright() as p:
     context.close()
     browser.close()
 
-print("PASS: CT08 P1-A learner framing and reviewed layers render correctly.")
+print("PASS: CT08 P1-A learner/Core academic layers and archived Practice source remain reviewed.")
 print("PASS: CT08 notation cleanup is live in the loaded Practice source without x--n strings.")
