@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 const assert=require("node:assert/strict");
-const Projection=require("../docs/assets/javascripts/math-unified-evidence-projection-r1.js");
+const Projection=require("./prototypes/math-unified-evidence-projection-r1.js");
 const encode=JSON.stringify;
 class ReadOnlyStorage{
   constructor(entries={}){this.entries=structuredClone(entries);this.reads=[];}
