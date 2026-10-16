@@ -16,7 +16,7 @@ with sync_playwright() as pw:
         page.on("pageerror",lambda e:errors.append(str(e)))
         page.goto(BASE+"luyen-tap/",wait_until="domcontentloaded")
         page.evaluate("localStorage.setItem('library-two-paths-sentinel','preserve')")
-        assert page.locator(".math-library-entry").count()==2
+        assert page.locator(".math-library-entry").count()==4
         assert page.locator("[data-written-exercise-library]").count()==0
         assert page.locator('.math-library-entry[href="tu-luan/"]').count()==2
         page.locator('.math-library-entry[href="bai-mau-tieu-bieu/"]').click()
