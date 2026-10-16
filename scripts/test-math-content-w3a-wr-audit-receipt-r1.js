@@ -18,7 +18,7 @@ for(const id of ["WX05-ENT-001","WX06-CH-001","pt07-core-2"]){
  assert(plan.includes(id),"missing nonduplicative target "+id);
 }
 assert(plan.includes("Owner explicitly accepts"));
-assert(plan.includes("NO PRODUCTION CHANGE") && report.includes("Not** a deployment authorization"));
+assert(plan.includes("NO PRODUCTION CHANGE") && report.includes("**Not** a deployment authorization"));
 const lib=JSON.parse(fs.readFileSync("docs/assets/data/written-exercises/written-exercise-library-v1.json","utf8"));
 assert.equal(lib.exercises.length,63,"documentation PR must not modify production Written Library");
 for(const id of ["WX05-ENT-001","WX06-CH-001"]){
