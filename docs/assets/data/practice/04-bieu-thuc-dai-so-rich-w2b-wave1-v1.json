@@ -1,0 +1,68 @@
+{
+  "schema": "practice-question-chunk-v1",
+  "version": 6,
+  "bank_id": "04-BIEU-THUC-DAI-SO-RICH-W2B-WAVE1",
+  "questions": [
+    {
+      "id": "ALG04-RICH-W2B-01-V1",
+      "source_item_id": "04-WR-10",
+      "source_lineage": "W2B independent NotebookLM 12/12 academic PASS; distinct composite simplification and evaluation; original written source preserved",
+      "response_type": "numeric_fields",
+      "answer_contract": {
+        "fields": [
+          {
+            "label": "Hệ số của x² sau khi thu gọn",
+            "expected": "0"
+          },
+          {
+            "label": "Hệ số của x sau khi thu gọn",
+            "expected": "0"
+          },
+          {
+            "label": "Hạng tử tự do sau khi thu gọn",
+            "expected": "-2"
+          },
+          {
+            "label": "Giá trị M(4)",
+            "expected": "-2"
+          }
+        ]
+      },
+      "question": "Cho M = (x + 1)(x − 2) − x(x − 1). Hãy thu gọn M trước, sau đó nhập lần lượt hệ số của x², hệ số của x, hạng tử tự do và giá trị M(4).",
+      "explanation": "(x + 1)(x − 2) = x² − x − 2, còn x(x − 1) = x² − x. Vì vậy M = x² − x − 2 − (x² − x) = −2. Hai hệ số của x² và x đều bằng 0, hạng tử tự do là −2; suy ra M(4) = −2.",
+      "hints": [
+        "Khai triển riêng hai tích (x + 1)(x − 2) và x(x − 1).",
+        "Khi trừ tích thứ hai, đổi dấu cả hai hạng tử rồi gộp các hạng tử đồng dạng. Chỉ thay x=4 sau khi thu gọn."
+      ],
+      "difficulty": "intermediate",
+      "tags": {
+        "topic": "04-bieu-thuc-dai-so",
+        "skill": [
+          "nhan-bieu-thuc",
+          "cong-tru-da-thuc",
+          "rut-gon-bieu-thuc"
+        ],
+        "type": "rich-w2b-typed-response",
+        "layer": "KNTT-Core",
+        "grade": 8
+      },
+      "curriculum": {
+        "book": "KNTT",
+        "grades": [
+          8
+        ],
+        "level": "core",
+        "review_packet": "MATH-EXERCISE-RECLASSIFY-W2B-20261016",
+        "academic_review": "NOTEBOOKLM_W2B_OWNER_20261016"
+      },
+      "authoring_review": {
+        "status": "PASS",
+        "packet_id": "MATH-EXERCISE-RECLASSIFY-W2B-20261016",
+        "review_round": "W2B",
+        "scope": "SOURCE_TASK_ONLY; FOUR_FIELD_INPUT_MODE_REQUIRES_TECH_CI_AND_OWNER_QA"
+      },
+      "variant_group": "04-WR-10-typed-v1",
+      "worked_answer": "M = −2; các hệ số lần lượt 0; 0; −2; M(4) = −2"
+    }
+  ]
+}
