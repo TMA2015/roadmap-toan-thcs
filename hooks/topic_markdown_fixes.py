@@ -79,7 +79,7 @@ def _interactive_only_next_pilot(src_path: str) -> str:
     # Match the approved first-paint layout on CT02/03/04/21 but do not
     # generate a second H2 above the player's native toolbar heading.
     note = (
-        'Bài này là phần chuẩn bị Toán 10, không tính vào Core Readiness THCS.'
+        'Đây là phần THPT-Bridge chuẩn bị Toán 10, không tính vào Core Readiness THCS.'
         if topic == "CT22" else ""
     )
     extra = (
