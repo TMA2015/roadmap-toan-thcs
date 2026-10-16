@@ -36,6 +36,6 @@ for slug, (expected_blob, version, anchor) in SOURCE.items():
     assert "localStorage" not in visible
     assert len(visible) < len(md), f"Old paper block leaked to published page: {topic}"
     print(f"PASS {topic}: original authored blob {sha[:12]}, one interactive player, no visible paper bank")
-other = "kien-thuc/05-7-hang-dang-thuc/bai-tap.md"
+other = "kien-thuc/08-phuong-trinh-bat-phuong-trinh/bai-tap.md"
 assert on_page_markdown("# Other topic\n", SimpleNamespace(file=SimpleNamespace(src_path=other)), None, None) == "# Other topic\n"
 print("PASS: source protection and four-topic interactive-only publication")
