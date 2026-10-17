@@ -2,6 +2,18 @@
 
 **Date:** 2026-10-17 · **Release status:** PR CANDIDATE / QA DATA ONLY
 
+## QA R11 real-progress backup schema rejection (2026-10-17)
+
+An owner tested a real `Tiến độ học tập` backup on the R11 QA import page and received the opaque error `INVALID_BACKUP_SNAPSHOT`. This **is the correct rejection**, not a failed conversion or evidence of lost student history.
+
+- Existing production learner backup: `schema: self-learning-math-local-backup-v1`, `app: self-learning-math`, saved `entries` of legacy localStorage records.
+- Isolated R11 test backup: `schema: math-v2-journal-backup-r10`, `learner_scope: QA_OWNER_R11`, `events` and `pending` IndexedDB rows.
+- No source-grade, count or timestamp reconstruction is attempted. R11 does **not** import, merge or overwrite genuine learner backup entries.
+- The R11 import page now labels the incompatible source in Vietnamese and directs the owner to retain the real-progress backup for its **separate real-progress restore facility**. Other JSON types receive a similarly clear unsupported-format notice. A candidate QA-format file still receives the full R10 SHA-256 and scope checks.
+- Automated desktop/390px browser QA uses **synthetic metadata-only** production-schema JSON to verify rejection on a device that already has events, then confirms counters and the complete QA journal/outbox remain unchanged. Never expose actual family backup contents to test logs.
+
+This is an error-message / import-type safety improvement, **not** a bridge between old real learner progress and new V2 evidence.
+
 ## Scope
 
 A standalone, unlinked test page is added at `docs/qa/math-v2-owner-canary.html`. It deliberately avoids the main learner navigation and the global MkDocs script loader. It does not introduce logins, paid APIs, any data upload, any real Math lesson scoring, or any migration of existing Practice/Readiness data.
