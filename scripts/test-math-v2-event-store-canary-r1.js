@@ -9,7 +9,7 @@ class MemoryStorage{
   setItem(key,value){
     if(this.mode==="quota")throw Error("simulated quota");
     this.writes.push(key);
-    if(this.mode==="silent_corrupt"){this.data.set(key,"CORRUPT");return;}
+    if(this.mode==="corrupt_once"){this.mode="normal";this.data.set(key,"CORRUPT");return;}
     this.data.set(key,String(value));
   }
   removeItem(key){this.data.delete(key);}
