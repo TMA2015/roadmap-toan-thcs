@@ -320,6 +320,7 @@ jobs:
         run: |
           node --check scripts/prototypes/math-v2-event-store-canary-r1.js
           node scripts/test-math-v2-event-store-canary-r1.js
+          node --check scripts/prototypes/math-v2-idb-browser-canary-r4.js
       - name: Validate CĐ25 display math source
         run: node scripts/test-topic25-math-render.js
       - name: Validate CĐ25 student journey
@@ -363,6 +364,7 @@ jobs:
           python scripts/test-release-readiness-b1-browser.py
           python scripts/test-b1-save-failure-r2-browser.py
           python scripts/test-math-progress-backup-v1-browser.py
+          python scripts/test-math-v2-idb-browser-canary-r4.py
           python scripts/test-help-disclosure-toggle-browser.py
           python scripts/test-topic08-academic-depth-p1a-browser.py
           python scripts/test-topic09-navigation-reading-browser.py
