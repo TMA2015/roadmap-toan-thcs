@@ -7,9 +7,8 @@
  */
 (() => {
   "use strict";
-  const PREFIX = "QA_R16_R17_R18_";
   const validScope = s => typeof s === "string" &&
-    s.startsWith(PREFIX) && /^[A-Za-z0-9_-]{20,128}$/.test(s);
+    /^QA_R16_R17_R18_[A-Za-z0-9_-]{2,90}$/.test(s);
   const validKey = s => typeof s === "string" &&
     /^[A-Za-z0-9_-]{6,128}$/.test(s);
   const validId = s => typeof s === "string" &&
