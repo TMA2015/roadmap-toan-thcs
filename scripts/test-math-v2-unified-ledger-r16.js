@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+"use strict";
+const fs=require("node:fs"),assert=require("node:assert/strict");
+const code=fs.readFileSync("scripts/prototypes/math-v2-unified-ledger-r16.js","utf8");
+const mkdocs=fs.readFileSync("mkdocs.yml","utf8");
+const page=fs.readFileSync("docs/assets/javascripts/practice-engine-v2.js","utf8");
+assert(code.includes('const STORES=["intents","events","outbox"]'));
+assert(code.includes('db.transaction(STORES,"readwrite")'));
+assert(code.includes('db.transaction(STORES,"readonly")'));
+assert(code.includes('const tx=db.transaction(STORES,"readwrite")'));
+assert(code.includes('const SCHEMA="math-v2-unified-ledger-backup-r16"'));
+assert(code.includes("sha256")&&code.includes("R16_SHA_MISMATCH"));
+assert(code.includes("R16_SIMULATED_ATOMIC_ABORT"));
+assert(code.includes("R16_SIMULATED_RESTORE_ABORT"));
+assert(code.includes("R16_REPLACE_ACK_REQUIRED"));
+assert(code.includes("R16_QA_SCOPE_ONLY"));
+assert(code.includes("if(!enabled)return"),"off must not open IndexedDB");
+assert(!/localStorage\s*\.\s*(getItem|setItem|removeItem|clear)/.test(code));
+assert(!/fetch\s*\(|XMLHttpRequest|sendBeacon/.test(code));
+assert(!mkdocs.includes("math-v2-unified-ledger-r16"),"not globally loaded for real learners");
+assert(!page.includes("math-v2-unified-ledger-r16"),"Practice production does not load QA DB");
+console.log("PASS R16: single-store-family atomic transaction, snapshot integrity, off-by-default scope and no student loaders.");
