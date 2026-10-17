@@ -23,7 +23,7 @@ R25 adds an **isolated command-line QA reconciliation** using those existing loc
 | R25 reviewed CT09 variant metadata-only edits | 120 | Existing CT09 P1-C1/P1-C2 metadata/owner QA |
 | **QA-reconcilable historical Family candidate total** | **2,900** | 2,750 + 26 + 4 + 120; not a production Skill credit |
 | **Historical Taxonomy source SHA holds pending controlled refresh** | **150** | Frozen whole-file pins stay unchanged; no silent patch |
-| **Newer unreviewed candidate-bank IDs** | **59** | No implicit legacy-to-v2 remap or production score |
+| **Newer candidate-bank IDs outside the historical 3,114-row policy** | **59** | Nine CT09 P1-C2 IDs have separate review receipts; this R25 shadow assigns none of the 59 a new Skill credit |
 
 A source-reconciled Family candidate is **not** an independent graded Skill achievement. Classification roles include methods, partial MCQ evidence and contextual evidence. Neither the reviewed source lock nor the R25 shadow supplies stable canonical option identities, verified mastery thresholds, Readiness scores, or v1/v2 cross-device reconciliation.
 
@@ -31,7 +31,7 @@ A source-reconciled Family candidate is **not** an independent graded Skill achi
 
 - Run only `node scripts/test-math-v2-reviewed-source-exception-shadow-r25.js` or the read-only CLI. No browser registration or Production Practice injection.
 - The source SHA pins in `ct08-r1.json` and `ct09-r1.json` remain frozen, and R22's 150 source holds are not silently erased. The **separate shadow** explains which differences are already covered by a narrowly reviewed exception.
-- A future source or lock change fails closed. Test cases simulate whitespace-only source changes, altered variants, and withdrawal of the CT08 academic approval.
+- A future source or lock change fails closed, as does a change to the 3,173-question candidate catalog or the 59-item newer-question partition. Test cases simulate whitespace-only source changes, altered variants, and withdrawal of the CT08 academic approval.
 - No localStorage, IndexedDB, learner dataset, state migration, content changes, automatic mastery or Readiness credit.
 - Before an eventual production Skill counter switch: controlled reviewed source-version contract, stable option/action IDs, revised full Practice inventory, independent evidence lanes, family PC/iPad Safari canary, and explicit owner cutover authorization.
 
