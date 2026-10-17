@@ -7,7 +7,9 @@ const practice=fs.readFileSync("docs/assets/javascripts/practice-engine-v2.js","
 const site=fs.readFileSync("mkdocs.yml","utf8");
 assert(gate.includes('if (!cfg?.enabled) return;'),"R17 must be off by default");
 assert(gate.includes("R17_QA_SCOPE_ONLY"),"QA synthetic learner scope only");
-assert(gate.includes("MathV2UnifiedLedgerR16.create({learner_scope:scope,enabled:true})"));
+assert(gate.includes("const api=window.MathV2UnifiedLedgerR16;") &&
+  gate.includes("const ledger=api.create({learner_scope:scope,enabled:true});"),
+  "R17 must use the exact R16 singleton API with enabled QA scope");
 assert(gate.includes("window.MathV2PracticeCommitGateR15=Object.freeze({"),
  "R17 must be test-only implementation of preexisting gated R15 hook");
 assert(gate.includes("db.stage({")&&gate.includes("db.commit(token"),"R16 stage then atomic commit");
