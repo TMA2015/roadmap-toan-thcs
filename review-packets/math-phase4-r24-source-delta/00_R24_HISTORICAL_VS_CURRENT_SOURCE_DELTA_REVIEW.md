@@ -7,7 +7,7 @@
 ## Provenance and method
 
 R22 compiled source-lock policy: `docs/assets/data/curriculum/taxonomy-v2-runtime/index-r1.json` (CT02–CT25; **3,114** historical question IDs).  
-R23 compares 24 latest-version Practice *catalog candidates*, not presumed live bank routes; **3,173 distinct candidate IDs = 3,114 historic + 59 additional**. The 59 are **49 MCQ + 10 rich typed-answer** and remain outside the approved historical Skill source-lock. There were **0 missing historical IDs** in catalog candidates.
+R23 compares 24 latest-version Practice *catalog candidates*, not presumed live bank routes; **3,173 distinct candidate IDs = 3,114 historic + 59 additional**. The 59 are **49 MCQ + 10 rich typed-answer** and lie outside the original 3,114-item historical source-lock. This does **not** imply all 59 lack independent academic approval; e.g., nine CT09 P1-C2 MCQs have a separately reviewed additive taxonomy extension and owner QA PASS. There were **0 missing historical IDs** in catalog candidates.
 
 R22 held **150 historical questions** because the original Git blob SHA differed from the current source chunk. We compared each of these items by exact question ID against the historical immutable Git blob stored in the repository and the current `main` file. For each item, we compared its full JSON payload, then separated the exact changed fields. The comparison was read-only; no bank, tag, grading key, or learner history changed.
 
@@ -51,7 +51,7 @@ The Practice selector intentionally **prefers unseen `variant_group` values with
 
 New R24 regression script `scripts/test-math-r24-ct08-source-delta-gates.js` asserts that the 4 CT08 current denominators, corresponding domain choices, reviewed Skill tag structure and the 27-group CT09 delivery safeguards remain in place. It is **technical regression only**, not NotebookLM PASS for the four edited CT08 stems.
 
-**Still pending:** independent academic verdict for EQ08V1_047, EQ08V1_048, EQ08V1_049, EQ08V1_050, by ID. Their `x--n` to `x+n` edits remain unapproved for a Taxonomy source-lock refresh until that verdict. The 59 newer candidate-bank items are tracked separately and not retroactively covered by CT09 P1-C2 receipts.
+**Still pending:** independent academic verdict for EQ08V1_047, EQ08V1_048, EQ08V1_049, EQ08V1_050, by ID. Their `x--n` to `x+n` edits remain unapproved for a Taxonomy source-lock refresh until that verdict. The 59 newer candidate-bank items are tracked separately; the existing CT09 P1-C2 receipts cover exactly **nine** of those items, not the other 50. Inclusion in a newer catalog still does not automatically authorize Skill mastery or backfill.
 
 ## Required review decisions
 
